@@ -1,14 +1,9 @@
 ---
 title: 支持的代码更改 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1d028c35ea5d0f00dd8206fbfe0b086c9dbed067
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c464c63f7e5059e98cb12e4dfed06c60330160b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724659"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937232"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51724659"
   
      活动语句包括为转至当前语句而调用过的任何语句（位于调用堆栈的函数中）。  
   
-     当前语句在源窗口中以黄色背景标记。 其他活动语句以阴影背景标记，并且是只读的。 在中，可以更改这些默认颜色**选项**对话框。  
+     当前语句在源窗口中以黄色背景标记。 其他活动语句以阴影背景标记，并且是只读的。 可在“选项”对话框中更改这些默认颜色。  
   
 -   更改类型的签名。  
   
@@ -52,9 +47,9 @@ ms.locfileid: "51724659"
 -   在活动语句前后添加 `foreach`、`using` 或 `lock`。  
   
 ## <a name="unsafe-code"></a>不安全代码  
- 对不安全代码的更改具有与对安全代码的更改相同的限制，但它还包含一条附加限制：“编辑并继续”不支持对包含 `stackalloc` 运算符的方法内退出的不安全代码所作的更改。  
+ 对不安全代码的更改与对安全代码的更改有相同的限制，但它还包含一条附加限制：编辑并继续不支持对包含的方法内退出的不安全代码的更改`stackalloc`运算符。  
   
-## <a name="exceptions"></a>异常  
+## <a name="exceptions"></a>Exceptions  
  “编辑并继续”支持对 `catch` 和 `finally` 块的更改，除了不允许在活动语句周围添加 `catch` 或`finally` 块以外。  
   
 ## <a name="unsupported-scenarios"></a>不支持的方案  
@@ -64,7 +59,7 @@ ms.locfileid: "51724659"
   
     -   捕获之前尚未捕获的变量。  
   
-    -   更改查询表达式的类型（例如，select a => select new { A = a };）  
+    -   更改查询表达式的类型 (例如，select a = > 选择新建 {A =};)  
   
     -   删除包含活动语句的 `where`。  
   
@@ -93,6 +88,3 @@ ms.locfileid: "51724659"
 ## <a name="see-also"></a>请参阅  
  [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
  [如何：使用“编辑并继续”(C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-
-
-

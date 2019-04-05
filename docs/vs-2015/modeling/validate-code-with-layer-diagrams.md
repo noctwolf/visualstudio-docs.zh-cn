@@ -1,12 +1,9 @@
 ---
 title: 使用层关系图验证代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, validating
 - validation, layer diagrams
@@ -23,13 +20,13 @@ ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4d010345c551572bb6458110d2de9ca33fc73155
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792159"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936489"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>用层关系图验证代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +53,7 @@ ms.locfileid: "51792159"
   
   若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
-  你可以从 Visual Studio 中打开的层关系图或从命令提示符手动验证代码。 你还可以在运行本地生成或 Team Foundation Build 时自动验证代码。 请参阅[第 9 频道视频： 设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+  你可以从 Visual Studio 中打开的层关系图或从命令提示符手动验证代码。 你还可以在运行本地生成或 Team Foundation Build 时自动验证代码。 请参阅[第 9 频道视频：设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
 > [!IMPORTANT]
 >  如果想要使用 Team Foundation Build 运行层验证，则还必须在生成服务器上安装相同版本的 Visual Studio。  
@@ -102,7 +99,7 @@ ms.locfileid: "51792159"
 2.  若要查看每个错误的源，请双击中的错误**错误列表**窗口。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能会显示代码映射，而不是显示错误的根源。 若代码所依赖的程序集不是由层关系图指定的，或代码缺少层关系图所指定的依赖项，则会出现此情况。 评审代码图或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
+    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能会显示代码映射，而不是显示错误的根源。 若代码所依赖的程序集不是由层关系图指定的，或代码缺少层关系图所指定的依赖项，则会出现此情况。 检查代码映射或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
   
 3.  若要管理错误，请参阅[管理验证错误](#ManageErrors)。  
   
@@ -237,17 +234,14 @@ ms.locfileid: "51792159"
   
 |**错误语法**|**错误说明**|  
 |----------------------|---------------------------|  
-|AV0001： 无效的依赖项： *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> 层： *LayerName1*， *LayerName2* &#124;的依赖关系： *DependencyType*|*Artifact1*中*LayerName1*不应依赖于*Artifact2*中*LayerName2*因为*LayerName1*没有直接的依赖关系*LayerName2*。|  
-|AV1001： 无效 Namespace:*项目*<br /><br /> 层： *LayerName* &#124;所需 Namespace: *NamespaceName1* &#124;当前 Namespace: *NamespaceName2*|*LayerName*要求其关联的项目必须属于*NamespaceName1*。 *项目*处于*NamespaceName2*，而非*NamespaceName1*。|  
-|AV1002： 依赖于禁止 Namespace: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> 层： *LayerName* &#124;禁止 Namespace:*命名空间名称*&#124;的依赖关系： *DependencyType*|*LayerName*要求其关联的项目必须不依赖于*命名空间名称*。 *Artifact1*不能依赖于*Artifact2*因为*Artifact2*处于*命名空间名称*。|  
-|AV1003： 在禁止 Namespace:*项目*(*ArtifactType*)<br /><br /> 层： *LayerName* &#124;禁止 Namespace:*命名空间名称*|*LayerName*要求其关联的项目不能属于*命名空间名称*。 *项目*属于*命名空间名称*。|  
-|AV3001： 缺少链接： 层 '*LayerName*链接到*项目*找不到其中。 是否缺少程序集引用?|*LayerName*链接到找不到的项目。 例如，由于建模项目缺少对包含某个类的程序集的引用，因此可能缺少指向该类的链接。|  
-|AV9001: 体系结构分析遇到了内部错误。 结果可能不完整。 有关详细信息，请参阅详细的生成事件日志或输出窗口。|有关更多详细信息，请参阅生成事件日志或输出窗口。|  
+|AV0001:无效的依赖项：*Artifact1*(*ArtifactType1*) --> *Artifact2*(*ArtifactType2*)<br /><br /> 层：*LayerName1*， *LayerName2* &#124;依赖项：*DependencyType*|*Artifact1*中*LayerName1*不应依赖于*Artifact2*中*LayerName2*因为*LayerName1*没有直接的依赖关系*LayerName2*。|  
+|AV1001:无效的 Namespace:*项目*<br /><br /> 层：*LayerName* &#124;所需 Namespace:*NamespaceName1* &#124;当前 Namespace:*NamespaceName2*|*LayerName*要求其关联的项目必须属于*NamespaceName1*。 *项目*处于*NamespaceName2*，而非*NamespaceName1*。|  
+|AV1002:依赖于禁止 Namespace:*Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> 层：*LayerName* &#124;禁止 Namespace:*NamespaceName* &#124;依赖项：*DependencyType*|*LayerName*要求其关联的项目必须不依赖于*命名空间名称*。 *Artifact1*不能依赖于*Artifact2*因为*Artifact2*处于*命名空间名称*。|  
+|AV1003:在禁止 Namespace:*Artifact*(*ArtifactType*)<br /><br /> 层：*LayerName* &#124;禁止 Namespace:*NamespaceName*|*LayerName*要求其关联的项目不能属于*命名空间名称*。 *项目*属于*命名空间名称*。|  
+|AV3001:缺少链接：层 '*LayerName*链接到*项目*找不到其中。 是否缺少程序集引用?|*LayerName*链接到找不到的项目。 例如，由于建模项目缺少对包含某个类的程序集的引用，因此可能缺少指向该类的链接。|  
+|AV9001:体系结构分析找到的内部错误。 结果可能不完整。 有关详细信息，请参阅详细的生成事件日志或输出窗口。|有关更多详细信息，请参阅生成事件日志或输出窗口。|  
   
 ## <a name="security"></a>安全性  
   
 ## <a name="see-also"></a>请参阅  
  [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
-
-
-

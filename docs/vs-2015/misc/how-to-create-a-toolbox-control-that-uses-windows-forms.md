@@ -1,27 +1,22 @@
 ---
-title: 如何： 创建使用 Windows 窗体的工具箱控件 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建使用 Windows 窗体的工具箱控件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox control
 - winforms
 - toolbox
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
-manager: douge
-ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7bb327ff7cd3909e4d860203322a9b72aa71fbf3
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263713"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000282"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>如何：创建使用 Windows 窗体的工具箱控件
 借助 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 中内附的 Windows 窗体工具箱控件模板，你可以创建在安装扩展后自动添加到“工具箱”  的 Windows 窗体控件。 本主题演示如何使用模板来创建可分配给其他用户的“工具箱”  控件。  
@@ -92,7 +87,7 @@ ms.locfileid: "49263713"
   
 2.  将 .vsix 文件上载到网络或网站。  
   
-     若将文件上载到 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847) 网站，则其他用户可使用 Visual Studio 中的“扩展管理器”  找到控件并将其安装。  
+     如果您将文件上载到[Visual Studio Marketplace](https://marketplace.visualstudio.com/)网站，其他用户可以使用**扩展管理器**找到控件并将其安装的 Visual Studio 中。  
   
 ## <a name="see-also"></a>请参阅  
  [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)

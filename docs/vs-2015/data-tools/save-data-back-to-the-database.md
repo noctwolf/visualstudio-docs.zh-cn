@@ -1,12 +1,9 @@
 ---
 title: 将数据保存回数据库 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +25,13 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 413a92f2e42b6bacfeb62deb3bae0e50d5ef908b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281844"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937562"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,24 +77,24 @@ ms.locfileid: "52281844"
   
  当合并数据集，您可以传递布尔参数 (`preserveChanges`)，它告诉<xref:System.Data.DataSet.Merge%2A>方法是否保留在目标数据集中的现有修改。 由于数据集维护记录的多个版本，务必要时刻牢记合并多个记录的版本。 下表显示了如何合并两个数据集中的记录：  
   
-|DataRowVersion|目标数据集|源数据集|  
+|DataRowVersion|目标数据库|源数据集|  
 |--------------------|--------------------|--------------------|  
-|原始|James Wilson|James C.Wilson|  
-|当前|Jim Wilson|James C.Wilson|  
+|原始|James Wilson|James C. Wilson|  
+|当前|Jim Wilson|James C. Wilson|  
   
  调用<xref:System.Data.DataSet.Merge%2A>方法使用了上表`preserveChanges=false targetDataset.Merge(sourceDataset)`产生以下结果：  
   
-|DataRowVersion|目标数据集|源数据集|  
+|DataRowVersion|目标数据库|源数据集|  
 |--------------------|--------------------|--------------------|  
-|原始|James C.Wilson|James C.Wilson|  
-|当前|James C.Wilson|James C.Wilson|  
+|原始|James C. Wilson|James C. Wilson|  
+|当前|James C. Wilson|James C. Wilson|  
   
  调用<xref:System.Data.DataSet.Merge%2A>方法替换`preserveChanges = true targetDataset.Merge(sourceDataset, true)`产生以下结果：  
   
-|DataRowVersion|目标数据集|源数据集|  
+|DataRowVersion|目标数据库|源数据集|  
 |--------------------|--------------------|--------------------|  
-|原始|James C.Wilson|James C.Wilson|  
-|当前|Jim Wilson|James C.Wilson|  
+|原始|James C. Wilson|James C. Wilson|  
+|当前|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
 >  在中`preserveChanges = true`方案中，如果<xref:System.Data.DataSet.RejectChanges%2A>在目标数据集中，记录上调用方法，则它将恢复为原始数据从*源*数据集。 这意味着，如果你尝试更新原始数据源与目标数据集，它可能不能以查找要更新的原始行。 通过使用数据源的已更新的记录填充另一个数据集，然后执行合并来防止并发冲突，可以防止并发冲突。 （另一个用户修改数据源中的记录后填充数据集时出现的并发冲突。）  
@@ -170,7 +167,7 @@ ms.locfileid: "52281844"
   
  `GetChanges` 本身返回的所有已更改的记录。 与此相反，通过传递所需<xref:System.Data.DataRowState>作为参数`GetChanges`方法，可以指定何种所需的更改记录子集： 新添加的记录，记录标记为删除，分离记录，或修改记录。  
   
- 获取已更改的记录的子集时，你想要将记录发送到另一个组件进行处理。 而不是发送整个数据集，您可以减少通过获取该组件需要的记录与其他组件进行通信的开销。 有关详细信息，请参阅[如何： 检索已更改行](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+ 获取已更改的记录的子集时，你想要将记录发送到另一个组件进行处理。 而不是发送整个数据集，您可以减少通过获取该组件需要的记录与其他组件进行通信的开销。 有关详细信息，请参阅[如何：检索已更改的行](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 ## <a name="committing-changes-in-the-dataset"></a>提交数据集中的更改  
  在数据集中，做出更改后<xref:System.Data.DataRow.RowState%2A>属性已更改行的设置。 建立、 维护和供你的原始版本和当前版本记录<xref:System.Data.DataRowView.RowVersion%2A>属性。 存储在这些已更改行的属性的元数据，才将正确的更新发送到数据源。  
@@ -221,14 +218,14 @@ ms.locfileid: "52281844"
   
  你可以验证几种方法中的数据：  
   
-- 在业务层，通过将代码添加到应用程序以验证数据。 数据集是一个可以执行此操作的位置。 数据集提供了一些后端验证的优点，例如验证更改，如列和行的值变化的能力。 有关详细信息，请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md)。  
+- 在业务层，通过将代码添加到应用程序以验证数据。 数据集是一个可以执行此操作的位置。 数据集设计器提供了一些后端验证的优点，例如验证更改，如列和行的值变化的能力。 有关详细信息，请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md)。  
   
 - 中的表示层，通过将验证添加到窗体。 有关详细信息，请参阅[Windows 窗体中的用户输入验证](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
   
 - 数据在后端，通过将数据发送到数据源 — 例如，数据库，并使其能够接受或拒绝数据。 如果您正在使用的数据库，具有复杂的功能来验证数据并提供错误的信息，这可以是一个实用的方法，因为可以验证无论它是从哪里的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致大量的往返到数据源，具体取决于你的应用程序如何由后端引发的验证错误的解决方法。  
   
   > [!IMPORTANT]
-  >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （注入） 已修改或其他 SQL 语句，以获得未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+  >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
   在数据集中进行了更改后，可以传输到数据源的更改。 大多数情况下，执行此操作通过调用`Update`TableAdapter （或数据适配器） 的方法。 该方法将遍历每个表中记录数据，确定所需的更新的类型 （更新、 插入或删除） (如果有） 并运行相应命令。  
   
@@ -275,14 +272,7 @@ ms.locfileid: "52281844"
 >  此外可以设置值`Parameters`集合中的数据适配器的事件处理程序中通常所执行的操作的代码中自行<xref:System.Data.DataTable.RowChanging>事件。  
   
 ## <a name="see-also"></a>请参阅  
- [TableAdapter 概述](../data-tools/tableadapter-overview.md)   
  [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)   
- [在 Visual Studio 中的数据应用程序的概述](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [连接到 Visual Studio 中的数据](../data-tools/connecting-to-data-in-visual-studio.md)   
  [准备应用程序以接收数据](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [将数据提取到你的应用程序](../data-tools/fetching-data-into-your-application.md)   
  [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [编辑你的应用程序中的数据](../data-tools/editing-data-in-your-application.md)   
  [验证数据](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [保存数据](../data-tools/saving-data.md)
-

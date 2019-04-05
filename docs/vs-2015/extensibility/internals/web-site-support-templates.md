@@ -1,26 +1,21 @@
 ---
 title: 网站支持模板 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eebacb3006826a90320cbc61edf7d56467e688ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760222"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937665"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +82,7 @@ ms.locfileid: "51760222"
   
      新的 Web 服务的 HTML 页。 Language 特性指定源代码语言和 CodeBehind 属性指定包含与此服务关联的代码隐藏代码的依赖文件。  
   
--   服务。 *扩展*  
+-   服务。 *extension*  
   
      实现服务类的依赖文件。 代码隐藏语言决定*扩展*此文件。  
   
@@ -120,7 +115,7 @@ ms.locfileid: "51760222"
 ### <a name="new-class"></a>新的类  
  此模板创建新的源文件的空类定义以响应**添加新的类**命令。  
   
--   类。 *扩展*  
+-   类。 *extension*  
   
      实现了空的类的源文件。 代码隐藏语言决定*扩展*此文件。  
   
@@ -154,7 +149,7 @@ ms.locfileid: "51760222"
   
      Web 页面的起始内容。 此 Web 页面有一个关联的代码隐藏依赖文件。  
   
--   代码隐藏文件。 *扩展*  
+-   代码隐藏文件。 *extension*  
   
      实现 web 窗体类的依赖文件。 代码隐藏语言决定*扩展*此文件。  
   
@@ -193,4 +188,3 @@ ms.locfileid: "51760222"
   
 ## <a name="see-also"></a>请参阅  
  [网站支持](../../extensibility/internals/web-site-support.md)
-

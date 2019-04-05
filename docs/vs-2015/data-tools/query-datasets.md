@@ -1,22 +1,20 @@
 ---
 title: 查询数据集 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890564"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933259"
 ---
 # <a name="query-datasets"></a>查询数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +61,7 @@ ms.locfileid: "49890564"
      [!code-csharp[VbRaddataEditing#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#20)]
      [!code-vb[VbRaddataEditing#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#20)]  
   
-## <a name="accessrelated-records"></a>Accessrelated 记录  
+## <a name="access-related-records"></a>访问相关的记录  
  当在数据集中的表进行关联时，<xref:System.Data.DataRelation>对象可以使相关的记录在另一个表中可用。 例如，一个数据集，其中包含`Customers`和`Orders`表便可提供。  
   
  可以使用<xref:System.Data.DataRelation>要通过调用来查找相关的记录对象<xref:System.Data.DataRow.GetChildRows%2A>方法的<xref:System.Data.DataRow>父表中。此方法返回的相关的子记录的数组。 也可以调用<xref:System.Data.DataRow.GetParentRow%2A>方法的<xref:System.Data.DataRow>子表中。此方法返回单个<xref:System.Data.DataRow>从父表。  
@@ -71,7 +69,7 @@ ms.locfileid: "49890564"
  此页提供了示例使用类型化数据集。 有关在非类型化数据集中的关系中导航的信息，请参阅[导航 Datarelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)。  
   
 > [!NOTE]
->  如果您正在使用 Windows 窗体应用程序和使用数据绑定功能显示数据，设计器生成的表单可能会提供足够的功能为应用程序。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具体而言，请参阅[如何： 在 Windows 窗体应用程序中显示相关数据](../data-tools/how-to-display-related-data-in-a-windows-forms-application.md)并[演练： 在 Windows 窗体上显示相关数据](../data-tools/walkthrough-displaying-related-data-on-a-windows-form.md)。  
+> 如果您正在使用 Windows 窗体应用程序和使用数据绑定功能显示数据，设计器生成的表单可能会提供足够的功能为应用程序。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
  下面的代码示例演示如何导航向上和向下中类型化数据集的关系。 代码示例使用类型化<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 并将生成`FindBy` *PrimaryKey* (`FindByCustomerID`) 方法来查找所需的行并返回相关的记录。 示例编译并正常运行，仅在必须：  
   
@@ -81,7 +79,7 @@ ms.locfileid: "49890564"
   
 - 关系名为`FK_Orders_Customers`到你的代码的作用域相关可用的两个表  
   
-  此外，这两个表需要填充要返回的任何记录的数据。  
+此外，这两个表需要填充要返回的任何记录的数据。  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>若要返回的子记录所选的父记录  
   
@@ -96,4 +94,3 @@ ms.locfileid: "49890564"
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]
-

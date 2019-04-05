@@ -1,14 +1,9 @@
 ---
 title: 使用 ClickOnce 部署 COM 组件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 8f4412c067ffd43a14a62cc722cf60ca1a883d9f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820286"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000677"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49820286"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供了一种简单而安全的机制，用于部署.NET 应用程序。 但是，如果您的应用程序使用旧的 COM 组件，您需要采取其他步骤进行部署。 本主题介绍如何部署独立的 COM 组件并引用本机组件 （例如，从 Visual Basic 6.0 或 Visual c + +）。  
   
- 有关部署独立的 COM 组件的详细信息，请参阅"使用简化应用程序部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]和免注册 COM"处[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。  
+ 有关部署独立的 COM 组件的详细信息，请参阅"使用简化应用程序部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]和免注册 COM"处[ https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx ](https://msdn.microsoft.com/magazine/msdn-magazine-issues.aspx)。  
   
 ## <a name="registration-free-com"></a>免注册 COM  
  免注册 COM 是一项新技术用于部署和激活隔离的 COM 组件。 其工作方式是将所有组件的类型库和通常安装到名为一个清单，为 XML 文件在系统注册表的注册信息存储在应用程序所在的文件夹中。  
@@ -145,7 +140,7 @@ ms.locfileid: "49820286"
   
 2. 在发布向导中，在本地计算机的磁盘，则可以访问并检查已发布的文件中指定的位置。  
   
-3. 单击**完成**发布应用程序。  
+3. 单击“完成”以发布应用程序。  
   
    如果您检查已发布的文件，您将注意 sysmon.ocx 文件是包含。 该控件是控件的完全独立于此应用程序，这意味着，如果最终用户的计算机已使用不同版本的另一个应用程序，将不会影响与此应用程序。  
   
@@ -171,7 +166,7 @@ ms.locfileid: "49820286"
   
 - 该组件管理系统，例如，设备驱动程序的打印后台处理程序的物理或虚拟设备。  
   
-- 该组件是可再发行组件的数据访问。 数据应用程序通常需要单独的数据的访问可再发行组件才能运行安装。 不应尝试隔离组件，如 Microsoft ADO 数据控件、 Microsoft OLE DB 或 Microsoft 数据访问组件 (MDAC)。 相反，如果你的应用程序使用 MDAC 或 SQL Server Express，您应该将它们设置为系统必备组件;请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+- 该组件是可再发行组件的数据访问。 数据应用程序通常需要单独的数据的访问可再发行组件才能运行安装。 不应尝试隔离组件，如 Microsoft ADO 数据控件、 Microsoft OLE DB 或 Microsoft 数据访问组件 (MDAC)。 相反，如果你的应用程序使用 MDAC 或 SQL Server Express，您应该将它们设置为系统必备组件;请参阅[如何：与 ClickOnce 应用程序一起安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
   在某些情况下，可能会使组件开发人员重新设计免注册 com。 如果无法做到这一点，仍可以生成和发布应用程序依赖于它们通过使用引导程序的标准注册方案。 有关详细信息，请参阅[创建引导程序包](../deployment/creating-bootstrapper-packages.md)。  
   
@@ -181,6 +176,3 @@ ms.locfileid: "49820286"
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
-
-
-

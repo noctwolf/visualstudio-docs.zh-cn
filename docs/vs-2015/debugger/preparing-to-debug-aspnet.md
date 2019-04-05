@@ -1,14 +1,9 @@
 ---
 title: 调试 ASP.NET 的准备工作 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: d65d7299-51dd-4337-b334-aa1cbb37b77e
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 70cf3eacea28a0612ac4b97acfd84758163ea88f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934303"
 ---
 # <a name="preparing-to-debug-aspnet"></a>调试 ASP.NET 的准备工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,10 +41,10 @@ ms.locfileid: "51793499"
  [远程调试 Web 应用程序的必备组件](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  列出在远程服务器上调试 Web 应用程序的系统必备。  
   
- [如何： 在 Windows Server 2003 上配置 IIS](http://msdn.microsoft.com/en-us/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
- 讨论为满足在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 上调试 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 的系统需求而需要执行的特殊配置步骤。  
+ [如何：Windows Server 2003 上配置 IIS](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ 讨论为满足在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 上调试 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 的系统要求而需要执行的特殊配置步骤。  
   
- [如何：调试自托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [如何：调试自托管 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  描述针对未承载于 IIS 或 ASP.NET Development Server 上的 WCF 服务的调试步骤。  
   
 ## <a name="related-sections"></a>相关章节  
@@ -62,6 +57,3 @@ ms.locfileid: "51793499"
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)   
  [ASP.NET 和 IIS 配置](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
-
-
-

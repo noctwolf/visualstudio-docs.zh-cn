@@ -1,12 +1,9 @@
 ---
 title: 向域特定语言定义中添加跟踪属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tracking properties [Domain-Specific Language Tools], walkthrough
 - Domain-Specific Language Tools, walkthroughs
@@ -15,13 +12,13 @@ ms.assetid: 4aa47777-de75-4897-a423-a3c4426b4125
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 164586555c9027481b157f1232ce3d41e0fe40b0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894373"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936499"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ ms.locfileid: "49894373"
   
  例如，在域特定语言工具 （DSL 工具），域类的属性具有默认值通过使用域类中，而是用户的名称的显示名称可以在设计时更改值或其重置为计算的值。  
   
- 在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
+ 在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
   
 - 跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。  
   
@@ -725,7 +722,7 @@ ms.locfileid: "49894373"
   
 #### <a name="to-exercise-the-language"></a>若要执行的语言  
   
-1.  上**构建**菜单上，单击**重新生成解决方案**。  
+1.  在“生成”菜单上，单击“重新生成解决方案”。  
   
 2.  在“调试”菜单上，单击“启动调试”。  
   
@@ -766,8 +763,5 @@ ms.locfileid: "49894373"
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)   
- [如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)   
- [演练：自定义域特定语言定义](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)
-
-
-
+ [如何：创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [演练：自定义的域特定语言定义](../misc/walkthrough-customizing-the-domain-specific-language-definition.md)

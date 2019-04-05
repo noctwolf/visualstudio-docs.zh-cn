@@ -1,12 +1,9 @@
 ---
 title: 类图上 UML 关联的属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a322ea68053012a2e8f53993f06768b966cb61d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810272"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933777"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>UML 类图上关联的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51810272"
 |**名为 (1)**|标识关联。 也显示在关联中点附近的关系图上。|  
 |**限定的名称**|唯一地标识关联。 使用包含关联的第一个角色的包的限定名称作为前缀。|  
 |**工作项**|链接到此关联的工作项数目。 若要链接工作项，请参阅[链接模型元素和工作项](../modeling/link-model-elements-and-work-items.md)。|  
-|**颜色**|连接符的颜色。 与其他属性不同，这是此关联视图的属性，而不是模型中的基础关系的属性。|  
+|**Color**|连接符的颜色。 与其他属性不同，这是此关联视图的属性，而不是模型中的基础关系的属性。|  
 |**第一个角色**<br /><br /> **第二个角色**|关联的每个端均称为一个角色。 每个角色都描述关联的相对端处的类上的等效特性的特性。<br /><br /> 在示例图中，菜单和菜单项之间的关联具有名为 Menu 和 Contents 的角色。<br /><br /> Contents 是 Menu 类上的特性的名称。|  
 
 ### <a name="properties-of-each-role"></a>每个角色的属性  
@@ -58,7 +55,7 @@ ms.locfileid: "51810272"
 |     **Property**     |          **默认**          |                                                                                                                                                                                                                                                                                                                                        描述                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  **角色名称 (2)**   | 此角色的类型名称 |                                                                                                                                                                                                                                                                                                       角色的名称。 显示在关系图中的关联端附近。                                                                                                                                                                                                                                                                                                        |
-|   **聚合**    |             无              |                                                                        **无**(4)-表示类的实例之间的常规关系。<br /><br /> **复合**(5)-此角色处的对象包含相反角色处的对象。 可以使用**复合**工具来创建与复合聚合的关联。<br /><br /> **共享**(6)-此角色的对象包含对其他角色处的对象的引用。 可以使用**聚合**工具来创建与共享聚合的关联。<br /><br /> 确切的解释对本地约定开放。                                                                         |
+|   **聚合**    |             None              |                                                                        **无**(4)-表示类的实例之间的常规关系。<br /><br /> **复合**(5)-此角色处的对象包含相反角色处的对象。 可以使用**复合**工具来创建与复合聚合的关联。<br /><br /> **共享**(6)-此角色的对象包含对其他角色处的对象的引用。 可以使用**聚合**工具来创建与共享聚合的关联。<br /><br /> 确切的解释对本地约定开放。                                                                         |
 |    **派生**    |             False             |                                                                                                                                                                                                                          如果为 true，则通过其他特性和关联计算链接的这一端的对象。 例如，通过 MyEmployer.WorkPlace 计算 MyWorkPlace。 应在“描述”或附加“注释”中键入详细信息。                                                                                                                                                                                                                           |
 | **是派生的并集** |             False             |                                                                                                                                                                                                                                                                                                             如果为 true，则角色为派生类型中一组角色的联合。                                                                                                                                                                                                                                                                                                             |
 |   **是可导航**   |             True              |                                                 可以在此方向读取关联。 给定相反角色的实例，则你正在描述的软件便可以高效地确定此角色中关联的实例。<br /><br /> 如果一个角色是可导航的，而另一个不可导航，则会在可导航方向中的关联上出现一个箭头 (7)。<br /><br /> 默认情况下，关联工具会创建一个在某一方向上可导航的关联。 若要将其转换为双向关联，可以选择的关联，单击该操作标记，将出现，然后单击**成为双向**。                                                 |
@@ -69,11 +66,8 @@ ms.locfileid: "51810272"
 |    **可见性**    |            Public             |                                                                                                                                                                                                                                 公共 - 全局可见<br /><br /> 专用 - 对所属类型以外的类型不可见<br /><br /> 受保护 - 对派生自所有者的类型可见<br /><br /> 包 - 对同一包中的其他类型可见。                                                                                                                                                                                                                                  |
 
 ## <a name="see-also"></a>请参阅  
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
  [UML 类图上类型的属性](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [UML 类图上特性的属性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML 类图上的操作的属性](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [UML 类图：准则](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)

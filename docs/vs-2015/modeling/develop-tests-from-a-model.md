@@ -1,25 +1,22 @@
 ---
 title: 基于模型开发测试 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c0613e43816e7ef7036c5e13b7abafe90b451b81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787180"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937398"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +42,7 @@ ms.locfileid: "51787180"
  你可以创建并维护系统测试和需求模型之间的关系。 若要建立这种关系，你可以编写对应需求模型主要元素的测试。 Visual Studio 通过允许你在测试和模型的各个部件之间创建链接，帮助你维护这一关系。 有关需求模型的详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
 ### <a name="write-tests-for-each-use-case"></a>为每个用例编写测试  
- 如果你使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]，则可以为你在要求模型中定义的每个用例创建一组测试。 例如，如果你有一个“订餐”用例，其中包括“创建订单”和“向订单添加项”，则你可以为这些用例的整体和细节创建测试。 有关用例的详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+ 如果你使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]，则可以为你在要求模型中定义的每个用例创建一组测试。 例如，如果你有一个“订餐”用例，其中包括“创建订单”和“向订单添加项”，则你可以为这些用例的整体和细节创建测试。 有关用例的详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
  这些准则可能会有所帮助：  
   
@@ -59,7 +56,7 @@ ms.locfileid: "51787180"
   
     -   如果开发计划逐个实现用例的方面，则你可以随着开发的进展单独启用测试。  
   
--   设计测试时，请将测试数据的选择与确定是否已实现后置条件的代码或脚本分离。 例如，一个简单算术函数的测试可能为：输入 4；验证输出为 2。 实际上，将脚本设计为：选择一个输入；将其本身乘以输出，然后验证结果为原始输入。 此样式允许你在不更改测试主体的情况下改变测试输入。  
+-   设计测试时，请将测试数据的选择与确定是否已实现后置条件的代码或脚本分离。 例如，可能是一个简单的算术函数的测试：输入 4;验证输出为 2。 相反，将脚本设计为：选择一个输入;本身乘以输出，并验证结果为原始输入。 此样式允许你在不更改测试主体的情况下改变测试输入。  
   
 #### <a name="linking-tests-to-use-cases"></a>将测试链接到用例  
  如果使用的[!INCLUDE[TCMlong](../includes/tcmlong-md.md)]设计和运行测试，可以组织要求、 用例或用户情景工作项测试。 你可以将这些工作项链接到模型中的用例。 这样你便可以快速跟踪测试的需求更改，并有助于你跟踪每个用例的进度。  
@@ -116,7 +113,7 @@ Assert (countAfter == countBefore = 1);
   
  此类型的固定规则不仅控制当前定义的所有用例，而且控制将在以后定义的任何其他用例 因此，独立于任何用例编写此规则并独立于用例单独进行测试非常有用。  
   
- 可以编写固定业务规则作为类图中的注释。 有关详细信息，请参阅[UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)。  
+ 可以编写固定业务规则作为类图中的注释。 有关详细信息，请参阅 [UML 类图：指导原则](../modeling/uml-class-diagrams-guidelines.md)。  
   
  通过将注释链接到要求或用户情景工作项（可将该工作项链接到 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中的测试套件），可以将测试链接到业务规则。 有关详细信息，请参阅[测试用例附加到模型元素](#Attaching)。  
   
@@ -130,7 +127,7 @@ Assert (countAfter == countBefore = 1);
  尝试在验证每个消息或操作之后验证系统的状态。 这可能需要进行其他检测。  
   
 ## <a name="deriving-subsystem-tests-from-models"></a>从模型派生子系统测试  
- 在大型系统的高级设计中，可以标识组件或子系统。 这些表示可以单独设计、或位于不同计算机上或者是可通过多种方式重新组合的可重用模块的部件。 有关详细信息，请参阅[UML 组件图： 准则](../modeling/uml-component-diagrams-guidelines.md)。  
+ 在大型系统的高级设计中，可以标识组件或子系统。 这些表示可以单独设计、或位于不同计算机上或者是可通过多种方式重新组合的可重用模块的部件。 有关详细信息，请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。  
   
  你可以对每个主要组件与完整系统应用相同的原则。 在大型项目中，每个组件都可以具有其自己的需求模型。 在较小的项目中，可以创建体系结构模型或高级设计以显示主要组件及其交互。 有关详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
   
@@ -153,7 +150,7 @@ Assert (countAfter == countBefore = 1);
 ##  <a name="Attaching"></a> 附加到模型元素的测试用例  
  如果你的项目使用 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)]，则你可以将测试链接到模型中的元素。 这样你便可以快速找到受要求中的更改影响的测试，并且可帮助你跟踪要求的实现程度。  
   
- 你可以将测试链接到所有类型的元素。 以下是一些示例。  
+ 你可以将测试链接到所有类型的元素。 下面是一些可能的恶意活动：  
   
 -   将用例链接到执行它的测试。  
   
@@ -182,6 +179,3 @@ Assert (countAfter == countBefore = 1);
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)   
  [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: 刷新应用程序 (JavaScript) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: fd99ee60-fa94-46df-8b17-369f60bfd908
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1905d48e79567684da6215b419c348b32721e0e3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722900"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933575"
 ---
 # <a name="refresh-an-app-javascript"></a>刷新应用程序 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,12 +78,9 @@ ms.locfileid: "51722900"
     Hello!  
     ```  
   
-7.  单击**刷新 Windows 应用**按钮，如下：![刷新 Windows 应用程序按钮](../debugger/media/js-refresh.png "JS_Refresh")。 （或按 F4。）  
+7.  单击**刷新 Windows 应用**按钮，如下：![刷新 Windows 应用按钮](../debugger/media/js-refresh.png "JS_Refresh")。 （或按 F4。）  
   
 8.  切换到该应用程序。 将重新加载该应用程序，但不重新启动调试器，并显示新的页面标题。  
   
 ## <a name="see-also"></a>请参阅  
  [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-

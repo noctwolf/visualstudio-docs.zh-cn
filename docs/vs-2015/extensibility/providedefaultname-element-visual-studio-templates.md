@@ -1,14 +1,9 @@
 ---
 title: ProvideDefaultName 元素 （Visual Studio 模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProvideDefaultName
 helpviewer_keywords:
@@ -16,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eec34681d4ebfede8fb811af149e5bbeca081aad
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51767799"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58938029"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定是否[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目系统将生成的模板中的默认名称**添加新项**或**新项目**对话框。  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProvideDefaultName >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>语法  
   
@@ -88,4 +83,3 @@ ms.locfileid: "51767799"
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)
-

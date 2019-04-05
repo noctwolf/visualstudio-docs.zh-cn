@@ -1,25 +1,20 @@
 ---
-title: 演练： 以编程方式捕获图形信息 |Microsoft Docs
-ms.custom: ''
+title: 演练：以编程方式捕获图形信息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747677"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934575"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +143,7 @@ ms.locfileid: "51747677"
 -   使用 `CaptureCurrentFrame` API  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>准备你的计算机以使用编程捕获  
- 编程捕获 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具来提供捕获功能。 将运行应用的计算机必须安装远程工具，即使你要在本地计算机上使用编程捕获也是如此。 在本地计算机上执行编程捕获时，不必运行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+ 编程捕获 API 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具来提供捕获功能。 将运行应用的计算机必须安装远程工具，即使你要在本地计算机上使用编程捕获也是如此。 在本地计算机上执行编程捕获时，不必运行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
  若要在正在计算机上运行的应用中使用远程捕获 API，首先，你必须在该计算机上安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具。 不同版本的远程工具支持不同的硬件平台。 有关如何安装远程工具的信息，请参阅 Microsoft 下载网站上的 [远程工具下载页](http://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
   
@@ -190,7 +185,7 @@ ms.locfileid: "51747677"
   有关[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用，临时目录的位置是特定于每个用户和应用程序，并通常位于某个位置，例如 C:\users\\*用户名*\AppData\Local\Packages\\ *包系列名称*\TempState\\。 对于桌面应用，临时目录的位置特定于每个用户，通常位于某个位置，例如 C:\Users\\*用户名*\AppData\Local\Temp\\。  
   
 > [!NOTE]
->  若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请牢记，就可以写入数据的位置而言，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用比桌面应用更受限制，而且可能需要进行额外配置才能写入某些位置。  
+>  若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请牢记，就可以写入数据的位置而言， [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用比桌面应用更受限制，而且可能需要进行额外配置才能写入某些位置。  
   
 ### <a name="capturing-the-graphics-information"></a>捕获图形信息  
  在准备好应用以用于编程捕获并有选择地配置好图形日志文件的位置和名称之后，请生成该应用，然后运行或调试它以捕获数据；当使用编程捕获 API 时，请不要从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中启动图形诊断。 图形日志将写入你指定的位置。 如果你想要保留此版本的日志，请将它移动到另一个位置；否则，当你再次运行该应用时，会对其进行重写。  
@@ -204,9 +199,6 @@ ms.locfileid: "51747677"
 -   了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 捕获图形信息](../debugger/walkthrough-capturing-graphics-information.md)   
+ [演练：捕获图形信息](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [命令行捕获工具](../debugger/command-line-capture-tool.md)
-
-
-

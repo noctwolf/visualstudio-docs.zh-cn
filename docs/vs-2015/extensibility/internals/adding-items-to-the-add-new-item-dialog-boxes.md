@@ -1,26 +1,21 @@
 ---
 title: 将项添加到添加新项对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ca9ae7d9e4f0ffc031d2dc8db3e940c9b844c57e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778548"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "59000156"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到“添加新项”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ ms.locfileid: "51778548"
   
  首个 GUID 是此类型; 的项目的 CLSID第二个 GUID 指示添加的项模板的已注册的项目类型。  
   
- \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \1  
+ \\{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
   
  @="#6"  
   
- "TemplatesDir"="\<Visual Studio SDK 安装路径\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
+ "TemplatesDir"="\<Visual Studio SDK installation path\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
   
- "SortPriority"= dword:00000064  
+ "SortPriority"=dword:00000064  
   
-|name|类型|（从.rgs 文件） 的数据|描述|  
+|名称|类型|（从.rgs 文件） 的数据|描述|  
 |----------|----------|-----------------------------|-----------------|  
-|@ （默认值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY %|资源 ID**添加项**模板。|  
+|@ （默认值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|资源 ID**添加项**模板。|  
 |Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|在对话框中显示的项目项的路径**添加新项**向导。|  
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|确定文件中显示的树节点中的排序顺序**添加新项**对话框。|  
   
@@ -89,4 +84,3 @@ ms.locfileid: "51778548"
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [向导 (.Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)
-

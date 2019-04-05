@@ -1,26 +1,21 @@
 ---
 title: 扩展独立的 Shell |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dc700e0a1b8753a26067eff90df9ff58765de8d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af64fa948754350eb1beb0f70dbac33981b595f8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792016"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936173"
 ---
 # <a name="extending-the-isolated-shell"></a>扩展独立的 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51792016"
 可以通过将 VSPackage、 Managed Extensibility Framework (MEF) 组件一部分或一个普通的 VSIX 项目添加到独立的 shell 应用程序来扩展 Visual Studio 独立 shell。  
   
 > [!NOTE]
->  以下步骤 presuppose 通过使用 Visual Studio Shell 独立的项目模板创建了一个基本的独立的 shell 应用程序。 有关此项目模板的详细信息，请参阅[演练： 创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+>  以下步骤 presuppose 通过使用 Visual Studio Shell 独立的项目模板创建了一个基本的独立的 shell 应用程序。 有关此项目模板的详细信息，请参阅[演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 包项目模板的位置  
  可在“新建项目”  对话框中的三个不同位置找到 Visual Studio 包项目模板：  
@@ -126,5 +121,4 @@ ms.locfileid: "51792016"
 8.  生成和运行解决方案。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [演练：创建基本的独立的 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

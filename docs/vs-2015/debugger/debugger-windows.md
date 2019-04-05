@@ -1,25 +1,20 @@
 ---
 title: 调试程序 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9a49df0f355672a3e49a61c0cfe51c02ba96e4be
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936799"
 ---
 # <a name="debugger-windows"></a>调试器窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +26,17 @@ ms.locfileid: "51727131"
 |**窗口**|**热键**|**请参阅主题**|  
 |断点|CTRL+ALT+B|[使用断点](../debugger/using-breakpoints.md)|  
 |异常设置|CTRL+ALT+E|[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)|  
-|输出|CTRL+ALT+O|[输出窗口](../ide/reference/output-window.md)|  
+|Output|CTRL+ALT+O|[输出窗口](../ide/reference/output-window.md)|  
 |GPU 线程|-|[如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)|  
 |任务|CTR:+SHIFT+D、K|[使用“任务”窗口](../debugger/using-the-tasks-window.md)|  
 |并行堆栈|CTR:+SHIFT+D、S|[使用“并行堆栈”窗口](../debugger/using-the-parallel-stacks-window.md)|  
 |并行监视|CTR:+SHIFT+D、（1、2、3、4）|[使用“并行堆栈”窗口](../debugger/using-the-parallel-stacks-window.md)|  
 |监视|CTRL+ALT+W、（1、2、3、4）|[监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)|  
 |快速监视|SHIFT+F9|[监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)|  
-|自动|CTRL+ALT+V、A|[变量的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|局部变量|CTRL+ALT+V、L|[变量的 Windows](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|自动|CTRL+ALT+V、A|[变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|局部变量|CTRL+ALT+V、L|[变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |即时|CTRL+ALT+I|[即时窗口](../ide/reference/immediate-window.md)|  
-|Python 交互式调试|SHIFT+ALT+I|[PTVS 入门：交互式 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python 交互式调试|SHIFT+ALT+I|[PTVS 入门：Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript 控制台|CTRL+ALT+V、C|[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM 资源管理器|CTRL+ALT+V、D|[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)|  
 |实时可视化树|-|[在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)|  
@@ -56,8 +51,3 @@ ms.locfileid: "51727131"
   
 ## <a name="see-also"></a>请参阅  
  [调试器基础知识](../debugger/debugger-basics.md)
-
-
-
-
-

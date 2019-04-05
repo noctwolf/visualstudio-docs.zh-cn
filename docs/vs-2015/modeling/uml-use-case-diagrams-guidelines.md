@@ -1,12 +1,9 @@
 ---
-title: UML 用例图： 准则 |Microsoft Docs
-ms.custom: ''
+title: UML 用例图：指导原则 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams - modeling, use case
 - UML, use case diagrams
@@ -17,13 +14,13 @@ ms.assetid: b1ae8ed0-d00b-4f9b-8e23-733e09e81e9b
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b4a4bc02202f8ec1f41052dcdea63d97bbcb9671
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b69a06f0dff7347e5f24899552f25721e71ee818
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934658"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 用例图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +41,7 @@ ms.locfileid: "51793082"
   
   用例图不显示用例的详细信息：它只汇总用例、参与者和系统之间的某些关系。 特别是，用例图不显示每个用例为实现目标所执行步骤的顺序。 可以在其他关系图和文档中描述这些详细信息，这些关系图和文档可与各用例相链接。 有关详细信息，请参阅[详细描述用例](#Details)本主题中。  
   
-  为用例提供的描述将使用与系统所用于的领域相关的一些词汇，如“销售”、“菜单”和“顾客”等。 明确定义这些词汇及其关系是非常重要的，你可以借助 UML 类图来进行定义。 有关详细信息，请参阅[UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)。  
+  为用例提供的描述将使用与系统所用于的领域相关的一些词汇，如“销售”、“菜单”和“顾客”等。 明确定义这些词汇及其关系是非常重要的，你可以借助 UML 类图来进行定义。 有关详细信息，请参阅 [UML 类图：指导原则](../modeling/uml-class-diagrams-guidelines.md)。  
   
   用例只处理系统的功能要求。 诸如业务规则、服务质量要求和实现约束等其他要求必须另外表示。 体系结构和内部详细信息也必须另外说明。 有关如何定义用户需求的详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
@@ -97,7 +94,7 @@ ms.locfileid: "51793082"
   
     -   用例表示参与者借助你的系统所执行的活动。  
   
-    -   使用参与者自身能够理解的名称重命名这些用例。 不要使用与代码有关的名称。 例如：**订餐，支付餐费、 送餐**。  
+    -   使用参与者自身能够理解的名称重命名这些用例。 不要使用与代码有关的名称。 例如：**顺序餐费、 支付餐费，提供食物**。  
   
     -   如开始从主要的事务**订餐**，直到更高版本较小的交互，例如放任**选择菜单项**。  
   
@@ -145,7 +142,7 @@ ms.locfileid: "51793082"
   
 1.  右键单击执行组件，然后单击**属性**。  
   
-     **属性**窗口会显示。  
+     此时会显示“属性”窗口。  
   
 2.  设置**图像路径**属性设置为图像文件的位置。  
   
@@ -233,9 +230,9 @@ ms.locfileid: "51793082"
   
 - 将用例链接到项目中的另一个或多个关系图。  
   
-  -   活动图有助于解释包含循环、分支和并行线程的较复杂流程。 它还可以显示流程各部分之间的数据流。 有关详细信息，请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+  -   活动图有助于解释包含循环、分支和并行线程的较复杂流程。 它还可以显示流程各部分之间的数据流。 有关详细信息，请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
-  -   序列图有助于解释不同参与者之间复杂的交互序列。 它还可用于显示系统内发生的对每个用例的响应。 有关详细信息，请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+  -   序列图有助于解释不同参与者之间复杂的交互序列。 它还可用于显示系统内发生的对每个用例的响应。 有关详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 - 将用例链接到用于详细描述用例的 OneNote 页面、节或段落。  
   
@@ -337,7 +334,7 @@ ms.locfileid: "51793082"
   
 - 活动图中的操作与被包括用例有相同的名称。  
   
-  有关详细信息，请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+  有关详细信息，请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
   ![用例链接的活动图中所示的步骤](../modeling/media/uml-ucguidesteps.png "UML_UCGuideSteps")  
   
@@ -445,13 +442,10 @@ ms.locfileid: "51793082"
   
 ## <a name="see-also"></a>请参阅  
  [建立用户需求模型](../modeling/model-user-requirements.md)   
- [UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML 序列关系图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)   
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)   
- [视频： 将功能组织到用例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
-
-
-
+ [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [UML 活动关系图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)   
+ [视频：将功能组织到用例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)

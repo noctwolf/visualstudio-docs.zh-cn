@@ -1,27 +1,22 @@
 ---
-title: 生成新项目： 揭秘，第 1 部分 |Microsoft Docs
-ms.custom: ''
+title: 生成新项目：实质上，第 1 部分 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792913"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934266"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -83,7 +78,7 @@ devenv /installvstemplates
   
  如果您查找附近的包项中的 GUID，并检查 SatelliteDll 子项，您可以找到包含字符串资源的程序集的路径：  
   
- \<Visual Studio 安装路径 > \VC#\VCSPackages\1033\csprojui.dll  
+ \<Visual Studio installation path>\VC#\VCSPackages\1033\csprojui.dll  
   
  若要验证这一点，打开文件资源管理器，并将 csprojui.dll 拖入 Visual Studio 目录... 字符串表显示了资源 # 2345年具有标题**Visual C#**。  
   
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  如果存在此子项，则由开发人员设置对话框控制的根节点的位置。 例如，应用于对象的  
   
- DeveloperActivity REG_SZ VC #  
+ DeveloperActivity REG_SZ VC#  
   
  指示 Visual C# 为根节点是否 Visual Studio 设置为[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]开发。 否则，它将为的子节点**其他语言**。  
   
@@ -128,7 +123,7 @@ devenv /installvstemplates
 -   可以更改排序顺序。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>查找根节点的项目类型  
- 当 Visual Studio 遍历 ProjectTemplates 文件夹时，打开所有的.zip 文件，并提取任何.vstemplate 文件。 .Vstemplate 文件使用 XML 来描述应用程序模板。 有关详细信息，请参阅[生成新项目： 揭秘，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
+ 当 Visual Studio 遍历 ProjectTemplates 文件夹时，打开所有的.zip 文件，并提取任何.vstemplate 文件。 .Vstemplate 文件使用 XML 来描述应用程序模板。 有关详细信息，请参阅[生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
   
  \<ProjectType > 标记确定该应用程序的项目类型。 例如，\CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip 文件包含具有此标记的 EmptyProject.vstemplate 文件：  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode**显示为子节点的 Visual C# Windows 节点的正下方。  
   
 ## <a name="see-also"></a>请参阅  
- [生成新项目：揭秘，第 2 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

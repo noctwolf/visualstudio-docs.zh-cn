@@ -1,12 +1,9 @@
 ---
 title: 使用 TextTransform 实用工具生成文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
@@ -14,13 +11,13 @@ ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227443"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937676"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 实用工具生成文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,6 +61,3 @@ TextTransform [<options>] <templateName>
 |在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中生成文件。|[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|  
 |编写文本模板化主机，您可以调用自己的应用程序从文本模板。|[使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)|
-
-
-

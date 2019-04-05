@@ -1,14 +1,9 @@
 ---
-title: 如何： 调试.NET Framework 源代码 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试.NET Framework 源代码 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cbc6ed2ff77a971962fa73b15d5b7aafb9ef02b8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725423"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934357"
 ---
-# <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
+# <a name="how-to-debug-net-framework-source"></a>如何：调试.NET Framework 源代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供的新功能[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]调试。 若要调试[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]源，您必须有权调试符号的代码。 此外需要启用单步执行[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]源。  
@@ -43,7 +38,7 @@ ms.locfileid: "51725423"
   
 3.  在中**常规**框中，设置**启用.NET Framework**源代码单步执行。  
   
-    1.  如果你先前启用了“仅我的代码”，则会出现一个警告对话框，提示你“仅我的代码”现在已禁用。 单击 **“确定”**。  
+    1.  如果您先前启用了“仅我的代码”，则会出现一个警告对话框，提示您“仅我的代码”现在已禁用。 单击 **“确定”**。  
   
     2.  如果您没有设置符号缓存位置，则会出现另一个警告对话框，提示您默认符号缓存位置现在已设置。 单击 **“确定”**。  
   
@@ -78,8 +73,5 @@ ms.locfileid: "51725423"
 2.  指向**负载从符号**然后单击**Microsoft 符号服务器**或**符号路径**。  
   
 ## <a name="see-also"></a>请参阅  
- [Debugging Managed Code](../debugger/debugging-managed-code.md) （调试托管代码）  
+ [调试托管代码](../debugger/debugging-managed-code.md)   
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 演练： 调试多线程应用程序 |Microsoft Docs
-ms.custom: ''
+title: 演练：调试多线程应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: 590ffd57-0556-43d8-8962-ee27e5b2b7d7
 caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5dd742411710698cb2dd626e211cb0e73b8379e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8fead0386d1ba820be21e65009c78791c7368bcd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798622"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937602"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>演练：调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ ms.locfileid: "51798622"
   
 1.  上**文件**菜单中，选择**新建**，然后单击**项目**。  
   
-     此时将出现 “新建项目” 对话框。  
+     此时将出现“新建项目”对话框。  
   
-2.  在中**项目类型**s 框中，单击所选的语言： **Visual Basic**， **Visual C#**，或者**Visual c + +**。  
+2.  在中**项目类型**s 框中，单击所选的语言：**Visual Basic**， **Visual C#** ，或**Visual c + +**。  
   
 3.  在中**模板**框中，选择**控制台应用程序**或**CLR 控制台应用程序**。  
   
@@ -54,7 +49,7 @@ ms.locfileid: "51798622"
   
 6.  删除出现在源代码文件中的代码并替换该主题的"创建线程"的部分中显示的示例代码[创建线程并传递数据的开始时间](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
   
-7.  在“文件”  菜单上，单击“全部保存” 。  
+7.  在“文件”菜单上，单击“全部保存”。  
   
 #### <a name="to-begin-the-walkthrough"></a>开始演练  
   
@@ -129,7 +124,7 @@ Thread::Sleep(3000);
 2.  转到**调试位置**工具栏，然后单击**线程**列表。  
   
     > [!NOTE]
-    >  可以通过三个突出显示的列表来识别此工具栏：**进程**，**线程**，并**堆栈帧**。  
+    >  您可以通过三个突出显示的列表来识别此工具栏：**进程**，**线程**，和**堆栈帧**。  
   
 3.  请注意列表中显示的线程数目。  
   
@@ -151,7 +146,7 @@ Thread::Sleep(3000);
   
 10. 单击标记按钮切换回**仅显示标记的线程**。  
   
-11. 上**调试**菜单，依次指向**Windows** ，然后单击**线程**。  
+11. 在“调试”菜单上指向“窗口”，然后单击“线程”。  
   
      **线程**窗口会显示。 其中有一个线程上附加了突出显示的标记图标。  
   
@@ -245,7 +240,7 @@ Thread::Sleep(3000);
   
      您现在已经了解更改活动线程的三种方法： 使用**线程**窗口中，**线程**框中**调试位置**工具栏和中的线程指示符源窗口。  
   
-     使用线程指示符只能切换到在特定位置停止的线程。 通过使用**线程**窗口和**调试位置**工具栏中，您可以切换到任何线程。  
+     使用线程指示符只能切换到在特定位置停止的线程。 使用“线程”窗口和“调试位置”工具栏可以切换到任何线程。  
   
 ## <a name="freezing-and-thawing-thread-execution"></a>线程执行的冻结和解冻  
   
@@ -264,6 +259,3 @@ Thread::Sleep(3000);
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-
-
-

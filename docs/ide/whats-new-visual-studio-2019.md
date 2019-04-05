@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 02/27/2019
+ms.date: 04/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -10,124 +10,62 @@ ms.assetid: 00bec66b-bcee-46f5-91d9-f73a2b469744
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev16
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-monikerRange: vs-2019
-ms.openlocfilehash: 0e770b385b385713c262347c62d10e1be0769b40
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475885"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866739"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-[候选发布 (RC)](/visualstudio/releases/2019/release-notes/) 更新
+**已针对[版本 16.0](/visualstudio/releases/2019/release-notes/) 进行更新**
 
 >[!div class="button"]
->[下载 RC](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019+rc)
+>[下载 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
 
-Visual Studio 2019 包含许多常规改进以及可优化开发者生产力和团队协作的新功能。 无论是第一次使用 Visual Studio 还是老用户 &mdash; 从简化的项目创建和代码运行状况管理，到团队和开源协作工作流程，你都将能够利用其功能来开发生命周期的所有方面。<br/><br/>
+使用 Visual Studio 2019，你将获得面向任何开发人员、应用程序和平台的一流工具和服务。 无论是首次使用 Visual Studio 还是已经使用多年，此新版本都有很多值得称赞的地方！
 
->[!VIDEO https://channel9.msdn.com/Events/Connect/Microsoft-Connect--2018/D190/player]
+以下是对新增功能的简要概括：
 
-以下是 Visual Studio 提供的高级扼要重述：
+* **[开发](#develop)**：通过改进的性能、即时代码清理和更好的搜索结果来保持专注和高效。
+* **[协作](#collaborate)**：在 Visual Studio 中，通过云优先工作流、实时编辑和调试，以及代码评审，尽情享受自然协作。
+* **[调试](#debug)**：突出显示并导航到特定值、优化内存使用，并对应用程序的执行进行自动快照。
 
-* **[个人和团队生产力](#personal-and-team-productivity)**。 最重要是的每个人的生产力。
-* **[新式发展支持](#modern-development-support)**。 支持你当前的项目和未来的解决方案。
-* **[持续创新](#continuous-innovation)**。 智慧与智能、云支持的代码。
+有关此版本中所有新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。 
 
-> [!NOTE]
-> 有关 Visual Studio 2019 中新特性和新增功能的完整列表，请参阅 [RC 发行说明](/visualstudio/releases/2019/release-notes/)和[预览版 4 发行说明](/visualstudio/releases/2019/release-notes-preview/)。 有关这两个最新版本的详细信息，请参阅 [Visual Studio 2019 Release Candidate now available](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-release-candidate-rc-now-available/)（Visual Studio 2019 候选发布现已推出）博客文章。
+## <a name="develop"></a>开发
 
-## <a name="personal-and-team-productivity"></a>个人和团队生产力
+使用新功能来节省时间。
+<br><br>
+> [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
-在每个 Visual Studio 版本中，性能改进都是首要考虑因素，但随之而来的是提高你的生产力。 以下是我们可以提供的帮助。
+### <a name="improved-search"></a>改进的搜索
 
-### <a name="new-start-window"></a>新的启动窗口
+（以前称为快速启动）我们的新搜索体验更快、更有效。 现在，搜索结果会在键入时动态显示。 并且，搜索结果通常可以包括命令的键盘快捷方式，更便于记忆以备将来使用。
 
-打开 Visual Studio 2019 时，首先映入眼帘的是一个新的启动窗口。
+   ![Visual Studio 2019 中的新搜索体验动画](media/vs-2019/new-search-feature.gif)
 
-   ![Visual Studio 2019 中的新启动窗口](media/start-window.png)
+新的模糊搜索逻辑将找到你需要的所有内容，而不考虑拼写错误。 因此，无论你是在寻找命令、设置、文档还是其他有用的操作，新的搜索功能都可以让你更轻松地找到所需内容。
 
-该新的启动窗口包含以下选项：克隆或签出代码、打开项目或解决方案、打开本地文件夹或创建新项目。 这些选项以简单的对话框形式显示，有助于初学者和高级 Visual Studio 用户快速编写代码。
+### <a name="refactorings"></a>重构
 
-有关详细信息，请参阅博客文章 [Get to code:How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)（开始编码：如何设计新的 Visual Studio 开始窗口）。
+新的 C# 重构使组织代码变得更容易。 只需通过按 Ctrl+. 并选择要采取的操作调用重构。 
 
-### <a name="better-search"></a>更好的搜索
+   ![Visual Studio 2019 中的重构体验动画](media/vs-2019/refactorings.gif)
 
-（以前称为快速启动）我们的新搜索体验更快、更有效。 现在，搜索结果会在键入时动态显示。 并且，搜索结果包括命令的键盘快捷方式，更便于记忆以备将来使用。
+我们已经添加了许多新的重构，包括一个可以封装方法参数的重构。
 
-   ![Visual Studio 2019 中的新搜索功能](media/search-feature.png)
+### <a name="intellicode"></a>IntelliCode
 
-无论你是在寻找命令、设置、文档还是其他有用的操作，新的搜索功能都可以让你更轻松地找到所需内容。
+[Visual Studio IntelliCode](/visualstudio/intellicode/) 是一个扩展，通过使用人工智能 (AI) 来提高软件开发工作的效率。 IntelliCode 将在 GitHub 上训练 2,000 个开源项目（每个项目包含 100 个星级）以生成这些建议。
 
-### <a name="one-click-code-cleanup"></a>一键代码清除
-
-与新文档运行状况指示符配对是一种新的代码清理命令。 可以使用此新命令通过单击按钮来识别并修复警告和建议。
-
-   ![Visual Studio 2019 中的新代码清理功能](media/code-cleanup.png)
-
-清理将格式化代码并应用[当前设置](code-styles-and-quick-actions.md) [.editorconfig 文件](create-portable-custom-editor-options.md)或 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)建议的任何代码修复程序。
-
-### <a name="debugger-improvements"></a>调试器改进
-
-#### <a name="search-within-a-watch-window-and-format-watch-values"></a>在监视窗口中搜索，并设置监视值的格式
-
-你可能曾经体验过在监视窗口中查找一组值中的字符串。 在 Visual Studio 2019 中，我们在监视、局部变量和自动窗口中添加了搜索，以帮助你查找要查找的对象和值。
-
-还可以格式化监视、本地和自动窗口中值的显示方式。  双击任何窗口中的一个项目并添加逗号 (",") 以访问可能的格式说明符下拉列表，每个列表都包含其预期效果的说明。
-
-   ![Visual Studio 2019 中的新监视窗口和格式化值的功能](media/search-watch-window.png)
-
-有关详细信息，请参阅 [Visual Studio 2019 中的增强功能：在 Watch、Autos、Locals 窗口中搜索对象和属性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)博客文章。
-
-### <a name="visual-studio-live-share"></a>Visual Studio Live Share
-
-[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 是一项开发者服务，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。
-
-Visual Studio 2019 中会默认安装此服务。
-
-![显示 Visual Studio 2019 中 Live Share 协作功能的动画 GIF 文件](media/live-share-collaboration.gif)
-
-有关详细信息，请参见博客文章 [Visual Studio Live Share for real-time code reviews and interactive education](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/)（用于实时代码评审和交互式教育的 Visual Studio Live Share）。
-
-## <a name="modern-development-support"></a>新式开发支持
-
-### <a name="manage-pull-requests-prs-from-the-ide"></a>管理来自 IDE 的拉取请求 (PR)
-
-我们正在推出一个新的扩展，你可以下载该扩展与 Visual Studio 2019 一起使用。 使用此新扩展，可以查看、运行甚至调试团队的拉取请求，而无需离开 Visual Studio IDE[（集成开发环境）](../get-started/visual-studio-ide.md)。 我们目前支持 Azure Repos 中的代码，但正在扩展以支持 GitHub 并改善整体体验。
-
-要立即开始使用，可从 Visual Studio Marketplace 下载 [Visual Studio 的拉取请求](https://aka.ms/pr4vs)扩展。
-
-### <a name="develop-with-net-core-3-preview"></a>使用 .NET Core 3 预览版进行开发
-
-Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3](https://dotnet.microsoft.com/download/dotnet-core/3.0) 应用程序。 我们将继续支持和改进跨平台的 C++ 开发，以及 iOS 的 .NET 移动开发和 Android 的 Xamarin 开发。
-
-   ![使用 Visual Studio 2019 中的 .NET Core 3 预览版开发应用](media/dot-net-core-three-dev.png)
-
-有关详细信息，请参阅以下页面：
-
-* [.NET Core 3 预览版 1](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md) 和 [.NET Core 3 预览版 2](https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview2.md)发行说明
-* [宣布发布 .NET Core 3 预览版 1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-1-and-open-sourcing-windows-desktop-frameworks/) 和[宣布发布 .NET Core 3 预览版 2](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-preview-2/) 博客文章
-
-## <a name="continuous-innovation"></a>持续创新
-
-### <a name="per-monitor-aware-pma-rendering"></a>按监视器感知 (PMA) 呈现
-
-如果使用配置了不同显示比例因子的监视器，或远程连接到显示比例因子与主设备不同的计算机，你可能会发现 Visual Studio 看起来比较模糊或以错误的比例呈现。
-
-随着 Visual Studio 2019 的发布，我们迈出了使 Visual Studio 成为按监视器感知 (PMA) 应用程序的第一步。 我们正在努力构建基础工作，确保无论使用何种显示比例因子，Visual Studio 都能正确呈现。
-
-   ![Visual Studio 2019 中的按监视器感知 (PMA) 呈现](media/per-monitor-aware-dpi-scaling.png)
-
-有关详细信息，请参阅[通过 Visual Studio 2019 创建更出色的多监视器体验](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)博客文章。
-
-### <a name="visual-studio-intellicode"></a>Visual Studio IntelliCode
-
-[Visual Studio IntelliCode](/visualstudio/intellicode/) 是一种扩展，可通过使用人工智能 (AI) 来增强软件开发工作。 IntelliCode 将在 GitHub 上训练 2,000 个开源项目（每个项目包含 100 个星级）以生成这些建议。
+ ![Visual Studio 2019 中的 IntelliCode 动画](media/vs-2019/IntelliCode.gif)
 
 下面是 Visual Studio IntelliCode 帮助提高生产力的几种方法：
 
@@ -136,13 +74,99 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 * 发现难以察觉的代码问题
 * 将关注点集中到重要领域，从而专注代码评审
 
- ![IntelliSense 建议示例](media/intellicode-intellisense-suggestion.png)
-
 我们在适用于 Visual Studio 的 IntelliCode 扩展预览版中最初仅支持 C#。 现在，我们添加了对 Visual Studio 中 C++ 和 XAML 的支持。
 
 如果你使用的是 C#，我们还添加了在你自己的代码上训练自定义模型的功能。
 
-有关最近的更新的详细信息，请参阅博客文章 [Visual Studio IntelliCode supports more languages and learns from your code](https://devblogs.microsoft.com/visualstudio/visual-studio-intellicode-supports-more-languages-and-learns-from-your-code/)（Visual Studio IntelliCode 可支持更多语言并学习你的代码）。 而且，有关扩展和如何下载扩展的详细信息，请参阅 Microsoft DevLabs 上的 [Visual Studio IntelliCode - Preview](https://go.microsoft.com/fwlink/?linkid=872707)（Visual Studio IntelliCode - 预览版）页面。
+有关 IntelliCode 的详细信息，请参阅博客文章[使用 Visual Studio IntelliCode 编写更多代码并减少滚动](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)。 
+
+### <a name="code-cleanup"></a>代码清理
+
+与新文档运行状况指示符配对是一种新的代码清理命令。 可以使用此新命令通过单击按钮来识别并修复警告和建议。
+
+清理将格式化代码并应用[当前设置](code-styles-and-quick-actions.md) [.editorconfig 文件](create-portable-custom-editor-options.md)或 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)建议的任何代码修复程序。
+
+   ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile.png)
+
+此外，还可以将修复程序集合另存为配置文件。 例如，如果你有一小组在编写代码时经常应用的目标修复程序，然后在进行代码评审之前应用另一组全面的修复程序，则可以配置配置文件来处理这些不同的任务。
+
+   ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile-configure.png)
+
+## <a name="collaborate"></a>协作
+
+建立团队来解决问题。
+<br><br>
+> [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
+
+### <a name="cloud-first-workflow"></a>云优先工作流
+
+打开 Visual Studio 2019 时，你会注意到它是一个新的启动窗口。
+
+   ![Visual Studio 2019 中新启动窗口的屏幕截图](media/vs-2019/start-window-dark.png)
+
+启动窗口提供了几个选项，帮助你快速编写代码。 首先，我们布置了从存储库克隆或签出代码的选项。  
+
+   ![Visual Studio 2019 中的“Git 优先”体验动画](media/vs-2019/git-first.gif)
+
+启动窗口还包括用于打开项目或解决方案、打开本地文件夹，或创建新项目的选项。
+
+有关详细信息，请参阅博客文章 [Get to code:How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/)（开始编码：如何设计新的 Visual Studio 开始窗口）。
+
+### <a name="live-share"></a>Live Share
+
+[Visual Studio Live Share](https://visualstudio.microsoft.com/services/live-share/) 是一项开发者服务，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。
+
+Visual Studio 2019 中会默认安装此服务。
+
+![显示 Visual Studio 2019 中 Live Share 协作功能的动画](media/vs-2019/live-share.gif)
+
+有关详细信息，请参见博客文章[用于实时代码评审和交互式教育的 Visual Studio Live Share](https://devblogs.microsoft.com/visualstudio/visual-studio-live-share-for-real-time-code-reviews-and-interactive-education/)和 [Live Share 现在包含在 Visual Studio 2019 中](https://devblogs.microsoft.com/visualstudio/live-share-now-included-with-visual-studio-2019/)。
+
+### <a name="integrated-code-reviews"></a>集成的代码评审
+
+我们正在推出一个新的扩展，你可以下载该扩展与 Visual Studio 2019 一起使用。 使用此新扩展，可以查看、运行甚至调试团队的拉取请求，而无需离开 Visual Studio。 我们支持 GitHub 和 Azure DevOps 存储库中的代码。
+
+   ![Visual Studio 2019 中新启动窗口的屏幕截图](media/vs-2019/pr-experience.png)
+
+要立即开始使用，可从 Visual Studio Marketplace 下载 [Visual Studio 的拉取请求](https://aka.ms/pr4vs)扩展。
+
+## <a name="debug"></a>调试
+
+通过精准定位瞄准。
+<br><br>
+> [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
+
+### <a name="performance-gains"></a>性能提升
+
+我们采用了曾经排他的 C++ 数据断点，并将其用于 .NET Core 应用程序。
+
+   ![显示 Visual Studio 2019 中的调试数据断点的动画](media/vs-2019/debug-data-breakpoints.gif)
+
+因此，无论是使用 C++ 还是 .Net Core 编写代码，数据断点都是一个很好的替代方法，而不只是放置常规断点。 数据断点还非常适合用于查找修改、添加或从列表中删除全局对象的位置之类的方案。 
+
+而且，如果你是开发大型应用程序的 C++ 开发人员，Visual Studio 2019 已经将过程符号化，这允许你调试这些应用程序，而不会遇到与内存相关的问题。
+
+### <a name="search-while-debugging"></a>调试时搜索
+
+你可能曾经体验过在监视窗口中查找一组值中的字符串。 在 Visual Studio 2019 中，我们在监视、局部变量和自动窗口中添加了搜索，以帮助你查找要查找的对象和值。
+
+   ![显示 Visual Studio 2019 调试搜索窗口的动画](media/vs-2019/debug-window-search.gif)
+
+还可以格式化监视、本地和自动窗口中值的显示方式。  双击任何窗口中的一个项目并添加逗号 (",") 以访问可能的格式说明符下拉列表，每个列表都包含其预期效果的说明。
+
+   ![Visual Studio 2019 中的新监视窗口和格式化值的功能](media/search-watch-window.png)
+
+有关详细信息，请参阅 [Visual Studio 2019 中的增强功能：在 Watch、Autos、Locals 窗口中搜索对象和属性](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/)博客文章。
+
+### <a name="snapshot-debugger"></a>快照调试程序
+
+获取应用程序在云中执行的快照，以了解具体发生的情况。 （此功能仅在 Visual Studio Enterprise 中提供。）
+
+   ![显示 Visual Studio 2019 Enterprise Snapshot Debugger 的动画](media/vs-2019/snapshot-debugger.gif)
+
+我们增加了对在 Azure VM 上运行的 ASP.NET（Core 和桌面）应用程序的支持。 此外还增加了对在 Azure Kubernetes 服务中运行的应用程序的支持。 Snapshot Debugger 有助于大幅减少解决生产环境中出现的问题所需的时间。
+
+有关详细信息，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用程序](../debugger/debug-live-azure-applications.md)页。
 
 ## <a name="give-us-feedback"></a>给我们提供反馈
 
@@ -154,7 +178,8 @@ Visual Studio 2019 的预览版支持构建适用于任何平台的 [.NET Core 3
 
 ## <a name="see-also"></a>请参阅
 
+* [宣布推出 Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Microsoft Connect()；2018 会议](https://www.microsoft.com/connectevent)
-* [Visual Studio 2017 中的新增功能](whats-new-visual-studio-2017.md)
+* [Visual Studio 2019 for Mac 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft Connect(); 2018 会议](https://www.microsoft.com/connectevent)

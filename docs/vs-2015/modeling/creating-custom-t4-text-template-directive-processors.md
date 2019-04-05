@@ -1,25 +1,22 @@
 ---
 title: 创建自定义 T4 文本模板指令处理器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934019"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +63,7 @@ ms.locfileid: "49852735"
   
 - `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可以使用其他声明。 若要执行此操作的最简单方法是构建包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，您可以将语句构造为 CodeDom 树，然后返回序列化该模板使用的语言中的树的结果。  
   
-- 有关详细信息，请参阅[演练： 创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
+- 有关详细信息，请参见[演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)  
@@ -74,6 +71,3 @@ ms.locfileid: "49852735"
   
  [演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  介绍如何创建自定义指令处理器、 如何注册和测试指令处理器，以及如何将输出文件格式化为 HTML。
-
-
-

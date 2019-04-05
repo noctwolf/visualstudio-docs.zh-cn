@@ -1,14 +1,9 @@
 ---
 title: 使用 DebuggerTypeProxy 特性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,18 +17,18 @@ ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14e42546245aad8e5e5071a843da87f23a038149
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ca1b84990ed2747e530a1a83a17e17b99f36b116
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754328"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934358"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 特性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False 和自动升级 = True) 指定一个代理或替身，并更改类型的方式显示在调试器窗口。 查看具有代理的变量时，代理将代替原始类型出现在**显示**。 调试器变量窗口仅显示代理类型的公共成员。 不会显示私有成员。  
+DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False 和自动升级 = True) 指定一个代理或替身，并更改类型的方式显示在调试器窗口。 查看具有代理的变量时，代理将代替“显示”中的原始类型。 调试器变量窗口仅显示代理类型的公共成员。 不会显示私有成员。  
   
  此特性可应用于：  
   
@@ -69,8 +64,5 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
  `"Namespace.TypeName'2"`  
   
 ## <a name="see-also"></a>请参阅  
- [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)   
+ [使用 DebuggerDisplay 属性](../debugger/using-the-debuggerdisplay-attribute.md)   
   [使用调试器显示特性增强调试](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

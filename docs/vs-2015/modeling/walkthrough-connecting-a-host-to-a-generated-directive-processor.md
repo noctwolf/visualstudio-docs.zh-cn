@@ -1,12 +1,9 @@
 ---
-title: 演练： 将主机连接到生成的指令处理器 |Microsoft Docs
-ms.custom: ''
+title: 演练：将主机连接到生成的指令处理器 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
@@ -14,23 +11,23 @@ ms.assetid: 254540d9-90d6-42de-8c1c-068affd56e83
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817868"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58938008"
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接至生成的指令处理器
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到生成的指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以编写您自己的主机，用于处理文本模板。 中演示了基本的自定义宿主[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以扩展此主机不能添加功能，如生成多个输出文件。  
+您可以编写您自己的主机，用于处理文本模板。 基本的自定义主机进行了演示[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以扩展此主机不能添加功能，如生成多个输出文件。  
   
  在本演练中，将扩展你的自定义主机，以便它支持调用指令处理器的文本模板。 当您定义特定于域的语言时，它将生成*指令处理器*域模型。 指令处理器，使用户更轻松地编写模板访问模型，从而减少了需要编写程序集并导入的模板中的指令。  
   
 > [!WARNING]
->  本演练基于[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次执行该操作实例。  
+>  本演练基于[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次执行该操作实例。  
   
  本演练包含以下任务：  
   
@@ -49,7 +46,7 @@ ms.locfileid: "49817868"
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio 可视化和建模 SDK|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|  
   
- 此外，你必须在创建的自定义文本模板转换[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
+ 此外，你必须在创建的自定义文本模板转换[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
   
 ## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用域特定语言工具生成的指令处理器  
  在本演练中，使用域特定语言设计器向导来创建域特定语言解决方案 DSLMinimalTest。  
@@ -58,15 +55,15 @@ ms.locfileid: "49817868"
   
 1. 创建域特定语言解决方案具有以下特征：  
   
-   - 名称： DSLMinimalTest  
+   - 姓名:DSLMinimalTest  
   
-   - 解决方案模板： 最小语言  
+   - 解决方案模板：最小语言  
   
    - 文件扩展名： 最小值  
   
-   - 公司名称： Fabrikam  
+   - 公司名称：Fabrikam  
   
-     有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+     有关创建域特定语言解决方案的详细信息，请参阅[如何：创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
 2. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
@@ -86,7 +83,7 @@ ms.locfileid: "49817868"
 6. 保存的解决方案，然后关闭域特定语言设计器。  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>连接到的指令处理器自定义文本模板宿主  
- 生成指令处理器后，连接指令处理器和你在中创建自定义文本模板宿主[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
+ 生成指令处理器后，连接指令处理器和你在中创建自定义文本模板宿主[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>若要连接到生成的指令处理器自定义文本模板宿主  
   
@@ -230,7 +227,7 @@ ms.locfileid: "49817868"
             }  
     ```  
   
-7.  在“文件”  菜单上，单击“全部保存” 。  
+7.  在“文件”菜单上，单击“全部保存”。  
   
 8.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
@@ -362,7 +359,4 @@ ms.locfileid: "49817868"
     ```  
   
 ## <a name="see-also"></a>请参阅  
- [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)
-
-
-
+ [演练：创建自定义文本模板主机](../modeling/walkthrough-creating-a-custom-text-template-host.md)

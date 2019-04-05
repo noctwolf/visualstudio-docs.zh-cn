@@ -1,12 +1,9 @@
 ---
 title: 定义用于扩展 UML 的配置文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - profiles, UML
 - stereotypes, UML
@@ -18,13 +15,13 @@ ms.assetid: 776589cb-f89d-48d5-aafa-04a4c074b0d6
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 37c4560b767828be0ec43419ff92ec5b6f9863ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 832b7b148e73e8d21d56dea6b676910019294e13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730321"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933109"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定义用于扩展 UML 的配置文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -225,7 +222,7 @@ ms.locfileid: "51730321"
 ##  <a name="Schema"></a> 配置文件结构  
  UML 配置文件的 XSD 文件可在下面的示例：[设置构造型和配置文件 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)。 为帮助编辑配置文件，请在以下位置安装 `.xsd` 文件：  
   
- **%ProgramFiles%\Microsoft visual Studio [version] \Xml\Schemas**  
+ **%ProgramFiles%\Microsoft Visual Studio [version]\Xml\Schemas**  
   
  本节使用 C# 配置文件作为示例。 完整的配置文件定义位于：  
   
@@ -345,7 +342,7 @@ ms.locfileid: "51730321"
  我的构造型不显示我的 UML 模型。  
  必须在包或模型中选择配置文件。 然后，构造型将在包或模型内部的元素上显示。 有关详细信息，请参阅[添加构造型添加到 UML 模型元素](../modeling/add-stereotypes-to-uml-model-elements.md)。  
   
- 当我打开 UML 模型时，将显示以下错误： **VS1707： 无法加载以下配置文件，因为序列化时出错： MyProfile.profile**  
+ 当我打开 UML 模型时，将出现以下错误：**VS1707:无法加载以下配置文件，因为发生了序列化错误：MyProfile.profile**  
  1.  验证 .profile 的基本 XML 语法是否正确。  
   
 2. 确保每个名字对象名称的格式都为 /profileName/nodeName。 profileName 是根配置文件节点中的名称特性的值。 nodeName 是元类、externalType 或 enumerationType 的名称特性的值。  
@@ -358,7 +355,7 @@ ms.locfileid: "51730321"
   
 5. 重新生成 VSIX 文件，然后在 Windows 资源管理器中打开该文件以将其重新安装。 重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-   在扩展管理器中，不显示该扩展，但当你尝试重新安装它，将显示以下消息：**扩展已安装到所有适用的产品。**  
+   不显示该扩展在扩展管理器中，但当你尝试重新安装它，将显示以下消息：**该扩展已经安装到所有适用的产品。**  
    1.  一个子文件夹中删除扩展文件*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
   
    -   若要查看*LocalAppData*，必须在 Windows 资源管理器文件夹选项视图选项卡中设置显示隐藏的文件和文件夹。  
@@ -371,8 +368,5 @@ ms.locfileid: "51730321"
  [向 UML 模型元素添加构造型](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [自定义模型使用配置文件和构造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
  [UML 模型的标准构造型](../modeling/standard-stereotypes-for-uml-models.md)   
- [示例： 根据构造型的颜色 UML 元素](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [示例： 设置构造型、 配置文件 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)
-
-
-
+ [示例：根据构造型的颜色 UML 元素](http://go.microsoft.com/fwlink/?LinkID=213841)   
+ [示例：设置构造型、 配置文件 XSD](http://go.microsoft.com/fwlink/?LinkID=213811)

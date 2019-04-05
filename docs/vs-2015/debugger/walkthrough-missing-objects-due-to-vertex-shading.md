@@ -1,25 +1,20 @@
 ---
-title: 演练： 缺少对象因顶点着色而 |Microsoft Docs
-ms.custom: ''
+title: 演练：因顶点着色而缺少对象 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2ecff22d99eb995f0dbe70e93783460f4343d74f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745937"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936819"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +109,7 @@ ms.locfileid: "51745937"
    > [!TIP]
    >  如果同时调试你的应用，则可以在此位置设置一个断点，在呈现下一帧时将命中该断点。 你随后还可以检查 `m_marbleConstantBufferData` 的成员，以确认填充常量缓冲区后是否已将 `projection` 成员的值设置为全零。  
   
-   找到填充常量缓冲区的位置并发现其值来自该变量后`m_marbleConstantBufferData`下, 一步是找出`m_marbleConstantBufferData.projection`成员设置为全零。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。  
+   找到填充常量缓冲区的位置，并发现其值来自变量 `m_marbleConstantBufferData` 之后，下一步是找出将 `m_marbleConstantBufferData.projection` 成员设置为全零的位置。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在应用的源代码中查找设置投影成员的位置  
   
@@ -133,6 +128,3 @@ ms.locfileid: "51745937"
    修复代码后，你可以重新生成并运行应用以查明呈现的问题是否已解决：  
   
    ![现在该对象显示。](../debugger/media/gfx-diag-demo-missing-object-shader-resolution.png "gfx_diag_demo_missing_object_shader_resolution")
-
-
-

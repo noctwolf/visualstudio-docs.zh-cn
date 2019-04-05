@@ -1,14 +1,9 @@
 ---
-title: 如何： 指定 ClickOnce 应用程序的发布页 |Microsoft Docs
-ms.custom: ''
+title: 如何：指定 ClickOnce 应用程序的发布页 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,20 +17,20 @@ ms.assetid: 9d70eebb-bdee-4b42-8e7e-7a07e199bdf7
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: c10033f7e3f3a4336177c8c66721bd6b79ba4c71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196685"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935524"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 安装应用程序和/或任何系统必备组件的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。 **发布页面**为你的项目的属性，可指定的 Web 页面的名称在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序。  
   
- 后指定发布页下, 一次发布时，它会复制到发布位置;它不会再次发布如果被覆盖。 如果你想要自定义页面的外观，就可以做到而无需担心丢失所做的更改。 有关详细信息，请参阅[如何： 自定义 ClickOnce 默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)。  
+ 后指定发布页下, 一次发布时，它会复制到发布位置;它不会再次发布如果被覆盖。 如果你想要自定义页面的外观，就可以做到而无需担心丢失所做的更改。 有关详细信息，请参阅[如何：自定义 ClickOnce 的默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)。  
   
  **发布页面**可以在属性设置**发布选项**对话框中，可通过访问**发布**窗格**项目设计器**.  
   
@@ -67,8 +62,5 @@ ms.locfileid: "49196685"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [如何：自定义 ClickOnce 的默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)
-
-
-
+ [如何：发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：自定义 ClickOnce 默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)

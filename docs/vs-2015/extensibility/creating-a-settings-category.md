@@ -1,31 +1,26 @@
 ---
 title: 创建设置类别 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30d7b4c95a02d841723a4ddf1dcf51dd0ef011b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730365"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936536"
 ---
 # <a name="creating-a-settings-category"></a>创建设置类别
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在本演练中创建 Visual Studio 设置类别和使用它来保存到的值并设置文件中还原值。 设置类别是一组显示为"自定义设置点;"的相关属性也就是说，作为中的复选框**导入和导出设置**向导。 (您可以在找到它**工具**菜单。)设置进行保存或还原为类别，以及各项设置不会显示在该向导。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+在本演练中创建 Visual Studio 设置类别和使用它来保存到的值并设置文件中还原值。 设置类别是一组显示为"自定义设置点;"的相关属性也就是说，作为中的复选框**导入和导出设置**向导。 (您可以在找到它**工具**菜单。)设置进行保存或还原为类别，以及各项设置不会显示在该向导。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  通过从它派生来创建设置类别<xref:Microsoft.VisualStudio.Shell.DialogPage>类。  
   
@@ -43,7 +38,7 @@ ms.locfileid: "51730365"
   
 2.  打开 VSPackage.resx 文件并添加以下三个字符串资源：  
   
-    |name|“值”|  
+    |名称|值|  
     |----------|-----------|  
     |106|我的类别|  
     |107|我的设置|  
@@ -104,7 +99,7 @@ ms.locfileid: "51730365"
   
 4.  更改的值**OptionFloat**为 3.1416 和**OptionInteger**到 12。 单击 **“确定”**。  
   
-5.  上**工具**菜单上，单击**导入和导出设置**。  
+5.  在“工具”菜单上，单击“导入和导出设置”。  
   
      **导入和导出设置**向导显示。  
   
@@ -160,4 +155,3 @@ ms.locfileid: "51730365"
 16. 请确保**我的设置**已选中，然后单击**完成**。 当**导入完整**页面出现后，单击**关闭**。  
   
 17. 上**工具**菜单上，单击**选项**，展开**My Category**，单击**我的网格页**并验证是否具有的属性类别值已还原。
-

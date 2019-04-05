@@ -1,23 +1,20 @@
 ---
 title: 如何使用文本模板...|Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d1ac2509-0479-47eb-809c-1f171245d0b6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: bca95fff67a585aadc981e2dba10146ccf2f893c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937809"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "49903811"
   
 -   将运行时文本模板添加到你的项目。 此模板创建在代码中，可以实例化和用于生成文本的类。 在构造函数参数，可以将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
--   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 。  
+-   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
   
      使用\<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅[T4 参数指令](../modeling/t4-parameter-directive.md)。  
   
@@ -137,6 +134,3 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ### <a name="what-is-t4"></a>什么是"T4"？  
   
 -   另一个名称[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]此处所述的文本模板功能。 未发布的上一个版本是"文本模板转换"的缩写词。
-
-
-

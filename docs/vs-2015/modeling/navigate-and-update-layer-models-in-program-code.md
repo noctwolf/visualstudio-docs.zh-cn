@@ -1,12 +1,9 @@
 ---
 title: 导航和更新程序代码中的层模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937929"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>在程序代码中导航和更新层模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题介绍了层模型中的元素和关系，可使用程序代码进行导航和更新。 有关从用户的角度来看层关系图的详细信息，请参阅[层关系图： 参考](../modeling/layer-diagrams-reference.md)并[层关系图： 准则](../modeling/layer-diagrams-guidelines.md)。  
+本主题介绍了层模型中的元素和关系，可使用程序代码进行导航和更新。 有关从用户的角度来看层关系图的详细信息，请参阅[层关系图：引用](../modeling/layer-diagrams-reference.md)和[层关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。  
   
  本主题中描述的 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> 模型是更通用 <xref:Microsoft.VisualStudio.GraphModel> 模型的外观。 如果你正在编写[菜单命令或笔势扩展](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果你正在编写[层验证扩展](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，它是更轻松地使用`GraphModel`。  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [向层关系图添加命令和笔势](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [向层关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [向层关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [层关系图： 参考](../modeling/layer-diagrams-reference.md)   
- [层关系图： 准则](../modeling/layer-diagrams-guidelines.md)   
+ [层关系图：引用](../modeling/layer-diagrams-reference.md)   
+ [层关系图：指导原则](../modeling/layer-diagrams-guidelines.md)   
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

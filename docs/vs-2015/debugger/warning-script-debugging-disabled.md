@@ -1,14 +1,9 @@
 ---
-title: 警告： 脚本调试已禁用 |Microsoft Docs
-ms.custom: ''
+title: 警告：脚本调试已禁用 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 505f93056de1d5212856d32152a91a26d5f2a250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805952"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934566"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：脚本调试已禁用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ ms.locfileid: "51805952"
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>在 Internet Explorer 中启用脚本调试  
   
-1.  Internet explorer**工具**菜单中，选择**Internet 选项**。  
+1.  在 Internet Explorer 的“工具”菜单上选择“Internet 选项”。  
   
 2.  在“Internet 选项”  对话框中，单击“高级”  选项卡。  
   
-3.  上**高级**选项卡上，查看**设置**框中，**浏览**类别。  
+3.  在“高级”选项卡上，在“设置”框中查找“浏览”类别。  
   
-4.  清除**禁用脚本调试 (Internet Explorer)**。  
+4.  清除“禁用脚本调试(Internet Explorer)”。  
   
 5.  单击 **“确定”**。  
   
@@ -53,6 +48,3 @@ ms.locfileid: "51805952"
   
 ## <a name="see-also"></a>请参阅  
  [如何：附加到脚本](../debugger/how-to-attach-to-script.md)
-
-
-

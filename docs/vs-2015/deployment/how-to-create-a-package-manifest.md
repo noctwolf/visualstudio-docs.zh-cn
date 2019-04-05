@@ -1,14 +1,9 @@
 ---
-title: 如何： 创建程序包清单 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建程序包清单 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,20 +18,20 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182424"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937505"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要部署应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 在不同的本地化版本之间共享的功能应进入产品清单。  
   
- 有关包清单的详细信息，请参阅[如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)。  
+ 有关包清单的详细信息，请参阅[如何：创建产品清单](../deployment/how-to-create-a-product-manifest.md)。  
   
 ## <a name="creating-the-package-manifest"></a>创建程序包清单  
   
@@ -108,6 +103,3 @@ installing this package.</String>
   
 ## <a name="see-also"></a>请参阅  
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
-
-
-

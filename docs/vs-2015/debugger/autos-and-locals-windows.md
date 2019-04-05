@@ -1,13 +1,8 @@
 ---
 title: 自动和局部变量 Windows |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -25,13 +20,13 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782474"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933968"
 ---
 # <a name="autos-and-locals-windows"></a>“自动”和“局部变量”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ ms.locfileid: "51782474"
  若需了解基本调试的详细信息，请参阅 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>查看“自动”和“局部变量”窗口中的对象  
- 数组和对象在“自动”和“局部变量”窗口中显示为树控件。 单击变量名称左侧的箭头以展开显示字段和属性的视图。 下面是举例<xref:System.IO.FileStream>对象中**局部变量**窗口：  
+ 数组和对象在“自动”和“局部变量”窗口中显示为树控件。 单击变量名称左侧的箭头以展开显示字段和属性的视图。 以下是“局部变量”窗口中 <xref:System.IO.FileStream> 对象的示例：  
   
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -83,7 +78,7 @@ void main() {
   
  如果在行 `e = 5;` 上设置了断点并运行调试器，当执行停止时，“自动”  窗口将如下所示：  
   
- ![自动&#45;Cplus](../debugger/media/autos-cplus.png "自动 Cplus")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  请注意，此变量未初始化，因为行 `e = 5;` 上的代码尚未执行。  
   
@@ -138,7 +133,7 @@ private static int subtractVars(int i, int j)
   
  但是，更改值时应多加小心。 可能存在的问题如下：  
   
--   计算某些表达式可以更改变量的值，或会影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2`的值。  
+-   计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2`的值。  
   
      会更改数据的表达式被视为具有 [副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))，如果你不了解这些表达式，则会产生意外的结果。 因此，在进行更改前，请确保你了解此更改的后果。  
   
@@ -153,8 +148,3 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>请参阅  
  [调试器窗口](../debugger/debugger-windows.md)
-
-
-
-
-

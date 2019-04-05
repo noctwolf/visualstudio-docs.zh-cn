@@ -1,14 +1,9 @@
 ---
-title: 如何： 管理 ClickOnce 应用程序的更新 |Microsoft Docs
-ms.custom: ''
+title: 如何：管理 ClickOnce 应用程序的更新 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
 dev_langs:
@@ -24,13 +19,13 @@ ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9781745af5d65d497652002c9afcd8132058ffb6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936153"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 应用程序的更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "49272462"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -59,11 +54,11 @@ ms.locfileid: "49272462"
   
 5.  在中**选择应用程序应检查更新时**部分中，选择**应用程序启动前**。 这可确保始终连接到网络的用户使用最新的更新运行应用程序。  
   
-### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>若要在应用程序启动后检查在后台更新  
+### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>在应用程序启动后在后台检查更新  
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -77,7 +72,7 @@ ms.locfileid: "49272462"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -89,7 +84,7 @@ ms.locfileid: "49272462"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -101,7 +96,7 @@ ms.locfileid: "49272462"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**更新**按钮以打开**应用程序更新**对话框。  
   
@@ -109,17 +104,14 @@ ms.locfileid: "49272462"
   
 5.  在**更新位置**字段中，输入具有完全限定的 URL，使用格式的更新位置 http://Hostname/ApplicationName，或使用格式的 UNC 路径\\\Server\ApplicationName 或单击**浏览**按钮以浏览的更新位置。 更新位置为应用程序将寻找其自身的更新版本。  
   
-6.  在用户将选择检查更新的 Windows 窗体上创建一个按钮、 菜单项或其他用户界面项。 从该项目的事件处理程序，调用方法来检查并安装更新。 可以为此类方法中找到的 Visual Basic 和 Visual C# 代码示例[如何： 检查应用程序在使用以编程方式更新 ClickOnce 部署 API](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
+6.  在用户将选择检查更新的 Windows 窗体上创建一个按钮、 菜单项或其他用户界面项。 从该项目的事件处理程序，调用方法来检查并安装更新。 您可以找到示例的 Visual Basic 和 VisualC#中的此类的方法的代码[如何：检查应用程序更新使用 ClickOnce 部署 API 以编程方式](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)。  
   
 7.  构建应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [应用程序更新对话框](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [应用程序更新对话框](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [如何：使用 ClickOnce 部署 API 以编程方式检查应用程序更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)
-
-
-
+ [如何：发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：使用 ClickOnce 部署 API 以编程方式检查是否有应用程序更新](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)

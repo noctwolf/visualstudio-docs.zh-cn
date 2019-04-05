@@ -1,14 +1,9 @@
 ---
 title: MFC 调试技术 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -31,13 +26,13 @@ ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f1e7a1ea69da1cafa38ae2a7bfa4551d3d40a8d4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 4ed7d3a9db7a6bc486ad70236d9e39834c851dd2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745111"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000772"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +102,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- TRACE 宏可正确处理 char * 和 wchar_t\*参数。 下面的示例说明如何将 TRACE 宏与不同字符串参数类型配合使用。  
+ TRACE 宏可正确处理 char* 参数和 wchar_t\* 参数。 下面的示例说明如何将 TRACE 宏与不同字符串参数类型配合使用。  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -151,7 +146,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 - 如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
   
-  |“值”|描述|  
+  |值|描述|  
   |-----------|-----------------|  
   |**allocMemDF**|打开诊断内存分配器（默认）。|  
   |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  
@@ -167,7 +162,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 拍摄内存快照  
   
-1. 创建一个 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 对象并调用 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成员函数。 这将创建第一个内存快照。  
+1. 创建一个 [CMemoryState](http://msdn.microsoft.com/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 对象并调用 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成员函数。 这将创建第一个内存快照。  
   
 2. 在程序执行了其内存分配和释放操作以后，创建另一个 `CMemoryState` 对象，并为该对象调用 `Checkpoint` 。 这将得到内存使用的第二个快照。  
   
@@ -241,7 +236,7 @@ Total allocations: 67 bytes
  在 MFC 程序中，可以使用[cmemorystate:: Dumpallobjectssince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2)来转储堆上尚未释放的所有对象的说明。 `DumpAllObjectsSince` 转储从最后一个 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a)。 如果未发生 `Checkpoint` 调用，则 `DumpAllObjectsSince` 将转储当前在内存中的所有对象和非对象。  
   
 > [!NOTE]
->  必须先 [启用诊断跟踪](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)，然后才能使用 MFC 对象转储。  
+>  必须先 [启用诊断跟踪](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics)，然后才能使用 MFC 对象转储。  
   
 > [!NOTE]
 >  程序退出时 MFC 将自动转储所有泄漏的对象，因此不必创建代码在该点转储对象。  
@@ -441,11 +436,11 @@ pMyPerson->Dump( afxDump );
   
 3. 首先，将创建一个新的项目配置。  
   
-   1.  在中**\<项目 > 属性页**对话框中，单击**Configuration Manager**按钮。  
+   1.  在“\<项目> 属性页”对话框中，单击“配置管理器”按钮。  
   
-   2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在中**配置**列中，选择**\<新建...>**。  
+   2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在“配置”列中，选择“\<新建...>”。  
   
-   3.  在 [“新建项目配置”对话框](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)中的 **“项目配置名”** 框中键入新配置的名称，如“Partial Debug”（部分调试）。  
+   3.  在 [“新建项目配置”对话框](http://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)中的 **“项目配置名”** 框中键入新配置的名称，如“Partial Debug”（部分调试）。  
   
    4.  在 **“从此处复制设置”** 列表中，选择 **“Release”**。  
   
@@ -483,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6.  单击 **“调试信息格式”** 设置并为调试信息选择所需选项（通常为 **“/ZI”**）。  
   
-   7.  如果要使用应用程序向导生成的应用程序或具有预编译头，则在编译其他模块以前必须关闭预编译头或重新编译预编译头。 否则，将收到警告 C4650 和错误消息 C2855。 可以通过更改来关闭预编译标头**创建/使用预编译标头**中设置**\<项目 > 属性**对话框中 (**配置属性**文件夹中， **C/c + +** 子文件夹中，**预编译标头**类别)。  
+   7.  如果要使用应用程序向导生成的应用程序或具有预编译头，则在编译其他模块以前必须关闭预编译头或重新编译预编译头。 否则，将收到警告 C4650 和错误消息 C2855。 通过更改“\<项目> 属性”对话框中的“创建/使用预编译标头”设置，可关闭预编译标头（该设置位于“配置属性”文件夹下的“C/C++”子文件夹中的“预编译标头”类别中）。  
   
 7. 从 **“生成”** 菜单中选定 **“生成”** 以重新生成已过期的项目文件。  
   
@@ -493,6 +488,3 @@ pMyPerson->Dump( afxDump );
   
 ## <a name="see-also"></a>请参阅  
  [调试 Visual C++](../debugger/debugging-native-code.md)
-
-
-
