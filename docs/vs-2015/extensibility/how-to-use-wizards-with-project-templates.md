@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用向导来处理项目模板 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用向导来处理项目模板 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 650b9c360013d06216e607269f77afd24f3cc22c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 801f6f02c94b60b95949d41cb1c762516d2c58b5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783748"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "59000820"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：使用向导来处理项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,23 +223,23 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
   
 9. 查找**sn.exe**签名工具。 例如，在 Windows 10 64 位操作系统，典型路径将是以下：  
   
-     **C:\Program Files (x86) \Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
      如果找不到工具，请尝试运行**其中 /R。 sn.exe**命令窗口中。 记下的路径。  
   
 10. 从 key.snk 文件中提取的公钥。 在命令窗口中，键入  
   
-     **\<sn.exe 的位置 > \sn.exe-p key.snk outfile.key。**  
+     **\<location of sn.exe>\sn.exe - p key.snk outfile.key.**  
   
      别忘了的 sn.exe 的用引号将路径括起，如果目录名称中有空格 ！  
   
 11. 从 outfile 获取的公钥令牌：  
   
-     **\<sn.exe 的位置 > \sn.exe-t outfile.key。**  
+     **\<location of sn.exe>\sn.exe - t outfile.key.**  
   
      同样，不要忘记引号引起来。 你应看到如下输出中的行  
   
-     **公钥标记是 <token>**  
+     **公钥标记是\<令牌 >**  
   
      记下此值。  
   

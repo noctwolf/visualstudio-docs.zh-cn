@@ -1,14 +1,9 @@
 ---
 title: 如何查明指针是否损坏了内存地址？ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,13 +21,13 @@ ms.assetid: a147c939-4fb1-415c-8410-cf303781e9e8
 caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 013b88bcaa0d0cf9dc8ff308f43f3191ed2d0334
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8da16e806b8c4bb9bb29251184a5a45c566e9f25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734230"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937943"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何查明指针是否损坏了内存地址？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +43,10 @@ ms.locfileid: "51734230"
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>若要查找内存地址改变的位置  
   
-1.  在 0x00408000 处设置一个数据断点。 请参阅[设置数据更改断点 （本机 c + + 仅）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。  
+1.  在 0x00408000 处设置一个数据断点。 请参阅[设置数据更改断点（仅限本机 C++）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。  
   
-2.  当命中断点时，使用**内存**窗口以查看内存内容从 0x00408000 开始。 有关详细信息，请参阅[内存 Windows](../debugger/memory-windows.md)。  
+2.  当命中断点时，使用“内存”窗口，以查看从 0x00408000 开始的内存内容。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)
-
-
-

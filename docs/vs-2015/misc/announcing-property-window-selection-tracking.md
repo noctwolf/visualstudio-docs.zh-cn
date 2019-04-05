@@ -1,14 +1,9 @@
 ---
 title: 宣布属性窗口选定内容跟踪 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], property pages support
 - property pages, tracking selection
@@ -17,13 +12,13 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], Properties window support
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
-manager: douge
-ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932669"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>宣布属性窗口选定内容跟踪
 如果你想要使用**属性**窗口或**属性**页面，例如，窗体、 文本或选择为其想要查看属性，则您必须完成深层次的了解你协调所选内容。 例如，您必须知道是否有单选或多个选择。 然后，你需要地宣布与 IDE 使用你所选内容类型 （单个或多个）<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。 此接口提供所需的信息**属性**窗口。  

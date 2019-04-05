@@ -1,12 +1,9 @@
 ---
 title: 在建模图上定义笔势处理程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722185"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934462"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在建模图上定义笔势处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +239,7 @@ ms.locfileid: "51722185"
   
     此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-    **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
+    **故障排除**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不会启动：  
   
    -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
@@ -256,7 +253,7 @@ ms.locfileid: "51722185"
   
 4. 将一个元素从 UML 资源管理器拖动到关系图上。 应调用你的拖动处理程序。  
   
-   **疑难解答**：如果笔势处理程序未运行，请确保：  
+   **故障排除**:如果笔势处理程序不起作用，请确保：  
   
 -   该笔势处理程序项目作为一个 MEF 组件在“资产”  选项卡中列出，该选项卡位于 VSIX 项目的 **source.extensions.manifest** 中。  
   
@@ -308,7 +305,7 @@ ms.locfileid: "51722185"
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   获取对主机和服务提供程序的访问权限：  
+    -   要获取对主机和服务提供程序的访问权限：  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
@@ -320,7 +317,7 @@ ms.locfileid: "51722185"
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
     ```  
   
-     可从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的不同部分或从 Windows 桌面将许多不同类型的元素拖动到关系图上。 在 `IDataObject`中按照不同的方式对不同类型的元素进行编码。 若要从其中提取元素，请参考相应类型对象的文档。  
+     可从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的不同部分或从 Windows 桌面将许多不同类型的元素拖动到关系图上。 在 `IDataObject`中按照不同的方式对不同类型的元素进行编码。 若要从其中提取元素，请参考相应类型对象的文档。  
   
      如果源对象是从 UML 模型资源管理器或另一个 UML 关系图拖动的 UML 元素，请参阅[从 IDataObject 获取 UML 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。  
   
@@ -382,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：  
   
-   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="DragExample"></a> 示例  
  下面的示例演示如何在序列图中基于从组件图中拖动的组件的部件和端口来创建生命线。  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)   
  [使用 UML API 编程](../modeling/programming-with-the-uml-api.md)
-
-
-

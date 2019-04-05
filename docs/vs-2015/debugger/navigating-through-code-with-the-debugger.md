@@ -1,13 +1,8 @@
 ---
 title: 使用调试器浏览代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
@@ -25,13 +20,13 @@ ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43155bbd4236ea34d67058443e8814f7ccf00b1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a38d078356acf4e78aeeb97687126616d027351f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933220"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用调试器浏览代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +106,7 @@ ms.locfileid: "51750580"
   
 -   **手动中断代码**  
   
-     若要在正在执行的应用程序上，中断下一个可用的代码行，请选择 **“调试”**、 **“全部中断”** （键盘： **Ctrl+Alt+Break**）。  
+     若要中断执行应用程序中代码的下一个可用行，选择**调试**，**全部中断**(键盘：**Ctrl + Alt + Break**)。  
   
      如果中断正在执行的代码，而没有响应的源或符号 (.pdb) 文件，调试器将显示“未找到源文件”  或“未找到符号”  页面，帮助你找到相应的文件。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 如果你无法访问支持文件，仍可以在“反汇编”窗口中调试汇编指令。  
   
@@ -134,7 +129,7 @@ ms.locfileid: "51750580"
 ##  <a name="BKMK_Set_the_next_statement_to_execute"></a> 移动指针以更改执行流  
  调试器暂停时，您可以移动指令指针来设置要执行的代码的下一个语句。 源窗口或“反汇编”窗口的空白区域中的黄色箭头标记要执行的下一条语句的位置。 通过移动此箭头，可以跳过部分代码或返回到以前执行过的行。 在某些情况下可以使用此方法，例如，跳过包含已知 bug 的代码段。  
   
- ![示例 2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
+ ![Example2](../debugger/media/dbg-basics-example2.png "DBG_Basics_Example2")  
   
  要设置下一条要执行的语句，请使用以下过程之一：  
   
@@ -181,7 +176,7 @@ ms.locfileid: "51750580"
   
  在调试时加载特定系统组件的符号：  
   
-1.  打开“模块”窗口（键盘： **Ctrl+Alt+U**）。  
+1.  打开模块窗口 (键盘：**Ctrl + Alt + U**)。  
   
 2.  选择要加载符号的模块。  
   
@@ -191,8 +186,3 @@ ms.locfileid: "51750580"
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 单步执行托管代码中的属性和运算符  
  默认情况下，调试器将逐过程执行托管代码中的属性和运算符。 在多数情况下，这会提供较好的调试体验。 若要启用单步执行属性或运算符，请选择**调试** / **选项**。 在 **“调试”** / **“常规”** 页面上，清除 **“逐过程执行属性和运算符(仅限托管)”** 复选框
-
-
-
-
-

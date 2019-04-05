@@ -1,14 +1,9 @@
 ---
-title: 如何： 创建或更新标准代码分析签入策略 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建或更新标准代码分析签入策略 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
@@ -18,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939431"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58933437"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ ms.locfileid: "49939431"
   
 -   选中或清除以下选项：  
   
-    |选项|描述|  
+    |Option|描述|  
     |------------|-----------------|  
     |**执行签入以只包含属于当前解决方案的文件。**|只能对解决方案和项目配置文件中指定的文件，可以运行代码分析。 此策略可确保所有代码都是一种解决方案的一部分进行都分析。|  
     |**强制执行 C/c + + 代码分析 (/analyze)**|需要所有的 C 或 c + + 项目会生成使用 /analyze 编译器选项，它们可以在签入之前运行代码分析。|  
@@ -79,6 +74,3 @@ ms.locfileid: "49939431"
   
 ## <a name="see-also"></a>请参阅  
  [创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
-
-
-
