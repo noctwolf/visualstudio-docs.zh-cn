@@ -1,14 +1,9 @@
 ---
-title: 如何： 调试自我托管的 WCF 服务 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试自我托管的 WCF 服务 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,22 +17,22 @@ ms.assetid: 288922be-ba3f-411e-af50-bba39c9529cc
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cb9e7d965470a85d41b856d42c6e2c0b291723b4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fb50b9ed0c3debbde0ef41cd474df1f8fd9f4517
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787466"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935742"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自我托管的 WCF 服务
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自托管 WCF 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-一个*自我托管服务*是不会在 IIS 中，WCF 服务主机内运行的 WCF 服务或[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]开发服务器。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
+“自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 开发服务器内部运行的 WCF 服务。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
   
  如果内部，或者不能以这种方式，如 NT 服务启动进程自承载 WCF 服务不能使用此方法。 相反，可以执行以下操作：  
   
--   手动将调试器附加到宿主进程。 有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+-   手动将调试器附加到宿主进程。 有关详细信息，请参阅[附加到运行中的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
      — 或 —  
   
@@ -53,7 +48,7 @@ ms.locfileid: "51787466"
   
     2.  单击**设置启动项目**。  
   
-    3.  在中**解决方案\<名称 > 属性**对话框中，选择**多个启动项目**。  
+    3.  在“解决方案 \<名称> 属性”对话框中选择“多启动项目”。  
   
     4.  在中**多个启动项目**网格中的，对应于服务器项目中，在行上单击**操作**，然后选择**启动**。  
   
@@ -65,6 +60,3 @@ ms.locfileid: "51787466"
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   
  [WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)   
  [如何：单步执行 WCF 服务](../debugger/how-to-step-into-wcf-services.md)
-
-
-
