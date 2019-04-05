@@ -1,30 +1,27 @@
 ---
 title: 域特定语言入门 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 29699609ee095c7e95434492afc531869453da4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3ac51765fd89324c3d4098a4aa92afc9e5bbc1bf
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877760"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000266"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题说明中定义和使用用于 Visual Studio 的建模 SDK 创建的特定于域的语言 (DSL) 的基本概念。  
   
- 如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+ 如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可以在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>使用域特定语言，您可以做什么？  
  特定于域的语言是一个符号，通常为图形，用于为特定目的而设计。 与此相反，如 UML 的语言是通用的。 在 DSL 中，您可以定义模型元素和它们之间的关系，以及如何在屏幕上显示的类型。  
@@ -46,7 +43,7 @@ ms.locfileid: "49877760"
 |-|-|  
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
-|Visual Studio 的建模 SDK|[下载 MSDK](http://www.microsoft.com/download/details.aspx?id=40754)|  
+|Visual Studio 的建模 SDK|[下载 MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|  
   
 ## <a name="creating-a-dsl-solution"></a>创建 DSL 解决方案  
  若要创建新的域特定语言，创建一个新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案通过使用域特定语言项目模板。  
@@ -86,7 +83,7 @@ ms.locfileid: "49877760"
   
    用户界面现在类似于下图。  
   
-   ![dsl 设计器](../modeling/media/dsl-designer.png "dsl_designer")  
+   ![DSL 设计器](../modeling/media/dsl-designer.png "dsl_designer")  
   
    此解决方案将定义域特定语言。 有关详细信息，请参阅[域特定语言工具用户界面的概述](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md)。  
   
@@ -107,7 +104,7 @@ ms.locfileid: "49877760"
 1. 单击**转换所有模板**解决方案资源管理器工具栏中。 此时将重新生成大部分 DslDefinition.dsl 中的源代码。  
   
    > [!NOTE]
-   >  只要您更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   >  只要您更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. 按 F5，或在**调试**菜单上，单击**开始调试**。  
   
@@ -377,7 +374,7 @@ ms.locfileid: "49877760"
 ## <a name="validation-and-commands"></a>验证和命令  
  可以通过添加验证约束来开发此 DSL 进一步。 这些约束是可以定义，请确保在模型处于正确状态的方法。 例如，您可以子级的出生日期晚于其父项的定义一个约束以确保。 验证功能显示警告，如果 DSL 用户尝试保存模型，可断开的任何约束。 有关详细信息，请参阅[特定于域的语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。  
   
- 此外可以定义用户可调用的菜单命令。 命令可以修改模型。 此外可以与其他模型中进行交互它们[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和与外部资源。 有关详细信息，请参阅[如何： 修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+ 此外可以定义用户可调用的菜单命令。 命令可以修改模型。 此外可以与其他模型中进行交互它们[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]和与外部资源。 有关详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="deploying-the-dsl"></a>部署 DSL  
  若要允许其他用户使用域特定语言，你将分发[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展 (VSIX) 文件。 生成 DSL 解决方案时，这被创建。  
@@ -405,6 +402,3 @@ ms.locfileid: "49877760"
  [了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)   
  [如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)   
  [初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
-
-
-
