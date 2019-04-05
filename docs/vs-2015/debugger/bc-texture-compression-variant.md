@@ -1,25 +1,20 @@
 ---
 title: BC 纹理压缩变量 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736562"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934352"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 纹理压缩变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +58,10 @@ ms.locfileid: "51736562"
  如果你的纹理具有未列出的格式，则该纹理未发生修改。  
   
 ## <a name="restrictions-and-limitations"></a>限制和约束  
- 有时，采用 B8G8R8A8 或 R8G8B8A8 图像格式的变体创建的纹理实际上不会使用 alpha 通道，但是该变体无法知道是否使用了它。 为了保持正确性（如果使用了 alpha 通道），该变体始终将这些格式编码为效率较低的 BC3 格式。 当你未打算使用 alpha 通道时，通过使用 B8G8R8X8 图像格式的变体，可帮助“图形框架分析”更好地了解应用对此变体的潜在呈现性能，以便该变体可以使用效率更高的 BC1 格式。  
+ 有时，采用 B8G8R8A8 或 R8G8B8A8 图像格式的变体创建的纹理实际上不会使用 alpha 通道，但是该变体无法知道是否使用了它。 为了保持正确性（如果使用了 alpha 通道），该变体始终将这些格式编码为效率较低的 BC3 格式。 当你未打算使用 alpha 通道时，通过使用 B8G8R8X8 图像格式的变体，可帮助“图形帧分析”更好地了解应用对此变体的潜在呈现性能，以便该变体可以使用效率更高的 BC1 格式。  
   
 ## <a name="example"></a>示例  
- 此变量在运行时（调用 `CreateTexture2D` 之前）对纹理进行块压缩。 我们不建议将此方法用于成品代码，因为未压缩的纹理会消耗更多的磁盘空间，而且此额外步骤会显著增加应用中的加载次数（因为基于块的压缩需要大量计算要编码的资源）。 相反，我们建议你通过使用生成管道中包含的图像编辑器或图像处理器，在脱机状态下压缩纹理。 这些方法将降低磁盘空间需求、消除应用中的运行时开销并提供更多的处理时间，以便可以保持最佳图像质量。  
+ 此变量在运行时（调用 `CreateTexture2D` 之前）对纹理进行块压缩。 我们不建议将此方法用于成品代码，因为未压缩的纹理会消耗更多的磁盘空间，而且此额外步骤会显著增加应用中的加载次数（因为基于块的压缩需要大量计算要编码的资源）。 相反，我们建议你通过使用生成管道中包含的图像编辑器或图像处理器，在脱机状态下压缩纹理。 这些方法将降低磁盘空间要求、消除应用中的运行时开销并提供更多的处理时间，以便可以保持最佳图像质量。  
   
 ## <a name="see-also"></a>请参阅  
  [Half/Quarter 纹理维度变量](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

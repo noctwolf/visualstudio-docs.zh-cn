@@ -1,23 +1,20 @@
 ---
 title: 生成并配置将应用程序模型从 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806355"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931183"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>从模型中生成并配置你的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +45,7 @@ ms.locfileid: "51806355"
   
 - [在程序代码中读取 UML 模型](../modeling/read-a-uml-model-in-program-code.md)  
   
-- [如何：在程序代码中从文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [如何：在程序代码中从文件中打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
   也可以以增量方式应用此方法，但一开始会有更多的工作要做。 你需要编写读取模型代码，并设置一个允许可变部分访问其值的框架。 生成泛型的可变部分比代码生成的开销更大。  
   
@@ -85,8 +82,5 @@ ms.locfileid: "51806355"
  [从 UML 模型生成文件](../modeling/generate-files-from-a-uml-model.md)   
  [读取程序代码中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)   
  [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)   
- [如何： 从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [如何：从程序代码中的文件打开模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

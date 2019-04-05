@@ -1,41 +1,36 @@
 ---
 title: 对项目和配置属性的支持 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37c41e4c2074f6bb4896c6ff91ea292c5e21ba81
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760639"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936860"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **属性**窗口中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 可以显示的项目和配置属性。 可以项目类型提供属性页，以便用户可以设置为应用程序的属性。  
   
- 通过选择中的项目节点**解决方案资源管理器**，然后单击**属性**上**项目**菜单中，可以打开一个对话框，其中包括项目和配置属性。 在中[!INCLUDE[csprcs](../../includes/csprcs-md.md)]并[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和项目类型派生自这些语言，为选项卡式页面中会显示此对话框[General，Environment，Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)。 有关详细信息，请参阅[不在生成： 演练： 公开项目和配置属性 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
+ 通过选择中的项目节点**解决方案资源管理器**，然后单击**属性**上**项目**菜单中，可以打开一个对话框，其中包括项目和配置属性。 在中[!INCLUDE[csprcs](../../includes/csprcs-md.md)]并[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和项目类型派生自这些语言，为选项卡式页面中会显示此对话框[General，Environment，Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)。 有关详细信息，请参阅[不在生成中：演练：公开项目和配置属性 (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
   
  托管包框架中的项目 (MPFProj) 提供了用于创建和管理新的项目系统的帮助程序类。 可找到的源的代码和编译说明[项目的 Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>暂留的项目和配置属性  
- 具有文件扩展名与项目类型，例如关联、.csproj、.vbproj 和.myproj 的项目文件中保留项目和配置属性。 语言项目通常使用的模板文件生成项目文件。 但是，有几种实际的方法以将项目类型和模板相关联。 有关详细信息，请参阅[NIB: Visual Studio 模板](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
+ 具有文件扩展名与项目类型，例如关联、.csproj、.vbproj 和.myproj 的项目文件中保留项目和配置属性。 语言项目通常使用的模板文件生成项目文件。 但是，有几种实际的方法以将项目类型和模板相关联。 有关详细信息，请参阅 [NIB：Visual Studio 模板](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- 通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目和都使用的 MPFProj[不在生成： MSBuild 概述](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有 PropertyGroup 部分为每个配置。 项目的属性通常将保留在配置参数设置为 null 字符串的第一个 PropertyGroup 部分。  
+ 通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目和都使用的 MPFProj[不在生成中：MSBuild 概述](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有 PropertyGroup 部分为每个配置。 项目的属性通常将保留在配置参数设置为 null 字符串的第一个 PropertyGroup 部分。  
   
  下面的代码演示了基本的 MSBuild 项目文件的开始。  
   
@@ -98,10 +93,9 @@ ms.locfileid: "51760639"
  `MyConfigProp`配置属性将显示在配置属性页中作为**我的配置属性**类别中**My Category**。 如果选择了说明，**我说明**，将显示在说明面板中。  
   
 ## <a name="see-also"></a>请参阅  
- [不在生成： 演练： 公开项目和配置属性 (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [不在生成中：演练：公开项目和配置属性 (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [添加和删除属性页](../../extensibility/adding-and-removing-property-pages.md)   
  [VSPackage 状态](../../misc/vspackage-state.md)   
  [项目](../../extensibility/internals/projects.md)   
- [NIB: Visual Studio 模板](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB：Visual Studio 模板](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [模板目录说明 (.Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
-

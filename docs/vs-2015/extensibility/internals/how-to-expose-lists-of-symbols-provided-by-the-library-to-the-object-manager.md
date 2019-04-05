@@ -1,14 +1,9 @@
 ---
-title: 如何： 公开库提供对对象管理器的符号的列表 |Microsoft Docs
-ms.custom: ''
+title: 如何：公开库提供对对象管理器的符号的列表 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IVsSimpleLibrary2 interface, lists of symbols
 - IVsLibrary2 interface, lists of symbols
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 32adc26be31ebb090916f5f0f4b038bd20ab2ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722164"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937563"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何： 公开库提供对对象管理器的符号列表
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：向对象管理器公开库提供的符号列表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 符号浏览工具中，**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，将为新数据传送到请求传递给[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]对象管理器。 对象管理器查找合适的库，并请求新的符号列表。 这些库通过提供到请求的数据来响应[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]对象管理器通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]对象管理器调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口以获取数据，并使用它来填充或更新符号浏览工具的视图。  
@@ -475,7 +470,6 @@ ms.locfileid: "51722164"
   
 ## <a name="see-also"></a>请参阅  
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何： 使用对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何： 确定库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [如何：使用对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何：确定库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
  [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 调试 Web 应用程序： 错误和故障排除 |Microsoft Docs
-ms.custom: ''
+title: 调试 Web 应用程序：错误和故障排除 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 dev_langs:
 - FSharp
 - VB
@@ -31,13 +26,13 @@ ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ecab26f0a5b4a4cbe0a3918fadeb11a974bc9561
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b10bb975d03ee317c23831ad72e9f5ac0ee6659
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933275"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>调试 Web 应用程序：错误和疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +60,3 @@ ms.locfileid: "51768205"
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)
-
-
-

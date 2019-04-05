@@ -1,12 +1,9 @@
 ---
 title: 从 UML 类图生成代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764772"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937680"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>从 UML 类关系图生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ ms.locfileid: "51764772"
 
  有关在 Visual Studio 中的 UML 类关系图的详细信息，请参阅以下主题：  
 
-- [UML 类图：参考](../modeling/uml-class-diagrams-reference.md)  
+- [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
 
-- [UML 类图：准则](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)  
 
   若要查看支持 UML 类图的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
 
@@ -170,10 +167,10 @@ ms.locfileid: "51764772"
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **说明**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        name        |                                                                                                                                                                                                                                                  此绑定的名称。 若要替代继承自包含包或模型的某个绑定，请使用与要替代的绑定相同的名称。                                                                                                                                                                                                                                                  |
+   |        名称        |                                                                                                                                                                                                                                                  此绑定的名称。 若要替代继承自包含包或模型的某个绑定，请使用与要替代的绑定相同的名称。                                                                                                                                                                                                                                                  |
    |     Overwrite      |                                                                                                                                                                                                                                                                                                      如果为 True，则替代任何现有代码。                                                                                                                                                                                                                                                                                                       |
    |    Target Name     | 生成的文件的名称。<br /><br /> 您可以将表达式插入此字符串等`{Name}`或`{Owner.Name}`。 例如，可以编写： `{Owner.Name}_{Name}`。 在模型元素上计算表达式。 它可使用元素而非方法的属性。 若要查找可以使用哪些属性，请查看中类型的属性 **Microsoft.VisualStudio.Uml。\\***.\*\*重要说明：* \* `{Name}`或`{Owner.Name}`可以仅在使用**目标名称**属性。 若要更改生成的类的名称，你必须修改模板。 有关详细信息，请参阅[编写文本模板](#writing)。 |
-   |    Project Path    |                                                                      指定将包含转换的输出文件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的路径。 使用类型值创建新项目。 选择省略号按钮 (**[...]**) 若要选择一个现有项目。<br /><br /> 如果新项目不存在，则将创建它。 它将是一个 C# 类库项目。<br /><br /> 为此，你必须直接键入该项目。 可以包含环境变量宏，例如 %ProgramFiles% 或 %LocalAppData%。                                                                       |
+   |    项目路径    |                                                                      指定将包含转换的输出文件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的路径。 使用类型值创建新项目。 选择省略号按钮 (**[...]**) 若要选择一个现有项目。<br /><br /> 如果新项目不存在，则将创建它。 它将是一个 C# 类库项目。<br /><br /> 为此，你必须直接键入该项目。 可以包含环境变量宏，例如 %ProgramFiles% 或 %LocalAppData%。                                                                       |
    |  目标目录  |                                                                                          在其中生成目标文件的文件夹。 该路径是项目文件夹的相对路径。<br /><br /> 可以使用 `{PackageStructure}` 表达式插入与包含程序包的名称相对应的路径。 默认值为 `\GeneratedCode\{PackageStructure}`。 还可以包含环境变量，例如 %TEMP% 或 %HomePath%。 **重要说明：** `{PackageStructure}`可以仅在使用**目标目录**属性。                                                                                          |
    | 模板文件路径 |                                                                                                                                                           将执行转换的模板。<br /><br /> 可以使用提供的模板或创建你自己的模板。 可在以下位置找到提供的模板：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
@@ -207,7 +204,7 @@ ms.locfileid: "51764772"
 
 - `Host`: <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>  
 
-- `ModelBus`: <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>. 有关详细信息，请参阅[与其他模型和工具集成 UML 模型](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
+- `ModelBus`: <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>。 有关详细信息，请参阅[与其他模型和工具集成 UML 模型](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
 
 - `ProfileName` =“C#Profile”  
 
@@ -240,9 +237,6 @@ ms.locfileid: "51764772"
 - 计算 `<#= Expressions #>` 并将其转换为字符串。  
 
 ## <a name="see-also"></a>请参阅  
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
- [UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
+ [UML 类关系图：指导原则](../modeling/uml-class-diagrams-guidelines.md)   
  [从 UML 模型生成文件](../modeling/generate-files-from-a-uml-model.md)
-
-
-
