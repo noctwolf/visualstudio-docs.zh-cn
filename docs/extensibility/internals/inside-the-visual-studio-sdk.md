@@ -12,14 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7f2ee59c9b02e7c4ff85c36bc0ea5a67e962a5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
+ms.lasthandoff: 04/04/2019
 ms.locfileid: "57870268"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
+
 本部分提供有关 Visual Studio 扩展，其中包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用工具和类似的内容的详细信息。
 
 ## <a name="extensibility-architecture"></a>可扩展性体系结构
@@ -83,11 +84,12 @@ ms.locfileid: "57870268"
  语言服务的核心是一个分析器和扫描程序。 扫描程序 （或词法分析器） 将源文件划分为称为标记的元素，并分析程序建立这些令牌之间的关系。 当创建语言服务时，必须实现分析器和扫描程序，以便 Visual Studio 可以理解的令牌和语言的语法。 可以创建托管或非托管语言服务。 有关详细信息，请参阅[旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)。
 
 ## <a name="projects"></a>项目
- 在 Visual Studio 中，项目是开发人员用于组织和生成的源代码和其他资源的容器。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以通过提供项目类型、 项目子类型和自定义工具来扩展 Visual Studio 项目系统。
 
- 项目还可能收集到一个解决方案，其中是协同工作以创建应用程序的一个或多个项目的分组。 适用于解决方案的项目和状态信息存储在两个解决方案文件、 基于文本的解决方案 (.sln) 文件和二进制解决方案用户选项 (.suo) 文件。 这些文件是与组 (文件.vbg) 文件的早期版本中使用的类似[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，以及在工作区 (.dsw) 和用户选项 (.opt) 文件的早期版本中使用[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]。
+在 Visual Studio 中，项目是开发人员用于组织和生成的源代码和其他资源的容器。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以通过提供项目类型、 项目子类型和自定义工具来扩展 Visual Studio 项目系统。
 
- 有关详细信息，请参阅[项目](../../extensibility/internals/projects.md)并[解决方案](../../extensibility/internals/solutions.md)。
+项目可能还收集在一起*解决方案*，这是一个或多个协同工作以创建应用程序的项目的分组。 适用于解决方案的项目和状态信息存储在两个解决方案文件中，基于文本的[解决方案 (.sln) 文件](solution-dot-sln-file.md)和二进制[解决方案用户选项 (.suo) 文件](solution-user-options-dot-suo-file.md)。 这些文件是类似于早期版本的 Visual Basic 中，和工作区 (.dsw) 时使用的组 (文件.vbg) 文件和 c + + 的早期版本中使用的用户选项 (.opt) 文件。
+
+有关详细信息，请参阅[项目](../../extensibility/internals/projects.md)并[解决方案](../../extensibility/internals/solutions-overview.md)。
 
 ## <a name="project-and-item-templates"></a>项目和项模板
  Visual Studio 包含预定义的项目模板和项目项模板。 可以还使您自己的模板或获取社区中的模板，然后将其集成到 Visual Studio。 [MSDN 代码库](https://code.msdn.microsoft.com/site/search?query=visual%20studio)是为模板和扩展的位置。
