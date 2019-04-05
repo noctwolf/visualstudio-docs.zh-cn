@@ -1,24 +1,19 @@
 ---
-title: 演练： 创建使用 C# 或 Visual Basic SDK |Microsoft Docs
-ms.custom: ''
+title: 演练：创建 SDK 使用C#或 Visual Basic |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0bc88c8581b29f43e7efc55ee86019e1f1c3fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5989e0d72aaa7dda8e3daae16a6f384f8815357f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736756"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000788"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>演练：使用 C# 或 Visual Basic 创建 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +115,7 @@ ms.locfileid: "51736756"
   
 22. 在中**解决方案资源管理器**，选择**SimpleMath.winmd**。  
   
-23. 在菜单栏上依次选择**视图**，**属性**(键盘： 选择 F4 键)。  
+23. 在菜单栏上依次选择**视图**，**属性**(键盘：选择 F4 键）。  
   
 24. 在**属性**窗口中，更改**生成操作**属性设置为**内容**，然后将更改**包含在 VSIX** 属性**True**。  
   
@@ -179,7 +174,6 @@ ms.locfileid: "51736756"
     已成功创建并使用扩展 SDK。  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [演练： 创建使用 JavaScript SDK](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [演练：使用 c + + 创建 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
+ [演练：使用 JavaScript 创建 SDK](walkthrough-creating-an-sdk-using-javascript.md)   
  [获取软件开发工具包](../extensibility/creating-a-software-development-kit.md)
-

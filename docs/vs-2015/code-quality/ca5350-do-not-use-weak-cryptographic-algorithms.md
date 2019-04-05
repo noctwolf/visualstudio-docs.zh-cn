@@ -1,26 +1,21 @@
 ---
-title: CA5350： 请勿使用弱加密算法 |Microsoft Docs
-ms.custom: ''
+title: CA5350:请勿使用弱加密算法 |Microsoft Docs
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2997abd9a112b60e9ef692bfe87b740976007656
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234216"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935574"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350：请勿使用弱加密算法
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350:请勿使用弱加密算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -48,7 +43,7 @@ ms.locfileid: "49234216"
   
 -   对于 TripleDES 加密，请使用 <xref:System.Security.Cryptography.Aes> 加密。  
   
--   对于 SHA1 或 RIPEMD160 哈希函数，请从 [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) 系列（例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>）中选择使用。  
+-   对于 SHA1 或 RIPEMD160 哈希函数，请从 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列（例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>）中选择使用。  
   
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  当数据所需的保护级别不需要安全保证时，请禁止显示此规则的警告。  

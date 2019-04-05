@@ -1,12 +1,9 @@
 ---
 title: 类图上 UML 类型的属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937772"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 类图上类型的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +28,9 @@ ms.locfileid: "51750103"
 > [!NOTE]
 >  本主题介绍 UML 类图中的类型的属性。 有关详细信息，请参阅下列主题：  
   
--   [UML 类图：参考](../modeling/uml-class-diagrams-reference.md)  
+-   [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML 类图：准则](../modeling/uml-class-diagrams-guidelines.md)  
+-   [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)  
   
 -   [UML 类图上特性的属性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
@@ -49,8 +46,8 @@ ms.locfileid: "51750103"
 |**Property**|**默认**|显示范围|描述|  
 |------------------|-----------------|----------------|-----------------|  
 |**名称**|默认名称|所有元素|标识元素。|  
-|**限定的名称**|所含包 :: 类型名称|所有元素|唯一标识元素。 以包含它的包的限定名为前缀。|  
-|**颜色**|类型种类的默认值|所有元素|此形状的颜色。 与其他属性不同，这不是基础模型元素的属性。 相同类型的不同视图可以具有不同的颜色。|  
+|**限定的名称**|包含包::类型名称|所有元素|唯一标识元素。 以包含它的包的限定名为前缀。|  
+|**Color**|类型种类的默认值|所有元素|此形状的颜色。 与其他属性不同，这不是基础模型元素的属性。 相同类型的不同视图可以具有不同的颜色。|  
 |**是抽象的**|False|类|如果为 true，则无法实例化类，且类旨在用作基类。|  
 |**是叶**|False|类、接口|如果为 true，则类型不需要具有派生类型。|  
 |**处于活动状态**|False|类|如果为 true，则此类型的每个实例都与控制线程关联。|  
@@ -64,7 +61,4 @@ ms.locfileid: "51750103"
  [UML 类图上特性的属性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [UML 类图上的操作的属性](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [UML 类图上关联的属性](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [UML 类图：准则](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)

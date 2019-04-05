@@ -1,14 +1,9 @@
 ---
-title: CA1903： 仅使用 API 从目标框架 |Microsoft Docs
-ms.custom: ''
+title: CA1903:使用仅目标框架中的 API |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,17 +15,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191563"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "59000824"
 ---
-# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：仅使用目标框架中的 API
+# <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:仅使用目标框架中的 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[CA1903： 仅使用 API 目标框架中的](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework)docs.microsoft.com 上。  
+Visual Studio 的最新文档，请参阅[CA1903:使用仅目标框架中的 API](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) docs.microsoft.com 上。  
   
 |||  
 |-|-|  
@@ -76,4 +71,3 @@ Visual Studio 2017 的最新文档，请参阅[CA1903： 仅使用 API 目标框
 ## <a name="see-also"></a>请参阅  
  [可移植性警告](../code-quality/portability-warnings.md)   
  [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
-

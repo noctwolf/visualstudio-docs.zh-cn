@@ -1,14 +1,9 @@
 ---
-title: 如何： 提供旧版语言服务中的隐藏的文本支持 |Microsoft Docs
-ms.custom: ''
+title: 如何：提供旧版语言服务中的隐藏的文本支持 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5d5451576115dcada98f6b8f7daaf1cca5a86f95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a74998e6cb9b236818f20ec3c597f9a3b9bd7dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727238"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934736"
 ---
-# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何： 提供旧版语言服务中的隐藏的文本支持
+# <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何：提供旧版语言服务中的隐藏文本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 你可以创建大纲区域除了隐藏的文本区域。 隐藏的文本区域可以是客户端控制或编辑器控制和用于完全隐藏的文本区域。 编辑器为水平线条显示隐藏的区域。 出现这种是在 HTML 编辑器中的仅限脚本视图。  
@@ -54,4 +49,3 @@ ms.locfileid: "51727238"
         >  隐藏的区域处于隐藏状态，编辑器将自动显示要指明其状态的隐藏区域周围的线。  
   
     2.  指定区域是否受客户端管理，或以编辑器控制`dwBehavior`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构。 智能的大纲显示实现可以包含多个编辑器和客户端控制大纲和隐藏的文本区域。
-

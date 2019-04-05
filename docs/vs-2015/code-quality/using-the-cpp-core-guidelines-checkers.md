@@ -1,24 +1,22 @@
 ---
 title: 使用 c + + Core Guidelines 检查器 |Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-code-analysis
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 1153f7a32c26946fafb1230699c4afcae976cd9e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799556"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936284"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 检查器
+# <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。  Visual Studio 现在支持外接程序的包创建其他规则的代码分析工具来检查您的代码与 c + + Core Guidelines 的符合性并提出改进建议。  
@@ -81,32 +79,29 @@ int main()
   
  此示例演示了几个 c + + Core Check 规则可以找到的警告：  
   
-- C26494 是规则 Type.5： 始终初始化对象。  
+- C26494 是规则 Type.5:始终初始化对象。  
   
-- C26485 是规则 Bounds.3： 没有数组指针的衰减。  
+- C26485 是规则 Bounds.3:没有数组指针的衰减。  
   
-- C26481 是规则 Bounds.1： 请勿使用指针算法。 请改用 `span`。  
+- C26481 是规则 Bounds.1:请勿使用指针算法。 请改用 `span`。  
   
   如果安装并启用时编译此代码前, 两个警告是输出，但禁止第三个 c + + Core Check 代码分析规则集。 下面是示例代码的生成输出：  
   
-  **1 >---启动生成： 项目： CoreCheckExample、 配置： Debug Win32-**  
+  **1 >---生成已开始：项目：CoreCheckExample，配置：调试 Win32-**  
 **----**  
 **1 > CoreCheckExample.cpp**  
-**1 > CoreCheckExample.vcxproj-> C:\Users\username\documents\visual studio 2015\P**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1 > CoreCheckExample.vcxproj-> C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (完整 PDB)**  
+**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(6)： 警告 C26494： 变量 arr 是 uninitializ**  
+**ckexample\corecheckexample.cpp(6)： 警告 C26494:变量 arr 是 uninitializ**  
 **ed.始终初始化对象。(type.5: http://go.microsoft.com/fwlink/p/?Link**  
-**ID = 620421)**  
+**ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7)： 警告 C26485： 表达式 arr： 组到**  
+**ckexample\corecheckexample.cpp(7)： 警告 C26485:表达式 arr:无数组到**  
  **指针的衰减。(bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**=== 生成： 1 个成功，0 失败，0 最新，0 已跳过 ===** c + + Core Guidelines 的目的是为了帮助您编写更好、 更安全代码。 但是，如果有一个规则或配置文件不应应用的实例时，很容易在代码中直接取消。 可以使用`gsl::suppress`属性以防止 c + + Core Check 检测和报告任何违反了下面的代码块中的规则。 可以将标记单个语句，若要禁止显示特定的规则。 甚至可以禁止整个绑定配置文件，方法是编写`[[gsl::suppress(bounds)]]`而不包括特定的规则数。  
+**=== 生成中：1 个成功，0 失败，0 最新，0 已跳过 ===** c + + Core Guidelines 的目的是为了帮助您编写更好、 更安全代码。 但是，如果有一个规则或配置文件不应应用的实例时，很容易在代码中直接取消。 可以使用`gsl::suppress`属性以防止 c + + Core Check 检测和报告任何违反了下面的代码块中的规则。 可以将标记单个语句，若要禁止显示特定的规则。 甚至可以禁止整个绑定配置文件，方法是编写`[[gsl::suppress(bounds)]]`而不包括特定的规则数。  
   
 ## <a name="use-the-guideline-support-library"></a>使用准则支持库  
  Microsoft.CppCoreCheck NuGet 包还会安装包包含 Microsoft 实现的准则支持库 (GSL)。 GSL 也会出现在独立的窗体，请[ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl)。 此库很有帮助，如果你想要遵循的核心准则。 GSL 包括使您易出错的构造替换为更安全的替代方法的定义。 例如，您可以替换`T*, length`对参数使用`span<T>`类型。 GSL 开放源代码，因此如果你想要看一看库源注释，或提供，该项目，请参阅[ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL)。
-
-
-

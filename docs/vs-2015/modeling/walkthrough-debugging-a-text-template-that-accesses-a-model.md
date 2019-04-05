@@ -1,44 +1,41 @@
 ---
-title: 演练： 调试访问模型的文本模板 |Microsoft Docs
-ms.custom: ''
+title: 演练：调试访问模型的文本模板 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: af46a7fe-6b98-4d3d-b816-0bbf8e81e220
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4d6b759f62c4faa7e2f75f53f85cb04ba4484a7f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49924884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936383"
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试文本模板访问模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。  
   
 > [!NOTE]
->  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练： 调试文本模板](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
+>  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练：调试文本模板](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案  
  在此过程中，你创建域特定语言解决方案具有以下特征：  
   
-- 名称： DebuggingTestLanguage  
+- 姓名:DebuggingTestLanguage  
   
-- 解决方案模板： 最小语言  
+- 解决方案模板：最小语言  
   
 - 文件扩展名：.ddd  
   
-- 公司名称： Fabrikam  
+- 公司名称：Fabrikam  
   
-  有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+  有关创建域特定语言解决方案的详细信息，请参阅[如何：创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
 ## <a name="creating-a-text-template"></a>创建文本模板  
  将文本模板添加到你的解决方案。  
@@ -164,11 +161,11 @@ ms.locfileid: "49924884"
   
      (C#)  
   
-     **正在编译转换： 由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation 不包含 ExampleModel 的定义**  
+     **正在编译转换：Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation 不包含 ExampleModel 的定义**  
   
      (Visual Basic)  
   
-     **正在编译转换: ExampleModel 不是成员的由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation。**  
+     **正在编译转换：ExampleModel 不是成员的由 Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation。**  
   
      在这种情况下，文本模板代码包含不正确的属性名称。 具有指定`ExampleModel`作为属性名称，但正确的属性名称是`LibraryModel`。 您可以找到正确的属性名称中提供参数，如下面的代码中所示：  
   
@@ -216,6 +213,3 @@ ms.locfileid: "49924884"
 5.  在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。  
   
      现在系统转换文本模板，并生成相应的输出文件。 你将看不到中的任何错误**错误列表**窗口。
-
-
-
