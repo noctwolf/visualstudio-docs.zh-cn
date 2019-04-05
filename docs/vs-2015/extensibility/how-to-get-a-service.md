@@ -1,28 +1,23 @@
 ---
-title: 如何： 获取服务 |Microsoft Docs
-ms.custom: ''
+title: 如何：获取服务 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ea5f3be4f5792213c5625e4c287195161eb1dd62
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785061"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934538"
 ---
-# <a name="how-to-get-a-service"></a>如何： 获取服务
+# <a name="how-to-get-a-service"></a>如何：获取服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通常需要获取 Visual Studio 服务访问不同的功能。 一般情况下，Visual Studio 服务提供了一个或多个接口，可以使用。 你可以从 VSPackage 获取大多数服务。  
@@ -46,7 +41,7 @@ ms.locfileid: "51785061"
   
     ```  
   
-     此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+     此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参见 [如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 4.  生成项目并启动调试。 将显示在实验实例。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51785061"
   
  静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法依赖于任何 VSPackage 派生自第一次进行初始化的缓存的服务提供商<xref:Microsoft.VisualStudio.Shell.Package>确定位置。  
   
- 因为之前确定位置 VSPackage 调用 VSPackage 构造函数，全球服务不可用通常从 VSPackage 构造函数内。 请参阅[如何： 解决服务](../extensibility/how-to-troubleshoot-services.md)的一种解决方法。  
+ 因为之前确定位置 VSPackage 调用 VSPackage 构造函数，全球服务不可用通常从 VSPackage 构造函数内。 请参阅[如何：排查服务问题](../extensibility/how-to-troubleshoot-services.md)的一种解决方法。  
   
  下面是方法的在工具窗口或其他非 VSPackage 元素中获取服务的示例。  
   
@@ -90,7 +85,6 @@ if (sp != null)
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 提供的服务](../extensibility/how-to-provide-a-service.md)   
+ [如何：提供的服务](../extensibility/how-to-provide-a-service.md)   
  [使用并提供服务](../extensibility/using-and-providing-services.md)   
  [服务基础知识](../extensibility/internals/service-essentials.md)
-

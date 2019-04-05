@@ -1,30 +1,27 @@
 ---
-title: 如何： 向工具箱添加活动 |Microsoft Docs
-ms.custom: ''
+title: 如何：向工具箱添加活动 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 7fc523cd032863498cdefac1e12f0653a57ab7cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299847"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937499"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 可以将活动添加到**工具箱**几种不同方式在解决方案中。 您可以从当前项目中添加活动，也可以从另一个项目或从另一个程序集引用活动。  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>从当前项目中添加活动  
   
-1.  将新的自定义活动添加到当前工作流项目。 [!INCLUDE[crabout](../includes/crabout-md.md)] 将新的自定义活动添加到你的项目，请参阅[如何： 向工作流项目添加新项](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。  
+1.  将新的自定义活动添加到当前工作流项目。 [!INCLUDE[crabout](../includes/crabout-md.md)] 将新的自定义活动添加到你的项目，请参阅[如何：将新项添加到工作流项目](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。  
   
 2.  向活动添加自定义逻辑。  
   
