@@ -1,12 +1,9 @@
 ---
 title: 编辑 UML 模型和关系图 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.modelingproject
 - vs.teamarch.UMLModelExplorer
@@ -23,13 +20,13 @@ ms.assetid: 87affd40-8127-4ee9-9d3a-ad977abe2ed6
 caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 92d2be3abfb849b0b5cf5c1c820040b658e2240c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3cc16133911cf4b49af983aabb4b7b60405c956c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803430"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934236"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>编辑 UML 模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -193,7 +190,7 @@ ms.locfileid: "51803430"
   
  **每个建模项目具有一个更改堆栈。** 对模型和关系图所做的所有更改都保留在此堆栈中。 此堆栈还包括焦点从一个关系图移动到另一个关系图的更改。 “撤消”命令可反转此堆栈上的更改。  
   
- 例如，假设你执行了这些操作：对关系图 1 进行了更改；将焦点更改到关系图 2；更改了关系图 2。 撤消更改时，第一个撤销将反转最后一个更改；第二个撤消会将焦点移回到关系图 1；第三个撤消将反转对关系图 1 所做的更改。  
+ 例如，假设你执行这些操作：对 Diagram1; 进行更改将焦点更改到关系图 2;更改图 2。 撤消更改时，第一个撤销将反转最后一个更改；第二个撤消会将焦点移回到关系图 1；第三个撤消将反转对关系图 1 所做的更改。  
   
  **关闭关系图将截断更改堆栈。** 如果关闭关系图，则不能撤消在该关系图中执行的更改，并且不能撤消对模型或其任意关系图所做的早期更改。  
   
@@ -219,7 +216,7 @@ ms.locfileid: "51803430"
      将显示提供模型元素的视图的形状，这可能不包括其他关系图或同一个关系图上的视图。  
   
     > [!NOTE]
-    >  将类或组件拖动到序列图上时，作用是不同的。 在这种情况下，将创建一个新的生命线，其类型为该类或组件。 有关详细信息，请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+    >  将类或组件拖动到序列图上时，作用是不同的。 在这种情况下，将创建一个新的生命线，其类型为该类或组件。 有关详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>若要使用“粘贴引用”添加模型元素的新视图  
   
@@ -323,7 +320,7 @@ ms.locfileid: "51803430"
   
 -   若要将备注和说明添加到模型元素，可以创建注释，然后将它们链接到元素。  
   
--   若要在关系图上整洁地对齐列或行形状，可以安装“对齐形状”命令。 这是可作为一个 UML 扩展示例： [UML： 对齐形状命令](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
+-   若要在关系图上整洁地对齐列或行形状，可以安装“对齐形状”命令。 这是可作为一个 UML 扩展示例：[UML:若要对齐形状的命令](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)  
   
 ### <a name="to-export-a-diagram-as-an-image"></a>若要将关系图导出为图像  
  有关详细信息，请参阅[将关系图导出为图像](../modeling/export-diagrams-as-images.md)。  
@@ -345,6 +342,3 @@ ms.locfileid: "51803430"
  [创建 UML 建模项目和关系图](../modeling/create-uml-modeling-projects-and-diagrams.md)   
  [分析体系结构和建模](../modeling/analyze-and-model-your-architecture.md)   
  [为应用程序创建模型](../modeling/create-models-for-your-app.md)
-
-
-

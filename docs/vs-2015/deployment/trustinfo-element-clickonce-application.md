@@ -1,14 +1,9 @@
 ---
 title: '&lt;trustInfo&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175560"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933018"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 应用程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,38 +73,38 @@ ms.locfileid: "49175560"
  `trustInfo` 元素是必需的，它位于 `asm.v2` 命名空间中。 它没有属性，并包含下列元素。  
   
 ## <a name="security"></a>安全性  
- 必须的。 此元素是 `trustInfo` 元素的子元素。 它包含 `applicationRequestMinimum` 元素，但没有属性。  
+ 必需。 此元素是 `trustInfo` 元素的子元素。 它包含 `applicationRequestMinimum` 元素，但没有属性。  
   
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum  
- 必须的。 此元素是 `security` 元素的子元素，并且包含 `PermissionSet`、 `assemblyRequest`和 `defaultAssemblyRequest`元素。 此元素没有属性。  
+ 必需。 此元素是 `security` 元素的子元素，并且包含 `PermissionSet`、 `assemblyRequest`和 `defaultAssemblyRequest`元素。 此元素没有属性。  
   
 ## <a name="permissionset"></a>PermissionSet  
- 必须的。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含 `IPermission` 元素。 此元素具有以下属性。  
+ 必需。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含 `IPermission` 元素。 此元素具有以下属性。  
   
 -   `ID`  
   
-     必须的。 标识权限集。 此属性可为任意值。 在 `defaultAssemblyRequest` 和 `assemblyRequest` 属性中引用此 ID。  
+     必需。 标识权限集。 此属性可为任意值。 在 `defaultAssemblyRequest` 和 `assemblyRequest` 属性中引用此 ID。  
   
 -   `version`  
   
-     必须的。 标识权限的版本。 此值通常为 `1`。  
+     必需。 标识权限的版本。 此值通常为 `1`。  
   
 ## <a name="ipermission"></a>IPermission  
- 可选。 此元素是 `PermissionSet` 元素的子元素。 `IPermission` 元素完全标识 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 中的权限类。 `IPermission` 元素具有以下属性，但可具有与权限类上属性对应的其他属性。 若要找出特定权限的语法，请参阅 Security.config 文件中列出的示例。  
+ 可选。 此元素是 `PermissionSet` 元素的子元素。 `IPermission` 元素完全标识 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]中的权限类。 `IPermission` 元素具有以下属性，但可具有与权限类上属性对应的其他属性。 若要找出特定权限的语法，请参阅 Security.config 文件中列出的示例。  
   
 -   `class`  
   
-     必须的。 按强名称来标识权限类。 例如，下面的代码标识 `FileDialogPermission` 类型。  
+     必需。 按强名称来标识权限类。 例如，下面的代码标识 `FileDialogPermission` 类型。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 -   `version`  
   
-     必须的。 标识权限的版本。 此值通常为 `1`。  
+     必需。 标识权限的版本。 此值通常为 `1`。  
   
 -   `Unrestricted`  
   
-     必须的。 标识应用程序是否需要不受限制地授予此权限。 如果为 `true`，则权限授予是无条件的。 如果为 `false`或者未定义此属性，则它根据 `IPermission` 标记上定义的特定于权限的属性进行限制。 以下列权限为例：  
+     必需。 标识应用程序是否需要不受限制地授予此权限。 如果为 `true`，则权限授予是无条件的。 如果为 `false`或者未定义此属性，则它根据 `IPermission` 标记上定义的特定于权限的属性进行限制。 以下列权限为例：  
   
     ```  
     <IPermission  
@@ -136,11 +131,11 @@ ms.locfileid: "49175560"
   
 -   `Name`  
   
-     必须的。 标识程序集名称。  
+     必需。 标识程序集名称。  
   
 -   `permissionSetReference`  
   
-     必须的。 标识此程序集必需的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。  
+     必需。 标识此程序集必需的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
  可选。 此元素是 `security` 元素的子元素，并且包含 `requestedExecutionLevel` 元素。 此元素没有属性。  
@@ -150,7 +145,7 @@ ms.locfileid: "49175560"
   
 -   `Level`  
   
-     必须的。 标识应用程序正在请求的安全级别。 可能的值有：  
+     必需。 标识应用程序正在请求的安全级别。 可能的值有：  
   
      `asInvoker`，不请求其他权限。 此级别不需要其他信任提示。  
   
@@ -158,7 +153,7 @@ ms.locfileid: "49175560"
   
      `requireAdministrator`，请求完全管理员权限。  
   
-     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序只会以 `asInvoker` 的值进行安装。 以任何其他值安装都将失败。  
+     [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序只会以 `asInvoker`的值进行安装。 以任何其他值安装都将失败。  
   
 -   `uiAccess`  
   
@@ -278,6 +273,3 @@ ms.locfileid: "49175560"
 ## <a name="see-also"></a>请参阅  
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用可视化工具 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用可视化工具 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,13 +22,13 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933600"
 ---
 # <a name="how-to-use-a-visualizer"></a>如何：使用可视化工具
 您可以使用可视化工具，以对变量或对象的数据类型有意义的方式来显示该变量或对象的内容。 您可以通过使用可视化工具**数据提示**即**监视**窗口中，**自动**窗口中，或**局部变量**窗口。  
@@ -65,6 +60,6 @@ ms.locfileid: "51721921"
   
 ## <a name="see-also"></a>请参阅  
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
- [如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
- [如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
+ [如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)   
+ [如何：编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
  [查看数据提示中的数据值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
