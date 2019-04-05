@@ -1,14 +1,9 @@
 ---
-title: 如何： 调试时切换到另一个线程 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试时切换到另一个线程 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ad13c81afc82ac69055ae117c862a1cf73b51478
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5fa84d46d64db048b58d0fcdb1c433b4830a5f45
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737702"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58931696"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>如何：在调试时切换到另一个线程
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>如何：调试时切换到另一个线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在调试多线程应用程序时，您可以使用若干方法中的任何一种，将上下文从正在处理的线程切换到另一个线程。  
@@ -51,6 +46,3 @@ ms.locfileid: "51737702"
   
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: 计算的和自定义存储属性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 ms.assetid: 42b785f9-2b0f-4f13-a6b4-246e5e0d477a
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e934d071a8b26db29f2b9450939fc895efa1e5d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852851"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932460"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ ms.locfileid: "49852851"
   
 4.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-     您收到以下错误消息:"*YourClass*不包含定义 get*YourProperty*。"  
+     收到以下错误消息："*YourClass*不包含定义 get*YourProperty*。"  
   
 5.  双击该错误消息。  
   
@@ -118,6 +115,3 @@ void SetAgeValue(int value)
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [域属性的属性](../modeling/properties-of-domain-properties.md)   
  [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
-
-
-

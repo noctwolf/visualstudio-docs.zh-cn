@@ -1,14 +1,9 @@
 ---
 title: 使用代码分析规则集编辑器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
@@ -16,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269641"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930824"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,6 +76,3 @@ ms.locfileid: "49269641"
 -   若要排序的规则集列表，请单击想要进行排序所依据的字段的列标题。 如果规则集进行分组，每个组均单独进行排序。  
   
 -   若要筛选的字段值的规则集，单击想要筛选所依据的字段的列标题上的筛选器按钮。 选中你想要显示的值的复选框并清除你想要隐藏的值的复选框。
-
-
-

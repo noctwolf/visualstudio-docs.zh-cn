@@ -1,26 +1,21 @@
 ---
 title: 指定文件扩展名的文件处理程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dd999fe10da48f91482976ade56681ee53346802
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726249"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933786"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定文件扩展名的文件处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,9 +77,8 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid  
 ```  
   
- 如果旧 ProgID 具有与其关联的谓词，则这些谓词也会出现下**打开***产品名称*的快捷菜单中。  
+ 如果旧 ProgID 具有与其关联的谓词，则这些谓词也会出现下 **打开** *产品名称* 的快捷菜单中。  
   
 ## <a name="see-also"></a>请参阅  
  [有关文件扩展名](../extensibility/about-file-name-extensions.md)   
  [注册文件扩展名的谓词](../extensibility/registering-verbs-for-file-name-extensions.md)
-

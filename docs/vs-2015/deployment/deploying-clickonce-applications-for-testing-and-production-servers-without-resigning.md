@@ -1,14 +1,9 @@
 ---
 title: 部署 ClickOnce 应用程序进行测试和生产服务器无需重新签名 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,13 +19,13 @@ ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840033"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931501"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>在不重新签名的情况下为测试服务器和生产服务器部署 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +62,8 @@ ms.locfileid: "49840033"
   在第二个示例中，发布 ClickOnce 应用程序指定`deploymentProvider`，然后决定将其删除。 一次新版本而无需`deploymentProvider`已下载到客户端，您将不能用于更新，直到发布具有应用程序的版本路径重定向`deploymentProvider`还原。 与第一个示例一样`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指 http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
   
 ## <a name="creating-a-deployment"></a>创建部署  
- 有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练： 手动部署 ClickOnce 应用程序，不会不需要重新签名并且该保留品牌信息](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ 有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练：手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)。  
   
 ## <a name="see-also"></a>请参阅  
  [Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
-
-
-
