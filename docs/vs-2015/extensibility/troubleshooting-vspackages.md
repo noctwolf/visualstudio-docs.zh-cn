@@ -1,27 +1,22 @@
 ---
 title: VSPackages 故障排除 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: troubleshooting
 helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c9a7b57a8b15683cb202b71e33e908a1bfd1b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 16988915c9e8353cfc26f32e7d83c556c7f4957d
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764012"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000605"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ ms.locfileid: "51764012"
   
 3.  请检查 VSPackage 的注册表条目。  
   
-     有关详细信息，请参阅[注册 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)并[管理 Vspackage](../extensibility/managing-vspackages.md)。  
+     有关详细信息，请参阅[注册 Vspackage](internals/registering-vspackages.md)并[管理 Vspackage](../extensibility/managing-vspackages.md)。  
   
 4.  打开**输出**的实例的窗口[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]无法加载 VSPackage。 有关 VSPackage 无法加载的原因的信息可能显示在该窗口中。  
   
@@ -57,7 +52,7 @@ ms.locfileid: "51764012"
   
 5.  活动日志中检查。  
   
-     有关详细信息，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+     有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 6.  有关由 IDE 引发的异常的详细信息，请单击**异常**上**调试**菜单启用例外。 在中**异常**对话框中选择要了解详细信息的异常的类型。  
   
@@ -73,7 +68,7 @@ ms.locfileid: "51764012"
   
     1.  在注册表的程序包部分中找到的 vspackage 的 CLSID:  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
   
     2.  验证给定 SatelliteDll 子项的路径正确。  
   
@@ -96,7 +91,7 @@ ms.locfileid: "51764012"
   
 2.  使用活动日志。  
   
-     通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关详细信息，请参阅[如何： 使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
+     通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
 3.  使用公共符号。  
   
@@ -126,10 +121,9 @@ ms.locfileid: "51764012"
   
 2. 对于非托管代码中，找到的 VSPackage 中 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 注册表节点：  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
   
    请确保 InprocServer32 项具有 VSPackage dll 的正确路径。  
   
 ## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)
-
