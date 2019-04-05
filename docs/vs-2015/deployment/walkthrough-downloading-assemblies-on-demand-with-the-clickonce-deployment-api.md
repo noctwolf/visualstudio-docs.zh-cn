@@ -1,14 +1,9 @@
 ---
-title: 演练： 下载使用 ClickOnce 部署 API 按需程序集 |Microsoft Docs
-ms.custom: ''
+title: 演练：下载使用 ClickOnce 部署 API 按需程序集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,18 @@ ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936956"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载程序集
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：下载使用 ClickOnce 部署 API 按需程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-默认情况下，所有程序集包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]首次运行该应用程序时下载应用程序。 但是，您可能使用的一小组用户应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将标记为"可选"，在应用程序中的某些程序集和如何使用下载中的类<xref:System.Deployment.Application>命名空间时公共语言运行时 (CLR) 需要它们。  
+默认情况下，所有程序集包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]首次运行该应用程序时下载应用程序。 但是，您可能使用的一小组用户应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时 (CLR) 需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。  
   
 > [!NOTE]
 >  应用程序必须在完全信任下运行才能使用此过程。  
@@ -108,7 +103,7 @@ ms.locfileid: "49199129"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 将标记为可选 ClickOnce 应用程序中的程序集  
   
-1.  使用 MageUI.exe 中，创建应用程序清单中所述[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对该应用程序清单中使用以下设置：  
+1.  使用 MageUI.exe 中，创建应用程序清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对该应用程序清单中使用以下设置：  
   
     -   命名应用程序清单`ClickOnceOnDemand`。  
   
@@ -116,7 +111,7 @@ ms.locfileid: "49199129"
   
     -   上**文件**页上，在 ClickOnceLibrary.dll 行中，类型`ClickOnceLibrary.dll`中**组**列。  
   
-2.  使用 MageUI.exe 中，创建部署清单中所述[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对于部署清单中使用以下设置：  
+2.  使用 MageUI.exe 中，创建部署清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对于部署清单中使用以下设置：  
   
     -   命名的部署清单`ClickOnceOnDemand`。  
   
@@ -132,10 +127,7 @@ ms.locfileid: "49199129"
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应会看到"Hello，World ！"中读取一个消息框窗口中的字符串。  
+3.  在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应在消息框窗口中看到一个显示为“Hello, World!”的字符串。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>
-
-
-

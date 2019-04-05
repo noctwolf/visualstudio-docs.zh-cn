@@ -1,23 +1,20 @@
 ---
 title: 定义锁定策略以创建只读段 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa549c71-2bf6-4b08-b7b2-7756dd6f1dc8
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 298e649704731157164db363dfa198ff6f2cdc41
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933518"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,9 +77,9 @@ partition.SetLocks(Locks.Delete);
   
   无法设置锁分区上或存储并在同一时间禁用某个元素上的锁。  
   
-|“值”|这意味着如果`IsLocked(Value)`为 true|  
+|值|这意味着如果`IsLocked(Value)`为 true|  
 |-----------|------------------------------------------|  
-|无|没有限制。|  
+|None|没有限制。|  
 |属性|不能更改域属性的元素。 这不适用于生成的域类在关系中的角色的属性。|  
 |添加|不能在分区中创建新元素和链接或存储。<br /><br /> 不适用于`ModelElement`。|  
 |移动|如果无法将元素移动各个分区之间`element.IsLocked(Move)`为 true，或者如果`targetPartition.IsLocked(Move)`为 true。|  
@@ -193,6 +190,3 @@ namespace Company.YourDsl.DslPackage // Change
     }  
 }  
 ```
-
-
-

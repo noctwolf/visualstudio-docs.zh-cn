@@ -1,14 +1,9 @@
 ---
 title: 调试多个进程 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.programs
 - vs.debug.processes.attaching
@@ -24,13 +19,13 @@ ms.assetid: bde37134-66af-4273-b02e-05b3370c31ab
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 56982a3b5c0a0d8a5cb0b682ab67b6f5eb133dd1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1d0986e1780cb9fea061132b5985972cf9635c8b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793043"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925939"
 ---
 # <a name="debug-multiple-processes"></a>调试多个进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,10 +52,10 @@ ms.locfileid: "51793043"
   
    ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> 查找源文件和符号 (.pdb) 文件  
+##  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>查找源文件和符号 (.pdb) 文件  
  若要浏览进程的源代码，调试器需要访问进程的源文件和符号文件。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
- 如果您无法访问进程的文件，则可使用“反汇编”窗口进行导航。 请参阅[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)  
+ 如果您无法访问进程的文件，则可使用“反汇编”窗口进行导航。 请参阅[如何：使用“反汇编”窗口](../debugger/how-to-use-the-disassembly-window.md)  
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -103,7 +98,7 @@ ms.locfileid: "51793043"
   
    ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Attach_to_a_process"></a> 附加到进程  
+###  <a name="BKMK_Attach_to_a_process"></a>附加到进程  
  调试器还可以*附加*到在 Visual Studio 外部的进程中运行的程序，包括在远程设备运行的程序。 一旦附加到某个程序，就可以使用调试器执行命令、检查程序状态，等等。 检查程序的能力可能会受到某些限制，这取决于程序是否用调试信息生成，是否可以访问程序源代码，以及公共语言运行时 JIT 编译器是否在跟踪调试信息。  
   
  请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)有关详细信息。  
@@ -135,7 +130,7 @@ ms.locfileid: "51793043"
   
 7. 在编辑字符串对话框中，键入`vsjitdebugger.exe`中**数值数据**框。  
   
-    ![字符串编辑对话框](../debugger/media/dbg-execution-automaticstart-editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
+    ![Edit String dialog box](../debugger/media/dbg-execution-automaticstart-editstringdlg.png "DBG_Execution_AutomaticStart_EditStringDlg")  
   
    ![在 regedit.exe 中的自动调试器启动条目](../debugger/media/dbg-execution-automaticstart-result.png "DBG_Execution_AutomaticStart_Result")  
   
@@ -145,7 +140,7 @@ ms.locfileid: "51793043"
   
 -   [进程间切换](#BKMK_Switch_between_processes)•[中断、 单步，并继续命令](#BKMK_Break__step__and_continue_commands)  
   
-###  <a name="BKMK_Switch_between_processes"></a> 进程之间切换  
+###  <a name="BKMK_Switch_between_processes"></a>在进程之间切换  
  调试时可以附加到多个进程，但在任何给定时间，调试器中只有一个进程处于活动状态。 可以设置活动或*当前*在调试位置工具栏或在进程**进程**窗口。 若要在两个进程间切换，这两个进程必须处于中断模式。  
   
  **若要设置当前进程**  
@@ -168,7 +163,7 @@ ms.locfileid: "51793043"
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Break__step__and_continue_commands"></a> 中断、 单步执行，并继续命令  
+###  <a name="BKMK_Break__step__and_continue_commands"></a>中断、单步执行和继续命令  
   
 > [!NOTE]
 >  默认情况下，中断、继续和分步调试器命令会影响所有正在调试的进程。 若要更改此行为，请参阅[配置多个进程的执行行为](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
@@ -218,18 +213,15 @@ ms.locfileid: "51793043"
 |**调试**菜单：<br /><br /> -   **全部分离**|调试器与所有进程分离。|  
 |**进程**窗口上下文菜单：<br /><br /> -   **分离进程**|调试器与选定进程分离。<br /><br /> 其他进程保持其现有状态（挂起或运行）。|  
 |**进程**窗口上下文菜单：<br /><br /> -   **终止进程**|选定的进程将终止。<br /><br /> 其他进程保持其现有状态（挂起或运行）。|  
-|**进程**窗口上下文菜单：<br /><br /> -   **调试停止时分离**|切换的行为**调试**，**停止调试**所选进程：<br /><br /> -Checked： 调试器与进程分离。<br />-清除： 进程将被终止。|  
+|**进程**窗口上下文菜单：<br /><br /> -   **调试停止时分离**|切换的行为**调试**，**停止调试**所选进程：<br /><br /> -Checked:调试器与进程分离。<br />-清除：已终止该进程。|  
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [停止调试、 终止进程或与进程分离](../debugger/debug-multiple-processes.md#BKMK_Stop_debugging__terminate_or_detach_from_processes)  
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ## <a name="see-also"></a>请参阅  
- [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md) （使用调试器浏览代码）  
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-
-
-

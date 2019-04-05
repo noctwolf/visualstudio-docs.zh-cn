@@ -1,14 +1,9 @@
 ---
-title: 演练： 创建基本的独立 Shell 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 演练：创建基本的独立 Shell 应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, walkthroughs
 - Shell [Visual Studio], walkthroughs
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 901bbf12c9c1d153b84b3ed74f6ae8e97ebb2c9b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777313"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934005"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>演练： 创建基本的独立的 Shell 应用程序
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>演练：创建基本的独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本演练演示如何创建独立的 shell 解决方案，自定义帮助关于工具窗口，并创建安装独立的 shell 的安装程序。  
@@ -120,7 +115,7 @@ ms.locfileid: "51777313"
   
 2.  取消注释以下行：  
   
-     [$RootKey$ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3.  重新生成解决方案并启动调试的独立的 shell。 打开 XML 文件，例如，\MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct。 验证文件中的 XML 关键字不颜色区分，键入"<"在行上不会使 XML 工具提示。  
   
@@ -265,4 +260,3 @@ ms.locfileid: "51777313"
   
 ## <a name="testing-the-installation-program"></a>测试安装程序  
  若要测试安装程序，请将 setup.exe 文件复制到另一台计算机并运行安装程序可执行文件。 您应能够运行独立的 shell 应用程序。
-

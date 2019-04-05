@@ -1,29 +1,24 @@
 ---
-title: 如何： 使用内置的可着色项 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用内置的可着色项 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9b168eee5f5f8a8a9775d9326cb9a7dda6287792
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2546d9e9c864772bf1a2d3063e8ce4adc1cd7605
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806082"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934876"
 ---
-# <a name="how-to-use-built-in-colorable-items"></a>如何： 使用内置的可着色项
+# <a name="how-to-use-built-in-colorable-items"></a>如何：使用内置的可着色项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 使用内置的可着色项之前，您必须首先向发出信号，集成的开发环境 (IDE) 不提供此示例将为你自己自定义可着色项<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>对象。 通过设置语言服务的注册表项执行此操作。  
@@ -45,4 +40,3 @@ ms.locfileid: "51806082"
  [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)   
  [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)   
  [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service2.md)
-

@@ -1,27 +1,22 @@
 ---
 title: Visual Studio SDK 引用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio SDK, reference
 - reference, Visual Studio SDK
 ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4d5774c65be586a8183fe4a511a3ed21e79c38a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727150"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000629"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +25,10 @@ ms.locfileid: "51727150"
   
 ## <a name="in-this-section"></a>本节内容
 
- [安装程序配置](http://msdn.microsoft.com/en-us/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [安装程序配置](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  用于发现的 Visual Studio 2017 实例设置配置 API。
 
- [打开文件夹可扩展性](http://msdn.microsoft.com/en-us/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [打开文件夹可扩展性](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  工作区 API 在 Visual Studio 2017 中打开文件夹。
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
@@ -314,4 +309,3 @@ ms.locfileid: "51727150"
 ## <a name="related-sections"></a>相关章节  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
  包括文档、 示例和代码来帮助你开发与 Visual Studio 集成的产品。
-

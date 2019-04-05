@@ -1,14 +1,9 @@
 ---
-title: 如何： 支持旧版语言服务中的大纲显示 |Microsoft Docs
-ms.custom: ''
+title: 如何：支持旧版语言服务中的大纲显示 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], collapse to definitions command
 - language services, supporting Collapse to Definitions command
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fb596c8fbc7ab3c354b5b8d3e2a116ee752f06a4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2177ad8080f549f8f1de2736c34103979d8828f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724129"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933535"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何： 支持旧版语言服务中的大纲显示
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：支持旧版语言服务中的大纲显示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 使用大纲显示展开或折叠的文本的不同区域。 使用方式大纲显示可通过不同的语言以不同的方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现大纲显示的新方法的详细信息，请参阅[演练： 大纲显示](../../extensibility/walkthrough-outlining.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现大纲显示的新方法的详细信息，请参阅[演练：大纲显示](../../extensibility/walkthrough-outlining.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -53,6 +48,5 @@ ms.locfileid: "51724129"
 >  谨慎隐藏新行字符。 隐藏的文本，应将扩展从第一个行的开头到最后一个字符的一个部分中，仅显示最后一个新行字符的最后一行。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 提供旧版语言服务中的隐藏的文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
-
+ [如何：提供旧版语言服务中的隐藏的文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
+ [如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
