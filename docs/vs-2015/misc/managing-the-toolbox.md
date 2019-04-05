@@ -1,31 +1,26 @@
 ---
 title: 管理工具箱 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873417"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933368"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 允许 VSPackage（如编辑器或设计器）管理“工具箱” 的成员资格和外观。  
   
- 此外，还可以使用自动化管理“工具箱”  本身。 有关通过自动化管理工具箱的详细信息，请参阅 [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
+ 此外，还可以使用自动化管理“工具箱”  本身。 有关通过自动化管理工具箱的详细信息，请参阅[如何：控制工具箱](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
   
 ## <a name="automatic-toolbox-tab-selection"></a>自动工具箱选项卡选择  
  可以基于当前处于活动状态的编辑器或设计器，自动激活特定的“工具箱”  选项卡或类别。 例如，如果已激活窗体设计器，那么你可能希望选中“所有 Windows 窗体”  选项卡。  

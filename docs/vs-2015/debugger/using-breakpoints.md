@@ -1,13 +1,8 @@
 ---
 title: 使用断点 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -45,13 +40,13 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d980fd2367545eb5c824bacc507d9ced9aa2d723
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ff5858482f64e8e73844c433febe8033b7ab1d70
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765961"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58931726"
 ---
 # <a name="using-breakpoints"></a>使用断点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +63,7 @@ ms.locfileid: "51765961"
   
  此时， `testInt` 的值仍为 1。  
   
- 可以查看应用程序的当前状态，包括变量值和调用堆栈。 有关调用堆栈的详细信息，请参阅 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)。  
+ 可以查看应用程序的当前状态，包括变量值和调用堆栈。 有关调用堆栈的详细信息，请参阅[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。  
   
  可以在任意可执行代码行上设置断点。 例如，在上面的 C# 代码中，可以在变量声明、 `for` 循环或 `for` 循环内的任何代码上设置断点，但无法在命名空间、类声明或方法签名上设置断点。  
   
@@ -76,7 +71,7 @@ ms.locfileid: "51765961"
  还可以在调用堆栈中、在“反汇编”窗口中以及在本机 C++ 代码中、在数据条件或内存地址上设置断点。  
   
 ## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> 在调用堆栈窗口中设置断点  
- 可通过在 **“调用堆栈”** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 有关调用堆栈的详细信息，请参阅 [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md)。 调试程序必须已停止执行。  
+ 可通过在 **“调用堆栈”** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 有关调用堆栈的详细信息，请参阅[如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。 调试程序必须已停止执行。  
   
 1. 开始调试应用程序，并等待执行停止（例如，在断点处）。 打开“调用堆栈”  窗口（“调试”/“窗口”/“调用堆栈”，或按“CTRL + ALT + C” ）。  
   
@@ -155,7 +150,7 @@ ms.locfileid: "51765961"
   
    选中 **“条件”** 框时，窗口将扩展，以便显示不同种类的条件。  
   
-   **条件表达式：** 选择条件表达式时，可以随之选择两个条件： **“为 true”** 和 **“更改时”**。 如果要在满足表达式时中断，请选择 **“为 true”** ；如果要在表达式的值更改时中断，请选择 **“更改时”** 。  
+   **条件表达式：** 一旦选择条件表达式，您就可以选择两个条件：**为 true**并**发生更改时**。 如果要在满足表达式时中断，请选择 **“为 true”** ；如果要在表达式的值更改时中断，请选择 **“更改时”** 。  
   
    在下面的示例中，我们将断点设置为仅在 `testInt` 的值为 **4**时才会命中：  
   
@@ -259,6 +254,3 @@ ms.locfileid: "51765961"
   
 ## <a name="see-also"></a>请参阅  
  [使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)
-
-
-

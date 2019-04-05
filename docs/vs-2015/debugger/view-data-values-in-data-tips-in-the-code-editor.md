@@ -1,14 +1,9 @@
 ---
 title: 在代码编辑器中查看在数据提示中的数据值 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 37fc58a68f8cf482ac6a2bbab3ecb47c28d60904
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926149"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在代码编辑器中查看数据提示中的数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,9 +143,6 @@ ms.locfileid: "51799439"
   
 ## <a name="see-also"></a>请参阅  
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
- [如何： 使用快速监视对话框](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [如何：使用快速监视对话框](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
- [如何： 更改调试器 Windows 的数字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
-
-
-
+ [如何：更改调试器 Windows 的数字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

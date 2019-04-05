@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用模块窗口 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用模块窗口 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,18 +26,18 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 105325341d8f93f9531c2c85deb8ef21266e872c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764407"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932907"
 ---
-# <a name="how-to-use-the-modules-window"></a>如何：使用“模块”窗口
+# <a name="how-to-use-the-modules-window"></a>如何：使用模块窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-请注意]
+备注
 >  此功能不可用于 SQL 或脚本调试。  
   
  **模块**窗口列出了由您的程序并显示每个相关信息的 Dll 和 EXE。  
@@ -51,7 +46,7 @@ ms.locfileid: "51764407"
   
 -   上**调试**菜单中，选择**Windows**，然后单击**模块**。  
   
-     默认情况下**模块**窗口按加载顺序对模块进行排序。 但是，可以选择按任意列来排序。  
+     默认情况下，“模块”窗口按加载顺序对模块进行排序。 但是，可以选择按任意列来排序。  
   
 ### <a name="to-sort-by-any-column"></a>按任意列排序  
   
@@ -70,7 +65,7 @@ ms.locfileid: "51764407"
   
 #### <a name="to-change-symbol-load-settings"></a>更改符号加载设置  
   
-1.  在中**模块**窗口中，右键单击任何模块。  
+1.  在“模块”窗口中右键单击任一模块。  
   
 2.  单击**符号设置**。  
   
@@ -78,16 +73,11 @@ ms.locfileid: "51764407"
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>为特定模块更改符号加载行为  
   
-1.  在中**模块**窗口中，右键单击模块。  
+1.  在“模块”窗口中右键单击所需模块。  
   
 2.  指向**自动符号加载设置**，然后单击**始终手动加载**或**默认**。 只有重新启动调试会话，更改才会生效。  
   
 ## <a name="see-also"></a>请参阅  
- [中断执行](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [中断执行](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

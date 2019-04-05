@@ -1,14 +1,9 @@
 ---
-title: CA1811： 避免使用未调用的私有代码 |Microsoft Docs
-ms.custom: ''
+title: CA1811:避免使用未调用的私有代码 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUncalledPrivateCode
 - CA1811
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dbf0bf1ef21a7f41af49a272115abd84b1beabda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0f7272178edd1113d01644de9a5224e24907b31
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933957"
 ---
-# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811：避免使用未调用的私有代码
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:避免使用未调用的私有代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -60,11 +55,8 @@ ms.locfileid: "49860131"
  它可以安全地禁止显示此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1812：避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812:避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801：检查未使用的参数](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801:检查未使用的参数](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804：移除未使用的局部变量](../code-quality/ca1804-remove-unused-locals.md)
-
-
-
+ [CA1804:删除未使用的局部变量](../code-quality/ca1804-remove-unused-locals.md)

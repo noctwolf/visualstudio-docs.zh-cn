@@ -1,26 +1,21 @@
 ---
 title: API 参考 （Visual Studio 调试） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c45f89a6deafad5317f4cde704b73d9d4a1f30a6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771703"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932752"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -29,12 +24,12 @@ ms.locfileid: "51771703"
   
  下表显示了常见`HRESULT`方法返回的值。  
   
-|name|描述|“值”|  
+|名称|描述|值|  
 |----------|-----------------|-----------|  
 |S_OK|成功。|0x00000000|  
 |E_UNEXPECTED|意外的失败。|0x8000FFFF|  
 |E_NOTIMPL|未实现。|0x80004001|  
-|E_OUTOFMEMORY|内存不足，无法完成操作。|已用完 0x8007000E|  
+|E_OUTOFMEMORY|内存不足，无法完成操作。|0x8007000E|  
 |E_INVALIDARG|一个或多个参数均无效。|0x80070057|  
 |E_NOINTERFACE|支持任何此类接口。|0x80004002|  
 |E_POINTER|无效的指针。|0x80004003|  
@@ -55,4 +50,3 @@ ms.locfileid: "51771703"
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [用于调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Visual Studio 调试器可扩展性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

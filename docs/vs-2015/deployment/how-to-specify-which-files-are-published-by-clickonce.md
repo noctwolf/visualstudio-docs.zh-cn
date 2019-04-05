@@ -1,14 +1,9 @@
 ---
-title: 如何： 指定通过 ClickOnce 发布的文件 |Microsoft Docs
-ms.custom: ''
+title: 如何：指定通过 ClickOnce 发布的文件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.File
 dev_langs:
@@ -22,13 +17,13 @@ ms.assetid: 579c134a-d50f-4e0c-8e05-2a4ff654896a
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f80dc31d2b572d54d0973d98f85f8538b1a805ae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268315"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934041"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定通过 ClickOnce 发布的文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "49268315"
   
 -   默认情况下，例如 SQL 数据库 （.mdf 和.mdb） 文件和 XML 文件的数据文件将标记为数据文件。  
   
--   添加引用时，将按如下所示指定引用程序集 （.dll 文件）： 如果**Copy Local**是**False**，默认情况下作为系统必备程序集标记 (**先决条件 (自动）**) 之前安装了应用程序必须位于 GAC 中。 如果**Copy Local**是**True**，该程序集标记为应用程序程序集默认情况下 (**包括 （自动）**) 和要复制到位于安装的应用程序文件夹。 COM 引用将显示在**应用程序文件**对话框框 （作为.ocx 文件） 仅当其**独立**属性设置为**True**。 默认情况下，它将被包含。  
+-   添加引用时，将按如下所示指定程序集 （.dll 文件） 的引用：如果**Copy Local**是**False**，默认情况下作为系统必备程序集标记 (**必备组件 （自动）**) 之前安装了应用程序必须位于 GAC 中。 如果**Copy Local**是**True**，该程序集标记为应用程序程序集默认情况下 (**包括 （自动）**) 和要复制到位于安装的应用程序文件夹。 COM 引用将显示在**应用程序文件**对话框框 （作为.ocx 文件） 仅当其**独立**属性设置为**True**。 默认情况下，它将被包含。  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>若要将文件添加到应用程序文件对话框  
   
@@ -57,7 +52,7 @@ ms.locfileid: "49268315"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -69,7 +64,7 @@ ms.locfileid: "49268315"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -81,7 +76,7 @@ ms.locfileid: "49268315"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -93,7 +88,7 @@ ms.locfileid: "49268315"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -110,7 +105,7 @@ ms.locfileid: "49268315"
   
 1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2.  单击“发布”选项卡。  
   
 3.  单击**应用程序文件**按钮以打开**应用程序文件**对话框。  
   
@@ -124,6 +119,3 @@ ms.locfileid: "49268315"
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-
-
-

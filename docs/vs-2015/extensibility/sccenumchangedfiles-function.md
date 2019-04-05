@@ -1,14 +1,9 @@
 ---
 title: SccEnumChangedFiles 函数 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c4254df883bf268f7f473c89d99cdcadf991a8a1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 00ef98c93f02aa8e8a1b4ea53f1998d0ab6713a9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736059"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933540"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +55,10 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
 |SCC_UNSPECIFIEDERROR|常规错误。|  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
-

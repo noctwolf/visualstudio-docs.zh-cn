@@ -1,14 +1,9 @@
 ---
-title: 如何： 为 ASP.NET Web 应用程序配置代码分析 |Microsoft Docs
-ms.custom: ''
+title: 如何：为 ASP.NET Web 应用程序配置代码分析 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
 ms.assetid: b3000b31-fd9d-489e-81a2-a4bee49453ba
@@ -16,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bf7450341dd166977d67639f4f3762fae6ef89c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cfc63c74755b10d7b3d274c0925d83b9a2d24c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283902"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932035"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>如何：为 ASP.NET Web 应用程序配置代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ ms.locfileid: "49283902"
     -   选择**\<浏览 >** 可以指定现有的自定义规则集不在列表中。  
   
     -   定义自定义规则集。 有关详细信息，请参阅[创建自定义规则集](../code-quality/creating-custom-code-analysis-rule-sets.md)。
-
-
-

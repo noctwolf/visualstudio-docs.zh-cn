@@ -1,25 +1,20 @@
 ---
-title: 如何： 创建 XML 代码段 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建 XML 代码段 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818154"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933533"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,8 +115,5 @@ ms.locfileid: "49818154"
   
 ## <a name="see-also"></a>请参阅  
  [XML 代码段](../xml-tools/xml-snippets.md)   
- [如何： 使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)   
- [如何：从 XML 架构生成 XML 代码片段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-
-
-
+ [如何：使用 XML 代码段](../xml-tools/how-to-use-xml-snippets.md)   
+ [如何：从 XML 架构生成 XML 代码段](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

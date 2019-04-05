@@ -1,25 +1,20 @@
 ---
-title: 演练： 使用 IntelliTrace |Microsoft Docs
-ms.custom: ''
+title: 演练：使用 IntelliTrace |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc1e2b40e16a14da505243aeb11542df3adfb18d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781304"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931499"
 ---
 # <a name="walkthrough-using-intellitrace"></a>演练：使用 IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,9 +101,3 @@ ms.locfileid: "51781304"
     >  你可能会看到某些调用变暗。 这是因为 IntelliTrace 未记录来自相应模块的数据。 若要查看此数据，请让 IntelliTrace 从这些模块中收集数据。 有关指定模块的信息，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ## <a name="next-steps"></a>后续步骤
-
-
-
-
-
-
