@@ -1,26 +1,21 @@
 ---
 title: 创作。Vsct 文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 50dc50aee377a4685527e57dc2af5d9946639946
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772165"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "59000228"
 ---
 # <a name="authoring-vsct-files"></a>创作。Vsct 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,14 +25,14 @@ ms.locfileid: "51772165"
  对于新项目，我们建议你使用 Visual Studio 包模板，因为它会生成一个.vsct 文件，具体取决于你的选择，已具有菜单命令、 工具窗口，或自定义编辑器所需的元素。 您可以修改此.vsct 文件以满足你的 VSPackage 的要求。 有关如何修改.vsct 文件的详细信息，请参阅中的示例[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
   
 ## <a name="authoring-the-file"></a>编写文件  
- 创作.vsct 文件在以下阶段： 创建文件和资源的结构、 声明的 UI 元素、 将 UI 元素放在 IDE 中，并添加任何专用的行为。  
+ 在这些阶段中创作.vsct 文件：创建文件和资源的结构、 声明的 UI 元素、 将 UI 元素放在 IDE 中，并添加任何专用的行为。  
   
 ### <a name="file-structure"></a>文件结构  
  .Vsct 文件的基本结构[CommandTable](../../extensibility/commandtable-element.md)根元素，其中包含[命令](../../extensibility/commands-element.md)元素和一个[符号](../../extensibility/symbols-element.md)元素。  
   
 ##### <a name="to-create-the-file-structure"></a>若要创建的文件结构  
   
-1.  按照中的步骤将.vsct 文件添加到你的项目[如何： 创建。Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
+1.  按照中的步骤将.vsct 文件添加到你的项目[如何：创建。Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)。  
   
 2.  添加到所需命名空间`CommandTable`元素，如下面的示例中所示。  
   
@@ -208,7 +203,7 @@ ms.locfileid: "51772165"
   
    - CommandWellOnly  
   
-   - 筛选键  
+   - FilterKeys  
   
    - NoAutoComplete  
   
@@ -244,4 +239,3 @@ ms.locfileid: "51772165"
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)
-
