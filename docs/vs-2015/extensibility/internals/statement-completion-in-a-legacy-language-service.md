@@ -1,34 +1,29 @@
 ---
 title: 旧版语言服务中的语句完成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - statement completion
 - language services, statement completion
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d88ebe84ec3ec5efb1d7c4ac04ebaee50ac65b97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796488"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934699"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>旧版语言服务中的语句完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 语句完成是依据语言服务可帮助用户完成语言关键字或他们已启动核心编辑器中键入的元素的过程。 本主题讨论语句完成的工作原理以及如何在你的语言服务中实现它。  
   
- 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现的语句结束的新方法的详细信息，请参阅[演练： 显示语句完成](../../extensibility/walkthrough-displaying-statement-completion.md)。  
+ 旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现的语句结束的新方法的详细信息，请参阅[演练：显示语句完成](../../extensibility/walkthrough-displaying-statement-completion.md)。  
   
 > [!NOTE]
 >  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
@@ -45,4 +40,3 @@ ms.locfileid: "51796488"
   
 ## <a name="see-also"></a>请参阅  
  [截获旧版语言服务命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
-

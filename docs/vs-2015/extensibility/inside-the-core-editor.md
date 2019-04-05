@@ -1,26 +1,21 @@
 ---
 title: 核心编辑器内 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798542"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936740"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ ms.locfileid: "51798542"
  [旧版 API 中的文本缓冲区事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  提供了一系列使用的文本缓冲区事件通知的接口。  
   
- [如何：使用旧 API 注册文本缓冲区事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [如何：文本缓冲区的事件的原有 API 注册](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  介绍如何向建议文本缓冲区的事件。  
   
  [使用文本管理器监视全局设置](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -70,7 +65,7 @@ ms.locfileid: "51798542"
  介绍了某种语言服务的控制代码修饰的实例化。  
   
 ## <a name="related-sections"></a>相关章节  
- [演练：创建核心编辑器并注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  提供有关如何从托管代码启动核心编辑器的分步说明。  
   
  [下拉栏](../extensibility/drop-down-bar.md)  
@@ -84,4 +79,3 @@ ms.locfileid: "51798542"
   
  [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)  
  提供有关如何创建自定义文本标记以及如何提供的标记类型为服务的分步说明。
-

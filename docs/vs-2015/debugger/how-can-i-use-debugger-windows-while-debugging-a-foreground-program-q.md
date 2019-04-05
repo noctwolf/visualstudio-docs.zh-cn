@@ -1,14 +1,9 @@
 ---
 title: 调试前台程序时如何使用调试器窗口？ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.background
 dev_langs:
@@ -27,13 +22,13 @@ ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dfa72ac59968ffdd1a31c3d19f4dff35cefe2cb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8ab8427c144d56461aa52a535acbe618b68d9994
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937759"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>调试前台程序时如何使用调试器窗口？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +40,5 @@ ms.locfileid: "51766183"
  如果有另一台计算机，则可以使用远程调试。 通过两台计算机的设置，当在主机上运行调试器时，可以监视远程计算机上的屏幕绘制。 有关远程调试的详细信息，请参阅[设置远程调试](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
   
 ## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
-title: 如何： 从程序代码中的文件打开模型 |Microsoft Docs
-ms.custom: ''
+title: 如何：从程序代码中的文件打开模型 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d7d68697-5418-4263-bdb2-48401924ea71
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d40becc02333a95801794bd20f2b2abd45043c08
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937812"
 ---
-# <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
+# <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程序代码中从文件打开模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在任何应用程序中打开 DSL 模型。  
@@ -47,7 +44,7 @@ ms.locfileid: "49940861"
   
     -   如果没有看到这下 **.NET**选项卡**添加引用**对话框中，单击**浏览**选项卡上，并导航到`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。  
   
--   DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体： *YourCompany*。*您的项目*`.Dsl.dll`。  
+-   DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体：*YourCompany*。*您的项目*`.Dsl.dll`。  
   
 ## <a name="important-classes-in-the-dsl"></a>在 DSL 中重要的类  
  您可以编写读取 DSL 的代码之前，应了解某些由 DSL 生成的类的名称。 在 DSL 解决方案中，打开**Dsl**项目，然后查看**GeneratedCode**文件夹。 或者，双击你的项目中的 DSL 程序集**引用**，并打开中的 DSL 命名空间**对象浏览器**。  
@@ -141,6 +138,3 @@ try
 catch (System.IO.IOException ex)  
 { ... }  
 ```
-
-
-

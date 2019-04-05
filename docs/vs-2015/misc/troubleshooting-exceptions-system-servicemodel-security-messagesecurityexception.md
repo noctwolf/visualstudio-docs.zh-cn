@@ -1,14 +1,9 @@
 ---
-title: 异常疑难解答： System.ServiceModel.Security.MessageSecurityException |Microsoft Docs
-ms.custom: ''
+title: 异常疑难解答：System.ServiceModel.Security.MessageSecurityException | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,15 +11,15 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742478"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936609"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>关于异常的疑难解答：System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>异常疑难解答：System.ServiceModel.Security.MessageSecurityException
 一个<xref:System.ServiceModel.Security.MessageSecurityException>时将引发异常[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]确定消息未受到正确保护或已被篡改。 当下列条件全为真时，此错误会非常频繁地发生：  
   
 -   在远程连接（如远程桌面连接或终端服务）上使用 WCF 服务引用与网站或 Web 应用程序项目中的 WCF 服务 (.svc) 进行通信。  

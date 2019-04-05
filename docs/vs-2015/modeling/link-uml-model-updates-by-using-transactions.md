@@ -1,25 +1,22 @@
 ---
 title: 通过使用事务链接 UML 模型更新 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800401"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937771"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用事务链接 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51800401"
 ## <a name="to-group-changes-into-a-single-transaction"></a>将更改分组到单个事务中  
  确保你的项目引用包含该 .NET 程序集：  
   
- **Microsoft.VisualStudio.Modeling.Sdk。[版本].dll**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  在你的类内部，声明具有类型 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext> 的导入属性 ：  
   
@@ -115,6 +112,3 @@ ms.locfileid: "51800401"
  [使用 UML API 编程](../modeling/programming-with-the-uml-api.md)   
  [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

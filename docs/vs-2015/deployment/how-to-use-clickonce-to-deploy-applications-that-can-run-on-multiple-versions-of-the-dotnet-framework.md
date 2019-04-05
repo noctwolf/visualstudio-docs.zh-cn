@@ -1,14 +1,9 @@
 ---
-title: 如何： 使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,15 +16,15 @@ ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 7731526b09ab3014b9f3256ee1f4e4d0dd653a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259048"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937796"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的 .NET Framework 上运行的应用程序
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以部署应用程序面向.NET Framework 的多个版本的使用 ClickOnce 部署技术。 这将要求您生成并更新应用程序和部署清单。  
@@ -53,7 +48,7 @@ ms.locfileid: "49259048"
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>若要生成应用程序和部署清单  
   
--   使用项目设计器的发布页或发布向导发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或[发布页上，项目设计器](../ide/reference/publish-page-project-designer.md)。  
+-   使用项目设计器的发布页或发布向导发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何：发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或[发布页上，项目设计器](../ide/reference/publish-page-project-designer.md)。  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>若要更改部署清单，若要列出多个.NET Framework 版本  
   
@@ -65,11 +60,11 @@ ms.locfileid: "49259048"
   
     |.NET Framework 版本|XML|  
     |----------------------------|---------|  
-    |4 个客户端|\<framework targetVersion ="4.0"profile ="客户端"supportedRuntime ="4.0.30319"/ >|  
-    |4 完整|\<framework targetVersion ="4.0"profile ="完整"supportedRuntime ="4.0.30319"/ >|  
-    |3.5 客户端|\<framework targetVersion ="3.5"的配置文件 ="客户端"supportedRuntime ="2.0.50727"/ >|  
-    |3.5 完整|\<framework targetVersion ="3.5"的配置文件 ="完整"supportedRuntime ="2.0.50727"/ >|  
-    |3.0|\<framework targetVersion ="3.0"supportedRuntime ="2.0.50727"/ >|  
+    |4 客户端|\<framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />|  
+    |4 完整|\<framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />|  
+    |3.5 客户端|\<framework targetVersion="3.5" profile="Client" supportedRuntime="2.0.50727" />|  
+    |3.5 完整|\<framework targetVersion="3.5" profile="Full" supportedRuntime="2.0.50727" />|  
+    |3.0|\<framework targetVersion="3.0" supportedRuntime="2.0.50727" />|  
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>若要更改 app.config 文件，若要列出兼容.NET Framework 运行时版本  
   
@@ -81,10 +76,10 @@ ms.locfileid: "49259048"
   
     |.NET framework 运行时版本|XML|  
     |------------------------------------|---------|  
-    |4 个客户端|\<supportedRuntime 版本 ="v4.0.30319"sku ="。NETFramework，Version = v4.0，Profile = Client"/ >|  
-    |4 完整|\<supportedRuntime 版本 ="v4.0.30319"sku ="。NETFramework，Version = v4.0"/ >|  
-    |3.5 完整|\<supportedRuntime version="v2.0.50727"/ >|  
-    |3.5 客户端|\<supportedRuntime 版本 ="v2.0.50727"sku ="客户端"/ >|  
+    |4 客户端|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0,Profile=Client" />|  
+    |4 完整|\<supportedRuntime version="v4.0.30319" sku=".NETFramework,Version=v4.0" />|  
+    |3.5 完整|\<supportedRuntime version="v2.0.50727"/>|  
+    |3.5 客户端|\<supportedRuntime version="v2.0.50727" sku="Client"/>|  
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>若要更改要将标记作为.NET Framework 程序集的依赖程序集的应用程序清单  
   
@@ -108,7 +103,7 @@ ms.locfileid: "49259048"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新和重新签名的应用程序和部署清单  
   
--   更新和应用程序和部署清单重新签名。 有关详细信息，请参阅 [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+-   更新和应用程序和部署清单重新签名。 有关详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
@@ -116,6 +111,3 @@ ms.locfileid: "49259048"
  [\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
  [配置文件架构](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
-
-
-

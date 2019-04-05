@@ -1,12 +1,9 @@
 ---
-title: UML 组件图： 准则 |Microsoft Docs
-ms.custom: ''
+title: UML 组件图：指导原则 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,13 +14,13 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 13dc2eda358e86cd324bc154b856028b3db8979b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935723"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML 组件图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +37,7 @@ ms.locfileid: "51801457"
   
 - 考虑与主要块有关的设计，可帮助开发团队理解现有设计并创建新设计。  
   
-- 认为系统是具有定义完善的提供接口和所需接口的组件集合，从而可以改进组件之间的分离。 这反过来又使设计更易于理解，且在要求发生更改时可以更容易地做出相应更改。  
+- 认为系统是具有定义完善的提供接口和所需接口的组件集合，从而可以改进组件之间的分离。 这反过来又使设计更易于理解，且在需求发生更改时可以更容易地做出相应更改。  
   
   无论设计已在使用或将要使用的语言或平台如何，您都可以使用组件图来表示您的设计。  
   
@@ -49,13 +46,13 @@ ms.locfileid: "51801457"
   
 |其他关系图|帮助您讨论和传达设计的这些方面|  
 |-------------------|--------------------------------------------------------------------|  
-|UML 序列图|-系统的组件之间的交互<br />交互和组件中的部件之间。<br /><br /> 有关详细信息，请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。|  
-|UML 类图|的组件接口。 类图可让你详细了解接口的方法。<br />-通过组件的接口中参数发送的数据。<br /><br /> 有关详细信息，请参阅[UML 类图： 准则](../modeling/uml-class-diagrams-guidelines.md)。|  
-|活动图|-响应传入消息中某个组件的执行的内部处理。<br /><br /> 有关详细信息，请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。|  
-|层关系图|的您的组件逻辑体系结构层。<br /><br /> 有关详细信息，请参阅[层关系图： 参考](../modeling/layer-diagrams-reference.md)。|  
+|UML 序列图|-系统的组件之间的交互<br />交互和组件中的部件之间。<br /><br /> 有关详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。|  
+|UML 类图|的组件接口。 类图可让你详细了解接口的方法。<br />-通过组件的接口中参数发送的数据。<br /><br /> 有关详细信息，请参阅 [UML 类图：指导原则](../modeling/uml-class-diagrams-guidelines.md)。|  
+|活动图|-响应传入消息中某个组件的执行的内部处理。<br /><br /> 有关详细信息，请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。|  
+|层关系图|的您的组件逻辑体系结构层。<br /><br /> 有关详细信息，请参阅[层关系图：参考](../modeling/layer-diagrams-reference.md)。|  
   
 ##  <a name="Basics"></a> 绘制组件图的基本步骤  
- 有关参考信息的元素的组件图，请参阅[UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)。  
+ 有关参考信息的元素的组件图，请参阅[UML 组件图：参考](../modeling/uml-component-diagrams-reference.md)。  
   
  有关如何使用组件图设计过程中的详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
   
@@ -279,7 +276,7 @@ ms.locfileid: "51801457"
   
 1.  创建新的序列图。  
   
-     有关详细信息，请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+     有关详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
 2.  为向组件发送消息的外部组件、用户、设备或其他参与者 (1) 创建生命线。  
   
@@ -301,7 +298,7 @@ ms.locfileid: "51801457"
  通过设置可以指示在模型中这**间接实例化**组件的属性。 在这种情况下，组件的所有接口都应位于端口上，且委托给内部部件。  
   
 ### <a name="describing-the-process-inside-each-part"></a>介绍每个部件内的进程  
- 可以使用活动图显示组件处理每个传入消息的方式。 有关详细信息，请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。  
+ 可以使用活动图显示组件处理每个传入消息的方式。 有关详细信息，请参阅[UML 活动图：指导原则](../modeling/uml-activity-diagrams-guidelines.md)。  
   
  ![带有数据缓冲区的活动图](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -337,12 +334,9 @@ ms.locfileid: "51801457"
   
 ## <a name="see-also"></a>请参阅  
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)   
- [UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)   
- [UML 类图： 参考](../modeling/uml-class-diagrams-reference.md)   
- [UML 组件图： 参考](../modeling/uml-component-diagrams-reference.md)   
- [视频： 使用组件图设计物理结构](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [UML 序列关系图：引用](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   
+ [UML 类关系图：引用](../modeling/uml-class-diagrams-reference.md)   
+ [UML 组件关系图：引用](../modeling/uml-component-diagrams-reference.md)   
+ [视频：使用组件图设计物理结构](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
