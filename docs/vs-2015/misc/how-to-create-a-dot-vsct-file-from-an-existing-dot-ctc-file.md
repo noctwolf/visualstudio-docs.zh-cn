@@ -1,27 +1,22 @@
 ---
-title: 如何： 创建。从现有的 Vsct 文件。启动 Ctc 文件 |Microsoft Docs
-ms.custom: ''
+title: 如何：创建。从现有的 Vsct 文件。启动 Ctc 文件 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating based on a .ctc file
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937040"
 ---
-# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何：从现有的 .Ctc 文件创建 .Vsct 文件
+# <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何：创建。从现有的 Vsct 文件。启动 Ctc 文件
 可以从现有的命令表 .ctc 源文件创建一个基于 XML 的 .vsct 文件。 通过执行此操作，可以利用基于 XML 的新 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令表 (VSCT) 编译器格式。  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>从 .ctc 文件创建 .vsct  文件  
@@ -50,5 +45,5 @@ ms.locfileid: "49303480"
     >  可以通过重新格式化 XML 注释来提高 .vsct 文件的可读性。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 创建。Vsct 文件](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
+ [如何：创建。Vsct 文件](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

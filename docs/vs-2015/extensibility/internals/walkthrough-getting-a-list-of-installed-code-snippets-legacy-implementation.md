@@ -1,14 +1,9 @@
 ---
-title: 演练： 获取一系列安装代码片段 （旧版实现） |Microsoft Docs
-ms.custom: ''
+title: 演练：获取一系列安装代码片段 （旧版实现） |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a8d132de9773614b966b6fe3a7ae84392fba4f35
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef16552fbbb051a24d7b2e1fbe5b5266774ef13f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759976"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933545"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取已安装代码片段（旧版实现）的列表
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取包含已安装的代码片段的列表（旧版实现）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 代码段是一段代码可以插入到源缓冲区 （它允许选择安装的代码片段的列表） 的菜单命令或通过从 IntelliSense 完成列表中选择代码片段快捷方式。  
@@ -185,4 +180,3 @@ class TestLanguageService : LanguageService
   
 ## <a name="see-also"></a>请参阅  
  [旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
-

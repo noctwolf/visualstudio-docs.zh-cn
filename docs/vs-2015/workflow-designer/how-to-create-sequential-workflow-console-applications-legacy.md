@@ -1,11 +1,8 @@
 ---
-title: 如何： 创建顺序工作流控制台应用程序 （旧版） |Microsoft Docs
-ms.custom: ''
+title: 如何：创建顺序工作流控制台应用程序 （旧版） |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - workflows, console applications
@@ -15,13 +12,13 @@ ms.assetid: 9f7be7fa-551f-42c6-a9bb-f5ae8ab83625
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e467e4a574263eaa35640bc99f99c1f599a74df9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d42c6159cdfadf84edd2c02205dea0b102b134a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937457"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>如何：创建顺序工作流控制台应用程序（旧版）
 按照这些步骤可使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供的旧 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 来创建顺序工作流控制台应用程序项目。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -57,4 +54,4 @@ ms.locfileid: "49306314"
   
 ## <a name="see-also"></a>请参阅  
  [创建旧版工作流项目](../workflow-designer/creating-legacy-workflow-projects.md)   
- [开发工作流](http://msdn.microsoft.com/en-us/557bcb1f-a7ab-49f6-8df7-2706b7001301)
+ [开发工作流](http://msdn.microsoft.com/557bcb1f-a7ab-49f6-8df7-2706b7001301)

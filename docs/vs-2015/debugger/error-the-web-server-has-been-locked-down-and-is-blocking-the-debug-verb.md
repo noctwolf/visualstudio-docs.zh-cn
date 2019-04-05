@@ -1,14 +1,9 @@
 ---
-title: 错误： Web 服务器已被锁定，并阻止 DEBUG 谓词 |Microsoft Docs
-ms.custom: ''
+title: 错误：Web 服务器已被锁定，并阻止 DEBUG 谓词 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_debug_verb_blocked
 dev_langs:
@@ -22,15 +17,15 @@ ms.assetid: 9c8c4812-17db-484d-9c1b-ffd9e3bfef5a
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 60fffd146516bca57497bfdaaabe0f51407063b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 64527c784cf61c02ad3031e9ba922ebf707e7e6f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770247"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933276"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，正在阻塞 DEBUG 谓词
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，并阻止 DEBUG 谓词
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 由于运行了 IIS 锁定工具并且安装并激活了 URLScan，单步执行 Web 应用程序或 XML Web services 失败。 这种情况下将禁止 IIS 接收 DEBUG 谓词。  
@@ -45,7 +40,7 @@ ms.locfileid: "51770247"
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2.  创建一份该文件，并将其命名**为 Urlscan.old**。  
+2.  创建此文件的副本并将它命名为 Urlscan.old。  
   
 3.  使用“记事本”或选定的文本编辑器打开 Urlscan.ini 文件的原始副本。  
   
@@ -58,8 +53,5 @@ ms.locfileid: "51770247"
 7.  重新启动服务器或重新启动 IIS。  
   
 ## <a name="see-also"></a>请参阅  
- [调试 Web 应用程序： 错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [错误：Web 服务器未能找到请求的资源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
-
-
-
+ [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [错误：Web 服务器找不到所请求的资源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

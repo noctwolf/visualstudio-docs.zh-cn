@@ -1,24 +1,19 @@
 ---
 title: 管理通用 Windows 项目 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b2c10232b917e8343ace8d1a31fcd3609ecdfb95
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783774"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933143"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -578,4 +573,3 @@ ms.locfileid: "51783774"
     ```  
   
 13. 生成并运行该项目。 在实验实例中创建一个 C# 通用项目，请转到**工具**菜单，然后单击**调用 TestUniversalProject**，并检查常规输出窗格中的文本。 平台项目中的文件重命名后，你应看到<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件和一个<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件。 更改以来该文件将导致其他文件来更改，并且由于平台项目中的项的更改不获取任何位置传播，因此没有仅每个上述事件之一。
-

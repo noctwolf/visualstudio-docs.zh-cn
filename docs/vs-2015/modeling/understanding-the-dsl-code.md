@@ -1,32 +1,29 @@
 ---
 title: 了解 DSL 代码 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834014"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934239"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 域特定语言 (DSL) 解决方案将生成可用于在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中读取和更新 DSL 实例的 API。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。  
   
-## <a name="the-example-solution-component-diagrams"></a>示例解决方案：组件图  
+## <a name="the-example-solution-component-diagrams"></a>示例解决方案中：组件图  
  若要创建解决方案的大部分本主题中示例的源，创建从 DSL**组件模型**解决方案模板。 这是在创建新 DSL 解决方案时显示的标准模板之一。  
   
 > [!NOTE]
@@ -127,7 +124,7 @@ ms.locfileid: "49834014"
   
 - 元素组原型 (EGP) 处理程序方法。 这些是必需的如果用户可以*合并*（添加） 到此类的实例上的另一个元素。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。  
   
-   在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 此  
+   在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 必须向  
   
    “组件”类中的 EGP 处理程序方法允许“组件”接受“端口”，但不接受“注释”。 根模型类中的 EGP 处理程序可接受“注释”和“组件”，但不接受“端口”。  
   
@@ -138,7 +135,7 @@ ms.locfileid: "49834014"
 > [!NOTE]
 >  这与模型的根类不同。  
   
- “复制”和“删除”闭包定义在复制或删除一个元素时应包含哪些其他元素。 可以通过设置控制此行为**传播复制**并**传播删除**两侧上的每个关系的角色的属性。 如果想要动态确定这些值，则可编写代码来重写“闭包”类的方法。 有关详细信息请参阅[如何： 程序复制和粘贴行为-重定向](../misc/how-to-program-copy-and-paste-behavior-redirect.md)。  
+ “复制”和“删除”闭包定义在复制或删除一个元素时应包含哪些其他元素。 可以通过设置控制此行为**传播复制**并**传播删除**两侧上的每个关系的角色的属性。 如果想要动态确定这些值，则可编写代码来重写“闭包”类的方法。 有关详细信息，请参阅[操作说明：编程复制和粘贴行为-重定向](../misc/how-to-program-copy-and-paste-behavior-redirect.md)。  
   
  `DomainModelResx.resx`  
   
@@ -356,6 +353,3 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  [了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)   
  [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

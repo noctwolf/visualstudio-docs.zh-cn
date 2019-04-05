@@ -1,23 +1,20 @@
 ---
 title: 在图表上设置背景图像 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240547"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932869"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,6 +109,3 @@ ms.locfileid: "49240547"
  [自定义文本和图像字段](../modeling/customizing-text-and-image-fields.md)   
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

@@ -1,25 +1,22 @@
 ---
 title: 关系图上显示 UML 模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933103"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在关系图上显示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +34,7 @@ ms.locfileid: "51757314"
   
 -   [打开并创建关系图](#Opening)  
   
--   [用于对齐形状的命令示例：](#AlignCommand)  
+-   [示例：用于对齐形状命令](#AlignCommand)  
   
 ##  <a name="Display"></a> 若要在关系图上显示的元素  
  创建用例或操作等元素时，用户可以在 UML 模型资源管理器中看到它，但它并不始终自动显示在关系图中。 在某些情况下，必须编写代码才能显示它。 下表总结了备选项。  
@@ -46,7 +43,7 @@ ms.locfileid: "51757314"
 |---------------------|-----------------|-------------------------------------|  
 |分类器|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|在指定关系图上创建关联的形状。 你可以为每个分类器创建任意数目的形状。<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> 对于位于关系图顶级的形状，将 `parentShape` 设置为 `null`。<br /><br /> 若要显示形状内部的形状：<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **注意：** 如果执行内的显示**ILinkedUndo**事务，该方法有时会返回任何`IShape`。 但形状创建无误，且可使用 `IElement.Shapes().` 进行访问|  
 |分类器的子级|属性、操作、<br /><br /> 部件、端口|自动 - 无需任何代码。<br /><br /> 它显示为父级的一部分。|  
-|行为|交互（序列），<br /><br /> Activity|将行为绑定到适当的关系图。<br /><br /> 每个行为每次最多可绑定到一个关系图上。<br /><br /> 例如：<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
+|行为|交互（序列），<br /><br /> 活动|将行为绑定到适当的关系图。<br /><br /> 每个行为每次最多可绑定到一个关系图上。<br /><br /> 例如：<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |行为的子级|生命线、消息、操作、对象节点|自动 - 无需任何代码。<br /><br /> 如果父级绑定到了关系图，则将显示它。|  
 |关系|关联、泛化、流、依赖关系|自动 - 无需任何代码。<br /><br /> 它将在显示两端的每个关系图上显示。|  
   
@@ -165,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> 用于对齐形状的命令示例：  
+##  <a name="AlignCommand"></a> 示例：用于对齐形状命令  
  以下代码实现可准确对齐形状的菜单命令。 用户必须先将两个或更多形状在垂直或水平方向上大致对齐。 然后才能使用对齐命令使它们居中对齐。  
   
  若要使此命令可用，请将此代码添加到菜单命令项目，然后将生成的扩展部署到用户。 有关详细信息，请参阅[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
@@ -384,8 +381,5 @@ namespace AlignCommand
 ## <a name="see-also"></a>请参阅  
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   
  [导航 UML 模型](../modeling/navigate-the-uml-model.md)   
- [示例： 在关系图菜单命令对齐形状](http://go.microsoft.com/fwlink/?LinkId=213809)   
- [示例： 创建元素、 形状和构造型](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-
+ [示例：在关系图菜单命令对齐形状](http://go.microsoft.com/fwlink/?LinkId=213809)   
+ [示例：创建元素、 形状和构造型](http://go.microsoft.com/fwlink/?LinkId=213811)

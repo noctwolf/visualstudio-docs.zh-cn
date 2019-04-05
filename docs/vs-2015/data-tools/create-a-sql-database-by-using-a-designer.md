@@ -1,12 +1,9 @@
 ---
 title: 使用设计器创建 SQL 数据库 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -26,14 +23,14 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 54
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860319"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932327"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用设计器创建 SQL 数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +86,7 @@ ms.locfileid: "49860319"
   
 2.  打开快捷菜单**表**，然后选择**添加新表**。  
   
-     **表设计器**将打开并显示一个具有一个默认行，表示要创建的表中的单个列的网格。 通过向网格中添加行，即可在表中添加列。  
+     “表设计器”打开并显示一个网格，其中有一个默认行，表示所创建表中的一列。 通过向网格中添加行，即可在表中添加列。  
   
 3.  在网格中，为下列各个条目添加行：  
   
@@ -195,4 +192,3 @@ ms.locfileid: "49860319"
   
 ## <a name="next-steps"></a>后续步骤  
  现在，已用一些示例数据的本地数据库文件，可以完成任何演示数据库任务的演练。
-

@@ -1,27 +1,22 @@
 ---
 title: 安装独立的 Shell 应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], deploying shell-based applications
 - Visual Studio shell, deploying shell-based applications
 ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ecec7963b66c20ef08d1e5f3f0917a66f885aa0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796297"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934066"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安装独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +159,7 @@ ms.locfileid: "51796297"
         ```  
   
     > [!NOTE]
-    >  所需的 Shell （独立） 应用程序的依赖项： DebuggerProxy，MasterPkgDef，资源 （尤其是.winprf 文件），应用程序和 PkgDefs。  
+    >  Shell （独立） 应用程序必需的依赖项是：DebuggerProxy，MasterPkgDef，资源 （尤其是.winprf 文件），应用程序和 PkgDefs。  
   
 ### <a name="registry-entries"></a>注册表项  
  Shell （独立） 项目模板包括*ProjectName*合并安装上的注册表项的.reg 文件。 这些注册表项必须是安装和清理目的的 MSI 的一部分。 此外必须在 ApplicationRegistry.wxs 中创建匹配的注册表基块。  
@@ -183,8 +178,8 @@ ms.locfileid: "51796297"
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE 对象"|\<注册表项 Id = DteClsidRegKey 根 = HKCR 键 = $（var。DteClsidRegKey) 操作 createAndRemoveOnUninstall = ><br /><br /> \<RegistryValue 类型 = string 名称 = @ 值 = $（var。ShortProductName) DTE 对象 / ><br /><br /> \</ RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<注册表项 Id = DteLocSrv32RegKey 根 = HKCR 键 = $（var。DteClsidRegKey) \LocalServer32 操作 createAndRemoveOnUninstall = ><br /><br /> \<RegistryValue 类型 = string 名称 = @ 值 = [INSTALLDIR] $（var。ShortProductName).exe / ><br /><br /> \</ RegistryKey >|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @="PhotoStudio DTE Object"|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='$(var.ShortProductName) DTE Object' /><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey>|  
   
      在此示例中，Var.DteClsidRegKey 解析为最上面一行中的注册表项。 Var.ShortProductName 解析为`PhotoStudio`。  
   
@@ -374,5 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
-
+ [演练：创建基本的独立的 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

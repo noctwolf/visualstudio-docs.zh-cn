@@ -1,14 +1,9 @@
 ---
-title: 如何： 从查找窗口打开消息视图 |Microsoft Docs
-ms.custom: ''
+title: 如何：从查找窗口打开消息视图 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Messages View in Spy++, opening
 - opening Messages View in Spy++
@@ -16,15 +11,15 @@ ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 64d32064ef20b1f7e188624a5a91ffd231b82b66
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932882"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>如何：从查找窗口打开消息视图
+# <a name="how-to-open-messages-view-from-find-window"></a>如何：从“查找”窗口打开消息视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可能会发现使用方便**查找窗口**对话框以选择目标窗口中，然后打开该窗口的消息视图。  
@@ -45,7 +40,7 @@ ms.locfileid: "51801246"
   
 4.  下**显示**，选择**消息**。  
   
-5.  按**确定**。  
+5.  按“确定”。  
   
      空白[消息视图](../debugger/messages-view.md)窗口将打开，和一个**消息**菜单添加到 Spy + + 工具栏。  
   
@@ -60,6 +55,3 @@ ms.locfileid: "51801246"
      根据所选的选项，消息开始流式传送到活动的消息视图窗口。  
   
 9. 在必须足够多的消息，请选择**停止日志记录**从**消息**菜单。
-
-
-

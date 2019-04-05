@@ -1,14 +1,9 @@
 ---
-title: 错误： 调试并不&#39;t 可能由于系统上启用了内核调试器 |Microsoft Docs
-ms.custom: ''
+title: 错误：调试并不&#39;t 可能由于系统上启用了内核调试器 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.kernel_dbg_enabled
 dev_langs:
@@ -25,15 +20,15 @@ ms.assetid: 630a7abd-3303-4aaa-888a-6de3de14bc01
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eea2e7d8277bc67df75be3d05d907a8bd13c29c5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cdc000a4ad825be495c28bb59d35f8ef378c563f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725290"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934792"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 调试并不&#39;t 可能由于系统上启用了内核调试器
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误：调试并不&#39;t 可能由于系统上启用了内核调试器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 调试托管代码时，你可能会收到以下错误消息：  
@@ -42,7 +37,7 @@ ms.locfileid: "51725290"
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
- 在您尝试调试托管代码时，将出现此消息：  
+ 在你尝试调试托管代码时，将出现此消息：  
   
 -   在已在调试模式下启动的 [!INCLUDE[win7](../includes/win7-md.md)] 或 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] 系统上。  
   
@@ -86,7 +81,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>对所有会话禁用内核调试（其他 Windows 操作系统）  
   
-1.  系统驱动器上查找 boot.ini (通常是 c:\\)。 boot.ini 文件可能是隐藏文件并且是只读的。 因此，您必须使用以下命令才能看到它：  
+1.  在系统驱动器（通常为 C:\\）上查找 boot.ini。 boot.ini 文件可能是隐藏文件并且是只读的。 因此，您必须使用以下命令才能看到它：  
   
     ```  
     dir /ASH  
@@ -113,6 +108,3 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
  [调试托管代码](../debugger/debugging-managed-code.md)
-
-
-

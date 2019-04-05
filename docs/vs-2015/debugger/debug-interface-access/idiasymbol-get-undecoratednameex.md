@@ -1,14 +1,9 @@
 ---
 title: 'Idiasymbol:: Get_undecoratednameex |Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e1902c6300a35924e7fcd626d9b63f69bc5bbc2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 889412b3fb060250a0ff8392bf959c2759cf81d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745398"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932909"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,8 +61,8 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_NO_FUNCTION_RETURNS|0x0004|禁用扩展的主声明的返回类型。|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|禁用声明模型的扩展。|  
 |UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|禁用扩展的声明语言说明符。|  
-|UNDNAME_RESERVED1|0x0020|保留。|  
-|UNDNAME_RESERVED2|0x0040|保留。|  
+|UNDNAME_RESERVED1|0x0020|已保留。|  
+|UNDNAME_RESERVED2|0x0040|已保留。|  
 |UNDNAME_NO_THISTYPE|0x0060|禁用所有修饰符上`this`类型。|  
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|禁用扩展的成员的访问说明符。|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|禁用扩展"抛出的签名的"函数和函数的指针。|  
@@ -83,6 +78,3 @@ HRESULT get_undecoratedNameEx( 
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

@@ -1,25 +1,20 @@
 ---
 title: 从属性窗口中获取字段说明 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, field descriptions
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937044"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>从属性窗口中获取字段说明
 在“属性”  窗口底部，说明区域显示了与所选属性字段相关的信息。 默认情况下此功能处于开启状态。 如果你想要隐藏说明字段，右键单击“属性”  窗口并单击“说明” 。 执行此操作还会删除“菜单”窗口中“说明”  标题旁的复选标记。 你可以按照将“说明”  切换回开启状态的步骤来再次显示该字段。  
@@ -60,7 +55,7 @@ STDAPI DLLGetDocumentation
   
  若要获取显示在“说明”  窗格中的字符串，为此你至少需要在类型库中指定 `helpstring` 特性。 如果你希望本地化这些字符串，则必须指定 `helpstringdll` （可选）特性和 `helpstringcontext` （必需）特性，并实现 `DLLGetDocumentation`。  
   
- 通过 idl 的 `helpstringcontext` 特性和 `DLLGetDocumentation` 获取本地化的信息时，没有需要实现的其他接口。  
+ 通过 idl 的 `helpstringcontext` 特性和 `DLLGetDocumentation`获取本地化的信息时，没有需要实现的其他接口。  
   
  获取某一属性的本地化名称和说明的另一方法是实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 有关此方法的实现的详细信息，请参阅 [Properties Window Fields and Interfaces](../extensibility/internals/properties-window-fields-and-interfaces.md)。  
   

@@ -1,14 +1,9 @@
 ---
 title: 支持代码更改 （c + +） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ helpviewer_keywords:
 - Edit and Continue, limitations
 - supported code changes
 - object files, limitations of Edit and Continue
-- C# language, supported code changes
+- C++ language, supported code changes
 - coding, supported code changes
 - resource files, limitations of Edit and Continue
 - code changes, handling in Edit and Continue
-- what's new [C#], supported code changes
+- what's new [C++], supported code changes
 - code changes
 ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a68ad4add5f8c08e00067c903d5ba3946ca14538
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7dce0cd8d527f165c91c9133c6cb8025b8f4fd44
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797970"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000696"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,8 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
  有关在 Visual Studio 中使用 C++ 编辑并继续的信息，请参阅 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。  
   
 ##  <a name="BKMK_Unsupported_changes"></a> 不支持的更改  
- 在调试会话期间，不能应用下列 C/C++ 更改：  
+
+在调试会话期间，不能应用下列 C/C++ 更改：  
   
 - 对全局或静态数据的大多数更改。  
   
@@ -68,7 +64,7 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
   
 - 对没有对象文件的代码的更改。  
   
-  如果进行了上面某项更改，然后尝试应用代码更改，则 **“输出”** 窗口中会出现错误或警告消息。  
+如果进行了上面某项更改，然后尝试应用代码更改，则 **“输出”** 窗口中会出现错误或警告消息。  
   
 - “编辑并继续”不更新静态库。 如果您更改了静态库，则会继续执行老版本，且不发出任何警告。  
   
@@ -149,6 +145,3 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
   
 ## <a name="see-also"></a>请参阅  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
-
-
-

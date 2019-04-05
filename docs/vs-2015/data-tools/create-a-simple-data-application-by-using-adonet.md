@@ -1,12 +1,9 @@
 ---
 title: 使用 ADO.NET 创建简单的数据应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +13,13 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824277"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58933429"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +68,7 @@ ms.locfileid: "49824277"
   
     Visual Studio 将创建项目以及若干个文件，其中包括名为 Form1 的空 Windows 窗体。  
   
-2. 将两个 Windows 窗体添加到你的项目，以使其具有三种形式，然后为他们提供以下名称：  
+2. 添加两个 Windows 窗体到项目中，以使其具有三个窗体，然后给予它们下列名称：  
   
    -   导航  
   
@@ -227,7 +224,7 @@ ms.locfileid: "49824277"
  本节包含对每个窗体功能的简要概述，并显示创建窗体的代码。 标识代码段的编号注释。  
   
 ### <a name="navigation-form"></a>Navigation 窗体  
- 运行应用程序时，Navigation 窗体将打开。 **添加帐户**按钮可以打开 NewCustomer 窗体。 **填写或取消订单**按钮可以打开 FillOrCancel 窗体。 **退出**按钮可以关闭该应用程序。  
+ 运行应用程序时，Navigation 窗体将打开。 按“添加帐户”按钮可以打开 NewCustomer 窗体。 按“填写或取消订单”按钮可以打开 FillOrCancel 窗体。 按“退出”按钮可以关闭应用程序。  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>使 Navigation 窗体成为启动窗体  
  如果正在使用 C# 中，在**解决方案资源管理器**，打开 Program.cs，并更改`Application.Run`这样的代码行： `Application.Run(new Navigation());`  
@@ -734,7 +731,7 @@ End Namespace
 |NC-16|定义用于验证客户名称是否存在的方法。<br /><br /> -如果文本框为空，则显示一条消息，并返回`false`，这是因为创建该帐户所需的名称。<br />-如果文本框不为空，返回`true`。|  
 |NC-17|将代码添加到 `btnPlaceOrder` 按钮的 Click 事件处理程序。|  
 |NC-18|将对 `isPlaceOrderReady` 的调用包装在 `btnPlaceOrder_Click` 事件代码周围，这样一来，如果不存在所需的输入，`uspPlaceNewOrder` 就不会运行。|  
-|NC-19 到 NC-25|代码中的这些段类似于为 `btnCreateAccount_Click` 事件处理程序添加的代码。<br /><br /> -NC-19。 创建 `SqlCommand` 对象 `cmdNewOrder`，并将 `Sales.uspPlaceOrder` 指定为存储过程。<br />-NC-20 到 nc-23 是存储过程的输入的参数。<br />-NC 24。 `@RC` 将包含一个返回值，该值是从数据库生成的订单 ID。 此参数的方向指定为 `ReturnValue`。<br />-NC-25。 将订单 ID 的值存储在 NC-2 上声明的 `orderID` 变量中，并在消息框中显示该值。|  
+|NC-19 到 NC-25|代码中的这些段类似于为 `btnCreateAccount_Click` 事件处理程序添加的代码。<br /><br /> -   NC-19. 创建 `SqlCommand` 对象 `cmdNewOrder`，并将 `Sales.uspPlaceOrder` 指定为存储过程。<br />-NC-20 到 nc-23 是存储过程的输入的参数。<br />-   NC-24. `@RC` 将包含一个返回值，该值是从数据库生成的订单 ID。 此参数的方向指定为 `ReturnValue`。<br />-   NC-25. 将订单 ID 的值存储在 NC-2 上声明的 `orderID` 变量中，并在消息框中显示该值。|  
 |NC-26|定义用于验证客户 ID 是否存在，以及是否已经在 `numOrderAmount` 中指定了数量的方法。|  
 |NC-27|调用 `btnAddAnotherAccount` Click 事件处理程序中的 `ClearForm` 方法。|  
 |NC-28|如果想要添加另一个客户，请创建 `ClearForm` 方法以清除窗体中的值。|  
@@ -1145,4 +1142,3 @@ End Namespace
   
 ##  <a name="BKMK_testyourapplication"></a> 测试应用程序  
  选择 F5 键以生成和测试后代码单击每个事件处理程序，你的应用程序，然后在完成编码。
-

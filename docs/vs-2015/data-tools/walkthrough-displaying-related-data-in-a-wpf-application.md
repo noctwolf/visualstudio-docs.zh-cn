@@ -1,12 +1,9 @@
 ---
-title: 演练： 在 WPF 应用程序中显示相关的数据 |Microsoft Docs
-ms.custom: ''
+title: 演练：在 WPF 应用程序中显示相关的数据 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +17,16 @@ ms.assetid: 5c48f188-e9c4-40a6-97d9-67cdb2f90127
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913132"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931987"
 ---
-# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>演练：在 WPF 应用程序中显示相关数据
+# <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>演练：在 WPF 应用程序中显示相关的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本演练中，将创建显示具有父/子关系的数据库表中的数据的 WPF 应用程序。 将数据封装在实体数据模型中的实体。 父实体包含一组的订单的概述信息。 此实体的每个属性绑定到一个不同的应用程序中的控件。 子实体包含每个订单的详细信息。 此数据集绑定到<xref:System.Windows.Controls.DataGrid>控件。  
@@ -55,9 +52,9 @@ ms.locfileid: "49913132"
   
 - 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
   
-- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
-- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="creating-the-project"></a>创建项目  
  创建新的 WPF 项目以显示订单记录。  
@@ -72,7 +69,7 @@ ms.locfileid: "49913132"
   
 4.  请确保 **.NET Framework 4**选择对话框顶部组合框中。 <xref:System.Windows.Controls.DataGrid>在本演练中使用的控件是仅在.NET Framework 4 中可用。  
   
-5.  选择**WPF 应用程序**项目模板。  
+5.  选择“WPF 应用程序”项目模板。  
   
 6.  在“名称”框中键入 `AdventureWorksOrdersViewer`。  
   
@@ -81,7 +78,7 @@ ms.locfileid: "49913132"
      Visual Studio 将创建`AdventureWorksOrdersViewer`项目。  
   
 ## <a name="creating-an-entity-data-model-for-the-application"></a>为应用程序创建实体数据模型  
- 您可以创建数据绑定控件之前，必须为应用程序定义数据模型并将其添加到**数据源**窗口。 在此演练中，数据模型是实体数据模型。  
+ 必须先为应用程序定义数据模型并将此模型添加到“数据源”窗口中，然后才能创建数据绑定控件。 在此演练中，数据模型是实体数据模型。  
   
 #### <a name="to-create-an-entity-data-model"></a>创建实体数据模型  
   
@@ -105,7 +102,7 @@ ms.locfileid: "49913132"
   
 6. 上**选择数据库对象**页上，展开**表**，，然后选择以下表：  
   
-   -   **销售订单详细信息**  
+   -   **SalesOrderDetail**  
   
    -   **SalesOrderHeader**  
   
@@ -126,7 +123,7 @@ ms.locfileid: "49913132"
   
 3. 在中**数据源**窗口中，单击下拉列表菜单**SalesOrderHeaders**节点，然后选择**详细信息**。  
   
-4. 展开**SalesOrderHeaders**节点。  
+4. 展开“SalesOrderHeaders”节点。  
   
 5. 单击下拉列表菜单旁边**SalesOrderID** ，然后选择**组合框**。  
   
@@ -134,7 +131,7 @@ ms.locfileid: "49913132"
   
    - **RevisionNumber**  
   
-   - **类型 OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
    - **ShipToAddressID**  
   
@@ -142,11 +139,11 @@ ms.locfileid: "49913132"
   
    - **CreditCardApprovalCode**  
   
-   - **小计**  
+   - **SubTotal**  
   
    - **TaxAmt**  
   
-   - **运费**  
+   - **Freight**  
   
    - **rowguid**  
   
@@ -160,7 +157,7 @@ ms.locfileid: "49913132"
   
 8. 在设计器中，单击组合框旁边**销售订单 ID**标签。  
   
-9. 在中**属性**窗口中，选择旁边的复选框**IsReadOnly**属性。  
+9. 在“属性”窗口，选中“IsReadOnly”属性旁边的复选框。  
   
 ## <a name="creating-a-datagrid-that-displays-the-order-details"></a>创建一个 DataGrid 显示订单详细信息  
  创建<xref:System.Windows.Controls.DataGrid>控件，用于显示订单详细信息，通过拖动`SalesOrderDetails`从实体**数据源**到 WPF 设计器窗口。  

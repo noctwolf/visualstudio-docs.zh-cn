@@ -1,14 +1,9 @@
 ---
-title: CA2107： 检查 deny 权限和允许仅使用情况 |Microsoft Docs
-ms.custom: ''
+title: CA2107:检查 deny 权限和允许仅使用情况 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2107
 - ReviewDenyAndPermitOnlyUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f7a82e6b1acdb8eee1d97dcf6f264ebf66343b58
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851098"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933438"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：检查 deny 权限和 permit only 权限的使用情况
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:检查 deny 权限和 permit only 权限的使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49851098"
  方法包含指定 PermitOnly 或拒绝安全操作的安全检查。
 
 ## <a name="rule-description"></a>规则说明
- [使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)并<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>只能由具有高级的知识的用户应使用安全操作的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安全。 应当对使用这些安全操作的代码进行安全检查。
+ [使用 PermitOnly 方法](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)并<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>只能由具有高级的知识的用户应使用安全操作的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安全。 应当对使用这些安全操作的代码进行安全检查。
 
  拒绝更改而发生响应安全要求的堆栈审核的默认行为。 它允许你指定必须未在拒绝的方法，而不考虑调用堆栈中的调用方的实际权限的持续时间内授予的权限。 如果堆栈遍历检测到拒绝，受保护的方法，并且如果要求的权限包含在被拒绝的权限，则堆栈审核失败。 PermitOnly 也会更改堆栈遍历的默认行为。 它允许指定调用方的权限也是如此，可授予这些权限的代码。 如果堆栈遍历检测到 PermitOnly，受保护的方法和中所指定的 PermitOnly 的权限不包括所需的权限，则堆栈审核失败。
 
@@ -77,15 +72,12 @@ ms.locfileid: "49851098"
 
  本示例生成以下输出。
 
- **需： 调用方的拒绝不起按需使用断言的权限。** 
- **LinkDemand： 调用方的拒绝具有 LinkDemand 与断言权限没有影响。**
- **LinkDemand： 调用方的拒绝不起作用，受 LinkDemand 保护的代码。**
- **LinkDemand： 此拒绝不起作用，受 LinkDemand 保护的代码。**
+ **需求：调用方的拒绝不起按需使用断言的权限。** 
+ **LinkDemand:调用方的拒绝具有 LinkDemand 与断言权限没有影响。** 
+ **LinkDemand:调用方的拒绝不起使用受 LinkDemand 保护的代码。** 
+ **LinkDemand:此拒绝不起使用受 LinkDemand 保护的代码。**
 ## <a name="see-also"></a>请参阅
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [安全编码准则](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[重写安全检查](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)[使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
-
-
-
+ [安全编码准则](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[重写安全检查](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28)[使用 PermitOnly 方法](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

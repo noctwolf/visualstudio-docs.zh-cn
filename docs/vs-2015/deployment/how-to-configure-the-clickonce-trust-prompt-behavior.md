@@ -1,14 +1,9 @@
 ---
-title: 如何： 配置 ClickOnce 信任提示行为 |Microsoft Docs
-ms.custom: ''
+title: 如何：配置 ClickOnce 信任提示行为 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f8fdb17bc724cc9cbf7385451a773a68ecf3df4e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235659"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "59000193"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ ms.locfileid: "49235659"
   
  下表显示了可以应用于每个五个区域 （Internet、 UntrustedSites、 MyComputer、 LocalIntranet 和 TrustedSites） 的配置选项。  
   
-|选项|注册表设置值|描述|  
+|Option|注册表设置值|描述|  
 |------------|----------------------------|-----------------|  
 |启用信任提示。|`Enabled`|ClickOnce 信任提示，显示，以便最终用户可以授予对 ClickOnce 应用程序的信任。|  
 |限制信任提示。|`AuthenticodeRequired`|如果 ClickOnce 应用程序使用标识的发布服务器的证书进行签名，则仅显示 ClickOnce 信任提示。|  
@@ -63,19 +58,19 @@ ms.locfileid: "49235659"
   
 1.  打开注册表编辑器：  
   
-    1.  单击**启动**，然后单击**运行**。  
+    1.  单击“开始”，然后单击“运行”。  
   
-    2.  在中**开放**框中，键入`regedit32`，然后单击**确定**。  
+    2.  在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
 2.  找到以下注册表项：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果不存在该键，则创建它。  
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -122,19 +117,19 @@ ms.locfileid: "49235659"
   
 1.  打开注册表编辑器：  
   
-    1.  单击**启动**，然后单击**运行**。  
+    1.  单击“开始”，然后单击“运行”。  
   
-    2.  在中**开放**框中，键入`regedit`，然后单击**确定**。  
+    2.  在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
 2.  找到以下注册表项：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果不存在该键，则创建它。  
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -179,19 +174,19 @@ ms.locfileid: "49235659"
   
 1.  打开注册表编辑器：  
   
-    1.  单击**启动**，然后单击**运行**。  
+    1.  单击“开始”，然后单击“运行”。  
   
-    2.  在中**开放**框中，键入`regedit`，然后单击**确定**。  
+    2.  在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
 2.  找到以下注册表项：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果不存在该键，则创建它。  
   
 3.  添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -233,14 +228,11 @@ ms.locfileid: "49235659"
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
- [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
+ [ClickOnce 和验证码](../deployment/clickonce-and-authenticode.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
  [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
  [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何：为 ClickOnce 应用程序向客户端计算机添加一个受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [如何：调试具有受限权限的 ClickOnce 应用程序](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：为 ClickOnce 应用程序添加到客户端计算机的受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

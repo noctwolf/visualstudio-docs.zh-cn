@@ -1,12 +1,9 @@
 ---
 title: 向层关系图添加命令和笔势 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom commands
 - layer diagrams, adding custom gestures
@@ -14,13 +11,13 @@ ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ae57d950b20fc6e342056b8c89738fa895c48c28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733377"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937019"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>向层关系图添加命令和笔势
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -271,6 +268,3 @@ namespace MyLayerExtensions // change to your preference
  [导航和更新程序代码中的层模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   
  [向层关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [定义和安装建模扩展](../modeling/define-and-install-a-modeling-extension.md)
-
-
-

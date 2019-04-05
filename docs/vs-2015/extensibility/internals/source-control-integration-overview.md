@@ -1,26 +1,21 @@
 ---
 title: 源控件集成概述 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 808d7538e8b30e346464cdbeff3b80ae4d387612
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761517"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936652"
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ ms.locfileid: "51761517"
   
 1. 创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
   
-2. 相应的注册表项，从而注册该 DLL (中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
+2. 相应的注册表项，从而注册该 DLL (中所述[如何：安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
   
 3. 创建一个帮助程序 UI 和显示当出现提示时源代码管理适配器包 （处理通过源代码管理插件的源代码管理功能的 Visual Studio 组件）  
   
@@ -85,4 +80,3 @@ ms.locfileid: "51761517"
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [源代码管理中的新增功能](../../extensibility/internals/what-s-new-in-source-control.md)
-

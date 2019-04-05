@@ -1,12 +1,9 @@
 ---
 title: UML 序列图描述控制流片段与 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.sequencediagram.combinedfragment.interactionoperand
 - vs.teamarch.sequencediagram.combinedfragment
@@ -19,13 +16,13 @@ ms.assetid: efcc0949-be7e-4cf4-99ef-47c36b3803ae
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4ab4c65e554e9eef75a1761719ce19f3312e07ce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727652"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934862"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>使用 UML 序列图中的片段描述控制流
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ ms.locfileid: "51727652"
  组合片段包括一个或多个 *交互操作数*，并且其中每个都包含了一个或多个消息、交互使用或组合片段。  
   
 > [!NOTE]
->  本主题介绍序列图中的片段。 有关如何读取 UML 序列图的详细信息，请参阅[UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)。 有关如何绘制 UML 序列图的详细信息，请参阅 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)。  
+>  本主题介绍序列图中的片段。 有关如何读取 UML 序列图的详细信息，请参阅[UML 序列图：参考](../modeling/uml-sequence-diagrams-reference.md)。 有关如何绘制 UML 序列图的详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  ![组合片段中的使用两个交互操作数](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -112,13 +109,13 @@ ms.locfileid: "51727652"
   
 |片段类型|描述|  
 |-------------------|-----------------|  
-|**选择**|可选。 包含一个可能或可能不会出现的序列。 你可以在临界中指定在其中出现的条件。|  
+|**Opt**|可选。 包含一个可能或可能不会出现的序列。 你可以在临界中指定在其中出现的条件。|  
 |**Alt**|包含片段列表，该列表包含了消息的备选序列。 在任何情况下，都只出现一个序列。<br /><br /> 你可以将临界放在每个片段中以指示其可以运行的条件。 如果其他任何临界不为 true，则 **else** 的临界将指示应运行的片段。 如果所有临界都为 false，并且没有任何 **else**，则不执行任何片段。|  
 |**Loop**|片段会重复几次。 你可以在临界中指示在其中应重复的条件。<br /><br /> 循环组合片段具有“Min”  和“Max” 属性，这表示片段可以重复的次数最小值和最大值。 默认情况下没有限制。|  
 |**中断**|如果执行此片段，则将放弃序列的其余部分。 你可以使用临界来指示在其中发生中断的条件。|  
 |**Par**|并行。 片段中的事件可能交错。|  
-|**关键**|在 Par 或 Seq 片段中使用。 指示此片段中的消息不得与其他消息交错。|  
-|**seq**|有两个或多个操作数片段。 包含相同生命线的消息必须以片段的顺序出现。 如果不包含相同生命线，来自不同片段的消息可能会并行交错。|  
+|**Critical**|在 Par 或 Seq 片段中使用。 指示此片段中的消息不得与其他消息交错。|  
+|**Seq**|有两个或多个操作数片段。 包含相同生命线的消息必须以片段的顺序出现。 如果不包含相同生命线，来自不同片段的消息可能会并行交错。|  
 |**Strict**|有两个或多个操作数片段。 片段必须以指定的顺序出现。|  
   
 ### <a name="fragments-about-how-to-interpret-the-sequence"></a>关于如何解释序列的片段  
@@ -130,13 +127,10 @@ ms.locfileid: "51727652"
 |-------------------|-----------------|  
 |**请考虑**|指定此片段描述的消息列表。 其他消息可在正在运行的系统中出现，但此描述的目的意义不大。<br /><br /> 键入“消息”  属性中的列表。|  
 |**忽略**|此片段未描述的消息列表。 它们可在正在运行的系统中出现，但此描述的目的意义不大。<br /><br /> 键入“消息”  属性中的列表。|  
-|Assert|操作数片段指定唯一有效的序列。 通常用于“考虑”或“忽略”片段。|  
+|**Assert**|操作数片段指定唯一有效的序列。 通常用于“考虑”或“忽略”片段。|  
 |**neg**|不可能在此片段中出现的序列。 通常用于“考虑”或“忽略”片段。|  
   
 ## <a name="see-also"></a>请参阅  
- [UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)   
- [UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)   
+ [UML 序列关系图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)   
+ [UML 序列关系图：引用](../modeling/uml-sequence-diagrams-reference.md)   
  [编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)
-
-
-

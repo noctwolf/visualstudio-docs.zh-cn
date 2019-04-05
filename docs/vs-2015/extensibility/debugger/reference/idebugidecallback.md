@@ -1,26 +1,21 @@
 ---
-title: IDebugIDECallback |Microsoft Docs
-ms.custom: ''
+title: IDebugIDECallback | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback interface
 ms.assetid: 8d31adc0-1c44-4658-8d4f-f4b73e35f4a6
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd4d66d87a340ca7ae41a06194b9eb95f67e9d55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aa25620cdb68b27616e3014644eb25ed1104f837
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736619"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932731"
 ---
 # <a name="idebugidecallback"></a>IDebugIDECallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,9 +45,8 @@ IDebugIDECallback : IUnknown
 |[DisplayMessage](../../../extensibility/debugger/reference/idebugidecallback-displaymessage.md)|将指定的消息字符串发送到调试器的输出窗口。|  
   
 ## <a name="requirements"></a>要求  
- 标头： Ee.h  
+ 标头：Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
-
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

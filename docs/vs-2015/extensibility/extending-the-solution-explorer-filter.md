@@ -1,27 +1,22 @@
 ---
 title: 扩展的解决方案资源管理器筛选器 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0d218744a4fcfcb498054105e48019bf2b0ce66b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750191"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936550"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,4 +195,3 @@ ms.locfileid: "51750191"
 3.  查找在解决方案资源管理器工具栏添加的按钮。 它应该是左侧起的第四个按钮。  
   
 4.  当单击按钮时，应 out，筛选出所有文件，您应看到"所有项已从都都筛选视图。" 在解决方案资源管理器。
-

@@ -1,14 +1,9 @@
 ---
 title: 编辑并继续在 Visual Basic 中的不支持的编辑 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,25 +16,25 @@ ms.assetid: 9b8fdc41-a193-49ad-ad72-dfcadd46f4b3
 caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc6e7a5d1d72464849bff20be066ea70e8264623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5b22f4cdc9fa4bf3816b1b5644eee34279e20da1
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787895"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58938007"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic“编辑并继续”中不支持的编辑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-利用“编辑并继续”，你可以在中断模式下停止程序执行，对执行代码进行更改，以及继续执行包含新更改的程序。 通常情况下，影响类的公共结构的声明性代码编辑是禁止的，但对类内部的方法、属性体或私有声明的很多编辑是允许的。  
+利用“编辑并继续”，您可以在中断模式下停止程序执行，对执行代码进行更改，以及继续执行包含新更改的程序。 通常情况下，影响类的公共结构的声明性代码编辑是禁止的，但对类内部的方法、属性体或私有声明的很多编辑是允许的。  
   
  如果需要进行不受支持的更改，则必须停止调试，执行更改，然后启动新的调试会话。  
   
 ###  <a name="BKMK_MethodandPropertyBodyEdits"></a> 方法和属性体编辑  
- **不受支持的更改对静态局部变量**： 添加或更新本地变量，或删除静态局部变量，如果这会导致编译错误。  
+ **不受支持的更改对静态局部变量**:添加或更新本地变量，或如果该删除静态局部变量将导致编译错误。  
   
- **不支持对泛型的更改**： 不支持对泛型方法本身或泛型方法体的更改。 可以添加、删除或更改泛型类型的实例化或对现有泛型方法的调用。  
+ **不支持对泛型的更改**:对泛型方法本身和泛型方法体的更改不受支持。 可以添加、删除或更改泛型类型的实例化或对现有泛型方法的调用。  
   
  **其他不受支持的更改**  
   
@@ -223,8 +218,5 @@ ms.locfileid: "51787895"
 -   更改字段的类型。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 应用编辑在中断模式下使用编辑并继续](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
+ [如何：应用编辑在中断模式下使用编辑并继续](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)   
  [编辑并继续 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

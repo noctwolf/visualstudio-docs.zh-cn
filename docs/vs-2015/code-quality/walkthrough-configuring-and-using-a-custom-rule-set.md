@@ -1,14 +1,9 @@
 ---
-title: 演练： 配置和使用自定义规则集 |Microsoft Docs
-ms.custom: ''
+title: 演练：配置和使用自定义规则集 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
@@ -17,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5976ee0c0fbfc4befe97f2ab25c46744a8267134
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49906036"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934639"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>演练：配置和使用自定义规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +72,7 @@ ms.locfileid: "49906036"
    > [!TIP]
    >  在实际情况下，为了优先处理你想要针对的代码分析的问题的好办法是首先**最少量建议规则**规则集和更正所需的问题，以及如何以增量方式将要查找和更正的其他问题的更多的规则集。  
   
-   接下来，会将一些代码添加到类库，用于演示 CA1704 冲突"的标识符应正确拼写"代码分析规则。 有关详细信息，请参阅[CA1704： 标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
+   接下来，会将一些代码添加到类库，用于演示 CA1704 冲突"的标识符应正确拼写"代码分析规则。 有关详细信息，请参阅[CA1704:标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
   
 #### <a name="add-your-own-code"></a>添加你自己的代码  
   
@@ -115,7 +110,7 @@ ms.locfileid: "49906036"
   
 2. 在错误列表窗口中，单击**警告**，然后单击**说明**列标题进行排序警告进行排序。  
   
-    在实际应用程序中，你修复值得在此情况下，修复任何规则冲突或 （可选） 关闭或取消一条规则，如果你确定它值得修复不是。 有关详细信息，请参阅[使用 SuppressMessage 特性通过禁止显示警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
+    在实际应用程序中，你修复值得在此情况下，修复任何规则冲突或 （可选） 关闭或取消一条规则，如果你确定它值得修复不是。 有关详细信息，请参阅[使用 SuppressMessage 特性禁止显示警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
   
 3. 请注意 CA1704 警告。 此规则的这些冲突指示应"考虑的一个更有意义的名称的参数。" 无法在代码中更正此问题或下一个过程中所述，可以禁用该规则。  
   
@@ -158,8 +153,5 @@ ms.locfileid: "49906036"
 2.  在错误列表窗口中，请注意，当您单击**警告**，不会再看到"标识符应正确拼写"规则冲突的 CA1704 警告。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+ [如何：配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [代码分析规则集参考](../code-quality/code-analysis-rule-set-reference.md)
-
-
-

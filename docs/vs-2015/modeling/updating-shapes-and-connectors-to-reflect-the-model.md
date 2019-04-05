@@ -1,23 +1,20 @@
 ---
 title: 更新形状和连接线以反映模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937348"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接线以反映模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>设置形状映射的属性以控制修饰器的可见性  
  您可以控制修饰器的可见性，而无需编写程序代码中，通过在 DSL 定义中配置形状和域类之间的映射。 有关详细信息，请参阅下列主题：  
   
--   [如何：控制修饰器的可见性 - 重定向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+-   [如何：控制修饰器的可见性-重定向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
 -   [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)  
   
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` 应调用一次为每个你想要注册的域属性。 已调用后，将调用对指定的属性的任何更改`OnAssociatedPropertyChanged()`中存在该属性的模型元素的所有形状。  
   
  不需要调用`AssociateValueWith()`每个实例。 尽管 InitializeResources 是实例方法，但它是只调用一次为每个形状类。
-
-
-

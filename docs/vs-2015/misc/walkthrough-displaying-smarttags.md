@@ -1,28 +1,23 @@
 ---
-title: 演练： 显示智能标记 |Microsoft Docs
-ms.custom: ''
+title: 演练：显示智能标记 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - smart tags
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
-manager: douge
-ms.openlocfilehash: 459530726628819587a3c228910baa3b902ae865
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e918c8e83909bb5a04d27f72cb07c7135b00daa9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939093"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58935028"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>演练：显示智能标记
-为支持灯泡已弃用智能标记。 请参阅 [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
+为支持灯泡已弃用智能标记。 请参阅[演练：显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
   
  智能标记是文本上的标记，展开即可显示一组操作。 例如，在 Visual Basic 或 Visual C# 项目中，重命名变量名称等标识符时，单词下方将出现一条红线。 将指针移到下划线上时，指针旁将出现一个按钮。 如果单击该按钮，则会显示建议的操作，例如“将 IsRead 重命名为 IsReady” 。 如果单击该操作，则项目中对 **IsRead** 的所有引用均将重命名为 **IsReady**。  
   
@@ -31,7 +26,7 @@ ms.locfileid: "49939093"
 > [!NOTE]
 >  可以采用类似的方式实现其他类型的标记。  
   
- 下面的演练演示如何创建出现在当前单词上并且具有以下两个建议操作的智能标记：“转换为大写”  和“转换为小写” 。  
+ 下面的演练演示如何创建一个智能标记，将显示在当前单词上并且具有两个建议的操作：**将转换为大写**并**转换为小写**。  
   
 ## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
@@ -90,7 +85,7 @@ ms.locfileid: "49939093"
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  实现 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>，以便为当前的单词创建标记。 （此方法还会调用私有方法 `GetSmartTagActions`，此方法将在后面介绍。）  
+8.  实现 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>，以便为当前的单词创建标记。 （此方法还会调用私有方法 `GetSmartTagActions` ，此方法将在后面介绍。）  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -138,7 +133,7 @@ ms.locfileid: "49939093"
   
 #### <a name="to-implement-smart-tag-actions"></a>实现智能标记操作  
   
-1. 创建两个类，第一个名为 `UpperCaseSmartTagAction`，第二个名为 `LowerCaseSmartTagAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>。  
+1. 创建两个类，第一个名为 `UpperCaseSmartTagAction` ，第二个名为 `LowerCaseSmartTagAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction>。  
   
     [!code-csharp[VSSDKSmartTagTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#15)]
     [!code-vb[VSSDKSmartTagTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#15)]  
@@ -185,7 +180,7 @@ ms.locfileid: "49939093"
   
      指针旁将出现一个按钮。  
   
-5.  单击该按钮时，将显示以下两个建议的操作：“转换为大写”  和“转换为小写” 。 如果单击第一个操作，则当前单词中的所有文本都将转换为大写。 如果单击第二个操作，则所有文本都将转换为小写。  
+5.  当单击按钮时，应显示两个建议的操作：**将转换为大写**并**转换为小写**。 如果单击第一个操作，则当前单词中的所有文本都将转换为大写。 如果单击第二个操作，则所有文本都将转换为小写。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

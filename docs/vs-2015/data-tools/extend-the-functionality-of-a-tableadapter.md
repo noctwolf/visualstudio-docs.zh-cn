@@ -1,12 +1,9 @@
 ---
 title: 扩展 TableAdapter 的功能 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +17,13 @@ ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: bbba71e6c1e636abe160036f10c1de1d11004a65
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932420"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>扩展 TableAdapter 的功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +36,9 @@ ms.locfileid: "50219739"
  分部类允许划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或[分部 （类型）](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
   
 ## <a name="locate-tableadapters-in-code"></a>在代码中查找 Tableadapter  
- Tableadapter 的设计时**数据集设计器**，生成的 TableAdapter 类不是嵌套的类的<xref:System.Data.DataSet>。 Tableadapter 位于基于 TableAdapter 的关联数据集的名称的命名空间中。 例如，如果你的应用程序包含名为的数据集`HRDataSet`，Tableadapter 将位于`HRDataSetTableAdapters`命名空间。 (命名约定采用这种模式： *DatasetName* + `TableAdapters`)。  
+ Tableadapter 的设计时**数据集设计器**，生成的 TableAdapter 类不是嵌套的类的<xref:System.Data.DataSet>。 TableAdapter 位于基于 TableAdapter 关联数据集的名称的命名空间中。 例如，如果你的应用程序包含名为的数据集`HRDataSet`，Tableadapter 将位于`HRDataSetTableAdapters`命名空间。 (命名约定采用这种模式：*DatasetName* + `TableAdapters`)。  
   
- 下面的示例假定名为 TableAdapter`CustomersTableAdapter`在与项目`NorthwindDataSet`。  
+ 下面的示例假定名为 `CustomersTableAdapter` 的 TableAdapter 与 `NorthwindDataSet` 一起位于项目中。  
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要为 TableAdapter 创建分部类  
   
@@ -58,4 +55,3 @@ ms.locfileid: "50219739"
   
 ## <a name="see-also"></a>请参阅  
  [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
-

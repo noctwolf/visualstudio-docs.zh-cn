@@ -1,28 +1,23 @@
 ---
-title: 如何： 实现错误标记 |Microsoft Docs
-ms.custom: ''
+title: 如何：实现错误标记 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e4dd15f4cbb36ef1f81d3b7ca345a6a06bdaff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934533"
 ---
-# <a name="how-to-implement-error-markers"></a>如何： 实现错误标记
+# <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义实现。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记略有标记语言分析器认为不正确并波浪或波浪红线的文本。 此指标帮助程序员通过直观地显示不正确的代码。  
@@ -33,11 +28,11 @@ ms.locfileid: "51736183"
   
 1. 选择要在其下放置的红色的波浪下划线的文本。  
   
-2. 创建类型的标记`MARKER_CODESENSE_ERROR`。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
+2. 创建类型的标记`MARKER_CODESENSE_ERROR`。 有关详细信息，请参阅[如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
   
 3. 此后，传入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口指针。  
   
-   此过程还允许您通过给定标记创建的提示文本或特殊的上下文菜单。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
+   此过程还允许您通过给定标记创建的提示文本或特殊的上下文菜单。 有关详细信息，请参阅[如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
   
    错误标记才能显示以下对象是必需的。  
   
@@ -62,7 +57,6 @@ ms.locfileid: "51736183"
   
 ## <a name="see-also"></a>请参阅  
  [旧版 API 中使用文本标记](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
- [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
+ [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
  [如何：使用文本标记](../extensibility/how-to-use-text-markers.md)
-

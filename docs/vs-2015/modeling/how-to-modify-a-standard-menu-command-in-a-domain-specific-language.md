@@ -1,12 +1,9 @@
 ---
-title: 如何： 修改标准的菜单命令在特定于域的语言 |Microsoft Docs
-ms.custom: ''
+title: 如何：修改域特定语言中的标准菜单命令 |Microsoft Docs
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
@@ -14,13 +11,13 @@ ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837552"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58933989"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +35,7 @@ ms.locfileid: "49837552"
    本主题解释了此过程。  
   
 > [!NOTE]
->  如果你想要创建自己的菜单命令，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+>  如果你想要创建自己的菜单命令，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
 ##  <a name="what"></a> 您可以修改哪些命令？  
   
@@ -83,7 +80,7 @@ ms.locfileid: "49837552"
      **请注意**如果类文件模板用于创建新文件，则必须更正的命名空间和类名。  
   
 ##  <a name="override"></a> 重写命令方法  
- 大多数命令都具有两个关联的方法： 具有名称的方法让`ProcessOnStatus`...确定命令是否应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数时调用。 你可能想要重写其中一个方法，或两者都进行重写。  
+ 大多数命令都具有两个关联的方法：具有名称的方法让`ProcessOnStatus`...确定命令是否应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数时调用。 你可能想要重写其中一个方法，或两者都进行重写。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>更改命令何时显示在菜单上  
  重写 ProcessOnStatus...方法。 此方法应设置其参数 MenuCommand 的“可见”和“已启用”属性。 通常，命令查看 this.CurrentSelection 来确定命令是否应用到选定的元素，还可能查看其属性来确定命令是否可以应用到其当前状态中。  
@@ -156,13 +153,10 @@ protected override void ProcessOnMenuDeleteCommand()
 ## <a name="see-also"></a>请参阅  
  <xref:System.ComponentModel.Design.MenuCommand>   
  [编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [演练： 从所选链接中获取信息](../misc/walkthrough-getting-information-from-a-selected-link.md)   
+ [如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [演练：从所选链接中获取信息](../misc/walkthrough-getting-information-from-a-selected-link.md)   
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)   
  [VMSDK – 电路图示例。广泛的 DSL 自定义](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [示例代码： 电路图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [示例代码：线路关系图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

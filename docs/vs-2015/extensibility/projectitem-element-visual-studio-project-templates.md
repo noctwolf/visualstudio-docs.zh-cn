@@ -1,14 +1,9 @@
 ---
 title: ProjectItem 元素 （Visual Studio 项目模板） |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bca26cba66169758aa882535c07846cfa451d172
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737065"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937557"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 元素（Visual Studio 项目模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +28,10 @@ ms.locfileid: "51737065"
 > [!NOTE]
 >  `ProjectItem`元素接受不同的属性，具体取决于该模板是针对某个项目或项。 本主题介绍了`ProjectItem`项目模板的元素。 有关的说明`ProjectItem`元素的项模板，请参阅[ProjectItem 元素 （Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)。  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
- \<ProjectItem >  
+ \<ProjectItem>  
   
 ## <a name="syntax"></a>语法  
   
@@ -149,4 +144,3 @@ ms.locfileid: "51737065"
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [ProjectItem 元素（Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

@@ -1,14 +1,9 @@
 ---
 title: 异常后继续执行 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,13 +28,13 @@ ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730032"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934351"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,12 +54,7 @@ ms.locfileid: "51730032"
 -   可以单击**继续**不尝试解决该问题的情况下继续执行。 **异常**对话框再次出现。  
   
 ## <a name="mixed-code"></a>混合代码  
- 如果在调试本机和托管混合的代码时遇到未经处理的异常，则操作系统约束将阻止调用堆栈展开。 如果尝试使用快捷菜单来展开调用堆栈，则会出现一个错误消息，告诉你在混合代码调试期间，调试器无法在异常未得到处理的情况下展开调用堆栈。  
+ 如果在调试由本机和托管代码混合而成的代码时遇到未经处理的异常，操作系统的约束会阻止调用堆栈的展开。 如果尝试使用快捷菜单来展开调用堆栈，则会出现一个错误消息，告诉你在混合代码的调试期间，调试器无法在异常未得到处理的情况下展开调用堆栈。  
   
 ## <a name="see-also"></a>请参阅  
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

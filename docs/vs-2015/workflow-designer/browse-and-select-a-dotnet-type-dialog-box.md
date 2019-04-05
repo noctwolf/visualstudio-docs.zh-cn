@@ -1,11 +1,8 @@
 ---
 title: 浏览并选择.NET 类型对话框 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - TypeBrowser.UI
@@ -14,13 +11,13 @@ ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192525"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937020"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 在中**属性**窗口、 对话框或如变量设计器中，当您选择的设计器**浏览类型...** 从数据类型的列表，是**浏览并选择.NET 类型**对话框 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。  

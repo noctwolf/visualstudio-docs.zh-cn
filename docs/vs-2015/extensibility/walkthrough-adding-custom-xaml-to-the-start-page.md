@@ -1,27 +1,22 @@
 ---
-title: 演练： 将自定义 XAML 添加到开始页 |Microsoft Docs
-ms.custom: ''
+title: 演练：将自定义 XAML 添加到开始页 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - custom start page
 - xaml start page
 ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 58c7441a4f910a1da35bc464e12ddba3bd5583bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 193cea35fb7aa852b996aead6a26fd4e26b7b331
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802520"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000720"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>演练：将自定义 XAML 添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,9 +88,8 @@ ms.locfileid: "51802520"
 1.  在中**工具 / 选项 / 环境**，选择**启动**。 上**自定义起始页**列表中，选择.xaml 文件，然后单击**确定**。  
   
 ## <a name="next-steps"></a>后续步骤  
- Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡将显示一个选项卡。可以创建使用具有其他功能的自定义起始页*代码隐藏*模型中添加自定义.dll，如中所示[添加到启动页的用户控件](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，或到另一个网站或网络共享。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+ Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡将显示一个选项卡。可以创建使用具有其他功能的自定义起始页*代码隐藏*模型中添加自定义.dll，如中所示[添加到启动页的用户控件](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio Marketplace](https://marketplace.visualstudio.com/)网站，或到另一个网站或网络共享。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   
- [WPF 容器控件](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
-
+ [WPF 容器控件](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

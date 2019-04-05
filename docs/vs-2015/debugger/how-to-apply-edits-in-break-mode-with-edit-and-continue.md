@@ -1,14 +1,9 @@
 ---
-title: 如何： 应用编辑在中断模式下使用编辑并继续 |Microsoft Docs
-ms.custom: ''
+title: 如何：应用编辑在中断模式下使用编辑并继续 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.variables.failededit
 dev_langs:
@@ -28,15 +23,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5f6024d0c00e492110d7d34172cf225e4712f213
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bd247cd50566130504110bd37c4b87f9e4783ae7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936672"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：使用“编辑并继续”在中断模式下应用编辑
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：应用编辑在中断模式下使用编辑并继续
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。  
@@ -65,11 +60,11 @@ ms.locfileid: "51807489"
   
 1.  执行下列操作之一进入中断模式：  
   
-    -   在代码中设置断点，然后选择**开始调试**从**调试**菜单，然后等待应用程序命中断点。  
+    -   在代码中设置断点，从“调试”菜单选择“开始调试”，然后等待应用程序命中断点。  
   
          - 或 -  
   
-    -   开始调试，然后依次**全部中断**从**调试**菜单。  
+    -   开始调试，然后从“调试”菜单中选择“全部中断”。  
   
          - 或 -  
   
@@ -82,13 +77,10 @@ ms.locfileid: "51807489"
     > [!NOTE]
     >  如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。  
   
-3.  上**调试**菜单上，单击**继续**继续执行。  
+3.  在 “调试” 菜单上，单击 “继续” 继续执行。  
   
-     在你所做的编辑已并入项目并已应用的情况下，你的代码继续执行。  
+     现在将继续执行你的代码，并且已应用的编辑将并入项目中。  
   
 ## <a name="see-also"></a>请参阅  
  [编辑并继续在 Visual Basic 中的不支持的编辑](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)   
  [编辑并继续 (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
-
-
-

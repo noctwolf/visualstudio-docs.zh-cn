@@ -1,14 +1,9 @@
 ---
-title: 如何： 检索在联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft Docs
-ms.custom: ''
+title: 如何：检索在联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +15,13 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278923"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937251"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +42,7 @@ ms.locfileid: "49278923"
 > [!NOTE]
 >  决定启用此功能之前，请参阅本主题后面的“安全性”一节。  
   
- 有关如何创建[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署使用 Mage.exe 或 MageUI.exe 中，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 有关如何创建[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署使用 Mage.exe 或 MageUI.exe 中，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 > [!NOTE]
 >  从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。  
@@ -88,6 +83,3 @@ ms.locfileid: "49278923"
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
-
-
-

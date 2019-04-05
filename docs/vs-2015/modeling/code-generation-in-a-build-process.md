@@ -1,12 +1,9 @@
 ---
 title: 生成过程中的代码生成 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
@@ -14,13 +11,13 @@ ms.assetid: 4da43429-2a11-4d7e-b2e0-9e4af7033b5a
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7cadbf9d4d99fa9deaf4d71545f43d2bf49a3f3
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281805"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000261"
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Visual Studio 解决方案生成过程的一部分，可以调用文本转换。
 
 ##  <a name="buildserver"></a> 配置计算机
 
-若要启用在开发计算机上的生成任务，请安装[Visual Studio 的建模 SDK](http://www.microsoft.com/download/details.aspx?id=40754)。
+若要启用在开发计算机上的生成任务，请安装[Visual Studio 的建模 SDK](https://www.microsoft.com/download/details.aspx?id=48148)。
 
 如果[您的生成服务器](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9)运行在其未安装 Visual Studio，在计算机上的将以下文件复制到生成计算机，从开发计算机。 用最新的版本号替换‘*’。
 
@@ -288,4 +285,4 @@ Visual Studio 宏（如 $(SolutionDir）在 MSBuild 中不起作用。 你可以
 
 - [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)
 - [Visual Studio 可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)
-- [Oleg Sych： 了解 T4:MSBuild 集成](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+- [Oleg Sych:了解 T4:MSBuild 集成](https://github.com/olegsych/T4Toolbox)

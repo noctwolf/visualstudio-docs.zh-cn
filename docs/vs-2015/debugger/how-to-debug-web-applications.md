@@ -1,14 +1,9 @@
 ---
-title: 如何： 调试 Web 应用程序 |Microsoft Docs
-ms.custom: ''
+title: 如何：调试 Web 应用程序 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d2a5110a6801aafb6eaf98cb4fb4164b045b2408
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793628"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937908"
 ---
 # <a name="how-to-debug-web-applications"></a>如何：调试 Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "51793628"
   
 -   一定要把你的应用程序配置文件 (Web.config) 设为调试模式。 调试模式会导致 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 为动态生成的文件生成符号，并允许将调试器附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序。 如果项目是基于 Web 项目模板创建的，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会在调试开始时自动完成这一设置。  
   
--   有关详细信息，请参阅[如何： 为 ASP.NET 应用程序启用调试](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
+-   有关详细信息，请参阅[如何：为 ASP.NET 应用程序启用调试](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
   
 ### <a name="to-debug-a-web-application-during-development"></a>在开发过程中调试 Web 应用程序  
   
@@ -62,6 +57,3 @@ ms.locfileid: "51793628"
  [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md) （调试 Web 应用程序和脚本）  
  [调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [如何：为 ASP.NET 应用程序启用调试](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-
-
-

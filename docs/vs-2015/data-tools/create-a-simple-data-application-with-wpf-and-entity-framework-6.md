@@ -1,25 +1,22 @@
 ---
 title: 通过 WPF 和 Entity Framework 6 创建简单的数据应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922193"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000648"
 ---
-# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>通过 WPF 和 Entity Framework 6 创建简单的数据应用程序
+# <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
   
@@ -30,7 +27,7 @@ ms.locfileid: "49922193"
 ## <a name="install-and-connect-to-northwind"></a>安装并连接到 Northwind  
  此示例使用 SQL Server Express LocalDB 和 Northwind 示例数据库。 它应适用于其他 SQL 数据库产品同样如果该产品的 ADO.NET 数据提供程序支持实体框架。  
   
-1.  如果你尚未安装 SQL Server 2014 LocalDB Express 32 位从[SQL Server 版本的下载页](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)。  
+1.  如果你尚未安装 SQL Server 2014 LocalDB Express 32 位从[SQL Server 版本的下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)。  
   
 2.  按照此处的说明安装 Northwind 示例数据库：[安装 SQL Server 示例数据库](../data-tools/install-sql-server-sample-databases.md)。  
   
@@ -393,7 +390,7 @@ ms.locfileid: "49922193"
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>添加按钮，以导航、 添加、 更新和删除  
  在 Windows 窗体应用程序中的数据库中的行中导航并执行基本的 CRUD 操作获取具有按钮的 BindingNavigator 对象。 WPF 不提供 BindingNavigator，但它们是轻松地进行。 我们将使用按钮在页网格中的底部行中水平 StackPanel 那样做，我们会将这些按钮与绑定到方法后面的代码中的命令相关联。  
   
- 有个 4 命令逻辑部分: （1） 命令、 （2） 绑定、 （3) 按钮和隐藏代码中 （4） 的命令处理程序。  
+ 有个 4 命令逻辑部分：（1） 命令、 （2） 绑定、 （3) 按钮和隐藏代码中 （4） 的命令处理程序。  
   
 #### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中添加命令、 绑定和按钮  
   
@@ -709,4 +706,3 @@ ms.locfileid: "49922193"
   
 ## <a name="see-also"></a>请参阅  
  [适用于.NET 的 visual Studio data tools](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework 文档](https://msdn.microsoft.com/data/ee712907.aspx)
-

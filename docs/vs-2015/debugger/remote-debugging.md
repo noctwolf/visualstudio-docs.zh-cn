@@ -1,13 +1,8 @@
 ---
 title: 远程调试 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,13 +18,13 @@ ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799270"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000681"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ ms.locfileid: "51799270"
   
 1.  在设备或服务器您想要调试的计算机 （而不运行 Visual Studio 的计算机），获取远程工具的正确版本。
 
-    |版本|链接|说明|
+    |Version|链接|说明|
     |-|-|-|
     |Visual Studio 2015 Update 3|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或只是可以使用有效的 Visual Studio 订阅登录。 如有必要然后重新打开该链接。 请务必下载匹配您设备的操作系统 (x 86、 x64 或 ARM 版本） 的版本|
     |Visual Studio 2015 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，请加入免费的 Visual Studio Dev Essentials 组，或只是可以使用有效的 Visual Studio 订阅登录。 如有必要然后重新打开该链接。|
@@ -158,7 +153,7 @@ ms.locfileid: "51799270"
   
  如果你想要配置远程调试器作为服务，请按照下列步骤。  
   
-1. 找到  “远程调试器配置向导”(rdbgwiz.exe)。 （这是独立于远程调试器的应用程序。）仅当安装远程工具时它才可用。 它不与 Visual Studio 一起安装。  
+1. 找到  “远程调试器配置向导”(rdbgwiz.exe)。 （这是独立于远程调试器的应用程序。）仅在你安装远程工具后，它才可用。 它不与 Visual Studio 一起安装。  
   
 2. 开始运行配置向导。 当第一页出现时，单击“下一步” 。  
   
@@ -166,7 +161,7 @@ ms.locfileid: "51799270"
   
 4. 添加用户帐户的名称和密码。  
   
-    你可能需要将“作为服务登录”  的用户权限添加到此帐户。 （找到“启动”  页或窗口（或命令提示符下的类型 **secpol** ）中的  “本地安全策略”(secpol.msc)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到**属性**窗口，然后单击**确定**。)单击 **“下一步”**。  
+    你可能需要将“作为服务登录”  的用户权限添加到此帐户。 （找到“启动”  页或窗口（或命令提示符下的类型 **secpol** ）中的  “本地安全策略”(secpol.msc)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到**属性**窗口，然后单击**确定**。)单击“下一步” 。  
   
 5. 选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击 **“下一步”**。  
   
@@ -186,19 +181,19 @@ ms.locfileid: "51799270"
 ## <a name="remote-debug-a-visual-c-project"></a>远程调试 Visual C++ 项目  
  在下面的过程的名称和项目的路径是 C:\remotetemp\MyMfc，且远程计算机的名称是**MJO DL**。  
   
-1. 创建 MFC 应用程序名为**mymfc。**  
+1. 创建名为 mymfc 的 MFC 应用程序。  
   
-2. 在应用程序中容易到达的例如，在某处设置断点**MainFrm.cpp**，在开头`CMainFrame::OnCreate`。  
+2. 在应用程序中容易到达的地方设置断点，例如，在 MainFrm.cpp 中（位于 `CMainFrame::OnCreate` 的开头）。  
   
-3. 在解决方案资源管理器中右键单击项目并选择**属性**。 打开**调试**选项卡。  
+3. 在解决方案资源管理器中右键单击项目并选择**属性**。 打开“调试”选项卡。  
   
-4. 设置**要启动的调试器**到**远程 Windows 调试器**。  
+4. 将“要启动的调试器”更改为“远程 Windows 调试器”。  
   
     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
 5. 对属性进行以下更改：  
   
-   |设置|“值”|
+   |设置|值|
    |-|-|  
    |远程命令|C:\remotetemp\mymfc.exe|  
    |工作目录|C:\remotetemp|  
@@ -212,7 +207,7 @@ ms.locfileid: "51799270"
   
 6. 在解决方案资源管理器，右键单击解决方案并选择**Configuration Manager**。  
   
-7. 有关**调试**配置，请选中**部署**复选框。  
+7. 对于“调试”配置，请选中“部署”复选框。  
   
     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
@@ -227,14 +222,14 @@ ms.locfileid: "51799270"
 11. 在 Visual Studio 计算机上，你应看到在断点处已停止执行。  
   
     > [!TIP]
-    >  或者，你可以采用单独的步骤部署文件。 在中**解决方案资源管理器**右键单击**mymfc**节点，然后选择**部署**。  
+    >  或者，你可以采用单独的步骤部署文件。 在“解决方案资源管理器”中，右键单击“mymfc”节点，然后选择“部署”。  
   
-    如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 / 新建文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 / 现有项**，然后选择的文件。)。 上**属性**页上为每个文件，将**复制到输出目录**到**始终复制**。  
+    如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 / 新建文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 / 现有项**，然后选择的文件。)。 在每个文件的“属性”页中，将“复制到输出目录”设置为“始终复制”。  
   
 ## <a name="remote-debug-a-visual-c-or-visual-basic-project"></a>远程调试 Visual C# 或 Visual Basic 项目  
  调试器不能将 Visual C# 或 Visual Basic 桌面应用程序部署到远程计算机，但你仍然可以按如下所示方法远程调试它们。 以下过程假设你想要在名为的计算机上调试它**MJO DL**前, 一张图中所示。
   
-1. 创建一个名为的 WPF 项目**MyWpf**。  
+1. 创建一个名为“MyWpf”的 WPF 项目。  
   
 2. 在代码中的某个容易到达的地方设置断点。  
   
@@ -242,19 +237,19 @@ ms.locfileid: "51799270"
   
 3. 在解决方案资源管理器，右键单击该项目并选择**属性**。  
   
-4. 上**属性**页上，选择**调试**选项卡。  
+4. 在“属性”页上，选择"调试"选项卡。  
   
     ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
-5. 请确保**工作目录**文本框为空。  
+5. 请确保“工作目录”文本框为空。  
   
 6. 选择**使用远程计算机**，然后键入**MJO-DL:4020**在文本框中。 （4020 是远程调试器窗口中显示的端口号）。  
   
-7. 请确保**启用本机代码调试**未选中。  
+7. 请确保未选中“启用本机代码调试”。  
   
 8. 生成项目。  
   
-9. 是相同的路径在远程计算机上创建文件夹**调试**Visual Studio 计算机上的文件夹： **\<源路径 > \MyWPF\MyWPF\bin\Debug**。  
+9. 在远程计算机上创建一个文件夹，其路径与 Visual Studio 计算机上的调试文件夹相同：\<source path>\MyWPF\MyWPF\bin\Debug。  
   
 10. 将你刚才从 Visual Studio 计算机生成的可执行文件复制到远程计算机上新创建的文件夹。
   
@@ -279,21 +274,21 @@ ms.locfileid: "51799270"
   
 15. 在 Visual Studio 机器上，你应看到执行在断点处停止。
   
-    如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 / 新建文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 / 现有项**，然后选择的文件。)。 上**属性**页上为每个文件，将**复制到输出目录**到**始终复制**。
+    如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 / 新建文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 / 现有项**，然后选择的文件。)。 在每个文件的“属性”页中，将“复制到输出目录”设置为“始终复制”。
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试  
  你应能够使用你在 Visual Studio 计算机生成的符号调试你的代码。 使用本地符号时远程调试器的性能更佳。  如果必须使用远程符号，则需要告诉远程调试监视器以查找远程计算机上的符号。  
   
  从 Visual Studio 2013 Update 2 开始，你可以使用以下 msvsmon 命令行开关来使用用于托管代码的远程符号：`Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
- 有关详细信息，请参阅远程调试帮助 (按**F1**中的远程调试器窗口中或单击**帮助 / 用法**)。 你可以找到详细信息在[.NET 远程符号加载更改 Visual Studio 2012 和 2013年中](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
+ 有关详细信息，请参阅远程调试帮助 (按**F1**中的远程调试器窗口中或单击**帮助 / 用法**)。 有关详细信息，可以参阅 [Visual Studio 2012 和 2013 中的 .NET 远程符号加载更改](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ##  <a name="bkmk_winstoreAzure"></a> 在 Windows 应用商店和 Azure 应用上进行远程调试  
  有关使用 Windows 应用商店应用程序进行远程调试的信息，请参阅[调试和测试 Windows 应用商店应用程序从 Visual Studio 在远程设备上的](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
   
  有关在 Azure 上进行调试的信息，请参阅以下主题之一：  
   
--   [调试云服务或在 Visual Studio 中的虚拟机](http://msdn.microsoft.com/library/azure/ff683670.aspx)  
+-   [调试云服务或在 Visual Studio 中的虚拟机](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
 -   [调试 Visual Studio 中的.NET 后端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
@@ -301,10 +296,7 @@ ms.locfileid: "51799270"
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)   
- [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
+ [配置 Windows 防火墙以便进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
  [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

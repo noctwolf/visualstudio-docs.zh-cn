@@ -1,27 +1,22 @@
 ---
 title: 可用服务列表 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, Visual Studio
 - Visual Studio, services
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0363aba508ff1a00fcca34f4b0b7a857aa15fc4f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730698"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000589"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51730698"
 |服务|接口|Visual Studio|Visual Studio 2005|描述|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|是|是|使用 Vspackage 获取<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>ActiveX 控件以便于异步数据传输中的接口。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|否|是|获取用于自动化的设计时可扩展性 (DTE) 对象。<br /><br /> C/C + + ID: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|否|是|获取用于自动化的设计时可扩展性 (DTE) 对象。<br /><br /> C/C + + ID:SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|是|是|由窗体设计器以显示控件的默认事件处理程序实现。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|是|是|允许 VSPackage 来访问另一个 VSPackage 或控件的自动化接口。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|是|是|允许 VSPackage 来添加或创建一个扩展的类型库。|  
@@ -165,6 +160,5 @@ ms.locfileid: "51730698"
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService>|<xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService>|是|是|提供对与特定的元数据文件相关联的 XML 格式文档文件的访问。|  
   
 ## <a name="see-also"></a>请参阅  
- [COM 和托管的服务](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
+ [COM 和托管的服务](/java/api/overview/partnercenter/managedservices?view=partnercenter-1.8.1)   
  [使用并提供服务](../../extensibility/using-and-providing-services.md)
-
