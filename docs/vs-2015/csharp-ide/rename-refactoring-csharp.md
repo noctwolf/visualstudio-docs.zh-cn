@@ -1,14 +1,9 @@
 ---
 title: 重命名重构 (C#) |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.rename
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 268942fc-b142-4dfa-8d90-bedd548c2e4f
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: d88cf6d88f23a3a079d5f9a556c316a204c9ef27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274958"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934985"
 ---
 # <a name="rename-refactoring-c"></a>重命名重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +48,8 @@ ms.locfileid: "49274958"
 |-----------------|----------------------|  
 |字段|声明和此字段的用法更改为新的名称。|  
 |本地变量|声明和变量的用法更改为新的名称。|  
-|方法|该方法并对该方法的所有引用的名称更改为新名称。 **注意：** 时重命名的扩展方法，重命名操作会传播到方法的作用域，而不考虑扩展方法是否正在使用作为静态方法或实例方法中的所有实例。 有关详细信息，请参阅[扩展方法](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
-|命名空间|命名空间的名称更改为新的名称在声明中，所有`using`语句和完全限定的名称。 **注意：** 重命名命名空间时[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]还会更新**Default Namespace**属性上的**应用程序**页**项目设计器**. 此属性不能通过选择重置**撤消**从**编辑**菜单。 若要重置**默认 Namespace**属性值，必须修改中的属性**项目设计器**。 有关详细信息，请参阅[应用程序页](../ide/reference/application-page-project-designer-csharp.md)。|  
+|方法|该方法并对该方法的所有引用的名称更改为新名称。 **注意：** 当您重命名的扩展方法时，重命名操作将传播到方法的作用域，而不考虑扩展方法是否正在使用作为静态方法或实例方法中的所有实例。 有关详细信息，请参阅[扩展方法](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
+|命名空间|命名空间的名称更改为新的名称在声明中，所有`using`语句和完全限定的名称。 **注意：** 重命名命名空间时[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]还会更新**Default Namespace**上的属性**应用程序**页**项目设计器**。 此属性不能通过选择重置**撤消**从**编辑**菜单。 若要重置**默认 Namespace**属性值，必须修改中的属性**项目设计器**。 有关详细信息，请参阅[应用程序页](../ide/reference/application-page-project-designer-csharp.md)。|  
 |属性|声明和用法的属性更改为新的名称。|  
 |类型|所有声明和类型的所有用法更改为新名称，包括构造函数和析构函数。 为分部类型重命名操作将会传播到所有部分。|  
   

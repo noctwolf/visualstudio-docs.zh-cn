@@ -1,14 +1,9 @@
 ---
 title: 使用打开文件命令显示文件 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f1a2ca2b87cadf118c83501bbd6b6bf78af761a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 286f310765db6fff14f6b134c6107ff1c9e36215
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727286"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58937762"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>使用“打开文件”命令显示文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,11 +51,10 @@ ms.locfileid: "51727286"
   
 4.  只要 IDE 确定哪一个项目打开的文件，它将调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>在项目的方法。  
   
-5.  然后，项目已使用特定于项目的编辑器或标准编辑器打开该文件的选项。 有关详细信息，请参阅[如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)并[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
+5.  然后，项目已使用特定于项目的编辑器或标准编辑器打开该文件的选项。 有关详细信息，请参阅[如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)和[如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
   
 ## <a name="see-also"></a>请参阅  
  [通过使用命令打开显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)   
  [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)
-

@@ -1,11 +1,8 @@
 ---
 title: 使用工作流设计器开发应用程序 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - DefaultWorkflowDesigner
@@ -19,13 +16,13 @@ ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58934668"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流设计器开发应用程序
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 是可视化设计器和调试器，用于以图形化的方式构造和调试 [!INCLUDE[wf](../includes/wf-md.md)] 开发环境中承载的 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 应用程序。 它可用于通过使用模板和活动设计器来撰写复合工作流应用程序、活动库或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服务。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流，请参阅[Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。  
@@ -54,7 +51,7 @@ ms.locfileid: "49259150"
   
 ## <a name="in-this-section"></a>本节内容  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)  
- 介绍如何使用内置设计器来创建新活动和工作流项目，以及如何使用设计器提供的其他工具来处理参数、变量、表达式、导入和痕迹导航。  
+ 介绍如何使用内置设计器来创建新活动和工作流项目，以及如何使用设计器提供的其他工具来处理自变量、变量、表达式、导入和痕迹导航。  
   
  [使用活动设计器](../workflow-designer/using-the-activity-designers.md)  
  介绍系统提供的活动和模板及其设计器的类别。  
