@@ -1,12 +1,9 @@
 ---
 title: 读取 XML 数据读入数据集 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +22,13 @@ ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6eb85fcef78b4b856c47ccb4436d1314ae440136
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: 18f3c5c1e3b3c19f3cbf490aa3dd71c854abe7df
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930571"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +49,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 5.  添加代码以显示 XML 架构中的 XML 文件基于<xref:System.Windows.Forms.TextBox>控件  
   
 > [!NOTE]
->  对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-new-project"></a>创建新项目  
  在此步骤中，您可以创建包含本演练中的 Visual Basic 或 Visual C# 项目。  
@@ -172,7 +169,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
     |控件|属性|设置|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**多行**|`true`|  
-    ||**滚动条**|**垂直**|  
+    ||**ScrollBars**|**垂直**|  
     |`Button1`|**名称**|`ReadXmlButton`|  
     ||**文本**|`Read XML`|  
     |`Button2`|**名称**|`ShowSchemaButton`|  
@@ -228,9 +225,8 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
      [!code-vb[VbRaddataFillingAndExecuting#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb#3)]  
   
 ## <a name="test-the-form"></a>测试窗体  
- 现在可以测试窗体，以确保其行为符合预期。  
-  
-#### <a name="to-test-the-form"></a>若要测试窗体  
+
+现在可以测试窗体，以确保其行为符合预期。
   
 1.  选择**F5**运行该应用程序。  
   
@@ -243,15 +239,15 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
      在文本框中显示的 XML 文件的 XML 架构。  
   
 ## <a name="next-steps"></a>后续步骤  
- 本演练介绍了 XML 文件读取到数据集，以及创建基于 XML 文件的内容架构的基础知识。 下面是一些你可能会在接下来执行的任务：  
+
+本演练介绍了 XML 文件读取到数据集，以及创建基于 XML 文件的内容架构的基础知识。 下面是一些你可能会在接下来执行的任务：  
   
--   编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅 <xref:System.Data.DataSet.WriteXml%2A> 。  
+-   编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅 <xref:System.Data.DataSet.WriteXml%2A>。  
   
--   编辑数据集中的数据并将其写出到数据库。 有关详细信息，请参阅[保存数据](../data-tools/saving-data.md)。  
+-   编辑数据集中的数据并将其写出到数据库。
   
 ## <a name="see-also"></a>请参阅  
  [数据演练](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)   
  [准备应用程序以接收数据](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)
-

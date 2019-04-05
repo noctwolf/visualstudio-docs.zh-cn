@@ -1,14 +1,9 @@
 ---
 title: 代码分析签入策略的版本兼容性 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - version compatibility, code analysis check-in policy
 - check-in policies, version compatibility for code analysis
@@ -17,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1cd449446c66b2f37df9993786477734a78e10a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261477"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58930888"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>代码分析签入策略的版本兼容性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ ms.locfileid: "49261477"
 -   若要创建具有两个应用的规则设置的代码分析签入策略[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]并[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]，必须创建中的策略[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]、 进行需要的所有更改和保存策略。 如果对规则的更改仅在存在[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]，修改并保存在策略[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]。  
   
      保存中的策略后[!INCLUDE[vstsTfsOrcasShort](../includes/vststfsorcasshort-md.md)]，你无法再更改中存在的规则设置[!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)]仅。
-
-
-

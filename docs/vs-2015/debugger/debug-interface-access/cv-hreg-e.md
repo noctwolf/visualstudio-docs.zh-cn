@@ -1,14 +1,9 @@
 ---
-title: CV_HREG_e |Microsoft Docs
-ms.custom: ''
+title: CV_HREG_e | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 3f0622f7-6790-41d8-8778-227cbbf8a212
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5387a697b025757388864289cbbd3fdcebc7a5ea
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e05b93d363b8157cae5ac66a4fe8fdd14634aa11
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724314"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932322"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -417,37 +412,37 @@ enum CV_HREG_e { 
 ```  
   
 ## <a name="elements"></a>元素  
- CV_REG_ *  
+ CV_REG_*  
  注册由 Intel 80x86 和 ix86 处理器和 p 代码。  
   
- CV_R68_ *  
+ CV_R68_*  
  68 K 处理器使用的寄存器。  
   
- CV_M4_ *  
+ CV_M4_*  
  由 MIPS 4000 系列处理器的寄存器。  
   
- CV_ALPHA_ *  
+ CV_ALPHA_*  
  使用的数字设备 Corporation Alpha AXP 系列处理器的寄存器。  
   
- CV_PPC_ *  
+ CV_PPC_*  
  / IBM Motorola PowerPC 处理器使用的寄存器。  
   
  CV_SH3_ * 和 CV_SH_\*  
  使用的人： Hitachi SH3 和 Hitachi SH 系列处理器的寄存器。  
   
- CV_ARM_ *  
+ CV_ARM_*  
  使用高级 RISC 计算机 (ARM) 处理器的寄存器。  
   
- CV_IA64_ *  
+ CV_IA64_*  
  由 Intel IA64 系列处理器的寄存器。  
   
- CV_TRI_ *  
+ CV_TRI_*  
  Infineon 技术 TriCore 处理器使用的寄存器。  
   
- CV_AM33_ *  
+ CV_AM33_*  
  注册和使用 Matsushita/Panasonic AM33，与处理器相关。  
   
- CV_M32R_ *  
+ CV_M32R_*  
  Mitsubishi M32R 处理器使用的寄存器。  
   
 ## <a name="remarks"></a>备注  
@@ -470,11 +465,8 @@ enum CV_HREG_e { 
   
 ## <a name="see-also"></a>请参阅  
  [枚举和结构](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [Idiastackwalkframe:: Get_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [Idiastackwalkframe:: Put_registervalue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
  [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
  [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)
-
-
-

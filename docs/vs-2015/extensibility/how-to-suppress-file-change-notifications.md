@@ -1,28 +1,23 @@
 ---
-title: 如何： 禁止显示文件更改通知 |Microsoft Docs
-ms.custom: ''
+title: 如何：禁止显示文件更改通知 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4f82fd90d95a595d39403d2ee131285034b95d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51808253"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931466"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>如何： 禁止显示文件更改通知
+# <a name="how-to-suppress-file-change-notifications"></a>如何：禁止显示文件更改通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 表示文本缓冲区的物理文件更改后，对话框将显示与消息**是否要保存对以下各项的更改？** 这称为文件更改通知。 如果很多更改将为到该文件，但是，反复地显示此对话框中可以快速变得令人讨厌。  
@@ -121,4 +116,3 @@ void CSuspendFileChanges::Resume()
   
 ## <a name="robust-programming"></a>可靠编程  
  如果您的案例涉及多项更改的文件，如下所示的 SCC，这种情况然后务必继续发出警报的文档数据，就可以继续监视文件更改前执行全局文件更改通知。
-

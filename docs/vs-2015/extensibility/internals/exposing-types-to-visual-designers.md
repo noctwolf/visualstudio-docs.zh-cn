@@ -1,14 +1,9 @@
 ---
 title: 公开到可视化设计器的类型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c19fe00713bd328574e5a05cc6f6f3a60f18ddf9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c87f44dd12724c694fc27bae985f5f7fb617e45c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932554"
 ---
 # <a name="exposing-types-to-visual-designers"></a>向可视化设计器公开类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,8 +46,7 @@ ms.locfileid: "51791548"
      编译的临时 PE 后，仅提供给编译器的源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。  
   
 ## <a name="see-also"></a>请参阅  
- [BuildManager 对象介绍](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [BuildManager 对象介绍](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [确定项目的默认 Namespace](../../misc/determining-the-default-namespace-of-a-project.md)   
  [注册单个文件生成器](../../extensibility/internals/registering-single-file-generators.md)
-

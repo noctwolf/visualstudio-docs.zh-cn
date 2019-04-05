@@ -1,13 +1,8 @@
 ---
 title: 在您的开发过程中使用模型 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
@@ -15,18 +10,18 @@ ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 56534483f8b9cda99b756524d87408efbedfe275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757706"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "59000205"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频： 通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。  
+在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频：通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。  
   
  若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -104,7 +99,7 @@ ms.locfileid: "51757706"
   
 -   用例。 你可以将用例链接到将实现它的开发任务。  
   
--   用例扩展。 如果迭代中将仅实现用例的一个方面，则可以将它分离为具有一个或多个扩展的基础用例。 扩展是以 «extend» 关系链接到基础用例的用例。 有关用例扩展的详细信息，请参阅[UML 用例图： 参考](../modeling/uml-use-case-diagrams-reference.md)。  
+-   用例扩展。 如果迭代中将仅实现用例的一个方面，则可以将它分离为具有一个或多个扩展的基础用例。 扩展是以 «extend» 关系链接到基础用例的用例。 有关用例扩展的详细信息，请参阅[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)。  
   
 -   描述业务规则或服务质量要求的注释。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
@@ -137,18 +132,15 @@ ms.locfileid: "51757706"
   
 |**类别**|**链接**|  
 |------------------|---------------|  
-|**视频**|![视频链接](../data-tools/media/playvideo.gif "播放视频") [MSDN 如何实现视频： 如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif "播放视频")[第 9 频道： Visual Studio 2010 中的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif "播放视频") [MSDN 如何实现系列： UML 工具和扩展性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**视频**|![视频链接](../data-tools/media/playvideo.gif "播放视频") [MSDN 如何实现视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif "播放视频")[第 9 频道：Visual Studio 2010 中的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif "播放视频") [MSDN 如何实现系列：UML 工具和扩展性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**论坛**|-   [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**博客**|[Visual Studio ALM + Team Foundation Server 博客](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>请参阅  
- [在敏捷开发中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [为您的应用程序创建模型](../modeling/create-models-for-your-app.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)   
  [基于模型开发测试](../modeling/develop-tests-from-a-model.md)   
  [安排建模解决方案](../modeling/structure-your-modeling-solution.md)
-
-
-
