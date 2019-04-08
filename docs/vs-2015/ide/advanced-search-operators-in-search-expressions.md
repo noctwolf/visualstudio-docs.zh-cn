@@ -18,7 +18,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54775569"
@@ -43,7 +43,7 @@ ms.locfileid: "54775569"
 |编程语言|使用|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> or<br /><br /> code:visualbasic|  
-|C#|code:c#<br /><br /> or<br /><br /> code:csharp|  
+|C#|code:C#<br /><br /> or<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> or<br /><br /> code:c++<br /><br /> or<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> or<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> or<br /><br /> code:js|  

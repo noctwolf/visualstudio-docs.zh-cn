@@ -33,7 +33,7 @@ ms.locfileid: "58936469"
 |是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 公共类型是`sealed`(`NotInheritable`在 Visual basic 中) 和声明受保护的成员或受保护的嵌套的类型。 此规则不会报告的冲突<xref:System.Object.Finalize%2A>必须遵循此模式的方法。
+ 公共类型是`sealed`(`NotInheritable`在 Visual Basic 中) 和声明受保护的成员或受保护的嵌套的类型。 此规则不会报告的冲突<xref:System.Object.Finalize%2A>必须遵循此模式的方法。
 
 ## <a name="rule-description"></a>规则说明
  类型声明受保护的成员，使继承类型可以访问或重写该成员。 根据定义，不能继承密封类型，不能调用这意味着，受保护的密封的类型上的方法。

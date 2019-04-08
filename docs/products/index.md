@@ -5,6 +5,12 @@ title: Visual Studio 产品| Microsoft Docs
 description: 了解 Visual Studio 产品系列。
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59017982"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
@@ -24,7 +30,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,12 +49,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio for Mac</h3>
-                                                    <p>使用 Mac 生成适用于云、iOS、Android、macOS 和可穿戴设备的应用和游戏</p>
+                                                    <p>使用 .NET 开发 iOS、Android、桌面及 Web 应用和游戏。</p>
                                                 </div>
                                             </div>
                                         </div>
