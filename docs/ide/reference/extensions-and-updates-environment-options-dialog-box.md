@@ -1,6 +1,6 @@
 ---
 title: “扩展”，“环境”，“选项”对话框
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a9b890f57fc8148233a17e3910477a4e8697564
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983931"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646707"
 ---
-# <a name="extensions-environment-options-dialog-box"></a>“扩展”，“环境”，“选项”对话框
+# <a name="options-dialog-box-environment--extensions"></a>“选项”对话框：环境 \> 扩展
 
 使用此页可以设置有关 Visual Studio 如何执行更新以及如何更新和发现扩展的选项。
 
@@ -29,7 +29,7 @@ ms.locfileid: "57983931"
 
 勾选后，将对扩展进行更新，而不给予提示。 有关详细信息，请参阅[查找和使用 Visual Studio 扩展](../../ide/finding-and-using-visual-studio-extensions.md)。
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>以管理员身份运行时加载用户扩展
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>以管理员身份运行时加载每用户扩展
 
 有关详细信息，请参阅[查找和使用 Visual Studio 扩展](../../ide/finding-and-using-visual-studio-extensions.md)。
 
