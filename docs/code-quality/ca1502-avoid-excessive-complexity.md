@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916760"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232311"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502:避免过度复杂
 
@@ -44,11 +44,11 @@ ms.locfileid: "55916760"
 
 圈复杂度 = 边缘的节点数 + 1 的数
 
-其中一个节点表示逻辑分支点，边缘表示节点之间的直线。
+一个*节点*表示逻辑分支点和一个*边缘*表示节点之间的直线。
 
 超过 25 种的圈复杂度时，规则将报告冲突。
 
-您可以了解有关代码的指标的详细信息[测量复杂性和托管代码可维护性](../code-quality/code-metrics-values.md)，
+您可以了解有关代码的指标的详细信息[测量托管代码的复杂性](../code-quality/code-metrics-values.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 

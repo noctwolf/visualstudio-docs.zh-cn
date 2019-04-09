@@ -20,20 +20,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68e6c7258cb906ac81cb97f7d82bd5c5d9b467a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873118"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232692"
 ---
-# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic、 c + +)
+# <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
 使用 IntelliTrace 记录和跟踪代码的执行历史记录时，可缩短调试应用程序所用的时间。 你可以更轻松地发现 Bug，因为 IntelliTrace 让你能够：
 
 - 记录特定事件
 
-   检查相关代码、调试程序事件期间“局部变量”窗口中显示的数据以及函数调用信息
+- 检查相关代码、调试程序事件期间“局部变量”窗口中显示的数据以及函数调用信息
 
 - 调试难以重现或在部署中出现的错误
 
@@ -52,9 +52,9 @@ ms.locfileid: "57873118"
 
 | | |
 |---------------------| - |
-| **完全支持** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 IntelliTrace 使用 Microsoft Azure 应用程序，请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。 |
-| **有限支持** | -面向 Windows 支持查看快照使用 IntelliTrace 后退 c + + 应用程序。 支持唯一的调试器和异常事件。<br />-.NET core 和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClient 事件） 中支持本地调试。 独立收集器不支持.NET Core 或 ASP.NET Core 应用。<br />- 实验证明的 F# 应用<br />-UWP 应用仅支持事件 |
-| **不支持** | -其他语言和脚本<br />- Windows 服务、Silverlight、Xbox 或 [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] 应用 |
+| **完全支持** | - 使用 .NET Framework 2.0 或更高版本的 Visual Basic 和 Visual C# 应用程序。<br/>你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br/>若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。<br/> 若要调试 IntelliTrace 使用 Microsoft Azure 应用程序，请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。 |
+| **有限支持** | -C++面向 Windows 的应用程序支持使用 IntelliTrace 后退查看快照。 支持唯一的调试器和异常事件。<br />-.NET core 和 ASP.NET Core 应用某些仅事件 （MVC 控制器、 ADO.NET 和 HTTPClient 事件） 中支持本地调试。 .NET Core 或 ASP.NET Core 应用不支持独立收集器。<br />- 实验证明的 F# 应用<br />-UWP 应用仅支持事件 |
+| **不支持** | -其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或 Windows 的移动应用 |
 
 > [!NOTE]
 > 如果你想要调试已在运行的进程，您可以仅收集 IntelliTrace 事件 （没有调用信息）。 您可以将附加到本地计算机上的 32 位或 64 位进程。 不收集发生之前附加到进程的事件。
@@ -75,7 +75,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - IIS 上托管的 ASP.NET Web 应用程序，或使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用）时在部署中运行的 SharePoint 2010 和 SharePoint 2013 应用程序。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)并[监视使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。
 
-  下面是一些示例，说明 IntelliTrace 如何帮助你进行调试：
+下面是一些示例，说明 IntelliTrace 如何帮助你进行调试：
 
 - 你的应用程序损坏了一个数据文件，但是你不知道此事件的发生位置。
 
@@ -117,7 +117,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
     启用 IntelliTrace 事件和快照模式下，IntelliTrace 将快照应用程序的进程在每个调试器**断点**并**步骤**事件。 这将记录中的值**局部变量**，**自动**，并**观看**windows，而不考虑各个窗口是否是打开。 此外会收集任何固定的数据提示中的值。
 
-- **异常**
+- **Exceptions**
 
      IntelliTrace 会记录异常类型和以下各类异常的消息：
 
@@ -127,7 +127,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - **.NET Framework 事件**
 
-   默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如，ror 选中复选框事件，IntelliTrace 将收集复选框状态和文本。
+   默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如，对于<xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType>事件，IntelliTrace 将收集的复选框状态和文本。
 
 - **SharePoint 2010 和 SharePoint 2013 应用程序事件**
 
@@ -175,14 +175,6 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 默认情况下，IntelliTrace 仅收集所选 IntelliTrace 事件的数据。 这可能会让应用程序的速度变慢，也可能不会，具体取决于代码的结构和组织。 例如，如果 IntelliTrace 经常记录某个事件，则这可能会让应用程序的速度变慢。 它还可能会让你考虑重构应用程序。
 
 收集调用信息可能会让应用程序的速度显著变慢。 它还可能增加您保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要尽可能减少这些影响，请仅收集你关注的模块的调用信息。  若要更改 .iTrace 文件的最大大小，请转到“工具”、“选项”、IntelliTrace、“高级”。
-
-## <a name="in-this-section"></a>本节内容
-
-[IntelliTrace 功能](../debugger/intellitrace-features.md)
-
-[诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)
-
-[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>博客
 
