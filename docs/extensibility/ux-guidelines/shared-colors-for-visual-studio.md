@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31912d5528c38374aafd1212767bfb850a8b976
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723573"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232809"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 当您正在设计使用公共 Visual Studio shell 元素的 UI 或希望界面元素将与类似功能一致时，使用包定义文件中现有的标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。
@@ -22,7 +22,7 @@ ms.locfileid: "56723573"
 
 请确保正确使用标记名称：
 
--   **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的函数不同，以及如果组合框中更改与关联的颜色，则可能不再是合适于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
+-   **使用基于功能的标记名称，而不是颜色本身。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的函数不同，以及如果组合框中更改与关联的颜色，则可能不再是合适于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
 
 -   **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联的文本颜色，不要将该背景色用于期望显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。
 
@@ -299,7 +299,7 @@ ms.locfileid: "56723573"
 | --- | --- |
 | 背景 | 透明 |
 | 前景（文本） | `Environment.CommandBarTextActive` |
-| Border | 无 |
+| Border | None |
 
 **列表视图项： 活动状态**
 
@@ -307,7 +307,7 @@ ms.locfileid: "56723573"
 | --- | --- |
 | 背景 | `TreeView.SelectedItemActive` |
 | 前景（文本） | `TreeView.SelectedItemActiveText` |
-| Border | 无 |
+| Border | None |
 
 **列表视图项： 非活动状态**
 
@@ -315,7 +315,7 @@ ms.locfileid: "56723573"
 | --- | --- |
 | 背景 | `TreeView.SelectedItemInactive` |
 | 前景（文本） | `TreeView.SelectedItemInactiveText` |
-| Border | 无 |
+| Border | None |
 
 ### <a name="ui-text"></a>UI 文本
 
@@ -679,7 +679,7 @@ ms.locfileid: "56723573"
 | --- | --- |
 | 背景 | `SearchControl.Selection` |
 | 前景（文本） | `SearchControl.FocusedBackground` |
-| Border | 无 |
+| Border | None |
 | Separator | `SearchControl.FocusedDropDownSeparator` |
 
 **已禁用的搜索输入的字段**
@@ -699,7 +699,7 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（搜索标志符号） | `SearchControl.SearchGlyph` |
 | 前景（停止标志符号） | `SearchControl.StopGlyph` |
 | 前景（清除标志符号） | `SearchControl.ClearGlyph` |
@@ -733,9 +733,9 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（标志符号） | `SearchControl.ActionButtonDisabledGlyph` |
-| Border | 无 |
+| Border | None |
 
 **已设定焦点的搜索下拉按钮**
 
@@ -773,9 +773,9 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（标志符号） | `SearchControl.DisabledDownButtonGlyph` |
-| Border | 无 |
+| Border | None |
 
 #### <a name="search-drop-down-lists"></a>搜索下拉列表
 搜索框下拉菜单中有可能要比在 Visual Studio 中其他下拉菜单稍微复杂。 "建议的搜索"和"搜索选项"部分可以显示单独或一起使用的菜单中，并且每个分别进行着色。 当这两个部分一起出现时，还会有一条线分隔它们，并且有一个边框环绕整个下拉菜单。
@@ -873,7 +873,7 @@ ms.locfileid: "56723573"
 | 背景 | `TreeView.Background` |
 | 前景（文本） | `TreeView.Background` |
 | 前景（标志符号） | `TreeView.Glyph` |
-| Border | 无 |
+| Border | None |
 
 **树视图项： 将鼠标悬停状态**
 
@@ -884,7 +884,7 @@ ms.locfileid: "56723573"
 | 背景 | `TreeView.Background` |
 | 前景（文本） | `TreeView.Background` |
 | 前景（标志符号） | `TreeView.GlyphMouseOver` |
-| Border | 无 |
+| Border | None |
 
 **树视图项： 拖动状态**
 
@@ -895,7 +895,7 @@ ms.locfileid: "56723573"
 | 背景 | `TreeView.DragOverItem` |
 | 前景（文本） | `TreeView.DragOverItem` |
 | 前景（标志符号） | `TreeView.DragOverItemGlyph` |
-| Border | 无 |
+| Border | None |
 
 **树视图项： 选择、 已设定焦点状态**
 
@@ -917,7 +917,7 @@ ms.locfileid: "56723573"
 | 背景 | `TreeView.SelectedItemInactive` |
 | 前景（文本） | `TreeView.SelectedItemInactive` |
 | 前景（标志符号） | `TreeView.SelectedItemInactiveGlyph` |
-| Border | 无 |
+| Border | None |
 
 **树视图项： 悬停，则选择，并已设定焦点状态**
 
@@ -939,7 +939,7 @@ ms.locfileid: "56723573"
 | 背景 | `TreeView.SelectedItemInactive` |
 | 前景（文本） | `TreeView.SelectedItemInactive` |
 | 前景（标志符号） | `TreeView.SelectedItemActiveGlyphMouseOver` |
-| Border | 无 |
+| Border | None |
 
 ## <a name="shell-appearance"></a>Shell 外观
 
@@ -985,7 +985,7 @@ ms.locfileid: "56723573"
 | --- | --- |
 | 背景 | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-* * 命令架命令栏 * *
+**命令架命令栏**
 
 > 在 Visual Studio 2013 浅色和深色主题中设置为相同颜色值的梯度停止点。
 
@@ -1008,7 +1008,7 @@ ms.locfileid: "56723573"
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.TabActive` |
-| Border | 无 |
+| Border | None |
 
 **清单设计器所选的说明窗格： 这是默认状态**
 
@@ -1065,10 +1065,10 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景 （文本） | `Environment.CommandBarTextActive` |
 | 前景 （标志符号） | `Environment.CommandBarMenuGlyph` |
-| Border | 无 |
+| Border | None |
 
 **菜单标题： 将鼠标悬停状态**
 
@@ -1102,10 +1102,10 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（文本） | `Environment.CommandBarTextInactive` |
 | 前景（标志符号） | `Environment.CommandBarTextInactive` |
-| Border | 无 |
+| Border | None |
 
 #### <a name="menu-items"></a>菜单项
 各个菜单项由菜单文本和可选的图标、复选框或子菜单标志符号组成。 其背景和文本颜色会在鼠标悬停在上方时更改。 此颜色标记是前景/背景对。
@@ -1407,7 +1407,7 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（标志符号） | `Environment.ComboBoxDisabledGlyph` |
 
 ####  <a name="BKMK_CommandDropDown"></a> 命令栏下拉列表
@@ -1439,7 +1439,7 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（标志符号） | `Environment.DropDownGlyph` |
 
 **命令栏下拉列表： 这是默认状态**
@@ -1539,7 +1539,7 @@ ms.locfileid: "56723573"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 无 |
+| 背景 | None |
 | 前景（文本） | `Environment.CommandBarTextActive` |
 | 前景（标志符号） | `Environment.CommandBarSplitButtonGlyph` |
 | Border | 不可用 |
@@ -2030,7 +2030,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | --- | --- |
 | 背景 | `Environment.ToolboxContent`<br />（标题） |
 | 背景 | `Environment.ToolWindowBackground`<br />（各项或如果没有可用控件的整个窗口） |
-| Border | 无 |
+| Border | None |
 | 前景（标志符号） | `Environment.ToolboxContent` |
 | 前景（文本） | `Environment.ToolboxContent` |
 
@@ -2041,7 +2041,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolboxContentMouseOver`<br />（仅限单个项） |
-| Border | 无 |
+| Border | None |
 | 前景（文本） | `Environment.ToolboxContentMouseOver`<br />（仅限单个项） |
 
 **所选工具箱节点： 已设定焦点状态**
@@ -2066,7 +2066,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
 | 背景 | `TreeView.SelectedItemInactive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
-| Border | 无 |
+| Border | None |
 | 前景（标志符号） | `TreeView.SelectedItemInactive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 | 前景（文本） | `TreeView.SelectedItemInactive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 
@@ -2176,7 +2176,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | --- | --- |
 | ...要创建想要与工具窗口匹配的 UI 的任何位置。 | ...对于不想要时自动更改的任何 UI 在 shell 具有主题更新。 |
 
-**已选定、 已设定焦点的工具窗口选项卡**
+**已选定、已设定焦点的工具窗口选项卡**
 
 ![选择、 已设定焦点的工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303年 103_ToolWindowTabFocused")<br />已选定、已设定焦点的工具窗口选项卡
 
@@ -2186,7 +2186,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 前景（文本） | `Environment.ToolWindowTabSelectedActiveText` |
 | Border | `Environment.ToolWindowTabSelectedBorder`<br />（设置为与背景颜色相同。） |
 
-**已选定、 失去焦点的工具窗口选项卡**
+**已选定、失去焦点的工具窗口选项卡**
 
 ![已选定、 失去焦点的工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303年 104_ToolWindowTabUnfocused")<br />已选定、失去焦点的工具窗口选项卡
 

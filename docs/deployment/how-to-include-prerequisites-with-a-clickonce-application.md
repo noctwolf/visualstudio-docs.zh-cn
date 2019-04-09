@@ -1,5 +1,5 @@
 ---
-title: 如何： 将必备组件与 ClickOnce 应用程序包括 |Microsoft Docs
+title: 如何：将与 ClickOnce 应用程序的必备组件包括 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a31058893e09de2c945cc253374a55c53f277110
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620000"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232848"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序包括在一起
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将系统必备与 ClickOnce 应用程序一起添加
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发这些软件。 发布应用程序并选择“从与我的应用程序相同的位置下载系统必备组件”时，如果安装程序包不在“包”文件夹中，则将发生错误。
 
 > [!NOTE]
@@ -25,7 +25,7 @@ ms.locfileid: "56620000"
 
 1. 在文件资源管理器中，打开“包”文件夹。
 
-    默认情况下，路径为 C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages（32 位系统）和 C:\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages（64 位系统）。
+    默认情况下，路径是`%ProgramFiles(x86)%\Microsoft SDKs\ClickOnce Bootstrapper\Packages\`。
 
 2. 为要添加的系统必备组件打开文件夹，然后为已安装的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本打开语言文件夹（例如，“en”用于英语）。
 
@@ -50,4 +50,4 @@ ms.locfileid: "56620000"
     现在你可以将安装程序包与你的应用程序一起分发。
 
 ## <a name="see-also"></a>请参阅
-- [如何： 与 ClickOnce 应用程序安装的先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：与 ClickOnce 应用程序安装的先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

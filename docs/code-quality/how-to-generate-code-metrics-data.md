@@ -11,20 +11,66 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb65f2a1de54cd21ff212443c004dc011d5b3222
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 4275e92b21289c5cf1e3243b2bc782a9e0821fde
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223723"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232744"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：生成代码度量数据
 
-你可以生成一个或多个项目或整个解决方案的代码度量值结果。 代码度量值可在 Visual Studio 交互式开发环境 (IDE)，以及为C#和 Visual Basic 项目，在命令行。
+以下三种方式，可以生成代码度量数据：
 
-此外，您可以安装[NuGet 包](https://dotnet.myget.org/feed/roslyn-analyzers/package/nuget/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2-beta2-63202-01)包括四个代码度量值[分析器](roslyn-analyzers-overview.md)规则：CA1501、 CA1502、 CA1505 和 CA1506。 默认情况下，将禁用这些规则，但也可以启用它们从**解决方案资源管理器**中或在[规则集](using-rule-sets-to-group-code-analysis-rules.md)文件。
+- 通过安装[FxCop 分析器](#fxcop-analyzers-code-metrics-rules)并使其包含的四个代码度量值 （可维护性） 规则。
 
-## <a name="visual-studio-ide-code-metrics"></a>Visual Studio IDE 代码度量值
+- 通过选择[**分析** > **计算代码度量值**](#calculate-code-metrics-menu-command) Visual Studio 中的菜单命令。
+
+- 从[命令行](#command-line-code-metrics)为C#和 Visual Basic 项目。
+
+## <a name="fxcop-analyzers-code-metrics-rules"></a>FxCop 分析器代码度量值规则
+
+[FxCopAnalyzers NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)包括多个代码度量值[分析器](roslyn-analyzers-overview.md)规则：
+
+- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1505](ca1505-avoid-unmaintainable-code.md)
+- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+
+默认情况下禁用这些规则，但也可以启用它们从[**解决方案资源管理器**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer)中或在[规则集](using-rule-sets-to-group-code-analysis-rules.md)文件。 例如，若要启用规则 CA1502 为警告，你的.ruleset 文件将包含以下条目：
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="Rules" Description="Rules" ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.CodeQuality.Analyzers" RuleNamespace="Microsoft.CodeQuality.Analyzers">
+    <Rule Id="CA1502" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+### <a name="configuration"></a>配置
+
+你可以配置阈值的 FxCop 分析器中的代码指标规则包激发。
+
+1. 创建文本文件。 例如，你可以将其命名*CodeMetricsConfig.txt*。
+
+2. 将所需的阈值添加到采用以下格式的文本文件：
+
+   ```txt
+   CA1502: 10
+   ```
+
+   在此示例中，规则[CA1502](ca1502-avoid-excessive-complexity.md)配置方法的圈复杂度大于 10 时激发。
+
+3. 在中**属性**窗口的 Visual Studio 中或在项目文件中，将标记的配置文件作为生成操作[ **AdditionalFiles**](../ide/build-actions.md#build-action-values)。 例如：
+
+   ```xml
+   <ItemGroup>
+     <AdditionalFiles Include="CodeMetricsConfig.txt" />
+   </ItemGroup>
+   ```
+
+## <a name="calculate-code-metrics-menu-command"></a>计算代码度量值菜单命令
 
 通过在 IDE 中生成的一个或所有打开的项目的代码度量**分析** > **计算代码度量值**菜单。
 
@@ -54,7 +100,8 @@ ms.locfileid: "57223723"
 > **计算代码度量值**命令不适用于.NET Core 和.NET Standard 项目。 若要计算代码度量值为.NET Core 或.NET Standard 项目，你可以：
 >
 > - 计算代码度量值从[命令行](#command-line-code-metrics)改为
-> - 升级到 Visual Studio 2019
+>
+> - 升级到[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ::: moniker-end
 
