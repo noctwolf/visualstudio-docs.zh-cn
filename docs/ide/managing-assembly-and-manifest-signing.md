@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957463"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866687"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理程序集和清单签名
 
@@ -31,7 +31,7 @@ ms.locfileid: "55957463"
 有关 Visual C++ 项目中签名程序集的信息，请参阅[强名称程序集 (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)。
 
 > [!NOTE]
-> 强名称签名不能保护程序集免受反向工程的威胁。 若要防止反向工程，请参阅 [Dotfuscator Community Edition (CE)](dotfuscator/index.md)。
+> 强名称签名不能保护程序集免受反向工程的威胁。 若要防止反向工程，请参阅 [Dotfuscator Community](dotfuscator/index.md)。
 
 ## <a name="asset-types-and-signing"></a>资产类型和签名
 
@@ -57,7 +57,7 @@ ms.locfileid: "55957463"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何对 Visual Studio 中的程序集进行签名
 
-若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在解决方案资源管理器中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入 project properties，或在解决方案资源管理器中按 Alt+Enter）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。
+若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。
 
 指定密钥文件。 如果选择新建密钥文件，始终以 .pfx 格式创建新密钥文件。 需要为新文件设置名称和密码。
 

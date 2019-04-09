@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 247906426dcf57463a36ea85ce781b39aae2ffba
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 2c9bbe0b6a1f7722fb2da685b29f5d244441edc2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475846"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856713"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -37,7 +37,7 @@ ms.locfileid: "58475846"
 
 ::: moniker range="vs-2019"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
 
 ::: moniker-end
 
@@ -83,11 +83,13 @@ ms.locfileid: "58475846"
 
 ::: moniker range="vs-2019"
 
+1. 打开 Visual Studio。
+
 1. 在“开始”窗口上，选择“创建新项目”。
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在“创建新项目”窗口中，在搜索框中输入或键入“ASP.NET”。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows。 
+1. 在“创建新项目”窗口中，在搜索框中输入或键入“ASP.NET”。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows。
 
    应用语言和平台筛选器之后，选择“ASP.NET Core Web 应用程序”模板，然后选择“下一步”。
 
@@ -96,8 +98,8 @@ ms.locfileid: "58475846"
    > [!NOTE]
    > 如果未看到“ASP.NET Core Web 应用程序”模板，则可以从“创建新项目”窗口安装该模板。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接。
    >
-   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > 然后，在 Visual Studio 安装程序中，选择“ASP.NET 和 Web 开发”工作负载。
    >
    > ![Visual Studio 安装程序中的“ASP.NET Core Web 应用程序”工作负载](../get-started/media/aspnet-core-web-dev-workload.png)
@@ -176,4 +178,4 @@ ms.locfileid: "58475846"
 
 ## <a name="see-also"></a>请参阅
 
-[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 将 Web 应用发布到 Azure 应用服务](../deployment/quickstart-deploy-to-azure.md)

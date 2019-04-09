@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 79197d99ea04d95c369738af5832f70f4f7dc7e7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 30240a1df90e2fd77e99def3a14d758f62c5dd05
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355294"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790441"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>快速入门：使用 Visual Studio 创建你的第一个 Node.js 应用
 
@@ -56,7 +56,7 @@ ms.locfileid: "58355294"
 1. 创建新项目。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的空白 Node.js Web 应用程序项目”(JavaScript)。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的空白 Node.js Web 应用程序项目”(JavaScript)。 在出现的对话框中，选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空 Node.js Web 应用程序”，然后选择“确定”。

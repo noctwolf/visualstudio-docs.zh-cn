@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 485516a92f2b669aa24d6da69653621e07a6c9cd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325089"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790337"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
@@ -54,7 +54,7 @@ ms.locfileid: "58325089"
 
 打开 Visual Studio 后，随即显示“启动”窗口。 选择“继续但无需代码”打开开发环境。
 
-将看到 IDE 的三个基本部分：工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口位于应用窗口的左右两侧。 “快速启动”框、菜单栏和标准工具栏位于顶部。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
+将看到 IDE 的三个基本部分：工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口位于应用窗口的左右两侧。 搜索框、菜单栏和标准工具栏位于顶部。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
 
 ::: moniker-end
 

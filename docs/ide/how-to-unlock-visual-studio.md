@@ -1,6 +1,7 @@
 ---
 title: 如何：解锁 Visual Studio
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943137"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856815"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何：解锁 Visual Studio
 
@@ -27,7 +30,7 @@ ms.locfileid: "55943137"
 
 使用与 Microsoft 帐户或者工作或学校帐户相关联的 Visual Studio 订阅或 Azure DevOps 组织解锁 Visual Studio：
 
-1. 单击 IDE 右上角的“登录”按钮（或转到“文件” > “帐户设置”，打开“帐户设置”对话框，然后单击"登录"按钮）。
+1. 选择 IDE 右上角的“登录”按钮（或转到“文件” > “帐户设置”，打开“帐户设置”对话框，然后选择“登录”按钮）。
 
 1. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找与帐户相关联的 Visual Studio 订阅或 Azure DevOps 组织。
 
@@ -36,9 +39,9 @@ ms.locfileid: "55943137"
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用产品密钥解锁 Visual Studio
 
-1. 选择“文件” > “帐户设置”，打开“帐户设置”对话框并单击“使用产品密钥获得许可”链接。
+1. 选择“文件” > “帐户设置”，打开“帐户设置”对话框，然后选择“使用产品密钥获得许可”链接。
 
-在提供的空白处输入产品密钥。
+1. 在提供的空白处输入产品密钥。
 
 > [!TIP]
 > Visual Studio 的预发布版本没有产品密钥。 必须登录 IDE，才能使用预发布版本。
@@ -47,7 +50,7 @@ ms.locfileid: "55943137"
 
 ### <a name="update-stale-licenses"></a>更新过时的许可证
 
- 你可能已见过以下消息，Visual Studio 的许可证即将过期，消息显示为“你的许可证已过期，必须进行更新。”
+ 你可能已见到过以下信息，指示许可证在 Visual Studio 中即将过时。 显示：“你的许可证已过期，必须进行更新。”
 
  ![Visual Studio 过期许可证消息](../ide/media/vs2017_stale-license.png)
 
@@ -58,10 +61,10 @@ ms.locfileid: "55943137"
 
 许可证令牌过期之前，Visual Studio 首先会显示警告消息，要求用户重新输入凭据。
 
-如果不重新输入凭据，该令牌将开始过期倒计时，并且“帐户设置”对话框会告知用户令牌在完全过期之前的剩余天数。 令牌过期后，需要使用以上另一种方法重新对此帐户或许可证输入凭据，然后才能继续使用 Visual Studio。
+如果不重新输入凭据，该令牌将开始过期倒计时，并且“帐户设置”对话框会告知用户令牌在完全过期之前的剩余天数。 令牌过期后，必须重新输入帐户的凭据，然后才能继续使用 Visual Studio。
 
 > [!Important]
-> 如果在有限或者没有 Internet 访问的环境中延长使用 Visual Studio，应该使用产品密钥解锁 Visual Studio，以避免中断。
+> 如果在 Internet 访问有限或者没有 Internet 访问的环境中延长使用 Visual Studio，应使用产品密钥解锁 Visual Studio，以避免中断。
 
 ### <a name="update-expired-licenses"></a>更新已过期的许可证
 

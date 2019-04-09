@@ -1,6 +1,6 @@
 ---
 title: “选项”对话框 ->“环境”->“常规”
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faae6f061da675efdecdea5f8c4a0e606d486b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710833"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647266"
 ---
-# <a name="general-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“常规”
+# <a name="options-dialog-box-environment--general"></a>“选项”对话框：环境 \> 常规
 
 使用此页更改集成开发环境 (IDE) 的颜色主题、状态栏设置和文件扩展名关联以及其他选项。 可以通过打开“工具”菜单，选择“选项”，打开“环境”文件夹然后选择“常规”页来访问“选项”对话框。 如果此页未出现在列表中，请在“选项”对话框中选中“显示所有设置”复选框。
 
@@ -39,13 +39,21 @@ ms.locfileid: "56710833"
 
 颜色主题
 
-为 IDE 选择“蓝色”、“浅色”或“深色”颜色主题。
+为 IDE 选择“蓝色”、“浅色”、“深色”，或者“蓝色(额外对比度)”颜色主题。
 
 可以通过从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 中下载并安装“Visual Studio 颜色主题编辑器”来安装其他预定义的主题并创建自定义主题。 安装此工具后，其他颜色主题将显示在“颜色主题”列表框中。
 
-**在菜单栏中应用标题大小写**
+将词首字母大写样式应用到菜单栏
 
-菜单默认位于“标题大小写”中。 取消选中此选项，将其设置为“全部大写”。
+默认情况下，菜单使用词首字母大写样式。 取消选中此选项以改为使用所有大写样式。
+
+::: moniker range=">=vs-2019"
+
+使用不同像素密度优化屏幕呈现(需要重启)
+
+此选项启用或禁用每监视器每英寸点数 (DPI) 识别功能（或 PMA）。 启用 PMA 后，Visual Studio 用户界面在任何监视器显示比例因子和 DPI 配置（包括跨多个监视器）中都清晰显示。 若要启用 PMA，需要 Windows 10 2018 年 4 月更新或更高版本以及 .NET Framework 4.8 或更高版本。 （如果不满足这两个系统必备项，此选项将显示为灰色。）
+
+::: moniker-end
 
 基于客户端性能自动调整视觉体验
 
@@ -61,13 +69,13 @@ ms.locfileid: "56710833"
 
 ## <a name="other"></a>其他
 
-“窗口”菜单中显示的项
+要在窗口菜单中显示的项
 
-自定义“窗口”菜单的“窗口”列表中显示的窗口数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。
+自定义“窗口”菜单的“窗口”列表中显示的窗口数。 请输入一个介于 1 和 24 之间的数字。 默认值为 10。
 
 “最近使用的文件”列表中显示的项
 
-自定义出现在“文件”菜单上的最近使用过的项目和文件数。 键入一个介于 1 和 24 之间的数字。 默认情况下，该数字为 10。 这可以轻松地检索最近使用的项目和文件。
+自定义出现在“文件”菜单上的最近使用过的项目和文件数。 请输入一个介于 1 和 24 之间的数字。 默认值为 10。 这可以轻松地检索最近使用的项目和文件。
 
 显示状态栏
 

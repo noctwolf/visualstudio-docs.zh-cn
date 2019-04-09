@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699998"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647279"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
+# <a name="options-dialog-box-environment--web-browser"></a>“选项”对话框：环境 \> Web 浏览器
 
 为内部 Web 浏览器和 Internet Explorer 设置选项。 若要访问此对话框，请在“工具”菜单上单击“选项”，展开“环境”文件夹，然后选择“Web 浏览器”。
 
@@ -50,11 +50,11 @@ ms.locfileid: "56699998"
 
 设置从内部 Web 浏览器页上选择“查看源”时用于打开网页的编辑器。
 
--   **源编辑器**：选择此选项可在[编辑器](../../ide/writing-code-in-the-code-and-text-editor.md)中查看源。
+- **源编辑器**：选择此选项可在[编辑器](../../ide/writing-code-in-the-code-and-text-editor.md)中查看源。
 
--   **HTML 编辑器**：选择此选项可在 [HTML 设计器](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中查看源。 使用此选择以两种视图之一编辑网页：设计视图或标准的基于文本的源视图。
+- **HTML 编辑器**：选择此选项可在 [HTML 设计器](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中查看源。 使用此选择以两种视图之一编辑网页：设计视图或标准的基于文本的源视图。
 
--   **外部编辑器** 选择此选项可在其他编辑器中查看源。 指定所选任何编辑器（例如 Notepad.exe）的路径。
+- **外部编辑器** 选择此选项可在其他编辑器中查看源。 指定所选任何编辑器（例如 Notepad.exe）的路径。
 
 ## <a name="internet-explorer-options"></a>Internet Explorer 选项
 

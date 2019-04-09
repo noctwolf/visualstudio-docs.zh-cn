@@ -11,12 +11,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f8b26536a657698dfcb0c0fa3de3876e1452b1
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325209"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789986"
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
@@ -28,7 +28,7 @@ ms.locfileid: "58325209"
 
 ::: moniker-end
 
-要访问此属性页，请按 Control + Q 以激活 `Quick Launch`，然后键入“试验”。 在键入前几个字母后，快速启动会查找该页面。 此外，还可以选择“工具” > “选项”，依次展开“文本编辑器”和“C/C++”，再选择“试验”。
+要访问此属性页，请按 Ctrl+Q 以激活搜索框，然后键入“experimental”。 在键入前几个字母后，搜索会查找该页面。 此外，还可以选择“工具” > “选项”，依次展开“文本编辑器”和“C/C++”，再选择“试验”。
 
 这些功能在 Visual Studio 安装中可用。
 

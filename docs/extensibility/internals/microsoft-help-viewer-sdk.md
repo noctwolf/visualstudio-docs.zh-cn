@@ -63,7 +63,7 @@ Visual Studio 品牌包支持的控件：
 
 -   javascript
 
--   c# 或 c#
+-   C# 或 C#
 
 -   cplusplus 或 visual c + + 或 c + +
 
