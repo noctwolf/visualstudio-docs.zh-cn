@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924664"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647175"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“选项卡和窗口”
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>“选项”对话框：环境 \> 选项卡和窗口
 
 使用此页可设置有关选项卡式窗口在编辑器窗格中的行为方式以及工具窗口的行为方式的选项。 有关详细信息，请参阅[在 Visual Studio 中自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)
 
