@@ -9,16 +9,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3517f697425b40e1d9c26b2a16e3d50ed9b8b251
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323865"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789921"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
 
-在 Visual Studio IDE 中生成项目之后，可以在“输出”窗口查看有关该生成的信息。 例如，使用此信息可以排查生成失败。 对于 C++ 项目，还可以在某个自动创建和保存的 .txt 文件中查看相同的信息。 对于托管代码项目，可以从“输出”窗口中将信息复制粘贴到 .txt 文件中，然后自行保存。 还可以使用 IDE 指定要查看关于每个生成的信息种类。
+在 Visual Studio IDE 中生成项目之后，可以在“输出”窗口查看有关该生成的信息。 例如，使用此信息可以排查生成失败。 
+
+  - 对于 C++ 项目，还可以在某个自动创建和保存的 .txt 文件中查看相同的信息。 
+
+  - 对于托管的代码项目，可以单击生成输出窗口并按 Ctrl+S。 Visual Studio 会提示你输入用于将“输出”窗口中的信息保存为 .txt 文件的位置。 
+  
+还可以使用 IDE 指定要查看关于每个生成的信息种类。
 
 如果使用 MSBuild 生成任何种类的项目，则可以创建 .txt 文件来保存关于该生成的信息。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)。
 
@@ -30,9 +36,11 @@ ms.locfileid: "58323865"
 
 1.  在菜单栏上，依次选择“生成” > “生成解决方案”。
 
-2.  在“输出”窗口，突出显示来自生成的信息，然后将其复制到“剪贴板”。
+2.  在“输出”窗口中，单击文本中的某个位置。
 
-3.  打开文本编辑器（如记事本），将信息粘贴到该文件中，然后保存。
+3.  按 Ctrl+S。
+
+   Visual Studio 会提示你输入用于保存生成输出的位置。
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>更改包含在生成日志中的信息量
 

@@ -1,5 +1,5 @@
 ---
-title: 管理外部工具 |Microsoft Docs
+title: 管理外部工具 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34508502d28df379e05623116b9659848a84b6bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763318"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866754"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,11 +78,11 @@ ms.locfileid: "54763318"
   
 3.  ATL/MFC 跟踪工具：显示 ATL 和 MFC 源中的调试跟踪消息。  
   
-4.  PreEmptive Dotfuscator 和 Analytics:保护.NET 程序受到反向工程。  
+4.  PreEmptive 保护 - Dotfuscator：防止 .NET 程序受到反向工程。  
   
-5.  SPY++以图形方式显示进程、 线程、 窗口和窗口消息。  
+5.  SPY++：以图形方式显示进程、线程、窗口和窗口消息。  
   
-6.  WCF 服务配置编辑器(&W)可以创建和修改 WCF 服务的配置设置。  
+6.  WCF 服务配置编辑器：允许您创建和修改 WCF 服务的配置设置。  
   
 > [!WARNING]
 >  您可能会看到其他外部工具列表，具体取决于已安装的 Visual Studio 的版本以及已应用的设置配置文件。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
@@ -102,7 +102,7 @@ ms.locfileid: "54763318"
 > [!NOTE]
 >  IDE 状态栏会显示当前行和当前列变量，以指示插入点在活动代码编辑器中的位置。 当前文本变量返回在该位置选择的文本或代码。  
   
-|name|参数|说明​​|  
+|name|参数|说明|  
 |----------|--------------|-----------------|  
 |项路径|$(ItemPath)|当前文件的完整文件名（驱动器 + 路径 + 文件名）。|  
 |项目录|$(ItemDir)|当前文件的目录（驱动器 + 路径）。|  

@@ -1,14 +1,9 @@
 ---
 title: 在模拟器中的运行 Windows 应用商店应用 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,13 +13,13 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 504a63d0f99a1a96d1192a1666d45dafde037253
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775103"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58932479"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模拟器中运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +112,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
      ![屏幕快照设置上下文菜单](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模拟网络连接属性  
- 你可以通过维护感知网络连接成本或数据计划状态更改的能力并允许你的应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助你的应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 能够对签名的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件作出响应。 请参见 [快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 你可以通过维护感知网络连接成本或数据计划状态更改的能力并允许你的应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助你的应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 能够对签名的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件作出响应。 请参阅[快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
  若要调试或测试网络成本感知代码，可使用模拟器模拟通过 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 返回的 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)对象公开的网络的属性。  
   
@@ -149,7 +144,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [如何通过后台任务响应系统事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [如何通过后台任务响应系统事件](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
    [如何在 Windows 应用商店应用中触发挂起、继续和后台事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
@@ -160,6 +155,3 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
 ## <a name="see-also"></a>请参阅  
  [从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)
-
-
-

@@ -17,25 +17,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf9fc547451cd77c6f1fff568202f930540f9f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64e65894fffd9c6786c19a337fc386f45fb9d203
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951704"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647201"
 ---
-# <a name="international-settings-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“区域设置”
+# <a name="options-dialog-box-environment--international-settings"></a>“选项”对话框：环境 \> 国际设置
 
-当你的计算机上安装有多个语言版本的集成开发环境 (IDE) 时，可通过国际设置页面更改默认语言。 要访问此对话框，可从“工具”菜单中选择“选项”，然后从“环境”文件夹中选择“区域设置”。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。
+当计算机上安装有多个语言版本的集成开发环境 (IDE) 时，可通过国际设置页面更改默认语言。 要访问此对话框，可从“工具”菜单中选择“选项”，然后从“环境”文件夹中选择“区域设置”。
 
 **语言**
 
-列出已安装产品语言版本的可用语言。 除非你的计算机上安装了多个语言版本，否则此选项不可用。 如果产品的多个语言或产品的混合语言安装可共享环境，则将语言选项更改为“与 Microsoft Windows 相同”。
+列出已安装产品语言版本的可用语言。 如果产品的多个语言或产品的混合语言安装可共享环境，则将语言选项更改为“与 Microsoft Windows 相同”。
 
 > [!CAUTION]
 > 在安装了多个语言的系统中，Visual C++ 生成工具（cl.exe、link.exe、nmake.exe、bscmake.exe 和相关文件）不受此设置的影响。 这些工具使用上次安装的语言版本。 以前安装的语言版本的工具将被覆盖，因为 Visual C++ 生成工具不使用附属 DLL 模型。
 
-## <a name="see-also"></a>请参阅
+### <a name="see-also"></a>请参阅
 
 - [安装语言包](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
 - [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

@@ -2,6 +2,7 @@
 title: 使用 Visual Basic 创建首个控制台应用
 description: 了解如何在 Visual Studio 中使用 Visual Basic 逐步创建简单的 Hello World 控制台应用。
 ms.custom: seodec18
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -13,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 00fd1f346bb644ea1b17f429b91fba854bf9eeb4
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d0ccaf648d4109679b7d1343df462ae4e8da3822
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415832"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856238"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 
@@ -32,7 +33,7 @@ ms.locfileid: "58415832"
 
 ::: moniker range="vs-2019"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
 
 ::: moniker-end
 
@@ -90,7 +91,7 @@ ms.locfileid: "58415832"
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“创建”。
 
-   ![在“配置新项目”窗口中，将项目命名为“WhatIsYourName”](../get-started/visual-basic/media/vs-2019/vb-name-your-project.-whatname.png)
+   ![在“配置新项目”窗口中，将项目命名为“WhatIsYourName”](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
    此时，Visual Studio 将打开新项目。
 

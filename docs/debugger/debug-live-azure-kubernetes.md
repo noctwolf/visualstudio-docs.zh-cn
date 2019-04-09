@@ -1,6 +1,6 @@
 ---
 title: 调试实时 ASP.NET Azure Kubernetes 服务
-description: 了解如何设置吸附点和查看快照调试程序的快照。
+description: 了解如何使用 Snapshot Debugger 设置快照点并查看快照。
 ms.custom: ''
 ms.date: 02/11/2019
 ms.topic: conceptual
@@ -13,14 +13,14 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 21142ada9b8a922e5a66a673eae1059a845f6231
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
-ms.translationtype: MTE95
+ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007288"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856685"
 ---
-# <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>调试实时 ASP.NET Azure Kubernetes 服务使用 Snapshot Debugger
+# <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure Kubernetes 服务
 
 Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍摄快照。 若要指示该调试器拍摄快照，可以在代码中设置快照点和记录点。 通过该调试器，可精确查看出错的内容，而不会影响生产应用程序的流量。 Snapshot Debugger 有助于大幅减少解决生产环境中出现的问题所需的时间。
 
@@ -29,55 +29,44 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 在本教程中，你将：
 
 > [!div class="checklist"]
-> * 启动快照调试器
+> * 启动 Snapshot Debugger
 > * 设置快照点，以及查看快照
 > * 设置记录点
 
 ## <a name="prerequisites"></a>系统必备
 
-* 为 Azure Kubernetes 服务仅适用于 Visual Studio 2019 Enterprise 预览版或更高版本与快照调试器**Azure 开发工作负荷**。 (下**各个组件**选项卡上，您发现下**调试和测试** > **快照调试程序**。)
+* Azure Kubernetes 服务的 Snapshot Debugger 仅适用于具有 Azure 开发工作负载的 Visual Studio 2019 Enterprise 预览版或更高版本。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
 
-    如果尚未安装，安装[Visual Studio 2019 Enterprise 预览版](https://visualstudio.microsoft.com/vs/preview/)。
+    如果尚未安装，请安装 [Visual Studio 2019 Enterprise 预览版](https://visualstudio.microsoft.com/vs/preview/)。
 
-* 快照集合是可用于以下 Azure Kubernetes 服务 web 应用：
-  * .NET Core 2.2 或更高版本在 Debian 9 上运行的 ASP.NET Core 应用程序。
-  * .NET Core 2.2 或更高版本上 Alpine 3.8 上运行的 ASP.NET Core 应用程序。
-  * .NET Core 2.2 或更高版本在 Ubuntu 18.04 上运行的 ASP.NET Core 应用程序。
+* 快照集合适用于以下 Azure Kubernetes 服务 Web 应用：
+  * 在 Debian 9 中的 .Net Core 2.2 或更高版本上运行的 ASP.NET Core 应用程序。
+  * 在 Alpine 3.8 中的 .Net Core 2.2 或更高版本上运行的 ASP.NET Core 应用程序。
+  * 在 Ubuntu 18.04 中的 .Net Core 2.2 或更高版本上运行的 ASP.NET Core 应用程序。
 
     > [!NOTE]
-    > 若要帮助您为我们提供了的 AKS 中的快照调试程序启用支持[存储库包含一组演示安装上的 Docker 映像的 Dockerfile](https://github.com/Microsoft/vssnapshotdebugger-docker)。
+    > 为了有助于在 AKS 中启用对 Snapshot Debugger 的支持，我们提供了一个[包含一组用于演示 Docker 映像上的设置的 Dockerfile 的存储库](https://github.com/Microsoft/vssnapshotdebugger-docker)。
 
-## <a name="open-your-project-and-start-the-snapshot-debugger"></a>打开你的项目并启动快照调试器
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>打开项目并启动 Snapshot Debugger
 
-1. 打开你想要快照调试的项目。
+1. 打开要进行快照调试的项目。
 
     > [!IMPORTANT]
-    > 您需要打开到快照调试*相同版本的源代码*，它发布到 Azure Kubernetes 服务。
+    > 对于快照调试，需要打开与已发布到 Azure Kubernetes 服务的相同版本的源代码。
 
-1. 附加 Snapshot Debugger。 可以使用多种不同的方法之一：
+1. 选择“调试”>“附加 Snapshot Debugger...”。选择部署 Web 应用的 AKS 资源和一个 Azure 存储帐户，然后单击“附加”。
 
-    * 选择**调试 > 附加 Snapshot Debugger...**.选择你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后依次**附加**。
+      ![从“调试”菜单启动 Snapshot Debugger](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![启动快照调试程序从调试菜单](../debugger/media/snapshot-debug-menu-attach.png)
+      ![选择 Azure 资源](../debugger/media/snapshot-select-azure-resource-aks.png)
 
-    * 右键单击项目，然后选择**发布**，然后在发布页上，单击**附加 Snapshot Debugger**。 选择你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后依次**附加**。
-    ![启动快照调试程序与发布页](../debugger/media/snapshot-publish-attach.png)
-
-    * 在调试目标下拉列表菜单中选择**快照调试器**、 命中**F5** ，然后如果需要选择你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后依次**附加**。
-    ![启动快照调试程序与 F5 下拉列表菜单](../debugger/media/snapshot-F5-dropdown-attach.png)
-
-    * 使用云资源管理器 (**视图 > 云资源管理器**)，右键单击你的 web 应用部署到 AKS 资源和 Azure 存储帐户，然后单击**附加 Snapshot Debugger**。
-
-      ![启动快照调试程序与云资源管理器](../debugger/media/snapshot-launch.png)
-
-    > [!NOTE]
-    > Application Insights 站点扩展还支持快照调试。 如果你遇到的"站点扩展已过期"错误消息，请参阅[故障排除提示和已知的问题的快照调试](../debugger/debug-live-azure-apps-troubleshooting.md)升级的详细信息。
+Visual Studio 现在处于快照调试模式下。
 
    ![快照调试模式](../debugger/media/snapshot-message.png)
 
    “模块”窗口显示何时 Azure 应用服务的所有模块都已加载（依次选择“调试”>“窗口”>“模块”可打开此窗口）。
 
-   ![检查模块窗口](../debugger/media/snapshot-modules.png)
+   ![选中“模块”窗口](../debugger/media/snapshot-modules.png)
 
 ## <a name="set-a-snappoint"></a>设置快照点
 
@@ -112,47 +101,47 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动。
 
-**需要帮助？** 请参阅[疑难解答和已知的问题](../debugger/debug-live-azure-apps-troubleshooting.md)并[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
+**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
 
 ## <a name="set-a-conditional-snappoint"></a>设置条件性快照点
 
 如果难以在应用中重新创建某一特定状态，请考虑使用条件性快照点是否会有所帮助。 条件性快照点可帮助避免在应用进入所需状态前获取快照，例如，变量具有你想要检查的特定值的情况。 可以使用表达式、筛选器或命中次数设置表达式。
 
-#### <a name="to-create-a-conditional-snappoint"></a>若要创建条件的吸附点
+#### <a name="to-create-a-conditional-snappoint"></a>创建条件性快照点
 
-1. 右键单击吸附点图标 （空心球），然后选择**设置**。
+1. 右键单击快照点图标（空心球）并选择“设置”。
 
    ![选择“设置”](../debugger/media/snapshot-snappoint-settings.png)
 
-1. 在吸附点设置窗口中，键入一个表达式。
+1. 在“快照点设置”窗口中，键入一个表达式。
 
-   ![键入一个表达式](../debugger/media/snapshot-snappoint-conditions.png)
+   ![键入表达式](../debugger/media/snapshot-snappoint-conditions.png)
 
-   在上图中，仅拍摄快照的吸附点时`visitor.FirstName == "Dan"`。
+   在上图中，仅在 `visitor.FirstName == "Dan"` 时为快照点拍摄快照。
 
 ## <a name="set-a-logpoint"></a>设置记录点
 
-除了在命中吸附点时，拍摄快照，还可以配置吸附点将消息记录 （即，创建记录点）。 您可以设置个记录点，而无需重新部署您的应用程序。 记录点几乎执行，并会导致没有影响或负面影响到你正在运行的应用程序。
+除了在点击快照点时拍摄快照，还可以配置快照点以记录消息（即创建记录点）。 无需重新部署应用即可设置记录点。 记录点通过虚拟方式执行，不会对正在运行的应用程序产生任何影响或副作用。
 
-#### <a name="to-create-a-logpoint"></a>若要创建的记录点
+#### <a name="to-create-a-logpoint"></a>创建记录点
 
-1. 右键单击吸附点图标 （蓝色六边形），然后选择**设置**。
+1. 右键单击快照点图标（蓝色六边形），然后选择“设置”。
 
-1. 在吸附点设置窗口中，选择**操作**。
+1. 在“快照点设置”窗口中，选择“操作”。
 
     ![创建记录点](../debugger/media/snapshot-logpoint.png)
 
-1. 在中**消息**字段中，可以输入想要记录新的日志消息。 您也可以通过将它们放在大括号内将日志消息中计算变量。
+1. 在“消息”字段中，可以输入想要记录的新日志消息。 还可以将日志消息中的变量放在大括号中，从而计算它们的值。
 
-    如果愿意**将发送到输出窗口**，当命中记录点，请在诊断工具窗口中将显示该消息。
+    如果选择“发送到输出窗口”，则在点击记录点时，消息将出现在“诊断工具”窗口中。
 
-    ![Diagsession 窗口中的记录点数据](../debugger/media/snapshot-logpoint-output.png)
+    ![“诊断工具”窗口中的记录点数据](../debugger/media/snapshot-logpoint-output.png)
 
-    如果愿意**发送到应用程序日志**，当命中记录点，请任意位置，您可以看到消息从出现的消息`System.Diagnostics.Trace`(或`ILogger`.NET Core 中)，如[App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果选择“发送到应用程序日志”，则在点击记录点时，消息会出现在可以看到来自 `System.Diagnostics.Trace`（或 .NET Core 中的 `ILogger`）的消息的任何位置，例如 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中，已了解如何使用 Azure Kubernetes Snapshot Debugger。 您可能想要阅读有关此功能的更多详细信息。
+在本教程中，你已了解如何使用适用于 Azure Kubernetes 的 Snapshot Debugger。 你可能想要阅读有关此功能的更多详细信息。
 
 > [!div class="nextstepaction"]
 > [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)

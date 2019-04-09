@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223359"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790363"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
@@ -51,8 +51,8 @@ ms.locfileid: "57223359"
 |-|-|
 |解决方案资源管理器搜索|Ctrl+;|
 |在任何工具窗口中将焦点置于搜索框中|Alt+`（工具窗口有焦点时）|
-|快速启动|Ctrl+Q|
-|快速启动范围结果|-   @opt 选项<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 打开文档|
+|搜索框|Ctrl+Q|
+|搜索框范围结果|-   @opt 选项<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 打开文档|
 |在工具选项中搜索|Ctrl+E|
 
 ## <a name="editor-find"></a>编辑器查找

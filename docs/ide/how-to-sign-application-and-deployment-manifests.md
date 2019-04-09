@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916878"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790844"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单签名
 
@@ -35,11 +35,11 @@ ms.locfileid: "55916878"
  有关创建密钥文件的详细信息，请参阅[如何：创建公钥/私钥对](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 仅支持具有 .pfx 扩展名的个人信息交换 (PFX) 密钥文件。 但是，可通过单击项目属性“签名”页上的“从存储中选择”，从当前用户的 Windows 证书存储中选择其他类型的证书。
+> Visual Studio 仅支持具有 .pfx 扩展名的个人信息交换 (PFX) 密钥文件。 但是，可通过单击项目属性“签名”页上的“从存储中选择”，从当前用户的 Windows 证书存储中选择其他类型的证书。
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>使用证书对应用程序和部署清单进行签名
+## <a name="sign-using-a-certificate"></a>使用证书签名
 
-1.  转到项目属性窗口（在解决方案资源管理器中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入项目属性，或在解决方案资源管理器中按 Alt+Enter）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。
+1.  转到项目属性窗口（右键单击“解决方案资源管理器”中的项目节点，然后选择“属性”）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。
 
 2.  单击“从存储中选择”按钮。
 
@@ -52,7 +52,7 @@ ms.locfileid: "55916878"
 
 4.  还可以在“时间戳服务器 URL”文本框中指定时间戳服务器的地址。 此服务器提供一个时间戳，用于指定对清单进行签名的时间。
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>使用现有密钥文件对应用程序和部署清单进行签名
+## <a name="sign-using-an-existing-key-file"></a>使用现有密钥文件签名
 
 1.  在“签名”页上，选中“为 ClickOnce 清单签名”复选框。
 
@@ -69,7 +69,7 @@ ms.locfileid: "55916878"
 
 4.  输入访问密钥文件的密码，然后按 Enter。
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>使用测试证书对应用程序和部署清单进行签名
+## <a name="sign-using-a-test-certificate"></a>使用测试证书签名
 
 1.  在“签名”页上，选中“为 ClickOnce 清单签名”复选框。
 

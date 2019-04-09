@@ -2,18 +2,20 @@
 title: 步骤 1：创建项目并向窗体添加表
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940654"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647487"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步骤 1：创建项目并向窗体添加表
 
@@ -21,7 +23,23 @@ ms.locfileid: "55940654"
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>创建项目并向窗体添加表
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+::: moniker range="vs-2017"
+
+1. 在菜单栏上选择“文件”>“新建”>“项目”。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在“开始”窗口上，选择“创建新项目”。
+
+1. 在搜索框中，键入“WPF”，选择“WPF 应用 (.NET Framework)”，然后选择“下一步”。
+
+   （如果没有看到“WPF 应用(.NET Framework)”模板，请使用 Visual Studio 安装程序安装“.NET 桌面开发”工作负载。）
+
+1. 为项目提供名称“MatchingGame”，然后选择“创建”
+
+::: moniker-end
 
 2. 如果没有使用 Visual Studio Express，则需要先选择一种编程语言。 在“已安装的模板”列表中选择“Visual C#”或“Visual Basic”。
 

@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928031"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789700"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 
-项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击“解决方案资源管理器”中的项目节点并选择“属性”，或者在菜单栏上的“快速启动”搜索框中键入“属性”，即可访问项目属性。
+项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击“解决方案资源管理器”中的项目节点并选择“属性”，或者在菜单栏上的搜索框中键入“属性”并从结果中选择“属性窗口”，即可访问项目属性。
 
 ![项目上下文菜单](../ide/media/vs2015_proj_prop_menu.gif)
 

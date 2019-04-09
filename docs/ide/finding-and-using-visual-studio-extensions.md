@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a46b4187b4f4fb2c0523a7dcf3ac5c5fa391afe5
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268549"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790753"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
@@ -33,7 +33,7 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 
 ::: moniker range=">=vs-2019"
 
-使用“管理扩展”对话框来安装和管理 Visual Studio 扩展。 若要打开“管理扩展”对话框，请选择“扩展” > “管理扩展”。 或者，在“快速启动”搜索框中键入“扩展”，然后选择“管理扩展”。
+使用“管理扩展”对话框来安装和管理 Visual Studio 扩展。 若要打开“管理扩展”对话框，请选择“扩展” > “管理扩展”。 或者，在搜索框中键入“扩展”，然后选择“管理扩展”。
 
 ::: moniker-end
 

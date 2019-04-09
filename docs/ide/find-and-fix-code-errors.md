@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223606"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790519"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -44,7 +44,7 @@ Visual Studio 提供了一组功能强大的项目构建和调试工具。 在�
 
 ![Visual Studio 输出和错误列表](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-单击“错误列表”窗口中的错误行，跳转至发生错误的行。 （或单击右上方的“快速启动”栏，在其中键入行号，然后按 Enter，打开行号。 这是转至“选项”对话框最快的方法，可以在此打开行号。 了解如何使用“快速启动”栏，可以省去多次单击 UI！）
+单击“错误列表”窗口中的错误行，跳转至发生错误的行。 （或按 Ctrl+Q，键入行号，然后从结果中选择“打开或关闭行号”来打开行号。 这是转至“选项”对话框最快的方法，可以在此打开行号。）
 
 ![Visual Studio 具有行号的编辑器](../ide/media/vs_ide_gs_debug_line_numbers.png)
 

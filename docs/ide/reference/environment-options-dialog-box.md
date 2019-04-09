@@ -11,20 +11,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36b1d371846ad65fd34a7a5cbd4e8bdcdc0ebd9b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983710"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790038"
 ---
-# <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
+# <a name="options-dialog-box-environment"></a>“选项”对话框：环境
 
-使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过在菜单栏上依次选择“工具”、“选项”、“环境”来访问“环境”页。
+使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过依次选择“工具” > “选项”“环境”来访问“环境”页。
 
 |有关如何执行下列操作的信息|查看|
 | - |---------|
 |自定义窗口、菜单和其他 IDE 元素的外观和行为。|[“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)|
+|若要指定是否在计算机之间漫游设置。|[“帐户”、“环境”、“选项”对话框](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |更改文件的自动保存和还原设置。|[“选项”对话框 ->“环境”->“自动恢复”](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |建立文档的显示和管理设置，其中包括“其他”文件的行为。|[“选项”对话框 ->“环境”->“文档”](../../ide/reference/documents-environment-options-dialog-box.md)|
 |自定义更新如何发生以及如何管理扩展。|[“扩展”，“环境”，“选项”对话框](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
@@ -33,10 +34,7 @@ ms.locfileid: "57983710"
 |自定义存储用户设置信息的 vssettings 文件的位置。|[“选项”对话框 ->“环境”->“导入和导出设置”](../../ide/reference/import-and-export-settings-environment-options-dialog-box.md)|
 |为 Visual Studio 选择默认语言。|[“选项”对话框 ->“环境”->“区域设置”](../../ide/reference/international-settings-environment-options-dialog-box.md)|
 |若要设置键盘映射选项。|[“选项”对话框 ->“环境”->“键盘”](../../ide/reference/keyboard-environment-options-dialog-box.md)|
-|若要指定是否启用通知。|[“选项”对话框 ->“环境”->“通知”](../../ide/reference/notifications-environment-options-dialog-box.md)|
-|若要指定快速启动窗口的选项。|[“选项”对话框 ->“环境”->“快速启动”](../../ide/reference/quick-launch-environment-options-dialog-box.md)|
 |指定启动选项。|[“选项”对话框 ->“环境”->“启动”](../../ide/reference/startup-environment-options-dialog-box.md)|
-|若要指定是否在计算机之间漫游设置。|[“选项”对话框 ->“环境”->“同步设置”](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |了解如何为任务和任务列表设置选项|[“选项”对话框 ->“环境”->“任务列表”](../../ide/reference/task-list-environment-options-dialog-box.md)|
 |更改默认的“主页”和“搜索”页，更改系统源文件编辑器并配置 Internet Explorer 选项。|[“选项”对话框 ->“环境”->“Web 浏览器”](../../ide/reference/web-browser-environment-options-dialog-box.md)|
 

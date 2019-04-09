@@ -1,6 +1,6 @@
 ---
 title: 与我们交流
-ms.date: 10/09/2018
+ms.date: 03/30/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
@@ -11,12 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8265a134ab870144aa41330dbbc21bb4412ff1ca
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 038b094949a66fef0bb07fc605e069a441913ff5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953514"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857133"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 产品反馈
 
@@ -24,11 +26,11 @@ ms.locfileid: "56953514"
 
 ## <a name="i-want-to-report-a-problem-with-visual-studio"></a>我想报告 Visual Studio 的问题
 
-如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择“快速启动”旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”。 接下来，Visual Studio 在浏览器中打开[开发人员社区](https://developercommunity.visualstudio.com)页。在此页中，可以在登录后报告问题。 有关详细信息，请参阅[如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio.md)。
+如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择搜索框旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”。 接下来，Visual Studio 在浏览器中打开[开发人员社区](https://developercommunity.visualstudio.com)页。在此页中，可以在登录后报告问题。 有关详细信息，请参阅[如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>我想提有关 Visual Studio 功能的建议
 
-如果认为我们可以在哪些地方进行改进，请告诉我们！ 在 Visual Studio 中，依次选择菜单栏中的“帮助” > “发送反馈” > “提供建议”。 接下来，Visual Studio 在浏览器中打开[开发人员社区](https://developercommunity.visualstudio.com)页。在此页中，可以在登录后分享反馈。 有关详细信息，请参阅[提出 Visual Studio 2017 功能建议](suggest-a-feature.md)。
+如果认为我们可以在哪些地方进行改进，请告诉我们！ 在 Visual Studio 中，依次选择菜单栏中的“帮助” > “发送反馈” > “提供建议”。 接下来，Visual Studio 在浏览器中打开[开发人员社区](https://developercommunity.visualstudio.com)页。在此页中，可以在登录后分享反馈。 有关详细信息，请参阅[提出 Visual Studio 功能建议](suggest-a-feature.md)。
 
 ### <a name="rate-this-product"></a>评价此产品
 
@@ -36,7 +38,7 @@ Visual Studio 预发布版本有“评价此产品”菜单项，而已发布产
 
 ## <a name="i-want-to-contact-microsoft-support"></a>我要联系 Microsoft 技术支持人员
 
-生命周期有关 Visual Studio 支持信息，请参阅[支持生命周期和服务](/visualstudio/productinfo/vs-servicing-vs)页。
+有关 Visual Studio 支持信息，请参阅[产品生命周期和服务](/visualstudio/productinfo/vs-servicing-vs)页。
 
 有关其他 Microsoft 产品和服务，请参阅 [Microsoft 支持](https://go.microsoft.com/fwlink/?LinkID=99019)以获取联机帮助。
 
@@ -55,7 +57,7 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我希望帮助改进 Visual Studio 文档
 
-请使用我们位于页面底部的“此页面是否有所帮助?”反馈按钮。 所有我们的文档页面上都有这个按钮。 或者，你可以通过 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 使用同样位于页面底部的“登录以提供文档反馈”按钮将反馈添加到任何 Visual Studio 页面。
+请使用我们位于页面底部的“此页面是否有所帮助?”反馈按钮。 所有我们的文档页面上都有这个按钮。 或者，你可以通过 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 使用 GitHub 帐户将反馈添加到任何 Visual Studio 页面；选择同样位于页面底部的“登录以提供文档反馈”按钮。
 
 ## <a name="see-also"></a>请参阅
 

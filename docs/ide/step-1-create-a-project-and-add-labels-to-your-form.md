@@ -2,18 +2,20 @@
 title: 步骤 1：创建项目并向窗体添加标签
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1878d8a57ce8eddc599e14b5961179c7cdc48e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917748"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647396"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步骤 1：创建项目并向窗体添加标签
 
@@ -24,23 +26,39 @@ ms.locfileid: "55917748"
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>创建项目并设置窗体属性
 
-1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
+::: moniker range="vs-2017"
 
-2.  在“已安装的模板”列表中选择“C#”或“Visual Basic”。
+1.  在菜单栏上选择“文件”>“新建”>“项目”。
 
-3.  在模板列表中，选择“Windows 窗体应用程序”模板，将其命名为“Math Quiz”，然后选择“确定”按钮。
+1.  在“已安装的模板”列表中选择“C#”或“Visual Basic”。
+
+1.  在模板列表中，选择“Windows 窗体应用程序”模板，将其命名为“Math Quiz”，然后选择“确定”按钮。
 
      此时将显示名为“Form1.cs”或“Form1.vb”的窗体，具体取决于所选择的编程语言。
 
-4.  选择该窗体，然后将其“Text”属性设置为“Math Quiz”。
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在“开始”窗口上，选择“创建新项目”。
+
+1. 在搜索框中，键入“WPF”，选择“WPF 应用 (.NET Framework)”，然后选择“下一步”。
+
+   （如果没有看到“WPF 应用(.NET Framework)”模板，请使用 Visual Studio 安装程序安装“.NET 桌面开发”工作负载。）
+
+1. 为项目提供名称“MathQuiz”，然后选择“创建”
+
+::: moniker-end
+
+1.  选择该窗体，然后将其“Text”属性设置为“Math Quiz”。
 
      “属性”窗口包含窗体的各个属性。
 
-5.  将窗体大小更改为 500 像素（宽）× 400 像素（高）。
+1.  将窗体大小更改为 500 像素（宽）× 400 像素（高）。
 
      您可通过拖动窗体边缘来调整其大小，直到集成开发环境 (IDE) 的左下角显示正确的大小。 或者，你也可以更改“Size”属性的值。
 
-6.  将“FormBorderStyle”属性的值更改为“Fixed3D”，并将“MaximizeBox”属性设置为“False”。
+1.  将“FormBorderStyle”属性的值更改为“Fixed3D”，并将“MaximizeBox”属性设置为“False”。
 
      这些值用于防止测验对象改变窗体大小。
 

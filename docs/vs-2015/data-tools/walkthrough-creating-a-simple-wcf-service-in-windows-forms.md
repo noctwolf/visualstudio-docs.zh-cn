@@ -46,7 +46,7 @@ ms.locfileid: "58933963"
   
      在中**解决方案资源管理器**、 双击 IService1.vb 或 IService1.cs 并找到以下行：  
   
-     [！ 代码-c# [WCFWalkthrough #4] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1 (2).cs #4)] [！ 代码 vb [WCFWalkthrough #4] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1 (2).vb #4)]  
+     [！ 代码-C# [WCFWalkthrough #4] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1 (2).cs #4)] [！ 代码 vb [WCFWalkthrough #4] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1 (2).vb #4)]  
   
      把`value`参数的类型更改为`String`：  
   
@@ -59,7 +59,7 @@ ms.locfileid: "58933963"
   
      在中**解决方案资源管理器**、 双击 Service1.vb 或 Service1.cs 并找到以下行：  
   
-     [！ 代码-c# [WCFWalkthrough #5] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1 (2).cs #5)] [！ 代码 vb [WCFWalkthrough #5] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1 (2).vb #5)]  
+     [！ 代码-C# [WCFWalkthrough #5] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1 (2).cs #5)] [！ 代码 vb [WCFWalkthrough #5] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1 (2).vb #5)]  
   
      更改值参数类型为`String`：  
   
