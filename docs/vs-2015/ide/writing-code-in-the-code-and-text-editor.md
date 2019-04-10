@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794236"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366609"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在代码和文本编辑器中编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,7 +122,7 @@ Visual Studio 编辑器提供了许多功能，让你可以更轻松地编写和
 
  ![向前和向后导航按钮](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- 也可以在代码窗口中使用增强的滚动条来获取代码的鸟瞰视图。 映射模式下，可向上移动光标和向下滚动条，有关详细信息，请参阅代码的预览，请参阅[如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+ 也可以在代码窗口中使用增强的滚动条来获取代码的鸟瞰视图。 映射模式下，可向上移动光标和向下滚动条，有关详细信息，请参阅代码的预览，请参阅[如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)。  
 
  以下命令是特定于代码的导航方法：  
 
@@ -132,7 +132,7 @@ Visual Studio 编辑器提供了许多功能，让你可以更轻松地编写和
 |定位到|(**编辑/导航到**或 CTRL +，):活动解决方案中查找符号或文件。 它帮助你从查询中选取一组很好的匹配结果。 可通过使用 Camel 大小写格式和下划线字符将符号分为关键字，从而搜索符号中包含的关键字。|  
 |查找所有引用|（上下文菜单）：在解决方案中查找对选定元素的所有引用。|  
 |转到定义|（上下文菜单或 F12）：查找所选元素的定义。|  
-|查看定义|（上下文菜单或 Alt + F12）：查找所选元素的定义，并将其显示在弹出窗口。 有关详细信息，请参阅[如何：使用查看定义 (Alt+F12) 查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。|  
+|查看定义|（上下文菜单或 Alt + F12）：查找所选元素的定义，并将其显示在弹出窗口。 有关详细信息，请参阅[如何：查看和编辑代码使用查看定义 (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。|  
 |下一个方法，上一个方法|（“编辑/下一个方法，上一个方法”）在 Visual Basic 代码文件中，使用这些命令将插入点移动到不同的方法。|  
 |引用突出显示|单击源代码中的符号时，将在文档中突出显示该符号的所有实例。 突出显示的符号可能包括声明和引用，以及许多其他“查找所有引用”  将返回的符号。 其中包括类、对象、变量、方法和属性的名称。 在 Visual Basic 代码中，也将突出显示许多控件结构的关键字。 若要移至下一个或上一个突出显示的符号，请按 CTRL+SHIFT+向下键或 CTRL+SHIFT+向上键。 可以在“工具/选项/环境/字体和颜色/突出显示的引用” |  
 |查找代码相关信息|在代码编辑器中使用 CodeLens 时，可以找到有关特定代码的信息，如更改和更改者、引用、Bug、工作项、代码评审和单元测试状态。 将 Visual Studio Enterprise 与 Team Foundation Server 一起使用时，CodeLens 的工作原理类似于警告显示。 请参阅[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)。|  
@@ -174,7 +174,7 @@ Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用
 
 ### <a name="filter-your-search"></a>筛选搜索
 
-若要将搜索范围限制为仅搜索代码符号，请在“导航到”查询前面加上“@”字符。 例如，如果搜索 `@application`，“导航到”只会显示其中包含单词“application”的类。
+若要限制搜索范围以仅代码符号，前面加上与在导航到查询"\@"字符。 例如，如果搜索 `@application`，“导航到”只会显示其中包含单词“application”的类。
 
 如果在代码中使用骆驼拼写法，则可以通过仅输入代码元素名称的大写字母，更快地找到代码元素。 例如，如果代码有一个名为 `ViewSwitcher` 的组件，则可以通过在“导航到”窗口中仅输入该名称的大写字母 (`"VS"`) 来找到它。
 
@@ -183,7 +183,7 @@ Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用
 此功能在代码名称很长的情况下特别有用。
 
 ## <a name="customize-the-editor"></a>自定义编辑器  
- “导入和导出设置”：可以与其他开发人员共享设置，使自己的设置符合某一标准，或者通过使用“工具” Wizard 菜单上的“导入和导出设置向导” 返回 Visual Studio 的默认设置。 可以更改常规设置或特定于语言和项目的设置。  
+ **导入和导出设置**:可以与其他开发人员共享设置，使自己的设置符合标准，或者通过使用 Visual Studio 的默认设置为返回**导入和导出设置向导**上**工具**菜单。 可以更改常规设置或特定于语言和项目的设置。  
 
  **键盘映射**:可以定义新热键或重新定义现有热键的工具/选项/环境/键盘设置中。 有关热键的详细信息，请参阅[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
 
@@ -191,13 +191,13 @@ Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用
 
 -   [Visual Basic 设置](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [使用 Visual Studio C# 开发环境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [使用适用于 C# Visual Studio 开发环境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [“选项”->“文本编辑器”->“JavaScript”->“格式设置”](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [选项，文本编辑器，JavaScript，格式](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>本节内容  
 
--   [查找和替换文本](../ide/finding-and-replacing-text.md)  
+-   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
 
 -   [编码和换行符](../ide/encodings-and-line-breaks.md)  
 
@@ -207,17 +207,17 @@ Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用
 
 -   [工作效率提示](../ide/productivity-tips-for-visual-studio.md)  
 
--   [使用 IntelliSense](../ide/using-intellisense.md)  
+-   [Using IntelliSense](../ide/using-intellisense.md)  
 
 -   [自定义编辑器](../ide/customizing-the-editor.md)  
 
 -   [如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [如何：使用查看定义 (Alt+F12) 查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [如何：查看和编辑代码使用查看定义 (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [使用灯泡执行快速操作](../ide/perform-quick-actions-with-light-bulbs.md)  
+-   [使用电灯泡执行快速操作](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [代码片段](../ide/code-snippets.md)  
+-   [代码段](../ide/code-snippets.md)  
 
 -   [使用工具箱](../ide/using-the-toolbox.md)  
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8045b5f52dc57838731c24d41534c05b7cd1094
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723248"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366804"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>监视使用监视窗口和快速监视的变量
 
@@ -73,8 +73,8 @@ int main()
 1. 继续进行调试，通过选择**调试** > **单步执行**或按**F11**根据需要以继续。 在变量中的值**Watch**窗口中更改在循环`for`循环。
 
 >[!NOTE]
->仅 c + +
->- 您可能需要限定变量名或使用变量名称的表达式的上下文。 上下文是函数、 源文件，该文件或变量所处的模块。 如果需要限定上下文，使用[上下文运算符 （c + +）](../debugger/context-operator-cpp.md)中的语法**名称**中**观看**窗口。
+>有关C++，
+>- 您可能需要限定变量名或使用变量名称的表达式的上下文。 上下文是函数、 源文件，该文件或变量所处的模块。 如果需要限定上下文，使用[上下文运算符 (C++)](../debugger/context-operator-cpp.md)中的语法**名称**中**观看**窗口。
 >
 >- 您可以添加寄存器名和使用的变量名 **$\<注册&nbsp;名称 >** 或 **@\<注册&nbsp;名称 >** 到**名称**中**监视**窗口。 有关详细信息，请参阅 [Pseudovariables](../debugger/pseudovariables.md)。
 
@@ -91,6 +91,19 @@ int main()
 ![观看表达式错误](../debugger/media/watchexpressionerror.png "观看表达式错误")
 
 中可能会显示一个带有两个波浪条纹图标圆圈**监视**窗口。 此图标表示调试器会计算该表达式，因为潜在的跨线程依赖关系。 计算代码需要暂时，运行您的应用程序中的其他线程，但由于在中断模式下，应用程序中的所有线程通常已都停止。 允许其他线程暂时运行可能对您的应用程序和调试器的状态的意外的影响可以忽略断点和这些线程上的异常等事件。
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-watch-window"></a>在监视窗口中搜索
+
+您可以搜索的名称、 值和类型的列中的关键字**监视**使用上面的每个窗口的搜索栏的窗口。 按 ENTER 或选择其中一个箭头，以执行搜索。 若要取消正在进行的搜索，请在搜索栏中选择"x"图标。
+
+使用左右箭头键 (Shift + F3 和 F3，分别) 之间进行导航找到匹配项。
+
+![在监视窗口中的搜索](../debugger/media/ee-search-watch.png "监视窗口中的搜索")
+
+若要使搜索更多或更少全面，使用**搜索更深入地**顶部的下拉列表中**监视**窗口可选择要搜索到的层深度嵌套的对象。 
+
+::: moniker-end
 
 ### <a name="bkmk_refreshWatch"></a> 刷新监视值
 
@@ -218,8 +231,8 @@ public class Program
 
 若要仅显示**动态视图**对象，将添加**动态**动态对象名称后格式说明符**观看**窗口：
 
-- 对于 C#：`ObjectName, dynamic`
-- 对于 Visual Basic：`$dynamic, ObjectName`
+- 对于 C#： `ObjectName, dynamic`
+- 对于 Visual Basic： `$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#调试器不会自动重新计算中的值**动态视图**当进入下一行代码。
@@ -282,4 +295,4 @@ static void Main(string[] args)
 - [什么是调试？](../debugger/what-is-debugging.md)
 - [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)
 - [首先看一下调试](../debugger/debugger-feature-tour.md)
-- [调试器窗口](../debugger/debugger-windows.md)
+- [“调试器”窗口](../debugger/debugger-windows.md)

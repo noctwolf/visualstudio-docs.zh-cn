@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5ebc7c3c172502198f56a8e35107f37d51ef2509
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: ba255d1d1e906e8fe7bacd05d1f4afd4b7bf413b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355719"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366466"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -200,25 +200,37 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更高版本中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更高版本中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**(Shift + Alt + P)。
 
-3. 将限定符字段设置为**\<远程计算机名称 >： 端口**。
+3. 将限定符字段设置为**\<远程计算机名称 >** 然后按**Enter**。
+
+    验证 Visual Studio 将所需的端口添加到计算机名称，将出现在格式： **\<远程计算机名称 >： 端口**
 
     ::: moniker range=">=vs-2019"
-    **\<远程计算机名称 >: 4024**于 Visual Studio 2019
+    在 Visual Studio 2019，你会看到**\<远程计算机名称 >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<远程计算机名称 >: 4022**上 Visual Studio 2017
+    在 Visual Studio 2017 中，你会看到**\<远程计算机名称 >: 4022**
     ::: moniker-end
+    端口是必需的。 如果看不到的端口号，请手动添加它。
+
 4. 单击“刷新”。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 可以使用`ipconfig`获取 IPv4 地址的命令行中。
 
 5. 勾选“显示所有用户的进程”  。
+
 6. 键入进程名称，可以快速找到的第一个字母**w3wp.exe**为 ASP.NET 4.5。
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess.png "RemoteDBG_AttachToProcess")
+    如果有多个进程显示**w3wp.exe**，检查**用户名**列。 在某些情况下，**用户名**列显示你的应用程序池名称，如**IIS APPPOOL\DefaultAppPool**。 如果你看到应用程序池标识正确的进程的简单办法是创建一个新应用池命名为你想要调试的应用程序实例，然后您可以找到它轻松地在**用户名**列。
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. 单击“附加”
 
@@ -229,7 +241,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
     应在 Visual Studio 中命中断点。
 
-## <a name="bkmk_openports"></a> 疑难解答Windows Server 上打开所需的端口
+## <a name="bkmk_openports"></a> 故障排除：Windows Server 上打开所需的端口
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，您可能需要验证端口打开。
 

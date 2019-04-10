@@ -19,17 +19,17 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766147"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366726"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可以使用“性能向导”为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集性能数据。 可以分析在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开的 Web 应用程序，也可以分析位于本地计算机且未在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中打开的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 站点。  
+可以使用“性能向导”  为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集性能数据。 可以分析在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开的 Web 应用程序，也可以分析位于本地计算机且未在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中打开的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 站点。  
   
 > [!NOTE]
 >  利用“性能向导”  ，你可以将层交互 (TIP) 数据和/或 JScript 性能数据添加到收集的分析数据中。 TIP 选项从服务器端进程收集数据。 JScript 分析从本地或远程网站运行的脚本处收集数据。 大多数情况下，应只选其中一项。  
@@ -84,7 +84,7 @@ ms.locfileid: "54766147"
   
    - 对于基于文件的网站，请键入路径，例如文件 ///**c:\WebSites\MySite\default.aspx**。 这将导致对位于 c:\webSites\MySite 上的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动 http://localhost:nnnn/MySite/default.aspx 网页，从而启动会话。  
   
-   - 对于想在其中收集 JavaScript 数据的外部网站，请输入 URL（如 http://www.contoso.com）。  
+   - 对于外部网站，你想要收集 JavaScript 数据上，键入 URL，例如 http:\//www.contoso.com。  
   
      有关详细信息，请查看 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 目标二进制文件的属性页。  
   
