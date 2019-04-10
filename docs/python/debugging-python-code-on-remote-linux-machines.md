@@ -3,19 +3,19 @@ title: 在远程 Linux 计算机上调试 Python 代码
 description: 使用 Visual Studio 调试在远程 Linux 计算机上运行的 Python 代码，包括必要的配置步骤、安全性和故障排除。
 ms.date: 12/06/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb98a94e60d84fc48078be396e0fb48dd8952c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945737"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366739"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 

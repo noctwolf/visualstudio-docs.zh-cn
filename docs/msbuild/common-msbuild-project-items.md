@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610341"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897681"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。
@@ -46,9 +46,9 @@ ms.locfileid: "56610341"
 |项元数据名称|说明|
 |---------------|-----------------|
 |name|可选的字符串。 组件的显示名称。|
-|GUID|可选的字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|
-|VersionMajor|可选的字符串。 组件版本号的主要部分。 例如，如果完整版本号是“5.46”，则显示“5”。|
-|VersionMinor|可选的字符串。 组件版本号的次要部分。 例如，如果完整版本号是“5.46”，则显示“46”。|
+|GUID|必选字符串。 组件的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|
+|VersionMajor|必选字符串。 组件版本号的主要部分。 例如，如果完整版本号是“5.46”，则显示“5”。|
+|VersionMinor|必选字符串。 组件版本号的次要部分。 例如，如果完整版本号是“5.46”，则显示“46”。|
 |LCID|可选的字符串。 组件的 LocaleID。|
 |WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|
 |Isolated|可选的布尔值。 指定组件是否为免注册组件。|
@@ -76,7 +76,7 @@ ms.locfileid: "56610341"
 |name|可选的字符串。 引用的显示名称。|
 |项目|可选的字符串。 引用的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|
 |Package|可选的字符串。 所引用的项目文件的路径。|
-|ReferenceOutputAssembly|可选的布尔值。 如果设置为 `false`，则不包括引用项目的输出作为此项目的[引用](#Reference)，但仍可确保在此项目之前生成其他项目。 默认为 `true`。|
+|ReferenceOutputAssembly|可选的布尔值。 如果设置为 `false`，则不包括引用项目的输出作为此项目的[引用](#reference)，但仍可确保在此项目之前生成其他项目。 默认为 `true`。|
 
 ### <a name="compile"></a>Compile
  表示编译器的源文件。
