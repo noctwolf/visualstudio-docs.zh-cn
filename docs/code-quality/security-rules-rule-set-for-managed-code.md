@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c43e1edc2e2aae13fef6df4b4fe414b933067798
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018384"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366037"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>托管代码的“安全规则”规则集
 应包括 Microsoft 安全规则规则集以最大程度地报告潜在安全问题数。
@@ -63,15 +63,18 @@ ms.locfileid: "59018384"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透明方法不得使用安全断言|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不得调入本机代码|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|程序集应具有有效的强名称|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|不要使用不安全反序列化程序 BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|如果没有第一个设置 BinaryFormatter.Binder 不调用 BinaryFormatter.Deserialize|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|确保在调用 BinaryFormatter.Deserialize 之前设置 BinaryFormatter.Binder|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|查看 SQL 注入漏洞的代码|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|查看 XSS 漏洞的代码|
-|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|查看文件路径注入安全漏洞的代码|
-|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|查看信息泄漏漏洞的代码|
-|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|查看 LDAP 注入安全漏洞的代码|
-|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|查看进程命令注入安全漏洞的代码|
-|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|查看打开重定向漏洞的代码|
-|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|检查代码以获得 XPath 注入漏洞|
-|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|查看 XML 注入安全漏洞的代码|
-|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|查看 XAML 注入安全漏洞的代码|
-|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|查看 DLL 注入安全漏洞的代码|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|查看文件路径注入漏洞的代码|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|查看信息泄露漏洞的代码|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|查看 LDAP 注入漏洞的代码|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|查看进程命令注入漏洞的代码|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|查看公开重定向漏洞的代码|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|查看 XPath 注入漏洞的代码|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|查看 XML 注入漏洞的代码|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|查看 XAML 注入漏洞的代码|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|查看 DLL 注入漏洞的代码|
 |[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|查看正则表达式注入漏洞的代码|

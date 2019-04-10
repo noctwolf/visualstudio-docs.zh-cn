@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526355"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366297"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 
@@ -31,7 +31,7 @@ ms.locfileid: "57526355"
 
 ![固定数据提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>编辑代码并继续调试 (C#，VB、 c + +)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>编辑代码并继续调试 (C#，VB， C++)
 
 在 Visual Studio 支持的大多数语言中，你都可以在调试会话的过程中编辑代码，然后继续调试。 要使用此功能，请先在调试器中暂停，用鼠标点击进入代码，进行编辑，然后按 **F5**、**F10** 或 **F11** 键继续调试。
 
@@ -64,9 +64,9 @@ ms.locfileid: "57526355"
 > [!WARNING]
 > 通常你需要小心使用此功能，工具提示中会出现警告。 你也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态应用程序。
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 (C#，Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 （C#、 Visual Basic）
 
-很容易地查看变量使用调试器窗口等**监视**窗口。 但是，当变量超出作用域中时才**监视**窗口中，您可能会注意到它将灰显。在某些应用方案中，甚至当变量超出作用域是，并且可能想要密切关注变量的值可能会更改 （例如，变量可能会收到垃圾回收）。 可以通过创建用于在对象 ID 来跟踪变量**监视**窗口。
+通过调试器窗口（如**监视**窗口）可以轻松查看变量。 但是，如果变量超出了**监视**窗口的范围，你可能会注意到它变成了灰色。在某些应用场景中，如果变量超出范围，变量的值甚至可能会发生变化，因此你可能需要密切关注它（例如，变量可能会被当做垃圾回收掉）。 你可以在**监视**窗口中为该变量创建一个对象 ID 来跟踪这个变量。
 
 #### <a name="to-create-an-object-id"></a>创建对象 ID
 
@@ -74,7 +74,7 @@ ms.locfileid: "57526355"
 
 2.  启动调试器 (**F5**)，并在断点处停止。
 
-3. 查找中的变量**局部变量**窗口 (**调试 > Windows > 局部变量**)，右键单击该变量，然后选择**创建对象 ID**。
+3. 在**局部变量**窗口（**调试 > 窗口 > 局部变量**）中找到该变量，右键单击该变量，然后选择**创建对象 ID**。
 
     ![创建对象 ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
@@ -86,11 +86,11 @@ ms.locfileid: "57526355"
 
 ## <a name="view-return-values-for-functions"></a>查看函数的返回值
 
-若要查看你的函数的返回值，请查看中显示的函数**自动**窗口时在逐句通过代码。 若要查看函数的返回值，请确保已执行您感兴趣的函数 (按**F10**如果您当前已停止在函数调用上一次)。 如果窗口已关闭，则使用**调试 > Windows > 自动**以打开**自动**窗口。
+要查看函数的返回值，请在逐步执行代码时，查看**自动窗口**中显示的函数。 要查看函数的返回值，请确保你关注的函数已执行完毕（如果函数的调用目前处于停止状态，请按一下 **F10** 键）。 如果该窗口已关闭，请通过**调试 > 窗口 > 自动窗口**打开**自动窗口**。
 
 ![自动窗口](../debugger/media/dbg-tips-autos-window.png "自动窗口")
 
-此外，可以输入中的函数**即时**窗口来查看返回值。 (使用打开它**调试 > Windows > 即时**。)
+此外，还可以在**即时**窗口中输入函数来查看返回值。 (通过**调试 > 窗口 > 即时**打开该窗口。)
 
 ![即时窗口](../debugger/media/dbg-tips-immediate-window.png "即时窗口")
 
@@ -106,11 +106,11 @@ ms.locfileid: "57526355"
 
 ![JSON 字符串可视化工具](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-对于调试器窗口中显示的其他几个类型（例如 WPF 对象），同样可以打开可视化工具。
+对于几个其他类型如调试器窗口中显示的数据集和 DataTable 对象，还可以打开内置的可视化工具。
 
 ## <a name="break-into-code-on-handled-exceptions"></a>在已处理的异常处中断代码
 
-调试器将中断你的代码上未经处理的异常。 但是，处理异常 (如内出现的异常`try/catch`块) 也可以是 bug 的源，可能想要调查发生时。 可以配置调试器通过配置选项中的为已处理的异常的代码中断**异常设置**对话框。 打开此对话框中，请选择**调试 > Windows > 异常设置**。
+调试器会在未经处理的异常处中断代码。 但是，已处理的异常（例如 `try/catch` 块内发生的异常）也可能会造成错误，可能需要进一步调查。 可以将调试器配置为在已处理的异常处中断代码，方法是配置**异常设置**对话框中的选项。 要打开这个对话框，请选择**调试 > 窗口 > 异常设置**。
 
 通过**异常设置**对话框，你可以让调试器在特定异常处中断代码。 在下图中，调试器会在发生 `System.NullReferenceException` 时中断代码。 有关详细信息，请参阅[管理异常](../debugger/managing-exceptions-with-the-debugger.md)。
 
@@ -134,7 +134,7 @@ ms.locfileid: "57526355"
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>检查 web 服务和网络资源 (UWP) 的有效负载
 
-在 UWP 应用中，你可以分析执行使用的网络操作`Windows.Web.Http`API。 可以使用此工具来帮助调试 web 服务和网络资源。 若要使用该工具，请选择**调试 > 性能 Profiler**。 选择**网络**，然后选择**启动**。 在应用中，浏览使用 `Windows.Web.Http` 的应用场景，然后选择“停止收集”生成报表。
+在 UWP 应用中，你可以分析使用 `Windows.Web.Http` API执行的网络操作。 可以使用此工具来帮助调试 web 服务和网络资源。 若要使用该工具，请选择**调试 > 性能探查器**。 选择**网络**，然后选择**启动**。 在应用中，浏览使用 `Windows.Web.Http` 的应用场景，然后选择 **停止收集** 生成报表。
 
 ![网络使用情况分析工具](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -144,11 +144,11 @@ ms.locfileid: "57526355"
 
 有关详细信息，请参阅[网络使用情况](../profiling/network-usage.md)。
 
-## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序 (C#，c + +、 Visual Basic 中， F#)
+## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序 (C#， C++，Visual Basic 中， F#)
 
 若要附加到正在运行的应用，调试器将加载为想要调试的应用的相同内部版本生成的符号 (.pdb) 文件。 在某些情况下，了解符号文件的一些知识非常有用。 你可在**模块**窗口中检查 Visual Studio 如何加载符号文件。
 
-打开**模块**窗口中的通过选择进行调试时**调试 > Windows > 模块**。 **模块**窗口可以告知调试器将视为用户代码，以及模块或[*我的代码*](../debugger/just-my-code.md)，和符号加载模块的状态。 在大多数情况下，调试器会自动查找符号文件中的用户代码，但如果你想要单步执行 （或调试）.NET framework 代码、 系统代码或第三方库代码，将执行其他步骤才能获取正确的符号文件。
+在调试时，通过选择**调试 > 窗口 > 模块** 打开**模块**窗口。 **模块**窗口可以告诉你，调试器将哪些模块视为用户代码或[*我的代码*](../debugger/just-my-code.md)，以及符号加载模块的状态。 在大多数情况下，调试器会自动为用户代码查找符号文件，但如果你想要单步跟踪 （或调试）.NET framework 代码、系统代码或第三方库代码，必须执行其他步骤获取正确的符号文件。
 
 ![在模块窗口中查看符号信息](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
@@ -162,8 +162,8 @@ ms.locfileid: "57526355"
 
 有关更多提示和技巧以及更多详细的信息，请参阅以下博客文章：
 
-- [使用 Visual Studio 调试时，7个简单的已知技巧](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [Visual Studio 中 7 个隐藏的 gem](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
+- [7 较小的已知的技巧，在 Visual Studio 中进行调试](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [在 Visual Studio 中的 7 隐藏的 gem](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>请参阅
 [键盘快捷键](../ide/tips-and-tricks-for-visual-studio.md)

@@ -1,12 +1,9 @@
 ---
 title: 处理并发异常 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +20,13 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58931163"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ ms.locfileid: "50220412"
   
 4.  使用中的数据填充数据集`Customers`Northwind 数据库中的表。  
   
-5.  使用[Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接访问`Customers`数据表和更改的记录。  
+5.  使用[Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接访问`Customers`数据表和更改的记录。  
   
 6.  为不同的值更改同一记录、 更新数据集，并尝试将所做的更改写入到数据库，这会导致引发并发错误。  
   
@@ -56,10 +53,10 @@ ms.locfileid: "50220412"
 ## <a name="prerequisites"></a>系统必备  
  若要完成本演练，你需要：  
   
--   访问 Northwind 示例数据库有权执行更新。 有关详细信息，请参阅[如何： 安装示例数据库](../data-tools/how-to-install-sample-databases.md)。  
+-   访问 Northwind 示例数据库有权执行更新。
   
 > [!NOTE]
->  对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-new-project"></a>创建新项目  
  通过创建新的 Windows 应用程序开始在演练。  
@@ -83,7 +80,7 @@ ms.locfileid: "50220412"
   
 1.  上**数据**菜单中，选择**添加新数据源**。  
   
-     [数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)随即打开。  
+     “数据源配置”向导随即打开[](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
 2.  上**选择数据源类型**屏幕上，选择**数据库**。  
   
@@ -211,7 +208,7 @@ ms.locfileid: "50220412"
   
 8.  在窗体上的第一个记录中 (`ALFKI`)，更改`ContactName`到`Maria Anders1`。  
   
-9. 选择**保存**按钮。  
+9. 选择“保存”按钮。  
   
      会引发并发错误，并显示消息框。  
   

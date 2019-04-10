@@ -1,7 +1,7 @@
 ﻿---
 title: 使用 Visual Studio 调试器附加到正在运行的进程 | Microsoft Docs
 ms.custom: seodec18
-ms.date: 09/27/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -28,19 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 439562a7882fb1acc89e11f53f1586493046aad6
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323089"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366401"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 可将 Visual Studio 调试器附加到本地或远程计算机上正在运行的进程。 进程运行后，在 Visual Studio 中选择“调试” > “附加到进程”，或按 Ctrl+Alt+P，然后使用“附加到进程”对话框将调试器附加到进程。
 
 可以使用“附加到进程” 来调试本地或远程计算机上正在运行的应用、同时调试多个进程、 调试并非在 Visual Studio 中创建的应用或未使用附带调试器从 Visual Studio 启动的任何应用。 例如，如果运行的是不带调试器的应用，并触发异常，则可以将调试器附加到运行应用的进程并开始调试。
-
-有关 Visual Studio 中基本调试的信息，请参阅[调试器入门](../debugger/debugger-feature-tour.md)。
 
 > [!TIP]
 > 不确定自己的调试方案是否需要使用“附加到进程”？ 请参阅[常见调试方案](#BKMK_Scenarios)。
@@ -51,7 +49,7 @@ ms.locfileid: "58323089"
 
 若要调试远程计算机上的进程，请参阅[附加到远程计算机上的进程](#BKMK_Attach_to_a_process_on_a_remote_computer)。
 
-若要附加到本地计算机上的进程，请执行以下操作：
+**若要将附加到本地计算机上的进程：**
 
 1. 在 Visual Studio 中，选择“调试” > “附加到进程”（或按 Ctrl+Alt+P），打开“附加到进程”对话框。
 
@@ -74,7 +72,7 @@ ms.locfileid: "58323089"
    1. 单击“选择”。
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型”。
    1. 选择你想要调试的代码类型。
-   1. 选择“确定”。
+   1. 选择 **确定**。
 
 4. 选择“附加”。
 
@@ -94,19 +92,20 @@ ms.locfileid: "58323089"
 2. 在大多数情况下，“连接类型”应为“默认”。 在“连接目标”框中，使用以下方法之一选择远程计算机：
 
    - 选择下拉箭头旁边的“连接目标”，并从下拉列表中选择计算机名称。
-   - 在“连接目标”框中键入计算机名称。
-   
-     ::: moniker range="vs-2017"
+   - 键入中的计算机名称**连接目标**框，然后按**Enter**。
 
-     > [!NOTE]
-     > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 Visual Studio 2017 x64 远程调试器的默认端口 4022。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
-
-     ::: moniker-end
+     验证 Visual Studio 将所需的端口添加到计算机名称，将出现在格式： **\<远程计算机名称 >： 端口**
 
      ::: moniker range=">= vs-2019"
 
      > [!NOTE]
      > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 4024 是 Visual Studio 2019 x64 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
+
+     ::: moniker-end
+     ::: moniker range="vs-2017"
+
+     > [!NOTE]
+     > 如果您不能使用远程计算机名称进行连接，请尝试使用 IP 和端口地址 (例如， `123.45.678.9:4022`)。 Visual Studio 2017 x64 远程调试器的默认端口 4022。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
 
      ::: moniker-end
 
@@ -129,7 +128,7 @@ ms.locfileid: "58323089"
    - 若要查找所有用户帐户下运行的进程，请选择“显示所有用户的进程”复选框。
 
      >[!NOTE]
-     >如果尝试附加到不受信任的用户帐户拥有的进程，则会出现安全警告对话框确认。 有关详细信息请参阅[安全警告： 附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看起来可疑或你对此无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+     >如果尝试附加到不受信任的用户帐户拥有的进程，则会出现安全警告对话框确认。 有关详细信息请参阅[安全警告：附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。
 
 5. 在“附加到”字段中，确保已列出计划调试的代码类型。 默认的“自动”设置适用于大多数应用类型。
 
@@ -137,7 +136,7 @@ ms.locfileid: "58323089"
    1. 单击“选择”。
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型”。
    1. 选择你想要调试的代码类型。
-   1. 选择“确定”。
+   1. 选择 **确定**。
 
 6. 选择“附加”。
 
@@ -146,7 +145,7 @@ ms.locfileid: "58323089"
 
 在某些情况下，在远程桌面（终端服务）会话中进行调试时，“可用进程”列表时不会显示所有可用进程。 如果以受限制的用户帐户的用户身份运行 Visual Studio，则“可用进程”列表不会显示在会话 0 中运行的进程。 会话 0 用于服务和其他服务器进程，包括 w3wp.exe。 可通过以下方法解决该问题：使用管理员帐户运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或从服务器控制台（而不是“终端服务”会话）运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
-如果这两种解决方法都不可行，第三种方法是通过从 Windows 命令行运行 `vsjitdebugger.exe -p <ProcessId>` 来附加到进程。 可使用“tlist.exe”来确定进程 ID。 若要获取“tlist.exe”，请从 [WDK 和 WinDbg 下载](/windows-hardware/drivers/download-the-wdk)中下载并安装适用于 Windows 的调试工具。
+如果这两种解决方法都不可行，第三种方法是通过从 Windows 命令行运行 `vsjitdebugger.exe -p <ProcessId>` 来附加到进程。 您可以确定进程 ID 使用*tlist.exe*。 若要获取“tlist.exe”，请从 [WDK 和 WinDbg 下载](/windows-hardware/drivers/download-the-wdk)中下载并安装适用于 Windows 的调试工具。
 
 ## <a name="BKMK_reattach"></a> 重新附加到进程
 
@@ -163,17 +162,17 @@ ms.locfileid: "58323089"
 
 为使调试器附加到用 C++ 编写的代码，该代码需要发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 链接器选项将它自动添加到代码中。
 
-对于客户端脚本调试，必须在浏览器中启用脚本调试。 对于在 Chrome 上调试客户端脚本，请选择“Webkit”作为代码类型，根据应用类型的不同，可能需要关闭所有 Chrome 实例并在调试模式下启动浏览器（命令行的 `chrome.exe --remote-debugging-port=9222` 类型）。
+对于客户端脚本调试，必须在浏览器中启用脚本调试。 对于调试在 Chrome 上的客户端脚本，请选择**Web 工具包**作为代码类型，并根据你的应用类型，可能需要关闭所有 Chrome 实例并在调试模式下启动浏览器 (类型`chrome.exe --remote-debugging-port=9222`从命令行)。
 
 若要快速选择正在运行的进程来将附加到，在 Visual Studio 中，键入**Ctrl**+**Alt**+**P**，然后键入的第一个字母进程名称。
 
 |方案|调试方法|进程名|说明和链接|
 |-|-|-|-|
-|远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|w3wp.exe|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|*w3wp.exe*|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 服务器上的远程调试 ASP.NET Core|使用远程工具和**附加到进程**|*dotnet.exe*|有关应用程序部署，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 有关调试，请参阅[远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |调试客户端脚本的本地 IIS 服务器上，为受支持的应用类型 |使用**附加到进程**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必须启用脚本调试。 对于 Chrome 中，也必须在调试模式下，选择运行 Chrome **Webkit 代码**中**附加到**字段。|
-|调试C#，Visual Basic 或 c + + 应用程序在本地计算机上|可以使用两种[标准调试](../debugger/debugger-feature-tour.md)或**附加到进程**|*\<appname>.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
-|远程调试 Windows 桌面应用程序|远程工具|不可用| 请参阅[远程调试C#或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试 c + + 应用程序](../debugger/remote-debugging-cpp.md)|
+|调试C#，Visual Basic 或C++在本地计算机上的应用|使用任一标准调试 (**F5**) 或**附加到进程**|*\<appname>.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
+|远程调试 Windows 桌面应用程序|远程工具|不可用| 请参阅[远程调试C#或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试C++应用程序](../debugger/remote-debugging-cpp.md)|
 |调试 ASP.NET 应用程序在本地计算机上，在启动不带调试器的应用后|使用**附加到进程**|*iiexpress.exe*|这可能会有所帮助使应用程序加载速度更快，如 （例如） 进行分析时。 |
 |调试服务器进程上的其他受支持的应用类型|如果远程服务器，使用远程工具和**附加到进程**|*chrome.exe*， *iexplore.exe*，或其他进程|如有必要，使用资源监视器来帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|
 |远程调试的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
@@ -198,7 +197,7 @@ ms.locfileid: "58323089"
 
  如果要了解有关调试器未能附加到某种代码类型的原因的更具体信息，请尝试重新附加到只为该代码类型。
 
- **获得有关代码类型未能附加的具体信息：**
+ **若要获取有关某种代码类型未能附加的原因的特定信息：**
 
 1.  从进程中分离。 上**调试**菜单中，选择**全部分离**。
 
@@ -210,7 +209,7 @@ ms.locfileid: "58323089"
 
     3.  在 **“选择代码类型”** 对话框中，选择 **“调试以下代码类型”** 和未能附加的代码类型。 取消选择其他代码类型。
 
-    4.  选择“确定”。
+    4.  选择 **确定**。
 
     5.  在中**附加到进程**对话框中，选择**附加**。
 

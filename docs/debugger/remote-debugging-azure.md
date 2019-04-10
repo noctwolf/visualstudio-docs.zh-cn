@@ -1,5 +1,5 @@
 ---
-title: 远程调试 IIS 和 Azure 上的 ASP.NET Core |Microsoft Docs
+title: 远程调试在 IIS 和 Azure 上的 ASP.NET Core |Microsoft 文档
 ms.custom: remotedebugging
 ms.date: 05/21/2018
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355797"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365909"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Visual Studio 中的 Azure 中的 IIS 上的远程调试 ASP.NET Core
 
@@ -24,8 +24,8 @@ ms.locfileid: "58355797"
 
 在 Azure 上的远程调试的推荐的方式取决于你的方案：
 
-* 若要调试 Azure 应用服务上的 ASP.NET Core，请参阅[使用快照调试程序调试 Azure 应用](../debugger/debug-live-azure-applications.md)。 这是建议的方法。
-* 若要调试使用更传统的调试功能的 Azure 应用服务上的 ASP.NET Core，请按照本主题中的步骤 (请参阅的部分[在 Azure 应用服务上进行远程调试](#remote_debug_azure_app_service))。
+* 若要调试在 Azure App Service 上的 ASP.NET Core，请参阅[调试 Azure 应用程序使用快照调试器](../debugger/debug-live-azure-applications.md)。 这是建议的方法。
+* 若要调试 ASP.NET Core 上使用更加传统的调试功能的 Azure App Service，请按照本主题中的步骤 (请参阅明[在 Azure App Service 上进行远程调试](#remote_debug_azure_app_service))。
 
     在此方案中，必须将部署到 Azure 将应用程序从 Visual Studio，但不是需要手动安装或配置 IIS 或远程调试器 （这些组件使用虚线表示），如下图中所示。
 
@@ -37,7 +37,7 @@ ms.locfileid: "58355797"
 
     ![远程调试器组件](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
 
-* 若要调试 Azure Service Fabric 上的 ASP.NET Core，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
+* 若要调试在 Azure Service Fabric 上的 ASP.NET Core，请参阅[调试远程 Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)。
 
 > [!WARNING]
 > 请务必删除时的步骤完成此教程中创建的 Azure 资源。 这样可以避免产生不必要的费用。
@@ -68,9 +68,9 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 1. 打开 About.cshtml.cs 文件，并在中设置断点`OnGet`方法 (在较旧模板中，打开 HomeController.cs 而是和中设置断点`About()`方法)。
 
-## <a name="remote_debug_azure_app_service"></a> Azure 应用服务上的远程调试 ASP.NET Core
+## <a name="remote_debug_azure_app_service"></a> 在 Azure App Service 上的远程调试 ASP.NET Core
 
-从 Visual Studio 中，可快速发布和调试你的应用的 IIS 完全预配实例。 但是，预设的 IIS 配置，并且不能自定义它。 有关详细说明，请参阅[将 ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#remote_debug_azure_vm)。)
+从 Visual Studio 中，可快速发布和调试你的应用的 IIS 完全预配实例。 但是，预设的 IIS 配置，并且不能自定义它。 有关详细说明，请参阅[ASP.NET Core web 应用部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果需要自定义 IIS 的功能，请尝试调试[Azure VM](#remote_debug_azure_vm)。)
 
 #### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>若要部署的应用程序和使用服务器资源管理器进行远程调试
 
@@ -92,7 +92,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
     就这么简单！ 本主题中的步骤的其余部分适用于 Azure VM 上远程调试。
 
-## <a name="remote_debug_azure_vm"></a> 在 Azure VM 上远程调试 ASP.NET Core
+## <a name="remote_debug_azure_vm"></a> 在 Azure VM 上的远程调试 ASP.NET Core
 
 可以创建服务器的 Azure VM 的 Windows，然后安装和配置 IIS 和其他所需的软件组件。 这要花更多的时间比部署到 Azure 应用服务，要求你按照本教程中的剩余步骤。
 
@@ -125,7 +125,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 ### <a name="install-aspnet-core-on-windows-server"></a>在 Windows Server 上安装 ASP.NET Core
 
-1. 在托管系统上安装 [.NET Core Windows Server 托管捆绑包](https://aka.ms/dotnetcore-2-windowshosting)。 捆绑包可安装 .NET Core 运行时、.NET Core 库和 ASP.NET Core 模块。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
+1. 在托管系统上安装 [.NET Core Windows Server 托管捆绑包](https://aka.ms/dotnetcore-2-windowshosting)。 捆绑包将安装.NET Core 运行时，.NET Core 库和 ASP.NET Core 模块。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
     > 如果系统没有 Internet 连接，请先获取并安装 [Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)，再安装 .NET Core Windows Server 托管捆绑包。
@@ -211,16 +211,19 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更高版本中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** Shift+Alt+P
+    > 在 Visual Studio 2017 和更高版本中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**(Shift + Alt + P)。
 
-3. 将限定符字段设置为**\<远程计算机名称 >： 端口**。
+3. 将限定符字段设置为**\<远程计算机名称 >** 然后按**Enter**。
+
+    验证 Visual Studio 将所需的端口添加到计算机名称，将出现在格式： **\<远程计算机名称 >： 端口**
 
     ::: moniker range=">=vs-2019"
-    **\<远程计算机名称 >: 4024**于 Visual Studio 2019
+    在 Visual Studio 2019，你会看到**\<远程计算机名称 >: 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<远程计算机名称 >: 4022**上 Visual Studio 2017
+    在 Visual Studio 2017 中，你会看到**\<远程计算机名称 >: 4022**
     ::: moniker-end
+    端口是必需的。 如果看不到的端口号，请手动添加它。
 
 4. 单击“刷新”。
     “可用进程”  窗口中将显示某些进程。
@@ -231,11 +234,20 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 5. 勾选“显示所有用户的进程”  。
 
-6. 键入进程名称，可以快速找到的第一个字母*dotnet.exe* （适用于 ASP.NET Core)。
+6. 键入您的进程名称以快速查找您的应用程序的第一个字母。
 
-   ASP.NET Core 应用，以前的过程名称为*dnx.exe*。
+    * 选择**dotnet.exe** （适用于.NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      如果有多个进程显示**dotnet.exe**，检查**用户名**列。 在某些情况下，**用户名**列显示你的应用程序池名称，如**IIS APPPOOL\DefaultAppPool**。 如果你看到应用程序池标识正确的进程的简单办法是创建一个新应用池命名为你想要调试的应用程序实例，然后您可以找到它轻松地在**用户名**列。
+
+    * 在 IIS 某些情况下，您可能会发现你的应用名称在进程列表中，如**MyASPApp.exe**。 可以改为附加到此进程。
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. 单击 **“附加”**。
 
@@ -246,7 +258,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
     应在 Visual Studio 中命中断点。
 
-### <a name="bkmk_openports"></a> 疑难解答Windows Server 上打开所需的端口
+### <a name="bkmk_openports"></a> 故障排除：Windows Server 上打开所需的端口
 
 在大多数系统中，所需的端口被打开的 ASP.NET 和远程调试器安装。 但是，如果你解决部署问题和应用程序托管在防火墙后面，你可能需要验证正确的端口打开。
 

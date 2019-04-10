@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b7c94cfc989564a150825b653cdd32d8b85f97
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ebe87ef6c391f0beae7183c7baa396f5bd95cf02
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697957"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366006"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何查明指针是否损坏了内存地址？
 ## <a name="problem-description"></a>问题描述
@@ -40,10 +40,10 @@ ms.locfileid: "56697957"
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>若要查找内存地址改变的位置
 
-1.  在 0x00408000 处设置一个数据断点。 请参阅[设置数据更改断点（仅限本机 C++）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。
+1.  在 0x00408000 处设置一个数据断点。 请参阅[设置数据更改断点（仅限本机 C++）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)。
 
 2.  当命中断点时，使用“内存”窗口，以查看从 0x00408000 开始的内存内容。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。
 
 ## <a name="see-also"></a>请参阅
-- [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)
+- [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)
 - [调试本机代码](../debugger/debugging-native-code.md)
