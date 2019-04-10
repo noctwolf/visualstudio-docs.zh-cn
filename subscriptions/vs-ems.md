@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安全性权益。
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841190"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232653"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
@@ -60,7 +60,7 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
-<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。*
 
 <sup>2</sup> 不包括：Microsoft 合作伙伴网络 (Professional)
 
@@ -73,6 +73,6 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 
 ## <a name="support-resources"></a>支持资源
 -  需要 EMS 的帮助？  签出联机 [EMS 文档](/enterprise-mobility-security/)。
--  有关 EMS 任何组件的技术支持，请访问 [EMS 支持常见问题解答](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq)，以便为你的问题找到合适的支持。
+-  有关 EMS 任何组件的技术支持，请访问 [EMS 支持常见问题解答](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq)，以便为你的问题找到合适的支持。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

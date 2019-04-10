@@ -12,21 +12,22 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 22276c844da259600770862327bc316243c9c239
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476067"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857809"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
-针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 而更新
+**已针对[版本 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017) 进行更新**
 
 想从 Visual Studio 早期版本升级？ 以下是 Visual Studio 2017 的优势：为任何开发、应用和平台提供无与伦比的效率。 使用 Visual Studio 2017 开发适用于 Android、iOS、Windows、Linux、Web 和云的应用。 快速编码、轻松调试和诊断、时常测试，并且可以放心地进行发布。 还可通过构建自己的扩展，以便扩展和自定义 Visual Studio。 此版本发布之后，可使用版本控制、更具敏捷性且可高效协作！
 
@@ -107,11 +108,11 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 使用漫游扩展管理器时，列表中会出现 3 种图标类型：
 
-* ![“漫游”图标](media/vs2017ide-roamedicon.png) **_漫游_**：存在于漫游列表中，但未在计算机上安装的扩展。
+* ![“漫游”图标](media/vs2017ide-roamedicon.png) 漫游：存在于漫游列表中，但未在计算机上安装的扩展。
   （可通过“下载”按钮安装这些扩展。）
-* ![“漫游且已安装”图标](media/vs2017ide-roamedinstalledicon.png) **_漫游且已安装_**：存在于漫游列表中且已在此环境中安装的所有扩展。
+* ![“漫游且已安装”图标](media/vs2017ide-roamedinstalledicon.png) 漫游且已安装：存在于漫游列表中且已在此环境中安装的所有扩展。
   （如果确定不希望漫游，可通过“停止漫游”按钮删除它们。）
-* ![“已安装”图标](media/vs2017ide-installedicon.png) **_已安装_**：此环境中已安装、但不属于漫游列表的所有扩展。
+* ![“已安装”图标](media/vs2017ide-installedicon.png) 已安装：此环境中已安装、但不属于漫游列表的所有扩展。
   （可通过“启动漫游”按钮将扩展添加到漫游列表。）
 
 在登录时下载的任何扩展将作为“漫游且已安装”添加到列表中。 该扩展随即成为“漫游”列表的一部分，可以从任何计算机访问它。
