@@ -1,27 +1,22 @@
 ---
 title: MenuCommands 与OleMenuCommands |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
-manager: douge
-ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 2681b407bd7fd742e4085bb71b22025f533e2210
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936498"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 你可以通过从 <xref:System.ComponentModel.Design.MenuCommand> 或从 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象派生来创建菜单命令，并且实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -139,7 +134,7 @@ ms.locfileid: "49911899"
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
-     Visual Studio 包模板提供了两个集合：`GuidList` 和 `PkgCmdIDList`，以保留命令的 GUID 和 ID。 对于由模板添加的命令，会将其自动填充，但对于你手动添加的命令，你还必须将 ID 条目添加到 `PkgCmdIdList` 类。  
+     Visual Studio 包模板提供了两个集合： `GuidList` 和 `PkgCmdIDList`，以保留命令的 GUID 和 ID。 对于由模板添加的命令，会将其自动填充，但对于你手动添加的命令，你还必须将 ID 条目添加到 `PkgCmdIdList` 类。  
   
      或者，你可以使用 GUID 的原始字符串值和 ID 的整数值来填充 <xref:System.ComponentModel.Design.CommandID> 对象。  
   
@@ -149,7 +144,7 @@ ms.locfileid: "49911899"
   
      <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
-     由包模板创建的命令默认传递给包类的 `Initialize()` 方法中的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象。  
+     由包模板创建的命令默认传递给包类的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中的 `Initialize()` 对象。  
   
 4.  <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
@@ -184,7 +179,7 @@ ms.locfileid: "49911899"
   
     `EventHandler` 对象命名为查询菜单命令状态时调用的方法的名称。  
   
-2. 实现该命令的查询状态处理程序的方法。 `object` `sender` 参数可强制转换为 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象（此对象用于设置菜单命令的各种特性），包括文本。 下表显示对应于 <xref:System.ComponentModel.Design.MenuCommand> 标志的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类（MPF 类 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 的派生来源）上的属性。  
+2. 实现该命令的查询状态处理程序的方法。  `object` `sender` 参数可强制转换为 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象（此对象用于设置菜单命令的各种特性），包括文本。 下表显示对应于 <xref:System.ComponentModel.Design.MenuCommand> 标志的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类（MPF 类 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 的派生来源）上的属性。  
   
    |MenuCommand 属性|OLECMDF 标志|  
    |--------------------------|------------------|  
@@ -210,7 +205,7 @@ ms.locfileid: "49911899"
   
 1. 为有效命令返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 。  
   
-2. 设置 `prgCmds` 参数的 `cmdf` 元素。  
+2. 设置 `cmdf` 参数的 `prgCmds` 元素。  
   
     `cmdf` 元素的值是来源于 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 枚举的值的逻辑联合，这些值使用逻辑 OR (`|`) 运算符组合在一起。  
   
@@ -238,7 +233,7 @@ ms.locfileid: "49911899"
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - 如果该命令使用 `TEXTCHANGES` 标志，请将 `pCmdText` 参数的 `rgwz` 元素设置为命令的新文本并将 `pCmdText` 参数的 `cwActual` 元素设置为命令字符串的大小。  
+   - 如果该命令使用 `TEXTCHANGES` 标志，请将 `rgwz` 参数的 `pCmdText` 元素设置为命令的新文本并将 `cwActual` 参数的 `pCmdText` 元素设置为命令字符串的大小。  
   
      对于错误条件， <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法必须处理以下的错误情况：  
   
