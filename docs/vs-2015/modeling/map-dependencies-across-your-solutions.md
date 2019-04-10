@@ -1,11 +1,8 @@
 ---
 title: 映射解决方案之间的依赖项 |Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: c9ff6901db602a812c06c6d8cc08ce55ef6d1d7e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740052"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58936401"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>映射解决方案中的依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +54,9 @@ ms.locfileid: "51740052"
 ##  <a name="GetStarted"></a> 开始使用代码图  
  **要使用代码图，将需要以下两者之一**：  
   
--   Visual Studio Enterprise：从代码编辑器、解决方案资源管理器、类视图或对象浏览器创建代码图。  
+-   Visual Studio Enterprise:从代码编辑器中，解决方案资源管理器、 类视图或对象浏览器创建代码图。  
   
--   Visual Studio Professional：打开代码图、执行有限的编辑和浏览代码。  
+-   Visual Studio 专业版：打开代码映射、 进行有限的编辑和导航代码。  
   
 > [!WARNING]
 >  在你与使用 Visual Studio Professional 的其他人共享 Visual Studio Enterprise 中创建的代码图之前，请确保代码图上的所有项（例如隐藏项、展开的组和跨组链接）均可见。  
@@ -72,7 +69,7 @@ ms.locfileid: "51740052"
   
 - 通过 Microsoft Dynamics AX 的 .NET 模块生成的 X++ 项目和程序集  
   
-  **注意：** 除 C# 或 Visual Basic .NET 之外的项目，启动代码图或将项目添加到现有代码图的选项变得非常有限。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是，你可以从解决方案资源管理器、类视图和对象浏览器拖放各个代码元素或文件。  
+  **注意：** 以外的其他项目的C#或 Visual Basic.NET 中，有启动代码图或将项添加到现有代码图更少选项。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是，你可以从解决方案资源管理器、类视图和对象浏览器拖放各个代码元素或文件。  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>若要查看解决方案中的整体依赖关系  
   
@@ -289,7 +286,7 @@ ms.locfileid: "51740052"
 ##  <a name="SeeSourceHeader"></a> 了解 C 和 C++ 源文件和头文件之间的依赖关系  
  如果要创建更多 C++ 项目的完整代码图，请在这些项目上设置浏览信息编译器选项 (**/FR**)。 请参阅 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否则，将出现一条消息并提示你设置此选项。 如果选择“确定” ，就只会为当前代码图设置选项。 可以选择隐藏所有之后的代码图的信息。 如果你隐藏了该信息，则可以让它再显示。 将以下注册表项设置为 `0` 或删除该项：  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider:AutoEnableSbr**  
   
  打开包含 Visual C++ 项目的解决方案时，可能需要花一些时间来更新 IntelliSense 数据库。 在此期间，你可能无法为标头（.h 或 `#include`）文件创建代码图，直到 IntelliSense 数据库完成更新。 你可在 Visual Studio 状态栏中监视更新进度。 若要解决因某些 IntelliSense 设置被禁用而导致的问题或消息，请查看 [针对 C 和 C++ 代码的故障排除图](#Troubleshooting)。  
   
@@ -313,7 +310,7 @@ ms.locfileid: "51740052"
 |**问题**|**可能的原因**|**解决方法**|  
 |---------------|------------------------|--------------------|  
 |未能生成代码图。|解决方案中没有项目成功生成过。|修复出现的生成错误，然后重新生成代码图。|  
-|尝试从“体系结构”[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **菜单生成代码图时，** 无响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> .pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|  
+|尝试从“体系结构”[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **菜单生成代码图时，** 无响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|  
 |禁用 IntelliSense 浏览器数据库的某些设置。| [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] “选项”对话框中可能已禁用某些 IntelliSense 设置。|打开设置以启用它们。<br /><br /> 请参阅[选项，文本编辑器，C/c + +，高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
 |消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。<br /><br /> 请参阅 [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
 ||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。<br /><br /> 请参阅 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
@@ -389,6 +386,3 @@ ms.locfileid: "51740052"
 -   [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)  
   
 -   [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-
