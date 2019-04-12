@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428708"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504336"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>在 Visual Studio 中调试已安装的 UWP 应用包
 
@@ -97,7 +97,7 @@ Visual Studio 首次调试 Windows 10 设备或后创意者更新 Windows 10 远
 ## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中进行调试](../debugger/index.md)
-- [调试器功能简介](../debugger/debugger-feature-tour.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)
 - [远程调试](../debugger/remote-debugging.md)
 - [配置 Windows 防火墙以便进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)

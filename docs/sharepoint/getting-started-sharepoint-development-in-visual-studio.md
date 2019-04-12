@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f2272323d13121865ace371b2dc1a921106e34e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: c45635da013f360ccbb1fe2343bca23a58f142c4
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869013"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504102"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>获取已启动 （中的 SharePoint 开发 Visual Studio）
   此部分帮助你开始使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来开发利用 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]的 SharePoint 解决方案。
@@ -39,10 +39,11 @@ ms.locfileid: "57869013"
 |主题|描述|
 |-----------|-----------------|
 |[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)|介绍 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 SharePoint 开发。|
+|[为 SharePoint 设置常规开发环境](/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint)|介绍用于创建 SharePoint 解决方案所需的安装|
 |[为 SharePoint 创建站点栏、 内容类型和列表](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|介绍如何使用 Visual Studio 的 SharePoint 开发工具为 SharePoint 创建自定义网站栏、内容类型和列表。|
 |[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)|介绍工作流设计和开发。|
 |[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|介绍如何连接到业务数据连接 (BDC) 模型，从而集成业务数据。|
-|[Creatie web 部件的 SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|介绍 Web 部件和 Web 部件页，它们是 SharePoint 站点上页的构建基块。|
+|[为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)|介绍 Web 部件和 Web 部件页，它们是 SharePoint 站点上页的构建基块。|
 |[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)|介绍如何使用设计器来设计应用程序页。|
 |[创建 web 部件或应用程序页的可重用的控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|介绍如何为 SharePoint 中的应用程序页和 Web 部件创建自定义的可重用控件。|
 |[浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|介绍如何在 Visual Studio 工具窗口中在 SharePoint 站点的组件之间导航。|

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 244841b5b9416709eda0913d53535d29c83df647
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: dee5d1ec207f2b7bec030076797720fe9e8216ed
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870394"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504258"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 网站栏、 内容类型和列表
   以下过程演示如何创建自定义 SharePoint 站点列，或*字段*— 以及使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。
@@ -46,7 +46,7 @@ ms.locfileid: "57870394"
 
 -   支持的 Windows 和 SharePoint 版本。
 
--   Visual Studio。
+-   [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
 ## <a name="create-custom-site-columns"></a>创建自定义站点列
  此示例创建用于管理在医院患者列表。 首先，必须创建 SharePoint 项目中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]并将站点列添加到它，如下所示。
@@ -67,7 +67,7 @@ ms.locfileid: "57870394"
 
      有关沙盒的详细信息和场解决方案，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。
 
-6.  选择**完成**按钮。 项目现在应列入**解决方案资源管理器**。
+6.  选择**完成**按钮。 项目现已列入**解决方案资源管理器**。
 
 #### <a name="to-add-site-columns"></a>若要添加的站点列
 
