@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6edffaa0b45cc045428161dc04bf52d1c607c51c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366683"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504323"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
@@ -147,6 +147,28 @@ ms.locfileid: "59366683"
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+::: moniker range=">= vs-2019"
+
+## <a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点 (.NET Core 3.0 或更高版本)
+
+为特定对象的属性发生更改时，数据断点中断执行。
+
+**若要设置数据断点**
+
+1. 在.NET Core 项目中，开始调试，并等待，直到到达一个断点。
+
+2. 在**自动**，**监视**，或**局部变量**窗口中，右键单击一个属性，然后选择**值更改时中断**的上下文菜单中。
+
+    ![管理数据断点](../debugger/media/managed-data-breakpoint.png "托管数据断点")
+
+在.NET Core 中的数据断点不适用于：
+
+- 不是可扩展的工具提示中，局部变量，自动或监视窗口属性
+- 静态变量
+- 使用 DebuggerTypeProxy 特性类
+- 在结构内的字段 
+
+::: moniker-end
 
 ## <a name="BKMK_set_a_data_breakpoint_native_cplusplus"></a>设置数据断点 (本机C++仅)
 
@@ -156,7 +178,7 @@ ms.locfileid: "59366683"
 
 1.  在C++项目，开始调试，并等待，直到到达一个断点。 上**调试**菜单中，选择**新断点** > **数据断点**
 
-    您还可以选择**新建** > **数据断点**中**断点**窗口。
+    您还可以选择**新建** > **数据断点**中**断点**窗口，或右键单击中的项**自动**，**Watch**，或**局部变量**窗口，然后选择**值发生更改时中断**的上下文菜单中。
 
 2.  在“地址”框中，键入内存地址或计算结果为内存地址的表达式。 例如，键入 `&avar` 以在变量 `avar` 的内容更改时执行中断操作。
 
