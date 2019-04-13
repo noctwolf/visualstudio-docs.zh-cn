@@ -1,5 +1,5 @@
 ---
-title: 使用 DebuggerDisplay 特性 |Microsoft Docs
+title: 显示自定义信息使用 DebuggerDisplay |Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680178"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537632"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 特性 (C#，Visual Basic 中， F#、 C + + CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>要演示如何使用 DebuggerDisplay 特性让调试程序 (C#，Visual Basic 中， F#， C++/CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。
 
 `DebuggerDisplay` 特性有一个参数，此参数是要在值列中为类型的实例显示的字符串。 此字符串可以包含大括号（`{` 和 `}`）。 一对大括号之间的文本将作为字段、属性或方法进行计算。
@@ -32,7 +32,7 @@ ms.locfileid: "56680178"
 > 如果在“工具”/“选项”/“调试”  对话框中选中了“在变量窗口中显示对象的原始结构”  复选框，则将忽略 `DebuggerDisplay` 特性。
 
 > [!NOTE]
-> 对于本机代码，此属性只支持 C + + /cli 代码。
+> 对于本机代码，此属性仅支持在C++/CLI 代码。
 
 下表显示 `DebuggerDisplay` 特性的一些可能用法和示例输出。
 
@@ -43,7 +43,7 @@ ms.locfileid: "56680178"
 
 `DebuggerDisplay` 还可以接受命名参数。
 
-|参数|目标|
+|参数|用途|
 |----------------|-------------|
 |`Name`, `Type`|这些参数影响变量窗口的 **“名称”** 和 **“类型”** 列。 （可将它们设置为使用与构造函数相同的语法的字符串。）如果过度使用这些参数或使用这些参数不当，则会导致混乱的输出。|
 |`Target`, `TargetTypeName`|指定在程序集级别使用该特性时的目标类型。|
@@ -97,7 +97,7 @@ public sealed class MyClass
 |**名称**|**“值”**|**Type**|
 |--------------|---------------|--------------|
 |键|"three"|object {string}|
-|值|3|object {int}|
+|“值”|3|object {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
