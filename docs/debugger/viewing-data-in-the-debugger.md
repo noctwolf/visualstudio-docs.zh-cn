@@ -19,20 +19,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710482"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537486"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 调试器中创建自定义视图的数据 (C#，Visual Basic、 c + +)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>在 Visual Studio 调试器中创建自定义视图的数据 (C#，Visual Basic 中， C++)
 
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]调试器提供了许多工具，用于检查和修改程序状态。 这些工具中的大多数仅在中断模式下有效。
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>在变量窗口和数据提示中创建数据的自定义的视图
 
- 许多[调试器窗口](../debugger/debugger-windows.md)，如**自动**并**观看**windows 中，可以检查变量。 你可以自定义如何本机类型，托管对象，和你自己的类型显示在调试器变量窗口中以及在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 有关详细信息，请参阅[创建本机对象的自定义视图](../debugger/create-custom-views-of-native-objects.md)并[创建对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)。
+ 许多[调试器窗口](../debugger/debugger-windows.md)，如**自动**并**观看**windows 中，可以检查变量。 你可以自定义如何C++在调试器变量窗口中并在显示类型、 托管的对象和你自己的类型[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 有关详细信息，请参阅[创建自定义视图的C++对象](../debugger/create-custom-views-of-native-objects.md)并[创建对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)。
 
 ## <a name="create-custom-visualizers"></a>创建自定义可视化工具
 

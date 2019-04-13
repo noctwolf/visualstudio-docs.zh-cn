@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59b654472b9173d5cb5559a57f644113b382fdb8
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504323"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537593"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
@@ -113,21 +113,21 @@ ms.locfileid: "59504323"
 
    - 使用完全限定的函数名称。
 
-     示例:  `Namespace1.ClassX.MethodA()`
+     示例：`Namespace1.ClassX.MethodA()`
 
    - 添加重载函数的参数类型。
 
-     示例:  `MethodA(int, string)`
+     示例：`MethodA(int, string)`
 
    - 使用 ！ 符号指定模块。
 
-     示例: `App1.dll!MethodA`
+     示例：`App1.dll!MethodA`
 
    - 在本机中使用上下文运算符C++。
 
      `{function, , [module]} [+<line offset from start of method>]`
 
-     示例: `{MethodA, , App1.dll}+2`
+     示例：`{MethodA, , App1.dll}+2`
 
 1. 在中**语言**下拉列表中，选择该函数的语言。
 
@@ -176,13 +176,13 @@ ms.locfileid: "59504323"
 
 **若要设置数据断点：**
 
-1.  在C++项目，开始调试，并等待，直到到达一个断点。 上**调试**菜单中，选择**新断点** > **数据断点**
+1. 在C++项目，开始调试，并等待，直到到达一个断点。 上**调试**菜单中，选择**新断点** > **数据断点**
 
     您还可以选择**新建** > **数据断点**中**断点**窗口，或右键单击中的项**自动**，**Watch**，或**局部变量**窗口，然后选择**值发生更改时中断**的上下文菜单中。
 
-2.  在“地址”框中，键入内存地址或计算结果为内存地址的表达式。 例如，键入 `&avar` 以在变量 `avar` 的内容更改时执行中断操作。
+2. 在“地址”框中，键入内存地址或计算结果为内存地址的表达式。 例如，键入 `&avar` 以在变量 `avar` 的内容更改时执行中断操作。
 
-3.  在 **“字节计数”** 下拉菜单中，选择你想要调试程序监视的字节数。 例如，如果选择 **4**，则调试程序将监视从 `&avar` 开始的四个字节，并在其中任何字节的值发生更改时执行中断操作。
+3. 在 **“字节计数”** 下拉菜单中，选择你想要调试程序监视的字节数。 例如，如果选择 **4**，则调试程序将监视从 `&avar` 开始的四个字节，并在其中任何字节的值发生更改时执行中断操作。
 
 在以下情况下，数据断点不起作用：
 -   将未经调试的进程写入内存位置。
@@ -260,7 +260,7 @@ ms.locfileid: "59504323"
 ### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>在条件表达式中使用对象 Id (C#和F#仅)
  有些的时候，当你想要观察特定对象的行为。 例如，你可能想要找出为什么对象插入到集合一次以上。 在 C# 和 F# 中，可以创建[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。
 
-**若要创建对象 ID:**
+**创建对象 ID：**
 
 1. 设置断点在代码中的某个位置后创建对象。
 

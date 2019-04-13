@@ -1,5 +1,5 @@
 ---
-title: 使用 DebuggerTypeProxy 特性 |Microsoft Docs
+title: 显示自定义类型使用 DebuggerTypeProxy |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011f5dc9525a8a5f88f3cc923eb56dde58313d85
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717489"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537538"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>使用 DebuggerTypeProxy 特性 (C#，Visual Basic、 C + + CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>让调试器在哪种类型来演示如何使用 DebuggerTypeProxy 特性 (C#，Visual Basic 中， C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> 指定类型的代理或替身，并更改类型在调试器窗口中的显示方式。 查看具有代理的变量时，代理将代替“显示”中的原始类型。 调试器变量窗口仅显示代理类型的公共成员。 不会显示私有成员。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56717489"
 - 程序集
 
 > [!NOTE]
-> 对于本机代码，此属性只支持 C + + /cli 代码。
+> 对于本机代码，此属性仅支持在C++/CLI 代码。
 
 类型代理类必须具有一个构造函数，该函数采用代理将替换的类型的参数。 在每次需要显示目标类型的变量时，调试器都会创建类型代理类的一个新实例。 这会对性能产生一定影响。 因此，不应在构造函数中执行非必需的工作。
 
@@ -59,7 +59,7 @@ ms.locfileid: "56717489"
 
 如果使用泛型类型作为 `DebuggerTypeProxy` 中的目标，则必须使用该语法。 `DebuggerTypeProxy` 机制将为你推理类型参数。
 
-有关详细信息中的打开和关闭类型C#请参阅[C#语言规范](/dotnet/csharp/language-reference/language-specification)，打开第 20.5.2 节类型和封闭类型。
+C# 中的打开和关闭类型的详细信息请参阅[C# 语言规范](/dotnet/csharp/language-reference/language-specification)，第 20.5.2 节打开和关闭类型。
 
 Visual Basic 没有开放类型语法，因此您无法在 Visual Basic 中执行同样的操作。 而必须使用开放类型名称的字符串表示形式。
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4656ae21c51d105c2d523275af63e84c2326d4d
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366297"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537554"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 
@@ -52,6 +52,10 @@ ms.locfileid: "59366297"
     ![条件断点](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
 3. 如果你对另一种类型的条件感兴趣，请在**断点设置**对话框中选择**筛选器**，而不是**条件表达式**，然后按照筛选器的提示操作。
+
+## <a name="configure-the-data-to-show-in-the-debugger"></a>配置要在调试器中显示的数据
+
+有关C#，Visual Basic 和C++(C++仅 /CLI 代码)，可以让调试程序要使用下列选项显示的信息[DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)属性。 有关C++代码中，可以执行相同的 using [Natvis 可视化](create-custom-views-of-native-objects.md)。
 
 ## <a name="change-the-execution-flow"></a>更改执行流
 
@@ -162,8 +166,8 @@ ms.locfileid: "59366297"
 
 有关更多提示和技巧以及更多详细的信息，请参阅以下博客文章：
 
-- [7 较小的已知的技巧，在 Visual Studio 中进行调试](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [在 Visual Studio 中的 7 隐藏的 gem](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
+- [使用 Visual Studio 调试时，7个简单的已知技巧](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [Visual Studio 中 7 个隐藏的 gem](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>请参阅
 [键盘快捷键](../ide/tips-and-tricks-for-visual-studio.md)
