@@ -3,19 +3,19 @@ title: 为 Python 项目定义自定义菜单命令
 description: 通过编辑项目和目标文件，可以将自定义命令添加到 Visual Studio 中的 Python 项目上下文菜单，用于调用可执行程序、脚本、模块、内联代码片段和 pip。
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943085"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366713"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -131,7 +131,7 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 ### <a name="target-attributes"></a>Target 属性
 
-| 特性 | 必需 | 说明​​ |
+| 特性 | 必需 | 说明 |
 | --- | --- | --- |
 | name | 是 | Visual Studio 项目中命令的标识符。 必须将此名称添加到 `<PythonCommands>` 组，Python 子菜单上才会显示命令。 |
 | Label | 是 | Python 子菜单中出现的 UI 显示名称。 |
@@ -141,10 +141,10 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 属性值均不区分大小写。
 
-| 特性 | 必需 | 说明​​ |
+| 特性 | 必需 | 说明 |
 | --- | --- | --- |
 | TargetType | 是 | 指定 Target 属性包含的内容以及如何将其与 Arguments 属性一并使用：<ul><li>**可执行文件：** 运行在 Target 中命名的可执行文件，附加 Arguments 的值，就如在命令行中直接输入一般。 值仅可包含项目名称且不可带有参数。</li><li>**脚本**：向 Target 中的文件名运行 python.exe，再执行 Arguments 中的值。</li><li>**模块**：在 Target 中运行后接模块名的 `python -m`，再运行 Arguments 中的值。</li><li>**代码**：运行 Target 中包含的内联代码。 这会忽略 Arguments 值。</li><li>**pip**：通过 Target 中的命令运行 `pip`，后接 Arguments；但如果 ExecuteIn 设置为“输出”，pip 则假定 `install` 命令并使用 Target 作为包名称。</li></ul> |
-| 目标 | 是 | 要使用的文件名、模块名、代码或 pip 命令（取决于 TargetType）。 |
+| Target | 是 | 要使用的文件名、模块名、代码或 pip 命令（取决于 TargetType）。 |
 | 自变量 | Optional | 指定要赋值给目标的参数字符串（若有）。 请注意，如果 TargetType 是 `script`，则向 Python 项目赋予参数，而不是 python.exe。 `code` TargetType 忽略此项。 |
 | ExecuteIn | 是 | 指定要运行命令的环境：<ul><li>**控制台**：（默认）如同直接在命令行上直接输入 Target 和 Arguments 一样运行它们。 这会在运行 Target 时显示命令窗口，该窗口随后自动关闭。</li><li>**consolepause**：与控制台相同，但必须按键才能关闭窗口。</li><li>**输出**：运行 Target 并在 Visual Studio 的“输出”窗口中显示其结果。 如果 TargetType 为“pip”，则 Visual Studio 使用 Target 作为包名称并附加 Arguments。</li><li>**repl**：在 [Python 交互式](python-interactive-repl-in-visual-studio.md)窗口中运行 Target；可选显示名称用作窗口的标题。</li><li>无：与控制台的行为相同。</li></ul>|
 | WorkingDirectory | Optional | 要在其中运行命令的文件夹。 |
@@ -156,11 +156,11 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 在分析来自命令输出的错误和警报时，Visual Studio 期望 `ErrorRegex` 和 `WarningRegex` 值中的正则表达式使用以下命名组：
 
-- `(?<message>...)`：错误文本
-- `(?<code>...)`：错误代码
-- `(?<filename>...)`：报告其出现错误的文件的名称
-- `(?<line>...)`：报告其出现错误的文件的位置行号。
-- `(?<column>...)`：报告其出现错误的文件的位置列号。
+- `(?<message>...)`:错误文本
+- `(?<code>...)`:错误代码
+- `(?<filename>...)`:报告其出现错误的文件的名称
+- `(?<line>...)`:报告其出现错误的文件的位置行号。
+- `(?<column>...)`:报告其出现错误的文件的位置列号。
 
 例如，PyLint 生成以下形式的警报：
 
@@ -379,7 +379,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 - 所需的 `Target` 属性为空。
 - 所需的 `TargetType` 属性为空或包含不可识别的值。
 - 所需的 `ExecuteIn` 属性为空或包含不可识别的值。
-- 指定了 `ErrorRegex` 或 `WarningRegex`，但未指定 `ExecuteIn="output"` 设置。
+- `ErrorRegex` 或指定了 `WarningRegex`，但未指定 `ExecuteIn="output"` 设置。
 - 元素中存在不可识别的属性。 例如，可能使用了 `Argumnets`（拼写错误）而不是 `Arguments`。
 
 如果引用未定义的属性，则属性值可能为空。 例如，例如使用 `$(StartupFile)` 标记，但未在项目中定义任何启动文件，则标记解析为空字符串。 此类情况下，可能需要定义一个默认值。 例如，如果尚未在项目属性中指定服务器启动文件，则在 Bottle，Flask 和 Django 项目模板中定义的“Run server”和“Run debug server”命令将默认为 manage.py。

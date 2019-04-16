@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027284"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897694"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 
@@ -62,7 +62,7 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>其他重载，或 Visual Studio丢失所有打开的窗口
 
-请勿直接从资产处理器或任何其他工具接触项目文件。 如果确实需要对项目文件进行操作，我们为此公开了 API。 请检查[程序集引用问题部分](#Assembly-reference-issues)。
+请勿直接从资产处理器或任何其他工具接触项目文件。 如果确实需要对项目文件进行操作，我们为此公开了 API。 请检查[程序集引用问题部分](#assembly-reference-issues)。
 
 如果遇到其他重载或 Visual Studio 在重载时丢失所有打开的窗口，请确保安装有合适的 .NET 目标包。 查看以下部分，了解有关框架的详细信息。
 
@@ -124,7 +124,7 @@ USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设�
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>报告使用 Visual Studio Tools for Unity 进行调试时 Visual Studio 会冻结
 
-在 Windows 上：
+*在 Windows 上：*
 
 1. 打开 Visual Studio 的新实例。
 
@@ -142,7 +142,7 @@ USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设�
 
     你可能首先需要使“命令”  窗口可见。 在 Visual Studio 中的主菜单上，选择“视图” 、“其他窗口” 、“命令窗口” 。
 
-在 Mac 上：
+*在 Mac 上：*
 
 1. 打开终端并获取 Visual Studio for Mac 的 PID：
 

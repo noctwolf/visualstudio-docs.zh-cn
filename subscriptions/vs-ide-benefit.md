@@ -1,20 +1,20 @@
 ---
 title: Visual Studio 订阅中的 Visual Studio IDE 权益 | Microsoft 文档
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE。
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789882"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018137"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 权益
+# <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 权益
 
 作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
 
@@ -29,7 +29,7 @@ ms.locfileid: "58789882"
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Enterprise 磁贴](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. 单击此链接，你将被重定向到 Visual Studio Enterprise 的“下载结果”页，可在此处下载 IDE 并获取用于激活的产品密钥。 也可通过单击蓝色的“获取密钥”链接索取产品密钥，或稍后在[产品密钥](https://my.visualstudio.com/productkeys)页上索取产品密钥。
+3. 你将被重定向到 Visual Studio 的“下载结果”页，可在此处下载 IDE 并获取产品密钥以激活产品。 也可通过单击蓝色的“获取密钥”链接索取产品密钥，或稍后在[产品密钥](https://my.visualstudio.com/productkeys)页上索取产品密钥。
 4. 在“下载结果”页的“详细信息”选项卡上：
    - 选择所需体系结构（x86、x64）
    - 选择语言首选项。
@@ -70,7 +70,7 @@ ms.locfileid: "58789882"
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
 | Visual Studio Dev Essentials | 不可用  | Visual Studio Community |是 |
 
-<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务*。
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。

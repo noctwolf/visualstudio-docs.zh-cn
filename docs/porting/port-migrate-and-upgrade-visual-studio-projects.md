@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: f245a97d7cf03542b02598811e4e7fa33c3c68e8
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 42554a9479168f2afc7a30a122fccc383b3dc745
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415786"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366676"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的项目迁移和升级参考 
 
@@ -64,8 +64,8 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 | SharePoint 2010 | 使用 Visual Studio 2017 打开 SharePoint 解决方案项目时，它将升级到 SharePoint 2013 或 SharePoint 2016。 “.NET 桌面开发”工作负载必须安装于 Visual Studio 2017 中，以便升级。<br/><br/>若要深入了解如何升级 SharePoint 项目，请参阅 [Upgrade to SharePoint 2013](https://technet.microsoft.com/library/cc303420.aspx)（升级到 SharePoint 2013）、[Update Workflow in SharePoint Server 2013](https://technet.microsoft.com/library/dn133867.aspx)（更新 SharePoint 2013 中的工作流）和 [Create the SharePoint Server 2016 farm for a database attach upgrade](https://technet.microsoft.com/library/cc263026(v=office.16).aspx)（创建 SharePoint Server 2016 场用于数据库附加升级）。 |
 | SharePoint 2016 | 不能在 Visual Studio 2017 中打开 Office 开发人员工具预览版 2 中创建的 SharePoint 外接程序项目。 若要解除此限制，需要在 csproj vbproj 文件中将 `MinimumVisualStudioVersion` 更新到 12.0 并将 `MinimumOfficeToolsVersion` 更新到 12.2。 |
 | Silverlight | Visual Studio 2017 不支持 Silverlight 项目。 若要继续使用 Silverlight 应用程序，请继续使用 Visual Studio 2015。 |
-| SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2017 的数据存储和处理工作负载中还包括 SSDT 支持。 |
-| SQL Server Integration Services (SSIS) | 可通过 SQL Server Data Tools (SSDT) 获取 Visual Studio 2017 支持。 有关详细信息，请参阅 [SQL Server Data Tools 团队博客](https://devblogs.microsoft.com/ssdt/)。 |
+| SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2017 的数据存储和处理工作负载中还包括 SSDT 支持。 有关详细信息，请参阅[下载并安装 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 页。|
+| SQL Server Integration Services (SSIS) | 可通过 SQL Server Data Tools (SSDT) 获取 Visual Studio 2017 支持。 有关详细信息，请参阅[下载并安装 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 页和 [SQL Server Data Tools 团队博客](https://devblogs.microsoft.com/ssdt/)。 |
 | Visual C++ | Visual Studio 2017 可用于在 Visual Studio 的早期版本中（追溯到 Visual Studio 2010 ）创建的项目中工作。 首次打开项目时，可以选择升级到最新的编译器和工具集，或者继续使用原始编译器和工具集。 如果选择继续使用原始编译器和工具集，Visual Studio 2017 将不会修改项目文件，并使用早期版本 Visual Studio 安装中的工具集来生成项目。 选择继续使用原始编译器和工具集意味着你仍可以在 Visual Studio 的原始版本中打开项目（如有必要）。 有关详细信息，请参阅 [使用 Visual Studio 中的本机多重目标生成旧项目](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 扩展性/VSIX | 更新 MinimumVersion 14.0 或更低版本中的项目以声明 MinimumVersion 15.0，这样可防止在早期版本的 Visual Studio 中打开该项目。 若要允许在早期版本中打开项目，请将 MinimumVersion 设置为 `$(VisualStudioVersion)`。 另请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio 实验室管理工具版 | 你可以使用 Microsoft 测试管理器或 Visual Studio 2010 SP1 及更高版本打开在以上任一版本中创建的环境。 但对于 Visual Studio 2010 SP1，在可以创建环境之前，Microsoft 测试管理器的版本必须与 Team Foundation Server 的版本匹配。 |
@@ -102,11 +102,11 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 如需进一步讨论，请参阅以下文章：
 
 - [ToolsVersion 指南](../msbuild/msbuild-toolset-toolsversion.md)
-- [Framework 目标指南](../ide/visual-studio-multi-targeting-overview.md)
+- [框架目标指南](../ide/visual-studio-multi-targeting-overview.md)
 
 ## <a name="see-also"></a>请参阅
 
-[Visual Studio 2019 的项目迁移和升级参考](port-migrate-upgrade-visual-studio-projects-2019.md)
+[Visual Studio 2019 的项目迁移和升级参考](port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2019)
 
 ::: moniker-end
 
@@ -153,8 +153,8 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 | SharePoint 2016 | 不能在 Visual Studio 2019 中打开 Office 开发人员工具预览版 2 中创建的 SharePoint 加载项项目。 若要解除此限制，需要在 csproj vbproj 文件中将 `MinimumVisualStudioVersion` 更新到 12.0 并将 `MinimumOfficeToolsVersion` 更新到 12.2。 |
 | Silverlight | Visual Studio 2019 不支持 Silverlight 项目。 若要继续使用 Silverlight 应用程序，请继续使用 Visual Studio 2015。 |
 | SQL - Redgate | Visual Studio 安装程序中不再随附 Redgate 的 SQL Change Automation Core（以前称为 ReadyRoll Core）、SQL Prompt Core 和 SQL 搜索。<br/><br/>可以继续使用 Visual Studio 2017 获取这些功能。 在 Visual Studio 2019 中，可以升级到 Redgate 的 SQL Toolbelt 中提供的付费 SQL Change Automation 和 SQL Prompt 产品。|
-| SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 的数据存储和处理工作负载中还包括 SSDT 支持。 |
-| SQL Server Integration Services (SSIS) | Visual Studio 2019 的支持即将推出。 从 [SQL Server Data Tools 团队博客](https://devblogs.microsoft.com/ssdt/)获取最新消息。 |
+| SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 的数据存储和处理工作负载中还包括 SSDT 支持。 有关详细信息，请参阅[下载并安装 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 页。 |
+| SQL Server Integration Services (SSIS) | Visual Studio 2019 的支持即将推出。 有关详细信息，请参阅[下载并安装 SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt) 页和 [SQL Server Data Tools 团队博客](https://devblogs.microsoft.com/ssdt/)。 |
 | 测试窗口扩展 | 在 Visual Studio 2019 中，删除了一些以前标记为公开但从未正式记录过的测试窗口 API。 在 Visual Studio 2017 中，广泛可见的 API 被标记为已弃用，以便为扩展维护人员提供早期警告。 据我们所知，很少有扩展依赖这些 API。 有关详细信息和更新，请查看[已弃用的与测试相关的 API 完整列表](https://github.com/Microsoft/vstest/issues/1830)。 如果这会影响你的方案，请在[开发人员社区](https://developercommunity.visualstudio.com)上告诉我们。 |
 | Visual C++ | Visual Studio 2019 可用于在 Visual Studio 的早期版本中（追溯到 Visual Studio 2010）创建的项目中工作。 首次打开项目时，可以选择升级到最新的编译器和工具集，或者继续使用原始编译器和工具集。 如果选择继续使用原始编译器和工具集，Visual Studio 2019 将不会修改项目文件，并使用早期版本 Visual Studio 安装中的工具集来生成项目。 选择继续使用原始编译器和工具集意味着你仍可以在 Visual Studio 的原始版本中打开项目（如有必要）。 有关详细信息，请参阅 [使用 Visual Studio 中的本机多重目标生成旧项目](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 扩展性/VSIX | 更新 MinimumVersion 14.0 或更低版本中的项目以声明 MinimumVersion 15.0，这样可防止在早期版本的 Visual Studio 中打开该项目。 若要允许在早期版本中打开项目，请将 MinimumVersion 设置为 `$(VisualStudioVersion)`。 另请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
@@ -194,7 +194,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 如需进一步讨论，请参阅以下文章：
 
 - [ToolsVersion 指南](../msbuild/msbuild-toolset-toolsversion.md)
-- [Framework 目标指南](../ide/visual-studio-multi-targeting-overview.md)
+- [框架目标指南](../ide/visual-studio-multi-targeting-overview.md)
 
 ## <a name="see-also"></a>请参阅
 

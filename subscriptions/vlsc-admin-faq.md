@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: 批量许可服务中心管理迁移常见问题解答
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145260"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897655"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 订阅管理迁移
 
@@ -36,7 +36,7 @@ ms.locfileid: "58145260"
 组织无需注册 Azure AD，但你可以随时注册。 如果选择加入到 Azure AD，则通过 Azure AD 免费层即可加入，无需任何费用。 Azure Active Directory 的安全性更高、控制力更强、可靠性更长久，可以用来为组织提供保护。 但如果你尚未做好使用 Azure AD 的准备，则可以继续照旧使用 Microsoft Accounts (MSA)。
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>如何知道组织的迁移时间？
-我们会在迁移组织的前一周向主要/通知联系人发送一封电子邮件，邀请他们完成加入过程。 我们也会向订阅管理者发送一封电子邮件，让他们了解我们已联系主要/通知联系人，并详细介绍了帮助确保顺利加入的方法。 了解如何[找到组织的主要/通知联系人](#how-do-i-find-out-who-my-primary-or-notices-contact-is?)。
+我们会在迁移组织的前一周向主要/通知联系人发送一封电子邮件，邀请他们完成加入过程。 我们也会向订阅管理者发送一封电子邮件，让他们了解我们已联系主要/通知联系人，并详细介绍了帮助确保顺利加入的方法。 了解如何[找到组织的主要/通知联系人](#how-do-i-find-out-who-my-primary-or-notices-contact-is)。
 
 ### <a name="is-onboarding-different-from-migration"></a>加入与迁移不同吗？
 可以。  此过程包括以下两个阶段。 迁移前迁移（或加入）组织可确保管理员的工作不会受到干扰。 组织的信息迁移后，你就能在新门户中管理 Visual Studio 订阅。 如果主要/通知联系人未在迁移之前加入，则在你完成加入过程之前，订阅管理员将被阻止且无法管理订阅。

@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 ms.custom: ''
-ms.date: 11/28/2018
+ms.date: 04/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,22 +10,146 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: a7cd8da81fef0d3b4af8e61be979c8bea904072f
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 8a8fd54b15381298542f710cbffa81cd9e0295fe
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803735"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232757"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="4005"></a>4.0.0.5
+ 发布时间：2019 年 2 月 27 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成版：**
+
+    -   修复了安装包的 Visual Studio 版本检测问题。
+
+    -   删除了安装包中未使用的程序集。
+
+## <a name="4004"></a>4.0.0.4
+ 发布时间：2019 年 2 月 13 日
+
+### <a name="new-features"></a>新增功能
+
+-   **集成版：**
+
+    -   增加了对安装过程中正确检测 Unity 进程，并允许安装引擎更好地处理文件锁的支持。
+    
+    -   更新了 ScriptableObject API。
+
+## <a name="4003"></a>4.0.0.3
+ 发布时间：2019 年 1 月 31 日
+
+### <a name="new-features"></a>新增功能
+
+-   **项目生成：**
+
+    -   公共字段和序列化字段将不再引发警告。 在创建这些消息的 Unity 项目中，我们自动禁止了 CS0649 和 IDE0051 编译器警告。
+
+-   **集成版：**
+
+    -   改进了显示 Unity 编辑器和播放器实例的用户体验（现可调整窗口大小、使用统一边距并显示大小调整手柄）。 添加了 Unity 编辑器的进程 ID 信息。
+    
+    -   更新了 MonoBehaviour API。
+    
+-   **评估版：**
+
+    -   增加了对本地函数的支持。
+    
+    -   增加了对伪变量（异常和对象标识符）的支持。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成版：**
+
+    -   修复了名字对象图像和主题的问题。
+
+    -   仅在自动刷新资产数据库时，在调试期间写入到输出窗口。
+
+    -   修复了 MonoBehaviour 向导筛选的 UI 延迟。
+    
+-   **调试器：**
+
+    -   修复了在使用旧协议版本时读取命名参数的自定义属性。
+
+## <a name="4002"></a>4.0.0.2
+ 发布时间：2019 年 1 月 23 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成版：**
+
+    -   修复了实验性生成版本生成。
+
+    -   修复了项目文件事件处理，以最小化 UI 线程压力。
+
+    -   修复了成批文本更改的完成提供程序。
+    
+-   **调试器：**
+
+    -   修复了附加调试器的用户调试消息显示问题。
+
+## <a name="4001"></a>4.0.0.1
+ 发布时间：2018 年 12 月 10 日
+
+### <a name="new-features"></a>新增功能
+
+-   **评估版：**
+
+    -   将 NRefactory 替换为 Roslyn 以进行表达式计算。
+
+    -   添加了对指针的支持：取消引用、强制转换和指针算法（为此同时需要 Unity 2018.2+ 和新运行时）。
+
+    -   添加了对数组指针视图（例如在 C++ 中）的支持。 需要一个指针表达式，然后追加一个逗号和要查看的元素数。
+
+    -   添加了对异步构造的支持。
+
+-   **集成版：**
+    
+    -   添加了对保存时自动刷新 Unity 资产数据库的支持。 这在默认情况下处于启用状态，当在 Visual Studio 中保存脚本时，将在 Unity 端触发重新编译。 保存时可以在“工具\选项\适用于 Unity 的工具\刷新 Unity 的 AssetDatabase”中禁用此功能。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成版：**
+
+    -   修复了 Visual Studio 未被选为首选的外部编辑器时的桥激活。
+
+    -   修复了表达式格式不正确或不受支持的表达式计算。
+
+## <a name="4000"></a>4.0.0.0
+ 发布时间：2018 年 12 月 4 日
+
+### <a name="new-features"></a>新增功能
+
+-   **集成版：**
+
+    -   添加了对 Visual Studio 2019 的支持。
+
+    -   采用了 Visual Studio 图像服务和目录，同时完全支持 HDPI 缩放、像素完美的图像和主题。
+
+### <a name="deprecated-features"></a>弃用的功能
+
+-   **集成版：**
+
+    -   展望未来，Visual Studio Tools for Unity 将仅支持 Unity 5.2+（带有 Unity 内置的 Visual Studio 集成）。
+
+    -   展望未来，Visual Studio Tools for Unity 将仅支持 Visual Studio 2015+。
+
+    -   删除了旧版语言服务、错误列表和状态栏。
+    
+    -   删除了 Quick Monobehaviour 向导（以支持专用的 intellisense 支持）。
 
 ## <a name="3903"></a>3.9.0.3
  发布时间：2018 年 11 月 28 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   已修复：添加或删除第一个项目中的脚本时，项目会重新加载，及 intellisense 问题。
 
@@ -43,7 +167,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   修复了选中另一个默认编辑器时 Unity 插件的激活。
 
@@ -70,7 +194,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   修复了项目和解决方案的重载。
 
@@ -79,7 +203,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   修复了监视订阅处置的项目。
 
@@ -96,7 +220,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   在多个项目更改的情况下智能重载。
 
@@ -123,7 +247,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="new-features"></a>新增功能
 
--   **调试：**
+-   **调试版：**
 
     -   添加了对 UserLog 和 UserBreak 命令的支持。
 
@@ -140,13 +264,13 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="new-features"></a>新增功能
 
--   **调试：**
+-   **调试版：**
 
     -   现支持在异步构造中显示变量。
 
     -   现支持在设置断点时处理嵌套类型以防止编译器构造出现警告。
 
--   **集成：**
+-   **集成版：**
 
     -   现支持着色器的 textmate 语法（Shader 代码着色不再需要 C++ 工作负载）。
 
@@ -170,7 +294,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="new-features"></a>新增功能
 
--   **调试：**
+-   **调试版：**
 
     -   增加了对安排的调试的支持（使用相同的 Visual Studio 会话调试多个播放器/编辑器）。
 
@@ -186,7 +310,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   修复了异常设置的使用情况。
 
@@ -205,7 +329,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   修复处理自定义项目损坏状态方面的问题。
 
@@ -222,7 +346,7 @@ Visual Studio Tools for Unity 更改日志。
 
     -   修复了 Mono 版本检测的问题。
 
--   **集成：**
+-   **集成版：**
 
     -   修复了 2018.1 和插件激活的计时问题。
 
@@ -250,13 +374,13 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="new-features"></a>新增功能
 
--   **集成：**
+-   **集成版：**
 
     -   更新 UnityMessage API 接口 2017.3。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   仅对外部更改重载项目（含有限制）。
 
@@ -265,7 +389,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   固定自动 pdb 到 mdb 调试符号转换。
 
@@ -311,7 +435,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   固定自动 pdb 到 mdb 调试符号转换。
 
@@ -320,7 +444,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="new-features"></a>新增功能
 
--   **集成：**
+-   **集成版：**
 
     -   从 Unity 添加或删除脚本时，Unity 项目现在会在 Visual Studio 中自动重载。
 
@@ -332,7 +456,7 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   **集成：**
+-   **集成版：**
 
     -   修复了安装依赖项问题。
 
@@ -411,7 +535,7 @@ Visual Studio Tools for Unity 更改日志。
 
     -   修复了将项目添加到 Visual Studio Watch 时出现的问题。
 
--   **Project Generation:**
+-   **项目生成：**
 
     -   修复了使用 mcs.rsp 文件的程序集名称引用。
 

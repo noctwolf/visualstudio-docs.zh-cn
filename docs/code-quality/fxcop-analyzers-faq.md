@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1634731e68c395dea5a14876cf67944714cb4c3a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222476"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232549"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>有关 FxCop 和 FxCop 分析器的常见问题解答
 
@@ -40,6 +40,14 @@ FxCop 分析器基于 .NET Compiler Platform（“Roslyn”）。 [将它们安�
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>那么我该如何运行 FxCop 分析器呢？
 
 要运行 FxCop 分析器，首先请为它们[安装 NuGet 包](install-fxcop-analyzers.md)。 然后在 Visual Studio 中或使用 msbuild 生成项目或解决方案。 FxCop 分析器生成的警告和错误将显示在“错误列表”或命令窗口中。
+
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>即使在安装了 FxCop 分析器 NuGet 包之后，我仍会收到 CA0507 警告
+
+如果已安装 FxCop 分析器，但继续收到“运行代码分析”已被弃用，以支持在生成期间运行的 FxCop 分析器的 CA0507 警告，可能需要将项目文件中的“RunCodeAnalysis”msbuild 属性设置为“false”。 否则，每次生成后将执行静态代码分析。
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
 
 ## <a name="see-also"></a>请参阅
 
