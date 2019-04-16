@@ -3,26 +3,26 @@ title: 面向 Python 开发人员的 Visual Studio 概述
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f5ae66de706d29f7efb63f2c5b975a268c5f50ab
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354734"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365725"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 
 Visual Studio“集成开发环境”是面向 Python （和其他语言）的创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括代码完成工具、交互式 REPL 环境以及其他功能，以简化软件开发过程。
 
-[![带有 Python 项目的 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![V带有 Python 项目的 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此图像显示 Visual Studio 中含有一个打开的 Python 项目和若干重要的工具窗口：
 
@@ -68,11 +68,11 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    ![用于 Python 项目的上下文菜单上的 PyLint 命令](media/code-pylint-command.png)
 
-- [快速启动](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 搜索框
 
-   visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用**快速启动**搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，“快速启动”提供了打开 Visual Studio 安装程序以安装工作负载或单个组件的结果。
+   visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，搜索框提供了打开 Visual Studio 安装程序以安装工作负载或单个组件的结果。
 
-   ![Visual Studio 中的“快速启动”搜索框](media/tour-ide-quick-launch.png)
+   ![Visual Studio 中的搜索框](media/tour-ide-quick-launch.png)
 
 - 波形曲线和[快速操作](../ide/quick-actions.md)
 

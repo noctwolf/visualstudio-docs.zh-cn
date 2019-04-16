@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/26/2019
+ms.date: 04/03/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3e88054d497bda068585b7bc58787ee3058bcb71
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476080"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018241"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -29,8 +29,9 @@ ms.locfileid: "58476080"
 
 下表列出了 Visual Studio 2017 的最新生成号和发布日期。
 
-| **Version**| **频道** | **发布日期** | **内部版本** |
+| **Version**| **通道** | **发行日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.11 | Release | 2019 年 4 月 2 日 | 15.9.28307.586 |
 | 15.9.10 | Release | 2019 年 3 月 25 日 | 15.9.28307.557 |
 | 15.9.9 | Release | 2019 年 3 月 12 日 | 15.9.28307.518 |
 | 15.0.21 | Release | 2019 年 3 月 12 日 | 15.0.26228.76 |
@@ -190,8 +191,12 @@ ms.locfileid: "58476080"
 
 下表列出了 Visual Studio 2019 的最新生成号和发布日期’。
 
-| **Version**| **频道** | **发布日期** | **内部版本** |
+| **Version**| **通道** | **发行日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.0.0 | Release | 2019 年 4 月 2 日 | 16.0.28729.10 |
+| 16.0.0 | 预览版 5 | 2019 年 4 月 2 日 | 16.0.28729.10 |
+| 16.0.0 | 候选发布 4 (RC.4) | 2019 年 3 月 26 日 | 16.0.28721.148 |
+| 16.0.0 | 预览版 4.4 | 2019 年 3 月 26 日 | 16.0.28721.148 |
 | 16.0.0 | 候选发布 3 (RC.3) | 2019 年 3 月 19 日 | 16.0.28714.193 |
 | 16.0.0 | 预览版 4.3 | 2019 年 3 月 19 日 | 16.0.28714.193 |
 | 16.0.0 | 候选发布 2 (RC.2) | 2019 年 3 月 12 日 | 16.0.28711.60 |
@@ -208,6 +213,9 @@ ms.locfileid: "58476080"
 | 16.0.0 | 预览版 2 | 2019 年 1 月 23 日 | 16.0.28522.59 |
 | 16.0.0 | 预览版 1.1 | 2018 年 12 月 10 日 | 16.0.28408.50 |
 | 16.0.0 | 预览版 1 | 2018 年 12 月 4 日 | 16.0.28329.73 |
+
+> [!NOTE]
+> 有关上一个版本的生成号和发布日期的列表，请参阅 [Visual Studio 2017 生成号和发布日期](visual-studio-build-numbers-and-release-dates.md?view=vs-2017)
 
 ::: moniker-end
 

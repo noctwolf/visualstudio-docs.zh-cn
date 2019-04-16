@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 03/21/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 945250660e80353ea536986e5149f8814d1fe563
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323589"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232679"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -40,7 +40,7 @@ ms.locfileid: "58323589"
 
 已经简化了安装和更新体验，以便更轻松地在 IDE 中直接使用。 下面介绍了如何从版本 15.6 以及更高版本更新到较新版本的 Visual Studio。
 
-### <a name="use-the-notifications-hub"></a>使用“通知”中心
+### <a name="using-the-notifications-hub"></a>使用“通知”中心
 
 当有更新时，Visual Studio 中会有相应的“通知”标志。
 
@@ -49,6 +49,9 @@ ms.locfileid: "58323589"
 1. 选择“通知”标志打开“通知”中心，然后选择要安装的更新。
 
    ![使用“通知”中心更新 Visual Studio 2017](media/vs-install-notifications-hub-15dot6.png "Visual Studio 2017 中的“通知”中心")
+
+      > [!TIP]
+      > Visual Studio 2017 版本的更新是累积的，因此始终选择安装具有最新版本号的版本。
 
 1. 当“更新”对话框打开，请选择“立即更新”。
 
@@ -63,7 +66,7 @@ ms.locfileid: "58323589"
      > [!NOTE]
      > 当以管理员模式运行 Visual Studio 时，必须在更新后手动重启 Visual Studio。
 
-### <a name="use-the-ide"></a>使用 IDE
+### <a name="using-the-ide"></a>使用 IDE
 
 可以查看更新，然后从 Visual Studio 菜单栏安装更新。
 
@@ -80,7 +83,7 @@ ms.locfileid: "58323589"
    > [!NOTE]
    > 当以管理员模式运行 Visual Studio 时，必须在更新后手动重启 Visual Studio。
 
-### <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安装程序
+### <a name="using-the-visual-studio-installer"></a>使用 Visual Studio 安装程序
 
 和 Visual Studio 的早期版本一样，可以使用 Visual Studio 安装程序来安装更新。
 
@@ -112,6 +115,9 @@ ms.locfileid: "58323589"
    选择通知标志，打开“通知”中心。
 
    ![使用“通知”中心更新 Visual Studio 2017](media/notifications-hub.png "Visual Studio 中的“通知”中心")
+
+      > [!TIP]
+      > Visual Studio 2017 版本的更新是累积的，因此始终选择安装具有最新版本号的版本。
 
 1. 选择“有‘Visual Studio 更新’”，随即会打开“扩展和更新”对话框。
 
@@ -152,14 +158,6 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
      ![使用 Visual Studio 安装程序更新 Visual Studio 2017](media/update-visual-studio.png "使用 Visual Studio 安装程序更新 Visual Studio")
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
-
-## <a name="see-also"></a>请参阅
-
-* [修改 Visual Studio](modify-visual-studio.md)
-* [卸载 Visual Studio](uninstall-visual-studio.md)
-* [更新 Visual Studio for Mac](/visualstudio/mac/update)
-
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -198,8 +196,12 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ## <a name="use-the-ide"></a>使用 IDE
 
-1. 打开 Visual Studio。 
- 
+可以查看更新，然后使用 Visual Studio 2019 中的菜单栏或搜索框安装更新。
+
+### <a name="open-visual-studio"></a>打开 Visual Studio
+
+1. 在 Windows“开始”菜单上，选择“Visual Studio 2019”。
+
     ![打开 Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "Open Visual Studio 2019 from Windows")
 
 1. 在“开始使用”下，选择任意选项以打开 IDE。
@@ -209,7 +211,7 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
     Visual Studio 随即打开。 在 IDE 中，将显示“Visual Studio 2019 更新”消息。
 
     ![IDE 中的“Visual Studio 2019 更新”消息](media/vs2019-update-visual-studio-ide-message.png "The 'Visual Studio 2019 update' message in the IDE")
- 
+
 1. 在“Visual Studio 2019 更新”消息中，选择“查看详细信息”。
 
    ![在 Visual Studio 2019 IDE 更新消息中选择“查看详细信息”按钮](media/vs2019-update-visual-studio-ide-view-details.png "Choose the View Details button in the Visual Studio 2019 update message")
@@ -218,12 +220,49 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
      ![在“已下载更新并准备安装”对话框中选择“更新”按钮](media/vs2019-update-visual-studio-community-rc-from-ide.png "Choose the Update button in the 'Update downloaded and ready to install' dialog box")
 
-   Visual Studio 将关闭然后重新打开。
+   Visual Studio 将更新、关闭然后重新打开。
+
+### <a name="in-visual-studio"></a>在 Visual Studio 中
+
+1. 在菜单栏上，选择“帮助”，然后选择“检查更新”。
+
+     ![从“帮助”菜单中选择“检查更新”](media/vs-2019/vs-ide-check-updates-help-menu.png "从“帮助”菜单中选择“检查更新”")
+
+    > [!NOTE]
+    > 还可以使用 IDE 中的搜索框来检查更新。 按 Ctrl+Q，键入“检查更新”，然后选择匹配的搜索结果。
+
+1. 在“已下载更新并准备安装”对话框中，选择“更新”。
+
+     ![在“已下载更新并准备安装”对话框中选择“更新”按钮](media/vs2019-update-visual-studio-community-rc-from-ide.png "Choose the Update button in the 'Update downloaded and ready to install' dialog box")
+
+   Visual Studio 将更新、关闭然后重新打开。
+
+## <a name="use-the-notifications-hub"></a>使用“通知”中心
+
+1. 在 Visual Studio 中，保存所做的工作。
+
+1. 从 Visual Studio IDE 的右下角选择通知图标，以打开“通知”中心。
+
+   ![Visual Studio IDE 中的“通知”图标](media/vs-2019/notification-bar.png "Visual Studio IDE 中的“通知”图标")
+
+1. 在“通知中心”中，选择要安装的更新，然后选择“查看详细信息”。
+
+     ![Visual Studio 2019 中的“通知”中心](media/vs-2019/notification-hub-update.png "Visual Studio 2019 中的“通知”中心")
+
+      > [!TIP]
+      > Visual Studio 2019 版本的更新是累积的，因此始终选择安装具有最新版本号的版本。
+
+1. 在“已下载更新并准备安装”对话框中，选择“更新”。
+
+   Visual Studio 将更新、关闭然后重新打开。
+
+::: moniker-end
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 
+* [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
 * [更新 Visual Studio for Mac](/visualstudio/mac/update)
-
-::: moniker-end
+* [修改 Visual Studio](modify-visual-studio.md)
+* [卸载 Visual Studio](uninstall-visual-studio.md)

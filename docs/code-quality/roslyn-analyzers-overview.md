@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36985ab7a0ee94cb735b1954a9e5ea9c2e0d2bbf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869091"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232562"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>.NET Compiler Platform 分析器概述
 
@@ -38,17 +38,27 @@ ms.locfileid: "57869091"
 
 Roslyn 分析器在生成时分析代码，比如静态代码分析（如果启用），但还可在你键入时保持运行状态。 如果启用[完整解决方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis)，Roslyn 分析器还会提供编辑器中未打开的代码文件的设计时分析。
 
-> [!NOTE]
+> [!TIP]
 > 仅当分析仪作为 NuGet 软件包安装时，才会显示 Roslyn 分析器的生成时错误和警告。
 
 Roslyn 分析器不仅会报告静态代码分析也会报告的相同类型的问题，而且还可以轻松修复文件或项目中冲突的一次发生或全部发生。 这些操作称为代码修复。 代码修复是特定于 IDE 的；在 Visual Studio 中，它们以[快速操作](../ide/quick-actions.md)的方式实现。 并非所有分析器诊断都有相关联的代码修复。
 
 > [!NOTE]
-> 菜单选项“分析” > “运行代码分析”仅适用于静态代码分析。 此外，在项目的“代码分析”属性页上，“生成时启用代码分析”和“禁止显示所生成代码的结果”复选框仅适用于静态代码分析。 它们在 Roslyn 分析器上无效。
+> 下面的 UI 选项仅适用于静态代码分析：
+>
+> - “分析” > “运行代码分析”菜单选项。
+> - 项目属性页的“代码分析”选项卡上的“生成时启用代码分析”和“禁止显示所生成代码的结果”复选框（这些选项对 Roslyn 分析器没有任何影响）。
 
 要区分“错误列表”中来自 Roslyn 分析器的冲突和来自静态代码分析的冲突，请查看“工具”列。 如果“工具”值与“解决方案资源管理器”中的某个分析器程序集匹配，例如 Microsoft.CodeQuality.Analyzers，则冲突来自 Roslyn 分析器。 否则，冲突源自静态代码分析。
 
 ![错误列表中的工具列](media/code-analysis-tool-in-error-list.png)
+
+> [!TIP]
+> 项目文件中的 RunCodeAnalysis msbuild 属性只适用于静态代码分析。 如果安装分析器，请将项目文件中的“RunCodeAnalysis”设置为“false”，以防止生成后运行静态代码分析。
+>
+> ```xml
+> <RunCodeAnalysis>false</RunCodeAnalysis>
+> ```
 
 ## <a name="nuget-package-versus-vsix-extension"></a>NuGet 包与 VSIX 扩展
 
@@ -81,5 +91,5 @@ Roslyn 分析器不仅会报告静态代码分析也会报告的相同类型的�
 ## <a name="see-also"></a>请参阅
 
 - [分析器常见问题解答](analyzers-faq.md)
-- [编写 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
-- [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
+- [编写自己的 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [.NET 编译器平台 SDK](/dotnet/csharp/roslyn-sdk/)

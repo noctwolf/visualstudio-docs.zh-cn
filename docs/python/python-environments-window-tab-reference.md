@@ -3,19 +3,19 @@ title: Python 环境窗口引用
 description: 在 Visual Studio 的 Python 环境窗口中出现的每个选项卡的详细信息。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355771"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366518"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -60,7 +60,7 @@ ms.locfileid: "58355771"
 
 启动脚本包含交互窗口自动加载并运行的代码，包括导入、函数定义及任何其他文字内容。 此类脚本通过以下两种方式引用：
 
-1. 安装环境时，Visual Studio 会创建文件夹 Documents\Visual Studio <version>\Python Scripts\\\<environment>，其中 &lt;version&gt; 为 Visual Studio 版本（如 2017 或 2019），&lt;environment&gt; 对应环境的名称。 可以使用“浏览交互式脚本”命令轻松地导航到特定于环境的文件夹。 启动该环境的交互窗口时，它会按字母顺序加载和运行在此处找到的任何 .py 文件。
+1. 安装环境时，Visual Studio 会创建文件夹 Documents\Visual Studio \<version>\Python Scripts\\\<environment>，其中 &lt;version&gt; 为 Visual Studio 版本（如 2017 或 2019），&lt;environment&gt; 对应环境的名称。 可以使用“浏览交互式脚本”命令轻松地导航到特定于环境的文件夹。 启动该环境的交互窗口时，它会按字母顺序加载和运行在此处找到的任何 .py 文件。
 
 1. “工具” > “选项” > “Python” > “交互窗口”选项卡中的“脚本”控件（请参阅[交互窗口选项](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)）用于为所有环境中加载和运行的启动脚本指定另一个文件夹。 但是，此功能目前无效。
 
@@ -88,7 +88,7 @@ ms.locfileid: "58355771"
 
 ## <a name="packages-tab"></a>包选项卡
 
-在先前版本中还标记为“pip”。
+*在先前版本中还标记为“pip”。*
 
 使用 pip（“包(PyPI)”选项卡）或 conda（对于 Visual Studio 2017 版本 15.7 及更高版本的 conda 环境，为“包(Conda)”选项卡）管理环境中安装的程序包。 在此选项卡中，还可以搜索并安装新的程序包，包括其依赖项。
 

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640787"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366752"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用情况
 
@@ -56,12 +56,16 @@ ms.locfileid: "56640787"
 
 诊断报表按“CPU 总量”从最高到最低进行排序。 通过选择列标题更改排序顺序或排序列。 使用“筛选器”下拉列表以选择或取消选择要显示的线程，并使用“搜索”框搜索特定线程或节点。
 
+::: moniker range=">=vs-2019"
+从 Visual Studio 2019 开始，可以单击“展开热路径”和“显示热路径”按钮，以查看树视图中使用最高 CPU 百分比的函数调用。
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> CPU 使用情况数据列
 
 |||
 |-|-|
-|CPU 总量 [单位，以百分数计算]|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 调用函数所使用的毫秒数和 CPU 百分比，以及函数在所选时间范围内调用的函数。 这与“CPU 利用率”时间线图不同，后者是将时间范围内的 CPU 总活动量与可用 CPU 总量进行比较。|
-|自 CPU [单位，以百分数计算]|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在所选时间范围内调用函数所使用的毫秒数和 CPU 百分比，不包括函数调用的函数。|
+|**CPU 总量 [单位，以百分数计算]**|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 调用函数所使用的毫秒数和 CPU 百分比，以及函数在所选时间范围内调用的函数。 这与“CPU 利用率”时间线图不同，后者是将时间范围内的 CPU 总活动量与可用 CPU 总量进行比较。|
+|**自 CPU [单位，以百分数计算]**|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在所选时间范围内调用函数所使用的毫秒数和 CPU 百分比，不包括函数调用的函数。|
 |**模块**|包含函数的模块的名称。
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率调用关系树
@@ -70,7 +74,12 @@ ms.locfileid: "56640787"
 
 ####  <a name="BKMK_Call_tree_structure"></a>调用关系树结构
 
- ![调用树结构](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")
+::: moniker range=">=vs-2019"
+![调用树结构](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Call tree structure")
+::: moniker-end
+::: moniker range="vs-2017"
+![调用树结构](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ ms.locfileid: "56640787"
 
 ####  <a name="BKMK_External_Code"></a> 外部代码
 
- 由代码执行的系统和框架函数称为“外部代码”。 外部代码函数启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用情况调用树可将用户方法的外部函数收集到一个“[外部代码]”节点中。
+由代码执行的系统和框架函数称为“外部代码”。 外部代码函数启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用情况调用树可将用户方法的外部函数收集到一个“[外部代码]”节点中。
 
- 要查看外部代码的调用路径，请在主诊断报表页面（右窗格）上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。 （“筛选器”下拉菜单在主诊断页面上可用，在详细视图上不可用。）
+要查看外部代码的调用路径，请在主诊断报表页面（右窗格）上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。 （“筛选器”下拉菜单在主诊断页面上可用，在详细视图上不可用。）
 
- ![显示外部代码](../profiling/media/cpu_use_wt_filterview.png "Show External Code")
+![显示外部代码](../profiling/media/cpu_use_wt_filterview.png "Show External Code")
 
- 许多外部代码调用链都是深度嵌套的，因此链的宽度可能超过“函数名”列的显示宽度。 函数名则显示为“...”。
+许多外部代码调用链都是深度嵌套的，因此链的宽度可能超过“函数名”列的显示宽度。 函数名则显示为“...”。
 
- ![调用树中嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")
+![调用树中嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")
 
- 要查找所需的函数名称，请使用搜索框。 将鼠标悬停在所选行上或使用水平滚动条来查看数据。
+要查找所需的函数名称，请使用搜索框。 将鼠标悬停在所选行上或使用水平滚动条来查看数据。
 
- ![搜索嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
+::: moniker range=">=vs-2019"
+![搜索嵌套的外部代码](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "Search for nested external code")
+::: moniker-end
+::: moniker range="vs-2017"
+![搜索嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用情况调用树中的异步函数
 

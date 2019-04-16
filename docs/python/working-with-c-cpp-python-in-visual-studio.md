@@ -3,19 +3,19 @@ title: 编写 Python 的 C++ 扩展
 description: 使用 Visual Studio、CPython 和 PyBind11 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
 ms.date: 11/19/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64c200ffa0bb70b52f9e42d40daf3fd2a39df729
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416040"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366895"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -127,7 +127,7 @@ ms.locfileid: "58416040"
     | | **项目默认值** > **配置类型** | **动态库(.dll)** |
     | **C/C++** > **常规** | **附加包含目录** | 根据相应的安装添加 Python“include” 文件夹，例如 `c:\Python36\include`。  |
     | **C/C++** > **预处理器** | **预处理器定义** | **仅 CPython**：将 `Py_LIMITED_API;` 添加到字符串开头（包括分号）。 此定义会限制可从 Python 调用的某些函数，并使代码在 Python 不同版本之间更易于移植。 如果使用的是 PyBind11，请勿添加此定义，否则将会看到生成错误。 |
-    | **C/C++** > **代码生成** | **运行时库** | **多线程 DLL (/MD)**（请参阅下面的“警告”） |
+    | **C/C++** > **代码生成** | **运行库** | **多线程 DLL (/MD)**（请参阅下面的“警告”） |
     | 链接器 > **常规** | **附加库目录** | 根据相应的安装添加包含 .lib 文件的 Python“libs”文件夹，例如 `c:\Python36\libs`。 （务必指向包含 .lib 文件的“libs”文件夹，而非包含 .py 文件的 Lib 文件夹。） |
 
     > [!Tip]
@@ -288,7 +288,7 @@ C++ 模块可能无法编译的原因如下：
 
 1. 右键单击 C++ 项目，然后选择“添加” > “新建项”，在项目中创建名为 setup.py 的文件。 然后选择“C++ 文件 (.cpp)”并命名为 `setup.py`，再选择“确定”（尽管使用了 C++ 文件模板，但使用 .py 扩展命名文件可让 Visual Studio 将其识别为 Python）。 编辑器中出现该文件时，以适合扩展方法的形式将以下代码粘贴到其中：
 
-    CPython 扩展（superfastcode 项目）：
+    **CPython 扩展（superfastcode 项目）：**
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -303,7 +303,7 @@ C++ 模块可能无法编译的原因如下：
 
     请参阅 [Building C and C++ Extentions](https://docs.python.org/3/extending/building.html)（生成 C 和 C++ 扩展）(python.org)，获取此脚本相关文档。
 
-    PyBind11（superfastcode2 项目）：
+    **PyBind11（superfastcode2 项目）：**
 
     ```python
     import os, sys

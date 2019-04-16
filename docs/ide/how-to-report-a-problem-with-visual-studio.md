@@ -1,50 +1,41 @@
 ---
 title: 如何报告 Visual Studio 的问题
-titleSuffix: ''
-description: 了解如何向 Microsoft 报告 Visual Studio 的问题，以便进行诊断并修复它。
+description: 了解如何报告 Visual Studio 的问题
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953645"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232536"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>如何报告 Visual Studio 的问题
-
-如果在使用 Visual Studio 时遇到问题，请告知我们。 下面介绍如何将问题报告给[开发人员社区](https://developercommunity.visualstudio.com/)，以便我们诊断并修复该问题。
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何报告 Visual Studio 或 Visual Studio 安装程序的问题
 
 > [!NOTE]
-> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[如何报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)。
+> 对于 Visual Studio for Mac，请参阅[如何报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)。
 
-## <a name="report-a-problem-by-using-visual-studio"></a>使用 Visual Studio 报告问题
+可以使用 Visual Studio 或其安装程序中包含的反馈工具报告问题。 反馈工具使你能够轻松地在反馈中包含诊断信息，并帮助 Visual Studio 团队更有效地诊断和修复问题。 下面是报告问题的步骤。
 
-若要报告 Visual Studio 的问题，则必须从 Visual Studio 或 Visual Studio 安装程序启动报告。 不能直接通过[开发人员社区](https://developercommunity.visualstudio.com/)网站进行此操作。 通过 Visual Studio 进行报告可在报告中自动包含诊断信息。
+1. 在 Visual Studio 中，选择右上角的反馈图标并选择“报告问题”。 此外可以从菜单“帮助” > “发送反馈” > “报告问题”来访问反馈工具。
+![报告 Visual Studio 开发者社区上弹出的问题](media/vsfeedbackentry.png)，或者，如果无法安装 Visual Studio 或无法访问 Visual Studio 中的反馈工具，则在 Visual Studio 安装程序中报告问题。  在安装程序中，选择右上角的反馈图标并选择“报告问题”。
+![Visual Studio 开发人员社区中的“报告问题”弹出窗口](media/installer.png)
 
-![Visual Studio 开发人员社区中的“报告问题”弹出窗口](media/report-an-issue.png)
-
-1. 在 Visual Studio 中，选择“帮助” > “发送反馈” > “报告问题”。
-
-   > [!TIP]
-   > 如果无法完成 Visual Studio 安装，或无法在 Visual Studio 内访问反馈工具，可使用 Visual Studio 安装程序报告问题。 为此，请选择 Visual Studio 安装程序右上角的反馈图标。
-
-1. 如果未登录，选择“登录”；它位于工具右侧，如下面的屏幕截图中所示。 按照屏幕上的说明登录。
+1. 如果未登录，请选择“登录”，如以下屏幕截图所示。 按照屏幕上的说明登录。
 
    ![登录以报告问题](../ide/media/sign-in-new-ux.png)
 
-   登录后，可以报告遇到的问题。 此外，还可以对上面发布的任何其他问题投票或发表评论。
+   不仅可以在登录时报告问题，还可以对任何现有反馈进行投票和评论。
 
-1. 登录后，可在“我关注的项”屏幕中看到自己的“问题”和“活动”
+1. 登录后，可在“我关注的项”屏幕上看到自己的“问题”和“活动”
 
-    ![我关注的项](../ide/media/items-i-follow.png)
+   ![我关注的项](../ide/media/items-i-follow.png)
 
 1. Visual Studio 提供了一个界面，用于搜索问题并查看其他人是否已报告该问题。 如果有人已报告此问题，请为其“投票”以便让我们知道。
    > [!NOTE]
@@ -133,6 +124,6 @@ ms.locfileid: "56953645"
 
 * [与我们交流](../ide/talk-to-us.md)
 * [报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)
-* [报告 C++ 问题](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)
+* [报告 C++ 的问题](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
+* [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com/)
 * [开发人员社区数据隐私](developer-community-privacy.md)
