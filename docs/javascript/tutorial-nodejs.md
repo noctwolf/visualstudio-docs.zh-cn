@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355560"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897707"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 
@@ -78,7 +78,7 @@ Visual Studio 管理项目中的单个应用程序的文件。 该项目包括�
 1. 创建新项目。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的基本 Azure Node.js Express 4 应用程序”(JavaScript)。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的基本 Azure Node.js Express 4 应用程序”(JavaScript)。 在出现的对话框中，选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。
@@ -186,7 +186,7 @@ IntelliSense 是一款可帮助编写代码的 Visual Studio 工具。
 
 1. 在 `"data"` 前添加逗号 (`,`)，修复代码。
 
-    更正后，代码行应如下所示：`res.render('index', { title: 'Express', "data": getData() });`
+    更正后，代码行应如下所示： `res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>设置断点
 
@@ -204,7 +204,12 @@ IntelliSense 是一款可帮助编写代码的 Visual Studio 工具。
 
 1. 在“调试”工具栏中选择调试目标，例如 Microsoft Edge 或 Chrome。
 
+    ::: moniker range=">=vs-2019"
+    ![选择调试目标](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![选择调试目标](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     如果计算机上有 Chrome，但未显示为选项，请从调试目标下拉列表中选择“浏览方式”，然后选择 Chrome 作为默认浏览器目标（选择“设为默认值”）。
 

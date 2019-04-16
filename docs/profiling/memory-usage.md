@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868976"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232770"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中衡量内存使用情况
 
@@ -54,13 +54,13 @@ ms.locfileid: "57868976"
 
 4.  使用工具栏上的“选择工具”设置选择“内存使用率”。
 
-     ![显示诊断工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![显示诊断工具](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  依次单击“调试”、“启动调试”或单击工具栏上的“启动”或按 **F5**。
 
      当应用完成加载后，将显示诊断工具的“摘要”视图。
 
-     ![诊断工具“摘要”选项卡](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![诊断工具“摘要”选项卡](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要对本机或混合模式应用启用快照，请启动调试会话（快捷键：F5）。 当“诊断工具”窗口出现时，选择“内存使用情况”选项卡，然后选择“堆分析”。

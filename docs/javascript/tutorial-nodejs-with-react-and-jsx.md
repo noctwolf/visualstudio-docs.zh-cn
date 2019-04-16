@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f8fb7c864f484208eaa647131ac7a32c8da665f8
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355482"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897759"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -85,7 +85,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 1. 创建新项目。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“空白 Node.js Web 应用程序”(JavaScript)。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“空白 Node.js Web 应用程序”(JavaScript)。 在出现的对话框中，选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空白 Node.js Web 应用程序”，键入名称“NodejsWebAppBlank”，然后选择“确定”。
@@ -165,7 +165,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 * *app.tsx*
 * *webpack-config.js*
-* index.html
+* *index.html*
 * *tsconfig.json*
 
 对于此简单应用，将新建项目文件添加到项目根中。 （在大多数应用中，通常将文件添加到子文件夹并相应调整相对路径引用。）
@@ -324,7 +324,12 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 1. 选择 Chrome 作为当前调试目标。
 
+    ::: moniker range=">=vs-2019"
+    ![选择 Chrome 作为调试目标](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![选择 Chrome 作为调试目标](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     如果计算机上有 Chrome，但未显示为选项，请从调试目标下拉列表中选择“浏览方式”，然后选择 Chrome 作为默认浏览器目标（选择“设为默认值”）。
 
@@ -369,6 +374,11 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
     `chrome.exe --remote-debugging-port=9222`
 
     这样在启动 Chrome 时会同时启用调试。
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > 还可以在浏览器启动时设置 `--remote-debugging-port` 标志，方法是从“调试”工具栏选择“浏览方式...”，然后选择“添加”，并在“参数”字段中设置标志。 使用其他浏览器的友好名称，如“带有调试功能的 Chrome”。 有关详细信息，请参阅[发行说明](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)。
+    ::: moniker-end
 
 3. 如下图所示，切换到 Visual Studio 并在 `render()` 函数的 app-bundle.js 代码中设置断点：
 

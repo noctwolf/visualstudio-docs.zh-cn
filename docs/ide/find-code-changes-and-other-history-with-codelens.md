@@ -9,21 +9,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af930f983ad328dac16e5eec1fb0cf2650f7681a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867850"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232705"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
 通过 CodeLens，你可以在专注于工作的同时了解代码所发生的情况 &ndash; 而无需离开编辑器。 可以查找代码引用、代码更改、关联的 Bug、工作项、代码评审和单元测试。
 
+::: moniker range=">=vs-2019"
+
+> [!NOTE]
+> 源代码管理 CodeLens 指示器在 Visual Studio Community 版本中不可用。
+
+::: moniker-end
+
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> CodeLens 仅在 Visual Studio Enterprise 和 Visual Studio Professional 版中可用。 在 Visual Studio Community 版中不可用。
+> CodeLens 仅在 Visual Studio Enterprise 和 Professional 版中可用。 在 Visual Studio Community 版中不可用。
 
 ::: moniker-end
 
@@ -60,15 +67,15 @@ ms.locfileid: "57867850"
 
 ![CodeLens - 代码映射上的引用](../ide/media/codelensmappedreferences.png)
 
-## <a name="a-namefind-code-historyfind-changes-in-your-code"></a><a name="find-code-history"/>查找代码中的更改
+## <a name="find-changes-in-your-code"></a>查找你的代码中的更改
 
 检查代码的历史记录，了解代码所发生的情况。 或者，在将这些更改合并到你的代码中之前查看它们，这样你可以更好地了解其他分支中的更改可能影响你的代码的方式。
 
 需要：
 
-- Visual Studio 2019（或 Visual Studio 2017 Enterprise 或 Professional 版本）
+- Visual Studio Enterprise 或 Visual Studio 版本
 
-- Team Foundation Server 2013 或更高版本、Azure DevOps Services 或 Git
+- Azure DevOps Services、Team Foundation Server 2013 或更高版本或 Git
 
 - [Skype for Business](/skypeforbusiness/)，可从代码编辑器联系团队
 
@@ -224,11 +231,11 @@ ms.locfileid: "57867850"
 
      ![CodeLens - 转到单元测试定义](../ide/media/codelens-unit-test-definition.png)
 
-6. 若要查看测试的结果，选择测试状态指示器（![测试失败图标](../ide/media/codelenstestfailedicon.png)或![测试通过图标](../ide/media/codelenstestpassedicon.png)）或按 Alt+1.
+6. 若要查看测试结果，选择测试状态指示器（![测试失败图标](../ide/media/codelenstestfailedicon.png)或![测试通过图标](../ide/media/codelenstestpassedicon.png)）或按 Alt+1。
 
      ![CodeLens - 查看单元测试结果](../ide/media/codelens-unit-test-result.png)
 
-7. 若要查看更改过此测试的人数、更改者或对此测试所做的更改数，[查找代码的历史记录](#find-code-history)和关联的项。
+7. 若要查看更改过此测试的人数、更改者或对此测试所做的更改数，[查找代码的历史记录](#find-changes-in-your-code)和关联的项。
 
 ## <a name="keyboard-shortcuts"></a>键盘快捷键
 
@@ -264,6 +271,20 @@ ms.locfileid: "57867850"
 - 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 DevOps 相关的指示器。 确认具有[团队成员权限](/azure/devops/organizations/security/view-permissions?view=vsts)。
 
 - 当应用程序代码没有单元测试时，单元测试指示器不显示。 测试状态指示器自动显示在测试项目中。 如果知道应用程序代码具有单元测试，但测试指示器未显示，请尝试生成解决方案 (Ctrl+Shift+B)。
+
+::: moniker range=">=vs-2019"
+
+> [!TIP]
+> 源代码管理指示器在 Visual Studio Community 版本中不可用。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> CodeLens 在 Visual Studio Community 版本中不可用。
+
+::: moniker-end
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>问：为什么没有看见提交的工作项详情？
 
@@ -313,11 +334,11 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 - **引用**：代码更改时，此指示器会自动更新。 如果“引用”指示器作为单独的窗口停靠，请选择“刷新”来刷新该指示器：
 
-     ![CodeLens 引用中的“刷新”按钮](../ide/media/codelensviewreferencesdocked.png)
+   ![CodeLens 引用中的“刷新”按钮](../ide/media/codelensviewreferencesdocked.png)
 
 - **团队**：从右键单击菜单中选择“刷新 CodeLens 团队指示器”，刷新这些指示器：
 
-     ![“刷新 CodeLens 团队指示器”菜单项](../ide/media/codelensrefreshindicatorsfromcode.png)
+   ![“刷新 CodeLens 团队指示器”菜单项](../ide/media/codelensrefreshindicatorsfromcode.png)
 
 - **测试**：[查找代码的单元测试](#associated-unit-tests)，刷新“测试”指示器。
 

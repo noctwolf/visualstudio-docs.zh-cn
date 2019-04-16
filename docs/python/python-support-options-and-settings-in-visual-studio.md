@@ -11,18 +11,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a25c7aa9404cf0a10b6c55313016c30577eef504
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151162"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365793"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中的 Python 选项
 
@@ -89,7 +89,7 @@ ms.locfileid: "58151162"
 | **在进程异常退出时等待输入**<br/><br/>**在进程正常退出时等待输入** | On（两者皆是） | 通过 Visual Studio 启动的 Python 程序在其自己的控制台窗口中运行。 默认情况下，无论程序如何退出，窗口都会等待用户按键才会关闭。 若要删除提示并自动关闭窗口，请清除其中任一选项或全部清除。 |
 | **让程序输出显示在“调试输出”窗口** | On | 同时在一个单独的控制台窗口和 Visual Studio 输出窗口中显示程序输出。 清除此选项可仅在单独控制台窗口中显示输出。 |
 | **在出现 SystemExit 异常（退出代码为 0）时中断** | Off | 如果设置此选项，将在出现此异常时停止调试器。 清除后，调试器将退出，但不会中断。 |
-| **启动 Python 标准库调试** | Off | 可支持在调试时逐步执行标准库源代码，但会增加调试器启动的时间。|
+| **启用调试 Python 标准库** | Off | 可支持在调试时逐步执行标准库源代码，但会增加调试器启动的时间。|
 | **显示函数返回值** | On | *仅限 Visual Studio 2019。* 显示“局部变量”窗口中的函数返回值，然后转到调试程序中的函数调用 (F10) |
 | **使用旧版调试程序** | Off | *仅限 Visual Studio 2019。* 指示 Visual Studio 默认使用旧版调试程序。 有关详细信息，请参阅[调试 - 使用旧版调试程序](debugging-python-in-visual-studio.md#use-the-legacy-debugger)。 |
 
@@ -119,8 +119,8 @@ ms.locfileid: "58151162"
 | 选项 | 默认 | 说明 |
 | --- | --- | --- |
 | **脚本** | n/a | 指定启动脚本的常规文件夹，将其应用于所有环境的交互窗口。 请参阅[启动脚本](python-environments-window-tab-reference.md#startup-scripts)。 但请注意，此功能当前无效。 |
-| **向上/向下箭头浏览历史记录** | On | 使用箭头键在交互窗口中浏览历史记录。 清除此设置可改为使用箭头键在交互窗口的输出中浏览。 |
-| **完成模式** | **仅计算不包含函数调用的表达式** | 要确定交互窗口中表达式上的可用成员，可能需要评估当前未完成的表达式，这可能带来负作用或导致多次调用函数。 “仅评估表达式而无需调用函数”是默认设置，此设置可排除可能调用函数的表达式，并对其他表达式进行评估。 例如，会评估 `a.b`，但不会评估 `a().b`。  “永不评估表达式”仅使用常规 IntelliSense 引擎获取建议，可避免所有副作用。 “评估所有表达式”会评估完整的表达式以获取建议，不考虑是否存在副作用。 |
+| **可使用向上/向下箭头浏览历史记录** | On | 使用箭头键在交互窗口中浏览历史记录。 清除此设置可改为使用箭头键在交互窗口的输出中浏览。 |
+| **完成模式** | **仅评估表达式而无需调用函数** | 要确定交互窗口中表达式上的可用成员，可能需要评估当前未完成的表达式，这可能带来负作用或导致多次调用函数。 “仅评估表达式而无需调用函数”是默认设置，此设置可排除可能调用函数的表达式，并对其他表达式进行评估。 例如，会评估 `a.b`，但不会评估 `a().b`。  “永不评估表达式”仅使用常规 IntelliSense 引擎获取建议，可避免所有副作用。 “评估所有表达式”会评估完整的表达式以获取建议，不考虑是否存在副作用。 |
 | **隐藏静态分析建议** | Off | 如果设置此选项，将仅显示通过评估表达式获取的建议。 如果与完成模式的值“永不评估表达式”结合使用，交互窗口中将不会显示任何有用的完成。 |
 
 ![Python“选项”对话框，“交互窗口”选项卡](media/options-interactive-windows.png)
@@ -147,9 +147,9 @@ ms.locfileid: "58151162"
 
 | 选项 | 默认 | 说明 |
 | --- | --- | --- |
-| **成员完成显示成员的交集** | Off | 如果设置此选项，将仅显示所有可能类型支持的完成。 |
+| **成员完成会显示成员的交集** | Off | 如果设置此选项，将仅显示所有可能类型支持的完成。 |
 | **基于搜索字符串筛选列表** | On | 在键入时，对完成建议应用筛选（默认选中）。 |
-| **为所有标识符自动显示完成项** | On | 清除此选项将同时在编辑器和交互窗口中禁用完成。 |
+| **自动显示所有标识符的完成** | On | 清除此选项将同时在编辑器和交互窗口中禁用完成。 |
 
 ### <a name="selection-in-completion-list"></a>完成列表中的选定内容
 

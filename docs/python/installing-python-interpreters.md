@@ -3,19 +3,19 @@ title: 选择并安装 Python 解释器
 description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c8c2d96aeb24b9311998528d0360b1c3eac38e5f
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194173"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365215"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -66,4 +66,4 @@ Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studi
 - [为项目选择解释器](selecting-a-python-environment-for-a-project.md)
 - [对依赖项使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
 - [搜索路径](search-paths.md)
-- [“Python 环境”窗口参考](python-environments-window-tab-reference.md)
+- [Python 环境窗口引用](python-environments-window-tab-reference.md)

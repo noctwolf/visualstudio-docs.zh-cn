@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio 中的 Python 功能摘要，这些功能让 Visual Studio 成为 Windows 上卓越的 Python IDE（也称为针对 Visual Studio 的 Python 工具，PTVS）。
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195003"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366869"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -98,7 +98,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 Visual Studio 
 
 项目和项模板可自动完成不同类型的项目和文件的设置过程，能为用户节省宝贵的时间，无需用户管理错综复杂又容易出错的细枝末节。 Visual Studio 提供适用于 Web、Azure、数据科学、控制台和其他类型项目的模板，以及适用于 Python 类、单元测试、Azure Web 配置、HTML 甚至 Django 应用等文件的模板。
 
-[![Visual Studio 中的 Python 项目和项模板](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![PVisual Studio 中的 Python 项目和项模板](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 更多相关信息：
 
@@ -156,15 +156,15 @@ Python 工作负载包括 Azure SDK for Python，用于简化在 Windows、Mac O
 
 ## <a name="questions-and-answers"></a>问题和解答
 
-**问：是否可通过 Visual Studio for Mac 获得 Python 支持？**
+**问： 是否可通过 Visual Studio for Mac 获得 Python 支持？**
 
 答： 目前不行，但你可以在[开发者社区](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)上为该请求投票。 [Visual Studio for Mac](/visualstudio/mac/) 文档会标识当前支持的开发类型。 同时，Windows、Mac 和 Linux 上的 Visual Studio Code 可[通过可用扩展与 Python 配合工作](https://code.visualstudio.com/docs/languages/python)。
 
-**问：构建 Python UI 可以使用什么工具？**
+**问： 构建 Python UI 可以使用什么工具？**
 
 答： 该领域的主要产品是 [Qt 项目](https://www.qt.io/qt-for-application-development/)，其中与 Python 的绑定称为 [PySide（官方绑定）](https://wiki.qt.io/PySide)（另请参阅 [PySide 下载](https://download.qt.io/official_releases/pyside/.)）和 [PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支持不包括用于 UI 开发的任何特定工具。
 
-**问：Python 项目是否可以生成独立的可执行文件？**
+**问： Python 项目是否可以生成独立的可执行文件？**
 
 答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区提供了不同的方法来创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
 

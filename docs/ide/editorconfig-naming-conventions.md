@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983269"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232588"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -76,8 +76,21 @@ ms.locfileid: "57983269"
 - private\_protected
 - 本地
 
-> [!NOTE]
-> 如果可访问性不适用于目标符号种类，请勿在命名约定中指定可访问性级别。 例如，参数就没有可访问性级别。 如果为参数命名约定指定可访问性级别，那么命名规则将无法正常运行。
+   `local` 辅助功能级别适用于方法中定义的符号。 对于无法在代码中指定辅助功能的符号，定义命名约定非常有用。 例如，如果在常量命名约定 (`required_modifiers = const`) 上指定 `applicable_accessibilities = local`，则该规则只适用于方法中定义的常量，而不适用于类型中定义的常量。
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>符号修饰符（可选）
 
@@ -87,11 +100,11 @@ ms.locfileid: "57983269"
 
 以下列表显示了允许的值（以逗号分隔多个值）：
 
-- `abstract` 或 `must_inherit`
+- `abstract` or `must_inherit`
 - `async`
 - `const`
 - `readonly`
-- `static` 或 `shared`
+- `static` or `shared`
 
    > [!NOTE]
    > 如果 `static` 或 `shared` 符号有命名规则，此规则也适用于 `const` 符号，因为它们是隐式静态的。 如果不希望将 `static` 命名规则应用于 `const` 符号，请为 `const` 符号单独创建命名规则。
@@ -156,8 +169,8 @@ ms.locfileid: "57983269"
 ------------ | -------------
 none 或 silent | 如未遵循此样式，则不会向用户显示任何内容，但自动生成的代码会遵循此样式。
 建议 | 如未遵循此样式，则会以建议形式向用户显示此样式（如前两个字符下带点）。 这在编译时没有影响。
-警告 | 如未遵循此样式，“错误列表”中会显示编译器警告。
-错误 | 如未遵循此样式，“错误列表”中会显示编译器错误。
+warning | 如未遵循此样式，“错误列表”中会显示编译器警告。
+error | 如未遵循此样式，“错误列表”中会显示编译器错误。
 
 > [!NOTE]
 > 无需生成项目即可查看命名规则冲突。 它们会在编辑代码时显示在“错误列表”中或以建议形式显示。

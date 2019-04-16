@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866739"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018150"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -88,7 +88,7 @@ ms.locfileid: "58866739"
 
    ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile.png)
 
-此外，还可以将修复程序集合另存为配置文件。 例如，如果你有一小组在编写代码时经常应用的目标修复程序，然后在进行代码评审之前应用另一组全面的修复程序，则可以配置配置文件来处理这些不同的任务。
+此外可以将修复程序集合另存为配置文件。 例如，如果你有一小组在编写代码时经常应用的目标修复程序，然后在进行代码评审之前应用另一组全面的修复程序，则可以配置配置文件来处理这些不同的任务。
 
    ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile-configure.png)
 
@@ -166,7 +166,7 @@ Visual Studio 2019 中会默认安装此服务。
 
 我们增加了对在 Azure VM 上运行的 ASP.NET（Core 和桌面）应用程序的支持。 此外还增加了对在 Azure Kubernetes 服务中运行的应用程序的支持。 Snapshot Debugger 有助于大幅减少解决生产环境中出现的问题所需的时间。
 
-有关详细信息，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用程序](../debugger/debug-live-azure-applications.md)页。
+有关详细信息，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用](../debugger/debug-live-azure-applications.md)页，和 [Visual Studio Enterprise 2019 按时间顺序查看调试简介](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)博客文章。
 
 ## <a name="give-us-feedback"></a>给我们提供反馈
 

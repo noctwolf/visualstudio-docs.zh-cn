@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体介绍了 Flask Web 项目和 Flask/Jade Web 项目模板提供的功能。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908915"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366440"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步骤 4：使用完整的 Flask Web 项目模板
 
-**上一步：[提供静态文件、添加页面和使用模板继承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**上一步：[为静态文件提供服务、添加页面和使用模板继承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 通过在 Visual Studio 中的“空白 Flask 应用项目”模板上生成应用，你已经了解了 Flask 的基础知识，现在可以轻松地了解“Flask Web 项目”模板生成的更完整的应用。
 

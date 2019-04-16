@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了创建应用以及使用视图和模板的步骤。
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955656"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366908"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -48,7 +48,7 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 
 ![解决方案资源管理器中的 Django 应用文件](media/django/step02-django-app-in-solution-explorer.png)
 
-| 项 | 说明​​ |
+| 项 | 说明 |
 | --- | --- |
 | **\_\_init\_\_.py** | 将应用标识为包的文件。 |
 | **迁移** | 一个文件夹，Django 在其中存储用于更新数据库以便与模型更改保持一致的脚本。 然后，Django 迁移工具将必要的更改应用到任何以前版本的数据库，以便与当前模型相匹配。 使用迁移，可以将注意力集中在模型上，并让 Django 处理基础数据库架构。 步骤 6 中已对迁移进行了讨论；现在，该文件夹只需包含 \_\_init\_\_.py 文件（指示文件夹定义其自己的 Python 包）。 |
@@ -272,7 +272,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 ## <a name="next-steps"></a>后续步骤
 
 > [!div class="nextstepaction"]
-> [为静态文件提供服务、添加页面和使用模板继承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
+> [提供静态文件、添加页面和使用模板继承](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
 ## <a name="go-deeper"></a>深入了解
 

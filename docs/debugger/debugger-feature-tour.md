@@ -1,8 +1,8 @@
 ---
-title: 使用 Visual Studio 调试应用
+title: 初探调试器
 description: 开始使用 Visual Studio 调试器调试应用程序
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14c248bbea783070e3d3bfbc439005bafb9b1fd2
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428682"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366765"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -188,7 +188,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 异常帮助程序是帮助调试错误的好功能。 你还可以执行其他操作，如查看错误详细信息及从异常帮助程序添加监视。 或者，如有需要可更改引发特定异常的条件。 有关如何在代码中处理异常的详细信息，请参阅[调试技术和工具](../debugger/write-better-code-with-visual-studio.md)。
 
 > [!NOTE]
-> 异常帮助程序取代 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的异常情况助手。
+> 异常帮助程序取代了从 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 开始提供的异常情况助手。
 
 展开“异常设置”节点以查看有关如何处理此异常类型的更多选项，但对于本教程无需更改任何内容！
 
