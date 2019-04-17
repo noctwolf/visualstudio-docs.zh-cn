@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610328"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584306"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>自定义生成（C#，Visual Basic）
+# <a name="customize-your-build"></a>自定义生成
 
 使用标准生成进程（导入 Microsoft.Common.props 和 Microsoft.Common.targets）的 MSBuild 项目有多个可用于自定义生成过程的扩展性挂钩。
 

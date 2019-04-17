@@ -77,3 +77,5 @@
 # [疑难解答](troubleshooting.md)
 ## [Visual Studio 客户体验改善计划](visual-studio-experience-improvement-program.md)
 ## [报告问题](report-a-problem.md)
+## [排除故障：为什么看不到所有模板？](troubleshooting-no-templates.md)
+## [排除故障：更新程序在检索信息时发生错误](updater-troubleshooting.md)

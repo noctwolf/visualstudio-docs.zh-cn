@@ -77,3 +77,4 @@
 # [疑难解答](/visualstudio/mac/troubleshooting)
 ## [Visual Studio 客户体验改善计划](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [报告问题](/visualstudio/mac/report-a-problem)
+## [排除故障：更新程序在检索信息时发生错误](updater-troubleshooting.md)
