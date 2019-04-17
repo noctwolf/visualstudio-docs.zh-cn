@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354838"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504219"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 ASP.NET
 
@@ -28,7 +28,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 1. 打开 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“asp.net”，选择“模板”，然后选择“创建新的 ASP.NET Core Web 应用程序”。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“asp.net”，选择“模板”，然后选择“创建新的 ASP.NET Core Web 应用程序”。 在出现的对话框中，选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Web”，然后在中间窗格中选择“ASP.NET Core Web 应用程序”。 键入名称（例如“MyDbgApp”），单击“确定”。
@@ -138,4 +138,4 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 在本教程中，你已了解了如何启动调试器、逐步执行代码以及检查变量。 你可能会希望更深入地了解调试器功能以及查看指向更多信息的链接。
 
 > [!div class="nextstepaction"]
-> [调试器功能简介](../debugger/debugger-feature-tour.md)
+> [初探调试器](../debugger/debugger-feature-tour.md)

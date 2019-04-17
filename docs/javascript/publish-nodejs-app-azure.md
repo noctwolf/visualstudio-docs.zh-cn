@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d4fbe922512194c6dd87ffc72e27cfcf9c7631f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355745"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790272"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>将 Node.js 应用程序发布到 Azure（Linux 应用服务）
 
@@ -38,7 +38,7 @@ Linux 应用服务部署 Linux Docker 容器来运行 Node.js 应用程序（不
 
 ## <a name="prerequisites"></a>系统必备
 
-* 须安装 Visual Studio 且具有 Node.js 开发工作负载。 
+* 须安装 Visual Studio 且具有 Node.js 开发工作负载。
 
     ::: moniker range=">=vs-2019"
     如果尚未安装 Visual Studio 2019，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
@@ -62,7 +62,7 @@ Linux 应用服务部署 Linux Docker 容器来运行 Node.js 应用程序（不
 1. 创建新的 TypeScript Express 应用。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的基本 Azure Node.js Express 4 应用程序”(TypeScript)。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“Node.js”，然后选择“创建新的基本 Azure Node.js Express 4 应用程序”(TypeScript)。 在出现的对话框中，选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“TypeScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad150a2eb9e27a9b2ce1e2e293d84ed956d8a7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a87013ff3a1911caa667f7ba431e408fc87a98f4
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603308"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584475"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字符
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 保留一些专供在特定上下文中使用的字符。 如果要在保留此类字符的上下文中按原义使用这些字符，只能对这些字符进行转义。 例如，只有在项定义的 `Include` 和 `Exclude` 特性，以及对 `CreateItem` 的调用中，星号才具有特殊含义。 如果要让星号在上述某个上下文中显示为星号，必须进行转义。 在其他所有上下文中，只需在要显示星号的位置键入星号即可。
@@ -32,7 +32,7 @@ ms.locfileid: "56603308"
 |%|%25|引用元数据|
 |$|%24|引用属性|
 |@|%40|引用项列表|
-|'|%27|条件和其他表达式|
+|\'|%27|条件和其他表达式|
 |;|%3B|列表分隔符|
 |?|%3F|用于 `Include` 和 `Exclude` 特性中的文件名的通配符|
 |*|%2A|用于 `Include` 和 `Exclude` 特性中的文件名的通配符|

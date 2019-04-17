@@ -1,7 +1,7 @@
 ---
 title: 编写可视化工具C#|Microsoft Docs
 ms.custom: seodec18
-ms.date: 08/01/2018
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45c80500e216041a444b1f6232d8c939132e413d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MTE95
+ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323366"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584527"
 ---
-# <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：用 C\# 编写可视化工具
+# <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：在 C 中编写可视化工具\#
 本演练演示如何使用 C# 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具不是特别有用，但它显示创建更有用的其他数据类型的可视化工具时必须遵循的基本步骤。
 
 > [!NOTE]
@@ -35,15 +35,16 @@ ms.locfileid: "57323366"
 
 ### <a name="to-create-a-class-library-project"></a>创建类库项目
 
-1. 在“文件”菜单上，选择“新建”>“项目”。
+1. 创建一个新类库项目。
 
-2. 在中**新的项目**对话框中的**Visual C#** ，然后选择 **.NET Standard**。
+    ::: moniker range=">=vs-2019"
+    按 Esc 关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**类库**，选择**模板**，然后选择**创建新的类库 (.NET Standard)**. 在出现的对话框中，选择“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在左窗格中**新的项目**对话框中的**Visual C#** ，选择 **.NET Standard**，然后在中间窗格中选择**Class Library (。NET Standard)**。
+    ::: moniker-end
 
-3. 在中间窗格中，选择**类库**。
-
-4. 在“名称”框中，为类库键入一个适当的名称，例如 MyFirstVisualizer。
-
-5. 单击 **“确定”**。
+2. 键入正确的类库，名称类似于`MyFirstVisualizer`，然后单击**创建**或**确定**。
 
    创建类库后，必须添加对 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的引用，以便使用其中定义的类。 添加引用之前，但是，您必须重命名的一些类，使其具有有意义的名称。
 
@@ -58,7 +59,9 @@ ms.locfileid: "57323366"
 
 3. 在中**解决方案资源管理器**，右键单击**引用**，然后选择**添加引用**快捷菜单上。
 
-4. 在中**添加引用**对话框中，在 **.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
+4. 在中**添加引用**对话框中，在**浏览**选项卡上，选择**浏览**和查找 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
+
+    您可以找到在 DLL  *\<Visual Studio 安装目录 > \Common7\IDE\PublicAssemblies* Visual Studio 的安装目录的子目录。
 
 5. 单击 **“确定”**。
 
@@ -102,7 +105,9 @@ ms.locfileid: "57323366"
 
 1. 在中**解决方案资源管理器**，右键单击**引用**，然后选择**添加引用**快捷菜单上。
 
-2. 在中**添加引用**对话框中，在 **.NET**选项卡上，选择 system.windows.forms.dll 的引用。
+2. 在中**添加引用**对话框中，在**浏览**选项卡上，选择**浏览**，并查找 system.windows.forms.dll 的引用。
+
+    您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
 
 3. 单击 **“确定”**。
 
@@ -162,13 +167,16 @@ ms.locfileid: "57323366"
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>将控制台应用程序项目添加到解决方案中
 
-1. 上**文件**菜单中，选择**添加**，然后单击**新项目**。
+1. 在解决方案资源管理器，右键单击该解决方案中，选择**外**，然后单击**新项目**。
 
-2. 在中**添加新项目**对话框框中，选择**Visual C#**   >  **Windows 桌面**，然后选择**的控制台应用程序**.
+    ::: moniker range=">=vs-2019"
+    在搜索框中，键入**控制台应用程序**，选择**模板**，然后选择**创建一个新的控制台应用 (.NET Framework)**。 在出现的对话框中，选择“创建”。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”。
+    ::: moniker-end
 
-3. 在中**名称**框中，键入有意义的名称的控制台应用程序，例如`MyTestConsole`。
-
-4. 单击 **“确定”**。
+2. 键入正确的类库，名称类似于`MyTestConsole`，然后单击**创建**或**确定**。
 
    现在，必须添加必要的引用，以便 MyTestConsole 能够调用 MyFirstVisualizer。
 
@@ -176,7 +184,7 @@ ms.locfileid: "57323366"
 
 1. 在中**解决方案资源管理器**，右键单击**MyTestConsole** ，然后选择**添加引用**快捷菜单上。
 
-2. 在中**添加引用**对话框中， **.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
+2. 在中**添加引用**对话框中，**浏览**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
 3. 单击 **“确定”**。
 
@@ -221,7 +229,7 @@ ms.locfileid: "57323366"
 
    祝贺您！ 你刚刚生成了第一个可视化工具并进行了测试。
 
-   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关详细信息，请参阅[如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)。
+   如果您想在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关详细信息，请参阅[如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)。
 
 ## <a name="create-a-visualizer-using-the-visualizer-item-template"></a>创建可视化工具使用可视化工具项模板
 
@@ -233,7 +241,7 @@ ms.locfileid: "57323366"
 
 1. 在“文件”菜单上，选择“新建”>“项目”。
 
-2. 在中**新的项目**对话框中的**Visual C#** ，选择 **.NET Standard**。
+2. 在中**新的项目**对话框中的**Visual C#**，选择 **.NET Standard**。
 
 3. 在中间窗格中，选择**类库**。
 
@@ -249,7 +257,7 @@ ms.locfileid: "57323366"
 
 2. 在快捷菜单上，选择**外**，然后单击**新项**。
 
-3. 在中**添加新项**对话框中的**VisualC#项**，选择**调试器可视化工具**。
+3. 在中**添加新项**对话框中的**Visual C# 项**，选择**调试器可视化工具**。
 
 4. 在中**名称**框中，键入相应的名称，例如 SecondVisualizer.cs。
 
