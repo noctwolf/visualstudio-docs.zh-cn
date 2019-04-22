@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857757"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中的快照调试疑难解答和已知问题
 
 如果本文中所述的步骤未能解决你的问题，请向以下地址发送电子邮件：snaphelp@microsoft.com。
 
-## <a name="issue-snappoint-does-not-turn-on"></a>问题：快照点未启用
+## <a name="issue-snappoint-does-not-turn-on"></a>问题：吸附点不会启用
 
 如果你的快照点带有警告图标 ![快照点警告图标](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "快照点警告图标")，而不是常规快照点图标，则表示快照点未启用。
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857757"
 
 1. 确保生成和部署 app.isua1 时使用的是相同版本的源代码。 确保为你的部署加载了正确的符号。 为此，请在快照调试时查看“模块”窗口并验证“符号文件”列是否显示为调试的模块加载的 .pdb 文件。 Snapshot Debugger 将尝试自动下载符号并将其用于你的部署。
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>问题：打开快照时未加载符号
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>问题：我打开的快照时不加载符号
 
 如果你看到以下窗口，则表示符号未加载。
 
@@ -48,7 +48,7 @@ ms.locfileid: "58857757"
 
 - 或者，如果你的组织使用符号服务器或将符号置于不同的路径，请使用符号设置为你的部署加载正确的符号。
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>问题：我无法在 Cloud Explorer 中看到“附加 Snapshot Debugger”选项
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>问题：看不到云资源管理器中的"附加快照调试器"选项
 
 执行以下步骤：
 
@@ -67,7 +67,7 @@ ms.locfileid: "58857757"
   - Azure Kubernetes 服务 - 在 Ubuntu 18.04 中的 .Net Core 2.2 或更高版本上运行的 ASP.NET Core 应用程序。
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>问题：我在诊断工具中只能看到已阻止的快照
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>问题：我只看到限制在诊断工具的快照
 
 ![已阻止的快照点](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "已阻止的快照点")
 
@@ -75,7 +75,7 @@ ms.locfileid: "58857757"
 
 - 快照占用很少的内存，但确实存在内存使用。 如果 Snapshot Debugger 检测到服务器的内存负载过大，则不会创建快照。 可以通过停止 Snapshot Debugger 会话来删除已捕获的快照，然后重试。
 
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>问题：使用多个版本的 Visual Studio 进行快照调试时出错
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>问题：快照调试与多个版本的 Visual Studio 为我提供的错误
 
 VS 2019 需要在 Azure 应用服务上安装较新版本的 Snapshot Debugger 站点扩展。  此版本与 VS 2017 所用的旧版 Snapshot Debugger 站点扩展不兼容。  如果尝试将 VS 2019 中的 Snapshot Debugger 附加到之前已由 VS 2017 中的 Snapshot Debugger 进行调试的 Azure 应用服务，将收到以下错误：
 
@@ -90,7 +90,7 @@ VS 2019 需要在 Azure 应用服务上安装较新版本的 Snapshot Debugger �
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>问题：快照调试出现问题，我需要启用更多日志记录
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>问题：遇到快照调试的问题，我需要启用详细日志记录
 
 ### <a name="enable-agent-logs"></a>启用代理日志
 
@@ -100,9 +100,9 @@ VS 2019 需要在 Azure 应用服务上安装较新版本的 Snapshot Debugger �
 
 - 应用服务：
   - 导航到应用服务的 Kudu 站点（即，yourappservice.scm.azurewebsites.net）并导航到调试控制台。
-  - 代理日志存储在以下目录中：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - 代理日志存储在以下目录：D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS：
-  - 登录到 VM，代理日志存储在以下路径：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - 登录到你的 VM，代理日志存储，如下所示：C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - 导航到以下目录：/tmp/diag/AgentLogs/*
 
@@ -114,7 +114,7 @@ VS 2019 需要在 Azure 应用服务上安装较新版本的 Snapshot Debugger �
   - 错误日志记录将自动发送到 D:\Home\LogFiles\eventlog.xml，事件标记为 <<提供程序名称="检测引擎" //>> 或“生产断点”
 - VM/VMSS：
   - 登录到 VM 并打开事件查看器。
-  - 打开以下视图：“Windows 日志”>“应用程序”。
+  - 打开以下视图：*Windows 日志 > 应用程序*。
   - 使用生产断点或检测引擎按事件源筛选当前日志。
 - AKS
   - 检测引擎日志记录路径如下：/tmp/diag/log.txt（在 DockerFile 中设置 MicrosoftInstrumentationEngine_FileLogPath）
@@ -142,7 +142,7 @@ VS 2019 需要在 Azure 应用服务上安装较新版本的 Snapshot Debugger �
 ## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中进行调试](../debugger/index.md)
-- [使用 Snapshot Debugger 调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)
-- [使用 Snapshot Debugger 调试实时 ASP.NET Azure 虚拟机或虚拟机规模集](../debugger/debug-live-azure-virtual-machines.md)
-- [使用 Snapshot Debugger 调试实时 ASP.NET Azure Kubernetes](../debugger/debug-live-azure-kubernetes.md)
+- [使用快照调试器调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)
+- [调试实时 ASP.NET Azure 虚拟 Machines\Virtual 机规模集使用快照调试程序](../debugger/debug-live-azure-virtual-machines.md)
+- [调试实时 ASP.NET Azure Kubernetes，使用快照调试程序](../debugger/debug-live-azure-kubernetes.md)
 - [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)

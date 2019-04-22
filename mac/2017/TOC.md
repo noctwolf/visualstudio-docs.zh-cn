@@ -7,14 +7,12 @@
 ## [更新](/visualstudio/mac/update)
 ## [卸载](/visualstudio/mac/uninstall)
 
-
 # [用户帐户](/visualstudio/mac/user-accounts)
 ## [登录](/visualstudio/mac/signing-in)
 ## [启用订阅](/visualstudio/mac/enable-subscription)
 
 # [自定义 IDE](/visualstudio/mac/customizing-the-ide)
 ## [扩展 Visual Studio for Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [项目和解决方案](/visualstudio/mac/projects-and-solutions)
 ## [创建新项目](/visualstudio/mac/create-new-projects)

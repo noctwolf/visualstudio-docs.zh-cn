@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be51445940816f0feffcbc7ba0e542e94d0f0648
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26ab9d7f19e56e35b5524472b4a7179b33d09cf0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791597"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651263"
 ---
 # <a name="log-command-window-output-command"></a>“日志命令窗口输出”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 将“命令”窗口的所有输入和输出复制到文件中。  
   
 ## <a name="syntax"></a>语法  

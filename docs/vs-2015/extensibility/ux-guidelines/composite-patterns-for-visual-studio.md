@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f65c3fb08932c62bce094b15d698f6bef3da8e86
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: afb127d695f6cc7e1e3999c159b7735d965f66b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000172"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653263"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio 的复合模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -395,7 +395,6 @@ ms.locfileid: "59000172"
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> 图形对象选择外观
  选择句柄是围绕对象的边界框矩形模式中绘制的平方。 下图显示了图形对象可以具有句柄、 大小调整，与就地编辑外观的各种状态的示例。 句柄的大小应绑定到窗口边框和指标使用边缘**GetSystemMetrics** API。
 
-
 |          状态          |  外观   |                                                                  视觉对象详细信息                                                                  |
 |-------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **未选定**      |    默认    |                 ![Default button state](../../extensibility/ux-guidelines/media/0713-10-defaultstate.png "0713-10_DefaultState")                 |
@@ -437,7 +436,6 @@ ms.locfileid: "59000172"
 >  **焦点**并**选择**是不同的概念。 *焦点*哪种 UI 的目标元素指示可接收的输入未显式定向到另一个对象，同时*选择*表示的对象包含在后续的对象的一组状态操作可能会发生。
 
  在列表中的选择可能是连续的、 连续的或区域。 当多选，允许的连续未分配和非连续选择应始终受支持，同时对区域 （框） 选择的支持是可选的。 区域的选择是通过拖动列表正文的空白区域启动的。
-
 
 | 对象 | 选择  |
 |--------|------------|
@@ -508,7 +506,7 @@ ms.locfileid: "59000172"
  窗口配置为在开发环境的基本演示-它是一种方案包含的工具窗口，则列表和排列它们的方式。 对于由 IDE （IDE 窗口） 的 windows，布局信息将保留每个用户，因此当用户启动 IDE，窗口布局显示相同时它们上次退出 Visual Studio。 状态和 IDE 窗口的位置是以 XML 格式的自定义选项文件中保留的。 创建的包加载到 IDE 的工具窗口保留其在注册表中的状态信息和可能或可能不是每个用户。
 
 #### <a name="profile-specific-layouts"></a>特定于配置文件的布局
- 每个配置文件包含工具窗口布局，以熟悉特定的开发人员角色的方式组织 (Visual c + + 开发人员希望看到**解决方案资源管理器**IDE，而 C# 开发人员希望看到左侧**解决方案资源管理器**右侧)。 在用户选择的配置文件在启动时加载特定于配置文件的窗口布局。 包创建者应确定窗口布局最适合其客户的体验，了解用户对窗口配置更改随后会保存。
+ 每个配置文件包含工具窗口布局，以熟悉特定的开发人员角色的方式组织 (VisualC++开发人员希望看到**解决方案资源管理器**上左侧和右侧的 IDE，而C#开发人员会看到**解决方案资源管理器**右侧)。 在用户选择的配置文件在启动时加载特定于配置文件的窗口布局。 包创建者应确定窗口布局最适合其客户的体验，了解用户对窗口配置更改随后会保存。
 
 ##  <a name="BKMK_TouchInput"></a> 触摸输入
  在触摸设备上，用户正在越来越多地使用 Microsoft 开发产品。 但是，有一些难以在触摸设备上使用开发工具的障碍。 用户希望我们的产品提供可靠、 精确的触控体验。 这些指南的目的是通知有关触摸功能合并，并鼓励一致的触摸体验跨 Visual Studio 和相关的产品的决策。

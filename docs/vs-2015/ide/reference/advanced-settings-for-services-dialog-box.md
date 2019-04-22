@@ -13,17 +13,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7affd12dceeb8802740b7d0cd502ede051f5ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2565b3b8fd84714693661fcf0cf04961a70d10f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779131"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652938"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>“高级服务设置”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用客户端应用程序服务，可简便地从 Windows 窗体和 Windows Presentation Foundation (WPF) 应用程序访问 [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] 登录、角色和配置文件服务。 可以使用“项目设计器”的“服务”页，配置客户端应用程序服务。 有关“服务”页的详细信息，请参阅[“项目设计器”->“服务”页](../../ide/reference/services-page-project-designer.md)。  
   
  在“项目设计器”中，使用“服务”页的“服务的高级设置”对话框，配置客户端应用程序服务的高级设置。 通过使用这些设置，可以重写一些默认应用程序服务行为，从而启用不太常见的方案。 有关详细信息，请参阅[客户端应用程序服务](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)。  

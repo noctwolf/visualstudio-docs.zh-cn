@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366037"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>托管代码的“安全规则”规则集
@@ -63,9 +63,9 @@ ms.locfileid: "59366037"
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|透明方法不得使用安全断言|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|透明方法不得调入本机代码|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|程序集应具有有效的强名称|
-|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|不要使用不安全反序列化程序 BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|如果没有第一个设置 BinaryFormatter.Binder 不调用 BinaryFormatter.Deserialize|
-|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|确保在调用 BinaryFormatter.Deserialize 之前设置 BinaryFormatter.Binder|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|请勿使用不安全的反序列化程序 BinaryFormatte|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|在未先设置 BinaryFormatter.Binder 的情况下，请不要调用 BinaryFormatter.Deserialize|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|在调用 BinaryFormatter.Deserialize 之前，确保设置 BinaryFormatter.Binder|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|查看 SQL 注入漏洞的代码|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|查看 XSS 漏洞的代码|
 |[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|查看文件路径注入漏洞的代码|

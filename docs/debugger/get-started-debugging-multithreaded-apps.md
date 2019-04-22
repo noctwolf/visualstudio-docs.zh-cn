@@ -18,21 +18,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790246"
 ---
-# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic、 c + +)
+# <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic 中， C++)
 
 Visual Studio 提供多种工具和用户界面元素，用于调试多线程应用程序。 本教程演示如何使用线程标记、“并行堆栈”窗口、“并行监视”窗口、条件断点、筛选器断点。 完成本教程只需数分钟，然后你就会熟悉用于调试多线程应用程序的功能。
 
 下面两个主题额外介绍了如何使用其他多线程调试工具：
 
-- 若要使用“调试位置”工具栏和“线程”窗口，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
+- 若要使用**调试位置**工具栏和**线程**窗口中，请参阅[演练：调试多线程应用程序](../debugger/how-to-use-the-threads-window.md)。
 
-- 如需使用 <xref:System.Threading.Tasks.Task>（托管代码）和并发运行时 (C++) 的示例，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
+- 有关使用的示例<xref:System.Threading.Tasks.Task>（托管代码） 和并发运行时 (C++)，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)。 有关适用于大多数多线程应用程序类型的常规调试技巧，请阅读该主题和本主题。
 
 首先需要一个多线程应用程序项目。 示例如下。
 
@@ -41,10 +41,10 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    按**Esc**以关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
+    按 Esc 关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
 
     - 有关C#或 Visual Basic 中，选择**创建新的控制台应用 (.NET Framework) 项目**为C#或 Visual Basic。 在出现的对话框中，选择“创建”。
-    - 对于 c + +，请选择**创建新的控制台应用项目**c + +。 在出现的对话框中，选择“创建”。
+    - 有关C++，选择**创建新的控制台应用项目**为C++。 在出现的对话框中，选择“创建”。
 
     然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**创建**。
     ::: moniker-end
@@ -53,14 +53,14 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
     - 有关C#应用程序下**可视化C#** ，选择**Windows 桌面**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
     - 对于 Visual Basic 应用，在**Visual Basic**，选择**Windows Desktop**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
-    - 对于 c + + 应用，在**Visual c + +**，选择**Windows Desktop**、，然后选择**Windows 控制台应用程序**。
+    - 有关C++应用程序下**可视化C++** ，选择**Windows 桌面**、，然后选择**Windows 控制台应用程序**。
 
     然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**确定**。
     ::: moniker-end
 
     如果没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
 
-1. 选择“确定”。
+1. 选择 **确定**。
 
     新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb。
 
@@ -354,5 +354,5 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 - [调试多线程应用](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：在调试时切换到另一个线程](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-- [如何： 使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)
+- [如何：使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)
 - [如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 600f44cccd57635cc789e2265fe5451e5674d737
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5cb08c00679e3052ef0e0715ca58dd010a52e61b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930367"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649688"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>在 Visual Studio 中为应用商店应用启动调试会话 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58930367"
  本主题介绍如何针对用 JavaScript 和 HTML5 编写的 Windows 应用商店应用启动调试会话。 你可以使用单个按键启动调试，或者你可以为特定的场景配置调试会话，然后选择启动应用的方式。
 
 > [!NOTE]
->  在 XAML 和 Visual C#、 Visual c + + 或 Visual Basic 编写的应用，请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+>  编写 XAML 和视觉对象中的应用C#、 Visual C++，或 Visual Basic，请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中
  [在本主题中](#BKMK_In_this_topic)
@@ -81,7 +81,7 @@ ms.locfileid: "58930367"
    Visual Studio 生成并启动附有调试器的应用程序。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。 有关详细信息，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。
 
 ##  <a name="BKMK_Configure_the_debugging_session"></a> 配置调试会话
- 由于脚本未编译，不会应用生成配置和平台设置。 如果正在调试 c + + 或托管的组件，将**配置**到**调试**，然后选择从您的目标平台**配置**对话框。
+ 由于脚本未编译，不会应用生成配置和平台设置。 如果你正在调试C++或托管的组件，将设置**Configuration**到**调试**，然后选择目标平台从**配置**对话框。
 
 ###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 打开项目的调试属性页
 
@@ -184,13 +184,11 @@ ms.locfileid: "58930367"
 
 2. 请从列表中选择下列选项之一：
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **本地计算机**  |                                                                                                                在本地计算机上的当前会话中调试应用程序。 请参阅[在本地计算机上的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-the-local-machine.md)。                                                                                                                 |
    |   **模拟器**    | 在 Visual Studio 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用程序模拟器中调试应用程序。 模拟器是一个桌面窗口，在该窗口中可调试本地计算机上未提供的设备功能，如触摸手势和设备旋转。 请参阅[在模拟器中的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-in-the-simulator.md)。 |
    | **远程计算机** |                          在通过 Intranet 连接到本地计算机或使用以太网电缆直接连接到本地计算机的设备上调试应用程序。 若要进行远程调试，必须安装 Visual Studio 远程工具，并且远程设备上必须正在运行这些工具。 请参阅[在远程计算机上的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。                           |
-
 
 3. 从 **“安装的应用程序包”** 列表中选择应用程序。
 

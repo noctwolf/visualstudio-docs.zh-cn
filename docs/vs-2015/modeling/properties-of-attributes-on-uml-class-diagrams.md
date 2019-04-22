@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931876"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647922"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML 类图上特性的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,6 @@ ms.locfileid: "58931876"
  若要查看某个特性的属性，请右键单击关系图上相应类或接口中的该特性，然后单击“属性” 。 这些属性将显示在“属性”窗口中。  
 
  若要查看某个特性的属性，请右键单击该特性，然后单击“属性” 。  
-
 
 |   **Property**    | **默认**  |                                                                                                                                                                                                         描述                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

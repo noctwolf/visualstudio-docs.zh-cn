@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648229"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;依赖项&gt;元素 （ClickOnce 部署）
 标识要安装，应用程序的版本和应用程序清单的位置。
@@ -78,8 +78,7 @@ ms.locfileid: "56600715"
 ## <a name="dependentassembly"></a>dependentAssembly
  必需。 此元素包含`assemblyIdentity`元素。 下表显示了属性`dependentAssembly`支持。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |------------------| - |
 | `preRequisite` | 可选。 指定此程序集应已存在于 gac。 有效值为 `true` 和 `false`。 如果`true`，并在 GAC 中不存在指定的程序集、 应用程序无法运行。 |
 | `visible` | 可选。 标识顶级应用程序标识，包括其依赖项。 在内部使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]来管理应用程序存储和激活。 |
@@ -90,7 +89,7 @@ ms.locfileid: "56600715"
 ## <a name="assemblyidentity"></a>assemblyIdentity
  必需。 此元素是 `dependentAssembly` 元素的子元素。 内容`assemblyIdentity`必须是与中所述相同[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 下表显示的属性`assemblyIdentity`元素。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 标识应用程序的名称。|
 |`Version`|必需。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|
@@ -110,16 +109,14 @@ ms.locfileid: "56600715"
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 下表显示的属性`dsig:Transform`元素。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  `dsig:DigestMethod`元素是必需的子`hash`元素。 下表显示的属性`dsig:DigestMethod`元素。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

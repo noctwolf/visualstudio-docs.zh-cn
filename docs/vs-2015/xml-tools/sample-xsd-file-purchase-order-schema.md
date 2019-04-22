@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6680c9ca768dcb551d98cc9c393f8e5c59500794
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d3a699ed1eecfbd41e40a84d185e4d1d7d45fa59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925908"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650741"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>示例 XSD 文件：订单架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 以下 XSD 文件用在 XSD 架构设计器文档中的各个示例中。 此文件是一个订单架构。  
   
 ```xml  

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790324"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>调试技术和工具可帮助你编写更好的代码
@@ -34,7 +34,7 @@ ms.locfileid: "58790324"
 
 * 何时使用调试器
 
-为了演示这些任务，我们介绍几种最常见的错误和调试您的应用程序时，将会遇到的 bug 类型。 尽管此示例代码C#、 概念性信息是通常适用于 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除非另有说明）。 屏幕截图为 C#。
+为了演示这些任务，我们介绍几种最常见的错误和调试您的应用程序时，将会遇到的 bug 类型。 尽管此示例代码C#，概念的信息是通常适用于C++，Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图为 C#。
 
 ## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>某些 bug 和错误在其中创建示例应用
 

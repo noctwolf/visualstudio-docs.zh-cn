@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 611bc5c0fbb81d38aa10561d8603ef281a51d9a1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788684"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650586"
 ---
 # <a name="msbuild-tasks"></a>MSBuild 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 生成平台需要能够在生成过程中执行任意数量的操作。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用 *任务* 以执行这些操作。 任务是由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 用于执行原子生成操作的可执行代码单元。  
   
 ## <a name="task-logic"></a>任务逻辑  

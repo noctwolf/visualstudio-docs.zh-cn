@@ -16,17 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab47b0058b80b49b5892a92ea6eeda1afe5296c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804171"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649544"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>MSBuild 保留属性和已知属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供了一组预定义的属性，这些属性存储有关项目文件和 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 二进制文件的信息。 这些属性的计算方式与其他 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 属性相同。 例如，要使用 `MSBuildProjectFile` 属性，应键入 `$(MSBuildProjectFile)`。  
   
  MSBuild 使用下表中的值预定义保留的属性和已知的属性。 无法重写保留的属性，但可以使用名称相同的环境属性、全局属性或已在项目文件中声明的属性重写已知的属性。  
@@ -34,7 +33,7 @@ ms.locfileid: "54804171"
 ## <a name="reserved-and-well-known-properties"></a>保留的属性和已知的属性  
  下表介绍了 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 预定义的属性。  
   
-|属性|说明​​|保留或已知|  
+|Property|说明|保留或已知|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|当前正在使用的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 二进制文件所在文件夹的绝对路径（例如，C:\Windows\Microsoft.Net\Framework\\*versionNumber*）。 如果你必须引用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 目录中的文件，此属性将非常有用。<br /><br /> 不要在此属性上添加最终反斜杠。|保留|  
 |`MSBuildExtensionsPath`|在 .NET Framework 4 中引入：`MSBuildExtensionsPath` 和 `MSBuildExtensionsPath32` 的默认值之间没有差异。 你可以设置环境变量 `MSBUILDLEGACYEXTENSIONSPATH` 为非 null 值，以启用早期版本中的 `MSBuildExtensionsPath`的默认值的行为。<br /><br /> 在 .NET Framework 3.5 和较早的版本中，`MSBuildExtensionsPath` 的默认值指向位于 \Program Files 或 \Program Files (x86) 文件夹下的 MSBuild 子文件夹路径，取决于当前进程的位数。 例如，对于在 64 位计算机上的 32 位进程，此属性指向 \Program Files (x86) 文件夹。 对于在 64 位计算机上的 64 位进程，此属性指向 \Program Files 文件夹。<br /><br /> 不要在此属性上添加最终反斜杠。<br /><br /> 此位置用于存放自定义目标文件。 例如，你的目标文件可能安装在 \Program Files\MSBuild\MyFiles\Northwind.targets 中，然后使用此 XML 代码导入到项目文件中：<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|已知|  

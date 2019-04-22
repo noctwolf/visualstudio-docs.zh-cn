@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 785aa4b4768ba8066b09f7f61f426406512c1e20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761667"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651927"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计支持辅助功能的应用程序的资源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用以下链接可查找有关支持可访问设计的信息以及用于开发可访问 Windows 应用程序和网站的提示和示例。 可以在 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) 处联机查找有关辅助功能的常规信息。  
   
 ## <a name="technologies"></a>技术  
@@ -45,7 +44,7 @@ ms.locfileid: "54761667"
   
 ## <a name="web-sites"></a>网站  
   
--   [演练：使用图像控件、菜单控件以及 AutoPostBack 的辅助功能准则](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) 本主题提供用于在示例网页中包含可访问控件的分步说明以及一些针对 Web 的辅助功能设计提示。  
+-   [演练：使用图像控件、 菜单控件以及 AutoPostBack 的辅助功能准则](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202)本主题提供了示例网页，以及一些辅助功能设计提示 web 包含可访问控件的分步说明。  
   
 -   **使网页更易于访问** 此技术文章列出了可访问的 HTML 3.2 元素以及可进行访问以便在网站开发中使用的元素。 有关详细信息，请参阅 [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx)。  
   

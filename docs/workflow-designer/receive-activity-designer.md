@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948246"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649208"
 ---
 # <a name="receive-activity-designer"></a>Receive 活动设计器
 
@@ -36,7 +36,6 @@ ms.locfileid: "55948246"
 ### <a name="the-receive-activity-properties"></a>Receive 活动属性
 
 下表列出 <xref:System.ServiceModel.Activities.Receive> 属性并说明如何在设计器中使用它们。 在属性网格中或在工作流设计器图面上，可以编辑这些属性。 唯一必需的属性是 <xref:System.ServiceModel.Activities.Receive.OperationName%2A> 属性。
-
 
 | 属性名 | 必需 | 用法 |
 |-|----------|-|

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027706"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650624"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 文件 VSShell80.idl，枚举中`__VSSYSCOLOREX`具有 shell 颜色常量。 若要使用它，传入的索引值形式中的值之一`enum __VSSYSCOLOREX`记录在 MSDN 或常规索引号 Windows 系统 API， `GetSysColor`，接受。 执行此操作获取返回应在第二个参数中使用的颜色的 RGB 值。
 
 如果存储笔或使用一种新颜色的画笔，则必须`AdviseBroadcastMessages`（从 Visual Studio shell 中) 和侦听`WM_SYSCOLORCHANGE`和`WM_THEMECHANGED`消息。
-
 
 若要访问本机代码中的颜色服务，你将类似于下面这样的调用：
 
@@ -359,7 +358,7 @@ VSPackage 可以控制字体和通过自定义类别的颜色和字体和颜色�
 
 填充注册表具有两个值：
 
-| name | 类型 | 数据 | 描述 |
+| 名称 | 类型 | 数据 | 描述 |
 | --- | --- | --- | --- |
 | 类别 | REG_SZ | GUID | 创建标识类别的 GUID |
 | package | REG_SZ | GUID | 支持类别的 VSPackage 服务的 GUID |
@@ -372,7 +371,7 @@ VSPackage 可以控制字体和通过自定义类别的颜色和字体和颜色�
 
 填充注册表具有两个值：
 
-| name | 类型 | 数据 | 描述 |
+| 名称 | 类型 | 数据 | 描述 |
 |--- | --- | --- | --- |
 | 类别 | REG_SZ | GUID | 创建标识类别的 GUID |
 | package | REG_SZ | GUID | 支持类别的 VSPackage 服务的 GUID |

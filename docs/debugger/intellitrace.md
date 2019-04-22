@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232692"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
@@ -117,7 +117,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
     启用 IntelliTrace 事件和快照模式下，IntelliTrace 将快照应用程序的进程在每个调试器**断点**并**步骤**事件。 这将记录中的值**局部变量**，**自动**，并**观看**windows，而不考虑各个窗口是否是打开。 此外会收集任何固定的数据提示中的值。
 
-- **Exceptions**
+- **异常**
 
      IntelliTrace 会记录异常类型和以下各类异常的消息：
 

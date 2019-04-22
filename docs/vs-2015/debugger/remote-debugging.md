@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000681"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649441"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,6 @@ ms.locfileid: "59000681"
 > [!TIP] 
 > 命令行安装和命令行参考，请参阅的帮助页**msvsmon.exe**通过键入``msvsmon.exe /?``在安装了 Visual studio 计算机上的命令行中 (或转到**帮助 / 用法**远程调试器中)。
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  远程计算机运行的是下列操作系统之一：  
   
@@ -193,7 +192,7 @@ ms.locfileid: "59000681"
   
 5. 对属性进行以下更改：  
   
-   |设置|值|
+   |设置|“值”|
    |-|-|  
    |远程命令|C:\remotetemp\mymfc.exe|  
    |工作目录|C:\remotetemp|  

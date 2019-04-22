@@ -17,23 +17,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6f3118515d023f9f57d4578d042a0fa5a702872
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bb870bcc3c4297d5d1b403176f931f75e418d423
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803339"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651470"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将 URL 转换为正确的 URL 格式。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `FormatUrl` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`InputUrl`|可选 `String` 参数。<br /><br /> 指定要格式化的 URL。|  
 |`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|  

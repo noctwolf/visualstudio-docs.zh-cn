@@ -17,23 +17,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 737f7ece16b6947e2dd4ba017b8928560413b2b2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ada207a619021922b999d0e821ecf27ba48dbb38
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778745"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650633"
 ---
 # <a name="requiresframework35sp1assembly-task"></a>RequiresFramework35SP1Assembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 确定应用程序是否需要 .NET Framework 3.5 SP1。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `RequiresFramework35SP1Assembly` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Assemblies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定在应用程序中引用的程序集。|  
 |`CreateDesktopShortcut`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，安装期间会在桌面上创建一个快捷方式图标。|  

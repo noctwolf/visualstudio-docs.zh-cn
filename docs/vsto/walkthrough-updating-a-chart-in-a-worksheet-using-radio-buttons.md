@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602060"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651885"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练显示了使用 Microsoft Office Excel 工作表上的单选按钮为用户提供选项之间快速切换的方法的基础知识。 在这种情况下，选项更改图表的样式。
@@ -132,30 +132,24 @@ ms.locfileid: "56602060"
 
 2. 从**公共控件**选项卡**工具箱**，将**单选按钮**控制转移到该用户控件，并更改以下属性。
 
-
-   | 属性 | “值” |
+   | 属性 | 值 |
    |----------|------------------|
    | **名称** | **columnChart** |
    | **文本** | **柱形图** |
 
-
 3. 将第二个单选按钮添加到该用户控件，并更改以下属性。
-
 
    | 属性 | 值 |
    |----------|---------------|
    | **名称** | **barChart** |
    | **文本** | **条形图** |
 
-
 4. 将第三个单选按钮添加到该用户控件，并更改以下属性。
-
 
    | 属性 | 值 |
    |----------|----------------|
    | **名称** | **lineChart** |
    | **文本** | **折线图** |
-
 
 5. 将第四个单选按钮添加到该用户控件，并更改以下属性。
 

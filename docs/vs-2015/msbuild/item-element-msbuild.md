@@ -17,17 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45d0e9494700d03c0e96ccd0708e2754b4f7a2b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797020"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650755"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。  
   
  \<Project>  
@@ -51,7 +50,7 @@ ms.locfileid: "54797020"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Include`|必需的特性。<br /><br /> 项列表中要包含的文件或通配符。|  
 |`Exclude`|可选特性。<br /><br /> 项列表中要排除的文件或通配符。|  
@@ -63,13 +62,13 @@ ms.locfileid: "54797020"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|用户定义的包含项元数据值的项元数据键。 项中可能没有或有一些 `ItemMetadata` 元素。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|为项进行元素分组。|  
   

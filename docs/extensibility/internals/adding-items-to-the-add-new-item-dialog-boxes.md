@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620988"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651277"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>将项目添加到添加新项对话框
 将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示**AddItemTemplates**部分包含的路径和名称的目录中提供哪些项**添加新项**放入对话框。
@@ -35,8 +35,7 @@ ms.locfileid: "56620988"
 
  **SortPriority** = dword:00000064
 
-
-| name | 类型 | 数据 (从 *.rgs*文件) | 描述 |
+| 名称 | 类型 | 数据 (从 *.rgs*文件) | 描述 |
 |------------------|-----------| - | - |
 | @ （默认值） | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | 资源 ID**添加项**模板。 |
 | Val TemplatesDir | REG_SZ | %TEMPLATE_PATH%\\&lt;SomeProjectItems&gt; | 在对话框中显示的项目项的路径**添加新项**向导。 |

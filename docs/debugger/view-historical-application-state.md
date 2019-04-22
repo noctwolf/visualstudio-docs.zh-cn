@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf319dd00048a4abf6cc4e3806845200c9eefc64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b755991bd90684c08c7126cb17fd169db7e57c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703573"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504351"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>在 Visual Studio (Visual Studio Enterprise) 中，使用 IntelliTrace 单步后退来检查旧应用状态
 
@@ -87,7 +87,7 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
 
     ![IntelliTrace 后退的概述](../debugger/media/intellitrace-step-back-overview.png "Overview of IntelliTrace Step-back")
 
-    若要了解有关如何在 Visual Studio 中检查变量的更多信息，请参阅[调试器功能概览](../debugger/debugger-feature-tour.md)
+    若要了解有关如何在 Visual Studio 中检查变量的详细信息，请参阅[初探调试器](../debugger/debugger-feature-tour.md)
 
 ## <a name="frequently-asked-questions"></a>常见问题
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0aa4d1c3126c22661285f18aac18a63d55468312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639656"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647296"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>在旧版语言服务中的注释代码
 编程语言通常提供一种方法来添加批注或注释的代码。 注释是文本来提供有关代码的其他信息，但在编译或解释过程中忽略的一部分。
@@ -29,7 +29,6 @@ ms.locfileid: "56639656"
 1.  行注释，其中注释是在单个行。
 
 2.  块注释，注释可以包含多个行的位置。
-
 
 行的注释通常具有起始字符 （或字符），块注释时具有开始和结束字符。 例如，在 C# 中，行注释开头`//`，和块注释开头`/*`结尾`*/`。
 

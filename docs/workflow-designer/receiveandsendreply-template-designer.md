@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657e14d968496c895f24038ca2db1e7f62846b75
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950196"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648752"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 模板设计器
 
@@ -41,7 +41,6 @@ ms.locfileid: "55950196"
 ### <a name="properties-of-sendreply"></a>SendReply 的属性
 
 下表列出 <xref:System.ServiceModel.Activities.SendReply> 属性并说明如何在设计器中使用它们。 可以在属性网格中编辑这些属性和某些可编辑工作流设计器图面上。
-
 
 | 属性名 | 必需 | 用法 |
 |-|----------|-|

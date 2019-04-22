@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232809"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649949"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 当您正在设计使用公共 Visual Studio shell 元素的 UI 或希望界面元素将与类似功能一致时，使用包定义文件中现有的标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。
@@ -22,7 +22,7 @@ ms.locfileid: "59232809"
 
 请确保正确使用标记名称：
 
--   **使用基于功能的标记名称，而不是颜色本身。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的函数不同，以及如果组合框中更改与关联的颜色，则可能不再是合适于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
+-   **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的函数不同，以及如果组合框中更改与关联的颜色，则可能不再是合适于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
 
 -   **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联的文本颜色，不要将该背景色用于期望显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。
 
@@ -703,7 +703,7 @@ ms.locfileid: "59232809"
 | 前景（搜索标志符号） | `SearchControl.SearchGlyph` |
 | 前景（停止标志符号） | `SearchControl.StopGlyph` |
 | 前景（清除标志符号） | `SearchControl.ClearGlyph` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 **失去焦点的搜索操作按钮**
 
@@ -711,11 +711,11 @@ ms.locfileid: "59232809"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（搜索标志符号） | `SearchControl.SearchGlyph` |
 | 前景（停止标志符号） | `SearchControl.StopGlyph` |
 | 前景（清除标志符号） | `SearchControl.ClearGlyph` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 **按下的搜索操作按钮**
 
@@ -1226,7 +1226,7 @@ ms.locfileid: "59232809"
 | --- | --- |
 | 背景 | 不适用（从命令栏背景继承） |
 | 前景（文本） | `Environment.CommandBarTextActive` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 **命令图标： 默认选择的状态**
 
@@ -1276,7 +1276,7 @@ ms.locfileid: "59232809"
 | --- | --- |
 | 背景 | 不适用（从命令栏背景继承） |
 | 前景（文本） | `Environment.CommandBarTextInactive` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 ####  <a name="BKMK_CommandComboBox"></a> 命令栏组合框
 
@@ -1520,7 +1520,7 @@ ms.locfileid: "59232809"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（标志符号） | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>命令栏拆分按钮
@@ -1542,8 +1542,8 @@ ms.locfileid: "59232809"
 | 背景 | None |
 | 前景（文本） | `Environment.CommandBarTextActive` |
 | 前景（标志符号） | `Environment.CommandBarSplitButtonGlyph` |
-| Border | 不可用 |
-| Separator | 不可用 |
+| Border | 不适用 |
+| Separator | 不适用 |
 
 **命令栏中的拆分按钮： 将鼠标悬停状态**
 
@@ -1567,7 +1567,7 @@ ms.locfileid: "59232809"
 | 前景（文本） | `Environment.CommandBarTextMouseDown` |
 | 前景（标志符号） | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | Border | `Environment.CommandBarBorder` |
-| Separator | 不可用 |
+| Separator | 不适用 |
 
 **命令栏中的拆分按钮： 已禁用状态**
 
@@ -1575,11 +1575,11 @@ ms.locfileid: "59232809"
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（文本） | `Environment.ComboBoxItemTextInactive` |
 | 前景（标志符号） | `Environment.CommandBarTextInactive` |
-| Border | 不可用 |
-| Separator | 不可用 |
+| Border | 不适用 |
+| Separator | 不适用 |
 
 #### <a name="command-bar-more-options-and-overflow-buttons"></a>命令栏更多选项和溢出按钮
 通过添加或删除相关命令栏按钮来自定义命令栏组时，可使用“更多选项”按钮。 命令栏由于水平空间不足而被截断，以及在单击操作中显示包含无法显示的命令栏按钮的菜单时，会出现“溢出”按钮。 这两个按钮的颜色通过一组相同的标记名称进行控制。
@@ -1836,7 +1836,7 @@ ms.locfileid: "59232809"
 | --- | --- |
 | 背景 | `Environment.DocWellOverflowButtonBackground` |
 | 前景（标志符号） | `Environment.DocWellOverflowButtonGlyph` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 **文档溢出按钮： 将鼠标悬停状态**
 
@@ -1913,7 +1913,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（标志符号） | `Tag.TagHoverGlyph` |
 
 **关闭 (&times;) 标记标志符号： 将鼠标悬停状态**
@@ -1942,13 +1942,12 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（标志符号） | `Tag.TagSelectedGlyph` |
 
 **选择与关闭标记 (&times;) 标志符号： 将鼠标悬停状态**
 
 ![选择与关闭标记 (&times;) 上悬停标志符号](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303年 185_TagSelectedHover")<br />选择与关闭标记 (&times;) 上悬停标志符号
-
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
@@ -2098,7 +2097,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | --- | --- |
 | 背景 | `Environment.TitleBarInactiveGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（文本） | `Environment.TitleBarInactiveText` |
-| Border | 不可用 |
+| Border | 不适用 |
 | 拖动句柄 | `Environment.TitleBarDragHandle` |
 
 #### <a name="tool-window-title-bar-buttons"></a>工具窗口标题栏按钮
@@ -2115,9 +2114,9 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（标志符号） | `Environment.ToolWindowButtonActiveGlyph` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 **失去焦点的标题栏按钮： 这是默认状态**
 
@@ -2125,9 +2124,9 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 令牌名称：Category.color |
 | --- | --- |
-| 背景 | 不可用 |
+| 背景 | 不适用 |
 | 前景（标志符号） | `Environment.ToolWindowButtonInactiveGlyph` |
-| Border | 不可用 |
+| Border | 不适用 |
 
 **已设定焦点的标题栏按钮： 将鼠标悬停状态**
 
@@ -2176,7 +2175,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | --- | --- |
 | ...要创建想要与工具窗口匹配的 UI 的任何位置。 | ...对于不想要时自动更改的任何 UI 在 shell 具有主题更新。 |
 
-**已选定、已设定焦点的工具窗口选项卡**
+**已选定、 已设定焦点的工具窗口选项卡**
 
 ![选择、 已设定焦点的工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303年 103_ToolWindowTabFocused")<br />已选定、已设定焦点的工具窗口选项卡
 
@@ -2186,7 +2185,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 前景（文本） | `Environment.ToolWindowTabSelectedActiveText` |
 | Border | `Environment.ToolWindowTabSelectedBorder`<br />（设置为与背景颜色相同。） |
 
-**已选定、失去焦点的工具窗口选项卡**
+**已选定、 失去焦点的工具窗口选项卡**
 
 ![已选定、 失去焦点的工具窗口选项卡](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303年 104_ToolWindowTabUnfocused")<br />已选定、失去焦点的工具窗口选项卡
 

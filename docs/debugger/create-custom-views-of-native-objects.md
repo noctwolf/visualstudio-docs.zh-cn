@@ -1,5 +1,5 @@
 ---
-title: 创建自定义视图的C++对象
+title: 创建 C++ 对象的自定义视图
 description: 使用 Natvis 框架自定义 Visual Studio 调试器中显示本机类型的方式
 ms.date: 10/31/2018
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f56dda1f64a0bd50a6bb81b981ad4add7d9c095
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 2dba61d53bdb0007eb2a4f0acff734613e320ab9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537572"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649636"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger"></a>创建自定义视图的C++在调试器中的对象
 
@@ -153,7 +153,6 @@ Natvis 的可视化功能使用 C++ 表达式来指定要显示的数据项。 �
     </Expand>
 </Type>
 ```
-
 
 在**监视**窗口中，使用 **,view** 格式说明符来指定替代视图。 simple 视图将显示为 **vec,view(simple)**：
 

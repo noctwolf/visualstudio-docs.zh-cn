@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790792"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>演练： 调试多线程的应用使用线程窗口 (C#，Visual Basic、 c + +)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>演练：调试多线程的应用使用线程窗口 (C#，Visual Basic 中， C++)
 
 多个 Visual Studio 用户界面元素帮助您调试多线程应用程序。 本文介绍了在代码编辑器窗口中，多线程调试功能**调试位置**工具栏上，并**线程**窗口。 有关其他工具来调试多线程应用程序的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。
 
@@ -37,17 +37,17 @@ ms.locfileid: "58790792"
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    按**Esc**以关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
+    按 Esc 关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
 
     - 有关C#，选择**创建新的控制台应用 (.NET Framework) 项目**为C#。 在出现的对话框中，选择“创建”。
-    - 对于 c + +，请选择**创建新的控制台应用项目**。 在出现的对话框中，选择“创建”。
+    - 有关C++，选择**创建新的控制台应用项目**。 在出现的对话框中，选择“创建”。
 
     然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**创建**。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在左窗格中**新的项目**对话框框中，选择以下：
     - 有关C#应用程序下**可视化C#** ，选择**Windows 桌面**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
-    - 对于 c + + 应用，在**Visual c + +**，选择**Windows Desktop**、，然后选择**Windows 控制台应用程序**。
+    - 有关C++应用程序下**可视化C++** ，选择**Windows 桌面**、，然后选择**Windows 控制台应用程序**。
 
     然后，键入一个名称，如**MyThreadWalkthroughApp**然后单击**确定**。
     ::: moniker-end
@@ -56,7 +56,7 @@ ms.locfileid: "58790792"
 
     新项目将出现在**解决方案资源管理器**，并且源文件调用*Program.cs*或*MyThreadWalkthroughApp.cpp*在源代码窗口中打开。
 
-1. 与源文件中的代码替换为C#或 c + + 示例代码从[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。
+1. 与源文件中的代码替换为C#或C++中的示例代码[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。
 
 1. 选择**文件** > **保存所有**。
 
@@ -109,7 +109,7 @@ ms.locfileid: "58790792"
 
 1. 打开**调试位置**通过选择工具栏**视图** > **工具栏** > **调试位置**。 此外可以右键单击工具栏区域中，然后选择**调试位置**。
 
-1. **调试位置**工具栏具有三个字段：**进程**，**线程**，以及**堆栈帧**。 下拉列表**线程**列表，并记下有多少线程。 在中**线程**列表中，当前正在执行的线程标记供**>** 符号。
+1. **调试位置**工具栏具有三个字段：**进程**，**线程**，和**堆栈帧**。 下拉列表**线程**列表，并记下有多少线程。 在中**线程**列表中，当前正在执行的线程标记供**>** 符号。
 
 1. 在源代码窗口中，将鼠标悬停在滚动条槽中的线程标记图标，并在数据提示中选择标记图标 （或一个空的标志图标）。 标志图标将变为红色。
 

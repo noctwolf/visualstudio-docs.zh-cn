@@ -15,18 +15,18 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790623"
 ---
 # <a name="debug-html-and-css-sample-code"></a>调试 HTML 和 CSS 示例代码
 
-本主题中的代码是示例文件[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 此版本的代码中修复了快速入门中有意出现的错误。
+本主题中的代码是示例文件[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 此版本的代码中修复了快速入门中有意出现的错误。
 
 ## <a name="sample-code"></a>代码示例
-快速入门中的 \<body> 标记中使用了以下 HTML 代码。
+快速入门的 \<body> 标记中使用了以下 HTML 代码。
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"

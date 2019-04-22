@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4d964a8744f1f0a28704dd0a1d5e0fd2e67aab1c
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58897668"
 ---
 # <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
@@ -43,7 +43,7 @@ HRESULT GetNextDispID(
 `grfdex`\
 确定要枚举的项的集。 这可以是以下值的组合：
 
-|值|含义|
+|“值”|含义|
 |-----------|-------------|
 |fdexEnumDefault|请求该对象枚举的默认元素。 该对象可以枚举元素的任何组。|
 |fdexEnumAll|请求该对象枚举的所有元素。 该对象可以枚举元素的任何组。|

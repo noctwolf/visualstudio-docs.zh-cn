@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678860"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648442"
 ---
 # <a name="getting-started-with-python"></a>Python 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Python 是一个受欢迎的编程语言使用的许多大学、 科学家、 �
 若要了解有关语言的详细信息，使用启动[适合初学者的 Python](https://www.python.org/about/gettingstarted/) python.org 上。
 
 若要安装 Python 本身，请访问[ https://www.python.org/download/ ](https://www.python.org/download/)。
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Python Tools for Visual Studio
   
 适用于 Visual Studio 中，你可以从安装的 Python 工具[visualstudio.com](https://www.visualstudio.com/explore/python-vs)，提供以下功能：  
@@ -63,7 +62,6 @@ Python 是一个受欢迎的编程语言使用的许多大学、 科学家、 �
 - [入门和深入了解短片](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - 安装和功能演示 （27 分钟）] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [文档](https://github.com/Microsoft/PTVS/wiki)  
-
 
 请注意，Visual Studio 不目前提供的方法来创建使用 Python，它本质上具有嵌入式 Python 解释器的程序的独立可执行文件。 但是，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区中有多种方法可以实现此功能。 如博客文章 [Using CPython's Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/)（使用 CPython 可嵌入 zip 文件）中所述，CPython 还支持嵌入到本机应用程序中。
   
@@ -94,8 +92,8 @@ Azure SDK for Python 支持 Windows、Mac 和 Linux，使得使用和管理 Micr
 ## <a name="see-also"></a>请参阅  
 
 [PTVS 入门：设置 Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[PTVS 入门：开始编码（项目）](../python/getting-started-with-ptvs-start-coding-projects.md)
+[PTVS 入门：开始编码 （项目）](../python/getting-started-with-ptvs-start-coding-projects.md)
 [PTVS 入门：编辑代码](../python/getting-started-with-ptvs-editing-code.md)
 [PTVS 入门：调试](../python/getting-started-with-ptvs-debugging.md)
 [PTVS 入门：交互式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS 入门：在 Azure 中构建网站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS 入门：构建在 Azure 网站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

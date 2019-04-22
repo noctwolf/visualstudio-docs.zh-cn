@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366804"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>监视使用监视窗口和快速监视的变量
@@ -231,8 +231,8 @@ public class Program
 
 若要仅显示**动态视图**对象，将添加**动态**动态对象名称后格式说明符**观看**窗口：
 
-- 对于 C#： `ObjectName, dynamic`
-- 对于 Visual Basic： `$dynamic, ObjectName`
+- 对于 C#：`ObjectName, dynamic`
+- 对于 Visual Basic：`$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#调试器不会自动重新计算中的值**动态视图**当进入下一行代码。
@@ -295,4 +295,4 @@ static void Main(string[] args)
 - [什么是调试？](../debugger/what-is-debugging.md)
 - [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)
 - [首先看一下调试](../debugger/debugger-feature-tour.md)
-- [“调试器”窗口](../debugger/debugger-windows.md)
+- [调试器窗口](../debugger/debugger-windows.md)

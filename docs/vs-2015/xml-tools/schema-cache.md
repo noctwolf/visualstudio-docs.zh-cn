@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936848"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648960"
 ---
 # <a name="schema-cache"></a>架构缓存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 “XML 编辑器”提供的架构缓存位于 %InstallRoot%\Xml\Schemas 目录。 架构缓存适用于计算机上的所有用户，并且包含用于智能感知和 XML 文档验证的标准 XML 架构。  
 
  XML 编辑器还可以查找解决方案中的架构，在指定架构**架构**的文档字段**属性**窗口中，并标识的架构`xsi:schemaLocation`和`xsi:noNamespaceSchemaLocation`属性。  
 
  下表说明随“XML 编辑器”安装的架构。  
-
 
 |     Filename      |                                                      描述                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|

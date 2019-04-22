@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159174"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537525"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中生成解构函数
 
@@ -28,19 +28,19 @@ ms.locfileid: "58159174"
 
 操作原因：可以手动键入解构函数，但此功能将生成带有正确 out 参数的存根。
 
-## <a name="generate-deconstructor"></a>生成解构函数
+## <a name="generate-a-deconstructor"></a>生成解构函数
 
 1. 声明具有指定的所需 out 参数的新类型。 如果找不到与声明匹配的解构实例，则此声明将导致错误。
 
    ![缺少解构函数错误](media/deconstruct.png)
 
-2. 下一步，执行以下某项操作：
+2. 执行下列步骤之一：
 
    - **键盘**
-      - 将光标放在声明中，按 Ctrl+. 触发“快速操作和重构”菜单。
+      - 将光标置于声明中，选择 Ctrl+。 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边缘）。
+      - 选择 ![左边缘中](media/screwdriver.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边缘）。
 
       ![生成解构代码修补程序](media/deconstruct-codefix.png)
 

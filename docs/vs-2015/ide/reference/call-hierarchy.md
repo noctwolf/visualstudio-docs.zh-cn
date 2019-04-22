@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774769"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649402"
 ---
 # <a name="call-hierarchy"></a>调用层次结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 调用层次结构通过显示选定方法、属性或构造函数的所有调用方及被调用方，使用户可以在代码间导航。 这有助于更好地理解代码的流动方式，以及评估代码更改的效果。 可以检查多个级别的代码，以查看方法调用的复杂链条以及代码的其他入口点，从而找到所有可能的执行路径。  
   
  与调试器显示的调用堆栈不同，调用层次结构可在设计时使用。  
@@ -61,7 +60,7 @@ ms.locfileid: "54774769"
 ## <a name="shortcut-menu-items"></a>快捷菜单项  
  下表描述了在树状视图窗格中右键单击某个节点时，可以使用的多个快捷菜单选项。  
   
-|上下文菜单项|说明|  
+|上下文菜单项|描述|  
 |-----------------------|-----------------|  
 |**作为新根添加**|将选定节点添加为树状视图窗格中的新根节点。 这样就可以集中关注特定子树。|  
 |**移除根**|从树视图窗格中删除所选根节点。 只有根节点有此选项。<br /><br /> 还可以使用“移除根”工具栏按钮来移除选定的根节点。|  

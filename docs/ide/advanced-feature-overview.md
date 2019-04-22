@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790532"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504297"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -100,7 +100,7 @@ Visual Studio 中的 **SQL Server 对象资源管理器**提供类似于 SQL Ser
 
 ## <a name="debug-test-and-improve-your-code"></a>调试、测试和改进代码
 
-编写代码时，需要运行并测试该代码以了解 bug 和性能。 使用 Visual Studio 先进的调试系统，可以调试在本地项目、远程设备或[设备仿真器](../cross-platform/visual-studio-emulator-for-android.md)上运行的代码。 可单步执行代码，一次执行一条语句，逐步检查变量。 可设置仅当指定条件为真时才命中的断点。 在代码编辑器中可以管理调试选项，因此无需离开代码。 有关在 Visual Studio 中进行调试的详细信息，请参阅[调试器功能简介](../debugger/debugger-feature-tour.md)。
+编写代码时，需要运行并测试该代码以了解 bug 和性能。 使用 Visual Studio 先进的调试系统，可以调试在本地项目、远程设备或[设备仿真器](../cross-platform/visual-studio-emulator-for-android.md)上运行的代码。 可单步执行代码，一次执行一条语句，逐步检查变量。 可设置仅当指定条件为真时才命中的断点。 在代码编辑器中可以管理调试选项，因此无需离开代码。 有关在 Visual Studio 中进行调试的详细信息，请参阅[初探调试器](../debugger/debugger-feature-tour.md)。
 
 有关提升应用性能的详细信息，请参阅 Visual Studio 的[分析](../profiling/profiling-feature-tour.md)功能。
 

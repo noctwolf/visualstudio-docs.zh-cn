@@ -17,23 +17,22 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7b7757087b942132523bda81ece7f879b19a4ba
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3b97714fc707d8f9174a01dcc1fe7b3b59176de2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798830"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651574"
 ---
 # <a name="combinepath-task"></a>CombinePath 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将指定路径合并到单个路径。  
   
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 [CombinePath 任务](../msbuild/combinepath-task.md)的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`BasePath`|必选 `String` 参数。<br /><br /> 与其他路径组合的基路径。 可以是相对路径、绝对路径或空白。|  
 |`Paths`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要与 BasePath 组合成组合路径的各个路径的列表。 路径可以是相对路径，也可以是绝对路径。|  

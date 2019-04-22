@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 25a7f5f0e53518e9beb4b509ab27ae4de0f28fa7
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018150"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477536"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -34,10 +34,10 @@ ms.locfileid: "59018150"
 以下是对新增功能的简要概括：
 
 * **[开发](#develop)**：通过改进的性能、即时代码清理和更好的搜索结果来保持专注和高效。
-* **[协作](#collaborate)**：在 Visual Studio 中，通过云优先工作流、实时编辑和调试，以及代码评审，尽情享受自然协作。
+* **[协作](#collaborate)**：在 Visual Studio 中，通过 Git 优先工作流、实时编辑和调试，以及代码评审，即可尽情享受自然协作。
 * **[调试](#debug)**：突出显示并导航到特定值、优化内存使用，并对应用程序的执行进行自动快照。
 
-有关此版本中所有新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。 
+有关此版本中所有新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。
 
 ## <a name="develop"></a>开发
 
@@ -55,11 +55,11 @@ ms.locfileid: "59018150"
 
 ### <a name="refactorings"></a>重构
 
-新的 C# 重构使组织代码变得更容易。 只需通过按 Ctrl+. 并选择要采取的操作调用重构。 
+C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡中显示为建议，并且包括将成员移动到接口或基类、调整命名空间以匹配文件夹结构、将 foreach 循环转换为 Linq 查询等操作。
 
    ![Visual Studio 2019 中的重构体验动画](media/vs-2019/refactorings.gif)
 
-我们已经添加了许多新的重构，包括一个可以封装方法参数的重构。
+只需通过按 Ctrl+. 并选择要采取的操作调用重构。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ ms.locfileid: "59018150"
 
 如果你使用的是 C#，我们还添加了在你自己的代码上训练自定义模型的功能。
 
-有关 IntelliCode 的详细信息，请参阅博客文章[使用 Visual Studio IntelliCode 编写更多代码并减少滚动](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)。 
+有关 IntelliCode 的详细信息，请参阅博客文章[使用 Visual Studio IntelliCode 编写更多代码并减少滚动](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)。
 
 ### <a name="code-cleanup"></a>代码清理
 
@@ -142,7 +142,7 @@ Visual Studio 2019 中会默认安装此服务。
 
    ![显示 Visual Studio 2019 中的调试数据断点的动画](media/vs-2019/debug-data-breakpoints.gif)
 
-因此，无论是使用 C++ 还是 .Net Core 编写代码，数据断点都是一个很好的替代方法，而不只是放置常规断点。 数据断点还非常适合用于查找修改、添加或从列表中删除全局对象的位置之类的方案。 
+因此，无论是使用 C++ 还是 .Net Core 编写代码，数据断点都是一个很好的替代方法，而不只是放置常规断点。 数据断点还非常适合用于查找修改、添加或从列表中删除全局对象的位置之类的方案。
 
 而且，如果你是开发大型应用程序的 C++ 开发人员，Visual Studio 2019 已经将过程符号化，这允许你调试这些应用程序，而不会遇到与内存相关的问题。
 

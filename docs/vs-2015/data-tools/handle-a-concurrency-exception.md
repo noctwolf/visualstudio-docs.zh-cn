@@ -21,17 +21,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba0695656ce2377456f4150be0fe4f5231f7cb76
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c18b34cd3a38f41279885658a8d354ff6f9e8fe7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931163"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650169"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 并发异常 (<xref:System.Data.DBConcurrencyException>) 两个用户尝试同时更改相同的数据在数据库中时引发。 在本演练中，创建一个 Windows 应用程序，演示如何捕获<xref:System.Data.DBConcurrencyException>，找到导致此错误的行，并了解如何对其进行处理的策略。  
   
  本演练将指导你完成以下过程：  

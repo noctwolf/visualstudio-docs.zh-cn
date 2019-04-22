@@ -15,30 +15,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 485f503d237cbc98918357eee79a3309fe8d33a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d2f3383731fcfa314c3b936cd42002186012439
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609061"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647996"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序版本的标识。
 
  部署清单具有下列元素和特性。
 
-
-| 元素 | 说明 | 特性 |
+| 元素 | 描述 | 特性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md) | 必需。 顶级元素。 | `manifestVersion` |
-| [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md) | 必需。 标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
-| [\<说明 > 元素](../deployment/description-element-clickonce-deployment.md) | 必需。 标识用于在控制面板中创建 shell 表示和“添加/删除程序”项的应用程序信息。 | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
-| [\<部署 > 元素](../deployment/deployment-element-clickonce-deployment.md) | 可选。 标识用于部署更新并向系统公开的特性。 | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
-| [\<compatibleFrameworks > 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 必需。 标识此应用程序可在其上安装和运行的 .NET Framework 版本。 | `SupportUrl` |
-| [\<依赖项 > 元素](../deployment/dependency-element-clickonce-deployment.md) | 必需。 标识要为部署而安装的应用程序版本以及应用程序清单的位置。 | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
-| [\<publisherIdentity > 元素](../deployment/publisheridentity-element-clickonce-deployment.md) | 对于已签名清单是必需的。 包含有关为此部署清单签名的发布者的信息。 | `Name`<br /><br /> `issuerKeyHash` |
-| [\<签名 > 元素](../deployment/signature-element-clickonce-deployment.md) | 可选。 包含对此部署清单进行数字签名所需的信息。 | None |
-| [\<customErrorReporting > 元素](../deployment/customerrorreporting-element-clickonce-deployment.md) | 可选。 指定发生错误时所显示的 URI。 | URI |
+| [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md) | 必需。 标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
+| [\<description> 元素](../deployment/description-element-clickonce-deployment.md) | 必需。 标识用于在控制面板中创建 shell 表示和“添加/删除程序”项的应用程序信息。 | `publisher`<br /><br /> `product`<br /><br /> `supportUrl` |
+| [\<deployment> 元素](../deployment/deployment-element-clickonce-deployment.md) | 可选。 标识用于部署更新并向系统公开的特性。 | `install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters` |
+| [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md) | 必需。 标识此应用程序可在其上安装和运行的 .NET Framework 版本。 | `SupportUrl` |
+| [\<dependency> 元素](../deployment/dependency-element-clickonce-deployment.md) | 必需。 标识要为部署而安装的应用程序版本以及应用程序清单的位置。 | `preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size` |
+| [\<publisherIdentity> 元素](../deployment/publisheridentity-element-clickonce-deployment.md) | 对于已签名清单是必需的。 包含有关为此部署清单签名的发布者的信息。 | `Name`<br /><br /> `issuerKeyHash` |
+| [\<Signature> 元素](../deployment/signature-element-clickonce-deployment.md) | 可选。 包含对此部署清单进行数字签名所需的信息。 | None |
+| [\<customErrorReporting> 元素](../deployment/customerrorreporting-element-clickonce-deployment.md) | 可选。 指定发生错误时所显示的 URI。 | URI |
 
 ## <a name="remarks"></a>备注
  部署清单文件标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序部署，包括当前版本和其他部署设置。 该文件引用应用程序清单，该清单描述了应用程序的当前版本以及部署中包含的所有文件。

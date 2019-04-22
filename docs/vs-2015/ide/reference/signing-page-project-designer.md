@@ -20,17 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788721"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650391"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“项目设计器”的“签名”页对应用程序和部署清单及程序集进行签名（强名称签名）。  
   
  请注意，尽管这两项任务都在“签名”页上执行，但应用程序和部署清单的签名过程与程序集的签名过程不同。  
@@ -41,7 +40,7 @@ ms.locfileid: "54788721"
   
 ## <a name="application-and-deployment-manifest-signing"></a>应用程序和部署清单签名  
  “为 ClickOnce 清单签名”复选框  
- 选中此复选框以使用公钥/私钥对对应用程序和部署清单进行签名。 有关如何执行此操作的详细信息，请参阅[如何：对应用程序和部署清单进行签名](../../ide/how-to-sign-application-and-deployment-manifests.md)。  
+ 选中此复选框以使用公钥/私钥对对应用程序和部署清单进行签名。 有关如何执行此操作的详细信息，请参阅[如何：对应用程序和部署清单签名](../../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
  “从存储区选择”按钮  
  可以从当前用户的个人证书存储区中选择现有证书。 可以选择其中一个证书来对应用程序和部署清单进行签名。  
@@ -94,6 +93,6 @@ ms.locfileid: "54788721"
  [管理程序集签名和清单签名](../../ide/managing-assembly-and-manifest-signing.md)   
  [托管应用程序的强名称签名](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [如何：对应用程序和部署清单进行签名](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [如何：为程序集签名 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [如何：签名程序集 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
  [如何：使用强名称为程序集签名](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [具有强名称的程序集](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

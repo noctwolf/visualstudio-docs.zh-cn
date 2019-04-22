@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 276667993fa1c3448af3168403d18c2e55a118af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56cda28a66d7d956ef46ed335765fe8fab430301
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934718"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649623"
 ---
 # <a name="xml-editor-tasks"></a>XML 编辑器任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本节描述如何使用 XML 编辑器完成常见任务。  
   
 ## <a name="in-this-section"></a>本节内容  

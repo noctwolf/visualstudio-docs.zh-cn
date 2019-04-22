@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7b451cf18a461f94e1d8682652e16dac9ee8ab2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790454"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537619"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>面向 C# 开发人员的 Visual Studio 工作效率指南
 
@@ -126,6 +126,7 @@ Visual Studio 包含大量重构、代码生成操作和代码修补程序。 �
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
 - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
 - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
+- [CodeCracker](https://www.nuget.org/packages/codecracker.CSharp/)
 
 ![在 Visual Studio 中重构](../ide/media/VSGuide_CodeAnalysis.png)
 
@@ -177,7 +178,7 @@ Visual Studio 的一些调试功能包括：
 - 运行到点击位置，可以通过该功能将鼠标悬停在一行代码旁，点击出现的绿色“运行”图标，则程序会运行到该行停止。
 - 异常帮助程序，该功能将最重要的信息置于对话框顶层，例如，哪些变量在 `NullReferenceException` 中是 `null`。
 - [后退式调试](../debugger/view-historical-application-state.md)，可通过该功能返回到上一个断点或步骤，并查看当时应用程序的状态。
-- [快照调试](/azure/application-insights/app-insights-snapshot-debugger)，可通过该功能在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
+- 快照调试[](/azure/application-insights/app-insights-snapshot-debugger)，可通过该功能在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
 
 ::: moniker-end
 
