@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5842f0f931eecd822dcaeba5eb6b3e33bd826c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758836"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658823"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：在编辑器中将 URL 显示为链接
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 可选择让代码编辑器将代码中的统一资源定位器 (URL) 视为活动链接。 使用此功能时，URL 将具有以下特征：  
   
 -   以带有下划线的形式显示。  

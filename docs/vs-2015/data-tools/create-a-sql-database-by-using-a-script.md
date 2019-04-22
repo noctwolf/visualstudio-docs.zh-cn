@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc35def483b80610b9480dfd57320712d75fe0eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78e70ae790a39cb761eca34dcdc2b9b32b5bbfd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933686"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653627"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>通过使用脚本创建 SQL 数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在本演练中，您使用 Visual Studio 创建的小型数据库中包含的示例代码[使用 ADO.NET 创建简单的数据应用](../data-tools/create-a-simple-data-application-by-using-adonet.md)。  
   
  **在本主题中**  

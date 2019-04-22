@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630517"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658392"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用与您的项目类型关联的注册信息以确定要在中显示**添加新项目**并**添加新项**对话框。
@@ -37,7 +37,7 @@ ms.locfileid: "56630517"
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|name|类型|描述|
+|名称|类型|描述|
 |----------|----------|-----------------|
 |@|REG_SZ|这种类型的项目的默认名称。|
 |DisplayName|REG_SZ|包下注册的名称的资源 ID 来检索从附属 DLL。|
@@ -55,8 +55,7 @@ ms.locfileid: "56630517"
 "SortPriority"=dword:00000064
 ```
 
-
-| name | 类型 | 描述 |
+| 名称 | 类型 | 描述 |
 |--------------------------|-----------| - |
 | @ | REG_SZ | 添加项模板的资源 ID。 |
 | TemplatesDir | REG_SZ | 在对话框中显示的项目项的路径**添加新项**向导。 |
@@ -83,7 +82,7 @@ ms.locfileid: "56630517"
 "SortPriority"=dword:00000064
 ```
 
-|name|类型|描述|
+|名称|类型|描述|
 |----------|----------|-----------------|
 |CommonFindFilesFilter|REG_DWORD|使常用筛选器之一中的筛选**在文件中查找**对话框。 前面未标记为常见的筛选器的筛选器列表中列出了常用筛选器。|
 |CommonOpenFilesFilter|REG_DWORD|使常用筛选器之一中的筛选**打开的文件**对话框。 前面未标记为常见的筛选器的筛选器列表中列出了常用筛选器。|

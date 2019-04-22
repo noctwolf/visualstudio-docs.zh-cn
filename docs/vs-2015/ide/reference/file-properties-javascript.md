@@ -26,20 +26,19 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780364"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656475"
 ---
 # <a name="file-properties-javascript"></a>文件属性，JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 文件属性可用于指示项目系统应对文件执行的操作。 例如，可以设置文件属性，指示是否应将文件作为资源文件添加到包。  
   
- 可以在解决方案资源管理器中选择任何文件，然后在“属性”窗口中检查其属性。 JavaScript 文件具有四个属性：复制到输出目录、包操作、文件名和文件路径。  
+ 可以在解决方案资源管理器中选择任何文件，然后在“属性”窗口中检查其属性。 JavaScript 文件具有四个属性：“复制到输出目录”、“包操作”、“文件名”和“文件路径”。  
   
 ## <a name="file-properties"></a>文件属性  
  本部分介绍 JavaScript 文件的共同属性。  
@@ -97,4 +96,4 @@ ms.locfileid: "54780364"
  显示引用的版本。  
   
 ## <a name="see-also"></a>请参阅  
- [NIB： 项目属性 (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
+ [NIB：项目属性 (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 243170acd838b96efac6521a548596a021893e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ba83cf7db6415eefcb989f678bc4149d495016e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935882"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658339"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用事务保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您将数据保存在事务中的使用<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与为您自动管理的事务。  
   
  项目不会创建对 System.Transactions 程序集的引用，因此您需要手动添加对项目使用事务的引用。  

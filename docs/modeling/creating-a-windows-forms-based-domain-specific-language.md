@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951509"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658704"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示特定于域的语言 (DSL) 模型，而不是使用 DSL 关系图的状态。 本主题将指导你通过将 Windows 窗体绑定到使用 Visual Studio 可视化和建模 SDK 的 DSL。
@@ -28,12 +28,10 @@ ms.locfileid: "55951509"
 
     在本演练中，假定以下名称：
 
-
    | | |
    |-|-|
    | 解决方案和 DSL 名称 | FarmApp |
    | 命名空间 | Company.FarmApp |
-
 
 2. 该模板提供的初始示例试验：
 

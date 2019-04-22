@@ -1,5 +1,5 @@
 ---
-title: DA0001：使用 StringBuilder 进行串联 | Microsoft Docs
+title: DA0001：将 StringBuilder 用于串联 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a374e867283e4dad614d8bebce88a9bababa7d5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355172"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659145"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：使用 StringBuilder 进行串联
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：将 StringBuilder 用于串联
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的最新文档，请参阅[DA0001： 使用 StringBuilder 进行串联](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)docs.microsoft.com 上。  
+Visual Studio 的最新文档，请参阅[DA0001:使用 StringBuilder 进行串联](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations)。  
   
 |||  
 |-|-|  

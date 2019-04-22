@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: b255f521d45d1e827a3bfb9bc9bc5129f090bcaa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935584"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655707"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练：连接到生成的指令处理器的主机
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到所生成的指令处理器
 
 您可以编写您自己的主机，用于处理文本模板。 基本的自定义主机进行了演示[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以扩展此主机不能添加功能，如生成多个输出文件。
 
@@ -40,7 +40,6 @@ ms.locfileid: "55935584"
 ## <a name="prerequisites"></a>系统必备
 
 若要定义 DSL，必须安装以下组件：
-
 
 | | |
 |-|-|
@@ -363,4 +362,4 @@ ms.locfileid: "55935584"
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [演练：创建自定义文本模板主机](../modeling/walkthrough-creating-a-custom-text-template-host.md)

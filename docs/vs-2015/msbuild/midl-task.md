@@ -27,17 +27,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 883c56ce2bd272e508bc79d1d0c07db02350862d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657423"
 ---
 # <a name="midl-task"></a>MIDL 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 Microsoft 接口定义语言 (MIDL) 编译器工具 midl.exe。 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“MIDL 命令行参考”。  
   
 ## <a name="parameters"></a>参数  
@@ -409,7 +408,7 @@ ms.locfileid: "54782470"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  

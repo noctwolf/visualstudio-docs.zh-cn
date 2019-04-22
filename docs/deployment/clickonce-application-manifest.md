@@ -15,28 +15,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2da8014d35cd37fddf1a78c494b973ea206affc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: be9bfe19b92740d6be6c91802d193bf2fc401847
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609470"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653654"
 ---
 # <a name="clickonce-application-manifest"></a>ClickOnce 应用程序清单
 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单是一个 XML 文件，描述的应用程序使用部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。
 
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单具有以下元素和属性。
 
-
-| 元素 | 说明 | 特性 |
+| 元素 | 描述 | 特性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-application.md) | 必需。 顶级元素。 | `manifestVersion` |
-| [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md) | 必需。 标识的主要程序集的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
-| [\<trustInfo > 元素](../deployment/trustinfo-element-clickonce-application.md) | 标识应用程序安全性要求。 | None |
-| [\<入口点 > 元素](../deployment/entrypoint-element-clickonce-application.md) | 必需。 标识应用程序代码入口点。 | `name` |
-| [\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md) | 必需。 标识应用程序运行所需的每个依赖项。 （可选）标识需要进行预安装的程序集。 | None |
+| [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md) | 必需。 标识的主要程序集的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `language` |
+| [\<trustInfo> 元素](../deployment/trustinfo-element-clickonce-application.md) | 标识应用程序安全性要求。 | None |
+| [\<entryPoint> 元素](../deployment/entrypoint-element-clickonce-application.md) | 必需。 标识应用程序代码入口点。 | `name` |
+| [\<dependency> 元素](../deployment/dependency-element-clickonce-application.md) | 必需。 标识应用程序运行所需的每个依赖项。 （可选）标识需要进行预安装的程序集。 | None |
 | [\<file> 元素](../deployment/file-element-clickonce-application.md) | 可选。 标识应用程序使用每个非程序集文件。 可以包括与文件关联的组件对象模型 (COM) 隔离数据。 | `name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType` |
-| [\<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md) | 可选。 标识要与应用程序相关联的文件扩展。 | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
+| [\<fileAssociation> 元素](../deployment/fileassociation-element-clickonce-application.md) | 可选。 标识要与应用程序相关联的文件扩展。 | `extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon` |
 
 ## <a name="remarks"></a>备注
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单文件标识部署使用的应用程序[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 有关 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的详细信息，请参阅 [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)。
@@ -44,7 +43,7 @@ ms.locfileid: "56609470"
 ## <a name="file-location"></a>文件位置
  一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单是特定于部署的单个版本。 出于此原因，它们应存储单独从部署清单进行签名。 通用约定是将它们放在关联版本命名的子目录。
 
- 应用程序清单始终必须进行签名，然后再部署。 如果手动更改应用程序清单，则必须使用*mage.exe*进行重新签名的应用程序清单，更新部署清单，然后重新签名部署清单。 有关详细信息，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ 应用程序清单始终必须进行签名，然后再部署。 如果手动更改应用程序清单，则必须使用*mage.exe*进行重新签名的应用程序清单，更新部署清单，然后重新签名部署清单。 有关详细信息，请参见[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="file-name-syntax"></a>文件名语法
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序清单文件的名称应为应用程序的完整名称和扩展名，如 `assemblyIdentity` 元素中所标识的那样，后跟扩展名 .manifest。 例如，是指应用程序清单*Example.exe*应用程序将使用以下文件名语法。

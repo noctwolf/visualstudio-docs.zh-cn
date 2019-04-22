@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 24772233f80332ec88030af0d7862b00e5d61655
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2af02842ffc5c498d27578bcff2cb9fdfa0f6e07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000272"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658846"
 ---
 # <a name="native-recommended-rules-rule-set"></a>“本机建议规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本机建议规则重点关注本机代码，包括潜在安全漏洞和应用程序崩溃中最重要、 最常见的问题。  应在你为本机项目创建的任何自定义规则集中包含此规则集。  此规则集用于处理与 Visual Studio 专业版和更高版本。  
-
 
 |                                      规则                                      |                                                             描述                                                             |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600483"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657587"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 
@@ -45,10 +45,10 @@ ms.locfileid: "56600483"
 
 - 必须预先安装在全局程序集缓存 (GAC) 中，指定的程序集清单中的程序集依赖项声明的所有程序集的最小版本。
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何：将系统必备与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
 
 > [!NOTE]
->  若要更改由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，需要在文本编辑器中编辑应用程序清单，然后对应用程序清单和部署清单重新签名。 有关详细信息，请参阅[如何：对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+>  若要更改由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，需要在文本编辑器中编辑应用程序清单，然后对应用程序清单和部署清单重新签名。 有关详细信息，请参阅[如何：对应用程序清单和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
  如果你使用 Visual Studio 和 ClickOnce 来部署应用程序，则默认选中的引导程序包取决于解决方案中的 .NET Framework 版本。 但如果更改目标 .NET Framework 版本，则必须手动在“系统必备组件”对话框中更新选项。
 
@@ -71,8 +71,7 @@ ms.locfileid: "56600483"
 
  如果更改了任何引导程序选项，必须更改未签名的引导程序，然后稍后登录引导程序文件。
 
-
-| 命令行参数 | 说明 |
+| 命令行参数 | 描述 |
 | - | - |
 | **-h、-?、-Help** | 显示一个“帮助”对话框。 |
 | **-url, -componentsurl** | 显示用于此安装的存储 URL 和组件 URL。 |

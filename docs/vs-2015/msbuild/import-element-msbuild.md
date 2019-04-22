@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804035"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654290"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将一个项目文件的内容导入其他项目文件中。  
   
  \<Project>  
@@ -47,17 +46,17 @@ ms.locfileid: "54804035"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|描述|  
 |---------------|-----------------|  
 |`Project`|必需的特性。<br /><br /> 要导入的项目文件的路径。 该路径可以包含通配符。 匹配文件按排序顺序导入。 使用此功能时，只需通过将代码文件添加到目录，即可将代码添加到项目。|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
   
 ### <a name="child-elements"></a>子元素  
- 无  
+ None  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件必需的根元素。|  
 |[ImportGroup](../msbuild/importgroup-element.md)|包含在可选条件下进行分组的 `Import` 元素的集合。|  
@@ -117,4 +116,4 @@ ms.locfileid: "54804035"
   
 ## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
- [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多个项目文件中使用相同的目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

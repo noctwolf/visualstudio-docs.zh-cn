@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc172e9ed91a354918fd536060f97fcbb259a94
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932339"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654498"
 ---
 # <a name="install-sql-server-sample-databases"></a>安装 SQL Server 示例数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 示例数据库可用于试验 SQL 和 LINQ 查询、 数据绑定、 实体框架建模和等等。  每个数据库产品都有它自己的示例数据库。 Northwind 和 AdventureWorks 是两个常用的 SQL Server 示例数据库。  
   
  **AdventureWorks**是当前提供给 SQL Server 产品的示例数据库。 你可以为.mdf 文件从下载它[Codeplex 上的 AdventureWorks 页](http://msftdbprodsamples.codeplex.com/)。 有可用的数据库的常规和轻型 (LT) 版本此处。 大多数情况下，l T 版本是首选，因为它是不太复杂。  

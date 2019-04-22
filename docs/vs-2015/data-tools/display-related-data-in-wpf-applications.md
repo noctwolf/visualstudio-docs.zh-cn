@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1b80fe54fa17c0d7109f6a4ddb4ac5ada98ae2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931812"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657254"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在某些应用程序，你可能想要使用来自多个表或相关对每个其他父-子关系中的实体的数据。 例如，你可能想要显示一个网格，其中显示从客户`Customers`表。 当用户选择某个特定客户时，另一个网格将显示该客户的相关订单`Orders`表。  
   
  可以创建数据绑定控件显示相关的数据，通过将项从**数据源**到 WPF 设计器窗口。  

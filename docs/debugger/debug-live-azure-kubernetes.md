@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856685"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654706"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure Kubernetes 服务
 
@@ -35,9 +35,9 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="prerequisites"></a>系统必备
 
-* Azure Kubernetes 服务的 Snapshot Debugger 仅适用于具有 Azure 开发工作负载的 Visual Studio 2019 Enterprise 预览版或更高版本。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
+* 为 Azure Kubernetes 服务仅适用于 Visual Studio 2019 Enterprise 或更高版本与快照调试器**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
 
-    如果尚未安装，请安装 [Visual Studio 2019 Enterprise 预览版](https://visualstudio.microsoft.com/vs/preview/)。
+    如果尚未安装，安装[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
 * 快照集合适用于以下 Azure Kubernetes 服务 Web 应用：
   * 在 Debian 9 中的 .Net Core 2.2 或更高版本上运行的 ASP.NET Core 应用程序。

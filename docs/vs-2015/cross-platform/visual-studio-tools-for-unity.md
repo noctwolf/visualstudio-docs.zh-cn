@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: e91bfef287a16db45ada783a4e109781d247ecf2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775267"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657475"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在本节中，你将了解免费的 Visual Studio 扩展 Visual Studio Tools for Unity，它让 Visual Studio 成为使用 Unity 生成游戏的强大工具。  
   
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity  

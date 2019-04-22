@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354825"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659028"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：高开销 GetHashCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的最新文档，请参阅[DA0010： 高开销 GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) docs.microsoft.com 上。  
-
-  
+Visual Studio 的最新文档，请参阅[DA0010:高开销 GetHashCode](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode)。  
 
 |||  
 |-|-|  
@@ -40,7 +38,7 @@ Visual Studio 的最新文档，请参阅[DA0010： 高开销 GetHashCode](https
  对该类型的 GetHashCode 方法的调用在分析数据中占很大比例或此方法分配内存。  
   
 ## <a name="rule-description"></a>规则说明  
- 哈希是一项用于快速定位大型集合中的某个特定项的技术。 因为哈希表可能非常大，而且必须支持极高的访问速率，所以哈希表应非常有效。 此要求的含义是 .NET Framework 中的 GetHashCode 方法不应分配内存。 分配内存会增加垃圾回收器上的负载，并向潜在延迟公开该方法（如果因分配请求而必须运行垃圾回收）。  
+ 哈希是一项用于快速定位大型集合中的某个特定项的技术。 由于哈希表可以变得非常大，并且必须支持的访问率高，哈希表应非常有效。 此要求的含义是 .NET Framework 中的 GetHashCode 方法不应分配内存。 分配内存会增加垃圾回收器上的负载，并向潜在延迟公开该方法（如果因分配请求而需要运行垃圾回收）。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  降低方法的复杂性。

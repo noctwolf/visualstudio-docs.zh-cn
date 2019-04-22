@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c315ccb0bc7404ddbaa303430644b404a570e016
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798085"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654069"
 ---
 # <a name="set-radix-command"></a>“设置基数”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 设置或返回用来显示整数值的数值基数。  
   
 ## <a name="syntax"></a>语法  

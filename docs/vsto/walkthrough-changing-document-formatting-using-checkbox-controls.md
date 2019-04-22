@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e1a1561bef1ae99db2b6bf338b083c57d0c8d7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621508"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653887"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练：更改文档格式设置使用 CheckBox 控件
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改文本格式。
@@ -155,7 +155,6 @@ ms.locfileid: "56621508"
 -   使用按钮填充文本框。 有关详细信息，请参见[演练：在文本框中使用按钮在文档中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。
 
 -   使用单选按钮以选择图表样式。 有关详细信息，请参见[演练：更新使用单选按钮在文档结构图](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。
-
 
 ## <a name="see-also"></a>请参阅
 - [使用 Word 的演练](../vsto/walkthroughs-using-word.md)

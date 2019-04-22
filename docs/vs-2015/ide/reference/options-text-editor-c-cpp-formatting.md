@@ -16,17 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 767bb04bcfe14c8cafbe69e5cb19ecbd8082ee40
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2fb9de22ef325586bdaff4cb5603173cd3f9bba4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770634"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658573"
 ---
 # <a name="options-text-editor-cc-formatting"></a>选项，文本编辑器，C/C++，格式设置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 允许你在使用 C 或 C++ 编程时更改代码编辑器的默认行为。  
   
  若要访问此页，请在“选项”对话框的左窗格中，展开“文本编辑器”，再展开“C/C++”，然后单击“格式设置”。  

@@ -20,22 +20,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4d88841bae804cc68f7557cbed4413b8f754d4b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 497c8f2ff8defd0acdf943f4856f0195e50366ce
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796638"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656825"
 ---
 # <a name="uidmanager-task"></a>UidManager 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.UidManager> 任务将检查、更新或删除唯一标识符 (UID)，以对源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 文件中包含的所有 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 元素进行本地化。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明​​|  
+|参数|描述|  
 |---------------|-----------------|  
 |`IntermediateDirectory`|可选 **String** 参数。<br /><br /> 指定用于备份由 **MarkupFiles** 参数指定的源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 文件的目录。|  
 |`MarkupFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定要包含的源 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)]文件，以用于 UID 检查、更新或删除。|  
@@ -64,4 +63,4 @@ ms.locfileid: "54796638"
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
  [Building a WPF Application (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) （生成 WPF 应用程序 (WPF)）  
- [如何：对应用程序进行本地化](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [如何：本地化应用程序](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

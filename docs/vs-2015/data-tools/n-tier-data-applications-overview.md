@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937623"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658118"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。  
   
  典型的 n 层应用程序包括一个表示层、一个中间层和一个数据层。 单独的 n 层应用程序中的各个层的最简单方法是创建每个层都想要包括在应用程序中的离散项目。 例如，表示层可能是 Windows 窗体应用程序，而数据访问逻辑可以是位于中间层中的类库。 此外，表示层可能与数据访问逻辑在中间层通过服务之类的服务通信。 将应用程序组件分离到不同的层可提高应用程序的可维护性和可伸缩性。 有利于采用新技术，可应用于单个层而无需重新设计整个解决方案执行此操作。 此外，n 层应用程序通常将敏感信息存储在中间层中，以便与表示层隔离。  

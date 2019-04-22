@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78cdc8f95c5a48e8ce0491926b27f0521705e3bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780968"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655876"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在生成中使用环境变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在生成项目时，有时经常需要使用非项目文件或构成项目的文件中的信息来设置生成选项。 此信息通常存储在环境变量中。  
   
 ## <a name="referencing-environment-variables"></a>引用环境变量  
@@ -72,4 +71,4 @@ ms.locfileid: "54780968"
 
 [MSBuild 属性](../msbuild/msbuild-properties1.md)
 
-[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[如何：生成相同的源文件使用不同选项](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

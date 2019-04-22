@@ -18,17 +18,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778599"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658209"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。  
   
  若要访问“发布”  页面，请在“解决方案资源管理器” 中选择项目节点，再在“项目”  菜单上单击“属性” 。 当 **“项目设计器”** 出现时，单击 **“发布”** 选项卡。  
@@ -78,18 +77,18 @@ ms.locfileid: "54778599"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../../deployment/publishing-clickonce-applications.md)   
- [如何：使用发布向导发布 ClickOnce 应用程序](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [如何：发布 ClickOnce 应用程序使用发布向导](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：指定 Visual Studio 复制文件的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
- [如何：指定最终用户从中进行安装的位置](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
+ [如何：指定最终用户将从安装的位置](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
  [如何：指定技术支持链接](../../deployment/how-to-specify-a-link-for-technical-support.md)   
  [如何：指定 ClickOnce 脱机或联机安装模式](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
  [如何：为 CD 安装启用自动启动](../../deployment/how-to-enable-autostart-for-cd-installations.md)   
  [如何：设置 ClickOnce 发布版本](../../deployment/how-to-set-the-clickonce-publish-version.md)   
  [如何：自动递增 ClickOnce 发布版本](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
  [如何：指定通过 ClickOnce 发布的文件](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
- [如何：与 ClickOnce 应用程序一起安装必备组件](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [如何：与 ClickOnce 应用程序一起安装的必备组件](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [如何：管理 ClickOnce 应用程序的更新](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)   
- [如何：更改 ClickOnce 应用程序的发布语言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
- [如何：指定 ClickOnce 应用程序的“开始”菜单名称](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
+ [如何：更改 ClickOnce 应用程序发布语言](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
+ [如何：指定 ClickOnce 应用程序的开始菜单名称](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
  [如何：指定 ClickOnce 应用程序的发布页](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [ClickOnce 安全和部署](../../deployment/clickonce-security-and-deployment.md)

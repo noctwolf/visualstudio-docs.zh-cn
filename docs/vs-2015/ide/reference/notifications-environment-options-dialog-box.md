@@ -11,17 +11,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7b9d079f2f7c3e50733f5718bde63b42e27b34
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c34b3b4459616cf9a15ce7d5d5710513fad1f284
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767310"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656305"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“通知”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此选项用于停止忽略你以前选择通过通知对话框忽略的任何通知。 有关详细信息，请参阅[通知](../../ide/visual-studio-notifications.md)。  
   
 ## <a name="see-also"></a>请参阅  

@@ -11,17 +11,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbce3f0723a4f4729c844db92ffddb5c43430107
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792215"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655005"
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：  
   
 - 创建和操作的项目文件。  
@@ -237,12 +236,12 @@ $(PropertyName)
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
 ```  
   
- 表示“如果尚未定义配置属性，请定义该属性并为其指定‘调试’值”。  
+ 表示“如果尚未定义配置属性，请定义该属性并为其指定‘Debug’值”。  
   
  几乎所有 MSBuild 元素都可以具有条件属性。 有关使用条件属性的详细讨论，请参阅[条件](../msbuild/msbuild-conditions.md)。  
   
 ### <a name="reserved-properties"></a>保留属性  
- MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 MSBuildToolsPath 就是保留属性的一个示例。 与其他属性一样，可使用 $ 符号引用保留属性。 有关详细信息，请参阅[如何：引用项目文件的名称或位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)和 [MSBuild 保留属性和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
+ MSBuild 保留了一些属性名称，用于存储有关项目文件和 MSBuild 二进制文件的信息。 MSBuildToolsPath 就是保留属性的一个示例。 与其他属性一样，可使用 $ 符号引用保留属性。 有关详细信息，请参阅[如何：引用的名称或项目文件的位置](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)并[MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ### <a name="environment-variables"></a>环境变量  
  可使用与生成属性相同的方式引用项目文件中的环境变量。 例如，若要使用项目文件中的 PATH 环境变量，可使用 $(Path)。 如果项目包含与环境变量具有相同名称的属性定义，则项目中的属性将替代环境变量的值。 有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
@@ -307,7 +306,7 @@ $(PropertyName)
 </ItemGroup>  
 ```  
   
- 定义包含两个项的项组。 项类型编译有两个值：“Program.cs”和“Properties\AssemblyInfo.cs”。  
+ 定义包含两个项的项组。 项类型编译有两个值："Program.cs"和"Properties\AssemblyInfo.cs"。  
   
  以下代码通过在一个 Include 属性中声明两个文件（用分号分隔）来创建相同的项类型。  
   
@@ -403,7 +402,7 @@ $(PropertyName)
 <Photos Include="images\**.jpeg" />  
 ```  
   
- 将图片文件夹和其所有子文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型。 若要了解更多示例，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
+ 将图片文件夹和其所有子文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型。 有关更多示例，请参见[如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
   
  注意，项在声明时会被添加到项类型。 例如，应用于对象的  
   
@@ -424,7 +423,7 @@ $(PropertyName)
 <Compile Include="*.cs" Exclude="*Designer*">  
 ```  
   
- 将所有文件扩展名为“.cs”的文件添加到编译项类型，除了名称中包含字符串“Designer”的文件。 若要了解更多示例，请参阅[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。  
+ 将所有文件扩展名为“.cs”的文件添加到编译项类型，除了名称中包含字符串“Designer”的文件。 有关更多示例，请参见[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。  
   
  Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位于项元素中）。 例如，应用于对象的  
   
@@ -577,7 +576,7 @@ $(PropertyName)
    请注意，此语法中表示的元数据不会造成批处理。  
   
 ## <a name="whats-next"></a>接下来的内容  
- 要了解如何一步步创建简单项目文件，请尝试[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)中的步骤。  
+ 要了解如何一步步创建简单项目文件，请尝试[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
   
 ## <a name="see-also"></a>请参阅
 [MSBuild 概述](msbuild.md)  

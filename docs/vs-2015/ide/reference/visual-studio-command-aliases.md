@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763382"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654368"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 别名通过缩短执行命令所需的文本提供了在“查找/命令”框或“命令”窗口中输入命令的方法。 例如，可以使用预定义别名 `>of`，而不是输入 `>File.OpenFile` 来显示“打开文件”对话框。
 
@@ -72,7 +71,7 @@ ms.locfileid: "54763382"
 |[“启动”命令](../../ide/reference/start-command.md)|g|调试.启动|
 |[“转到”命令](../../ide/reference/go-to-command.md)|GotoLn|编辑.转到|
 |转到大括号|GotoBrace|编辑.转到大括号|
-|F1Help|帮助|帮助.F1 帮助|
+|F1Help|Help|帮助.F1 帮助|
 |即时模式|immed|Tools.ImmediateMode|
 |将文件作为文本插入|InsertFile|Edit.InsertFileAsText|
 |[“列出调用堆栈”命令](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|

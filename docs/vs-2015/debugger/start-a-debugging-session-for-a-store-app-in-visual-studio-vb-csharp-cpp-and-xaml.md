@@ -1,5 +1,5 @@
 ---
-title: 启动应用商店应用程序的调试会话 (VB、 C#，c + + 和 XAML) |Microsoft Docs
+title: 启动应用商店应用程序的调试会话 (VB、 C#，C++和 XAML) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f5dced1acba79b0559db49f079e04f605263e0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931724"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653471"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>为 Visual Studio 中的应用商店应用启动调试会话（VB、C#、C++ 和 XAML）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,7 +147,7 @@ ms.locfileid: "58931724"
 
   - 对于 C# 和 Visual Basic 应用程序，选择 **“查找”**。
 
-  - 对于 c + + 应用程序中，选择中的向下箭头**计算机名称**框，然后选择**\<定位...> >**。
+  - 有关C++应用中，选择中的向下箭头**计算机名称**框，然后选择**\<查找...>**。
 
     ![选择远程调试器连接对话框](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
@@ -256,13 +256,11 @@ ms.locfileid: "58931724"
 
 2. 请从列表中选择下列选项之一：
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **本地计算机**  |                                                                                                                在本地计算机上的当前会话中调试应用程序。 请参阅[在本地计算机上的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-the-local-machine.md)。                                                                                                                 |
    |   **模拟器**    | 在 Visual Studio 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用程序模拟器中调试应用程序。 模拟器是一个桌面窗口，在该窗口中可调试本地计算机上未提供的设备功能，如触摸手势和设备旋转。 请参阅[在模拟器中的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-in-the-simulator.md)。 |
    | **远程计算机** |                          在通过 Intranet 连接到本地计算机或使用以太网电缆直接连接到本地计算机的设备上调试应用程序。 若要进行远程调试，必须安装 Visual Studio 远程工具，并且远程设备上必须正在运行这些工具。 请参阅[在远程计算机上的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。                           |
-
 
 3. 从 **“安装的应用程序包”** 列表中选择应用程序。
 
