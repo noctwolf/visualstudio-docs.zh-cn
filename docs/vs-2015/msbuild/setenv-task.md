@@ -20,23 +20,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c5066709002c815e2cdad549d424af549eb0bca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 49d25d49554c587bcaaba8ef09bac967d4b5599a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784417"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660666"
 ---
 # <a name="setenv-task"></a>SetEnv 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 设置或删除指定环境变量的值。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 SetEnv 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |**名称**|必需的 **String** 参数。<br /><br /> 环境变量名。|  
 |OutputEnvironmentVariable|可选的 **String** 输出参数。<br /><br /> 包含分配给 Name 参数指定的环境变量的值。|  

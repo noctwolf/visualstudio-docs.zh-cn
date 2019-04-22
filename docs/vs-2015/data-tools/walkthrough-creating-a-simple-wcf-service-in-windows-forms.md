@@ -14,17 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933963"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661033"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>演练：在 Windows 窗体中创建简单的 WCF 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本演练演示如何创建一个简单[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]服务并进行测试，然后从 Windows 窗体应用程序访问它。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -46,7 +45,7 @@ ms.locfileid: "58933963"
   
      在中**解决方案资源管理器**、 双击 IService1.vb 或 IService1.cs 并找到以下行：  
   
-     [！ 代码-C# [WCFWalkthrough #4] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1 (2).cs #4)] [！ 代码 vb [WCFWalkthrough #4] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1 (2).vb #4)]  
+     [！ 代码-c# [WCFWalkthrough #4] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1 (2).cs #4)] [！ 代码 vb [WCFWalkthrough #4] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1 (2).vb #4)]  
   
      把`value`参数的类型更改为`String`：  
   
@@ -59,7 +58,7 @@ ms.locfileid: "58933963"
   
      在中**解决方案资源管理器**、 双击 Service1.vb 或 Service1.cs 并找到以下行：  
   
-     [！ 代码-C# [WCFWalkthrough #5] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1 (2).cs #5)] [！ 代码 vb [WCFWalkthrough #5] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1 (2).vb #5)]  
+     [！ 代码-c# [WCFWalkthrough #5] (../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/service1 (2).cs #5)] [！ 代码 vb [WCFWalkthrough #5] (../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/service1 (2).vb #5)]  
   
      更改值参数类型为`String`：  
   

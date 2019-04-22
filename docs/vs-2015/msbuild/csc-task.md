@@ -19,23 +19,22 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3cab96aece51252c5a847e07fc3863e6b6f0bf5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2d69d19e43ae2e94382e32ba6579f55cecb2efca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766184"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659478"
 ---
 # <a name="csc-task"></a>Csc 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 CSC.exe，生成可执行 (.exe) 文件、动态链接库（.dll文件）或者代码模块（.netmodule文件）。 有关 CSC.exe 的详细信息，请参阅 [C# 编译器选项](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `Csc` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|可选 `String[]` 参数。<br /><br /> 指定要在其中搜索引用的其他目录。 有关详细信息，请参阅 [/lib（C# 编译器选项）](http://msdn.microsoft.com/library/b0efcc88-e8aa-4df4-a00b-8bdef70b7673)。|  
 |`AddModules`|可选 `String` 参数。<br /><br /> 指定将构成程序集一部分的一个或多个模块。 有关详细信息，请参阅 [/addmodule（C# 编译器选项）](http://msdn.microsoft.com/library/ed604546-0dc2-4bd4-9a3e-610a8d973e58)。|  

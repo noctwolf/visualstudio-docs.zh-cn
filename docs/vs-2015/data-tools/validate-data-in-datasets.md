@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 73eb1162411800a951566c9eb14928875966cfb7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936220"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661316"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。  
   
  你可以确认正在写入到数据集的数据是通过构建到数据集本身的验证检查有效。 数据集可以检查的数据，无论执行更新时正在 — 不管是直接通过控件在表单中，在一个组件，或以其他方式。 因为数据集 （不同于数据库后端） 应用程序的一部分，它是生成特定于应用程序的验证逻辑位置。  

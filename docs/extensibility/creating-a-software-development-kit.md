@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MT
+ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324063"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661215"
 ---
 # <a name="create-a-software-development-kit"></a>创建软件开发工具包
 软件开发工具包 (SDK) 是一系列 Api，您可以参考作为 Visual Studio 中的单个项。 **引用管理器**对话框会列出与项目相关的所有 Sdk。 向项目添加 SDK，Api 时，Visual Studio 中提供。
@@ -49,7 +49,6 @@ ms.locfileid: "58324063"
                   \[config]
                         \[arch]
 ```
-
 
 | 节点 | 描述 |
 |------------------------| - |
@@ -168,7 +167,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 5. MinVSVersion:最小的 Visual Studio 版本。
 
-6. MaxPlatformVerson:最大目标平台版本应该用于指定在其扩展 SDK 不起作用的平台版本。 例如，Microsoft Visual c + + 运行时包 v11.0 应仅由 Windows 8 项目引用。 因此，Windows 8 项目 MaxPlatformVersion 是 8.0。 也就是说，引用管理器中筛选出 Microsoft Visual c + + 运行时包对于 Windows 8.1 项目，并且 MSBuild 将引发错误时[!INCLUDE[win81](../debugger/includes/win81_md.md)]项目引用它。 注意： 此元素是从开始支持[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]。
+6. MaxPlatformVerson:最大目标平台版本应该用于指定在其扩展 SDK 不起作用的平台版本。 例如，Microsoft 视觉对象C++运行时包 v11.0 应仅由 Windows 8 项目引用。 因此，Windows 8 项目 MaxPlatformVersion 是 8.0。 这意味着引用管理器中筛选出 Microsoft VisualC++对于 Windows 8.1 项目，运行时包和 MSBuild 将引发错误时[!INCLUDE[win81](../debugger/includes/win81_md.md)]项目引用它。 注意： 此元素是从开始支持[!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]。
 
 7. AppliesTo:指定可在引用管理器中通过指定适用的 Visual Studio 项目类型的 Sdk。 识别的九个值：WindowsAppContainer、 VisualC、 VB、 CSharp、 WindowsXAML、 管理，JavaScript 和本机。 可以使用 SDK 作者和 ("+)，或 ("&#124;")，而不 ("！")若要指定完全适用于 SDK 的项目类型的作用域的运算符。
 
@@ -264,6 +263,6 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     ```
 
 ## <a name="see-also"></a>请参阅
-- [演练：创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
+- [演练：使用 SDK 创建C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [演练：创建 SDK 使用C#或 Visual Basic](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)
 - [管理项目中的引用](../ide/managing-references-in-a-project.md)

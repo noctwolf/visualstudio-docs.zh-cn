@@ -20,17 +20,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f53af16bcab0e3ff631a7c264f139f94d92232
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6b6428681815f20951b090075e859959a4e3180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930580"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660856"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到数据库、 运行的查询或存储的过程，并返回新的数据的表或填充现有<xref:System.Data.DataTable>返回的数据。 Tableadapter 还可以从你的应用程序与数据库发送更新后的数据。  
   
  当您执行以下操作之一时，会为您创建 Tableadapter:  

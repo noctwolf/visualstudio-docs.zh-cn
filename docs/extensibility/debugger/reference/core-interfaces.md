@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f2d4fda2fe7981863d65b17fc6dba53355dbeb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702273"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660783"
 ---
 # <a name="core-interfaces"></a>核心接口
 以下接口是用于通过使用扩展调试器的核心接口[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。
@@ -138,7 +138,6 @@ ms.locfileid: "56702273"
 ##  <a name="Events"></a> 事件
  这些接口表示 DE 和会话调试管理器 (SDM) 之间发送的所有事件。
 
-
 | 接口 | 由实现 | 描述 |
 | - |----------------| - |
 | [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) | DE | 由 DE 发送，以请求要打开的文档。 |
@@ -211,7 +210,6 @@ ms.locfileid: "56702273"
 
 ##  <a name="Ports"></a> 端口
  这些接口表示的端口和端口提供程序。
-
 
 | 接口 | 由实现 | 描述 |
 | - |----------------| - |

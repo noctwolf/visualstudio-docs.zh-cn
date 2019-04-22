@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802669"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660289"
 ---
 # <a name="immediate-window"></a>即时窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 **即时**窗口用于调试和计算表达式、执行语句、输出变量值等。 借助即时窗口，用户可输入要在调试期间使用开发语言计算或执行的表达式。 若要显示**即时**窗口，请打开要编辑的项目，然后从“调试”菜单中选择“窗口”，再选择“即时”，或按 CTRL+ALT+I。  
   
  用户可使用此窗口发出单个 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 命令。 可用的命令包括 `EvaluateStatement`，该命令可用于为变量赋值。 **即时**窗口还支持 IntelliSense。  
@@ -75,7 +74,7 @@ ms.locfileid: "54802669"
   
     **即时**窗口将运行 `MyFunction` 并显示 `4`。  
   
-   如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参阅[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。  
+   如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参见[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。  
   
    不能在需要启动执行环境的项目类型（包括 [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 项目、Web 项目、智能设备项目和 SQL 项目）中使用设计时表达式计算。  
   

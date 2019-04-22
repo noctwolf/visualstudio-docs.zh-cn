@@ -11,17 +11,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91e2992a5c1a79f838e035b5993bf21dbfeca1bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660134"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>选项对话框、项目和解决方案、Web 项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 设置 Web 项目都将用于 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 内的开发的 Web 服务器。 若要访问此对话框，请单击“工具选项”。 展开“项目和解决方案”，然后单击“Web 项目”。  
   
  默认情况下，当在 Visual Studio 中运行 Web 项目时（例如，使用 F5 或 Ctrl+F5），Visual Studio 将使用 Visual Studio 开发服务器。 有关详细信息，请参阅 [Visual Studio 中用于 ASP.NET Web 项目的 Web 服务器](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328)。  

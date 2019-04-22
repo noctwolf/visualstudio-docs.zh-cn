@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000828"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659769"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822:将成员标记为 static
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的最新文档，请参阅[CA1822:将成员标记为静态](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static)docs.microsoft.com 上。  
+Visual Studio 的最新文档，请参阅[CA1822:将成员标记为静态](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static)。  
   
 |||  
 |-|-|  
 |TypeName|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |类别|Microsoft.Performance|  
-|是否重大更改|无间断-如果该成员不可见程序集外部的而不考虑更改进行。 否-如果只需将该成员更改为实例成员与`this`关键字。<br /><br /> 是-如果从实例成员的成员更改为静态成员，并且它是程序集外部可见。|  
+|是否重大更改|无间断-如果该成员不可见程序集外部的而不考虑更改进行。<br /><br /> 无间断-如果只需将该成员更改为实例成员与`this`关键字。<br /><br /> 是-如果从实例成员的成员更改为静态成员，并且它是程序集外部可见。|  
   
 ## <a name="cause"></a>原因  
  不访问实例数据成员未标记为静态 (共享中[!INCLUDE[vbprvb](../includes/vbprvb-md.md)])。  

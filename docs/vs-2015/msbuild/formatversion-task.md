@@ -14,17 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7fbd03676d69dde5f9a6d169739a25e7b5e1b82e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2ed16962a417f53569e7fd6e5364ac0a7f11d9a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755120"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659795"
 ---
 # <a name="formatversion-task"></a>FormatVersion 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将修订号追加到版本号。  
   
 -   案例 #1：输入：Version=\<undefined>; Revision=\<don't care>; 输出：OutputVersion ="1.0.0.0"  
@@ -36,7 +35,7 @@ ms.locfileid: "54755120"
 ## <a name="parameters"></a>参数  
  下表描述了 `FormatVersion` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`FormatType`|可选 `String` 参数。<br /><br /> 指定格式类型。<br /><br /> -“Version”= 版本。<br />-“Path”=将“.”替换为“_”；|  
 |`OutputVersion`|可选 `String` 输出参数。<br /><br /> 指定包含修订号的输出版本。|  

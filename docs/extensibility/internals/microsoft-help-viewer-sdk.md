@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868296"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660705"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -63,7 +63,7 @@ Visual Studio 品牌包支持的控件：
 
 -   javascript
 
--   C# 或 C#
+-   c# 或 c#
 
 -   cplusplus 或 visual c + + 或 c + +
 
@@ -352,14 +352,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 ::: moniker-end
 
-值：零售数据中显示调试输出：是的
+值：零售数据中显示调试输出：是
 
 在 IDE 中下的帮助菜单项，选择**调试帮助上下文**。
 
 **内容元数据**
 
 下表中出现的括号之间的任何字符串是一个占位符，必须替换为已识别的值。 例如，在\<元 name="Microsoft.Help.Locale"内容 ="[语言代码]"/ >，"[语言代码]"必须替换为一个值，例如"en-我们"。
-
 
 | 属性 （HTML 表示形式） | 描述 |
 | - | - |
