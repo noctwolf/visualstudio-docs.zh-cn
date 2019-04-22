@@ -14,17 +14,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 412dc2adaa168cce8d11e4181537a7ccf3908e8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756419"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648349"
 ---
 # <a name="services-page-project-designer"></a>“项目设计器”->“服务”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用客户端应用程序服务，可简便地从 Windows 窗体和 Windows Presentation Foundation (WPF) 应用程序访问 [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] 登录、角色和配置文件服务。 可以使用“项目设计器”的“服务”页为项目启用并配置客户端应用程序服务。  
   
  通过客户端应用程序服务，可以使用集中式服务器对用户进行验证，确定为每个用户分配的角色，并存储每个用户的应用程序设置，可以在网络上共享这些设置。 有关详细信息，请参阅[客户端应用程序服务](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e)。  
@@ -51,7 +50,7 @@ ms.locfileid: "54756419"
  指示验证提供程序将使用基于 Windows 的身份验证，即 Windows 操作系统提供的标识。  
   
  **使用 Forms 身份验证**  
- 指示验证提供程序将使用 Forms 身份验证。 这意味着应用程序必须提供用户界面以供登录。 有关详细信息，请参阅[如何：使用客户端应用程序服务来实现用户登录](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a)。  
+ 指示验证提供程序将使用 Forms 身份验证。 这意味着应用程序必须提供用户界面以供登录。 有关详细信息，请参阅[如何：使用客户端应用程序服务实现用户登录](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a)。  
   
  **身份验证服务位置**  
  仅用于 Forms 身份验证。 指定身份验证服务的位置。  

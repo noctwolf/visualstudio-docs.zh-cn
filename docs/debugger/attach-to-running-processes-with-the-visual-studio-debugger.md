@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366401"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
@@ -49,7 +49,7 @@ ms.locfileid: "59366401"
 
 若要调试远程计算机上的进程，请参阅[附加到远程计算机上的进程](#BKMK_Attach_to_a_process_on_a_remote_computer)。
 
-**若要将附加到本地计算机上的进程：**
+若要附加到本地计算机上的进程，请执行以下操作：
 
 1. 在 Visual Studio 中，选择“调试” > “附加到进程”（或按 Ctrl+Alt+P），打开“附加到进程”对话框。
 
@@ -168,15 +168,15 @@ ms.locfileid: "59366401"
 
 |方案|调试方法|进程名|说明和链接|
 |-|-|-|-|
-|远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|*w3wp.exe*|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|w3wp.exe|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 服务器上的远程调试 ASP.NET Core|使用远程工具和**附加到进程**|*dotnet.exe*|有关应用程序部署，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 有关调试，请参阅[远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
 |调试客户端脚本的本地 IIS 服务器上，为受支持的应用类型 |使用**附加到进程**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必须启用脚本调试。 对于 Chrome 中，也必须在调试模式下，选择运行 Chrome **Webkit 代码**中**附加到**字段。|
 |调试C#，Visual Basic 或C++在本地计算机上的应用|使用任一标准调试 (**F5**) 或**附加到进程**|*\<appname>.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
-|远程调试 Windows 桌面应用程序|远程工具|不可用| 请参阅[远程调试C#或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试C++应用程序](../debugger/remote-debugging-cpp.md)|
+|远程调试 Windows 桌面应用程序|远程工具|不适用| 请参阅[远程调试C#或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试C++应用程序](../debugger/remote-debugging-cpp.md)|
 |调试 ASP.NET 应用程序在本地计算机上，在启动不带调试器的应用后|使用**附加到进程**|*iiexpress.exe*|这可能会有所帮助使应用程序加载速度更快，如 （例如） 进行分析时。 |
 |调试服务器进程上的其他受支持的应用类型|如果远程服务器，使用远程工具和**附加到进程**|*chrome.exe*， *iexplore.exe*，或其他进程|如有必要，使用资源监视器来帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|
-|远程调试的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
-|调试未从 Visual Studio 启动的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
+|远程调试的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不适用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
+|调试未从 Visual Studio 启动的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不适用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
 
 ## <a name="use-debugger-features"></a>使用调试器的功能
 
@@ -197,7 +197,7 @@ ms.locfileid: "59366401"
 
  如果要了解有关调试器未能附加到某种代码类型的原因的更具体信息，请尝试重新附加到只为该代码类型。
 
- **若要获取有关某种代码类型未能附加的原因的特定信息：**
+ **获得有关代码类型未能附加的具体信息：**
 
 1.  从进程中分离。 上**调试**菜单中，选择**全部分离**。
 

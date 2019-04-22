@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932320"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651914"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以扩展的功能`TableAdapter`通过创建为分部类文件`TableAdapter`并向其中添加代码 (而不是将代码添加到*DatasetName*。DataSet.Designer 文件）。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或[分部 （类型）](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
   
  定义的代码`TableAdapter`每次更改生成`TableAdapter`。 此代码也会生成任何修改的配置的向导运行期间发生更改时`TableAdapter`。 若要防止你的代码在的重新生成过程中删除`TableAdapter`，将代码添加到分部类文件的`TableAdapter`。  

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: f5ef78f64ecea712083a25ab999f1554672d3381
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790350"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
@@ -72,7 +72,7 @@ ms.locfileid: "58790350"
 
 2.  打开启动项目的调试属性页。 在“解决方案资源管理器”中，选择项目。 在 **“调试”** 菜单中，选择 **“属性”**。
 
-     对于 c + + 项目，展开**配置属性**，然后选择**调试**。
+     有关C++项目中，展开**配置属性**，然后选择**调试**。
 
 3.  执行下列操作之一：
 
@@ -80,7 +80,7 @@ ms.locfileid: "58790350"
 
          ![C&#35;&#47;VB 调试启动应用程序属性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    -   对于 Visual c + + 项目，选择**否**从**启动应用程序**列表。
+    -   视觉对象C++项目中，选择**否**从**启动应用程序**列表。
 
          ![C&#43;&#43;&#47;VB 启动应用程序调试属性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 

@@ -8,17 +8,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793806"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652755"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>适用于 Xamarin 应用的应用程序生命周期管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 借助 Xamarin，你可以使用 C#、.NET 和 Visual Studio 生成面向 Android、iOS 和 Windows 的跨平台移动应用。 Xamarin 允许在平台间共享大部分代码，只有一小部分需要特定于平台。 有关 Xamarin 的详细信息，请参阅 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  
   
  开发适用于现代平台的应用涉及许多活动，并不仅仅只是编写代码。 这些活动被称为 DevOps（开发+操作），它们跨越应用的整个生命周期，包括计划和跟踪工作、设计和实现代码、管理源代码存储库、运行生成、管理持续集成和部署、测试（包括单元测试和 UI 测试）、在开发和生产环境中运行各种形式的诊断以及通过遥测和分析实时监控应用的性能和用户行为。  
@@ -43,7 +42,7 @@ ms.locfileid: "54793806"
 |报告和可视化进度|是||  
   
 ## <a name="modeling"></a>建模  
- 参考链接：**[体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)**  
+ 参考链接：**[分析体系结构和建模](../modeling/analyze-and-model-your-architecture.md)**  
   
  设计功能独立于编程语言，或与 C# 之类的.NET 语言配合使用。 有关与代码相关的方面，请参阅[体系结构关系图和建模图在软件开发中的角色](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools)。  
   
@@ -68,7 +67,7 @@ ms.locfileid: "54793806"
 |[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)|是|排除跨特定于平台的边界，在这些地方直到运行时才会对实现进行解析。|  
 |[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)|是||  
   
-## <a name="build"></a>生成  
+## <a name="build"></a>Build  
  参考链接：**[生成](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
@@ -99,11 +98,11 @@ ms.locfileid: "54793806"
 |[分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是||  
 |[使用代码克隆检测功能查找重复代码](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是||  
 |[测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是||  
-|[性能资源管理器](../profiling/performance-explorer.md)|No|改用通过 Xamarin Studio 使用 [Xamarin 探查器](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 请注意 Xamarin 探查器当前处于预览状态，并且尚不适用于 Windows 目标。|  
-|[分析 .NET Framework 内存问题](../misc/analyze-dotnet-framework-memory-issues.md)|No|Visual Studio 工具没有深入 Mono 框架进行探查的挂钩。|  
+|[性能资源管理器](../profiling/performance-explorer.md)|否|改用通过 Xamarin Studio 使用 [Xamarin 探查器](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) 。 请注意 Xamarin 探查器当前处于预览状态，并且尚不适用于 Windows 目标。|  
+|[分析 .NET Framework 内存问题](../misc/analyze-dotnet-framework-memory-issues.md)|否|Visual Studio 工具没有深入 Mono 框架进行探查的挂钩。|  
   
-## <a name="release-management"></a>版本管理  
- 参考链接：**[使用发布管理来自动进行部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+## <a name="release-management"></a>发布管理  
+ 参考链接：**[使用 Release Management 自动进行部署](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |功能|通过 Xamarin 提供支持|其他注释|  
 |-------------|----------------------------|-------------------------|  

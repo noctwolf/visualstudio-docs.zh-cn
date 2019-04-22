@@ -19,17 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b4ee6cba98e18379dc0e0e4fd81d8c10e37d7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932120"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648297"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 应用程序开发中最常用方案之一是在 Windows 应用程序窗体上显示数据、编辑数据并将更新后的数据发回数据库。 本演练创建可显示两个相关表的数据的窗体，并显示如何编辑记录和将更改保存回数据库。 此示例使用源自 Northwind 示例数据库的 `Customers` 和 `Orders` 表。  
   
  通过调用 TableAdapter 的 `Update` 方法，可以将应用程序中的数据保存回数据库。 当您将从表**数据源**自动添加到窗体，将数据保存所需的代码窗口。添加到窗体的任何其他表需要手动添加此代码。 本演练显示了如何添加从多个表保存更新的代码。  

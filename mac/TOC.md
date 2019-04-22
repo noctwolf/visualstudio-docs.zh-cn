@@ -14,7 +14,6 @@
 # [自定义 IDE](customizing-the-ide.md)
 ## [扩展 Visual Studio for Mac](extending-visual-studio-mac.md)
 
-
 # [项目和解决方案](projects-and-solutions.md)
 ## [创建新项目](create-new-projects.md)
 ## [添加和删除项目项](add-and-remove-project-items.md)

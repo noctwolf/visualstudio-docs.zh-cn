@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194504"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649259"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
   
  自定义希望在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中加载和生成的项目和 .targets 文件时，应当考虑 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 承载的特定方面，本主题对此进行了描述。 这些内容将帮助你确保 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中诸如 IntelliSense 和调试这样的功能对你的自定义项目有效。  

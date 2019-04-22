@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366843"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的伪变量
@@ -36,14 +36,14 @@ ms.locfileid: "59366843"
 
 |伪变量|函数|
 |--------------------|--------------|
-|`$err`|显示函数 SetLastError 设置的上一个错误值。 显示的值代表将由 GetLastError 函数返回的值。<br /><br /> 使用 `$err,hr` 查看此值的已解码形式。 例如，如果上一个错误是 3，`$err,hr`将显示 `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|显示函数 SetLastError 设置的上一个错误值。 显示的值代表将由 GetLastError 函数返回的值。<br /><br /> 使用 `$err,hr` 查看此值的已解码形式。 例如，如果上一个错误是 3，则 `$err,hr` 将显示 `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|显示应用程序中分配的句柄数。|
 |`$vframe`|显示当前堆栈帧的地址。|
 |`$tid`|显示当前线程的线程 ID。|
 |`$env`|在字符串查看器中显示环境块。|
 |`$cmdline`|显示已启动程序的命令行字符串。|
 |`$pid`|显示进程 ID。|
-|`$` *寄存器名*<br /><br /> 或<br /><br /> `@` *寄存器名*|显示寄存器“registerName”的内容。<br /><br /> 通常，只需输入寄存器名便可以显示寄存器的内容。 仅在寄存器名重载变量名时才需要使用此语法。 如果寄存器名与当前范围内的某个变量名同名，则调试器将该名称解释为变量名。 这时就需要使用 `$` registername 或 `@` registername 寄存器名。|
+|`$` *RegisterName*<br /><br /> 或<br /><br /> `@` *RegisterName*|显示寄存器“registerName”的内容。<br /><br /> 通常，只需输入寄存器名便可以显示寄存器的内容。 仅在寄存器名重载变量名时才需要使用此语法。 如果寄存器名与当前范围内的某个变量名同名，则调试器将该名称解释为变量名。 这时就需要使用 `$` registername 或 `@` registername 寄存器名。|
 |`$clk`|以时钟形式显示时间。|
 |`$user`|显示一个结构，在该结构中含有应用程序运行于的帐户的帐户信息。 出于安全原因，将不显示密码信息。|
 |`$exceptionstack`|显示当前 Windows 运行时异常的堆栈跟踪。 `$ exceptionstack` 只能在 UWP 应用中运行。 `$ exceptionstack` 不支持C++和 SEH 异常|

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790519"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504453"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -156,6 +156,6 @@ Visual Studio 包括一系列内置的 [.NET Compiler Platform 分析器](../cod
 
 ## <a name="see-also"></a>请参阅
 
-- [调试器功能简介](../debugger/debugger-feature-tour.md)
-- [了解更多使用调试器的信息](../debugger/debugger-feature-tour.md)
+- [初探调试器](../debugger/debugger-feature-tour.md)
+- [了解有关使用调试器的详细信息](../debugger/index.md)
 - [生成和修复代码](../ide/code-generation-in-visual-studio.md)

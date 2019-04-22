@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232491"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505:避免使用无法维护的代码
@@ -50,5 +50,5 @@ ms.locfileid: "59232491"
 
 ## <a name="see-also"></a>请参阅
 
-- [维护性警告](../code-quality/maintainability-warnings.md)
-- [度量值的复杂性和可维护性托管代码](../code-quality/code-metrics-values.md)
+- [可维护性警告](../code-quality/maintainability-warnings.md)
+- [测量托管代码的复杂性和可维护性](../code-quality/code-metrics-values.md)

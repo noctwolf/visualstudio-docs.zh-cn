@@ -14,17 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2be6c030cf8602f053472971a98508043b253e43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934356"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653081"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]托管在[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 应用程序，然后从 Windows 窗体应用程序访问它。  
   
  在此演练中，将：  

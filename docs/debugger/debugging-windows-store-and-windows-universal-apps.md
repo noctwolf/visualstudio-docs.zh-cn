@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 41fbfb4a19c4c730c046f4c44fc9d88fd9882c45
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 972f52583704b3116066114986948af643069a0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790259"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651106"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>调试 Visual Studio 中的通用 Windows 应用 (UWP)
 
@@ -29,7 +29,6 @@ Visual Studio 调试器为调试 UWP 应用提供完整支持。 请参阅以下
 |在本地计算机、 远程或已连接的设备或应用模拟器上运行 UWP 应用。|[启动 UWP 应用的调试会话](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |调试已部署的应用、 本地和远程。|[调试安装的应用包](../debugger/debug-installed-app-package.md)|
 |分析 UWP 应用上的 ContentPrefetcher 类的效果。|[UWP 应用的预提取内容](../debugger/prefetch-content-for-windows-store-apps.md)|
-
 
 ## <a name="see-also"></a>请参阅
 - [使用静态代码分析来分析代码质量](/visualstudio/code-quality/code-analysis-for-managed-code-overview)

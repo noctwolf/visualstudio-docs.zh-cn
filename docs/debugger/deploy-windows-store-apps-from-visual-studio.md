@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790376"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
@@ -28,7 +28,7 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
 - 如果目标是远程设备，Visual Studio 会将所需的文件复制到远程计算机并在该设备上注册应用。
 
-从 Visual Studio 调试你的应用时，部署是自动进行的，调试方法是使用**开始调试**选项（键盘：F5）或**启动但不调试**选项 （键盘： CTRL+F5）。 你也可以手动部署应用。 手动部署在以下情况中非常有用： 
+当使用调试您的应用程序从 Visual Studio 时，部署是自动**启动调试**选项 (键盘：F5) 或**启动但不调试**选项 (键盘：CTRL + F5）。 你也可以手动部署应用。 手动部署在以下情况中非常有用： 
 
 - 在本地或远程计算机上进行特别测试。 
 
@@ -76,7 +76,7 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
     **远程连接**对话框中显示本地网络子网上的设备，和通过以太网电缆直接连接到 Visual Studio 计算机的任何设备。
 
-   **在 Visual c + + 项目页中指定远程设备**
+   **在视觉对象中指定远程设备C++项目页**
 
    ![C&#43; &#43;项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -104,15 +104,15 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
 - 在C#和 Visual Basic 调试属性页上，清除**允许网络 Loopback**复选框。
 
-- 在 c + + 调试属性页中，将**允许网络 Loopback**值设置为**否**。
+- 在C++调试属性页，设置**允许网络 Loopback**值设为**否**。
 
-**不启动，但在启动时调试我的代码 (C#和 Visual Basic) / 启动应用程序 （c + +）**
+**不启动，但在启动时调试我的代码 (C#和 Visual Basic) / 启动应用程序 (C++)**
 
 将部署配置为在应用程序启动时，自动启动调试会话：
 
 - 在C#和 Visual Basic 调试属性页中，检查**不启动，但在启动时调试我的代码**复选框。
 
-- 在 c + + 调试属性页中，将**启动应用程序**值设置为**是**。
+- 在C++调试属性页，设置**启动应用程序**值设为**是**。
 
 ## <a name="see-also"></a>请参阅
 

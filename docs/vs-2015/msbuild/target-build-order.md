@@ -11,17 +11,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc12ba16a52546b26a7941734caa8c6fca8419b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764856"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651077"
 ---
 # <a name="target-build-order"></a>目标生成顺序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
   
 - `InitialTargets`。 `Project` 属性指定将首先运行的目标，即使在命令行或 `DefaultTargets` 属性中指定了目标。  

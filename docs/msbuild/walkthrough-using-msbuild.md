@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2248c5e8c974d4445db37e265725bcee60d3a9a4
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897733"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584397"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 
@@ -416,7 +416,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
  将“图片”文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型，而
 
 ```xml
-<Photos Include="images\**.jpeg" />
+<Photos Include="images\**\*.jpeg" />
 ```
 
  将“图片”文件夹和其所有子文件夹中所有文件扩展名为“.jpeg”的文件添加到照片项类型。 有关更多示例，请参见[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。

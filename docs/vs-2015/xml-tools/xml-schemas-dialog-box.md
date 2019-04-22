@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: da0c73655c5c08da993fdf72bffdfeca0eb4b304
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932900"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647441"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 架构对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 **XML 架构**对话框用于选择要与 XML 文档关联的 XML 架构定义语言 (XSD) 架构。 您可以从架构缓存中选择架构，也可以指定不在缓存中的架构。 选定的架构被视为架构集的一部分。 架构集用于 IntelliSense 和 XML 文档验证。  
   
  您可以访问**XML 架构**通过单击对话框中**架构**按钮，在文档属性窗口中，或选择**架构**从**XML**菜单。  

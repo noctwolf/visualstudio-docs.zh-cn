@@ -23,17 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dbfb1b0636418971b2dffb6ff67ca2de5e211d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932402"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651120"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 当将某项从**数据源**到设计图面来创建数据绑定控件的窗口，可以选择你创建的控件的类型。 在窗口中的每个项具有下拉列表，其中显示您可以从选择的控件。 通过项的数据类型确定的每个项与相关联的控件的集合。 如果你想要创建该控件不会出现在列表中，可以按照本主题中的说明将控件添加到列表。  
   
  有关选择数据绑定控件中项创建的详细信息**数据源**窗口中，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  

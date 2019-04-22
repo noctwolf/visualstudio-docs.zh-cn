@@ -19,23 +19,22 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e302480ea199835d52266d7b6f666a43ad529900
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 139d52963cfbb332fa084840c665efd3aeb8e88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766081"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648403"
 ---
 # <a name="makedir-task"></a>MakeDir 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 创建目录，并在必要时创建任何父目录。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `MakeDir` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Directories`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 要创建的目录集。|  
 |`DirectoriesCreated`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 由此任务创建的目录。 如果无法创建某些目录，则其中可能不包含已传递到 `Directories` 参数的所有项。|  

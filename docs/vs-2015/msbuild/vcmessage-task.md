@@ -20,17 +20,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1011ccfe1609376dc496dc6eb8e7f50795fab5c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784494"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652366"
 ---
 # <a name="vcmessage-task"></a>VCMessage 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 记录生成期间的警告消息和错误消息。  
   
 ## <a name="remarks"></a>备注  
@@ -39,7 +38,7 @@ ms.locfileid: "54784494"
 ## <a name="parameters"></a>参数  
  下表描述了 VCMessage 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |**参数**|可选 **String** 参数。<br /><br /> 要显示的消息列表（以分号分隔）。|  
 |**代码**|必需的 **String** 参数。<br /><br /> 限定消息的错误号。|  

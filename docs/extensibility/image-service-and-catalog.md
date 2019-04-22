@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857848"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
@@ -89,7 +89,7 @@ ms.locfileid: "58857848"
 </ImageManifest>
 ```
 
- **Symbols**
+ **符号**
 
  可读性和维护的帮助，因为图像清单可以使用属性值的符号。 此类定义了符号：
 
@@ -122,7 +122,7 @@ ms.locfileid: "58857848"
 
 |||
 |-|-|
-|**符号**|**描述**|
+|**符号**|**说明**|
 |CommonProgramFiles|%Commonprogramfiles%环境变量的值|
 |LocalAppData|%Localappdata%环境变量的值|
 |ManifestFolder|包含清单的文件的文件夹|
@@ -131,7 +131,7 @@ ms.locfileid: "58857848"
 |系统|*Windows\System32*文件夹|
 |WinDir|%Windir%环境变量的值|
 
- **图像**
+ **Image**
 
  \<图像 > 元素定义可由一个名字对象引用的图像。 GUID 和 ID 合起来构成图像名字对象。 跨整个图像库的图像名字对象必须是唯一的。 如果多个映像具有给定名字对象，生成库时遇到的第一个是保留的。
 
@@ -174,7 +174,7 @@ ms.locfileid: "58857848"
 ||||
 |-|-|-|
 |**元素**|**属性 （全部所需）**|**定义**|
-|\<Size>|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|
+|\<Size>|“值”|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|
 |\<SizeRange>|MinSize, MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|
 |\<DimensionRange>|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|
@@ -732,7 +732,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**
 
- 代码工具清单获取映像清单文件，并生成包装器文件引用 （c + +、 C# 或 VB） 的代码中的清单值或 *.vsct*文件。
+ 代码工具清单获取映像清单文件，并生成用于引用在代码中的清单值的包装器文件 (C++， C#，或 VB) 或 *.vsct*文件。
 
  **ImageLibraryViewer**
 

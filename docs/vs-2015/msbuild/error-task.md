@@ -19,23 +19,22 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71c257dae17f6846e3e6a4490178b49f28c6dad3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b220d12b872a81cba5f46bd14fdebafaa58cf4a1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767466"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652873"
 ---
 # <a name="error-task"></a>Error 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 基于评估的条件语句，停止生成操作并记录错误。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `Error` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Code`|可选 `String` 参数。<br /><br /> 与错误关联的错误代码。|  
 |`File`|可选 `String` 参数。<br /><br /> 包含错误的文件的名称。 如果未提供任何文件名称，将使用包含 Error 任务的文件。|  

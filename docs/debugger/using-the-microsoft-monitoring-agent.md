@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232575"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (C#，Visual Basic)
@@ -26,7 +26,7 @@ ms.locfileid: "59232575"
 
  开始前，请检查版本及已部署代码的源和符号是否相匹配。 开始调试并浏览 IntelliTrace 日志中的诊断事件时，这可助你直接转向相应的应用程序代码。 [设置版本](../debugger/diagnose-problems-after-deployment.md) 以便 Visual Studio 可自动查找并打开匹配已部署代码的源。
 
-1.  [步骤 1：设置 Microsoft 监视代理](#SetUpMonitoring)
+1.  [步骤 1：设置 Microsoft Monitoring Agent](#SetUpMonitoring)
 
 2.  [步骤 2：开始监视应用](#MonitorEvents)
 
@@ -72,7 +72,7 @@ ms.locfileid: "59232575"
 
 2.  从默认安装位置导入 Microsoft 监视代理 PowerShell 模块：
 
-     **PS c: > 导入模块"C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
+     **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
 3.  [请访问 TechNet](http://technet.microsoft.com/systemcenter/default) 以获取最新的帮助内容。
 
@@ -135,10 +135,10 @@ ms.locfileid: "59232575"
     |||
     |-|-|
     |*"\<appName>"*|指定 IIS 中的网站路径及 Web 应用名。 如果愿意，你也可以加入 IIS 路径。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 或<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> 你可在 IIS 管理器中找到此路径。 例如：<br /><br /> ![IIS 网站和 web 应用的路径](../debugger/media/ffr_iismanager.png "FFR_IISManager")<br /><br /> 你还可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|
-    |*\<monitoringMode>*|指定监视模式：<br /><br /> <ul><li>**监视**：记录异常事件及性能事件相关的全部细节（包含最小的细节）。 该模式使用默认的收集计划。</li><li>**跟踪**：通过使用指定的收集计划来记录函数级细节或监视 SharePoint 2010 和 SharePoint 2013 应用程序。 该模式可能导致应用的运行速度更慢。<br /><br /> <ul><li>[问：如何设置访问应用程序池的权限？](#FullPermissionsITLog)</li><li>[问：如何在应用速度不减的前提下获取最多的数据？](#Minimizing)</li></ul><br />     该示例记录一个托管在 SharePoint 站点上的 SharePoint 应用的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp"跟踪"C:\Program Files\Microsoft 监视 Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""C:\IntelliTraceLogs"**</li><li>**自定义**：通过使用指定的自定义收集计划来记录自定义细节。 如果在开始监视后修改收集计划，则必须重启监视。</li></ul>|
+    |*\<monitoringMode>*|指定监视模式：<br /><br /> <ul><li>**监视**：记录异常事件及性能事件相关的全部细节（包含最小的细节）。 该模式使用默认的收集计划。</li><li>**跟踪**：通过使用指定的收集计划来记录函数级细节或监视 SharePoint 2010 和 SharePoint 2013 应用程序。 该模式可能导致应用的运行速度更慢。<br /><br /> <ul><li>[问：如何设置访问应用程序池的权限？](#FullPermissionsITLog)</li><li>[问：如何在应用速度不减的前提下获取最多数据？](#Minimizing)</li></ul><br />     该示例记录一个托管在 SharePoint 站点上的 SharePoint 应用的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp"跟踪"C:\Program Files\Microsoft 监视 Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""C:\IntelliTraceLogs"**</li><li>**自定义**：通过使用指定的自定义收集计划来记录自定义细节。 如果在开始监视后修改收集计划，则必须重启监视。</li></ul>|
     |*"\<outputPath>"*|指定存储 IntelliTrace 日志的目录完整路径。 确保在开始监视前已创建此目录。|
     |*\<UInt32>*|指定 IntelliTrace 日志的上限大小。 IntelliTrace 日志的默认上限大小为 250 MB。<br /><br /> 日志达到此上限时，代理会覆盖最早的项以便为更多的项让出空间。 要更改此上限，可在收集计划中使用 **-MaximumFileSizeInMegabytes** 选项或修改 `MaximumLogFileSize` 属性。|
-    |*"\<collectionPlanPathAndFileName>"*|指定收集计划的完整路径或相对路径及文件名。 该计划是一个配置代理设置的 .xml 文件。<br /><br /> 这些计划包含在代理中并与 Web 应用和 SharePoint 应用程序兼容：<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     仅收集事件，包括异常、性能事件、数据库调用及 Web 服务器请求。<br />-   **collection_plan.ASP.NET.trace.xml**<br />     收集默认收集计划中的函数集调用及所有数据。 该计划非常适合进行详细分析，但可能使你的应用速度变慢。<br /><br /> 可在代理的子文件夹中找到这些计划的本地版本。 为避免应用速度变慢，你也可以 [自定义这些计划或创建自己的计划](http://go.microsoft.com/fwlink/?LinkId=227871) 。 将所有自定义计划放在代理所处的同一安全位置。<br /><br /> [问：如何在应用速度不减的前提下获取最多的数据？](#Minimizing)|
+    |*"\<collectionPlanPathAndFileName>"*|指定收集计划的完整路径或相对路径及文件名。 该计划是一个配置代理设置的 .xml 文件。<br /><br /> 这些计划包含在代理中并与 Web 应用和 SharePoint 应用程序兼容：<br /><br /> -   **collection_plan.ASP.NET.default.xml**<br />     仅收集事件，包括异常、性能事件、数据库调用及 Web 服务器请求。<br />-   **collection_plan.ASP.NET.trace.xml**<br />     收集默认收集计划中的函数集调用及所有数据。 该计划非常适合进行详细分析，但可能使你的应用速度变慢。<br /><br /> 可在代理的子文件夹中找到这些计划的本地版本。 为避免应用速度变慢，你也可以 [自定义这些计划或创建自己的计划](http://go.microsoft.com/fwlink/?LinkId=227871) 。 将所有自定义计划放在代理所处的同一安全位置。<br /><br /> [问：如何在应用速度不减的前提下获取最多数据？](#Minimizing)|
 
      要了解完整语法及其他示例的更多信息，请运行 get-help Start-WebApplicationMonitoring -detailed 命令或 get-help Start-WebApplicationMonitoring -examples 命令。
 

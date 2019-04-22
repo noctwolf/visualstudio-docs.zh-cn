@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cbffb56d437eebffcaa59a146ede2a8b5f94273
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683672"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649987"
 ---
 # <a name="graphics-event-list"></a>图形事件列表
 使用 Visual Studio 图形分析器中的图形事件列表来浏览在呈现游戏或应用的帧时所记录的 Direct3D 事件。
@@ -105,8 +105,7 @@ Visual Studio 2017 和更高版本包含**资源历史记录**窗口。  选择�
 
 此窗口允许您在事件列表中查看所选的项的历史记录。  在顶部的下拉列表可用于选择要查看的历史记录的其他项。  包含窗口的上半**帧设置事件**。  这些是事件属于*创建*类型类别，并且通常初始化和创建资源的调用。  在窗口的下半部分包含的底部**帧事件**部分。  这些是正常读取和写入资源的使用过程中发生的事件。
 
-
-| 列 | 说明 |
+| 列 | 描述 |
 |-----------| - |
 | **Type** | 通常显示的项的类型*创建*，*读取*并*编写*。 |
 | **视图** | 显示在该时刻的资源的缩略图。  双击该缩略图，以在该时间打开该资源的详细信息视图。 |

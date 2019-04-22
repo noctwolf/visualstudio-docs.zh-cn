@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767987"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651612"
 ---
 # <a name="options-page-text-editor-node-properties"></a>“选项”页 ->“文本编辑器”节点属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 本文档描述了与“选项”对话框的“文本编辑器”类别 `DTE.Properties("TextEditor", <Property Page>)` 关联的一些页面（或属性集合）。 每个小节的标题都是用于访问 `Properties` 集合的调用，而每个小节中的表都列出了集合中的属性。  
   
  [控制选项设置](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 宏演示了如何为“选项”对话框的每个页面显示当前选项和值。  
@@ -30,7 +29,7 @@ ms.locfileid: "54767987"
 ## <a name="general"></a>常规  
  `DTE.Properties("TextEditor", "General")`  
   
-|属性项名称|值|说明​​|  
+|属性项名称|值|说明|  
 |------------------------|-----------|-----------------|  
 |GoToAnchorAfterEscape|Get/Set (Boolean)|如果为 `True`，当有选定内容时按 Escape 会导致插入点移动到在初始化创建选定内容的操作之前的位置。 如果为 `False`，则将插入点移动到选定内容的另一端。|  
 |DragNDropTextEditing|Get/Set (Boolean)|确定是否可以将文本的选定区域从文档中的一个位置拖动到其他位置，以执行复制或剪切/粘贴操作。|  
@@ -49,7 +48,7 @@ ms.locfileid: "54767987"
   
  编辑文本文件时，`PlainText` 编辑器选项会影响编辑器设置。 每种编程语言和每个 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 程序包都有其自身特定的**文本编辑器**设置。 例如，若要查看或更改 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 编辑器设置，请使用 `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`。 对于“SQL 脚本”编辑器设置，请使用 `DTE.Properties("TextEditor", "SQL ")`。  
   
-|属性项名称|“值”|说明​​|  
+|属性项名称|值|说明|  
 |------------------------|-----------|-----------------|  
 |AutoListMembers|Get/Set (Boolean)|确定用户在变量引用后面键入句点时是否自动显示可用成员列表。|  
 |AutoListParams|Get/Set (Boolean)|确定用户在函数名后面键入“(”时是否自动显示参数列表的说明。|  

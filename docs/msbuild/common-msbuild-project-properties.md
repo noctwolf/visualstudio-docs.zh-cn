@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610601"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584553"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。
@@ -54,7 +54,7 @@ ms.locfileid: "56610601"
 | CscToolPath | [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 编译器 csc.exe 的路径。 |
 | CustomBeforeMicrosoftCommonTargets | 要在公用目标导入前自动导入的项目文件或目标文件的名称。 |
 | DebugSymbols | 一个布尔值，指示是否由生成来生成符号。<br /><br /> 在命令行中设置 -p:DebugSymbols=false 会禁止生成程序数据库 (.pdb) 符号文件。 |
-| DebugType | 定义要生成的调试信息的级别。 有效值为“full”、“pdbonly”和“none”。 |
+| DebugType | 定义要生成的调试信息的级别。 有效值为“full”、“pdbonly”、“portable”、“embedded”和“none”。 |
 | DefineConstants | 定义条件编译器常数。 符号/值对是使用下面的语法指定的，并且彼此之间用分号分隔：<br /><br /> symbol1 = value1 ; symbol2 = value2<br /><br /> 该属性等效于 `/define` 编译器开关。 |
 | DefineDebug | 一个布尔值，指示是否定义 DEBUG 常量。 |
 | DefineTrace | 一个布尔值，指示是否定义 TRACE 常量。 |

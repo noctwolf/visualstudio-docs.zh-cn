@@ -14,27 +14,28 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: cd61d03b5639038612e305697f4245e582ee3efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3fe0233f08f33535be4b02cc06c29d919d75169
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794034"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651158"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[使用命令行参数安装 Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/use-command-line-parameters-to-install-visual-studio)。
+Visual Studio 的最新文档，请参阅[使用命令行参数安装 Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)。
 
 在命令提示符下安装 Visual Studio 2015 时，可以使用以下命令行参数（也称为开关）。
 
 > [!NOTE]
->  请确保使用实际的安装程序而不是引导程序文件。 例如，请确保你使用**`vs_enterprise.exe`** 而不是 vs_enterprise_*GUID*.exe。 您可以下载的安装程序从[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)。
+> 请确保使用实际的安装程序而不是引导程序文件。 例如，请确保你使用**`vs_enterprise.exe`** 而不是 vs_enterprise_*GUID*.exe。 您可以下载的安装程序从[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)。
 
 ## <a name="list-of-command-line-parameters"></a>命令行参数列表
- Visual Studio 命令行参数不区分大小写。
 
-|参数|说明​​|
+Visual Studio 命令行参数不区分大小写。
+
+|参数|描述|
 |---------------|-----------------|
 |**/?**<br /><br /> **/help**<br /><br /> **/h**|显示命令行参数。|
 |/AddRemoveFeatures|指定要在安装的产品中添加或移除的功能。|
@@ -58,8 +59,9 @@ Visual Studio 2017 的最新文档，请参阅[使用命令行参数安装 Visua
 |**/qb**<br /><br /> **/passive**|显示进度，但不等待用户输入。|
 |**/repair**|修复 Visual Studio。|
 |**/SuppressRefreshPrompt**|禁止在安装向导中显示更新可用对话框，因此安装向导将自动接受任意必需或推荐更新版本。|
-|/u<br /><br /> **/Uninstall**|卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|**/Uninstall /Force**<br /><br /> /u /force|卸载 Visual Studio 以及与其他产品共享的所有功能。 **警告：** 使用此参数，如果同一台计算机安装其他产品可能会停止正常运行。|
+|**/u**<br /><br /> **/Uninstall**|卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
+|**/Uninstall /Force**<br /><br /> /u /force|卸载 Visual Studio 以及与其他产品共享的所有功能。 **警告：** 如果使用此参数，则在同一台计算机上安装的其他产品可能会停止正常工作。|
 
 ## <a name="see-also"></a>请参阅
- [Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)
+
+- [Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)

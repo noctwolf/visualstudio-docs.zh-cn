@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5592a488788c61af7ad6875de239fca62746857c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b20120ae4fc5de23c4457002b57ca186e8fe400
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930575"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651183"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows 窗体应用程序中对数据进行筛选和排序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 设置筛选数据<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为一个字符串表达式，返回所需的记录。  
   
  对数据进行排序通过设置<xref:System.Windows.Forms.BindingSource.Sort%2A>想要按其排序的列名称的属性; 追加`DESC`按降序排序，还是追加`ASC`以按升序排序。  

@@ -19,17 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 327f65ef6639f444326d59d6db990e9c732a760f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790277"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648795"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 存储项和属性中的任务输出值。  
   
  \<Project>  
@@ -50,7 +49,7 @@ ms.locfileid: "54790277"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|说明|  
 |---------------|-----------------|  
 |`TaskParameter`|必需的特性。<br /><br /> 任务输出参数的名称。|  
 |`PropertyName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的属性。 然后，项目可引用具有 `$(`PropertyName`)` 语法的属性。 此属性名称可以是新属性名称，也可以是项目中已定义的名称。<br /><br /> 在已使用 `ItemName` 的情况下，不能使用该特性。|  
@@ -62,7 +61,7 @@ ms.locfileid: "54790277"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|创建并执行的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务的实例。|  
   

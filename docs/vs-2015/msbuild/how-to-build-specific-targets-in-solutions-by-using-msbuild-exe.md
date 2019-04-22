@@ -13,17 +13,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85c8f3dcb9364c2837cd4d10f163de3795821ce7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: d07c0e11d47e20f43f4d4173de4bcc3c24b864b1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194225"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652716"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 生成解决方案中的特定目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 你可以使用 MSBuild 在解决方案中生成特定项目的特定目标。  
   
 ### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在解决方案中生成特定项目的特定目标  

@@ -9,17 +9,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44ca85ad785c0a2ef634a989ca5289ab368f0316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796606"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650728"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标 Framework 和目标平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可以生成要在目标框架（.NET Framework 的一个特定版本）和目标平台（一种特定的软件体系结构）上运行的项目。  例如，可以将一个应用程序的目标设定为在与 802 x86 处理器系列 ("x86") 兼容的 32 位平台上的 .NET Framework 2.0 上运行。 目标框架与目标平台的组合称为“目标上下文”。  
   
 ## <a name="target-framework-and-profile"></a>目标框架和配置文件  

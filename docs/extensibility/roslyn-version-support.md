@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9fa8837a45939da3dcda16864b3cad697e659da
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232517"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>.NET 编译器平台包版本参考
@@ -42,5 +42,5 @@ ms.locfileid: "59232517"
 
 ## <a name="see-also"></a>请参阅
 
-- [.NET 编译器平台 SDK](/dotnet/csharp/roslyn-sdk/)
+- [.NET Compiler Platform SDK](/dotnet/csharp/roslyn-sdk/)
 - [开始使用 Roslyn 分析器](getting-started-with-roslyn-analyzers.md)

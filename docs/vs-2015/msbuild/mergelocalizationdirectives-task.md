@@ -19,22 +19,21 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f9b269bd68bf40358645b6bd6fd88b701da385b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791479"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652462"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> 任务可将本地化属性和一个或多个 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 二进制格式文件的注释合并到整个程序集的单一文件中。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`GeneratedLocalizationFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定单个 [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 二进制格式文件的本地化指令文件列表。|  
 |`OutputFile`|必需的 **String** 输出参数。<br /><br /> 指定编译的本地化指令程序集的输出路径。|  

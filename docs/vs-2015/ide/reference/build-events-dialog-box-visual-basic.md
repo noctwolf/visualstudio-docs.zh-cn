@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53f0317301a0f0a87876e664f3ea77fb73261b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f9c68a5d7f59726eecebe5affad16465a03aeda2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652782"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>“生成事件”对话框 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“生成事件”对话框可以指定生成配置说明。 还可以指定运行任何预生成或生成后事件所依据的条件。 有关详细信息，请参阅[如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。  
   
  预生成事件命令行  

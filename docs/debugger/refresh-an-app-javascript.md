@@ -20,10 +20,10 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790285"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>刷新在 Visual Studio 中的 UWP 应用
@@ -57,7 +57,7 @@ ms.locfileid: "58790285"
 
 5.  在 UWP 应用的主页中，编辑一些 HTML。
 
-7.  单击**刷新 Windows 应用**按钮，如下：![刷新 Windows 应用程序按钮](../debugger/media/js_refresh.png "JS_Refresh")。 （或按 F4。）
+7.  单击**刷新 Windows 应用**按钮，如下：![刷新 Windows 应用按钮](../debugger/media/js_refresh.png "JS_Refresh")。 （或按 F4。）
 
 8.  切换到该应用程序。 重新加载应用程序和更新后的 HTML 用于呈现应用程序。
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628710"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651955"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>如何：确定库中的符号
 符号浏览工具显示符号的分层的视图。 符号代表命名空间、 对象、 类、 类成员和其他语言元素。
@@ -49,7 +49,6 @@ N1
  C2 类，在此示例中的规范路径是 N1 + C2。 C2 的演示文稿路径包括 C1 和"基类和接口"节点：N1 + C1 +"基和接口"+ C2。
 
  若要获取表示窗体信息的对象管理器调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。
-
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>若要获取规范和演示文稿窗体的信息
 

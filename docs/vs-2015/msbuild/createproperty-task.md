@@ -19,23 +19,22 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2440d6af45f08a3b53cf531a357cc807d4b22fc7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54804448"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649753"
 ---
 # <a name="createproperty-task"></a>CreateProperty 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用传入的值填充属性。 通过该操作可以将值从一个属性或字符串复制到另一个属性或字符串。  
   
 ## <a name="attributes"></a>特性  
  下表描述了 `CreateProperty` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Value`|可选 `String` 输出参数。<br /><br /> 指定要复制到新属性的值。|  
 |`ValueSetByTask`|可选 `String` 输出参数。<br /><br /> 包含与 `Value` 参数相同的值。 在由于输出是最新的而跳过封闭目标的情况下，仅当需要避免由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 设置输出属性时，使用此参数。|  

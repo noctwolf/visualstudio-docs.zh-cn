@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504141"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
@@ -47,7 +47,7 @@ ms.locfileid: "59504141"
 [混合模式调试](../debugger/debugging-mixed-mode-applications.md)\
 讨论调试混合模式的应用程序。 这表示合并本机代码和托管代码的任何应用程序。
 
-[错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[错误：由于在系统上启用了内核调试器，因此，不可能调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 描述当尝试在以调试模式启动的 [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)]、[!INCLUDE[winxp](../code-quality/includes/winxp_md.md)]、[!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] 或 Windows NT 系统上调试托管代码时出现的错误消息。
 
 [JIT 优化和调试](../debugger/jit-optimization-and-debugging.md)\

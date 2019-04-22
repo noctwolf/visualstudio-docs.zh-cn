@@ -15,15 +15,15 @@ monikerRange: vs-2017
 ms.workload:
 - uwp
 ms.openlocfilehash: d55023b97397fa7d1b134c246c25b0d0b37a4d18
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790103"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>调试 UWP 应用中的 WebView 控件
 
- 若要检查并调试 Windows 运行时应用中的 `WebView` 控件，可以配置 Visual Studio，使其在你启动应用时附加脚本调试器。 使用两种方法与之交互`WebView`控制是否使用调试器：
+ 若要检查并调试 Windows 运行时应用中的 `WebView` 控件，可以配置 Visual Studio，使其在你启动应用时附加脚本调试器。 使用调试器与 `WebView` 控件交互的方式有两种：
 
 -   打开 `WebView` 实例的 [DOM 资源管理器](../debugger/quickstart-debug-html-and-css.md)，然后检查 DOM 元素、调查 CSS 样式问题并测试动态呈现的样式的更改。
 
@@ -81,7 +81,7 @@ ms.locfileid: "58790103"
     > [!NOTE]
     >  通过使用控制台，可以与单个 `WebView`、`iFrame` 交互，每次还可以共享协定或 Web Worker。 每个元素都需要单独的 Web 平台主机 (WWAHost.exe) 的实例。 一次可与一个主机交互。
 
-6.  查看和修改应用程序中的变量或使用控制台命令，如中所述[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[JavaScript 控制台命令](../debugger/javascript-console-commands.md)。
+6.  查看和修改应用程序中的变量或使用控制台命令，如中所述[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[JavaScript 控制台命令](../debugger/javascript-console-commands.md)。
 
 ## <a name="see-also"></a>请参阅
 

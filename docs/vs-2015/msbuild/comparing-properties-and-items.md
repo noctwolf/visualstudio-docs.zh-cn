@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758442"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649116"
 ---
 # <a name="comparing-properties-and-items"></a>比较属性和项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存储可在整个项目文件中引用的值。  
   
 -   属性是名称/值对。 有关详细信息，请参阅 [MSBuild 属性](msbuild-properties1.md)。  

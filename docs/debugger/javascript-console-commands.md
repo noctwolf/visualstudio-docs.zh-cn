@@ -14,10 +14,10 @@ ms.workload:
 - uwp
 - cordova
 ms.openlocfilehash: 40e32250378d92ac63e4a057a59ee847de6af810
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790766"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
@@ -26,7 +26,7 @@ ms.locfileid: "58790766"
 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 本主题中的信息适用于使用 Visual Studio 中使用创建的 Node.js 应用**Node.js 开发**安装工作负载。
 ::: moniker-end
 ::: moniker range="vs-2017"
-你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用此窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)。 本主题中的信息适用于 Node.js 应用，UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。
+你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用此窗口的示例，请参阅[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)。 本主题中的信息适用于 Node.js 应用，UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。
 ::: moniker-end
 
 如果 JavaScript 控制台窗口已关闭，则可以打开它通过选择 Visual Studio 中调试时，**调试** > **Windows** > **JavaScript控制台**。
@@ -44,7 +44,7 @@ ms.locfileid: "58790766"
 > [!TIP]
 > 较旧版本的 Visual Studio 不支持完整的命令集。 使用控制台对象上的 IntelliSense 快速获取有关支持命令的信息。
 
-|命令|说明|示例|
+|命令|描述|示例|
 |-------------|-----------------|-------------|
 |`assert(expression, message)`|如果 `expression` 计算结果为 **false**，则发送消息。|`console.assert((x == 1), "assert message: x != 1");`|
 |`clear()`|清除控制台窗口中的消息（包括脚本错误消息）以及控制台窗口中显示的脚本。 不清除你在控制台输入提示中输入的脚本。|`console.clear();`|
@@ -70,7 +70,7 @@ ms.locfileid: "58790766"
 ## <a name="miscellaneous-commands"></a>杂项命令
 JavaScript 控制台窗口中也提供这些命令（它们不能通过代码启用）。
 
-|命令|说明|示例|
+|命令|描述|示例|
 |-------------|-----------------|-------------|
 |`$0`, `$1`, `$2`, `$3`, `$4`|将指定元素返回到控制台窗口。 `$0` 返回当前在 DOM 资源管理器中选择的元素，`$1` 返回以前在 DOM 资源管理器中选择的元素，依此类推，最多可返回第四个以前选择的元素。|$3|
 |`$(id)`|按 ID 返回元素。 这是 `document.getElementById(id)`的快捷方式命令，其中 `id` 是一个表示元素 ID 的字符串。|`$("contenthost")`|

@@ -11,17 +11,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06b49a8fda448707540d5bfe65d0499c6c2dde96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767354"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652353"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
   
 ## <a name="declaring-targets-in-the-project-file"></a>在项目文件中声明目标  
@@ -101,4 +100,4 @@ Reference: 4.0
   
 ## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多个项目文件中使用相同的目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aedac18548112335da49012d471fb98eef2ef2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651729"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>如何：扩展 O/R 设计器生成的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在更改设计器图面上的实体类和其他对象时，将重新生成由 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]生成的代码。 当设计器重新生成代码时，你添加到生成的代码中的任何代码一般都会被重新声称的代码覆盖。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供了一种生成分部类文件的功能，您可以将代码添加到分部类文件中而不会被覆盖。 将你自己的代码添加到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]生成的代码中的一个示例是在 LINQ to SQL（实体）类中添加数据验证。 有关详细信息，请参阅[如何：在实体类中添加验证](../data-tools/how-to-add-validation-to-entity-classes.md)。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

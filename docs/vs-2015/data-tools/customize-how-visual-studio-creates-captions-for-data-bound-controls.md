@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58937179"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647946"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 当将项从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)发挥了特殊考虑到 Windows 窗体设计器上： 标题标签中的列名称重新格式化为可读性更强的字符串，当两个或更多的词语找到要连接在一起。 你可以自定义在其中这些标签的创建的方式，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，并**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data 设计人员**注册表项。
 

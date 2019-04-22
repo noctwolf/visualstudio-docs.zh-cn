@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b55dba438280fc4579fe15bd2a423d323c38abf6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767273"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648242"
 ---
 # <a name="proxy-authorization-required"></a>所需的代理身份验证
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 当用户通过代理服务器连接到 Visual Studio Online，而代理服务器对调用进行阻止时通常会发生此错误。 Visual Studio Online 用于使用户保持登录到 IDE 的状态。  
   
 ## <a name="to-correct-this-error"></a>更正此错误  

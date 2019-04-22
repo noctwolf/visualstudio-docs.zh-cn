@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae47135b573ec32cb08b8f36f85555e6062dcbe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 21761ece78967c7c644deecf947c8aac0027d0c7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641164"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648571"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是可以操作在 Visual Studio 环境，并自动执行常见任务的应用程序。 Visual Studio 扩展可以创建自定义 Visual Studio 组件或添加到标准组件，如文本编辑器功能。
@@ -38,8 +38,7 @@ ms.locfileid: "56641164"
 
 -   代码
 
--   生成
-
+-   Build
 
 自动化的详细信息，请参阅[的 Visual Studio 自动化和扩展性](../extensibility-in-visual-studio.md)。 本文档和文档，它提供了链接，帮助你做出决定，你应如何提供你的 VSPackage 的自动化。
 

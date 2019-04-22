@@ -13,17 +13,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 839573b296d01d10e3f4c06e94cb1553380c673c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868877"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649363"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[Visual Studio 2017 管理员指南](/visualstudio/install/visual-studio-administrator-guide)。
+Visual Studio 的最新文档，请参阅[Visual Studio 管理员指南](/visualstudio/install/visual-studio-administrator-guide)。
 
 您可以在网络上部署 Visual Studio 2015，只要每台目标计算机满足[最低安装要求](https://visualstudio.microsoft.com/vs/older-downloads/)。 可以通过使用 /layout 开关运行安装文件（如[创建 Visual Studio 的脱机安装](../install/create-an-offline-installation-of-visual-studio.md)页所述），然后将其从本地计算机复制到网络共享来创建一个网络共享。 如果使用的 ISO，可以装载 ISO 并共享它或将 ISO 复制到网络共享。  
   
@@ -40,12 +40,12 @@ Visual Studio 2017 的最新文档，请参阅[Visual Studio 2017 管理员指�
 ## <a name="error-return-codes"></a>错误返回代码  
  下表列出了重要的错误代码。 可以使用自动化中的这些错误代码来确定是否需要重新启动和安装是否成功。 如果收到错误代码，在考虑故障排除步骤[安装 Visual Studio](../install/install-visual-studio-2015.md)页。  
   
-|安装状态|无需重启|需要重启|说明|  
+|安装状态|无需重启|需要重启|描述|  
 |------------------|--------------------------|----------------------|-----------------|  
 |成功|0x00000000 [0]|0x00000bc2 [3010]|成功安装。|  
 |块|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|如果唯一要报告的块是“重新启动挂起”，则返回值是“要求未完成的重新启动”值 (0x80048bc7)。|  
 |取消|0x00000642 [1602]|0x80048642 [-2147187134]|返回重新启动值时，返回代码为 1602。|  
-|要求未完成的重新启动|不可用|0x80048bc7 [-2147185721]|需要重新启动才能继续安装。|  
+|要求未完成的重新启动|不适用|0x80048bc7 [-2147185721]|需要重新启动才能继续安装。|  
 |失败|0x00000643 [1603]|0x80048643 [-2147187133]|返回重新启动值时，返回代码为 1603。|  
   
 ## <a name="interactive-administrator-installer"></a>交互式管理员安装程序  
@@ -54,22 +54,23 @@ Visual Studio 2017 的最新文档，请参阅[Visual Studio 2017 管理员指�
 ## <a name="controlling-what-is-installed"></a>控制安装的内容  
  如果要控制最终用户可以安装的内容，有两个选择：管理员文件安装和命令行选项。 如果你的目标是限制最终用户可以从其 Visual Studio 安装程序体验中所选的内容，请选择管理员文件安装。 如果要创建初始配置，但允许最终用户选择他们自己的 Visual Studio 安装程序体验，请选择命令行参数。  
   
- 有关管理员文件体验的详细信息，请参阅 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 和 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  有关命令行控件的详细信息，请参阅[使用命令行参数安装 Visual studio](../install/use-command-line-parameters-to-install-visual-studio.md)页。  
+ 有关管理员文件体验的详细信息，请参阅[如何：创建并运行无人参与的安装的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)和[如何：部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  有关命令行控件的详细信息，请参阅[使用命令行参数安装 Visual studio](../install/use-command-line-parameters-to-install-visual-studio.md)页。  
   
 ## <a name="specifying-customer-feedback-settings"></a>指定客户反馈设置  
- 默认情况下，Visual Studio 安装会启用客户反馈。 可以通过将以下注册表项的值更改为字符串 "0"，将 Visual Studio 配置为在单台计算机上禁用客户反馈：  
+
+默认情况下，Visual Studio 安装会启用客户反馈。 可以通过将以下注册表项的值更改为字符串 "0"，将 Visual Studio 配置为在单台计算机上禁用客户反馈：  
   
- HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM  
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM  
 OptIn  
   
- （例如，将其更改为 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn ="0"）  
+（例如，将其更改为 HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM OptIn ="0"）  
   
 ## <a name="related-topics"></a>相关主题  
   
-|主题|说明|  
+|主题|描述|  
 |-----------|-----------------|  
 |[如何：安装特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|介绍如何安装当前版本的特定配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
-|[如何：创建和运行 Visual Studio 的无人参与安装](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|介绍如何安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]无人参与模式。|  
-|[如何：在部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|介绍如何部署到多台计算机时应用产品密钥。|  
+|[如何：创建和运行 Visual Studio 的无人参与的安装](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|介绍如何安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]无人参与模式。|  
+|[如何：部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|介绍如何部署到多台计算机时应用产品密钥。|  
 |[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)|提供有关如何管理本地帮助安装的或不能访问 internet 的网络环境的信息。|  
 |[安装 Visual Studio](../install/install-visual-studio-2015.md)|提供相关说明和链接，这些主题介绍如何安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|

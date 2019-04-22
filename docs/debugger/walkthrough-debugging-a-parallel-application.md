@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9a214234d2382fe9cb950ed294bf8aa807b69da
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790701"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练： 调试并行应用程序在 Visual Studio 中的 (C#，Visual Basic、 c + +)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练：调试 Visual Studio 中的并行应用程序 (C#，Visual Basic 中， C++)
 
 本演练演示如何使用“并行任务”和“并行堆栈”窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。 本演练提供了具有内置断点的代码示例。 本演练演示如何在代码中断后使用“并行任务”和“并行堆栈”窗口检查代码。
 
@@ -65,10 +65,10 @@ ms.locfileid: "58790701"
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    按**Esc**以关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
+    按 Esc 关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**控制台**(或**c + +**)，选择**模板**，，然后：
 
     - 有关C#或 Visual Basic 中，选择**创建新的控制台应用 (.NET Framework) 项目**为C#或 Visual Basic。 在出现的对话框中，选择“创建”。
-    - 对于 c + +，请选择**创建新的控制台应用项目**c + +。 在出现的对话框中，选择“创建”。
+    - 有关C++，选择**创建新的控制台应用项目**为C++。 在出现的对话框中，选择“创建”。
 
     然后，键入一个名称或使用默认名称并单击**创建**。
     ::: moniker-end
@@ -77,7 +77,7 @@ ms.locfileid: "58790701"
 
     - 有关C#应用程序下**可视化C#** ，选择**Windows 桌面**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
     - 对于 Visual Basic 应用，在**Visual Basic**，选择**Windows Desktop**，然后在中间窗格中选择**控制台应用 (.NET Framework)**。
-    - 对于 c + + 应用，在**Visual c + +**，选择**Windows Desktop**、，然后选择**Windows 控制台应用程序**。
+    - 有关C++应用程序下**可视化C++** ，选择**Windows 桌面**、，然后选择**Windows 控制台应用程序**。
 
     然后，键入一个名称或使用默认名称并单击**确定**。
     ::: moniker-end
@@ -98,7 +98,7 @@ ms.locfileid: "58790701"
 
     请注意，有四个对 `Debugger.Break`（在 C++ 示例中为 `DebugBreak`）的调用。因此，您无需插入断点；您只需运行应用程序即可使其四次中断调试器。
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>使用“并行堆栈”窗口：“线程”视图
+## <a name="using-the-parallel-stacks-window-threads-view"></a>使用“并行堆栈”窗口：线程视图
  在“调试”菜单上，单击“启动调试”。 等待命中第一个断点。
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>查看一个线程的调用堆栈

@@ -17,17 +17,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91a72045e7e03a21bd827be1501251db823ca6ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3b2d7811a40e87cb5fd19785fc387aad02a7ad07
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782540"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652918"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在当前上下文中暂停跟踪。  
   
 ## <a name="syntax"></a>语法  
@@ -37,10 +36,10 @@ HRESULT WINAPI SuspendTracking(void);
 ```  
   
 ## <a name="return-value"></a>返回值  
- 如果暂停跟踪，则返回带 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位集的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
+ 一个 [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) 使用的 [SUCCEEDED] （<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 如果跟踪暂停位集。  
   
 ## <a name="requirements"></a>要求  
- 标头：FileTracker.h  
+ **标头：** FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  
  [ResumeTracking](../msbuild/resumetracking.md)

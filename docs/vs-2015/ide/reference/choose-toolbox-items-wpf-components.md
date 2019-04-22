@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54835021"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647697"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>选择工具箱项，WPF 组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 “选择工具箱项”对话框中的此选项卡显示了在本地计算机上可用的 Windows Presentation Foundation (WPF) 控件列表。 若要显示此列表，请从“工具”菜单中选择“选择工具箱项”，从而显示“选择工具箱项”对话框，然后选择其中的“WPF 组件”选项卡。若要对所列组件排序，请选择任意列标题。  
   
 - 选中组件旁边的复选框后，该组件的图标将显示在“工具箱”中。  

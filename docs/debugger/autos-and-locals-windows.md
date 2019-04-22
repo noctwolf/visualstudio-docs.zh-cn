@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366544"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
@@ -166,4 +166,4 @@ private static int subtractVars(int i, int j)
 - [什么是调试？](../debugger/what-is-debugging.md)
 - [调试技术和工具](../debugger/write-better-code-with-visual-studio.md)
 - [首先看一下调试](../debugger/debugger-feature-tour.md)
-- [“调试器”窗口](../debugger/debugger-windows.md)
+- [调试器窗口](../debugger/debugger-windows.md)

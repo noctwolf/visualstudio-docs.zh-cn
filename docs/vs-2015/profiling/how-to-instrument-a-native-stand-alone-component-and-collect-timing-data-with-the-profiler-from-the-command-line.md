@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649767"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：从命令行用探查器检测本机独立组件并收集计时数据
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：检测本机独立组件并收集计时数据与从命令行 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具检测 C++、.exe 或 .dll 文件等本机组件和收集详细计时数据。  
@@ -46,7 +46,7 @@ ms.locfileid: "54757103"
 
      可以将以下一个或多个选项与 /start:trace 选项一起使用。  
 
-   |                                 选项                                  |                                                                                                                                                 说明​​                                                                                                                                                 |
+   |                                 选项                                  |                                                                                                                                                 描述                                                                                                                                                 |
    |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |             指定拥有所分析进程的帐户的域和用户名。 仅当运行进程的用户不是已登录用户时，才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。             |
    |              [/crosssession](../profiling/crosssession.md)              | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
@@ -55,7 +55,6 @@ ms.locfileid: "54757103"
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                  指定要在分析期间收集的 Windows 性能计数器。                                                                                                                  |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。                                                                                   |
-
 
 4. 以典型方式启动目标应用程序。  
 
@@ -66,7 +65,7 @@ ms.locfileid: "54757103"
 
 -   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|说明​​|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  

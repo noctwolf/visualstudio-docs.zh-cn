@@ -11,17 +11,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ed61d1b65d03053859b5463b574432e0396449a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758356"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649233"
 ---
 # <a name="property-functions"></a>属性函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在 .NET Framework 4 和 4.5 版中，可以使用属性函数来计算 MSBuild 脚本。 可以在出现属性的任何位置使用属性函数。 与任务不同，属性函数可在目标外部使用，并在任何目标运行之前进行计算。  
   
  可以在生成脚本中读取系统时间、比较字符串、匹配正则表达式及执行其他操作，而无需使用 MSBuild 任务。 MSBuild 将尝试将字符串转换为数字、将数字转换为字符串，并根据需要进行其他转换。  
@@ -189,7 +188,7 @@ ms.locfileid: "54758356"
   
  下面列出了 MSBuild 属性函数：  
   
-|函数签名|说明​​|  
+|函数签名|说明|  
 |------------------------|-----------------|  
 |double Add(双精度型值 a, 双精度型值 b)|将两个双精度型值相加。|  
 |long Add(长型值 a, 长型值 b)|将两个长型值相加。|  

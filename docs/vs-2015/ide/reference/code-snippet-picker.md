@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789824"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648830"
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 代码编辑器提供了“代码片段选择器”，使用它，单击几下鼠标就可将现成的代码块插入到活动文档中。  
   
  显示“代码片段选择器”的过程根据用户所使用的语言会有所不同。  
@@ -46,7 +45,7 @@ ms.locfileid: "54789824"
   
 - SQL：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”。  
   
-  在大多数 Visual Studio 开发语言中，可以使用“代码片段管理器”将文件夹添加到“文件夹列表”，“代码片段选择器”会在该列表中扫描 XML 片段文件。 也可以创建自己的片段添加到该列表。 有关详细信息，请参阅[演练：创建代码片段](../../ide/walkthrough-creating-a-code-snippet.md)。  
+  在大多数 Visual Studio 开发语言中，可以使用“代码片段管理器”将文件夹添加到“文件夹列表”，“代码片段选择器”会在该列表中扫描 XML 片段文件。 也可以创建自己的片段添加到该列表。 有关详细信息，请参见[演练：创建代码片段](../../ide/walkthrough-creating-a-code-snippet.md)。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  项名称  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840320"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650806"
 ---
 # <a name="handle-specialized-deployment"></a>处理专用的部署
 部署是项目的可选操作。 Web 项目中，例如，支持的部署，以便更新 Web 服务器的项目。 同样，**智能设备**项目支持将复制到目标设备生成的应用程序的部署。 项目子类型可以通过实现来提供专门的部署行为<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口。 此接口定义一组完整的部署操作：
@@ -40,7 +40,6 @@ ms.locfileid: "56840320"
   应在单独的线程，以便执行实际部署操作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]甚至更好地响应用户交互。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>来异步调用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和允许环境查询在任何时间执行部署操作的状态或停止该操作，如有必要在后台运行。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口部署操作由环境在用户选择部署命令时调用。
 
   若要通知的环境的部署操作已开始或结束，项目子类型需要调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>方法。
-
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>若要处理专用的部署由子类型项目
 

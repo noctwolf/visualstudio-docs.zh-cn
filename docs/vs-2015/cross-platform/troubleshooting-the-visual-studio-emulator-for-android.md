@@ -8,16 +8,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 5500af58ab93b41cc73b48f5ebe2d63ed16ca495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7462f99bc06ea84ebbeaf675c8f3882cef527ce5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754930"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649675"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 本主题包含可帮助你解决某些问题的信息，当使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到这些问题。
 
@@ -174,7 +173,7 @@ ms.locfileid: "54754930"
 
      - 禁用受信任的执行
 
-       有关详细信息，请参阅这篇文章：TechNetHyper-V如何修复启用 HYPER-V 的 BIOS 错误
+       有关详细信息，请参阅此文：Technet：Hyper-V：如何启用 Hyper-V 修复 BIOS 错误
 
   5. 确保至少具有 4 GB 系统内存，并且它未被其他占用大量资源的程序和进程使用。
 
@@ -192,7 +191,7 @@ ms.locfileid: "54754930"
 
    一般情况下，是否更新其软件从而与 Windows 8 和 Hyper-V 兼容取决于这些产品的开发人员。
 
-   以下产品可能需要升级为 Windows 8 兼容：VirtualBox、 虚拟 PC 7、 VMWare、 某些 VPN 客户端、 软件防火墙、 某些版本的 Cisco VPN 客户端和其他虚拟化系统。 与可疑虚拟化软件的开发人员合作，鼓励他们升级软件，从而使软件与 Windows 8 和 Hyper-V 兼容。
+   以下产品可能需要升级才能与 Windows 8 兼容：VirtualBox、Virtual PC 7、VMWare、一些 VPN 客户端、软件防火墙、一些版本的 Cisco VPN 客户端和其他虚拟化系统。 与可疑虚拟化软件的开发人员合作，鼓励他们升级软件，从而使软件与 Windows 8 和 Hyper-V 兼容。
 
    作为一种 **解决方法**，可以禁用可能会干扰虚拟网络（仿真程序用于与 Visual Studio 进行通信）的所有第三方驱动程序和应用程序。 这些应用程序可能包括：
 
@@ -255,7 +254,7 @@ ms.locfileid: "54754930"
 
   若要解决此问题，则在主板的 BIOS 设置中禁用 USB3，然后重新启动计算机。 然后，检查 Gigabyte 是否已为主板的 BIOS 发布了更新。
 
-  有关详细信息，请参阅以下知识库文章：[在 Gigabyte 系统上的 HYPER-V 角色的安装后启动失败](https://support.microsoft.com/kb/2693144)。
+  有关详细信息，请参阅以下知识库文章：[在 Gigabyte 系统上安装 Hyper-V 角色后启动失败](https://support.microsoft.com/kb/2693144)。
 
 ##  <a name="ADB"></a> Visual Studio 尝试将应用部署到仿真程序时遇到困难，或者仿真程序未在其他 IDE 中显示为调试目标。
  如果仿真程序正在运行，但它似乎没有连接到 ADB（Android 调试桥）或未显示在使用 ADB 的 Android 工具中（如 Android Studio 或 Eclipse），则可能需要调整仿真程序查找 ADB 的位置。 仿真程序使用注册表项来标识 Android SDK 的基位置，并查找该目录下的 \platform-tools\adb.exe 文件。 若要修改仿真程序使用的 Android SDK 路径：
@@ -269,7 +268,7 @@ ms.locfileid: "54754930"
   重新启动仿真程序，现在应能够看到仿真程序已连接到 ADB 和关联的 Android 工具。
 
 ##  <a name="XamarinPlayer"></a> 由于它无法设置 UDP 端口，仿真程序挂起。
- 由于与 Xamarin 播放器不兼容，你可能会遇到此问题。 如果在仿真程序显示为挂起，或如果你看到此错误消息，"仿真程序是无法连接到设备的操作系统：无法设置 UDP 端口。  某些功能可能已禁用”，则这表示你可能遇到了此问题。 请执行下列步骤：
+ 由于与 Xamarin 播放器不兼容，你可能会遇到此问题。 如果仿真程序显示为挂起，或者如果出现此错误消息“仿真程序无法连接到设备操作系统：无法设置 UDP 端口。  某些功能可能已禁用”，则这表示你可能遇到了此问题。 请执行下列步骤：
 
 1.  卸载 Xamarin 播放器。
 

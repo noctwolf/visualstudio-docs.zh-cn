@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/03/2019
+ms.date: 04/11/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3b1be29663bacee5719749746f6275aba4381f99
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 6246291a00a86a3cde0e3a9cf134724d9dc470ed
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018241"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537645"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -29,7 +29,7 @@ ms.locfileid: "59018241"
 
 下表列出了 Visual Studio 2017 的最新生成号和发布日期。
 
-| **Version**| **通道** | **发行日期** | **内部版本** |
+| **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
 | 15.9.11 | Release | 2019 年 4 月 2 日 | 15.9.28307.586 |
 | 15.9.10 | Release | 2019 年 3 月 25 日 | 15.9.28307.557 |
@@ -191,8 +191,11 @@ ms.locfileid: "59018241"
 
 下表列出了 Visual Studio 2019 的最新生成号和发布日期’。
 
-| **Version**| **通道** | **发行日期** | **内部版本** |
+| **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.0 | 预览版 1 | 2019 年 4 月 10 日 | 16.1.28809.33 |
+| 16.0.1 | Release | 2019 年 4 月 9 日 | 16.0.28803.156 |
+| 16.0.1 | 预览版 1 | 2019 年 4 月 9 日 | 16.0.28803.156 |
 | 16.0.0 | Release | 2019 年 4 月 2 日 | 16.0.28729.10 |
 | 16.0.0 | 预览版 5 | 2019 年 4 月 2 日 | 16.0.28729.10 |
 | 16.0.0 | 候选发布 4 (RC.4) | 2019 年 3 月 26 日 | 16.0.28721.148 |

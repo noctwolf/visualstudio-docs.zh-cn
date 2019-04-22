@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c4876aedd12b2284982304b16049691ce6c9b0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758196"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652886"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 设置 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 项目文件夹的默认路径，并在开发和生成项目时确定“输出”窗口、“任务列表”和“解决方案资源管理器”的默认行为。 若要访问此对话框，请单击“工具/选项”，展开“项目和解决方案”，然后单击“常规”。  
   
 > [!NOTE]

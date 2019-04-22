@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920569"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653003"
 ---
 # <a name="annotating-locking-behavior"></a>对锁定行为进行批注
 若要避免多线程程序中的并发 Bug，请遵循适当的锁定规则并使用 SAL 批注。
@@ -71,7 +71,7 @@ ms.locfileid: "55920569"
 |`_Acquires_nonreentrant_lock_(expr)`|已获得由 `expr` 命名的锁。  如果已拥有此锁，会报告错误。|
 |`_Acquires_shared_lock_(expr)`|批注函数并表明在状态后，函数会将 `expr` 命名的锁对象的共享锁计数递增 1。|
 |`_Create_lock_level_(name)`|该语句声明符号 `name` 为锁级别，因此可以在批注 `_Has_Lock_level_` 和 `_Lock_level_order_` 中使用。|
-|`_Has_lock_kind_(kind)`|批注所有对象以优化资源对象的类型信息。 有时一种通用类型会用于不同类型的资源，并且重载的类型不足以区分各资源之间的语义要求。 下面提供了一个预定义 `kind` 参数的列表：<br /><br /> `_Lock_kind_mutex_`<br /> 互斥锁的锁类型 ID。<br /><br /> `_Lock_kind_event_`<br /> 事件的锁类型 ID。<br /><br /> `_Lock_kind_semaphore_`<br /> 信号量的锁类型 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> 自旋锁的锁类型 ID。<br /><br /> `_Lock_kind_critical_section_`<br /> 临界区的锁类型 ID。|
+|`_Has_lock_kind_(kind)`|批注所有对象以优化资源对象的类型信息。 有时一种通用类型会用于不同类型的资源，并且重载的类型不足以区分各资源之间的语义需求。 下面提供了一个预定义 `kind` 参数的列表：<br /><br /> `_Lock_kind_mutex_`<br /> 互斥锁的锁类型 ID。<br /><br /> `_Lock_kind_event_`<br /> 事件的锁类型 ID。<br /><br /> `_Lock_kind_semaphore_`<br /> 信号量的锁类型 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> 自旋锁的锁类型 ID。<br /><br /> `_Lock_kind_critical_section_`<br /> 临界区的锁类型 ID。|
 |`_Has_lock_level_(name)`|批注锁对象并赋予其 `name` 锁级别。|
 |`_Lock_level_order_(name1, name2)`|该语句提供 `name1` 和 `name2` 之间的锁排序。|
 |`_Post_same_lock_(expr1, expr2)`|批注函数并表明在状态后，两个锁 `expr1` 和 `expr2` 被视为相同的锁对象。|
@@ -104,7 +104,6 @@ ms.locfileid: "55920569"
 |`_Interlocked_`|批注变量，与 `_Guarded_by_(_Global_interlock_)` 等效。|
 |`_Interlocked_operand_`|批注的函数参数是各个互锁函数之一的目标操作数。  这些操作数必须具有特定的附加属性。|
 |`_Write_guarded_by_(expr)`|批注变量并表明变量每次受到修改时，`expr` 命名的锁对象的锁计数至少为 1。|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock 和 RAII 批注
  通常，智能锁包装本机锁，并管理其生存期。 下表列出了可以用于智能锁和编码支持的模式的 RAII 的批注`move`语义。

@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 936ab49a07da5065b14b4a56325607001352f747
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce88cb875a008b806aa882dafe186af7d8f29f29
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802155"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649535"
 ---
 # <a name="createitem-task"></a>CreateItem 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用输入项填充项集合。 这会使项从一个列表复制到另一个列表。  
   
 > [!NOTE]
@@ -38,9 +37,9 @@ ms.locfileid: "54802155"
 ## <a name="attributes"></a>特性  
  下表描述了 `CreateItem` 任务的参数。  
   
-|参数|说明​​|  
+|参数|描述|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|可选的 `String` 数组参数。<br /><br /> 指定要附加到输出项的其他元数据。  使用以下语法指定项的元数据名称和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 应该使用分号将多个元数据名称/值对隔开。 如果名称或值包含分号或其他任何特殊字符，则应对这些字符进行转义。 有关详细信息，请参阅[如何：对 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|  
+|`AdditionalMetadata`|可选的 `String` 数组参数。<br /><br /> 指定要附加到输出项的其他元数据。  使用以下语法指定项的元数据名称和值：<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> 应该使用分号将多个元数据名称/值对隔开。 如果名称或值包含分号或其他任何特殊字符，则应对这些字符进行转义。 有关详细信息，请参阅[如何：在 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)。|  
 |`Exclude`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定要从输出项集合中排除的项。 此参数可包含通配符规范。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)和[如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)。|  
 |`Include`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要包含在输出项集合中的项。 此参数可包含通配符规范。|  
 |`PreserveExistingMetadata`|可选 `Boolean` 参数。<br /><br /> 如果为 `True`，则仅应用其他元数据（如果尚不存在）。|  

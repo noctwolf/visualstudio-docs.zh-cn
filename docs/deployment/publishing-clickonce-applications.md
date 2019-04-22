@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b46b1b5fa7952fbd1a14dc9eca7f67c493ea2807
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504350"
 ---
 # <a name="publish-clickonce-applications"></a>发布 ClickOnce 应用程序
@@ -48,7 +48,7 @@ ms.locfileid: "59504350"
 ## <a name="publish-page"></a>“发布”页面
  “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。 下表列出主题。
 
-|标题|描述|
+|标题|说明|
 |-----------|-----------------|
 |[如何：指定 Visual Studio 复制文件的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|介绍如何设置 Visual Studio 放置应用程序文件和清单的位置。|
 |[如何：指定最终用户从中进行安装的位置](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|介绍如何设置用户可以下载和安装应用程序的位置。|
@@ -77,20 +77,20 @@ ms.locfileid: "59504350"
 |[如何：更改 ClickOnce 应用程序的发布语言](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|介绍如何指定与本地化版本匹配的语言和区域性。|
 |[如何：指定 ClickOnce 应用程序的“开始”菜单名称](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|介绍如何更改 ClickOnce 应用程序的显示名称。|
 |[如何：指定技术支持链接](../deployment/how-to-specify-a-link-for-technical-support.md)|介绍如何设置“支持 URL”属性，该属性确定用户可以转至以获取应用程序相关信息的网页或文件共享。|
-|[如何：指定 ClickOnce 部署中的各个系统必备项的支持 URL](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|演示如何手动更改应用程序清单以包括各系统必备单独的支持 URL。|
+|[如何：为 ClickOnce 部署中的各个系统必备指定支持 URL](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|演示如何手动更改应用程序清单以包括各系统必备单独的支持 URL。|
 |[如何：指定 ClickOnce 应用程序的发布页](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|介绍如何生成默认网页 (publish.htm) 并随应用程序一起发布。|
 |[如何：自定义 ClickOnce 默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|介绍如何自定义自动生成并随应用程序一起发布的网页。|
 |[如何：启用 CD 安装自动启动](../deployment/how-to-enable-autostart-for-cd-installations.md)|介绍如何启用“自动启动”以便在插入媒体时自动启动 ClickOnce 应用程序。|
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
+|标题|说明|
 |-----------|-----------------|
-|[如何：创建文件关联的 ClickOnce 应用程序](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|介绍如何向 ClickOnce 应用程序添加文件名称扩展支持。|
+|[如何：创建 ClickOnce 应用程序的文件关联](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|介绍如何向 ClickOnce 应用程序添加文件名称扩展支持。|
 |[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|演示如何检索在用于运行 ClickOnce 应用程序的 URL 中传递的参数。|
 |[如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|介绍如何强制用户通过使用设计器从“开始”菜单启动应用程序。|
 |[如何：禁用 ClickOnce 应用程序的 URL 激活](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|介绍如何强制用户从“开始”菜单启动应用程序。|
-|[演练：下载 ClickOnce 部署 API 使用设计器中使用按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|说明如何仅在应用程序首次使用程序集时通过设计器进行下载。|
+|[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|说明如何仅在应用程序首次使用程序集时通过设计器进行下载。|
 |[演练：下载使用 ClickOnce 部署 API 按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|说明如何仅在应用程序首次使用程序集时进行下载。|
 |[演练：下载使用 ClickOnce 部署 API 按需的附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|介绍如何将附属程序集标记为可选，以及如何下载客户端计算机针对其当前区域性设置而需要的程序集。|
 |[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|说明如何使用 .NET Framework 实用程序部署 ClickOnce 应用程序。|
@@ -101,5 +101,5 @@ ms.locfileid: "59504350"
 |[如何：发布已启用视觉样式的 WPF 应用程序](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供分步说明以解决在尝试发布已启用视觉样式的 WPF 应用程序时出现的错误。|
 
 ## <a name="see-also"></a>请参阅
-- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
 - [ClickOnce 参考](../deployment/clickonce-reference.md)

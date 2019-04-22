@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d38657e1885ed84d5bd5e0e574968ae2009c19d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bdfd80818e88af8e2907c982e75628627bcac5e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645870"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648545"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>演练：在 VSTO 外接程序中的运行时向文档添加控件
   通过使用 VSTO 外接程序中，可以向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区使用户能够添加<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>到文档。
@@ -78,21 +78,17 @@ ms.locfileid: "56645870"
 
 8. 在 **“属性”** 窗口中，更改下列属性。
 
-
-   | 属性 | “值” |
+   | 属性 | 值 |
    |-----------|-----------------------|
    | **名称** | **addButtonCheckBox** |
    | **标签** | **“添加”按钮** |
 
-
 9. 将第二个复选框添加到 **group1**，然后更改下列属性。
-
 
    | 属性 | 值 |
    |-----------|---------------------------|
    | **名称** | **addRichTextCheckBox** |
    | **标签** | **添加 RTF 控件** |
-
 
 10. 在功能区设计器中，双击“添加按钮” 。
 
