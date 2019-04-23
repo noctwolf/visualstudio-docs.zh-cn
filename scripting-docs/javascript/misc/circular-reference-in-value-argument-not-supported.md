@@ -15,19 +15,19 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1235c8b1bb7b815b5f26e0ffb744c31a3575ba81
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063993"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>不支持在值自变量中进行循环引用
 尝试调用`JSON.stringify`不是有效的值。 `value`参数、 数组或对象，包含循环引用。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   从参数中删除循环引用。  
+- 从参数中删除循环引用。  
   
 ## <a name="example"></a>示例  
  在此示例代码会导致运行时错误，因为`john`引用`mary`并`mary`引用`john`。 若要删除循环引用，或者删除或取消设置该属性`brother`从`mary`对象或`sister`属性从`john`对象。  

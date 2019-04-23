@@ -14,23 +14,23 @@ ms.assetid: 35f7a9b4-74fa-4ddb-b9f2-1a92345cb2ff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02084c6989a3c3948ddbc0bd0ff2999a69ba70cb
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064527"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>对象不支持此属性或方法
 你指定的属性或方法不在此对象中。 并非所有对象都支持所有的属性和方法。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   检查属性和方法以确保不存在任何键入错误。  
+- 检查属性和方法以确保不存在任何键入错误。  
   
--   验证对象的运行时类型是预期的对象类型。  
+- 验证对象的运行时类型是预期的对象类型。  
   
--   有关更多信息，请参见对象的文档。  
+- 有关更多信息，请参见对象的文档。  
   
 ## <a name="see-also"></a>请参阅  
  [对象的对象](../../javascript/reference/object-object-javascript.md)   

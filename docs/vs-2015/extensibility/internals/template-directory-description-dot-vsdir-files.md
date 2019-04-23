@@ -12,12 +12,12 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5f6b8ef087d3e9d43aaf740a99983cf0f5c8d1b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cd224f84dd1d0be8167ee55fa7b40264d742c4f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063763"
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (.Vsdir) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +52,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  当你创建的向导文件时，还应考虑以下问题。  
 
--   没有有意义的数据的任何非必填的字段应作为占位符包含 0 （零）。  
+- 没有有意义的数据的任何非必填的字段应作为占位符包含 0 （零）。  
 
--   如果未不提供任何本地化的名称，向导文件中使用的相对路径名称。  
+- 如果未不提供任何本地化的名称，向导文件中使用的相对路径名称。  
 
--   DLLPath 覆盖图标位置的 clsidPackage。  
+- DLLPath 覆盖图标位置的 clsidPackage。  
 
--   如果未定义图标，IDE 会替换该扩展的文件的默认图标。  
+- 如果未定义图标，IDE 会替换该扩展的文件的默认图标。  
 
--   如果未不提供任何建议的基名称，则使用项目。  
+- 如果未不提供任何建议的基名称，则使用项目。  
 
--   如果您删除.vsz 文件、 文件夹或模板文件，还必须从.vsdir 文件删除其关联的记录。  
+- 如果您删除.vsz 文件、 文件夹或模板文件，还必须从.vsdir 文件删除其关联的记录。  
 
 ## <a name="see-also"></a>请参阅  
  [向导](../../extensibility/internals/wizards.md)   

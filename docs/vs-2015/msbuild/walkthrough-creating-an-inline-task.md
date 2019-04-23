@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a8f649256c9c25f045f4417d293e7b6ff842a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061588"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>演练：创建内联任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ ms.locfileid: "59655382"
   
 #### <a name="to-create-and-modify-a-project-file"></a>创建和修改项目文件  
   
-1.  在 Visual Studio 中的“文件”菜单上，单击“新建”，然后单击“项目”。  
+1. 在 Visual Studio 中的“文件”菜单上，单击“新建”，然后单击“项目”。  
   
-2.  在“新建项目”对话框中，选择 Visual C# 项目类型，然后选择“Windows 窗体应用程序”模板。 在“名称”框中键入 `InlineTasks`。 键入解决方案的“位置”，例如 `D:\`。 请确保选择“创建解决方案目录”和清除“添加到源代码管理”，并确保“解决方案名称”为 `InlineTasks`。  
+2. 在“新建项目”对话框中，选择 Visual C# 项目类型，然后选择“Windows 窗体应用程序”模板。 在“名称”框中键入 `InlineTasks`。 键入解决方案的“位置”，例如 `D:\`。 请确保选择“创建解决方案目录”和清除“添加到源代码管理”，并确保“解决方案名称”为 `InlineTasks`。  
   
      单击“确定”创建项目文件。  
   
-3.  在“解决方案资源管理器”中，右键单击 InlineTasks 项目节点，然后单击“卸载项目”。  
+3. 在“解决方案资源管理器”中，右键单击 InlineTasks 项目节点，然后单击“卸载项目”。  
   
-4.  再次右键单击项目节点，然后单击“编辑 InlineTasks.csproj”。  
+4. 再次右键单击项目节点，然后单击“编辑 InlineTasks.csproj”。  
   
      该项目文件出现在代码编辑器中。  
   

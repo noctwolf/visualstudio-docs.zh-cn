@@ -14,35 +14,35 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b0356e524228e22def9b17dd134e3e011185203
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064799"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>“continue”不能位于循环外
 你尝试使用**继续**位于循环外的语句。 **继续**答： 在正文中仅可以使用语句  
   
--   `do-while` 循环中，  
+- `do-while` 循环中，  
   
--   `while` 循环中，  
+- `while` 循环中，  
   
--   **有关**循环中，  
+- **有关**循环中，  
   
--   **/ 中**循环。  
+- **/ 中**循环。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请确保**继续**语句出现在正文答：  
+- 请确保**继续**语句出现在正文答：  
   
-    -   `do-while` 循环中，  
+    - `do-while` 循环中，  
   
-    -   `while` 循环中，  
+    - `while` 循环中，  
   
-    -   **有关**循环中，  
+    - **有关**循环中，  
   
-    -   **/ 中**循环。  
+    - **/ 中**循环。  
   
 ## <a name="see-also"></a>请参阅  
  [continue 语句](../../javascript/reference/continue-statement-javascript.md)   

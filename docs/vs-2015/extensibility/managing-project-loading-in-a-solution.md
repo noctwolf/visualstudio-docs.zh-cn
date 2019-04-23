@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ce2f80aa50c3222797d925a888e5c004b21512d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065436"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Visual Studio 解决方案可以包含大量的项目。 默认 Visual Studio �
 ## <a name="project-loading-priorities"></a>项目加载优先级  
  Visual Studio 定义四个不同的项目加载优先级：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> （默认值）： 打开解决方案时，以异步方式加载项目。 如果已打开该解决方案后，已卸载的项目上设置此优先级，则将在下一个空闲点加载该项目。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority> （默认值）： 打开解决方案时，以异步方式加载项目。 如果已打开该解决方案后，已卸载的项目上设置此优先级，则将在下一个空闲点加载该项目。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 当打开解决方案时，将项目加载在后台，这样就允许用户访问的项目，因为它们是加载而无需等待，直到已加载所有项目。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 当打开解决方案时，将项目加载在后台，这样就允许用户访问的项目，因为它们是加载而无需等待，直到已加载所有项目。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 进行访问时加载项目。 一个项目或解决方案打开后，因为它是在打开的文档列表中 （保留在解决方案的用户选项文件），打开文件属于项目时，在用户展开解决方案资源管理器中的项目节点时访问另一个项目它是正在加载具有项目的依赖关系。 此类型的项目不自动加载之前启动的生成过程;在解决方案加载管理器负责确保加载所需的所有项目。 此外应在整个解决方案文件中开始查找/替换之前加载这些项目。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 进行访问时加载项目。 一个项目或解决方案打开后，因为它是在打开的文档列表中 （保留在解决方案的用户选项文件），打开文件属于项目时，在用户展开解决方案资源管理器中的项目节点时访问另一个项目它是正在加载具有项目的依赖关系。 此类型的项目不自动加载之前启动的生成过程;在解决方案加载管理器负责确保加载所需的所有项目。 此外应在整个解决方案文件中开始查找/替换之前加载这些项目。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 项目将不能加载，除非用户明确请求它。 当项目显式卸载时，这是这种情况。  
+- <xref:Microsoft.VisualStudio.Shell.Interop._VSProjectLoadPriority>： 项目将不能加载，除非用户明确请求它。 当项目显式卸载时，这是这种情况。  
   
 ## <a name="creating-a-solution-load-manager"></a>管理器中创建解决方案加载  
  开发人员可以创建解决方案加载管理器通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager>并告知 Visual Studio 解决方案负载管理器处于活动状态。  
@@ -80,17 +80,17 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="handling-solution-load-events"></a>处理解决方案负载事件  
  若要订阅的解决方案加载事件，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A>激活解决方案负载管理器。 如果你实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents>，可以响应的不同项目加载优先级与相关的事件。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：这被触发之前打开解决方案。 可用于更改项目加载解决方案中项目的优先级。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>：这被触发之前打开解决方案。 可用于更改项目加载解决方案中项目的优先级。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：这后的解决方案是完全加载，但后台加载的项目开始之前再次激发。 例如，用户可能已访问其负载优先级是 LoadIfNeeded，一个项目或解决方案负载管理器可能已更改项目负载优先级，为 BackgroundLoad，将启动该项目的背景加载。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeBackgroundSolutionLoadBegins%2A>：这后的解决方案是完全加载，但后台加载的项目开始之前再次激发。 例如，用户可能已访问其负载优先级是 LoadIfNeeded，一个项目或解决方案负载管理器可能已更改项目负载优先级，为 BackgroundLoad，将启动该项目的背景加载。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：这后激发一开始完全加载解决方案时，不存在解决方案负载管理器。 后台负载或需加载时解决方案变得完全加载后，它也会激发。 同时，在<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>重新激活。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterBackgroundSolutionLoadComplete%2A>：这后激发一开始完全加载解决方案时，不存在解决方案负载管理器。 后台负载或需加载时解决方案变得完全加载后，它也会激发。 同时，在<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_guid>重新激活。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：这会触发之前加载的项目 （或项目）。 若要确保加载项目之前完成其他后台进程，设置`pfShouldDelayLoadToNextIdle`到**true**。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnQueryBackgroundLoadProjectBatch%2A>：这会触发之前加载的项目 （或项目）。 若要确保加载项目之前完成其他后台进程，设置`pfShouldDelayLoadToNextIdle`到**true**。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：这一批的项目是加载时触发。 如果`fIsBackgroundIdleBatch`为 true 的项目是加载在后台中; 如果`fIsBackgroundIdleBatch`为 false 的项目是要加载同步由于用户请求，例如在用户如果展开解决方案资源管理器中的挂起的项目。 您可以实现此执行成本高昂的工作，否则需要完成<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeLoadProjectBatch%2A>：这一批的项目是加载时触发。 如果`fIsBackgroundIdleBatch`为 true 的项目是加载在后台中; 如果`fIsBackgroundIdleBatch`为 false 的项目是要加载同步由于用户请求，例如在用户如果展开解决方案资源管理器中的挂起的项目。 您可以实现此执行成本高昂的工作，否则需要完成<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：这被触发加载项目一批之后。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnAfterLoadProjectBatch%2A>：这被触发加载项目一批之后。  
   
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>检测和管理解决方案和项目加载  
  若要检测的项目和解决方案加载状态，请调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>使用以下值：  

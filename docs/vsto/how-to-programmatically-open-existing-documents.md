@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3e31e5307acb8dadd627cc0a7a0c65572c7ab219
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062160"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>如何：以编程方式打开现有文档
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法打开指定的完全限定的路径和文件名称的现有 Microsoft Office Word 文档。 此方法返回<xref:Microsoft.Office.Interop.Word.Document>表示打开的文档。
@@ -27,14 +27,14 @@ ms.locfileid: "56653978"
 
 ## <a name="to-open-a-document"></a>若要打开的文档
 
--   调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法的<xref:Microsoft.Office.Interop.Word.Documents>集合并提供对文档的路径。
+- 调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法的<xref:Microsoft.Office.Interop.Word.Documents>集合并提供对文档的路径。
 
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]
 
 ## <a name="to-open-a-document-as-read-only"></a>若要打开的文档为只读的
 
--   调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法，提供的文档路径，并设置*ReadOnly*自变量**True**方法调用中。
+- 调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法，提供的文档路径，并设置*ReadOnly*自变量**True**方法调用中。
 
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]
@@ -42,7 +42,7 @@ ms.locfileid: "56653978"
 ## <a name="compile-the-code"></a>编译代码
  此代码示例要求满足以下条件：
 
--   名为的文档*NewDocument.doc*必须存在于一个名为目录*测试*在驱动器 c。
+- 名为的文档*NewDocument.doc*必须存在于一个名为目录*测试*在驱动器 c。
 
 ## <a name="see-also"></a>请参阅
 - [如何：以编程方式创建新的文档](../vsto/how-to-programmatically-create-new-documents.md)

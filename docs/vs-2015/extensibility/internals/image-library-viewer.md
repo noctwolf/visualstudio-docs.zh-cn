@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062589"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
 ||||  
 |-|-|-|  
 |**元素**|**属性 （全部所需）**|**定义**|  
-|\<Size>|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
+|\<Size>|“值”|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|  
 |\<SizeRange>|MinSize, MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|  
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|  
 |\<DimensionRange>|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|  
@@ -224,9 +224,9 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
   
 ## <a name="notes"></a>说明  
   
--   默认情况下，该工具会在 Visual Studio 安装目录中存在多个映像清单中拉取。 仅具有公开使用名字对象的一种是**Microsoft.VisualStudio.ImageCatalog**清单。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (不要**不**重写自定义清单中的此 GUID) 类型：KnownMonikers  
+- 默认情况下，该工具会在 Visual Studio 安装目录中存在多个映像清单中拉取。 仅具有公开使用名字对象的一种是**Microsoft.VisualStudio.ImageCatalog**清单。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (不要**不**重写自定义清单中的此 GUID) 类型：KnownMonikers  
   
--   该工具会尝试启动时加载它找到的所有映像清单，因此，可能需要几秒钟，要实际出现的应用程序。 它也可能会加载清单时是缓慢或无响应。  
+- 该工具会尝试启动时加载它找到的所有映像清单，因此，可能需要几秒钟，要实际出现的应用程序。 它也可能会加载清单时是缓慢或无响应。  
   
 ## <a name="sample-output"></a>示例输出  
  此工具不会生成任何输出。

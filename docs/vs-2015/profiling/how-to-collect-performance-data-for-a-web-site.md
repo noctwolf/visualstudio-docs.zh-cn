@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0d77d78cdcf889b22d9cf6901b6beae41aaaee4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366726"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060548"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,25 +46,25 @@ ms.locfileid: "59366726"
   
 ### <a name="to-profile-a-web-site-project"></a>若要分析网站项目  
   
-1.  在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 或 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 中打开 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web 项目。  
+1. 在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 或 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 中打开 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web 项目。  
   
-2.  在“分析”  菜单上，单击“启动性能向导” 。  
+2. 在“分析”  菜单上，单击“启动性能向导” 。  
   
-3.  在向导的第一页上，选择一种分析方法，然后单击“下一步” 。 有关分析方法的详细信息，请参阅[了解性能收集方法](../profiling/understanding-performance-collection-methods.md)。 请注意，并发可视化工具分析方法对 Web 应用程序不可用。  
+3. 在向导的第一页上，选择一种分析方法，然后单击“下一步” 。 有关分析方法的详细信息，请参阅[了解性能收集方法](../profiling/understanding-performance-collection-methods.md)。 请注意，并发可视化工具分析方法对 Web 应用程序不可用。  
   
-4.  在“要以哪个应用程序为目标进行分析?”  下拉列表中，请确保选择当前项目，然后单击“下一步” 。  
+4. 在“要以哪个应用程序为目标进行分析?”  下拉列表中，请确保选择当前项目，然后单击“下一步” 。  
   
-5.  在向导的第三页上，可以选择添加层交互分析 (TIP) 数据和/或网页上运行的 JavaScript 中的数据。  
+5. 在向导的第三页上，可以选择添加层交互分析 (TIP) 数据和/或网页上运行的 JavaScript 中的数据。  
   
-    -   若要收集层交互，请选中“启用层交互分析”  复选框。  
+    - 若要收集层交互，请选中“启用层交互分析”  复选框。  
   
-    -   若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。  
+    - 若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。  
   
-6.  单击 **“下一步”**。  
+6. 单击 **“下一步”**。  
   
-7.  在向导的第四页上，单击“完成” 。  
+7. 在向导的第四页上，单击“完成” 。  
   
-8.  为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序创建了性能会话，且在浏览器中启动了网站。 练习要分析的功能，然后关闭浏览器。  
+8. 为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序创建了性能会话，且在浏览器中启动了网站。 练习要分析的功能，然后关闭浏览器。  
   
      探查器生成数据文件，并在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 主窗口中显示数据的摘要视图。  
   
@@ -90,9 +90,9 @@ ms.locfileid: "59366726"
   
 6. 在向导的第三页上，可以选择添加层交互分析 (TIP) 数据和/或网页上运行的 JavaScript 中的数据。  
   
-   -   若要收集层交互，请选中“启用层交互分析”  复选框。  
+   - 若要收集层交互，请选中“启用层交互分析”  复选框。  
   
-   -   若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。  
+   - 若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。  
   
 7. 单击 **“下一步”**。  
   

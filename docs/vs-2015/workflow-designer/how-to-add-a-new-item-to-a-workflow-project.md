@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063618"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>如何：向工作流项目添加新项
 创建工作流项目之后，可以将工作流活动、设计器和其他熟悉的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项添加到项目中。  
@@ -30,17 +30,17 @@ ms.locfileid: "58934018"
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>向工作流项目添加新项  
   
-1.  上**项目**菜单上，单击**添加新项...**.  
+1. 上**项目**菜单上，单击**添加新项...**.  
   
      **添加新项**对话框随即打开。  
   
-2.  在中**已安装的模板**窗格中，选择**工作流**组。  
+2. 在中**已安装的模板**窗格中，选择**工作流**组。  
   
-3.  选择四项中的一项。 上表列出了可用的选项。  
+3. 选择四项中的一项。 上表列出了可用的选项。  
   
-4.  键入相应的名称中的项**名称**对话框底部的框。  
+4. 键入相应的名称中的项**名称**对话框底部的框。  
   
-5.  单击**添加**将项添加到当前工作流项目。  
+5. 单击**添加**将项添加到当前工作流项目。  
   
 ## <a name="see-also"></a>请参阅  
  [创建工作流项目](../workflow-designer/creating-a-workflow-project.md)

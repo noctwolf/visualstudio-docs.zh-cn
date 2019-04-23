@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061172"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ ms.locfileid: "59657254"
   
 ## <a name="to-create-controls-that-display-related-records"></a>若要创建显示相关的记录的控件  
   
-1.  在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。  
+1. 在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。  
   
-2.  单击“添加新数据源”，然后完成“数据源配置”向导。  
+2. 单击“添加新数据源”，然后完成“数据源配置”向导。  
   
-3.  打开 WPF 设计器中，并确保该设计器包含有效的放置目标中的项的容器**数据源**窗口。  
+3. 打开 WPF 设计器中，并确保该设计器包含有效的放置目标中的项的容器**数据源**窗口。  
   
      有关有效放置目标的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-4.  在中**数据源**窗口中，展开表示父表的节点或关系中的对象。 一个对多关系的"一"方上的父表或对象。  
+4. 在中**数据源**窗口中，展开表示父表的节点或关系中的对象。 一个对多关系的"一"方上的父表或对象。  
   
-5.  将父节点 （或任何单个项的父节点中） 从拖**数据源**窗口拖到设计器中的有效放置目标。  
+5. 将父节点 （或任何单个项的父节点中） 从拖**数据源**窗口拖到设计器中的有效放置目标。  
   
      Visual Studio 生成创建拖动每个项的新数据绑定控件的 XAML。 XAML 还添加了一个新<xref:System.Windows.Data.CollectionViewSource>父表或对象的拖放目标资源。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到父表或对象。 有关详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-6.  在中**数据源**窗口中，找到的相关的子表或对象。 相关的子表和对象显示为可展开节点的数据的父节点的列表底部。  
+6. 在中**数据源**窗口中，找到的相关的子表或对象。 相关的子表和对象显示为可展开节点的数据的父节点的列表底部。  
   
-7.  将子节点 （或子节点中的任何单个项） 从拖**数据源**窗口拖到设计器中的有效放置目标。  
+7. 将子节点 （或子节点中的任何单个项） 从拖**数据源**窗口拖到设计器中的有效放置目标。  
   
      Visual Studio 将生成为每个拖动的项创建新的数据绑定控件的 XAML。 XAML 还添加了一个新<xref:System.Windows.Data.CollectionViewSource>子表或对象的拖放目标资源。 这一新<xref:System.Windows.Data.CollectionViewSource>绑定到的父表或您刚刚拖动到设计器中的对象的属性。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到子表或对象。  
   

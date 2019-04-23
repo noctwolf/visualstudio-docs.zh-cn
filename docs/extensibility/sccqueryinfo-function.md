@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01c76f5696e029cd7d15be75786b1009af4a673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061200"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 此函数可获取所选文件受源代码管理的一组的状态信息。
@@ -53,7 +53,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|查询已成功完成。|
 |SCC_E_ACCESSFAILURE|出现与访问源代码管理系统、 网络或争用问题可能导致问题。 建议重试。|
@@ -67,13 +67,13 @@ SCCRTN SccQueryInfo(
 
  使用此函数时签出文件，请注意以下`MSSCCI`状态要求：
 
--   `SCC_STATUS_OUTBYUSER` 当前用户已签出文件时设置。
+- `SCC_STATUS_OUTBYUSER` 当前用户已签出文件时设置。
 
--   `SCC_STATUS_CHECKEDOUT` 不能设置，除非`SCC_STATUS_OUTBYUSER`设置。
+- `SCC_STATUS_CHECKEDOUT` 不能设置，除非`SCC_STATUS_OUTBYUSER`设置。
 
--   `SCC_STATUS_CHECKEDOUT` 仅当该文件已签出到指定的工作目录设置。
+- `SCC_STATUS_CHECKEDOUT` 仅当该文件已签出到指定的工作目录设置。
 
--   如果该文件已签出由当前用户以外的工作目录的目录`SCC_STATUS_OUTBYUSER`设置，但`SCC_STATUS_CHECKEDOUT`不是。
+- 如果该文件已签出由当前用户以外的工作目录的目录`SCC_STATUS_OUTBYUSER`设置，但`SCC_STATUS_CHECKEDOUT`不是。
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

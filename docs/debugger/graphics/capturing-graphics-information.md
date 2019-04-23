@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d614a991de46552c34ca5ab8c797f6dd92954180
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065647"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 从 Direct3D 应用捕获图形信息，以便使用 Visual Studio 图形分析器来诊断呈现问题和性能问题。
@@ -27,7 +27,7 @@ ms.locfileid: "56708610"
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>在图形诊断下运行应用程序
 
-- 在菜单栏上依次选择**调试**，**图形**，**启动图形调试**。 （键盘：按 Alt+F5）
+- 在菜单栏上依次选择**调试**，**图形**，**启动图形调试**。 （键盘：按 Alt + F5）
 
 - 上**图形**工具栏上，选择**启动图形调试**按钮。
 
@@ -57,9 +57,9 @@ ms.locfileid: "56708610"
 
 #### <a name="to-configure-graphics-diagnostics-capture-options"></a>配置图形诊断捕获选项
 
-1.  在菜单栏上，依次选择“工具”、“选项”。 这时会显示一个“选项”对话框。
+1. 在菜单栏上，依次选择“工具”、“选项”。 这时会显示一个“选项”对话框。
 
-2.  在左侧的选项类别列表中选择“图形诊断”，然后配置所需的“图形诊断”选项。
+2. 在左侧的选项类别列表中选择“图形诊断”，然后配置所需的“图形诊断”选项。
 
      **捕获过程中收集调用堆栈 （降低捕获速度）** 选中此框以收集调用堆栈。 默认情况下，不会收集调用堆栈。 要捕获调用堆栈，请确保将“在捕获过程中收集调用堆栈(将使捕获速度变慢)”复选框设置为启用收集，然后设置“用于绘制、调度、呈现和性能标记”选项（默认值）以便仅收集最重要的调用堆栈，或设置“用于全部”选项以便收集所有调用堆栈。 如果稍后要停止收集调用堆栈，请清除“在捕获过程中收集调用堆栈(将使捕获速度变慢)”复选框。
 
@@ -74,7 +74,7 @@ ms.locfileid: "56708610"
 
  配置项目以进行远程调试的方式取决于你开发的应用程序类型以及你使用的编程语言。 有关如何配置远程调试 UWP 应用的信息，请参阅[远程计算机上的运行 UWP 应用](../run-windows-store-apps-on-a-remote-machine.md)。 有关如何配置远程调试 Windows 桌面应用程序的信息，请参阅[远程调试](../remote-debugging.md)。
 
- 之后，可以使用远程计算机或设备播放图形信息，而无论信息从何处捕获。 有关详细信息，请参阅[如何：更改图形诊断播放机](how-to-change-the-graphics-diagnostics-playback-machine.md)。
+ 之后，可以使用远程计算机或设备播放图形信息，而无论信息从何处捕获。 有关详细信息，请参阅[如何：更改图形诊断播放计算机](how-to-change-the-graphics-diagnostics-playback-machine.md)。
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>从命令行捕获图形信息
  可使用命令行工具从应用捕获图形信息。 DXCap.exe 这一工具可以快速捕获和播放图形信息，而不使用 Visual Studio 或编程捕获。 具体而言，你可以使用 DXCap.exe 来实现自动化，或在测试环境中使用。 有关 DXCap.exe 的详细信息，请参阅[命令行捕获工具](command-line-capture-tool.md)

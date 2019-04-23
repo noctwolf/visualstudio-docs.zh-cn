@@ -1,5 +1,5 @@
 ---
-title: 演练： 下载使用 ClickOnce 部署 API 按需程序集 |Microsoft Docs
+title: 演练：下载使用 ClickOnce 部署 API 按需程序集 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063876"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练： 下载使用 ClickOnce 部署 API 按需程序集
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：下载使用 ClickOnce 部署 API 按需程序集
 默认情况下，所有程序集包含在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首次运行该应用程序时下载应用程序。 但是，您可能使用的一小组用户应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时 (CLR) 需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
 
 > [!NOTE]
@@ -32,9 +32,9 @@ ms.locfileid: "56603894"
 ## <a name="prerequisites"></a>系统必备
  您将需要以下组件来完成本演练之一：
 
--   Windows SDK 中。 可以从 Microsoft 下载中心下载 Windows SDK。
+- Windows SDK 中。 可以从 Microsoft 下载中心下载 Windows SDK。
 
--   Visual Studio。
+- Visual Studio。
 
 ## <a name="create-the-projects"></a>创建项目
 
@@ -100,17 +100,17 @@ ms.locfileid: "56603894"
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 将标记为可选 ClickOnce 应用程序中的程序集
 
-1.  使用*MageUI.exe*，如中所述创建一个应用程序清单[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对该应用程序清单中使用以下设置：
+1. 使用*MageUI.exe*，创建一个应用程序清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对该应用程序清单中使用以下设置：
 
-    -   命名应用程序清单`ClickOnceOnDemand`。
+    - 命名应用程序清单`ClickOnceOnDemand`。
 
-    -   上**文件**页上，在*ClickOnceLibrary.dll*行中，设置**文件类型**列**无**。
+    - 上**文件**页上，在*ClickOnceLibrary.dll*行中，设置**文件类型**列**无**。
 
-    -   上**文件**页上，在*ClickOnceLibrary.dll*行中，键入`ClickOnceLibrary.dll`中**组**列。
+    - 上**文件**页上，在*ClickOnceLibrary.dll*行中，键入`ClickOnceLibrary.dll`中**组**列。
 
-2.  使用*MageUI.exe*，创建部署清单中所述[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对于部署清单中使用以下设置：
+2. 使用*MageUI.exe*，创建部署清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对于部署清单中使用以下设置：
 
-    -   命名的部署清单`ClickOnceOnDemand`。
+    - 命名的部署清单`ClickOnceOnDemand`。
 
 ## <a name="testing-the-new-assembly"></a>测试新程序集
 

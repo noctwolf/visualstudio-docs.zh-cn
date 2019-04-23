@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6e6c44895a022521899bdd0383ee71257b83fe3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065702"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一个或多个所选项包含设计器不支持的数据类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ ms.locfileid: "59668816"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
-1.  创建一个基于所需的表的视图，且其中不包括不支持的数据类型。  
+1. 创建一个基于所需的表的视图，且其中不包括不支持的数据类型。  
   
-2.  将从该视图**服务器资源管理器**/**数据库资源管理器**拖到设计器。  
+2. 将从该视图**服务器资源管理器**/**数据库资源管理器**拖到设计器。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

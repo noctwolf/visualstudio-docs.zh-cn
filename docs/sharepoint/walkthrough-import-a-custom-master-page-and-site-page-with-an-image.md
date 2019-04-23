@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063174"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入自定义母版页和站点页图像
   本演练演示如何导入 SharePoint 的自定义母版页和包含到图像的网站页面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。
@@ -36,26 +36,26 @@ ms.locfileid: "59665989"
 ## <a name="prerequisites"></a>系统必备
  您必须要完成本演练的以下组件：
 
--   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
 
--   Visual Studio。
+- Visual Studio。
 
--   SharePoint Designer 2010。
+- SharePoint Designer 2010。
 
 ## <a name="create-items-in-sharepoint-designer"></a>在 SharePoint Designer 中创建项
  此示例演示如何在 SharePoint Designer 中创建三个项，为导出： 自定义的主页面、 引用自定义母版页和要在网站页面上显示的图像文件的网站页面。 图像添加到 SharePoint 中的 /images/ 文件夹中。
 
 #### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>若要在 SharePoint Designer 中创建自定义母版页
 
-1.  在 SharePoint Designer 中，在导航窗格中，选择**母版页**站点对象。
+1. 在 SharePoint Designer 中，在导航窗格中，选择**母版页**站点对象。
 
-2.  上**母版页**功能区中，选择**空白母版页**。
+2. 上**母版页**功能区中，选择**空白母版页**。
 
-3.  选择新的主页面，然后在**母版页**功能区中，选择**编辑文件**。
+3. 选择新的主页面，然后在**母版页**功能区中，选择**编辑文件**。
 
-4.  在 SharePoint 设计器的底部，选择**代码**选项卡。
+4. 在 SharePoint 设计器的底部，选择**代码**选项卡。
 
-5.  现有标记替换为以下标记。
+5. 现有标记替换为以下标记。
 
     ```aspx-csharp
     <%@ Master Language="C#" %>
@@ -76,39 +76,39 @@ ms.locfileid: "59665989"
     </html>
     ```
 
-6.  保存页面中，选择**母版页**选项卡，然后重命名为母版页**mybasic1.master**。
+6. 保存页面中，选择**母版页**选项卡，然后重命名为母版页**mybasic1.master**。
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>将图像添加到在 SharePoint Designer 中的内容数据库
  现在可以添加要在网站页面上显示的图像。 将映像部署到 SharePoint 内容数据库。
 
 #### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>若要将图像添加到在 SharePoint Designer 中的内容数据库
 
-1.  在导航窗格中，选择**的所有文件**站点对象，然后在树视图中，选择**映像**文件夹。
+1. 在导航窗格中，选择**的所有文件**站点对象，然后在树视图中，选择**映像**文件夹。
 
-2.  上**的所有文件**功能区中，选择**导入文件**，选择所选的文件，然后选择**确定**按钮。 在此示例中，该文件被命名为**myimg1.png**。
+2. 上**的所有文件**功能区中，选择**导入文件**，选择所选的文件，然后选择**确定**按钮。 在此示例中，该文件被命名为**myimg1.png**。
 
      （可选） 可以创建子文件夹，用于帮助组织图像。
 
-3.  关闭**导入**对话框。
+3. 关闭**导入**对话框。
 
 ## <a name="create-a-site-page"></a>创建的网站页面
  此基本网站页面使用自定义母版页，并显示上一步中添加的映像。
 
 #### <a name="to-create-a-site-page"></a>若要创建的网站页面
 
-1.  在导航窗格中，选择**站点页面**对象。
+1. 在导航窗格中，选择**站点页面**对象。
 
-2.  上**Pages**功能区中，选择**页面**按钮，选择**ASPX**页上，键入，并将其命名新文件**mycontentpage1.aspx**。
+2. 上**Pages**功能区中，选择**页面**按钮，选择**ASPX**页上，键入，并将其命名新文件**mycontentpage1.aspx**。
 
      （可选） 可以创建一个子文件夹，以帮助组织站点页面。
 
-3.  在站点页列表中，选择**MyContentPage1.aspx**以打开其属性页，然后，在页面底部，选择**编辑文件**链接。
+3. 在站点页列表中，选择**MyContentPage1.aspx**以打开其属性页，然后，在页面底部，选择**编辑文件**链接。
 
      如果一条消息和显示此页不包含任何可在安全模式下编辑的区域，并询问您是否要在高级模式下打开此页中，选择**是**按钮。
 
-4.  在页面底部，选择**代码**按钮。
+4. 在页面底部，选择**代码**按钮。
 
-5.  现有标记替换为以下标记。
+5. 现有标记替换为以下标记。
 
     ```aspx-csharp
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
@@ -124,22 +124,22 @@ ms.locfileid: "59665989"
     </asp:Content>
     ```
 
-6.  保存更新的网站页面。
+6. 保存更新的网站页面。
 
 ## <a name="export-the-items-from-sharepoint"></a>从 SharePoint 导出项目
  将项目从 SharePoint 导出到 SharePoint 解决方案 (*.wsp*) 文件。
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>若要从 SharePoint Designer 导出项目
 
-1.  在 SharePoint Designer 中，在导航窗格中，选择**团队网站**对象，然后在**站点**功能区中，选择**另存为模板**。
+1. 在 SharePoint Designer 中，在导航窗格中，选择**团队网站**对象，然后在**站点**功能区中，选择**另存为模板**。
 
-2.  在中**另存为模板**对话框框中，输入文件的名称和模板名称，选择**内容包括**复选框，，然后选择**确定**按钮。
+2. 在中**另存为模板**对话框框中，输入文件的名称和模板名称，选择**内容包括**复选框，，然后选择**确定**按钮。
 
      这将保存在该站点的内容 *.wsp*文件。
 
-3.  该解决方案将导出后，请选择**解决方案库**链接以显示可用的解决方案文件的列表。
+3. 该解决方案将导出后，请选择**解决方案库**链接以显示可用的解决方案文件的列表。
 
-4.  打开新的快捷菜单 *.wsp*文件，，然后选择**目标另存为**将其保存到系统。
+4. 打开新的快捷菜单 *.wsp*文件，，然后选择**目标另存为**将其保存到系统。
 
 ## <a name="import-the-items-into-visual-studio"></a>导入 Visual Studio 项目
  导入 *.wsp*文件到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 将内容导入后，可以进行自定义、 添加更多项，然后将其部署。
@@ -166,9 +166,9 @@ ms.locfileid: "59665989"
 
     如果现有的主页面标记为默认母版页或自定义母版页，您会发生部署错误，指出不能删除主页面。 若要避免此问题，请执行此操作：
 
-   -   如果现有的主页面设置为默认母版页，暂时将另一个主页面设置为默认母版页。 将文件部署到 SharePoint 后，请为默认母版页设置新的主页面。
+   - 如果现有的主页面设置为默认母版页，暂时将另一个主页面设置为默认母版页。 将文件部署到 SharePoint 后，请为默认母版页设置新的主页面。
 
-   -   如果现有的主页面设置为自定义母版页，暂时将另一个主页面设置为自定义母版页。 将文件部署到 SharePoint 后，为自定义母版页设置新的主页面。
+   - 如果现有的主页面设置为自定义母版页，暂时将另一个主页面设置为自定义母版页。 将文件部署到 SharePoint 后，为自定义母版页设置新的主页面。
 
 6. 在菜单栏上依次选择**构建** > **部署解决方案**。
 

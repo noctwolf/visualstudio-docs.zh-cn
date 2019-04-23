@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3f937b819628414430104782459da65d350dd69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061926"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序， <xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹， <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。
@@ -37,21 +37,21 @@ ms.locfileid: "56597707"
 ## <a name="access-objects-in-an-outlook-project"></a>访问 Outlook 项目中的对象
  Outlook 提供了许多可与之交互的对象。 若要有效地使用对象模型，你应熟悉以下顶级对象：
 
--   <xref:Microsoft.Office.Interop.Outlook.Application>
+- <xref:Microsoft.Office.Interop.Outlook.Application>
 
--   <xref:Microsoft.Office.Interop.Outlook.Explorer>
+- <xref:Microsoft.Office.Interop.Outlook.Explorer>
 
--   <xref:Microsoft.Office.Interop.Outlook.Inspector>
+- <xref:Microsoft.Office.Interop.Outlook.Inspector>
 
--   <xref:Microsoft.Office.Interop.Outlook.Folder>
+- <xref:Microsoft.Office.Interop.Outlook.Folder>
 
--   <xref:Microsoft.Office.Interop.Outlook.MailItem>
+- <xref:Microsoft.Office.Interop.Outlook.MailItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
+- <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.TaskItem>
+- <xref:Microsoft.Office.Interop.Outlook.TaskItem>
 
--   <xref:Microsoft.Office.Interop.Outlook.ContactItem>
+- <xref:Microsoft.Office.Interop.Outlook.ContactItem>
 
 ### <a name="application-object"></a>应用程序对象
  <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示 Outlook 应用程序，并且它是 Outlook 对象模型中最高级别的对象。 此对象的一些最重要的成员包括：
@@ -72,22 +72,22 @@ ms.locfileid: "56597707"
 
  若要获取 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象，请执行以下操作之一：
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 属性来访问 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 属性来访问 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象。
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 。
 
--   使用 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象的 `GetExplorer` 方法以获取当前文件夹的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。
+- 使用 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象的 `GetExplorer` 方法以获取当前文件夹的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。
 
 ### <a name="inspector-object"></a>检查器对象
  <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象表示一个窗口，该窗口显示单个项，如电子邮件、任务或约会。 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象包括方法和属性，可用于修改窗口以及窗口更改时引发的事件。
 
  若要获取 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象，请执行以下操作之一：
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 属性来访问 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 属性来访问 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象。
 
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。
+- 使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。
 
--   使用特定项的 `GetInspector` 方法（如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>）来检索与之关联的检查器。
+- 使用特定项的 `GetInspector` 方法（如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>）来检索与之关联的检查器。
 
 ### <a name="folder-object"></a>文件夹对象。
  <xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件、联系人、任务和其他项的文件夹。 Outlook 提供了 16 个默认的 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象。
@@ -118,7 +118,7 @@ ms.locfileid: "56597707"
 
  有关演示如何创建新的联系人的示例，请参阅[如何：以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 有关演示如何搜索现有联系人的示例，请参阅[如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。
 
-##  <a name="refdoc"></a> 使用 Outlook 对象模型文档
+## <a name="refdoc"></a> 使用 Outlook 对象模型文档
  有关 Outlook 对象模型的完整信息，可以参考 Outlook 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。
 
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用
