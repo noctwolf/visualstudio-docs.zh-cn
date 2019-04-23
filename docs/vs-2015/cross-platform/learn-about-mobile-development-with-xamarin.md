@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781689"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662070"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本主题可将引导你概览有助于了解如何使用 Xamarin 开发跨平台移动应用的资料。 如果尚未安装 Visual Studio 和 Xamarin，请首先启动 [Setup and install](../cross-platform/setup-and-install.md) 过程，然后在安装程序运行期间返回此处浏览这些资源。  
   
 > [!NOTE]
@@ -42,7 +41,7 @@ ms.locfileid: "54781689"
   
   ![Xamarin 环境中 Windows 与 Mac 开发计算机之间的关系](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>基础知识项目的构建方式  
+## <a name="essentials-how-projects-are-structured"></a>基础知识：项目的构建方式  
  *10-30 分钟*  
   
 1.  [共享代码选项](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin com)。 我们建议使用可移植类库选项，因为它能够为仅使用受所有目标平台支持的 .NET API 提供最佳的支持。 大多数业务逻辑代码将驻留在 PCL 中，包括访问数据库、 对 REST Api 调用和对可移植的 Xamarin 组件的调用 (请参阅[更深入的了解：Xamarin 组件](#components)本主题末尾处)。 使用 Xamarin.Forms 编写的常见 UI 代码也可以驻留在 PCL 中。  
@@ -52,7 +51,7 @@ ms.locfileid: "54781689"
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>基础知识：本机与 Xamarin.Forms UI 层  
  *10-40 分钟*  
   
- Xamarin 提供两种方法来生成优秀的本机应用。Xamarin 本机与 Xamarin.Forms。  
+ Xamarin 提供了两种方法来生成卓越的本机应用：Xamarin 本机与 Xamarin.Forms。  
   
  通过 Xamarin 本机，你可以为每个目标平台（iOS、 Android 和 Windows）编写单独的 UI 代码。  使用此方法可以直接访问特定于平台的 API，从而实现每个平台的自定义 UI 体验。  你还具有对每个平台的本机设计器和控件的完全访问权限，此权限有助于构建相应 UI。  
   
@@ -93,7 +92,7 @@ ms.locfileid: "54781689"
   
 2.  **Apple 的 iOS 模拟器。** 有关详细信息，请参阅 [iOS 模拟器入门](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。  
   
-3.  **Microsoft 的 Windows Phone 仿真程序。** 有关详细信息，请参阅[适用于 Windows Phone 8 的 Windows Phone 仿真程序](https://msdn.microsoft.com/library/dn632391.aspx)。  
+3.  **Microsoft 的 Windows Phone 仿真程序。** 若要了解详细信息，请参阅 [适用于 Windows Phone 8 的 Windows Phone 模拟器](https://msdn.microsoft.com/library/dn632391.aspx)。  
   
 ##  <a name="components"></a> 深入了解：Xamarin 组件  
  *10 分钟*  

@@ -9,17 +9,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c7d4bda59b8ff9bdedb775ecc6376a23a2db7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933068"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665319"
 ---
 # <a name="add-new-connections"></a>添加新连接
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可以测试连接到数据库或服务，并浏览数据库内容和架构，通过使用**服务器资源管理器**，**云资源管理器**，或**SQL Server 对象资源管理器**. 某种程度上重叠的这些 windows 功能。 基本区别如下：  
   
  服务器资源管理器  

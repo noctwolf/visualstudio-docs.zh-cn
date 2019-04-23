@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504427"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665449"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，应考虑使用 Windows 安装程序 (*.msi*) 如果多个用户将在同一台计算机上运行你的解决方案。
@@ -27,13 +27,13 @@ ms.locfileid: "59504427"
 
 - [发布解决方案](#Publish)
 
-- [决定如何向解决方案授予信任](#Trust)
+- [决定你想要向解决方案授予信任](#Trust)
 
 - [帮助用户安装解决方案](#Helping)
 
-- [将解决方案文档置于最终用户计算机上（仅限文档级自定义项）](#Put)
+- [将解决方案文档置于最终用户的计算机 （仅文档级自定义） 上](#Put)
 
-- [将解决方案文档置于运行 SharePoint 的服务器上（仅限文档级自定义项）](#SharePoint)
+- [将解决方案文档置于运行 SharePoint （仅文档级自定义） 的服务器上](#SharePoint)
 
 - [创建自定义安装程序](#Custom)
 
@@ -91,7 +91,7 @@ ms.locfileid: "59504427"
 
     |选项|描述|
     |------------|-----------------|
-    |**从组件供应商的网站上下载系统必备组件**|系统将提示用户从供应商处下载并安装这些系统必备组件。|
+    |**从组件供应商的网站下载系统必备组件**|系统将提示用户从供应商处下载并安装这些系统必备组件。|
     |**从与我的应用程序相同的位置下载系统必备组件**|系统必备软件与解决方案一起安装。 如果选择此选项，Visual Studio 会将所有系统必备组件包为你复制到发布位置。 要让此选项正常工作，系统必备包必须位于开发计算机上。|
     |**从下列位置下载系统必备组件**|Visual Studio 将所有系统必备组件包复制到你指定的位置，并与解决方案一起安装。|
 
@@ -345,7 +345,6 @@ ms.locfileid: "59504427"
  如果该工具不在此位置，则可以使用**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath**或**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath**注册表项以查找该工具的路径。
 
  可以使用以下参数与*VSTOinstaller.exe*。
-
 
 | 参数 | 定义 |
 |------------------| - |

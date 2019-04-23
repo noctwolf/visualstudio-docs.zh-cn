@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856951"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663170"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 在 Azure 虚拟机和 Azure 虚拟机规模集上调试实时 ASP.NET 应用
 
@@ -35,11 +35,11 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="prerequisites"></a>系统必备
 
-* Azure 虚拟机 (VM) 和 Azure 虚拟机规模集 (VMSS) 的 Snapshot Debugger 仅适用于具有 Azure 开发工作负载的 Visual Studio 2019 Enterprise 预览版或更高版本。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
+* 快照调试程序的 Azure 虚拟机 (VM) 和 Azure 虚拟机规模集是仅适用于 Visual Studio 2019 Enterprise 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
 
-    如果尚未安装，请安装 [Visual Studio 2019 Enterprise 预览版](https://visualstudio.microsoft.com/vs/preview/)。
+    如果尚未安装，安装[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
-* 快照集合适用于以下 Azure VM/VMSS Web 应用：
+* 快照集合是适用于以下的 Azure 虚拟机 Machines\Virtual 规模 web 应用：
   * 在 .NET Framework 4.6.1 或更高版本上运行的 ASP.NET 应用程序。
   * 在 Windows 中的 .Net Core 2.0 或更高版本上运行的 ASP.NET Core 应用程序。
 
@@ -48,9 +48,9 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 1. 打开要进行快照调试的项目。
 
     > [!IMPORTANT]
-    > 对于快照调试，需要打开与已发布到 Azure VM/VMSS 服务的相同版本的源代码。
+    > 您需要打开到快照调试*相同版本的源代码*，它发布到 Azure 虚拟 Machine\Virtual 机规模集服务。
 
-1. 选择“调试”>“附加 Snapshot Debugger...”。选择部署 Web 应用的 Azure VM/VMSS 和一个 Azure 存储帐户，然后单击“附加”。
+1. 选择“调试”>“附加 Snapshot Debugger...”。选择 Azure 虚拟 Machine\Virtual 机规模集部署到你的 web 应用和 Azure 存储帐户，然后依次**附加**。
 
       ![从“调试”菜单启动 Snapshot Debugger](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
     > [!IMPORTANT]
     > 第一次为 VM 选择“附加 Snapshot Debugger”时，IIS 将自动重启。
-    > 第一次为 VMSS 选择“附加 Snapshot Debugger”时，需要手动升级 VMSS 的每个实例。
+    > 选择第一次**附加 Snapshot Debugger**虚拟机规模集，需要手动升级每个虚拟机规模集实例。
 
     “模块”的元数据最初不会被激活，导航到 Web 应用，“开始收集”按钮将会激活。 Visual Studio 现在处于快照调试模式下。
 
@@ -66,9 +66,9 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
     > [!NOTE]
     > Application Insights 站点扩展还支持快照调试。 如果遇到“站点扩展过期”错误消息，请参阅[快照调试的疑难解答提示和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)以获取升级详细信息。
-    > 对于 VMSS，首次连接 Snapshot Debugger 后，用户需要手动升级其 VMSS 中的实例。
+    > VMSS 的用户时需要在其虚拟机规模集实例手动升级后首次连接 Snapshot Debugger。
 
-   “模块”窗口显示何时 Azure VM/VMSS 的所有模块都已加载（依次选择“调试”>“窗口”>“模块”可打开此窗口）。
+   **模块**窗口显示 Azure 虚拟 Machine\Virtual 机规模集的所有模块已都加载时 (选择**调试 > Windows > 模块**要打开此窗口)。
 
    ![选中“模块”窗口](../debugger/media/snapshot-modules.png)
 

@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661862"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在编辑器中更改字体和颜色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：  
   
 -   “字体”和“大小”设置适用于所有 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 编辑器中的所有文本元素。  

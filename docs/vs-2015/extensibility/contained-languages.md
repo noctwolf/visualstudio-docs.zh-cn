@@ -10,17 +10,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 670c1b751e5f1023530fe1f0c73ab16d24fd5328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 20a42d614278413e4e6ee09ecacdf842ccee878d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932512"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662239"
 ---
 # <a name="contained-languages"></a>包含的语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-  
 *包含语言*是所包含的其他语言的语言。 例如，在 HTML[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]可能包含页[!INCLUDE[csprcs](../includes/csprcs-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]脚本。 .Aspx 文件编辑器为 HTML 和脚本语言提供 IntelliSense、 着色、 和其他编辑功能需要双语言体系结构。  
   
 ## <a name="implementation"></a>实现  

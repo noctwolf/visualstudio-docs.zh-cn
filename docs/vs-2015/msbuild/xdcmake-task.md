@@ -20,17 +20,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0d306ec78087ed53ceca44b15f2e184397217650
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792884"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661953"
 ---
 # <a name="xdcmake-task"></a>XDCMake 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 XML 文档工具 (xdcmake.exe)，它将 XML 文档注释 (.xdc) 文件合并到一个 .xml 文件中。  
   
  如果在 Visual C++ 源代码中提供文档注释，并使用 [/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63) 编译器选项进行编译，就会创建 .xdc 文件。 有关详细信息，请参阅 [XDCMake 参考](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[“XML 文档生成器工具”属性页](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)和 xdcmake.exe 的命令行帮助选项 (**/?**)。  
@@ -41,7 +40,7 @@ ms.locfileid: "54792884"
 ## <a name="parameters"></a>参数  
  下表介绍了 **XDCMake** 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|可选 **String []** 参数。<br /><br /> 指定还要合并的一个或多个 .xdc 文件。<br /><br /> 有关详细信息，请参阅[“XML 文档生成器工具”属性页](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)中的**附加文档文件**说明。 另请参阅 xdcmake.exe 的 **/old** 和 **/Fs** 命令行选项。|  
 |**AdditionalOptions**|可选 **String** 参数。<br /><br /> 在命令行上指定的选项列表。 例如，“*/option1 /option2 /option#*”。 此参数用于指定无法由其他任何 **XDCMake** 任务参数表示的选项。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac)、[“XML 文档生成器工具”属性页](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0)和 xdcmake.exe 的命令行帮助 (**/?**)。|  

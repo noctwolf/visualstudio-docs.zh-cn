@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000833"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662603"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:检查未使用的参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的最新文档，请参阅[CA1801:检查未使用的参数](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com 上。  
+Visual Studio 的最新文档，请参阅[CA1801:检查未使用的参数](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)。  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |类别|Microsoft.Usage|  
-|是否重大更改|否-如果成员不是程序集，而不考虑所做的更改外部可见。<br /><br /> 否-如果您更改要使用其主体中的参数的成员。<br /><br /> 是-如果删除参数，它是程序集外部可见。|  
+|是否重大更改|无间断-如果该成员不可见程序集外部的而不考虑更改进行。<br /><br /> 无间断-如果您更改要使用其主体中的参数的成员。<br /><br /> 是-如果删除参数，它是程序集外部可见。|  
   
 ## <a name="cause"></a>原因  
  方法签名包含一个没有在方法体中使用的参数。 此规则不检查以下方法：  

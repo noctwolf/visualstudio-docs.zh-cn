@@ -13,16 +13,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17cfc810bbe8cfa303620b19c49941ba9085a849
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779354"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662552"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口或“查找/命令”  框中的命令。 在每种情况下，都使用大于号 (`>`) 指示后面跟随的是命令，而不是搜索或调试操作。
 
@@ -42,7 +41,7 @@ Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口�
 
  以下命令采用参数和/或开关。
 
-|命令名：|说明|
+|命令名：|描述|
 |------------------|-----------------|
 |[添加现有项](../../ide/reference/add-existing-item-command.md)|将现有文件添加到当前解决方案中并打开它。|
 |[添加现有项目](../../ide/reference/add-existing-project-command.md)|将现有项目添加到当前解决方案中。|

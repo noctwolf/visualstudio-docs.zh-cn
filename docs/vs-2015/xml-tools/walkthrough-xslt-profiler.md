@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fd5f581308a677f1de7cd9311d4a8649b3ea4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 003b4ed6407126c7b1b6992c9c99eb30d36379b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931067"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665384"
 ---
 # <a name="walkthrough-xslt-profiler"></a>演练：XSLT 探查器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XSLT 探查器可创建详细的 XSLT 性能报告，有助于度量、评估和锁定 XSLT 代码中与性能相关的问题。 XSLT 探查器包含有关 XSL 和 XSLT 样式表优化的有用提示。 对于需要最佳性能的 XSLT 应用程序，此工具必不可少。  
   
 ## <a name="prerequisites"></a>系统必备  

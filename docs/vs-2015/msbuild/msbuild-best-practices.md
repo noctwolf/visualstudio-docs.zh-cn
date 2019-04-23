@@ -12,17 +12,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad2070bb696a3ce326331d01145b3ef3b54ae5ec
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6973e905a0587ffdc7cbd0a401e03f933fc60a3a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780661"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662202"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 我们建议下列编写 MSBuild 脚本的最佳做法：  
   
 -   默认属性值的最佳处理方式是使用 `Condition` 特性，而不是声明可在命令行中重写其默认值的属性。 例如，使用  

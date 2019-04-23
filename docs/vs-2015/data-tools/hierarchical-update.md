@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934454"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663292"
 ---
 # <a name="hierarchical-update"></a>分层更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 分层更新 * 是指同时保持引用完整性规则保存更新后 （从具有两个或多个相关表的数据集） 返回到数据库的数据的过程。 *引用完整性*指提供的控制行为的插入、 更新和删除相关的记录在数据库中的约束的一致性规则。 例如，它是强制执行之前允许该客户的订单来创建客户记录的创建的引用完整性。  有关数据集中的关系的详细信息，请参阅[数据集中的关系](../data-tools/relationships-in-datasets.md)  
   
  分层更新功能使用`TableAdapterManager`来管理`TableAdapter`中类型化数据集。 `TableAdapterManager`组件是[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-生成类，因此它不属于[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 将表从数据源窗口拖到 Windows 窗体或 WPF 页后，Visual Studio 将类型 TableAdapterManager 的变量添加到窗体或页面，和你在组件栏中的设计器中看到它。 有关详细信息`TableAdapterManager`类，请参阅的 TableAdapterManager 参考部分[TableAdapterManager 概述](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  

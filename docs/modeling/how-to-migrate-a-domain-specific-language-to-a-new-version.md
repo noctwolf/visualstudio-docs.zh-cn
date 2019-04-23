@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dae9c7728de35c92c973c9fca097595b56aabaf5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869239"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663240"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 你可以迁移项目的定义和使用特定于域的语言设置为[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]的版本从[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]一起分发[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
@@ -81,7 +81,6 @@ ms.locfileid: "57869239"
    -   尝试生成项目，并调查任何故障。
 
    -   测试您的设计器。
-
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

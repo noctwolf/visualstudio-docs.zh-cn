@@ -12,21 +12,20 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7ab53b2f8918760fcfccdf6086073b0c808b80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5ee565786f4a1f7c1127217eeb551352ae02b72f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771974"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663409"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用 MSBuild 开关，可指定要查看的生成数据量，以及是否要将生成数据保存到一个或多个文件。 还可指定一个自定义记录器来收集生成数据。 对于本主题未涉及的 MSBuild 命令行开关的相关信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
->  如果使用 Visual Studio IDE 生成项目，则可通过查看生成日志排除这些生成中的故障。 有关详细信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
+>  如果使用 Visual Studio IDE 生成项目，则可通过查看生成日志排除这些生成中的故障。 有关详细信息，请参阅[如何：查看、 保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
   
 ## <a name="setting-the-level-of-detail"></a>设置详细信息级别  
  在不指定详细信息等级的情况下使用 MSBuild 生成项目时，输出日志中会出现以下信息：  

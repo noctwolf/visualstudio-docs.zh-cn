@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937680"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663987"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>从 UML 类关系图生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,6 @@ ms.locfileid: "58937680"
 
 4. 在该对话框中，设置文本模板绑定的属性。  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **说明**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        名称        |                                                                                                                                                                                                                                                  此绑定的名称。 若要替代继承自包含包或模型的某个绑定，请使用与要替代的绑定相同的名称。                                                                                                                                                                                                                                                  |
@@ -173,7 +172,6 @@ ms.locfileid: "58937680"
    |    项目路径    |                                                                      指定将包含转换的输出文件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的路径。 使用类型值创建新项目。 选择省略号按钮 (**[...]**) 若要选择一个现有项目。<br /><br /> 如果新项目不存在，则将创建它。 它将是一个 C# 类库项目。<br /><br /> 为此，你必须直接键入该项目。 可以包含环境变量宏，例如 %ProgramFiles% 或 %LocalAppData%。                                                                       |
    |  目标目录  |                                                                                          在其中生成目标文件的文件夹。 该路径是项目文件夹的相对路径。<br /><br /> 可以使用 `{PackageStructure}` 表达式插入与包含程序包的名称相对应的路径。 默认值为 `\GeneratedCode\{PackageStructure}`。 还可以包含环境变量，例如 %TEMP% 或 %HomePath%。 **重要说明：** `{PackageStructure}`可以仅在使用**目标目录**属性。                                                                                          |
    | 模板文件路径 |                                                                                                                                                           将执行转换的模板。<br /><br /> 可以使用提供的模板或创建你自己的模板。 可在以下位置找到提供的模板：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. 可将所需数量的绑定附加到一个元素。  
 

@@ -25,17 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932327"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661576"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用设计器创建 SQL 数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以浏览基本任务，例如添加表和定义列，通过使用 Visual Studio 创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 在完成本演练后，以本地数据库为起点进行其他演练，你会发现更高级的功能。  
   
  此外可以通过使用 SQL Server Management Studio （单独下载） 或 TRANSACT-SQL 语句中的创建数据库**SQL Server 对象资源管理器**Visual Studio 工具窗口中的。  

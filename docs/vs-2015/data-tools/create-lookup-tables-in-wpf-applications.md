@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58937183"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663777"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 术语*查找表*(有时称为*查找绑定*) 介绍了一个控件，显示来自一个数据表基于另一个表中的外键字段的值的信息。 可以通过拖动对主节点的父表中创建查找表或对象中**数据源**窗口拖到已绑定到列或相关的子表中的属性的控件。  
   
  例如，考虑一个表的`Orders`销售数据库中。 中的每条`Orders`表包含`CustomerID`，该值指示哪个客户下达订单。 `CustomerID`是指向客户记录中的外键`Customers`表。 当显示从订单的列表`Orders`表中，您可能希望显示实际的客户名称而不是`CustomerID`。 因为客户名称在`Customers`表，需要创建一个查找表来显示客户名称。 查找表使用`CustomerID`中的值`Orders`记录导航关系，并返回客户名称。  

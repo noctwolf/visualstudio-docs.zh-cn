@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641749"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665202"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>演练：创建在第一个 VSTO 外接程序项目
   本演练演示如何为 Microsoft Office Project 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的项目无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -91,7 +91,6 @@ ms.locfileid: "56641749"
 1.  如果你使用的是 C#，请将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码连接`Application_Newproject`与 NewProject 事件的事件处理程序。
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>测试项目
  生成和运行项目时，应验证新任务是否会显示在所得的新项目中。

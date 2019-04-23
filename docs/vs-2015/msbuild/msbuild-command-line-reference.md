@@ -18,17 +18,16 @@ caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56784e960729292c46d9b1241fc7e3504c6e434
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8d40bfefb1f89496b538612dfa1819cc6d65c76c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777490"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663436"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用 MSBuild.exe 生成项目或解决方案文件时，可以包含几个开关来指定过程的各个方面。  
   
 ## <a name="syntax"></a>语法  
@@ -39,13 +38,13 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ## <a name="arguments"></a>自变量  
   
-|参数|说明​​|  
+|参数|描述|  
 |--------------|-----------------|  
 |`ProjectFile`|在指定项目文件中生成目标。 如果不指定项目文件，则 MSBuild 会在当前工作目录中搜索以“proj”结尾的文件扩展名并使用该文件。 还可以为此参数指定 Visual Studio 解决方案文件。|  
   
 ## <a name="switches"></a>开关  
   
-|开关|缩写形式|说明​​|  
+|开关|缩写形式|描述|  
 |------------|----------------|-----------------|  
 |/help|/? 或 /h|显示用法信息。 以下命令是一个示例：<br /><br /> `msbuild.exe /?`|  
 |/detailedsummary|/ds|在生成日志末尾显示有关生成的配置以及如何将它们安排到节点中的详细信息。|  
@@ -54,10 +53,10 @@ MSBuild.exe [Switches] [ProjectFile]
 |/noautoresponse|/noautorsp|不自动包含任何 MSBuild.rsp 文件。|  
 |/nodeReuse:`value`|/nr:`value`|启用或禁用 MSBuild 节点的重复使用。 你可以指定以下值：<br /><br /> -   **True**。 节点在生成完成之后保留，以便后续生成可以使用它们（默认值）。<br />-   **False**。 节点在生成完成之后不保留。<br /><br /> 节点对应于正在执行的项目。 如果包含 **/maxcpucount** 开关，则多个节点可以并发执行。|  
 |/nologo||不显示启动版权标志或版权消息。|  
-|/preprocess[:`filepath`]|/pp[:`filepath`]|通过内联会在生成期间导入的所有文件（标记其边界）创建单一的聚合项目文件。 可以使用此开关更轻松地确定所导入的文件、从中导入文件的位置以及参与生成的文件。 使用此开关时，不生成项目。<br /><br /> 如果指定 `filepath`，则会将聚合项目文件输出到文件。 否则，输出将显示在控制台窗口中。<br /><br /> 若要了解如何使用 `Import` 元素将项目文件插入到另一个项目文件，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。|  
+|/preprocess[:`filepath`]|/pp[:`filepath`]|通过内联会在生成期间导入的所有文件（标记其边界）创建单一的聚合项目文件。 可以使用此开关更轻松地确定所导入的文件、从中导入文件的位置以及参与生成的文件。 使用此开关时，不生成项目。<br /><br /> 如果指定 `filepath`，则会将聚合项目文件输出到文件。 否则，输出将显示在控制台窗口中。<br /><br /> 有关如何使用信息`Import`元素将项目文件插入到另一个项目文件，请参阅[Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)和[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。|  
 |/property:`name`=`value`|/p:`name`=`value`|设置或重写指定项目级属性，其中 `name` 是属性名称，`value` 是属性值。 单独指定每个属性，或使用分号或逗号分隔多个属性，如以下示例所示：<br /><br /> `/property:WarningLevel=2;OutDir=bin\Debug`|  
 |/target:`targets`|/t:`targets`|在项目中生成指定目标。 单独指定每个目标，或使用分号或逗号分隔多个目标，如以下示例所示：<br /><br /> `/target:Resources;Compile`<br /><br /> 如果使用此开关指定任何目标，则它们会代替项目文件中的 `DefaultTargets` 特性中的任何目标来运行。 有关详细信息，请参阅[目标生成顺序](../msbuild/target-build-order.md)和[如何：指定首先生成的目标](../msbuild/how-to-specify-which-target-to-build-first.md)。<br /><br /> 目标是一组任务。 有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)。|  
-|/toolsversion:`version`|/tv:`version`|指定要用于生成项目的工具集的版本，如以下示例所示：`/toolsversion:3.5`<br /><br /> 使用此开关可以生成项目并指定与 [Project 元素 (MSBuild)](../msbuild/project-element-msbuild.md) 中指定的版本不同的版本。 有关详细信息，请参阅[重写 ToolsVersion 设置](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 对于 MSBuild 4.5，可以为 `version` 指定以下值：2.0、3.5 和 4.0。 如果指定 4.0，`VisualStudioVersion` 生成属性会指定要使用的子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的“子工具集”一节。<br /><br /> 包含用于生成应用程序的任务、目标和工具的工具集。 工具包括编译器例如 csc.exe 和 vbc.exe。 有关工具集的详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)和[多定向](../msbuild/msbuild-multitargeting-overview.md)。 **注意：** 工具集版本与目标框架不同，后者是生成项目以在其上运行的 .NET Framework 的版本。 有关详细信息，请参阅[目标框架和目标平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|  
+|/toolsversion:`version`|/tv:`version`|指定要用于生成项目的工具集的版本，如以下示例所示：`/toolsversion:3.5`<br /><br /> 使用此开关可以生成项目并指定与 [Project 元素 (MSBuild)](../msbuild/project-element-msbuild.md) 中指定的版本不同的版本。 有关详细信息，请参阅[重写 ToolsVersion 设置](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 对于 MSBuild 4.5，可以为 `version` 指定以下值：2.0、3.5 和 4.0。 如果指定 4.0，`VisualStudioVersion` 生成属性会指定要使用的子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的“子工具集”一节。<br /><br /> 包含用于生成应用程序的任务、目标和工具的工具集。 工具包括编译器例如 csc.exe 和 vbc.exe。 有关工具集的详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)和[多定向](../msbuild/msbuild-multitargeting-overview.md)。 **注意：** 工具集版本与目标框架不同，后者是生成项目以其其上运行的 .NET Framework 的版本。 有关详细信息，请参阅[目标框架和目标平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|  
 |/validate:[`schema`]|/val[`schema`]|验证项目文件，如果验证成功，则生成项目。<br /><br /> 如果没有指定 `schema`，则针对默认架构验证项目。<br /><br /> 如果指定 `schema`，则针对指定的架构验证项目。<br /><br /> 下面的设置是一个示例：`/validate:MyExtendedBuildSchema.xsd`|  
 |/verbosity:`level`|/v:`level`|指定要在生成日志中显示的信息量。 每个记录器基于为该记录器设置的详细级别显示事件。<br /><br /> 可以指定以下详细级别：`q[uiet]`、`m[inimal]`、`n[ormal]`、`d[etailed]` 和 `diag[nostic]`。<br /><br /> 下面的设置是一个示例：`/verbosity:quiet`|  
 |/version|/ver|仅显示版本信息。 不生成项目。|  
@@ -65,7 +64,7 @@ MSBuild.exe [Switches] [ProjectFile]
   
 ### <a name="switches-for-loggers"></a>记录器的开关  
   
-|开关|缩写形式|说明​​|  
+|开关|缩写形式|描述|  
 |------------|----------------|-----------------|  
 |/consoleloggerparameters:<br /><br /> `parameters`|/clp:`parameters`|将指定的参数传递到控制台记录器，后者会在控制台窗口中显示生成信息。 可以指定以下参数：<br /><br /> -   **PerformanceSummary**。 显示在任务、目标和项目中所花费的时间。<br />-   **Summary**。 在末尾显示错误和警告摘要。<br />-   **NoSummary**。 不在末尾显示错误和警告摘要。<br />-   **ErrorsOnly**。 仅显示错误。<br />-   **WarningsOnly**。 仅显示警告。<br />-   **NoItemAndPropertyList**。 如果详细级别设置为 `diagnostic`，则不在每个项目生成开头显示项和属性的列表。<br />-   **ShowCommandLine**。 显示 `TaskCommandLineEvent` 消息。<br />-   **ShowTimestamp**。 将时间戳显示为任何消息的前缀。<br />-   **ShowEventId**。 显示每个已启动事件、已完成事件和消息的事件 ID。<br />-   **ForceNoAlign**。 不将文本与控制台缓冲区大小对齐。<br />-   **DisableConsoleColor**。 将默认控制台颜色用于所有日志记录消息。<br />-   **DisableMPLogging**。 在非多处理器模式下运行时，禁用输出的多处理器日志记录样式。<br />-   **EnableMPLogging**。 启用多处理器日志记录样式（即使在非多处理器模式下运行）。 默认情况下，此日志记录样式处于启用状态。<br />-   **Verbosity**。 重写此记录器的 **/verbosity** 设置。<br /><br /> 使用分号或逗号分隔多个参数，如以下示例所示：<br /><br /> `/consoleloggerparameters:PerformanceSummary;NoSummary /verbosity:minimal`|  
 |/distributedFileLogger|/dfl|将每个 MSBuild 节点的生成输出记录到其自己的文件。 这些文件的初始位置是当前目录。 默认情况下，这些文件命名为“MSBuild*NodeId*.log”。 可以使用 **/fileLoggerParameters** 开关指定文件位置和 fileLogger 的其他参数。<br /><br /> 如果使用 **/fileLoggerParameters** 开关命名日志文件，则分布式记录器会在为每个节点创建日志文件时使用该名称作为模板并将节点 ID 追加到该名称。|  

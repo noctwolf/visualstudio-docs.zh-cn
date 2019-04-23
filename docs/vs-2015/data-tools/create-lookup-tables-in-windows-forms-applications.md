@@ -17,17 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933675"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663227"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 术语*查找表*描述了绑定到两个相关的数据表的控件。 这些查找的控件显示基于所选第二个表中的值的第一个表中的数据。  
   
  可以通过拖动对主节点的父表中创建查找表 (从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) 拖到窗体已绑定到相关的子表中的列上的控件。  

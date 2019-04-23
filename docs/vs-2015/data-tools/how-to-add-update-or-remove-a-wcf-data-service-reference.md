@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bc4ebbb8ae22604d7ec803fd4234839a17694de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 33c0f0235e2f4fe2fb633a94a024563b4fb9b276
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933999"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664917"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 一个*服务参考*使得访问一个或多个项目[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。 使用**添加服务引用**对话框可以搜索[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]在当前解决方案中，本地、 在本地网络，或在 Internet 上。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

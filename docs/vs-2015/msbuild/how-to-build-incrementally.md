@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803905"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662248"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 生成一个大项目时，不重新生成以前生成过但仍然为最新状态的组件十分重要。 如果每次都生成所有目标，则每次生成都需要很长时间才能完成。 为了启用增量生成（这类生成仅重新生成以前未生成过或已过期的目标）， [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 但是，在输入和输出之间必须存在一对一映射。 可以使用转换来使目标能够识别此直接映射。 有关转换的详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。  
   
 ## <a name="specifying-inputs-and-outputs"></a>指定输入和输出  
@@ -31,7 +30,7 @@ ms.locfileid: "54803905"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目标的输入和输出  
   
-- 使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如:  
+- 使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如：  
   
   ```  
   <Target Name="Build"  
@@ -62,9 +61,9 @@ ms.locfileid: "54803905"
 ## <a name="example"></a>示例  
  以下示例使用的项目为假设的帮助系统生成帮助文件。 执行该项目时，会将 .txt 源文件转换为 .content 中间文件，随后，.content 中间文件与 XML 元数据文件合并，生成帮助系统使用的 .help 最终文件。 该项目使用以下假设任务：  
   
-- `GenerateContentFiles`：将 .txt 文件转换成 .content 文件。  
+- `GenerateContentFiles`：将.txt 文件转换成.content 文件。  
   
-- `BuildHelp`：将 .content 文件与 XML 元数据文件合并，生成 .help 最终文件。  
+- `BuildHelp`：将合并.content 文件与 XML 元数据文件，生成.help 最终文件。  
   
   该项目通过转换过程来建立 `GenerateContentFiles` 任务中输入和输出之间的一一映射。 有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。 此外，设置了 `Output` 元素，以便自动将 `GenerateContentFiles` 任务的输出用作 `BuildHelp` 任务的输入。  
   

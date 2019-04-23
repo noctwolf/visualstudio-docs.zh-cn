@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000648"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664795"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本演练演示如何在 Visual Studio 中使用 SQL Server LocalDB，Northwind 数据库、 Entity Framework 6 和 Windows Presentation Foundation 创建一个基本"forms over data"应用程序。 它演示如何执行基本数据绑定的大纲-细节视图，并且也包含自定义"绑定导航器"的"移动上的下一步"按钮，"移动上一个""将移到开头，""移到末尾，""更新"和"删除"。  
   
  本文重点介绍在 Visual Studio 中，使用数据工具并不会尝试解释中任何深度的基础技术。 它假定你已基本熟悉 XAML、 实体框架和 SQL。 此示例中也并不演示 MVVM 体系结构，它是用于 WPF 应用程序的标准。 但是，可以将此代码复制到自己非常稍作修改的 MVVM 应用程序。  

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953644"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665618"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上，或者由于网络问题或存在防火墙而无法访问远程计算机，可能会出现此消息。
@@ -81,7 +81,6 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 - 远程调试器版本与 Visual Studio 不匹配。 若要获取远程调试器的正确版本，请参阅[远程调试](../debugger/remote-debugging.md)
 
-
 ## <a name="valid_name"></a> 请求的名称是有效的但未找到所请求类型的任何数据
 
 在远程计算机存在，但 Visual Studio 无法连接到远程调试器。 此消息可能会发生以下几个原因：
@@ -118,7 +117,7 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 ### <a name="server_incorrect"></a> 服务器名称不正确或第三方软件正在干扰远程调试器
 
-在 Visual Studio 中，查看项目属性，并确保服务器名称正确。 请参阅主题[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)并[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 对于 ASP.NET 中，打开**属性 / Web / 服务器**或**属性 / 调试**具体取决于您的项目类型。
+在 Visual Studio 中，查看项目属性，并确保服务器名称正确。 请参阅主题[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)并[ C++ ](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 对于 ASP.NET 中，打开**属性 / Web / 服务器**或**属性 / 调试**具体取决于您的项目类型。
 
 > [!NOTE]
 > 如果您附加到进程，不使用项目属性中的远程设置。

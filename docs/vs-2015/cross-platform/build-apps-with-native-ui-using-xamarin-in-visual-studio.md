@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665683"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 完成[设置和安装](../cross-platform/setup-and-install.md)以及[验证 Xamarin 环境](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演示将介绍如何使用本机 UI 层生成基本 Xamarin 应用（如下所示）。 在本机 UI 中，共享代码驻留在可移植类库 (PCL) 中，并且单个平台项目都包含 UI 定义。
 
@@ -248,7 +247,7 @@ ms.locfileid: "56954103"
 
 7.  在“属性”窗口中，设置这些属性（注意：它有助于使用“属性”窗口工具栏中的排序按钮对列表进行按字母顺序排序）：
 
-    |Property|“值”|
+    |属性|“值”|
     |--------------|-----------|
     |**text**|**根据“邮政编码”进行搜索**|
     |**id**|`@+id/ZipCodeSearchLabel`|
@@ -280,7 +279,7 @@ ms.locfileid: "56954103"
 
 9. 在 **“属性”** 窗口中，设置以下属性：
 
-    |属性|值|
+    |属性|“值”|
     |--------------|-----------|
     |**文本**|**“邮政编码”**|
     |**id**|`@+id/ZipCodeLabel`|
@@ -302,7 +301,7 @@ ms.locfileid: "56954103"
 
 10. 在“工具箱”中，将“数字”控件拖动到“RelativeLayout”上，然后将其放置在“邮政编码”标签下。 然后设置以下属性：
 
-    |Property|值|
+    |属性|“值”|
     |--------------|-----------|
     |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -325,7 +324,7 @@ ms.locfileid: "56954103"
 
 11. 在“工具箱”中，将“按钮”拖动到“RelativeLayout”控件上，然后将其放置在 zipCodeEntry 控件的右侧。 然后设置这些属性：
 
-    |Property|“值”|
+    |属性|“值”|
     |--------------|-----------|
     |**id**|`@+id/weatherBtn`|
     |**文本**|**获取天气信息**|
@@ -519,7 +518,7 @@ ms.locfileid: "56954103"
 
 2.  选择合适的设备或仿真器目标，然后按 F5 键启动该应用。
 
-3.  在设备上或在仿真器中，将有效的美国邮政编码键入编辑框（例如：60601），然后按“获取天气信息”。 然后，控件中将显示此区域的天气数据。
+3.  在设备上或在模拟器中，在编辑框中键入有效的美国邮政编码 (例如：60601)，然后按**获取天气信息**。 然后，控件中将显示此区域的天气数据。
 
      ![适用于 Android 和 Windows Phone 的天气应用](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ ms.locfileid: "56954103"
 
 2.  按 F5 键，启动此应用。
 
-3.  在 Windows Phone 仿真器中，将有效的美国邮政编码键入编辑框（例如：60601），然后按“获取天气信息”。 然后，控件中将显示此区域的天气数据。
+3.  在 Windows Phone 仿真程序中，键入有效的美国邮政编码编辑框 (例如：60601)，然后按**获取天气信息**。 然后，控件中将显示此区域的天气数据。
 
      ![正在运行的应用的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

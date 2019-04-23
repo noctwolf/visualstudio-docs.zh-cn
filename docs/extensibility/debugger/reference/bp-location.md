@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcae8b30a0bcd7275bc0e2bebd45f834f43269d9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 85f8c915f5c0d6d81214220f78c7db0544777cda
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679330"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663318"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 指定用于描述该断点的位置的结构的类型。
@@ -55,31 +55,31 @@ public struct BP_LOCATION {
 
 `bpLocation`.`bplocCodeFileLine`
 
- [C + +]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。
+ [C++仅]包含[BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FILE_LINE`。
 
 `bpLocation.bplocCodeFuncOffset`
 
- [C + +]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。
+ [C++仅]包含[BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md)结构，如果`bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`。
 
 `bpLocation.bplocCodeContext`
 
- [C + +]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)结构，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。
+ [C++仅]包含[BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md)结构，如果`bpLocationType`  =  `BPLT_CODE_CONTEXT`。
 
 `bpLocation.bplocCodeString`
 
- [C + +]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)结构，如果`bpLocationType`  =  `BPLT_CODE_STRING`。
+ [C++仅]包含[BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md)结构，如果`bpLocationType`  =  `BPLT_CODE_STRING`。
 
 `bpLocation.bplocCodeAddress`
 
- [C + +]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)结构，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。
+ [C++仅]包含[BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)结构，如果`bpLocationType`  =  `BPLT_CODE_ADDRESS`。
 
 `bpLocation.bplocDataString`
 
- [C + +]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)结构，如果`bpLocationType`  =  `BPLT_DATA_STRING`。
+ [C++仅]包含[BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)结构，如果`bpLocationType`  =  `BPLT_DATA_STRING`。
 
 `bpLocation.bplocResolution`
 
- [C + +]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)结构，如果`bpLocationType`  =  `BPLT_RESOLUTION`。
+ [C++仅]包含[BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)结构，如果`bpLocationType`  =  `BPLT_RESOLUTION`。
 
 `unionmember1`
 
@@ -99,7 +99,6 @@ public struct BP_LOCATION {
 
 ## <a name="remarks"></a>备注
 此结构是的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。
-
 
  [C#仅]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpLocationType`值，然后查看其他列来确定每个跨`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅解释 C# 中的此结构的一部分的方法的示例。
 

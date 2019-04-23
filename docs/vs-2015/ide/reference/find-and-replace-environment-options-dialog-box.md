@@ -15,17 +15,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc374d536997c05aed644a80fe3826283d208569
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758177"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661759"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“查找和替换”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“选项”对话框的此页，可以控制消息框及查找和替换操作的其他方面。 单击“选项”，扩展“环境”，然后单击“查找和替换”，即可从“工具”菜单访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   
 > [!NOTE]

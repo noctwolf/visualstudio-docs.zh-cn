@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935751"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662967"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 及其相关技术对 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 中处理数据的方式起着十分重要的作用。 Visual Studio 提供了一些工具和功能，可以更加容易地使用 XML、XSLT 和 XML 架构。  
   
 ## <a name="xml-editor"></a>XML 编辑器  
