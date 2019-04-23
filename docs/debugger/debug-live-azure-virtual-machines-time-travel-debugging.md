@@ -13,18 +13,18 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: d392e19bb51cd981cc833535556eb083e8e5ba07
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59672474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112346"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>记录和重播使用快照调试程序的 Azure 虚拟机上的实时 ASP.NET 应用
 
-Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能来记录运行在 Azure 虚拟机 (VM) 上的 Web 应用准确地重新构造并重播的执行路径。 与产品/服务并允许您后退并重播每行代码，但是很多时候你想，能帮助您隔离并确定可能只发生在生产环境中的问题。 我们快照调试程序集成，TTD。
+Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能来记录 Azure 虚拟机 (VM) 上运行的 Web 应用准确地重新构造并重播的执行路径。 TTD 与快照调试程序集成，并允许您后退并重播每行代码所需，从而帮助你隔离并识别问题可能只发生在生产环境中的任意次数。
 
-捕获 TTD 录制将不会暂停应用程序，但是，记录会将很大的开销添加到你正在运行的进程，降低它的速度基础上包括的大小和活动线程数的因素。
+捕获 TTD 录制将不会暂停应用程序。 但是，TDD 录制将添加到你正在运行的进程，降低它的速度基础上包括的大小和活动线程数的因素的很大的开销。
 
 此功能处于预览版的发行版的 Visual Studio 2019 转实时许可证。
 
@@ -32,8 +32,8 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 > [!div class="checklist"]
 > * 启用时间旅行调试启动 Snapshot Debugger
-> * 设置吸附点，并收集按时间顺序查看录制
-> * 开始调试按时间顺序查看录制
+> * 设置吸附点，并且收集一次移动录制
+> * 开始调试时间旅行录制
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -46,7 +46,7 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 ## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>打开项目并启动时间旅行启用了调试快照调试器
 
-1. 打开你想要收集的按时间顺序查看录制的项目。
+1. 打开该项目为你想要收集一次的旅行录制。
 
     > [!IMPORTANT]
     > 若要启动 TTD，您需要打开*相同版本的源代码*，它发布到 Azure VM 服务。
@@ -58,24 +58,24 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
     > [!IMPORTANT]
     > 第一次为 VM 选择“附加 Snapshot Debugger”时，IIS 将自动重启。
 
-    “模块”的元数据最初不会被激活，导航到 Web 应用，“开始收集”按钮将会激活。 Visual Studio 现在处于快照调试模式下。
+    元数据**模块**最初未激活。 导航到 web 应用和**开始收集**然后按钮将变为活动状态。 Visual Studio 现在处于快照调试模式下。
 
    ![快照调试模式](../debugger/media/snapshot-message.png)
 
     > [!NOTE]
     > Application Insights 站点扩展还支持快照调试。 如果遇到“站点扩展过期”错误消息，请参阅[快照调试的疑难解答提示和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)以获取升级详细信息。
 
-   **模块**窗口显示你的 Azure vm 的所有模块已都加载时 (选择**调试 > Windows > 模块**要打开此窗口)。
+   **模块**窗口中显示的所有模块的 Azure vm 的都加载时 (选择**调试 > Windows > 模块**要打开此窗口)。
 
    ![选中“模块”窗口](../debugger/media/snapshot-modules.png)
 
-## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>设置吸附点，并收集按时间顺序查看录制
+## <a name="set-a-snappoint-and-collect-a-time-travel-recording"></a>设置吸附点，并且收集一次移动录制
 
 1. 在代码编辑器中，单击你感兴趣设置吸附点的方法中的左滚动条槽。 请确保它是你已知将执行的代码。
 
    ![设置快照点](../debugger/media/time-travel-debugging-set-snappoint-settings.png)
 
-1. 右键单击吸附点图标 （空心球），然后选择**操作**。 在快照设置窗口中单击**操作**复选框。 然后单击**到此方法的末尾收集时间旅行跟踪**复选框。
+1. 右键单击吸附点图标 （空心球），然后选择**操作**。 在中**快照设置**窗口中，单击**操作**复选框。 然后单击**到此方法的末尾收集时间旅行跟踪**复选框。
 
    ![收集一次传输到在方法结束跟踪](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
@@ -85,9 +85,9 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 ## <a name="take-a-snapshot"></a>获取快照
 
-启用快照点后，它将在快照点所在的代码行执行时捕获快照。 此执行可能由服务器上的实际请求引起。 若要强制命中快照点，请转到网站的浏览器视图，并执行命中快照点所需的任何操作。
+吸附点启用，则它会捕获快照，只要的吸附点放置的位置的代码行执行。 此执行可能引起您的服务器上的实际请求。 若要强制命中快照点，请转到网站的浏览器视图，并执行命中快照点所需的任何操作。
 
-## <a name="start-debugging-a-time-travel-recording"></a>开始调试按时间顺序查看录制
+## <a name="start-debugging-a-time-travel-recording"></a>开始调试时间旅行录制
 
 1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”。
 
@@ -95,7 +95,7 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 1. 单击查看快照链接以打开录制在代码编辑器中按时间顺序查看。
   
-   您可以执行的每一行代码使用记录的 TTD**继续**并**反向继续**按钮。 此外可用于调试工具栏**显示下一条语句**，**单步执行**，**单步跳过**，**单步跳出**， **单步执行重新**，**逐过程执行回**，**步骤回**。
+   您可以执行的每一行代码使用记录的 TTD**继续**并**反向继续**按钮。 此外，**调试**工具栏可用于**显示下一条语句**，**单步执行**，**单步跳过**，**单步跳出**，**步骤回**，**逐过程执行回**，**步骤回**。
 
    ![开始调试](../debugger/media/time-travel-debugging-step-commands.png)
 
@@ -109,11 +109,11 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 ## <a name="set-a-conditional-snappoint"></a>设置条件性快照点
 
-如果难以在应用中重新创建某一特定状态，请考虑使用条件性快照点是否会有所帮助。 避免收集应用程序之前按时间顺序查看录制的条件的吸附点帮助将进入所需的状态，例如当一个变量具有你想要检查的特定值。 [可以设置使用表达式，筛选器条件或命中次数](../debugger/debug-live-azure-apps-troubleshooting.md)。
+如果难以在应用中重新创建某一特定状态，请考虑使用条件性快照点是否会有所帮助。 条件的吸附点帮助避免收集一次传输录制直到应用程序进入所需的状态，例如当一个变量具有你想要检查的特定值。 [可以设置使用表达式，筛选器条件或命中次数](../debugger/debug-live-azure-apps-troubleshooting.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中，已学习了如何收集 Azure 虚拟机的按时间顺序查看录制。 您可能想要详细了解快照调试程序。
+在本教程中，已学习了如何收集记录适用于 Azure 虚拟机按时间顺序查看。 您可能想要详细了解快照调试程序。
 
 > [!div class="nextstepaction"]
 > [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)
