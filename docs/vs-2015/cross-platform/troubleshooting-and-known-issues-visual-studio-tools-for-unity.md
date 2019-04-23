@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2be08b563c67b210f8e70df36f49b9fa4c68316
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095953"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "59660640"
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>若要将 Unity 项目从 UnityVS 1.8 迁移到 Visual Studio Tools for Unity 1.9  
   
-1.  从 Unity 项目中将旧的解决方案和项目文件删除。 在 Unity 项目的根目录中，找到 Visual Studio .sln 和 .*proj 文件并将其全部删除。  
+1. 从 Unity 项目中将旧的解决方案和项目文件删除。 在 Unity 项目的根目录中，找到 Visual Studio .sln 和 .*proj 文件并将其全部删除。  
   
-2.  将 Visual Studio Tools for Unity 包导入 Unity 项目中。 有关如何导入 VSTU 包的信息，请参阅 [入门](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 页面上的“配置 Visual Studio Tools for Unity”。  
+2. 将 Visual Studio Tools for Unity 包导入 Unity 项目中。 有关如何导入 VSTU 包的信息，请参阅 [入门](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) 页面上的“配置 Visual Studio Tools for Unity”。  
   
-3.  生成新的解决方案和项目文件。 如果想要立即生成它们，则在 Unity 编辑器中的主菜单上，选择“Visual Studio Tools” 、“生成项目文件” 。 或者如果愿意，可以跳过此步骤；当选择“Visual Studio Tools” 、“在 Visual Studio 中打开” 时，Visual Studio Tools for Unity 会自动生成新的文件。  
+3. 生成新的解决方案和项目文件。 如果想要立即生成它们，则在 Unity 编辑器中的主菜单上，选择“Visual Studio Tools” 、“生成项目文件” 。 或者如果愿意，可以跳过此步骤；当选择“Visual Studio Tools” 、“在 Visual Studio 中打开” 时，Visual Studio Tools for Unity 会自动生成新的文件。  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio 不会加载 Visual Studio Tools for Unity 创建的解决方案  
  有关详细信息，请参阅 [此 stackoverflow 问题的答案](http://stackoverflow.com/a/24035907/36702)。  
@@ -44,11 +44,11 @@ ms.locfileid: "59660640"
 ## <a name="known-issues"></a>已知问题  
  在 Visual Studio Tools for Unity 中存在一些已知问题，是由调试器与 Unity 的旧版本的 C# 编译器的交互方式导致的。 我们正设法帮助解决这些问题，但在此期间，你可能会遇到以下问题。  
   
--   在调试时，Unity 有时会崩溃。  
+- 在调试时，Unity 有时会崩溃。  
   
--   在调试时，Unity 有时会冻结。  
+- 在调试时，Unity 有时会冻结。  
   
--   有时单步执行和跳出方法的方式不正确，尤其是在迭代器中或在 switch 语句内。  
+- 有时单步执行和跳出方法的方式不正确，尤其是在迭代器中或在 switch 语句内。  
   
 ## <a name="reporting-errors"></a>报告错误  
  请在遇到崩溃、冻结或其他错误时发送错误报告以帮助我们改进 Visual Studio Tools for Unity 的质量。 这可以帮助我们调查并修复 Visual Studio Tools for Unity 中的问题。 谢谢！  

@@ -8,37 +8,37 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c7dc7557c91d82c89e612da7b78e3a889ad01e
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096252"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
-##  <a name="BKMK_TheEnvironmentFont"></a> 环境字体
+## <a name="BKMK_TheEnvironmentFont"></a> 环境字体
  Visual Studio 中的所有字体必须针对自定义向用户都公开。 这主要是通过**字体和颜色**页面**工具 > 选项**对话框。 字体设置的三个主要类别是：
 
--   **环境字体**-IDE （集成的开发环境），用于所有界面元素，包括对话框、 菜单、 工具窗口和文档窗口的主要字体。 默认情况下，环境字体将关联到显示为 9 pt Segoe UI 在当前版本的 Windows 系统字体。 所有界面元素都使用一种字体，可帮助确保整个 IDE 具有一致的字体的外观。
+- **环境字体**-IDE （集成的开发环境），用于所有界面元素，包括对话框、 菜单、 工具窗口和文档窗口的主要字体。 默认情况下，环境字体将关联到显示为 9 pt Segoe UI 在当前版本的 Windows 系统字体。 所有界面元素都使用一种字体，可帮助确保整个 IDE 具有一致的字体的外观。
 
--   **文本编辑器**-在页的图面上的代码和其他基于文本的编辑器可以自定义文本编辑器中的元素**工具 > 选项**。
+- **文本编辑器**-在页的图面上的代码和其他基于文本的编辑器可以自定义文本编辑器中的元素**工具 > 选项**。
 
--   **特定集合**-提供用户自定义其界面元素的可能会公开特定于它们的设计的字体的设计器窗口图面自己设置页中**工具 > 选项**。
+- **特定集合**-提供用户自定义其界面元素的可能会公开特定于它们的设计的字体的设计器窗口图面自己设置页中**工具 > 选项**。
 
 ### <a name="editor-font-customization-and-resizing"></a>自定义编辑器字体和大小调整
  用户通常将放大或缩放大小和/或根据其喜好，独立于常规用户界面编辑器中文本的颜色。 环境字体中或作为一个编辑器/设计器的一部分可能会出现的元素上使用，所以务必要注意的预期的行为，这些字体分类之一发生更改时。
 
  创建时出现的 UI 元素在编辑器但不是属于*内容*，务必要使用环境字体并不将文本字体，以便在可预测的方式调整元素的大小。
 
-1.  代码编辑器中的文本，与代码文本字体设置调整大小并响应编辑器文本的缩放级别。
+1. 代码编辑器中的文本，与代码文本字体设置调整大小并响应编辑器文本的缩放级别。
 
-2.  接口的所有其他元素应绑定到环境字体设置，并对在环境中的任何全局更改做出响应。 这包括 （但不限于）：
+2. 接口的所有其他元素应绑定到环境字体设置，并对在环境中的任何全局更改做出响应。 这包括 （但不限于）：
 
-    -   上下文菜单中的文本
+    - 上下文菜单中的文本
 
-    -   文本在编辑器中使用修饰，如灯泡菜单文本，快速查找编辑器窗格中，并导航到窗格
+    - 文本在编辑器中使用修饰，如灯泡菜单文本，快速查找编辑器窗格中，并导航到窗格
 
-    -   对话框中的文本标签等**在文件中查找**或**重构**
+    - 对话框中的文本标签等**在文件中查找**或**重构**
 
 ### <a name="accessing-the-environment-font"></a>访问环境字体
  在本机模式或 WinForms 代码中，可以通过调用方法访问环境字体`IUIHostLocale::GetDialogFont`查询从接口后`SID_SUIHostLocale`服务。
@@ -87,7 +87,7 @@ window.ShowModal()
 <Setter Property="FontSize" Value="{DynamicResource VsFont.EnvironmentFontSize}" />
 ```
 
-###  <a name="BKMK_Formatting"></a> 格式设置 （缩放/粗体） 参考
+### <a name="BKMK_Formatting"></a> 格式设置 （缩放/粗体） 参考
  某些对话框需要特定的文本为粗体或以外的环境字体的大小。 以前，大于环境字体的字体已编码为"`environment font +2`"或类似。 使用提供的代码片段将支持高 DPI 监视器，并确保在正确的大小和权重 （如 Light 或 Semilight） 始终显示的显示文本。
 
 > **注意：应用格式设置之前，请确保您按照中的指南[文本样式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。**
@@ -300,7 +300,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  若要重置字体，请单击"使用默认值"下**工具 > 选项 > 环境 > 字体和颜色**。
 
-##  <a name="BKMK_TextStyle"></a> 文本样式
+## <a name="BKMK_TextStyle"></a> 文本样式
  文本样式引用字体大小、 宽度和大小写。 实现指南，请参阅[环境字体](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
 
 ### <a name="text-casing"></a>文本大小写
@@ -359,9 +359,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>句子首字母大写
  句子大小写标准大小写的方法是以写入中只有第一个句子的词而大写，以及任何专有名词和代词"I"。 一般情况下，句首大写容易为全球的客户，若要阅读，尤其是当内容将被转换一台计算机。 使用句子大小写的：
 
-1.  **状态栏消息。** 这些很简单，简单地说，并只提供状态信息。 示例:"正在加载项目文件"
+1. **状态栏消息。** 这些很简单，简单地说，并只提供状态信息。 示例:"正在加载项目文件"
 
-2.  **所有其他 UI 元素**，其中包括标签、 复选框、 单选按钮和列表框项。 示例:"列表中选择所有项"
+2. **所有其他 UI 元素**，其中包括标签、 复选框、 单选按钮和列表框项。 示例:"列表中选择所有项"
 
 ### <a name="text-formatting"></a>文本格式设置
  由控制格式设置 Visual Studio 2013 中的默认文本[环境字体](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。 此服务可帮助确保整个 IDE （集成的开发环境），具有一致的字体的外观，并且必须使用它能够保证你的用户提供一致的体验。
@@ -373,36 +373,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>粗体文本
  粗体文本在 Visual Studio 中尽量少使用，并应将其保留为：
 
--   在向导中的问题标签
+- 在向导中的问题标签
 
--   指定活动项目在解决方案资源管理器
+- 指定活动项目在解决方案资源管理器
 
--   重写属性工具窗口中的值
+- 重写属性工具窗口中的值
 
--   Visual Basic 编辑器下拉列表中的特定事件
+- Visual Basic 编辑器下拉列表中的特定事件
 
--   服务器生成 web pages 文档大纲中的内容
+- 服务器生成 web pages 文档大纲中的内容
 
--   在复杂的对话框或设计器用户界面的部分标头
+- 在复杂的对话框或设计器用户界面的部分标头
 
 #### <a name="italics"></a>斜体
  Visual Studio 不使用斜体或粗体斜体文本。
 
 #### <a name="color"></a>颜色
 
--   蓝色保留的超链接 （导航和命令），并且永远不会用于方向。
+- 蓝色保留的超链接 （导航和命令），并且永远不会用于方向。
 
--   可以针对这些目的着色更大的标题 （环境字体 x 155%或更高版本）：
+- 可以针对这些目的着色更大的标题 （环境字体 x 155%或更高版本）：
 
-    -   若要提供与 Visual Studio UI 的签名的视觉效果
+    - 若要提供与 Visual Studio UI 的签名的视觉效果
 
-    -   呼吁人们关注的特定区域
+    - 呼吁人们关注的特定区域
 
-    -   提供基于标准的暗灰色/黑环境的文本颜色的缓解办法
+    - 提供基于标准的暗灰色/黑环境的文本颜色的缓解办法
 
--   在标题中的颜色应利用现有 Visual Studio 品牌颜色的颜色，主要是主要的紫色，#FF68217A。
+- 在标题中的颜色应利用现有 Visual Studio 品牌颜色的颜色，主要是主要的紫色，#FF68217A。
 
--   在标题中使用颜色，则必须遵守[Windows 颜色准则](/windows/desktop/uxguide/vis-color)，包括对比率和其他辅助功能注意事项。
+- 在标题中使用颜色，则必须遵守[Windows 颜色准则](/windows/desktop/uxguide/vis-color)，包括对比率和其他辅助功能注意事项。
 
 ### <a name="font-size"></a>字体大小
  Visual Studio 用户界面设计功能具有更多的空白空间较浅外观。 在可能的情况下，chrome 和标题栏已减少或删除。 在 Visual Studio 中的要求的信息密度时，版式仍是重要的是，侧重于更加开放的行距和字体大小和权重的一种变体。
@@ -474,11 +474,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>边距和间距
  标题需要它们来为他们提供适当的重点周围的空间。 此空间各不相同，具体取决于点大小和其他什么是附近的标题，例如水平标尺或环境字体中的文本行。
 
--   本身为标题的理想之选填充应为 90%的资金字符高度空间。 例如，28 pt Segoe UI Light 标题有 26 pt 帽高度和填充应大约为，23 pt 或大约 31 像素。
+- 本身为标题的理想之选填充应为 90%的资金字符高度空间。 例如，28 pt Segoe UI Light 标题有 26 pt 帽高度和填充应大约为，23 pt 或大约 31 像素。
 
--   标题周围的最小空间应为 50%的资金字符高度。 当标题由规则或其他紧凑调整元素一起出现时，可能使用较少的空间。
+- 标题周围的最小空间应为 50%的资金字符高度。 当标题由规则或其他紧凑调整元素一起出现时，可能使用较少的空间。
 
--   加粗环境字体文本应遵循默认行距高度和填充。
+- 加粗环境字体文本应遵循默认行距高度和填充。
 
 ## <a name="see-also"></a>请参阅
 

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 3ca198b88a8e42ba937ceb2426edd23793765b03
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097071"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,47 +42,47 @@ ms.locfileid: "59656201"
   
  [Configure the remote agent on the Mac](#ConfigureMac)  
   
-##  <a name="Prerequisites"></a> 先决条件  
+## <a name="Prerequisites"></a> 先决条件  
  若要安装和使用远程代理以开发 iOS 代码，必须首先具备以下先决条件：  
   
--   运行 OS X Mavericks 或更高版本的 Mac 计算机  
+- 运行 OS X Mavericks 或更高版本的 Mac 计算机  
   
--    [Apple ID](https://appleid.apple.com/)  
+-  [Apple ID](https://appleid.apple.com/)  
   
--   Apple 提供的活动 [iOS 开发人员计划](https://developer.apple.com/programs/ios/) 帐户  
+- Apple 提供的活动 [iOS 开发人员计划](https://developer.apple.com/programs/ios/) 帐户  
   
--   [Xcode 6](https://developer.apple.com/xcode/downloads/)  
+- [Xcode 6](https://developer.apple.com/xcode/downloads/)  
   
      可从 App Store 下载 Xcode 6。  
   
--   Xcode 命令行工具  
+- Xcode 命令行工具  
   
      若要安装 Xcode 命令行工具，请打开 Mac 上的 Terminal 应用并输入以下命令：  
   
      `xcode-select --install`  
   
--   在 Xcode 中配置的 iOS 签名标识  
+- 在 Xcode 中配置的 iOS 签名标识  
   
      有关获取 iOS 签名标识的详细信息，请参阅 iOS Developer Library 中的 [维护签名标识和证书](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) 。 若要查看或设置 Xcode 中的签名标识，打开 **Xcode** 菜单并选择 “首选项”。 选择“帐户”  并选择你的 Apple ID，然后选择“查看详细信息”  按钮。  
   
--   如果你使用 iOS 设备进行开发，Xcode 中已为你的设备配置了预配配置文件  
+- 如果你使用 iOS 设备进行开发，Xcode 中已为你的设备配置了预配配置文件  
   
      有关创建预配配置文件的详细信息，请参阅 iOS Developer Library 中的 [通过成员中心创建预配配置文件](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) 。  
   
--   [Node.js](http://nodejs.org/)  
+- [Node.js](http://nodejs.org/)  
   
--   Npm 的更新版本  
+- Npm 的更新版本  
   
      Node.js 附带的 npm 版本可能不够新，无法安装 vcremote。 若要更新 npm，打开 Mac 上的 Terminal 应用并输入以下命令：  
   
      `sudo npm install -g npm@latest`  
   
-##  <a name="Install"></a> 安装适用于 iOS 的远程代理  
+## <a name="Install"></a> 安装适用于 iOS 的远程代理  
  当安装用于跨平台移动开发的 Visual C++ 时，Visual Studio 可以与 [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)进行通信，这是一个在 Mac 上运行的远程代理，用于传输文件、生成和运行 iOS 应用，以及发送调试命令。  
   
  安装远程代理之前，请确保你已经满足 [先决条件](#Prerequisites) 并安装了 [用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools)。  
   
-###  <a name="DownloadInstall"></a> 下载和安装远程代理  
+### <a name="DownloadInstall"></a> 下载和安装远程代理  
   
 - 在 Mac 上的 Terminal 应用中，输入：  
   
@@ -97,10 +97,10 @@ ms.locfileid: "59656201"
   
   如果更新到新版本的 Visual Studio，那么必须将远程代理也更新到最新版本。 若要更新远程代理，请重复下载并安装远程代理的步骤。  
   
-##  <a name="Start"></a> 启动远程代理  
+## <a name="Start"></a> 启动远程代理  
  必须运行远程代理才能通过 Visual Studio 生成并运行 iOS 代码。 Visual Studio 必须先与远程代理配对，然后才能进行通信。 默认情况下，远程代理在安全的连接模式下运行，此模式下需要 PIN 才能与 Visual Studio 配对。  
   
-###  <a name="RemoteAgentStartServer"></a> 若要启动远程代理  
+### <a name="RemoteAgentStartServer"></a> 若要启动远程代理  
   
 - 在 Mac 上的 Terminal 应用中，输入：  
   
@@ -120,7 +120,7 @@ ms.locfileid: "59656201"
   
 #### <a name="to-disable-secured-connection-mode"></a>禁用安全连接模式  
   
--   若要禁用 vcremote 中的安全连接模式，请在 Mac 上的 Terminal 应用中输入以下命令：  
+- 若要禁用 vcremote 中的安全连接模式，请在 Mac 上的 Terminal 应用中输入以下命令：  
   
      `vcremote --secure false`  
   
@@ -134,9 +134,9 @@ ms.locfileid: "59656201"
   
 #### <a name="to-stop-the-remote-agent"></a>停用远程代理  
   
--   在正在运行 vcremote 的终端窗口中，输入 `Control+C`。  
+- 在正在运行 vcremote 的终端窗口中，输入 `Control+C`。  
   
-##  <a name="ConfigureVS"></a> 在 Visual Studio 中配置远程代理  
+## <a name="ConfigureVS"></a> 在 Visual Studio 中配置远程代理  
  若要从 Visual Studio 连接到远程代理，必须在 Visual Studio 选项中指定远程配置。  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>从 Visual Studio 配置远程代理  
@@ -172,68 +172,68 @@ ms.locfileid: "59656201"
   
    你每次在 Visual Studio 时，它会使用相同信息连接到 Mac 上的远程代理。 除非你在 Mac 上生成了新的安全证书，或其主机名或 IP 地址发生了更改，否则，你无需再次将 Visual Studio 与远程代理进行配对。  
   
-##  <a name="GeneratePIN"></a> Generate a new security PIN  
+## <a name="GeneratePIN"></a> Generate a new security PIN  
  当你第一次启动远程代理时，生成的 PIN 在有限的时间（默认 10 分钟）内有效。 如果在此有限时间段内未将 Visual Studio 与远程代理进行配对，则需要生成一个新的 PIN。  
   
 #### <a name="to-generate-a-new-pin"></a>生成新的 PIN  
   
-1.  停止代理，或在你的 Mac 上打开另一个 Terminal 应用窗口并使用它输入命令。  
+1. 停止代理，或在你的 Mac 上打开另一个 Terminal 应用窗口并使用它输入命令。  
   
-2.  在 Terminal 应用中输入此命令：  
+2. 在 Terminal 应用中输入此命令：  
   
      `vcremote generateClientCert`  
   
      远程代理将生成一个新的临时 PIN。 若要使用新的 PIN 配对 Visual Studio，请重复 [在 Visual Studio 中配置远程代理](#ConfigureVS)中的步骤。  
   
-##  <a name="GenerateCert"></a> 生成新的服务器证书  
+## <a name="GenerateCert"></a> 生成新的服务器证书  
  出于安全目的，将 Visual Studio 与远程代理配对的服务器证书关联到你的 Mac 的 IP 地址或主机名。 如果这些值已更改，则必须生成一个新的服务器证书，然后使用新值重新配置 Visual Studio。  
   
 #### <a name="to-generate-a-new-server-certificate"></a>生成新的服务器证书  
   
-1.  停用 vcremote 代理。  
+1. 停用 vcremote 代理。  
   
-2.  在 Terminal 应用中输入此命令：  
+2. 在 Terminal 应用中输入此命令：  
   
      `vcremote resetServerCert`  
   
-3.  当提示进行确认时，请输入 `Y`。  
+3. 当提示进行确认时，请输入 `Y`。  
   
-4.  在 Terminal 应用中输入此命令：  
+4. 在 Terminal 应用中输入此命令：  
   
      `vcremote generateClientCert`  
   
      将生成一个新的临时 PIN。  
   
-5.  若要使用新的 PIN 配对 Visual Studio，请重复 [在 Visual Studio 中配置远程代理](#ConfigureVS)中的步骤。  
+5. 若要使用新的 PIN 配对 Visual Studio，请重复 [在 Visual Studio 中配置远程代理](#ConfigureVS)中的步骤。  
   
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
  你可以使用各种命令行选项配置远程代理。 例如，你可以指定用于接收版本请求的端口以及要在文件系统上进行维护的最大生成数量。 默认限制为 10 个生成。 远程代理会在关机时删除超过最大数量的生成。  
   
 #### <a name="to-configure-the-remote-agent"></a>配置远程代理  
   
--   若要查看远程代理命令的完整列表，请在 Terminal 应用中输入：  
+- 若要查看远程代理命令的完整列表，请在 Terminal 应用中输入：  
   
      `vcremote --help`  
   
--   要禁用安全模式并启用简单的基于 HTTP 的连接，请输入：  
+- 要禁用安全模式并启用简单的基于 HTTP 的连接，请输入：  
   
      `vcremote --secure false`  
   
      如果使用此选项，请在 Visual Studio 中配置代理时清除“安全”复选框，并将“Pin”字段留空。  
   
--   要为远程代理文件指定位置，请输入：  
+- 要为远程代理文件指定位置，请输入：  
   
      `vcremote --serverDir directory_path`  
   
      其中， *directory_path* 是 Mac 上放置日志文件、生成项和服务器证书的位置。 默认情况下，此位置为 /Users/*username*/vcremote。 生成项会在此位置按照生成号进行整理。  
   
--   若要使用后台进程以将 `stdout` 和 `stderr` 捕获至名为 server.log 的文件，请输入：  
+- 若要使用后台进程以将 `stdout` 和 `stderr` 捕获至名为 server.log 的文件，请输入：  
   
      `vcremote > server.log 2>&1 &`  
   
      server.log 文件可能有助于解决生成问题。  
   
--   若要通过使用配置文件而不是命令行参数来运行代理，请输入：  
+- 若要通过使用配置文件而不是命令行参数来运行代理，请输入：  
   
      `vcremote --config config_file_path`  
   

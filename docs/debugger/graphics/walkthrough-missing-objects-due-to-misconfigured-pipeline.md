@@ -1,5 +1,5 @@
 ---
-title: 演练： 因而缺少对象管线 |Microsoft Docs
+title: 演练：因配置错误管道而缺少对象 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097604"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管线误配置而缺少对象
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管道误配置而缺少对象
 本演练演示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具来调查由于未设置的像素着色器而缺失的对象。
 
  此演练阐释了以下任务：
 
--   使用“图形事件列表”  定位问题的潜在根源。
+- 使用“图形事件列表”  定位问题的潜在根源。
 
--   使用“图形管道阶段”  窗口来检查 `DrawIndexed` Direct3D API 调用的效果。
+- 使用“图形管道阶段”  窗口来检查 `DrawIndexed` Direct3D API 调用的效果。
 
--   检查设备上下文以确认未设置着色器阶段。
+- 检查设备上下文以确认未设置着色器阶段。
 
--   搭配使用“图形管道阶段”  窗口和“图形事件调用堆栈”  来帮助查找未设置的像素着色器来源。
+- 搭配使用“图形管道阶段”  窗口和“图形事件调用堆栈”  来帮助查找未设置的像素着色器来源。
 
 ## <a name="scenario"></a>方案
  当 3-D 应用中缺少对象时，有时是因为其中一个着色器阶段未在呈现对象前设置。 在具有简单呈现需要的应用中，此错误的来源通常位于对象绘图调用的调用堆栈中某个位置。 但是作为一种优化手段，某些应用批量处理具有共同的着色器程序、纹理或其他数据的对象，从而最大程度减少状态更改的开销。 在这些应用中，错误来源可能隐藏在批处理系统中，而不是位于绘图调用的调用堆栈中。 本演练中的方案演示具有简单呈现需求的应用，因此可在调用堆栈中找到错误源。

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4884aba3deb3a450b373a6d19abd9c7cf5bdbff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095852"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程序代码中从文件打开模型
 您可以在任何应用程序中打开 DSL 模型。
@@ -24,11 +24,11 @@ ms.locfileid: "55945282"
 
 #### <a name="to-set-the-target-framework"></a>若要设置目标框架
 
-1.  打开想要读取 DSL 模型的应用程序的 Visual Studio 项目。
+1. 打开想要读取 DSL 模型的应用程序的 Visual Studio 项目。
 
-2.  在中**解决方案资源管理器**，右键单击项目，然后单击**属性**。
+2. 在中**解决方案资源管理器**，右键单击项目，然后单击**属性**。
 
-3.  在项目属性窗口中，在**应用程序**选项卡上，设置**目标框架**字段 **.NET Framework 4**。
+3. 在项目属性窗口中，在**应用程序**选项卡上，设置**目标框架**字段 **.NET Framework 4**。
 
 > [!NOTE]
 >  可能需要执行此操作，即使所选 **.NET Framework 4**项目创建对话框中。 不应为目标框架 **.NET Framework 4 Client Profile**。
@@ -36,22 +36,22 @@ ms.locfileid: "55945282"
 ## <a name="references"></a>参考资料
  您需要添加这些对你的 Visual Studio 应用程序项目的引用：
 
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
+- `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    -   如果没有看到这下 **.NET**选项卡**添加引用**对话框中，单击**浏览**选项卡上，并导航到`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
+    - 如果没有看到这下 **.NET**选项卡**添加引用**对话框中，单击**浏览**选项卡上，并导航到`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
 
--   DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体：*YourCompany*。*您的项目*`.Dsl.dll`。
+- DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体：*YourCompany*。*您的项目*`.Dsl.dll`。
 
 ## <a name="important-classes-in-the-dsl"></a>在 DSL 中重要的类
  您可以编写读取 DSL 的代码之前，应了解某些由 DSL 生成的类的名称。 在 DSL 解决方案中，打开**Dsl**项目，然后查看**GeneratedCode**文件夹。 或者，双击你的项目中的 DSL 程序集**引用**，并打开中的 DSL 命名空间**对象浏览器**。
 
  以下是应标识的类：
 
--   *YourDslRootClass* -这是中的根类的名称在`DslDefinition.dsl`。
+- *YourDslRootClass* -这是中的根类的名称在`DslDefinition.dsl`。
 
--   *YourDslName* `SerializationHelper` -此类中定义`SerializationHelper.cs`在 DSL 项目中。
+- *YourDslName* `SerializationHelper` -此类中定义`SerializationHelper.cs`在 DSL 项目中。
 
--   *YourDslName* `DomainModel` -此类中定义`DomainModel.cs`在 DSL 项目中。
+- *YourDslName* `DomainModel` -此类中定义`DomainModel.cs`在 DSL 项目中。
 
 ## <a name="reading-from-a-file"></a>从文件进行读取
  下面的示例可读取的 DSL 的重要类是按如下所示：

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c65e064452d307727e1c19578f7a660451f49c70
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07987a0c7debdb44c2da442ce6b598f8a78dea0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651885"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097214"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练显示了使用 Microsoft Office Excel 工作表上的单选按钮为用户提供选项之间快速切换的方法的基础知识。 在这种情况下，选项更改图表的样式。
@@ -30,9 +30,9 @@ ms.locfileid: "59651885"
 
  本演练阐释了以下任务：
 
--   向工作表添加一组单选按钮。
+- 向工作表添加一组单选按钮。
 
--   在选择了某个选项时更改图表样式。
+- 在选择了某个选项时更改图表样式。
 
 > [!NOTE]
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -40,9 +40,9 @@ ms.locfileid: "59651885"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="add-a-chart-to-a-worksheet"></a>将图表添加到工作表
  可以创建自定义现有工作簿的 Excel 工作簿项目。 在此演练中，将将图表添加到工作簿，然后在新的 Excel 解决方案中使用此工作簿。 本演练中的数据源是名为一个工作表**图表数据**。
@@ -68,21 +68,21 @@ ms.locfileid: "59651885"
 
 ### <a name="to-add-a-chart-in-excel"></a>若要在 Excel 中添加图表
 
-1.  上**插入**选项卡上，在**图表**组中，单击**列**，然后单击**所有图表类型**。
+1. 上**插入**选项卡上，在**图表**组中，单击**列**，然后单击**所有图表类型**。
 
-2.  在中**插入图表**对话框中，单击**确定**。
+2. 在中**插入图表**对话框中，单击**确定**。
 
-3.  上**设计**选项卡上，在**数据**组中，单击**选择数据**。
+3. 上**设计**选项卡上，在**数据**组中，单击**选择数据**。
 
-4.  在中**选择数据源**对话框中，单击**Chartdata 范围**框，并清除所有默认选择。
+4. 在中**选择数据源**对话框中，单击**Chartdata 范围**框，并清除所有默认选择。
 
-5.  在中**图表数据**表中，选择包含的数字，其中包括 A4 中的左上角到 E8 右下角中的单元格的块。
+5. 在中**图表数据**表中，选择包含的数字，其中包括 A4 中的左上角到 E8 右下角中的单元格的块。
 
-6.  在中**选择数据源**对话框中，单击**确定**。
+6. 在中**选择数据源**对话框中，单击**确定**。
 
-7.  重新定位图表，以便与单元格的右上角对齐**E2**。
+7. 重新定位图表，以便与单元格的右上角对齐**E2**。
 
-8.  将你的文件保存到驱动器 C 并将其命名**ExcelChart.xlsx**。
+8. 将你的文件保存到驱动器 C 并将其命名**ExcelChart.xlsx**。
 
 9. 退出 Excel。
 
@@ -91,13 +91,13 @@ ms.locfileid: "59651885"
 
 ### <a name="to-create-a-new-project"></a>创建新项目
 
-1.  使用名称创建的 Excel 工作簿项目**我的 Excel 图表**。 在向导中，选择**复制现有文档**。
+1. 使用名称创建的 Excel 工作簿项目**我的 Excel 图表**。 在向导中，选择**复制现有文档**。
 
      有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2.  单击**浏览**按钮，然后浏览到在本演练前面创建的工作簿。
+2. 单击**浏览**按钮，然后浏览到在本演练前面创建的工作簿。
 
-3.  单击 **“确定”**。
+3. 单击 **“确定”**。
 
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的 Excel 图表**投影到**解决方案资源管理器**。
 
@@ -106,7 +106,7 @@ ms.locfileid: "59651885"
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>若要更改图表控件的名称
 
-1.  选择<xref:Microsoft.Office.Tools.Excel.Chart>设计器中控制和更改中的以下属性**属性**窗口。
+1. 选择<xref:Microsoft.Office.Tools.Excel.Chart>设计器中控制和更改中的以下属性**属性**窗口。
 
     |属性|值|
     |--------------|-----------|
@@ -120,11 +120,11 @@ ms.locfileid: "59651885"
 
 ### <a name="to-add-a-user-control"></a>要添加用户控件
 
-1.  选择**我的 Excel 图表**项目中**解决方案资源管理器**。
+1. 选择**我的 Excel 图表**项目中**解决方案资源管理器**。
 
-2.  在 **“项目”** 菜单上，单击 **“添加新项”**。
+2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-3.  在**添加新项**对话框中，单击**用户控件**，将控件**ChartOptions，** 然后单击**添加**。
+3. 在**添加新项**对话框中，单击**用户控件**，将控件**ChartOptions，** 然后单击**添加**。
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>若要添加到用户控件的单选按钮
 
@@ -165,36 +165,36 @@ ms.locfileid: "59651885"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>创建用户控件的事件和属性
 
-1.  在中**解决方案资源管理器**，右键单击用户控件，然后单击**查看代码**。
+1. 在中**解决方案资源管理器**，右键单击用户控件，然后单击**查看代码**。
 
-2.  将代码添加到`ChartOptions`类来创建`SelectionChanged`事件和`Selection`属性。
+2. 将代码添加到`ChartOptions`类来创建`SelectionChanged`事件和`Selection`属性。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>若要处理的 CheckedChanged 事件的单选按钮
 
-1.  设置 `CheckedChanged` 单选按钮的 `areaBlockChart` 事件处理程序中的图表类型，然后引发事件。
+1. 设置 `CheckedChanged` 单选按钮的 `areaBlockChart` 事件处理程序中的图表类型，然后引发事件。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
 
-2.  设置 `CheckedChanged` 单选按钮的 `barChart` 事件处理程序中的图表类型。
+2. 设置 `CheckedChanged` 单选按钮的 `barChart` 事件处理程序中的图表类型。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
 
-3.  设置 `CheckedChanged` 单选按钮的 `columnChart` 事件处理程序中的图表类型。
+3. 设置 `CheckedChanged` 单选按钮的 `columnChart` 事件处理程序中的图表类型。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
 
-4.  设置 `CheckedChanged` 单选按钮的 `lineChart` 事件处理程序中的图表类型。
+4. 设置 `CheckedChanged` 单选按钮的 `lineChart` 事件处理程序中的图表类型。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
 
-5.  在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+5. 在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
@@ -203,29 +203,29 @@ ms.locfileid: "59651885"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>若要添加工作表中的用户控件
 
-1.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+1. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
      **ChartOptions**用户控件添加到**工具箱**。
 
-2.  在中**解决方案资源管理器**，右键单击**Sheet1.vb**或**Sheet1.cs**，然后单击**视图设计器**。
+2. 在中**解决方案资源管理器**，右键单击**Sheet1.vb**或**Sheet1.cs**，然后单击**视图设计器**。
 
-3.  拖动**ChartOptions**控件从**工具箱**到工作表。
+3. 拖动**ChartOptions**控件从**工具箱**到工作表。
 
      名为的新控件`my_Excel_Chart_ChartOptions1`添加到你的项目。
 
-4.  更改该控件的名称**ChartOptions1**。
+4. 更改该控件的名称**ChartOptions1**。
 
 ## <a name="change-the-chart-type"></a>更改图表类型
  若要更改图表类型，创建的事件处理程序将根据用户控件中选择的选项的样式设置。
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>若要更改的工作表中显示的图表类型
 
-1.  向 `Sheet1` 类添加以下事件处理程序。
+1. 向 `Sheet1` 类添加以下事件处理程序。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
 
-2.  在 C# 中，必须添加到用户控件的事件处理程序<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+2. 在 C# 中，必须添加到用户控件的事件处理程序<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 有关如何创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
@@ -234,20 +234,20 @@ ms.locfileid: "59651885"
 
 ### <a name="to-test-your-workbook"></a>测试工作簿
 
-1.  按**F5**运行你的项目。
+1. 按**F5**运行你的项目。
 
-2.  选择不同的单选按钮。
+2. 选择不同的单选按钮。
 
-3.  确认图表样式随所选选项发生了相应的更改。
+3. 确认图表样式随所选选项发生了相应的更改。
 
 ## <a name="next-steps"></a>后续步骤
  本演练演示在工作表中使用单选按钮和图表样式的基础知识。 以下是接下来可能要执行的一些任务：
 
--   部署项目。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+- 部署项目。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
--   使用按钮填充文本框。 有关详细信息，请参见[演练：在使用按钮的工作表中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。
+- 使用按钮填充文本框。 有关详细信息，请参见[演练：在使用按钮的工作表中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。
 
--   更改工作表上通过使用复选框格式设置。 有关详细信息，请参见[演练：使用 CheckBox 控件更改工作表格式设置](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。
+- 更改工作表上通过使用复选框格式设置。 有关详细信息，请参见[演练：使用 CheckBox 控件更改工作表格式设置](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。
 
 ## <a name="see-also"></a>请参阅
 - [Excel 用法演练](../vsto/walkthroughs-using-excel.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dffffd8f2857dbb048b829cec0d2e7847a05c5f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 95e48f6ab7ea6603308f4d6b9fb547e25901a398
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55021135"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097448"
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>如何：主机的编辑器中另一个编辑器
 
@@ -23,17 +23,17 @@ ms.locfileid: "55021135"
 
 ## <a name="to-set-up-the-window-frame-to-host-an-editor"></a>若要设置窗口框架来托管编辑器
 
-1.  将编辑器指定为承载编辑器中，通过创建子窗口窗格。
+1. 将编辑器指定为承载编辑器中，通过创建子窗口窗格。
 
      此窗格是将在哪里编辑器的文本。
 
-2.  创建使用托管编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>方法。
+2. 创建使用托管编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenSpecificEditor%2A>方法。
 
-3.  设置<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd>并<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame>中通过将这些属性作为参数传递的承载编辑器的窗口框架实现的属性<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>方法，分别。
+3. 设置<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentHwnd>并<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2.VSFPROPID_ParentFrame>中通过将这些属性作为参数传递的承载编辑器的窗口框架实现的属性<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>方法，分别。
 
      如果需要检索这些参数，请将传递到这些属性<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>方法。
 
-4.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>包含编辑器的方法。
+4. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>包含编辑器的方法。
 
      在编辑器中包含编辑器的托管窗格中显示。
 

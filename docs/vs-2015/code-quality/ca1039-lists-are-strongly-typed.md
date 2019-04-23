@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097102"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039:列表已强类型化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58933669"
 ## <a name="cause"></a>原因
  公共或受保护类型实现<xref:System.Collections.IList?displayProperty=fullName>但不提供强类型化的方法的一个或多项操作：
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>规则说明
  此规则要求<xref:System.Collections.IList>实现提供强类型化成员，因此用户不需要强制转换的自变量<xref:System.Object?displayProperty=fullName>键入时它们使用由接口提供的功能。 <xref:System.Collections.IList>接口由可按照索引访问的对象的集合实现。 此规则假定，该类型的实现<xref:System.Collections.IList>这样做是为了管理强于类型的实例的集合<xref:System.Object>。

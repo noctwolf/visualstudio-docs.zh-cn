@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebbb10f0c317e79e22c8eb49b59e4e58a82b9d77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097331"
 ---
 # <a name="graphics-pipeline-stages"></a>图形管道阶段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ ms.locfileid: "58935980"
   
 ##### <a name="to-view-a-shaders-source-code"></a>查看着色器源代码  
   
--   在“图形管道阶段”窗口中，找到与要检查的着色器对应的着色器阶段。 然后在预览图像下，访问着色器阶段标题链接，例如，访问链接“顶点着色器 obj:30”可评审顶点着色器源代码。  
+- 在“图形管道阶段”窗口中，找到与要检查的着色器对应的着色器阶段。 然后在预览图像下，访问着色器阶段标题链接，例如，访问链接“顶点着色器 obj:30”可评审顶点着色器源代码。  
   
     > [!TIP]
     >  对象编号“obj:30”用于在整个图形分析器界面中（如对象表和像素历史记录窗口中）标识此着色器。  
   
 ##### <a name="to-debug-a-shader"></a>调试着色器  
   
--   在“图形管道阶段”窗口中，找到与要调试的着色器对应的着色器阶段。 然后在预览图像下，选择“启动调试”。 进入 HLSL 调试器的此入口点默认为着色器对相应阶段的首个调用 — 即着色器在此绘图调用过程中处理的第一个像素、顶点或基元。 可以通过“图形像素历史记录”访问此着色器对特定像素或顶点的调用。  
+- 在“图形管道阶段”窗口中，找到与要调试的着色器对应的着色器阶段。 然后在预览图像下，选择“启动调试”。 进入 HLSL 调试器的此入口点默认为着色器对相应阶段的首个调用 — 即着色器在此绘图调用过程中处理的第一个像素、顶点或基元。 可以通过“图形像素历史记录”访问此着色器对特定像素或顶点的调用。  
   
 ### <a name="the-pipeline-stages"></a>管道阶段  
  “管道阶段”窗口仅可视化在绘图调用过程中处于活动状态的管道阶段。 图形管道的每个阶段都转换来自上一个阶段的输入，然后将结果传递到下一个阶段。 第一个阶段（输入装配器）采用来自应用的索引和顶点数据作为其输入；最后一个阶段（输出合并器）将新呈现的像素与帧缓冲区或呈现目标的当前内容合并在一起作为其输出，以生成屏幕上显示的最终图像。  

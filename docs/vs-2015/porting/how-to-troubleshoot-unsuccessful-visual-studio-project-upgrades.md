@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096330"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>如何：升级不成功的 Visual Studio 项目进行故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Visual Studio 不能完全从早期版本的转换项目的有时[!INCLUDE[vsprv
 
 #### <a name="to-resolve-incorrect-file-paths"></a>若要解决不正确的文件路径
 
-1.  在文本编辑器中打开项目文件。
+1. 在文本编辑器中打开项目文件。
 
-2.  扫描的文件的路径可能不正确，尤其是那些包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]版本号。
+2. 扫描的文件的路径可能不正确，尤其是那些包含[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]版本号。
 
-3.  修改不正确的文件路径，使其指向新的目标。
+3. 修改不正确的文件路径，使其指向新的目标。
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>项目未生成因为引用无效
  当你升级[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，你可能还要升级[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本。 如果您的项目包含在更高版本中已不再使用的引用[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本，它们可能无法正确解析。 这是最有可能包括版本号，例如，引用`Microsoft.VisualStudio.Shell.Interop.8.0`。

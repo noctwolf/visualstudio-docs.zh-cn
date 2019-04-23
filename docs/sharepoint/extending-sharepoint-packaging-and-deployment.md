@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096993"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>扩展 SharePoint 打包和部署
   可以扩展 SharePoint 项目的打包和部署过程。
@@ -35,9 +35,9 @@ ms.locfileid: "56628385"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>在部署或收回 SharePoint 解决方案时运行代码
  可以处理事件以在部署或收回 SharePoint 解决方案时执行其他任务。 Visual Studio 会在以下情况下引发你可以处理的事件：
 
--   为 SharePoint 项目项执行每个部署步骤之前和之后。 有关详细信息，请参阅[如何：执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)。
+- 为 SharePoint 项目项执行每个部署步骤之前和之后。 有关详细信息，请参阅[如何：执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)。
 
--   在部署或收回 SharePoint 项目之前和之后 有关详细信息，请参阅[如何：在部署或收回 SharePoint 项目时运行代码](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)。
+- 在部署或收回 SharePoint 项目之前和之后 有关详细信息，请参阅[如何：在部署或收回 SharePoint 项目时运行代码](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md)。
 
 ## <a name="handle-deployment-conflicts"></a>处理部署冲突
  某些类型的 SharePoint 项目项（包括模块、Web 部件、列表实例和内容类型）提供了内置部署冲突解决方法。 部署包含这些项目项之一的解决方案时，Visual Studio 会首先检查 SharePoint 站点上是否已存在与所部署项中的文件具有相同名称、URL 或 ID 的文件。 如果存在冲突，则 Visual Studio 可以自动解决冲突，或者它可以提示你以确定你是要让 Visual Studio 解决冲突还是取消部署。 有关详细信息，请参阅 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。

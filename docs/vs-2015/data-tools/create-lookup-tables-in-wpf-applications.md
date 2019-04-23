@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095914"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,49 +38,49 @@ ms.locfileid: "59663777"
   
 ## <a name="to-create-a-lookup-table"></a>创建查找表的步骤  
   
-1.  向项目中添加具有相关数据的数据源的以下类型之一：  
+1. 向项目中添加具有相关数据的数据源的以下类型之一：  
   
-    -   数据集或实体数据模型。
+    - 数据集或实体数据模型。
 
-    -   WCF 数据服务，WCF 服务或 Web 服务。 有关详细信息，请参阅[如何：连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。  
+    - WCF 数据服务，WCF 服务或 Web 服务。 有关详细信息，请参阅[如何：连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。  
   
-    -   对象。 有关详细信息，请参阅[如何：连接到对象中的数据](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
+    - 对象。 有关详细信息，请参阅[如何：连接到对象中的数据](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
     >  创建查找表之前，必须存在两个相关的表或对象作为项目的数据源。  
   
-2.  打开**WPF 设计器**，并确保该设计器包含有效的放置目标中的项容器**数据源**窗口。  
+2. 打开**WPF 设计器**，并确保该设计器包含有效的放置目标中的项容器**数据源**窗口。  
   
      有关有效放置目标的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-3.  在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。  
+3. 在“数据”菜单上单击“显示数据源”，打开“数据源”窗口。  
   
-4.  展开中的节点**数据源**窗口中，直至你可看到父表或对象和相关的子表或对象。  
+4. 展开中的节点**数据源**窗口中，直至你可看到父表或对象和相关的子表或对象。  
   
     > [!NOTE]
     >  相关的子表或对象是显示为父表或对象下可展开子节点的节点。  
   
-5.  单击子节点的下拉列表菜单，然后选择**详细信息**。  
+5. 单击子节点的下拉列表菜单，然后选择**详细信息**。  
   
-6.  展开子节点。  
+6. 展开子节点。  
   
-7.  下的子节点，单击与相关的子和父数据的项的下拉列表菜单。 (在前面的示例中，这是**CustomerID**节点。)选择支持查找绑定的控件的以下类型之一：  
+7. 下的子节点，单击与相关的子和父数据的项的下拉列表菜单。 (在前面的示例中，这是**CustomerID**节点。)选择支持查找绑定的控件的以下类型之一：  
   
-    -   **组合框**  
+    - **组合框**  
   
-    -   **ListBox**  
+    - **ListBox**  
   
-    -   **ListView**  
+    - **ListView**  
   
         > [!NOTE]
         >  如果**ListBox**或**ListView**控件不会出现在列表中，可以将这些控件添加到列表。 有关信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
-    -   任何自定义控件派生自<xref:System.Windows.Controls.Primitives.Selector>。  
+    - 任何自定义控件派生自<xref:System.Windows.Controls.Primitives.Selector>。  
   
         > [!NOTE]
         >  了解如何添加自定义控件添加到的控件列表您可以选择中的项**数据源**窗口中，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
-8.  将从子节点**数据源**窗口拖到 WPF 设计器中的容器。 (在上述示例中，子节点是**订单**节点。)  
+8. 将从子节点**数据源**窗口拖到 WPF 设计器中的容器。 (在上述示例中，子节点是**订单**节点。)  
   
      Visual Studio 将生成为每个拖动的项创建新的数据绑定控件的 XAML。 XAML 还添加了一个新<xref:System.Windows.Data.CollectionViewSource>子表或对象的拖放目标资源。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到表或对象。 有关详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
