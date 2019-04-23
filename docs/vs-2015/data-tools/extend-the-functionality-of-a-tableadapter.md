@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a060444ec5ec8085b56810862e87e523c56fddb6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059027"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>扩展 TableAdapter 的功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "59656058"
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要为 TableAdapter 创建分部类  
   
-1.  将新类添加到你的项目，通过转到**项目**菜单并选择**添加类**。  
+1. 将新类添加到你的项目，通过转到**项目**菜单并选择**添加类**。  
   
-2.  将此类命名为 `CustomersTableAdapterExtended`。  
+2. 将此类命名为 `CustomersTableAdapterExtended`。  
   
-3.  选择“添加”。  
+3. 选择“添加”。  
   
-4.  该代码将替换为正确的命名空间和你的项目的分部类名称，如下所示：  
+4. 该代码将替换为正确的命名空间和你的项目的分部类名称，如下所示：  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

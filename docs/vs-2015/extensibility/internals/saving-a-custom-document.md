@@ -12,12 +12,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 020fdd0f2b315b876790e86b0e16c047cfd44db2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 443139194a9be59a26a812bd8026270749105a30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043755"
 ---
 # <a name="saving-a-custom-document"></a>保存自定义文档
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ ms.locfileid: "58931549"
   
  此过程详述以下步骤：  
   
-1.  有关**保存**并**另存为**命令，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务以确定活动文档窗口，并应因此保存项。 活动文档窗口了解后，在环境中正在运行的 document 表的文档查找的层次结构的指针和项标识符 (itemID)。 有关详细信息，请参阅[运行文档表](../../extensibility/internals/running-document-table.md)。  
+1. 有关**保存**并**另存为**命令，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务以确定活动文档窗口，并应因此保存项。 活动文档窗口了解后，在环境中正在运行的 document 表的文档查找的层次结构的指针和项标识符 (itemID)。 有关详细信息，请参阅[运行文档表](../../extensibility/internals/running-document-table.md)。  
   
      为全部保存命令，该环境使用中的信息运行文档表编译要保存的所有项的列表。  
   
-2.  当解决方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用时，它会循环访问选定项的集 (即，公开多个选择<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务)。  
+2. 当解决方案收到<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用时，它会循环访问选定项的集 (即，公开多个选择<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>服务)。  
   
-3.  选定内容中的每个项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以确定是否应启用保存菜单命令。 如果一个或多个项是脏的则启用保存命令。 如果在层次结构使用的标准编辑器，然后查询的层次结构委托脏状态设置为编辑器中通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
+3. 选定内容中的每个项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A>方法，以确定是否应启用保存菜单命令。 如果一个或多个项是脏的则启用保存命令。 如果在层次结构使用的标准编辑器，然后查询的层次结构委托脏状态设置为编辑器中通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A>方法。  
   
-4.  已更新的每个选定项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>适当的层次结构上的方法。  
+4. 已更新的每个选定项，该解决方案使用层次结构指针来调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A>适当的层次结构上的方法。  
   
      对于自定义编辑器中，文档数据对象和项目之间的通信是私有的。 因此，任何特殊的持久性问题被处理这两个对象之间。  
   

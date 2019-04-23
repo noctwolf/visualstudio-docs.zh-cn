@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 001f3a3c74f792fbe3028b6915cb350d359221a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653748"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043131"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59653748"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>若要使用 TableAdapter.Insert 方法将新记录插入数据库  
   
--   调用 TableAdapter 的`Insert`方法，在值中的每个列将作为参数传递。  
+- 调用 TableAdapter 的`Insert`方法，在值中的每个列将作为参数传递。  
   
     > [!NOTE]
     >  如果没有可用的实例，实例化想要使用的 TableAdapter。  
@@ -77,7 +77,7 @@ ms.locfileid: "59653748"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>若要使用命令对象将新记录插入数据库  
   
--   创建新的命令对象，并设置其`Connection`， `CommandType`，和`CommandText`属性。  
+- 创建新的命令对象，并设置其`Connection`， `CommandType`，和`CommandText`属性。  
   
      [!code-csharp[VbRaddataSaving#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#16)]
      [!code-vb[VbRaddataSaving#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#16)]  

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a7f1f4d036bd035368cce10684899d880481e37b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053281"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404:紧接在 P/Invoke 之后调用 GetLastError
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58926052"
 
  规则将忽略对以下调用托管的成员之间对平台调用发生时调用方法和调用<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>。 这些成员未更改的错误代码，可用于确定某个平台的成功调用的方法调用。
 
--   <xref:System.IntPtr.Zero?displayProperty=fullName>
+- <xref:System.IntPtr.Zero?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
 
--   <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请将移动到调用<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>，使其紧跟在平台调用调用方法。

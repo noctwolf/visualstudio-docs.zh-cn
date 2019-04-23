@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043661"
 ---
 # <a name="creating-a-settings-category"></a>创建设置类别
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "58936536"
   
 #### <a name="to-create-a-settings-category"></a>若要创建设置类别  
   
-1.  完成[创建选项页](../extensibility/creating-an-options-page.md)。  
+1. 完成[创建选项页](../extensibility/creating-an-options-page.md)。  
   
-2.  打开 VSPackage.resx 文件并添加以下三个字符串资源：  
+2. 打开 VSPackage.resx 文件并添加以下三个字符串资源：  
   
-    |名称|值|  
+    |名称|“值”|  
     |----------|-----------|  
     |106|我的类别|  
     |107|我的设置|  
@@ -49,7 +49,7 @@ ms.locfileid: "58936536"
     > [!NOTE]
     >  这三个字段，仅类别名称不会显示在导入和导出设置向导中。  
   
-3.  在 MyToolsOptionsPackage.cs，添加`float`名为属性`OptionFloat`到`OptionPageGrid`类，如以下示例所示。  
+3. 在 MyToolsOptionsPackage.cs，添加`float`名为属性`OptionFloat`到`OptionPageGrid`类，如以下示例所示。  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -79,39 +79,39 @@ ms.locfileid: "58936536"
     > [!NOTE]
     >  `OptionPageGrid`现在名为"My Category"类别包含两个属性，`OptionInteger`和`OptionFloat`。  
   
-4.  添加<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>到`MyToolsOptionsPackage`类并为其提供 CategoryName"My Category"，为其提供的对象名"我的设置"，并将 isToolsOptionPage 设置为 true。 设置 categoryResourceID、 objectNameResourceID 和 DescriptionResourceID 为 Id 前面创建的相应字符串资源。  
+4. 添加<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>到`MyToolsOptionsPackage`类并为其提供 CategoryName"My Category"，为其提供的对象名"我的设置"，并将 isToolsOptionPage 设置为 true。 设置 categoryResourceID、 objectNameResourceID 和 DescriptionResourceID 为 Id 前面创建的相应字符串资源。  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  生成项目并启动调试。 在实验实例中应看到**我的网格页**现在具有整数和浮点值。  
+5. 生成项目并启动调试。 在实验实例中应看到**我的网格页**现在具有整数和浮点值。  
   
 ## <a name="examining-the-settings-file"></a>检查设置文件  
  在本部分中，您将属性类别值导出到设置文件。 检查文件，然后返回到的属性类别导入值。  
   
-1.  通过按 F5 在调试模式下启动项目。 这将启动实验实例。  
+1. 通过按 F5 在调试模式下启动项目。 这将启动实验实例。  
   
-2.  打开**工具 / 选项**对话框。  
+2. 打开**工具 / 选项**对话框。  
   
-3.  在树视图中的左窗格中，展开**My Category** ，然后单击**我的网格页**。  
+3. 在树视图中的左窗格中，展开**My Category** ，然后单击**我的网格页**。  
   
-4.  更改的值**OptionFloat**为 3.1416 和**OptionInteger**到 12。 单击 **“确定”**。  
+4. 更改的值**OptionFloat**为 3.1416 和**OptionInteger**到 12。 单击 **“确定”**。  
   
-5.  在“工具”菜单上，单击“导入和导出设置”。  
+5. 在“工具”菜单上，单击“导入和导出设置”。  
   
      **导入和导出设置**向导显示。  
   
-6.  请确保**导出选定的环境设置**已选中，然后单击**下一步**。  
+6. 请确保**导出选定的环境设置**已选中，然后单击**下一步**。  
   
      **选择要导出的设置**页将出现。  
   
-7.  单击**我的设置**。  
+7. 单击**我的设置**。  
   
      **描述**更改为**OptionInteger 和 OptionFloat**。  
   
-8.  请确保**我的设置**是唯一的类别，选择，然后单击**下一步**。  
+8. 请确保**我的设置**是唯一的类别，选择，然后单击**下一步**。  
   
      **名称设置文件**页将出现。  
   

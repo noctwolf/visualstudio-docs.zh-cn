@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059001"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 
@@ -92,7 +92,7 @@ hostspecific="true"
 
 `trueFromBase`
 
-如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义主机类型。
+如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义宿主类型。
 
 因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它也适用于[设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
@@ -206,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- 用于调用 DerivedTemplate1 的应用程序代码：
- ```csharp
+用于调用 DerivedTemplate1 的应用程序代码：
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- 结果输出：
- ```
+结果输出：
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.

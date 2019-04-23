@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043715"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 文件
 在将 Visual Studio 解决方案或项目使用 IDE 的源代码管理下，IDE 会收到两个关键信息。 这些信息来自源代码管理插件形式的字符串。 这些字符串，"AuxPath"和"项目名称"，是不透明的 IDE，但它们用于该插件在版本控制中找到解决方案或项目。 IDE 通常这些字符串第一次通过调用来获取[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然后将其保存在解决方案或项目文件中为未来调用[SccOpenProject](../extensibility/sccopenproject-function.md)。 在解决方案和项目文件中嵌入的"AuxPath"和"项目名称"字符串自动时未更新用户的分支，分叉，或将版本控制中的解决方案和项目文件复制。 若要确保解决方案和项目文件指向其在版本控制中的正确位置，用户必须手动更新这些字符串。 字符串应该是不透明，因为它可能始终无法清除更新方式。
@@ -25,19 +25,19 @@ ms.locfileid: "56693030"
 
  源代码管理插件的支持*MSSCCPRJ.SCC*文件必须遵守以下准则：
 
--   只能有一个*MSSCCPRJ.SCC*每个目录的文件。
+- 只能有一个*MSSCCPRJ.SCC*每个目录的文件。
 
--   *MSSCCPRJ.SCC*文件可为给定目录中的源代码管理下的多个文件包含"AuxPath"和"项目名称"。
+- *MSSCCPRJ.SCC*文件可为给定目录中的源代码管理下的多个文件包含"AuxPath"和"项目名称"。
 
--   "AuxPath"字符串不能在其中的引号。 它允许包含引号作为分隔符 （例如，一对双引号可用来指示空字符串）。 从读取时，IDE 会去除"AuxPath"字符串中的所有引号*MSSCCPRJ.SCC*文件。
+- "AuxPath"字符串不能在其中的引号。 它允许包含引号作为分隔符 （例如，一对双引号可用来指示空字符串）。 从读取时，IDE 会去除"AuxPath"字符串中的所有引号*MSSCCPRJ.SCC*文件。
 
--   "项目名称"中的字符串*MSSCCPRJ。SCC 文件*必须从返回的字符串完全匹配`SccGetProjPath`函数。 如果该函数返回的字符串具有其在字符串周围的引号*MSSCCPRJ.SCC*文件必须包含引号，反之亦然。
+- "项目名称"中的字符串*MSSCCPRJ。SCC 文件*必须从返回的字符串完全匹配`SccGetProjPath`函数。 如果该函数返回的字符串具有其在字符串周围的引号*MSSCCPRJ.SCC*文件必须包含引号，反之亦然。
 
--   *MSSCCPRJ.SCC*文件创建或更新时将文件置于源代码管理下。
+- *MSSCCPRJ.SCC*文件创建或更新时将文件置于源代码管理下。
 
--   如果*MSSCCPRJ.SCC*获取删除文件、 一个提供程序应重新生成该下一次执行源代码管理操作，有关该目录。
+- 如果*MSSCCPRJ.SCC*获取删除文件、 一个提供程序应重新生成该下一次执行源代码管理操作，有关该目录。
 
--   *MSSCCPRJ.SCC*文件必须严格遵循定义的格式。
+- *MSSCCPRJ.SCC*文件必须严格遵循定义的格式。
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 进行了说明。SCC 文件格式
  以下是示例*MSSCCPRJ.SCC*文件格式 （仅作为指南，提供和不应在文件正文中包含的行号）：

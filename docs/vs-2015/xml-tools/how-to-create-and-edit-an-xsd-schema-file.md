@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 132cc5acd705c45d56a9234467b807a86b5ae1ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 847d8e02f1d8cb6b1273ed4206d25207de59e3e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056583"
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>如何：创建和编辑 XSD 架构文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,19 +23,19 @@ ms.locfileid: "59666996"
   
 ### <a name="to-create-a-new-xml-schema-file"></a>创建新的 XML 架构文件  
   
-1.  在 Visual Studio 中打开**文件**菜单，然后选择**新建**，然后**文件**。 或者，使用键盘快捷方式 Ctrl+N。  
+1. 在 Visual Studio 中打开**文件**菜单，然后选择**新建**，然后**文件**。 或者，使用键盘快捷方式 Ctrl+N。  
   
-2.  在中**新的文件**对话框中，选择**XML 架构**然后单击**打开**。  
+2. 在中**新的文件**对话框中，选择**XML 架构**然后单击**打开**。  
   
      将创建新文件。 将在 Visual Studio 中显示起始视图和空的 XML 架构资源管理器窗口。  
   
 ### <a name="to-edit-a-file"></a>编辑文件  
   
-1.  单击**使用 XML 编辑器查看和编辑基础 XML 架构文件**起始视图上的链接。  
+1. 单击**使用 XML 编辑器查看和编辑基础 XML 架构文件**起始视图上的链接。  
   
      将显示 XML 编辑器，并打开一个新文件。  
   
-2.  中的 XML 架构示例代码复制[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。  
+2. 中的 XML 架构示例代码复制[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并粘贴以替换默认情况下，已将它们添加到新 XSD 文件的代码。  
   
      此时，会使用新的架构集对 XML 架构资源管理器进行更新。  
   

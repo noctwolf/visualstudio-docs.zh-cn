@@ -9,23 +9,23 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055166"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 可以将活动添加到**工具箱**几种不同方式在解决方案中。 您可以从当前项目中添加活动，也可以从另一个项目或从另一个程序集引用活动。  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>从当前项目中添加活动  
   
-1.  将新的自定义活动添加到当前工作流项目。 [!INCLUDE[crabout](../includes/crabout-md.md)] 将新的自定义活动添加到你的项目，请参阅[如何：将新项添加到工作流项目](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。  
+1. 将新的自定义活动添加到当前工作流项目。 [!INCLUDE[crabout](../includes/crabout-md.md)] 将新的自定义活动添加到你的项目，请参阅[如何：将新项添加到工作流项目](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。  
   
-2.  向活动添加自定义逻辑。  
+2. 向活动添加自定义逻辑。  
   
-3.  生成项目。 如果生成成功中的新类别**工具箱**名为"\<*项目名称*>"将显示该类别中包含的自定义活动。  
+3. 生成项目。 如果生成成功中的新类别**工具箱**名为"\<*项目名称*>"将显示该类别中包含的自定义活动。  
   
     > [!NOTE]
     >  如果重置工具箱中，则将删除自定义活动，即使重新生成解决方案。 要在重置后使用自定义活动重新填充工具箱，请重新启动 [!INCLUDE[vs2010](../includes/vs2010-md.md)]。  
@@ -38,25 +38,25 @@ ms.locfileid: "58937499"
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>从另一个项目中添加活动  
   
-1.  打开包含至少一个工作流项目（自定义活动库项目或定义自定义活动的另一个工作流项目）的解决方案。  
+1. 打开包含至少一个工作流项目（自定义活动库项目或定义自定义活动的另一个工作流项目）的解决方案。  
   
-2.  生成这两个项目。 如果生成成功中的新类别**工具箱**名为"\<*项目名称*>"将显示该类别中包含的自定义活动。  
+2. 生成这两个项目。 如果生成成功中的新类别**工具箱**名为"\<*项目名称*>"将显示该类别中包含的自定义活动。  
   
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>从程序集中将活动添加到工具箱  
   
-1.  打开工作流解决方案。  
+1. 打开工作流解决方案。  
   
-2.  从**工具**菜单中，选择**选择工具箱项...**.  
+2. 从**工具**菜单中，选择**选择工具箱项...**.  
   
-3.  在中**选择工具箱项**对话框中，选择**System.Activities 组件**选项卡，然后单击**浏览...** 若要导航到包含你想要添加的自定义活动的程序集。  
+3. 在中**选择工具箱项**对话框中，选择**System.Activities 组件**选项卡，然后单击**浏览...** 若要导航到包含你想要添加的自定义活动的程序集。  
   
-4.  选择程序集，然后单击**确定**。 自定义活动组件将添加到组件列表中并自动处于选中状态。  
+4. 选择程序集，然后单击**确定**。 自定义活动组件将添加到组件列表中并自动处于选中状态。  
   
-    1.  单击**确定**关闭对话框。  
+    1. 单击**确定**关闭对话框。  
   
-5.  若要显示工具箱中，选择**工具箱**从**视图**菜单。  
+5. 若要显示工具箱中，选择**工具箱**从**视图**菜单。  
   
-6.  自定义活动将显示在**工具箱**之前添加了项中焦点所在的类别下。 例如，如果**常规**类别中选择了**工具箱**之前添加工具箱项，该活动将显示在**常规**类别。  
+6. 自定义活动将显示在**工具箱**之前添加了项中焦点所在的类别下。 例如，如果**常规**类别中选择了**工具箱**之前添加工具箱项，该活动将显示在**常规**类别。  
   
 ## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)

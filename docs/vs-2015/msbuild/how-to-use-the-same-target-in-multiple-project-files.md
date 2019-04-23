@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66a916203f008aee84010bcc910f1a35dc39e5d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056830"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "59654862"
   
 #### <a name="to-import-a-project"></a>导入项目  
   
-1.  在正在导入的项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。  
+1. 在正在导入的项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。  
   
-2.  使用 `Import` 元素导入项目。 例如:  
+2. 使用 `Import` 元素导入项目。 例如:  
   
      `<Import Project="MyCommon.targets"/>`  
   
-3.  在 `Import` 元素之后定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。  
+3. 在 `Import` 元素之后定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。  
   
 ## <a name="order-of-evaluation"></a>计算顺序  
  当 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 到达 `Import` 元素后，已导入项目将被高效地插入位于 `Import` 元素所处位置的正在导入的项目中。 因此，`Import` 元素的位置可能会影响属性和项的值。 请务必了解已导入项目所设置的属性和项，以及已导入项目所使用的属性和项。  
@@ -77,11 +77,11 @@ ms.locfileid: "59654862"
   
 #### <a name="use-the-following-approach-when-importing-projects"></a>在导入项目时使用以下方法  
   
-1.  在项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。  
+1. 在项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。  
   
-2.  导入项目。  
+2. 导入项目。  
   
-3.  在项目文件中定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。  
+3. 在项目文件中定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。  
   
 ## <a name="example"></a>示例  
  下面的代码示例演示了第二个代码示例所导入的 MyCommon.targets 文件。 .targets 文件将评估正在导入的项目中的属性，以配置生成。  

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b48863234d7d624c183a6e02967411280655c5fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 2b34803ac047c411f3e77652949841227caef38e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055376"
 ---
 # <a name="extend-solutions"></a>扩展解决方案
 一种解决方案是协同工作以创建应用程序的一个或多个项目的分组。
@@ -21,6 +21,6 @@ ms.locfileid: "56703183"
 ## <a name="in-this-section"></a>本节内容
  下面的演练显示在其中您可以扩展解决方案的一些方法。
 
-1.  [扩展解决方案资源管理器筛选器](../extensibility/extending-the-solution-explorer-filter.md)说明如何筛选解决方案资源管理器显示的内容。
+1. [扩展解决方案资源管理器筛选器](../extensibility/extending-the-solution-explorer-filter.md)说明如何筛选解决方案资源管理器显示的内容。
 
-2.  [管理解决方案中的项目加载](../extensibility/managing-project-loading-in-a-solution.md)说明如何管理项目加载来提高性能，当用户加载解决方案。
+2. [管理解决方案中的项目加载](../extensibility/managing-project-loading-in-a-solution.md)说明如何管理项目加载来提高性能，当用户加载解决方案。

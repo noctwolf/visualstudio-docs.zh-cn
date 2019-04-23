@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059261"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>若要创建运行时文本模板  
   
-1.  在解决方案资源管理器，在你的项目的快捷菜单上选择**外**，**新项**。  
+1. 在解决方案资源管理器，在你的项目的快捷菜单上选择**外**，**新项**。  
   
-2.  在中**添加新项**对话框中，选择**运行时文本模板**。 (在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]下查找**常见 Items\General**。)  
+2. 在中**添加新项**对话框中，选择**运行时文本模板**。 (在[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]下查找**常见 Items\General**。)  
   
-3.  键入你的模板文件的名称。  
+3. 键入你的模板文件的名称。  
   
     > [!NOTE]
     >  模板文件的名称将用作生成的代码中的类名称。 因此，它不应具有空格或标点。  
   
-4.  选择“添加”。  
+4. 选择“添加”。  
   
      创建新文件扩展名 **.tt**。 其**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 它包含以下行：  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>若要将现有文本文件转换为运行时模板  
   
-1.  包括文件到你[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目。 在解决方案资源管理器，在项目的快捷菜单上选择**外**，**现有项**。  
+1. 包括文件到你[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目。 在解决方案资源管理器，在项目的快捷菜单上选择**外**，**现有项**。  
   
-2.  设置文件的**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 在解决方案资源管理器，在该文件的快捷菜单上选择**属性**。  
+2. 设置文件的**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 在解决方案资源管理器，在该文件的快捷菜单上选择**属性**。  
   
     > [!NOTE]
     >  如果已设置该属性，请确保它是**TextTemplatingFilePreprocessor**而不**TextTemplatingFileGenerator**。 如果已具有扩展名的文件包含在发生这种情况 **.tt**。  
   
-3.  更改到的文件扩展名 **.tt**。 尽管此步骤是可选的但它可帮助您避免在不适当的编辑器中打开该文件。  
+3. 更改到的文件扩展名 **.tt**。 尽管此步骤是可选的但它可帮助您避免在不适当的编辑器中打开该文件。  
   
-4.  从文件名称的主要部分中删除任何空格或标点。 例如，"我的 Web Page.tt"将是不正确，但是"MyWebPage.tt"是正确的。 文件名称将用作生成的代码中的类名称。  
+4. 从文件名称的主要部分中删除任何空格或标点。 例如，"我的 Web Page.tt"将是不正确，但是"MyWebPage.tt"是正确的。 文件名称将用作生成的代码中的类名称。  
   
-5.  在文件开头插入以下行。 如果您正在 Visual Basic 项目中，将为"C#"与"VB"。  
+5. 在文件开头插入以下行。 如果您正在 Visual Basic 项目中，将为"C#"与"VB"。  
   
      `<#@ template language="C#" #>`  
   

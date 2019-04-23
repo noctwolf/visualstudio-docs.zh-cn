@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056674"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "58931064"
 可以更改 C# 调试配置中的项目设置**属性页**窗口中，如中所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”窗口中与调试器有关的设置的位置。  
   
 > [!WARNING]
->  本主题不适用于 Windows 应用商店应用。 请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  本主题不适用于 Windows 应用商店应用。 请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> 调试选项卡  
+## <a name="BKMK_Debug_tab"></a> 调试选项卡  
   
 |**设置**|**说明**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ ms.locfileid: "58931064"
 |**启用非托管代码调试**|使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。|  
 |**启用 SQL Server 调试**|允许对 SQL Server 数据库对象进行调试。|  
   
-##  <a name="BKMK_Build_tab"></a> 生成选项卡  
+## <a name="BKMK_Build_tab"></a> 生成选项卡  
   
 |设置|描述|  
 |-------------|-----------------|  

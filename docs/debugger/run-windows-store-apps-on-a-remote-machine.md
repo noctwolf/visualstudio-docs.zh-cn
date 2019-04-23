@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1d0ff9d8f3113b1df1e10891a3bd2197dd92482d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58789895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055374"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>调试从 Visual Studio 的远程计算机上的 UWP 应用
 
 Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或设备上的通用 Windows 平台 (UWP) 应用。 在 Visual Studio 计算机不支持特定于 UWP 的功能，例如触摸、 地理位置或物理方向时，在远程计算机上运行 UWP 应用将非常有用。
 
-##  <a name="BKMK_Prerequisites"></a> 先决条件
+## <a name="BKMK_Prerequisites"></a> 先决条件
 
 若要调试从 Visual Studio 在远程设备上的 UWP 应用：
 
@@ -35,7 +35,7 @@ Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或�
   - 某些 Windows 10 版本启动并自动运行的远程工具。 否则为[安装和运行 Visual Studio 远程工具](#BKMK_download)。
   - Windows 10 移动设备不需要或支持远程工具。
 
-##  <a name="BKMK_ConnectVS"></a> 配置 Visual Studio 项目以便进行远程调试
+## <a name="BKMK_ConnectVS"></a> 配置 Visual Studio 项目以便进行远程调试
 <a name="BKMK_DirectConnect"></a> 使用项目**属性**来指定要连接到的远程设备。 设置不同，具体取决于编程语言。
 
 > [!CAUTION]
@@ -43,27 +43,27 @@ Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或�
 >
 >如果愿意**Windows 身份验证**有关**身份验证类型**，将需要登录到远程计算机调试时。 此外必须在运行远程调试器**Windows 身份验证**模式下，作为 Visual Studio 计算机上的同一用户帐户。
 
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 配置C#或 Visual Basic 项目进行远程调试
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 配置C#或 Visual Basic 项目进行远程调试
 
 1. 选择C#或 Visual Studio 中的 Visual Basic 项目**解决方案资源管理器**，然后选择**属性**图标，按**Alt** + **输入**，或右键单击，然后选择**属性**。
 
-1.  选择“调试”选项卡。
+1. 选择“调试”选项卡。
 
-1.  下**目标设备**，选择**远程计算机**远程计算机，或**设备**直接连接的 Windows 10 移动设备。
+1. 下**目标设备**，选择**远程计算机**远程计算机，或**设备**直接连接的 Windows 10 移动设备。
 
-1.  对于远程计算机，请输入网络名称或 IP 地址**远程计算机**字段，也可以选择**查找**搜索中的设备[远程连接对话框的](#remote-connections)。
+1. 对于远程计算机，请输入网络名称或 IP 地址**远程计算机**字段，也可以选择**查找**搜索中的设备[远程连接对话框的](#remote-connections)。
 
     ![管理项目属性以便进行远程调试](../debugger/media/vsrun_managed_projprop_remote.png "托管调试项目属性")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 配置C++项目以便进行远程调试
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> 配置C++项目以便进行远程调试
 
-1.  选择C++在 Visual Studio 中的项目**解决方案资源管理器**，然后选择**属性**图标，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
+1. 选择C++在 Visual Studio 中的项目**解决方案资源管理器**，然后选择**属性**图标，按**Alt**+**Enter**，或右键单击，然后选择**属性**。
 
-1.  选择**调试**选项卡。
+1. 选择**调试**选项卡。
 
-3.  下**要启动的调试器**，选择**远程计算机**远程计算机，或**设备**直接连接的 Windows 10 移动设备。
+3. 下**要启动的调试器**，选择**远程计算机**远程计算机，或**设备**直接连接的 Windows 10 移动设备。
 
-1.  对于远程计算机中，输入或选择网络名称或 IP 地址**计算机名称**字段中或向下和选择的下拉**定位**搜索中的设备[远程连接对话框](#remote-connections).
+1. 对于远程计算机中，输入或选择网络名称或 IP 地址**计算机名称**字段中或向下和选择的下拉**定位**搜索中的设备[远程连接对话框](#remote-connections).
 
     ![C++项目属性以便进行远程调试](../debugger/media/vsrun_cpp_projprop_remote.png " C++调试项目属性")
 
@@ -92,7 +92,7 @@ Visual Studio 可用于运行、 调试、 分析和测试另一台计算机或�
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-##  <a name="BKMK_RunRemoteDebug"></a> 远程调试 UWP 应用
+## <a name="BKMK_RunRemoteDebug"></a> 远程调试 UWP 应用
 
 远程调试的工作方式相同的本地调试。
 

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660289"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053388"
 ---
 # <a name="immediate-window"></a>即时窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,9 +118,9 @@ ms.locfileid: "59660289"
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>在“即时”窗口中切换首次异常通知开关  
   
-1.  在“视图”菜单上单击“其他窗口”，然后单击“输出”。  
+1. 在“视图”菜单上单击“其他窗口”，然后单击“输出”。  
   
-2.  右键单击**输出**窗口的文本区域，然后选择或取消选择“异常消息”。  
+2. 右键单击**输出**窗口的文本区域，然后选择或取消选择“异常消息”。  
   
 ## <a name="see-also"></a>请参阅  
  [Navigating through Code with the Debugger](../../debugger/navigating-through-code-with-the-debugger.md) （使用调试器浏览代码）  

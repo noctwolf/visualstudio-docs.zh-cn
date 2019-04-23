@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056804"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ ms.locfileid: "59653094"
   
  对于第二个行，但是，`Update`方法自动调用正确的数据命令，并将其传输到数据库。 SQL 语句的特定语法取决于基础数据存储所支持的 SQL 的方言。 但传送的 SQL 语句的以下常规特征值得注意的内容：  
   
--   传送的 SQL 语句是 UPDATE 语句。 适配器知道使用 UPDATE 语句，因为值<xref:System.Data.DataRow.RowState%2A>属性是<xref:System.Data.DataRowState>。  
+- 传送的 SQL 语句是 UPDATE 语句。 适配器知道使用 UPDATE 语句，因为值<xref:System.Data.DataRow.RowState%2A>属性是<xref:System.Data.DataRowState>。  
   
--   传送的 SQL 语句包含 WHERE 子句的 UPDATE 语句的目标行，该值指示在其中`CustomerID = 'c400'`。 SELECT 语句的此部分使目标行有别于其他所有因为`CustomerID`是目标表的主键。 WHERE 子句派生自该记录的原始版本的信息 (`DataRowVersion.Original`)、 所需标识行的值已更改的情况下。  
+- 传送的 SQL 语句包含 WHERE 子句的 UPDATE 语句的目标行，该值指示在其中`CustomerID = 'c400'`。 SELECT 语句的此部分使目标行有别于其他所有因为`CustomerID`是目标表的主键。 WHERE 子句派生自该记录的原始版本的信息 (`DataRowVersion.Original`)、 所需标识行的值已更改的情况下。  
   
--   传输的 SQL 语句包含 SET 子句，若要设置已修改的列的新值。  
+- 传输的 SQL 语句包含 SET 子句，若要设置已修改的列的新值。  
   
     > [!NOTE]
     >  如果 TableAdapter 的`UpdateCommand`属性已设置为存储过程的名称，该适配器并不会构造 SQL 语句。 相反，它与中的相应参数调用存储的过程。  

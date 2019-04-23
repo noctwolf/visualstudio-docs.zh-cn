@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057155"
 ---
 # <a name="in-source-suppression-overview"></a>“源代码中禁止显示”概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58936574"
  不应在发布版本使用在源代码中禁止显示以防止意外地传送在源代码中禁止显示元数据。 由于在源代码中禁止显示的处理成本，还通过包括在源代码中禁止显示元数据降低应用程序的性能。  
   
 > [!NOTE]
->  您不需要亲自为手动代码这些属性。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 菜单项不可用 c + + 代码。  
+>  您不需要亲自为手动代码这些属性。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 菜单项不是可用于C++代码。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 特性  
  右键单击中的代码分析警告时**错误列表**，然后单击**禁止显示消息**即**SuppressMessage**在代码中或为添加属性项目的全局禁止显示文件。  
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  其中：  
   
--   **规则类别**-定义了该规则的类别。 有关代码分析规则类别的详细信息，请参阅[的代码分析托管代码警告](../code-quality/code-analysis-for-managed-code-warnings.md)。  
+- **规则类别**-定义了该规则的类别。 有关代码分析规则类别的详细信息，请参阅[的代码分析托管代码警告](../code-quality/code-analysis-for-managed-code-warnings.md)。  
   
--   **规则 Id** -规则的标识符。 支持包括以上两个规则标识符的短期和长期名称。 短名称是 CAXXXX;长名称是 CAXXXX:FriendlyTypeName。  
+- **规则 Id** -规则的标识符。 支持包括以上两个规则标识符的短期和长期名称。 短名称是 CAXXXX;长名称是 CAXXXX:FriendlyTypeName。  
   
--   **理由**-用于记录取消消息的规则的原因的文本。  
+- **理由**-用于记录取消消息的规则的原因的文本。  
   
--   **消息 Id** -为每个消息问题的唯一标识符。  
+- **消息 Id** -为每个消息问题的唯一标识符。  
   
--   **作用域**-取消该警告的目标。 如果未指定目标，则将它设置为属性的目标。 受支持的作用域包括：  
+- **作用域**-取消该警告的目标。 如果未指定目标，则将它设置为属性的目标。 受支持的作用域包括：  
   
-    -   模块  
+    - 模块  
   
-    -   命名空间  
+    - 命名空间  
   
-    -   资源  
+    - 资源  
   
-    -   类型  
+    - 类型  
   
-    -   成员  
+    - 成员  
   
--   **目标**-用于取消该警告将目标指定的标识符。 它必须包含完全限定的项名称。  
+- **目标**-用于取消该警告将目标指定的标识符。 它必须包含完全限定的项名称。  
   
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用情况  
  在向其级别禁止显示代码分析警告的实例**SuppressMessage**应用属性。 这样做的目的是紧密耦合到代码的禁止显示信息发生冲突。  

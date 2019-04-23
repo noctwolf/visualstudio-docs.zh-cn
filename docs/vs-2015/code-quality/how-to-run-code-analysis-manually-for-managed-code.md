@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2fa3e57660b6ac68fdc792f3837a9766b497a78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053854"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>如何：手动运行托管代码的代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,6 +25,6 @@ ms.locfileid: "58935669"
   
 ### <a name="to-run-code-analysis-manually"></a>若要手动运行代码分析  
   
-1.  在中**解决方案资源管理器**，单击该项目。  
+1. 在中**解决方案资源管理器**，单击该项目。  
   
-2.  上**分析**菜单上，单击**上运行代码分析***项目名称*。
+2. 上**分析**菜单上，单击**上运行代码分析***项目名称*。

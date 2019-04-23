@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0e944d2ed8538a72082bdc52ee72058907ed9d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055296"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。
@@ -86,17 +86,17 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="requirements"></a>要求
  你的项目必须满足以下要求，然后才能使 VBA 代码调入自定义项程序集：
 
--   文档必须具有以下文件扩展名之一：
+- 文档必须具有以下文件扩展名之一：
 
-    -   对于 Word: *.docm*或 *.doc*
+    - 对于 Word: *.docm*或 *.doc*
 
-    -   对于 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
+    - 对于 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
 
--   文档必须已经包含其中有 VBA 代码的 VBA 项目。
+- 文档必须已经包含其中有 VBA 代码的 VBA 项目。
 
--   必须在不提示用户启用宏的情况下允许文档中的 VBA 代码运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。
+- 必须在不提示用户启用宏的情况下允许文档中的 VBA 代码运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。
 
--   Office 项目必须至少包含一个公共类，该类包含一个或多个要向 VBA 公开的公共成员。
+- Office 项目必须至少包含一个公共类，该类包含一个或多个要向 VBA 公开的公共成员。
 
      可以向 VBA 公开方法、属性和事件。 公开的类可以是主机项类（如 Word 的 `ThisDocument` 或 Excel 的 `ThisWorkbook` 和 `Sheet1` ）或你在项目中定义的其他类。 有关主机项的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
@@ -109,11 +109,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
    为此，必须执行下列主要步骤：
 
-  1.  向 COM 公开该类。
+  1. 向 COM 公开该类。
 
-  2.  替代项目中主机项类的 **GetAutomationObject** 方法，以返回要向 VBA 公开的类的实例。
+  2. 替代项目中主机项类的 **GetAutomationObject** 方法，以返回要向 VBA 公开的类的实例。
 
-  3.  将项目中任何主机项类的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**。 这会将自定义项程序集的类型库嵌入程序集，并将对该类型库的引用添加到文档中的 VBA 项目。
+  3. 将项目中任何主机项类的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**。 这会将自定义项程序集的类型库嵌入程序集，并将对该类型库的引用添加到文档中的 VBA 项目。
 
   有关详细说明，请参阅[如何：向 VBA 公开代码在 Visual Basic 项目中的](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)和[如何：在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。
 
@@ -174,7 +174,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
  此方法返回一个对象，该对象表示向 VBA 公开的类。 所返回对象的成员和方法参数将出现在 IntelliSense 中。
 
-##  <a name="Guidelines"></a> 向文档添加 VBA 代码的准则
+## <a name="Guidelines"></a> 向文档添加 VBA 代码的准则
  可在多个不同的文档副本中添加调入文档级自定义项的 VBA 代码。
 
  在开发和测试解决方案时，对于当你在 Visual Studio 中调试或运行项目时将打开的文档（即位于生成输出文件夹中的文档），你可以在其中编写 VBA 代码。 但是，在下次生成项目时，添加到此文档的任何 VBA 代码都将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。
@@ -201,7 +201,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>最终用户计算机上
  如果最终用户是 VBA 开发人员并且将要调入你在文档级自定义项中提供的服务，则可以告诉他们如何通过在其文档副本中使用 `CallVSTOAssembly` 属性或 `GetManagedClass` 方法来调用你的代码。 当你更新到解决方案时，最终用户计算机上的文档中的 VBA 代码不会被覆盖，因为未修改该文档将更新发布。
 
-##  <a name="PropertyTasks"></a> 由主机项属性执行的任务
+## <a name="PropertyTasks"></a> 由主机项属性执行的任务
  使用 **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 属性时，Visual Studio 会执行几组不同的任务。
 
 ### <a name="enablevbacallers"></a>“属性”
@@ -229,9 +229,9 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 2. 在文档内的 VBA 项目中添加对以下类型库的引用：
 
-   -   自定义程序集的类型库。
+   - 自定义程序集的类型库。
 
-   -   Microsoft Visual Studio Tools for Office Execution Engine 9.0 类型库。 此类型库包含在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。
+   - Microsoft Visual Studio Tools for Office Execution Engine 9.0 类型库。 此类型库包含在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。
 
    将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**时，Visual Studio 将执行以下任务：
 
