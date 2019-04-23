@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085921"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>旧版语言服务中的导航栏支持
 在的编辑器视图顶部的导航栏显示文件中的类型和成员。 在左侧的下拉列表中显示类型和成员显示在右侧下拉列表。 当用户选择一种类型时，该类型的第一行放置插入符号。 当用户选择成员时，将插入符号放置在上成员的定义。 下拉列表框会更新以反映当前插入符号的位置。
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   实现<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法通常执行以下步骤：
 
-1.  获取当前声明的源文件的列表。
+1. 获取当前声明的源文件的列表。
 
      有多种方法来填充的列表。 一种方法是在你的版本上创建自定义方法<xref:Microsoft.VisualStudio.Package.LanguageService>类，该类调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法使用自定义分析原因返回的所有声明的列表。 另一种方法可能是通过调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法直接从<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>，原因是自定义分析的方法。 第三种方法可能是缓存中的声明<xref:Microsoft.VisualStudio.Package.AuthoringScope>类中的最后一个完整分析操作返回<xref:Microsoft.VisualStudio.Package.LanguageService>类，并检索从<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法。
 
-2.  填充或更新的类型的列表。
+2. 填充或更新的类型的列表。
 
      类型列表的内容可能会更新源发生更改时，或如果已选择要更改基于当前插入符号位置的类型的文本样式。 请注意，此位置传递到<xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A>方法。
 
-3.  确定要基于当前插入符号位置的类型列表中选择的类型。
+3. 确定要基于当前插入符号位置的类型列表中选择的类型。
 
      您可以在步骤 1 以查找包含当前插入符号位置的类型中搜索获得的声明，然后搜索以确定其索引的类型列表到该类型的类型列表。
 
-4.  填充或更新基于所选类型的成员的列表。
+4. 填充或更新基于所选类型的成员的列表。
 
      成员列表中当前显示的内容将反映**成员**下拉列表。 成员列表的内容可能需要更新如果源已更改，或如果您要显示只有所选类型的成员，并且所选的类型已更改。 如果您选择显示源代码文件中的所有成员，在列表中每个成员的文本样式将需要更新如果当前所选的类型已更改。
 
-5.  确定要在基于当前插入符号位置的成员列表中选择的成员。
+5. 确定要在基于当前插入符号位置的成员列表中选择的成员。
 
      搜索获得的声明在步骤 1 中的成员，其中包含当前插入符号位置，然后搜索该成员以确定其索引到成员列表中的成员列表。
 
-6.  返回`true`如果为列表或任一列表中的选择进行了任何更改。
+6. 返回`true`如果为列表或任一列表中的选择进行了任何更改。

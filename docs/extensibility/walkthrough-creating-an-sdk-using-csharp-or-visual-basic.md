@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086632"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：创建 SDK 使用C#或 Visual Basic
 在本演练中，将了解如何使用 Visual C# 创建一个简单的数学库 SDK，然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 将完成以下过程：
 
--   [若要创建 SimpleMath Windows 运行时组件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [若要创建 SimpleMath Windows 运行时组件](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [若要创建 SimpleMathVSIX 扩展项目](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [创建示例应用程序使用类库](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [若要创建 SimpleMathVSIX 扩展项目](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [创建示例应用程序使用类库](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>系统必备
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-##  <a name="createClassLibrary"></a> 若要创建 SimpleMath Windows 运行时组件
+## <a name="createClassLibrary"></a> 若要创建 SimpleMath Windows 运行时组件
 
 1. 在菜单栏上依次选择**文件** > **新建** > **新项目**。
 
@@ -54,25 +54,25 @@ ms.locfileid: "56954003"
 
 9. 在中**解决方案资源管理器**，打开快捷菜单**SimpleMath**项目节点，然后选择**生成**。
 
-##  <a name="createVSIX"></a> 若要创建 SimpleMathVSIX 扩展项目
+## <a name="createVSIX"></a> 若要创建 SimpleMathVSIX 扩展项目
 
-1.  上的快捷菜单**解决方案 SimpleMath**节点，选择**添加** > **新建项目**。
+1. 上的快捷菜单**解决方案 SimpleMath**节点，选择**添加** > **新建项目**。
 
-2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**扩展性**节点，然后选择**VSIX 项目**模板。
+2. 在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**扩展性**节点，然后选择**VSIX 项目**模板。
 
-3.  在中**名称**框中，指定**SimpleMathVSIX**，然后选择**确定**按钮。
+3. 在中**名称**框中，指定**SimpleMathVSIX**，然后选择**确定**按钮。
 
-4.  在中**解决方案资源管理器**，选择**source.extension.vsixmanifest**项。
+4. 在中**解决方案资源管理器**，选择**source.extension.vsixmanifest**项。
 
-5.  在菜单栏上，选择“视图” > “代码”。
+5. 在菜单栏上，选择“视图” > “代码”。
 
-6.  现有的 XML 替换为以下 XML:
+6. 现有的 XML 替换为以下 XML:
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  在中**解决方案资源管理器**，选择**SimpleMathVSIX**项目。
+7. 在中**解决方案资源管理器**，选择**SimpleMathVSIX**项目。
 
-8.  在菜单栏上，依次选择“项目” > “添加新项”。
+8. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 9. 在列表中**常见项**，展开**数据**，然后选择**XML 文件**。
 
@@ -83,6 +83,7 @@ ms.locfileid: "56954003"
 12. 用下列 XML 替换该文件的内容：
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ ms.locfileid: "56954003"
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ ms.locfileid: "56954003"
 
 30. 选择**安装**按钮，等待安装完成，然后再重新启动 Visual Studio。
 
-##  <a name="createSample"></a> 创建示例应用程序使用类库
+## <a name="createSample"></a> 创建示例应用程序使用类库
 
 1. 在菜单栏上依次选择**文件** > **新建** > **新项目**。
 
@@ -176,6 +178,7 @@ ms.locfileid: "56954003"
 10. 在中**解决方案资源管理器**，打开**MainPage.xaml**，并将其内容替换为以下 XAML:
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ ms.locfileid: "56954003"
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"
@@ -239,6 +243,6 @@ ms.locfileid: "56954003"
     已成功创建并使用扩展 SDK。
 
 ## <a name="see-also"></a>请参阅
-- [演练：创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
+- [演练：使用 SDK 创建C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [演练：创建使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

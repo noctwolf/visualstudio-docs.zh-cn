@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
-ms.openlocfilehash: 52ca70a0a3c4e129063c5d861fd4692dcd85cc9c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086008"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 可以通过从派生来创建菜单命令<xref:System.ComponentModel.Design.MenuCommand>或从<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>对象，并实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。
@@ -63,9 +63,9 @@ ms.locfileid: "56335490"
    </Button>
    ```
 
-   1.  设置 `guid` 和 `id` 字段以匹配新命令的 GUID:ID。
+   1. 设置 `guid` 和 `id` 字段以匹配新命令的 GUID:ID。
 
-   2.  设置 `priority` 特性。
+   2. 设置 `priority` 特性。
 
         .Vsct 使用 `priority` 特性来确定按钮在其父组中其他对象中的位置。
 
@@ -73,7 +73,7 @@ ms.locfileid: "56335490"
 
         省略 `priority` 特性会将其值设置为 0。
 
-   3.  设置 `type` 特性。 在大多数情况下，其值将为 `"Button"`。 有关其他有效按钮类型的说明，请参阅[Button 元素](../extensibility/button-element.md)。
+   3. 设置 `type` 特性。 在大多数情况下，其值将为 `"Button"`。 有关其他有效按钮类型的说明，请参阅[Button 元素](../extensibility/button-element.md)。
 
 5. 在按钮定义中，创建一个包含 [ButtonText](../extensibility/strings-element.md) 元素的 [Strings](../extensibility/buttontext-element.md) 元素以包含菜单名称（菜单在 IDE 中显示时），并包含一个 [CommandName](../extensibility/commandname-element.md) 元素以包含用于访问“命令”  窗口中的菜单的命令名称。
 
@@ -127,11 +127,11 @@ ms.locfileid: "56335490"
 
  对于直接将 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口用于命令处理的代码，必须实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口及其方法。 两个最重要的方法为 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>。
 
-1.  获取 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 实例，如下面的示例所示。
+1. 获取 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 实例，如下面的示例所示。
 
      [!code-csharp[ButtonGroup#21](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_5.cs)]
 
-2.  创建一个 <xref:System.ComponentModel.Design.CommandID> 对象，该对象将命令的 GUID 和 ID 作为其参数进行处理，如下面的示例中所示。
+2. 创建一个 <xref:System.ComponentModel.Design.CommandID> 对象，该对象将命令的 GUID 和 ID 作为其参数进行处理，如下面的示例中所示。
 
      [!code-csharp[ButtonGroup#22](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_6.cs)]
 
@@ -139,7 +139,7 @@ ms.locfileid: "56335490"
 
      或者，你可以使用 GUID 的原始字符串值和 ID 的整数值来填充 <xref:System.ComponentModel.Design.CommandID> 对象。
 
-3.  将与 <xref:System.ComponentModel.Design.MenuCommand> 一起指定处理命令的方法的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 或 <xref:System.ComponentModel.Design.CommandID>对象进行实例化，如下面的示例所示。
+3. 将与 <xref:System.ComponentModel.Design.MenuCommand> 一起指定处理命令的方法的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 或 <xref:System.ComponentModel.Design.CommandID>对象进行实例化，如下面的示例所示。
 
      [!code-csharp[ButtonGroup#23](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_7.cs)]
 
@@ -147,7 +147,7 @@ ms.locfileid: "56335490"
 
      由包模板创建的命令默认传递给包类的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中的 `Initialize()` 对象。
 
-4.  <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。
+4. <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。
 
      由包模板创建的命令默认传递给包类的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中的 `Initialize()` 对象。 Visual Studio 向导通过使用 `Initialize` 实现 `MenuCommand`方法。 对于动态菜单项显示，必须将此更改为 `OleMenuCommand`，如下一步所示。 此外，若要更改菜单项文本，必须将 TextChanges 命令标志添加到.vsct 文件中的菜单命令按钮，如下面的示例所示
 
@@ -164,11 +164,11 @@ ms.locfileid: "56335490"
     </Button>
     ```
 
-5.  将新菜单命令传递到 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 接口中的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 对于由包模板创建的命令，将默认完成的此操作，如下面的示例中所示
+5. 将新菜单命令传递到 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 接口中的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 对于由包模板创建的命令，将默认完成的此操作，如下面的示例中所示
 
      [!code-csharp[ButtonGroup#24](../extensibility/codesnippet/CSharp/menucommands-vs-olemenucommands_9.cs)]
 
-6.  实现处理命令的方法。
+6. 实现处理命令的方法。
 
 ### <a name="to-implement-querystatus"></a>实现 QueryStatus
 
@@ -181,7 +181,7 @@ ms.locfileid: "56335490"
 
     `EventHandler` 对象命名为查询菜单命令状态时调用的方法的名称。
 
-2. 实现该命令的查询状态处理程序的方法。 `object` `sender` 参数可强制转换为 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象（此对象用于设置菜单命令的各种特性），包括文本。 下表显示对应于 <xref:System.ComponentModel.Design.MenuCommand> 标志的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类（MPF 类 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 的派生来源）上的属性。
+2. 实现该命令的查询状态处理程序的方法。  `object` `sender` 参数可强制转换为 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象（此对象用于设置菜单命令的各种特性），包括文本。 下表显示对应于 <xref:System.ComponentModel.Design.MenuCommand> 标志的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类（MPF 类 <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 的派生来源）上的属性。
 
    |MenuCommand 属性|OLECMDF 标志|
    |--------------------------|------------------|
@@ -247,11 +247,11 @@ ms.locfileid: "56335490"
 
 #### <a name="to-implement-the-exec-method"></a>实现 Exec 方法
 
--   如果命令 `GUID` 未知，则返回 `OLECMDERR_E_UNKNOWNGROUP`。
+- 如果命令 `GUID` 未知，则返回 `OLECMDERR_E_UNKNOWNGROUP`。
 
--   如果 `GUID` 已知，但命令 ID 是未知的，则返回 `OLECMDERR_E_NOTSUPPORTED`。
+- 如果 `GUID` 已知，但命令 ID 是未知的，则返回 `OLECMDERR_E_NOTSUPPORTED`。
 
--   如果`GUID`和命令 ID 与命令中使用的 guid: id 对匹配 *.vsct*文件，请执行命令并返回与相关联的代码<xref:Microsoft.VisualStudio.VSConstants.S_OK>。
+- 如果`GUID`和命令 ID 与命令中使用的 guid: id 对匹配 *.vsct*文件，请执行命令并返回与相关联的代码<xref:Microsoft.VisualStudio.VSConstants.S_OK>。
 
 ## <a name="see-also"></a>请参阅
 

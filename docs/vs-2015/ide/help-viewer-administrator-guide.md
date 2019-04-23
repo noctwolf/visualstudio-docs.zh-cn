@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086593"
 ---
 # <a name="help-viewer-administrator-guide"></a>帮助查看器管理员指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ ms.locfileid: "54799700"
   
 ##### <a name="to-install-english-content-from-the-internet"></a>从 Internet 安装英语内容  
   
-1.  选择“开始”，然后选择“运行”。  
+1. 选择“开始”，然后选择“运行”。  
   
-2.  键入下列命令：  
+2. 键入下列命令：  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  按 Enter。  
+3. 按 Enter。  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>在客户端计算机上部署预安装的本地帮助内容  
  可以将联机的内容集安装到一台计算机，然后将已安装的该内容复制到其他计算机。  
@@ -117,15 +117,15 @@ ms.locfileid: "54799700"
   
 ##### <a name="to-package-the-content"></a>对内容进行打包  
   
-1.  创建要将内容复制到其中的文件夹以便将来进行部署。  
+1. 创建要将内容复制到其中的文件夹以便将来进行部署。  
   
      例如：c:\VS12Help。  
   
-2.  使用管理员权限打开 cmd.exe。  
+2. 使用管理员权限打开 cmd.exe。  
   
-3.  导航到在步骤 1 中创建的文件夹。  
+3. 导航到在步骤 1 中创建的文件夹。  
   
-4.  键入下列命令：  
+4. 键入下列命令：  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*文件夹名*>\ /y /e /k /o  
   
@@ -135,13 +135,13 @@ ms.locfileid: "54799700"
   
 ##### <a name="to-deploy-the-content"></a>部署内容  
   
-1.  创建网络共享，然后将帮助内容复制到该位置。  
+1. 创建网络共享，然后将帮助内容复制到该位置。  
   
      例如，将 c:\VS12Help 中的内容复制到 \\\myserver\VS12Help。  
   
-2.  创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。  
+2. 创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。  
   
-     例如:  
+     例如：  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -199,7 +199,7 @@ ms.locfileid: "54799700"
     :CONTINUE  
     ```  
   
-3.  在要安装帮助内容的本地计算机上运行 bat 文件。  
+3. 在要安装帮助内容的本地计算机上运行 bat 文件。  
   
 ## <a name="see-also"></a>请参阅  
  [Help Content Manager 的命令行参数](../ide/command-line-arguments-for-the-help-content-manager.md)   
