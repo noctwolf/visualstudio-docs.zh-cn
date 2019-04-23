@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 664d323976692d20a3f9f9bb8a7e66c0aa4f9761
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: e881ef4a016fa44bbb1e38e2bc3145fb11974c56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58069601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087360"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 在你自己的计算机上或其他计算机上，可以安装特定于域的语言。 Visual Studio 必须已安装在目标计算机上。
@@ -33,9 +33,9 @@ ms.locfileid: "58069601"
 
 1. 找到 **.vsix**由 DSL 包项目生成的文件：
 
-   1.  在中**解决方案资源管理器**，右键单击**DslPackage**项目，并单击**在文件资源管理器中打开文件夹**。
+   1. 在中**解决方案资源管理器**，右键单击**DslPackage**项目，并单击**在文件资源管理器中打开文件夹**。
 
-   2.  找到的文件**bin\\\*\\**_YourProject_**。DslPackage.vsix**
+   2. 找到的文件**bin\\\*\\**_YourProject_**。DslPackage.vsix**
 
 2. 复制 **.vsix**到目标计算机，你想要安装 DSL 的文件。 该计算机可以是自己的计算机或其他计算机。
 
@@ -74,9 +74,9 @@ ms.locfileid: "58069601"
 
 1. 设置`InstalledByMsi`扩展清单中。 这会阻止 VSX 正在安装和卸载 MSI 除外。 这是重要信息： 如果将 MSI 中包括其他组件。
 
-   1.  打开 DslPackage\source.extension.tt
+   1. 打开 DslPackage\source.extension.tt
 
-   2.  插入以下行之前`<SupportedProducts>`:
+   2. 插入以下行之前`<SupportedProducts>`:
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -86,15 +86,15 @@ ms.locfileid: "58069601"
 
 3. 请确保你的 DSL 的以下属性正确：
 
-   -   在 DSL 资源管理器中单击根节点，并在属性窗口中，查看：
+   - 在 DSL 资源管理器中单击根节点，并在属性窗口中，查看：
 
-       -   描述
+       - 描述
 
-       -   版本
+       - Version
 
-   -   单击**编辑器**节点，在属性窗口中，单击**图标**。 设置要引用的图标文件中的值**DslPackage\Resources**，如**File.ico**
+   - 单击**编辑器**节点，在属性窗口中，单击**图标**。 设置要引用的图标文件中的值**DslPackage\Resources**，如**File.ico**
 
-   -   上**构建**菜单中，打开**Configuration Manager**，然后选择你想要构建，例如配置**版本**或**调试**.
+   - 上**构建**菜单中，打开**Configuration Manager**，然后选择你想要构建，例如配置**版本**或**调试**.
 
 4. 转到[可视化和建模 SDK 主页](http://go.microsoft.com/fwlink/?LinkID=186128)，并从**下载**选项卡上，下载**CreateMsiSetupProject.tt**。
 
@@ -122,16 +122,16 @@ ms.locfileid: "58069601"
 
 11. 在目标计算机中，创建具有 DSL 的文件扩展名的新文件。 验证：
 
-    -   在 Windows 资源管理器列表视图中，该文件将显示带图标和您定义的说明。
+    - 在 Windows 资源管理器列表视图中，该文件将显示带图标和您定义的说明。
 
-    -   当您双击文件、 Visual Studio 将启动，并在 DSL 的编辑器中打开 DSL 文件。
+    - 当您双击文件、 Visual Studio 将启动，并在 DSL 的编辑器中打开 DSL 文件。
 
     如果您愿意，你可以安装项目手动创建，而不是使用文本模板。 包括此过程的演练，请参阅第 5 章[可视化和建模 SDK 实验室](http://go.microsoft.com/fwlink/?LinkId=208878)。
 
 ### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>若要卸载从 MSI 安装的 DSL
 
-1.  在 Windows 中，打开**程序和功能**控制面板。
+1. 在 Windows 中，打开**程序和功能**控制面板。
 
-2.  卸载 DSL。
+2. 卸载 DSL。
 
-3.  重新启动 Visual Studio。
+3. 重新启动 Visual Studio。

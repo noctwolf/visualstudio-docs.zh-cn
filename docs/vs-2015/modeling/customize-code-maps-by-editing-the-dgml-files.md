@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "59000812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088725"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>通过编辑 DGML 文件自定义代码图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59000812"
 > [!NOTE]
 >  若要创建代码图，必须具有 Visual Studio Enterprise。 在 Visual Studio 中编辑代码图时，Visual Studio 会在保存 .dgml 文件时删除所有未使用的 DGML 元素和属性以进行清理。 当手动添加新链接时，它还将自动创建代码元素。 当你保存 .dgml 文件时，你添加到元素的任何特性可能会按字母顺序重新排列。  
   
-##  <a name="OrganizeNodes"></a> 代码元素分组  
+## <a name="OrganizeNodes"></a> 代码元素分组  
  你可以添加新组，也可以将现有节点转换为一个组。  
   
 1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
@@ -80,12 +80,12 @@ ms.locfileid: "59000812"
   
     有关详细信息`Category`属性，请参阅[向代码元素和链接分配类别](#AssignCategories)。  
   
-##  <a name="ChangeGraphStyle"></a> 更改地图的样式  
+## <a name="ChangeGraphStyle"></a> 更改地图的样式  
  你可以通过编辑代码图的 .dgml 文件来更改代码图的背景色和边框颜色。 若要更改代码元素和链接的样式，请参阅[更改代码元素和链接的样式](#Highlight)。  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  在 `<DirectedGraph>` 元素中，添加以下任何特性以更改其样式：  
+2. 在 `<DirectedGraph>` 元素中，添加以下任何特性以更改其样式：  
   
      背景色  
   
@@ -108,25 +108,25 @@ ms.locfileid: "59000812"
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a> 更改代码元素和链接的样式  
+## <a name="Highlight"></a> 更改代码元素和链接的样式  
   
-###  <a name="CreateCustomStyles"></a>   
+### <a name="CreateCustomStyles"></a>   
  你可以将自定义样式应用于以下代码元素：  
   
--   单个代码元素和链接  
+- 单个代码元素和链接  
   
--   代码元素和链接组  
+- 代码元素和链接组  
   
--   基于特定条件的代码元素和链接组  
+- 基于特定条件的代码元素和链接组  
   
 > [!TIP]
 >  如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅[为代码元素和链接分配类别](#AssignCategories)并[为代码元素和链接分配属性](#AssignProperties)。  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>将自定义样式应用于单个代码元素  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  查找代码元素的 `<Node/>` 元素。 添加以下任何特性，以自定义其样式：  
+2. 查找代码元素的 `<Node/>` 元素。 添加以下任何特性，以自定义其样式：  
   
      背景色  
   
@@ -215,11 +215,11 @@ ms.locfileid: "59000812"
   
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>将自定义样式应用于单个链接  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。  
+2. 查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。  
   
-3.  在 `<Link/>` 元素中，添加以下任何特性以自定义其样式：  
+3. 在 `<Link/>` 元素中，添加以下任何特性以自定义其样式：  
   
      边框和箭头颜色  
   
@@ -376,11 +376,11 @@ ms.locfileid: "59000812"
   
  在此示例中：  
   
-1.  如果`Coverage`> 80，然后设置`Background`属性设置为绿色。  
+1. 如果`Coverage`> 80，然后设置`Background`属性设置为绿色。  
   
-2.  Else if`Coverage`为 > 50，然后设置`Background`为橙色阴影属性值的基础`Coverage`属性。  
+2. Else if`Coverage`为 > 50，然后设置`Background`为橙色阴影属性值的基础`Coverage`属性。  
   
-3.  否则基于 `Background` 属性的值将 `Coverage` 属性设置为红色阴影。  
+3. 否则基于 `Background` 属性的值将 `Coverage` 属性设置为红色阴影。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -438,14 +438,14 @@ ms.locfileid: "59000812"
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a> 为代码元素和链接分配属性  
+## <a name="AssignProperties"></a> 为代码元素和链接分配属性  
  你可以通过向代码元素和链接分配属性来组织代码元素和链接。 例如，可以选择具有特定属性的代码元素，以便能够对这些代码元素进行分组、更改它们的样式或隐藏它们。  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>向代码元素分配属性  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  查找该代码元素的 `<Node/>` 元素。 指定属性的名称和属性的值。 例如：  
+2. 查找该代码元素的 `<Node/>` 元素。 指定属性的名称和属性的值。 例如：  
   
     ```xml  
     <Nodes>  
@@ -453,7 +453,7 @@ ms.locfileid: "59000812"
     </Nodes>  
     ```  
   
-3.  将 `<Property/>` 元素添加到 `<Properties>` 部分以指定特性，例如其可见名称和数据类型：  
+3. 将 `<Property/>` 元素添加到 `<Properties>` 部分以指定特性，例如其可见名称和数据类型：  
   
     ```xml  
     <Properties>  
@@ -463,11 +463,11 @@ ms.locfileid: "59000812"
   
 #### <a name="to-assign-a-property-to-a-link"></a>为链接分配属性  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。  
+2. 查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。  
   
-3.  在 `<Node/>` 元素中，指定属性的名称和属性的值。 例如：  
+3. 在 `<Node/>` 元素中，指定属性的名称和属性的值。 例如：  
   
     ```xml  
     <Links>  
@@ -475,7 +475,7 @@ ms.locfileid: "59000812"
     </Links>  
     ```  
   
-4.  将 `<Property/>` 元素添加到 `<Properties>` 部分以指定特性，例如其可见名称和数据类型：  
+4. 将 `<Property/>` 元素添加到 `<Properties>` 部分以指定特性，例如其可见名称和数据类型：  
   
     ```xml  
     <Properties>  
@@ -483,16 +483,16 @@ ms.locfileid: "59000812"
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a> 向代码元素和链接分配类别  
+## <a name="AssignCategories"></a> 向代码元素和链接分配类别  
  以下各节演示如何通过将类别分配给代码元素来组织代码元素，以及如何创建可帮助组织代码元素并通过使用继承将特性添加到子类别的分层类别。  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>向代码元素分配类别  
   
--   在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+- 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
--   查找所需代码元素的 `<Node/>` 元素。  
+- 查找所需代码元素的 `<Node/>` 元素。  
   
--   在 `<Node/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如：  
+- 在 `<Node/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如：  
   
     ```xml  
     <Nodes>  
@@ -510,11 +510,11 @@ ms.locfileid: "59000812"
   
 #### <a name="to-assign-a-category-to-a-link"></a>为链接分配类别  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。  
+2. 查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。  
   
-3.  在 `<Link/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如：  
+3. 在 `<Link/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如：  
   
     ```xml  
     <Links>  
@@ -522,7 +522,7 @@ ms.locfileid: "59000812"
     </Links>  
     ```  
   
-4.  向 `<Category/>` 部分添加一个 `<Categories>` 元素，以便能够使用 `Label` 特性来指定该类别的显示文本：  
+4. 向 `<Category/>` 部分添加一个 `<Categories>` 元素，以便能够使用 `Label` 特性来指定该类别的显示文本：  
   
     ```xml  
     <Categories>  
@@ -532,9 +532,9 @@ ms.locfileid: "59000812"
   
 #### <a name="to-create-hierarchical-categories"></a>创建分层类别  
   
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。  
   
-2.  为父类别添加一个 `<Category/>` 元素，然后将 `BasedOn` 特性添加到子类别的 `<Category/>` 元素。  
+2. 为父类别添加一个 `<Category/>` 元素，然后将 `BasedOn` 特性添加到子类别的 `<Category/>` 元素。  
   
      例如：  
   
@@ -554,7 +554,7 @@ ms.locfileid: "59000812"
   
      在此示例中，`MyFirstNode` 的背景为绿色，因为它的 `Category` 特性继承 `Background` 的 `MyParentCategory` 特性。  
   
-##  <a name="AddReferences"></a> 将文档或 Url 链接到代码元素和链接  
+## <a name="AddReferences"></a> 将文档或 Url 链接到代码元素和链接  
  可以通过以下方式将文档或 URL 链接到代码元素或链接：编辑代码图的 .dgml 文件并将 `Reference` 特性添加到代码元素的 `<Node/>` 元素或链接的 `<Link/>` 元素。 然后，你可以打开并查看代码元素或链接的内容。 `Reference` 特性指定该内容的路径。 此路径可能是相对于 .dgml 文件位置的路径，也可能是绝对路径。  
   
 > [!CAUTION]
@@ -562,13 +562,13 @@ ms.locfileid: "59000812"
   
  例如，你可能希望链接以下代码元素：  
   
--   若要描述某个类的更改，则可以将工作代码元素、文档或另一个 .dgml 文件的 URL 链接到该类的代码元素。  
+- 若要描述某个类的更改，则可以将工作代码元素、文档或另一个 .dgml 文件的 URL 链接到该类的代码元素。  
   
--   你可以将层关系图链接到表示软件逻辑体系结构中的层的组代码元素。  
+- 你可以将层关系图链接到表示软件逻辑体系结构中的层的组代码元素。  
   
--   若要显示有关公开某接口的组件的更多信息，可以将组件图链接到该接口的代码元素。  
+- 若要显示有关公开某接口的组件的更多信息，可以将组件图链接到该接口的代码元素。  
   
--   将代码元素链接到 Team Foundation Server 工作项或 bug 或与代码元素相关的一些其他信息。  
+- 将代码元素链接到 Team Foundation Server 工作项或 bug 或与代码元素相关的一些其他信息。  
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>将文档或 URL 链接到代码元素  
   
@@ -602,13 +602,13 @@ ms.locfileid: "59000812"
   
    2. 在 `<Properties>` 部分：  
   
-      1.  为每个新引用类型添加一个 `<Property/>` 元素。  
+      1. 为每个新引用类型添加一个 `<Property/>` 元素。  
   
-      2.  将 `Id` 特性设置为新引用特性的名称。  
+      2. 将 `Id` 特性设置为新引用特性的名称。  
   
-      3.  添加`IsReference`属性，并将其设置为`True`以使引用出现在代码元素上**转到引用**快捷菜单。  
+      3. 添加`IsReference`属性，并将其设置为`True`以使引用出现在代码元素上**转到引用**快捷菜单。  
   
-      4.  使用`Label`特性以指定代码元素上的显示文本**转到引用**快捷菜单。  
+      4. 使用`Label`特性以指定代码元素上的显示文本**转到引用**快捷菜单。  
   
       例如：  
   

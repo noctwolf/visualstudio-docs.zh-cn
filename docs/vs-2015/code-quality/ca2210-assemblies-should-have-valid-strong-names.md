@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29c0a8f3eca5d6da2c86a1881e943754ad1ba087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095771"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:程序集应具有有效的强名称
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "58931851"
 
 - 有关[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]v1.0 或 v1.1，使用<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>属性。
 
-- 有关[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]，可以使用两种`/keyfile`或`/keycontainer`编译器选项[/KEYFILE （指定密钥或密钥对以便为程序集签名）](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)或[/KEYCONTAINER （指定密钥容器以便为程序集签名）](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e) c + + 中的链接器选项)。
+- 有关[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]，可以使用两种`/keyfile`或`/keycontainer`编译器选项[/KEYFILE （指定密钥或密钥对以便为程序集签名）](http://msdn.microsoft.com/library/9b71f8c0-541c-4fe5-a0c7-9364f42ecb06)或[/KEYCONTAINER （指定密钥容器以便为程序集签名）](http://msdn.microsoft.com/library/94882d12-b77a-49c7-96d0-18a31aee001e)中的链接器选项C++)。
 
   **若要对 Visual Studio 中的强名称程序集签名**
 
@@ -89,7 +89,7 @@ ms.locfileid: "58931851"
 
    **若要对使用 Visual Studio 外部强名称程序集签名**
 
--   使用提供的强名称工具 (Sn.exe) [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK。 有关详细信息，请参阅 [Sn.exe （强名称工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。
+- 使用提供的强名称工具 (Sn.exe) [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK。 有关详细信息，请参阅 [Sn.exe （强名称工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  如果在环境中使用该程序集，则仅禁止显示此规则的警告的篡改内容并不是问题。

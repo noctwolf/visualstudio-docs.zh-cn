@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 556821ff934d8276622ffb12ddbf4589ac404ab8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087919"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 C++ 核心准则检查程序
 
@@ -84,17 +84,17 @@ C++ Core Guidelines 的目的是为了帮助您编写更好、 更安全代码�
 
 随着新规则添加到C++核心准则检查器中，为预先存在的代码可能会增加生成的警告数。 预定义的规则集可用于筛选哪些类型的规则来启用。 截至 Visual Studio 2017 版本 15.3 中，支持的规则集是：
 
-  - **所有者指针规则**强制实施[资源管理检查与所有者相关\<T > 从C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **所有者指针规则**强制实施[资源管理检查与所有者相关\<T > 从C++Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **常量规则**强制实施[常量相关的检查，从C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
+- **常量规则**强制实施[常量相关的检查，从C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability)。
 
-  - **原始指针规则**强制实施[资源管理检查与原始指针从C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **原始指针规则**强制实施[资源管理检查与原始指针从C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **唯一指针规则**强制实施[资源管理检查具有唯一指针语义方面与类型相关的C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
+- **唯一指针规则**强制实施[资源管理检查具有唯一指针语义方面与类型相关的C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management)。
 
-  - **绑定规则**强制实施[绑定的配置文件C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
+- **绑定规则**强制实施[绑定的配置文件C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile)。
 
-  - **键入规则**强制实施[键入配置文件的C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
+- **键入规则**强制实施[键入配置文件的C++核心准则](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
 
 您可以选择限制为只是一个或多个组的警告。 **本机最小**并**本机建议**规则集包括C++除了其他 PREfast 检查 Core Check 规则。 若要查看可用的规则集，请打开项目属性对话框中，选择**代码 Analysis\General**，打开中的下拉列表**规则集**组合框，以及选择**选择多个规则集**. 有关在 Visual Studio 中使用规则集的详细信息，请参阅[使用规则集组合代码分析规则](using-rule-sets-to-group-code-analysis-rules.md)。
 

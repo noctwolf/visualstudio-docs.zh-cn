@@ -8,26 +8,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0b0e50c54aa702fb05732a37b3b363b378fe9c3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087828"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
 本文包含 Visual Studio 帮助查看器集成商的以下任务：
 
--   正在创建主题 （F1 支持）
+- 正在创建主题 （F1 支持）
 
--   创建帮助查看器内容品牌包
+- 创建帮助查看器内容品牌包
 
--   部署一组文章
+- 部署一组文章
 
--   添加到 Visual Studio shell （集成或独立） 的帮助
+- 添加到 Visual Studio shell （集成或独立） 的帮助
 
--   其他资源
+- 其他资源
 
 ## <a name="create-a-topic-f1-support"></a>创建主题 （F1 支持）
 
@@ -43,37 +43,37 @@ ms.locfileid: "59660705"
 
 主题通常包含两个部分：
 
--   元数据 （请参阅内容元数据引用）： 有关主题，例如，主题的唯一 ID，主题 TOC ID 的关键字值的数据的父节点 ID，等等。
+- 元数据 （请参阅内容元数据引用）： 有关主题，例如，主题的唯一 ID，主题 TOC ID 的关键字值的数据的父节点 ID，等等。
 
--   正文内容： 符合 W3C 基本 1.1 XHTML，其中包括支持内容行为 （可折叠区域、 代码段等。完整列表如下所示）。
+- 正文内容： 符合 W3C 基本 1.1 XHTML，其中包括支持内容行为 （可折叠区域、 代码段等。完整列表如下所示）。
 
 Visual Studio 品牌包支持的控件：
 
--   链接
+- 链接
 
--   CodeSnippet
+- CodeSnippet
 
--   CollapsibleArea
+- CollapsibleArea
 
--   继承的成员
+- 继承的成员
 
--   LanguageSpecificText
+- LanguageSpecificText
 
 受支持的语言字符串 （不区分大小写）：
 
--   javascript
+- javascript
 
--   c# 或 c#
+- c# 或 c#
 
--   cplusplus 或 visual c + + 或 c + +
+- cplusplus 或 visual c + + 或 c + +
 
--   jscript
+- jscript
 
--   visual basic 或 vb
+- visual basic 或 vb
 
--   f #、 fsharp 或 fs
+- f #、 fsharp 或 fs
 
--   其他-一个字符串，表示语言名称
+- 其他-一个字符串，表示语言名称
 
 **创建一个帮助查看器的主题**
 
@@ -94,15 +94,15 @@ Visual Studio 品牌包支持的控件：
 
 接下来，添加数据如何定义主题的方式显示 （自身或不带有品牌信息），若要引用本主题的 F1，此主题在目录中，其 ID （对于通过其他主题的链接引用） 中存在的位置，等等。请参阅"内容元数据"下表中支持的元数据的完整列表。
 
--   在这种情况下，我们将使用我们自己的品牌包，Visual Studio 帮助查看器品牌包的一个变体。
+- 在这种情况下，我们将使用我们自己的品牌包，Visual Studio 帮助查看器品牌包的一个变体。
 
--   添加 F1 元名称和值 ("Microsoft.Help.F1"内容 ="ContosoTopic4")，将匹配 IDE 属性包中提供的 F1 值。 （请参阅 F1 支持部分，了解详细信息。）这是与 F1 匹配的值从 IDE 以在 IDE 中选择 f1 键时显示此主题中的调用。
+- 添加 F1 元名称和值 ("Microsoft.Help.F1"内容 ="ContosoTopic4")，将匹配 IDE 属性包中提供的 F1 值。 （请参阅 F1 支持部分，了解详细信息。）这是与 F1 匹配的值从 IDE 以在 IDE 中选择 f1 键时显示此主题中的调用。
 
--   添加主题 id。 这是其他主题用于链接到本主题的字符串。 它是本主题的帮助查看器 ID。
+- 添加主题 id。 这是其他主题用于链接到本主题的字符串。 它是本主题的帮助查看器 ID。
 
--   目录中，将添加本主题的父节点，以定义此主题 TOC 节点出现的位置。
+- 目录中，将添加本主题的父节点，以定义此主题 TOC 节点出现的位置。
 
--   目录中，将添加本主题的节点顺序。 当父节点具有`n`编号的子节点按子节点的顺序定义本主题的位置。 例如，本主题是多 4 个 4 子主题。
+- 目录中，将添加本主题的节点顺序。 当父节点具有`n`编号的子节点按子节点的顺序定义本主题的位置。 例如，本主题是多 4 个 4 子主题。
 
 元数据示例部分：
 
@@ -131,17 +131,17 @@ Visual Studio 品牌包支持的控件：
 
 （不包括页眉和页脚） 主题的正文将包含页的链接、 注意部分、 可折叠区域、 代码段中和特定于语言的文本的一部分。  请参阅品牌部分以了解有关这些方面提供主题的信息。
 
-1.  添加主题标题标记：  `<div class="title">Contoso Topic 4</div>`
+1. 添加主题标题标记：  `<div class="title">Contoso Topic 4</div>`
 
-2.  添加注释部分： `<div class="alert"> add your table tag and text </div>`
+2. 添加注释部分： `<div class="alert"> add your table tag and text </div>`
 
-3.  添加的可折叠区域：  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 添加的可折叠区域：  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  添加代码片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. 添加代码片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  添加代码特定于语言的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 请注意，`devLangnu=`允许您输入其他语言。 例如，`devLangnu="Fortran"`显示 Fortran 时代码片段 DisplayLanguage = Fortran
+5. 添加代码特定于语言的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 请注意，`devLangnu=`允许您输入其他语言。 例如，`devLangnu="Fortran"`显示 Fortran 时代码片段 DisplayLanguage = Fortran
 
-6.  添加页链接： `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. 添加页链接： `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > 注意： 对于不受支持新"显示语言"(示例中， F#，Cobol、 Fortran) 中的代码段的代码着色将单色。
@@ -280,27 +280,27 @@ F1 流关系图：
 
 如果帮助查看器的默认帮助内容源设置为联机状态 （启动浏览器中）：
 
--   Visual Studio 合作伙伴 (VSP) 功能发出到 F1 属性包 （属性包 prefix.keyword 和注册表中找到前缀为 online URL） 的值：F1 VSP URL + 参数向浏览器发送。
+- Visual Studio 合作伙伴 (VSP) 功能发出到 F1 属性包 （属性包 prefix.keyword 和注册表中找到前缀为 online URL） 的值：F1 VSP URL + 参数向浏览器发送。
 
--   Visual Studio 功能 （语言编辑器，Visual Studio 特定菜单项，等等。）：F1 将 Visual Studio URL 发送到浏览器。
+- Visual Studio 功能 （语言编辑器，Visual Studio 特定菜单项，等等。）：F1 将 Visual Studio URL 发送到浏览器。
 
 如果帮助查看器的默认帮助内容源设置为本地帮助 （启动帮助查看器中）：
 
--   VSP 功能关键字 F1 属性包和本地存储区索引之间的匹配位置 (即，属性包 prefix.keyword = 本地存储索引中找到的值):F1 呈现帮助查看器中的主题。
+- VSP 功能关键字 F1 属性包和本地存储区索引之间的匹配位置 (即，属性包 prefix.keyword = 本地存储索引中找到的值):F1 呈现帮助查看器中的主题。
 
--   Visual Studio 功能 （VSP 重写从 Visual Studio 功能发出的属性包的任何选项）：F1 呈现帮助查看器中的 Visual Studio 主题。
+- Visual Studio 功能 （VSP 重写从 Visual Studio 功能发出的属性包的任何选项）：F1 呈现帮助查看器中的 Visual Studio 主题。
 
 设置以下注册表值可让 F1 回退供应商的帮助内容。 F1 回退意味着帮助查看器设置为查找 F1 帮助内容的联机，供应商内容本地安装到用户的硬盘。 即使默认设置是联机帮助的帮助查看器应查看本地帮助内容。
 
 1. 设置**VendorContent**帮助 2.3 注册表项下的值：
 
-   -   对于 32 位操作系统：
+   - 对于 32 位操作系统：
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
         "VendorContent"= dword: 00000001
 
-   -   对于 64 位操作系统：
+   - 对于 64 位操作系统：
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
 
@@ -328,9 +328,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudi
 
 当遇到标头/方法的格式中的 F1 关键字时，/ 字符将分析，从而导致以下构造：
 
--   标头： 将可用于在注册表中注册的命名空间
+- 标头： 将可用于在注册表中注册的命名空间
 
--   方法： 这将成为获取传递的关键字。
+- 方法： 这将成为获取传递的关键字。
 
 例如，给定一个名为 CustomLibrary 的自定义库和一个名为 MyTestMethod，当请求传入 F1 将被格式化为方法`CustomLibrary/MyTestMethod`。
 
@@ -383,55 +383,55 @@ Visual Studio 版本包含许多不同 Visual Studio 产品，包括 Visual Stud
 
 安装品牌包包含帮助查看器的产品。  用于 Visual Studio 产品：
 
--   回退的品牌包 (Branding_\<区域设置 > 能使用.mshc) 安装帮助查看器 2.3 应用根目录中 (示例：C:\Program 文件 (x86) \Microsoft Help Viewer\v2.3) 的帮助查看器语言包。  这用于未安装任一产品品牌包的情况下 （已安装任何内容），或者其中已安装的品牌包已损坏。  使用应用程序根回退品牌包时，会忽略 （徽标和反馈） 的 Visual Studio 元素。
+- 回退的品牌包 (Branding_\<区域设置 > 能使用.mshc) 安装帮助查看器 2.3 应用根目录中 (示例：C:\Program 文件 (x86) \Microsoft Help Viewer\v2.3) 的帮助查看器语言包。  这用于未安装任一产品品牌包的情况下 （已安装任何内容），或者其中已安装的品牌包已损坏。  使用应用程序根回退品牌包时，会忽略 （徽标和反馈） 的 Visual Studio 元素。
 
--   Visual Studio 内容安装时从内容包服务，品牌包也会安装 （适用于第一个时间内容安装方案）。  如果没有对品牌包的更新，更新安装的下一次的内容更新或其他包安装操作发生时。
+- Visual Studio 内容安装时从内容包服务，品牌包也会安装 （适用于第一个时间内容安装方案）。  如果没有对品牌包的更新，更新安装的下一次的内容更新或其他包安装操作发生时。
 
 Microsoft 帮助查看器支持基于主题的元数据的主题的品牌。
 
--   其中主题元数据定义自助品牌 = true，呈现主题原样，不执行任何操作 （至于品牌）。
+- 其中主题元数据定义自助品牌 = true，呈现主题原样，不执行任何操作 （至于品牌）。
 
--   其中主题元数据定义自助品牌 = false，使用与 TopicVendor 元数据值关联的品牌包。
+- 其中主题元数据定义自助品牌 = false，使用与 TopicVendor 元数据值关联的品牌包。
 
--   其中主题元数据定义 name="Microsoft.Help.TopicVendor"内容 =\<中供应商 MSHA 品牌包名称 >，使用中的内容值定义的品牌包。
+- 其中主题元数据定义 name="Microsoft.Help.TopicVendor"内容 =\<中供应商 MSHA 品牌包名称 >，使用中的内容值定义的品牌包。
 
--   Visual Studio 目录中没有的品牌包的优先级应用程序。  应用第一个 Visual Studio 默认品牌，，然后，如果主题元数据中定义和支持 （如安装 msha 中定义） 相关联的品牌包，供应商定义的品牌应用作为替代。
+- Visual Studio 目录中没有的品牌包的优先级应用程序。  应用第一个 Visual Studio 默认品牌，，然后，如果主题元数据中定义和支持 （如安装 msha 中定义） 相关联的品牌包，供应商定义的品牌应用作为替代。
 
 标记元素通常分为三个主要类别：
 
--   （示例包括反馈链接、 条件免责声明文本、 徽标） 的标头元素
+- （示例包括反馈链接、 条件免责声明文本、 徽标） 的标头元素
 
--   内容行为 （示例包括展开/折叠控件文本元素和代码片段元素）
+- 内容行为 （示例包括展开/折叠控件文本元素和代码片段元素）
 
--   页脚元素 （例如版权）
+- 页脚元素 （例如版权）
 
 考虑，因为经过品牌打造的元素包括的项 （此规范中详细说明）：
 
--   目录/产品徽标 （例如，Visual Studio）
+- 目录/产品徽标 （例如，Visual Studio）
 
--   反馈链接和电子邮件元素
+- 反馈链接和电子邮件元素
 
--   免责声明文本
+- 免责声明文本
 
--   版权文本
+- 版权文本
 
 在 Visual Studio 帮助查看器品牌包的支持文件包括：
 
--   图形 （徽标、 图标等）
+- 图形 （徽标、 图标等）
 
--   Branding.js-脚本文件支持内容的行为
+- Branding.js-脚本文件支持内容的行为
 
--   Branding.xml-一致地使用在目录内容的字符串。  注意： 对于 branding.xml，在 Visual Studio 本地化文本元素包含 _locID ="\<唯一值 >"
+- Branding.xml-一致地使用在目录内容的字符串。  注意： 对于 branding.xml，在 Visual Studio 本地化文本元素包含 _locID ="\<唯一值 >"
 
--   Branding.css-样式定义的演示文稿一致性
+- Branding.css-样式定义的演示文稿一致性
 
--   Printing.css-一致打印的演示文稿的样式定义
+- Printing.css-一致打印的演示文稿的样式定义
 
 如上文所述，品牌包相关联的主题：
 
--   当 SelfBranded = false 定义的元数据中的主题继承品牌包的目录
+- 当 SelfBranded = false 定义的元数据中的主题继承品牌包的目录
 
--   时，或者当 SelfBranded = false 和那里唯一的品牌包在 MSHA 和定义可用时安装内容
+- 时，或者当 SelfBranded = false 和那里唯一的品牌包在 MSHA 和定义可用时安装内容
 
 用于实现自定义品牌包的 Vsp (VSP 内容，SelfBranded = True)，继续执行的一种方法是启动与回退品牌包 （安装与帮助查看器），并将更改为相应的文件的名称。  Branding_\<区域设置 > 能使用.mshc 文件是更改为能使用.mshc 文件扩展名的 zip 文件，因此只需将扩展名从能使用.mshc 更改为.zip 并提取内容。  请参阅下面有关品牌包元素并根据需要修改 （例如，更改到 VSP 徽标和对 Branding.xml 文件中的徽标的引用的徽标、 Branding.xml 更新每个 VSP 详细信息，等等）。
 
@@ -589,9 +589,9 @@ Branding.js 文件包含由 Visual Studio 帮助查看器标记元素的 JavaScr
 
 Visual Studio 帮助查看器品牌包包含两个 css 文件，以支持一致 Visual Studio 帮助内容的呈现：
 
--   Branding.css-包含用于呈现 where css 元素 SelfBranded = false
+- Branding.css-包含用于呈现 where css 元素 SelfBranded = false
 
--   Printer.css-包含用于呈现 where css 元素 SelfBranded = false
+- Printer.css-包含用于呈现 where css 元素 SelfBranded = false
 
 Branding.css 文件包括 Visual Studio 主题的演示文稿的定义 (需要注意的是，branding.css 包含在 Branding_\<区域设置 > 从包服务能使用.mshc 可能会更改)。
 
@@ -649,11 +649,11 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 </div>.
 ```
 
-1.  创建本地文件夹，类似于"C:\SampleContent"
+1. 创建本地文件夹，类似于"C:\SampleContent"
 
-2.  对于此示例中，我们将使用 MSHC 文件以包含主题。  MSHC 是 zip 文件扩展名从.zip 到更改。MSHC。
+2. 对于此示例中，我们将使用 MSHC 文件以包含主题。  MSHC 是 zip 文件扩展名从.zip 到更改。MSHC。
 
-3.  创建为文本文件的 HelpContentSetup.msha 如下 （记事本用于创建该文件） 并将其保存到上面记下文件夹 （请参阅步骤 1）。
+3. 创建为文本文件的 HelpContentSetup.msha 如下 （记事本用于创建该文件） 并将其保存到上面记下文件夹 （请参阅步骤 1）。
 
 类"品牌"存在且是唯一的。 品牌 mshc 包含在此入门中，以便安装的内容将具有品牌打造，并且 MSHCs 中包含的内容行为将品牌包中包含的相应的支持元素。 如果没有，系统会为不属于翻录 （安装） 的支持项内容时，将导致错误。
 
@@ -703,9 +703,9 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 **要求**
 
-1.  [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
+1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 
-2.  [Visual Studio 2013 独立 Shell Redist](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+2. [Visual Studio 2013 独立 Shell Redist](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
 **概述**
 
@@ -721,9 +721,9 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 创建 Visual Studio 内容存储区。 对于集成外壳方案中，更改 Visual Studio12 为产品目录名称，如下所示：
 
--   创建文件夹 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15。
+- 创建文件夹 C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15。
 
--   创建一个名为 CatalogType.xml 文件并将其添加到的文件夹。 该文件应包含以下代码行：
+- 创建一个名为 CatalogType.xml 文件并将其添加到的文件夹。 该文件应包含以下代码行：
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -744,13 +744,13 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 若要创建的独立 Shell 扩展：
 
-1.  在 Visual Studio 中下,**文件**，选择**新项目**下**其他项目类型**选择**扩展性**，然后选择**Visual Studio 独立 Shell**。 将项目命名`ContosoHelpShell`) 创建基于 Visual Studio 独立 Shell 模板可扩展性项目。
+1. 在 Visual Studio 中下,**文件**，选择**新项目**下**其他项目类型**选择**扩展性**，然后选择**Visual Studio 独立 Shell**。 将项目命名`ContosoHelpShell`) 创建基于 Visual Studio 独立 Shell 模板可扩展性项目。
 
-2.  在解决方案资源管理器，在 ContosoHelpShellUI 项目中，在资源文件文件夹中，打开 ApplicationCommands.vsct。 请确保此行已被注释掉 （搜索"No_Help"）： `<!-- <define name="No_HelpMenuCommands"/> -->`
+2. 在解决方案资源管理器，在 ContosoHelpShellUI 项目中，在资源文件文件夹中，打开 ApplicationCommands.vsct。 请确保此行已被注释掉 （搜索"No_Help"）： `<!-- <define name="No_HelpMenuCommands"/> -->`
 
-3.  选择 F5 键来编译和运行**调试**。 在隔离的 Shell IDE 的实验实例中，选择**帮助**菜单。 请确保**查看帮助**，**添加和删除帮助内容**，并**设置帮助首选项**命令将出现。
+3. 选择 F5 键来编译和运行**调试**。 在隔离的 Shell IDE 的实验实例中，选择**帮助**菜单。 请确保**查看帮助**，**添加和删除帮助内容**，并**设置帮助首选项**命令将出现。
 
-4.  在解决方案资源管理器，在 ContosHelpShell 项目中，在命令行程序自定义文件夹中，打开 ContosoHelpShell.pkgdef。 若要定义 Contoso 帮助目录，请添加以下行：
+4. 在解决方案资源管理器，在 ContosHelpShell 项目中，在命令行程序自定义文件夹中，打开 ContosoHelpShell.pkgdef。 若要定义 Contoso 帮助目录，请添加以下行：
 
     ```
      [$RootKey$\Help]
@@ -760,7 +760,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
     "BrandingPackage"="ContosoBrandingPackage.mshc"
     ```
 
-5.  在解决方案资源管理器，在 ContosHelpShell 项目中，在命令行程序自定义文件夹中，打开 ContosoHelpShell.Application.pkgdef。 若要启用 F1 帮助，请添加以下行：
+5. 在解决方案资源管理器，在 ContosHelpShell 项目中，在命令行程序自定义文件夹中，打开 ContosoHelpShell.Application.pkgdef。 若要启用 F1 帮助，请添加以下行：
 
     ```
     // F1 Help Provider
@@ -776,9 +776,9 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"
     ```
 
-6.  在解决方案资源管理器，在 ContosoHelpShell 解决方案的上下文菜单上选择**属性**菜单项。 下**配置属性**，选择**Configuration Manager**。 在中**配置**列中，将每个"Debug"的值更改为"发布"。
+6. 在解决方案资源管理器，在 ContosoHelpShell 解决方案的上下文菜单上选择**属性**菜单项。 下**配置属性**，选择**Configuration Manager**。 在中**配置**列中，将每个"Debug"的值更改为"发布"。
 
-7.  生成解决方案。 这将创建一组文件在发布文件夹中，将在下一节中使用。
+7. 生成解决方案。 这将创建一组文件在发布文件夹中，将在下一节中使用。
 
 若要测试这像部署：
 

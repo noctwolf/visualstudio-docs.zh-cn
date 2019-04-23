@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087932"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的其他位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58931500"
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>使用 MageUI.exe （基于 Windows 窗体的实用程序） 指定更新备用的位置  
   
-1.  打开.NET Framework 命令提示符并键入：  
+1. 打开.NET Framework 命令提示符并键入：  
   
      **MageUI.exe**  
   
-2.  上**文件**菜单中，选择**打开**以打开应用程序的部署清单。  
+2. 上**文件**菜单中，选择**打开**以打开应用程序的部署清单。  
   
-3.  选择“部署选项”选项卡。  
+3. 选择“部署选项”选项卡。  
   
-4.  在文本框中名为**启动位置**，输入将包含应用程序更新的部署清单的目录的 URL。  
+4. 在文本框中名为**启动位置**，输入将包含应用程序更新的部署清单的目录的 URL。  
   
-5.  保存部署清单。  
+5. 保存部署清单。  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>使用 Mage.exe 指定更新的备用位置  
   
-1.  打开.NET Framework 命令提示符。  
+1. 打开.NET Framework 命令提示符。  
   
-2.  设置使用以下命令更新位置。 在此示例中， **HelloWorld.exe.application**是路径你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]始终具有.application 扩展名，应用程序清单和**http://adatum.com/Update/Path**是该的URL[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]将检查应用程序更新。  
+2. 设置使用以下命令更新位置。 在此示例中， **HelloWorld.exe.application**是路径你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]始终具有.application 扩展名，应用程序清单和**http://adatum.com/Update/Path**是该的URL[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]将检查应用程序更新。  
   
      Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path  
   
-3.  保存该文件。  
+3. 保存该文件。  
   
     > [!NOTE]
     >  现在需要使用 Mage.exe 文件重新进行签名。 有关详细信息，请参见[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  

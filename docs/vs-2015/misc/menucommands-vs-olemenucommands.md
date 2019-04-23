@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: 2681b407bd7fd742e4085bb71b22025f533e2210
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089141"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 你可以通过从 <xref:System.ComponentModel.Design.MenuCommand> 或从 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象派生来创建菜单命令，并且实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  
@@ -64,9 +64,9 @@ ms.locfileid: "58936498"
    </Button>
    ``` 
      
-   1.  设置 `guid` 和 `id` 字段以匹配新命令的 GUID:ID。  
+   1. 设置 `guid` 和 `id` 字段以匹配新命令的 GUID:ID。  
   
-   2.  设置 `priority` 特性。  
+   2. 设置 `priority` 特性。  
   
         .Vsct 使用 `priority` 特性来确定按钮在其父组中其他对象中的位置。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58936498"
   
         省略 `priority` 特性会将其值设置为 0。  
   
-   3.  设置 `type` 特性。 在大多数情况下，其值将为 `"Button"`。 有关其他有效按钮类型的说明，请参阅 [Button Element](../extensibility/button-element.md)。  
+   3. 设置 `type` 特性。 在大多数情况下，其值将为 `"Button"`。 有关其他有效按钮类型的说明，请参阅 [Button Element](../extensibility/button-element.md)。  
   
 5. 在按钮定义中，创建一个包含 [ButtonText](../extensibility/strings-element.md) 元素的 [Strings](../extensibility/buttontext-element.md) 元素以包含菜单名称（菜单在 IDE 中显示时），并包含一个 [CommandName](../extensibility/commandname-element.md) 元素以包含用于访问“命令”  窗口中的菜单的命令名称。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "58936498"
   
     你可以根据你的设计选择两种方式之一执行此操作：  
   
-   -   在 `Button` 元素中，创建 [Parent](../extensibility/parent-element.md) 元素，并将其 `guid` 和 `id` 字段设置为将承载命名的组的 Guid 和 ID，该组也称为 *主父组*。  
+   - 在 `Button` 元素中，创建 [Parent](../extensibility/parent-element.md) 元素，并将其 `guid` 和 `id` 字段设置为将承载命名的组的 Guid 和 ID，该组也称为 *主父组*。  
   
         下面的示例定义了一个将显示在用户定义的菜单上的命令。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "58936498"
        </Button>
        ```
       
-   -   如果命令通过使用命令放置来定位，则可以忽略 `Parent` 元素。 在 [部分前创建](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 元素，然后添加具有命令的 [和](../extensibility/commandplacement-element.md) 的 `guid` CommandPlacement `id` 元素、 `priority`和父级，如下面的示例中所示。  
+   - 如果命令通过使用命令放置来定位，则可以忽略 `Parent` 元素。 在 [部分前创建](../extensibility/commandplacements-element.md) CommandPlacements `Symbols` 元素，然后添加具有命令的 [和](../extensibility/commandplacement-element.md) 的 `guid` CommandPlacement `id` 元素、 `priority`和父级，如下面的示例中所示。  
   
    ```xml
    <CommandPlacements>
@@ -126,11 +126,11 @@ ms.locfileid: "58936498"
   
  对于直接将 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口用于命令处理的代码，必须实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口及其方法。 两个最重要的方法为 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 和 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>。  
   
-1.  获取 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 实例，如下面的示例所示。  
+1. 获取 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 实例，如下面的示例所示。  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  创建一个 <xref:System.ComponentModel.Design.CommandID> 对象，该对象将命令的 GUID 和 ID 作为其参数进行处理，如下面的示例中所示。  
+2. 创建一个 <xref:System.ComponentModel.Design.CommandID> 对象，该对象将命令的 GUID 和 ID 作为其参数进行处理，如下面的示例中所示。  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
@@ -138,7 +138,7 @@ ms.locfileid: "58936498"
   
      或者，你可以使用 GUID 的原始字符串值和 ID 的整数值来填充 <xref:System.ComponentModel.Design.CommandID> 对象。  
   
-3.  将与 <xref:System.ComponentModel.Design.MenuCommand> 一起指定处理命令的方法的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 或 <xref:System.ComponentModel.Design.CommandID>对象进行实例化，如下面的示例所示。  
+3. 将与 <xref:System.ComponentModel.Design.MenuCommand> 一起指定处理命令的方法的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 或 <xref:System.ComponentModel.Design.CommandID>对象进行实例化，如下面的示例所示。  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
@@ -146,7 +146,7 @@ ms.locfileid: "58936498"
   
      由包模板创建的命令默认传递给包类的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中的 `Initialize()` 对象。  
   
-4.  <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
+4. <xref:System.ComponentModel.Design.MenuCommand> 适用于静态命令。 动态菜单项显示需要 QueryStatus 事件处理程序。 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 添加会在命令的主机菜单打开时发生的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> 事件以及某些其他属性，例如 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>。  
   
      由包模板创建的命令默认传递给包类的 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 方法中的 `Initialize()` 对象。 Visual Studio 向导通过使用 `Initialize` 实现 `MenuCommand`方法。 对于动态菜单项显示，必须将此更改为 `OleMenuCommand`，如下一步所示。 此外，若要更改菜单项文本，必须将 TextChanges 命令标志添加到.vsct 文件中的菜单命令按钮，如下面的示例所示  
   
@@ -162,11 +162,11 @@ ms.locfileid: "58936498"
     </Button>
     ```
       
-5.  将新菜单命令传递到 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 接口中的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 对于由包模板创建的命令，将默认完成的此操作，如下面的示例中所示  
+5. 将新菜单命令传递到 <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> 接口中的 <xref:System.ComponentModel.Design.IMenuCommandService> 方法。 对于由包模板创建的命令，将默认完成的此操作，如下面的示例中所示  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  实现处理命令的方法。  
+6. 实现处理命令的方法。  
   
 #### <a name="to-implement-querystatus"></a>实现 QueryStatus  
   
@@ -245,11 +245,11 @@ ms.locfileid: "58936498"
   
 ##### <a name="to-implement-the-exec-method"></a>实现 Exec 方法  
   
--   如果命令 `GUID` 未知，则返回 `OLECMDERR_E_UNKNOWNGROUP`。  
+- 如果命令 `GUID` 未知，则返回 `OLECMDERR_E_UNKNOWNGROUP`。  
   
--   如果 `GUID` 已知，但命令 ID 是未知的，则返回 `OLECMDERR_E_NOTSUPPORTED`。  
+- 如果 `GUID` 已知，但命令 ID 是未知的，则返回 `OLECMDERR_E_NOTSUPPORTED`。  
   
--   如果 `GUID` 和命令 ID 匹配 .vsct 文件中该命令使用的 GUID:ID 对，则执行与该命令关联的代码并返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
+- 如果 `GUID` 和命令 ID 匹配 .vsct 文件中该命令使用的 GUID:ID 对，则执行与该命令关联的代码并返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。  
   
 ## <a name="see-also"></a>请参阅  
  [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)   

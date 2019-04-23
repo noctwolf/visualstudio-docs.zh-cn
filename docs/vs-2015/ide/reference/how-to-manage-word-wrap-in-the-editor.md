@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088036"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：管理在编辑器中的自动换行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "59656006"
   
 #### <a name="to-set-word-wrap-preferences"></a>设置换行首选项  
   
-1.  在“工具”菜单上选择“选项”。  
+1. 在“工具”菜单上选择“选项”。  
   
-2.  在“文本编辑器”文件夹的“所有语言”子文件夹中选择“常规”选项，在全局设置此选项。  
+2. 在“文本编辑器”文件夹的“所有语言”子文件夹中选择“常规”选项，在全局设置此选项。  
   
      — 或 —  
   
      在编程所用的语言的子文件夹中选择“常规”选项。  
   
-3.  在“设置”下，选择或清除“自动换行”选项。  
+3. 在“设置”下，选择或清除“自动换行”选项。  
   
      选中“自动换行”选项将启用“显示可视的自动换行标志符号”选项。  
   
-4.  如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项。 如果不希望显示这些指示箭头，则清除此复选框。  
+4. 如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项。 如果不希望显示这些指示箭头，则清除此复选框。  
   
     > [!NOTE]
     >  这些提醒箭头不会添加到代码中：它们仅用于显示。  

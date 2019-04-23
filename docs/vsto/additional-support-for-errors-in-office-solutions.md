@@ -56,12 +56,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62cd0007a2dd231bcfc0e99f64ac76d20d415263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088765"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Office 解决方案错误的其他支持
 
@@ -71,11 +71,11 @@ ms.locfileid: "56643425"
 
 在 Office 解决方案中的一些常见错误的帮助，请参阅以下主题：
 
--   [对 Office 解决方案中的错误进行故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [对 Office 解决方案中的错误进行故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)
 
--   [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
+- [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
 
--   [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)
+- [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>其他资源
 

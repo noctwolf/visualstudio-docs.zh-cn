@@ -11,21 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18964ebdb1e011fb7e9fc17f19eadcc822c1d1bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095823"
 ---
 # <a name="comparing-properties-and-items"></a>比较属性和项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存储可在整个项目文件中引用的值。  
   
--   属性是名称/值对。 有关详细信息，请参阅 [MSBuild 属性](msbuild-properties1.md)。  
+- 属性是名称/值对。 有关详细信息，请参阅 [MSBuild 属性](msbuild-properties1.md)。  
   
--   项是通常表示文件的对象。 项对象具有关联的元数据集合。 元数据是名称/值对。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
+- 项是通常表示文件的对象。 项对象具有关联的元数据集合。 元数据是名称/值对。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
   
 ## <a name="scalars-and-vectors"></a>标量和矢量  
  由于 MSBuild 属性是只有一个字符串值的名称/值对，所以它们通常被描述为*标量*。 由于 MSBuild 项类型是项列表，所以它们通常被描述为*矢量*。 但是实际上，属性可以表示多个值，而项类型可以有零个或一个项。  
@@ -96,15 +96,15 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
   
 - 在生成的评估阶段期间：  
   
-  -   按照属性的显示顺序，对其进行定义和修改。 将执行属性函数。 $(PropertyName) 形式的属性值在表达式内扩展。 该属性值设置为已扩展的表达式。  
+  - 按照属性的显示顺序，对其进行定义和修改。 将执行属性函数。 $(PropertyName) 形式的属性值在表达式内扩展。 该属性值设置为已扩展的表达式。  
   
-  -   按照项定义的显示顺序，对其进行定义和修改。 属性函数已在表达式内扩展。 元数据值设置为已扩展的表达式。  
+  - 按照项定义的显示顺序，对其进行定义和修改。 属性函数已在表达式内扩展。 元数据值设置为已扩展的表达式。  
   
-  -   按照项类型的显示顺序，对其进行定义和修改。 将展开 @(ItemType) 形式的项值。 也会展开项转换。 属性函数和值已在表达式内扩展。 项列表元数据值设置为已扩展的表达式。  
+  - 按照项类型的显示顺序，对其进行定义和修改。 将展开 @(ItemType) 形式的项值。 也会展开项转换。 属性函数和值已在表达式内扩展。 项列表元数据值设置为已扩展的表达式。  
   
 - 在生成的执行阶段期间：  
   
-  -   在目标内定义的属性和项将以其显示顺序进行评估。 将执行属性函数，并且在表达式内展开属性值。 也会展开项值和项转换。 属性值、项类型值和元数据值设置为已扩展的表达式。  
+  - 在目标内定义的属性和项将以其显示顺序进行评估。 将执行属性函数，并且在表达式内展开属性值。 也会展开项值和项转换。 属性值、项类型值和元数据值设置为已扩展的表达式。  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>计算顺序的细微效果  
  在生成的评估阶段中，属性计算优先于项计算。 不过，属性可以具有看起来依赖于项值的值。 请考虑使用以下脚本。  
