@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160532"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856925"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>并排安装 Visual Studio 版本
 
@@ -38,7 +38,7 @@ ms.locfileid: "58160532"
 
 * 如果使用 Visual Studio 2019 打开在 Visual Studio 2017 中创建的解决方案，则稍后可以在旧版本中再次打开和修改该解决方案，前提是你没有执行任何 Visual Studio 2019 特有的功能。
 
-* 如果你尝试使用 Visual Studio 2019 打开在 Visual Studio 2017 或更早的版本中创建的解决方案，则可能需要修改你的项目和文件才能与 Visual Studio 2019 兼容。 有关详细信息，请参阅[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)页。
+* 如果你尝试使用 Visual Studio 2019 打开在 Visual Studio 2017 或更早的版本中创建的解决方案，则可能需要修改你的项目和文件才能与 Visual Studio 2019 兼容。 有关详细信息，请参阅[移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)页。
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Visual Basic、Visual C# 和 Visual F# 项目使用“项目设计器”中的�
 
 | 语言 | 主题 |
 |--------------|-----------|
-| Visual Basic | [“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [在 Visual Studio 中使用 Visual F# 进行开发](../ide/fsharp-visual-studio.md?view=vs-2017) |
 |C++ | [如何：修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
@@ -77,17 +77,17 @@ Visual Basic、Visual C# 和 Visual F# 项目使用“项目设计器”中的�
 
 | 语言 | 主题 |
 |--------------|-----------|
-| Visual Basic | [“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [在 Visual Studio 中使用 Visual F# 进行开发](../ide/fsharp-visual-studio.md?view=vs-2019) |
+| Visual Basic | [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [在 Visual Studio 中使用 Visual F# 进行开发](../ide/fsharp-visual-studio.md) |
 | C++ | [如何：修改目标框架和平台工具集](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 
-* [安装 Visual Studio](install-visual-studio.md?view=vs-2019)
-* [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [安装 Visual Studio](install-visual-studio.md)
+* [移植、迁移和升级 Visual Studio 项目](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [生成 C/C++ 独立应用程序和并行程序集](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

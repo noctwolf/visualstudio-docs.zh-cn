@@ -13,12 +13,12 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4f480275c29906f3bb941187ff537e3a02a1f45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099125"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 元素（Visual Studio 项目模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,21 +90,21 @@ ms.locfileid: "58937557"
   
 ### <a name="to-rename-files-with-parameters"></a>若要使用的参数重命名文件  
   
-1.  在.vstemplate 文件中使用以下 XML:  
+1. 在.vstemplate 文件中使用以下 XML:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  打开项目文件 (对于.vbproj[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]项目) 中的文本编辑器或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+2. 打开项目文件 (对于.vbproj[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]项目) 中的文本编辑器或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-3.  看起来类似于下面的 XML 项目文件中找到的行：  
+3. 看起来类似于下面的 XML 项目文件中找到的行：  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  代码行替换为以下 XML:  
+4. 代码行替换为以下 XML:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  

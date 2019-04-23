@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100399"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ ms.locfileid: "54805529"
   
 - 操作系统：  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Web 浏览器版本：  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   有关 Mozilla Firefox 和 Google Chrome 的受支持版本，请转到[此处](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  - 有关 Mozilla Firefox 和 Google Chrome 的受支持版本，请转到[此处](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
 - 安装[用于编码的 UI 跨浏览器测试的 Selenium 组件](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)。  
   
@@ -61,9 +61,9 @@ ms.locfileid: "54805529"
 > [!NOTE]
 >  你无法使用 Google Chrome 或 Mozilla Firefox 浏览器记录编码的 UI 测试。  
   
- **使用 Internet Explorer 播放：** 如果未显式指定浏览器，默认将在 Internet Explorer 中运行测试。 可以在测试代码中设置 **BrowserWindow.CurrentBrowser** 属性来显式声明要使用的浏览器。 对于 Internet Explorer，应将此属性设为“IE”或“Internet Explorer”。  
+ **使用 Internet Explorer 播放：** 如果未明确指定浏览器，则默认情况下将在 Internet Explorer 上运行测试。 可以在测试代码中设置 **BrowserWindow.CurrentBrowser** 属性来显式声明要使用的浏览器。 对于 Internet Explorer，应将此属性设为“IE”或“Internet Explorer”。  
   
- **使用非 Internet Explorer Web 浏览器播放：** 若要在非 Internet Explorer Web 浏览器中播放，请将测试代码中的 BrowserWindow.CurrentBrowser 属性更改为“Firefox”或“Chrome”。  
+ **使用非 Internet Explorer Web 浏览器播放：** 要在非 Internet Explorer Web 浏览器中播放，请将测试代码中的 BrowserWindow.CurrentBrowser 属性更改为“Firefox”或“Chrome”。  
   
  必须**用于编码的 UI 跨浏览器测试的 Selenium 组件**，才能在非 IE 浏览器上播放测试。  
   
@@ -83,19 +83,19 @@ ms.locfileid: "54805529"
 ### <a name="enable-debugging"></a>启用调试  
  若要能够调试 Web 应用程序，则必须完成以下配置选项：  
   
-1.  启用“仅我的代码”：  
+1. 启用“仅我的代码”：  
   
-    1.  在“工具”菜单上，依次选择“选项”和“调试”。  
+    1. 在“工具”菜单上，依次选择“选项”和“调试”。  
   
-    2.  选择“启用‘仅我的代码’”。  
+    2. 选择“启用‘仅我的代码’”。  
   
-2.  禁用 CLR 异常：  
+2. 禁用 CLR 异常：  
   
-    1.  选择“调试”菜单上的“异常”。  
+    1. 选择“调试”菜单上的“异常”。  
   
-    2.  对于“公共语言运行时异常”，请取消选中“用户未处理的”。  
+    2. 对于“公共语言运行时异常”，请取消选中“用户未处理的”。  
   
-##  <a name="generate"></a>*在编码的 UI 测试中我看不到用于更改 BrowserWindow.CurrentBrowser 的选项。*  
+## <a name="generate"></a>*在编码的 UI 测试中我看不到用于更改 BrowserWindow.CurrentBrowser 的选项。*  
  你使用的 [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] 版本可能不支持使用各种 Web 浏览器的编码的 UI 测试。 若要使用此类编码的 UI 测试，你必须使用 Visual Studio Enterprise。  
   
  *我还应该知道什么？*  
@@ -139,9 +139,9 @@ ms.locfileid: "54805529"
  [跨浏览器测试问题排查](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>指导  
- [使用 Visual Studio 2012 对连续交付进行测试 - 第 2 章：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [使用 Visual Studio 2012 – 第 2 章对连续交付进行测试：单元测试：测试内部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [使用 Visual Studio 2012 测试持续交付 - 第 5 章：实现系统测试的自动化](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [使用 Visual Studio 2012 – 第 5 章： 对连续交付进行测试：实现系统测试的自动化](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>FAQ  
  [编码的 UI 测试常见问题 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  

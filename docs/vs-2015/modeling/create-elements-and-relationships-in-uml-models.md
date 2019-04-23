@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099268"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中创建元素和关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>创建关联  
   
-1.  获取关联的所有者，它通常是包含关系源端的包或模型。  
+1. 获取关联的所有者，它通常是包含关系源端的包或模型。  
   
-2.  对所有者调用所需的 Create 方法。  
+2. 对所有者调用所需的 Create 方法。  
   
-3.  设置关系的属性，比如其名称。  
+3. 设置关系的属性，比如其名称。  
   
      例如：  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  设置关系各端的属性。 始终有两个 `MemberEnds`。 例如：  
+4. 设置关系各端的属性。 始终有两个 `MemberEnds`。 例如：  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  从模型中删除元素时：  
   
--   也将删除链接到它的每个关系。  
+- 也将删除链接到它的每个关系。  
   
--   还将删除关系图上表示它的每个形状。  
+- 还将删除关系图上表示它的每个形状。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   

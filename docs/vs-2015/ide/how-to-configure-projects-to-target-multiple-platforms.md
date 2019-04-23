@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e67d4a5df03f128285de45473c933761d6c7eb04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100295"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,31 +29,31 @@ ms.locfileid: "54785821"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>将配置设置为面向不同平台  
   
-1.  在“生成”菜单上，单击“配置管理器”。  
+1. 在“生成”菜单上，单击“配置管理器”。  
   
-2.  在“活动解决方案平台”框中，选择希望解决方案面向的平台，或者选择“\<新建>”创建一个新的平台。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会编译应用程序，以面向在“配置管理器”对话框中被设置为活动平台的平台。  
+2. 在“活动解决方案平台”框中，选择希望解决方案面向的平台，或者选择“\<新建>”创建一个新的平台。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会编译应用程序，以面向在“配置管理器”对话框中被设置为活动平台的平台。  
   
 ## <a name="removing-a-platform"></a>删除平台  
  如果发现不再需要某个平台，可以使用“配置管理器”对话框将其删除。 此操作会删除你为配置和目标的这个组合所配置的所有解决方案和项目设置。  
   
 #### <a name="to-remove-a-platform"></a>删除平台  
   
-1.  在“生成”菜单上，单击“配置管理器”。  
+1. 在“生成”菜单上，单击“配置管理器”。  
   
-2.  在“活动解决方案平台”框中，选择“\<编辑>”。 “编辑解决方案平台”对话框随即打开。  
+2. 在“活动解决方案平台”框中，选择“\<编辑>”。 “编辑解决方案平台”对话框随即打开。  
   
-3.  单击想要删除的平台，然后单击“删除”。  
+3. 单击想要删除的平台，然后单击“删除”。  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>通过一个解决方案面向多个平台  
  由于可以基于配置和平台设置的组合更改设置，因此可以设置一个面向多个平台的解决方案。  
   
 #### <a name="to-target-multiple-platforms"></a>面向多个平台  
   
-1.  使用“配置资源管理器”为解决方案添加至少两个目标平台。  
+1. 使用“配置资源管理器”为解决方案添加至少两个目标平台。  
   
-2.  从“活动解决方案平台”列表中选择想要面向的平台。  
+2. 从“活动解决方案平台”列表中选择想要面向的平台。  
   
-3.  生成解决方案。  
+3. 生成解决方案。  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>一次生成多个解决方案配置  
   

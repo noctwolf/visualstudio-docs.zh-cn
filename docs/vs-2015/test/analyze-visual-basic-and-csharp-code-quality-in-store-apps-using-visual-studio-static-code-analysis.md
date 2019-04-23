@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108330"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用中的 Visual Basic 和 C# 代码质量
 
@@ -42,7 +42,7 @@ ms.locfileid: "54795671"
 
  [Visual Basic 和 C# 代码分析警告](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a>运行代码分析
+## <a name="BKMK_Run"></a>运行代码分析
  若要对 Visual Studio 解决方案运行代码分析，请执行以下操作：
 
 - 在“生成”菜单上，选择“对解决方案运行代码分析”。
@@ -57,7 +57,7 @@ ms.locfileid: "54795671"
 
    ![代码分析窗口](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a>分析和解决代码分析警告
+## <a name="BKMK_Analyze"></a>分析和解决代码分析警告
  若要分析某个具体的警告，请在“代码分析”窗口中单击该警告的标题。 随后该警告将展开，显示有关问题的详细信息。
 
  ![展开的代码分析警告](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
@@ -71,7 +71,7 @@ ms.locfileid: "54795671"
 > [!TIP]
 >  可从“代码分析”窗口中重新运行代码分析。 单击“分析”按钮，然后选择分析的范围。 可对整个解决方案对所选项目重新运行分析。
 
-##  <a name="BKMK_Suppress"></a>禁止显示代码分析警告
+## <a name="BKMK_Suppress"></a>禁止显示代码分析警告
  有时，你可能会决定不修复代码分析警告。 你可能会觉得与代码的任何真实实现中引发问题的可能性相比，解决警告所需的重新编码工作量过大。 或者，你可能会认为在警告中使用的分析不适合特定的上下文。 可禁止显示个别警告，以使“代码分析”窗口中不再显示这些警告。
 
  若要禁止显示警告，请执行以下操作：
@@ -88,14 +88,14 @@ ms.locfileid: "54795671"
 
      决定在源文件中还是在禁止显示文件中禁止显示警告取决于编码风格和需要。
 
-##  <a name="BKMK_Search"></a>搜索和筛选代码分析结果
+## <a name="BKMK_Search"></a>搜索和筛选代码分析结果
  可搜索冗长的警告消息列表，也可在多项目解决方案中筛选警告。
 
  ![搜索并筛选代码分析窗口](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  在 [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)] 中，所有代码分析警告的严重性级别均为“警告”。
 
-##  <a name="BKMK_Warnings"></a> Visual Basic 和 C# 代码分析警告
+## <a name="BKMK_Warnings"></a> Visual Basic 和 C# 代码分析警告
  代码分析可引发以下警告：
 
  [CA1001：具有可释放字段的类型应该是可释放的](http://msdn.microsoft.com/library/ms182172.aspx)

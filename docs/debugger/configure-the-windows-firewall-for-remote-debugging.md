@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100351"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以进行远程调试
 
@@ -102,13 +102,13 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 
 1. 选择“允许应用通过 Windows 防火墙”。
 
-1.  如果**远程调试器**或**Visual Studio 远程调试器**未显示在**允许的应用程序和功能**，选择**更改设置**，然后选择**允许另一个应用**。
+1. 如果**远程调试器**或**Visual Studio 远程调试器**未显示在**允许的应用程序和功能**，选择**更改设置**，然后选择**允许另一个应用**。
 
-1.  如果远程调试器应用程序仍未列出在**将应用添加**对话框中，选择**浏览**，并导航到 *\<Visual Studio 安装目录\>\\Common7\\IDE\\远程调试器\\\<x86*， *x64*，或*Appx* \>具体取决于您的应用程序的适当体系结构。 选择*msvsmon.exe*，然后选择**添加**。
+1. 如果远程调试器应用程序仍未列出在**将应用添加**对话框中，选择**浏览**，并导航到 *\<Visual Studio 安装目录\>\\Common7\\IDE\\远程调试器\\\<x86*， *x64*，或*Appx* \>具体取决于您的应用程序的适当体系结构。 选择*msvsmon.exe*，然后选择**添加**。
 
-1.  在中**应用程序**列表中，选择**远程调试器**刚添加的。 选择**网络类型**，然后选择一个或多个网络类型，包括远程连接的网络类型。
+1. 在中**应用程序**列表中，选择**远程调试器**刚添加的。 选择**网络类型**，然后选择一个或多个网络类型，包括远程连接的网络类型。
 
-1.  选择**外**，然后选择**确定**。
+1. 选择**外**，然后选择**确定**。
 
 ## <a name="troubleshooting"></a>远程调试连接进行故障排除
 

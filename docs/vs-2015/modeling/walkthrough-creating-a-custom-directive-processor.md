@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 665c59e6881ec2e5924845dfc8dcc130b5044095
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105300"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "59663383"
 
  本演练演示以下任务：  
 
--   创建自定义指令处理器  
+- 创建自定义指令处理器  
 
--   注册指令处理器  
+- 注册指令处理器  
 
--   测试指令处理器  
+- 测试指令处理器  
 
 ## <a name="prerequisites"></a>系统必备  
  若要完成此演练，您需要：  
 
--   Visual Studio 2010  
+- Visual Studio 2010  
 
--   Visual Studio 2010 SDK  
+- Visual Studio 2010 SDK  
 
 ## <a name="creating-a-custom-directive-processor"></a>创建自定义指令处理器  
  在本演练中，将创建一个自定义指令处理器。 添加一条自定义指令，该指令读取 XML 文件，将其存储在 <xref:System.Xml.XmlDocument> 变量中，并通过一个属性将其公开。 在“测试指令处理器”一节中，将在文本模板中使用此属性访问 XML 文件。  
@@ -83,18 +83,18 @@ End Property
 
 #### <a name="to-create-a-custom-directive-processor"></a>创建自定义指令处理器  
 
-1.  在 Visual Studio 中，创建一个名为 CustomDP 的 C# 或 Visual Basic 类库项目。  
+1. 在 Visual Studio 中，创建一个名为 CustomDP 的 C# 或 Visual Basic 类库项目。  
 
     > [!NOTE]
     >  如果要在多台计算机上安装指令处理器，最好使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) 项目并在扩展中包含一个 .pkgdef 文件。 有关详细信息，请参阅[部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)。  
 
-2.  添加对下列程序集的引用：  
+2. 添加对下列程序集的引用：  
 
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
 
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
 
-3.  中的代码替换**Class1**用下面的代码。 此代码定义一个继承自 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 类的 CustomDirectiveProcessor 类并实现必需的方法。  
+3. 中的代码替换**Class1**用下面的代码。 此代码定义一个继承自 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 类的 CustomDirectiveProcessor 类并实现必需的方法。  
 
     ```csharp  
     using System;  
@@ -606,11 +606,11 @@ End Property
     End Namespace  
     ```  
 
-4.  有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]仅，打开**项目**菜单，然后单击**CustomDP 属性**。 上**应用程序**选项卡上，在**根命名空间**，删除默认值为`CustomDP`。  
+4. 有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]仅，打开**项目**菜单，然后单击**CustomDP 属性**。 上**应用程序**选项卡上，在**根命名空间**，删除默认值为`CustomDP`。  
 
-5.  在“文件”菜单上，单击“全部保存”。  
+5. 在“文件”菜单上，单击“全部保存”。  
 
-6.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
+6. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
 
 ### <a name="build-the-project"></a>生成项目  
  生成项目。 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
@@ -684,12 +684,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>创建供测试指令处理器使用的 XML 文件  
 
-1.  创建一个名为文本文件`DocFile.xml`使用任何文本编辑器 （例如，记事本）。  
+1. 创建一个名为文本文件`DocFile.xml`使用任何文本编辑器 （例如，记事本）。  
 
     > [!NOTE]
     >  可以在任意位置（如 C:\Test\DocFile.xml）创建此文件。  
 
-2.  向文本文件中添加以下内容：  
+2. 向文本文件中添加以下内容：  
 
     ```  
     <?xml version="1.0"?>  
@@ -730,17 +730,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </doc>  
     ```  
 
-3.  保存并关闭文件。  
+3. 保存并关闭文件。  
 
 #### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>创建文本模板测试指令处理器  
 
-1.  在 Visual Studio 中，创建一个名为 TemplateTest 的 C# 或 Visual Basic 类库项目。  
+1. 在 Visual Studio 中，创建一个名为 TemplateTest 的 C# 或 Visual Basic 类库项目。  
 
-2.  添加名为 TestDP.tt 的新文本模板文件。  
+2. 添加名为 TestDP.tt 的新文本模板文件。  
 
-3.  请确保**自定义工具**TestDP.tt 的属性设置为`TextTemplatingFileGenerator`。  
+3. 请确保**自定义工具**TestDP.tt 的属性设置为`TextTemplatingFileGenerator`。  
 
-4.  将 TestDP.tt 的内容更改为以下文本。  
+4. 将 TestDP.tt 的内容更改为以下文本。  
 
     > [!NOTE]
     >  请务必替换字符串 <`YOUR PATH>`替换为 DocFile.xml 文件的路径。  
@@ -832,15 +832,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  在本示例中，`Processor` 参数的值为 `CustomDirectiveProcessor`。 `Processor` 参数的值必须与处理器的注册表项的名称一致。  
 
-5.  在“文件”菜单上，单击“全部保存”。  
+5. 在“文件”菜单上，单击“全部保存”。  
 
 #### <a name="to-test-the-directive-processor"></a>测试指令处理器  
 
-1.  在中**解决方案资源管理器**，右击 TestDP.tt，然后单击**运行自定义工具**。  
+1. 在中**解决方案资源管理器**，右击 TestDP.tt，然后单击**运行自定义工具**。  
 
      有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]用户，TestDP.txt 可能不出现在**解决方案资源管理器**默认情况下。 若要显示分配给项目的所有文件，请打开**项目**菜单，然后单击**显示所有文件**。  
 
-2.  在中**解决方案资源管理器**、 展开 TestDP.txt 节点，然后双击 TestDP.txt，在编辑器中打开它。  
+2. 在中**解决方案资源管理器**、 展开 TestDP.txt 节点，然后双击 TestDP.txt，在编辑器中打开它。  
 
      此时将显示生成的文本输出。 输出应如下所示：  
 
@@ -879,7 +879,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-html-to-the-generated-text"></a>向生成的文本添加 HTML  
 
-1.  用下面的代码替换 TestDP.tt 中的代码。 HTML 为突出显示状态。 请务必替换字符串`YOUR PATH`替换为 DocFile.xml 文件的路径。  
+1. 用下面的代码替换 TestDP.tt 中的代码。 HTML 为突出显示状态。 请务必替换字符串`YOUR PATH`替换为 DocFile.xml 文件的路径。  
 
     > [!NOTE]
     >  附加的开始\<# 和结束 #> 标记将语句代码分离从 HTML 标记。  
@@ -964,8 +964,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>  
     ```  
 
-2.  上**文件**菜单上，单击**保存 TestDP.txt**。  
+2. 上**文件**菜单上，单击**保存 TestDP.txt**。  
 
-3.  若要在中查看在浏览器中，输出**解决方案资源管理器**中，右击 TestDP.htm，再单击**视图中浏览器**。  
+3. 若要在中查看在浏览器中，输出**解决方案资源管理器**中，右击 TestDP.htm，再单击**视图中浏览器**。  
 
      输出应与原始文本相同，只是应用了 HTML 格式。 每个项名称都应显示为粗体。

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108368"
 ---
 # <a name="full-text-search-tips"></a>全文搜索提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54791703"
 ### <a name="general-guidelines"></a>通用准则  
  下表包括在“帮助”中进行搜索查询的一些基本规则和指南。  
   
-|语法|说明​​|  
+|语法|说明|  
 |------------|-----------------|  
 |区分大小写|搜索不区分大小写。 使用大写或小写字符设置搜索条件。 例如，“OLE”和“ole”返回相同的结果。|  
 |字符组合|不能仅搜索单个字母 (a-z) 或单个数字 (0-9)。 如果尝试搜索某些保留字，如“and”、“from”和“with”，它们将被忽略。 有关详细信息，请参阅本主题后面部分的“搜索中忽略的字（停用字）”。|  
@@ -43,7 +43,7 @@ ms.locfileid: "54791703"
   
 > [!IMPORTANT]
 > 1. 不支持短语搜索。 如果在搜索字符串中指定多个单词，返回的主题将包含所有指定的单词，但不一定是确切指定的短语。  
->    2.  使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅[搜索表达式中的逻辑运算符](../ide/logical-operators-in-search-expressions.md)。  
+>    2. 使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅[搜索表达式中的逻辑运算符](../ide/logical-operators-in-search-expressions.md)。  
   
 ### <a name="filters"></a>筛选器  
  可利用高级搜索运算符进一步限制搜索结果。 “帮助”包括三类用于筛选全文搜索结果的方式：标题、代码和关键字。 有关详细信息，请参阅[搜索表达式中的高级搜索运算符](../ide/advanced-search-operators-in-search-expressions.md)。  
@@ -51,11 +51,11 @@ ms.locfileid: "54791703"
 ### <a name="ranking-of-search-results"></a>搜索结果的排名  
  搜索算法应用特定条件在结果列表中对搜索结果进行排名。 通常情况下：  
   
-1.  标题中包含搜索词的内容排名高于标题中不包含搜索词的内容。  
+1. 标题中包含搜索词的内容排名高于标题中不包含搜索词的内容。  
   
-2.  搜索词紧挨的内容高于搜索词较远的内容。  
+2. 搜索词紧挨的内容高于搜索词较远的内容。  
   
-3.  包含较多搜索词的内容排名高于包含较少搜索词的内容。  
+3. 包含较多搜索词的内容排名高于包含较少搜索词的内容。  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>搜索中忽略的字（停用字）  
  全文索引搜索期间，会自动忽略经常出现的单词或数字（有时也称停用字）。 例如，如果搜索短语“pass through”，搜索结果将显示包含“pass”而非“through”的主题。  

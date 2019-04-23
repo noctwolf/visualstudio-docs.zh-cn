@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098996"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 本文包含 Visual Studio 帮助查看器集成商的以下任务：
 
--   正在创建主题 （F1 支持）
+- 正在创建主题 （F1 支持）
 
--   创建帮助查看器内容品牌包
+- 创建帮助查看器内容品牌包
 
--   部署一组文章
+- 部署一组文章
 
--   添加到 Visual Studio shell （集成或独立） 的帮助
+- 添加到 Visual Studio shell （集成或独立） 的帮助
 
--   其他资源
+- 其他资源
 
 ### <a name="creating-a-topic-f1-support"></a>正在创建主题 （F1 支持）
  本部分概述的组件提供的主题，主题要求、 如何创建使用其呈现结果的主题 （包括 F1 支持要求） 和最后，示例主题的简短说明。
@@ -63,7 +63,7 @@ ms.locfileid: "58932148"
 
 - javascript
 
-- C# 或 C#
+- c# 或 c#
 
 - cplusplus 或 visual c + + 或 c + +
 
@@ -132,17 +132,17 @@ ms.locfileid: "58932148"
 
  （不包括页眉和页脚） 主题的正文将包含页的链接、 注意部分、 可折叠区域、 代码段中和语言特定文本的一部分。  请参阅品牌部分以了解有关这些方面提供主题的信息。
 
-1.  添加主题标题标记：  `<div class="title">Contoso Topic 4</div>`
+1. 添加主题标题标记：  `<div class="title">Contoso Topic 4</div>`
 
-2.  添加注释部分： `<div class="alert"> add your table tag and text </div>`
+2. 添加注释部分： `<div class="alert"> add your table tag and text </div>`
 
-3.  添加的可折叠区域：  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. 添加的可折叠区域：  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  添加代码片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. 添加代码片段：  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  添加代码的语言特定的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 请注意该 devLangnu = 允许您输入其他语言。 例如，devLangnu ="Fortran"将显示 Fortran 时代码片段 DisplayLanguage = Fortran
+5. 添加代码的语言特定的文本：`<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` 请注意该 devLangnu = 允许您输入其他语言。 例如，devLangnu ="Fortran"将显示 Fortran 时代码片段 DisplayLanguage = Fortran
 
-6.  添加页链接： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. 添加页链接： `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  注意： 对于不受支持新"显示语言"(示例中， F#，Cobol、 Fortran) 中的代码段的代码着色将单色。
@@ -296,13 +296,13 @@ some F# code
 
 1. 设置**VendorContent**帮助 2.1 注册表项下的值：
 
-   -   对于 32 位操作系统：
+   - 对于 32 位操作系统：
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent"= dword: 00000001
 
-   -   对于 64 位操作系统：
+   - 对于 64 位操作系统：
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 

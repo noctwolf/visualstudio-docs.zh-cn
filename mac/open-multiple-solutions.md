@@ -3,15 +3,15 @@ title: 如何：打开 Visual Studio for Mac 中的多个解决方案
 description: 了解如何打开 Visual Studio for Mac 的多个解决方案，以及如何打开应用程序的多个实例。
 author: conceptdev
 ms.author: crdun
-ms.date: 07/19/2018
+ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768214"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856339"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的多个解决方案或实例
 
@@ -21,11 +21,9 @@ ms.locfileid: "55768214"
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的第二个实例
 
-若要打开集成开发环境 (IDE) 的第二个实例，请打开“终端”应用程序，并输入下面的代码行：
+要打开集成开发环境 (IDE) 的第二个实例，请右键单击 dock 或 Applications 文件夹中的 Visual Studio 图标，然后选择“新建实例”。
 
-```bash
-open -n "/Applications/Visual Studio.app"
-```
+![右键单击 Visual Studio 图标时出现的“新建实例”菜单选项的屏幕截图](media/open-new-instance.png)
 
 ## <a name="open-a-second-solution-inside-a-single-instance"></a>在单实例中打开第二个解决方案
 

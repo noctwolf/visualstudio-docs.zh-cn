@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099541"
 ---
 # <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
 调试引擎 (DE) 是允许调试特定运行时体系结构的组件。 通常是只有一个 DE 实现每个运行时环境。
@@ -29,15 +29,15 @@ ms.locfileid: "56711093"
 
  创建部署包含以下步骤：
 
-1.  通过 Visual Studio 注册 DE
+1. 通过 Visual Studio 注册 DE
 
-2.  启用要进行调试的程序
+2. 启用要进行调试的程序
 
-3.  实现执行控制和状态评估
+3. 实现执行控制和状态评估
 
-4.  发送事件
+4. 发送事件
 
-5.  设置终止和分离
+5. 设置终止和分离
 
 ## <a name="in-this-section"></a>本节内容
  [注册自定义调试引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md)介绍使用 Visual Studio 注册调试引擎，可以使用它所需的步骤。

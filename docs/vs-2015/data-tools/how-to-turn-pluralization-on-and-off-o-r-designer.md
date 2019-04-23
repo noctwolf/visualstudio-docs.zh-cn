@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098618"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何：打开和关闭复数形式（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "59665852"
   
 ### <a name="to-turn-pluralization-on-and-off"></a>打开和关闭复数形式  
   
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在“选项”对话框中展开“数据库工具”。  
+2. 在“选项”对话框中展开“数据库工具”。  
   
 > [!NOTE]
 >  如果“数据库工具”节点不可见，请选择“显示所有设置”。  
   
-1.  单击“O/R 设计器”。  
+1. 单击“O/R 设计器”。  
   
-2.  设置**名称的复数形式**到**已启用** = **False**设置[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，以便它不会更改类名称。  
+2. 设置**名称的复数形式**到**已启用** = **False**设置[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，以便它不会更改类名称。  
   
-3.  设置**名称的复数形式**到**已启用** = **True**若要添加到的对象的类名称应用复数规则[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+3. 设置**名称的复数形式**到**已启用** = **True**若要添加到的对象的类名称应用复数规则[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

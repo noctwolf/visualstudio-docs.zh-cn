@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105625"
 ---
 # <a name="graphics-event-list"></a>图形事件列表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59000180"
   
 ##### <a name="to-change-the-event-list-view-mode"></a>更改事件列表视图模式  
   
--   在 **“图形事件列表”** 窗口的事件列表上方，查找 **“视图”** 下拉列表，然后选择 **“时间线”** 视图或 **“绘图调用”** 视图。  
+- 在 **“图形事件列表”** 窗口的事件列表上方，查找 **“视图”** 下拉列表，然后选择 **“时间线”** 视图或 **“绘图调用”** 视图。  
   
 ### <a name="filtering-events"></a>筛选事件  
  你可以使用“搜索”框（位于 **“图形事件列表”** 窗口的右上角）来筛选事件列表，以便仅包括其名称包含特定关键字的事件。 你可以指定单个关键字，例如 `Vertex`（如之前的说明所示），或使用以分号分隔的列表指定多个关键字，例如 `Draw;Primitive`（与名称中具有 `Draw` 或 `Primitive` 的事件相匹配）。 搜索区分空格（例如， `VSSet` 和 `VS Set` 就是不同的搜索），因此请仔细设置搜索形式。  

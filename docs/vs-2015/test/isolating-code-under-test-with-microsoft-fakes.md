@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099099"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Microsoft Fakes 将应用的其余部分替换为*存根*或*垫片*，有助于
   
  通常，我们建议使用存根类型来与基本代码中的依赖项隔离。 可以通过隐藏接口后面的组件执行此操作。 填充码类型可用于与不提供可测试的 API 的第三方组件隔离。  
   
-##  <a name="stubs"></a>开始使用存根  
+## <a name="stubs"></a>开始使用存根  
  有关更详细的说明，请参阅[使用存根隔离应用的各个部分以供单元测试使用](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   
-1.  **注入接口**  
+1. **注入接口**  
   
      若要使用存根，你在编写要测试的代码时不应明确提及应用程序的其他组件中的类。 “组件”是指一个类或一起开发和更新的多个类，通常包含在一个 Visual Studio 项目中。 应使用接口来声明变量和参数，并且应使用工厂来传入或创建其他组件的实例。 例如，如果 StockFeed 是应用程序的另一个组件中的类，则可以认为以下内容是错误的：  
   
@@ -75,15 +75,15 @@ Microsoft Fakes 将应用的其余部分替换为*存根*或*垫片*，有助于
   
     ```  
   
-2.  **添加 Fakes 程序集**  
+2. **添加 Fakes 程序集**  
   
-    1.  在“解决方案资源管理器”中，展开测试项目的引用列表。 如果使用的是 Visual Basic，必须选择“显示所有文件”才能看到引用列表。  
+    1. 在“解决方案资源管理器”中，展开测试项目的引用列表。 如果使用的是 Visual Basic，必须选择“显示所有文件”才能看到引用列表。  
   
-    2.  选择对其中定义了接口（例如 IStockFeed）的程序集的引用。 在此引用的快捷菜单上，选择“添加 Fakes 程序集”。  
+    2. 选择对其中定义了接口（例如 IStockFeed）的程序集的引用。 在此引用的快捷菜单上，选择“添加 Fakes 程序集”。  
   
-    3.  重新生成解决方案。  
+    3. 重新生成解决方案。  
   
-3.  在测试中，构建存根的实例并为存根的方法提供代码：  
+3. 在测试中，构建存根的实例并为存根的方法提供代码：  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ Microsoft Fakes 将应用的其余部分替换为*存根*或*垫片*，有助于
   
      另外，还会为属性的 getter 和 setter、事件和泛型方法生成存根。 有关详细信息，请参阅[使用存根隔离应用的各个部分以供单元测试使用](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   
-##  <a name="shims"></a>开始使用垫片  
+## <a name="shims"></a>开始使用垫片  
  （有关更详细的说明，请参阅[使用垫片将应用与其他程序集相隔离以供单元测试使用](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。）  
   
  假定你的组件包含对 `DateTime.Now` 的调用：  

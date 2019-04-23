@@ -1,5 +1,5 @@
 ---
-title: 演练： 使用图形诊断来调试计算着色器 |Microsoft Docs
+title: 演练：使用图形诊断来调试计算着色器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105365"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>演练：使用图形诊断来调试计算着色器
 本演练演示如何使用 Visual Studio 图形诊断工具来调查生成错误结果的计算着色器。
 
  此演练阐释了以下任务：
 
--   使用“图形事件列表”  定位问题的潜在根源。
+- 使用“图形事件列表”  定位问题的潜在根源。
 
--   使用“图形事件调用堆栈”确定由 DirectCompute `Dispatch` 事件执行的是哪一个计算着色器。
+- 使用“图形事件调用堆栈”确定由 DirectCompute `Dispatch` 事件执行的是哪一个计算着色器。
 
--   使用“图形管道阶段”窗口和 HLSL 调试器检查是问题根源的计算着色器。
+- 使用“图形管道阶段”窗口和 HLSL 调试器检查是问题根源的计算着色器。
 
 ## <a name="scenario"></a>方案
  在此方案中，你编写了流体动力学模拟，它利用 DirectCompute 来执行模拟更新的计算量最大的部分。 应用运行时，数据集和用户界面的呈现看起来正常，但模拟未按预期运作。 通过使用“图形诊断”，可以捕获图形日志的问题，以便调试该应用。 应用中的问题如下所示：
@@ -88,7 +88,7 @@ ms.locfileid: "56713784"
 
     ![调试 IntegrateCS 计算着色器。](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. 若要停止调试计算着色器，请在“调试”工具栏上选择“停止调试”（键盘：Shift+F5）。
+4. 若要停止调试计算着色器，在**调试**工具栏上，选择**停止调试**(键盘：Shift + F5)。
 
 5. 接下来，请选择第二个 `Dispatch` 事件并开始调试计算着色器，正如在前面的步骤中所进行的操作那样。
 

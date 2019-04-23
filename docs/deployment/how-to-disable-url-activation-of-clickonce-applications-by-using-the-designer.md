@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用设计器禁用 ClickOnce 应用程序的 URL 激活 |Microsoft Docs
+title: 如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,35 +16,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46786b0a11c4be6614732a224b755542b637d662
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100230"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活
 通常情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从 Web 服务器安装后立即应用程序会自动启动。 出于安全原因，您可以决定禁用此行为，并告知用户启动应用程序从**启动**菜单相反。 以下过程描述了如何禁用 URL 激活。
 
  此方法仅适用于从 Web 服务器安装到用户计算机上的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 它不能用于仅联机应用程序，可以仅通过使用其 URL 启动。 只能联机使用的和已安装应用程序之间的差异的详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
- 此过程使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此外可通过完成此任务[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 有关详细信息，请参阅[如何： 禁用 URL 激活的 ClickOnce 应用程序](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)。
+ 此过程使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此外可通过完成此任务[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 有关详细信息，请参阅[如何：禁用 ClickOnce 应用程序的 URL 激活](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)。
 
 ## <a name="procedure"></a>过程
 
 #### <a name="to-disable-url-activation-for-your-application"></a>禁用应用程序的 URL 激活的步骤
 
-1.  右键单击项目名称**解决方案资源管理器**，然后单击**属性**。
+1. 右键单击项目名称**解决方案资源管理器**，然后单击**属性**。
 
-2.  上**属性**页上，单击**发布**选项卡。
+2. 上**属性**页上，单击**发布**选项卡。
 
-3.  单击“选项” 。
+3. 单击“选项” 。
 
-4.  单击**清单**。
+4. 单击**清单**。
 
-5.  选择标记的复选框**阻止通过 URL 激活应用程序**。
+5. 选择标记的复选框**阻止通过 URL 激活应用程序**。
 
-6.  部署应用程序。
+6. 部署应用程序。
 
 ## <a name="see-also"></a>请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

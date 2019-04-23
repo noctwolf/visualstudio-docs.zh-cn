@@ -18,12 +18,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a8fc28666a7b0c1d44ad36fabffa19974fea5956
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 275d3d0547d83e794801c45a7554d58e181d64e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933144"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107055"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自定义 ClickOnce 应用程序的默认网页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "58933144"
   
 ### <a name="to-customize-the-publish-web-page"></a>若要自定义 Web 发布页  
   
-1.  发布 ClickOnce 应用程序到 Web 位置。 有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+1. 发布 ClickOnce 应用程序到 Web 位置。 有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
-2.  在 Web 服务器上，在 Visual Web 设计器或另一个 HTML 编辑器中打开 Publish.htm 文件。  
+2. 在 Web 服务器上，在 Visual Web 设计器或另一个 HTML 编辑器中打开 Publish.htm 文件。  
   
-3.  自定义为所需的页，并将其保存。  
+3. 自定义为所需的页，并将其保存。  
   
-4.  可选。 若要阻止 Visual Studio 覆盖您自定义的发布的网页，取消选中**自动生成部署网页后每个发布**发布选项对话框中。  
+4. 可选。 若要阻止 Visual Studio 覆盖您自定义的发布的网页，取消选中**自动生成部署网页后每个发布**发布选项对话框中。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c7f2a98b56765efdb8a12cd9cf479bcd3a08402
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e76f3dfdb6ce8890387a85be474bac4d0f605777
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857848"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106275"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳实践。
@@ -216,88 +216,88 @@ ms.locfileid: "58857848"
 ### <a name="first-steps-managed"></a>第一个步骤 （托管）
  若要使用映像服务，需要将对部分或全部以下程序集的引用添加到你的项目：
 
--   *Microsoft.VisualStudio.ImageCatalog.dll*
+- *Microsoft.VisualStudio.ImageCatalog.dll*
 
-    -   如果在使用内置映像目录需要**KnownMonikers**。
+    - 如果在使用内置映像目录需要**KnownMonikers**。
 
--   *Microsoft.VisualStudio.Imaging.dll*
+- *Microsoft.VisualStudio.Imaging.dll*
 
-    -   如果在使用需要**CrispImage**并**ImageThemingUtilities** WPF 用户界面中。
+    - 如果在使用需要**CrispImage**并**ImageThemingUtilities** WPF 用户界面中。
 
--   *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
+- *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll*
 
-    -   如果在使用需要**ImageMoniker**并**ImageAttributes**类型。
+    - 如果在使用需要**ImageMoniker**并**ImageAttributes**类型。
 
-    -   **EmbedInteropTypes**应设置为 true。
+    - **EmbedInteropTypes**应设置为 true。
 
--   *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
+- *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime*
 
-    -   如果在使用需要**IVsImageService2**类型。
+    - 如果在使用需要**IVsImageService2**类型。
 
-    -   **EmbedInteropTypes**应设置为 true。
+    - **EmbedInteropTypes**应设置为 true。
 
--   *Microsoft.VisualStudio.Utilities.dll*
+- *Microsoft.VisualStudio.Utilities.dll*
 
-    -   如果在使用需要**BrushToColorConverter**有关**ImageThemingUtilities.ImageBackgroundColor** WPF 用户界面中。
+    - 如果在使用需要**BrushToColorConverter**有关**ImageThemingUtilities.ImageBackgroundColor** WPF 用户界面中。
 
--   *Microsoft.VisualStudio.Shell.\<VSVersion>.0*
+- *Microsoft.VisualStudio.Shell.\<VSVersion>.0*
 
-    -   如果在使用需要**IVsUIObject**类型。
+    - 如果在使用需要**IVsUIObject**类型。
 
--   *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
+- *Microsoft.VisualStudio.Shell.Interop.10.0.dll*
 
-    -   如果使用 WinForms 相关的 UI，帮助程序被必需。
+    - 如果使用 WinForms 相关的 UI，帮助程序被必需。
 
-    -   **EmbedInteropTypes**应设置为 true
+    - **EmbedInteropTypes**应设置为 true
 
 ### <a name="first-steps-native"></a>第一个步骤 （本机）
  若要使用映像服务，需要包括部分或全部以下标头到您的项目：
 
--   **KnownImageIds.h**
+- **KnownImageIds.h**
 
-    -   如果在使用内置映像目录需要**KnownMonikers**，但不能使用**ImageMoniker**类型，例如在返回值从**IVsHierarchy GetGuidProperty**或**GetProperty**调用。
+    - 如果在使用内置映像目录需要**KnownMonikers**，但不能使用**ImageMoniker**类型，例如在返回值从**IVsHierarchy GetGuidProperty**或**GetProperty**调用。
 
--   **KnownMonikers.h**
+- **KnownMonikers.h**
 
-    -   如果在使用内置映像目录需要**KnownMonikers**。
+    - 如果在使用内置映像目录需要**KnownMonikers**。
 
--   **ImageParameters140.h**
+- **ImageParameters140.h**
 
-    -   如果在使用需要**ImageMoniker**并**ImageAttributes**类型。
+    - 如果在使用需要**ImageMoniker**并**ImageAttributes**类型。
 
--   **VSShell140.h**
+- **VSShell140.h**
 
-    -   如果在使用需要**IVsImageService2**类型。
+    - 如果在使用需要**IVsImageService2**类型。
 
--   **ImageThemingUtilities.h**
+- **ImageThemingUtilities.h**
 
-    -   需要您不能让图像服务为你处理主题。
+    - 需要您不能让图像服务为你处理主题。
 
-    -   如果映像服务可以处理图像主题设置，则不使用此标头。
+    - 如果映像服务可以处理图像主题设置，则不使用此标头。
 
 ::: moniker range="vs-2017"
--   **VSUIDPIHelper.h**
+- **VSUIDPIHelper.h**
 
-    -   如果使用的 DPI 帮助器以获取当前 DPI 必需。
+    - 如果使用的 DPI 帮助器以获取当前 DPI 必需。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
--   **VsDpiAwareness.h**  
+- **VsDpiAwareness.h**  
 
-    -   如果使用的 DPI 感知帮助器以获取当前 DPI 必需。  
+    - 如果使用的 DPI 感知帮助器以获取当前 DPI 必需。  
 
 ::: moniker-end
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>如何编写新的 WPF 用户界面？
 
-1.  通过添加在上面所需的程序集引用的开始部分首先步骤到你的项目。 您不必将它们全部添加，因此添加所需的引用。 (注意： 如果使用的或有权访问**颜色**而不是**画笔**，则可以跳过对引用**实用程序**，因为不需要转换器。)
+1. 通过添加在上面所需的程序集引用的开始部分首先步骤到你的项目。 您不必将它们全部添加，因此添加所需的引用。 (注意： 如果使用的或有权访问**颜色**而不是**画笔**，则可以跳过对引用**实用程序**，因为不需要转换器。)
 
-2.  选择所需的映像，并获取其名字对象。 使用**KnownMoniker**，或使用您自己有自己的自定义映像和名字对象。
+2. 选择所需的映像，并获取其名字对象。 使用**KnownMoniker**，或使用您自己有自己的自定义映像和名字对象。
 
-3.  添加**CrispImages**到你的 XAML。 （请参阅下面的示例）。
+3. 添加**CrispImages**到你的 XAML。 （请参阅下面的示例）。
 
-4.  设置**ImageThemingUtilities.ImageBackgroundColor** UI 层次结构中的属性。 (此值应设置其中的背景色已知的不一定是在位置**CrispImage**。)（请参阅下面的示例）。
+4. 设置**ImageThemingUtilities.ImageBackgroundColor** UI 层次结构中的属性。 (此值应设置其中的背景色已知的不一定是在位置**CrispImage**。)（请参阅下面的示例）。
 
 ```xaml
 <Window
@@ -323,19 +323,19 @@ ms.locfileid: "58857848"
 
  更新现有 WPF UI 是一个相对简单的过程，包括三个基本步骤：
 
-1.  将替换所有\<图像 > 元素中使用 UI \<CrispImage > 元素。
+1. 将替换所有\<图像 > 元素中使用 UI \<CrispImage > 元素。
 
-2.  对名字对象属性更改源的所有属性。
+2. 对名字对象属性更改源的所有属性。
 
-    -   如果映像永远不会更改，并且使用**KnownMonikers**，然后将该属性设置为静态绑定**KnownMoniker**。 （请参阅上面的示例。）
+    - 如果映像永远不会更改，并且使用**KnownMonikers**，然后将该属性设置为静态绑定**KnownMoniker**。 （请参阅上面的示例。）
 
-    -   如果映像永远不会更改，并且使用你自己的自定义映像，然后以静态方式绑定到您自己的名字对象。
+    - 如果映像永远不会更改，并且使用你自己的自定义映像，然后以静态方式绑定到您自己的名字对象。
 
-    -   如果可以更改图像，则将名字对象属性绑定到属性更改通知的代码属性。
+    - 如果可以更改图像，则将名字对象属性绑定到属性更改通知的代码属性。
 
-3.  某个位置中的 UI 层次结构中，设置**ImageThemingUtilities.ImageBackgroundColor**以便确保颜色反转正常工作。
+3. 某个位置中的 UI 层次结构中，设置**ImageThemingUtilities.ImageBackgroundColor**以便确保颜色反转正常工作。
 
-    -   这可能需要使用**BrushToColorConverter**类。 （请参阅上面的示例。）
+    - 这可能需要使用**BrushToColorConverter**类。 （请参阅上面的示例。）
 
 ## <a name="how-do-i-update-win32-ui"></a>如何更新 Win32 UI？
  将以下代码添加到你的代码在适当的替换原始加载映像。 切换返回而不是与 HIMAGELIST HICONs HBITMAPs，根据需要的值。
@@ -350,6 +350,7 @@ CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
  **请求映像**
 
 ::: moniker range="vs-2017"
+
 ```cpp  
 ImageAttributes attr = { 0 };  
 attr.StructSize      = sizeof(attributes);  
@@ -367,9 +368,11 @@ CComPtr<IVsUIObject> spImg;
 // Replace this KnownMoniker with your desired ImageMoniker  
 spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
 ```  
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
 ```cpp 
 UINT dpiX, dpiY;
 HWND hwnd = // get the HWND where the image will be displayed
@@ -391,6 +394,7 @@ CComPtr<IVsUIObject> spImg;
 // Replace this KnownMoniker with your desired ImageMoniker  
 spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
 ```  
+
 ::: moniker-end
 
 ## <a name="how-do-i-update-winforms-ui"></a>如何更新 WinForms UI？
@@ -413,6 +417,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
  **请求映像**
 
 ::: moniker range="vs-2017"
+
 ```csharp  
 ImageAttributes attributes = new ImageAttributes  
 {  
@@ -434,9 +439,11 @@ IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
 // Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
 ```  
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
 ```csharp  
 Control control = // get the control where the image will be displayed
 
@@ -460,6 +467,7 @@ IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
 // Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
 ```  
+
 ::: moniker-end
 
 ## <a name="how-do-i-use-image-monikers-in-a-new-tool-window"></a>如何在新的工具窗口中使用图像名字对象？
@@ -501,18 +509,18 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 3. 工具窗口选项卡时在选项卡获取足够小 (也用于**Ctrl**+**选项卡**窗口切换器)。
 
-   1.  在派生类的构造函数中 （如果存在） 删除这些行**ToolWindowPane**类型：
+   1. 在派生类的构造函数中 （如果存在） 删除这些行**ToolWindowPane**类型：
 
        ```csharp
        this.BitmapResourceID = <Value>;
        this.BitmapIndex = <Value>;
        ```
 
-   2.  请参阅步骤 #1 的"如何使用图像名字对象的新工具窗口中？" 上面的部分。
+   2. 请参阅步骤 #1 的"如何使用图像名字对象的新工具窗口中？" 上面的部分。
 
 4. 要打开工具窗口的命令。
 
-   -   请参阅步骤 #2 的"如何使用图像名字对象的新工具窗口中？" 上面的部分。
+   - 请参阅步骤 #2 的"如何使用图像名字对象的新工具窗口中？" 上面的部分。
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>如何在.vsct 文件中使用图像名字对象？
  更新你 *.vsct*文件注释行下面所示：
@@ -630,27 +638,27 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 1. 运行**ManifestFromResources**工具，并向其传递图像条。 这将生成在条带的清单。
 
-   -   建议： 提供清单以满足其使用情况的非默认名称。
+   - 建议： 提供清单以满足其使用情况的非默认名称。
 
 2. 如果仅使用**KnownMonikers**，然后执行以下操作：
 
-   -   替换\<图像 > 与清单的部分\<映像 / >。
+   - 替换\<图像 > 与清单的部分\<映像 / >。
 
-   -   删除所有 subimage Id (with \<imagestrip 名称 > _ # #)。
+   - 删除所有 subimage Id (with \<imagestrip 名称 > _ # #)。
 
-   -   建议： 重命名的 AssetsGuid 符号和图像条带符号，以满足其使用情况。
+   - 建议： 重命名的 AssetsGuid 符号和图像条带符号，以满足其使用情况。
 
-   -   将为每个**ContainedImage**的 GUID 与 $(ImageCatalogGuid) 替换每个**ContainedImage**的 ID 为 $(\<名字对象 >)，并将外部 ="true"属性添加到每个**ContainedImage**
+   - 将为每个**ContainedImage**的 GUID 与 $(ImageCatalogGuid) 替换每个**ContainedImage**的 ID 为 $(\<名字对象 >)，并将外部 ="true"属性添加到每个**ContainedImage**
 
-       -   \<名字对象 > 应替换为**KnownMoniker**相匹配的图像，但与"KnownMonikers"。 从名称中删除。
+       - \<名字对象 > 应替换为**KnownMoniker**相匹配的图像，但与"KnownMonikers"。 从名称中删除。
 
-   -   添加 < 导入 Manifest="$(ManifestFolder)\\< 相对安装到的目录路径 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\*> 的页首\<符号 > 部分。
+   - 添加 < 导入 Manifest="$(ManifestFolder)\\< 相对安装到的目录路径 *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest"/\*> 的页首\<符号 > 部分。
 
-       -   由安装程序创作清单中定义的部署位置确定的相对路径。
+       - 由安装程序创作清单中定义的部署位置确定的相对路径。
 
 3. 运行**ManifestToCode**工具生成的包装，以便现有的代码有一个名字对象，它可用于查询图像带映像服务。
 
-   -   建议： 提供包装器和命名空间以满足其使用情况的非默认名称。
+   - 建议： 提供包装器和命名空间以满足其使用情况的非默认名称。
 
 4. 执行所有操作将添加时，安装程序创作/部署和其他代码更改来处理映像服务和新文件。
 
@@ -707,11 +715,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **我不需要支持 HIMAGELISTs**
 
-1.  确定的一套**KnownMonikers**的匹配你的图像条中的映像或在图像条中创建你自己的图像的名字对象。
+1. 确定的一套**KnownMonikers**的匹配你的图像条中的映像或在图像条中创建你自己的图像的名字对象。
 
-2.  更新用于获取图像中的图像条，以改为使用名字对象所需的索引处的任何映射。
+2. 更新用于获取图像中的图像条，以改为使用名字对象所需的索引处的任何映射。
 
-3.  更新代码以使用图像服务请求通过所更新映射的名字对象。 (这可能意味着需要更新到**CrispImages**对于托管代码中，或从映像服务请求 HBITMAPs 或 HICONs 和对于本机代码中传递它们。)
+3. 更新代码以使用图像服务请求通过所更新映射的名字对象。 (这可能意味着需要更新到**CrispImages**对于托管代码中，或从映像服务请求 HBITMAPs 或 HICONs 和对于本机代码中传递它们。)
 
 ## <a name="testing-your-images"></a>测试你的映像
  图像库查看器工具可用于测试映像清单，以确保所有内容编写正确。 您可以发现中的工具[Visual Studio 2015 SDK](visual-studio-sdk.md)。 有关此工具和其他文档，请参阅[此处](https://aka.ms/VSImageThemeTools)。
@@ -740,19 +748,19 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>FAQ
 
--   是否有任何依赖项加载时必须包括\<引用 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ >？
+- 是否有任何依赖项加载时必须包括\<引用 Include="Microsoft.VisualStudio.*。Interop.14.0.DesignTime"/ >？
 
-    -   设置 EmbedInteropTypes ="true"上的所有互操作的 Dll。
+    - 设置 EmbedInteropTypes ="true"上的所有互操作的 Dll。
 
--   如何使用 my 扩展部署图像清单？
+- 如何使用 my 扩展部署图像清单？
 
-    -   添加 *.imagemanifest*到你的项目文件。
+    - 添加 *.imagemanifest*到你的项目文件。
 
-    -   设置为 True 的"包括在 VSIX 中"。
+    - 设置为 True 的"包括在 VSIX 中"。
 
--   我正在更新我的 CPS 项目系统。 发生了什么情况**ImageName**并**StockIconService**？
+- 我正在更新我的 CPS 项目系统。 发生了什么情况**ImageName**并**StockIconService**？
 
-    -   这些已删除时 CPS 已更新为使用名字对象。 不再需要调用**StockIconService**，只需传递所需**KnownMoniker**对方法或属性使用**ToProjectSystemType()** 中的扩展方法CPS 实用程序。 您可以找到从映射**ImageName**到**KnownMonikers**如下：
+    - 这些已删除时 CPS 已更新为使用名字对象。 不再需要调用**StockIconService**，只需传递所需**KnownMoniker**对方法或属性使用**ToProjectSystemType()** 中的扩展方法CPS 实用程序。 您可以找到从映射**ImageName**到**KnownMonikers**如下：
 
         |||
         |-|-|
@@ -820,7 +828,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|
         |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|
 
-    -   我正在更新我的完成列表提供程序。 什么**KnownMonikers**匹配到旧**StandardGlyphGroup**并**StandardGlyph**值？
+    - 我正在更新我的完成列表提供程序。 什么**KnownMonikers**匹配到旧**StandardGlyphGroup**并**StandardGlyph**值？
 
         ||||
         |-|-|-|

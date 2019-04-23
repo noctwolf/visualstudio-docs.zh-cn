@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8a1126427a1454ec09f0460cb9da1eb65fb72b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099840"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>如何：创建类型之间的关联（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "54764793"
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>在类关系图中定义关联连线  
   
-1.  在“工具箱”的“类设计器”下，选择“关联”。  
+1. 在“工具箱”的“类设计器”下，选择“关联”。  
   
-2.  在希望以关联关系链接的两个形状之间绘制一条连线。  
+2. 在希望以关联关系链接的两个形状之间绘制一条连线。  
   
      这就在第一个类中创建了一个新属性。 此属性显示为一条具有默认名称的关联连线（而不是作为形状中隔离舱内的属性）。 其类型是关联连线所指向的形状。  
   
@@ -48,11 +48,11 @@ ms.locfileid: "54764793"
   
   \- 或 -  
   
-1.  单击包含显示为关联的属性的形状。  
+1. 单击包含显示为关联的属性的形状。  
   
      该形状获得焦点，且其成员显示在“类详细信息”窗口和“属性”窗口中。  
   
-2.  在“类详细信息”窗口或“属性”窗口中，编辑该属性的名称字段，并按 Enter。  
+2. 在“类详细信息”窗口或“属性”窗口中，编辑该属性的名称字段，并按 Enter。  
   
      此名称在“类详细信息”窗口中、关联行上、“属性”窗口中和代码中同时得到更新。  
   

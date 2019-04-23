@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099385"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 扩展程序的每个监视器感知功能支持
 Visual Studio 2019 之前的版本必须设置为系统识别，而不是按监视器 DPI 感知 (PMA) 其 DPI 感知上下文。 运行中系统识别导致降级视觉对象体验 （例如模糊字体或图标），只要 Visual Studio 必须呈现跨具有不同的缩放比例或远程监视器到具有不同的显示配置的计算机例如 （不同Windows 扩展的)。
@@ -39,9 +39,9 @@ Visual Studio 2019 DPI 感知上下文设置为 PMA，当环境支持此功能�
 
 ## <a name="enabling-pma"></a>启用 PMA
 若要启用 PMA Visual Studio 中的，需要满足以下要求：
-1)  Windows 10 2018 年 4 月更新 (v1803，RS4) 或更高版本
-2)  .NET framework 4.8 RTM 或更高版本
-3)  使用 visual Studio 2019 ["具有不同像素密度屏幕的优化呈现"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019)选项处于启用状态
+1) Windows 10 2018 年 4 月更新 (v1803，RS4) 或更高版本
+2) .NET framework 4.8 RTM 或更高版本
+3) 使用 visual Studio 2019 ["具有不同像素密度屏幕的优化呈现"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019)选项处于启用状态
 
 一旦满足这些要求，则 Visual Studio 将自动启用 PMA 模式整个过程。
 
@@ -203,6 +203,7 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 如果要迁移非 WPF 工具窗口以完全支持 PMA，它将需要选择退出 CLMM。 若要执行此操作，需要实现的新接口：IVsDpiAware。
 
 C#：
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++：
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 未在更新以支持 PMA 模式的旧 UI 可能仍需要在 PMA 模式下运行 Visual Studio 期间的细微调整。 一个此类修补程序需确保在正确 DpiAwarenessContext 中创建 UI。 若要强制转到特定 DpiAwarenessContext UI，可以输入下面的代码具有的 DPI 作用域：
 
 C#：
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++：
+
 ```cpp
 void MyClass::ShowDialog()
 {

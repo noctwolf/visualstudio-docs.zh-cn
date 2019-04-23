@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796759"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857835"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>在 Visual Studio 中开发 JavaScript 和 TypeScript 代码，而无需解决方案或项目
 
-Visual Studio 2017 引入了[开发代码而无需项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)的功能，这样便可打开代码的文件夹并立即开始使用丰富的编辑器支持，如 IntelliSense、搜索、重构、调试等。 除了这些功能，针对 Visual Studio 的 Node.js 工具还支持生成 TypeScript 文件、管理 npm 包和运行 npm 脚本。
+在 Visual Studio 2017 中开始，可[开发代码而无需项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)，这样便可打开代码的文件夹并立即开始使用丰富的编辑器支持，如 IntelliSense、搜索、重构、调试等。 除了这些功能，针对 Visual Studio 的 Node.js 工具还支持生成 TypeScript 文件、管理 npm 包和运行 npm 脚本。
 
 若要开始，请从工具栏中选择“文件” > “打开” > “文件夹”。 解决方案资源管理器显示文件夹中的所有文件，你可以打开任何文件以开始编辑。 在后台，Visual Studio 对文件编制索引，启用 npm、生成和调试功能。
 
 > [!IMPORTANT]
-> 本文所述的很多功能（包括 npm 集成）均要求 Visual Studio 2017 版本 15.8。
+> 本文所述的很多功能（包括 npm 集成）均要求 Visual Studio 2017 版本 15.8 或更高版本。
 
 ## <a name="npm-integration"></a>npm 集成
 

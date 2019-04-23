@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3087353b4d8875d1933c285343c3f1460c0e276
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098683"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>层关系图扩展疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58932660"
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>将出现旧版本的验证结果，或我的验证方法未被调用。  
   
-1.  在实验实例中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**构建**菜单中，单击**清理解决方案**。 这将清除上一个验证分析缓存的结果。  
+1. 在实验实例中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**构建**菜单中，单击**清理解决方案**。 这将清除上一个验证分析缓存的结果。  
   
-2.  请确保你的模型中的层与代码元素关联，并且在模型中有至少一个依赖项链接。 如果不存在任何验证内容，则不会调用验证。  
+2. 请确保你的模型中的层与代码元素关联，并且在模型中有至少一个依赖项链接。 如果不存在任何验证内容，则不会调用验证。  
   
-3.  常规断点可能在验证方法中不起作用，因为其运行于单独的进程中。 如果你想要逐步执行你的方法，就必须插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。  
+3. 常规断点可能在验证方法中不起作用，因为其运行于单独的进程中。 如果你想要逐步执行你的方法，就必须插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。  
   
-4.  在**source.extension.vsixmanifest**在层验证项目中，请确保已添加两者**MEF 组件**项和一个**自定义扩展类型**下项**内容**。  
+4. 在**source.extension.vsixmanifest**在层验证项目中，请确保已添加两者**MEF 组件**项和一个**自定义扩展类型**下项**内容**。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展层关系图](../modeling/extend-layer-diagrams.md)

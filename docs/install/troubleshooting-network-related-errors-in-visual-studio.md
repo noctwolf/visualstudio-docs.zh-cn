@@ -1,7 +1,7 @@
 ---
 title: 网络或代理错误的疑难解答
 description: 为在防火墙或代理服务器后安装或使用 Visual Studio 时可能会遇到的网络或代理相关错误查找解决方案。
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324956"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790493"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -54,6 +54,8 @@ ms.locfileid: "58324956"
 
 - 如果你想通过代理使用默认凭据，则可以执行以下操作：
 
+::: moniker range="vs-2017"
+
   1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
 
   2. 在配置文件中查找 `<system.net>` 块，然后添加这个代码：
@@ -67,11 +69,28 @@ ms.locfileid: "58324956"
       你必须在 `proxyaddress="<http://<yourproxy:port#>` 中为你的网络插入正确的代理地址。
 
      > [!NOTE]
-     > 有关详细信息，请参阅[&lt;defaultProxy&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)和 [proxy&lt;&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)页。
+     > 有关详细信息，请参阅[&lt;defaultProxy&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)和 [proxy&lt;&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)页。
 
-  - 或 -
+::: moniker-end
 
-- 此外，也可以按照[如何通过经身份验证的 Web 代理进行连接](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)博客文章中的说明，了解如何添加允许你使用代理的代码。
+::: moniker range="vs-2019"
+
+  1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE。
+
+  2. 在配置文件中查找 `<system.net>` 块，然后添加这个代码：
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      你必须在 `proxyaddress="<http://<yourproxy:port#>` 中为你的网络插入正确的代理地址。
+
+     > [!NOTE]
+     > 有关详细信息，请参阅[&lt;defaultProxy&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/)和 [proxy&lt;&gt; 元素（网络设置）](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)页。
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>错误：“基础连接已关闭”
 

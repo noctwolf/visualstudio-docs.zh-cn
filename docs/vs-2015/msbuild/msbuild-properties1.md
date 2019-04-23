@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 662cd662e8fe18c5a2a8c05a7f5da21c064743b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101179"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,11 +111,11 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 ## <a name="creating-properties-during-execution"></a>在执行过程中创建属性  
  在生成的评估阶段会为 `Target` 元素外的属性分配值。 在后续执行阶段中，可按以下方式创建或修改属性：  
   
--   任何任务都可以发出属性。 若要发出属性，[Task](../msbuild/task-element-msbuild.md) 元素必须具有含有 `PropertyName` 属性的 [Output](../msbuild/output-element-msbuild.md) 子元素。  
+- 任何任务都可以发出属性。 若要发出属性，[Task](../msbuild/task-element-msbuild.md) 元素必须具有含有 `PropertyName` 属性的 [Output](../msbuild/output-element-msbuild.md) 子元素。  
   
--   [CreateProperty](../msbuild/createproperty-task.md) 任务可发出属性。 此用法已弃用。  
+- [CreateProperty](../msbuild/createproperty-task.md) 任务可发出属性。 此用法已弃用。  
   
--   从 .NET Framework 3.5 起，`Target` 元素可能会包含 `PropertyGroup` 元素，后者可能会包含属性声明。  
+- 从 .NET Framework 3.5 起，`Target` 元素可能会包含 `PropertyGroup` 元素，后者可能会包含属性声明。  
   
 ## <a name="storing-xml-in-properties"></a>在属性中存储 XML  
  属性可包含任意 XML，这有助于将值传递给任务或显示日志记录信息。 以下示例介绍了 `ConfigTemplate` 属性，它具有一个包含 XML 和其他属性引用的值。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用其相应属性值来替换属性引用。 属性值按其显示顺序进行分配。 因此，在此示例中，`$(MySupportedVersion)`、`$(MyRequiredVersion)` 和 `$(MySafeMode)` 应已定义。  

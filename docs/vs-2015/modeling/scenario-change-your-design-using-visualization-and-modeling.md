@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9adab2cbf429860840e60b88065cf445c882fd2c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59000212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099671"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "59000212"
   
 - [为应用程序创建模型](../modeling/create-models-for-your-app.md)  
   
-##  <a name="ScenarioOverview"></a> 方案概述  
+## <a name="ScenarioOverview"></a> 方案概述  
  本方案介绍了从两个虚构的公司的软件开发生命周期：Dinner Now 和 Lucerne 发布。 Dinner Now 在西雅图提供基于 Web 的送餐服务。 客户可以在 Dinner Now 网站上订餐和付费。 订单随后会发送给相应的本地餐馆以便其配送餐点。 Lucerne Publishing 是一家位于纽约的公司，在网上和网下经营了多项业务。 例如，他们运营了一家网站，客户可以在这个网站上发表自己对餐馆的评论。  
   
  Lucerne 最近收购了 Dinner Now，并希望进行以下变革：  
@@ -78,7 +78,7 @@ ms.locfileid: "59000212"
   
 - [测试、验证和签入更新的代码](#TestValidateCheckInCode)  
   
-##  <a name="ModelingDiagramsTools"></a> 体系结构关系图和建模图在软件开发中的角色  
+## <a name="ModelingDiagramsTools"></a> 体系结构关系图和建模图在软件开发中的角色  
  下表描述了这些工具在软件开发生命周期的各个阶段中可扮演的角色：  
   
 ||**用户需求建模**|**业务流程建模**|**系统体系结构和设计**|**代码可视化和浏览**|**确认**|  
@@ -122,7 +122,7 @@ ms.locfileid: "59000212"
   > [!NOTE]
   >  某些版本的 Visual Studio 支持层验证以及代码图和 UML 关系图的只读版本以进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
-##  <a name="UnderstandingCommunicating"></a> 了解和传达系统相关信息  
+## <a name="UnderstandingCommunicating"></a> 了解和传达系统相关信息  
  由于没有规定 Visual Studio 建模图的使用顺序，因此你可以根据自己的需求和方法来使用它们。 通常，团队会在整个项目中反复而频繁地重新访问其模型。 每个关系图都有自己的长处，可帮助你理解、描述和沟通正在开发的系统的各方面问题。  
   
  Dinner Now 和 Lucerne 通过将关系图作为其公共语言来互相沟通以及与项目利益干系人沟通。 例如，Dinner Now 使用关系图执行以下任务：  
@@ -165,7 +165,7 @@ ms.locfileid: "59000212"
   
 - [测试、验证和签入更新的代码](#TestValidateCheckInCode)  
   
-###  <a name="UnderstandingBPMandSystemDesign"></a> 了解系统在业务流程中的角色  
+### <a name="UnderstandingBPMandSystemDesign"></a> 了解系统在业务流程中的角色  
  Lucerne 希望了解有关 Dinner Now 业务流程的详细信息。 他们创建了以下关系图，以便更轻松地阐明他们所掌握的有关 Dinner Now 的信息：  
   
 |**关系图**|**描述**|  
@@ -192,7 +192,7 @@ ms.locfileid: "59000212"
   
  **UML 类图**  
   
-###  <a name="DescribingURM"></a> 描述新的或更新用户要求  
+### <a name="DescribingURM"></a> 描述新的或更新用户要求  
  Lucerne 希望向 Dinner Now 系统添加相关功能，以便客户能阅读和发表餐馆评论。 他们更新了以下关系图，以便能描述此新需求并与 Dinner Now 进行讨论：  
   
 |**关系图**|**描述**|  
@@ -219,7 +219,7 @@ ms.locfileid: "59000212"
   
  **UML 类图**  
   
-###  <a name="CreatingTests"></a> 根据模型创建测试  
+### <a name="CreatingTests"></a> 根据模型创建测试  
  两个团队都同意，他们在进行任何更改前都需要对系统及其组件进行一套完整的测试。 Lucerne 安排了一个专业团队来执行系统和组件级测试。 他们会重用由 Dinner Now 创建的测试并使用 UML 关系图构建这些测试：  
   
 - 每个用例都由一个或多个测试表示。 用例图上的元素会链接到 Team Foundation Server 中的测试用例工作项。  
@@ -236,7 +236,7 @@ ms.locfileid: "59000212"
   
 - [验证 UML 模型](../modeling/validate-your-uml-model.md)  
   
-###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
+### <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于此更改将对系统的其他部件造成的影响的程度。 为了帮助他们了解这一点，Dinner Now 的一位开发人员根据现有代码创建了以下代码图和关系图：  
   
 |**代码图或关系图**|**显示**|  
@@ -280,7 +280,7 @@ ms.locfileid: "59000212"
   
  **UML 序列图**  
   
-###  <a name="ValidatingCode"></a> 使代码与设计保持一致  
+### <a name="ValidatingCode"></a> 使代码与设计保持一致  
  Dinner Now 必须确保更新的代码与设计保持一致。 他们创建了描述系统中的功能层的层关系图，指定了这些层之间可存在的依赖关系，并将解决方案项目关联到了这些层。  
   
 |**关系图**|**描述**|  
@@ -297,13 +297,13 @@ ms.locfileid: "59000212"
   
  请参阅：  
   
--   [定义生成过程](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [定义生成过程](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [使用封闭签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [使用封闭签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
--   [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
+### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
 - 大多数关系图都是由用线连接的节点组成的。 对于每种关系图类型，工具箱提供了不同类型的节点和线。  
   
@@ -323,7 +323,7 @@ ms.locfileid: "59000212"
   
   请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。  
   
-###  <a name="PlanningTracking"></a> Planning and Tracking Work  
+### <a name="PlanningTracking"></a> Planning and Tracking Work  
  Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更轻松地计划、管理和跟踪工作。 两个团队使用模型来确定测试用例和开发任务以及估算其工作量。 Lucerne 创建了 Team Foundation Server 工作项并将其链接到模型元素（如用例或组件）。 这有助于他们监视进度和跟踪为满足用户需求所做的工作。 这有助于他们确保所做的更改仍能满足这些需求。  
   
  在开展工作时，团队会更新其工作项以反映他们在各自的任务上所花费的时间。 他们还会使用以下 Team Foundation Server 功能来监视和报告工作状态：  
@@ -344,7 +344,7 @@ ms.locfileid: "59000212"
   
 - [使用 Project 创建积压工作 (backlog) 和任务](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
-###  <a name="TestValidateCheckInCode"></a> 测试、验证和签入代码  
+### <a name="TestValidateCheckInCode"></a> 测试、验证和签入代码  
  当团队完成每个任务时，他们会将其代码签入 Team Foundation 版本控制，如果他们忘记这样做，则会收到来自 Team Foundation Server 的提醒。 在 Team Foundation Server 接受团队的签入前，团队会运行单元测试和层验证以根据测试用例和设计来验证代码。 他们使用 Team Foundation Server 来定期运行生成、自动单元测试和层验证。 这有助于确保代码满足以下条件：  
   
 - 有效。  
@@ -367,7 +367,7 @@ ms.locfileid: "59000212"
   
 - [生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
+## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了可帮助团队执行此任务的 Visual Studio 建模图:  
   
 - [了解用户需求：用例图](#UnderstandUseCases)  
@@ -396,7 +396,7 @@ ms.locfileid: "59000212"
   
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)  
   
-###  <a name="UnderstandUseCases"></a> 了解用户需求：用例图  
+### <a name="UnderstandUseCases"></a> 了解用户需求：用例图  
  用例图汇总了系统支持的活动以及这些活动的执行者。 Lucerne 通过用例图来了解有关 Dinner Now 系统的以下信息：  
   
 - 客户创建订单。  
@@ -447,13 +447,13 @@ ms.locfileid: "59000212"
 #### <a name="summary-strengths-of-use-case-diagrams"></a>摘要:用例图的优点  
  用例图可帮助你可视化：  
   
--   系统支持或不支持的活动  
+- 系统支持或不支持的活动  
   
--   执行这些活动的人员和外部系统  
+- 执行这些活动的人员和外部系统  
   
--   系统中支持每个活动的主要组件，可以将其表示为嵌套在父系统中的子系统  
+- 系统中支持每个活动的主要组件，可以将其表示为嵌套在父系统中的子系统  
   
--   如何将用例划分为较小的用例或变体  
+- 如何将用例划分为较小的用例或变体  
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
@@ -463,7 +463,7 @@ ms.locfileid: "59000212"
 |序列图|用例中参与者之间的交互的序列。<br /><br /> 请参阅：<br /><br /> -   [UML 序列图：引用](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 序列图：指南](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |类图 (UML)|参与用例的实体或类型。<br /><br /> 请参阅：<br /><br /> -   [UML 类图：引用](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 类图：指南](../modeling/uml-class-diagrams-guidelines.md)|  
   
-###  <a name="UnderstandActivities"></a> 了解业务流程：活动图  
+### <a name="UnderstandActivities"></a> 了解业务流程：活动图  
  活动图描述业务流程中的步骤流并提供沟通工作流的简单方法。 开发项目可以包含多个活动图。 通常，活动包含从一个外部操作产生的所有操作，如订餐、更新菜单或将新餐馆添加到业务。 活动也可以描述复杂操作的详细信息。  
   
  Lucerne 更新以下活动图来演示 Lucerne 如何处理付款并向餐馆付款。 他们将 Dinner Now 支付系统替换为 Lucerne 支付系统，如突出显示部分所示：  
@@ -480,9 +480,9 @@ ms.locfileid: "59000212"
   
  请参阅：  
   
--   [UML 活动关系图：参考](../modeling/uml-activity-diagrams-reference.md)  
+- [UML 活动关系图：参考](../modeling/uml-activity-diagrams-reference.md)  
   
--   [UML 活动关系图：指南](../modeling/uml-activity-diagrams-guidelines.md)  
+- [UML 活动关系图：指南](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="drawing-an-activity-diagram"></a>绘制活动图  
  活动图具有以下主要功能：  
@@ -519,7 +519,7 @@ ms.locfileid: "59000212"
 |用例图|汇总每个参与者执行的活动。<br /><br /> 请参阅：<br /><br /> -   [UML 用例图：引用](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 用例图：指南](../modeling/uml-use-case-diagrams-guidelines.md)|  
 |组件图|将系统可视化为一个可重用部件的集合，这些部件通过一组定义完善的接口来提供或使用行为。<br /><br /> 请参阅：<br /><br /> -   [UML 组件图：引用](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 组件图：指南](../modeling/uml-component-diagrams-guidelines.md)|  
   
-###  <a name="DescribeComponents"></a> 描述系统结构：组件图  
+### <a name="DescribeComponents"></a> 描述系统结构：组件图  
  组件图将系统描述为一个可分离部件的集合，这些部件通过一组定义完善的接口来提供或使用行为。 部件的规模不限，并且可以通过任何方式进行连接。  
   
  为了帮助 Lucerne 和 Dinner Now 可视化和讨论系统的组件及其接口，他们创建了以下组件图：  
@@ -582,9 +582,9 @@ ms.locfileid: "59000212"
 #### <a name="summary-strengths-of-component-diagrams"></a>摘要:组件图的优点  
  组件图可帮助你：  
   
--   将系统可视化为一个可分离部件的集合，无论其实现语言或样式如何。  
+- 将系统可视化为一个可分离部件的集合，无论其实现语言或样式如何。  
   
--   可视化带有定义完善的接口的组件，使设计更易于理解，并在需要更改时更易于更新。  
+- 可视化带有定义完善的接口的组件，使设计更易于理解，并在需要更改时更易于更新。  
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
@@ -596,7 +596,7 @@ ms.locfileid: "59000212"
 |层关系图|描述与组件相关的系统的逻辑体系结构。 使用层验证来确保代码与设计保持一致。<br /><br /> 请参阅：<br /><br /> -   [从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [层关系图：引用](../modeling/layer-diagrams-reference.md)<br />-   [层关系图：指南](../modeling/layer-diagrams-guidelines.md)<br />-   [使用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|  
 |活动图|可视化组件执行的用于响应传入消息的内部处理。<br /><br /> 请参阅：<br /><br /> -   [UML 活动图：引用](../modeling/uml-activity-diagrams-reference.md)<br />-   [UML 活动图：指南](../modeling/uml-activity-diagrams-guidelines.md)|  
   
-###  <a name="VisualizeCode"></a> 可视化现有代码：代码图  
+### <a name="VisualizeCode"></a> 可视化现有代码：代码图  
  代码图显示代码中的当前组织和关系。 项由代码图上的 *“节点”* 表示，而关系由 *“链接”* 表示。 代码图可帮助你执行以下各类任务：  
   
 - 探究不熟悉的代码。  
@@ -637,26 +637,26 @@ ms.locfileid: "59000212"
   
 #### <a name="creating-a-code-map"></a>创建代码图  
   
--   通过按照以下步骤进行操作来生成一个代码图，可以快速了解源代码：  
+- 通过按照以下步骤进行操作来生成一个代码图，可以快速了解源代码：  
   
      在“体系结构”  菜单上，单击“针对解决方案生成代码图” 。  
   
      要快速了解编译的代码，请创建一个空白代码图，然后将程序集文件或二进制文件拖动到该代码图图面上。  
   
--   要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。  
+- 要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。  
   
--   为了帮助你浏览代码图，请重新排列布局，使其适合你要执行的各类任务。  
+- 为了帮助你浏览代码图，请重新排列布局，使其适合你要执行的各类任务。  
   
      例如，要要可视化代码中的分层，请选择树布局。 请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。  
   
 #### <a name="summary-strengths-of-code-maps"></a>摘要:代码图的优点  
  代码图可帮助你：  
   
--   了解现有代码中的组织和关系。  
+- 了解现有代码中的组织和关系。  
   
--   标识可能受建议的更改影响的区域。  
+- 标识可能受建议的更改影响的区域。  
   
--   查找复杂区域、模式、层或其他可以通过改进来使代码更易于维护、更改和重用的区域。  
+- 查找复杂区域、模式、层或其他可以通过改进来使代码更易于维护、更改和重用的区域。  
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
@@ -667,7 +667,7 @@ ms.locfileid: "59000212"
 |类图 (UML)|类、类的属性和操作以及它们之间的关系。<br /><br /> 为了有助于标识这些元素，请创建一个显示这些元素的 UML 类图。<br /><br /> 请参阅：<br /><br /> -   [UML 类图：引用](../modeling/uml-class-diagrams-reference.md)<br />-   [UML 类图：指南](../modeling/uml-class-diagrams-guidelines.md)|  
 |类图（基于代码）|针对某个特定项目的代码中的现有类。<br /><br /> 要可视化和修改代码中的现有类，请使用类设计器。<br /><br /> 请参阅[如何：将类图添加到项目 （类设计器）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|  
   
-###  <a name="DescribeSequence"></a> 描述交互：序列图  
+### <a name="DescribeSequence"></a> 描述交互：序列图  
  序列图描述系统的各个部件之间的一系列交互。 部件的规模不限。 例如，从一个程序中的单个对象到大型子系统或外部参与者，都可以作为部件。 交互的规模和类型不限。 例如，其范围可以从单一消息到扩展的事务，也可以是函数调用或 Web 服务消息。  
   
  为了帮助 Lucerne 和 Dinner Now 描述和讨论“处理付款”用例中的步骤，他们根据组件图创建了以下序列图。 生命线镜像 Dinner Now 网站组件及其部件。 出现在生命线之间的消息将紧跟组件图上的连接：  
@@ -682,11 +682,11 @@ ms.locfileid: "59000212"
   
  请参阅：  
   
--   [UML 序列关系图：参考](../modeling/uml-sequence-diagrams-reference.md)  
+- [UML 序列关系图：参考](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [UML 序列关系图：指南](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [UML 序列关系图：指南](../modeling/uml-sequence-diagrams-guidelines.md)  
   
--   [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)  
+- [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)  
   
 #### <a name="drawing-a-sequence-diagram"></a>绘制序列图  
  序列图具有以下主要功能：  
@@ -710,9 +710,9 @@ ms.locfileid: "59000212"
 #### <a name="summary-strengths-of-sequence-diagrams"></a>摘要:序列图的优点  
  序列图可帮助你可视化：  
   
--   执行用例的过程中在参与者或对象之间传输的控制流。  
+- 执行用例的过程中在参与者或对象之间传输的控制流。  
   
--   方法调用或消息的实现。  
+- 方法调用或消息的实现。  
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
@@ -722,7 +722,7 @@ ms.locfileid: "59000212"
 |组件图|描述生命线表示的组件以及提供和使用由消息表示的行为的接口。<br /><br /> 要根据组件图创建生命线，请右键单击该组件，然后单击“创建生命线” 。<br /><br /> 请参阅：<br /><br /> -   [UML 组件图：引用](../modeling/uml-component-diagrams-reference.md)<br />-   [UML 组件图：指南](../modeling/uml-component-diagrams-guidelines.md)|  
 |用例图|在序列图上汇总用户和组件之间的交互作为一个用例，该用例表示用户的目标。<br /><br /> 请参阅：<br /><br /> -   [UML 用例图：引用](../modeling/uml-use-case-diagrams-reference.md)<br />-   [UML 用例图：指南](../modeling/uml-use-case-diagrams-guidelines.md)|  
   
-###  <a name="DefineClasses"></a> 定义类型的术语表：类图  
+### <a name="DefineClasses"></a> 定义类型的术语表：类图  
  类图定义参与系统的实体、术语或概念以及它们之间的关系。 例如，可以在开发过程中使用这些关系图来描述每个类的属性和操作，无论其实现语言或样式如何。  
   
  为了帮助 Lucerne 描述和讨论参与“处理付款”用例的实体，他们绘制了以下类图：  
@@ -741,20 +741,20 @@ ms.locfileid: "59000212"
   
  请参阅：  
   
--   [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
+- [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-class-diagram"></a>绘制类图  
  类图具有以下主要功能：  
   
 - 类、接口和枚举等类型：  
   
-  -   *“类”* ，它是拥有相同的特定结构特征或行为特征的对象的定义。  
+  - *“类”* ，它是拥有相同的特定结构特征或行为特征的对象的定义。  
   
-  -   *“接口”* ，可定义对象的外部可见行为的一部分。  
+  - *“接口”* ，可定义对象的外部可见行为的一部分。  
   
-  -   *“枚举”* ，它是包含一个文本值列表的分类器。  
+  - *“枚举”* ，它是包含一个文本值列表的分类器。  
   
 - *“属性”* ，它是描述 *“分类器”* 的每个实例的某个类型的值。 分类器是类型、组件、用例甚至参与者的一般名称。  
   
@@ -789,11 +789,11 @@ ms.locfileid: "59000212"
 #### <a name="summary-strengths-of-class-diagrams"></a>摘要:类图的优点  
  类图可帮助你定义：  
   
--   一个常用术语词汇表，在讨论用户需求和参与系统的实体时将使用它。 请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
+- 一个常用术语词汇表，在讨论用户需求和参与系统的实体时将使用它。 请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
--   由系统部件使用的类型（如组件），无论其实现如何。 请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
+- 由系统部件使用的类型（如组件），无论其实现如何。 请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
   
--   类型之间的关系，如依赖关系。 例如，你可以指明可将一个类型与另一个类型的多个实例关联。  
+- 类型之间的关系，如依赖关系。 例如，你可以指明可将一个类型与另一个类型的多个实例关联。  
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   
@@ -806,7 +806,7 @@ ms.locfileid: "59000212"
 |序列图|定义生命线的类型，并为生命线可接收的所有消息定义操作、参数和返回值。<br /><br /> 要根据类图上的某个类型创建生命线，请右键单击该类型，然后单击“创建生命线” 。<br /><br /> 请参阅：<br /><br /> -   [UML 序列图：引用](../modeling/uml-sequence-diagrams-reference.md)<br />-   [UML 序列图：指南](../modeling/uml-sequence-diagrams-guidelines.md)|  
 |代码图|可视化现有代码中的组织和关系。<br /><br /> 要标识类、类的关系和类的方法，请创建一个显示这些元素的代码图。<br /><br /> 请参阅：<br /><br /> -   [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)|  
   
-###  <a name="DescribeLayers"></a> 描述逻辑体系结构：层关系图  
+### <a name="DescribeLayers"></a> 描述逻辑体系结构：层关系图  
  层关系图通过将解决方案中的项目整理到抽象组或 *“层”* 来描述系统的逻辑体系结构。 项目可以为多种元素，如命名空间、项目、类、方法等。 层可表示和描述项目在系统中扮演的角色或执行的任务。 你也可以将层验证包含在生成和签入操作中，来确保代码与其设计保持一致。  
   
  为了使代码和设计保持一致，Dinner Now 和 Lucerne 使用以下层关系图来验证相关代码：  
@@ -867,9 +867,9 @@ ms.locfileid: "59000212"
 #### <a name="summary-strengths-of-layer-diagrams"></a>摘要:层关系图的优点  
  层关系图可帮助你：  
   
--   根据系统项目的功能描述该系统的逻辑体系结构。  
+- 根据系统项目的功能描述该系统的逻辑体系结构。  
   
--   确保正在开发的代码与指定的设计保持一致。  
+- 确保正在开发的代码与指定的设计保持一致。  
   
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系  
   

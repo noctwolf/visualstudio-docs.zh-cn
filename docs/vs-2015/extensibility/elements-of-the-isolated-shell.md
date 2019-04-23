@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106600"
 ---
 # <a name="elements-of-the-isolated-shell"></a>独立 Shell 的元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "58936030"
   
  当运行该应用程序时，按以下顺序定义的注册表设置：  
   
-1.  创建应用程序的注册表项。  
+1. 创建应用程序的注册表项。  
   
-2.  通过定义指定的项和条目从应用程序的.pkgdef 文件更新注册表。  
+2. 通过定义指定的项和条目从应用程序的.pkgdef 文件更新注册表。  
   
-3.  对于属于你的应用程序的每个包，该包的.pkgdef 文件更新注册表。 每个包由应用程序的.pkgdef 文件中 $RootKey$ \Packages\\{*vsPackageGuid*} 密钥包。  
+3. 对于属于你的应用程序的每个包，该包的.pkgdef 文件更新注册表。 每个包由应用程序的.pkgdef 文件中 $RootKey$ \Packages\\{*vsPackageGuid*} 密钥包。  
   
-4.  从 AppEnvConfig.pkgdef 和 BaseConfig.pkgdef 中的更新注册表*Visual Studio SDK 安装路径*\Common7\IDE\ShellExtensions\Platform 目录。 这些文件是 Visual Studio 的一部分也是 Visual Studio Shell （独立的模式） 可再发行组件包的一部分。  
+4. 从 AppEnvConfig.pkgdef 和 BaseConfig.pkgdef 中的更新注册表*Visual Studio SDK 安装路径*\Common7\IDE\ShellExtensions\Platform 目录。 这些文件是 Visual Studio 的一部分也是 Visual Studio Shell （独立的模式） 可再发行组件包的一部分。  
   
-5.  通过删除指定的项和条目从.pkgundef 文件的应用程序的更新注册表。  
+5. 通过删除指定的项和条目从.pkgundef 文件的应用程序的更新注册表。  
   
 ## <a name="run-time-settings"></a>运行时间设置  
  当用户启动独立的 shell 应用程序时，它调用的 Visual Studio shell 的启动入口点。 应用程序设置定义你的应用程序启动时，按如下所示：  
@@ -49,7 +49,7 @@ ms.locfileid: "58936030"
 ## <a name="the-start-entry-point"></a>启动入口点  
  Appenvstub.dll 文件包含用于访问独立的 shell 入口点。 当应用程序启动时，它将调用启动入口点的 Appenvstub.dll。  
   
- 可以通过更改传递给启动入口点的最后一个参数的值来更改应用程序的行为。 有关详细信息，请参阅[独立 Shell 入口点参数 （c + +）](../extensibility/isolated-shell-entry-point-parameters-cpp.md)。  
+ 可以通过更改传递给启动入口点的最后一个参数的值来更改应用程序的行为。 有关详细信息，请参阅[独立 Shell 入口点参数 (C++)](../extensibility/isolated-shell-entry-point-parameters-cpp.md)。  
   
 ## <a name="the-vsct-file"></a>。Vsct 文件  
  .Vsct 文件允许您指定哪些标准的 Visual Studio UI 元素是应用程序中可用。 有关详细信息，请参阅[。Vsct 文件](../extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file.md)。  

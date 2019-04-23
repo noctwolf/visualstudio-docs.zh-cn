@@ -1,7 +1,7 @@
 ---
 title: 安装脱机安装所需的证书
 description: 了解如何安装 Visual Studio 脱机安装的证书。
-ms.date: 01/15/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 249a611bf9db43f31b2370a4a2b4c760cb4ebf64
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323063"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789336"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -34,17 +34,29 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>选项 1 - 从布局文件夹手动安装证书
 
+::: moniker range="vs-2017"
+
 创建网络布局时，所需证书会下载到 Certificates 文件夹。 然后可以双击每个证书文件，并单击完成证书管理器向导，从而手动安装证书。 如果看到输入密码提示，请将密码留空。
 
 **更新**：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+创建网络布局时，所需证书会下载到 Certificates 文件夹。 可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。 如果看到输入密码提示，请将密码留空。
+
+::: moniker-end
+
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>选项 2 - 在企业环境中分发受信任的根证书
 
-对于企业，如果脱机计算机不具有最新的根证书，管理员可以按照[配置受信任根和不允许的证书](https://technet.microsoft.com/library/dn265983.aspx)页来更新证书。
+对于企业，如果脱机计算机不具有最新的根证书，管理员可以按照[配置受信任根和不允许的证书](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11))页来更新证书。
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>选项 3 - 在 Visual Studio 的脚本化部署过程中安装证书
 
 如果正在编写在脱机环境中将 Visual Studio 部署到客户端工作站的脚本，应执行以下步骤：
+
+::: moniker range="vs-2017"
 
 1. 将[证书管理器工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 复制到安装共享（例如，\\server\share\vs2017）。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
 
@@ -86,7 +98,39 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 3. 将批处理文件部署到客户端。 应从提升的进程中运行此命令。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 将[证书管理器工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 复制到安装共享（例如，\\server\share\vs2019）。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
+
+2. 使用下面的命令创建批处理文件：
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
+   
+   或者，通过以下命令创建批处理文件，该文件使用 Windows 中随附的 certutil.exe：
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
+
+3. 将批处理文件部署到客户端。 应从提升的进程中运行此命令。
+
+::: moniker-end
+
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Certificates 文件夹中的证书文件有哪些？
+
+::: moniker range="vs-2017"
 
 此文件夹有三个 .P12 文件，每个文件都包含中间证书和根证书。 采用 Windows 更新的大多数系统都已安装这些证书。
 
@@ -107,6 +151,30 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
         * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
 
 **更新**：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，Visual Studio 安装程序只需要在系统上安装根证书。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* **ManifestSignCertificates.p12** 包含：
+    * 中间证书：**Microsoft 代码签名 PCA 2011**
+        * 不要求。 如果存在，可以在某些情况下提高性能。
+    * 根证书：**Microsoft 根证书颁发机构 2011**
+        * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
+* **ManifestCounterSignCertificates.p12** 包含：
+    * 中间证书：**Microsoft 时间戳 PCA 2010**
+        * 不要求。 如果存在，可以在某些情况下提高性能。
+    * 根证书：**Microsoft 根证书颁发机构 2010**
+        * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
+* **Vs_installer_opc.SignCertificates.p12** 包含：
+    * 中间证书：**Microsoft 代码签名 PCA**
+        * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
+    * 根证书：**Microsoft 根证书颁发机构**
+        * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
+
+Visual Studio 安装程序只需要在系统上安装根证书。
+
+::: moniker-end
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>为什么无法自动安装 Certificates 文件夹中的证书？
 

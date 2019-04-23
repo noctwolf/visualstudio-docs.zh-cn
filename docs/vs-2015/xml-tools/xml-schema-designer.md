@@ -9,25 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f25af22d97b1a564f97120e462cee8ca3fee37e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108684"
 ---
 # <a name="xml-schema-designer"></a>XML 架构设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML 架构设计器（XSD 设计器）是一个图形工具，可用于在不同的抽象级别使架构集可视化。 以下是 XSD 设计器的主要组件：    
   
--   [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)使您能够浏览和 XML 架构树中导航并执行搜索。  
+- [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)使您能够浏览和 XML 架构树中导航并执行搜索。  
   
--   [起始视图](../xml-tools/start-view.md)是启动点 XSD 设计器; 从起始视图，您可以导航到 XSD 设计器的其他视图并查看架构集的详细信息。  
+- [起始视图](../xml-tools/start-view.md)是启动点 XSD 设计器; 从起始视图，您可以导航到 XSD 设计器的其他视图并查看架构集的详细信息。  
   
--   [关系图视图](../xml-tools/graph-view.md)，您可以查看架构集和架构节点之间的关系的概述。  
+- [关系图视图](../xml-tools/graph-view.md)，您可以查看架构集和架构节点之间的关系的概述。  
   
--   [内容模型视图](../xml-tools/content-model-view.md)提供局部和全局架构节点，包括简单和复杂类型、 元素、 组、 属性和属性组的详细信息的图形表示形式。  
+- [内容模型视图](../xml-tools/content-model-view.md)提供局部和全局架构节点，包括简单和复杂类型、 元素、 组、 属性和属性组的详细信息的图形表示形式。  
   
 ## <a name="in-this-section"></a>本节内容  
  [XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)  

@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926080"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670312"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在建模图上定义菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ ms.locfileid: "58926080"
 
 2. 将下列引用添加到项目中。  
 
-
    |                                                                                                    参考                                                                                                    |                                                                                                  允许执行的操作                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         通过使用 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定义组件。                                          |
@@ -74,7 +73,6 @@ ms.locfileid: "58926080"
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[版本号]                                                                                  | 定义模型事件处理程序。<br /><br /> 将一系列更改封装到模型中。 有关详细信息，请参阅[通过使用事务链接 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。 |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> （并不总是需要）                                                             |                                                                                   访问笔势处理程序的其他关系图元素。                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> 仅层关系图上的命令需要。 有关详细信息，请参阅[扩展层关系图](../modeling/extend-layer-diagrams.md)。 |                                                                                             在层关系图上定义命令。                                                                                              |
-
 
 3. 将类文件添加到项目中，并将其内容设置为下面的代码。  
 

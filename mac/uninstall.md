@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204328"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856442"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 可能还要删除以下包含各种 Xamarin 文件和文件夹的目录。 不过，这样做前，应注意此目录包含 Android 签名密钥。 有关详细信息，请参阅**[卸载 Android SDK 和 Java SDK](#uninstall-android-sdk-and-java-sdk)** 部分：
@@ -194,10 +195,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 需要在旧版本手动删除以下项目：
 
-* 在 `"/Applications/Xamarin Workbooks.app"` 删除 Workbooks 应用
-* 在 `"Applications/Xamarin Inspector.app"` 删除 Inspector 应用
+* 删除 Workbooks 应用 `"/Applications/Xamarin Workbooks.app"`
+* 删除 Inspector 应用 `"Applications/Xamarin Inspector.app"`
 * 删除加载项：`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` 和 `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* 在 `/Library/Frameworks/Xamarin.Interactive.framework` 和 `/Library/Frameworks/Xamarin.Inspector.framework` 删除 Inspector 和支持文件
+* 删除此处的 Inspector 和支持文件：`/Library/Frameworks/Xamarin.Interactive.framework` 和 `/Library/Frameworks/Xamarin.Inspector.framework`
 
 ## <a name="uninstall-the-xamarin-profiler"></a>卸载 Xamarin Profiler
 
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>卸载 Visual Studio 2019 for Mac 预览版
+
+Visual Studio 2019 for Mac 预览版作为单独的预览版发布，可用于通过并排安装来继续使用 Visual Studio 2017 for Mac。
+
+现在，Visual Studio 2019 for Mac 已经发布，可以安全地删除 Visual Studio 2019 for Mac 预览版应用程序了。
+
+要卸载预览版应用程序包，请在 Applications 文件夹中选择“Visual Studio (预览版)”，然后单击“移到垃圾桶”，如下图所示：
+
+![在查找器中选择“移到垃圾桶”选项](media/uninstall-remove-vspreview.png)
+
+还可以使用以下命令删除预览版 plist 文件：
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>请参阅

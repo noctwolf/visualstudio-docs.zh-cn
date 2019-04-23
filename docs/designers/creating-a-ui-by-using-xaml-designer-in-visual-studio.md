@@ -1,6 +1,6 @@
 ---
 title: 使用 XAML 设计器创建 UI
-ms.date: 11/05/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955188"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658861"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 设计器创建 UI
 
@@ -104,56 +104,9 @@ XAML 设计器提供 XAML 视图和应用程序呈现的 XAML 标记的同步设
 
 借助标记缩放，可以调整 XAML 视图的大小。 可以从 20% 缩放到 400%。
 
-## <a name="device-window"></a>设备窗口
-
-> [!NOTE]
-> 如果 UWP 应用程序的目标平台版本 (`TargetPlatformVersion`) 是 10.0.16299.0 或更高版本，则“设备”窗口不可用。
-
-通过 XAML 设计器中的“设备”窗口，可在设计时为项目模拟各种视图、显示屏和显示选项。 在 XAML 设计器中工作时，“设备”窗口在“设计”菜单中可用。 如下所示：
-
-![设备窗口](../designers/media/xaml_editor_device_panel.png)
-
-以下是“设备”窗口中可用的选项：
-
-**显示**
-
-为应用程序指定不同的显示大小和分辨率。
-
-**方向**
-
-为应用程序指定不同的方向：“横向”或“纵向”。
-
-**边缘**
-
-为应用程序指定不同的边缘对齐方式：“两者”、“左对齐”、“右对齐”或“无”。
-
-**高对比度**
-
-以选定的对比度设置预览应用程序。 如果将此设置的值不是“默认值”，则重写 App.xaml 中的 `RequestedTheme` 属性设置。
-
-**重写缩放**
-
-在设计图面中开启和关闭文档缩放仿真。 这使你可以按系数提高缩放百分比。 选中该复选框，以开启仿真。 例如，如果缩放百分比为 100%，则设计图面中的文档将最大纵向扩展至 140%。 如果当前缩放百分比为 180，则将禁用此选项。
-
-**最小宽度**
-
-指定最小宽度设置。 最小宽度可在 App.xaml 中更改。
-
-**主题**
-
-指定应用程序主题。 例如，可以在“深色”和“浅色”主题之间进行切换。
-
-**显示镶边**
-
-在“设计”视图中，开启和关闭应用程序周围的模拟平板电脑框架。 选择该复选框，以显示帧。
-
-**剪裁以显示**
-
-指定显示模式。 选择此复选框，以将文档大小剪裁到显示屏大小。
-
 ## <a name="document-outline-window"></a>“文档大纲”窗口
 
-XAML 设计器中的“文档大纲”窗口有助于执行这些任务：
+XAML 设计器中的“文档大纲”窗口类似于 Blend for Visual Studio 中的“对象和时间线”窗口。 “文档大纲”有助于执行以下任务：
 
 - 查看美工板上所有元素的层次结构。
 
@@ -165,7 +118,7 @@ XAML 设计器中的“文档大纲”窗口有助于执行这些任务：
 
 若要查看“文档大纲”窗口，请依次在菜单栏上选择“查看” > “其他窗口” > “文档大纲”。
 
-![“文档大纲”窗口](../designers/media/xaml_editor_doc_outline.png)
+![Visual Studio 中的“文档大纲”窗口](../designers/media/document-outline-window.png)
 
 以下是“文档大纲”窗口中可用的选项：
 
@@ -189,9 +142,13 @@ XAML 设计器中的“文档大纲”窗口有助于执行这些任务：
 
 通过“属性”窗口可以设置控件的属性值。 如下所示：
 
-![“属性”窗口](../designers/media/xaml_editor_prop_window.png)
+![“属性”窗口](../designers/media/xaml-designer-properties-window.png)
 
-“属性”窗口顶部有多种选项。 可以通过使用“名称”  框，更改当前所选元素的名称。 在左上角，有一个表示当前所选元素的图标。 若要按类别或按字母顺序排列属性，请单击“类别” 、“名称” 或“排列方式”  列表中的“源”  。 若要查看控件的事件列表，请单击“事件”  按钮，该按钮显示为一个闪电形符号。 若要搜索属性，请开始在“搜索属性”  框中键入属性的名称。 “属性”窗口将显示与键入搜索的内容相匹配的属性。 某些属性允许通过选择向下箭头按钮设置高级属性。 有关使用属性和处理事件的详细信息，请参阅[控件和模式简介](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
+“属性”窗口顶部有多种选项。 可以通过使用“名称”  框，更改当前所选元素的名称。 在左上角，有一个表示当前所选元素的图标。 若要按类别或按字母顺序排列属性，请单击“类别” 、“名称” 或“排列方式”  列表中的“源”  。 若要查看控件的事件列表，请单击“事件”  按钮，该按钮显示为一个闪电形符号。
+
+若要搜索某个属性，请在搜索框中键入该属性的名称。 “属性”窗口将显示与键入搜索的内容相匹配的属性。 某些属性允许通过选择向下箭头按钮设置高级属性。
+
+有关使用属性和处理事件的详细信息，请参阅[控件和模式简介](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 每个属性值的右侧是一个“属性标记”  ，显示为一个方框符号。 属性标记的外观指示是否有数据绑定到或有资源应用于该属性。 例如，白色方框符号指示默认值，黑色方框符号通常指示已应用某个本地资源，而橙色方框通常指示已应用某个数据绑定。 单击属性标记时，可以导航到一种样式的定义、打开数据绑定生成器或打开资源选取器。
 

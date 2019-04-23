@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b822ed97b2f31b6838fcfc9ee2b6ea32760c54d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105652"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：调试 ActiveX 控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "58931609"
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>为调试会话指定容器  
   
-1.  在“解决方案资源管理器”中，选择项目。  
+1. 在“解决方案资源管理器”中，选择项目。  
   
-2.  从**视图**菜单中，选择**属性页**。  
+2. 从**视图**菜单中，选择**属性页**。  
   
-3.  在“项目属性页”对话框中，打开“配置属性”文件夹并选定“调试”。  
+3. 在“项目属性页”对话框中，打开“配置属性”文件夹并选定“调试”。  
   
-4.  在“调试”类别下，找到“命令”属性。  
+4. 在“调试”类别下，找到“命令”属性。  
   
-5.  指定容器的路径名。 例如，C:\Program Files\Internet Explorer\IEXPLORE.EXE。  
+5. 指定容器的路径名。 例如，C:\Program Files\Internet Explorer\IEXPLORE.EXE。  
   
-6.  如果指定 Internet Explorer 作为容器，并且正在使用 Active Desktop，请在“命令自变量”框中键入 `/new`。  
+6. 如果指定 Internet Explorer 作为容器，并且正在使用 Active Desktop，请在“命令自变量”框中键入 `/new`。  
   
-7.  单击 **“确定”**。  
+7. 单击 **“确定”**。  
   
      如果在“项目属性页”对话框中没有指定容器，则可在开始调试时指定容器。 选择执行命令开始调试时，将出现[调试会话的可执行文件](../debugger/executable-for-debugging-session-dialog-box.md)对话框。 在对话框中指定容器的路径名。  
   

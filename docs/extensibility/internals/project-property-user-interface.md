@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f341a0825c4fcacc41fc01b29c6d65882fa500d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 056913d779f34ce197e1397563caac43ebf8b619
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100990"
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
 
@@ -29,17 +29,17 @@ ms.locfileid: "56335293"
 
 扩展的进程**项目属性**下面列出了在对话框中：
 
--   基础项目可检索项目子类型通过实现扩展程序<xref:EnvDTE80.IInternalExtenderProvider>接口。 浏览、 项目自动化和所有的基础项目的项目配置浏览对象实现此接口。
+- 基础项目可检索项目子类型通过实现扩展程序<xref:EnvDTE80.IInternalExtenderProvider>接口。 浏览、 项目自动化和所有的基础项目的项目配置浏览对象实现此接口。
 
--   实现<xref:EnvDTE80.IInternalExtenderProvider>为项目浏览对象和项目自动化对象委托给<xref:EnvDTE80.IInternalExtenderProvider>项目子类型聚合器的实现 (也就是说，它们`QueryInterface`有关<xref:EnvDTE80.IInternalExtenderProvider>上<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>项目对象）。
+- 实现<xref:EnvDTE80.IInternalExtenderProvider>为项目浏览对象和项目自动化对象委托给<xref:EnvDTE80.IInternalExtenderProvider>项目子类型聚合器的实现 (也就是说，它们`QueryInterface`有关<xref:EnvDTE80.IInternalExtenderProvider>上<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>项目对象）。
 
--   基础项目配置浏览对象还实现<xref:EnvDTE80.IInternalExtenderProvider>以直接在项目子类型配置对象从自动化扩展程序关联。 其实现委托给<xref:EnvDTE80.IInternalExtenderProvider>由项目子类型聚合器实现的接口。
+- 基础项目配置浏览对象还实现<xref:EnvDTE80.IInternalExtenderProvider>以直接在项目子类型配置对象从自动化扩展程序关联。 其实现委托给<xref:EnvDTE80.IInternalExtenderProvider>由项目子类型聚合器实现的接口。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>由项目配置浏览对象，返回实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>对象。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>由项目配置浏览对象，返回实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>对象。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>由项目配置浏览对象，返回还实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>对象。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>由项目配置浏览对象，返回还实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>对象。
 
--   项目子类型可以通过检索以下来确定在运行时的基础项目的各种可扩展对象相应 Catid<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
+- 项目子类型可以通过检索以下来确定在运行时的基础项目的各种可扩展对象相应 Catid<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>值：
 
     - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
@@ -49,9 +49,9 @@ ms.locfileid: "56335293"
 
 若要确定项目范围的 Catid，项目子类型检索的上述属性[VSITEMID。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)从`VSITEMID typedef`。 项目子类型可能还想要控制哪些**属性页**对话框页面显示项目中，依赖于配置和独立的配置。 某些项目子类型可能需要删除内置页，并添加项目子类型特定页。 若要启用此选项，托管客户端项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法的以下属性：
 
--   `VSHPROPID_PropertyPagesCLSIDList` -独立于配置的属性页的 Clsid 的以分号分隔列表。
+- `VSHPROPID_PropertyPagesCLSIDList` -独立于配置的属性页的 Clsid 的以分号分隔列表。
 
--   `VSHPROPID_CfgPropertyPagesCLSIDList —` 以分号分隔的 Clsid 依赖于配置的属性页的列表。
+- `VSHPROPID_CfgPropertyPagesCLSIDList —` 以分号分隔的 Clsid 依赖于配置的属性页的列表。
 
 因为项目子类型的聚合<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>对象，它会重写的定义这些属性，以控制哪些**属性页**显示的对话框。 项目子类型可以检索这些属性的内部基础项目，然后添加或删除根据需要的 Clsid。
 

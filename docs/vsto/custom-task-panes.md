@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106197"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一个用户界面面板，通常停靠在 Microsoft Office 应用程序中某一窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
@@ -114,7 +114,7 @@ ms.locfileid: "57526695"
 
  下表列出可以对其进行处理以响应用户对自定义任务窗格所做更改的事件。
 
-|任务|事件|
+|任务|Event|
 |----------|-----------|
 |当用户更改任务窗格的位置时进行响应。|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|
 |当用户隐藏任务窗格或使其可见时进行响应。|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|
@@ -126,7 +126,7 @@ ms.locfileid: "57526695"
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在卸载 VSTO 外接程序时自动清理自定义任务窗格使用的资源。 不要调用<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A>或<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>中的方法`ThisAddIn_Shutdown`在项目中的事件处理程序。 这些方法将引发 <xref:System.ObjectDisposedException>，因为 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在调用 `ThisAddIn_Shutdown` 之前清理 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象使用的资源。 有关详细信息`ThisAddIn_Shutdown`，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> 管理多个应用程序窗口中的自定义任务窗格
+## <a name="Managing"></a> 管理多个应用程序窗口中的自定义任务窗格
  在使用多个窗口显示文档和其他项的应用程序中创建自定义任务窗格时，你需要进行额外的步骤来确保在用户希望显示任务窗格时任务窗格是可见的。
 
  所有应用程序中的自定义任务窗格都与文档框架窗口关联，该窗口向用户呈现文档或项的视图。 仅当关联的窗口可见时，任务窗格才可见。 但是，并非所有应用程序都以相同的方式使用文档框架窗口。
@@ -137,7 +137,7 @@ ms.locfileid: "57526695"
 
 - [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  为 Outlook 创建自定义任务窗格时，自定义任务窗格与特定资源管理器或检查器窗口关联。 资源管理器是用于显示文件夹的内容和检查器是用于显示项，如电子邮件或任务。
 
  如果希望为多个资源管理器或检查器窗口显示自定义任务窗格，则需要在资源管理器或检查器窗口打开时创建自定义任务窗格的新实例。 为此，请处理在创建资源管理器或检查器窗口时引发的事件，然后在事件处理程序中创建任务窗格。 还可以处理资源管理器和检查器事件以隐藏或显示任务窗格，具体情况视哪个窗口处于可见状态而定。
@@ -167,7 +167,7 @@ ms.locfileid: "57526695"
 
  如果不显式删除自定义任务窗格，Outlook 窗口可能会显示该自定义任务窗格的多个实例。 Outlook 有时会回收窗口，并且回收的窗口会保留对曾附加到这些窗口的任何自定义任务窗格的引用。
 
-##  <a name="WordAndInfoPath"></a> Word、 InfoPath 和 PowerPoint
+## <a name="WordAndInfoPath"></a> Word、 InfoPath 和 PowerPoint
  Word、InfoPath、和 PowerPoint 会在不同的文档框架窗口中显示每个文档。 为这些应用程序创建自定义任务窗格时，自定义任务窗格只与特定文档关联。 如果用户打开其他文档，自定义任务窗格将会隐藏，直到之前的文档再次处于可见状态。
 
  若要为多个文档显示自定义任务窗格，请在用户创建新文档或打开现有文档时创建该自定义任务窗格的新实例。 为此，请处理在创建或打开文档时引发的事件，然后在事件处理程序中创建任务窗格。 还可以处理文档事件以隐藏或显示任务窗格，具体情况视哪个文档处于可见状态而定。
@@ -177,43 +177,43 @@ ms.locfileid: "57526695"
 ### <a name="word-events"></a>Word 事件
  若要监视 Word 中文档窗口的状态，你可以处理以下事件：
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>InfoPath 事件
  若要监视 InfoPath 中文档窗口的状态，你可以处理以下事件：
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>PowerPoint 事件
  若要监视 PowerPoint 中文档窗口的状态，你可以处理以下事件：
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>请参阅
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

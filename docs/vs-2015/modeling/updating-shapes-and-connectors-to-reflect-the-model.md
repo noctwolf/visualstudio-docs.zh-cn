@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107861"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接线以反映模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>设置形状映射的属性以控制修饰器的可见性  
  您可以控制修饰器的可见性，而无需编写程序代码中，通过在 DSL 定义中配置形状和域类之间的映射。 有关详细信息，请参阅下列主题：  
   
--   [如何：控制修饰器的可见性-重定向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [如何：控制修饰器的可见性-重定向](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)  
+- [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>将作为属性公开的颜色和形状的样式  
  在 DSL 定义中，右键单击形状类、 指向**添加公开**，然后单击某一项诸如**填充颜色**。  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  可以使用此方法，为域属性和非应用商店功能，例如形状的大小。  
   
-##  <a name="OnAssociatedProperty"></a> 使用 AssociateValueWith() 更新形状的其他功能  
+## <a name="OnAssociatedProperty"></a> 使用 AssociateValueWith() 更新形状的其他功能  
  形状，例如是否具有阴影或连接器的箭头样式的某些功能没有公开为域属性的功能的内置方法。  此类功能的更改不受控制的事务系统中。 因此，不适合更新这些使用规则，因为当用户执行撤消命令不会调用规则。  
   
  相反，可以通过使用更新此类功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在以下示例中，由连接器显示在关系中的域属性的值控制连接线的箭头样式：  

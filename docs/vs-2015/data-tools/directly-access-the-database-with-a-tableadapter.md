@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106626"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>使用 TableAdapter 直接访问数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59654095"
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>若要直接向数据库中插入新记录  
   
--   调用 TableAdapter 的`Insert`方法，在值中的每个列将作为参数传递。 以下过程使用`Region`表中 Northwind databaseas 示例。  
+- 调用 TableAdapter 的`Insert`方法，在值中的每个列将作为参数传递。 以下过程使用`Region`表中 Northwind databaseas 示例。  
   
     > [!NOTE]
     >  如果没有可用的实例，实例化想要使用的 TableAdapter。  
@@ -55,7 +55,7 @@ ms.locfileid: "59654095"
   
 #### <a name="to-update-records-directly-in-a-database"></a>若要直接在数据库中更新记录  
   
--   调用 TableAdapter 的`Update`方法，在新的和原始值中的每个列将作为参数传递。  
+- 调用 TableAdapter 的`Update`方法，在新的和原始值中的每个列将作为参数传递。  
   
     > [!NOTE]
     >  如果没有可用的实例，实例化想要使用的 TableAdapter。  
@@ -65,7 +65,7 @@ ms.locfileid: "59654095"
   
 #### <a name="to-delete-records-directly-from-a-database"></a>若要直接从数据库中删除记录  
   
--   调用 TableAdapter`Delete`方法，在值中的每个列将作为参数传递的`Delete`方法。 以下过程使用`Region`表中 Northwind databaseas 示例。  
+- 调用 TableAdapter`Delete`方法，在值中的每个列将作为参数传递的`Delete`方法。 以下过程使用`Region`表中 Northwind databaseas 示例。  
   
     > [!NOTE]
     >  如果没有可用的实例，实例化想要使用的 TableAdapter。  

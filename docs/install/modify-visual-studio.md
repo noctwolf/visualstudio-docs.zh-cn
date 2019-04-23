@@ -3,7 +3,7 @@ title: 修改 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 06/12/2018
+ms.date: 03/30/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,16 +18,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 14b80de86c39f9c6ca253434fa90b9f1a4839df2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324891"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789713"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>通过添加或删除工作负载和组件修改 Visual Studio
 
+::: moniker range="vs-2019"
+
+可轻松修改 Visual Studio，使其在你需要时包含想要的内容。 为此，请打开 Visual Studio 安装程序以添加或删除工作负载和组件。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 我们不但简化了 Visual Studio 的个性化设置，让用户能够轻松匹配所需完成的任务，还简化了 Visual Studio 的自定义操作。 要执行此操作，请启动新的 Visual Studio 安装程序，即可进行所需更改。
+
+::: moniker-end
 
 操作方法如下。
 
@@ -38,6 +48,8 @@ ms.locfileid: "58324891"
 >[!IMPORTANT]
 >若要安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 
+::: moniker range="vs-2017"
+
 1. 在计算机上找到 Visual Studio 安装程序。
 
      例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出。
@@ -47,7 +59,7 @@ ms.locfileid: "58324891"
      >[!NOTE]
      >对于某些计算机，Visual Studio 安装程序可能列在字母 **“M”** 下，即 **Microsoft Visual Studio 安装程序**。<br/><br/> 或者，可以在以下位置找到 Visual Studio 安装程序：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-2. 单击或点击以启动安装程序，然后选择“修改”。
+1. 单击或点击以启动安装程序，然后选择“修改”。
 
      ![启动或修改 Visual Studio](media/modify-visual-studio.png "修改 Visual Studio 2017")
 
@@ -55,22 +67,59 @@ ms.locfileid: "58324891"
 
      ![更新或修改 Visual Studio](media/modify-or-update-visual-studio.png "更新或修改 Visual Studio 2017")
 
-3. 从“工作负载”屏幕中，选择或取消选择要安装或卸载的工作负载。
+1. 从“工作负载”屏幕中，选择或取消选择要安装或卸载的工作负载。
 
     ![Visual Studio 2017 设置对话框](media/vs2017-modify-workloads.PNG "选择 Visual Studio 2017 中的工作负载")
 
-4. 再一次选择“修改”。
+1. 再一次选择“修改”。
 
-5. 安装完新的工作负载和组件后，选择“启动”。
+1. 安装完新的工作负载和组件后，选择“启动”。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 在计算机上找到 Visual Studio 安装程序。
+
+     例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出。
+
+     ![打开 Visual Studio 安装程序](media/vs2019-visual-studio-installer.png "Open the Visual Studio Installer")
+
+     > [!NOTE]
+     > 还可以在以下位置中找到 Visual Studio 安装程序：
+     >
+     > `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+
+    可能需要先更新安装程序，然后才能继续操作。 如果是这样，请按照提示操作。
+
+1. 在安装程序中，查找已安装的 Visual Studio 版本，然后选择“修改”。
+
+     ![更新或修改 Visual Studio](media/vs-2019/vs-installer-modify.png "更新或修改 Visual Studio 2017")
+
+1. 在“工作负载”选项卡中，选择或取消选择要安装或卸载的工作负载。
+
+    ![Visual Studio 2019 设置对话框](media/vs-2019/vs-installer-modify-workloads.png "选择 Visual Studio 2019 中的工作负载")
+
+1. 选择是要接受默认的“下载时安装”选项还是“全部下载后再安装”选项。
+
+    ![Visual Studio 2019 安装选项](media/vs-2019/vs-installer-choose-install-or-download.png "选择下载时安装或先下载稍后再安装")
+
+    如果想要先下载稍后再安装，则“全部下载后再安装”选项很有用。
+
+1. 选择“修改”。
+
+1. 安装完新的工作负载和组件后，从 Visual Studio 安装程序中选择“启动”。
+
+::: moniker-end
 
 ## <a name="modify-individual-components"></a>修改各个组件
 
-如果不想使用现成的工作负载功能来自定义 Visual Studio 安装，请从 Visual Studio 安装程序中选择“各个组件”选项，选择所需组件，然后按提示操作。
+如果不想通过安装工作负载来自定义 Visual Studio 安装，请从 Visual Studio 安装程序中选择“各个组件”选项卡，选择所需组件，然后按提示操作。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 
-* [安装 Visual Studio](install-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)
+* [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
 * [卸载 Visual Studio](uninstall-visual-studio.md)

@@ -2,7 +2,7 @@
 title: 删除 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步从计算机中彻底删除 Visual Studio。
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,18 +22,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322712"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790116"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 
-如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，运行 `InstallCleanup.exe` 工具可删除 Visual Studio 2017 及更高版本的所有已安装实例的安装文件和产品信息。 如果修复或卸载失败，运行此工具将作为最后的解决措施，并且可能从其他 Visual Studio 安装或其他需要修复的产品中卸载功能。
+如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，可运行 `InstallCleanup.exe` 工具，以删除 Visual Studio 2017 或 Visual Studio 2019 的所有已安装实例的安装文件和产品信息。 如果修复或卸载失败，运行此工具应仅作为最后的解决措施，并且可能从其他 Visual Studio 安装或其他也可能需要修复的产品中卸载功能。
 
-在下面的说明中，可以使用具有以下行为的不同命令行开关运行此工具：
+在以下说明中，可以使用具有以下行为的不同命令行开关运行此工具：
 
 | 开关 | 行为 |
 | ------ | -------- |
@@ -42,8 +42,7 @@ ms.locfileid: "58322712"
 
 1. 关闭 Visual Studio 安装程序。
 2. 打开管理员命令提示符。 要打开管理员命令提示符，请执行以下步骤：
-   * 单击“开始”菜单
-   * 键入“cmd”。
+   * 在“在此键入进行搜索”框中键入“cmd”。
    * 右键单击“命令提示符” ，然后单击“以管理员身份运行” 。
 3. 键入 `InstallCleanup.exe` 实用工具的完整路径，并传递所需的任何命令行开关。 默认情况下，此实用工具的路径如下所示：
    ```

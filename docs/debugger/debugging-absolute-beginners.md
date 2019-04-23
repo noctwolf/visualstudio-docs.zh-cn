@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d846385349ad0dbcfe60bdf9b1fd7f1b5db507f
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476041"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789388"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -85,13 +85,13 @@ ms.locfileid: "58476041"
 1. 打开 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“控制台”，选择“模板”，然后选择“创建新的控制台应用(.NET Framework)”或“创建新的控制台应用(.NET Core)”。 在出现的对话框中，选择“创建”。 键入名称（如 ConsoleApp FirstApp），然后单击“创建”。
+    在“开始”窗口上，选择“创建新项目”。 在搜索框中键入“控制台”，然后选择“控制台应用 (.NET Framework)”或“控制台应用 (.NET Core)”。 选择“下一步”。 键入项目名称（如 ConsoleApp FirstApp），然后单击“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“控制台应用”，然后在中间窗格中选择“控制台应用(.NET Framework)”或“控制台应用(.NET Core)”。 键入名称（如 ConsoleApp-FirstApp），然后单击“确定”。
     ::: moniker-end
 
-    如果没有看到“控制台应用(.NET Framework)”或“控制台应用(.NET Core)”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”工作负载或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
+    如果没有看到“控制台应用(.NET Framework)”或“控制台应用(.NET Core)”项目模板，请转到“工具” > “获取工具和功能”，这会打开 Visual Studio 安装程序。 选择“.NET 桌面开发”工作负载或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
     Visual Studio 创建控制台项目，该项目显示在右窗格的“解决方案资源管理器”中。
 

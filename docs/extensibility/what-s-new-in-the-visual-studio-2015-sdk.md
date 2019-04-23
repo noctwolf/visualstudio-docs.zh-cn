@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105065"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什么&#39;s Visual Studio 2015 SDK 中的新增功能
 Visual Studio SDK 的 Visual Studio 2015 中，更新，Visual Studio 2015 和 Visual Studio 2017 具有以下新的和更新功能。
@@ -23,9 +23,9 @@ Visual Studio SDK 的 Visual Studio 2015 中，更新，Visual Studio 2015 和 V
 
  这些主题正在[VSSDK 实用工具](../extensibility/internals/vssdk-utilities.md)部分：
 
--   [颜色主题工具](../extensibility/internals/color-theming-tools.md)有助于创建和编辑 Visual Studio 的自定义颜色。
+- [颜色主题工具](../extensibility/internals/color-theming-tools.md)有助于创建和编辑 Visual Studio 的自定义颜色。
 
--   [图像服务工具](../extensibility/internals/image-service-tools.md)，您可以与 Visual Studio 映像清单文件。
+- [图像服务工具](../extensibility/internals/image-service-tools.md)，您可以与 Visual Studio 映像清单文件。
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>新方法，可以将 Visual Studio SDK 添加到 Visual Studio
  从 Visual Studio 2015 开始，不需要单独下载 Visual Studio SDK。 相反，可以将其作为正常安装过程的一部分安装，或者可以选择要将其安装更高版本上。 当打开或创建 VSIX 解决方案时，Visual Studio 会要求你安装 Visual Studio 扩展性工具。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
@@ -36,18 +36,18 @@ Visual Studio SDK 的 Visual Studio 2015 中，更新，Visual Studio 2015 和 V
 ### <a name="visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic
  对于 C# 和 Visual Basic 中，没有一系列完整的项目项模板，可用于创建 Vspackage、 菜单命令、 工具窗口、 编辑器分类器、 编辑器修饰和编辑器边距扩展。 可以向标准的 VSIX 项目中添加任何或所有这些模板。 有关详细信息，请参见:
 
--   [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      VSPackage 向导不再创建 C# 或 Visual Basic 中的扩展。
 
 ### <a name="c"></a>C++
- 对于 c + +，VSPackage 向导支持菜单命令、 工具窗口和自定义编辑器。 中查找它**新的项目**对话框中的**Visual c + + / 可扩展性**。
+ 有关C++，VSPackage 向导支持菜单命令、 工具窗口和自定义编辑器。 中查找它**新的项目**对话框中的**Visual C++ / 可扩展性**。
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>通过 NuGet VS SDK 引用程序集
  对于更高的可移植性和扩展性项目的共享，可以使用 VS SDK 引用程序集的 NuGet 版本。 这些程序集位于[nuget.org](http://www.nuget.org)由发布[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) ，可以轻松地添加到你的项目或通过 Visual Studio 的解决方案**引用 / 管理NuGet 包**对话框。 可以单独将引用添加到特定的可扩展性的程序集，也可以添加所有 VS SDK 都引用程序集使用 VS SDK 一次[元包](http://www.nuget.org/packages/VSSDK_Reference_Assemblies)。 若要了解有关 NuGet 的详细信息，请参阅[NuGet 文档](/NuGet)并[包管理器 UI](/NuGet/Tools/Package-Manager-UI)主题。

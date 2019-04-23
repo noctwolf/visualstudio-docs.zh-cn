@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099581"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,27 +38,27 @@ ms.locfileid: "54774988"
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>添加 ASPNetHelper 程序集作为 configuration/runtime/assemblyBinding/dependentAssembly 元素  
   
-1.  如有必要，请添加 **runtime** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。  
+1. 如有必要，请添加 **runtime** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。  
   
      **runtime** 元素没有任何属性。 **configuration** 元素只能有一个 **runtime** 子元素。  
   
-2.  如有必要，请添加 **assemblyBinding** 元素作为 **runtime** 元素的子元素；否则，请转到下一步。  
+2. 如有必要，请添加 **assemblyBinding** 元素作为 **runtime** 元素的子元素；否则，请转到下一步。  
   
      **runtime** 元素只能有一个 **assemblyBinding** 元素。  
   
-3.  将下列属性名称和值添加到 **assemblyBinding** 元素：  
+3. 将下列属性名称和值添加到 **assemblyBinding** 元素：  
   
     |特性名|特性值|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  添加 **dependentAssembly** 元素作为 **assemblyBinding** 元素的子元素。  
+4. 添加 **dependentAssembly** 元素作为 **assemblyBinding** 元素的子元素。  
   
      **dependentAssembly** 元素没有任何属性。  
   
-5.  添加 **assemblyIdentity** 元素作为 **dependentAssembly** 元素的子元素。  
+5. 添加 **assemblyIdentity** 元素作为 **dependentAssembly** 元素的子元素。  
   
-6.  将下列属性名称和值添加到 **assemblyIdentity** 元素：  
+6. 将下列属性名称和值添加到 **assemblyIdentity** 元素：  
   
     |特性名|特性值|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ ms.locfileid: "54774988"
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  添加 **codeBase** 元素作为 **dependentAssembly** 元素的子元素。  
+7. 添加 **codeBase** 元素作为 **dependentAssembly** 元素的子元素。  
   
-8.  将下列属性名称和值添加到 **codeBase** 元素：  
+8. 将下列属性名称和值添加到 **codeBase** 元素：  
   
     |特性名|特性值|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ ms.locfileid: "54774988"
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>将探查器后续处理步骤添加到 configuration/system.web/compilation 元素  
   
-1.  如有必要，请添加 **system.web** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。  
+1. 如有必要，请添加 **system.web** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。  
   
      **system.web** 元素没有任何属性。 **configuration** 元素只能有一个 **system.web** 子元素。  
   
-2.  如有必要，请添加 **compilation** 元素作为 **system.web** 元素的子元素；否则，请转到下一步。  
+2. 如有必要，请添加 **compilation** 元素作为 **system.web** 元素的子元素；否则，请转到下一步。  
   
      **system.web** 元素只能有一个 **compilation** 子元素。  
   
-3.  从 **compilation** 元素中删除任何现有属性，并添加以下属性名称和值：  
+3. 从 **compilation** 元素中删除任何现有属性，并添加以下属性名称和值：  
   
     |特性名|特性值|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ ms.locfileid: "54774988"
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>将探查器位置设置添加到 configuration/appSettings 元素  
   
-1.  如有必要，请添加 **appSettings** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。  
+1. 如有必要，请添加 **appSettings** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。  
   
      **appSettings** 元素没有任何属性。 **configuration** 元素只能有一个 **appSettings** 子元素。  
   
-2.  添加 **add** 元素作为 **appSettings** 元素的子元素。  
+2. 添加 **add** 元素作为 **appSettings** 元素的子元素。  
   
-3.  将下列属性名称和值添加到 **add** 元素：  
+3. 将下列属性名称和值添加到 **add** 元素：  
   
     |特性名|特性值|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**值**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  再添加一个 **add** 元素作为 **appSettings** 元素的子元素。  
+4. 再添加一个 **add** 元素作为 **appSettings** 元素的子元素。  
   
-5.  将下列属性名称和值添加到此 **add** 元素：  
+5. 将下列属性名称和值添加到此 **add** 元素：  
   
     |特性名|特性值|  
     |--------------------|---------------------|  
