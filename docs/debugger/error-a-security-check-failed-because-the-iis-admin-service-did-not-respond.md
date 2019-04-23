@@ -1,5 +1,5 @@
 ---
-title: 错误： 安全检查失败，因为 IIS 管理服务未响应 |Microsoft Docs
+title: 错误：安全检查失败，因为 IIS 管理服务未响应 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,29 +16,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe294bd375f4896286b32d0d2c638fa8b467061b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080146"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>错误：安全检查失败，因为 IIS 管理服务没有响应
 当 IIS 管理服务没有响应时，会发生此错误。 这通常表示 IIS 的安装有问题。 首先，请使用“管理工具”中的“服务”工具验证该服务是否正在运行。
 
 ### <a name="to-correct-this-error"></a>更正此错误
 
--   使用“添加或删除程序”控制面板重新安装 IIS。
+- 使用“添加或删除程序”控制面板重新安装 IIS。
 
--   或
+- 或
 
--   使用控制面板中的 “添加/删除程序” 从计算机中删除 IIS。 如果已移除 IIS，但是仍存在问题，请检查注册表，并确保下面的项不再存在：
+- 使用控制面板中的 “添加/删除程序” 从计算机中删除 IIS。 如果已移除 IIS，但是仍存在问题，请检查注册表，并确保下面的项不再存在：
 
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`
 
      或
 
--   使用“管理工具”控制面板禁用 IIS 管理服务。 这将在您的计算机上禁用 IIS。
+- 使用“管理工具”控制面板禁用 IIS 管理服务。 这将在您的计算机上禁用 IIS。
 
      执行这三个步骤中的任一步骤后，重新启动计算机。
 

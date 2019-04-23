@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079819"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>向层关系图添加命令和笔势
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ ms.locfileid: "58937019"
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>将层扩展添加到单独的 VSIX  
   
-1.  在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含命令或笔势处理程序类。  
+1. 在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含命令或笔势处理程序类。  
   
     > [!NOTE]
     >  可以在一个类库中定义多个命令或笔势处理程序类，但应在单独的类库中定义层验证类。  
   
-2.  在解决方案中标识或创建 VSIX 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。 若要添加 VSIX 项目：  
+2. 在解决方案中标识或创建 VSIX 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。 若要添加 VSIX 项目：  
   
-    1.  在“新建项目”  对话框中，展开“Visual C#” ，单击“扩展性” ，然后单击“VSIX 项目” 。  
+    1. 在“新建项目”  对话框中，展开“Visual C#” ，单击“扩展性” ，然后单击“VSIX 项目” 。  
   
-    2.  在解决方案资源管理器中，右键单击此 VSIX 项目，然后单击“设为启动项目” 。  
+    2. 在解决方案资源管理器中，右键单击此 VSIX 项目，然后单击“设为启动项目” 。  
   
-    3.  单击“选择版本”  并确保选中“Visual Studio”  。  
+    3. 单击“选择版本”  并确保选中“Visual Studio”  。  
   
-3.  在 **source.extension.vsixmanifest**中的“资产” 下，以 MEF 组件的形式添加命令或笔势处理程序。  
+3. 在 **source.extension.vsixmanifest**中的“资产” 下，以 MEF 组件的形式添加命令或笔势处理程序。  
   
-    1.  在“资产” 选项卡中，选择“新建” 。  
+    1. 在“资产” 选项卡中，选择“新建” 。  
   
-    2.  在“类型” 处，选择“Microsoft.VisualStudio.MefComponent” 。  
+    2. 在“类型” 处，选择“Microsoft.VisualStudio.MefComponent” 。  
   
-    3.  在“源” 处，选择“当前解决方案中的项目”  ，然后选择命令或笔势处理程序项目的名称。  
+    3. 在“源” 处，选择“当前解决方案中的项目”  ，然后选择命令或笔势处理程序项目的名称。  
   
-    4.  保存该文件。  
+    4. 保存该文件。  
   
-4.  返回到命令或笔势处理程序项目，并添加以下项目引用。  
+4. 返回到命令或笔势处理程序项目，并添加以下项目引用。  
   
 |**引用**|**允许执行的操作**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ ms.locfileid: "58937019"
 |Microsoft.VisualStudio.Modeling.Sdk.[版本号]|定义建模扩展|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|更新形状和关系图|  
   
-1.  编辑 C# 类库项目中的类文件，以包含你的扩展的代码。 有关详细信息，请参阅以下章节之一：  
+1. 编辑 C# 类库项目中的类文件，以包含你的扩展的代码。 有关详细信息，请参阅以下章节之一：  
   
      [定义菜单命令](#command)  
   
@@ -104,13 +104,13 @@ ms.locfileid: "58937019"
   
      另请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-2.  若要测试此功能，请按 CTRL+F5 或 F5。 将打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在此实例中创建或打开层关系图。  
+2. 若要测试此功能，请按 CTRL+F5 或 F5。 将打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在此实例中创建或打开层关系图。  
   
-3.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **.vsix\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 双击 Windows 资源管理器（Windows 8 中的文件资源管理器）中的 VSIX 文件。  
+3. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **.vsix\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 双击 Windows 资源管理器（Windows 8 中的文件资源管理器）中的 VSIX 文件。  
   
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
-##  <a name="command"></a> 定义菜单命令  
+## <a name="command"></a> 定义菜单命令  
  可向现有笔势或命令项目添加更多菜单命令定义。 每个命令均由具有以下特性的类进行定义：  
   
 - 类的声明方式如下：  
@@ -125,11 +125,11 @@ ms.locfileid: "58937019"
   
 - 实现 `ICommandExtension` 的方法如下：  
   
-  -   `string Text {get;}` - 菜单中显示的标签。  
+  - `string Text {get;}` - 菜单中显示的标签。  
   
-  -   `void QueryStatus(IMenuCommand command)` - 用户右键单击关系图时调用它，用于确定对于用户的当前选择内容，命令是否可见和已启用。  
+  - `void QueryStatus(IMenuCommand command)` - 用户右键单击关系图时调用它，用于确定对于用户的当前选择内容，命令是否可见和已启用。  
   
-  -   `void Execute(IMenuCommand command)` - 用户选择此命令时调用它。  
+  - `void Execute(IMenuCommand command)` - 用户选择此命令时调用它。  
   
 - 若要确定当前选择内容，可导入 `IDiagramContext`：  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> 定义笔势处理程序  
+## <a name="gesture"></a> 定义笔势处理程序  
  当用户将项拖动到层关系图上时以及双击关系图中的任意位置时，笔势处理程序进行响应。  
   
  你可以向现有命令或笔势处理程序 VSIX 项目添加定义笔势处理程序的代码文件：  

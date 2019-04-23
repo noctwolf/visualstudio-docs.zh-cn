@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082825"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>如何：“启用 ClickOnce 安全设置”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58936861"
   
 ### <a name="to-enable-clickonce-security-settings"></a>若要启用 ClickOnce 安全设置  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击 **“安全”** 选项卡。  
+2. 单击 **“安全”** 选项卡。  
   
-3.  选中“启用 ClickOnce 安全设置”  复选框。  
+3. 选中“启用 ClickOnce 安全设置”  复选框。  
   
      现在，您可以为安全性页上的应用程序定制的安全设置。  
   
@@ -48,11 +48,11 @@ ms.locfileid: "58936861"
   
 ### <a name="to-disable-clickonce-security-settings"></a>若要禁用 ClickOnce 安全设置  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击 **“安全”** 选项卡。  
+2. 单击 **“安全”** 选项卡。  
   
-3.  清除**启用 ClickOnce 安全设置**复选框。  
+3. 清除**启用 ClickOnce 安全设置**复选框。  
   
      将使用完全信任安全设置; 运行你的应用程序上的任何设置**安全**页将被忽略。  
   

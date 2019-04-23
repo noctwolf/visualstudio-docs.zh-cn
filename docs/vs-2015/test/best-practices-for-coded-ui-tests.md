@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081250"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>编码的 UI 测试的最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54795787"
   
  **要求**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>最佳做法  
  使用以下准则来创建灵活的编码的 UI 测试。  
@@ -64,11 +64,11 @@ ms.locfileid: "54795787"
   
 - 如果控件有一个不再有效的断言，则执行下列操作：  
   
-  -   删除包含断言的方法。  
+  - 删除包含断言的方法。  
   
-  -   从测试方法中删除对此方法的调用。  
+  - 从测试方法中删除对此方法的调用。  
   
-  -   通过将十字线按钮拖动到 UI 控件上来添加新的断言，打开 UI 映射，并添加新的断言。  
+  - 通过将十字线按钮拖动到 UI 控件上来添加新的断言，打开 UI 映射，并添加新的断言。  
   
   若要详细了解如何录制编码的 UI 测试，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。  
   

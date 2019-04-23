@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1173b55a3e22d7a2fec9ecdb0440765beb970e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084747"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>如何：管理在托管代码中的多个线程
 如果你有托管的 VSPackage 扩展的调用异步方法或已在 Visual Studio UI 线程以外的线程执行的操作，应遵循下面给出的准则。 因为它不需要等待上另一个线程完成的工作，可以使 UI 线程保持响应状态。 您可以使代码更加有效，因为您不需要额外的线程占用的堆栈空间，并且您可以使其更可靠、 更易于调试，因为避免死锁和挂起。
@@ -25,7 +25,7 @@ ms.locfileid: "56693095"
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>从 UI 线程切换到后台线程
 
-1.  如果你是在 UI 线程上和你想要执行异步操作在后台线程，使用上的`Task.Run()`:
+1. 如果你是在 UI 线程上和你想要执行异步操作在后台线程，使用上的`Task.Run()`:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ ms.locfileid: "56693095"
 
     ```
 
-2.  如果您是在 UI 线程上，并且你想要以同步方式阻止后台线程，使用上执行工作时<xref:System.Threading.Tasks.TaskScheduler>属性`TaskScheduler.Default`内<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. 如果您是在 UI 线程上，并且你想要以同步方式阻止后台线程，使用上执行工作时<xref:System.Threading.Tasks.TaskScheduler>属性`TaskScheduler.Default`内<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -49,7 +49,7 @@ ms.locfileid: "56693095"
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>从后台线程切换到 UI 线程
 
-1.  如果你是在后台线程上和你想要在 UI 线程，使用上实现某些<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. 如果你是在后台线程上和你想要在 UI 线程，使用上实现某些<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
 
     ```csharp
     // Switch to main thread

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080732"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误：您没有检查进程的权限&#39;s 标识
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ ms.locfileid: "58934021"
   
 ### <a name="to-enable-terminal-services"></a>启用“终端服务”  
   
-1.  单击**开始**，然后选择**控制面板**。  
+1. 单击**开始**，然后选择**控制面板**。  
   
-2.  在控制面板中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。   
+2. 在控制面板中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。   
   
-3.  在“管理工具”窗口中双击“计算机管理”。  
+3. 在“管理工具”窗口中双击“计算机管理”。  
   
-4.  在“计算机管理”窗口中，展开“服务和应用程序”节点。  
+4. 在“计算机管理”窗口中，展开“服务和应用程序”节点。  
   
-5.  在**服务和应用程序**下，单击**服务**。  
+5. 在**服务和应用程序**下，单击**服务**。  
   
      右侧窗格中将出现一个服务列表。  
   
-6.  在“服务”列表中，右键单击“终端服务”，然后选择“属性”。  
+6. 在“服务”列表中，右键单击“终端服务”，然后选择“属性”。  
   
-7.  在**Terminal Services 的属性**窗口，请转到**常规**选项卡并设置**启动类型**为**手动**。   
+7. 在**Terminal Services 的属性**窗口，请转到**常规**选项卡并设置**启动类型**为**手动**。   
   
-8.  单击 **“确定”**。  
+8. 单击 **“确定”**。  
   
 9. 重新启动计算机。  
   
@@ -54,17 +54,17 @@ ms.locfileid: "58934021"
   
 ### <a name="to-enable-remote-desktop"></a>启用远程桌面  
   
-1.  单击**开始**，然后右键单击**我的电脑**。   
+1. 单击**开始**，然后右键单击**我的电脑**。   
   
-2.  选择**属性**。   
+2. 选择**属性**。   
   
      随即出现“系统属性”窗口。  
   
-3.  单击“远程”。  
+3. 单击“远程”。  
   
-4.  在“远程桌面”下，选择“允许用户远程连接到此计算机”。  
+4. 在“远程桌面”下，选择“允许用户远程连接到此计算机”。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)

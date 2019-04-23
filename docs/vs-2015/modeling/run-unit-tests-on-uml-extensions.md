@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 493193e24fcee2b3f3290546abc656faee7d88a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079845"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>对 UML 扩展运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,20 +50,20 @@ ms.locfileid: "58936109"
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
-##  <a name="Host"></a> 设置用于 VSIX 扩展的单元测试  
+## <a name="Host"></a> 设置用于 VSIX 扩展的单元测试  
  建模扩展中的方法通常会使用已打开的关系图。 这些方法使用 MEF 导入，例如， **IDiagramContext** 和 **ILinkedUndoContext**。 测试环境必须先设置此上下文，然后你才能运行测试。  
   
 #### <a name="to-set-up-a-unit-test-that-executes-in-includevsprvsincludesvsprvs-mdmd"></a>设置在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中执行的单元测试  
   
-1.  创建 UML 扩展项目和单元测试项目。  
+1. 创建 UML 扩展项目和单元测试项目。  
   
-    1.  **UML 扩展项目。** 通常通过使用命令、笔势或验证项目模板创建此项目。 有关示例，请参阅[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
+    1. **UML 扩展项目。** 通常通过使用命令、笔势或验证项目模板创建此项目。 有关示例，请参阅[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
-    2.  **单元测试项目。** 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。  
+    2. **单元测试项目。** 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。  
   
-2.  创建包含 UML 建模项目的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案。 将使用此解决方案作为测试的初始状态。 应当将它与写入 UML 扩展及其单元测试的解决方案分开。 有关详细信息，请参阅[创建 UML 建模项目和关系图](../modeling/create-uml-modeling-projects-and-diagrams.md)。  
+2. 创建包含 UML 建模项目的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案。 将使用此解决方案作为测试的初始状态。 应当将它与写入 UML 扩展及其单元测试的解决方案分开。 有关详细信息，请参阅[创建 UML 建模项目和关系图](../modeling/create-uml-modeling-projects-and-diagrams.md)。  
   
-3.  **在 UML 扩展项目中**，将 .csproj 文件编辑为文本并确保以下行显示 `true`：  
+3. **在 UML 扩展项目中**，将 .csproj 文件编辑为文本并确保以下行显示 `true`：  
   
     ```  
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>  
@@ -72,33 +72,33 @@ ms.locfileid: "58936109"
   
      若要将 .csproj 文件编辑为文本，请在“解决方案资源管理器”中，从该项目的快捷菜单上选择 **“卸载项目”** 。 然后选择 **“编辑 .csproj”**。 编辑文本后，请选择 **“重新加载项目”**。  
   
-4.  在 UML 扩展项目中，将以下行添加到 **Properties\AssemblyInfo.cs**。 这将允许单元测试访问你想要测试的方法：  
+4. 在 UML 扩展项目中，将以下行添加到 **Properties\AssemblyInfo.cs**。 这将允许单元测试访问你想要测试的方法：  
   
     ```csharp  
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.  
     ```  
   
-5.  **在单元测试项目中**，添加以下程序集引用：  
+5. **在单元测试项目中**，添加以下程序集引用：  
   
-    -   *UML 扩展项目*  
+    - *UML 扩展项目*  
   
-    -   **EnvDTE.dll**  
+    - **EnvDTE.dll**  
   
-    -   **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**  
   
-    -   **Microsoft.VisualStudio.ComponentModelHost.dll**  
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**  
   
-    -   **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**  
   
-    -   **Microsoft.VisualStudio.Uml.Interfaces.dll**  
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**  
   
-    -   **Microsoft.VSSDK.TestHostFramework.dll**  
+    - **Microsoft.VSSDK.TestHostFramework.dll**  
   
-6.  将特性 `[HostType("VS IDE")]` 添加为每个测试方法（包括初始化方法）的前缀。  
+6. 将特性 `[HostType("VS IDE")]` 添加为每个测试方法（包括初始化方法）的前缀。  
   
      这将确保测试将在 Visual Studio 的实验实例中运行。  
   
-##  <a name="DTE"></a> 访问 DTE 和 ModelStore  
+## <a name="DTE"></a> 访问 DTE 和 ModelStore  
  编写一个方法以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中打开建模项目。 通常，你只需在每个测试运行中打开一次解决方案。 若要仅运行此方法一次，请将 `[AssemblyInitialize]` 特性作为此方法的前缀。 不要忘记你还需要每个测试方法的 [HostType("VS IDE")] 特性。  例如：  
   
 ```csharp  
@@ -166,7 +166,7 @@ namespace UnitTests
   
  如果 <xref:EnvDTE.Project?displayProperty=fullName> 的实例表示建模项目，则可在该实例和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.IModelingProject> 之间来回转换。  
   
-##  <a name="Opening"></a> 打开模型图  
+## <a name="Opening"></a> 打开模型图  
  对于每个测试或测试的类，你通常需要使用打开的关系图。 以下示例使用 `[ClassInitialize]` 特性，该特性在此测试类中先执行此方法，然后再执行其他方法。 同样，不要忘记你还需要每个测试方法的 [HostType("VS IDE")] 特性：  
   
 ```csharp  
@@ -211,7 +211,7 @@ public class MyTestClass
   
 ```  
   
-##  <a name="UiThread"></a> 在 UI 线程中执行模型更改  
+## <a name="UiThread"></a> 在 UI 线程中执行模型更改  
  如果测试或所测试的方法更改了模型存储，则你必须在用户界面线程中执行它们。 如果你不执行此操作，则可能会出现 `AccessViolationException`。 将测试方法的代码包含在对 Invoke 的调用中：  
   
 ```  
@@ -231,7 +231,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
     }  
 ```  
   
-##  <a name="MEF"></a> 测试命令、 笔势和其他 MEF 组件  
+## <a name="MEF"></a> 测试命令、 笔势和其他 MEF 组件  
  MEF 组件使用的属性声明具有 `[Import]` 属性，并且其值由主机设置。 通常，此类属性包括 IDiagramContext、SVsServiceProvider 和 ILinkedUndoContext。 在测试使用上述任一属性的方法时，必须先设置这些属性的值，然后再执行所测试的方法。 例如，如果你编写了类似于此代码的命令扩展：  
   
 ```  

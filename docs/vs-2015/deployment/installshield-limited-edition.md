@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac447d3511365cf8e7f48344231d0ddb8d2a4374
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080626"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ ms.locfileid: "58937060"
   
 ### <a name="to-enable-installshield-limited-edition"></a>启用 InstallShield Limited Edition  
   
-1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-2.  在“新建项目”  对话框中，展开“其他项目类型”  节点，然后选择“安装和部署”  节点。  
+2. 在“新建项目”  对话框中，展开“其他项目类型”  节点，然后选择“安装和部署”  节点。  
   
-3.  在模板列表中，选择“启用 InstallShield Limited Edition” ，然后选择“确定”  按钮。  
+3. 在模板列表中，选择“启用 InstallShield Limited Edition” ，然后选择“确定”  按钮。  
   
-4.  在打开的浏览器窗口中阅读说明，然后选择“转到下载网站”  链接。
+4. 在打开的浏览器窗口中阅读说明，然后选择“转到下载网站”  链接。

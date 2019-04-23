@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084229"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 
@@ -24,7 +24,7 @@ ms.locfileid: "58415572"
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要启用由 MEF 扩展 DSL
 
-1.  创建一个名为的新文件夹**MefExtension**内**DslPackage**项目。 将以下文件添加到它：
+1. 创建一个名为的新文件夹**MefExtension**内**DslPackage**项目。 将以下文件添加到它：
 
      文件名： `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ ms.locfileid: "58415572"
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  创建一个名为的新文件夹**MefExtension**内**Dsl**项目。 将以下文件添加到它：
+2. 创建一个名为的新文件夹**MefExtension**内**Dsl**项目。 将以下文件添加到它：
 
      文件名： `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ ms.locfileid: "58415572"
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  将以下行添加到名为现有文件**DslPackage\Commands.vsct**:
+3. 将以下行添加到名为现有文件**DslPackage\Commands.vsct**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,17 +103,17 @@ ms.locfileid: "58415572"
 
     在现有之后插入行`<Include>`指令。
 
-4.  打开*DslDefinition.dsl*。
+4. 打开*DslDefinition.dsl*。
 
-5.  在 DSL 资源管理器中选择**编辑器 \ 验证**。
+5. 在 DSL 资源管理器中选择**编辑器 \ 验证**。
 
-6.  在属性窗口中，请确保至少一个属性名为**使用**是`true`。
+6. 在属性窗口中，请确保至少一个属性名为**使用**是`true`。
 
-7.  在中**解决方案资源管理器**工具栏上，单击**转换所有模板**。
+7. 在中**解决方案资源管理器**工具栏上，单击**转换所有模板**。
 
      下面的每个文件添加显示附属文件。
 
-8.  生成并运行解决方案，以验证仍然正常工作。
+8. 生成并运行解决方案，以验证仍然正常工作。
 
 你的 DSL 现已启用 MEF 的。 您可以编写作为 MEF 扩展的菜单命令、 笔势处理程序和验证约束。 您可以在 DSL 解决方案以及其他自定义代码中编写这些扩展。 此外，您或其他开发人员可以编写扩展 DSL 的单独 Visual Studio 扩展。
 
@@ -123,7 +123,7 @@ ms.locfileid: "58415572"
 
 ### <a name="to-create-a-dsl-extension-vsix"></a>若要创建 DSL 扩展 VSIX
 
-1. 创建一个新**类库**项目。
+1. 创建新的“类库”项目。
 
 2. 在新的项目中，将添加到 DSL 的程序集的引用。
 
@@ -135,15 +135,15 @@ ms.locfileid: "58415572"
 
 3. 添加以下.NET 程序集的引用：
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
 4. 创建一个新**VSIX 项目**项目。
 

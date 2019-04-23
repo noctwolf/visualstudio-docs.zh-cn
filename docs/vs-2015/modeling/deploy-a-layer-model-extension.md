@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080600"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ ms.locfileid: "58937526"
   
 #### <a name="to-uninstall-the-extension"></a>卸载扩展  
   
-1.  在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新**。  
+1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新**。  
   
-2.  单击扩展的名称，然后单击**卸载**。  
+2. 单击扩展的名称，然后单击**卸载**。  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>在 Team Foundation Build 服务器上安装扩展  
  通常情况下，[!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 服务器并未安装 Visual Studio，因此无法通过对其双击来安装 VSIX。 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的安装包括一些允许运行 VSIX 扩展的组件，但你必须手动安装该扩展。  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>在 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 服务器上安装层扩展  
   
-1.  复制 **.vsix**文件从开发计算机[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]计算机。  
+1. 复制 **.vsix**文件从开发计算机[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]计算机。  
   
      将 VSIX 文件置于下列位置之一：  
   
-    -   为所有用户和服务安装：  
+    - 为所有用户和服务安装：  
   
          %ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft  
   
-    -   仅为运行 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的网络服务安装：  
+    - 仅为运行 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的网络服务安装：  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   如果你已将 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 配置为在交互模式下以特定用户身份运行，则你可以仅为该用户安装：  
+    - 如果你已将 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 配置为在交互模式下以特定用户身份运行，则你可以仅为该用户安装：  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  %Localappdata%通常是*DriveName*： 用户*用户名*AppDataLocal。  
   
-2.  将各个 VSIX 文件展开至相同位置的文件夹中：  
+2. 将各个 VSIX 文件展开至相同位置的文件夹中：  
   
-    1.  更改文件扩展名，从 **.vsix**到 **.zip**。  
+    1. 更改文件扩展名，从 **.vsix**到 **.zip**。  
   
-    2.  将 .zip 文件中的内容提取到一个文件夹中。  
+    2. 将 .zip 文件中的内容提取到一个文件夹中。  
   
-    3.  删除 .zip 文件。  
+    3. 删除 .zip 文件。  
   
-3.  重新启动 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]。
+3. 重新启动 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]。

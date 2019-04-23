@@ -11,12 +11,12 @@ ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3199b5c1a812052735f62c48a882fcd409d93c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d35088da401f6f7545f9e69285d25e48cdbbef75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085320"
 ---
 # <a name="implementing-getmethodproperty"></a>实现 GetMethodProperty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58937288"
   
  此实现`IDebugExpressionEvaluator::GetMethodProperty`执行下列任务：  
   
-1.  调用[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，并传入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)对象。 符号提供程序 (SP) 将返回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)表示包含指定的地址的方法。  
+1. 调用[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，并传入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)对象。 符号提供程序 (SP) 将返回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)表示包含指定的地址的方法。  
   
-2.  获取[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)从`IDebugContainerField`。  
+2. 获取[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)从`IDebugContainerField`。  
   
-3.  实例化一个类 (称为`CFieldProperty`在此示例中)，它实现[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)接口并包含`IDebugMethodField`SP 从返回的对象  
+3. 实例化一个类 (称为`CFieldProperty`在此示例中)，它实现[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)接口并包含`IDebugMethodField`SP 从返回的对象  
   
-4.  返回`IDebugProperty2`接口从`CFieldProperty`对象。  
+4. 返回`IDebugProperty2`接口从`CFieldProperty`对象。  
   
 ## <a name="managed-code"></a>托管代码  
  此示例演示一种实现`IDebugExpressionEvaluator::GetMethodProperty`在托管代码中。  

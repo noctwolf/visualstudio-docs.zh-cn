@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083993"
 ---
 # <a name="error-kerberos-authentication-failed"></a>错误：Kerberos 身份验证失败
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>验证目标计算机上的 DNS 是否正确解析了调试器主机名称  
   
-1.  在目标计算机上打开**开始**菜单，依次指向**附件**，然后单击**命令提示符**。  
+1. 在目标计算机上打开**开始**菜单，依次指向**附件**，然后单击**命令提示符**。  
   
-2.  在**命令提示符**窗口中，键入：  
+2. 在**命令提示符**窗口中，键入：  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  `ping` 响应的第一行显示了 DNS 为指定计算机返回的完整计算机名称和 IP 地址。  
+3. `ping` 响应的第一行显示了 DNS 为指定计算机返回的完整计算机名称和 IP 地址。  
   
-4.  在调试器主机上，打开“命令提示符”窗口并运行 `ipconfig`。  
+4. 在调试器主机上，打开“命令提示符”窗口并运行 `ipconfig`。  
   
-5.  比较 IP 地址值。  
+5. 比较 IP 地址值。  
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)   

@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842289"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083954"
 ---
 # <a name="signing-in-to-visual-studio"></a>登录 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "56842289"
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我为什么应该登录到 Visual Studio？
  登录到 Visual Studio 可获得以下好处：
 
--   **授予访问 Visual Studio Dev Essentials 程序中大量优点的权限** ，包括免费软件、培训、支持等。 请参阅 [Visual Studio Dev Essential](https://aka.ms/vsdevhelp) 了解详细信息。
+- **授予访问 Visual Studio Dev Essentials 程序中大量优点的权限** ，包括免费软件、培训、支持等。 请参阅 [Visual Studio Dev Essential](https://aka.ms/vsdevhelp) 了解详细信息。
 
--   **同步你的 Visual Studio 设置** – 当你登录到任何设备上的 Visual Studio 时，将立即应用你自定义的设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
+- **同步你的 Visual Studio 设置** – 当你登录到任何设备上的 Visual Studio 时，将立即应用你自定义的设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
 
--   **永久解锁 Visual Studio Express Edition** – 你可以根据自己的需要长时间使用任何版本的 Visual Studio Express，而不会限定为 30 天试用期。
+- **永久解锁 Visual Studio Express Edition** – 你可以根据自己的需要长时间使用任何版本的 Visual Studio Express，而不会限定为 30 天试用期。
 
--   **解锁 Visual Studio Community Edition** 而不会限定为 30 天试用期。
+- **解锁 Visual Studio Community Edition** 而不会限定为 30 天试用期。
 
--   **延长 Visual Studio 试用期** – 可以将 Visual Studio Professional 或 Visual Studio Enterprise 的使用延长 90 天，而不会限定为 30 天试用期。
+- **延长 Visual Studio 试用期** – 可以将 Visual Studio Professional 或 Visual Studio Enterprise 的使用延长 90 天，而不会限定为 30 天试用期。
 
--   **解锁 Visual Studio（如果使用与 MSDN 或 VSO 订阅相关联的帐户）**。 请参阅 [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- **解锁 Visual Studio（如果使用与 MSDN 或 VSO 订阅相关联的帐户）**。 请参阅 [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
--   在 IDE 中**自动连接到服务（如 Azure 和 Visual Studio Team Services）** ，而不会再次提示对同一账户输入凭据。
+- 在 IDE 中**自动连接到服务（如 Azure 和 Visual Studio Team Services）** ，而不会再次提示对同一账户输入凭据。
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>如何登录到 Visual Studio
  首次启动 Visual Studio 时，系统将要求你登录并提供一些基本注册信息。 应选择最符合需求的 Microsoft 帐户或工作（学校）帐户。 如果你没有此类帐户，可以免费创建一个 Microsoft 帐户。 请参阅 [如何注册 Microsoft 帐户？](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
@@ -53,12 +53,12 @@ ms.locfileid: "56842289"
 ## <a name="to-change-your-profile-information"></a>更改你的配置文件信息
  在“文件”&#124;“帐户设置”中，可以查看并更新有关 Visual Studio 配置文件和许可证的信息。 若要编辑配置文件信息（如帐户名、虚拟形象图片或电子邮件地址），请执行以下操作：
 
-1.  转到“文件”&#124;“帐户设置”。
+1. 转到“文件”&#124;“帐户设置”。
 
-2.  在 **“文件”|“帐户设置”** 对话框中，选择 **“管理 Visual Studio 配置文件”** 链接。
+2. 在 **“文件”|“帐户设置”** 对话框中，选择 **“管理 Visual Studio 配置文件”** 链接。
 
-3.  在浏览器中的 **“我的 Microsoft 信息”** 页上，选择 **“编辑信息”** 按钮。
+3. 在浏览器中的 **“我的 Microsoft 信息”** 页上，选择 **“编辑信息”** 按钮。
 
-4.  更改所需的设置。
+4. 更改所需的设置。
 
-5.  完成后，选择 **“保存更改”** 按钮。
+5. 完成后，选择 **“保存更改”** 按钮。

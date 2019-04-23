@@ -8,27 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc9c53055c31e8cfbedb089b48eda4274fe8b9a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081874"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
 Visual Studio 对话框大部分[实用程序对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)，这是 unthemed 对话框该遵循标准[Windows Desktop 对话框布局原则](/windows/desktop/uxguide/win-dialog-box)。 在 Visual Studio 移动以刷新其 UI 时，一些更加醒目的对话框具有建立它们为产品定义体验的新设计。 这些[主题对话框布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout)具有主题化的外观。
 
-##  <a name="BKMK_UtilityDialogLayout"></a> 实用工具对话框布局
+## <a name="BKMK_UtilityDialogLayout"></a> 实用工具对话框布局
 
--   实用程序对话框中的所有控件应开始顶部/左侧，向下流动。
+- 实用程序对话框中的所有控件应开始顶部/左侧，向下流动。
 
--   永远不会在一个对话框，以填充较大的区域上居中对齐控件。
+- 永远不会在一个对话框，以填充较大的区域上居中对齐控件。
 
--   使用环境字体的对话框中的所有文本。 在编写时 visual 规范，指定环境字体而不是选择特定的字体和大小。 请参阅[环境字体](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
+- 使用环境字体的对话框中的所有文本。 在编写时 visual 规范，指定环境字体而不是选择特定的字体和大小。 请参阅[环境字体](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont)。
 
--   使用一致的控制间距和放置以支持目标中耕耘所得到的质量。
+- 使用一致的控制间距和放置以支持目标中耕耘所得到的质量。
 
--   对话框会变为可从更多控件、 控件、 唯一 juxtaposition 或这两者的更复杂。 有关这些复杂的情况下，允许控件分组为用户提供的逻辑流分析之间有足够的空间。
+- 对话框会变为可从更多控件、 控件、 唯一 juxtaposition 或这两者的更复杂。 有关这些复杂的情况下，允许控件分组为用户提供的逻辑流分析之间有足够的空间。
 
 ### <a name="utility-dialog-layout-examples"></a>实用工具对话框布局示例
  以像素为单位表示的所有维度。
@@ -45,11 +45,11 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
 
 #### <a name="margins"></a>边距
 
--   所有对话都应都具有所有边缘周围 12 像素的边框。
+- 所有对话都应都具有所有边缘周围 12 像素的边框。
 
--   组范围内的边距应为从框架边缘的 9 个像素。
+- 组范围内的边距应为从框架边缘的 9 个像素。
 
--   在选项卡控件内的边距应为 6 个像素从选项卡控件的边缘。
+- 在选项卡控件内的边距应为 6 个像素从选项卡控件的边缘。
 
 #### <a name="command-buttons"></a>命令按钮
 
@@ -69,13 +69,13 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
 
 #### <a name="labels"></a>标签
 
--   左对齐所有标签。
+- 左对齐所有标签。
 
--   对于上一个控件的标签，它们应该左对齐精确地使用其下方的控件以及标签的底部应为 5 像素，上面的其他控件 （例如，组合框） 的顶部。
+- 对于上一个控件的标签，它们应该左对齐精确地使用其下方的控件以及标签的底部应为 5 像素，上面的其他控件 （例如，组合框） 的顶部。
 
--   对于位于左侧的控件的标签，标签和输入的控件之间的最小宽度为 10 像素。 应为对齐的文本框、 组合框或其他控件建立的隐含的第二个列。
+- 对于位于左侧的控件的标签，标签和输入的控件之间的最小宽度为 10 像素。 应为对齐的文本框、 组合框或其他控件建立的隐含的第二个列。
 
--   标签是句首大写后, 跟一个冒号。 请参阅[文本样式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。
+- 标签是句首大写后, 跟一个冒号。 请参阅[文本样式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。
 
 #### <a name="distance-between-controls"></a>控件之间的距离
  合理的堆栈控件。 堆积控件之间的间距没有绝对准则。 在控件之间拟合度可能对话框之间略有不同。 建议的间距是垂直的控制/标签对 20 像素和 9 像素水平控件/标签对。 水平对的最小控件间距是 6 个像素。
@@ -96,11 +96,11 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
 
 #### <a name="helper-text"></a>帮助程序文本
 
--   一个对话框，可以显示提供了有关用途的对话框的详细信息的帮助程序文本。 这通常位于顶部，并可以是 1-2 的句子。
+- 一个对话框，可以显示提供了有关用途的对话框的详细信息的帮助程序文本。 这通常位于顶部，并可以是 1-2 的句子。
 
--   行长度应为用户分析和读取的适应宽度。 中等对话框应不超过 550 像素宽。
+- 行长度应为用户分析和读取的适应宽度。 中等对话框应不超过 550 像素宽。
 
-####  <a name="BKMK_InteriorCommandButtons"></a> 内部命令按钮
+#### <a name="BKMK_InteriorCommandButtons"></a> 内部命令按钮
  更复杂的对话框中内部控件可能具有其自身相关的按钮，这可能会影响在对话框的提交按钮的位置。
 
 - 使用内部为垂直对齐方式 （列） 按钮**确定**/**取消**水平方向，在右下角中。
@@ -120,22 +120,22 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
 #### <a name="browse-button"></a>[浏览...]按钮
  **[浏览...]** 遵循文本框中的按钮应拼写成"浏览..."完整版包括省略号。 如果空间紧密或有多个 **[浏览...]** 屏幕按钮上的按钮可以减少到只需省略号。
 
-##  <a name="BKMK_ThemedDialogLayout"></a> 主题对话框布局
+## <a name="BKMK_ThemedDialogLayout"></a> 主题对话框布局
  在 Visual Studio 中的主题对话框具有较浅的外观和提供更多的空白空间。 版式提供更多强调和感兴趣，提供更多开放行距和字体大小和权重的一种变体。 在可能的情况下，chrome 和标题栏已减少或删除。 这些对话框的布局应遵循此基本模式：
 
-1.  对话框的背景为白色。
+1. 对话框的背景为白色。
 
-2.  中的中间值灰色没有 1 像素规则边框。
+2. 中的中间值灰色没有 1 像素规则边框。
 
-3.  对话框标题不再位于标题栏，但提供了视觉吸引力和放在更大的点大小。 (请参阅中的字体大小部分[文本样式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。)
+3. 对话框标题不再位于标题栏，但提供了视觉吸引力和放在更大的点大小。 (请参阅中的字体大小部分[文本样式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle)。)
 
-4.  应结合其他文本，说明，例如标签**环境字体 + 粗体**。
+4. 应结合其他文本，说明，例如标签**环境字体 + 粗体**。
 
-5.  以浅灰色的 1 像素规则分隔内部的列。
+5. 以浅灰色的 1 像素规则分隔内部的列。
 
-6.  默认链接提供了不带下划线。 悬停和按下的状态已更改颜色以及下划线。
+6. 默认链接提供了不带下划线。 悬停和按下的状态已更改颜色以及下划线。
 
-7.  提交按钮 (如**确定**/**取消**) 位于右下角。
+7. 提交按钮 (如**确定**/**取消**) 位于右下角。
 
 ### <a name="themed-dialog-layout-examples"></a>主题对话框布局示例
  ![主题对话框布局](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51f4aeef55d20a728567b50e67c2232a0a77b1e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084305"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：将属性添加到 SharePoint 项目
   项目扩展可用于将属性添加到任何 SharePoint 项目。 属性将出现在**属性**窗口中选择项目时**解决方案资源管理器**。
@@ -28,11 +28,11 @@ ms.locfileid: "56646052"
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>若要将属性添加到 SharePoint 项目
 
-1.  定义具有表示要添加到 SharePoint 项目的属性的公共属性的类。 如果你想要添加多个属性，可以定义所有属性，在同一个类或不同的类中。
+1. 定义具有表示要添加到 SharePoint 项目的属性的公共属性的类。 如果你想要添加多个属性，可以定义所有属性，在同一个类或不同的类中。
 
-2.  在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法将<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>实现、 句柄<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>的事件*projectService*参数。
+2. 在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法将<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>实现、 句柄<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>的事件*projectService*参数。
 
-3.  中的事件处理程序<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，将添加到你属性类的实例<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>事件自变量参数的集合。
+3. 中的事件处理程序<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，将添加到你属性类的实例<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>事件自变量参数的集合。
 
 ## <a name="example"></a>示例
  下面的代码示例演示如何将两个属性添加到 SharePoint 项目。 一个属性保留其项目用户选项文件中的数据 ( *。 csproj.user*文件或 *。 vbproj.user*文件)。 其他属性保留其在项目文件中的数据 (*.csproj*文件或 *.vbproj*文件)。
@@ -54,28 +54,28 @@ ms.locfileid: "56646052"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自定义属性的行为
  可以定义自定义属性的显示方式和行为**属性**通过应用中的属性窗口<xref:System.ComponentModel>到属性定义的命名空间。 以下属性可在许多情况下：
 
--   <xref:System.ComponentModel.DisplayNameAttribute>：指定将出现在属性的名称**属性**窗口。
+- <xref:System.ComponentModel.DisplayNameAttribute>：指定将出现在属性的名称**属性**窗口。
 
--   <xref:System.ComponentModel.DescriptionAttribute>：指定显示的说明字符串中的底部**属性**窗口时选择了该属性。
+- <xref:System.ComponentModel.DescriptionAttribute>：指定显示的说明字符串中的底部**属性**窗口时选择了该属性。
 
--   <xref:System.ComponentModel.DefaultValueAttribute>：指定属性的默认值。
+- <xref:System.ComponentModel.DefaultValueAttribute>：指定属性的默认值。
 
--   <xref:System.ComponentModel.TypeConverterAttribute>：指定在显示的字符串之间的自定义转换**属性**窗口和一个非字符串属性值。
+- <xref:System.ComponentModel.TypeConverterAttribute>：指定在显示的字符串之间的自定义转换**属性**窗口和一个非字符串属性值。
 
--   <xref:System.ComponentModel.EditorAttribute>：指定要用于修改属性的自定义编辑器。
+- <xref:System.ComponentModel.EditorAttribute>：指定要用于修改属性的自定义编辑器。
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：
 
--   Microsoft.VisualStudio.SharePoint
--
--   Microsoft.VisualStudio.Shell
--
--   Microsoft.VisualStudio.Shell.Interop
--
--   Microsoft.VisualStudio.Shell.Interop.8.0
--
--   System.ComponentModel.Composition
+- Microsoft.VisualStudio.SharePoint
+
+- Microsoft.VisualStudio.Shell
+
+- Microsoft.VisualStudio.Shell.Interop
+
+- Microsoft.VisualStudio.Shell.Interop.8.0
+
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>将扩展部署
  若要将扩展部署，创建[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要将与该扩展一起分发的任何其他文件。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。

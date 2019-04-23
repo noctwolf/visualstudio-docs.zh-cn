@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080940"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：为 ClickOnce 应用程序添加到客户端计算机的受信任的发行者
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ ms.locfileid: "58935520"
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>将证书添加到受信任的根下的“受信任的发布者”存储  
   
-1.  从 CA 获取数字证书。  
+1. 从 CA 获取数字证书。  
   
-2.  将该证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅 [导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。  
+2. 将该证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅 [导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。  
   
-3.  从客户端计算机上的命令提示符处，运行以下命令：  
+3. 从客户端计算机上的命令提示符处，运行以下命令：  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>将证书添加到其他根下的“受信任的发布者”存储  
   
-1.  从 CA 获取数字证书。  
+1. 从 CA 获取数字证书。  
   
-2.  将该证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅 [导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。  
+2. 将该证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅 [导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。  
   
-3.  从客户端计算机上的命令提示符处，运行以下命令：  
+3. 从客户端计算机上的命令提示符处，运行以下命令：  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

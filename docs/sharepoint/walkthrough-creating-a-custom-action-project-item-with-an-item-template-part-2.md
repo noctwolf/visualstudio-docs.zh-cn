@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a04171e79843de8948818e75279136478f20929c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081133"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板，第 2 部分中创建自定义操作项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板向项目添加项目项的新实例。 可以使用你收集的信息来初始化项目项。
@@ -25,13 +25,13 @@ ms.locfileid: "56630881"
 
  本演练演示了下列任务：
 
--   创建用于与项模板关联的自定义 SharePoint 项目项类型的向导。
+- 创建用于与项模板关联的自定义 SharePoint 项目项类型的向导。
 
--   定义自定义向导类似于内置在 Visual Studio 中的 SharePoint 项目项中的向导的 UI。
+- 定义自定义向导类似于内置在 Visual Studio 中的 SharePoint 项目项中的向导的 UI。
 
--   使用可替换参数初始化 SharePoint 项目文件使用此向导中收集的数据。
+- 使用可替换参数初始化 SharePoint 项目文件使用此向导中收集的数据。
 
--   调试和测试该向导。
+- 调试和测试该向导。
 
 > [!NOTE]
 >  您可以下载的示例[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，演示如何创建自定义工作流活动。
@@ -56,48 +56,48 @@ ms.locfileid: "56630881"
 
 #### <a name="to-create-the-wizard-project"></a>若要创建向导项目
 
-1.  在 Visual Studio 中，打开 CustomActionProjectItem 解决方案
+1. 在 Visual Studio 中，打开 CustomActionProjectItem 解决方案
 
-2.  在中**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。
+2. 在中**解决方案资源管理器**，打开解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。
 
-3.  在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**Windows**节点。
+3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**Windows**节点。
 
-4.  在顶部**新的项目**对话框框中，请确保 **.NET Framework 4.5** .NET Framework 版本的列表中选择。
+4. 在顶部**新的项目**对话框框中，请确保 **.NET Framework 4.5** .NET Framework 版本的列表中选择。
 
-5.  选择**WPF 用户控件库**项目模板，请将项目命名**ItemTemplateWizard**，然后选择**确定**按钮。
+5. 选择**WPF 用户控件库**项目模板，请将项目命名**ItemTemplateWizard**，然后选择**确定**按钮。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**ItemTemplateWizard**到解决方案。
 
-6.  从项目中删除 UserControl1 项。
+6. 从项目中删除 UserControl1 项。
 
 ## <a name="configure-the-wizard-project"></a>配置向导项目
  在创建该向导之前，必须添加 Windows Presentation Foundation (WPF) 窗口、 代码文件中，并对项目的程序集引用。
 
 #### <a name="to-configure-the-wizard-project"></a>若要配置向导项目
 
-1.  在中**解决方案资源管理器**，打开快捷菜单，从**ItemTemplateWizard**项目节点，然后选择**属性**。
+1. 在中**解决方案资源管理器**，打开快捷菜单，从**ItemTemplateWizard**项目节点，然后选择**属性**。
 
-2.  在中**项目设计器**，请确保目标框架设置为.NET Framework 4.5。
+2. 在中**项目设计器**，请确保目标框架设置为.NET Framework 4.5。
 
      对于 Visual C# 项目，可以将此值设置上**应用程序**选项卡。对于 Visual Basic 项目，可以将此值设置上**编译**选项卡。有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
 
-3.  在中**ItemTemplateWizard**项目中，添加**Window (WPF)** 项到项目中，并将其命名为项**WizardWindow**。
+3. 在中**ItemTemplateWizard**项目中，添加**Window (WPF)** 项到项目中，并将其命名为项**WizardWindow**。
 
-4.  添加两个分别名为 CustomActionWizard 和字符串的代码文件。
+4. 添加两个分别名为 CustomActionWizard 和字符串的代码文件。
 
-5.  打开快捷菜单**ItemTemplateWizard**项目，，然后选择**添加引用**。
+5. 打开快捷菜单**ItemTemplateWizard**项目，，然后选择**添加引用**。
 
-6.  在中**引用管理器-ItemTemplateWizard**对话框中的**程序集**节点，选择**扩展**节点。
+6. 在中**引用管理器-ItemTemplateWizard**对话框中的**程序集**节点，选择**扩展**节点。
 
-7.  选择以下程序集旁的复选框，然后选择**确定**按钮：
+7. 选择以下程序集旁的复选框，然后选择**确定**按钮：
 
-    -   EnvDTE
+    - EnvDTE
 
-    -   Microsoft.VisualStudio.Shell.11.0
+    - Microsoft.VisualStudio.Shell.11.0
 
-    -   Microsoft.VisualStudio.TemplateWizardInterface
+    - Microsoft.VisualStudio.TemplateWizardInterface
 
-8.  在中**解决方案资源管理器**，在**引用**ItemTemplateWizard 项目文件夹选择**EnvDTE**引用。
+8. 在中**解决方案资源管理器**，在**引用**ItemTemplateWizard 项目文件夹选择**EnvDTE**引用。
 
 9. 在中**属性**窗口中，更改的值**嵌入互操作类型**属性设置为**False**。
 
@@ -108,9 +108,9 @@ ms.locfileid: "56630881"
 
 #### <a name="to-define-the-default-location-and-id-strings"></a>若要定义的默认位置和 ID 字符串
 
-1.  打开。
+1. 打开。
 
-2.  在中**ItemTemplateWizard**项目中，字符串的代码文件中的代码替换为以下代码。
+2. 在中**ItemTemplateWizard**项目中，字符串的代码文件中的代码替换为以下代码。
 
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
@@ -120,9 +120,9 @@ ms.locfileid: "56630881"
 
 #### <a name="to-create-the-wizard-ui"></a>若要创建向导用户界面
 
-1.  在中**ItemTemplateWizard**项目中，打开快捷菜单**WizardWindow.xaml**文件，，然后选择**打开**以在设计器中打开窗口。
+1. 在中**ItemTemplateWizard**项目中，打开快捷菜单**WizardWindow.xaml**文件，，然后选择**打开**以在设计器中打开窗口。
 
-2.  在 XAML 视图中，使用以下 XAML 替换当前的 XAML。 XAML 定义包含一个标题，用于指定自定义操作和在窗口底部的导航按钮的行为控件的 UI。
+2. 在 XAML 视图中，使用以下 XAML 替换当前的 XAML。 XAML 定义包含一个标题，用于指定自定义操作和在窗口底部的导航按钮的行为控件的 UI。
 
     > [!NOTE]
     >  添加此代码后，项目将具有某些编译错误。 在后续步骤中添加代码时，这些错误将消失。
@@ -132,13 +132,13 @@ ms.locfileid: "56630881"
     > [!NOTE]
     >  在此 XAML 中创建的窗口派生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基类。 当向 Visual Studio 添加自定义的 WPF 对话框中时，我们建议从为具有其他对话框在 Visual Studio 中使用一致样式并避免问题可能会出现与模式对话框的此类派生您的对话框。 有关详细信息，请参阅[创建和管理模式对话框](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
 
-3.  如果要开发 Visual Basic 项目，删除`ItemTemplateWizard`从命名空间`WizardWindow`中的类名`x:Class`属性的`Window`元素。 此元素是在 XAML 中的第一行中。 完成后，第一行应类似于以下代码：
+3. 如果要开发 Visual Basic 项目，删除`ItemTemplateWizard`从命名空间`WizardWindow`中的类名`x:Class`属性的`Window`元素。 此元素是在 XAML 中的第一行中。 完成后，第一行应类似于以下代码：
 
     ```xml
     <Window x:Class="WizardWindow"
     ```
 
-4.  在代码隐藏文件 WizardWindow.xaml 文件中，将当前的代码替换下面的代码。
+4. 在代码隐藏文件 WizardWindow.xaml 文件中，将当前的代码替换下面的代码。
 
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
@@ -148,7 +148,7 @@ ms.locfileid: "56630881"
 
 #### <a name="to-implement-the-wizard"></a>若要实现该向导
 
-1.  在中**ItemTemplateWizard**项目中，打开**CustomActionWizard**代码文件，并且此文件中的当前代码将替换为以下代码：
+1. 在中**ItemTemplateWizard**项目中，打开**CustomActionWizard**代码文件，并且此文件中的当前代码将替换为以下代码：
 
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
@@ -158,32 +158,32 @@ ms.locfileid: "56630881"
 
 #### <a name="to-build-your-project"></a>若要生成你的项目
 
-1.  在菜单栏上，依次选择“生成” > “生成解决方案”。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案”。
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>带有项模板关联向导
  现在，已实现了向导，您必须将其与**自定义操作**项模板通过完成三个主要步骤：
 
-1.  向导程序集具有强名称签名。
+1. 向导程序集具有强名称签名。
 
-2.  获取向导程序集的公钥令牌。
+2. 获取向导程序集的公钥令牌。
 
-3.  在.vstemplate 文件中添加对向导程序集的引用**自定义操作**项模板。
+3. 在.vstemplate 文件中添加对向导程序集的引用**自定义操作**项模板。
 
 #### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>为向导程序集具有强名称签名
 
-1.  在中**解决方案资源管理器**，打开快捷菜单，从**ItemTemplateWizard**项目节点，然后选择**属性**。
+1. 在中**解决方案资源管理器**，打开快捷菜单，从**ItemTemplateWizard**项目节点，然后选择**属性**。
 
-2.  上**签名**选项卡上，选择**程序集签名**复选框。
+2. 上**签名**选项卡上，选择**程序集签名**复选框。
 
-3.  在中**选择强名称密钥文件**列表中，选择**\<新建...>**。
+3. 在中**选择强名称密钥文件**列表中，选择**\<新建...>**。
 
-4.  在中**创建强名称密钥**对话框框中，输入一个名称，清除**保护密钥文件使用密码**复选框，，然后选择**确定**按钮。
+4. 在中**创建强名称密钥**对话框框中，输入一个名称，清除**保护密钥文件使用密码**复选框，，然后选择**确定**按钮。
 
-5.  在菜单栏上，依次选择“生成” > “生成解决方案”。
+5. 在菜单栏上，依次选择“生成” > “生成解决方案”。
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>若要获取的公钥令牌向导程序集
 
-1.  在 Visual Studio 命令提示符窗口中，运行以下命令，用*PathToWizardAssembly*生成 ItemTemplateWizard.dll ItemTemplateWizard 上的项目开发的程序集的完整路径计算机。
+1. 在 Visual Studio 命令提示符窗口中，运行以下命令，用*PathToWizardAssembly*生成 ItemTemplateWizard.dll ItemTemplateWizard 上的项目开发的程序集的完整路径计算机。
 
     ```xml
     sn.exe -T PathToWizardAssembly
@@ -191,13 +191,13 @@ ms.locfileid: "56630881"
 
      公钥标记*ItemTemplateWizard.dll*程序集写入到 Visual Studio 命令提示符窗口。
 
-2.  Visual Studio 命令提示符窗口保持打开。 你将需要完成下一个过程中的公钥标记。
+2. Visual Studio 命令提示符窗口保持打开。 你将需要完成下一个过程中的公钥标记。
 
 #### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>若要添加的.vstemplate 文件中的向导程序集的引用
 
-1.  在中**解决方案资源管理器**，展开**ItemTemplate**项目节点，并打开*ItemTemplate.vstemplate*文件。
+1. 在中**解决方案资源管理器**，展开**ItemTemplate**项目节点，并打开*ItemTemplate.vstemplate*文件。
 
-2.  在文件末尾附近添加以下`WizardExtension`之间的元素`</TemplateContent>`和`</VSTemplate>`标记。 替换*YourToken*的值`PublicKeyToken`与上一步骤中获取的公钥标记的属性。
+2. 在文件末尾附近添加以下`WizardExtension`之间的元素`</TemplateContent>`和`</VSTemplate>`标记。 替换*YourToken*的值`PublicKeyToken`与上一步骤中获取的公钥标记的属性。
 
     ```xml
     <WizardExtension>
@@ -208,7 +208,7 @@ ms.locfileid: "56630881"
 
      有关详细信息`WizardExtension`元素，请参阅[WizardExtension 元素&#40;Visual Studio 模板&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates)。
 
-3.  保存并关闭文件。
+3. 保存并关闭文件。
 
 ## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>添加到可替换参数*Elements.xml*项模板中的文件
  添加到多个可替换参数*Elements.xml* ItemTemplate 项目文件中的。 在初始化这些参数`PopulateReplacementDictionary`中的方法`CustomActionWizard`前面定义的类。 当用户将自定义操作项目项添加到项目时，Visual Studio 将自动替换中的这些参数*Elements.xml*中用它们在向导中指定的值的新项目项文件。
@@ -217,7 +217,7 @@ ms.locfileid: "56630881"
 
 #### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>若要添加到可替换参数*Elements.xml*文件
 
-1.  在项模板项目中，替换的内容*Elements.xml*使用以下 XML 文件。
+1. 在项模板项目中，替换的内容*Elements.xml*使用以下 XML 文件。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -235,61 +235,61 @@ ms.locfileid: "56630881"
 
      新的 XML 更改的值`Id`， `GroupId`， `Location`， `Description`，和`Url`属性到可替换参数。
 
-2.  保存并关闭文件。
+2. 保存并关闭文件。
 
 ## <a name="add-the-wizard-to-the-vsix-package"></a>将向导添加到 VSIX 包
  在 source.extension.vsixmanifest 文件在 VSIX 项目中，添加对向导项目的引用，以便它与包含项目项的 VSIX 包一起部署。
 
 #### <a name="to-add-the-wizard-to-the-vsix-package"></a>若要将向导添加到 VSIX 包
 
-1.  在**解决方案资源管理器**，打开快捷菜单，从**source.extension.vsixmanifest** CustomActionProjectItem 项目中的文件，然后选择**打开**打开清单编辑器中的文件。
+1. 在**解决方案资源管理器**，打开快捷菜单，从**source.extension.vsixmanifest** CustomActionProjectItem 项目中的文件，然后选择**打开**打开清单编辑器中的文件。
 
-2.  在清单编辑器中，选择**资产**选项卡，然后选择**新建**按钮。
+2. 在清单编辑器中，选择**资产**选项卡，然后选择**新建**按钮。
 
      **添加新资产**对话框随即出现。
 
-3.  在中**类型**列表中，选择**Microsoft.VisualStudio.Assembly**。
+3. 在中**类型**列表中，选择**Microsoft.VisualStudio.Assembly**。
 
-4.  在中**源**列表中，选择**当前解决方案中的项目**。
+4. 在中**源**列表中，选择**当前解决方案中的项目**。
 
-5.  在中**项目**列表中，选择**ItemTemplateWizard**，然后选择**确定**按钮。
+5. 在中**项目**列表中，选择**ItemTemplateWizard**，然后选择**确定**按钮。
 
-6.  在菜单栏上依次选择**构建** > **生成解决方案**，然后确保该解决方案在编译时没有错误。
+6. 在菜单栏上依次选择**构建** > **生成解决方案**，然后确保该解决方案在编译时没有错误。
 
 ## <a name="test-the-wizard"></a>测试向导
  现在您可以对向导进行测试。 首先，请启动要调试 Visual Studio 的实验实例中 CustomActionProjectItem 解决方案。 然后在 Visual Studio 的实验实例中的 SharePoint 项目中测试自定义操作项目项的向导。 最后，生成并运行 SharePoint 项目以验证自定义操作按预期方式正常工作。
 
 #### <a name="to-start-to-debug-the-solution"></a>若要开始调试解决方案
 
-1.  使用管理凭据，重新启动 Visual Studio，然后打开 CustomActionProjectItem 解决方案。
+1. 使用管理凭据，重新启动 Visual Studio，然后打开 CustomActionProjectItem 解决方案。
 
-2.  在 ItemTemplateWizard 项目中，打开 CustomActionWizard 代码文件，并将断点添加到代码中的第一行`RunStarted`方法。
+2. 在 ItemTemplateWizard 项目中，打开 CustomActionWizard 代码文件，并将断点添加到代码中的第一行`RunStarted`方法。
 
-3.  在菜单栏上依次选择**调试** > **异常**。
+3. 在菜单栏上依次选择**调试** > **异常**。
 
-4.  在中**异常**对话框框中，请确保**引发**并**用户未处理**对应的复选框**公共语言运行时异常**已清除，然后选择**确定**按钮。
+4. 在中**异常**对话框框中，请确保**引发**并**用户未处理**对应的复选框**公共语言运行时异常**已清除，然后选择**确定**按钮。
 
-5.  开始调试通过选择**F5** ，或者，在菜单栏中选择**调试** > **开始调试**。
+5. 开始调试通过选择**F5** ，或者，在菜单栏中选择**调试** > **开始调试**。
 
      Visual Studio 会将扩展安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 操作项目 Item\1.0 并启动 Visual Studio 的实验实例。 在 Visual Studio 的此实例中，将测试项目项。
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>若要在 Visual Studio 中测试向导
 
-1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件** > **新建** > **项目**。
+1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件** > **新建** > **项目**。
 
-2.  展开**Visual C#** 或**Visual Basic**节点 （具体取决于您的项模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。
+2. 展开**Visual C#** 或**Visual Basic**节点 （具体取决于您的项模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。
 
-3.  在项目模板列表中，选择**SharePoint 2010 项目**，将项目命名**CustomActionWizardTest**，然后选择**确定**按钮。
+3. 在项目模板列表中，选择**SharePoint 2010 项目**，将项目命名**CustomActionWizardTest**，然后选择**确定**按钮。
 
-4.  在中**SharePoint 自定义向导**，输入你想要用于调试，站点的 URL，然后选择**完成**按钮。
+4. 在中**SharePoint 自定义向导**，输入你想要用于调试，站点的 URL，然后选择**完成**按钮。
 
-5.  在中**解决方案资源管理器**，打开项目节点的快捷菜单，选择**添加**，然后选择**新项**。
+5. 在中**解决方案资源管理器**，打开项目节点的快捷菜单，选择**添加**，然后选择**新项**。
 
-6.  在中**添加新项-CustomItemWizardTest**对话框框中，展开**SharePoint**节点，然后展开**2010年**节点。
+6. 在中**添加新项-CustomItemWizardTest**对话框框中，展开**SharePoint**节点，然后展开**2010年**节点。
 
-7.  在项目项的列表中，选择**自定义操作**项，，然后选择**添加**按钮。
+7. 在项目项的列表中，选择**自定义操作**项，，然后选择**添加**按钮。
 
-8.  验证中设置的断点处停止 Visual Studio 的其他实例中的代码`RunStarted`方法。
+8. 验证中设置的断点处停止 Visual Studio 的其他实例中的代码`RunStarted`方法。
 
 9. 继续调试该项目通过选择**F5**关键的或在菜单栏中选择**调试** > **继续**。
 
@@ -309,37 +309,37 @@ ms.locfileid: "56630881"
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>若要在 SharePoint 中测试自定义操作
 
-1.  在 Visual Studio 的实验实例中，选择**F5**键，或在菜单栏上选择**调试** > **开始调试**。
+1. 在 Visual Studio 的实验实例中，选择**F5**键，或在菜单栏上选择**调试** > **开始调试**。
 
      打包和部署到 SharePoint 站点指定的自定义操作**站点 URL**属性的项目，并在 web 浏览器将打开到此站点的默认页。
 
     > [!NOTE]
     >  如果**脚本调试被禁用**出现对话框，请选择**是**按钮。
 
-2.  在 SharePoint 站点列表区域中，选择**任务**链接。
+2. 在 SharePoint 站点列表区域中，选择**任务**链接。
 
      **任务的所有任务**页将出现。
 
-3.  上**列表工具**选项卡的功能区中，选择**列表**选项卡上，然后在**设置**组中，选择**列表设置**。
+3. 上**列表工具**选项卡的功能区中，选择**列表**选项卡上，然后在**设置**组中，选择**列表设置**。
 
      **列表设置**页将出现。
 
-4.  下**通信**标题页的顶部附近，选择**SharePoint 开发人员中心**链接，请验证是否在浏览器打开该网站 https://docs.microsoft.com/sharepoint/dev/，然后关闭浏览器。
+4. 下**通信**标题页的顶部附近，选择**SharePoint 开发人员中心**链接，请验证是否在浏览器打开该网站 https://docs.microsoft.com/sharepoint/dev/，然后关闭浏览器。
 
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机
  在完成测试的项目项后，从 Visual Studio 的实验实例中删除项目项模板。
 
 #### <a name="to-clean-up-the-development-computer"></a>若要清理开发计算机
 
-1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
+1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
 
      此时，“扩展和更新”对话框打开。
 
-2.  在扩展的列表，选择**自定义操作项目项**扩展，然后选择**卸载**按钮。
+2. 在扩展的列表，选择**自定义操作项目项**扩展，然后选择**卸载**按钮。
 
-3.  在出现的对话框中，选择**是**按钮以确认你要卸载扩展，然后选择**立即重新启动**按钮以完成卸载。
+3. 在出现的对话框中，选择**是**按钮以确认你要卸载扩展，然后选择**立即重新启动**按钮以完成卸载。
 
-4.  关闭 Visual Studio （实验实例和在其中 CustomActionProjectItem 解决方案已打开的 Visual Studio 的实例） 的两个实例。
+4. 关闭 Visual Studio （实验实例和在其中 CustomActionProjectItem 解决方案已打开的 Visual Studio 的实例） 的两个实例。
 
 ## <a name="see-also"></a>请参阅
 - [演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)

@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084567"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>对 Office 解决方案中的错误进行故障排除
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：
 
--   [创建、 升级和打开项目](#creating)
+- [创建、 升级和打开项目](#creating)
 
--   [使用设计器](#designers)
+- [使用设计器](#designers)
 
--   [编写代码](#code)
+- [编写代码](#code)
 
--   [生成项目](#building)
+- [生成项目](#building)
 
--   [调试项目](#debugging)
+- [调试项目](#debugging)
 
-##  <a name="creating"></a> 创建、 升级和打开项目
+## <a name="creating"></a> 创建、 升级和打开项目
  创建或打开 Office 项目时，可能会遇到以下错误。
 
 ### <a name="the-project-cannot-be-created"></a>无法创建项目
@@ -60,13 +60,13 @@ ms.locfileid: "56610901"
 
  如果尝试创建的项目基于其个人信息已使用文档检查器删除的工作簿，则可能会发生这些错误。 若要避免此错误，请在创建项目之前执行以下步骤：
 
-1.  在 Excel 中打开工作簿。
+1. 在 Excel 中打开工作簿。
 
-2.  在 Excel 中打开“信任中心”。
+2. 在 Excel 中打开“信任中心”。
 
-3.  上**隐私选项**选项卡上清除**保存从文件属性中删除个人信息**复选框。
+3. 上**隐私选项**选项卡上清除**保存从文件属性中删除个人信息**复选框。
 
-4.  保存工作簿并关闭 Excel。
+4. 保存工作簿并关闭 Excel。
 
 ### <a name="cannot-open-a-project-after-migration"></a>迁移后，无法打开项目
  在将 Office 解决方案迁移到 Microsoft Office 2010 之后，无法在仅安装了 2007 Microsoft Office system 的开发计算机中打开项目。 可以会出现下列错误。
@@ -84,17 +84,17 @@ ms.locfileid: "56610901"
 
  完成项目升级后，如果它未被任何其他 Office 解决方案使用，你可以将 Visual Studio 2005 Tools for Office Second Edition Runtime 从开发计算机上卸载。
 
-##  <a name="designers"></a> 使用设计器
+## <a name="designers"></a> 使用设计器
  在文档级项目中使用文档、工作簿或工作表设计器时，可能会遇到以下错误。
 
 ### <a name="designer-failed-to-load-correctly"></a>设计器未能正确加载
  在以下情况下，Visual Studio 无法打开设计器：
 
--   Excel 或 Word 已打开且显示模式对话框。 若要打开设计器，请查看 Excel 或 Word 是否有已打开的模式对话框，然后关闭所有打开的模式对话框。 如果没有打开的模式对话框，则可能需要先执行一些其他操作 Excel 或 Word 才可做出响应。
+- Excel 或 Word 已打开且显示模式对话框。 若要打开设计器，请查看 Excel 或 Word 是否有已打开的模式对话框，然后关闭所有打开的模式对话框。 如果没有打开的模式对话框，则可能需要先执行一些其他操作 Excel 或 Word 才可做出响应。
 
--   当前正在调试项目。 若要打开设计器，请停止或完成调试。
+- 当前正在调试项目。 若要打开设计器，请停止或完成调试。
 
--   Excel 启动时，开发计算机上安装的某个 Excel VSTO 外接程序正在显示一个对话框。 若要创建 Excel 文档级项目，则必须首先禁用该 VSTO 外接程序。
+- Excel 启动时，开发计算机上安装的某个 Excel VSTO 外接程序正在显示一个对话框。 若要创建 Excel 文档级项目，则必须首先禁用该 VSTO 外接程序。
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>控件中显示为黑色矩形文档或工作表
  如果对文档或工作表中的控件进行分组，则 Visual Studio 不再识别这些控件。 分组后的控件不能访问在**属性**窗口中，且显示为黑色矩形文档或工作表。 若要还原控件的功能，必须取消对控件进行分组。
@@ -105,10 +105,10 @@ ms.locfileid: "56610901"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>插入剪贴画命令没有在 Visual Studio 设计器中为 nothing
  在 Visual Studio 设计器中打开 Excel 或 Word 时，单击**剪贴画**按钮**插图**功能区中的选项卡不会打开**剪贴画**任务窗格。 若要添加剪贴画，必须打开工作簿或主项目文件夹中的文档的副本 (不是中的副本*\bin*文件夹) Visual Studio 外部添加剪贴画，然后保存工作簿或文档。
 
-##  <a name="code"></a> 编写代码
+## <a name="code"></a> 编写代码
  在 Office 项目中编写代码时，可能会遇到以下错误。
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>使用 C# 时，Office 对象的某些事件不可访问
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>使用 C 时，Office 对象的某些事件不可访问\#
  在某些情况下，当你尝试在 Visual C# 项目中访问 Office 主互操作程序集 (PIA) 类型的实例的特定事件时，可能会看到类似于以下形式的编译器错误。
 
  “‘Microsoft.Office.Interop.Excel._Application.NewWorkbook’与‘Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook’之间存在二义性”
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  即使已导入 Word 或 Excel 命名空间并有权访问其内部的所有类，必须完全限定所有类型和 Word 或 Excel，若要删除命名空间的多义性。
 
-##  <a name="building"></a>生成项目
+## <a name="building"></a>生成项目
  生成 Office 项目时，可能会遇到以下错误。
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>无法生成基于具有受限权限的文档的文档级项目
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>删除 NamedRange 控件后发生编译器错误
  如果从设计器中的非活动工作表的工作表中删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，则可能不会从项目中移除自动生成的代码，并可能发生编译器错误。 为了确保删除这些代码，应在删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件前总是选中包含该控件的工作表，使其成为活动工作表。 如果在删除该控件时没有删除自动生成的代码，可激活该工作表并进行更改以将该工作表标记为已修改，从而令设计器删除这些代码。 重新生成项目时，将删除这些代码。
 
-##  <a name="debugging"></a> 调试项目
+## <a name="debugging"></a> 调试项目
  调试 Office 项目时，可能会遇到以下错误。
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>发布和在开发计算机上安装解决方案时，将显示卸载提示

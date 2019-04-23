@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085761"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58934108"
   
 ## <a name="to-correct-this-error"></a>更正此错误  
   
--   确保远程计算机上已安装并且正在运行 Visual Studio 远程调试监视器。 有关远程调试器和如何安装它的信息，请参阅[远程调试](../debugger/remote-debugging.md)。  
+- 确保远程计算机上已安装并且正在运行 Visual Studio 远程调试监视器。 有关远程调试器和如何安装它的信息，请参阅[远程调试](../debugger/remote-debugging.md)。  
   
--   在 Visual Studio 中查看项目属性（“项目”/“属性”/“调试”）。 确保“远程服务器名称”  正确。  
+- 在 Visual Studio 中查看项目属性（“项目”/“属性”/“调试”）。 确保“远程服务器名称”  正确。  
   
--   验证远程计算机在网络上是可访问的。  
+- 验证远程计算机在网络上是可访问的。  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>远程计算机不可访问  
  尝试 [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) 远程计算机。 如果它不响应 ping 操作，则远程工具也将无法连接。 请尝试重新启动远程计算机，或者确保它在网络上正确配置。  
@@ -58,13 +58,13 @@ ms.locfileid: "58934108"
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>远程调试器使用不同的用户帐户运行  
  可通过下列方法之一解决此问题：  
   
--   你可以停止远程调试器，并使用本地计算机上使用的帐户重新启动它。  
+- 你可以停止远程调试器，并使用本地计算机上使用的帐户重新启动它。  
   
--   可以使用“/allow \<username>”参数 `msvsmon /allow <username@computer>` 从命令行启动远程调试器  
+- 可以使用“/allow \<username>”参数 `msvsmon /allow <username@computer>` 从命令行启动远程调试器  
   
--   你可以将此用户添加到远程调试器权限（在远程调试器窗口“工具/权限” ）。  
+- 你可以将此用户添加到远程调试器权限（在远程调试器窗口“工具/权限” ）。  
   
--   如果你不能使用前面步骤中的方法，可以允许任何用户进行远程调试。 在远程调试器窗口中，转到“工具/选项”  对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但仅当你别无选择或在专用网络上操作时才应使用此选项。  
+- 如果你不能使用前面步骤中的方法，可以允许任何用户进行远程调试。 在远程调试器窗口中，转到“工具/选项”  对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但仅当你别无选择或在专用网络上操作时才应使用此选项。  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>远程计算机上的防火墙不允许对远程调试器的传入连接  
  Visual Studio 计算机上的防火墙和远程计算机上的防火墙都必须配置为允许在 Visual Studio 和远程调试器之间进行通信。 有关远程调试器使用的端口的信息，请参阅 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 有关配置 Windows 防火墙的信息，请参阅 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。  

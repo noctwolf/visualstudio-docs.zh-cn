@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080731"
 ---
 # <a name="expressions-in-the-debugger"></a>调试器中的表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用调试器内部函数来维护状态  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> 使用调试器内部函数来维护状态  
  利用调试器内部函数，您可以调用表达式中的某些 C/C++ 函数而不更改应用程序的状态。  
   
  调试器内部函数：  
@@ -118,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>C++/CLI - 不支持的表达式  
   
--   不支持包含指针的强制转换或用户定义的强制转换。  
+- 不支持包含指针的强制转换或用户定义的强制转换。  
   
--   不支持对象比较和赋值。  
+- 不支持对象比较和赋值。  
   
--   不支持重载运算符和重载函数。  
+- 不支持重载运算符和重载函数。  
   
--   不支持装箱和取消装箱。  
+- 不支持装箱和取消装箱。  
   
--   不支持`Sizeof` 运算符。  
+- 不支持`Sizeof` 运算符。  
   
 ## <a name="c---unsupported-expressions"></a>C# - 不支持的表达式  
   
@@ -135,19 +135,19 @@ int main()
   
  不支持动态对象的下列功能：  
   
--   复合运算符 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
+- 复合运算符 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
   
--   许多强制转换，包括数值强制转换和类型参数强制转换  
+- 许多强制转换，包括数值强制转换和类型参数强制转换  
   
--   带两个以上的参数的方法调用  
+- 带两个以上的参数的方法调用  
   
--   带两个以上的参数的属性 getter  
+- 带两个以上的参数的属性 getter  
   
--   带参数的属性 setter  
+- 带参数的属性 setter  
   
--   分配给索引器  
+- 分配给索引器  
   
--   布尔运算符 `&&` 和 `||`  
+- 布尔运算符 `&&` 和 `||`  
   
 ### <a name="anonymous-methods"></a>匿名方法  
  不支持创建新的匿名方法。  
@@ -159,19 +159,19 @@ int main()
   
  不支持动态对象的下列功能：  
   
--   复合运算符 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
+- 复合运算符 `+=`、 `-=`、 `%=`、 `/=`和 `*=`  
   
--   许多强制转换，包括数值强制转换和类型参数强制转换  
+- 许多强制转换，包括数值强制转换和类型参数强制转换  
   
--   带两个以上的参数的方法调用  
+- 带两个以上的参数的方法调用  
   
--   带两个以上的参数的属性 getter  
+- 带两个以上的参数的属性 getter  
   
--   带参数的属性 setter  
+- 带参数的属性 setter  
   
--   分配给索引器  
+- 分配给索引器  
   
--   布尔运算符 `&&` 和 `||`  
+- 布尔运算符 `&&` 和 `||`  
   
 ### <a name="local-constants"></a>局部常量  
  不支持局部常量。  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>不受支持的关键字  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   命名空间或模块级的关键字，如 `End Sub` 或 `Module`。  
+- 命名空间或模块级的关键字，如 `End Sub` 或 `Module`。  
   
 ## <a name="see-also"></a>请参阅  
  [C++ 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   

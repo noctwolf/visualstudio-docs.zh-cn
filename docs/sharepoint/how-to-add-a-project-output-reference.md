@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079780"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>如何：添加项目输出引用
   若要部署到 SharePoint 的非 SharePoint 项目程序集 （或在 Silverlight 项目中的.xap 文件），将其添加为项目输出引用。
@@ -28,17 +28,17 @@ ms.locfileid: "56619324"
 
 ### <a name="to-add-a-project-output-reference"></a>若要添加项目输出引用
 
-1.  加载包含至少一个 SharePoint 项目和一个非 SharePoint 项目的解决方案。
+1. 加载包含至少一个 SharePoint 项目和一个非 SharePoint 项目的解决方案。
 
-2.  在中**解决方案资源管理器**，选择 SharePoint 项目节点中的项。
+2. 在中**解决方案资源管理器**，选择 SharePoint 项目节点中的项。
 
-3.  在中**属性**窗口中，选择**项目输出引用**属性，然后选择省略号 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP。NET 移动设计器椭圆")) 旁边的按钮。
+3. 在中**属性**窗口中，选择**项目输出引用**属性，然后选择省略号 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP。NET 移动设计器椭圆")) 旁边的按钮。
 
-4.  在中**项目输出引用**对话框框中，选择**添加**按钮。
+4. 在中**项目输出引用**对话框框中，选择**添加**按钮。
 
-5.  在属性窗格中，选择箭头旁边**部署类型**属性，然后选择适当的值所引用，如非 SharePoint 项**ElementFile**。
+5. 在属性窗格中，选择箭头旁边**部署类型**属性，然后选择适当的值所引用，如非 SharePoint 项**ElementFile**。
 
-6.  选择箭头旁边**项目名称**，选择非 SharePoint 项目项的名称，然后选择**确定**按钮。
+6. 选择箭头旁边**项目名称**，选择非 SharePoint 项目项的名称，然后选择**确定**按钮。
 
 ## <a name="see-also"></a>请参阅
 - [提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

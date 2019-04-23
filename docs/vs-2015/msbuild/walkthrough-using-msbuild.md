@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082797"
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
 #### <a name="to-create-a-project-file"></a>创建项目文件  
   
-1.  打开 Visual Studio。  
+1. 打开 Visual Studio。  
   
-2.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
+2. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
-3.  在“新建项目”对话框中，选择 Visual C# 项目类型，然后选择“Windows 窗体应用程序”模板。 在“名称”框中键入 `BuildApp`。 输入解决方案的“位置”，例如 `D:\`。 接受“创建解决方案目录”（已选）、“添加到源代码管理”（未选）和“解决方案名称”(`BuildApp`) 的默认值。  
+3. 在“新建项目”对话框中，选择 Visual C# 项目类型，然后选择“Windows 窗体应用程序”模板。 在“名称”框中键入 `BuildApp`。 输入解决方案的“位置”，例如 `D:\`。 接受“创建解决方案目录”（已选）、“添加到源代码管理”（未选）和“解决方案名称”(`BuildApp`) 的默认值。  
   
      单击“确定”创建项目文件。  
   
@@ -49,13 +49,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
 #### <a name="to-examine-the-project-file"></a>检查项目文件  
   
-1.  在**解决方案资源管理器中**，单击项目节点 BuildApp。  
+1. 在**解决方案资源管理器中**，单击项目节点 BuildApp。  
   
-2.  请注意，在“属性”浏览器中，**项目文件**属性是 BuildApp.csproj。 所有项目文件名称中都带有后缀“proj”。 如果创建了 Visual Basic 项目，则项目文件名称将为 BuildApp.vbproj。  
+2. 请注意，在“属性”浏览器中，**项目文件**属性是 BuildApp.csproj。 所有项目文件名称中都带有后缀“proj”。 如果创建了 Visual Basic 项目，则项目文件名称将为 BuildApp.vbproj。  
   
-3.  右键单击项目节点，然后单击“卸载项目”。  
+3. 右键单击项目节点，然后单击“卸载项目”。  
   
-4.  再次右键单击项目节点，然后单击“编辑 BuildApp.csproj”。  
+4. 再次右键单击项目节点，然后单击“编辑 BuildApp.csproj”。  
   
      该项目文件出现在代码编辑器中。  
   
@@ -136,17 +136,17 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
 #### <a name="to-build-the-target"></a>生成目标  
   
-1.  单击“启动”，然后单击“所有程序”。 在 **Visual Studio Tools** 文件夹中找到并单击“Visual Studio 命令提示符”。  
+1. 单击“启动”，然后单击“所有程序”。 在 **Visual Studio Tools** 文件夹中找到并单击“Visual Studio 命令提示符”。  
   
-2.  从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp。  
+2. 从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp。  
   
-3.  使用命令开关 /t:HelloWorld 运行 MSBuild。 这将选择并生成 HelloWorld 目标：  
+3. 使用命令开关 /t:HelloWorld 运行 MSBuild。 这将选择并生成 HelloWorld 目标：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  在“命令窗口”检查输出。 应看到两行“Hello”和“World”：  
+4. 在“命令窗口”检查输出。 应看到两行“Hello”和“World”：  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>检查属性值  
   
-1.  从代码编辑器中使用以下代码替换 HelloWorld 目标：  
+1. 从代码编辑器中使用以下代码替换 HelloWorld 目标：  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  检查输出。 应看到这两行（.NET Framework 版本可能不同）：  
+4. 检查输出。 应看到这两行（.NET Framework 版本可能不同）：  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>每行显示一个项类型值  
   
-1.  从代码编辑器中使用此行替换 Message 任务：  
+1. 从代码编辑器中使用此行替换 Message 任务：  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  检查输出。 应看到这些行：  
+4. 检查输出。 应看到这些行：  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>包含和排除项  
   
-1.  从代码编辑器中使用此行替换 Message 任务：  
+1. 从代码编辑器中使用此行替换 Message 任务：  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  在 Import 元素后添加此项组：  
+2. 在 Import 元素后添加此项组：  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  保存项目文件。  
+3. 保存项目文件。  
   
-4.  在“命令窗口”输入并执行此行：  
+4. 在“命令窗口”输入并执行此行：  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  检查输出。 应看到此行：  
+5. 检查输出。 应看到此行：  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

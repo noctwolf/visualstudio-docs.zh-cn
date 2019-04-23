@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085372"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ ms.locfileid: "59666502"
 ## <a name="dataset-workflow"></a>数据集的工作流
  Visual Studio 提供了大量的工具来简化数据集的处理。 基本的端到端工作流是：
 
--   使用**数据源**窗口从一个或多个数据源创建新的数据集。 使用**数据集设计器**配置数据集并设置其属性。 例如，您需要指定哪些数据源包括，从表和每个表中的哪些列。 请仔细选择以节省数据集将需要的内存量。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+- 使用**数据源**窗口从一个或多个数据源创建新的数据集。 使用**数据集设计器**配置数据集并设置其属性。 例如，您需要指定哪些数据源包括，从表和每个表中的哪些列。 请仔细选择以节省数据集将需要的内存量。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
--   指定表之间的关系，以便正确处理外键。 有关详细信息，请参阅[使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)。
+- 指定表之间的关系，以便正确处理外键。 有关详细信息，请参阅[使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)。
 
--   使用**TableAdapter 配置向导**指定的查询或存储的过程，将填充数据集，并实现哪些数据库操作 （update、 delete 等）。 有关详细信息，请参阅以下主题：
+- 使用**TableAdapter 配置向导**指定的查询或存储的过程，将填充数据集，并实现哪些数据库操作 （update、 delete 等）。 有关详细信息，请参阅以下主题：
 
-    -   [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [编辑数据集中的数据](../data-tools/edit-data-in-datasets.md)
+    - [编辑数据集中的数据](../data-tools/edit-data-in-datasets.md)
 
-    -   [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)
+    - [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)
 
-    -   [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
+    - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 
--   查询并在数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 使[LINQ （语言集成查询）](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的数据通过<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
+- 查询并在数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 使[LINQ （语言集成查询）](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的数据通过<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
 
--   使用**数据源**窗口来将用户界面控件绑定到的数据集或其单独的列，并指定哪些列是用户可编辑。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+- 使用**数据源**窗口来将用户界面控件绑定到的数据集或其单独的列，并指定哪些列是用户可编辑。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
 ## <a name="datasets-and-n-tier-architecture"></a>数据集和 N 层体系结构
  有关 N 层应用程序中的数据集的信息，请参阅[使用 n 层应用程序中的数据集](../data-tools/work-with-datasets-in-n-tier-applications.md)。

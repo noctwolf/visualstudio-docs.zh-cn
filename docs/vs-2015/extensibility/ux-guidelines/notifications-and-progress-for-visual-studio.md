@@ -8,34 +8,34 @@ ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d1e409f5c1487925ecfb9980878360cb60c1c447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3d31dcaaf450f21f2c1db6666e38ad048dfeaf12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080184"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio 的通知和进度
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_NotificationSystems"></a> 通知系统
+## <a name="BKMK_NotificationSystems"></a> 通知系统
 
 ### <a name="overview"></a>概述
  有几种方法来通知用户在 Visual Studio 中有关其软件开发任务发生。
 
  当实现任何种类的通知：
 
--   **保持为最小值通知数**有效数字。 通知消息应适用于大多数 Visual Studio 用户或特定功能区域的用户。 过多使用通知可能 sidetrack 用户还是不感知的易于使用的系统。
+- **保持为最小值通知数**有效数字。 通知消息应适用于大多数 Visual Studio 用户或特定功能区域的用户。 过多使用通知可能 sidetrack 用户还是不感知的易于使用的系统。
 
--   **请确保您要呈现清晰、 可操作邮件**用户可用来调用相应的上下文进行更复杂的选择和采取进一步操作。
+- **请确保您要呈现清晰、 可操作邮件**用户可用来调用相应的上下文进行更复杂的选择和采取进一步操作。
 
--   **相应地提供同步和异步消息。** 同步通知指示出现需要直接处理，例如何时发生故障的 web 服务或代码引发异常。 在模式对话框中，如要求其输入的方式立即在这些情况下，应通知用户。 异步通知是一种是用户应该了解，但不是会要求起作用时立即，如生成操作完成时或网站部署完成。 这些消息应更环境并不会中断用户的任务流。
+- **相应地提供同步和异步消息。** 同步通知指示出现需要直接处理，例如何时发生故障的 web 服务或代码引发异常。 在模式对话框中，如要求其输入的方式立即在这些情况下，应通知用户。 异步通知是一种是用户应该了解，但不是会要求起作用时立即，如生成操作完成时或网站部署完成。 这些消息应更环境并不会中断用户的任务流。
 
--   **使用模式对话框仅在需要以防止用户采取进一步操作时**之前确认消息或在做出决定在对话框中显示。
+- **使用模式对话框仅在需要以防止用户采取进一步操作时**之前确认消息或在做出决定在对话框中显示。
 
--   **删除环境的通知时它们将不再有效。** 不需要用户若要消除通知，如果它们已采取措施来解决的问题的通知。
+- **删除环境的通知时它们将不再有效。** 不需要用户若要消除通知，如果它们已采取措施来解决的问题的通知。
 
--   **请注意，通知可能导致错误关联。** 用户可能会认为，一个或多个其操作触发通知时实际上没有任何因果关系。 清除为上下文、 触发器和通知的源通知消息。
+- **请注意，通知可能导致错误关联。** 用户可能会认为，一个或多个其操作触发通知时实际上没有任何因果关系。 清除为上下文、 触发器和通知的源通知消息。
 
 ### <a name="choosing-the-right-method"></a>选择正确的方法
  使用此表来帮助你选择正确的方法以通知用户您的消息。
@@ -57,14 +57,14 @@ ms.locfileid: "58936414"
 
 ### <a name="notification-methods"></a>通知方法
 
-####  <a name="BKMK_ModalErrorMessageDialogs"></a> 模式错误消息对话框
+#### <a name="BKMK_ModalErrorMessageDialogs"></a> 模式错误消息对话框
  模式错误消息对话框用于显示错误消息，要求用户确认或操作。
 
  ![模式错误消息](../../extensibility/ux-guidelines/media/0901-01-modalerrormessage.png "0901年 01_ModalErrorMessage")
 
  **模式错误消息对话框提醒用户数据库无效的连接字符串**
 
-####  <a name="BKMK_IDEStatusBar"></a> IDE 状态栏会显示
+#### <a name="BKMK_IDEStatusBar"></a> IDE 状态栏会显示
  可能性用户注意到状态栏文本关联到其全能计算机体验和 Windows 平台上特定的经验。 Visual Studio 客户群往往是这两个方面经验丰富，但即使知识渊博的 Windows 用户可能会缺失状态栏中的更改。 因此，状态栏，最好使用用于提供信息或作为冗余提示信息的信息显示在其他位置。 在对话框中，或通知工具窗口中，应提供任何类型的用户必须立即解决的关键信息。
 
  Visual Studio 状态栏旨在允许多种类型的信息，以显示。 它分为反馈、 设计器中，进度条、 动画和客户端的区域。
@@ -77,24 +77,24 @@ ms.locfileid: "58936414"
 
  **IDE 状态栏颜色**
 
-####  <a name="BKMK_EmbeddedInfobar"></a> 嵌入式信息栏
+#### <a name="BKMK_EmbeddedInfobar"></a> 嵌入式信息栏
  信息栏可在文档窗口或工具窗口顶部的通知状态或条件的用户。 它还可以提供命令，以便用户可以轻松地执行操作的方法。 信息栏是一个标准 shell 控件。 避免创建你自己，以执行操作，并显示在 IDE 中与其他人不一致。 请参阅[信息栏时](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)有关实现的详细信息和使用指南。
 
  ![嵌入式信息栏](../../extensibility/ux-guidelines/media/0901-03-embeddedinfobar.png "0901年 03_EmbeddedInfobar")
 
  **信息栏嵌入在文档窗口中，警报 IDE 处于历史调试模式下，编辑器将不会响应相同的方式与在标准调试模式下的用户。**
 
-####  <a name="BKMK_MouseCursorChanges"></a> 鼠标光标会更改
+#### <a name="BKMK_MouseCursorChanges"></a> 鼠标光标会更改
  更改时鼠标光标，请使用与 VSColor 服务并且已与游标相关联的颜色。 光标发生变化，可用于指示正在进行的操作，以及命中的区域用户悬停的目标，可以拖动、 放置到上，或用来选择某一对象的位置。
 
  仅当所有可用的 CPU 时间必须保留操作，防止用户表达任何进一步的输入时，请使用忙/等待鼠标光标。 与编写良好的应用程序使用多线程处理大多数情况下，当阻止用户执行其他操作的时间应该很少见。
 
  请注意光标发生变化，非常有用，因为一个冗余信息提示显示其他位置。 不要依赖于光标更改为至关重要，用户必须解决尝试传达的内容时尤其是与用户进行通信的唯一方式。
 
-####  <a name="BKMK_NotSysProgressIndicators"></a> 进度指示器
+#### <a name="BKMK_NotSysProgressIndicators"></a> 进度指示器
  进度指示器向用户反馈提供在需要超过几秒钟来完成的过程至关重要。 可以显示进度指示器的就地 （附近操作正在进行中的启动点），嵌入的状态栏中、 在模式对话框中，或在 Visual Studio 状态栏中。 遵循中的指导[进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)有关其使用和实现。
 
-####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知窗口
+#### <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知窗口
  Visual Studio 通知窗口将通知有关许可、 环境 (Visual Studio)、 扩展和更新的开发人员。 用户可以关闭单个通知，或者可以选择忽略某些类型的通知。 在中管理忽略通知的列表**工具 > 选项**页。
 
  通知窗口不是当前可扩展的。
@@ -103,33 +103,33 @@ ms.locfileid: "58936414"
 
  **Visual Studio 通知工具窗口**
 
-####  <a name="BKMK_ErrorList"></a> 错误列表
+#### <a name="BKMK_ErrorList"></a> 错误列表
  错误列表中的通知指示错误和警告的编译过程中发生和或生成过程中，并允许用户导航到该特定的代码错误的代码中。
 
  ![错误列表](../../extensibility/ux-guidelines/media/0901-08-errorlist.png "0901年 08_ErrorList")
 
  **在 Visual Studio 中的错误列表**
 
-####  <a name="BKMK_EmbeddedStatusBars"></a> 嵌入式的状态栏
+#### <a name="BKMK_EmbeddedStatusBars"></a> 嵌入式的状态栏
  IDE 状态栏是动态的使用其客户端区域上下文设置为活动文档窗口和更新用户的上下文和/或系统响应上的信息，因为很难维护连续显示的信息或提供长期的状态异步进程。 例如，IDE 状态栏会显示不适合的多个运行和/或立即可操作的项选择的测试运行结果的通知。 请务必保留此类上下文中的文档或工具窗口进行了选择用户或将启动一个进程的状态信息。
 
  ![Embedded status bar](../../extensibility/ux-guidelines/media/0901-09-embeddedstatusbar.png "0901-09_EmbeddedStatusBar")
 
  **在 Visual Studio 中的嵌入式的状态栏**
 
-####  <a name="BKMK_WindowsTray"></a> Windows 任务栏通知
+#### <a name="BKMK_WindowsTray"></a> Windows 任务栏通知
  Windows 任务栏上的 Windows 通知区域位于旁边系统时钟。 很多实用程序和软件组件提供此区域中的图标，以便用户可以获取用于系统级任务，如更改屏幕分辨率或获取软件更新的上下文菜单。
 
  环境级别通知应该显示在 Visual Studio 通知中心，不在 Windows 通知区域中。
 
-####  <a name="BKMK_NotificationBubbles"></a> 通知气泡
+#### <a name="BKMK_NotificationBubbles"></a> 通知气泡
  通知气泡可为信息性消息编辑器/设计器中或在 Windows 通知区域的一部分出现。 用户感觉这是一项权益的非关键通知这些气泡为更高版本，它们可以解决的问题。 不适合于用户必须立即解决的关键信息气泡。 如果您在 Visual Studio 中使用通知气泡，请按照[通知气泡的 Windows 桌面指南](https://msdn.microsoft.com/library/windows/desktop/dn742472\(v=vs.85\).aspx)。
 
  ![通知气泡](../../extensibility/ux-guidelines/media/0901-07-notificationbubbles.png "0901年 07_NotificationBubbles")
 
  **用于 Visual Studio 的 Windows 通知区域中的通知气泡**
 
-##  <a name="BKMK_ProgressIndicators"></a> 进度指示器
+## <a name="BKMK_ProgressIndicators"></a> 进度指示器
 
 ### <a name="overview"></a>概述
  进度指示器会为用户提供反馈的通知系统的一个重要部分。 进程和操作将完成时，他们会告诉用户。 熟悉的指示器类型包括进度条、 旋转游标和动态的图标。 类型和进度指示器的位置取决于完成所需的上下文，包括报告的内容和多长时间的进程或操作。
@@ -137,17 +137,17 @@ ms.locfileid: "58936414"
 #### <a name="factors"></a>因素
  若要确定哪种指示器类型适合，您需要确定以下因素。
 
-1.  **计时：** 操作所花的时间长度
+1. **计时：** 操作所花的时间长度
 
-2.  **模式：** 操作是模式适合环境 （锁定 UI 过程完成之前）
+2. **模式：** 操作是模式适合环境 （锁定 UI 过程完成之前）
 
-3.  **永久/暂时的：** 是否需要在更高版本时进行报告和/或可查看正在进行的最终结果
+3. **永久/暂时的：** 是否需要在更高版本时进行报告和/或可查看正在进行的最终结果
 
-4.  **确定/不确定：** 可以计算操作结束时间和进度
+4. **确定/不确定：** 可以计算操作结束时间和进度
 
-5.  **图/Textual 位置：** 进度或进程是否在一条消息或一个特定的控件，例如树控件的主体中捕获的内联
+5. **图/Textual 位置：** 进度或进程是否在一条消息或一个特定的控件，例如树控件的主体中捕获的内联
 
-6.  **邻近：** 进度应位于较近的 UI 与相关的。 （例如，可以在状态栏中可能是距离遥远，或没有要启动进程的按钮附近？）
+6. **邻近：** 进度应位于较近的 UI 与相关的。 （例如，可以在状态栏中可能是距离遥远，或没有要启动进程的按钮附近？）
 
 #### <a name="determinate-progress"></a>确定的进度
 
@@ -285,7 +285,7 @@ ms.locfileid: "58936414"
 
  **正在进行的进程的状态下的输出窗口和等待消息传送**
 
-##  <a name="BKMK_Infobars"></a> 信息栏
+## <a name="BKMK_Infobars"></a> 信息栏
 
 ### <a name="overview"></a>概述
  信息栏时为用户提供的关注其点接近指示器，并使用共享的信息栏控件确保视觉外观和交互的一致性。
@@ -296,31 +296,31 @@ ms.locfileid: "58936414"
 
 #### <a name="appropriate-uses-for-an-infobar"></a>正确使用信息栏
 
--   若要为用户提供与当前上下文相关的非阻塞的但很重要消息
+- 若要为用户提供与当前上下文相关的非阻塞的但很重要消息
 
--   以指示在 UI 中的某个状态或条件执行的某些交互的含义，如历史调试
+- 以指示在 UI 中的某个状态或条件执行的某些交互的含义，如历史调试
 
--   若要通知用户系统已检测到问题，例如当某个扩展导致性能问题
+- 若要通知用户系统已检测到问题，例如当某个扩展导致性能问题
 
--   提供一种方法来轻松地执行操作，例如当编辑器中检测到一个文件具有混合制表符和空格的用户
+- 提供一种方法来轻松地执行操作，例如当编辑器中检测到一个文件具有混合制表符和空格的用户
 
 ##### <a name="do"></a>执行操作：
 
--   简单地说，到点，请保留信息栏消息文本。
+- 简单地说，到点，请保留信息栏消息文本。
 
--   保持简洁上链接和按钮的文本。
+- 保持简洁上链接和按钮的文本。
 
--   请确保你为用户提供的"操作"选项非常小，显示所需的操作。
+- 请确保你为用户提供的"操作"选项非常小，显示所需的操作。
 
 ##### <a name="dont"></a>不要：
 
--   信息栏用于提供应放置在工具栏中的标准命令。
+- 信息栏用于提供应放置在工具栏中的标准命令。
 
--   使用信息栏来代替一个模式对话框。
+- 使用信息栏来代替一个模式对话框。
 
--   创建的时段之外的浮点型消息。
+- 创建的时段之外的浮点型消息。
 
--   在同一个窗口中的多个位置中使用多个信息栏。
+- 在同一个窗口中的多个位置中使用多个信息栏。
 
 #### <a name="can-multiple-infobars-show-at-the-same-time"></a>可以同时显示多个信息栏？
  是的多个信息栏时可以显示在同一时间。 使用 top 和其他信息栏显示下面显示的第一个信息栏，将第一个先来先服务顺序显示它们。
@@ -330,13 +330,13 @@ ms.locfileid: "58936414"
 ### <a name="creating-an-infobar"></a>创建一个信息栏
  信息栏包含四个部分，从左到右：
 
--   **图标：** 这是将在其中添加任何图标你想要显示的信息栏，如警告图标。
+- **图标：** 这是将在其中添加任何图标你想要显示的信息栏，如警告图标。
 
--   **文本：** 如果需要，可以添加文本以描述方案/情况用户是在中，以及文本内的链接。 请记住保持简洁的文本。
+- **文本：** 如果需要，可以添加文本以描述方案/情况用户是在中，以及文本内的链接。 请记住保持简洁的文本。
 
--   **操作：** 本部分应包含一些链接和按钮，用户可以在你的信息栏中执行的操作。
+- **操作：** 本部分应包含一些链接和按钮，用户可以在你的信息栏中执行的操作。
 
--   **关闭按钮：** 向右的最后一个部分可以有一个关闭按钮。
+- **关闭按钮：** 向右的最后一个部分可以有一个关闭按钮。
 
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>在托管代码中创建标准的信息栏
  InfoBarModel 类可用于创建一个信息栏的数据源。 使用以下四个构造函数之一：
@@ -416,9 +416,9 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 ### <a name="placement"></a>放置
  信息栏时可以在一个或多个以下位置中所示：
 
--   工具窗口
+- 工具窗口
 
--   在文档选项卡
+- 在文档选项卡
 
 > [!IMPORTANT]
 >  就可以放置一个信息栏，以提供有关全局上下文的消息。 这将显示工具栏和文档井中之间。 不建议，因为它会导致问题的"跳转和跃度"的 IDE，应当避免，除非绝对必要且适用。
@@ -474,7 +474,7 @@ public interface IVsInfoBarUIEvents
 
 ```
 
-##  <a name="BKMK_ErrorValidation"></a> 错误验证
+## <a name="BKMK_ErrorValidation"></a> 错误验证
  当用户输入是不可接受的例如必填的字段时将跳过或格式不正确的数据输入的信息时，最好是使用控件验证或而不是使用阻止的弹出窗口错误对话框控件附近的反馈。
 
 ### <a name="field-validation"></a>字段验证

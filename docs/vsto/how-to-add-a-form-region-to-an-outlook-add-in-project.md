@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97d8883ef22fc91b708726fddca60cf757e3d9a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083941"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>如何：向 Outlook 外接程序项目添加窗体区域
   使用  “新建 Outlook 窗体区域”向导创建窗体区域，从而扩展标准或自定义 Microsoft Office Outlook 窗体。 你可以在 Visual Studio 中创建一个新的窗体区域并设计用户界面，也可以导入在 Outlook 中设计的窗体区域并添加 Visual Basic 或 C# 代码。
@@ -33,26 +33,26 @@ ms.locfileid: "56610614"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>向 Outlook 项目中添加新的窗体区域
 
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开或创建 Outlook VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开或创建 Outlook VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2.  在 “解决方案资源管理器”中，选择 Outlook VSTO 外接程序项目节点。
+2. 在 “解决方案资源管理器”中，选择 Outlook VSTO 外接程序项目节点。
 
-3.  在 **“项目”** 菜单上，单击 **“添加新项”**。
+3. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-4.  在  “添加新项”对话框中，选择 “Outlook 窗体区域”。
+4. 在  “添加新项”对话框中，选择 “Outlook 窗体区域”。
 
-5.  在  “名称”框中键入窗体区域的名称，然后单击 “添加”。
+5. 在  “名称”框中键入窗体区域的名称，然后单击 “添加”。
 
      **NewOutlook 窗体区域**启动向导。
 
-6.  在  “选择窗体区域的创建方式”页上，选择是要通过将托管控件拖到可视化设计器来设计窗体区域，还是导入在 Outlook 中设计的窗体区域。
+6. 在  “选择窗体区域的创建方式”页上，选择是要通过将托管控件拖到可视化设计器来设计窗体区域，还是导入在 Outlook 中设计的窗体区域。
 
     > [!NOTE]
     >  如果您选择导入在 Outlook 中设计的窗体区域，则必须指定 Outlook 窗体存储的位置 (*.ofs*) 文件。 不能将托管控件添加到在 Outlook 中设计的窗体区域；只能在现有 UI 背后添加代码。 有关详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
-7.  在  “选择要创建的窗体区域的类型”页上，查看窗体区域类型并选择一个，然后单击“下一步” 。 有关窗体区域类型的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
+7. 在  “选择要创建的窗体区域的类型”页上，查看窗体区域类型并选择一个，然后单击“下一步” 。 有关窗体区域类型的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
-8.  在“提供说明性文本并选择显示首选项”  页上，在“名称”  框中键入窗体区域的名称。 对于替换和全部替换窗体区域类型，还需要填写“标题”  和“说明”  框。
+8. 在“提供说明性文本并选择显示首选项”  页上，在“名称”  框中键入窗体区域的名称。 对于替换和全部替换窗体区域类型，还需要填写“标题”  和“说明”  框。
 
      有关名称、 标题和说明时出现的位置在 Outlook 中部署窗体区域的信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 

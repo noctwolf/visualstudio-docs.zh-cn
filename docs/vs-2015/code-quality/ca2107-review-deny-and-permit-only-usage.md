@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082147"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107:检查 deny 权限和 permit only 权限的使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "58933438"
 
  依赖于这些操作代码应认真评估存在安全漏洞，因为其用途有限和细微的行为。 考虑以下情况：
 
--   [链接需求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)的 Deny 或 PermitOnly 不会影响。
+- [链接需求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)的 Deny 或 PermitOnly 不会影响。
 
--   如果 Deny 或 PermitOnly 发生导致堆栈遍历需求相同的堆栈帧中，安全操作将产生任何影响。
+- 如果 Deny 或 PermitOnly 发生导致堆栈遍历需求相同的堆栈帧中，安全操作将产生任何影响。
 
--   通常可以通过多种方法指定用于构造基于路径的权限的值。 拒绝访问路径的一个窗体不拒绝所有窗体的访问。 例如，如果文件共享\\\Server\Share 映射到网络驱动器 x:，以拒绝访问的文件共享上，则必须拒绝\\\Server\Share\File、 X:\File 和访问文件的每个其他路径。
+- 通常可以通过多种方法指定用于构造基于路径的权限的值。 拒绝访问路径的一个窗体不拒绝所有窗体的访问。 例如，如果文件共享\\\Server\Share 映射到网络驱动器 x:，以拒绝访问的文件共享上，则必须拒绝\\\Server\Share\File、 X:\File 和访问文件的每个其他路径。
 
--   <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>达到 Deny 或 PermitOnly 之前可以终止堆栈遍历。
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>达到 Deny 或 PermitOnly 之前可以终止堆栈遍历。
 
--   如果拒绝都没有任何效果，即当调用方具有的权限被拒绝，阻止调用方可以访问受保护的资源直接，绕过拒绝。 同样，如果调用方没有被拒绝的权限，堆栈审核会失败而无需拒绝。
+- 如果拒绝都没有任何效果，即当调用方具有的权限被拒绝，阻止调用方可以访问受保护的资源直接，绕过拒绝。 同样，如果调用方没有被拒绝的权限，堆栈审核会失败而无需拒绝。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  任何使用这些安全操作而导致违反了。 若要解决冲突，不要使用这些安全操作。

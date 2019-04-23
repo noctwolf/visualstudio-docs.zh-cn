@@ -1,5 +1,5 @@
 ---
-title: 如何： 指定 ClickOnce 应用程序的开始菜单名称 |Microsoft Docs
+title: 如何：指定 ClickOnce 应用程序的开始菜单名称 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085111"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的“开始”菜单名称
 当[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序安装为联机和脱机使用，条目添加到**启动**菜单和**添加或删除程序**列表。 默认情况下，显示名称是应用程序程序集名称相同，但您可以通过设置更改显示名称**产品名称**中**发布选项**对话框。
@@ -36,17 +36,17 @@ ms.locfileid: "56635613"
 
 ### <a name="to-specify-a-start-menu-name"></a>若要指定的开始菜单名称
 
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
 
-2.  单击“发布”选项卡。
+2. 单击“发布”选项卡。
 
-3.  单击**选项**按钮以打开**发布选项**对话框。
+3. 单击**选项**按钮以打开**发布选项**对话框。
 
-4.  单击**说明**。
+4. 单击**说明**。
 
-5.  在中**发布选项**对话框框中，输入要在中显示的名称**产品名称**。
+5. 在中**发布选项**对话框框中，输入要在中显示的名称**产品名称**。
 
-6.  或者，可以输入中的发布服务器名称**发布服务器名称**。
+6. 或者，可以输入中的发布服务器名称**发布服务器名称**。
 
 ## <a name="see-also"></a>请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

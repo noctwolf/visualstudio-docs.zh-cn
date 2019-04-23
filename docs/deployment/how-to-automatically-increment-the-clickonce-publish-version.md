@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 174506e9ee88de385f5bbba6fe09276d9297f298
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: cce9dfe48e34d642b115c8391de73c0350ce515b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54937699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081835"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自动递增 ClickOnce 发布版本
 
@@ -35,11 +35,11 @@ ms.locfileid: "54937699"
 
 ## <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要禁用自动递增发布版本
 
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
 
-2.  单击“发布”选项卡。
+2. 单击“发布”选项卡。
 
-3.  在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。
+3. 在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。
 
 ## <a name="see-also"></a>请参阅
 

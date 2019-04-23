@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30f51715cd26c9d61e355115db6f4ca4b9831ef0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 37e8b8e47b306f8b99e378cf407c0faf0955c737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660783"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084864"
 ---
 # <a name="core-interfaces"></a>核心接口
 以下接口是用于通过使用扩展调试器的核心接口[!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)]。
@@ -65,7 +65,7 @@ ms.locfileid: "59660783"
 
 - Visual Studio (VS)
 
-##  <a name="Breakpoints"></a> 断点
+## <a name="Breakpoints"></a> 断点
  有关这些接口的实现和跟踪断点。
 
 |接口|由实现|描述|
@@ -86,7 +86,7 @@ ms.locfileid: "59660783"
 |[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)|DE|表示对一组绑定断点的枚举。|
 |[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)|DE|表示对一组无法绑定到的内存位置的断点的枚举。|
 
-##  <a name="Contexts"></a> 上下文
+## <a name="Contexts"></a> 上下文
  这些接口表示各种类型的上下文中正在调试的程序。
 
 |接口|由实现|描述|
@@ -100,7 +100,7 @@ ms.locfileid: "59660783"
 |[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)|DE|表示在断点或异常的堆栈帧上下文。|
 |[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)|DE|表示一组代码上下文枚举。|
 
-##  <a name="CoreServer"></a> 核心服务器
+## <a name="CoreServer"></a> 核心服务器
  这些接口表示正在其调试程序的计算机。 这些功能通过实现[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]可以调试引擎通过调用到。
 
 |接口|由实现|描述|
@@ -108,7 +108,7 @@ ms.locfileid: "59660783"
 |[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)|VS|提供对端口和端口提供程序，以及有关计算机的信息的访问。|
 |[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)|VS|表示[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)支持远程调试。|
 
-##  <a name="DebugEngines"></a> 调试引擎
+## <a name="DebugEngines"></a> 调试引擎
  这些接口表示的调试引擎和及其关联的事件。
 
 |接口|由实现|描述|
@@ -120,7 +120,7 @@ ms.locfileid: "59660783"
 |[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE PS|表示处理多个调试引擎的程序节点。|
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|提供有关 SDM，获得到的调试引擎的接口，从线程、 程序或堆栈帧的方法。|
 
-##  <a name="Documents"></a> 文档
+## <a name="Documents"></a> 文档
  这些接口代表对文档 （源文件） 和其关联的元素。
 
 |接口|由实现|描述|
@@ -135,7 +135,7 @@ ms.locfileid: "59660783"
 |[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)|VS, DE|表示文本文档提供的 DE (派生自[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md))，提供的实际文本。|
 |[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|DE|由 DE 发送，以指定对内存中的源文件的更改。|
 
-##  <a name="Events"></a> 事件
+## <a name="Events"></a> 事件
  这些接口表示 DE 和会话调试管理器 (SDM) 之间发送的所有事件。
 
 | 接口 | 由实现 | 描述 |
@@ -180,7 +180,7 @@ ms.locfileid: "59660783"
 | [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md) | DE | 由 DE 线程已销毁时发送。 |
 | [IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md) | DE | 当一个线程已更改其名称由 DE 发送。 |
 
-##  <a name="Expressions"></a> 表达式
+## <a name="Expressions"></a> 表达式
  这些接口表示要在特定上下文中计算表达式。
 
 |接口|由实现|描述|
@@ -189,7 +189,7 @@ ms.locfileid: "59660783"
 |[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)|DE|表示在其中计算表达式的上下文。 从获取[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)接口。|
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|由 DE 异步表达式求值完成后发送。|
 
-##  <a name="Memory"></a> 内存
+## <a name="Memory"></a> 内存
  这些接口表示内存中的字节的序列。
 
 |接口|由实现|描述|
@@ -197,7 +197,7 @@ ms.locfileid: "59660783"
 |[IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)|DE|表示可以读取或写入到的内存中的字节序列。|
 |[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)|DE|表示序列中的内存中的字节的位置。|
 
-##  <a name="Modules"></a> 模块
+## <a name="Modules"></a> 模块
  这些接口表示对应于可执行文件的模块或。DLL 文件。
 
 |接口|由实现|描述|
@@ -208,7 +208,7 @@ ms.locfileid: "59660783"
 |[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)|DE|表示包含在 PDB 文件中的源服务器信息。|
 |[IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)|DE|表示一个枚举，通过一组模块的已知[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)。|
 
-##  <a name="Ports"></a> 端口
+## <a name="Ports"></a> 端口
  这些接口表示的端口和端口提供程序。
 
 | 接口 | 由实现 | 描述 |
@@ -228,7 +228,7 @@ ms.locfileid: "59660783"
 | [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) | VS, PS | 表示一个枚举，通过一组的端口。 |
 | [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) | VS | 通过端口供应商提供的一组表示一个枚举。 |
 
-##  <a name="Processes"></a> 进程
+## <a name="Processes"></a> 进程
  这些接口表示单个可执行文件，其中包含一个或多个程序的进程。
 
 |接口|由实现|描述|
@@ -240,7 +240,7 @@ ms.locfileid: "59660783"
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|表示必须跟踪哪些会话附加到它的进程。|
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|表示一组端口上的进程的枚举。|
 
-##  <a name="Programs"></a> 程序
+## <a name="Programs"></a> 程序
  这些接口表示程序，不一定对应于物理可执行文件或模块执行的逻辑单元。
 
 |接口|由实现|描述|
@@ -259,7 +259,7 @@ ms.locfileid: "59660783"
 |[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE PS|表示[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) ，可以跨线程或进程边界封送接口。|
 |[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE PS|表示的程序集的枚举。|
 
-##  <a name="Properties"></a>属性
+## <a name="Properties"></a>属性
  这些接口表示属性，与特定上下文中，通常的表达式计算结果关联的值。
 
 |接口|由实现|描述|
@@ -273,7 +273,7 @@ ms.locfileid: "59660783"
 |[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)|DE|表示一个枚举，通过一系列[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)描述变量、 寄存器、 参数和表达式的结构。|
 |[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)|DE|表示一个枚举，通过一系列[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构。|
 
-##  <a name="StackFrames"></a> 堆栈帧
+## <a name="StackFrames"></a> 堆栈帧
  这些接口表示堆栈帧，上下文中的断点或异常已发生。
 
 |接口|由实现|描述|
@@ -283,7 +283,7 @@ ms.locfileid: "59660783"
 |[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)|DE|表示访问集合的枚举[CODE_PATH](../../../extensibility/debugger/reference/code-path.md)结构指定的函数的调用用于到达特定堆栈帧的序列。|
 |[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)|DE|表示一个枚举，通过一系列[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)结构，描述堆栈帧。|
 
-##  <a name="Threads"></a>线程
+## <a name="Threads"></a>线程
  这些接口表示线程和及其关联的事件。
 
 |接口|由实现|描述|
@@ -294,7 +294,7 @@ ms.locfileid: "59660783"
 |[IDebugThreadNameChangedEvent2](../../../extensibility/debugger/reference/idebugthreadnamechangedevent2.md)|DE|当一个线程已更改其名称由 DE 发送。|
 |[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)|DE|表示一个枚举，通过一组线程。|
 
-##  <a name="TypeVisualizers"></a> 类型可视化工具
+## <a name="TypeVisualizers"></a> 类型可视化工具
  这些接口的类型可视化工具提供支持。 表达式计算器，通常会实现这些接口。
 
 |接口|由实现|描述|

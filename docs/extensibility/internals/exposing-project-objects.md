@@ -11,26 +11,26 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed19972fb2f71104357977554984ae43f886c950
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084357"
 ---
 # <a name="expose-project-objects"></a>公开项目对象
 
 自定义项目类型可以提供自动化对象，以允许使用自动化接口项目的访问权限。 每个项目类型需要提供标准<xref:EnvDTE.Project>自动化对象，从访问<xref:EnvDTE.Solution>，其中包含在 IDE 中打开的所有项目的集合。 应在项目中每个项由公开<xref:EnvDTE.ProjectItem>对象使用访问`Project.ProjectItems`。 除了这些标准自动化对象，可以选择项目以提供特定于项目的自动化对象。
 
-可以创建自定义根级别的自动化对象可以访问从根 DTE 对象使用后期绑定`DTE.<customObjectName>`或`DTE.GetObject("<customObjectName>")`。 例如，Visual c + + 创建一个名为 c + + 特定于项目的项目集合*VCProjects*可使用访问`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，这能查询其派生程度最高的对象，和一个`ProjectItem`，这会公开`ProjectItem.Object`和`ProjectItem.FileCodeModel`。
+可以创建自定义根级别的自动化对象可以访问从根 DTE 对象使用后期绑定`DTE.<customObjectName>`或`DTE.GetObject("<customObjectName>")`。 例如，VisualC++创建C++特定于项目的项目集合调用*VCProjects*可使用访问`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，这能查询其派生程度最高的对象，和一个`ProjectItem`，这会公开`ProjectItem.Object`和`ProjectItem.FileCodeModel`。
 
-它是公开的自定义的特定于项目的项目集合的项目的通用约定。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]创建一个 c + + 特定项目集合，然后就可以访问使用`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，其派生程度最高的对象，这能查询`ProjectItem`，这会公开`ProjectItem.Object`，和一个`ProjectItem.FileCodeModel`。
+它是公开的自定义的特定于项目的项目集合的项目的通用约定。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]创建C++，然后就可以访问使用特定的项目集合`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，其派生程度最高的对象，这能查询`ProjectItem`，这会公开`ProjectItem.Object`，和一个`ProjectItem.FileCodeModel`。
 
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>若要参与项目的特定于 VSPackage 的对象
 
-1.  添加到相应的键 *.pkgdef*你的 VSPackage 的文件。
+1. 添加到相应的键 *.pkgdef*你的 VSPackage 的文件。
 
-     例如，以下是 *.pkgdef* c + + 语言项目的设置：
+     例如，以下是 *.pkgdef*设置C++语言项目：
 
     ```
     [$RootKey$\Packages\{F1C25864-3097-11D2-A5C5-00C04F7968B4}\Automation]
@@ -39,7 +39,7 @@ ms.locfileid: "56609912"
     "VCProjectEngineEventsObject"=""
     ```
 
-2.  实现中的代码<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，如以下示例所示。
+2. 实现中的代码<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法，如以下示例所示。
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(

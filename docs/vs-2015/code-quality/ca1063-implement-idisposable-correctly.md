@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 52e77762900a321cf547709d98d9856088580789
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081393"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:正确实现 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,23 +59,23 @@ ms.locfileid: "58935421"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  检查你的代码并确定哪些以下解决方法将修复此冲突。
 
--   从由实现的接口列表中移除 IDisposable {0} ，而是重写 Dispose 基类实现。
+- 从由实现的接口列表中移除 IDisposable {0} ，而是重写 Dispose 基类实现。
 
--   从类型中移除终结器{0}、 重写 Dispose (bool disposing)，和其中 disposing 为 false 的代码路径中加入终结逻辑。
+- 从类型中移除终结器{0}、 重写 Dispose (bool disposing)，和其中 disposing 为 false 的代码路径中加入终结逻辑。
 
--   删除{0}、 重写 Dispose (bool disposing)，和其中 disposing 为 true 的代码路径中加入释放逻辑。
+- 删除{0}、 重写 Dispose (bool disposing)，和其中 disposing 为 true 的代码路径中加入释放逻辑。
 
--   确保{0}声明为 public 和密封的。
+- 确保{0}声明为 public 和密封的。
 
--   重命名{0}为 Dispose，并确保它被声明为 public 和 sealed。
+- 重命名{0}为 Dispose，并确保它被声明为 public 和 sealed。
 
--   请确保{0}声明为受保护，虚拟的并为其未密封的。
+- 请确保{0}声明为受保护，虚拟的并为其未密封的。
 
--   修改{0}，以便它将调用 dispose （true），然后调用 GC。当前对象实例上的 SuppressFinalize (this 或 Me [!INCLUDE[vbprvb](../includes/vbprvb-md.md)])，然后返回。
+- 修改{0}，以便它将调用 dispose （true），然后调用 GC。当前对象实例上的 SuppressFinalize (this 或 Me [!INCLUDE[vbprvb](../includes/vbprvb-md.md)])，然后返回。
 
--   修改{0}，以便它调用 dispose （false），然后返回。
+- 修改{0}，以便它调用 dispose （false），然后返回。
 
--   如果你正在编写一个未密封的根 IDisposable 类，请确保 IDisposable 实现遵循本部分前面所述的模式。
+- 如果你正在编写一个未密封的根 IDisposable 类，请确保 IDisposable 实现遵循本部分前面所述的模式。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

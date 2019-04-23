@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e46e6259009ab583f32deae79711d6b4d0c70528
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082901"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以编程方式存储和检索日期值在 Excel 范围内
   可以存储和检索中的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。
@@ -38,23 +38,23 @@ ms.locfileid: "56617829"
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控件
 
--   此示例适用于文档级自定义项。 下面的代码必须放置在工作表类中，不在`ThisWorkbook`类。
+- 此示例适用于文档级自定义项。 下面的代码必须放置在工作表类中，不在`ThisWorkbook`类。
 
 ### <a name="to-store-a-date-value-in-a-named-range"></a>若要在命名范围中存储日期值
 
-1.  创建<xref:Microsoft.Office.Tools.Excel.NamedRange>控件的单元格**A1**。
+1. 创建<xref:Microsoft.Office.Tools.Excel.NamedRange>控件的单元格**A1**。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#50)]
      [!code-vb[Trin_VstcoreExcelAutomation#50](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#50)]
 
-2.  将今天的日期设置为值`NamedRange1`。
+2. 将今天的日期设置为值`NamedRange1`。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#51)]
      [!code-vb[Trin_VstcoreExcelAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#51)]
 
 ### <a name="to-retrieve-a-date-value-from-a-named-range"></a>若要从命名范围中检索日期值
 
-1.  检索日期值从`NamedRange1`。
+1. 检索日期值从`NamedRange1`。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#52)]
      [!code-vb[Trin_VstcoreExcelAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#52)]
@@ -63,19 +63,19 @@ ms.locfileid: "56617829"
 
 ### <a name="to-store-a-date-value-in-a-native-excel-range-object"></a>若要在本机 Excel 范围对象中存储日期值
 
-1.  创建<xref:Microsoft.Office.Interop.Excel.Range>，表示单元格**A1**。
+1. 创建<xref:Microsoft.Office.Interop.Excel.Range>，表示单元格**A1**。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#25)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#25](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#25)]
 
-2.  将今天的日期设置为值`rng`。
+2. 将今天的日期设置为值`rng`。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#26)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#26](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#26)]
 
 ### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>若要从本机 Excel 范围对象中检索日期值
 
-1.  检索日期值从`rng`。
+1. 检索日期值从`rng`。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#27](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#27)]
