@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 509e0988d07bb22fc8d3180cc65db1a12092de08
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 530123a7f9417ce9f12a0314a96eafad1c69cf7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069702"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>不显示线程活动（线程视图）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "54763292"
   
  如果信息不可见，请检查以下设置：  
   
--   缩放级别太高？ 尝试缩小或滚动，以在范围内显示更多线程活动。  
+- 缩放级别太高？ 尝试缩小或滚动，以在范围内显示更多线程活动。  
   
--   是否隐藏太多线程？ 如果是这样，请尝试显示所有线程  
+- 是否隐藏太多线程？ 如果是这样，请尝试显示所有线程  
   
--   如果选择了“仅我的代码”，则只能查看有关你的代码的数据。 尝试清除设置以确定是否有任何系统线程活动。  
+- 如果选择了“仅我的代码”，则只能查看有关你的代码的数据。 尝试清除设置以确定是否有任何系统线程活动。  
   
--   确保“降噪”设置为低阈值。  
+- 确保“降噪”设置为低阈值。  
   
 ## <a name="see-also"></a>请参阅  
  [线程视图](../profiling/threads-view-parallel-performance.md)

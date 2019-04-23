@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067347"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "54779444"
 
  从 IDE 中，你可以执行以下额外任务：
 
--   [更改生成输出目录](../ide/how-to-change-the-build-output-directory.md)。
+- [更改生成输出目录](../ide/how-to-change-the-build-output-directory.md)。
 
--   [标识依赖于另一个项目中的输出的项目以便正确生成](../ide/how-to-create-and-remove-project-dependencies.md)。
+- [标识依赖于另一个项目中的输出的项目以便正确生成](../ide/how-to-create-and-remove-project-dependencies.md)。
 
--   [更改包含在生成日志或生成的“输出”窗口中的信息量](../ide/how-to-view-save-and-configure-build-log-files.md)。
+- [更改包含在生成日志或生成的“输出”窗口中的信息量](../ide/how-to-view-save-and-configure-build-log-files.md)。
 
--   [隐藏 Visual C#、Visual C++ 或 Visual Basic 的特定编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
+- [隐藏 Visual C#、Visual C++ 或 Visual Basic 的特定编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
--   [为生成指定自定义预编译和编译后操作](../ide/specifying-custom-build-events-in-visual-studio.md)。
+- [为生成指定自定义预编译和编译后操作](../ide/specifying-custom-build-events-in-visual-studio.md)。
 
--   通过使用并行生成改进生成性能。 有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或博客文章 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)（调整 C++ 并行生成）。
+- 通过使用并行生成改进生成性能。 有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)或博客文章 [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx)（调整 C++ 并行生成）。
 
 ## <a name="see-also"></a>请参阅
  [演练：生成应用程序](../ide/walkthrough-building-an-application.md)[了解生成配置](../ide/understanding-build-configurations.md)[了解生成平台](../ide/understanding-build-platforms.md)[构建 （编译） 网站项目](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [如何：创建和删除项目依赖项](../ide/how-to-create-and-remove-project-dependencies.md)

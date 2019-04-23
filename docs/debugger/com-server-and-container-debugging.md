@@ -21,33 +21,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 104af46114da44d3d4a4348e760bd24a2aab5412
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 40edce29e8d40310f6eab37309c4c2ca7eb8a85a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068894"
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
-COM 应用程序执行程序员直接控制之外的许多任务。 DLL 之间的通信、对象的使用计数和剪贴板操作只是你可能会遇到意外行为的几个方面。 发生这种情况时，第一步是找到问题的根源。
+COM 应用程序可执行许多不直接受程序员控制的任务。 DLL 间的通信、对象的使用计数和剪贴板操作只是可能遇到意外行为的少数几种情况。 发生这种情况时，首先应查明问题的根源。
 
- Visual Studio 调试器支持逐步跨越和单步执行容器和服务器。 这包括逐步跨越远程过程调用 (RPC) 的能力。
+ Visual Studio 调试器支持跨容器和服务器以及在容器和服务器中进行单步调试。 其中包括跨远程过程调用 (RPC) 进行单步调试的功能。
 
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> 使用同一解决方案调试 COM 服务器和容器
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a> 使用同一解决方案调试 COM 服务器和容器
  可以使用同一解决方案中的两个项目来调试 COM 服务器和容器。 在每个项目和调试中设置适当的断点。 当容器对服务器进行调用而遇到断点时，容器将一直等到服务器代码返回（即等到完成调试）。
 
  调试 COM 容器类似于调试标准程序。 但在调试一个产生回调的事件（比如将数据拖放到容器应用程序上）时有所不同。 在这种情况下，必须在回调函数中设置断点。
 
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> 在没有容器信息的情况下调试服务器应用程序
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> 在没有容器信息的情况下调试服务器应用程序
  如果没有或不想使用容器应用程序的调试信息，开始调试服务器应用程序可分三步进行：
 
-1.  像对待普通的应用程序一样开始调试服务器。
+1. 像对待普通的应用程序一样开始调试服务器。
 
-2.  按需要设置断点。
+2. 按需要设置断点。
 
-3.  启动容器应用程序。
+3. 启动容器应用程序。
 
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> 调试服务器和域隔离 (SDI) 应用程序
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> 调试服务器和域隔离 (SDI) 应用程序
  如果调试的是 SDI 服务器应用程序，对于 C/C++、C# 或 Visual Basic 项目，必须在“项目属性页”对话框中的“命令行参数”属性中指定 `/Embedding` 或 `/Automation`。
 
  使用这些命令行参数，调试器可以像从容器中启动服务器应用程序一样启动它。 从程序管理器或文件管理器启动容器将导致容器使用在调试器中启动的服务器实例。

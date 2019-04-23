@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066515"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：禁止对生成的代码显示代码分析警告
 托管的代码编译器通常会生成添加到项目，以便加快代码的开发的代码。 此外，开发人员通常使用第三方工具来帮助快速开发应用程序。 这些工具还生成添加到项目的代码。
@@ -27,8 +27,8 @@ ms.locfileid: "55936066"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>若要禁止显示项目中生成代码的警告
 
-1.  右键单击解决方案资源管理器中的项目，然后单击**属性**。
+1. 右键单击解决方案资源管理器中的项目，然后单击**属性**。
 
-2.  单击**代码分析**。
+2. 单击**代码分析**。
 
-3.  选择**禁止显示生成代码的结果**复选框。
+3. 选择**禁止显示生成代码的结果**复选框。

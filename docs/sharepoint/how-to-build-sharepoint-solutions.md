@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067269"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>如何：构建 SharePoint 解决方案
 
@@ -27,11 +27,11 @@ ms.locfileid: "54867115"
 
 ## <a name="to-build-sharepoint-solutions"></a>若要构建 SharePoint 解决方案
 
-1.  决定是否要进行调试或发布版本。 有关详细信息，请参阅[调试器项目设置](../debugger/debugger-project-settings.md)。
+1. 决定是否要进行调试或发布版本。 有关详细信息，请参阅[调试器项目设置](../debugger/debugger-project-settings.md)。
 
-2.  选择相应的选项生成或重新生成解决方案或项目。 有关详细信息，请参阅[在 Visual Studio 编译和生成](../ide/compiling-and-building-in-visual-studio.md)。
+2. 选择相应的选项生成或重新生成解决方案或项目。 有关详细信息，请参阅[在 Visual Studio 编译和生成](../ide/compiling-and-building-in-visual-studio.md)。
 
-3.  在菜单栏上，依次选择“生成” > “生成解决方案”。
+3. 在菜单栏上，依次选择“生成” > “生成解决方案”。
 
 ## <a name="see-also"></a>请参阅
 

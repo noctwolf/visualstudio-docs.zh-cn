@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6bd4117f3cce8a5a8a708da4b7941e224260ea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068686"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows 窗体中嵌入图表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "58935428"
   
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>若要在 Windows 控件中嵌入 DSL 关系图  
   
-1.  添加一个新**用户控件**到 DslPackage 项目的文件。  
+1. 添加一个新**用户控件**到 DslPackage 项目的文件。  
   
-2.  将在面板控件添加到用户控件。 此面板将包含 DSL 关系图。  
+2. 将在面板控件添加到用户控件。 此面板将包含 DSL 关系图。  
   
      添加所需的其他控件。  
   
      设置控件的定位点属性。  
   
-3.  在解决方案资源管理器，右键单击用户控件文件，然后单击**查看代码**。 将此构造函数和变量添加到代码中：  
+3. 在解决方案资源管理器，右键单击用户控件文件，然后单击**查看代码**。 将此构造函数和变量添加到代码中：  
   
     ```csharp  
   
@@ -47,7 +47,7 @@ ms.locfileid: "58935428"
   
     ```  
   
-4.  将新文件添加到 DslPackage 项目中包含以下内容：  
+4. 将新文件添加到 DslPackage 项目中包含以下内容：  
   
     ```  
     using System.Windows.Forms;  
@@ -71,13 +71,13 @@ ms.locfileid: "58935428"
   
     ```  
   
-5.  若要测试 DSL，按 F5，然后打开示例模型文件。 该控件中显示关系图。 工具箱和其他功能会正常工作。  
+5. 若要测试 DSL，按 F5，然后打开示例模型文件。 该控件中显示关系图。 工具箱和其他功能会正常工作。  
   
 #### <a name="updating-the-form-using-store-events"></a>更新窗体使用存储事件  
   
-1.  在窗体设计器中，添加**ListBox**名为`listBox1`。 这将在模型中显示的元素的列表。 它将保留在模型使用 synchronism*存储事件*。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+1. 在窗体设计器中，添加**ListBox**名为`listBox1`。 这将在模型中显示的元素的列表。 它将保留在模型使用 synchronism*存储事件*。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
   
-2.  在自定义代码文件中，重写进一步 DocView 类的方法：  
+2. 在自定义代码文件中，重写进一步 DocView 类的方法：  
   
     ```  
   
@@ -120,7 +120,7 @@ ms.locfileid: "58935428"
   
     ```  
   
-3.  在针对该用户控件代码中，插入方法来侦听元素中添加和删除：  
+3. 在针对该用户控件代码中，插入方法来侦听元素中添加和删除：  
   
     ```  
   
@@ -149,7 +149,7 @@ ms.locfileid: "58935428"
   
     ```  
   
-4.  若要测试 DSL，请按 F5 并在实验实例中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，打开示例模型文件。  
+4. 若要测试 DSL，请按 F5 并在实验实例中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，打开示例模型文件。  
   
      请注意，列表框中显示的元素的列表在模型中，并且它是正确任何添加或删除操作，以及撤消和重做。  
   

@@ -1,5 +1,5 @@
 ---
-title: 错误： 无法在 Web 服务器上启动调试 |Microsoft Docs
+title: 错误：无法在 Web 服务器上启动调试 |Microsoft Docs
 ms.date: 05/23/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067126"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -51,7 +51,7 @@ ms.locfileid: "57526290"
 - [远程服务器返回了错误](#server_error)
 - [无法启动 ASP.NET 调试](#aspnet)
 - [调试器无法连接到远程计算机](#cannot_connect)
-- [ 请参见有关常见配置错误的帮助。运行在调试器外的网页，可能会提供进一步的信息。](#see_help)
+- [请参阅有关常见配置错误的帮助。运行在调试器外的网页，可能会提供进一步的信息。](#see_help)
 
 ## <a name="IISlist"></a> IIS 未列出匹配发布的网站 url
 
@@ -61,7 +61,7 @@ ms.locfileid: "57526290"
 
 ## <a name="web_server_config"></a> Web 服务器配置不正确
 
-- 请参阅[错误： web 服务器配置不正确](../debugger/error-the-web-server-is-not-configured-correctly.md)。
+- 请参阅[错误：Web 服务器配置不正确](../debugger/error-the-web-server-is-not-configured-correctly.md)。
 
 ## <a name="unabletoconnect"></a> 无法连接到 web 服务器
 
@@ -104,7 +104,7 @@ ms.locfileid: "57526290"
 
 - 如果不起作用或进行远程调试，按照步骤[检查您的 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> 检查您的 IIS 配置
+## <a name="vxtbshttpservererrorsthingstocheck"></a> 检查您的 IIS 配置
 
 在详细介绍了解决问题的步骤之后，在再次尝试调试前，你可能还需要重置 IIS。 你可以通过打开命令提示符并键入 `iisreset` 执行该操作。
 

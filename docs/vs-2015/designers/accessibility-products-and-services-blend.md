@@ -9,25 +9,25 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068946"
 ---
 # <a name="accessibility-products-and-services-blend"></a>辅助功能产品和服务 (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下各节提供有关使得残障人士更易访问 Microsoft Windows 的功能、产品和服务的信息：  
   
--   “Windows 辅助功能”  
+- “Windows 辅助功能”  
   
--   “替代格式的文档”  
+- “替代格式的文档”  
   
--   “针对有听力障碍人士的客户服务”  
+- “针对有听力障碍人士的客户服务”  
   
--   “更多相关信息”  
+- “更多相关信息”  
   
 > [!NOTE]
 >  本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果你在美国之外获得本产品，可以使用软件包附带的分公司信息卡，也可以访问 [Microsoft 辅助功能站点](http://go.microsoft.com/fwlink/?LinkID=75069) ，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。  

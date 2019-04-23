@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072631"
 ---
 # <a name="options-text-editor-cc-advanced"></a>选项，文本编辑器，C/C++，高级
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ ms.locfileid: "59660770"
   
  通过以下诸多选项进行设置：  
   
--   0 - 无  
+- 0 - 无  
   
--   1 - 常规  
+- 1 - 常规  
   
--   2 - 空闲  
+- 2 - 空闲  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>回退位置  
  回退位置指不使用主位置（与解决方案位于同一目录）时 SDF 和 IntelliSense 支持文件（例如，iPCH）所在的位置。 当用户无权写入到解决方案目录或者解决方案目录位于一个慢速设备上时，可能会出现这种情况。 默认回退位置位于用户的临时目录中。  

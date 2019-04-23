@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb95d2beb90358cbbe359076a815dee13ce7166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070900"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 创建 VSTO 外接程序
   可以使用 Visual Studio 中的 Microsoft Office 开发人员工具来创建可扩展 Office 的 .NET Framework 应用程序。 这些应用程序也称为“Office 解决方案” 。
@@ -29,9 +29,9 @@ ms.locfileid: "56644375"
 
  有关 Office 开发的最新信息，请访问 MSDN 上的以下开发中心：
 
--   [与 Visual Studio 开发人员门户的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=123844)包含指向产品信息、 代码示例、 视频和有关使用 Visual Studio 作为解决方案的一部分的自定义 Office 应用程序的社区资源.
+- [与 Visual Studio 开发人员门户的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=123844)包含指向产品信息、 代码示例、 视频和有关使用 Visual Studio 作为解决方案的一部分的自定义 Office 应用程序的社区资源.
 
--   [Microsoft Office 开发人员中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含指向技术文章、 代码示例、 下载、 社区信息、 支持和有关 Office 自定义项和 Office 业务应用程序 (Oba 的其他文档).
+- [Microsoft Office 开发人员中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含指向技术文章、 代码示例、 下载、 社区信息、 支持和有关 Office 自定义项和 Office 业务应用程序 (Oba 的其他文档).
 
 ## <a name="in-this-section"></a>本节内容
 - [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

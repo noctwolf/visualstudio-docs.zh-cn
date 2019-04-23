@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068361"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：将控件添加到 Backstage 视图
   可以使用功能区设计器将控件添加到单击时打开的菜单**文件**选项卡。当运行该应用程序，您将添加到的控件**文件**选项卡显示名为的组**外接程序**。
@@ -36,31 +36,31 @@ ms.locfileid: "56621339"
 
 ### <a name="to-add-controls-to-backstage-view"></a>若要将控件添加到 Backstage 视图
 
-1.  在设计视图中打开功能区项。
+1. 在设计视图中打开功能区项。
 
      有关如何添加**功能区 （可视化设计器）** 到你的项目项，请参阅[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2.  在功能区设计器中，单击**文件**选项卡。
+2. 在功能区设计器中，单击**文件**选项卡。
 
      菜单设计器随即出现。 此设计图面上不包含任何控件。
 
-3.  从**Office 功能区控件**选项卡**工具箱**，将任何以下控件拖动到菜单设计器上：
+3. 从**Office 功能区控件**选项卡**工具箱**，将任何以下控件拖动到菜单设计器上：
 
-    -   Button
+    - Button
 
-    -   CheckBox
+    - CheckBox
 
-    -   库
+    - 库
 
-    -   菜单
+    - 菜单
 
-    -   Separator
+    - Separator
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  将控件的菜单上将其移动到新位置。
+4. 将控件的菜单上将其移动到新位置。
 
 ## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)

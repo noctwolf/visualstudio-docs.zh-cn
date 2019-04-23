@@ -1,5 +1,5 @@
 ---
-title: 错误： 网站辅助进程已被 IIS 终止 |Microsoft Docs
+title: 错误：网站辅助进程已被 IIS 终止 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072651"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>错误：网站辅助进程已被 IIS 终止
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>错误：网站工作进程已被 IIS 终止
 调试器已停止对网站执行代码。 这导致 Internet Information Services (IIS) 认为辅助进程已停止响应。 因此，IIS 终止了辅助进程。
 
  若要继续调试，必须配置 IIS 以使辅助进程继续运行。 在低于 IIS 7 的 IIS 版本中，不会显示此错误消息。
@@ -30,9 +30,9 @@ ms.locfileid: "56698867"
 
 1. 打开“管理工具”窗口。
 
-   1.  单击“开始”，然后选择“控制面板”。
+   1. 单击“开始”，然后选择“控制面板”。
 
-   2.  在**控制面板**中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。 
+   2. 在**控制面板**中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。 
 
 2. 在**管理工具**窗口中，双击**Internet Information Services (IIS) Manager**。
 

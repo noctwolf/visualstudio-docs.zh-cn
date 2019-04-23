@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067152"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "58933896"
   
  本演练演示了如何：  
   
--   检查图形日志文档来标识显示问题的像素。  
+- 检查图形日志文档来标识显示问题的像素。  
   
--   使用“图形像素历史记录”  窗口进一步检查像素状态。  
+- 使用“图形像素历史记录”  窗口进一步检查像素状态。  
   
--   使用“HLSL 调试器”  检查像素和顶点着色器。  
+- 使用“HLSL 调试器”  检查像素和顶点着色器。  
   
 ## <a name="scenario"></a>方案  
  当顶点着色器向像素着色器传递不正确或不完整的信息时，通常会在对象上错误着色。  

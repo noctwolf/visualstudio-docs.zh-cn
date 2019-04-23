@@ -9,30 +9,30 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8807272ddac0be12fe8a6d80f0aa8e9425307d89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070246"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在此步骤中，向窗体添加一个 `TableLayoutPanel` 控件。 TableLayoutPanel 可帮助在窗体中正确地对齐您稍后将添加的控件。  
   
- ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211)（教程 1：用 Visual Basic 创建图片查看器 - 视频 2）或 [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200)（教程 1：用 C# 创建图片查看器 - 视频 2）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
+ ![视频链接](../data-tools/media/playvideo.gif "播放视频")本主题的视频版本，请参阅[教程 1:在 Visual Basic-视频 2 中创建图片查看器](http://go.microsoft.com/fwlink/?LinkId=205211)或[教程 1:创建图片查看器中的C#-视频 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>使用 TableLayoutPanel 控件设置窗体布局  
   
-1.  在 Visual Studio IDE 左侧，找到“工具箱”选项卡。选择“工具箱”选项卡，随即将显示工具箱。 （或者，在菜单栏上，依次选择“视图”、“工具箱”。）  
+1. 在 Visual Studio IDE 左侧，找到“工具箱”选项卡。选择“工具箱”选项卡，随即将显示工具箱。 （或者，在菜单栏上，依次选择“视图”、“工具箱”。）  
   
-2.  选择“容器”组旁边的小三角形符号打开该组，如下图所示。  
+2. 选择“容器”组旁边的小三角形符号打开该组，如下图所示。  
   
      ![容器组](../ide/media/express-toolbox.png "Express_Toolbox")  
 容器组  
   
-3.  可以向窗体中添加类似按钮、复选框和标签这样的控件。 双击“工具箱”中的 `TableLayoutPanel` 控件。 （您也可将控件从工具箱拖动到窗体上。）执行此操作时，IDE 会将 `TableLayoutPanel` 控件添加到窗体中，如下图所示。  
+3. 可以向窗体中添加类似按钮、复选框和标签这样的控件。 双击“工具箱”中的 `TableLayoutPanel` 控件。 （您也可将控件从工具箱拖动到窗体上。）执行此操作时，IDE 会将 `TableLayoutPanel` 控件添加到窗体中，如下图所示。  
   
      ![TableLayoutPanel 控件](../ide/media/express-formtablelayout.png "Express_FormTableLayout")  
 TableLayoutPanel 控件  
@@ -45,26 +45,26 @@ TableLayoutPanel 控件
      ![“图钉”图标](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")  
 “图钉”图标  
   
-4.  通过选择“TableLayoutPanel”来确保将它选中。 可以通过查看“属性”窗口顶部的下拉列表来验证选定哪个控件，如下图所示。  
+4. 通过选择“TableLayoutPanel”来确保将它选中。 可以通过查看“属性”窗口顶部的下拉列表来验证选定哪个控件，如下图所示。  
   
      ![显示 TableLayoutPanel 控件的“属性”窗口](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")  
 显示 TableLayoutPanel 控件的“属性”窗口  
   
-5.  在“属性”窗口的工具栏上选择“按字母顺序”按钮。 这会使“属性”窗口中的属性列表按字母顺序显示，这样更易于查找本教程中的属性。  
+5. 在“属性”窗口的工具栏上选择“按字母顺序”按钮。 这会使“属性”窗口中的属性列表按字母顺序显示，这样更易于查找本教程中的属性。  
   
-6.  控件选择器是“属性”窗口顶部的下拉列表。 在此示例中，它显示选定了名为 `tableLayoutPanel1` 的控件。 您可以通过在 Windows 窗体设计器中选择一个区域或者从控件选择器中进行选择来选择控件。 选择 `TableLayoutPanel` 后，请查找“Dock”属性并选择“Dock”，此属性应设置为“无”。 请注意，一个下拉箭头将出现在值旁边。 选择该箭头，然后选择“填充”按钮（中间的大按钮），如下图所示。  
+6. 控件选择器是“属性”窗口顶部的下拉列表。 在此示例中，它显示选定了名为 `tableLayoutPanel1` 的控件。 您可以通过在 Windows 窗体设计器中选择一个区域或者从控件选择器中进行选择来选择控件。 选择 `TableLayoutPanel` 后，请查找“Dock”属性并选择“Dock”，此属性应设置为“无”。 请注意，一个下拉箭头将出现在值旁边。 选择该箭头，然后选择“填充”按钮（中间的大按钮），如下图所示。  
   
      ![选定“填充”的“属性”窗口](../ide/media/express-docktable.png "Express_DockTable")  
 选定“填充”的“属性”窗口  
   
      Visual Studio 中的停靠是指 IDE 中的一个窗口附加到另一个窗口或区域的情况。 例如，“属性”窗口可以取消停靠，即在 Visual Studio 中独立地自由浮动，也可以靠近“解决方案资源管理器”停靠。  
   
-7.  将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。  
+7. 将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。  
   
     > [!NOTE]
-    >  TableLayoutPanel 与 Microsoft Office Word 中的表类似：它具有行和列，并且个别单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 `PictureBox` 控件、一个位于其左下方单元格中的 `CheckBox` 控件和四个位于其右下方单元格中的 `Button` 控件。  
+    >  TableLayoutPanel 的工作方式类似于 Microsoft Office Word 中的表：它有行和列，并且单个单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 `PictureBox` 控件、一个位于其左下方单元格中的 `CheckBox` 控件和四个位于其右下方单元格中的 `Button` 控件。  
   
-8.  TableLayoutPanel 当前具有两个大小相等的行和两个大小相等的列。 您需要调整它们，以使顶部行和右侧列更大一些。 在 Windows 窗体设计器中选择“TableLayoutPanel”。 在右上角有一个小的黑色三角形按钮，如下所示。  
+8. TableLayoutPanel 当前具有两个大小相等的行和两个大小相等的列。 您需要调整它们，以使顶部行和右侧列更大一些。 在 Windows 窗体设计器中选择“TableLayoutPanel”。 在右上角有一个小的黑色三角形按钮，如下所示。  
   
      ![“三角形”按钮](../ide/media/express-iconblacktriangle.gif "Express_IconBlackTriangle")  
 “三角形”按钮  
@@ -90,6 +90,6 @@ TableLayoutPanel 列和行样式
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   
--   若要转到下一个教程步骤，请参阅[步骤 5：向窗体添加控件](../ide/step-5-add-controls-to-your-form.md)。  
+- 要转到下一个教程步骤，请参阅[步骤 5：将控件添加到你的窗体](../ide/step-5-add-controls-to-your-form.md)。  
   
--   若要返回上一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。
+- 要返回上一个教程步骤，请参阅[步骤 3：设置窗体属性](../ide/step-3-set-your-form-properties.md)。

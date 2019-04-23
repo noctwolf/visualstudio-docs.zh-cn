@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071803"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 外接程序的注册表项
   部署使用 Visual Studio 创建的 VSTO 外接程序时，必须创建一组特定的注册表项。 这些注册表项可提供一些信息，使 Microsoft Office 应用程序能够发现和加载 VSTO 外接程序。
@@ -71,14 +71,14 @@ ms.locfileid: "56612707"
 
  下表列出了此注册表项下的条目。
 
-|条目|类型|值|
+|条目|类型|“值”|
 |-----------|----------|-----------|
 |**说明**|REG_SZ|必需。 VSTO 外接程序的简短说明。<br /><br /> 当用户在 Microsoft Office 应用程序的 **“选项”** 对话框的 **“外接程序”** 窗格中选择 VSTO 外接程序时，将会显示此说明。|
 |**FriendlyName**|REG_SZ|必需。 Microsoft Office 应用程序中的 **“COM 外接程序”** 对话框中显示的 VSTO 外接程序的描述性名称。 默认值为 VSTO 外接程序 ID。|
 |**LoadBehavior**|REG_DWORD|必需。 一个值，用于指定应用程序在何时尝试加载 VSTO 外接程序以及 VSTO 外接程序的当前状态（已加载或卸载）。<br /><br /> 默认情况下，此项设置为 3，指定在启动时加载 VSTO 外接程序。 有关详细信息，请参阅[LoadBehavior 值](#LoadBehavior)。 **注意：** 如果用户禁用 VSTO 外接程序，该操作会修改**LoadBehavior**中的值**HKEY_CURRENT_USER**注册表配置单元。 为每个用户的值**LoadBehavior** HKEY_CURRENT_USER 配置单元中的值将重写默认**LoadBehavior**中定义**HKEY_LOCAL_MACHINE** hive。|
 |**Manifest**|REG_SZ|必需。 VSTO 外接程序部署清单的完整路径。 该路径可以是本地计算机上的某个位置，也可以是网络共享 (UNC) 或 Web 服务器 (HTTP)。<br /><br /> 如果使用 Windows Installer 部署解决方案，则必须向 **清单** 路径添加前缀 **file:///** 。 你还必须将字符串 **&#124;vstolocal** (即管道字符 **&#124;** 跟**vstolocal**) 到此路径的末尾。 这可确保从安装文件夹，而非 ClickOnce 缓存加载你的解决方案。 有关详细信息，请参阅[使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。 **注意：** Visual Studio 在 VSTO 外接程序中生成的开发计算机上时，会自动追加 **&#124;vstolocal**到此注册表项的字符串。|
 
-###  <a name="OutlookEntries"></a> Outlook 窗体区域的注册表项
+### <a name="OutlookEntries"></a> Outlook 窗体区域的注册表项
  如果在 Outlook 的 VSTO 外接程序中创建自定义窗体区域，则会使用其他注册表项在 Outlook 中注册该窗体区域。 这些项是在针对窗体区域支持的每个邮件类别的不同注册表项下创建的。 这些注册表项位于以下位置，其中*根*是**HKEY_CURRENT_USER**或**HKEY_LOCAL_MACHINE**。
 
  *Root*\Software\Microsoft\Office\Outlook\FormRegions\\*message class*
@@ -87,7 +87,7 @@ ms.locfileid: "56612707"
 
  有关窗体区域注册表项的详细信息，请参阅[指定自定义窗体中的窗体区域的位置](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)。 有关 Outlook 窗体区域的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
-##  <a name="LoadBehavior"></a> LoadBehavior 值
+## <a name="LoadBehavior"></a> LoadBehavior 值
  **LoadBehavior**下的条目*根*\Software\Microsoft\Office\\*应用程序名称*\Addins\\*外接程序ID*键包含指定 VSTO 外接程序的运行的时行为的值的按位组合。 最低顺序位（值 0 和 1）指示 VSTO 外接程序当前是已卸载还是已加载。 其他位指示应用程序何时尝试加载 VSTO 外接程序。
 
  通常情况下， **LoadBehavior**条目用于设置为 0、 3 或 16 （采用十进制） 时 VSTO 外接程序安装在最终用户计算机上。 默认情况下，在生成或发布 VSTO 外接程序时，Visual Studio 会将外接程序的 **LoadBehavior** 条目设置为 3。

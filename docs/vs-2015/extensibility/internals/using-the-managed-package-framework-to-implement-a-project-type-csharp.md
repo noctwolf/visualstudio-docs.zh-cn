@@ -12,12 +12,12 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066827"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用托管包框架实现项目类型 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "58937483"
   
  若要将此项目添加到你的 VSPackage 的解决方案，请执行以下操作：  
   
-1.  下载到 MPFProj 文件*MPFProjectDir*。  
+1. 下载到 MPFProj 文件*MPFProjectDir*。  
   
-2.  在中*MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，更改以下块：  
+2. 在中*MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，更改以下块：  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ ms.locfileid: "58937483"
   </PropertyGroup>  
 ```  
   
-1.  创建 VSPackage 项目。  
+1. 创建 VSPackage 项目。  
   
-2.  卸载 VSPackage 项目。  
+2. 卸载 VSPackage 项目。  
   
-3.  VSPackage.csproj 文件编辑通过添加以下块之前另`<Import>`基块：  
+3. VSPackage.csproj 文件编辑通过添加以下块之前另`<Import>`基块：  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ ms.locfileid: "58937483"
   </PropertyGroup>  
 ```  
   
-1.  保存项目。  
+1. 保存项目。  
   
-2.  关闭并重新打开 VSPackage 解决方案。  
+2. 关闭并重新打开 VSPackage 解决方案。  
   
-3.  重新打开 VSPackage 项目。 应会看到一个名为 ProjectBase 的新目录。  
+3. 重新打开 VSPackage 项目。 应会看到一个名为 ProjectBase 的新目录。  
   
-4.  将添加到 VSPackage 项目的以下引用：  
+4. 将添加到 VSPackage 项目的以下引用：  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  生成项目。  
+5. 生成项目。  
   
 ## <a name="hierarchy-classes"></a>层次结构类  
  下表汇总了支持项目层次结构中 MPFProj 的类。 有关详细信息，请参阅[层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)。  

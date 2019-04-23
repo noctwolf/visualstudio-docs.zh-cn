@@ -13,12 +13,12 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 97118134106614e1e04cd2bc328ad31480618116
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cbd9426b7a9190872a2b04246d7f051b480a188d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066872"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：将依赖项添加到 VSIX 包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "58932306"
   
 #### <a name="to-add-a-dependency"></a>若要添加的依赖项  
   
-1.  打开 source.extension.vsixmanifest 文件中的**设计**视图。 转到**依赖项**选项卡，单击**新建**。  
+1. 打开 source.extension.vsixmanifest 文件中的**设计**视图。 转到**依赖项**选项卡，单击**新建**。  
   
-2.  若要添加的已安装的扩展： 在**添加新依赖关系**对话框中，选择**已安装扩展**，然后针对**名称**，选择列表中的扩展。  
+2. 若要添加的已安装的扩展： 在**添加新依赖关系**对话框中，选择**已安装扩展**，然后针对**名称**，选择列表中的扩展。  
   
-3.  若要添加另一个未安装的 VSIX:: 中**添加新依赖关系**对话框中，选择**在文件系统上的文件**，然后使用**浏览**按钮以选择 VSIX。  
+3. 若要添加另一个未安装的 VSIX:: 中**添加新依赖关系**对话框中，选择**在文件系统上的文件**，然后使用**浏览**按钮以选择 VSIX。  
   
 ## <a name="see-also"></a>请参阅  
  [VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   

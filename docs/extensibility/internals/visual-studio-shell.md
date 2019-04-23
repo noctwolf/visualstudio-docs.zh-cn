@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067074"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell 是中的集成主代理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 在 shell 提供了必要的功能，以允许 Vspackage 共享通用的服务。 由于体系结构的目标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]背心在 Vspackage 中的主要功能是 shell 是一个框架，可提供基本功能并支持跨-在 Vspackage 及其组件之间进行通信。
@@ -34,21 +34,21 @@ ms.locfileid: "56613279"
 
 - 管理某些共享服务，如<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>，它提供基本外壳程序功能和<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，其中提供了基本窗口化功能。
 
-- 管理解决方案 (.sln) 文件。 解决方案包含相关项目，类似于在 Visual c + + 6.0 的工作区 (.dsw) 文件的组。
+- 管理解决方案 (.sln) 文件。 解决方案包含的相关项目，类似于视觉对象中的工作区 (.dsw) 文件组C++6.0。
 
 - 跟踪命令行程序范围内所选内容、 上下文和货币。 Shell 跟踪以下类型的项：
 
-  -   当前项目
+  - 当前项目
 
-  -   当前项目项的 ItemID 当前 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - 当前项目项的 ItemID 当前 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   有关当前所选内容**属性**窗口或 `SelectionContainer`
+  - 有关当前所选内容**属性**窗口或 `SelectionContainer`
 
-  -   UI 上下文 Id 或 CmdUIGuids 控制命令、 菜单和工具栏的可见性
+  - UI 上下文 Id 或 CmdUIGuids 控制命令、 菜单和工具栏的可见性
 
-  -   活动窗口、 文档和撤消管理器当前处于活动状态元素
+  - 活动窗口、 文档和撤消管理器当前处于活动状态元素
 
-  -   驱动器动态帮助用户上下文属性
+  - 驱动器动态帮助用户上下文属性
 
   在 shell 还负责调解安装的 Vspackage 和当前服务之间的通信。 它支持 shell 的核心功能，并使所有的 Vspackage 中集成[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 这些核心功能包括以下各项：
 

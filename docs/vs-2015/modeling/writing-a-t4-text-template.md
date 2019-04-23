@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20974c9ebeaaa452be7078db51cb633be498b24c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067634"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ private void WriteSquareLine(int i)
   
  有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。  
   
-###  <a name="Include"></a> 包括代码和文本  
+### <a name="Include"></a> 包括代码和文本  
  `include` 指令插入其他模板文件的文本。 例如，下面的指令插入 `test.txt` 的内容。  
   
  `<#@ include file="c:\test.txt" #>`  

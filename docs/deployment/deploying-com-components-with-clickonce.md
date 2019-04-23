@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069115"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 旧的 COM 组件的部署具有传统上是一个困难的任务。 组件需要全局注册，因此可能会导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题由于完全独立于应用程序或组件的并行兼容。 Visual Studio，可部署在 Windows XP 或更高版本的操作系统上的独立的 COM 组件。
 
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供了一种简单而安全的机制，用于部署.NET 应用程序。 但是，如果您的应用程序使用旧的 COM 组件，您需要采取其他步骤进行部署。 本主题介绍如何部署独立的 COM 组件并引用本机组件 （例如，从 Visual Basic 6.0 或 Visual c + +）。
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供了一种简单而安全的机制，用于部署.NET 应用程序。 但是，如果您的应用程序使用旧的 COM 组件，您需要采取其他步骤进行部署。 本主题介绍如何部署独立的 COM 组件并引用本机组件 (例如，从 Visual Basic 6.0 或视觉对象C++)。
 
  有关部署独立的 COM 组件的详细信息，请参阅[使用 ClickOnce 和免注册 COM 简化应用部署](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。
 
@@ -46,9 +46,9 @@ ms.locfileid: "56632350"
 
  有两种方法的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署 COM 组件：
 
--   使用引导程序来部署您的 COM 组件;这适用于所有受支持的平台。
+- 使用引导程序来部署您的 COM 组件;这适用于所有受支持的平台。
 
--   使用本机组件隔离 (也称为免注册 COM) 部署。 但是，这仅适用于 Windows XP 或更高版本的操作系统。
+- 使用本机组件隔离 (也称为免注册 COM) 部署。 但是，这仅适用于 Windows XP 或更高版本的操作系统。
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>隔离和部署简单的 COM 组件的示例
  为了演示免注册 COM 组件部署，此示例将在引用使用 Visual Basic 6.0 中，创建独立本机 COM 组件的 Visual Basic 中创建基于 Windows 的应用程序并将其使用部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。
@@ -57,16 +57,16 @@ ms.locfileid: "56632350"
 
 ##### <a name="to-create-a-native-com-component"></a>若要创建的本机 COM 组件
 
-1.  从使用 Visual Basic 6.0**文件**菜单上，单击**新建**，然后**项目**。
+1. 从使用 Visual Basic 6.0**文件**菜单上，单击**新建**，然后**项目**。
 
-2.  在中**新的项目**对话框中，选择**Visual Basic**节点，然后选择**ActiveX DLL**项目。 在“名称”框中键入 `VB6Hello`。
+2. 在中**新的项目**对话框中，选择**Visual Basic**节点，然后选择**ActiveX DLL**项目。 在“名称”框中键入 `VB6Hello`。
 
     > [!NOTE]
     >  使用免注册 COM; 支持仅 ActiveX DLL 和 ActiveX 控件的项目类型不支持 ActiveX EXE 和 ActiveX 文档项目类型。
 
-3.  在中**解决方案资源管理器**，双击**Class1.vb**打开文本编辑器。
+3. 在中**解决方案资源管理器**，双击**Class1.vb**打开文本编辑器。
 
-4.  在 Class1.vb，为生成的代码后面添加以下代码`New`方法：
+4. 在 Class1.vb，为生成的代码后面添加以下代码`New`方法：
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ ms.locfileid: "56632350"
     End Sub
     ```
 
-5.  生成的组件。 从**构建**菜单上，单击**生成解决方案**。
+5. 生成的组件。 从**构建**菜单上，单击**生成解决方案**。
 
 > [!NOTE]
 >  免注册 COM 支持仅 Dll 和 COM 控制项目类型。 您不能使用免注册 com Exe
@@ -142,7 +142,7 @@ ms.locfileid: "56632350"
    如果您检查已发布的文件，您将注意 sysmon.ocx 文件是包含。 该控件是控件的完全独立于此应用程序，这意味着，如果最终用户的计算机已使用不同版本的另一个应用程序，将不会影响与此应用程序。
 
 ## <a name="reference-native-assemblies"></a>引用本机程序集
- Visual Studio 支持对本机 Visual Basic 6.0 或 c + + 程序集; 的引用此类引用称为本机引用。 可以告知是否为本机引用通过验证，其**文件类型**属性设置为**本机**或**ActiveX**。
+ Visual Studio 支持对本机 Visual Basic 6.0 的引用或C++程序集;此类引用称为本机引用。 可以告知是否为本机引用通过验证，其**文件类型**属性设置为**本机**或**ActiveX**。
 
  若要添加本机引用，请使用**添加引用**命令，然后浏览到该清单。 某些组件将放置在 DLL 内部的清单。 在这种情况下，只需选择 DLL 本身和 Visual Studio 会将其添加为本机引用如果检测到该组件包含嵌入的清单。 Visual Studio 还会自动将任何依赖文件或程序集是否引用的组件所在的文件夹的清单中列出。
 
@@ -163,7 +163,7 @@ ms.locfileid: "56632350"
 
 - 该组件管理系统，例如，设备驱动程序的打印后台处理程序的物理或虚拟设备。
 
-- 该组件是可再发行组件的数据访问。 数据应用程序通常需要单独的数据的访问可再发行组件才能运行安装。 不应尝试隔离组件，如 Microsoft ADO 数据控件、 Microsoft OLE DB 或 Microsoft 数据访问组件 (MDAC)。 相反，如果你的应用程序使用 MDAC 或 SQL Server Express，您应该将它们设置为系统必备组件;请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
+- 该组件是可再发行组件的数据访问。 数据应用程序通常需要单独的数据的访问可再发行组件才能运行安装。 不应尝试隔离组件，如 Microsoft ADO 数据控件、 Microsoft OLE DB 或 Microsoft 数据访问组件 (MDAC)。 相反，如果你的应用程序使用 MDAC 或 SQL Server Express，您应该将它们设置为系统必备组件;请参阅[如何：与 ClickOnce 应用程序一起安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。
 
   在某些情况下，可能会使组件开发人员重新设计免注册 com。 如果无法做到这一点，仍可以生成和发布应用程序依赖于它们通过使用引导程序的标准注册方案。 有关详细信息，请参阅[创建引导程序包](../deployment/creating-bootstrapper-packages.md)。
 

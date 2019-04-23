@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b2cfcc4662bff6b404e331a4329edaefd245df0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 646384f43a6196bca802998b709285c247e4c378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069036"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
 本演练演示如何将工具栏添加到工具窗口。
@@ -32,16 +32,16 @@ ms.locfileid: "56695617"
 
 ## <a name="create-a-toolbar-for-a-tool-window"></a>创建工具窗口工具栏
 
-1.  创建一个名为的 VSIX 项目`TWToolbar`具有名为这两个菜单命令**TWTestCommand**和名为工具窗口**TestToolWindow**。 有关详细信息，请参阅[与菜单命令创建一个扩展](../extensibility/creating-an-extension-with-a-menu-command.md)并[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。 您需要添加工具窗口模板之前添加命令项模板。
+1. 创建一个名为的 VSIX 项目`TWToolbar`具有名为这两个菜单命令**TWTestCommand**和名为工具窗口**TestToolWindow**。 有关详细信息，请参阅[与菜单命令创建一个扩展](../extensibility/creating-an-extension-with-a-menu-command.md)并[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。 您需要添加工具窗口模板之前添加命令项模板。
 
-2.  在中*TWTestCommandPackage.vsct*，查找符号部分。 在名为 guidTWTestCommandPackageCmdSet GuidSymbol 节点声明一个工具栏和工具栏组，如下所示。
+2. 在中*TWTestCommandPackage.vsct*，查找符号部分。 在名为 guidTWTestCommandPackageCmdSet GuidSymbol 节点声明一个工具栏和工具栏组，如下所示。
 
     ```xml
     <IDSymbol name="TWToolbar" value="0x1000" />
     <IDSymbol name="TWToolbarGroup" value="0x1050" />
     ```
 
-3.  在顶部`Commands`部分中，创建`Menus`部分。 添加`Menu`元素来定义工具栏。
+3. 在顶部`Commands`部分中，创建`Menus`部分。 添加`Menu`元素来定义工具栏。
 
     ```xml
     <Menus>
@@ -57,7 +57,7 @@ ms.locfileid: "56695617"
 
      不能像子菜单嵌套工具栏。 因此，您无需指定一个父级。 此外，您无需设置优先级，因为用户可以移动工具栏。 通常情况下，初始放置工具栏的定义以编程方式，但用户的后续更改永久保存。
 
-4.  在组部分中，定义一个组，包含工具栏的命令。
+4. 在组部分中，定义一个组，包含工具栏的命令。
 
     ```xml
 
@@ -66,7 +66,7 @@ ms.locfileid: "56695617"
     </Group>
     ```
 
-5.  在按钮部分中，将更改现有 Button 元素的父级为工具栏组，以便将显示工具栏。
+5. 在按钮部分中，将更改现有 Button 元素的父级为工具栏组，以便将显示工具栏。
 
     ```xml
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">
@@ -84,20 +84,20 @@ ms.locfileid: "56695617"
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>将工具栏添加到工具窗口
 
-1.  在中*TWTestCommandPackageGuids.cs*添加以下行。
+1. 在中*TWTestCommandPackageGuids.cs*添加以下行。
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2.  在中*TestToolWindow.cs*添加以下 using 语句。
+2. 在中*TestToolWindow.cs*添加以下 using 语句。
 
     ```csharp
     using System.ComponentModel.Design;
     ```
 
-3.  TestToolWindow 构造函数中添加以下行。
+3. TestToolWindow 构造函数中添加以下行。
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);
@@ -105,13 +105,13 @@ ms.locfileid: "56695617"
 
 ## <a name="test-the-toolbar-in-the-tool-window"></a>工具窗口中的测试工具栏
 
-1.  生成项目并启动调试。 应显示 Visual Studio 实验实例。
+1. 生成项目并启动调试。 应显示 Visual Studio 实验实例。
 
-2.  上**视图 / 其他 Windows**菜单上，单击**测试 ToolWindow**显示工具窗口。
+2. 上**视图 / 其他 Windows**菜单上，单击**测试 ToolWindow**显示工具窗口。
 
      您应看到顶部的工具栏 （看起来像默认图标） 左侧的工具窗口标题的下方。
 
-3.  在工具栏上，单击图标以显示消息**TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()**。
+3. 在工具栏上，单击图标以显示消息**TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()**。
 
 ## <a name="see-also"></a>请参阅
 - [添加工具栏](../extensibility/adding-a-toolbar.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何： 展开和折叠 Spy + + 树 |Microsoft Docs
+title: 如何：展开和折叠 Spy + + 树 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071182"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展开和折叠 Spy++ 树
-你可以展开和折叠 Windows、 进程和线程视图使用两种方法： 通过单击窗口中或通过使用的图标**树**菜单。 + 和-图标在树中处理与它们在 Visual c + + 项目窗口中。
+你可以展开和折叠 Windows、 进程和线程视图使用两种方法： 通过单击窗口中或通过使用的图标**树**菜单。 + 和-在视觉对象中充当在树中的图标C++项目窗口。
 
  **树**菜单包含四个命令：
 
-|菜单命令|说明|
+|菜单命令|描述|
 |------------------|-----------------|
 |**展开一级**|到下一个级别展开当前所选的项。|
 |**展开分支**|完全展开当前选定的项。|
@@ -34,9 +34,9 @@ ms.locfileid: "56687596"
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>若要展开或折叠 Spy + + 树
 
-1.  突出显示某一项在 Windows、 进程或线程视图中。
+1. 突出显示某一项在 Windows、 进程或线程视图中。
 
-2.  从**树**菜单中，选择某个展开或折叠命令。
+2. 从**树**菜单中，选择某个展开或折叠命令。
 
 ## <a name="see-also"></a>请参阅
 - [使用 Spy++](../debugger/using-spy-increment.md)

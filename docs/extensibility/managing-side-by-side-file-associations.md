@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067061"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理通过并行文件关联
 
@@ -51,7 +51,7 @@ ms.locfileid: "56954382"
 
   **确定最新版本的 Visual Studio 的 CustomAction 表行**
 
-  |操作|类型|源|目标|
+  |操作|类型|Source|Target|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ ms.locfileid: "56954382"
 
 - 指示用户运行版本的用户想要拥有的文件关联的 VSPackage 的修复。
 
--   提供了单独的可执行程序，用于重写相应的注册表项。
+- 提供了单独的可执行程序，用于重写相应的注册表项。
 
--   提供配置选项的页面或对话框框中，可让用户选择文件关联和回收丢失的关联。 指示用户在卸载后运行。
+- 提供配置选项的页面或对话框框中，可让用户选择文件关联和回收丢失的关联。 指示用户在卸载后运行。
 
 ## <a name="see-also"></a>请参阅
 

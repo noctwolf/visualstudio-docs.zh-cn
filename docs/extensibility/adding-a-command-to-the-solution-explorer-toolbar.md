@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fff1187793350b52484bcac99021be7fc2845607
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069492"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 本演练演示如何将添加到按钮**解决方案资源管理器**工具栏。
@@ -38,13 +38,13 @@ ms.locfileid: "56717788"
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>将按钮添加到解决方案资源管理器工具栏
  本演练的本部分演示如何将添加到按钮**解决方案资源管理器**工具栏。 单击按钮时，运行中的回调方法的代码。
 
-1.  在中*ToolbarButtonPackage.vsct*文件中，转到`<Symbols>`部分。 `<GuidSymbol>`节点包含的菜单组和由包模板生成的命令。 添加`<IDSymbol>`到此节点，以声明将保存您的命令组的元素。
+1. 在中*ToolbarButtonPackage.vsct*文件中，转到`<Symbols>`部分。 `<GuidSymbol>`节点包含的菜单组和由包模板生成的命令。 添加`<IDSymbol>`到此节点，以声明将保存您的命令组的元素。
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2.  在`<Groups>`部分中，现有组项之后, 您声明的新组中定义在上一步。
+2. 在`<Groups>`部分中，现有组项之后, 您声明的新组中定义在上一步。
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -55,7 +55,7 @@ ms.locfileid: "56717788"
 
      Guid: id 对的父级设置为`guidSHLMainMenu`并`IDM_VS_TOOL_PROJWIN`放入此组**解决方案资源管理器**工具栏中，并在设置高优先级值将其放在其他命令组的后面。
 
-3.  在中`<Buttons>`部分中，更改所生成的父 ID`<Button>`条目以反映您在上一步中定义的组。 已修改`<Button>`元素应如下所示：
+3. 在中`<Buttons>`部分中，更改所生成的父 ID`<Button>`条目以反映您在上一步中定义的组。 已修改`<Button>`元素应如下所示：
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -67,11 +67,11 @@ ms.locfileid: "56717788"
     </Button>
     ```
 
-4.  生成项目并启动调试。 将显示在实验实例。
+4. 生成项目并启动调试。 将显示在实验实例。
 
      **解决方案资源管理器**工具栏应显示现有按钮右侧的新建命令按钮。 该按钮的图标带删除线。
 
-5.  单击新建按钮。
+5. 单击新建按钮。
 
      包含消息的对话框**ToolbarButtonPackage 内 SolutionToolbar.ToolbarButton.MenuItemCallback()** 应显示。
 

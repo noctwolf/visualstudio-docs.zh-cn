@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066606"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>如何：创建映射到存储过程和函数的 DataContext 方法（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ ms.locfileid: "59668777"
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>创建返回自动生成类型的 DataContext 方法  
   
-1.  在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**你正在使用的数据库的节点。  
+1. 在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**你正在使用的数据库的节点。  
   
-2.  找到所需的存储过程并将其拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的空白区域。  
+2. 找到所需的存储过程并将其拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的空白区域。  
   
      具有自动生成返回类型的 <xref:System.Data.Linq.DataContext> 方法即被创建，并出现在“方法”窗格中。  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>创建具有实体类的返回类型的 DataContext 方法  
   
-1.  在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**你正在使用的数据库的节点。  
+1. 在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**你正在使用的数据库的节点。  
   
-2.  找到所需的存储过程并将其拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中的一个现有实体类上。  
+2. 找到所需的存储过程并将其拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中的一个现有实体类上。  
   
      具有所选实体类的返回类型的 <xref:System.Data.Linq.DataContext> 方法即被创建，并出现在“方法”窗格中。  
   

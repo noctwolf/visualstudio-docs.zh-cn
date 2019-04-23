@@ -25,19 +25,19 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 756b2791e5cc41ef934037ba3a680792db658591
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071767"
 ---
 # <a name="using-dump-files"></a>使用转储文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 带有或不带堆的转储文件；创建转储文件；打开转储文件；查找二进制文件、pdb 和转储文件的源文件。 
   
-##  <a name="BKMK_Contents"></a> 内容  
+## <a name="BKMK_Contents"></a> 内容  
  [什么是转储文件？](#BKMK_What_is_a_dump_file_)  
   
  [使用或不带堆的转储文件](#BKMK_Dump_files__with_or_without_heaps)  
@@ -50,14 +50,14 @@ ms.locfileid: "59000580"
   
  [查找二进制文件、 符号 (.pdb) 文件和源文件](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-##  <a name="BKMK_What_is_a_dump_file_"></a> 什么是转储文件？  
+## <a name="BKMK_What_is_a_dump_file_"></a> 什么是转储文件？  
  一个*转储文件*采用转储的时间是应用程序在该点的快照。 它显示了执行的进程和加载的模块。 如果转储与堆信息一起保存，转储文件将包含该时间点在应用程序的内存中储存的内容的快照。 在 Visual Studio 中打开带堆的转储文件类似于在调试会话中在断点处停止。 尽管你无法继续执行，但在转储发生时可以检查应用程序的堆栈、线程和变量值。  
   
  转储文件主要用于调试发生在开发人员无权访问的计算机上的问题。 例如，当无法在你的计算机上重现客户的故障或挂起时，可以从客户的计算机使用转储文件。 测试人员还会创建转储文件来保存故障或挂起数据，以便让测试计算机可用于更多测试。 Visual Studio 调试器可为托管或本机代码保存转储文件。 该调试器可加载由 Visual Studio 或保存文件的其他程序创建的转储文件*小型转储*格式。  
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 使用或不带堆的转储文件  
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> 使用或不带堆的转储文件  
  你可以创建带有或不带堆信息的转储文件。  
   
 - **转储文件的堆**包含应用程序的内存的快照。 这包括创建转储时的变量的值。 如果加载与堆一起保存的转储文件，即使未找到应用程序二进制文件，Visual Studio 也可以加载符号。 Visual Studio 还会在转储文件中保存加载的本机模块的二进制文件，这可让调试更加容易。  
@@ -66,7 +66,7 @@ ms.locfileid: "59000580"
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Requirements_and_limitations"></a>要求和限制  
+## <a name="BKMK_Requirements_and_limitations"></a>要求和限制  
   
 - 调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "59000580"
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_a_dump_file"></a>创建转储文件  
+## <a name="BKMK_Create_a_dump_file"></a>创建转储文件  
  使用 Visual Studio 创建转储文件：  
   
 - 在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**另存为转储**，**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。  
@@ -95,19 +95,19 @@ ms.locfileid: "59000580"
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Open_a_dump_file"></a>打开转储文件  
+## <a name="BKMK_Open_a_dump_file"></a>打开转储文件  
   
-1.  在 Visual Studio 中，选择**文件**，**打开**，**文件**。  
+1. 在 Visual Studio 中，选择**文件**，**打开**，**文件**。  
   
-2.  在“打开文件”对话框中定位并选择转储文件。 它通常具有 .dmp 扩展名。 然后选择**确定**。  
+2. 在“打开文件”对话框中定位并选择转储文件。 它通常具有 .dmp 扩展名。 然后选择“确定”。  
   
-3.  **转储文件摘要**窗口会显示。 在该窗口中，你可以查看转储文件的调试摘要信息、设置符号路径、启动调试以及将摘要信息复制到剪贴板中。  
+3. **转储文件摘要**窗口会显示。 在该窗口中，你可以查看转储文件的调试摘要信息、设置符号路径、启动调试以及将摘要信息复制到剪贴板中。  
   
      ![小型转储摘要页](../debugger/media/dbg-dump-summarypage.png "DBG_DUMP_SummaryPage")  
   
-4.  若要开始调试，请转到**操作**部分，然后选择**调试仅限本机**或**使用混合调试**。  
+4. 若要开始调试，请转到**操作**部分，然后选择**调试仅限本机**或**使用混合调试**。  
   
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找二进制文件、 符号 (.pdb) 文件和源文件  
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找二进制文件、 符号 (.pdb) 文件和源文件  
  若要使用 Visual Studio 的完整功能来调试转储文件，则需要访问以下文件：  
   
 - 为其执行转储的 .exe 文件和转储过程中使用的其他二进制文件（DLL 等）。  

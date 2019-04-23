@@ -1,5 +1,5 @@
 ---
-title: 测试区域 2:从源代码管理获取 |Microsoft Docs
+title: 测试区域 2：从源代码管理获取 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067178"
 ---
-# <a name="test-area-2-get-from-source-control"></a>测试区域 2:从源代码管理获取
+# <a name="test-area-2-get-from-source-control"></a>测试区域 2：从源代码管理获取
 此测试部分覆盖了用于从通过 Get 命令的版本存储区中检索项的测试用例。 可以应用这些测试用例，对本地和 Web 项目。
 
 ## <a name="command-menu-access"></a>命令菜单访问
@@ -26,13 +26,13 @@ ms.locfileid: "56630868"
 
 ##### <a name="get-latest-version"></a>获取最新版本：
 
--   **文件**，**源控件**，**获取最新版本**。
+- **文件**，**源控件**，**获取最新版本**。
 
--   **文件**，**获取最新版本**。
+- **文件**，**获取最新版本**。
 
--   快捷菜单中，**获取最新版本**。
+- 快捷菜单中，**获取最新版本**。
 
--   获取：**文件**，**源控件**，**获取**。
+- 获取：**文件**，**源控件**，**获取**。
 
 ## <a name="expected-behavior"></a>预期的行为
 

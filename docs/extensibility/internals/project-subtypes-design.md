@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066411"
 ---
 # <a name="project-subtypes-design"></a>项目子类型设计
 
@@ -23,11 +23,11 @@ ms.locfileid: "56335644"
 
  以下主题详细说明的基本设计和实现项目子类型：
 
--   项目子类型设计。
+- 项目子类型设计。
 
--   多级别聚合。
+- 多级别聚合。
 
--   支持接口。
+- 支持接口。
 
 ## <a name="project-subtype-design"></a>项目子类型设计
 
@@ -73,11 +73,11 @@ ms.locfileid: "56335644"
 
 包装较低级别的项目子类型的项目子类型实现需要以协作方式进行编程以允许内部项目子类型，才能正常工作。 一系列编程职责包括：
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>包装的内部的子类型的项目子类型的实现必须委托给<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>内部项目子类型的两个实现<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>包装的内部的子类型的项目子类型的实现必须委托给<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>内部项目子类型的两个实现<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A>方法。
 
--   <xref:EnvDTE80.IInternalExtenderProvider>包装项目子类型的实现必须委托给其内部项目子类型的。 具体而言，实现<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>需要从内部项目子类型获取名称的字符串，然后执行连接它想要添加为扩展程序的字符串。
+- <xref:EnvDTE80.IInternalExtenderProvider>包装项目子类型的实现必须委托给其内部项目子类型的。 具体而言，实现<xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A>需要从内部项目子类型获取名称的字符串，然后执行连接它想要添加为扩展程序的字符串。
 
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>包装项目子类型的实现必须实例化<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>对象其内部项目子类型，然后将其保留为私有委托，因为仅基项目的项目配置对象直接知道包装器项目子类型配置对象存在。 外部项目子类型可以最初选择想要直接处理配置接口，然后委托给内部项目子类型实现的其余部分<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>包装项目子类型的实现必须实例化<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg>对象其内部项目子类型，然后将其保留为私有委托，因为仅基项目的项目配置对象直接知道包装器项目子类型配置对象存在。 外部项目子类型可以最初选择想要直接处理配置接口，然后委托给内部项目子类型实现的其余部分<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>。
 
 ## <a name="supporting-interfaces"></a>支持接口
 

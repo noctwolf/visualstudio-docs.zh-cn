@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b841298c7d4683059599bb95b145514ab94873
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068851"
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 **初始化相关**中使用对话框[!INCLUDE[wfd1](../includes/wfd1-md.md)]编辑<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>属性<xref:System.ServiceModel.Activities.InitializeCorrelation>活动。 [!INCLUDE[crdefault](../includes/crdefault-md.md)] [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)主题。  
@@ -30,7 +30,7 @@ ms.locfileid: "58933119"
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>启动“初始化相关”对话框  
   
--   单击**视图**上**InitializeCorrelation**活动设计器或选择<xref:System.ServiceModel.Activities.InitializeCorrelation>中的活动[!INCLUDE[wfd2](../includes/wfd2-md.md)]然后单击省略号按钮旁边<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>中的属性属性网格中。  
+- 单击**视图**上**InitializeCorrelation**活动设计器或选择<xref:System.ServiceModel.Activities.InitializeCorrelation>中的活动[!INCLUDE[wfd2](../includes/wfd2-md.md)]然后单击省略号按钮旁边<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>中的属性属性网格中。  
   
 ## <a name="see-also"></a>请参阅  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
