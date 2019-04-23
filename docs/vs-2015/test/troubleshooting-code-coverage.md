@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117403"
 ---
 # <a name="troubleshooting-code-coverage"></a>代码覆盖率疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 ### <a name="youre-looking-at-a-previous-result"></a>你看到的是前一个结果  
  在修改并重新运行测试时，前一个代码覆盖率结果可能仍是可见的，包括来自上次运行的代码着色。  
   
-1.  运行“分析代码覆盖率”。  
+1. 运行“分析代码覆盖率”。  
   
-2.  确保选择了“代码覆盖率结果”窗口中的最新结果集。  
+2. 确保选择了“代码覆盖率结果”窗口中的最新结果集。  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb（符号）文件不可用  
  分析  
@@ -107,17 +107,17 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
  解决方法  
  有两种可能的错误类型：  
   
--   **XML 错误**  
+- **XML 错误**  
   
      在 Visual Studio XML 编辑器中打开 .runsettings 文件。 查找错误提示。  
   
--   **正则表达式错误**  
+- **正则表达式错误**  
   
      文件中的每个字符串都是正则表达式。 检查每个字符串中是否存在错误，尤其是查找：  
   
-    -   不匹配的括号 (...) 或非转义括号 \\(...\\)。 如果要在搜索字符串中匹配某个括号，则必须对其进行转义。 例如，若要匹配某个函数，请使用：`.*MyFunction\(double\)`  
+    - 不匹配的括号 (...) 或非转义括号 \\(...\\)。 如果要在搜索字符串中匹配某个括号，则必须对其进行转义。 例如，若要匹配某个函数，请使用：`.*MyFunction\(double\)`  
   
-    -   表达式开头有星号或加号。 若要匹配任意字符串，请使用句点后跟星号：`.*`  
+    - 表达式开头有星号或加号。 若要匹配任意字符串，请使用句点后跟星号：`.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>使用了错误排除的自定义 .runsettings 文件  
  分析  

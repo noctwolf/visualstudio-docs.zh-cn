@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4194ed3bac4d027b2bbf3cadd574f67343c0ae80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117127"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>在属性窗口中公开属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58935939"
   
 #### <a name="to-expose-properties-to-the-properties-window"></a>若要公开属性设置为属性窗口  
   
-1.  每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 项目名为`MyObjectPropertiesExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C# / 可扩展性**。  
+1. 每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 项目名为`MyObjectPropertiesExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C# / 可扩展性**。  
   
-2.  通过添加一个名为的自定义工具窗口项模板添加工具窗口`MyToolWindow`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 在中**添加新项对话框**，请转到**Visual C# 项 / 可扩展性**，然后选择**自定义工具窗口**。 在中**名称**在对话框底部字段中，将文件名称更改为`MyToolWindow.cs`。 有关如何创建自定义工具窗口的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+2. 通过添加一个名为的自定义工具窗口项模板添加工具窗口`MyToolWindow`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 在中**添加新项对话框**，请转到**Visual C# 项 / 可扩展性**，然后选择**自定义工具窗口**。 在中**名称**在对话框底部字段中，将文件名称更改为`MyToolWindow.cs`。 有关如何创建自定义工具窗口的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-3.  打开 MyToolWindow.cs 并添加以下 using 语句：  
+3. 打开 MyToolWindow.cs 并添加以下 using 语句：  
   
     ```  
     using System.Collections;  
@@ -44,7 +44,7 @@ ms.locfileid: "58935939"
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-4.  现在，添加以下字段以`MyToolWindow`类。  
+4. 现在，添加以下字段以`MyToolWindow`类。  
   
     ```csharp  
     private ITrackSelection trackSel;  
@@ -52,7 +52,7 @@ ms.locfileid: "58935939"
   
     ```  
   
-5.  将以下代码添加到 MyToolWindow 类。  
+5. 将以下代码添加到 MyToolWindow 类。  
   
     ```csharp  
     private ITrackSelection TrackSelection  
@@ -91,11 +91,11 @@ ms.locfileid: "58935939"
   
      `TrackSelection`属性使用`GetService`来获取`STrackSelection`服务，提供了<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。 `OnToolWindowCreated`事件处理程序和`SelectList`方法一起创建了包含仅的工具窗口窗格对象本身所选对象的列表。 `UpdateSelection`方法会示意**属性**窗口中显示的工具窗口窗格的公共属性。  
   
-6.  生成项目并启动调试。 应显示 Visual Studio 的实验实例。  
+6. 生成项目并启动调试。 应显示 Visual Studio 的实验实例。  
   
-7.  如果**属性**窗口不可见，请按 F4 打开它。  
+7. 如果**属性**窗口不可见，请按 F4 打开它。  
   
-8.  打开**MyToolWindow**窗口。 你可以找到它在**视图 / 其他 Windows**。  
+8. 打开**MyToolWindow**窗口。 你可以找到它在**视图 / 其他 Windows**。  
   
      打开相应的窗口和窗口窗格中的公共属性显示在**属性**窗口。  
   
@@ -108,7 +108,7 @@ ms.locfileid: "58935939"
   
 #### <a name="to-expose-tool-window-properties"></a>若要公开工具窗口属性  
   
-1.  打开 MyToolWindow.cs，并将公共的布尔属性 IsChecked 添加到 MyToolWindow 类。  
+1. 打开 MyToolWindow.cs，并将公共的布尔属性 IsChecked 添加到 MyToolWindow 类。  
   
     ```csharp  
     [Category("My Properties")]  
@@ -127,7 +127,7 @@ ms.locfileid: "58935939"
   
      此属性获取其状态从稍后将创建的 WPF 复选框。  
   
-2.  打开 MyToolWindowControl.xaml.cs 和 MyToolWindowControl 构造函数替换为以下代码。  
+2. 打开 MyToolWindowControl.xaml.cs 和 MyToolWindowControl 构造函数替换为以下代码。  
   
     ```vb  
     private MyToolWindow pane;  
@@ -141,19 +141,19 @@ ms.locfileid: "58935939"
   
      这样`MyToolWindowControl`访问`MyToolWindow`窗格。  
   
-3.  在 MyToolWindow.cs，更改`MyToolWindow`构造函数，如下所示：  
+3. 在 MyToolWindow.cs，更改`MyToolWindow`构造函数，如下所示：  
   
     ```csharp  
     base.Content = new MyToolWindowControl(this);  
     ```  
   
-4.  将更改为 MyToolWindowControl 的设计视图。  
+4. 将更改为 MyToolWindowControl 的设计视图。  
   
-5.  删除按钮并添加一个复选框，从**工具箱**到左上角。  
+5. 删除按钮并添加一个复选框，从**工具箱**到左上角。  
   
-6.  Checked 和 Unchecked 事件添加。 在设计视图中选择相应的复选框。 中**属性**窗口中，单击事件处理程序按钮 (右上角**属性**窗口)。 查找**Checked**并键入**checkbox_Checked**在文本框中，然后找到**选中此项**并键入**checkbox_Unchecked**在文本框中。  
+6. Checked 和 Unchecked 事件添加。 在设计视图中选择相应的复选框。 中**属性**窗口中，单击事件处理程序按钮 (右上角**属性**窗口)。 查找**Checked**并键入**checkbox_Checked**在文本框中，然后找到**选中此项**并键入**checkbox_Unchecked**在文本框中。  
   
-7.  添加复选框事件处理程序：  
+7. 添加复选框事件处理程序：  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -168,7 +168,7 @@ ms.locfileid: "58935939"
     }  
     ```  
   
-8.  生成项目并启动调试。  
+8. 生成项目并启动调试。  
   
 9. 在实验实例中，打开**MyToolWindow**窗口。  
   
@@ -184,7 +184,7 @@ ms.locfileid: "58935939"
   
 #### <a name="to-change-selection-lists"></a>若要更改的选择列表  
   
-1.  打开 MyToolWindow.cs 并添加一个名为的公共类`Simple`。  
+1. 打开 MyToolWindow.cs 并添加一个名为的公共类`Simple`。  
   
     ```csharp  
     public class Simple  
@@ -209,7 +209,7 @@ ms.locfileid: "58935939"
     }  
     ```  
   
-2.  将 SimpleObject 属性添加到 MyToolWindow 类，以及两种方法来切换**属性**窗口的窗口窗格之间的选定内容和`Simple`对象。  
+2. 将 SimpleObject 属性添加到 MyToolWindow 类，以及两种方法来切换**属性**窗口的窗口窗格之间的选定内容和`Simple`对象。  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -237,7 +237,7 @@ ms.locfileid: "58935939"
     }  
     ```  
   
-3.  在 mytoolwindowcontrol.cs，复选框处理程序将替换为以下代码行：  
+3. 在 mytoolwindowcontrol.cs，复选框处理程序将替换为以下代码行：  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -254,11 +254,11 @@ ms.locfileid: "58935939"
     }  
     ```  
   
-4.  生成项目并启动调试。  
+4. 生成项目并启动调试。  
   
-5.  在实验实例中，打开**MyToolWindow**窗口。  
+5. 在实验实例中，打开**MyToolWindow**窗口。  
   
-6.  选择中的复选框**MyToolWindow**窗口。 **属性**窗口将显示`Simple`对象属性， **SomeText**并**ReadOnly**。 清除复选框。 在窗口的公共属性显示在**属性**窗口。  
+6. 选择中的复选框**MyToolWindow**窗口。 **属性**窗口将显示`Simple`对象属性， **SomeText**并**ReadOnly**。 清除复选框。 在窗口的公共属性显示在**属性**窗口。  
   
     > [!NOTE]
     >  显示名称**SomeText**是**我的文本**。  

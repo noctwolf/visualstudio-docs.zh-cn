@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117715"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "58934588"
   
  源代码管理插件支持 MSSCCPRJ。SCC 文件必须遵守以下准则：  
   
--   只能有一个 MSSCCPRJ。SCC 文件，每个目录。  
+- 只能有一个 MSSCCPRJ。SCC 文件，每个目录。  
   
--   MSSCCPRJ。SCC 文件可以为给定目录中的源代码管理下的多个文件包含"AuxPath"和"项目名称"。  
+- MSSCCPRJ。SCC 文件可以为给定目录中的源代码管理下的多个文件包含"AuxPath"和"项目名称"。  
   
--   "AuxPath"字符串不能在其中的引号。 它允许包含引号作为分隔符 （例如，一对双引号可用来指示空字符串）。 从 MSSCCPRJ 中读取时，IDE 将条带"AuxPath"字符串中的所有引号。SCC 文件。  
+- "AuxPath"字符串不能在其中的引号。 它允许包含引号作为分隔符 （例如，一对双引号可用来指示空字符串）。 从 MSSCCPRJ 中读取时，IDE 将条带"AuxPath"字符串中的所有引号。SCC 文件。  
   
--   MSSCCPRJ 中的"项目名称"字符串。SCC 文件必须从返回的字符串完全匹配`SccGetProjPath`函数。 如果该函数返回的字符串具有引号，MSSCCPRJ 中的字符串。SCC 文件必须包含引号，反之亦然。  
+- MSSCCPRJ 中的"项目名称"字符串。SCC 文件必须从返回的字符串完全匹配`SccGetProjPath`函数。 如果该函数返回的字符串具有引号，MSSCCPRJ 中的字符串。SCC 文件必须包含引号，反之亦然。  
   
--   MSSCCPRJ。SCC 文件创建或更新时将文件置于源代码管理下。  
+- MSSCCPRJ。SCC 文件创建或更新时将文件置于源代码管理下。  
   
--   如果检测到 MSSCCPRJ。获取删除源代码管理文件、 一个提供程序应重新生成该下一次执行源代码管理操作，有关该目录。  
+- 如果检测到 MSSCCPRJ。获取删除源代码管理文件、 一个提供程序应重新生成该下一次执行源代码管理操作，有关该目录。  
   
--   MSSCCPRJ。SCC 文件必须严格遵循定义的格式。  
+- MSSCCPRJ。SCC 文件必须严格遵循定义的格式。  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 进行了说明。SCC 文件格式  
  下面是 MSSCCPRJ 的示例。SCC 文件格式 （仅作为指南，提供和不应在文件正文中包含的行号）：  

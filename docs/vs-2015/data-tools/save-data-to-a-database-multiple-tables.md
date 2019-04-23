@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118209"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ ms.locfileid: "59648297"
   
  本演练涉及以下任务：  
   
--   创建一个新**Windows 应用程序**项目。  
+- 创建一个新**Windows 应用程序**项目。  
   
--   创建和使用应用程序中配置数据源[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
+- 创建和使用应用程序中配置数据源[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
--   设置控件中的项[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+- 设置控件中的项[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
--   通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。  
+- 通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。  
   
--   修改数据集中每个表中的几个记录。  
+- 修改数据集中每个表中的几个记录。  
   
--   修改用于将数据集中的更新后的数据发回数据库的代码。  
+- 修改用于将数据集中的更新后的数据发回数据库的代码。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要完成本演练，你将需要：  
   
--   能够访问 Northwind 示例数据库。
+- 能够访问 Northwind 示例数据库。
   
 ## <a name="create-the-windows-application"></a>创建 Windows 应用程序  
  第一步是创建**Windows 应用程序**。 在此步骤中，向项目分配名称是可选的但我们将在您因为我们计划稍后保存为它提供一个名称。  
   
 #### <a name="to-create-the-new-windows-application-project"></a>若要创建新的 Windows 应用程序项目  
   
-1.  上**文件**菜单中，创建一个新项目。  
+1. 上**文件**菜单中，创建一个新项目。  
   
-2.  将项目命名为 `UpdateMultipleTablesWalkthrough`。  
+2. 将项目命名为 `UpdateMultipleTablesWalkthrough`。  
   
-3.  选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      创建“UpdateMultipleTablesWalkthrough”项目并将其添加到“解决方案资源管理器”中。  
   
@@ -73,27 +73,27 @@ ms.locfileid: "59648297"
   
 #### <a name="to-create-the-data-source"></a>创建数据源  
   
-1.  上**数据**菜单中，选择**显示数据源**。  
+1. 上**数据**菜单中，选择**显示数据源**。  
   
-2.  在中**数据源**窗口中，选择**添加新数据源**以启动**数据源配置向导**。  
+2. 在中**数据源**窗口中，选择**添加新数据源**以启动**数据源配置向导**。  
   
-3.  上**选择数据源类型**屏幕上，选择**数据库**，然后选择**下一步**。  
+3. 上**选择数据源类型**屏幕上，选择**数据库**，然后选择**下一步**。  
   
-4.  上**选择您的数据连接**屏幕执行下列任一操作：  
+4. 上**选择您的数据连接**屏幕执行下列任一操作：  
   
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
          或  
   
-    -   选择“新建连接”，打开“添加/修改连接”对话框。  
+    - 选择“新建连接”，打开“添加/修改连接”对话框。  
   
-5.  如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。  
+5. 如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。  
   
-6.  上**将连接字符串保存到应用程序配置文件**，选择**下一步**。  
+6. 上**将连接字符串保存到应用程序配置文件**，选择**下一步**。  
   
-7.  上**选择数据库对象**屏幕上，展开**表**节点。  
+7. 上**选择数据库对象**屏幕上，展开**表**节点。  
   
-8.  选择**客户**并**订单**表，并选择**完成**。  
+8. 选择**客户**并**订单**表，并选择**完成**。  
   
      “NorthwindDataSet”将添加到项目，这些表将显示在“数据源”窗口中。  
   
@@ -102,20 +102,20 @@ ms.locfileid: "59648297"
   
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>设置“数据源”窗口中项的拖放类型  
   
-1.  在中**数据源**窗口中，展开**客户**节点。  
+1. 在中**数据源**窗口中，展开**客户**节点。  
   
-2.  上**客户**节点中，选择**详细信息**从要更改的控件的控件列表**客户**为单个控件的表。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+2. 上**客户**节点中，选择**详细信息**从要更改的控件的控件列表**客户**为单个控件的表。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 ## <a name="create-the-data-bound-form"></a>创建数据绑定窗体  
  通过将某些项从“数据源”窗口拖到窗体，可创建数据绑定控件。  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>在窗体上创建数据绑定控件  
   
-1.  将主“Customers”节点从“数据源”窗口拖到“Form1”上。  
+1. 将主“Customers”节点从“数据源”窗口拖到“Form1”上。  
   
      带有描述性标签的数据绑定控件将显示在窗体上，同时还显示一个工具条 (<xref:System.Windows.Forms.BindingNavigator>)，用于在记录间进行导航。 组件栏中显示“[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)”、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。  
   
-2.  将相关的“Orders”节点从“数据源”窗口拖到“Form1”上。  
+2. 将相关的“Orders”节点从“数据源”窗口拖到“Form1”上。  
   
     > [!NOTE]
     >  相关的“Orders”节点位于“Fax”列下，该节点是“Customers”节点的子节点。  
@@ -130,9 +130,9 @@ ms.locfileid: "59648297"
   
 #### <a name="to-add-update-logic-to-the-application"></a>将更新逻辑添加到应用程序  
   
-1.  选择**保存**按钮<xref:System.Windows.Forms.BindingNavigator>。这将打开到代码编辑器`bindingNavigatorSaveItem_Click`事件处理程序。  
+1. 选择**保存**按钮<xref:System.Windows.Forms.BindingNavigator>。这将打开到代码编辑器`bindingNavigatorSaveItem_Click`事件处理程序。  
   
-2.  替换事件处理程序中的代码以调用相关 TableAdapter 的 `Update` 方法。 下面的代码首先创建三个临时数据表以保存每个 <xref:System.Data.DataRowState> 的更新信息（<xref:System.Data.DataRowState>、<xref:System.Data.DataRowState> 和 <xref:System.Data.DataRowState>）。 然后在正确的顺序运行更新。 代码应类似于：  
+2. 替换事件处理程序中的代码以调用相关 TableAdapter 的 `Update` 方法。 下面的代码首先创建三个临时数据表以保存每个 <xref:System.Data.DataRowState> 的更新信息（<xref:System.Data.DataRowState>、<xref:System.Data.DataRowState> 和 <xref:System.Data.DataRowState>）。 然后在正确的顺序运行更新。 代码应类似于：  
   
      [!code-csharp[VbRaddataSaving#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs#10)]
      [!code-vb[VbRaddataSaving#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb#10)]  
@@ -141,20 +141,20 @@ ms.locfileid: "59648297"
   
 #### <a name="to-test-the-application"></a>测试应用程序  
   
-1.  选择**F5**。  
+1. 选择**F5**。  
   
-2.  对每个表中的一条或多条记录的数据执行一些更改。  
+2. 对每个表中的一条或多条记录的数据执行一些更改。  
   
-3.  选择“保存”按钮。  
+3. 选择“保存”按钮。  
   
-4.  检查数据库中的值以验证更改是否已保存。  
+4. 检查数据库中的值以验证更改是否已保存。  
   
 ## <a name="next-steps"></a>后续步骤  
  具体取决于应用程序的要求，有可能想要在 Windows 应用程序中创建了数据绑定窗体后执行的几个步骤。 你可以通过以下操作来增强此演练的效果：  
   
--   将搜索功能添加到该窗体。 有关详细信息，请参阅[如何：参数化的查询到 Windows 窗体应用程序添加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)。  
+- 将搜索功能添加到该窗体。 有关详细信息，请参阅[如何：参数化的查询到 Windows 窗体应用程序添加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)。  
   
--   编辑数据源以添加或移除数据库对象。 有关详细信息，请参阅[如何：编辑数据集](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)。  
+- 编辑数据源以添加或移除数据库对象。 有关详细信息，请参阅[如何：编辑数据集](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)。  
   
 ## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117754"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：创建基本颜色着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54774109"
   
  本文档演示了这些活动：  
   
--   删除关系图中的节点  
+- 删除关系图中的节点  
   
--   将节点添加到关系图  
+- 将节点添加到关系图  
   
--   设置节点属性  
+- 设置节点属性  
   
--   连接节点  
+- 连接节点  
   
 ## <a name="creating-a-flat-color-shader"></a>创建平面颜色着色器  
  可将 RGB 颜色常量的颜色值写入最终输出颜色来实现平面颜色着色器。  

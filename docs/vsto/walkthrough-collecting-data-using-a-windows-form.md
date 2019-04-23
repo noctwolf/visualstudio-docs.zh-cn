@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116122"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>演练：使用 Windows 窗体收集数据
   本演练演示如何从 Microsoft Office Excel 文档级自定义项打开 Windows 窗体、从用户处收集信息并将这些信息写入工作表单元格。
@@ -32,9 +32,9 @@ ms.locfileid: "56629958"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 > [!NOTE]
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "56629958"
 
 ### <a name="to-create-a-new-project"></a>创建新项目
 
-1.  创建名为 **WinFormInput**的 Excel 工作簿项目，然后在向导中选择“创建新文档”  。 有关详细信息，请参阅[如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 创建名为 **WinFormInput**的 Excel 工作簿项目，然后在向导中选择“创建新文档”  。 有关详细信息，请参阅[如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 将在设计器中打开新的 Excel 工作簿，并将“WinFormInput”  项目添加到“解决方案资源管理器” 中。
 
@@ -52,13 +52,13 @@ ms.locfileid: "56629958"
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>将命名范围添加到 Sheet1
 
-1.  在 **上选择** A1 `Sheet1`。
+1. 在 **上选择** A1 `Sheet1`。
 
-2.  在“名称”  框中，键入 **formInput**。
+2. 在“名称”  框中，键入 **formInput**。
 
       “名称”框位于公式栏的左侧，工作表 **A** 列的正上方。
 
-3.  按 **Enter**。
+3. 按 **Enter**。
 
      <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件即会添加到 **A1**单元格。 工作表上没有可见的指示，但选择 **A1** 单元格时， **formInput** 会显示在  “名称”框（左侧工作表的正上方）和  “属性”窗口中。
 
@@ -107,11 +107,11 @@ ms.locfileid: "56629958"
 
 ### <a name="to-send-information-to-the-worksheet"></a>将信息发送到工作表
 
-1.  在 **“解决方案资源管理器”** 中，右键单击 **GetInputString**，然后单击 **“视图设计器”**。
+1. 在 **“解决方案资源管理器”** 中，右键单击 **GetInputString**，然后单击 **“视图设计器”**。
 
-2.  双击按钮以打开添加了 <xref:System.Windows.Forms.Control.Click> 事件处理程序的代码文件。
+2. 双击按钮以打开添加了 <xref:System.Windows.Forms.Control.Click> 事件处理程序的代码文件。
 
-3.  将代码添加到事件处理程序以从文本框提取输入，将其发送给该函数 `WriteStringToCell`，然后关闭窗体。
+3. 将代码添加到事件处理程序以从文本框提取输入，将其发送给该函数 `WriteStringToCell`，然后关闭窗体。
 
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
@@ -121,20 +121,20 @@ ms.locfileid: "56629958"
 
 ### <a name="to-test-your-workbook"></a>测试工作簿
 
-1.  按**F5**运行你的项目。
+1. 按**F5**运行你的项目。
 
-2.  确认 Windows 窗体显示。
+2. 确认 Windows 窗体显示。
 
-3.  在文本框中键入 **“Hello World”** ，然后单击“确定” 。
+3. 在文本框中键入 **“Hello World”** ，然后单击“确定” 。
 
-4.  确认工作表的 **A1** 单元格中出现 **“Hello World”** 。
+4. 确认工作表的 **A1** 单元格中出现 **“Hello World”** 。
 
 ## <a name="next-steps"></a>后续步骤
  本演练演示了显示 Windows 窗体和将数据传递到工作表的基础知识。 你可能想要执行的其他任务包括：
 
--   在 Excel 工作簿或 Word 文档中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
+- 在 Excel 工作簿或 Word 文档中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
--   修改的文档级自定义项或 VSTO 外接程序中提供 Microsoft Office 应用程序的用户界面。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。
+- 修改的文档级自定义项或 VSTO 外接程序中提供 Microsoft Office 应用程序的用户界面。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。
 
 ## <a name="see-also"></a>请参阅
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)

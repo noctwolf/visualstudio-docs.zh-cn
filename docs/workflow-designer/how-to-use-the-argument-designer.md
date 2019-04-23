@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4cbcb6b1310e6552dfd757a4b6347212f99cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2f32228de6486c7e2093175bcd57d698a881ab7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115804"
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用参数设计器
 
@@ -24,11 +24,11 @@ ms.locfileid: "55941174"
 
 ## <a name="to-create-a-new-argument"></a>创建新自变量
 
-1.  在 Visual Studio 中打开工作流或活动解决方案。
+1. 在 Visual Studio 中打开工作流或活动解决方案。
 
-2.  通过单击打开自变量设计器**自变量**设计画布左下角的按钮。 此时将显示自变量设计器。
+2. 通过单击打开自变量设计器**自变量**设计画布左下角的按钮。 此时将显示参数设计器。
 
-3.  单击标记为空的行**创建自变量**。 这会将新行添加使用新的自变量，使用以下默认值： 为 argumentx**名称**其中 x 是一个整数，其初始值为 1 来创建唯一的参数名称，将自动递增**中**有关**方向**，和**字符串**有关**自变量类型**。 为添加任何值**默认值**。 可以在工作流设计过程中随时更改这些值。
+3. 单击标记为空的行**创建自变量**。 这会将新行添加使用新的自变量，使用以下默认值： 为 argumentx**名称**其中 x 是一个整数，其初始值为 1 来创建唯一的参数名称，将自动递增**中**有关**方向**，和**字符串**有关**自变量类型**。 为添加任何值**默认值**。 可以在工作流设计过程中随时更改这些值。
 
     > [!NOTE]
     > 若要删除参数，通过单击选择该参数，然后按**删除**密钥。

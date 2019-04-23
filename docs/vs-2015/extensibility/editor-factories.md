@@ -10,12 +10,12 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58933441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117871"
 ---
 # <a name="editor-factories"></a>编辑器工厂
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58933441"
 ## <a name="the-editor-factory-registration-process"></a>编辑器工厂注册过程  
  Visual Studio 加载使用编辑器工厂编辑器时，将发生以下过程：  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目系统调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
+1. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目系统调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
-2.  此方法返回编辑器工厂。 Visual Studio 而延迟加载编辑器的包，但是，直到项目系统实际上需要在编辑器。  
+2. 此方法返回编辑器工厂。 Visual Studio 而延迟加载编辑器的包，但是，直到项目系统实际上需要在编辑器。  
   
-3.  当项目系统需要在编辑器时，Visual Studio 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，返回的文档视图和文档数据对象的专用的方法。  
+3. 当项目系统需要在编辑器时，Visual Studio 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，返回的文档视图和文档数据对象的专用的方法。  
   
-4.  如果编辑器工厂使用由 Visual Studio 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>返回文档数据对象，文档视图对象中，Visual Studio 文档窗口、 置于文档视图对象，然后创建到正在运行文档中的一个条目文档数据对象表 (RDT)。  
+4. 如果编辑器工厂使用由 Visual Studio 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>返回文档数据对象，文档视图对象中，Visual Studio 文档窗口、 置于文档视图对象，然后创建到正在运行文档中的一个条目文档数据对象表 (RDT)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
