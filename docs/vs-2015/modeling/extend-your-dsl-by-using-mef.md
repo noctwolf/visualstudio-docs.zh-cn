@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87b48a1cd5dc791609a2a15d1fcb657b41e9dcc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5685adb5a10ddc109ec8a4695e1dbfae6d30a6df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114244"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,15 +137,15 @@ ms.locfileid: "58931185"
   
 3. 添加以下.NET 程序集的引用：  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
 4. 在同一解决方案中创建一个 VSIX 项目。 若要执行此操作，在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，单击**扩展性**，然后选择**VSIX 项目**。  
   

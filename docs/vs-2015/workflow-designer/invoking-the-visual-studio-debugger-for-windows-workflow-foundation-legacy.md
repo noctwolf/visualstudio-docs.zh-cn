@@ -20,30 +20,30 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db045700da02911cf52d69b36a68607ab8a43f69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82532fc2864bcb4c19b0cf122e60fd9a64b2dbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113061"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>调用 Visual Studio Debugger for Windows Workflow Foundation（旧版）
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器在旧 [!INCLUDE[wf](../includes/wf-md.md)] 中调试 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。
 
  通常，您可以像调试用其他 Visual Studio 编程语言编写的程序那样来调试旧工作流。 您可以通过以下方式启动 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] Debugger for Windows Workflow Foundation：
 
--   选择**附加到进程**上**调试**菜单从可用的进程中选择正在运行的工作流实例。
+- 选择**附加到进程**上**调试**菜单从可用的进程中选择正在运行的工作流实例。
 
--   按**F5**以开始运行的工作流实例，或者以命中断点后继续运行。
+- 按**F5**以开始运行的工作流实例，或者以命中断点后继续运行。
 
 ## <a name="stepping-through-code"></a>逐句通过代码
  此调试器支持一个最常见的调试过程，即单步执行，此过程每次执行一行代码。 存在以下三个逐句通过代码的命令：
 
--   **中的步骤**:你可以单步执行活动使用**F11**。 此调试器可以单步执行任何定义的处理程序。 如果未定义处理程序，则可以逐过程执行该活动，或者对于包含其他活动的复合活动，您可以单步执行第一个要执行的活动。 以下活动不支持单步执行代码处理程序从设计器：**IfElseActivity**， **WhileActivity**， **ConditionedActivityGroup**，或**ReplicatorActivity**。 若要调试与这些活动关联的处理程序，你必须在代码中放置显式断点。
+- **中的步骤**:你可以单步执行活动使用**F11**。 此调试器可以单步执行任何定义的处理程序。 如果未定义处理程序，则可以逐过程执行该活动，或者对于包含其他活动的复合活动，您可以单步执行第一个要执行的活动。 以下活动不支持单步执行代码处理程序从设计器：**IfElseActivity**， **WhileActivity**， **ConditionedActivityGroup**，或**ReplicatorActivity**。 若要调试与这些活动关联的处理程序，你必须在代码中放置显式断点。
 
--   **跳出**:跳出活动使用**Shift-F11**。 如果跳出某个活动，则会运行当前活动及其所有同级活动，直到这些活动完成为止。 然后调试器将在当前活动的父项处中断。 从代码处理程序中跳出时，调试器将在与此处理程序关联的活动处中断。
+- **跳出**:跳出活动使用**Shift-F11**。 如果跳出某个活动，则会运行当前活动及其所有同级活动，直到这些活动完成为止。 然后调试器将在当前活动的父项处中断。 从代码处理程序中跳出时，调试器将在与此处理程序关联的活动处中断。
 
--   **逐过程执行**:可以逐过程执行活动使用**F10**。 逐过程执行复合活动时， 调试器将在此复合活动的第一个可执行的子活动处中断。 逐过程进行非组合键，如**CodeActivity**活动，调试器将执行该活动及其关联的处理程序和分页符上的下一个活动。 如果执行的活动是复合活动中的最后一个子活动，则在执行之后，调试器将在父活动处中断。
+- **逐过程执行**:可以逐过程执行活动使用**F10**。 逐过程执行复合活动时， 调试器将在此复合活动的第一个可执行的子活动处中断。 逐过程进行非组合键，如**CodeActivity**活动，调试器将执行该活动及其关联的处理程序和分页符上的下一个活动。 如果执行的活动是复合活动中的最后一个子活动，则在执行之后，调试器将在父活动处中断。
 
 ## <a name="attaching-to-a-process"></a>附加到进程
  若要通过附加到进程中调试工作流，选择从可用的进程**可用进程**列表框中的**附加到进程**对话框。 如果**自动：工作流代码**不会显示在**附加到**文本，然后单击**选择**。 在中**选择代码类型**对话框中，单击**调试这些代码类型**，然后选择**工作流**。 然后单击**确定**然后单击**附加**。

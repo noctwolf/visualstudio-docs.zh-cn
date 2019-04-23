@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 585dfa357082fbb46794ab5f6dcc7b0e141fc9b7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113804"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ ms.locfileid: "59653744"
   
  更新数据源的确切步骤可以根据业务需求而有所不同，但包括以下步骤：  
   
-1.  调用该适配器`Update`中的方法`try` / `catch`块。  
+1. 调用该适配器`Update`中的方法`try` / `catch`块。  
   
-2.  如果捕获到异常，找到导致此错误的数据行。 有关详细信息，请参阅[如何：查找具有错误的行](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)。  
+2. 如果捕获到异常，找到导致此错误的数据行。 有关详细信息，请参阅[如何：查找具有错误的行](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c)。  
   
-3.  解决此问题在数据行 （您可以如果以编程方式或无效的行显示给用户进行修改），并再试一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。  
+3. 解决此问题在数据行 （您可以如果以编程方式或无效的行显示给用户进行修改），并再试一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。  
   
 ## <a name="savedata-to-a-database"></a>Savedata 到数据库  
  调用`Update`TableAdapter 的方法。 传递包含要写入到数据库的值的数据表的名称。  
   
 #### <a name="to-update-a-database-by-using-a-tableadapter"></a>若要使用 TableAdapter 更新数据库  
   
--   将 TableAdapter`Update`中的方法`try` / `catch`块。 下面的示例演示如何更新的内容`Customers`表中`NorthwindDataSet`内`try` / `catch`块。  
+- 将 TableAdapter`Update`中的方法`try` / `catch`块。 下面的示例演示如何更新的内容`Customers`表中`NorthwindDataSet`内`try` / `catch`块。  
   
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
      [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  

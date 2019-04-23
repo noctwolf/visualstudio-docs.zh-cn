@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113776"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：显示 WPF 跟踪信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "58934360"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>启用或自定义 WPF 跟踪信息  
   
-1.  在“工具”菜单上选择“选项”。  
+1. 在“工具”菜单上选择“选项”。  
   
-2.  在“选项”对话框内左侧的框中，打开“调试”节点。  
+2. 在“选项”对话框内左侧的框中，打开“调试”节点。  
   
-3.  在“调试”下，单击“输出窗口”。  
+3. 在“调试”下，单击“输出窗口”。  
   
-4.  在“常规输出设置”下，选择“所有调试输出”。  
+4. 在“常规输出设置”下，选择“所有调试输出”。  
   
-5.  在右侧的框中，查找“WPF 跟踪设置”。  
+5. 在右侧的框中，查找“WPF 跟踪设置”。  
   
-6.  打开“WPF 跟踪设置”节点。  
+6. 打开“WPF 跟踪设置”节点。  
   
-7.  在“WPF 跟踪设置”下，单击要启用的设置的类别（例如，“数据绑定”）。  
+7. 在“WPF 跟踪设置”下，单击要启用的设置的类别（例如，“数据绑定”）。  
   
      “数据绑定”或单击的任何类别旁边的“设置”列中将出现一个下拉列表控件。  
   
-8.  单击下拉列表并选择你想要查看的跟踪信息的类型：**所有**，**关键**，**错误**，**警告**，**信息**，**详细**，或**ActivityTracing**。  
+8. 单击下拉列表并选择你想要查看的跟踪信息的类型：**所有**，**关键**，**错误**，**警告**，**信息**，**详细**，或**ActivityTracing**。  
   
      如果选择“严重”，则仅启用“严重”事件的跟踪。  
   
@@ -69,23 +69,23 @@ ms.locfileid: "58934360"
   
 ### <a name="to-disable-wpf-trace-information"></a>禁用 WPF 跟踪信息  
   
-1.  在“工具”菜单上选择“选项”。  
+1. 在“工具”菜单上选择“选项”。  
   
-2.  在“选项”对话框内左侧的框中，打开“调试”节点。  
+2. 在“选项”对话框内左侧的框中，打开“调试”节点。  
   
-3.  在“调试”下，单击“输出窗口”。  
+3. 在“调试”下，单击“输出窗口”。  
   
-4.  在右侧的框中，查找“WPF 跟踪设置”。  
+4. 在右侧的框中，查找“WPF 跟踪设置”。  
   
-5.  打开“WPF 跟踪设置”节点。  
+5. 打开“WPF 跟踪设置”节点。  
   
-6.  在“WPF 跟踪设置”下，单击要启用的设置的类别（例如，“数据绑定”）。  
+6. 在“WPF 跟踪设置”下，单击要启用的设置的类别（例如，“数据绑定”）。  
   
      “数据绑定”或单击的任何类别旁边的“设置”列中将出现一个下拉列表控件。  
   
-7.  单击该下拉列表并选择“关闭”。  
+7. 单击该下拉列表并选择“关闭”。  
   
-8.  单击 **“确定”**。  
+8. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 WPF](../debugger/debugging-wpf.md)

@@ -14,23 +14,23 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09027661b07bbc489dff4985d3858eb8366437a7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115089"
 ---
 # <a name="object-expected"></a>缺少对象
 你尝试调用了 `Object` 类型以外的对象上的方法或属性，或在需要 `Object` 时传递了 `Object` 类型以外的自变量。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   仅调用类型为 `Object` 的对象上的方法或属性。  
+- 仅调用类型为 `Object` 的对象上的方法或属性。  
   
--   如果非对象参数发生错误，则传递类型为 `Object` 的对象。  
+- 如果非对象参数发生错误，则传递类型为 `Object` 的对象。  
   
--   检查是否正在调用未定义的或 null 引用而不是类型为 `Object` 的对象。  
+- 检查是否正在调用未定义的或 null 引用而不是类型为 `Object` 的对象。  
   
      例如，如果以下代码的 myVar 上出现此错误：  
   

@@ -11,12 +11,12 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112944"
 ---
 # <a name="test-area-8-plug-in-switching"></a>测试区域 8：插件切换
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "58931904"
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]测试用例中使用集成的开发环境菜单路径。  
   
--   当前源代码管理插件：**工具** -> **选项** -> **源代码管理** -> **插件选择**。  
+- 当前源代码管理插件：**工具** -> **选项** -> **源代码管理** -> **插件选择**。  
   
--   更改源控制绑定：**文件** -> **源代码管理** -> **更改源代码管理**...  
+- 更改源控制绑定：**文件** -> **源代码管理** -> **更改源代码管理**...  
   
 ## <a name="common-expected-behavior"></a>常见的预期的行为  
  更改源代码管理插件的一种解决方案是可能无需退出 Visual Studio 或重新加载解决方案。 此外，当前源代码管理插件自动更改为解决方案加载该解决方案时所使用的一个。  

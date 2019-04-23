@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113308"
 ---
 # <a name="validate-your-uml-model"></a>验证 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ ms.locfileid: "58934866"
   
 #### <a name="to-install-a-visual-studio-extension"></a>安装 Visual Studio 扩展  
   
-1.  双击 **.vsix**在 Windows 资源管理器 （或文件资源管理器） 中的文件。  
+1. 双击 **.vsix**在 Windows 资源管理器 （或文件资源管理器） 中的文件。  
   
-2.  重新启动任何已在运行的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实例。  
+2. 重新启动任何已在运行的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实例。  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>禁用和卸载验证约束  
  需使用约束不适用的某一模型时，可以暂时禁用包含约束的扩展。 采用这种方式，便可以通过启用和禁用不同的扩展在不同的时间使用不同种类的模型。  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>禁用或卸载 Visual Studio 扩展  
   
-1.  上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**工具**菜单中，单击**扩展和更新**。  
+1. 上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**工具**菜单中，单击**扩展和更新**。  
   
-2.  扩展的旁边，单击**禁用**暂时禁用该扩展。 您可以重新启用它更高版本返回给**扩展和更新**窗口。  
+2. 扩展的旁边，单击**禁用**暂时禁用该扩展。 您可以重新启用它更高版本返回给**扩展和更新**窗口。  
   
      \- 或 -  
   
      单击**卸载**以删除该扩展。  
   
-3.  重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+3. 重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="see-also"></a>请参阅  
  [为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)   

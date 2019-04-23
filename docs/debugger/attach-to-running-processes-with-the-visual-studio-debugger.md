@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115154"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 可将 Visual Studio 调试器附加到本地或远程计算机上正在运行的进程。 进程运行后，在 Visual Studio 中选择“调试” > “附加到进程”，或按 Ctrl+Alt+P，然后使用“附加到进程”对话框将调试器附加到进程。
@@ -43,7 +43,7 @@ ms.locfileid: "59366401"
 > [!TIP]
 > 不确定自己的调试方案是否需要使用“附加到进程”？ 请参阅[常见调试方案](#BKMK_Scenarios)。
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> 附加到本地计算机上正在运行的进程
+## <a name="BKMK_Attach_to_a_running_process"></a> 附加到本地计算机上正在运行的进程
 
 若要快速重新附加到以前附加到进程，请参阅[重新附加到进程](#BKMK_reattach)。
 
@@ -79,7 +79,7 @@ ms.locfileid: "59366401"
 >[!NOTE]
 >可附加到多个应用进行调试，但在调试器中一次只能有一个应用处于活动状态。 可在 Visual Studio 的“调试位置”工具栏或“进程”窗口中设置活动的应用。
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加到远程计算机上的进程
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加到远程计算机上的进程
 
 还可以在“附加到进程”对话框中选择远程计算机，查看该计算机上运行的可用进程列表，并附加到一个或多个进程以进行调试。 远程调试器 (msvsmon.exe) 必须在远程计算机上运行。 有关详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。
 
@@ -186,7 +186,7 @@ ms.locfileid: "59366401"
 
 在某些本地调试方案中，如果应用中存在正确的符号文件，则可以在 Visual Studio 中进行调试而无法访问源。 默认情况下，这需要调试版本。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a>排查附加错误
+## <a name="BKMK_Troubleshoot_attach_errors"></a>排查附加错误
  当调试器附加到一个正在运行的进程时，该进程可能包含一种或多种类型的代码。 可在 **“选择代码类型”** 对话框中显示并选择可将调试器附加到的代码类型。
 
  有时，调试器能够成功附加到一种代码类型，但不能附加到另一种代码类型。 这种情况可能发生在你尝试附加到远程计算机上运行的进程时。 原因是远程计算机上可能安装了一些代码类型的远程调试组件，但没有安装另一些代码类型的远程调试组件。 这种情况还可能发生在你尝试为直接数据库调试附加到两个或多个进程时。 SQL 调试仅支持附加到单个进程。
@@ -199,19 +199,19 @@ ms.locfileid: "59366401"
 
  **获得有关代码类型未能附加的具体信息：**
 
-1.  从进程中分离。 上**调试**菜单中，选择**全部分离**。
+1. 从进程中分离。 上**调试**菜单中，选择**全部分离**。
 
-1.  重新附加到进程，仅选择代码类型未能附加。
+1. 重新附加到进程，仅选择代码类型未能附加。
 
-    1.  在“附加到进程”对话框，选择“可用进程”列表中的进程。
+    1. 在“附加到进程”对话框，选择“可用进程”列表中的进程。
 
-    2.  选择**选择**。
+    2. 选择**选择**。
 
-    3.  在 **“选择代码类型”** 对话框中，选择 **“调试以下代码类型”** 和未能附加的代码类型。 取消选择其他代码类型。
+    3. 在 **“选择代码类型”** 对话框中，选择 **“调试以下代码类型”** 和未能附加的代码类型。 取消选择其他代码类型。
 
-    4.  选择 **确定**。
+    4. 选择 **确定**。
 
-    5.  在中**附加到进程**对话框中，选择**附加**。
+    5. 在中**附加到进程**对话框中，选择**附加**。
 
     此时，附加将彻底失败，并且你将收到一条特定的错误消息。
 

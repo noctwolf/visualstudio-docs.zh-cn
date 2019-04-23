@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079599"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "58930668"
   
  本演练介绍了如何完成这些任务：  
   
--   创建 Visual Studio 模板。  
+- 创建 Visual Studio 模板。  
   
--   部署 Visual Studio 模板。  
+- 部署 Visual Studio 模板。  
   
--   创建项目类型的子节点，在**新的项目**对话框。  
+- 创建项目类型的子节点，在**新的项目**对话框。  
   
--   启用 Visual Studio 模板中的参数替换。  
+- 启用 Visual Studio 模板中的参数替换。  
   
--   创建的项目属性页。  
+- 创建的项目属性页。  
   
 > [!NOTE]
 >  在本演练中的步骤基于 C# 项目。 但是，除了如文件扩展名和代码的详细信息，可以使用相同的步骤对于 Visual Basic 项目。  
@@ -120,9 +120,9 @@ ms.locfileid: "58930668"
 ## <a name="adding-a-minimal-vsct-file"></a>添加最小.vsct 文件  
  Visual Studio 必须以识别新的或修改 Visual Studio 模板模式下安装程序在运行。 模式下安装程序需要.vsct 文件必须存在。 因此，必须将最小.vsct 文件添加到项目。  
   
-1.  将添加到 SimpleProject 项目名 SimpleProject.vsct 的 XML 文件。  
+1. 将添加到 SimpleProject 项目名 SimpleProject.vsct 的 XML 文件。  
   
-2.  将以下代码替换为 SimpleProject.vsct 文件的内容。  
+2. 将以下代码替换为 SimpleProject.vsct 文件的内容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ ms.locfileid: "58930668"
     </CommandTable>  
     ```  
   
-3.  设置**生成操作**到此文件**VSCTCompile**。 您可以执行此操作仅在.csproj 文件中，不能在**属性**窗口。 请确保**生成操作**此文件设置为**None**此时。  
+3. 设置**生成操作**到此文件**VSCTCompile**。 您可以执行此操作仅在.csproj 文件中，不能在**属性**窗口。 请确保**生成操作**此文件设置为**None**此时。  
   
-    1.  右键单击 SimpleProject 节点，然后单击**编辑 SimpleProject.csproj**。  
+    1. 右键单击 SimpleProject 节点，然后单击**编辑 SimpleProject.csproj**。  
   
-    2.  在.csproj 文件中，找到 SimpleProject.vsct 的项目。  
+    2. 在.csproj 文件中，找到 SimpleProject.vsct 的项目。  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  将生成操作更改**VSCTCompile**。  
+    3. 将生成操作更改**VSCTCompile**。  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  将项目文件和关闭编辑器。  
+    4. 将项目文件和关闭编辑器。  
   
-    5.  保存 SimpleProject 节点，然后在**解决方案资源管理器**单击**重新加载项目**。  
+    5. 保存 SimpleProject 节点，然后在**解决方案资源管理器**单击**重新加载项目**。  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>检查 Visual Studio 模板生成步骤  
  VSPackage 项目生成系统.vstemplate 文件发生更改或重新生成包含.vstemplate 文件的项目时，通常将 Visual Studio 运行模式下安装程序中。 通过将 MSBuild 的详细级别设置为 Normal 或更高版本，您可以照着操作。  
@@ -209,11 +209,11 @@ ZipProjects:
   
  本部分演示如何创建一个控制台中的子节点 SimpleProject 项目类型。  
   
-1.  \Templates\Projects\SimpleProject\ 文件夹重命名为 \Templates\Projects\ConsoleApp\\。  
+1. \Templates\Projects\SimpleProject\ 文件夹重命名为 \Templates\Projects\ConsoleApp\\。  
   
-2.  在中**属性**窗口中，选择 \Templates\Projects\ConsoleApp\ 文件夹中的所有五个文件，并确保**生成操作**设置为**ZipProject**。  
+2. 在中**属性**窗口中，选择 \Templates\Projects\ConsoleApp\ 文件夹中的所有五个文件，并确保**生成操作**设置为**ZipProject**。  
   
-3.  在 SimpleProject.vstemplate 文件中，添加以下行的末尾\<TemplateData > 部分中的，只需在结束标记。  
+3. 在 SimpleProject.vstemplate 文件中，添加以下行的末尾\<TemplateData > 部分中的，只需在结束标记。  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      这将导致才会出现在控制台中的子节点和 SimpleProject 父节点，这是子节点的上一级别中的控制台应用程序模板。  
   
-4.  保存 SimpleProject.vstemplate 文件。  
+4. 保存 SimpleProject.vstemplate 文件。  
   
-5.  在.csproj 文件中，添加\<OutputSubPath > 到每个 ZipProject 元素。 卸载项目，与之前一样，并编辑项目文件。  
+5. 在.csproj 文件中，添加\<OutputSubPath > 到每个 ZipProject 元素。 卸载项目，与之前一样，并编辑项目文件。  
   
-6.  找到\<ZipProject > 元素。 每个\<ZipProject > 元素中，添加\<OutputSubPath > 元素并为其提供值控制台。 ZipProject  
+6. 找到\<ZipProject > 元素。 每个\<ZipProject > 元素中，添加\<OutputSubPath > 元素并为其提供值控制台。 ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  添加此\<PropertyGroup > 的项目文件：  
+7. 添加此\<PropertyGroup > 的项目文件：  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  保存项目文件并重新加载项目。  
+8. 保存项目文件并重新加载项目。  
   
 ## <a name="testing-the-project-type-child-node"></a>测试项目类型的子节点  
  测试已修改的项目文件以查看是否**控制台**子节点显示在**新项目**对话框。  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>若要替换项目的模板参数  
   
-1.  在 SimpleProjectNode.cs 文件中，删除`AddFileFromTemplate`方法。  
+1. 在 SimpleProjectNode.cs 文件中，删除`AddFileFromTemplate`方法。  
   
-2.  在 \Templates\Projects\ConsoleApp\SimpleProject.myproj 文件中，找到\<根命名空间 > 属性并将其值更改为 $safeprojectname$。  
+2. 在 \Templates\Projects\ConsoleApp\SimpleProject.myproj 文件中，找到\<根命名空间 > 属性并将其值更改为 $safeprojectname$。  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  在 \Templates\Projects\SimpleProject\Program.cs 文件中，文件的内容将替换为以下代码：  
+3. 在 \Templates\Projects\SimpleProject\Program.cs 文件中，文件的内容将替换为以下代码：  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  重新生成 SimpleProject 项目并启动调试。 应显示在实验实例。  
+4. 重新生成 SimpleProject 项目并启动调试。 应显示在实验实例。  
   
-5.  创建新的 SimpleProject 控制台应用程序。 (在**项目类型**窗格中，选择**SimpleProject**。 下**Visual Studio 已安装的模板**，选择**控制台应用程序**。)  
+5. 创建新的 SimpleProject 控制台应用程序。 (在**项目类型**窗格中，选择**SimpleProject**。 下**Visual Studio 已安装的模板**，选择**控制台应用程序**。)  
   
-6.  在新建的项目中，打开 Program.cs。 它应类似于以下 （文件中的 GUID 值将有所不同。）：  
+6. 在新建的项目中，打开 Program.cs。 它应类似于以下 （文件中的 GUID 值将有所不同。）：  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  在本部分中创建的属性页可以更改和保存这些项目属性：  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   根命名空间。  
+- 根命名空间。  
   
 1. 在 SimpleProjectPackage.cs 文件中，添加以下`ProvideObject`属性为`SimpleProjectPackage`类：  
   

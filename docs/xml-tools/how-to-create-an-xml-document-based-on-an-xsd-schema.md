@@ -8,42 +8,42 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5206ea42385cb716c522504648e1d8fd5879ae
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525113"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115349"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：创建基于 XSD 架构的 XML 文档
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：基于 XSD 架构创建 XML 文档
 
 **生成示例 XML**功能生成基于 XML 架构 (XSD) 文件的示例 XML 文件。
 
  可以在下列情况下使用此选项：
 
--   了解架构中各个构造的使用情况。
+- 了解架构中各个构造的使用情况。
 
--   确认架构发挥了应有的作用。
+- 确认架构发挥了应有的作用。
 
 **生成示例 XML**功能仅对全局元素可用，并且需要有效的 XML 架构集。
 
 此功能通常会生成有效的 XML 文档。 但是，如果架构包含下列一项或多项内容，示例可能无效：
 
--   `xs:key`、`xs:keyref` 和 `xs:unique` 标识约束。
+- `xs:key`、`xs:keyref` 和 `xs:unique` 标识约束。
 
--   `xs:pattern` 方面。
+- `xs:pattern` 方面。
 
--   `xs:QName` 类型的枚举。
+- `xs:QName` 类型的枚举。
 
--   `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 类型。
+- `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 类型。
 
 另请注意，只有当架构中发生 `xs:base64Binary` 类型的枚举时，才会生成同类型的内容。
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>基于 XSD 文件生成 XML 实例文档
 
-1.  按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1. 按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2.  在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
+2. 在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。
 
      当您选择此选项，PurchaseOrder。*xml*将生成并在 XML 编辑器中打开文件包含以下示例 XML 内容：
 

@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fe80ad6c3983b35f97071093428bf7f356292b0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f1a623d5ee5edee376819ad6c385aead5003f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117949"
 ---
 # <a name="troubleshooting-snippets"></a>疑难解答：代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ ms.locfileid: "54803757"
   
 ### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>代码片段不能从文件资源管理器拖动到 Visual Studio 源文件  
   
--   代码片段文件中的 XML 可能已损坏。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 XML 编辑器可找到 XML 结构中的问题。  
+- 代码片段文件中的 XML 可能已损坏。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 XML 编辑器可找到 XML 结构中的问题。  
   
--   代码片段文件可能不符合代码片段架构。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 XML 编辑器可找到 XML 结构中的问题。  
+- 代码片段文件可能不符合代码片段架构。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的 XML 编辑器可找到 XML 结构中的问题。  
   
 ### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>代码具有未突出显示的编译器错误  
   
--   可能缺少项目引用。 检查有关代码片段的文档。 如果在计算机上找不到引用，则需要安装该引用。 插入代码片段时应在项目中添加所需的任何引用。 如果代码片段缺少引用信息，可将此情形作为一个错误报告给代码片段创建者。  
+- 可能缺少项目引用。 检查有关代码片段的文档。 如果在计算机上找不到引用，则需要安装该引用。 插入代码片段时应在项目中添加所需的任何引用。 如果代码片段缺少引用信息，可将此情形作为一个错误报告给代码片段创建者。  
   
--   可能未定义变量。 代码片段中未定义的变量应突出显示。 如果未突出显示，则将此情形作为一个错误报告给代码片段创建者。  
+- 可能未定义变量。 代码片段中未定义的变量应突出显示。 如果未突出显示，则将此情形作为一个错误报告给代码片段创建者。  
   
 ## <a name="see-also"></a>请参阅  
  [代码片段](../ide/code-snippets.md)

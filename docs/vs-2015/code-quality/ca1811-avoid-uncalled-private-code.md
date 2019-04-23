@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0f7272178edd1113d01644de9a5224e24907b31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113516"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811:避免使用未调用的私有代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "58933957"
 ## <a name="cause"></a>原因
  私有或内部 （程序集级别） 成员在程序集中没有调用方、 由公共语言运行时，不调用和不由委托调用。 此规则不检查下列成员：
 
--   显式接口成员。
+- 显式接口成员。
 
--   静态构造函数。
+- 静态构造函数。
 
--   序列化构造函数。
+- 序列化构造函数。
 
--   使用标记方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>。
+- 使用标记方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>。
 
--   是重写的成员。
+- 是重写的成员。
 
 ## <a name="rule-description"></a>规则说明
  此规则会报告误报入口点会发生，如果当前未标识由规则逻辑。 此外，编译器可能将不可调用的代码发出到程序集。

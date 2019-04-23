@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114790"
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "54756799"
 ## <a name="usage"></a>用法  
  下面是一些可以用于使用“线程”视图的方式：  
   
--   确定应用的用户界面 (UI) 在特定执行阶段中无响应的原因。  
+- 确定应用的用户界面 (UI) 在特定执行阶段中无响应的原因。  
   
--   确定在同步、I/O、页面错误和其他事件上阻塞所花的时间量。  
+- 确定在同步、I/O、页面错误和其他事件上阻塞所花的时间量。  
   
--   确定来自系统上执行的其他进程的干扰的程度。  
+- 确定来自系统上执行的其他进程的干扰的程度。  
   
--   确定并行执行的负载平衡问题。  
+- 确定并行执行的负载平衡问题。  
   
--   确定非最优或不存在的可伸缩性的原因（例如，在有更多逻辑核心可用时，并行应用的性能未提高的原因）。  
+- 确定非最优或不存在的可伸缩性的原因（例如，在有更多逻辑核心可用时，并行应用的性能未提高的原因）。  
   
--   了解应用中的并发度以帮助进行并行化。  
+- 了解应用中的并发度以帮助进行并行化。  
   
--   了解工作线程和执行的关键路径间的依赖关系。  
+- 了解工作线程和执行的关键路径间的依赖关系。  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>检查特定时间间隔和线程  
  “线程”视图会显示时间线。 可以在时间线中缩放和平移以检查应用程序的特定间隔和线程。 X 轴上是时间，y 轴上是几个通道：  

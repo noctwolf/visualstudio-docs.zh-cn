@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e8a9210b842d6fe63140f643ac3c0712cd100d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114140"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ ms.locfileid: "59656760"
   
 ## <a name="task-list"></a>任务列表  
   
--   要更改承载 WCF 服务的地址，请在“地址”字段中输入新的地址。  
+- 要更改承载 WCF 服务的地址，请在“地址”字段中输入新的地址。  
   
--   要更改 WCF 客户端中类的访问级别，请在“生成的类的访问级别”列表中选择访问级别关键字。  
+- 要更改 WCF 客户端中类的访问级别，请在“生成的类的访问级别”列表中选择访问级别关键字。  
   
--   要异步调用 WCF 服务方法，请选中“生成异步操作”复选框。  
+- 要异步调用 WCF 服务方法，请选中“生成异步操作”复选框。  
   
--   要在 WCF 客户端中生成消息约定类型，请选中“始终生成消息约定”复选框。  
+- 要在 WCF 客户端中生成消息约定类型，请选中“始终生成消息约定”复选框。  
   
--   要为 WCF 客户端指定列表集合类型或字典集合类型，请从“集合类型”和“字典集合类型”列表中选择类型。  
+- 要为 WCF 客户端指定列表集合类型或字典集合类型，请从“集合类型”和“字典集合类型”列表中选择类型。  
   
--   要禁用类型共享，请清除“重新使用引用的程序集中的类型”复选框。 要对引用的程序集的子集启用类型共享，请选中“重新使用引用的程序集中的类型”复选框，接着选中“重新使用所引用的指定程序集中的类型”，然后在“引用的程序集列表”中选择所需的引用。  
+- 要禁用类型共享，请清除“重新使用引用的程序集中的类型”复选框。 要对引用的程序集的子集启用类型共享，请选中“重新使用引用的程序集中的类型”复选框，接着选中“重新使用所引用的指定程序集中的类型”，然后在“引用的程序集列表”中选择所需的引用。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **地址**  

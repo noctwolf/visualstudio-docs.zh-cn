@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650624"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114764"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 
@@ -85,7 +85,7 @@ Visual Studio 源代码包括多个包定义文件，包含的标记名称和每
 
 ![工具&gt;选项对话框](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />工具&gt;选项对话框
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
 
 Visual Studio 提供的环境颜色服务，也称为 VSColor service 或外壳颜色服务。 此服务，可将 UI 元素的颜色值绑定到集，其中包含每个主题颜色的名称-值颜色。 VSColor 服务必须用于所有 UI 元素，以便颜色自动更改以反映当前用户选择了主题，并以使 UI 绑定到的环境颜色服务将集成新的主题在将来版本的 Visual Studio。
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> 选择高对比度颜色
+## <a name="BKMK_ChoosingHighContrastColors"></a> 选择高对比度颜色
 
 ### <a name="overview"></a>概述
 
@@ -330,7 +330,7 @@ Windows 使用增加的文本、 背景和图像的色彩对比度的多个高�
 | WindowFrame | -IDE 边框 |
 | WindowText | -自动隐藏选项卡上的前景色<br />-所选工具窗口选项卡前景色<br />-失去焦点或未选定的临时选项卡前景色和失去焦点的文档窗口选项卡<br />-未选定标志符号通过树视图默认前景色和悬停<br />的所选工具窗口选项卡边框<br />-滚动条滚动块背景、 边框和标志符号 |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> 为最终用户公开的颜色
+## <a name="BKMK_ExposingColorsForEndUsers"></a> 为最终用户公开的颜色
 
 ### <a name="overview"></a>概述
 

@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9bc74cbd0d7fbcfec26f4bfe3f334623baf066b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113607"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：检测.NET Framework 服务和使用 Profiler 命令行收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "59653731"
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** 和 **/globaltracegclife** 启用内存分配数据和对象生存期数据的收集。  
+   - **/globaltracegc** 和 **/globaltracegclife** 启用内存分配数据和对象生存期数据的收集。  
 
        |选项|描述|  
        |------------|-----------------|  
@@ -91,14 +91,14 @@ ms.locfileid: "59653731"
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   指定服务的进程 ID 或进程名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID 和名称。  
+    - 指定服务的进程 ID 或进程名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID 和名称。  
 
 ## <a name="controlling-data-collection"></a>控制数据收集  
  服务运行时，可以使用 VSPerfCmd.exe 选项开始和停止向文件的数据写入，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
     |选项|描述|  
     |------------|-----------------|  
@@ -111,19 +111,19 @@ ms.locfileid: "59653731"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  从服务控制管理器停止服务。  
+1. 从服务控制管理器停止服务。  
 
-2.  关闭探查器。 类型：  
+2. 关闭探查器。 类型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  完成所有分析后，清除分析环境变量。 类型：  
+3. 完成所有分析后，清除分析环境变量。 类型：  
 
      VSPerfClrEnv /globaloff  
 
      使用原始模块替换被检测模块。 如有必要，重新配置服务的“启动类型”。  
 
-4.  重新启动计算机。  
+4. 重新启动计算机。  
 
 ## <a name="see-also"></a>请参阅  
  [分析服务](../profiling/command-line-profiling-of-services.md)   

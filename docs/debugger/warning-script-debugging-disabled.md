@@ -1,5 +1,5 @@
 ---
-title: 警告： 脚本调试已禁用 |Microsoft Docs
+title: 警告：脚本调试已禁用 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2543ad00b2065f7659a89e165c2d4df990403667
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114636"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：脚本调试已禁用
 脚本调试当前在 Internet Explorer 中禁用
@@ -29,17 +29,17 @@ ms.locfileid: "56687037"
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>在 Internet Explorer 中启用脚本调试
 
-1.  在 Internet Explorer 的“工具”菜单上选择“Internet 选项”。
+1. 在 Internet Explorer 的“工具”菜单上选择“Internet 选项”。
 
-2.  在“Internet 选项”  对话框中，单击“高级”  选项卡。
+2. 在“Internet 选项”  对话框中，单击“高级”  选项卡。
 
-3.  在“高级”选项卡上，在“设置”框中查找“浏览”类别。
+3. 在“高级”选项卡上，在“设置”框中查找“浏览”类别。
 
-4.  清除“禁用脚本调试(Internet Explorer)”。
+4. 清除“禁用脚本调试(Internet Explorer)”。
 
-5.  单击 **“确定”**。
+5. 单击 **“确定”**。
 
-6.  退出并重新启动 Internet Explorer。
+6. 退出并重新启动 Internet Explorer。
 
      新设置现在将生效。
 

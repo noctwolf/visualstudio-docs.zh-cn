@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662265"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115596"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：使用 O/R 设计器配置继承
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "59662265"
   
 ### <a name="to-create-inherited-data-classes"></a>创建继承的数据类  
   
-1.  打开[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]加上**LINQ to SQL 类**到现有 Visual Basic 或 C# 项目的项。  
+1. 打开[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]加上**LINQ to SQL 类**到现有 Visual Basic 或 C# 项目的项。  
   
-2.  将要用作基类的表拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上。  
+2. 将要用作基类的表拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上。  
   
-3.  将该表的第二个副本拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上并重命名该副本。 这是派生类，即子类。  
+3. 将该表的第二个副本拖到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上并重命名该副本。 这是派生类，即子类。  
   
-4.  在“工具箱”的“对象关系设计器”选项卡中单击“继承”，然后单击子类（重命名的表）并将其连接到基类。  
+4. 在“工具箱”的“对象关系设计器”选项卡中单击“继承”，然后单击子类（重命名的表）并将其连接到基类。  
   
     > [!NOTE]
     >  单击“工具箱”中的“继承”项，释放鼠标按钮，单击在步骤 3 中创建的该类的第二个副本，然后单击在步骤 2 中创建的第一个类。 继承连线中的箭头将指向第一个类。  
   
-5.  在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果您尝试删除用于关联的对象属性，将会收到错误：[该属性\<属性名称 > 不能删除，因为它参与了关联\<关联名称 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。  
+5. 在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果您尝试删除用于关联的对象属性，将会收到错误：[该属性\<属性名称 > 不能删除，因为它参与了关联\<关联名称 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。  
   
     > [!NOTE]
     >  由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。 （列实现为属性。）通过设置基类属性中的继承修饰符，可以在派生类中创建列。 有关详细信息，请参阅[不在生成中：重写属性和方法](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)。  
   
-6.  在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中选择继承连线。  
+6. 在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中选择继承连线。  
   
-7.  在中**属性**窗口中，将**鉴别器属性**为用于区分您的类中记录的列名称。  
+7. 在中**属性**窗口中，将**鉴别器属性**为用于区分您的类中记录的列名称。  
   
-8.  将“派生类鉴别器值”属性设置为数据库中将记录指定为继承类型的值。 （这是存储在鉴别器列中的值，用于指定继承的类。）  
+8. 将“派生类鉴别器值”属性设置为数据库中将记录指定为继承类型的值。 （这是存储在鉴别器列中的值，用于指定继承的类。）  
   
 9. 将“基类鉴别器值”属性设置为将记录指定为基类型的值。 （这是存储在鉴别器列中的值，用于指定基类。）  
   

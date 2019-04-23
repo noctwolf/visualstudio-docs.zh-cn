@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114660"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和应用商店 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54799292"
   
 ## <a name="create-a-simple-windows-store-app"></a>创建简单的 Windows 应用商店应用  
   
-1.  如果你想要针对基于 XAML 的 Windows 应用商店应用运行编码的 UI 测试，你必须 [设置可标识每个控件的唯一的自动化属性](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)。  
+1. 如果你想要针对基于 XAML 的 Windows 应用商店应用运行编码的 UI 测试，你必须 [设置可标识每个控件的唯一的自动化属性](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)。  
   
      在 **“工具”** 菜单上，指向 **“选项”** ，然后依次选择 **“文本编辑器”**、 **“XAML”** 和 **“其他”**。  
   
@@ -30,15 +30,15 @@ ms.locfileid: "54799292"
   
      ![XAML“杂项”选项](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  使用 Visual C# 或 Visual Basic 模板，为基于 XAML 的空白 Windows 应用商店应用创建新项目。  
+2. 使用 Visual C# 或 Visual Basic 模板，为基于 XAML 的空白 Windows 应用商店应用创建新项目。  
   
      ![创建 Windows 应用商店空白应用 (XAML)](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  在解决方案资源管理器中，打开 MainPage.xaml。 从工具箱中，将按钮控件和文本框控件拖动到设计图面。  
+3. 在解决方案资源管理器中，打开 MainPage.xaml。 从工具箱中，将按钮控件和文本框控件拖动到设计图面。  
   
      ![设计 Windows 应用商店应用](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  双击该按钮控件，然后添加以下代码：  
+4. 双击该按钮控件，然后添加以下代码：  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ ms.locfileid: "54799292"
     End Class  
     ```  
   
-5.  按 F5 以运行你的 Windows 应用商店应用。  
+5. 按 F5 以运行你的 Windows 应用商店应用。  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>为 Windows 应用商店应用创建并运行编码的 UI 测试  
 
@@ -294,20 +294,20 @@ ms.locfileid: "54799292"
   
 ## <a name="q--a"></a>问题解答  
   
--   **问：为什么在“生成编码的 UI 测试的代码”对话框中看不到用于记录我的编码的 UI 测试的选项？**  
+- **问：为什么没有看见用于记录编码的 UI 测试编码的 UI 测试的对话框的生成代码中的选项？**  
   
-     **答**：Windows 应用商店应用不支持记录选项。  
+     **答**：Windows 应用商店应用程序不支持记录选项。  
   
--   **问：我是否能为基于 WinJS 的 Windows 应用商店应用创建编码的 UI 测试？**  
+- **问：可以基于 WinJS Windows 应用商店应用创建编码的 UI 测试？**  
   
-     **答**：否，仅支持基于 XAML 的应用。  
+     **答**：否，仅基于 XAML 支持的应用。  
   
--   **问：我是否能在未运行 Windows 8.1 或 Windows 10 的系统上为 Windows 应用商店应用创建编码的 UI 测试？**  
+- **问：可以在未运行 Windows 8.1 或 Windows 10 的系统上 Windows 应用商店应用创建编码的 UI 测试？**  
   
-     **答**：否，编码的 UI 测试项目模板仅适用于 Windows 8.1 和 Windows 10。 若要为通用 Windows 平台 (UWP) 应用创建自动化项，需要 Windows 10。  
+     **答**：否，编码的 UI 测试项目模板是仅适用于 Windows 8.1 和 Windows 10。 若要为通用 Windows 平台 (UWP) 应用创建自动化项，需要 Windows 10。  
 
 <a name="uwpapps"></a>
-- **问：如何为通用 Windows 平台 (UWP) 应用创建编码的 UI 测试？**  
+- **问：如何创建通用 Windows 平台 (UWP) 应用的编码的 UI 测试？**  
   
    **答**：根据要在其中测试 UWP 应用的平台，通过以下方式之一创建编码的 UI 测试项目：  
   
@@ -317,9 +317,9 @@ ms.locfileid: "54799292"
   
     创建项目后，将测试创作为与之前保持相同。  
   
-- **问：为什么我无法修改 UIMap.Designer 文件中的代码？**  
+- **问：为什么无法修改 UIMap.Designer 文件中的代码？**  
   
-   **答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都将覆盖在 UIMapDesigner.cs 文件中所做的任何代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
+   **答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   

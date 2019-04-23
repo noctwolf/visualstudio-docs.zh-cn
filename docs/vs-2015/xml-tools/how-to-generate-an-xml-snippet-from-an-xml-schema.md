@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115570"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "59658820"
   
 - 编辑器中的当前元素必须是空的，不包含任何属性。 例如，下列元素均有效  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - 光标必须紧邻元素名右侧。  
   
@@ -51,31 +51,31 @@ ms.locfileid: "59658820"
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>新建 XML 文件并将其与 XML 架构关联  
   
-1.  上**文件**菜单，依次指向**新建**，然后单击**文件**。  
+1. 上**文件**菜单，依次指向**新建**，然后单击**文件**。  
   
-2.  选择**XML 文件**中**模板**窗格，然后单击**打开**。  
+2. 选择**XML 文件**中**模板**窗格，然后单击**打开**。  
   
      新文件将在编辑器中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8">`。  
   
-3.  在文档属性窗口中，单击浏览按钮 (**...**) 上**架构**字段。  
+3. 在文档属性窗口中，单击浏览按钮 (**...**) 上**架构**字段。  
   
      **XSD 架构**显示对话框。  
   
-4.  单击 **添加**。  
+4. 单击 **添加**。  
   
      **打开 XSD 架构**显示对话框。  
   
-5.  选择架构文件，然后单击**打开**。  
+5. 选择架构文件，然后单击**打开**。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
      现在，XML 架构已与 XML 文档关联。  
   
 #### <a name="to-generate-an-xml-snippet"></a>生成 XML 代码段  
   
-1.  在编辑器窗格中键入 `<`。  
+1. 在编辑器窗格中键入 `<`。  
   
-2.  成员列表中显示可能的项：  
+2. 成员列表中显示可能的项：  
   
      **！-** 添加注释。  
   
@@ -85,11 +85,11 @@ ms.locfileid: "59658820"
   
      **请联系**添加根元素。  
   
-3.  选择**联系人**成员列表然后按 ENTER。  
+3. 选择**联系人**成员列表然后按 ENTER。  
   
      编辑器将添加开始标记 `<Contact` 并将光标置于元素名的后面。  
   
-4.  按 TAB 键，以根据架构信息为 `Contact` 元素生成 XML 数据。  
+4. 按 TAB 键，以根据架构信息为 `Contact` 元素生成 XML 数据。  
   
 ### <a name="input"></a>输入  
  以下架构文件供该演练使用。  

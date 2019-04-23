@@ -9,36 +9,36 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113750"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本冯氏着色器
+# <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本 Phong 着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文档演示如何使用着色器设计器和定向关系图着色器语言 (DGSL) 创建实现经典冯氏照明模型的照明着色器。  
   
  本文档演示了这些活动：  
   
--   将节点添加到着色器关系图  
+- 将节点添加到着色器关系图  
   
--   断开节点  
+- 断开节点  
   
--   连接节点  
+- 连接节点  
   
 ## <a name="the-phong-lighting-model"></a>冯氏照明模型  
  冯氏照明模型扩展了朗伯照明模型，包括可反射图面属性的镜面高光。 反射分量提供用于朗伯照明模型的相同定向光源的其他照明，但是会以不同的方式处理其对最终颜色的比例。 镜面高光根据视图方向、光源方向和表面方向之间的关系，以不同的方式影响场景中的每个表面。 它是表面的反射颜色、反射强度和方向，以及光源的颜色、强度和方向共同产生的结果。 在观察者处直接反射光源的表面接收最大反射比例，反射远离观察者的光源的表面无接收比例。 在冯氏照明模型下，将结合一个或多个反射分量来确定对象上每个点的镜面高光颜色和强度，然后将其添加到朗伯照明模型的结果上以产生像素的最终颜色。  
   
- 有关朗伯照明模型的详细信息，请参阅[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
+ 有关 Lambert 光照模型的详细信息，请参阅[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
   
  开始前，请确保显示“属性”窗口和“工具箱”。  
   
 #### <a name="to-create-a-phong-shader"></a>创建冯氏着色器  
   
-1. 按[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述创建朗伯着色器。  
+1. 按[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
   
 2. 从“最终颜色”节点断开“朗伯”节点。 选择“朗伯”节点的“RGB”终端，然后选择“断开链接”。 这为在下一步中添加的节点腾出空间。  
   

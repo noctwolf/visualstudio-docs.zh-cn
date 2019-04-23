@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113984"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ ms.locfileid: "58937033"
 ## <a name="the-host"></a>主机  
  主机负责向外转换过程，其中包括环境相关的任何内容：  
   
--   定位文本和二进制文件请求的引擎或指令处理器。 宿主可以搜索目录和全局程序集缓存，以查找程序集。 主机可以找到该引擎的自定义指令处理器代码。 主机还可以查找和读取文本文件并返回其内容作为字符串。  
+- 定位文本和二进制文件请求的引擎或指令处理器。 宿主可以搜索目录和全局程序集缓存，以查找程序集。 主机可以找到该引擎的自定义指令处理器代码。 主机还可以查找和读取文本文件并返回其内容作为字符串。  
   
--   提供标准的程序集和该引擎用于创建生成的转换类的命名空间的列表。  
+- 提供标准的程序集和该引擎用于创建生成的转换类的命名空间的列表。  
   
--   提供当引擎编译并执行生成的转换类时使用的应用程序域。 主机应用程序免受模板代码中的错误将使用单独的应用程序域。  
+- 提供当引擎编译并执行生成的转换类时使用的应用程序域。 主机应用程序免受模板代码中的错误将使用单独的应用程序域。  
   
--   写入生成的输出文件。  
+- 写入生成的输出文件。  
   
--   设置适用于生成的输出文件的默认扩展。  
+- 设置适用于生成的输出文件的默认扩展。  
   
--   处理文本模板转换错误。 例如，主机可以在用户界面中显示的错误或将其写入到文件。 (在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，错误消息窗口中显示错误。)  
+- 处理文本模板转换错误。 例如，主机可以在用户界面中显示的错误或将其写入到文件。 (在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，错误消息窗口中显示错误。)  
   
--   如果用户已调用指令，而无需提供一个值，请提供所需的参数值。 指令处理器可指定的指令，并使用参数名称，并要求宿主提供的默认值，如果有的话。  
+- 如果用户已调用指令，而无需提供一个值，请提供所需的参数值。 指令处理器可指定的指令，并使用参数名称，并要求宿主提供的默认值，如果有的话。  
   
 ## <a name="directives-and-directive-processors"></a>指令和指令处理器  
  指令是在文本模板中的命令。 它提供了生成过程的参数。 通常，指令定义的源和类型的模型或其他输入和输出文件的文件扩展名。  

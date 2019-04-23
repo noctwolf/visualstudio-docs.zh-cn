@@ -1,5 +1,5 @@
 ---
-title: 支持代码更改 （c + +） |Microsoft Docs
+title: 支持代码更改 (C++) |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c41b589ed19e547d03e0ce7336d6a2f2c5efedb7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114582"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。
 
  有关在 Visual Studio 中使用 C++ 编辑并继续的信息，请参阅 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。
 
-##  <a name="BKMK_Unsupported_changes"></a> 不支持的更改
+## <a name="BKMK_Unsupported_changes"></a> 不支持的更改
  在调试会话期间，不能应用下列 C/C++ 更改：
 
 - 对全局或静态数据的大多数更改。
@@ -61,51 +61,51 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 
 - “编辑并继续”不更新静态库。 如果您更改了静态库，则会继续执行老版本，且不发出任何警告。
 
-##  <a name="BKMK_Unsupported_scenarios"></a> 不支持的方案
+## <a name="BKMK_Unsupported_scenarios"></a> 不支持的方案
  在以下调试方案中，C/C++ 的“编辑并继续”不可用：
 
--   调试使用 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译的本机应用
+- 调试使用 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译的本机应用
 
--   在 Visual Studio 2015 Update 1，调试 UWP 应用或组件之前的 Visual Studio 的版本。 从 Visual Studio 2015 Update 1 开始，你可以使用编辑并继续在 UWP c + + 应用和 DirectX 应用程序，因为它现在支持`/ZI`编译器开关与`/bigobj`切换。 你还可以使用具有二进制文件（使用 `/FASTLINK` 开关。
+- 在 Visual Studio 2015 Update 1，调试 UWP 应用或组件之前的 Visual Studio 的版本。 从 Visual Studio 2015 Update 1 开始，你可以使用编辑并继续在 UWP 中C++应用和 DirectX 应用，因为它现在支持`/ZI`编译器开关与`/bigobj`切换。 你还可以使用具有二进制文件（使用 `/FASTLINK` 开关。
 
--   在 Windows 98 上进行调试。
+- 在 Windows 98 上进行调试。
 
--   混合模式（本机/托管）调试。
+- 混合模式（本机/托管）调试。
 
--   Javascript 调试。
+- Javascript 调试。
 
--   SQL 调试。
+- SQL 调试。
 
--   调试转储文件。
+- 调试转储文件。
 
--   在未选择 **“在未经处理的异常上展开调用堆栈”** 选项的情况下，在发生未经处理的异常之后编辑代码。
+- 在未选择 **“在未经处理的异常上展开调用堆栈”** 选项的情况下，在发生未经处理的异常之后编辑代码。
 
--   使用 **连接到** 来调试应用程序，而不是选择 **调试** 菜单上的 **开始** 来运行应用程序。
+- 使用 **连接到** 来调试应用程序，而不是选择 **调试** 菜单上的 **开始** 来运行应用程序。
 
--   调试优化后的代码。
+- 调试优化后的代码。
 
--   如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
+- 如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
 
-##  <a name="BKMK_Linking_limitations"></a> 链接限制
+## <a name="BKMK_Linking_limitations"></a> 链接限制
 
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 禁用“编辑并继续”的链接器选项
+### <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> 禁用“编辑并继续”的链接器选项
  下列链接器选项可禁用“编辑并继续”：
 
--   设置 **/OPT:REF**、 **/OPT:ICF**或 **/INCREMENTAL:NO** 将禁用“编辑并继续”并发出以下警告：
+- 设置 **/OPT:REF**、 **/OPT:ICF**或 **/INCREMENTAL:NO** 将禁用“编辑并继续”并发出以下警告：
 
      LINK : warning LNK4075: ignoring /EDITANDCONTINUE due to /OPT
 
      specification
 
--   设置 **/ORDER**、 **/RELEASE**或 **/FORCE** 将禁用“编辑并继续”并发出以下警告：
+- 设置 **/ORDER**、 **/RELEASE**或 **/FORCE** 将禁用“编辑并继续”并发出以下警告：
 
      LINK : warning LNK4075: ignoring /INCREMENTAL due to /option
 
      specification
 
--   设置任何禁止创建程序数据库 (.pdb) 文件的选项都会禁用“编辑并继续”，但不给出任何特定警告。
+- 设置任何禁止创建程序数据库 (.pdb) 文件的选项都会禁用“编辑并继续”，但不给出任何特定警告。
 
-###  <a name="BKMK_Auto_relinking_limitations"></a> 自动重新链接限制
+### <a name="BKMK_Auto_relinking_limitations"></a> 自动重新链接限制
  默认情况下，“编辑并继续”在调试会话结束时重新链接到程序，以创建最新的可执行文件。
 
  如果正在从原始生成位置以外的位置调试，“编辑并继续”不能重新链接程序。 有消息通知您需要手动重新生成。
@@ -116,24 +116,24 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 
  **在“编辑并继续”之后禁用重新链接**
 
-1.  在 **“调试”** 菜单上，选择 **“选项和设置”**。
+1. 在 **“调试”** 菜单上，选择 **“选项和设置”**。
 
-2.  在 **选项** 对话框中，在 **调试** 节点下，选择 **编辑并继续** 节点。
+2. 在 **选项** 对话框中，在 **调试** 节点下，选择 **编辑并继续** 节点。
 
-3.  清除 **“调试后重新链接代码更改”** 复选框。
+3. 清除 **“调试后重新链接代码更改”** 复选框。
 
-##  <a name="BKMK_Precompiled_Header_Limitations"></a> 预编译头限制
+## <a name="BKMK_Precompiled_Header_Limitations"></a> 预编译头限制
  默认情况下，“编辑并继续”在后台加载并处理预编译头，以加速对代码更改的处理。 加载预编译头需要分配物理内存，如果您正在一台 RAM 有限的计算机上进行编译，这可能会是一个问题。 在调试时，您可以使用 Windows 任务管理器来确定可用的物理内存量，以确定这是否可能有问题。 如果此数量大于预编译头的大小，则“编辑并继续”应没有问题。 如果此数量小于预编译头的大小，可以禁止“编辑并继续”在后台加载预编译头。
 
  **对“编辑并继续”禁用预编译头的后台加载**
 
-1.  在 **“调试”** 菜单上，选择 **“选项和设置”**。
+1. 在 **“调试”** 菜单上，选择 **“选项和设置”**。
 
-2.  在 **选项** 对话框中，在 **调试** 节点下，选择 **编辑并继续** 节点。
+2. 在 **选项** 对话框中，在 **调试** 节点下，选择 **编辑并继续** 节点。
 
-3.  清除 **“允许预编译”** 复选框。
+3. 清除 **“允许预编译”** 复选框。
 
-##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 特性限制
+## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 特性限制
  “编辑并继续”不重新生成接口定义 (IDL) 文件。 因此，调试时不反映对 IDL 特性的更改。 若要查看对 IDL 特性更改的结果，必须停止调试并重新生成应用程序。 如果 IDL 特性已更改，“编辑并继续”不生成错误或警告。 有关更多信息，请参见 [IDL 特性](/cpp/windows/idl-attributes)。
 
 ## <a name="see-also"></a>请参阅

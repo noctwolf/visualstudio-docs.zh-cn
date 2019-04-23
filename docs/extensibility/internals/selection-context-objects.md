@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e6fa51b39cf6b4cf7917d560469eac06d43fee2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9bdc3dd946f6ab19f916f4ac536ba05a45fe9226
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114972"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用的全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以有其自己选择上下文对象推送到全局选定内容上下文。 当该窗口具有焦点时，IDE 使用一个窗口中的值更新全局选定内容上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。
@@ -33,11 +33,11 @@ ms.locfileid: "56637771"
 
   按以下顺序显示了典型的选定内容跟踪过程。
 
-1.  IDE 从新打开的窗口检索选定内容上下文，并将其放入全局选定内容上下文。 如果选定内容上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息不会传播到全局上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。
+1. IDE 从新打开的窗口检索选定内容上下文，并将其放入全局选定内容上下文。 如果选定内容上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息不会传播到全局上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。
 
-2.  通知事件广播到任何请求它们的 VSPackage。
+2. 通知事件广播到任何请求它们的 VSPackage。
 
-3.  VSPackage 作用于它执行活动，例如更新层次结构中，重新激活一款工具，或者其他类似任务接收的事件。
+3. VSPackage 作用于它执行活动，例如更新层次结构中，重新激活一款工具，或者其他类似任务接收的事件。
 
 ## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
