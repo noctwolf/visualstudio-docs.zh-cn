@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056154"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>从 UML 类关系图生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "59663987"
 
 2. 在类图上或在**UML 模型资源管理器**，选择你想要生成的代码元素。 可以选择下列项目之一：  
 
-   -   一组特定元素。  
+   - 一组特定元素。  
 
-   -   一个包或模型，以便从其内容生成代码。  
+   - 一个包或模型，以便从其内容生成代码。  
 
-   -   关系图，以便选择关系图上的所有元素。  
+   - 关系图，以便选择关系图上的所有元素。  
 
 3. 打开所选元素的快捷菜单，然后选择**生成代码**。  
 
@@ -71,7 +71,7 @@ ms.locfileid: "59663987"
 
    将一些验证测试应用于模型以确保能将其转换为 C#。 如果这些测试失败，则将显示一条错误消息，并且不执行代码生成操作。 如果你创建了一个验证菜单命令，则不会为其验证命令失败的任何元素生成代码。 有关详细信息，请参阅[为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)。  
 
-##  <a name="default"></a> 默认代码生成转换  
+## <a name="default"></a> 默认代码生成转换  
  本部分汇总了所生成的结果**生成代码**命令，除非你自定义命令。 有关详细信息，请参阅[自定义生成代码命令](#custom)。  
 
 - 为你在 UML 模型中选择的每个类型生成一个 C# 类型。 每个类型放在单独的代码文件下**GeneratedCode**文件夹。  
@@ -126,7 +126,7 @@ ms.locfileid: "59663987"
 
   每个特性和操作还包含可设置的构造型属性。 如果您没有看到属性的新特性上，运行**生成代码**。  
 
-##  <a name="custom"></a> 自定义生成代码命令  
+## <a name="custom"></a> 自定义生成代码命令  
  **生成代码**命令通过将转换你使用的一组文本模板的模型元素的工作原理。 有关文本模板的详细信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
 
  模板中的一组指定*文本模板绑定*。 文本模板绑定指定应该应用哪些模板，应放置生成的输出的位置，和其他参数**生成代码**命令。  
@@ -175,7 +175,7 @@ ms.locfileid: "59663987"
 
 5. 可将所需数量的绑定附加到一个元素。  
 
-##  <a name="writing"></a> 编写文本模板  
+## <a name="writing"></a> 编写文本模板  
  可编写你自己的文本模板。 文本模板可生成程序代码或任何其他类别的文本文件。  
 
  建议你首先修改标准模板的副本。 可从以下位置复制模板：  

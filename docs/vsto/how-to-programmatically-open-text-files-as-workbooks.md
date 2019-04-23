@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060133"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式将文本文件打开为工作簿
   为工作簿，可以打开一个文本文件。 您必须传递你想要打开的文本文件的名称。 可以指定几个可选参数，例如，要从哪一行开始分析以及文件中的数据的列格式。
@@ -33,9 +33,9 @@ ms.locfileid: "56633910"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要以下组件：
 
--   名为的逗号分隔的文本文件`Test.txt`，其中包含至少三行文本。
+- 名为的逗号分隔的文本文件`Test.txt`，其中包含至少三行文本。
 
--   该文本文件`Test.txt`要存储在驱动器 c。
+- 该文本文件`Test.txt`要存储在驱动器 c。
 
 ## <a name="see-also"></a>请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)

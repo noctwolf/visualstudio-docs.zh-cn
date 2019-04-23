@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062238"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>使用锁  
  可以使用锁来实现方案如下所示：  
   
--   不允许对所有元素和关系，除非表示注释的那些更改。 这允许用户对模型进行批注而不更改它。  
+- 不允许对所有元素和关系，除非表示注释的那些更改。 这允许用户对模型进行批注而不更改它。  
   
--   不允许更改中默认分区，但允许在关系图分区中进行更改。 用户可以重新排列关系图中，但不能更改基础模型。  
+- 不允许更改中默认分区，但允许在关系图分区中进行更改。 用户可以重新排列关系图中，但不能更改基础模型。  
   
--   不允许更改到存储在一个单独的数据库中注册的用户的组除外。 对于其他用户，关系图和模型是只读的。  
+- 不允许更改到存储在一个单独的数据库中注册的用户的组除外。 对于其他用户，关系图和模型是只读的。  
   
--   不允许对模型进行更改，如果关系图的布尔属性设置为 true。 提供更改该属性的菜单命令。 这有助于确保它们无法表达的用户意外更改。  
+- 不允许对模型进行更改，如果关系图的布尔属性设置为 true。 提供更改该属性的菜单命令。 这有助于确保它们无法表达的用户意外更改。  
   
--   不允许添加和删除的元素和关系的特定类，但允许属性更改。 用户提供一个固定的窗体，它们可以在其中填充属性。  
+- 不允许添加和删除的元素和关系的特定类，但允许属性更改。 用户提供一个固定的窗体，它们可以在其中填充属性。  
   
 ## <a name="lock-values"></a>锁值  
  可以在应用商店、 分区或单独的模型元素上设置锁。 锁是`Flags`枚举： 可以使用其值进行组合&#124;。  
@@ -77,7 +77,7 @@ partition.SetLocks(Locks.Delete);
   
   无法设置锁分区上或存储并在同一时间禁用某个元素上的锁。  
   
-|值|这意味着如果`IsLocked(Value)`为 true|  
+|“值”|这意味着如果`IsLocked(Value)`为 true|  
 |-----------|------------------------------------------|  
 |None|没有限制。|  
 |属性|不能更改域属性的元素。 这不适用于生成的域类在关系中的角色的属性。|  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  若要定义锁定策略，必须：  
   
--   创建用于实现 <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 的类。  
+- 创建用于实现 <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 的类。  
   
--   将此类添加到可通过你的 DSL 的 DocData 的服务。  
+- 将此类添加到可通过你的 DSL 的 DocData 的服务。  
   
 ### <a name="to-define-a-locking-policy"></a>若要定义锁定策略  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 具有以下定义：  

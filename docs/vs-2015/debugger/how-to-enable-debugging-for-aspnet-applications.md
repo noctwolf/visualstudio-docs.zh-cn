@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059950"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>如何：为 ASP.NET 应用程序启用调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ ms.locfileid: "58931109"
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>在项目属性中启用 ASP.NET 调试 (Visual Basic/C#)  
   
-1.  在 **“解决方案资源管理器”** 中，右键单击 Web 项目的名称，然后选择 **“属性”**。  
+1. 在 **“解决方案资源管理器”** 中，右键单击 Web 项目的名称，然后选择 **“属性”**。  
   
-2.  在项目属性页中，单击 **“Web”** 选项卡。  
+2. 在项目属性页中，单击 **“Web”** 选项卡。  
   
-3.  在“调试器” 下，选中“ASP.NET”  复选框。  
+3. 在“调试器” 下，选中“ASP.NET”  复选框。  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>在 web.config 文件中启用调试  
   
-1.  通过使用任何标准文本编辑器或 XML 分析器打开 web.config 文件。  
+1. 通过使用任何标准文本编辑器或 XML 分析器打开 web.config 文件。  
   
     > [!NOTE]  
     > 但是，不可以通过使用 Web 浏览器远程访问该文件。 出于安全原因， [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 将 Microsoft IIS 配置为帮助防止对 Web.config 文件的直接浏览器访问。 如果你尝试使用浏览器访问配置文件，则将遇到 HTTP 访问错误 403（禁止访问）。  
   
-2.  Web.config 是一个 XML 文件，因此包含使用标记来标记的嵌套节。 查找 `configuration/system.web/compilation` 元素。 如果 compilation 元素不存在，则创建它。  
+2. Web.config 是一个 XML 文件，因此包含使用标记来标记的嵌套节。 查找 `configuration/system.web/compilation` 元素。 如果 compilation 元素不存在，则创建它。  
   
-3.  如果 `compilation` 元素不包含 `debug` 特性，请向元素添加该特性。  
+3. 如果 `compilation` 元素不包含 `debug` 特性，请向元素添加该特性。  
   
-4.  确保 `debug` 特性值设置为 `true`。  
+4. 确保 `debug` 特性值设置为 `true`。  
   
 web.config 文件应类似于下面的示例。 请注意，在 configuration 和 system.web 元素之间可存在节  
   
--   configuration 和 system.web 元素之间的元素节  
+- configuration 和 system.web 元素之间的元素节  
   
--   system.web 和 compilation 元素之间的元素节  
+- system.web 和 compilation 元素之间的元素节  
   
--   compilation 元素可以包含其他特性和元素  
+- compilation 元素可以包含其他特性和元素  
   
 ## <a name="example"></a>示例  
   

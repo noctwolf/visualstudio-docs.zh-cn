@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061979"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 外接程序编程入门
   你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 可以使用 Visual Studio 创建 VSTO 外接程序如何与其他类型的 Office 解决方案进行比较的有关信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -40,19 +40,19 @@ ms.locfileid: "56618830"
 
  有关特定 Microsoft Office 应用程序的对象模型的详细信息，请参阅以下主题：
 
--   [Excel 对象模型概述](../vsto/excel-object-model-overview.md)
+- [Excel 对象模型概述](../vsto/excel-object-model-overview.md)
 
--   [Word 对象模型概述](../vsto/word-object-model-overview.md)
+- [Word 对象模型概述](../vsto/word-object-model-overview.md)
 
--   [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)
+- [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath 解决方案](../vsto/infopath-solutions.md)
+- [InfoPath 解决方案](../vsto/infopath-solutions.md)
 
--   [PowerPoint 解决方案](../vsto/powerpoint-solutions.md)
+- [PowerPoint 解决方案](../vsto/powerpoint-solutions.md)
 
--   [项目解决方案](../vsto/project-solutions.md)
+- [项目解决方案](../vsto/project-solutions.md)
 
--   [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
+- [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>自定义应用程序的用户界面
  有几种方式将 VSTO 外接程序中使用自定义主机应用程序的 UI:

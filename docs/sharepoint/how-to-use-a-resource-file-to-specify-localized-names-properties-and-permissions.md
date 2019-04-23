@@ -19,31 +19,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9014b344e030f3763037395f5fb96d446c0132f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066528"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>如何：使用资源文件指定本地化的名称、 属性和权限
   通过使用资源文件，您可以对在业务数据连接 (BDC) 模型中定义的对象提供本地化名称、定义属性和应用权限。 若要指定此信息，请将添加**业务数据连接资源**项包含的项目**业务数据连接模型**项。 然后通过编辑资源文件的 XML 来指定名称、属性和权限。
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>若要将 BDC 资源文件添加到 SharePoint 项目
 
-1.  在中**解决方案资源管理器**，展开 SharePoint 项目的文件夹，然后选择包含 BDC 模型的文件夹。
+1. 在中**解决方案资源管理器**，展开 SharePoint 项目的文件夹，然后选择包含 BDC 模型的文件夹。
 
-2.  在菜单栏上，依次选择“项目” > “添加新项”。
+2. 在菜单栏上，依次选择“项目” > “添加新项”。
 
-3.  展开**SharePoint**节点，然后选择**2010年**节点。
+3. 展开**SharePoint**节点，然后选择**2010年**节点。
 
-4.  在中**添加新项**对话框框中，选择**业务数据连接资源项**。
+4. 在中**添加新项**对话框框中，选择**业务数据连接资源项**。
 
-5.  在中**名称**框中，指定资源文件的名称，然后选择**添加**按钮。
+5. 在中**名称**框中，指定资源文件的名称，然后选择**添加**按钮。
 
      扩展名为 .bdcr 的资源文件将添加到项目中并打开以进行编辑。
 
-6.  添加 XML 以定义要应用 BDC 模型的本地化名称、属性和权限。
+6. 添加 XML 以定义要应用 BDC 模型的本地化名称、属性和权限。
 
      有关如何定义这些元素的信息，请参阅[模型和资源文件](http://go.microsoft.com/fwlink/?LinkID=169283)。
 

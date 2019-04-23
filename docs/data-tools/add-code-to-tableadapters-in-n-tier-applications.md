@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 75f7dd3149785520023657bb86ec8172dc379ab6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066112"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
 您可以通过为 TableAdapter 创建分部类文件并向其中添加代码来扩展 TableAdapter 的功能 (而不是将代码添加到*DatasetName.DataSet.Designer*文件)。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部 （类型）](/dotnet/csharp/language-reference/keywords/partial-type)。
@@ -38,17 +38,17 @@ ms.locfileid: "55926991"
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>若要将用户代码添加到 TableAdapter 中的 n 层应用程序
 
-1.  找到包含项目 *.xsd*文件。
+1. 找到包含项目 *.xsd*文件。
 
-2.  双击 *.xsd*文件以打开**数据集设计器**。
+2. 双击 *.xsd*文件以打开**数据集设计器**。
 
-3.  右键单击你想要将代码添加到，然后选择 TableAdapter**查看代码**。
+3. 右键单击你想要将代码添加到，然后选择 TableAdapter**查看代码**。
 
      分部类将创建并在代码编辑器中打开。
 
-4.  添加代码的分部类声明。
+4. 添加代码的分部类声明。
 
-5.  下面的示例显示了将代码添加到的位置`CustomersTableAdapter`在`NorthwindDataSet`:
+5. 下面的示例显示了将代码添加到的位置`CustomersTableAdapter`在`NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

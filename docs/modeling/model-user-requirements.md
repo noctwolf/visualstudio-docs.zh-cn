@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058520"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
@@ -56,7 +56,7 @@ ms.locfileid: "55937249"
 
 请注意，大多数关系图类型可以用于其他目的。 有关关系图类型的概述，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。
 
@@ -76,19 +76,19 @@ ms.locfileid: "55937249"
 |-|-|
 |如何开发符合业务规则的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 服务质量要求有多个类别。 它们包括以下类型：
 
--   性能
+- 性能
 
--   安全性
+- 安全性
 
--   可用性
+- 可用性
 
--   可靠性
+- 可靠性
 
--   稳定性
+- 稳定性
 
 可以在特定用例的描述中包括其中的一些要求。 其他要求并不特定于用例，并已经非常高效地写入了单独文档。 如果可能，遵守要求模型定所定义的词汇非常有用。 在下面的示例中，请注意，要求中使用的主要词语是参与者、用例和上述插图中的类的标题：
 

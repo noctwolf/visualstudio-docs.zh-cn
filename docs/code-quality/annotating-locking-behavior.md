@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053724"
 ---
 # <a name="annotating-locking-behavior"></a>对锁定行为进行批注
 若要避免多线程程序中的并发 Bug，请遵循适当的锁定规则并使用 SAL 批注。
@@ -55,11 +55,11 @@ ms.locfileid: "59653003"
 
  应记住的一些线程所有权规则：
 
--   自旋锁是具有明确线程所有权的非计数锁。
+- 自旋锁是具有明确线程所有权的非计数锁。
 
--   互斥锁和临界区是具有明确线程所有权的计数锁。
+- 互斥锁和临界区是具有明确线程所有权的计数锁。
 
--   信号量和事件是不具有明确线程所有权的计数锁。
+- 信号量和事件是不具有明确线程所有权的计数锁。
 
 ## <a name="locking-annotations"></a>锁定批注
  下表列出了锁定批注。

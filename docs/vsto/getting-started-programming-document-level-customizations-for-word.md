@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056323"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Word 文档级自定义项编程入门
   如果你刚开始使用 Visual Studio 创建 Microsoft Office Word 文档级自定义项，下面是您需要了解。
@@ -44,11 +44,11 @@ ms.locfileid: "56631492"
 
  有关详细信息，请参阅下列主题：
 
--   [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)
+- [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)
 
--   [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)
+- [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)
 
--   [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
+- [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>自定义 Word 的用户界面
  大多数 Microsoft Office 解决方案的 Office 应用程序提供用户交互的解决方案某种方式修改用户界面 (UI)。 有许多方法通过使用文档级自定义可以在其中修改 Word 的 UI。 例如，可以将控件添加到功能区中，并可以显示操作窗格。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。

@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054375"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Windows 安装程序安装和卸载应用程序或用户的计算机上的软件
   
 #### <a name="installer-enforced-rules"></a>安装程序强制实施的规则  
   
--   给定组件中的所有文件必须都安装到同一个目录。 相反，安装在单独的文件夹的文件都必须属于单独的组件。  
+- 给定组件中的所有文件必须都安装到同一个目录。 相反，安装在单独的文件夹的文件都必须属于单独的组件。  
   
--   可能有每个组件只有一个注册表项路径。 密钥路径是只是文件或注册表项表示的整个组件。  
+- 可能有每个组件只有一个注册表项路径。 密钥路径是只是文件或注册表项表示的整个组件。  
   
 #### <a name="component-provider-responsibilities"></a>组件提供程序的责任  
   
--   在后续版本中可能会分开提供任何两个资源应位于单独的组件。 仅当确定永远不会将单独提供这些资源，应将资源分组到同一组件。 事实上，建议所有主要资源 (例如 Dll) 中单独 WICs 始终存在。 有关详细信息，请参阅[定义安装程序组件](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)。  
+- 在后续版本中可能会分开提供任何两个资源应位于单独的组件。 仅当确定永远不会将单独提供这些资源，应将资源分组到同一组件。 事实上，建议所有主要资源 (例如 Dll) 中单独 WICs 始终存在。 有关详细信息，请参阅[定义安装程序组件](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx)。  
   
--   无版本控制的资源不断应在多个 WIC 中提供。  
+- 无版本控制的资源不断应在多个 WIC 中提供。  
   
 ## <a name="see-also"></a>请参阅  
  [如果组件规则中断，会发生什么情况？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

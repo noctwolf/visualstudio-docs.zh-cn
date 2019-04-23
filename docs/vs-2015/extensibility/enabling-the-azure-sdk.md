@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e47fa574d607f0fe56950b232991ad6e5ff2b351
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061328"
 ---
 # <a name="enabling-the-azure-sdk"></a>启用 Azure SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Azure SDK for.NET 可帮助您创建、 配置、 生成、 调试、 运行和�
   
 ### <a name="to-enable-the-azure-sdk"></a>若要启用 Azure SDK  
   
-1.  上**文件**菜单中，创建一个新项目。 (单击**新建**，然后单击**项目**。)  
+1. 上**文件**菜单中，创建一个新项目。 (单击**新建**，然后单击**项目**。)  
   
-2.  为展开的节点**Visual Basic**或**C#** ，然后单击**云**。  
+2. 为展开的节点**Visual Basic**或**C#** ，然后单击**云**。  
   
-3.  在中间窗格中，选择**获取 Azure SDK for.NET**，然后单击**确定**。  
+3. 在中间窗格中，选择**获取 Azure SDK for.NET**，然后单击**确定**。  
   
      按照安装程序中的说明操作。  
   

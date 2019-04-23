@@ -11,12 +11,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054233"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "58934266"
   
  有几个 Visual Studio 协调为你的任务：  
   
--   它将显示所有可用的项目类型的树。  
+- 它将显示所有可用的项目类型的树。  
   
--   它显示每个项目类型的应用程序模板的列表，并可让你选择其中一个。  
+- 它显示每个项目类型的应用程序模板的列表，并可让你选择其中一个。  
   
--   它收集应用程序，如项目名称和路径的项目信息。  
+- 它收集应用程序，如项目名称和路径的项目信息。  
   
--   它将此信息传递到项目工厂。  
+- 它将此信息传递到项目工厂。  
   
--   它生成当前解决方案中的项目项和文件夹。  
+- 它生成当前解决方案中的项目项和文件夹。  
   
 ## <a name="the-new-project-dialog-box"></a>新建项目对话框  
  所有它开始时选择新的项目的项目类型。 首先，通过单击**新的项目**上**文件**菜单。 **新的项目**对话框随即出现，外观如下所示：  
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  时**新的项目**对话框将打开，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]遍历 ProjectTemplates 文件夹，并重新创建其结构处于**项目类型**树中的一些更改：  
   
--   中的根节点**项目类型**树由应用程序模板。  
+- 中的根节点**项目类型**树由应用程序模板。  
   
--   节点名称可本地化，并可包含特殊字符。  
+- 节点名称可本地化，并可包含特殊字符。  
   
--   可以更改排序顺序。  
+- 可以更改排序顺序。  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>查找根节点的项目类型  
  当 Visual Studio 遍历 ProjectTemplates 文件夹时，打开所有的.zip 文件，并提取任何.vstemplate 文件。 .Vstemplate 文件使用 XML 来描述应用程序模板。 有关详细信息，请参阅[生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  
