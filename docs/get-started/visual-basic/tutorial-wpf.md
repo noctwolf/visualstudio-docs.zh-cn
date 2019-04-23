@@ -4,6 +4,7 @@ description: 使用 Visual Basic 在 Visual Studio 中通过 Windows Presentatio
 ms.custom: seodec18, get-started
 ms.date: 03/14/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,22 +14,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c80c5ec1af0129486c465075209cfb39dbe2476a
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324248"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857394"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
 通过完成本教程，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建“Hello, World”应用程序、设计 UI、添加代码并调试错误。在此期间，你将了解如何使用集成开发环境 ([IDE](visual-studio-ide.md))。
 
 ::: moniker range="vs-2017"
+
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)页免费安装。
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
+
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>配置 IDE
@@ -47,7 +53,7 @@ ms.locfileid: "58324248"
 
 ::: moniker range=">=vs-2019"
 
-启动 Visual Studio 时，“启动”窗口首先打开。 选择“继续但无需代码”打开开发环境。 将看到工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口停靠在应用程序窗口的左侧和右侧，其顶部有 **“快速启动”**、菜单栏和标准工具栏。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
+启动 Visual Studio 时，“启动”窗口首先打开。 选择“继续但无需代码”打开开发环境。 将看到工具窗口、菜单和工具栏，以及主窗口空间。 “工具”窗口停靠在“应用程序”窗口左右两侧，其顶部有搜索框、菜单栏和标准工具栏。 加载解决方案或项目时，编辑器和设计器显示在应用程序窗口中间。 开发应用程序时，大部分时间都将用在此中心区域。
 
 ::: moniker-end
 
@@ -55,35 +61,36 @@ ms.locfileid: "58324248"
 
 在 Visual Studio 中创建应用程序时，应首先创建项目和解决方案。 此示例将创建一个 Windows Presentation Foundation (WPF) 项目。
 
+::: moniker range="vs-2017"
+
 1. 创建新项目。 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-     ::: moniker range="vs-2017"
      ![在菜单栏上，依次选择“文件”、“新建”和“项目”](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     ![在菜单栏上，依次选择“文件”、“新建”和“项目”](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
 2. 在“新项目”对话框中，依次选择“已安装” > “Visual Basic” > “Windows 桌面”类别和“WPF 应用(.NET Framework)”模板。 将项目命名为“HelloWPFApp”并选择“确定”。
 
      ![Visual Studio“新建项目”对话框中的 WPF 应用模板](media/exploreide-newproject-vb.png)
+
+Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
+
+![已加载 HelloWPFApp 文件的解决方案资源管理器](../media/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
-::: moniker range=">=vs-2019"
+
+::: moniker range="vs-2019"
+
+1. 打开 Visual Studio 2019。
+
 2. 在“创建新项目”屏幕上，搜索“WPF”，选择“WPF App (.NET Framework)”，然后选择“下一步”。
 
    ![Visual Studio“新建项目”对话框中的 WPF 应用模板](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
 3. 在下一个屏幕中，为项目指定名称“HelloWPFApp”，然后选择“创建”。
-::: moniker-end
 
 Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
 
-::: moniker range="vs-2017"
-![已加载 HelloWPFApp 文件的解决方案资源管理器](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
 ![已加载 HelloWPFApp 文件的解决方案资源管理器](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
 ::: moniker-end
 
 > [!NOTE]
@@ -109,7 +116,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ### <a name="add-a-textblock-control"></a>添加 TextBlock 控件
 
-1.  输入 Ctrl+Q 以调用“快速启动”，并键入“工具箱”。 从结果列表中选择“查看”>“工具箱”。
+1.  输入“Ctrl+Q”以激活搜索框，然后键入“工具箱”。 从结果列表中选择“查看”>“工具箱”。
 
 2. 在“工具箱”中，展开“公共 WPF 控件”节点以查看 TextBlock 控件。
 
@@ -249,7 +256,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>添加断点
 
-1. 打开“Greetings.xaml.vb”，并选择以下行：`MessageBox.Show("Hello.")`
+1. 打开“Greetings.xaml.vb”，并选择以下行： `MessageBox.Show("Hello.")`
 
 2. 通过按 F9 或从菜单选择“调试”，然后选择“切换断点”添加断点。
 
