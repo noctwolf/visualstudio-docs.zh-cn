@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094772"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>如何：向三维模型应用着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54793460"
   
  本文档演示了此活动：  
   
--   向三维模型应用着色器  
+- 向三维模型应用着色器  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>向三维模型应用着色器  
  可对三维模型应用着色效果，使其具有有趣的外观。  

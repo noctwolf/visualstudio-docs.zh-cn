@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c77b95b05409adf7c5e4c9a81136ca9143cec03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094133"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。
@@ -28,7 +28,7 @@ ms.locfileid: "56688051"
 
  有关安装图形工具的信息，请参阅[为 Windows 10 安装图形工具](#InstallGraphicsTools)。
 
-##  <a name="InstallGraphicsTools"></a>为 Windows 10 安装图形工具
+## <a name="InstallGraphicsTools"></a>为 Windows 10 安装图形工具
  在 Windows 10 中，图形诊断基础结构由 Windows 的一个可选功能（称为“图形工具”）提供。 在 Windows 10 上捕获和播放图形信息需要此功能（无论所捕获的应用是面向以前版本的 Windows 还是它所使用的 Direct3D 版本）。 可以选择提前安装图形工具功能；否则它会在你首次从 Visual Studio 启动图形诊断会话时按需安装。
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>为 Windows 10 安装图形工具
@@ -70,7 +70,7 @@ ms.locfileid: "56688051"
 
 #### <a name="to-capture-single-frames"></a>捕获单个帧
 
--   在 Visual Studio 中，从图形工具栏或诊断会话窗口选择“捕获帧”按钮。 或者，如果您的应用程序具有焦点，直接按**Print Screen**键盘上键。
+- 在 Visual Studio 中，从图形工具栏或诊断会话窗口选择“捕获帧”按钮。 或者，如果您的应用程序具有焦点，直接按**Print Screen**键盘上键。
 
 #### <a name="to-capture-a-sequence-of-frames"></a>捕获帧序列
 

@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9c592663e32b8050644d459b8db45f3f0f5307
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630738"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097136"
 ---
-# <a name="debug-multiple-processes-c-visual-basic-c"></a>调试多个进程 (C#，Visual Basic、 c + +)
+# <a name="debug-multiple-processes-c-visual-basic-c"></a>调试多个进程 (C#，Visual Basic 中， C++)
 
 Visual Studio 可以调试包含多个进程的解决方案。 可以启动和进程之间切换、 中断、 继续，并单步执行源、 停止调试和结束或从单个进程中分离。
 
@@ -48,11 +48,11 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 
 1. 选择**当前所选内容**，**单启动项目**和项目文件，或**多个启动项目**。
 
-   如果选择**多个启动项目**，可以更改启动顺序和操作需要针对每个项目：**启动**，**启动但不调试**，或者**无**。
+   如果选择**多个启动项目**，可以更改启动顺序和操作需要针对每个项目：**启动**，**启动但不调试**，或**None**。
 
 1. 选择**Apply**，或**确定**应用并关闭对话框。
 
-###  <a name="BKMK_Attach_to_a_process"></a>附加到进程
+### <a name="BKMK_Attach_to_a_process"></a>附加到进程
 
 调试器还可以*附加*到在 Visual Studio，包括在远程设备上的外部进程中运行的应用。 附加到应用后，可以使用 Visual Studio 调试器。 调试功能可能会受到限制。 这取决于是否用调试信息生成应用程序、 是否有权访问应用的源代码，和 JIT 编译器是否正在跟踪调试信息。
 
@@ -69,7 +69,7 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 >[!NOTE]
 >调试器不会自动附加到调试进程所启动的子进程中，即使子项目位于同一个解决方案中。 若要调试子进程，请在启动后附加到子进程或配置 Windows 注册表编辑器中新的调试器实例启动子进程。
 
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 使用注册表编辑器来自动在调试器中启动的进程
+### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> 使用注册表编辑器来自动在调试器中启动的进程
 
 有时，可能需要调试由另一个进程启动的应用的启动代码。 这样的示例包括服务和自定义设置操作。 您可以在调试器启动并自动附加到应用。
 
@@ -93,7 +93,7 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 
    ![在 regedit.exe 中的自动调试器启动条目](../debugger/media/dbg_execution_automaticstart_result.png "regedit.exe 中的自动调试器启动条目")
 
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 使用多个进程进行调试
+## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> 使用多个进程进行调试
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 当调试包含多个进程的应用时，中断、 单步执行，并继续调试程序命令默认情况下影响所有进程。 例如，当进程在断点处挂起时，所有其他进程的执行还会挂起。 可更改此默认行为以获取对执行命令的目标的更多控制。
@@ -102,7 +102,7 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 
 - 下**工具**(或**调试**) >**选项** > **调试** > **常规**，选中或清除**一个进程中断时则中断所有进程**复选框。
 
-###  <a name="BKMK_Break__step__and_continue_commands"></a>中断、单步执行和继续命令
+### <a name="BKMK_Break__step__and_continue_commands"></a>中断、单步执行和继续命令
 
 下表介绍的调试行为的命令时**一个进程中断时则中断所有进程**选择或取消选择复选框：
 
@@ -111,18 +111,18 @@ Visual Studio 可以调试包含多个进程的解决方案。 可以启动和�
 |**调试**  > **全部中断**|所有进程中断。|所有进程中断。|
 |**调试** > **继续**|所有进程继续。|所有挂起的进程继续。|
 |**调试** > **单步执行**，**单步跳过**，或**跳出**|在当前进程单步执行时，所有进程将运行。 <br />然后，所有进程中断。|当前进程单步执行。 <br />已挂起的进程继续。 <br />正在运行的进程继续。|
-|**调试** > **单步执行当前进程**，**逐过程执行当前进程**，或**跳出当前进程**|不可用|当前进程单步执行。<br />其他进程保持其现有状态（挂起或运行）。|
+|**调试** > **单步执行当前进程**，**逐过程执行当前进程**，或**跳出当前进程**|不适用|当前进程单步执行。<br />其他进程保持其现有状态（挂起或运行）。|
 |源窗口**断点**|所有进程中断。|仅源窗口进程中断。|
 |源窗口**运行到光标处**<br />源窗口必须在当前进程中。|当源窗口进程运行到光标处所有进程运行，然后中断。<br />然后，所有其他进程中断。|源窗口进程运行到光标处。<br />其他进程保持其现有状态（挂起或运行）。|
-|**进程**窗口 >**中断进程**|不可用|已选进程中断。<br />其他进程保持其现有状态（挂起或运行）。|
-|**进程**窗口 >**继续进程**|不可用|已选进程继续。<br />其他进程保持其现有状态（挂起或运行）。|
+|**进程**窗口 >**中断进程**|不适用|已选进程中断。<br />其他进程保持其现有状态（挂起或运行）。|
+|**进程**窗口 >**继续进程**|不适用|已选进程继续。<br />其他进程保持其现有状态（挂起或运行）。|
 
-###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>查找源文件和符号 (.pdb) 文件
+### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a>查找源文件和符号 (.pdb) 文件
 若要导航的进程的源代码，调试器需要访问其源文件和符号文件。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
-如果无法访问进程的文件，可以通过使用导航**反汇编**窗口。 有关详细信息，请参阅[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)。
+如果无法访问进程的文件，可以通过使用导航**反汇编**窗口。 有关详细信息，请参阅[如何：使用“反汇编”窗口](../debugger/how-to-use-the-disassembly-window.md)。
 
-###  <a name="BKMK_Switch_between_processes"></a>在进程之间切换
+### <a name="BKMK_Switch_between_processes"></a>在进程之间切换
 
 当你进行调试时，但在任何给定时间只有一个进程处于调试器中处于活动状态时，可以附加到多个进程。 可以在“调试位置”工具栏或“进程”窗口中设置活动的或当前的进程。 若要在两个进程间切换，这两个进程必须处于中断模式。
 

@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092118"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58935866"
   
 #### <a name="to-create-the-product-manifest"></a>若要创建产品清单  
   
-1.  创建引导程序包的目录。 此示例使用 C:\package。  
+1. 创建引导程序包的目录。 此示例使用 C:\package。  
   
-2.  在 Visual Studio 中，创建名为的新 XML 文件`product.xml`，并将其保存到 C:\package 文件夹。  
+2. 在 Visual Studio 中，创建名为的新 XML 文件`product.xml`，并将其保存到 C:\package 文件夹。  
   
-3.  添加以下 XML 来描述包的 XML 命名空间和产品代码。 产品代码替换包的唯一标识符。  
+3. 添加以下 XML 来描述包的 XML 命名空间和产品代码。 产品代码替换包的唯一标识符。  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ ms.locfileid: "58935866"
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  添加 XML 以指定的包具有依赖项。 此示例使用在 Microsoft Windows Installer 3.1 上的依赖项。  
+4. 添加 XML 以指定的包具有依赖项。 此示例使用在 Microsoft Windows Installer 3.1 上的依赖项。  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ ms.locfileid: "58935866"
       </RelatedProducts>  
     ```  
   
-5.  添加 XML 以列出引导程序包中的所有文件。 此示例使用包文件的名称 CorePackage.msi。  
+5. 添加 XML 以列出引导程序包中的所有文件。 此示例使用包文件的名称 CorePackage.msi。  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ ms.locfileid: "58935866"
     </PackageFiles>  
     ```  
   
-6.  复制或移动到 C:\package 文件夹 CorePackage.msi 文件。  
+6. 复制或移动到 C:\package 文件夹 CorePackage.msi 文件。  
   
-7.  添加 XML 以使用引导程序命令安装包。 引导程序会自动添加 **/qn**将以无提示方式安装的.msi 文件的标志。 如果该文件是.exe，引导程序的使用命令行程序才能运行.exe 文件。 下面的 XML 演示到 CorePackage.msi，任何自变量，但可以将命令行参数放入参数属性。  
+7. 添加 XML 以使用引导程序命令安装包。 引导程序会自动添加 **/qn**将以无提示方式安装的.msi 文件的标志。 如果该文件是.exe，引导程序的使用命令行程序才能运行.exe 文件。 下面的 XML 演示到 CorePackage.msi，任何自变量，但可以将命令行参数放入参数属性。  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  添加以下 XML 来检查是否安装了此引导程序包。 产品代码替换为可再发行组件的 GUID。  
+8. 添加以下 XML 来检查是否安装了此引导程序包。 产品代码替换为可再发行组件的 GUID。  
   
     ```  
     <InstallChecks>  

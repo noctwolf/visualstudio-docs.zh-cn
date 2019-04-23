@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116597"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>封装字段重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58932581"
   
 ### <a name="to-create-a-property-from-a-field"></a>从字段创建属性  
   
-1.  创建名为 `EncapsulateFieldExample` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
+1. 创建名为 `EncapsulateFieldExample` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ ms.locfileid: "58932581"
     }  
     ```  
   
-2.  在中[代码编辑器](../ide/writing-code-in-the-code-and-text-editor.md)，将光标放在声明中，你想要封装的字段的名称。 在下面的示例中，将光标置于单词 `width` 上：  
+2. 在中[代码编辑器](../ide/writing-code-in-the-code-and-text-editor.md)，将光标放在声明中，你想要封装的字段的名称。 在下面的示例中，将光标置于单词 `width` 上：  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  上**重构**菜单上，单击**封装字段**。  
+3. 上**重构**菜单上，单击**封装字段**。  
   
      **封装字段**对话框随即出现。  
   
@@ -72,11 +72,11 @@ ms.locfileid: "58932581"
   
      此外可以右键单击光标，指向**重构**，然后单击**封装字段**以显示**封装字段**对话框。  
   
-4.  指定设置。  
+4. 指定设置。  
   
-5.  按 ENTER，或单击**确定**按钮。  
+5. 按 ENTER，或单击**确定**按钮。  
   
-6.  如果所选**预览引用更改**选项，则**预览引用更改**窗口随即打开。 单击**应用**按钮。  
+6. 如果所选**预览引用更改**选项，则**预览引用更改**窗口随即打开。 单击**应用**按钮。  
   
      源文件中会显示以下 `get` 和 `set` 访问器代码：  
   

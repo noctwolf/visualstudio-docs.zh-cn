@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082758"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>将数据保存在 SharePoint 项目系统的扩展
   扩展 SharePoint 项目系统时，可以保存字符串数据的 SharePoint 项目关闭后仍然存在。 数据是与特定项目项或项目本身通常相关联。
@@ -35,9 +35,9 @@ ms.locfileid: "56599670"
 ## <a name="save-data-that-is-associated-with-a-project"></a>保存与项目相关联的数据
  如果具有项目级别的数据，例如 SharePoint 项目中添加的属性的值可以将数据保存到项目文件 ( *.csproj*文件或 *.vbproj*文件) 或项目用户选项文件 ( *。 csproj.user*文件或 *。 vbproj.user*文件)。 想要使用的数据的方式取决于您选择将保存在数据文件：
 
--   如果你想要的所有开发人员可以打开 SharePoint 项目的数据，将数据保存到项目文件。 此文件是始终签入到源代码管理数据库，因此此文件中的数据的其他开发人员可以签出该项目。
+- 如果你想要的所有开发人员可以打开 SharePoint 项目的数据，将数据保存到项目文件。 此文件是始终签入到源代码管理数据库，因此此文件中的数据的其他开发人员可以签出该项目。
 
--   如果你想要仅对当前具有开发人员在 Visual Studio 中打开 SharePoint 项目可用的数据，将数据保存到项目用户选项文件。 此文件是不通常签入到源代码管理数据库，因此此文件中的数据不可用的其他开发人员签出该项目。
+- 如果你想要仅对当前具有开发人员在 Visual Studio 中打开 SharePoint 项目可用的数据，将数据保存到项目用户选项文件。 此文件是不通常签入到源代码管理数据库，因此此文件中的数据不可用的其他开发人员签出该项目。
 
 ### <a name="save-data-to-the-project-file"></a>将数据保存到项目文件
  若要将数据保存到项目文件，将转换<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象传递给<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>对象，以及如何将<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法。 下面的代码示例演示如何使用此方法将保存到项目文件的项目属性的值。 若要查看此示例中的上下文中更大的示例，请参阅[如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。

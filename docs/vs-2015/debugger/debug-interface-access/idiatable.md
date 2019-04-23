@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b6b68ce7cd629a3c5ae1b585c91de256336f355
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 460da9a44b588cba92bb10efd9fd191457469c09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931421"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092053"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ IDiaTable : IEnumUnknown
   
  在实现以下接口`IDiaTable`接口 (即，您可以查询`IDiaTable`界面为以下接口之一):  
   
--   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
--   [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
   
--   [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
   
--   [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
   
--   [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
   
--   [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
   
--   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>示例  
  第一个函数， `ShowTableNames`，在会话中显示的所有表的名称。 第二个函数， `GetTable`，搜索所有实现指定的接口的表的表。 第三个函数， `UseTable`，演示如何使用`GetTable`函数。  

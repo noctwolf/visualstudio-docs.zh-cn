@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c13472fc1322701fefada53ee3e94156f35e8072
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095836"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Windows 8 和 Windows Server 2012 中增强的安全功能需要对 Visual Studi
 > [!NOTE]
 >  其他受支持的 Windows 版本（Windows 7、Windows Server 2008 R2）的性能工具未更改。  
   
-##  <a name="BKMK_In_this_topic"></a> 在本主题中  
+## <a name="BKMK_In_this_topic"></a> 在本主题中  
  [从 Visual Studio IDE 收集有关 Windows 应用商店应用的数据](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [从 Visual Studio IDE 收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -35,7 +35,7 @@ Windows 8 和 Windows Server 2012 中增强的安全功能需要对 Visual Studi
   
   [收集层交互 (TIP) 数据](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关 Windows 应用商店应用的数据  
+## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关 Windows 应用商店应用的数据  
  分析在 JavaScript 和 HTML 5 中编写的 Windows 应用商店应用程序时，应收集 JavaScript 代码的检测数据。 分析在 Visual C++、Visual C# 或 Visual Basic 中编写的 Windows 应用商店应用程序或组件时，应收集本机代码和托管代码的采样数据。 可以在本地或远程计算机上分析应用。  
   
  分析 Windows 应用商店应用程序时不支持这些分析功能和选项：  
@@ -76,22 +76,22 @@ Windows 8 和 Windows Server 2012 中增强的安全功能需要对 Visual Studi
   
   [在本主题中](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据  
+## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据  
  针对 Windows 8，使用检测方法进行分析并未更改。  
   
  使用采样方法时不支持层交互分析 (TIP)。  
   
-###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 使用采样收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据  
+### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> 从 Visual Studio IDE 使用采样收集有关在 Windows 8 桌面上或 Windows Server 2012 上运行的应用的数据  
  使用采样方法分析 Windows 8 桌面应用程序或 Windows Server 2012 应用程序时不支持这些分析功能和选项。  
   
--   层交互分析 (TIP)。 使用检测时支持收集 TIP 数据。  
+- 层交互分析 (TIP)。 使用检测时支持收集 TIP 数据。  
   
--   采样选项，如设置采样事件和计时间隔，或收集其他性能计数器数据。  
+- 采样选项，如设置采样事件和计时间隔，或收集其他性能计数器数据。  
   
-##  <a name="BKMK_Profiling_from_the_command_line"></a> 从命令行分析  
+## <a name="BKMK_Profiling_from_the_command_line"></a> 从命令行分析  
  你使用两个命令行工具收集 Windows 8 和 Windows Server 2012 设备上的分析数据，这些设备包括未安装 Visual Studio 的设备：  
   
-|工具名称|说明​​|  
+|工具名称|描述|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|从 Windows 应用商店应用程序收集分析数据，并从 Windows 8 桌面应用程序和 Windows Server 2012 应用程序收集采样分析数据。|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|从在 Windows 8 桌面和 Windows Server 2012 上运行的应用收集检测、并发和层交互分析数据。 从之前版本的 Windows 收集所有类型的分析数据。|  
@@ -100,22 +100,22 @@ Windows 8 和 Windows Server 2012 中增强的安全功能需要对 Visual Studi
   
  若要分析未安装 Visual Studio 的设备上的应用程序，请执行以下操作之一：  
   
--   从 [MSDN 网站](http://go.microsoft.com/fwlink/?LinkID=219549)上下载这些工具作为 Visual Studio 远程工具的一部分。  
+- 从 [MSDN 网站](http://go.microsoft.com/fwlink/?LinkID=219549)上下载这些工具作为 Visual Studio 远程工具的一部分。  
   
--   从你的 Visual Studio 计算机复制并运行独立探查器工具安装程序。 安装程序位于 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 文件夹。 为远程计算机的操作系统 (x86/x64) 选择安装程序。  
+- 从你的 Visual Studio 计算机复制并运行独立探查器工具安装程序。 安装程序位于 *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** 文件夹。 为远程计算机的操作系统 (x86/x64) 选择安装程序。  
   
 > [!NOTE]
 >  若要收集 TIP 分析数据，必须从远程计算机上的 Visual Studio 计算机安装独立探查器。  
   
  当从命令行分析 Windows 8 和 Windows Server 2012 应用程序时不支持这些分析功能和选项：  
   
--   通过将采样模式与 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)一同使用，从 Windows 8 和 Windows Server 2012 Web 应用收集数据。  
+- 通过将采样模式与 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md)一同使用，从 Windows 8 和 Windows Server 2012 Web 应用收集数据。  
   
--   通过使用 VsPerfCmd.exe 收集采样数据。  
+- 通过使用 VsPerfCmd.exe 收集采样数据。  
   
--   采样选项，如设置采样事件和计时间隔，或收集其他性能计数器数据。  
+- 采样选项，如设置采样事件和计时间隔，或收集其他性能计数器数据。  
   
-##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 收集层交互 (TIP) 数据  
+## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 收集层交互 (TIP) 数据  
  层交互分析提供有关多层应用程序函数执行时间的附加信息，这些应用程序通过 ADO.NET 服务与数据库进行通信。 仅针对同步函数调用收集数据。  
   
  **Visual Studio 版本**  

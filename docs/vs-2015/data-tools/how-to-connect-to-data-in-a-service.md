@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090376"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ ms.locfileid: "59650039"
   
 ### <a name="to-connect-your-application-to-a-service"></a>若要连接到服务应用程序  
   
-1.  在 **“数据”** 菜单上，单击 **“添加新数据源”**。  
+1. 在 **“数据”** 菜单上，单击 **“添加新数据源”**。  
   
-2.  选择**服务**上**选择数据源类型**页上，然后依次**下一步**。  
+2. 选择**服务**上**选择数据源类型**页上，然后依次**下一步**。  
   
-3.  输入你想要使用，或单击该服务的地址**Discover**若要在当前解决方案中，找到服务，然后单击**转**。  
+3. 输入你想要使用，或单击该服务的地址**Discover**若要在当前解决方案中，找到服务，然后单击**转**。  
   
-4.  （可选） 一个新**Namespace**可以替代默认值类型。  
+4. （可选） 一个新**Namespace**可以替代默认值类型。  
   
     > [!NOTE]
     >  单击**高级**以打开[配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)。  
   
-5.  单击**确定**添加到你的项目的服务引用。  
+5. 单击**确定**添加到你的项目的服务引用。  
   
-6.  单击 **“完成”**。  
+6. 单击 **“完成”**。  
   
      数据源随即添加到“数据源”窗口中。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "59650039"
   
 #### <a name="to-add-functionality-to-your-application"></a>将功能添加到你的应用程序  
   
--   选择中的项**数据源**窗口并将其拖到窗体来创建绑定的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
+- 选择中的项**数据源**窗口并将其拖到窗体来创建绑定的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

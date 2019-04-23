@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118105"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相关服务和界面（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58932737"
   
  接口是：  
   
--   必需：相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。  
+- 必需：相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。  
   
--   建议：实体应实现此接口;否则，源代码管理功能，可能会受到限制。  
+- 建议：实体应实现此接口;否则，源代码管理功能，可能会受到限制。  
   
--   可选： 实体可以实现此接口可提供更丰富的功能集。  
+- 可选： 实体可以实现此接口可提供更丰富的功能集。  
   
 |接口|用途|由实现|实现？|  
 |---------------|-------------|--------------------|----------------|  

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091754"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>将对象绑定作为 Visual Studio 中的数据源
 
@@ -40,25 +40,25 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 
 虽然有无数的使用方法来实现应用程序逻辑，使用对象作为数据源时，SQL 的情况下存在数据库是可以通过使用 Visual Studio 生成的 TableAdapter 对象来简化的几个标准操作。 此页说明如何实现使用 Tableadapter 这些标准过程。 它不是用于创建自定义对象应作为指南。 例如，你通常将执行以下的标准操作而不考虑特定实现的对象或应用程序的逻辑：
 
--   将数据加载到对象 （通常是从数据库）。
+- 将数据加载到对象 （通常是从数据库）。
 
--   创建类型化的对象的集合。
+- 创建类型化的对象的集合。
 
--   将对象添加到和从集合中删除对象。
+- 将对象添加到和从集合中删除对象。
 
--   向窗体上的用户显示的对象数据。
+- 向窗体上的用户显示的对象数据。
 
--   更改并正在编辑的对象中的数据。
+- 更改并正在编辑的对象中的数据。
 
--   将数据从对象保存到数据库。
+- 将数据从对象保存到数据库。
 
 ### <a name="load-data-into-objects"></a>将数据加载到对象
 
 对于此示例中，您将数据加载到您的对象使用 Tableadapter。 默认情况下，使用两种类型的方法，从数据库提取数据并填充数据的表创建 Tableadapter。
 
--   `TableAdapter.Fill`方法返回的数据填充现有数据表。
+- `TableAdapter.Fill`方法返回的数据填充现有数据表。
 
--   `TableAdapter.GetData`方法返回一个新的数据集填充数据。
+- `TableAdapter.GetData`方法返回一个新的数据集填充数据。
 
 加载数据使用自定义对象的最简单方法是调用`TableAdapter.GetData`方法中，循环遍历返回的数据表中的行的集合，并填充每个行中的值与每个对象。 您可以创建`GetData`返回填充的数据表的任何添加到 TableAdapter 的查询的方法。
 
@@ -134,7 +134,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 
 Visual Studio 创建可以直接对数据库执行的 DBDirect 方法。 这些方法不需要 DataSet 或 DataTable 对象。
 
-|TableAdapter DBDirect 方法|说明​​|
+|TableAdapter DBDirect 方法|描述|
 | - |-----------------|
 |`TableAdapter.Insert`|将新记录添加到数据库，您可以在各列的值作为方法参数中传递。|
 |`TableAdapter.Update`|更新现有数据库中的记录。 Update 方法使用原始的和新列的值作为方法参数。 用于查找的原始记录的原始值和新值用于更新该记录。<br /><br /> `TableAdapter.Update`方法还可用于将数据集的更改回数据库中，通过采用<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或数组<xref:System.Data.DataRow>的方法参数。|

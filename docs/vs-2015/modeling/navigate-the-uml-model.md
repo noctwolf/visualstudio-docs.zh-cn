@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116662"
 ---
 # <a name="navigate-the-uml-model"></a>导航 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "58933781"
   
  除 IElement 之外的所有类型都从一个或多个超类型继承属性。  
   
--   模型类型的摘要，请参阅[UML 模型元素类型](../modeling/uml-model-element-types.md)。  
+- 模型类型的摘要，请参阅[UML 模型元素类型](../modeling/uml-model-element-types.md)。  
   
--   有关 API 的完整详细信息，请参阅[UML 建模扩展性的 API 参考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
+- 有关 API 的完整详细信息，请参阅[UML 建模扩展性的 API 参考](../modeling/api-reference-for-uml-modeling-extensibility.md)。  
   
 ### <a name="relationships"></a>关系  
  UML 规范中定义的属性和关系将作为 .NET 属性实现。  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>访问另一个模型或关系图  
  你可以：  
   
--   使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型总线在不同模型中的元素之间创建链接。 有关详细信息，请参阅[与其他模型和工具集成 UML 模型](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
+- 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型总线在不同模型中的元素之间创建链接。 有关详细信息，请参阅[与其他模型和工具集成 UML 模型](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
   
--   在只读模式下加载建模项目和关系图，而不使其在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用户界面中可见。 有关详细信息，请参阅[读取程序代码中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
+- 在只读模式下加载建模项目和关系图，而不使其在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用户界面中可见。 有关详细信息，请参阅[读取程序代码中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
   
--   在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开建模项目及其关系图，然后访问相应内容。 有关详细信息，请参阅[使用 Visual Studio API 打开 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
+- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开建模项目及其关系图，然后访问相应内容。 有关详细信息，请参阅[使用 Visual Studio API 打开 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   

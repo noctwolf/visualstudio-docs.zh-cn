@@ -8,12 +8,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d82414b94caee2f1ccbb823e94d9168e5502df8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 903074787169a8889db89a85d65129c1b97c13e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096954"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 脚本执行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58926058"
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
--   不安全的 XsltSettings 参数替换为 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或者与实例的已禁用文档函数和脚本执行。
+- 不安全的 XsltSettings 参数替换为 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或者与实例的已禁用文档函数和脚本执行。
 
--   将 <xref:System.Xml.XmlResolver> 参数替换为 null 或 <xref:System.Xml.XmlSecureResolver> 实例。
+- 将 <xref:System.Xml.XmlResolver> 参数替换为 null 或 <xref:System.Xml.XmlSecureResolver> 实例。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  除非确信已知道输入是来自受信任的源，否则请勿禁止显示此警告的规则。

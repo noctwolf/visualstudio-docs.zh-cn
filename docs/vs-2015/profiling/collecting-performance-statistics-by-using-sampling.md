@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a51487cd074229d3f2c5fc4074fd184b22170c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117468"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>使用采样收集性能统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ ms.locfileid: "54777100"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  可以使用以下步骤之一来指定采样方法：  
   
--   在分析向导的第一页，单击“CPU 采样(建议)”。  
+- 在分析向导的第一页，单击“CPU 采样(建议)”。  
   
--   在“性能资源管理器”工具栏的“方法”列表中，单击“采样”。  
+- 在“性能资源管理器”工具栏的“方法”列表中，单击“采样”。  
   
--   在性能会话的属性对话框的“常规”页上，选择“采样”。  
+- 在性能会话的属性对话框的“常规”页上，选择“采样”。  
   
 ## <a name="common-tasks"></a>常规任务  
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  

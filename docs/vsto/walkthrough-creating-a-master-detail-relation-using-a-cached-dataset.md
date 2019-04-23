@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3b1491f8a7978fa7f2ab12afa46c5e50fbf80c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603022"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091490"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：创建使用缓存的数据集的主从关系
   本演练演示在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。
@@ -27,13 +27,13 @@ ms.locfileid: "56603022"
 
  在本演练中，你将学会如何执行以下任务：
 
--   将控件添加到工作表。
+- 将控件添加到工作表。
 
--   设置要缓存的工作表中的数据集。
+- 设置要缓存的工作表中的数据集。
 
--   添加代码以启用滚动记录。
+- 添加代码以启用滚动记录。
 
--   测试您的项目。
+- 测试您的项目。
 
 > [!NOTE]
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -41,13 +41,13 @@ ms.locfileid: "56603022"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   访问 Northwind SQL Server 示例数据库。 数据库可以是在开发计算机上或在服务器上。
+- 访问 Northwind SQL Server 示例数据库。 数据库可以是在开发计算机上或在服务器上。
 
--   读取和写入到 SQL Server 数据库的权限。
+- 读取和写入到 SQL Server 数据库的权限。
 
 ## <a name="create-a-new-project"></a>创建新项目
  在此步骤中，将创建一个 Excel 工作簿项目。
@@ -88,21 +88,21 @@ ms.locfileid: "56603022"
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>若要添加的命名的区域和列表对象
 
-1.  确认**我的 Master Detail.xlsx**工作簿是在 Visual Studio 设计器中，打开与**Sheet1**显示。
+1. 确认**我的 Master Detail.xlsx**工作簿是在 Visual Studio 设计器中，打开与**Sheet1**显示。
 
-2.  打开**数据源**窗口中，展开**订单**节点。
+2. 打开**数据源**窗口中，展开**订单**节点。
 
-3.  选择**OrderID**列，然后单击显示的下拉箭头。
+3. 选择**OrderID**列，然后单击显示的下拉箭头。
 
-4.  单击**NamedRange**在下拉列表中，然后将**OrderID**到单元格的列**A2**。
+4. 单击**NamedRange**在下拉列表中，然后将**OrderID**到单元格的列**A2**。
 
      一个<xref:Microsoft.Office.Tools.Excel.NamedRange>名为控件`OrderIDNamedRange`单元格中创建**A2**。 同时，在<xref:System.Windows.Forms.BindingSource>名为`OrdersBindingSource`，一个表适配器和一个<xref:System.Data.DataSet>实例添加到项目。 该控件绑定到<xref:System.Windows.Forms.BindingSource>，后者又绑定到<xref:System.Data.DataSet>实例。
 
-5.  向下滚动过去下的列**订单**表。 在列表的底部**订单详细信息**表; 此处是因为它的子级**订单**表。 选择此选项**订单详细信息**表，不是与同一级别的那个**订单**表，并单击显示的下拉箭头。
+5. 向下滚动过去下的列**订单**表。 在列表的底部**订单详细信息**表; 此处是因为它的子级**订单**表。 选择此选项**订单详细信息**表，不是与同一级别的那个**订单**表，并单击显示的下拉箭头。
 
-6.  单击**ListObject**在下拉列表中，然后将**OrderDetails**表与单元格**A6**。
+6. 单击**ListObject**在下拉列表中，然后将**OrderDetails**表与单元格**A6**。
 
-7.  一个<xref:Microsoft.Office.Tools.Excel.ListObject>名为控件**Order_DetailsListObject**单元格中创建**A6**，并将其绑定到<xref:System.Windows.Forms.BindingSource>。
+7. 一个<xref:Microsoft.Office.Tools.Excel.ListObject>名为控件**Order_DetailsListObject**单元格中创建**A6**，并将其绑定到<xref:System.Windows.Forms.BindingSource>。
 
 ### <a name="to-add-two-buttons"></a>若要添加两个按钮
 
@@ -136,14 +136,14 @@ ms.locfileid: "56603022"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>若要初始化数据和控件
 
-1.  在中**解决方案资源管理器**，右键单击**Sheet1.vb**或**Sheet1.cs**，然后单击**查看代码**快捷菜单上。
+1. 在中**解决方案资源管理器**，右键单击**Sheet1.vb**或**Sheet1.cs**，然后单击**查看代码**快捷菜单上。
 
-2.  将以下代码添加到`Sheet1_Startup`方法以设置按钮的文本。
+2. 将以下代码添加到`Sheet1_Startup`方法以设置按钮的文本。
 
      [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
      [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
 
-3.  仅适用于 C#，添加事件处理程序按钮的 click 事件与`Sheet1_Startup`方法。
+3. 仅适用于 C#，添加事件处理程序按钮的 click 事件与`Sheet1_Startup`方法。
 
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
 
@@ -152,12 +152,12 @@ ms.locfileid: "56603022"
 
 ### <a name="to-scroll-through-the-records"></a>滚动显示记录
 
-1.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button1`，并添加以下代码以向后移动浏览记录：
+1. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button1`，并添加以下代码以向后移动浏览记录：
 
      [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
      [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
 
-2.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button2`，并添加以下代码无法进一步处理记录：
+2. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button2`，并添加以下代码无法进一步处理记录：
 
      [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
      [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
@@ -167,26 +167,26 @@ ms.locfileid: "56603022"
 
 ### <a name="to-test-the-data-caching"></a>若要测试数据缓存
 
-1.  按 F5 。
+1. 按 F5 。
 
-2.  验证数据源的数据填充命名的区域和列表对象。
+2. 验证数据源的数据填充命名的区域和列表对象。
 
-3.  通过单击的按钮，滚动浏览一些记录。
+3. 通过单击的按钮，滚动浏览一些记录。
 
-4.  保存该工作簿，然后关闭工作簿和 Visual Studio。
+4. 保存该工作簿，然后关闭工作簿和 Visual Studio。
 
-5.  禁用数据库的连接。 如果数据库位于服务器上，拔出网络电缆从计算机或停止 SQL Server 服务，如果数据库是在开发计算机上。
+5. 禁用数据库的连接。 如果数据库位于服务器上，拔出网络电缆从计算机或停止 SQL Server 服务，如果数据库是在开发计算机上。
 
-6.  打开 Excel，然后打开**我的 Master Detail.xlsx**从*\bin*目录 (*\My Master-Detail\bin*在 Visual Basic 中或*\My Master-Detail\bin\调试*C# 中)。
+6. 打开 Excel，然后打开**我的 Master Detail.xlsx**从*\bin*目录 (*\My Master-Detail\bin*在 Visual Basic 中或*\My Master-Detail\bin\调试*C# 中)。
 
-7.  滚动浏览的某些记录，若要查看断开连接时，工作表进行正常操作。
+7. 滚动浏览的某些记录，若要查看断开连接时，工作表进行正常操作。
 
-8.  重新连接到数据库。 将计算机连接到网络再次如果数据库位于服务器上，或如果数据库是在开发计算机上启动 SQL Server 服务。
+8. 重新连接到数据库。 将计算机连接到网络再次如果数据库位于服务器上，或如果数据库是在开发计算机上启动 SQL Server 服务。
 
 ## <a name="next-steps"></a>后续步骤
  本演练演示在工作表上创建母版/详细信息数据关系和缓存数据集的基础知识。 以下是接下来可能要执行的一些任务：
 
--   部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
+- 部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 
 ## <a name="see-also"></a>请参阅
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)

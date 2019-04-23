@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116389"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>从 Visual Studio 部署 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58937928"
 
 - 部署由另一个应用或方法启动时才进行调试的应用。
 
-##  <a name="BKMK_In_this_topic"></a> 主题内容
+## <a name="BKMK_In_this_topic"></a> 主题内容
  在本主题中，你将了解：
 
  [如何部署 Windows 应用商店应用](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ ms.locfileid: "58937928"
 
  [部署选项](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 Windows 应用商店应用
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 Windows 应用商店应用
  手动部署应用是一个非常简单的过程：
 
-1.  如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。
+1. 如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。
 
-2.  在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。 
+2. 在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。 
 
      ![本地计算机上运行](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  在 **“生成”** 菜单上，选择 **“部署”**
+3. 在 **“生成”** 菜单上，选择 **“部署”**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定远程设备
+## <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定远程设备
  **先决条件**
 
  将应用部署到远程设备：
 
--   必须在远程设备上安装开发人员许可证。
+- 必须在远程设备上安装开发人员许可证。
 
--   远程设备上必须已安装 Visual Studio 远程工具并且远程调试监视器必须正在运行。
+- 远程设备上必须已安装 Visual Studio 远程工具并且远程调试监视器必须正在运行。
 
      部署使用远程调试器网络渠道将应用文件发送到远程设备。
 
@@ -101,7 +101,7 @@ ms.locfileid: "58937928"
 
 8. 在 **“远程计算机”** 框中输入远程设备的网络名称，或单击 **“查找”** ，从 **“选择远程调试器连接”** 对话框中选择该设备。
 
-##  <a name="BKMK_Deployment_options"></a> 部署选项
+## <a name="BKMK_Deployment_options"></a> 部署选项
  你可以在启动项目的“调试”属性页上设置以下部署选项。
 
  **允许网络 Loopback**出于安全原因，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]以标准方式安装应用程序不允许进行网络调用安装的设备。 默认情况下，Visual Studio 部署功能会针对部署的应用为此规则创建一个例外。 通过此例外，你可以在一台计算机上测试通信过程。 向 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 提交应用之前，应该在不使用该例外的情况下测试你的应用。
@@ -112,7 +112,7 @@ ms.locfileid: "58937928"
 
 - 在 JavaScript 和调试属性页上，将 **“允许网络环回”** 值设置为 **“否”**。
 
-  **不启动，但在启动时调试我的代码 (C#和 VB) / 启动应用程序 （JavaScript 和 c + +）** 配置为自动启动调试会话时启动应用程序的部署：
+  **不启动，但在启动时调试我的代码 (C#和 VB) / 启动应用程序 (JavaScript 和C++)** 配置为自动启动调试会话时启动应用程序的部署：
 
 - 在 C# 和 VB 调试属性页上，选中 **“不启动，但在启动时调试代码”** 复选框。
 

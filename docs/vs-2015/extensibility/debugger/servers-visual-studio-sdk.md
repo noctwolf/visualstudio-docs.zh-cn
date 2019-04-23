@@ -11,23 +11,23 @@ ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 81de310320fe45c06f2a233d7c8d742f9d55405e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093094"
 ---
 # <a name="servers-visual-studio-sdk"></a>服务器 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在调试器体系结构，方面**server**:  
   
--   是一个容器的端口和端口提供程序和用于通信的端口和端口提供程序会话调试管理器 (SDM) 和调试引擎。  
+- 是一个容器的端口和端口提供程序和用于通信的端口和端口提供程序会话调试管理器 (SDM) 和调试引擎。  
   
--   可以按名称、 标识本身和枚举其端口和端口提供程序。  
+- 可以按名称、 标识本身和枚举其端口和端口提供程序。  
   
--   为由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)接口，仅实现由 Visual Studio （在 Visual Studio 运行的每个实例的服务器的一个实例）。  
+- 为由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)接口，仅实现由 Visual Studio （在 Visual Studio 运行的每个实例的服务器的一个实例）。  
   
 ## <a name="see-also"></a>请参阅  
  [端口](../../extensibility/debugger/ports.md)   

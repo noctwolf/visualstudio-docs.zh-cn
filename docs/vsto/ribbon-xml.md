@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117533"
 ---
 # <a name="ribbon-xml"></a>功能区 XML
   功能区 (XML) 项，您可以使用 XML 自定义功能区。 如果你想要自定义功能区 （可视化设计器） 项不支持一种方法在功能区，请使用功能区 (XML) 项。 可以对每个项执行的操作的比较，请参阅[功能区概述](../vsto/Ribbon-overview.md)。
@@ -55,9 +55,9 @@ ms.locfileid: "56602017"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>定义自定义功能区的行为
  您可以响应用户操作，例如通过创建单击功能区上的按钮*回叫方法*。 回叫方法类似于 Windows 窗体控件中的事件，但它们由 UI 元素的 XML 中的特性标识。 可在功能区类中编写方法，并且控件调用名称与特性值相同的方法。 例如，可以创建当用户单击功能区上的按钮时调用的回调方法。 创建回叫方法需要两个步骤：
 
--   将特性分配给功能区 XML 文件中的控件，该文件标识代码中的回叫方法。
+- 将特性分配给功能区 XML 文件中的控件，该文件标识代码中的回叫方法。
 
--   定义功能区类中的回叫方法。
+- 定义功能区类中的回叫方法。
 
 > [!NOTE]
 >  Outlook 还需要一个额外的步骤。 有关详细信息，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
@@ -77,7 +77,7 @@ ms.locfileid: "56602017"
 
  有许多不同类型的回叫方法可分配给功能区控件。 每个控件的可用回叫方法的完整列表，请参阅技术文章[为开发人员 (第 3 部分，共 3 部分) 自定义 Office (2007) 功能区用户界面](/previous-versions/office/developer/office-2007/aa722523(v=office.12))。
 
-###  <a name="CallBackMethods"></a> 定义回叫方法
+### <a name="CallBackMethods"></a> 定义回叫方法
  定义功能区代码文件中功能区类中的回叫方法。 回叫方法具有以下几个要求：
 
 - 它必须声明为公共。
@@ -93,7 +93,7 @@ ms.locfileid: "56602017"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> 功能区 XML 文件引用
+## <a name="RibbonDescriptorFile"></a> 功能区 XML 文件引用
  到功能区 XML 文件，可以定义自定义功能区添加元素和属性。 默认情况下，功能区 XML 文件包含以下 XML。
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602017"
 
  功能区 XML 文件中的默认元素和特性是可用元素和特性一小部分。 有关可用元素和属性的完整列表，请参阅技术文章[为开发人员 (第 2 部分，共 3 部分) 自定义 Office (2007) 功能区用户界面](/previous-versions/office/developer/office-2007/aa338199(v=office.12))。
 
-##  <a name="RibbonExtensionClass"></a> 功能区类引用
+## <a name="RibbonExtensionClass"></a> 功能区类引用
  Visual Studio 在功能区代码文件中生成功能区类。 向此类添加功能区上的控件的回调方法。 此类实现 <xref:Microsoft.Office.Core.IRibbonExtensibility> 接口。
 
  下表介绍此类中的默认方法。

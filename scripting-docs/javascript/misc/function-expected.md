@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41d1ecc982dcdc4d494fc167e4784e9121bec15e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117040"
 ---
 # <a name="function-expected"></a>缺少函数
 要么你尝试调用之一**函数原型**不是对象上的方法`Function`对象，或者您的函数调用上下文中使用一个对象。 例如，下面的代码生成此错误，因为**示例**不是函数。  
@@ -31,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   只能调用**函数原型**上的方法`Function`对象。  
+- 只能调用**函数原型**上的方法`Function`对象。  
   
--   请确保使用的函数调用运算符`()`函数只能调用。  
+- 请确保使用的函数调用运算符`()`函数只能调用。  
   
 ## <a name="see-also"></a>请参阅  
  [函数对象](../../javascript/reference/function-object-javascript.md)   
