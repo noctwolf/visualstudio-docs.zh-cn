@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094549"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 SharePoint 2010 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ ms.locfileid: "57873539"
   
  **要求**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>还应当编码的 UI 测试了解什么?  
  若要详细了解使用编码的 UI 测试的相关好处，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)和[使用 Visual Studio 2012 测试持续交付 - 第 5 章：实现系统测试的自动化](http://go.microsoft.com/fwlink/?LinkID=255196)。  
   
  **备注**  
   
--   ![先决条件](../test/media/prereq.png "Prereq") 只有 SharePoint 2010 支持对 SharePoint 应用程序进行编码的 UI 测试。  
+- ![先决条件](../test/media/prereq.png "Prereq") 只有 SharePoint 2010 支持对 SharePoint 应用程序进行编码的 UI 测试。  
   
--   ![先决条件](../test/media/prereq.png "Prereq") 不支持 SharePoint 应用程序中对 Visio 和 PowerPoint 2010 控件的支持。  
+- ![先决条件](../test/media/prereq.png "Prereq") 不支持 SharePoint 应用程序中对 Visio 和 PowerPoint 2010 控件的支持。  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>为您的 SharePoint 应用程序创建编码的 UI 测试  
  为 SharePoint 2010 应用程序[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) ，与为其他类型的应用程序创建测试相同。 支持对 Web 编辑界面上的所有控件进行录制和播放。 选择类别和 Web 部件的接口都是标准 Web 控件。  
@@ -53,7 +53,7 @@ ms.locfileid: "57873539"
 > [!WARNING]
 >  如果在任何 Excel 单元格中输入文本，然后进行箭头键操作，将无法正确进行录制。 使用鼠标选择单元格。  
   
- 如果要录制对空单元格的操作，则必须双击该单元格，然后执行设置文本操作，以此修改代码。 这是必需的，因为如果单击单元格，然后进行任何键盘操作，将会激活单元格内的 `textarea` 。 如果只是录制对空单元格的 `setvalue` ，将会搜索直到单击单元格后才会显示的 `editbox` 。 例如:  
+ 如果要录制对空单元格的操作，则必须双击该单元格，然后执行设置文本操作，以此修改代码。 这是必需的，因为如果单击单元格，然后进行任何键盘操作，将会激活单元格内的 `textarea` 。 如果只是录制对空单元格的 `setvalue` ，将会搜索直到单击单元格后才会显示的 `editbox` 。 例如：  
   
 ```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  如果要录制对非空单元格的操作，则稍微有些复杂，因为在向单元格添加文本时，将会添加一个新的 \<div> 控件作为此单元格的子项。 新的 \<div> 控件包含刚才输入的文本。 记录器需要录制对新 \<div> 控件的操作；但是，它无法进行录制，因为新 \<div> 控件直到进入测试后才会存在。 您必须手动对代码做出以下更改，才能解决这一问题。  
   
-1.  转到单元格初始化，将 `RowIndex` 和 `ColumnIndex` 作为主要属性：  
+1. 转到单元格初始化，将 `RowIndex` 和 `ColumnIndex` 作为主要属性：  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  找到单元格的 `HtmlDiv` 子项：  
+2. 找到单元格的 `HtmlDiv` 子项：  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  添加 `HtmlDiv`鼠标双击操作的代码：  
+3. 添加 `HtmlDiv`鼠标双击操作的代码：  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  添加 `TextArea`设置文本操作的代码：  
+4. 添加 `TextArea`设置文本操作的代码：  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>测试 Silverlight Web 部件  
   
-1.  启动 Fiddler。  
+1. 启动 Fiddler。  
   
-2.  清除浏览器缓存。 这是必需的，因为 XAP 文件（包含 Silverlight UI 自动化帮助程序 DLL）通常会被缓存。 我们必须确保选择修改后的 XAP 文件，因此需要清除浏览器缓存。  
+2. 清除浏览器缓存。 这是必需的，因为 XAP 文件（包含 Silverlight UI 自动化帮助程序 DLL）通常会被缓存。 我们必须确保选择修改后的 XAP 文件，因此需要清除浏览器缓存。  
   
-3.  打开网页。  
+3. 打开网页。  
   
-4.  启动记录器并生成代码，就像常规 Web 应用程序测试一样。  
+4. 启动记录器并生成代码，就像常规 Web 应用程序测试一样。  
   
-5.  您应确认生成的代码引用 Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll。  
+5. 您应确认生成的代码引用 Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll。  
   
      有关详细信息，请参见 [使用 Visual Studio 2012 对 SharePoint 2010 进行 UI 测试](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   

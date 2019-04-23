@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094536"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：脱机时或者在服务器上缓存数据以供使用
   您可以将标记数据项目，在文档中，缓存，以便可脱机。 这还使得数据中的服务器上存储的文档时，其他代码要操作的文档。
@@ -36,28 +36,28 @@ ms.locfileid: "56636510"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>使用代码在文档中的缓存数据
 
-1.  如在项目中，主机项类的成员声明的公共字段或属性的数据项`ThisDocumen`Word 项目中的 t 类或`ThisWorkbook`Excel 项目中的类。
+1. 如在项目中，主机项类的成员声明的公共字段或属性的数据项`ThisDocumen`Word 项目中的 t 类或`ThisWorkbook`Excel 项目中的类。
 
-2.  将应用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>要将标记存储在文档的数据缓存中的数据项的成员的属性。 下面的示例将此属性应用到的字段声明<xref:System.Data.DataSet>。
+2. 将应用<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>要将标记存储在文档的数据缓存中的数据项的成员的属性。 下面的示例将此属性应用到的字段声明<xref:System.Data.DataSet>。
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  添加代码以创建数据项目的实例，如果适用，若要从数据库加载它。
+3. 添加代码以创建数据项目的实例，如果适用，若要从数据库加载它。
 
      首次创建; 时仅加载的数据项目此后，缓存保持与该文档而必须编写其他代码进行更新。
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>若要在文档中的数据集使用缓存的属性窗口
 
-1.  通过将数据源添加到你的项目使用使用 Visual Studio 设计器等工具将数据集添加到项目**数据源**窗口。
+1. 通过将数据源添加到你的项目使用使用 Visual Studio 设计器等工具将数据集添加到项目**数据源**窗口。
 
-2.  如果尚未执行操作有一个，并在设计器中选择的实例，请创建数据集的实例。
+2. 如果尚未执行操作有一个，并在设计器中选择的实例，请创建数据集的实例。
 
-3.  在中**属性**窗口中，将**CacheInDocument**属性设置为**True**。
+3. 在中**属性**窗口中，将**CacheInDocument**属性设置为**True**。
 
      有关详细信息，请参阅[Office 项目中的属性](../vsto/properties-in-office-projects.md)。
 
-4.  在中**属性**窗口中，将**修饰符**属性设置为**公共**(默认情况下它是**内部**)。
+4. 在中**属性**窗口中，将**修饰符**属性设置为**公共**(默认情况下它是**内部**)。
 
 ## <a name="see-also"></a>请参阅
 - [缓存数据](../vsto/caching-data.md)

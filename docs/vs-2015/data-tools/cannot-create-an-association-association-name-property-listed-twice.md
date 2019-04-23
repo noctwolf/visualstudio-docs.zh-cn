@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091572"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>无法创建关联 &lt;关联名称&gt; - 属性已列出两次
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "59660965"
   
 ### <a name="to-resolve-this-condition"></a>解决此问题的方法  
   
--   检查消息并记下消息中指定的属性。  
+- 检查消息并记下消息中指定的属性。  
   
--   单击“确定”，关闭该消息框。  
+- 单击“确定”，关闭该消息框。  
   
--   检查“关联属性”并移除重复项。  
+- 检查“关联属性”并移除重复项。  
   
--   单击 **“确定”**。  
+- 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

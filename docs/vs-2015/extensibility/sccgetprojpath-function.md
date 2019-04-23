@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093925"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 此函数会提示用户输入项目路径，这是一个字符串，它仅对源代码管理插件有意义。 当用户是，将调用：  
   
--   创建新的项目  
+- 创建新的项目  
   
--   将现有项目添加到版本控制  
+- 将现有项目添加到版本控制  
   
--   尝试查找现有的版本控制项目  
+- 尝试查找现有的版本控制项目  
   
 ## <a name="syntax"></a>语法  
   
@@ -83,7 +83,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功创建或检索项目。|  
 |SCC_I_OPERATIONCANCELED|该操作已取消。|  

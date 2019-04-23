@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90fd7beabb14163558afe4b957d95635e91f904a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d0f5c17fc0dd12cf8ecb184b667880462548877
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093275"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 获取与此堆栈帧关联的语言。
@@ -47,17 +47,17 @@ int GetLanguageInfo ( 
 
  [out]返回`GUID`的语言。 有关[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]语言，例如，以下可返回：
 
--   `guidVBScriptLang`
+- `guidVBScriptLang`
 
--   `guidJScriptLang`
+- `guidJScriptLang`
 
--   `guidCPPLang`
+- `guidCPPLang`
 
--   `guidVBLang`
+- `guidVBLang`
 
--   `guidSQLLang`
+- `guidSQLLang`
 
--   `guidScriptLang`
+- `guidScriptLang`
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

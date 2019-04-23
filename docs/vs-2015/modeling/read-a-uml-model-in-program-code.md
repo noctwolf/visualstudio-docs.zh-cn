@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092989"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>在程序代码中读取 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 你可以使用 UML API 加载 UML 模型及其关系图。  
   
-##  <a name="Reading"></a> 读取程序代码中的模型  
+## <a name="Reading"></a> 读取程序代码中的模型  
  若要访问模型的内容而不将其显示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口中，请使用 `ModelingProject.LoadReadOnly()`。  
   
  例如：  
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  你还可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API，在用户界面打开模型和关系图。 有关详细信息，请参阅[使用 Visual Studio API 打开 UML 模型](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)。  
   
-##  <a name="Standalone"></a> 独立应用程序  
+## <a name="Standalone"></a> 独立应用程序  
  上一节中的示例将用于 Visual Studio 扩展。 可以在独立的应用程序中读取模型，但你必须向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目添加一些引用。  
   
 > [!NOTE]
@@ -82,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. 添加你访问 UML 模型所需的 [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] 引用，通常为：  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. 除了前面的部分中列出的参考资料，添加以下项目引用从**\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**:  
   

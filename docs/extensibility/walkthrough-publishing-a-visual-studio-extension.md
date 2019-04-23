@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093341"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
@@ -80,27 +80,27 @@ ms.locfileid: "57983515"
 
     * **VSIX ID**是 Visual Studio 将使用为扩展插件的唯一标识符。 如果你想要让您自动更新的扩展，则需要使用此标识符。 此标识符是从自动填充*source.extension.vsixmanifest*文件。
 
-   * **徽标**用于你的扩展。 此徽标是从自动填充*source.extension.vsixmanifest*文件提供。
+    * **徽标**用于你的扩展。 此徽标是从自动填充*source.extension.vsixmanifest*文件提供。
 
-     * **简短说明**的扩展功能的。 此说明是从自动填充*source.extension.vsixmanifest*文件。
+    * **简短说明**的扩展功能的。 此说明是从自动填充*source.extension.vsixmanifest*文件。
 
-     * **概述**是包括屏幕截图和有关您的扩展插件的作用的详细的信息的好时机。
+    * **概述**是包括屏幕截图和有关您的扩展插件的作用的详细的信息的好时机。
 
-     * **支持的 Visual Studio 版本**允许您选择的 Visual Studio 版本中将处理您的扩展插件。 您的扩展插件仅安装到这些版本。
+    * **支持的 Visual Studio 版本**允许您选择的 Visual Studio 版本中将处理您的扩展插件。 您的扩展插件仅安装到这些版本。
 
-     * * * 支持 Visual Studio 版本，可以选择您的扩展插件将适用于 Visual Studio 的版本。 您的扩展插件仅安装到这些版本。
+    * * * 支持 Visual Studio 版本，可以选择您的扩展插件将适用于 Visual Studio 的版本。 您的扩展插件仅安装到这些版本。
 
-     * **类型**。 最常见的扩展类型是**工具**。
+    * **类型**。 最常见的扩展类型是**工具**。
 
-     * **类别**。 选择最多三个是最佳适合您的扩展插件的。
+    * **类别**。 选择最多三个是最佳适合您的扩展插件的。
 
-     * **标记**是关键字，可帮助用户找到您的扩展插件。 标记可帮助提高你的扩展在 Marketplace 中搜索相关性。
+    * **标记**是关键字，可帮助用户找到您的扩展插件。 标记可帮助提高你的扩展在 Marketplace 中搜索相关性。
 
-     * **定价类别**是您的扩展插件的成本。
+    * **定价类别**是您的扩展插件的成本。
 
-     * **源代码存储库**使您可以与社区分享你的源代码的链接。
+    * **源代码存储库**使您可以与社区分享你的源代码的链接。
 
-     * **您的扩展允许问答**允许用户在你扩展条目页面留下的问题。
+    * **您的扩展允许问答**允许用户在你扩展条目页面留下的问题。
 
 9. 单击**保存并上传**。 此选项操作，将返回到发布服务器管理页。 您的扩展插件尚未发布。 若要发布扩展，右键单击扩展，然后选择**设为公开**。 您可以查看您的扩展插件的外观像在 Marketplace 上通过选择**查看扩展**。 获取数字，请单击**报表**。 若要更改您的扩展插件，请单击**编辑**。
 

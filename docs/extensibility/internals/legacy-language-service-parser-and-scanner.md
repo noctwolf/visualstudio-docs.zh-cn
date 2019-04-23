@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd16fa286c4e6343e69644caa60525a988e180e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092300"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要一个语言分析器，以选择要显示的代码有关的信息。 分析器将文本分隔成词法标记，然后确定这些令牌的类型和功能。
@@ -80,29 +80,29 @@ namespace MyNamespace
 
  假定该语言服务支持匹配大括号。
 
-1.  在用户键入右大括号 （}）。
+1. 在用户键入右大括号 （}）。
 
-2.  在源文件中的光标处插入大括号和光标高级 1。
+2. 在源文件中的光标处插入大括号和光标高级 1。
 
-3.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>类调用与类型化的右大括号。
+3. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>类调用与类型化的右大括号。
 
-4.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法调用<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>类来获取当前光标位置之前的位置处的令牌。 此标记对应的类型化的右大括号）。
+4. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法调用<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>类来获取当前光标位置之前的位置处的令牌。 此标记对应的类型化的右大括号）。
 
-    1.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法调用<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法<xref:Microsoft.VisualStudio.Package.Colorizer>对象，以获取当前行上的所有令牌。
+    1. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法调用<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法<xref:Microsoft.VisualStudio.Package.Colorizer>对象，以获取当前行上的所有令牌。
 
-    2.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法调用<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>对象与当前行的文本。
+    2. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法调用<xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>对象与当前行的文本。
 
-    3.  <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法将重复调用<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>对象从当前行中收集的所有令牌。
+    3. <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法将重复调用<xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A>方法<xref:Microsoft.VisualStudio.Package.IScanner>对象从当前行中收集的所有令牌。
 
-    4.  <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法调用的私有方法<xref:Microsoft.VisualStudio.Package.Source>类来获取令牌，其中包含所需的位置，并从获取的令牌列表中的传递<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法。
+    4. <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法调用的私有方法<xref:Microsoft.VisualStudio.Package.Source>类来获取令牌，其中包含所需的位置，并从获取的令牌列表中的传递<xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A>方法。
 
-5.  <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法查找的一个令牌触发器标志<xref:Microsoft.VisualStudio.Package.TokenTriggers>从返回的令牌上<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法; 即，表示右大括号的标记)。
+5. <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A>方法查找的一个令牌触发器标志<xref:Microsoft.VisualStudio.Package.TokenTriggers>从返回的令牌上<xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A>方法; 即，表示右大括号的标记)。
 
-6.  如果触发器的标志<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到，则<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>调用类。
+6. 如果触发器的标志<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到，则<xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>中的方法<xref:Microsoft.VisualStudio.Package.Source>调用类。
 
-7.  <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法启动的分析操作中的分析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>。 此操作最终调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>类。 如果启用了异步分析，则此调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法在后台线程上发生。
+7. <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A>方法启动的分析操作中的分析原因值<xref:Microsoft.VisualStudio.Package.ParseReason>。 此操作最终调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法<xref:Microsoft.VisualStudio.Package.LanguageService>类。 如果启用了异步分析，则此调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法在后台线程上发生。
 
-8.  在分析操作完成后，名为内部完成处理程序 （也称为回调方法）`HandleMatchBracesResponse`名为<xref:Microsoft.VisualStudio.Package.Source>类。 自动进行此调用<xref:Microsoft.VisualStudio.Package.LanguageService>基类，不是由分析器。
+8. 在分析操作完成后，名为内部完成处理程序 （也称为回调方法）`HandleMatchBracesResponse`名为<xref:Microsoft.VisualStudio.Package.Source>类。 自动进行此调用<xref:Microsoft.VisualStudio.Package.LanguageService>基类，不是由分析器。
 
 9. `HandleMatchBracesResponse`方法获取从范围列表<xref:Microsoft.VisualStudio.Package.AuthoringSink>对象存储在<xref:Microsoft.VisualStudio.Package.ParseRequest>对象。 (对 span<xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan>结构，它在源文件中指定的一系列行和字符。)此列表的范围通常包含两个范围，分别用于左和右大括号。
 

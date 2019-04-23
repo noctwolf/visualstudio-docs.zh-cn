@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090415"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 设计时 T4 文本模板，您在 Visual Studio 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
@@ -141,9 +141,9 @@ ms.locfileid: "59657462"
 
 #### <a name="to-generate-program-code-or-resources"></a>生成程序代码或资源
 
-1.  更改输出指令以生成相应类型（如 .cs、.vb、.resx 或 .xml）的文件。
+1. 更改输出指令以生成相应类型（如 .cs、.vb、.resx 或 .xml）的文件。
 
-2.  插入将生成所需解决方案代码的代码。 例如，如果要在一个类中生成三个整数字段声明，则插入以下代码：
+2. 插入将生成所需解决方案代码的代码。 例如，如果要在一个类中生成三个整数字段声明，则插入以下代码：
 
     ```csharp
 
@@ -176,7 +176,7 @@ ms.locfileid: "59657462"
 
     ```
 
-3.  保存该文件并检查生成的文件，生成的文件现在包含以下代码：
+3. 保存该文件并检查生成的文件，生成的文件现在包含以下代码：
 
     ```csharp
     class MyGeneratedClass {

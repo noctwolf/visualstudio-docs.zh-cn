@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091780"
 ---
 # <a name="graphics-state"></a>图形状态
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
   
 ##### <a name="to-change-the-state-view"></a>若要更改状态视图  
   
--   在“状态”窗口中标题栏下面的左上方，选择对应于你想要使用的状态视图样式的按钮。  
+- 在“状态”窗口中标题栏下面的左上方，选择对应于你想要使用的状态视图样式的按钮。  
   
-    -   **显示 API 输入状态视图**  
+    - **显示 API 输入状态视图**  
   
-    -   **显示逻辑状态视图**  
+    - **显示逻辑状态视图**  
   
-    -   **显示固定状态视图**  
+    - **显示固定状态视图**  
   
 > [!IMPORTANT]
 >  必须固定“显示 API 输入状态”或“显示逻辑状态”视图中的状态，以便它在“显示固定状态视图”中显示。  
@@ -54,7 +54,7 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
 |列|描述|  
 |------------|-----------------|  
 |名称|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在“API 输入状态视图”和“逻辑状态视图”状态中，缩进名称以显示状态之间的层次结构关系。<br /><br /> 在“固定状态视图”状态中，完全限定名显示在简单列表中。|  
-|值|状态项的值。|  
+|“值”|状态项的值。|  
 |类型|状态项的类型。|  
   
 ### <a name="changed-state"></a>已更改的状态  
@@ -67,8 +67,8 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
   
 ##### <a name="to-pin-state-in-place"></a>若要将状态固定到适当位置  
   
-1.  在“状态”窗口中，找到你感兴趣的状态。 可能需要展开更高级别的状态来查找你感兴趣的详细信息。  
+1. 在“状态”窗口中，找到你感兴趣的状态。 可能需要展开更高级别的状态来查找你感兴趣的详细信息。  
   
-2.  将光标置于所感兴趣的状态上。 图钉图标将显示在状态项的左侧。  
+2. 将光标置于所感兴趣的状态上。 图钉图标将显示在状态项的左侧。  
   
-3.  选择图钉图标以将状态项固定在适当位置。
+3. 选择图钉图标以将状态项固定在适当位置。

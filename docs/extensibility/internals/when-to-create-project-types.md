@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45bd40d2261a30ea455132ba92841c33b968eac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094419"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 为自定义创建新的项目类型提供了基础[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为你的用户。 但是，创建新的项目类型不是必需的所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自定义项。 以下指导原则应帮助您确定是否需要为你的方案的新项目类型。
@@ -23,26 +23,26 @@ ms.locfileid: "56614982"
 ## <a name="create-a-new-project-type"></a>创建新的项目类型
  如果想要自定义，则必须创建一种项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以充当一个或多个通过以下方式：
 
--   参与生成、 部署、 配置和源代码管理。
+- 参与生成、 部署、 配置和源代码管理。
 
--   调试支持的产品/服务。
+- 调试支持的产品/服务。
 
--   显示中的项目项**解决方案资源管理器**。
+- 显示中的项目项**解决方案资源管理器**。
 
--   使用**打开项目**或**新项目**对话框。
+- 使用**打开项目**或**新项目**对话框。
 
--   支持项目嵌套。
+- 支持项目嵌套。
 
 ## <a name="extend-an-existing-project-type"></a>扩展现有项目类型
  你可能想要创建新的项目类型，可以使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]按以下方式来修改或扩展现有项目类型的行为，例如，修改的生成过程[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目：
 
--   处理多个文件作为单个单元。
+- 处理多个文件作为单个单元。
 
--   显示为子项目的层次结构的单个文件。
+- 显示为子项目的层次结构的单个文件。
 
--   显示有关编辑器命令上下文。
+- 显示有关编辑器命令上下文。
 
--   显示服务上下文的编辑器。
+- 显示服务上下文的编辑器。
 
 ## <a name="use-an-existing-project-type"></a>使用现有的项目类型
  创建新的项目有时不是必需。 下表显示了不需要创建的项目类型的任务。

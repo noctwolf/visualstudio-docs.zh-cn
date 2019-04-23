@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093457"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：使用 MSBuild 任务创建 SharePoint 解决方案包
   可以生成、 清除和验证 SharePoint 包 (*.wsp*) 在开发计算机上使用命令行 MSBuild 任务。 这些命令还可用于生成计算机上使用 Team Foundation Server 自动生成过程。
@@ -26,11 +26,11 @@ ms.locfileid: "56624394"
 
 #### <a name="to-build-a-sharepoint-package"></a>若要生成 SharePoint 包
 
-1.  在 Windows 上**启动**菜单中，选择**所有程序** > **附件** > **命令提示符下**。
+1. 在 Windows 上**启动**菜单中，选择**所有程序** > **附件** > **命令提示符下**。
 
-2.  将更改为您的 SharePoint 项目所在的目录。
+2. 将更改为您的 SharePoint 项目所在的目录。
 
-3.  输入以下命令以创建项目包。 替换*ProjectFileName*与项目的名称。
+3. 输入以下命令以创建项目包。 替换*ProjectFileName*与项目的名称。
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624394"
 
 #### <a name="to-clean-a-sharepoint-package"></a>若要清理的 SharePoint 包
 
-1.  打开命令提示符窗口。
+1. 打开命令提示符窗口。
 
-2.  将更改为您的 SharePoint 项目所在的目录。
+2. 将更改为您的 SharePoint 项目所在的目录。
 
-3.  输入以下命令以清理项目的包。 替换*ProjectFileName*与项目的名称。
+3. 输入以下命令以清理项目的包。 替换*ProjectFileName*与项目的名称。
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624394"
 
 #### <a name="to-validate-a-sharepoint-package"></a>若要验证 SharePoint 包
 
-1.  打开命令提示符窗口。
+1. 打开命令提示符窗口。
 
-2.  将更改为您的 SharePoint 项目所在的目录。
+2. 将更改为您的 SharePoint 项目所在的目录。
 
-3.  输入以下命令以验证该项目的包。 替换*ProjectFileName*与项目的名称。
+3. 输入以下命令以验证该项目的包。 替换*ProjectFileName*与项目的名称。
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624394"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>若要设置的 SharePoint 包中的属性
 
-1.  打开命令提示符窗口。
+1. 打开命令提示符窗口。
 
-2.  将更改为您的 SharePoint 项目所在的目录。
+2. 将更改为您的 SharePoint 项目所在的目录。
 
-3.  输入以下命令以设置项目的包中的属性。 替换*PropertyName*与你想要设置的属性。
+3. 输入以下命令以设置项目的包中的属性。 替换*PropertyName*与你想要设置的属性。
 
     ```cmd
     msbuild /property:PropertyName=Value

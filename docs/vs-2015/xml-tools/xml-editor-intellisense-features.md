@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094654"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
  “XML 编辑器”对下列项执行此操作：  
   
--   匹配的开始标记和结束标记。  
+- 匹配的开始标记和结束标记。  
   
--   任何一对"\<"或">"尖括号。  
+- 任何一对"\<"或">"尖括号。  
   
--   注释的开始和结束。  
+- 注释的开始和结束。  
   
--   处理指令的开始和结束。  
+- 处理指令的开始和结束。  
   
--   CDATA 块的开始和结束。  
+- CDATA 块的开始和结束。  
   
--   DTD 声明的开始和结束。  
+- DTD 声明的开始和结束。  
   
--   特性的左引号和右引号。  
+- 特性的左引号和右引号。  
   
 ## <a name="modifying-the-intellisense-options"></a>修改智能感知选项  
  默认情况下启用智能感知和自动完成功能。 但是，可以通过修改“工具-选项”设置来更改此选项。  
@@ -112,11 +112,11 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
 #### <a name="to-change-the-auto-completion-behavior"></a>更改自动完成行为  
   
-1.  从“工具”菜单中选择“选项”。  
+1. 从“工具”菜单中选择“选项”。  
   
-2.  展开**文本编辑器**，展开**XML**，然后选择**杂项**。  
+2. 展开**文本编辑器**，展开**XML**，然后选择**杂项**。  
   
-3.  任何更改**自动插入**部分，然后单击**确定**。  
+3. 任何更改**自动插入**部分，然后单击**确定**。  
   
 ## <a name="see-also"></a>请参阅  
  [XML 编辑器](../xml-tools/xml-editor.md)   
