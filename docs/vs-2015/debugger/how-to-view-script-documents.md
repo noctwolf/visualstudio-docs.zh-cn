@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104197"
 ---
 # <a name="how-to-view-script-documents"></a>如何：查看脚本文档
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "58936798"
   
 ### <a name="to-view-a-server-side-script-document"></a>查看服务器端脚本文档  
   
-1.  在“解决方案资源管理器”中，打开“\<网站路径名>”节点。  
+1. 在“解决方案资源管理器”中，打开“\<网站路径名>”节点。  
   
-2.  双击要查看的脚本文件。  
+2. 双击要查看的脚本文件。  
   
      服务器端脚本文件在源窗口中打开。  
   
 ### <a name="to-view-a-client-side-script-document"></a>查看客户端脚本文档  
   
-1.  在“解决方案资源管理器”中，打开“脚本文档”节点。  
+1. 在“解决方案资源管理器”中，打开“脚本文档”节点。  
   
-2.  双击要查看的脚本文件。  
+2. 双击要查看的脚本文件。  
   
      客户端脚本文件在源窗口中打开。  
   

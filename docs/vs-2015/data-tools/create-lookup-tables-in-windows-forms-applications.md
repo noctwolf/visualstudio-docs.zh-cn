@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663227"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102973"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ ms.locfileid: "59663227"
   
 ## <a name="to-databind-a-lookup-control"></a>数据绑定查找控件  
   
-1.  打开“数据源”窗口。  
+1. 打开“数据源”窗口。  
   
     > [!NOTE]
     > 查找表需要两个相关的表或对象均位于**数据源**窗口。
   
-2.  展开中的节点**数据源**窗口，直到您所见的父表和所有列，以及相关的子表和所有它的列。  
+2. 展开中的节点**数据源**窗口，直到您所见的父表和所有列，以及相关的子表和所有它的列。  
   
     > [!NOTE]
     >  子表节点是显示为父表中可展开子节点的节点。  
   
-3.  更改到子表的拖放类型**详细信息**通过选择**详细信息**从子表节点上的控件列表。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+3. 更改到子表的拖放类型**详细信息**通过选择**详细信息**从子表节点上的控件列表。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
-4.  查找两个表相关的节点 (`CustomerID`上一示例中的节点)。为其拖放类型更改<xref:System.Windows.Forms.ComboBox>通过选择**组合框**从控件列表。  
+4. 查找两个表相关的节点 (`CustomerID`上一示例中的节点)。为其拖放类型更改<xref:System.Windows.Forms.ComboBox>通过选择**组合框**从控件列表。  
   
-5.  将从主要子表节点拖**数据源**窗口拖到窗体上的。  
+5. 将从主要子表节点拖**数据源**窗口拖到窗体上的。  
   
      数据绑定控件 （带有描述性标签） 和一个工具条 (<xref:System.Windows.Forms.BindingNavigator>) 窗体中显示。 一个[数据集](../data-tools/dataset-tools-in-visual-studio.md)，TableAdapter <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。  
   
-6.  现在将从主要的父表节点**数据源**窗口直接拖到查找控件 ( <xref:System.Windows.Forms.ComboBox>)。  
+6. 现在将从主要的父表节点**数据源**窗口直接拖到查找控件 ( <xref:System.Windows.Forms.ComboBox>)。  
   
      查找绑定现在已建立。 请参阅下表中的设置在控件的特定属性。  
   

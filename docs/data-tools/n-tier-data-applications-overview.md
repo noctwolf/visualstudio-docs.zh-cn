@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109928"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。
@@ -27,33 +27,33 @@ ms.locfileid: "55943683"
 
 Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序：
 
--   数据集提供**数据集项目**属性，可用于单独的数据集 （数据实体层） 和 Tableadapter （数据访问层） 相互独立的项目。
+- 数据集提供**数据集项目**属性，可用于单独的数据集 （数据实体层） 和 Tableadapter （数据访问层） 相互独立的项目。
 
--   [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了单独的命名空间中生成的 DataContext 和数据类的设置。 这样，数据访问和数据实体层的逻辑分隔。
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了单独的命名空间中生成的 DataContext 和数据类的设置。 这样，数据访问和数据实体层的逻辑分隔。
 
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供了<xref:System.Data.Linq.Table%601.Attach%2A>方法，可用于从应用程序中的不同层将组合在一起的 DataContext。 有关详细信息，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)。
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供了<xref:System.Data.Linq.Table%601.Attach%2A>方法，可用于从应用程序中的不同层将组合在一起的 DataContext。 有关详细信息，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)。
 
 ## <a name="presentation-tier"></a>表示层
 *表示层*是用户与应用程序交互的层。 它通常还包含其他应用程序逻辑。 典型的表示层组件包括：
 
--   数据绑定组件，如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。
+- 数据绑定组件，如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。
 
--   对象表示的数据，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)表示层中使用的实体类。
+- 对象表示的数据，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)表示层中使用的实体类。
 
 表示层通常通过使用服务引用来访问中间层 (例如， [Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)应用程序)。 表示层不直接访问数据层。 表示层与数据层通过中间层中的数据访问组件进行通信。
 
 ## <a name="middle-tier"></a>中间层
 *中间层*表示层与数据层的层用于相互通信。 典型的中间层组件包括：
 
--   业务逻辑，例如业务规则和数据验证。
+- 业务逻辑，例如业务规则和数据验证。
 
--   数据访问组件和逻辑，如下所示：
+- 数据访问组件和逻辑，如下所示：
 
-    -   [Tableadapter](create-and-configure-tableadapters.md)并[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+    - [Tableadapter](create-and-configure-tableadapters.md)并[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
-    -   对象表示的数据，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)实体类。
+    - 对象表示的数据，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)实体类。
 
-    -   常见的应用程序服务，例如身份验证、 授权和个性化设置。
+    - 常见的应用程序服务，例如身份验证、 授权和个性化设置。
 
 下图显示了功能和技术，可在 Visual Studio 中以及其中它们可能适合为 n 层应用程序的中间层。
 
@@ -75,13 +75,13 @@ Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序
 
 [将数据集和 TableAdapter 分离到不同的项目中](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [使用 LINQ to SQL 的 n 层和远程应用程序](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [分层更新](../data-tools/hierarchical-update.md)
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)

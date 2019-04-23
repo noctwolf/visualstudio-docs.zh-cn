@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111683"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
 可以通过创建数据集的分部类文件并将代码添加到该扩展数据集的功能 (而不是将代码添加到*DatasetName*。Dataset.Designer 文件）。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
@@ -35,15 +35,15 @@ ms.locfileid: "55928772"
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要将代码添加到 n 层应用程序中的数据集
 
-1.  找到包含项目 *.xsd*文件。
+1. 找到包含项目 *.xsd*文件。
 
-2.  选择 **.xsd**文件打开数据集。
+2. 选择 **.xsd**文件打开数据集。
 
-3.  右键单击你想要添加代码 （表中的标题栏名称），并选择的数据表**查看代码**。
+3. 右键单击你想要添加代码 （表中的标题栏名称），并选择的数据表**查看代码**。
 
      分部类将创建并在代码编辑器中打开。
 
-4.  添加代码的分部类声明。
+4. 添加代码的分部类声明。
 
      下面的示例显示了将代码添加到 NorthwindDataSet 中 CustomersDataTable 的位置：
 
@@ -53,6 +53,7 @@ ms.locfileid: "55928772"
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

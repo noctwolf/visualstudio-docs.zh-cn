@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45ccabfbeceeeb64a07764cc4ed32d6dead00db8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104403"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：将属性添加到自定义的 SharePoint 项目项类型
   在定义的自定义 SharePoint 项目项类型时，您可以向项目项添加属性。 属性将出现在**属性**窗口中选择项目项时**解决方案资源管理器**。
@@ -28,11 +28,11 @@ ms.locfileid: "56644479"
 
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>若要将属性添加到项目项类型定义
 
-1.  定义具有表示要添加到自定义项目项类型的属性的公共属性的类。 如果你想要将多个属性添加到自定义项目项类型，您可以在同一个类或不同的类中定义所有属性。
+1. 定义具有表示要添加到自定义项目项类型的属性的公共属性的类。 如果你想要将多个属性添加到自定义项目项类型，您可以在同一个类或不同的类中定义所有属性。
 
-2.  在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法将<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>实现、 句柄<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>的事件*projectItemTypeDefinition*参数。
+2. 在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法将<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>实现、 句柄<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>的事件*projectItemTypeDefinition*参数。
 
-3.  中的事件处理程序<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>事件，添加到您的自定义属性的类的实例<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A>事件自变量参数的集合。
+3. 中的事件处理程序<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested>事件，添加到您的自定义属性的类的实例<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A>事件自变量参数的集合。
 
 ## <a name="example"></a>示例
  下面的代码示例演示如何添加名为的属性**的示例属性**向自定义项目项类型。
@@ -48,22 +48,22 @@ ms.locfileid: "56644479"
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自定义属性的行为
  可以定义自定义属性的显示方式和行为**属性**通过应用中的属性窗口<xref:System.ComponentModel>到属性定义的命名空间。 以下属性可在许多情况下：
 
--   <xref:System.ComponentModel.DisplayNameAttribute>：指定将出现在属性的名称**属性**窗口。
+- <xref:System.ComponentModel.DisplayNameAttribute>：指定将出现在属性的名称**属性**窗口。
 
--   <xref:System.ComponentModel.DescriptionAttribute>：指定显示的说明字符串中的底部**属性**窗口时选择了该属性。
+- <xref:System.ComponentModel.DescriptionAttribute>：指定显示的说明字符串中的底部**属性**窗口时选择了该属性。
 
--   <xref:System.ComponentModel.DefaultValueAttribute>：指定属性的默认值。
+- <xref:System.ComponentModel.DefaultValueAttribute>：指定属性的默认值。
 
--   <xref:System.ComponentModel.TypeConverterAttribute>：指定在显示的字符串之间的自定义转换**属性**窗口和一个非字符串属性值。
+- <xref:System.ComponentModel.TypeConverterAttribute>：指定在显示的字符串之间的自定义转换**属性**窗口和一个非字符串属性值。
 
--   <xref:System.ComponentModel.EditorAttribute>：指定要用于修改属性的自定义编辑器。
+- <xref:System.ComponentModel.EditorAttribute>：指定要用于修改属性的自定义编辑器。
 
 ## <a name="compile-the-code"></a>编译代码
  这些代码示例需要引用以下程序集的类库项目：
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>部署项目项
  若要启用其他开发人员能够使用您的项目项，请创建项目模板或项目项模板。 有关详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。

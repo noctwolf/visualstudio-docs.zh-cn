@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111644"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何：排查服务问题
 有几个常见的问题时尝试获得的服务可能发生的：
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. 在调用 GetService 时使用的服务类型而不是接口类型。 请求的一项服务时[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，<xref:Microsoft.VisualStudio.Shell.Package>从类型中提取 GUID。 如果满足下列条件，将不会找到一种服务：
 
-   1.  接口类型而不是服务类型传递给 GetService。
+   1. 接口类型而不是服务类型传递给 GetService。
 
-   2.  没有 GUID 显式分配给的接口。 因此，系统会创建 GUID 的对象根据需要为默认值。
+   2. 没有 GUID 显式分配给的接口。 因此，系统会创建 GUID 的对象根据需要为默认值。
 
 3. 请确保已就位 VSPackage 请求该服务。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在构造它之后和调用之前站点 VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>。
 

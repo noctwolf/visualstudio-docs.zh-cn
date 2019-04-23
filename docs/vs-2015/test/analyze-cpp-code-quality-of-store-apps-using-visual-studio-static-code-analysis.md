@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103870"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用的 C++ 代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59659817"
 > [!NOTE]
 > 在 Visual Studio 旗舰版、Visual Studio 高级专业版和 Visual Studio 专业版中，可使用完整的代码分析工具。 请参阅 MSDN 库中的 [Analyzing Application Quality by Using Code Analysis Tools](http://msdn.microsoft.com/library/dd264897.aspx)（使用代码分析工具分析应用程序质量）。
 
-##  <a name="BKMK_Run"></a>运行代码分析
+## <a name="BKMK_Run"></a>运行代码分析
  若要对 Visual Studio 解决方案运行代码分析，请执行以下操作：
 
 - 在“生成”菜单上，选择“对解决方案运行代码分析”。
@@ -43,7 +43,7 @@ ms.locfileid: "59659817"
 
    ![代码分析窗口](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a>分析和解决代码分析警告
+## <a name="BKMK_Analyze"></a>分析和解决代码分析警告
  若要分析某个具体的警告，请在“代码分析”窗口中选择该警告的标题。 随后该警告将展开，显示有关问题的详细信息。 如果可能，代码分析将显示导致该警告的行号和分析逻辑。
 
  ![展开代码分析警告](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ ms.locfileid: "59659817"
 > [!TIP]
 >  可从“代码分析”窗口中重新运行代码分析。 选择“分析”按钮，然后选择分析的范围。 可对整个解决方案对所选项目重新运行分析。
 
-##  <a name="BKMK_Suppress"></a>禁止显示代码分析警告
+## <a name="BKMK_Suppress"></a>禁止显示代码分析警告
  有时，你可能会决定不修复代码分析警告。 你可能会觉得与代码的任何真实实现中引发问题的可能性相比，解决警告所需的重新编码工作量过大。 或者，你可能会认为在警告中使用的分析不适合特定的上下文。 可禁止显示个别警告，以使“代码分析”窗口中不再显示这些警告。
 
  若要禁止显示警告，请执行以下操作：
@@ -70,12 +70,12 @@ ms.locfileid: "59659817"
 
    禁止显示消息会插入用于禁止显示代码行的警告的 `#pragma(warning:`*WarningId*`)`。
 
-##  <a name="BKMK_Search"></a>搜索和筛选代码分析结果
+## <a name="BKMK_Search"></a>搜索和筛选代码分析结果
  可搜索冗长的警告消息列表，也可在多项目解决方案中筛选警告。
 
  ![搜索并筛选代码分析窗口](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a>C++ 代码分析警告
+## <a name="Warnings"></a>C++ 代码分析警告
  代码分析可引发以下有关 C++ 代码的警告：
 
 |                                      规则                                      |                                                  描述                                                  |

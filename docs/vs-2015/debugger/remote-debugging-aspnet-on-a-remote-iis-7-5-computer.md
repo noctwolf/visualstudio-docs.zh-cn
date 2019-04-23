@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109514"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ ms.locfileid: "58932478"
       </system.web>
   
     ```
+
 1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点” 。
 1. 右键单击“默认网站”  节点，然后选择“添加应用程序” 。
 1. 设置**别名**字段**MyMVC**和应用程序池域**ASP.NET v4.0** （ASP.NET 4.5 不是应用程序池的选项）。 将“物理路径”  设置为 **C:\Publish** （复制 ASP.NET 项目目录的位置）。

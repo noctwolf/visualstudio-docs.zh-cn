@@ -1,5 +1,5 @@
 ---
-title: 如何：创建项模板 | Microsoft Docs
+title: 如何：创建项模板 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7ec6628c6cfd12a35de151689196dadd4868f83
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108784"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "58324755"
   
 ### <a name="to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box"></a>将自定义项目项模板添加到“添加新项”对话框中  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建或打开一个项目。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建或打开一个项目。  
   
-2.  向项目添加一项，并在需要时修改它。  
+2. 向项目添加一项，并在需要时修改它。  
   
-3.  修改代码文件，以指示应进行参数替换的位置。 有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。  
+3. 修改代码文件，以指示应进行参数替换的位置。 有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。  
   
-4.  在“文件”菜单上，单击“导出模板”。  
+4. 在“文件”菜单上，单击“导出模板”。  
   
-5.  单击“项模板”，选择包含该项的项目，然后单击“下一步”。  
+5. 单击“项模板”，选择包含该项的项目，然后单击“下一步”。  
   
-6.  选择要为其创建模板的项，然后单击“下一步”。  
+6. 选择要为其创建模板的项，然后单击“下一步”。  
   
-7.  选择要包含到模板中的程序集引用，然后单击“下一步”。  
+7. 选择要包含到模板中的程序集引用，然后单击“下一步”。  
   
-8.  键入图标文件名、预览图像、模板名称和模板说明，然后单击“完成”。  
+8. 键入图标文件名、预览图像、模板名称和模板说明，然后单击“完成”。  
   
      模板文件被添加到 .zip 文件中，并复制到你在对话框中指定的任何目录。 默认位置是 **..\Users\\<username\>\Documents\Visual Studio \<Version>\My Exported Templates\\** 文件夹。  
   
@@ -141,21 +141,21 @@ ms.locfileid: "58324755"
   
 ### <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>在不使用“导出模板”向导的情况下手动创建项模板  
   
-1.  创建项目和项目项。  
+1. 创建项目和项目项。  
   
-2.  修改项目项，直到可以将它另存为一个模板。  
+2. 修改项目项，直到可以将它另存为一个模板。  
   
-3.  根据需要，修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅“如何：替换模板中的参数”。  
+3. 根据需要，修改代码文件以指示应进行参数替换的位置。 有关参数替换的详细信息，请参阅如何：替换模板中的参数。  
   
-4.  创建一个 XML 文件，并使用 .vstemplate 文件扩展名将其保存到与新项模板相同的目录中。  
+4. 创建一个 XML 文件，并使用 .vstemplate 文件扩展名将其保存到与新项模板相同的目录中。  
   
-5.  创建 .vstemplate XML 文件以提供项模板元数据。 有关详细信息，请参阅 [Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)以及上一节中的示例。  
+5. 创建 .vstemplate XML 文件以提供项模板元数据。 有关详细信息，请参阅 [Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)以及上一节中的示例。  
   
-6.  保存 .vstemplate 文件并将其关闭。  
+6. 保存 .vstemplate 文件并将其关闭。  
   
-7.  在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，单击“发送到”，然后单击“压缩(zipped)文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
+7. 在 Windows 资源管理器中，选择要包括到模板中的文件，右键单击所选内容，单击“发送到”，然后单击“压缩(zipped)文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
   
-8.  复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2015 中，默认目录是 ..\Users\\<username\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\。 有关详细信息，请参阅“如何：查找和组织项目和项模板”。  
+8. 复制该 .zip 文件并将其粘贴到用户的项模板位置。 在 Visual Studio 2015 中，默认目录是 ..\Users\\<username\>\Documents\Visual Studio 2015\Templates\ItemTemplates\\。 有关详细信息，请参阅“操作说明：查找和组织项目和项模板。  
   
 ## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   

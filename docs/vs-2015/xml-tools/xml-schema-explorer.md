@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104905"
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ XML 架构资源管理器与 Microsoft Visual Studio 和 XML 编辑器相集成�
   
  若要激活的节点，双击它，或按**Enter**时选择的节点。  
   
--   激活某节点时会打开在其中定义该节点的文件（如果文件尚未打开）并在文件中选择该节点。  
+- 激活某节点时会打开在其中定义该节点的文件（如果文件尚未打开）并在文件中选择该节点。  
   
--   激活文件节点时会打开选定文件（如果该文件尚未打开）并突出显示 `<schema>` 节点。  
+- 激活文件节点时会打开选定文件（如果该文件尚未打开）并突出显示 `<schema>` 节点。  
   
--   激活架构集或命名空间节点不会执行任何操作。  
+- 激活架构集或命名空间节点不会执行任何操作。  
   
 ## <a name="draging-and-dropping-nodes"></a>拖放节点  
  可以将全局节点、文件节点和命名空间节点拖放到 XSD 设计器视图上。 如果当前视图是[起始视图](../xml-tools/start-view.md)，拖动到该视图的节点将会打开[关系图视图](../xml-tools/graph-view.md)。 如果当前视图是[内容模型视图](../xml-tools/content-model-view.md)或图形视图，视图将不会在你放到它上面的节点。  
@@ -82,13 +82,13 @@ XML 架构资源管理器与 Microsoft Visual Studio 和 XML 编辑器相集成�
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [搜索架构集](../xml-tools/searching-the-schema-set.md)  
+- [搜索架构集](../xml-tools/searching-the-schema-set.md)  
   
--   [排序、筛选和分组](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [排序、筛选和分组](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [上下文菜单](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [XML 文本与 XML 架构资源管理器的集成](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [XML 文本与 XML 架构资源管理器的集成](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>请参阅  
  [如何：从 XML 架构资源管理器将节点添加到工作区](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

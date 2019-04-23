@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae0319bcf9c155bce693f9cf0924c8be449043
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110539"
 ---
 # <a name="graph-view"></a>图形视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,11 +115,11 @@ ms.locfileid: "59658599"
 ## <a name="undoredo"></a>撤消/重做  
  在图形视图中，为以下操作启用了撤消/重做功能：  
   
--   通过拖放操作添加单个节点。  
+- 通过拖放操作添加单个节点。  
   
--   从架构资源管理器或起始视图查询的搜索结果窗口中添加多个节点。  
+- 从架构资源管理器或起始视图查询的搜索结果窗口中添加多个节点。  
   
--   删除单个或多个节点。  
+- 删除单个或多个节点。  
   
 ## <a name="zoom"></a>缩放  
  图形视图的右下角提供了缩放功能。  

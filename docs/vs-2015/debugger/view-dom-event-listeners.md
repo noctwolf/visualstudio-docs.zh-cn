@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110474"
 ---
 # <a name="view-dom-event-listeners"></a>查看 DOM 事件侦听器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ ms.locfileid: "59000801"
 
 #### <a name="to-view-event-listeners"></a>若要查看事件侦听器，请执行以下操作
 
-1.  在 Visual Studio 中，创建一个使用“Windows Phone 枢轴应用程序”项目模板的 JavaScript 应用。
+1. 在 Visual Studio 中，创建一个使用“Windows Phone 枢轴应用程序”项目模板的 JavaScript 应用。
 
-2.  在 Visual Studio 中打开该模板中，选择**仿真程序 8.1 WVGA 4 英寸 512MB**在调试器中的调试工具栏上的下拉列表中：
+2. 在 Visual Studio 中打开该模板中，选择**仿真程序 8.1 WVGA 4 英寸 512MB**在调试器中的调试工具栏上的下拉列表中：
 
      ![选择调试目标](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  按 F5 以在调试模式下运行应用程序。
+3. 按 F5 以在调试模式下运行应用程序。
 
-4.  在正在运行的应用，请转至**第 3 部分**枢轴项。
+4. 在正在运行的应用，请转至**第 3 部分**枢轴项。
 
-5.  切换到 Visual Studio（Alt+Tab 或 F12）。
+5. 切换到 Visual Studio（Alt+Tab 或 F12）。
 
-6.  在 DOM 资源管理器中，选择右上角的 `Find`。
+6. 在 DOM 资源管理器中，选择右上角的 `Find`。
 
-7.  键入 `ListView`，然后按 Enter。
+7. 键入 `ListView`，然后按 Enter。
 
-8.  如有必要，选择**下一步**按钮以查找`DIV`元素，它表示`ListView`控件 (此元素具有`data-win-control`的值`WinJS.UI.ListView`)。
+8. 如有必要，选择**下一步**按钮以查找`DIV`元素，它表示`ListView`控件 (此元素具有`data-win-control`的值`WinJS.UI.ListView`)。
 
      此时，应在 DOM 资源管理器中选择 `DIV` 元素。
 
@@ -75,16 +75,16 @@ ms.locfileid: "59000801"
 
      **事件**选项卡显示在层次结构列表中选择任何元素的事件侦听器。
 
-###  <a name="Tips"></a> 解决问题的事件侦听器的提示
+### <a name="Tips"></a> 解决问题的事件侦听器的提示
  在某些应用方案，事件侦听器必须显式删除使用[removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)。 使用**事件**在 DOM 资源管理器来测试是否运行代码时从 DOM 元素删除事件侦听器的选项卡。 下面是一些提示，用来帮助解决以下类型的问题：
 
--   使用单页导航模型的应用程序在 Visual Studio 中实现[项目模板](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，它不是通常需要删除对对象，例如，属于页面的 DOM 元素注册的事件侦听器。 在此方案中，DOM 元素及其关联事件侦听器具有相同的生存期并且它们可以作为垃圾回收。
+- 使用单页导航模型的应用程序在 Visual Studio 中实现[项目模板](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，它不是通常需要删除对对象，例如，属于页面的 DOM 元素注册的事件侦听器。 在此方案中，DOM 元素及其关联事件侦听器具有相同的生存期并且它们可以作为垃圾回收。
 
--   如果 DOM 元素的生存期与关联的事件侦听器不同，你可能必须调用 `removeEventListener` 方法。 例如，如果你使用 `window.onresize` 事件，当你从处理事件的页面离开时，你可能必须移除事件侦听器。
+- 如果 DOM 元素的生存期与关联的事件侦听器不同，你可能必须调用 `removeEventListener` 方法。 例如，如果你使用 `window.onresize` 事件，当你从处理事件的页面离开时，你可能必须移除事件侦听器。
 
--   如果 `removeEventListener` 无法删除指定的侦听器，它可能已由对象的另一个实例调用。 可以使用[bind 方法 (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)方法来解决此问题时添加侦听器。
+- 如果 `removeEventListener` 无法删除指定的侦听器，它可能已由对象的另一个实例调用。 可以使用[bind 方法 (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)方法来解决此问题时添加侦听器。
 
--   若要删除的事件侦听器，通过使用已添加[bind 方法 (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)或通过使用匿名函数中, 添加侦听器时存储该函数的实例。 下面是安全使用此模式的一种方法：
+- 若要删除的事件侦听器，通过使用已添加[bind 方法 (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)或通过使用匿名函数中, 添加侦听器时存储该函数的实例。 下面是安全使用此模式的一种方法：
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ ms.locfileid: "59000801"
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   如果事件侦听器是使用 `removeEventListener` 属性（例如，`obj.on<eventname>`）添加的，你可能无法使用 `window.onresize = handlerFunc` 删除事件侦听器。
+- 如果事件侦听器是使用 `removeEventListener` 属性（例如，`obj.on<eventname>`）添加的，你可能无法使用 `window.onresize = handlerFunc` 删除事件侦听器。
 
--   使用 JavaScript 内存分析器[JavaScript 内存](../profiling/javascript-memory.md)应用程序中。 必须显式删除的事件侦听器可能会显示为内存泄露。
+- 使用 JavaScript 内存分析器[JavaScript 内存](../profiling/javascript-memory.md)应用程序中。 必须显式删除的事件侦听器可能会显示为内存泄露。
 
 ## <a name="see-also"></a>请参阅
 

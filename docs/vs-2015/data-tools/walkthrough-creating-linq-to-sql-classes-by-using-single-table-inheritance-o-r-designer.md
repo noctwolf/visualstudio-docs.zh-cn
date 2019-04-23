@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61509b7427a9c1a95fe15bba93d231f0dc37d136
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664983"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111969"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练：使用单表继承创建 LINQ to SQL 类（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,31 +23,31 @@ ms.locfileid: "59664983"
   
  在本演练中，你将要执行以下任务：  
   
--   创建一个数据库表，并向其中添加数据。  
+- 创建一个数据库表，并向其中添加数据。  
   
--   创建一个 Windows 窗体应用程序。  
+- 创建一个 Windows 窗体应用程序。  
   
--   将一个 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 文件添加到项目。  
+- 将一个 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 文件添加到项目。  
   
--   创建新的实体类。  
+- 创建新的实体类。  
   
--   配置实体类使用继承。  
+- 配置实体类使用继承。  
   
--   查询继承类。  
+- 查询继承类。  
   
--   在 Windows 窗体上显示数据。  
+- 在 Windows 窗体上显示数据。  
   
 ## <a name="create-a-table-to-inherit-from"></a>创建要从中继承的表  
  为了解继承的工作方式，您将创建一个小的 Person 表用作基类，然后创建一个从该表继承的 Employee 对象。  
   
 #### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>创建基表以演示继承  
   
-1.  在中**服务器资源管理器**/**数据库资源管理器**，右键单击**表**节点，然后单击**添加新表**。  
+1. 在中**服务器资源管理器**/**数据库资源管理器**，右键单击**表**节点，然后单击**添加新表**。  
   
     > [!NOTE]
     >  可以使用 Northwind 数据库或其他任何可添加表的数据库。  
   
-2.  在表设计器中，向该表中添加以下列：  
+2. 在表设计器中，向该表中添加以下列：  
   
     |列名|数据类型|允许为 Null|  
     |-----------------|---------------|-----------------|  
@@ -57,18 +57,18 @@ ms.locfileid: "59664983"
     |**LastName**|**nvarchar(200)**|**False**|  
     |**Manager**|**int**|**True**|  
   
-3.  将 ID 列设置为主键。  
+3. 将 ID 列设置为主键。  
   
-4.  保存该表并将其命名为 Person。  
+4. 保存该表并将其命名为 Person。  
   
 ## <a name="add-data-to-the-table"></a>向表中添加数据  
  为了验证对继承的配置是否正确，表对于单表继承中的每个类都需要一些数据。  
   
 #### <a name="to-add-data-to-the-table"></a>向表中添加数据。  
   
-1.  在数据视图中打开该表。 (右键单击**Person**表中**服务器资源管理器**/**数据库资源管理器**然后单击**显示表数据**。)  
+1. 在数据视图中打开该表。 (右键单击**Person**表中**服务器资源管理器**/**数据库资源管理器**然后单击**显示表数据**。)  
   
-2.  将下面的数据复制到表中。 （您可以将其复制，然后，通过在结果窗格中选择整行，将其粘贴到表。）  
+2. 将下面的数据复制到表中。 （您可以将其复制，然后，通过在结果窗格中选择整行，将其粘贴到表。）  
   
     ||||||  
     |-|-|-|-|-|  
@@ -91,24 +91,24 @@ ms.locfileid: "59664983"
   
 #### <a name="to-create-the-new-windows-application"></a>创建新的 Windows 应用程序  
   
-1.  从**文件**菜单中，创建一个新项目。  
+1. 从**文件**菜单中，创建一个新项目。  
   
-2.  将项目命名**InheritanceWalkthrough**。  
+2. 将项目命名**InheritanceWalkthrough**。  
   
     > [!NOTE]
     >  Visual Basic 和 C# 项目中都支持 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 请使用这些语言之一创建新项目。  
   
-3.  单击**Windows 窗体应用程序**模板，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 单击**Windows 窗体应用程序**模板，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
-4.  InheritanceWalkthrough 项目即被创建并添加到**解决方案资源管理器**。  
+4. InheritanceWalkthrough 项目即被创建并添加到**解决方案资源管理器**。  
   
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>将 LINQ to SQL 类文件添加到项目  
   
 #### <a name="to-add-a-linq-to-sql-file-to-the-project"></a>将 LINQ to SQL 文件添加到项目  
   
-1.  在 **“项目”** 菜单上，单击 **“添加新项”**。  
+1. 在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
-2.  单击“LINQ to SQL 类”模板，然后单击“添加”。  
+2. 单击“LINQ to SQL 类”模板，然后单击“添加”。  
   
      .dbml 文件即添加到项目，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]打开。  
   
@@ -117,21 +117,21 @@ ms.locfileid: "59664983"
   
 #### <a name="to-create-the-inheritance"></a>创建继承  
   
-1.  在中**服务器资源管理器**/**数据库资源管理器**，导航到**人员**前面创建的表。  
+1. 在中**服务器资源管理器**/**数据库资源管理器**，导航到**人员**前面创建的表。  
   
-2.  拖动**Person**表拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]设计图面。  
+2. 拖动**Person**表拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]设计图面。  
   
-3.  将另一个**Person**表拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]和其名称更改为**员工**。  
+3. 将另一个**Person**表拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]和其名称更改为**员工**。  
   
-4.  从“Person”对象删除“Manager”属性。  
+4. 从“Person”对象删除“Manager”属性。  
   
-5.  从“Employee”对象删除“Type”、“ID”、“FirstName”和“LastName”属性。 （即删除“Manager”以外的所有属性。）  
+5. 从“Employee”对象删除“Type”、“ID”、“FirstName”和“LastName”属性。 （即删除“Manager”以外的所有属性。）  
   
-6.  从“工具箱”的“对象关系设计器”选项卡上，在“Person”和“Employee”对象之间创建“继承”。 为此，请单击“工具箱”中的“继承”项，然后松开鼠标按钮。 接下来，单击**员工**对象，然后**人员**对象中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 继承连线上的箭头将指向**人员**对象。  
+6. 从“工具箱”的“对象关系设计器”选项卡上，在“Person”和“Employee”对象之间创建“继承”。 为此，请单击“工具箱”中的“继承”项，然后松开鼠标按钮。 接下来，单击**员工**对象，然后**人员**对象中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 继承连线上的箭头将指向**人员**对象。  
   
-7.  单击设计图面上的“继承”连线。  
+7. 单击设计图面上的“继承”连线。  
   
-8.  将“鉴别器属性”属性设置为“Type”。  
+8. 将“鉴别器属性”属性设置为“Type”。  
   
 9. 将“派生类鉴别器值”属性设置为“2”。  
   
@@ -146,11 +146,11 @@ ms.locfileid: "59664983"
   
 #### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>创建一个 LINQ 查询并在窗体上显示结果  
   
-1.  拖动**ListBox**拖到 Form1 上。  
+1. 拖动**ListBox**拖到 Form1 上。  
   
-2.  双击窗体以创建 `Form1_Load` 事件处理程序。  
+2. 双击窗体以创建 `Form1_Load` 事件处理程序。  
   
-3.  将以下代码添加到 `Form1_Load` 事件处理程序中：  
+3. 将以下代码添加到 `Form1_Load` 事件处理程序中：  
   
     ```vb  
     Dim dc As New DataClasses1DataContext  
@@ -180,11 +180,11 @@ ms.locfileid: "59664983"
   
 #### <a name="to-test-the-application"></a>测试应用程序  
   
-1.  按 F5。  
+1. 按 F5。  
   
-2.  检验是否仅显示了“Type”列值为 2 的记录。  
+2. 检验是否仅显示了“Type”列值为 2 的记录。  
   
-3.  关闭窗体。 （在“调试”菜单上，单击“停止调试”。）  
+3. 关闭窗体。 （在“调试”菜单上，单击“停止调试”。）  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

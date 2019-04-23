@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24f4f21c984f70ca10236de7bf15d0187fd12d71
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111748"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ UML API 的 Visual Studio，您可以编写代码来创建、 读取和更新 UM
   
  该平台中的类型在引用的某些程序集中可见，以便编写 UML 扩展。 尽管可以通过访问 [!INCLUDE[dsl](../includes/dsl-md.md)] API 来创建 UML 工具的扩展，但应记住以下注意事项：  
   
--   你可能会发现一些明显十分简单的更改会引发不一致和意外的效果。  
+- 你可能会发现一些明显十分简单的更改会引发不一致和意外的效果。  
   
--   实现可能在将来更改，这样使用 [!INCLUDE[dsl](../includes/dsl-md.md)] API 所做的改动可能不再有效。  
+- 实现可能在将来更改，这样使用 [!INCLUDE[dsl](../includes/dsl-md.md)] API 所做的改动可能不再有效。  
   
 ## <a name="the-api-assemblies"></a>API 程序集  
  此表总结了为 UML 工具提供扩展性的程序集以及建议使用的命名空间。  

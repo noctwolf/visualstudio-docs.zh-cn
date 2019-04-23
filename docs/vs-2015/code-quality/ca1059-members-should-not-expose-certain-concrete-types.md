@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46e3941e1aab0e2f6f532a7a394437a0613b8d8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103818"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059:成员不应公开某些具体类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "58933476"
 ## <a name="cause"></a>原因
  外部可见成员是某些具体类型或公开某些具体类型通过其参数之一或返回值。 目前，此规则将报告以下具体类型的风险：
 
--   一个类型派生自<xref:System.Xml.XmlNode?displayProperty=fullName>。
+- 一个类型派生自<xref:System.Xml.XmlNode?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>规则说明
  具体类型是指具有一个完整实现因此可以实例化的类型。 若要允许的成员被广泛使用，将使用建议的接口为具体类型。 这样，要接受实现该接口的任何类型或实现该接口的类型的地方使用的成员。

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9c348607c4a009a5b9b0a501e61dda443127df
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112170"
 ---
 # <a name="xml-editor"></a>XML 编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "59665569"
 ## <a name="express-editions"></a>Express Editions  
  Visual Studio Express Edition 中无法使用下列 XML 编辑器功能：  
   
--   从 XML 实例文档创建 XML 架构。  
+- 从 XML 实例文档创建 XML 架构。  
   
--   从“XML 编辑器”查看 XSLT 输出。  
+- 从“XML 编辑器”查看 XSLT 输出。  
   
--   编辑 XSLT 样式表时的智能验证。  
+- 编辑 XSLT 样式表时的智能验证。  
   
--   XML 架构资源管理器。  
+- XML 架构资源管理器。  
   
 ## <a name="in-this-section"></a>本节内容  
  [XML 文档验证](../xml-tools/xml-document-validation.md)  

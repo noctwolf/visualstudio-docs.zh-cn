@@ -1,5 +1,5 @@
 ---
-title: 辅助功能 |Microsoft Docs
+title: 辅助功能 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,16 +12,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 519eefc9260816fcbbbbd3dd8672bbaeebb3429f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eebaaf8887358e1eb527a69e6e26d100dfc230a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778508"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660952"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 除了 Windows 中的辅助功能和实用工具，以下功能也使 Visual Studio 2013 更便于残障人士使用：
 

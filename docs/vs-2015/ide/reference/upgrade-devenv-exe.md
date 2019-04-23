@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 465c90736f5470f48d47336bc916ca3cb2c09b6a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b2ba3caf7931449e2c1657270838a45505fd5d92
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779341"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657280"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 将解决方案文件及其所有项目文件或指定的项目文件更新为这些文件的当前 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 格式。  
   
 ## <a name="syntax"></a>语法  
@@ -44,7 +43,7 @@ devenv SolutionFile | ProjectFile /upgrade
   
  要升级源代码控制的解决方案或项目，必须先将其签出。  
   
- 使用 `/upgrade` 开关不会启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 可在解决方案或项目的开发语言的“升级报告”中看到升级结果。 不会返回任何错误或使用情况信息。 有关升级中的项目的详细信息[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，请参阅[如何： 解决不成功 Visual Studio 项目的升级](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)。  
+ 使用 `/upgrade` 开关不会启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 可在解决方案或项目的开发语言的“升级报告”中看到升级结果。 不会返回任何错误或使用情况信息。 有关在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中升级项目的详细信息，请参阅[如何：解决 Visual Studio 项目升级失败的问题](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)。  
   
 ## <a name="example"></a>示例  
  此示例升级 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 解决方案的默认文件夹中名为“MyProject.sln”的解决方案文件。  

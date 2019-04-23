@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104143"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：将 Profiler 附加到 ASP.NET Web 应用程序以使用命令行收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59653276"
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   /globalsamplegc 和 /globalsamplegclife 选项指定要收集的内存数据类型。  
+   - /globalsamplegc 和 /globalsamplegclife 选项指定要收集的内存数据类型。  
 
         指定下列选项中的一个且仅指定一个。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "59653276"
        |/globalsamplegc|启用对内存分配数据的收集。|  
        |/globalsamplegclife|启用对内存分配数据和对象生存期数据的收集。|  
 
-   -   /samplelineoff 选项禁用向特定源代码行分配收集的数据。 如果指定此选项，则在函数级别分配数据。  
+   - /samplelineoff 选项禁用向特定源代码行分配收集的数据。 如果指定此选项，则在函数级别分配数据。  
 
 3. 重启计算机，设置新的环境配置。  
 
@@ -83,16 +83,16 @@ ms.locfileid: "59653276"
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   进程 ID `(PID)` 指定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程的进程 ID 或进程名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID。  
+   - 进程 ID `(PID)` 指定 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程的进程 ID 或进程名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID。  
 
-   -   /targetclr：`Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。  
+   - /targetclr：`Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。  
 
 ## <a name="controlling-data-collection"></a>控制数据收集  
  在应用程序运行时，可以使用 VSPerfCmd.exe 选项开始和停止向探查器数据文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
     |选项|描述|  
     |------------|-----------------|  

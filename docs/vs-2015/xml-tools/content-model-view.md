@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109112"
 ---
 # <a name="content-model-view"></a>内容模型视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ ms.locfileid: "59668894"
 ## <a name="undoredo"></a>撤消/重做  
  在内容模型视图中，为以下操作启用了撤消/重做功能：  
   
--   通过拖放操作添加单个节点。  
+- 通过拖放操作添加单个节点。  
   
--   从架构资源管理器的搜索结果窗口中添加多个节点。  
+- 从架构资源管理器的搜索结果窗口中添加多个节点。  
   
--   从起始视图添加节点。  
+- 从起始视图添加节点。  
   
--   删除单个或多个节点。  
+- 删除单个或多个节点。  
   
 ## <a name="zoom"></a>缩放  
  内容模型视图的右下角提供了缩放功能。  

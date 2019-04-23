@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110591"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>演练：创建真实的三维撞球
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ ms.locfileid: "54793299"
   
  本文档演示了这些活动：  
   
--   使用形状和纹理创建台球的基本外观。  
+- 使用形状和纹理创建台球的基本外观。  
   
--   使用朗伯照明模型添加深度。  
+- 使用朗伯照明模型添加深度。  
   
--   使用反射高光增强基本外观。  
+- 使用反射高光增强基本外观。  
   
--   通过反射环境创造空间感。  
+- 通过反射环境创造空间感。  
   
 ## <a name="prerequisites"></a>系统必备  
  需以下组件和技能来完成本演练：  
   
--   用于将纹理组合成立方体贴图的工具，例如 2010 年 6 月的 DirectX SDK 中包含的 DirectX 纹理工具。  
+- 用于将纹理组合成立方体贴图的工具，例如 2010 年 6 月的 DirectX SDK 中包含的 DirectX 纹理工具。  
   
--   熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的图像编辑器。  
+- 熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的图像编辑器。  
   
--   熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的着色设计器。  
+- 熟悉 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的着色设计器。  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>使用形状和纹理创建基本外观  
  在计算机图形中，外观的最基本元素是形状和颜色。 在计算机模拟中，通常使用三维模型来表示真实世界物体的形状。 然后使用纹理贴图将颜色细节应用到模型表面。  
@@ -108,7 +108,7 @@ ms.locfileid: "54793299"
   
 - 或者也可通过配置着色器图的 MaterialDiffuse 属性来调整照明的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。  
   
-  有关如何在着色器中应用朗伯照明的详细信息，请参阅[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
+  有关如何在着色器中应用 Lambert 光照的详细信息，请参阅[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
   
   使用朗伯照明后，台球应如下所示：  
   
@@ -129,7 +129,7 @@ ms.locfileid: "54793299"
   
 2. 或者也可配置着色器图的反射属性（“MaterialSpecular”和“MaterialSpecularPower”），调整反射高光的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。  
   
-   有关如何在着色器中应用反射高光的详细信息，请参阅[如何：创建基本冯氏着色器](../designers/how-to-create-a-basic-phong-shader.md)。  
+   有关如何在着色器中应用镜面高光的详细信息，请参阅[如何：创建基本 Phong 着色器](../designers/how-to-create-a-basic-phong-shader.md)。  
   
    应用反射照明后，台球应如下所示：  
   

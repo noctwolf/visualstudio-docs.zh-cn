@@ -1,6 +1,6 @@
 ---
 title: 隐藏元素 （Visual Studio 模板） |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
@@ -13,32 +13,41 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a7a70b59d08da09f6a06c3d5c38d330def11b86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c3fdeebabbb3f7a95886fed0a7e2c5eafa4d495b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104429"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 的元素 （Visual Studio 模板）
-指定模板是否出现在**新的项目**或**添加新项**对话框。
 
- \<VSTemplate> \<TemplateData> \<Hidden>
+指定模板是否出现在新项目或**添加新项**对话框。
+
+```xml
+<VSTemplate>
+    <TemplateData>
+        <Hidden>
+```
 
 ## <a name="syntax"></a>语法
 
-```
-<Hidden> true/false </Hidden>
+```xml
+<Hidden>true</Hidden>
+<Hidden>false</Hidden>
 ```
 
 ## <a name="attributes-and-elements"></a>特性和元素
- 下列各节描述了特性、子元素和父元素。
+
+下列各节描述了特性、子元素和父元素。
 
 ### <a name="attributes"></a>特性
- 无。
+
+无。
 
 ### <a name="child-elements"></a>子元素
- 无。
+
+无。
 
 ### <a name="parent-elements"></a>父元素
 
@@ -47,19 +56,22 @@ ms.locfileid: "56721389"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。|
 
 ## <a name="text-value"></a>文本值
- 需要一个文本值。
 
- 文本必须是`true`或`false`，以指示是否将该模板出现在**新项目**或**添加新项**对话框。
+需要一个文本值。
+
+文本必须是`true`或`false`，以指示是否将该模板出现在**新项目**或**添加新项**对话框。
 
 ## <a name="remarks"></a>备注
- `Hidden` 是可选元素。
 
- 如果不指定的任何其他子元素`TemplateData`元素是必需的。
+`Hidden` 是可选元素。
+
+如果不指定的任何其他子元素`TemplateData`元素是必需的。
 
 ## <a name="example"></a>示例
- 以下示例阐释 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 模板的元数据。
 
-```
+下面的示例演示的元数据C#模板。
+
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
@@ -85,5 +97,6 @@ ms.locfileid: "56721389"
 ```
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+
+- [模板架构引用](../extensibility/visual-studio-template-schema-reference.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)

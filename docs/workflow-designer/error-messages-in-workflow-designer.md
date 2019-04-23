@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104534"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流设计器中的错误消息
 
@@ -27,13 +27,13 @@ ms.locfileid: "55950027"
 
 在以下情况下会出现在工作流设计器中的错误：
 
-1.  表达式中存在错误。
+1. 表达式中存在错误。
 
-2.  活动的验证约束未满足。
+2. 活动的验证约束未满足。
 
-3.  XAML 文件中存在错误，导致活动无法加载。
+3. XAML 文件中存在错误，导致活动无法加载。
 
-4.  XAML 文件中存在错误，导致工作流无法加载。
+4. XAML 文件中存在错误，导致工作流无法加载。
 
 无效的表达式和未满足的验证约束不会导致工作流无法生成。 会成功生成工作流，但在运行时将引发 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 文件中存在错误，生成将失败。
 

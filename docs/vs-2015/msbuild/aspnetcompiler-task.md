@@ -1,5 +1,5 @@
 ---
-title: AspNetCompiler 任务 |Microsoft Docs
+title: AspNetCompiler 任务 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -19,23 +19,22 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a82e80f0b23915c30dd491d3986f4a9c765503e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1267ddbb093f59eaa60fae0eef2d83f6b7ba2e24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756531"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654000"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 `AspNetCompiler` 任务包装 aspnet_compiler.exe，后者是用于预编译 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序的实用工具。  
   
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `AspNetCompiler` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AllowPartiallyTrustedCallers`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则具有强名称的程序集将允许部分信任的调用方。|  
 |`Clean`|可选的 `Boolean` 参数<br /><br /> 如果此参数为 `true`，则将以全新方式生成预编译的应用程序。 将重新编译任何之前编译的组件。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 **-c** 开关。|  

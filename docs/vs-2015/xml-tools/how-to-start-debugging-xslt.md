@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104091"
 ---
 # <a name="how-to-start-debugging-xslt"></a>如何：开始调试 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ ms.locfileid: "58933124"
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>从样式表开始调试  
   
-1.  在“XML 编辑器”中打开样式表。  
+1. 在“XML 编辑器”中打开样式表。  
   
-2.  选择**调试 XSL**从**XML**菜单。  
+2. 选择**调试 XSL**从**XML**菜单。  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>从 XML 输入文档开始调试  
   
-1.  在 XML 编辑器中打开 XML 文档。  
+1. 在 XML 编辑器中打开 XML 文档。  
   
-2.  选择**调试 XSL**从**XML**菜单。  
+2. 选择**调试 XSL**从**XML**菜单。  
   
 ## <a name="xslt-from-other-languages"></a>其他语言的 XSLT  
  也可以在调试应用程序的同时进入并逐行执行 XSLT。 在 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 调用中按 F11 键时，调试程序可以进入并逐行执行 XSLT 代码。  
@@ -44,11 +44,11 @@ ms.locfileid: "58933124"
   
 #### <a name="to-start-debugging-an-xslt-application"></a>开始调试 XSLT 应用程序  
   
-1.  在实例化 <xref:System.Xml.Xsl.XslCompiledTransform> 对象时，在代码中将 `enableDebug` 参数设置为 `true`。  
+1. 在实例化 <xref:System.Xml.Xsl.XslCompiledTransform> 对象时，在代码中将 `enableDebug` 参数设置为 `true`。  
   
      此设置通知 XSLT 处理器在编译代码时创建调试信息。  
   
-2.  按 F11 键进入并逐行执行 XSLT 代码。  
+2. 按 F11 键进入并逐行执行 XSLT 代码。  
   
      XSLT 样式表加载到新的文档窗口中，XSLT 调试程序也将启动。  
   

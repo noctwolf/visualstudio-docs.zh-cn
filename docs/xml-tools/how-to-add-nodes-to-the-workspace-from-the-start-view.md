@@ -8,27 +8,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111657"
 ---
-# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>如何：从起始视图向工作区添加节点
+# <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>如何：将起始视图中的节点添加到工作区
 
 本主题介绍如何将添加到全局节点[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)从[起始视图](../xml-tools/start-view.md)。
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>从起始视图向工作区中添加节点
 
-1.  按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
+1. 按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。
 
-2.  在 XML 编辑器中右键单击并选择**视图设计器**。
+2. 在 XML 编辑器中右键单击并选择**视图设计器**。
 
      此时将显示起始视图。
 
      在中**架构集详细信息**部分中，请注意，有两个 (**2**)**全局复杂类型**。
 
-3.  单击**添加**右侧的链接**全局复杂类型**标题。
+3. 单击**添加**右侧的链接**全局复杂类型**标题。
 
      此时，`USAddress` 和 `PurchaseOrderType` 复杂类型节点将显示在图形视图的设计图面上。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103584"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
@@ -54,13 +54,13 @@ ms.locfileid: "55913049"
 
 1. 中启用验证**编辑器 \ 验证**节点：
 
-   1.  打开**Dsl\DslDefinition.dsl**。
+   1. 打开**Dsl\DslDefinition.dsl**。
 
-   2.  在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。
+   2. 在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。
 
-   3.  在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。
+   3. 在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。
 
-   4.  单击**转换所有模板**中**解决方案资源管理器**工具栏。
+   4. 单击**转换所有模板**中**解决方案资源管理器**工具栏。
 
 2. 为一个或多个域类或域关系编写分部类定义。 中的新代码文件中编写这些定义**Dsl**项目。
 
@@ -70,7 +70,7 @@ ms.locfileid: "55913049"
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   默认情况下，此特性还将针对派生类启用验证。 如果想要针对特定派生类禁用验证，则可以使用 `ValidationState.Disabled`。
+   - 默认情况下，此特性还将针对派生类启用验证。 如果想要针对特定派生类禁用验证，则可以使用 `ValidationState.Disabled`。
 
 4. 将验证方法添加到类。 每个验证方法都可以具有任何名称，但要具有类型 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 的一个参数。
 

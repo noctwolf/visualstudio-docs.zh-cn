@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104997"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "59656604"
   
 #### <a name="to-delete-records-from-a-data-table"></a>若要从数据表中删除记录  
   
--   调用<xref:System.Data.DataRow.Delete%2A>方法的<xref:System.Data.DataRow>。  
+- 调用<xref:System.Data.DataRow.Delete%2A>方法的<xref:System.Data.DataRow>。  
   
      此方法不会以物理方式删除记录。 相反，它将标记为删除的记录。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "59656604"
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要确定是否已对任何行进行了更改  
   
--   调用<xref:System.Data.DataSet.HasChanges%2A>方法要检查的数据集已更改的行。  
+- 调用<xref:System.Data.DataSet.HasChanges%2A>方法要检查的数据集已更改的行。  
   
      下面的示例演示如何检查的返回值<xref:System.Data.DataSet.HasChanges%2A>方法来检测中名为的数据集是否有任何已更改的行`NorthwindDataset1`:  
   
@@ -95,7 +95,7 @@ ms.locfileid: "59656604"
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>若要确定哪种类型的更改已对某行  
   
--   传递<xref:System.Data.DataRowState>值设为<xref:System.Data.DataSet.HasChanges%2A>方法。  
+- 传递<xref:System.Data.DataRowState>值设为<xref:System.Data.DataSet.HasChanges%2A>方法。  
   
      下面的示例演示如何检查名为的数据集`NorthwindDataset1`以确定是否向其添加了任何新行：  
   
@@ -105,9 +105,9 @@ ms.locfileid: "59656604"
 ## <a name="to-locate-rows-that-have-errors"></a>若要查找具有错误的行  
  当使用单个列和行数据，可能会遇到错误。 你可以检查`HasErrors`属性来确定是否存在错误<xref:System.Data.DataSet>， <xref:System.Data.DataTable>，或<xref:System.Data.DataRow>。  
   
-1.  检查`HasErrors`属性以查看数据集内是否有任何错误。  
+1. 检查`HasErrors`属性以查看数据集内是否有任何错误。  
   
-2.  如果`HasErrors`属性是`true`，循环访问表的集合，然后通过行，以查找具有错误的行。  
+2. 如果`HasErrors`属性是`true`，循环访问表的集合，然后通过行，以查找具有错误的行。  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

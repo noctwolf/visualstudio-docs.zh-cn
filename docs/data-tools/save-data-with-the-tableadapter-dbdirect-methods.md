@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103376"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>用 TableAdapter DBDirect 方法保存数据
 
@@ -29,15 +29,15 @@ ms.locfileid: "55950534"
 
 在本演练中，你将学会如何执行以下任务：
 
--   创建新的“Windows 窗体应用程序”。
+- 创建新的“Windows 窗体应用程序”。
 
--   创建和配置具有的数据集[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
+- 创建和配置具有的数据集[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
 
--   选择从“数据源”窗口拖动某些项时要在窗体上创建的控件。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+- 选择从“数据源”窗口拖动某些项时要在窗体上创建的控件。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--   通过将某些项从“数据源”窗口拖到窗体上来创建数据绑定窗体。
+- 通过将某些项从“数据源”窗口拖到窗体上来创建数据绑定窗体。
 
--   添加方法来直接访问数据库并执行插入、 更新和删除。
+- 添加方法来直接访问数据库并执行插入、 更新和删除。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -63,7 +63,7 @@ ms.locfileid: "55950534"
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
@@ -73,7 +73,7 @@ ms.locfileid: "55950534"
 
 ## <a name="create-a-data-source-from-your-database"></a>从您的数据库创建数据源
 
-此步骤根据 Northwind 示例数据库中的 `Region` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤根据 Northwind 示例数据库中的 `Region` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-data-source"></a>创建数据源
 
@@ -87,11 +87,11 @@ ms.locfileid: "55950534"
 
 4. 上**选择您的数据连接**屏幕上，执行下列操作之一：
 
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
          或
 
-    -   选择“新建连接”以启动“添加/修改连接”对话框。
+    - 选择“新建连接”以启动“添加/修改连接”对话框。
 
 5. 如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。
 
@@ -117,9 +117,9 @@ ms.locfileid: "55950534"
 
 2. 在每个按钮上设置下列“名称”和“文本”属性。
 
-    |name|Text|
+    |名称|Text|
     |----------|----------|
-    |`InsertButton`|插入|
+    |`InsertButton`|**插入**|
     |`UpdateButton`|**更新**|
     |`DeleteButton`|**删除**|
 
@@ -152,21 +152,21 @@ ms.locfileid: "55950534"
 
 ## <a name="run-the-application"></a>运行此应用程序
 
--   选择**F5**运行该应用程序。
+- 选择**F5**运行该应用程序。
 
--   选择**插入**按钮，并验证新的记录显示在网格中。
+- 选择**插入**按钮，并验证新的记录显示在网格中。
 
--   选择**更新**按钮，然后验证是否在网格中更新记录。
+- 选择**更新**按钮，然后验证是否在网格中更新记录。
 
--   选择**删除**按钮，并验证记录是否从网格中被删除。
+- 选择**删除**按钮，并验证记录是否从网格中被删除。
 
 ## <a name="next-steps"></a>后续步骤
 
 具体取决于应用程序的要求，有可能想要创建数据绑定窗体后执行的几个步骤。 你可以通过以下操作来增强此演练的效果：
 
--   将搜索功能添加到该窗体。
+- 将搜索功能添加到该窗体。
 
--   通过从“数据源”窗口中选择“使用向导配置数据集”，将其他表添加到数据集中。 可以通过将相关节点拖到窗体上来添加显示相关数据的控件。 有关详细信息，请参阅[中的数据集的关系](relationships-in-datasets.md)。
+- 通过从“数据源”窗口中选择“使用向导配置数据集”，将其他表添加到数据集中。 可以通过将相关节点拖到窗体上来添加显示相关数据的控件。 有关详细信息，请参阅[中的数据集的关系](relationships-in-datasets.md)。
 
 ## <a name="see-also"></a>请参阅
 
