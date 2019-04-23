@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073353"
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ ms.locfileid: "54788260"
   
  可以通过使用上下文菜单上的以下命令，重新排列工具箱选项卡中的项或添加自定义的选项卡和项：  
   
--   重命名项 - 重命名所选的项。  
+- 重命名项 - 重命名所选的项。  
   
--   显示所有 - 显示所有可能的控件（不只是适用于当前设计器的控件）。  
+- 显示所有 - 显示所有可能的控件（不只是适用于当前设计器的控件）。  
   
--   列表视图 - 显示垂直列表中的控件。 如果未选中，则这些控件水平显示。  
+- 列表视图 - 显示垂直列表中的控件。 如果未选中，则这些控件水平显示。  
   
--   选择项 - 打开“选择工具箱项”对话框即可指定“工具箱”中显示的项。 可以通过选中或清除复选框显示或隐藏项。  
+- 选择项 - 打开“选择工具箱项”对话框即可指定“工具箱”中显示的项。 可以通过选中或清除复选框显示或隐藏项。  
   
--   按字母顺序对项排序 - 按名称对项排序。  
+- 按字母顺序对项排序 - 按名称对项排序。  
   
--   重置工具栏 - 还原默认工具箱设置和项。  
+- 重置工具栏 - 还原默认工具箱设置和项。  
   
--   添加选项卡 - 添加新的工具箱选项卡。  
+- 添加选项卡 - 添加新的工具箱选项卡。  
   
--   上移 - 将所选项上移。  
+- 上移 - 将所选项上移。  
   
--   下移 - 将所选项下移。  
+- 下移 - 将所选项下移。  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>创建和分布自定义工具箱控件  
  可在 Visual Basic 或 Visual C# 中创建自定义工具箱控件，可以从创建基于 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows 窗体](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)的项目模板开始。 然后，可使用[工具箱控件安装程序](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)将控件分发给团队成员或将它发布到 Web 上。

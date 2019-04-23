@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077337"
 ---
 # <a name="template-parameters"></a>模板参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "54787087"
 ## <a name="declaring-and-enabling-template-parameters"></a>声明和启用模板参数  
  模板参数以 $参数$ 的格式进行声明。 例如:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>在模板中启用参数替换  
   
-1.  在模板的 .vstemplate 文件中，定位到与要为其启用参数替换的项对应的 `ProjectItem` 元素。  
+1. 在模板的 .vstemplate 文件中，定位到与要为其启用参数替换的项对应的 `ProjectItem` 元素。  
   
-2.  将 `ReplaceParameters` 元素的 `ProjectItem` 属性设置为 `true`。  
+2. 将 `ReplaceParameters` 元素的 `ProjectItem` 属性设置为 `true`。  
   
-3.  在项目项的代码文件中，在适当位置上包括参数。 例如，以下参数指定安全项目名称用于文件中的命名空间：  
+3. 在项目项的代码文件中，在适当位置上包括参数。 例如，以下参数指定安全项目名称用于文件中的命名空间：  
   
     ```  
     namespace $safeprojectname$  
@@ -53,7 +53,7 @@ ms.locfileid: "54787087"
 > [!NOTE]
 >  模板参数区分大小写。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`clrversion`|公共语言运行时 (CLR) 的当前版本。|  
 |`GUID [1-10]`|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1)`。|  

@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075371"
 ---
 # <a name="relationships-in-datasets"></a>数据集中的关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ ms.locfileid: "59649662"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要创建的两个数据表之间的关系  
   
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  拖动**关系**对象从**数据集**工具箱拖到关系中子数据的表。  
+2. 拖动**关系**对象从**数据集**工具箱拖到关系中子数据的表。  
   
      **关系**对话框将打开，填充**子表**与您拖动表框**关系**拖到对象。  
   
-3.  选择从父表**父表**框。 父表包含一个对多关系的"一"方上的记录。  
+3. 选择从父表**父表**框。 父表包含一个对多关系的"一"方上的记录。  
   
-4.  验证正确的子表显示在**子表**框。 子表包含一个对多关系的"多"方上的记录。  
+4. 验证正确的子表显示在**子表**框。 子表包含一个对多关系的"多"方上的记录。  
   
-5.  键入的名称中的关系**名称**框中，或保留默认名称基于所选的表。 这是实际的名称<xref:System.Data.DataRelation>在代码中的对象。  
+5. 键入的名称中的关系**名称**框中，或保留默认名称基于所选的表。 这是实际的名称<xref:System.Data.DataRelation>在代码中的对象。  
   
-6.  选择联接中的表的列**键列**并**外键列**列出。  
+6. 选择联接中的表的列**键列**并**外键列**列出。  
   
-7.  选择是否创建一个关系、 约束，或这两者。 有关信息，请参阅[DataRelation 对象介绍](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)。  
+7. 选择是否创建一个关系、 约束，或这两者。 有关信息，请参阅[DataRelation 对象介绍](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)。  
   
-8.  选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
+8. 选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
   
 9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅 <xref:System.Data.Rule>。  
   
@@ -108,6 +108,6 @@ ms.locfileid: "59649662"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在数据集设计器中显示的关系名称  
   
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  从**数据**菜单中，选择**显示关系标签**命令以显示该关系名称。 清除该命令，以隐藏关系名称。
+2. 从**数据**菜单中，选择**显示关系标签**命令以显示该关系名称。 清除该命令，以隐藏关系名称。

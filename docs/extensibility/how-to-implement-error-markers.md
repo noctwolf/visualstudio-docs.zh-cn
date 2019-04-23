@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2934cb9cb009a46cbd79340173eb2cad0a0fefe0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078210"
 ---
 # <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义实现。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记略有标记语言分析器认为不正确并波浪或波浪红线的文本。 此指标帮助程序员通过直观地显示不正确的代码。
@@ -42,16 +42,16 @@ ms.locfileid: "56720077"
 
   分析器、 任务提供程序和筛选器提供必要尽量将错误标记的基础结构。 以下步骤提供进程显示错误标记。
 
-1.  正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。
+1. 正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。
 
     > [!NOTE]
     >  有关方法的提示、 语句完成、 错误标记等，可以使用的相同命令筛选器。
 
-2.  当筛选器收到一个事件，指示已移动到另一个行时，创建任务，检查有错误。
+2. 当筛选器收到一个事件，指示已移动到另一个行时，创建任务，检查有错误。
 
-3.  任务处理程序会检查是否已更新行。 如果是这样，它将解析错误的行。
+3. 任务处理程序会检查是否已更新行。 如果是这样，它将解析错误的行。
 
-4.  如果发现错误，任务提供程序创建的任务项实例。 此实例创建文本视图中将错误标记为在环境中使用的文本标记。
+4. 如果发现错误，任务提供程序创建的任务项实例。 此实例创建文本视图中将错误标记为在环境中使用的文本标记。
 
 ## <a name="see-also"></a>请参阅
 - [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)

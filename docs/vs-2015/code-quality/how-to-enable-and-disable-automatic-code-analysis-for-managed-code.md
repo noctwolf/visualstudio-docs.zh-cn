@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 451afe75d71969b4a4a866fc9a7cda1fd85562d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4f5de2926cb38f570defa95463489523c694132
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079066"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>如何：启用和禁用托管代码的自动代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,10 +23,10 @@ ms.locfileid: "58932115"
   
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>若要启用或禁用自动代码分析  
   
-1.  在中**解决方案资源管理器**，右键单击该项目，然后单击**属性**。  
+1. 在中**解决方案资源管理器**，右键单击该项目，然后单击**属性**。  
   
-2.  在项目属性对话框中，单击**代码分析**。  
+2. 在项目属性对话框中，单击**代码分析**。  
   
-3.  指定在生成类型**配置**和中的目标平台**平台**。  
+3. 指定在生成类型**配置**和中的目标平台**平台**。  
   
-4.  若要启用或禁用自动代码分析，请选择或清除**启用生成代码分析 （定义 CODE_ANALYSIS 常量）** 复选框。
+4. 若要启用或禁用自动代码分析，请选择或清除**启用生成代码分析 （定义 CODE_ANALYSIS 常量）** 复选框。

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1abb79bc8d982ba36091bfcbc6ec4c84c5df4a2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077415"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题解答：将外接程序转换为 VSPackage 扩展
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，您需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。
@@ -37,7 +37,7 @@ ms.locfileid: "58789525"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>可以将我的外接程序项目转换为一个 VSIX 项目中？
  不能直接向 VSIX 项目转换外接程序项目，因为在 VSIX 项目中使用的机制不是与外接程序项目中的相同。 VSIX 项目模板，以及正确的项目项模板具有大量使它相对容易建立并作为 VSIX 扩展正在运行的代码。
 
-##  <a name="BKMK_StartDeveloping"></a> 如何开始开发 VSIX 扩展？
+## <a name="BKMK_StartDeveloping"></a> 如何开始开发 VSIX 扩展？
  下面是如何使 VSIX 具有菜单命令：
 
 ### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要使 VSIX 扩展具有菜单命令
@@ -52,7 +52,7 @@ ms.locfileid: "58789525"
 
    上**工具**看到名为的按钮 （在实验实例中） 的菜单**我的命令名**。 当选择此按钮时，应显示一条消息：**Inside TestVSPackagePackage.MenuItemCallback()**.
 
-##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？
+## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？
 
 通常采用以下两种方式之一来运行外接程序代码：
 
@@ -158,24 +158,24 @@ ms.locfileid: "58789525"
 
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>将外接程序中的窗口管理代码插入到 VSPackage 中
 
-1.  创建具有菜单命令，作为 VSPackage[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。
+1. 创建具有菜单命令，作为 VSPackage[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。
 
-2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
+2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
 
-3.  添加以下 `using` 语句：
+3. 添加以下 `using` 语句：
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  查找 `MenuItemCallback` 方法。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 <xref:EnvDTE80.DTE2> 对象：
+4. 查找 `MenuItemCallback` 方法。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 <xref:EnvDTE80.DTE2> 对象：
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  添加外接程序中的代码。 例如，下面是一些代码添加到新的任务**任务列表**、 列出的任务数，然后删除一个任务。
+5. 添加外接程序中的代码。 例如，下面是一些代码添加到新的任务**任务列表**、 列出的任务数，然后删除一个任务。
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -206,24 +206,24 @@ ms.locfileid: "58789525"
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>如何在 VSPackage 中管理项目和解决方案？
  如果你的外接程序可以管理项目和解决方案，则外接程序代码应在 VSPackage 中有效。 例如，此过程显示了如何添加获取启动项目的代码。
 
-1.  创建具有菜单命令，作为 VSPackage[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。
+1. 创建具有菜单命令，作为 VSPackage[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。
 
-2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
+2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
 
-3.  添加以下 `using` 语句：
+3. 添加以下 `using` 语句：
 
     ```csharp
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  查找 `MenuItemCallback` 方法。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 <xref:EnvDTE80.DTE2> 对象：
+4. 查找 `MenuItemCallback` 方法。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 <xref:EnvDTE80.DTE2> 对象：
 
     ```csharp
     DTE2 dte = (DTE2)GetService(typeof(DTE));
     ```
 
-5.  添加外接程序中的代码。 例如，以下代码将获取解决方案中启动项目的名称。 （当此程序包运行时，多项目解决方案必须处于打开状态。）
+5. 添加外接程序中的代码。 例如，以下代码将获取解决方案中启动项目的名称。 （当此程序包运行时，多项目解决方案必须处于打开状态。）
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)

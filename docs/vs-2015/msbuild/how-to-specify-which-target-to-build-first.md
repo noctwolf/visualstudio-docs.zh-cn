@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076414"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定首先生成的目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59654875"
   
 #### <a name="to-specify-more-than-one-initial-target"></a>指定多个初始目标  
   
--   在 `Project` 元素的 `InitialTargets` 属性中列出初始目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：  
+- 在 `Project` 元素的 `InitialTargets` 属性中列出初始目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -55,7 +55,7 @@ ms.locfileid: "59654875"
   
 #### <a name="to-specify-more-than-one-default-target"></a>指定多个默认目标  
   
--   在 `Project` 元素的 `DefaultTargets` 属性中列出默认目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：  
+- 在 `Project` 元素的 `DefaultTargets` 属性中列出默认目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -64,13 +64,13 @@ ms.locfileid: "59654875"
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>首先使用非默认目标的目标  
   
--   使用 **/target** 命令行开关将目标指定为第一个目标。 例如：  
+- 使用 **/target** 命令行开关将目标指定为第一个目标。 例如：  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>首先使用非默认目标的多个目标  
   
--   使用 **/target** 命令行开关列出目标，用分号或逗号分隔。 例如：  
+- 使用 **/target** 命令行开关列出目标，用分号或逗号分隔。 例如：  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37acd4a347fbf8a3d6b91798fe606252fd28772d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9bc91ec6cd91cdd0785580d57782ae57ccee1839
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078162"
 ---
 # <a name="handle-specialized-deployment"></a>处理专用的部署
 部署是项目的可选操作。 Web 项目中，例如，支持的部署，以便更新 Web 服务器的项目。 同样，**智能设备**项目支持将复制到目标设备生成的应用程序的部署。 项目子类型可以通过实现来提供专门的部署行为<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口。 此接口定义一组完整的部署操作：
@@ -43,7 +43,7 @@ ms.locfileid: "59650806"
 
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>若要处理专用的部署由子类型项目
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>方法来注册要接收通知的部署状态事件的环境。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>方法来注册要接收通知的部署状态事件的环境。
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -74,7 +74,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>方法来取消环境的注册以接收通知的部署状态事件。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>方法来取消环境的注册以接收通知的部署状态事件。
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -92,7 +92,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>方法来执行特定于应用程序提交操作。  此方法主要用于数据库部署。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>方法来执行特定于应用程序提交操作。  此方法主要用于数据库部署。
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -110,7 +110,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>方法来执行回滚操作。 调用此方法时，部署项目必须执行任何适于回滚更改并还原项目的状态。 此方法主要用于数据库部署。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>方法来执行回滚操作。 调用此方法时，部署项目必须执行任何适于回滚更改并还原项目的状态。 此方法主要用于数据库部署。
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -128,7 +128,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>方法，以确定项目是否能够启动部署操作。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>方法，以确定项目是否能够启动部署操作。
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -161,7 +161,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>方法，以确定是否已成功完成部署操作。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>方法，以确定是否已成功完成部署操作。
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -184,7 +184,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>方法以开始部署操作在单独的线程。 将代码放在应用程序部署到特定`Deploy`方法。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>方法以开始部署操作在单独的线程。 将代码放在应用程序部署到特定`Deploy`方法。
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -241,7 +241,7 @@ ms.locfileid: "59650806"
 
     ```
 
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>方法来停止部署操作。 当用户按下调用此方法**取消**在部署过程中的按钮。
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>方法来停止部署操作。 当用户按下调用此方法**取消**在部署过程中的按钮。
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer

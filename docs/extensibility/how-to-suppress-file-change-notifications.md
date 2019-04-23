@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b7892596af573c777d59f3eb948cdbcc1ffbb72
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 47647910b53b5f86b828ec87c62019b76204f124
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078364"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何：禁止显示文件更改通知
 表示文本缓冲区的物理文件更改后，对话框将显示与消息**是否要保存对以下各项的更改？** 这称为文件更改通知。 如果很多更改将为到该文件，但是，反复地显示此对话框中可以快速变得令人讨厌。
@@ -24,19 +24,19 @@ ms.locfileid: "56702442"
 
 ## <a name="to-suppress-file-change-notification"></a>若要禁止显示文件更改通知
 
-1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法，以确定哪些文本缓冲区对象是与你打开的文件相关联。
+1. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法，以确定哪些文本缓冲区对象是与你打开的文件相关联。
 
-2.  直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象，它内存中要忽略监视文件更改通过获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>从接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（文档数据） 对象，然后实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法替换`fIgnore`参数设置为`true`。
+2. 直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象，它内存中要忽略监视文件更改通过获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>从接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（文档数据） 对象，然后实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法替换`fIgnore`参数设置为`true`。
 
-3.  调用对象方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>接口，以便更新在内存<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象 （例如，当将字段添加到你的组件） 的文件更改。
+3. 调用对象方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>接口，以便更新在内存<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象 （例如，当将字段添加到你的组件） 的文件更改。
 
-4.  使用更改更新磁盘上的文件而不考虑任何挂起的编辑用户可能正在进行中。
+4. 使用更改更新磁盘上的文件而不考虑任何挂起的编辑用户可能正在进行中。
 
      这样一来，当您直接时<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象就可以继续监视文件更改通知，请在内存中的文本缓冲区反映您生成的更改。 在内存中的文本缓冲区也反映了所有其他挂起的编辑。 磁盘上的文件反映了由你生成的最新代码和任何以前保存在用户编辑代码中的用户所做的更改。
 
-5.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法以通知<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象就可以继续通过设置监视文件更改通知`fIgnore`参数`false`。
+5. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法以通知<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象就可以继续通过设置监视文件更改通知`fIgnore`参数`false`。
 
-6.  如果你打算进行几项更改到文件中，如下所示的源代码管理 (SCC)，这种情况，您必须告诉全局文件更改服务以暂时挂起文件更改通知。
+6. 如果你打算进行几项更改到文件中，如下所示的源代码管理 (SCC)，这种情况，您必须告诉全局文件更改服务以暂时挂起文件更改通知。
 
      例如，如果重写该文件，然后将更改时间戳必须挂起文件更改通知，因为重写和时间戳操作每个计为单独的文件更改事件。 若要启用全局文件更改通知，应改为调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A>方法。
 

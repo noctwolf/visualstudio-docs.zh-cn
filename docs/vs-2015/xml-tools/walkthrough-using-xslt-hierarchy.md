@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075619"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>演练：使用 XSLT 层次结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
   
 ### <a name="procedure-title"></a>过程标题  
   
-1.  在 Visual Studio 中打开 XML 文档。 本示例使用下列 `collection.xml` 文档。  
+1. 在 Visual Studio 中打开 XML 文档。 本示例使用下列 `collection.xml` 文档。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
     </COLLECTION>  
     ```  
   
-2.  添加以下 `xslincludefile.xsl`：  
+2. 添加以下 `xslincludefile.xsl`：  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
     </xsl:stylesheet>  
     ```  
   
-3.  添加以下 `xslinclude.xsl` 文件：  
+3. 添加以下 `xslinclude.xsl` 文件：  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
     </xsl:stylesheet>  
     ```  
   
-4.  在以下指令位置添加断点：`<xsl:include href="xslincludefile.xsl" />`  
+4. 在以下指令位置添加断点：`<xsl:include href="xslincludefile.xsl" />`  
   
-5.  开始调试。  
+5. 开始调试。  
   
-6.  当调试器在指令 `<xsl:include href="xslincludefile.xsl" />` 处停止运行时，请按“逐语句”按钮。 请注意，该调试可在所引用的样式表中继续进行。 该层次结构可见，并且设计器显示正确的路径。  
+6. 当调试器在指令 `<xsl:include href="xslincludefile.xsl" />` 处停止运行时，请按“逐语句”按钮。 请注意，该调试可在所引用的样式表中继续进行。 该层次结构可见，并且设计器显示正确的路径。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：XSLT 探查器](../xml-tools/walkthrough-xslt-profiler.md)

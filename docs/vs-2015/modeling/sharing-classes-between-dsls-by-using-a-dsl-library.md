@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c3a14a254eb3b07a95687faaf377664dd6f747a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073821"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58934665"
   
 #### <a name="to-create-a-dsl-library"></a>若要创建的 DSL 库  
   
-1.  创建一个新的 DSL 项目，并选择的 Dsl 解决方案模板。  
+1. 创建一个新的 DSL 项目，并选择的 Dsl 解决方案模板。  
   
      使用空模型，将创建单个的 DSL 项目。  
   
-2.  您可以添加域类、 关系、 形状等。  
+2. 您可以添加域类、 关系、 形状等。  
   
      库中的元素不需要形成单个嵌入树。  
   
@@ -37,15 +37,15 @@ ms.locfileid: "58934665"
   
      请考虑设置**继承修饰符**到的域类的`Abstract`。  
   
-3.  您可以添加在 DSL 资源管理器，如连接生成器中定义的元素。  
+3. 您可以添加在 DSL 资源管理器，如连接生成器中定义的元素。  
   
-4.  您可以添加自定义项，需要额外的代码，例如验证约束。  
+4. 您可以添加自定义项，需要额外的代码，例如验证约束。  
   
-5.  单击**转换所有模板**。  
+5. 单击**转换所有模板**。  
   
-6.  生成项目。  
+6. 生成项目。  
   
-7.  当你将分发的其他人使用 DSL 时，必须提供编译的程序集 (DLL) 和文件`DslDefinition.dsl`。 可以下的文件夹中找到的已编译的程序集 `Dsl\bin\*`  
+7. 当你将分发的其他人使用 DSL 时，必须提供编译的程序集 (DLL) 和文件`DslDefinition.dsl`。 可以下的文件夹中找到的已编译的程序集 `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>将 DSL 库导入  
   

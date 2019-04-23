@@ -10,12 +10,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076610"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到文件扩展名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ ms.locfileid: "58935929"
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `ContentTypeTest`。  
+1. 创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `ContentTypeTest`。  
   
-2.  在中**source.extension.vsixmanifest**文件中，转到**资产**选项卡，并将**类型**字段**Microsoft.VisualStudio.MefComponent**，则**源**字段**当前解决方案中的项目**，和**项目**字段的项目的名称。  
+2. 在中**source.extension.vsixmanifest**文件中，转到**资产**选项卡，并将**类型**字段**Microsoft.VisualStudio.MefComponent**，则**源**字段**当前解决方案中的项目**，和**项目**字段的项目的名称。  
   
 ## <a name="defining-the-content-type"></a>定义的内容类型  
   
-1.  添加一个类文件并将其命名为 `FileAndContentTypes`。  
+1. 添加一个类文件并将其命名为 `FileAndContentTypes`。  
   
-2.  添加对下列程序集的引用：  
+2. 添加对下列程序集的引用：  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  以下代码添加到`using`指令。  
+3. 以下代码添加到`using`指令。  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -52,14 +52,14 @@ ms.locfileid: "58935929"
   
     ```  
   
-4.  声明一个静态类，包含的定义。  
+4. 声明一个静态类，包含的定义。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  在此类中，导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名为"隐藏"，并声明其基本定义为"text"。  
+5. 在此类中，导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名为"隐藏"，并声明其基本定义为"text"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -73,7 +73,7 @@ ms.locfileid: "58935929"
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>将文件扩展名为链接到内容类型  
   
--   若要将此内容类型映射到的文件扩展名，将导出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>的具有扩展名".hid"且内容类型"隐藏"。  
+- 若要将此内容类型映射到的文件扩展名，将导出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>的具有扩展名".hid"且内容类型"隐藏"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -92,11 +92,11 @@ ms.locfileid: "58935929"
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>将内容类型添加到编辑器导出  
   
-1.  创建编辑器扩展。 例如，可以使用中所述的边距标志符号扩展[演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1. 创建编辑器扩展。 例如，可以使用中所述的边距标志符号扩展[演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
-2.  添加在此过程中定义的类。  
+2. 添加在此过程中定义的类。  
   
-3.  在导出的扩展类时，将添加<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"隐藏"到它的类型。  
+3. 在导出的扩展类时，将添加<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"隐藏"到它的类型。  
   
     ```csharp  
     [Export]  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073421"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "59660614"
   
 ##### <a name="to-access-unity-documentation"></a>访问 Unity 文档  
   
--   在 Visual Studio 中，将需要了解的 Unity API 突出显示或将光标置于其上，然后按 **Ctrl+Alt+M、Ctrl+H**  
+- 在 Visual Studio 中，将需要了解的 Unity API 突出显示或将光标置于其上，然后按 **Ctrl+Alt+M、Ctrl+H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior 脚本向导  
  在 Unity 中，大多数脚本都是通过从 MonoBehavior 类派生并替代它的一些方法而实现的。 MonoBehavior 向导可用于快速创建要重载的 MonoBehavior 方法的空定义。 使用此向导，可以指定要从可用方法列表中重载的一个或多个方法，选择将它们插入到代码中的位置，并决定是否要包括有关如何使用这些方法的注释。  
@@ -59,13 +59,13 @@ ms.locfileid: "59660614"
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>通过使用快速 MonoBehavior 向导创建 MonoBehavior 方法的空定义  
   
-1.  在 Visual Studio 中，将光标放置在要插入方法的位置，然后按 **Ctrl+Shift+Q** 启动快速 MonoBehavior 向导。 与另一种 MonoBehavior 向导不同，使用此向导时，必须有意地放置光标，因为将始终在此位置插入新方法。  
+1. 在 Visual Studio 中，将光标放置在要插入方法的位置，然后按 **Ctrl+Shift+Q** 启动快速 MonoBehavior 向导。 与另一种 MonoBehavior 向导不同，使用此向导时，必须有意地放置光标，因为将始终在此位置插入新方法。  
   
-2.  确保“创建脚本方法”窗口右上角显示的 Framework 版本与你正在使用的版本匹配。 如果不匹配，将下拉列表中的值更改为要使用的版本。  
+2. 确保“创建脚本方法”窗口右上角显示的 Framework 版本与你正在使用的版本匹配。 如果不匹配，将下拉列表中的值更改为要使用的版本。  
   
-3.  查找要重载的方法。 在“创建脚本方法”窗口中，开始在文本框中键入方法的名称。 将出现与输入的名称相匹配的方法的列表。  
+3. 查找要重载的方法。 在“创建脚本方法”窗口中，开始在文本框中键入方法的名称。 将出现与输入的名称相匹配的方法的列表。  
   
-4.  选择要重载的方法。 所需方法显示在列表中时，使用鼠标或箭头键选择它，然后按 **Enter**。 如果它是列表中的唯一方法，可以直接按 **Enter**。 将该方法插入你的代码中。  
+4. 选择要重载的方法。 所需方法显示在列表中时，使用鼠标或箭头键选择它，然后按 **Enter**。 如果它是列表中的唯一方法，可以直接按 **Enter**。 将该方法插入你的代码中。  
   
 ### <a name="unity-project-explorer"></a>Unity 项目资源管理器  
  Unity 项目资源管理器可用于导航 Visual Studio 内部的 Unity 项目。  
@@ -103,16 +103,16 @@ ms.locfileid: "59660614"
 ## <a name="unity-debugging"></a>Unity 调试  
  Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的调试器同时调试 Unity 项目的编辑器和游戏脚本。  
   
-###  <a name="connecting-visual-studio-to-unity"></a>将 Visual Studio 连接到 Unity  
+### <a name="connecting-visual-studio-to-unity"></a>将 Visual Studio 连接到 Unity  
  Visual Studio Tools for Unity 通过 UDP 连接与 Unity 通信。 这表示你可以使用完全相同的方式连接到本地运行或在网络上任意位置运行的 Unity 实例。 可以使用“选择 Unity 实例”对话框连接到可在网络上看到的任何 Unity 实例。  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>打开“选择 Unity 实例”对话框  
   
--   在 Visual Studio 的主菜单上选择“调试”，然后选择“附加 Unity 调试器”。  
+- 在 Visual Studio 的主菜单上选择“调试”，然后选择“附加 Unity 调试器”。  
   
      ![附加 Unity 调试器。](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   或者，在 Visual Studio 的状态栏中，选择 Visual Studio 右下角的插入图标。  
+- 或者，在 Visual Studio 的状态栏中，选择 Visual Studio 右下角的插入图标。  
   
      ![此图标显示 VSTU 已连接到 Unity。](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -138,7 +138,7 @@ ms.locfileid: "59660614"
 > [!IMPORTANT]
 >  由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因而你的防火墙可能会对其进行询问。 如果发生这种情况，则必须授权连接，以便 VSTU 和 Unity 可以进行通信。  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a>调试 Unity 播放器中的项目  
+### <a name="debugging-your-project-in-a-unity-player"></a>调试 Unity 播放器中的项目  
  未运行 Unity 编辑器时，可以直接将 Visual Studio Tools for Unity 连接到在独立播放器上运行的 Unity 应用，或调试特定于平台的问题。  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>在 Unity 播放器中启用脚本调试  

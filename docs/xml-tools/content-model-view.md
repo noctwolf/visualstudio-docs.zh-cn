@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074813"
 ---
 # <a name="content-model-view"></a>内容模型视图
 
@@ -97,13 +97,13 @@ ms.locfileid: "57525786"
 
 在内容模型视图中，为以下操作启用了撤消/重做功能：
 
--   通过拖放操作添加单个节点。
+- 通过拖放操作添加单个节点。
 
--   从架构资源管理器的搜索结果窗口中添加多个节点。
+- 从架构资源管理器的搜索结果窗口中添加多个节点。
 
--   从起始视图添加节点。
+- 从起始视图添加节点。
 
--   删除单个或多个节点。
+- 删除单个或多个节点。
 
 ## <a name="zoom"></a>缩放
 
@@ -111,9 +111,9 @@ ms.locfileid: "57525786"
 
 可通过以下方法控制缩放功能：
 
--   通过按住**Ctrl**密钥并旋转鼠标滚轮的鼠标悬停在内容模型视图面上时。
+- 通过按住**Ctrl**密钥并旋转鼠标滚轮的鼠标悬停在内容模型视图面上时。
 
--   使用滑块控件。 滑块显示当前缩放级别。
+- 使用滑块控件。 滑块显示当前缩放级别。
 
 当您选择它，将鼠标悬停在其上或使用缩放滑块是不透明**Ctrl**使用鼠标滚轮来放大; 在其他时候，它是透明的。
 

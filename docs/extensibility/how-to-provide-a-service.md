@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078624"
 ---
 # <a name="how-to-provide-a-service"></a>如何：提供的服务
 VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供服务，VSPackage 必须使用 Visual Studio 中注册该服务并将服务添加。
@@ -76,7 +76,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
 
 ### <a name="register-a-service"></a>注册服务
 
-1.  若要注册一个服务，将添加<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到 VSPackage 提供服务。 下面是一个示例：
+1. 若要注册一个服务，将添加<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到 VSPackage 提供服务。 下面是一个示例：
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -93,7 +93,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
 
 ### <a name="add-a-service"></a>添加服务
 
-1.  VSPackage 初始值设定项中添加服务和一个用于创建服务的回调方法。 下面是要为进行的更改<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：
+1. VSPackage 初始值设定项中添加服务和一个用于创建服务的回调方法。 下面是要为进行的更改<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
     }
     ```
 
-2.  实现回调方法，这应创建并返回该服务，或如果无法创建，则为 null。
+2. 实现回调方法，这应创建并返回该服务，或如果无法创建，则为 null。
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -119,7 +119,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
     > [!NOTE]
     >  Visual Studio 可以拒绝的请求提供服务。 它是如果另一个 VSPackage 已经提供了该服务。
 
-3.  现在，您可以获取该服务，使用它的方法。 下面的示例显示了使用初始值设定项中的服务，但您可以获取的服务任意位置你想要使用服务。
+3. 现在，您可以获取该服务，使用它的方法。 下面的示例显示了使用初始值设定项中的服务，但您可以获取的服务任意位置你想要使用服务。
 
     ```csharp
     protected override void Initialize()

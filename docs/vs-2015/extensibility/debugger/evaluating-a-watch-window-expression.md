@@ -12,12 +12,12 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb60ec9d471c99b24e07eef11014ce82a18d50b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b5ea8cbdfa9644e103f32d49ea0964bbb90bad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075852"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>计算监视窗口表达式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "58935128"
   
  下面是概述如何评估监视列表表达式：  
   
-1.  Visual Studio 会调用 DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)若要获取可用于计算表达式的表达式上下文。  
+1. Visual Studio 会调用 DE [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)若要获取可用于计算表达式的表达式上下文。  
   
-2.  监视列表中每个表达式，Visual Studio 会调用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)将表达式文本转换为已分析的表达式。  
+2. 监视列表中每个表达式，Visual Studio 会调用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)将表达式文本转换为已分析的表达式。  
   
-3.  `IDebugExpressionContext2::ParseText` 调用[分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)若要执行的分析的文本和生成的实际工作[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象。  
+3. `IDebugExpressionContext2::ParseText` 调用[分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)若要执行的分析的文本和生成的实际工作[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象。  
   
-4.  `IDebugExpressionContext2::ParseText` 创建[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象，并会使`IDebugParsedExpression`到其中的对象。 此我`DebugExpression2`对象然后返回到 Visual Studio。  
+4. `IDebugExpressionContext2::ParseText` 创建[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象，并会使`IDebugParsedExpression`到其中的对象。 此我`DebugExpression2`对象然后返回到 Visual Studio。  
   
-5.  Visual Studio 调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)已分析的表达式进行求值。  
+5. Visual Studio 调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)已分析的表达式进行求值。  
   
-6.  `IDebugExpression2::EvaluateSync` 将传递到调用[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)若要执行的实际计算并生成[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)返回到 Visual Studio 的对象。  
+6. `IDebugExpression2::EvaluateSync` 将传递到调用[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)若要执行的实际计算并生成[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)返回到 Visual Studio 的对象。  
   
-7.  Visual Studio 调用[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)以获取然后监视列表中显示的表达式的值。  
+7. Visual Studio 调用[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)以获取然后监视列表中显示的表达式的值。  
   
 ## <a name="parse-then-evaluate"></a>分析并评估  
  分析复杂表达式可能需要更长时间对其进行评估，因为表达式的计算过程分成了两个步骤：1) 分析表达式和 2） 的计算结果的已分析的表达式。 这样一来，评估可能会发生很多时候但需要进行一次分析该表达式。 中间分析得出的表达式返回从 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象，进而封装并返回从作为 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpression`对象将所有计算交都由`IDebugParsedExpression`对象。  

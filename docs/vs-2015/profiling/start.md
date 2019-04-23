@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 551af75c985c9103db37cd3f9fe585655a4df342
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073548"
 ---
 # <a name="start"></a>Start
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  必须是以下关键字之一：  
   
--   **TRACE** - 指定检测方法。  
+- **TRACE** - 指定检测方法。  
   
--   **SAMPLE** - 指定采样方法。  
+- **SAMPLE** - 指定采样方法。  
   
--   **COVERAGE** - 指定代码覆盖率。  
+- **COVERAGE** - 指定代码覆盖率。  
   
--   **CONCURRENCY** - 指定资源争用方法。  
+- **CONCURRENCY** - 指定资源争用方法。  
   
 ## <a name="required-options"></a>必需选项  
  在命令行上指定 **Start** 时，必须指定 **Output** 选项。  

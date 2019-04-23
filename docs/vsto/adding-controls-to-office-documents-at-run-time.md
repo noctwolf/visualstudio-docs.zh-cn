@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7b09e658c896f4f3e864c46dbd02d65a871da318
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075800"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>在运行时向 Office 文档添加控件
   可以将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿在运行时。 此外可以在运行时删除它们。 添加或删除在运行时中的控件称为*动态控件*。
@@ -44,16 +44,16 @@ ms.locfileid: "56600836"
 
   ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：将控件添加到文档图面在运行时？](http://go.microsoft.com/fwlink/?LinkId=132782).
 
-##  <a name="ControlsCollection"></a> 使用控件集合管理控件在运行时
+## <a name="ControlsCollection"></a> 使用控件集合管理控件在运行时
  若要添加、 获取，或删除控件在运行时，使用的帮助器方法<xref:Microsoft.Office.Tools.Excel.ControlCollection>和<xref:Microsoft.Office.Tools.Word.ControlCollection>对象。
 
  访问这些对象的方式取决于所开发项目的类型：
 
--   在 Excel 文档级项目中，使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 、 `Sheet1`和 `Sheet2`类的 `Sheet3` 属性。 有关这些类的详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。
+- 在 Excel 文档级项目中，使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 、 `Sheet1`和 `Sheet2`类的 `Sheet3` 属性。 有关这些类的详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。
 
--   在 Word 文档级项目中，使用 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 类的 `ThisDocument` 属性。 有关此类的详细信息，请参阅[文档宿主项](../vsto/document-host-item.md)。
+- 在 Word 文档级项目中，使用 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 类的 `ThisDocument` 属性。 有关此类的详细信息，请参阅[文档宿主项](../vsto/document-host-item.md)。
 
--   在 Excel 或 Word 的 VSTO 外接程序项目，使用`Controls`的属性<xref:Microsoft.Office.Tools.Excel.Worksheet>或<xref:Microsoft.Office.Tools.Word.Document>在运行时生成的。 有关生成在运行时这些对象的详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+- 在 Excel 或 Word 的 VSTO 外接程序项目，使用`Controls`的属性<xref:Microsoft.Office.Tools.Excel.Worksheet>或<xref:Microsoft.Office.Tools.Word.Document>在运行时生成的。 有关生成在运行时这些对象的详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 ### <a name="add-controls"></a>添加控件
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> 和 <xref:Microsoft.Office.Tools.Word.ControlCollection> 类型包含可用于将宿主控件和公共 Windows 窗体控件添加到文档和工作表中的帮助器方法。 每个方法名的格式均为 `Add`*control class*，其中 *control class* 是所要添加的控件的类名称。 例如，若要向文档中添加 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，请使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> 方法。
@@ -76,7 +76,7 @@ ms.locfileid: "56600836"
 > [!NOTE]
 >  请不要以编程方式在文档的 `Shutdown` 事件处理程序中删除控件。 发生 `Shutdown` 事件时，文档的 UI 元素将不再可用。 如果要在关闭文档之前删除控件，请将你的代码添加到另一个事件的事件处理程序中，对于 Word 为 <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> 或 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> ，对于 Excel 为 <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>或 <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> 。
 
-##  <a name="HostControls"></a> 将宿主控件添加到文档
+## <a name="HostControls"></a> 将宿主控件添加到文档
 
 当以编程方式向文档中添加宿主控件时，必须提供一个可唯一标识该控件的名称，并且指定要将控件添加到文档中的位置。 有关具体说明，请参阅以下主题：
 
@@ -97,7 +97,7 @@ ms.locfileid: "56600836"
 > [!NOTE]
 > 以下宿主控件不具备帮助器方法，因为不能以编程方式将这些控件添加到 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>和 <xref:Microsoft.Office.Tools.Word.XMLNodes>文档中。
 
-##  <a name="WindowsForms"></a> 向文档添加 Windows 窗体控件
+## <a name="WindowsForms"></a> 向文档添加 Windows 窗体控件
  当以编程方式向文档中添加 Windows 窗体控件时，必须提供控件的位置和一个可唯一标识该控件的名称。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为每个控件提供帮助器方法。 这些方法将重载，以便可以传递控件位置的范围或具体坐标。
 
  保存并关闭文档后，会自动从文档中删除所有动态创建的 Windows 窗体控件。 可以向解决方案中添加代码，以在重新打开文档时重新创建这些控件。 如果使用 VSTO 外接程序中创建动态 Windows 窗体控件，控件的 ActiveX 包装会保留在文档中。 有关详细信息，请参阅[持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。

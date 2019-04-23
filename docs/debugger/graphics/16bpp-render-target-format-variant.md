@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075787"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 呈现目标格式变体
 将所有呈现器目标和后台缓冲区的像素格式设置为 DXGI_FORMAT_B5G6R5_UNORM。
@@ -48,11 +48,11 @@ ms.locfileid: "56698932"
 ## <a name="remarks"></a>备注
  每次调用创建呈现器目标的 `ID3D11Device::CreateTexture2D` 时，呈现器目标格式都将重置为 DXGI_FORMAT_B5G6R5_UNORM。 具体而言，当在 pDesc 中传递的 D3D11_TEXTURE2D_DESC 对象描述呈现器目标时将重写该格式；即：
 
--   BindFlags 成员将设置 D3D11_BIND_REDNER_TARGET 标志。
+- BindFlags 成员将设置 D3D11_BIND_REDNER_TARGET 标志。
 
--   BindFlags 成员将清除 D3D11_BIND_DEPTH_STENCIL 标志。
+- BindFlags 成员将清除 D3D11_BIND_DEPTH_STENCIL 标志。
 
--   将 Usage 成员设置为 D3D11_USAGE_DEFAULT。
+- 将 Usage 成员设置为 D3D11_USAGE_DEFAULT。
 
 ## <a name="restrictions-and-limitations"></a>限制和约束
  因为 B5G6R5 格式不具有 alpha 通道，所以此变体不会保留 alpha 内容。 如果应用的呈现要求在呈现器目标中使用 alpha 通道，则不能够仅切换到 B5G6R5 格式。

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0d67cc907155f3f5c6bc4b0f132f9045f7d698a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075754"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "54800870"
   
   C# 中的完成列表也足够智能，可筛选出不相关的标记，并可基于上下文预先选择标记。 有关详细信息，请参阅 [C# 中经过筛选的完成列表](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中预选择的完成列表项](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
-###  <a name="CodeSnippets"></a> 完成列表中的代码片段  
+### <a name="CodeSnippets"></a> 完成列表中的代码片段  
  在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的 [Shortcut 元素（Intellisense 代码片段）](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)出现在完成列表中。  若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。  
   
-###  <a name="Keywords"></a> 完成列表中的语言关键字  
+### <a name="Keywords"></a> 完成列表中的语言关键字  
  在 Visual C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
   
-###  <a name="ExtensionMethods"></a> 完成列表中的扩展方法  
+### <a name="ExtensionMethods"></a> 完成列表中的扩展方法  
  在 Visual C# 中，完成列表包含位于作用域的扩展方法。  
   
 > [!NOTE]
@@ -59,23 +59,23 @@ ms.locfileid: "54800870"
   
  Visual C# 对针对这些项出现的完成列表进行筛选：  
   
--   **接口和基类** IntelliSense 自动从接口和基类完成列表、类声明基类和接口列表和约束列表中移除项。 例如，枚举不会出现在基类的完成列表中，因为枚举无法用于基类。 基类的完成列表仅包含接口和命名空间。 如果在列表中选择一个项，再键入逗号，则 IntelliSense 从完成列表移除基类，因为 Visual C# 不支持多重继承。 相同的行为也发生在约束子句中。  
+- **接口和基类** IntelliSense 自动从接口和基类完成列表、类声明基类和接口列表和约束列表中移除项。 例如，枚举不会出现在基类的完成列表中，因为枚举无法用于基类。 基类的完成列表仅包含接口和命名空间。 如果在列表中选择一个项，再键入逗号，则 IntelliSense 从完成列表移除基类，因为 Visual C# 不支持多重继承。 相同的行为也发生在约束子句中。  
   
--   **特性**：将特性应用于类型时，对完成列表进行筛选，从而使列表仅包含源自包含那些类型的命名空间的类型，如 <xref:System.Attribute>。  
+- **特性**：将特性应用于类型时，对完成列表进行筛选，这样列表仅包含源自包含那些类型的命名空间的类型，如 <xref:System.Attribute>。  
   
--   `as` 和 `is` 运算符。  
+- `as` 和 `is` 运算符。  
   
--   **Catch 子句**。  
+- **Catch 子句**。  
   
--   **对象初始值设定项**：完成列表中将仅列出可进行初始化的成员。  
+- **对象初始值设定项：** 仅可进行初始化的成员将出现在完成列表中。  
   
--   **新关键字**：键入 `new` 并按空格键后，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，自动为声明和方法中的 return 语句在完成列表中选择项。  
+- **new 关键字**：键入 `new` 并按空格键后，将显示完成列表。 基于代码的上下文将在列表中自动选择项。 例如，自动为声明和方法中的 return 语句在完成列表中选择项。  
   
--   **as 和 is 运算符**：键入 `as` 或 `is` 关键字后按空格键，将自动显示经过筛选的完成列表。  
+- **作为和 is 运算符：** 键入 `as` 或 `is` 关键字后按空格键，将自动显示经过筛选的完成列表。  
   
--   事件：当键入关键字`event` 时，完成列表仅包含委托类型。  
+- 事件：当键入关键字 `event` 时，完成列表仅包含委托类型。  
   
--   当输入参数时，参数将帮助自动根据匹配参数的首个方法重载进行排序。 如果有多个可用的方法重载，则可使用向上和向下箭头导航到列表中下一个可能的重载。  
+- 当输入参数时，参数将帮助自动根据匹配参数的首个方法重载进行排序。 如果有多个可用的方法重载，则可使用向上和向下箭头导航到列表中下一个可能的重载。  
   
 ## <a name="most-recently-used-members"></a>最近使用的成员  
  IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/using-intellisense.md)弹出框中选择的成员。 下次使用成员列表时，将在顶部显示最近使用过的成员。 在 IDE 中的每个会话之间，最近使用过的成员的历史记录将被清除。  
@@ -109,7 +109,7 @@ ms.locfileid: "54800870"
 ### <a name="implement-abstract-base-class"></a>实现抽象基类  
  IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时自动实现抽象基类的成员。 通常情况下，实现抽象基类的成员需要在你的派生类中为抽象基类的每个方法创建新的方法定义。 使用 IntelliSense，在类声明中键入抽象基类的名称后，将显示智能标记。 智能标记将提供自动实现基类方法的选项。  
   
- 通过“实现抽象基类”功能生成的方法存根将由文件 MethodStub.snippet 中定义的代码片段进行建模。 代码片段是可修改的。 有关详细信息，请参阅[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。  
+ 通过“实现抽象基类”功能生成的方法存根将由文件 MethodStub.snippet 中定义的代码片段进行建模。 代码片段是可修改的。 有关详细信息，请参见[演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)。  
   
 ### <a name="generate-from-usage"></a>使用时生成  
  通过“使用时生成”功能，用户能够在定义类和成员之前使用它们。 你可以为想要使用但尚未定义的任何类、构造函数、方法、属性、字段或枚举生成存根。 可以生成新的类型和成员而无需离开你在代码中的当前位置。 这将使工作流的中断降至最低。  

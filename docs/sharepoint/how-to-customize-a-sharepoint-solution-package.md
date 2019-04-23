@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcc6e59f1c87cd0c3a82383ac97a80488ac1168d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074916"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
   在包设计器可用于创建和自定义包 (*.wsp*)。 例如，可以添加 SharePoint 项目项和功能，指定是否 Web 服务器是重置时部署解决方案，并设置部署服务器类型。
@@ -31,20 +31,20 @@ ms.locfileid: "56602671"
 
 #### <a name="to-open-the-package-designer"></a>若要打开包设计器
 
--   在中**解决方案资源管理器**，双击**包**，或选择**视图设计器**上的快捷菜单**包**。
+- 在中**解决方案资源管理器**，双击**包**，或选择**视图设计器**上的快捷菜单**包**。
 
 ## <a name="view-the-packaged-manifestffile"></a>查看打包的 manifestfFile
  在包设计器可用于修改并生成打包的清单文件。 然后，您可以在 Visual Studio 中查看此文件的 XML 代码。
 
 #### <a name="to-view-the-xml-source-file"></a>若要查看 XML 源文件
 
-1.  在中**包设计器**，选择**清单**。
+1. 在中**包设计器**，选择**清单**。
 
 #### <a name="to-view-the-packaged-manifest-file-by-using-solution-explorer"></a>若要使用解决方案资源管理器查看打包的清单文件
 
-1.  在“解决方案资源管理器”中，选择“显示所有文件”。
+1. 在“解决方案资源管理器”中，选择“显示所有文件”。
 
-2.  展开包中，展开 Package.package，，然后打开*Package.Template.xml*文件。
+2. 展开包中，展开 Package.package，，然后打开*Package.Template.xml*文件。
 
     > [!NOTE]
     >  当打开包模板的清单 XML 文件时，将自动验证这些文件，并可以忽略在错误列表窗口中显示的警告。
@@ -54,13 +54,13 @@ ms.locfileid: "56602671"
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>若要使用 XML 编辑器更改清单模板
 
-1.  在中**包设计器**，选择**清单**选项卡上，展开**编辑选项**节点，然后选择**XML 编辑器中打开**链接。
+1. 在中**包设计器**，选择**清单**选项卡上，展开**编辑选项**节点，然后选择**XML 编辑器中打开**链接。
 
      对 XML 的更改将合并到打包的清单文件。
 
 #### <a name="to-change-the-manifest-template-by-using-the-manifest-template-pane"></a>若要使用清单模板窗格中更改清单模板
 
-1.  在中**包设计器**，选择**清单**选项卡上，展开**编辑选项**节点，然后再更改的清单模板窗格中显示的 XML。
+1. 在中**包设计器**，选择**清单**选项卡上，展开**编辑选项**节点，然后再更改的清单模板窗格中显示的 XML。
 
      对 XML 的更改显示在**预览打包的清单**窗格。
 
@@ -72,9 +72,9 @@ ms.locfileid: "56602671"
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>若要通过禁用设计器覆盖打包的清单文件
 
-1.  在中**包设计器**，选择**清单**选项卡。
+1. 在中**包设计器**，选择**清单**选项卡。
 
-2.  展开**编辑选项**节点，选择**在 XML 编辑器中的覆盖生成的 XML 和编辑清单**链接，，然后选择**是**按钮。
+2. 展开**编辑选项**节点，选择**在 XML 编辑器中的覆盖生成的 XML 和编辑清单**链接，，然后选择**是**按钮。
 
      该模板将更新为当前打包的清单文件。
 
@@ -83,7 +83,7 @@ ms.locfileid: "56602671"
 
 #### <a name="to-re-enable-the-designer"></a>若要重新启用设计器
 
-1.  在中**包设计器**，选择**放弃清单编辑和重新启用设计器**链接，，然后选择**是**按钮。
+1. 在中**包设计器**，选择**放弃清单编辑和重新启用设计器**链接，，然后选择**是**按钮。
 
      模板刷新并显示原始文本和 XML 的任何更改都将丢失。
 

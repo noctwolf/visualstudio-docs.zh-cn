@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078729"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>如何：从“查找”窗口打开消息视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,31 +26,31 @@ ms.locfileid: "58932882"
   
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>若要打开消息视图窗口使用查找窗口对话框  
   
-1.  排列窗口，以便 Spy + + 和目标窗口中可见。  
+1. 排列窗口，以便 Spy + + 和目标窗口中可见。  
   
-2.  从**Spy**菜单中，选择**查找窗口**。  
+2. 从**Spy**菜单中，选择**查找窗口**。  
   
      [查找窗口对话框](../debugger/find-window-dialog-box.md)随即打开。  
   
-3.  从**Windows**选项卡上，拖动**查找程序工具**通过目标窗口。 拖动该工具中，**查找窗口**对话框显示有关所选的窗口的详细信息。  
+3. 从**Windows**选项卡上，拖动**查找程序工具**通过目标窗口。 拖动该工具中，**查找窗口**对话框显示有关所选的窗口的详细信息。  
   
      - 或 -  
   
      如果有你想要检查 （例如，复制从调试器） 窗口的句柄，则可以键入其**处理**文本框。  
   
-4.  下**显示**，选择**消息**。  
+4. 下**显示**，选择**消息**。  
   
-5.  按“确定”。  
+5. 按“确定”。  
   
      空白[消息视图](../debugger/messages-view.md)窗口将打开，和一个**消息**菜单添加到 Spy + + 工具栏。  
   
-6.  从**消息**菜单中，选择**日志记录选项**。  
+6. 从**消息**菜单中，选择**日志记录选项**。  
   
      [消息选项对话框](../debugger/message-options-dialog-box.md)随即打开。  
   
-7.  选择你想要显示的消息的选项。  
+7. 选择你想要显示的消息的选项。  
   
-8.  按**确定**开始日志记录消息。  
+8. 按**确定**开始日志记录消息。  
   
      根据所选的选项，消息开始流式传送到活动的消息视图窗口。  
   

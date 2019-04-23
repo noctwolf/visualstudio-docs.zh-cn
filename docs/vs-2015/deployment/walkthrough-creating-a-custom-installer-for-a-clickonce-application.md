@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11ce31ce0a128114e3751dd412d7c3a0ea36df25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078871"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>演练：创建 ClickOnce 应用程序的自定义安装程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58936807"
   
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>若要创建自定义 ClickOnce 应用程序安装程序  
   
-1.  在 ClickOnce 应用程序中，添加对 System.Deployment 和 System.Windows.Forms 的引用。  
+1. 在 ClickOnce 应用程序中，添加对 System.Deployment 和 System.Windows.Forms 的引用。  
   
-2.  将新类添加到你的应用程序并指定任何名称。 本演练使用名称 `MyInstaller`。  
+2. 将新类添加到你的应用程序并指定任何名称。 本演练使用名称 `MyInstaller`。  
   
-3.  添加以下`Imports`或`using`到您的新类的顶部的语句。  
+3. 添加以下`Imports`或`using`到您的新类的顶部的语句。  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -51,7 +51,7 @@ ms.locfileid: "58936807"
     using System.Windows.Forms;  
     ```  
   
-4.  将以下方法添加到您的类。  
+4. 将以下方法添加到您的类。  
   
      这些方法调用<xref:System.Deployment.Application.InPlaceHostingManager>方法下载部署清单中，添加相应的权限，要求用户提供权限来安装，然后下载并安装到 ClickOnce 缓存的应用程序。 自定义安装程序可以指定 ClickOnce 应用程序预受信任，也可以将推迟到信任决定<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>方法调用。 此代码预信任应用程序。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58936807"
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5.  若要尝试在代码中的安装，请调用`InstallApplication`方法。 例如，如果将类命名为`MyInstaller`，可能会调用`InstallApplication`如下所示。  
+5. 若要尝试在代码中的安装，请调用`InstallApplication`方法。 例如，如果将类命名为`MyInstaller`，可能会调用`InstallApplication`如下所示。  
   
     ```vb  
     Dim installer As New MyInstaller()  

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074878"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>将数据从对象保存到数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "59659015"
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>若要将新记录从对象保存到数据库  
   
--   将值传递给创建的记录`TableAdapter.Insert`方法。  
+- 将值传递给创建的记录`TableAdapter.Insert`方法。  
   
      下面的示例创建新的客户记录中`Customers`表中的值传递`currentCustomer`对象传递给`TableAdapter.Insert`方法。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59659015"
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>若要更新现有记录从对象到数据库  
   
--   通过调用修改记录`TableAdapter.Update`方法，传入新值更新记录，并传入要找到的记录的原始值。  
+- 通过调用修改记录`TableAdapter.Update`方法，传入新值更新记录，并传入要找到的记录的原始值。  
   
     > [!NOTE]
     >  您的对象需要维护的原始值，以便将它们传递给`Update`方法。 此示例使用属性与`orig`前缀来存储原始值。  
@@ -66,7 +66,7 @@ ms.locfileid: "59659015"
   
 ### <a name="to-delete-existing-records-from-a-database"></a>若要从数据库中删除现有记录  
   
--   通过调用删除记录`TableAdapter.Delete`方法并传入要找到的记录的原始值。  
+- 通过调用删除记录`TableAdapter.Delete`方法并传入要找到的记录的原始值。  
   
     > [!NOTE]
     >  您的对象需要维护的原始值，以便将它们传递给`Delete`方法。 此示例使用属性与`orig`前缀来存储原始值。  

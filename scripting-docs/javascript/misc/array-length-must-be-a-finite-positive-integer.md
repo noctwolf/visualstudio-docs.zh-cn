@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 691f7aff61a8a2bfae6444540afe9a28a200278d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073977"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>数组长度必须为有限正整数
 在调用**数组**不是 （全部为数字零和包含的一组正整数） 为整数的参数的构造函数。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   创建一个新时仅使用正整数`Array`对象。 如果你想要创建一个包含单个元素的不是一个整数数组，执行此操作分两步。 首先创建一个元素的数组，然后将值放在第一个元素 (array[0])。 下面是一个示例，将生成此错误。  
+- 创建一个新时仅使用正整数`Array`对象。 如果你想要创建一个包含单个元素的不是一个整数数组，执行此操作分两步。 首先创建一个元素的数组，然后将值放在第一个元素 (array[0])。 下面是一个示例，将生成此错误。  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33c0f0235e2f4fe2fb633a94a024563b4fb9b276
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079132"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "59664917"
   
 #### <a name="to-add-a-reference-to-an-external-service"></a>若要添加对外部服务的引用  
   
-1.  在中**解决方案资源管理器**，右键单击你想要添加到服务，然后单击项目名称**添加服务引用**。  
+1. 在中**解决方案资源管理器**，右键单击你想要添加到服务，然后单击项目名称**添加服务引用**。  
   
      **添加服务引用**对话框随即出现。  
   
-2.  在中**地址**框中，输入该服务的 URL，然后单击**转**来搜索服务。 如果该服务实现了用户名称和密码安全性，您可能会提示输入用户名和密码。  
+2. 在中**地址**框中，输入该服务的 URL，然后单击**转**来搜索服务。 如果该服务实现了用户名称和密码安全性，您可能会提示输入用户名和密码。  
   
     > [!NOTE]
     >  应仅从受信任源引用服务。 从不受信任的源添加引用可能会危及安全性。  
@@ -46,29 +46,29 @@ ms.locfileid: "59664917"
   
      正在执行搜索时，将显示一个进度栏。 可以通过单击停止搜索在任何时候**停止**。  
   
-3.  在中**Services**列表中，展开你想要使用，并选择一个实体集的服务的节点。  
+3. 在中**Services**列表中，展开你想要使用，并选择一个实体集的服务的节点。  
   
-4.  在中**Namespace**框中，输入你想要用于参考的命名空间。  
+4. 在中**Namespace**框中，输入你想要用于参考的命名空间。  
   
-5.  单击**确定**添加到项目引用。  
+5. 单击**确定**添加到项目引用。  
   
      生成服务客户端 （代理），并描述该服务的元数据添加到 app.config 文件。  
   
 #### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>若要在当前解决方案中添加对服务的引用  
   
-1.  在中**解决方案资源管理器**，右键单击你想要添加到服务，然后单击项目名称**添加服务引用**。  
+1. 在中**解决方案资源管理器**，右键单击你想要添加到服务，然后单击项目名称**添加服务引用**。  
   
      **添加服务引用**对话框随即出现。  
   
-2.  单击**发现**。  
+2. 单击**发现**。  
   
      所有服务 (同时[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]和 WCF 服务) 当前解决方案中添加到**Services**列表。  
   
-3.  在中**Services**列表中，展开你想要使用，并选择一个实体集的服务的节点。  
+3. 在中**Services**列表中，展开你想要使用，并选择一个实体集的服务的节点。  
   
-4.  在中**Namespace**框中，输入你想要用于参考的命名空间。  
+4. 在中**Namespace**框中，输入你想要用于参考的命名空间。  
   
-5.  单击**确定**添加到项目引用。  
+5. 单击**确定**添加到项目引用。  
   
      生成服务客户端 （代理），并描述该服务的元数据添加到 app.config 文件。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "59664917"
   
 #### <a name="to-update-a-service-reference"></a>若要更新服务引用  
   
--   在中**解决方案资源管理器**，右键单击服务引用，然后单击**更新服务引用**。  
+- 在中**解决方案资源管理器**，右键单击服务引用，然后单击**更新服务引用**。  
   
      从其原始位置更新的引用和服务客户端会重新生成以反映元数据中的任何更改时，将显示进度对话框。  
   
@@ -86,7 +86,7 @@ ms.locfileid: "59664917"
   
 #### <a name="to-remove-a-service-reference"></a>若要删除服务引用  
   
--   在中**解决方案资源管理器**，右键单击服务引用，然后单击**删除**。  
+- 在中**解决方案资源管理器**，右键单击服务引用，然后单击**删除**。  
   
      服务客户端将删除该解决方案，并描述该服务的元数据将从 app.config 文件中删除。  
   

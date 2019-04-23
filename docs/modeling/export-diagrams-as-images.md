@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f407a3bc3236d76c4cf5418ed3aef2c3388867a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926185"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077922"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 在 Visual Studio 中，你可以保存建模图在只读的格式中，以便您可以与利益干系人、 用户或不使用相同版本的 Visual Studio 的项目团队成员共享它们。
@@ -25,19 +25,19 @@ ms.locfileid: "55926185"
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>将关系图或部分关系图复制到另一个应用程序
 
-1.  在关系图上，选择部分或全部形状。
+1. 在关系图上，选择部分或全部形状。
 
-2.  右键单击您的选择，然后依次**复制**。
+2. 右键单击您的选择，然后依次**复制**。
 
-3.  将所选内容粘贴到所需的应用程序中。
+3. 将所选内容粘贴到所需的应用程序中。
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>将建模图另存为 XML 纸张规范 (.xps) 文件
 
-1.  上**文件**菜单上，单击**打印**以打开**打印**对话框。
+1. 上**文件**菜单上，单击**打印**以打开**打印**对话框。
 
-2.  在中**名称**列表中，选择**Microsoft XPS Document Writer**，然后单击**确定**。
+2. 在中**名称**列表中，选择**Microsoft XPS Document Writer**，然后单击**确定**。
 
-3.  在中**将该文件作为**对话框中的，保存该文件作为**XPS 文档 (\*.xps)** 文件。
+3. 在中**将该文件作为**对话框中的，保存该文件作为**XPS 文档 (\*.xps)** 文件。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 

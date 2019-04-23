@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076885"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 解决方案中编写代码
   编写 Office 项目代码与编写 Visual Studio 中其他类型的代码在某些方面存在不同。 其中许多差异与 Office 对象模型公开给托管代码的方式相关。 其他差异与 Office 项目的设计相关。
@@ -63,9 +63,9 @@ ms.locfileid: "54864067"
 
  由于 Office PIA 中的类型对应于基于 COM 的对象模型中的类型，因此使用这些类型的方式通常不同于其他托管类型。 例如，调用在 Office 主互操作程序集中具有可选参数的方法的方式取决于你正在项目中使用的编程语言。 有关详细信息，请参阅下列主题：
 
--   [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)。
+- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)。
 
--   [Office 解决方案中的后期绑定](../vsto/late-binding-in-office-solutions.md)。
+- [Office 解决方案中的后期绑定](../vsto/late-binding-in-office-solutions.md)。
 
 ## <a name="program-model-of-office-projects"></a>Office 项目的程序模型
  所有 Office 项目都包括一个或多个为你的代码提供入口点的生成类。 这些类还提供对主机应用程序的对象模型的访问以及对操作窗格和自定义任务窗格等功能的访问。
@@ -99,8 +99,11 @@ ms.locfileid: "54864067"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>与 Visual Basic 程序。Visual C# 在 Office 解决方案中
  你可以通过使用 Visual Basic 或 Visual C# 创建 Office 解决方案。 由于 Microsoft Office 对象模型被设计为与 Microsoft Visual Basic for Applications (VBA) 一起使用，因此 Visual Basic 开发人员可以轻松使用由 Microsoft Office 应用程序公开的对象。 Visual C# 开发人员可以使用与 Visual Basic 开发人员相同的大多数功能，但在某些情况下，他们必须编写附加代码才能使用 Office 对象模型。 Office 开发中的基本编程功能与在 Visual Basic 和 C# 中编写的托管代码之间也有一些差异。
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Visual Basic 和 Visual C# 之间的主要差异
- 下表显示了 Office 开发中 Visual Basic 与 Visual C# 之间的主要差异。
+<!-- markdownlint-enable MD003 MD020 -->
+
+下表显示了 Office 开发中 Visual Basic 与 Visual C# 之间的主要差异。
 
 |功能|描述|Visual Basic 支持|Visual C# 支持|
 |-------------|-----------------|--------------------------|------------------------|

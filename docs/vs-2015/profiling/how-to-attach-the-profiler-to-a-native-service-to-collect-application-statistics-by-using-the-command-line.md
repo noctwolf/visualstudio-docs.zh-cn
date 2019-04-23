@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078598"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：Profiler 附加到本机服务以使用命令行收集应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "59666372"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
     |选项|描述|  
     |------------|-----------------|  
@@ -94,15 +94,15 @@ ms.locfileid: "59666372"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  执行下列操作之一以从目标应用程序中拆离探查器：  
+1. 执行下列操作之一以从目标应用程序中拆离探查器：  
 
-    -   停止服务。  
+    - 停止服务。  
 
          或  
 
-    -   键入 **VSPerfCmd /detach**  
+    - 键入 **VSPerfCmd /detach**  
 
-2.  关闭探查器。 类型：  
+2. 关闭探查器。 类型：  
 
      **VSPerfCmd /shutdown**  
 
