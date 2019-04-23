@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046375"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "58936819"
   
  此演练阐释了以下任务：  
   
--   使用“图形事件列表”  定位问题的潜在根源。  
+- 使用“图形事件列表”  定位问题的潜在根源。  
   
--   使用“图形管道阶段”  窗口检查 `DrawIndexed` Direct3D API 调用的影响。  
+- 使用“图形管道阶段”  窗口检查 `DrawIndexed` Direct3D API 调用的影响。  
   
--   使用“HLSL 调试器”  检查顶点着色器。  
+- 使用“HLSL 调试器”  检查顶点着色器。  
   
--   使用“图形事件调用堆栈”  帮助查找错误 HLSL 常量的源。  
+- 使用“图形事件调用堆栈”  帮助查找错误 HLSL 常量的源。  
   
 ## <a name="scenario"></a>方案  
  当顶点着色器以不正确或意外的方式变换对象顶点的形状时，会出现三维应用中缺少对象的一个常见原因 — 例如，对象可能缩放到很小的尺寸或变形而导致出现在照相机后面而不是前面。  

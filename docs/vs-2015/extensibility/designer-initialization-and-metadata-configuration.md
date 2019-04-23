@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e50fbbc3c834fc33f77f3aecef6b51ef9037ecb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049252"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器初始化和元数据配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58931049"
 ### <a name="customizing-initialization"></a>自定义初始化  
  自定义设计器、 组件或设计器图面，包括：  
   
-1.  修改设计器元数据和有效地更改如何在特定<xref:System.Type>访问属性或转换。  
+1. 修改设计器元数据和有效地更改如何在特定<xref:System.Type>访问属性或转换。  
   
      这通常是通过<xref:System.Drawing.Design.UITypeEditor>或<xref:System.ComponentModel.TypeConverter>机制。  
   
      例如，当<xref:System.Windows.Forms>-基于设计器进行了初始化，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境修改<xref:System.Drawing.Design.UITypeEditor>为<xref:System.Web.UI.WebControls.Image>与设计器使用，以使用资源管理器获取位图而不是文件系统对象。  
   
-2.  将与集成环境，例如，通过订阅事件，或获取项目的配置信息。 可以获取项目的配置信息和订阅事件，通过获取<xref:System.ComponentModel.Design.ITypeResolutionService>接口。  
+2. 将与集成环境，例如，通过订阅事件，或获取项目的配置信息。 可以获取项目的配置信息和订阅事件，通过获取<xref:System.ComponentModel.Design.ITypeResolutionService>接口。  
   
-3.  通过激活相应的用户环境修改**工具箱**类别或通过限制通过应用的实例的设计器的适用性<xref:System.ComponentModel.ToolboxItemFilterAttribute>到设计器的类。  
+3. 通过激活相应的用户环境修改**工具箱**类别或通过限制通过应用的实例的设计器的适用性<xref:System.ComponentModel.ToolboxItemFilterAttribute>到设计器的类。  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>设计器初始化的 vspackage  
  VSPackage 应处理由设计器初始化：  

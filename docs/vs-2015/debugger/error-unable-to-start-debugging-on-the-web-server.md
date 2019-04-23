@@ -28,12 +28,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee62f07bd9fb4626f8e8fb3387e4b80ca2d903d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048757"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59652054"
   
 在许多情况下，此错误是因为 IIS 配置不正确。
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> 检查您的 IIS 配置
+## <a name="vxtbshttpservererrorsthingstocheck"></a> 检查您的 IIS 配置
 
 采取了解决问题，并再重新尝试调试的详细步骤之后, 您可能还需要重置 IIS。 您可以通过打开管理员命令提示符并键入实现`iisreset`，也可以执行此操作在 IIS 管理器。 
 

@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "59000193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047042"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59000193"
   
  下表显示了可以应用于每个五个区域 （Internet、 UntrustedSites、 MyComputer、 LocalIntranet 和 TrustedSites） 的配置选项。  
   
-|Option|注册表设置值|描述|  
+|选项|注册表设置值|描述|  
 |------------|----------------------------|-----------------|  
 |启用信任提示。|`Enabled`|ClickOnce 信任提示，显示，以便最终用户可以授予对 ClickOnce 应用程序的信任。|  
 |限制信任提示。|`AuthenticodeRequired`|如果 ClickOnce 应用程序使用标识的发布服务器的证书进行签名，则仅显示 ClickOnce 信任提示。|  
@@ -56,21 +56,21 @@ ms.locfileid: "59000193"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要使用注册表编辑器中启用 ClickOnce 信任提示  
   
-1.  打开注册表编辑器：  
+1. 打开注册表编辑器：  
   
-    1.  单击“开始”，然后单击“运行”。  
+    1. 单击“开始”，然后单击“运行”。  
   
-    2.  在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
+    2. 在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
-2.  找到以下注册表项：  
+2. 找到以下注册表项：  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果不存在该键，则创建它。  
   
-3.  添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
+3. 添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -82,9 +82,9 @@ ms.locfileid: "59000193"
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>若要以编程方式启用 ClickOnce 信任提示  
   
-1.  在 Visual Studio 中创建 Visual Basic 或 Visual C# 控制台应用程序。  
+1. 在 Visual Studio 中创建 Visual Basic 或 Visual C# 控制台应用程序。  
   
-2.  打开进行编辑的 Program.vb 或 Program.cs 文件并添加下面的代码。  
+2. 打开进行编辑的 Program.vb 或 Program.cs 文件并添加下面的代码。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,28 +108,28 @@ ms.locfileid: "59000193"
     key.Close();  
     ```  
   
-3.  生成并运行应用程序。  
+3. 生成并运行应用程序。  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>限制 ClickOnce 信任提示  
  限制信任提示，以便解决方案必须使用之前提示用户信任决策提供具有已知标识的验证码证书进行签名。  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要限制 ClickOnce 信任提示使用注册表编辑器  
   
-1.  打开注册表编辑器：  
+1. 打开注册表编辑器：  
   
-    1.  单击“开始”，然后单击“运行”。  
+    1. 单击“开始”，然后单击“运行”。  
   
-    2.  在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
+    2. 在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
-2.  找到以下注册表项：  
+2. 找到以下注册表项：  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果不存在该键，则创建它。  
   
-3.  添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
+3. 添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -139,9 +139,9 @@ ms.locfileid: "59000193"
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>若要以编程方式限制 ClickOnce 信任提示  
   
-1.  在 Visual Studio 中创建 Visual Basic 或 Visual C# 控制台应用程序。  
+1. 在 Visual Studio 中创建 Visual Basic 或 Visual C# 控制台应用程序。  
   
-2.  打开进行编辑的 Program.vb 或 Program.cs 文件并添加下面的代码。  
+2. 打开进行编辑的 Program.vb 或 Program.cs 文件并添加下面的代码。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,28 +165,28 @@ ms.locfileid: "59000193"
     key.Close();  
     ```  
   
-3.  生成并运行应用程序。  
+3. 生成并运行应用程序。  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>禁用 ClickOnce 信任提示  
  您可以禁用信任提示，以便最终用户不可以选择要安装不在其安全策略中已受信任的解决方案。  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>若要通过使用注册表编辑器来禁用 ClickOnce 信任提示  
   
-1.  打开注册表编辑器：  
+1. 打开注册表编辑器：  
   
-    1.  单击“开始”，然后单击“运行”。  
+    1. 单击“开始”，然后单击“运行”。  
   
-    2.  在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
+    2. 在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
-2.  找到以下注册表项：  
+2. 找到以下注册表项：  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      如果不存在该键，则创建它。  
   
-3.  添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
+3. 添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|值|  
+    |字符串值子项|“值”|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  
@@ -196,9 +196,9 @@ ms.locfileid: "59000193"
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>若要以编程方式禁用 ClickOnce 信任提示  
   
-1.  在 Visual Studio 中创建 Visual Basic 或 Visual C# 控制台应用程序。  
+1. 在 Visual Studio 中创建 Visual Basic 或 Visual C# 控制台应用程序。  
   
-2.  打开进行编辑的 Program.vb 或 Program.cs 文件并添加下面的代码。  
+2. 打开进行编辑的 Program.vb 或 Program.cs 文件并添加下面的代码。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ ms.locfileid: "59000193"
   
     ```  
   
-3.  生成并运行应用程序。  
+3. 生成并运行应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   

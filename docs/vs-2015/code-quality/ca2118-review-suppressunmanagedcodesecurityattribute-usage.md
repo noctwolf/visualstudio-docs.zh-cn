@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059170"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118:检查 SuppressUnmanagedCodeSecurityAttribute 用法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58933073"
 
  默认安全策略不会向程序集授予非托管的代码权限，除非它执行从本地计算机或者是以下组之一的成员：
 
--   我的计算机的区域代码组
+- 我的计算机的区域代码组
 
--   Microsoft 强名称代码组
+- Microsoft 强名称代码组
 
--   ECMA 强名称代码组
+- ECMA 强名称代码组
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  请仔细查看代码，以确保此属性是绝对必要。 如果你不熟悉托管的代码安全或不了解使用此属性的安全隐患，请在代码中将其删除。 如果该属性是必需的您必须确保调用方不能出于恶意使用你的代码。 如果你的代码没有权限来执行非托管的代码，此属性不起作用，应删除。

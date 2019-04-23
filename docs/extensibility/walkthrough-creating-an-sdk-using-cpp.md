@@ -1,5 +1,5 @@
 ---
-title: 演练：使用 c + + 创建 SDK |Microsoft Docs
+title: 演练：创建 SDK 使用C++|Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
@@ -8,70 +8,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da9be257587936088ee5f91c5e1723d71be11965
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049069"
 ---
-# <a name="walkthrough-create-an-sdk-using-c"></a>演练：创建使用 c + + SDK
-本演练演示如何创建一个本机 c + + 的数学库 SDK，包 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它创建的应用程序。 本演练分为以下步骤：
+# <a name="walkthrough-create-an-sdk-using-c"></a>演练：使用 SDK 创建C++
+本演练演示如何创建一个本机C++数学库 SDK，打包 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它创建的应用程序。 本演练分为以下步骤：
 
--   [若要创建的本机和 Windows 运行时库](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [若要创建的本机和 Windows 运行时库](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
--   [若要创建 NativeMathVSIX 扩展项目](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
+- [若要创建 NativeMathVSIX 扩展项目](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
--   [创建示例应用程序使用类库](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
+- [创建示例应用程序使用类库](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>系统必备
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-##  <a name="createClassLibrary"></a> 若要创建的本机和 Windows 运行时库
+## <a name="createClassLibrary"></a> 若要创建的本机和 Windows 运行时库
 
-1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2.  在模板列表中，展开**Visual c + +** > **Windows Universal**，然后选择**DLL （Windows 通用应用）** 模板。 在中**名称**框中，指定`NativeMath`，然后选择**确定**按钮。
+2. 在模板列表中，展开**可视化C++**   >  **Windows Universal**，然后选择**DLL （Windows 通用应用）** 模板。 在中**名称**框中，指定`NativeMath`，然后选择**确定**按钮。
 
-3.  更新*NativeMath.h*以匹配下面的代码。
+3. 更新*NativeMath.h*以匹配下面的代码。
 
      [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
 
-4.  更新*NativeMath.cpp*以匹配此代码：
+4. 更新*NativeMath.cpp*以匹配此代码：
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5.  在**解决方案资源管理器**，打开快捷菜单**解决方案 NativeMath'**，然后选择**添加** > **新项目**.
+5. 在**解决方案资源管理器**，打开快捷菜单**解决方案 NativeMath'**，然后选择**添加** > **新项目**.
 
-6.  在模板列表中，展开**Visual c + +**，然后选择**Windows 运行时组件**模板。 在中**名称**框中，指定`NativeMathWRT`，然后选择**确定**按钮。
+6. 在模板列表中，展开**可视化C++** ，然后选择**Windows 运行时组件**模板。 在中**名称**框中，指定`NativeMathWRT`，然后选择**确定**按钮。
 
-7.  更新*Class1.h*以匹配此代码：
+7. 更新*Class1.h*以匹配此代码：
 
      [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
 
-8.  更新*Class1.cpp*以匹配此代码：
+8. 更新*Class1.cpp*以匹配此代码：
 
      [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
 
 9. 在菜单栏上，依次选择“生成” > “生成解决方案”。
 
-##  <a name="createVSIX"></a> 若要创建 NativeMathVSIX 扩展项目
+## <a name="createVSIX"></a> 若要创建 NativeMathVSIX 扩展项目
 
-1.  在**解决方案资源管理器**，打开快捷菜单**解决方案 NativeMath'**，然后选择**添加** > **新项目**.
+1. 在**解决方案资源管理器**，打开快捷菜单**解决方案 NativeMath'**，然后选择**添加** > **新项目**.
 
-2.  在模板列表中，展开**Visual C#** > **扩展性**，然后选择**VSIX 项目**。 在中**名称**框中，指定**NativeMathVSIX**，然后选择**确定**按钮。
+2. 在模板列表中，展开**Visual C#** > **扩展性**，然后选择**VSIX 项目**。 在中**名称**框中，指定**NativeMathVSIX**，然后选择**确定**按钮。
 
-3.  在中**解决方案资源管理器**，打开快捷菜单**source.extension.vsixmanifest**，然后选择**查看代码**。
+3. 在中**解决方案资源管理器**，打开快捷菜单**source.extension.vsixmanifest**，然后选择**查看代码**。
 
-4.  使用以下 XML 替换现有的 XML。
+4. 使用以下 XML 替换现有的 XML。
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5.  在中**解决方案资源管理器**，打开快捷菜单**NativeMathVSIX**项目，，然后选择**添加** > **新项**.
+5. 在中**解决方案资源管理器**，打开快捷菜单**NativeMathVSIX**项目，，然后选择**添加** > **新项**.
 
-6.  在列表中**Visual C# 项**，展开**数据**，然后选择**XML 文件**。 在中**名称**框中，指定`SDKManifest.xml`，然后选择**确定**按钮。
+6. 在列表中**Visual C# 项**，展开**数据**，然后选择**XML 文件**。 在中**名称**框中，指定`SDKManifest.xml`，然后选择**确定**按钮。
 
-7.  使用此 XML 文件的内容替换为：
+7. 使用此 XML 文件的内容替换为：
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
@@ -137,11 +137,11 @@ ms.locfileid: "58325063"
 
 18. 选择**安装**按钮，等待安装完成，并打开 Visual Studio。
 
-##  <a name="createSample"></a> 创建示例应用程序使用类库
+## <a name="createSample"></a> 创建示例应用程序使用类库
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2. 在模板列表中，展开**Visual c + +** > **Windows Universal** ，然后选择**空白应用**。 在中**名称**框中，指定**NativeMathSDKSample**，然后选择**确定**按钮。
+2. 在模板列表中，展开**可视化C++**   >  **Windows Universal** ，然后选择**空白应用**。 在中**名称**框中，指定**NativeMathSDKSample**，然后选择**确定**按钮。
 
 3. 在中**解决方案资源管理器**，打开快捷菜单**NativeMathSDKSample**项目，，然后选择**添加** > **引用**.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053190"
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 
@@ -152,7 +152,7 @@ abXefYj
 
 #### <a name="content-types"></a>内容类型
 
-内容类型是内容的用于定义不同类型的机制。 内容类型可以是文件类型，例如"text"、"代码"或"binary"或"xml"、"vb"或"C#"等技术类型。 例如，单词"using"是关键字在 C# 和 Visual Basic 中，但不是在其他编程语言。 因此，此关键字的定义会限制为"C#"和"vb"内容类型。
+内容类型是内容的用于定义不同类型的机制。 内容类型可以是文件类型，例如"text"、"代码"或"binary"或"xml"、"vb"或"c#"等技术类型。 例如，单词"using"是关键字在 C# 和 Visual Basic 中，但不是在其他编程语言。 因此，此关键字的定义会限制为"c#"和"vb"内容类型。
 
 内容类型用作筛选器修饰和编辑器的其他元素。 每个内容类型定义多个编辑器功能和扩展点。 例如，文本着色是不同的纯文本文件、 XML 文件和 Visual Basic 源代码文件。 创建，并且可以更改文本缓冲区的内容类型时，文本缓冲区通常会被分配的内容类型。
 
@@ -202,19 +202,19 @@ abXefYj
 
 编辑器的功能设计，以便独立于其实现的功能的定义。 编辑器包括以下功能：
 
--   标记和分类器
+- 标记和分类器
 
--   修饰
+- 修饰
 
--   投影
+- 投影
 
--   大纲显示
+- 大纲显示
 
--   鼠标和键绑定
+- 鼠标和键绑定
 
--   操作和基元
+- 操作和基元
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>标记和分类器
 
@@ -262,7 +262,7 @@ C# 分类器可能会标记为一个注释，整个范围并将英语语言的�
 
 弹出修饰是在文本视图，例如，工具提示上方的一个小窗口中显示的图形。
 
-###  <a name="projection"></a> 投影
+### <a name="projection"></a> 投影
 
 投影是一种构造一种不同的文本缓冲区的实际存储文本，但改为结合了其他文本缓冲区中的文本的方法。 例如，可以使用投影缓冲区，来连接其他两个缓冲区中的文本，并显示结果，如同它是一个缓冲区中或隐藏一个缓冲区中的文本部分。 投影缓冲区可以充当源缓冲区到另一个投影缓冲区。 可以构造一组缓冲区通过投影相关的顺序重新进行排列以多种不同方式的文本。 (此类集是也称为*缓冲区关系图*。)Visual Studio 文本大纲显示功能实现通过使用投影缓冲区来隐藏折叠的文本，并且 ASP.NET 页的 Visual Studio 编辑器使用投影来支持嵌入的 Visual Basic 和 C# 等语言。
 

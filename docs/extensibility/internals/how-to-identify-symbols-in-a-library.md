@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b74eaab3edb205b5218cad5a61556f4803614d94
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060353"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>如何：确定库中的符号
 符号浏览工具显示符号的分层的视图。 符号代表命名空间、 对象、 类、 类成员和其他语言元素。
@@ -52,7 +52,7 @@ N1
 
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>若要获取规范和演示文稿窗体的信息
 
-1.  实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 方法。
+1. 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 方法。
 
      对象管理器调用此方法来获取符号的规范路径中包含的节点列表。
 
@@ -75,7 +75,7 @@ N1
 
     ```
 
-2.  实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 方法。
+2. 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 方法。
 
      对象管理器调用此方法来获取符号的演示文稿路径中包含的节点列表。
 

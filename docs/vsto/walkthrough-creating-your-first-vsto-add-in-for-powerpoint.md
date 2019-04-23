@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a3a225e9ba6ae55ed5c23c294929887af79f9dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 48b69b90c8ede6bfba4d388f547742de6d92cd7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048406"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>演练：为 PowerPoint 中创建第一个 VSTO 外接程序
   本演练演示如何为 Microsoft Office PowerPoint 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的演示文稿无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -42,36 +42,36 @@ ms.locfileid: "56604882"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   PowerPoint
+- PowerPoint
 
 ## <a name="create-the-project"></a>创建项目
 
 ### <a name="to-create-a-new-project"></a>创建新项目
 
-1.  启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。
+2. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。
 
-3.  在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
+3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
-4.  在展开的 **“Office/SharePoint”** 节点下方，选择 **“Office 外接程序”** 节点。
+4. 在展开的 **“Office/SharePoint”** 节点下方，选择 **“Office 外接程序”** 节点。
 
-5.  在项目模板列表中，选择一个 PowerPoint VSTO 外接程序项目。
+5. 在项目模板列表中，选择一个 PowerPoint VSTO 外接程序项目。
 
-6.  在中**名称**框中，键入**FirstPowerPointAddIn**。
+6. 在中**名称**框中，键入**FirstPowerPointAddIn**。
 
-7.  单击 **“确定”**。
+7. 单击 **“确定”**。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建**FirstPowerPointAddIn**项目，然后打开**ThisAddIn**编辑器中的代码文件。
 
 ## <a name="write-code-that-adds-text-to-each-new-slide"></a>编写将文本添加到每张新建幻灯片的代码
  接下来，将代码添加到 ThisAddIn 代码文件。 新代码将使用 PowerPoint 对象模型来将文本框添加到每张新建幻灯片。 默认情况下，ThisAddIn 代码文件包含以下生成的代码：
 
--   `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 PowerPoint 对象模型的访问权限。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 类的其余部分是在隐藏代码文件中定义的，不应修改该代码文件。
+- `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 PowerPoint 对象模型的访问权限。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 类的其余部分是在隐藏代码文件中定义的，不应修改该代码文件。
 
--   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 PowerPoint 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载 VSTO 外接程序时清理其使用的资源。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
+- `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 PowerPoint 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载 VSTO 外接程序时清理其使用的资源。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
 
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>若要将文本框添加到每张新建幻灯片中
 
@@ -88,46 +88,46 @@ ms.locfileid: "56604882"
 
    若要修改每张新建幻灯片，之前的代码示例需使用以下对象：
 
--   `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.PowerPoint.Application> 对象，该对象表示 PowerPoint 的当前实例。
+- `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.PowerPoint.Application> 对象，该对象表示 PowerPoint 的当前实例。
 
--   `Sld`的事件处理程序的参数[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件。 `Sld` 参数是一个 <xref:Microsoft.Office.Interop.PowerPoint.Slide> 对象，用于表示新幻灯片。 有关详细信息，请参阅[PowerPoint 解决方案](../vsto/powerpoint-solutions.md)。
+- `Sld`的事件处理程序的参数[Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14))事件。 `Sld` 参数是一个 <xref:Microsoft.Office.Interop.PowerPoint.Slide> 对象，用于表示新幻灯片。 有关详细信息，请参阅[PowerPoint 解决方案](../vsto/powerpoint-solutions.md)。
 
 ## <a name="test-the-project"></a>测试项目
  当生成和运行项目时，请验证添加到演示文稿的新幻灯片中是否出现文本框。
 
 ### <a name="to-test-the-project"></a>测试项目
 
-1.  按 **F5** 生成并运行项目。
+1. 按 **F5** 生成并运行项目。
 
      生成项目时，会将代码编译成一个程序集，此程序集放置在项目的生成输出文件夹中。 Visual Studio 还会创建一组注册表项，通过这些注册表项，PowerPoint 能够发现和加载 VSTO 外接程序，Visual Studio 还将开发计算机上的安全设置配置为允许 VSTO 外接程序运行。 有关详细信息，请参阅[生成 Office 解决方案](../vsto/building-office-solutions.md)。
 
-2.  在 PowerPoint 中，将新的幻灯片添加到活动演示文稿。
+2. 在 PowerPoint 中，将新的幻灯片添加到活动演示文稿。
 
-3.  验证下面的文本是否添加到幻灯片顶部的新建文本框中。
+3. 验证下面的文本是否添加到幻灯片顶部的新建文本框中。
 
      **This text was added by using code.**
 
-4.  关闭 PowerPoint。
+4. 关闭 PowerPoint。
 
 ## <a name="clean-up-the-project"></a>清理项目
  完成项目开发后，请从开发计算机上删除 VSTO 外接程序程序集、注册表项和安全设置。 否则，每次在开发计算机上打开 PowerPoint 时 VSTO 外接程序都会运行。
 
 ### <a name="to-clean-up-your-project"></a>清理项目
 
-1.  在 Visual Studio 中，在 **“生成”** 菜单上，单击 **“清理解决方案”**。
+1. 在 Visual Studio 中，在 **“生成”** 菜单上，单击 **“清理解决方案”**。
 
 ## <a name="next-steps"></a>后续步骤
  既然已经创建了一个基本的 PowerPoint VSTO 外接程序，就可以从下面这些主题中了解有关如何开发 VSTO 外接程序的详细信息：
 
--   可在 PowerPoint 的 VSTO 外接程序中执行的常规编程任务。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
+- 可在 PowerPoint 的 VSTO 外接程序中执行的常规编程任务。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
 
--   使用 PowerPoint 对象模型。 有关详细信息，请参阅[PowerPoint 解决方案](../vsto/powerpoint-solutions.md)。
+- 使用 PowerPoint 对象模型。 有关详细信息，请参阅[PowerPoint 解决方案](../vsto/powerpoint-solutions.md)。
 
--   自定义 PowerPoint 的 UI，例如通过将自定义选项卡添加到功能区或创建你自己的自定义任务窗格。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。
+- 自定义 PowerPoint 的 UI，例如通过将自定义选项卡添加到功能区或创建你自己的自定义任务窗格。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。
 
--   生成和调试 PowerPoint VSTO 外接程序。 有关详细信息，请参阅[生成 Office 解决方案](../vsto/building-office-solutions.md)。
+- 生成和调试 PowerPoint VSTO 外接程序。 有关详细信息，请参阅[生成 Office 解决方案](../vsto/building-office-solutions.md)。
 
--   部署 PowerPoint VSTO 外接程序。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+- 部署 PowerPoint VSTO 外接程序。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
 ## <a name="see-also"></a>请参阅
 - [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)

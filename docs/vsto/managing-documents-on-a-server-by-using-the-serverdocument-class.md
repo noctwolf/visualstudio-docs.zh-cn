@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 83f23bb04c9080b75d2a8e93252d981c0833d69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630075"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045482"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 类管理服务器上的文档
   可以使用`ServerDocument`类中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]来管理文档级自定义的几个方面，即使未安装 Microsoft Office Word 和 Microsoft Office Excel。 您可以执行以下任务：
@@ -40,7 +40,7 @@ ms.locfileid: "56630075"
 > [!NOTE]
 >  如果已使用的旧应用程序`ServerDocument`类中`Visual Studio Tools for Office`系统 (版本 3.0 运行时)，则`Visual Studio Tools for Office`必须运行该应用程序的计算机上安装系统 （版本 3.0 运行时）。 `Visual Studio 2010 Tools for Office runtime`无法运行这些应用程序。
 
-##  <a name="CachedData"></a> 使用文档中的缓存数据
+## <a name="CachedData"></a> 使用文档中的缓存数据
  `ServerDocument`类提供了可用于使用自定义文档中的数据缓存的成员。 有关缓存数据的详细信息，请参阅[缓存数据](../vsto/caching-data.md)并[访问服务器上的文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)。
 
  下表列出了可用于使用缓存数据的成员。
@@ -50,7 +50,7 @@ ms.locfileid: "56630075"
 |若要确定文档是否具有数据缓存。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> 方法。|
 |若要访问在文档中缓存的数据。<br /><br /> 有关详细信息，请参阅[访问服务器上的文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 属性。|
 
-##  <a name="CustomizationInfo"></a> 管理文档自定义项
+## <a name="CustomizationInfo"></a> 管理文档自定义项
  可以使用的成员`ServerDocument`类来管理与文档相关联的自定义程序集。 例如，你可以以编程方式自定义项从文档中删除，以便文档不再是一个自定义的一部分。
 
  下表列出了可用于管理自定义程序集的成员。

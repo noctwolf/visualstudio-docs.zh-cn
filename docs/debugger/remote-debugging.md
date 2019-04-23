@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047577"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -38,7 +38,7 @@ ms.locfileid: "57526433"
 |Azure 应用服务|[快照调试器](../debugger/debug-live-azure-applications.md)或[远程调试 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)|
 |Azure VM|[远程调试 Azure 上的 ASP.NET](../debugger/remote-debugging-azure.md)|
 |Azure Service Fabric|[调试 Azure Service Fabric 应用程序](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)|
-|ASP.NET|[远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)或[远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|ASP.NET|[远程调试 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) 或[远程调试 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |C# 或 Visual Basic|[远程调试 C# 或 Visual Basic 项目](../debugger/remote-debugging-csharp.md)|
 |C++|[远程调试 C++ 项目](../debugger/remote-debugging-cpp.md)|
 |通用 Windows 应用 (UWP)|[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)或[调试安装的应用包](../debugger/debug-installed-app-package.md)|
@@ -88,21 +88,21 @@ ms.locfileid: "57526433"
 ### <a name="configure_msvsmon"></a>配置远程调试器
 首次启动后，你可以更改远程调试器的部分配置。
 
--   如果你需要为连接到远程调试器，请选择其他用户添加权限**工具 > 权限**。 你必须拥有管理员特权才能授予或拒绝权限。
+- 如果你需要为连接到远程调试器，请选择其他用户添加权限**工具 > 权限**。 你必须拥有管理员特权才能授予或拒绝权限。
 
      > [!IMPORTANT]
      > 您可以从 Visual Studio 计算机所使用的用户帐户运行远程调试器在不同的用户帐户下，但必须将其他用户帐户添加到远程调试器的权限。
 
      或者，可以从命令行启动远程调试器 **/allow\<用户名 >** 参数： **msvsmon /allow \< username@computer>**。
 
--   如果你需要更改身份验证模式或端口号，或指定的远程工具的超时值： 选择**工具 > 选项**。
+- 如果你需要更改身份验证模式或端口号，或指定的远程工具的超时值： 选择**工具 > 选项**。
 
      默认情况下使用的端口号的列表，请参阅[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。
 
      > [!WARNING]
      >  可以选择在“无身份验证”模式下运行远程工具，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
 
-##  <a name="bkmk_configureService"></a> （可选）配置远程调试器作为服务
+## <a name="bkmk_configureService"></a> （可选）配置远程调试器作为服务
 用于调试 ASP.NET 和其他服务器环境中，您必须以管理员身份运行远程调试器或时，如果希望始终运行，作为服务运行远程调试器。
 
  如果你想要配置远程调试器作为服务，请按照下列步骤。

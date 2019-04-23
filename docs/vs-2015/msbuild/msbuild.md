@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56c7e5a5a02f2ef5c114665d358e86d768a24a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050395"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "54756566"
   
 - 你想要修改生成系统。 例如，你可能想要实现以下操作：  
   
-  -   在文件到达编译器之前先进行预处理。  
+  - 在文件到达编译器之前先进行预处理。  
   
-  -   将生成输出复制到其他位置。  
+  - 将生成输出复制到其他位置。  
   
-  -   从生成输出创建压缩文件。  
+  - 从生成输出创建压缩文件。  
   
-  -   执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。  
+  - 执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。  
   
   你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
   
@@ -55,25 +55,25 @@ ms.locfileid: "54756566"
   
  **在本主题中**  
   
--   [在命令提示符处使用 MSBuild](#BKMK_CommandPrompt)  
+- [在命令提示符处使用 MSBuild](#BKMK_CommandPrompt)  
   
--   [项目文件](#BKMK_ProjectFile)  
+- [项目文件](#BKMK_ProjectFile)  
   
-    -   [属性](#BKMK_Properties)  
+    - [属性](#BKMK_Properties)  
   
-    -   [项](#BKMK_Items)  
+    - [项](#BKMK_Items)  
   
-    -   [任务](#BKMK_Tasks)  
+    - [任务](#BKMK_Tasks)  
   
-    -   [目标](#BKMK_Targets)  
+    - [目标](#BKMK_Targets)  
   
--   [生成日志](#BKMK_BuildLogs)  
+- [生成日志](#BKMK_BuildLogs)  
   
--   [在 Visual Studio 中使用 MSBuild](#BKMK_VisualStudio)  
+- [在 Visual Studio 中使用 MSBuild](#BKMK_VisualStudio)  
   
--   [多定向](#BKMK_Multitargeting)  
+- [多定向](#BKMK_Multitargeting)  
   
-##  <a name="BKMK_CommandPrompt"></a>在命令提示符处使用 MSBuild  
+## <a name="BKMK_CommandPrompt"></a>在命令提示符处使用 MSBuild  
  若要在命令提示符处运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，请将项目文件随相应的命令行选项一起传递到 MSBuild.exe。 命令行选项允许你设置属性、执行特定的目标，以及设置可控制生成过程的其他选项。 例如，使用以下命令行语法生成文件 `MyProj.proj`，并将 `Configuration` 属性设置为 `Debug`。  
   
 ```  
@@ -85,12 +85,12 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  在下载项目之前，请确定代码的可信度。  
   
-##  <a name="BKMK_ProjectFile"></a>项目文件  
+## <a name="BKMK_ProjectFile"></a>项目文件  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用基于 XML 的项目文件格式，既简单又可扩展。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式允许开发者描述要生成的项，以及如何针对不同的操作系统和配置生成这些项。 另外，这种项目文件格式还允许开发人员创作可重用的生成规则，这些规则可以包含到不同的文件中，以便可以在产品内的不同项目之间一致地执行生成。  
   
- 以下各节介绍了 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参阅[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
+ 以下各节介绍了 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参见[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
   
-###  <a name="BKMK_Properties"></a>属性  
+### <a name="BKMK_Properties"></a>属性  
  属性表示可用于配置生成的键/值对。 属性的声明方式是：创建一个与属性同名的元素，将其指定为 [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) 元素的子元素。 例如，下面的代码将创建一个名为 `BuildDir` 的属性，其值为 `Build`。  
   
 ```  
@@ -109,7 +109,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  有关属性的详细信息，请参阅 [MSBuild 属性](msbuild-properties1.md)。  
   
-###  <a name="BKMK_Items"></a>项  
+### <a name="BKMK_Items"></a>项  
  项是生成系统的输入，通常表示文件。 将根据用户定义的项名称，将项编组到各种项类型中。 这些项类型可以用作任务的参数，任务使用各个项来执行生成过程的步骤。  
   
  项目文件中项的声明方法是：通过创建一个与项类型同名的元素，并将其指定为 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素的子元素。 例如，下面的代码将创建一个名为 `Compile` 的项类型，其中包括两个文件。  
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  可以使用通配符声明项，并且对于更高级的生成方案，项可以包含其他元数据。 有关项的详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
   
-###  <a name="BKMK_Tasks"></a>任务  
+### <a name="BKMK_Tasks"></a>任务  
  任务是 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目用于执行生成操作的可执行代码单元。 例如，任务可能编译输入文件或运行外部工具。 任务可以重用，并且可由不同项目中的不同开发人员共享。  
   
  任务的执行逻辑在托管代码中编写，并使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素映射到 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。 你可以通过创作一个实现 <xref:Microsoft.Build.Framework.ITask> 接口的托管类型来编写自己的任务。 有关如何编写任务的详细信息，请参阅[任务写入](../msbuild/task-writing.md)。  
@@ -151,7 +151,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
   
-###  <a name="BKMK_Targets"></a>目标  
+### <a name="BKMK_Targets"></a>目标  
  目标按特定的顺序将任务组合到一起，并将项目文件的各个部分公开为生成过程的入口点。 目标通常分组到各个逻辑部分中，以便提高可读性并实现扩展。 通过将生成步骤拆分为目标，你可以从其他目标中调用生成过程的一个部分，而不必将那部分代码复制到每个目标中。 例如，如果生成过程的多个入口点需要生成引用，你可以创建一个生成引用的目标，然后从所要求的每个入口点运行此目标。  
   
  目标是使用 [Target](../msbuild/target-element-msbuild.md) 元素在项目文件中声明的。 例如，以下代码将创建一个名为 `Compile` 的目标，该目标随后将调用具有前面示例中声明的项列表的 [Csc](../msbuild/csc-task.md) 任务。  
@@ -164,15 +164,15 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  在更高级的方案中，目标可用于描述彼此之间的关系并执行依赖性分析，这样，如果目标是最新的，则可以跳过生成过程的整个部分。 有关目标的更多信息，请参阅[目标](../msbuild/msbuild-targets.md)。  
   
-##  <a name="BKMK_BuildLogs"></a>生成日志  
+## <a name="BKMK_BuildLogs"></a>生成日志  
  你可以将生成错误、警告和消息记录到控制台或其他输出设备。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)和 [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md)。  
   
-##  <a name="BKMK_VisualStudio"></a>在 Visual Studio 中使用 MSBuild  
+## <a name="BKMK_VisualStudio"></a>在 Visual Studio 中使用 MSBuild  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式来存储有关托管项目的生成信息。 通过使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 接口添加或更改的项目设置将反映在为每个项目生成的 .*proj 文件中。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用一个已承载的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 实例来生成托管项目。 这意味着可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中或在命令提示符处生成托管项目（即使未安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]），并且结果将完全相同。  
   
  有关如何在 Visual Studio 中使用 MSBuild 的教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
-##  <a name="BKMK_Multitargeting"></a>多定向  
+## <a name="BKMK_Multitargeting"></a>多定向  
  通过 Visual Studio，你可以将应用程序编译为在若干 .NET Framework 版本的任意一个上运行。 例如，可以将同一个应用程序编译为既能在 32 位平台的 .NET Framework 2.0 上运行，也能在 64 位平台的 .NET Framework 4.5 上运行。 这种使用多个框架作为编译目标的能力称为“多目标功能”。  
   
  以下是多目标功能的一些优点：  
@@ -191,7 +191,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>相关主题  
   
-|Title|说明​​|  
+|Title|描述|  
 |-----------|-----------------|  
 |[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|  
 |[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio IDE 的情况下编写、操作和调试 MSBuild 项目。|  

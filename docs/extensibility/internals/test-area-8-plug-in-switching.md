@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047875"
 ---
 # <a name="test-area-8-plug-in-switching"></a>测试区域 8：插件切换
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 具有用户界面 (UI) 若要更改当前源代码管理插件。 此测试区域提供用于选择其要使用的解决方案源代码管理插件的过程的测试用例。
@@ -24,9 +24,9 @@ ms.locfileid: "59659496"
 ## <a name="command-menu-access"></a>命令菜单访问
  以下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]测试用例中使用集成的开发环境菜单路径。
 
--   当前源代码管理插件：**工具** -> **选项** -> **源代码管理** -> **插件选择**。
+- 当前源代码管理插件：**工具** -> **选项** -> **源代码管理** -> **插件选择**。
 
--   更改源控制绑定：**文件** -> **源代码管理** -> **更改源代码管理**...
+- 更改源控制绑定：**文件** -> **源代码管理** -> **更改源代码管理**...
 
 ## <a name="common-expected-behavior"></a>常见的预期的行为
  更改源代码管理插件的一种解决方案是可能无需退出 Visual Studio 或重新加载解决方案。 此外，当前源代码管理插件自动更改为解决方案加载该解决方案时所使用的一个。

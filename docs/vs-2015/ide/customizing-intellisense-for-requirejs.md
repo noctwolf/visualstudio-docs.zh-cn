@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049862"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>为 RequireJS 自定义 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "54770310"
   
  本主题描述了如何执行以下操作：  
   
--   在 ASP.NET 项目中自定义 RequireJS  
+- 在 ASP.NET 项目中自定义 RequireJS  
   
--   在 JSProj 项目中自定义用于生成 Apache Cordova 应用、Windows 应用商店应用和 LightSwitch HTML 应用的 RequireJS  
+- 在 JSProj 项目中自定义用于生成 Apache Cordova 应用、Windows 应用商店应用和 LightSwitch HTML 应用的 RequireJS  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>在 ASP.NET 项目中自定义 RequireJS  
  你的当前 JavaScript 文件引用名为 require.js 的文件时，将自动启用对 RequireJS 的支持（有关详细信息，请参阅 [JavaScript IntelliSense](../ide/javascript-intellisense.md) 中的“确定 IntelliSense 上下文”部分）。 在 ASP.NET 项目中，引用 require.js 通常通过使用 _references.js 文件中的 /// \<reference/> 指令来完成。  

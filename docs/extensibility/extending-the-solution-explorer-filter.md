@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260fbaa15f7880e604985fca50e8d99ac0e0fd39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047315"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展**解决方案资源管理器**筛选功能，以显示或隐藏不同的文件。 例如，可以创建筛选器，显示仅 C# 类工厂中的文件**解决方案资源管理器**，如本演练中所示。
@@ -26,13 +26,13 @@ ms.locfileid: "56683098"
 
 ### <a name="create-a-visual-studio-package-project"></a>创建 Visual Studio 包项目
 
-1.  创建一个名为的 VSIX 项目`FileFilter`。 添加一个名为的自定义命令项模板**FileFilter**。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 创建一个名为的 VSIX 项目`FileFilter`。 添加一个名为的自定义命令项模板**FileFilter**。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2.  添加对的引用`System.ComponentModel.Composition`和`Microsoft.VisualStudio.Utilities`。
+2. 添加对的引用`System.ComponentModel.Composition`和`Microsoft.VisualStudio.Utilities`。
 
-3.  使显示在该菜单命令**解决方案资源管理器**工具栏。 打开*FileFilterPackage.vsct*文件。
+3. 使显示在该菜单命令**解决方案资源管理器**工具栏。 打开*FileFilterPackage.vsct*文件。
 
-4.  更改`<Button>`块所示：
+4. 更改`<Button>`块所示：
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,28 +46,28 @@ ms.locfileid: "56683098"
 
 ### <a name="update-the-manifest-file"></a>更新清单文件
 
-1.  在中*source.extension.vsixmanifest*文件中，添加为 MEF 组件的资产。
+1. 在中*source.extension.vsixmanifest*文件中，添加为 MEF 组件的资产。
 
-2.  上**资产**选项卡上，选择**新建**按钮。
+2. 上**资产**选项卡上，选择**新建**按钮。
 
-3.  在中**类型**字段中，选择**Microsoft.VisualStudio.MefComponent**。
+3. 在中**类型**字段中，选择**Microsoft.VisualStudio.MefComponent**。
 
-4.  在中**源**字段中，选择**当前解决方案中的项目**。
+4. 在中**源**字段中，选择**当前解决方案中的项目**。
 
-5.  在中**项目**字段中，选择**FileFilter**，然后选择**确定**按钮。
+5. 在中**项目**字段中，选择**FileFilter**，然后选择**确定**按钮。
 
 ### <a name="add-the-filter-code"></a>添加筛选器代码
 
-1.  添加到某些 Guid *FileFilterPackageGuids.cs*文件：
+1. 添加到某些 Guid *FileFilterPackageGuids.cs*文件：
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2.  将类文件添加到名为 FileFilter 项目*FileNameFilter.cs*。
+2. 将类文件添加到名为 FileFilter 项目*FileNameFilter.cs*。
 
-3.  空命名空间和空类替换为下面的代码。
+3. 空命名空间和空类替换为下面的代码。
 
      `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)`方法采用集合，其中包含解决方案的根目录 (`rootItems`)，并返回要在筛选器中包含的项集合。
 
@@ -158,7 +158,7 @@ ms.locfileid: "56683098"
 
     ```
 
-4.  在中*FileFilter.cs*、 删除命令放置和处理从 FileFilter 构造函数的代码。 结果应如下所示：
+4. 在中*FileFilter.cs*、 删除命令放置和处理从 FileFilter 构造函数的代码。 结果应如下所示：
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +174,7 @@ ms.locfileid: "56683098"
 
      删除`ShowMessageBox()`也方法。
 
-5.  在中*FileFilterPackage.cs*中的代码替换为`Initialize()`使用以下方法：
+5. 在中*FileFilterPackage.cs*中的代码替换为`Initialize()`使用以下方法：
 
     ```csharp
     protected override void Initialize()
@@ -186,10 +186,10 @@ ms.locfileid: "56683098"
 
 ### <a name="test-your-code"></a>测试代码
 
-1.  生成并运行该项目。 将出现 Visual Studio 的第二个实例。 这称为实验实例。
+1. 生成并运行该项目。 将出现 Visual Studio 的第二个实例。 这称为实验实例。
 
-2.  在 Visual Studio 的实验实例中，打开一个 C# 项目。
+2. 在 Visual Studio 的实验实例中，打开一个 C# 项目。
 
-3.  添加上查找按钮**解决方案资源管理器**工具栏。 它应该是左侧起的第四个按钮。
+3. 添加上查找按钮**解决方案资源管理器**工具栏。 它应该是左侧起的第四个按钮。
 
-4.  单击按钮时，所有文件应都筛选掉，应会看到**已从视图都筛选所有项。** 在中**解决方案资源管理器**。
+4. 单击按钮时，所有文件应都筛选掉，应会看到**已从视图都筛选所有项。** 在中**解决方案资源管理器**。

@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662603"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045637"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:检查未使用的参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Visual Studio 的最新文档，请参阅[CA1801:检查未使用的参数](https
 ## <a name="cause"></a>原因  
  方法签名包含一个没有在方法体中使用的参数。 此规则不检查以下方法：  
   
--   由委托所引用的方法。  
+- 由委托所引用的方法。  
   
--   用作事件处理程序方法。  
+- 用作事件处理程序方法。  
   
--   方法声明为具有`abstract`(`MustOverride`在 Visual Basic 中) 修饰符。  
+- 方法声明为具有`abstract`(`MustOverride`在 Visual Basic 中) 修饰符。  
   
--   方法声明为具有`virtual`(`Overridable`在 Visual Basic 中) 修饰符。  
+- 方法声明为具有`virtual`(`Overridable`在 Visual Basic 中) 修饰符。  
   
--   方法声明为具有`override`(`Overrides`在 Visual Basic 中) 修饰符。  
+- 方法声明为具有`override`(`Overrides`在 Visual Basic 中) 修饰符。  
   
--   方法声明为具有`extern`(`Declare`在 Visual Basic 中的语句) 修饰符。  
+- 方法声明为具有`extern`(`Declare`在 Visual Basic 中的语句) 修饰符。  
   
 ## <a name="rule-description"></a>规则说明  
  查看不用于方法体中请确保没有正确性存在应该对其进行访问的非虚拟方法中的参数。 未使用的参数会产生维护和性能成本。  

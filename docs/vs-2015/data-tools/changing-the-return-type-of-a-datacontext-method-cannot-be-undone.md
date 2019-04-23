@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba574854424eac14898c923701f7d8f4c1f81347
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d3b94b70db49903e41d26ac0f1382eaa2826e31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059740"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>对 DataContext 方法的返回类型的更改操作不能撤消
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "59648908"
   
 ### <a name="to-change-the-return-type-of-a-datacontext"></a>更改 DataColumn 的返回类型  
   
--   单击 **“是”**。  
+- 单击 **“是”**。  
   
 ### <a name="to-exit-the-message-box-and-leave-the-return-type-unchanged"></a>退出消息框，不更改返回类型  
   
--   单击“否” 。  
+- 单击“否” 。  
   
 ### <a name="to-revert-to-the-original-return-type-after-changing-the-return-type"></a>在更改返回类型后恢复为原始返回类型  
   
-1.  在 <xref:System.Data.Linq.DataContext>上选择 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法，然后删除它。  
+1. 在 <xref:System.Data.Linq.DataContext>上选择 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法，然后删除它。  
   
-2.  在“服务器资源管理器/数据库资源管理器”中找到该项，并将其拖动到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 上。  
+2. 在“服务器资源管理器/数据库资源管理器”中找到该项，并将其拖动到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 上。  
   
      这样做将创建具有原始默认返回类型的 <xref:System.Data.Linq.DataContext> 方法。  
   

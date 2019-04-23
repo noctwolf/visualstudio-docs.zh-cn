@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050006"
 ---
 # <a name="security-of-text-templates"></a>文本模板的安全性
 文本模板具有以下安全问题：
 
--   文本模板是任意代码插入到易受攻击。
+- 文本模板是任意代码插入到易受攻击。
 
--   如果主机用来查找指令处理器的机制不是安全的可以运行恶意的指令处理器。
+- 如果主机用来查找指令处理器的机制不是安全的可以运行恶意的指令处理器。
 
 ## <a name="arbitrary-code"></a>任意代码
  在编写模板时，可以将之内的任何代码\<# # > 标记。 这允许在文本模板中执行任意代码。

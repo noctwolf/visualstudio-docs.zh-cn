@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a00a980f5984b05bd1f77a83d4c95d4da0f3ff03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37f84bff4802c703bb61b36e9c1933a31cd6c5e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045442"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240:正确实现 ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58935192"
 ## <a name="cause"></a>原因
  外部可见的类型是分配给<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>接口以及以下条件之一为 true:
 
--   该类型继承，但不重写<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法和类型声明未标有实例字段<xref:System.NonSerializedAttribute?displayProperty=fullName>属性。
+- 该类型继承，但不重写<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法和类型声明未标有实例字段<xref:System.NonSerializedAttribute?displayProperty=fullName>属性。
 
--   类型不密封的该类型实现<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>不是外部可见且可重写的方法。
+- 类型不密封的该类型实现<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>不是外部可见且可重写的方法。
 
 ## <a name="rule-description"></a>规则说明
  实例继承的类型中声明的字段<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>接口不自动包含在序列化过程。 若要包括的字段，该类型必须实现<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>方法并序列化构造函数。 如果字段不应序列化，应用<xref:System.NonSerializedAttribute>属性要显式指示这一决定的字段。
@@ -58,7 +58,7 @@ ms.locfileid: "58935192"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly/vb/FxCop.Usage.ImplementISerializableCorrectly.vb#1)]
 
 ## <a name="example"></a>示例
- 下面的示例通过提供可替代的 [ISerializable.GetObjectData] 实现修复前面两个冲突 (<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) 在 Book 类，通过提供的实现<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->上的库类。
+ 下面的示例通过提供可替代的 [ISerializable.GetObjectData] （实现修复前面两个冲突<!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  -->) 在 Book 类，通过提供的实现 <!-- TODO: review code entity reference <xref:assetId:///ISerializable.GetObjectData?qualifyHint=False&amp;autoUpgrade=False>  --> 上的库类。
 
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cpp/FxCop.Usage.ImplementISerializableCorrectly2.cpp#1)]
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ImplementISerializableCorrectly2/cs/FxCop.Usage.ImplementISerializableCorrectly2.cs#1)]

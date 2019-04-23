@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 173ab11e85853324089f1dee66cd047e0afb7f13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047927"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:指定 CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58932634"
 ## <a name="cause"></a>原因
  方法或构造函数调用的成员具有重载接受<xref:System.Globalization.CultureInfo?displayProperty=fullName>参数，该方法或构造函数不调用的重载的<xref:System.Globalization.CultureInfo>参数。 此规则将忽略对以下方法的调用：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>规则说明
  当<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=fullName>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成员选择默认区域性和格式设置基于可能不为你的代码正确的假设。 若要确保代码按预期运行您的环境，应提供特定于区域性的信息，根据以下指导原则：

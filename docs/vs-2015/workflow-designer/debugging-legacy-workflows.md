@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048731"
 ---
 # <a name="debugging-legacy-workflows"></a>调试旧版工作流
 如果要用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中的传统 [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] 构建面向 .NET Framework 3.0 或 3.5 的 [!INCLUDE[wf](../includes/wf-md.md)] 应用程序，可以像对其他程序一样，通过设置断点、附加到进程、检查线程和调用堆栈来调试工作流。 您还可以选择远程调试。  
@@ -27,7 +27,7 @@ ms.locfileid: "58932405"
 >  如果计算机上安装并卸载过 Visual Studio 的多个版本，在以下两种情况下 WF3 调试可能失败：  
 > 
 > - 设置的断点未命中。  
->   -   显示以下消息：  
+>   - 显示以下消息：  
 > 
 >   **无法在 web 服务器上启动调试。调试程序安装不正确。无法对请求的代码类型进行调试。运行安装程序以安装或修复调试器。**  
 > 

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be6ebe9e2031b24442f368b626d53b15a043023c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048882"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：标记线程和取消标记线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,33 +32,33 @@ ms.locfileid: "58926221"
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>使用“线程”窗口标记或取消标记线程  
   
--   在中**线程**窗口中，找到您感兴趣的线程，然后单击标志图标可选择或清除标志。  
+- 在中**线程**窗口中，找到您感兴趣的线程，然后单击标志图标可选择或清除标志。  
   
 ### <a name="to-unflag-all-threads"></a>取消标记所有线程  
   
--   在“线程”窗口中右击任意线程，然后单击“取消标志所有线程”。  
+- 在“线程”窗口中右击任意线程，然后单击“取消标志所有线程”。  
   
 ### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程  
   
--   在调试窗口选择标记按钮。  
+- 在调试窗口选择标记按钮。  
   
 ### <a name="to-flag-just-my-code"></a>标记“仅我的代码”  
   
-1.  在“线程”窗口顶部的工具栏中，单击标志图标。  
+1. 在“线程”窗口顶部的工具栏中，单击标志图标。  
   
-2.  在下拉列表中，单击“标记‘仅我的代码’”。  
+2. 在下拉列表中，单击“标记‘仅我的代码’”。  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>标记与选定模块关联的线程  
   
-1.  在“线程”窗口的工具栏中，单击标志图标。  
+1. 在“线程”窗口的工具栏中，单击标志图标。  
   
-2.  在下拉列表中，单击“标记自定义模块选择”。  
+2. 在下拉列表中，单击“标记自定义模块选择”。  
   
-3.  在“选择模块”对话框中，选择需要的模块。  
+3. 在“选择模块”对话框中，选择需要的模块。  
   
-4.  （可选）在“搜索”框中，键入用于搜索特定模块的字符串。  
+4. （可选）在“搜索”框中，键入用于搜索特定模块的字符串。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
