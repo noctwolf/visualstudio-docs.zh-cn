@@ -17,23 +17,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e635c7b57bc8653184e5a929c2a87f228056fb82
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1ba57c1578bd69d71ed0abdac45907d937b89ecb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782559"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668180"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将 XPath 查询指定的值设置为 XML 文件。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `XmlPoke` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。|  
 |`Query`|可选 `String` 参数。<br /><br /> 指定 XPath 查询。|  

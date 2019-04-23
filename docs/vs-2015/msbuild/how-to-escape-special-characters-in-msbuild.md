@@ -14,17 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 291b8a33b5cf8777259be6325be9596bd9dc95e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d6b10c8f4b2658acc3dd4dfa113c8edd8f1de5b2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834595"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665710"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：转义 MSBuild 中的特殊字符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 某些字符在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件中具有特殊意义。 这些字符的示例包括分号 (;) 和星号 (*)。 有关这些特殊字符的完整列表，请参阅 [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)。  
   
  要将这些特殊字符用作项目文件中的文本，必须使用语法 %*xx* 来指定它们，其中 *xx* 表示字符的 ASCII 十六进制值。  

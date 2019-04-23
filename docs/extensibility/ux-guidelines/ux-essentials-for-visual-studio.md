@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723495"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667450"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的用户体验基础知识
 ## <a name="best-practices"></a>最佳实践
@@ -102,7 +102,6 @@ ms.locfileid: "56723495"
 
 #### <a name="example-video-links-in-team-explorer"></a>在团队资源管理器中的示例： 视频链接
 强制用户之前需要阅读的解释性文本解除 UI 是 Visual Studio 中的反模式。 正确设计的视频链接应显示的其他信息的工具提示上悬停时，并单击"&times;"应关闭消息无需进一步交互。
-
 
  ![解释性文本反&#45;模式&#45;不正确](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />视频链接不正确的模式
 

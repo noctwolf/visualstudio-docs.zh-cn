@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602200"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665989"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入自定义母版页和站点页图像
   本演练演示如何导入 SharePoint 的自定义母版页和包含到图像的网站页面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。
@@ -150,13 +150,11 @@ ms.locfileid: "56602200"
 
 2. 上**选择要导入的项**页面上，在**模块**中**类型**列中，在导入为下表中选择仅将文件对应的复选框。
 
-
    | 文件名 | 描述 |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | 自定义母版页。 |
    | images_ | SharePoint 文件系统中的图像文件。 |
    | SitePages_ | 网站页面。 |
-
 
 3. 选择**完成**按钮以导入所选的项目。
 

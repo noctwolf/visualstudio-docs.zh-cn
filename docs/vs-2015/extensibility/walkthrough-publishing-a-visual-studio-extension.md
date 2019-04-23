@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000255"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669700"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **说明**：Visual Studio 库即将被 Visual Studio Marketplace。 请参阅本主题的详细信息的最新版本。
-
 
 此演练演示如何将 Visual Studio 扩展发布到 Visual Studio 库。 当您向库中添加你的扩展时，开发人员可以使用**扩展和更新**从中浏览新建和更新的扩展。
 

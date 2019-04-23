@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770845"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669804"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名称，将其组成不同的项类型。 项类型是项的命名列表，可用作任务参数。 任务使用项值来执行生成过程。  
   
  由于项是根据其所属项类型命名，因此术语“项”和“项值”可互换使用。  
@@ -88,7 +87,7 @@ MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名�
 -   从 .NET Framework 3.5 起，`Target` 元素可能会包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素，后者可能会包含项元素。  
   
 ##  <a name="BKMK_ReferencingItems"></a>在项目文件中引用项  
- 若要在整个项目文件中引用项类型，请使用语法 @(`ItemType`)。 例如，使用 `@(Compile)` 引用前面示例中的项类型。 使用此语法，将项类型指定为该任务的参数，从而将项传递到任务。 有关详细信息，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
+ 若要在整个项目文件中引用项类型，请使用语法 @(`ItemType`)。 例如，使用 `@(Compile)` 引用前面示例中的项类型。 使用此语法，将项类型指定为该任务的参数，从而将项传递到任务。 有关详细信息，请参阅[如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
   
  默认情况下，项类型的项展开时由分号 (;) 分隔。 可使用语法 @(*ItemType*, '*separator*') 指定非默认分隔符。 有关详细信息，请参阅[如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
   
@@ -113,7 +112,7 @@ MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名�
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- 有关通配符的详细信息，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
+ 有关通配符的详细信息，请参阅[如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
   
 ##  <a name="BKMK_ExcludeAttribute"></a>使用 Exclude 属性  
  项元素可包含 `Exclude` 属性，该属性用于从项类型中排除特定项（文件）。 `Exclude` 属性通常与通配符一起使用。 例如，除了 `DoNotBuild.cs` 文件外，以下 XML 将目录中的每个 .cs 文件都添加到 CSFile 项类型。  
@@ -358,7 +357,7 @@ Output:
 ## <a name="see-also"></a>请参阅  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
- [如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)   
+ [如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)   
  [如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)   
  [如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [项定义](../msbuild/item-definitions.md)   

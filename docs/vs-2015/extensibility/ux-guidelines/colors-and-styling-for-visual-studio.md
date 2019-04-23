@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932276"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670090"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58932276"
 |你有单个功能组并且没有类似的元素没有共享的颜色。|**自定义颜色**|特定于区域且不应与其他 UI，共享的颜色标记名称|
 |你想要允许最终用户将自定义 UI 或内容 （例如，文本编辑器或专门的设计器窗口）。|**最终用户自定义**<br /><br /> **(工具 > 选项对话框)**|定义的"字体和颜色"页中设置**工具 > 选项**对话框或特定于一个用户界面功能的专用的页面。|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio 主题
  Visual Studio 提供三种不同的颜色主题： 浅色、 深色，和蓝色。 它还检测高对比度模式，这是系统范围内颜色主题用于可访问性。
 
@@ -79,7 +78,6 @@ ms.locfileid: "58932276"
  ![工具&#62;Visual Studio 中的选项对话框](../../extensibility/ux-guidelines/media/0301-a-toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")
 
  **工具 > 选项对话框**
-
 
 ##  <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio 提供的环境颜色服务，也称为 VSColor service 或外壳颜色服务。 此服务，可将 UI 元素的颜色值绑定到集，其中包含每个主题颜色的名称-值颜色。 VSColor 服务必须用于所有 UI 元素，以便颜色自动更改以反映当前用户选择了主题，并以使 UI 绑定到的环境颜色服务将集成新的主题在将来版本的 Visual Studio。

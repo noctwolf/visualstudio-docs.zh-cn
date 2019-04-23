@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936136"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668894"
 ---
 # <a name="content-model-view"></a>内容模型视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 内容模型视图提供局部和全局架构节点及其组件（包括简单类型和复杂类型、元素、模型组、特性及特性组）的图形表示形式。 在内容模型视图中不能查看 XML 注释和处理指令。 内容模型视图包括两个面板：**工作区**面板，其中包含一系列中的节点[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)，和设计图面，可从中查看架构的内容模型在选择的节点**工作区**面板。 内容模型视图还包括 XML 架构设计器工具栏和痕迹栏。  
   
  在下图中，“工作区”面板包括六个架构节点。 在“工作区”面板中，`purchaseOrder` 节点处于选定状态且该节点显示在设计图面中。  
@@ -44,7 +43,7 @@ ms.locfileid: "58936136"
 ## <a name="context-menus"></a>上下文菜单  
  在设计图面或“工作区”面板上右键单击某一项时，会出现一个上下文菜单。 下表介绍了可用于内容模型视图的设计图面的选项。  
   
-|Option|描述|  
+|选项|描述|  
 |------------|-----------------|  
 |**在 XML 架构资源管理器中显示**|将焦点置于架构资源管理器上，并突出显示架构集节点。|  
 |**在关系图视图中显示**|切换到图形视图。|  
@@ -56,7 +55,7 @@ ms.locfileid: "58936136"
   
  下表介绍了可用于“工作区”面板的选项。  
   
-|Option|描述|  
+|选项|描述|  
 |------------|-----------------|  
 |**在 XML 架构资源管理器中显示**|将焦点置于架构资源管理器上，并突出显示架构集节点。|  
 |**在关系图视图中显示**|切换到图形视图。|  
@@ -76,7 +75,7 @@ ms.locfileid: "58936136"
   
  ![XML 架构设计器工具栏](../xml-tools/media/xsdcontentmodelviewtoolbar.gif "XSDContentModelViewToolbar")  
   
-|Option|描述|  
+|选项|描述|  
 |------------|-----------------|  
 |**显示起始视图**|切换到[启动视图](../xml-tools/start-view.md)。 可以使用键盘快捷方式访问此视图：**CTRL + 1**。|  
 |**显示内容模型视图**|切换到[内容模型视图](../xml-tools/content-model-view.md)。 可以使用键盘快捷方式访问此视图：**CTRL + 2**。|  

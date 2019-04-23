@@ -35,23 +35,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790506"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669779"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
 
-本文介绍如何启动的通用 Windows 平台 (UWP) 应用的 Visual Studio 调试会话。 可以在 XAML 和 c + + 中，XAML 编写的 UWP 应用和C#/Visual Basic。 若要开始调试 UWP 应用，请配置调试会话，并选择启动应用程序的方式。
+本文介绍如何启动的通用 Windows 平台 (UWP) 应用的 Visual Studio 调试会话。 可以在 XAML 中编写的 UWP 应用和C++，XAML 和C#/Visual Basic。 若要开始调试 UWP 应用，请配置调试会话，并选择启动应用程序的方式。
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
 > 从 Visual Studio 2019 开始，不再支持适用于 HTML 和 JavaScript 的 UWP 应用。
 ::: moniker-end
 ::: moniker range="vs-2017"
-在 Visual Studio 2017 中，大部分命令和本文中所示的选项也适用于 UWP 应用的 HTML 和 JavaScript。 其中不同的命令之间管理和 c + + 应用程序，JavaScript 应用程序通常是与 c + + UWP 应用的命令相同。
+在 Visual Studio 2017 中，大部分命令和本文中所示的选项也适用于 UWP 应用的 HTML 和 JavaScript。 命令是不同之间管理和C++应用程序，JavaScript 应用程序通常是相同的命令C++UWP 应用。
 ::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>从 Visual Studio 工具栏中开始调试
@@ -98,31 +98,30 @@ ms.locfileid: "58790506"
 
      ![C#和 Visual Basic 项目调试属性页](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - 对于 c + + 应用程序中，选择**配置属性** > **调试**。
+   - 有关C++应用程序中，选择**配置属性** > **调试**。
 
-     ![C + + UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)
+     ![C++UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> 选择要使用的调试器
 
 有关C#和 Visual Basic 应用程序，Visual Studio 调试托管代码默认情况下。 您可以选择调试其他或其他代码类型。 您还可以设置**调试器类型**是项目的一部分的任何后台任务的值。
 
-在 c + + 应用中，Visual Studio 默认情况下调试本机代码。 您可以选择调试特定类型的代码而不是，或调试本机代码。
+在C++应用程序，Visual Studio 默认情况下调试本机代码。 您可以选择调试特定类型的代码而不是，或调试本机代码。
 
 **若要指定要调试的代码类型：**
 
 - 有关C#和 Visual Basic 应用程序中，选择一个从以下调试器**应用程序类型**并**后台进程类型**下的下拉列表**调试器类型**上**调试**属性页。
 
-- 对于 c + + 应用中，选择从以下调试器**调试器类型**上的下拉列表中**调试**属性页。
+- 有关C++应用中，选择一个从以下调试器**调试器类型**上的下拉列表**调试**属性页。
 
 |||
 |-|-|
 |**仅限托管**|调试应用程序中的托管代码。 忽略 JavaScript 代码和本机 C/C++ 代码。|
 |**仅限本机**|调试应用程序中的本机 C/C++ 代码。 忽略托管代码和 JavaScript 代码。|
-|**混合(托管和本机)**|调试应用程序中的本机 C/C++ 代码和托管代码。 忽略 JavaScript 代码。 在 c + + 项目中，此选项称为**托管和本机**。|
+|**混合(托管和本机)**|调试应用程序中的本机 C/C++ 代码和托管代码。 忽略 JavaScript 代码。 在C++项目中，此选项称为**托管和本机**。|
 |**脚本**|调试应用程序中的 JavaScript 代码。 忽略托管代码和本机代码。|
-|**带脚本的本机**|调试本机 C/c + + 代码和应用程序中的 JavaScript 代码。 忽略托管的代码。 在 c + + 项目或仅适用于后台任务中可用。|
-|**仅限 GPU (C++ AMP)**|调试在图形处理单元 (GPU) 上运行的本机 C++ 代码。 在仅限 c + + 项目中可用。|
-
+|**带脚本的本机**|调试本机 C /C++代码和应用程序中的 JavaScript 代码。 忽略托管的代码。 可在C++项目或后台任务仅。|
+|**仅限 GPU (C++ AMP)**|调试在图形处理单元 (GPU) 上运行的本机 C++ 代码。 可在C++仅适用于项目。|
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> 禁用网络环回 （可选）
 
@@ -132,10 +131,10 @@ ms.locfileid: "58790506"
 
 -   有关C#和 Visual Basic 应用程序，请取消选中**允许本地网络环回**下的复选框**启动选项**上**调试**属性页。
 
--   对于 Visual c + + 应用程序中，选择**否**从**允许本地网络 Loopback**上的下拉列表中**调试**属性页。
+-   视觉对象C++应用程序中，选择**否**从**允许本地网络 Loopback**上的下拉列表**调试**属性页。
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> 重新安装该应用，在开始调试时 （可选）
- 若要诊断安装问题C#或 Visual Basic 应用程序，选择**卸载并重新安装我的程序包**上**调试**属性页。 在开始调试时，此选项将重新创建原始安装。 此选项不可用 c + + 项目。
+ 若要诊断安装问题C#或 Visual Basic 应用程序，选择**卸载并重新安装我的程序包**上**调试**属性页。 在开始调试时，此选项将重新创建原始安装。 此选项不适用于C++项目。
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> 设置远程调试的身份验证选项
 
@@ -147,7 +146,7 @@ ms.locfileid: "58790506"
 
 - 有关C#和 Visual Basic 应用程序上**调试**属性页上，选择**远程计算机**作为**目标设备**。 然后，选择**无**或**通用 （未加密的协议）** 有关**身份验证模式**。
 
-- 对于 c + + 应用程序中，选择**远程计算机**下**要启动的调试器**上**调试**属性页。 然后，选择**无身份验证**或**通用 （未加密的协议）** 有关**身份验证类型**。
+- 有关C++应用程序中，选择**远程计算机**下**要启动的调试器**上**调试**属性页。 然后，选择**无身份验证**或**通用 （未加密的协议）** 有关**身份验证类型**。
 
 > [!CAUTION]
 > 没有任何网络安全中运行远程调试器时**无**或**通用 （未加密的协议）** 模式。 选择仅在你的受信任的网络上的以下模式确保不在会受到恶意代码或恶意流量。
@@ -164,7 +163,7 @@ ms.locfileid: "58790506"
 
 - 有关C#和 Visual Basic 应用程序，选择**不启动，但在启动时调试我的代码**下**启动选项**上**调试**属性页。
 
-- 对于 c + + 应用程序中，选择**否**从**启动应用程序**上的下拉列表中**调试**属性页。
+- 有关C++应用程序中，选择**否**从**启动应用程序**上的下拉列表**调试**属性页。
 
 有关调试后台任务的详细信息，请参阅[触发器挂起、 继续和后台事件适用于 UWP 应用](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416195"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669948"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 可以创建将更改传播从一个元素到另一个可视化和建模 SDK (VMSDK) 中的存储规则。 在存储区中的任何元素更改时，规则计划执行，通常在最外部事务提交时。 有不同类型的规则对于不同类型的事件，如添加一个元素，或删除它。 可以将规则附加到特定类型的元素、 形状或关系图。 许多内置功能由规则定义： 例如，规则可确保在模型更改时，更新关系图。 可以添加自己的规则来自定义您的特定于域的语言。
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - 从以下基类之一派生规则类：
 
-
   | 基类 | 触发器 |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | 添加元素、 链接或形状。<br /><br /> 用于检测新关系，除了新元素。 |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | 创建一个事务时执行。 |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | 执行事务时，将为已提交。 |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | 要回滚事务时执行。 |
-
 
 - 每个类有一个方法重写。 类型`override`来发现它在类中。 此方法的参数标识要更改的元素。
 

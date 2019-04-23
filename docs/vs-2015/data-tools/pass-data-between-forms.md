@@ -20,17 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9a109490c4ff89c6a9f45533fc1305d915522621
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935026"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668933"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用的客户和订单来自 Northwind 的表，一个窗体，用户可以选择一个客户，并第二个窗体显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建一种方法。  
   
 > [!NOTE]

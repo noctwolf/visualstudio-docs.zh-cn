@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526085"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665670"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic、 c + +、 JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic 中， C++，JavaScript)
 
 创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 可以在映射中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
 
@@ -45,7 +45,7 @@ ms.locfileid: "57526085"
 有关命令和操作可以使用代码图的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
 >[!IMPORTANT]
->您可以创建仅在代码图[Visual Studio Enterprise 版](https://visualstudio.microsoft.com/downloads/)。
+>您可以创建仅在代码图[Visual Studio Enterprise 版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
 
 下面是快速看一下代码映射：
 
@@ -53,7 +53,7 @@ ms.locfileid: "57526085"
 
 ##  <a name="MapStack"></a>映射调用堆栈
 
-1. 在 Visual Studio Enterprise C#，Visual Basic、 c + + 或 JavaScript 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
+1. 在 Visual Studio Enterprise C#，Visual Basic 中， C++，或 JavaScript 项目中，通过选择启动调试**调试** > **启动调试**或按**F5**.
 
 1. 你的应用进入中断模式或你单步执行函数后，选择**调试** > **代码图**，或按**Ctrl**+**Shift**+**`**.
 

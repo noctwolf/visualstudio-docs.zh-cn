@@ -21,17 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c21c14b8c84246545d9ffb3e3dc59210b56fe84e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 05290bed3fe51c69e29d8bafef927c91c63b5249
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777147"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667256"
 ---
 # <a name="bscmake-task"></a>BscMake 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 重要提示
 >  Visual Studio IDE 不再使用 bscmake。 自 Visual Studio 2008 起，浏览信息自动存储在解决方案文件夹的 .sdf 文件中。  
   
@@ -40,7 +39,7 @@ ms.locfileid: "54777147"
 ## <a name="parameters"></a>参数  
  下表介绍了 **BscMake** 任务的参数。 大多数任务参数都对应于命令行选项。  
   
-|参数|说明​​|  
+|参数|描述|  
 |---------------|-----------------|  
 |**AdditionalOptions**|可选 **String** 参数。<br /><br /> 在命令行上指定的选项列表。 例如，“/*option1* /*option2* /*option#*”。 此参数用于指定无法由其他任何 **BscMake** 任务参数表示的选项。<br /><br /> 有关详细信息，请参阅 [BSCMAKE 选项](http://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2)中的选项。|  
 |**OutputFile**|可选 **String** 参数。<br /><br /> 指定重写默认输出文件名的文件名。<br /><br /> 有关详细信息，请参阅 [BSCMAKE 选项](http://msdn.microsoft.com/library/fa2f1e06-c684-41cf-80dd-6a554835ebd2)中的 **/o** 选项。|  
