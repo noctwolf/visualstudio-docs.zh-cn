@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfcec130897fc7014cb820e7efdcc4f3dcacb1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102596"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -49,7 +49,7 @@ mesg_type
 
 消息的类型。 下表列出了支持此参数的值。
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息将被视为信息、 警告或错误。|
 |`SCC_MSG_STATUS`|显示状态消息，并可以在状态栏中显示。|
@@ -73,7 +73,7 @@ mesg_type
 
 ## <a name="structures"></a>结构
 
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
 ```cpp
 typedef struct {
@@ -83,7 +83,7 @@ typedef struct {
 
  此结构发送与`SCC_MSG_BACKGROUND_IS_CANCELLED`消息。 它用于通信的后台操作已取消的 ID。
 
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
 
 ```cpp
 typedef struct {
@@ -94,7 +94,7 @@ typedef struct {
 
  此结构发送与`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`消息。 它用于通信要检索的文件的名称和正在执行的操作检索的后台操作的 ID。
 
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
 
 ```cpp
 typedef struct {
@@ -106,7 +106,7 @@ typedef struct {
 
  此结构发送与`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`消息。 它用于检索指定的文件，以及未检索的后台操作的 ID 的结果进行通信。 请参阅的返回值[SccGet](../extensibility/sccget-function.md)有关什么可以给出结果。
 
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
 
 ```cpp
 typedef struct {

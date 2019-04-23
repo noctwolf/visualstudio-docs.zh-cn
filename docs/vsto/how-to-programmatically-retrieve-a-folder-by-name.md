@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088621"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>如何：以编程方式按名称检索文件夹
   此示例获取命名的自定义文件夹的引用，然后显示文件夹的内容。
@@ -30,7 +30,7 @@ ms.locfileid: "56620884"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
--   名为 TestFolder 的文件夹。
+- 名为 TestFolder 的文件夹。
 
 ## <a name="see-also"></a>请参阅
 - [使用文件夹](../vsto/working-with-folders.md)

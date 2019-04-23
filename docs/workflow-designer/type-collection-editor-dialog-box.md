@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093119"
 ---
 # <a name="type-collection-editor-dialog-box"></a>“类型集合编辑器”对话框
 
@@ -31,16 +31,16 @@ ms.locfileid: "55913910"
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>为 Send 和 Receive 活动打开“类型集合编辑器”
 
-1.  选择**发送**或**接收**设计视图中的活动。
+1. 选择**发送**或**接收**设计视图中的活动。
 
-2.  按**F4**以打开**属性**窗口。
+2. 按**F4**以打开**属性**窗口。
 
-3.  在中**属性**窗口中，单击旁边的省略号按钮**KnownTypes**属性。
+3. 在中**属性**窗口中，单击旁边的省略号按钮**KnownTypes**属性。
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>为 InvokeMethod 活动打开“类型集合编辑器”
 
-1.  选择**InvokeMethod**设计视图中的活动。
+1. 选择**InvokeMethod**设计视图中的活动。
 
-2.  按**F4**以打开**属性**窗口。
+2. 按**F4**以打开**属性**窗口。
 
-3.  在中**属性**窗口中，单击旁边的省略号按钮**GenericTypeArguments**属性。
+3. 在中**属性**窗口中，单击旁边的省略号按钮**GenericTypeArguments**属性。

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a6550ac7b2ea1d6780122f0064f39defa4859731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101725"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>如何：以编程方式折叠范围或在文档中的选定内容
   如果你在使用 <xref:Microsoft.Office.Interop.Word.Range> 或 <xref:Microsoft.Office.Interop.Word.Selection> 对象，则可能要在插入文本之前更改对插入点的选择，以避免覆盖现有文本。 同时<xref:Microsoft.Office.Interop.Word.Range>并<xref:Microsoft.Office.Interop.Word.Selection>对象具有折叠方法，该协议使用<xref:Microsoft.Office.Interop.Word.WdCollapseDirection>枚举值：
@@ -72,7 +72,7 @@ ms.locfileid: "56598218"
 
 ### <a name="to-collapse-a-range-in-a-document-level-customization"></a>在文档级自定义项中折叠范围
 
-1.  下面的示例显示针对文档级自定项的完整方法。 若要使用此代码，请从项目中的 `ThisDocument` 类运行它。
+1. 下面的示例显示针对文档级自定项的完整方法。 若要使用此代码，请从项目中的 `ThisDocument` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#45)]
@@ -81,7 +81,7 @@ ms.locfileid: "56598218"
 
 ### <a name="to-collapse-a-range-in-a-vsto-add-in"></a>若要折叠 VSTO 外接程序中的范围
 
-1.  下面的示例显示 VSTO 外接程序的完整的方法。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。
+1. 下面的示例显示 VSTO 外接程序的完整的方法。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#45)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#45](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#45)]

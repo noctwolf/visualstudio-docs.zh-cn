@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用本机运行时检查 |Microsoft Docs
+title: 如何：使用本机运行时检查 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,12 +37,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100204"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 在 Visual C++ 中，可以使用本机 [runtime_checks](/cpp/preprocessor/runtime-checks) 捕获常见的运行时错误，例如：
@@ -71,11 +71,11 @@ ms.locfileid: "56712497"
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在调试版本中启用本机运行时检查
 
--   使用 **/RTC** 选项，并与 C 运行库（如 /MDd）调试版链接。
+- 使用 **/RTC** 选项，并与 C 运行库（如 /MDd）调试版链接。
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>更改本机运行时检查操作
 
--   使用 `runtime_checks` 杂注。
+- 使用 `runtime_checks` 杂注。
 
 ## <a name="see-also"></a>请参阅
 - [在 Visual Studio 中进行调试](../debugger/index.md)

@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a5fd14f4cbc07fbd1ebac0eeefaa039dece188d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054776"
 ---
 # <a name="query-datasets"></a>查询数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 若要搜索在数据集中的特定记录，请使用 DataTable FindBy 方法，编写您自己的 foreach 循环遍历表的行集合，或使用[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。 LINQ to DataSet。  
   
 ## <a name="dataset-case-sensitivity"></a>数据集的区分大小写  
@@ -34,7 +33,7 @@ ms.locfileid: "58933259"
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>若要在具有主键值的类型化数据集查找的行  
   
--   若要查找行，调用强类型化`FindBy`方法，它使用表的主键。  
+- 若要查找行，调用强类型化`FindBy`方法，它使用表的主键。  
   
      在以下示例中，`CustomerID`列是主键的`Customers`表。 这意味着，生成`FindBy`方法是`FindByCustomerID`。 该示例演示如何将分配一个特定<xref:System.Data.DataRow>通过使用生成变量`FindBy`方法。  
   
@@ -43,7 +42,7 @@ ms.locfileid: "58933259"
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>若要在具有主键值的非类型化数据集查找的行  
   
--   调用<xref:System.Data.DataRowCollection.Find%2A>方法的<xref:System.Data.DataRowCollection>集合，作为参数传递的主键。  
+- 调用<xref:System.Data.DataRowCollection.Find%2A>方法的<xref:System.Data.DataRowCollection>集合，作为参数传递的主键。  
   
      下面的示例演示如何声明一个名为的新行`foundRow`并将其分配的返回值<xref:System.Data.DataRowCollection.Find%2A>方法。 如果找到的主键，则在消息框中显示的列索引 1 内容。  
   
@@ -54,7 +53,7 @@ ms.locfileid: "58933259"
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>若要查找任何列中的值的行  
   
--   使用创建数据表<xref:System.Data.DataTable.Select%2A>方法，返回的数组<xref:System.Data.DataRow>s 基于表达式传递给<xref:System.Data.DataTable.Select%2A>方法。 有关创建有效的表达式的详细信息，请参阅页的"表达式语法"部分<xref:System.Data.DataColumn.Expression%2A>属性。  
+- 使用创建数据表<xref:System.Data.DataTable.Select%2A>方法，返回的数组<xref:System.Data.DataRow>s 基于表达式传递给<xref:System.Data.DataTable.Select%2A>方法。 有关创建有效的表达式的详细信息，请参阅页的"表达式语法"部分<xref:System.Data.DataColumn.Expression%2A>属性。  
   
      下面的示例演示如何使用<xref:System.Data.DataTable.Select%2A>方法的<xref:System.Data.DataTable>来查找特定行。  
   
@@ -83,14 +82,14 @@ ms.locfileid: "58933259"
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>若要返回的子记录所选的父记录  
   
--   调用<xref:System.Data.DataRow.GetChildRows%2A>方法的特定`Customers`数据行，并返回一个数组中的行`Orders`表：  
+- 调用<xref:System.Data.DataRow.GetChildRows%2A>方法的特定`Customers`数据行，并返回一个数组中的行`Orders`表：  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>若要返回的所选的子记录的父记录  
   
--   调用<xref:System.Data.DataRow.GetParentRow%2A>方法的特定`Orders`数据行，并返回单个行从`Customers`表：  
+- 调用<xref:System.Data.DataRow.GetParentRow%2A>方法的特定`Orders`数据行，并返回单个行从`Customers`表：  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

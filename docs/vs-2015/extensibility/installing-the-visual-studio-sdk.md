@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091143"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>安装 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,26 +26,26 @@ ms.locfileid: "58935498"
 > [!NOTE]
 >  在执行安装文件，名为 Visual Studio SDK **Visual Studio 扩展性工具**。  
   
-1.  启动 Visual Studio 2015 安装。 可以安装任意版本的 Visual Studio Express 除外。  
+1. 启动 Visual Studio 2015 安装。 可以安装任意版本的 Visual Studio Express 除外。  
   
-2.  在第一个屏幕上，选择**自定义**，而非**默认**。 单击 **“下一步”**。  
+2. 在第一个屏幕上，选择**自定义**，而非**默认**。 单击 **“下一步”**。  
   
-3.  您应看到自定义功能的树的视图。 打开**常用工具**。 应会看到**Visual Studio 扩展性工具**。  
+3. 您应看到自定义功能的树的视图。 打开**常用工具**。 应会看到**Visual Studio 扩展性工具**。  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4.  检查**Visual Studio 扩展性工具**，然后单击**下一步**并继续安装。  
+4. 检查**Visual Studio 扩展性工具**，然后单击**下一步**并继续安装。  
   
 ## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>在安装 Visual Studio 后安装 Visual Studio SDK  
  如果你决定完成你的 Visual Studio 安装后安装 Visual Studio SDK，则应遵循以下过程：  
   
-1.  转到**控制面板 / 程序 / 程序和功能**，并查找**Visual Studio 2015**。 可以安装适用于除 Express 之外的 Visual Studio 2015 任何版本的 Visual Studio SDK。  
+1. 转到**控制面板 / 程序 / 程序和功能**，并查找**Visual Studio 2015**。 可以安装适用于除 Express 之外的 Visual Studio 2015 任何版本的 Visual Studio SDK。  
   
-2.  右键单击**Visual Studio 2015**，然后单击**更改**。 应看到安装页。  
+2. 右键单击**Visual Studio 2015**，然后单击**更改**。 应看到安装页。  
   
-3.  按照中的相同过程**安装 Visual Studio SDK 作为 Visual Studio 安装的一部分**上面。  
+3. 按照中的相同过程**安装 Visual Studio SDK 作为 Visual Studio 安装的一部分**上面。  
   
-4.  单击**Visual Studio 扩展性工具**链接安装 Visual Studio SDK。  
+4. 单击**Visual Studio 扩展性工具**链接安装 Visual Studio SDK。  
   
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>从解决方案安装 Visual Studio SDK  
  如果不首先安装 VSSDK 与扩展性项目打开的解决方案，系统将提示您通过解决方案资源管理器上面突出显示的信息栏。 其外观应类似于以下内容：  

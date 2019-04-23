@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084474"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>错误：安全检查失败，因为 IIS 管理服务没有响应
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58931695"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   使用“添加或删除程序”控制面板重新安装 IIS。  
+- 使用“添加或删除程序”控制面板重新安装 IIS。  
   
--   或  
+- 或  
   
--   使用控制面板中的 “添加/删除程序” 从计算机中删除 IIS。 如果已移除 IIS，但是仍存在问题，请检查注册表，并确保下面的项不再存在：  
+- 使用控制面板中的 “添加/删除程序” 从计算机中删除 IIS。 如果已移除 IIS，但是仍存在问题，请检查注册表，并确保下面的项不再存在：  
   
     ```  
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
@@ -44,7 +44,7 @@ ms.locfileid: "58931695"
   
      或  
   
--   使用“管理工具”控制面板禁用 IIS 管理服务。 这将在您的计算机上禁用 IIS。  
+- 使用“管理工具”控制面板禁用 IIS 管理服务。 这将在您的计算机上禁用 IIS。  
   
      执行这三个步骤中的任一步骤后，重新启动计算机。  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039859"
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58930651"
   
  本主题介绍为其他区域性部署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的三种方法：  
   
--   在单个部署中包括所有附属程序集。  
+- 在单个部署中包括所有附属程序集。  
   
--   为每种区域性生成一个部署，且每个部署中均包括单个附属程序集。  
+- 为每种区域性生成一个部署，且每个部署中均包括单个附属程序集。  
   
--   按需下载附属程序集。  
+- 按需下载附属程序集。  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>在一个部署中包括所有附属程序集  
  与发布多个 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署不同，你可以发布单个包含所有附属程序集的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署。  
@@ -77,9 +77,9 @@ ms.locfileid: "58930651"
   
  向客户提供应用程序前，你有如下三个选项，供测试已本地化的部署：  
   
--   可在 Windows 相应的本地化版本上运行自己的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。  
+- 可在 Windows 相应的本地化版本上运行自己的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。  
   
--   可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）  
+- 可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）  
   
 ## <a name="see-also"></a>请参阅  
  [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)   

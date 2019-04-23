@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039054"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>什么是 Visual Studio 2015 中的 Visual Studio 中设计的新增功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "59000740"
 
 - **体系结构资源管理器**。 不再能够使用体系结构资源管理器创建关系图。 但你仍可使用解决方案资源管理器。
 
-##  <a name="VersionSupport"></a> 对体系结构和建模工具的版本支持
+## <a name="VersionSupport"></a> 对体系结构和建模工具的版本支持
 
 Visual Studio 2015 现已推出多个版本。 并非所有这些体系结构和建模工具提供支持。 下表显示每个工具的可用性。
 

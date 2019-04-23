@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094341"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：创建事件接收器的特定列表实例
   列表实例事件接收方响应的列表定义的任何实例中发生的事件。 虽然事件接收方模板不会启用特定列表实例的目标，你可修改的范围限定为列表定义以响应特定列表实例中的事件的事件接收器。
@@ -30,24 +30,24 @@ ms.locfileid: "56596524"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>若要修改事件接收器以响应特定列表实例
 
-1.  在浏览器中打开 SharePoint 网站。
+1. 在浏览器中打开 SharePoint 网站。
 
-2.  在导航窗格中，**列出了**链接。
+2. 在导航窗格中，**列出了**链接。
 
-3.  在中**所有网站内容**页上，选择**创建**链接。
+3. 在中**所有网站内容**页上，选择**创建**链接。
 
-4.  在中**创建**对话框框中，选择**公告**类型，将公告命名**TestAnnouncements**，然后选择**创建**按钮。
+4. 在中**创建**对话框框中，选择**公告**类型，将公告命名**TestAnnouncements**，然后选择**创建**按钮。
 
-5.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个事件接收器项目。
+5. 在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个事件接收器项目。
 
-6.  在中**所需哪种类型的事件接收器？** 列表中，选择**列表项事件**。
+6. 在中**所需哪种类型的事件接收器？** 列表中，选择**列表项事件**。
 
     > [!NOTE]
     >  您还可以选择任何其他类型的范围限于列表定义，例如，事件接收器**列出的电子邮件事件**或**列出的工作流事件**。
 
-7.  在中**哪个项应为事件源？** 列表中，选择**公告**。
+7. 在中**哪个项应为事件源？** 列表中，选择**公告**。
 
-8.  在中**处理以下事件**列表中，选择**添加项**复选框，，然后选择**完成**按钮。
+8. 在中**处理以下事件**列表中，选择**添加项**复选框，，然后选择**完成**按钮。
 
 9. 在中**解决方案资源管理器**，EventReceiver1，下打开*Elements.xml*。
 

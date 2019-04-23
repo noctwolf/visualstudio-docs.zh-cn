@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106315"
 ---
 # <a name="integration-with-xml-editor"></a>与 XML 编辑器集成
 
 XML 架构设计器与 XML 编辑器集成。 如果您修改 XSD 文件在 XML 编辑器中的，更改将反映在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 如果有[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)打开，更改也会反映在存在。 您可以按以下方式导航 XML 架构设计器和 XML 编辑器之间：
 
--   在 XML 编辑器中，右键单击某个节点并选择**在 XML 架构资源管理器中显示**。
+- 在 XML 编辑器中，右键单击某个节点并选择**在 XML 架构资源管理器中显示**。
 
--   关系图视图中， **XML 架构资源管理器**，双击某个节点，或右键单击某个节点并选择**查看代码**。 在内容模型视图中，右键单击某个节点并选择**查看代码**。
+- 关系图视图中， **XML 架构资源管理器**，双击某个节点，或右键单击某个节点并选择**查看代码**。 在内容模型视图中，右键单击某个节点并选择**查看代码**。
 
 下面的屏幕截图显示在中打开一个 XML 架构**XML 架构资源管理器**。 **XML 架构资源管理器**显示在树视图中设置的架构。 XML 编辑器显示当前处于活动状态中的节点的文本视图**XML 架构资源管理器**。
 

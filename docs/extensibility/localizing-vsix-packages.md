@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e83bf0c3c0bd63ed994784e89252dd2a5479590f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065280"
 ---
 # <a name="localizing-vsix-packages"></a>本地化 VSIX 包
 
@@ -53,7 +53,7 @@ ms.locfileid: "56687076"
 
 1. 在中**解决方案资源管理器**，右键单击 Extension.vsixlangpack 文件，然后单击**属性**。
 
-2.  在中**属性网格**，单击**包含在 Vsix**，并将其值设置为`true`。
+2. 在中**属性网格**，单击**包含在 Vsix**，并将其值设置为`true`。
 
 ## <a name="example"></a>示例
 

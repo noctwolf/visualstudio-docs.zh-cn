@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645922"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666450"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;元素 （引导程序）
 `InstallChecks`元素支持启动各种对本地计算机以确保所有适当的应用程序的必备组件都已安装的测试。
@@ -72,7 +72,7 @@ ms.locfileid: "56645922"
 ## <a name="assemblycheck"></a>AssemblyCheck
  此元素是可选的子元素的`InstallChecks`。 为每个实例`AssemblyCheck`，引导程序将确保元素标识的程序集位于全局程序集缓存 (GAC)。 它不包含任何元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Name`|必需。 要检查的程序集的完全限定的名称。|
@@ -86,7 +86,7 @@ ms.locfileid: "56645922"
 
  `ExternalCheck` 不包含任何元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|
 |`PackageFile`|必需。 要执行的外部程序。 该程序必须是安装程序分发包的一部分。|
@@ -97,8 +97,7 @@ ms.locfileid: "56645922"
 
  `FileCheck` 不包含任何元素，并具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-----------------| - |
 | `Property` | 必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。 |
 | `FileName` | 必需。 要查找的文件的名称。 |
@@ -111,7 +110,7 @@ ms.locfileid: "56645922"
 
  `MsiProductCheck` 不包含任何元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Product`|必需。 已安装的产品 GUID。|
@@ -122,7 +121,7 @@ ms.locfileid: "56645922"
 
  `RegistryCheck` 不包含任何元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Key`|必需。 注册表项的名称。|
@@ -133,7 +132,7 @@ ms.locfileid: "56645922"
 
  `RegistryFileCheck` 不包含任何元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要将结果存储的属性的名称。 此属性可以引用从测试下方`InstallConditions`元素，它是子级的`Command`元素。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|
 |`Key`|必需。 注册表项的名称。 其值解释为文件的路径，除非`File`属性设置。 如果该键不存在，`Property`未设置。|

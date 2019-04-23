@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081237"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 
@@ -69,39 +69,39 @@ ms.locfileid: "57873663"
 
 **典型用法：**
 
--   检查程序代码，以便可以更好地了解其结构及其依赖关系以及如何对其进行更新，并估计建议更改的成本。
+- 检查程序代码，以便可以更好地了解其结构及其依赖关系以及如何对其进行更新，并估计建议更改的成本。
 
 **请参阅：**
 
--   [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)
--   [使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)
--   [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)
+- [使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)
+- [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>依赖项关系图
 依赖项关系图，可以为一系列层或显式依赖关系的块中定义应用程序的结构。 你可以运行验证来发现代码中的依赖关系和依赖项关系图上所述的依赖项之间的冲突。
 
 **典型用法：**
 
--   通过在应用程序生命周期中进行大量更改来稳定其结构。
--   在签入对代码的更改之前发现无意的依赖项冲突。
+- 通过在应用程序生命周期中进行大量更改来稳定其结构。
+- 在签入对代码的更改之前发现无意的依赖项冲突。
 
 **请参阅：**
 
--   [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
--   [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
--   [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
+- [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
+- [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
+- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>域特定语言 (DSL)
 DSL 是为特定目的而设计的一种表示法。 在 Visual Studio 中通常表示为图形。
 
 **典型用法：**
 
--   生成或配置应用程序的各部分。 若要开发表示法和工具，则需要进行工作。 其产生的结果，与 UML 自定义相比，会更好地适合你的域。
--   适用于大型项目或在某些产品系列中（其中 DSL 及其工具的开发投资会通过该产品在多个项目中的使用而回收）。
+- 生成或配置应用程序的各部分。 若要开发表示法和工具，则需要进行工作。 其产生的结果，与 UML 自定义相比，会更好地适应你的域。
+- 适用于大型项目或在某些产品系列中（其中 DSL 及其工具的开发投资会通过该产品在多个项目中的使用而回收）。
 
 **请参阅：**
 
--   [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？
 

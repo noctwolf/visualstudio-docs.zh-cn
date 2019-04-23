@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 68ad2e66a4cecff01005f49aa6304a515a010170
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097422"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>演练：设计 Outlook 窗体区域
   自定义窗体区域扩展标准或自定义 Microsoft Office Outlook 窗体。 在本演练中，你将设计作为新页出现在联系人项目的检查器窗口中的自定义窗体区域。 通过将地址信息发送到 Windows Live 本地搜索网站，此窗体区域将显示为联系人列出的每个地址的映射。 有关窗体区域的信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
@@ -26,15 +26,15 @@ ms.locfileid: "58355573"
 
  本演练阐释了以下任务：
 
--   创建新的 Outlook VSTO 外接程序项目。
+- 创建新的 Outlook VSTO 外接程序项目。
 
--   将窗体区域添加到 VSTO 外接程序项目。
+- 将窗体区域添加到 VSTO 外接程序项目。
 
--   设计窗体区域的布局。
+- 设计窗体区域的布局。
 
--   自定义窗体区域的行为。
+- 自定义窗体区域的行为。
 
--   测试 Outlook 窗体区域。
+- 测试 Outlook 窗体区域。
 
 > [!NOTE]
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -53,11 +53,11 @@ ms.locfileid: "58355573"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>创建新的 Outlook VSTO 外接程序项目
 
-1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Outlook VSTO 外接程序项目名称**MapItAddIn**。
+1. 在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Outlook VSTO 外接程序项目名称**MapItAddIn**。
 
-2.  在 **“新建项目”** 对话框中，选择 **“创建解决方案的目录”**。
+2. 在 **“新建项目”** 对话框中，选择 **“创建解决方案的目录”**。
 
-3.  将项目保存到任一目录。
+3. 将项目保存到任一目录。
 
      有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -66,27 +66,27 @@ ms.locfileid: "58355573"
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>向 Outlook VSTO 外接程序项目添加窗体区域
 
-1.  在中**解决方案资源管理器**，选择**MapItAddIn**项目。
+1. 在中**解决方案资源管理器**，选择**MapItAddIn**项目。
 
-2.  在 **“项目”** 菜单上，单击 **“添加新项”**。
+2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-3.  在中**添加新项**对话框中，选择**Outlook 窗体区域**，将文件命名**命名为 MapIt**，然后单击**添加**。
+3. 在中**添加新项**对话框中，选择**Outlook 窗体区域**，将文件命名**命名为 MapIt**，然后单击**添加**。
 
      **NewOutlook 窗体区域**启动向导。
 
-4.  上**选择你想要创建窗体区域**页上，单击**设计新的窗体区域**，然后单击**下一步**。
+4. 上**选择你想要创建窗体区域**页上，单击**设计新的窗体区域**，然后单击**下一步**。
 
-5.  上**选择你想要创建的窗体区域的类型**页上，单击**单独**，然后单击**下一步**。
+5. 上**选择你想要创建的窗体区域的类型**页上，单击**单独**，然后单击**下一步**。
 
      一个*单独*窗体区域将新页面添加到 Outlook 窗体。 有关窗体区域类型的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
-6.  上**提供说明性文本并选择显示首选项**页上，键入**Map It**中**名称**框。
+6. 上**提供说明性文本并选择显示首选项**页上，键入**Map It**中**名称**框。
 
      打开联系人项目时，此名称将显示在检查器窗口的功能区中。
 
-7.  选择**检查器处于撰写模式**并**读取模式下的检查器**，然后单击**下一步**。
+7. 选择**检查器处于撰写模式**并**读取模式下的检查器**，然后单击**下一步**。
 
-8.  上**标识将显示此窗体区域的邮件类**页上，清除**邮件**，选择**联系人**，然后单击**完成**.
+8. 上**标识将显示此窗体区域的邮件类**页上，清除**邮件**，选择**联系人**，然后单击**完成**.
 
      一个*MapIt.cs*或*MapIt.vb*文件添加到你的项目。
 
@@ -95,17 +95,17 @@ ms.locfileid: "58355573"
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>设计窗体区域的布局
 
-1.  在中**解决方案资源管理器**，展开**MapItAddIn**项目，然后再双击*MapIt.cs*或者*MapIt.vb*以打开窗体区域设计器。
+1. 在中**解决方案资源管理器**，展开**MapItAddIn**项目，然后再双击*MapIt.cs*或者*MapIt.vb*以打开窗体区域设计器。
 
-2.  右键单击设计器中，然后依次**属性**。
+2. 右键单击设计器中，然后依次**属性**。
 
-3.  在中**属性**窗口中，将**大小**到**664、 469**。
+3. 在中**属性**窗口中，将**大小**到**664、 469**。
 
      这可确保窗体区域的大小足以显示映射。
 
-4.  在 **“视图”** 菜单上单击 **“工具箱”**。
+4. 在 **“视图”** 菜单上单击 **“工具箱”**。
 
-5.  从**公共控件**选项卡**工具箱**，将添加**WebBrowser**到窗体区域。
+5. 从**公共控件**选项卡**工具箱**，将添加**WebBrowser**到窗体区域。
 
      **WebBrowser**将显示为联系人列出的每个地址的地图。
 
@@ -143,13 +143,13 @@ ms.locfileid: "58355573"
 
 ### <a name="to-test-the-map-it-form-region"></a>测试 Map It 窗体区域
 
-1.  按 F5 运行项目。
+1. 按 F5 运行项目。
 
      Outlook 将打开。
 
-2.  在 Outlook 中，在**主页**选项卡上，单击**新项**，然后单击**联系人**。
+2. 在 Outlook 中，在**主页**选项卡上，单击**新项**，然后单击**联系人**。
 
-3.  在联系人窗体中，键入**Ann Beebe**为联系人名称、，然后指定以下三个地址。
+3. 在联系人窗体中，键入**Ann Beebe**为联系人名称、，然后指定以下三个地址。
 
     |地址类型|Address|
     |------------------|-------------|
@@ -157,20 +157,20 @@ ms.locfileid: "58355573"
     |**主文件夹**|**1234 北部 St.Buffalo 纽约州**|
     |**其他**|**3456 Main St. Seattle, WA**|
 
-4.  保存并关闭联系人项目。
+4. 保存并关闭联系人项目。
 
-5.  重新打开**Ann Beebe**联系人项目。
+5. 重新打开**Ann Beebe**联系人项目。
 
     在 Outlook 中，可以进行这**查找**组通过打开联系人的通讯或键入到 Ann Beebe**搜索人员**。
 
-6.  在中**显示**组的项的功能区中，单击**Map It**以打开 Map It 窗体区域。
+6. 在中**显示**组的项的功能区中，单击**Map It**以打开 Map It 窗体区域。
 
      Map It 窗体区域出现，并显示本地搜索网站。 **业务**，**主页**，并**其他**地址显示在暂存器。 在便笺本中，选择需映射的地址。
 
 ## <a name="next-steps"></a>后续步骤
  可从以下主题了解有关如何自定义 Outlook 应用程序 UI 的详细信息：
 
--   若要了解有关如何自定义 Outlook 项的功能区，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 若要了解有关如何自定义 Outlook 项的功能区，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
 ## <a name="see-also"></a>请参阅
 - [访问在运行时的窗体区域](../vsto/accessing-a-form-region-at-run-time.md)

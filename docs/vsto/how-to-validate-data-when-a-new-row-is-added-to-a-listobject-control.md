@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a78674a0738c0b7a0f69e04decd70fbbf1d1e367
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039306"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>如何：一个新行添加到 ListObject 控件时验证数据
   用户可以向绑定到数据的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加新行。 可以在将更改提交到数据源之前验证用户数据。
@@ -34,17 +34,17 @@ ms.locfileid: "56615853"
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>在向数据绑定 ListObject 添加新行时验证数据
 
-1.  在类级别为 ID 和 <xref:System.Data.DataTable> 创建变量。
+1. 在类级别为 ID 和 <xref:System.Data.DataTable> 创建变量。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#8)]
      [!code-vb[Trin_VstcoreHostControlsExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#8)]
 
-2.  创建一个新<xref:System.Data.DataTable>并添加示例列和中的数据`Startup`事件处理程序`Sheet1`类 （在文档级项目中） 或`ThisAddIn`类 （在 VSTO 外接程序项目中）。
+2. 创建一个新<xref:System.Data.DataTable>并添加示例列和中的数据`Startup`事件处理程序`Sheet1`类 （在文档级项目中） 或`ThisAddIn`类 （在 VSTO 外接程序项目中）。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#9)]
      [!code-vb[Trin_VstcoreHostControlsExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#9)]
 
-3.  向 `list1_BeforeAddDataBoundRow` 事件处理程序添加代码以检查输入的年龄是否处于可接受的范围内。
+3. 向 `list1_BeforeAddDataBoundRow` 事件处理程序添加代码以检查输入的年龄是否处于可接受的范围内。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#10)]
      [!code-vb[Trin_VstcoreHostControlsExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#10)]

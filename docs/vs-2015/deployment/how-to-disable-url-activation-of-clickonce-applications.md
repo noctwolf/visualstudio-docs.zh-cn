@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22128d20bf83a8c6f2295b79653eabb3439c4b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936910"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046963"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>如何：禁用 ClickOnce 应用程序的 URL 激活
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "58936910"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>禁用应用程序的 URL 激活的步骤  
   
-1.  在 MageUI.exe 中打开部署清单。 如果尚未创建一个，请按照中的步骤[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+1. 在 MageUI.exe 中打开部署清单。 如果尚未创建一个，请按照中的步骤[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
-2.  选择“部署选项”选项卡。  
+2. 选择“部署选项”选项卡。  
   
-3.  清除“安装后自动运行应用程序”复选框。  
+3. 清除“安装后自动运行应用程序”复选框。  
   
-4.  保存并对清单进行签名。  
+4. 保存并对清单进行签名。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

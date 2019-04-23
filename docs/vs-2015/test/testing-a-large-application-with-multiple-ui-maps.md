@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073886"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "54775081"
 ## <a name="do-you-need-multiple-ui-maps"></a>你是否需要多个 UI 映射？  
  可在以下情况下创建多个 UI 映射：  
   
--   一起执行逻辑操作的多个复杂的复合 UI 控件集，如网站中的注册页或购物车的购买页。  
+- 一起执行逻辑操作的多个复杂的复合 UI 控件集，如网站中的注册页或购物车的购买页。  
   
--   可从应用程序的各个点进行访问的独立的一组控件，如具有多个操作页的向导。 如果向导的每页都特别复杂，则可为每页创建单独的 UI 映射。  
+- 可从应用程序的各个点进行访问的独立的一组控件，如具有多个操作页的向导。 如果向导的每页都特别复杂，则可为每页创建单独的 UI 映射。  
   
 ## <a name="adding-multiple-ui-maps"></a>添加多个 UI 映射  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039248"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活动设计器
 
@@ -49,11 +49,11 @@ ms.locfileid: "55942981"
 
 在 <xref:System.Activities.Activity.CacheMetadata%2A> 中注册这些参数的算法如下所列：
 
-1.  注册 <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 参数。
+1. 注册 <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 自变量。
 
-2.  注册 <xref:System.Activities.Statements.InvokeMethod.Result%2A> 参数。
+2. 注册 <xref:System.Activities.Statements.InvokeMethod.Result%2A> 自变量。
 
-3.  循环访问 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合并注册每个自变量。
+3. 循环访问 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合并注册每个自变量。
 
 产生的异常的类型是<xref:System.Activities.InvalidWorkflowException>并显示以下消息：InvokeMethod:变量、 RuntimeArgument 或 DelegateArgument 已存在名为 TargetObject。 在环境作用域中，名称必须唯一。
 

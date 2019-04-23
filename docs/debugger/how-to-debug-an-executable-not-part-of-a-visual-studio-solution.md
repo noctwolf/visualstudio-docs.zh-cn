@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051331"
 ---
-# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>调试不是 Visual Studio 解决方案的一部分在应用程序 (c + +， C#，Visual Basic 中， F#)
+# <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>调试的应用程序不是 Visual Studio 解决方案的一部分 (C++， C#，Visual Basic 中， F#)
 
 你可能想要调试应用程序 (*.exe*文件) 的不是 Visual Studio 解决方案的一部分。 你或其他人可能已创建 Visual Studio 外部的应用或从其他位置获取应用程序。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56690196"
 
 附加到应用程序需要花费几秒钟的手动步骤。 由于这种延迟，附加将不会有帮助调试的启动问题，或的应用程序不会等待用户输入而迅速完成。
 
-在这些情况下，可以创建应用程序，Visual Studio EXE 项目或将其导入的现有C#，Visual Basic 或 c + + 解决方案。 并非所有编程语言都支持 EXE 项目。
+在这些情况下，可以创建应用程序，Visual Studio EXE 项目或将其导入的现有C#，Visual Basic 或C++解决方案。 并非所有编程语言都支持 EXE 项目。
 
 >[!IMPORTANT]
 >是否附加到应用或将其添加到 Visual Studio 解决方案，将受到限制，不在 Visual Studio 中生成的应用的调试功能。
@@ -58,7 +58,7 @@ ms.locfileid: "56690196"
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>若要将应用导入到现有的 Visual Studio 解决方案
 
-1.  使用 c + +， C#，或 Visual Basic 解决方案打开在 Visual Studio 中，选择**文件** > **添加** > **现有项目**。
+1. 使用C++， C#，或 Visual Basic 解决方案打开在 Visual Studio 中，选择**文件** > **添加** > **现有项目**。
 
 1. 在中**打开项目**对话框中，选择**所有项目文件**，如果尚未选择，请在下拉列表中下一步**文件名**。
 

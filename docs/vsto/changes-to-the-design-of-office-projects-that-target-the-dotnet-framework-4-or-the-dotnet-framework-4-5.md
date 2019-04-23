@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146ece23d1ff4ed516d5c7d009bfc439c2387bb5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 046e0e5ab33d3eece5c44fcadb31ca93700587e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093652"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>面向.NET Framework 4 或.NET Framework 4.5 的 Office 项目设计更改
   从 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]开始，Visual Studio 引入了对面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目设计的一些更改。 如果你熟悉以前的 Visual Studio 版本中的 Office 项目，那么在开发面向 .NET Framework 4.0 或更高版本的 Office 项目之前，应了解这些更改。 默认情况下，使用 Visual Studio 2013 或更高版本创建的所有项目都面向 .NET Framework 4.0 或更高版本。
@@ -30,11 +30,11 @@ ms.locfileid: "57870326"
 
  对于可以在以前版本的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中直接实例化的任何类型，现在可使用 `Globals.Factory` 对象的方法来获取这些类型的实例。 例如，若要获取实现 <xref:Microsoft.Office.Tools.Excel.SmartTag> 接口的对象，请使用 `Globals.Factory.CreateSmartTag` 方法。 有关详细信息，请参阅下列主题：
 
--   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 项目](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 项目](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
--   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
+- [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义](/visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5)
 
--   [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
+- [更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域](../vsto/updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
 ### <a name="new-base-classes-in-office-projects"></a>Office 项目中的新基类
  新的 Visual Studio 2010 Tools for Office 运行时基于接口的设计会影响 Office 项目中生成的类，如`ThisDocument`， `ThisWorkbook`，和`ThisAddIn`。 在面向.NET Framework 3.5 和以前版本的 Framework 的 Office 项目中，这些生成的类派生自 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的类，如 `Microsoft.Office.Tools.Word.Document`、`Microsoft.Office.Tools.Excel.Worksheet` 和 `Microsoft.Office.Tools.AddIn`。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 类现在为接口。 因此，Office 项目中生成的类不再从这些类派生其实现。 相反，生成的类派生自诸如 <xref:Microsoft.Office.Tools.Word.DocumentBase>、 <xref:Microsoft.Office.Tools.Excel.WorksheetBase>和 <xref:Microsoft.Office.Tools.AddInBase>等新基类。 有关详细信息，请参阅[程序 VSTO 外接](../vsto/programming-vsto-add-ins.md)并[程序文档级自定义项](../vsto/programming-document-level-customizations.md)。

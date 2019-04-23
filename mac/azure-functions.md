@@ -3,16 +3,16 @@ title: Azure Functions 简介
 description: 在 Visual Studio for Mac 中使用 Azure Functions。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295938"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857238"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 
@@ -20,7 +20,7 @@ Azure functions 是一种在云中创建和运行事件驱动的代码片段（�
 
 ## <a name="requirements"></a>要求
 
-Azure Function 工具包含在 Visual Studio for Mac 7.5 中。
+Azure Function 工具包含在 Visual Studio for Mac 7.5 和更高版本中。
 
 若要创建和部署函数，还需要 Azure 订阅，可从 [https://azure.com/free](https://azure.com/free) 免费获取。
 
@@ -34,6 +34,10 @@ Azure Function 工具包含在 Visual Studio for Mac 7.5 中。
 3. 选择要使用的初始 Azure Functions 模板，输入函数名称，然后单击“下一步”。
 
     ![“新建项目”对话框显示 Azure Functions 模板](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > 虽然已尽可能地将捆绑的 Azure Functions 运行时和模板 (CLI) 保持最新，但它们难免会过时。 创建新的 Functions 项目时，Visual Studio for Mac 将检查 CLI 的更新并发出通知，如下图所示。 只需单击按钮即可下载更新的模板。
+    > ![显示存在 Azure Functions 更新的“新建项目”对话框](media/azure-functions-update.png)
 
     根据所选函数类型，下一页会提示输入详细信息，例如访问权限，如下图所示：
 
@@ -91,20 +95,17 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
-1. 右键单击项目名称，然后选择“发布”>“发布到 Azure”：![发布到 Azure 菜单选项](media/azure-functions-image5.png)
+1. 右键单击项目名，然后选择“发布”>“发布到 Azure”：![发布到 Azure 菜单选项](media/azure-functions-image5.png)
 2. 如果已将 Azure 帐户连接到 Visual Studio for Mac，则会显示可用应用服务的列表。 如果尚未登录，系统将提示登录。
 3. 从“发布到 Azure 应用服务”对话框，可选择现有应用服务，也可通过单击“新建”来创建新服务。
 4. 在“创建新的应用服务”对话框中，输入设置：![发布到 Azure 菜单选项](media/azure-functions-image7.png)
 
-    |设置  |描述  |
+    |设置  |说明  |
     |---------|---------|
     |**应用服务名称**|用于标识新函数应用的全局唯一名称。|
     |**订阅**|要使用的 Azure 订阅。|
     |**[资源组](/azure/azure-resource-manager/resource-group-overview)**|要在其中创建函数应用的资源组的名称。 选择“+”以创建新的资源组。|
     |**[服务计划](/azure/azure-functions/functions-scale)**|选择现有计划或创建自定义计划。 在附近的区域或函数访问的其他服务附近选择一个位置。|
-
-    > [!CAUTION]
-    > Visual Studio for Mac 的 7.6 版本中存在 bug，如果尝试创建自定义服务计划，且“定价”设置为“消费”，会导致发布失败并出现预配错误。 此问题将在下一服务版本中修复。
 
 5. 单击“下一步”创建存储帐户。 Functions 运行时需要 Azure 存储帐户。 单击“自定义”以创建通用存储帐户，或使用现有帐户：
 
@@ -116,14 +117,11 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
 
     ![发布到 Azure 菜单选项](media/azure-functions-image12.png)
 
-> [!CAUTION]
-> Visual Studio for Mac 的 7.6 版本中存在一个 bug，其中 `FUNCTIONS_EXTENSION_VERSION` 未正确设置为“beta 版本”，这意味着函数可能无法运行。 若要解决此问题，请转到[函数应用设置](#function-app-settings)并将 `FUNCTIONS_EXTENSION_VERSION` 从“-1”设置为“beta 版本”。
-
 ## <a name="function-app-settings"></a>函数应用设置
 
 在 local.settings.json 中添加的任何设置也必须添加到 Azure 中的函数应用中。 发布项目时，不会自动上传这些设置。
 
-若要访问应用设置，请转到 [https://ms.portal.azure.com/](https://ms.portal.azure.com/) 处的 Azure 门户。 在“Function App”下，选择“函数应用”并突出显示函数名称：
+若要访问应用设置，请转到 Azure 门户，网址为 [https://ms.portal.azure.com/](https://ms.portal.azure.com/)。 在“Function App”下，选择“函数应用”并突出显示函数名称：
 
 ![Azure Functions 菜单](media/azure-functions-image9.png)
 

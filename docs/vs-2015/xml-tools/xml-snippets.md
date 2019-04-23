@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6c3155ee65031b57ec70cc7f22ed53cdef67ebf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e2fbba9006c1621b8f98084d4ffd4c637be1127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935503"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654650"
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 编辑器提供一种功能，称为*XML 代码段*，这样可以更快地生成 XML 文件。 XML 代码段可以通过插入文件反复使用。 您还可以根据 XML 架构定义语言 (XSD) 架构生成 XML 数据。  
   
 ## <a name="reusable-xml-snippets"></a>可反复使用的 XML 代码段  

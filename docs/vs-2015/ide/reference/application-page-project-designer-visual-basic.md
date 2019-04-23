@@ -15,17 +15,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f94323fbfa7369e3fef93b0f95a8db2ea46ce2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774855"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670376"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用项目设计器的“应用程序”页可指定项目的应用程序设置和属性。  
   
  若要访问“应用程序”页，请在**解决方案资源管理器**中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目”、“属性”。 当项目设计器出现时，单击“应用程序”选项卡。  

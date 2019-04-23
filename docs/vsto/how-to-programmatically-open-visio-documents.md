@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b87d3b1659d46a69e5a2e950997d3c0474e84d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037850"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
   有两种方法来打开现有 Microsoft Office Visio 文档：打开和 OpenEx。 OpenEx 方法等同于 Open 方法，只不过它提供调用方可以在其中指定文档打开方式的参数。
@@ -29,7 +29,7 @@ ms.locfileid: "56598383"
 
 ### <a name="to-open-a-visio-document"></a>若要打开 Visio 文档
 
--   调用 `Microsoft.Office.Interop.Visio.Documents.Open` 方法并提供 Visio 文档的完全限定路径。
+- 调用 `Microsoft.Office.Interop.Visio.Documents.Open` 方法并提供 Visio 文档的完全限定路径。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
@@ -38,7 +38,7 @@ ms.locfileid: "56598383"
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>如要以只读和停靠方式打开 Visio 文档
 
--   调用 `Microsoft.Office.Interop.Visio.Documents.OpenEx` 方法，提供 Visio 文档的完全限定路径，并包括想要使用的参数，在本例中为 Docked 和 Read-only。
+- 调用 `Microsoft.Office.Interop.Visio.Documents.OpenEx` 方法，提供 Visio 文档的完全限定路径，并包括想要使用的参数，在本例中为 Docked 和 Read-only。
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]
@@ -46,7 +46,7 @@ ms.locfileid: "56598383"
 ## <a name="compile-the-code"></a>编译代码
  此代码示例要求满足以下条件：
 
--   名为的 Visio 文档`myDrawing.vsd`必须位于一个名为目录`Test`中*我的文档*文件夹 （对于 Windows XP 及更早版本） 或*文档*文件夹 （对于 Windows Vista)。
+- 名为的 Visio 文档`myDrawing.vsd`必须位于一个名为目录`Test`中*我的文档*文件夹 （对于 Windows XP 及更早版本） 或*文档*文件夹 （对于 Windows Vista)。
 
 ## <a name="see-also"></a>请参阅
 - [Visio 解决方案](../vsto/visio-solutions.md)

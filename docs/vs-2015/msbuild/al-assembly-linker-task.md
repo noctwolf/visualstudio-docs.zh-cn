@@ -19,23 +19,22 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8d70651d319f174f2ed7c1ee81021d89201bbcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6113bbcb271aa7774bca538858b02edb9f5e3583
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758637"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662226"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 一起分发的工具）。 此程序集链接器工具用于创建包含来自一个或多个文件（这些文件可以是模块或资源文件）的清单的程序集。 编译器和开发环境可能已提供这些功能，因此通常不需要直接使用此任务。 对于需要从多个组件文件（例如可能从混合语言开发生成的组件文件）创建单个程序集的开发人员来说，程序集链接器非常有用。 此任务不能将模块合并到单个程序集文件；单个模块必须仍为分布式且可用，以便正确加载生成程序集。 有关 AL.exe 的详细信息，请参阅 [Al.exe（程序集链接器）](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `AL` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AlgorithmID`|可选 `String` 参数。<br /><br /> 指定一种算法来对多文件程序集中的所有文件（包含程序集清单的文件除外）进行哈希处理。 有关详细信息，请参阅 [Al.exe（程序集链接器）](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)中 `/algid` 选项的文档。|  
 |`BaseAddress`|可选 `String` 参数。<br /><br /> 指定一个地址，运行时在用户计算机上在该地址加载 DLL。 如果指定 DLL 的基址，而不是让操作系统在进程空间内重新定位 DLL，则应用程序的加载速度会更快。 此参数对应于 [Al.exe（程序集链接器）](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)中的 /base[address] 选项。|  

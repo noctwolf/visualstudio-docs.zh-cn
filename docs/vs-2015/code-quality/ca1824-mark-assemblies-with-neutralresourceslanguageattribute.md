@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8690a1f05f54fbac9427f4a03412e0a8054c51d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052163"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:用 NeutralResourcesLanguageAttribute 标记程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58934591"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>若要指定非特定区域性的资源的语言
 
-1.  在中**解决方案资源管理器**，右键单击你的项目，然后单击**属性**。
+1. 在中**解决方案资源管理器**，右键单击你的项目，然后单击**属性**。
 
-2.  从左侧的导航栏中选择**应用程序**，然后单击**程序集信息**。
+2. 从左侧的导航栏中选择**应用程序**，然后单击**程序集信息**。
 
-3.  在中**程序集信息**对话框框中，选择从语言**中性语言**下拉列表。
+3. 在中**程序集信息**对话框框中，选择从语言**中性语言**下拉列表。
 
-4.  单击 **“确定”**。
+4. 单击 **“确定”**。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它是允许要禁止显示此规则的警告。 但是，启动性能可能会降低。

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098644"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
@@ -59,7 +59,7 @@ ms.locfileid: "59232692"
 > [!NOTE]
 > 如果你想要调试已在运行的进程，您可以仅收集 IntelliTrace 事件 （没有调用信息）。 您可以将附加到本地计算机上的 32 位或 64 位进程。 不收集发生之前附加到进程的事件。
 
-##  <a name="IntelliTraceVSTraditional"></a>为何使用 IntelliTrace 进行调试？
+## <a name="IntelliTraceVSTraditional"></a>为何使用 IntelliTrace 进行调试？
 
 传统或实时调试仅显示应用程序的当前状态以及有关过去事件的有限数据。 要么必须根据应用程序的当前状态推断这些事件，要么必须通过重新运行应用程序以重新生成这些事件。
 
@@ -97,7 +97,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
      当你需要诊断部署中的应用程序的问题时，这会很有用。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
-##  <a name="WhatData"></a>IntelliTrace 收集哪些数据？
+## <a name="WhatData"></a>IntelliTrace 收集哪些数据？
 
 **收集事件信息**
 

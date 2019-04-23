@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50958671d327013254b0a19e3dda160b1b3035e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce9b74012be35433c26f8446f36246dbe93f6442
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044243"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：从摘要时间线中筛选报告视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ ms.locfileid: "54778852"
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>从“摘要”时间线图筛选分析报表  
   
-1.  在“摘要”视图时间线图中，单击时间线上的点，然后将鼠标拖动到时间线上的另一个点。  
+1. 在“摘要”视图时间线图中，单击时间线上的点，然后将鼠标拖动到时间线上的另一个点。  
   
      指定的区域会显示为阴影。  
   
-2.  单击“按选定内容筛选”。
+2. 单击“按选定内容筛选”。

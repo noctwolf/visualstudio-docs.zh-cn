@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070890"
 ---
 # <a name="search-the-schema-set"></a>搜索架构集
 
 **XML 架构资源管理器**使您可以搜索架构集以下方面：
 
--   关键字搜索。
+- 关键字搜索。
 
--   特定于架构的搜索。
+- 特定于架构的搜索。
 
 ## <a name="keyword-search"></a>关键字搜索
 
@@ -31,11 +31,11 @@ ms.locfileid: "55930852"
 
  **XML 架构资源管理器**搜索架构集在以下属性：
 
--   与指定关键字匹配的任何 `name` 或 `ref` 特性。 可以按名称查找元素、 属性、 类型和等等。
+- 与指定关键字匹配的任何 `name` 或 `ref` 特性。 可以按名称查找元素、 属性、 类型和等等。
 
--   包括语句的 `schemaLocation` 特性。
+- 包括语句的 `schemaLocation` 特性。
 
--   导入语句的 `namespace` 特性。
+- 导入语句的 `namespace` 特性。
 
 ## <a name="schema-specific-search"></a>架构特定的搜索
 

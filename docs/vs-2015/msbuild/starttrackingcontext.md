@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a23ea93cb1ca486b6804b778f7532ba4c39c900
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: da002fe757d623a665b39c16cc10e77e492e2660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802983"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657190"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 启动跟踪上下文。  
   
 ## <a name="syntax"></a>语法  
@@ -44,7 +43,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  标识跟踪上下文。 此名称用于创建日志文件名。  
   
 ## <a name="return-value"></a>返回值  
- 如果曾创建了跟踪上下文，则返回带 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位集的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
+ 一个 [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) 使用的 [SUCCEEDED] （<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 如果跟踪上下文创建位集。  
   
 ## <a name="requirements"></a>要求  
- 标头：FileTracker.h
+ **标头：** FileTracker.h

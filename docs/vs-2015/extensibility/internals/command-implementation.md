@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067828"
 ---
 # <a name="command-implementation"></a>命令实现
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - 如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 使用以下标志：  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支持该命令。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支持该命令。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令不应是可见的。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令不应是可见的。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令打开并显示为具有已选中。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令打开并显示为具有已选中。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果启用了该命令。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果启用了该命令。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果应隐藏该命令，如果它显示在快捷菜单。  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果应隐藏该命令，如果它显示在快捷菜单。  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）  
   
 - 如果在.vsct 文件中定义该命令`TextChanges`标志，请将以下参数：  
   
-  -   设置`rgwz`元素的`pCmdText`的新文本的命令的参数。  
+  - 设置`rgwz`元素的`pCmdText`的新文本的命令的参数。  
   
-  -   设置`cwActual`元素的`pCmdText`命令字符串的大小参数。  
+  - 设置`cwActual`元素的`pCmdText`命令字符串的大小参数。  
   
   此外请确保当前上下文不是自动化函数，除非您的命令专门用于处理自动化功能。  
   

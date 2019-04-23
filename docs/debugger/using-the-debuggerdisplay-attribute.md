@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537632"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099888"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>要演示如何使用 DebuggerDisplay 特性让调试程序 (C#，Visual Basic 中， F#， C++/CLI)
 <xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 "，nq"后缀指示表达式计算器才能删除引号时显示的最终值 (nq = 无加引号)。
 
 ## <a name="example"></a>示例
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041573"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
@@ -44,7 +44,7 @@ Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显
 
 始终无需启动通过启动应用程序在开始调试。 此外可以按**F11**到[单步执行代码](#BKMK_Step_into__over__or_out_of_the_code)，按**F10**到[逐过程执行代码](#BKMK_Step_over_Step_out)，或[运行到特定位置或函数](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)。
 
-##  <a name="step-through-code"></a>逐行执行代码
+## <a name="step-through-code"></a>逐行执行代码
 
 调试器单步执行命令帮助你检查应用的状态或了解有关其执行流的详细信息。
 
@@ -75,16 +75,16 @@ Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显
 >[!TIP]
 >执行每行代码，你可以悬停在变量，以查看它们的值，或者可以使用[局部变量](autos-and-locals-windows.md)并[监视](watch-and-quickwatch-windows.md)监视更改的值。 你可以单步执行函数时还直观地跟踪调用堆栈。 请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。
 
-###  <a name="BKMK_Step_over_Step_out"></a> 单步执行代码并跳过某些函数
+### <a name="BKMK_Step_over_Step_out"></a> 单步执行代码并跳过某些函数
 
 您可能不关心函数同时调试，或者您知道工作方式，类似于经过全面测试的库代码。 可以使用以下命令以跳过代码。 仍可以执行函数，但调试器跳过它们。
 
-|键盘命令|调试菜单命令|说明|
+|键盘命令|调试菜单命令|描述|
 |----------------------|------------------|-----------------|
 |**F10**|**逐过程**|如果当前行包含函数调用中，**单步跳过**运行代码，然后在被调用的函数返回之后，在第一行代码处挂起执行。|
 |Shift+F11|**跳出**|**单步跳出**会继续运行代码，当前函数返回时挂起执行。 通过当前函数，调试器会跳过。|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 运行到特定位置或函数
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 运行到特定位置或函数
 
 您可能更愿意时知道你想要检查，具体的代码直接向特定位置或函数运行或者您知道你想要开始调试。
 
@@ -108,7 +108,7 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 
    ![新建函数断点对话框](../debugger/media/dbg_execution_newbreakpoint.png "新函数断点")
 
-1. 选择“确定”。
+1. 选择 **确定**。
 
 如果该函数已超载，或者在多个命名空间，你可以选择在所的需**断点**窗口。
 
@@ -139,7 +139,7 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 
 若要中断下一个可用的正在运行的应用中的代码行中，选择**调试** > **全部中断**，或按**Ctrl**+**Alt** +**中断**。
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> 移动指针以更改执行流
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> 移动指针以更改执行流
 
 调试器暂停时，对源代码的边距中的黄色箭头或**反汇编**窗口标记要执行的下一个语句的位置。 你可以通过移动此箭头执行的下一个语句。 可以跳过了一部分代码，或返回到上一代码行。 移动指针可用于如跳过包含已知的 bug 的代码部分的情况。
 
@@ -181,7 +181,7 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 
 1. 在中**模块**窗口中，您可以知道该模块具有中加载符号**符号状态**列。 右键单击你想要加载符号，然后选择该模块**加载符号**。
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 单步执行托管代码中的属性和运算符
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 单步执行托管代码中的属性和运算符
  默认情况下，调试器将逐过程执行托管代码中的属性和运算符。 在多数情况下，这会提供较好的调试体验。 若要启用单步执行属性或运算符，请选择**调试** > **选项**。 在“调试” > “常规”页面上，清除“逐过程执行属性和运算符(仅限托管)”复选框。
 
 ## <a name="see-also"></a>请参阅

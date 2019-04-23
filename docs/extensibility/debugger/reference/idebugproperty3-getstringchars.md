@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 900238434f5671cd9a5ba1bd358304638551dbc5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698139"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658094"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 检索与此属性关联的字符串并将其存储在用户提供的缓冲区。
@@ -49,21 +49,20 @@ int GetStringChars(
 
  [out]返回的字符串。
 
-
- [仅 c + +]，`rgString`指向该缓冲区用于接收字符串的 Unicode 字符的指针。 此缓冲区必须至少为`buflen`中大小的字符 （而非字节）。
+ [C++仅]，`rgString`指向该缓冲区用于接收字符串的 Unicode 字符的指针。 此缓冲区必须至少为`buflen`中大小的字符 （而非字节）。
 
 `pceltFetched`
 
- [out]其中返回的实际存储在缓冲区中的字符数。 (可以是`NULL`c + + 中。)
+ [out]其中返回的实际存储在缓冲区中的字符数。 (可以是`NULL`在C++。)
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-在 c + +，必须格外小心以确保缓冲区至少`buflen`Unicode 字符。 请注意，Unicode 字符 2 个字节长。
+在C++，必须格外小心以确保缓冲区至少`buflen`Unicode 字符。 请注意，Unicode 字符 2 个字节长。
 
 > [!NOTE]
-> 在 c + +，则返回的字符串不包括终止 null 字符。 如果给定，`pceltFetched`将在字符串中指定的字符数。
+> 在C++，则返回的字符串不包括终止 null 字符。 如果给定，`pceltFetched`将在字符串中指定的字符数。
 
 ## <a name="example"></a>示例
 

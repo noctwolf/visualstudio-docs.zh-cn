@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7facc5a70b603b016bbafd207650caaef05027fa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094705"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何：滚动工作表中的数据库记录
   以下过程说明如何使用设计器来显示单个字段从数据库表中的 Microsoft Office Excel 工作表，使最终用户可以滚动浏览所有记录的控件。
@@ -31,17 +31,17 @@ ms.locfileid: "56600241"
 
 ## <a name="to-scroll-through-database-records-in-a-worksheet"></a>可滚动显示各个工作表中的数据库记录
 
-1.  在 Visual Studio 中打开一个 Excel 应用程序项目。
+1. 在 Visual Studio 中打开一个 Excel 应用程序项目。
 
-2.  打开**数据源**窗口并从数据库创建数据源。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+2. 打开**数据源**窗口并从数据库创建数据源。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
-3.  展开包含你想要显示的数据的表并选择特定列。
+3. 展开包含你想要显示的数据的表并选择特定列。
 
-4.  打开列表控件，然后选择**NamedRange**。
+4. 打开列表控件，然后选择**NamedRange**。
 
-5.  拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>控件拖动到想要显示的数据的单元格。
+5. 拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>控件拖动到想要显示的数据的单元格。
 
-6.  从**Windows 窗体**选项卡**工具箱**，将添加<xref:System.Windows.Forms.BindingNavigator>控制到工作表，并设置你想要使用的控件。 有关详细信息，请参阅[BindingNavigator 控件概述&#40;Windows 窗体&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
+6. 从**Windows 窗体**选项卡**工具箱**，将添加<xref:System.Windows.Forms.BindingNavigator>控制到工作表，并设置你想要使用的控件。 有关详细信息，请参阅[BindingNavigator 控件概述&#40;Windows 窗体&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
 
 ## <a name="see-also"></a>请参阅
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)

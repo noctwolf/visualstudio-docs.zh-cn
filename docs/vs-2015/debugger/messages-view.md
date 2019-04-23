@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080574"
 ---
 # <a name="messages-view"></a>消息视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Spy++ 消息视图
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>若要打开的窗口、 进程或线程的消息视图  
   
-1.  将焦点移至[Windows 视图](../debugger/windows-view.md)，[进程视图](../debugger/processes-view.md)，或[线程视图](../debugger/threads-view.md)窗口。  
+1. 将焦点移至[Windows 视图](../debugger/windows-view.md)，[进程视图](../debugger/processes-view.md)，或[线程视图](../debugger/threads-view.md)窗口。  
   
-2.  查找你想要检查，其消息的项的节点并选择它。  
+2. 查找你想要检查，其消息的项的节点并选择它。  
   
-3.  从**Spy**菜单中，选择**日志消息**。  
+3. 从**Spy**菜单中，选择**日志消息**。  
   
      [消息选项对话框](../debugger/message-options-dialog-box.md)随即打开。  
   
-4.  选择你想要显示的消息的选项。  
+4. 选择你想要显示的消息的选项。  
   
-5.  按**确定**开始日志记录消息。  
+5. 按**确定**开始日志记录消息。  
   
      一个视图窗口将打开，消息的以及**消息**菜单添加到 Spy + + 工具栏。 根据所选的选项，消息开始流式传送到活动的消息视图窗口。  
   
-6.  在必须足够多的消息，请选择**停止日志记录**从**消息**菜单。  
+6. 在必须足够多的消息，请选择**停止日志记录**从**消息**菜单。  
   
 ## <a name="in-this-section"></a>本节内容  
  [控制消息视图](../debugger/how-to-control-messages-view.md)  

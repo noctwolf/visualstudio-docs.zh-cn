@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfa7ed62276e63e80158a86165b59e367d7a88f4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066983"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是一个回调函数，用于通过[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举集合的文件的名称，并确定每个文件的状态。
@@ -52,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|停止处理。|
 |SCC_E_xxx|任何相应的 SCC 错误应停止处理。|
 
-##  <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 结构
+## <a name="LinkQUERYCHANGESDATA"></a> QUERYCHANGESDATA 结构
  每个文件中传递的结构如下所示：
 
 ```cpp

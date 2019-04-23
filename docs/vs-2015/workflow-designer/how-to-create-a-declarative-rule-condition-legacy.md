@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039525"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>如何：创建声明性规则条件（旧版）
 本主题介绍如何使用面向 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 的旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 来声明规则条件。  
@@ -27,37 +27,37 @@ ms.locfileid: "58931198"
   
  声明性规则条件用在以下 Windows Workflow Foundation 现成可用的活动中：  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>使用规则条件编辑器创建声明性规则条件  
   
-1.  在活动的**属性**窗口中，单击**条件**属性或**UntilCondition**属性，具体取决于该活动。  
+1. 在活动的**属性**窗口中，单击**条件**属性或**UntilCondition**属性，具体取决于该活动。  
   
-2.  选择**声明性规则条件**从属性列表。  
+2. 选择**声明性规则条件**从属性列表。  
   
-3.  展开**条件**或**UntilCondition**属性。  
+3. 展开**条件**或**UntilCondition**属性。  
   
-4.  单击**ConditionName**属性。  
+4. 单击**ConditionName**属性。  
   
-5.  单击**ConditionName**省略号 **[...]** 以打开**选择条件**对话框。  
+5. 单击**ConditionName**省略号 **[...]** 以打开**选择条件**对话框。  
   
-6.  单击**新的条件**以打开**规则条件编辑器**对话框。  
+6. 单击**新的条件**以打开**规则条件编辑器**对话框。  
   
-7.  键入的表达式中的条件**条件**文本框。  
+7. 键入的表达式中的条件**条件**文本框。  
   
      有关如何创建条件表达式的信息，请参阅[规则条件编辑器对话框 （旧版）](../workflow-designer/rule-condition-editor-dialog-box-legacy.md)。  
   
-8.  创建的条件表达式完成后，单击**确定**关闭对话框并创建规则条件与分配的名称。  
+8. 创建的条件表达式完成后，单击**确定**关闭对话框并创建规则条件与分配的名称。  
   
      **选择条件**对话框随即打开。  
   

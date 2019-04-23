@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054620"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 代码（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "54765007"
   
  类设计器支持以下 C++ 代码元素：  
   
--   类（与托管类形状类似，只不过它可以具有多重继承关系）  
+- 类（与托管类形状类似，只不过它可以具有多重继承关系）  
   
--   匿名类（显示类视图为匿名类型生成的名称）  
+- 匿名类（显示类视图为匿名类型生成的名称）  
   
--   模板类  
+- 模板类  
   
--   结构  
+- 结构  
   
--   Enum  
+- Enum  
   
--   宏（显示宏的处理后视图）  
+- 宏（显示宏的处理后视图）  
   
--   Typedef  
+- Typedef  
   
 > [!NOTE]
 >  与 UML 类图不同的时你可以在建模项目中创建。 有关详细信息，请参阅 [UML 类图：参考](../modeling/uml-class-diagrams-reference.md)。  
@@ -84,27 +84,27 @@ ms.locfileid: "54765007"
 ### <a name="troubleshooting-other-error-messages"></a>排除其他错误消息  
  在 Microsoft Developer Network (MSDN) 公共论坛中，可以找到有关对错误和警告进行疑难解答的帮助。 请参阅 [Visual Studio 类设计器论坛](http://go.microsoft.com/fwlink/?linkid=160754)。  
   
-##  <a name="limitations"></a>C++ 代码元素的限制  
+## <a name="limitations"></a>C++ 代码元素的限制  
   
--   当加载 Visual C++ 项目时，类设计器将以只读方式运行。 可以更改类图，但无法将类图的更改保存回源代码。  
+- 当加载 Visual C++ 项目时，类设计器将以只读方式运行。 可以更改类图，但无法将类图的更改保存回源代码。  
   
--   类设计器支持本机 C++ 语义。 对于编译为托管代码的 Visual C++ 项目，类设计器将仅可视化本机类型的代码元素。 因此，可以向项目添加类图，但类设计器将不允许你可视化其 `IsManaged` 属性设置为 `true` 的元素（即值类型和引用类型）。  
+- 类设计器支持本机 C++ 语义。 对于编译为托管代码的 Visual C++ 项目，类设计器将仅可视化本机类型的代码元素。 因此，可以向项目添加类图，但类设计器将不允许你可视化其 `IsManaged` 属性设置为 `true` 的元素（即值类型和引用类型）。  
   
--   对于 Visual C++ 项目，类设计器只能读取类型的定义。 例如，假定你在头 (.h) 文件中定义了一个类型并在实现 (.cpp) 文件中定义了其成员。 如果对实现 (.cpp) 文件调用“查看类图”，则类设计器不会显示任何内容。 又比如，如果对使用 `#include` 语句以包含其他文件但不包含任何实际类定义的 .cpp 文件调用“查看类图”，则类设计器也不会显示任何内容。  
+- 对于 Visual C++ 项目，类设计器只能读取类型的定义。 例如，假定你在头 (.h) 文件中定义了一个类型并在实现 (.cpp) 文件中定义了其成员。 如果对实现 (.cpp) 文件调用“查看类图”，则类设计器不会显示任何内容。 又比如，如果对使用 `#include` 语句以包含其他文件但不包含任何实际类定义的 .cpp 文件调用“查看类图”，则类设计器也不会显示任何内容。  
   
--   定义 COM 接口和类型库的 IDL (.idl) 文件不会显示在关系图中，除非将其编译为本机 C++ 代码。  
+- 定义 COM 接口和类型库的 IDL (.idl) 文件不会显示在关系图中，除非将其编译为本机 C++ 代码。  
   
--   类设计器不支持全局函数和变量。  
+- 类设计器不支持全局函数和变量。  
   
--   类设计器不支持联合。 这是一种特殊类型的类，在其中仅分配联合的最大数据成员所需的内存量。  
+- 类设计器不支持联合。 这是一种特殊类型的类，在其中仅分配联合的最大数据成员所需的内存量。  
   
--   类设计器不显示基本数据类型，如 `int` 和 `char`。  
+- 类设计器不显示基本数据类型，如 `int` 和 `char`。  
   
--   类设计器不显示在当前项目外部定义的类型（如果此项目不具有对这些类型的正确引用）。  
+- 类设计器不显示在当前项目外部定义的类型（如果此项目不具有对这些类型的正确引用）。  
   
--   类设计器可以显示嵌套类型，但不能显示嵌套类型与其他类型之间的关系。  
+- 类设计器可以显示嵌套类型，但不能显示嵌套类型与其他类型之间的关系。  
   
--   类设计器无法显示 void 类型或从 void 类型派生的类型。  
+- 类设计器无法显示 void 类型或从 void 类型派生的类型。  
   
 ## <a name="see-also"></a>请参阅  
  [设计和查看类与类型](../ide/designing-and-viewing-classes-and-types.md)   

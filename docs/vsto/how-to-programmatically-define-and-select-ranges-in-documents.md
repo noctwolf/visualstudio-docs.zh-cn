@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95690af1b1712aa374a4e9717c8c3bc6ac17fed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078858"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>如何：以编程方式定义和在文档中选择范围
   你也可以通过使用 <xref:Microsoft.Office.Interop.Word.Range> 对象在 Microsoft Office Word 文档中定义一个范围。 您可以通过使用例如，选择整个文档中通过多种方式，<xref:Microsoft.Office.Interop.Word.Range.Select%2A>方法<xref:Microsoft.Office.Interop.Word.Range>对象，或通过使用的内容属性的<xref:Microsoft.Office.Tools.Word.Document>类 （在文档级自定义项） 或<xref:Microsoft.Office.Interop.Word.Document>类 (在VSTO 外接程序）。
@@ -33,14 +33,14 @@ ms.locfileid: "56599896"
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>在文档级自定义项中定义范围
 
-1.  通过将开始和结束字符传递到 <xref:Microsoft.Office.Tools.Word.Document> 类的 <xref:Microsoft.Office.Tools.Word.Document.Range%2A> 方法来将范围添加到文档中。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。
+1. 通过将开始和结束字符传递到 <xref:Microsoft.Office.Tools.Word.Document> 类的 <xref:Microsoft.Office.Tools.Word.Document.Range%2A> 方法来将范围添加到文档中。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#18)]
 
 ### <a name="to-define-a-range-by-using-a-vsto-add-in"></a>通过使用 VSTO 外接程序定义范围
 
-1.  通过将开始和结束字符传递到 <xref:Microsoft.Office.Interop.Word.Document> 类的 <xref:Microsoft.Office.Interop.Word._Document.Range%2A> 方法来将范围添加到文档中。 下面的代码示例将一个范围添加到活动文档。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
+1. 通过将开始和结束字符传递到 <xref:Microsoft.Office.Interop.Word.Document> 类的 <xref:Microsoft.Office.Interop.Word._Document.Range%2A> 方法来将范围添加到文档中。 下面的代码示例将一个范围添加到活动文档。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
@@ -50,7 +50,7 @@ ms.locfileid: "56599896"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>通过使用 Select 方法来选择整个文档作为范围
 
-1.  使用包含整个文档的 <xref:Microsoft.Office.Interop.Word.Range> 的 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 方法。 若要使用下面的代码示例，请从项目的 `ThisDocument` 类中运行它。
+1. 使用包含整个文档的 <xref:Microsoft.Office.Interop.Word.Range> 的 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 方法。 若要使用下面的代码示例，请从项目的 `ThisDocument` 类中运行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#19)]
@@ -75,12 +75,12 @@ ms.locfileid: "56599896"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>通过手动设置开始和结束值来选择一个句子
 
-1.  创建一个范围变量。
+1. 创建一个范围变量。
 
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2.  检查以查看在文档中，是否有至少两个句子设置*启动*并*最终*自变量的范围，并选择范围。
+2. 检查以查看在文档中，是否有至少两个句子设置*启动*并*最终*自变量的范围，并选择范围。
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -90,7 +90,7 @@ ms.locfileid: "56599896"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>通过使用 Select 方法来选择整个文档作为范围
 
-1.  使用包含整个文档的 <xref:Microsoft.Office.Interop.Word.Range> 的 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 方法。 下面的代码示例选择活动文档的内容。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
+1. 使用包含整个文档的 <xref:Microsoft.Office.Interop.Word.Range> 的 <xref:Microsoft.Office.Interop.Word.Range.Select%2A> 方法。 下面的代码示例选择活动文档的内容。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#19)]
@@ -115,12 +115,12 @@ ms.locfileid: "56599896"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>通过手动设置开始和结束值来选择一个句子
 
-1.  创建一个范围变量。
+1. 创建一个范围变量。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2.  检查以查看在文档中，是否有至少两个句子设置*启动*并*最终*自变量的范围，并选择范围。
+2. 检查以查看在文档中，是否有至少两个句子设置*启动*并*最终*自变量的范围，并选择范围。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]

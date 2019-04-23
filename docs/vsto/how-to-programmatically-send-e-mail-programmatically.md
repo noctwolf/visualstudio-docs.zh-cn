@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110786"
 ---
 # <a name="how-to-programmatically-send-email"></a>如何：以编程方式发送电子邮件
   此示例将一封电子邮件发送到具有域的名称的联系人**example.com**电子邮件地址中。
@@ -33,7 +33,7 @@ ms.locfileid: "56646000"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
--   具有域的名称的联系人**example.com**电子邮件地址中。
+- 具有域的名称的联系人**example.com**电子邮件地址中。
 
 ## <a name="robust-programming"></a>可靠编程
  未删除的域名中搜索的筛选器代码**example.com**。 如果删除筛选器，你的解决方案将向你的联系人的所有发送电子邮件。

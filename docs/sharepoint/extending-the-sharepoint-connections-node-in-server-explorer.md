@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092635"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>扩展服务器资源管理器中的 SharePoint 连接节点
   在 Visual Studio 中，您可以使用连接到开发计算机上的本地 SharePoint 站点**SharePoint 连接**中的节点**服务器资源管理器**窗口。 此节点显示许多组件的本地 SharePoint 站点层次结构树视图中。 例如，您可以在本地站点上查看列表、 文档库和内容类型。 有关使用详细信息**服务器资源管理器**若要连接到本地 SharePoint 站点，请参阅[使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。
@@ -36,9 +36,9 @@ ms.locfileid: "56595119"
 
  有两种类型的自定义属性可以添加到的节点：
 
--   显示从 SharePoint 站点的只读数据的一组的属性。 数据描述该节点表示的 SharePoint 组件。 有关演示如何执行此操作的演练，请参阅[演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+- 显示从 SharePoint 站点的只读数据的一组的属性。 数据描述该节点表示的 SharePoint 组件。 有关演示如何执行此操作的演练，请参阅[演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
--   显示自定义读/写数据的属性。 有关演示如何执行此操作的代码示例，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。
+- 显示自定义读/写数据的属性。 有关演示如何执行此操作的代码示例，请参阅[如何：扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。
 
 ## <a name="get-data-for-built-in-nodes"></a>内置节点获取数据
  所有 Visual Studio 提供的内置节点都包括它们所代表的 SharePoint 组件有关的一些数据。 例如，表示 SharePoint 站点上的列表中的节点提供有关列表中，例如标题和列表的默认视图的 URL 的一些数据。

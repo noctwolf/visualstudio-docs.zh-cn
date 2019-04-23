@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000632"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068153"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入门：调试 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "59000632"
   
   有关其他 JavaScript 调试功能，例如使用 JavaScript 控制台窗口，并设置断点，请参阅[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
-##  <a name="InspectingDOM"></a> 检查实时 DOM  
+## <a name="InspectingDOM"></a> 检查实时 DOM  
  DOM 资源管理器展示所呈现的页面的视图，还可使用 DOM 资源管理器更改值并立即看到结果。 这使你可以在无需停止和重新启动调试器的情况下测试更改。 使用此方法与页面进行交互时不更改项目中的源代码，因此当发现代码中要更正的内容时，请对源代码作出更改。  
   
 > [!TIP]
@@ -249,17 +249,17 @@ ms.locfileid: "59000632"
   
 #### <a name="to-refresh-your-app-while-debugging"></a>若要在调试期间刷新应用程序，请执行以下操作  
   
-1.  在应用程序仍在运行时，切换至 Visual Studio。  
+1. 在应用程序仍在运行时，切换至 Visual Studio。  
   
-2.  打开 default.html，然后通过将 `"fView"` DIV 元素的 height 和 width 均设置为 100%，对源代码进行修改。  
+2. 打开 default.html，然后通过将 `"fView"` DIV 元素的 height 和 width 均设置为 100%，对源代码进行修改。  
   
-3.  选择“调试”工具栏上的 **“刷新 Windows 应用程序”** 按钮（或按 F4）。 该按钮如下所示：![刷新 Windows 应用按钮](../debugger/media/js-refresh.png "JS_Refresh")。  
+3. 选择“调试”工具栏上的 **“刷新 Windows 应用程序”** 按钮（或按 F4）。 该按钮如下所示：![刷新 Windows 应用按钮](../debugger/media/js-refresh.png "JS_Refresh")。  
   
      随后将重新加载应用程序页面，并且模拟器或 Phone 仿真程序将返回前台。  
   
      有关刷新功能的详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  在调试应用程序时，可以通过三种方式选择 DOM 元素：  
   
 - 通过在“DOM 资源管理器”窗口中直接单击元素（或通过使用箭头键）。  
@@ -285,7 +285,7 @@ ms.locfileid: "59000632"
   
  有关示例，演示如何使用选择的元素**Select 元素**按钮，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   
-##  <a name="BrowserSupport"></a> 浏览器和平台支持  
+## <a name="BrowserSupport"></a> 浏览器和平台支持  
  JavaScript 的 Visual Studio 工具、DOM 资源管理器和 JavaScript 控制台窗口在以下平台上受支持：  
   
 - 使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 应用商店应用  

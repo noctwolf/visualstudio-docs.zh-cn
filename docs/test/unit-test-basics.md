@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416365"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647409"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -78,7 +78,7 @@ public void Withdraw(double amount)
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>创建单元测试项目和测试方法
 
-通常从你的代码生成单元测试项目和单元测试存根速度更快。 或者，你可以选择创建单元测试项目和根据你的要求进行手动测试。
+通常从你的代码生成单元测试项目和单元测试存根速度更快。 或者，你可以选择创建单元测试项目和根据你的要求进行手动测试。 如果要使用第三方框架创建单元测试，则需要安装以下任一扩展：[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>生成单元测试项目和单元测试存根
 
@@ -88,7 +88,7 @@ public void Withdraw(double amount)
 
 2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。
 
-    ![在编辑器中右键单击并选择“创建单元测试”](../test/media/createunittestsdialog.png)
+    ![在 Visual Studio 中创建“单元测试”对话框](../test/media/create-unit-tests.png)
 
 3. 在类的所有方法的新单元测试项目中创建单元测试存根。
 
@@ -229,7 +229,7 @@ public void My_Test ()
 
 ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
-你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”（快捷键：“F12”），显示所选测试的源代码。
+你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”（快捷键：**“F12”**），显示所选测试的源代码。
 
 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 

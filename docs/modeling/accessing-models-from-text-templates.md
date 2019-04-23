@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040685"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 通过使用文本模板，可以创建报表文件、 源代码文件和其他基于特定于域的语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时你正在调试你的 DSL 中，将在实验模式下工作，还将具有在其部署 DSL 的计算机上工作。
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  DSL 的指令处理器将执行两个主要任务：
 
--   它有效地将程序集和导入指令插入到模板中引用你的 DSL。 这样可以在模板代码中使用域类。
+- 它有效地将程序集和导入指令插入到模板中引用你的 DSL。 这样可以在模板代码中使用域类。
 
--   它将加载在指定的文件`requires`参数，并且设置属性`this`，是指加载模型的根元素。
+- 它将加载在指定的文件`requires`参数，并且设置属性`this`，是指加载模型的根元素。
 
 ## <a name="validating-the-model-before-running-the-template"></a>在运行该模板之前验证模型
  您可能会导致执行该模板之前要验证的模型。

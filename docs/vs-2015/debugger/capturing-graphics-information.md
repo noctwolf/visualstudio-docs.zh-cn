@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114219"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ ms.locfileid: "58932155"
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>配置图形诊断捕获选项  
   
-1.  在菜单栏上，依次选择“工具”、“选项”。 这时会显示一个“选项”对话框。  
+1. 在菜单栏上，依次选择“工具”、“选项”。 这时会显示一个“选项”对话框。  
   
-2.  在左侧的选项类别列表中选择“图形诊断”，然后配置所需的“图形诊断”选项。  
+2. 在左侧的选项类别列表中选择“图形诊断”，然后配置所需的“图形诊断”选项。  
   
      **在捕获过程中收集调用堆栈（将使捕获速度变慢）**  
      选中该复选框以收集调用堆栈。 默认情况下，不会收集调用堆栈。 要捕获调用堆栈，请确保将“在捕获过程中收集调用堆栈(将使捕获速度变慢)”复选框设置为启用收集，然后设置“用于绘制、调度、呈现和性能标记”选项（默认值）以便仅收集最重要的调用堆栈，或设置“用于全部”选项以便收集所有调用堆栈。 如果稍后要停止收集调用堆栈，请清除“在捕获过程中收集调用堆栈(将使捕获速度变慢)”复选框。  

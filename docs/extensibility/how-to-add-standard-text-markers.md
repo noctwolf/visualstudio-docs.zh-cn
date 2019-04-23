@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44ad7dd9ef83f9de3cfe406dc4fda2cd00837464
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060080"
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何：添加标准文本标记
 使用以下过程来创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。
 
 ## <a name="to-create-a-text-marker"></a>若要创建文本标记
 
-1.  根据您使用一个或或双三维坐标系，调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法来创建新的文本标记。
+1. 根据您使用一个或或双三维坐标系，调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法来创建新的文本标记。
 
      在此方法调用中，指定标记类型，范围内的文本，通过创建标记和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。 然后将此方法返回指向到新创建的文本标记。 标记类型取自<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>枚举。 指定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口如果你想要通知的标记事件。
 
@@ -34,15 +34,15 @@ ms.locfileid: "56720635"
 
 ### <a name="to-add-a-custom-command-to-the-context-menu"></a>若要将自定义命令添加到上下文菜单
 
-1.  上下文菜单显示之前，环境在调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A>方法和通过您到文本标记的指针的影响和上下文菜单中的命令项的数目。
+1. 上下文菜单显示之前，环境在调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A>方法和通过您到文本标记的指针的影响和上下文菜单中的命令项的数目。
 
      例如，上下文菜单上的特定于断点的命令包括**删除断点**通过**新断点**，如以下屏幕截图中显示。
 
      ![标记上下文菜单](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")
 
-2.  传递回标识的自定义命令名称的一些文本。 例如，**删除断点**如果环境未已提供它可能是自定义命令。 你还将传递回该命令是否受支持、 可用且已启用，和/或开启 / 关闭切换。 环境使用此信息来正确的方式的上下文菜单中显示自定义命令。
+2. 传递回标识的自定义命令名称的一些文本。 例如，**删除断点**如果环境未已提供它可能是自定义命令。 你还将传递回该命令是否受支持、 可用且已启用，和/或开启 / 关闭切换。 环境使用此信息来正确的方式的上下文菜单中显示自定义命令。
 
-3.  若要执行该命令，环境调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法，您将指针传递到文本标记并从上下文菜单中选择的命令数。
+3. 若要执行该命令，环境调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法，您将指针传递到文本标记并从上下文菜单中选择的命令数。
 
      使用来自此调用的此信息来执行任何操作的文本标记的自定义命令指示。
 

@@ -18,12 +18,12 @@ caps.latest.revision: 55
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c03764a4ad93a44f51bb130e0f160dbeaae4db7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 78c80bc015ffbf39949b5295d85396dc84154208
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112125"
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ Visual Studio 调试程序有助于你观察程序的运行时行为并发现问
 
  有关 Visual Studio 中的诊断的快速介绍，请参阅 [调试、分析和诊断](https://www.visualstudio.com/features/debugging-and-diagnostics-vs)。
 
--   [调试器 Windows](../debugger/debugger-windows.md)列出不同的调试器窗口。
+- [调试器 Windows](../debugger/debugger-windows.md)列出不同的调试器窗口。
 
--   [调试器基础知识](../debugger/debugger-basics.md)讨论使用 Visual Studio 调试器的基础知识。 涉及的主题包括：调试基础、执行控件、附加到运行的程序、实时调试、自动启动调试器、转储、断点、检查程序、处理异常、编辑并继续，以及在调试器中使用表达式。
+- [调试器基础知识](../debugger/debugger-basics.md)讨论使用 Visual Studio 调试器的基础知识。 涉及的主题包括：调试基础、执行控件、附加到运行的程序、实时调试、自动启动调试器、转储、断点、检查程序、处理异常、编辑并继续，以及在调试器中使用表达式。
 
--   [更多调试功能](../debugger/more-debugging-features.md)介绍不同的调试功能。
+- [更多调试功能](../debugger/more-debugging-features.md)介绍不同的调试功能。
 
--   [远程调试](../debugger/remote-debugging.md)介绍如何设置和使用远程调试。
+- [远程调试](../debugger/remote-debugging.md)介绍如何设置和使用远程调试。
 
--   [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)描述如何调试多线程应用程序。
+- [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)描述如何调试多线程应用程序。
 
--   [IntelliTrace](../debugger/intellitrace.md)介绍 IntelliTrace 功能。
+- [IntelliTrace](../debugger/intellitrace.md)介绍 IntelliTrace 功能。
 
--   [调试应用程序](../debugger/debugging-applications.md)描述如何调试不同类型的应用程序。
+- [调试应用程序](../debugger/debugging-applications.md)描述如何调试不同类型的应用程序。
 
--   [调试用户界面参考](../debugger/debugging-user-interface-reference.md)提供的参考信息窗口和对话框调试你的应用程序时使用。 当焦点在调试用户界面元素（如“断点”  窗口）上时，按 F1 键也可以看到这些主题。
+- [调试用户界面参考](../debugger/debugging-user-interface-reference.md)提供的参考信息窗口和对话框调试你的应用程序时使用。 当焦点在调试用户界面元素（如“断点”  窗口）上时，按 F1 键也可以看到这些主题。
 
--   [调试接口访问 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 调试接口访问软件开发工具包 (DIA SDK)。 DIA SDK 提供对存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。
+- [调试接口访问 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 调试接口访问软件开发工具包 (DIA SDK)。 DIA SDK 提供对存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息的访问。
 
 ## <a name="see-also"></a>请参阅
  [分析工具](../profiling/profiling-tools.md) [Visual Studio IDE](../ide/visual-studio-ide.md)

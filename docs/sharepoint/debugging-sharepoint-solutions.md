@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060795"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 站点的实例。 以下各节说明如何调试 SharePoint 应用程序中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
--   [启用调试](#enable-debugging)
+- [启用调试](#enable-debugging)
 
--   [F5 调试和部署过程](#f5-debug-and-deployment-process)
+- [F5 调试和部署过程](#f5-debug-and-deployment-process)
 
--   [SharePoint 项目功能](#sharepoint-project-features)
+- [SharePoint 项目功能](#sharepoint-project-features)
 
--   [调试工作流](#debug-workflows)
+- [调试工作流](#debug-workflows)
 
--   [调试功能事件接收器](#debug-feature-event-receivers)
+- [调试功能事件接收器](#debug-feature-event-receivers)
 
--   [启用 ehanced 调试信息](#enable-enhanced-debugging-information)
+- [启用 ehanced 调试信息](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>启用调试
  当你第一次调试 SharePoint 解决方案中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，对话框中向你发出警报的 web.config 文件未配置为启用调试。 （在安装 SharePoint server 时，被创建 web.config 文件。 有关详细信息，请参阅[使用 Web.config 文件](http://go.microsoft.com/fwlink/?LinkID=149266)。)对话框中显示的不调试或修改 web.config 文件的情况下运行该项目启用调试的选项。 如果选择第一个选项，则项目会正常运行。 如果选择第二个选项，则 web.config 文件将配置为：
@@ -77,11 +77,11 @@ ms.locfileid: "57873105"
 
  若要撤消所做的更改并禁用调试，更改以下[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]web.config 文件中：
 
--   关闭调用堆栈 (`CallStack="false"`)
+- 关闭调用堆栈 (`CallStack="false"`)
 
--   启用的自定义错误[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="On" />`)
+- 启用的自定义错误[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](`<customErrors mode="On" />`)
 
--   禁用编译调试 (`<compilation debug="false">`)
+- 禁用编译调试 (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>F5 调试和部署过程
  在调试模式下运行您的 SharePoint 项目时，SharePoint 部署过程将执行以下任务：

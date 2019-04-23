@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100430"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>演练：查找内存泄漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ ms.locfileid: "54780929"
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>运行 JavaScript 内存分析器测试应用  
   
-1.  在 Visual Studio 中，依次选择 **“文件”**、 **“新建”**、 **“项目”**。  
+1. 在 Visual Studio 中，依次选择 **“文件”**、 **“新建”**、 **“项目”**。  
   
-2.  在左窗格中选择“JavaScript”  ，选择“Windows” 、“Windows 8” ，然后选择“通用”  或“Windows Phone 应用” 。  
+2. 在左窗格中选择“JavaScript”  ，选择“Windows” 、“Windows 8” ，然后选择“通用”  或“Windows Phone 应用” 。  
   
     > [!IMPORTANT]
     >  本主题中显示的内存使用量结果是针对 Windows 8 应用进行测试的。  
   
-3.  在中间窗格中选择 **“空白应用”** 项目模板。  
+3. 在中间窗格中选择 **“空白应用”** 项目模板。  
   
-4.  在“名称”  框中指定名称（例如 `JS_Mem_Tester`），然后选择“确定” 。  
+4. 在“名称”  框中指定名称（例如 `JS_Mem_Tester`），然后选择“确定” 。  
   
-5.  在“解决方案资源管理器”中，打开 default.html，并将以下代码粘贴到 \<body> 标记之间：  
+5. 在“解决方案资源管理器”中，打开 default.html，并将以下代码粘贴到 \<body> 标记之间：  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ ms.locfileid: "54780929"
     > [!IMPORTANT]
     >  如果你正在使用 Windows 8.1 通用应用模板，你需要在 .Windows 和 .WindowsPhone 项目中更新 HTML 和 CSS 代码。  
   
-6.  打开 default.css，然后添加以下 CSS 代码：  
+6. 打开 default.css，然后添加以下 CSS 代码：  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ ms.locfileid: "54780929"
     }  
     ```  
   
-7.  打开 default.js，并用以下代码替换所有代码：  
+7. 打开 default.js，并用以下代码替换所有代码：  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ ms.locfileid: "54780929"
     })();  
     ```  
   
-8.  选择 F5 键开始调试。 验证 **“泄漏内存”** 按钮是否显示在此页中。  
+8. 选择 F5 键开始调试。 验证 **“泄漏内存”** 按钮是否显示在此页中。  
   
 9. 切换回 Visual Studio (Alt+Tab)，然后按 Shift+F5 停止调试。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "54780929"
     > [!TIP]
     >  有时，定位与 `Global` 对象相关的对象可能有助于确定此问题。 为此，请打开标识符的快捷菜单，然后选择 **“在根视图中显示”**。  
   
-##  <a name="FixingMemory"></a> 修复内存问题  
+## <a name="FixingMemory"></a> 修复内存问题  
   
 1. 通过使用探查器显示的数据，可以检查负责移除 ID 为“item”的 DOM 元素的代码。 它将出现在 `initialize()` 函数中。  
   

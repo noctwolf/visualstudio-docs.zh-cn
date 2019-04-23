@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 671a243f65c68660c98c3730ca90568882a824d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080639"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何：将视图附加到文档数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,19 +24,19 @@ ms.locfileid: "58930691"
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>若要确定是否可以将视图附加到现有的文档数据对象  
   
-1.  实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>。  
+1. 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>。  
   
-2.  中的实现`IVsEditorFactory::CreateEditorInstance`，调用`QueryInterface`现有文档的数据对象时 IDE 调用你`CreateEditorInstance`实现。  
+2. 中的实现`IVsEditorFactory::CreateEditorInstance`，调用`QueryInterface`现有文档的数据对象时 IDE 调用你`CreateEditorInstance`实现。  
   
      调用`QueryInterface`，可以检查现有的文档数据对象，它指定在`punkDocDataExisting`参数。  
   
      确切的接口必须查询，但是，取决于正在打开文档，编辑器在步骤 4 中所述。  
   
-3.  如果找不到现有的文档数据对象上的相应接口，然后返回到你，该值指示文档数据对象与您的编辑器不兼容的编辑器的错误代码。  
+3. 如果找不到现有的文档数据对象上的相应接口，然后返回到你，该值指示文档数据对象与您的编辑器不兼容的编辑器的错误代码。  
   
      在 IDE 的实现中的<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>，一个消息框会通知你，文档在另一个编辑器中打开，并询问您是否将其关闭。  
   
-4.  如果关闭此文档，然后 Visual Studio 调用编辑器工厂的第二次。 在此调用时，`DocDataExisting`参数等于 NULL。 编辑器工厂实现然后可以在自己的编辑器中打开文档数据对象。  
+4. 如果关闭此文档，然后 Visual Studio 调用编辑器工厂的第二次。 在此调用时，`DocDataExisting`参数等于 NULL。 编辑器工厂实现然后可以在自己的编辑器中打开文档数据对象。  
   
     > [!NOTE]
     >  若要确定是否可以使用现有的文档数据对象，您还可以使用专用接口实现的知识通过强制转换为实际的指针[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]私有实现的类。 例如，所有的标准编辑器实现`IVsPersistFileFormat`，后者又继承<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此，可以调用`QueryInterface`为<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>，并在现有的文档数据对象的类 ID 是否匹配你的实现的类 ID，然后可以使用文档数据对象。  

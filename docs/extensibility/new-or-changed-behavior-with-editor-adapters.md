@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41dafb118120d14004eae07e56a954675b8ffc4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 63c04e808228898e7542f67ec72bf9d36203547d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061250"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新的或更改行为与编辑器适配器
 如果要更新已针对早期版本的 Visual Studio 核心编辑器，编写的代码，并且你打算使用的编辑器适配器 （或填充程序） 而不是使用新的 API，你应注意的以下编辑器适配器的行为差异相对于以前的核心编辑器。
@@ -83,32 +83,32 @@ ms.locfileid: "56335409"
 
  受影响的方法包括的以下 （列表并不详尽）：
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>
 
 #### <a name="outlining"></a>大纲显示
- 客户端<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>会看到仅使用已添加这些大纲区域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>。 它们不会看到临时区域，因为它们未添加通过编辑器适配器。 同样，这些客户端不会看到具有大纲区域添加新的编辑器代码而不是编辑器适配器使用的语言 （包括 C# 和 c + +）。
+ 客户端<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>会看到仅使用已添加这些大纲区域<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>。 它们不会看到临时区域，因为它们未添加通过编辑器适配器。 同样，这些客户端不会看到添加的语言的区域的大纲显示 (包括C#和C++) 使用的新的编辑器代码而不是编辑器适配器。
 
 #### <a name="line-heights"></a>行的高度
  在新的编辑器中，可以具有不同高度，具体取决于字体大小和可能的行转换可能会移动相对于其他行的行的文本行。 如由方法返回的行高度<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A>是应用的任何行转换中使用的默认字体大小的行的高度。 此高度可能或可能不会反映在视图中的行的实际高度。
@@ -118,7 +118,7 @@ ms.locfileid: "56335409"
 
 #### <a name="intellisense"></a>IntelliSense
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法将失败，如果不实现的类中传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支持自定义 Win32 所有者描述弹出窗口。
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A>方法将失败，如果不实现的类中传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2>或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>。 不再支持自定义 Win32 所有者描述弹出窗口。
 
 #### <a name="smarttags"></a>SmartTags
  没有适配器支持的智能标记，创建<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2>接口。

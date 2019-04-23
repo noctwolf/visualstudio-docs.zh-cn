@@ -22,20 +22,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c39a9e4f268a0e11d7a0962820b418876e9733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059014"
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>Visual Studio 调试器中的上下文运算符 (C++)
 可使用 C++ 中的上下文运算符来限定断点位置、变量名称或表达式。 上下文运算符可用于指定来自外部范围的但被本地名称隐藏的名称。
 
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 语法
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> 语法
  有两种方法指定上下文：
 
-1.  {,,[*模块*] } *表达式*
+1. {,,[*模块*] } *表达式*
 
      大括号必须包含两个逗号和模块（可执行文件或 DLL）名称或完整路径。
 
@@ -45,7 +45,7 @@ ms.locfileid: "56633533"
     {,,EXAMPLE.dll}SomeFunction
     ```
 
-2.  *模块*!*表达式*
+2. *模块*!*表达式*
 
     ```C++
     EXAMPLE.dll!SomeFunction
@@ -63,12 +63,12 @@ ms.locfileid: "56633533"
 
   当表达式计算器遇到表达式中的符号时，它按下列顺序搜索该符号：
 
-1.  词汇作用域向外，从当前块（括在大括号中的一系列语句）开始，然后从该封闭块继续向外。 当前块是包含当前位置（指令指针地址）的代码。
+1. 词汇作用域向外，从当前块（括在大括号中的一系列语句）开始，然后从该封闭块继续向外。 当前块是包含当前位置（指令指针地址）的代码。
 
-2.  函数作用域。 当前函数。
+2. 函数作用域。 当前函数。
 
-3.  类作用域（如果当前位置在 C++ 成员函数内）。 类作用域包含所有基类。 表达式计算器使用常规域控制规则。
+3. 类作用域（如果当前位置在 C++ 成员函数内）。 类作用域包含所有基类。 表达式计算器使用常规域控制规则。
 
-4.  当前模块中的全局符号。
+4. 当前模块中的全局符号。
 
-5.  当前程序中的公共符号。
+5. 当前程序中的公共符号。

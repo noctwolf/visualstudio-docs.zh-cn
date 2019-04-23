@@ -11,12 +11,12 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47bf73d60d71a7b1c2e1c80e58c5900c870599ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111631"
 ---
 # <a name="test-area-7-share"></a>测试区域 7：共享
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58933211"
   
  共享到的文件夹适用于在它的源代码管理下的至少一个文件与选择的文件夹。 在以下情况下禁用共享命令：  
   
--   如果所选的文件夹是一个空文件夹。  
+- 如果所选的文件夹是一个空文件夹。  
   
--   如果实际的文件夹，但它不包含任何源控件文件。  
+- 如果实际的文件夹，但它不包含任何源控件文件。  
   
--   如果或不受源代码管理的文件是在它的虚拟文件夹。  
+- 如果或不受源代码管理的文件是在它的虚拟文件夹。  
   
--   如果没有远程站点 Web 项目。  
+- 如果没有远程站点 Web 项目。  
   
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]测试用例中使用集成的开发环境菜单路径。  
@@ -42,11 +42,11 @@ ms.locfileid: "58933211"
   
 ## <a name="expected-behavior"></a>预期的行为  
   
--   共享的文件将出现在共享位置。  
+- 共享的文件将出现在共享位置。  
   
--   查看此源控件版本存储历史记录显示，共享文件。  
+- 查看此源控件版本存储历史记录显示，共享文件。  
   
--   编辑共享的文件编辑这两个文件的位置。  
+- 编辑共享的文件编辑这两个文件的位置。  
   
 ## <a name="test-cases"></a>测试用例  
  以下是用于共享测试区域的特定测试用例。  

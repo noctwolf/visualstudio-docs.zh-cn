@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97b6b7a798483000916ee8c99a8000fd45b9cc00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937502"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080236"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>错误：网站工作进程已被 IIS 终止
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58937502"
   
 1. 打开“管理工具”窗口。  
   
-   1.  单击“开始”，然后选择“控制面板”。  
+   1. 单击“开始”，然后选择“控制面板”。  
   
-   2.  在**控制面板**中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。   
+   2. 在**控制面板**中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。   
   
 2. 在**管理工具**窗口中，双击**Internet Information Services (IIS) Manager**。  
   

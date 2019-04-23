@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063227"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>使用 DOM 资源管理器调试布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "58931985"
   
 #### <a name="to-fix-the-layout-issue"></a>修复布局问题  
   
-1.  在 Visual Studio 中，创建一个使用“中心/枢轴”项目模板的新应用商店应用。  
+1. 在 Visual Studio 中，创建一个使用“中心/枢轴”项目模板的新应用商店应用。  
   
-2.  在共享的 pages\hub 文件夹中，打开 hub.css。  
+2. 在共享的 pages\hub 文件夹中，打开 hub.css。  
   
-3.  将下列 CSS 代码：  
+3. 将下列 CSS 代码：  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ ms.locfileid: "58931985"
     }  
     ```  
   
-4.  在解决方案资源管理器中选择 appName.WindowsPhone 项目或 appName.Windows 项目，然后从项目的快捷菜单中选择“设为启动项目”  。  
+4. 在解决方案资源管理器中选择 appName.WindowsPhone 项目或 appName.Windows 项目，然后从项目的快捷菜单中选择“设为启动项目”  。  
   
-5.  根据你的启动项目，在“调试”工具栏上的下拉列表中选择  “仿真程序 8.1 WVGA 4 英寸 512MB”或  “模拟器”（ “本地计算机”是默认值）。  
+5. 根据你的启动项目，在“调试”工具栏上的下拉列表中选择  “仿真程序 8.1 WVGA 4 英寸 512MB”或  “模拟器”（ “本地计算机”是默认值）。  
   
      ![选择调试目标](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  按 F5 以在调试模式下运行应用程序。  
+6. 按 F5 以在调试模式下运行应用程序。  
   
-7.  通过滚动或轻弹打开第 4 部分。  
+7. 通过滚动或轻弹打开第 4 部分。  
   
     > [!TIP]
     >  将 Phone 仿真程序或模拟器放置在 Visual Studio 窗口的右边，以便你能够立即看到选择结果以及你对 CSS 样式进行的更改。  
   
      加载第 4 部分时，你会发现下方的图像看起来不合适。 每个项图像显示一半（缺失左边的一半）。  
   
-8.  切换到 Visual Studio，然后在 DOM 资源管理器中选择“选择元素”  （或按 Ctrl+B）。 这将更改选择模式以使你可通过单击某项来选择该项，然后将应用程序置于前台。 单击后模式即恢复原样。  
+8. 切换到 Visual Studio，然后在 DOM 资源管理器中选择“选择元素”  （或按 Ctrl+B）。 这将更改选择模式以使你可通过单击某项来选择该项，然后将应用程序置于前台。 单击后模式即恢复原样。  
   
     > [!TIP]
     >  你也可以使用箭头键或其他方法直接在 DOM 资源管理器中选择 HTML 元素。 有关选择元素的详细信息，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
@@ -105,11 +105,11 @@ ms.locfileid: "58931985"
   
      此视图提供有关元素的一些有用信息：  
   
-    -   颜色与将鼠标指针悬停在元素上方时模拟器中显示的方框突出显示对应。 蓝色表示\<i m g > 元素的尺寸。 棕褐色表示边距值。  
+    - 颜色与将鼠标指针悬停在元素上方时模拟器中显示的方框突出显示对应。 蓝色表示\<i m g > 元素的尺寸。 棕褐色表示边距值。  
   
-    -   设置左边距 (margin-left)，它可指示问题的原因，因为它与症状匹配（图像左侧显示为黑色）。  
+    - 设置左边距 (margin-left)，它可指示问题的原因，因为它与症状匹配（图像左侧显示为黑色）。  
   
-    -   显示 0 像素的值的方框（例如，“边框”和“填充”）表示可能未设置相应的 CSS 属性。  
+    - 显示 0 像素的值的方框（例如，“边框”和“填充”）表示可能未设置相应的 CSS 属性。  
   
 11. 若要查看 margin-left 规则的应用方式，请选择“已计算”  选项卡并查看 margin-left 规则下方显示的内容。 你可以看到此规则设置为 5em 值，但是计算的值可以是 66.66px 或 146.66px，具体取决于你的目标设备。  
   

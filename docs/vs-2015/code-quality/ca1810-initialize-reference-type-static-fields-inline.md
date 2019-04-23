@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037863"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810:以内联方式初始化引用类型的静态字段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58935400"
 
  静态构造函数检查会降低性能。 通常使用静态构造函数仅用于初始化静态字段，只需确保该静态初始化的情况下在静态字段在首次访问之前发生。 `beforefieldinit`行为是适用于这些和大多数其他类型。 静态初始化会影响全局状态和以下项之一为 true 时才不合适：
 
--   对全局状态的影响很高，如果不使用该类型不需要。
+- 对全局状态的影响很高，如果不使用该类型不需要。
 
--   而无需访问类型的任何静态字段，可以访问全局状态的副作用。
+- 而无需访问类型的任何静态字段，可以访问全局状态的副作用。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  要修复与该规则的冲突，请在声明它时初始化所有静态数据并移除静态构造函数。

@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54c3bd854f824818d9656a33ccf30391f750a491
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080717"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在元素上设置 CLR 属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ ms.locfileid: "58937825"
   
 ### <a name="to-add-a-custom-attribute"></a>若要添加的自定义属性  
   
-1.  在中**DSL 资源管理器**，选择你想要添加的自定义属性的元素。  
+1. 在中**DSL 资源管理器**，选择你想要添加的自定义属性的元素。  
   
-2.  在中**属性**窗口中，为下的一步**自定义特性**属性中，单击浏览 (**...**) 图标。  
+2. 在中**属性**窗口中，为下的一步**自定义特性**属性中，单击浏览 (**...**) 图标。  
   
      **编辑属性**对话框随即打开。  
   
-3.  在中**名称**列中，单击**\<添加属性 >** 键入属性的名称。 按 Enter。  
+3. 在中**名称**列中，单击**\<添加属性 >** 键入属性的名称。 按 Enter。  
   
-4.  在属性名称下的行显示括号。 在这行上键入该属性的参数类型 (例如， `string`)，然后按 ENTER。  
+4. 在属性名称下的行显示括号。 在这行上键入该属性的参数类型 (例如， `string`)，然后按 ENTER。  
   
-5.  在中**名称属性**列中，键入相应的名称，例如， `MyString`。  
+5. 在中**名称属性**列中，键入相应的名称，例如， `MyString`。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
      **自定义特性**属性现在显示的属性采用以下格式：  
   

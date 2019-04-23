@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094770"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816:正确调用 GC.SuppressFinalize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "58936771"
 
 ## <a name="cause"></a>原因
 
--   是的实现的方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>不会调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
+- 是的实现的方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>不会调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
 
--   不是一种实现的方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
+- 不是一种实现的方法<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
 
--   一个方法调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>，并将传递此 （我在 Visual Basic 中） 以外的其他内容。
+- 一个方法调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>，并将传递此 （我在 Visual Basic 中） 以外的其他内容。
 
 ## <a name="rule-description"></a>规则说明
  <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法可让用户随时可用于垃圾回收的对象之前释放资源。 如果<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用时，它释放的对象的资源。 这使得无需终止。 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 应调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>使垃圾回收器不会调用对象的终结器。
 
- 若要防止派生的类型有终结器无需重新实现 [System.IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->)，并调用它，未密封的类型而无需终结器应仍调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
+ 若要防止派生类型有终结器，无需重新实现 [System.IDisposable] （<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) 并调用它，未密封的类型而无需终结器仍应调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突：

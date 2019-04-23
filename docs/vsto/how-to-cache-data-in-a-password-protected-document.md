@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074003"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果将数据添加到文档或使用密码保护的工作簿中的数据缓存，不会自动保存对缓存数据的更改。 通过重写在项目中的两种方法，可以将更改保存到缓存的数据。
@@ -30,13 +30,13 @@ ms.locfileid: "56644518"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>在使用密码保护的 Word 文档中缓存数据
 
-1.  在`ThisDocument`类中，标记的公共字段或属性缓存。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。
+1. 在`ThisDocument`类中，标记的公共字段或属性缓存。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。
 
-2.  重写<xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A>中的方法`ThisDocument`类，并从文档中删除保护。
+2. 重写<xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A>中的方法`ThisDocument`类，并从文档中删除保护。
 
      保存文档后，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]调用此方法来为您提供机会来取消保护文档。 这允许缓存的数据要保存更改。
 
-3.  重写<xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A>中的方法`ThisDocument`类，并对文档重新应用保护。
+3. 重写<xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A>中的方法`ThisDocument`类，并对文档重新应用保护。
 
      保存文档后，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]调用此方法使您可以对文档重新应用保护。
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644518"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>在使用密码保护的 Excel 工作簿中缓存数据
 
-1.  在中`ThisWorkbook`类或某个`Sheet` *n*类中，标记的公共字段或属性缓存。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。
+1. 在中`ThisWorkbook`类或某个`Sheet` *n*类中，标记的公共字段或属性缓存。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。
 
-2.  重写<xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>中的方法`ThisWorkbook`类，并从该工作簿中删除保护。
+2. 重写<xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A>中的方法`ThisWorkbook`类，并从该工作簿中删除保护。
 
      保存该工作簿后，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]调用此方法来使您可以取消保护工作簿。 这允许缓存的数据要保存更改。
 
-3.  重写<xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A>中的方法`ThisWorkbook`类，并对文档重新应用保护。
+3. 重写<xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A>中的方法`ThisWorkbook`类，并对文档重新应用保护。
 
      保存工作簿后，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]调用此方法使您可以对该工作簿重新应用保护。
 

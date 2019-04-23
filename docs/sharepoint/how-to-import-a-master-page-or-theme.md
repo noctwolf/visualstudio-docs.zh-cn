@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081901"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
   您可以为页在 SharePoint 站点上一致的外观通过创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供模板，这些元素，但可以在 SharePoint Designer 中创建它们，然后将它们导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块：页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。
 
 ### <a name="to-import-a-master-page-or-theme"></a>若要导入母版页或主题
 
-1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 创建或打开一个 SharePoint 项目。
+1. 在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 创建或打开一个 SharePoint 项目。
 
      有关如何创建一个 SharePoint 项目的信息，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
-2.  在菜单栏上，依次选择“项目” > “添加新项”。
+2. 在菜单栏上，依次选择“项目” > “添加新项”。
 
-3.  在中**添加新项**对话框框中，展开**SharePoint**节点，然后选择**2010年**节点。
+3. 在中**添加新项**对话框框中，展开**SharePoint**节点，然后选择**2010年**节点。
 
-4.  在 SharePoint 模板列表中，选择**模块**模板，然后指定该模块的名称。
+4. 在 SharePoint 模板列表中，选择**模块**模板，然后指定该模块的名称。
 
      模块包含文件 （例如，母版页或主题文件） 以部署到 SharePoint 中指定的位置。
 
-5.  在模块中，删除默认文件中，名为*Sample.txt*。
+5. 在模块中，删除默认文件中，名为*Sample.txt*。
 
-6.  选择在模块节点。
+6. 选择在模块节点。
 
-7.  在菜单栏上依次选择**项目** > **添加现有项**，然后选择主页面或主题文件。
+7. 在菜单栏上依次选择**项目** > **添加现有项**，然后选择主页面或主题文件。
 
      母版页文件扩展名为.master，并且主题文件带有.thmx 扩展名。
 
-8.  如果添加了母版页，更改其**部署冲突解决方法**将设置为**自动**中模块的属性。
+8. 如果添加了母版页，更改其**部署冲突解决方法**将设置为**自动**中模块的属性。
 
     > [!NOTE]
     >  如果主页面的名称与现有的主页面标记为默认母版页或自定义母版页的名称相同，则可能发生错误。 有关如何解决此问题的信息，请参阅[演练：导入自定义母版页和包含图像的站点页面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6f2a0680c117aa5982fb0e44144e74c5fef76faa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107653"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 内存问题
 通过使用 Visual Studio 托管内存分析程序，在 .NET Framework 代码中查找内存泄漏和低效内存使用。 目标代码的最低 .NET Framework 版本为 .NET Framework 4.5。  
@@ -28,7 +28,7 @@ ms.locfileid: "58932868"
   
   托管的内存分析程序的演练，请参阅[到生产中诊断.NET 内存问题使用 Visual Studio 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) Visual Studio ALM + Team Foundation Server 博客上。  
   
-##  <a name="BKMK_Contents"></a> 内容  
+## <a name="BKMK_Contents"></a> 内容  
  [.NET Framework 应用程序中的内存使用](#BKMK_Memory_use_in__NET_Framework_apps)  
   
  [标识内存问题的应用程序中](#BKMK_Identify_a_memory_issue_in_an_app)  
@@ -37,7 +37,7 @@ ms.locfileid: "58932868"
   
  [分析内存使用](#BKMK_Analyze_memory_use)  
   
-##  <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework 应用程序中的内存使用  
+## <a name="BKMK_Memory_use_in__NET_Framework_apps"></a> .NET Framework 应用程序中的内存使用  
  .NET Framework 为垃圾回收运行时，这样在大多数应用中，内存使用不会成为问题。 但在长时间运行的应用程序中（如 Web 服务和应用程序），以及在只有有限内存的设备中，对象在内存中的累积会影响应用以及运行应用的设备的性能。 如果垃圾回收器运行过于频繁，或者如果强制操作系统在 RAM 和磁盘之间移动内存，则过多占用内存会停止应用程序和资源所在的计算机。 在最坏情况下，应用会因“内存不足”异常而崩溃。  
   
  .NET*托管的堆*是所创建的应用程序的引用对象的存储位置的虚拟内存区域。 对象的生存期由垃圾收集器 (GC) 管理。 垃圾收集器使用引用以跟踪占用内存块的对象。 当创建对象并将其分配到变量时，就会创建一个引用。 单个对象可以具有多个引用。 例如，对一个对象的其他引用可以通过将该对象添加到类、集合或其他数据结构来创建，也可以通过将该对象分配给第二个变量来创建。 创建引用的一个不太明显的方式是通过一个对象将处理程序添加到另一个对象的事件。 在这种情况下，第二个对象保留对第一个对象的引用，直到该处理程序被显式删除或第二个对象被销毁。  
@@ -46,7 +46,7 @@ ms.locfileid: "58932868"
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> 标识内存问题的应用程序中  
+## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> 标识内存问题的应用程序中  
  内存问题的最明显症状是应用的性能，尤其是如果随着时间的推移性能降低。 当你的应用运行时，其他应用的性能下降，也可能表示存在内存问题。 如果你怀疑存在内存问题，使用任务管理器等的工具或[Windows 性能监视器](http://technet.microsoft.com/library/cc749249.aspx)若要进一步调查。 例如，查看无法解释为内存泄漏可能来源的内存总大小的增长：  
   
  ![资源监视器中一致的内存增长](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
@@ -55,7 +55,7 @@ ms.locfileid: "58932868"
   
  ![在资源管理器的内存峰值](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
-##  <a name="BKMK_Collect_memory_snapshots"></a> 收集内存快照  
+## <a name="BKMK_Collect_memory_snapshots"></a> 收集内存快照  
  内存分析工具分析中的信息*转储文件*包含堆信息。 你可以在 Visual Studio 中，创建转储文件，或者可以使用之类的工具[ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx)从[Windows Sysinternals](http://technet.microsoft.com/sysinternals)。 请参阅[什么是转储，以及如何创建？](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio 调试器团队博客上。  
   
 > [!NOTE]
@@ -75,7 +75,7 @@ ms.locfileid: "58932868"
   
    ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Analyze_memory_use"></a> 分析内存使用  
+## <a name="BKMK_Analyze_memory_use"></a> 分析内存使用  
  [筛选对象列表](#BKMK_Filter_the_list_of_objects) **&#124;** [分析中从单个快照的内存数据](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [比较两个内存快照](#BKMK_Compare_two_memory_snapshots)  
   
  若要针对内存使用问题分析转储文件：  
@@ -90,7 +90,7 @@ ms.locfileid: "58932868"
   
    ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Filter_the_list_of_objects"></a> 筛选对象列表  
+### <a name="BKMK_Filter_the_list_of_objects"></a> 筛选对象列表  
  默认情况下，内存分析程序在内存快照中筛选对象列表，以便只显示用户代码的类型和实例，并且只显示那些总包含大小超过总堆大小阈值百分比的类型。 您可以更改这些选项在**视图设置**列表：  
   
 |||  
@@ -102,7 +102,7 @@ ms.locfileid: "58932868"
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-###  <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> 分析中从单个快照的内存数据  
+### <a name="BKMK_Analyze_memory_data_in_from_a_single_snapshot"></a> 分析中从单个快照的内存数据  
  Visual Studio 启动新的调试会话以分析文件，并且在“堆视图”窗口中显示内存数据。  
   
  ![对象类型列表](../misc/media/dbg-mma-objecttypelist.png "DBG_MMA_ObjectTypeList")  
@@ -137,9 +137,9 @@ ms.locfileid: "58932868"
   
 #### <a name="paths-to-root"></a>根路径  
   
--   从所选类型**对象类型**表中，**根路径**表显示的唯一类型层次结构的类型，以及对引用数的所有对象的根对象到可付诸实践在层次结构中其上方的类型。  
+- 从所选类型**对象类型**表中，**根路径**表显示的唯一类型层次结构的类型，以及对引用数的所有对象的根对象到可付诸实践在层次结构中其上方的类型。  
   
--   从一个类型的实例选择的对象**根路径**显示实际包含的对象实例的引用关系图。 你可以悬停在对象的名称上以便在数据提示中查看其数据值。  
+- 从一个类型的实例选择的对象**根路径**显示实际包含的对象实例的引用关系图。 你可以悬停在对象的名称上以便在数据提示中查看其数据值。  
   
 #### <a name="referenced-types--referenced-objects"></a>引用类型/引用对象  
   
@@ -168,7 +168,7 @@ ms.locfileid: "58932868"
 |**SizedRef 句柄**|在垃圾回收时间保留所有对象和对象根的集体闭合的近似大小的强句柄。|  
 |**固定局部变量**|固定局部变量。|  
   
-###  <a name="BKMK_Compare_two_memory_snapshots"></a> 比较两个内存快照  
+### <a name="BKMK_Compare_two_memory_snapshots"></a> 比较两个内存快照  
  你可以比较进程的两个转储文件以查找可能导致内存泄漏的原因。 第一个（早期）和第二个（晚期）文件的收集之间的间隔应足够大，（才能使）泄漏对象数目的增长显而易见。 若要比较两个文件：  
   
 1. 打开第二个转储文件，并选择**调试托管内存**上**小型转储文件摘要**页。  

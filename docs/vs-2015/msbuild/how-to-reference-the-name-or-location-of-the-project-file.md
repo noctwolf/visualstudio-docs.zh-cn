@@ -17,17 +17,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a5d07c374e75bd7f042f466f13fc5727241e252
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e9493050e5deb2e25cf526d2464214399b10a7c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780997"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670363"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：引用项目文件的名称或位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可以在项目文件自身中使用该项目的名称或位置，而无需创建你自己的属性。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供引用项目文件名的保留属性和与项目相关的其他属性。 有关保留属性的详细信息，请参阅 [MSBuild 保留属性和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
 ## <a name="using-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 属性  

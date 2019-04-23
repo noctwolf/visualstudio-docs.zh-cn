@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078299"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素 （Visual Studio 项目模板）
 指定是否**位置**文本框中**新项目**启用、 禁用或隐藏项目模板对话框的。
@@ -51,11 +51,11 @@ ms.locfileid: "56679949"
 
  有效的文本的值为：
 
--   `Enabled`指定将**位置**的框**新项目**对话框的已启用。
+- `Enabled`指定将**位置**的框**新项目**对话框的已启用。
 
--   `Disabled`指定将**位置**的框**新项目**对话框框处于禁用状态。
+- `Disabled`指定将**位置**的框**新项目**对话框框处于禁用状态。
 
--   `Hidden`指定将**位置**的框**新项目**对话框处于隐藏状态。
+- `Hidden`指定将**位置**的框**新项目**对话框处于隐藏状态。
 
 ## <a name="remarks"></a>备注
  默认值为 `Enabled`。

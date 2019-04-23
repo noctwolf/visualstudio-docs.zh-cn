@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054934"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **让用户拖放元素。**  
  请参阅[如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。  
   
-##  <a name="customizeLinks"></a> 自定义链接复制行为  
+## <a name="customizeLinks"></a> 自定义链接复制行为  
  当用户复制元素时，标准行为是还会复制所有嵌入元素。 可以修改标准复制行为。 在 DSL 定义中，选择在一侧的关系并在属性窗口中设置的角色**传播复制**值。  
   
  ![传播域角色的复制属性](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  在 ElementOperations 类中定义两个方法：  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，用于确定是否可将源元素拖动到目标形状、连接符或关系图上。  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`，用于确定是否可将源元素拖动到目标形状、连接符或关系图上。  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，用于将源元素合并到目标中。  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`，用于将源元素合并到目标中。  
   
 ### <a name="canmerge"></a>CanMerge()  
  调用 `CanMerge()`，以确定当鼠标在关系图上移动时应向用户提供的反馈。 该方法的参数是在其上鼠标悬停的元素，以及有关源的数据（拖动操作从该源执行）。 用户可以从屏幕上的任何位置进行拖动。 因此，源对象可以为多种不同类型，并且可以采用不同的格式进行序列化。 如果源是 DSL 或 UML 模型，则数据参数是 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 的序列化。 拖动、复制和工具箱操作使用 ElementGroupPrototypes 来表示模型的片段。  

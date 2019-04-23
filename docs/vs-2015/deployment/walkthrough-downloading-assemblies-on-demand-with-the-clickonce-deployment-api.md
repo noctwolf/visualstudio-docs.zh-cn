@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 767c1b93972a5e8fc78b7de46a69d8f464fe85cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063551"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：下载使用 ClickOnce 部署 API 按需程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,34 +35,34 @@ ms.locfileid: "58936956"
 ## <a name="prerequisites"></a>系统必备  
  您将需要以下组件来完成本演练之一：  
   
--   Windows SDK 中。 可以从 Microsoft 下载中心下载 Windows SDK。  
+- Windows SDK 中。 可以从 Microsoft 下载中心下载 Windows SDK。  
   
--   Visual Studio。  
+- Visual Studio。  
   
 ## <a name="creating-the-projects"></a>创建项目  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>若要创建使用按需程序集的项目  
   
-1.  创建一个名为 ClickOnceOnDemand 目录。  
+1. 创建一个名为 ClickOnceOnDemand 目录。  
   
-2.  打开 Windows SDK 命令提示或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示符。  
+2. 打开 Windows SDK 命令提示或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示符。  
   
-3.  将更改为 ClickOnceOnDemand 目录。  
+3. 将更改为 ClickOnceOnDemand 目录。  
   
-4.  生成公共/专用密钥对使用以下命令：  
+4. 生成公共/专用密钥对使用以下命令：  
   
     ```  
     sn -k TestKey.snk  
     ```  
   
-5.  使用记事本或其他文本编辑器中，定义一个名为类`DynamicClass`具有单个属性名为`Message`。  
+5. 使用记事本或其他文本编辑器中，定义一个名为类`DynamicClass`具有单个属性名为`Message`。  
   
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-6.  将文本保存为文件命名`ClickOnceLibrary.cs`或`ClickOnceLibrary.vb`，取决于您使用到 ClickOnceOnDemand 目录的语言。  
+6. 将文本保存为文件命名`ClickOnceLibrary.cs`或`ClickOnceLibrary.vb`，取决于您使用到 ClickOnceOnDemand 目录的语言。  
   
-7.  将文件编译到程序集。  
+7. 将文件编译到程序集。  
   
     ```csharp  
     csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
@@ -72,7 +72,7 @@ ms.locfileid: "58936956"
     vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
     ```  
   
-8.  若要获取该程序集的公钥令牌，请使用以下命令：  
+8. 若要获取该程序集的公钥令牌，请使用以下命令：  
   
     ```  
     sn -T ClickOnceLibrary.dll  
@@ -103,31 +103,31 @@ ms.locfileid: "58936956"
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>使用 MageUI.exe 将标记为可选 ClickOnce 应用程序中的程序集  
   
-1.  使用 MageUI.exe 中，创建应用程序清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对该应用程序清单中使用以下设置：  
+1. 使用 MageUI.exe 中，创建应用程序清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对该应用程序清单中使用以下设置：  
   
-    -   命名应用程序清单`ClickOnceOnDemand`。  
+    - 命名应用程序清单`ClickOnceOnDemand`。  
   
-    -   上**文件**页上，在 ClickOnceLibrary.dll 行中，设置**文件类型**列**None**。  
+    - 上**文件**页上，在 ClickOnceLibrary.dll 行中，设置**文件类型**列**None**。  
   
-    -   上**文件**页上，在 ClickOnceLibrary.dll 行中，类型`ClickOnceLibrary.dll`中**组**列。  
+    - 上**文件**页上，在 ClickOnceLibrary.dll 行中，类型`ClickOnceLibrary.dll`中**组**列。  
   
-2.  使用 MageUI.exe 中，创建部署清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对于部署清单中使用以下设置：  
+2. 使用 MageUI.exe 中，创建部署清单中所述[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 对于部署清单中使用以下设置：  
   
-    -   命名的部署清单`ClickOnceOnDemand`。  
+    - 命名的部署清单`ClickOnceOnDemand`。  
   
 ## <a name="testing-the-new-assembly"></a>测试新程序集  
   
 #### <a name="to-test-your-on-demand-assembly"></a>测试按需程序集  
   
-1.  上传你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署到 Web 服务器。  
+1. 上传你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署到 Web 服务器。  
   
-2.  启动应用程序部署与[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]从 Web 浏览器通过输入到部署清单 URL。 如果调用你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序`ClickOnceOnDemand`，并将其上载到 adatum.com 的根目录，你的 URL 将如下所示：  
+2. 启动应用程序部署与[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]从 Web 浏览器通过输入到部署清单 URL。 如果调用你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序`ClickOnceOnDemand`，并将其上载到 adatum.com 的根目录，你的 URL 将如下所示：  
   
     ```  
     http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
     ```  
   
-3.  在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应在消息框窗口中看到一个显示为“Hello, World!”的字符串。  
+3. 在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应在消息框窗口中看到一个显示为“Hello, World!”的字符串。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>

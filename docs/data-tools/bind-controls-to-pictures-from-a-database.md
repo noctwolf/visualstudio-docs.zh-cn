@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5afabf877fbd1a34bc579d81a137abbd5771fed5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944060"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106990"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到数据库中的图片
 
@@ -34,14 +34,14 @@ ms.locfileid: "55944060"
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>若要在数据库中的图片绑定到控件
 
-1.  请确保你想要将控件添加到设计图面是在 WPF 设计器或 Windows 窗体设计器中打开。
+1. 请确保你想要将控件添加到设计图面是在 WPF 设计器或 Windows 窗体设计器中打开。
 
-2.  在中**数据源**窗口中，展开所需的表，或要显示其列或属性的对象。
+2. 在中**数据源**窗口中，展开所需的表，或要显示其列或属性的对象。
 
    > [!TIP]
    > 如果**数据源**窗口未打开，选择打开**视图** > **其他 Windows** > **数据源**.
 
-3.  选择列或属性，其中包含您的图像数据，并从其下拉列表控件列表中选择以下控件之一：
+3. 选择列或属性，其中包含您的图像数据，并从其下拉列表控件列表中选择以下控件之一：
 
     - 如果 WPF 设计器打开，请选择**图像**。
 

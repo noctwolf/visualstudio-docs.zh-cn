@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c5326ef7aa66de124f3be5db96cf156b57cb339d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954488"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112892"
 ---
 # <a name="debug-64-bit-applications"></a>调试 64 位应用程序
 您可以调试运行于本地计算机或远程计算机上的 64 位应用程序。
@@ -35,22 +35,22 @@ ms.locfileid: "56954488"
 ## <a name="debug-a-64-bit-application"></a>调试 64 位应用程序
  若要尝试调试 64 位应用程序：
 
-1.  创建一个 Visual Studio 解决方案，例如 C# 控制台应用程序。
+1. 创建一个 Visual Studio 解决方案，例如 C# 控制台应用程序。
 
-2.  使用配置管理器将配置设置为 64 位。 有关详细信息，请参阅 [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md)。
+2. 使用配置管理器将配置设置为 64 位。 有关详细信息，请参阅[如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。
 
-3.  此时将启动 64 位版本的远程调试器 (msvsmon.exe)。 只要具有 64 位配置的解决方案处于启用状态，它就会运行。
+3. 此时将启动 64 位版本的远程调试器 (msvsmon.exe)。 只要具有 64 位配置的解决方案处于启用状态，它就会运行。
 
-4.  开始调试。 此体验应该与调试 32 位配置的应用程序的体验相同。 如果出现错误，请参阅下面的“疑难解答”一节。
+4. 开始调试。 此体验应该与调试 32 位配置的应用程序的体验相同。 如果出现错误，请参阅下面的“疑难解答”一节。
 
 ## <a name="troubleshooting-64-bit-debugging"></a>64 位调试疑难解答
- 可能会出现一条错误信息：“64 位调试操作所花费的时间超出了预期。” 在这种情况下，则说明 Visual Studio 已向 64 位版本的 msvsmon.exe 发送请求，返回该请求的结果花费了较长的时间。
+ 可能会看到如下错误："64 位调试操作比预期长。" 在这种情况下，Visual Studio 已向 64 位版本的 msvsmon.exe 发送了一个请求，而返回该请求的结果花费了较长的时间。
 
  出现此错误的主要原因有两个：
 
--   你的计算机上所安装的网络安全软件导致网络堆栈不可靠，并且该网络安全软件已删除通过 localhost 的数据包。 请尝试禁用全部的网络安全软件，然后查看该问题是否解决。 如果问题解决，那么请发送报告给你的网络安全软件供应商，说明该软件正在干扰 localhost 通信。
+- 你的计算机上所安装的网络安全软件导致网络堆栈不可靠，并且该网络安全软件已删除通过 localhost 的数据包。 请尝试禁用全部的网络安全软件，然后查看该问题是否解决。 如果问题解决，那么请发送报告给你的网络安全软件供应商，说明该软件正在干扰 localhost 通信。
 
--   你正遇到挂起或 Visual Studio 性能问题。 如果该问题定期发生，你可收集 Visual Studio (devenv.exe) 和辅助进程 (msvsmon.exe) 的转储并将其发送给 Microsoft。 有关报告问题的详细信息，请参阅 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。
+- 你正遇到挂起或 Visual Studio 性能问题。 如果该问题定期发生，你可收集 Visual Studio (devenv.exe) 和辅助进程 (msvsmon.exe) 的转储并将其发送给 Microsoft。 有关报告问题的详细信息，请参阅 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。
 
 ## <a name="see-also"></a>请参阅
 

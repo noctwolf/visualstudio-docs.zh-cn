@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780522"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113945"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "54780522"
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>通过纠正引用路径修复损坏的项目引用  
   
-1.  在“解决方案资源管理器”中，右键单击项目节点，然后单击“属性”。  
+1. 在“解决方案资源管理器”中，右键单击项目节点，然后单击“属性”。  
   
-2.  随即显示“项目设计器”。  
+2. 随即显示“项目设计器”。  
   
-3.  如果使用 Visual Basic，请选择“引用”页，并单击“引用路径”按钮。 在“引用路径”对话框中，键入包含要在“文件夹”字段中引用的项的文件夹路径，然后单击”添加文件夹”按钮。  
+3. 如果使用 Visual Basic，请选择“引用”页，并单击“引用路径”按钮。 在“引用路径”对话框中，键入包含要在“文件夹”字段中引用的项的文件夹路径，然后单击”添加文件夹”按钮。  
   
      或  
   
@@ -69,20 +69,20 @@ ms.locfileid: "54780522"
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>针对不再存在于驱动器上的文件修复损坏的项目引用  
   
--   删除引用。  
+- 删除引用。  
   
--   如果引用位于计算机上的另一个位置，请从该位置读取它。  
+- 如果引用位于计算机上的另一个位置，请从该位置读取它。  
   
--   有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="referenced-file-has-been-renamed"></a>引用的文件已重命名  
  引用的文件可能已重命名。  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>针对已重命名的文件修复损坏的引用  
   
--   删除该引用，然后添加对重命名文件的引用。  
+- 删除该引用，然后添加对重命名文件的引用。  
   
--   如果引用位于计算机上的另一个位置，则必须从该位置读取它。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 如果引用位于计算机上的另一个位置，则必须从该位置读取它。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>网络连接或身份验证失败  
  可能有许多原因导致文件无法访问：例如，网络连接失败或身份验证失败。 每种原因可能有不同的解决方法；例如，可能需要联系本地管理员才能访问所需资源。 但是，删除引用和修复使用该引用的代码是一种始终可供选择的方法。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  

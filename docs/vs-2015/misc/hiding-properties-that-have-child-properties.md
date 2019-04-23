@@ -10,27 +10,27 @@ helpviewer_keywords:
 ms.assetid: 6003607e-fc19-4bf9-a299-9f6adf8e92eb
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 8bc6510936e25e61ef47bb813b77e6efbf063573
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d20b865c6f07d76320a7df8402810c82869ddfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052358"
 ---
 # <a name="hiding-properties-that-have-child-properties"></a>隐藏具有子属性的属性
 你想要隐藏具有子属性的属性：  
   
--   如果具有嵌套的项目的父项目以编程方式控制子项目的某些方面。  
+- 如果具有嵌套的项目的父项目以编程方式控制子项目的某些方面。  
   
--   如果使用专门的设计器使用控件并且你不想要为开发人员的完全访问权限提供给控件的所有属性。  
+- 如果使用专门的设计器使用控件并且你不想要为开发人员的完全访问权限提供给控件的所有属性。  
   
--   如果你具有的一个对象的作用域所有权，并想要限制属性的视图。  
+- 如果你具有的一个对象的作用域所有权，并想要限制属性的视图。  
   
 ### <a name="to-hide-properties-that-have-child-properties"></a>若要隐藏具有子属性的属性  
   
-1.  设置`pfDisplay`中的参数<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A>到`FALSE`。  
+1. 设置`pfDisplay`中的参数<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.DisplayChildProperties%2A>到`FALSE`。  
   
-2.  设置`pfHide`中的参数<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A>到`TRUE`。  
+2. 设置`pfHide`中的参数<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HideProperty%2A>到`TRUE`。  
   
 ## <a name="see-also"></a>请参阅  
  [属性显示网格](../extensibility/internals/properties-display-grid.md)

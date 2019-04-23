@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072950"
 ---
 # <a name="program-control"></a>程序控制
 在 Visual Studio 中调试时，所有以下单步执行和继续例程出现在程序级别上：
 
--   设置下一条语句，即，将您的计算机设置为在特定帧的环境中执行的下一个指令
+- 设置下一条语句，即，将您的计算机设置为在特定帧的环境中执行的下一个指令
 
--   执行时，即继续退出单步执行模式
+- 执行时，即继续退出单步执行模式
 
--   单步执行到下一个指令
+- 单步执行到下一个指令
 
--   继续执行当前单步执行模式
+- 继续执行当前单步执行模式
 
--   挂起线程所包含的程序
+- 挂起线程所包含的程序
 
--   继续执行所包含的程序线程
+- 继续执行所包含的程序线程
 
 > [!NOTE]
 >  在线程级别上实现查看调用堆栈。 若要枚举帧信息查看线程的调用堆栈时，必须实现的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口。

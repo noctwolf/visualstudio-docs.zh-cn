@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a51c64b2caf8520385a5334d7bbd3ad6c14d93f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058676"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：在服务器资源管理器中的内置 SharePoint 节点获取数据
   在每个内置 SharePoint 节点**服务器资源管理器**，可以为该节点表示的基础 SharePoint 组件获取数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
@@ -36,13 +36,13 @@ ms.locfileid: "56633455"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：
 
--   EnvDTE
+- EnvDTE
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+- Microsoft.VisualStudio.SharePoint.Explorer.Extensions
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>将扩展部署
  若要部署**服务器资源管理器**扩展中，创建[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要将与该扩展一起分发的任何其他文件。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。

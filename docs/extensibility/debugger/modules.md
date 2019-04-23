@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f31e3760a0697be8c9fc80eb811c99df79d32b1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 611d067030cd935f6957a976c8a3aa2b7d4f8ae3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091299"
 ---
 # <a name="modules"></a>模块
 在调试器体系结构，方面*模块*:
 
--   是，如可执行文件或 DLL 的物理容器。
+- 是，如可执行文件或 DLL 的物理容器。
 
--   可以重新加载其符号，并描述自身。 模块说明显示在 IDE 的模块窗口中。
+- 可以重新加载其符号，并描述自身。 模块说明显示在 IDE 的模块窗口中。
 
--   为由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)调试引擎来描述该模块创建的接口。
+- 为由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)调试引擎来描述该模块创建的接口。
 
 ## <a name="see-also"></a>请参阅
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)

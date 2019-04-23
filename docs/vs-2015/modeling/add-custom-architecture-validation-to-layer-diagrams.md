@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6cf1dad590a8d7632e9077764e85f432373cc54b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045874"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>向层关系图添加自定义体系结构验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "58937025"
    >  到 makethe 模板正常工作：  
    > 
    > - 编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。  
-   >   -   如果使用自定义属性，应用更新中所述[向层关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)。  
+   >   - 如果使用自定义属性，应用更新中所述[向层关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)。  
   
 3. 编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。  
   
@@ -67,19 +67,19 @@ ms.locfileid: "58937025"
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证  
   
-1.  在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含层验证类。  
+1. 在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含层验证类。  
   
-2.  在解决方案中标识或创建 VSIX 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。 如果必须添加一个 VSIX 项目，请遵循下列步骤：  
+2. 在解决方案中标识或创建 VSIX 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。 如果必须添加一个 VSIX 项目，请遵循下列步骤：  
   
-    1.  在“新建项目”  对话框中，依次选择“Visual C#” 、“扩展性” 、“VSIX 项目” 。  
+    1. 在“新建项目”  对话框中，依次选择“Visual C#” 、“扩展性” 、“VSIX 项目” 。  
   
-    2.  在“解决方案资源管理器” 中，在 VSIX 项目的快捷菜单上，选择“设为启动项目” 。  
+    2. 在“解决方案资源管理器” 中，在 VSIX 项目的快捷菜单上，选择“设为启动项目” 。  
   
-3.  在 **source.extension.vsixmanifest**中的“资产” 下，将层验证项目添加为 MEF 组件：  
+3. 在 **source.extension.vsixmanifest**中的“资产” 下，将层验证项目添加为 MEF 组件：  
   
-    1.  选择 **“新建”**。  
+    1. 选择 **“新建”**。  
   
-    2.  在“添加新资产”  对话框中，进行如下设置：  
+    2. 在“添加新资产”  对话框中，进行如下设置：  
   
          **类型** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -87,11 +87,11 @@ ms.locfileid: "58937025"
   
          **项目** = *你的验证程序项目*  
   
-4.  还必须将其添加为层验证：  
+4. 还必须将其添加为层验证：  
   
-    1.  选择 **“新建”**。  
+    1. 选择 **“新建”**。  
   
-    2.  在“添加新资产”  对话框中，进行如下设置：  
+    2. 在“添加新资产”  对话框中，进行如下设置：  
   
          **类型** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**。 这并不是下拉列表中的选项。 必须从键盘输入。  
   
@@ -99,7 +99,7 @@ ms.locfileid: "58937025"
   
          **项目** = *你的验证程序项目*  
   
-5.  返回层验证项目，并添加以下项目引用：  
+5. 返回层验证项目，并添加以下项目引用：  
   
     |**引用**|**允许执行的操作**|  
     |-------------------|------------------------------------|  
@@ -110,18 +110,18 @@ ms.locfileid: "58937025"
     |System.ComponentModel.Composition|使用 Managed Extensibility Framework (MEF) 定义验证组件|  
     |Microsoft.VisualStudio.Modeling.Sdk.[版本号]|定义建模扩展|  
   
-6.  将本主题末的示例代码复制到验证程序库项目中的类文件中，以包含验证的代码。 有关详细信息，请参阅 [验证编程](#programming)。  
+6. 将本主题末的示例代码复制到验证程序库项目中的类文件中，以包含验证的代码。 有关详细信息，请参阅 [验证编程](#programming)。  
   
-7.  若要测试此扩展，请参阅 [调试层验证](#debugging)。  
+7. 若要测试此扩展，请参阅 [调试层验证](#debugging)。  
   
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
-8.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。 （Windows 8 中为文件资源管理器。）  
+8. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。 （Windows 8 中为文件资源管理器。）  
   
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
-##  <a name="programming"></a> 验证编程  
+## <a name="programming"></a> 验证编程  
  若要定义层验证扩展，可以定义一个具有以下特征的类：  
   
 - 声明的大体形式如下：  
@@ -190,7 +190,7 @@ ms.locfileid: "58937025"
   
   代码中从层到元素的链接具有“Represents”类别。  
   
-##  <a name="debugging"></a> 调试验证  
+## <a name="debugging"></a> 调试验证  
  若要调试你的层验证扩展，请按 Ctrl + F5。 将打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>使用包含依赖项的解决方案进行测试  
@@ -217,7 +217,7 @@ ms.locfileid: "58937025"
 ### <a name="deploying-a-validation-extension"></a>部署验证扩展  
  若要在安装了适当版本的 Visual Studio 的计算机上安装验证扩展，请打开目标计算机上的 VSIX 文件。 若要在安装了 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的计算机上进行安装，则必须将 VSIX 内容手动解压到 Extensions 文件夹中。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。  
   
-##  <a name="example"></a> Example code  
+## <a name="example"></a> Example code  
   
 ```csharp  
 using System;  

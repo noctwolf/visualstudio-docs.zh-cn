@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059131"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：有关 ClickOnce 部署中的各个系统必备项指定一个支持 URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ ms.locfileid: "58933464"
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>指定一个单独的必备组件的支持 URL  
   
-1.  打开应用程序清单 （.manifest 文件） 你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文本编辑器中应用程序。  
+1. 打开应用程序清单 （.manifest 文件） 你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文本编辑器中应用程序。  
   
-2.  对于一个操作系统必备组件中，添加`supportUrl`属性为`dependentOS`元素：  
+2. 对于一个操作系统必备组件中，添加`supportUrl`属性为`dependentOS`元素：  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ ms.locfileid: "58933464"
       </dependency>  
     ```  
   
-3.  公共语言运行时的某个版本的先决条件，将添加`supportUrl`属性为`dependentAssembly`指定公共语言运行时依赖项的条目：  
+3. 公共语言运行时的某个版本的先决条件，将添加`supportUrl`属性为`dependentAssembly`指定公共语言运行时依赖项的条目：  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ ms.locfileid: "58933464"
       </dependency>  
     ```  
   
-4.  必须在全局程序集缓存中预安装的程序集的先决条件，将设置`supportUrl`为`dependentAssembly`元素，它指定所需的程序集：  
+4. 必须在全局程序集缓存中预安装的程序集的先决条件，将设置`supportUrl`为`dependentAssembly`元素，它指定所需的程序集：  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ ms.locfileid: "58933464"
       </dependency>  
     ```  
   
-5.  可选。 对于面向.NET Framework 4 的应用程序打开部署清单 （.application 文件） 的你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文本编辑器中应用程序。  
+5. 可选。 对于面向.NET Framework 4 的应用程序打开部署清单 （.application 文件） 的你[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在文本编辑器中应用程序。  
   
-6.  是.NET Framework 4 的先决条件，将添加`supportUrl`属性为`compatibleFrameworks`元素：  
+6. 是.NET Framework 4 的先决条件，将添加`supportUrl`属性为`compatibleFrameworks`元素：  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ ms.locfileid: "58933464"
     </compatibleFrameworks>  
     ```  
   
-7.  手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 你必须使用 Mage.exe 或 MageUI.exe SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+7. 手动修改应用程序清单，必须使用数字证书，请对应用程序清单重新签名，然后更新和对的部署清单重新签名。 你必须使用 Mage.exe 或 MageUI.exe SDK 工具来完成此任务中的，重新生成使用这些文件作为[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]会删除手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  如果应用程序被标记为在部分信任环境中运行时，支持 URL 不被显示在对话框中。  

@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097123"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题描述了 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 调试方案的软件和安全性要求：  
   
--   本地调试：其中， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 应用程序在同一台计算机上运行。 此方案有两种版本：  
+- 本地调试：其中， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 应用程序在同一台计算机上运行。 此方案有两种版本：  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码驻留在文件系统中。  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码驻留在文件系统中。  
   
-    -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码驻留在 IIS 网站中。  
+    - [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码驻留在 IIS 网站中。  
   
--   远程调试：其中， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在客户端计算机上运行，并对在远程服务器计算机上运行的 Web 应用程序进行调试。  
+- 远程调试：其中， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在客户端计算机上运行，并对在远程服务器计算机上运行的 Web 应用程序进行调试。  
   
 ## <a name="security-requirements"></a>安全性要求  
  对于远程调试，本地和远程计算机必须位于域设置或工作组设置上。  

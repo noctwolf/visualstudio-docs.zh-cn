@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113438"
 ---
 # <a name="task-class---internal-members"></a>任务类-内部成员
 本文介绍的内部成员的<xref:System.Threading.Tasks.Task?displayProperty=fullName>类，可帮助您实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.Task>参考文章。
@@ -49,7 +49,7 @@ ms.locfileid: "56704873"
 
 ### <a name="fields"></a>字段
 
-|name|描述|
+|名称|描述|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|表示要在中执行的代码的委托<xref:System.Threading.Tasks.Task>对象。|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|将存储的其他属性<xref:System.Threading.Tasks.Task>对象。|
@@ -67,17 +67,17 @@ ms.locfileid: "56704873"
 ## <a name="remarks"></a>备注
  以下内部方法非常有用到调试器引擎，因为它们标记为 entrance<xref:System.Threading.Tasks.Task>代码执行：
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>请参阅
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

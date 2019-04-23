@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038901"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展特定于域的语言设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ ms.locfileid: "58932449"
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>若要创建 DSL 设计器扩展解决方案  
   
-1.  创建新项目使用类库项目模板。 在中**新的项目**对话框中，单击**Visual C#** ，然后在中间的窗口中单击**类库**。  
+1. 创建新项目使用类库项目模板。 在中**新的项目**对话框中，单击**Visual C#** ，然后在中间的窗口中单击**类库**。  
   
      此项目将包含你的扩展的代码。  
   
-2.  创建新项目使用 VSIX 项目模板。 在中**新的项目**对话框框中，展开**Visual C#**，单击**扩展性**，然后在中间的窗口中选择**VSIX 项目**。  
+2. 创建新项目使用 VSIX 项目模板。 在中**新的项目**对话框框中，展开**Visual C#**，单击**扩展性**，然后在中间的窗口中选择**VSIX 项目**。  
   
      选择**将添加到解决方案**。  
   
      在 VSIX 清单编辑器中打开 Source.extension.vsixmanifest。  
   
-3.  以上内容的字段中，单击**添加内容**。  
+3. 以上内容的字段中，单击**添加内容**。  
   
-4.  在**添加内容**对话框中，将**中选择内容类型**到**MEF 组件**，并设置**项目**到你的类库项目。  
+4. 在**添加内容**对话框中，将**中选择内容类型**到**MEF 组件**，并设置**项目**到你的类库项目。  
   
-5.  单击**选择版本**并确保选中**Visual Studio Enterprise**检查。  
+5. 单击**选择版本**并确保选中**Visual Studio Enterprise**检查。  
   
-6.  请确保将 VSIX 项目的解决方案的启动项目。  
+6. 请确保将 VSIX 项目的解决方案的启动项目。  
   
-7.  在类库项目中，添加对以下程序集的引用：  
+7. 在类库项目中，添加对以下程序集的引用：  
   
      Microsoft.VisualStudio.CoreUtility  
   

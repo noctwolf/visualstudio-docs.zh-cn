@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b952d604ce095ef24ef427c98a74e60f25ba4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049465"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时
   你可以通过下列方式使用 VSTO 外接程序来自定义 Word 文档和 Excel 工作簿：
@@ -54,21 +54,21 @@ ms.locfileid: "56643816"
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>若要生成 Word 文档的主机项
 
--   以下代码示例演示了如何生成活动文档的主机项。
+- 以下代码示例演示了如何生成活动文档的主机项。
 
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>若要生成 Excel 工作簿的主机项
 
--   以下代码示例演示了如何生成活动工作簿的主机项。
+- 以下代码示例演示了如何生成活动工作簿的主机项。
 
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>若要生成 Excel 工作表的主机项
 
--   以下代码示例演示了如何为项目中的活动工作表生成主机项。
+- 以下代码示例演示了如何为项目中的活动工作表生成主机项。
 
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
@@ -78,12 +78,12 @@ ms.locfileid: "56643816"
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>若要为 ListObject 生成主机控件
 
--   以下代码示例演示了如何为项目中活动工作表内第一个 <xref:Microsoft.Office.Tools.Excel.ListObject> 生成 <xref:Microsoft.Office.Interop.Excel.ListObject> 。
+- 以下代码示例演示了如何为项目中活动工作表内第一个 <xref:Microsoft.Office.Tools.Excel.ListObject> 生成 <xref:Microsoft.Office.Interop.Excel.ListObject> 。
 
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
 
-###  <a name="AddControls"></a> 将托管的控件添加到文档和工作表
+### <a name="AddControls"></a> 将托管的控件添加到文档和工作表
  在生成 <xref:Microsoft.Office.Tools.Word.Document> 或 <xref:Microsoft.Office.Tools.Excel.Worksheet>后，你可以将控件添加到这些扩展对象表示的文档或工作表。 若要添加控件，请使用`Controls`的属性<xref:Microsoft.Office.Tools.Word.Document>或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
  可以添加 Windows 窗体控件或 *主机控件*。 主机控件是由包装 Word 或 Excel 主互操作程序集中一个相应控件的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 所提供的控件。 主机控件公开的所有基础本机 Office 对象的行为。 它还会引发事件，并可以通过使用 Windows 窗体数据绑定模型绑定到数据。 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
@@ -113,7 +113,7 @@ ms.locfileid: "56643816"
  [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
 
-##  <a name="HasVstoObject"></a> 确定是否扩展了 Office 对象
+## <a name="HasVstoObject"></a> 确定是否扩展了 Office 对象
  若要确定是否为特定的本机 Office 对象生成了扩展对象，请使用 `HasVstoObject` 方法。 此方法返回 **，则返回 true**如果已生成了扩展的对象。
 
  使用 `Globals.Factory.HasVstoMethod` 方法。 在希望为扩展对象测试的本机 Word 或 Excel 对象中传递，如 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Worksheet>。

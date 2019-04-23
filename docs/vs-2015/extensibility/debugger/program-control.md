@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108043"
 ---
 # <a name="program-control"></a>程序控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 Visual Studio 中调试时，所有以下单步执行和继续例程出现在程序级别上：  
   
--   设置下一条语句，即，将您的计算机设置为在特定帧的环境中执行的下一个指令  
+- 设置下一条语句，即，将您的计算机设置为在特定帧的环境中执行的下一个指令  
   
--   执行时，即继续退出单步执行模式  
+- 执行时，即继续退出单步执行模式  
   
--   单步执行到下一个指令  
+- 单步执行到下一个指令  
   
--   继续执行当前单步执行模式  
+- 继续执行当前单步执行模式  
   
--   挂起线程所包含的程序  
+- 挂起线程所包含的程序  
   
--   继续执行所包含的程序线程  
+- 继续执行所包含的程序线程  
   
 > [!NOTE]
 >  在线程级别上实现查看调用堆栈。 若要枚举帧信息查看线程的调用堆栈时，必须实现的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口。  

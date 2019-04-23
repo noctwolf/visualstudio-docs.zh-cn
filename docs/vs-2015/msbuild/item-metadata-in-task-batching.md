@@ -14,17 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c83f499560bf747843fe74ede4d2187a544bee8b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769150"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668181"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每个批一次运行一个任务。 要准确了解哪个批中正在传递什么项可能比较困难。 本主题介绍了以下涉及批处理的常见方案。  
   
 - 将一个项列表划分为多个批  

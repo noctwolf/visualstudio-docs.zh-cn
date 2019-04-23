@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087789"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的图像和图标
-##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用
+## <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用
  在之前创建图片，请考虑进行中的 1,000 多个映像的用法[Visual Studio 图像库](http://www.microsoft.com/en-my/download/details.aspx?id=35825)。
 
 ### <a name="types-of-images"></a>类型的映像
 
--   **图标**。 显示在命令、 层次结构、 模板和等等的小图像。 在 Visual Studio 中使用的默认图标大小为 16 x 16 PNG。 图标会自动生成的映像服务生成的 XAML 格式的 HDPI 支持。
+- **图标**。 显示在命令、 层次结构、 模板和等等的小图像。 在 Visual Studio 中使用的默认图标大小为 16 x 16 PNG。 图标会自动生成的映像服务生成的 XAML 格式的 HDPI 支持。
 
      **注意：** 菜单系统中都使用映像，而不应创建的每个命令的图标。 请查阅[Visual Studio 的菜单和命令](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)若要查看您的命令是否应获得一个图标。
 
--   **缩略图。** 在对话框中，例如新项目对话框的预览区域中使用的图像。
+- **缩略图。** 在对话框中，例如新项目对话框的预览区域中使用的图像。
 
--   **对话框的图像。** 在对话框或向导，作为描述性图形或消息指示器中显示的图像。 使用不常且仅在需要说明一个困难或获得用户的注意力 （警报，警告） 时。
+- **对话框的图像。** 在对话框或向导，作为描述性图形或消息指示器中显示的图像。 使用不常且仅在需要说明一个困难或获得用户的注意力 （警报，警告） 时。
 
--   **带动画的图像。** 在进度指示器、 状态栏和操作的对话框中使用。
+- **带动画的图像。** 在进度指示器、 状态栏和操作的对话框中使用。
 
--   **游标。** 用于指示是否在允许操作，使用的鼠标，其中对象可能会断开，依次类推。
+- **游标。** 用于指示是否在允许操作，使用的鼠标，其中对象可能会断开，依次类推。
 
-##  <a name="BKMK_IconDesign"></a> 图标设计
+## <a name="BKMK_IconDesign"></a> 图标设计
 
 ### <a name="overview"></a>概述
  Visual Studio 使用现代样式图标，具有全新的 geometry 和对半余额为正/负 （浅/深），并使用直接且易于理解的隐喻。 重要图标设计点中心的清晰度、 简化和上下文。
@@ -210,19 +210,19 @@ ms.locfileid: "56683137"
 
 #### <a name="file-types"></a>文件类型
 
--   **32 位 PNG:** 图标的首选的格式。 可以将单个光栅 （像素） 图像存储无损数据压缩文件格式。 32 位 PNG 文件支持 alpha 通道透明度、 灰度校正和隔行扫描。
+- **32 位 PNG:** 图标的首选的格式。 可以将单个光栅 （像素） 图像存储无损数据压缩文件格式。 32 位 PNG 文件支持 alpha 通道透明度、 灰度校正和隔行扫描。
 
--   **32 位 BMP:** 非 WPF 控件。 也称为 XP 或增强色，32 位 BMP 是一种 RGB/A 图像格式，具有 alpha 通道透明度的真彩色图像。 Alpha 通道是一层的透明度，然后保存该位图作为其他 （第四个） 中的 Adobe Photoshop 中指定颜色通道。 提供一个快速的视觉提示有关颜色深度的所有 32 位 BMP 文件图稿生产期间添加黑色背景。 此黑色背景表示查看在 UI 中将要屏蔽的区域。
+- **32 位 BMP:** 非 WPF 控件。 也称为 XP 或增强色，32 位 BMP 是一种 RGB/A 图像格式，具有 alpha 通道透明度的真彩色图像。 Alpha 通道是一层的透明度，然后保存该位图作为其他 （第四个） 中的 Adobe Photoshop 中指定颜色通道。 提供一个快速的视觉提示有关颜色深度的所有 32 位 BMP 文件图稿生产期间添加黑色背景。 此黑色背景表示查看在 UI 中将要屏蔽的区域。
 
--   **32 位 ICO:** 项目图标和添加项。 ICO 的所有文件都都具有透明度 alpha 通道的 32 位真彩色 (RGB/A)。 因为 ICO 文件可以存储多个大小和颜色深度，Vista 图标是通常包含 16 x 16、 32 x 32、 48 x 48 和 256x256 图像大小以 ICO 格式。 为了在 Windows 资源管理器中正确显示，ICO 文件必须是保存列表进行每个图像大小为 24 位和 8 位颜色深度。
+- **32 位 ICO:** 项目图标和添加项。 ICO 的所有文件都都具有透明度 alpha 通道的 32 位真彩色 (RGB/A)。 因为 ICO 文件可以存储多个大小和颜色深度，Vista 图标是通常包含 16 x 16、 32 x 32、 48 x 48 和 256x256 图像大小以 ICO 格式。 为了在 Windows 资源管理器中正确显示，ICO 文件必须是保存列表进行每个图像大小为 24 位和 8 位颜色深度。
 
--   **XAML:** 设计图面和 Windows 装饰器。 XAML 图标是支持缩放、 旋转、 归档和透明度的基于矢量的图像文件。 它们现在不是在 Visual Studio 中常见，但由于其灵活性而变得更受欢迎。
+- **XAML:** 设计图面和 Windows 装饰器。 XAML 图标是支持缩放、 旋转、 归档和透明度的基于矢量的图像文件。 它们现在不是在 Visual Studio 中常见，但由于其灵活性而变得更受欢迎。
 
--   **SVG**
+- **SVG**
 
--   **24 位 BMP:** Visual Studio 命令栏。 为 true 颜色 RGB 图像格式，24 位 BMP 是透明度的图标约定使用洋红色 （R = 255，G = 0，B = 255） 创建一层，为 knock 扩展透明层的颜色键。 在 24 位 bmp 格式，使用的背景色显示所有洋红色图面。
+- **24 位 BMP:** Visual Studio 命令栏。 为 true 颜色 RGB 图像格式，24 位 BMP 是透明度的图标约定使用洋红色 （R = 255，G = 0，B = 255） 创建一层，为 knock 扩展透明层的颜色键。 在 24 位 bmp 格式，使用的背景色显示所有洋红色图面。
 
--   **24 位 GIF:** Visual Studio 命令栏。 支持透明度的 true 颜色 RGB 图像格式。 GIF 文件常用于向导图稿和 GIF 动画。
+- **24 位 GIF:** Visual Studio 命令栏。 支持透明度的 true 颜色 RGB 图像格式。 GIF 文件常用于向导图稿和 GIF 动画。
 
 ### <a name="icon-construction"></a>图标构造
  在 Visual Studio 中的最小图标大小为 16 x 16。 最大共同使用为 32 × 32。 请记住不以填满整个 16 x 16、 24 x 24 或 32 x 32 帧时设计一个图标。 清晰、 统一图标构造是必要的用户识别。 生成的图标时遵循以下几点。
@@ -244,18 +244,18 @@ ms.locfileid: "56683137"
 
  在 Visual Studio 图标中使用颜色的详细信息，请参阅[图像中使用颜色](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages)。
 
-##  <a name="BKMK_UsingColorInImages"></a> 在映像中使用颜色
+## <a name="BKMK_UsingColorInImages"></a> 在映像中使用颜色
 
 ### <a name="overview"></a>概述
  在 Visual Studio 中的图标是主要单色。 保留颜色来传达特定信息并永远不会用于修饰。 使用颜色：
 
--   若要指示某个操作
+- 若要指示某个操作
 
--   状态通知向用户发出警报
+- 状态通知向用户发出警报
 
--   若要指定语言隶属关系
+- 若要指定语言隶属关系
 
--   若要区分 IntelliSense 中的项
+- 若要区分 IntelliSense 中的项
 
 ### <a name="accessibility"></a>可访问性
  Visual Studio 的符合性指南要求，所有图标签都入到的产品传递颜色和对比度的可访问性要求。 中的 visual 语言调色板的颜色已经过测试并满足这些要求。
@@ -268,7 +268,7 @@ ms.locfileid: "56683137"
 ### <a name="base-palette"></a>基调色板
  所有标准图标包含三种基本颜色。 图标包含没有渐变或投影 3D 工具图标的一个或两个例外情况。
 
-|用法|name|值 （浅色主题）|样本|示例|
+|用法|名称|值 （浅色主题）|样本|示例|
 |-----------|----------|---------------------------|------------|-------------|
 |深色背景 /|VS BG|424242 / 66,66,66|![样本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![基调色板示例](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405年 02_BasePaletteExample")|
 |前景/轻型|VS FG|F0EFF1 / 240,239,241|![样本 F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -281,7 +281,7 @@ ms.locfileid: "56683137"
 #### <a name="action-modifiers"></a>操作修改程序
  以下四种颜色指示操作修改程序所需的操作类型：
 
-|用法|name|值 （所有主题）|样本|
+|用法|名称|值 （所有主题）|样本|
 |-----------|----------|--------------------------|------------|
 |正|VS 操作绿色|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |负数|VS 操作红色|A1260D / 161,38,13|![样本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
@@ -324,14 +324,14 @@ ms.locfileid: "56683137"
 
 #### <a name="folder"></a>文件夹
 
-|用法|name|值 （所有主题）|样本|示例|
+|用法|名称|值 （所有主题）|样本|示例|
 |-----------|----------|--------------------------|------------|-------------|
 |文件夹|文件夹|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![文件夹颜色图标](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 语言
  每个常见的语言或平台 Visual Studio 中提供有关联的颜色。 这些颜色的使用基本图标，或出现在复合图标的右上角的语言修饰符。
 
-|用法|name|值 （所有主题）|样本|
+|用法|名称|值 （所有主题）|样本|
 |-----------|----------|--------------------------|------------|
 |ASP，HTML，WPF|ASP HTML WPF 蓝色|0095D7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|CPP 紫色|9B4F96 / 155,79,150|![样本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -353,7 +353,7 @@ ms.locfileid: "56683137"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 图标使用排他的调色板。 这些颜色用于帮助用户快速将 IntelliSense 弹出列表中的不同项之间区分开来。
 
-|用法|name|值 （所有主题）|样本|
+|用法|名称|值 （所有主题）|样本|
 |-----------|----------|--------------------------|------------|
 |类事件|VS 操作橙色|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |扩展方法，方法中，模块中委托|VS 操作紫色|652D90 / 101,45,144|![样本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
@@ -371,7 +371,7 @@ ms.locfileid: "56683137"
 ### <a name="notifications"></a>通知
  在 Visual Studio 中的通知用于指示状态。 通知调色板使用以下四种颜色，以及黑色或白色前台填充选项，来定义具有以下状态级别的通知。
 
-|用法|name|值 （所有主题）|样本|
+|用法|名称|值 （所有主题）|样本|
 |-----------|----------|--------------------------|------------|
 |状态： 非特定语言|通知蓝色 （VS 蓝色表示）|1BA1E2 / 27,161,226|![样本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |状态： 正|通知绿色 （VS 绿色）|339933 / 51,153,51|![样本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
@@ -389,7 +389,7 @@ ms.locfileid: "56683137"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  一般情况下，Visual Studio Online 包括功能的浏览器中托管。 在不同的环境颜色各不相同，但该样式将保持不变。
 
-|Group|用法|name|值 （所有主题）|样本|
+|Group|用法|名称|值 （所有主题）|样本|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|背景|TFSO BG|656565/ 101, 101, 101|![样本 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|轮廓|OUT TFSO|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|

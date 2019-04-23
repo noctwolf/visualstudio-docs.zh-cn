@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b3f104354a132702ebfc33e628c4643a34c8da0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048822"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：检测本机独立组件并收集计时数据与从命令行 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "59649767"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
     |选项|描述|  
     |------------|-----------------|  
@@ -76,9 +76,9 @@ ms.locfileid: "59649767"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  关闭目标应用程序。  
+1. 关闭目标应用程序。  
 
-2.  关闭探查器。 类型：  
+2. 关闭探查器。 类型：  
 
      **VSPerfCmd /shutdown**  
 

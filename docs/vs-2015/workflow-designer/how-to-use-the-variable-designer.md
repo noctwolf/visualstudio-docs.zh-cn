@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba555be7b5de38fa0fba5bc7cc899661e47333cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22096541df20d2eb6ba5bd00c2fc531e9988d5e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104286"
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
 变量设计器用于创建在数据绑定方案和条件语句中使用的变量。 通过单击来访问在设计器**变量**设计画布左下角的按钮。 该设计器包含一组这些变量显示在表格窗体中并可以按每一列标题排序除外**默认**列。 每个变量都包含名称、变量类型、作用域和默认值（如果有）。 名称和默认值是可编辑的文本字段，而类型和作用域是下拉项。 作用域是调用变量设计器时选择的活动。 如果无法在选定的范围内创建某个变量，则范围将默认为允许变量在其范围内创建的最靠近选定内容的上级活动。 [!INCLUDE[crabout](../includes/crabout-md.md)] 变量，请参阅[变量和自变量](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
@@ -25,13 +25,13 @@ ms.locfileid: "58937544"
   
 ### <a name="to-create-a-new-variable"></a>创建新变量  
   
-1.  在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中打开一个工作流或活动解决方案。  
+1. 在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中打开一个工作流或活动解决方案。  
   
-2.  在设计画布上，选择工作流中的一个活动。  
+2. 在设计画布上，选择工作流中的一个活动。  
   
-3.  通过单击打开变量设计器**变量**设计画布左下角的按钮。 此时将显示变量设计器。  
+3. 通过单击打开变量设计器**变量**设计画布左下角的按钮。 此时将显示变量设计器。  
   
-4.  单击标记为空的行**变量创建**。 这会将新行添加使用新的变量使用以下默认值： 为 variablex**名称**其中 x 是一个整数，其初始值为 1 的自动递增，从而创建唯一变量名**字符串**有关**变量类型**，和**序列**有关**作用域**。 为添加任何值**默认**。 可以在工作流设计过程中随时更改这些值。  
+4. 单击标记为空的行**变量创建**。 这会将新行添加使用新的变量使用以下默认值： 为 variablex**名称**其中 x 是一个整数，其初始值为 1 的自动递增，从而创建唯一变量名**字符串**有关**变量类型**，和**序列**有关**作用域**。 为添加任何值**默认**。 可以在工作流设计过程中随时更改这些值。  
   
     > [!NOTE]
     >  若要删除变量，通过单击选择该变量，然后按**删除**密钥。  

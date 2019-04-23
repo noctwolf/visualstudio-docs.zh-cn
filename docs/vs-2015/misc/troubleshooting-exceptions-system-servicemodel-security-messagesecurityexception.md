@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058871"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>异常疑难解答：System.ServiceModel.Security.MessageSecurityException
 一个<xref:System.ServiceModel.Security.MessageSecurityException>时将引发异常[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]确定消息未受到正确保护或已被篡改。 当下列条件全为真时，此错误会非常频繁地发生：  
   
--   在远程连接（如远程桌面连接或终端服务）上使用 WCF 服务引用与网站或 Web 应用程序项目中的 WCF 服务 (.svc) 进行通信。  
+- 在远程连接（如远程桌面连接或终端服务）上使用 WCF 服务引用与网站或 Web 应用程序项目中的 WCF 服务 (.svc) 进行通信。  
   
--   您不具有远程站点上的管理员权限。  
+- 您不具有远程站点上的管理员权限。  
   
--   对远程站点上的本地主机的请求由 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server 进行处理。  
+- 对远程站点上的本地主机的请求由 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server 进行处理。  
   
 ## <a name="associated-tips"></a>相关提示  
  **使用 ASP.Net 开发服务器时解决 NTLM 身份验证问题。**  
@@ -78,11 +78,11 @@ ms.locfileid: "58936609"
   
 #### <a name="to-turn-off-ntlm-security"></a>关闭 NTLM 安全  
   
-1.  在 **“解决方案资源管理器”** 中，右击网站名称，然后单击 **“属性页”**。  
+1. 在 **“解决方案资源管理器”** 中，右击网站名称，然后单击 **“属性页”**。  
   
-2.  选择 **“启动选项”**，然后清除 **“NTLM 身份验证”** 复选框。  
+2. 选择 **“启动选项”**，然后清除 **“NTLM 身份验证”** 复选框。  
   
-3.  单击 **“确定”**。  
+3. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

@@ -73,12 +73,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45562119158faad0d596b74faecd786668abf8dd
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103272"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 本主题详细描述了 CRT 调试堆。
@@ -130,7 +130,7 @@ typedef struct _CrtMemBlockHeader
  */
 ```
 
-块的用户数据区两侧的 `NoMansLand` 缓冲区当前大小为 4 字节，并填充有调试堆例程用于验证用户内存块的限制是否未被覆盖的已知字节值。 调试堆还使用已知值填充新的内存块。 若选择将释放的块保留在堆的链接列表中（如下文所述），则这些释放的块也会填充一个已知的值。 当前，使用的实际字节值如下：
+块的用户数据区两侧的 `NoMansLand` 缓冲区当前大小为 4 字节，并填充有调试堆例程用于验证用户内存块的限制是否未被覆盖的已知字节值。 调试堆还使用已知值填充新的内存块。 若选择将释放的块保留在堆的链接列表中（如下文所述），则这些释放的块也会填充一个已知的值。 当前，所用的实际字节值如下所示：
 
 在应用程序使用的内存的任何一侧上的"NoMansLand"缓冲区当前 0xFD 填充 NoMansLand (0xFD)。
 
@@ -143,9 +143,9 @@ typedef struct _CrtMemBlockHeader
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型
 调试堆中的每个内存块都被分配给五种分配类型之一。 出于泄漏检测和状态报告的目的，对这些类型进行了不同的跟踪和报告。 可以通过使用对调试堆分配函数之一（如 [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)的直接调用来分配块，从而指定块的类型。 调试堆中五种类型的内存块（在 _ CrtMemBlockHeader 结构的 nBlockUse 成员中设置）如下：
 
-**_NORMAL_BLOCK**调用[malloc](/cpp/c-runtime-library/reference/malloc)或[calloc](/cpp/c-runtime-library/reference/calloc)创建普通块。 如果只打算使用普通块，而不需要客户端块，则可能需要定义 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，这将导致所有堆分配调用映射到其调试版本中的调试等效项。 此操作允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。
+**_NORMAL_BLOCK**调用[malloc](/cpp/c-runtime-library/reference/malloc)或[calloc](/cpp/c-runtime-library/reference/calloc)创建普通块。 如果只打算使用普通块，而不需要客户端块，则可能需要定义 [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，这将导致所有堆分配调用映射到其调试版本中的调试等效项。 这将允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。
 
-`_CRT_BLOCK` 许多运行时库函数在内部分配的内存块被标记为 CRT 块，这样就可以单独处理它们了。 因此，泄漏检测和其他操作无需受它们的影响。 分配操作决不能分配、重新分配或释放任何 CRT 类型的块。
+`_CRT_BLOCK` 许多运行时库函数在内部分配的内存块被标记为 CRT 块，这样就可以单独处理它们了。 结果，泄漏检测和其他操作不需要受这些块影响。 分配永不可以分配、重新分配或释放任何 CRT 类型的块。
 
 `_CLIENT_BLOCK` 出于调试目的，应用程序可以专门跟踪一组给定的分配，具体方法是使用对调试堆函数的显式调用，将它们作为此类型的内存块进行分配。 例如，MFC 将所有 Cobject 分配为客户端块；其他应用程序可能会在客户端块中保留不同的内存对象。 还可以指定客户端块的子类型，使跟踪粒度更大。 若要指定客户端块的子类型，请将该数字向左移 16 位，并使用 `_CLIENT_BLOCK` 对其进行 `OR` 运算。 例如:
 
@@ -156,7 +156,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 客户端提供的挂钩函数（用于转储在“客户端”块中存储的对象）可以使用 [_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient) 进行安装，然后，每当调试函数转储“客户端”块时均会调用该挂钩函数。 同样，对于调试堆中的每个“客户端”块，可以使用 [_CrtDoForAllClientObjects](/cpp/c-runtime-library/reference/crtdoforallclientobjects) 来调用应用程序提供的给定函数。
 
-**_FREE_BLOCK**通常情况下，从列表中删除也将释放的块。 若要检查释放的内存是否仍在被写入数据或要模拟内存不足的情况，可以选择将释放的块保留在链接列表中，将它们标记为“可用”，并使用已知字节值（当前为 0xDD）进行填充。
+**_FREE_BLOCK**通常情况下，从列表中删除也将释放的块。 为了检查并未仍在向已释放的内存写入数据，或为了模拟内存不足情况，可以选择在链接列表上保留已释放块，将其标记为“可用”，并用已知字节值（当前为 0xDD）填充。
 
 **_IGNORE_BLOCK**就可以关闭调试堆操作的一段时间。 在该时间段内，内存块保留在列表上，但被标记为“忽略”块。
 
@@ -174,11 +174,11 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
 
 `_CrtCheckMemory` 例如，可使用对 [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) 的调用来检查堆在任意点的完整性。 该函数检查堆中的每个内存块，验证内存块头信息有效，并确认尚未修改缓冲区。
 
-`_CrtSetDbgFlag` 可控制调试堆如何使用内部标志 [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag) 跟踪分配，此标志可以使用 [_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag) 函数进行读取和设置。 通过更改此标志，可指示调试堆在程序退出时检查是否存在内存泄漏，并报告检测到的任何泄漏情况。 同样，可以指定释放的内存块不从链接列表中删除，从而模拟内存不足的情况。 检查堆时，会对这些释放的块进行整体检查，确保它们未受到干扰。
+`_CrtSetDbgFlag` 可控制调试堆如何使用内部标志 [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag) 跟踪分配，此标志可以使用 [_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag) 函数进行读取和设置。 通过更改该标志，可以指示调试堆在程序退出时检查内存泄漏，并报告检测到的所有泄漏。 同样，可以指定释放的内存块不从链接列表中删除，从而模拟内存不足的情况。 检查堆时，会对这些释放的块进行整体检查，确保它们未受到干扰。
 
 _crtDbgFlag 标志包含下列位域：
 
-|位域|默认<br /><br /> 值|说明​​|
+|位域|默认<br /><br /> 值|描述|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|On|打开调试分配。 当该位为 off 时，分配仍链接在一起，但它们的块类型为 _IGNORE_BLOCK。|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止实际释放内存，与模拟内存不足情况相同。 当该位为 on 时，已释放块保留在调试堆的链接列表中，但标记为 _FREE_BLOCK，并用特殊字节值填充。|
@@ -201,7 +201,7 @@ _crtDbgFlag 标志包含下列位域：
 
 2. 打开的任何位`OR`-ing (按位&#124;符号) 带相应位屏蔽 （在应用程序代码中由清单常量显示） 的临时变量。
 
-3. 通过对带有相应位屏蔽的 `AND`（按位 ~ 符号）的变量进行 `NOT`-ing（按位 & 符号）运算关闭其他位。
+3. 关闭其他位`AND`-ing (按位 & 符号) 与变量`NOT`(按位 ~ 符号) 的相应位屏蔽。
 
 4. 在 `_CrtSetDbgFlag` 参数设置为临时变量中存储的值的情况下调用 `newFlag`，以创建 `_crtDbgFlag` 的新状态。
 
@@ -261,7 +261,7 @@ int main( )   {
 
 ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)
 
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> 堆状态报告函数
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> 堆状态报告函数
  **_CrtMemState**
 
  若要捕获给定时刻堆状态的摘要快照，请使用 CRTDBG.H 中定义的 _CrtMemState 结构：
@@ -288,7 +288,7 @@ typedef struct _CrtMemState
 
 下列函数报告堆的状态和内容，并使用这些信息帮助检测内存泄漏及其他问题：
 
-|函数|说明​​|
+|函数|描述|
 |--------------|-----------------|
 |[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|在应用程序提供的 _CrtMemState 结构中保存堆的快照。|
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|比较两个内存状态结构，在第三个状态结构中保存二者之间的差异，如果两个状态不同，则返回 TRUE。|

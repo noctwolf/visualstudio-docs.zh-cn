@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105404"
 ---
 # <a name="extending-the-output-window"></a>扩展输出窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ ms.locfileid: "58933644"
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>创建扩展使用输出窗格  
  您可以进行练习的输出窗格中的不同方面的扩展。  
   
-1.  创建一个名为的 VSIX 项目`TestOutput`菜单命令与名为**TestOutput**。 有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1. 创建一个名为的 VSIX 项目`TestOutput`菜单命令与名为**TestOutput**。 有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-2.  添加以下引用：  
+2. 添加以下引用：  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  在 TestOutput.cs，添加以下 using 语句：  
+3. 在 TestOutput.cs，添加以下 using 语句：  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  在 TestOutput.cs，删除 ShowMessageBox 方法。 添加以下方法存根 （stub）：  
+4. 在 TestOutput.cs，删除 ShowMessageBox 方法。 添加以下方法存根 （stub）：  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ ms.locfileid: "58933644"
     }  
     ```  
   
-5.  在 TestOutput 构造函数将更改为 OutputCommandHandler 的命令处理程序。 下面是将命令添加的部分：  
+5. 在 TestOutput 构造函数将更改为 OutputCommandHandler 的命令处理程序。 下面是将命令添加的部分：  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ ms.locfileid: "58933644"
     }  
     ```  
   
-6.  以下各节具有不同显示输出窗格中处理的不同方法的方法。 您可以调用这些方法为 OutputCommandHandler() 方法的主体。 例如，以下代码添加下一节中给出的 CreatePane() 方法。  
+6. 以下各节具有不同显示输出窗格中处理的不同方法的方法。 您可以调用这些方法为 OutputCommandHandler() 方法的主体。 例如，以下代码添加下一节中给出的 CreatePane() 方法。  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

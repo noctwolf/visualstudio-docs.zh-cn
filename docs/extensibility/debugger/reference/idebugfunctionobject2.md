@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 06505798dcff86507cfc52c4209bf038776f7fac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100464"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>调用方的说明
  此接口的方法将延迟的那些**IDebugFunctionObject**以下方面：
 
--   **IDebugEvaluate**方法采用标志。
+- **IDebugEvaluate**方法采用标志。
 
--   **CreateObject**方法采用标志和超时。
+- **CreateObject**方法采用标志和超时。
 
--   **CreateStringObjectWithLength**方法采用一个长度。
+- **CreateStringObjectWithLength**方法采用一个长度。
 
 ## <a name="methods"></a>方法
  此接口实现以下方法：

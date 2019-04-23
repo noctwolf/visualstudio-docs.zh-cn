@@ -11,17 +11,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e54cd8962a5aa42b4562b0a407912d582feacf37
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833879"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662499"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的日志记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 通过日志记录可监视生成的进度。 日志记录捕获日志文件中的生成事件、消息、警告和错误。  
   
 ## <a name="in-this-section"></a>本节内容  

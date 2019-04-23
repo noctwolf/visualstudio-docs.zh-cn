@@ -17,17 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 000aa83256f5015a847c517b8dce1d04f48af1cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6683aac3c5a4314df6fde3d72dd9085b6608d8a3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761719"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669564"
 ---
 # <a name="task-element-msbuild"></a>Task 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 创建并执行的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务的实例。 元素名称由正在创建的任务名称确定。  
   
  \<Project>  
@@ -48,7 +47,7 @@ ms.locfileid: "54761719"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|描述|  
 |---------------|-----------------|  
 |`Condition`|可选特性。 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
 |`ContinueOnError`|可选特性。 可以包含下列值之一：<br /><br /> -   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。<br />-   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。<br />-   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。<br /><br /> 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。<br /><br /> 有关详细信息，请参阅[如何：忽略任务中的错误](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
@@ -56,13 +55,13 @@ ms.locfileid: "54761719"
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|说明​​|  
+|元素|描述|  
 |-------------|-----------------|  
 |[输出](../msbuild/output-element-msbuild.md)|将任务的输出存储于项目文件中。 任务中可能有零个或零个以上 `Output` 元素。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|描述|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务的容器元素。|  
   

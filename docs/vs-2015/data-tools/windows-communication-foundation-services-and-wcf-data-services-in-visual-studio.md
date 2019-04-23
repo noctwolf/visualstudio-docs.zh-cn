@@ -33,16 +33,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4176e01d4419dc777e8381ebcd7dcef0b2c77b14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095030"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的工具和[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，Microsoft 技术，用于创建分布式应用程序。 本主题提供介绍了从服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]角度来看。 有关完整文档，请参阅[WCF 数据服务 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
 
@@ -125,9 +124,9 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
 
 #### <a name="to-select-a-service-endpoint"></a>若要选择的服务终结点
 
-1.  右键单击解决方案资源管理器中的项目节点并选择添加对 WCF 服务的引用**添加服务引用**
+1. 右键单击解决方案资源管理器中的项目节点并选择添加对 WCF 服务的引用**添加服务引用**
 
-2.  在代码编辑器中，添加服务引用的构造函数：
+2. 在代码编辑器中，添加服务引用的构造函数：
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -140,24 +139,24 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
     > [!NOTE]
     >  替换*ServiceReference*使用的服务引用和替换的命名空间*Service1Client*与服务的名称。
 
-3.  智能感知列表将显示具有构造函数重载。 选择`endpointConfigurationName As String`重载。
+3. 智能感知列表将显示具有构造函数重载。 选择`endpointConfigurationName As String`重载。
 
-4.  该重载后面，键入`=` *ConfigurationName*，其中*ConfigurationName*是你想要使用的终结点的名称。
+4. 该重载后面，键入`=` *ConfigurationName*，其中*ConfigurationName*是你想要使用的终结点的名称。
 
     > [!NOTE]
     >  如果不知道可用的终结点的名称，可以在 app.config 文件中找到它们。
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>若要查找的可用终结点的 WCF 服务
 
-1.  在中**解决方案资源管理器**，右键单击包含服务引用的项目的 app.config 文件，然后单击**打开**。 该文件将显示在代码编辑器中。
+1. 在中**解决方案资源管理器**，右键单击包含服务引用的项目的 app.config 文件，然后单击**打开**。 该文件将显示在代码编辑器中。
 
-2.  搜索`<Client>`文件中的标记。
+2. 搜索`<Client>`文件中的标记。
 
-3.  搜索下面`<Client>`开头的标记的标记`<Endpoint>`。
+3. 搜索下面`<Client>`开头的标记的标记`<Endpoint>`。
 
      如果服务引用提供了多个终结点，将有两个或多个`<Endpoint`标记。
 
-4.  内部`<EndPoint>`标记将为您`name="` *SomeService* `"`参数 (其中*SomeService*表示终结点名称)。 这是可以传递到的终结点名称`endpointConfigurationName As String`的服务引用的构造函数重载。
+4. 内部`<EndPoint>`标记将为您`name="` *SomeService* `"`参数 (其中*SomeService*表示终结点名称)。 这是可以传递到的终结点名称`endpointConfigurationName As String`的服务引用的构造函数重载。
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>如何：以异步方式调用服务方法
  不能调用 Windows Communication Foundation (WCF) 服务中的大多数方法，可以同步或异步。 以异步方式调用的方法使应用程序可以操作通过慢速连接时调用该方法时继续工作。
@@ -171,42 +170,42 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
 
 #### <a name="to-call-a-service-method-asynchronously"></a>以异步方式调用服务方法
 
-1.  在中**解决方案资源管理器**，选择服务引用。
+1. 在中**解决方案资源管理器**，选择服务引用。
 
-2.  上**项目**菜单上，单击**配置服务引用**。
+2. 上**项目**菜单上，单击**配置服务引用**。
 
-3.  在中**配置服务引用**对话框中，选择**生成异步操作**复选框。
+3. 在中**配置服务引用**对话框中，选择**生成异步操作**复选框。
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>如何：将由服务返回的数据绑定
  可以将绑定到控件返回的 Windows Communication Foundation (WCF) 服务，就像可以将任何其他数据源绑定到控件的数据。 如果服务包含返回数据的复合类型添加到 WCF 服务的引用，它们会自动添加到**数据源**窗口。
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>若要将控件绑定到 WCF 服务返回的单个数据字段
 
-1.  在 **“数据”** 菜单上，单击 **“显示数据源”**。 **数据源**窗口中会显示。
+1. 在 **“数据”** 菜单上，单击 **“显示数据源”**。 **数据源**窗口中会显示。
 
-2.  在中**数据源**窗口中，展开服务引用节点。 将显示服务返回的任何复合类型。
+2. 在中**数据源**窗口中，展开服务引用节点。 将显示服务返回的任何复合类型。
 
-3.  展开一种类型的节点。 将显示该类型的数据字段。
+3. 展开一种类型的节点。 将显示该类型的数据字段。
 
-4.  选择一个字段，然后单击下拉箭头以显示适用于数据类型的控件的列表。
+4. 选择一个字段，然后单击下拉箭头以显示适用于数据类型的控件的列表。
 
-5.  单击想要将绑定到控件的类型。
+5. 单击想要将绑定到控件的类型。
 
-6.  将字段拖到窗体上。 该控件将添加到窗体一起使用<xref:System.Windows.Forms.BindingSource>组件和一个<xref:System.Windows.Forms.BindingNavigator>组件。
+6. 将字段拖到窗体上。 该控件将添加到窗体一起使用<xref:System.Windows.Forms.BindingSource>组件和一个<xref:System.Windows.Forms.BindingNavigator>组件。
 
-7.  请重复步骤 4 到 6 个用于任何其他字段，你想要将绑定。
+7. 请重复步骤 4 到 6 个用于任何其他字段，你想要将绑定。
 
 #### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>若要将控件绑定到返回的 WCF 服务的复合类型
 
-1.  上**数据**菜单中，选择**显示数据源**。 **数据源**窗口中会显示。
+1. 上**数据**菜单中，选择**显示数据源**。 **数据源**窗口中会显示。
 
-2.  在中**数据源**窗口中，展开服务引用节点。 将显示服务返回的任何复合类型。
+2. 在中**数据源**窗口中，展开服务引用节点。 将显示服务返回的任何复合类型。
 
-3.  选择一种类型的节点，然后单击下拉箭头以显示可用选项的列表。
+3. 选择一种类型的节点，然后单击下拉箭头以显示可用选项的列表。
 
-4.  单击任一**DataGridView**以在网格中显示数据或**详细信息**以在单独控件中显示数据。
+4. 单击任一**DataGridView**以在网格中显示数据或**详细信息**以在单独控件中显示数据。
 
-5.  将节点拖到窗体。 这些控件将添加到窗体一起使用<xref:System.Windows.Forms.BindingSource>组件和一个<xref:System.Windows.Forms.BindingNavigator>组件。
+5. 将节点拖到窗体。 这些控件将添加到窗体一起使用<xref:System.Windows.Forms.BindingSource>组件和一个<xref:System.Windows.Forms.BindingNavigator>组件。
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何：配置服务以重新使用现有的类型
  服务引用添加到项目中，本地项目中生成服务中定义的任何类型。 在许多情况下，这会创建重复的类型时服务使用常见[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]类型时共享库中定义。
@@ -215,21 +214,21 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
 
 #### <a name="to-disable-type-sharing-in-a-single-assembly"></a>若要禁用类型共享中的单个程序集
 
-1.  在中**解决方案资源管理器**，选择服务引用。
+1. 在中**解决方案资源管理器**，选择服务引用。
 
-2.  上**项目**菜单上，单击**配置服务引用**。
+2. 上**项目**菜单上，单击**配置服务引用**。
 
-3.  在中**配置服务引用**对话框中，选择**重新使用的指定被引用程序集中的类型**。
+3. 在中**配置服务引用**对话框中，选择**重新使用的指定被引用程序集中的类型**。
 
-4.  对于每个想要启用类型共享的程序集选中的复选框。 若要禁用类型共享的程序集，将清除此复选框。
+4. 对于每个想要启用类型共享的程序集选中的复选框。 若要禁用类型共享的程序集，将清除此复选框。
 
 #### <a name="to-disable-type-sharing-in-all-assemblies"></a>若要禁用类型共享中的所有程序集
 
-1.  在中**解决方案资源管理器**，选择服务引用。
+1. 在中**解决方案资源管理器**，选择服务引用。
 
-2.  上**项目**菜单上，单击**配置服务引用**。
+2. 上**项目**菜单上，单击**配置服务引用**。
 
-3.  在中**配置服务引用**对话框中，清除**重新使用引用的程序集的类型**复选框。
+3. 在中**配置服务引用**对话框中，清除**重新使用引用的程序集的类型**复选框。
 
 ## <a name="related-topics"></a>相关主题
 

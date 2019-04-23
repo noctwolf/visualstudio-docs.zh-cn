@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4901a4a04a2d4702a365f9b1f65406c4537b1182
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079625"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何：通过主互操作程序集的目标 Office 应用程序
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：
@@ -36,18 +36,18 @@ ms.locfileid: "56614319"
 
 ## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>添加对主互操作程序集的引用
 
-1.  打开 Office 项目并选择中的项目名称**解决方案资源管理器**。
+1. 打开 Office 项目并选择中的项目名称**解决方案资源管理器**。
 
-2.  在“项目”菜单上，单击“添加引用”。
+2. 在“项目”菜单上，单击“添加引用”。
 
-3.  上**Framework**选项卡上，选择在所需的 PIA**组件名称**列表。 有关可用的 Microsoft Office 主互操作程序集的详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
+3. 上**Framework**选项卡上，选择在所需的 PIA**组件名称**列表。 有关可用的 Microsoft Office 主互操作程序集的详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
 
      如果项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，**嵌入互操作类型**程序集引用的属性设置为**True**默认情况下。 通过使用此设置，你的解决方案在最终用户计算上不需要 PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
 
     > [!NOTE]
     >  在 Office 项目中，始终对 Office Pia 的引用通过添加 **.NET**选项卡**添加引用**对话框而不是**COM**选项卡。有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
 
-4.  单击 **“确定”**。
+4. 单击 **“确定”**。
 
      程序集名称将显示在**引用**的文件夹**解决方案资源管理器**。
 

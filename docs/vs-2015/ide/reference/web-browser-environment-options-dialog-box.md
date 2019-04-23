@@ -24,17 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f66dae4d9e69ce1fc5d4351d72606e1fdad10725
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755308"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663974"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 为内部 Web 浏览器和 Internet Explorer 设置选项。 若要访问此对话框，请在“工具”菜单上单击“选项”，展开“环境”文件夹，然后选择“Web 浏览器”。  
   
 > [!NOTE]

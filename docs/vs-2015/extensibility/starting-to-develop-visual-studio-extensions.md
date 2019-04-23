@@ -11,12 +11,12 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03c9ebb2a2c84c400b4fb2d3aea4c3ec121fbf27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 6d8050ea7447a67f50f42157d57c17d3f1f8a329
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038627"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,42 +42,42 @@ ms.locfileid: "59000649"
 
  在实践中，我们发现，大多数人想要扩展的功能是命令、 菜单和工具栏、 windows、 IntelliSense 和项目。 以下是中的相关章节的链接：
 
--   [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)： 将您自己的项添加到 Visual Studio 菜单和工具栏。 可以使用它们以启动 Visual Studio 的新功能或外部帮助器应用程序。 您还可以自定义的快捷方式的菜单项。
+- [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)： 将您自己的项添加到 Visual Studio 菜单和工具栏。 可以使用它们以启动 Visual Studio 的新功能或外部帮助器应用程序。 您还可以自定义的快捷方式的菜单项。
 
--   [扩展和自定义工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)： 扩展现有的工具窗口或创建你自己的工具窗口。 例如，可以添加新的属性**属性**，或者可以创建一个新的工具窗口来添加其他功能。
+- [扩展和自定义工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)： 扩展现有的工具窗口或创建你自己的工具窗口。 例如，可以添加新的属性**属性**，或者可以创建一个新的工具窗口来添加其他功能。
 
--   [编辑器和语言服务扩展](../extensibility/editor-and-language-service-extensions.md)： 添加自己的自定义 Visual Studio 语言提供的 IntelliSense 或创建新的编程语言的支持。 您可以创建新的语句完成、 建议和新的快速信息工具提示。 使用电灯泡，可以添加重构的建议和代码修补程序，以支持新的编程语言。
+- [编辑器和语言服务扩展](../extensibility/editor-and-language-service-extensions.md)： 添加自己的自定义 Visual Studio 语言提供的 IntelliSense 或创建新的编程语言的支持。 您可以创建新的语句完成、 建议和新的快速信息工具提示。 使用电灯泡，可以添加重构的建议和代码修补程序，以支持新的编程语言。
 
--   [扩展项目](../extensibility/extending-projects.md)
+- [扩展项目](../extensibility/extending-projects.md)
 
--   [扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)
+- [扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)
 
--   [扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)
+- [扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)
 
--   [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
+- [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 
--   [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)
+- [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)
 
-##  <a name="BKMK_ProjectTemplate"></a> VSSDK 提供哪些项目模板？
+## <a name="BKMK_ProjectTemplate"></a> VSSDK 提供哪些项目模板？
  两个主要类型的扩展是 Vspackage 和 MEF 扩展。 一般情况下，扩展的使用或扩展命令、 工具窗口和项目使用 VSPackage 扩展。 使用 MEF 扩展来扩展或自定义 Visual Studio 编辑器。
 
  对于 Visual C# 和 Visual Basic 扩展 VSSDK 提供了一个空的 VSIX 项目模板，您可以使用和创建菜单命令、 工具窗口和编辑器扩展的新项模板。 有关详细信息，请参阅[What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)。 此外可以分发给其他用户使用此模板包项目模板、 代码段和其他项目。
 
- 对于 c + +，VSPackage 向导将提供用于添加菜单命令、 工具窗口和自定义编辑器的代码。
+ 有关C++，VSPackage 向导提供了用于添加菜单命令、 工具窗口和自定义编辑器的代码。
 
  独立 Shell 模板用于包中的版本的 Visual Studio shell，您可以设置的外观和分发与你自己的扩展插件。 以下主题演示如何开始使用每种类型的扩展：
 
--   菜单命令：[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
+- 菜单命令：[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   工具窗口：[使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)
+- 工具窗口：[使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   编辑器扩展：[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- 编辑器扩展：[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   基本 Vspackage:[使用 VSPackage 建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)
+- 基本 Vspackage:[使用 VSPackage 建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)
 
--   VSIX 项目模板：[VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)
+- VSIX 项目模板：[VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)
 
--   Visual Studio 独立 shell:[演练：创建基本的独立的 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+- Visual Studio 独立 shell:[演练：创建基本的独立的 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>如何获取我的扩展以类似于 Visual Studio？
  设计为在扩展插件的 UI 获取不错的提示[Visual Studio 用户体验指南](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。

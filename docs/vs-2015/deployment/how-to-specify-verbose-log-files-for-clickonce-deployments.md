@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0efd71b38d3fcd8ae8241e31e721bd48e857d3bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069765"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>如何：指定 ClickOnce 部署的详细日志文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58930339"
   
 ### <a name="to-specify-verbose-log-files"></a>若要指定详细日志文件  
   
-1.  打开**Regedit.exe**。  
+1. 打开**Regedit.exe**。  
   
-2.  导航到的节点`HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
+2. 导航到的节点`HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
   
-3.  如有必要，创建一个名为的新字符串值`LogVerbosityLevel`。  
+3. 如有必要，创建一个名为的新字符串值`LogVerbosityLevel`。  
   
-4.  设置`LogVerbosityLevel`值设为`1`。  
+4. 设置`LogVerbosityLevel`值设为`1`。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)

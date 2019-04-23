@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 716366366bd9bb7514d042748b07dcb30a3567eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c3d9394eef00ef315d6a0c6afc35e0af5dd7854
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112196"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>创建支持简单数据绑定的 Windows 窗体用户控件
 
@@ -39,27 +39,27 @@ ms.locfileid: "55923819"
 
 在本演练中，你将学会如何执行以下任务：
 
--   创建新的“Windows 窗体应用程序”。
+- 创建新的“Windows 窗体应用程序”。
 
--   将新的“用户控件”添加到项目中。
+- 将新的“用户控件”添加到项目中。
 
--   以可视方式设计用户控件。
+- 以可视方式设计用户控件。
 
--   实现 `DefaultBindingProperty` 特性。
+- 实现 `DefaultBindingProperty` 特性。
 
--   创建具有的数据集**数据源配置**向导。
+- 创建具有的数据集**数据源配置**向导。
 
--   在“数据源”窗口中，设置“电话”列，以使用新的控件。
+- 在“数据源”窗口中，设置“电话”列，以使用新的控件。
 
--   创建一个用于在新控件中显示数据的窗体。
+- 创建一个用于在新控件中显示数据的窗体。
 
 ## <a name="prerequisites"></a>系统必备
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB**数据存储和处理**工作负荷，或作为单个组件。
+1. 如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB**数据存储和处理**工作负荷，或作为单个组件。
 
-2.  通过执行以下步骤安装 Northwind 示例数据库：
+2. 通过执行以下步骤安装 Northwind 示例数据库：
 
     1. 在 Visual Studio 中打开**SQL Server 对象资源管理器**窗口。 (SQL Server 对象资源管理器安装的一部分**数据存储和处理**中的工作负荷**Visual Studio 安装程序**。)展开**SQL Server**节点。 LocalDB 实例上右键单击并选择**新查询**。
 
@@ -77,7 +77,7 @@ ms.locfileid: "55923819"
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**Windows 窗体应用**项目类型。
 
@@ -89,9 +89,9 @@ ms.locfileid: "55923819"
 
 本演练创建一个简单的可数据绑定控件从**用户控件**。 添加**用户控件**项**SimpleControlWalkthrough**项目：
 
-1.  从“项目”菜单，选择“添加用户控件”。
+1. 从“项目”菜单，选择“添加用户控件”。
 
-2.  在名称区域键入“PhoneNumberBox”，然后单击“添加”。
+2. 在名称区域键入“PhoneNumberBox”，然后单击“添加”。
 
      将“PhoneNumberBox”控件添加到“解决方案资源管理器”中，并在设计器中打开它。
 
@@ -99,48 +99,48 @@ ms.locfileid: "55923819"
 
 本演练中阐述了现有<xref:System.Windows.Forms.MaskedTextBox>来创建**PhoneNumberBox**控件：
 
-1.  将 <xref:System.Windows.Forms.MaskedTextBox> 从“工具箱”拖到该用户控件的设计图面上。
+1. 将 <xref:System.Windows.Forms.MaskedTextBox> 从“工具箱”拖到该用户控件的设计图面上。
 
-2.  选择刚刚拖动的 <xref:System.Windows.Forms.MaskedTextBox> 上的智能标记，然后选择“设置掩码”。
+2. 选择刚刚拖动的 <xref:System.Windows.Forms.MaskedTextBox> 上的智能标记，然后选择“设置掩码”。
 
-3.  在“输入掩码”对话框中选择“电话号码”，然后单击“确定”以设置掩码。
+3. 在“输入掩码”对话框中选择“电话号码”，然后单击“确定”以设置掩码。
 
 ## <a name="add-the-required-data-binding-attribute"></a>添加所需的数据绑定属性
 
 对于支持数据绑定的简单控件，实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>：
 
-1.  交换机**PhoneNumberBox**到代码视图的控件。 （在“视图”菜单上，选择“代码”。）
+1. 交换机**PhoneNumberBox**到代码视图的控件。 （在“视图”菜单上，选择“代码”。）
 
-2.  中的代码替换**PhoneNumberBox**以下：
+2. 中的代码替换**PhoneNumberBox**以下：
 
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3.  从 **“生成”** 菜单中选择 **“生成解决方案”**。
+3. 从 **“生成”** 菜单中选择 **“生成解决方案”**。
 
 ## <a name="create-a-data-source-from-your-database"></a>从您的数据库创建数据源
 
-此步骤根据 Northwind 示例数据库中的 `Customers` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤根据 Northwind 示例数据库中的 `Customers` 表，使用“数据源配置”向导创建数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
-1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
+1. 若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-2.  在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
+2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3.  在“选择数据源类型”页上，选择“数据库”，然后单击“下一步”。
+3. 在“选择数据源类型”页上，选择“数据库”，然后单击“下一步”。
 
-4.  在“选择数据连接”页面上，执行以下操作之一：
+4. 在“选择数据连接”页面上，执行以下操作之一：
 
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-    -   选择“新建连接”以启动“添加/修改连接”对话框。
+    - 选择“新建连接”以启动“添加/修改连接”对话框。
 
-5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
+5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6.  上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
+6. 上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
 
-7.  在“选择数据库对象”页上，展开“表”节点。
+7. 在“选择数据库对象”页上，展开“表”节点。
 
-8.  选择 `Customers` 表，然后单击“完成”。
+8. 选择 `Customers` 表，然后单击“完成”。
 
      将“NorthwindDataSet”添加到项目中，并且“数据源”窗口中将显示 `Customers` 表。
 
@@ -148,17 +148,17 @@ ms.locfileid: "55923819"
 
 在“数据源”窗口中，可以先设置要创建的控件，然后再将项拖动到窗体上：
 
-1.  在设计器中打开“Form1”。
+1. 在设计器中打开“Form1”。
 
-2.  在“数据源”窗口中展开“Customers”节点。
+2. 在“数据源”窗口中展开“Customers”节点。
 
-3.  在“Customers”节点上单击下拉箭头，然后从控件列表中选择“详细信息”。
+3. 在“Customers”节点上单击下拉箭头，然后从控件列表中选择“详细信息”。
 
-4.  单击“电话”列上的下拉箭头，然后选择“自定义”。
+4. 单击“电话”列上的下拉箭头，然后选择“自定义”。
 
-5.  从“数据 UI 自定义选项”对话框中的“关联的控件”列表中，选择“PhoneNumberBox”。
+5. 从“数据 UI 自定义选项”对话框中的“关联的控件”列表中，选择“PhoneNumberBox”。
 
-6.  单击“电话”列上的下拉箭头，然后选择“PhoneNumberBox”。
+6. 单击“电话”列上的下拉箭头，然后选择“PhoneNumberBox”。
 
 ## <a name="add-controls-to-the-form"></a>向窗体添加控件
 
@@ -176,9 +176,9 @@ ms.locfileid: "55923819"
 
 根据应用程序的需求，在创建了支持数据绑定的控件后，可能还需要执行一些步骤。 接下来的一些常见步骤包括：
 
--   将你的自定义控件置于控件库中，以便在其他应用程序中重用它们。
+- 将你的自定义控件置于控件库中，以便在其他应用程序中重用它们。
 
--   创建支持更复杂的数据绑定方案的控件。 有关详细信息，请参阅[创建支持复杂数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)并[创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
+- 创建支持更复杂的数据绑定方案的控件。 有关详细信息，请参阅[创建支持复杂数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)并[创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
 
 ## <a name="see-also"></a>请参阅
 

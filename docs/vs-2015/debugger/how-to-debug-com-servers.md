@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088309"
 ---
 # <a name="how-to-debug-com-servers"></a>如何：调试 COM 服务器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ ms.locfileid: "58935462"
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>在没有容器信息的情况下调试服务器应用程序  
   
-1.  像对待普通的应用程序一样开始调试服务器。  
+1. 像对待普通的应用程序一样开始调试服务器。  
   
-2.  按需要设置断点。  
+2. 按需要设置断点。  
   
-3.  启动容器应用程序。  
+3. 启动容器应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089076"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "59000126"
   
  可以通过以下三种方法之一获取代码签名证书：  
   
--   从证书供应商处购买证书。  
+- 从证书供应商处购买证书。  
   
--   从组织中负责创建数字证书的组中接收证书。  
+- 从组织中负责创建数字证书的组中接收证书。  
   
--   使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]附带的 MakeCert.exe 生成自己的证书。  
+- 使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]附带的 MakeCert.exe 生成自己的证书。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>使用证书颁发机构对用户的好处  
  使用 MakeCert.exe 实用工具生成的证书通常称为“自发证书”  或“测试证书” 。这种证书的工作方式与.NET Framework 中.snk 文件的工作方式大致相同。 它只包含公钥/私钥加密密钥对，不包含有关发行者的可验证信息。 可以使用自发证书在 Intranet 上部署具有高信任级别的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 但是，当这些应用程序在客户端计算机上运行时， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会将它们标识为来自未知发行者。 默认情况下，使用自发证书签名并在 Internet 上部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序不能使用受信任的应用程序部署。  
@@ -61,15 +61,15 @@ ms.locfileid: "59000126"
 ### <a name="updating-expired-certificates"></a>更新过期证书  
  在早期版本的 .NET framework 中，更新证书已过期的应用程序可能导致该应用程序无法正常工作。 若要解决此问题，请使用以下方法之一：  
   
--   在 Windows XP 上将 .NET Framework 更新至 2.0 SP1 版本或更高版本，或在 Windows Vista 上将其更新至 3.5 版或更高版本。  
+- 在 Windows XP 上将 .NET Framework 更新至 2.0 SP1 版本或更高版本，或在 Windows Vista 上将其更新至 3.5 版或更高版本。  
   
--   卸载该应用程序，并重新安装具有有效证书的新版本。  
+- 卸载该应用程序，并重新安装具有有效证书的新版本。  
   
--   创建更新证书的命令行程序集。 有关此过程的分步信息可在 [Microsoft 支持文章 925521](http://go.microsoft.com/fwlink/?LinkId=179454)中找到。  
+- 创建更新证书的命令行程序集。 有关此过程的分步信息可在 [Microsoft 支持文章 925521](http://go.microsoft.com/fwlink/?LinkId=179454)中找到。  
   
 ### <a name="storing-certificates"></a>存储证书  
   
--   可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx。 用于创建 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Mage.exe 和 MageUI.exe 允许你使用上述任一方式存储的证书。  
+- 可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx。 用于创建 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Mage.exe 和 MageUI.exe 允许你使用上述任一方式存储的证书。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b269ef28218fd51e3a87f331c44096cd80773f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049824"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过 **VSPerfASPNETCmd** 命令行工具可以轻松地分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，减少了选项、不必设置任何环境变量以及无需重启计算机。 使用 **VSPerfASPNETCmd** 是使用独立探查器进行分析时的首选方法。 有关详细信息，请参阅[如何：安装独立探查器](../profiling/how-to-install-the-stand-alone-profiler.md)。  
+通过 **VSPerfASPNETCmd** 命令行工具可以轻松地分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，减少了选项、不必设置任何环境变量以及无需重启计算机。 使用 **VSPerfASPNETCmd** 是使用独立探查器进行分析时的首选方法。 有关详细信息，请参阅[如何：安装独立 Profiler](../profiling/how-to-install-the-stand-alone-profiler.md)。  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -82,7 +82,7 @@ ms.locfileid: "54760292"
   
  **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
   
-##  <a name="UsingNoWait"></a> 使用 /NoWait 选项  
+## <a name="UsingNoWait"></a> 使用 /NoWait 选项  
  默认情况下，在执行 **vsperfaspnetcmd** 命令之后，命令提示符不会返回。 可以使用以下语法选项强制命令提示符返回。 随后可以在命令提示符窗口中执行其他操作。 若要结束分析，请在单独的 **vsperfaspnetcmd** 命令中使用 **/shutdown** 选项。  
   
  开始分析：  
@@ -96,7 +96,7 @@ ms.locfileid: "54760292"
 ## <a name="additional-options"></a>附加选项  
  可以将以下任何选项添加到本节前面列出的命令（**vsperfaspnetcmd /shutdown** 命令除外）。  
   
-|选项|说明​​|  
+|选项|描述|  
 |------------|-----------------|  
 |**/Output:** `VspFile`|默认情况下，在当前目录中创建分析数据 (.vsp) 文件，文件名为 **PerformanceReport.vsp**。 使用 /Output 选项可指定其他位置、文件名或两者。|  
 |**/PackSymbols:Off**|VsPerfASPNETCmd 会将符号（函数和参数名等）嵌入在 .vsp 文件中。 嵌入符号可能会使分析数据文件非常大。 如果在分析数据时可以访问包含符号的 .pdb 文件，则使用 /packsymbols:off 选项禁用符号的嵌入。|

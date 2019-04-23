@@ -17,23 +17,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2919d139e48f6e08845dc3990b0df5a8591283c0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ab75ccebd618946454c3386f564e3f6199409935
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791376"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657111"
 ---
 # <a name="move-task"></a>Move 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将文件移至新位置。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `Move` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`DestinationFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定要将源文件移动到的文件的列表。 此列表应与 `SourceFiles` 参数中指定的列表具有一对一的映射关系。 也就是说，`SourceFiles` 中指定的第一个文件将移动到 `DestinationFiles` 中指定的第一个位置，依次类推。|  
 |`DestinationFolder`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定要将文件移动到的目录。|  

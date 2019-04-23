@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763032"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658534"
 ---
 # <a name="list-registers-command"></a>“列出寄存器”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 显示选中寄存器的值并允许修改要显示的寄存器列表。  
   
 ## <a name="syntax"></a>语法  
@@ -38,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>开关  
  /Display [{`register`&#124;`registerGroup`}...]  
- 显示指定 `register` 或 `registerGroup` 的值。 如果没有指定 `register` 或 `registerGroup`，将显示寄存器的默认列表。 如果没有指定任何开关，则出现相同行为。 例如:  
+ 显示指定 `register` 或 `registerGroup` 的值。 如果没有指定 `register` 或 `registerGroup`，将显示寄存器的默认列表。 如果没有指定任何开关，则出现相同行为。 例如：  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -67,5 +66,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
- [调试基础知识：“寄存器”窗口](../../debugger/debugging-basics-registers-window.md)   
+ [调试基础知识：寄存器窗口](../../debugger/debugging-basics-registers-window.md)   
  [如何：使用“寄存器”窗口](../../debugger/how-to-use-the-registers-window.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091871"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制实现可维护的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ ms.locfileid: "58926011"
   
 ### <a name="to-open-the-code-analysis-policy-editor"></a>若要打开代码分析策略编辑器  
   
-1.  在中**团队资源管理器**，右键单击团队项目，单击**团队项目设置**，然后单击**源代码管理**。  
+1. 在中**团队资源管理器**，右键单击团队项目，单击**团队项目设置**，然后单击**源代码管理**。  
   
      **源代码管理**对话框随即出现。  
   
-2.  上**签入策略**选项卡，然后单击**添加**。  
+2. 上**签入策略**选项卡，然后单击**添加**。  
   
      **添加签入策略**对话框随即出现。  
   
-3.  在中**签入策略**列表中，选择**代码分析**复选框，然后依次**确定**。  
+3. 在中**签入策略**列表中，选择**代码分析**复选框，然后依次**确定**。  
   
      **代码分析策略编辑器**对话框随即出现。  
   
 ### <a name="to-enable-code-analysis-maintainability-rules"></a>若要启用代码分析可维护性规则  
   
-1.  在中**代码分析策略编辑器**对话框中的**规则设置**，展开**可维护性规则**节点。  
+1. 在中**代码分析策略编辑器**对话框中的**规则设置**，展开**可维护性规则**节点。  
   
-2.  选择以下规则对应的复选框：  
+2. 选择以下规则对应的复选框：  
   
-    -   继承深度：**CA1501 AvoidExcessiveInheritance** -阈值：在 5 个以上级别深度警告  
+    - 继承深度：**CA1501 AvoidExcessiveInheritance** -阈值：在 5 个以上级别深度警告  
   
-    -   复杂性：**CA1502 AvoidExcessiveComplexity** -阈值：在超过 25 种的警告  
+    - 复杂性：**CA1502 AvoidExcessiveComplexity** -阈值：在超过 25 种的警告  
   
-    -   可维护性索引：**CA1505 AvoidUnmaintainableCode** - Threshold:少于 20 发出警告  
+    - 可维护性索引：**CA1505 AvoidUnmaintainableCode** - Threshold:少于 20 发出警告  
   
-    -   类耦合度：**CA1506 AvoidExcessiveClassCoupling** -阈值：在多个类的 80 和多个方法，为 30 的警告  
+    - 类耦合度：**CA1506 AvoidExcessiveClassCoupling** -阈值：在多个类的 80 和多个方法，为 30 的警告  
   
-    -   此外，如果你想禁止生成规则冲突，则选择**将警告视为错误**规则说明旁边的复选框。  
+    - 此外，如果你想禁止生成规则冲突，则选择**将警告视为错误**规则说明旁边的复选框。  
   
-3.  单击 **“确定”**。 新签入策略现在适用于未来的签入。  
+3. 单击 **“确定”**。 新签入策略现在适用于未来的签入。  
   
 ## <a name="see-also"></a>请参阅  
  [代码度量值](../code-quality/code-metrics-values.md)   

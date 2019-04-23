@@ -13,32 +13,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d82678df0da5932dd33c08a6e3066462df204f6e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106652"
 ---
 # <a name="how-to-create-a-bdc-model"></a>如何：创建 BDC 模型
   可以通过使用这种项的模板并将模型添加到任何 SharePoint 项目来创建业务数据连接 (BDC) 模型。 有关详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 有关如何设计模型的详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-a-bdc-project"></a>若要创建 BDC 项目
 
-1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
     > [!NOTE]
     >  如果您的 IDE 设置为使用 Visual Basic 开发设置，请选择**文件** > **新项目**。
 
      **“新建项目”** 对话框随即打开。
 
-2.  下**Visual Basic**或**Visual C#**，选择**Office/SharePoint**， **SharePoint 解决方案**。
+2. 下**Visual Basic**或**Visual C#**，选择**Office/SharePoint**， **SharePoint 解决方案**。
 
-3.  在中**模板**窗格中，选择**SharePoint 2013-空项目**项，，然后选择**确定**按钮。
+3. 在中**模板**窗格中，选择**SharePoint 2013-空项目**项，，然后选择**确定**按钮。
 
      **SharePoint 自定义向导**随即打开。
 
-4.  上**指定用于调试的网站和安全级别**页上，指定本地计算机上的 SharePoint 站点的 URL，选择**部署为场解决方案**选项按钮，然后选择**完成**按钮。
+4. 上**指定用于调试的网站和安全级别**页上，指定本地计算机上的 SharePoint 站点的 URL，选择**部署为场解决方案**选项按钮，然后选择**完成**按钮。
 
      将测试指定的 SharePoint 站点上的模型。
 
@@ -47,13 +47,13 @@ ms.locfileid: "56596498"
 
      创建一个空 SharePoint 项目。
 
-5.  在菜单栏上，依次选择“项目” > “添加新项”。
+5. 在菜单栏上，依次选择“项目” > “添加新项”。
 
-6.  在中**添加新项**对话框框中，选择**Office/SharePoint**节点。
+6. 在中**添加新项**对话框框中，选择**Office/SharePoint**节点。
 
-7.  在 SharePoint 模板列表中，选择**业务数据连接模型 （仅场解决方案）**。
+7. 在 SharePoint 模板列表中，选择**业务数据连接模型 （仅场解决方案）**。
 
-8.  在中**名称**框中，指定 BDC 模型的名称，然后选择**添加**按钮。
+8. 在中**名称**框中，指定 BDC 模型的名称，然后选择**添加**按钮。
 
      一个**业务数据连接模型**项添加到项目。 默认情况下，模型将显示在 BDC 设计器中。 有关详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 

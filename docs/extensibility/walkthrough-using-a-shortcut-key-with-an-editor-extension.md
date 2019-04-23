@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048683"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练：使用快捷键与编辑器扩展
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。
@@ -61,9 +61,9 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
  命令筛选器是实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，用于处理该命令通过实例化修饰。
 
-1.  添加一个类文件并将其命名为 `KeyBindingCommandFilter`。
+1. 添加一个类文件并将其命名为 `KeyBindingCommandFilter`。
 
-2.  添加下面的 using 语句。
+2. 添加下面的 using 语句。
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-3.  名为 KeyBindingCommandFilter 的类应继承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。
+3. 名为 KeyBindingCommandFilter 的类应继承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  在命令链和一个标志，用于表示是否已添加命令筛选器中添加私有字段文本视图、 下一个命令。
+4. 在命令链和一个标志，用于表示是否已添加命令筛选器中添加私有字段文本视图、 下一个命令。
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     internal bool m_adorned;
     ```
 
-5.  添加构造函数，用于设置文本视图。
+5. 添加构造函数，用于设置文本视图。
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-6.  实现`QueryStatus()`方法，如下所示。
+6. 实现`QueryStatus()`方法，如下所示。
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-7.  实现`Exec()`方法，使其向视图添加紫色框中，如果一个加号 (**+**) 键入字符。
+7. 实现`Exec()`方法，使其向视图添加紫色框中，如果一个加号 (**+**) 键入字符。
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>添加命令筛选器 （之前 Visual Studio 2017 版本 15.6)
  修饰提供程序必须将命令筛选器添加到文本视图。 在此示例中，提供程序实现<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>来侦听文本视图创建事件。 此修饰提供程序还将导出修饰层，它定义的修饰的 Z 顺序。
 
-1.  在 KeyBindingTestTextViewCreationListener 文件中，添加以下 using 语句：
+1. 在 KeyBindingTestTextViewCreationListener 文件中，添加以下 using 语句：
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-2.  若要获取文本视图适配器，必须导入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。
+2. 若要获取文本视图适配器，必须导入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
     ```
 
-3.  更改<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便将其添加`KeyBindingCommandFilter`。
+3. 更改<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便将其添加`KeyBindingCommandFilter`。
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-4.  `AddCommandFilter`获取文本视图适配器处理程序，并添加命令筛选器。
+4. `AddCommandFilter`获取文本视图适配器处理程序，并添加命令筛选器。
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
        return false;
    }
    ```
+
    7. 将从修饰层定义复制*KeyBindingTestTextViewCreationListener.cs*的文件*KeyBindingCommandHandler.cs* ，然后删除*KeyBindingTestTextViewCreationListener.cs*文件：
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>生成和测试代码
 
-1.  生成 KeyBindingTest 解决方案并在实验实例中运行它。
+1. 生成 KeyBindingTest 解决方案并在实验实例中运行它。
 
-2.  创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入**+** 文本视图中的任意位置。
+2. 创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入**+** 文本视图中的任意位置。
 
      紫色正方形应当出现在文件中的每个 a 字符。

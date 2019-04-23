@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4caf96c841b794a76a7aba35f9c8ca302de6e885
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923325"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065878"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>如何：使用工作流设计器调试 XAML
 
@@ -24,15 +24,15 @@ ms.locfileid: "55923325"
 
 ## <a name="to-debug-workflow-xaml"></a>调试工作流 XAML
 
-1.  在 Visual Studio 中打开一个工作流或活动项目。
+1. 在 Visual Studio 中打开一个工作流或活动项目。
 
-2.  你想要调试中所述的活动的活动上设置断点[如何：在工作流中设置断点](../workflow-designer/how-to-set-breakpoints-in-workflows.md)。
+2. 你想要调试中所述的活动的活动上设置断点[如何：在工作流中设置断点](../workflow-designer/how-to-set-breakpoints-in-workflows.md)。
 
-3.  右键单击包含您的工作流定义和选择的.xaml 文件**查看代码**。 您将看到在设计视图中对其设置了断点的活动的 XAML 元素声明所在行中显示了一个断点。
+3. 右键单击包含您的工作流定义和选择的.xaml 文件**查看代码**。 您将看到在设计视图中对其设置了断点的活动的 XAML 元素声明所在行中显示了一个断点。
 
-4.  调用调试器，如中所述[调试工作流](debugging-workflows-with-the-workflow-designer.md)。
+4. 调用调试器，如中所述[调试工作流](debugging-workflows-with-the-workflow-designer.md)。
 
-5.  当代码执行到你设置的其中一个断点处时，与该断点关联的 XAML 元素将突出显示。 若要将移动到下一个断点，请使用**F10**或**F11**密钥。
+5. 当代码执行到你设置的其中一个断点处时，与该断点关联的 XAML 元素将突出显示。 若要将移动到下一个断点，请使用**F10**或**F11**密钥。
 
 ## <a name="see-also"></a>请参阅
 

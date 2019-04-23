@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109174"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以编程方式缓存中的 Office 文档的数据源
   你可以以编程方式将数据对象添加到文档中的数据缓存通过调用`StartCaching`方法的主机项，如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 从数据缓存中删除数据对象，通过调用`StopCaching`宿主项的方法。
@@ -34,19 +34,19 @@ ms.locfileid: "54867320"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>若要以编程方式缓存数据对象
 
-1.  声明在类级别，不在方法中的数据对象。 此示例假定你将声明<xref:System.Data.DataSet>名为`dataSet1`你想要以编程方式缓存。
+1. 声明在类级别，不在方法中的数据对象。 此示例假定你将声明<xref:System.Data.DataSet>名为`dataSet1`你想要以编程方式缓存。
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  实例化数据对象，然后调用`StartCaching`方法文档或工作表的实例并传入的数据对象的名称。
+2. 实例化数据对象，然后调用`StartCaching`方法文档或工作表的实例并传入的数据对象的名称。
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>若要停止缓存数据对象
 
-1.  调用`StopCaching`方法文档或工作表的实例并传入的数据对象的名称。 此示例假定你拥有<xref:System.Data.DataSet>名为`dataSet1`想要停止缓存。
+1. 调用`StopCaching`方法文档或工作表的实例并传入的数据对象的名称。 此示例假定你拥有<xref:System.Data.DataSet>名为`dataSet1`想要停止缓存。
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]

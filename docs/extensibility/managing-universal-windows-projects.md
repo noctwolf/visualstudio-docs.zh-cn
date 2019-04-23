@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 108ccd07c5e15a264fcd1dc5efe6f5052cd052f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047393"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 项目
 
@@ -25,11 +25,11 @@ ms.locfileid: "56335529"
 
 ### <a name="navigate-the-shared-project"></a>导航共享的项目
 
-1.  创建一个名为 C# VSIX 项目**TestUniversalProject**。 (**文件** > **新** > **项目**，然后**C#**  >  **可扩展性** > **Visual Studio 包**)。 添加**自定义命令**项目项模板 (在**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**，然后转到**扩展性**)。 将文件命名**TestUniversalProject**。
+1. 创建一个名为 C# VSIX 项目**TestUniversalProject**。 (**文件** > **新** > **项目**，然后**C#**  >  **可扩展性** > **Visual Studio 包**)。 添加**自定义命令**项目项模板 (在**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**，然后转到**扩展性**)。 将文件命名**TestUniversalProject**。
 
-2.  添加对的引用*Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll*并*Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (在**扩展**部分)。
+2. 添加对的引用*Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll*并*Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (在**扩展**部分)。
 
-3.  打开*TestUniversalProject.cs*并添加以下`using`语句：
+3. 打开*TestUniversalProject.cs*并添加以下`using`语句：
 
     ```csharp
     using EnvDTE;
@@ -42,7 +42,7 @@ ms.locfileid: "56335529"
     using System.Windows.Forms;
     ```
 
-4.  在中`TestUniversalProject`类中添加一个私有字段，指向**输出**窗口。
+4. 在中`TestUniversalProject`类中添加一个私有字段，指向**输出**窗口。
 
     ```csharp
     public sealed class TestUniversalProject
@@ -52,7 +52,7 @@ ms.locfileid: "56335529"
     }
     ```
 
-5.  设置对 TestUniversalProject 构造函数内的输出窗格的引用：
+5. 设置对 TestUniversalProject 构造函数内的输出窗格的引用：
 
     ```csharp
     private TestUniversalProject(Package package)
@@ -77,7 +77,7 @@ ms.locfileid: "56335529"
     }
     ```
 
-6.  删除从现有代码`ShowMessageBox`方法：
+6. 删除从现有代码`ShowMessageBox`方法：
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -85,7 +85,7 @@ ms.locfileid: "56335529"
     }
     ```
 
-7.  获取 DTE 对象，我们将使用在本演练中有多种不同的用途。 此外，请确保单击的菜单按钮时加载解决方案。
+7. 获取 DTE 对象，我们将使用在本演练中有多种不同的用途。 此外，请确保单击的菜单按钮时加载解决方案。
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -103,7 +103,7 @@ ms.locfileid: "56335529"
     }
     ```
 
-8.  查找共享的项目。 共享的项目是一个纯粹的容器;它不生成或生成的输出。 以下方法通过查找在解决方案中查找第一个共享的项目<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>具有共享的项目功能的对象。
+8. 查找共享的项目。 共享的项目是一个纯粹的容器;它不生成或生成的输出。 以下方法通过查找在解决方案中查找第一个共享的项目<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>具有共享的项目功能的对象。
 
     ```csharp
     private IVsHierarchy FindSharedProject()
@@ -235,7 +235,7 @@ ms.locfileid: "56335529"
     ```
 
     > [!IMPORTANT]
-    > 如果用户在实验实例中打开过的 c + + 通用 Windows 应用项目，上面的代码将引发异常。 这是一个已知问题。 若要避免此异常，将为`foreach`上面阻止以下：
+    > 如果用户打开C++通用 Windows 应用项目中的实验实例中，上面的代码将引发异常。 这是一个已知问题。 若要避免此异常，将为`foreach`上面阻止以下：
 
     ```csharp
     var importingProjects = sharedAssetsProject.EnumImportingProjects();
@@ -306,7 +306,7 @@ ms.locfileid: "56335529"
 
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>管理平台项目中的共享的项
 
-1.  查找在平台项目中共享的项。 共享项目中的项在平台项目中显示为共享项。 你不能看到它们在**解决方案资源管理器**，但您可以放心离开项目层次结构，可以找到它们。 以下方法将在层次结构的指导，并收集所有共享的项。 它根据需要将输出的每个项的标题。 通过新的属性标识的共享的项<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>。
+1. 查找在平台项目中共享的项。 共享项目中的项在平台项目中显示为共享项。 你不能看到它们在**解决方案资源管理器**，但您可以放心离开项目层次结构，可以找到它们。 以下方法将在层次结构的指导，并收集所有共享的项。 它根据需要将输出的每个项的标题。 通过新的属性标识的共享的项<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7.VSHPROPID_IsSharedItem>。
 
     ```csharp
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)
@@ -338,7 +338,7 @@ ms.locfileid: "56335529"
     }
     ```
 
-2.  在`ShowMessageBox`方法中，添加以下代码以引导平台项目层次结构项。 插入内`foreach`块。
+2. 在`ShowMessageBox`方法中，添加以下代码以引导平台项目层次结构项。 插入内`foreach`块。
 
     ```csharp
     output.OutputStringThreadSafe("Walk the active platform project:\n");
@@ -346,7 +346,7 @@ ms.locfileid: "56335529"
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);
     ```
 
-3.  读取共享的项目。 共享的项在平台项目中显示为隐藏的链接文件，并可以读取为普通链接的文件的所有属性。 以下代码将读取第一个共享项的完整路径。
+3. 读取共享的项目。 共享的项在平台项目中显示为隐藏的链接文件，并可以读取为普通链接的文件的所有属性。 以下代码将读取第一个共享项的完整路径。
 
     ```csharp
     var sharedItemId = sharedItemIds[0];
@@ -355,7 +355,7 @@ ms.locfileid: "56335529"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4.  现在试一试。按**F5**启动实验实例。 创建C#的实验实例中的通用中心应用程序项目 (在**新建项目**对话框中， **Visual C#**   >  **Windows**  > **Windows 8** > **通用** > **中心应用**) 转到**工具**菜单单击**调用 TestUniversalProject**，然后再签入文本**输出**窗格。 显示的内容应与以下类似：
+4. 现在试一试。按**F5**启动实验实例。 创建C#的实验实例中的通用中心应用程序项目 (在**新建项目**对话框中， **Visual C#**   >  **Windows**  > **Windows 8** > **通用** > **中心应用**) 转到**工具**菜单单击**调用 TestUniversalProject**，然后再签入文本**输出**窗格。 显示的内容应与以下类似：
 
     ```
     Found shared project: HubApp.Shared

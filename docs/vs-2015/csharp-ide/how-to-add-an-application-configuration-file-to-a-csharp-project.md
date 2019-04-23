@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044971"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：添加到应用程序配置文件C#项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "58933875"
   
 ### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>若要将应用程序配置文件添加到你的 C# 项目  
   
-1.  在菜单栏上依次选择**项目**，**添加新项**。  
+1. 在菜单栏上依次选择**项目**，**添加新项**。  
   
      “添加新项”对话框随即出现。  
   
-2.  展开**已安装**，展开**Visual C# 项**，然后选择**应用程序配置文件**模板。  
+2. 展开**已安装**，展开**Visual C# 项**，然后选择**应用程序配置文件**模板。  
   
-3.  在“名称”文本框中输入名称，然后选择“添加”按钮。  
+3. 在“名称”文本框中输入名称，然后选择“添加”按钮。  
   
      名为 app.config 的文件添加到你的项目。  
   

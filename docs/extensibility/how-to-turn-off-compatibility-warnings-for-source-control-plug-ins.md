@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a2c1b3ff112052abd44463fdce3a5b36197a71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a1a113dc3b4a4b3a8a4482dd092878851d740c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112193"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：关闭的源代码管理插件的兼容性警告
 使用源代码管理中的时，用户可能会看到几个兼容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 显示警告取决于源代码管理插件的功能，可禁用详细信息如下。
@@ -31,7 +31,7 @@ ms.locfileid: "56721337"
 
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要禁用此警告："已安装的源代码管理提供程序不支持所有功能"
 
--   设置以下两个注册表值 （如有必要，将添加值）：
+- 设置以下两个注册表值 （如有必要，将添加值）：
 
      **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000**
 

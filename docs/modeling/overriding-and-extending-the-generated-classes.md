@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085618"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>重写和扩展生成的类
 
@@ -54,9 +54,9 @@ public partial class Book
 
 例如，在示例 Library.dsl，`CirculationBook`域类具有`Generates``Double Derived`属性设置为`true`。 为此域类生成的代码包含两个类：
 
--   `CirculationBookBase`它是一个抽象，它包含所有方法和属性。
+- `CirculationBookBase`它是一个抽象，它包含所有方法和属性。
 
--   `CirculationBook`它派生自`CirculationBookBase`。 它是空的但其构造函数除外。
+- `CirculationBook`它派生自`CirculationBookBase`。 它是空的但其构造函数除外。
 
 若要重写任何方法，您创建派生类的分部定义如`CirculationBook`。 您可以重写生成的方法和从建模 framework 继承的方法。
 

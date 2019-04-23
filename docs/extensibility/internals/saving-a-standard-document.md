@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ced873db6c1a3c9adbe40625ed44817eb6703d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043453"
 ---
 # <a name="saving-a-standard-document"></a>保存标准文档
 环境处理保存、 另存为，并保存所有命令。 如果用户选择**保存**，**另存为**，或**全部保存**从**文件**菜单或关闭解决方案，从而导致**保存所有**，发生以下过程。
@@ -50,11 +50,11 @@ ms.locfileid: "56614891"
 
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>若要将文件所有权更改为杂项文件项目
 
-1.  查询服务以获取<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>接口。
+1. 查询服务以获取<xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager>接口。
 
      一个指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2>返回。
 
-2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，将文档传输到新层次结构。 层次结构执行另存为命令调用此方法。
+2. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A>(`pszMkDocumentNew`， `punkWindowFrame`) 方法，将文档传输到新层次结构。 层次结构执行另存为命令调用此方法。
 
 ## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

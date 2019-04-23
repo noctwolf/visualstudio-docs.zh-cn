@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5e82777b0d2f6134f99cabf42030943d4ea9a8a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fb95164642595195dc62166aec5c81f39abd33e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104053"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "54772916"
   
  可以通过设置跨进程分析可见性选项来查看可用进程的列表。 在单击“附加到进程”时显示的“附加到进程”窗口中提供了这些选项：  
   
--   **显示所有用户的进程**  
+- **显示所有用户的进程**  
   
      未选择此选项时，列表只显示当前用户所拥有的进程。 选择“显示所有用户的进程”时，列表显示所有用户的进程。  
   
--   **显示所有会话中的进程**  
+- **显示所有会话中的进程**  
   
      未选择此选项时，列表显示当前会话中的进程。 选择此选项时，列表显示所有会话中的进程。  
   
 ## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [如何：附加到运行的进程](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [如何：将附加到正在运行的进程](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051451"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定调试器设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58937363"
   
 ### <a name="to-set-debugger-options"></a>设置调试器选项  
   
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在“选项”对话框中打开“调试”文件夹。  
+2. 在“选项”对话框中打开“调试”文件夹。  
   
-3.  在“调试”文件夹中选择所需选项的类别。  
+3. 在“调试”文件夹中选择所需选项的类别。  
   
      最常用的选项位于“常规”类别中。 有关详细信息，请参阅[“选项”对话框→“调试”→“通用”](../debugger/general-debugging-options-dialog-box.md)。  
   
-4.  选择或清除所需选项。 按 F1 可获得有关选项的帮助。  
+4. 选择或清除所需选项。 按 F1 可获得有关选项的帮助。  
   
 ## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“调试”->“常规”](../debugger/general-debugging-options-dialog-box.md)   

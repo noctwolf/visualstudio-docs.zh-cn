@@ -1,5 +1,5 @@
 ---
-title: 演练： 因而缺少对象设备状态 |Microsoft Docs
+title: 演练：因设备状态而缺少对象 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712068"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047447"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>演练：因设备状态而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查由于设备状态配置错误而缺失的对象。
 
  本演练演示了如何：
 
--   使用“图形事件列表”  定位问题的潜在根源。
+- 使用“图形事件列表”  定位问题的潜在根源。
 
--   使用“图形管道阶段”  窗口检查 `DrawIndexed` Direct3D API 调用的影响。
+- 使用“图形管道阶段”  窗口检查 `DrawIndexed` Direct3D API 调用的影响。
 
--   使用“图形像素历史记录”  窗口更具体地定位问题。
+- 使用“图形像素历史记录”  窗口更具体地定位问题。
 
--   检查设备状态以明确潜在问题或配置错误。
+- 检查设备状态以明确潜在问题或配置错误。
 
 ## <a name="scenario"></a>方案
  对象可能不会出现在三维应用程序中预计会出现的位置的一个原因是，图形设备配置错误导致对象被排除在呈现外。例如，绕序导致错误剔除三角形，或深度测试函数导致对象中所有像素被拒绝。

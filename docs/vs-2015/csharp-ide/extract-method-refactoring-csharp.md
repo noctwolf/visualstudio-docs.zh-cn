@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041393"
 ---
 # <a name="extract-method-refactoring-c"></a>提取方法重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "58930544"
   
  **提取方法**具有以下优点：  
   
--   鼓励通过强调离散、 可重复使用方法的最佳编码实践。  
+- 鼓励通过强调离散、 可重复使用方法的最佳编码实践。  
   
--   鼓励自文档化代码中通过较好的组织。  
+- 鼓励自文档化代码中通过较好的组织。  
   
      具说明性的名称时使用的高级方法可以像读取一系列的注释。  
   
--   鼓励创建精细的方法，以简化重写。  
+- 鼓励创建精细的方法，以简化重写。  
   
--   可以减少代码重复。  
+- 可以减少代码重复。  
   
 ### <a name="to-use-extract-method"></a>若要使用提取方法  
   
-1.  创建名为 `ExtractMethod` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
+1. 创建名为 `ExtractMethod` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "58930544"
     }  
     ```  
   
-2.  选择你想要提取的代码片段：  
+2. 选择你想要提取的代码片段：  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  上**重构**菜单上，单击**提取方法**。  
+3. 上**重构**菜单上，单击**提取方法**。  
   
      **提取方法**对话框随即出现。  
   
@@ -82,11 +82,11 @@ ms.locfileid: "58930544"
   
      您还可以右键单击所选代码中，指向**重构**，然后单击**提取方法**以显示**提取方法**对话框。  
   
-4.  指定的名称的新方法，如`CircleArea`，请在**新的方法名称**框。  
+4. 指定的名称的新方法，如`CircleArea`，请在**新的方法名称**框。  
   
      新的方法签名的预览显示在下**预览方法签名**。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
 ## <a name="remarks"></a>备注  
  当你使用**提取方法**命令时，同一个类中的源成员之后插入新方法。  

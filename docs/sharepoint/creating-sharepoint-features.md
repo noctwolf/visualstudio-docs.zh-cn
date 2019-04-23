@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051307"
 ---
 # <a name="create-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更轻松地部署的相关的 SharePoint 项目项进行分组。 可以创建功能、 设置作用域，并使用 SharePoint 功能设计器将其他功能标记为依赖项。 在设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。
@@ -26,9 +26,9 @@ ms.locfileid: "56644453"
 ## <a name="add-features-to-the-sharepoint-solution"></a>将功能添加到 SharePoint 解决方案
  可以使用解决方案资源管理器或打包资源管理器将功能添加到 SharePoint 解决方案中。 可以使用以下方法之一来添加一项功能。
 
--   在中**解决方案资源管理器**，打开快捷菜单**功能**，然后选择**添加功能**。
+- 在中**解决方案资源管理器**，打开快捷菜单**功能**，然后选择**添加功能**。
 
--   在中**打包资源管理器**，打开包的快捷菜单，然后选择**添加功能**。
+- 在中**打包资源管理器**，打开包的快捷菜单，然后选择**添加功能**。
 
 ## <a name="using-the-feature-designer"></a>使用功能设计器
  SharePoint 解决方案可以包含一个或多个 SharePoint 功能，在解决方案资源管理器中的功能节点下进行分组。 每个功能都有自己**功能设计器**可用于自定义功能属性。 有关详细信息，请参阅[如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。 若要区分从另一个功能，可以配置的功能属性，如标题、 说明、 版本和作用域。

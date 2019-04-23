@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb8a9990c28d30d00efdfd98bd106dcd12b05c66
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092716"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -50,7 +50,7 @@ ms.locfileid: "55913374"
 
    否则，请考虑使用 MEF 方法来定义命令。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
-##  <a name="VSCT"></a> 声明在 Commands.Vsct 中命令
+## <a name="VSCT"></a> 声明在 Commands.Vsct 中命令
  菜单命令将在 DslPackage\Commands.vsct 中声明。 这些定义指定菜单项的标签以及它们在菜单上显示的位置。
 
  您编辑的文件 Commands.vsct 中，从多个.h 文件，位于目录中导入定义*Visual Studio SDK 安装路径*\VisualStudioIntegration\Common\Inc。它还包括从 DSL 定义中生成的 GeneratedVsct.vsct。
@@ -59,9 +59,9 @@ ms.locfileid: "55913374"
 
 ### <a name="to-add-the-command"></a>添加命令
 
-1.  在中**解决方案资源管理器**下**DslPackage**项目中，打开 Commands.vsct。
+1. 在中**解决方案资源管理器**下**DslPackage**项目中，打开 Commands.vsct。
 
-2.  在 `Commands` 元素中，定义一个或多个按钮和一个组。 一个*按钮*是在菜单上的项。 一个*组*是菜单中的某个部分。 若要定义这些项，请添加以下元素：
+2. 在 `Commands` 元素中，定义一个或多个按钮和一个组。 一个*按钮*是在菜单上的项。 一个*组*是菜单中的某个部分。 若要定义这些项，请添加以下元素：
 
     ```xml
     <!-- Define a group - a section in the menu -->
@@ -90,7 +90,7 @@ ms.locfileid: "55913374"
     > [!NOTE]
     > 每个按钮或组由一个 GUID 和一个整数 ID 标识。 可以使用同一 GUID 创建多个组和按钮。 但是，它们必须具有不同的 ID。 GUID 名称和 ID 名称将转换为实际 Guid 和数值 Id 中的`<Symbols>`节点。
 
-3.  为命令添加可见性约束，以便仅在域特定语言的上下文中加载该命令。 有关详细信息，请参阅[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。
+3. 为命令添加可见性约束，以便仅在域特定语言的上下文中加载该命令。 有关详细信息，请参阅[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。
 
      为此，请在 `CommandTable` 元素后的 `Commands` 元素中添加以下元素。
 
@@ -102,7 +102,7 @@ ms.locfileid: "55913374"
     </VisibilityConstraints>
     ```
 
-4.  定义用于 GUID 和 ID 的名称。 为此，请在 `Symbols` 元素后的 `CommandTable` 元素中添加 `Commands` 元素。
+4. 定义用于 GUID 和 ID 的名称。 为此，请在 `Symbols` 元素后的 `CommandTable` 元素中添加 `Commands` 元素。
 
     ```xml
     <Symbols>
@@ -115,37 +115,37 @@ ms.locfileid: "55913374"
     </Symbols>
     ```
 
-5.  将 `{000...000}` 替换为标识组和菜单项的 GUID。 若要获取新的 GUID，请使用**创建 GUID**上**工具**菜单。
+5. 将 `{000...000}` 替换为标识组和菜单项的 GUID。 若要获取新的 GUID，请使用**创建 GUID**上**工具**菜单。
 
     > [!NOTE]
     >  如果添加更多组或菜单项，则可以使用同一 GUID。 但是，你必须将新值用于 `IDSymbols`。
 
-6.  在已从此过程复制的代码中，将以下字符串的每个匹配项替换为自己的字符串：
+6. 在已从此过程复制的代码中，将以下字符串的每个匹配项替换为自己的字符串：
 
-    -   `grpidMyMenuGroup`
+    - `grpidMyMenuGroup`
 
-    -   `cmdidMyContextMenuCommand`
+    - `cmdidMyContextMenuCommand`
 
-    -   `guidCustomMenuCmdSet`
+    - `guidCustomMenuCmdSet`
 
-    -   `My Context Menu Command`
+    - `My Context Menu Command`
 
-##  <a name="version"></a> 更新 Package.tt 中的包版本
+## <a name="version"></a> 更新 Package.tt 中的包版本
  每当添加或更改命令时，都要在发布新版本的域特定语言之前，更新应用于程序包类的 `version` 的 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 参数。
 
  因为程序包类定义在生成的文件中，因此请在生成 Package.cs 文件的文本模板文件中更新该特性。
 
 ### <a name="to-update-the-packagett-file"></a>更新 Package.tt 文件
 
-1.  在中**解决方案资源管理器**，在**DslPackage**项目，在**GeneratedCode**文件夹中，打开 Package.tt 文件。
+1. 在中**解决方案资源管理器**，在**DslPackage**项目，在**GeneratedCode**文件夹中，打开 Package.tt 文件。
 
-2.  查找 `ProvideMenuResource` 特性。
+2. 查找 `ProvideMenuResource` 特性。
 
-3.  递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如：
+3. 递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如：
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-##  <a name="CommandSet"></a> 定义命令的行为
+## <a name="CommandSet"></a> 定义命令的行为
 
 DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部类中实现的命令。 若要添加新命令，你必须通过创建包含同一个类的分部声明的新文件来扩展此类。 类的名称通常是 *\<YourDslName >*`CommandSet`。 它可用于通过验证的类的名称，并检查其内容来开始。
 
@@ -153,15 +153,15 @@ DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部
 
 ### <a name="extend-the-commandset-class"></a>扩展 CommandSet 类
 
-1.  在“解决方案资源管理器”中，在 DslPackage 项目中打开 GeneratedCode 文件夹，然后在 CommandSet.tt 下进行查找并打开其生成的文件 CommandSet.cs。 注意在此处定义的第一个类的命名空间和名称。 例如，你可能看到：
+1. 在“解决方案资源管理器”中，在 DslPackage 项目中打开 GeneratedCode 文件夹，然后在 CommandSet.tt 下进行查找并打开其生成的文件 CommandSet.cs。 注意在此处定义的第一个类的命名空间和名称。 例如，你可能看到：
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  在中**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中创建名为的新类文件`CommandSet.cs`。
+2. 在中**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中创建名为的新类文件`CommandSet.cs`。
 
-3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
+3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -322,13 +322,13 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>演练命令
 
-1.  上**解决方案资源管理器**工具栏上，单击**转换所有模板**。
+1. 上**解决方案资源管理器**工具栏上，单击**转换所有模板**。
 
-2.  按**F5**重新生成解决方案，并启动调试的实验性生成中的特定于域的语言。
+2. 按**F5**重新生成解决方案，并启动调试的实验性生成中的特定于域的语言。
 
-3.  在实验性生成中，打开示例关系图。
+3. 在实验性生成中，打开示例关系图。
 
-4.  在关系图中右键单击各种项，以验证命令是否根据所选择的项正确启用或禁用，以及是否相应地显示或隐藏。
+4. 在关系图中右键单击各种项，以验证命令是否根据所选择的项正确启用或禁用，以及是否相应地显示或隐藏。
 
 ## <a name="troubleshoot"></a>疑难解答
 
@@ -344,11 +344,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 **未调用 OnStatus 方法**:
 
--   确保 CommandSet 代码中的 GUID 和 ID 匹配 Commands.vsct 的“符号”部分中的 GUID 和 ID。
+- 确保 CommandSet 代码中的 GUID 和 ID 匹配 Commands.vsct 的“符号”部分中的 GUID 和 ID。
 
--   在 Commands.vsct 中，确保每个“父”节点中的 GUID 和 ID 标识正确的父“组”。
+- 在 Commands.vsct 中，确保每个“父”节点中的 GUID 和 ID 标识正确的父“组”。
 
--   在 Visual Studio 命令提示符中，键入 devenv /rootsuffix exp /setup。 然后，重新启动 Visual Studio 的调试实例。
+- 在 Visual Studio 命令提示符中，键入 devenv /rootsuffix exp /setup。 然后，重新启动 Visual Studio 的调试实例。
 
 - 逐步执行 OnStatus 方法，以验证 command.Visible 和 command.Enabled 是否设置为 True。
 
@@ -361,7 +361,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 ## <a name="see-also"></a>请参阅
 
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
 - [示例代码：线路关系图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 

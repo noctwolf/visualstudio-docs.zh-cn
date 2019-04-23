@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: a1cf66baf73fe4a04dcb21b0c7ac7609214bea20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088699"
 ---
 # <a name="extending-the-toolbox"></a>扩展工具箱
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供了一系列对象，这些对象通过 IDE 拖放机制为编辑器和设计器提供各种功能。  
   
  VSPackage 与 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱**联合使用有两种基本方式：  
   
--   VSPackage 可以向 **工具箱**添加新数据项和控件。  
+- VSPackage 可以向 **工具箱**添加新数据项和控件。  
   
--   VSPackage 可以是现有 **工具箱** 功能目标或使用者，支持拖放操作并配置 **工具箱**的外观。  
+- VSPackage 可以是现有 **工具箱** 功能目标或使用者，支持拖放操作并配置 **工具箱**的外观。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：创建使用 Windows 窗体的工具箱控件](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md)  

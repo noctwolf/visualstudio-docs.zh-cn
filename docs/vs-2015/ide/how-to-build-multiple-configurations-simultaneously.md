@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 431978a10081ec50e9eaca7e88a37f1447f953e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16a509c5a8fa46620e60fb5f1497c38d97ff6330
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068309"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>如何：同时生成多个配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "54785863"
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>在多个生成配置中生成项目  
   
-1.  在菜单栏上，依次选择“生成”、“批生成”。  
+1. 在菜单栏上，依次选择“生成”、“批生成”。  
   
-2.  在“生成”列中，选择要在其中生成项目的配置的复选框。  
+2. 在“生成”列中，选择要在其中生成项目的配置的复选框。  
   
     > [!TIP]
     >  若要编辑或创建解决方案的生成配置，请在菜单栏上选择“生成”、“配置管理器”，以打开“配置管理器”对话框。 在对解决方案的生成配置进行编辑后，请选择“批生成”对话框中的“重新生成”按钮，以更新解决方案中项目的所有生成配置。  
   
-3.  选择“生成”或“重新生成”按钮以使用指定配置生成项目。  
+3. 选择“生成”或“重新生成”按钮以使用指定配置生成项目。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   

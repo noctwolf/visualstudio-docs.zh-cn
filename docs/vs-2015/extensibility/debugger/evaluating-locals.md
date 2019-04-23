@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117676"
 ---
 # <a name="evaluating-locals"></a>计算局部
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58937118"
   
  检索本地值的此功能会封装在一个 helper 函数，将执行以下任务：  
   
-1.  将绑定`IDebugField`对象的内存来获取`IDebugObject`对象。  
+1. 将绑定`IDebugField`对象的内存来获取`IDebugObject`对象。  
   
-2.  从内存中获取的值。 此值表示为一系列字节。  
+2. 从内存中获取的值。 此值表示为一系列字节。  
   
-3.  设置基于本地的类型的值的格式。  
+3. 设置基于本地的类型的值的格式。  
   
-4.  返回泛型对象，其中包含的本地值。 在 C# 中，这是`object`，并在 c + +，这是`VARIANT`。  
+4. 返回泛型对象，其中包含的本地值。 在C#，这是`object`，然后在C++，这是`VARIANT`。  
   
 ## <a name="managed-code"></a>托管代码  
  这是函数的本地的检索在托管代码中值的实现。  

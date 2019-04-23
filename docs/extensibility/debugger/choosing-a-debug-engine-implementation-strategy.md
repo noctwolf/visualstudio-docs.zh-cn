@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2fb608acdad60f5387750045a15f8eba36e2375
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 245fb14b06b5deed5ee652ef394e241bd1191022
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048941"
 ---
 # <a name="choose-a-debug-engine-implementation-strategy"></a>选择调试引擎实施策略
 使用运行时体系结构来确定您的调试引擎 (DE) 实施策略。 可以创建调试引擎中的进程进行调试的程序。 创建调试引擎进程内运行 Visual Studio 会话调试管理器 (SDM)。 或者，创建调试引擎的进程外对这两个值。 以下指导原则可帮助您在以下三个策略之间进行选择。
@@ -27,9 +27,9 @@ ms.locfileid: "56683202"
 
  否则为您可以创建 DE 进程内运行到 SDM 或进程的程序进行调试。 您需要考虑 DE，表达式计算器是否需要频繁访问程序符号存储区。 或者，如果符号存储区可以加载到内存中以便快速访问。 此外，请考虑以下方法：
 
--   如果不是表达式计算器和符号存储区之间的多个调用或符号存储区可以读取到 SDM 内存空间，创建 DE 进程内运行到 SDM。 它将附加到你的程序时，您必须返回到 SDM 调试引擎的 CLSID。 SDM 使用此 CLSID 来创建 DE 的进程内实例。
+- 如果不是表达式计算器和符号存储区之间的多个调用或符号存储区可以读取到 SDM 内存空间，创建 DE 进程内运行到 SDM。 它将附加到你的程序时，您必须返回到 SDM 调试引擎的 CLSID。 SDM 使用此 CLSID 来创建 DE 的进程内实例。
 
--   如果 DE 必须调用程序访问符号存储区，创建包含此程序中进程 DE。 在这种情况下，该程序创建 DE 的实例。
+- 如果 DE 必须调用程序访问符号存储区，创建包含此程序中进程 DE。 在这种情况下，该程序创建 DE 的实例。
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

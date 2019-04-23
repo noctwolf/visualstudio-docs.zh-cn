@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113113"
 ---
 # <a name="attaching-after-a-launch"></a>启动后附加
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "58937439"
 ## <a name="design-decisions"></a>设计决策  
  因为通信更容易共享的地址空间内，您必须决定是否更有意义以便于调试会话和德国，DE 和程序之间或之间的通信。 在以下选择：  
   
--   如果它更有意义便于调试会话和 DE 之间进行通信，调试会话共同创建 DE，并询问 DE 将附加到该程序。 这使调试会话，DE 一起中一个地址空间的运行时环境和程序中另一个合并在一起。  
+- 如果它更有意义便于调试会话和 DE 之间进行通信，调试会话共同创建 DE，并询问 DE 将附加到该程序。 这使调试会话，DE 一起中一个地址空间的运行时环境和程序中另一个合并在一起。  
   
--   如果它更有意义便于 DE 与程序之间进行通信，运行时环境将共同创建 DE。 这将使一个地址空间中的 SDM DE、 运行时环境和程序中另一个合并在一起。 这是典型的部署使用解释器以运行脚本化的语言实现。  
+- 如果它更有意义便于 DE 与程序之间进行通信，运行时环境将共同创建 DE。 这将使一个地址空间中的 SDM DE、 运行时环境和程序中另一个合并在一起。 这是典型的部署使用解释器以运行脚本化的语言实现。  
   
     > [!NOTE]
     >  如何将 DE 附加到该程序是依赖于实现的。 DE 和程序之间的通信也是依赖于实现的。  

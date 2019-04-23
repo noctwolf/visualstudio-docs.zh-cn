@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74c61beeae78fbf76ffee76ff930171ddbe8089a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051812"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>用层关系图验证代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,50 +58,50 @@ ms.locfileid: "58936489"
 > [!IMPORTANT]
 >  如果想要使用 Team Foundation Build 运行层验证，则还必须在生成服务器上安装相同版本的 Visual Studio。  
   
--   [请参阅项是否支持验证](#SupportsValidation)  
+- [请参阅项是否支持验证](#SupportsValidation)  
   
--   [包括其他.NET 程序集和项目以进行验证](#IncludeReferences)  
+- [包括其他.NET 程序集和项目以进行验证](#IncludeReferences)  
   
--   [手动验证代码](#ValidateManually)  
+- [手动验证代码](#ValidateManually)  
   
--   [自动验证代码](#ValidateAuto)  
+- [自动验证代码](#ValidateAuto)  
   
--   [层验证问题疑难解答](#TroubleshootingValidation)  
+- [层验证问题疑难解答](#TroubleshootingValidation)  
   
--   [了解和解决层验证错误](#UnderstandingValidationErrors)  
+- [了解和解决层验证错误](#UnderstandingValidationErrors)  
   
-##  <a name="SupportsValidation"></a> 请参阅项是否支持验证  
+## <a name="SupportsValidation"></a> 请参阅项是否支持验证  
  你可以将层链接到网站、Office 文档、纯文本文件和项目中跨多个应用共享的文件，但验证过程不包含这些内容。 如果引用的项目或程序集链接到单独的层，而且这些层之间没有依赖关系出现，则将不会出现验证错误。 除非代码使用此类引用，否则这些引用不被视为依赖项。  
   
-1.  在层关系图中，选择一个或多个层，用鼠标右键单击你的选择，然后单击**查看链接**。  
+1. 在层关系图中，选择一个或多个层，用鼠标右键单击你的选择，然后单击**查看链接**。  
   
-2.  在中**层资源管理器**，看看**支持验证**列。 如果该值为 false，则项不支持验证。  
+2. 在中**层资源管理器**，看看**支持验证**列。 如果该值为 false，则项不支持验证。  
   
-##  <a name="IncludeReferences"></a> 包括其他.NET 程序集和项目以进行验证  
+## <a name="IncludeReferences"></a> 包括其他.NET 程序集和项目以进行验证  
  将项拖到层关系图中，对相应的.NET 程序集或项目的引用将自动添加到**层引用**建模项目中的文件夹。 此文件夹包含对验证过程中分析的程序集和项目的引用。 你也可以包含要验证的其他 .NET 程序集和项目，而无需将它们手动拖到层关系图上。  
   
-1.  在中**解决方案资源管理器**，右键单击建模项目或**层引用**文件夹，，然后单击**添加引用**。  
+1. 在中**解决方案资源管理器**，右键单击建模项目或**层引用**文件夹，，然后单击**添加引用**。  
   
-2.  在中**添加引用**对话框中，选择程序集或项目，然后依次**确定**。  
+2. 在中**添加引用**对话框中，选择程序集或项目，然后依次**确定**。  
   
-##  <a name="ValidateManually"></a> 手动验证代码  
+## <a name="ValidateManually"></a> 手动验证代码  
  如果你有一个打开的层关系图链接到解决方案项，则可以运行**验证**从关系图的快捷方式命令。 此外可以使用命令提示符处运行**msbuild**命令 **/p:ValidateArchitecture**自定义属性设置为**True**。 例如，在对代码进行更改时，请定期执行层验证以便能够提前捕获依赖项冲突。  
   
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>从打开的层关系图中验证代码  
   
-1.  右键单击关系图图面，然后依次**验证体系结构**。  
+1. 右键单击关系图图面，然后依次**验证体系结构**。  
   
     > [!NOTE]
     >  默认情况下**生成操作**上的层关系图 (.layerdiagram) 文件的属性设置为**验证**，以便在验证过程中包括关系图。  
   
      **错误列表**窗口报告出现的任何错误。 有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。  
   
-2.  若要查看每个错误的源，请双击中的错误**错误列表**窗口。  
+2. 若要查看每个错误的源，请双击中的错误**错误列表**窗口。  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可能会显示代码映射，而不是显示错误的根源。 若代码所依赖的程序集不是由层关系图指定的，或代码缺少层关系图所指定的依赖项，则会出现此情况。 检查代码映射或代码，以确定此依赖关系是否应该存在。 有关代码图的详细信息，请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
   
-3.  若要管理错误，请参阅[管理验证错误](#ManageErrors)。  
+3. 若要管理错误，请参阅[管理验证错误](#ManageErrors)。  
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>在命令提示符处验证代码  
   
@@ -141,7 +141,7 @@ ms.locfileid: "58936489"
   
    有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。  
   
-###  <a name="ManageErrors"></a> 管理验证错误  
+### <a name="ManageErrors"></a> 管理验证错误  
  在开发过程中，你可能需要在验证期间禁止显示报告的某些冲突。 例如，你可能希望禁止显示你已解决或与特定情形不相关的错误。 禁止显示错误时，最好在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中记录工作项。  
   
 > [!WARNING]
@@ -160,12 +160,12 @@ ms.locfileid: "58936489"
 |还原中的所有禁止显示的错误**错误列表**窗口|中的任意位置右击**错误列表**窗口中，依次指向**管理验证错误**，然后单击**显示所有禁止显示的错误**。|  
 |隐藏所有禁止显示的错误**错误列表**窗口|中的任意位置右击**错误列表**窗口中，依次指向**管理验证错误**，然后单击**隐藏所有禁止显示的错误**。|  
   
-##  <a name="ValidateAuto"></a> 自动验证代码  
+## <a name="ValidateAuto"></a> 自动验证代码  
  每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Team Foundation Build，则可使用能够通过创建自定义 MSBuild 任务指定的封闭签入来执行层验证，并使用生成报告来收集验证错误。 若要创建封闭的签入生成，请参阅[使用封闭的签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>在本地生成期间自动验证代码  
   
--   使用文本编辑器打开建模项目 (.modelproj) 文件，然后包括以下属性：  
+- 使用文本编辑器打开建模项目 (.modelproj) 文件，然后包括以下属性：  
   
 ```  
 <ValidateArchitecture>true</ValidateArchitecture>  
@@ -197,24 +197,24 @@ ms.locfileid: "58936489"
   
    有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。 有关 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的详细信息，请参阅：  
   
--   [生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
--   [在生成过程中使用默认模板](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [在生成过程中使用默认模板](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
--   [修改基于 UpgradeTemplate.xaml 的旧式生成](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [修改基于 UpgradeTemplate.xaml 的旧式生成](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
--   [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
--   [监视运行的生成的进度](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [监视运行的生成的进度](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a> 层验证问题疑难解答  
+## <a name="TroubleshootingValidation"></a> 层验证问题疑难解答  
  下表描述了层验证问题及其解决方法。 这些问题不同于代码与设计发生冲突而导致出现的错误。 有关这些错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。  
   
 |**问题**|**可能的原因**|**解决方法**|  
 |---------------|------------------------|--------------------|  
 |验证错误不按预期发生。|在解决方案资源管理器中，从同一建模项目中的其他层关系图复制的层关系图上，验证不起作用。 以这种方式复制的层关系图包含与原始层关系图相同的引用。|向建模项目中添加一个新的层关系图。<br /><br /> 将源层关系图中的元素复制到新关系图。|  
   
-##  <a name="UnderstandingValidationErrors"></a> 了解和解决层验证错误  
+## <a name="UnderstandingValidationErrors"></a> 了解和解决层验证错误  
  在对照层关系图验证代码时，如果代码与设计发生冲突，则会出现验证错误。 例如，以下情况可能导致发生验证错误：  
   
 - 将项目指派给了错误的层。 在这种情况下，请移动项目。  

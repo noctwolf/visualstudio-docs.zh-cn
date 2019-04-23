@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068660"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：将筛选器描述符添加到 Finder 方法
   筛选器描述符，它们执行之前将值传递给方法的模型的使用者。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -29,25 +29,25 @@ ms.locfileid: "56617777"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>若要将筛选器描述符添加到 Finder 方法
 
-1.  在中**BDC 方法详细信息**窗口中，展开的 Finder 方法节点，展开**参数**节点，然后添加一个输入的参数。 有关详细信息，请参阅[如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。
+1. 在中**BDC 方法详细信息**窗口中，展开的 Finder 方法节点，展开**参数**节点，然后添加一个输入的参数。 有关详细信息，请参阅[如何：将参数添加到方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。
 
-2.  在中**方法的详细信息**窗口中，选择该参数的类型描述符。
+2. 在中**方法的详细信息**窗口中，选择该参数的类型描述符。
 
-3.  在菜单栏上依次选择**视图** > **属性窗口**。
+3. 在菜单栏上依次选择**视图** > **属性窗口**。
 
-4.  在中**属性**窗口中，将**类型名称**属性设置为适当的筛选器的数据类型。
+4. 在中**属性**窗口中，将**类型名称**属性设置为适当的筛选器的数据类型。
 
      例如，筛选器可能使用订单日期来限制由方法返回的销售订单数。 若要支持该筛选器**类型名称**类型描述符的属性必须设置为**System.DateTime**。
 
-5.  在中**方法的详细信息**窗口中，展开**筛选器描述符**节点。
+5. 在中**方法的详细信息**窗口中，展开**筛选器描述符**节点。
 
-6.  在中**添加筛选器描述符**列表中，选择**创建筛选器描述符**。
+6. 在中**添加筛选器描述符**列表中，选择**创建筛选器描述符**。
 
      新的筛选器描述符显示下方**筛选器描述符**节点。
 
-7.  在菜单栏上依次选择**视图** > **属性窗口**。
+7. 在菜单栏上依次选择**视图** > **属性窗口**。
 
-8.  在中**属性**窗口中，选择**类型**属性。
+8. 在中**属性**窗口中，选择**类型**属性。
 
 9. 在列表中为显示**类型**属性中，选择所需的筛选模式。
 

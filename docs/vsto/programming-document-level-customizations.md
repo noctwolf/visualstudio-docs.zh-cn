@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077753"
 ---
 # <a name="program-document-level-customizations"></a>文档级自定义项进行编程
   在使用文档级自定义项扩展 Microsoft Office Word 或 Microsoft Office Excel 时，可以执行以下任务：
@@ -62,13 +62,13 @@ ms.locfileid: "56624680"
 
 - Excel 文档级项目具有多个生成的类：一个用于工作簿本身，一个用于每一工作表。 默认情况下，这些类具有以下名称：
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   生成的类包含在打开或关闭文档时调用的事件处理程序。 若要在打开文档时运行代码，请将代码添加到 `Startup` 事件处理程序。 若要在关闭文档后立即运行代码，请将代码添加到 `Shutdown` 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
 

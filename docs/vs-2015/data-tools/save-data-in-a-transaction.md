@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105014"
 ---
 # <a name="save-data-in-a-transaction"></a>在事务中保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "59647670"
   
 #### <a name="to-create-the-new-windows-project"></a>创建新的 Windows 项目  
   
-1.  在 Visual Studio 中，在**文件**菜单中，创建一个新**项目**。  
+1. 在 Visual Studio 中，在**文件**菜单中，创建一个新**项目**。  
   
-2.  将项目命名**SavingDataInATransactionWalkthrough**。  
+2. 将项目命名**SavingDataInATransactionWalkthrough**。  
   
-3.  选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      创建“SavingDataInATransactionWalkthrough”项目并将其添加到“解决方案资源管理器”中。  
   
@@ -53,27 +53,27 @@ ms.locfileid: "59647670"
   
 #### <a name="to-create-the-data-source"></a>创建数据源  
   
-1.  上**数据**菜单中，选择**显示数据源**。  
+1. 上**数据**菜单中，选择**显示数据源**。  
   
-2.  在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。  
+2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。  
   
-3.  上**选择数据源类型**屏幕上，选择**数据库**，然后选择**下一步**。  
+3. 上**选择数据源类型**屏幕上，选择**数据库**，然后选择**下一步**。  
   
-4.  上**选择您的数据连接**屏幕执行下列任一操作：  
+4. 上**选择您的数据连接**屏幕执行下列任一操作：  
   
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
          或  
   
-    -   选择“新建连接”以启动“添加/修改连接”对话框，并创建到 Northwind 数据库的连接。  
+    - 选择“新建连接”以启动“添加/修改连接”对话框，并创建到 Northwind 数据库的连接。  
   
-5.  如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。  
+5. 如果你的数据库需要密码，选择选项以包括敏感数据，然后选择**下一步**。  
   
-6.  上**将连接字符串保存到应用程序配置文件**屏幕上，选择**下一步**。  
+6. 上**将连接字符串保存到应用程序配置文件**屏幕上，选择**下一步**。  
   
-7.  上**选择数据库对象**屏幕上，展开**表**节点。  
+7. 上**选择数据库对象**屏幕上，展开**表**节点。  
   
-8.  选择`Customers`并`Orders`表，并选择**完成**。  
+8. 选择`Customers`并`Orders`表，并选择**完成**。  
   
      将“NorthwindDataSet”添加到项目后，“数据源”窗口即会显示 `Customers` 和 `Orders` 表。  
   
@@ -82,13 +82,13 @@ ms.locfileid: "59647670"
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>若要创建数据绑定 Windows 窗体控件  
   
--   在中**数据源**窗口中，展开**客户**节点。  
+- 在中**数据源**窗口中，展开**客户**节点。  
   
--   将主“Customers”节点从“数据源”窗口拖到“Form1”上。  
+- 将主“Customers”节点从“数据源”窗口拖到“Form1”上。  
   
      用于导航记录的 <xref:System.Windows.Forms.DataGridView> 控件和工具栏（<xref:System.Windows.Forms.BindingNavigator>）将显示在窗体上。 组件栏中显示“[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)”、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。  
   
--   将相关**订单**节点 (非主**订单**节点，但下面的相关的子表节点**传真**列) 到下面的表单上**CustomersDataGridView**。  
+- 将相关**订单**节点 (非主**订单**节点，但下面的相关的子表节点**传真**列) 到下面的表单上**CustomersDataGridView**。  
   
      窗体上显示一个 <xref:System.Windows.Forms.DataGridView>。 OrdersTableAdapter 和<xref:System.Windows.Forms.BindingSource>组件栏中出现。  
   
@@ -97,9 +97,9 @@ ms.locfileid: "59647670"
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>添加对 System.Transactions DLL 文件的引用  
   
-1.  上**项目**菜单中，选择**添加引用**。  
+1. 上**项目**菜单中，选择**添加引用**。  
   
-2.  选择**System.Transactions**(在 **.NET**选项卡)，然后选择**确定**。  
+2. 选择**System.Transactions**(在 **.NET**选项卡)，然后选择**确定**。  
   
      将“System.Transactions”的引用添加到项目。  
   
@@ -117,38 +117,38 @@ ms.locfileid: "59647670"
   
    对相关数据的协调更改的顺序如下：  
   
--   删除子记录。 (在这种情况下，删除记录`Orders`表。)  
+- 删除子记录。 (在这种情况下，删除记录`Orders`表。)  
   
--   删除父记录。 (在这种情况下，删除记录`Customers`表。)  
+- 删除父记录。 (在这种情况下，删除记录`Customers`表。)  
   
--   插入父记录。(在这种情况下中, 插入记录`Customers`表。)  
+- 插入父记录。(在这种情况下中, 插入记录`Customers`表。)  
   
--   插入子记录。 (在这种情况下中, 插入记录`Orders`表。)  
+- 插入子记录。 (在这种情况下中, 插入记录`Orders`表。)  
   
 #### <a name="to-delete-existing-orders"></a>删除现有顺序  
   
--   将以下 `DeleteOrders` 方法添加到“Form1”：  
+- 将以下 `DeleteOrders` 方法添加到“Form1”：  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>删除现有客户  
   
--   将以下 `DeleteCustomers` 方法添加到“Form1”：  
+- 将以下 `DeleteCustomers` 方法添加到“Form1”：  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>添加新客户  
   
--   将以下 `AddNewCustomers` 方法添加到“Form1”：  
+- 将以下 `AddNewCustomers` 方法添加到“Form1”：  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>添加新顺序  
   
--   将以下 `AddNewOrders` 方法添加到“Form1”：  
+- 将以下 `AddNewOrders` 方法添加到“Form1”：  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ ms.locfileid: "59647670"
   
 #### <a name="to-run-the-application"></a>要运行应用程序  
   
--   选择**F5**运行该应用程序。  
+- 选择**F5**运行该应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

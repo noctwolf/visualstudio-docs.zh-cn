@@ -17,12 +17,12 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118040"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 开发的 Devenv 命令行开关
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58936269"
   
  任务包括：  
   
--   在从 IDE 外部的预配置中部署应用程序。  
+- 在从 IDE 外部的预配置中部署应用程序。  
   
--   自动使用预设的生成项目的生成设置，或调试配置。  
+- 自动使用预设的生成项目的生成设置，或调试配置。  
   
--   在 IDE 之外，在特定配置中，IDE 加载中的所有内容。 此外，您可以自定义在启动时 IDE。  
+- 在 IDE 之外，在特定配置中，IDE 加载中的所有内容。 此外，您可以自定义在启动时 IDE。  
   
 ## <a name="guidelines-for-switches"></a>开关的准则  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 文档介绍了用户级 devenv 命令行开关。 有关详细信息，请参阅[Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)。 Devenv 还支持用于 VSPackage 开发、 部署和调试的其他命令行开关。  

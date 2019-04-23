@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58933373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085075"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>“编辑并继续”错误和警告 (C#)
 已对 Visual C#“编译并继续”中不允许的代码段进行了编辑。  
@@ -79,11 +79,11 @@ ms.locfileid: "58933373"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
-1.  在 **“调试”** 菜单上，选择 **“撤消”** 可撤消更改。  
+1. 在 **“调试”** 菜单上，选择 **“撤消”** 可撤消更改。  
   
      或  
   
-2.  停止调试会话，进行编辑并启动新的调试会话。  
+2. 停止调试会话，进行编辑并启动新的调试会话。  
   
 ## <a name="see-also"></a>请参阅  
  [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

@@ -23,40 +23,40 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d885cdc3d4321737541cd178d546c37e71ce42b7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ecc36ae8ce0ccbe75cddb94ea69d953cc6307b0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050954"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：使用“编辑并继续”在中断模式下应用编辑 (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：应用编辑在中断模式下使用编辑并继续 (Visual Basic)
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。
 
 有关在调试时使用“编辑并继续”的限制，请参阅[受支持的代码更改（C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
 ### <a name="to-edit-code-in-break-mode"></a>在中断模式下编辑代码
 
-1.  执行下列操作之一进入中断模式：
+1. 执行下列操作之一进入中断模式：
 
-    -   在代码中设置断点，从“调试”菜单选择“开始调试”，然后等待应用程序命中断点。
-
-         或
-
-    -   开始调试，然后从“调试”菜单中选择“全部中断”。
+    - 在代码中设置断点，从“调试”菜单选择“开始调试”，然后等待应用程序命中断点。
 
          或
 
-    -   异常发生时，选择**启用编辑**上**异常助手**。
+    - 开始调试，然后从“调试”菜单中选择“全部中断”。
 
-2.  进行任何所需和受支持的代码更改。
+         或
+
+    - 异常发生时，选择**启用编辑**上**异常助手**。
+
+2. 进行任何所需和受支持的代码更改。
 
      有关详细信息，请参阅[受支持的代码更改（C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
     > [!NOTE]
     >  如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。
 
-3.  在 “调试” 菜单上，单击 “继续” 继续执行。
+3. 在 “调试” 菜单上，单击 “继续” 继续执行。
 
      现在将继续执行你的代码，并且已应用的编辑将并入项目中。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052319"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>如何：在 XSLT 中使用断点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ ms.locfileid: "58933537"
   
 #### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>在样式表中设置断点  
   
-1.  在“XML 编辑器”中打开样式表。  
+1. 在“XML 编辑器”中打开样式表。  
   
-2.  将光标置于断点位置处，右键单击，指向**断点**，然后单击**插入断点**。  
+2. 将光标置于断点位置处，右键单击，指向**断点**，然后单击**插入断点**。  
   
-3.  单击浏览浏览按钮 (**...**) 上**输入**字段的文档属性窗口。  
+3. 单击浏览浏览按钮 (**...**) 上**输入**字段的文档属性窗口。  
   
-4.  找到 XML 源文档，并单击**打开**。  
+4. 找到 XML 源文档，并单击**打开**。  
   
      此时将设置用于 XSLT 转换的源文档文件。  
   
-5.  单击**调试 XSL** XML 编辑器工具栏上的按钮。  
+5. 单击**调试 XSL** XML 编辑器工具栏上的按钮。  
   
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>在 XML 源文档中设置断点  
  在 XML 源文档的元素、属性、命名空间节点、注释、处理指令和文本节点上都可以设置断点。 无法在文档节点上或在继承自父元素的命名空间节点设置断点。  
   
 #### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>在 XML 源文档中设置断点  
   
-1.  在 XML 编辑器中打开 XML 文档。  
+1. 在 XML 编辑器中打开 XML 文档。  
   
-2.  将光标置于断点位置处，右键单击，指向**断点**，然后单击**插入断点**。  
+2. 将光标置于断点位置处，右键单击，指向**断点**，然后单击**插入断点**。  
   
-3.  单击浏览浏览按钮 (**...**) 上**样式表**字段的文档属性窗口。  
+3. 单击浏览浏览按钮 (**...**) 上**样式表**字段的文档属性窗口。  
   
-4.  找到 XML 源文档，并单击**打开**。  
+4. 找到 XML 源文档，并单击**打开**。  
   
      此时将设置用于 XSLT 转换的源文档文件。  
   
-5.  单击**调试 XSL** XML 编辑器工具栏上的按钮。  
+5. 单击**调试 XSL** XML 编辑器工具栏上的按钮。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

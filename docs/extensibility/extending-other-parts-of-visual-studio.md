@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080912"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>扩展 Visual Studio 的其他部分
 
@@ -29,9 +29,9 @@ Visual Studio 扩展性的基本构建基块为 Vspackage。  了解如何添加
 
 了解如何将新控件和其他项添加到工具箱以及如何使用工具箱功能：
 
--   [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)
+- [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [创建 Windows 窗体工具箱控件](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [创建 Windows 窗体工具箱控件](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>扩展状态栏
 

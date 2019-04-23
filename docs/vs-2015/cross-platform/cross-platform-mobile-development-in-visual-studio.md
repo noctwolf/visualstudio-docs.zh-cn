@@ -8,16 +8,15 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2b5495e4548ed5a9303d70bd949249ac9d98ce77
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114309"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 可使用 Visual Studio 生成适用于 Android、iOS 和 Windows 设备的应用。  设计应用时，可使用 Visual Studio 中的工具轻松添加连接的服务（如 Office 365、Azure App Service 和 Application Insights）。
 
@@ -27,19 +26,19 @@ ms.locfileid: "56843821"
 
  **本文内容：**
 
--   [构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)](#NET)
+- [构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)](#NET)
 
-    -   [通过单个基本代码面向 Android、iOS 和 Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+    - [通过单个基本代码面向 Android、iOS 和 Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    -   [面向 Windows 10 设备](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+    - [面向 Windows 10 设备](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
--   [构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)](#HTML)
+- [构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)](#HTML)
 
--   [构建面向 Android 和 Windows 的应用 (C++)](#CPP)
+- [构建面向 Android 和 Windows 的应用 (C++)](#CPP)
 
--   [使用 Visual Studio Tools for Unity 构建面向 Android、iOS 和 Windows 的跨平台游戏](#Unity)
+- [使用 Visual Studio Tools for Unity 构建面向 Android、iOS 和 Windows 的跨平台游戏](#Unity)
 
-##  <a name="NET"></a>构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)
+## <a name="NET"></a>构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)
  ![设备](../cross-platform/media/homedevices.png "家庭设备")
 
  借助 Xamarin，可在同一解决方案中面向 Android、iOS 和 Windows，进而共享代码甚至 UI。
@@ -54,7 +53,7 @@ ms.locfileid: "56843821"
 |[了解 Swift 与 C# 之间的相似之处](https://aka.ms/scposter) (download.microsoft.com)|
 |[了解适用于 Android 的 Visual Studio 仿真程序](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
-###  <a name="AndroidHTML"></a>通过单个基本代码面向 Android、iOS 和 Windows
+### <a name="AndroidHTML"></a>通过单个基本代码面向 Android、iOS 和 Windows
  可使用 C# 或 F# 构建面向 Android、iOS 和 Windows 的本机应用（目前不支持 Visual Basic）。  若要开始，请安装 Visual Studio 2015，再在安装程序中选择“自定义”选项，然后勾选“跨平台移动开发”>“C#/.NET (Xamarin)”下的框。 还可从 [Xamarin 安装程序](https://www.xamarin.com/download)开始，安装 Xamarin for Visual Studio 2013 时必须使用该程序。
 
  如果已安装 Visual Studio 2015，请通过“控制面板”>“程序和功能”运行安装程序，然后为 Xamarin 选择“自定义”选项（同上）。
@@ -68,7 +67,7 @@ ms.locfileid: "56843821"
 #### <a name="design-one-set-of-pages-that-render-across-all-devices-by-using-xamarinforms"></a>使用 Xamarin.Forms 设计一组在所有设备中呈现的页面
  根据应用设计的复杂性，可以考虑使用项目模板“移动应用”  组中的 **Xamarin.Forms** 模板生成应用。 Xamarin.Forms 是一个 UI 工具包，可用于创建在 Android、iOS 和 Windows 之间共享的单一界面。  编译 Xamarin.Forms 解决方案时，会分别获得 1 个 Android 应用、iOS 应用和 Windows 应用。 有关详细信息，请参阅[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)。
 
-####  <a name="ShareHTML"></a>在 Android、iOS 和 Windows 应用间共享代码
+#### <a name="ShareHTML"></a>在 Android、iOS 和 Windows 应用间共享代码
  如果不使用 Xamarin.Forms 并选择为每个平台单独设计，可在平台项目（Android、 iOS 和 Windows）之间共享大多数的非 UI 代码。 这包括所有的业务逻辑、云集成、数据库访问和其他所有面向 .NET 框架的代码。 唯一不能共享的代码是面向特定平台的代码。
 
  ![在 Windows、iOS 和 Android UI 之间共享代码](../cross-platform/media/sharecode.png "共享代码")
@@ -79,7 +78,7 @@ ms.locfileid: "56843821"
 |--------------------|
 |选择是否通过使用共享项目、可移植类库项目或同时使用这两种项目来共享你的代码。<br /><br /> [跨平台共享代码](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) （.NET Framework 博客）<br /><br /> [共享代码选项](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [使用 .NET Framework 的代码共享选项](http://msdn.microsoft.com/library/dn720832.aspx) （MSDN 库）|
 
-###  <a name="WindowsHTML"></a>面向 Windows 10 设备
+### <a name="WindowsHTML"></a>面向 Windows 10 设备
  ![Windows 设备](../cross-platform/media/windowsdevices.png "Windows 设备")
 
  若想创建面向全部 Windows 10 设备的单个应用，请创建通用 Windows 应用。 你将使用单个项目来设计应用，并且无论使用何种设备进行查看，页面都将正确呈现。
@@ -95,7 +94,7 @@ ms.locfileid: "56843821"
 |[开发通用 Windows 平台 (UWP) 的应用](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[将应用迁移到通用 Windows 平台 (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
-##  <a name="HTML"></a>构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)
+## <a name="HTML"></a>构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)
  ![设备](../cross-platform/media/homedevices.png "家庭设备")
 
  如果你是一名 Web 开发者且熟悉 HTML 和 JavaScript，则可通过使用 Visual Studio Tools for Apache Cordova 面向 Windows、Android 和 iOS。 这些应用可以针对全部三个平台，还可以使用你最熟悉的技能和进程来生成。
@@ -120,7 +119,7 @@ ms.locfileid: "56843821"
 |[Visual Studio Tools for Apache Cordova 入门](http://taco.visualstudio.com/docs/get-started-vs-tools-apache-cordova/) (taco.visualstudio.com)|
 |[了解适用于 Android 的 Visual Studio 仿真程序](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
-##  <a name="CPP"></a>构建面向 Android 和 Windows 的应用 (C++)
+## <a name="CPP"></a>构建面向 Android 和 Windows 的应用 (C++)
  ![使用 C++ 构建面向 Android、iOS 和 Windows 的应用](../cross-platform/media/cross-plat-cpp-intro-image.png "Cross_Plat_CPP_Intro_Image")
 
  首先，安装 Visual Studio 2015 和适用于跨平台移动开发的 Visual C++ 工具。 随后即可生成面向 Android 的本机活动应用程序或面向 Windows 的应用。 面向 iOS 的 C++ 模板尚不可用。 必要时可在同一解决方案中面向 Android 和 Windows，然后使用跨平台静态（或动态）共享库在它们之间共享代码。
@@ -152,7 +151,7 @@ ms.locfileid: "56843821"
 |[C++ 的跨平台移动开发示例](https://msdn.microsoft.com/library/dn707596.aspx)（MSDN 库）|
 |[C++ 的其他跨平台移动开发示例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
-##  <a name="Unity"></a>使用 Visual Studio Tools for Unity 构建面向 Android、iOS 和 Windows 的跨平台游戏
+## <a name="Unity"></a>使用 Visual Studio Tools for Unity 构建面向 Android、iOS 和 Windows 的跨平台游戏
  Visual Studio Tools for Unity 是一款免费的 Visual Studio 扩展，用于将 Visual Studio 强大的代码编辑工具、生产力工具和调试工具与 *Unity* 进行集成。Unity 是一款热门的跨平台游戏/图形引擎和开发环境，针对面向 Windows、iOS、Android 和其他平台（如 Web）的沉浸式应用。
 
  ![VSTU 开发环境](../cross-platform/media/vstu-overview.png "VSTU_Overview")

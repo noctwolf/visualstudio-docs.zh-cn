@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0faac79e99b425eadd4e43c88b0a04dba670731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044259"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管的代码扩展附加到文档
   可以将自定义程序集附加到现有 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 文档或工作簿可以是支持的 Microsoft Office 项目和 Visual Studio 中的开发工具的任何文件格式。 有关详细信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。
@@ -34,21 +34,21 @@ ms.locfileid: "56646768"
 
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>若要将托管的代码扩展附加到文档
 
-1.  在项目中，不需要 Microsoft Office，如控制台应用程序或 Windows 窗体项目，添加对的引用*Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*和*Microsoft.VisualStudio.Tools.Applications.Runtime.dll*程序集。
+1. 在项目中，不需要 Microsoft Office，如控制台应用程序或 Windows 窗体项目，添加对的引用*Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*和*Microsoft.VisualStudio.Tools.Applications.Runtime.dll*程序集。
 
-2.  添加以下**导入**或**使用**到你的代码文件顶部的语句。
+2. 添加以下**导入**或**使用**到你的代码文件顶部的语句。
 
      [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
      [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
 
-3.  调用静态<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。
+3. 调用静态<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。
 
      下面的代码示例使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>重载。 此重载需要使用文档的完整路径和一个<xref:System.Uri>，它指定你想要附加到文档的自定义项的部署清单的位置。 此示例假定的 Word 文档名为**WordDocument1.docx**是在桌面上，和部署清单位于名为的文件夹中的**发布**这也是在桌面上。
 
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
 
-4.  生成项目并想要附加自定义项在计算机上运行应用程序。 计算机必须具有 Visual Studio 2010 Tools for Office 运行时安装。
+4. 生成项目并想要附加自定义项在计算机上运行应用程序。 计算机必须具有 Visual Studio 2010 Tools for Office 运行时安装。
 
 ## <a name="see-also"></a>请参阅
 - [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

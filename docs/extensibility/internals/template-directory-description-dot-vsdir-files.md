@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050357"
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (.Vsdir) 文件
 模板目录说明文件 (.vsdir) 是使集成的开发环境 (IDE) 以显示文件夹、 向导.vsz 文件和都与你的项目对话框中的模板文件的文本文件。 内容包括每个文件或文件夹的一条记录。 引用位置中的所有.vsdir 文件进行都合并，尽管只有一个.vsdir 文件通常用于描述多个文件夹、 向导、 或模板文件。
@@ -36,7 +36,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ## <a name="fields"></a>字段
  下表列出了为每个记录指定的字段。
 
-
 | 字段 | 描述 |
 | - | - |
 | 相对路径名称 (RelPathName) | 文件夹、 模板或.vsz 文件，如 HeaderFile.h 或 MyWizard.vsz 的名称。 此字段还可以用来表示的文件夹的名称。 |
@@ -51,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  当你创建的向导文件时，还应考虑以下问题。
 
--   没有有意义的数据的任何非必填的字段应作为占位符包含 0 （零）。
+- 没有有意义的数据的任何非必填的字段应作为占位符包含 0 （零）。
 
--   如果未不提供任何本地化的名称，向导文件中使用的相对路径名称。
+- 如果未不提供任何本地化的名称，向导文件中使用的相对路径名称。
 
--   DLLPath 覆盖图标位置的 clsidPackage。
+- DLLPath 覆盖图标位置的 clsidPackage。
 
--   如果未定义图标，IDE 会替换该扩展的文件的默认图标。
+- 如果未定义图标，IDE 会替换该扩展的文件的默认图标。
 
--   如果未不提供任何建议的基名称，则使用项目。
+- 如果未不提供任何建议的基名称，则使用项目。
 
--   如果您删除.vsz 文件、 文件夹或模板文件，还必须从.vsdir 文件删除其关联的记录。
+- 如果您删除.vsz 文件、 文件夹或模板文件，还必须从.vsdir 文件删除其关联的记录。
 
 ## <a name="see-also"></a>请参阅
 - [向导](../../extensibility/internals/wizards.md)

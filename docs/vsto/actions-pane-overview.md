@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f6ca07ebf8489dd62d6cfbe232f2522ac0f448a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099736"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**附加到特定的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的任务窗格。 操作窗格中进行托管 Office 任务窗格，以及其他内置任务窗格，如**XML 源**在 Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -61,17 +61,17 @@ ms.locfileid: "56608807"
 
  若要隐藏解决方案中的任务窗格，可使用以下几个选项：
 
--   对于 Word，设置<xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A>的属性<xref:Microsoft.Office.Interop.Word.TaskPane>对象，表示为文档操作任务窗格**false**。 计划从项目的 `ThisDocument` 类中运行下列代码示例。
+- 对于 Word，设置<xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A>的属性<xref:Microsoft.Office.Interop.Word.TaskPane>对象，表示为文档操作任务窗格**false**。 计划从项目的 `ThisDocument` 类中运行下列代码示例。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
--   对于 Excel，设置<xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A>的属性<xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>对象传递给**false**。 计划从项目的 `ThisWorkbook` 类中运行下列代码示例。
+- 对于 Excel，设置<xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A>的属性<xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>对象传递给**false**。 计划从项目的 `ThisWorkbook` 类中运行下列代码示例。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
--   对于 Word 或 Excel，或者可以设置<xref:Microsoft.Office.Core.CommandBar.Visible%2A>属性表示为任务窗格的命令栏**false**。 计划从项目的 `ThisDocument` 或 `ThisWorkbook` 类中运行下列代码示例。
+- 对于 Word 或 Excel，或者可以设置<xref:Microsoft.Office.Core.CommandBar.Visible%2A>属性表示为任务窗格的命令栏**false**。 计划从项目的 `ThisDocument` 或 `ThisWorkbook` 类中运行下列代码示例。
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
@@ -86,9 +86,9 @@ ms.locfileid: "56608807"
 
 ##### <a name="to-display-the-actions-pane-by-using-the-ui-of-word-or-excel"></a>通过使用 Word 或 Excel 的 UI 来显示操作窗格
 
-1.  在功能区中，单击**视图**选项卡。
+1. 在功能区中，单击**视图**选项卡。
 
-2.  在中**显示/隐藏**组中，单击**文档操作**切换按钮。
+2. 在中**显示/隐藏**组中，单击**文档操作**切换按钮。
 
 ## <a name="program-actions-pane-events"></a>程序操作窗格事件
  你可以将多个用户控件添加到操作窗格，然后编写代码，以便通过显示和隐藏用户控件对文档上的事件做出响应。 如果将 XML 架构元素映射到文档，则在每次插入点位于其中一个 XML 元素的内部时都可在操作窗格中显示某些用户控件。 有关详细信息，请参阅[如何：将架构映射到 Visual Studio 内部的 Word 文档](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md)和[如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)。
@@ -114,7 +114,7 @@ ms.locfileid: "56608807"
 |FromLeft|从操作窗格左侧堆叠。|
 |FromRight|从操作窗格右侧堆叠。|
 |FromTop|从操作窗格顶部堆叠。|
-|无|未定义堆叠顺序；由开发人员控制顺序。|
+|None|未定义堆叠顺序；由开发人员控制顺序。|
 
  下列代码将设置 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性，以从操作窗格顶部堆叠用户控件。
 

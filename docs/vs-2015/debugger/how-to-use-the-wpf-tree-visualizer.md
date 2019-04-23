@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108174"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 树可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,35 +33,35 @@ ms.locfileid: "58936716"
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>打开 WPF 树可视化工具  
   
-1.  在数据提示、“监视”窗口、“自动”窗口或“局部变量”窗口中，在 WPF 对象名称旁单击放大镜图标旁的箭头。  
+1. 在数据提示、“监视”窗口、“自动”窗口或“局部变量”窗口中，在 WPF 对象名称旁单击放大镜图标旁的箭头。  
   
      将会显示可视化工具列表。  
   
-2.  单击“WPF 树可视化工具”。  
+2. 单击“WPF 树可视化工具”。  
   
 ### <a name="to-search-the-visual-tree"></a>搜索可视化树  
   
--   在“可视化树”窗格中，在“搜索”框中键入要搜索的字符串。  
+- 在“可视化树”窗格中，在“搜索”框中键入要搜索的字符串。  
   
      WPF 树可视化工具将立即在可视化树中查找与您键入的字符串匹配的第一个对象。 键入更多字符可找到更精确的匹配项。  
   
-    -   若要转到可视化树中的下一个匹配项，请单击“下一个”。  
+    - 若要转到可视化树中的下一个匹配项，请单击“下一个”。  
   
-    -   若要返回上一个匹配项，请单击“上一个”。  
+    - 若要返回上一个匹配项，请单击“上一个”。  
   
-    -   若要清除搜索条件，请单击“清除”。  
+    - 若要清除搜索条件，请单击“清除”。  
   
 ### <a name="to-search-the-properties-list"></a>搜索属性列表  
   
--   在中**的属性**_名称_**:**_类型_窗格中，键入你想要在中搜索的字符串**筛选**框。  
+- 在中**的属性**_名称_**:**_类型_窗格中，键入你想要在中搜索的字符串**筛选**框。  
   
      WPF 树可视化工具将立即查找与你键入的字符串匹配的属性；现在，列表中仅显示与键入的字符串匹配的那些属性。 键入更多字符可找到更精确的匹配项。  
   
-    -   若要清除搜索条件，请单击“清除”。  
+    - 若要清除搜索条件，请单击“清除”。  
   
 ### <a name="to-close-the-visualizer"></a>关闭可视化工具  
   
--   单击对话框右上角的“关闭”图标。  
+- 单击对话框右上角的“关闭”图标。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：使用可视化工具](../misc/how-to-use-a-visualizer.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108303"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>如何：创建基本三维模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54760766"
   
  本文档演示了这些活动：  
   
--   将对象添加到场景中  
+- 将对象添加到场景中  
   
--   选择面和边缘  
+- 选择面和边缘  
   
--   转换选定内容  
+- 转换选定内容  
   
--   使用“细分面”和“延伸面”工具  
+- 使用“细分面”和“延伸面”工具  
   
--   使用“三角测量”命令  
+- 使用“三角测量”命令  
   
 ## <a name="creating-a-basic-3-d-model"></a>创建基本三维模型  
  可使用模型编辑器创建和修改游戏或应用的三维模型和场景。 下列步骤说明如何使用模型编辑器创建房子的简化三维模型。 简化模型可用作仍在创建的最终艺术资产的替代物、用作冲突检测的网格或用作在所表示的对象太远而无法从更详细的呈现中获益时要使用的详细程度低的模型。  

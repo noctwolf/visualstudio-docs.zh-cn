@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057091"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "57567210"
   
  可以对以下类型的组件/服务设置引用：  
   
--   Windows 应用商店应用的引用  
+- Windows 应用商店应用的引用  
   
--   .NET framework 类库或程序集  
+- .NET framework 类库或程序集  
   
--   COM 组件  
+- COM 组件  
   
--   同一解决方案中项目的其他程序集或类库  
+- 同一解决方案中项目的其他程序集或类库  
   
--   XML Web services  
+- XML Web services  
   
 ## <a name="windows-store-app-references"></a>Windows 应用商店应用的引用  
   
@@ -63,9 +63,9 @@ ms.locfileid: "57567210"
   
  如果确定你的应用所引用的扩展 SDK 不受支持，则需执行以下步骤：  
   
-1.  查看导致错误的项目的名称。 项目所面向的平台记录在项目名称旁的括号中。 例如，**MyProjectName (Windows 8.1)** 表示项目 **MyProjectName** 面向平台版本 [!INCLUDE[win81](../includes/win81-md.md)]。  
+1. 查看导致错误的项目的名称。 项目所面向的平台记录在项目名称旁的括号中。 例如，**MyProjectName (Windows 8.1)** 表示项目 **MyProjectName** 面向平台版本 [!INCLUDE[win81](../includes/win81-md.md)]。  
   
-2.  转到拥有不受支持的扩展 SDK 的供应商站点，安装具有与你的项目所面向的平台版本兼容的依赖项的扩展 SDK 版本。  
+2. 转到拥有不受支持的扩展 SDK 的供应商站点，安装具有与你的项目所面向的平台版本兼容的依赖项的扩展 SDK 版本。  
   
     > [!NOTE]
     >  找出扩展 SDK 与其他扩展 SDK 是否具有依赖关系的一种方法是：重新启动 Visual Studio，创建一个新的 C# Windows 应用商店项目，右键单击该项目并选择 **“添加引用”**，依次转到 **“Windows”** 选项卡和 **“扩展”** 子选项卡，然后选择该扩展 SDK 并查看 **“引用管理器”** 中的右窗格。 如果具有依赖关系，则将在该位置列出依赖关系。  
@@ -73,20 +73,20 @@ ms.locfileid: "57567210"
     > [!IMPORTANT]
     >  如果你的项目面向 Windows 10，并且上一步中安装的扩展 SDK 在 Microsoft Visual C 运行时包上具有依赖关系，则与 Windows 10 兼容的 Microsoft Visual C++ 运行时包的版本为 v14.0，并与 Visual Studio 2015 一起安装。  
   
-3.  如果上一步中安装的扩展 SDK 在其他扩展 SDK 上具有依赖关系，请转到拥有依赖关系的供应商站点，并安装与你的项目所面向的平台版本相兼容的版本的依赖项。  
+3. 如果上一步中安装的扩展 SDK 在其他扩展 SDK 上具有依赖关系，请转到拥有依赖关系的供应商站点，并安装与你的项目所面向的平台版本相兼容的版本的依赖项。  
   
-4.  重启 Visual Studio 并打开你的应用。  
+4. 重启 Visual Studio 并打开你的应用。  
   
-5.  右键单击项目中导致错误的 **“引用”** 节点，然后选择 **“添加引用”**  
+5. 右键单击项目中导致错误的 **“引用”** 节点，然后选择 **“添加引用”**  
   
-6.  单击 **“Windows”** 选项卡，转到 **“扩展”** 子选项卡，然后取消勾选旧扩展 SDK 的复选框，并勾选新扩展 SDK 的复选框。 单击 **“确定”**。  
+6. 单击 **“Windows”** 选项卡，转到 **“扩展”** 子选项卡，然后取消勾选旧扩展 SDK 的复选框，并勾选新扩展 SDK 的复选框。 单击 **“确定”**。  
   
 ## <a name="adding-a-reference-at-design-time"></a>在设计时添加引用  
  当你对项目中的程序集进行引用时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 在以下位置搜索程序集：  
   
--   当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）  
+- 当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）  
   
--   同一解决方案中的其他项目目录。 （可以在 **“项目”** 选项卡上找到这些程序集。）  
+- 同一解决方案中的其他项目目录。 （可以在 **“项目”** 选项卡上找到这些程序集。）  
   
 > [!NOTE]
 >  所有项目都包含对 mscorlib 的隐式引用。 Visual Basic 项目包含对 `Microsoft.VisualBasic`的隐式引用。  

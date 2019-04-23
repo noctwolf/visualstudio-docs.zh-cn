@@ -14,19 +14,19 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c6e536047aaebb9bd3a06e38574330937817748
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39f2720efbcd8defffb9d0c77047a50e57939e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082342"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>数组长度必须赋值为有限正数
 设置时**长度**属性的现有**数组**对象，指定不是正数值或零的数组长度。 此错误发生时将值赋给**长度**的属性`Array`对象，它为负或不是数字 (`NaN`)。 请注意，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]自动将小数数字转换为整数。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   将一个正整数分配给 length 属性。 没有任何大小的数组，最大整数值 （大约 40 亿个） 以外的值的上限。 下面的示例演示设置的正确方式**长度**的属性**数组**对象。  
+- 将一个正整数分配给 length 属性。 没有任何大小的数组，最大整数值 （大约 40 亿个） 以外的值的上限。 下面的示例演示设置的正确方式**长度**的属性**数组**对象。  
   
     ```JavaScript  
     var my_array = new Array();  

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a63234a820c4f3cffae65342bad0b7fd439edfff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ba6262ef3174428dc14c5f747c4346b5f04e35ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077623"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "54769948"
 ## <a name="data-members"></a>数据成员  
  使用两个私有数据成员将此类与 L2DBForm.xaml 中使用的窗口资源相关联。  
   
--   命名空间变量 `myBooks` 初始化为 `"http://www.mybooks.com"`。  
+- 命名空间变量 `myBooks` 初始化为 `"http://www.mybooks.com"`。  
   
--   用下面的行将构造函数中的成员 `bookList` 初始化为 L2DBForm.xaml 中的 CDATA 字符串：  
+- 用下面的行将构造函数中的成员 `bookList` 初始化为 L2DBForm.xaml 中的 CDATA 字符串：  
   
     ```  
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;  
@@ -35,11 +35,11 @@ ms.locfileid: "54769948"
 ## <a name="onaddbook-event-handler"></a>OnAddBook 事件处理程序  
  此方法包含下面三个语句：  
   
--   第一个条件语句用于输入验证。  
+- 第一个条件语句用于输入验证。  
   
--   第二个语句根据用户在“添加新书籍”用户界面 (UI) 区域中输入的字符串值新建 <xref:System.Xml.Linq.XElement>。  
+- 第二个语句根据用户在“添加新书籍”用户界面 (UI) 区域中输入的字符串值新建 <xref:System.Xml.Linq.XElement>。  
   
--   最后一个语句将此新书籍元素添加到 L2DBForm.xaml 中的数据提供程序。 因此，动态数据绑定将用此新项自动更新 UI；不需要用户提供额外的代码。  
+- 最后一个语句将此新书籍元素添加到 L2DBForm.xaml 中的数据提供程序。 因此，动态数据绑定将用此新项自动更新 UI；不需要用户提供额外的代码。  
   
 ## <a name="onremove-event-handler"></a>OnRemove 事件处理程序  
  由于两个原因，`OnRemove` 处理程序比 `OnAddBook` 处理程序更复杂。 首先，由于原始 XML 包含保留的空白，因此还必须与书籍条目一起移除匹配的换行符。 其次，出于方便，对所选项进行的选择会重置为列表中以前的选择。  
@@ -62,7 +62,7 @@ ms.locfileid: "54769948"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明​​  
+### <a name="description"></a>描述  
   
 ### <a name="code"></a>代码  
   

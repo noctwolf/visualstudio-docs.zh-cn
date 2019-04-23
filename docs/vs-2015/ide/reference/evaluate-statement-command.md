@@ -14,17 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54f581b710777cf4548115e76580be552e4e7520
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f774458eb63d9e56b99a635e7b32309375a903ef
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800690"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669232"
 ---
 # <a name="evaluate-statement-command"></a>“计算语句”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 计算并显示给定的语句。  
   
 ## <a name="syntax"></a>语法  

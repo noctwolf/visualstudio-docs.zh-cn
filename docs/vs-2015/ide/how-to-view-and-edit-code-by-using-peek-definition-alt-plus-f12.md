@@ -9,14 +9,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24db36d6bb3a431d5ee3848eb8a6a794980f919a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055726"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定义查看和编辑代码 (Alt+F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：查看和编辑代码使用查看定义 (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可使用“查看定义”命令来查看和编辑代码，而无需离开正在编写的代码。 “查看定义”和“转到定义”显示相同的信息，但“查看定义”在弹出窗口中显示，而“转到定义”在单独的代码窗口中显示代码。 “转到定义”将导致上下文（即活动的代码窗口、当前行和光标位置）切换到定义代码窗口。 通过使用“查看定义”，无需离开原始代码文件就能查看和编辑定义，还能在定义文件内部到处移动。  
@@ -30,7 +30,7 @@ ms.locfileid: "54777298"
   
 #### <a name="to-open-a-peek-definition-window"></a>打开“查看定义”窗口  
   
-1.  可通过打开要浏览的方法的快捷菜单来查找“查看定义”。 （键盘：Alt+F12）  
+1. 可通过打开要浏览的方法的快捷菜单来查找“查看定义”。 （键盘：Alt+F12)  
   
      本插图显示了名为 `Print()` 的方法的“查看定义”窗口：  
   
@@ -38,33 +38,33 @@ ms.locfileid: "54777298"
   
      定义窗口显示在原始文件的 `printer.Print(“Hello World!”)` 行的下方。 该窗口不会隐藏原始文件中的任何代码。 跟在 `printer.Print(“Hello World!”)` 调用后的行显示在定义窗口下。  
   
-2.  你可将光标移动到代码定义窗口中的不同位置。 你仍可在定义窗口上方或下方的原始代码窗口中移动。  
+2. 你可将光标移动到代码定义窗口中的不同位置。 你仍可在定义窗口上方或下方的原始代码窗口中移动。  
   
-3.  可从定义窗口中复制字符串，并将其粘贴在原始代码中。 也可将字符串从定义窗口拖放到原始代码中，而不从定义窗口中删除它。  
+3. 可从定义窗口中复制字符串，并将其粘贴在原始代码中。 也可将字符串从定义窗口拖放到原始代码中，而不从定义窗口中删除它。  
   
-4.  可以按 Esc 键或选择定义窗口选项卡上的“关闭”按钮来关闭定义窗口。  
+4. 可以按 Esc 键或选择定义窗口选项卡上的“关闭”按钮来关闭定义窗口。  
   
 #### <a name="to-open-a-peek-definition-window-from-within-a-peek-definition-window"></a>从“查看定义”窗口内部打开另一个“查看定义”窗口  
   
--   如果“查看定义”窗口已打开，则可以对该窗口中的代码再次调用“查看定义”。 此时将打开另一个定义窗口。 一组痕迹点将显示在定义窗口选项卡旁边，可用于在定义窗口之间导航。 每个点上的工具提示显示该点表示的定义文件的文件名和路径。  
+- 如果“查看定义”窗口已打开，则可以对该窗口中的代码再次调用“查看定义”。 此时将打开另一个定义窗口。 一组痕迹点将显示在定义窗口选项卡旁边，可用于在定义窗口之间导航。 每个点上的工具提示显示该点表示的定义文件的文件名和路径。  
   
      ![“查看”窗口中的“查看”窗口](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>使用“查看定义”时具有多个结果  
   
--   如果对具有多个定义的代码（例如，分部类）使用“查看定义”，则代码定义视图的右侧将显示结果列表。 你可选择列表中的任意结果来显示其定义。  
+- 如果对具有多个定义的代码（例如，分部类）使用“查看定义”，则代码定义视图的右侧将显示结果列表。 你可选择列表中的任意结果来显示其定义。  
   
      ![多个结果的查看窗口](../ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>在“查看定义”窗口中编辑  
   
--   开始在“查看定义”窗口中编辑时，所修改的文件将在代码编辑器中作为单独的选项卡自动打开，并显示已进行的更改。 可在“查看定义”窗口中继续更改、撤消更改和保存更改，该选项卡将继续显示这些更改。 即使你关闭窗口时没有保存更改，也可以在窗口中上次离开的位置继续更改、撤消更改和保存更多更改。  
+- 开始在“查看定义”窗口中编辑时，所修改的文件将在代码编辑器中作为单独的选项卡自动打开，并显示已进行的更改。 可在“查看定义”窗口中继续更改、撤消更改和保存更改，该选项卡将继续显示这些更改。 即使你关闭窗口时没有保存更改，也可以在窗口中上次离开的位置继续更改、撤消更改和保存更多更改。  
   
      ![在查看窗口内编辑](../ide/media/peekedit.png "PeekEdit")  
   
 #### <a name="to-use-keyboard-shortcuts-for-peek-definition"></a>使用“查看定义”的键盘快捷键  
   
--   可在“查看定义”窗口中使用下列键盘快捷方式：  
+- 可在“查看定义”窗口中使用下列键盘快捷方式：  
   
     |功能|键盘快捷键|  
     |-------------------|-----------------------|  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628879"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092859"
 ---
 # <a name="event-logging-for-office-solutions"></a>Office 解决方案的事件日志
   你可以使用 Windows 事件查看器来查看当你安装或卸载 Office 解决方案时，由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 捕捉到的异常消息。 你可使用事件记录器中的这些消息来解决安装和部署问题。
@@ -32,19 +32,19 @@ ms.locfileid: "56628879"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>若要阅读 Windows Server 2003 和 Windows XP 中的事件日志
 
-1.  在“控制面板”中，打开“管理工具” 。
+1. 在“控制面板”中，打开“管理工具” 。
 
-2.  启动“事件查看器” 。
+2. 启动“事件查看器” 。
 
-3.  在事件日志的列表中，选择“应用程序” 。
+3. 在事件日志的列表中，选择“应用程序” 。
 
-4.  在“视图”  菜单中，单击“筛选器” 。
+4. 在“视图”  菜单中，单击“筛选器” 。
 
-5.  在“事件源”  列表中，选择“VSTO 4.0” 。
+5. 在“事件源”  列表中，选择“VSTO 4.0” 。
 
-6.  对于安装事件，在“事件 ID”  框中，键入 **4096**。
+6. 对于安装事件，在“事件 ID”  框中，键入 **4096**。
 
-7.  单击“确定”  ，以查看已筛选的视图。
+7. 单击“确定”  ，以查看已筛选的视图。
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>若要读取 Windows 7、 Windows Vista 和 Windows Server 2008 中的事件日志
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628879"
 
 ### <a name="to-disable-the-event-log"></a>若要禁用事件日志
 
-1.  在“控制面板”中，打开“系统” 。
+1. 在“控制面板”中，打开“系统” 。
 
-2.  在 **“高级”** 选项卡上，单击 **“环境变量”**。
+2. 在 **“高级”** 选项卡上，单击 **“环境变量”**。
 
-3.  在“系统变量”  窗格中，单击“新建” 。
+3. 在“系统变量”  窗格中，单击“新建” 。
 
-4.  在“新建系统变量”  对话框中，在“变量名称”  框中键入 **VSTO_EVENTLOGDISABLED** 。
+4. 在“新建系统变量”  对话框中，在“变量名称”  框中键入 **VSTO_EVENTLOGDISABLED** 。
 
-5.  在“变量值”  框中，键入 **1**。
+5. 在“变量值”  框中，键入 **1**。
 
-6.  单击 **“确定”**。
+6. 单击 **“确定”**。
 
 ## <a name="see-also"></a>请参阅
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110853"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>演练：从现有的 SharePoint 网站导入项目
   本演练演示如何从现有的 SharePoint 网站到导入项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。
@@ -36,9 +36,9 @@ ms.locfileid: "56841732"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
 
--   Visual Studio。
+- Visual Studio。
 
 ## <a name="customize-a-sharepoint-site"></a>自定义 SharePoint 站点
  对于此示例中，将创建并自定义 SharePoint 子站点，通过向其添加一个新的站点列和通过创建另一个子网站供以后使用。 更高版本，将导出到.wsp 文件的第一个子网站，并通过使用.wsp 导入项目，然后导入第二个子站点的自定义站点列。
@@ -79,23 +79,23 @@ ms.locfileid: "56841732"
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>若要导出的现有 SharePoint 站点
 
-1.  在 SharePoint 站点中，选择**站点设置**上**站点操作**选项卡以显示站点设置页。
+1. 在 SharePoint 站点中，选择**站点设置**上**站点操作**选项卡以显示站点设置页。
 
-2.  在中**站点操作**部分的站点设置页中，选择**另存为模板站点**链接。
+2. 在中**站点操作**部分的站点设置页中，选择**另存为模板站点**链接。
 
-3.  在中**文件名**框中，输入**ExampleSite**，然后在**模板名称**框中，输入**示例站点**。
+3. 在中**文件名**框中，输入**ExampleSite**，然后在**模板名称**框中，输入**示例站点**。
 
-4.  此示例中，将保留**内容包括**复选框为空。
+4. 此示例中，将保留**内容包括**复选框为空。
 
      如果选中此框，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将所有列表和文档库和其内容保存到.wsp 文件。 虽然这是在某些情况下很有用，但它不是此示例所必需的。
 
-5.  该操作成功完成后，选择**解决方案库**链接可查看.wsp 文件。
+5. 该操作成功完成后，选择**解决方案库**链接可查看.wsp 文件。
 
      若要查看更高版本中打开的解决方案库页**站点操作**菜单中，选择**站点设置**，选择**转到顶级站点设置**中的链接**站点集合管理**部分，然后再选择**解决方案**中的链接**库**部分。
 
-6.  在解决方案库中，选择**ExampleSite**链接。
+6. 在解决方案库中，选择**ExampleSite**链接。
 
-7.  在中**文件下载**对话框框中，选择**保存**按钮以保存您的本地系统上的文件默认情况下，在 Downloads 文件夹中。
+7. 在中**文件下载**对话框框中，选择**保存**按钮以保存您的本地系统上的文件默认情况下，在 Downloads 文件夹中。
 
 ## <a name="import-the-wsp-file"></a>导入.wsp 文件
  现在，你已有 *.wsp*文件，其中包含你想要重复使用 （自定义站点列测试列），导入的项 *.wsp*文件来访问它。
@@ -130,13 +130,13 @@ ms.locfileid: "56841732"
 
 ### <a name="to-deploy-the-project"></a>若要将项目部署
 
-1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，选择**F5**键部署并运行 *.wsp*导入项目。
+1. 在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，选择**F5**键部署并运行 *.wsp*导入项目。
 
-2.  在 SharePoint 站点上打开**站点操作**菜单，然后选择**站点设置**以显示站点设置页。
+2. 在 SharePoint 站点上打开**站点操作**菜单，然后选择**站点设置**以显示站点设置页。
 
-3.  在中**库**部分中，选择**站点列**链接。
+3. 在中**库**部分中，选择**站点列**链接。
 
-4.  向下滚动到**自定义列**部分。
+4. 向下滚动到**自定义列**部分。
 
      请注意，从第一个 SharePoint 站点导入的自定义站点列将出现在列表中。
 

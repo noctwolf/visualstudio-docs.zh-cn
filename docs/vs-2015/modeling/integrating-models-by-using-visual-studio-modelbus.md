@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5b4b3c73dede1a25f9c104ff85534623691002e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041284"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ ms.locfileid: "59000752"
 
  有关其他信息和示例代码，请参阅：
 
--   [如何：添加拖放句柄](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：添加拖放句柄](../modeling/how-to-add-a-drag-and-drop-handler.md)
 
--   [Visual Studio 的建模 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
+- [Visual Studio 的建模 SDK](https://www.microsoft.com/download/details.aspx?id=48148)
 
-##  <a name="provide"></a> 提供对 DSL 的访问
+## <a name="provide"></a> 提供对 DSL 的访问
  在可以创建对模型或其元素的 ModelBus 引用之前，必须定义用于 DSL 的 ModelBusAdapter。 实现此目的的最简单方法是使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模型总线扩展，它可将命令添加到 DSL 设计器。
 
-###  <a name="expose"></a> 若要公开 DSL 定义向模型总线
+### <a name="expose"></a> 若要公开 DSL 定义向模型总线
 
 1. 除非已安装 Visual Studio 模型总线扩展，否则请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
@@ -80,32 +80,32 @@ ms.locfileid: "59000752"
 
    或者，如果要使用元素名称来标识元素而不是 GUID，则可重写生成的适配器的各个部分。 在适配器类中重写以下方法：
 
--   重写 `GetElementId` 以返回要使用的标识符。 在创建引用时将调用此方法。
+- 重写 `GetElementId` 以返回要使用的标识符。 在创建引用时将调用此方法。
 
--   重写 `ResolveElementReference` 以从模型总线引用中查找正确元素。
+- 重写 `ResolveElementReference` 以从模型总线引用中查找正确元素。
 
-##  <a name="editRef"></a> 从另一个 DSL 访问 DSL
+## <a name="editRef"></a> 从另一个 DSL 访问 DSL
  你可以将模型总线引用存储在 DSL 的域属性中，也可以编写使用它们的自定义代码。 还可以允许用户通过选取模型文件和其中的元素来创建模型总线引用。
 
  若要允许 DSL 使用对另一个 DSL 的引用，您应首先使它*使用者*模型总线引用。
 
 #### <a name="to-enable-a-dsl-to-consume-references-to-an-exposed-dsl"></a>允许 DSL 使用对公开的 DSL 的引用
 
-1.  在 DSL 定义关系图中，右键单击关系图的主要部分，然后单击**启用 Modelbus**。
+1. 在 DSL 定义关系图中，右键单击关系图的主要部分，然后单击**启用 Modelbus**。
 
-2.  在对话框中，选择**我想要启用此模型使用模型总线引用**。
+2. 在对话框中，选择**我想要启用此模型使用模型总线引用**。
 
-3.  在使用 DSL 的 DSL 项目中，将以下程序集添加到项目引用。 您将找到这些程序集 （.dll 文件） 中 ModelBusAdapter\bin\\* 公开的 DSL 的目录。
+3. 在使用 DSL 的 DSL 项目中，将以下程序集添加到项目引用。 您将找到这些程序集 （.dll 文件） 中 ModelBusAdapter\bin\\* 公开的 DSL 的目录。
 
-    -   公开的 DSL 程序集，例如**Fabrikam.FamilyTree.Dsl.dll**
+    - 公开的 DSL 程序集，例如**Fabrikam.FamilyTree.Dsl.dll**
 
-    -   公开的模型总线适配器程序集，例如**Fabrikam.FamilyTree.ModelBusAdapter.dll**
+    - 公开的模型总线适配器程序集，例如**Fabrikam.FamilyTree.ModelBusAdapter.dll**
 
-4.  将以下 .NET 程序集添加到使用 DSL 项目的项目引用。
+4. 将以下 .NET 程序集添加到使用 DSL 项目的项目引用。
 
-    1.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
+    1. **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
-    2.  **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
+    2. **Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.11.0.dll**
 
 #### <a name="to-store-a-model-bus-reference-in-a-domain-property"></a>将模型总线引用存储在域属性中
 
@@ -119,39 +119,39 @@ ms.locfileid: "59000752"
 
 #### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>允许用户在域属性中设置模型总线引用
 
-1.  右键单击域属性，然后单击**编辑 ModelBusReference 特定属性**。 这将打开一个对话框。 这是*模型总线选取器*。
+1. 右键单击域属性，然后单击**编辑 ModelBusReference 特定属性**。 这将打开一个对话框。 这是*模型总线选取器*。
 
-2.  选择适当**类型的 ModelBusReference**： 对模型或模型内的元素。
+2. 选择适当**类型的 ModelBusReference**： 对模型或模型内的元素。
 
-3.  在文件对话框筛选器字符串中，输入字符串（如 `Family Tree files |*.ftree`）。 替换公开的 DSL 的文件扩展名。
+3. 在文件对话框筛选器字符串中，输入字符串（如 `Family Tree files |*.ftree`）。 替换公开的 DSL 的文件扩展名。
 
-4.  如果选择引用模型中的元素，则可添加用户可选择的类型（例如 Company.FamilyTree.Person）的列表。
+4. 如果选择引用模型中的元素，则可添加用户可选择的类型（例如 Company.FamilyTree.Person）的列表。
 
-5.  单击**确定**，然后单击**转换所有模板**在解决方案资源管理器工具栏中。
+5. 单击**确定**，然后单击**转换所有模板**在解决方案资源管理器工具栏中。
 
     > [!WARNING]
     >  如果未选择有效的模型或实体，则“确定”按钮将不起作用，即使它可能显示为“已启用”也是如此。
 
-6.  如果指定了目标类型（如 Company.FamilyTree.Person）的列表，则必须将程序集引用添加到 DSL 项目，从而引用目标 DSL 的 DLL（例如 Company.FamilyTree.Dsl.dll）
+6. 如果指定了目标类型（如 Company.FamilyTree.Person）的列表，则必须将程序集引用添加到 DSL 项目，从而引用目标 DSL 的 DLL（例如 Company.FamilyTree.Dsl.dll）
 
 #### <a name="to-test-a-model-bus-reference"></a>测试模型总线引用
 
-1.  同时生成公开的 DSL 和使用的 DSL。
+1. 同时生成公开的 DSL 和使用的 DSL。
 
-2.  通过按 F5 或 CTRL+F5，在实验模式下运行一个 DSL。
+2. 通过按 F5 或 CTRL+F5，在实验模式下运行一个 DSL。
 
-3.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例的调试项目中，添加作为每个 DSL 的实例的文件。
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例的调试项目中，添加作为每个 DSL 的实例的文件。
 
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
 
-4.  在公开的 DSL 的实例中创建一些元素和链接，并将其保存。
+4. 在公开的 DSL 的实例中创建一些元素和链接，并将其保存。
 
-5.  打开使用的 DSL 的实例，并选择一个具有模型总线引用属性的模型元素。
+5. 打开使用的 DSL 的实例，并选择一个具有模型总线引用属性的模型元素。
 
-6.  在“属性”窗口中，双击模型总线引用属性。 这将打开选取器对话框。
+6. 在“属性”窗口中，双击模型总线引用属性。 这将打开选取器对话框。
 
-7.  单击**浏览**和选择公开的 DSL 的实例。
+7. 单击**浏览**和选择公开的 DSL 的实例。
 
      如果你指定了特定于元素类型的模型总线引用，选取器还将允许你选择模型中的项。
 
@@ -382,9 +382,9 @@ ModelBusReference elementReferenceRestored =
 
  反序列化 MBR 分为两个阶段：
 
--   `ModelBusReferencePropertySerializer` 是处理 MBR 标头的标准序列化程序。 它使用标准 DSL `SerializationContext` 属性包，该属性包使用键 `ReferenceContext` 存储在 `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 中。 具体而言，`SerializationContext` 应包含 `ModelBus` 的实例。
+- `ModelBusReferencePropertySerializer` 是处理 MBR 标头的标准序列化程序。 它使用标准 DSL `SerializationContext` 属性包，该属性包使用键 `ReferenceContext` 存储在 `ModelBusReferencePropertySerializer.ModelBusLoadContextKey` 中。 具体而言，`SerializationContext` 应包含 `ModelBus` 的实例。
 
--   ModelBus 适配器将处理 MBR 的特定于适配器的部分。 它可使用存储在 MBR 的 ReferenceContext 中的附加信息。 简单的基于文件的适配器保留根文件路径使用键`FilePathLoadContextKey`和`FilePathSaveContextKey`。
+- ModelBus 适配器将处理 MBR 的特定于适配器的部分。 它可使用存储在 MBR 的 ReferenceContext 中的附加信息。 简单的基于文件的适配器保留根文件路径使用键`FilePathLoadContextKey`和`FilePathSaveContextKey`。
 
      仅当使用模型文件中的适配器引用时才对其进行反序列化。
 

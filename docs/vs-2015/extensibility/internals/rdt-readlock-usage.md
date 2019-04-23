@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070155"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 用法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58932376"
   
  通常情况下，将使用<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>下列任一条件为 true 时：  
   
--   如果想要不可见的方式打开的文档和只读的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>应拥有它。  
+- 如果想要不可见的方式打开的文档和只读的但它尚未建立的<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>应拥有它。  
   
--   当你希望用户系统会提示保存用户在 UI 中显示，然后尝试将其关闭之前不可见的方式打开的文档。  
+- 当你希望用户系统会提示保存用户在 UI 中显示，然后尝试将其关闭之前不可见的方式打开的文档。  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>如何管理可见和不可见的文档  
  当用户在 UI 中，打开的文档<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>必须建立文档所有者和<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>标志必须设置。 如果没有<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>可以建立所有者，则当用户单击时，将不会保存该文档**全部保存**或关闭 IDE。 这意味着如果文档处于打开状态不可见的方式在内存中，修改和系统提示您将文档保存在关闭或保存如果用户的位置**全部保存**选择，则`RDT_ReadLock`不能使用。 相反，必须使用`RDT_EditLock`并注册<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder>时<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER>标志。  

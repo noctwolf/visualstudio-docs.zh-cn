@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24222b60db1ba35da59069e58d6f1377928e7a54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 25897eac467fe318ac67b91db247d2fd7b6ec68a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714915"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654407"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 描述一个字符串数组的结构。
@@ -46,8 +46,7 @@ dwCount 数量的字符串中`Members`数组。
 ## <a name="remarks"></a>备注
 此结构返回从[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法。
 
-
- [C + +]每个单个字符串，必须使用释放`SysFreeString`，并`Members`数组，必须释放与`CoTaskMemFree`。
+ [C++仅]每个单个字符串，必须使用释放`SysFreeString`，并`Members`数组，必须释放与`CoTaskMemFree`。
 
 ## <a name="requirements"></a>要求
 标头： msdbg.h

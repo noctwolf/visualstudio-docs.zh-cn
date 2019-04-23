@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a2dab234f56b9d6ab1368ac87f4da9c5fae4125
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113126"
 ---
 # <a name="expression-evaluation-interfaces"></a>表达式计算接口
 > [!IMPORTANT]
@@ -28,11 +28,11 @@ ms.locfileid: "56720050"
 
  表中的每个接口显示组件，可以实现它从以下列表：
 
--   调试引擎 (DE)
+- 调试引擎 (DE)
 
--   表达式计算器 (EE)
+- 表达式计算器 (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
 |接口|由实现|描述|
 |---------------|--------------------|-----------------|

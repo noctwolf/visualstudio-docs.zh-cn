@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3554941ea4fc0d0d95d36cc99224f270cdc23fe9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da424c2250c327a04a9f878e6bd953a664dcc4d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104117"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "58925875"
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>将关系图或部分关系图复制到另一个应用程序  
   
-1.  在关系图上，选择部分或全部形状。  
+1. 在关系图上，选择部分或全部形状。  
   
-2.  右键单击您的选择，然后依次**复制**。  
+2. 右键单击您的选择，然后依次**复制**。  
   
-3.  将所选内容粘贴到所需的应用程序中。  
+3. 将所选内容粘贴到所需的应用程序中。  
   
 ### <a name="to-export-an-image-as-part-of-an-automated-process"></a>将图像作为自动进程的一部分导出  
   
--   请参阅[导出 UML 图添加到图像文件](../modeling/export-uml-diagrams-to-image-files.md)。  
+- 请参阅[导出 UML 图添加到图像文件](../modeling/export-uml-diagrams-to-image-files.md)。  
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>将建模图另存为 XML 纸张规范 (.xps) 文件  
   
-1.  上**文件**菜单上，单击**打印**以打开**打印**对话框。  
+1. 上**文件**菜单上，单击**打印**以打开**打印**对话框。  
   
-2.  在中**名称**列表中，选择**Microsoft XPS Document Writer**，然后单击**确定**。  
+2. 在中**名称**列表中，选择**Microsoft XPS Document Writer**，然后单击**确定**。  
   
-3.  在中**将该文件作为**对话框中的，保存该文件作为**XPS 文档 (\*.xps)** 文件。  
+3. 在中**将该文件作为**对话框中的，保存该文件作为**XPS 文档 (\*.xps)** 文件。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
   

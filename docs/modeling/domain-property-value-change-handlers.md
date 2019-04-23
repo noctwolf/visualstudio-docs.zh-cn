@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090337"
 ---
 # <a name="domain-property-value-change-handlers"></a>域属性值更改处理程序
 
@@ -52,15 +52,15 @@ public partial class Comment
 
 请注意关于属性处理程序的以下几点：
 
--   在满足以下两个条件时调用属性处理程序方法：用户对域属性做出更改以及程序代码将不同的值分配给该属性。
+- 在满足以下两个条件时调用属性处理程序方法：用户对域属性做出更改以及程序代码将不同的值分配给该属性。
 
--   仅在该值实际发生更改时才调用这些方法。 如果程序代码分配的值等于当前值，则不调用该处理程序。
+- 仅在该值实际发生更改时才调用这些方法。 如果程序代码分配的值等于当前值，则不调用该处理程序。
 
--   计算属性和自定义存储域属性不具有 OnValueChanged 和 OnValueChanging 方法。
+- 计算属性和自定义存储域属性不具有 OnValueChanged 和 OnValueChanging 方法。
 
--   无法使用更改处理程序来修改新值。 如果想要执行此操作（例如，若要将该值限制在特定范围内），请定义 `ChangeRule`。
+- 无法使用更改处理程序来修改新值。 如果想要执行此操作（例如，若要将该值限制在特定范围内），请定义 `ChangeRule`。
 
--   无法将更改处理程序添加到表示关系的角色的属性。 相反，可在关系类上定义 `AddRule` 和 `DeleteRule`。 当创建或更改链接时，将触发这些规则。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
+- 无法将更改处理程序添加到表示关系的角色的属性。 相反，可在关系类上定义 `AddRule` 和 `DeleteRule`。 当创建或更改链接时，将触发这些规则。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ### <a name="changes-in-and-out-of-the-store"></a>存储内外的更改
 

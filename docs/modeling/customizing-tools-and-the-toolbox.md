@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101855"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 
@@ -38,15 +38,15 @@ Editor
 
 在 DSL 资源管理器的此部分中，你可以执行以下操作：
 
--   创建新选项卡。 选项卡定义工具箱中的节标题。
+- 创建新选项卡。 选项卡定义工具箱中的节标题。
 
--   创建新工具。
+- 创建新工具。
 
--   复制和粘贴工具。
+- 复制和粘贴工具。
 
--   在列表中上移或下移工具。
+- 在列表中上移或下移工具。
 
--   删除选项卡和工具。
+- 删除选项卡和工具。
 
 > [!IMPORTANT]
 > 若要在 DSL 资源管理器中添加或粘贴项，请右键单击新节点的祖父级。 例如，若要添加一种工具，请右键单击选项卡上，而非**工具**节点。 若要添加选项卡，右键单击**编辑器**节点。
@@ -59,36 +59,36 @@ Editor
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>将工具添加到工具箱
 
-1.  通常在已创建形状类并将其映射到域类后创建元素工具。
+1. 通常在已创建形状类并将其映射到域类后创建元素工具。
 
      通常在已创建连接符类并将其映射到引用关系后创建连接符工具。
 
-2.  在 DSL 资源管理器，展开**编辑器**节点并**工具箱选项卡**节点。
+2. 在 DSL 资源管理器，展开**编辑器**节点并**工具箱选项卡**节点。
 
      右键单击工具箱选项卡节点，然后依次**添加新元素工具**或**添加新连接工具**。
 
-3.  设置**工具箱图标**属性来指代 16 × 16 位图。
+3. 设置**工具箱图标**属性来指代 16 × 16 位图。
 
      如果你想要定义新图标，在解决方案资源管理器中创建一个位图文件**Dsl\Resources**文件夹。 该文件应具有以下属性值：**生成操作** = **内容**;**复制到输出目录** = **不要复制**。
 
-4.  **对于元素工具：** 设置**类**属性引用映射到一个形状的具体域类的工具。
+4. **对于元素工具：** 设置**类**属性引用映射到一个形状的具体域类的工具。
 
      **对于连接符工具：** 设置**连接生成器**属性到一个下拉列表中提供的项的工具。 在将连接符映射到域关系后自动创建连接生成器。 如果最近创建过连接符，则通常选择关联的连接生成器。
 
-5.  若要测试 DSL，请按 F5 或 CTRL + F5，并在 Visual Studio 的实验实例中，打开示例模型文件。 新工具应显示在工具箱上。 将它拖动到关系图上以验证它是否将创建新元素。
+5. 若要测试 DSL，请按 F5 或 CTRL + F5，并在 Visual Studio 的实验实例中，打开示例模型文件。 新工具应显示在工具箱上。 将它拖动到关系图上以验证它是否将创建新元素。
 
      如果未显示该工具，停止实验性 Visual Studio。 在 Windows 中**启动**菜单中，运行**重置 Microsoft Visual Studio 2010 实验实例**。 在“生成”菜单上，单击“重新生成解决方案”。 然后，再次测试 DSL。
 
 ## <a name="customizing"></a> 自定义元素工具
  默认情况下，该工具将创建指定类的单个实例，但是可通过两种方式改变这种情况：
 
--   在其他类上定义元素合并指令，从而允许它们接受此类的新实例，并允许它们在创建新元素后创建其他链接。 例如，你可以允许用户将“注释”放到其他元素上，从而在两个元素之间创建引用链接。
+- 在其他类上定义元素合并指令，从而允许它们接受此类的新实例，并允许它们在创建新元素后创建其他链接。 例如，你可以允许用户将“注释”放到其他元素上，从而在两个元素之间创建引用链接。
 
      这些自定义还将影响当用户粘贴或拖动并放置元素时将发生的情况。
 
      有关详细信息，请参阅[自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。
 
--   编写代码来自定义工具，以便它可以创建元素组。 该工具由 ToolboxHelper.cs 中可重写的方法进行初始化。 有关详细信息，请参阅[创建一个工具中的元素组](#groups)。
+- 编写代码来自定义工具，以便它可以创建元素组。 该工具由 ToolboxHelper.cs 中可重写的方法进行初始化。 有关详细信息，请参阅[创建一个工具中的元素组](#groups)。
 
 ## <a name="groups"></a> 从一种工具创建元素组
  每个元素工具都包含它应创建的元素的原型。 默认情况下，每个元素工具都将创建单个元素，但也可以使用一个工具创建一组相关对象。 为此，请使用包含相关项的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 初始化工具。
@@ -236,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)
 - [自定义复制行为](../modeling/customizing-copy-behavior.md)
-- [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [如何：添加拖放句柄](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [线路关系图示例 DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

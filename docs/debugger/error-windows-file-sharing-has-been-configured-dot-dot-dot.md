@@ -1,5 +1,5 @@
 ---
-title: 错误： Windows 文件共享已配置...|Microsoft Docs
+title: 错误：Windows 文件共享已配置...|Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 669a66f95c4e93dc9bee936cf36973cae20a2a4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 89224dc5394f248ea82d428731ef387cb705ff27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099801"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>错误：已配置 Windows 文件共享...
 已配置 Windows 文件共享，因此您将使用另一不同的用户名连接到远程计算机。 这与远程调试不兼容
@@ -32,16 +32,16 @@ ms.locfileid: "56698880"
 
 ### <a name="to-correct-this-error"></a>更正此错误
 
-1.  使用其他帐户名登录到本地计算机（要从其进行调试的计算机）上。
+1. 使用其他帐户名登录到本地计算机（要从其进行调试的计算机）上。
 
      - 或 -
 
      . 中断与远程计算机的连接，然后重新配置文件共享，以便使用您的帐户名称连接至其他计算机：
 
-    1.  在“开始”菜单上，指向“附件”，然后单击“命令提示”。
+    1. 在**开始**菜单中，指向**附件**，然后单击**命令提示符**。
 
-    2.  在 Windows 命令提示符中，键入：
+    2. 在 Windows 命令提示符中，键入：
 
          `net use /delete computer_name`
 
-    3.  使用 Windows 帮助中介绍的任一方法更改文件共享设置。
+    3. 使用 Windows 帮助中介绍的任一方法更改文件共享设置。

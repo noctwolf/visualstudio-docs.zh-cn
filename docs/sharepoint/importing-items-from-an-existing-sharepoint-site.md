@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082576"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项目
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。
@@ -119,9 +119,9 @@ ms.locfileid: "56645142"
 
  若收到此错误，则不会创建相应的项。 导入的模块最常出现此问题。 若要避免此问题，请执行下列操作：
 
--   在“添加新项目”  对话框中输入项目名称时，请使用项目的短名称。
+- 在“添加新项目”  对话框中输入项目名称时，请使用项目的短名称。
 
--   在尽可能接近根文件夹的位置创建项目，以便减小路径长度。
+- 在尽可能接近根文件夹的位置创建项目，以便减小路径长度。
 
 ## <a name="the-sharepointproductversion-attribute"></a>SharePointProductVersion 属性
  如果导入在早期版本的 SharePoint（如 [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] 或 [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]）中创建的解决方案，请将包清单中的 SharePointProductVersion 属性值更改为 12.0，或将脚本管理器控件插入到所有导入的网页中并将 SharePointProductVersion 属性值保持为 14.0。 否则，导入的 Web 窗体将不会显示在 SharePoint 中。

@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075358"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 清理生成时，将删除所有中间文件和输出文件，仅保留项目和组件文件。 然后，可以根据项目和组件文件生成中间文件和输出文件的新实例。 随 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供的常规任务库中包括一个 [Exec](../msbuild/exec-task.md) 任务，可以使用该任务运行系统命令。 有关任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
   
 ## <a name="creating-a-directory-for-output-items"></a>创建输出项目录  
@@ -32,11 +31,11 @@ ms.locfileid: "54780742"
   
 #### <a name="to-create-a-directory-for-output-items"></a>创建输出项目录  
   
-1.  使用 `Property` 元素定义目录的位置和名称。 例如，在包含项目文件和源文件的目录中创建一个名为 `BuiltApp` 的目录：  
+1. 使用 `Property` 元素定义目录的位置和名称。 例如，在包含项目文件和源文件的目录中创建一个名为 `BuiltApp` 的目录：  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如:  
+2. 如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -47,7 +46,7 @@ ms.locfileid: "54780742"
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>删除目录和目录中包含的所有文件  
   
--   使用 `RemoveDir` 任务删除目录。 例如:  
+- 使用 `RemoveDir` 任务删除目录。 例如:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

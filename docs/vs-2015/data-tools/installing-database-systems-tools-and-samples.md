@@ -17,17 +17,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fdaa4937e0053c36e6ba53db9e93ffed9d8a38e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000744"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664782"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>安装数据库系统、 工具和示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio 本身不包括任何数据库系统之外，它在内部使用。 若要开发 Visual Studio 中的数据连接应用程序，您通常在本地开发计算机上安装数据库系统，然后部署应用程序和数据库到生产环境时，他们就可以。 对于数据库系统可从.NET 应用程序，可以在 Visual Studio 数据工具窗口中可见，它必须具有 ADO.NET 数据提供程序。 如果你打算在.NET 应用程序中使用实体数据模型提供程序必须支持实体框架。     通过 NuGet 包管理器或通过 Visual Studio 库提供多个提供程序。  
   
  SQL 开发，请确保已在 Visual Studio 中安装 SQL Server Data Tools。 单击**视图**菜单。 如果看不到 SQL Server 对象资源管理器，转到控制面板，并更改 Visual Studio。 在安装程序中，选择**Microsoft SQL Server Data Tools**。  

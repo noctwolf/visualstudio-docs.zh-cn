@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066699"
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ ms.locfileid: "58933279"
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>从应用的开头推迟分析：  
   
-1.  在菜单按钮中，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
+1. 在菜单按钮中，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
   
-2.  在“性能和诊断”中心，按照“GPU 使用情况”旁的“设置”链接进行操作。  
+2. 在“性能和诊断”中心，按照“GPU 使用情况”旁的“设置”链接进行操作。  
   
-3.  在“常规”属性页上的“GPU 分析配置”下，取消选中“在应用启动时开始分析”复选框以推迟分析。  
+3. 在“常规”属性页上的“GPU 分析配置”下，取消选中“在应用启动时开始分析”复选框以推迟分析。  
   
      ![配置 GPU 使用情况收集何时开始](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ ms.locfileid: "58933279"
   
  如果使用此设置推迟分析信息的收集，当你在 GPU 使用情况工具下运行应用时，GPU 使用情况工具窗口底部的一个附加链接将变为可用。 若要开始收集分析信息，请选择“开始收集更多详细 GPU 使用情况数据”消息中的“启动”链接。  
   
-##  <a name="hwsupport"></a>硬件和驱动程序支持  
+## <a name="hwsupport"></a>硬件和驱动程序支持  
  支持以下 GPU 硬件和驱动程序：  
   
 |Vendor|GPU 说明|要求的驱动程序版本|  
@@ -143,10 +143,10 @@ ms.locfileid: "58933279"
   
 ## <a name="see-also"></a>请参阅  
   
--   [使用 DirectX 工具解决游戏中的复杂图形问题（视频）](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [使用 DirectX 工具解决游戏中的复杂图形问题（视频）](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Visual Studio 中的 GPU 使用情况工具（视频）](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Visual Studio 中的 GPU 使用情况工具（视频）](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Visual Studio 2013 Update 4 CTP1 中的 GPU 使用情况工具（博客）](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Visual Studio 2013 Update 4 CTP1 中的 GPU 使用情况工具（博客）](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Visual Studio 中 DirectX 的 GPU 使用情况](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Visual Studio 中 DirectX 的 GPU 使用情况](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

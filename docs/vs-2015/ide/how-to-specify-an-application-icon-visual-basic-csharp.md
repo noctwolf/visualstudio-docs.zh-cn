@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045768"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定应用程序图标（Visual Basic、C#）
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定应用程序图标 (Visual Basic 中， C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 项目的 `Icon` 属性指定将针对已编译应用程序在文件资源管理器和 Windows 任务栏中显示的图标文件 (.ico)。  
@@ -32,13 +32,13 @@ ms.locfileid: "54788160"
   
 ### <a name="to-specify-an-application-icon"></a>如要指定应用程序图标  
   
-1.  在“解决方案资源管理器”中，选择项目节点（而非“解决方案”节点）。  
+1. 在“解决方案资源管理器”中，选择项目节点（而非“解决方案”节点）。  
   
-2.  在菜单栏上，依次选择“项目”、“属性”。  
+2. 在菜单栏上，依次选择“项目”、“属性”。  
   
-3.  当“项目设计器”出现时，选择“应用程序”选项卡。  
+3. 当“项目设计器”出现时，选择“应用程序”选项卡。  
   
-4.  **(Visual Basic)** 在“图标”列表中，选择一个图标 (.ico) 文件。  
+4. **(Visual Basic)** 在“图标”列表中，选择一个图标 (.ico) 文件。  
   
      **C#** 在“图标”列表附近，选择“\<浏览...>”按钮，然后浏览到所需图标文件的位置。  
   

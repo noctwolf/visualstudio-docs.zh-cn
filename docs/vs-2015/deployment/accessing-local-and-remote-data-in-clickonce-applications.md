@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 21e16823d664b927008e43f8bfc6972ac284eac7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040064"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58931752"
 ## <a name="local-data"></a>本地数据  
  借助 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，你可以通过以下任意一种方法在本地加载和存储数据：  
   
--   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 数据目录  
+- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 数据目录  
   
--   独立存储  
+- 独立存储  
   
--   其他本地文件  
+- 其他本地文件  
   
 ### <a name="clickonce-data-directory"></a>ClickOnce 数据目录  
  本地计算机上安装的每个 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序都有一个数据目录，该数据目录存储在用户的 Documents and Settings 文件夹中。 安装应用程序时，会将 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序中包含的且标记为“数据”文件的所有文件复制到此目录。 数据文件可以是任何类型的文件，最常用的是文本文件、XML 文件和数据库文件（如 Microsoft Access.mdb 文件）。  

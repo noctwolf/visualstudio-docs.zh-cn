@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efa493afa7257d4460fd106a0a9685930ca3e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2440f31b6a6ac345644e20e14b4a82972967fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104273"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他检测选项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "54803038"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!IMPORTANT]
 >  每个插入的探测都将稍微修改原始程序的行为。 此修改将导致分析时产生系统开销。 即使减去此系统开销的近似值，它仍然对多线程应用程序有细微计时影响。 [VSInstr](../profiling/vsinstr.md) 工具选项在分析期间帮助控制数据收集。  
   
 ### <a name="to-specify-additional-instrumentation-option"></a>指定其他检测选项  
   
-1.  在“性能资源管理器”中，选择“性能会话”，然后右键单击并选择“属性”。  
+1. 在“性能资源管理器”中，选择“性能会话”，然后右键单击并选择“属性”。  
   
-2.  在“属性页”中，单击“高级”属性。  
+2. 在“属性页”中，单击“高级”属性。  
   
-3.  在“其他检测选项”框中键入选项。  
+3. 在“其他检测选项”框中键入选项。  
   
      例如，使用 /CONTROL:THREAD 指定分析级别。 有关选项的完整列表，请参阅 [VSInstr](../profiling/vsinstr.md)。  
   
-4.  单击 **“确定”**。  
+4. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   

@@ -26,17 +26,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2406a802b0992b0fffe8a41d99ed600a9e1fc2b3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 407e438193e5ee328a8cbc6743829e40f2c366fa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800756"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665657"
 ---
 # <a name="options-text-editor-c-formatting"></a>选项、文本编辑器、C#、格式设置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“格式设置”属性页对话框可以在代码编辑器中设置格式设置代码的选项。 若要访问此对话框，请单击“工具”菜单上的“选项”，展开“文本编辑器”，再展开“C#”，然后单击“格式设置”。  
   
 > [!NOTE]
@@ -47,7 +46,7 @@ ms.locfileid: "54800756"
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|Label|说明​​|  
+|Label|说明|  
 |-----------|-----------------|  
 |**输入 ; 时自动设置已完成语句的格式**|如果选中此项，会根据为代码编辑器选择的格式设置选项在完成时对语句进行格式设置。 如果不希望代码编辑器更改语句，请清除此框。|  
 |**输入 } 时自动设置已完成块的格式**|如果选中此项，完成代码块后，立即根据为代码编辑器选择的格式设置选项设置代码块的格式。 如果不希望代码编辑器更改代码块，请清除此框。|  

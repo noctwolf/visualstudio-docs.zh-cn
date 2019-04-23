@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053528"
 ---
 # <a name="graphics-frame-analysis"></a>图形帧分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ ms.locfileid: "58934683"
   
  帧分析将重试次数限制为 10。 如果你的平台包含积极的电源管理或门控时钟，它可能会导致帧分析失败并报告错误，因为它已经超过了重试限制。 你也许可以通过将平台的电源管理和时钟速度重置以降低积极性来缓解此问题（如果平台启用了它）。  
   
-##  <a name="HardwareSupport"></a> 硬件支持  
+## <a name="HardwareSupport"></a> 硬件支持  
   
 ### <a name="timestamps-and-occlusion-queries"></a>时间戳和封闭查询  
  在支持帧分析的所有平台上都受支持的时间戳。 深度封闭查询（对于“封闭的像素”计数器是必需的）在支持功能级别 9.2 或更高级别的平台上均受支持。  
@@ -182,7 +182,7 @@ ms.locfileid: "58934683"
 > [!NOTE]
 >  这仅适用于你正在使用的 Direct3D API 调用，不适用于功能级别。 只要你使用的是 Direct3D 11、Direct3D 11.1 或 Direct3D 11.2 API，你就可以随意使用所需的功能级别，帧分析还会正常工作。  
   
-##  <a name="Variants"></a> 变量  
+## <a name="Variants"></a> 变量  
  播放期间，帧分析对呈现帧的方式所做出的每个更改称为“变体”。 帧分析检查的变体对应于你为了提升应用的呈现性能或视觉质量可能做出的相对容易的常见更改，例如，减小纹理大小、使用纹理压缩或启用不同种类的抗锯齿。 这些变体将重写应用的常用呈现上下文和参数。 摘要如下：  
   
 |变体|描述|  

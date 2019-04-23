@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097318"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 
@@ -74,17 +74,17 @@ ms.locfileid: "59537554"
 
 #### <a name="to-create-an-object-id"></a>创建对象 ID
 
-1.  在要跟踪的变量附近设置一个断点。
+1. 在要跟踪的变量附近设置一个断点。
 
-2.  启动调试器 (**F5**)，并在断点处停止。
+2. 启动调试器 (**F5**)，并在断点处停止。
 
 3. 在**局部变量**窗口（**调试 > 窗口 > 局部变量**）中找到该变量，右键单击该变量，然后选择**创建对象 ID**。
 
     ![创建对象 ID](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  应该会在“局部变量” **$** 窗口中看到 **$** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 此变量是对象 id。
+4. 应该会在“局部变量” **$** 窗口中看到 **$** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 此变量是对象 id。
 
-5.  右键单击对象 ID 变量，然后选择**添加监视**。
+5. 右键单击对象 ID 变量，然后选择**添加监视**。
 
 有关详细信息，请参阅[创建的对象 ID](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds)。
 
@@ -126,13 +126,13 @@ ms.locfileid: "59537554"
 
 #### <a name="to-show-threads-in-your-source-code"></a>在源代码中显示线程
 
-1.  调试时，单击**源中显示线程**按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**调试**工具栏。
+1. 调试时，单击**源中显示线程**按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")中**调试**工具栏。
 
-2.  查看窗口左侧的滚动条。 在这一行，你可以看到*线程标记*图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于两根细线。 线程标记指示线程在此位置停止。
+2. 查看窗口左侧的滚动条。 在这一行，你可以看到*线程标记*图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于两根细线。 线程标记指示线程在此位置停止。
 
     注意，线程标记可能被断点不完全遮挡。
 
-3.  将指针悬停在线程标记上。 屏幕上将显示数据提示。 数据提示将告诉你每个已停止线程的名称和线程 ID。
+3. 将指针悬停在线程标记上。 屏幕上将显示数据提示。 数据提示将告诉你每个已停止线程的名称和线程 ID。
 
     你还可以查看中的线程的位置[并行堆栈窗口](../debugger/get-started-debugging-multithreaded-apps.md)。
 

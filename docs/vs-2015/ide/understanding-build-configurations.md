@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077272"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ ms.locfileid: "54799305"
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Visual Studio 如何分配项目配置  
  在定义新的解决方案配置且未复制现有配置中的设置时，Visual Studio 会使用以下标准来分配默认的项目配置。 按所示顺序对条件进行评估。  
   
-1.  如果项目的配置名称 (*\<配置名称> \<平台名称>*) 与新解决方案配置的名称完全一致，就会分配相应的配置。 配置名称不区分大小写。  
+1. 如果项目的配置名称 (*\<配置名称> \<平台名称>*) 与新解决方案配置的名称完全一致，就会分配相应的配置。 配置名称不区分大小写。  
   
-2.  如果项目有一个与新解决方案配置的名称部分匹配的配置名称，则分配该配置，无论平台部分是否匹配。  
+2. 如果项目有一个与新解决方案配置的名称部分匹配的配置名称，则分配该配置，无论平台部分是否匹配。  
   
-3.  如果仍没有匹配项，则分配项目中列出的第一个配置。  
+3. 如果仍没有匹配项，则分配项目中列出的第一个配置。  
   
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Visual Studio 如何分配解决方案配置  
  创建项目配置（在“配置管理器”中，在相应项目的“配置”列中选择下拉菜单中的“新建”）并选中“创建新的解决方案配置”复选框后，Visual Studio 会查找名称相似的解决方案配置，以在它支持的每个平台上生成项目。 在某些情况下，Visual Studio 会重命名现有解决方案配置或定义新的配置。  
   
  Visual Studio 使用以下标准来分配解决方案配置。  
   
--   如果项目配置未指定平台或仅指定一个平台，则将查找或添加一个其名称与新项目配置名称匹配的解决方案配置。 此解决方案配置的默认名称不包含平台名称，采用 *\<项目配置名称>* 的形式。  
+- 如果项目配置未指定平台或仅指定一个平台，则将查找或添加一个其名称与新项目配置名称匹配的解决方案配置。 此解决方案配置的默认名称不包含平台名称，采用 *\<项目配置名称>* 的形式。  
   
--   如果项目支持多个平台，则可为每个受支持的平台找到或添加解决方案配置。 每个解决方案配置的名称均包含项目配置名称和平台名称，采用 *\<项目配置名称> \<平台名称>* 的形式。  
+- 如果项目支持多个平台，则可为每个受支持的平台找到或添加解决方案配置。 每个解决方案配置的名称均包含项目配置名称和平台名称，采用 *\<项目配置名称> \<平台名称>* 的形式。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：生成应用程序](../ide/walkthrough-building-an-application.md)   

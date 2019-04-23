@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631856"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654576"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;包&gt;元素 （引导程序）
 `Package`元素是包文件内的顶级 XML 元素。
@@ -143,8 +143,7 @@ ms.locfileid: "56631856"
 ## <a name="elements-and-attributes"></a>元素和属性
  `Package`元素是必需的。 它具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |--------------------| - |
 | `Culture` | 必需。 定义用于此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。 |
 | `Name` | 必需。 如向开发人员工具中显示的包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`并`Culture`的属性`Package`。 |

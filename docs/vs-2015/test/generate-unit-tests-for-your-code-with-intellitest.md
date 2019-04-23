@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085007"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 为你的代码生成单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 ### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>浏览：使用 IntelliTest 浏览代码并生成单元测试  
  若要生成单元测试，你的类型必须是公共类。 否则，先 [创建单元测试](#NoRun) ，然后再生成它们。  
   
-1.  在 Visual Studio 中打开解决方案。 然后打开包含你要测试的方法的类文件。  
+1. 在 Visual Studio 中打开解决方案。 然后打开包含你要测试的方法的类文件。  
   
-2.  在代码中右键单击一种方法并选择“运行 IntelliTest”  ，为方法中的代码生成单元测试。  
+2. 在代码中右键单击一种方法并选择“运行 IntelliTest”  ，为方法中的代码生成单元测试。  
   
      ![在方法中右键单击以生成单元测试](../test/media/runpex.png "RunPEX")  
   
@@ -50,7 +50,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
 ### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>保留：将单元测试保存为回归套件  
   
-1.  选择你要与参数化单元测试一同保存到测试项目中的数据行。  
+1. 选择你要与参数化单元测试一同保存到测试项目中的数据行。  
   
      ![选择测试，右键单击并选择“保存”](../test/media/savepextests.png "SavePEXTests")  
   
@@ -64,13 +64,13 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
 ### <a name="assist-use-intellitest-to-focus-code-exploration"></a>帮助：使用 IntelliTest 聚焦代码浏览  
   
-1.  如果有更复杂的代码，IntelliTest 可以帮助你聚焦对代码的浏览。 例如，如果你的一个方法包含作为参数的接口，并且有多个类实现该接口，则 IntelliTest 将发现这些类并报告警告。  
+1. 如果有更复杂的代码，IntelliTest 可以帮助你聚焦对代码的浏览。 例如，如果你的一个方法包含作为参数的接口，并且有多个类实现该接口，则 IntelliTest 将发现这些类并报告警告。  
   
      查看警告，确定后续操作。  
   
      ![查看警告](../test/media/pexviewwarning.png "PEXViewWarning")  
   
-2.  调查代码并了解要测试的内容后，可修复警告，以选择要用于测试该接口的类。  
+2. 调查代码并了解要测试的内容后，可修复警告，以选择要用于测试该接口的类。  
   
      ![右键单击警告，然后选择“修复”](../test/media/pexfixwarning.png "PEXFixWarning")  
   
@@ -78,14 +78,14 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
      `[assembly: PexUseType(typeof(Camera))]`  
   
-3.  现在，你可重新运行 IntelliTest，以生成参数化单元测试并使用已修复的类测试数据。  
+3. 现在，你可重新运行 IntelliTest，以生成参数化单元测试并使用已修复的类测试数据。  
   
      ![重新运行 IntelliTest 来生成测试数据](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>指定：使用 IntelliTest 来验证在代码中指定的正确性属性  
  指定需要生成的单元测试来验证的输入和输出之间的常规关系。 此规范封装在一个方法中，该方法看似为测试方法，但已被全称量词化。 这就是参数化单元测试方法，并且你所做的任何断言都必须保留 IntelliTest 可以生成的所有可能输入值。  
   
-##  <a name="QandALink"></a> 问题解答  
+## <a name="QandALink"></a> 问题解答  
   
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>问：是否可以对非托管代码使用 IntelliTest？  
  **答：** 不可以，IntelliTest 仅适用于托管代码。  
@@ -95,13 +95,13 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
  如果你的一个测试可在引发特定异常的情况下通过，则可根据你在测试方法、测试类或程序集级别的要求设置以下属性之一：  
   
--   **PexAllowedExceptionAttribute**  
+- **PexAllowedExceptionAttribute**  
   
--   **PexAllowedExceptionFromTypeAttribute**  
+- **PexAllowedExceptionFromTypeAttribute**  
   
--   **PexAllowedExceptionFromTypeUnderTestAttribute**  
+- **PexAllowedExceptionFromTypeUnderTestAttribute**  
   
--   **PexAllowedExceptionFromAssemblyAttribute**  
+- **PexAllowedExceptionFromAssemblyAttribute**  
   
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>问：我能否将假设添加到参数化单元测试？  
  **答：** 可以，使用假设指定特定方法的单元测试不需要的测试数据。 使用 <xref:Microsoft.Pex.Framework.PexAssume> 类添加假设。 例如，你可以添加类似于以下形式的长度变量不为 null 的假设。  
@@ -117,7 +117,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
   
  如果添加了断言并重新运行 IntelliTest，它将检查断言的有效性，如果断言无效，则测试失败。  
   
-###  <a name="NoRun"></a> 问：是否可以无需首先运行 IntelliTest 便生成参数化单元测试？  
+### <a name="NoRun"></a> 问：是否可以无需首先运行 IntelliTest 便生成参数化单元测试？  
  **答：** 可以，在类或方法中单击右键，然后选择“创建 IntelliTest”。  
   
  ![右键单击编辑器，选择“创建 IntelliTest”](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  

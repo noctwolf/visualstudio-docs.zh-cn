@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118079"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
 
@@ -26,13 +26,13 @@ ms.locfileid: "57428825"
 
 在使用本参考指南，请记住：
 
--   **始终将一起复制前景色和背景的色调。** 不要从一个 UI 元素，并从另一个后台选择前景色，只是因为您喜欢色调。
+- **始终将一起复制前景色和背景的色调。** 不要从一个 UI 元素，并从另一个后台选择前景色，只是因为您喜欢色调。
 
--   **这些是十六进制代码，不颜色标记。** 因为您无法控制可能会在将来更改令牌的方式，不能使用这些 UI 元素的实际颜色标记名称。 相反，创建你自己的类别中的令牌，并使用表中所示的色调值。 有关可在现有 UI 颜色令牌[用于 Visual Studio 共享颜色](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)。
+- **这些是十六进制代码，不颜色标记。** 因为您无法控制可能会在将来更改令牌的方式，不能使用这些 UI 元素的实际颜色标记名称。 相反，创建你自己的类别中的令牌，并使用表中所示的色调值。 有关可在现有 UI 颜色令牌[用于 Visual Studio 共享颜色](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md)。
 
 - **高对比度样本中显示了仅比较。** 使用高对比度用户界面的系统颜色名称并不使用这些样本的取色器或颜色选取器。 本主题中的高对比度样本反映在 Windows 中的高对比度 #1 主题。 颜色将显示在其他高对比度主题中的不同。
 
--   **为获得最佳结果，对颜色设置 ui 的示例类似。**
+- **为获得最佳结果，对颜色设置 ui 的示例类似。**
 
 ## <a name="properties-window"></a>“属性”窗口
 
@@ -96,7 +96,7 @@ ms.locfileid: "57428825"
 | 前景色： 悬停 | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![#FFF1F1F1 样本](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 样本")<br />`#FFF1F1F1` | ![#FF1E1E1E 样本](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E 样本")<br />`#FF1E1E1E` | ![HighlightText 样本](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText 样本")<br />`HighlightText` |
 | 背景 | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![#FF292929 swatch](../../extensibility/ux-guidelines/media/292929.png "#FF292929 swatch")<br />`#FF292929` | ![#FFEEEEF2 样本](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 样本")<br />`#FFEEEEF2` | ![控制样本](../../extensibility/ux-guidelines/media/HCControl.png "控件样本")<br />`Control` |
 | 背景： 悬停 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` | ![#FFFFFCF4 样本](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 样本")<br />`#FFFFFCF4` | ![突出显示样本](../../extensibility/ux-guidelines/media/HCHighlight.png "突出显示样本")<br />`Highlight` |
-| Border | 无 | 无 | 无 | 无 |
+| Border | None | None | None | None |
 | 边框： 悬停 | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 样本](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 样本")<br />`#FF3E3E40` | ![#FFE5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "##FFE5C365 swatch")<br />`#FFE5C365` | ![WindowFrame 样本](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame 样本")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>类别组

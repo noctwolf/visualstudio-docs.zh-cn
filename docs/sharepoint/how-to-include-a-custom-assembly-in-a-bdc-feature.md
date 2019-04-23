@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efbbef540ddd7759fe0614eecccc663368bd23b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059618"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自定义程序集
   你的项目可以从同一解决方案中的其他项目引用程序集。 但是，您必须添加这些程序集到项目的功能文件通过使用**分配引用的程序集 Lobsystem 到**对话框。
 
 ### <a name="to-include-a-custom-assembly-in-a-business-data-connectivity-bdc-feature"></a>若要自定义程序集包含业务数据连接 (BDC) 功能
 
-1.  在中**解决方案资源管理器**，选择包含 BDC 模型的文件夹。
+1. 在中**解决方案资源管理器**，选择包含 BDC 模型的文件夹。
 
-2.  在 **“视图”** 菜单上，单击 **“属性窗口”**。
+2. 在 **“视图”** 菜单上，单击 **“属性窗口”**。
 
-3.  在中**属性**窗口中，选择**程序集**属性，然后单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆"))。
+3. 在中**属性**窗口中，选择**程序集**属性，然后单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆"))。
 
      **分配引用的程序集 Lobsystem 到**对话框随即出现。
 
-4.  在中**选择的程序集**列表中，选择自定义程序集。
+4. 在中**选择的程序集**列表中，选择自定义程序集。
 
     > [!NOTE]
     >  程序集只能出现在**分配引用的程序集 Lobsystem 到**对话框中，如果你已添加对包含程序集的项目的引用。 有关详细信息，请参阅[如何：添加或删除引用通过使用添加引用对话框中](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。
 
-5.  在**引用属性**组中，打开为显示列表**LobSystem 范围**属性中，选择的方法，使用自定义程序集，然后选择 LOB 系统**确定**按钮。
+5. 在**引用属性**组中，打开为显示列表**LobSystem 范围**属性中，选择的方法，使用自定义程序集，然后选择 LOB 系统**确定**按钮。
 
     > [!NOTE]
     >  若要调试自定义程序集中的代码，必须将程序集添加到解决方案包中。 有关详细信息，请参阅[如何：添加和删除其他程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。

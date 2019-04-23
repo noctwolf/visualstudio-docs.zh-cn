@@ -23,17 +23,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f39d506585398a766ba8b74bb974ec6fef7ca3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8719b893bc8cb47f8a2d7b75b43592187c198289
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057684"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果数据集包含约束 （如外键约束），通过引发顺序对数据集执行的操作相关的错误。 例如，加载子记录之前 loadingrelated 父记录可以违反了约束，将产生错误。 立即加载子记录，该约束检查相关的父记录并引发错误。  
   
  如果没有任何机制来允许约束暂停，在每次尝试将一条记录加载到子表时，将引发错误。 若要在数据集中挂起的所有约束的另一种方法是使用<xref:System.Data.DataRow.BeginEdit%2A>，和<xref:System.Data.DataRow.EndEdit%2A>属性。  
@@ -43,16 +42,16 @@ ms.locfileid: "58932119"
   
 ### <a name="to-suspend-update-constraints-programmatically"></a>若要以编程方式挂起更新约束  
   
--   下面的示例演示如何暂时关闭约束检查的数据集：  
+- 下面的示例演示如何暂时关闭约束检查的数据集：  
   
      [!code-csharp[VbRaddataEditing#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#10)]
      [!code-vb[VbRaddataEditing#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#10)]  
   
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>若要暂停使用数据集设计器更新约束  
   
-1.  在数据集设计器中打开你的数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在数据集设计器中打开你的数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。  
+2. 在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)   

@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107796"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "58934687"
   
 ## <a name="implementing-the-menu-controller-commands"></a>实现菜单控制器命令  
   
-1.  在 TWTestCommandPackageGuids.cs，现有的命令 Id 的后面添加三个菜单项的命令 Id。  
+1. 在 TWTestCommandPackageGuids.cs，现有的命令 Id 的后面添加三个菜单项的命令 Id。  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ ms.locfileid: "58934687"
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  在 TWTestCommand.cs，TWTestCommand 类的顶部添加以下代码。  
+2. 在 TWTestCommand.cs，TWTestCommand 类的顶部添加以下代码。  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  TWTestCommand 构造函数，在最后一个调用中`AddCommand`方法中，添加代码以将每个命令通过同一处理程序的事件路由。  
+3. TWTestCommand 构造函数，在最后一个调用中`AddCommand`方法中，添加代码以将每个命令通过同一处理程序的事件路由。  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ ms.locfileid: "58934687"
     }  
     ```  
   
-4.  将事件处理程序添加到 TWTestCommand 类，以将标记为已检查所选的命令。  
+4. 将事件处理程序添加到 TWTestCommand 类，以将标记为已检查所选的命令。  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ ms.locfileid: "58934687"
     }  
     ```  
   
-5.  添加的事件处理程序显示一个 MessageBox，当用户选择菜单控制器上的命令：  
+5. 添加的事件处理程序显示一个 MessageBox，当用户选择菜单控制器上的命令：  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ ms.locfileid: "58934687"
   
 ## <a name="testing-the-menu-controller"></a>测试菜单控制器  
   
-1.  生成项目并启动调试。 应会看到的实验实例。  
+1. 生成项目并启动调试。 应会看到的实验实例。  
   
-2.  打开**测试 ToolWindow**上**视图 / 其他 Windows**菜单。  
+2. 打开**测试 ToolWindow**上**视图 / 其他 Windows**菜单。  
   
      菜单控制器中的工具窗口的工具栏中将出现并显示**MC 项 1**。  
   
-3.  单击箭头左侧的菜单控制器按钮。  
+3. 单击箭头左侧的菜单控制器按钮。  
   
      应会看到三个项，其中第一个已选中，并有其图标周围突出显示的框。 单击**MC 项 3**。  
   

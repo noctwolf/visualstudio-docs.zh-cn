@@ -19,17 +19,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c1bf08c5e97a2504d797a58e96cd12cdcf08cc8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9d1c5638745529a4c9abdf0a27e0c96d486fb9cf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793185"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669154"
 ---
 # <a name="options-text-editor-c-intellisense"></a>选项，文本编辑器，C#，IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“IntelliSense”属性页可以修改影响 IntelliSense for Visual C# 行为的设置。 通过单击“工具”菜单上的“选项”，再单击“文本编辑器”文件夹中的“C#”，然后单击“IntelliSense”，可以访问“IntelliSense”属性页。  
   
 > [!NOTE]

@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 3de5a3f9e9c5b8f89a9c8917794247098ba12d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111800"
 ---
-# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic、 c + +、 JavaScript)
+# <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>创建进行调试时的调用堆栈的直观映射 (C#，Visual Basic 中， C++，JavaScript)
 
 创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 可以在映射中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
 
@@ -45,15 +45,15 @@ ms.locfileid: "57526085"
 有关命令和操作可以使用代码图的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
 >[!IMPORTANT]
->您可以创建仅在代码图[Visual Studio Enterprise 版](https://visualstudio.microsoft.com/downloads/)。
+>您可以创建仅在代码图[Visual Studio Enterprise 版](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
 
 下面是快速看一下代码映射：
 
  ![使用调用堆栈代码图上进行调试](../debugger/media/debuggermap_overview.png "DebuggerMap_Overview")
 
-##  <a name="MapStack"></a>映射调用堆栈
+## <a name="MapStack"></a>映射调用堆栈
 
-1. 在 Visual Studio Enterprise C#，Visual Basic、 c + + 或 JavaScript 项目中，通过选择启动调试**调试** > **开始调试**或按**F5**.
+1. 在 Visual Studio Enterprise C#，Visual Basic 中， C++，或 JavaScript 项目中，通过选择启动调试**调试** > **启动调试**或按**F5**.
 
 1. 你的应用进入中断模式或你单步执行函数后，选择**调试** > **代码图**，或按**Ctrl**+**Shift**+**`**.
 
@@ -89,11 +89,11 @@ ms.locfileid: "57526085"
 
 在中**布局**菜单中，你可以：
 
--   更改默认布局。
--   停止通过取消选择自动重新排列图**调试时自动布局**。
--   添加项，通过取消选中时重新排列图尽可能少地**增量布局**。
+- 更改默认布局。
+- 停止通过取消选择自动重新排列图**调试时自动布局**。
+- 添加项，通过取消选中时重新排列图尽可能少地**增量布局**。
 
-##  <a name="MakeNotes"></a>对代码进行标注
+## <a name="MakeNotes"></a>对代码进行标注
 
 可以添加注释以跟踪代码中发生的情况。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57526085"
 
  ![添加注释代码图上的调用堆栈](../debugger/media/debuggermap_addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a>使用下一个调用堆栈更新映射
+## <a name="UpdateMap"></a>使用下一个调用堆栈更新映射
 
 为运行您的应用程序到下一个断点或单步执行某一函数，地图会自动添加新的调用堆栈。
 
@@ -111,7 +111,7 @@ ms.locfileid: "57526085"
 
 若要停止自动添加新的调用堆栈中的映射，请选择![显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "显示调用自动堆栈代码图上")代码图工具栏上。 该映射将继续突出显示现有调用堆栈。 若要手动添加到映射的当前调用堆栈，请按**Ctrl**+**Shift**+**`**。
 
-##  <a name="AddRelatedCode"></a>向映射添加相关代码
+## <a name="AddRelatedCode"></a>向映射添加相关代码
 
 现在，已在生成一个图中，C#或 Visual Basic 中，可以添加字段、 属性和其他方法，来跟踪代码中发生的情况等项目。
 
@@ -134,7 +134,7 @@ ms.locfileid: "57526085"
 
  ![在调用堆栈代码图使用的字段的方法](../debugger/media/debuggermap_foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a>使用映射查找 Bug
+## <a name="FindBugs"></a>使用映射查找 Bug
  通过代码可视化，可帮助你更快发现 Bug。 例如，假设正在调查的绘图应用程序中的 bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。
 
  因此，可在 `clear`、`undo` 和 `Repaint` 方法中设置断点，启动调试，然后生成如下所示的图：

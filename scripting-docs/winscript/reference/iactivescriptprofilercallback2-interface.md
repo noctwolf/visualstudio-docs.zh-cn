@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d95c3db11551eb6551f509b4afbe52a70ff55ab9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3e292dad6c6b633d5f30f263f388d8e85bb6c541
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115271"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2 接口
 提供脚本引擎用于文档对象模型 (DOM) 的事件发生时通知探查器对象的方法。 通过探查器对象来实现此接口。  
@@ -39,7 +39,7 @@ ms.locfileid: "58145728"
 >  若要添加的功能来启动和停止分析运行脚本时，请调用以下方法。 通过使用这些方法，您可以获得完整的调用堆栈，如果[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]时启动或停止分析正在运行。  
 > 
 > - 调用[IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)通知探查器探查已经开始。  
->   -   调用[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)通知探查器，您很快就会停止分析。  
+>   - 调用[IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)通知探查器，您很快就会停止分析。  
   
 ## <a name="see-also"></a>请参阅  
  [Active Script Profiler 接口](../../winscript/reference/active-script-profiler-interfaces.md)

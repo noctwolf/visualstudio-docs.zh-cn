@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104455"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：添加和删除功能和包项使用打包资源管理器
   若要配置要部署的 SharePoint 项和功能的程序包，可以使用打包资源管理器。 .Wsp 文件中，可以调整的 SharePoint 项目项和功能。
@@ -31,7 +31,7 @@ ms.locfileid: "56596420"
 
 #### <a name="to-open-the-packaging-explorer"></a>若要打开打包资源管理器
 
-1.  在菜单栏上依次选择**视图** > **其他 Windows** > **打包资源管理器**。
+1. 在菜单栏上依次选择**视图** > **其他 Windows** > **打包资源管理器**。
 
      **打包资源管理器**将出现在**工具箱**。
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596420"
 
 #### <a name="to-add-a-sharepoint-feature"></a>若要添加的 SharePoint 功能
 
-1.  打开**打包资源管理器**，打开项目的快捷菜单，然后选择**添加功能**。
+1. 打开**打包资源管理器**，打开项目的快捷菜单，然后选择**添加功能**。
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>若要将现有的 SharePoint 功能
 
-1.  打开**打包资源管理器**，然后执行以下步骤之一：
+1. 打开**打包资源管理器**，然后执行以下步骤之一：
 
-    -   拖动**功能**从一个项目到另一个项目。
+    - 拖动**功能**从一个项目到另一个项目。
 
-    -   对于每项功能打开快捷菜单，选择**剪切**，打开你想要移动功能，然后选择该项目的快捷菜单**粘贴**。
+    - 对于每项功能打开快捷菜单，选择**剪切**，打开你想要移动功能，然后选择该项目的快捷菜单**粘贴**。
 
     > [!NOTE]
     >  如果解决方案中包含多个 SharePoint 项目，请使用此过程。
@@ -58,9 +58,9 @@ ms.locfileid: "56596420"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要验证的 SharePoint 功能或包
 
-1.  打开**打包资源管理器**。
+1. 打开**打包资源管理器**。
 
-2.  功能或包中，打开快捷菜单，然后选择**验证**。
+2. 功能或包中，打开快捷菜单，然后选择**验证**。
 
 ## <a name="see-also"></a>请参阅
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

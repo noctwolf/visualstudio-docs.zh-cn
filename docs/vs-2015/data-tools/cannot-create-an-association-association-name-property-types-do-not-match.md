@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065102"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>无法创建关联&lt;关联名称&gt; - 属性类型不匹配
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 无法创建关联 \<关联名称> - 属性类型不匹配。 属性没有匹配的类型：\<属性名称>。  
   
  关联由在“关联编辑器”对话框中选择的“关联属性”定义。 关联双方的属性必须具有相同的数据类型。  
@@ -28,13 +27,13 @@ ms.locfileid: "58935744"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
-1.  检查消息并记下消息中报告的属性。  
+1. 检查消息并记下消息中报告的属性。  
   
-2.  单击“确定”关闭对话框。  
+2. 单击“确定”关闭对话框。  
   
-3.  检查“关联属性”并选择数据类型相同的属性。  
+3. 检查“关联属性”并选择数据类型相同的属性。  
   
-4.  单击 **“确定”**。  
+4. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建 LINQ to SQL 类 （O/R 设计器） 之间的关联 （关系）](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096902"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 
@@ -75,7 +75,7 @@ ms.locfileid: "58415039"
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证
 
-1. 创建一个新**类库**项目。 此项目将包含层验证类。
+1. 创建新的“类库”项目。 此项目将包含层验证类。
 
 2. 查找或创建**VSIX 项目**解决方案中。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。
 
@@ -83,9 +83,9 @@ ms.locfileid: "58415039"
 
 4. 在 **source.extension.vsixmanifest**中的“资产” 下，将层验证项目添加为 MEF 组件：
 
-    1.  选择 **“新建”**。
+    1. 选择 **“新建”**。
 
-    2.  在“添加新资产”  对话框中，进行如下设置：
+    2. 在“添加新资产”  对话框中，进行如下设置：
 
          **类型** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ ms.locfileid: "58415039"
 
 5. 还必须将其添加为层验证：
 
-    1.  选择 **“新建”**。
+    1. 选择 **“新建”**。
 
-    2.  在“添加新资产”  对话框中，进行如下设置：
+    2. 在“添加新资产”  对话框中，进行如下设置：
 
          **类型** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**。 这并不是下拉列表中的选项。 必须从键盘输入。
 
@@ -125,7 +125,7 @@ ms.locfileid: "58415039"
 
 9. 若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
 
-##  <a name="programming"></a> 验证编程
+## <a name="programming"></a> 验证编程
 
 若要定义层验证扩展，可以定义一个具有以下特征的类：
 
@@ -194,7 +194,7 @@ ms.locfileid: "58415039"
 
 代码中从层到元素的链接具有“Represents”类别。
 
-##  <a name="debugging"></a> 调试验证
+## <a name="debugging"></a> 调试验证
 
 若要调试你的层验证扩展，请按 Ctrl + F5。 这将打开一个 Visual Studio 实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。
 
@@ -226,7 +226,7 @@ ms.locfileid: "58415039"
 
 若要在安装了适当版本的 Visual Studio 的计算机上安装验证扩展，请打开目标计算机上的 VSIX 文件。
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

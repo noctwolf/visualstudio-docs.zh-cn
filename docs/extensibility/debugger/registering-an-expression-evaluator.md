@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073359"
 ---
 # <a name="register-an-expression-evaluator"></a>注册表达式计算器
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>DLL 服务器进程
  当注册 EE，DLL 服务器：
 
-1.  注册类工厂`CLSID`根据正常 COM 约定。
+1. 注册类工厂`CLSID`根据正常 COM 约定。
 
-2.  调用帮助器函数`SetEEMetric`若要通过 Visual Studio 注册以下表中所示的 EE 度量值。 该函数`SetEEMetric`，按以下方式指定的度量值的一部分*dbgmetric.lib*库。 请参阅[用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)有关详细信息。
+2. 调用帮助器函数`SetEEMetric`若要通过 Visual Studio 注册以下表中所示的 EE 度量值。 该函数`SetEEMetric`，按以下方式指定的度量值的一部分*dbgmetric.lib*库。 请参阅[用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)有关详细信息。
 
     |指标|描述|
     |------------|-----------------|
@@ -120,10 +120,10 @@ namespace EEMC
     > [!NOTE]
     >  `metricLanguage``GUID`标识的名称，但它的语言是`guidLang`参数`SetEEMetric`选择语言。 当编译器生成调试信息文件时，它应编写相应`guidLang`以便 DE 知道要使用哪个 EE。 DE 通常会符号提供程序要求此语言`GUID`，它存储在调试信息文件。
 
-3.  注册 Visual Studio，通过创建密钥下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*，其中*X.Y*是 Visual Studio 将注册到的版本。
+3. 注册 Visual Studio，通过创建密钥下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*，其中*X.Y*是 Visual Studio 将注册到的版本。
 
 ### <a name="example"></a>示例
- 以下函数显示非托管的代码 （c + +） EE 如何注册和注销本身与 Visual Studio。
+ 以下函数将显示如何将非托管代码 (C++) EE 注册并使用 Visual Studio 中取消注册自身。
 
 ```cpp
 /*---------------------------------------------------------

@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068699"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>如何：调试可执行文件不属于 Visual Studio 解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ ms.locfileid: "58934102"
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>为现有的可执行文件创建 EXE 项目  
   
-1.  上**文件**菜单上，单击**打开**，然后选择**项目**。  
+1. 上**文件**菜单上，单击**打开**，然后选择**项目**。  
   
-2.  在**打开项目**对话框中，单击下拉列表列出到下的一步**文件名**，然后选择**所有项目文件**。  
+2. 在**打开项目**对话框中，单击下拉列表列出到下的一步**文件名**，然后选择**所有项目文件**。  
   
-3.  找到可执行文件，并单击**确定**。  
+3. 找到可执行文件，并单击**确定**。  
   
      这将创建一个包含该可执行文件的临时解决方案。  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>将可执行文件导入到 Visual Studio 解决方案  
   
-1.  上**文件**菜单，依次指向**添加项目**，然后单击**现有项目**。  
+1. 上**文件**菜单，依次指向**添加项目**，然后单击**现有项目**。  
   
-2.  在**添加现有项目**对话框中，单击下拉列表列出到下的一步**文件名**，然后选择**所有项目文件**。  
+2. 在**添加现有项目**对话框中，单击下拉列表列出到下的一步**文件名**，然后选择**所有项目文件**。  
   
-3.  找到并选择可执行文件。  
+3. 找到并选择可执行文件。  
   
-4.  单击 **“确定”**。  
+4. 单击 **“确定”**。  
   
-5.  选择执行命令，如启动可执行文件**启动**，从**调试**菜单。  
+5. 选择执行命令，如启动可执行文件**启动**，从**调试**菜单。  
   
     > [!NOTE]
     >  并非所有编程语言都支持 EXE 项目。 如果需要使用此功能，请安装 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]。  

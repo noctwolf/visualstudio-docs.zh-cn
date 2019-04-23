@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072248"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58930824"
   
  编辑器中指定的字段组的规则的规则设置的树状结构中显示的规则。 若要添加或删除规则集中的规则，请执行一个或多个以下步骤：  
   
--   选择或清除要添加或删除组中的所有规则的组节点的复选框。 当选择一个组时，所有规则均都设置为**警告**操作。  
+- 选择或清除要添加或删除组中的所有规则的组节点的复选框。 当选择一个组时，所有规则均都设置为**警告**操作。  
   
--   单击**操作**字段的一个组，然后指定要应用于组中的所有规则的操作。  
+- 单击**操作**字段的一个组，然后指定要应用于组中的所有规则的操作。  
   
--   选择或清除各个规则的复选框。 当选择规则的复选框时，该规则设置为警告操作。  
+- 选择或清除各个规则的复选框。 当选择规则的复选框时，该规则设置为警告操作。  
   
 ## <a name="rule-set-editor-toolbar"></a>规则集编辑器工具栏  
  可以使用规则集编辑器的工具栏来分组、 筛选和搜索规则集网格中显示的数据。  
@@ -73,6 +73,6 @@ ms.locfileid: "58930824"
 ## <a name="sorting-and-filtering-rule-sets"></a>排序和筛选规则集  
  从规则集网格的列标题，您可以进行排序和筛选规则的字段的值。  
   
--   若要排序的规则集列表，请单击想要进行排序所依据的字段的列标题。 如果规则集进行分组，每个组均单独进行排序。  
+- 若要排序的规则集列表，请单击想要进行排序所依据的字段的列标题。 如果规则集进行分组，每个组均单独进行排序。  
   
--   若要筛选的字段值的规则集，单击想要筛选所依据的字段的列标题上的筛选器按钮。 选中你想要显示的值的复选框并清除你想要隐藏的值的复选框。
+- 若要筛选的字段值的规则集，单击想要筛选所依据的字段的列标题上的筛选器按钮。 选中你想要显示的值的复选框并清除你想要隐藏的值的复选框。

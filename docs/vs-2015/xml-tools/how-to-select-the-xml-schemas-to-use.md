@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091469"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 “XML 编辑器”提供的架构缓存位于 %InstallDir%\Xml\Schemas 目录。 架构缓存中包括用于智能感知和 XML 文档验证的常见 XML 架构。  
   
  **架构**文档属性用于选择一个或多个 XML 架构定义语言 (XSD) 架构使用。 使用该属性可以从架构缓存中选择架构，也可以指定不在缓存中的架构。  
@@ -51,23 +50,23 @@ ms.locfileid: "58933125"
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>将 XML 架构添加到架构缓存中  
   
-1.  在文档属性窗口中，单击上按钮**架构**字段。  
+1. 在文档属性窗口中，单击上按钮**架构**字段。  
   
-2.  单击 **添加**。  
+2. 单击 **添加**。  
   
      这将打开**打开 XSD 架构**对话框。  
   
-3.  浏览并选择要添加到架构缓存的架构。  
+3. 浏览并选择要添加到架构缓存的架构。  
   
-4.  单击“打开”。  
+4. 单击“打开”。  
   
      添加到架构的架构缓存，并且**使用**列的值设置为**使用此架构**。  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>从架构缓存中删除 XML 架构  
   
-1.  在文档属性窗口中，单击上按钮**架构**字段。  
+1. 在文档属性窗口中，单击上按钮**架构**字段。  
   
-2.  选择要删除，然后单击的架构**删除**。  
+2. 选择要删除，然后单击的架构**删除**。  
   
      此架构即会从内存中的架构缓存中移除，但不会从文件系统中移除。  
   

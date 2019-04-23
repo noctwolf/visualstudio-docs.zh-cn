@@ -19,23 +19,22 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2a0831ea2220877d020b3e109460c560a1d6694
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796901"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668400"
 ---
 # <a name="generateresource-task"></a>GenerateResource 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 将文本 .txt 和 .resx（基于 XML 的资源格式）文件转换为公共语言运行时二进制 .resources 文件，这些 .resources 文件可嵌入到运行时二进制可执行文件中或编译到附属程序集中。 此任务通常用于将 .txt 或 .resx 文件转换为 .resource 文件。 `GenerateResource` 任务在功能上类似于 [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `GenerateResource` 任务的参数。  
   
-|参数|说明​​|  
+|参数|描述|  
 |---------------|-----------------|  
 |`AdditionalInputs`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 包含此任务完成的依赖项检查的其他输入。 例如，项目和目标通常应该为输入，以便在对它们进行更新时，所有资源都重新生成。|  
 |`EnvironmentVariables`|可选 `String[]` 参数。<br /><br /> 除（或选择性替代）常规环境块外，还指定应传递到生成的 resgen.exe 中的环境变量的名称/值对数组。|  
@@ -48,7 +47,7 @@ ms.locfileid: "54796901"
 |`PublicClass`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会将强类型的资源类创建为公共类。|  
 |`References`|可选 `String[]` 参数。<br /><br /> 要从中加载 .resx 文件中的类型的引用。 Resx 文件数据元素可能具有 .NET 类型。 读取 .resx 文件时，必须对此进行解析。 通常，使用标准类型加载规则可成功解析。 如果在 `References` 中提供程序集，则它们具有优先级。<br /><br /> 强类型资源不要求此参数。|  
 |`SdkToolsPath`|可选 `String` 参数。<br /><br /> 指定 SDK 工具（例如 resgen.exe）的路径。|  
-|`Sources`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要转换的项。 传递到此参数的项必须具有以下文件扩展名之一：<br /><br /> -   `.txt`：指定要转换的文本文件的扩展名。 文本文件只能包含字符串资源。<br />-   `.resx`：指定要转换的基于 XML 的资源文件的扩展名。<br />-   `.restext`：指定相同的格式为 .txt。 如果要在生成过程中明确区分包含资源的源文件与其他源文件，则这个不相同的扩展名非常有用。<br />-   `.resources`：指定要转换的资源文件的扩展名。|  
+|`Sources`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要转换的项。 传递到此参数的项必须具有以下文件扩展名之一：<br /><br /> -   `.txt`：指定要转换的文本文件的扩展名。 文本文件只能包含字符串资源。<br />-   `.resx`：指定要转换的基于 XML 的资源文件的扩展名。<br />-   `.restext`：指定相同的格式为.txt。 如果要在生成过程中明确区分包含资源的源文件与其他源文件，则这个不相同的扩展名非常有用。<br />-   `.resources`：指定要转换的资源文件的扩展名。|  
 |`StateFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定用于加速 .resx 输入文件中链接的依赖项检查的可选缓存文件的路径。|  
 |`StronglyTypedClassName`|可选 `String` 参数。<br /><br /> 指定强类型资源类的类名。 如果未指定此参数，则使用资源文件的基名称。|  
 |`StronglyTypedFilename`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定源文件的文件名。 如果未指定此参数，则会将类的名称用作基文件名，其扩展名取决于语言。 例如：`MyClass.cs`。|  
@@ -57,11 +56,11 @@ ms.locfileid: "54796901"
 |`StronglyTypedNamespace`|可选 `String` 参数。<br /><br /> 指定要用于强类型资源的生成类源的命名空间。 如果未指定此参数，则任何强类型资源都会位于全局命名空间中。|  
 |`TLogReadFiles`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读参数。<br /><br /> 获取表示读取跟踪日志的项的数组。|  
 |`TLogWriteFiles`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读参数。<br /><br /> 获取表示写入跟踪日志的项的数组。|  
-|`ToolArchitecture`|可选 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 用于确定是否需要使用 Tracker.exe 来生成 ResGen.exe。<br /><br /> 应解析为 <xref:Microsoft.Build.Utilities.ExecutableType> 枚举的成员。 如果为 `String.Empty`，请使用启发式方法来确定默认体系结构。 应对 Microsoft.Build.Utilities.ExecutableType 枚举的成员可解析。|  
-|`TrackerFrameworkPath`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定其中包含 FileTracker.dll 的适当 .NET Framework 位置的路径。<br /><br /> 如果设置此参数，则用户应负责确保其传递的 FileTracker.dll 的位数与其要使用的 ResGen.exe 的位数相匹配。 如果未设置，则任务会基于当前的 .NET Framework 版本决定合适的位置。|  
-|`TrackerLogDirectory`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定用于放置运行此任务生成的跟踪日志的中间目录。|  
-|`TrackerSdkPath`|可选 <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定包含 Tracker.exe 的适当 Windows SDK 位置的路径。<br /><br /> 如果设置此参数，则用户应负责确保其传递的 Tracker.exe 的位数与其要使用的 ResGen.exe 的位数相匹配。 如果未设置，则任务会基于当前的 Windows SDK 决定合适的位置。|  
-|`TrackFileAccess`|可选 [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果为 true，则使用输入文件的目录来解析相对文件路径。|  
+|`ToolArchitecture`|可选 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 用于确定是否需要使用 Tracker.exe 来生成 ResGen.exe。<br /><br /> 应解析为 <xref:Microsoft.Build.Utilities.ExecutableType> 枚举的成员。 如果为 `String.Empty`，请使用启发式方法来确定默认体系结构。 应对 Microsoft.Build.Utilities.ExecutableType 枚举的成员可解析。|  
+|`TrackerFrameworkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定其中包含 FileTracker.dll 的适当 .NET Framework 位置的路径。<br /><br /> 如果设置此参数，则用户应负责确保其传递的 FileTracker.dll 的位数与其要使用的 ResGen.exe 的位数相匹配。 如果未设置，则任务会基于当前的 .NET Framework 版本决定合适的位置。|  
+|`TrackerLogDirectory`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定用于放置运行此任务生成的跟踪日志的中间目录。|  
+|`TrackerSdkPath`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定包含 Tracker.exe 的适当 Windows SDK 位置的路径。<br /><br /> 如果设置此参数，则用户应负责确保其传递的 Tracker.exe 的位数与其要使用的 ResGen.exe 的位数相匹配。 如果未设置，则任务会基于当前的 Windows SDK 决定合适的位置。|  
+|`TrackFileAccess`|可选 [布尔] (<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果为 true，则使用输入文件的目录来解析相对文件路径。|  
 |`UseSourcePath`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则指定使用输入文件的目录来解析相对文件路径。|  
   
 ## <a name="remarks"></a>备注  

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c3f00c8cd0c9289c9b9c8d948502f9d614934ae
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082940"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 设计器中插入控件并修改其行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "57867334"
   
  **在本主题中：**  
   
--   [向美工板添加控件](#Insert)  
+- [向美工板添加控件](#Insert)  
   
--   [使控件执行操作](#Modify)  
+- [使控件执行操作](#Modify)  
   
-##  <a name="Insert"></a> 向美工板添加控件  
+## <a name="Insert"></a> 向美工板添加控件  
  可以将控件从“资产”  面板拖到“美工板” ，然后在“属性”  窗口中进行修改。  
   
  ![Blend - 资产 - FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -42,8 +42,6 @@ ms.locfileid: "57867334"
 |`Slider` ![](../designers/media/bf689d92-3c74-4218-815c-e98c930ac189.png "bf689d92-3c74-4218-815c-e98c930ac189")|![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG " BldAdminConsoleInitialConfigIcon") [生成带工具提示的滑块](http://www.bing.com/videos/search?q=slider%20expression%20blend&qs=n&form=QBVR&pq=slider%20expression%20blend&sc=1-23&sp=-1&sk=#view=detail&mid=F1BB7DB91B2772A8CA2AF1BB7DB91B2772A8CA2A)|  
 |`GridSplitter` ![](../designers/media/d08d529f-a27e-4a8f-95aa-8a4e8b4ee7be.png "d08d529f-a27e-4a8f-95aa-8a4e8b4ee7be")|![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG " BldAdminConsoleInitialConfigIcon") [使用 GridSplitter](https://www.youtube.com/watch?v=bf4t6c8ms2w)|          
 
- 
-  
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>使用图像、形状或路径创建控件  
  可以使任何对象都成为控件。  
   
@@ -55,26 +53,26 @@ ms.locfileid: "57867334"
   
  若要创建控件，请选择对象。 然后在“工具”  菜单上，单击“创建控件” 。  
   
-##  <a name="Modify"></a> 使控件执行操作  
+## <a name="Modify"></a> 使控件执行操作  
  控件可以在用户与之交互时执行操作。 例如，这些操作可以启动动画、更新数据源或播放视频。  
   
  使用 *触发器*、 *行为*和 *事件* 可使控件执行操作。  
   
-### <a name="triggers"></a>触发器  
+### <a name="triggers"></a>Triggers  
  *触发器* 更改属性或执行任务以响应事件或另一个属性中的更改。 例如，可以在用户将鼠标指针悬停在按钮上方时更改按钮的颜色。  
   
  ![“触发器”面板](../designers/media/custom-button-blend-propertytriggerinfo.png "custom_button_blend_PropertyTriggerInfo")  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加属性触发器](http://www.popscreen.com/v/6A4gO/Microsoft-Expression-Blend-Adding-a-Property-Trigger)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加属性触发器](http://www.popscreen.com/v/6A4gO/Microsoft-Expression-Blend-Adding-a-Property-Trigger)。  
   
-### <a name="behaviors"></a>行为  
+### <a name="behaviors"></a>Behaviors  
  *行为* 是可重复重用的代码包。 它发挥的作用比更改属性稍微多一点。 它可以执行操作，例如查询数据服务。 Blend 附带了连A小型集合，但可以添加更多。 将行为拖动到到你美工板中的任何对象，然后通过设置属性来自定义行为。  
   
  ![“属性”面板中的 FluidMoveBehavior](../designers/media/b4-fluidmovebehaviorproperties-sample.png "b4_FluidMoveBehaviorProperties_Sample")  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Blend 提示：使用行为见解第 1 部分](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [混合提示：使用行为简介第 1 部分](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904)。  
   
 ### <a name="events"></a>事件  
  最获得最佳灵活性，请处理 *事件*。 必须编写一些代码。  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加鼠标事件](https://www.youtube.com/watch?v=2PMxAlb-x_E)。
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加鼠标事件](https://www.youtube.com/watch?v=2PMxAlb-x_E)。

@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069531"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "58937251"
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>从 ClickOnce 应用程序获取查询字符串信息  
   
-1.  将以下代码置于项目中。 若要使此代码正常运行，必须具有对 System.Web 的引用，并且为 System.Web、System.Collections.Specialized 和 System.Deployment.Application 添加 `using` 或 `Imports` 语句。  
+1. 将以下代码置于项目中。 若要使此代码正常运行，必须具有对 System.Web 的引用，并且为 System.Web、System.Collections.Specialized 和 System.Deployment.Application 添加 `using` 或 `Imports` 语句。  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  调用以前定义的函数以检索查询字符串参数的 <xref:System.Collections.DictionaryBase.Dictionary%2A> （按名称编制索引）。  
+2. 调用以前定义的函数以检索查询字符串参数的 <xref:System.Collections.DictionaryBase.Dictionary%2A> （按名称编制索引）。  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>使用 MageUI.exe 在 ClickOnce 应用程序中启用查询字符串传递  
   
-1.  打开 .NET 命令提示符并输入：  
+1. 打开 .NET 命令提示符并输入：  
   
     ```  
     MageUI  
     ```  
   
-2.  在“文件”  菜单中，选择“打开” ，然后打开 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的部署清单（这是以 `.application` 扩展名结尾的文件）。  
+2. 在“文件”  菜单中，选择“打开” ，然后打开 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的部署清单（这是以 `.application` 扩展名结尾的文件）。  
   
-3.  在左侧导航窗口中选择“部署选项”  面板，然后选中“允许向应用程序传递 URL 参数”  复选框。  
+3. 在左侧导航窗口中选择“部署选项”  面板，然后选中“允许向应用程序传递 URL 参数”  复选框。  
   
-4.  在“文件”  菜单中选择“保存” 。  
+4. 在“文件”  菜单中选择“保存” 。  
   
 > [!NOTE]
 >  或者，可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中启用查询字符串传递。 选中“允许向应用程序传递 URL 参数”  复选框（可以通过打开“项目属性” ，选择“发布”  选项卡，单击“选项”  按钮，然后选择“清单” 来找到该复选框）。  

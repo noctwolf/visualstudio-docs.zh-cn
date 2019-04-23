@@ -18,22 +18,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d7656d3b0ac887ec33cae5dad7c391fa0639fc3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777087"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660679"
 ---
 # <a name="markupcompilepass2-task"></a>MarkupCompilePass2 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> 任务对引用同一项目中的类型的 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 文件执行第二轮标记编译。  
   
 ## <a name="task-parameters"></a>任务参数  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|可选 **Boolean** 参数。<br /><br /> 指定是否在单独的 <xref:System.AppDomain> 下运行该任务。 如果此参数返回 false，则任务将在与 [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] 相同的 <xref:System.AppDomain> 中运行，且运行速度更快。 如果该参数返回 true，则任务将在独立于 [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] 的另一个 <xref:System.AppDomain> 中运行，且运行速度更慢。|  
 |`AssembliesGeneratedDuringBuild`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，[!INCLUDE[TLA#tla_visualstu2005](../includes/tlasharptla-visualstu2005-md.md)] 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild**。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 必须包含对生成解决方案所生成的一组完整程序集的引用。|  

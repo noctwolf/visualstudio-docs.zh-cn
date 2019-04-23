@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2aa44ee0d7d4a1b9965e653ac089c4c5dd78821b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108550"
 ---
 # <a name="attach"></a>Attach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  Timer[:`Cycles`]PF[:`Events`]Sys[:Events]Counter[:`Name`,`Reload`,`FriendlyName`]  
  指定采样间隔的数量和类型。  
   
--   Timer - 每 `Cycles` 个处理器时钟周期采样一次。 如果未指定 `Cycles`，则使用 10,000,000 个周期。  
+- Timer - 每 `Cycles` 个处理器时钟周期采样一次。 如果未指定 `Cycles`，则使用 10,000,000 个周期。  
   
--   PF - 每 `Events` 个页面错误采样一次。 如果未指定 `Events`，则使用 10 个页面错误。  
+- PF - 每 `Events` 个页面错误采样一次。 如果未指定 `Events`，则使用 10 个页面错误。  
   
--   Sys - 每 `Events` 次操作系统调用采样一次。 如果未指定 `Events`，则使用 10 次系统调用。  
+- Sys - 每 `Events` 次操作系统调用采样一次。 如果未指定 `Events`，则使用 10 次系统调用。  
   
--   Counter - 每 `Reload` 个 `Name` 所指定的 CPU 性能计数器采样一次。 或者，`FriendlyName` 可指定一个字符串，将其用作探查器报告中的列标头。  
+- Counter - 每 `Reload` 个 `Name` 所指定的 CPU 性能计数器采样一次。 或者，`FriendlyName` 可指定一个字符串，将其用作探查器报告中的列标头。  
   
 ## <a name="example"></a>示例  
  此示例演示如何附加到进程 ID 为 12345 的正在运行的应用程序实例。  

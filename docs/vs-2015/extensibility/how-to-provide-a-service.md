@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 082e8db8793850319f02586ba3894da8775e6ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108175"
 ---
 # <a name="how-to-provide-a-service"></a>如何：提供服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
   
 ### <a name="registering-a-service"></a>注册服务  
   
-1.  若要注册一个服务，将添加<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到 VSPackage 提供服务。 下面是一个示例：  
+1. 若要注册一个服务，将添加<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到 VSPackage 提供服务。 下面是一个示例：  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -95,7 +95,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
   
 ### <a name="adding-a-service"></a>添加服务  
   
-1.  1.  VSPackage 初始值设定项中添加服务和一个用于创建服务的回调方法。 下面是要为进行的更改<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：  
+1. 1.  VSPackage 初始值设定项中添加服务和一个用于创建服务的回调方法。 下面是要为进行的更改<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法：  
   
     ```csharp  
     protected override void Initialize()  
@@ -107,7 +107,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
     }  
     ```  
   
-2.  实现回调方法，这应创建并返回该服务，或如果无法创建，则为 null。  
+2. 实现回调方法，这应创建并返回该服务，或如果无法创建，则为 null。  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -121,7 +121,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
     > [!NOTE]
     >  Visual Studio 可以拒绝的请求提供服务。 它是如果另一个 VSPackage 已经提供了该服务。  
   
-3.  现在，您可以获取该服务，使用它的方法。 我们将介绍这在初始值设定项，但您可以获取的服务任意位置你想要使用服务。  
+3. 现在，您可以获取该服务，使用它的方法。 我们将介绍这在初始值设定项，但您可以获取的服务任意位置你想要使用服务。  
   
     ```csharp  
     protected override void Initialize()  

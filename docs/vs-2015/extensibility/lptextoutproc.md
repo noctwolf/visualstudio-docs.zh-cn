@@ -16,12 +16,12 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5006fb95b2afbe67fd4420caff5885322067eacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100503"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  消息的类型。 下表列出了支持此参数的值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息将被视为信息、 警告或错误。|  
 |`SCC_MSG_STATUS`|显示状态消息，并可以在状态栏中显示。|  
@@ -61,7 +61,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>返回值  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|显示的字符串或操作已成功完成。|  
 |SCC_MSG_RTN_CANCEL|用户想要取消该操作。|  
@@ -71,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>结构  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -81,7 +81,7 @@ typedef struct {
   
  此结构发送与`SCC_MSG_BACKGROUND_IS_CANCELLED`消息。 它用于通信的后台操作已取消的 ID。  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -92,7 +92,7 @@ typedef struct {
   
  此结构发送与`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`消息。 它用于通信要检索的文件的名称和正在执行的操作检索的后台操作的 ID。  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -104,7 +104,7 @@ typedef struct {
   
  此结构发送与`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`消息。 它用于检索指定的文件，以及未检索的后台操作的 ID 的结果进行通信。 请参阅的返回值[SccGet](../extensibility/sccget-function.md)有关什么可以给出结果。  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

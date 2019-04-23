@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f055ba84c4e6a6b48c13f3eef9a433eb4c5b3e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085709"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：向工作表添加 XMLMappedRange 控件
   在将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动添加<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>到工作表中的控件。
@@ -30,30 +30,30 @@ ms.locfileid: "56605840"
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>若要向工作表添加 XMLMappedRange 控件
 
-1.  在 Visual Studio 设计器中打开 Excel 工作簿。
+1. 在 Visual Studio 设计器中打开 Excel 工作簿。
 
-2.  打开你想要将控件添加的工作表。
+2. 打开你想要将控件添加的工作表。
 
-3.  上**开发人员**选项卡上，单击**源**。
+3. 上**开发人员**选项卡上，单击**源**。
 
     > [!NOTE]
     >  如果**开发人员**选项卡不在功能区上可见，则必须启用它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
      **XML 源**此时将显示任务窗格。
 
-4.  在中**XML 源**任务窗格中，单击**XML 映射**。
+4. 在中**XML 源**任务窗格中，单击**XML 映射**。
 
-5.  在中**XML 映射**对话框中，单击**添加**。
+5. 在中**XML 映射**对话框中，单击**添加**。
 
      **XML 源**对话框随即出现。
 
-6.  选择从 XML 架构**XML 源**对话框中，单击**打开**。
+6. 选择从 XML 架构**XML 源**对话框中，单击**打开**。
 
      该架构添加到**XML 映射**对话框。
 
-7.  在中**XML 映射**对话框中，单击**确定**。
+7. 在中**XML 映射**对话框中，单击**确定**。
 
-8.  将从一个元素**XML 源**到工作表上的单元的任务窗格。
+8. 将从一个元素**XML 源**到工作表上的单元的任务窗格。
 
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>被创建并添加到项目。
 

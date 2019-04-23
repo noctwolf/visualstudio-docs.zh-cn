@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061549"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的“开始”菜单名称
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58935122"
   
 ### <a name="to-specify-a-start-menu-name"></a>若要指定的开始菜单名称  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击“发布”选项卡。  
+2. 单击“发布”选项卡。  
   
-3.  单击**选项**按钮以打开**发布选项**对话框。  
+3. 单击**选项**按钮以打开**发布选项**对话框。  
   
-4.  单击**说明**。  
+4. 单击**说明**。  
   
-5.  在中**发布选项**对话框框中，输入要在中显示的名称**产品名称**。  
+5. 在中**发布选项**对话框框中，输入要在中显示的名称**产品名称**。  
   
-6.  或者，可以输入中的发布服务器名称**发布服务器名称**。  
+6. 或者，可以输入中的发布服务器名称**发布服务器名称**。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048187"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>如何：设置调试和发布配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
   
 ### <a name="to-change-the-build-configuration"></a>更改生成配置  
   
-1.  从生成菜单： 单击**生成 / Configuration Manager**，然后选择**调试**或**发行**。  
+1. 从生成菜单： 单击**生成 / Configuration Manager**，然后选择**调试**或**发行**。  
   
-2.  在工具栏中，选择**调试**或**发行**从**解决方案配置**列表框。  
+2. 在工具栏中，选择**调试**或**发行**从**解决方案配置**列表框。  
   
      ![工具栏生成配置](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

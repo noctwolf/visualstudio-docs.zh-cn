@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049537"
 ---
 # <a name="addressing-dpi-issues"></a>解决 DPI 问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  若要从 Visual Studio 环境中运行的托管代码访问 DPI 帮助器函数：  
   
--   使用的项目必须引用 Shell MPF 的最新版本。 例如：  
+- 使用的项目必须引用 Shell MPF 的最新版本。 例如：  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   请确保项目具有对引用**System.Windows.Forms**， **PresentationCore**，并**PresentationUI**。  
+- 请确保项目具有对引用**System.Windows.Forms**， **PresentationCore**，并**PresentationUI**。  
   
--   在代码中，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 类的命名空间和调用静态函数。 对于支持的类型 （点、 大小、 矩形等），没有提供扩展函数返回新的扩展对象。 例如：  
+- 在代码中，使用**Microsoft.VisualStudio.PlatformUI** DpiHelper 类的命名空间和调用静态函数。 对于支持的类型 （点、 大小、 矩形等），没有提供扩展函数返回新的扩展对象。 例如：  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  由于 WPF 针对使用 BitmapScalingMode 属性 UIElement 上设置的当前 DPI 缩放用户界面，应使用 prescaled 的映像，因为其源将查找两个或三个时间比它更大的图像控件。 以下是几种方法，若要避免这种效果：  
   
--   如果您知道在 100%原始图像的维度，可以指定图像控件的确切大小。 这些大小将反映应用缩放前 UI 的大小。  
+- 如果您知道在 100%原始图像的维度，可以指定图像控件的确切大小。 这些大小将反映应用缩放前 UI 的大小。  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   如果不知道原始图像的大小，可以使用 LayoutTransform 缩减最终图像对象。 例如：  
+- 如果不知道原始图像的大小，可以使用 LayoutTransform 缩减最终图像对象。 例如：  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>提示  
   
-1.  如果 WebOC 控件上的文档属性发生更改，可能需要将文档与 IDocHostUIHandler 类重新关联。  
+1. 如果 WebOC 控件上的文档属性发生更改，可能需要将文档与 IDocHostUIHandler 类重新关联。  
   
-2.  如果以上命令无效，则不选取更改为 DPI 标志 WebOC 的已知的问题。 修复此问题的最可靠方法是切换 WebOC 含义使用两个不同的缩放百分比值的两个调用视觉缩放。 此外，如果需要此解决方法，它可能需要执行导航的每个调用上。  
+2. 如果以上命令无效，则不选取更改为 DPI 标志 WebOC 的已知的问题。 修复此问题的最可靠方法是切换 WebOC 含义使用两个不同的缩放百分比值的两个调用视觉缩放。 此外，如果需要此解决方法，它可能需要执行导航的每个调用上。  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

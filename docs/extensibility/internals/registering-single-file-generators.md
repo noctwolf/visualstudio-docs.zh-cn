@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047184"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 若要使自定义工具中可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，因此必须注册该[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以实例化并将其关联与特定项目类型。
@@ -38,15 +38,15 @@ ms.locfileid: "56603647"
 
 2. 创建注册表项中的所需[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]hive 下生成器\\*GUID*其中*GUID*由特定语言的项目系统或服务定义 GUID。 密钥的名称将成为您的自定义工具的编程名称。 自定义工具密钥具有以下值：
 
-   -   (默认)
+   - (默认)
 
         可选。 提供自定义工具的用户友好说明。 此参数是可选的但建议这样做。
 
-   -   CLSID
+   - CLSID
 
         必需。 指定实现的 COM 组件的类库的标识符<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         必需。 指示是否通过此自定义工具生成的文件中的类型将提供给可视化设计器。 此参数的值必须是类型向可视化设计器不可用 （零） 0 或类型可用于可视化设计器 （一个） 1。
 

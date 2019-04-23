@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064955"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>如何：使用 RPC 调试来调试 COM 客户端和服务器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58932499"
   
 ### <a name="to-enable-rpc-debugging"></a>启用 RPC 调试  
   
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在“选项”对话框中，单击“调试”文件夹。  
+2. 在“选项”对话框中，单击“调试”文件夹。  
   
-3.  单击“本机”页。  
+3. 单击“本机”页。  
   
-4.  选中“RPC 调试”复选框。  
+4. 选中“RPC 调试”复选框。  
   
     > [!NOTE]
     >  必须拥有“管理员”或“超级用户”权限，才能调试 RPC 调用。  

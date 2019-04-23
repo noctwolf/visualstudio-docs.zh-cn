@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117624"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和移除项目依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ ms.locfileid: "54799767"
   
 ### <a name="to-remove-dependencies-from-projects"></a>删除项目中的依赖项  
   
-1.  在“解决方案资源管理器”中，选择一个项目。  
+1. 在“解决方案资源管理器”中，选择一个项目。  
   
-2.  在“项目”菜单上，选择“项目依赖项”。  
+2. 在“项目”菜单上，选择“项目依赖项”。  
   
      “项目依赖项”对话框随即打开。  
   
     > [!NOTE]
     >  “项目依赖项”选项仅可在具有多个项目的解决方案中使用。  
   
-3.  从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。  
+3. 从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。  
   
-4.  在“依赖对象”字段中，清除不再属于此项目依赖项的任何其他项目的复选框。  
+4. 在“依赖对象”字段中，清除不再属于此项目依赖项的任何其他项目的复选框。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

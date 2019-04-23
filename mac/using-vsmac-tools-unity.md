@@ -3,14 +3,14 @@ title: 使用 Visual Studio for Mac Tools for Unity
 description: 本指南介绍如何使用 Visual Studio for Mac Tools for Unity 扩展
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027297"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857003"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -103,6 +103,13 @@ Unity 编辑器的“Project”窗口会反映这些添加。
 
 3. 当游戏在连接到 Visual Studio 的情况下在 Unity 编辑器中运行时，遇到的任何断点都会中断游戏执行，并在 Visual Studio for Mac 中显示游戏遇到断点的代码行。
 
+
+### <a name="start-debugging-in-a-single-step"></a>通过单个步骤启动调试
+
+通过选择“附加到 Unity 并播放”配置，可通过一个步骤直接从 Visual Studio for Mac 完成启动调试和播放 Unity 编辑器。
+
+![选择“附加到 Unity 并播放”](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>停止调试
 
 停止调试：
@@ -110,5 +117,8 @@ Unity 编辑器的“Project”窗口会反映这些添加。
 1. 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
 
    ![在 Visual Studio 中单击“停止”](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> 如果使用“附加到 Unity 并播放”配置启动调试，“停止”按钮也将停止 Unity。
 
 有关在 Visual Studio for Mac 中调试的详细信息，请参阅[使用调试程序](debugging.md)。

@@ -9,48 +9,48 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d5858df00057298f961189173a3943f3e23d2b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 29ee765bfc11362a870d359ff0a9cdc3f633e464
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080795"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 图像内容管道可以生成与 Direct2D 的内部呈现约定相兼容的纹理。 这种类型的纹理适合在使用 Direct2D 的应用和使用 JavaScript 创建的 Windows 应用商店应用中使用。  
   
  本文档演示了这些活动：  
   
--   将源映像配置为由图像内容管道进行处理。  
+- 将源映像配置为由图像内容管道进行处理。  
   
--   配置图像内容管道以生成可在 Direct2D 或 JavaScript 应用中使用的纹理。  
+- 配置图像内容管道以生成可在 Direct2D 或 JavaScript 应用中使用的纹理。  
   
-    -   生成块压缩的 .dds 文件。  
+    - 生成块压缩的 .dds 文件。  
   
-    -   生成预乘的 Alpha。  
+    - 生成预乘的 Alpha。  
   
-    -   禁用 mipmap 生成。  
+    - 禁用 mipmap 生成。  
   
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D 中的呈现约定  
  Direct2D 的上下文中使用的纹理必须符合这些 Direct2D 内部呈现约定：  
   
--   Direct2D 通过使用预乘的 Alpha 实现透明度和半透明度。 与 Direct2D 一起使用的纹理必须包含预乘的 Alpha，即使该纹理不使用透明度或半透明度也是如此。 有关预乘的 Alpha 的详细信息，请参阅[如何：导出包含预乘的 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。  
+- Direct2D 通过使用预乘的 Alpha 实现透明度和半透明度。 与 Direct2D 一起使用的纹理必须包含预乘的 Alpha，即使该纹理不使用透明度或半透明度也是如此。 有关预乘 Alpha 的详细信息，请参阅[如何：导出包含自左乘的 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。  
   
--   必须通过使用以下块压缩格式之一以 .dds 格式应用纹理：  
+- 必须通过使用以下块压缩格式之一以 .dds 格式应用纹理：  
   
-    -   BC1_UNORM 压缩  
+    - BC1_UNORM 压缩  
   
-    -   BC2_UNORM 压缩  
+    - BC2_UNORM 压缩  
   
-    -   BC3_UNORM 压缩  
+    - BC3_UNORM 压缩  
   
--   不支持 mipmap。  
+- 不支持 mipmap。  
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>创建与 Direct2D 呈现约定相兼容的纹理  
   
-1. 从基本纹理开始。 加载现有映像，或如[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)中所述，创建一个新纹理。 若要支持 .dds 格式的块压缩，请指定宽度和高度为 4 的倍数（例如，100x100、128x128 或 256x192）的纹理。 由于不支持 mipmapping，因此纹理无需为正方形，并且大小无需为 2 的幂。  
+1. 从基本纹理开始。 加载现有映像，或如[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)。 若要支持 .dds 格式的块压缩，请指定宽度和高度为 4 的倍数（例如，100x100、128x128 或 256x192）的纹理。 由于不支持 mipmapping，因此纹理无需为正方形，并且大小无需为 2 的幂。  
   
 2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开刚刚创建的纹理文件的快捷菜单，然后选择“属性”。 在“配置属性”，常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。  
   

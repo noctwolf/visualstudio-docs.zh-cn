@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103508"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>发布页，项目设计器 （在 Visual Studio 中的 Office 开发）
   “项目设计器”  的“发布”  页面用于针对部署配置属性。
@@ -84,9 +84,9 @@ ms.locfileid: "54869666"
 
 - VSTO 外接程序加载行为。
 
-  -   启动时加载：指定 VSTO 外接程序在 Office 应用程序启动时加载。
+  - 启动时加载：指定 VSTO 外接程序在 Office 应用程序启动时加载。
 
-  -   按需加载：指定 VSTO 外接程序在应用程序需要它时加载，例如当用户单击某个用到 VSTO 外接程序中的功能的 UI 元素时加载。
+  - 按需加载：指定 VSTO 外接程序在应用程序需要它时加载，例如当用户单击某个用到 VSTO 外接程序中的功能的 UI 元素时加载。
 
   **发布语言**此选项设置的语言的 Microsoft 软件许可条款，并在系统必备组件列表中包括的语言包。 它不会影响自定义项的语言。 安装程序中的语言取决于 Visual Studio 已安装的语言。
 

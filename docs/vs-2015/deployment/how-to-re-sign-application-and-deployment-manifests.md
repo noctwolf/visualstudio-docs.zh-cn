@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045770"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单重新签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58935259"
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 重新签名的应用程序和部署清单  
   
-1.  打开**Visual Studio 命令提示符**窗口。  
+1. 打开**Visual Studio 命令提示符**窗口。  
   
-2.  将目录更改为包含要签名的清单文件的文件夹。  
+2. 将目录更改为包含要签名的清单文件的文件夹。  
   
-3.  键入以下命令以登录应用程序清单文件。 ManifestFileName 替换为你的清单文件扩展名的名称。 证书替换为证书文件的相对或完全限定路径和密码替换为证书的密码。  
+3. 键入以下命令以登录应用程序清单文件。 ManifestFileName 替换为你的清单文件扩展名的名称。 证书替换为证书文件的相对或完全限定路径和密码替换为证书的密码。  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ ms.locfileid: "58935259"
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  键入以下命令以更新并对签名部署清单文件，替换占位符名称，如在上一步中所示。  
+4. 键入以下命令以更新并对签名部署清单文件，替换占位符名称，如在上一步中所示。  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ ms.locfileid: "58935259"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  （可选） 将复制的主部署清单 (发布\\*appname*.application) 到你的版本部署目录 (publish\Application 文件\\*appname*_*版本*)。  
+5. （可选） 将复制的主部署清单 (发布\\*appname*.application) 到你的版本部署目录 (publish\Application 文件\\*appname*_*版本*)。  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>更新和重新签名的应用程序和部署清单进行签名  
  此过程假定您已更改应用程序清单文件 (.manifest)，但有其他文件进行了更新。 当文件更新时，也必须更新表示的文件的哈希。  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 更新和重新签名的应用程序和部署清单  
   
-1.  打开**Visual Studio 命令提示符**窗口。  
+1. 打开**Visual Studio 命令提示符**窗口。  
   
-2.  将目录更改为包含要签名的清单文件的文件夹。  
+2. 将目录更改为包含要签名的清单文件的文件夹。  
   
-3.  从发布输出文件夹中的文件中删除.deploy 文件扩展名。  
+3. 从发布输出文件夹中的文件中删除.deploy 文件扩展名。  
   
-4.  键入以下命令以使用更新后的文件的新哈希更新应用程序清单和应用程序清单文件进行签名。 ManifestFileName 替换为你的清单文件扩展名的名称。 证书替换为证书文件的相对或完全限定路径和密码替换为证书的密码。  
+4. 键入以下命令以使用更新后的文件的新哈希更新应用程序清单和应用程序清单文件进行签名。 ManifestFileName 替换为你的清单文件扩展名的名称。 证书替换为证书文件的相对或完全限定路径和密码替换为证书的密码。  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ ms.locfileid: "58935259"
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  键入以下命令以更新并对签名部署清单文件，替换占位符名称，如在上一步中所示。  
+5. 键入以下命令以更新并对签名部署清单文件，替换占位符名称，如在上一步中所示。  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ ms.locfileid: "58935259"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  将.deploy 文件扩展名添加到文件，但应用程序和部署清单文件。  
+6. 将.deploy 文件扩展名添加到文件，但应用程序和部署清单文件。  
   
-7.  （可选） 将复制的主部署清单 (发布\\*appname*.application) 到你的版本部署目录 (publish\Application 文件\\*appname*_*版本*)。  
+7. （可选） 将复制的主部署清单 (发布\\*appname*.application) 到你的版本部署目录 (publish\Application 文件\\*appname*_*版本*)。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   

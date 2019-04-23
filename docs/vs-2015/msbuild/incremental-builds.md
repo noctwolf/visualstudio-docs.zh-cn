@@ -11,17 +11,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a436135d4acb27e9f875d6a0bd348e37b91c06a6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758439"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654030"
 ---
 # <a name="incremental-builds"></a>增量生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 增量生成是经过优化的生成。优化后，如果目标具有的输出文件相对于其相应的输入文件保持为最新，则系统不会执行该目标。 目标元素可同时具有 `Inputs` 属性（指示目标要预期为输入的项）和 `Outputs` 属性（指示目标要生成为输出的项）。 MSBuild 尝试在这些属性的值之间找到一对一映射。 如果存在一对一映射，MSBuild 比较每个输入项的时间戳和其对应的输出项的时间戳。 不具有一对一映射的输出文件则与所有输入文件进行对比。 如果某项的输出文件的时间戳与该项的一个或多个输入文件相同，或与之相比较新，则将该项视为最新。  
   
  如果所有输出项均为最新，MSBuild 就跳过目标。 目标的这种增量生成可以显著提高生成速度。 如果只有部分文件保持为最新，MSBuild 会执行目标，但跳过最新的项，从而使所有项均保持为最新。 这叫做“部分增量生成”。  

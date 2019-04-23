@@ -17,17 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 958692d9227017eba0901ddb48a19502af9ec452
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769183"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664825"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包含用户定义的属性名和值。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目中使用的每一个属性都必须被指定为 `PropertyGroup` 元素的子元素。  
   
  \<Project>  
@@ -46,7 +45,7 @@ ms.locfileid: "54769183"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
   
@@ -55,7 +54,7 @@ ms.locfileid: "54769183"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|对属性进行分组。|  
   

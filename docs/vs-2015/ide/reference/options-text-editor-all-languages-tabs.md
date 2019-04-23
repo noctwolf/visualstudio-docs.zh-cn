@@ -21,17 +21,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c89154cef2325da8b8073ded264afeb8f765302a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a4d94aa2f9445104ab6d645d057e68186e917d12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800799"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658235"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>选项，文本编辑器，所有语言，选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用此对话框可更改代码编辑器的默认行为。 这些设置也适用于其他基于代码编辑器的编辑器，如 HTML 设计器的“源”视图。 若要显示这些选项，请选择“工具”菜单中的“选项”。 在“文本编辑器”中，展开“所有语言”子文件夹，然后选择“制表符”。  
   
 > [!CAUTION]
@@ -43,7 +42,7 @@ ms.locfileid: "54800799"
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="indenting"></a>缩进  
- 无  
+ None  
  选中后，新行不缩进。 插入点被置于新行的第一列。  
   
  块  

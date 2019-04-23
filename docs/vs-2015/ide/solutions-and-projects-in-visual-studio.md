@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b2f33af3c34cf6245e511cbd54d6ce7cc3a2bd
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045324"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ ms.locfileid: "54795247"
 
 ## <a name="in-this-section"></a>本节内容
 
--   [创建解决方案和项目](../ide/creating-solutions-and-projects.md)
+- [创建解决方案和项目](../ide/creating-solutions-and-projects.md)
 
--   [添加和删除项目项](../ide/adding-and-removing-project-items.md)
+- [添加和删除项目项](../ide/adding-and-removing-project-items.md)
 
--   [管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)
+- [管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)
 
--   [管理项目中的引用](../ide/managing-references-in-a-project.md)
+- [管理项目中的引用](../ide/managing-references-in-a-project.md)
 
--   [应用程序属性](../ide/application-properties.md)
+- [应用程序属性](../ide/application-properties.md)
 
--   [管理程序集签名和清单签名](../ide/managing-assembly-and-manifest-signing.md)
+- [管理程序集签名和清单签名](../ide/managing-assembly-and-manifest-signing.md)
 
--   [如何：指定应用程序图标（Visual Basic、C#）](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [如何：指定应用程序图标（Visual Basic、C#）](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>请参阅
  [Visual Studio IDE](../ide/visual-studio-ide.md)

@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049303"
 ---
 # <a name="supplying-undo-support-to-designers"></a>向设计器提供撤消支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ ms.locfileid: "58930620"
 ## <a name="obtaining-undo-support-automatically"></a>自动获取撤消支持  
  在中创建任何设计器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]具有自动和完全撤消支持 if、 设计器：  
   
--   利用<xref:System.Windows.Forms.Control>基于其用户界面的类。  
+- 利用<xref:System.Windows.Forms.Control>基于其用户界面的类。  
   
--   为代码生成和持久性采用标准基于 CodeDOM 的代码生成和分析系统。  
+- 为代码生成和持久性采用标准基于 CodeDOM 的代码生成和分析系统。  
   
      有关如何使用 Visual Studio CodeDOM 支持的详细信息，请参阅[动态源代码生成和编译](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ ms.locfileid: "58930620"
   
 - 这<xref:System.IServiceProvider>类必须提供以下服务：  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>。  
+  - <xref:System.ComponentModel.Design.IDesignerHost>。  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        使用设计器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]CodeDOM 序列化可能选择使用<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>随附[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]作为其实现的<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>。  
   
        在这种情况下，<xref:System.IServiceProvider>类提供给<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>构造函数应返回此对象的实现作为<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>类。  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        使用默认的设计器<xref:System.ComponentModel.Design.DesignSurface>提供的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]设计宿主可以保证的默认实现<xref:System.ComponentModel.Design.IComponentChangeService>类。  
   

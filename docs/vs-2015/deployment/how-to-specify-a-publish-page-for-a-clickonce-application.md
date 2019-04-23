@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098462"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ ms.locfileid: "58935524"
   
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>若要指定一个 ClickOnce 应用程序的自定义 Web 页  
   
-1.  在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
   
-2.  选择**发布**窗格。  
+2. 选择**发布**窗格。  
   
-3.  单击**选项**按钮以打开**发布选项**对话框。  
+3. 单击**选项**按钮以打开**发布选项**对话框。  
   
-4.  单击**部署**。  
+4. 单击**部署**。  
   
-5.  在中**发布选项**对话框框中，请确保**发布后打开部署网页**复选框处于选中状态 （默认情况下应选择）。  
+5. 在中**发布选项**对话框框中，请确保**发布后打开部署网页**复选框处于选中状态 （默认情况下应选择）。  
   
-6.  在中**部署 web 页：** 框中，输入 Web 页的名称，然后单击**确定**。  
+6. 在中**部署 web 页：** 框中，输入 Web 页的名称，然后单击**确定**。  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>若要防止每次发布的时启动发布页  
   
-1.  在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
   
-2.  选择**发布**窗格。  
+2. 选择**发布**窗格。  
   
-3.  单击**选项**按钮以打开**发布选项**对话框。  
+3. 单击**选项**按钮以打开**发布选项**对话框。  
   
-4.  单击**部署**。  
+4. 单击**部署**。  
   
-5.  在中**发布选项**对话框中，清除**发布后打开部署网页**复选框。  
+5. 在中**发布选项**对话框中，清除**发布后打开部署网页**复选框。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

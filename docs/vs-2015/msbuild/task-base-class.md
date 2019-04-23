@@ -14,23 +14,22 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 041b57c252ffe77dc7374b39ba40b8152a390205
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2b1d82356d2f19388fd642214d03c1a1097b81ff
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778732"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654329"
 ---
 # <a name="task-base-class"></a>任务基类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 许多任务最终都继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此类向派生自该类的任务添加几个参数。 本文档中列出了这些参数。  
   
 ## <a name="parameters"></a>参数  
  下表介绍此基类的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|可选 <xref:Microsoft.Build.Framework.IBuildEngine> 参数。<br /><br /> 指定可供任务使用的生成引擎接口。 生成引擎会自动设置此参数，以允许任务回调到其中。|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|可选 <xref:Microsoft.Build.Framework.IBuildEngine2> 参数。<br /><br /> 指定可供任务使用的生成引擎接口。 生成引擎会自动设置此参数，以允许任务回调到其中。<br /><br /> 这是一个便捷属性，使从此类继承的任务作者不必将值从 `IBuildEngine` 强制转换为 `IBuildEngine2`。|  

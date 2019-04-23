@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd89520cb976cb6deaca957d97f952e4baa71def
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087737"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -113,10 +113,10 @@ testfunc("a string",3);
   
  解析程序采用的步骤如下所示：  
   
-1.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>带有文本"testfunc"。  
+1. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>带有文本"testfunc"。  
   
-2.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。  
+2. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。  
   
-3.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。  
+3. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。  
   
-4.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。
+4. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。

@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933865"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045793"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除参数重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58933865"
   
 ### <a name="to-remove-parameters"></a>若要删除参数  
   
-1.  创建名为一个控制台应用程序`RemoveParameters`，然后替换`Program`用下面的代码。  
+1. 创建名为一个控制台应用程序`RemoveParameters`，然后替换`Program`用下面的代码。  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58933865"
     }  
     ```  
   
-2.  方法将光标置于`A`，在方法声明或方法调用。  
+2. 方法将光标置于`A`，在方法声明或方法调用。  
   
-3.  从**重构**菜单中，选择**移除参数**以显示**移除参数**对话框。  
+3. 从**重构**菜单中，选择**移除参数**以显示**移除参数**对话框。  
   
      此外可以键入键盘快捷键 CTRL + R，V 显示**移除参数**对话框。  
   
      此外可以右键单击光标，指向**重构**，然后单击**移除参数**以显示**移除参数**对话框。  
   
-4.  使用**参数**字段中，将光标置于`int i`，然后单击**删除**。  
+4. 使用**参数**字段中，将光标置于`int i`，然后单击**删除**。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
-6.  在中**预览更改-删除参数**对话框中，单击**应用**。  
+6. 在中**预览更改-删除参数**对话框中，单击**应用**。  
   
 ## <a name="remarks"></a>备注  
  您可以从方法声明或方法调用中删除参数。 将光标放置在方法声明或委托名称并调用删除参数。  

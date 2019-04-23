@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7178b2d901d22956c93145c5e780144b894970de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111046"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>在托管代码中管理多个线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58930975"
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>从 UI 线程切换到后台线程  
   
-1.  如果要在 UI 线程上，你想要执行后台线程上的异步工作，使用 Task.Run():  
+1. 如果要在 UI 线程上，你想要执行后台线程上的异步工作，使用 Task.Run():  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ ms.locfileid: "58930975"
   
     ```  
   
-2.  如果您是在 UI 线程上，并且你想要以同步方式阻止后台线程，使用上执行工作时<xref:System.Threading.Tasks.TaskScheduler>属性`TaskScheduler.Default`内<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. 如果您是在 UI 线程上，并且你想要以同步方式阻止后台线程，使用上执行工作时<xref:System.Threading.Tasks.TaskScheduler>属性`TaskScheduler.Default`内<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,7 +51,7 @@ ms.locfileid: "58930975"
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>从后台线程切换到 UI 线程  
   
-1.  如果你是在后台线程上和你想要在 UI 线程，使用上实现某些<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. 如果你是在后台线程上和你想要在 UI 线程，使用上实现某些<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  

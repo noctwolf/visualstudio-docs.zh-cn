@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048562"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：创建基本纹理着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54793429"
   
  本文档演示了这些活动：  
   
--   移除着色器关系图中的节点  
+- 移除着色器关系图中的节点  
   
--   将节点添加到关系图  
+- 将节点添加到关系图  
   
--   设置着色器参数  
+- 设置着色器参数  
   
--   设置参数可见性  
+- 设置参数可见性  
   
--   连接节点  
+- 连接节点  
   
 ## <a name="creating-a-basic-texture-shader"></a>创建基本纹理着色器  
  可通过将纹理样本的颜色和 alpha 值直接写入最终输出颜色，实现基本的单纹理着色器。  

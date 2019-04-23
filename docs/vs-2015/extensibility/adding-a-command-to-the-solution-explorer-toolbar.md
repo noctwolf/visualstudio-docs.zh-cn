@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054725"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58932041"
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>将按钮添加到解决方案资源管理器工具栏  
  本演练的本部分演示如何将添加到按钮**解决方案资源管理器**工具栏。 单击按钮时，运行中的回调方法的代码。  
   
-1.  在 ToolbarButtonPackage.vsct 文件中，转到`<Symbols>`部分。 `<GuidSymbol>`节点包含的菜单组和由包模板生成的命令。 添加`<IDSymbol>`到此节点，以声明将保存您的命令组的元素。  
+1. 在 ToolbarButtonPackage.vsct 文件中，转到`<Symbols>`部分。 `<GuidSymbol>`节点包含的菜单组和由包模板生成的命令。 添加`<IDSymbol>`到此节点，以声明将保存您的命令组的元素。  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  在`<Groups>`部分中，现有组项之后, 您声明的新组中定义在上一步。  
+2. 在`<Groups>`部分中，现有组项之后, 您声明的新组中定义在上一步。  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ ms.locfileid: "58932041"
   
      Guid: id 对的父级设置为`guidSHLMainMenu`并`IDM_VS_TOOL_PROJWIN`放入此组**解决方案资源管理器**工具栏中，并在设置高优先级值将其放在其他命令组的后面。  
   
-3.  在中`<Buttons>`部分中，更改所生成的父 ID`<Button>`条目以反映您在上一步中定义的组。 已修改`<Button>`元素应如下所示：  
+3. 在中`<Buttons>`部分中，更改所生成的父 ID`<Button>`条目以反映您在上一步中定义的组。 已修改`<Button>`元素应如下所示：  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ ms.locfileid: "58932041"
     </Button>  
     ```  
   
-4.  生成项目并启动调试。 将显示在实验实例。  
+4. 生成项目并启动调试。 将显示在实验实例。  
   
      **解决方案资源管理器**工具栏应显示现有按钮右侧的新建命令按钮。 该按钮的图标带删除线。  
   
-5.  单击新建按钮。  
+5. 单击新建按钮。  
   
      包含消息的对话框**ToolbarButtonPackage 内 SolutionToolbar.ToolbarButton.MenuItemCallback()** 应显示。  
   

@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085554"
 ---
 # <a name="breakpoint-related-methods"></a>断点相关的方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 调试引擎 (DE) 必须支持的设置的断点。 Visual Studio 调试支持以下类型的断点：  
   
--   绑定  
+- 绑定  
   
      通过用户界面请求和成功绑定到指定的代码位置  
   
--   挂起  
+- 挂起  
   
      通过 UI 但尚未绑定到实际说明请求  
   

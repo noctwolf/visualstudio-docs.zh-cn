@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094848"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。
@@ -52,34 +52,34 @@ ms.locfileid: "56627735"
 
  当创建文档级项目时，Visual Studio 将在生成的代码文件中创建 **Startup** 事件的事件处理程序：
 
--   对于 Microsoft Office Word 项目，事件处理程序命名为 `ThisDocument_Startup`。
+- 对于 Microsoft Office Word 项目，事件处理程序命名为 `ThisDocument_Startup`。
 
--   对于 Microsoft Office Excel 项目，事件处理程序具有以下名称：
+- 对于 Microsoft Office Excel 项目，事件处理程序具有以下名称：
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown 事件
  当你的代码加载在其中的应用程序域即将卸载时，将为每个主机项（文档或工作表）引发 **Shutdown** 事件。 这是当其卸载时要在类中调用的最后一项。
 
  当创建文档级项目时，Visual Studio 将在生成的代码文件中创建 **Shutdown** 事件的事件处理程序：
 
--   对于 Microsoft Office Word 项目，事件处理程序命名为 `ThisDocument_Shutdown`。
+- 对于 Microsoft Office Word 项目，事件处理程序命名为 `ThisDocument_Shutdown`。
 
--   对于 Microsoft Office Excel 项目，事件处理程序具有以下名称：
+- 对于 Microsoft Office Excel 项目，事件处理程序具有以下名称：
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 >  请不要在文档的 **Shutdown** 事件处理程序过程中以编程方式删除控件。 发生 **Shutdown** 事件时，文档的 UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 **BeforeClose** 或 **BeforeSave**。
@@ -145,9 +145,9 @@ ms.locfileid: "56627735"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Outlook VSTO 外接程序中的 shutdown 事件
  仅当用户使用 Outlook 中的 COM 外接程序对话框禁用 VSTO 外接程序时才引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 在 Outlook 退出时不引发该事件。 如果具有在 Outlook 退出时必须运行的代码，请处理任一以下事件：
 
--   <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 事件。
+- <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 事件。
 
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 对象的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 对象的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。
 
 > [!NOTE]
 >  当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅[Outlook 2010 的 Shutdown 更改](http://go.microsoft.com/fwlink/?LinkID=184614)。

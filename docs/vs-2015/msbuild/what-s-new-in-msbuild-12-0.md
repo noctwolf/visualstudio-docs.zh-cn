@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 324ea1e0409ea08b7580d9a6375e7ad96a539a92
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074107"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0 中的新增功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ MSBuild 现已作为 Visual Studio 的一部分而不是 .NET Framework 的一�
 ## <a name="changed-properties"></a>更改的属性  
  下面的 MSBuild 属性由于新版本号而更改：  
   
--   此版工具的 `MSBuildToolsVersion` 为 12.0。  
+- 此版工具的 `MSBuildToolsVersion` 为 12.0。  
   
--   `MSBuildToolsPath` 现在为 %ProgramFiles%\MSBuild\12.0\bin（对于 32 位操作系统）或 %ProgramFiles%\MSBuild\12.0\bin\amd64（对于 64 位操作系统）。  
+- `MSBuildToolsPath` 现在为 %ProgramFiles%\MSBuild\12.0\bin（对于 32 位操作系统）或 %ProgramFiles%\MSBuild\12.0\bin\amd64（对于 64 位操作系统）。  
   
--   `ToolsVersion` 值可以在 HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0（对于 32 位操作系统）或 HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0（64 位操作系统）中找到。  
+- `ToolsVersion` 值可以在 HKLM\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0（对于 32 位操作系统）或 HKLM\SOFTWARE\Wow6432Node\Microsoft\MSBuild\ToolsVersions\12.0（64 位操作系统）中找到。  
   
--   `SDK35ToolsPath` 和 `SDK40ToolsPath` 属性指向与此版 Visual Studio 一起打包的 .NET Framework SDK（例如，对于 4.X 工具，则指向 8.1A）。  
+- `SDK35ToolsPath` 和 `SDK40ToolsPath` 属性指向与此版 Visual Studio 一起打包的 .NET Framework SDK（例如，对于 4.X 工具，则指向 8.1A）。  
   
 ## <a name="new-properties"></a>新增的属性  
   
--   `MSBuildFrameworkToolsPath` 是一个新属性，其值为 %windir%\Microsoft.NET\Framework\v4.0.30319（对于 32 位操作系统）或 %windir%\Microsoft.NET\Framework64\v4.0.30319（对于 64 位操作系统）。 它替代了 `MSBuildToolsPath`，可用于指向 .NET Framework 工具和实用程序。  
+- `MSBuildFrameworkToolsPath` 是一个新属性，其值为 %windir%\Microsoft.NET\Framework\v4.0.30319（对于 32 位操作系统）或 %windir%\Microsoft.NET\Framework64\v4.0.30319（对于 64 位操作系统）。 它替代了 `MSBuildToolsPath`，可用于指向 .NET Framework 工具和实用程序。  
   
--   `MSBuildToolsPath` 和 `MSBuildFrameworkToolsPath` 具有 32 位等效项 `MSBuildToolsPath32` 和 `MSBuildFrameworkToolsPath32`，它们始终指向 32 位位置，而不论使用 32 位还是 64 位的 MSBuild。
+- `MSBuildToolsPath` 和 `MSBuildFrameworkToolsPath` 具有 32 位等效项 `MSBuildToolsPath32` 和 `MSBuildFrameworkToolsPath32`，它们始终指向 32 位位置，而不论使用 32 位还是 64 位的 MSBuild。
 
 ## <a name="see-also"></a>请参阅
 [MSBuild](msbuild.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 348dc0cdce8345f0b7de4fb15dcd7175f496dba7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a3ba746f9e4dcd8da45a002c5c763384558342ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053905"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>无法删除属性 &lt;属性名称&gt;，原因是它参与了关联 &lt;关联名称&gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "59652912"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
-1.  在 O/R 设计器中选择连接错误消息中指示的数据类的关联连线。  
+1. 在 O/R 设计器中选择连接错误消息中指示的数据类的关联连线。  
   
-2.  双击该连线以打开“关联编辑器”对话框。  
+2. 双击该连线以打开“关联编辑器”对话框。  
   
-3.  从“关联属性”中移除该属性。  
+3. 从“关联属性”中移除该属性。  
   
-4.  再次尝试删除该属性。  
+4. 再次尝试删除该属性。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

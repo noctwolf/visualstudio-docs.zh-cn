@@ -19,23 +19,22 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 337dcd310efbdf0f0657b5eb44b1ed0fc8253b39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2a69fc64c3371a2970c03ec0129d4c733f5ae9cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782500"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660500"
 ---
 # <a name="exec-task"></a>Exec 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 通过使用指定的参数来运行指定程序或命令。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `Exec` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Command`|必选 `String` 参数。<br /><br /> 要运行的命令。 可以是系统命令（例如 attrib），也可以是可执行文件（例如 program.exe、runprogram.bat 或 setup.msi）。<br /><br /> 此参数可包含多行命令。 或者，可将多个命令放在批文件中，然后使用此参数运行文件。|  
 |`CustomErrorRegularExpression`|可选 `String` 参数。<br /><br /> 指定用于查找工具输入中错误行的正则表达式。 这对会生成不常见格式的输出的工具非常有用。|  

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933408"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668348"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何：在实体类中添加验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 验证实体类是指确认输入到数据对象中的值是否符合对象架构内的约束，以及是否符合为应用程序所建立的规则的过程。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法，这样可以减少错误。 还可以减少应用程序和数据库之间的潜在往返行程次数。  
   
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了使用户可以扩展运行期间的插入、 更新和删除完整实体，并还期间和之后各列的设计器生成代码的分部方法更改。  

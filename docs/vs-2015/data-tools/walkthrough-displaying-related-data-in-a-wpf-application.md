@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 873f20383a3a35dcfc7b51128d07d5efc1d11519
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065384"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>演练：在 WPF 应用程序中显示相关的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,19 +61,19 @@ ms.locfileid: "58931987"
   
 #### <a name="to-create-a-new-wpf-project"></a>若要创建新的 WPF 项目  
   
-1.  启动 Visual Studio。  
+1. 启动 Visual Studio。  
   
-2.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
+2. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
-3.  展开**Visual C#** 或**Visual Basic**，然后选择**Windows**。  
+3. 展开**Visual C#** 或**Visual Basic**，然后选择**Windows**。  
   
-4.  请确保 **.NET Framework 4**选择对话框顶部组合框中。 <xref:System.Windows.Controls.DataGrid>在本演练中使用的控件是仅在.NET Framework 4 中可用。  
+4. 请确保 **.NET Framework 4**选择对话框顶部组合框中。 <xref:System.Windows.Controls.DataGrid>在本演练中使用的控件是仅在.NET Framework 4 中可用。  
   
-5.  选择“WPF 应用程序”项目模板。  
+5. 选择“WPF 应用程序”项目模板。  
   
-6.  在“名称”框中键入 `AdventureWorksOrdersViewer`。  
+6. 在“名称”框中键入 `AdventureWorksOrdersViewer`。  
   
-7.  单击 **“确定”**。  
+7. 单击 **“确定”**。  
   
      Visual Studio 将创建`AdventureWorksOrdersViewer`项目。  
   
@@ -102,9 +102,9 @@ ms.locfileid: "58931987"
   
 6. 上**选择数据库对象**页上，展开**表**，，然后选择以下表：  
   
-   -   **SalesOrderDetail**  
+   - **SalesOrderDetail**  
   
-   -   **SalesOrderHeader**  
+   - **SalesOrderHeader**  
   
 7. 单击 **“完成”**。  
   
@@ -192,15 +192,15 @@ ms.locfileid: "58931987"
   
 #### <a name="to-test-the-application"></a>测试应用程序  
   
-1.  按 F5 。  
+1. 按 F5 。  
   
      这将生成并运行应用程序。 验证以下内容：  
   
-    -   **销售订单 ID**组合框显示**71774**。 这是实体中的第一个订单 ID。  
+    - **销售订单 ID**组合框显示**71774**。 这是实体中的第一个订单 ID。  
   
-    -   在中选择每个订单**销售订单 ID**组合框中显示详细的订单信息<xref:System.Windows.Controls.DataGrid>。  
+    - 在中选择每个订单**销售订单 ID**组合框中显示详细的订单信息<xref:System.Windows.Controls.DataGrid>。  
   
-2.  关闭该应用程序。  
+2. 关闭该应用程序。  
   
 ## <a name="next-steps"></a>后续步骤  
  完成此演练后，了解如何使用**数据源**窗口在 Visual Studio 中将 WPF 控件添加到其他类型的数据源。 有关详细信息，请参阅[绑定 WPF 控件添加到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)并[绑定 WPF 控件添加到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)。  

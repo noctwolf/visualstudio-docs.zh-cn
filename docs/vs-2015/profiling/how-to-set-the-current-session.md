@@ -17,14 +17,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102687"
 ---
-# <a name="how-to-set-the-current-session"></a>如何：设置当前会话
+# <a name="how-to-set-the-current-session"></a>如何：将当前会话设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以在“性能资源管理器”中打开多个性能会话，然后可以选择一个可见性能会话，将其设置为当前会话。  
@@ -37,7 +37,7 @@ ms.locfileid: "54760387"
   
 ### <a name="to-set-current-performance-session"></a>设置当前性能会话  
   
--   在“性能资源管理器”中，右键单击性能会话，然后单击“设置为当前会话”。  
+- 在“性能资源管理器”中，右键单击性能会话，然后单击“设置为当前会话”。  
   
      会话名称将显示为粗体。  
   

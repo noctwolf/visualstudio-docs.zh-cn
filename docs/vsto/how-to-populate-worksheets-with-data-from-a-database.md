@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079133"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>如何：用数据库中的数据填充工作表
 
@@ -35,17 +35,17 @@ ms.locfileid: "54865614"
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>若要填充数据库中的数据工作表
 
-1.  使用在设计器中打开该工作表，在 Visual Studio 中，打开一个 Excel 文档级项目。
+1. 使用在设计器中打开该工作表，在 Visual Studio 中，打开一个 Excel 文档级项目。
 
-2.  打开“数据源”  窗口并为项目创建数据源。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+2. 打开“数据源”  窗口并为项目创建数据源。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
-3.  将字段或想要从表拖**数据源**到工作表窗口。
+3. 将字段或想要从表拖**数据源**到工作表窗口。
 
 在工作表上将创建以下控件之一：
 
--   如果您拖动字段<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上创建控件。 有关详细信息，请参阅[NamedRange 控件](../vsto/namedrange-control.md)。
+- 如果您拖动字段<xref:Microsoft.Office.Tools.Excel.NamedRange>工作表上创建控件。 有关详细信息，请参阅[NamedRange 控件](../vsto/namedrange-control.md)。
 
--   如果拖动一个表，<xref:Microsoft.Office.Tools.Excel.ListObject>工作表上创建控件。 有关详细信息，请参阅[ListObject 控件](../vsto/listobject-control.md)。
+- 如果拖动一个表，<xref:Microsoft.Office.Tools.Excel.ListObject>工作表上创建控件。 有关详细信息，请参阅[ListObject 控件](../vsto/listobject-control.md)。
 
 可以选择表中添加一个不同的控件或中的字段**数据源**窗口，然后从下拉列表中选择一个不同的控件。
 
@@ -53,19 +53,19 @@ ms.locfileid: "54865614"
 
 除了该控件，还会自动将以下数据相关的对象添加到你的项目：
 
--   一个类型化数据集，它会封装数据库中你连接到的数据表。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。
+- 一个类型化数据集，它会封装数据库中你连接到的数据表。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
--   一个 <xref:System.Windows.Forms.BindingSource>，它将控件连接到类型化数据集。 有关详细信息，请参阅[BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
+- 一个 <xref:System.Windows.Forms.BindingSource>，它将控件连接到类型化数据集。 有关详细信息，请参阅[BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
--   连接到数据库的类型化数据集的 TableAdapter。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+- 连接到数据库的类型化数据集的 TableAdapter。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
--   TableAdapterManager，用于协调数据集中的表适配器来启用分层更新。 有关详细信息，请参阅[分层更新](../data-tools/hierarchical-update.md)并[TableAdapterManager 引用](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)。
+- TableAdapterManager，用于协调数据集中的表适配器来启用分层更新。 有关详细信息，请参阅[分层更新](../data-tools/hierarchical-update.md)并[TableAdapterManager 引用](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference)。
 
 运行项目时，该控件将显示数据源中的第一条记录。 可以借助 <xref:System.Windows.Forms.BindingSource> 来使用户能滚动显示各个记录。
 
 ### <a name="to-scroll-through-the-records"></a>滚动显示记录
 
--   使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
+- 使用 <xref:System.Windows.Forms.BindingSource> 方法，如 <xref:System.Windows.Forms.BindingSource.MoveNext%2A> 和 <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>。
 
 有关如何将更新发送到类型化数据集和数据库的信息，请参阅[如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 

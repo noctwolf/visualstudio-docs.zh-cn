@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054477"
 ---
 # <a name="support-for-settings-categories"></a>支持设置类别
 设置类别包含一组可自定义集成开发环境 (IDE) 的选项。 例如，设置可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口的布局和菜单的内容。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
@@ -29,11 +29,11 @@ ms.locfileid: "58932458"
   
  托管包框架 (MPF) 支持使用最少的额外代码创建设置类别。  
   
--   可创建 VSPackage，以便通过创建 <xref:Microsoft.VisualStudio.Shell.Package> 类的子类来为类别提供容器。  
+- 可创建 VSPackage，以便通过创建 <xref:Microsoft.VisualStudio.Shell.Package> 类的子类来为类别提供容器。  
   
--   可通过从 <xref:Microsoft.VisualStudio.Shell.DialogPage> 类派生来创建类别本身。  
+- 可通过从 <xref:Microsoft.VisualStudio.Shell.DialogPage> 类派生来创建类别本身。  
   
--   可使用 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 将这两者联系起来。  
+- 可使用 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 将这两者联系起来。  
   
 ## <a name="support-for-settings-categories"></a>支持设置类别  
  <xref:Microsoft.VisualStudio.Shell.Package> 类为创建类别提供支持。 <xref:Microsoft.VisualStudio.Shell.DialogPage> 类可实现类别。 <xref:Microsoft.VisualStudio.Shell.DialogPage> 的默认实现以类别的形式向用户提供其公共属性。 有关详细信息，请参阅 [Creating a Settings Category](../extensibility/creating-a-settings-category.md)。  

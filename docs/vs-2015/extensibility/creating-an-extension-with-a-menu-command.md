@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076676"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ ms.locfileid: "58933713"
   
 ## <a name="creating-a-menu-command"></a>创建菜单命令  
   
-1.  创建一个名为的 VSIX 项目**FirstMenuCommand**。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C# / 可扩展性**。  
+1. 创建一个名为的 VSIX 项目**FirstMenuCommand**。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C# / 可扩展性**。  
   
-2.  项目打开后，添加名为的自定义命令项模板**FirstCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 在中**添加新项**对话框中，转到**Visual C# / 可扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为**FirstCommand.cs**。  
+2. 项目打开后，添加名为的自定义命令项模板**FirstCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 在中**添加新项**对话框中，转到**Visual C# / 可扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为**FirstCommand.cs**。  
   
-3.  生成项目并启动调试。  
+3. 生成项目并启动调试。  
   
      将显示 Visual Studio 的实验实例。 有关实验实例的详细信息，请参阅[实验实例](../extensibility/the-experimental-instance.md)。  
   
-4.  在实验实例中，打开**工具 / 扩展和更新**窗口。 应会看到**FirstMenuCommand**此处扩展。 (如果您打开**扩展和更新**中的 Visual Studio 工作实例，不会看到**FirstMenuCommand**)。  
+4. 在实验实例中，打开**工具 / 扩展和更新**窗口。 应会看到**FirstMenuCommand**此处扩展。 (如果您打开**扩展和更新**中的 Visual Studio 工作实例，不会看到**FirstMenuCommand**)。  
   
      现在，转到**工具**的实验实例中的菜单。 应会看到**调用 FirstCommand**命令。 此时它只会弹出一个消息框，显示"FirstCommandPackage 内 FirstMenuCommand.FirstCommand.MenuItemCallback()"。 我们将了解如何实际从下一节中的此命令启动记事本。  
   
 ## <a name="changing-the-menu-command-handler"></a>更改菜单命令处理程序  
  现在让我们更新要启动记事本的命令处理程序。  
   
-1.  停止调试并返回到 Visual Studio 的工作实例。 打开 FirstCommand.cs 文件并添加以下 using 语句：  
+1. 停止调试并返回到 Visual Studio 的工作实例。 打开 FirstCommand.cs 文件并添加以下 using 语句：  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  查找专用 FirstCommand 构造函数。 这是命令挂接到命令服务和命令处理程序指定的位置。 将命令处理程序的名称更改为 StartNotepad，按如下所示：  
+2. 查找专用 FirstCommand 构造函数。 这是命令挂接到命令服务和命令处理程序指定的位置。 将命令处理程序的名称更改为 StartNotepad，按如下所示：  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ ms.locfileid: "58933713"
     }  
     ```  
   
-3.  删除 MenuItemCallback 方法并添加一个 StartNotepad 方法，它只是启动记事本：  
+3. 删除 MenuItemCallback 方法并添加一个 StartNotepad 方法，它只是启动记事本：  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ ms.locfileid: "58933713"
     }  
     ```  
   
-4.  现在试一试。当开始调试项目并单击**工具 / 调用 FirstCommand**，您应看到出现的记事本实例。  
+4. 现在试一试。当开始调试项目并单击**工具 / 调用 FirstCommand**，您应看到出现的记事本实例。  
   
      可以使用的实例<xref:System.Diagnostics.Process>类来运行任何可执行文件，而不仅仅是记事本。 使用尝试 calc.exe，例如。  
   
@@ -94,9 +94,9 @@ ms.locfileid: "58933713"
   
  你可以转到此脚本在两种方式之一：  
   
-1.  从桌面中，找到**重置 Visual Studio 2015 实验实例**。  
+1. 从桌面中，找到**重置 Visual Studio 2015 实验实例**。  
   
-2.  从命令行运行以下命令：  
+2. 从命令行运行以下命令：  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ ms.locfileid: "58933713"
   
 1. 您可以执行许多其他操作使用简单的菜单命令：  
   
-   1.  添加自己的图标：[将图标添加到菜单命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1. 添加自己的图标：[将图标添加到菜单命令](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. 更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  将菜单快捷方式添加到命令：[将键盘快捷方式绑定到菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. 将菜单快捷方式添加到命令：[将键盘快捷方式绑定到菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. 添加不同类型的命令、 菜单和工具栏：[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
   

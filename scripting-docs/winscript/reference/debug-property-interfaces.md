@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c40db5b1639112bb95c0859da63705afcd9a3411
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f85f810d5ef6a97af4df6a03a0972a87ca60a49d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065228"
 ---
 # <a name="debug-property-interfaces"></a>调试属性接口
 DbgProp.h 标头文件提供了在本部分中列出的接口。  
@@ -27,24 +27,24 @@ DbgProp.h 标头文件提供了在本部分中列出的接口。
 ## <a name="in-this-section"></a>本节内容  
  以下接口、 结构和枚举说明正在调试的应用程序的层次结构属性：  
   
--   [IDebugProperty 接口](../../winscript/reference/idebugproperty-interface.md)  
+- [IDebugProperty 接口](../../winscript/reference/idebugproperty-interface.md)  
   
--   [IDebugExtendedProperty 接口](../../winscript/reference/idebugextendedproperty-interface.md)  
+- [IDebugExtendedProperty 接口](../../winscript/reference/idebugextendedproperty-interface.md)  
   
--   [IEnumDebugPropertyInfo 接口](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+- [IEnumDebugPropertyInfo 接口](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
   
--   [IEnumDebugExtendedPropertyInfo 接口](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+- [IEnumDebugExtendedPropertyInfo 接口](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
   
--   [IPerPropertyBrowsing2 接口 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
+- [IPerPropertyBrowsing2 接口 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
   
--   [IDebugPropertyEnumType_All 接口](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+- [IDebugPropertyEnumType_All 接口](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
   
--   [DebugPropertyInfo 结构](../../winscript/reference/debugpropertyinfo-structure.md)  
+- [DebugPropertyInfo 结构](../../winscript/reference/debugpropertyinfo-structure.md)  
   
--   [ExtendedDebugPropertyInfo 结构](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
+- [ExtendedDebugPropertyInfo 结构](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
   
--   [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
+- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
   
--   [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
+- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
   
--   [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)
+- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)

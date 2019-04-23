@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101023"
 ---
 # <a name="properties-window-overview"></a>属性窗口概述
 **属性**窗口用于显示在 windows 中可用的两个主要类型中选择的对象的属性[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 Windows 这两种类型是：
 
--   如解决方案资源管理器、 类视图和对象浏览器的工具窗口
+- 如解决方案资源管理器、 类视图和对象浏览器的工具窗口
 
--   包含此类编辑器和设计器为窗体设计器、 XML 编辑器和 HTML 编辑器的文档窗口
+- 包含此类编辑器和设计器为窗体设计器、 XML 编辑器和 HTML 编辑器的文档窗口
 
 ## <a name="using-the-properties-window"></a>使用属性窗口
  **属性**窗口显示单个或多个选定的项的属性。 如果选择了多个项，会显示所有选定对象的所有属性的交集。

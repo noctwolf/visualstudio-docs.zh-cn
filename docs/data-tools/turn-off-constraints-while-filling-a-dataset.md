@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d568434e8820ef11e0f2b75ba2409d7b643cc011
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9aca29de7e9c5a01e0c2caad2c42015cd31b3f75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102856"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 
@@ -38,16 +38,16 @@ ms.locfileid: "55955903"
 
 ## <a name="to-suspend-update-constraints-programmatically"></a>若要以编程方式挂起更新约束
 
--   下面的示例演示如何暂时关闭约束检查的数据集：
+- 下面的示例演示如何暂时关闭约束检查的数据集：
 
      [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
      [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
 
 ## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>若要暂停使用数据集设计器更新约束
 
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。
+2. 在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。
 
 ## <a name="see-also"></a>请参阅
 

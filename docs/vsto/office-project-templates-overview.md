@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054568"
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：
@@ -53,7 +53,7 @@ ms.locfileid: "56614683"
 > [!NOTE]
 > Office 开发工具随某些 Visual Studio 版本提供。 有关详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
 
-##  <a name="DocLevel"></a> 文档级自定义项
+## <a name="DocLevel"></a> 文档级自定义项
  **“新建项目”** 对话框中的 **“Office”** 节点提供下列项目模板，可以使用这些模板开始创建 Word 和 Excel 的文档级自定义项：
 
 - **Word 2013 和 2016 VSTO 文档**
@@ -81,17 +81,17 @@ ms.locfileid: "56614683"
 
  有关这些项目类型的入门信息，请参阅下列主题：
 
--   [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)
+- [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)
 
--   [Word 解决方案](../vsto/word-solutions.md)
+- [Word 解决方案](../vsto/word-solutions.md)
 
--   [Excel 解决方案](../vsto/excel-solutions.md)
+- [Excel 解决方案](../vsto/excel-solutions.md)
 
--   [演练：创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [演练：创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [演练：创建 excel 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [演练：创建 excel 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> VSTO 外接程序
+## <a name="AppLevel"></a> VSTO 外接程序
  **“新建项目”** 对话框中的 **“Office/SharePoint”** 节点提供下列项目模板，可以使用这些模板开始创建 VSTO 外接程序。
 
 - **Excel 2013 和 2016 VSTO 外接程序**
@@ -157,7 +157,7 @@ ms.locfileid: "56614683"
 |用户可以打开并修改文档，除非该文档被设置为只读。 任何保存过的更改都保留在原文档中。|用户可以打开模板以创建一个本地副本作为新文档。 用户不能修改原模板，除非他们被授予某些特权。|
 |打开时，文档将引发 <xref:Microsoft.Office.Tools.Word.Document.Open> 事件。|打开时，模板将引发 <xref:Microsoft.Office.Tools.Word.Document.New> 事件。|
 
-##  <a name="Limitations"></a> 全局模板和 Excel 外接程序 （.xla 文件） 的限制
+## <a name="Limitations"></a> 全局模板和 Excel 外接程序 （.xla 文件） 的限制
  文档、工作簿和模板可能不会像全局模板或 Excel VSTO 外接程序（.xla 文件）那样正常工作。
 
 ## <a name="word-templates"></a>Word 模板

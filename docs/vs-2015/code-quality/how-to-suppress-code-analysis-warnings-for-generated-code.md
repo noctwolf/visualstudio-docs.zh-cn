@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057576"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：禁止对生成的代码显示代码分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ ms.locfileid: "58931341"
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>若要禁止显示项目中生成代码的警告  
   
-1.  右键单击解决方案资源管理器中的项目，然后单击**属性**。  
+1. 右键单击解决方案资源管理器中的项目，然后单击**属性**。  
   
-2.  单击**代码分析**。  
+2. 单击**代码分析**。  
   
-3.  选择**禁止显示生成代码的结果**复选框。
+3. 选择**禁止显示生成代码的结果**复选框。

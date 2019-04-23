@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10683f2bd740a92b41c0063da15d093248396bd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24a365ba239e4d87e179bfecd664aa31aef0f359
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619389"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050820"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>如何：以编程方式创建 Word 表
   <xref:Microsoft.Office.Interop.Word.Tables> 集合是 <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 类的成员，这意味着可以在上述任一上下文中创建表格。 使用 <xref:Microsoft.Office.Interop.Word.Tables> 集合的 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法在指定范围内添加表格。
@@ -51,7 +51,7 @@ ms.locfileid: "56619389"
 
 ### <a name="to-apply-a-style-to-a-table"></a>将样式应用到表格
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 属性将其中一个 Word 内置样式应用到表格。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 属性将其中一个 Word 内置样式应用到表格。
 
      若要使用下面的代码示例，请从项目的 `ThisDocument` 类中运行它。
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619389"
 
 ### <a name="to-apply-a-style-to-a-table"></a>将样式应用到表格
 
-1.  使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 属性将其中一个 Word 内置样式应用到表格。
+1. 使用 <xref:Microsoft.Office.Interop.Word.Table.Style%2A> 属性将其中一个 Word 内置样式应用到表格。
 
      下面的代码示例使用活动文档。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行它。
 

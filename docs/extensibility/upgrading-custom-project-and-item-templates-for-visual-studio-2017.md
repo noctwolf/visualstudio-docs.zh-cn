@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102622"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
 
@@ -32,36 +32,36 @@ ms.locfileid: "57323982"
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用项目或项模板更新 VSIX 扩展
 
-1.  在 Visual Studio 2017 中打开的解决方案。 你将需要升级的代码。 单击 **“确定”**。
+1. 在 Visual Studio 2017 中打开的解决方案。 你将需要升级的代码。 单击 **“确定”**。
 
-2.  在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件，然后选择**安装目标**选项卡。如果**版本范围**字段是 **[14.0]**，单击**编辑**并将其更改为包括 Visual Studio 2017。 例如，您可以将其设置为 **[14.0,15.0]** 到 Visual Studio 2015 或 Visual Studio 2017，或安装扩展 **[15.0]** 以将其安装到只需使用 Visual Studio 2017。
+2. 在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件，然后选择**安装目标**选项卡。如果**版本范围**字段是 **[14.0]**，单击**编辑**并将其更改为包括 Visual Studio 2017。 例如，您可以将其设置为 **[14.0,15.0]** 到 Visual Studio 2015 或 Visual Studio 2017，或安装扩展 **[15.0]** 以将其安装到只需使用 Visual Studio 2017。
 
-3.  重新编译代码。
+3. 重新编译代码。
 
-4.  关闭 Visual Studio。
+4. 关闭 Visual Studio。
 
-5.  安装 VSIX。
+5. 安装 VSIX。
 
-6.  可以通过执行以下操作来测试更新：
+6. 可以通过执行以下操作来测试更新：
 
-    1.  扫描更改的文件被激活由以下注册表项：
+    1. 扫描更改的文件被激活由以下注册表项：
 
          **reg 添加 hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  添加密钥后，运行**devenv /installvstemplates**。
+    2. 添加密钥后，运行**devenv /installvstemplates**。
 
-    3.  重新打开 Visual Studio。 应该在预期位置中找到你的模板。
+    3. 重新打开 Visual Studio。 应该在预期位置中找到你的模板。
 
     > [!NOTE]
     >  存在注册表项时，Visual Studio 扩展性项目模板不可用。 必须删除注册表项 (和重新运行**devenv /installvstemplates**) 来使用它们。
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>部署项目和项模板的其他建议
 
--   避免使用压缩的模板文件。 压缩需要不会进行压缩以便检索资源和内容文件的模板，因此它们将考虑使用。 相反，应将项目和项模板部署为单个文件，以加快模板初始化其自身目录下。 VSIX 扩展的 SDK 生成任务会自动将任何压缩的模板解压缩创建 VSIX 文件时。
+- 避免使用压缩的模板文件。 压缩需要不会进行压缩以便检索资源和内容文件的模板，因此它们将考虑使用。 相反，应将项目和项模板部署为单个文件，以加快模板初始化其自身目录下。 VSIX 扩展的 SDK 生成任务会自动将任何压缩的模板解压缩创建 VSIX 文件时。
 
--   避免使用包/资源 ID 条目的模板名称、 说明、 图标，或为模板在发现期间避免不必要的资源程序集加载预览。 相反，本地化的清单可用于创建每个区域设置，它使用本地化的名称或属性的模板条目。
+- 避免使用包/资源 ID 条目的模板名称、 说明、 图标，或为模板在发现期间避免不必要的资源程序集加载预览。 相反，本地化的清单可用于创建每个区域设置，它使用本地化的名称或属性的模板条目。
 
--   如果要包含为文件项模板，清单生成可能无法让你预期的结果。 在这种情况下，必须向 VSIX 项目添加一个手动生成的清单。
+- 如果要包含为文件项模板，清单生成可能无法让你预期的结果。 在这种情况下，必须向 VSIX 项目添加一个手动生成的清单。
 
 ## <a name="file-changes-in-project-and-item-templates"></a>项目和项模板中的文件更改
 我们显示 Visual Studio 2015 和 Visual Studio 2017 版本的模板文件之间差异的点，以便可以正确地创建新文件。

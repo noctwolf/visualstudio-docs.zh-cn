@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95afdec845b4b7788274ee0bc03bd5f26e862388
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112112"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练：自定义实体类的插入、更新和删除行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,26 +30,26 @@ ms.locfileid: "59651560"
   
  在本演练中，你将学习如何执行以下任务：  
   
--   创建一个新的 Windows 窗体应用程序，并将一个 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 文件添加到该应用程序。  
+- 创建一个新的 Windows 窗体应用程序，并将一个 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 文件添加到该应用程序。  
   
--   创建一个映射到 Northwind Customers 表的实体类。  
+- 创建一个映射到 Northwind Customers 表的实体类。  
   
--   创建一个引用 LINQ to SQL Customer 类的对象数据源。  
+- 创建一个引用 LINQ to SQL Customer 类的对象数据源。  
   
--   创建一个包含绑定到 Customer 类的 <xref:System.Windows.Forms.DataGridView> 的 Windows 窗体。  
+- 创建一个包含绑定到 Customer 类的 <xref:System.Windows.Forms.DataGridView> 的 Windows 窗体。  
   
--   实现该窗体的保存功能。  
+- 实现该窗体的保存功能。  
   
--   通过将存储过程添加到 <xref:System.Data.Linq.DataContext>来创建 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法。  
+- 通过将存储过程添加到 <xref:System.Data.Linq.DataContext>来创建 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法。  
   
--   配置 Customer 类以使用存储过程执行插入、更新和删除。  
+- 配置 Customer 类以使用存储过程执行插入、更新和删除。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要完成此演练，需要满足以下条件：  
   
--   访问 Northwind 示例数据库的 SQL Server 版本。
+- 访问 Northwind 示例数据库的 SQL Server 版本。
   
--   **InsertCustomer**， **UpdateCustomer**，并**DeleteCustomer**存储 Northwind 数据库的过程。
+- **InsertCustomer**， **UpdateCustomer**，并**DeleteCustomer**存储 Northwind 数据库的过程。
   
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>创建一个应用程序并添加 LINQ to SQL 类  
  因为您将要使用 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 类并在 Windows 窗体中显示数据，所以需要创建一个新的 Windows 窗体应用程序并添加一个 LINQ to SQL 类文件。  
@@ -58,22 +58,22 @@ ms.locfileid: "59651560"
   
 #### <a name="to-create-a-new-windows-application-project-that-contains-linq-to-sql-classes"></a>新建一个包含 LINQ to SQL 类的 Windows 应用程序项目  
   
-1.  从**文件**菜单中，创建一个新项目。  
+1. 从**文件**菜单中，创建一个新项目。  
   
-2.  将项目命名**UpdatingwithSProcsWalkthrough**。  
+2. 将项目命名**UpdatingwithSProcsWalkthrough**。  
   
     > [!NOTE]
     >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 和 C# 项目都支持 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 因此，请使用这两种语言之一创建新项目。  
   
-3.  单击**Windows 窗体应用程序**模板，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 单击**Windows 窗体应用程序**模板，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      创建 UpdatingwithSProcsWalkthrough 项目并将其添加到**解决方案资源管理器**。  
   
-4.  在 **“项目”** 菜单上，单击 **“添加新项”**。  
+4. 在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
-5.  单击“LINQ to SQL 类”模板，然后在“名称”框中键入 Northwind.dbml。  
+5. 单击“LINQ to SQL 类”模板，然后在“名称”框中键入 Northwind.dbml。  
   
-6.  单击 **添加**。  
+6. 单击 **添加**。  
   
      这会将一个空的 LINQ to SQL 类文件 (Northwind.dbml) 添加到该项目中，并且会打开 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
@@ -82,45 +82,45 @@ ms.locfileid: "59651560"
   
 #### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>创建 Customer 实体类并使用该类配置数据源  
   
-1.  在中**服务器资源管理器**/**数据库资源管理器**，查找 Northwind 示例数据库的 SQL Server 版本中的客户表。
+1. 在中**服务器资源管理器**/**数据库资源管理器**，查找 Northwind 示例数据库的 SQL Server 版本中的客户表。
   
-2.  拖动**客户**从节点**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]图面。  
+2. 拖动**客户**从节点**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]图面。  
   
      将创建一个名为“Customer”的实体类。 该类具有与 Customers 表中的列相对应的属性。 由于该实体类表示 Customers 表中的单个客户，因此将该类命名为“Customer”（而不是“Customers”）。  
   
     > [!NOTE]
     >  这种重命名行为称为“复数化”。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何：打开和关闭复数形式（O/R 设计器）](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。  
   
-3.  在“生成”菜单上单击“生成 UpdatingwithSProcsWalkthrough”以生成该项目。  
+3. 在“生成”菜单上单击“生成 UpdatingwithSProcsWalkthrough”以生成该项目。  
   
-4.  在 **“数据”** 菜单上，单击 **“显示数据源”**。  
+4. 在 **“数据”** 菜单上，单击 **“显示数据源”**。  
   
-5.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
+5. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
   
-6.  单击“选择数据源类型”页上的“对象”，然后单击“下一步”。  
+6. 单击“选择数据源类型”页上的“对象”，然后单击“下一步”。  
   
-7.  展开“UpdatingwithSProcsWalkthrough”节点，然后找到并选择“Customer”类。  
+7. 展开“UpdatingwithSProcsWalkthrough”节点，然后找到并选择“Customer”类。  
   
     > [!NOTE]
     >  如果“Customer”类不可用，则退出向导，生成项目，然后重新运行向导。  
   
-8.  单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。  
+8. 单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。  
   
 ## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>创建一个 DataGridView 以在 Windows 窗体中显示 Customer 数据  
  创建控件绑定到实体类通过拖动[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]数据源项从**数据源**拖到 Windows 窗体的窗口。  
   
 #### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>添加绑定到实体类的控件  
   
-1.  在“设计”视图中打开“Form1”。  
+1. 在“设计”视图中打开“Form1”。  
   
-2.  从**数据源**窗口中，拖动**客户**节点拖到 Form1 上的。  
+2. 从**数据源**窗口中，拖动**客户**节点拖到 Form1 上的。  
   
     > [!NOTE]
     >  若要显示“数据源”窗口，请单击“数据”菜单上的“显示数据源”。  
   
-3.  在代码编辑器中打开 Form1。  
+3. 在代码编辑器中打开 Form1。  
   
-4.  将下面的代码添加到该窗体中。这些代码对于该窗体是全局性的，位于任何特定方法之外，但位于 Form1 类内部：  
+4. 将下面的代码添加到该窗体中。这些代码对于该窗体是全局性的，位于任何特定方法之外，但位于 Form1 类内部：  
   
     ```vb  
     Private NorthwindDataContext1 As New NorthwindDataContext  
@@ -132,7 +132,7 @@ ms.locfileid: "59651560"
   
     ```  
   
-5.  为 `Form_Load` 事件创建一个事件处理程序，并将下面的代码添加到该处理程序中：  
+5. 为 `Form_Load` 事件创建一个事件处理程序，并将下面的代码添加到该处理程序中：  
   
     ```vb  
     CustomerBindingSource.DataSource = NorthwindDataContext1.Customers  
@@ -149,15 +149,15 @@ ms.locfileid: "59651560"
   
 #### <a name="to-implement-save-functionality"></a>实现保存功能  
   
-1.  在“设计”视图中打开“Form1”。  
+1. 在“设计”视图中打开“Form1”。  
   
-2.  在“CustomerBindingNavigator”上选择保存按钮（带有软盘图标的按钮）。  
+2. 在“CustomerBindingNavigator”上选择保存按钮（带有软盘图标的按钮）。  
   
-3.  在“属性”窗口中，将“Enabled”属性设置为“True”。  
+3. 在“属性”窗口中，将“Enabled”属性设置为“True”。  
   
-4.  双击保存按钮以创建一个事件处理程序并切换到代码编辑器。  
+4. 双击保存按钮以创建一个事件处理程序并切换到代码编辑器。  
   
-5.  将下面的代码添加到保存按钮事件处理程序中：  
+5. 将下面的代码添加到保存按钮事件处理程序中：  
   
     ```vb  
     NorthwindDataContext1.SubmitChanges()  
@@ -171,23 +171,23 @@ ms.locfileid: "59651560"
   
 #### <a name="to-override-the-default-update-behavior"></a>重写默认更新行为  
   
-1.  在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中打开“LINQ to SQL”文件。 （在“解决方案资源管理器”中双击“Northwind.dbml”文件。）  
+1. 在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中打开“LINQ to SQL”文件。 （在“解决方案资源管理器”中双击“Northwind.dbml”文件。）  
   
-2.  在中**服务器资源管理器**/**数据库资源管理器**，展开 Northwind 数据库**存储过程**节点并找到**InsertCustomers**， **UpdateCustomers**，和**DeleteCustomers**存储过程。  
+2. 在中**服务器资源管理器**/**数据库资源管理器**，展开 Northwind 数据库**存储过程**节点并找到**InsertCustomers**， **UpdateCustomers**，和**DeleteCustomers**存储过程。  
   
-3.  将所有这三个存储过程都拖动到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上。  
+3. 将所有这三个存储过程都拖动到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上。  
   
      这些存储过程将作为 <xref:System.Data.Linq.DataContext> 方法添加到方法窗格中。 有关详细信息，请参阅[DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)。  
   
-4.  选择**客户**中的实体类[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
+4. 选择**客户**中的实体类[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。  
   
-5.  在“属性”窗口中选择“Insert”属性。  
+5. 在“属性”窗口中选择“Insert”属性。  
   
-6.  单击省略号 （...） 下一步**使用运行时**以打开**配置行为**对话框。  
+6. 单击省略号 （...） 下一步**使用运行时**以打开**配置行为**对话框。  
   
-7.  选择“自定义”。  
+7. 选择“自定义”。  
   
-8.  在“自定义”列表中选择“InsertCustomers”方法。  
+8. 在“自定义”列表中选择“InsertCustomers”方法。  
   
 9. 单击“应用”保存所选择的类和行为的配置。  
   
@@ -227,21 +227,21 @@ ms.locfileid: "59651560"
   
 #### <a name="to-test-the-application"></a>测试应用程序  
   
-1.  按 F5。  
+1. 按 F5。  
   
-2.  修改网格中的一条记录以测试更新行为。  
+2. 修改网格中的一条记录以测试更新行为。  
   
-3.  添加一条新记录以测试插入行为。  
+3. 添加一条新记录以测试插入行为。  
   
-4.  单击“保存”按钮将更改保存回数据库。  
+4. 单击“保存”按钮将更改保存回数据库。  
   
-5.  关闭窗体。  
+5. 关闭窗体。  
   
-6.  按 F5 并验证是否保存了更新的记录和新插入的记录。  
+6. 按 F5 并验证是否保存了更新的记录和新插入的记录。  
   
-7.  删除在步骤 3 中创建的新记录以测试删除行为。  
+7. 删除在步骤 3 中创建的新记录以测试删除行为。  
   
-8.  单击保存按钮以提交更改并从数据库中移除已删除的记录  
+8. 单击保存按钮以提交更改并从数据库中移除已删除的记录  
   
 9. 关闭窗体。  
   
@@ -253,9 +253,9 @@ ms.locfileid: "59651560"
 ## <a name="next-steps"></a>后续步骤  
  根据应用程序需求的不同，您可能需要在创建 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 实体类后执行几个步骤。 你可以对此应用程序进行的一些增强包括：  
   
--   在更新过程中实现并发检查。 有关信息，请参阅[开放式并发：概述](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)。  
+- 在更新过程中实现并发检查。 有关信息，请参阅[开放式并发：概述](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)。  
   
--   添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)。  
+- 添加 LINQ 查询以筛选数据。 有关信息，请参阅[LINQ 查询 (C#) 简介](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094861"
 ---
 # <a name="test-area-6-delete"></a>测试区域 6：删除
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "58932027"
 ## <a name="expected-behavior"></a>预期的行为  
  删除测试区域中的测试用例预期的行为是：  
   
--   已删除的项将不再显示在**解决方案资源管理器**。  
+- 已删除的项将不再显示在**解决方案资源管理器**。  
   
--   已删除的项目或项的父签出，根据需要 （也许加上提示。）  
+- 已删除的项目或项的父签出，根据需要 （也许加上提示。）  
   
--   删除签入或添加的项后，它不会出现在**挂起的签入**窗口。  
+- 删除签入或添加的项后，它不会出现在**挂起的签入**窗口。  
   
--   项仍然后删除，在源代码管理存储区中，存在，并且必须手动清除。  
+- 项仍然后删除，在源代码管理存储区中，存在，并且必须手动清除。  
   
 |操作|测试步骤|若要验证的预期的结果|  
 |------------|----------------|--------------------------------|  

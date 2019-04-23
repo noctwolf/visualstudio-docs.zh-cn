@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073522"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ ms.locfileid: "58932450"
   
  若要读取 UML 关系图或层关系图，你所需的最小文件集如下：  
   
--   两个关系图文件为你想要读取，例如，该关系图**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
+- 两个关系图文件为你想要读取，例如，该关系图**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
   
     > [!NOTE]
     >  有关层关系图，还应具有名为的文件_MyDiagram_**。 layerdiagram.suppressions**。  
   
--   建模项目文件 (**MyModel.modelproj**)  
+- 建模项目文件 (**MyModel.modelproj**)  
   
--   根模型文件 (**ModelDefinition\MyModel.uml**)  
+- 根模型文件 (**ModelDefinition\MyModel.uml**)  
   
--   在关系图中引用的任何包的包文件 (**ModelDefinition\MyPackage.uml**)  
+- 在关系图中引用的任何包的包文件 (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>在只读模式下可执行的更改  
  如果你在一个不支持创建模型的 Visual Studio 中打开模型及其关系图，则你无法更改模型。 也就是说，你无法更改显示在关系图或模型资源管理器上的元素和关系。 但是，你可以对关系图的布局进行某些更改：  
@@ -55,7 +55,7 @@ ms.locfileid: "58932450"
   
   你可以保存这些更改。 如果你想要使所做的更改对其他用户可见，则必须至少发送已更新 **.layout**文件。  
   
-##  <a name="RelatedTopics"></a>相关主题  
+## <a name="RelatedTopics"></a>相关主题  
   
 |标题|描述|  
 |-----------|-----------------|  

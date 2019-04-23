@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc151e69206e37f88eac04ac8bbb2f4d9dbf1ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104676"
 ---
 # <a name="define-a-work-item-link-handler"></a>定义工作项链接处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,39 +26,39 @@ ms.locfileid: "58932734"
 ## <a name="set-up-a-uml-extension-solution"></a>设置 UML 扩展解决方案  
  这样便可以开发处理程序，然后将它们分配给其他用户。 需要设置两个 Visual Studio 项目：  
   
--   一个类库项目，它包含链接处理程序的代码。  
+- 一个类库项目，它包含链接处理程序的代码。  
   
--   一个 VSIX 项目，它充当用于安装命令的容器。 如果需要，可以将其他组件包括在同一 VSIX 中。  
+- 一个 VSIX 项目，它充当用于安装命令的容器。 如果需要，可以将其他组件包括在同一 VSIX 中。  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>设置 Visual Studio 解决方案  
   
-1.  创建一个类库项目，将该项目添加到现有 VSIX 解决方案或创建一个新的解决方案。  
+1. 创建一个类库项目，将该项目添加到现有 VSIX 解决方案或创建一个新的解决方案。  
   
-    1.  在“文件”  菜单上，选择“新建” 、“项目” 。  
+    1. 在“文件”  菜单上，选择“新建” 、“项目” 。  
   
-    2.  下**已安装的模板**，展开**Visual C#** 或**Visual Basic**，然后在中间栏中单击**类库**。  
+    2. 下**已安装的模板**，展开**Visual C#** 或**Visual Basic**，然后在中间栏中单击**类库**。  
   
-    3.  设置 **“解决方案”** 以指示你是希望创建新的解决方案，还是希望向已打开的 VSIX 解决方案添加组件。  
+    3. 设置 **“解决方案”** 以指示你是希望创建新的解决方案，还是希望向已打开的 VSIX 解决方案添加组件。  
   
-    4.  设置项目的名称和位置，然后单击“确定”。  
+    4. 设置项目的名称和位置，然后单击“确定”。  
   
-2.  除非你的解决方案已经包含一个项目，否则请创建一个 VSIX 项目。  
+2. 除非你的解决方案已经包含一个项目，否则请创建一个 VSIX 项目。  
   
-    1.  在“解决方案资源管理器” 中，在该解决方案的快捷菜单上依次选择“添加” 、“新建项目” 。  
+    1. 在“解决方案资源管理器” 中，在该解决方案的快捷菜单上依次选择“添加” 、“新建项目” 。  
   
-    2.  在“已安装的模板” 下，展开“Visual C#”  或“Visual Basic” ，然后选择“扩展性” 。 在中间栏中，选择“VSIX 项目” 。  
+    2. 在“已安装的模板” 下，展开“Visual C#”  或“Visual Basic” ，然后选择“扩展性” 。 在中间栏中，选择“VSIX 项目” 。  
   
-3.  将 VSIX 项目设置为解决方案的启动项目。  
+3. 将 VSIX 项目设置为解决方案的启动项目。  
   
-    -   在“解决方案资源管理器”中，VSIX 项目的快捷菜单上选择“设为启动项目” 。  
+    - 在“解决方案资源管理器”中，VSIX 项目的快捷菜单上选择“设为启动项目” 。  
   
-4.  在中**source.extension.vsixmanifest**下**内容**，将类库项目添加为 MEF 组件。  
+4. 在中**source.extension.vsixmanifest**下**内容**，将类库项目添加为 MEF 组件。  
   
-    1.  在“元数据”  选项卡上，设置 VSIX 的名称。  
+    1. 在“元数据”  选项卡上，设置 VSIX 的名称。  
   
-    2.  在“安装目标”  选项卡上，将 Visual Studio 版本设置为目标。  
+    2. 在“安装目标”  选项卡上，将 Visual Studio 版本设置为目标。  
   
-    3.  在“资产”  选项卡上，选择 “新建”，并在对话框中进行如下设置：  
+    3. 在“资产”  选项卡上，选择 “新建”，并在对话框中进行如下设置：  
   
          **类型** = **MEF 组件**  
   
@@ -156,37 +156,37 @@ namespace WorkItems
   
 #### <a name="to-test-the-link-handler"></a>测试链接处理程序  
   
-1.  按“F5” ，或在“调试”  菜单上，选择“开始调试” 。  
+1. 按“F5” ，或在“调试”  菜单上，选择“开始调试” 。  
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
      **故障排除**:如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未启动，请确保将 VSIX 项目设置为启动项目的解决方案。  
   
-2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。  
+2. 在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。  
   
-3.  创建模型元素（如 UML 类）并设置其名称。  
+3. 创建模型元素（如 UML 类）并设置其名称。  
   
-4.  右键单击该元素，然后单击**创建工作项**。  
+4. 右键单击该元素，然后单击**创建工作项**。  
   
-    -   如果子菜单显示**打开 Team Foundation Server 连接**，将需要关闭该项目，连接到相应的 TFS，并重新启动此过程。  
+    - 如果子菜单显示**打开 Team Foundation Server 连接**，将需要关闭该项目，连接到相应的 TFS，并重新启动此过程。  
   
-    -   如果子菜单显示工作项类型的列表，请单击其中一个类型。  
+    - 如果子菜单显示工作项类型的列表，请单击其中一个类型。  
   
          将打开一个新的工作项表单。  
   
-5.  如果使用了上一节中的示例代码，请验证工作项的标题与模型元素相同。 这将演示 `OnWorkItemCreated()` 已运行。  
+5. 如果使用了上一节中的示例代码，请验证工作项的标题与模型元素相同。 这将演示 `OnWorkItemCreated()` 已运行。  
   
-6.  完成表单，保存并关闭工作项。  
+6. 完成表单，保存并关闭工作项。  
   
-7.  验证工作项现在是否以红色显示。 这将演示示例代码中的 `OnWorkItemLinked()`。  
+7. 验证工作项现在是否以红色显示。 这将演示示例代码中的 `OnWorkItemLinked()`。  
   
      **故障排除**:如果尚未运行的处理程序方法，请验证：  
   
-    -   类库项目作为一个 MEF 组件在列出**内容**列表中**source.extensions.manifest** VSIX 项目中。  
+    - 类库项目作为一个 MEF 组件在列出**内容**列表中**source.extensions.manifest** VSIX 项目中。  
   
-    -   正确的 `Export` 特性附加到处理程序类，该类实现 `ILinkedWorkItemExtension`。  
+    - 正确的 `Export` 特性附加到处理程序类，该类实现 `ILinkedWorkItemExtension`。  
   
-    -   所有 `Import` 和 `Export` 特性的参数都有效。  
+    - 所有 `Import` 和 `Export` 特性的参数都有效。  
   
 ## <a name="about-the-work-item-handler-code"></a>关于工作项处理程序代码  
   
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
   
  若要使用下面的示例，将这些.NET 程序集添加到你的项目的引用中：  
   
--   Microsoft.TeamFoundation.Client.dll  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   

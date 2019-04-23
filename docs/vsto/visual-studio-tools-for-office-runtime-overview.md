@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f841d7f80e7130b2ee5a9c11f53d12137f7e358d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086321"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概述
   若要运行使用 Visual Studio 中的 Microsoft Office 开发人员工具创建的解决方案，必须在最终用户计算机上安装 Visual Studio 2010 Tools for Office 运行时。 有关详细信息，请参阅[如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 运行时包含两个主要组件：
@@ -42,7 +42,7 @@ ms.locfileid: "56642984"
 
   可以通过多种不同的方法安装运行时。 根据计算机上的配置，安装运行时期间将安装不同的运行时组件。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。
 
-##  <a name="officeextensions"></a> 了解.NET Framework 的 Office 扩展
+## <a name="officeextensions"></a> 了解.NET Framework 的 Office 扩展
  Visual Studio 2010 Tools for Office 运行时包括.NET Framework 3.5 的 Office 扩展[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]及更高版本。 以 .NET Framework 各版本为目标的解决方法使用该版本适用的扩展。
 
  这两种扩展包括解决方案用于自动处理和扩展 Office 应用程序的程序集。 在创建新的 Office 项目时，Visual Studio 会自动添加对项目类型和项目的目标 .NET Framework 使用的程序集的引用。 有关 Office 扩展中程序集的详细信息，请参阅[Visual Studio Tools for Office runtime 中的程序集](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)。
@@ -74,7 +74,7 @@ ms.locfileid: "56642984"
 
   进行此更改后，项目所使用的所有运行时类型的类型信息都会在生成该项目时嵌入到解决方案程序集中。 在运行时的解决方案使用此嵌入的类型信息，而不是中引用的程序集中的类型信息。
 
-##  <a name="UnmanagedLoader"></a> 了解 Office 解决方案加载程序
+## <a name="UnmanagedLoader"></a> 了解 Office 解决方案加载程序
  Visual Studio Tools for Office Runtime 包含一些非托管 DLL，Office 应用程序使用这些 DLL 加载运行时和 Office 解决方案。 虽然从来不必直接使用这些 DLL，但是知道这些 DLL 的用途可以帮助你更好地了解 Office 解决方案的体系结构。
 
  有关如何在加载过程中使用这些组件的信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)并[Architecture of VSTO 外接程序](../vsto/architecture-of-vsto-add-ins.md)。

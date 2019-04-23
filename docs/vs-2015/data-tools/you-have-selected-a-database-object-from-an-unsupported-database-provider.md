@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4021d6413acbe895995ee25809deb250daf6872c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8ecec386030299be7b6c9571218dec0c3396440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073587"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您从不支持的数据库提供程序选择了数据库对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "58932053"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   单击“确定”，继续设计映射到使用不受支持数据库提供程序的连接的实体类。 使用不支持的数据库提供程序时，可能遇到意外行为。  
+- 单击“确定”，继续设计映射到使用不受支持数据库提供程序的连接的实体类。 使用不支持的数据库提供程序时，可能遇到意外行为。  
   
      或  
   
--   单击“取消”。  
+- 单击“取消”。  
   
      操作停止。 创建或使用采用了用于 SQL Server 的 .NET Framework 提供程序的数据连接。  
   

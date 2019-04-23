@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064188"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>向 DSL 定义中添加扩展
 
@@ -20,15 +20,15 @@ DSL 定义扩展插件，可创建的域特定语言 (DSL) 的扩展包。 DSL �
 
 DSL 扩展可以包括以下功能：
 
--   模型和表示元素的属性
+- 模型和表示元素的属性
 
--   形状和连接符的修饰器
+- 形状和连接符的修饰器
 
--   类、 关系、 形状和连接器
+- 类、 关系、 形状和连接器
 
--   验证约束
+- 验证约束
 
--   工具箱项和选项卡
+- 工具箱项和选项卡
 
 扩展 DSL 的用户可以创建和保存模型，其中包含其他功能的实例。 已安装相应的扩展的其他用户可以读取模型。 未安装该扩展的用户不能使用其他功能，但它们可以更新和保存模型而不会丢失的其他功能。
 

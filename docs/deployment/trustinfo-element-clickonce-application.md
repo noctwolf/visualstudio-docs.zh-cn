@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042233"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 元素（ClickOnce 应用程序）
 描述应用程序要在客户端计算机上运行所需的最低安全权限。
@@ -78,28 +78,28 @@ ms.locfileid: "56631609"
 ## <a name="permissionset"></a>PermissionSet
  必需。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含 `IPermission` 元素。 此元素具有以下属性。
 
--   `ID`
+- `ID`
 
      必需。 标识权限集。 此属性可为任意值。 在 `defaultAssemblyRequest` 和 `assemblyRequest` 属性中引用此 ID。
 
--   `version`
+- `version`
 
      必需。 标识权限的版本。 此值通常为 `1`。
 
 ## <a name="ipermission"></a>IPermission
  可选。 此元素是 `PermissionSet` 元素的子元素。 `IPermission` 元素完全标识 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]中的权限类。 `IPermission` 元素具有以下属性，但可具有与权限类上属性对应的其他属性。 若要找出特定权限的语法，请参阅 Security.config 文件中列出的示例。
 
--   `class`
+- `class`
 
      必需。 按强名称来标识权限类。 例如，下面的代码标识 `FileDialogPermission` 类型。
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
      必需。 标识权限的版本。 此值通常为 `1`。
 
--   `Unrestricted`
+- `Unrestricted`
 
      必需。 标识应用程序是否需要不受限制地授予此权限。 如果为 `true`，则权限授予是无条件的。 如果为 `false`或者未定义此属性，则它根据 `IPermission` 标记上定义的特定于权限的属性进行限制。 以下列权限为例：
 
@@ -119,18 +119,18 @@ ms.locfileid: "56631609"
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  可选。 标识授予到所有程序集的权限集。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含以下元素。
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      必需。 标识为默认权限的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  可选。 标识特定程序集的权限。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含下列元素。
 
--   `Name`
+- `Name`
 
      必需。 标识程序集名称。
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      必需。 标识此程序集必需的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。
 

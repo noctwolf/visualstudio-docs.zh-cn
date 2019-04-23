@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096785"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定义建模工具的多个级别：
 
-1.  定义使用 DSL 定义关系图的特定于域的语言 (DSL)。 关系图表示法、 可读的 XML 格式，与生成代码和其他项目所需的基本工具，可以快速创建 DSL。
+1. 定义使用 DSL 定义关系图的特定于域的语言 (DSL)。 关系图表示法、 可读的 XML 格式，与生成代码和其他项目所需的基本工具，可以快速创建 DSL。
 
      有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。
 
-2.  使用 DSL 定义的更高级的功能来微调 DSL。 例如，可以使其他用户创建的元素时，将显示的链接。 这些技术主要实现在 DSL 定义中，并且某些需要少量的程序代码行。
+2. 使用 DSL 定义的更高级的功能来微调 DSL。 例如，可以使其他用户创建的元素时，将显示的链接。 这些技术主要实现在 DSL 定义中，并且某些需要少量的程序代码行。
 
-3.  通过使用程序代码来扩展你的建模工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。  有关详细信息，请参阅[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+3. 通过使用程序代码来扩展你的建模工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。  有关详细信息，请参阅[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 > [!NOTE]
 >  当有更新 DSL 定义文件时，请不要忘记单击**转换所有模板**之前重新生成解决方案的解决方案资源管理器工具栏中。

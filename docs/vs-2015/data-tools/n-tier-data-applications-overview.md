@@ -19,28 +19,27 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082173"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。  
   
  典型的 n 层应用程序包括一个表示层、一个中间层和一个数据层。 单独的 n 层应用程序中的各个层的最简单方法是创建每个层都想要包括在应用程序中的离散项目。 例如，表示层可能是 Windows 窗体应用程序，而数据访问逻辑可以是位于中间层中的类库。 此外，表示层可能与数据访问逻辑在中间层通过服务之类的服务通信。 将应用程序组件分离到不同的层可提高应用程序的可维护性和可伸缩性。 有利于采用新技术，可应用于单个层而无需重新设计整个解决方案执行此操作。 此外，n 层应用程序通常将敏感信息存储在中间层中，以便与表示层隔离。  
   
  Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序：  
   
--   数据集设计器提供了**数据集项目**属性，可用于单独的数据集 （数据实体层） 和`TableAdapter`s （数据访问层） 相互独立的项目。  
+- 数据集设计器提供了**数据集项目**属性，可用于单独的数据集 （数据实体层） 和`TableAdapter`s （数据访问层） 相互独立的项目。  
   
--   [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了单独的命名空间中生成的 DataContext 和数据类的设置。 这样，数据访问和数据实体层的逻辑分隔。  
+- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了单独的命名空间中生成的 DataContext 和数据类的设置。 这样，数据访问和数据实体层的逻辑分隔。  
   
--   [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供了<xref:System.Data.Linq.Table%601.Attach%2A>方法，可用于从应用程序中的不同层将组合在一起的 DataContext。 有关详细信息，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
+- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供了<xref:System.Data.Linq.Table%601.Attach%2A>方法，可用于从应用程序中的不同层将组合在一起的 DataContext。 有关详细信息，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
   
 ## <a name="presentation-tier"></a>表示层  
  *表示层*是用户与应用程序交互的层。 它通常还包含其他应用程序逻辑。 典型的表示层组件包括：  
@@ -58,11 +57,11 @@ N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为
   
 - 数据访问组件和逻辑，如下所示：  
   
-  -   [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)并[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
+  - [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)并[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
   
-  -   对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类。  
+  - 对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类。  
   
-  -   常见的应用程序服务，例如身份验证、 授权和个性化设置。  
+  - 常见的应用程序服务，例如身份验证、 授权和个性化设置。  
   
   下图显示了功能和技术，可在 Visual Studio 中以及其中它们可能适合为 n 层应用程序的中间层。  
   

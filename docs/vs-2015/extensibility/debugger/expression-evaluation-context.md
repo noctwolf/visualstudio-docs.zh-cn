@@ -10,21 +10,21 @@ ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 348fc23fbe240f36e647d12589a9255cec2afad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 377609cb9f971b667872c198a53b45a6288f2c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052919"
 ---
 # <a name="expression-evaluation-context"></a>表达式计算上下文
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试**表达式计算上下文**:  
   
--   表示为表达式计算上下文。 通常情况下，评估上下文对应于在其中计算变量、 参数、 函数和方法的词法范围。 例如，表达式评估上下文与堆栈帧关联将用于评估本地变量、 方法参数和类成员 （如果适用） 提供的上下文。  
+- 表示为表达式计算上下文。 通常情况下，评估上下文对应于在其中计算变量、 参数、 函数和方法的词法范围。 例如，表达式评估上下文与堆栈帧关联将用于评估本地变量、 方法参数和类成员 （如果适用） 提供的上下文。  
   
--   当程序已停止在断点处存在。 该表达式本身是一种数据结构，表示已准备好绑定和评估给定上下文中的已分析的表达式。  
+- 当程序已停止在断点处存在。 该表达式本身是一种数据结构，表示已准备好绑定和评估给定上下文中的已分析的表达式。  
   
      在更多详细信息，使用创建表达式[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法。 当计算表达式时，它生成一个包含名称和类型的变量或参数，并且其值的可打印字符串。 在监视窗口中或在 IDE 的局部变量窗口中显示此字符串。  
   

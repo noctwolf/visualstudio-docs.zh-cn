@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6426572ff346debba32029024a96c9cc5af52ff4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699673"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082290"
 ---
 # <a name="add-a-toolbar"></a>添加工具栏
 本演练演示如何将工具栏添加到 Visual Studio IDE。
@@ -35,7 +35,7 @@ ms.locfileid: "56699673"
 
 ## <a name="create-a-toolbar-for-the-ide"></a>为 IDE 创建工具栏
 
-1.  在中*ToolbarTestCommandPackage.vsct*，查找符号部分。 在名为 guidToolbarTestCommandPackageCmdSet GuidSymbol 元素中，添加一个工具栏和工具栏组声明，如下所示。
+1. 在中*ToolbarTestCommandPackage.vsct*，查找符号部分。 在名为 guidToolbarTestCommandPackageCmdSet GuidSymbol 元素中，添加一个工具栏和工具栏组声明，如下所示。
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -43,7 +43,7 @@ ms.locfileid: "56699673"
 
     ```
 
-2.  在顶部的命令部分，创建一个菜单的部分。 将菜单元素添加到菜单部分来定义您的工具栏。
+2. 在顶部的命令部分，创建一个菜单的部分。 将菜单元素添加到菜单部分来定义您的工具栏。
 
     ```xml
     <Menus>
@@ -60,7 +60,7 @@ ms.locfileid: "56699673"
 
      不能像子菜单嵌套工具栏。 因此，无需分配父组。 此外，您无需设置优先级，因为用户可以移动工具栏。 通常情况下，初始放置工具栏的定义以编程方式，但用户的后续更改永久保存。
 
-3.  在中[组](../extensibility/groups-element.md)部分中，现有的组项之后, 定义[组](../extensibility/group-element.md)元素以包含工具栏的命令。
+3. 在中[组](../extensibility/groups-element.md)部分中，现有的组项之后, 定义[组](../extensibility/group-element.md)元素以包含工具栏的命令。
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -69,7 +69,7 @@ ms.locfileid: "56699673"
     </Group>
     ```
 
-4.  请在工具栏上显示的按钮。 在按钮部分中，将为到工具栏按钮中的父块。 生成的按钮块应如下所示：
+4. 请在工具栏上显示的按钮。 在按钮部分中，将为到工具栏按钮中的父块。 生成的按钮块应如下所示：
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,11 +83,11 @@ ms.locfileid: "56699673"
 
      默认情况下，如果一个工具栏不具有任何命令，它不会不显示。
 
-5.  生成项目并启动调试。 应显示在实验实例。
+5. 生成项目并启动调试。 应显示在实验实例。
 
-6.  右键单击 Visual Studio 菜单栏，以获取工具栏的列表。 选择**测试工具栏**。
+6. 右键单击 Visual Studio 菜单栏，以获取工具栏的列表。 选择**测试工具栏**。
 
-7.  现在应为一个图标文件图标中查找右侧看到您的工具栏。 当单击图标时，应看到一个消息框，显示**ToolbarTestCommandPackage。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. 现在应为一个图标文件图标中查找右侧看到您的工具栏。 当单击图标时，应看到一个消息框，显示**ToolbarTestCommandPackage。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>请参阅
 - [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

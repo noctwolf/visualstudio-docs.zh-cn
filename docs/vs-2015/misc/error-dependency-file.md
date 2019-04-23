@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056477"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>错误： 依赖项&#39;文件&#39;项目中&#39;项目&#39;不能将复制到运行目录，因为它将与依赖关系冲突&#39;文件&#39;
 引用之间存在冲突；为使应用程序运行，将多个具有相同文件名的不同的依赖项复制到 bin 目录中。 由于没有任何依赖项是主引用，因此运行目录无法解决此冲突。  
@@ -27,11 +27,11 @@ ms.locfileid: "58937054"
   
  **若要更正此错误**  
   
--   将某个程序集设为你项目的直接引用。 此方法可能存在的缺点是，不保证你所选择的程序集适用于需要引用程序集的某一其他版本的程序集。  
+- 将某个程序集设为你项目的直接引用。 此方法可能存在的缺点是，不保证你所选择的程序集适用于需要引用程序集的某一其他版本的程序集。  
   
      \- 或 -  
   
--   请确保程序集的这两个副本具有强名称且在全局程序集缓存中。 这样就无需将程序集复制到 bin 目录中。  
+- 请确保程序集的这两个副本具有强名称且在全局程序集缓存中。 这样就无需将程序集复制到 bin 目录中。  
   
 ## <a name="see-also"></a>请参阅  
  [管理项目中的引用](../ide/managing-references-in-a-project.md)   

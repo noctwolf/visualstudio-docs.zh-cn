@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077818"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在代码和文本编辑器中编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用
     键入内容时，结果显示在文本框下的下拉列表中。
 1. 若要转到某个元素，请在列表中选择它。
 
-
 ### <a name="filter-your-search"></a>筛选搜索
 
 若要限制搜索范围以仅代码符号，前面加上与在导航到查询"\@"字符。 例如，如果搜索 `@application`，“导航到”只会显示其中包含单词“application”的类。
@@ -189,45 +188,45 @@ Visual Studio 的“导航到”命令会对代码进行重点搜索，帮助用
 
  有关特定于语言的编辑器选项的信息，请参阅以下内容：  
 
--   [Visual Basic 设置](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Visual Basic 设置](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [使用适用于 C# Visual Studio 开发环境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [使用 Visual Studio C# 开发环境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [选项，文本编辑器，JavaScript，格式](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [“选项”->“文本编辑器”->“JavaScript”->“格式设置”](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>本节内容  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+- [查找和替换文本](../ide/finding-and-replacing-text.md)  
 
--   [编码和换行符](../ide/encodings-and-line-breaks.md)  
+- [编码和换行符](../ide/encodings-and-line-breaks.md)  
 
--   [大纲显示](../ide/outlining.md)  
+- [大纲显示](../ide/outlining.md)  
 
--   [重构](../ide/refactoring-in-visual-studio.md)  
+- [重构](../ide/refactoring-in-visual-studio.md)  
 
--   [工作效率提示](../ide/productivity-tips-for-visual-studio.md)  
+- [工作效率提示](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+- [使用 IntelliSense](../ide/using-intellisense.md)  
 
--   [自定义编辑器](../ide/customizing-the-editor.md)  
+- [自定义编辑器](../ide/customizing-the-editor.md)  
 
--   [如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [如何：通过自定义滚动条来跟踪代码](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [如何：查看和编辑代码使用查看定义 (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [如何：使用“查看定义”(Alt+F12) 查看和编辑代码](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [使用电灯泡执行快速操作](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [使用灯泡执行快速操作](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [代码段](../ide/code-snippets.md)  
+- [代码片段](../ide/code-snippets.md)  
 
--   [使用工具箱](../ide/using-the-toolbox.md)  
+- [使用工具箱](../ide/using-the-toolbox.md)  
 
--   [查看代码的结构](../ide/viewing-the-structure-of-code.md)  
+- [查看代码的结构](../ide/viewing-the-structure-of-code.md)  
 
--   [在代码中设置书签](../ide/setting-bookmarks-in-code.md)  
+- [在代码中设置书签](../ide/setting-bookmarks-in-code.md)  
 
--   [使用任务列表](../ide/using-the-task-list.md)  
+- [使用任务列表](../ide/using-the-task-list.md)  
 
--   [查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>请参阅  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

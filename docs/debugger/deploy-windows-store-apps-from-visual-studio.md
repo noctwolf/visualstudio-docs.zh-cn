@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065735"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
 
@@ -36,18 +36,18 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
 - 部署由另一个应用或方法启动时才进行调试的应用。
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 UWP 应用
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> 如何部署 UWP 应用
  手动部署应用是一个非常简单的过程：
 
-1.  如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。
+1. 如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。
 
-2.  在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。 
+2. 在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。 
 
      ![本地计算机上运行](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  在 **“生成”** 菜单上，选择 **“部署”**
+3. 在 **“生成”** 菜单上，选择 **“部署”**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定远程设备
+## <a name="BKMK_How_to_specify_a_remote_device"></a> 如何指定远程设备
 
 **系统必备**
 
@@ -92,7 +92,7 @@ Visual Studio 部署功能在目标设备上构建并注册使用 Visual Studio 
 
 10. 在 **“远程计算机”** 框中输入远程设备的网络名称，或单击 **“查找”** ，从 **“选择远程调试器连接”** 对话框中选择该设备。
 
-##  <a name="BKMK_Deployment_options"></a> 部署选项
+## <a name="BKMK_Deployment_options"></a> 部署选项
 
 你可以在启动项目的“调试”属性页上设置以下部署选项。
 

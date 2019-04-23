@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937330"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044601"
 ---
 # <a name="running-document-table"></a>运行文档表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ IDE 维护名为运行文档表 (RDT) 的内部结构中的所有当前打开的
   
  IDE 还使用 RDT resurface （自带到前面） 打开的文档，如果用户请求该文档。 有关详细信息，请参阅[通过使用打开文件命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 若要确定是否在 RDT 中打开文件，请执行下列操作之一。  
   
--   若要了解是否项已打开的文档名字对象 （即完整的文档路径） 的查询。  
+- 若要了解是否项已打开的文档名字对象 （即完整的文档路径） 的查询。  
   
--   使用层次结构或项 ID 要求完整的文档路径，项目系统，然后在 RDT 中查找项。  
+- 使用层次结构或项 ID 要求完整的文档路径，项目系统，然后在 RDT 中查找项。  
   
 ## <a name="see-also"></a>请参阅  
  [RDT_ReadLock 用法](../../extensibility/internals/rdt-readlock-usage.md)   

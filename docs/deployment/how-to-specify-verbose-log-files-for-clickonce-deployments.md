@@ -1,5 +1,5 @@
 ---
-title: 如何： 指定 ClickOnce 部署的详细日志文件 |Microsoft Docs
+title: 如何：指定 ClickOnce 部署的详细日志文件 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70c83c31ba8c415de9c2a7be8f60c9c6ee8ba9ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111527"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>如何：指定 ClickOnce 部署的详细日志文件
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 维护所有部署的活动日志文件。 这些日志记录与安装、 初始化、 更新和卸载相关的详细信息[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 若要增加详细信息，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]写入这些日志文件，使用注册表编辑器 (*regedit.exe*) 来指定详细级别。
@@ -32,13 +32,13 @@ ms.locfileid: "56619493"
 
 ### <a name="to-specify-verbose-log-files"></a>若要指定详细日志文件
 
-1.  打开*Regedit.exe*。
+1. 打开*Regedit.exe*。
 
-2.  导航到的节点**HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**。
+2. 导航到的节点**HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**。
 
-3.  如有必要，创建一个名为的新字符串值`LogVerbosityLevel`。
+3. 如有必要，创建一个名为的新字符串值`LogVerbosityLevel`。
 
-4.  设置`LogVerbosityLevel`值设为`1`。
+4. 设置`LogVerbosityLevel`值设为`1`。
 
 ## <a name="see-also"></a>请参阅
 - [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)

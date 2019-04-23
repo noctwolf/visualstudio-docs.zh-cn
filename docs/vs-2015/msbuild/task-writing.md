@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794277"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656477"
 ---
 # <a name="task-writing"></a>任务写入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 任务提供在生成过程中运行的代码。 任务包含在目标中。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 附带一个典型任务库，也可以创建自己的任务。 有关 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 附带的任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
   
 ## <a name="tasks"></a>任务  
@@ -163,7 +162,7 @@ public string RequiredProperty
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明​​  
+### <a name="description"></a>说明  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -187,7 +186,7 @@ namespace SimpleTask1
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明​​  
+### <a name="description"></a>说明  
  以下 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个实现 <xref:Microsoft.Build.Framework.ITask> 接口的任务。 该任务返回 `true`，表示执行成功。  
   
 ### <a name="code"></a>代码  
@@ -245,7 +244,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明​​  
+### <a name="description"></a>说明  
  此 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 类演示一个从 <xref:Microsoft.Build.Utilities.Task> 帮助器类派生的任务。 它有一个必需的字符串属性，并引发一个由所有注册的记录器显示的事件。  
   
 ### <a name="code"></a>代码  
@@ -253,7 +252,7 @@ namespace SimpleTask2
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明​​  
+### <a name="description"></a>说明  
  以下示例显示一个调用上一示例任务 SimpleTask3 的项目文件。  
   
 ### <a name="code"></a>代码  

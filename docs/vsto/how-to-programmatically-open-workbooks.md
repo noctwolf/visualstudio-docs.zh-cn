@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107887"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>如何：以编程方式打开工作簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks> Microsoft Office Excel 中的集合就可以使用所有打开的工作簿并打开工作簿。
@@ -27,7 +27,7 @@ ms.locfileid: "56611888"
 
 ## <a name="to-open-an-existing-workbook"></a>若要打开现有的工作簿
 
-1.  使用<xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A>方法的<xref:Microsoft.Office.Interop.Excel.Workbooks>集合，在路径中将传递给该工作簿。
+1. 使用<xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A>方法的<xref:Microsoft.Office.Interop.Excel.Workbooks>集合，在路径中将传递给该工作簿。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
@@ -35,7 +35,7 @@ ms.locfileid: "56611888"
 ## <a name="compile-the-code"></a>编译代码
  此代码示例要求满足以下条件：
 
--   名为工作簿`YourWorkbook.xls`必须存在于一个名为目录`Test`在驱动器 c。
+- 名为工作簿`YourWorkbook.xls`必须存在于一个名为目录`Test`在驱动器 c。
 
 ## <a name="see-also"></a>请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de43eaa56b4405c48be423f94b905cb845cc9843
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100478"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>确定是否实现源代码管理 VSPackage
 本部分将详细介绍所选的源控制插件和源代码管理 Vspackage 扩展源代码管理解决方案，并提供全面的指南有关选择合适的集成路径。
@@ -28,13 +28,13 @@ ms.locfileid: "56628138"
 
  如果你想要实现源控件解决方案，以提供灵活性和更丰富控制的源控制逻辑和 UI，您可能更倾向于源代码控制包集成路由。 你可以：
 
-1.  注册您自己的源代码管理 VSPackage (请参阅[注册和选择](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。
+1. 注册您自己的源代码管理 VSPackage (请参阅[注册和选择](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。
 
-2.  默认的源代码管理 UI 替换为你的自定义 UI (请参阅[自定义用户界面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。
+2. 默认的源代码管理 UI 替换为你的自定义 UI (请参阅[自定义用户界面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。
 
-3.  指定字形来使用和处理解决方案资源管理器标志符号事件 (请参阅[字形控件](../../extensibility/internals/glyph-control-source-control-vspackage.md))。
+3. 指定字形来使用和处理解决方案资源管理器标志符号事件 (请参阅[字形控件](../../extensibility/internals/glyph-control-source-control-vspackage.md))。
 
-4.  处理查询编辑和保存查询的事件 (请参阅[查询编辑查询保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。
+4. 处理查询编辑和保存查询的事件 (请参阅[查询编辑查询保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。
 
 ## <a name="see-also"></a>请参阅
 - [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)

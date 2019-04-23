@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0c79da47b83f8bf5b44af16ca291e2424011b80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075605"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>如何：计算 XPath 表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,32 +23,32 @@ ms.locfileid: "58937829"
   
  下表说明在计算 XPath 表达式时支持的函数：  
   
--   支持内置 XPath 函数。  
+- 支持内置 XPath 函数。  
   
--   不支持内置 XSLT 函数。  
+- 不支持内置 XSLT 函数。  
   
--   不支持用户定义函数。  
+- 不支持用户定义函数。  
   
 > [!NOTE]
 >  以下过程使用的 belowAvg.xsl 和 books.xml 文件[演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)主题。  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>计算 XPath 表达式  
   
-1.  在 `xsl:if` 开始标记处插入断点。  
+1. 在 `xsl:if` 开始标记处插入断点。  
   
-2.  单击**调试 XSL** XML 编辑器工具栏上的按钮。  
+2. 单击**调试 XSL** XML 编辑器工具栏上的按钮。  
   
      调试程序在 `xsl:if` 标记处开始和中断。  
   
-3.  右键单击并选择**快速监视**。  
+3. 右键单击并选择**快速监视**。  
   
      **快速监视**显示对话框。  
   
-4.  输入`./price/text()`中**表达式**字段**快速监视**对话框中，单击**重新评估**。  
+4. 输入`./price/text()`中**表达式**字段**快速监视**对话框中，单击**重新评估**。  
   
      当前 book 节点的价格将出现在**值**框。  
   
-5.  将 XPath 表达式更改为`./price/text() < $bookAverage`然后单击**重新评估**。  
+5. 将 XPath 表达式更改为`./price/text() < $bookAverage`然后单击**重新评估**。  
   
      **值**框中显示的 XPath 表达式计算结果为`true`。  
   

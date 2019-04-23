@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: f7ab539c1e5a5e90006629850f4c0e728e2e89f4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f95daba8d1a7a8965be223ff2a9787101530edc1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868151"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790922"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。
@@ -178,7 +179,7 @@ if (performance.mark && performance.measure) {
 
  ![诊断会话标尺](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")
 
- 时间线显示应用程序生命周期事件（例如激活事件）的发生时间，并显示可添加到代码中的用户标记（用户标记三角形）。 可选择事件以显示包含更多信息的工具提示。 有关用户标记的详细信息，请参阅本主题中的 [标记要分析的代码](#ProfileMark) 。
+ 时间线显示应用生命周期事件（例如激活事件）的发生时间，并显示可添加到代码中的用户标记（用户标记三角形）。 可选择事件以显示包含更多信息的工具提示。 有关用户标记的详细信息，请参阅本主题中的 [标记要分析的代码](#ProfileMark) 。
 
  应用程序生命周期事件显示为菱形符号。 这些事件为 DOM 事件，包括：
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd911c978e253b28827b5b4bb0551a2355164663
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb22e857322cbd1893048392de85768287339198
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060055"
 ---
 # <a name="wizard-interface-idtwizard"></a>向导界面 (IDTWizard)
 集成的开发环境 (IDE) 使用<xref:EnvDTE.IDTWizard>接口与向导进行通信。 向导必须实现此接口，以便在 IDE 中安装。
@@ -38,23 +38,23 @@ STDMETHOD(Execute)(THIS_
 
  以下信息介绍<xref:EnvDTE.IDTWizard>向导为在工作而必须实现的接口[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 IDE 调用<xref:EnvDTE.IDTWizard.Execute%2A>在向导中，并向其传递以下方法：
 
--   DTE 对象
+- DTE 对象
 
      DTE 对象是自动化模型的根。
 
--   窗口对话框中，代码段中所示的图柄`hwndOwner ([in] long)`。
+- 窗口对话框中，代码段中所示的图柄`hwndOwner ([in] long)`。
 
      该向导将使用此`hwndOwner`作为向导对话框中的父级。
 
--   上下文参数传递给的接口作为变体为 SAFEARRAY 代码段中所示`[in] SAFEARRAY (VARIANT)* ContextParams`。
+- 上下文参数传递给的接口作为变体为 SAFEARRAY 代码段中所示`[in] SAFEARRAY (VARIANT)* ContextParams`。
 
      上下文参数包含特定于正在启动的向导类型的值的数组和项目的当前状态。 IDE 将上下文参数传递给该向导。 有关详细信息，请参阅[上下文参数](../../extensibility/internals/context-parameters.md)。
 
--   自定义参数传递给的接口为 variant 类型的 SAFEARRAY 的代码段中所示`[in] SAFEARRAY (VARIANT)* CustomParams`。
+- 自定义参数传递给的接口为 variant 类型的 SAFEARRAY 的代码段中所示`[in] SAFEARRAY (VARIANT)* CustomParams`。
 
      自定义参数包含用户定义的参数的数组。 .Vsz 文件传递到 IDE 的自定义参数。 值由`Param=`语句。 有关详细信息，请参阅[自定义参数](../../extensibility/internals/custom-parameters.md)。
 
--   接口的返回值为
+- 接口的返回值为
 
     ```
     wizardResultSuccess = -1,

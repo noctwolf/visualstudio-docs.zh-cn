@@ -11,12 +11,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 319d889d2763662cda92d815ce45a3becfcab8cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106119"
 ---
 # <a name="creating-options-pages"></a>创建选项页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58930716"
   
  因为环境要实例化实现特定的对象**工具选项**页面时 IDE 将显示该特定页：  
   
--   一个**工具选项**应实现页，在其自己的对象，而不是实现 VSPackage 的对象。  
+- 一个**工具选项**应实现页，在其自己的对象，而不是实现 VSPackage 的对象。  
   
--   一个对象不能实现多个**工具选项**页。  
+- 一个对象不能实现多个**工具选项**页。  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>注册为工具选项页上提供程序  
  通过的 VSPackage 支持的用户配置**工具选项**页面指示的对象提供这些**工具选项**通过应用的实例的页面<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>应用于<xref:Microsoft.VisualStudio.Shell.Package>实现。  

@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116376"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （独立或集成）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58936433"
 >  如果从客户收集单独使用情况数据，通过你的应用程序，您必须向您收集的应用程序的用户提供相应通知。  将独立或集成 shell 软件分发的应用程序中，根据 Visual Studio 软件开发工具包许可证，一部分时必须包括以下项之一：  
 > 
 > - 最终用户许可协议为应用程序许可证的一部分  
->   -   要求在客户同意的条款来保护在 Visual Studio 自己 EULA 集成或独立 shell 至少要作为命令行程序软件的 Microsoft 最终用户许可条款  
+>   - 要求在客户同意的条款来保护在 Visual Studio 自己 EULA 集成或独立 shell 至少要作为命令行程序软件的 Microsoft 最终用户许可条款  
   
 ## <a name="additional-resources"></a>其他资源  
  有关可再发行组件包的详细信息，请参阅[Visual Studio 扩展性下载](http://go.microsoft.com/fwlink/?LinkID=119298)Web 站点。  

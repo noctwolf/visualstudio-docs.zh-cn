@@ -11,22 +11,21 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eff3d6234d4d7b9ae34824d4fec5b8ae0816a20c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e7aade87e0e1f6fe6a07269a585b35f52d4a9e5d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796593"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663921"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  
   
 ## <a name="related-topics"></a>相关主题  
   
-|Title|说明​​|  
+|Title|说明|  
 |-----------|-----------------|  
 |[批处理](../msbuild/msbuild-batching.md)|介绍如何根据项元数据批处理生成目标和任务。|  
 |[转换](../msbuild/msbuild-transforms.md)|说明如何使用转换来启用依赖项分析。|  

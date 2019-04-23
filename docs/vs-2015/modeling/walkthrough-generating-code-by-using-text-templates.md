@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934865"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052878"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>要创建项目  
   
-1.  在“文件”  菜单上，单击“新建”  ，然后单击“项目” 。  
+1. 在“文件”  菜单上，单击“新建”  ，然后单击“项目” 。  
   
-2.  单击“”  节点，然后在“模板”  窗格中，单击“控制台应用程序”   
+2. 单击“”  节点，然后在“模板”  窗格中，单击“控制台应用程序”   
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>将原型 XML 文件添加到项目  
  此文件的目的是提供想要应用程序能够读取的 XML 节点类型的示例。 可以是一个将用于测试应用程序的文件。 模板将为此文件中的每种节点类型生成 C# 类。  

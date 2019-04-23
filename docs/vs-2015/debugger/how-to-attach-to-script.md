@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118248"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加到脚本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ ms.locfileid: "59000620"
   
 2. 在“附加到进程”对话框中，查看“可用进程”列表，找到要附加到的脚本进程。 可查看“类型”列以识别脚本进程。  
   
-   1.  如果要调试的进程运行在另一台计算器上，必须首先选择该远程计算机。 有关详细信息，请参阅[如何：选择远程计算机](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+   1. 如果要调试的进程运行在另一台计算器上，必须首先选择该远程计算机。 有关详细信息，请参阅[如何：选择远程计算机](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
   
-   2.  如果进程在不同的用户帐户下运行，请选中“显示所有用户的进程”复选框。  
+   2. 如果进程在不同的用户帐户下运行，请选中“显示所有用户的进程”复选框。  
   
-   3.  如果是通过 **“远程桌面连接”** 连接，请选中 **“显示所有会话中的进程”** 复选框。  
+   3. 如果是通过 **“远程桌面连接”** 连接，请选中 **“显示所有会话中的进程”** 复选框。  
   
 3. 单击要附加到的进程。  
   
 4. 在中**将附加到**框中，你应看到**脚本代码**或**自动：脚本代码**。 如果显示其他内容，请按照下列步骤操作：  
   
-   1.  单击“选择”。  
+   1. 单击“选择”。  
   
-   2.  在 “选择代码类型”对话框中，单击“调试这些代码类型”，然后选择“脚本”。  
+   2. 在 “选择代码类型”对话框中，单击“调试这些代码类型”，然后选择“脚本”。  
   
-   3.  单击 **“确定”**。  
+   3. 单击 **“确定”**。  
   
 5. 单击 **“附加”**。  
   

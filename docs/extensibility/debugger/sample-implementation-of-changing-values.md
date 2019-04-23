@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f90ae35a002517c34af39cb53deec05a458f716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680524"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085521"
 ---
 # <a name="sample-implementation-of-changing-values"></a>更改值的实现示例
 > [!IMPORTANT]
@@ -29,13 +29,13 @@ ms.locfileid: "56680524"
 
  实现`IDebugProperty2::SetValueAsString`执行下列任务：
 
-1.  要生成值的表达式的计算结果。
+1. 要生成值的表达式的计算结果。
 
-2.  将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象到其内存位置，并生成[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。
+2. 将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象到其内存位置，并生成[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。
 
-3.  将值转换为一系列字节。
+3. 将值转换为一系列字节。
 
-4.  调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)来在内存中存储的字节。
+4. 调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)来在内存中存储的字节。
 
 ## <a name="managed-code"></a>托管代码
  下面的代码是实现`IDebugProperty2::SetValueAsString`在托管代码中。

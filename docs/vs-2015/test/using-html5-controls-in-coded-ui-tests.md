@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100426"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "57867895"
   
  **要求**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  在 Internet Explorer 10 之前的版本中，可以在比 Internet Explorer 进程更高的特权级别中运行编码的 UI 测试。 当在 Internet Explorer 10 中运行编码的 UI 测试时，编码的 UI 测试和 Internet Explorer 进程必须处于相同的特权级别。 这是因为 Internet Explorer 10 提供了更安全的 AppContainer 功能。  
@@ -33,13 +33,13 @@ ms.locfileid: "57867895"
 ## <a name="supported-html5-controls"></a>支持的 HTML5 控件  
  编码的 UI 测试包括对以下 HTML5 控件的录制、播放和验证支持：  
   
--   [音频控件](#audio-control)  
+- [音频控件](#audio-control)  
   
--   [视频控件](#video-control)  
+- [视频控件](#video-control)  
   
--   [滑块](#slider)  
+- [Slider](#slider)  
   
--   [进度栏](#progressbar)  
+- [进度栏](#progressbar)  
   
 ### <a name="audio-control"></a>音频控件  
  **音频控件：** 正确录制和播放 HTML5 音频控件上的操作。  
@@ -108,7 +108,7 @@ string VideoWidth
   
  **搜索属性：**`HtmlVideo` 的搜索属性为 `Id`、`Name` 和 `Title`。  
   
- **筛选器属性：**`HtmlVideo` 的筛选器属性为 `Src`、`Poster`、`Class`、`ControlDefinition` 和 `TagInstance`。  
+ **筛选器属性：**`HtmlVideo` 的筛选属性为 `Src`、`Poster``Class``ControlDefinition` 和 `TagInstance`。  
   
 > [!NOTE]
 >  如果使用 -30s 或 +30s 标签对视频后退或快进，将聚合标签以定位到相应的时间。  

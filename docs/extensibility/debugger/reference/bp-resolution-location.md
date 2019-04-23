@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6637899e70262dc238b604ec64907eab1387baf9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696306"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662902"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 指定断点解析位置的结构。
@@ -50,15 +50,15 @@ public struct BP_RESOLUTION_LOCATION {
 
 `bpResLocation.bpresCode`
 
- [C + +]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)结构，如果`bpType`  =  `BPT_CODE`。
+ [C++仅]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)结构，如果`bpType`  =  `BPT_CODE`。
 
 `bpResLocation.bpresData`
 
- [C + +]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)结构，如果`bpType`  =  `BPT_DATA`。
+ [C++仅]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)结构，如果`bpType`  =  `BPT_DATA`。
 
 `bpResLocation.unused`
 
- [C + +]一个占位符。
+ [C++仅]一个占位符。
 
 `unionmember1`
 
@@ -78,7 +78,6 @@ public struct BP_RESOLUTION_LOCATION {
 
 ## <a name="remarks"></a>备注
 此结构是的成员[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)并[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构。
-
 
  [C#仅]`unionmemberX`成员根据下表解释。 查看左侧列下方`bpType`值然后跨以确定每个`unionmemberX`成员表示和封送`unionmemberX`相应地。 请参阅一种方法来解释此结构在 C# 中的示例。
 

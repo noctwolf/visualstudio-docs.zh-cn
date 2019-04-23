@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04f4fff68720b456ac8ac2b8e121d9194019060c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091067"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：
@@ -36,7 +36,7 @@ ms.locfileid: "56633104"
 
   有关创建 VSTO 外接程序的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)。
 
-##  <a name="UnderstandingAddIns"></a> 了解 VSTO 外接程序
+## <a name="UnderstandingAddIns"></a> 了解 VSTO 外接程序
  当您使用在 Visual Studio 中的 Office 开发人员工具生成 VSTO 外接程序中时，您将创建由 Microsoft Office 应用程序加载的托管的代码程序集。 加载该程序集后，VSTO 外接程序可以响应在应用程序中引发的事件（例如，用户单击菜单项时）。 VSTO 外接程序也可以调入对象模型，以便实现应用程序自动化和扩展应用程序，并且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。
 
  程序集通过应用程序的主互操作程序集与应用程序的 COM 组件进行通信。 有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)并[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -46,7 +46,7 @@ ms.locfileid: "56633104"
 > [!NOTE]
 >  对于使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序，仅当最终用户启动主机 Microsoft Office 应用程序时才会使用。 如果以编程方式（例如，通过使用自动化）启动应用程序，VSTO 外接程序可能不会按预期工作。
 
-##  <a name="AddinComponents"></a> VSTO 外接程序的组件
+## <a name="AddinComponents"></a> VSTO 外接程序的组件
  尽管 VSTO 外接程序程序集是主要组件，但有其他若干组件对 Microsoft Office 应用程序如何发现和加载 VSTO 外接程序起重要作用。
 
 ### <a name="registry-entries"></a>注册表项
@@ -64,7 +64,7 @@ ms.locfileid: "56633104"
 
  有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-##  <a name="HowAddinsWork"></a> VSTO 外接程序与 Microsoft Office 应用程序的工作原理
+## <a name="HowAddinsWork"></a> VSTO 外接程序与 Microsoft Office 应用程序的工作原理
  当用户启动 Microsoft Office 应用程序时，该应用程序使用部署清单和应用程序清单来查找并加载 VSTO 外接程序程序集的最新版本。 下图显示了这些 VSTO 外接程序的基本体系结构。
 
  ![2007 office 外接程序体系结构](../vsto/media/office07addin.png "2007 Office 外接程序体系结构")
@@ -75,21 +75,21 @@ ms.locfileid: "56633104"
 ### <a name="loading-process"></a>加载过程
  用户启动应用程序时，会执行以下步骤：
 
-1.  应用程序检查注册表中是否存在标识使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序的项。
+1. 应用程序检查注册表中是否存在标识使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序的项。
 
-2.  如果应用程序找到这些注册表项，则该应用程序加载 VSTOEE.dll，后者会加载 VSTOLoader.dll。 这些非托管 DLL 是 Visual Studio 2010 Tools for Office Runtime 的加载程序组件。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+2. 如果应用程序找到这些注册表项，则该应用程序加载 VSTOEE.dll，后者会加载 VSTOLoader.dll。 这些非托管 DLL 是 Visual Studio 2010 Tools for Office Runtime 的加载程序组件。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-3.  *VSTOLoader.dll*加载[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]，并启动的托管的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
+3. *VSTOLoader.dll*加载[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]，并启动的托管的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
 
-4.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 检查清单更新，并下载最新的应用程序和部署清单。
+4. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 检查清单更新，并下载最新的应用程序和部署清单。
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 执行一系列安全检查。 有关详细信息，请参阅[保护 Office 解决方案](../vsto/securing-office-solutions.md)。
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 执行一系列安全检查。 有关详细信息，请参阅[保护 Office 解决方案](../vsto/securing-office-solutions.md)。
 
-6.  如果 VSTO 外接程序受信任，可以运行，则 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 使用部署清单和应用程序清单来检查程序集更新。 如果集有新版本的程序集可用，则运行时会将新版本的程序集下载到客户端计算机上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 缓存中。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+6. 如果 VSTO 外接程序受信任，可以运行，则 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 使用部署清单和应用程序清单来检查程序集更新。 如果集有新版本的程序集可用，则运行时会将新版本的程序集下载到客户端计算机上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 缓存中。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 创建一个要在其中加载 VSTO 外接程序程序集的新应用程序域。
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 创建一个要在其中加载 VSTO 外接程序程序集的新应用程序域。
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将 VSTO 外接程序程序集加载到应用程序域中。
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将 VSTO 外接程序程序集加载到应用程序域中。
 
 9. 如果你已重写 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 方法，则 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 将在 VSTO 外接程序中调用该方法。
 

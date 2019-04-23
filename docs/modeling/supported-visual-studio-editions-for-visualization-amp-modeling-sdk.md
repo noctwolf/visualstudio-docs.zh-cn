@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073327"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>可视化和建模 SDK 支持的 Visual Studio 版本
 
@@ -37,13 +37,13 @@ ms.locfileid: "55907511"
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 支持以下用于部署生成的域特定语言的配置：
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell （集成模式） 可再发行组件包可再发行组件包
+- Visual Studio Shell （集成模式） 可再发行组件包可再发行组件包
 
--   Visual Studio Shell（独立模式）可再发行组件包
+- Visual Studio Shell（独立模式）可再发行组件包
 
 > [!NOTE]
 > 若要使 DSL 能够在 Shell 产品上运行，必须设置**支持的 VS 版本**字段在扩展清单中。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。

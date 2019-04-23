@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073159"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229:实现序列化构造函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58930820"
 ## <a name="cause"></a>原因
  该类型实现<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>接口、 不是委托或接口，并且以下条件之一成立：
 
--   类型不具有采用的构造函数<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>对象和一个<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>对象 （序列化构造函数的签名）。
+- 类型不具有采用的构造函数<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>对象和一个<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>对象 （序列化构造函数的签名）。
 
--   类型是未密封，并且其序列化构造函数的访问修饰符不是受保护 （系列）。
+- 类型是未密封，并且其序列化构造函数的访问修饰符不是受保护 （系列）。
 
--   类型密封的其序列化构造函数的访问修饰符不是专有的。
+- 类型密封的其序列化构造函数的访问修饰符不是专有的。
 
 ## <a name="rule-description"></a>规则说明
  此规则是适用于支持自定义序列化的类型。 类型支持自定义序列化，它实现了如果<xref:System.Runtime.Serialization.ISerializable>接口。 序列化构造函数需要反序列化，或重新创建对象已被序列化使用<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法。

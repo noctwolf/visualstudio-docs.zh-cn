@@ -15,24 +15,24 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000825"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657124"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238:正确实现序列化方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的最新文档，请参阅[CA2238:正确实现序列化方法](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)docs.microsoft.com 上。  
+Visual Studio 的最新文档，请参阅[CA2238:正确实现序列化方法](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly)。  
   
 |||  
 |-|-|  
 |TypeName|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
 |类别|Microsoft.Usage|  
-|是否重大更改|是-如果方法为程序集外部可见。<br /><br /> 否-如果此方法不是程序集外部可见。|  
+|是否重大更改|是-如果方法为程序集外部可见。<br /><br /> 无间断-如果此方法不是程序集外部可见。|  
   
 ## <a name="cause"></a>原因  
  处理序列化事件的方法的签名、返回类型或可见性不正确。  

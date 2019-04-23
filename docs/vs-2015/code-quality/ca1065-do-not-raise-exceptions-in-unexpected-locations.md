@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095348"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065:不要在意外的位置引发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,24 +65,24 @@ ms.locfileid: "58933558"
 
  允许属性 get 方法从引发以下异常：
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> 所有派生类 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 所有派生类 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> 所有派生类
+- <xref:System.NotSupportedException?displayProperty=fullName> 所有派生类
 
--   <xref:System.ArgumentException?displayProperty=fullName> （仅限通过索引，以获得）
+- <xref:System.ArgumentException?displayProperty=fullName> （仅限通过索引，以获得）
 
--   <xref:System.Collections.Generic.KeyNotFoundException> （仅限通过索引，以获得）
+- <xref:System.Collections.Generic.KeyNotFoundException> （仅限通过索引，以获得）
 
 ### <a name="event-accessor-methods"></a>事件访问器方法
  事件访问器应该是简单的操作，不会引发异常。 当您尝试添加或删除事件处理程序时，事件不应引发异常。
 
  允许从事件访问器中引发以下异常：
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> 所有派生类 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> 所有派生类 (包括<xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> 所有派生类
+- <xref:System.NotSupportedException?displayProperty=fullName> 所有派生类
 
--   <xref:System.ArgumentException> 派生类
+- <xref:System.ArgumentException> 派生类
 
 ### <a name="equals-methods"></a>Equals 方法
  以下**等于**方法不应引发异常：

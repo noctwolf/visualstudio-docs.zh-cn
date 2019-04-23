@@ -1,5 +1,5 @@
 ---
-title: 如何： 检索在联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft Docs
+title: 如何：检索在联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095849"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值*的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：
@@ -39,19 +39,19 @@ ms.locfileid: "56599189"
 > [!NOTE]
 >  决定启用此功能之前，请参阅本主题后面的“安全性”一节。
 
- 有关如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用的*Mage.exe*或*MageUI.exe*，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ 有关如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用的*Mage.exe*或*MageUI.exe*，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 > [!NOTE]
 >  从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>从 ClickOnce 应用程序获取查询字符串信息
 
-1.  将以下代码置于项目中。 若要使此代码正常运行，必须具有对 System.Web 的引用，并且为 System.Web、System.Collections.Specialized 和 System.Deployment.Application 添加 `using` 或 `Imports` 语句。
+1. 将以下代码置于项目中。 若要使此代码正常运行，必须具有对 System.Web 的引用，并且为 System.Web、System.Collections.Specialized 和 System.Deployment.Application 添加 `using` 或 `Imports` 语句。
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  调用以前定义的函数以检索查询字符串参数的 <xref:System.Collections.DictionaryBase.Dictionary%2A> （按名称编制索引）。
+2. 调用以前定义的函数以检索查询字符串参数的 <xref:System.Collections.DictionaryBase.Dictionary%2A> （按名称编制索引）。
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>使用 MageUI.exe 在 ClickOnce 应用程序中启用查询字符串传递
 

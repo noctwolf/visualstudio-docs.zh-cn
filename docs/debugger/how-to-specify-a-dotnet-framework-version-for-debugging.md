@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b674239d4d3b800680479830fbb16392e0cdeaf4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080652"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>如何： 指定用于调试的.NET Framework 版本 (C#，Visual Basic 中， F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>如何：指定用于调试的.NET Framework 版本 (C#，Visual Basic 中， F#)
 
 Visual Studio 调试器支持调试较旧版本的 Microsoft[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和当前版本。 如果从 Visual Studio 启动应用程序，则调试器可以始终为正在进行调试的应用程序识别 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的正确版本。 但是，如果应用程序已运行，而且您开始调试通过**将附加到**，调试器可能始终无法识别较旧版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 如果发生这种情况，您将收到一条错误消息，指出：
 
@@ -46,13 +46,13 @@ The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](.
 
 3. 在“注册表编辑器”中打开 HKEY_LOCAL_MACHINE 文件夹。
 
-4. 导航到：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. 转到：HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
     如果该密钥不存在，请右键单击 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然后单击“新建密钥”。 命名新的密钥`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。
 
 5. 导航到 {449EC4CC-30D2-4032-9256-EE18EB41B62B} 后，在“名称”列中查找 CLRVersionForDebugging 密钥。
 
-   1.  如果该密钥不存在，请右键单击 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然后单击“新建字符串值”。 然后右键单击新的字符串值，单击**重命名**，然后键入`CLRVersionForDebugging`。
+   1. 如果该密钥不存在，请右键单击 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然后单击“新建字符串值”。 然后右键单击新的字符串值，单击**重命名**，然后键入`CLRVersionForDebugging`。
 
 6. 双击“CLRVersionForDebugging”。
 

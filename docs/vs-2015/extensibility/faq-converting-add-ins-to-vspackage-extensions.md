@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048670"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题解答：将外接程序转换为 VSPackage 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ ms.locfileid: "58936935"
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>可以将我的外接程序项目转换为一个 VSIX 项目中？  
  不能直接向 VSIX 项目转换外接程序项目，因为在 VSIX 项目中使用的机制不是与外接程序项目中的相同。 VSIX 项目模板，以及正确的项目项模板具有大量使它相对容易建立并作为 VSIX 扩展正在运行的代码。  
   
-##  <a name="BKMK_StartDeveloping"></a> 如何开始开发 VSIX 扩展？  
+## <a name="BKMK_StartDeveloping"></a> 如何开始开发 VSIX 扩展？  
  下面是如何使 VSIX 具有菜单命令：  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要使 VSIX 扩展具有菜单命令  
   
-1.  创建 VSIX 项目。 (**文件**，**新建**，**项目**，或类型**项目**中**快速启动**窗口)。 在**新的项目**对话框框中，展开**Visual C# / 可扩展性**或**Visual Basic / 扩展性**，然后选择**VSIX 项目**。)将项目命名**TestExtension**并为其指定一个位置。  
+1. 创建 VSIX 项目。 (**文件**，**新建**，**项目**，或类型**项目**中**快速启动**窗口)。 在**新的项目**对话框框中，展开**Visual C# / 可扩展性**或**Visual Basic / 扩展性**，然后选择**VSIX 项目**。)将项目命名**TestExtension**并为其指定一个位置。  
   
-2.  添加**自定义命令**项目项模板。 (右键单击项目节点中的**解决方案资源管理器**，然后选择**添加 / 新项**。 在**新的项目**的 Visual C# 或 Visual Basic 中，选择对话框**扩展性**节点，然后选择**自定义命令**。)  
+2. 添加**自定义命令**项目项模板。 (右键单击项目节点中的**解决方案资源管理器**，然后选择**添加 / 新项**。 在**新的项目**的 Visual C# 或 Visual Basic 中，选择对话框**扩展性**节点，然后选择**自定义命令**。)  
   
-3.  按 F5 以在调试模式下生成并运行项目。  
+3. 按 F5 以在调试模式下生成并运行项目。  
   
      将出现 Visual Studio 的第二个实例。 此第二个实例称为实验实例，它具有的设置可能与你要用来编写代码的 Visual Studio 实例的设置不相同。 第一次运行实验实例时，系统将要求你登录到 VS Online 并指定你的主题和配置文件。  
   
      上**工具**看到名为的按钮 （在实验实例中） 的菜单**我的命令名**。 当选择此按钮时，应显示一条消息：**Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？  
+## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？  
  通常采用以下两种方式之一来运行外接程序代码：  
   
 - 由菜单命令触发（代码位于 `IDTCommandTarget.Exec` 方法中）  

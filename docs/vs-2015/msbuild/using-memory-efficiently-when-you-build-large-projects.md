@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b214ff057125b2921ec853fbee004cbb7d41f9e0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28d9f3d43faa53731b101dfdf58fe1e68a0920c5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792762"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655694"
 ---
 # <a name="using-memory-efficiently-when-you-build-large-projects"></a>在生成大型项目时有效使用内存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 大型项目通常包含许多子项目和其他依赖项，并且它们可能会在生成时占用大量系统内存。 当可用系统内存减少时，系统性能可能也会降低。 较旧版本的 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目保留在内存中，或者 3.5 版中的项目会被删除，但会在缓存中保留生成结果，供将来检索。  
   
  4.0 版会自动处理此内存管理，项目无需使用 `UnloadProjectsOnCompletion` 和 `UseResultsCache` 等属性。  

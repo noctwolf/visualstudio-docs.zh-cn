@@ -8,12 +8,12 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3f3948756022c71e54699822715cf9a5b6d7896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116922"
 ---
 # <a name="delayed-document-loading"></a>文档加载延迟
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58932057"
   
 - 窗口框架的 GetProperty 方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>上的任何以下属性：  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
   如果您的扩展插件使用托管的代码，不应调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>除非确定文档未处于挂起的初始化状态，或者想要完全初始化后的文档... 这是因为此方法始终返回文档数据对象，如有必要创建它。 相反，应调用的方法之一 IVsRunningDocumentTable4 接口上。  
   
-  如果您的扩展插件使用 c + +，则可以传递`null`不希望的参数。  
+  如果您的扩展插件使用C++，可以将传递`null`不希望的参数。  
   
   可以通过要求提供相关的属性之前调用以下方法之一来避免不必要的文档加载： 寻求其他属性之前。  
   

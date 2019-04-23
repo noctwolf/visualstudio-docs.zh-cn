@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059439"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 配置 Azure 云服务角色
 一个 Azure 云服务可以有一个辅助角色或 Web 角色。 对于每个角色，需要定义该角色的设置方式，并配置该角色的运行方式。 若要详细了解云服务中的角色，请观看视频 [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)（Azure 云服务简介）。
@@ -259,7 +259,7 @@ ms.locfileid: "59000229"
 
 若要查看上一部分中的代码创建的文件，请执行以下步骤：
 
-1.  在 Windows 通知区域中，右键单击 Azure 图标，并从上下文菜单中选择“显示计算模拟器 UI”。
+1. 在 Windows 通知区域中，右键单击 Azure 图标，并从上下文菜单中选择“显示计算模拟器 UI”。
 
     ![显示 Azure 计算模拟器](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

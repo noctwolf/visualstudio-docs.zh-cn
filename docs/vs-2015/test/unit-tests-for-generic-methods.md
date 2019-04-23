@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070103"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "54771458"
 ## <a name="examples"></a>示例  
  以下示例阐释泛型的单元测试：  
   
--   [编辑生成的测试代码](#EditingGeneratedTestCode)。 此示例分为两个部分：“生成的测试代码”和“编辑的测试代码”。 它演示如何将泛型方法生成的原始测试代码编辑成有用的测试方法。  
+- [编辑生成的测试代码](#EditingGeneratedTestCode)。 此示例分为两个部分：“生成的测试代码”和“编辑的测试代码”。 它演示如何将泛型方法生成的原始测试代码编辑成有用的测试方法。  
   
--   [使用类型约束](#TypeConstraintNotSatisfied)。 此示例演示使用类型约束的泛型方法的单元测试。 在此示例中，不满足类型约束。  
+- [使用类型约束](#TypeConstraintNotSatisfied)。 此示例演示使用类型约束的泛型方法的单元测试。 在此示例中，不满足类型约束。  
   
-###  <a name="EditingGeneratedTestCode"></a>示例 1：编辑生成的测试代码  
+### <a name="EditingGeneratedTestCode"></a> 示例 1：编辑生成的测试代码  
  本部分中的测试代码会测试一个名为 `SizeOfLinkedList()` 的带测试代码方法。 此方法返回一个整数，它指定链接列表中的节点数。  
   
  第一个代码示例（位于“生成的测试代码”部分）按照由 Visual Studio Enterprise 生成的原样显示未编辑的测试代码。 第二个示例（位于“编辑的测试代码”部分）显示可以如何使其测试两个不同数据类型（`int` 和 `char`）的 SizeOfLinkedList 方法的运行情况。  
   
  此代码阐释两种方法：  
   
--   一是测试帮助器方法 `SizeOfLinkedListTestHelper<T>()`。 默认情况下，测试帮助器方法的名称中包含“TestHelper”。  
+- 一是测试帮助器方法 `SizeOfLinkedListTestHelper<T>()`。 默认情况下，测试帮助器方法的名称中包含“TestHelper”。  
   
--   二是测试方法 `SizeOfLinkedListTest()`。 每个测试方法都标有 TestMethod 特性。  
+- 二是测试方法 `SizeOfLinkedListTest()`。 每个测试方法都标有 TestMethod 特性。  
   
 #### <a name="generated-test-code"></a>生成的测试代码  
  以下测试代码由 `SizeOfLinkedList()` 方法生成。 由于这是未编辑的生成测试，因此必须对其进行修改，以正确测试 SizeOfLinkedList 方法。  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>测试帮助器方法  
  测试帮助器方法执行以下步骤，它们分别对应于代码中标记为步骤 1 到步骤 5 的行。  
   
-1.  创建通用链接列表。  
+1. 创建通用链接列表。  
   
-2.  向该链接列表追加四个节点。 这些节点的内容的数据类型未知。  
+2. 向该链接列表追加四个节点。 这些节点的内容的数据类型未知。  
   
-3.  将链接列表的预期大小分配给变量 `expected`。  
+3. 将链接列表的预期大小分配给变量 `expected`。  
   
-4.  计算链接列表的实际大小并将其分配给该变量 `actual`。  
+4. 计算链接列表的实际大小并将其分配给该变量 `actual`。  
   
-5.  用断言语句比较 `actual` 与 `expected`。 如果实际值不等于预期值，则测试失败。  
+5. 用断言语句比较 `actual` 与 `expected`。 如果实际值不等于预期值，则测试失败。  
   
 ##### <a name="test-method"></a>测试方法  
  测试方法已编译到代码中，运行名为 SizeOfLinkedListTest 的测试时将调用该代码。 它执行以下步骤，它们分别对应于代码中标记为步骤 6 和步骤 7 的行。  
   
-1.  调用测试帮助器方法时指定 `<int>`，以验证测试适用于 `integer` 变量。  
+1. 调用测试帮助器方法时指定 `<int>`，以验证测试适用于 `integer` 变量。  
   
-2.  调用测试帮助器方法时指定 `<char>`，以验证测试适用于 `char` 变量。  
+2. 调用测试帮助器方法时指定 `<char>`，以验证测试适用于 `char` 变量。  
   
 ```  
   
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  每次运行 SizeOfLinkedListTest 测试时，都将调用两次其 TestHelper 方法。 断言语句的计算结果必须每次都为 true，测试才能通过。 如果测试失败，也许分不清是指定了 `<int>` 的调用还是指定了 `<char>` 的调用导致了失败。 要找出答案，可以检查调用堆栈，或在测试方法中设置断点并在运行测试时进行调试。 有关详细信息，请参阅[如何：在 ASP.NET 解决方案中运行测试时进行调试](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
+>  每次运行 SizeOfLinkedListTest 测试时，都将调用两次其 TestHelper 方法。 断言语句的计算结果必须每次都为 true，测试才能通过。 如果测试失败，也许分不清是指定了 `<int>` 的调用还是指定了 `<char>` 的调用导致了失败。 要找出答案，可以检查调用堆栈，或在测试方法中设置断点并在运行测试时进行调试。 有关详细信息，请参阅[如何：在 ASP.NET 解决方案中运行测试时调试](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
   
-###  <a name="TypeConstraintNotSatisfied"></a>示例 2：使用类型约束  
+### <a name="TypeConstraintNotSatisfied"></a> 示例 2：使用类型约束  
  此示例演示使用未得到满足的类型约束的泛型方法的单元测试。 第一节显示待测试代码项目中的代码。 突出显示了类型约束。  
   
  第二部分显示测试项目中的代码。  

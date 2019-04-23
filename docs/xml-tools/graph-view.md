@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079703"
 ---
 # <a name="graph-view"></a>图形视图
 
@@ -120,11 +120,11 @@ ms.locfileid: "57526641"
 
  在图形视图中，为以下操作启用了撤消/重做功能：
 
--   通过拖放操作添加单个节点。
+- 通过拖放操作添加单个节点。
 
--   从架构资源管理器或起始视图查询的搜索结果窗口中添加多个节点。
+- 从架构资源管理器或起始视图查询的搜索结果窗口中添加多个节点。
 
--   删除单个或多个节点。
+- 删除单个或多个节点。
 
 ## <a name="zoom"></a>缩放
 
@@ -132,9 +132,9 @@ ms.locfileid: "57526641"
 
  可通过以下方法控制缩放功能：
 
--   通过按住**Ctrl**密钥并旋转鼠标滚轮的鼠标悬停在图形视图面上时。
+- 通过按住**Ctrl**密钥并旋转鼠标滚轮的鼠标悬停在图形视图面上时。
 
--   使用滑块控件。 滑块显示当前缩放级别。
+- 使用滑块控件。 滑块显示当前缩放级别。
 
 当您选择它，将鼠标悬停在其上或使用缩放滑块是不透明**Ctrl**使用鼠标滚轮来放大; 在其他时候，它是透明的。
 

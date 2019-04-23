@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ba4b805f2e8737f7b142e02158b80f51c529d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041941"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。
@@ -33,13 +33,13 @@ ms.locfileid: "56635964"
 
  有关使用 Word 对象模型执行特定任务的信息，请参阅下列主题：
 
--   [使用文档](../vsto/working-with-documents.md)
+- [使用文档](../vsto/working-with-documents.md)
 
--   [使用文档中的文本](../vsto/working-with-text-in-documents.md)
+- [使用文档中的文本](../vsto/working-with-text-in-documents.md)
 
--   [使用表](../vsto/working-with-tables.md)
+- [使用表](../vsto/working-with-tables.md)
 
-##  <a name="understanding"></a> 了解 Word 对象模型
+## <a name="understanding"></a> 了解 Word 对象模型
  Word 提供了数百个可与之交互的对象。 这些对象采用严格遵循用户界面的层次结构进行组织。 <xref:Microsoft.Office.Interop.Word.Application> 对象位于层次结构的顶部。 此对象表示 Word 的当前实例。 <xref:Microsoft.Office.Interop.Word.Application> 对象包含 <xref:Microsoft.Office.Interop.Word.Document>、 <xref:Microsoft.Office.Interop.Word.Selection>、 <xref:Microsoft.Office.Interop.Word.Bookmark>和 <xref:Microsoft.Office.Interop.Word.Range> 对象。 上述每个对象均具有很多方法和属性，可用于操作对象和与之进行交互。
 
  下图显示了 Word 对象模型层次结构中这些对象的一个视图。
@@ -115,7 +115,7 @@ ms.locfileid: "56635964"
 
   Visual Studio 通过提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主机控件来扩展 <xref:Microsoft.Office.Tools.Word.Bookmark> 对象。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.Bookmark>的类似，但它们还具有其他事件和数据绑定功能。 你可以将数据绑定到文档上的书签控件，操作方式与将数据绑定到 Windows 窗体上文本框控件的方式相同。 有关详细信息，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。
 
-##  <a name="WordOMDocumentation"></a> 使用 Word 对象模型文档
+## <a name="WordOMDocumentation"></a> 使用 Word 对象模型文档
  有关 Word 对象模型的完整信息，可以参考 Word 主互操作程序集 (PIA) 引用和 Visual Basic for Applications (VBA) 对象模型引用。
 
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用

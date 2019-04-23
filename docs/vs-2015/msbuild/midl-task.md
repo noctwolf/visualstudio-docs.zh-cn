@@ -27,23 +27,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062030"
 ---
 # <a name="midl-task"></a>MIDL 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 Microsoft 接口定义语言 (MIDL) 编译器工具 midl.exe。 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“MIDL 命令行参考”。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 **MIDL** 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      可选 **String []** 参数。  
   
@@ -51,7 +50,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/I** 选项。  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      可选 **String** 参数。  
   
@@ -59,7 +58,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“MIDL 命令行参考”。  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      可选 **Boolean** 参数。  
   
@@ -67,7 +66,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/app_config** 选项。  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      可选 **String** 参数。  
   
@@ -75,7 +74,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/cstub** 选项。 另请参阅此表格中的 **ServerStubFile** 参数。  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      可选 **String** 参数。  
   
@@ -83,7 +82,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/cpp_opt** 选项。  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      可选 **String** 参数。  
   
@@ -99,7 +98,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/char** 选项。  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      可选 **String** 参数。  
   
@@ -107,7 +106,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/dlldata** 选项。  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      可选 **String** 参数。  
   
@@ -123,7 +122,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/error** 选项。  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      可选 **Boolean** 参数。  
   
@@ -131,7 +130,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/error allocation** 选项。  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      可选 **Boolean** 参数。  
   
@@ -139,7 +138,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/error bounds_check** 选项。  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      可选 **Boolean** 参数。  
   
@@ -147,7 +146,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 midl.exe 命令行帮助 (**/?**) 中的 **/error enum** 选项。  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      可选 **Boolean** 参数。  
   
@@ -155,7 +154,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/error ref** 选项。  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      可选 **Boolean** 参数。  
   
@@ -163,7 +162,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/error stub_data** 选项。  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      可选 **String** 参数。  
   
@@ -178,7 +177,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/client** 选项。  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      可选 **String** 参数。  
   
@@ -193,7 +192,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/server** 选项。  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      可选 **Boolean** 参数。  
   
@@ -201,7 +200,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/Oicf** 选项。  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      可选 **Boolean** 参数。  
   
@@ -209,7 +208,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/notlb** 选项。  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      可选 **String** 参数。  
   
@@ -217,7 +216,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/h** 或 **/header** 选项。  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      可选 **Boolean** 参数。  
   
@@ -225,7 +224,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/no_def_idir** 选项。  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      可选 **String** 参数。  
   
@@ -233,7 +232,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/iid** 选项。  
   
--   **LocaleID**  
+- **LocaleID**  
   
      可选 **int** 参数。  
   
@@ -241,7 +240,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/lcid** 选项。 另请参阅 MSDN 上的“Microsoft 分配的区域设置 ID”。  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      可选 **Boolean** 参数。  
   
@@ -249,7 +248,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/mktyplib203** 选项。 另请参阅 MSDN 网站上的“ODL 文件语法”。  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      可选 **String** 参数。  
   
@@ -257,7 +256,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/out** 选项。  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      可选 **String []** 参数。  
   
@@ -265,7 +264,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/D** 选项。 另请参阅此表中的 **UndefinePreprocessorDefinitions** 参数。  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      可选 **String** 参数。  
   
@@ -273,7 +272,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/proxy** 选项。  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      可选 **String** 参数。  
   
@@ -281,7 +280,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/o** 选项。  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      可选 **String** 参数。  
   
@@ -289,13 +288,13 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/sstub** 选项。 另请参阅此表格中的 **ClientStubFile** 参数。  
   
--   **Source**  
+- **Source**  
   
      必选 `ITaskItem[]` 参数。  
   
      指定用空格分隔的源文件列表。  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      可选 **String** 参数。  
   
@@ -313,7 +312,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/Zp** 选项。 **/Zp** 选项相当于 **/pack** 选项以及较早的 **/align** 选项。  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      可选 **Boolean** 参数。  
   
@@ -321,7 +320,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/no_warn** 选项。  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      可选 `Boolean` 参数。  
   
@@ -329,7 +328,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/nologo** 选项。  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      可选 **String** 参数。  
   
@@ -346,13 +345,13 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/env** 选项。  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      可选 `String` 参数。  
   
      指定存储此任务跟踪日志的中间目录。  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      可选 **String** 参数。  
   
@@ -367,7 +366,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/newtlb** 和 **/oldtlb** 选项。  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      可选 **String** 参数。  
   
@@ -375,7 +374,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/tlb** 选项。  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      可选 **String []** 参数。  
   
@@ -383,7 +382,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/U** 选项。 另请参阅此表中的 **PreprocessorDefinitions** 参数。  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      可选 `Boolean` 参数。  
   
@@ -391,7 +390,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/robust** 和 **/no_robust** 选项。  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      可选 `Boolean` 参数。  
   
@@ -401,7 +400,7 @@ ms.locfileid: "54782470"
   
      有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上“MIDL 命令行参考”中的 **/WX** 选项。 另请参阅此表格中的 **WarningLevel** 参数。  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      可选 **String** 参数。  
   
@@ -409,7 +408,7 @@ ms.locfileid: "54782470"
   
      指定以下值之一，其中每个值对应于一个命令行选项。  
   
-    |“值”|命令行选项|  
+    |值|命令行选项|  
     |-----------|--------------------------|  
     |**0**|**/W0**|  
     |**1**|**/W1**|  

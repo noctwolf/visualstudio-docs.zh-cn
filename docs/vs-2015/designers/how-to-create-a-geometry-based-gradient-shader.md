@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071715"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：创建基于几何图形的渐变着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54797532"
   
  本文档演示了这些活动：  
   
--   将节点添加到着色器关系图  
+- 将节点添加到着色器关系图  
   
--   设置节点属性  
+- 设置节点属性  
   
--   断开节点  
+- 断开节点  
   
--   连接节点  
+- 连接节点  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>创建基于几何图形的渐变着色器  
  您可以通过将像素的位置并入着色器中来实现基于几何图形的着色器。 在着色语言中，除了 2-D 屏幕上的颜色和位置之外，像素还包含其他信息。 像素（在某些系统中称为片段）是值的一个集合，描述对应于像素的图面。 本文档中描述的着色器利用全局空间中三维对象的每个像素的高度，来影响片段的最终输出颜色。  

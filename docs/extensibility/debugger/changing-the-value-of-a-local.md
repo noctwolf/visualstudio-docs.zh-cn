@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9abd8a08fc8e9dfbf23ad96e1087d4a8d5105ce9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf90a2c03112cb2d3a935a9721f455ec976803c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041738"
 ---
 # <a name="change-the-value-of-a-local"></a>更改局部值
 > [!IMPORTANT]
@@ -30,13 +30,13 @@ ms.locfileid: "56702689"
 
 2. `IDebugProperty2::SetValueAsString` 执行下列任务：
 
-   1.  计算要生成一个值的字符串。
+   1. 计算要生成一个值的字符串。
 
-   2.  将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，以获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。
+   2. 将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，以获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。
 
-   3.  将值转换为一系列字节。
+   3. 将值转换为一系列字节。
 
-   4.  调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)值的字节数放入内存，因此正在调试的程序可以访问它们。
+   4. 调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)值的字节数放入内存，因此正在调试的程序可以访问它们。
 
 3. Visual Studio 刷新**局部变量**显示 (请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息)。
 

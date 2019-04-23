@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c964eaa8e8c130516b29c88a3ccae78aa902c66a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076206"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59649441"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>若要下载并安装远程工具
   
-1.  在设备或服务器您想要调试的计算机 （而不运行 Visual Studio 的计算机），获取远程工具的正确版本。
+1. 在设备或服务器您想要调试的计算机 （而不运行 Visual Studio 的计算机），获取远程工具的正确版本。
 
     |Version|链接|说明|
     |-|-|-|
@@ -47,14 +47,14 @@ ms.locfileid: "59649441"
     |Visual Studio 2013|[远程工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|下载 Visual Studio 2013 文档中的页|
     |Visual Studio 2012|[远程工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|下载 Visual Studio 2012 文档中的页|
   
-2.  在下载页上，选择与匹配 (x 86、 x64 或 ARM 版本） 操作系统的版本的工具和下载远程工具。
+2. 在下载页上，选择与匹配 (x 86、 x64 或 ARM 版本） 操作系统的版本的工具和下载远程工具。
   
     > [!IMPORTANT]
     >  我们建议安装最新版本的远程工具与你的 Visual Studio 版本匹配。 不建议版本不匹配。  
     >   
     >  此外，必须安装具有相同的体系结构作为你想要将其安装操作系统的远程工具。 换而言之，如果你想要调试远程计算机运行 64 位操作系统上的 32 位应用程序，您必须在远程计算机上安装远程工具的 64 位版本。  
   
-3.  完成下载可执行文件后，请按照说明在远程计算机上安装该应用程序。 请参阅[安装说明进行操作](#bkmk_setup)
+3. 完成下载可执行文件后，请按照说明在远程计算机上安装该应用程序。 请参阅[安装说明进行操作](#bkmk_setup)
 
 如果你尝试将远程调试器 (msvsmon.exe) 复制到远程计算机并运行它，请注意，**远程调试器配置向导**(**rdbgwiz.exe**) 仅在你下载时，才安装工具和你可能需要使用该向导配置更高版本，尤其是如果你想将远程调试器作为服务运行。 有关详细信息，请参阅[（可选） 配置远程调试器作为服务](#bkmk_configureService)下面。
 
@@ -78,27 +78,27 @@ ms.locfileid: "59649441"
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  远程计算机运行的是下列操作系统之一：  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 或 8.1  
+- Windows 8 或 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 或 Windows Server 2012 R2  
+- Windows Server 2012 或 Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2、Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>支持的硬件配置  
   
--   1.6 GHz 或更快的处理器  
+- 1.6 GHz 或更快的处理器  
   
--   1 GB 的 RAM（如果在虚拟机上运行则需 1.5 GB）  
+- 1 GB 的 RAM（如果在虚拟机上运行则需 1.5 GB）  
   
--   1 GB 的可用硬盘空间  
+- 1 GB 的可用硬盘空间  
   
--   5400 RPM 硬盘驱动器  
+- 5400 RPM 硬盘驱动器  
   
--   DirectX 9 支持的视频卡，可在 1024 x 768 或更高版本的显示分辨率下运行  
+- DirectX 9 支持的视频卡，可在 1024 x 768 或更高版本的显示分辨率下运行  
   
 ## <a name="network-configuration"></a>网络配置  
  远程计算机与 Visual Studio 计算机必须通过网络、工作组、家庭组或其他通过以太网电缆直接连接的方式连接在一起。 不支持通过 Internet 进行调试。  
@@ -147,7 +147,7 @@ ms.locfileid: "59649441"
    > [!WARNING]
   >  可以选择在“无身份验证”模式下运行远程工具，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
 
-##  <a name="bkmk_configureService"></a> （可选）配置远程调试器作为服务
+## <a name="bkmk_configureService"></a> （可选）配置远程调试器作为服务
  用于调试 ASP.NET 和其他服务器环境中，您必须以管理员身份运行远程调试器或时，如果希望始终运行，作为服务运行远程调试器。
   
  如果你想要配置远程调试器作为服务，请按照下列步骤。  
@@ -282,16 +282,16 @@ ms.locfileid: "59649441"
   
  有关详细信息，请参阅远程调试帮助 (按**F1**中的远程调试器窗口中或单击**帮助 / 用法**)。 有关详细信息，可以参阅 [Visual Studio 2012 和 2013 中的 .NET 远程符号加载更改](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
-##  <a name="bkmk_winstoreAzure"></a> 在 Windows 应用商店和 Azure 应用上进行远程调试  
+## <a name="bkmk_winstoreAzure"></a> 在 Windows 应用商店和 Azure 应用上进行远程调试  
  有关使用 Windows 应用商店应用程序进行远程调试的信息，请参阅[调试和测试 Windows 应用商店应用程序从 Visual Studio 在远程设备上的](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
   
  有关在 Azure 上进行调试的信息，请参阅以下主题之一：  
   
--   [调试云服务或在 Visual Studio 中的虚拟机](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [调试云服务或在 Visual Studio 中的虚拟机](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [调试 Visual Studio 中的.NET 后端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [调试 Visual Studio 中的.NET 后端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Azure 网站上的远程调试简介 ([第 1 部分](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
+- Azure 网站上的远程调试简介 ([第 1 部分](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)   

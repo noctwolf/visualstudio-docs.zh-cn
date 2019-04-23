@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 168e136f3a50c5055a9b9fb6d05925dac3586a23
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080860"
 ---
 # <a name="display-data-in-blend"></a>显示 Blend 中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "57869052"
   
  **在本主题中：**  
   
--   [生成示例数据](#Scratch)  
+- [生成示例数据](#Scratch)  
   
--   [从类生成示例数据](#Existing)  
+- [从类生成示例数据](#Existing)  
   
--   [在 WPF 应用程序中显示实时数据](#LiveWPF)  
+- [在 WPF 应用程序中显示实时数据](#LiveWPF)  
   
--   [在应用商店或 Phone 应用中显示实时数据](#LiveStore)  
+- [在应用商店或 Phone 应用中显示实时数据](#LiveStore)  
   
-##  <a name="Scratch"></a> 生成示例数据  
+## <a name="Scratch"></a> 生成示例数据  
  若要生成示例数据，请打开 XAML 文档。 在“数据”面板中，选择“创建示例数据”![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按钮，然后选择“新建示例数据”。  
   
  在“数据”  面板中定义数据的结构，然后将它绑定到任何页面上的 UI 元素。  
@@ -42,23 +42,23 @@ ms.locfileid: "57869052"
   
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [从头开始创建示例数据](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [从头开始创建示例数据](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2)。  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [将一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。  
   
-##  <a name="Existing"></a> 从类生成示例数据  
+## <a name="Existing"></a> 从类生成示例数据  
  如果已创建了描述数据结构的类，则可以从这些类生成示例数据。  
   
  若要从类生成示例数据，请打开一个 XAML 文档，然后在“数据”面板中，单击“创建示例数据”![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") 按钮，然后单击“从类创建示例数据”。  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [从类创建示例数据](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [从类创建示例数据](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)。  
   
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [将一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。  
   
-##  <a name="LiveWPF"></a> 在 WPF 应用程序中显示实时数据  
- 观看简短视频：![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建 XML 数据源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。  
+## <a name="LiveWPF"></a> 在 WPF 应用程序中显示实时数据  
+ **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建 XML 数据源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。  
   
-##  <a name="LiveStore"></a> 在应用商店或 Phone 应用中显示实时数据  
+## <a name="LiveStore"></a> 在应用商店或 Phone 应用中显示实时数据  
  请参阅 [使用数据和文件 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。  
   
 ## <a name="see-also"></a>请参阅  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66bbab5cf82d4ada241d8e5b3a4213ac51ecffd2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093548"
 ---
 # <a name="access-stored-font-and-color-settings"></a>访问存储的字体和颜色设置
 
@@ -29,21 +29,21 @@ Visual Studio 集成的开发环境 (IDE) 将存储修改字体和颜色在注�
 
 因此，若要启动暂留，VSPackage 必须：
 
--   获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口通过调用`QueryService`针对全局服务提供程序。
+- 获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口通过调用`QueryService`针对全局服务提供程序。
 
      `QueryService` 必须使用的服务 ID 自变量调用`SID_SVsFontAndColorStorage`的接口 ID 自变量和`IID_IVsFontAndColorStorage`。
 
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法打开某个类别，以保存通过使用类别的 GUID 和模式标志作为参数。
+- 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A>方法打开某个类别，以保存通过使用类别的 GUID 和模式标志作为参数。
 
      通过指定的模式`fFlags`参数，构造中的值从<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>枚举。 此模式下控制：
 
-    -   可以通过访问的设置<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
+    - 可以通过访问的设置<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
 
-    -   所有设置或仅这些设置，用户修改并且可通过检索<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
+    - 所有设置或仅这些设置，用户修改并且可通过检索<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
 
-    -   将更改传播到用户设置的方式。
+    - 将更改传播到用户设置的方式。
 
-    -   所使用的颜色值的格式。
+    - 所使用的颜色值的格式。
 
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字体和颜色的状态持久性
 

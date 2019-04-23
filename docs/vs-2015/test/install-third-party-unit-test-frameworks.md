@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ae69e33d60c4d6bc4257c6c9006b795d8cbdced
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868700"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117364"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
  **要求**  
   
--   Visual Studio Enterprise、Visual Studio Professional  
+- Visual Studio Enterprise、Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>获取第三方框架  
  可以使用 Visual Studio 扩展管理器，或是从 MSDN 网站上的 Visual Studio 库下载并安装很多第三方单元测试框架。 还可以从其他站点（如框架的网站）下载框架。  

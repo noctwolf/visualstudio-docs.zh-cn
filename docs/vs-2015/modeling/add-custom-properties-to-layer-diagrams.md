@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075202"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>向层关系图添加自定义属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ ms.locfileid: "58934468"
 > [!IMPORTANT]
 >  要显示属性，您必须对要显示层属性的每台计算机做出以下更改。  
 > 
-> 1. 使用运行记事本**以管理员身份运行**。 打开 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
->    2.  在 `Content` 元素中，添加：  
+>  1. 使用运行记事本**以管理员身份运行**。 打开 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  
+>  2. 在 `Content` 元素中，添加：  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  下**Visual Studio Tools**部分中的 Visual Studio 应用程序开始菜单，打开**开发人员命令提示**。  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. 下**Visual Studio Tools**部分中的 Visual Studio 应用程序开始菜单，打开**开发人员命令提示**。  
 > 
->    输入：  
+>     输入：  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  重新启动 Visual Studio。  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. 重新启动 Visual Studio。  
   
  **请确保你的代码在 VSIX 项目**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  可以在 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 或其任何派生类上定义属性，派生类包括：  
   
--   `ILayerModel` - 模型  
+- `ILayerModel` - 模型  
   
--   `ILayer` - 每一层  
+- `ILayer` - 每一层  
   
--   `ILayerDependencyLink` - 层与层之间的链接  
+- `ILayerDependencyLink` - 层与层之间的链接  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>示例  
  以下代码是典型的自定义属性描述符。 它在层模型 (`ILayerModel`) 上定义了一个布尔属性，用户可以使用该布尔属性来为自定义的验证方法提供值。  

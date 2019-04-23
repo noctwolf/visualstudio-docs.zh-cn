@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084812"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从而允许用户在相同的方式将 Visual Studio 中处理它们。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具也会显示正在加载信息为每个映像清单和映像清单中显示的每个映像的源信息。 此工具可用于：
@@ -224,9 +224,9 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
 
 ## <a name="notes"></a>说明
 
--   默认情况下，该工具会在 Visual Studio 安装目录中存在多个映像清单中拉取。 仅具有公开使用名字对象的一种是**Microsoft.VisualStudio.ImageCatalog**清单。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (不要**不**重写自定义清单中的此 GUID) 类型：KnownMonikers
+- 默认情况下，该工具会在 Visual Studio 安装目录中存在多个映像清单中拉取。 仅具有公开使用名字对象的一种是**Microsoft.VisualStudio.ImageCatalog**清单。 GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (不要**不**重写自定义清单中的此 GUID) 类型：KnownMonikers
 
--   该工具会尝试启动时加载它找到的所有映像清单，因此，可能需要几秒钟，要实际出现的应用程序。 它也可能会加载清单时是缓慢或无响应。
+- 该工具会尝试启动时加载它找到的所有映像清单，因此，可能需要几秒钟，要实际出现的应用程序。 它也可能会加载清单时是缓慢或无响应。
 
 ## <a name="sample-output"></a>示例输出
  此工具不会生成任何输出。

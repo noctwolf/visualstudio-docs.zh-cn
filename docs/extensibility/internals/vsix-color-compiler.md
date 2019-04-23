@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112333"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
 Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Visual Studio 主题的.xml 文件的控制台应用程序并将其向.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为可以轻松比较.xml 文件之间的差异，此工具可用于管理源控件中的自定义颜色。 它还可以挂接到生成环境，以便生成的输出是一个有效的.pkgdef 文件。
@@ -53,7 +53,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |||
 |-|-|
 |**特性**|**定义**|
-|name|[必需]主题的名称|
+|名称|[必需]主题的名称|
 |GUID|[必需]主题的 GUID （必须匹配 GUID 格式）|
 
  为 Visual Studio 中创建自定义颜色时, 这些颜色需要定义有关以下主题。 如果没有颜色存在于特定主题，Visual Studio 将尝试从浅色主题中加载缺失的颜色。
@@ -79,7 +79,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |||
 |-|-|
 |**特性**|**定义**|
-|name|[必需]类别的名称|
+|名称|[必需]类别的名称|
 |GUID|[必需]该类别的 GUID （必须匹配 GUID 格式）|
 
  **Color**
@@ -96,7 +96,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |||
 |-|-|
 |**特性**|**定义**|
-|name|[必需]颜色的名称|
+|名称|[必需]颜色的名称|
 
  **背景和/或前台**
 
@@ -111,7 +111,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |-|-|
 |**特性**|**定义**|
 |类型|[必需]颜色的类型。 它可以是以下值之一：<br /><br /> *CT_INVALID:* 颜色是无效或未设置。<br /><br /> *CT_RAW:* 原始的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 不要使用。<br /><br /> *CT_SYSCOLOR:* 一种从 SysColor Windows 系统颜色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:* 自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:* 不要使用。<br /><br /> *CT_TRACK_BACKGROUND:* 不要使用。|
-|源|[必需]以十六进制表示颜色的值|
+|Source|[必需]以十六进制表示颜色的值|
 
  类型属性中的架构支持由 __VSCOLORTYPE 枚举支持的所有值。 但是，我们建议使用仅限 CT_RAW 和 CT_SYSCOLOR。
 
@@ -149,15 +149,15 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 
  **示例**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml /noLogo
+- VsixColorCompiler D:\xml\colors.xml /noLogo
 
 ## <a name="notes"></a>说明
 
--   此工具需要安装 VC + + 运行时的最新版本。
+- 此工具需要安装 VC + + 运行时的最新版本。
 
--   支持仅单个文件。 不支持通过文件夹路径的批量转换。
+- 支持仅单个文件。 不支持通过文件夹路径的批量转换。
 
 ## <a name="sample-output"></a>示例输出
  由工具生成.pkgdef 文件将类似于以下键：

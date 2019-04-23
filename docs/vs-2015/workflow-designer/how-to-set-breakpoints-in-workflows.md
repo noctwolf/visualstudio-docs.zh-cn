@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089973"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流中设置断点
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 时，可以在图形工作流上设置断点，就像在 Visual Basic 或 C# 代码中设置断点一样。 正如所料，工作流执行将在设置的每个断点处停止。  
@@ -32,9 +32,9 @@ ms.locfileid: "58937742"
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>在设计视图中的活动上设置断点  
   
-1.  选择希望调试器在其上中断的活动。  
+1. 选择希望调试器在其上中断的活动。  
   
-2.  上**调试**菜单中，选择**切换断点**。 此时将在该活动的左上边缘显示一个红色图标。  
+2. 上**调试**菜单中，选择**切换断点**。 此时将在该活动的左上边缘显示一个红色图标。  
   
      此外，还可以按该快捷方式**F9**后选择该活动也可以右键单击该活动并选择**断点**然后**插入断点**从上下文菜单。  
   

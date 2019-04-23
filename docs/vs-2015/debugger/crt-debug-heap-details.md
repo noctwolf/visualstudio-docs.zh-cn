@@ -75,19 +75,19 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95add394f6f3e3e62a7441fe5bb0b4c415509527
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057451"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题详细描述了 CRT 调试堆。  
   
-##  <a name="BKMK_Contents"></a> 内容  
+## <a name="BKMK_Contents"></a> 内容  
  [利用调试堆查找缓冲区溢出](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
  [调试堆中的块类型](#BKMK_Types_of_blocks_on_the_debug_heap)  
@@ -102,7 +102,7 @@ ms.locfileid: "58931442"
   
  [跟踪堆分配请求](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> 利用调试堆查找缓冲区溢出  
+## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> 利用调试堆查找缓冲区溢出  
  程序员遇到的两种最常见而又难处理的问题是，覆盖已分配缓冲区的末尾以及内存泄漏（未能在不再需要某些分配后将其释放）。 调试堆提供功能强大的工具来解决这类内存分配问题。  
   
  堆函数的“调试”版本调用“发布”版本中使用的标准版本或基版本。 请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于你的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中，[malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 将调用基堆分配例程以请求分配 10 个字节。 但在调试版本中，`malloc`将调用 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)，它随后将调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
@@ -149,7 +149,7 @@ typedef struct _CrtMemBlockHeader
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型  
+## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型  
  调试堆中的每个内存块都被分配给五种分配类型之一。 出于泄漏检测和状态报告的目的，对这些类型进行了不同的跟踪和报告。 可以通过使用对调试堆分配函数之一（如 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)的直接调用来分配块，从而指定块的类型。 调试堆中五种类型的内存块（在 _ CrtMemBlockHeader 结构的 nBlockUse 成员中设置）如下：  
   
  **_NORMAL_BLOCK**  
@@ -183,7 +183,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> 检查堆完整性和内存泄漏  
+## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> 检查堆完整性和内存泄漏  
  许多调试堆功能必须从代码内访问。 下一节描述其中一些功能以及如何使用这些功能。  
   
  `_CrtCheckMemory`  
@@ -204,7 +204,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a> 配置调试堆  
+## <a name="BKMK_Configure_the_debug_heap"></a> 配置调试堆  
  对堆函数（例如 `malloc`、`free`、`calloc`、`realloc`、`new` 和 `delete`）的所有调用均解析为这些函数在调试堆中运行的调试版本。 释放内存块时，调试堆自动检查已分配区域两侧的缓冲区的完整性，并在发生覆盖时发出错误报告。  
   
  **使用调试堆**  
@@ -239,7 +239,7 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> C++ 调试堆中的 new、delete 和 _CLIENT_BLOCK  
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> C++ 调试堆中的 new、delete 和 _CLIENT_BLOCK  
  C 运行库的调试版本包含 C++ `new` 和 `delete` 运算符的调试版本。 如果使用 `_CLIENT_BLOCK` 分配类型，则必须直接调用 `new` 运算符的调试版本，或者创建可在调试模式中替换 `new` 运算符的宏，如下面的示例所示：  
   
 ```  
@@ -277,7 +277,7 @@ int main( )   {
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> 堆状态报告函数  
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> 堆状态报告函数  
  **_CrtMemState**  
   
  若要捕获给定时刻堆状态的摘要快照，请使用 CRTDBG.H 中定义的 _CrtMemState 结构：  
@@ -314,7 +314,7 @@ typedef struct _CrtMemState
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> 跟踪堆分配请求  
+## <a name="BKMK_Track_Heap_Allocation_Requests"></a> 跟踪堆分配请求  
  尽管查明在其中执行断言或报告宏的源文件名和行号对于定位问题原因常常很有用，对于堆分配函数却可能不是这样。 虽然可在应用程序的逻辑树中的许多适当点插入宏，但分配经常隐藏在特殊例程中，该例程会在很多不同时刻从很多不同位置进行调用。 问题通常并不在于如何确定哪行代码进行了错误分配，而在于如何确定该行代码进行的上千次分配中的哪一次是错误分配以及原因。  
   
  **唯一分配请求编号和 _crtBreakAlloc**  

@@ -17,14 +17,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bffc4c5740ad006ca851f56cd2db8fcfdfc21294
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102937"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>使用适用于 C# Visual Studio 开发环境 #
+# <a name="using-the-visual-studio-development-environment-for-c"></a>使用用于 C 的 Visual Studio 开发环境\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 集成的开发环境 (IDE) 是通过一个通用用户界面公开的开发工具的集合。 有些工具是与其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 语言共享的，还有一些工具（如 C# 编译器）是 Visual C# 特有的。 本主题提供指向最重要的 Visual C# 工具的链接。
@@ -49,4 +50,7 @@ Visual Studio 集成的开发环境 (IDE) 是通过一个通用用户界面公�
 |[管理应用程序资源 (.NET)](../ide/managing-application-resources-dotnet.md)|演示如何添加或编辑项目的资源，例如字符串、图像、图标、音频和文件。|
 
 ## <a name="see-also"></a>请参阅
- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)[入门C# ](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f) [ C#参考](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+
+- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [C# 入门](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [C# 参考](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

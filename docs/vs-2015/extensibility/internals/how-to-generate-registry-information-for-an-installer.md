@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9a1d8e18802c91d1669d709d6236d69a4a7444c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117728"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何：生成安装程序的注册表信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ RegPkg.exe 实用程序可用于生成托管的 VSPackage 注册清单。 清单
   
 ### <a name="to-create-a-registration-manifest"></a>若要创建注册清单  
   
--   运行与 RegPkg **/regfile**切换。 提供任何其他开关、 输出文件的名称和 VSPackage 的路径。  
+- 运行与 RegPkg **/regfile**切换。 提供任何其他开关、 输出文件的名称和 VSPackage 的路径。  
   
      例如，在命令提示符下，需要键入以下内容：  
   
@@ -39,7 +39,7 @@ RegPkg.exe 实用程序可用于生成托管的 VSPackage 注册清单。 清单
   
 ### <a name="to-view-a-registration-manifest"></a>若要查看注册清单  
   
--   在任何文本编辑器中打开注册清单。  
+- 在任何文本编辑器中打开注册清单。  
   
      下面的示例是 RegPkg 创建 IronPython 语言服务的注册清单：  
   
@@ -100,7 +100,7 @@ RegPkg.exe 实用程序可用于生成托管的 VSPackage 注册清单。 清单
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>若要创建 Windows Installer XML 工具集包括文件  
   
--   运行与 RegPkg **/wixfile**切换。 提供任何其他开关、 输出文件的名称和 VSPackage 的路径。  
+- 运行与 RegPkg **/wixfile**切换。 提供任何其他开关、 输出文件的名称和 VSPackage 的路径。  
   
      例如，在命令提示符下，需要键入以下内容：  
   
@@ -110,7 +110,7 @@ RegPkg.exe 实用程序可用于生成托管的 VSPackage 注册清单。 清单
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要查看 Windows Installer XML 工具集包括文件  
   
--   打开 Windows Installer XML 工具集文件中包含任何文本编辑器。  
+- 打开 Windows Installer XML 工具集文件中包含任何文本编辑器。  
   
      下面的示例是 IronPython 语言服务 RegPkg 创建的包含文件：  
   

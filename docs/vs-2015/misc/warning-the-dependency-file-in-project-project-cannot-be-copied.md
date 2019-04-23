@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059235"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告： 依赖项&#39;文件&#39;项目中&#39;项目&#39;不能将复制到运行目录，因为它将覆盖引用&#39;文件。&#39;
 依赖项之间有冲突；为使应用程序运行，应将多个具有相同名称的不同程序集文件复制到 bin 目录中。 由于其中一个依赖项是主引用，因此运行目录能够解决该冲突。  
@@ -31,7 +31,7 @@ ms.locfileid: "58933121"
   
  **若要更正此错误**  
   
--   将一个（或零个）程序集文件复制到 bin 目录中，这可以通过将这些程序集文件放置于全局程序集缓存中来实现。 全局程序集缓存将解决文件名冲突问题。 由于公共语言运行时知道如何查找全局程序集缓存中的程序集，因此将不会生成程序集文件的本地副本。 有关详细信息，请参阅 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) 和 [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)。  
+- 将一个（或零个）程序集文件复制到 bin 目录中，这可以通过将这些程序集文件放置于全局程序集缓存中来实现。 全局程序集缓存将解决文件名冲突问题。 由于公共语言运行时知道如何查找全局程序集缓存中的程序集，因此将不会生成程序集文件的本地副本。 有关详细信息，请参阅 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) 和 [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015)。  
   
 ## <a name="see-also"></a>请参阅  
  [管理项目中的引用](../ide/managing-references-in-a-project.md)   

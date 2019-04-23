@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044493"
 ---
 # <a name="create-options-pages"></a>创建选项页
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]托管的包框架类派生自<xref:Microsoft.VisualStudio.Shell.DialogPage>扩展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，方法是添加**选项**页下**工具**菜单。
@@ -25,9 +25,9 @@ ms.locfileid: "56633078"
 
  因为环境要实例化实现特定的对象**工具选项**页面时 IDE 将显示该特定页：
 
--   一个**工具选项**应实现页，在其自己的对象，而不是实现 VSPackage 的对象。
+- 一个**工具选项**应实现页，在其自己的对象，而不是实现 VSPackage 的对象。
 
--   一个对象不能实现多个**工具选项**页。
+- 一个对象不能实现多个**工具选项**页。
 
 ## <a name="register-as-a-tools-options-page-provider"></a>注册为工具选项页上提供程序
  通过的 VSPackage 支持的用户配置**工具选项**页面指示的对象提供这些**工具选项**通过应用的实例的页面<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>应用于<xref:Microsoft.VisualStudio.Shell.Package>实现。

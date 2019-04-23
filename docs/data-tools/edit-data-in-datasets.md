@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096980"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 编辑任何数据库中的表中的数据一样编辑数据的表中的数据。 过程可以包括插入、 更新和删除表中的记录。 在数据绑定窗体中，可以指定哪些字段是用户可编辑。 在这些情况下，数据绑定基础结构可处理所有更改跟踪，以便所做的更改可以发送回数据库更高版本。 如果以编程方式对数据进行编辑，并且你想要将这些更改发送回数据库，必须使用的对象和为您做的更改跟踪的方法。
@@ -53,7 +53,7 @@ ms.locfileid: "55928668"
 
 #### <a name="to-delete-records-from-a-data-table"></a>若要从数据表中删除记录
 
--   调用<xref:System.Data.DataRow.Delete%2A>方法的<xref:System.Data.DataRow>。
+- 调用<xref:System.Data.DataRow.Delete%2A>方法的<xref:System.Data.DataRow>。
 
      此方法不会以物理方式删除记录。 相反，它将标记为删除的记录。
 
@@ -70,15 +70,15 @@ ms.locfileid: "55928668"
 
 更改是在每个数据行中的跟踪两种方法：
 
--   每个数据行包含与相关的信息及其<xref:System.Data.DataRow.RowState%2A>(例如， <xref:System.Data.DataRowState.Added>， <xref:System.Data.DataRowState.Modified>， <xref:System.Data.DataRowState.Deleted>，或<xref:System.Data.DataRowState.Unchanged>)。
+- 每个数据行包含与相关的信息及其<xref:System.Data.DataRow.RowState%2A>(例如， <xref:System.Data.DataRowState.Added>， <xref:System.Data.DataRowState.Modified>， <xref:System.Data.DataRowState.Deleted>，或<xref:System.Data.DataRowState.Unchanged>)。
 
--   每个已更改的数据行包含该行的多个版本 (<xref:System.Data.DataRowVersion>)，（在之前的更改） 的原始版本和 （之后的更改） 的当前版本。 期间挂起的更改时 (可以作出响应的时间<xref:System.Data.DataTable.RowChanging>事件)、 第三个版本 — 提议的版本，也可以。
+- 每个已更改的数据行包含该行的多个版本 (<xref:System.Data.DataRowVersion>)，（在之前的更改） 的原始版本和 （之后的更改） 的当前版本。 期间挂起的更改时 (可以作出响应的时间<xref:System.Data.DataTable.RowChanging>事件)、 第三个版本 — 提议的版本，也可以。
 
 <xref:System.Data.DataSet.HasChanges%2A>数据集的方法将返回`true`如果在数据集中进行了更改。 确定已更改的行存在之后, 可以调用`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>返回一组已更改的行。
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要确定是否已对任何行进行了更改
 
--   调用<xref:System.Data.DataSet.HasChanges%2A>方法要检查的数据集已更改的行。
+- 调用<xref:System.Data.DataSet.HasChanges%2A>方法要检查的数据集已更改的行。
 
 下面的示例演示如何检查的返回值<xref:System.Data.DataSet.HasChanges%2A>方法来检测中名为的数据集是否有任何已更改的行`NorthwindDataset1`:
 
@@ -90,7 +90,7 @@ ms.locfileid: "55928668"
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>若要确定哪种类型的更改已对某行
 
--   传递<xref:System.Data.DataRowState>值设为<xref:System.Data.DataSet.HasChanges%2A>方法。
+- 传递<xref:System.Data.DataRowState>值设为<xref:System.Data.DataSet.HasChanges%2A>方法。
 
 下面的示例演示如何检查名为的数据集`NorthwindDataset1`以确定是否向其添加了任何新行：
 
@@ -100,9 +100,9 @@ ms.locfileid: "55928668"
 ## <a name="to-locate-rows-that-have-errors"></a>若要查找具有错误的行
 当使用单个列和行数据，可能会遇到错误。 你可以检查`HasErrors`属性来确定是否存在错误<xref:System.Data.DataSet>， <xref:System.Data.DataTable>，或<xref:System.Data.DataRow>。
 
-1.  检查`HasErrors`属性以查看数据集内是否有任何错误。
+1. 检查`HasErrors`属性以查看数据集内是否有任何错误。
 
-2.  如果`HasErrors`属性是`true`，循环访问表的集合，然后通过行，以查找具有错误的行。
+2. 如果`HasErrors`属性是`true`，循环访问表的集合，然后通过行，以查找具有错误的行。
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

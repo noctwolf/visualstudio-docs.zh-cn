@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b6b0c4f870de455238c02f5dbecbc0c5d56dfbc9
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983905"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567823"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
@@ -40,7 +40,7 @@ ms.locfileid: "57983905"
 
 ::: moniker range=">=vs-2019"
 
-* 必须安装 Visual Studio 2019 且具有 ASP.NET 和 Web 开发工作负载。
+* 必须安装 Visual Studio 2019 且具有 ASP.NET 和 web 开发工作负载。
 
     如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
 ::: moniker-end
@@ -56,9 +56,9 @@ ms.locfileid: "57983905"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中新建 ASP.NET 项目
 
-1. 在运行 Visual Studio 的计算机中，依次选择“文件” > “新建项目”。
+1. 在运行 Visual Studio 的计算机上，创建新项目。
 
-1. 在 Visual C# 或 Visual Basic 下选择“Web”，然后在中间窗格中选择“ASP.NET Web 应用程序(.NET Framework)”或（仅限 C#）“ASP.NET Core Web 应用程序”，然后单击“确定”。
+    选择正确的模板。 在此示例中，选择“ASP.NET Web 应用程序(.NET Framework)”或“ASP.NET Core Web 应用程序”（仅限 C#），然后单击“确定”。
 
     如果没有看到指定的项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 安装“ASP.NET 和 Web 开发”工作负载。
 

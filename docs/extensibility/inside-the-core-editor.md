@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d91603d6c365946b1064cac3a7f1ca3c1e6ba8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086515"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器是一组让你修改和查询文本信息的多个组件。 如果已使用传统的 API 自定义核心编辑器，可以继续使用这些自定义，这将通过编辑器适配器路由。 建议，但是，调整到新的编辑器 API 自定义设置。
 
  以下几个方面是核心编辑器的一些重要方面：
 
--   文本缓冲区
+- 文本缓冲区
 
--   文本视图
+- 文本视图
 
--   “代码”窗口
+- “代码”窗口
 
--   文本标记
+- 文本标记
 
--   文本管理器
+- 文本管理器
 
--   与语言服务的集成
+- 与语言服务的集成
 
 ## <a name="in-this-section"></a>本节内容
 - [通过使用传统的 API 实例核心编辑器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)提供了有关如何使用的分步说明<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>创建编辑器的核心的一个实例。

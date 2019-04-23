@@ -17,17 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6bcc8502d5404308246ac3ece80780e6a0ccadd3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e3d9f72abfd095288b50ab8de9b9bc3eae4cc51
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802954"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665371"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包含用户定义的项元数据键，其中包含项元数据值。 一个项可能具有任意数量的元数据键值对。  
   
  \<Project>  
@@ -45,7 +44,7 @@ ms.locfileid: "54802954"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
   
@@ -54,7 +53,7 @@ ms.locfileid: "54802954"
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |[Item](../msbuild/item-element-msbuild.md)|为生成过程定义输入的用户定义元素。|  
   

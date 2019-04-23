@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50e601d03901484ed6e759fb336b1effa5b37841
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066060"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何：从 XML 文档创建 XML 架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 使用“XML 编辑器”可以从 XML 文档创建 XML 架构定义语言 (XSD) 架构。 XML 实例文档通过以下方式确定如何生成架构：  
   
 - 如果 XML 文档没有关联的架构或文档类型定义 (DTD)，将使用 XML 文档中的数据推断新的 XML 架构。  
@@ -34,9 +33,9 @@ ms.locfileid: "58933532"
   
 ### <a name="to-create-an-xml-schema"></a>创建 XML 架构  
   
-1.  将 XML 实例文档加载到“XML 编辑器”中。  
+1. 将 XML 实例文档加载到“XML 编辑器”中。  
   
-2.  单击**Create Schema**按钮从**工具栏**。  
+2. 单击**Create Schema**按钮从**工具栏**。  
   
      将为 XML 实例文档中发现的每个命名空间创建并打开一个 XML 架构文档。 每个架构作为临时的杂项文件打开。  
   

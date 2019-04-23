@@ -11,12 +11,12 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c5995de05d5861ff407006d5926081a5b76c8b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 59e12a90d241bf07a53cc98c91eef4cfc6d7d063
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050980"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>扩展调试器的路线图
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58933463"
   
  你的编译器和其输出确定需要执行的操作实现在您的产品中进行调试。 如果您的编译器：  
   
--   面向 Windows 本机操作系统和写入。PDB 文件中，您可以使用本机代码调试引擎 (DE)，其集成到调试的程序[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 不需要实现 DE 或表达式计算器。 表达式计算器是针对 c + + 编程语言的语法编写的。  
+- 面向 Windows 本机操作系统和写入。PDB 文件中，您可以使用本机代码调试引擎 (DE)，其集成到调试的程序[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 不需要实现 DE 或表达式计算器。 表达式计算器编写其语法的C++编程语言。  
   
--   生成的 Microsoft 中间语言 (MSIL) 输出，可以通过托管的代码调试引擎 DE，这也集成到调试程序[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 因此，只需实现的表达式计算器。 示例表达式计算器会为您提供。 有关详细信息，请参阅下列主题：  
+- 生成的 Microsoft 中间语言 (MSIL) 输出，可以通过托管的代码调试引擎 DE，这也集成到调试程序[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 因此，只需实现的表达式计算器。 示例表达式计算器会为您提供。 有关详细信息，请参阅下列主题：  
   
      [表达式计算](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
@@ -41,7 +41,7 @@ ms.locfileid: "58933463"
   
      [编写公共语言运行时表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   一个专有操作系统或某些其他运行时环境的目标，您需要编写您自己 DE。 提供创建简单的部署使用 ATL COM 的教程。 有关详细信息，请参阅下列主题：  
+- 一个专有操作系统或某些其他运行时环境的目标，您需要编写您自己 DE。 提供创建简单的部署使用 ATL COM 的教程。 有关详细信息，请参阅下列主题：  
   
      [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   

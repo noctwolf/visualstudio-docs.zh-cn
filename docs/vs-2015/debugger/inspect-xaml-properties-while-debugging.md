@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934571"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101426"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>将 XAML 工具用于运行的应用程序  
  即使在没有源代码时，你也可以使用这些 XAML 工具。 当附加到正在运行的 XAML 应用程序后，也可以使用该应用程序的 UI 元素上的“实时可视化树”。 下面是一个示例，使用与我们之前使用的相同的 WPF 测试应用程序。  
   
-1.  在“发布”配置中启动 TestXaml 应用程序。 不能附加到正在“调试”配置中运行的进程。  
+1. 在“发布”配置中启动 TestXaml 应用程序。 不能附加到正在“调试”配置中运行的进程。  
   
-2.  打开 Visual Studio 的第二个实例，然后单击**调试 / 附加到进程**。 在可用进程的列表中查找 TestXaml.exe，然后单击“附加”。  
+2. 打开 Visual Studio 的第二个实例，然后单击**调试 / 附加到进程**。 在可用进程的列表中查找 TestXaml.exe，然后单击“附加”。  
   
-3.  则应用程序开始运行。  
+3. 则应用程序开始运行。  
   
-4.  在 Visual Studio 的第二个实例中，打开**实时可视化树**(**调试 / Windows / 实时可视化树**)。 应看到 TestXaml UI 元素，并能像在直接调试应用程序时所做的那样操作它们。
+4. 在 Visual Studio 的第二个实例中，打开**实时可视化树**(**调试 / Windows / 实时可视化树**)。 应看到 TestXaml UI 元素，并能像在直接调试应用程序时所做的那样操作它们。

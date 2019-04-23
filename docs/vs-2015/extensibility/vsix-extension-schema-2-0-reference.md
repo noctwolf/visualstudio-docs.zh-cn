@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9cb9672696e0e1294fdd396b59fadd1c50fd697f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048654"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,131 +32,131 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 ### <a name="packagemanifest-element"></a>PackageManifest 元素  
  在`<PackageManifest>`根元素，可以使用以下元素：  
   
--   `<Metadata>` 元数据和有关包本身的广告信息。 只有一个`Metadata`元素允许在清单中。  
+- `<Metadata>` 元数据和有关包本身的广告信息。 只有一个`Metadata`元素允许在清单中。  
   
--   `<Installation>` -本部分将定义可以安装此扩展包，包括可以安装到的应用程序 Sku 的方式。 只有一个`Installation`元素允许在清单中。 必须具有一个清单`Installation`元素或此包不会安装到任何 SKU。  
+- `<Installation>` -本部分将定义可以安装此扩展包，包括可以安装到的应用程序 Sku 的方式。 只有一个`Installation`元素允许在清单中。 必须具有一个清单`Installation`元素或此包不会安装到任何 SKU。  
   
--   `<Dependencies>` 的在此处定义一系列可选此包的依赖项。  
+- `<Dependencies>` 的在此处定义一系列可选此包的依赖项。  
   
--   `<Assets>` -此部分包含的所有资产包含在此包。 本部分中，没有此包不会呈现任何内容。  
+- `<Assets>` -此部分包含的所有资产包含在此包。 本部分中，没有此包不会呈现任何内容。  
   
--   `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 由清单加载程序无法识别的任何子元素被称为扩展管理器 API 中多余的 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在 Visual Studio 中运行的代码可以访问在运行时在清单文件中定义的其他数据。 请参见 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 和 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
+- `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 由清单加载程序无法识别的任何子元素被称为扩展管理器 API 中多余的 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在 Visual Studio 中运行的代码可以访问在运行时在清单文件中定义的其他数据。 请参见 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 和 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
   
 ### <a name="metadata-element"></a>元数据元素  
  本部分是有关包、 其标识和公布信息的元数据。 `<Metadata>` 包含下列元素：  
   
--   `<Identity>` -这定义了此包的标识信息，包括以下属性：  
+- `<Identity>` -这定义了此包的标识信息，包括以下属性：  
   
-    -   `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称：Company.Product.Feature.Name. `Id`特性被限制为 100 个字符。  
+    - `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称：Company.Product.Feature.Name. `Id`特性被限制为 100 个字符。  
   
-    -   `Version` – 此项定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。  
+    - `Version` – 此项定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。  
   
-    -   `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循 CLR 的区域设置代码约定对于资源程序集，例如： en-我们，en，fr-fr 的。 您可以指定`neutral`声明将在 Visual Studio 的任何版本运行的非特定于语言的扩展。 默认值为 `neutral`。  
+    - `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循 CLR 的区域设置代码约定对于资源程序集，例如： en-我们，en，fr-fr 的。 您可以指定`neutral`声明将在 Visual Studio 的任何版本运行的非特定于语言的扩展。 默认值为 `neutral`。  
   
-    -   `Publisher` -此属性标识此包，公司或单独的名称的发布服务器。 `Publisher`特性被限制为 100 个字符。  
+    - `Publisher` -此属性标识此包，公司或单独的名称的发布服务器。 `Publisher`特性被限制为 100 个字符。  
   
--   `<DisplayName>` -此元素指定扩展管理器 UI 中显示的用户友好的包名称。 `DisplayName`内容被限制为 100 个字符。  
+- `<DisplayName>` -此元素指定扩展管理器 UI 中显示的用户友好的包名称。 `DisplayName`内容被限制为 100 个字符。  
   
--   `<Description>` -此可选元素是在扩展管理器 UI 中显示的包及其内容的简短说明。 `Description`内容可以包含任何文本的但它具有限制为 1000 个字符。  
+- `<Description>` -此可选元素是在扩展管理器 UI 中显示的包及其内容的简短说明。 `Description`内容可以包含任何文本的但它具有限制为 1000 个字符。  
   
--   `<MoreInfo>` -此可选元素是指向联机包含此包的完整描述的页面的 URL。 协议必须指定为 http。  
+- `<MoreInfo>` -此可选元素是指向联机包含此包的完整描述的页面的 URL。 协议必须指定为 http。  
   
--   `<License>` -此可选元素是包中包含的许可证文件 （.txt、.rtf） 的相对路径。  
+- `<License>` -此可选元素是包中包含的许可证文件 （.txt、.rtf） 的相对路径。  
   
--   `<ReleaseNotes>` -此可选元素是包 （.txt、.rtf），否则显示发行说明的网站的 URL 中包含的发行说明文件的相对路径。  
+- `<ReleaseNotes>` -此可选元素是包 （.txt、.rtf），否则显示发行说明的网站的 URL 中包含的发行说明文件的相对路径。  
   
--   `<Icon>` -此可选元素是包中包含的图像文件 （png、 bmp、 jpeg、 ico） 的相对路径。 图标图像应为 32 x 32 像素 （或将收缩为该大小），并显示在列表视图 UI。 如果没有`Icon`指定元素，UI 将使用默认值。  
+- `<Icon>` -此可选元素是包中包含的图像文件 （png、 bmp、 jpeg、 ico） 的相对路径。 图标图像应为 32 x 32 像素 （或将收缩为该大小），并显示在列表视图 UI。 如果没有`Icon`指定元素，UI 将使用默认值。  
   
--   `<PreviewImage>` -此可选元素是包中包含的图像文件 （png、 bmp、 jpeg） 的相对路径。 预览图像应为 200 x 200 像素，显示在 UI 的详细信息。 如果没有`PreviewImage`指定元素，UI 将使用默认值。  
+- `<PreviewImage>` -此可选元素是包中包含的图像文件 （png、 bmp、 jpeg） 的相对路径。 预览图像应为 200 x 200 像素，显示在 UI 的详细信息。 如果没有`PreviewImage`指定元素，UI 将使用默认值。  
   
--   `<Tags>` -此可选元素列出了用于搜索提示的以分号分隔的附加文本标记。 `Tags`元素被限制为 100 个字符。  
+- `<Tags>` -此可选元素列出了用于搜索提示的以分号分隔的附加文本标记。 `Tags`元素被限制为 100 个字符。  
   
--   `<GettingStartedGuide>` -此可选元素是某一 HTML 文件的相对路径或指向包含有关如何使用扩展或此包中的内容信息的网站的 URL。 本指南将作为安装的一部分启动。  
+- `<GettingStartedGuide>` -此可选元素是某一 HTML 文件的相对路径或指向包含有关如何使用扩展或此包中的内容信息的网站的 URL。 本指南将作为安装的一部分启动。  
   
--   `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 清单加载程序不能被识别的任何子元素公开为一系列 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在清单文件中定义的其他数据，并且在运行时枚举它们。  
+- `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 清单加载程序不能被识别的任何子元素公开为一系列 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在清单文件中定义的其他数据，并且在运行时枚举它们。  
   
 ### <a name="installation-element"></a>安装元素  
  本部分将定义可在安装此包的方式以及它可以将其安装到的应用程序 Sku。 本部分包含以下属性：  
   
--   `Experimental` – 设置此属性为 true，如果有当前为所有用户安装的扩展，但正在开发的同一计算机上的更新的版本。 例如，如果您已为所有用户安装 MyExtension 1.0，但想要在同一台计算机上进行调试 MyExtension 2.0，请将实验 ="true"。 此属性是可在 Visual Studio 2015 Update 1 及更高版本。  
+- `Experimental` – 设置此属性为 true，如果有当前为所有用户安装的扩展，但正在开发的同一计算机上的更新的版本。 例如，如果您已为所有用户安装 MyExtension 1.0，但想要在同一台计算机上进行调试 MyExtension 2.0，请将实验 ="true"。 此属性是可在 Visual Studio 2015 Update 1 及更高版本。  
   
--   `Scope` -此属性可以采用"Global"或"ProductExtension"的值：  
+- `Scope` -此属性可以采用"Global"或"ProductExtension"的值：  
   
-    -   "全局"，则指定安装不局限于特定的 SKU。 例如，安装扩展 SDK 时，将使用此值。  
+    - "全局"，则指定安装不局限于特定的 SKU。 例如，安装扩展 SDK 时，将使用此值。  
   
-    -   "ProductExtension"指定作用域为单个 Visual Studio Sku 传统 VSIX 扩展 （版本 1.0） 已安装。 这是默认值。  
+    - "ProductExtension"指定作用域为单个 Visual Studio Sku 传统 VSIX 扩展 （版本 1.0） 已安装。 这是默认值。  
   
--   `AllUsers` -此可选属性指定是否将为所有用户安装此包。 默认情况下，此属性为 false，它指定的包是每个用户。 （当此值设置为 true 时，执行安装的用户必须提升为要安装生成的 VSIX 的管理权限级别。  
+- `AllUsers` -此可选属性指定是否将为所有用户安装此包。 默认情况下，此属性为 false，它指定的包是每个用户。 （当此值设置为 true 时，执行安装的用户必须提升为要安装生成的 VSIX 的管理权限级别。  
   
--   `InstalledByMsi` -此可选属性指定是否通过 MSI 安装此包。 通过 MSI 安装的包中安装并托管通过 MSI （程序和功能） 和不通过 Visual Studio Extension Manager。  默认情况下，此属性为 false，它指定不通过 MSI 安装包。  
+- `InstalledByMsi` -此可选属性指定是否通过 MSI 安装此包。 通过 MSI 安装的包中安装并托管通过 MSI （程序和功能） 和不通过 Visual Studio Extension Manager。  默认情况下，此属性为 false，它指定不通过 MSI 安装包。  
   
--   `SystemComponent` -此可选属性指定是否应考虑此包的系统组件。 系统组件不再显示在扩展管理器 UI 中，不能进行更新。 默认情况下，此属性为 false，它指定包不是系统组件。  
+- `SystemComponent` -此可选属性指定是否应考虑此包的系统组件。 系统组件不再显示在扩展管理器 UI 中，不能进行更新。 默认情况下，此属性为 false，它指定包不是系统组件。  
   
--   `AnyAttribute*` –`Installation`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。  
+- `AnyAttribute*` –`Installation`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。  
   
--   `<InstallationTarget>` – 此元素控制 VSIX 安装程序安装包的位置的位置。 如果的值`Scope`属性是"ProductExtension"包必须面向一种用于已安装的清单文件作为其内容以播发其可用性与扩展的一部分的 SKU。 `<InstallationTarget>`元素具有以下属性`Scope`属性具有显式或默认值"ProductExtension":  
+- `<InstallationTarget>` – 此元素控制 VSIX 安装程序安装包的位置的位置。 如果的值`Scope`属性是"ProductExtension"包必须面向一种用于已安装的清单文件作为其内容以播发其可用性与扩展的一部分的 SKU。 `<InstallationTarget>`元素具有以下属性`Scope`属性具有显式或默认值"ProductExtension":  
   
-    -   `Id` -此属性标识的包。  该属性如下所示的命名空间约定：Company.Product.Feature.Name. `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：  
+    - `Id` -此属性标识的包。  该属性如下所示的命名空间约定：Company.Product.Feature.Name. `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：  
   
-        -   Microsoft.VisualStudio.IntegratedShell  
+        - Microsoft.VisualStudio.IntegratedShell  
   
-        -   Microsoft.VisualStudio.Pro  
+        - Microsoft.VisualStudio.Pro  
   
-        -   Microsoft.VisualStudio.Premium  
+        - Microsoft.VisualStudio.Premium  
   
-        -   Microsoft.VisualStudio.Ultimate  
+        - Microsoft.VisualStudio.Ultimate  
   
-        -   Microsoft.VisualStudio.VWDExpress  
+        - Microsoft.VisualStudio.VWDExpress  
   
-        -   Microsoft.VisualStudio.VPDExpress  
+        - Microsoft.VisualStudio.VPDExpress  
   
-        -   Microsoft.VisualStudio.VSWinExpress  
+        - Microsoft.VisualStudio.VSWinExpress  
   
-        -   Microsoft.VisualStudio.VSLS  
+        - Microsoft.VisualStudio.VSLS  
   
-        -   My.Shell.App  
+        - My.Shell.App  
   
-    -   `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [10.0 – 11.0] 其中  
+    - `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [10.0 – 11.0] 其中  
   
-        -   [-非独占的最低版本。  
+        - [-非独占的最低版本。  
   
-        -   ] – 非独占的最高版本。  
+        - ] – 非独占的最高版本。  
   
-        -   (-独占的最低版本。  
+        - (-独占的最低版本。  
   
-        -   ) – 排他的最高版本。  
+        - ) – 排他的最高版本。  
   
-        -   单个版本 #-指定的版本。  
+        - 单个版本 #-指定的版本。  
   
         > [!IMPORTANT]
         >  在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。  
   
-    -   `AnyAttribute*` –`<InstallationTarget>`元素允许的属性将公开在运行时作为名称 / 值对字典的开放式集。  
+    - `AnyAttribute*` –`<InstallationTarget>`元素允许的属性将公开在运行时作为名称 / 值对字典的开放式集。  
   
 ### <a name="dependencies-element"></a>依赖关系元素  
  此元素包含此包声明的依赖项的列表。 如果指定了任何依赖项，这些包 (由标识其`Id`) 必须之前已安装。  
   
--   `<Dependency>` 元素 – 此子元素具有以下属性：  
+- `<Dependency>` 元素 – 此子元素具有以下属性：  
   
-    -   `Id` -此属性必须是依赖的包的唯一 ID。 此标识值必须匹配`<Metadata><Identity>Id`此包所依赖的包的属性。 `Id`属性遵循命名空间约定：Company.Product.Feature.Name. 属性只能包含字母数字字符，并且限制为 100 个字符。  
+    - `Id` -此属性必须是依赖的包的唯一 ID。 此标识值必须匹配`<Metadata><Identity>Id`此包所依赖的包的属性。 `Id`属性遵循命名空间约定：Company.Product.Feature.Name. 属性只能包含字母数字字符，并且限制为 100 个字符。  
   
-    -   `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [12.0，13.0]，其中：  
+    - `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [12.0，13.0]，其中：  
   
-        -   [-非独占的最低版本。  
+        - [-非独占的最低版本。  
   
-        -   ] – 非独占的最高版本。  
+        - ] – 非独占的最高版本。  
   
-        -   (-独占的最低版本。  
+        - (-独占的最低版本。  
   
-        -   ) – 排他的最高版本。  
+        - ) – 排他的最高版本。  
   
-        -   单个版本 #-指定的版本。  
+        - 单个版本 #-指定的版本。  
   
-    -   `DisplayName` -此属性是包的依赖在 UI 元素，如对话框和错误消息中使用的显示名称。 该属性是可选的除非通过 MSI 安装从属包。  
+    - `DisplayName` -此属性是包的依赖在 UI 元素，如对话框和错误消息中使用的显示名称。 该属性是可选的除非通过 MSI 安装从属包。  
   
-    -   `Location` -此可选属性指定是嵌套的 VSIX 包到此 VSIX 中的相对路径或指向的依赖项的下载位置的 URL。 此属性用于帮助用户找到必备组件包。  
+    - `Location` -此可选属性指定是嵌套的 VSIX 包到此 VSIX 中的相对路径或指向的依赖项的下载位置的 URL。 此属性用于帮助用户找到必备组件包。  
   
-    -   `AnyAttribute*` –`Dependency`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。  
+    - `AnyAttribute*` –`Dependency`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。  
   
 ### <a name="assets-element"></a>资产元素  
  此元素包含一系列`<Asset>`扩展或内容的每个元素的标记显示此包。  

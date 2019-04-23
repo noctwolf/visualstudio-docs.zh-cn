@@ -10,12 +10,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ea04eceba8d42f9be6fc1dabf91b21a21744a7ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf96d13f3791570b5f1f98e77411ed64db81fa4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099398"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何：更新状态栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "58931621"
   
 ### <a name="to-update-the-status-bar"></a>若要更新状态栏  
   
-1.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>提供你的编辑器，例如，窗体视图和代码视图的每个单独的视图对象 (DocView)。  
+1. 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>提供你的编辑器，例如，窗体视图和代码视图的每个单独的视图对象 (DocView)。  
   
-2.  当调用 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的信息**状态栏**通过调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。  
+2. 当调用 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的信息**状态栏**通过调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。  
   
     > [!NOTE]
     >  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064279"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序 (C#，Visual Basic 中， C++)
 
@@ -234,17 +234,17 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 ### <a name="ShowThreadsInSource"></a>发现线程标记   
 
-1.  在调试工具栏中，单击“在源中显示线程”按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
+1. 在调试工具栏中，单击“在源中显示线程”按钮![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
 2. 按一下 **F11** 使调试器前进一个代码行。
 
-3.  查看窗口左侧的滚动条槽。 在此行中，会看到线程标记 图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于一条双绞线。 线程标记指示线程在此位置停止。
+3. 查看窗口左侧的滚动条槽。 在此行中，会看到线程标记 图标![线程标记](../debugger/media/dbg-thread-marker.png "ThreadMarker") ，类似于一条双绞线。 线程标记指示线程在此位置停止。
 
     线程标记可以被断点部分隐藏。 
 
-4.  将指针悬停在线程标记上。 此时会出现一个数据提示，告知你每个已停止线程的名称和线程 ID 号。 在这种情况下，名称可能是 `<noname>`。
+4. 将指针悬停在线程标记上。 此时会出现一个数据提示，告知你每个已停止线程的名称和线程 ID 号。 在这种情况下，名称可能是 `<noname>`。
 
-5.  选择线程标记，以查看快捷菜单上的可用选项。
+5. 选择线程标记，以查看快捷菜单上的可用选项。
 
 ### <a name="ParallelStacks"></a>查看线程位置
 
@@ -260,7 +260,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
     - 两个线程已进入 `ServerClass.InstanceMethod`，其中一个线程是当前线程（黄色箭头），另一个线程已停止在 `Thread.Sleep` 中。
     - 新线程（右侧）也已启动，但是停止在 `ThreadHelper.ThreadStart` 上。
 
-2.  右键单击“并行堆栈”窗口中的条目，查看快捷菜单上的可用选项。
+2. 右键单击“并行堆栈”窗口中的条目，查看快捷菜单上的可用选项。
 
     可以通过这些右键单击菜单执行各种操作，但在本教程中，我们将在“并行监视”窗口中展示更多这些细节（后续部分）。
 
@@ -292,14 +292,14 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
     所选的所有线程都将都标记。 现在，您可以筛选为仅显示已标记的线程。
 
-3.  在中**并行监视**窗口中，选择**仅显示标记的线程**按钮![显示已标记线程](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。
+3. 在中**并行监视**窗口中，选择**仅显示标记的线程**按钮![显示已标记线程](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。
 
     标记的线程显示在列表中。
 
     > [!TIP]
     > 在标记一些线程后，可以右键单击代码编辑器中的代码行，然后选择“将标记的线程运行到光标处”。 请确保选择所有已标记的线程将达到的代码。 Visual Studio 将在选择的代码行处暂停线程，这样就可以通过[冻结和解冻线程](#bkmk_freeze)更容易地控制执行顺序。
 
-4.  选择**仅显示标记的线程**按钮将再次切换回**显示所有线程**模式。
+4. 选择**仅显示标记的线程**按钮将再次切换回**显示所有线程**模式。
 
 5. 若要取消标记线程，请在“并行监视”窗口右键单击一个或多个已标记线程，然后选择“取消标记”。
 
@@ -308,17 +308,17 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 > [!TIP]
 > 可以通过冻结和解冻（暂停和恢复）线程来控制线程执行工作的顺序。 这有助于解决并发问题，例如死锁和争用条件。
 
-1.  在“并行监视”窗口中，在选中所有行的情况下，右键单击并选择“冻结”。
+1. 在“并行监视”窗口中，在选中所有行的情况下，右键单击并选择“冻结”。
 
     在第二个列中，每个行出现一个暂停图标。 暂停图标指示该线程已冻结。
 
-2.  仅选择一行，取消选中其他行。
+2. 仅选择一行，取消选中其他行。
 
-3.  右键单击某一行，然后选择**解冻**。
+3. 右键单击某一行，然后选择**解冻**。
 
     暂停图标在此行上消失，表明线程已不再被冻结。
 
-4.  切换到代码编辑器，按 **F11**。 仅运行未冻结的线程。
+4. 切换到代码编辑器，按 **F11**。 仅运行未冻结的线程。
 
     应用还实例化某些新线程。 任何新线程均处于未标记状态，不会被冻结。
 

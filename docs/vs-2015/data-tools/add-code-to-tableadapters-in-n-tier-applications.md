@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115362"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "59651914"
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>若要将用户代码添加到 TableAdapter 中的 n 层应用程序  
   
-1.  找到包含.xsd 文件 （数据集） 的项目。  
+1. 找到包含.xsd 文件 （数据集） 的项目。  
   
-2.  双击 **.xsd**文件打开数据集。  
+2. 双击 **.xsd**文件打开数据集。  
   
-3.  右键单击`TableAdapter`想要将代码添加到，，然后选择**查看代码**。  
+3. 右键单击`TableAdapter`想要将代码添加到，，然后选择**查看代码**。  
   
      分部类将创建并在代码编辑器中打开。  
   
-4.  添加代码的分部类声明。  
+4. 添加代码的分部类声明。  
   
-5.  下面的示例显示了将代码添加到的位置`CustomersTableAdapter`在`NorthwindDataSet`:  
+5. 下面的示例显示了将代码添加到的位置`CustomersTableAdapter`在`NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

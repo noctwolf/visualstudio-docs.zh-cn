@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e840a8bb19b48c5cd4526ad80526bd62fcf8fa0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: f20f61ffc4a6e4105a96b58c3dc73e7154e7c9cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055783"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。
@@ -33,9 +33,9 @@ ms.locfileid: "57526174"
 |语言元素/功能|受支持的编辑操作|限制|
 |-|-|-|
 |类型|添加方法、 字段、 构造函数、 et al|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Iterators|添加或修改|No|
+|Iterators|添加或修改|否|
 |async/await 表达式|添加或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|动态对象|添加或修改|No|
+|动态对象|添加或修改|否|
 |Lambda 表达式|添加或修改|[是](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |LINQ 表达式|添加或修改|[Lambda 表达式相同](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 
@@ -45,7 +45,7 @@ ms.locfileid: "57526174"
 ## <a name="unsupported-changes-to-code"></a>不支持的更改代码
  以下更改无法应用于C#和在调试会话过程中的 Visual Basic 代码：
 
--   对当前语句或任何其他活动语句的更改。
+- 对当前语句或任何其他活动语句的更改。
 
      活动语句包括为转至当前语句而调用过的任何语句（位于调用堆栈的函数中）。
 
@@ -78,7 +78,7 @@ ms.locfileid: "57526174"
 |Iterators|修改面向.NET Framework 4 的项目中的迭代器，并减少 (请参阅[详细信息](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>不安全代码
- 对不安全代码的更改具有与对安全代码的更改相同的限制，但它还包含一条附加限制：“编辑并继续”不支持对包含 `stackalloc` 运算符的方法内退出的不安全代码所作的更改。
+ 对不安全代码的更改与对安全代码的更改有相同的限制，但它还包含一条附加限制：编辑并继续不支持对包含的方法内退出的不安全代码的更改`stackalloc`运算符。
 
 ## <a name="unsupported-app-scenarios"></a>不受支持的应用方案
 
@@ -90,19 +90,19 @@ ms.locfileid: "57526174"
 ## <a name="unsupported-scenarios"></a>不支持的方案
  在以下调试方案中，“编辑并继续”不可用：
 
--   混合模式（本机/托管）调试。
+- 混合模式（本机/托管）调试。
 
--   SQL 调试。
+- SQL 调试。
 
--   调试 Dr.Watson 转储。
+- 调试 Dr.Watson 转储。
 
--   调试嵌入式运行时应用程序。
+- 调试嵌入式运行时应用程序。
 
--   调试应用程序中使用附加到进程 (**调试 > 附加到进程**) 而不是通过选择运行该应用程序**启动**从**调试**菜单。
+- 调试应用程序中使用附加到进程 (**调试 > 附加到进程**) 而不是通过选择运行该应用程序**启动**从**调试**菜单。
 
--   调试优化后的代码。
+- 调试优化后的代码。
 
--   如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
+- 如果由于生成错误无法生成新版本的代码，则对旧版本的代码进行调试。
 
 ## <a name="see-also"></a>请参阅
 - [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

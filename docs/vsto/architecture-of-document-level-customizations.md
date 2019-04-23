@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcd465ebef68a6627935b00438f6c218938eb3de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051995"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文档级自定义项的体系结构
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包括用于为 Microsoft Office Word 和 Microsoft Office Excel 创建文档级自定义项的项目。 本主题介绍文档级自定义项的以下方面：
@@ -39,7 +39,7 @@ ms.locfileid: "56629464"
 
   有关创建文档级自定义项的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)， [一词的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)，并[excel 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。
 
-##  <a name="UnderstandingCustomizations"></a> 了解自定义项
+## <a name="UnderstandingCustomizations"></a> 了解自定义项
  使用 Visual Studio 中的 Office 开发人员工具生成文档级自定义项时，会创建一个与特定文档关联的托管代码程序集。 带有链接程序集的文档或工作簿被认为具有托管代码扩展。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
 
  当用户打开文档时，Microsoft Office 应用程序会加载程序集。 加载程序集后，自定义项将能在文档处于打开状态时对事件做出响应。 自定义项也可以调入对象模型，以便在文档处于打开状态时自动化和扩展应用程序，并且自定义项可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。
@@ -57,18 +57,18 @@ ms.locfileid: "56629464"
 #### <a name="design-time"></a>设计时
  设计时体验包括以下步骤：
 
-1.  开发人员在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中创建文档级项目。 该项目包括文档和在该文档后端运行的程序集。 文档可能已存在 （由设计器创建），或可以随项目创建新的文档。
+1. 开发人员在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中创建文档级项目。 该项目包括文档和在该文档后端运行的程序集。 文档可能已存在 （由设计器创建），或可以随项目创建新的文档。
 
-2.  设计人员（无论是创建项目的开发人员还是其他人员）为最终用户创建文档的外观。
+2. 设计人员（无论是创建项目的开发人员还是其他人员）为最终用户创建文档的外观。
 
 #### <a name="runtime"></a>运行时
  运行时体验包括下列步骤：
 
-1.  最终用户打开具有托管代码扩展的文档或工作簿。
+1. 最终用户打开具有托管代码扩展的文档或工作簿。
 
-2.  文档或工作簿加载已编译的程序集。
+2. 文档或工作簿加载已编译的程序集。
 
-3.  当用户在文档或工作簿中工作时，程序集对事件做出响应。
+3. 当用户在文档或工作簿中工作时，程序集对事件做出响应。
 
 #### <a name="developer-and-end-user-perspective-compared"></a>开发人员和最终用户的角度进行比较
  因为开发人员主要在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中工作，而最终用户在 Word 或 Excel 中工作，所以可通过两种方式来了解文档级自定义项。
@@ -97,7 +97,7 @@ ms.locfileid: "56629464"
 
   如果希望最终用户在这些文件格式中使用自定义项，请生成并部署使用上表中指定的某个受支持文件格式的自定义项。 在安装后自定义项，最终用户可以保存该文档在 Word XML 文档 (*\*xml*) 格式或 Word 2003 XML 文档 (*\*xml*) 格式，并自定义项将继续按预期方式工作。
 
-##  <a name="Components"></a> 自定义项的组件
+## <a name="Components"></a> 自定义项的组件
  自定义项的主要组成部分是文档和程序集。 除了这些组成部分外，还有一些其他部件在 Microsoft Office 应用程序发现并加载自定义项的过程中扮演着重要角色。
 
 ### <a name="deployment-manifest-and-application-manifest"></a>部署清单和应用程序清单
@@ -108,7 +108,7 @@ ms.locfileid: "56629464"
 
  有关详细信息，请参阅[Visual Studio tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-##  <a name="HowCustomizationsWork"></a> 自定义项与 Microsoft Office 应用程序的工作原理
+## <a name="HowCustomizationsWork"></a> 自定义项与 Microsoft Office 应用程序的工作原理
  当用户打开属于 Microsoft Office 自定义项的文档时，应用程序将使用链接到文档的部署清单来查找并加载自定义项程序集的最新版本。 部署清单的位置存储在名为的自定义文档属性**AssemblyLocation**。 标识此位置的字符串在生成解决方案时插入该属性中。
 
  部署清单指向应用程序清单，后者随后指向最新的程序集。 有关详细信息，请参阅[应用程序和部署清单在 Office 解决方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
@@ -123,21 +123,21 @@ ms.locfileid: "56629464"
 ### <a name="loading-process"></a>加载过程
  当用户打开属于 Microsoft Office 解决方案的文档时，将执行以下步骤。
 
-1.  Microsoft Office 应用程序检查自定义文档属性，以确定是否有与文档关联的托管代码扩展。 有关详细信息，请参阅[自定义文档属性概述](../vsto/custom-document-properties-overview.md)。
+1. Microsoft Office 应用程序检查自定义文档属性，以确定是否有与文档关联的托管代码扩展。 有关详细信息，请参阅[自定义文档属性概述](../vsto/custom-document-properties-overview.md)。
 
-2.  如果托管的代码扩展，应用程序加载*VSTOEE.dll*，哪个负载*VSTOLoader.dll*。 这些不受管理的是 Visual Studio 2010 Tools for Office 运行时的加载程序组件 Dll。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+2. 如果托管的代码扩展，应用程序加载*VSTOEE.dll*，哪个负载*VSTOLoader.dll*。 这些不受管理的是 Visual Studio 2010 Tools for Office 运行时的加载程序组件 Dll。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
-3.  *VSTOLoader.dll*加载[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]，并启动的托管的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
+3. *VSTOLoader.dll*加载[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]，并启动的托管的部分[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。
 
-4.  如果从本地计算机以外的位置打开文档， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将验证文档的位置是否位于该特定 Office 应用程序的“信任中心设置”  中的“受信任位置”  列表中。 如果文档位置不在受信任位置中，自定义项将不会得到信任，并且加载过程将在此处停止。
+4. 如果从本地计算机以外的位置打开文档， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将验证文档的位置是否位于该特定 Office 应用程序的“信任中心设置”  中的“受信任位置”  列表中。 如果文档位置不在受信任位置中，自定义项将不会得到信任，并且加载过程将在此处停止。
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将安装解决方案（如果尚未安装），下载最新的应用程序和部署清单，并执行一系列安全检查。 有关详细信息，请参阅[保护 Office 解决方案](../vsto/securing-office-solutions.md)。
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将安装解决方案（如果尚未安装），下载最新的应用程序和部署清单，并执行一系列安全检查。 有关详细信息，请参阅[保护 Office 解决方案](../vsto/securing-office-solutions.md)。
 
-6.  如果自定义项受信任，可以运行，则 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将使用部署清单和应用程序清单来检查程序集更新。 如果集有新版本的程序集可用，则运行时会将新版本的程序集下载到客户端计算机上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 缓存中。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+6. 如果自定义项受信任，可以运行，则 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将使用部署清单和应用程序清单来检查程序集更新。 如果集有新版本的程序集可用，则运行时会将新版本的程序集下载到客户端计算机上的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 缓存中。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将创建一个要在其中加载自定义项程序集的新应用程序域。
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将创建一个要在其中加载自定义项程序集的新应用程序域。
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将自定义项程序集加载到应用程序域中。
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将自定义项程序集加载到应用程序域中。
 
 9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将在自定义项程序集中调用 **Startup** 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)
 

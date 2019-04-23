@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf16f79401f4b8df3bafff0f92963510110dff1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061029"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>源代码管理插件的测试指南
 本部分提供用于测试你的源代码管理插件与指导[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 提供的最常见的测试区域，以及一些可能会出现问题的更多复杂区域的广泛概述。 本概述不应为测试用例的详尽列表。
@@ -51,55 +51,55 @@ ms.locfileid: "56622756"
 
 ## <a name="test-areas-covered-in-this-section"></a>在本部分中介绍的测试环节
 
--   [测试区域 1:从源代码管理添加到 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [测试区域 1:从源代码管理添加到 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    -   Case 1a:将解决方案添加到源代码管理
+    - Case 1a:将解决方案添加到源代码管理
 
-    -   Case 1b:从源代码管理打开解决方案
+    - Case 1b:从源代码管理打开解决方案
 
-    -   案例 1 c:从源代码管理添加解决方案
+    - 案例 1 c:从源代码管理添加解决方案
 
--   [测试区域 2:从源代码管理获取](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [测试区域 2:从源代码管理获取](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
--   [测试区域 3:签出/撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [测试区域 3:签出/撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    -   案例 3:签出/撤销签出
+    - 案例 3:签出/撤销签出
 
-    -   Case 3a:签出
+    - Case 3a:签出
 
-    -   Case 3b:断开连接签出
+    - Case 3b:断开连接签出
 
-    -   案例 3 c:查询编辑/查询保存 (QEQS)
+    - 案例 3 c:查询编辑/查询保存 (QEQS)
 
-    -   本例中 3d:无提示签出
+    - 本例中 3d:无提示签出
 
-    -   Case 3e:撤消签出
+    - Case 3e:撤消签出
 
--   [测试区域 4:登记](../../extensibility/internals/test-area-4-check-in.md)
+- [测试区域 4:登记](../../extensibility/internals/test-area-4-check-in.md)
 
-    -   Case 4a:修改的项目
+    - Case 4a:修改的项目
 
-    -   Case 4b:添加文件
+    - Case 4b:添加文件
 
-    -   用例 4 c:添加项目
+    - 用例 4 c:添加项目
 
--   [测试区域 5:更改源代码管理](../../extensibility/internals/test-area-5-change-source-control.md)
+- [测试区域 5:更改源代码管理](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    -   Case 5a:将绑定
+    - Case 5a:将绑定
 
-    -   Case 5b:取消绑定
+    - Case 5b:取消绑定
 
-    -   用例 5 c:重新绑定
+    - 用例 5 c:重新绑定
 
--   [测试区域 6:删除](../../extensibility/internals/test-area-6-delete.md)
+- [测试区域 6:删除](../../extensibility/internals/test-area-6-delete.md)
 
--   [测试区域 7:共享](../../extensibility/internals/test-area-7-share.md)
+- [测试区域 7:共享](../../extensibility/internals/test-area-7-share.md)
 
--   [测试区域 8:插件切换](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [测试区域 8:插件切换](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    -   Case 8a:自动更改
+    - Case 8a:自动更改
 
-    -   Case 8b:基于解决方案的更改
+    - Case 8b:基于解决方案的更改
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件](../../extensibility/source-control-plug-ins.md)

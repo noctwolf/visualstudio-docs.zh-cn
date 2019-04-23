@@ -16,39 +16,39 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045637"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801:检查未使用的参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 的最新文档，请参阅[CA1801:检查未使用的参数](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)docs.microsoft.com 上。  
+Visual Studio 的最新文档，请参阅[CA1801:检查未使用的参数](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters)。  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |类别|Microsoft.Usage|  
-|是否重大更改|否-如果成员不是程序集，而不考虑所做的更改外部可见。<br /><br /> 否-如果您更改要使用其主体中的参数的成员。<br /><br /> 是-如果删除参数，它是程序集外部可见。|  
+|是否重大更改|无间断-如果该成员不可见程序集外部的而不考虑更改进行。<br /><br /> 无间断-如果您更改要使用其主体中的参数的成员。<br /><br /> 是-如果删除参数，它是程序集外部可见。|  
   
 ## <a name="cause"></a>原因  
  方法签名包含一个没有在方法体中使用的参数。 此规则不检查以下方法：  
   
--   由委托所引用的方法。  
+- 由委托所引用的方法。  
   
--   用作事件处理程序方法。  
+- 用作事件处理程序方法。  
   
--   方法声明为具有`abstract`(`MustOverride`在 Visual Basic 中) 修饰符。  
+- 方法声明为具有`abstract`(`MustOverride`在 Visual Basic 中) 修饰符。  
   
--   方法声明为具有`virtual`(`Overridable`在 Visual Basic 中) 修饰符。  
+- 方法声明为具有`virtual`(`Overridable`在 Visual Basic 中) 修饰符。  
   
--   方法声明为具有`override`(`Overrides`在 Visual Basic 中) 修饰符。  
+- 方法声明为具有`override`(`Overrides`在 Visual Basic 中) 修饰符。  
   
--   方法声明为具有`extern`(`Declare`在 Visual Basic 中的语句) 修饰符。  
+- 方法声明为具有`extern`(`Declare`在 Visual Basic 中的语句) 修饰符。  
   
 ## <a name="rule-description"></a>规则说明  
  查看不用于方法体中请确保没有正确性存在应该对其进行访问的非虚拟方法中的参数。 未使用的参数会产生维护和性能成本。  

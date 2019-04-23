@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085956"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 
@@ -36,20 +36,20 @@ ms.locfileid: "55930735"
 
 ## <a name="to-connect-your-application-to-a-service"></a>若要连接到服务应用程序
 
-1.  在 **“数据”** 菜单上，单击 **“添加新数据源”**。
+1. 在 **“数据”** 菜单上，单击 **“添加新数据源”**。
 
-2.  选择**服务**上**选择数据源类型**页上，然后依次**下一步**。
+2. 选择**服务**上**选择数据源类型**页上，然后依次**下一步**。
 
-3.  输入你想要使用，或单击该服务的地址**Discover**若要在当前解决方案中，找到服务，然后单击**转**。
+3. 输入你想要使用，或单击该服务的地址**Discover**若要在当前解决方案中，找到服务，然后单击**转**。
 
-4.  （可选） 您可以键入一个新**Namespace**默认值的位置。
+4. （可选） 您可以键入一个新**Namespace**默认值的位置。
 
     > [!NOTE]
     > 单击**高级**以打开[配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)。
 
-5.  单击**确定**添加到你的项目的服务引用。
+5. 单击**确定**添加到你的项目的服务引用。
 
-6.  单击 **“完成”**。
+6. 单击 **“完成”**。
 
      数据源随即添加到“数据源”窗口中。
 

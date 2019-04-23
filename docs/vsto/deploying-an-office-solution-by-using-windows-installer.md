@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d46953b56accd4926d5515440642e1591ef85a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a89898b7f0495e35ed51d6333288b3aa67c45428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056743"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
+
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。
 
 通过使用 Visual Studio 创建 Windows Installer，你可以部署 Office 解决方案，该方案需要最终用户计算机上的管理员访问权限。 例如，只需使用此种文件安装一次解决方案，就可让计算机上的所有用户进行使用。 你也可以使用 ClickOnce 来部署 Office 解决方案，但必须针对计算机上的每个用户分别安装一次该解决方案。
-
 
 ## <a name="in-this-topic"></a>在本主题中
 
@@ -59,11 +59,8 @@ ms.locfileid: "56625551"
 
 有关如何创建 Windows Installer 文件的使用信息[!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]，请参阅[部署 Visual Studio 2010 Tools for Office 解决方案使用 Windows 安装程序](http://go.microsoft.com/fwlink/?LinkId=201807)。
 
-
 ## <a name="Download"></a>下载示例
 本主题参考以下可下载示例。
-
-
 
 |示例<br /><br />|描述<br /><br />|
 |----------|---------------|
@@ -73,7 +70,6 @@ ms.locfileid: "56625551"
 ## <a name="ApplySecurity"></a>决定如何向解决方案授予信任
 要让解决方案在用户计算机上运行，你必须以如下方式之一授予信任，或者用户必须在安装解决方案时响应信任提示。
 
-
 - 使用能识别已知的受信任发布者的证书为清单签名。 有关详细信息，请参阅[信任该解决方案通过对应用程序和部署清单进行签名](../vsto/granting-trust-to-office-solutions.md#Signing)。
 
 - 将解决方案安装到用户的计算机上的 Program Files 目录。
@@ -81,10 +77,9 @@ ms.locfileid: "56625551"
 > [!NOTE]
 > 对于文档级自定义项，还必须信任文档的位置。 有关详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。
 
-
 ## <a name="Obtain"></a>获取 InstallShield Limited Edition
-可以使用 InstallShield limited Edition (ISLE)（安装 Visual Studio 后可免费使用）来创建 Windows Installer 文件。 ISLE 替代了 Visual Studio 早期版本中为安装和部署提供的项目模板功能。
 
+可以使用 InstallShield limited Edition (ISLE)（安装 Visual Studio 后可免费使用）来创建 Windows Installer 文件。 ISLE 替代了 Visual Studio 早期版本中为安装和部署提供的项目模板功能。
 
 ### <a name="to-get-installshield-limited-edition"></a>获取 InstallShield Limited Edition
 
@@ -104,7 +99,6 @@ ms.locfileid: "56625551"
 
    下载、安装并激活产品后，Visual Studio 中会显示 **“InstallShield Limited Edition 项目”** 模板。
 
-
 ## <a name="Create"></a>创建安装项目
 
 1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中，打开要部署的 Office 项目。
@@ -123,10 +117,9 @@ ms.locfileid: "56625551"
 
    此主题中的示例包含一个名为 **“OfficeAddInSetup”** 的安装项目。 本主题将通过相同的名称来引用解决方案中的安装项目。
 
-
 ## <a name="Add"></a>添加项目输出
-配置 **“OfficeAddInSetup”** 项目以包括 Office 项目的输出。 对于 VSTO 外接程序项目，项目输出中只有解决方案程序集。 对于文档级自定义项目，项目输出不仅包括解决方案程序集，还包括文档本身。
 
+配置 **“OfficeAddInSetup”** 项目以包括 Office 项目的输出。 对于 VSTO 外接程序项目，项目输出中只有解决方案程序集。 对于文档级自定义项目，项目输出不仅包括解决方案程序集，还包括文档本身。
 
 ### <a name="to-add-the-project-output"></a>添加项目输出
 
@@ -144,10 +137,8 @@ ms.locfileid: "56625551"
 
 5. 在 **“Visual Studio 输出选择器”** 对话框中，选中 **“主输出”** 复选框，然后选择 **“确定”** 按钮。
 
-
 ## <a name="AddD"></a>添加部署和应用程序清单
 
-###
 1. 在 **“应用程序文件”** 页上，选择 **“添加文件”** 按钮。
 
 2. 在 **“打开”** 对话框中，浏览到 **ExcelAddIn** 项目的输出目录。
@@ -160,15 +151,13 @@ ms.locfileid: "56625551"
 
    ![安装程序项目的输出文件。](../vsto/media/installshield-outputfiles.png "安装项目的输出文件。")
 
-
 ## <a name="Configure"></a>配置依赖组件为系统必备组件
-在安装应用程序中，不仅必须包括以下组件，还必须包括运行解决方案所需的所有其他组件。
 
+在安装应用程序中，不仅必须包括以下组件，还必须包括运行解决方案所需的所有其他组件。
 
 - Office 解决方案所面向的 .NET Framework 版本。
 
 - Microsoft Visual Studio 2010 Tools for Office Runtime。
-
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>添加.NET Framework 4 或.NET Framework 4.5 作为必备组件
 
@@ -186,15 +175,13 @@ ms.locfileid: "56625551"
 
 4. 如果显示此对话框，请选择 **“否”** 按钮。
 
-
 ### <a name="AddToolsForOffice"></a>添加 Visual Studio 2010 Tools for Office Runtime
-**“可再发行文件”** 页包含一个名为 **“Microsoft VSTO 2010 Runtime”** 的项，但是它引用的是运行时的较旧版本。 因此，可以手动创建引用最新版本的配置文件。 然后必须将此文件放入 **“可再发行文件”** 页上显示的所有其他项的配置文件所在的目录。
 
+**“可再发行文件”** 页包含一个名为 **“Microsoft VSTO 2010 Runtime”** 的项，但是它引用的是运行时的较旧版本。 因此，可以手动创建引用最新版本的配置文件。 然后必须将此文件放入 **“可再发行文件”** 页上显示的所有其他项的配置文件所在的目录。
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>若要将 Visual Studio 2010 Tools for Office 运行时添加的必备组件
 
 1. 打开记事本，然后将以下 XML 复制粘贴到文本文件中。
-
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -222,7 +209,6 @@ ms.locfileid: "56625551"
 
    此时会打开 **&lt;properties&gt;** 元素类似于以下内容。
 
-
    ```xml
    <properties Id="{87989B73-21DC-4403-8FD1-0C68A41A6D8C}" Description="This prerequisite installs the most recent version of the Microsoft Visual Studio 2010 Tools for Office Runtime." >
    </properties>
@@ -237,7 +223,7 @@ ms.locfileid: "56625551"
 8. 在 **“文件名”** 框中，输入 **Visual Studio 2010 Tools for Office Runtime.prq**，然后选择 **“保存”** 按钮。
 
    > [!NOTE]
-   >    确保在文件名末尾加上 **.prq** ，以将此文件指定为系统必备文件。
+   > 确保在文件名末尾加上 **.prq** ，以将此文件指定为系统必备文件。
 
 9. 关闭记事本。
 
@@ -257,7 +243,6 @@ ms.locfileid: "56625551"
 
 13. 如果显示此对话框，请选择 **“否”** 按钮。
 
-
 ## <a name="Location"></a>指定在用户计算机上安装解决方案的位置
 
 1. 在 **“解决方案资源管理器”** 中，依次展开 **“OfficeAddInSetup”** 节点和 **“组织安装”** 节点，然后选择 **“常规信息”** 文件。
@@ -269,10 +254,10 @@ ms.locfileid: "56625551"
 4. 在中**设置 INSTALLDIR**对话框框中，选择你想要安装该解决方案的用户的计算机上的文件夹。
 
    > [!NOTE]
-   >    你还可以通过打开列表中的任何文件夹的快捷菜单，在 **“设置 INSTALLDIR”** 对话框中创建子目录。
-
+   > 你还可以通过打开列表中的任何文件夹的快捷菜单，在 **“设置 INSTALLDIR”** 对话框中创建子目录。
 
 ## <a name="ConfigureRegistry"></a>配置 VSTO 外接程序
+
 你可以指定是为计算机的所有用户安装 VSTO 外接程序（基于计算机），还是仅为执行安装的用户安装（基于用户）。
 
 如果要支持基于计算机安装，请创建两个不同的安装程序。 可以根据用户运行的 Office 版本（32 位和 64 位）或 Windows 版本（32 位和 64 位）拆分安装程序。
@@ -281,7 +266,6 @@ ms.locfileid: "56625551"
 
 > [!NOTE]
 > 本节仅适用于要部署 VSTO 外接程序中。 如果你正在部署的文档级自定义项，则可以立即转到[配置文档级自定义](#ConfigureDocument)部分。
-
 
 ### <a name="to-specify-whether-you-want-to-support-per-user-or-per-computer-installations"></a>指定支持基于用户的安装还是支持基于计算机的安装
 
@@ -296,7 +280,6 @@ ms.locfileid: "56625551"
    若要安装 VSTO 外接程序的当前用户，请选择**ALLUSERS =""（每个用户安装）**。 若要为计算机的所有用户安装 VSTO 外接程序，请选择 **ALLUSERS=1**（基于计算机安装）。
 
    在下一步的过程中，将创建注册表项来支持 Office 应用程序能够发现和加载 VSTO 外接程序。 请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。
-
 
 ### <a name="to-create-registry-keys"></a>创建注册表项
 
@@ -322,8 +305,6 @@ ms.locfileid: "56625551"
 
    **根据 Office 版本创建的基于计算机的安装程序**
 
-
-
 | Office 版本<br /><br /> | InstallShield 配置路径<br /><br /> |
 |----------------------------| - |
 | 32 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
@@ -331,18 +312,16 @@ ms.locfileid: "56625551"
 
    **根据 Windows 版本创建的基于计算机的安装程序**
 
-
-
 | Windows 版本<br /><br /> | InstallShield 配置路径<br /><br /> |
 |-----------------------------| - |
 | 32 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 | 64 位<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
-   >    64 位 Windows 的安装程序需要两个注册表路径，因为它是用户可以在运行 64 位 Windows 的计算机上运行 32 位和 64 位版本的 Office。
+   > 64 位 Windows 的安装程序需要两个注册表路径，因为它是用户可以在运行 64 位 Windows 的计算机上运行 32 位和 64 位版本的 Office。
 
    > [!NOTE]
-   >    最佳做法是，用公司名称作为开头来命名 VSTO 外接程序。 此约定会增加该密钥将是唯一的同时降低与 VSTO 外接程序从另一个供应商的发生冲突的可能性。 例如，具有相同名称的外接程序可能会覆盖彼此的注册表项。 此方法无法保证注册表项的唯一性，但可以减少潜在的名称冲突。
+   > 最佳做法是，用公司名称作为开头来命名 VSTO 外接程序。 此约定会增加该密钥将是唯一的同时降低与 VSTO 外接程序从另一个供应商的发生冲突的可能性。 例如，具有相同名称的外接程序可能会覆盖彼此的注册表项。 此方法无法保证注册表项的唯一性，但可以减少潜在的名称冲突。
 
 5. 创建密钥的层次结构后，打开快捷菜单**SampleCompany.ExcelAddIn**密钥，请选择**新建**，然后选择**字符串值**。
 
@@ -351,8 +330,6 @@ ms.locfileid: "56625551"
 6. 将该值重命名为 **Description**。
 
 7. 重复此过程以创建以下值。
-
-
 
 |值类型<br /><br />|名称<br /><br />|
 |--------------|--------|
@@ -395,8 +372,8 @@ ms.locfileid: "56625551"
 > [!IMPORTANT]
 > 如果在 VSTO 外接程序中为 Outlook 创建自定义窗体区域，必须创建更多注册表项，outlook 中注册该区域。 有关详细信息，请参阅[注册表项的 Outlook 窗体区域](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries)。
 
-
 ## <a name="ConfigureDocument"></a>Configure a document-level customization
+
 本节仅适用于你在部署文档级自定义。 如果你正在部署 VSTO 外接程序中，您可以立即转到[生成安装项目](#Build)部分。
 
 文档级自定义项不使用注册表项。 但自定义文档属性中会包含部署清单的位置。
@@ -419,7 +396,6 @@ ms.locfileid: "56625551"
 
 6. 在 **“引用管理器”** 对话框中，选择 **“扩展”** 选项卡，选中以下程序集旁的复选框，然后选择 **“确定”** 按钮。
 
-
    - Microsoft.VisualStudio.Tools.Applications.Runtime
 
    - Microsoft.VisualStudio.Tools.Applications.ServerDocument
@@ -434,7 +410,6 @@ ms.locfileid: "56625551"
 [!code-csharp[Trin_CustomAction#1](../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs#1)]
 
 10. 编译该项目。
-
 
 ### <a name="to-add-a-custom-action-that-runs-your-program"></a>添加运行程序的自定义操作
 
@@ -461,14 +436,14 @@ ms.locfileid: "56625551"
    屏幕旁边的窗格中会显示一个事件列表。
 
    > [!NOTE]
-   >    此列表中只有少数事件可用于 InstallShield Limited Edition。 在此过程中，你将使用运行程序**安装程序成功完成之后对话框**事件。
+   > 此列表中只有少数事件可用于 InstallShield Limited Edition。 在此过程中，你将使用运行程序**安装程序成功完成之后对话框**事件。
 
 8. 在事件列表中的 **“安装过程中的自定义操作”** 下，打开 **“‘安装程序成功完成之后’对话框”** 事件的快捷菜单，然后选择 **“新建 EXE”**。
 
    名为 **“NewCustomAction1”** 的自定义操作显示在 **“‘安装程序成功完成之后’对话框”** 事件下。 自定义操作的属性集会出现在事件旁边的窗格中。
 
    > [!IMPORTANT]
-   >    事件列表中会出现两个 **“‘安装程序成功完成之后’对话框”** 事件。 确保选择显示在 **“安装过程中的自定义操作”** 节点之下的 **“‘安装程序成功完成之后’对话框”** 事件实例。
+   > 事件列表中会出现两个 **“‘安装程序成功完成之后’对话框”** 事件。 确保选择显示在 **“安装过程中的自定义操作”** 节点之下的 **“‘安装程序成功完成之后’对话框”** 事件实例。
 
 9. 在 **“源位置”** 属性列表中，选择 **“随产品安装”**。
 
@@ -492,7 +467,6 @@ ms.locfileid: "56625551"
 
 15. 在 **“NewCustomAction1”** 的属性页中，将 **“命令行”** 属性设置为以下文本行。
 
-
    ```cmd
    /assemblyLocation="[INSTALLDIR]ExcelWorkbook.dll" /deploymentManifestLocation="[INSTALLDIR]ExcelWorkbook.vsto" /documentLocation="[INSTALLDIR]ExcelWorkbook.xlsx" /solutionID="Your Solution ID"
    ```
@@ -500,8 +474,7 @@ ms.locfileid: "56625551"
 16. 将 **Your Solution ID** 替换为复制到剪贴板中的解决方案 ID。
 
    > [!IMPORTANT]
-   >    测试安装程序，以验证此自定义操作运行的控制台应用程序可以访问 [INSTALLDIR] 目录中的文档。 用户的计算机上的某些目录可能需要管理访问权限 （例如，Program Files 目录）。 如果正在将解决方案部署到需要管理员访问权限的目录，则应打开**属性**对话框中的*setup.exe*文件中，选择**的兼容性**选项卡，然后选择**以管理员身份运行此程序**再分发安装程序的复选框。 如果不希望用户能够使用管理权限运行安装程序，将 [INSTALLDIR] 属性设置为用户可能有权访问目录，如**文档**目录。 有关详细信息，请参阅[指定要在用户计算机上安装该解决方案](#Location)本主题的部分。
-
+   > 测试安装程序，以验证此自定义操作运行的控制台应用程序可以访问 [INSTALLDIR] 目录中的文档。 用户的计算机上的某些目录可能需要管理访问权限 （例如，Program Files 目录）。 如果正在将解决方案部署到需要管理员访问权限的目录，则应打开**属性**对话框中的*setup.exe*文件中，选择**的兼容性**选项卡，然后选择**以管理员身份运行此程序**再分发安装程序的复选框。 如果不希望用户能够使用管理权限运行安装程序，将 [INSTALLDIR] 属性设置为用户可能有权访问目录，如**文档**目录。 有关详细信息，请参阅[指定要在用户计算机上安装该解决方案](#Location)本主题的部分。
 
 ## <a name="Build"></a>Build the setup project
 

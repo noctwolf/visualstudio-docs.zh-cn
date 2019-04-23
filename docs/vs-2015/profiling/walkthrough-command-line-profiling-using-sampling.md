@@ -13,14 +13,14 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b2261641f1883830e60785dda1460f0f4202f21
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e9c8f14fbec74b353550a1420a5ff3e119d6dce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783529"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117429"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>演练：使用采样进行命令行分析
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>演练：命令行使用采样分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本演练演示如何使用命令行工具和采样功能分析应用程序以确定性能问题。  
@@ -29,21 +29,21 @@ ms.locfileid: "54783529"
   
  在本演练中，你将遵循以下步骤：  
   
--   通过使用命令行工具和采样功能分析应用程序。  
+- 通过使用命令行工具和采样功能分析应用程序。  
   
--   分析被采样的分析结果，以便查找并修复性能问题。  
+- 分析被采样的分析结果，以便查找并修复性能问题。  
   
 ## <a name="prerequisites"></a>系统必备  
   
--   [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]、[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
--   [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] 中级理解  
+- [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)] 中级理解  
   
--   使用命令行工具的中级理解  
+- 使用命令行工具的中级理解  
   
--   [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本  
+- [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本  
   
--   若要使用分析提供的信息，最好有可用的调试符号信息。  
+- 若要使用分析提供的信息，最好有可用的调试符号信息。  
   
 ## <a name="command-line-profiling-using-the-sampling-method"></a>使用采样方法进行命令行分析  
  采样是一种分析方法，通过此方法可定期轮询有特定进程以确定活动函数。 生成的数据提供对进程进行采样时，函数位于调用堆栈顶部的频率计数。  
@@ -53,19 +53,19 @@ ms.locfileid: "54783529"
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>使用采样方法分析 PeopleTrax 应用程序  
   
-1.  安装 PeopleTrax 示例应用程序并生成此应用程序的发布版本。  
+1. 安装 PeopleTrax 示例应用程序并生成此应用程序的发布版本。  
   
-2.  打开命令提示符窗口，然后向本地路径环境变量添加分析工具目录。  
+2. 打开命令提示符窗口，然后向本地路径环境变量添加分析工具目录。  
   
-3.  将工作目录更改为包含 PeopleTrax 二进制文件的目录。  
+3. 将工作目录更改为包含 PeopleTrax 二进制文件的目录。  
   
-4.  键入以下命令设置相应的环境变量：  
+4. 键入以下命令设置相应的环境变量：  
   
     ```  
     VSPerfCLREnv /sampleon  
     ```  
   
-5.  通过运行 VSPerfCmd.exe 开始进行分析，此工具是控制探查器的命令行工具。 以下命令在采样模式下启动应用程序和探查器：  
+5. 通过运行 VSPerfCmd.exe 开始进行分析，此工具是控制探查器的命令行工具。 以下命令在采样模式下启动应用程序和探查器：  
   
     ```  
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe  
@@ -73,13 +73,13 @@ ms.locfileid: "54783529"
   
      探查器进程启动，并附加到 PeopleTrax.exe 进程。 探查器进程开始将收集的分析数据写入报表文件。  
   
-6.  单击“获取人员”。  
+6. 单击“获取人员”。  
   
-7.  单击“导出数据”。  
+7. 单击“导出数据”。  
   
      记事本随即打开并显示其中包含从“PeopleTrax”导出的数据的新文件。  
   
-8.  关闭记事本，然后关闭 **PeopleTrax** 应用程序。  
+8. 关闭记事本，然后关闭 **PeopleTrax** 应用程序。  
   
 9. 关闭探查器。 键入以下命令：  
   
@@ -95,11 +95,11 @@ ms.locfileid: "54783529"
   
 11. 分析数据存储在 .vsp 文件中。使用以下任一种方法分析结果：  
   
-    -   在 Visual Studio IDE 中打开 .vsp 文件。  
+    - 在 Visual Studio IDE 中打开 .vsp 文件。  
   
          — 或 —  
   
-    -   通过使用命令行工具 VSPerfReport.exe 生成逗号分隔值 (.csv) 文件。 若要生成在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]IDE 外部使用的报表，请使用以下命令：  
+    - 通过使用命令行工具 VSPerfReport.exe 生成逗号分隔值 (.csv) 文件。 若要生成在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]IDE 外部使用的报表，请使用以下命令：  
   
         ```  
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  

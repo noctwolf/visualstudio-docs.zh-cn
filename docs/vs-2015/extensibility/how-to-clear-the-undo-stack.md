@@ -10,12 +10,12 @@ ms.assetid: 2200d2d4-7f58-401c-87fc-ddd32d368193
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e45ec665b75be99781495bc5f2407c30c5f7e12a
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089154"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>如何：清除撤消堆栈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59000179"
   
 ### <a name="to-clear-the-undo-stack"></a>若要清除撤消堆栈  
   
-1.  若要清除撤消堆栈使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 以下是此示例：  
+1. 若要清除撤消堆栈使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 以下是此示例：  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

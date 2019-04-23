@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070831"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,8 @@ ms.locfileid: "58934233"
   
 ## <a name="debug-attribute"></a>debug 特性  
  示例:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>hostspecific 特性  
  示例:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  更通常的做法是，指定另一个预处理过的模板作为基类。 基模板提供通用文本块，它们可与来自派生模板的文本交错在一起。 可以使用类功能块 `<#+ ... #>` 来定义包含文本段落的方法。 例如，可以在基模板中放置输出文本的框架，从而提供可在派生模板中重写的虚拟方法。  
   
  运行时（预处理过的）文本模板 BaseTemplate.tt：  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  运行时（预处理过的）文本模板 DerivedTemplate1.tt：  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  用于调用 DerivedTemplate1 的应用程序代码：  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  结果输出：  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

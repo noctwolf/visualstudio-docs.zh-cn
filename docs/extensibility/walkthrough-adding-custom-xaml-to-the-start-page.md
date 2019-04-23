@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072171"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>演练：将自定义 XAML 添加到起始页
 
@@ -25,11 +25,11 @@ ms.locfileid: "57867321"
 
 ## <a name="add-custom-xaml"></a>添加自定义 XAML
 
-1.  按照中的说明创建起始页[创建自定义起始页](../extensibility/creating-a-custom-start-page.md)。
+1. 按照中的说明创建起始页[创建自定义起始页](../extensibility/creating-a-custom-start-page.md)。
 
-2.  在中*MainWindow.xaml*文件中，找到\<网格 > 部分。
+2. 在中*MainWindow.xaml*文件中，找到\<网格 > 部分。
 
-3.  添加\<TabControl > 元素和一个\<TabItem > 内\<网格 > 元素，如下面的示例中所示。
+3. 添加\<TabControl > 元素和一个\<TabItem > 内\<网格 > 元素，如下面的示例中所示。
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ ms.locfileid: "57867321"
     </Grid>
     ```
 
-4.  添加另一个\<TabItem >，使用\<按钮 > 打开一个新项目的元素：
+4. 添加另一个\<TabItem >，使用\<按钮 > 打开一个新项目的元素：
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ ms.locfileid: "57867321"
 
 ## <a name="test-the-custom-start-page"></a>测试自定义起始页
 
-1.  按 F5 。
+1. 按 F5 。
 
      Visual Studio 的实验实例随即打开，并安装但未选择的自定义起始页。
 
-2.  在 Visual Studio 的实验实例中，打开**工具/选项 / 环境**页。
+2. 在 Visual Studio 的实验实例中，打开**工具/选项 / 环境**页。
 
-3.  选择**启动**。 上**自定义起始页**列表中，选择你 *.xaml*文件，然后单击**确定**。
+3. 选择**启动**。 上**自定义起始页**列表中，选择你 *.xaml*文件，然后单击**确定**。
 
-4.  在“视图”  菜单上，单击“起始页” 。
+4. 在“视图”  菜单上，单击“起始页” 。
 
-5.  单击**必应**选项卡。
+5. 单击**必应**选项卡。
 
      应看到的必应 web 页面。
 
-6.  单击**MyButton**选项卡。
+6. 单击**MyButton**选项卡。
 
      应会看到**MyProject**按钮以打开**新项目**对话框。
 
-7.  关闭实验实例。
+7. 关闭实验实例。
 
 若要将自定义起始页上，应用中**工具** > **选项** > **环境**，选择**启动**。 上**自定义起始页**列表中，选择你 *.xaml*文件，然后单击**确定**。
 

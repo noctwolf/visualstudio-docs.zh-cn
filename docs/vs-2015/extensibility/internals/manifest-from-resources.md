@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112827"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ ms.locfileid: "58937246"
   
  **示例**  
   
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>说明  
   
--   该工具仅支持.png 和.xaml 文件。 将忽略任何其他图像或文件类型。 分析资源时遇到的所有不受支持类型生成一个警告。 如果不支持该工具完成时找到图像分析的资源，就会生成错误  
+- 该工具仅支持.png 和.xaml 文件。 将忽略任何其他图像或文件类型。 分析资源时遇到的所有不受支持类型生成一个警告。 如果不支持该工具完成时找到图像分析的资源，就会生成错误  
   
--   通过遵循的建议的格式为.png 图像，该工具将设置.png 的大小/维度值为格式指定大小，即使它不同于映像的实际大小。  
+- 通过遵循的建议的格式为.png 图像，该工具将设置.png 的大小/维度值为格式指定大小，即使它不同于映像的实际大小。  
   
--   宽度/高度格式可以省略对于.png 图像，但该工具将读取图像的实际宽度/高度，并将其用于图像的大小/维度值。  
+- 宽度/高度格式可以省略对于.png 图像，但该工具将读取图像的实际宽度/高度，并将其用于图像的大小/维度值。  
   
--   多次为同一个.imagemanifest 相同的图像带上运行此工具将会导致重复的清单项，因为该工具会尝试拆分为独立图像的图像条，并将它们添加到现有的清单。  
+- 多次为同一个.imagemanifest 相同的图像带上运行此工具将会导致重复的清单项，因为该工具会尝试拆分为独立图像的图像条，并将它们添加到现有的清单。  
   
--   工具生成的清单仅应完成合并 （忽略 /newGuids 或 /newIds）。 已自定义或通过其他方式生成的清单可能不正确合并。  
+- 工具生成的清单仅应完成合并 （忽略 /newGuids 或 /newIds）。 已自定义或通过其他方式生成的清单可能不正确合并。  
   
--   为本机程序集生成的清单可能需要手动编辑生成以进行匹配的资源 Id 从本机程序集的.rc 文件的 ID 符号之后。  
+- 为本机程序集生成的清单可能需要手动编辑生成以进行匹配的资源 Id 从本机程序集的.rc 文件的 ID 符号之后。  
   
 ## <a name="sample-output"></a>示例输出  
  **简单的映像清单**  

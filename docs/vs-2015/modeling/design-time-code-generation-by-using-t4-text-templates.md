@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ff3be8231ede73649ed09569b18fd255882a5221
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065138"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ ms.locfileid: "58934238"
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中创建设计时 T4 模板  
   
-1.  创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目，或打开现有实验。  
+1. 创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目，或打开现有实验。  
   
      例如，在**文件**菜单中，选择**新建**，**项目**。  
   
-2.  将文本模板文件添加到你的项目，并为其提供具有扩展名的名称 **.tt**。  
+2. 将文本模板文件添加到你的项目，并为其提供具有扩展名的名称 **.tt**。  
   
      若要执行此操作，在**解决方案资源管理器**，在你的项目的快捷菜单，选择**添加**，**新项**。 在中**添加新项**对话框中，选择**文本模板**从中间窗格。  
   
      请注意，**自定义工具**文件的属性是**TextTemplatingFileGenerator**。  
   
-3.  打开该文件。 该文件中已包含下列指令：  
+3. 打开该文件。 该文件中已包含下列指令：  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -61,17 +61,17 @@ ms.locfileid: "58934238"
   
      如果已将模板添加到 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目，则语言特性将为“`VB`”。  
   
-4.  在文件末尾添加一些文本。 例如：  
+4. 在文件末尾添加一些文本。 例如：  
   
     ```  
     Hello, world!  
     ```  
   
-5.  保存该文件。  
+5. 保存该文件。  
   
      你可能会看到**安全警告**要求你确认你想要运行该模板的消息框。 单击 **“确定”**。  
   
-6.  在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。  
+6. 在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。  
   
     > [!NOTE]
     >  如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。  
@@ -150,9 +150,9 @@ ms.locfileid: "58934238"
   
 #### <a name="to-generate-program-code-or-resources"></a>生成程序代码或资源  
   
-1.  更改输出指令以生成相应类型（如 .cs、.vb、.resx 或 .xml）的文件。  
+1. 更改输出指令以生成相应类型（如 .cs、.vb、.resx 或 .xml）的文件。  
   
-2.  插入将生成所需解决方案代码的代码。 例如，如果要在一个类中生成三个整数字段声明，则插入以下代码：  
+2. 插入将生成所需解决方案代码的代码。 例如，如果要在一个类中生成三个整数字段声明，则插入以下代码：  
   
     ```csharp  
   
@@ -185,7 +185,7 @@ ms.locfileid: "58934238"
   
     ```  
   
-3.  保存该文件并检查生成的文件，生成的文件现在包含以下代码：  
+3. 保存该文件并检查生成的文件，生成的文件现在包含以下代码：  
   
     ```  
     class MyGeneratedClass {  
@@ -295,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  文本模板在它自己的应用域中运行，并通过封送访问服务。 在此情况下，GetCOMService() 比 GetService() 更可靠。  
   
-##  <a name="Regenerating"></a> 自动重新生成代码  
+## <a name="Regenerating"></a> 自动重新生成代码  
  通常，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的多个文件都使用一个输入模型生成。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。  
   
  如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，请选择**转换所有模板**上**生成**菜单。  
@@ -320,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> 将现有文件转换为模板  
+## <a name="Converting"></a> 将现有文件转换为模板  
  模板的一个非常有用的功能是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../includes/csprcs-md.md)]文件，然后逐步引入可更改所生成文件的生成代码。  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板  
   
-1.  对于你的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目，添加要生成的类型的文件，例如 `.cs`、`.vb` 或 `.resx` 文件。  
+1. 对于你的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目，添加要生成的类型的文件，例如 `.cs`、`.vb` 或 `.resx` 文件。  
   
-2.  测试新文件以确保其工作。  
+2. 测试新文件以确保其工作。  
   
-3.  在解决方案资源管理器，更改到的文件扩展名 **.tt**。  
+3. 在解决方案资源管理器，更改到的文件扩展名 **.tt**。  
   
-4.  验证的以下属性 **.tt**文件：  
+4. 验证的以下属性 **.tt**文件：  
   
     |||  
     |-|-|  
     |**自定义工具 =**|**TextTemplatingFileGenerator**|  
     |**生成操作 =**|**无**|  
   
-5.  在文件开头插入以下行：  
+5. 在文件开头插入以下行：  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -349,13 +349,13 @@ Warning("A warning message");
   
      将 `extension` 特性设置为要生成的文件类型的文件扩展名，例如 `.cs`、`.resx` 或 `.xml`。  
   
-6.  保存该文件。  
+6. 保存该文件。  
   
      将使用指定扩展名创建一个附属文件。 该文件对于相应文件类型具有正确的属性。 例如，**生成操作**的.cs 文件的属性将为**编译**。  
   
      验证生成的文件是否包含与原始文件相同的内容。  
   
-7.  确定要更改的文件部分。 例如，一个仅在特定条件下显示的部分、一个重复的部分或特定值会有所变化的部分。 插入生成代码。 保存该文件，然后验证附属文件是否正确生成。 重复此步骤。  
+7. 确定要更改的文件部分。 例如，一个仅在特定条件下显示的部分、一个重复的部分或特定值会有所变化的部分。 插入生成代码。 保存该文件，然后验证附属文件是否正确生成。 重复此步骤。  
   
 ## <a name="guidelines-for-code-generation"></a>代码生成的准则  
  请参阅[T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)。  

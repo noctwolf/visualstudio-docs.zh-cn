@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ced495580bd8ec16eec7e3f422e3ae1f1ccc3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050491"
 ---
 # <a name="detect-system-requirements"></a>检测系统要求
 VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft Windows 安装程序来管理你的 VSPackage 的安装时，您可以配置要检测是否安装了 Visual Studio 的安装程序。 此外可以配置它检查到系统的其他要求，例如，Windows 的特定版本或特定 RAM 量。
@@ -24,11 +24,11 @@ VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft
 ## <a name="detect-visual-studio-editions"></a>检测到 Visual Studio 版本
  若要确定是否安装了 Visual Studio 的版本，请确认的值**安装**注册表项是 *(REG_DWORD) 1*与下表中列出的相应文件夹中。 请注意，Visual Studio 版本的层次结构：
 
-1.  企业
+1. 企业
 
-2.  Professional
+2. Professional
 
-3.  社区
+3. 社区
 
 安装较新的版本时，该版本的注册表项还将添加与早期版本。 也就是说，如果安装的 Enterprise edition，则**安装**键设置为*1*企业，以及专业版和社区版本。 因此，您需要检查仅为所需的最新版本。
 

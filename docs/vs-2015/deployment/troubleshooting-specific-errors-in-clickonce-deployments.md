@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043191"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误的疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ ms.locfileid: "58933025"
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>错误消息指出，"无法检索应用程序。 在部署中缺少的文件"或"应用程序下载已中断、 检查网络错误中并稍后重试"  
  此消息表示所引用的一个或多个文件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]无法下载的清单。 若要调试此错误的最简单方法是尝试下载该 URL 的[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]说不能下载。 下面是一些可能的原因：  
   
--   如果日志文件说"(403) 禁止访问"或"(404) 找不到，"验证配置 Web 服务器，以便它不会阻止下载此文件。 有关详细信息，请参阅 [ClickOnce 部署中的服务器和客户端配置问题](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
+- 如果日志文件说"(403) 禁止访问"或"(404) 找不到，"验证配置 Web 服务器，以便它不会阻止下载此文件。 有关详细信息，请参阅 [ClickOnce 部署中的服务器和客户端配置问题](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
--   如果在服务器被阻止的.config 文件，请参阅"下载错误，当您尝试安装[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]具有.config 文件的应用程序"本主题中更高版本。  
+- 如果在服务器被阻止的.config 文件，请参阅"下载错误，当您尝试安装[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]具有.config 文件的应用程序"本主题中更高版本。  
   
--   确定是否发生这种情况`deploymentProvider`部署清单中的 URL 指向用于激活的 URL 不同的位置。  
+- 确定是否发生这种情况`deploymentProvider`部署清单中的 URL 指向用于激活的 URL 不同的位置。  
   
--   确保所有文件都均存在于服务器;[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]日志应告诉您找不到的文件。  
+- 确保所有文件都均存在于服务器;[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]日志应告诉您找不到的文件。  
   
--   查看是否存在网络连接问题;如果客户端计算机在下载期间脱机，会收到此消息。  
+- 查看是否存在网络连接问题;如果客户端计算机在下载期间脱机，会收到此消息。  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>当您尝试安装的 ClickOnce 应用程序.config 文件下载错误  
  默认情况下，Visual Basic Windows 基于应用程序包括一个 App.config 文件。 当用户尝试从使用 Windows Server 2003 的 Web 服务器安装，因为该操作系统会阻止出于安全原因的.config 文件的安装时将有问题。 若要启用要安装的.config 文件，请单击**使用".deploy"文件扩展名**中**发布选项**对话框。  
@@ -67,11 +67,11 @@ ms.locfileid: "58933025"
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>更新应用程序的服务器上，但客户端不会下载更新  
  通过完成以下任务之一，可能会解决此问题：  
   
--   检查`deploymentProvider`部署清单中的 URL。 确保要更新的同一位置中的位的`deploymentProvider`指向。  
+- 检查`deploymentProvider`部署清单中的 URL。 确保要更新的同一位置中的位的`deploymentProvider`指向。  
   
--   验证部署清单中的更新间隔。 如果在此间隔设置为定期间隔，如每六个小时，一次[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]将不会扫描更新之前已超过此间隔。 您可以更改要扫描每次启动应用程序的更新的清单。 更改的更新间隔是在开发期间一个方便的选项来验证正在安装更新，但会降低应用程序激活。  
+- 验证部署清单中的更新间隔。 如果在此间隔设置为定期间隔，如每六个小时，一次[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]将不会扫描更新之前已超过此间隔。 您可以更改要扫描每次启动应用程序的更新的清单。 更改的更新间隔是在开发期间一个方便的选项来验证正在安装更新，但会降低应用程序激活。  
   
--   请尝试重新启动该应用程序，在开始菜单上。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可能已在后台，检测到更新，但将提示你在下一次激活上安装 bits。  
+- 请尝试重新启动该应用程序，在开始菜单上。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可能已在后台，检测到更新，但将提示你在下一次激活上安装 bits。  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>在更新期间你收到的错误的以下日志条目："部署中的引用与应用程序清单中定义的标识不匹配"  
  因为您已手动编辑部署和应用程序清单，并导致一个清单，以变得不同步与其他程序集标识的说明，可能会发生此错误。 程序集标识由其名称、 版本、 区域性和公钥标记组成。 检查对清单中的标识描述并更正任何差异。  
@@ -84,9 +84,9 @@ ms.locfileid: "58933025"
   
  您应执行以下操作：  
   
--   验证所有唯一的部署清单的标识、 应用程序清单的标识和主应用程序 EXE 的标识。  
+- 验证所有唯一的部署清单的标识、 应用程序清单的标识和主应用程序 EXE 的标识。  
   
--   验证文件路径不超过 100 个字符。 如果你的应用程序包含文件路径太长，则可能会超过路径可以存储的最大限制。 请缩短路径并重新安装。  
+- 验证文件路径不超过 100 个字符。 如果你的应用程序包含文件路径太长，则可能会超过路径可以存储的最大限制。 请缩短路径并重新安装。  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>不遵循应用程序配置文件中的 PrivatePath 设置  
  若要使用 PrivatePath （合成探测路径），该应用程序必须请求完全信任权限。 请尝试更改应用程序清单来请求完全信任，然后重试。  
@@ -115,9 +115,9 @@ ms.locfileid: "58933025"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>尝试登录时使用你的证书存储和接收到的空消息框中的证书  
  在中**签名**对话框中，您必须：  
   
--   选择**使用存储的证书签名**，和  
+- 选择**使用存储的证书签名**，和  
   
--   从列表; 选择一个证书第一个证书不是默认选择。  
+- 从列表; 选择一个证书第一个证书不是默认选择。  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>单击"不登录"按钮时导致异常  
  此问题是一个已知的 bug。 所有[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]清单都需要进行签名。 只需选择一个签名的选项，然后依次**确定**。  

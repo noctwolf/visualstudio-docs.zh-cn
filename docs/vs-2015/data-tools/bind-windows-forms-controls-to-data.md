@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935035"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668985"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>将 Windows 窗体控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以将数据源绑定到控件中通过将对象从拖**数据源**窗口拖到 Windows 窗体或拖动到窗体上现有控件上。 拖动项之前，您可以设置想要将绑定到控件的类型。 具体取决于您选择表本身，或单独的列显示不同的值。  此外可以设置自定义值。 对于表中，"详细信息"意味着，每个列绑定到一个单独的控件。  
   
  ![将数据源绑定到 DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "到 DataGridView raddata 绑定数据源")  

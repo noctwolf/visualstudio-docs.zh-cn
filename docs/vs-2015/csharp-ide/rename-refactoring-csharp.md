@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114725"
 ---
 # <a name="rename-refactoring-c"></a>重命名重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58934985"
   
 #### <a name="to-rename-an-identifier"></a>若要重命名标识符  
   
-1.  创建名为 `RenameIdentifier` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
+1. 创建名为 `RenameIdentifier` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58934985"
     }  
     ```  
   
-2.  将光标置于`MethodB`，在方法声明或方法调用。  
+2. 将光标置于`MethodB`，在方法声明或方法调用。  
   
-3.  从**重构**菜单中，选择**重命名**。 **重命名**对话框随即出现。  
+3. 从**重构**菜单中，选择**重命名**。 **重命名**对话框随即出现。  
   
      此外可以右键单击光标，指向**重构**上下文菜单，然后单击**重命名**以显示**重命名**对话框。  
   
-4.  在中**新的名称**字段中，键入`MethodC`。  
+4. 在中**新的名称**字段中，键入`MethodC`。  
   
-5.  选择**在注释中的搜索**复选框。  
+5. 选择**在注释中的搜索**复选框。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
-7.  在中**预览更改**对话框中，单击**应用**。  
+7. 在中**预览更改**对话框中，单击**应用**。  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>若要重命名标识符使用智能标记  
   
-1.  创建名为 `RenameIdentifier` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
+1. 创建名为 `RenameIdentifier` 的控制台应用程序，然后将 `Program` 替换为下面的示例代码。  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58934985"
     }  
     ```  
   
-2.  声明中`MethodB`中，键入或 backspace 方法标识符。 此标识符下将显示智能标记提示。  
+2. 声明中`MethodB`中，键入或 backspace 方法标识符。 此标识符下将显示智能标记提示。  
   
     > [!NOTE]
     >  仅可以调用重命名重构在标识符声明中使用智能标记。  
   
-3.  键入的键盘快捷方式 SHIFT + ALT + F10，，然后按向下箭头以显示智能标记菜单。  
+3. 键入的键盘快捷方式 SHIFT + ALT + F10，，然后按向下箭头以显示智能标记菜单。  
   
      或  
   
      将鼠标指针移动智能标记提示符，以显示智能标记。 然后将鼠标指针移至该智能标记，并单击向下箭头以显示智能标记菜单。  
   
-4.  选择**重命名\<identifer1 >' 到 '\<identifier2 >'** 菜单项调用重命名重构而无需更改代码的预览。 对所有引用 **\<identifer1 >** 将自动更新为 **\<identifier2 >**。  
+4. 选择**重命名\<identifer1 >' 到 '\<identifier2 >'** 菜单项调用重命名重构而无需更改代码的预览。 对所有引用 **\<identifer1 >** 将自动更新为 **\<identifier2 >**。  
   
      或  
   

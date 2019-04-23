@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616867"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661888"
 ---
 # <a name="legacy-language-service-essentials"></a>旧版语言服务基础知识
 必须提供要集成到 Visual Studio 编程语言的语言服务。 本主题介绍在旧版语言服务中提供的功能。
@@ -41,7 +41,6 @@ ms.locfileid: "56616867"
  许多这些功能需要语言服务以分析源代码。 您通常可以重复使用词汇切分和分析你的编译器或解释器的代码。
 
  以下功能与相关的编程语言的支持，但不语言服务的一部分：
-
 
 | 功能 | 描述 |
 |-----------------------| - |

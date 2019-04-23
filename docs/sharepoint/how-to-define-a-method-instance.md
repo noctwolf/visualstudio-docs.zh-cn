@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068491"
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定义方法实例
   在模型中，必须定义至少一个方法实例的每个方法。
@@ -29,15 +29,15 @@ ms.locfileid: "56608002"
 
 ### <a name="to-define-a-method-instance"></a>若要定义方法实例
 
-1.  在中**BDC 方法详细信息**窗口中，展开一种方法，该节点，然后展开**实例**节点。
+1. 在中**BDC 方法详细信息**窗口中，展开一种方法，该节点，然后展开**实例**节点。
 
-2.  在中**添加方法实例**列表中，选择**创建 Finder 实例**。
+2. 在中**添加方法实例**列表中，选择**创建 Finder 实例**。
 
      下面将显示一个新的方法实例**实例**节点。
 
-3.  在菜单栏上依次选择**视图** > **属性窗口**。
+3. 在菜单栏上依次选择**视图** > **属性窗口**。
 
-4.  在中**属性**窗口中，设置方法实例的属性。 有关每个属性的详细信息，请参阅[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。
+4. 在中**属性**窗口中，设置方法实例的属性。 有关每个属性的详细信息，请参阅[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。
 
 ## <a name="see-also"></a>请参阅
 - [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)

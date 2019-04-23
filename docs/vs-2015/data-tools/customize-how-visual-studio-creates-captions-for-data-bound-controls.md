@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079471"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ ms.locfileid: "59647946"
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>若要修改的智能标题行为的数据源窗口
 
-1.  通过单击打开命令窗口**启动**，然后**运行**。
+1. 通过单击打开命令窗口**启动**，然后**运行**。
 
-2.  类型`regedit`中**运行**对话框中，然后单击**确定**。
+2. 类型`regedit`中**运行**对话框中，然后单击**确定**。
 
-3.  展开**HKEY_CURRENT_USER**节点。
+3. 展开**HKEY_CURRENT_USER**节点。
 
-4.  展开**软件**节点。
+4. 展开**软件**节点。
 
-5.  展开**Microsoft**节点。
+5. 展开**Microsoft**节点。
 
-6.  展开**VisualStudio**节点。
+6. 展开**VisualStudio**节点。
 
-7.  右键单击**10.0**节点，并创建一个新**密钥**名为`Data Designers`。
+7. 右键单击**10.0**节点，并创建一个新**密钥**名为`Data Designers`。
 
-8.  右键单击**数据设计器**节点，并创建一个新**字符串值**名为`SmartCaptionExpression`。
+8. 右键单击**数据设计器**节点，并创建一个新**字符串值**名为`SmartCaptionExpression`。
 
 9. 右键单击**数据设计器**节点，并创建一个新**字符串值**名为`SmartCaptionReplacement`。
 
@@ -96,21 +96,21 @@ ms.locfileid: "59647946"
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>若要关闭智能隐藏式字幕功能
 
-1.  通过单击打开命令窗口**启动**，然后**运行**。
+1. 通过单击打开命令窗口**启动**，然后**运行**。
 
-2.  类型`regedit`中**运行**对话框中，然后单击**确定**。
+2. 类型`regedit`中**运行**对话框中，然后单击**确定**。
 
-3.  展开**HKEY_CURRENT_USER**节点。
+3. 展开**HKEY_CURRENT_USER**节点。
 
-4.  展开**软件**节点。
+4. 展开**软件**节点。
 
-5.  展开**Microsoft**节点。
+5. 展开**Microsoft**节点。
 
-6.  展开**VisualStudio**节点。
+6. 展开**VisualStudio**节点。
 
-7.  右键单击**10.0**节点，并创建一个新**密钥**名为`Data Designers`。
+7. 右键单击**10.0**节点，并创建一个新**密钥**名为`Data Designers`。
 
-8.  右键单击**数据设计器**节点，并创建一个新**字符串值**名为`SmartCaptionExpression`。
+8. 右键单击**数据设计器**节点，并创建一个新**字符串值**名为`SmartCaptionExpression`。
 
 9. 右键单击**数据设计器**节点，并创建一个新**字符串值**名为`SmartCaptionReplacement`。
 

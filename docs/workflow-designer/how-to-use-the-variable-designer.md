@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051464"
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
 
@@ -25,13 +25,13 @@ ms.locfileid: "55944580"
 
 ## <a name="to-create-a-new-variable"></a>创建新变量
 
-1.  在 Visual Studio 中打开工作流或活动解决方案。
+1. 在 Visual Studio 中打开工作流或活动解决方案。
 
-2.  在设计画布上，选择工作流中的一个活动。
+2. 在设计画布上，选择工作流中的一个活动。
 
-3.  通过单击打开变量设计器**变量**设计画布左下角的按钮。 此时将显示变量设计器。
+3. 通过单击打开变量设计器**变量**设计画布左下角的按钮。 此时将显示变量设计器。
 
-4.  单击标记为空的行**变量创建**。 这会将新行添加使用新的变量使用以下默认值： 为 variablex**名称**其中 x 是一个整数，其初始值为 1 的自动递增，从而创建唯一变量名**字符串**有关**变量类型**，和**序列**有关**作用域**。 为添加任何值**默认**。 可以在工作流设计过程中随时更改这些值。
+4. 单击标记为空的行**变量创建**。 这会将新行添加使用新的变量使用以下默认值： 为 variablex**名称**其中 x 是一个整数，其初始值为 1 的自动递增，从而创建唯一变量名**字符串**有关**变量类型**，和**序列**有关**作用域**。 为添加任何值**默认**。 可以在工作流设计过程中随时更改这些值。
 
     > [!NOTE]
     > 若要删除变量，通过单击选择该变量，然后按**删除**密钥。
@@ -40,4 +40,4 @@ ms.locfileid: "55944580"
 
 - [使用工作流设计器](developing-applications-with-the-workflow-designer.md)
 - [变量和参数](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
-- [如何：使用自变量设计器](../workflow-designer/how-to-use-the-argument-designer.md)
+- [如何：使用参数设计器](../workflow-designer/how-to-use-the-argument-designer.md)

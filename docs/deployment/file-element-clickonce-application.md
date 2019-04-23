@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4152482f404596e1d97a94a12890b4c5b298794
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9345f3f094e1c48204892cd40cca71a7e28eba7c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604218"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657203"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;文件&gt;元素 （ClickOnce 应用程序）
 标识下载和应用程序使用的所有非程序集文件。
@@ -86,7 +86,7 @@ ms.locfileid: "56604218"
 ## <a name="elements-and-attributes"></a>元素和属性
  `file` 元素是可选的。 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`name`|必需。 标识文件的名称。|
 |`size`|必需。 指定大小，以字节为单位的文件。|
@@ -97,7 +97,7 @@ ms.locfileid: "56604218"
 ## <a name="typelib"></a>typelib
  `typelib`元素是可选元素的子文件。 元素描述为 COM 组件所属的类型库。 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`tlbid`|必需。 分配给类型库的 GUID。|
 |`version`|必需。 类型库的版本号。|
@@ -108,7 +108,7 @@ ms.locfileid: "56604218"
 ## <a name="comclass"></a>comClass
  `comClass`元素是可选的子`file`，但如果元素是必需[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`clsid`|必需。 以 GUID 形式表示的 COM 组件的类 ID。|
 |`description`|可选。 类名。|
@@ -124,7 +124,7 @@ ms.locfileid: "56604218"
 ## <a name="cominterfaceexternalproxystub"></a>comInterfaceExternalProxyStub
  `comInterfaceExternalProxyStub`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 该元素包含以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`iid`|必需。 接口 ID (IID) 由该代理服务器提供服务。 IID 必须具有与之相关的大括号。|
 |`baseInterface`|可选。 从其引用的接口的接口的 IID`iid`派生。|
@@ -136,7 +136,7 @@ ms.locfileid: "56604218"
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
  `comInterfaceProxyStub`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 该元素包含以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`iid`|必需。 接口 ID (IID) 由该代理服务器提供服务。 IID 必须具有与之相关的大括号。|
 |`baseInterface`|可选。 从其引用的接口的接口的 IID`iid`派生。|
@@ -149,7 +149,7 @@ ms.locfileid: "56604218"
 ## <a name="windowclass"></a>windowClass
  `windowClass`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 元素是指由 COM 组件，必须具有应用于它的版本定义的窗口类。 该元素包含以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`versioned`|可选。 控件的内部窗口类注册中使用的名称是否包含含有窗口类的程序集的版本。 此属性的值可以是`yes`或`no`。 默认值为 `yes`。 值`no`仅应在同一个窗口类由某个端组件和等效的非并行组件定义，并且你想要将它们视为相同的窗口类。 请注意，窗口类注册的常用规则用于 — 仅注册窗口类的第一个组件将能够注册它，因为它不具有应用于它的版本。|
 
@@ -166,16 +166,14 @@ ms.locfileid: "56604218"
 ## <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 `dsig:Transform` 元素具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  `dsig:DigestMethod`元素是必需的子`hash`元素。 `dsig:DigestMethod` 元素具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

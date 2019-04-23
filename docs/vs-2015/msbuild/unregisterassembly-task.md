@@ -19,23 +19,22 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 497a767a1cd67c08e82a743d0665a152c5dd7062
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2ef7ef7f4ec930b8aa338a8be33c4009b3009b20
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54833714"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666129"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 注销用于 COM 互操作的指定程序集。 执行 [RegisterAssembly 任务](../msbuild/registerassembly-task.md)的相反任务。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `UnregisterAssembly` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Assemblies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要注销的程序集。|  
 |`AssemblyListFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 包含有关 `RegisterAssembly` 任务和 `UnregisterAssembly` 任务之间状态的信息。 这样可以防止任务尝试注销无法在 `RegisterAssembly` 任务中注册的程序集。<br /><br /> 如果已指定此参数，则 `Assemblies` 和 `TypeLibFiles` 参数将被忽略。|  

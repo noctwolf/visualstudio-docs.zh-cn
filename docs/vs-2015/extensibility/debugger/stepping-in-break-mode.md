@@ -12,12 +12,12 @@ ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e185727343cc7b6be144583c22f78b607af2eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 482d7131692c1e22483c80f4b4bb22e07a6caf1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065917"
 ---
 # <a name="stepping-in-break-mode"></a>步入中断模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "58937730"
   
 ## <a name="stepping-process"></a>单步执行过程  
   
-1.  调用[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)与[STEPKIND](../../extensibility/debugger/reference/stepkind.md)并[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)自变量执行的步骤。  
+1. 调用[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)与[STEPKIND](../../extensibility/debugger/reference/stepkind.md)并[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)自变量执行的步骤。  
   
-2.  完成步骤后，发送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)为停止事件。  
+2. 完成步骤后，发送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)为停止事件。  
   
 ## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

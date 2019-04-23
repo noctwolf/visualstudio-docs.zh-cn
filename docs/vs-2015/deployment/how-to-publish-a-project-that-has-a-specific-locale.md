@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f090fef8fd4a146cf036ebbb5f8d06b120afb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092911"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：发布具有特定区域设置的项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "58926147"
   
 ### <a name="to-create-the-publishing-macro"></a>创建发布宏  
   
-1.  若要打开 Macro 资源管理器，请在“工具”菜单上指向“宏”，然后单击“Macro 资源管理器”。  
+1. 若要打开 Macro 资源管理器，请在“工具”菜单上指向“宏”，然后单击“Macro 资源管理器”。  
   
-2.  创建一个新的宏模块。 在 Macro 资源管理器中选择“MyMacros”。 在“工具”菜单上指向“宏”，然后单击“新建宏模块”。 将该模块命名为 PublishSpecificCulture。  
+2. 创建一个新的宏模块。 在 Macro 资源管理器中选择“MyMacros”。 在“工具”菜单上指向“宏”，然后单击“新建宏模块”。 将该模块命名为 PublishSpecificCulture。  
   
-3.  在 Macro 资源管理器中展开“MyMacros”节点，然后通过双击“PublishAllProjects”模块打开该模块（或从“工具”菜单中指向“宏”，然后单击“宏 IDE”）。  
+3. 在 Macro 资源管理器中展开“MyMacros”节点，然后通过双击“PublishAllProjects”模块打开该模块（或从“工具”菜单中指向“宏”，然后单击“宏 IDE”）。  
   
-4.  在“宏 IDE”中，将以下代码添加到该模块中 `Import` 语句的后面：  
+4. 在“宏 IDE”中，将以下代码添加到该模块中 `Import` 语句的后面：  
   
     ```vb  
     Module PublishSpecificCulture  
@@ -138,31 +138,31 @@ ms.locfileid: "58926147"
     End Module  
     ```  
   
-5.  关闭“宏 IDE”。 焦点将返回到 Visual Studio。  
+5. 关闭“宏 IDE”。 焦点将返回到 Visual Studio。  
   
 ### <a name="to-publish-a-project-for-a-specific-locale"></a>发布针对特定区域设置的项目  
   
-1.  若要创建 Visual Basic Windows 应用程序项目，请在“文件”菜单上指向“新建”，然后单击“项目”。  
+1. 若要创建 Visual Basic Windows 应用程序项目，请在“文件”菜单上指向“新建”，然后单击“项目”。  
   
-2.  在“新建项目”对话框中，从“Visual Basic”节点选择“Windows 应用程序”。 将该项目命名为 PublishLocales。  
+2. 在“新建项目”对话框中，从“Visual Basic”节点选择“Windows 应用程序”。 将该项目命名为 PublishLocales。  
   
-3.  单击 Form1。 在“设计”下的“属性”窗口中，将“Language”属性从“(Default)”更改为“English”。 将窗体的“Text”属性更改为“MyForm”。  
+3. 单击 Form1。 在“设计”下的“属性”窗口中，将“Language”属性从“(Default)”更改为“English”。 将窗体的“Text”属性更改为“MyForm”。  
   
      请注意，只在需要时才会创建本地化的资源 DLL。 例如，在指定了新的区域设置后，如果更改窗体的文本或它的某个控件，便会创建本地化的资源 DLL。  
   
-4.  使用 Visual Studio IDE 发布 PublishLocales。  
+4. 使用 Visual Studio IDE 发布 PublishLocales。  
   
      在中**解决方案资源管理器**，选择 PublishLocales。 在“项目”菜单上选择“属性”。 在项目设计器上**发布**页上，指定的发布位置**http://localhost/PublishLocales**，然后单击**立即发布**。  
   
      当出现发布网页时，关闭它。 （对于此步骤，你只需发布该项目，而不必安装它。）  
   
-5.  通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看命令提示符窗口中，在**视图**菜单，依次指向**其他 Windows** ，然后单击**命令窗口**，或按 CTRL + ALT + A。 在命令提示符窗口中，键入`macros`; 自动补全将提供可用宏的列表。 选择以下宏并按 Enter：  
+5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看命令提示符窗口中，在**视图**菜单，依次指向**其他 Windows** ，然后单击**命令窗口**，或按 CTRL + ALT + A。 在命令提示符窗口中，键入`macros`; 自动补全将提供可用宏的列表。 选择以下宏并按 Enter：  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  当发布过程成功后，它将生成一则消息指出“PublishLocales\PublishLocales.vbproj 发布成功。 发布语言为‘en’”。在消息框中单击“确定”。 当发布网页出现时，单击“安装”。  
+6. 当发布过程成功后，它将生成一则消息指出“PublishLocales\PublishLocales.vbproj 发布成功。 发布语言为‘en’”。在消息框中单击“确定”。 当发布网页出现时，单击“安装”。  
   
-7.  查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了已本地化的资源 DLL 外，你还应该看到已安装的文件，例如，清单、setup.exe 和发布网页文件。 （默认情况下，ClickOnce 会为 EXE 和 DLL 追加 .deploy 扩展名；完成部署后，可以移除此扩展名。）  
+7. 查看 C:\Inetpub\wwwroot\PublishLocales\en。 除了已本地化的资源 DLL 外，你还应该看到已安装的文件，例如，清单、setup.exe 和发布网页文件。 （默认情况下，ClickOnce 会为 EXE 和 DLL 追加 .deploy 扩展名；完成部署后，可以移除此扩展名。）  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

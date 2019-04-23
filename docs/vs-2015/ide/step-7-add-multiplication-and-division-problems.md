@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a558372c69aaf5aeb76685cae3eae4f30a6b9737
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 47623d7a65de85b50ad1910425052288a261e49d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109577"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步骤 7：添加乘法和除法问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,29 +23,29 @@ ms.locfileid: "54795263"
   
 ### <a name="to-add-multiplication-and-division-problems"></a>添加乘法和除法问题  
   
-1.  再向窗体添加四个整型变量。  
+1. 再向窗体添加四个整型变量。  
   
      [!code-csharp[VbExpressTutorial3Step7#15](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#15)]
      [!code-vb[VbExpressTutorial3Step7#15](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#15)]  
   
-2.  与前面的操作一样，修改 `StartTheQuiz()` 方法，以便为乘法和除法题填入随机数。  
+2. 与前面的操作一样，修改 `StartTheQuiz()` 方法，以便为乘法和除法题填入随机数。  
   
      [!code-csharp[VbExpressTutorial3Step7#16](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#16)]
      [!code-vb[VbExpressTutorial3Step7#16](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#16)]  
   
-3.  修改 `CheckTheAnswer()` 方法，使之同样检查乘法和除法题。  
+3. 修改 `CheckTheAnswer()` 方法，使之同样检查乘法和除法题。  
   
      [!code-csharp[VbExpressTutorial3Step7#17](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#17)]
      [!code-vb[VbExpressTutorial3Step7#17](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#17)]  
   
      由于使用键盘无法方便地输入乘号 (×) 和除号 (÷)，因此 Visual C# 和 Visual Basic 接受用星号 (*) 代替乘号，用斜线 (/) 代替除号。  
   
-4.  更改计时器 Tick 事件处理程序的最后部分，使其在时间用完时填入正确答案。  
+4. 更改计时器 Tick 事件处理程序的最后部分，使其在时间用完时填入正确答案。  
   
      [!code-csharp[VbExpressTutorial3Step7#23](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step7/cs/form1.cs#23)]
      [!code-vb[VbExpressTutorial3Step7#23](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step7/vb/form1.vb#23)]  
   
-5.  保存并运行程序。  
+5. 保存并运行程序。  
   
      如下图所示，测验对象必须回答四个问题才能完成测验。  
   
@@ -54,6 +54,6 @@ ms.locfileid: "54795263"
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   
--   若要转到下一个教程，请参阅[步骤 8：自定义测验](../ide/step-8-customize-the-quiz.md)。  
+- 要转到下一个教程步骤，请参阅[步骤 8：自定义测验](../ide/step-8-customize-the-quiz.md)。  
   
--   若要返回上一个教程，请参阅[步骤 6：添加减法问题](../ide/step-6-add-a-subtraction-problem.md)。
+- 要返回上一个教程步骤，请参阅[步骤 6：添加减法问题](../ide/step-6-add-a-subtraction-problem.md)。

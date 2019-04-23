@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064838"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：选择要生成的文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 如果生成包含多个文件的项目，可以在项目文件中分别列出每个文件，也可以使用通配符将一个目录或一组嵌套目录中的所有文件都包括进去。  
   
 ## <a name="specifying-inputs"></a>指定输入  
@@ -33,7 +32,7 @@ ms.locfileid: "54798899"
   
 #### <a name="to-declare-items-individually"></a>逐个声明各个项  
   
--   使用 `Include` 属性，如下所示：  
+- 使用 `Include` 属性，如下所示：  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -46,7 +45,7 @@ ms.locfileid: "54798899"
   
 #### <a name="to-declare-multiple-items"></a>声明多个项  
   
--   使用 `Include` 属性，如下所示：  
+- 使用 `Include` 属性，如下所示：  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -67,19 +66,19 @@ ms.locfileid: "54798899"
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>包括 Images 目录和子目录中的所有 .jpg 文件  
   
--   使用下面的 `Include` 属性：  
+- 使用下面的 `Include` 属性：  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>包括所有以“img”开头的 .jpg 文件  
   
--   使用下面的 `Include` 属性：  
+- 使用下面的 `Include` 属性：  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包括名称以“jpgs”结尾的目录中的所有文件  
   
--   使用以下 `Include` 属性之一：  
+- 使用以下 `Include` 属性之一：  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -92,7 +91,7 @@ ms.locfileid: "54798899"
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 文件作为输入  
   
--   使用 `Include` 属性，如下所示：  
+- 使用 `Include` 属性，如下所示：  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   

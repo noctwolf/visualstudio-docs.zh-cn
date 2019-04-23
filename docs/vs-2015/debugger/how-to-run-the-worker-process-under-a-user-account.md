@@ -20,12 +20,12 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da7f0374c8185ef091b89dde99f3c6e053458480
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58931736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105911"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行工作进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,30 @@ ms.locfileid: "58931736"
   
 #### <a name="to-run-aspnetwpexe-under-a-user-account"></a>以用户帐户运行 aspnet_wp.exe  
   
-1.  打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
+1. 打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
   
-2.  找到 &lt;processModel&gt; 节，将用户和密码属性更改为希望用于运行 aspnet_wp.exe 的用户帐户的名称和密码。  
+2. 找到 &lt;processModel&gt; 节，将用户和密码属性更改为希望用于运行 aspnet_wp.exe 的用户帐户的名称和密码。  
   
-3.  保存 machine.config 文件。  
+3. 保存 machine.config 文件。  
   
-4.  在 [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)]上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：  
+4. 在 [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)]上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：  
   
-    1.  单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。  
+    1. 单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。  
   
-    2.  在 **“Internet 信息服务”** 对话框中，右击 **“网站”** 文件夹并选择 **“属性”**。  
+    2. 在 **“Internet 信息服务”** 对话框中，右击 **“网站”** 文件夹并选择 **“属性”**。  
   
-    3.  在 **“网站属性”** 对话框中选择 **“服务”**。  
+    3. 在 **“网站属性”** 对话框中选择 **“服务”**。  
   
-    4.  选择 **“以 IIS6.0 隔离模式运行 WWW 服务”**。  
+    4. 选择 **“以 IIS6.0 隔离模式运行 WWW 服务”**。  
   
-    5.  关闭 **“属性”** 对话框和 **“Internet 服务管理器”**。  
+    5. 关闭 **“属性”** 对话框和 **“Internet 服务管理器”**。  
   
-5.  打开 Windows 命令提示窗口，通过运行下面的命令重置服务器：  
+5. 打开 Windows 命令提示窗口，通过运行下面的命令重置服务器：  
   
     ```  
     iisreset  
     ```  
+
     — 或 —  
   
     ```  
@@ -66,11 +67,11 @@ ms.locfileid: "58931736"
     net start w3svc  
     ```  
   
-6.  找到 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，它应位于 CONFIG 文件夹所在的路径中。 右键单击 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，然后选择快捷菜单上的“属性”  。  
+6. 找到 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，它应位于 CONFIG 文件夹所在的路径中。 右键单击 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，然后选择快捷菜单上的“属性”  。  
   
-7.  在 **“临时 ASP.NET 文件属性”** 对话框中单击 **“安全性”** 选项卡。  
+7. 在 **“临时 ASP.NET 文件属性”** 对话框中单击 **“安全性”** 选项卡。  
   
-8.  单击 **“高级”**。  
+8. 单击 **“高级”**。  
   
 9. 在 **“临时 ASP.Net 文件的高级安全设置”** 对话框中单击 **“添加”**。  
   

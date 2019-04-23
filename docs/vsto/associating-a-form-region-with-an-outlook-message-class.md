@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063538"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 消息类相关联
   您可以指定哪些 Microsoft Office Outlook 项显示的窗体区域，通过将窗体区域与每个项的消息类相关联。 例如，如果你想要将窗体区域附加到邮件项的底部，则可以将窗体区域与`IPM.Note`message 类。
@@ -50,9 +50,9 @@ ms.locfileid: "56625525"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 消息类相关联
  有两种方法来将窗体区域的邮件类与相关联：
 
--   使用**新建 Outlook 窗体区域**向导。
+- 使用**新建 Outlook 窗体区域**向导。
 
--   应用类属性。
+- 应用类属性。
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>使用新建 Outlook 窗体区域向导
  在最后一页**新建 Outlook 窗体区域**向导，您可以选择标准的 message 类并键入你想要将与窗体区域关联的自定义 message 类的名称。

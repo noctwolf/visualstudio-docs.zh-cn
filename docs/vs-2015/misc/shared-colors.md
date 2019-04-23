@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: 124c175aa75e7a75b137254afdff24539164cdfd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117171"
 ---
 # <a name="shared-colors"></a>共享颜色
 在此处插入介绍。  
@@ -24,40 +24,40 @@ ms.locfileid: "59000760"
   
  请确保正确使用标记名称：  
   
--   **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的功能不同，如果与组合框关联的颜色更改，则它可能不再是适合于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。  
+- **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的功能不同，如果与组合框关联的颜色更改，则它可能不再是适合于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。  
   
--   **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联文本颜色，请勿将该背景色用于期望在其上显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。  
+- **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联文本颜色，请勿将该背景色用于期望在其上显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。  
   
--   **使用适合于其位置的控件颜色。** 在特定状态下，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。  
+- **使用适合于其位置的控件颜色。** 在特定状态下，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。  
   
 > [!IMPORTANT]
 >  请勿使用在“起始页”或“Cider”类别中找到的标记！  
   
 ### <a name="command-structures"></a>命令结构  
   
-####  <a name="BKMK_CommandMenus"></a> 菜单  
+#### <a name="BKMK_CommandMenus"></a> 菜单  
  菜单在 Visual Studio 2013 中可以出现在多个位置处：主菜单栏、嵌入在文档或工具窗口中或是在整个 IDE 的各个位置右键单击时。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。  
   
  ![菜单红线](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303年 000_MenuRedline")  
   
- 使用...  
- -   每当需要创建自定义菜单时。  
+使用...  
+- 每当需要创建自定义菜单时。  
   
 - 如果具有要与 Visual Studio 菜单匹配的新 UI 组件时。  
   
-  请勿使用...  
-  单独的背景色。 始终使用指定的背景/前景组合。  
+请勿使用...  
+单独的背景色。 始终使用指定的背景/前景组合。  
   
 ##### <a name="menu-title"></a>菜单标题  
  菜单标题由背景、边框和标题文本以及可选的标志符号（通常是在菜单位于命令栏中使用）组成。  
   
  ![菜单标题红线](../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303年 001_MenuTitleRedline")  
   
- 使用...  
- 每当创建自定义菜单标题时。  
+使用...  
+每当创建自定义菜单标题时。  
   
- 请勿使用...  
- -   对于并非希望始终与菜单标题匹配的任何内容。  
+请勿使用...  
+- 对于并非希望始终与菜单标题匹配的任何内容。  
   
 - 在指定组合之外的任何背景/前景组合中。  
   
@@ -105,9 +105,9 @@ ms.locfileid: "59000760"
  使用...  
  对于从菜单栏或命令栏启动的任何下拉列表。  
   
- 请勿使用...  
- -   对于在另一个上下文中出现的任何下拉列表。  
-  
+请勿使用...  
+- 对于在另一个上下文中出现的任何下拉列表。  
+
 - 在指定组合之外的任何背景/前景组合中。  
   
   **默认**  
@@ -159,10 +159,10 @@ ms.locfileid: "59000760"
  使用...  
  在需要嵌入式命令栏，但无法使用标准 Visual Studio 命令栏实现的位置处。  
   
- 请勿使用...  
- -   对于与命令栏不相似的 UI 元素。  
-  
--   对于指定了其标记名称的命令栏组件之外的命令栏组件。  
+请勿使用...  
+- 对于与命令栏不相似的 UI 元素。  
+
+- 对于指定了其标记名称的命令栏组件之外的命令栏组件。  
   
 ##### <a name="command-bar-group"></a>命令栏组  
  命令栏组由一组相关命令栏控件组成，可能包含任何数量的按钮、拆分按钮、下拉菜单、组合框或菜单。 这些控件的颜色通过单独的标记名称进行控制，在本指南中的其他位置单独进行了讨论。 分隔线用于将命令栏组划分为相关子组。  
@@ -172,9 +172,9 @@ ms.locfileid: "59000760"
  使用...  
  在需要嵌入式命令栏，但无法使用标准 Visual Studio 命令栏实现的位置处。  
   
- 请勿使用...  
- -   对于与命令栏不相似的 UI 元素。  
-  
+请勿使用...  
+- 对于与命令栏不相似的 UI 元素。  
+
 - 对于指定了其标记名称的命令栏组件之外的命令栏组件。  
   
   **默认值** （无任何其他状态）  
@@ -194,9 +194,9 @@ ms.locfileid: "59000760"
  使用...  
  对于将放置在命令栏上的任何按钮。  
   
- 请勿使用...  
- -   对于具有自己的标记名称的控件。  
-  
+请勿使用...  
+- 对于具有自己的标记名称的控件。  
+
 - 在指定组合之外的任何背景/前景组合中。  
   
   **默认**  
@@ -205,7 +205,7 @@ ms.locfileid: "59000760"
 |---------------|-------------|--------------------------------|  
 |![命令图标默认值](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")<br /><br /> **默认**|背景|不适用（从命令栏背景继承）|  
 |![命令图标默认值](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")<br /><br /> **默认**|前景（文本）|`Environment.CommandBarTextActive`|  
-|![命令图标默认值](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")<br /><br /> **默认**|Border|不可用|  
+|![命令图标默认值](../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")<br /><br /> **默认**|Border|不适用|  
 |![命令图标默认选定](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")<br /><br /> **选择**|背景|`Environment.CommandBarSelected`|  
 |![命令图标默认选定](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")<br /><br /> **选择**|前景（文本）|`Environment.CommandBarTextSelected`|  
 |![命令图标默认选定](../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")<br /><br /> **选择**|Border|`Environment.CommandBarSelectedBorder`|  
@@ -235,23 +235,23 @@ ms.locfileid: "59000760"
 |---------------|-------------|--------------------------------|  
 |![禁用命令图标](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")<br /><br /> **已禁用的命令图标**|背景|不适用（从命令栏背景继承）|  
 |![禁用命令图标](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")<br /><br /> **已禁用的命令图标**|前景（文本）|`Environment.CommandBarTextInactive`|  
-|![禁用命令图标](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")<br /><br /> **已禁用的命令图标**|Border|不可用|  
+|![禁用命令图标](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")<br /><br /> **已禁用的命令图标**|Border|不适用|  
   
-#####  <a name="BKMK_CommandComboBox"></a> 组合框  
+##### <a name="BKMK_CommandComboBox"></a> 组合框  
   
 > [!IMPORTANT]
 >  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下的颜色标记。  
   
  ![Combo box redline](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
- 使用...  
- -   当构建自定义组合框时。  
-  
+使用...  
+- 当构建自定义组合框时。  
+
 - 当创建类似于组合框的命令栏控件时。  
-  
-  请勿使用...  
-  -   对于并非希望始终与命令栏 UI 匹配的任何内容。  
-  
+
+请勿使用...  
+- 对于并非希望始终与命令栏 UI 匹配的任何内容。  
+
 - 当你可以访问设置了样式的组合框时。  
   
   **默认**  
@@ -315,7 +315,7 @@ ms.locfileid: "59000760"
 |![组合框&#47;删除&#45;向下按钮禁用](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303年 040_ComboBoxDropdownButtonDisabled")<br /><br /> **下拉按钮**|背景|None|  
 |![组合框&#47;删除&#45;向下按钮禁用](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303年 040_ComboBoxDropdownButtonDisabled")<br /><br /> **下拉按钮**|前景（标志符号）|`Environment.ComboBoxDisabledGlyph`|  
   
-#####  <a name="BKMK_CommandDropDown"></a> 下拉列表  
+##### <a name="BKMK_CommandDropDown"></a> 下拉列表  
   
 > [!IMPORTANT]
 >  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下的颜色标记。  
@@ -325,9 +325,9 @@ ms.locfileid: "59000760"
  使用...  
  当创建自定义下拉列表控件时。  
   
- 请勿使用...  
- -   对于不类似于下拉列表的任何内容。  
-  
+请勿使用...  
+- 对于不类似于下拉列表的任何内容。  
+
 - 对于组合框或拆分按钮。  
   
   **默认**  
@@ -378,7 +378,7 @@ ms.locfileid: "59000760"
 |![删除&#45;下选择字段已禁用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")|前景（文本）|`Environment.DropDownDisabledText`|  
 |![删除&#45;下选择字段已禁用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")|Border|`Environment.DropDownDisabledBorder`|  
 |![删除&#45;下选择字段已禁用](../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")|Separator|无分隔符|  
-|![删除&#45;向下按钮禁用](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")|背景|不可用|  
+|![删除&#45;向下按钮禁用](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")|背景|不适用|  
 |![删除&#45;向下按钮禁用](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")|前景（标志符号）|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>“拆分”按钮  
@@ -389,9 +389,9 @@ ms.locfileid: "59000760"
  使用...  
  当构建自定义拆分按钮时。  
   
- 请勿使用...  
- -   对于其他类型的按钮。  
-  
+请勿使用...  
+- 对于其他类型的按钮。  
+
 - 在指定组合之外的任何背景/前景组合中。  
   
   **默认**  
@@ -401,8 +401,8 @@ ms.locfileid: "59000760"
 |![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|背景|None|  
 |![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|前景（文本）|`Environment.CommandBarTextActive`|  
 |![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|前景（标志符号）|`Environment.CommandBarSplitButtonGlyph`|  
-|![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|Border|不可用|  
-|![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|Separator|不可用|  
+|![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|Border|不适用|  
+|![拆分按钮](../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")<br /><br /> **拆分按钮 （默认值）**|Separator|不适用|  
   
  **Hover**  
   
@@ -422,17 +422,17 @@ ms.locfileid: "59000760"
 |![拆分按钮按下](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")<br /><br /> **拆分按钮 （按下）**|前景（文本）|`Environment.CommandBarTextMouseDown`|  
 |![拆分按钮按下](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")<br /><br /> **拆分按钮 （按下）**|前景（标志符号）|`Environment.CommandBarSplitButtonMouseDownGlyph`|  
 |![拆分按钮按下](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")<br /><br /> **拆分按钮 （按下）**|Border|`Environment.CommandBarBorder`|  
-|![拆分按钮按下](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")<br /><br /> **拆分按钮 （按下）**|Separator|不可用|  
+|![拆分按钮按下](../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")<br /><br /> **拆分按钮 （按下）**|Separator|不适用|  
   
  已禁用  
   
 |组件|元素|令牌名称：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|背景|不可用|  
+|![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|背景|不适用|  
 |![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|前景（文本）|`Environment.ComboBoxItemTextInactive`|  
 |![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|前景（标志符号）|`Environment.CommandBarTextInactive`|  
-|![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|Border|不可用|  
-|![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|Separator|不可用|  
+|![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|Border|不适用|  
+|![拆分按钮禁用](../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")<br /><br /> **拆分按钮 （禁用）**|Separator|不适用|  
   
 ##### <a name="more-options-and-overflow-buttons"></a>“更多选项”和“溢出”按钮  
  通过添加或删除相关命令栏按钮来自定义命令栏组时，可使用“更多选项”按钮。 命令栏由于水平空间不足而被截断，以及在单击操作中显示包含无法显示的命令栏按钮的菜单时，会出现“溢出”按钮。 这两个按钮的颜色通过一组相同的标记名称进行控制。  
@@ -555,7 +555,7 @@ ms.locfileid: "59000760"
   当创建自定义文档选项卡时。  
   
   请勿使用...  
-  -   对于临时（预览）选项卡。  
+  - 对于临时（预览）选项卡。  
   
 - 对于不希望在 shell 具有主题更新时自动更改的任何 UI。  
   
@@ -603,9 +603,9 @@ ms.locfileid: "59000760"
  使用...  
  在其中创建临时预览，并且希望一些元素与当前预览选项卡颜色匹配的临时预览。  
   
- 请勿使用...  
- -   对于不是临时（预览）的任何种类的文档或选项卡。  
-  
+请勿使用...  
+- 对于不是临时（预览）的任何种类的文档或选项卡。  
+
 - 对于不希望在 shell 具有主题更新时自动更改的任何 UI。  
   
   **已选定的预览选项卡上：已设定焦点**  
@@ -647,12 +647,12 @@ ms.locfileid: "59000760"
   
  ![溢出红线](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")  
   
- 使用...  
- 当创建自定义文档溢出按钮时。  
-  
- 请勿使用...  
- -   对于不类似于溢出按钮的 UI。  
-  
+使用...  
+当创建自定义文档溢出按钮时。  
+
+请勿使用...  
+- 对于不类似于溢出按钮的 UI。  
+
 - 对于命令栏溢出按钮。  
   
   **默认**  
@@ -661,7 +661,7 @@ ms.locfileid: "59000760"
 |---------------|-------------|--------------------------------|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **文档溢出按钮**|背景|`Environment.DocWellOverflowButtonBackground`|  
 |![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **文档溢出按钮**|前景（标志符号）|`Environment.DocWellOverflowButtonGlyph`|  
-|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **文档溢出按钮**|Border|不可用|  
+|![Overflow](../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")<br /><br /> **文档溢出按钮**|Border|不适用|  
   
  **Hover**  
   
@@ -748,7 +748,7 @@ ms.locfileid: "59000760"
 |---------------|-------------|--------------------------------|  
 |![失去焦点的标题栏](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303年 094_TitleBarUnfocused")<br /><br /> **失去焦点的标题栏**|背景|`Environment.TitleBarInactiveGradientBegin`<br /><br /> 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。|  
 |![失去焦点的标题栏](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303年 094_TitleBarUnfocused")<br /><br /> **失去焦点的标题栏**|前景（文本）|`Environment.TitleBarInactiveText`|  
-|![失去焦点的标题栏](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303年 094_TitleBarUnfocused")<br /><br /> **失去焦点的标题栏**|Border|不可用|  
+|![失去焦点的标题栏](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303年 094_TitleBarUnfocused")<br /><br /> **失去焦点的标题栏**|Border|不适用|  
 |![失去焦点的标题栏](../extensibility/ux-guidelines/media/0303-094-titlebarunfocused.png "0303年 094_TitleBarUnfocused")<br /><br /> **失去焦点的标题栏**|拖动句柄|`Environment.TitleBarDragHandle`|  
   
 ##### <a name="title-bar-buttons"></a>标题栏按钮  
@@ -757,21 +757,21 @@ ms.locfileid: "59000760"
  使用...  
  对于在使用来自工具窗口标题栏的颜色标记的 UI 中出现的按钮。  
   
- 请勿使用...  
- -   对于在其他位置出现的按钮。  
-  
+请勿使用...  
+- 对于在其他位置出现的按钮。  
+
 - 在指定组合之外的任何背景/前景组合中。  
   
   **默认**  
   
 |组件|元素|令牌名称：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![标题栏按钮已设定焦点](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")<br /><br /> **已设定焦点**|背景|不可用|  
+|![标题栏按钮已设定焦点](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")<br /><br /> **已设定焦点**|背景|不适用|  
 |![标题栏按钮已设定焦点](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")<br /><br /> **已设定焦点**|前景（标志符号）|`Environment.ToolWindowButtonActiveGlyph`|  
-|![标题栏按钮已设定焦点](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")<br /><br /> **已设定焦点**|Border|不可用|  
-|![标题栏失去焦点的按钮](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")<br /><br /> **失去焦点**|背景|不可用|  
+|![标题栏按钮已设定焦点](../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")<br /><br /> **已设定焦点**|Border|不适用|  
+|![标题栏失去焦点的按钮](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")<br /><br /> **失去焦点**|背景|不适用|  
 |![标题栏失去焦点的按钮](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")<br /><br /> **失去焦点**|前景（标志符号）|`Environment.ToolWindowButtonInactiveGlyph`|  
-|![标题栏失去焦点的按钮](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")<br /><br /> **失去焦点**|Border|不可用|  
+|![标题栏失去焦点的按钮](../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")<br /><br /> **失去焦点**|Border|不适用|  
   
  **Hover**  
   
@@ -879,7 +879,7 @@ ms.locfileid: "59000760"
   当在设计自定义搜索框时。  
   
   请勿使用...  
-  -   对于不是搜索框的任何内容。  
+  - 对于不是搜索框的任何内容。  
   
 - 对于并非希望始终与搜索框 UI 匹配的任何内容。  
   
@@ -895,7 +895,7 @@ ms.locfileid: "59000760"
 |![已设定焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")<br /><br /> **操作按钮**|前景（搜索标志符号）|`SearchControl.SearchGlyph`|  
 |![已设定焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")<br /><br /> **操作按钮**|前景（停止标志符号）|`SearchControl.StopGlyph`|  
 |![已设定焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")<br /><br /> **操作按钮**|前景（清除标志符号）|`SearchControl.ClearGlyph`|  
-|![已设定焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")<br /><br /> **操作按钮**|Border|不可用|  
+|![已设定焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")<br /><br /> **操作按钮**|Border|不适用|  
 |![搜索下拉&#45;下已设定焦点的按钮](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")<br /><br /> **下拉按钮**|背景|`SearchControl.FocusedDropDownButton`|  
 |![搜索下拉&#45;下已设定焦点的按钮](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")<br /><br /> **下拉按钮**|前景（标志符号）|`SearchControl.FocusedDropDownButtonGlyph`|  
 |![搜索下拉&#45;下已设定焦点的按钮](../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")<br /><br /> **下拉按钮**|Border|`SearchControl.FocusedDropDownButtonBorder`|  
@@ -912,11 +912,11 @@ ms.locfileid: "59000760"
 |![失去焦点并处于非活动状态的搜索输入的字段](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303年 114 1_SearchInputFieldUnfocusedInactive")<br /><br /> **非活动的输入的字段**|前景（文本）|`SearchControl.Unfocused`|  
 |![失去焦点并处于非活动状态的搜索输入的字段](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303年 114 1_SearchInputFieldUnfocusedInactive")<br /><br /> **非活动的输入的字段**|Border|`SearchControl.UnfocusedBorder`|  
 |![失去焦点并处于非活动状态的搜索输入的字段](../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303年 114 1_SearchInputFieldUnfocusedInactive")<br /><br /> **非活动的输入的字段**|Separator|`SearchControl.DropDownSeparator`|  
-|![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|背景|不可用|  
+|![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|背景|不适用|  
 |![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|前景（搜索标志符号）|`SearchControl.SearchGlyph`|  
 |![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|前景（停止标志符号）|`SearchControl.StopGlyph`|  
 |![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|前景（清除标志符号）|`SearchControl.ClearGlyph`|  
-|![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|Border|不可用|  
+|![失去焦点的搜索操作按钮](../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")<br /><br /> **操作按钮**|Border|不适用|  
 |![搜索下拉&#45;向下按钮失去焦点](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")<br /><br /> **下拉按钮**|背景|`SearchControl.UnfocusedDropDownButton`|  
 |![搜索下拉&#45;向下按钮失去焦点](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")<br /><br /> **下拉按钮**|前景（标志符号）|`SearchControl.UnfocusedDropDownButtonGlyph`|  
 |![搜索下拉&#45;向下按钮失去焦点](../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")<br /><br /> **下拉按钮**|Border|`SearchControl.UnfocusedDropDownButtonBorder`|  
@@ -961,14 +961,14 @@ ms.locfileid: "59000760"
   
  ![搜索下拉&#45;向下红线](../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303年 124_SearchDropdownRedline")  
   
- 使用...  
- -   当创建自定义搜索下拉列表时。  
-  
+使用...  
+- 当创建自定义搜索下拉列表时。  
+
 - 正确列表组件的正确标记名称。  
-  
-  请勿使用...  
-  -   对于在其他上下文中出现的下拉列表。  
-  
+
+请勿使用...  
+- 对于在其他上下文中出现的下拉列表。  
+
 - 在指定组合之外的任何背景/前景组合中。  
   
   **默认 （无任何其他状态）**  
@@ -1117,7 +1117,7 @@ ms.locfileid: "59000760"
 |![滚动条箭头按下](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303年 146_ScrollbarArrowPressed")<br /><br /> **滚动箭头**|背景|`Environment.ScrollBarArrowPressedBackground`<br /><br /> 设置为与滚动条相同的颜色。|  
 |![滚动条箭头按下](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303年 146_ScrollbarArrowPressed")<br /><br /> **滚动箭头**|前景（标志符号）|`Environment.ScrollBarArrowGlyphPressed`|  
   
-####  <a name="BKMK_TreeView"></a> 树视图  
+#### <a name="BKMK_TreeView"></a> 树视图  
  多个工具窗口（包括解决方案资源管理器、服务器资源管理器和类视图）可实现其颜色由树视图类别中的颜色名称控制的分层组织方案。 树视图中的所有项都具有背景和文本颜色。 具有嵌套子元素的项还具有指示该项是展开还是折叠的标志符号。  
   
  ![树视图红线](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303年 147_TreeViewRedline")  
@@ -1125,9 +1125,9 @@ ms.locfileid: "59000760"
  使用...  
  需要在其中实现分层组织视图的任何位置。  
   
- 请勿使用...  
- -   对于不类似于树视图的任何内容。  
-  
+请勿使用...  
+- 对于不类似于树视图的任何内容。  
+
 - 在指定组合之外的任何背景/前景组合中。  
   
   **默认**  
@@ -1284,12 +1284,12 @@ ms.locfileid: "59000760"
 #### <a name="drop-boxcombo-box-controls"></a>下拉框/组合框控件  
  ![删除&#45;关闭&#47;组合框红线](../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")  
   
- 使用...  
- 对于属于文档井一部分的下拉框和组合框。  
-  
- 请勿使用...  
- -   对于不是下拉框或组合框的任何 UI。  
-  
+使用...  
+对于属于文档井一部分的下拉框和组合框。  
+
+请勿使用...  
+- 对于不是下拉框或组合框的任何 UI。  
+
 - 对于命令栏中的 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) 或 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) 。  
   
   **默认**  
@@ -1420,14 +1420,14 @@ ms.locfileid: "59000760"
   
  ![清单设计器红线](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")  
   
- 使用...  
- -   对于类似于清单设计器的设计器。  
-  
+使用...  
+- 对于类似于清单设计器的设计器。  
+
 - 在文档井中编辑器的顶部代替使用公共选项卡控件。  
-  
-  请勿使用...  
-  -   如果你有六个以上的选项卡。  
-  
+
+请勿使用...  
+- 如果你有六个以上的选项卡。  
+
 - 对于结构不类似于清单设计器中的任何 UI。  
   
 |状态|组件|元素|令牌名称：Category.color|  
@@ -1469,7 +1469,7 @@ ms.locfileid: "59000760"
   
 |组件|元素|令牌名称：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Tag &#40;glyph&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **默认值 （标记默认值）**|背景|不可用|  
+|![Tag &#40;glyph&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **默认值 （标记默认值）**|背景|不适用|  
 |![Tag &#40;glyph&#41;](../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")<br /><br /> **默认值 （标记默认值）**|前景（标志符号）|`Tag.TagHoverGlyph`|  
   
  **Hover**  
@@ -1492,7 +1492,7 @@ ms.locfileid: "59000760"
   
 |组件|元素|令牌名称：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![已选定标记](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303年 184_TagSelected")<br /><br /> **默认值 （已选定标记）**|背景|不可用|  
+|![已选定标记](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303年 184_TagSelected")<br /><br /> **默认值 （已选定标记）**|背景|不适用|  
 |![已选定标记](../extensibility/ux-guidelines/media/0303-184-tagselected.png "0303年 184_TagSelected")<br /><br /> **默认值 （已选定标记）**|前景（标志符号）|`Tag.TagSelectedGlyph`|  
   
  **标记选择/悬停标志符号**  
@@ -1521,10 +1521,10 @@ ms.locfileid: "59000760"
  使用...  
  对于要在其中与 Visual Studio 环境背景匹配的位置。  
   
- 请勿使用...  
- -   作为不是背景图面的位置的填充。  
-  
--   作为要在其上放置前景元素的背景。  
+请勿使用...  
+- 作为不是背景图面的位置的填充。  
+
+- 作为要在其上放置前景元素的背景。  
   
 |组件|元素|令牌名称：Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1542,9 +1542,9 @@ ms.locfileid: "59000760"
   
  ![命令架红线](../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303年 188_CommandShelfRedline")  
   
- 使用...  
- -   用于在其中放置菜单或工具栏的区域。  
-  
+使用...  
+- 用于在其中放置菜单或工具栏的区域。  
+
 - 具有正确的背景 / 前景标记名称组合。  
   
   请勿使用...  

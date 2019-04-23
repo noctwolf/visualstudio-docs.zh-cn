@@ -11,21 +11,21 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0a5b008df683694a20cce360fbd5e779e408d8
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f21bfadd540ce365c7f585a35991c27395558c6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58931743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058651"
 ---
 # <a name="security-of-text-templates"></a>文本模板的安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 文本模板具有以下安全问题：  
   
--   文本模板是任意代码插入到易受攻击。  
+- 文本模板是任意代码插入到易受攻击。  
   
--   如果主机用来查找指令处理器的机制不是安全的可以运行恶意的指令处理器。  
+- 如果主机用来查找指令处理器的机制不是安全的可以运行恶意的指令处理器。  
   
 ## <a name="arbitrary-code"></a>任意代码  
  在编写模板时，可以将之内的任何代码\<# # > 标记。 这允许在文本模板中执行任意代码。  

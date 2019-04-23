@@ -23,23 +23,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 075b3d9201cc17537d62bbe467cc8fa6d3558c35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9bc8b770e654442f14e693fda35d7cf6f5edbd12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54773096"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654824"
 ---
 # <a name="rc-task"></a>RC 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 Microsoft Windows 资源编译器工具 rc.exe。 RC 任务将游标、图标、位图、对话框和字体等资源编译为一个资源 (.res) 文件。 有关详细信息，请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“资源编译器”。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 RC 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|可选 **String []** 参数。<br /><br /> 将目录添加到在其中搜索包含文件的目录列表中。<br /><br /> 有关详细信息，请参阅 MSDN 网站上 [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730)（使用 RC（RC 命令行））中的 /I 选项。|  
 |**AdditionalOptions**|可选 **String** 参数。<br /><br /> 命令行 optionsor 的列表示例，“/option1 /option2 /option#”。 使用此参数可指定未由任何其他 RC 任务参数表示的命令行选项。<br /><br /> 有关详细信息，请参阅 MSDN 网站上 [Using RC (The RC Command Line)](http://go.microsoft.com/fwlink/?LinkId=155730)（使用 RC（RC 命令行））中的选项。|  

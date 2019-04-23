@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7443a4789008f3bb5992695761dff228bd32298
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6e3b66bfd7f3f5d0ef0f4893efeb81c80df5d4ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093509"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以编程方式在 Word 中设置搜索选项
   有两种方法可以在 Microsoft Office Word 文档中设置的选择的搜索选项：
@@ -38,7 +38,7 @@ ms.locfileid: "56601403"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>若要设置使用 Find 对象的搜索选项
 
-1.  设置的属性<xref:Microsoft.Office.Interop.Word.Find>对象的文本在选定内容向前搜索**找到我**。
+1. 设置的属性<xref:Microsoft.Office.Interop.Word.Find>对象的文本在选定内容向前搜索**找到我**。
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "56601403"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>若要设置搜索选项使用 Execute 方法自变量
 
-1.  将搜索条件作为参数传递<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法以在选定的文本内容向前搜索**找到我**。
+1. 将搜索条件作为参数传递<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法以在选定的文本内容向前搜索**找到我**。
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

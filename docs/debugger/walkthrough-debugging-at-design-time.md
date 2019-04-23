@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049055"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在设计时在 Visual Studio 中调试 (C#，c + +、 Visual Basic 中， F#)
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>在设计时在 Visual Studio 中调试 (C#， C++，Visual Basic 中， F#)
 
 若要在设计时而不是应用程序时调试代码正在运行，则可以使用**即时**窗口。
 
@@ -33,7 +33,7 @@ ms.locfileid: "56696696"
 
 可以使用 Visual Studio**即时**窗口来执行函数或子例程，而无需运行您的应用程序。 如果函数或子例程包含断点，Visual Studio 会在断点处中断。 随后即可使用调试器窗口检查程序状态。 此功能被称为*在设计时调试*。
 
-下面的示例是在 Visual Basic 中。 此外可以使用**即时**窗口中的在设计时在C#， F#，和 c + + 应用程序。
+下面的示例是在 Visual Basic 中。 此外可以使用**即时**窗口中的在设计时在C#， F#，和C++应用程序。
 
 1. 将以下代码粘贴到空白的 Visual Basic 控制台应用程序：
 
@@ -102,6 +102,7 @@ ms.locfileid: "56696696"
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    加载页时命中断点。
 
 ## <a name="see-also"></a>请参阅

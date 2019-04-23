@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058494"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>如何：创建可以为 null 的类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ ms.locfileid: "54834912"
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>使用类设计器添加可以为 null 的类型  
   
-1.  在类图中，展开现有类，或创建一个新类。  
+1. 在类图中，展开现有类，或创建一个新类。  
   
-2.  若要将类添加到项目，请在“类图”菜单上，单击“添加”，然后单击“添加类”。  
+2. 若要将类添加到项目，请在“类图”菜单上，单击“添加”，然后单击“添加类”。  
   
-3.  若要展开类形状，请在“类图”菜单上，单击“展开”。  
+3. 若要展开类形状，请在“类图”菜单上，单击“展开”。  
   
-4.  选择类形状。 请在“类图”菜单上，单击“添加”，然后单击“字段”。 将在类形状以及“类详细信息”窗口中显示默认名称为“字段”的新字段。  
+4. 选择类形状。 请在“类图”菜单上，单击“添加”，然后单击“字段”。 将在类形状以及“类详细信息”窗口中显示默认名称为“字段”的新字段。  
   
-5.  在“类详细信息”窗口的“名称”列中（或类形状中），将新字段的名称更改为有效且有意义的名称。  
+5. 在“类详细信息”窗口的“名称”列中（或类形状中），将新字段的名称更改为有效且有意义的名称。  
   
-6.  在“类详细信息”窗口的“类型”列中，声明该类型为可以为 null 的类型，如以下代码所示：  
+6. 在“类详细信息”窗口的“类型”列中，声明该类型为可以为 null 的类型，如以下代码所示：  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,19 +71,19 @@ ms.locfileid: "54834912"
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>使用代码编辑器添加可以为 null 的类型  
   
-1.  向项目中添加类。 在“解决方案资源管理器”中，选择项目节点，然后在“项目”菜单中单击“添加类”。  
+1. 向项目中添加类。 在“解决方案资源管理器”中，选择项目节点，然后在“项目”菜单中单击“添加类”。  
   
-2.  在新类的 .cs 或 .vb 文件中，将新类中的一个或多个可以为 null 的类型添加到类声明。  
+2. 在新类的 .cs 或 .vb 文件中，将新类中的一个或多个可以为 null 的类型添加到类声明。  
   
-3.  从类视图中，将新的类图标拖动到类设计器的设计图面上。 此时类图中将显示类形状。  
+3. 从类视图中，将新的类图标拖动到类设计器的设计图面上。 此时类图中将显示类形状。  
   
-4.  展开该类形状的详细信息，然后将鼠标指针移到类成员处。 工具提示将显示每个成员的声明。  
+4. 展开该类形状的详细信息，然后将鼠标指针移到类成员处。 工具提示将显示每个成员的声明。  
   
-5.  右键单击类形状，然后单击“类详细信息”。 可以在“类详细信息”窗口中查看或修改新类型的属性。  
+5. 右键单击类形状，然后单击“类详细信息”。 可以在“类详细信息”窗口中查看或修改新类型的属性。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Nullable%601>   
  [可以为 null 的类型](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [使用可以为 null 的类型](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [如何：标识可以为 null 的类型](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [如何：标识可以为 Null 的类型](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [可以为 null 的值类型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

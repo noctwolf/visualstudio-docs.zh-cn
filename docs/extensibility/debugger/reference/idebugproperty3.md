@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069648"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 此接口提供以下支持：
 
--   正在检索任意长度的字符串与属性关联。
+- 正在检索任意长度的字符串与属性关联。
 
--   将与属性关联的唯一 ID。
+- 将与属性关联的唯一 ID。
 
--   正在检索的属性的自定义查看器的列表。
+- 正在检索的属性的自定义查看器的列表。
 
--   设置属性的值与报告产生的任何错误的功能
+- 设置属性的值与报告产生的任何错误的功能
 
 ## <a name="syntax"></a>语法
 

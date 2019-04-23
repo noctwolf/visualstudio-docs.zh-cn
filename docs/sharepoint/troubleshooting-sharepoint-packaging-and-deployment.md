@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868035"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087594"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 打包和部署进行故障排除
   本主题论述了您在打包和部署 SharePoint 解决方案时可能遇到的各种问题。
@@ -47,11 +47,11 @@ ms.locfileid: "54868035"
 
  下表演示了用于设置**部署冲突解决方法**属性。
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |自动|自动检测冲突和解决冲突。|
 |提示|检测冲突并在解决冲突之前向开发人员报告冲突。|
-|无|不检测冲突。|
+|None|不检测冲突。|
 
 ## <a name="differences-between-f5-deployment"></a>F5 部署之间的差异
  当你使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 SharePoint 项目部署到本地 SharePoint 服务器进行测试和调试时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将执行一些其他步骤。
@@ -73,9 +73,9 @@ ms.locfileid: "54868035"
 ### <a name="resolution"></a>解决方法
  若要解决此问题，请执行以下步骤：
 
-1.  Microsoft 支持文章中所述安装更新 KB967535[修复：修补程序是可用于两个问题 ASP.NET IIS 7.0 上修复适用于 Windows Vista 和 Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055)。
+1. Microsoft 支持文章中所述安装更新 KB967535[修复：修补程序是可用于两个问题 ASP.NET IIS 7.0 上修复适用于 Windows Vista 和 Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055)。
 
-2.  将以下行添加到 Web.config 文件中：
+2. 将以下行添加到 Web.config 文件中：
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

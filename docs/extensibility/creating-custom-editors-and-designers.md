@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721064"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057428"
 ---
 # <a name="create-custom-editors-and-designers"></a>创建自定义编辑器和设计器
+
 Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器：
 
 - Visual Studio 核心编辑器
@@ -29,10 +30,11 @@ Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器�
 
 - 设计器
 
-  以下信息可帮助你选择的编辑器所需的类型。
+以下信息可帮助你选择的编辑器所需的类型。
 
 ## <a name="types-of-editor"></a>类型的编辑器
- 有关 Visual Studio 核心编辑器的信息，请参阅[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)。
+
+有关 Visual Studio 核心编辑器的信息，请参阅[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)。
 
 ### <a name="custom-editors"></a>自定义编辑器
  自定义编辑器是一个用于处理在特殊情况下。 例如，可以创建的编辑器的函数是读取和写入到特定的存储库，如 Microsoft Exchange server 的数据。 如果你想要一个编辑器，适用于仅您的项目类型，如果希望编辑器具有仅几个特定命令，请选择自定义编辑器。 但请注意，用户将无法使用自定义编辑器来编辑标准[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。
@@ -70,24 +72,36 @@ Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器�
    如果它可以嵌入，应为外部编辑器创建宿主窗口，然后调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>方法，设置<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>枚举值`DP_External`。 如果不能嵌入编辑器，则 IDE 将自动为其创建一个单独的窗口。
 
 ## <a name="in-this-section"></a>本节内容
-- [演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)说明如何创建自定义编辑器。
 
-- [演练：将功能添加到自定义编辑器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)介绍了如何将功能添加到自定义编辑器。
+[演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)\
+说明如何创建自定义编辑器。
 
-- [设计器的初始化和元数据配置](../extensibility/designer-initialization-and-metadata-configuration.md)介绍了如何初始化设计器。
+[演练：将功能添加到自定义编辑器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+介绍如何将功能添加到自定义编辑器。
 
-- [提供向设计器提供撤消支持](../extensibility/supplying-undo-support-to-designers.md)介绍了如何为设计器提供撤消支持。
+[设计器的初始化和元数据配置](../extensibility/designer-initialization-and-metadata-configuration.md)\
+介绍如何初始化设计器。
 
-- [自定义编辑器中的语法着色](../extensibility/syntax-coloring-in-custom-editors.md)说明的语法着色和自定义编辑器中核心编辑器之间的差异。
+[向设计器提供撤消支持](../extensibility/supplying-undo-support-to-designers.md)\
+介绍如何为设计器提供撤消支持。
 
-- [文档自定义编辑器中的数据和文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)解释了如何实现自定义编辑器中的文档数据和文档视图。
+[自定义编辑器中的语法着色](../extensibility/syntax-coloring-in-custom-editors.md)\
+介绍了语法着色和自定义编辑器中核心编辑器之间的差异。
+
+[文档数据和自定义编辑器中的文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+介绍如何在自定义编辑器中实现文档数据和文档视图。
 
 ## <a name="related-sections"></a>相关章节
-- [在编辑器中的旧接口](../extensibility/legacy-interfaces-in-the-editor.md)说明如何通过传统的 API 访问核心编辑器。
 
-- [开发旧版语言服务](../extensibility/internals/developing-a-legacy-language-service.md)解释了如何实现语言服务。
+[在编辑器中的旧接口](../extensibility/legacy-interfaces-in-the-editor.md)\
+说明如何通过传统的 API 访问核心编辑器。
 
-- [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)介绍了如何创建匹配的其余部分的 UI 元素[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+[开发旧版语言服务](../extensibility/internals/developing-a-legacy-language-service.md)\
+介绍如何实现语言服务。
+
+[扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)\
+说明如何创建匹配的其余部分的 UI 元素[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="see-also"></a>请参阅
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

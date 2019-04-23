@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcd72b398c49b84f110145f5dbf0e8b8929d82e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102635"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果您有执行从 Web 服务的财务数据计算的 Microsoft Office Excel 的 VSTO 外接程序中，其他解决方案可以通过调用 Excel VSTO 外接程序在运行时执行这些计算。
@@ -31,29 +31,29 @@ ms.locfileid: "56619714"
 
  此过程包括以下两个主要步骤：
 
--   在 VSTO 外接程序中，向其他解决方案公开对象。
+- 在 VSTO 外接程序中，向其他解决方案公开对象。
 
--   在其他解决方案中，访问由 VSTO 外接程序公开的对象，然后调用对象的成员。
+- 在其他解决方案中，访问由 VSTO 外接程序公开的对象，然后调用对象的成员。
 
 ## <a name="types-of-solutions-that-can-call-code-in-an-add-in"></a>可以在外接程序中调用代码的解决方案类型
  您可以公开 VSTO 外接程序中向以下类型的解决方案的对象：
 
--   在与 VSTO 外接程序相同的应用程序进程中加载的文档中的 Visual Basic for Applications (VBA) 代码。
+- 在与 VSTO 外接程序相同的应用程序进程中加载的文档中的 Visual Basic for Applications (VBA) 代码。
 
--   在与 VSTO 外接程序相同的应用程序进程中加载的文档级自定义项。
+- 在与 VSTO 外接程序相同的应用程序进程中加载的文档级自定义项。
 
--   使用 Visual Studio 中的 Office 项目模板创建的其他 VSTO 外接程序。
+- 使用 Visual Studio 中的 Office 项目模板创建的其他 VSTO 外接程序。
 
--   COM VSTO 外接程序（即直接实现 <xref:Extensibility.IDTExtensibility2> 接口的 VSTO 外接程序）。
+- COM VSTO 外接程序（即直接实现 <xref:Extensibility.IDTExtensibility2> 接口的 VSTO 外接程序）。
 
--   在不同于 VSTO 外接程序的进程中运行的任何解决方案（这些类型的解决方案也称为 *进程外客户端*）。 其中包括使 Office 应用程序实现自动化的应用程序（例如 Windows 窗体或控制台应用程序），以及在其他进程中加载的 VSTO 外接程序。
+- 在不同于 VSTO 外接程序的进程中运行的任何解决方案（这些类型的解决方案也称为 *进程外客户端*）。 其中包括使 Office 应用程序实现自动化的应用程序（例如 Windows 窗体或控制台应用程序），以及在其他进程中加载的 VSTO 外接程序。
 
 ## <a name="expose-objects-to-other-solutions"></a>向其他解决方案公开对象
  若要向其他解决方案公开 VSTO 外接程序中的对象，请在 VSTO 外接程序中执行下列步骤：
 
-1.  定义要向其他解决方案公开的类。
+1. 定义要向其他解决方案公开的类。
 
-2.  重写 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 类中的 `ThisAddIn` 方法。 返回要向其他解决方案公开的类的实例。
+2. 重写 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 类中的 `ThisAddIn` 方法。 返回要向其他解决方案公开的类的实例。
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>定义你想要向其他解决方案公开的类
  要公开的类必须至少是公共类，必须将 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性设置为 **true**，并且必须公开 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 接口。
@@ -70,9 +70,9 @@ ms.locfileid: "56619714"
 
 5. 如果你想要公开此类向进程外客户端，可能还需要执行以下操作：
 
-   -   从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>派生类。 有关详细信息，请参阅[公开向进程外客户端类](#outofproc)。
+   - 从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>派生类。 有关详细信息，请参阅[公开向进程外客户端类](#outofproc)。
 
-   -   在定义此接口的项目中设置“为 COM 互操作注册”  属性。 此属性是必需的仅当你想要启用客户端使用早期绑定来调入 VSTO 外接程序。
+   - 在定义此接口的项目中设置“为 COM 互操作注册”  属性。 此属性是必需的仅当你想要启用客户端使用早期绑定来调入 VSTO 外接程序。
 
    下面的代码示例演示一个 `AddInUtilities` 类，该类具有可由其他解决方案调用的 `ImportData` 方法。 若要查看较大的演练上下文中此代码，请参阅[演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619714"
 
  或者可以公开[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)通过设置接口<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性的值 AutoDispatch 或 AutoDual<xref:System.Runtime.InteropServices.ClassInterfaceType>枚举。 如果您将该接口公开，您无需声明中单独的接口的方法。 不过，VBA 代码可以调用类中的任何公共方法和非静态方法，包括从基类（如 <xref:System.Object>）获取的方法。 此外，使用早期绑定的进程外客户端不能调用你的类。
 
-###  <a name="outofproc"></a> 公开向进程外客户端类
+### <a name="outofproc"></a> 公开向进程外客户端类
  如果要向进程外客户端公开 VSTO 外接程序中的类，则应从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 派生该类，以确保进程外客户端可以调用公开的 VSTO 外接程序对象。 否则，尝试在进程外客户端中获取已公开对象的实例可能会意外失败。
 
  此失败是因为对 Office 应用程序的对象模型的所有调用必须都对主 UI 线程，但从进程外客户端对您的对象的调用都将到达任意 RPC （远程过程调用） 线程。 .NET Framework 中的 COM 封送处理机制不会切换线程，而是尝试将对你的对象的调用封送到传入 RPC 线程（而不是主 UI 线程）中。 如果你的对象是从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>派生的类的实例，则对你的对象的传入调用会自动封送到用于创建公开对象的线程中，该线程将是主机应用程序的主 UI 线程。

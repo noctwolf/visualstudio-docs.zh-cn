@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091286"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>如何：在工作流设计器中使用搜索
 
@@ -23,13 +23,13 @@ ms.locfileid: "55942383"
 
 快速查找设计器中查找以下：
 
--   <xref:System.Activities.Activity> 对象、<xref:System.Activities.Statements.FlowNode> 对象、<xref:System.Activities.Statements.State> 对象、转换以及其他自定义流控制项的属性。
+- <xref:System.Activities.Activity> 对象、<xref:System.Activities.Statements.FlowNode> 对象、<xref:System.Activities.Statements.State> 对象、转换以及其他自定义流控制项的属性。
 
--   变量
+- 变量
 
--   参数
+- 自变量
 
--   表达式
+- 表达式
 
 ### <a name="use-quick-find"></a>使用快速查找
 
@@ -47,8 +47,8 @@ ms.locfileid: "55942383"
 
 ### <a name="use-find-in-files"></a>使用查找在文件中
 
-1.  在 Visual Studio 中，按**Ctrl**+**Shift**+**F**，或选择**编辑** >  **查找和替换** > **在文件中查找**。
+1. 在 Visual Studio 中，按**Ctrl**+**Shift**+**F**，或选择**编辑** >  **查找和替换** > **在文件中查找**。
 
-2.  输入搜索项插入**查找内容**文本框中，单击**查找全部**。
+2. 输入搜索项插入**查找内容**文本框中，单击**查找全部**。
 
-3.  查找结果所示**查找结果**视图。 双击结果项导航到包含工作流设计器中的匹配项的活动。
+3. 查找结果所示**查找结果**视图。 双击结果项导航到包含工作流设计器中的匹配项的活动。

@@ -9,25 +9,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15bf6243fc6e39a4cd7817bdfe964943ab16a3d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111241"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本朗伯着色器
+# <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本 Lambert 着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本文档演示如何使用着色器设计器和定向关系图着色器语言 (DGSL) 创建实现经典朗伯照明模型的照明着色器。  
   
  本文档演示了这些活动：  
   
--   将节点添加到着色器关系图  
+- 将节点添加到着色器关系图  
   
--   断开节点  
+- 断开节点  
   
--   连接节点  
+- 连接节点  
   
 ## <a name="the-lambert-lighting-model"></a>朗伯照明模型  
  朗伯照明模型将环境照明和方向照明应用到三维场景中的阴影对象。 环境分量在三维场景中提供基本照明级别。 方向分量提供来自定向（远）光源的额外照明。 环境照明会均匀影响场景中的所有表面，而不考虑其方向。 对于给定表面，它是表面的环境色和场景中环境照明的颜色和强度的结合产物。 定向照明根据相对于光源方向的表面方向，以不同方式影响场景中的每个表面。 它是表面的漫射颜色和方向，以及光源的颜色、强度和方向生成的结果。 直接面向光源的表面接收比例最大，直接背对的表面无接收比例。 在朗伯照明模型下，会结合环境分量和一个或多个定向分量来确定对象上每个点的总漫射颜色比例。  
@@ -64,6 +64,6 @@ ms.locfileid: "54792003"
 ## <a name="see-also"></a>请参阅  
  [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：导出着色器](../designers/how-to-export-a-shader.md)   
- [如何：创建基本冯氏着色器](../designers/how-to-create-a-basic-phong-shader.md)   
+ [如何：创建基本 Phong 着色器](../designers/how-to-create-a-basic-phong-shader.md)   
  [着色器设计器](../designers/shader-designer.md)   
  [着色器设计器节点](../designers/shader-designer-nodes.md)

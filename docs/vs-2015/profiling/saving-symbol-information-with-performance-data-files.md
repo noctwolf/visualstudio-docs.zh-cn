@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098879"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用性能数据文件保存符号信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ ms.locfileid: "54780884"
   
 - 确保设置了 Windows 符号缓存的路径。 执行以下操作之一以设置符号缓存路径：  
   
-  -   在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中将“调试器”->“符号”选项设置为正确路径。  
+  - 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中将“调试器”->“符号”选项设置为正确路径。  
   
-  -   向 VSPerfReport 命令行添加 -symbolpath 选项以包含符号。  
+  - 向 VSPerfReport 命令行添加 -symbolpath 选项以包含符号。  
   
 - 如果在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 中看不到任何符号，请确保为 ASP 服务器正确设置了符号服务器。  
   

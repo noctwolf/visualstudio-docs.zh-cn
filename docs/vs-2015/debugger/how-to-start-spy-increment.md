@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066698"
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58937095"
   
 ### <a name="to-start-spy-from-visual-studio"></a>若要从 Visual Studio 启动 Spy + +  
   
--   上**工具**菜单上，单击**Spy + +**。  
+- 上**工具**菜单上，单击**Spy + +**。  
   
      因为 Spy + + 独立运行，在启动后，你可以关闭 Visual Studio。  
   
@@ -39,9 +39,9 @@ ms.locfileid: "58937095"
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>若要在命令提示符处启动 Spy + +  
   
-1.  在命令提示符窗口中，将目录更改到包含 spyxx.exe 的文件夹。 通常情况下，此文件夹的路径是...\\ *Visual Studio 安装文件夹*\Common7\Tools\\。  
+1. 在命令提示符窗口中，将目录更改到包含 spyxx.exe 的文件夹。 通常情况下，此文件夹的路径是...\\ *Visual Studio 安装文件夹*\Common7\Tools\\。  
   
-2.  类型**spyxx.exe** ，然后按 ENTER。  
+2. 类型**spyxx.exe** ，然后按 ENTER。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Spy++](../debugger/using-spy-increment.md)   

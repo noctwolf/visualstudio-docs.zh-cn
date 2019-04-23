@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a896a5b850887b36a4fb6596923e742429c44dc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068608"
 ---
 # <a name="how-to-implement-undo-management"></a>如何：实现撤消管理
 用于撤消管理的主界面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，这由环境实现。 若要支持撤消管理，实现单独的撤消单元 (即， <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中包含多个单独的步骤。
@@ -27,9 +27,9 @@ ms.locfileid: "56714122"
 
 ### <a name="to-support-undo-management-for-a-single-view-editor"></a>若要为单一视图编辑器支持撤消管理
 
-1.  调用`QueryInterface`上`IServiceProvider`接口上的窗口框架`IOleUndoManager`，从要访问撤消管理器的文档视图对象 (`IID_IOLEUndoManager`)。
+1. 调用`QueryInterface`上`IServiceProvider`接口上的窗口框架`IOleUndoManager`，从要访问撤消管理器的文档视图对象 (`IID_IOLEUndoManager`)。
 
-2.  当视图被放置到窗口框架后时，它将获取的站点指针，它可用于调用`QueryInterface`为`IServiceProvider`。
+2. 当视图被放置到窗口框架后时，它将获取的站点指针，它可用于调用`QueryInterface`为`IServiceProvider`。
 
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>其中一个编辑器支持多个视图的情况下
  如果必须文档和视图之间的分离，则通常一个撤消管理器与文档本身相关联。 所有的撤消单元将放置在与文档数据对象关联的一个撤消管理器。
@@ -46,17 +46,17 @@ ms.locfileid: "56714122"
 
 3. 中继你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>并<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>调入存储`IOleCommandTarget`以下 StandardCommandSet97 命令的接口：
 
-   -   cmdidUndo
+   - cmdidUndo
 
-   -   cmdidMultiLevelUndo
+   - cmdidMultiLevelUndo
 
-   -   cmdidRedo
+   - cmdidRedo
 
-   -   cmdidMultiLevelRedo
+   - cmdidMultiLevelRedo
 
-   -   cmdidMultiLevelUndoList
+   - cmdidMultiLevelUndoList
 
-   -   cmdidMultiLevelRedoList
+   - cmdidMultiLevelRedoList
 
 4. 调用`QueryInterface`上`IOleUndoManager`为`IID_IVsChangeTrackingUndoManager`。 存储指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。
 

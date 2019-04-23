@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117559"
 ---
 # <a name="load-vspackages"></a>加载 Vspackage
 Vspackage 加载到 Visual Studio 中，仅当其功能是必需的。 例如，加载 VSPackage 时 Visual Studio 使用项目工厂或 VSPackage 实现的服务。 此功能被称为延迟的加载，这尽可能使用以提高性能。
@@ -28,7 +28,7 @@ Vspackage 加载到 Visual Studio 中，仅当其功能是必需的。 例如，
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>自动加载 VSPackage 的特定上下文中
 
--   添加`ProvideAutoLoad`VSPackage 属性的属性：
+- 添加`ProvideAutoLoad`VSPackage 属性的属性：
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Vspackage 加载到 Visual Studio 中，仅当其功能是必需的。 例如，
 
      请参阅的枚举的字段<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>有关 UI 上下文及其 GUID 值的列表。
 
--   中设置断点<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
+- 中设置断点<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。
 
--   生成 VSPackage 并启动调试。
+- 生成 VSPackage 并启动调试。
 
--   加载解决方案或创建一个。
+- 加载解决方案或创建一个。
 
      VSPackage 加载，并在断点处停止。
 
@@ -54,7 +54,7 @@ Vspackage 加载到 Visual Studio 中，仅当其功能是必需的。 例如，
 
  可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A>方法，以强制 VSPackage 加载。
 
--   插入此代码<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>强制另一个 VSPackage 加载的 vspackage 的方法：
+- 插入此代码<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>强制另一个 VSPackage 加载的 vspackage 的方法：
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a70e6b7c8126b2e9d2fc3274d5ecf905dce960d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066547"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>如何：以编程方式从工作簿中删除工作表
   可以删除工作簿中的任意工作表。 若要删除工作表，请使用该工作表主机项或通过使用工作簿的表集合访问该工作表。
@@ -40,7 +40,7 @@ ms.locfileid: "56644505"
 
 ### <a name="to-delete-a-worksheet-by-using-a-worksheet-host-item"></a>使用工作表主机项删除工作表
 
-1.  调用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> 的 `Sheet1`方法。
+1. 调用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> 的 `Sheet1`方法。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomation#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#17)]
@@ -59,7 +59,7 @@ ms.locfileid: "56644505"
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 工作簿的表集合删除工作表
 
-1.  调用 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> 方法。
+1. 调用 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel._Worksheet.Delete%2A> 方法。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#18)]

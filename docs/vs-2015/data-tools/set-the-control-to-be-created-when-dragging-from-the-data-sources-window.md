@@ -19,17 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14803b84e8695839b05726b3cadd3f2150079946
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c9902080ae501c1d77a59f152d7d272462d2264
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115414"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>设置从“数据源”窗口中拖动时要创建的控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 您可以通过将项从创建数据绑定控件**数据源**窗口拖到 WPF 设计器或 Windows 窗体设计器。 中的每项**数据源**窗口具有时将其拖到设计器中创建一个默认控件。 但是，您可以选择创建一个不同的控件。  
   
 ## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>设置为数据表或对象创建的控件  
@@ -58,13 +57,13 @@ ms.locfileid: "58935327"
   
 #### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>若要设置为列或属性创建的控件  
   
-1.  请确保在 WPF 设计器或 Windows 窗体设计器处于打开状态。  
+1. 请确保在 WPF 设计器或 Windows 窗体设计器处于打开状态。  
   
-2.  在中**数据源**窗口中，展开所需的表，或要显示其列或属性的对象。  
+2. 在中**数据源**窗口中，展开所需的表，或要显示其列或属性的对象。  
   
-3.  选择你想要设置的控件创建每个列或属性。  
+3. 选择你想要设置的控件创建每个列或属性。  
   
-4.  单击列或属性的下拉列表菜单，然后选择你想要创建一项拖动到设计器时的控件。  
+4. 单击列或属性的下拉列表菜单，然后选择你想要创建一项拖动到设计器时的控件。  
   
      可用控件列表取决于所在的设计器上已打开，.NET Framework 的版本将项目目标，以及的自定义控件的支持的数据绑定，已添加到**工具箱**。 如果你想要创建的控件的可用控件列表中，可以将控件添加到列表。 有关详细信息，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   

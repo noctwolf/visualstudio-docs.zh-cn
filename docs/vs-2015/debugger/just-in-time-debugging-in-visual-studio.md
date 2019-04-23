@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116162"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>在 Visual Studio 进行实时调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "59000284"
 
 - 您必须具有[安装 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/)若要查看有关错误的详细的信息，并尝试对其进行调试。 请参阅[使用 JIT](#BKMK_Using_JIT)有关的详细说明。 如果您不能解决该错误并修复应用程序，请联系应用的所有者，以解决该错误。
 
-##  <a name="BKMK_Enabling"></a> 启用或禁用在实时调试
+## <a name="BKMK_Enabling"></a> 启用或禁用在实时调试
  可以启用或禁用在实时调试 Visual Studio**工具 / 选项**对话框。
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>启用或禁用实时调试
@@ -73,36 +73,36 @@ ms.locfileid: "59000284"
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>通过编辑注册表禁用实时调试
 
-1.  上**启动**菜单中，搜索并运行 `regedit.exe`
+1. 上**启动**菜单中，搜索并运行 `regedit.exe`
 
-2.  在中**注册表编辑器**窗口中，找到并删除以下注册表项：
+2. 在中**注册表编辑器**窗口中，找到并删除以下注册表项：
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  如果您的计算机正在运行 64 位操作系统，如果还要删除下列注册表项：
+3. 如果您的计算机正在运行 64 位操作系统，如果还要删除下列注册表项：
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  注意不要意外删除或更改任何其他注册表项。
+4. 注意不要意外删除或更改任何其他注册表项。
 
-5.  关闭**注册表编辑器**窗口。
+5. 关闭**注册表编辑器**窗口。
 
 > [!NOTE]
 >  如果想要禁用中实时调试的服务器端应用程序，这些步骤未解决该问题关闭服务器端调试在 IIS 应用程序设置，然后重试。
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>为 Windows 窗体启用实时调试
 
-1.  默认情况下，Windows 窗体应用程序有一个顶级的异常处理程序，该处理程序允许程序在能够恢复时继续运行。 例如，如果你的 Windows 窗体应用程序引发未处理的异常，将看到一个对话框，如下所示：
+1. 默认情况下，Windows 窗体应用程序有一个顶级的异常处理程序，该处理程序允许程序在能够恢复时继续运行。 例如，如果你的 Windows 窗体应用程序引发未处理的异常，将看到一个对话框，如下所示：
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      启用在实时调试的 Windows 窗体应用程序，必须执行以下附加步骤：
 
-2.  设置`jitDebugging`值设为`true`中`system.windows.form`部分中的 machine.config 或*\<应用程序名称 >*.exe.config 文件：
+2. 设置`jitDebugging`值设为`true`中`system.windows.form`部分中的 machine.config 或*\<应用程序名称 >*.exe.config 文件：
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ ms.locfileid: "59000284"
     </configuration>
     ```
 
-3.  在 C++ Windows 窗体应用程序中，还必须在 .config 文件或你的代码中设置 `DebuggableAttribute`。 如果使用 [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 而不使用 [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) 进行编译，则编译器会替你设置此属性。 然而，如果你想要调试非优化发布版本，则必须自行设置此项。 为此，你可以在应用程序的 AssemblyInfo.cpp 文件中添加下面一行：
+3. 在 C++ Windows 窗体应用程序中，还必须在 .config 文件或你的代码中设置 `DebuggableAttribute`。 如果使用 [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) 而不使用 [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435) 进行编译，则编译器会替你设置此属性。 然而，如果你想要调试非优化发布版本，则必须自行设置此项。 为此，你可以在应用程序的 AssemblyInfo.cpp 文件中添加下面一行：
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  你可能会遇到与实时调试相关联的下列错误消息。
 
--   **无法附加到崩溃进程。指定的程序不是 Windows 或 MS-DOS 程序。**
+- **无法附加到崩溃进程。指定的程序不是 Windows 或 MS-DOS 程序。**
 
      当你尝试附加到以其他用户身份运行的进程时，将发生此错误。
 
      若要解决此问题，请启动 Visual Studio 中，打开**附加到进程**对话框从**调试**菜单中，并查找过程，你想要在调试**可用进程**列表。 如果不知道进程名称，看看**Visual Studio 实时调试器**对话框并记下进程 id。 选择中的过程**可用进程**列表中，单击**附加**。 在中**Visual Studio 实时调试器**对话框中，单击**否**以关闭对话框。
 
--   **未能启动调试器，因为没有用户登录。**
+- **未能启动调试器，因为没有用户登录。**
 
      在没有用户登录到控制台的计算机中，如果实时调试尝试启动 Visual Studio，则会发生此错误。 因为没有用户登录，所以没有用户会话来显示“实时调试”对话框。
 
      要解决此问题，请登录到计算机。
 
--   **类没有注册。**
+- **类没有注册。**
 
      此错误指出：调试器尝试创建一个可能是因为安装问题而没有注册的 COM 类。
 

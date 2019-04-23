@@ -13,17 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eca5fc85f4a1bcd26c2c4c73ec39fbe855f77add
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769365"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665462"
 ---
 # <a name="item-metadata-in-target-batching"></a>目标批处理中的项元数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 能够对生成目标的输入和输出执行依赖项分析。 如果确定了目标的输入或输出是最新的，将跳过该目标并继续生成过程。 `Target` 元素使用 `Inputs` 和 `Outputs` 属性指定要在依赖项分析过程中检查的项。  
   
  如果目标包含使用批处理的项作为输入或输出的任务，该目标的 `Target` 元素应在其 `Inputs` 或 `Outputs` 属性中使用批处理，以便 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 能够跳过最新的项批。  

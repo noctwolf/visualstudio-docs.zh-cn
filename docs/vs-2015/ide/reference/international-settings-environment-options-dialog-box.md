@@ -19,17 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcfc0d02b8ffd0d1e178bdde363736d14d99fa17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 871069c2620274f008250cd4f3166de7a6d419e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754932"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670012"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“区域设置”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 当你的计算机上安装有多个语言版本的集成开发环境 (IDE) 时，可通过国际设置页面更改默认语言。 要访问此对话框，可从“工具”菜单中选择“选项”，然后从“环境”文件夹中选择“区域设置”。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   
 > [!NOTE]

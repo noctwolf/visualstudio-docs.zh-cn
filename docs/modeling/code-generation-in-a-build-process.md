@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117091"
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 
@@ -28,7 +28,7 @@ ms.locfileid: "57324320"
 
 这意味着，您无法访问项目文件名等内容相同的方式生成 MSBuild 中的文本模板时。 但是，你可以[通过生成参数，将环境信息传递到文本模板和指令处理器](#parameters)。
 
-##  <a name="buildserver"></a> 配置计算机
+## <a name="buildserver"></a> 配置计算机
 
 若要启用生成任务在开发计算机上的，安装 Visual Studio 的建模 SDK。
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> 将生成上下文数据传递到模板
+## <a name="parameters"></a> 将生成上下文数据传递到模板
 
 你可以在项目文件中设置参数值。 例如，可以传递[构建](../msbuild/msbuild-properties.md)属性和[环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > 仅当你使用 MSBuild 时，`ResolveParameterValue` 才会通过 `T4ParameterValues` 获取数据。 当你使用 Visual Studio 转换模板时，参数将具有默认值。
 
-##  <a name="msbuild"></a> 使用项目属性中的程序集和 include 指令
+## <a name="msbuild"></a> 使用项目属性中的程序集和 include 指令
 
 Visual Studio 宏喜欢 **$ （solutiondir)** MSBuild 中不起作用。 你可以改用项目属性。
 

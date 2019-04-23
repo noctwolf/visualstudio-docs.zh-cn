@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070376"
 ---
 # <a name="service-essentials"></a>服务基础知识
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的另一个 VSPackage 来使用的接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 的集合。
@@ -68,15 +68,15 @@ ms.locfileid: "56335306"
 
 幸运的是，<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>大多数情况下正常工作。
 
--   如果 VSPackage 提供的服务才知道另一个 VSPackage，VSPackage 请求该服务是就位之前提供此服务已加载的 VSPackage。
+- 如果 VSPackage 提供的服务才知道另一个 VSPackage，VSPackage 请求该服务是就位之前提供此服务已加载的 VSPackage。
 
--   如果 VSPackage 创建工具窗口，则 VSPackage 确定创建工具窗口之前位置。
+- 如果 VSPackage 创建工具窗口，则 VSPackage 确定创建工具窗口之前位置。
 
--   如果控件容器托管的 VSPackage 创建工具窗口，则 VSPackage 确定之前创建的控件容器位置。
+- 如果控件容器托管的 VSPackage 创建工具窗口，则 VSPackage 确定之前创建的控件容器位置。
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>若要获取从工具窗口或控件容器中的服务
 
--   在构造函数、 工具窗口或控件容器中插入此代码：
+- 在构造函数、 工具窗口或控件容器中插入此代码：
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9d3533f2eb6cfb5bc2e3a68370f48daa4acfc1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106446"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>该属性&lt;属性名称&gt;无法删除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 该属性\<属性名称 > 不能删除，因为它被设置为之间的继承鉴别器属性\<类名称 > 和\<类名称 >  
   
  选择的属性被设置为“鉴别器属性”，用于错误消息中所指示的类之间的继承。 如果属性参与数据类之间的继承配置，则无法删除这些属性。  
@@ -28,11 +27,11 @@ ms.locfileid: "58925874"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
-1.  在 O/R 设计器中选择连接错误消息中指示的数据类的继承连线。  
+1. 在 O/R 设计器中选择连接错误消息中指示的数据类的继承连线。  
   
-2.  将“鉴别器”属性设置为另一个属性。  
+2. 将“鉴别器”属性设置为另一个属性。  
   
-3.  再次尝试删除该属性。  
+3. 再次尝试删除该属性。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：通过使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

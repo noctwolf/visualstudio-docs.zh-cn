@@ -1,5 +1,5 @@
 ---
-title: 如何： 设置 ClickOnce 发布版本 |Microsoft Docs
+title: 如何：设置 ClickOnce 发布版本 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea53e5e50aebc7c8ad201f6dae1003350f9fa4e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc57639c988b33f4d1b5844151e983593bf52ddd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074695"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>如何：设置 ClickOnce 发布版本
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version`属性确定是否要发布的应用程序视为更新。 每个时间版本递增时，将作为更新发布应用程序。
@@ -29,15 +29,15 @@ ms.locfileid: "56633442"
  `Publish Version`属性可以设置上**发布**页**项目设计器**。
 
 > [!NOTE]
->  将自动递增的项目选项`Publish Version`属性每次发布应用程序; 默认情况下启用此选项。 有关详细信息，请参阅[如何： 自动递增 ClickOnce 发布版本](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)。
+>  将自动递增的项目选项`Publish Version`属性每次发布应用程序; 默认情况下启用此选项。 有关详细信息，请参阅[如何：自动递增 ClickOnce 发布版本](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)。
 
 ### <a name="to-change-the-publish-version"></a>若要更改的发布版本
 
-1.  在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。
 
-2.  单击“发布”选项卡。
+2. 单击“发布”选项卡。
 
-3.  在中**发布版本**字段中，递增**主要**，**次要**，**生成**，或**修订**版本数字。
+3. 在中**发布版本**字段中，递增**主要**，**次要**，**生成**，或**修订**版本数字。
 
     > [!NOTE]
     >  应永远不会递减版本号;这样做可能导致不可预知的更新行为。

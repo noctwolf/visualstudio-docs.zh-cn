@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1733539c3f2da5d961a347e2f1c818d83257d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 34b69ac69c580fbd40278b5b7a0c9be26d672fa3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721480"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082017"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 有三种开始 WCF 服务调试的方式：
@@ -37,13 +37,13 @@ ms.locfileid: "56721480"
 ## <a name="limitations-on-stepping-into-a-service"></a>单步执行服务的限制
  若要从正在调试的客户端应用程序单步执行服务，必须满足下列条件：
 
--   客户端必须使用同步客户端对象调用服务。
+- 客户端必须使用同步客户端对象调用服务。
 
--   协定操作不能是单向的。
+- 协定操作不能是单向的。
 
--   如果服务器是异步的，则无法在服务内部执行代码时查看完整的调用堆栈。
+- 如果服务器是异步的，则无法在服务内部执行代码时查看完整的调用堆栈。
 
--   必须使用 app.config 或 Web.config 文件中的以下代码启用调试：
+- 必须使用 app.config 或 Web.config 文件中的以下代码启用调试：
 
     ```xml
     <system.web>
@@ -74,11 +74,11 @@ ms.locfileid: "56721480"
   ```
 
 ## <a name="self-hosting"></a>自我托管
- “自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 开发服务器内部运行的 WCF 服务。 有关如何调试自承载的服务的信息，请参阅[如何： 调试自承载的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)。
+ “自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 开发服务器内部运行的 WCF 服务。 有关如何调试自承载的服务的信息，请参阅[如何：调试自我托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)。
 
 ## <a name="self-hosting"></a>自我托管
  若要启用 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 应用程序的调试，则必须在安装 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 之前安装 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5。 如果在安装 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 之前安装了 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]，则在尝试调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 3.0 或 3.5 应用程序时会出错。 错误消息为：无法自动单步执行服务器。 若要解决此问题，请使用 Windows **Control Panel** > **程序和功能**修复你[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]安装。
 
 ## <a name="see-also"></a>请参阅
 - [调试 WCF 服务](../debugger/debugging-wcf-services.md)
-- [如何：调试自托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [如何：调试自托管 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

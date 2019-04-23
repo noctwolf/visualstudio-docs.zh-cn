@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad3dddec84ac8afc00681171bf59d13205229ca7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 533ad333923edf2e3f55ed5c4e85b42f422a573a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072365"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "58930340"
   
 ### <a name="to-specify-a-support-url"></a>若要指定一个支持 URL  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击“发布”选项卡。  
+2. 单击“发布”选项卡。  
   
-3.  单击**选项**按钮以打开**发布选项**对话框。  
+3. 单击**选项**按钮以打开**发布选项**对话框。  
   
-4.  单击**说明**。  
+4. 单击**说明**。  
   
-5.  在中**支持 URL**字段中，输入网站、 Web 页或 UNC 共享的完全限定的路径。  
+5. 在中**支持 URL**字段中，输入网站、 Web 页或 UNC 共享的完全限定的路径。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

@@ -1,7 +1,7 @@
 ---
 title: 安装或升级问题疑难解答
 description: 有时，你难免遇到一些问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 464bd3a6e4c5ed8ade1f9174ff205e2eda5c4aff
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325115"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857380"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Visual Studio 安装和升级问题疑难解答
 
@@ -35,7 +35,17 @@ ms.locfileid: "58325115"
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>第 1 步 - 检查此问题是否是已知问题
 
+::: moniker range="vs-2017"
+
 Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修复中。 若要确定你遇到的问题是否有解决办法，请参阅[发行说明的“已知问题”部分](/visualstudio/releasenotes/vs2017-relnotes#-known-issues)。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修复中。 若要确定你遇到的问题是否有解决办法，请参阅[发行说明的“已知问题”部分](/visualstudio/releases/2019/release-notes#-known-issues)。
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>第 2 步 - 通过开发者社区获取帮助
 
@@ -48,20 +58,47 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 > [!NOTE]
 > 执行以下操作将重新安装 Visual Studio 安装程序文件并重置安装元数据。
 
+::: moniker range="vs-2017"
+
 1. 关闭 Visual Studio 安装程序。
 2. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
 3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
 4. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 关闭 Visual Studio 安装程序。
+2. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
+3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
+4. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
+
+::: moniker-end
+
 ### <a name="step-4---report-a-problem"></a>第 4 步 - 报告问题
 
 在某些情况下（如出现与文件损坏相关的问题时），可能需要逐个调查每个问题。 为便于我们为你提供帮助，请执行以下操作：
+
+::: moniker range="vs-2017"
 
 1. 收集安装日志。 有关详细信息，请参阅[如何获取 Visual Studio 安装日志](#how-to-get-visual-studio-installation-logs)。
 2. 打开 Visual Studio 安装程序，然后单击“报告问题”，打开 Visual Studio 反馈工具。
 ![可以使用 Tab 键定位到“提供反馈”按钮，从而打开反馈工具](media/report-a-problem.png)
 3. 为问题报告命名一个标题，然后输入相关详细信息。 单击“下一步”，转到“附件”部分，然后附加生成的日志文件（此文件通常位于 `%TEMP%\vslogs.zip`）。
 4. 单击“下一步”，检查问题报告，然后单击“提交”。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 收集安装日志。 有关详细信息，请参阅[如何获取 Visual Studio 安装日志](#how-to-get-visual-studio-installation-logs)。
+2. 打开 Visual Studio 安装程序，然后单击“报告问题”，打开 Visual Studio 反馈工具。
+![可以使用 Tab 键定位到“提供反馈”按钮，从而打开反馈工具](media/vs-2019/vs-installer-report-problem.png)
+3. 为问题报告命名一个标题，然后输入相关详细信息。 单击“下一步”，转到“附件”部分，然后附加生成的日志文件（此文件通常位于 `%TEMP%\vslogs.zip`）。
+4. 单击“下一步”，检查问题报告，然后单击“提交”。
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>第 5 步 - 运行 InstallCleanup.exe 以删除安装文件
 

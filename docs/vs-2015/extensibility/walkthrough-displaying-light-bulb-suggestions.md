@@ -8,12 +8,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e13ce65888ace73ca58bfbc5690330fd8265ad8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 32d567ab4c71bdf4716a4c61464e1ee4ba6ecfa4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931289"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099766"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>演练：显示灯泡建议
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58931289"
   
 - [如何：编写 Visual Basic 诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
-  C + + 等其他语言还提供一些快速操作，如创建该函数的存根 （stub） 实现建议灯泡。  
+  其他语言，如C++还提供一些快速操作，如创建该函数的存根 （stub） 实现建议灯泡。  
   
   下面是一个灯泡如下所示。 在 Visual Basic 或 Visual C# 项目中，红色曲线将显示在变量名称下时是无效的。 当您将鼠标移到无效的标识符时，在光标附近将显示灯泡。  
   
@@ -43,19 +43,19 @@ ms.locfileid: "58931289"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>创建 Managed Extensibility Framework (MEF) 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `LightBulbTest`。  
+1. 创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `LightBulbTest`。  
   
-2.  添加**编辑器分类器**到项目项模板。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 添加**编辑器分类器**到项目项模板。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  删除现有的类文件。  
+3. 删除现有的类文件。  
   
-4.  添加以下引用到项目中，并设置**Copy Local**到`False`:  
+4. 添加以下引用到项目中，并设置**Copy Local**到`False`:  
   
      Microsoft.VisualStudio.Language.Intellisense  
   
-5.  添加一个新类文件并将其命名**LightBulbTest**。  
+5. 添加一个新类文件并将其命名**LightBulbTest**。  
   
-6.  添加以下 using 语句：  
+6. 添加以下 using 语句：  
   
     ```csharp  
     using System;  
@@ -74,7 +74,7 @@ ms.locfileid: "58931289"
   
 ## <a name="implementing-the-light-bulb-source-provider"></a>实现灯泡源提供程序  
   
-1.  在 LightBulbTest.cs 类文件中，删除 LightBulbTest 类。 添加名为的类**TestSuggestedActionsSourceProvider**实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。 使用的名称将其导出**测试建议的操作**和一个<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"text"。  
+1. 在 LightBulbTest.cs 类文件中，删除 LightBulbTest 类。 添加名为的类**TestSuggestedActionsSourceProvider**实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。 使用的名称将其导出**测试建议的操作**和一个<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"text"。  
   
     ```csharp  
     [Export(typeof(ISuggestedActionsSourceProvider))]  
@@ -83,14 +83,14 @@ ms.locfileid: "58931289"
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider  
     ```  
   
-2.  在源提供程序类中，导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>并将其添加为属性。  
+2. 在源提供程序类中，导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>并将其添加为属性。  
   
     ```csharp  
     [Import(typeof(ITextStructureNavigatorSelectorService))]  
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }  
     ```  
   
-3.  实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A>方法以返回<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>对象。 我们将讨论下一节中的源。  
+3. 实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A>方法以返回<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>对象。 我们将讨论下一节中的源。  
   
     ```csharp  
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)  
@@ -106,13 +106,13 @@ ms.locfileid: "58931289"
 ## <a name="implementing-the-isuggestedactionsource"></a>实现 ISuggestedActionSource  
  建议的操作源负责收集的一套建议的操作并将其添加在正确的环境。 在这种情况下的上下文是当前的单词和建议的操作都**UpperCaseSuggestedAction**和**LowerCaseSuggestedAction**，我们将讨论下一节中。  
   
-1.  将类添加**TestSuggestedActionsSource**实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+1. 将类添加**TestSuggestedActionsSource**实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
   
     ```csharp  
     internal class TestSuggestedActionsSource : ISuggestedActionsSource  
     ```  
   
-2.  建议的操作源提供程序、 文本缓冲区和文本视图中添加专用的只读字段。  
+2. 建议的操作源提供程序、 文本缓冲区和文本视图中添加专用的只读字段。  
   
     ```csharp  
     private readonly TestSuggestedActionsSourceProvider m_factory;  
@@ -120,7 +120,7 @@ ms.locfileid: "58931289"
     private readonly ITextView m_textView;  
     ```  
   
-3.  添加设置私有字段的构造函数。  
+3. 添加设置私有字段的构造函数。  
   
     ```csharp  
     public TestSuggestedActionsSource(TestSuggestedActionsSourceProvider testSuggestedActionsSourceProvider, ITextView textView, ITextBuffer textBuffer)  
@@ -131,7 +131,7 @@ ms.locfileid: "58931289"
     }  
     ```  
   
-4.  添加一个私有方法返回当前光标下的单词。 以下方法看起来在光标的当前位置，并要求提供的字范围文本结构导航器。 如果光标在字词<xref:Microsoft.VisualStudio.Text.Operations.TextExtent>输出参数中返回; 否则为`out`参数是`null`并且该方法返回`false`。  
+4. 添加一个私有方法返回当前光标下的单词。 以下方法看起来在光标的当前位置，并要求提供的字范围文本结构导航器。 如果光标在字词<xref:Microsoft.VisualStudio.Text.Operations.TextExtent>输出参数中返回; 否则为`out`参数是`null`并且该方法返回`false`。  
   
     ```csharp  
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)  
@@ -156,7 +156,7 @@ ms.locfileid: "58931289"
     }  
     ```  
   
-5.  实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> 方法。 编辑器中调用此方法来找出是否显示灯泡图标中。 进行此调用可能经常例如只要将光标从一个行移动到另一个，或者当鼠标悬停在该错误曲线。 它是为了允许使用此方法时执行其他 UI 操作异步的。 在大多数情况下，此方法需要对其执行某些分析和分析的当前行，因此在处理可能需要一些时间。  
+5. 实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A> 方法。 编辑器中调用此方法来找出是否显示灯泡图标中。 进行此调用可能经常例如只要将光标从一个行移动到另一个，或者当鼠标悬停在该错误曲线。 它是为了允许使用此方法时执行其他 UI 操作异步的。 在大多数情况下，此方法需要对其执行某些分析和分析的当前行，因此在处理可能需要一些时间。  
   
      在我们的实现它以异步方式获取<xref:Microsoft.VisualStudio.Text.Operations.TextExtent>并确定范围是否有效，即它是否有一些文本，而不是空格。  
   
@@ -176,7 +176,7 @@ ms.locfileid: "58931289"
     }  
     ```  
   
-6.  实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A>方法，返回的数组<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>包含不同的对象<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>对象。 灯泡图标展开时，调用此方法。  
+6. 实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A>方法，返回的数组<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>包含不同的对象<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>对象。 灯泡图标展开时，调用此方法。  
   
     > [!WARNING]
     >  应确保的实现`HasSuggestedActionsAsync()`并`GetSuggestedActions()`是否一致; 即，如果`HasSuggestedActionsAsync()`返回`true`，然后`GetSuggestedActions()`应具有某些操作来显示。 在许多情况下`HasSuggestedActionsAsync()`之前调用`GetSuggestedActions()`，但并不总是这种情况。 例如，如果用户通过按调用灯泡操作 (CTRL +。) 仅`GetSuggestedActions()`调用。  
@@ -196,13 +196,13 @@ ms.locfileid: "58931289"
     }   
     ```  
   
-7.  定义`SuggestedActionsChanged`事件。  
+7. 定义`SuggestedActionsChanged`事件。  
   
     ```csharp  
     public event EventHandler<EventArgs> SuggestedActionsChanged;  
     ```  
   
-8.  若要完成实现，添加实现`Dispose()`和`TryGetTelemetryId()`方法。 我们不希望执行遥测数据，因此只返回 false 并将 GUID 设置为空。  
+8. 若要完成实现，添加实现`Dispose()`和`TryGetTelemetryId()`方法。 我们不希望执行遥测数据，因此只返回 false 并将 GUID 设置为空。  
   
     ```csharp  
     public void Dispose()  
@@ -219,9 +219,9 @@ ms.locfileid: "58931289"
   
 ## <a name="implementing-light-bulb-actions"></a>实现灯泡操作  
   
-1.  在项目中，添加对 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 并集的引用**Copy Local**到`False`。  
+1. 在项目中，添加对 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 并集的引用**Copy Local**到`False`。  
   
-2.  创建两个类，第一个名为 `UpperCaseSuggestedAction` ，第二个名为 `LowerCaseSuggestedAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
+2. 创建两个类，第一个名为 `UpperCaseSuggestedAction` ，第二个名为 `LowerCaseSuggestedAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
@@ -230,7 +230,7 @@ ms.locfileid: "58931289"
   
      这两个类相似，只不过其中一个调用 <xref:System.String.ToUpper%2A>，另一个调用 <xref:System.String.ToLower%2A>。 以下步骤仅说明大写操作类，但你必须实现这两个类。 将实现大写操作的步骤用作实现小写操作的模式。  
   
-3.  添加以下 using 语句，这些类：  
+3. 添加以下 using 语句，这些类：  
   
     ```csharp  
     using Microsoft.VisualStudio.Imaging.Interop;  
@@ -241,7 +241,7 @@ ms.locfileid: "58931289"
   
     ```  
   
-4.  声明一组私有字段。  
+4. 声明一组私有字段。  
   
     ```csharp  
     private ITrackingSpan m_span;  
@@ -250,7 +250,7 @@ ms.locfileid: "58931289"
     private ITextSnapshot m_snapshot;  
     ```  
   
-5.  添加设置该字段的构造函数。  
+5. 添加设置该字段的构造函数。  
   
     ```csharp  
     public UpperCaseSuggestedAction(ITrackingSpan span)  
@@ -262,7 +262,7 @@ ms.locfileid: "58931289"
     }  
     ```  
   
-6.  实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A>方法，以便它显示在操作预览。  
+6. 实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A>方法，以便它显示在操作预览。  
   
     ```csharp  
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)  
@@ -274,7 +274,7 @@ ms.locfileid: "58931289"
     }  
     ```  
   
-7.  实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A>方法，以便它返回一个空<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>枚举。  
+7. 实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A>方法，以便它返回一个空<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>枚举。  
   
     ```csharp  
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)  
@@ -283,7 +283,7 @@ ms.locfileid: "58931289"
     }  
     ```  
   
-8.  如下所示实现属性。  
+8. 如下所示实现属性。  
   
     ```csharp  
     public bool HasActionSets  
@@ -350,18 +350,18 @@ ms.locfileid: "58931289"
 ## <a name="building-and-testing-the-code"></a>生成和测试代码  
  若要测试此代码，生成 LightBulbTest 解决方案并在实验实例中运行它。  
   
-1.  生成解决方案。  
+1. 生成解决方案。  
   
-2.  在调试器中运行此项目时，Visual Studio 的第二个实例将进行实例化。  
+2. 在调试器中运行此项目时，Visual Studio 的第二个实例将进行实例化。  
   
-3.  创建一个文本文件并键入一些文本。 应会看到文本的左侧的灯泡。  
+3. 创建一个文本文件并键入一些文本。 应会看到文本的左侧的灯泡。  
   
      ![测试灯泡](../extensibility/media/testlightbulb.png "TestLIghtBulb")  
   
-4.  指向灯泡图标中。 应看到向下箭头。  
+4. 指向灯泡图标中。 应看到向下箭头。  
   
-5.  当您单击灯泡图标中时，两个建议的操作应显示，以及所选操作的预览。  
+5. 当您单击灯泡图标中时，两个建议的操作应显示，以及所选操作的预览。  
   
      ![测试灯泡已展开](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")  
   
-6.  如果单击第一个操作，则当前单词中的所有文本都将转换为大写。 如果单击第二个操作，则所有文本都将转换为小写。
+6. 如果单击第一个操作，则当前单词中的所有文本都将转换为大写。 如果单击第二个操作，则所有文本都将转换为小写。

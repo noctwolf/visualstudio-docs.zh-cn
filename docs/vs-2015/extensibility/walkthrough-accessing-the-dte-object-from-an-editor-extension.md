@@ -10,12 +10,12 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 656ca1e4bfaa37afa3a8da8516e67c33bf315dc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b14b59465b94ddd0a09748f0e309166bf3d4114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065813"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练：通过编辑器扩展访问 DTE 对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "58934083"
   
 #### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>若要从该服务提供商获取 DTE 对象  
   
-1.  创建一个名为 C# VSIX 项目`DTETest`。 添加编辑器分类器项模板并将其命名`DTETest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+1. 创建一个名为 C# VSIX 项目`DTETest`。 添加编辑器分类器项模板并将其命名`DTETest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-2.  添加对项目的以下程序集引用：  
+2. 添加对项目的以下程序集引用：  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.Shell.Immutable.10.0  
+    - Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  转到 DTETest.cs 文件，并添加以下`using`指令：  
+3. 转到 DTETest.cs 文件，并添加以下`using`指令：  
   
     ```csharp  
     using EnvDTE;  
@@ -48,7 +48,7 @@ ms.locfileid: "58934083"
   
     ```  
   
-4.  在中`GetDTEProvider`类中，导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
+4. 在中`GetDTEProvider`类中，导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
   
     ```csharp  
     [Import]  
@@ -56,14 +56,14 @@ ms.locfileid: "58934083"
   
     ```  
   
-5.  在 `GetClassifier()` 方法中，添加以下代码。  
+5. 在 `GetClassifier()` 方法中，添加以下代码。  
   
     ```csharp  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  
   
-6.  如果您必须使用<xref:EnvDTE80.DTE2>接口，可以强制转换为它的 DTE 对象。  
+6. 如果您必须使用<xref:EnvDTE80.DTE2>接口，可以强制转换为它的 DTE 对象。  
   
 ## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

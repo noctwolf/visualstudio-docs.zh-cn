@@ -10,12 +10,12 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083356"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ ms.locfileid: "58936740"
   
  以下几个方面是核心编辑器的一些重要方面：  
   
--   文本缓冲区  
+- 文本缓冲区  
   
--   文本视图  
+- 文本视图  
   
--   “代码”窗口  
+- “代码”窗口  
   
--   文本标记  
+- 文本标记  
   
--   文本管理器  
+- 文本管理器  
   
--   与语言服务的集成  
+- 与语言服务的集成  
   
 ## <a name="in-this-section"></a>本节内容  
  [使用旧 API 实例化核心编辑器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  

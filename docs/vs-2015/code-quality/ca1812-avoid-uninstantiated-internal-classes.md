@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081991"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免未实例化的内部类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +59,9 @@ ms.locfileid: "58931898"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请删除类型或添加使用它的代码。 如果类型仅包含静态方法，请将以下项之一添加到要阻止编译器发出的默认公共实例构造函数的类型：
 
--   私有构造函数的类型面向[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]1.0 和 1.1 版。
+- 私有构造函数的类型面向[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]1.0 和 1.1 版。
 
--   `static` (`Shared`在 Visual Basic 中) 修饰符类型面向[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]。
+- `static` (`Shared`在 Visual Basic 中) 修饰符类型面向[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它可以安全地禁止显示此规则的警告。 我们建议您取消显示在以下情况下的此警告：

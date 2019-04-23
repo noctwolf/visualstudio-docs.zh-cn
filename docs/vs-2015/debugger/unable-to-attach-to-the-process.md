@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 473afbdbbeb510434d45bf28dc02a3ff636d2b9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063083"
 ---
 # <a name="unable-to-attach-to-the-process"></a>无法附加到进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,26 +42,26 @@ ms.locfileid: "58935774"
   
 ### <a name="to-solve-scenario-1"></a>解决方案 1  
   
--   在同一用户帐户名和密码下运行调试器和托管应用程序。  
+- 在同一用户帐户名和密码下运行调试器和托管应用程序。  
   
 ### <a name="to-solve-scenario-2"></a>解决方案 2  
   
-1.  从“开始”菜单中，选择“控制面板”。  
+1. 从“开始”菜单中，选择“控制面板”。  
   
-2.  在“控制面板”中双击“管理工具”。  
+2. 在“控制面板”中双击“管理工具”。  
   
-3.  在“管理工具”窗口中双击“本地安全策略”。  
+3. 在“管理工具”窗口中双击“本地安全策略”。  
   
-4.  在“本地安全策略”窗口中，选择“本地策略”。  
+4. 在“本地安全策略”窗口中，选择“本地策略”。  
   
-5.  在中**策略**列中，双击**网络访问：本地帐户的共享和安全模型**。  
+5. 在中**策略**列中，双击**网络访问：本地帐户的共享和安全模型**。  
   
-6.  在**网络访问：本地帐户的共享和安全模型**对话框框中，将本地安全设置更改为**经典**，然后单击**确定**。  
+6. 在**网络访问：本地帐户的共享和安全模型**对话框框中，将本地安全设置更改为**经典**，然后单击**确定**。  
   
     > [!CAUTION]
     >    将安全模型更改为“传统型”可能会导致对共享文件和 DCOM 组件的意外访问。 如果进行此更改，则远程用户可以使用您的本地用户帐户（而不是“来宾”）进行身份验证。 如果某个远程用户与您的用户名和密码匹配，则该用户将能够访问您已对外共享的任何文件夹或 DCOM 对象。如果您使用此安全模型，请确保计算机上的所有用户帐户都具有强密码，或者为正在调试或已经调试过的计算机设置独立的网络孤岛以防止未经授权的访问。  
   
-7.  关闭所有窗口。  
+7. 关闭所有窗口。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

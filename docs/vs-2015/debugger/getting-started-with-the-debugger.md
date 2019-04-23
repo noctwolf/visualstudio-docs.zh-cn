@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931993"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109513"
 ---
 # <a name="getting-started-with-the-debugger"></a>调试程序入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 调试器在任何语言环境下都易于使用。 下面我们将介绍如何调试一个简单的 C# 程序，但你也可以对使用 C++ 和 JavaScript 等其他语言的代码应用相同的步骤。  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> 调试一个基本 C# 项目  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> 调试一个基本 C# 项目  
  让我们先简单 C# 控制台应用程序 (**文件 / 新建 / 项目**，然后选择**Visual C#** ，然后选择**控制台应用程序**)。 如果你从未使用过之前的 Visual Studio，请参阅[演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。 **Main**方法只需将 1 添加到整数变量 10 次，并打印到控制台的结果：  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  有关断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。  
   
-##  <a name="BKMK_Inspect_Variables"></a> 检查变量  
+## <a name="BKMK_Inspect_Variables"></a> 检查变量  
  调试通常涉及到查找不包含预期的特定点的值的变量。 我们将介绍几种您可以检查变量。  
   
  再次开始调试。 在执行 `Console.WriteLine` 代码之前停止执行。 您可能会导致它执行通过单步前进 (单击**调试 / 单步 Over**或**F10**)。 在这种情况下你可能已选择**单步执行**(**F11**) 并获得相同的结果; 我们稍后将介绍不同之处。 具有方法的最后一个大括号的行应已变为黄色。 查看控制台窗口。 应会看到**10**。  

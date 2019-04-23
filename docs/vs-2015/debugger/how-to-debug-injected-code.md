@@ -26,12 +26,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055357"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：调试插入的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +49,25 @@ ms.locfileid: "58931598"
   
 ### <a name="to-turn-on-source-annotation"></a>打开源批注  
   
--   右键单击“反汇编”窗口，然后从快捷菜单中选定“显示源代码”。  
+- 右键单击“反汇编”窗口，然后从快捷菜单中选定“显示源代码”。  
   
      如果知道属性在源窗口中的位置，则可以使用快捷菜单在“反汇编”窗口中查找插入的代码。  
   
 ### <a name="to-view-injected-code"></a>查看插入的代码  
   
-1.  调试器必须处于中断模式。  
+1. 调试器必须处于中断模式。  
   
-2.  在源代码窗口中，将光标放在要查看其插入代码的特性前面。  
+2. 在源代码窗口中，将光标放在要查看其插入代码的特性前面。  
   
-3.  右键单击并从快捷菜单中选择“转到反汇编”。  
+3. 右键单击并从快捷菜单中选择“转到反汇编”。  
   
      如果属性位置在当前执行点附近，则可以从“调试”菜单选择“反汇编”窗口。  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>查看当前执行点处的反汇编代码  
   
-1.  调试器必须处于中断模式。  
+1. 调试器必须处于中断模式。  
   
-2.  从“调试”菜单中选择“窗口”，然后单击“反汇编”。  
+2. 从“调试”菜单中选择“窗口”，然后单击“反汇编”。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

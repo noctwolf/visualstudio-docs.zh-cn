@@ -9,18 +9,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bc9b014eede5ac19935f29ed8317e1507ae8a42
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f762920f61b649023f98810f7de8cdb7e3cf908a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000688"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662391"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>“混合建议规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft 混合建议规则重点关注支持公共语言运行时，包括潜在安全漏洞、 应用程序崩溃和其他重要的逻辑和设计错误在 c + + 项目中最常见和最重要问题。 应包括任何自定义规则集中设置为支持公共语言运行时在 c + + 项目创建此规则。 此规则集旨在与 Visual Studio 专业版和更高版本进行配置。  
-
+Microsoft 混合建议规则重点关注中最常见和严重问题在C++支持公共语言运行时，包括潜在安全漏洞、 应用程序崩溃和其他重要的逻辑和设计错误的项目。 应包含此规则集创建的任何自定义规则集中将C++支持公共语言运行时的项目。 此规则集旨在与 Visual Studio 专业版和更高版本进行配置。  
 
 |                                                              规则                                                              |                                                             描述                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|

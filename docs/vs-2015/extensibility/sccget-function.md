@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baaa2691783562240b5e465c98aab43e6f8cd1e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068296"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|获取操作的成功。|  
 |SCC_E_FILENOTCONTROLLED|文件不是源代码管理下。|  
@@ -86,21 +86,21 @@ SCCRTN SccGet(
   
  有两种方法来解决这种情况下，源控制版本的本地缓存变得与源代码管理数据库不同步：  
   
-1.  不允许重命名当前已签出源代码管理数据库中的文件。  
+1. 不允许重命名当前已签出源代码管理数据库中的文件。  
   
-2.  执行操作"删除旧"后跟"添加新"的等效项。 下面的算法是一种方法来实现此目的。  
+2. 执行操作"删除旧"后跟"添加新"的等效项。 下面的算法是一种方法来实现此目的。  
   
-    1.  调用[SccQueryChanges](../extensibility/sccquerychanges-function.md)若要了解如何重命名为 b.txt 源代码管理数据库中的 a.txt 的函数。  
+    1. 调用[SccQueryChanges](../extensibility/sccquerychanges-function.md)若要了解如何重命名为 b.txt 源代码管理数据库中的 a.txt 的函数。  
   
-    2.  将本地 a.txt 重命名为 b.txt。  
+    2. 将本地 a.txt 重命名为 b.txt。  
   
-    3.  调用`SccGet`a.txt 和 b.txt 函数。  
+    3. 调用`SccGet`a.txt 和 b.txt 函数。  
   
-    4.  源代码管理数据库中不存在 a.txt，因为本地版本缓存会清除缺失 a.txt 版本信息。  
+    4. 源代码管理数据库中不存在 a.txt，因为本地版本缓存会清除缺失 a.txt 版本信息。  
   
-    5.  正在签出的 b.txt 文件与本地 b.txt 文件的内容合并。  
+    5. 正在签出的 b.txt 文件与本地 b.txt 文件的内容合并。  
   
-    6.  现在可以检查更新的 b.txt 文件。  
+    6. 现在可以检查更新的 b.txt 文件。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

@@ -12,12 +12,12 @@ ms.assetid: a10b0764-65ac-476f-bf42-b4a9c38e20de
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10e5b03f2a9c275de3ac3d8259582aee771a20f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7344bc5b830de07a72a86537af6839ab0993518a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044455"
 ---
 # <a name="getting-local-values"></a>获取局部值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "58935355"
   
  此实现`IDebugProperty2::GetPropertyInfo`执行下列任务：  
   
-1.  获取局部变量的名称、 属性和属性从[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)类已实例化和初始化时填充的结构。  
+1. 获取局部变量的名称、 属性和属性从[FIELD_INFO](../../extensibility/debugger/reference/field-info.md)类已实例化和初始化时填充的结构。  
   
-2.  获取局部变量的类型从[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象。  
+2. 获取局部变量的类型从[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象。  
   
-3.  获取局部变量的值从`IDebugField`对象。 此字段绑定到的本地使用的内存位置[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)对象和值从生成获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
+3. 获取局部变量的值从`IDebugField`对象。 此字段绑定到的本地使用的内存位置[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)对象和值从生成获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
   
-4.  返回所有请求中的属性[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)结构。  
+4. 返回所有请求中的属性[DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)结构。  
   
 ## <a name="managed-code"></a>托管代码  
  此示例演示一种实现`IDebugProperty2::GetPropertyInfo`为一种方法的本地托管代码中。 它还显示一个帮助程序函数， `Field.GetType`，即用于获取字段的类型。 `Field.GetValue` 中所示[评估局部变量](../../extensibility/debugger/evaluating-locals.md)。 帮助器函数`Field.MapModifiersToAttributes`（未显示） 只需将转换的字段[FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md)到标志[DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md)值。  

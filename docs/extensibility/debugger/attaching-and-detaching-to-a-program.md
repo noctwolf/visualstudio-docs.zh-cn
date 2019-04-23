@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089596"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加和分离到程序
 附加调试器需要发送正确的方法和使用适当的属性的事件顺序。
@@ -31,11 +31,11 @@ ms.locfileid: "56706010"
 
     如果`S_OK`返回，DE 会加载 SDM 作为在同一进程中。 SDM 执行以下任务：
 
-   1.  调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。
+   1. 调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。
 
-   2.  共同创建 DE。
+   2. 共同创建 DE。
 
-   3.  调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。
+   3. 调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。
 
 2. DE 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)到使用 SDM`EVENT_SYNC`属性。
 

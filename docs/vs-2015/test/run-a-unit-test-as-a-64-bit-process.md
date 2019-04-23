@@ -11,12 +11,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 27
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ce0c3e897795e231097f6364be19576358f5ea4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cc3ff63e13dc3723cff9e87ce40e6a57b062179f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114296"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>将单元测试作为 64 位进程运行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ ms.locfileid: "54784623"
   
 #### <a name="to-run-a-unit-test-as-a-64-bit-process"></a>将单元测试作为 64 位进程运行的具体步骤  
   
-1.  如果代码或测试是以 32 位/x86 形式编译，但现在希望将它们作为 64 位进程运行，请将它们重新编译为“任何 CPU”或“64 位”。  
+1. 如果代码或测试是以 32 位/x86 形式编译，但现在希望将它们作为 64 位进程运行，请将它们重新编译为“任何 CPU”或“64 位”。  
   
     > [!TIP]
     >  为了最大限度地提高灵活性，应使用“任何 CPU”配置来编译测试项目。 然后，可以在 32 位和 64 位代理上运行。 使用“64 位”配置编译测试项目毫无优势可言。  
   
-2.  在 Visual Studio 菜单中，依次选择“测试”、“设置”和“处理器体系结构”。 选择“x64”，将测试作为 64 位进程运行。  
+2. 在 Visual Studio 菜单中，依次选择“测试”、“设置”和“处理器体系结构”。 选择“x64”，将测试作为 64 位进程运行。  
   
      \- 或 -  
   

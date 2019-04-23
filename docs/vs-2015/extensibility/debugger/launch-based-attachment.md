@@ -11,12 +11,12 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 015443968350b63f804858166860ce34d47991af
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 09a6b39bef9ba6af098bf92d779a490e22492209
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58937998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044845"
 ---
 # <a name="launch-based-attachment"></a>基于启动的附件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "58937998"
 ## <a name="the-attaching-process"></a>附加进程  
  主要区别是事件的顺序**附加**调用，请按如下所示：  
   
-1.  发送**IDebugEngineCreateEvent2**到 SDM 事件对象。 有关详细信息，请参阅[发送事件](../../extensibility/debugger/sending-events.md)。  
+1. 发送**IDebugEngineCreateEvent2**到 SDM 事件对象。 有关详细信息，请参阅[发送事件](../../extensibility/debugger/sending-events.md)。  
   
-2.  调用`IDebugProgram2::GetProgramId`方法**IDebugProgram2**接口传递给**附加**方法。  
+2. 调用`IDebugProgram2::GetProgramId`方法**IDebugProgram2**接口传递给**附加**方法。  
   
-3.  发送**IDebugProgramCreateEvent2**事件对象，以通知 SDM 的本地**IDebugProgram2**创建对象时用于表示 DE 程序。  
+3. 发送**IDebugProgramCreateEvent2**事件对象，以通知 SDM 的本地**IDebugProgram2**创建对象时用于表示 DE 程序。  
   
-4.  发送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件对象，以通知 SDM 启动的进程会创建一个新线程。  
+4. 发送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)事件对象，以通知 SDM 启动的进程会创建一个新线程。  
   
 ## <a name="see-also"></a>请参阅  
  [发送必需的事件](../../extensibility/debugger/sending-the-required-events.md)   

@@ -14,17 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2f570252a5bf87d0949bcda04ba312fe8092704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773033"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657501"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。  
   
 ## <a name="toolsversion-attribute"></a>ToolsVersion 特性  
@@ -72,7 +71,7 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
   
 - 使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
   
-  工具集属性指定工具的路径。 MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
+  工具集属性指定工具的路径。 MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   这些是工具集属性：  
   

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 546ca45ed48f9fc247bd5706005153f41cf206e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082394"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 
@@ -34,11 +34,11 @@ ms.locfileid: "55926757"
 
  更新数据源的确切步骤可以根据业务需求而有所不同，但包括以下步骤：
 
-1.  调用该适配器`Update`中的方法`try` / `catch`块。
+1. 调用该适配器`Update`中的方法`try` / `catch`块。
 
-2.  如果捕获到异常，找到导致此错误的数据行。
+2. 如果捕获到异常，找到导致此错误的数据行。
 
-3.  解决此问题在数据行 （您可以如果以编程方式或无效的行显示给用户进行修改），并再试一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。
+3. 解决此问题在数据行 （您可以如果以编程方式或无效的行显示给用户进行修改），并再试一次更新 (<xref:System.Data.DataRow.HasErrors%2A>， <xref:System.Data.DataTable.GetErrors%2A>)。
 
 ## <a name="save-data-to-a-database"></a>将数据保存到数据库
 
@@ -46,7 +46,7 @@ ms.locfileid: "55926757"
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>若要使用 TableAdapter 更新数据库
 
--   将 TableAdapter`Update`中的方法`try` / `catch`块。 下面的示例演示如何更新的内容`Customers`表中`NorthwindDataSet`内`try` / `catch`块。
+- 将 TableAdapter`Update`中的方法`try` / `catch`块。 下面的示例演示如何更新的内容`Customers`表中`NorthwindDataSet`内`try` / `catch`块。
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

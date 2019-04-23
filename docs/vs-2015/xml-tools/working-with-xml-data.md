@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3467b33a7dd152de439d7859c89b5b3707fea7ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092170"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 及其相关技术对 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 中处理数据的方式起着十分重要的作用。 Visual Studio 提供了一些工具和功能，可以更加容易地使用 XML、XSLT 和 XML 架构。  
   
 ## <a name="xml-editor"></a>XML 编辑器  
@@ -27,17 +26,17 @@ XML 及其相关技术对 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visua
   
  其他功能包括：  
   
--   XML 代码段支持，包括从架构生成的代码段。  
+- XML 代码段支持，包括从架构生成的代码段。  
   
--   文档大纲，使元素可以展开和折叠。  
+- 文档大纲，使元素可以展开和折叠。  
   
--   执行 XSLT 转换以及以文本、XML 或 HTML 的形式查看结果的功能。  
+- 执行 XSLT 转换以及以文本、XML 或 HTML 的形式查看结果的功能。  
   
--   用于从 XML 实例文档生成 XML 架构定义语言 (XSD) 架构的功能。  
+- 用于从 XML 实例文档生成 XML 架构定义语言 (XSD) 架构的功能。  
   
--   支持编辑 XSLT 样式表，包括 IntelliSense 支持。  
+- 支持编辑 XSLT 样式表，包括 IntelliSense 支持。  
   
--   XML 架构资源管理器  
+- XML 架构资源管理器  
   
 ## <a name="xml-schema-designer"></a>XML 架构设计器  
  Microsoft Visual Studio 2010 和 XML 编辑器中集成了 XML 架构设计器，从而您可以使用 XML 架构定义语言 (XSD) 架构。  

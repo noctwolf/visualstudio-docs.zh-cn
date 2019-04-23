@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078637"
 ---
 # <a name="responding-to-and-propagating-changes"></a>响应并传播更改
 元素是创建、 删除或更新时，您可以编写将传播到模型，其他部件或外部资源，例如文件、 数据库或其他组件的更改的代码。
@@ -41,13 +41,13 @@ ms.locfileid: "58416027"
 
  使用存储事件以同步模型与应用商店和规则，以保持在存储中的一致性之外的对象。
 
--   **创建自定义规则**作为抽象规则从派生类中创建自定义规则。 此外必须通知的自定义规则的相关框架。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
+- **创建自定义规则**作为抽象规则从派生类中创建自定义规则。 此外必须通知的自定义规则的相关框架。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
 
--   **订阅事件**可以订阅事件之前，请创建一个事件处理程序和委托。 然后，使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>属性来订阅事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+- **订阅事件**可以订阅事件之前，请创建一个事件处理程序和委托。 然后，使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>属性来订阅事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
--   **正在撤消更改**时撤销的事务，会引发事件，但不是会应用规则。 如果将值更改为一个规则，并且撤消所做的更改，值是重置为原始值在撤消操作过程。 当引发事件时，你必须手动更改回其原始值的值。 若要了解有关事务和撤消的详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+- **正在撤消更改**时撤销的事务，会引发事件，但不是会应用规则。 如果将值更改为一个规则，并且撤消所做的更改，值是重置为原始值在撤消操作过程。 当引发事件时，你必须手动更改回其原始值的值。 若要了解有关事务和撤消的详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
--   **将事件自变量传递到规则和事件**这两个事件和传递规则`EventArgs`参数，其中包含有关如何信息的模型更改。
+- **将事件自变量传递到规则和事件**这两个事件和传递规则`EventArgs`参数，其中包含有关如何信息的模型更改。
 
 ## <a name="see-also"></a>请参阅
 

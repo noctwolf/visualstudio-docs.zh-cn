@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106445"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>如何：使用调用堆栈窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,53 +62,53 @@ ms.locfileid: "58930831"
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>以中断模式或运行模式显示“调用堆栈”窗口  
   
--   上**调试**菜单中，选择**Windows** ，然后单击**调用堆栈**。  
+- 上**调试**菜单中，选择**Windows** ，然后单击**调用堆栈**。  
   
 ### <a name="to-change-the-optional-information-displayed"></a>更改显示的可选信息  
   
--   右键单击**调用堆栈**窗口和设置或清除**显示\<** _所需的信息_**>**.  
+- 右键单击**调用堆栈**窗口和设置或清除**显示\<** _所需的信息_**>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>在“调用堆栈”窗口中显示非用户代码帧  
   
--   右键单击“调用堆栈”窗口，然后选择“显示外部代码”。  
+- 右键单击“调用堆栈”窗口，然后选择“显示外部代码”。  
   
 ### <a name="to-switch-to-another-stack-frame"></a>切换到另一个堆栈帧  
   
-1.  在中**调用堆栈**窗口中，右键单击该帧其代码和您想要查看的数据。  
+1. 在中**调用堆栈**窗口中，右键单击该帧其代码和您想要查看的数据。  
   
-2.  选择“切换到帧”。  
+2. 选择“切换到帧”。  
   
      一个带有卷尾的绿色箭头显示在所选帧旁。 执行指针保留在原始帧中，仍然用黄色箭头标记。 如果从“调试”菜单中选择“单步执行”或“继续”，执行将继续在原始帧中进行，而不是在选定的帧中进行。  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>显示与其他线程之间的来回调用  
   
--   右键单击“调用堆栈”窗口，然后选择“包括对其他线程和来自其他线程的调用”。  
+- 右键单击“调用堆栈”窗口，然后选择“包括对其他线程和来自其他线程的调用”。  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>查看调用堆栈上的函数的源代码  
   
--   在“调用堆栈”窗口中，右键单击要查看其源代码的函数，然后选择“转到源代码”。  
+- 在“调用堆栈”窗口中，右键单击要查看其源代码的函数，然后选择“转到源代码”。  
   
 ### <a name="to-visually-trace-the-call-stack"></a>直观地跟踪调用堆栈  
   
-1.  在“调用堆栈”窗口中，打开快捷菜单。 选择**在代码图上显示调用堆栈**。 （键盘：**CTRL** + **SHIFT** + **`**)  
+1. 在“调用堆栈”窗口中，打开快捷菜单。 选择**在代码图上显示调用堆栈**。 （键盘：**CTRL** + **SHIFT** + **`**)  
   
      请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>查看调用堆栈上的函数的反汇编代码  
   
--   在“调用堆栈”窗口中，右键单击要查看其反汇编代码的函数，然后选择“转到反汇编”。  
+- 在“调用堆栈”窗口中，右键单击要查看其反汇编代码的函数，然后选择“转到反汇编”。  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>从“调用堆栈”窗口运行到特定函数  
   
--  在中**调用堆栈**窗口中，选择函数，右键单击并选择**运行到光标处**。  
+- 在中**调用堆栈**窗口中，选择函数，右键单击并选择**运行到光标处**。  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>在函数调用的退出点上设置断点  
   
--   请参阅[的调用堆栈函数处设置断点](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window)。  
+- 请参阅[的调用堆栈函数处设置断点](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window)。  
   
 ### <a name="to-load-symbols-for-a-module"></a>加载模块符号  
   
--   在中**调用堆栈**窗口中，右键单击显示该模块的符号的帧，你想要重新加载，然后选择**加载符号**。  
+- 在中**调用堆栈**窗口中，右键单击显示该模块的符号的帧，你想要重新加载，然后选择**加载符号**。  
   
 ## <a name="loading-symbols"></a>加载符号  
  在“调用堆栈”窗口中，可以为当前还未加载符号的代码加载调试符号。 这些符号可以是从 Microsoft 公共符号服务器下载的 .NET Framework 符号或系统符号，也可以是正在调试的计算机上的某个符号路径中的符号。  
@@ -117,25 +117,25 @@ ms.locfileid: "58930831"
   
 #### <a name="to-load-symbols"></a>加载符号  
   
-1.  在中**调用堆栈**窗口中，右键单击未加载符号的帧。 此帧将显示为灰色。  
+1. 在中**调用堆栈**窗口中，右键单击未加载符号的帧。 此帧将显示为灰色。  
   
-2.  指向**负载从符号**，然后单击**Microsoft 符号服务器**或**符号路径**。  
+2. 指向**负载从符号**，然后单击**Microsoft 符号服务器**或**符号路径**。  
   
 #### <a name="to-set-the-symbol-path"></a>设置符号路径  
   
-1.  在“调用堆栈”窗口中，从快捷菜单中选择“符号设置”。  
+1. 在“调用堆栈”窗口中，从快捷菜单中选择“符号设置”。  
   
      “选项”对话框随即打开并显示“符号”页。  
   
-2.  单击**符号设置**。  
+2. 单击**符号设置**。  
   
-3.  在“选项”对话框中单击“文件夹”图标。  
+3. 在“选项”对话框中单击“文件夹”图标。  
   
      “符号文件(.pdb)位置”框中随即出现一个光标。  
   
-4.  键入所调试的计算机上的符号位置的目录路径名。 对于本地调试，此计算机指您的本地计算机。 对于远程调试，此计算机指远程计算机。  
+4. 键入所调试的计算机上的符号位置的目录路径名。 对于本地调试，此计算机指您的本地计算机。 对于远程调试，此计算机指远程计算机。  
   
-5.  单击“确定”关闭“选项”对话框 。  
+5. 单击“确定”关闭“选项”对话框 。  
   
 ## <a name="see-also"></a>请参阅  
  [混合的代码与调用堆栈窗口中缺少的信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   

@@ -30,12 +30,12 @@ caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e88cb7ce972ef8568ec5163372e8f0edce045e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092950"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "58937432"
 
   有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
-##  <a name="MapStack"></a>映射调用堆栈
+## <a name="MapStack"></a>映射调用堆栈
 
-1.  开始调试。 （键盘：**F5**)
+1. 开始调试。 （键盘：**F5**)
 
-2.  你的应用进入中断模式或你单步执行函数后，请选择**Code Map**。 （键盘：**Ctrl** + **Shift** + **`**)
+2. 你的应用进入中断模式或你单步执行函数后，请选择**Code Map**。 （键盘：**Ctrl** + **Shift** + **`**)
 
      ![选择代码图以开始映射调用堆栈](../debugger/media/debuggermap-choosecodemap.png "DebuggerMap_ChooseCodeMap")
 
@@ -68,17 +68,17 @@ ms.locfileid: "58937432"
 
      在你继续调试时，该代码图将自动更新。 请参阅[使用下一步的调用堆栈更新图](#UpdateMap)。
 
-##  <a name="MakeNotes"></a>对代码进行标注
+## <a name="MakeNotes"></a>对代码进行标注
  添加注释以跟踪代码发生的情况。 若要在注释中添加新行，请按**Shift + Return**。
 
  ![添加注释代码图上的调用堆栈](../debugger/media/debuggermap-addcomment.png "DebuggerMap_AddComment")
 
-##  <a name="UpdateMap"></a>使用下一个调用堆栈更新映射
+## <a name="UpdateMap"></a>使用下一个调用堆栈更新映射
  运行你的应用到下一个断点或单步执行某一函数。 此图将添加新的调用堆栈。
 
  ![使用下一个调用堆栈更新代码映射](../debugger/media/debuggermap-addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-##  <a name="AddRelatedCode"></a>向映射添加相关代码
+## <a name="AddRelatedCode"></a>向映射添加相关代码
  现在你已生成一个图，下一步做什么？ 如果你正在使用 Visual C# .NET 或 Visual Basic .NET，请添加诸如字段、属性和其他方法等项，以便跟踪代码发生的情况。
 
  双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 （键盘：选择方法在图上按**F12**)
@@ -102,7 +102,7 @@ ms.locfileid: "58937432"
 
  ![在调用堆栈代码图使用的字段的方法](../debugger/media/debuggermap-foundallreferences.png "DebuggerMap_FoundAllReferences")
 
-##  <a name="FindBugs"></a>使用映射查找 Bug
+## <a name="FindBugs"></a>使用映射查找 Bug
  通过代码可视化，可帮助你更快发现 Bug。 例如，假设你正在一个绘图程序中调查 Bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。
 
  因此，可在 `clear`、`undo` 和 `Repaint` 方法中设置断点，启动调试，然后生成如下所示的图：
@@ -115,7 +115,7 @@ ms.locfileid: "58937432"
 
  ![在代码图上添加新方法的调用堆栈](../debugger/media/debuggermap-addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")
 
-##  <a name="QA"></a> 问题解答
+## <a name="QA"></a> 问题解答
 
 - **并非所有调用将都显示在映射上。为什么?**
 
@@ -139,11 +139,11 @@ ms.locfileid: "58937432"
 
    打开**布局**图工具栏上的菜单：
 
-  -   更改默认布局。
+  - 更改默认布局。
 
-  -   若要停止自动重新排列图，关闭**调试时自动布局**。
+  - 若要停止自动重新排列图，关闭**调试时自动布局**。
 
-  -   若要添加项时，重新排列图降至最低，请关闭**增量布局**。
+  - 若要添加项时，重新排列图降至最低，请关闭**增量布局**。
 
 - **可以与他人共享代码图？**
 

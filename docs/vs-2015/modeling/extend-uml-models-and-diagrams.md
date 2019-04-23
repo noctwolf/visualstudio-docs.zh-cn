@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59000214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054602"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>扩展 UML 模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "59000214"
   
  有关详细信息，请观看此视频：![链接至视频](../data-tools/media/playvideo.gif "播放视频")[MSDN 如何实现系列：UML 工具和扩展性](http://go.microsoft.com/fwlink/?LinkId=214467)。  
   
-##  <a name="Requirements"></a> 要求  
+## <a name="Requirements"></a> 要求  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
--   [Visual Studio 2015 的建模 SDK](http://www.microsoft.com/download/details.aspx?id=48148)。  
+- [Visual Studio 2015 的建模 SDK](http://www.microsoft.com/download/details.aspx?id=48148)。  
   
 ## <a name="profiles"></a>配置文件  
  配置文件用于对 UML 元素定义构造型和其他属性。  

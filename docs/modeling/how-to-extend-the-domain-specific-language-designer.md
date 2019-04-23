@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063148"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展特定于域的语言设计器
 
@@ -26,23 +26,23 @@ ms.locfileid: "58415962"
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>若要创建 DSL 设计器扩展解决方案
 
-1.  创建新项目使用**类库**项目模板。 此项目将包含你的扩展的代码。
+1. 创建新项目使用**类库**项目模板。 此项目将包含你的扩展的代码。
 
-2.  创建一个新**VSIX 项目**项目。
+2. 创建一个新**VSIX 项目**项目。
 
      选择**将添加到解决方案**。
 
      *Source.extension.vsixmanifest* VSIX 清单编辑器中打开。
 
-3.  以上内容的字段中，单击**添加内容**。
+3. 以上内容的字段中，单击**添加内容**。
 
-4.  在**添加内容**对话框中，将**中选择内容类型**到**MEF 组件**，并设置**项目**到你的类库项目。
+4. 在**添加内容**对话框中，将**中选择内容类型**到**MEF 组件**，并设置**项目**到你的类库项目。
 
-5.  单击**选择版本**并确保选中**Visual Studio Enterprise**检查。
+5. 单击**选择版本**并确保选中**Visual Studio Enterprise**检查。
 
-6.  请确保将 VSIX 项目的解决方案的启动项目。
+6. 请确保将 VSIX 项目的解决方案的启动项目。
 
-7.  在类库项目中，添加对以下程序集的引用：
+7. 在类库项目中，添加对以下程序集的引用：
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ ms.locfileid: "58415962"
 
 将扩展部署到主要的 Visual Studio 和其他计算机，请执行以下步骤：
 
-1.  查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\*\\\*.vsix
+1. 查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\*\\\*.vsix
 
-2.  将此文件复制到目标计算机，然后在 Windows 资源管理器 （或文件资源管理器） 中，双击它。
+2. 将此文件复制到目标计算机，然后在 Windows 资源管理器 （或文件资源管理器） 中，双击它。
 
      Visual Studio 扩展管理器将打开，以确认已安装扩展。
 
 若要卸载该扩展，请按照下列步骤：
 
-1.  在 Visual Studio 中，在**工具**菜单上，单击**扩展管理器**。
+1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展管理器**。
 
-2.  选择扩展，并将其删除。
+2. 选择扩展，并将其删除。
 
 ## <a name="add-a-shortcut-menu-command"></a>添加一个快捷方式菜单命令
 

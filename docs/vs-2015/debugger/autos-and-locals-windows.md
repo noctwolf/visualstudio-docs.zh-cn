@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072846"
 ---
 # <a name="autos-and-locals-windows"></a>“自动”和“局部变量”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  在某些情况下，你还可以看到函数和方法的返回值。 请参阅下面的 [View return values of method calls](#bkmk_returnValue) 。  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  在 .NET 和 C++ 代码中，当你单步执行或单步跳出方法调用时，可以检查返回值。 当方法调用的结果未存储在局部变量中时（例如，当方法用作另一个方法的参数或返回值时），此功能很有用。  
   
  下面的 C# 代码将添加两个函数的返回值：  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  但是，更改值时应多加小心。 可能存在的问题如下：  
   
--   计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2`的值。  
+- 计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2`的值。  
   
      会更改数据的表达式被视为具有 [副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))，如果你不了解这些表达式，则会产生意外的结果。 因此，在进行更改前，请确保你了解此更改的后果。  
   
--   编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 即使看起来无关紧要的编辑都会导致浮点变量中某些最不重要的数据位发生变化。  
+- 编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 即使看起来无关紧要的编辑都会导致浮点变量中某些最不重要的数据位发生变化。  
   
 ## <a name="debug-location-toolbar"></a>“调试位置”工具栏  
  你可以使用“调试位置”  工具栏来选择所需的函数、线程或进程。 设置断点并开始调试。 （如果看不到此工具栏，你可以通过单击工具栏区域的空白部分启用它。 你应当看到工具栏的列表；选择“调试位置” ）。 当到达断点时，执行将停止，并且你可以看到“调试位置”工具栏，即下图的最后一行：  

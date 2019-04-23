@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086424"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在设计使用公共 Visual Studio shell 元素的 UI，或者希望界面元素与类似功能一致时，可使用包定义文件中的现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。
 
- 本文介绍公共 UI 元素以及它们使用的标记名称（可以在构建类似 UI 时引用这些名称）。 有关如何访问这些颜色标记的特定信息，请参见 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。
+本文介绍公共 UI 元素以及它们使用的标记名称（可以在构建类似 UI 时引用这些名称）。 有关如何访问这些颜色标记的特定信息，请参见 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。
 
- 请确保正确使用标记名称：
+请确保正确使用标记名称：
 
--   **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的功能不同，如果与组合框关联的颜色更改，则它可能不再是适合于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
+- **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的功能不同，如果与组合框关联的颜色更改，则它可能不再是适合于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
 
--   **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联文本颜色，请勿将该背景色用于期望在其上显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。
+- **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联文本颜色，请勿将该背景色用于期望在其上显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。
 
--   **使用适合于其位置的控件颜色。** 在特定状态下，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。
+- **使用适合于其位置的控件颜色。** 在特定状态下，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。
 
 > [!IMPORTANT]
->  不要使用"起始页"或"Cider"。 在类别中找到的令牌
+> 不要使用"起始页"或"Cider"。 在类别中找到的令牌
 
 ## <a name="command-structures"></a>命令结构
 
-###  <a name="BKMK_CommandMenus"></a> 菜单
- 菜单可以出现在 Visual Studio 的多个位置上： 主菜单栏、 嵌入在文档或工具窗口或整个 IDE 的各个位置右键单击。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。
+### <a name="BKMK_CommandMenus"></a> 菜单
 
- ![菜单红线](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303年 000_MenuRedline")
+菜单可以出现在 Visual Studio 的多个位置上： 主菜单栏、 嵌入在文档或工具窗口或整个 IDE 的各个位置右键单击。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。
 
- 使用...
- -   每当需要创建自定义菜单时。
+![菜单红线](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303年 000_MenuRedline")
+
+使用...
+- 每当需要创建自定义菜单时。
 
 - 如果具有要与 Visual Studio 菜单匹配的新 UI 组件时。
 
-  请勿使用...
-  单独的背景色。 始终使用指定的背景/前景组合。
+请勿使用...
+单独的背景色。 始终使用指定的背景/前景组合。
 
 #### <a name="menu-title"></a>菜单标题
- 菜单标题由背景、边框和标题文本以及可选的标志符号（通常是在菜单位于命令栏中使用）组成。
 
- ![菜单标题红线](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303年 001_MenuTitleRedline")
+菜单标题由背景、边框和标题文本以及可选的标志符号（通常是在菜单位于命令栏中使用）组成。
 
- 使用...
+![菜单标题红线](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303年 001_MenuTitleRedline")
+
+使用...
 每当创建自定义菜单标题时。
 
- 请勿使用...
- -   对于并非希望始终与菜单标题匹配的任何内容。
+请勿使用...
+- 对于并非希望始终与菜单标题匹配的任何内容。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -192,15 +195,16 @@ ms.locfileid: "58934595"
   None
 
 #### <a name="menu"></a>菜单
- 各个菜单项由菜单文本和可选的图标、复选框或子菜单标志符号组成。 其背景和文本颜色会在鼠标悬停在上方时更改。 此颜色标记是前景/背景对。
 
- ![菜单项红线](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303年 009_MenuItemRedline")
+各个菜单项由菜单文本和可选的图标、复选框或子菜单标志符号组成。 其背景和文本颜色会在鼠标悬停在上方时更改。 此颜色标记是前景/背景对。
 
- 使用...
+![菜单项红线](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303年 009_MenuItemRedline")
+
+使用...
 对于从菜单栏或命令栏启动的任何下拉列表。
 
- 请勿使用...
- -   对于在另一个上下文中出现的任何下拉列表。
+请勿使用...
+- 对于在另一个上下文中出现的任何下拉列表。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -351,32 +355,34 @@ ms.locfileid: "58934595"
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>命令栏
- 命令栏在 Visual Studio IDE 中可以出现在多个位置处，最值得注意的是命令架以及嵌入在工具或文档窗口中。
 
- 一般而言，需始终使用由 Visual Studio 环境提供的标准命令栏实现。 使用标准机制可确保所有视觉细节都正确显示，并且交互元素的行为与其他 Visual Studio 命令栏控件一致。 但是，如果你需要构建自己的命令栏，请确保使用以下标记名称正确设计其样式。
+命令栏在 Visual Studio IDE 中可以出现在多个位置处，最值得注意的是命令架以及嵌入在工具或文档窗口中。
 
- ![命令栏红线](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303年 018_CommandBarRedline")
+一般而言，需始终使用由 Visual Studio 环境提供的标准命令栏实现。 使用标准机制可确保所有视觉细节都正确显示，并且交互元素的行为与其他 Visual Studio 命令栏控件一致。 但是，如果你需要构建自己的命令栏，请确保使用以下标记名称正确设计其样式。
 
- ![溢出按钮红线](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303年 019_OverflowButtonRedline")
+![命令栏红线](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303年 018_CommandBarRedline")
 
- 使用...
+![溢出按钮红线](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303年 019_OverflowButtonRedline")
+
+使用...
 在需要嵌入式命令栏，但无法使用标准 Visual Studio 命令栏实现的位置处。
 
- 请勿使用...
- -   对于与命令栏不相似的 UI 元素。
+请勿使用...
+- 对于与命令栏不相似的 UI 元素。
 
--   对于指定了其标记名称的命令栏组件之外的命令栏组件。
+- 对于指定了其标记名称的命令栏组件之外的命令栏组件。
 
 #### <a name="command-bar-group"></a>命令栏组
- 命令栏组由一组相关命令栏控件组成，可能包含任何数量的按钮、拆分按钮、下拉菜单、组合框或菜单。 这些控件的颜色通过单独的标记名称进行控制，在本指南中的其他位置单独进行了讨论。 分隔线用于将命令栏组划分为相关子组。
 
- ![命令栏组红线](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303年 020_CommandBarGroupRedline")
+命令栏组由一组相关命令栏控件组成，可能包含任何数量的按钮、拆分按钮、下拉菜单、组合框或菜单。 这些控件的颜色通过单独的标记名称进行控制，在本指南中的其他位置单独进行了讨论。 分隔线用于将命令栏组划分为相关子组。
 
- 使用...
+![命令栏组红线](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303年 020_CommandBarGroupRedline")
+
+使用...
 在需要嵌入式命令栏，但无法使用标准 Visual Studio 命令栏实现的位置处。
 
- 请勿使用...
- -   对于与命令栏不相似的 UI 元素。
+请勿使用...
+- 对于与命令栏不相似的 UI 元素。
 
 - 对于指定了其标记名称的命令栏组件之外的命令栏组件。
 
@@ -407,15 +413,16 @@ ms.locfileid: "58934595"
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>命令图标
- ![命令图标红线](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303年 021_CommandIconRedline1")
 
- ![命令图标红线](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303年 022_CommandIconRedline2")
+![命令图标红线](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303年 021_CommandIconRedline1")
 
- 使用...
+![命令图标红线](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303年 022_CommandIconRedline2")
+
+使用...
 对于将放置在命令栏上的任何按钮。
 
- 请勿使用...
- -   对于具有自己的标记名称的控件。
+请勿使用...
+- 对于具有自己的标记名称的控件。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -441,7 +448,7 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   ![命令图标默认选定](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")
 
@@ -549,22 +556,22 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
-####  <a name="BKMK_CommandComboBox"></a> 组合框
+#### <a name="BKMK_CommandComboBox"></a> 组合框
 
 > [!IMPORTANT]
->  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下的颜色标记。
+> 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下的颜色标记。
 
- ![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
- 使用...
- -   当构建自定义组合框时。
+使用...
+- 当构建自定义组合框时。
 
 - 当创建类似于组合框的命令栏控件时。
 
   请勿使用...
-  -   对于并非希望始终与命令栏 UI 匹配的任何内容。
+  - 对于并非希望始终与命令栏 UI 匹配的任何内容。
 
 - 当你可以访问设置了样式的组合框时。
 
@@ -798,18 +805,18 @@ ms.locfileid: "58934595"
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> 下拉列表
+#### <a name="BKMK_CommandDropDown"></a> 下拉列表
 
 > [!IMPORTANT]
->  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)下的颜色标记。
+> 下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)下的颜色标记。
 
- ![删除&#45;向下红线](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")
+![删除&#45;向下红线](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")
 
- 使用...
+使用...
 当创建自定义下拉列表控件时。
 
- 请勿使用...
- -   对于不类似于下拉列表的任何内容。
+请勿使用...
+- 对于不类似于下拉列表的任何内容。
 
 - 对于组合框或拆分按钮。
 
@@ -1003,22 +1010,23 @@ ms.locfileid: "58934595"
 
   背景
 
-  不可用
+  不适用
 
   前景（标志符号）
 
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>“拆分”按钮
- 拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的实现。
 
- ![拆分按钮红线](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")
+拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的实现。
 
- 使用...
+![拆分按钮红线](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")
+
+使用...
 当构建自定义拆分按钮时。
 
- 请勿使用...
- -   对于其他类型的按钮。
+请勿使用...
+- 对于其他类型的按钮。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -1048,11 +1056,11 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   Separator
 
-  不可用
+  不适用
 
   **Hover**
 
@@ -1120,7 +1128,7 @@ ms.locfileid: "58934595"
 
   Separator
 
-  不可用
+  不适用
 
   已禁用
 
@@ -1136,7 +1144,7 @@ ms.locfileid: "58934595"
 
   背景
 
-  不可用
+  不适用
 
   前景（文本）
 
@@ -1148,11 +1156,11 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   Separator
 
-  不可用
+  不适用
 
 #### <a name="more-options-and-overflow-buttons"></a>“更多选项”和“溢出”按钮
  通过添加或删除相关命令栏按钮来自定义命令栏组时，可使用“更多选项”按钮。 命令栏由于水平空间不足而被截断，以及在单击操作中显示包含无法显示的命令栏按钮的菜单时，会出现“溢出”按钮。 这两个按钮的颜色通过一组相同的标记名称进行控制。
@@ -1425,7 +1433,7 @@ ms.locfileid: "58934595"
   当创建自定义文档选项卡时。
 
   请勿使用...
-  -   对于临时（预览）选项卡。
+  - 对于临时（预览）选项卡。
 
 - 对于不希望在 shell 具有主题更新时自动更改的任何 UI。
 
@@ -1538,15 +1546,16 @@ ms.locfileid: "58934595"
  设置为与背景相同的颜色。
 
 #### <a name="preview-tab"></a>预览选项卡
- 当用户在解决方案资源管理器工具窗口中单击某个项时，预览选项卡会出现在文档选项卡通道右侧。 它充当文档的预览，还为用户提供用于使文档在文档选项卡通道左侧保持打开状态的选项。 一次只能打开一个预览选项卡。 预览选项卡具有背景和选定状态（与打开的选项卡一样），可以在其活动状态下具有焦点或失去焦点。
 
- ![预览选项卡红线](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303年 078_PreviewTabRedline")
+当用户在解决方案资源管理器工具窗口中单击某个项时，预览选项卡会出现在文档选项卡通道右侧。 它充当文档的预览，还为用户提供用于使文档在文档选项卡通道左侧保持打开状态的选项。 一次只能打开一个预览选项卡。 预览选项卡具有背景和选定状态（与打开的选项卡一样），可以在其活动状态下具有焦点或失去焦点。
 
- 使用...
+![预览选项卡红线](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303年 078_PreviewTabRedline")
+
+使用...
 在其中创建临时预览，并且希望一些元素与当前预览选项卡颜色匹配的临时预览。
 
- 请勿使用...
- -   对于不是临时（预览）的任何种类的文档或选项卡。
+请勿使用...
+- 对于不是临时（预览）的任何种类的文档或选项卡。
 
 - 对于不希望在 shell 具有主题更新时自动更改的任何 UI。
 
@@ -1661,15 +1670,16 @@ ms.locfileid: "58934595"
   设置为与背景相同的颜色。
 
 #### <a name="document-overflow-button"></a>文档溢出按钮
- 如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 通过 **CommandBarMenu** 颜色（请参见 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)）控制的文档溢出下拉菜单会显示所有打开的文档（可见或隐藏）的列表，溢出标志符号会根据是否所有打开的文档都显示在选项卡通道中而更改。
 
- ![溢出红线](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")
+如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 通过 **CommandBarMenu** 颜色（请参见 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)）控制的文档溢出下拉菜单会显示所有打开的文档（可见或隐藏）的列表，溢出标志符号会根据是否所有打开的文档都显示在选项卡通道中而更改。
 
- 使用...
+![溢出红线](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")
+
+使用...
 当创建自定义文档溢出按钮时。
 
- 请勿使用...
- -   对于不类似于溢出按钮的 UI。
+请勿使用...
+- 对于不类似于溢出按钮的 UI。
 
 - 对于命令栏溢出按钮。
 
@@ -1695,7 +1705,7 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   **Hover**
 
@@ -1888,20 +1898,21 @@ ms.locfileid: "58934595"
 
  Border
 
- 不可用
+ 不适用
 
  拖动句柄
 
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>标题栏按钮
- ![标题栏按钮红线](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303年 095_TitleBarButtonRedline")
 
- 使用...
+![标题栏按钮红线](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303年 095_TitleBarButtonRedline")
+
+使用...
 对于在使用来自工具窗口标题栏的颜色标记的 UI 中出现的按钮。
 
- 请勿使用...
- -   对于在其他位置出现的按钮。
+请勿使用...
+- 对于在其他位置出现的按钮。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -1919,7 +1930,7 @@ ms.locfileid: "58934595"
 
   背景
 
-  不可用
+  不适用
 
   前景（标志符号）
 
@@ -1927,7 +1938,7 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   ![标题栏失去焦点的按钮](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")
 
@@ -1935,7 +1946,7 @@ ms.locfileid: "58934595"
 
   背景
 
-  不可用
+  不适用
 
   前景（标志符号）
 
@@ -1943,7 +1954,7 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   **Hover**
 
@@ -2227,7 +2238,7 @@ ms.locfileid: "58934595"
   当在设计自定义搜索框时。
 
   请勿使用...
-  -   对于不是搜索框的任何内容。
+  - 对于不是搜索框的任何内容。
 
 - 对于并非希望始终与搜索框 UI 匹配的任何内容。
 
@@ -2281,7 +2292,7 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   ![搜索下拉&#45;下已设定焦点的按钮](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")
 
@@ -2353,7 +2364,7 @@ ms.locfileid: "58934595"
 
   背景
 
-  不可用
+  不适用
 
   前景（搜索标志符号）
 
@@ -2369,7 +2380,7 @@ ms.locfileid: "58934595"
 
   Border
 
-  不可用
+  不适用
 
   ![搜索下拉&#45;向下按钮失去焦点](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")
 
@@ -2516,17 +2527,18 @@ ms.locfileid: "58934595"
   None
 
 #### <a name="search-drop-down-lists"></a>搜索下拉列表
- 搜索框下拉菜单可能比 Visual Studio 中的其他下拉菜单稍微复杂一些。 “建议的搜索”和“搜索选项”部分可以在菜单中单独或一起出现，各自分别进行着色。 当这两个部分一起出现时，还会有一条线分隔它们，并且有一个边框环绕整个下拉菜单。
 
- ![搜索下拉&#45;向下红线](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303年 124_SearchDropdownRedline")
+搜索框下拉菜单可能比 Visual Studio 中的其他下拉菜单稍微复杂一些。 “建议的搜索”和“搜索选项”部分可以在菜单中单独或一起出现，各自分别进行着色。 当这两个部分一起出现时，还会有一条线分隔它们，并且有一个边框环绕整个下拉菜单。
 
- 使用...
- -   当创建自定义搜索下拉列表时。
+![搜索下拉&#45;向下红线](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303年 124_SearchDropdownRedline")
+
+使用...
+- 当创建自定义搜索下拉列表时。
 
 - 正确列表组件的正确标记名称。
 
   请勿使用...
-  -   对于在其他上下文中出现的下拉列表。
+  - 对于在其他上下文中出现的下拉列表。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -2906,16 +2918,17 @@ ms.locfileid: "58934595"
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> 树视图
- 多个工具窗口（包括解决方案资源管理器、服务器资源管理器和类视图）可实现其颜色由树视图类别中的颜色名称控制的分层组织方案。 树视图中的所有项都具有背景和文本颜色。 具有嵌套子元素的项还具有指示该项是展开还是折叠的标志符号。
+### <a name="BKMK_TreeView"></a> 树视图
 
- ![树视图红线](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303年 147_TreeViewRedline")
+多个工具窗口（包括解决方案资源管理器、服务器资源管理器和类视图）可实现其颜色由树视图类别中的颜色名称控制的分层组织方案。 树视图中的所有项都具有背景和文本颜色。 具有嵌套子元素的项还具有指示该项是展开还是折叠的标志符号。
 
- 使用...
+![树视图红线](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303年 147_TreeViewRedline")
+
+使用...
 需要在其中实现分层组织视图的任何位置。
 
- 请勿使用...
- -   对于不类似于树视图的任何内容。
+请勿使用...
+- 对于不类似于树视图的任何内容。
 
 - 在指定组合之外的任何背景/前景组合中。
 
@@ -3332,13 +3345,14 @@ ms.locfileid: "58934595"
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>下拉框/组合框控件
- ![删除&#45;关闭&#47;组合框红线](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")
 
- 使用...
+![删除&#45;关闭&#47;组合框红线](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303年 167_DropDownComboBoxRedline")
+
+使用...
 对于属于文档井一部分的下拉框和组合框。
 
- 请勿使用...
- -   对于不是下拉框或组合框的任何 UI。
+请勿使用...
+- 对于不是下拉框或组合框的任何 UI。
 
 - 对于命令栏中的 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 或 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。
 
@@ -3690,17 +3704,18 @@ ms.locfileid: "58934595"
  None
 
 ## <a name="manifest-designer"></a>清单设计器
- 清单设计器旨在作为可用于更加轻松地在 Windows 8 和 Windows Phone 8 项目中编辑清单文件的方法。 虽然没有可供使用的共享框架，不过匹配方向/导航选项卡和整体结构的设计布局和颜色是合适的。 有关布局详细信息的更多信息，请参见 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。
 
- ![清单设计器红线](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")
+清单设计器旨在作为可用于更加轻松地在 Windows 8 和 Windows Phone 8 项目中编辑清单文件的方法。 虽然没有可供使用的共享框架，不过匹配方向/导航选项卡和整体结构的设计布局和颜色是合适的。 有关布局详细信息的更多信息，请参见 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。
 
- 使用...
- -   对于类似于清单设计器的设计器。
+![清单设计器红线](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")
+
+使用...
+- 对于类似于清单设计器的设计器。
 
 - 在文档井中编辑器的顶部代替使用公共选项卡控件。
 
-  请勿使用...
-  -   如果你有六个以上的选项卡。
+请勿使用...
+- 如果你有六个以上的选项卡。
 
 - 对于结构不类似于清单设计器中的任何 UI。
 
@@ -3839,7 +3854,7 @@ ms.locfileid: "58934595"
 
  背景
 
- 不可用
+ 不适用
 
  前景（标志符号）
 
@@ -3907,7 +3922,7 @@ ms.locfileid: "58934595"
 
  背景
 
- 不可用
+ 不适用
 
  前景（标志符号）
 
@@ -3964,15 +3979,16 @@ ms.locfileid: "58934595"
 ## <a name="shell"></a>shell
 
 ### <a name="background"></a>背景
- 环境背景由两层组成。 下层是覆盖整个 IDE 的纯色。 上层位于命令架下，以及 IDE 左边缘和右边缘上的工具窗口自动隐藏通道之间。 从 Visual Studio 2013 开始，背景上层和下层在浅色和深色主题中设置为相同颜色。
 
- ![外壳背景红线](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303年 187_ShellBackgroundRedline")
+环境背景由两层组成。 下层是覆盖整个 IDE 的纯色。 上层位于命令架下，以及 IDE 左边缘和右边缘上的工具窗口自动隐藏通道之间。 从 Visual Studio 2013 开始，背景上层和下层在浅色和深色主题中设置为相同颜色。
 
- 使用...
+![外壳背景红线](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303年 187_ShellBackgroundRedline")
+
+使用...
 对于要在其中与 Visual Studio 环境背景匹配的位置。
 
- 请勿使用...
- -   作为不是背景图面的位置的填充。
+请勿使用...
+- 作为不是背景图面的位置的填充。
 
 - 作为要在其上放置前景元素的背景。
 
@@ -4009,17 +4025,18 @@ ms.locfileid: "58934595"
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>命令架
- 有两组标记名称用于命令架背景：一组用于菜单栏所在的位置，另一组用于命令栏所在的位置。 单个命令栏组具有自己的背景色值（在“命令栏”部分中进行更详细的讨论）。 菜单栏和命令栏文本分别在菜单和命令栏部分中进行了讨论。
 
- ![命令架红线](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303年 188_CommandShelfRedline")
+有两组标记名称用于命令架背景：一组用于菜单栏所在的位置，另一组用于命令栏所在的位置。 单个命令栏组具有自己的背景色值（在“命令栏”部分中进行更详细的讨论）。 菜单栏和命令栏文本分别在菜单和命令栏部分中进行了讨论。
 
- 使用...
- -   用于在其中放置菜单或工具栏的区域。
+![命令架红线](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303年 188_CommandShelfRedline")
+
+使用...
+- 用于在其中放置菜单或工具栏的区域。
 
 - 具有正确的背景 /？ 前景标记名称组合。
 
-  请勿使用...
-  对于与命令架不相似的区域。
+请勿使用...
+对于与命令架不相似的区域。
 
   组件
 

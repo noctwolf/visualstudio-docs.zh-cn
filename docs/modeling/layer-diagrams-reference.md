@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093483"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图： 参考
 
@@ -40,13 +40,13 @@ ms.locfileid: "57223008"
 
 使用依赖项关系图来帮助你执行以下任务：
 
--   传达系统的现有或预期逻辑体系结构。
+- 传达系统的现有或预期逻辑体系结构。
 
--   发现现有代码和预期体系结构之间的冲突。
+- 发现现有代码和预期体系结构之间的冲突。
 
--   在重构、更新或改进你的系统时，可视化更改对预期体系结构的影响。
+- 在重构、更新或改进你的系统时，可视化更改对预期体系结构的影响。
 
--   在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。
+- 在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。
 
 本主题介绍了可以使用依赖项关系图上的元素。 有关更多详细信息，有关如何创建和绘制依赖项关系图，请参阅[依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。
 
@@ -68,17 +68,17 @@ ms.locfileid: "57223008"
 
 在解决方案中，如项目、类、命名空间、项目文件和软件的其他部件，你可以将每个层链接到项目。 层上的数字显示链接到该层的项目数。 但是，在读取层上的项目数时，请记住：
 
--   如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。
+- 如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。
 
      例如，如果一个层链接到单个命名空间，则链接的项目数是 1，即使该命名空间包含类也是如此。 如果该层还链接到命名空间中的每个类，则该数字将包括链接的类。
 
--   如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。
+- 如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。
 
 有关链接层和项目的详细信息，请参阅：
 
--   [依赖项关系图：指导原则](../modeling/layer-diagrams-guidelines.md)
+- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)
 
--   [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
+- [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>检查链接的项目
 

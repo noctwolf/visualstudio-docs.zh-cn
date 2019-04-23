@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799793"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105612"
 ---
 # <a name="toolbox"></a>工具箱
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 “工具箱”显示控件和可添加到 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 项目的其他项的图标。 若要打开“工具箱”，请单击“视图”菜单上的“工具箱”。 可停靠“工具箱”，也可以将其固定在打开位置或将其设置为“自动隐藏”。  
   
  可将“工具箱”图标拖到设计视图或粘到代码编辑器中。 以上任一操作都将添加基本代码，以在活动的项目文件中创建“工具箱”项的一个实例。  
@@ -39,17 +38,17 @@ ms.locfileid: "54799793"
 ## <a name="help-on-toolbox-tabs"></a>“工具箱”选项卡上的帮助  
  以下文档提供有关特定“工具箱”选项卡的详细信息。  
   
--   [“工具箱”->“数据”选项卡](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [“工具箱”->“数据”选项卡](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [“工具箱”->“组件”选项卡](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [“工具箱”->“组件”选项卡](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [“工具箱”->“数据”选项卡](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [“工具箱”->“数据”选项卡](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [“工具箱”->“组件”选项卡](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [“工具箱”->“组件”选项卡](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [“工具箱”->“HTML”选项卡](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>请参阅  
  [使用工具箱](../../ide/using-the-toolbox.md)

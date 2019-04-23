@@ -11,12 +11,12 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4667bd26db80c005605214eeca9e852a7705bdf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090441"
 ---
 # <a name="component-management"></a>组件管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ Windows 安装程序中的任务的单位称为 （有时称为 WICs 或只是�
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>创作的并行安装的安装程序的指导原则  
   
--   作者文件和注册表项在版本间共享到他们自己的组件。  
+- 作者文件和注册表项在版本间共享到他们自己的组件。  
   
      这允许您轻松地在下一版本中使用它们。 例如，全局，注册类型库的文件扩展名，其他项注册 HKEY_CLASSES_ROOT，依此类推。  
   
--   分组到单独的合并模块中的共享的组件。  
+- 分组到单独的合并模块中的共享的组件。  
   
      这可以帮助您编写正确地为通过并行下一步。  
   
--   跨版本使用相同的 Windows Installer 组件安装共享的文件和注册表项。  
+- 跨版本使用相同的 Windows Installer 组件安装共享的文件和注册表项。  
   
      如果使用不同的组件，则会卸载文件和注册表项时卸载一个版本控制的 VSPackage，但仍安装另一个 VSPackage。  
   
--   不要混合在同一组件中的进行版本控制和共享项。  
+- 不要混合在同一组件中的进行版本控制和共享项。  
   
      执行此操作会导致无法安装到全局位置和版本控制隔离的位置的项的共享的项。  
   
--   没有共享的注册表项指向版本控制文件。  
+- 没有共享的注册表项指向版本控制文件。  
   
      如果这样做，安装另一个版本控制的 VSPackage 时，将被覆盖的共享的密钥。 删除第二个版本后，该密钥指向该文件是消失了。  
   

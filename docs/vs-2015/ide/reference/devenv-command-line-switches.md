@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050696"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令行生成、调试和部署项目。 使用这些开关从脚本或 .bat 文件（例如每夜生成的脚本）运行 IDE，或以特定配置启动 IDE。  
   
 > [!NOTE]
@@ -47,29 +46,29 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
   
  `devenv` 开关的语法规则与其他 DOS 命令行实用工具类似。 下列语法规则适用于所有 `devenv` 开关及其参数：  
   
--   命令以 `devenv` 开头。  
+- 命令以 `devenv` 开头。  
   
--   开关不区分大小写。  
+- 开关不区分大小写。  
   
--   指定一个解决方案或项目时，第一个参数是解决方案文件或项目文件的名称，包括文件路径。  
+- 指定一个解决方案或项目时，第一个参数是解决方案文件或项目文件的名称，包括文件路径。  
   
--   如果第一个参数是一个非解决方案或项目的文件，则该文件将在适当的编辑器中的 IDE 新实例中打开。  
+- 如果第一个参数是一个非解决方案或项目的文件，则该文件将在适当的编辑器中的 IDE 新实例中打开。  
   
--   如果提供项目文件名而不是解决方案文件名，`devenv` 命令会在项目文件的父文件夹中搜索具有相同名称的解决方案文件。 例如，`devenv /build myproject1.vbproj` 命令会在父文件夹中搜索命名为“myproject1.sln”的解决方案文件。  
+- 如果提供项目文件名而不是解决方案文件名，`devenv` 命令会在项目文件的父文件夹中搜索具有相同名称的解决方案文件。 例如，`devenv /build myproject1.vbproj` 命令会在父文件夹中搜索命名为“myproject1.sln”的解决方案文件。  
   
     > [!NOTE]
     >  引用此项目的唯一一个解决方案文件应位于其父文件夹中。 如果父文件夹不包含引用此项目的解决方案文件，或父文件夹包含引用此项目的两个或更多解决方案文件，则将创建一个为此项目命名并引用此项目的临时解决方案文件。  
   
--   当文件路径和文件名中包含空格时，必须用双引号 ("") 将它们括起来。 例如 "c:\project a\\"。  
+- 当文件路径和文件名中包含空格时，必须用双引号 ("") 将它们括起来。 例如 "c:\project a\\"。  
   
--   在同一行上的开关和参数之间插入一个空白字符。 例如，**devenv /log output.txt** 命令将打开 IDE，并将该会话的所有日志信息输出到 output.txt。  
+- 在同一行上的开关和参数之间插入一个空白字符。 例如，**devenv /log output.txt** 命令将打开 IDE，并将该会话的所有日志信息输出到 output.txt。  
   
--   您无法在 `devenv` 命令中使用模式匹配语法。  
+- 您无法在 `devenv` 命令中使用模式匹配语法。  
   
 ## <a name="devenv-switches"></a>Devenv 开关  
  使用下列命令行开关显示 IDE 并执行描述的任务。  
   
-|命令行开关|说明​​|  
+|命令行开关|说明|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|启动 IDE 并执行指定的命令。|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|在调试器的控制下加载 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 可执行文件。 此开关对 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 可执行文件不可用。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|  
@@ -86,7 +85,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
   
  使用下列命令行开关执行描述的任务。 这些命令行开关不显示 IDE。  
   
-|命令行开关|说明​​|  
+|命令行开关|说明|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|在“命令提示符”窗口中显示 devenv 开关的相关帮助信息。<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> **Devenv myproj.csproj /build**|  

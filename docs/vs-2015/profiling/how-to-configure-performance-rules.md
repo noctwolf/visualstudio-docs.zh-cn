@@ -11,12 +11,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc91bff6819cc5a1ed1e22864157143843f88ba9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 71593496613c75485fd30481777d0fcc1102c11c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117806"
 ---
 # <a name="how-to-configure-performance-rules"></a>如何：配置性能规则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Visual Studio 分析工具的性能警告指示所分析应用程序中可能会
   
 ### <a name="to-configure-profiler-performance-warnings"></a>配置事件探查器性能警告  
   
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  展开“性能工具”，然后单击“规则”。  
+2. 展开“性能工具”，然后单击“规则”。  
   
-3.  若要启用或禁用某个警告，请选择或清除该警告 **ID** 和名称旁边的复选框。  
+3. 若要启用或禁用某个警告，请选择或清除该警告 **ID** 和名称旁边的复选框。  
   
-4.  若要指定规则的警告级别，请单击规则旁边的“操作”单元格，然后单击警告等级。  
+4. 若要指定规则的警告级别，请单击规则旁边的“操作”单元格，然后单击警告等级。  
   
-    -   **已禁用** - 禁用规则（等同于清除规则 ID 旁边的复选框）。  
+    - **已禁用** - 禁用规则（等同于清除规则 ID 旁边的复选框）。  
   
-    -   **警告** - 将规则显示为警告。  
+    - **警告** - 将规则显示为警告。  
   
-    -   **错误** - 停止分析执行并将规则显示为错误。  
+    - **错误** - 停止分析执行并将规则显示为错误。  
   
-    -   **信息** - 仅将规则显示为信息。
+    - **信息** - 仅将规则显示为信息。

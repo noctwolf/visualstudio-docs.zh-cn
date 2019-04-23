@@ -1,5 +1,5 @@
 ---
-title: 错误： Web 服务器已被锁定，并阻止 DEBUG 谓词 |Microsoft Docs
+title: 错误：Web 服务器已被锁定，并阻止 DEBUG 谓词 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b08e806db430a6e8a24f83016c27c70afd2abed3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 22a564da1de8a7f375209ff4c02236a3e2baca8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043089"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，正在阻塞 DEBUG 谓词
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，并阻止 DEBUG 谓词
 由于运行了 IIS 锁定工具并且安装并激活了 URLScan，单步执行 Web 应用程序或 XML Web services 失败。 这种情况下将禁止 IIS 接收 DEBUG 谓词。
 
  URLScan 是与 IIS 锁定工具一同使用的安全工具，它使 IIS 网站管理员能够关闭不必要的功能并限制服务器处理的 HTTP 请求类型。 通过阻塞特定的 HTTP 请求，URLScan 安全工具可防止有潜在危害的请求到达服务器造成损害。
@@ -32,22 +32,22 @@ ms.locfileid: "56687375"
 
 ### <a name="to-enable-debugging-on-a-web-server-with-urlscan-installed"></a>在安装有 URLScan 的 Web 服务器上启用调试
 
-1.  找到 Urlscan.ini 文件。 通常，在类似下面这样的目录中可以找到它：
+1. 找到 Urlscan.ini 文件。 通常，在类似下面这样的目录中可以找到它：
 
      C:\WINNT\System32\Inetsrv\urlscan
 
-2.  创建此文件的副本并将它命名为 Urlscan.old。
+2. 创建此文件的副本并将它命名为 Urlscan.old。
 
-3.  使用“记事本”或选定的文本编辑器打开 Urlscan.ini 文件的原始副本。
+3. 使用“记事本”或选定的文本编辑器打开 Urlscan.ini 文件的原始副本。
 
-4.  在 Urlscan.ini 中，找到 [AllowVerbs] 节。 将“DEBUG”添加到 [AllowVerbs] 节中。 如果在 [AllowVerbs] 节中看到“;DEBUG”，请移除分号，以取消谓词的注释状态。
+4. 在 Urlscan.ini 中，找到 [AllowVerbs] 节。 将“DEBUG”添加到 [AllowVerbs] 节中。 如果在 [AllowVerbs] 节中看到“;DEBUG”，请移除分号，以取消谓词的注释状态。
 
-5.  找到 [DenyVerbs] 节。 如果 DEBUG 出现在 [DenyVerbs] 节中，请将其删除。
+5. 找到 [DenyVerbs] 节。 如果 DEBUG 出现在 [DenyVerbs] 节中，请将其删除。
 
-6.  保存该文件。
+6. 保存该文件。
 
-7.  重新启动服务器或重新启动 IIS。
+7. 重新启动服务器或重新启动 IIS。
 
 ## <a name="see-also"></a>请参阅
 - [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-- [错误：Web 服务器未能找到请求的资源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+- [错误：Web 服务器找不到所请求的资源](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

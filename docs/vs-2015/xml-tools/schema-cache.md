@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35e292d5fcaaea4f70154cf6febfc26bc20f1318
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115986"
 ---
 # <a name="schema-cache"></a>架构缓存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,21 +109,21 @@ ms.locfileid: "59648960"
 
 #### <a name="to-change-the-schema-cache-location"></a>更改架构缓存的位置  
 
-1.  从**工具**菜单中，选择**选项**。  
+1. 从**工具**菜单中，选择**选项**。  
 
-2.  展开**文本编辑器**，展开**XML**，然后单击**杂项**。  
+2. 展开**文本编辑器**，展开**XML**，然后单击**杂项**。  
 
-3.  单击**浏览**按钮**架构**字段。  
+3. 单击**浏览**按钮**架构**字段。  
 
-4.  选择架构缓存的文件夹，然后单击**确定**。  
+4. 选择架构缓存的文件夹，然后单击**确定**。  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>添加其他常见架构目录  
 
-1.  在“XML 编辑器”的架构缓存目录中编辑 catalog.xml 文件。  
+1. 在“XML 编辑器”的架构缓存目录中编辑 catalog.xml 文件。  
 
-2.  添加一个新的 `<Catalog href="…"/>` 元素，指向其他架构的目录。  
+2. 添加一个新的 `<Catalog href="…"/>` 元素，指向其他架构的目录。  
 
-3.  保存更改。  
+3. 保存更改。  
 
      将自动重新加载编录。  
 

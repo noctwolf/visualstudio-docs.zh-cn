@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078923"
 ---
 # <a name="build-office-solutions"></a>生成 Office 解决方案
   通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的常规信息，请参阅[编译并在 Visual Studio 中生成](../ide/compiling-and-building-in-visual-studio.md)。
@@ -45,15 +45,15 @@ ms.locfileid: "55945412"
 ### <a name="document-level-projects"></a>文档级项目
  生成文档级项目时，项目输出中包含以下项：
 
--   项目文档的副本。
+- 项目文档的副本。
 
--   项目程序集以及“复制本地”  属性设置为 **true**的所有引用的程序集。
+- 项目程序集以及“复制本地”  属性设置为 **true**的所有引用的程序集。
 
--   具有文件扩展名的应用程序清单 *.manifest*。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
+- 具有文件扩展名的应用程序清单 *.manifest*。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
 
--   部署清单，具有文件扩展名 *.vsto*。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。
+- 部署清单，具有文件扩展名 *.vsto*。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。
 
--   程序数据库 (*PDB*) 文件。
+- 程序数据库 (*PDB*) 文件。
 
 > [!NOTE]
 >  如果将文档级解决方案生成到远程位置（而不生成到本地计算机），请将完全限定路径添加到应用程序信任中心中的“受信任位置”列表。 有关详细信息，请参阅部分中的文档授予信任[保护 Office 解决方案](../vsto/securing-office-solutions.md)。

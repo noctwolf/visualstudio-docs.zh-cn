@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070779"
 ---
 # <a name="using-the-legacy-activity-designer"></a>使用旧版活动设计器
 本主题介绍如何使用旧 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中的活动设计器。 在面向 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 时，请使用旧设计器。  
@@ -35,9 +35,9 @@ ms.locfileid: "58936131"
   
 2. 选择**活动**或**Activity （具有单独的代码）** 模板。  
   
-   1.  使用**活动**模板来创建一个活动的活动定义和用户代码位于同一代码文件。  
+   1. 使用**活动**模板来创建一个活动的活动定义和用户代码位于同一代码文件。  
   
-   2.  使用**Activity （具有单独的代码）** 模板以创建表示为工作流标记和单独的代码文件中的用户代码的活动定义一个活动。  
+   2. 使用**Activity （具有单独的代码）** 模板以创建表示为工作流标记和单独的代码文件中的用户代码的活动定义一个活动。  
   
 3. 键入活动名称或保留默认名称，然后单击**添加**。  
   

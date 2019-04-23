@@ -14,23 +14,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4563e1c28c17a173c211f979d2ca46503a6d19a7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f771f3c769ea41979210058a58dc1d0d125a4ffe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805125"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652093"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 返回各种框架的引用程序集路径。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `GetReferenceAssemblyPaths` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`ReferenceAssemblyPaths`|可选 `String[]` 输出参数。<br /><br /> 基于 `TargetFrameworkMoniker` 参数返回路径。 如果 `TargetFrameworkMoniker` 为 null 或为空，则此路径将为 `String.Empty`。|  
 |`FullFrameworkReferenceAssemblyPaths`|可选 `String[]` 输出参数。<br /><br /> 基于 `TargetFrameworkMoniker` 参数返回路径，无需考虑名字对象的配置文件部分。 如果 `TargetFrameworkMoniker` 为 null 或为空，则此路径将为 `String.Empty`。|  

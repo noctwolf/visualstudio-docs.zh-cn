@@ -10,12 +10,12 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2d3def90d568b77ccfd781d573b49551313d733f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2483c000bb7c9446ac51bb94ef4006a7b2ac89f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056934"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何：创建 .Vsct 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,32 +34,32 @@ ms.locfileid: "58936647"
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>若要手动创建新的.vsct 文件  
   
-1.  启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+1. 启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
-2.  上**文件**菜单，依次指向**新建**，然后单击**文件**。  
+2. 上**文件**菜单，依次指向**新建**，然后单击**文件**。  
   
-3.  在中**模板**窗格中，单击**XML 文件**，然后单击**打开**。  
+3. 在中**模板**窗格中，单击**XML 文件**，然后单击**打开**。  
   
-4.  上**视图**菜单上，单击**属性窗口**显示 XML 文件的属性。  
+4. 上**视图**菜单上，单击**属性窗口**显示 XML 文件的属性。  
   
-5.  在中**属性**窗口中，单击浏览 （...） 按钮上的架构属性。  
+5. 在中**属性**窗口中，单击浏览 （...） 按钮上的架构属性。  
   
-6.  在 XSD 架构的列表中，选择 vsct.xsd 架构。 如果不是在列表中，单击**添加**，然后找到本地驱动器上的文件。 单击**确定**完成之后。  
+6. 在 XSD 架构的列表中，选择 vsct.xsd 架构。 如果不是在列表中，单击**添加**，然后找到本地驱动器上的文件。 单击**确定**完成之后。  
   
-7.  在 XML 文件中，键入`<CommandTable`然后按 TAB 键。 通过键入结束标记`>`。  
+7. 在 XML 文件中，键入`<CommandTable`然后按 TAB 键。 通过键入结束标记`>`。  
   
      这将创建一个基本的.vsct 文件。  
   
-8.  填写想要添加的 XML 文件的元素，根据[VSCT 架构](../../extensibility/vsct-xml-schema-reference.md)。 有关详细信息，请参阅[创作。Vsct 文件](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. 填写想要添加的 XML 文件的元素，根据[VSCT 架构](../../extensibility/vsct-xml-schema-reference.md)。 有关详细信息，请参阅[创作。Vsct 文件](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 ## <a name="compiling-the-code"></a>编译代码  
  只需将.vsct 文件添加到项目并不会进行编译。 必须在生成过程中将其合并。  
   
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>若要将.vsct 文件添加到项目编译  
   
-1.  在编辑器中打开项目文件。 如果加载该项目，必须先卸载它。  
+1. 在编辑器中打开项目文件。 如果加载该项目，必须先卸载它。  
   
-2.  添加[ItemGroup 元素](../../msbuild/itemgroup-element-msbuild.md)的包含 VSCTCompile 元素，如下面的示例中所示。  
+2. 添加[ItemGroup 元素](../../msbuild/itemgroup-element-msbuild.md)的包含 VSCTCompile 元素，如下面的示例中所示。  
   
     ```xml  
     <ItemGroup>  
@@ -72,7 +72,7 @@ ms.locfileid: "58936647"
   
      ResourceName 元素应始终设置为`Menus.ctmenu`。  
   
-3.  如果你的项目包含.resx 文件，添加包含 MergeWithCTO 元素，一个 EmbeddedResource 元素，如下面的示例中所示。  
+3. 如果你的项目包含.resx 文件，添加包含 MergeWithCTO 元素，一个 EmbeddedResource 元素，如下面的示例中所示。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.resx">  
@@ -84,9 +84,9 @@ ms.locfileid: "58936647"
   
      此标记应该包含嵌入的资源的 ItemGroup 元素内。  
   
-4.  打开包文件，通常名为*ProjectName*Package.cs 或*ProjectName*Package.vb，在编辑器中的。  
+4. 打开包文件，通常名为*ProjectName*Package.cs 或*ProjectName*Package.vb，在编辑器中的。  
   
-5.  将 ProvideMenuResource 属性添加到包类，如下面的示例中所示。  
+5. 将 ProvideMenuResource 属性添加到包类，如下面的示例中所示。  
   
     ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  

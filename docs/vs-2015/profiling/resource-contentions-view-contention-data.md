@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108686"
 ---
 # <a name="resource-contentions-view---contention-data"></a>“资源争用”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,16 +33,16 @@ ms.locfileid: "54804129"
 ### <a name="function-values"></a>函数值  
  函数值基于在调用树中表示的执行路径中出现的函数实例。  
   
--   独占值基于函数在自己的函数体中执行语句时发生的事件。 在函数调用的函数中发生的事件不包含在独占值中。  
+- 独占值基于函数在自己的函数体中执行语句时发生的事件。 在函数调用的函数中发生的事件不包含在独占值中。  
   
--   非独占值基于函数或函数调用的函数在执行时发生的事件。  
+- 非独占值基于函数或函数调用的函数在执行时发生的事件。  
   
 ### <a name="percentage-values"></a>百分比值  
  百分比值基于分析数据中的总时间或争用事件数。 如果筛选分析运行的报告或视图，则只有经过筛选的数据中的阻塞时间和争用数才会用作总计值。  
   
 ## <a name="navigating-the-resource-allocation-view"></a>导航资源分配视图  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**名称**|资源或函数的名称。|  
 |**独占阻塞的时间**|-   对于资源，是阻止访问资源并导致线程等待的总时间。<br />-   对于函数，是此函数在函数体中执行代码时阻止此函数的这些实例访问父资源的时间。 不包含此函数调用的函数中的阻塞时间。|  

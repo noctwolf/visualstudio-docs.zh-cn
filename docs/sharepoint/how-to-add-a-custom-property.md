@@ -17,31 +17,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 575eb99f7bbc2a102c576cb4a0f256bd3acfc5f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056004"
 ---
 # <a name="how-to-add-a-custom-property"></a>如何：添加自定义属性
   可以向模型添加自定义属性，通过使用**属性编辑器**。 您可以访问代码来检索连接字符串等信息和其他数据在运行时中的这些属性。
 
 ### <a name="to-add-a-custom-property"></a>若要添加自定义属性
 
-1.  在中**BDC 资源管理器**，选择表示你想要应用自定义属性的模型元素的节点。
+1. 在中**BDC 资源管理器**，选择表示你想要应用自定义属性的模型元素的节点。
 
-2.  在菜单栏上依次选择**视图** > **属性窗口**。
+2. 在菜单栏上依次选择**视图** > **属性窗口**。
 
-3.  在中**属性**窗口中，选择**自定义属性**属性，然后选择省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP。NET 移动设计器椭圆"))。
+3. 在中**属性**窗口中，选择**自定义属性**属性，然后选择省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP。NET 移动设计器椭圆"))。
 
      **属性编辑器**对话框随即出现。
 
-4.  在文本框中**名称**列中，指定的属性的名称。
+4. 在文本框中**名称**列中，指定的属性的名称。
 
-5.  有关**类型**字段的自定义属性中，选择适当的数据类型。
+5. 有关**类型**字段的自定义属性中，选择适当的数据类型。
 
-6.  有关**值**字段的自定义属性，指定一个值，然后选择**确定**按钮。
+6. 有关**值**字段的自定义属性，指定一个值，然后选择**确定**按钮。
 
 ## <a name="see-also"></a>请参阅
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a81bcfc6c9f5db47c2140e68a7b609efc92bf8fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6562a48a66c1c73cd281fb4510e2df737f6a04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107263"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>如何：以编程方式运行 Excel 计算
   使用类似的过程中运行计算<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。
@@ -32,12 +32,12 @@ ms.locfileid: "56610510"
 
 ### <a name="to-run-calculations-in-a-namedrange-control"></a>若要在 NamedRange 控件中运行的计算
 
-1.  创建命名的范围。
+1. 创建命名的范围。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]
      [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]
 
-2.  调用<xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A>指定范围的方法。
+2. 调用<xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A>指定范围的方法。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
      [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]
@@ -46,12 +46,12 @@ ms.locfileid: "56610510"
 
 ### <a name="to-run-calculations-in-a-native-excel-range"></a>若要在本机 Excel 区域中运行的计算
 
-1.  创建命名的范围。
+1. 创建命名的范围。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]
 
-2.  调用<xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A>指定范围的方法。
+2. 调用<xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A>指定范围的方法。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]

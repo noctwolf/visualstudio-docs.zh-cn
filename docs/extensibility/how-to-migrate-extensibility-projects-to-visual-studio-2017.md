@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d2d54bf83cac677c09e63da6169e39100cbb30cc
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087724"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
@@ -38,7 +38,8 @@ ms.locfileid: "57324203"
 
 ## <a name="update-the-microsoftvssdkbuildtools-nuget-package"></a>Microsoft.VSSDK.BuildTools NuGet 包更新
 
->**注意：** 如果你的解决方案不引用 Microsoft.VSSDK.BuildTools NuGet 包，则可以跳过此步骤。
+> [!Note]
+> 如果你的解决方案不引用 Microsoft.VSSDK.BuildTools NuGet 包，则可以跳过此步骤。
 
 若要生成新的 VSIX v3 中扩展 （版本 3） 格式，你的解决方案将需要使用新的 VSSDK 生成工具生成。 此功能将安装使用 Visual Studio 2017，但您的 VSIX v2 扩展可能会保存到通过 NuGet 较旧版本的引用。 如果是这样，您将需要手动安装用于你的解决方案的 Microsoft.VSSDK.BuildTools NuGet 包的更新。
 
@@ -55,13 +56,14 @@ ms.locfileid: "57324203"
 
 若要确保 Visual Studio 的用户的安装已运行扩展所需的所有程序集，请扩展清单文件中指定的所有系统必备组件或包。 当用户尝试安装该扩展时，vsixinstaller 找将检查是否已安装所有必备组件。 如果有一些丢失，将提示用户安装缺少的组件作为扩展安装过程的一部分。
 
->**注意：** 至少，所有扩展应都指定 Visual Studio 核心编辑器组件作为必备组件。
+> [!Note]
+> 至少，所有扩展应都指定 Visual Studio 核心编辑器组件作为必备组件。
 
 * 编辑扩展清单文件 (通常称为*source.extension.vsixmanifest*)。
 * 确保`InstallationTarget`包括 15.0。
 * 添加所需的安装必备组件 （如下面的示例中所示）。
-  * 我们建议您指定仅组件的安装必备组件的 Id。
-  * 请参阅本文档末尾[标识组件 Id 的说明](#find-component-ids)。
+   * 我们建议您指定仅组件的安装必备组件的 Id。
+   * 请参阅本文档末尾[标识组件 Id 的说明](#find-component-ids)。
 
 示例:
 
@@ -81,23 +83,25 @@ ms.locfileid: "57324203"
 
 而不是直接编辑清单 XML，可以使用新**先决条件**将为你更新清单设计器选择必备组件和 XML 的选项卡。
 
->**注意：** 清单设计器将只允许您选择当前的 Visual Studio 实例安装的组件 （不工作负荷或包）。 如果需要添加为工作负荷、 包或当前未安装的组件的必备组件，请直接编辑清单 XML。
+> [!Note]
+> 清单设计器将只允许您选择当前的 Visual Studio 实例安装的组件 （不工作负荷或包）。 如果需要添加为工作负荷、 包或当前未安装的组件的必备组件，请直接编辑清单 XML。
 
 * 打开*source.extension.vsixmanifest [设计]* 文件。
 * 选择**先决条件**选项卡并按**新建**按钮。
 
-  ![VSIX 清单设计器](media/vsix-manifest-designer.png)
+   ![VSIX 清单设计器](media/vsix-manifest-designer.png)
 
 * **添加新先决条件**窗口将打开。
 
-  ![添加 vsix 必备组件](media/add-vsix-prerequisite.png)
+   ![添加 vsix 必备组件](media/add-vsix-prerequisite.png)
 
 * 单击下拉列表**名称**，然后选择所需的必备组件。
-* 如果需要，更新的版本。
+* 如有必要，请更新版本。
 
-  >注意:版本字段将使用当前安装的组件，与范围最多跨越 （但不是包括） 的版本的预填充下一个主要版本的组件。
+   > [!Note]
+   > 版本字段将使用当前安装的组件，与范围最多跨越 （但不是包括） 的版本的预填充下一个主要版本的组件。
 
-  ![添加 roslyn 必备组件](media/add-roslyn-prerequisite.png)
+   ![添加 roslyn 必备组件](media/add-roslyn-prerequisite.png)
 
 * 按“确定”。
 
@@ -109,24 +113,26 @@ ms.locfileid: "57324203"
 
 ![启动外部程序](media/start-external-program.png)
 
->**注意：** 调试启动操作通常存储在 *。 csproj.user*文件。 此文件通常包括在 *.gitignore*文件，并因此，通常不会保存与其他项目文件时提交到源代码管理。 在这种情况下，如果已经读取你的解决方案从源代码管理全新很可能此项目将具有为启动操作设置的任何值。 使用 Visual Studio 2017 创建的新 VSIX 项目将具有 *。 csproj.user*文件创建包含指向当前 Visual Studio 安装目录的默认值。 但是如果要迁移 v2 VSIX 扩展，则很可能该 *。 csproj.user*文件将包含到上一 Visual Studio 版本的安装目录的引用。 值设置**调试** > **启动操作**将允许正确的 Visual Studio 实验实例启动时尝试调试您的扩展插件。
+> [!Note]
+> 调试启动操作通常存储在 *。 csproj.user*文件。 此文件通常包括在 *.gitignore*文件，并因此，通常不会保存与其他项目文件时提交到源代码管理。 在这种情况下，如果已经读取你的解决方案从源代码管理全新很可能此项目将具有为启动操作设置的任何值。 使用 Visual Studio 2017 创建的新 VSIX 项目将具有 *。 csproj.user*文件创建包含指向当前 Visual Studio 安装目录的默认值。 但是如果要迁移 v2 VSIX 扩展，则很可能该 *。 csproj.user*文件将包含到上一 Visual Studio 版本的安装目录的引用。 值设置**调试** > **启动操作**将允许正确的 Visual Studio 实验实例启动时尝试调试您的扩展插件。
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>检查扩展构建正确 （作为 VSIX v3)
 
 * 生成 VSIX 项目。
 * 将解压缩生成的 VSIX 中。
-  * 默认情况下，VSIX 文件位于*bin/Debug*或*bin/Release*作为 *[YourCustomExtension].vsix*。
-  * 重命名 *.vsix*到 *.zip*轻松查看内容。
+   * 默认情况下，VSIX 文件位于*bin/Debug*或*bin/Release*作为 *[YourCustomExtension].vsix*。
+   * 重命名 *.vsix*到 *.zip*轻松查看内容。
 * 检查存在的三个文件：
-  * *extension.vsixmanifest*
-  * *manifest.json*
-  * *catalog.json*
+   * *extension.vsixmanifest*
+   * *manifest.json*
+   * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>时所有所需的必备项检查
 
 VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测试。
 
->**注意：** 然后再安装任何扩展，请关闭 Visual Studio 的所有实例。
+> [!Note]
+> 然后再安装任何扩展，请关闭 Visual Studio 的所有实例。
 
 尝试安装该扩展：
 
@@ -135,11 +141,11 @@ VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测
 ![在 Visual Studio 2017 的 VSIX 安装程序](media/vsixinstaller-vs-2017.png)
 
 * 可选：检查 Visual Studio 的早期版本。
-  * 事实证明，向后兼容性。
-  * 应适用于 Visual Studio 2012，Visual Studio 2013，Visual Studio 2015。
+   * 事实证明，向后兼容性。
+   * 应适用于 Visual Studio 2012，Visual Studio 2013，Visual Studio 2015。
 * 可选：检查，VSIX 安装程序版本检查器提供了多种版本。
-  * 包括 Visual Studio 的早期版本 （如果已安装）。
-  * 包含 Visual Studio 2017。
+   * 包括 Visual Studio 的早期版本 （如果已安装）。
+   * 包含 Visual Studio 2017。
 
 如果最近打开 Visual Studio，你可能会看到如下对话框：
 
@@ -147,7 +153,8 @@ VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测
 
 等待进程关闭，或手动结束任务。 所列的名称，或在括号中列出的 PID，您可以找到进程。
 
->**注意：** 这些过程将不会自动关闭 Visual Studio 实例正在运行时。 请确保已关闭的情况下在计算机中-包括来自其他用户，使用 Visual Studio 的所有实例，然后继续重试。
+> [!Note]
+> 这些过程将不会自动关闭 Visual Studio 实例正在运行时。 请确保已关闭的情况下在计算机中-包括来自其他用户，使用 Visual Studio 的所有实例，然后继续重试。
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>时缺少所需的先决条件检查
 

@@ -1,5 +1,5 @@
 ---
-title: 移植、 迁移和升级项目 |Microsoft Docs
+title: 移植、迁移和升级项目 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -19,17 +19,17 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7fd6319c9c4527988511c423cd2094ffa34d93c3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194919"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654693"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual Studio 项目](https://docs.microsoft.com/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)。
+有关 Visual Studio 的最新文档，请参阅 [Visual Studio 的项目迁移和升级参考](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)。
 
 在考虑是否应迁移到较新版本的 Visual Studio 时，你可以参考此文档来了解你在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中创建的哪些解决方案、项目、文件和其他资产会在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]中运行但不进行任何修改。 或者，当尝试打开的项目在打开过项目的 Visual Studio 版本中不受支持，或者该项目需要 SDK 或 扩展名（如 Azure SDK for .NET）时，遇到一条错误消息，那么你可能已到达此页。
 
@@ -38,12 +38,12 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
  如果将 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 与 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 一起使用，则可在任意一个版本中创建和修改项目和文件。 可以在各个版本之间传输项目和文件，前提是不添加其中某个版本不支持的功能。
 
 ##  <a name="project"></a>项目
- 以下列表描述了 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中对使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 创建的项目的支持。 你可以使用此列表来帮助确定你是否可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]、  [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中按原样打开项目，或者是否必须修改项目以确保兼容性。
+ 以下列表描述了 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中对使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 创建的项目的支持。 使用此列表来帮助确定你是否可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]、[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中“按原样”打开项目，或者是否必须修改项目以确保兼容性。
 
 |项目类型|兼容性|
 |---------------------|-------------------|
 |通用 Windows 平台应用|若要在 Visual Studio 安装程序中安装通用 Windows 应用开发工具，请选择 **“自定义”** 或 **“修改”**，然后选择 **“通用 Windows 应用程序开发工具”**。<br /><br /> Windows 10 通用 Windows 平台 (UWP) 应用开发仅在 Windows 10 或 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 上的 [!INCLUDE[win81](../includes/win81-md.md)]中受支持。|
-|Windows 应用商店应用程序|Windows 应用商店应用开发（包括面向 Windows 8.1 和 Windows Phone 8.1 的通用应用）在 [!INCLUDE[win81](../includes/win81-md.md)] 和 Windows 10 中受支持。 现有的 [!INCLUDE[win8](../includes/win8-md.md)] 项目可以继续获得服务，但无法创建新的 [!INCLUDE[win8](../includes/win8-md.md)] 项目。 [!INCLUDE[win81](../includes/win81-md.md)]项目只能依赖于某些类型的引用。 有关详细信息，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)。 **注意：** [!INCLUDE[win81](../includes/win81-md.md)]使用创建的项目[!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]或[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]不能在中打开[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。 这是因为使用 [!INCLUDE[win81](../includes/win81-md.md)] 和 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 创建的 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 项目以这些版本为目标，而 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 仅支持以 [!INCLUDE[win8](../includes/win8-md.md)] 为目标的 [!INCLUDE[win8](../includes/win8-md.md)]项目。|
+|Windows 应用商店应用程序|Windows 应用商店应用开发（包括面向 Windows 8.1 和 Windows Phone 8.1 的通用应用）在 [!INCLUDE[win81](../includes/win81-md.md)] 和 Windows 10 中受支持。 现有的 [!INCLUDE[win8](../includes/win8-md.md)] 项目可以继续获得服务，但无法创建新的 [!INCLUDE[win8](../includes/win8-md.md)] 项目。 [!INCLUDE[win81](../includes/win81-md.md)]项目只能依赖于某些类型的引用。 有关详细信息，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)。 注意：使用 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 创建的 [!INCLUDE[win81](../includes/win81-md.md)] 项目无法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中打开。 这是因为使用 [!INCLUDE[win81](../includes/win81-md.md)] 和 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 创建的 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 项目以这些版本为目标，而 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 仅支持以 [!INCLUDE[win8](../includes/win8-md.md)] 为目标的 [!INCLUDE[win8](../includes/win8-md.md)]项目。|
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|在安装适当的多目标包之后，可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中创建并使用这些项目。 Visual Studio 2010 SP1 中不支持这些项目。|
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|你可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中创建并打开这些项目，但在 Visual Studio 2010 SP1 中不行。|
 |BizTalk|BizTalk Server 项目与 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]不兼容。|
@@ -61,12 +61,12 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
 |Office 2007 VSTO|如果你升级项目以面向 Office 2013 和 .NET Framework 4，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]或 Visual Studio 2010 SP1 中打开此项目。|
 |Office 2010 VSTO|如果项目面向 .NET Framework 4，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开此项目。 所有其他项目需要单向升级。|
 |丰富的 Internet 应用程序|在升级项目时，你只能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。|
-|SharePoint 2007|此项目不能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开。 但是，如果你将项目手动升级到 SharePoint 2010，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。 有关如何升级 SharePoint 2007 的详细信息，请参阅[从 SharePoint 2007 迁移到 SharePoint 2010 为 IT 专业人员](http://go.microsoft.com/fwlink/?LinkId=238224)和[SharePoint 企业搜索迁移工具，SharePoint Server 2010](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14)).|
+|SharePoint 2007|此项目不能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开。 但是，如果你将项目手动升级到 SharePoint 2010，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。 有关如何升级 SharePoint 2007 的详细信息，请参阅[从 SharePoint 2007 迁移到 SharePoint 2010（针对 IT 专业人员）](http://go.microsoft.com/fwlink/?LinkId=238224)和 [SharePoint Server 2010 的 SharePoint 企业搜索迁移工具](https://docs.microsoft.com/previous-versions/office/developer/sharepoint-2010/ee556856(v%3Doffice.14))。|
 |SharePoint 2010|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开项目。|
 |SketchFlow|如果允许 Visual Studio 将项目升级到 WPF 4.5/Silverlight 5，则可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开它。|
-|[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 数据库|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开项目。 如果你有使用早期版本的 SQL Server 创建的数据库文件 (.mdf)，则必须将它升级为 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，然后才能将它与 SQL Server Express LocalDB 一起使用，但该数据库不再与早期版本的 SQL Server 相兼容。 如果不升级，则可通过在同一计算机上安装和使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 来继续在 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 中使用该数据库。 有关详细信息，请参阅[升级.mdf 文件](../data-tools/upgrade-dot-mdf-files.md)。|
+|[!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 数据库|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开项目。 如果你有使用早期版本的 SQL Server 创建的数据库文件 (.mdf)，则必须将它升级为 [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ，然后才能将它与 SQL Server Express LocalDB 一起使用，但该数据库不再与早期版本的 SQL Server 相兼容。 如果不升级，则可通过在同一计算机上安装和使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 来继续在 [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] 中使用该数据库。 有关详细信息，请参阅[升级 .mdf 文件](../data-tools/upgrade-dot-mdf-files.md)。|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] 学习版|如果在运行 [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 的计算机上安装了 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]Express，则可以在这三个版本中打开项目。|
-|SQL Server 报告项目|只能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中打开项目。 对于仅限本地模式（即，在未连接到 SQL Server 时），你不会获得与 [!INCLUDE[vs2010](../includes/vs2010-md.md)]中的查看器相关联的控件的设计时体验，但是项目在运行时将正常工作。 **注意：** 如果您添加一项功能，是特定于[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]报表架构将自动升级，无法再打开中的项目[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。|
+|SQL Server 报告项目|只能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中打开项目。 对于仅限本地模式（即，在未连接到 SQL Server 时），你不会获得与 [!INCLUDE[vs2010](../includes/vs2010-md.md)]中的查看器相关联的控件的设计时体验，但是项目在运行时将正常工作。 注意：如果添加 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 特定的功能，则报表架构将自动升级，并且你无法再在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中打开项目。|
 |单元测试|可以在 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 中使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]打开在任何这些版本中创建的测试。|
 |Visual C++|可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 打开在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中创建的 C++ 项目。 如果要使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 生成环境来生成在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中创建的项目，则必须在同一计算机上安装这两个版本的 Visual Studio。 有关详细信息，请参阅[如何：将 Visual C++ 项目升级到 Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)和 [Visual C++ 移植和升级指南](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)。|
 |Visual Studio 2010 网站|如果允许 Visual Studio 自动升级项目，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。|
@@ -74,7 +74,7 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
 |Visual Studio 2010 Visual Database Tools|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开此项目。|
 |Visual Studio 实验室管理工具版|可以使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 打开在任何这些版本中创建的环境。 但在可以创建环境之前，Microsoft 测试管理器的版本必须与 Team Foundation Server 的版本匹配。|
 |Visual Studio 宏|此项目不能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中打开，因为它不支持该项目类型。|
-|Visual Studio SDK/VSIX|将 Visual Studio SDK 项目升级到 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]之后，无法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中打开它。 有关详细信息，请参阅[如何： 将扩展性项目迁移到 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)。|
+|Visual Studio SDK/VSIX|将 Visual Studio SDK 项目升级到 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]之后，无法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中打开它。 有关详细信息，请参阅[如何：将扩展性项目迁移到 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)。|
 |Microsoft Azure Tools for Visual Studio|如果你正在使用 Microsoft Azure Tools for Visual Studio 2.1 版，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开此项目。 对于面向早期版本的项目，如果你允许 Visual Studio 将项目升级到 2.1 版，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。|
 |Windows Communication Foundation、Windows Presentation Foundation|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开此项目。|
 |Windows Mobile|此项目不能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中打开，因为它不支持该项目类型。|
@@ -97,7 +97,7 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
 
 - 如果项目需要 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]特定的功能，则无法在早期版本中打开它。
 
-- 如果你正使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ，并且要打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中创建的项目，则可能能够自定义项目系统以合并 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]的功能。 有关如何执行此操作的信息，请参阅[进行自定义项目版本可区别](../misc/making-custom-projects-version-aware.md)。
+- 如果你正使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ，并且要打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中创建的项目，则可能能够自定义项目系统以合并 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]的功能。 有关如何执行此操作的信息，请参阅[使自定义项目版本可区别](../misc/making-custom-projects-version-aware.md)。
 
   有关其他的疑难解答信息，请参阅 [Visual Studio 2013 兼容性](http://support.microsoft.com/kb/2863286) 知识库文章。
 
@@ -130,4 +130,5 @@ Visual Studio 2017 的最新文档，请参阅[端口、 迁移和升级 Visual 
 |[!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)]|不能使用 64 位环境（如 MSBuild 或 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] ）来生成在 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 中创建的 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]应用。|
 
 ## <a name="see-also"></a>请参阅
- [使自定义项目版本可区别](../misc/making-custom-projects-version-aware.md)
+
+- [使自定义项目版本可区别](../misc/making-custom-projects-version-aware.md)

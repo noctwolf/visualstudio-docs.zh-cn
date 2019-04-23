@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a38e453d9bfff3b2633eb98cc5d6127fa126335f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116144"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：为 ClickOnce 部署错误设置自定义日志文件位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "58937188"
   
 ### <a name="to-set-a-custom-log-file-location"></a>若要设置自定义日志文件位置  
   
-1.  打开**Regedit.exe**。  
+1. 打开**Regedit.exe**。  
   
-2.  导航到的节点`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
+2. 导航到的节点`HKCU\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`。  
   
-3.  将字符串值`LogFilePath`到的完整路径和文件名你首选的自定义日志的位置。  
+3. 将字符串值`LogFilePath`到的完整路径和文件名你首选的自定义日志的位置。  
   
      此位置必须是用户对其具有写访问权限的目录中。 例如，在 Windows Vista 中，创建以下文件夹结构并设置`LogFilePath`到 C:\Users\\< 用户名\>\Documents\Logs\ClickOnce\installation.log。  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114220"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>用于 Excel 的文档级自定义项编程入门
   如果你刚开始使用 Visual Studio 创建 Microsoft Office Excel 文档级自定义项，下面是您需要了解。
@@ -44,11 +44,11 @@ ms.locfileid: "56603789"
 
  有关详细信息，请参阅下列主题：
 
--   [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)
+- [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)
 
--   [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
+- [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>自定义 Excel 的用户界面
  大多数 Microsoft Office 解决方案的 Office 应用程序提供用户交互的解决方案某种方式修改用户界面 (UI)。 有许多方法通过使用文档级自定义可以在其中修改 UI Excel。 例如，可以将控件添加到功能区中，或者，可以显示操作窗格。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。

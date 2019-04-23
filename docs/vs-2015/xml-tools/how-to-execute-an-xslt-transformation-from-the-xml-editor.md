@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf4696827f0c94e9eb9dfbd88a5e814298f823e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112593"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：在 XML 编辑器中执行 XSLT 转换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "59649519"
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>从 XML 文档执行 XSLT 转换  
   
-1.  在“XML 编辑器”中打开 XML 文档。  
+1. 在“XML 编辑器”中打开 XML 文档。  
   
-2.  将 XSLT 样式表与 XML 文档关联。  
+2. 将 XSLT 样式表与 XML 文档关联。  
   
-    -   将 `xml-stylesheet` 处理指令添加到 XML 文档中。 例如，将以下行 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` 添加到文档序言中。  
+    - 将 `xml-stylesheet` 处理指令添加到 XML 文档中。 例如，将以下行 `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` 添加到文档序言中。  
   
          或  
   
-    -   添加 XSLT 样式表使用**属性**窗口。 在文档中**属性窗口**，单击**浏览**按钮**样式表**字段中，选择 XSLT 样式表，并单击**打开**.  
+    - 添加 XSLT 样式表使用**属性**窗口。 在文档中**属性窗口**，单击**浏览**按钮**样式表**字段中，选择 XSLT 样式表，并单击**打开**.  
   
-3.  单击**ShowXSL 输出**按钮**XML 编辑器**工具栏。  
+3. 单击**ShowXSL 输出**按钮**XML 编辑器**工具栏。  
   
     > [!NOTE]
     >  如果没有与 XML 文档关联的样式表，对话框会提示您提供要使用的样式表。  
@@ -46,22 +46,22 @@ ms.locfileid: "59649519"
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>从 XSLT 样式表执行 XSLT 转换  
   
-1.  在“XML 编辑器”中打开 XSLT 样式表。  
+1. 在“XML 编辑器”中打开 XSLT 样式表。  
   
-2.  指定 XML 文档中的**输入**的文档字段**属性**窗口。  
+2. 指定 XML 文档中的**输入**的文档字段**属性**窗口。  
   
     > [!NOTE]
     >  XML 文档是用于转换的输入文档。 如果文档未指定启动 XSLT 转换时，**文件打开**对话框随即出现，并且你可以在该时间在指定文档。  
   
-3.  单击**ShowXSLT 输出**按钮**XML 编辑器**工具栏。  
+3. 单击**ShowXSLT 输出**按钮**XML 编辑器**工具栏。  
   
      由 XSLT 转换生成的输出显示在新的文档窗口中。  
   
 ### <a name="to-provide-a-different-output-file-name"></a>提供不同的输出文件名  
   
-1.  指定文件的名称在**输出**的文档字段**属性**窗口。  
+1. 指定文件的名称在**输出**的文档字段**属性**窗口。  
   
-2.  单击**ShowXSLT 输出**按钮**XML 编辑器**工具栏。  
+2. 单击**ShowXSLT 输出**按钮**XML 编辑器**工具栏。  
   
      由 XSLT 转换生成的输出显示在新的文档窗口和输出窗口中使用的编辑器上的文件扩展名取决于你**输出**文档属性。  
   

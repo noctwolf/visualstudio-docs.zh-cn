@@ -10,12 +10,12 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ddca5f9159c2cb20eeb8525bd37730a88f64fb43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094120"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>如果使用旧版 API 更改视图设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "58933709"
   
  下面是典型的过程中更改的核心编辑器实例的视图设置。  
   
-1.  调用`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口。  
+1. 调用`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口。  
   
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，将值指定为 GUID_EditPropCategory_View_MasterSettings`rguidCategory`参数。  
+2. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，将值指定为 GUID_EditPropCategory_View_MasterSettings`rguidCategory`参数。  
   
      执行此操作将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口，其中包含的视图的强制属性集。 永久强制此组中的任何设置。 如果设置不在此组中，则它将遵循中指定的选项**选项**对话框或用户的命令。  
   
-3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，指定在相应的设置值`idprop`参数。  
+3. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，指定在相应的设置值`idprop`参数。  
   
      例如，若要强制执行自动换行，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>并指定 VSEDITPROPID_ViewLangOpt_WordWrap，值`vt`为`idprop`参数。 在此调用中，`vt`是 VT_BOOL 类型的变体和`vt.boolVal`为 VARIANT_TRUE。  
   

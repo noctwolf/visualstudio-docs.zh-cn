@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076649"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以编程方式在工作表中的行进行分组
   可以对一个或多个的整个行进行分组。 若要在工作表中创建组，请使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。
@@ -37,7 +37,7 @@ ms.locfileid: "56598217"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>若要创建的一组工作表上的 NamedRange 控件
 
-1.  通过调用组三个命名的范围<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>的每个范围的方法。 必须将此代码置于表类中，而不是在 `ThisWorkbook` 类中。
+1. 通过调用组三个命名的范围<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>的每个范围的方法。 必须将此代码置于表类中，而不是在 `ThisWorkbook` 类中。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -50,7 +50,7 @@ ms.locfileid: "56598217"
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>若要在工作表中创建的 Excel 范围组
 
-1.  通过调用组三个命名的范围<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>的每个范围的方法。 下面的示例假定有三个<xref:Microsoft.Office.Interop.Excel.Range>控件分别命名为`data2001`， `data2002`，和`dataAll`同一个工作表上。 每个命名的范围是指在工作表中的整个行。
+1. 通过调用组三个命名的范围<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>的每个范围的方法。 下面的示例假定有三个<xref:Microsoft.Office.Interop.Excel.Range>控件分别命名为`data2001`， `data2002`，和`dataAll`同一个工作表上。 每个命名的范围是指在工作表中的整个行。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

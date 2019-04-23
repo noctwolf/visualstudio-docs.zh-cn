@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084036"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ ms.locfileid: "58866754"
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Visual Studio“工具”菜单中提供的工具  
  可从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“工具”菜单调用以下工具。 也可从“快速启动”窗口通过名称调用它们。 例如，若要调用 GuidGen.exe，请键入“创建 GUID”。  
   
-1.  创建 GUID：生成 GUID。  
+1. 创建 GUID：生成 GUID。  
   
-2.  错误查找：从输入的值中获取错误消息。 有关详细信息，请参阅 [ERRLOOK 参考](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)。  
+2. 错误查找：从输入的值中获取错误消息。 有关详细信息，请参阅 [ERRLOOK 参考](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)。  
   
-3.  ATL/MFC 跟踪工具：显示 ATL 和 MFC 源中的调试跟踪消息。  
+3. ATL/MFC 跟踪工具：显示 ATL 和 MFC 源中的调试跟踪消息。  
   
-4.  PreEmptive Protection - Dotfuscator:保护.NET 程序受到反向工程。  
+4. PreEmptive Protection - Dotfuscator:保护.NET 程序受到反向工程。  
   
-5.  SPY + +:以图形方式显示进程、 线程、 窗口和窗口消息。  
+5. SPY + +:以图形方式显示进程、 线程、 窗口和窗口消息。  
   
-6.  WCF 服务配置编辑器：可以创建和修改 WCF 服务的配置设置。  
+6. WCF 服务配置编辑器：可以创建和修改 WCF 服务的配置设置。  
   
 > [!WARNING]
 >  您可能会看到其他外部工具列表，具体取决于已安装的 Visual Studio 的版本以及已应用的设置配置文件。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
@@ -90,11 +90,11 @@ ms.locfileid: "58866754"
 ## <a name="adding-new-tools"></a>添加新工具  
  可将外部工具添加到“工具”菜单。 打开“外部工具”对话框并单击“添加”，然后填写信息。 例如，以下条目会导致 Windows 资源管理器在当前已在 Visual Studio 中打开的文件目录中打开：  
   
-1.  标题:打开文件位置  
+1. 标题:打开文件位置  
   
-2.  命令：explorer.exe  
+2. 命令：explorer.exe  
   
-3.  参数：/root, "$(ItemDir)"  
+3. 参数：/root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>外部工具参数  
  以下自变量是在启动外部工具时分配的 Visual Studio 变量。 使用“外部工具”对话框，可以在“工具”菜单上列出指向外部工具（如记事本或 Spy++）的链接。  

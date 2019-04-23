@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100243"
 ---
 # <a name="localize-menu-commands"></a>本地化菜单命令
 您可以通过创建本地化提供菜单和工具栏命令的本地化的文本 *.vsct*文件，并本地化 *.resx*为你的 VSPackage，以及然后更新项目文件将合并的文件更改。
@@ -76,19 +76,19 @@ ms.locfileid: "56679263"
 ## <a name="localize-other-text-resources"></a>将其他文本资源本地化
  在资源中定义文本资源而不是命令名称 (*.resx*) 文件。
 
-1.  重命名*VSPackage.resx*到*VSPackage.en US.resx*。
+1. 重命名*VSPackage.resx*到*VSPackage.en US.resx*。
 
-2.  制作一份*VSPackage.en US.resx*文件为每个本地化语言。
+2. 制作一份*VSPackage.en US.resx*文件为每个本地化语言。
 
      命名每个副本*VSPackage。 {区域设置}.resx*，其中 *{区域}* 是特定区域性名称。
 
-3.  重命名*Resources.resx*到*Resources.en-us.resx*。
+3. 重命名*Resources.resx*到*Resources.en-us.resx*。
 
-4.  制作一份*Resources.en-us.resx*文件为每个本地化语言。
+4. 制作一份*Resources.en-us.resx*文件为每个本地化语言。
 
      命名每个副本*资源。 {区域设置}.resx*，其中 *{区域}* 是特定区域性名称。
 
-5.  打开每个 *.resx*文件若要修改的字符串值以适合特定的语言和区域性。 下面的示例显示了一个工具窗口的标题栏的已本地化的资源定义。
+5. 打开每个 *.resx*文件若要修改的字符串值以适合特定的语言和区域性。 下面的示例显示了一个工具窗口的标题栏的已本地化的资源定义。
 
      [*Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ ms.locfileid: "56679263"
 ## <a name="incorporate-localized-resources-into-the-project"></a>将本地化的资源合并到项目
  必须修改*assemblyinfo.cs*文件和要合并的本地化的资源的项目文件。
 
-1.  从**属性**中的节点**解决方案资源管理器**，打开*assemblyinfo.cs*或者*assemblyinfo.vb*在编辑器中。
+1. 从**属性**中的节点**解决方案资源管理器**，打开*assemblyinfo.cs*或者*assemblyinfo.vb*在编辑器中。
 
-2.  添加以下条目。
+2. 添加以下条目。
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ ms.locfileid: "56679263"
 
      这将为默认语言设置美国英语。
 
-3.  卸载项目。
+3. 卸载项目。
 
-4.  在编辑器中打开项目文件。
+4. 在编辑器中打开项目文件。
 
-5.  找到`ItemGroup`元素，其中包含`EmbeddedResource`元素。
+5. 找到`ItemGroup`元素，其中包含`EmbeddedResource`元素。
 
-6.  中`EmbeddedResource`调用的元素*VSPackage.en US.resx*，将为`ManifestResourceName`具有元素`LogicalName`元素中，将设置为`VSPackage.en-US.Resources`，按如下所示。
+6. 中`EmbeddedResource`调用的元素*VSPackage.en US.resx*，将为`ManifestResourceName`具有元素`LogicalName`元素中，将设置为`VSPackage.en-US.Resources`，按如下所示。
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ ms.locfileid: "56679263"
     </EmbeddedResource>
     ```
 
-7.  对于每种本地化语言，复制`EmbeddedResource`的元素`VsPackage.en-US`，并设置**Include**属性和**LogicalName**元素复制到目标区域设置，如以下所示示例。
+7. 对于每种本地化语言，复制`EmbeddedResource`的元素`VsPackage.en-US`，并设置**Include**属性和**LogicalName**元素复制到目标区域设置，如以下所示示例。
 
-8.  向每个本地化`VSCTCompile`元素中，添加`ResourceName`指向的元素`Menus.ctmenu`，如以下示例所示。
+8. 向每个本地化`VSCTCompile`元素中，添加`ResourceName`指向的元素`Menus.ctmenu`，如以下示例所示。
 
     ```xml
     <ItemGroup>

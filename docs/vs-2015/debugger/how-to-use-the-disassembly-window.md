@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077493"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>如何：使用反汇编窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ ms.locfileid: "58937758"
   
 ### <a name="to-display-the-disassembly-window"></a>显示“反汇编”窗口  
   
--   上**调试**菜单中，选择**Windows**，然后单击**反汇编**。  
+- 上**调试**菜单中，选择**Windows**，然后单击**反汇编**。  
   
      调试器必须正在运行或处于中断模式。  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>打开或关闭可选信息  
   
--   右键单击**反汇编**窗口中，并设置或清除快捷菜单中的所需的选项。  
+- 右键单击**反汇编**窗口中，并设置或清除快捷菜单中的所需的选项。  
   
      左边距中的黄色箭头表示当前执行点的位置。 对于本机代码，这对应于 CPU 的程序计数器。 该位置显示程序中将要执行的下一条指令。  
   

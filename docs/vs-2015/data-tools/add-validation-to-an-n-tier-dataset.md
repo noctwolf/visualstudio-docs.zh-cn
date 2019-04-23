@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94a8f4f8fe0d1f93ce3467291a20377234db29f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080704"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>向 n 层数据集添加验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,14 +58,14 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>若要将更改过程中的验证添加到各列的值  
   
-1.  在设计器中打开数据集，通过双击 **.xsd**中的文件**解决方案资源管理器**。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在设计器中打开数据集，通过双击 **.xsd**中的文件**解决方案资源管理器**。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  双击你想要验证的列。 此操作将创建<xref:System.Data.DataTable.ColumnChanging>事件处理程序。  
+2. 双击你想要验证的列。 此操作将创建<xref:System.Data.DataTable.ColumnChanging>事件处理程序。  
   
     > [!NOTE]
     >  数据集设计器不会自动创建 C# 事件的事件处理程序。 需要处理 C# 中的事件的代码包含在下一节中。 `SampleColumnChangingEvent` 创建并将其然后挂接<xref:System.Data.DataTable.ColumnChanging>中的事件<xref:System.Data.DataTable.EndInit%2A>方法。  
   
-3.  添加代码以验证`e.ProposedValue`包含满足要求的应用程序的数据。 如果建议的值是不可接受，设置该列以指示其包含一个错误。  
+3. 添加代码以验证`e.ProposedValue`包含满足要求的应用程序的数据。 如果建议的值是不可接受，设置该列以指示其包含一个错误。  
   
      下面的代码示例验证**数量**列包含多个 0。 如果**数量**小于或等于为 0，将列设置为错误。 `Else`子句中，如果清除该错误**Quantity**大于 0。 中的列更改事件处理程序的代码应如下所示：  
   
@@ -117,18 +117,18 @@ End Sub
   
 #### <a name="to-add-validation-during-changes-to-whole-rows"></a>若要添加到整个行的过程中更改的验证  
   
-1.  在设计器中打开数据集，通过双击 **.xsd**中的文件**解决方案资源管理器**。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在设计器中打开数据集，通过双击 **.xsd**中的文件**解决方案资源管理器**。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  双击设计器上的数据表的标题栏。  
+2. 双击设计器上的数据表的标题栏。  
   
      分部类创建与`RowChanging`事件处理程序并在代码编辑器中打开。  
   
     > [!NOTE]
     >  数据集设计器不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>C# 项目中的事件。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>要挂接表的初始化方法中的事件的事件和运行的代码。  
   
-3.  添加用户代码的分部类声明。  
+3. 添加用户代码的分部类声明。  
   
-4.  下面的代码演示在何处添加用户代码来验证期间<xref:System.Data.DataTable.RowChanging>适用于 Visual Basic 的事件：  
+4. 下面的代码演示在何处添加用户代码来验证期间<xref:System.Data.DataTable.RowChanging>适用于 Visual Basic 的事件：  
   
     ```vb  
     Partial Class OrdersDataTable  
@@ -145,7 +145,7 @@ End Sub
     End Class  
     ```  
   
-5.  下面的代码演示如何创建`RowChanging`事件处理程序以及在何处添加用户代码，以验证期间<xref:System.Data.DataTable.RowChanging>适用于 C# 事件：  
+5. 下面的代码演示如何创建`RowChanging`事件处理程序以及在何处添加用户代码，以验证期间<xref:System.Data.DataTable.RowChanging>适用于 C# 事件：  
   
     ```csharp  
     partial class OrdersDataTable  

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05faeddf43c91ce0f45d54d2f6b6ed46cf8d2a4f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062445"
 ---
 # <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR 枚举
 描述单个源文本字符的特性。  
@@ -31,7 +31,7 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
   
 ## <a name="members"></a>成员  
   
-|成员|值|描述|  
+|成员|“值”|描述|  
 |------------|-----------|-----------------|  
 |SOURCETEXT_ATTR_KEYWORD|0x0001|字符是一个语言关键字，例如，VBScript 关键字的一部分`While`。|  
 |SOURCETEXT_ATTR_COMMENT|0x0002|字符是注释块的一部分。|  
@@ -44,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>备注  
  通常情况下， `IDebugDocumentHost::GetScriptTextAttributes`， `IActiveScriptDebug::GetScriptletTextAttributes`，和`IActiveScriptDebug::GetScriptTextAttributes`方法将返回每个字符，一个文本属性，除非：  
   
--   设置 GETATTRTYPE_DEPSCAN 标志，在这种情况下，该方法可能返回 SOURCETEXT_ATTR_IDENTIFIER 和 SOURCETEXT_ATTR_MEMBERLOOKUP 标志  
+- 设置 GETATTRTYPE_DEPSCAN 标志，在这种情况下，该方法可能返回 SOURCETEXT_ATTR_IDENTIFIER 和 SOURCETEXT_ATTR_MEMBERLOOKUP 标志  
   
--   设置 GETATTRFLAG_THIS 标志，在这种情况下，该方法可能返回 SOURCETEXT_ATTR_THIS 标志，  
+- 设置 GETATTRFLAG_THIS 标志，在这种情况下，该方法可能返回 SOURCETEXT_ATTR_THIS 标志，  
   
--   设置 GETATTRFLAG_HUMANTEXT 标志，该方法可能会在这种情况下返回 SOURCETEXT_ATTR_HUMANTEXT 标志。  
+- 设置 GETATTRFLAG_HUMANTEXT 标志，该方法可能会在这种情况下返回 SOURCETEXT_ATTR_HUMANTEXT 标志。  
   
 ## <a name="see-also"></a>请参阅  
  [活动脚本调试器常量、枚举和结构](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

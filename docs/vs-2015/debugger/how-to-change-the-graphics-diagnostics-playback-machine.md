@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045148"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放计算机
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ ms.locfileid: "58933002"
   
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>若要使用本地计算机播放图形信息  
   
-1.  在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
+1. 在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
   
-2.  下**手动配置**，在**地址**属性中，输入`localhost`。  
+2. 下**手动配置**，在**地址**属性中，输入`localhost`。  
   
-3.  设置**身份验证模式**属性设置为**None**。  
+3. 设置**身份验证模式**属性设置为**None**。  
   
-4.  选择“选择”按钮。  
+4. 选择“选择”按钮。  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>若要使用远程计算机播放图形信息  
   
-1.  在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
+1. 在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。  
   
-2.  下**手动配置**，在**地址**属性，输入 Windows 域名或 IP 地址的计算机或你想要用于播放图形信息的设备。  
+2. 下**手动配置**，在**地址**属性，输入 Windows 域名或 IP 地址的计算机或你想要用于播放图形信息的设备。  
   
-3.  指定想要用于保护与播放计算机的连接的授权类型。  
+3. 指定想要用于保护与播放计算机的连接的授权类型。  
   
-    -   对于 Windows 身份验证设置**身份验证模式**属性设置为**Windows**。  
+    - 对于 Windows 身份验证设置**身份验证模式**属性设置为**Windows**。  
   
-    -   对于无身份验证设置**身份验证模式**属性设置为**None**。  
+    - 对于无身份验证设置**身份验证模式**属性设置为**None**。  
   
-4.  选择“选择”按钮。  
+4. 选择“选择”按钮。  
   
 > [!NOTE]
 >  **远程调试器连接**对话框还可能显示直接连接到你的开发计算机或同一子网的远程调试目标。 您可以使用远程调试目标： 作为图形诊断播放计算机无需手动配置。 在中**远程调试器连接**对话框框中，选择您想，然后选择的目标**选择**按钮。  

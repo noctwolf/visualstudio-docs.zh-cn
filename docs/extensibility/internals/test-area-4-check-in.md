@@ -1,5 +1,5 @@
 ---
-title: 测试区域 4:签入 |Microsoft Docs
+title: 测试区域 4：签入 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038707"
 ---
-# <a name="test-area-4-check-in"></a>测试区域 4:签入
+# <a name="test-area-4-check-in"></a>测试区域 4：签入
 此源代码管理插件的测试部分覆盖了将已更新的项目发送到的版本存储区通过**签入**命令。
 
 ## <a name="command-menu-access"></a>命令菜单访问
@@ -33,11 +33,11 @@ ms.locfileid: "56605102"
 
 ## <a name="common-expected-behavior"></a>常见的预期的行为
 
--   项目和文件添加到解决方案或项目源代码管理下的出现在**签入**对话框和**挂起的签入**窗口。
+- 项目和文件添加到解决方案或项目源代码管理下的出现在**签入**对话框和**挂起的签入**窗口。
 
--   在签入后添加的项显示在源代码管理中。
+- 在签入后添加的项显示在源代码管理中。
 
--   后签入中，已更新的项目的正确版本控制的存储中。
+- 后签入中，已更新的项目的正确版本控制的存储中。
 
 ## <a name="test-cases"></a>测试用例
  以下是有关签入测试区域的特定测试用例。

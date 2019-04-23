@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062134"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略任务中的错误
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 有时你希望生成能够容忍某些任务中的错误。 如果这些非关键任务失败，你希望生成能够继续进行，因为它仍然可以产生所需的输出。 例如，如果一个项目在每个组件生成之后都使用 `SendMail` 任务发送电子邮件消息，那么即使邮件服务器变得不可用而导致状态邮件无法发送，但依然让生成继续完成，这一情况或许便是可以接受的。 或者，如果在生成过程中，中间文件通常会被删除，但即使无法删除这些文件，那么让生成继续完成也是可以接受的。  
   
 ## <a name="using-the-continueonerror-attribute"></a>使用 ContinueOnError 属性  
@@ -42,7 +41,7 @@ ms.locfileid: "54777026"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略任务中的错误  
   
--   使用任务的 `ContinueOnError` 属性。 例如:  
+- 使用任务的 `ContinueOnError` 属性。 例如:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

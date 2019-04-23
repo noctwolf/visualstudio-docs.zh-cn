@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089748"
 ---
 # <a name="command-implementation"></a>命令实现
 若要在 VSPackage 中实现命令，必须执行以下任务：
 
-1.  在中 *.vsct*文件设置了一个命令组，然后将该命令添加到它。 有关详细信息，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+1. 在中 *.vsct*文件设置了一个命令组，然后将该命令添加到它。 有关详细信息，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
-2.  通过 Visual Studio 注册该命令。
+2. 通过 Visual Studio 注册该命令。
 
-3.  实现命令。
+3. 实现命令。
 
 以下部分介绍如何注册和实现命令。
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>QueryStatus 方法
  如果要实现任一<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>方法中检查的命令所属命令集的 GUID 和命令的 ID。 请遵循这些指导：
 
--   如果无法识别的 GUID，这两种方法的实现必须返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>。
+- 如果无法识别的 GUID，这两种方法的实现必须返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>。
 
--   如果这两种方法的实现可以识别的 GUID，但不是实现了该命令，则该方法应返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>。
+- 如果这两种方法的实现可以识别的 GUID，但不是实现了该命令，则该方法应返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>。
 
--   如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 通过使用以下<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>标志：
+- 如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 通过使用以下<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>标志：
 
-    -   `OLECMDF_SUPPORTED`：支持该命令。
+    - `OLECMDF_SUPPORTED`：支持该命令。
 
-    -   `OLECMDF_INVISIBLE`：该命令不应是可见的。
+    - `OLECMDF_INVISIBLE`：该命令不应是可见的。
 
-    -   `OLECMDF_LATCHED`：此命令上切换，似乎已签入。
+    - `OLECMDF_LATCHED`：此命令上切换，似乎已签入。
 
-    -   `OLECMDF_ENABLED`：启用命令。
+    - `OLECMDF_ENABLED`：启用命令。
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`：如果它显示快捷菜单上，应隐藏该命令。
+    - `OLECMDF_DEFHIDEONCTXTMENU`：如果它显示快捷菜单上，应隐藏该命令。
 
-    -   `OLECMDF_NINCHED`：该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）
+    - `OLECMDF_NINCHED`：该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）
 
--   如果该命令中定义，则 *.vsct*文件具有`TextChanges`标志，请将以下参数：
+- 如果该命令中定义，则 *.vsct*文件具有`TextChanges`标志，请将以下参数：
 
-    -   设置`rgwz`元素的`pCmdText`的新文本的命令的参数。
+    - 设置`rgwz`元素的`pCmdText`的新文本的命令的参数。
 
-    -   设置`cwActual`元素的`pCmdText`命令字符串的大小参数。
+    - 设置`cwActual`元素的`pCmdText`命令字符串的大小参数。
 
 此外，请确保当前上下文不是自动化函数，除非您的命令专门用于处理自动化功能。
 

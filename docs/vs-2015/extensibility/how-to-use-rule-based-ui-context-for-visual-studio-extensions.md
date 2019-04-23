@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931350"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664309"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何：使用 Visual Studio 扩展的基于规则的 UI 上下文
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio
 |ActiveProjectCapability:\<Expression>|当活动项目功能与所提供的表达式匹配时，术语是，则返回 true。 表达式可以是类似于 VB 的内容&#124;CSharp|
 |SolutionHasProjectCapability:\<Expression>|解决方案中包含与表达式匹配任何加载的项目时，与上述相似，但一词是如此。|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|每当解决方案风格 （聚合） 的项目，并具有匹配给定的项目类型 GUID 的风格，术语将为 true。|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>使用跨版本扩展的兼容性
  基于的 UI 上下文是在 Visual Studio 2015 中的新功能和将不能移植到更早版本的规则。 这将创建扩展/包面向多个版本的 Visual Studio 必须进行自动加载在 Visual Studio 2013 及更早版本，但可以受益于基于规则的 UI 上下文，以防止正在自动加载 Visual Studio 2015 中的问题。

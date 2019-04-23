@@ -1,5 +1,5 @@
 ---
-title: 错误： 调试并不&#39;t 可能由于系统上启用了内核调试器 |Microsoft Docs
+title: 错误：调试并不&#39;t 可能由于系统上启用了内核调试器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096967"
 ---
-# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误： 调试并不&#39;t 可能由于系统上启用了内核调试器
+# <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误：调试并不&#39;t 可能由于系统上启用了内核调试器
 调试托管代码时，你可能会收到以下错误消息：
 
 ```cmd
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>在当前会话中禁用内核调试
 
--   在命令提示符处，键入：
+- 在命令提示符处，键入：
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>对所有会话禁用内核调试（Windows Vista 和 Windows 7）
 
-1.  在命令提示符处，键入：
+1. 在命令提示符处，键入：
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  重新启动计算机。
+2. 重新启动计算机。
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>对所有会话禁用内核调试（其他 Windows 操作系统）
 
-1.  在系统驱动器（通常为 C:\\）上查找 boot.ini。 boot.ini 文件可能是隐藏文件并且是只读的。 因此，您必须使用以下命令才能看到它：
+1. 在系统驱动器（通常为 C:\\）上查找 boot.ini。 boot.ini 文件可能是隐藏文件并且是只读的。 因此，您必须使用以下命令才能看到它：
 
     ```cmd
     dir /ASH
     ```
 
-2.  用记事本打开 boot.ini 并移除下列选项：
+2. 用记事本打开 boot.ini 并移除下列选项：
 
     ```cmd
     /debug
@@ -88,13 +88,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  重新启动计算机。
+3. 重新启动计算机。
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>使用内核调试器进行调试
 
-1.  如果内核调试器已挂钩，则将显示一条消息，询问您是否要继续调试。 单击此按钮以继续。
+1. 如果内核调试器已挂钩，则将显示一条消息，询问您是否要继续调试。 单击此按钮以继续。
 
-2.  您也许会收到 `User break exception(Int 3).`。如果出现此情况，请键入以下内核调试器命令以继续调试：
+2. 您也许会收到 `User break exception(Int 3).`。如果出现此情况，请键入以下内核调试器命令以继续调试：
 
      `gn`
 

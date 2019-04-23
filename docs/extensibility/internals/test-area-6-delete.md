@@ -1,5 +1,5 @@
 ---
-title: 测试区域 6:删除 |Microsoft Docs
+title: 测试区域 6：删除 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050755"
 ---
-# <a name="test-area-6-delete"></a>测试区域 6:删除
+# <a name="test-area-6-delete"></a>测试区域 6：删除
 此源代码管理插件的测试部分覆盖了删除操作。
 
  源控件删除中的操作的响应**解决方案资源管理器**。
@@ -36,13 +36,13 @@ ms.locfileid: "56627917"
 ## <a name="expected-behavior"></a>预期的行为
  删除测试区域中的测试用例预期的行为是：
 
--   已删除的项将不再显示在**解决方案资源管理器**。
+- 已删除的项将不再显示在**解决方案资源管理器**。
 
--   已删除的项目或项的父签出，根据需要 （也许加上提示。）
+- 已删除的项目或项的父签出，根据需要 （也许加上提示。）
 
--   删除签入或添加的项后，它不会出现在**挂起的签入**窗口。
+- 删除签入或添加的项后，它不会出现在**挂起的签入**窗口。
 
--   项仍然后删除，在源代码管理存储区中，存在，并且必须手动清除。
+- 项仍然后删除，在源代码管理存储区中，存在，并且必须手动清除。
 
 |操作|测试步骤|若要验证的预期的结果|
 |------------|----------------|--------------------------------|

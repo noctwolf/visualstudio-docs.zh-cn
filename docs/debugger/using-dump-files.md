@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099985"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的转储文件
 
@@ -39,27 +39,27 @@ ms.locfileid: "56693446"
 
 Visual Studio 调试器可为托管或本机代码保存转储文件。 它可以创建调试转储文件由 Visual Studio 或保存文件的其他应用*小型转储*格式。
 
-##  <a name="BKMK_Requirements_and_limitations"></a>要求和限制
+## <a name="BKMK_Requirements_and_limitations"></a>要求和限制
 
--   若要调试 64 位计算机的转储文件，必须在 64 位计算机上运行 Visual Studio。
+- 若要调试 64 位计算机的转储文件，必须在 64 位计算机上运行 Visual Studio。
 
--   Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 它还可以调试托管应用程序从 ARM 设备，但只是在本机调试器的转储。
+- Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 它还可以调试托管应用程序从 ARM 设备，但只是在本机调试器的转储。
 
--   若要调试[内核模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)转储文件，或使用[SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)调试扩展在 Visual Studio 中，下载适用于 Windows 中的调试工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
+- 若要调试[内核模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)转储文件，或使用[SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension)调试扩展在 Visual Studio 中，下载适用于 Windows 中的调试工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
 
--   Visual Studio 无法调试转储文件保存在较旧[完整的用户模式转储](/windows/desktop/wer/collecting-user-mode-dumps)格式。 完整的用户模式转储不附带堆的转储相同。
+- Visual Studio 无法调试转储文件保存在较旧[完整的用户模式转储](/windows/desktop/wer/collecting-user-mode-dumps)格式。 完整的用户模式转储不附带堆的转储相同。
 
--   调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。
+- 调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a>带有或不带堆的转储文件
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a>带有或不带堆的转储文件
 
 转储文件可能会或可能不包含堆信息。
 
--   **转储文件的堆**包含应用程序的内存，包括变量的值在转储时的快照。 Visual Studio 还将在堆，可能会使调试变得更加容易的转储文件中加载的本机模块的二进制文件。 Visual Studio 可以从具有堆的转储文件中加载符号，即使它找不到应用程序二进制。
+- **转储文件的堆**包含应用程序的内存，包括变量的值在转储时的快照。 Visual Studio 还将在堆，可能会使调试变得更加容易的转储文件中加载的本机模块的二进制文件。 Visual Studio 可以从具有堆的转储文件中加载符号，即使它找不到应用程序二进制。
 
--   **转储文件不带堆**比小得多转储与堆的方法，但调试器必须加载应用程序二进制文件，以查找符号信息。 加载二进制文件必须与转储创建过程中运行的完全匹配。 不带堆的转储文件保存仅堆栈变量的值。
+- **转储文件不带堆**比小得多转储与堆的方法，但调试器必须加载应用程序二进制文件，以查找符号信息。 加载二进制文件必须与转储创建过程中运行的完全匹配。 不带堆的转储文件保存仅堆栈变量的值。
 
-##  <a name="BKMK_Create_a_dump_file"></a>创建转储文件
+## <a name="BKMK_Create_a_dump_file"></a>创建转储文件
 
 当调试 Visual Studio 中的进程时，您可以在调试器已在异常或断点处停止时保存转储。
 
@@ -76,11 +76,11 @@ Visual Studio 调试器可为托管或本机代码保存转储文件。 它可�
 >[!NOTE]
 >可以使用支持 Windows 小型转储格式的任何程序创建转储文件。 例如，[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 中的“Procdump”命令行实用工具可以基于触发器或按需创建进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)有关使用其他工具创建转储文件的信息。
 
-##  <a name="BKMK_Open_a_dump_file"></a>打开转储文件
+## <a name="BKMK_Open_a_dump_file"></a>打开转储文件
 
 1. 在 Visual Studio 中，选择**文件** > **打开** > **文件**。
 
-1. 在“打开文件”对话框中定位并选择转储文件。 它的扩展名通常为“.dmp”。 选择“确定”。
+1. 在“打开文件”对话框中定位并选择转储文件。 它的扩展名通常为“.dmp”。 选择 **确定**。
 
    **小型转储文件摘要**窗口显示摘要和模块的信息的转储文件和操作可能需要。
 
@@ -90,7 +90,7 @@ Visual Studio 调试器可为托管或本机代码保存转储文件。 它可�
    - 若要设置正在加载位置的符号，请选择**设置符号路径**。
    - 若要开始调试，请选择**调试仅限托管**，**调试仅限本机**，**使用混合调试**，或**使用托管内存调试**。
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找.exe、.pdb、 和源文件
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找.exe、.pdb、 和源文件
 
 若要使用完整的调试转储文件，按功能 Visual Studio 需要：
 

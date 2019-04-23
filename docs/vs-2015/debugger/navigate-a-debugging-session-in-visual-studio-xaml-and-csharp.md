@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059872"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中导航调试会话（Xaml 和 C#）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58933551"
 ## <a name="in-this-topic"></a>在本主题中
  你可以学习如何：
 
--   [创建示例应用](#BKMK_CreateTheApplication)
+- [创建示例应用](#BKMK_CreateTheApplication)
 
--   [设置和运行到断点、单步执行方法以及检查程序数据](#BKMK_StepInto)
+- [设置和运行到断点、单步执行方法以及检查程序数据](#BKMK_StepInto)
 
--   [单步执行、逐过程执行和跳出执行方法](#BKMK_StepIntoOverOut)
+- [单步执行、逐过程执行和跳出执行方法](#BKMK_StepIntoOverOut)
 
--   [设置条件断点、运行到光标处以及可视化变量](#BKMK_ConditionCursorVisualize)
+- [设置条件断点、运行到光标处以及可视化变量](#BKMK_ConditionCursorVisualize)
 
--   [编辑并继续，从异常中恢复](#BKMK_EditContinueRecoverExceptions)
+- [编辑并继续，从异常中恢复](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> 创建示例应用
+## <a name="BKMK_CreateTheApplication"></a> 创建示例应用
  调试与代码有关，因此示例应用仅使用 Windows 应用商店应用程序框架创建一个源文件，在该文件中可以查看调试会话导航的工作原理以及如何检查和更改程序状态。 将调用的所有代码都从主页的构造函数进行调用；不添加任何控件，并且不处理任何事件。
 
  **创建默认 C# Windows 应用商店应用。** 打开 Visual Studio。 在主页上，选择 **“新建项目”** 链接。 在“新建项目”对话框中，在 **“已安装”** 列表中选择 **“Visual C#”** ，然后选择 **“Windows 应用商店”**。 在项目模板列表中，选择 **“应用程序”**。 Visual Studio 随即创建一个新解决方案和项目，并显示 MainPage.xaml 设计器和 XAML 代码编辑器。
@@ -56,7 +56,7 @@ ms.locfileid: "58933551"
 
  现在可以遵循本主题中的示例进行操作。
 
-##  <a name="BKMK_StepInto"></a> 设置和运行到断点、单步执行方法以及检查程序数据
+## <a name="BKMK_StepInto"></a> 设置和运行到断点、单步执行方法以及检查程序数据
  您可以启动调试会话的最常见方法是选择**开始调试**从**调试**菜单 (键盘：F5）。 执行随即开始，并一直继续到达到断点、手动挂起执行、发生异常或应用结束。
 
  当在调试器中挂起执行时，可以通过将鼠标悬停在变量上方，在数据提示中查看活动变量的值。 还可以打开“局部变量”和“自动”窗口，以查看活动变量及其当前值的列表。 通过将一个或多个变量添加到监视窗口可以在应用继续执行时关注变量的值。
@@ -112,7 +112,7 @@ ms.locfileid: "58933551"
 
   可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如“局部变量”窗口和数据提示窗口中的值）。 还可以从代码编辑器将变量添加到监视窗口中。 选择要监视的变量，右键单击，然后选择 **“添加监视”**。
 
-##  <a name="BKMK_StepIntoOverOut"></a> 单步执行、逐过程执行和跳出执行方法
+## <a name="BKMK_StepIntoOverOut"></a> 单步执行、逐过程执行和跳出执行方法
  与单步执行父方法调用的方法相反，逐过程执行方法会执行子方法，然后在父方法继续时在调用方法中挂起执行。 当你熟悉方法的工作方式，并且确定其执行不会影响正在调查的问题时，可以逐过程执行方法。
 
  逐过程执行不包含方法调用的代码行会如同单步执行该行一样执行该行。
@@ -144,7 +144,7 @@ ms.locfileid: "58933551"
 
  **停止调试。** 在调试菜单上选择停止调试 (键盘：Shift + F5)。 这会结束调试会话。
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> 设置条件断点、运行到光标处以及可视化变量
+## <a name="BKMK_ConditionCursorVisualize"></a> 设置条件断点、运行到光标处以及可视化变量
  条件断点指定导致调试器挂起执行的条件。 条件通过可以计算为 true 或 false 的任何代码表达式进行指定。 例如，可以使用条件断点仅在某个变量达到特定值时才检查频繁调用的方法中的程序状态。
 
  运行到光标处如同设置一次性断点。 挂起执行时，可以在源代码中选择某行并继续执行，直到达到所选行。 例如，可以逐步执行方法中的循环并确定该循环中的代码是否正确执行。 可以运行到置于循环执行之后的光标，而不是逐步执行循环的每次迭代。
@@ -180,7 +180,7 @@ ms.locfileid: "58933551"
 
  **停止调试。** 在调试菜单上选择停止调试 (键盘：Shift + F5)。 这会结束调试会话。
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> 编辑并继续，从异常中恢复
+## <a name="BKMK_EditContinueRecoverExceptions"></a> 编辑并继续，从异常中恢复
  在某些情况下，当在 Visual Studio 调试器中中断到代码中时，你可以更改变量的值，甚至是语句的逻辑。 此功能称为编辑并继续。
 
  编辑并继续对于在异常处中断的情况特别有用。 可以“展开”执行以将执行移动到恰好位于发生异常之前的点，然后更改有问题的变量或语句并在不引发异常的状态中继续执行当前调试会话，而不是停止并重新启动调试所涉及的较长过程来避免异常。
@@ -213,4 +213,4 @@ ms.locfileid: "58933551"
  **停止调试。** 上**调试**菜单中，选择**停止调试**(键盘：Shift + F5)。 这会结束调试会话。
 
 ## <a name="see-also"></a>请参阅
- [启动调试会话 (VB、 C#，c + + 和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [触发器挂起、 继续和后台事件的 Windows 应用商店)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)
+ [启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [触发器挂起、 继续和后台事件的 Windows 应用商店)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)

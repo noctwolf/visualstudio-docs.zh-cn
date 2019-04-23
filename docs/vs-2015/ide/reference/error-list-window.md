@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785766"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658144"
 ---
 # <a name="error-list-window"></a>“错误列表”窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 备注
 >  错误列表中显示了特定错误消息的相关信息。 可以从“输出”窗口中复制错误号或错误字符串文本。 若要显示“输出”窗口，请按 Ctrl+Alt+O。 请参阅[输出窗口](../../ide/reference/output-window.md)。  
   
@@ -58,7 +57,7 @@ ms.locfileid: "54785766"
   
  可以限制搜索范围，以对多组错误进行分析和处理。 例如，你可能希望集中处理阻碍项目编译的核心错误。 范围限定选项包括：  
   
-1. **打开的文档**：显示已打开文档的错误、警告和消息。  
+1. **打开的文档**：显示已打开的文档的错误、警告和消息。  
   
 2. **当前项目**：显示当前“编辑器”中选定文档的项目或“解决方案资源管理器”中的选定项目的错误、警告和消息。  
   
@@ -84,7 +83,7 @@ ms.locfileid: "54785766"
  代码  
  显示错误代码。  
   
- 说明​​  
+ 描述  
  显示条目的文本。  
   
  项目  

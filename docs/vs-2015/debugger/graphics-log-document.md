@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f1d5d706bb3ce738fc8c820e6ffd0600b9a98ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117598"
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "58937181"
   
 #### <a name="to-inspect-a-frame"></a>检查帧  
   
--   在“帧列表”中，选择要检查的帧。 更新图形日志文档顶部的呈现器目标输出以显示所选帧。  
+- 在“帧列表”中，选择要检查的帧。 更新图形日志文档顶部的呈现器目标输出以显示所选帧。  
   
 #### <a name="to-inspect-a-pixel"></a>检查像素  
   
--   在图形日志文档顶部，从呈现器目标输出中选择所需像素。 选中某个像素后，可使用“图形像素历史记录”窗口查看有关所选像素的详细信息。 有关详细信息，请参阅[像素历史记录](../debugger/graphics-pixel-history.md)。  
+- 在图形日志文档顶部，从呈现器目标输出中选择所需像素。 选中某个像素后，可使用“图形像素历史记录”窗口查看有关所选像素的详细信息。 有关详细信息，请参阅[像素历史记录](../debugger/graphics-pixel-history.md)。  
   
 ## <a name="playback-machine"></a>播放计算机  
  在“帧列表”的右上角还会显示“播放计算机”。 播放计算机是指用于在之后的图形诊断会话期间，播放图形日志文件中的图形事件的计算机或设备。 通过使用另一台设备而非你的开发计算机来播放捕获的事件，你可以更加准确地重现发生问题所在的执行环境，例如，你可以使用具有不同于开发计算机使用的图形硬件或驱动程序的计算机或其他种类的设备（例如基于 ARM 的 Windows RT 平板电脑或 Windows Phone 设备）。  
