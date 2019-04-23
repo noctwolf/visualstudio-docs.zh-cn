@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834434"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665137"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何报告 Visual Studio 2015 的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[如何报告 Visual Studio 2017 中的问题](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)。
+有关 Visual Studio 的最新文档，请参阅[如何报告 Visual Studio 的问题](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)。
 
-如果你遇到 Visual Studio 2015 的问题，我们想要了解它，以便我们可以诊断和修复此错误。  通过使用“报告问题”  工具，你可以收集有关该问题的详细信息，只需单击几次按钮即可将其发送给 Microsoft。
+如果遇到 Visual Studio 2015 的问题，我们想要了解该问题，方便进行诊断和修复。  通过使用“报告问题”  工具，你可以收集有关该问题的详细信息，只需单击几次按钮即可将其发送给 Microsoft。
 
- Microsoft 尊重你的隐私。 有关我们如何处理你发送给我们的数据的信息，请参阅 [Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/dn948229)。
+Microsoft 尊重你的隐私。 有关我们如何处理你发送给我们的数据的信息，请参阅 [Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/dn948229)。
 
 ## <a name="open-the-report-a-problem-tool"></a>打开“报告问题”工具
- 在标题栏中单击“快速启动”旁边的用户反馈图标，或单击“帮助”|“发送反馈”|“报告问题”。
 
- ![“报告问题”菜单项](../ide/media/report-a-problem-menu-item.png "“报告问题”菜单项")
+在标题栏中单击“快速启动”旁边的用户反馈图标，或单击“帮助”>“发送反馈”>“报告问题”。
+
+![“报告问题”菜单项](../ide/media/report-a-problem-menu-item.png "“报告问题”菜单项")
 
 ## <a name="describe-the-problem"></a>描述此问题
 
@@ -43,7 +44,8 @@ Visual Studio 2017 的最新文档，请参阅[如何报告 Visual Studio 2017 �
    ![报告问题对话框](../ide/media/report-a-problem-dialog.png "报告问题对话框")
 
 ## <a name="provide-a-screenshot-optional"></a>提供屏幕快照（可选）
- 选择“包括屏幕截图”，将当前屏幕发送给 Microsoft。 使用此工具可裁剪图像，以便只显示有问题的屏幕部分。 通过单击“附加其他文件”按钮，可以附加其他屏幕截图或其他文件。
+
+选择“包括屏幕快照”  ，将你的当前屏幕发送给 Microsoft。 使用此工具可裁剪图像，以便只显示有问题的屏幕部分。 通过单击“附加其他文件”  按钮，你可以附加其他屏幕快照或其他文件。
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>提供跟踪和堆转储（可选）
 
@@ -60,10 +62,13 @@ Visual Studio 2017 的最新文档，请参阅[如何报告 Visual Studio 2017 �
      ![记录跟踪文件](../ide/media/record-a-trace-file.png "记录跟踪文件")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>描述解决方法（如果存在）
- 如果你能够解决此问题，请在为该目的而提供的编辑框中描述解决方法。 这不仅有助于我们诊断问题，而且还可以帮助可能遇到相同问题的其他用户。
+
+如果你能够解决此问题，请在为该目的而提供的编辑框中描述解决方法。 这不仅有助于我们诊断问题，而且还可以帮助可能遇到相同问题的其他用户。
 
 ## <a name="submit-the-report"></a>提交报告
- 单击提交按钮发送你的报告，以及任何图像和跟踪或转储文件。 如果“提交”按钮为灰色，请确保你已提供标题和说明。
+
+单击提交按钮发送你的报告，以及任何图像和跟踪或转储文件。 如果“提交”按钮为灰色，请确保你已提供标题和说明。
 
 ## <a name="see-also"></a>请参阅
- [与我们交流](../ide/talk-to-us.md)
+
+- [与我们交流](../ide/talk-to-us.md)

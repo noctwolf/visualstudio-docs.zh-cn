@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040141"
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种方法，以便可以更轻松地找到整理相关的命令。 命令显示为功能区上的控件。 控件整理为*组*沿应用程序窗口上边缘处呈水平条。 在选项卡上，相关组进行了整理。
@@ -93,12 +93,12 @@ ms.locfileid: "56599475"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>将多个功能区项添加到项目
  可以将多个功能区项添加到单个项目中。 如果想要执行以下两项任务之一，这会非常有用：
 
--   为 Outlook 创建功能区*检查器*。 有关详细信息，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 为 Outlook 创建功能区*检查器*。 有关详细信息，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
     >  检查器是当用户执行某些任务时（例如，创建一封电子邮件时）打开的窗口。
 
--   选择要在运行时显示的功能区。
+- 选择要在运行时显示的功能区。
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>选择要在运行时显示的功能区
  由于一个项目可以包含多个功能区，您可以选择要在运行时显示的功能区。
@@ -115,7 +115,7 @@ ms.locfileid: "56599475"
 
 ### <a name="related-topics"></a>相关主题
 
-|标题|描述|
+|标题|说明|
 |-----------|-----------------|
 |[如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)|演示如何自定义 Microsoft Office 应用程序的功能区中，添加**功能区 （可视化设计器）** 或**功能区 (XML)** 到 Office 项目的项。|
 |[功能区设计器](../vsto/ribbon-designer.md)|介绍如何使用功能区设计器将自定义选项卡、 组和控件添加到 Microsoft Office 应用程序的功能区。|

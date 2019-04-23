@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59000178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080341"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>演练：使用图形诊断来调试计算着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "59000178"
   
  此演练阐释了以下任务：  
   
--   使用“图形事件列表”  定位问题的潜在根源。  
+- 使用“图形事件列表”  定位问题的潜在根源。  
   
--   使用“图形事件调用堆栈”确定由 DirectCompute `Dispatch` 事件执行的是哪一个计算着色器。  
+- 使用“图形事件调用堆栈”确定由 DirectCompute `Dispatch` 事件执行的是哪一个计算着色器。  
   
--   使用“图形管道阶段”窗口和 HLSL 调试器检查是问题根源的计算着色器。  
+- 使用“图形管道阶段”窗口和 HLSL 调试器检查是问题根源的计算着色器。  
   
 ## <a name="scenario"></a>方案  
  在此方案中，你编写了流体动力学模拟，它利用 DirectCompute 来执行模拟更新的计算量最大的部分。 应用运行时，数据集和用户界面的呈现看起来正常，但模拟未按预期运作。 通过使用“图形诊断”，可以捕获图形日志的问题，以便调试该应用。 应用中的问题如下所示：  

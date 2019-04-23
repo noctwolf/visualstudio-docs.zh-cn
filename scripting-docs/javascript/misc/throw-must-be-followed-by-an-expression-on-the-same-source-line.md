@@ -14,12 +14,12 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d2989b2ebb5cf0095736d5667f85a807558c495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069511"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>同一源行中 throw 之后必须有表达式
 您使用`throw`关键字，但不是遵循它使用的表达式在相同的源行上。 一个`throw`语句由两部分组成：`throw`关键字后, 跟要引发的表达式。 例如：  
@@ -34,7 +34,7 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请确保`throw`关键字和要引发的表达式将显示在同一行上。  
+- 请确保`throw`关键字和要引发的表达式将显示在同一行上。  
   
 ## <a name="see-also"></a>请参阅  
  [错误对象](../../javascript/reference/error-object-javascript.md)   

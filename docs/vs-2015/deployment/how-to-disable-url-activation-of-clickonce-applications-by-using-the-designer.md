@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043844"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "58926148"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>禁用应用程序的 URL 激活的步骤  
   
-1.  右键单击项目名称**解决方案资源管理器**，然后单击**属性**。  
+1. 右键单击项目名称**解决方案资源管理器**，然后单击**属性**。  
   
-2.  上**属性**页上，单击**发布**选项卡。  
+2. 上**属性**页上，单击**发布**选项卡。  
   
-3.  单击“选项” 。  
+3. 单击“选项” 。  
   
-4.  单击**清单**。  
+4. 单击**清单**。  
   
-5.  选择标记的复选框**阻止通过 URL 激活应用程序**。  
+5. 选择标记的复选框**阻止通过 URL 激活应用程序**。  
   
-6.  部署应用程序。  
+6. 部署应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

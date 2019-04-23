@@ -17,17 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 593db9fe2f460229cfdd4c241124ef8270448094
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 50562b74a948365e91a7f36def634030a25aeac9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194653"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657960"
 ---
 # <a name="prerequisites-dialog-box"></a>“系统必备”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 此对话框指定安装哪些必备组件、如何安装以及组件包的安装顺序。  
   
  若要访问此对话框，请在“解决方案资源管理器”中选择项目节点，然后在“项目”菜单上单击“属性”。 当 **“项目设计器”** 出现时，单击 **“发布”** 选项卡。在“发布”页上，单击“系统必备”。 对于安装项目，在“项目”菜单上单击“属性”。 “属性页”对话框出现后，单击“系统必备”。  
@@ -59,7 +58,7 @@ ms.locfileid: "58194653"
 |**Microsoft Visual Studio 2010 报表查看器**|此程序包安装报表查看器控件，你可以使用这些控件向 Windows 窗体和 ASP.NET 应用程序中添加复杂数据报表。|  
 |**Microsoft Visual Studio 2010 for Office 运行时（x86 和 x64）**|Visual Studio 中的 Office 开发人员工具提供了易于使用的集成工具，用来通过 Microsoft Office 创建自定义的业务解决方案。 你可以创建托管的智能客户端解决方案，这些解决方案使用 Office 应用程序作为用户界面。 使用这些工具，开发人员可以创建易于部署和维护的安全解决方案。<br /><br /> 有关详细信息，请参阅[如何：使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。|  
 |**SQL Server 2005 Express Edition SP2 (x86)**|此程序包安装 Microsoft SQL Server 2005 Express Edition SP2，一个基于 [!INCLUDE[sqprsqext](../../includes/sqprsqext-md.md)] 的数据库应用程序。 SQL Server Express 是 Microsoft SQL Server 桌面引擎 (MSDE) 的替代产品。 SQL Server Express 是免费的并且可以再发行（按照协议），它既可以作为客户端数据库，也可以作为基本的服务器数据库。 除了下列不同外，SQL Server Express 在其他方面都与 SQL Server 2005 相同：<br /><br /> - 不支持企业功能。<br />- 仅限一个 CPU。<br />- 缓冲池的内存大小限制为 1 GB。<br />- 数据库最大大小为 4 GB。|  
-|**SQL Server 2008 Express**|此软件包将安装 Microsoft SQL Server 2008 Express，这是免费版的 Microsoft SQL Server 2008，是适用于小型网络、服务器或桌面应用程序的理想数据库。 它可免费用于开发和生产。 必须先进行免费注册，然后才能随应用程序一起分发 SQL Server 2008 Express。<br /><br /> 引导程序行为如下：<br /><br /> - 如果计算机已有 SQL Server 2008 Express 或更高版本，则计算机保持在 SQL Server 2008 Express 或更高版本。<br />- 如果计算机没有任何版本的 SQL Server 2008 Express 或更高版本，则软件包安装最新版本的 SQL Server 2008 Express SP1。<br /><br /> 若要了解有关 SQL Server 2008 Express 的详细信息，请访问[ http://go.microsoft.com/fwlink/?LinkId=183586 ](http://go.microsoft.com/fwlink/?LinkId=183586)。|  
+|**SQL Server 2008 Express**|此软件包将安装 Microsoft SQL Server 2008 Express，这是免费版的 Microsoft SQL Server 2008，是适用于小型网络、服务器或桌面应用程序的理想数据库。 它可免费用于开发和生产。 必须先进行免费注册，然后才能随应用程序一起分发 SQL Server 2008 Express。<br /><br /> 引导程序行为如下：<br /><br /> - 如果计算机已有 SQL Server 2008 Express 或更高版本，则计算机保持在 SQL Server 2008 Express 或更高版本。<br />- 如果计算机没有任何版本的 SQL Server 2008 Express 或更高版本，则软件包安装最新版本的 SQL Server 2008 Express SP1。<br /><br /> 若要了解有关 SQL Server 2008 Express 的详细信息，请访问 [http://go.microsoft.com/fwlink/?LinkId=183586](http://go.microsoft.com/fwlink/?LinkId=183586)。|  
 |**Visual C++ 2010 运行库 (IA64)**|此程序包将为 Itanium 体系结构安装 Visual C++ 运行库，以便为 Microsoft Windows 操作系统编程提供例程。 这些例程可自动处理许多 C 和 C++ 语言没有提供的常见编程任务。<br /><br /> 有关详细信息，请参阅 [C 运行时库参考](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|  
 |**Visual C++ 2010 运行库 (x64)**|此程序包将为 x64 操作系统安装 Visual C++ 运行库，以便为 Microsoft Windows 操作系统编程提供例程。 这些例程可自动处理许多 C 和 C++ 语言没有提供的常见编程任务。<br /><br /> 有关详细信息，请参阅 [C 运行时库参考](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|  
 |**Visual C++ 2010 运行库 (x86)**|此程序包将为 x86 操作系统安装 Visual C++ 运行库，以便为 Microsoft Windows 操作系统编程提供例程。 这些例程可自动处理许多 C 和 C++ 语言没有提供的常见编程任务。<br /><br /> 有关详细信息，请参阅 [C 运行时库参考](http://msdn.microsoft.com/library/a503e11c-8dca-4846-84fb-025a826c32b8)。|  

@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084331"
 ---
 # <a name="just-my-code"></a>仅我的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用.NET Framework 语言的开发人员熟悉“仅我的代码”调试器功能，该功能会逐过程执行系统、框架和其他非用户调用，并在调用堆栈窗口中折叠这些调用。 “仅我的代码”已扩展到 C++ 和 JavaScript 语言。 本主题介绍在 .NET Framework、本机 C++ 和 JavaScript 项目中使用“仅我的代码”的具体信息。  
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a>启用或禁用“仅我的代码”  
+## <a name="BKMK_Enable_or_disable_Just_My_Code"></a>启用或禁用“仅我的代码”  
  若要启用或禁用仅我的代码，请选择**选项和设置**上**调试**菜单。 在中**调试** / **常规**节点中，选择或清除**启用 ' 仅我的代码**。  
   
  ![启用仅我的代码选项对话框中](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
@@ -34,15 +34,15 @@ ms.locfileid: "58934376"
 > [!NOTE]
 >  **启用 ' 仅我的代码**设置是应用于所有语言中的所有 Visual Studio 项目的全局设置。  
   
-###  <a name="BKMK_Override_call_stack_filtering"></a> 重写调用堆栈筛选  
+### <a name="BKMK_Override_call_stack_filtering"></a> 重写调用堆栈筛选  
  在调用堆栈显示中（如“调用堆栈”和“任务”窗口），“仅我的代码”会将非用户代码折叠为带有标签 `[External Code]` 的带批注帧。 若要查看折叠的帧，请选择**显示外部代码**在调用堆栈的上下文菜单上显示。  
   
 > [!NOTE]
 >  **显示外部代码**设置保存到当前用户的探查器。 它会应用于所有语言中由用户打开的所有项目。  
   
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework 仅我的代码  
+## <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework 仅我的代码  
   
-###  <a name="BKMK_NET_User_and_non_user_code"></a> 用户和非用户代码  
+### <a name="BKMK_NET_User_and_non_user_code"></a> 用户和非用户代码  
  要将用户代码与非用户代码区分开来，仅我的代码中查找符号 (.pdb) 文件和程序优化。 当二进制文件进行了优化时或当 .pdb 文件不可用时，调试器会将代码视为非用户代码。  
   
  还有三个特性会影响调试器视为“我的代码”的内容：  
@@ -55,20 +55,20 @@ ms.locfileid: "58934376"
   
   将所有其他代码都视为用户代码。  
   
-###  <a name="BKMK_NET_Stepping_behavior"></a> 单步执行行为  
+### <a name="BKMK_NET_Stepping_behavior"></a> 单步执行行为  
  当您**单步执行**(键盘快捷方式：F11) 非用户代码，调试器将逐步执行代码的下一个用户语句。 当您**单步跳出**(键盘：Shift + F11），调试器会运行到下一行用户代码。 如果未遇到用户代码，则执行会继续，直到应用退出、命中断点或发生异常。  
   
-###  <a name="BKMK_NET_Breakpoint_behavior"></a> 断点行为  
+### <a name="BKMK_NET_Breakpoint_behavior"></a> 断点行为  
  启用仅我的代码后，可以选择**全部中断**(键盘：Ctrl + Alt + Break） 和一个位置处停止执行其中不显示用户代码。 发生这种情况时，会显示“无源”窗口。 如果随后选择“单步执行”命令，则调试器会到达下一行用户代码。  
   
-###  <a name="BKMK_NET_Exception_behavior"></a> 异常行为  
+### <a name="BKMK_NET_Exception_behavior"></a> 异常行为  
  如果在非用户代码中出现未经处理的异常，则调试器会在用户代码中生成异常的行上中断。  
   
  如果针对异常启用了第一机会异常，则以绿色突出显示用户代码行。 调用堆栈会显示标记的带批注的帧 **[外部代码]**。  
   
-##  <a name="BKMK_C___Just_My_Code"></a>C++“仅我的代码”  
+## <a name="BKMK_C___Just_My_Code"></a>C++“仅我的代码”  
   
-###  <a name="BKMK_CPP_User_and_non_user_code"></a> 用户和非用户代码  
+### <a name="BKMK_CPP_User_and_non_user_code"></a> 用户和非用户代码  
  C++“仅我的代码”与 .NET Framework 和 JavaScript“仅我的代码”不同，因为单步执行行为独立于调用堆栈行为。  
   
  **调用堆栈**  
@@ -87,15 +87,15 @@ ms.locfileid: "58934376"
   
   可以在 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 中创建自己的 `.natstepfilter` 和 `.natjmc` 以自定义单步执行和调用堆栈窗口行为。  
   
-###  <a name="BKMK_CPP_Stepping_behavior"></a> 单步执行行为  
+### <a name="BKMK_CPP_Stepping_behavior"></a> 单步执行行为  
  当您**单步执行**(键盘快捷方式：从用户代码，调试器将逐步执行代码到下一行用户代码的 F11) 非用户代码。 当您**单步跳出**(键盘：Shift + F11），调试器会运行到下一行用户代码。 如果未遇到用户代码，则执行会继续，直到应用退出、命中断点或发生异常。  
   
  如果调试器在非用户代码中中断（例如，如果“全部中断”命令在非用户代码中停止），则单步执行会继续在非用户代码中进行。  
   
-###  <a name="BKMK_CPP_Exception_behavior"></a> 异常行为  
+### <a name="BKMK_CPP_Exception_behavior"></a> 异常行为  
  当调试器遇到异常时，它会异常处停止，而不考虑是处于用户还是非用户代码中。 **未经用户处理**中的选项**异常**对话框将被忽略。  
   
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自定义单步执行行为  
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自定义单步执行行为  
  可以通过在 `*.natstepfilter` 文件中将函数列为非用户代码来指定要逐过程执行的函数。  
   
 - 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加到.natstepfilter 文件`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`文件夹。  
@@ -127,7 +127,7 @@ ms.locfileid: "58934376"
 |`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|  
 |`Action`|必需。 以下区分大小写的值之一：<br /><br /> -   `NoStepInto`  – 告知调试器逐过程执行匹配的函数。<br />-   `StepInto`  – 告知调试器单步执行匹配的函数中，重写任何其他`NoStepInto`匹配的函数。|  
   
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义调用堆栈行为  
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义调用堆栈行为  
  可以通过在 `*.natjmc` 文件中指定模块、源文件和函数，将它们指定视为调用堆栈中的非用户代码。  
   
 - 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加到.natjmc 文件`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`文件夹。  
@@ -177,9 +177,9 @@ ms.locfileid: "58934376"
 |`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|  
 |`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”  
+## <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”  
   
-###  <a name="BKMK_JS_User_and_non_user_code"></a> 用户和非用户代码  
+### <a name="BKMK_JS_User_and_non_user_code"></a> 用户和非用户代码  
  **代码分类**  
   
  JavaScript“仅我的代码”控件通过采用以下分类之一对代码进行分类，来控制单步执行和调用堆栈显示：  
@@ -206,27 +206,27 @@ ms.locfileid: "58934376"
   
   其他所有代码都分类为“MyCode”。  
   
-###  <a name="BKMK_JS_Stepping_behavior"></a> 单步执行行为  
+### <a name="BKMK_JS_Stepping_behavior"></a> 单步执行行为  
   
--   如果函数不是用户 (**MyCode**) 的代码中，**单步执行**(键盘快捷方式：F11) 充当**单步跳过**(键盘：F10)。  
+- 如果函数不是用户 (**MyCode**) 的代码中，**单步执行**(键盘快捷方式：F11) 充当**单步跳过**(键盘：F10)。  
   
--   如果某个步骤开始在非用户 (**LibraryCode**或**UnrelatedCode**) 代码，随后暂时单步执行行为将如同未启用仅我的代码。 单步执行返回到用户代码中时，“仅我的代码”单步执行会立即重新启用。  
+- 如果某个步骤开始在非用户 (**LibraryCode**或**UnrelatedCode**) 代码，随后暂时单步执行行为将如同未启用仅我的代码。 单步执行返回到用户代码中时，“仅我的代码”单步执行会立即重新启用。  
   
--   用户代码中的单步执行导致保留当前执行上下文（如对事件处理程序的最后一行进行单步执行）时，调试器会在执行的下一行用户代码处停止。 例如，如果在执行回调**LibraryCode**调试器会继续，直到下的一行用户代码执行的代码。  
+- 用户代码中的单步执行导致保留当前执行上下文（如对事件处理程序的最后一行进行单步执行）时，调试器会在执行的下一行用户代码处停止。 例如，如果在执行回调**LibraryCode**调试器会继续，直到下的一行用户代码执行的代码。  
   
--   **跳出**(键盘：Shift + F11） 将在下一行用户代码处停止。 如果未遇到用户代码，则执行会继续，直到应用退出、命中断点或发生异常。  
+- **跳出**(键盘：Shift + F11） 将在下一行用户代码处停止。 如果未遇到用户代码，则执行会继续，直到应用退出、命中断点或发生异常。  
   
-###  <a name="BKMK_JS_Breakpoint_behavior"></a> 断点行为  
+### <a name="BKMK_JS_Breakpoint_behavior"></a> 断点行为  
   
--   在任何代码中设置的断点都始终会命中（无论该代码如何分类）。  
+- 在任何代码中设置的断点都始终会命中（无论该代码如何分类）。  
   
--   如果在以下内容中遇到 `debugger` 关键字：  
+- 如果在以下内容中遇到 `debugger` 关键字：  
   
-    -   **LibraryCode**代码，调试器始终中断。  
+    - **LibraryCode**代码，调试器始终中断。  
   
-    -   **UnrelatedCode**代码，调试器不会停止。  
+    - **UnrelatedCode**代码，调试器不会停止。  
   
-###  <a name="BKMK_JS_Exception_behavior"></a> 异常行为  
+### <a name="BKMK_JS_Exception_behavior"></a> 异常行为  
  如果在以下内容中出现未经处理的异常：  
   
 - **MyCode**或**LibraryCode**代码，调试器始终中断。  
@@ -239,7 +239,7 @@ ms.locfileid: "58934376"
   
 - 如果异常未经过处理，则调试器中断。  
   
-###  <a name="BKMK_JS_Customize_Just_My_Code"></a> 自定义仅我的代码  
+### <a name="BKMK_JS_Customize_Just_My_Code"></a> 自定义仅我的代码  
  若要针对单个 Visual Studio 项目对用户和非用户代码进行分类，请将一个名为 `mycode.json` 的 .json 文件添加到该项目的根文件夹。  
   
  按以下顺序执行分类：  

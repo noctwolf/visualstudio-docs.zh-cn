@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043969"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：从 XML 架构资源管理器向工作区添加节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,35 +26,35 @@ ms.locfileid: "59651496"
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>通过 XML 资源管理器上下文菜单添加节点  
   
-1.  按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
+1. 按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
   
-2.  在 XSD 资源管理器中右击 `PurchaseOrderType` 节点。 选择**关系图视图中显示**。  
+2. 在 XSD 资源管理器中右击 `PurchaseOrderType` 节点。 选择**关系图视图中显示**。  
   
      `purchaseOrderType` 节点出现在图形视图的设计图面上。  
   
 ### <a name="to-drag-and-drop-a-node-on-to-a-view"></a>将节点拖放到视图  
   
-1.  在图形视图中右击 `PurchaseOrderType` 节点。 选择**在 XML 架构资源管理器中显示**。  
+1. 在图形视图中右击 `PurchaseOrderType` 节点。 选择**在 XML 架构资源管理器中显示**。  
   
      该节点在 XML 架构资源管理器中突出显示。  
   
-2.  右键单击`PurchaseOrderType`节点在 XML 架构资源管理器中，选择**显示所有引用**。  
+2. 右键单击`PurchaseOrderType`节点在 XML 架构资源管理器中，选择**显示所有引用**。  
   
      `purchaseOrder` 节点将突出显示。  
   
-3.  将 `purchaseOrder` 节点拖到图形视图上。  
+3. 将 `purchaseOrder` 节点拖到图形视图上。  
   
      `purchaseOrder` 节点和 `PurchaseOrderType` 节点在图形视图的设计图面上紧挨着出现。 因为这两个节点相关（`purchaseOrder` 元素属于 `PurchaseOrderType` 类型），因此会在这两个节点之间绘制一个箭头。  
   
 ### <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>使用架构资源管理器的搜索功能添加节点  
   
-1.  中的搜索文本框中键入"purchaseOrder" [XML 资源管理器](../xml-tools/xml-schema-explorer.md)工具栏，然后单击搜索按钮。  
+1. 中的搜索文本框中键入"purchaseOrder" [XML 资源管理器](../xml-tools/xml-schema-explorer.md)工具栏，然后单击搜索按钮。  
   
      ![XML 架构资源管理器关键字搜索](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      搜索结果将突出显示在 XML 架构资源管理器中，并用垂直滚动条上的刻度标记。  
   
-2.  单击将搜索结果添加到工作区**突出显示的节点添加到工作区**摘要结果窗格上的按钮。  
+2. 单击将搜索结果添加到工作区**突出显示的节点添加到工作区**摘要结果窗格上的按钮。  
   
      ![XML 架构资源管理器搜索结果](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   

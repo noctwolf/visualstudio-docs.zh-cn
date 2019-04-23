@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085215"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>如何：扩展 O/R 设计器生成的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ ms.locfileid: "59651729"
   
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>创建分部类并向实体类中添加代码  
   
-1.  打开或创建一个新的 LINQ to SQL 类文件 (**.dbml**文件) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (双击 **.dbml**中的文件**解决方案资源管理器**/**数据库资源管理器**。)  
+1. 打开或创建一个新的 LINQ to SQL 类文件 (**.dbml**文件) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (双击 **.dbml**中的文件**解决方案资源管理器**/**数据库资源管理器**。)  
   
-2.  在中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，右键单击你想要添加验证，然后单击的类**查看代码**。  
+2. 在中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，右键单击你想要添加验证，然后单击的类**查看代码**。  
   
      将打开代码编辑器，其中显示所选实体类的分部类。  
   
-3.  在该实体类的分部类声明中添加您的代码。  
+3. 在该实体类的分部类声明中添加您的代码。  
   
 ## <a name="adding-code-to-a-datacontext"></a>向 DataContext 中添加代码  
   
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>创建分部类并向 DataContext 中添加代码  
   
-1.  打开或创建一个新的 LINQ to SQL 类文件 (**.dbml**文件) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (双击 **.dbml**中的文件**解决方案资源管理器**/**数据库资源管理器**。)  
+1. 打开或创建一个新的 LINQ to SQL 类文件 (**.dbml**文件) 中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 (双击 **.dbml**中的文件**解决方案资源管理器**/**数据库资源管理器**。)  
   
-2.  在中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，右键单击设计器上的空白区域，然后单击**查看代码**。  
+2. 在中[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，右键单击设计器上的空白区域，然后单击**查看代码**。  
   
      将打开代码编辑器，其中显示 DataContext 的分部类。  
   
-3.  在 DataContext 的分部类声明中添加您的代码。  
+3. 在 DataContext 的分部类声明中添加您的代码。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

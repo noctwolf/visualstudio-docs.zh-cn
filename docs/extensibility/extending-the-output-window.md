@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041075"
 ---
 # <a name="extend-the-output-window"></a>扩展输出窗口
 **输出**窗口是一组的读/写文本窗格。 Visual Studio 提供了这些内置窗格：**构建**，有关生成，消息通信中的项目和**常规**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将有关 IDE 的消息传递。 项目将获得对的引用**构建**窗格中会自动通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>接口方法和 Visual Studio 提供了直接访问权限**常规**窗格通过<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服务。 除了内置的窗格中，可以创建和管理自己的自定义窗格。
@@ -25,22 +25,22 @@ ms.locfileid: "56706205"
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>创建使用输出窗格中的扩展
  您可以进行练习的输出窗格中的不同方面的扩展。
 
-1.  创建一个名为的 VSIX 项目`TestOutput`菜单命令与名为**TestOutput**。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 创建一个名为的 VSIX 项目`TestOutput`菜单命令与名为**TestOutput**。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2.  添加以下引用：
+2. 添加以下引用：
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  在中*TestOutput.cs*，添加以下 using 语句：
+3. 在中*TestOutput.cs*，添加以下 using 语句：
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  在中*TestOutput.cs*，删除`ShowMessageBox`方法。 添加以下方法存根 （stub）：
+4. 在中*TestOutput.cs*，删除`ShowMessageBox`方法。 添加以下方法存根 （stub）：
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ ms.locfileid: "56706205"
     }
     ```
 
-5.  在 TestOutput 构造函数将更改为 OutputCommandHandler 的命令处理程序。 下面是将命令添加的部分：
+5. 在 TestOutput 构造函数将更改为 OutputCommandHandler 的命令处理程序。 下面是将命令添加的部分：
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ ms.locfileid: "56706205"
     }
     ```
 
-6.  以下各节具有不同显示输出窗格中处理的不同方法的方法。 您可以调用这些方法的正文为`OutputCommandHandler()`方法。 例如，下面的代码添加`CreatePane()`下一节中给出的方法。
+6. 以下各节具有不同显示输出窗格中处理的不同方法的方法。 您可以调用这些方法的正文为`OutputCommandHandler()`方法。 例如，下面的代码添加`CreatePane()`下一节中给出的方法。
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

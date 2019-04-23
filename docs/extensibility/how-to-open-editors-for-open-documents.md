@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702481"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085579"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何：打开编辑器的打开的文档
 项目将打开一个文档窗口之前，项目首先必须确定文件是否已打开在另一个编辑器的文档窗口中。 该文件可以为在特定于项目的编辑器中，或者打开或其中一个标准编辑器注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
@@ -46,11 +46,11 @@ ms.locfileid: "56702481"
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>若要打开的标准编辑器打开的文件
 
-1.  调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。
+1. 调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。
 
      此方法首先验证，该文档未打开通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>。 如果文档已打开，然后重新呈现其编辑器窗口。
 
-2.  如果文档未打开，然后完成中的步骤[如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)。
+2. 如果文档未打开，然后完成中的步骤[如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)。
 
 ## <a name="see-also"></a>请参阅
 - [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)

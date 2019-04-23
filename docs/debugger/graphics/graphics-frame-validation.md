@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a15a51d392ee6e351fbcf277ef26eb422fe7ecc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694811"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655369"
 ---
 # <a name="graphics-frame-validation"></a>图形帧验证
-<!-- VERSIONLESS --> Visual Studio 2017 和更好的支持**帧验证**工具。  帧验证窗口中显示错误和警告事件列表与相关联。  若要查看此窗口，请选择**视图 > 帧验证**菜单。
+<!-- VERSIONLESS -->
+Visual Studio 2017 和更好的支持**帧验证**工具。  帧验证窗口中显示错误和警告事件列表与相关联。  若要查看此窗口，请选择**视图 > 帧验证**菜单。
 
 ![帧验证](media/gfx_diag_frame_validation.png)
 
 单击**运行验证**按钮，位于左上角启动分析。  可能需要几分钟才能完成，具体取决于帧的复杂性。  将显示下面是组合来自两个源的数据： 消息的 D3D 本身发出时[SDK 层](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers)已启用，并从工具的内部状态跟踪收集的数据。 完成后，你将看到多个列的数据：
-
 
 | **列** | **说明** |
 |------------| - |
@@ -31,7 +31,7 @@ ms.locfileid: "56694811"
 | 严重性 | 损坏、 错误、 警告、 信息或消息。 |
 | 类别 | 已定义的其他应用程序、 初始化、 清理、 编译、 状态创建、 状态设置、 状态获取、 执行、 资源操作、 着色器，冗余的并且未使用。 |
 | 消息 | 与事件关联的消息。 |
-| 事件 | 与错误或警告关联的事件。 |
+| Event | 与错误或警告关联的事件。 |
 
 ## <a name="see-also"></a>请参阅
 [图形诊断（调试 DirectX 图形）](visual-studio-graphics-diagnostics.md)

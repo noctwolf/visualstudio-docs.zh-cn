@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039124"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 应用程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ ms.locfileid: "58933018"
 ## <a name="permissionset"></a>PermissionSet  
  必需。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含 `IPermission` 元素。 此元素具有以下属性。  
   
--   `ID`  
+- `ID`  
   
      必需。 标识权限集。 此属性可为任意值。 在 `defaultAssemblyRequest` 和 `assemblyRequest` 属性中引用此 ID。  
   
--   `version`  
+- `version`  
   
      必需。 标识权限的版本。 此值通常为 `1`。  
   
 ## <a name="ipermission"></a>IPermission  
  可选。 此元素是 `PermissionSet` 元素的子元素。 `IPermission` 元素完全标识 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]中的权限类。 `IPermission` 元素具有以下属性，但可具有与权限类上属性对应的其他属性。 若要找出特定权限的语法，请参阅 Security.config 文件中列出的示例。  
   
--   `class`  
+- `class`  
   
      必需。 按强名称来标识权限类。 例如，下面的代码标识 `FileDialogPermission` 类型。  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      必需。 标识权限的版本。 此值通常为 `1`。  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      必需。 标识应用程序是否需要不受限制地授予此权限。 如果为 `true`，则权限授予是无条件的。 如果为 `false`或者未定义此属性，则它根据 `IPermission` 标记上定义的特定于权限的属性进行限制。 以下列权限为例：  
   
@@ -122,18 +122,18 @@ ms.locfileid: "58933018"
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  可选。 标识授予到所有程序集的权限集。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含以下元素。  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      必需。 标识为默认权限的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  可选。 标识特定程序集的权限。 此元素是 `applicationRequestMinimum` 元素的子元素，并且包含下列元素。  
   
--   `Name`  
+- `Name`  
   
      必需。 标识程序集名称。  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      必需。 标识此程序集必需的权限集的 ID。 在 `PermissionSet` 元素中声明权限集。  
   
@@ -143,7 +143,7 @@ ms.locfileid: "58933018"
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  可选。 标识要执行应用程序请求的安全级别。 此元素没有子元素但具有以下属性。  
   
--   `Level`  
+- `Level`  
   
      必需。 标识应用程序正在请求的安全级别。 可能的值有：  
   
@@ -155,7 +155,7 @@ ms.locfileid: "58933018"
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序只会以 `asInvoker`的值进行安装。 以任何其他值安装都将失败。  
   
--   `uiAccess`  
+- `uiAccess`  
   
      可选。 指示应用程序是否需要访问受保护用户界面元素的权限。 值为 `true` 或 `false`，且默认值为 false。 只有已签名的应用程序才应具有为 true 的值。  
   

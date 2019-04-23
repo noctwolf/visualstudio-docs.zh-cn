@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87a9d344b6cad7d27979e73c73caf0dbf97f521d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082589"
 ---
 # <a name="replace-in-files"></a>在文件中替换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54779237"
   
 ### <a name="to-display-replace-in-files"></a>显示“在文件中替换”  
   
-1.  在“编辑”菜单上展开“查找和替换”。  
+1. 在“编辑”菜单上展开“查找和替换”。  
   
-2.  选择“在文件中替换”。  
+2. 选择“在文件中替换”。  
   
      — 或 —  
   

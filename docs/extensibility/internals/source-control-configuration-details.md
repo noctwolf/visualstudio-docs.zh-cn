@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070090"
 ---
 # <a name="source-control-configuration-details"></a>源代码管理配置详细信息
 为了实现源代码管理，需要正确配置你的项目系统或编辑器执行以下操作：
 
--   请求转换为已更改状态的权限
+- 请求转换为已更改状态的权限
 
--   请求保存文件的权限
+- 请求保存文件的权限
 
--   请求中添加、 删除或重命名项目中的文件的权限
+- 请求中添加、 删除或重命名项目中的文件的权限
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>请求转换为已更改状态的权限
  项目或编辑器必须通过调用请求转换为已更改 （更新） 状态的权限<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>。 实现每个编辑器<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>和接收的批准才能返回之前从环境中更改文档`True`为<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>。 项目是实质上是用于项目文件的编辑器中，结果是，具有相同负责实现项目文件的更改状态跟踪，文本编辑器一样为它的文件。 环境处理已更改的状态的解决方案，但必须处理任何对象，该解决方案引用，但不会存储，如项目文件或其项的已更改的状态。 一般情况下，如果你的项目或编辑器不负责管理持久性的项，然后它负责实现已更改状态跟踪。

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 90f08715795a75a4a429ce16fdfcf24d06ba5843
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055920"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何：创建映射到表和视图的 LINQ to SQL 类（O/R 设计器）
 
@@ -26,15 +26,15 @@ ms.locfileid: "55970590"
 
 通过将表或视图从**服务器资源管理器**或**数据库资源管理器**拖到**O/R 设计器**创建实体类除了<xref:System.Data.Linq.DataContext>方法，用于执行更新。
 
-默认情况下，[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时创建用于将更改从可更新的实体类保存回数据库的逻辑。 此逻辑基于表的架构（列定义和主键信息）。 如果不需要此行为，则可以配置实体类以使用存储过程执行插入、更新和删除，而不是使用默认的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时行为。 有关详细信息，请参阅[如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+默认情况下，[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时创建用于将更改从可更新的实体类保存回数据库的逻辑。 此逻辑基于表的架构（列定义和主键信息）。 如果不需要此行为，则可以配置实体类以使用存储过程执行插入、更新和删除，而不是使用默认的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时行为。 有关详细信息，请参阅[如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>创建映射到数据库表或视图的 LINQ to SQL 类
 
-1.  在“服务器”或“数据库资源管理器”中，展开“表”或“视图”，并找到要在应用程序中使用的数据库表或视图。
+1. 在“服务器”或“数据库资源管理器”中，展开“表”或“视图”，并找到要在应用程序中使用的数据库表或视图。
 
-2.  将表或视图拖动到**O/R 设计器**。
+2. 将表或视图拖动到**O/R 设计器**。
 
      一个实体类将创建并显示在设计图面上。 该实体类的属性映射到所选表或视图中的列。
 
@@ -44,22 +44,22 @@ ms.locfileid: "55970590"
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>创建基于 LINQ to SQL 实体类的对象数据源
 
-1.  在“生成”菜单中，单击“生成解决方案”以生成项目。
+1. 在“生成”菜单中，单击“生成解决方案”以生成项目。
 
-2.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
+2. 若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-3.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
+3. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
-4.  单击“选择数据源类型”页上的“对象”，然后单击“下一步”。
+4. 单击“选择数据源类型”页上的“对象”，然后单击“下一步”。
 
-5.  展开节点，然后找到并选择您的类。
+5. 展开节点，然后找到并选择您的类。
 
     > [!NOTE]
     > 如果“Customer”类不可用，则退出向导，生成项目，然后重新运行向导。
 
-6.  单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。
+6. 单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。
 
-7.  将项从“数据源”窗口拖动到窗体。
+7. 将项从“数据源”窗口拖动到窗体。
 
 ## <a name="see-also"></a>请参阅
 
@@ -69,4 +69,4 @@ ms.locfileid: "55970590"
 - [如何：创建映射到存储过程和函数的 DataContext 方法（O/R 设计器）](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
 - [演练：自定义实体类的插入、更新和删除行为](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [如何：在 LINQ to SQL 类之间创建关联（关系）（O/R 设计器）](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [如何：创建 LINQ to SQL 类之间的关联（关系）（O/R 设计器）](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

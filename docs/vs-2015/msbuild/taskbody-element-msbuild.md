@@ -17,17 +17,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b02616b54c0697f824d53eab978142679e8a358
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7918844915d32893491f69b4e7f58a5867c3613c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752388"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660575"
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包含传递给 `UsingTask``TaskFactory` 的数据。 有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
   
  \<Project>  
@@ -45,19 +44,19 @@ ms.locfileid: "54752388"
   
 ### <a name="attributes"></a>特性  
   
-|特性|说明​​|  
+|特性|说明|  
 |---------------|-----------------|  
 |`Evaluate`|可选布尔属性。<br /><br /> 如果值为 `true`，任务实例化时，MSBuild 对所有内部元素求值，并在将信息传递到 `TaskFactory` 前扩展项和属性。|  
   
 ### <a name="child-elements"></a>子元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |数据|`TaskBody` 标记之间的文本一字不差地发送到 `TaskFactory`。|  
   
 ### <a name="parent-elements"></a>父元素  
   
-|元素|说明​​|  
+|元素|说明|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。|  
   

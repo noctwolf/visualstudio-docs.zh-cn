@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055493"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>如何：在目录中查找主题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "54778337"
   
 #### <a name="to-filter-the-toc"></a>要筛选目录  
   
-1.  选择“目录”选项卡。  
+1. 选择“目录”选项卡。  
   
-2.  在“筛选目录”文本框中，输入一个词。  
+2. 在“筛选目录”文本框中，输入一个词。  
   
 > [!NOTE]
 >  如果筛选器运行很长时间，可以使用 `title:` 高级搜索运算符更快显示结果。  
@@ -48,9 +48,9 @@ ms.locfileid: "54778337"
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>要将 TOC 与主题窗口同步  
   
-1.  查看主题。  
+1. 查看主题。  
   
-2.  单击工具栏上的“在目录中显示主题”按钮，或按 Ctrl+S。  
+2. 单击工具栏上的“在目录中显示主题”按钮，或按 Ctrl+S。  
   
      “目录”选项卡将打开并显示 TOC 中的主题位置。  
   

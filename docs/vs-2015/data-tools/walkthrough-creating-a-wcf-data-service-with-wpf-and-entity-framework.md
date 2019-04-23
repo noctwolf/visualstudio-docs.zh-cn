@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107033"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ ms.locfileid: "59653081"
   
  在此演练中，将：  
   
--   创建 Web 应用程序以承载 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。  
+- 创建 Web 应用程序以承载 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。  
   
--   创建一个表示 Northwind 数据库中 Customers 表的 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]。  
+- 创建一个表示 Northwind 数据库中 Customers 表的 [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]。  
   
--   创建 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。  
+- 创建 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]。  
   
--   创建一个客户端应用程序，并添加对 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的引用。  
+- 创建一个客户端应用程序，并添加对 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]的引用。  
   
--   启用对该服务的数据绑定并生成用户界面。  
+- 启用对该服务的数据绑定并生成用户界面。  
   
--   可以选择向应用程序添加筛选功能。  
+- 可以选择向应用程序添加筛选功能。  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   Northwind 示例数据库。  
+- Northwind 示例数据库。  
   
      如果你的开发计算机上没有此数据库，可以从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkID=98088)进行下载。 有关说明，请参阅[下载示例数据库](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)。  
   
@@ -80,11 +80,11 @@ ms.locfileid: "59653081"
   
 5. 在 **“选择你的数据连接”** 页上执行下列步骤之一：  
   
-   -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
+   - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。  
   
         或  
   
-   -   选择“新建连接”按钮来配置新数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。  
+   - 选择“新建连接”按钮来配置新数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。  
   
 6. 如果数据库需要密码，请选择“是，在连接字符串中包含敏感数据”选项按钮，然后选择“下一步”按钮。  
   
@@ -236,11 +236,11 @@ ms.locfileid: "59653081"
   
 #### <a name="to-add-filtering-by-city"></a>添加根据城市进行筛选的功能  
   
-1.  在“解决方案资源管理器”中，打开“Form1.vb”或“Form1.cs”节点的快捷菜单，然后选择“打开”。  
+1. 在“解决方案资源管理器”中，打开“Form1.vb”或“Form1.cs”节点的快捷菜单，然后选择“打开”。  
   
-2.  将“工具箱”中的 <xref:System.Windows.Forms.TextBox> 控件和 <xref:System.Windows.Forms.Button> 控件添加到窗体。  
+2. 将“工具箱”中的 <xref:System.Windows.Forms.TextBox> 控件和 <xref:System.Windows.Forms.Button> 控件添加到窗体。  
   
-3.  打开快捷菜单<xref:System.Windows.Forms.Button>控件，然后选择**查看代码**，然后添加以下代码中的`Button1_Click`事件处理程序：  
+3. 打开快捷菜单<xref:System.Windows.Forms.Button>控件，然后选择**查看代码**，然后添加以下代码中的`Button1_Click`事件处理程序：  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ ms.locfileid: "59653081"
     }  
     ```  
   
-4.  在以上代码中，使用 `http://localhost:53161/NorthwindCustomers.svc` 事件处理程序中的 URL 替换 `Form1_Load`。  
+4. 在以上代码中，使用 `http://localhost:53161/NorthwindCustomers.svc` 事件处理程序中的 URL 替换 `Form1_Load`。  
   
-5.  在菜单栏上依次选择**调试**，**开始调试**运行该应用程序。  
+5. 在菜单栏上依次选择**调试**，**开始调试**运行该应用程序。  
   
-6.  在文本框中，输入“London”，然后选择该按钮。 将仅显示来自 London 的客户。  
+6. 在文本框中，输入“London”，然后选择该按钮。 将仅显示来自 London 的客户。  
   
 ## <a name="see-also"></a>请参阅  
  [Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

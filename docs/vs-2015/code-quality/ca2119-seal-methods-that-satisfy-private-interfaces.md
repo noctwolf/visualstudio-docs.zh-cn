@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061497"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119:密封满足私有接口的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58930508"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决此规则的冲突，防止方法被重写程序集外部的通过使用以下项之一：
 
--   请声明类型`sealed`(`NotInheritable`在 Visual Basic 中)。
+- 请声明类型`sealed`(`NotInheritable`在 Visual Basic 中)。
 
--   更改到的声明类型的可访问性`internal`(`Friend`在 Visual Basic 中)。
+- 更改到的声明类型的可访问性`internal`(`Friend`在 Visual Basic 中)。
 
--   从声明类型中删除所有公共构造函数。
+- 从声明类型中删除所有公共构造函数。
 
--   实现方法，而无需使用`virtual`修饰符。
+- 实现方法，而无需使用`virtual`修饰符。
 
--   显式实现该方法。
+- 显式实现该方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  则可以安全地禁止显示此警告规则，仔细检查后没有安全存在问题的情况，可能是在程序集外重写该方法的情况下可利用。

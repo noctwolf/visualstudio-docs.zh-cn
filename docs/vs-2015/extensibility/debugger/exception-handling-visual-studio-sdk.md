@@ -10,12 +10,12 @@ ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d17c9222eaa69e3f1a33fac8432557dc3c30baab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 38e646f032a12de48bbfb55b089462c7f8a4dd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094835"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>异常处理 (Visual Studio SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,27 +24,27 @@ ms.locfileid: "58936681"
   
 ## <a name="exception-handling-process"></a>异常处理过程  
   
-1.  当第一次引发异常，但它由正在调试的程序中的异常处理程序之前，调试引擎 (DE) 将发送[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)会话调试管理器 (SDM) 为停止事件。 `IDebugExceptionEvent2`要是异常 （在中调试包的异常对话框中指定） 的设置指定用户想要停止上首次异常通知的发送。  
+1. 当第一次引发异常，但它由正在调试的程序中的异常处理程序之前，调试引擎 (DE) 将发送[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)会话调试管理器 (SDM) 为停止事件。 `IDebugExceptionEvent2`要是异常 （在中调试包的异常对话框中指定） 的设置指定用户想要停止上首次异常通知的发送。  
   
-2.  SDM 调用[IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)获取异常的属性。  
+2. SDM 调用[IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)获取异常的属性。  
   
-3.  调试包调用[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)以确定什么的选项，可以向用户显示。  
+3. 调试包调用[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)以确定什么的选项，可以向用户显示。  
   
-4.  调试包要求用户如何通过打开最可能的异常对话框中处理异常。  
+4. 调试包要求用户如何通过打开最可能的异常对话框中处理异常。  
   
-5.  如果用户选择继续，将调用 SDM [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)。  
+5. 如果用户选择继续，将调用 SDM [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)。  
   
-    -   如果该方法返回 S_OK，调用[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)。  
+    - 如果该方法返回 S_OK，调用[IDebugExceptionEvent2::PassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)。  
   
          或  
   
          如果该方法返回 S_FALSE，该程序正在调试就会有第二个机会处理异常。  
   
-6.  如果正在调试的程序的第二次异常没有处理程序，将发送 DE`IDebugExceptionEvent2`到作为 SDM **EVENT_SYNC_STOP**。  
+6. 如果正在调试的程序的第二次异常没有处理程序，将发送 DE`IDebugExceptionEvent2`到作为 SDM **EVENT_SYNC_STOP**。  
   
-7.  调试包要求用户如何通过打开最可能的异常对话框中处理异常。  
+7. 调试包要求用户如何通过打开最可能的异常对话框中处理异常。  
   
-8.  调试包调用[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)以确定什么的选项，可以向用户显示。  
+8. 调试包调用[IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md)以确定什么的选项，可以向用户显示。  
   
 9. 调试包要求用户如何通过打开第二个可能发生的异常对话框中处理异常。  
   

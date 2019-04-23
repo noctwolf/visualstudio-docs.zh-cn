@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096525"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的用户体验基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58931197"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1.在 Visual Studio 环境中保持一致。
 
--   按照在 shell 中的现有交互模式。
+- 按照在 shell 中的现有交互模式。
 
--   设计功能与 shell 的 visual 语言和技能要求保持一致。
+- 设计功能与 shell 的 visual 语言和技能要求保持一致。
 
--   它们存在时，使用共享的命令和控件。
+- 它们存在时，使用共享的命令和控件。
 
--   了解 Visual Studio 层次结构，以及如何建立上下文和驱动器 UI。
+- 了解 Visual Studio 层次结构，以及如何建立上下文和驱动器 UI。
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.使用环境服务的字体和颜色。
 
--   除非公开自定义在选项对话框的字体和颜色页中，UI 应遵从的当前环境字体设置。
+- 除非公开自定义在选项对话框的字体和颜色页中，UI 应遵从的当前环境字体设置。
 
--   UI 元素必须使用 VSColor Service，使用共享的环境令牌或特定于功能的令牌。
+- UI 元素必须使用 VSColor Service，使用共享的环境令牌或特定于功能的令牌。
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3.使所有图像与新的 VS 样式一致。
 
--   请按照 Visual Studio 的图标、 字形和其他图形的设计原则。
+- 请按照 Visual Studio 的图标、 字形和其他图形的设计原则。
 
--   不要将文本放在图形元素。
+- 不要将文本放在图形元素。
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4.设计从以用户为中心的角度来看。
 
--   创建任务流之前在其中的各个功能。
+- 创建任务流之前在其中的各个功能。
 
--   熟悉你的用户和你规范中明确这一知识。
+- 熟悉你的用户和你规范中明确这一知识。
 
--   在检查时用户界面，评估完整的体验，以及详细信息。
+- 在检查时用户界面，评估完整的体验，以及详细信息。
 
--   设计你的 UI，以便它仍然适用且吸引人，而不考虑区域设置或语言。
+- 设计你的 UI，以便它仍然适用且吸引人，而不考虑区域设置或语言。
 
 ## <a name="screen-resolution"></a>屏幕分辨率
 
@@ -69,9 +69,9 @@ ms.locfileid: "58931197"
 
 #### <a name="feature-team-goals"></a>功能团队目标
 
--   警告用户他们已添加了必须配置的元素。
+- 警告用户他们已添加了必须配置的元素。
 
--   提醒用户注意需要输入的区域。
+- 提醒用户注意需要输入的区域。
 
 #### <a name="anti-pattern-solution"></a>后置反模式解决方案
  只要用户启动的操作，它们已完成任务之前，立即将关键停止图标旁边需要配置的区域。
@@ -88,11 +88,11 @@ ms.locfileid: "58931197"
 #### <a name="alternatives"></a>替代项
  更好的解决方案，此问题是：
 
--   允许用户添加的声明而不发出警告，然后立即移动以在该项上设置属性。
+- 允许用户添加的声明而不发出警告，然后立即移动以在该项上设置属性。
 
--   添加警告图标 （金牌三角形） 时焦点将从移动项，如将另一个声明添加到列表，或尝试更改在设计器中的选项卡。
+- 添加警告图标 （金牌三角形） 时焦点将从移动项，如将另一个声明添加到列表，或尝试更改在设计器中的选项卡。
 
--   如果用户尝试设置属性上的任何声明之前更改选项卡，弹出一个对话框，说明该应用程序将无法生成 （或任何含义） 直到警告都得到解决。 如果用户关闭对话框并更改选项卡仍要然后图标 （严重或警告、 根据需要） 添加到声明选项卡。
+- 如果用户尝试设置属性上的任何声明之前更改选项卡，弹出一个对话框，说明该应用程序将无法生成 （或任何含义） 直到警告都得到解决。 如果用户关闭对话框并更改选项卡仍要然后图标 （严重或警告、 根据需要） 添加到声明选项卡。
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>强制用户关闭 UI 之前读取文本
 
@@ -173,9 +173,9 @@ ms.locfileid: "58931197"
 
    **更好的解决方案：** 会带来的问题，用户会询问单击的链接。
 
--   Windows Azure 服务如何工作？
+- Windows Azure 服务如何工作？
 
--   何时需要 Windows Azure 移动服务项目？
+- 何时需要 Windows Azure 移动服务项目？
 
 #### <a name="using-click-here-for-links"></a>使用"单击此处"链接
  超链接应该是自我描述。 它是一种反模式使用"单击此处"或任何类似的变体。

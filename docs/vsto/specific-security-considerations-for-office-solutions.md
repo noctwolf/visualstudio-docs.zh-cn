@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629074"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081315"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>有关 Office 解决方案的特定安全注意事项
   Microsoft .NET Framework 和 Microsoft Office 提供的安全功能有助于保护你的 Office 解决方案免受可能的安全威胁。 本主题将介绍其中一些威胁并提供有助于免受这些威胁的建议。 还包括有关 Microsoft Office 安全设置如何影响 Office 解决方案的信息。
@@ -39,13 +39,13 @@ ms.locfileid: "56629074"
 
 ### <a name="recommendations"></a>建议
 
--   始终验证输入和数据，无论它是来自用户、文档、数据库、Web 服务还是任何其他源。
+- 始终验证输入和数据，无论它是来自用户、文档、数据库、Web 服务还是任何其他源。
 
--   公开特定类型的功能（例如代表用户获取特权数据并将其放置于未受保护的工作表中）时要谨慎。
+- 公开特定类型的功能（例如代表用户获取特权数据并将其放置于未受保护的工作表中）时要谨慎。
 
--   根据应用程序的类型，验证在执行任何代码之前原始文档正在运行可能会有用。 例如，验证它正在从存储在已知的安全位置的文档运行。
+- 根据应用程序的类型，验证在执行任何代码之前原始文档正在运行可能会有用。 例如，验证它正在从存储在已知的安全位置的文档运行。
 
--   如果你的应用程序将执行任何特权操作，则在文档打开时显示警告可能是一个好办法。 例如，可以创建显示应用程序将访问个人信息的初始屏幕或启动对话框，并让用户选择继续还是取消。 如果最终用户从看似无害的文档获取这样的警告，他/她将能够在危及任何内容之前退出该应用程序。
+- 如果你的应用程序将执行任何特权操作，则在文档打开时显示警告可能是一个好办法。 例如，可以创建显示应用程序将访问个人信息的初始屏幕或启动对话框，并让用户选择继续还是取消。 如果最终用户从看似无害的文档获取这样的警告，他/她将能够在危及任何内容之前退出该应用程序。
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>代码被 Outlook 对象模型防护阻止
  Microsoft Office 可以限制代码在对象模型中使用某些属性、方法和对象。 通过限制对这些对象的访问，Outlook 有助于防止电子邮件蠕虫和病毒出于恶意目的使用对象模型。 此安全功能称为 Outlook 对象模型防护。 如果 VSTO 外接程序中尝试使用受限的属性或方法，而启用了对象模型防护，Outlook 会显示一条安全警告，让用户能够停止操作，或使用户能够 t 的有限期内授予访问权限的属性或方法输入法。 如果用户停止操作，则使用 Visual Studio 中的 Office 解决方案创建的 Outlook VSTO 外接程序将引发 <xref:System.Runtime.InteropServices.COMException>。
@@ -103,17 +103,17 @@ ms.locfileid: "56629074"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>在 Microsoft Office 2010 和 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 应用程序中禁用 VSTO 外接程序
 
-1.  选择“文件”  选项卡。
+1. 选择“文件”  选项卡。
 
-2.  选择*ApplicationName* **选项**按钮。
+2. 选择*ApplicationName* **选项**按钮。
 
-3.  在类别窗格中，选择“信任中心” 。
+3. 在类别窗格中，选择“信任中心” 。
 
-4.  在细节窗格中，选择“信任中心设置” 。
+4. 在细节窗格中，选择“信任中心设置” 。
 
-5.  在类别窗格中，选择“外接程序” 。
+5. 在类别窗格中，选择“外接程序” 。
 
-6.  在细节窗格中，选择“要求应用程序外接程序由受信任的发布者签名”  或“禁用所有应用程序外接程序” 。
+6. 在细节窗格中，选择“要求应用程序外接程序由受信任的发布者签名”  或“禁用所有应用程序外接程序” 。
 
 ## <a name="see-also"></a>请参阅
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)

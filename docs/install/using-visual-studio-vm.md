@@ -2,7 +2,7 @@
 title: 在 Azure 虚拟机上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476015"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866713"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -32,12 +32,12 @@ ms.locfileid: "58476015"
 
 ## <a name="what-configurations-and-versions-are-available"></a>提供了哪些可用的配置和版本？
 
-在 Azure Marketplace 中，可以看到最新主要版本的映像：Visual Studio 2017 和 Visual Studio 2015。  我们最近为即将上市的主版本 Visual Studio 2019 添加了预览版支持。  对于每个发布的主版本，可以看到最初发布的 (RTW) 版本和最新更新的版本。  其中每个版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  这些映像至少每月更新一次，以包含最新的 Visual Studio 和 Windows 更新。  映像的名称保持不变，但每个映像的说明将包含已安装的产品版本和映像的“截至”日期。
+在 Azure 市场中，可以找到最新主版本的映像：Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015。  对于每个发布的主版本，可以看到最初“发布到 Web”(RTW) 版本和最新更新的版本。  其中每个版本都提供 Visual Studio Enterprise 和 Visual Studio Community 版本。  这些映像至少每月更新一次，以包含最新的 Visual Studio 和 Windows 更新。  映像的名称保持不变，但每个映像的说明将包含已安装的产品版本和映像的“截至”日期。
 
 | 发行版本                                              | 版本                     |     产品版本      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019：预览 (RC3)                      |           企业         |    版本 16.0.0 RC3    |
-| Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.9      |
+|       Visual Studio 2019：RTW                                |    Enterprise，Community     |      版本 16.0.0      |
+| Visual Studio 2017：最新（版本 15.9）                    |    Enterprise，Community     |      版本 15.9.10     |
 |         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.22     |
 |   Visual Studio 2015：最新（更新 3）                      |    Enterprise，Community     |  版本 14.0.25431.01   |
 |         Visual Studio 2015：RTW                              |             None             | （已过维护期限）  |
@@ -105,7 +105,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 
 ![通过 Azure 门户 UI 捕获映像](media/capture-vm.png)
 
-（图 1）通过 Azure 门户 UI 捕获映像。
+*（图 1）通过 Azure 门户 UI 捕获映像。*
 
 有关详细信息，请参阅[在 Azure 中创建通用化 VM 的托管映像](/azure/virtual-machines/windows/capture-image-resource)。
 

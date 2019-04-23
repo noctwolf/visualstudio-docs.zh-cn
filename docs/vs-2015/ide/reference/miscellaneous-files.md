@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802579"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658484"
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 你可能需要使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 编辑器独立于项目或解决方案来处理文件。 打开某个解决方案后，可以打开和修改文件，而不必将其添加到解决方案或项目中。 要独立于容器来处理的文件称为杂项文件。 杂项文件位于解决方案和项目的外部，不包括在生成中，而且无法包括在受源代码管理的解决方案中。  
   
  由于各种原因，独立于容器打开文件很有用。 用户可能有一个需要在开发基于项目的解决方案时查看的文件，但它对于解决方案的开发并非必不可少。 常见示例包括开发备注或说明、数据库架构和代码剪辑。 此外，可能还需要创建独立文件。  

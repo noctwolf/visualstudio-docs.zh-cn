@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae72a9f8ed20840da958c3c9314c8f25aada801f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dfe8a6b3e4c84fd97a159f6ac43e0de47536f0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064263"
 ---
 # <a name="command-availability"></a>命令可用性
 
@@ -44,11 +44,11 @@ Visual Studio 上下文确定有哪些命令。 根据当前的项目、 当前�
 
 如果尚未定义 GUID 不适当的命令上下文中，可以定义一个在你的 VSPackage 中，然后编写它是活动或非活动所需控制命令的可见性：
 
-1.  通过调用注册上下文 Guid<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法。
+1. 通过调用注册上下文 Guid<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法。
 
-2.  通过调用获取的 GUID 的上下文状态<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法。
+2. 通过调用获取的 GUID 的上下文状态<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法。
 
-3.  将通过调用上下文 Guid 打开和关闭<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。
+3. 将通过调用上下文 Guid 打开和关闭<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。
 
 > [!CAUTION]
 > 请确保你的 VSPackage 不因为其他 Vspackage 可能依赖于这些影响任何现有上下文的 Guid。

@@ -9,39 +9,38 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c676032c2d0bc6c47023c5fd43bc759cccff8de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101366"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 “XML 编辑器”可以用于新建 XML 代码段。 编辑器包括名为“Snippet”的 XML 代码段，是用于新建 XML 代码段的代码段样本。  
   
 ## <a name="to-create-a-new-xml-snippet"></a>新建 XML 代码段  
  若要创建新的 XML 代码段创建一个新的 XML 文件，并使用**插入代码段**功能。  
   
-1.  上**文件**菜单上，单击**新建**，然后单击**文件**。  
+1. 上**文件**菜单上，单击**新建**，然后单击**文件**。  
   
-2.  单击**XML 文件**，然后单击**打开**。  
+2. 单击**XML 文件**，然后单击**打开**。  
   
-3.  在编辑器窗格中右键单击并选择**插入代码段**。  
+3. 在编辑器窗格中右键单击并选择**插入代码段**。  
   
-4.  选择**代码片段**列表然后按 ENTER。  
+4. 选择**代码片段**列表然后按 ENTER。  
   
-5.  对新的代码段进行所需的更改。  
+5. 对新的代码段进行所需的更改。  
   
-6.  从**文件**菜单中选择**保存 XMLFile.xml**。  
+6. 从**文件**菜单中选择**保存 XMLFile.xml**。  
   
      **将文件另存为**显示对话框。  
   
-7.  输入新的代码段名称并选择**代码段文件**从**另存为类型**下拉窗口。  
+7. 输入新的代码段名称并选择**代码段文件**从**另存为类型**下拉窗口。  
   
-8.  使用**以保存**下拉列表将文件位置更改为 My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets 文件夹，然后按**保存**。  
+8. 使用**以保存**下拉列表将文件位置更改为 My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets 文件夹，然后按**保存**。  
   
 ## <a name="snippet-description"></a>代码段说明  
  本节介绍代码段样本中的一些重要元素。 有关使用的 XML 代码段架构元素的详细信息，请参阅[代码片段架构参考](../ide/code-snippets-schema-reference.md)。  

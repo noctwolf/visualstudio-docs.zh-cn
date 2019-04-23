@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a9d0836d9633b070a9f48a6bd2b80d1f012f52cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118027"
 ---
 # <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ ms.locfileid: "58934533"
   
   分析器、 任务提供程序和筛选器提供必要尽量将错误标记的基础结构。 以下步骤提供进程显示错误标记。  
   
-1.  正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。  
+1. 正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。  
   
     > [!NOTE]
     >  有关方法的提示、 语句完成、 错误标记等，可以使用的相同命令筛选器。  
   
-2.  当筛选器收到一个事件，指示已移动到另一个行时，创建任务，检查有错误。  
+2. 当筛选器收到一个事件，指示已移动到另一个行时，创建任务，检查有错误。  
   
-3.  任务处理程序会检查是否已更新行。 如果是这样，它将解析错误的行。  
+3. 任务处理程序会检查是否已更新行。 如果是这样，它将解析错误的行。  
   
-4.  如果发现错误，任务提供程序创建的任务项实例。 此实例创建文本视图中将错误标记为在环境中使用的文本标记。  
+4. 如果发现错误，任务提供程序创建的任务项实例。 此实例创建文本视图中将错误标记为在环境中使用的文本标记。  
   
 ## <a name="see-also"></a>请参阅  
  [旧版 API 中使用文本标记](../extensibility/using-text-markers-with-the-legacy-api.md)   

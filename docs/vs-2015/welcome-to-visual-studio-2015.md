@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f175e8870795374ab35058ef163f4752115d5be
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
-ms.translationtype: MTE95
+ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067724"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>欢迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -54,24 +54,24 @@ ms.locfileid: "57567242"
 
  基于应用要求和要使用的语言选择所需工具。
 
-1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：针对所有设备的 C# 中的常用基本代码
+1. [适用于 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md):一个常见的代码库中C#适用于所有设备
 
-2.  [Apache Cordova with Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)：用于 HTML、CSS 和 JavaScript 或 Typescript 的常用基本代码
+2. [使用 Visual Studio 的 Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42):通用基本的 HTML、 CSS 和 JavaScript 或 Typescript 代码
 
-3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md)：C# 中的 2D/3D 游戏开发
+3. [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md):在二维/三维游戏开发C#
 
-4.  [适用于跨平台开发的 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)：C++ 中的共享代码库和应用
+4. [C++适用于跨平台开发](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md):共享的代码库和应用中C++
 
-5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)：适用于 Android 的 Visual Studio 仿真程序：调试和测试你的 Android 应用而无需考虑 IDE
+5. [适用于 Android 的 visual Studio 仿真程序](./cross-platform/visual-studio-emulator-for-android.md):适用于 Android 的 visual Studio 仿真程序：调试和测试你的 Android 应用而无论 IDE
 
 ## <a name="connect-your-apps-to-services"></a>将应用连接到服务
  你可以连接到以下这些现成服务（假设你具有用于每个服务的帐户）：
 
--   [Azure 移动服务](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Azure 移动服务](http://azure.microsoft.com/documentation/services/mobile-services/)
 
--   [Azure 存储](http://azure.microsoft.com/documentation/services/storage/)
+- [Azure 存储](http://azure.microsoft.com/documentation/services/storage/)
 
--   将 Office 365 REST API 集成到你自己的应用中以连接到云中存储的数据。 有关详细信息，请参阅 [这些示例](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)。
+- 将 Office 365 REST API 集成到你自己的应用中以连接到云中存储的数据。 有关详细信息，请参阅 [这些示例](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365)。
 
 ## <a name="write-great-web-apps-with-aspnet"></a>使用 ASP.NET 编写优秀的 Web 应用
  [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) 是 MVC、WebAPI 和 SignalR 的一个重大更新，并且在 Windows、Mac 和 Linux 上运行。  ASP.NET 5 旨在完全为你提供可组合的精益 .NET 堆栈以便生成基于云的现代应用 Web 程序和服务。
@@ -79,7 +79,7 @@ ms.locfileid: "57567242"
 ## <a name="build-test-and-manage-your-code"></a>生成、测试和管理你的代码
 
 ### <a name="check-in-your-code"></a>签入你的代码
- 如果你在团队中工作，则还需要共享代码的最新版本，以便团队中的每个人都使用相同的基本代码。 Visual Studio 与 Visual Studio Team Services 或 Team Foundation Server 无缝集成，以使用 Git 或 TFVC（Team Foundation 版本控制）提供版本控制。 使用 Visual Studio Team Services 可将代码存储在云中，而无需维护本地服务器。 如果需要具有本地服务器，请使用 Team Foundation Server。 每次创建代码项目时，你都可以选择将其添加到版本控制。 了解最适合于需求的版本控制系统： [使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。
+ 如果你在团队中工作，则还需要共享代码的最新版本，以便团队中的每个人都使用相同的基本代码。 Visual Studio 与 Visual Studio Team Services 或 Team Foundation Server 无缝集成，以使用 Git 或 TFVC（Team Foundation 版本控制）提供版本控制。 使用 Visual Studio Team Services 可将代码存储在云中，而无需维护本地服务器。 如果需要具有本地服务器，请使用 Team Foundation Server。 每次创建代码项目时，你都可以选择将其添加到版本控制。 要了解的版本控制系统，最适合你的需求：[使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。
 
 ### <a name="build-your-app"></a>生成应用程序
  你可以 [在本地生成应用](./ide/compiling-and-building-in-visual-studio.md) 并确保它正常运行。 然后使用 [调试工具](./debugger/debugging-in-visual-studio.md) 修复与应用有关的任何问题。 或者，可以在共享生成服务器上或在云中生成项目。 自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。
@@ -102,32 +102,32 @@ ms.locfileid: "57567242"
 
 ## <a name="in-this-section"></a>本节内容
 
--   [Visual Studio 2015 中的新增功能](./what-s-new-in-visual-studio-2015.md)
+- [Visual Studio 2015 中的新增功能](./what-s-new-in-visual-studio-2015.md)
 
--   [安装 Visual Studio 2015](./install/install-visual-studio-2015.md)
+- [安装 Visual Studio 2015](./install/install-visual-studio-2015.md)
 
--   [移植、迁移和升级 Visual Studio 项目](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+- [移植、迁移和升级 Visual Studio 项目](./porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 
--   [Visual Studio IDE](./ide/visual-studio-ide.md)
+- [Visual Studio IDE](./ide/visual-studio-ide.md)
 
--   [Visual Studio 的扩展性](./extensibility/extensibility-in-visual-studio.md)
+- [Visual Studio 的扩展性](./extensibility/extensibility-in-visual-studio.md)
 
--   [在 Visual Studio 中访问数据](./data-tools/accessing-data-in-visual-studio.md)
+- [在 Visual Studio 中访问数据](./data-tools/accessing-data-in-visual-studio.md)
 
--   [跨平台移动开发](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
+- [跨平台移动开发](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
--   [C# 和 Visual Basic 共享编程概念](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [C# 和 Visual Basic 共享编程概念](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
--   [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
--   [JavaScript](./javascript/javascript-in-visual-studio.md)
+- [JavaScript](./javascript/javascript-in-visual-studio.md)
 
--   [Python](./python/getting-started-with-python.md)
+- [Python](./python/getting-started-with-python.md)
 
--   [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
--   [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
--   [DevOps 和应用程序生命周期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps 和应用程序生命周期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
--   [与我们交流](./ide/talk-to-us.md)
+- [与我们交流](./ide/talk-to-us.md)

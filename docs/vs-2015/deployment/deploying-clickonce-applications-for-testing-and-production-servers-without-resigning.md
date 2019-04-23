@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066593"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>在不重新签名的情况下为测试服务器和生产服务器部署 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58931501"
   
  第三方开发人员和 Isv 可以参加此功能，使其客户更新他们的应用程序更轻松。 在以下情况下，可以使用此功能：  
   
--   当应用程序，不应用程序首次安装更新。  
+- 当应用程序，不应用程序首次安装更新。  
   
--   当一台计算机上的应用程序只有一个配置。 例如，如果应用程序配置为指向两个不同的数据库，不能使用此功能。  
+- 当一台计算机上的应用程序只有一个配置。 例如，如果应用程序配置为指向两个不同的数据库，不能使用此功能。  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>从部署清单中排除 deploymentProvider  
  在.NET Framework 2.0 和.NET Framework 3.0 中，在脱机可用性的系统安装任何 ClickOnce 应用程序必须指定`deploymentProvider`在其部署清单中。 `deploymentProvider`通常称为更新位置中; 它是在其中 ClickOnce 将检查应用程序更新的位置。 此要求，结合应用程序发布者对其部署签名需要进行很难更新 ClickOnce 应用程序供应商或其他第三方公司。 它还使更难以部署在同一网络上的多个位置提供的相同应用程序。  

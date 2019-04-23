@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108849"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
 此架构描述了 Visual Studio 模板清单的格式 (*.vstman*) 生成的 Visual Studio 项目或项模板的文件。 位置和有关模板的其他相关信息，还介绍了架构。
@@ -28,15 +28,15 @@ ms.locfileid: "56713160"
 
 ### <a name="attributes"></a>特性
 
--   **版本**:一个表示模板清单的版本字符串。 必需。
+- **版本**:一个表示模板清单的版本字符串。 必需。
 
--   **区域设置**:表示区域设置或区域设置的模板清单的字符串。 区域设置值适用于所有模板。 必须将每个区域使用单独的清单。 可选。
+- **区域设置**:表示区域设置或区域设置的模板清单的字符串。 区域设置值适用于所有模板。 必须将每个区域使用单独的清单。 可选。
 
 ### <a name="child-elements"></a>子元素
 
--   **VSTemplateContainer**可选。
+- **VSTemplateContainer**可选。
 
--   **VSTemplateDir**可选。
+- **VSTemplateDir**可选。
 
 ### <a name="parent-element"></a>父元素
  无。
@@ -49,9 +49,9 @@ ms.locfileid: "56713160"
 
 ### <a name="child-elements"></a>子元素
 
--   **RelativePathOnDisk**:磁盘上的模板文件的相对路径。 此位置还定义模板的放置在模板树中所示**新的项目**或**新项**对话框。 有关模板部署为一个目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为 *.zip*文件，此路径应为路径 *.zip*文件。
+- **RelativePathOnDisk**:磁盘上的模板文件的相对路径。 此位置还定义模板的放置在模板树中所示**新的项目**或**新项**对话框。 有关模板部署为一个目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为 *.zip*文件，此路径应为路径 *.zip*文件。
 
--   **VSTemplateHeader:一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。
+- **VSTemplateHeader:一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。
 
 ### <a name="parent-element"></a>父元素
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ ms.locfileid: "56713160"
 
 ### <a name="child-elements"></a>子元素
 
--   **RelativePath**:模板的路径。 可能每个路径，只有一个条目，因此第一个获胜的所有清单。
+- **RelativePath**:模板的路径。 可能每个路径，只有一个条目，因此第一个获胜的所有清单。
 
--   **LocalizedName**:一个**NameDescriptionIcon**元素，它指定本地化的名称。 可选。
+- **LocalizedName**:一个**NameDescriptionIcon**元素，它指定本地化的名称。 可选。
 
--   **SortOrder**:一个字符串，指定排序顺序。 可选。
+- **SortOrder**:一个字符串，指定排序顺序。 可选。
 
--   **ParentFolderOverrideName**:重写的父文件夹的名称。 可选。 此元素具有**名称**特性，它是一个字符串值，指定的名称。
+- **ParentFolderOverrideName**:重写的父文件夹的名称。 可选。 此元素具有**名称**特性，它是一个字符串值，指定的名称。
 
 ### <a name="parent-element"></a>父元素
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ ms.locfileid: "56713160"
 
 ### <a name="attributes"></a>特性
 
--   **包**:一个字符串值，该值指定的包。 可选。
+- **包**:一个字符串值，该值指定的包。 可选。
 
--   **ID**:一个字符串值，指定该 id。 可选。
+- **ID**:一个字符串值，指定该 id。 可选。
 
 ### <a name="child-elements"></a>子元素
  无。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041674"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 
@@ -69,25 +69,25 @@ ms.locfileid: "58268774"
 
 此步骤使用“数据源配置向导”从数据库创建一个数据源：
 
-1.  若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
+1. 若要打开**数据源**窗口，然后在**数据**菜单中，单击**显示数据源**。
 
-2.  在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
+2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3.  在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
+3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
-4.  在“选择数据连接”页面上，执行以下操作之一：
+4. 在“选择数据连接”页面上，执行以下操作之一：
 
     - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
     - 选择“新建连接”以启动“添加/修改连接”对话框。
 
-5.  如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
+5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6.  上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
+6. 上**将连接字符串保存到应用程序配置文件**页上，单击**下一步**。
 
-7.  在“选择数据库对象”页上，展开“表”节点。
+7. 在“选择数据库对象”页上，展开“表”节点。
 
-8.  选择“Customers”表，然后单击“完成”。
+8. 选择“Customers”表，然后单击“完成”。
 
      “NorthwindDataSet”添加到项目中，并且“数据源”窗口中显示“Customers”表。
 
@@ -95,9 +95,9 @@ ms.locfileid: "58268774"
 
 通过将某些项从“数据源”窗口拖到窗体，可创建数据绑定控件：
 
-1.  在“数据源”窗口中展开“Customers”节点。
+1. 在“数据源”窗口中展开“Customers”节点。
 
-2.  将“Customers”节点从“数据源”窗口中拖到窗体上。
+2. 将“Customers”节点从“数据源”窗口中拖到窗体上。
 
      窗体上出现用于导航记录的 <xref:System.Windows.Forms.DataGridView> 和工具栏 (<xref:System.Windows.Forms.BindingNavigator>)。 组件栏中显示“[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)”、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
 
@@ -105,11 +105,11 @@ ms.locfileid: "58268774"
 
 可以将 WHERE 子句添加到原始查询使用**搜索标准生成器**对话框：
 
-1.  选择 <xref:System.Windows.Forms.DataGridView> 控件，然后在“数据”菜单上选择“添加查询”。
+1. 选择 <xref:System.Windows.Forms.DataGridView> 控件，然后在“数据”菜单上选择“添加查询”。
 
-2.  类型**FillByCity**中**新查询名称**上的区域**搜索标准生成器**对话框。
+2. 类型**FillByCity**中**新查询名称**上的区域**搜索标准生成器**对话框。
 
-3.  将 `WHERE City = @City` 添加到“查询文本”区域的查询中。
+3. 将 `WHERE City = @City` 添加到“查询文本”区域的查询中。
 
      查询应当类似于：
 
@@ -123,7 +123,7 @@ ms.locfileid: "58268774"
     > [!NOTE]
     > 访问和 OLE DB 数据源使用问号 (？) 表示参数，因此在 WHERE 子句将类似如下： `WHERE City = ?`。
 
-4.  单击“确定”以关闭“搜索标准生成器”对话框。
+4. 单击“确定”以关闭“搜索标准生成器”对话框。
 
      “FillByCityToolStrip”随即添加到窗体中。
 
@@ -131,9 +131,9 @@ ms.locfileid: "58268774"
 
 运行应用程序将打开你的窗体，并使它准备好接收作为输入参数：
 
-1.  按 **F5** 运行该应用程序。
+1. 按 **F5** 运行该应用程序。
 
-2.  在“City”文本框中键入“London”，然后单击“FillByCity”。
+2. 在“City”文本框中键入“London”，然后单击“FillByCity”。
 
      符合条件的客户使用填充数据网格。 在此示例中，数据网格只显示其“City”列中有“London”值的客户。
 

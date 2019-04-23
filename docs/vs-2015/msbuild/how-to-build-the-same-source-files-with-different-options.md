@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045598"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在生成项目时，你经常使用不同的生成选项编译相同的组件。 例如，你可以使用符号信息创建调试版本，或者使用无符号信息但启用优化来创建发布版本。 或者，可以生成项目，在某个特定平台（例如，x86 或[!INCLUDE[vcprx64](../includes/vcprx64-md.md)]）上运行。 在所有这些情况下，大部分生成选项保持不变；只更改几个选项以控制生成配置。 利用 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，你可以使用属性和条件来创建不同的生成配置。  
   
 ## <a name="using-properties-to-modify-projects"></a>使用属性来修改项目  
@@ -34,7 +33,7 @@ ms.locfileid: "54800413"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>设置一组属性（基于另一个属性）  
   
--   在 `PropertyGroup` 元素中使用 `Condition` 属性，类似以下代码：  
+- 在 `PropertyGroup` 元素中使用 `Condition` 属性，类似以下代码：  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -45,7 +44,7 @@ ms.locfileid: "54800413"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>定义属性（基于另一个属性）  
   
--   在 `Property` 元素中使用 `Condition` 属性，类似以下代码：  
+- 在 `Property` 元素中使用 `Condition` 属性，类似以下代码：  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -56,7 +55,7 @@ ms.locfileid: "54800413"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性  
   
--   使用 **/property** 开关以及属性和属性值。 例如:  
+- 使用 **/property** 开关以及属性和属性值。 例如：  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -70,7 +69,7 @@ ms.locfileid: "54800413"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令行上指定多个项目属性  
   
-- 多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如:  
+- 多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如：  
   
   ```  
   msbuild file.proj /p:Flavor=Debug;Platform=x86  

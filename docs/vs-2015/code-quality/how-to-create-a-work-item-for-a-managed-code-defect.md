@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103231"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>如何：创建托管代码缺陷的工作项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,16 +26,16 @@ ms.locfileid: "58935329"
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>若要创建托管的代码缺陷的工作项  
   
-1.  在中**代码分析**窗口中，选择警告。  
+1. 在中**代码分析**窗口中，选择警告。  
   
-2.  选择**操作**，然后选择**创建工作项**，然后选择要创建的工作项类型。  
+2. 选择**操作**，然后选择**创建工作项**，然后选择要创建的工作项类型。  
   
      您指定的缺陷信息创建新工作项。  
   
 ### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>若要创建多个托管的代码缺陷的工作项  
   
-1.  在中**错误列表**、 选择多个警告，然后右键单击出现的警告。  
+1. 在中**错误列表**、 选择多个警告，然后右键单击出现的警告。  
   
-2.  指向**创建工作项**，并单击要创建的工作项类型。  
+2. 指向**创建工作项**，并单击要创建的工作项类型。  
   
      为所有选定的警告，以指定 bug 信息创建一个工作项。

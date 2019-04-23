@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104559"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -259,7 +259,6 @@ namespace MockLanguageExtension
         [BaseDefinition(CodeRemoteContentDefinition.CodeRemoteContentTypeName)]
         internal static ContentTypeDefinition BarContentTypeDefinition;
 
-
         [Export]
         [FileExtension(".bar")]
         [ContentType("bar")]
@@ -297,6 +296,7 @@ namespace MockLanguageExtension
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. 右键单击 JSON 文件并选择**属性**。 更改**生成**操作保存到"内容"和"包含在 VSIX 中的属性设为 true。
 
 3. 实现 ConfigurationSections 并返回 JSON 文件中定义的设置的前缀的列表 （在 Visual Studio Code 中，这将映射到在 package.json 中的配置节名称）：
@@ -319,6 +319,7 @@ namespace MockLanguageExtension
     ```
 
     示例:
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

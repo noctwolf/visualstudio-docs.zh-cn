@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064825"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用事务链接 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ ms.locfileid: "58937771"
   
  注意下列事项：  
   
--   必须始终在事务结束时包括 `Commit()`。 如果在不提交的情况下释放事务，则事务将回滚。 也就是说，该模型将还原到其事务开始时的状态。  
+- 必须始终在事务结束时包括 `Commit()`。 如果在不提交的情况下释放事务，则事务将回滚。 也就是说，该模型将还原到其事务开始时的状态。  
   
--   如果发生在事务内未捕获到的异常，则事务将回滚。 这是一种常见的模式，用于将 `using` 事务块包括到 `try…catch`块中。  
+- 如果发生在事务内未捕获到的异常，则事务将回滚。 这是一种常见的模式，用于将 `using` 事务块包括到 `try…catch`块中。  
   
--   你可以嵌套事务。  
+- 你可以嵌套事务。  
   
--   你可以向 `BeginTransaction()` 提供任何非空白名称。  
+- 你可以向 `BeginTransaction()` 提供任何非空白名称。  
   
--   仅 UML 模型存储区受这些事务影响。 建模事务不会影响：变量、外部存储（如文件和数据库）、层关系图和模型代码。  
+- 仅 UML 模型存储区受这些事务影响。 建模事务不会影响：变量、外部存储（如文件和数据库）、层关系图和模型代码。  
   
 ## <a name="example"></a>示例  
   

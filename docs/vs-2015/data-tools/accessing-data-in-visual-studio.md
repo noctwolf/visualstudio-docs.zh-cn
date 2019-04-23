@@ -22,20 +22,19 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000748"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669453"
 ---
 # <a name="accessing-data-in-visual-studio"></a>在 Visual Studio 中访问数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-
 在 Visual Studio 中，可以创建连接到几乎任何数据库产品或服务，任何格式，任何位置中的数据的应用程序 — 在本地计算机上，在本地网络，或在公共、 专用或混合云。
 
- 对于 JavaScript、 Python、 PHP、 Ruby 或 c + + 中的应用程序，你连接到数据就像任何其他内容，方法是获取库编写的代码。 对于.NET 应用程序，Visual Studio 提供可用于浏览数据源、 创建对象模型来存储和处理数据在内存中，并将数据绑定到用户界面的工具。     Microsoft Azure 提供了用于.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和移动应用和 Visual Studio 中的工具连接到 Azure 存储 Sdk。
+ JavaScript、 Python、 PHP、 Ruby 中的应用程序或C++，就像任何其他内容，方法是获取库编写的代码连接到的数据。 对于.NET 应用程序，Visual Studio 提供可用于浏览数据源、 创建对象模型来存储和处理数据在内存中，并将数据绑定到用户界面的工具。     Microsoft Azure 提供了用于.NET、 Java、 Node.js、 PHP、 Python、 Ruby 和移动应用和 Visual Studio 中的工具连接到 Azure 存储 Sdk。
 
  以下列表显示了从 Visual Studio 只需几个可以使用许多数据库和存储系统。 [Microsoft Azure](https://azure.microsoft.com/)产品是数据服务，包括所有预配和管理的基础数据存储区。  [Azure Tools for Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx)是一个可选组件，使您能够直接从 Visual Studio 的 Azure 数据存储。 可以在本地计算机上，在本地网络，或在 Microsoft Azure 虚拟机上托管的其他 SQL 和 NoSQL 数据库产品此处列出的大多数。 在此方案中，您负责管理数据库本身。
 
@@ -99,16 +98,16 @@ ms.locfileid: "59000748"
  没有任何要求使用任何这些技术。 在某些情况下，尤其是在性能很重要，只需可用 DataReader 对象来从数据库读取并将所需的值复制到一个集合对象，如列表\<T >。
 
 ### <a name="native-c"></a>本机 C++
- 连接到 SQL Server 的 c + + 应用程序应使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 可以使用访问其他数据库[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或 OLE DB 驱动程序直接。 ODBC 是当前的标准数据库接口，但大多数数据库系统提供无法通过 ODBC 接口访问的自定义功能。  OLE DB 是一项传统 COM 数据访问技术，是仍受支持但不是建议用于新的应用程序。  有关详细信息，请参阅[数据访问](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)。
+ C++连接到 SQL Server 的应用程序应使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 可以使用访问其他数据库[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或 OLE DB 驱动程序直接。 ODBC 是当前的标准数据库接口，但大多数数据库系统提供无法通过 ODBC 接口访问的自定义功能。  OLE DB 是一项传统 COM 数据访问技术，是仍受支持但不是建议用于新的应用程序。  有关详细信息，请参阅[数据访问](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)。
 
- 使用 REST 服务的 c + + 程序可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
+ C++使用 REST 服务的程序可以使用[ C++ REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
- 使用 Microsoft Azure 存储空间的 c + + 程序可以使用[Microsoft Azure 存储客户端](http://www.nuget.org/packages/wastorage)。
+ C++使用 Microsoft Azure 存储空间的程序可以使用[Microsoft Azure 存储客户端](http://www.nuget.org/packages/wastorage)。
 
 #### <a name="data-modeling"></a>数据建模
- Visual Studio 不提供 c + + 的 ORM 层。  [ODB](http://www.codesynthesis.com/products/odb/) c + + 是流行的开放源代码 ORM。
+ Visual Studio 不提供的 ORM 层为C++。  [ODB](http://www.codesynthesis.com/products/odb/)是为受欢迎的开源 ORM C++。
 
- 有关旧版 Visual c + + 数据访问技术的详细信息，请参阅[数据访问](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ 详细了解旧版 VisualC++数据访问技术，请参阅[数据访问](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [Visual Studio 中的 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)是一流的语言，用于构建跨平台应用、 UWP 应用、 云服务、 网站和 web 应用。 可以使用 Bower、 Grunt、 Gulp、 npm 和 Visual Studio 中的从 NuGet 安装你最喜欢的 JavaScript 库和数据库产品。 通过下载 Sdk 从连接到 Azure 存储和服务[Azure 网站](https://azure.microsoft.com/)。  Edge.js 是服务器端 JavaScript (Node.js) 连接到 ADO.NET 数据源的库。

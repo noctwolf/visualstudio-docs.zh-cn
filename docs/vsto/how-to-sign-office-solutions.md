@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871658"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101225"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：对 Office 解决方案进行签名
   如果登录解决方案，可以授予对使用证书作为证据的解决方案的信任。 可将同一个证书用于多个解决方案，并且所有解决方案都将没有进行任何额外的安全策略更新受信任。
@@ -35,15 +35,15 @@ ms.locfileid: "54871658"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>若要使用证书签名的 Office 解决方案
 
-1.  上**项目**菜单上，单击_SolutionName_**属性**。
+1. 上**项目**菜单上，单击_SolutionName_**属性**。
 
-2.  单击“签名”选项卡。
+2. 单击“签名”选项卡。
 
-3.  选择**ClickOnce 清单签名**。
+3. 选择**ClickOnce 清单签名**。
 
-4.  通过单击来查找**从存储中选择**或**从文件中选择**并导航到该证书。
+4. 通过单击来查找**从存储中选择**或**从文件中选择**并导航到该证书。
 
-5.  若要验证是否正在使用正确的证书，请单击**更多详细信息**来查看证书信息。
+5. 若要验证是否正在使用正确的证书，请单击**更多详细信息**来查看证书信息。
 
 ## <a name="see-also"></a>请参阅
 

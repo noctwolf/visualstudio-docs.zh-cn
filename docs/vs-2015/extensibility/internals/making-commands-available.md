@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071221"
 ---
 # <a name="making-commands-available"></a>提供可用命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 当多个 Vspackage 添加到 Visual Studio 中时，用户界面 (UI) 可能会变得 overcrowded 命令。 您可以编写您的程序包以帮助减少此问题，请按如下所示：  
   
--   计划包，以便仅当用户加载需要它。  
+- 计划包，以便仅当用户加载需要它。  
   
--   编程包，以便仅在它们可能需要在集成的开发环境 (IDE) 的当前状态的上下文中时显示其命令。  
+- 编程包，以便仅在它们可能需要在集成的开发环境 (IDE) 的当前状态的上下文中时显示其命令。  
   
 ## <a name="delayed-loading"></a>延迟加载  
  若要启用的典型方法延迟加载是设计 VSPackage，使其命令显示在 UI 中，但直到用户单击其中一个命令不会加载包本身。 若要为此，在.vsct 文件中，创建不具有任何命令标志的命令。  
@@ -94,11 +94,11 @@ ms.locfileid: "58936751"
 ### <a name="custom-context-guids"></a>自定义上下文 Guid  
  如果尚未定义 GUID 不适当的命令上下文中，可以定义一个在你的 VSPackage 中，然后编写它是活动或非活动所需控制命令的可见性。 使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>到服务：  
   
--   注册上下文 Guid (通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
+- 注册上下文 Guid (通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>方法)。  
   
--   获取上下文的状态`GUID`(通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
+- 获取上下文的状态`GUID`(通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法)。  
   
--   打开上下文`GUID`s 打开和关闭 (通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
+- 打开上下文`GUID`s 打开和关闭 (通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
   
     > [!CAUTION]
     >  请确保你的 VSPackage 不因为其他 Vspackage 可能依赖于这些影响任何现有上下文 GUID 的状态。  

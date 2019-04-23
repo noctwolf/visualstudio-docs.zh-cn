@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e56cf1bcd061ba38d2855c2c8841b410e68032b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050565"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,20 +52,20 @@ ms.locfileid: "58935515"
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>重命名 Class1.vb 并添加 Microsoft.VisualStudio.DebuggerVisualizers  
   
-1.  在“解决方案资源管理器”中，右键单击“Class1.vb”，然后在快捷菜单上单击“重命名”。  
+1. 在“解决方案资源管理器”中，右键单击“Class1.vb”，然后在快捷菜单上单击“重命名”。  
   
-2.  将名称从 Class1.vb 更改为有意义的名称，例如 DebuggerSide.vb。  
+2. 将名称从 Class1.vb 更改为有意义的名称，例如 DebuggerSide.vb。  
   
     > [!NOTE]
     >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动更改 DebuggerSide.vb 中的类声明，以便与新文件名匹配。  
   
-3.  在“解决方案资源管理器”中，右键单击“My First Visualizer”，然后在快捷菜单上单击“添加引用”。  
+3. 在“解决方案资源管理器”中，右键单击“My First Visualizer”，然后在快捷菜单上单击“添加引用”。  
   
-4.  在“添加引用”对话框中的“.NET”选项卡上，单击“Microsoft.VisualStudio.DebuggerVisualizers.DLL”。  
+4. 在“添加引用”对话框中的“.NET”选项卡上，单击“Microsoft.VisualStudio.DebuggerVisualizers.DLL”。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
-6.  在 DebuggerSide.vb 中，将以下语句添加到 `Imports` 语句中：  
+6. 在 DebuggerSide.vb 中，将以下语句添加到 `Imports` 语句中：  
   
     ```  
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
@@ -105,13 +105,13 @@ ms.locfileid: "58935515"
   
 #### <a name="to-add-systemwindowsforms"></a>添加 System.Windows.Forms  
   
-1.  在“解决方案资源管理器”中，右键单击“引用”，然后在快捷菜单上单击“添加引用”。  
+1. 在“解决方案资源管理器”中，右键单击“引用”，然后在快捷菜单上单击“添加引用”。  
   
-2.  在“添加引用”对话框中的“.NET”选项卡上，单击“System.Windows.Forms”。  
+2. 在“添加引用”对话框中的“.NET”选项卡上，单击“System.Windows.Forms”。  
   
-3.  单击 **“确定”**。  
+3. 单击 **“确定”**。  
   
-4.  在 DebuggerSide.cs 中，将下面的语句添加到 `Imports` 语句中：  
+4. 在 DebuggerSide.cs 中，将下面的语句添加到 `Imports` 语句中：  
   
     ```  
     Imports System.Windows.Forms  
@@ -122,7 +122,7 @@ ms.locfileid: "58935515"
   
 #### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>在对话框中显示可视化工具输出  
   
-1.  在 `Show` 方法中，添加以下代码行：  
+1. 在 `Show` 方法中，添加以下代码行：  
   
     ```  
     MessageBox.Show(objectProvider.GetObject().ToString())  
@@ -130,20 +130,20 @@ ms.locfileid: "58935515"
   
      此代码示例中不包含错误处理。 但在实际的可视化工具或任何其他类型的应用程序中，应当包含错误处理。  
   
-2.  在“生成”菜单上，单击“生成 MyFirstVisualizer”。 该项目应能成功生成。 在继续前更正所有生成错误。  
+2. 在“生成”菜单上，单击“生成 MyFirstVisualizer”。 该项目应能成功生成。 在继续前更正所有生成错误。  
   
 ## <a name="add-the-necessary-attribute"></a>添加必需特性  
  这是调试器端代码的结尾部分。 但是还有一步操作：添加用于通知调试对象端哪些类集合构成可视化工具的特性。  
   
 #### <a name="to-add-the-debugee-side-code"></a>添加调试对象端代码  
   
-1.  在 DebuggerSide.vb 中的 `Imports` 语句之后但在 `namespace MyFirstVisualizer` 之前，添加以下特性代码：  
+1. 在 DebuggerSide.vb 中的 `Imports` 语句之后但在 `namespace MyFirstVisualizer` 之前，添加以下特性代码：  
   
     ```  
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  在“生成”菜单上，单击“生成 MyFirstVisualizer”。 该项目应能成功生成。 在继续前更正所有生成错误。  
+2. 在“生成”菜单上，单击“生成 MyFirstVisualizer”。 该项目应能成功生成。 在继续前更正所有生成错误。  
   
 ## <a name="create-a-test-harness"></a>创建测试套  
  这时，第一个可视化工具就完成了。 如果您已正确地按照每一步操作，您可以生成该可视化工具，并将其安装到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。 但在将可视化工具安装到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中之前，应对其进行测试以确保它能够正常运行。 你现在将创建一个测试套以在没有将可视化工具安装到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的情况下运行它。  
@@ -177,17 +177,17 @@ ms.locfileid: "58935515"
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>添加对 MyTestConsole 的必需引用  
   
-1.  在“解决方案资源管理器”中右键单击“MyTestConsole”，然后在快捷菜单上单击“添加引用”。  
+1. 在“解决方案资源管理器”中右键单击“MyTestConsole”，然后在快捷菜单上单击“添加引用”。  
   
-2.  在“添加引用”对话框中的“.NET”选项卡上，单击“Microsoft.VisualStudio.DebuggerVisualizers”。  
+2. 在“添加引用”对话框中的“.NET”选项卡上，单击“Microsoft.VisualStudio.DebuggerVisualizers”。  
   
-3.  单击 **“确定”**。  
+3. 单击 **“确定”**。  
   
-4.  右键单击“MyTestConsole”，然后单击“添加引用”。  
+4. 右键单击“MyTestConsole”，然后单击“添加引用”。  
   
-5.  在“添加引用”对话框中单击“项目”选项卡，然后选择“MyFirstVisualizer”。  
+5. 在“添加引用”对话框中单击“项目”选项卡，然后选择“MyFirstVisualizer”。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>完成测试套并测试可视化工具  
  现在，你将添加代码以完成测试套。  

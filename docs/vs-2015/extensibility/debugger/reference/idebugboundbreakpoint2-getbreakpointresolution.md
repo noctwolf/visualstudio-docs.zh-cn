@@ -13,12 +13,12 @@ ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaae4fcf52beccabadfa8abd4800c2e96698c42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 134b4e2d58b0581a14d387e8601cc0bdc57cb56b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089245"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ int GetBreakpointResolution( 
  `ppBPResolution`  
  [out]返回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)接口，表示以下值之一：  
   
--   断点解析对象，描述代码中绑定一个代码断点的位置。  
+- 断点解析对象，描述代码中绑定一个代码断点的位置。  
   
--   数据断点已绑定到的位置数据位置。  
+- 数据断点已绑定到的位置数据位置。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果绑定的断点对象的状态设置为`BPS_DELETED`(属于[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚举)。  

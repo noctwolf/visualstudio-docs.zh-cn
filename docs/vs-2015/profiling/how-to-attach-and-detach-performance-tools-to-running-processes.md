@@ -17,14 +17,14 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095733"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：在正在运行的进程中附加和分离性能工具
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：附加和分离性能工具正在运行的进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 探查器可用于附加到运行中的进程或从运行中的进程分离，以更轻松地进行采样和收集性能数据。 在想要避免收集有关应用程序加载时间的数据，或在进程达到某一特定状态后监视其性能时，可使用此方法分析进程。  
@@ -44,7 +44,7 @@ ms.locfileid: "54762430"
   
 ### <a name="to-attach-to-a-running-process"></a>附加到正在运行的进程  
   
-1.  在“分析”菜单上，指向“探查器”，然后单击“附加/分离”。  
+1. 在“分析”菜单上，指向“探查器”，然后单击“附加/分离”。  
   
      \- 或 -  
   
@@ -52,13 +52,13 @@ ms.locfileid: "54762430"
   
      将出现“将探查器附加到进程”对话框。  
   
-2.  单击要附加到的进程的名称。  
+2. 单击要附加到的进程的名称。  
   
-3.  单击 **“附加”**。  
+3. 单击 **“附加”**。  
   
 ### <a name="to-detach-from-a-running-process"></a>从运行中的进程分离  
   
-1.  在“分析”菜单上，指向“探查器”，然后单击“附加/分离”。  
+1. 在“分析”菜单上，指向“探查器”，然后单击“附加/分离”。  
   
      \- 或 -  
   
@@ -66,9 +66,9 @@ ms.locfileid: "54762430"
   
      将出现“将探查器附加到进程”对话框。  
   
-2.  单击要从中分离的映像名称。  
+2. 单击要从中分离的映像名称。  
   
-3.  单击“分离”。  
+3. 单击“分离”。  
   
 ## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   

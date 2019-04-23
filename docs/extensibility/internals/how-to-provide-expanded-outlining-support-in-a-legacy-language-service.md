@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4da92ce51af2165f6754ee5959fb78d31d260e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dfa2b4f659fc33a9a651d750cbd1b844a04f67a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634378"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105378"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何：提供旧版语言服务中的展开大纲显示支持
 有两个选项用于扩展对你超出支持的语言的大纲显示支持**折叠到定义**命令。 可以添加控制编辑器的大纲区域，并添加客户端控制大纲区域。
@@ -27,15 +27,15 @@ ms.locfileid: "56634378"
 
 ### <a name="to-implement-an-editor-controlled-outline-region"></a>若要实现控制编辑器的大纲区域
 
-1.  调用`QueryService`为 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. 调用`QueryService`为 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
      这将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。
 
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>、 传入针对给定的文本缓冲区的指针。 这将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>缓冲区的对象。
+2. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>、 传入针对给定的文本缓冲区的指针。 这将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>缓冲区的对象。
 
-3.  调用<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>指向的指针为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>。
+3. 调用<xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A>上<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>指向的指针为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>。
 
-4.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>以添加一个或更多新一次大纲区域。
+4. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>以添加一个或更多新一次大纲区域。
 
      此方法允许您指定的文本轮廓，现有的大纲区域是删除还是保留，和大纲区域是展开还是折叠默认情况下是否的跨度。
 
@@ -44,13 +44,13 @@ ms.locfileid: "56634378"
 
 ### <a name="to-implement-a-client-controlled-outline-region"></a>若要实现客户端控制大纲区域
 
-1.  调用`QueryService`为<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>。 这将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。
+1. 调用`QueryService`为<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>。 这将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>。
 
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>、 传入针对给定的文本缓冲区的指针。 这将确定是否隐藏的文本已存在的会话的缓冲区。
+2. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>、 传入针对给定的文本缓冲区的指针。 这将确定是否隐藏的文本已存在的会话的缓冲区。
 
-3.  如果文本会话已存在，则不需要创建一个，并指向现有<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>返回对象。 使用此指针来枚举和创建大纲区域。 否则，调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>创建隐藏的文本，会话的缓冲区。 一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>返回对象。
+3. 如果文本会话已存在，则不需要创建一个，并指向现有<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>返回对象。 使用此指针来枚举和创建大纲区域。 否则，调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>创建隐藏的文本，会话的缓冲区。 一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>返回对象。
 
     > [!NOTE]
     >  当您调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>，可以指定一个隐藏的文本，客户端 (即，<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>对象)。 此客户端会通知你时隐藏文本或大纲区域是展开还是折叠的用户。
 
-4.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>结构) 参数：指定的值<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>中`iType`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构，以指示要创建大纲区域，而不是隐藏的区域。 指定区域是否受客户端管理，或以编辑器控制`dwBehavior`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构。 智能的大纲显示实现可以混合的编辑器和客户端控制大纲区域。 指定大纲区域处于折叠状态时，如"..."，在显示的横幅文本`pszBanner`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构。 隐藏区域的编辑器的默认横幅文本为"..."。
+4. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>结构) 参数：指定的值<xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE>中`iType`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构，以指示要创建大纲区域，而不是隐藏的区域。 指定区域是否受客户端管理，或以编辑器控制`dwBehavior`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构。 智能的大纲显示实现可以混合的编辑器和客户端控制大纲区域。 指定大纲区域处于折叠状态时，如"..."，在显示的横幅文本`pszBanner`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构。 隐藏区域的编辑器的默认横幅文本为"..."。

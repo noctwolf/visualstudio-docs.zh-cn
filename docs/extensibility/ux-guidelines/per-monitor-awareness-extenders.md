@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4d9afdfcc221e8f07bae7d4bbf7dee57dda31f
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099385"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 扩展程序的每个监视器感知功能支持
 Visual Studio 2019 之前的版本必须设置为系统识别，而不是按监视器 DPI 感知 (PMA) 其 DPI 感知上下文。 运行中系统识别导致降级视觉对象体验 （例如模糊字体或图标），只要 Visual Studio 必须呈现跨具有不同的缩放比例或远程监视器到具有不同的显示配置的计算机例如 （不同Windows 扩展的)。
@@ -39,11 +39,14 @@ Visual Studio 2019 DPI 感知上下文设置为 PMA，当环境支持此功能�
 
 ## <a name="enabling-pma"></a>启用 PMA
 若要启用 PMA Visual Studio 中的，需要满足以下要求：
-1)  Windows 10 2018 年 4 月更新 (v1803，RS4) 或更高版本
-2)  .NET framework 4.8 RTM 或更高版本 （当前为独立预览或使用最新的捆绑包随附于 Windows 会员版本）
-3)  使用 visual Studio 2019 ["具有不同像素密度屏幕的优化呈现"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019)选项处于启用状态
+1) Windows 10 2018 年 4 月更新 (v1803，RS4) 或更高版本
+2) .NET framework 4.8 RTM 或更高版本
+3) 使用 visual Studio 2019 ["具有不同像素密度屏幕的优化呈现"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019)选项处于启用状态
 
 一旦满足这些要求，则 Visual Studio 将自动启用 PMA 模式整个过程。
+
+> [!NOTE]
+> 仅当具有 Visual Studio 2019 Update #1 时，VS （例如属性浏览器） 中的 Windows 窗体内容将支持 PMA。
 
 ## <a name="testing-your-extensions-for-pma-issues"></a>测试你的扩展 PMA 问题
 
@@ -106,12 +109,18 @@ IntPtr monitor = MonitorFromPoint(screenIntTopRight, MONITOR_DEFAULTTONEARST);
 #### <a name="out-of-process-ui"></a>进程外 UI
 一些 UI 创建扩展的进程，如果创建外部过程在比 Visual Studio 不同 DPI 感知模式下，这可能会带来的任何以前的呈现问题。
 
-#### <a name="windows-forms-controls-images-or-windows-not-displaying"></a>Windows 窗体控件、 图像或 windows 未显示
+#### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Windows 窗体控件、 图像或未正确呈现的布局
+并非所有的 Windows 窗体内容支持 PMA 模式。 因此，可能会看到呈现问题不正确的布局或缩放。 可能的解决方案在这种情况下是以显式呈现在"系统识别"DpiAwarenessContext 中的 Windows 窗体内容 (请参阅[到特定 DpiAwarenessContext 强制控件](#forcing-a-control-into-a-specific-dpiawarenesscontext))。
+
+#### <a name="windows-forms-controls-or-windows-not-displaying"></a>Windows 窗体控件或 windows 未显示
 此问题的主要原因之一是开发人员尝试重新设置父级控件或具有一个 DpiAwarenessContext 到窗口与不同 DpiAwarenessContext 窗口。
 
-下图显示作为父级 windows 中的当前 Windows 操作系统限制：
+下图显示当前**默认**中作为父级 windows 的 Windows 操作系统限制：
 
 ![正确设置父级行为的屏幕截图](../../extensibility/ux-guidelines/media/PMA-parenting-behavior.PNG)
+
+> [!Note]
+> 您可以通过设置线程承载行为更改此行为 (请参阅[DpiHostinBehaviour](https://docs.microsoft.com/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior))。
 
 因此，如果设置不受支持模式之间的父子关系，它将失败，并且控件或窗口可能不会按预期方式呈现。
 
@@ -194,6 +203,7 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 如果要迁移非 WPF 工具窗口以完全支持 PMA，它将需要选择退出 CLMM。 若要执行此操作，需要实现的新接口：IVsDpiAware。
 
 C#：
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -204,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++：
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -236,6 +247,7 @@ enum __VSDPIMODE
 未在更新以支持 PMA 模式的旧 UI 可能仍需要在 PMA 模式下运行 Visual Studio 期间的细微调整。 一个此类修补程序需确保在正确 DpiAwarenessContext 中创建 UI。 若要强制转到特定 DpiAwarenessContext UI，可以输入下面的代码具有的 DPI 作用域：
 
 C#：
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -245,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++：
+
 ```cpp
 void MyClass::ShowDialog()
 {

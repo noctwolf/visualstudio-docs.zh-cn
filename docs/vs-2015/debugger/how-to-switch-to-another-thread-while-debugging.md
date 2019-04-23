@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5fa84d46d64db048b58d0fcdb1c433b4830a5f45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58931696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052436"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging"></a>如何：调试时切换到另一个线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +30,19 @@ ms.locfileid: "58931696"
   
 ### <a name="to-switch-to-any-thread-that-appears-in-the-threads-window"></a>切换至“线程”窗口中显示的任何线程  
   
--   双击线程。  
+- 双击线程。  
   
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>切换至源窗口中的线程  
   
--   在左侧的槽中，右击线程指示符，指向**切换到**，然后单击你想要切换的线程的名称。 快捷菜单仅显示该特定位置的线程。  
+- 在左侧的槽中，右击线程指示符，指向**切换到**，然后单击你想要切换的线程的名称。 快捷菜单仅显示该特定位置的线程。  
   
      如果没有指示器显示，请右键单击**线程**窗口，并验证**在源中显示线程**处于选中状态。  
   
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>切换到“调试位置”工具栏中的线程  
   
-1.  上**调试位置**工具栏上，单击**线程**框。  
+1. 上**调试位置**工具栏上，单击**线程**框。  
   
-2.  在列表中，单击要切换到的线程。  
+2. 在列表中，单击要切换到的线程。  
   
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)

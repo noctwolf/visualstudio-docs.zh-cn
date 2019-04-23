@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092275"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
@@ -26,7 +26,7 @@ ms.locfileid: "56796551"
 > [!TIP]
 > 如果只想让实时调试器对话框停止显示，而不安装 Visual Studio，请参阅[禁用实时调试器](../debugger/just-in-time-debugging-in-visual-studio.md)。 如果已安装 Visual Studio，可能需要[从 Windows 注册表禁用实时调试](#disable-just-in-time-debugging-from-the-windows-registry)。
 
-##  <a name="BKMK_Enabling"></a> 在 Visual Studio 中启用或禁用实时调试
+## <a name="BKMK_Enabling"></a> 在 Visual Studio 中启用或禁用实时调试
 
 >[!NOTE]
 >若要启用或禁用实时调试，必须以管理员身份运行 Visual Studio。 启用或禁用实时调试会设置一个注册表项，可能需要管理员权限来更改此注册表项。 若要以管理员身份打开 Visual Studio，右键单击 Visual Studio 应用程序，然后选择**以管理员身份运行**。
@@ -39,9 +39,9 @@ ms.locfileid: "56796551"
 
    ![启用或禁用 JIT 调试](../debugger/media/dbg-jit-enable-or-disable.png "启用或禁用 JIT 调试")
 
-1. 在“为这些类型的代码启用实时调试”框中，选择希望通过实时调试进行调试的代码类型：“托管”、“本机”和/或“脚本”。
+1. 在中**启用实时调试对这些类型的代码**框中，选择你希望在实时调试来调试的代码的类型：**托管**，**本机**，和/或**脚本**。
 
-1. 选择“确定”。
+1. 选择 **确定**。
 
 如果启用了实时调试器，但它并未在应用程序崩溃或出错时打开，请参阅[实时调试疑难解答](#jit_errors)。
 
@@ -51,25 +51,25 @@ ms.locfileid: "56796551"
 
 **若要通过编辑注册表禁用实时调试，请执行以下操作：**
 
-1.  从 Windows“开始”菜单，运行“注册表编辑器”(regedit.exe)。
+1. 从 Windows“开始”菜单，运行“注册表编辑器”(regedit.exe)。
 
-2.  在中**注册表编辑器**窗口中，找到并删除以下注册表项：
+2. 在中**注册表编辑器**窗口中，找到并删除以下注册表项：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![JIT 注册表项](../debugger/media/dbg-jit-registry.png "JIT 注册表项")
 
-3.  如果您的计算机正在运行 64 位操作系统，也删除以下注册表项：
+3. 如果您的计算机正在运行 64 位操作系统，也删除以下注册表项：
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     请确保不能删除或更改任何其他注册表项。
 
-5.  关闭**注册表编辑器**窗口。
+5. 关闭**注册表编辑器**窗口。
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>启用 Windows 窗体的实时调试
 
@@ -79,7 +79,7 @@ ms.locfileid: "56796551"
 
 若要启用实时调试而不是标准 Windows 窗体错误处理，请添加以下设置：
 
--  在 machine.config 或 \<应用名称>.exe.config 文件的 `system.windows.forms` 部分中，将 `jitDebugging` 值设置为 `true`****:
+- 在 machine.config 或 \<应用名称>.exe.config 文件的 `system.windows.forms` 部分中，将 `jitDebugging` 值设置为 `true`****:
 
     ```xml
     <configuration>
@@ -87,24 +87,24 @@ ms.locfileid: "56796551"
     </configuration>
     ```
 
--  在 C++ 窗体应用程序中，还要在 *.config* 文件或代码中将 `DebuggableAttribute` 设置为 `true`。 如果使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而不使用 [/Og](/cpp/build/reference/og-global-optimizations) 进行编译，则编译器会替你设置此属性。 但是，如果要调试非优化发布版本，则必须通过在应用的 AssemblyInfo.cpp 文件中添加以下行来设置 `DebuggableAttribute` ：
+- 在 C++ 窗体应用程序中，还要在 *.config* 文件或代码中将 `DebuggableAttribute` 设置为 `true`。 如果使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而不使用 [/Og](/cpp/build/reference/og-global-optimizations) 进行编译，则编译器会替你设置此属性。 但是，如果要调试非优化发布版本，则必须通过在应用的 AssemblyInfo.cpp 文件中添加以下行来设置 `DebuggableAttribute` ：
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
 
-   有关更多信息，请参见<xref:System.Diagnostics.DebuggableAttribute>。
+   有关详细信息，请参阅 <xref:System.Diagnostics.DebuggableAttribute>。
 
 ## <a name="BKMK_Using_JIT"></a>使用实时调试
- 此示例演示在应用引发错误时如何进行实时调试。
+此示例演示在应用引发错误时如何进行实时调试。
 
- - 必须安装 Visual Studio，才能按照以下步骤操作。 如果未安装 Visual Studio，则可以免费下载 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
+- 必须安装 Visual Studio，才能按照以下步骤操作。 如果未安装 Visual Studio，则可以免费下载 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
 
- - 请务必依次选择“工具” > “选项” > “调试” > “实时”，[启用](#BKMK_Enabling)实时调试。
+- 请务必依次选择“工具” > “选项” > “调试” > “实时”，[启用](#BKMK_Enabling)实时调试。
 
 本示例会在 Visual Studio 中创建 C# 控制台应用，该应用可引发 [NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
-1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练： 创建简单应用程序](/visualstudio/get-started/csharp/tutorial-wpf)。
+1. 在 Visual Studio 中，创建C#控制台应用程序 (**文件** > **新建** > **项目** > **Visual C#**   > **控制台应用程序**) 名为*ThrowsNullException*。 在 Visual Studio 中创建项目的详细信息，请参阅[演练：创建简单应用程序](/visualstudio/get-started/csharp/tutorial-wpf)。
 
 1. 在 Visual Studio 中打开项目时，请打开 *Program.cs* 文件。 将 Main() 方法替换为以下代码，该代码会在控制台中打印一行，然后引发 NullReferenceException：
 
@@ -136,7 +136,7 @@ ms.locfileid: "56796551"
 
    在“可用调试器”下，选择“\<首选 Visual Studio 版本>的新实例”（如果尚未选择）。
 
-1. 选择“确定”。
+1. 选择 **确定**。
 
    ThrowsNullException 项目会在 Visual Studio 的新实例中打开，并在引发异常的代码行处停止执行：
 
@@ -157,7 +157,7 @@ ms.locfileid: "56796551"
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows 错误报告**
 
-  - （适用于 64 位计算机）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows 错误报告**
+  - （对于 64 位计算机）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   有关详细信息，请参阅 [.WER 设置](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
 
@@ -167,7 +167,7 @@ ms.locfileid: "56796551"
 
   - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
-  - （适用于 64 位计算机）： **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
+  - （对于 64 位计算机）：**HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
 您可能会看到以下错误消息过程中实时调试：
 

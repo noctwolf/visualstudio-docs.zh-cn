@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194688"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857159"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理与 Azure 帐户关联的资源
 
@@ -24,11 +24,11 @@ ms.locfileid: "58194688"
 
 ## <a name="prerequisites"></a>系统必备
 
-* Visual Studio 2017 或更高版本（请参阅[Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)），已选择“Azure 工作负载”。 还可以使用带有 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) 的 Visual Studio 早期版本。
+* Visual Studio 2017 或更高版本（请参阅[Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)），已选择“Azure 工作负载”。 还可以使用带有 [Microsoft Azure SDK for .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657) 的 Visual Studio 早期版本。
 * Microsoft Azure 帐户 - 如果没有帐户，可以[注册免费试用帐户](http://go.microsoft.com/fwlink/?LinkId=623901)，或者[激活 Visual Studio 订户权益](http://go.microsoft.com/fwlink/?LinkId=623901)。
 
 > [!NOTE]
-> 若要查看 Cloud Explorer，请按 Ctrl+Q**以调用“快速启动”**，然后输入“Cloud Explorer”。
+> 要查看 Cloud Explorer，请按 Ctrl+Q 激活搜索框，然后输入“Cloud Explorer”。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>将 Azure 帐户添加到 Cloud Explorer
 

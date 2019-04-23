@@ -11,12 +11,12 @@ ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 130d1b6b783a07261b9825c37e21fa2eeb008954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068725"
 ---
 # <a name="test-area-4-check-in"></a>测试区域 4：签入
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58933200"
   
 ## <a name="common-expected-behavior"></a>常见的预期的行为  
   
--   项目和文件添加到解决方案或项目源代码管理下的出现在**签入**对话框和**挂起的签入**窗口。  
+- 项目和文件添加到解决方案或项目源代码管理下的出现在**签入**对话框和**挂起的签入**窗口。  
   
--   在签入后添加的项显示在源代码管理中。  
+- 在签入后添加的项显示在源代码管理中。  
   
--   后签入中，已更新的项目的正确版本控制的存储中。  
+- 后签入中，已更新的项目的正确版本控制的存储中。  
   
 ## <a name="test-cases"></a>测试用例  
  以下是有关签入测试区域的特定测试用例。  

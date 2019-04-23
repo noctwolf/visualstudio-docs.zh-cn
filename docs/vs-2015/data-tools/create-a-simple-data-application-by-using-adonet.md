@@ -14,17 +14,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58933429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047420"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 当你创建操作数据库中的数据的应用程序时，就执行了定义连接字符串、插入数据以及运行存储过程等基本任务。 通过按照本主题，了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 与从简单的 Windows 窗体"forms over data"应用程序中的数据库进行交互。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。  
   
  本文演示了以非常快的方式获取数据，这个数据库的简单方法。 如果你的应用程序需要修改重要的方法中的数据并更新数据库，则应考虑使用实体框架和使用数据绑定，以自动同步到基础数据中的更改的用户界面控件。  
@@ -34,17 +33,17 @@ ms.locfileid: "58933429"
   
  **在本主题中**  
   
--   [设置示例数据库](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [设置示例数据库](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [创建窗体并添加控件](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [创建窗体并添加控件](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [存储连接字符串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [存储连接字符串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [检索连接字符串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [检索连接字符串](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [编写窗体代码](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [编写窗体代码](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [测试应用程序](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [测试应用程序](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>系统必备  
  要创建应用程序，你将需要：  
@@ -59,10 +58,10 @@ ms.locfileid: "58933429"
   
   本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果您不熟悉这些任务，我们建议你先完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)在开始本主题之前。  
   
-##  <a name="BKMK_setupthesampledatabase"></a> 设置示例数据库  
+## <a name="BKMK_setupthesampledatabase"></a> 设置示例数据库  
  本演练的示例数据库由客户和订单表组成。 表最初不包含数据，但你会在运行将创建的应用程序时添加数据。 该数据库中还有五个简单的存储过程。 [通过使用脚本创建 SQL 数据库](../data-tools/create-a-sql-database-by-using-a-script.md)包含创建表、 主键和外键、 约束和存储的过程的 TRANSACT-SQL 脚本。  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> 创建窗体并添加控件  
+## <a name="BKMK_createtheformsandaddcontrols"></a> 创建窗体并添加控件  
   
 1. 为 Windows 窗体应用程序，创建一个项目并将其 SimpleDataApp。  
   
@@ -70,11 +69,11 @@ ms.locfileid: "58933429"
   
 2. 添加两个 Windows 窗体到项目中，以使其具有三个窗体，然后给予它们下列名称：  
   
-   -   导航  
+   - 导航  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. 对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。  
   
@@ -120,33 +119,33 @@ ms.locfileid: "58933429"
 |Button|Name = btnFillOrder|  
 |Button|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> 存储连接字符串  
+## <a name="BKMK_storetheconnectionstring"></a> 存储连接字符串  
  当应用程序尝试打开数据库的连接时，应用程序必须能够访问连接字符串。 若要避免在每个窗体上手动输入该字符串，将字符串存储在应用程序配置文件在项目中，并创建任意窗体应用程序中调用方法将返回字符串的方法。  
   
  您可以发现中的连接字符串**SQL Server 对象资源管理器**通过右键单击数据库，选择**属性**，然后查找 ConnectionString 属性。 使用 Ctrl + A 选择字符串。  
   
-1.  在中**解决方案资源管理器**，选择**属性**节点下的项目，然后选择**Settings.settings**。  
+1. 在中**解决方案资源管理器**，选择**属性**节点下的项目，然后选择**Settings.settings**。  
   
-2.  在中**名称**列中，输入`connString`。  
+2. 在中**名称**列中，输入`connString`。  
   
-3.  在中**类型**列表中，选择 **（连接字符串）**。  
+3. 在中**类型**列表中，选择 **（连接字符串）**。  
   
-4.  在中**作用域**列表中，选择**应用程序**。  
+4. 在中**作用域**列表中，选择**应用程序**。  
   
-5.  在中**值**列中，输入连接字符串 （而无需任何外部引号），然后保存所做的更改。  
+5. 在中**值**列中，输入连接字符串 （而无需任何外部引号），然后保存所做的更改。  
   
 > [!NOTE]
 >  在实际的应用程序，您应在连接字符串，安全地存储中所述[连接字符串和配置文件](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> 检索连接字符串  
+## <a name="BKMK_retrievetheconnectionstring"></a> 检索连接字符串  
   
-1.  在菜单栏上，选择**项目** > **添加引用**，以及如何将对 System.Configuration.dll 的引用。  
+1. 在菜单栏上，选择**项目** > **添加引用**，以及如何将对 System.Configuration.dll 的引用。  
   
-2.  在菜单栏上，选择**项目** > **添加类**若要将类文件添加到你的项目，并随后将文件命名`Utility`。  
+2. 在菜单栏上，选择**项目** > **添加类**若要将类文件添加到你的项目，并随后将文件命名`Utility`。  
   
      Visual Studio 创建该文件并将其显示在**解决方案资源管理器**。  
   
-3.  在 Utility 文件中，使用下列代码替换占位符代码。 请注意标识代码段的编号注释（前缀为 Util-）。 代码后的表明确了要点。  
+3. 在 Utility 文件中，使用下列代码替换占位符代码。 请注意标识代码段的编号注释（前缀为 Util-）。 代码后的表明确了要点。  
   
     ```csharp  
     using System;  
@@ -220,7 +219,7 @@ ms.locfileid: "58933429"
     |Util-2|定义变量 `returnValue`，并将其初始化为 `null` (C#) 或 `Nothing` (Visual Basic)。|  
     |Util-3|即使输入`connString`中的连接字符串的名称作为**属性**窗口中，必须指定`"SimpleDataApp.Properties.Settings.connString"`(C#) 或`"SimpleDataApp.My.MySettings.connString"`(Visual Basic) 代码中。|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> 编写窗体代码  
+## <a name="BKMK_writethecodefortheforms"></a> 编写窗体代码  
  本节包含对每个窗体功能的简要概述，并显示创建窗体的代码。 标识代码段的编号注释。  
   
 ### <a name="navigation-form"></a>Navigation 窗体  
@@ -1140,5 +1139,5 @@ End Namespace
 |FC-8|将代码添加到 `btnFillOrder` 的 Click 事件处理程序。 此代码运行 `Sales.uspFillOrder` 存储过程。|  
 |FC-9|创建一个方法来确认`OrderID`已准备好将作为参数提交`SqlCommand`对象。<br /><br /> -请确保 ID 已进入`txtOrderID`。<br />-使用`Regex.IsMatch`来定义非整数字符的简单检查。<br />-你声明`parsedOrderID`在 fc-2 变量。<br />-如果输入是有效的将文本转换为整数，并将存储中的值`parsedOrderID`变量。<br />-包装`isOrderID`方法围绕`btnFindByOrderID`， `btnCancelOrder`，和`btnFillOrder`Click 事件处理程序。|  
   
-##  <a name="BKMK_testyourapplication"></a> 测试应用程序  
+## <a name="BKMK_testyourapplication"></a> 测试应用程序  
  选择 F5 键以生成和测试后代码单击每个事件处理程序，你的应用程序，然后在完成编码。

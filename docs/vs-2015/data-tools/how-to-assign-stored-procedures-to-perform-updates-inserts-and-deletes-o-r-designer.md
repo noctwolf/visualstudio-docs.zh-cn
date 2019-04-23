@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060860"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可以将存储过程添加到 O/R 设计器并作为典型的 <xref:System.Data.Linq.DataContext> 方法执行。 将更改从实体类保存到数据库时（例如在调用 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 方法时），还可以使用存储过程重写执行插入、更新和删除操作的默认 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 运行时行为。  
   
 > [!NOTE]
@@ -35,23 +34,23 @@ ms.locfileid: "58934836"
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>指定存储过程以重写实体类的默认行为  
   
-1.  在设计器中打开“LINQ to SQL”文件。 (双击.dbml 文件中的**解决方案资源管理器**。)  
+1. 在设计器中打开“LINQ to SQL”文件。 (双击.dbml 文件中的**解决方案资源管理器**。)  
   
-2.  在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**并找到想要用于插入、 更新、 存储的过程和/或删除的实体类的命令。  
+2. 在中**服务器资源管理器**/**数据库资源管理器**，展开**存储过程**并找到想要用于插入、 更新、 存储的过程和/或删除的实体类的命令。  
   
-3.  将该存储过程拖到 O/R 设计器上。  
+3. 将该存储过程拖到 O/R 设计器上。  
   
      该存储过程将作为 <xref:System.Data.Linq.DataContext> 方法添加到方法窗格中。 有关详细信息，请参阅[DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)。  
   
-4.  选择要使用存储过程对其执行更新的实体类。  
+4. 选择要使用存储过程对其执行更新的实体类。  
   
-5.  在“属性”窗口中选择要替代的命令（“插入”、“更新”或“删除”）。  
+5. 在“属性”窗口中选择要替代的命令（“插入”、“更新”或“删除”）。  
   
-6.  单击“使用运行时”旁边的省略号 (...) 以打开“配置行为”对话框。  
+6. 单击“使用运行时”旁边的省略号 (...) 以打开“配置行为”对话框。  
   
-7.  选择“自定义”。  
+7. 选择“自定义”。  
   
-8.  在“自定义”列表中选择所需的存储过程。  
+8. 在“自定义”列表中选择所需的存储过程。  
   
 9. 检查“方法自变量”和“类属性”列表以验证“方法自变量”是否映射到相应的“类属性”。 映射原始方法自变量 (Original_*ArgumentName*) 到原始属性 (*PropertyName* （原始）) 的 Update 和 Delete 命令。  
   

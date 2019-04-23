@@ -13,17 +13,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81532137b98b415a598a2770b19c3df8ce14f135
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794405"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666463"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>选项，文本编辑器，JavaScript，格式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“选项”对话框的“格式设置”页在代码编辑器中设置用于代码格式设置的选项。 若要访问此页，请在菜单栏上选择“工具”、“选项”，然后依次展开“文本编辑器”、“JavaScript”和“格式设置”。  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
@@ -33,7 +32,7 @@ ms.locfileid: "54794405"
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |**按 Enter 时设置已完成行的格式**|选择此选项后，如果按 Enter 键，代码编辑器会自动设置该行的格式。|  
 |**输入 ; 时设置已完成语句的格式**|选择此选项后，如果按分号键，代码编辑器会自动设置该行的格式。|  
@@ -45,7 +44,7 @@ ms.locfileid: "54794405"
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |**将函数的左大括号置于新行**|选择此选项后，代码编辑器会将与函数关联的左大括号移动到新行。|  
 |**将控制块的左大括号置于新行**|选择此选项后，代码编辑器会将与控制块（例如，`if` 和 `while` 控制块）关联的左大括号移动到新行。|  
@@ -55,7 +54,7 @@ ms.locfileid: "54794405"
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
-|选项|说明​​|  
+|选项|说明|  
 |------------|-----------------|  
 |**在逗号分隔符后插入空格**|选择此选项后，代码编辑器会在逗号分隔符后添加空格。|  
 |**在“for”语句中的分号后插入空格**|选择此选项后，代码编辑器会在 `for` 循环首行的每个分号后添加一个空格。|  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061575"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何：创建映射到表和视图的 LINQ to SQL 类（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ LINQ to SQL 类映射到数据库表和视图称为*实体类*。 实体类映�
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>创建映射到数据库表或视图的 LINQ to SQL 类
 
-1.  在中**服务器**/**数据库资源管理器**，展开**表**或**视图**和找到的数据库表或视图所需若要在你的应用程序中使用。
+1. 在中**服务器**/**数据库资源管理器**，展开**表**或**视图**和找到的数据库表或视图所需若要在你的应用程序中使用。
 
-2.  将该表或视图拖动到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上。
+2. 将该表或视图拖动到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]上。
 
      一个实体类将创建并显示在设计图面上。 该实体类的属性映射到所选表或视图中的列。
 
@@ -43,22 +43,22 @@ LINQ to SQL 类映射到数据库表和视图称为*实体类*。 实体类映�
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>创建基于 LINQ to SQL 实体类的对象数据源
 
-1.  在“生成”菜单中，单击“生成解决方案”以生成项目。
+1. 在“生成”菜单中，单击“生成解决方案”以生成项目。
 
-2.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
+2. 在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
-3.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
+3. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
-4.  单击“选择数据源类型”页上的“对象”，然后单击“下一步”。
+4. 单击“选择数据源类型”页上的“对象”，然后单击“下一步”。
 
-5.  展开节点，然后找到并选择您的类。
+5. 展开节点，然后找到并选择您的类。
 
     > [!NOTE]
     > 如果“Customer”类不可用，则退出向导，生成项目，然后重新运行向导。
 
-6.  单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。
+6. 单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。
 
-7.  将项从“数据源”窗口拖动到窗体。
+7. 将项从“数据源”窗口拖动到窗体。
 
 ## <a name="see-also"></a>请参阅
 

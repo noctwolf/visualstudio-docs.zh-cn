@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105054"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 互操作程序集参数封送处理
 在托管代码中编写 Vspackage 可能需要调用或是由非托管 COM 代码进行调用。 通常情况下，转换，或自动封送，互操作封送处理程序方法自变量。 但是，有时参数无法转换直接的方式。 在这些情况下，互操作程序集方法原型参数用于尽可能接近地匹配 COM 函数参数。 有关详细信息，请参阅[互操作封送处理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
@@ -28,11 +28,11 @@ ms.locfileid: "58930604"
   
  每个方法的参考文档包含三个相关部分：  
   
--   [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 函数原型。  
+- [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] COM 函数原型。  
   
--   互操作程序集方法原型。  
+- 互操作程序集方法原型。  
   
--   COM 参数和每个的简短说明的列表。  
+- COM 参数和每个的简短说明的列表。  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>查找两个原型之间的差异  
  大多数互操作性问题派生的 COM 接口中的特定类型的定义中的相同类型的定义之间的不匹配[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]互操作程序集。 例如，请考虑将传递的功能中的不同`null`[out] 参数中的值。 必须查找两个原型之间的差异，并考虑其后果所传递的数据。  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  已知以下方法传递`IUnknown`作为类型对象的指针<xref:System.IntPtr>。 在本部分中所述处理它们。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>[Out] 参数可选  
  查找定义作为 [out] 参数的数据类型 (`int`， `object`，依次类推) 在 COM 接口，但被定义为数组中的相同数据类型[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]互操作程序集方法原型。  

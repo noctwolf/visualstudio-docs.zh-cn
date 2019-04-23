@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8868ef00c9d7ffee7687970c5a09b6a044c85455
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107354"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何：将数据文件包括到 ClickOnce 应用程序中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,25 +65,25 @@ ms.locfileid: "58931497"
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要通过使用 MageUI.exe 中包含的数据文件  
   
-1.  将数据文件添加到你的应用程序目录与应用程序的文件的其余部分。  
+1. 将数据文件添加到你的应用程序目录与应用程序的文件的其余部分。  
   
-2.  通常情况下，在应用程序目录将标记为部署的当前版本的目录 — 例如，v1.0.0.0。  
+2. 通常情况下，在应用程序目录将标记为部署的当前版本的目录 — 例如，v1.0.0.0。  
   
-3.  上**文件**菜单上，单击**打开**以打开应用程序清单。  
+3. 上**文件**菜单上，单击**打开**以打开应用程序清单。  
   
-4.  选择**文件**选项卡。  
+4. 选择**文件**选项卡。  
   
-5.  在选项卡顶部的文本框中，输入包含应用程序的文件的目录，然后单击**Populate**。  
+5. 在选项卡顶部的文本框中，输入包含应用程序的文件的目录，然后单击**Populate**。  
   
      你的数据文件会在网格中显示。  
   
-6.  设置**文件类型**的数据文件的值**数据**。  
+6. 设置**文件类型**的数据文件的值**数据**。  
   
-7.  保存应用程序清单，然后重新登录该文件。  
+7. 保存应用程序清单，然后重新登录该文件。  
   
      MageUI.exe 将提示您重新对文件进行签名。  
   
-8.  部署清单重新签名  
+8. 部署清单重新签名  
   
      因为它的应用程序清单的哈希已更改，必须重新签名部署清单。  
   

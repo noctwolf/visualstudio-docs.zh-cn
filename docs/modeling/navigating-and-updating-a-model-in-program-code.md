@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af0bd2c315114444057ca05e9bb85691fe72e966
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 15725508059dbd1c11d9abe1dfcd42d170d24b47
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097760"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
 可以编写代码来创建和删除模型元素、 设置其属性，并创建和删除元素之间的链接。 必须在事务中进行所有更改。 如果元素关系图上查看、 关系图将""自动更正该事务结束时。
 
-##  <a name="example"></a> 示例 DSL 定义
+## <a name="example"></a> 示例 DSL 定义
  这是 DslDefinition.dsl 有关本主题中示例的主要部分：
 
  ![DSL 定义关系图&#45;王朝家谱模型](../modeling/media/familyt_person.png)
@@ -40,7 +40,7 @@ ms.locfileid: "58416231"
 
  此外，如果您正在从在其中定义 DSL 的一个不同的项目中编写代码，应导入生成的 Dsl 项目的程序集。
 
-##  <a name="navigation"></a> 导航模型
+## <a name="navigation"></a> 导航模型
 
 ### <a name="properties"></a>属性
  在 DSL 定义中定义的域属性将成为可以访问程序代码中的属性：
@@ -107,7 +107,7 @@ ms.locfileid: "58416231"
 
  `store.ElementDirectory.GetElement(elementId);`
 
-##  <a name="metadata"></a> 访问类信息
+## <a name="metadata"></a> 访问类信息
  可以获取有关类、 关系和 DSL 定义的其他方面的信息。 例如：
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
@@ -124,11 +124,11 @@ ms.locfileid: "58416231"
 
  模型元素的上级类如下所示：
 
--   模型元素的所有元素和关系是终止其他
+- 模型元素的所有元素和关系是终止其他
 
--   ElementLink-所有关系都是 ElementLinks
+- ElementLink-所有关系都是 ElementLinks
 
-##  <a name="transaction"></a> 执行在事务内的更改
+## <a name="transaction"></a> 执行在事务内的更改
  每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction>。
 
  管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：
@@ -161,7 +161,7 @@ catch (Exception ex)
 
  若要永久所做的更改，您应`Commit`之前被释放的事务。 如果发生在事务内未捕获到异常，存储将重置为其状态之前所做的更改。
 
-##  <a name="elements"></a> 创建模型元素
+## <a name="elements"></a> 创建模型元素
  此示例将元素添加到现有的模型：
 
 ```
@@ -194,38 +194,38 @@ using (Transaction t =
 
   当以这种方式创建一个元素时，形状将自动创建 （如果 DSL 具有关系图）。 它显示在自动分配的位置中，使用默认形状、 颜色和其他功能。 如果你想要控制在何处以及如何显示的相关联的形状，请参阅[创建元素和其形状](#merge)。
 
-##  <a name="links"></a> 创建关系链接
+## <a name="links"></a> 创建关系链接
  有两个示例 DSL 定义中定义的关系。 每个关系定义*角色属性*位于各端的关系类上。
 
  有三种方法可以在其中创建关系的实例。 这三种方法的每个具有相同的效果：
 
 - 设置源角色扮演者的属性。 例如：
 
-  -   `familyTree.People.Add(edward);`
+  - `familyTree.People.Add(edward);`
 
-  -   `edward.Parents.Add(henry);`
+  - `edward.Parents.Add(henry);`
 
 - 设置目标角色扮演者的属性。 例如：
 
-  -   `edward.familyTreeModel = familyTree;`
+  - `edward.familyTreeModel = familyTree;`
 
        此角色的重数为`1..1`，因此我们将值。
 
-  -   `henry.Children.Add(edward);`
+  - `henry.Children.Add(edward);`
 
        此角色的重数为`0..*`，因此我们将添加到集合。
 
 - 显式构造关系的实例。 例如：
 
-  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
+  - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
-  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
+  - `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`
 
   最后一个方法是很有用，如果你想要在关系本身上设置属性。
 
   以这种方式创建元素时，自动创建关系图上的连接器，但它具有默认形状、 颜色和其他功能。 若要控制如何创建关联的连接器，请参阅[创建元素和其形状](#merge)。
 
-##  <a name="deleteelements"></a> 删除元素
+## <a name="deleteelements"></a> 删除元素
 
 通过调用中删除元素`Delete()`:
 
@@ -249,7 +249,7 @@ using (Transaction t =
 
 在某些情况下，删除被禁止的锁，在元素上或将删除传播的元素上存在。 可以使用`element.CanDelete()`来检查是否可以删除该元素。
 
-##  <a name="deletelinks"></a> 删除关系链接
+## <a name="deletelinks"></a> 删除关系链接
  可以通过从角色属性中移除元素删除关系链接：
 
  `henry.Children.Remove(edward); // or:`
@@ -268,7 +268,7 @@ using (Transaction t =
 
  `edward.FamilyTreeModel = anotherFamilyTree;`
 
-##  <a name="reorder"></a> 重新排序关系的链接
+## <a name="reorder"></a> 重新排序关系的链接
  指明其出处或针对特定模型元素的特定关系的链接具有特定的顺序。 它们出现在已添加的顺序。 例如，此语句始终会生成相同的顺序中的子级：
 
  `foreach (Person child in henry.Children) ...`
@@ -285,12 +285,12 @@ using (Transaction t =
 
  `link.MoveBefore(role, nextLink);`
 
-##  <a name="locks"></a> 锁
+## <a name="locks"></a> 锁
  所做的更改可能会受到锁。 单个元素、 分区和存储，可以设置锁。 如果任何这些级别具有阻止你想要进行的更改类型的锁，当你尝试时，可能会引发异常。 您可以发现是否使用元素来设置锁。GetLocks()，命名空间中定义的扩展方法<xref:Microsoft.VisualStudio.Modeling.Immutability>。
 
  有关详细信息，请参阅[到创建只读段定义锁定策略](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。
 
-##  <a name="copy"></a> 复制和粘贴
+## <a name="copy"></a> 复制和粘贴
  可将元素或元素组<xref:System.Windows.Forms.IDataObject>:
 
 ```
@@ -315,7 +315,7 @@ using (Transaction t = targetDiagram.Store.
 
  `Merge ()` 可以接受任一`PresentationElement`或`ModelElement`。 如果为其提供`PresentationElement`，还可以指定一个位置，第三个参数作为目标关系图上。
 
-##  <a name="diagrams"></a> 导航和更新关系图
+## <a name="diagrams"></a> 导航和更新关系图
  在 DSL 中，域模型元素，它表示人员或歌曲等概念，是独立于形状元素，它表示关系图上看到的内容。 域模型元素存储的重要属性和关系的概念。 形状元素存储大小、 位置和颜色的关系图中，该对象的视图和其组件部分的布局。
 
 ### <a name="presentation-elements"></a>表示元素
@@ -337,7 +337,7 @@ using (Transaction t = targetDiagram.Store.
 
  形状可以有两个集的子形状。 中的一个形状`NestedChildShapes`集限制为其父级的边界框。 中的一个形状`RelativeChildShapes`列表可以显示外部或部分父-例如标签或端口范围之外。 关系图不具有`RelativeChildShapes`且未`Parent`。
 
-###  <a name="views"></a> 形状和元素之间导航
+### <a name="views"></a> 形状和元素之间导航
  通过相关域模型元素和形状元素<xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject>关系。
 
 ```csharp
@@ -409,30 +409,30 @@ FamilyTreeDiagram diagram =
 
  --------- *YourConnector*
 
-###  <a name="shapeProperties"></a> 形状和连接线的属性
+### <a name="shapeProperties"></a> 形状和连接线的属性
  在大多数情况下，不需要对形状进行显式更改。 当您更改了模型元素时，"修复"规则更新形状和连接线。 有关详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。
 
  但是，它可用于对独立于模型元素的属性中的形状进行某些显式更改。 例如，可以更改这些属性：
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -确定的高度和宽度的形状。
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> -确定的高度和宽度的形状。
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -位置相对于父形状或关系图
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> -位置相对于父形状或关系图
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -的一笔和画笔用于绘制形状或连接符
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> -的一笔和画笔用于绘制形状或连接符
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -使形状不可见
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> -使形状不可见
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> -使形状后可见 `Hide()`
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> -使形状后可见 `Hide()`
 
-###  <a name="merge"></a> 创建元素和其形状
+### <a name="merge"></a> 创建元素和其形状
 
 当你创建的元素，并将其链接到嵌入关系的树时，形状上自动创建并与之关联。 这是通过在事务结束时执行的"修正"规则。 但是，该形状将显示在自动分配的位置，并且其形状、 颜色和其他功能将具有默认值。 若要控制如何创建形状，可以使用合并功能。 必须先添加你想要添加到 ElementGroup，的元素，然后将该组合并到关系图。
 
 此方法：
 
--   设置名称，如果已分配为元素名称的属性。
+- 设置名称，如果已分配为元素名称的属性。
 
--   观察到 DSL 定义中指定任何元素合并指令。
+- 观察到 DSL 定义中指定任何元素合并指令。
 
 此示例创建一个形状在光标位置，当用户双击关系图。 此示例中，在 DSL 定义中`FillColor`属性的`ExampleShape`已公开。
 
@@ -476,7 +476,7 @@ partial class MyDiagram
 ### <a name="use-transactions"></a>使用事务的事务
  形状、 连接符和关系图是子类型的<xref:Microsoft.VisualStudio.Modeling.ModelElement>和实时存储区中。 仅在事务内，因此必须对其进行更改。 有关详细信息，请参阅[如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
-##  <a name="docdata"></a> 文档视图和文档数据
+## <a name="docdata"></a> 文档视图和文档数据
  ![标准关系图类型的类图](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>存储分区

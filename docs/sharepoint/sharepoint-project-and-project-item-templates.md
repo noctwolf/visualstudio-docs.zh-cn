@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040333"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   以下各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。
@@ -41,17 +41,17 @@ ms.locfileid: "57867868"
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 项目
  内容*SharePoint 2010 项目*都包括在每个 SharePoint 项目模板。 SharePoint 2010 项目包含：
 
--   项目文件。
+- 项目文件。
 
--   项目属性页。
+- 项目属性页。
 
--   一个**引用**其中列出了所有项目中的程序集引用的文件夹。
+- 一个**引用**其中列出了所有项目中的程序集引用的文件夹。
 
--   一个**功能**所在的文件夹 *.feature*用于将功能部署到 SharePoint 服务器的配置文件。
+- 一个**功能**所在的文件夹 *.feature*用于将功能部署到 SharePoint 服务器的配置文件。
 
--   一个**包**所在的文件夹*Package.package*用来将解决方案部署到 SharePoint 的文件。
+- 一个**包**所在的文件夹*Package.package*用来将解决方案部署到 SharePoint 的文件。
 
--   Key.snk （强名称密钥） 文件，用于使用强名称程序集签名的增强的安全性。
+- Key.snk （强名称密钥） 文件，用于使用强名称程序集签名的增强的安全性。
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>SharePoint 2010 Silverlight web 部件
  *SharePoint 2010 Silverlight Web 部件*项目使你创建的 web 部件的 SharePoint 显示 Silverlight 应用程序。 创建此项目时，可以指定是否要添加到该新的 Silverlight 应用程序或引用一个现有。 有关详细信息，请参阅[为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)和[演练：创建显示 SharePoint OData 的 Silverlight web 部件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109252"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 
@@ -40,9 +40,9 @@ ms.locfileid: "55940888"
 
 可以自定义指令处理器的一些示例：
 
--   若要从作为参数接受用户名和密码的数据库中返回的数据指令处理器。
+- 若要从作为参数接受用户名和密码的数据库中返回的数据指令处理器。
 
--   打开和读取文件的指令处理器作为参数接受的文件的名称。
+- 打开和读取文件的指令处理器作为参数接受的文件的名称。
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>自定义指令处理器的主体部分
 
@@ -50,19 +50,19 @@ ms.locfileid: "55940888"
 
 最重要`DirectiveProcessor`必须实现的方法如下所示。
 
--   `bool IsDirectiveSupported(string directiveName)` -返回`true`如果指令处理器可以处理通过命名指令。
+- `bool IsDirectiveSupported(string directiveName)` -返回`true`如果指令处理器可以处理通过命名指令。
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` 模板引擎调用此方法对每个模板中的指令。 您的处理器应该保存结果。
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` 模板引擎调用此方法对每个模板中的指令。 您的处理器应该保存结果。
 
 之后所有调用了 Processdirective 的模板化引擎将调用这些方法：
 
--   `string[] GetReferencesForProcessingRun()` -返回的模板代码需要的程序集的名称。
+- `string[] GetReferencesForProcessingRun()` -返回的模板代码需要的程序集的名称。
 
--   `string[] GetImportsForProcessingRun()` -返回可用的命名空间中的模板代码。
+- `string[] GetImportsForProcessingRun()` -返回可用的命名空间中的模板代码。
 
--   `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可以使用其他声明。 若要执行此操作的最简单方法是构建包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，您可以将语句构造为 CodeDom 树，然后返回序列化该模板使用的语言中的树的结果。
+- `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可以使用其他声明。 若要执行此操作的最简单方法是构建包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，您可以将语句构造为 CodeDom 树，然后返回序列化该模板使用的语言中的树的结果。
 
--   有关详细信息，请参见[演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
+- 有关详细信息，请参见[演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
 
 ## <a name="see-also"></a>请参阅
 

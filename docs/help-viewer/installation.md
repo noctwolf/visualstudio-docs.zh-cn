@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 182b10919a92f27f8ad9563570ee6ae3ef330710
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155664"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789674"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安装
 
@@ -31,11 +31,11 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
 1. 选择“修改”按钮，然后开始安装 Microsoft Help Viewer。
 
-可以轻松安装 Microsoft Help Viewer 的另一种方法是通过“快速启动”框：
+也可通过搜索框轻松安装 Microsoft Help Viewer：
 
-1. 在 Visual Studio 标题栏上的“快速启动”框中键入或输入“help viewer”。
+1. 按 Ctrl+Q，然后在搜索框中键入或输入“Help Viewer”。
 
-   ![“快速启动”框](media/installation/quick-launch.png)
+   ![搜索框](media/installation/quick-launch.png)
 
 1. 选择名为“Help Viewer (单个组件)”的结果。
 

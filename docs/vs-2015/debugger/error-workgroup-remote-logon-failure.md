@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0157b18c0b0dfce2ba69482dc1c61e1ddf3a996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055998"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>错误：工作组远程登录失败
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,44 +41,44 @@ ms.locfileid: "58936228"
   
  当在工作组上的计算机进行调试，并尝试连接到远程计算机时可能发生此错误。 可能的原因包括：  
   
--   远程计算机上没有匹配用户名和密码的帐户。  
+- 远程计算机上没有匹配用户名和密码的帐户。  
   
--   如果 Visual Studio 计算机和远程计算机都在工作组上，远程计算机的默认**本地安全策略**设置可能导致此错误。 **本地安全策略**默认设置为**仅来宾-本地用户以来宾身份验证**。 要在此设置上调试，必须在远程计算机上将设置更改为**经典-本地用户以自己的身份验证**。   
+- 如果 Visual Studio 计算机和远程计算机都在工作组上，远程计算机的默认**本地安全策略**设置可能导致此错误。 **本地安全策略**默认设置为**仅来宾-本地用户以来宾身份验证**。 要在此设置上调试，必须在远程计算机上将设置更改为**经典-本地用户以自己的身份验证**。   
   
 > [!NOTE]
 >  你必须是管理员才能执行以下任务。  
   
 ### <a name="to-open-the-local-security-policy-window"></a>打开“本地安全策略”窗口  
   
-1.  启动 **secpol.msc** Microsoft 管理控制台管理单元。 在 Windows 搜索、Windows“运行”框中或命令提示符处键入 secpol.msc。   
+1. 启动 **secpol.msc** Microsoft 管理控制台管理单元。 在 Windows 搜索、Windows“运行”框中或命令提示符处键入 secpol.msc。   
   
 ### <a name="to-add-user-rights-assignments"></a>添加用户权限分配  
   
-1.  打开 Loca  
+1. 打开 Loca  
   
-2.  打开“本地安全策略”窗口。  
+2. 打开“本地安全策略”窗口。  
   
-3.  展开“本地策略”文件夹。  
+3. 展开“本地策略”文件夹。  
   
-4.  单击“用户权限分配”。  
+4. 单击“用户权限分配”。  
   
-5.  在**策略**列中，双击**调试程序**，以在**本地安全策略设置**对话框中查看当前本地组策略分配。  
+5. 在**策略**列中，双击**调试程序**，以在**本地安全策略设置**对话框中查看当前本地组策略分配。  
   
      ![本地安全策略的用户权限](../debugger/media/dbg-err-localsecuritypolicy-userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")  
   
-6.  若要添加新用户，请单击“添加用户或组”按钮。  
+6. 若要添加新用户，请单击“添加用户或组”按钮。  
   
 ### <a name="to-change-the-sharing-and-security-model"></a>更改“共享和安全模型”  
   
-1.  打开“本地安全策略”窗口。  
+1. 打开“本地安全策略”窗口。  
   
-2.  展开“本地策略”文件夹。  
+2. 展开“本地策略”文件夹。  
   
-3.  单击“安全选项”。  
+3. 单击“安全选项”。  
   
-4.  在中**策略**列中，双击**网络访问：本地帐户的共享和安全模型**。  
+4. 在中**策略**列中，双击**网络访问：本地帐户的共享和安全模型**。  
   
-5.  在**网络访问：本地帐户的共享和安全模型**对话框框中，将值更改为**经典-本地用户以自己的身份验证**然后单击**应用**按钮。  
+5. 在**网络访问：本地帐户的共享和安全模型**对话框框中，将值更改为**经典-本地用户以自己的身份验证**然后单击**应用**按钮。  
   
      ![本地安全策略安全选项](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   

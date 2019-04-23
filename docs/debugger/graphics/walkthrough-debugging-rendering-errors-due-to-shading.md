@@ -1,5 +1,5 @@
 ---
-title: 演练： 调试因着色引起的呈现错误 |Microsoft Docs
+title: 演练：调试因着色引起的呈现错误 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091325"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 本演练演示如何使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]图形诊断工具调查由于着色器 bug 而错误着色的对象。
 
  本演练演示了如何：
 
--   检查图形日志文档来标识显示问题的像素。
+- 检查图形日志文档来标识显示问题的像素。
 
--   使用“图形像素历史记录”  窗口进一步检查像素状态。
+- 使用“图形像素历史记录”  窗口进一步检查像素状态。
 
--   使用“HLSL 调试器”  检查像素和顶点着色器。
+- 使用“HLSL 调试器”  检查像素和顶点着色器。
 
 ## <a name="scenario"></a>方案
  当顶点着色器向像素着色器传递不正确或不完整的信息时，通常会在对象上错误着色。

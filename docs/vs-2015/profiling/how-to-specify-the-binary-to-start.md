@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098423"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要启动的二进制文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "54759888"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>指定要启动的可执行文件  
   
-1.  在“性能资源管理器”中，右键单击目标二进制文件，然后单击“属性”。  
+1. 在“性能资源管理器”中，右键单击目标二进制文件，然后单击“属性”。  
   
-2.  在“属性页”对话框中单击“启动”属性。  
+2. 在“属性页”对话框中单击“启动”属性。  
   
-3.  选中“重写项目属性”复选框。  
+3. 选中“重写项目属性”复选框。  
   
-4.  在“要启动的可执行文件”文本框中，指定文件的位置。  
+4. 在“要启动的可执行文件”文本框中，指定文件的位置。  
   
-5.  在“参数”文本框中，指定启动应用程序所需的参数。  
+5. 在“参数”文本框中，指定启动应用程序所需的参数。  
   
-6.  在“工作目录”文本框中，指定目录的位置。  
+6. 在“工作目录”文本框中，指定目录的位置。  
   
-7.  单击 **“确定”**。  
+7. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)

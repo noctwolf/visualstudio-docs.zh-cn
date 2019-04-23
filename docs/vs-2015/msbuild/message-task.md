@@ -19,23 +19,22 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 254602005966a9d9f95ff6b76f8ad42360e4a57d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770784"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662733"
 ---
 # <a name="message-task"></a>Message 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在生成期间记录消息。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `Message` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`Importance`|可选 `String` 参数。<br /><br /> 指定消息的重要性。 此参数的值可以是 `high`、`normal` 或 `low`。 默认值为 `normal`。|  
 |`Text`|可选 `String` 参数。<br /><br /> 要记录的错误文本。|  

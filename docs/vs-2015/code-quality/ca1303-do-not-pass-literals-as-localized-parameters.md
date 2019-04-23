@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111735"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303:请不要将文本作为本地化参数传递
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58935407"
 
  文本字符串作为值传递给参数或属性和一个或多个以下情况下为 true 时，会引发此警告：
 
--   <xref:System.ComponentModel.LocalizableAttribute>参数或属性的特性设置为 true。
+- <xref:System.ComponentModel.LocalizableAttribute>参数或属性的特性设置为 true。
 
--   参数或属性名称包含"Text"、"Message"描述"。
+- 参数或属性名称包含"Text"、"Message"描述"。
 
--   传递给 Console.Write 或 Console.WriteLine 方法将字符串参数名称是"值"format"。
+- 传递给 Console.Write 或 Console.WriteLine 方法将字符串参数名称是"值"format"。
 
 ## <a name="rule-description"></a>规则说明
  在源代码中嵌入的字符串文本是难以进行本地化。

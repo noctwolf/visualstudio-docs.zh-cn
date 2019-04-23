@@ -23,16 +23,15 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00435dab8c8f5e6379979a4eb1ada36033dc01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069453"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 Windows 窗体控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 通过将数据绑定到 Windows 窗体，可以向应用程序的用户显示数据。 若要创建这些数据绑定控件，可以将项从**数据源**窗口拖到 Visual Studio 中的 Windows 窗体设计器。 本主题介绍一些最常见的任务、 工具和创建数据绑定 Windows 窗体应用程序时涉及的类。
 
@@ -42,21 +41,21 @@ ms.locfileid: "58935672"
 
 ## <a name="in-this-section"></a>本节内容
 
--   [将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data.md)
+- [将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [在保存数据前提交数据绑定控件中正在进行的编辑](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [在保存数据前提交数据绑定控件中正在进行的编辑](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [在 Windows 窗体应用程序中创建查找表](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [在 Windows 窗体应用程序中创建查找表](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [创建用于搜索数据的 Windows 窗体](../data-tools/create-a-windows-form-to-search-data.md)
+- [创建用于搜索数据的 Windows 窗体](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [创建支持简单数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [创建支持简单数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [创建支持复杂数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [创建支持复杂数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [在窗体间传递数据](../data-tools/pass-data-between-forms.md)
+- [在窗体间传递数据](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource 组件
  <xref:System.Windows.Forms.BindingSource> 组件有两个用途。 首先，你的窗体上的控件绑定到数据时提供一个抽象层。 窗体控件绑定到<xref:System.Windows.Forms.BindingSource>组件 （而不是直接绑定到数据源）。
@@ -65,11 +64,11 @@ ms.locfileid: "58935672"
 
  有关详细信息<xref:System.Windows.Forms.BindingSource>组件，请参阅：
 
--   [BindingSource 组件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [BindingSource 组件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [BindingSource 组件概述](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [BindingSource 组件概述](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [BindingSource 组件体系结构](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [BindingSource 组件体系结构](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>BindingNavigator 控件
  此组件提供用户界面中进行导航的 Windows 应用程序显示的数据。 有关详细信息，请参阅 [BindingNavigator 控件](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094655"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 
@@ -31,7 +31,7 @@ ms.locfileid: "55918424"
 
 |快捷键|用途|
 |-|-------------|
-|Ctrl+E，A|显示或隐藏参数设计器。|
+|Ctrl+E，A|显示或隐藏自变量设计器。|
 |Ctrl+E，C|就地折叠所选择的活动。|
 |Ctrl+E，E|就地展开所选择的活动。|
 |Ctrl+E，F|连接流程图中所选择的活动。|
@@ -57,13 +57,13 @@ ms.locfileid: "55918424"
 
 - 连接活动：
 
-    1.  通过按 Tab 键定位到活动来选择源活动。
+    1. 通过按 Tab 键定位到活动来选择源活动。
 
-    2.  根据需要按 Ctrl+E，M 多次将键盘焦点移至目标活动。
+    2. 根据需要按 Ctrl+E，M 多次将键盘焦点移至目标活动。
 
-    3.  按 Ctrl+E，S 将目标活动添加到选择范围。
+    3. 按 Ctrl+E，S 将目标活动添加到选择范围。
 
-    4.  按 Ctrl+E，F 添加从源到目标的连接器。
+    4. 按 Ctrl+E，F 添加从源到目标的连接器。
 
 有关通过键盘连接活动的说明：
 

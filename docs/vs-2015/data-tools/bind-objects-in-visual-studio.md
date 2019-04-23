@@ -19,16 +19,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053112"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio 中的绑定对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio 提供用于为你的应用程序中的数据源使用自定义对象的设计时工具。 当你想要将绑定到 UI 控件的对象中存储数据库中的数据时，建议的方法是使用实体框架生成的类。 DbSet 对象上调用 AcceptChanges 时，实体 Frameworkautogenerates 所有样板更改跟踪代码，这意味着对本地对象的任何更改都会自动保存到数据库。    有关详细信息，请参阅[Entity Framework 文档](https://ef.readthedocs.org/en/latest/)。
 
@@ -43,17 +42,17 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>作为数据源使用自定义对象的示例
  虽然有无数的使用方法来实现应用程序逻辑，使用对象作为数据源时，SQL 的情况下存在数据库是可以通过使用 Visual Studio – 生成 TableAdapter 对象来简化的几个标准操作。 此页说明如何实现这些标准过程使用 TableAdapters.It 不旨在作为指南来创建自定义对象。 例如，你通常将执行以下的标准操作而不考虑特定实现的对象或应用程序的逻辑：
 
--   将数据加载到对象 （通常是从数据库）。
+- 将数据加载到对象 （通常是从数据库）。
 
--   创建类型化的对象的集合。
+- 创建类型化的对象的集合。
 
--   将对象添加到和从集合中删除对象。
+- 将对象添加到和从集合中删除对象。
 
--   向窗体上的用户显示的对象数据。
+- 向窗体上的用户显示的对象数据。
 
--   更改并正在编辑的对象中的数据。
+- 更改并正在编辑的对象中的数据。
 
--   将数据从对象保存到数据库。
+- 将数据从对象保存到数据库。
 
 > [!NOTE]
 >  为了更好地了解，并为此页上的示例提供的上下文，我们建议你完成以下：[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 该演练创建此处所述的对象。

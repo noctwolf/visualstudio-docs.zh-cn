@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 232707cd8fa51b8b69c67e1e66cb0790f4938031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112814"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配数据和生存期数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "54794210"
   
  可通过使用采样或检测分析方法收集数据。  
   
--   使用采样方法时，探查器将跟踪由已启动或已附加到的进程生成的所有 .NET 内存分配和对象。  
+- 使用采样方法时，探查器将跟踪由已启动或已附加到的进程生成的所有 .NET 内存分配和对象。  
   
--   使用检测方法时，探测器将仅跟踪由检测模块生成的 .NET 内存分配和对象。  
+- 使用检测方法时，探测器将仅跟踪由检测模块生成的 .NET 内存分配和对象。  
   
 > [!IMPORTANT]
 >  如果正在使用采样方法收集 .NET 内存数据（分配和/或对象生存期），将忽略所有用户指定的采样事件，并使用相应的内存分配事件收集数据。  
@@ -50,11 +50,11 @@ ms.locfileid: "54794210"
   
 ### <a name="to-collect-net-memory-data"></a>收集 .NET 内存数据  
   
-1.  在“性能资源管理器” 中，右键单击性能会话，然后单击“属性” 。  
+1. 在“性能资源管理器” 中，右键单击性能会话，然后单击“属性” 。  
   
-2.  在“性能会话属性页”对话框上，单击“常规”选项卡，并选中“收集 .NET 对象分配信息”复选框。  
+2. 在“性能会话属性页”对话框上，单击“常规”选项卡，并选中“收集 .NET 对象分配信息”复选框。  
   
-3.  若要收集 .NET 对象生存期数据，请选择“同时收集 .NET 对象生存期信息”复选框。  
+3. 若要收集 .NET 对象生存期数据，请选择“同时收集 .NET 对象生存期信息”复选框。  
   
 ## <a name="common-tasks"></a>常规任务  
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  
@@ -77,8 +77,8 @@ ms.locfileid: "54794210"
   
 |任务|相关内容|  
 |----------|---------------------|  
-|在“二进制文件”  页上，为检测的模块副本指定位置。 默认情况下，原始二进制文件会被移动到备份文件夹中。|-   [如何：重新指定检测后的二进制文件的位置](../profiling/how-to-relocate-instrumented-binaries.md)|  
-|在“检测”  页上，从分析中排除小函数以减少分析开销，在 ASP.NET Web 页中分析 JavaScript 代码，并指定要在检测过程之前和之后在命令提示符处运行的命令。|-   [如何：在检测中排除或包括短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [如何：指定检测前和检测后命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
+|在“二进制文件”  页上，为检测的模块副本指定位置。 默认情况下，原始二进制文件会被移动到备份文件夹中。|-   [如何：重定位已检测的二进制文件](../profiling/how-to-relocate-instrumented-binaries.md)|  
+|在“检测”  页上，从分析中排除小函数以减少分析开销，在 ASP.NET Web 页中分析 JavaScript 代码，并指定要在检测过程之前和之后在命令提示符处运行的命令。|-   [如何：在检测中排除或添加短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />-   [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />-   [如何：指定检测前和检测后命令](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|  
 |在“CPU 计数器”  页上，指定要添加到分析数据的一个或多个处理器性能计数器。|-   [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)|  
 |在“高级”页上，指定所需的任何其他 VSInstr 选项，例如用于包含或排除特定函数的选项。 有关 VSInstr 选项的详细信息，请参阅 [VSInstr](../profiling/vsinstr.md)|-   [如何：指定其他检测选项](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [如何：将检测限定为特定函数](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   

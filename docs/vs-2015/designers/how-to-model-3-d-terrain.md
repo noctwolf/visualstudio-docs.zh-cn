@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764111"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097474"
 ---
 # <a name="how-to-model-3-d-terrain"></a>如何：三维地形模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54764111"
   
  本文档演示了这些活动：  
   
--   将对象添加到场景中  
+- 将对象添加到场景中  
   
--   选择面和点  
+- 选择面和点  
   
--   转换选定内容  
+- 转换选定内容  
   
--   使用“细分面”工具  
+- 使用“细分面”工具  
   
--   在设计图面中为对象添加框架  
+- 在设计图面中为对象添加框架  
   
 ## <a name="creating-a-3-d-terrain-model"></a>创建三维地形模型  
  细分平面以创建其他的面，然后对其顶点进行处理以创建有趣的地形特征，借此以创建三维地形。  
@@ -68,7 +68,7 @@ ms.locfileid: "54764111"
   
    ![显示地形模型的三维场景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   可以使用此地形模型演示[如何：创建基于几何图形的渐变着色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述的渐变着色器的效果。  
+   可以使用此地形模型演示[如何：创建基于几何图形的渐变着色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [模型编辑器](../designers/model-editor.md)

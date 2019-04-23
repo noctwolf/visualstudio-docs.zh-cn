@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba1c2c053a9e2c906e5ca9e530a5a46a2501a840
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086308"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 参数的 IntelliSense 信息工具提示为用户提供有关其所在的语言构造中的提示。
@@ -43,31 +43,31 @@ ms.locfileid: "56606415"
 
  当你<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData>调用类中，按以下顺序调用其方法：
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>
 
      返回当前文本缓冲区中的位置和相关数据的长度。 这会指示 IDE 不会影响该数据与工具提示窗口。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>
 
      返回方法数 （从零开始的索引），你想要一开始显示。 例如，如果返回零，则第一个重载的方法最初呈现。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>
 
      返回当前上下文中适用的重载方法的数量。 如果返回值大于 1 的此方法，然后在文本视图显示向上和向下箭头。 如果您单击向下箭头，IDE 会调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A>方法。 如果单击向上箭头时，IDE 会调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A>方法。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>
 
      在多次调用过程中构造参数信息工具提示的文本<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>方法。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>
 
      返回要显示的方法中的参数数目。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>
 
      如果返回想要显示的重载与相对应的方法数字时，调用此方法，调用后跟<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>方法。
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>
 
      通知语言服务以更新编辑器时显示方法提示。 在<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>方法，调用以下命令：
 
@@ -75,6 +75,6 @@ ms.locfileid: "56606415"
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).
     ```
 
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>
 
      接收到调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>方法时关闭方法提示窗口。

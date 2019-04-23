@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe56b66574c535f51504e54b57db7d1659c4b1dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 85aea5bfa6ccdf5f3753a1397729671249961152
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597304"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060587"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：支持旧版语言服务中的大纲显示
 使用大纲显示展开或折叠的文本的不同区域。 使用方式大纲显示可通过不同的语言以不同的方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。
@@ -31,9 +31,9 @@ ms.locfileid: "56597304"
 
 ## <a name="to-support-outlining"></a>若要支持大纲显示
 
-1.  实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>你语言的服务对象。
+1. 实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage>你语言的服务对象。
 
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>上当前的大纲显示会话对象，若要添加新的大纲区域。
+2. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>上当前的大纲显示会话对象，若要添加新的大纲区域。
 
 ## <a name="robust-programming"></a>可靠编程
  如果用户选择**折叠到定义**上**大纲显示**菜单中，IDE 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A>语言服务上。

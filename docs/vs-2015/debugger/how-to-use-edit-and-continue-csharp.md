@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933815"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042774"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +35,19 @@ ms.locfileid: "58933815"
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>若要调用编辑并继续自动  
   
-1.  在中断模式下对源代码进行更改。  
+1. 在中断模式下对源代码进行更改。  
   
-2.  从**调试**菜单上，单击**继续**，**步骤**，或者**设置下一语句**或调试器窗口中计算函数。  
+2. 从**调试**菜单上，单击**继续**，**步骤**，或者**设置下一语句**或调试器窗口中计算函数。  
   
      新的代码编译和调试将继续执行新的代码。 编辑并继续不支持某些更改。 有关详细信息，请参阅[支持的代码更改 (C#)](../debugger/supported-code-changes-csharp.md)。  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>启用/禁用“编辑并继续”  
   
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在中**选项**对话框框中，展开**调试**节点，然后选择**编辑并继续**。  
+2. 在中**选项**对话框框中，展开**调试**节点，然后选择**编辑并继续**。  
   
-3.  在中**选项**对话框中**编辑并继续**页上，选中或清除**启用编辑并继续**复选框。  
+3. 在中**选项**对话框中**编辑并继续**页上，选中或清除**启用编辑并继续**复选框。  
   
      重新启动调试会话时，该设置将生效。  
   

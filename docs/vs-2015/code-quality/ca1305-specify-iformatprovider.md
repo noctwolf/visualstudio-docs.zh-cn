@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a31dfbae3ca07f913a5ddad3cf0a788cd9c62b73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048096"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:指定 IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58931840"
 ## <a name="cause"></a>原因
  某方法或构造函数调用的重载接受一个或多个成员<xref:System.IFormatProvider?displayProperty=fullName>参数，该方法或构造函数不调用的重载的<xref:System.IFormatProvider>参数。 此规则将忽略对调用[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]方法被记录为忽略<xref:System.IFormatProvider>参数还另外包含以下方法：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>规则说明
  当<xref:System.Globalization.CultureInfo?displayProperty=fullName>或<xref:System.IFormatProvider>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成员选择默认区域性和格式设置基于可能不为你的代码正确的假设。 若要确保代码按预期为方案运行，应提供特定于区域性的信息，按照以下原则：

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935518"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085657"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序设置自定义权限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ ms.locfileid: "58935518"
   
 ### <a name="to-customize-a-permission"></a>自定义权限  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击 **“安全”** 选项卡。  
+2. 单击 **“安全”** 选项卡。  
   
-3.  选中“启用 ClickOnce 安全设置”  复选框。  
+3. 选中“启用 ClickOnce 安全设置”  复选框。  
   
-4.  选择“这是部分可信的应用程序”  选项按钮。  
+4. 选择“这是部分可信的应用程序”  选项按钮。  
   
      “ClickOnce 安全权限”  部分中的控件已启用。  
   
-5.  在“将要从中安装应用程序的区域”  下拉列表中，单击“(自定义)” 。  
+5. 在“将要从中安装应用程序的区域”  下拉列表中，单击“(自定义)” 。  
   
-6.  单击“编辑权限 XML” 。  
+6. 单击“编辑权限 XML” 。  
   
      随即会在“XML 编辑器”中打开 app.manifest 文件。  
   
-7.  在 `</applicationRequestMinimum>` 元素之前，为应用程序所需的权限添加 XML 代码。  
+7. 在 `</applicationRequestMinimum>` 元素之前，为应用程序所需的权限添加 XML 代码。  
   
     > [!NOTE]
     >  可以使用权限集的 `ToXml` 方法为应用程序清单生成 XML 代码。 例如，若要为 <xref:System.Security.Permissions.EnvironmentPermission> 权限集生成 XML，请调用 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 有关详细信息的结构的权限集 XML，请参阅[NIB:如何：通过使用 XML 文件的权限集的导入](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)。  

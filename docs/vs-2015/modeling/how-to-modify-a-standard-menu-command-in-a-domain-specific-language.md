@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933989"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058475"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,37 +37,37 @@ ms.locfileid: "58933989"
 > [!NOTE]
 >  如果你想要创建自己的菜单命令，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
-##  <a name="what"></a> 您可以修改哪些命令？  
+## <a name="what"></a> 您可以修改哪些命令？  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>发现可以修改的命令  
   
-1.  在中`DslPackage`项目中，打开`GeneratedCode\CommandSet.cs`。 此 C# 文件可在解决方案资源管理器作为的子公司`CommandSet.tt`。  
+1. 在中`DslPackage`项目中，打开`GeneratedCode\CommandSet.cs`。 此 C# 文件可在解决方案资源管理器作为的子公司`CommandSet.tt`。  
   
-2.  在此文件的名称结尾找到类"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。  
+2. 在此文件的名称结尾找到类"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。  
   
-3.  在每个命令集类中，键入“`override`”，后跟一个空格。 IntelliSense 将显示可重写方法的列表。 每个命令具有一对其名称以“`ProcessOnStatus`”和“`ProcessOnMenu`”开头的方法。  
+3. 在每个命令集类中，键入“`override`”，后跟一个空格。 IntelliSense 将显示可重写方法的列表。 每个命令具有一对其名称以“`ProcessOnStatus`”和“`ProcessOnMenu`”开头的方法。  
   
-4.  记录哪些命令集类包含你想要修改的命令。  
+4. 记录哪些命令集类包含你想要修改的命令。  
   
-5.  关闭该文件，无需保存编辑。  
+5. 关闭该文件，无需保存编辑。  
   
     > [!NOTE]
     >  通常，不应编辑已生成的文件。 任何编辑都将在下次生成文件时丢失。  
   
-##  <a name="extend"></a> 扩展相应的命令集类  
+## <a name="extend"></a> 扩展相应的命令集类  
  创建包含命令集类的分部声明的新文件。  
   
 #### <a name="to-extend-the-command-set-class"></a>扩展命令集类  
   
-1.  在“解决方案资源管理器”中，在 DslPackage 项目中打开 GeneratedCode 文件夹，然后在 CommandSet.tt 下进行查找并打开其生成的文件 CommandSet.cs。 注意在此处定义的第一个类的命名空间和名称。 例如，你可能看到：  
+1. 在“解决方案资源管理器”中，在 DslPackage 项目中打开 GeneratedCode 文件夹，然后在 CommandSet.tt 下进行查找并打开其生成的文件 CommandSet.cs。 注意在此处定义的第一个类的命名空间和名称。 例如，你可能看到：  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  在中**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中创建名为的新类文件`CommandSet.cs`。  
+2. 在中**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中创建名为的新类文件`CommandSet.cs`。  
   
-3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：  
+3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ ms.locfileid: "58933989"
   
      **请注意**如果类文件模板用于创建新文件，则必须更正的命名空间和类名。  
   
-##  <a name="override"></a> 重写命令方法  
+## <a name="override"></a> 重写命令方法  
  大多数命令都具有两个关联的方法：具有名称的方法让`ProcessOnStatus`...确定命令是否应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数时调用。 你可能想要重写其中一个方法，或两者都进行重写。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>更改命令何时显示在菜单上  

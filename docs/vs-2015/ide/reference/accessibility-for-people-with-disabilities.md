@@ -13,19 +13,18 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd113acc6c79a6e8307969cbb3ed71705b739a19
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 38a4ea987a1b7514d19433f3da75e269fcaf50ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093756"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>为残疾人士提供的辅助功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下主题提供有关使残障人士更易于访问 Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的功能、产品和服务的信息。  
   
--   [Visual Studio 的辅助功能](../../ide/reference/accessibility-features-of-visual-studio.md)  
+- [Visual Studio 的辅助功能](../../ide/reference/accessibility-features-of-visual-studio.md)  
   
--   [帮助查看器的辅助功能](../../ide/accessibility-features-of-the-help-viewer.md)
+- [帮助查看器的辅助功能](../../ide/accessibility-features-of-the-help-viewer.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043440"
 ---
 # <a name="install-a-uml-profile"></a>安装 UML 配置文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58936110"
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>在计算机上安装 UML 配置文件  
   
-1.  应以 Visual Studio 扩展 (`.vsix`) 文件的形式向你提供了该配置文件。 同一文件中可能有其他功能。  
+1. 应以 Visual Studio 扩展 (`.vsix`) 文件的形式向你提供了该配置文件。 同一文件中可能有其他功能。  
   
      将 `.vsix` 文件移到计算机上方便的位置。  
   
-2.  在 Windows 资源管理器（或文件资源管理器）中双击 `.vsix` 文件，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中打开它。  
+2. 在 Windows 资源管理器（或文件资源管理器）中双击 `.vsix` 文件，或在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中打开它。  
   
-3.  单击**安装**中出现的对话框。  
+3. 单击**安装**中出现的对话框。  
   
-4.  若要卸载或临时禁用该扩展，打开**扩展管理器**从**工具**菜单。  
+4. 若要卸载或临时禁用该扩展，打开**扩展管理器**从**工具**菜单。  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>卸载或禁用配置文件扩展  
   
-1.  在 Visual Studio**工具**菜单上，单击**扩展管理器**。  
+1. 在 Visual Studio**工具**菜单上，单击**扩展管理器**。  
   
-2.  单击你想要删除，然后依次扩展**禁用**或**卸载**。  
+2. 单击你想要删除，然后依次扩展**禁用**或**卸载**。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义模型使用配置文件和构造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

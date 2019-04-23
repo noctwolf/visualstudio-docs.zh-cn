@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937707"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654017"
 ---
 # <a name="integration-with-xml-editor"></a>与 XML 编辑器的集成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 编辑器中集成了 XML 架构设计器。 如果您修改 XSD 文件在 XML 编辑器中，更改将反映在[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 如果有[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)打开，更改也会反映在存在。 可通过以下方法在 XML 架构设计器和 XML 编辑器之间导航：  
   
 - 在 XML 编辑器中，右键单击某个节点并选择**在 XML 架构资源管理器中显示**。  

@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ca4bab90105e00f556c7595dcea622f963aef9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684827"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051292"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中的并行线程中的变量上设置监视 (C#，Visual Basic、 c + +)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中的并行线程中的变量上设置监视 (C#，Visual Basic 中， C++)
 在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列将显示在“并行监视”窗口中：
 
 - 标记列，可在其中标记要特别注意的线程。
@@ -42,49 +42,49 @@ ms.locfileid: "56684827"
 
 ### <a name="to-display-the-parallel-watch-window"></a>显示“并行监视”窗口
 
-1.  在代码中设置断点。
+1. 在代码中设置断点。
 
-2.  在菜单栏上，依次选择“调试”、“开始调试”。 等待应用程序到达断点。
+2. 在菜单栏上，依次选择“调试”、“开始调试”。 等待应用程序到达断点。
 
-3.  在菜单栏上，依次选择“调试”、“窗口”、“并行监视”和监视窗口。 您可打开最多 4 个窗口。
+3. 在菜单栏上，依次选择“调试”、“窗口”、“并行监视”和监视窗口。 您可打开最多 4 个窗口。
 
 ### <a name="to-add-a-watch-expression"></a>添加监视表达式
 
--   选择一个空白*添加监视*列，然后输入监视表达式。
+- 选择一个空白*添加监视*列，然后输入监视表达式。
 
 ### <a name="to-flag-or-unflag-a-thread"></a>标记或取消标记线程
 
--   选择行的标记列 （第一列），或打开线程的快捷菜单，然后选择**标志**或**取消标记**。
+- 选择行的标记列 （第一列），或打开线程的快捷菜单，然后选择**标志**或**取消标记**。
 
 ### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程
 
--   选择**仅显示已标记项**左上角的按钮**并行监视**窗口。
+- 选择**仅显示已标记项**左上角的按钮**并行监视**窗口。
 
 ### <a name="to-switch-to-another-thread"></a>若要切换到另一个线程
 
--   双击当前线程列 （第二个列）。 （键盘：选择行，然后按 Enter。）
+- 双击当前线程列 （第二个列）。 （键盘：选择行并按 Enter。）
 
 ### <a name="to-sort-a-column"></a>为列排序
 
--   选择列标题。
+- 选择列标题。
 
 ### <a name="to-group-threads"></a>分组线程
 
--   打开“并行监视”窗口的快捷菜单，选择“分组依据”，然后选择相应的子菜单项。
+- 打开“并行监视”窗口的快捷菜单，选择“分组依据”，然后选择相应的子菜单项。
 
 ### <a name="to-freeze-or-thaw-threads"></a>冻结或解冻线程
 
--   打开行的快捷菜单，然后选择“冻结”或“解冻”。
+- 打开行的快捷菜单，然后选择“冻结”或“解冻”。
 
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>导出“并行监视”窗口中的数据
 
--   选择“在 Excel 中打开”按钮，然后选择“在 Excel 中打开”或“导出到 CSV”。
+- 选择“在 Excel 中打开”按钮，然后选择“在 Excel 中打开”或“导出到 CSV”。
 
 ### <a name="to-filter-by-a-boolean-expression"></a>按布尔表达式筛选
 
--   在“按布尔表达式筛选”框中输入一个布尔表达式。 调试器将为每个线程上下文计算此表达式。 仅显示其中的值为 `true` 的行。
+- 在“按布尔表达式筛选”框中输入一个布尔表达式。 调试器将为每个线程上下文计算此表达式。 仅显示其中的值为 `true` 的行。
 
 ## <a name="see-also"></a>请参阅
 - [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)
-- [演练：调试 C++ AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [演练：调试C++AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

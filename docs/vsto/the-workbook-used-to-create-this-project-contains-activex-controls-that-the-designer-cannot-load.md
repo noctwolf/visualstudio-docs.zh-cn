@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089349"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>用于创建此项目的工作簿包含设计器无法加载的 ActiveX 控件
   以编程方式向 Word 文档或 Excel 工作表添加控件时出现此错误，请保存文档或工作簿，然后基于文档或工作簿创建新的文档级解决方案。
@@ -26,11 +26,11 @@ ms.locfileid: "56638187"
 
 ## <a name="to-correct-this-error"></a>更正此错误
 
-1.  打开文档或工作簿。
+1. 打开文档或工作簿。
 
-2.  删除已在运行时添加的控件。 您可以执行此操作通过在文档或工作簿以及按将其选中**删除**密钥。
+2. 删除已在运行时添加的控件。 您可以执行此操作通过在文档或工作簿以及按将其选中**删除**密钥。
 
-3.  基于文档或工作簿创建文档级解决方案。
+3. 基于文档或工作簿创建文档级解决方案。
 
 ## <a name="see-also"></a>请参阅
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)

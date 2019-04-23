@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: af11a16c94f50c5d7614d8d630534433332a4d91
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223385"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856588"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>在 Visual Studio 中调试 JavaScript 或 TypeScript 应用
 
 可以使用 Visual Studio 调试 JavaScript 和 TypeScript 代码。 可以设置和命中断点、附加调试器、检查变量、查看调用堆栈以及使用其他调试功能。
 
 > [!TIP]
-> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。 根据所展开的应用开发的类型，可能需要使用 Visual Studio 安装 Node.js 开发工作负荷。
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。 根据所展开的应用开发的类型，可能需要使用 Visual Studio 安装 Node.js 开发工作负荷。
 
 ## <a name="debug-server-side-script"></a>调试服务器端脚本
 
@@ -60,6 +60,11 @@ Visual Studio 仅为 Chrome 和 Internet 资源管理器提供调试支持。 �
     `chrome.exe --remote-debugging-port=9222`
 
     此命令在启动 Chrome 时会同时启用调试。
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > 还可以在浏览器启动时设置 `--remote-debugging-port` 标志，方法是从“调试”工具栏选择“浏览方式...”，然后选择“添加”，并在“参数”字段中设置标志。 为浏览器使用其他易记名称，如“带有调试功能的 Chrome”。 有关详细信息，请参阅[发行说明](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)。
+    ::: moniker-end
 
 3. 切换到 Visual Studio 并在源代码中设置断点。 （在允许断点的代码行中设置断点，例如 `return` 语句或 `var` 声明）。
 
@@ -101,7 +106,7 @@ Visual Studio 仅为 Chrome 和 Internet 资源管理器提供调试支持。 �
     * 如果需要中断转译的 JavaScript 文件中的代码（例如，“app-bundle.js”），但又无法执行此操作，请删除源映射文件“filename.js.map”。
 
      > [!TIP]
-     > 首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到 Visual Studio 2017 中的同一进程。
+     > 首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到同一进程。
 
 ## <a name="generate_sourcemaps"></a> 生成用于调试的源映射
 

@@ -21,17 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59a3ad19a6e2a51ec865f66721e35548323d20a3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4b956fb09681f6f4a1f916f4b108028f69f009cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044195"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 指定生成、清理、重新生成或部署在 `/project` 参数中命名的项目时要应用的项目生成配置。  
   
 ## <a name="syntax"></a>语法  
@@ -67,11 +66,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
   
 ## <a name="remarks"></a>备注  
   
--   必须作为 `devenv /build`、/`clean`、`/rebuild` 或 `/deploy` 命令的一部分与 `/project` 开关一起使用。  
+- 必须作为 `devenv /build`、/`clean`、`/rebuild` 或 `/deploy` 命令的一部分与 `/project` 开关一起使用。  
   
--   用双引号将含有空格的字符串引起来。  
+- 用双引号将含有空格的字符串引起来。  
   
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示生成的摘要信息（包括错误）。  
+- “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示生成的摘要信息（包括错误）。  
   
 ## <a name="example"></a>示例  
  本示例使用 `MySolution` 的 `Debug` 解决方案配置中的 `Debug` 项目生成配置来生成 `CSharpConsoleApp` 项目。  

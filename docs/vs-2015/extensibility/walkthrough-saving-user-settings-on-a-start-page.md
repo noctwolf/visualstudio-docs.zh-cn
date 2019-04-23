@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dc913e3a456e46e1f9e19102dadddb1092358e0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111150"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>演练：将用户设置保存在起始页上
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,35 +37,35 @@ ms.locfileid: "58937365"
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>若要为本演练中配置项目  
   
-1.  起始页项目模板，在创建起始页项目[创建您的自己起始页](../misc/creating-your-own-start-page.md)。 将项目命名**SaveMySettings**。  
+1. 起始页项目模板，在创建起始页项目[创建您的自己起始页](../misc/creating-your-own-start-page.md)。 将项目命名**SaveMySettings**。  
   
-2.  在中**解决方案资源管理器**，添加对 StartPageControl 项目的以下程序集引用：  
+2. 在中**解决方案资源管理器**，添加对 StartPageControl 项目的以下程序集引用：  
   
-    -   EnvDTE  
+    - EnvDTE  
   
-    -   EnvDTE80  
+    - EnvDTE80  
   
-    -   Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft.VisualStudio.OLE.Interop  
   
-    -   Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft.VisualStudio.Shell.Interop.11.0  
   
-3.  打开 MyControl.xaml。  
+3. 打开 MyControl.xaml。  
   
-4.  从 XAML 窗格中的顶级<xref:System.Windows.Controls.UserControl>元素定义，添加以下命名空间声明后的事件声明。  
+4. 从 XAML 窗格中的顶级<xref:System.Windows.Controls.UserControl>元素定义，添加以下命名空间声明后的事件声明。  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5.  在设计窗格中，单击该控件的主区域，然后按删除。  
+5. 在设计窗格中，单击该控件的主区域，然后按删除。  
   
      此操作将删除<xref:System.Windows.Controls.Border>元素和所有它，并使仅顶级<xref:System.Windows.Controls.Grid>元素。  
   
-6.  从**工具箱**，拖动<xref:System.Windows.Controls.StackPanel>到网格控件。  
+6. 从**工具箱**，拖动<xref:System.Windows.Controls.StackPanel>到网格控件。  
   
-7.  现在拖动<xref:System.Windows.Controls.TextBlock>、 一个<xref:System.Windows.Controls.TextBox>，和一个按钮<xref:System.Windows.Controls.StackPanel>。  
+7. 现在拖动<xref:System.Windows.Controls.TextBlock>、 一个<xref:System.Windows.Controls.TextBox>，和一个按钮<xref:System.Windows.Controls.StackPanel>。  
   
-8.  添加**X:name**特性<xref:System.Windows.Controls.TextBox>，和一个`Click`事件<xref:System.Windows.Controls.Button>，如以下示例所示。  
+8. 添加**X:name**特性<xref:System.Windows.Controls.TextBox>，和一个`Click`事件<xref:System.Windows.Controls.Button>，如以下示例所示。  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -79,15 +79,15 @@ ms.locfileid: "58937365"
   
 #### <a name="to-implement-the-user-control"></a>若要实现用户控件  
   
-1.  在 XAML 窗格中，右键单击`Click`的属性<xref:System.Windows.Controls.Button>元素，并单击**定位到事件处理程序**。  
+1. 在 XAML 窗格中，右键单击`Click`的属性<xref:System.Windows.Controls.Button>元素，并单击**定位到事件处理程序**。  
   
      这将打开 MyControl.xaml.cs，并创建一个存根 （stub） 处理程序`Button_Click`事件。  
   
-2.  以下代码添加到`using`到文件顶部的语句。  
+2. 以下代码添加到`using`到文件顶部的语句。  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3.  添加一个私有`SettingsStore`属性，如下面的示例中所示。  
+3. 添加一个私有`SettingsStore`属性，如下面的示例中所示。  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -121,7 +121,7 @@ ms.locfileid: "58937365"
   
      此属性首先获取对<xref:EnvDTE80.DTE2>接口，其中包含自动化对象模型中，从<xref:System.Windows.FrameworkElement.DataContext%2A>的用户控件，然后使用 DTE 若要获取的实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>接口。 然后它使用该实例将返回当前用户设置。  
   
-4.  填写`Button_Click`事件，如下所示。  
+4. 填写`Button_Click`事件，如下所示。  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -138,7 +138,7 @@ ms.locfileid: "58937365"
   
      这将在文本框中的内容写入到注册表中的"Mysetting"集合中的"MySetting"字段。 如果集合不存在，则创建它。  
   
-5.  添加以下处理程序`OnLoaded`用户控件的事件。  
+5. 添加以下处理程序`OnLoaded`用户控件的事件。  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -152,11 +152,11 @@ ms.locfileid: "58937365"
   
      这将在文本框中的文本设置为"MySetting"的当前值。  
   
-6.  生成用户控件。  
+6. 生成用户控件。  
   
-7.  在中**解决方案资源管理器**，打开 source.extension.vsixmanifest。  
+7. 在中**解决方案资源管理器**，打开 source.extension.vsixmanifest。  
   
-8.  在清单编辑器中，设置**产品名称**到**保存我的设置起始页**。  
+8. 在清单编辑器中，设置**产品名称**到**保存我的设置起始页**。  
   
      这设置启动页的名称，因为它是出现在**自定义起始页**列表中**选项**对话框。  
   
@@ -166,27 +166,27 @@ ms.locfileid: "58937365"
   
 #### <a name="to-test-the-user-control"></a>若要测试的用户控件  
   
-1.  按 F5。  
+1. 按 F5。  
   
      此时将打开 Visual Studio 的实验实例。  
   
-2.  在实验实例上**工具**菜单上，单击**选项**。  
+2. 在实验实例上**工具**菜单上，单击**选项**。  
   
-3.  在中**环境**节点中，单击**启动**，然后在**自定义起始页**列表中，选择 **[已安装的扩展] 保存我设置起始页**.  
+3. 在中**环境**节点中，单击**启动**，然后在**自定义起始页**列表中，选择 **[已安装的扩展] 保存我设置起始页**.  
   
      单击 **“确定”**。  
   
-4.  关闭已打开，，然后在启动页**视图**菜单上，单击**起始页**。  
+4. 关闭已打开，，然后在启动页**视图**菜单上，单击**起始页**。  
   
-5.  在启动页上单击**MyControl**选项卡。  
+5. 在启动页上单击**MyControl**选项卡。  
   
-6.  在文本框中，键入**Cat**，然后单击**保存我的设置**。  
+6. 在文本框中，键入**Cat**，然后单击**保存我的设置**。  
   
-7.  关闭启动页并重新打开它。  
+7. 关闭启动页并重新打开它。  
   
      应在文本框中显示单词"Cat"。  
   
-8.  将"Dog"一词替换为单词"Cat"。 请不要单击该按钮。  
+8. 将"Dog"一词替换为单词"Cat"。 请不要单击该按钮。  
   
 9. 关闭启动页并重新打开它。  
   

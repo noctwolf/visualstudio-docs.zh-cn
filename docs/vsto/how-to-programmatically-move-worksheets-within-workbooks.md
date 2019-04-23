@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ca03e8d7a3c574501d879cf9949d26fd7ba3a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595732"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113867"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>如何：以编程方式移动工作簿内的工作表
   可以通过编程方式更改工作簿中工作表相对于其他工作表的位置。 如果不为移动的工作表指定位置，Excel 将创建新的工作簿来容纳它。
@@ -27,14 +27,14 @@ ms.locfileid: "56595732"
 
 ## <a name="to-move-a-worksheet-in-a-document-level-customization"></a>在文档级自定义项中移动工作表
 
-1.  将工作簿中的工作表的总数分配给一个变量，然后移动第一个工作表，使其成为最后一个工作表。
+1. 将工作簿中的工作表的总数分配给一个变量，然后移动第一个工作表，使其成为最后一个工作表。
 
      [!code-csharp[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#24)]
 
 ## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>VSTO 外接程序中移动工作表
 
-1.  将工作簿中的工作表的总数分配给一个变量，然后移动第一个工作表，使其成为最后一个工作表。
+1. 将工作簿中的工作表的总数分配给一个变量，然后移动第一个工作表，使其成为最后一个工作表。
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068868"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中的常用命令的默认键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54770490"
 |[生成](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[编辑](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[工具](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[窗口](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[调试](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[文件](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[重构](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[视图](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a>生成
+## <a name="bkmk_build"></a>生成
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ ms.locfileid: "54770490"
 |生成.编译|Ctrl+F7 [全局]|
 |生成.对解决方案运行代码分析|Alt+F11 [全局]|
 
-##  <a name="bkmk_debug"></a>调试
+## <a name="bkmk_debug"></a>调试
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ ms.locfileid: "54770490"
 |调试.停止调试|Shift+F5 [全局]|
 |调试.切换断点|F9 [全局]|
 
-##  <a name="bkmk_edit"></a>编辑
+## <a name="bkmk_edit"></a>编辑
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全局]|
 |编辑.字删除直至结尾处|Ctrl+Delete [文本编辑器]|
 |编辑.字删除直至开始处|Ctrl+Backspace [文本编辑器]|
 
-##  <a name="bkmk_file"></a>文件
+## <a name="bkmk_file"></a>文件
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全局]|
 |文件.保存选定项|Ctrl+S [全局]|
 |文件.在浏览器中查看|Ctrl+Shift+W [全局]|
 
-##  <a name="bkmk_project"></a>项目
+## <a name="bkmk_project"></a>项目
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|
 |项目.添加现有项|Shift+Alt+A [全局]|
 |项目.添加新项|Ctrl+Shift+A [全局]|
 
-##  <a name="bkmk_refactor"></a>重构
+## <a name="bkmk_refactor"></a>重构
 
 |命令|键盘快捷键 [上下文]|
 |-------------|-----------------------------------|
 |重构.提取方法|Ctrl+R、Ctrl+M [全局]|
 
-##  <a name="bkmk_tools"></a>工具
+## <a name="bkmk_tools"></a>工具
 
 |命令|键盘快捷键 [上下文]|
 |-------------|-----------------------------------|
 |工具.附加到进程|Ctrl+Alt+P [全局]|
 
-##  <a name="bkmk_view"></a>视图
+## <a name="bkmk_view"></a>视图
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全局]|
 |视图.查看代码|Enter [类图]<br /><br /> 或 F7 [设置设计器]|
 |视图.视图设计器|Shift+F7 [HTML 编辑器源视图]|
 
-##  <a name="bkmk_window"></a>窗口
+## <a name="bkmk_window"></a>窗口
 
 |命令|键盘快捷键 [上下文]|
 |--------------|-------------------------------------|

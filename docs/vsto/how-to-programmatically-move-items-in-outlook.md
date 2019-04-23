@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108966"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>如何：以编程方式在 Outlook 中移动项
   此示例将从未读的电子邮件**收件箱**到名为的文件夹**测试**。 此示例仅移动消息包含有词语**测试**中`Subject`字段。
@@ -30,9 +30,9 @@ ms.locfileid: "56641619"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
--   Outlook 邮件文件夹名为**测试**。
+- Outlook 邮件文件夹名为**测试**。
 
--   电子邮件到达以单词**测试**中`Subject`字段。
+- 电子邮件到达以单词**测试**中`Subject`字段。
 
 ## <a name="see-also"></a>请参阅
 - [使用文件夹](../vsto/working-with-folders.md)

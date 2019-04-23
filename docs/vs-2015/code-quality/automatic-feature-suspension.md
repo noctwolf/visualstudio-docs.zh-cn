@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ab9b6e0ee62bc2506022a853a04871902fa04aad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045977"
 ---
 # <a name="automatic-feature-suspension"></a>自动功能挂起
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "58936069"
 
  在内存不足的情况，将发生以下情况：
 
--   对于 Visual C# 和 Visual Basic 的完整解决方案分析处于禁用状态。
+- 对于 Visual C# 和 Visual Basic 的完整解决方案分析处于禁用状态。
 
--   [垃圾回收](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) Visual C# 和 Visual Basic 的低延迟模式已禁用。
+- [垃圾回收](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9)(GC) Visual C# 和 Visual Basic 的低延迟模式已禁用。
 
--   Visual Studio 将缓存刷新。
+- Visual Studio 将缓存刷新。
 
 ## <a name="improve-visual-studio-performance"></a>提高 Visual Studio 性能
  提示和技巧如何改进 Visual Studio 性能，处理大型解决方案或内存不足情况时，请参阅[大型解决方案的性能注意事项](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)。
@@ -48,11 +48,11 @@ ms.locfileid: "58936069"
 
 Visual Studio 的所有缓存将立即清空，但如果继续您当前的开发会话或重新启动 Visual Studio 重新填充将开始。 刷新的缓存包括以下功能的缓存。
 
--   查找所有引用
+- 查找所有引用
 
--   定位到
+- 定位到
 
--   添加 Using
+- 添加 Using
 
 此外，用于内部 Visual Studio 操作的缓存也会被清除。
 

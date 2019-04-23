@@ -10,86 +10,86 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85561ff823362941b09b52189c0187dc65997e23
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064448"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演练：将功能添加到自定义编辑器
 创建自定义编辑器后，您可以向其添加更多的功能。
 
 ## <a name="to-create-an-editor-for-a-vspackage"></a>若要创建 VSPackage 的编辑器
 
-1.  使用 Visual Studio 包项目模板创建自定义编辑器。
+1. 使用 Visual Studio 包项目模板创建自定义编辑器。
 
      有关详细信息，请参见[演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。
 
-2.  决定您编辑器来支持单个视图或多个视图。
+2. 决定您编辑器来支持单个视图或多个视图。
 
      支持的编辑器**新的窗口**命令，或具有窗体视图和代码视图，需要单独的文档数据对象和文档视图对象。 在一个编辑器，支持单个视图，文档数据对象和文档视图对象可以实现对同一个对象。
 
      多个视图的示例，请参阅[支持多个文档视图](../extensibility/supporting-multiple-document-views.md)。
 
-3.  通过设置实现编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。
+3. 通过设置实现编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。
 
      有关详细信息，请参阅[编辑器工厂](../extensibility/editor-factories.md)。
 
-4.  决定是否希望在使用就地激活编辑器或简化的嵌入来管理文档视图对象窗口。
+4. 决定是否希望在使用就地激活编辑器或简化的嵌入来管理文档视图对象窗口。
 
      简化的嵌入编辑器窗口承载标准文档视图中，而在就地激活编辑器窗口承载 ActiveX 控件或其他活动作为其文档视图对象。 有关详细信息，请参阅[简化的嵌入](../extensibility/simplified-embedding.md)并[就地激活](../extensibility/in-place-activation.md)。
 
-5.  实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口以处理命令。
+5. 实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口以处理命令。
 
-6.  提供文档暂留和响应的外部文件更改：
+6. 提供文档暂留和响应的外部文件更改：
 
-    1.  若要保存该文件，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>编辑器的文档的数据对象。
+    1. 若要保存该文件，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>编辑器的文档的数据对象。
 
-    2.  若要对外部文件的更改做出响应，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>编辑器的文档的数据对象。
+    2. 若要对外部文件的更改做出响应，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>编辑器的文档的数据对象。
 
         > [!NOTE]
         >  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>获取一个指向`IVsFileChangeEx`。
 
-7.  协调与源代码管理的文档编辑事件。 请执行以下步骤：
+7. 协调与源代码管理的文档编辑事件。 请执行以下步骤：
 
-    1.  获取一个指向`IVsQueryEditQuerySave2`通过调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。
+    1. 获取一个指向`IVsQueryEditQuerySave2`通过调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。
 
-    2.  第一个编辑事件发生时，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>方法。
+    2. 第一个编辑事件发生时，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>方法。
 
          此方法会提示用户签出该文件，如果它尚未签出。请务必处理要避免出现错误"未签出文件"条件。
 
-    3.  同样，保存该文件之前, 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>方法。
+    3. 同样，保存该文件之前, 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>方法。
 
          此方法会提示用户保存文件，如果它尚未保存，或自上次保存以来已更改。
 
-8.  启用**属性**窗口中显示的文本在编辑器中选择的属性。 请执行以下步骤：
+8. 启用**属性**窗口中显示的文本在编辑器中选择的属性。 请执行以下步骤：
 
-    1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每个时间文本选择发生更改，传递的实现中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。
+    1. 调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每个时间文本选择发生更改，传递的实现中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。
 
-    2.  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服务，以获取一个指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。
+    2. 调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服务，以获取一个指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。
 
 9. 使用户能够拖放到编辑器之间的项和**工具箱**，或之间外部编辑器 （如 Microsoft Word) 和**工具箱**。 请执行以下步骤：
 
-    1.  实现`IDropTarget`上您的编辑器来提醒你的编辑器是拖放目标的 IDE。
+    1. 实现`IDropTarget`上您的编辑器来提醒你的编辑器是拖放目标的 IDE。
 
-    2.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>使您的编辑器可以启用和禁用中的项在视图上的接口**工具箱**。
+    2. 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>使您的编辑器可以启用和禁用中的项在视图上的接口**工具箱**。
 
-    3.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>，并调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>服务，以获取指向的指针<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>接口。
+    3. 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>，并调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>服务，以获取指向的指针<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>接口。
 
          这些步骤可添加新项目添加到你的 VSPackage**工具箱**。
 
 10. 确定编辑器是否需要任何其他可选功能。
 
-    -   如果你想您编辑器来支持查找和替换命令，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>。
+    - 如果你想您编辑器来支持查找和替换命令，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>。
 
-    -   如果你想要使用文档大纲工具窗口在编辑器中的，实现`IVsDocOutlineProvider`。
+    - 如果你想要使用文档大纲工具窗口在编辑器中的，实现`IVsDocOutlineProvider`。
 
-    -   如果你想要在编辑器中使用一个状态栏，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>，并调用`QueryService`有关<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>若要获取指向的`IVsStatusBar`。
+    - 如果你想要在编辑器中使用一个状态栏，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>，并调用`QueryService`有关<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>若要获取指向的`IVsStatusBar`。
 
          例如，编辑器可以显示行 / 列信息、 选择模式 （流式传输 / 框），并插入模式 （插入 / 重叠）。
 
-    -   如果希望支持您编辑器`Undo`命令时，建议的方法是使用 OLE 撤消管理器模型。 或者，可以使编辑器处理`Undo`直接命令。
+    - 如果希望支持您编辑器`Undo`命令时，建议的方法是使用 OLE 撤消管理器模型。 或者，可以使编辑器处理`Undo`直接命令。
 
 11. 创建注册表信息，包括 VSPackage、 菜单、 编辑器和其他功能的 Guid。
 
@@ -148,9 +148,9 @@ ms.locfileid: "56716410"
 
 - 有两个位置的自定义编辑器可以公开自动化对象：
 
-  -   `Document.Object`
+  - `Document.Object`
 
-  -   `Window.Object`
+  - `Window.Object`
 
 ## <a name="see-also"></a>请参阅
 - [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)

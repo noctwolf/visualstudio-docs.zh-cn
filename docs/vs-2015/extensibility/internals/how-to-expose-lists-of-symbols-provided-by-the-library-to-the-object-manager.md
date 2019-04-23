@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937563"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106769"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：向对象管理器公开库提供的符号列表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58937563"
   
 #### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>若要向对象管理器提供的符号列表  
   
-1.  获取符号的列表中的项的数目，通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下面的示例演示如何对象管理器获取的列表中的项目数的信息。  
+1. 获取符号的列表中的项的数目，通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下面的示例演示如何对象管理器获取的列表中的项目数的信息。  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ ms.locfileid: "58937563"
   
     ```  
   
-2.  获取有关各类别以及给定的列表项的属性的实现信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的项类别<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>枚举。 下面的示例演示如何对象管理器获取给定类别的项的属性。  
+2. 获取有关各类别以及给定的列表项的属性的实现信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的项类别<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>枚举。 下面的示例演示如何对象管理器获取给定类别的项的属性。  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ ms.locfileid: "58937563"
   
     ```  
   
-3.  获取给定的列表项的文本表示形式通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下面的示例演示如何获取给定项的完整名称。  
+3. 获取给定的列表项的文本表示形式通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下面的示例演示如何获取给定项的完整名称。  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ ms.locfileid: "58937563"
   
     ```  
   
-4.  获取给定的列表项的图标信息通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 图标表示的类型 （类、 方法和等等） 和可访问性 （私有、 公共的等等） 的列表项。 下面的示例演示如何获取基于给定的项属性的信息图标。  
+4. 获取给定的列表项的图标信息通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 图标表示的类型 （类、 方法和等等） 和可访问性 （私有、 公共的等等） 的列表项。 下面的示例演示如何获取基于给定的项属性的信息图标。  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ ms.locfileid: "58937563"
   
     ```  
   
-5.  获取有关给定的列表项是否通过实现是可展开的信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下面的示例演示如何获取给定的项是否可以通过展开的信息。  
+5. 获取有关给定的列表项是否通过实现是可展开的信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下面的示例演示如何获取给定的项是否可以通过展开的信息。  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ ms.locfileid: "58937563"
   
     ```  
   
-6.  通过实现获取的给定的列表项的符号的子列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下面的示例演示如何获取的给定项的符号的子列表**调用**或**的调用方**关系图。  
+6. 通过实现获取的给定的列表项的符号的子列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下面的示例演示如何获取的给定项的符号的子列表**调用**或**的调用方**关系图。  
   
     ```vb  
     ' Call graph list.  

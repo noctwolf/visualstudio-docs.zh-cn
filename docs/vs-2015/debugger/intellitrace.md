@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079300"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,18 +53,18 @@ ms.locfileid: "59000621"
 |**从已部署的应用程序中收集 IntelliTrace 数据**|-   [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**从 IntelliTrace 日志文件（.iTrace 文件）中开始调试。**|-   [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a>哪些应用程序可以使用 IntelliTrace 进行调试？  
+## <a name="IntelliTraceSupport"></a>哪些应用程序可以使用 IntelliTrace 进行调试？  
   
 |||  
 |-|-|  
 |**支持**|的使用.NET Framework 2.0 或更高版本 Visual Basic 和 Visual C# 应用程序。<br />     你可以调试大多数应用程序，包括 ASP.NET、Microsoft Azure、Windows 窗体、WCF、WPF、Windows 工作流、SharePoint 2010、SharePoint 2013 和 64 位应用。<br />     若要调试 SharePoint 应用程序使用 IntelliTrace，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。<br />     若要调试 IntelliTrace 使用 Microsoft Azure 应用程序，请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md)。|  
 |**有限支持**|-F#实验性的基础上的应用程序<br />-Windows 应用商店应用程序仅支持事件|  
-|**不支持**|-C + +、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]应用|  
+|**不支持**|- C++、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]应用|  
   
 > [!NOTE]
 >  如果要调试已经在运行的进程，则不能使用 IntelliTrace。 进程开始时，你必须启动 IntelliTrace。  
   
-##  <a name="IntelliTraceVSTraditional"></a>为何使用 IntelliTrace 进行调试？  
+## <a name="IntelliTraceVSTraditional"></a>为何使用 IntelliTrace 进行调试？  
  传统或实时调试仅显示应用程序的当前状态以及有关过去事件的有限数据。 要么必须根据应用程序的当前状态推断这些事件，要么必须通过重新运行应用程序以重新生成这些事件。  
   
  IntelliTrace 通过记录特定事件和这些时间点的数据，扩展此传统调试体验。 这让你能够不重启应用程序即可查看应用程序中发生了什么，特别是在单步执行到 Bug 处时。 IntelliTrace 在传统调试期间会默认启用，并以不可见的方式自动收集数据。 这样，你即可轻松地在传统调试和 IntelliTrace 调试之间进行切换来查看该记录信息。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)和[IntelliTrace 收集哪些数据？](#WhatData)  
@@ -101,7 +101,7 @@ ms.locfileid: "59000621"
   
    当你需要诊断部署中的应用程序的问题时，这会很有用。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
-##  <a name="WhatData"></a>IntelliTrace 收集哪些数据？  
+## <a name="WhatData"></a>IntelliTrace 收集哪些数据？  
  **收集事件信息**  
   
  默认情况下，IntelliTrace 仅记录 IntelliTrace 事件：调试程序事件、异常、.NET Framework 事件以及可帮助进行调试的其他系统事件。 你可以选择想要收集的 IntelliTrace 事件的类型（始终收集的调试器事件和异常除外）。 请参阅[配置 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
@@ -112,27 +112,27 @@ ms.locfileid: "59000621"
   
    为了帮助提高性能，IntelliTrace 不记录调试器事件的每个可能的值， 而是记录以下值：  
   
-  -   “局部变量”窗口中的值。 请将“局部变量”窗口保持打开状态以查看这些值。  
+  - “局部变量”窗口中的值。 请将“局部变量”窗口保持打开状态以查看这些值。  
   
-  -   “自动”窗口中的值（仅当“自动”窗口处于打开状态时）  
+  - “自动”窗口中的值（仅当“自动”窗口处于打开状态时）  
   
-  -   在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。  
+  - 在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。  
   
 - **异常**  
   
    IntelliTrace 会记录异常类型和以下各类异常的消息：  
   
-  -   已处理的异常（已引发并捕获异常）  
+  - 已处理的异常（已引发并捕获异常）  
   
-  -   未经处理的异常  
+  - 未经处理的异常  
   
 - **.NET Framework 事件**  
   
    默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如：  
   
-  -   对于“文件访问”事件，IntelliTrace 将收集文件名。  
+  - 对于“文件访问”事件，IntelliTrace 将收集文件名。  
   
-  -   对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。  
+  - 对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。  
   
 - **SharePoint 2010 和 SharePoint 2013 应用程序事件**  
   
@@ -142,11 +142,11 @@ ms.locfileid: "59000621"
   
    请参阅：  
   
-  -   [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  - [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-  -   [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)  
+  - [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [演练：使用 IntelliTrace 调试 SharePoint 应用程序](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [演练：使用 IntelliTrace 调试 SharePoint 应用程序](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **收集函数调用信息**  
   
@@ -169,7 +169,7 @@ ms.locfileid: "59000621"
   
  若要控制 IntelliTrace 收集的调用信息量，请仅指定你关注的模块。 这有助于在收集期间提高应用程序的性能。 请参阅[配置 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
-##  <a name="AffectPerformance"></a>IntelliTrace 会让我的应用程序速度变慢吗？  
+## <a name="AffectPerformance"></a>IntelliTrace 会让我的应用程序速度变慢吗？  
  默认情况下，IntelliTrace 仅收集所选 IntelliTrace 事件的数据。 这可能会让应用程序的速度变慢，也可能不会，具体取决于代码的结构和组织。 例如，如果 IntelliTrace 经常记录某个事件，则这可能会让应用程序的速度变慢。 它还可能会让你考虑重构应用程序。  
   
  收集调用信息可能会让应用程序的速度显著变慢。 它还可能增加你保存到磁盘上的 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要尽可能减少这些影响，请仅收集你关注的模块的调用信息。  若要更改 .iTrace 文件的最大大小，请转到“工具”、“选项”、IntelliTrace、“高级”。 请参阅[配置 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  

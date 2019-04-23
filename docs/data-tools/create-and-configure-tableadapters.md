@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042806"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 
@@ -80,16 +80,16 @@ TableAdapter 查询配置向导可用于创建和编辑其他查询的 TableAdap
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>若要开始使用新查询的 TableAdapter 查询配置向导
 
-1.  在“数据集设计器”中打开数据集。
+1. 在“数据集设计器”中打开数据集。
 
-2.  如果要创建一个新的查询，请拖动**查询**对象从**数据集**选项卡**工具箱**拖到<xref:System.Data.DataTable>，或选择**添加查询**TableAdapter 的快捷菜单中。 您还可以拖动**查询**对象拖放到的空白区域**数据集设计器**，这将创建没有关联的 TableAdapter <xref:System.Data.DataTable>。 这些查询可以只返回单个 （标量） 值或运行的 UPDATE、 INSERT 或删除对数据库的命令。
+2. 如果要创建一个新的查询，请拖动**查询**对象从**数据集**选项卡**工具箱**拖到<xref:System.Data.DataTable>，或选择**添加查询**TableAdapter 的快捷菜单中。 您还可以拖动**查询**对象拖放到的空白区域**数据集设计器**，这将创建没有关联的 TableAdapter <xref:System.Data.DataTable>。 这些查询可以只返回单个 （标量） 值或运行的 UPDATE、 INSERT 或删除对数据库的命令。
 
-3.  上**选择数据连接**屏幕上，选择或创建该查询要使用的连接。
+3. 上**选择数据连接**屏幕上，选择或创建该查询要使用的连接。
 
     > [!NOTE]
     > 当在设计器无法确定正确的连接，若要使用，或没有连接可用时，才会显示此屏幕。
 
-4.  上**选择命令类型**屏幕上，从以下方法从数据库提取数据的选择：
+4. 上**选择命令类型**屏幕上，从以下方法从数据库提取数据的选择：
 
     - **使用 SQL 语句**使您可以键入 SQL 语句，以从您的数据库选择的数据。
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110071"
 ---
 # <a name="component-management"></a>组件管理
 Windows 安装程序中的任务的单位称为 （有时称为 WICs 或只是组件） 的 Windows 安装程序组件。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。
@@ -27,23 +27,23 @@ Windows 安装程序中的任务的单位称为 （有时称为 WICs 或只是�
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>创作的并行安装的安装程序的指导原则
 
--   作者文件和注册表项在版本间共享到他们自己的组件。
+- 作者文件和注册表项在版本间共享到他们自己的组件。
 
      这样做使您可以轻松地在下一版本中使用它们。 例如，全局，注册类型库的文件扩展名，其他项中注册**HKEY_CLASSES_ROOT**，依次类推。
 
--   分组到单独的合并模块中的共享的组件。
+- 分组到单独的合并模块中的共享的组件。
 
      此策略可以帮助您编写正确地为下一步的并行安装。
 
--   跨版本使用相同的 Windows Installer 组件安装共享的文件和注册表项。
+- 跨版本使用相同的 Windows Installer 组件安装共享的文件和注册表项。
 
      如果使用不同的组件，则会卸载文件和注册表项时卸载一个版本控制的 VSPackage，但仍安装另一个 VSPackage。
 
--   不要混合在同一组件中的进行版本控制和共享项。
+- 不要混合在同一组件中的进行版本控制和共享项。
 
      执行此操作会导致无法安装到全局位置和版本控制隔离的位置的项的共享的项。
 
--   没有共享的注册表项指向版本控制文件。
+- 没有共享的注册表项指向版本控制文件。
 
      如果这样做，安装另一个版本控制的 VSPackage 时，将被覆盖的共享的密钥。 删除第二个版本后，该密钥指向该文件是消失了。
 

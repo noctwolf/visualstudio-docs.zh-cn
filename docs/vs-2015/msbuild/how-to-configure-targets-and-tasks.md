@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758221"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658977"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何；配置目标和任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可将所选的 MSBuild 任务设置为在其目标环境中运行，而不考虑开发计算机的环境。 例如，当使用 64 位计算机生成面向 32 位体系结构的应用程序时，将在 32 位进程中运行所选的任务。  
   
 > [!NOTE]

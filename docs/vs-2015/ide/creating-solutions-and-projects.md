@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109804"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "54763109"
 ## <a name="adding-single-files-at-the-solution-level"></a>在解决方案级添加单个文件  
  有时，一个文件可能会被多个项目引用，或者包含在逻辑上属于解决方案级而非特定项目下的文本或各种数据。  向解决方案添加单个项：  
   
-1.  在“解决方案资源管理器”中右键单击解决方案节点，然后选择“添加”|“新建项”或“添加”|“现有项”。  
+1. 在“解决方案资源管理器”中右键单击解决方案节点，然后选择“添加”|“新建项”或“添加”|“现有项”。  
   
 ## <a name="creating-empty-solutions"></a>创建空解决方案  
  尽管一个项目必须驻留在一个解决方案中，您仍然可以创建无任何项目的解决方案。  
@@ -87,11 +87,11 @@ ms.locfileid: "54763109"
   
 ##### <a name="to-delete-a-solution"></a>要删除解决方案  
   
-1.  在 **“解决方案资源管理器”** 中，右键单击要删除的解决方案，然后选择 **“在文件资源管理器中打开文件夹”**。  
+1. 在 **“解决方案资源管理器”** 中，右键单击要删除的解决方案，然后选择 **“在文件资源管理器中打开文件夹”**。  
   
-2.  在文件资源管理器中，导航到上一级。  
+2. 在文件资源管理器中，导航到上一级。  
   
-3.  选择包含该解决方案的目录，然后按“删除”。  
+3. 选择包含该解决方案的目录，然后按“删除”。  
   
 ## <a name="see-also"></a>请参阅  
  [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)   

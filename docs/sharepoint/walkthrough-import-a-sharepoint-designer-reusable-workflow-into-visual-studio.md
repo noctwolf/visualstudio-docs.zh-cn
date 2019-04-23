@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1552e45b13fbbd860a429238cf233bbfccbb3f02
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053931"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>演练：导入 Visual Studio SharePoint Designer 可重用工作流
   本演练演示如何导入到的 SharePoint Designer 2010 中创建的可重用工作流[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流项目。
@@ -29,7 +29,7 @@ ms.locfileid: "56603412"
 
  在中创建的工作流[!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]，例如顺序和状态机工作流，称为*代码工作流*。 代码工作流包含 XML 文件和代码模块中的用户可以自定义工作流的行为。
 
- Visual Studio 允许您在 SharePoint Designer 2010 中导入可重用工作流，并将其转换为代码工作流，以便在 SharePoint 网站中使用。
+ Visual Studio 允许你在 SharePoint Designer 2010 中导入可重用工作流，并将其转换为代码工作流，以便在 SharePoint 网站中使用。
 
  本演练演示了下列任务：
 
@@ -48,11 +48,11 @@ ms.locfileid: "56603412"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
+- 支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
 
--   Visual Studio。
+- Visual Studio。
 
--   Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010。
+- Microsoft [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] SharePoint Designer 2010。
 
 ## <a name="create-target-sharepoint-subsites"></a>创建目标 SharePoint 子站点
  首先创建两个新的 SharePoint 子站点： 一个用于承载从 SharePoint Designer 中，另一个用于托管的转换后的工作流的可重用工作流。
@@ -80,27 +80,27 @@ ms.locfileid: "56603412"
 
 #### <a name="to-create-a-sharepoint-designer-reusable-workflow"></a>若要创建 SharePoint Designer 可重用工作流
 
-1.  在中**子站点**部分中，选择**SPD1**站点对其进行修改。
+1. 在中**子站点**部分中，选择**SPD1**站点对其进行修改。
 
-2.  在功能区中，选择**可重用工作流**按钮。
+2. 在功能区中，选择**可重用工作流**按钮。
 
      创建可重用工作流向导会显示。
 
-3.  在中**名称**框中，输入**SPD 任务工作流**。
+3. 在中**名称**框中，输入**SPD 任务工作流**。
 
-4.  在中**内容类型**列表中，选择**任务**，然后选择**确定**按钮。
+4. 在中**内容类型**列表中，选择**任务**，然后选择**确定**按钮。
 
      在 SharePoint Designer 工作流设计器中打开工作流。
 
-5.  在工作流设计器中，选择步骤 1，然后，在功能区中，依次选择**条件**按钮。
+5. 在工作流设计器中，选择步骤 1，然后，在功能区中，依次选择**条件**按钮。
 
-6.  在条件列表中，选择**如果当前项字段等于值**。
+6. 在条件列表中，选择**如果当前项字段等于值**。
 
      此步骤将添加名为的条件**如果字段等于值**。
 
-7.  在中**如果字段等于值**条件中，选择**字段**链接。
+7. 在中**如果字段等于值**条件中，选择**字段**链接。
 
-8.  在值列表中，选择**标题**。
+8. 在值列表中，选择**标题**。
 
 9. 在中**如果字段等于值**条件中，选择**值**链接。
 
@@ -128,23 +128,23 @@ ms.locfileid: "56603412"
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>若要保存和部署可重用工作流
 
-1.  在 SharePoint Designer 顶部，选择**保存**按钮来保存进度，，然后选择**发布**按钮以部署到工作流**SPD1** SharePoint 站点.
+1. 在 SharePoint Designer 顶部，选择**保存**按钮来保存进度，，然后选择**发布**按钮以部署到工作流**SPD1** SharePoint 站点.
 
-2.  在导航窗格中，选择**工作流**对象。
+2. 在导航窗格中，选择**工作流**对象。
 
-3.  下**可重用工作流**，选择**SPD 任务工作流**。
+3. 下**可重用工作流**，选择**SPD 任务工作流**。
 
-4.  在功能区中，选择**另存为模板**按钮以保存工作流作为 *.wsp*文件。
+4. 在功能区中，选择**另存为模板**按钮以保存工作流作为 *.wsp*文件。
 
-5.  打开**SPD1**在浏览器中查看的 SharePoint 站点 *.wsp*在 SharePoint 中的文件。
+5. 打开**SPD1**在浏览器中查看的 SharePoint 站点 *.wsp*在 SharePoint 中的文件。
 
-6.  在快速启动栏上依次选择**库**链接。
+6. 在快速启动栏上依次选择**库**链接。
 
-7.  在中**文档库**部分中，选择**站点资产**链接。
+7. 在中**文档库**部分中，选择**站点资产**链接。
 
      **SPD 任务工作流**文件与其他站点资产一起列出。
 
-8.  在文件列表中，选择该文件的名称
+8. 在文件列表中，选择该文件的名称
 
 9. 在中**文件下载**对话框框中，选择**保存**按钮以保存 *.wsp*本地系统上的文件。
 
@@ -188,11 +188,11 @@ ms.locfileid: "56603412"
 
 11. 因为**导入可重用 SharePoint 2010 工作流**模板不能导入已导入工作流的关联属性值，则必须输入它们。 具体方法为：
 
-    1.  在中**解决方案资源管理器**，选择**SPD_Workflow_TestFT**节点。
+    1. 在中**解决方案资源管理器**，选择**SPD_Workflow_TestFT**节点。
 
-    2.  选择省略号 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆")) 按钮旁边的一个列表属性，如**目标列表**属性。
+    2. 选择省略号 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆")) 按钮旁边的一个列表属性，如**目标列表**属性。
 
-    3.  在 SharePoint 自定义向导中，缺少的值填充，然后选择**完成**按钮。
+    3. 在 SharePoint 自定义向导中，缺少的值填充，然后选择**完成**按钮。
 
 12. 选择.xoml 文件，然后在菜单栏上选择**视图** > **设计器**若要在工作流设计器中查看已导入工作流。
 
@@ -206,9 +206,9 @@ ms.locfileid: "56603412"
 
 14. 执行下面的某一组步骤：
 
-    -   双击**CodeActivity1**以生成一个事件处理程序，并查看代码。
+    - 双击**CodeActivity1**以生成一个事件处理程序，并查看代码。
 
-    -   在中**属性**窗口**CodeActivity1**，将的值设置**ExecuteCode**属性设置为**codeActivity_ExecuteCode**。
+    - 在中**属性**窗口**CodeActivity1**，将的值设置**ExecuteCode**属性设置为**codeActivity_ExecuteCode**。
 
 15. 现有下添加以下**使用**或**导入**语句：
 
@@ -225,27 +225,27 @@ ms.locfileid: "56603412"
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>若要部署该项目并将关联工作流
 
-1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，选择**F5**键以运行和部署转换的工作流项目。
+1. 在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，选择**F5**键以运行和部署转换的工作流项目。
 
-2.  在快速启动栏上依次选择**任务**链接以显示任务列表。
+2. 在快速启动栏上依次选择**任务**链接以显示任务列表。
 
-3.  上**列表工具**选项卡上，选择**项**按钮，，然后选择**新项**按钮。
+3. 上**列表工具**选项卡上，选择**项**按钮，，然后选择**新项**按钮。
 
      **任务-新项**对话框随即打开。
 
-4.  在中**标题**框中，输入**新任务**，然后选择**保存**按钮。
+4. 在中**标题**框中，输入**新任务**，然后选择**保存**按钮。
 
-5.  上**列表工具**选项卡上，选择**列表**按钮，，然后选择**列表设置**按钮。
+5. 上**列表工具**选项卡上，选择**列表**按钮，，然后选择**列表设置**按钮。
 
      **列表设置**页将出现。
 
-6.  在中**权限和管理**部分中，选择**工作流设置**链接。
+6. 在中**权限和管理**部分中，选择**工作流设置**链接。
 
      **工作流设置**页将出现。
 
-7.  选择**添加工作流**链接。
+7. 选择**添加工作流**链接。
 
-8.  在中**工作流**列表中，选择**WorkflowImportProject1-SPD 工作流测试**。
+8. 在中**工作流**列表中，选择**WorkflowImportProject1-SPD 工作流测试**。
 
 9. 在中**名称**框中，输入**SPD 工作流测试**，然后选择**确定**按钮。
 

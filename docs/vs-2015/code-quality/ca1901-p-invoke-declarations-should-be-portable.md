@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed1385ee914fa8b0df31b360f4a1d8fdc8931332
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053944"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901:P/Invoke 声明应为可移植声明
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "58930880"
 ## <a name="rule-description"></a>规则说明
  以下任一情况与此规则冲突发生：
 
--   返回值或参数的类型为固定大小的整数类型应为`IntPtr`。
+- 返回值或参数的类型为固定大小的整数类型应为`IntPtr`。
 
--   返回值或参数被类型化为`IntPtr`时它的类型应为固定大小的整数。
+- 返回值或参数被类型化为`IntPtr`时它的类型应为固定大小的整数。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  您可以通过使用来解决此冲突`IntPtr`或`UIntPtr`来表示句柄而不是`Int32`或`UInt32`。

@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095485"
 ---
 # <a name="add-and-remove-property-pages"></a>添加和删除属性页
 
@@ -32,7 +32,7 @@ ms.locfileid: "54951152"
 
 ### <a name="remove-a-property-page"></a>删除属性页
 
-1.  重写`GetProperty(uint itemId, int propId, out object property)`方法筛选属性页并获取`clsids`列表。
+1. 重写`GetProperty(uint itemId, int propId, out object property)`方法筛选属性页并获取`clsids`列表。
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ ms.locfileid: "54951152"
     }
     ```
 
-2.  删除**生成事件**页上从获取`clsids`列表。
+2. 删除**生成事件**页上从获取`clsids`列表。
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ ms.locfileid: "54951152"
 
 ### <a name="add-a-property-page"></a>添加属性页
 
-1.  创建你想要添加的属性页。
+1. 创建你想要添加的属性页。
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ ms.locfileid: "54951152"
     }
     ```
 
-2.  注册新的属性页。
+2. 注册新的属性页。
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ ms.locfileid: "54951152"
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  重写`GetProperty(uint itemId, int propId, out object property)`方法来筛选器属性页中，获取`clsids`列出，添加新的属性页。
+3. 重写`GetProperty(uint itemId, int propId, out object property)`方法来筛选器属性页中，获取`clsids`列出，添加新的属性页。
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

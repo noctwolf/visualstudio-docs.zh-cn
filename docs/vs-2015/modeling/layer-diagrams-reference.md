@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061980"
 ---
 # <a name="layer-diagrams-reference"></a>层关系图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "58937816"
 |4|**注释**|用于将一般注释添加到关系图或关系图上的元素。|  
 |5|**注释链接**|用于将注释链接到关系图上的元素。|  
   
-##  <a name="Explorer"></a> 层资源管理器  
+## <a name="Explorer"></a> 层资源管理器  
  在解决方案中，如项目、类、命名空间、项目文件和软件的其他部件，你可以将每个层链接到项目。 层上的数字显示链接到该层的项目数。 但是，在读取层上的项目数时，请记住：  
   
 - 如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。  
@@ -80,7 +80,7 @@ ms.locfileid: "58937816"
   
 #### <a name="to-examine-the-linked-artifacts"></a>若要检查链接的项目  
   
--   在层关系图中，打开一个或多个层的快捷菜单，然后选择**查看链接**。  
+- 在层关系图中，打开一个或多个层的快捷菜单，然后选择**查看链接**。  
   
      **层资源管理器**将打开并显示链接到所选层的项目。 **层资源管理器**有一列显示了每个项目链接的属性。  
   

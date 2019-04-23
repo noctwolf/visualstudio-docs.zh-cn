@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041177"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：添加或删除引用通过使用引用管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以使用“引用管理器”对话框添加和管理对你、Microsoft 或其他公司开发的组件的引用。 如果要开发通用 Windows 应用，你的项目将自动引用所有正确的 Windows SDK DLL。 如果要开发 .NET 应用程序，你的项目将自动引用 mscorlib.dll。 一些 .NET API 在必须手动添加的组件中进行公开。 对 COM 组件或自定义组件的引用必须手动添加。  
@@ -45,13 +45,13 @@ ms.locfileid: "54756981"
   
    此时将打开“引用管理器”，并按组列出可用引用。 项目类型确定将显示以下哪一组：  
   
--   “程序集”组，包含“框架”和“扩展”子组。  
+- “程序集”组，包含“框架”和“扩展”子组。  
   
--   “解决方案”组，包含“项目”子组。  
+- “解决方案”组，包含“项目”子组。  
   
--   “Windows”组，包含“核心”和“扩展”子组。 可以使用“对象浏览器”浏览 Windows SDK 或扩展 SDK 中的引用。  
+- “Windows”组，包含“核心”和“扩展”子组。 可以使用“对象浏览器”浏览 Windows SDK 或扩展 SDK 中的引用。  
   
--   “浏览”组，包含“最近”子组。  
+- “浏览”组，包含“最近”子组。  
   
 ## <a name="assemblies-tab"></a>“程序集”选项卡  
  “程序集”选项卡列出可供引用的所有 .NET Framework 程序集。 “程序集”选项卡不会列出全局程序集缓存 (GAC) 中的任何程序集，这是因为 GAC 中的程序集是运行时环境的一部分。 如果某个应用程序包含对在 GAC 中注册的程序集的引用，则在部署或复制该应用程序时，无论“复制本地”设置为何，所引用的程序集都不会与该应用程序一起部署或复制。 有关详细信息，请参阅[项目引用](http://go.microsoft.com/fwlink/?LinkId=238512)。  
@@ -66,13 +66,13 @@ ms.locfileid: "54756981"
   
 1. “框架”列出组成目标框架的所有程序集。  
   
-   -   当你的项目以目标框架的配置文件为目标时，公布的程序集在完整框架中并在“框架”列表中枚举。 公布的程序集显示为灰色，以便与项目的目标框架配置文件中存在的程序集区分。 例如，如果项目以 .NET Framework 4 Client 为目标，“框架”列表将显示 .NET Framework 4 中的公布程序集。 用户添加已公布的程序集时，在“引用管理器”对话框关闭后，用户将收到通知，表明项目将重定目标为 .NET Framework 4，并将添加已公布的程序集。  
+   - 当你的项目以目标框架的配置文件为目标时，公布的程序集在完整框架中并在“框架”列表中枚举。 公布的程序集显示为灰色，以便与项目的目标框架配置文件中存在的程序集区分。 例如，如果项目以 .NET Framework 4 Client 为目标，“框架”列表将显示 .NET Framework 4 中的公布程序集。 用户添加已公布的程序集时，在“引用管理器”对话框关闭后，用户将收到通知，表明项目将重定目标为 .NET Framework 4，并将添加已公布的程序集。  
   
-   -   默认情况下，针对 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的项目在项目创建时包含对目标[!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集。 请使用对象浏览器浏览框架中的引用。” 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。  
+   - 默认情况下，针对 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的项目在项目创建时包含对目标[!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个框架的引用。 相应地，框架选项卡不会枚举任何程序集从框架，而是显示以下消息："所有框架程序集已引用。 请使用对象浏览器浏览框架中的引用。” 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。  
   
 2. “扩展”列出了组件和控件的外部供应商为扩展目标框架而开发的所有程序集。 根据用户应用程序的用途，可能需要这些程序集。  
   
-   -   “扩展”通过枚举在以下位置注册的程序集来填充：  
+   - “扩展”通过枚举在以下位置注册的程序集来填充：  
   
        ```  
        32-bit machine:  
@@ -88,17 +88,17 @@ ms.locfileid: "54756981"
   
    列表中的一些组件可能不会显示，具体取决于项目的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 在下列条件下，可能会出现这种情况：  
   
--   使用最新版本的 .NET Framework 的组件与以早期版本的 .NET Framework 为目标的项目不兼容。  
+- 使用最新版本的 .NET Framework 的组件与以早期版本的 .NET Framework 为目标的项目不兼容。  
   
-     若要深入了解如何更改项目的目标 .NET Framework 版本，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+     有关如何更改项目的目标 .NET Framework 版本的信息，请参阅[如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
--   使用 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 的组件与以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 为目标的项目不兼容。  
+- 使用 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 的组件与以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 为目标的项目不兼容。  
   
      当创建新的应用程序时，一些项目默认情况下以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 为目标。 有关详细信息，请参阅 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。  
   
--   应当避免添加对同一解决方案中另一个项目的输出的文件引用，因为这样做可能导致编译错误。 而应使用“添加引用”对话框的“项目”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)。  
+- 应当避免添加对同一解决方案中另一个项目的输出的文件引用，因为这样做可能导致编译错误。 而应使用“添加引用”对话框的“项目”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)。  
   
--   > [!NOTE]
+- > [!NOTE]
     >  在 Visual Studio 2015 中，如果一个项目的 .NET Framework 目标版本为版本 4.5，而另一个项目的目标版本为版本 2、3、3.5 或 4.0，则将创建文件引用而不是项目引用。  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>在“添加引用”对话框中显示程序集  
@@ -163,7 +163,7 @@ ms.locfileid: "54756981"
 ### <a name="core-subgroup"></a>“核心”子组  
  “核心”子组列出目标 Windows 版本的 SDK 中的所有 WinMD（对于 Windows 运行时元素）。  
   
- 默认情况下，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用项目在项目创建时包含对 [!INCLUDE[win8](../includes/win8-md.md)] SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 [!INCLUDE[win8](../includes/win8-md.md)] SDK 的引用。 相应地，在引用管理器的核心子组不会枚举任何程序集从[!INCLUDE[win8](../includes/win8-md.md)]SDK，而是显示一条消息：“已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。  
+ 默认情况下，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用项目在项目创建时包含对 [!INCLUDE[win8](../includes/win8-md.md)] SDK 中所有 WinMD 的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个 [!INCLUDE[win8](../includes/win8-md.md)] SDK 的引用。 相应地，在引用管理器的核心子组不会枚举任何程序集从[!INCLUDE[win8](../includes/win8-md.md)]SDK，而是显示一条消息："已引用 Windows SDK。 请使用对象浏览器浏览 Windows SDK 中的引用”。  
   
  在桌面项目中，默认情况下不显示“核心”子组。 若要添加 Windows 运行时，可打开项目节点的快捷菜单，选择“卸载项目”，添加以下代码片段，然后重新打开项目（在项目节点上选择“重新加载项目”）。 调用“引用管理器”对话框时，将显示“核心”子组。  
   
@@ -196,9 +196,9 @@ ms.locfileid: "54756981"
   
  执行对 WinMD 的文件引用时，预期布局为 FileName.winmd、FileName.dll 和 FileName.pri 文件全部并排放置。 如果在以下情况下引用 WinMD，一组不完整的文件将复制到项目输出目录中，从而导致生成和运行时失败。  
   
--   **本机组件**：本机项目将为每个不相交的命名空间集创建一个 WinMD 以及一个包含实现的 DLL。 WinMD 将具有不同的名称。 引用此本机组件文件时，MSBuild 不会将名称不同的 WinMD 视为一个组件。 因此，将仅复制名称相同的 FileName.dll 和 FileName.winmd，并且将发生运行时错误。 若要解决此问题，请创建扩展 SDK。 有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。  
+- **本机组件**：本机项目将为每个不相交的命名空间集创建一个 WinMD 以及一个包含实现的 DLL。 WinMD 将具有不同的名称。 引用此本机组件文件时，MSBuild 不会将名称不同的 WinMD 视为一个组件。 因此，将仅复制名称相同的 FileName.dll 和 FileName.winmd，并且将发生运行时错误。 若要解决此问题，请创建扩展 SDK。 有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。  
   
--   **使用控件**：XAML 控件至少包含一个 FileName.winmd、一个 FileName.dll、一个 FileName.pri、一个 XamlName.xaml 和一个 ImageName.jpg。 生成项目时，与文件引用关联的资源文件不会复制到项目的输出目录中，将仅复制 FileName.winmd、FileName.dll 和 FileName.pri。 将记录一个生成错误，通知用户缺少 XamlName.xaml 和 ImageName.jpg 资源。 若要成功，用户必须将这些资源文件手动复制到项目输出目录以用于生成和调试/运行时。 若要解决此问题，请按照[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)中的步骤创建扩展 SDK，或编辑项目文件，添加以下属性：  
+- **使用控件**：XAML 控件至少包含一个 FileName.winmd、一个 FileName.dll、一个 FileName.pri、一个 XamlName.xaml 和一个 ImageName.jpg。 生成项目时，与文件引用关联的资源文件不会复制到项目的输出目录中，将仅复制 FileName.winmd、FileName.dll 和 FileName.pri。 将记录一个生成错误，通知用户缺少 XamlName.xaml 和 ImageName.jpg 资源。 若要成功，用户必须将这些资源文件手动复制到项目输出目录以用于生成和调试/运行时。 若要解决此问题，请按照[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)中的步骤创建扩展 SDK，或编辑项目文件，添加以下属性：  
   
     ```  
     <PropertyGroup>  
@@ -216,5 +216,5 @@ ms.locfileid: "54756981"
  “引用管理器”对话框中的搜索栏在处于焦点的选项卡上运行。 例如，在“解决方案”选项卡处于焦点时，如果用户在搜索栏中键入“System”，则除非解决方案具有包含“System”的项目名称，否则搜索不会返回任何结果。  
   
 ## <a name="see-also"></a>请参阅  
- [(NIB) 如何：添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB 如何：添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [管理项目中的引用](../ide/managing-references-in-a-project.md)

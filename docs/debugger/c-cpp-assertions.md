@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628320"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653718"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定你预期程序中的某个点为 true 的条件。 如果该条件不为 true，则断言失败，程序执行中断并显示[“断言失败”对话框](../debugger/assertion-failed-dialog-box.md)。
@@ -74,7 +74,7 @@ Visual C++ 支持基于以下构造的断言语句：
 - [查找未处理的错误](#BKMK_Testing_error_conditions_)
 
 ## <a name="BKMK_How_assertions_work"></a> 断言的工作原理
-当调试器由于 MFC 或 C 运行时库断言而暂停时，如果源可用，则它定位到源文件中的断言发生点。 断言消息显示在[输出窗口](../ide/reference/output-window.md)以及“断言失败”对话框中。 如果要保存断言消息以供将来参考，可以将断言消息从“输出”窗口复制到某个文本窗口。 输出窗口可能还包含其他错误信息。 请仔细检查这些消息，因为它们提供了断言失败原因的线索。
+当调试器由于 MFC 或 C 运行时库断言而停止时，如果源文件可用，则调试器将导航至源文件中的断言发生点。 断言消息显示在[输出窗口](../ide/reference/output-window.md) 和 **断言失败** 对话框中。 如果要保存断言消息以供将来参考，可以将断言消息从**输出**窗口复制到某个文本窗口。 **输出** 窗口可能还包含其他错误信息。 请仔细检查这些消息，因为它们提供了断言失败原因的线索。
 当调试器由于 MFC 或 C 运行时库断言而停止时，如果源文件可用，则调试器将导航至源文件中的断言发生点。 断言消息显示在[输出窗口](../ide/reference/output-window.md) 和 **断言失败** 对话框中。 如果要保存断言消息以供将来参考，可以将断言消息从**输出**窗口复制到某个文本窗口。 **输出** 窗口可能还包含其他错误信息。请仔细检查这些消息，因为它们提供了断言失败原因的线索。
 
 使用断言来在开发过程中检测错误。 通常，对于每个假设使用一个断言。 例如，如果假定参数不是 NULL，请使用断言测试这种假设。
@@ -106,7 +106,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ## <a name="BKMK_CRT_assertions"></a> CRT 断言
 CRTDBG。H 标头文件定义[_ASSERT 和 _ASSERTE 宏](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros)断言检查。
-
 
 | 宏 | 结果 |
 |------------| - |

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066644"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>演练：在文档级项目中的简单数据绑定
   本演练演示在文档级项目中的数据绑定的基础知识。 SQL Server 数据库中的单个数据字段绑定到在 Microsoft Office Excel 中的命名区域。 本演练还演示如何添加控件，您可以滚动浏览表中的所有记录。
@@ -41,13 +41,13 @@ ms.locfileid: "56640257"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   对具有 Northwind SQL Server 示例数据库的服务器的访问。
+- 对具有 Northwind SQL Server 示例数据库的服务器的访问。
 
--   读取和写入到 SQL Server 数据库的权限。
+- 读取和写入到 SQL Server 数据库的权限。
 
 ## <a name="create-a-new-project"></a>创建新项目
  在此步骤中，将创建一个 Excel 工作簿项目。
@@ -88,21 +88,21 @@ ms.locfileid: "56640257"
 
 ### <a name="to-add-two-named-ranges"></a>若要添加两个名为范围
 
-1.  确认*我的简单数据 Binding.xlsx*工作簿是在 Visual Studio 设计器中，打开与**Sheet1**显示。
+1. 确认*我的简单数据 Binding.xlsx*工作簿是在 Visual Studio 设计器中，打开与**Sheet1**显示。
 
-2.  打开**数据源**窗口中，展开**客户**节点。
+2. 打开**数据源**窗口中，展开**客户**节点。
 
-3.  选择**CompanyName**列，然后单击显示的下拉箭头。
+3. 选择**CompanyName**列，然后单击显示的下拉箭头。
 
-4.  选择**NamedRange**在下拉列表中，然后将**CompanyName**到单元格的列**A1**。
+4. 选择**NamedRange**在下拉列表中，然后将**CompanyName**到单元格的列**A1**。
 
      一个<xref:Microsoft.Office.Tools.Excel.NamedRange>名为控件`companyNameNamedRange`单元格中创建**A1**。 同时，在<xref:System.Windows.Forms.BindingSource>名为`customersBindingSource`，一个表适配器和一个<xref:System.Data.DataSet>实例添加到项目。 该控件绑定到<xref:System.Windows.Forms.BindingSource>，后者又绑定到<xref:System.Data.DataSet>实例。
 
-5.  选择**CustomerID**中的列**数据源**窗口中，然后单击显示的下拉箭头。
+5. 选择**CustomerID**中的列**数据源**窗口中，然后单击显示的下拉箭头。
 
-6.  单击**NamedRange**在下拉列表中，然后将**CustomerID**到单元格的列**B1**。
+6. 单击**NamedRange**在下拉列表中，然后将**CustomerID**到单元格的列**B1**。
 
-7.  另一个<xref:Microsoft.Office.Tools.Excel.NamedRange>名为控件`customerIDNamedRange`单元格中创建**B1**，并将其绑定到<xref:System.Windows.Forms.BindingSource>。
+7. 另一个<xref:Microsoft.Office.Tools.Excel.NamedRange>名为控件`customerIDNamedRange`单元格中创建**B1**，并将其绑定到<xref:System.Windows.Forms.BindingSource>。
 
 ### <a name="to-add-four-buttons"></a>若要添加四个按钮
 
@@ -112,7 +112,7 @@ ms.locfileid: "56640257"
 
 2. 将三个按钮添加到此顺序中的以下单元格，以使名称所示：
 
-   |单元格|（名称）|
+   |单元格|(名称)|
    |----------|--------------|
    |B3|Button2|
    |C3|Button3|
@@ -143,28 +143,28 @@ ms.locfileid: "56640257"
 
 ### <a name="to-move-to-the-first-record"></a>若要将移动到第一条记录
 
-1.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button1`按钮，然后添加以下代码以将移动到第一条记录：
+1. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button1`按钮，然后添加以下代码以将移动到第一条记录：
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>若要将移动到上一条记录
 
-1.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button2`按钮，然后添加以下代码以返回由一个移动的位置：
+1. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button2`按钮，然后添加以下代码以返回由一个移动的位置：
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>若要将移动到下一条记录
 
-1.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button3`按钮，然后添加以下代码，以提升的一个位置：
+1. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button3`按钮，然后添加以下代码，以提升的一个位置：
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>若要移动到最后一个记录
 
-1.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button4`按钮，然后添加以下代码以移动到最后一个记录：
+1. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`Button4`按钮，然后添加以下代码以移动到最后一个记录：
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640257"
 
 ### <a name="to-test-your-workbook"></a>测试工作簿
 
-1.  按**F5**运行你的项目。
+1. 按**F5**运行你的项目。
 
-2.  确认第一条记录显示在单元格**A1**并**B1**。
+2. 确认第一条记录显示在单元格**A1**并**B1**。
 
-3.  单击**>** (`Button3`) 按钮，然后确认下一条记录显示在单元格中**A1**并**B1**。
+3. 单击**>** (`Button3`) 按钮，然后确认下一条记录显示在单元格中**A1**并**B1**。
 
-4.  单击其他滚动按钮以确认该记录按预期发生变化。
+4. 单击其他滚动按钮以确认该记录按预期发生变化。
 
 ## <a name="next-steps"></a>后续步骤
  本演练演示绑定到数据库中的字段的命名的范围的基础知识。 以下是接下来可能要执行的一些任务：
 
--   缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
+- 缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
 
--   将单元格到多个列在表中，而不是绑定到的一个字段。 有关详细信息，请参见[演练：在文档级项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。
+- 将单元格到多个列在表中，而不是绑定到的一个字段。 有关详细信息，请参见[演练：在文档级项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。
 
--   使用<xref:System.Windows.Forms.BindingNavigator>控件滚动显示记录。 有关详细信息，请参阅[如何：使用 Windows 窗体 BindingNavigator 控件导航数据](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
+- 使用<xref:System.Windows.Forms.BindingNavigator>控件滚动显示记录。 有关详细信息，请参阅[如何：使用 Windows 窗体 BindingNavigator 控件导航数据](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。
 
 ## <a name="see-also"></a>请参阅
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)

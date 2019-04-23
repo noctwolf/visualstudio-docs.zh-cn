@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077805"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安装.NET Compiler Platform 分析器
 
@@ -24,14 +24,14 @@ Visual Studio 包含一组核心.NET 编译器平台 (*Roslyn*) 分析器。 这
 
 ## <a name="to-install-nuget-analyzer-packages"></a>若要安装 NuGet 分析器包
 
-1. 找到你想要在 www.nuget.org 安装分析器包。例如，您可能希望[安装 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)检查有关安全性和性能问题，以及其他代码。
+1. 找到你想要在 www.nuget.org 安装分析器包。
+
+   例如，您可能希望[安装 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)检查有关安全性和性能问题，以及其他代码。 或者，安装[StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)来查找代码库中的样式问题。
 
 2. 在 Visual Studio 中，使用安装包[程序包管理器控制台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)或[包管理器 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
 
    > [!NOTE]
    > 对于每个分析器包 www.nuget.org 页显示您要粘贴的命令**程序包管理器控制台**。 甚至还有一个方便的按钮文本复制到剪贴板。
-   >
-   > ![NuGet.org 页面显示包管理器控制台命令](media/nuget-install-command.png)
 
    分析器程序集安装并显示在**解决方案资源管理器**下**引用** > **分析器**。
 

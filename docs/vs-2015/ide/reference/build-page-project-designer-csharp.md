@@ -14,17 +14,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 256ceb2e1a40d41798ea8dd38757b447221fab16
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805316"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658352"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“项目设计器”的“生成”页指定项目的生成配置属性。 此页仅适用于 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目。  
   
  若要访问“生成”页，请在“解决方案资源管理器”中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目”、“属性”。 显示“项目设计器”后，请单击“生成”选项卡。  
@@ -100,7 +99,7 @@ ms.locfileid: "54805316"
  **All**  
  将所有警告视为错误。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  以下设置用于配置生成过程的输出选项。  
   
  “输出路径”  

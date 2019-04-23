@@ -11,12 +11,12 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9efe961774ef1939cfc95c2efe9146a59e46bc17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4397b2710a7de4addd97bfcbdb4f8e80e2b9c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060574"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：关闭源代码管理插件的兼容性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58935096"
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要禁用此警告："以确保获得最佳的源控件与 Visual Studio 集成..."  
   
--   设置以下注册表项 （如有必要，将添加值）：  
+- 设置以下注册表项 （如有必要，将添加值）：  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001  
   
@@ -33,7 +33,7 @@ ms.locfileid: "58935096"
   
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要禁用此警告："已安装的源代码管理提供程序不支持的所有功能..."  
   
--   设置以下两个注册表值 （如有必要，将添加值）：  
+- 设置以下两个注册表值 （如有必要，将添加值）：  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000  
   

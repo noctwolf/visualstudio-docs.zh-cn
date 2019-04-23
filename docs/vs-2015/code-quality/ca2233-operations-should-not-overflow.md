@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054789"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233:运算不应溢出
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,11 +107,11 @@ End Sub
 
  **若要启用检查算术上溢/下溢 C# 中**
 
-1.  在中**解决方案资源管理器**，右键单击项目，然后选择**属性**。
+1. 在中**解决方案资源管理器**，右键单击项目，然后选择**属性**。
 
-2.  选择“生成”选项卡，然后单击“高级”。
+2. 选择“生成”选项卡，然后单击“高级”。
 
-3.  选择**检查算术上溢/下溢**然后单击**确定**。
+3. 选择**检查算术上溢/下溢**然后单击**确定**。
 
 ## <a name="see-also"></a>请参阅
  <xref:System.OverflowException?displayProperty=fullName> [C# 运算符](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked 和 Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

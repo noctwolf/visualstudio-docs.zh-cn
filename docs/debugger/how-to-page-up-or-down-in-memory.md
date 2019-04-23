@@ -1,5 +1,5 @@
 ---
-title: 如何： Page Up 或在内存中的 Down |Microsoft Docs
+title: 如何：Page Up 或在内存中的 Down |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072743"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在内存中向上或向下翻页
 
@@ -44,7 +44,7 @@ ms.locfileid: "56715357"
 
 #### <a name="to-move-up-or-down-one-instruction"></a>向上或向下移动一个指令
 
--   单击垂直滚动条顶部或底部的箭头。
+- 单击垂直滚动条顶部或底部的箭头。
 
 ## <a name="see-also"></a>请参阅
 - [“内存”窗口](../debugger/memory-windows.md)

@@ -11,12 +11,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f5913a8b269d767bf7f406c38761c3a56695256e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054802"
 ---
 # <a name="handling-specialized-deployment"></a>处理专用部署
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "58931555"
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>若要处理专用的部署由子类型项目  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>方法来注册要接收通知的部署状态事件的环境。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>方法来注册要接收通知的部署状态事件的环境。  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -78,7 +78,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>方法来取消环境的注册以接收通知的部署状态事件。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>方法来取消环境的注册以接收通知的部署状态事件。  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -96,7 +96,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>方法来执行特定于应用程序提交操作。  此方法主要用于数据库部署。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>方法来执行特定于应用程序提交操作。  此方法主要用于数据库部署。  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -114,7 +114,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>方法来执行回滚操作。 调用此方法时，必须执行任何适于回滚更改部署项目并将其还原项目的状态。 此方法主要用于数据库部署。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>方法来执行回滚操作。 调用此方法时，必须执行任何适于回滚更改部署项目并将其还原项目的状态。 此方法主要用于数据库部署。  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -132,7 +132,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>方法，以确定项目是否能够启动部署操作。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>方法，以确定项目是否能够启动部署操作。  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -165,7 +165,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>方法，以确定是否已成功完成部署操作。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>方法，以确定是否已成功完成部署操作。  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -188,7 +188,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>方法以开始部署操作在单独的线程。 将代码放在应用程序部署到特定`Deploy`方法。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>方法以开始部署操作在单独的线程。 将代码放在应用程序部署到特定`Deploy`方法。  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -245,7 +245,7 @@ ms.locfileid: "58931555"
   
     ```  
   
--   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>方法来停止部署操作。 当用户按下调用此方法**取消**在部署过程中的按钮。  
+- 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>方法来停止部署操作。 当用户按下调用此方法**取消**在部署过程中的按钮。  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  

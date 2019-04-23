@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: de0ab486d74e0e8ad3774a65a0b430523c0ac491
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 29832934b848729879ee1ba802c70f85117efd2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080373"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ IDiaPropertyStorage : IUnknown
 ## <a name="notes-for-callers"></a>调用方的说明  
  通过调用来获取此接口`QueryInterface`另一个接口上的方法。 以下接口可用于查询`IDiaPropertyStorage`接口：  
   
--   [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)  
   
--   [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)  
   
--   [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)  
   
--   [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)  
   
--   [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)  
   
--   [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
+- [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)  
   
--   [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)  
   
 ## <a name="example"></a>示例  
  此示例中演示的功能可显示所有属性公开的`IDiaPropertyStorage`对象。 请参阅[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)接口以举例说明如何`IDiaPropertyStorage`接口的均来自[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)接口。  

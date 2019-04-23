@@ -10,12 +10,12 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d22607dd4e32ac29a773b6217056c2484121cd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa18b900ca44fbb52c646bfdf021beed6e77f504
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112463"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>演练：创建边缘字形
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ ms.locfileid: "58936669"
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `TodoGlyphTest`。  
+1. 创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `TodoGlyphTest`。  
   
-2.  添加编辑器分类器项目项。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 添加编辑器分类器项目项。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  删除现有的类文件。  
+3. 删除现有的类文件。  
   
 ## <a name="defining-the-glyph"></a>定义标志符号  
  通过实现定义标志符号<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>接口。  
   
 #### <a name="to-define-the-glyph"></a>若要定义标志符号  
   
-1.  添加一个类文件并将其命名为 `TodoGlyphFactory`。  
+1. 添加一个类文件并将其命名为 `TodoGlyphFactory`。  
   
-2.  添加以下 using 声明。  
+2. 添加以下 using 声明。  
   
      [!code-csharp[VSSDKTodoGlyphTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#1)]
      [!code-vb[VSSDKTodoGlyphTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#1)]  
   
-3.  添加名为的类`TodoGlyphFactory`实现<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>。  
+3. 添加名为的类`TodoGlyphFactory`实现<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactory>。  
   
      [!code-csharp[VSSDKTodoGlyphTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#2)]
      [!code-vb[VSSDKTodoGlyphTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#2)]  
   
-4.  添加定义标志符号尺寸的私有字段。  
+4. 添加定义标志符号尺寸的私有字段。  
   
      [!code-csharp[VSSDKTodoGlyphTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#3)]
      [!code-vb[VSSDKTodoGlyphTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#3)]  
   
-5.  实现`GenerateGlyph`通过定义标志符号的用户界面 (UI) 元素。 `TodoTag` 稍后在本演练中定义。  
+5. 实现`GenerateGlyph`通过定义标志符号的用户界面 (UI) 元素。 `TodoTag` 稍后在本演练中定义。  
   
      [!code-csharp[VSSDKTodoGlyphTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#4)]
      [!code-vb[VSSDKTodoGlyphTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#4)]  
   
-6.  添加名为的类`TodoGlyphFactoryProvider`实现<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>。 导出使用此类<xref:Microsoft.VisualStudio.Utilities.NameAttribute>的"TodoGlyph"<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>的后 VsTextMarker<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"代码"和一个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>TodoTag。  
+6. 添加名为的类`TodoGlyphFactoryProvider`实现<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider>。 导出使用此类<xref:Microsoft.VisualStudio.Utilities.NameAttribute>的"TodoGlyph"<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>的后 VsTextMarker<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"代码"和一个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>TodoTag。  
   
      [!code-csharp[VSSDKTodoGlyphTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#5)]
      [!code-vb[VSSDKTodoGlyphTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#5)]  
   
-7.  实现<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A>方法通过实例化`TodoGlyphFactory`。  
+7. 实现<xref:Microsoft.VisualStudio.Text.Editor.IGlyphFactoryProvider.GetGlyphFactory%2A>方法通过实例化`TodoGlyphFactory`。  
   
      [!code-csharp[VSSDKTodoGlyphTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todoglyphfactory.cs#6)]
      [!code-vb[VSSDKTodoGlyphTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todoglyphfactory.vb#6)]  
@@ -75,39 +75,39 @@ ms.locfileid: "58936669"
   
 #### <a name="to-define-a-todo-tag-and-tagger"></a>若要定义 todo 标记和标记器  
   
-1.  向项目添加一个新类文件并将其命名`TodoTagger`。  
+1. 向项目添加一个新类文件并将其命名`TodoTagger`。  
   
-2.  添加以下导入。  
+2. 添加以下导入。  
   
      [!code-csharp[VSSDKTodoGlyphTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#7)]
      [!code-vb[VSSDKTodoGlyphTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#7)]  
   
-3.  添加一个名为类`TodoTag`。  
+3. 添加一个名为类`TodoTag`。  
   
      [!code-csharp[VSSDKTodoGlyphTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#8)]
      [!code-vb[VSSDKTodoGlyphTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#8)]  
   
-4.  修改名为的类`TodoTagger`，它实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>类型的`TodoTag`。  
+4. 修改名为的类`TodoTagger`，它实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>类型的`TodoTag`。  
   
      [!code-csharp[VSSDKTodoGlyphTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#9)]
      [!code-vb[VSSDKTodoGlyphTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#9)]  
   
-5.  向`TodoTagger`类中，添加私有字段<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>和要查找的分类中的文本的跨度。  
+5. 向`TodoTagger`类中，添加私有字段<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>和要查找的分类中的文本的跨度。  
   
      [!code-csharp[VSSDKTodoGlyphTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#10)]
      [!code-vb[VSSDKTodoGlyphTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#10)]  
   
-6.  添加设置的分类器的构造函数。  
+6. 添加设置的分类器的构造函数。  
   
      [!code-csharp[VSSDKTodoGlyphTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#11)]
      [!code-vb[VSSDKTodoGlyphTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#11)]  
   
-7.  实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>通过查找所有分类的方法跨其名称中包含单词"注释"，以及其中的文本包括搜索文本。 只要找到搜索文本，重新生成一个新<xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601>类型的`TodoTag`。  
+7. 实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>通过查找所有分类的方法跨其名称中包含单词"注释"，以及其中的文本包括搜索文本。 只要找到搜索文本，重新生成一个新<xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601>类型的`TodoTag`。  
   
      [!code-csharp[VSSDKTodoGlyphTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#12)]
      [!code-vb[VSSDKTodoGlyphTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#12)]  
   
-8.  声明`TagsChanged`事件。  
+8. 声明`TagsChanged`事件。  
   
      [!code-csharp[VSSDKTodoGlyphTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdktodoglyphtest/cs/todotagger.cs#13)]
      [!code-vb[VSSDKTodoGlyphTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdktodoglyphtest/vb/todotagger.vb#13)]  
@@ -132,12 +132,12 @@ ms.locfileid: "58936669"
   
 #### <a name="to-build-and-test-the-todoglyphtest-solution"></a>若要生成和测试 TodoGlyphTest 解决方案  
   
-1.  生成解决方案。  
+1. 生成解决方案。  
   
-2.  通过按 F5 运行项目。 Visual Studio 的第二个实例进行实例化。  
+2. 通过按 F5 运行项目。 Visual Studio 的第二个实例进行实例化。  
   
-3.  请确保显示指示器边距。 (在**工具**菜单上，单击**选项**。 在**文本编辑器**页上，请确保**指示器边距**处于选中状态。)  
+3. 请确保显示指示器边距。 (在**工具**菜单上，单击**选项**。 在**文本编辑器**页上，请确保**指示器边距**处于选中状态。)  
   
-4.  打开具有注释的代码文件。 将单词"todo"添加到注释部分之一。  
+4. 打开具有注释的代码文件。 将单词"todo"添加到注释部分之一。  
   
-5.  将具有深蓝色的轮廓的浅蓝色圆形应出现在代码窗口左侧的指示器边距。
+5. 将具有深蓝色的轮廓的浅蓝色圆形应出现在代码窗口左侧的指示器边距。

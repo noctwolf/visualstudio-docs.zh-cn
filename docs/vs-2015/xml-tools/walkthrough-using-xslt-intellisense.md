@@ -9,22 +9,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e6d1aa5cbcc4d996f2caf0e42f372dd3de9eee6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 45cb15a81f7f8f74ab17bf22ce52aca48a90aea9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063096"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>演练：使用 XSLT IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此演练演示如何使用 XSLT IntelliSense 自动完成某些特性的值。  
   
 ### <a name="to-use-intellisense-in-the-name-attribute-of-xslwith-param-and-xslcall-template-elements"></a>在 xsl:with-param 和 xsl:call-template 元素的名称特性中使用 IntelliSense  
   
-1.  用下面的代码创建新的 XSLT 文件和副本：  
+1. 用下面的代码创建新的 XSLT 文件和副本：  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -48,7 +47,7 @@ ms.locfileid: "58933536"
     </xsl:stylesheet>  
     ```  
   
-2.  在 `<xsl:template name="msg23" match="msg23">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:call-template` 元素：  
+2. 在 `<xsl:template name="msg23" match="msg23">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:call-template` 元素：  
   
     ```  
     <xsl:call-template name="localized-message">  
@@ -57,7 +56,7 @@ ms.locfileid: "58933536"
   
      在键入元素时，模板名称列表出现在 `name=""` 元素的 `xsl:call-template` 特性中。  
   
-3.  在 `<xsl:call-template name="localized-message">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:with-param` 元素：  
+3. 在 `<xsl:call-template name="localized-message">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:with-param` 元素：  
   
     ```  
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
@@ -67,7 +66,7 @@ ms.locfileid: "58933536"
   
 ### <a name="to-use-intellisense-in-the-mode-attribute-of-an-xslapply-templates-element"></a>在 xsl:apply-templates 元素的模式特性中使用 IntelliSense  
   
-1.  用下面的代码创建新的 XSLT 文件和副本：  
+1. 用下面的代码创建新的 XSLT 文件和副本：  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
@@ -114,7 +113,7 @@ ms.locfileid: "58933536"
     </xsl:stylesheet>  
     ```  
   
-2.  在 `<xsl:apply-templates select="phone" />` 之后插入光标并按 Enter。 然后开始键入以下 `xsl: apply-templates` 元素：  
+2. 在 `<xsl:apply-templates select="phone" />` 之后插入光标并按 Enter。 然后开始键入以下 `xsl: apply-templates` 元素：  
   
     ```  
     <xsl:apply-templates select="phone"  mode="accountNumber">  
@@ -124,7 +123,7 @@ ms.locfileid: "58933536"
   
 ### <a name="to-use-intellisense-in-the-stylesheet-prefix-and-result-prefix-attributes-of-an-xslnamespace-alias-element"></a>在 xsl:namespace-alias 元素的 stylesheet-prefix 和 result-prefix 特性中使用 IntelliSense  
   
-1.  用下面的代码创建新的 XSLT 文件和副本：  
+1. 用下面的代码创建新的 XSLT 文件和副本：  
   
     ```  
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
@@ -155,7 +154,7 @@ ms.locfileid: "58933536"
     </xsl:stylesheet>  
     ```  
   
-2.  在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:namespace-alias` 元素：  
+2. 在 `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` 之后插入光标并按 Enter。 然后开始键入以下 `xsl:namespace-alias` 元素：  
   
     ```  
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  

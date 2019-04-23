@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5b1ffd20fb33048427ba4cacdbbd9360313db089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075991"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,36 +30,36 @@ ms.locfileid: "54771108"
   
 #### <a name="to-use-export-template-to-update-an-existing-template"></a>使用“导出模板”更新现有模板  
   
-1.  在 **文件** 菜单上，单击 **新建** ，然后单击 **新建项目**。  
+1. 在 **文件** 菜单上，单击 **新建** ，然后单击 **新建项目**。  
   
-2.  选择要更新的模板，输入临时项目的名称和位置，然后单击“确定”。  
+2. 选择要更新的模板，输入临时项目的名称和位置，然后单击“确定”。  
   
-3.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中修改项目。  
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中修改项目。  
   
-4.  在“文件”菜单上，单击“导出模板”，并使用“导出模板”向导创建新的模板。  
+4. 在“文件”菜单上，单击“导出模板”，并使用“导出模板”向导创建新的模板。  
   
-5.  在将更新的模板压缩为 .zip 文件后，请删除旧的 .zip 模板文件。  
+5. 在将更新的模板压缩为 .zip 文件后，请删除旧的 .zip 模板文件。  
   
 ## <a name="manually-updating-an-existing-template"></a>手动更新现有模板  
  通过修改压缩的 .zip 文件中的文件，可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之外更新现有模板。  
   
 #### <a name="to-manually-update-an-existing-template"></a>手动更新现有模板  
   
-1.  找到包含模板的 .zip 文件。 默认情况下，此文件位于 \My Documents\Visual Studio Version\My Exported Templates\\ 中。  
+1. 找到包含模板的 .zip 文件。 默认情况下，此文件位于 \My Documents\Visual Studio Version\My Exported Templates\\ 中。  
   
-2.  解压缩 .zip 文件。  
+2. 解压缩 .zip 文件。  
   
-3.  修改或删除当前的模板文件，或向该模板添加新文件。  
+3. 修改或删除当前的模板文件，或向该模板添加新文件。  
   
-4.  打开、修改并保存 .vstemplate XML 文件，以处理已更新的行为或新文件。 有关 .vstemplate 架构的详细信息，请参阅 [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。 有关可在源文件中进行参数化的内容的详细信息，请参阅[模板参数](../ide/template-parameters.md)  
+4. 打开、修改并保存 .vstemplate XML 文件，以处理已更新的行为或新文件。 有关 .vstemplate 架构的详细信息，请参阅 [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。 有关可在源文件中进行参数化的内容的详细信息，请参阅[模板参数](../ide/template-parameters.md)  
   
-5.  选择模板中的文件，右键单击，单击“发送至”，然后单击“压缩的文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
+5. 选择模板中的文件，右键单击，单击“发送至”，然后单击“压缩的文件夹”。 所选的文件被压缩到一个 .zip 文件中。  
   
-6.  将新 .zip 文件放在旧 .zip 文件的同一目录中。  
+6. 将新 .zip 文件放在旧 .zip 文件的同一目录中。  
   
-7.  删除解压缩的模板文件和旧的 .zip 模板文件。  
+7. 删除解压缩的模板文件和旧的 .zip 模板文件。  
   
-8.  启动（以管理员身份）开发人员命令提示的实例（在“开始”菜单上的“Visual Studio 2010/Visual Studio Tools/开发人员命令提示”下）。  
+8. 启动（以管理员身份）开发人员命令提示的实例（在“开始”菜单上的“Visual Studio 2010/Visual Studio Tools/开发人员命令提示”下）。  
   
 9. 运行以下命令：`devenv /installvstemplates`。  
   

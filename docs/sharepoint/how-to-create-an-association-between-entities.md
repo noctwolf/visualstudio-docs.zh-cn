@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092560"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：创建实体之间的关联
   可以定义您通过创建关联的业务数据连接 (BDC) 模型中实体之间的关系。 Visual Studio 生成的模型的使用者提供有关每个关联的信息的方法。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。
@@ -35,29 +35,29 @@ ms.locfileid: "56645116"
 
 ### <a name="to-create-an-association-between-entities"></a>若要创建实体之间的关联
 
-1.  上**BusinessDataConnectivity**选项卡**工具箱**，选择**关联**项。
+1. 上**BusinessDataConnectivity**选项卡**工具箱**，选择**关联**项。
 
-2.  在 BDC 设计器中，选择源实体，然后选择目标实体。
+2. 在 BDC 设计器中，选择源实体，然后选择目标实体。
 
      **关联编辑器**出现。
 
-3.  如果你想要创建外的基于密钥的关联，请选择**是外键关联**复选框。
+3. 如果你想要创建外的基于密钥的关联，请选择**是外键关联**复选框。
 
-    1.  在中**源 ID**的列**标识符映射**表中，选择将出现在每个匹配的类型描述符旁边的标识符**字段**列。
+    1. 在中**源 ID**的列**标识符映射**表中，选择将出现在每个匹配的类型描述符旁边的标识符**字段**列。
 
          例如，在**源 ID**列中，选择`ContactID`旁边`ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID`类型描述符和`ReadItem.salesOrder.SalesOrder.ContactID`类型描述符。
 
-4.  如果你想要创建外键的关联，请清除**是外键关联**复选框。
+4. 如果你想要创建外键的关联，请清除**是外键关联**复选框。
 
-5.  选择“确定”  按钮。
+5. 选择“确定”  按钮。
 
-6.  在 BDC 设计器中，表示关联的行显示源实体和目标实体之间。
+6. 在 BDC 设计器中，表示关联的行显示源实体和目标实体之间。
 
      Visual Studio 将添加到目标实体的服务类和源实体的服务类的关联导航方法。 有关关联导航方法的详细信息，请参阅[支持的操作](http://go.microsoft.com/fwlink/?LinkId=169286)。
 
-7.  源实体的关联导航方法，在添加返回的目标实体集合的代码。
+7. 源实体的关联导航方法，在添加返回的目标实体集合的代码。
 
-8.  目标实体的关联导航方法，在添加返回相关的源实体的代码。
+8. 目标实体的关联导航方法，在添加返回相关的源实体的代码。
 
      有关关联导航方法的示例，请参阅[创建实体之间的关联](../sharepoint/creating-an-association-between-entities.md)。
 

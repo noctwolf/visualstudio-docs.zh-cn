@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079832"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 在中**属性**窗口、 对话框或如变量设计器中，当您选择的设计器**浏览类型...** 从数据类型的列表，是**浏览并选择.NET 类型**对话框 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。  
   
  在很多用户方案中都使用此对话框，这些方案包括：  
   
--   设置变量或参数的类型时。  
+- 设置变量或参数的类型时。  
   
--   为一般活动选择类型时。  
+- 为一般活动选择类型时。  
   
--   在 <xref:System.Activities.Statements.TryCatch> 活动上添加一个 catch 时。  
+- 在 <xref:System.Activities.Statements.TryCatch> 活动上添加一个 catch 时。  
   
 > [!NOTE]
 >  类型浏览器可以显示 Visual Basic 交错数组类型，但不显示多维数组类型。 请参阅[交错数组](http://go.microsoft.com/fwlink/?LinkId=195226)并[多维数组](http://go.microsoft.com/fwlink/?LinkId=195227)有关详细信息。  
@@ -37,19 +37,19 @@ ms.locfileid: "58937020"
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>从类型浏览器中选择值或引用类型  
   
-1.  在中**类型名称**框中，输入你想要使用的类型的名称。  
+1. 在中**类型名称**框中，输入你想要使用的类型的名称。  
   
-2.  执行下列操作之一：  
+2. 执行下列操作之一：  
   
-    -   当你想要使用的类型名称出现的树中后**类型名称**框中，双击该类型以选择它。  
+    - 当你想要使用的类型名称出现的树中后**类型名称**框中，双击该类型以选择它。  
   
-    -   键入在足够字符**类型名称**中，用于唯一标识你想要使用并按 enter 以选择的类型的类型  
+    - 键入在足够字符**类型名称**中，用于唯一标识你想要使用并按 enter 以选择的类型的类型  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>从类型浏览器中选择一个泛型类型  
   
-1.  在中**类型名称**框中，键入你想要使用的类型的名称。  
+1. 在中**类型名称**框中，键入你想要使用的类型的名称。  
   
-2.  当你想要使用的类型名称出现的树中后**类型名称**框中，单击要选择它以导致下拉列表框的类型出现。  
+2. 当你想要使用的类型名称出现的树中后**类型名称**框中，单击要选择它以导致下拉列表框的类型出现。  
   
      选择想要用于关闭下拉列表框中，从泛型，然后单击类型**确定**。  
   
@@ -63,9 +63,9 @@ ms.locfileid: "58937020"
   
  例如：  
   
-1.  键入**操作**匹配<xref:System.OperationCanceledException>但不是<xref:System.InvalidOperationException>。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。  
+1. 键入**操作**匹配<xref:System.OperationCanceledException>但不是<xref:System.InvalidOperationException>。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。  
   
-2.  键入**泛型**匹配<xref:System.GenericUriParser>但不是在类型<xref:System.Collections.Generic>命名空间。 若要在 <xref:System.Collections.Generic> 命名空间中搜索类型，请键入该命名空间的完全限定名称。  
+2. 键入**泛型**匹配<xref:System.GenericUriParser>但不是在类型<xref:System.Collections.Generic>命名空间。 若要在 <xref:System.Collections.Generic> 命名空间中搜索类型，请键入该命名空间的完全限定名称。  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用类型浏览器对话框选择服务协定  
  选择服务协定类型时，类型浏览器只显示具有 <xref:System.ServiceModel.ServiceContractAttribute> 特性的类型。  

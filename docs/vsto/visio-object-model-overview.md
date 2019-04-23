@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096551"
 ---
 # <a name="visio-object-model-overview"></a>Visio 对象模型概述
   要为 Microsoft Office Visio 开发 Office 解决方案，则可以与 Visio 对象模型进行交互。 此对象模型包含 Visio 中主互操作程序集所提供的类和接口，并在 `Microsoft.Office.Interop.Visio` 命名空间中定义。
 
  本主题概要介绍 Visio 对象模型。 有关使用 Visio 对象模型在 Office 项目中执行任务的信息，请参阅以下主题：
 
--   [使用 Visio 文档](../vsto/working-with-visio-documents.md)
+- [使用 Visio 文档](../vsto/working-with-visio-documents.md)
 
--   [使用 Visio 形状](../vsto/working-with-visio-shapes.md)
+- [使用 Visio 形状](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>了解 Visio 对象模型
  Visio 提供了许多可与之交互的对象。 这些对象采用严格遵循用户界面的层次结构进行组织。 层次结构的顶部是 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) 对象。 此对象表示 Visio 的当前实例。 `Microsoft.Office.Interop.Visio.Application`对象包含`Microsoft.Office.Interop.Visio.Document`并`Microsoft.Office.Interop.Visio.Page`对象并将`Microsoft.Office.Interop.Visio.Documents`和`Microsoft.Office.Interop.Visio.Pages`集合。 每个对象和集合都有许多方法和属性，可进行访问以便操作并与其进行交互。
@@ -40,11 +40,11 @@ ms.locfileid: "56636705"
 
  下列各节简要介绍了顶级对象以及它们彼此交互的方式。 这些对象包括以下对象：
 
--   应用程序对象
+- 应用程序对象
 
--   文档对象
+- 文档对象
 
--   Page 对象
+- Page 对象
 
 ### <a name="application-object"></a>应用程序对象
  Microsoft.Office.Interop.Visio.Application 对象表示 Visio 应用程序，并且所有其他对象的父级。 其成员通常作为一个整体应用于 Visio。 可以使用的属性和方法 Microsoft.Office.Interop.Visio.Application 和`Microsoft.Office.Interop.Visio.ApplicationSettings`对象来控制 Visio 环境。

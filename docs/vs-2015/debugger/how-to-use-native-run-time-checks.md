@@ -41,12 +41,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6fc8c2019e8798411a10cd61272c2f6c1684c0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101673"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,11 +77,11 @@ ms.locfileid: "58936677"
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在调试版本中启用本机运行时检查  
   
--   使用 **/RTC** 选项，并与 C 运行库（如 /MDd）调试版链接。  
+- 使用 **/RTC** 选项，并与 C 运行库（如 /MDd）调试版链接。  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>更改本机运行时检查操作  
   
--   使用 `runtime_checks` 杂注。  
+- 使用 `runtime_checks` 杂注。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)   

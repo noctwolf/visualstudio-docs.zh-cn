@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36fc5dd306782779f553d4144c272c91c7e0f0af
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e7f99f646d2a93878ec0a78f75cdc6ae1fb0d1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095680"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
-当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过按照本主题，你将了解如何与数据库从简单 Windows 窗体"forms over data"应用程序中使用视觉对象进行交互C#或 Visual Basic 和 ADO.NET。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。
+当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过按照本主题，了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 与从简单的 Windows 窗体"forms over data"应用程序中的数据库进行交互。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。
 
 本文演示了一种快速的方式获取数据，这个数据库的简单方法。 如果你的应用程序需要修改重要的方法中的数据并更新数据库，则应考虑使用实体框架和使用数据绑定，以自动同步到基础数据中的更改的用户界面控件。
 
@@ -31,11 +31,11 @@ ms.locfileid: "55929396"
 
 要创建应用程序，你将需要：
 
--   Visual Studio。
+- Visual Studio。
 
--   SQL Server Express LocalDB。 如果你没有 SQL Server Express LocalDB，您可以从中进行安装[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)。
+- SQL Server Express LocalDB。 如果你没有 SQL Server Express LocalDB，您可以从中进行安装[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主题假定你熟悉 Visual Studio IDE 的基本功能和可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上的其他控件的窗体设置控件和代码简单事件的属性。 如果您不熟悉这些任务，我们建议你先完成[开始使用 VisualC#和 Visual Basic](../ide/quickstart-visual-basic-console.md)主题之前在开始本演练。
+本主题假定你熟悉 Visual Studio IDE 的基本功能和可以创建 Windows 窗体应用程序，将添加到项目中，将按钮和窗体上的其他控件的窗体设置控件和代码简单事件的属性。 如果您不熟悉这些任务，我们建议你先完成[开始使用 Visual C# 和 Visual Basic](../ide/quickstart-visual-basic-console.md)主题之前在开始本演练。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 
@@ -59,7 +59,7 @@ ms.locfileid: "55929396"
 
 7. 将 T-SQL 脚本粘贴到查询编辑器，然后选择**Execute**按钮。
 
-     后不久，查询完成运行并创建数据库对象。 数据库包含两个表： 客户和订单。 这些表最初不包含数据，但在运行，您将创建的应用程序时，您可以添加数据。 数据库还包含四个简单的存储的过程。
+     后不久，查询完成运行并创建数据库对象。 数据库包含两个表：客户和订单。 这些表最初不包含数据，但在运行，您将创建的应用程序时，您可以添加数据。 数据库还包含四个简单的存储的过程。
 
 ## <a name="create-the-forms-and-add-controls"></a>创建窗体并添加控件
 
@@ -69,11 +69,11 @@ ms.locfileid: "55929396"
 
 2. 添加两个 Windows 窗体到项目中，以使其具有三个窗体，然后给予它们下列名称：
 
-   -   **导航**
+   - **导航**
 
-   -   **NewCustomer**
+   - **NewCustomer**
 
-   -   **FillOrCancel**
+   - **FillOrCancel**
 
 3. 对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。
 
@@ -124,21 +124,21 @@ ms.locfileid: "55929396"
 
  可以通过右键单击在上找到的连接字符串**销售**中的数据连接**服务器资源管理器**，然后选择**属性**。 找到**ConnectionString**属性，然后使用**Ctrl**+**一个**， **Ctrl**+**C**选择并将字符串复制到剪贴板。
 
-1.  如果您使用的C#，请在**解决方案资源管理器**，展开**属性**节点，在项目下，和然后打开**Settings.settings**文件。
+1. 如果正在使用 C# 中，在**解决方案资源管理器**，展开**属性**节点在项目下，和然后打开**Settings.settings**文件。
     如果在使用 Visual Basic**解决方案资源管理器**，单击**显示所有文件**，展开**我的项目**节点，然后再打开**Settings.settings**文件。
 
-2.  在中**名称**列中，输入`connString`。
+2. 在中**名称**列中，输入`connString`。
 
-3.  在中**类型**列表中，选择 **（连接字符串）**。
+3. 在中**类型**列表中，选择 **（连接字符串）**。
 
-4.  在中**作用域**列表中，选择**应用程序**。
+4. 在中**作用域**列表中，选择**应用程序**。
 
-5.  在中**值**列中，输入连接字符串 （而无需任何外部引号），然后保存所做的更改。
+5. 在中**值**列中，输入连接字符串 （而无需任何外部引号），然后保存所做的更改。
 
 > [!NOTE]
 > 在实际的应用程序，您应在连接字符串，安全地存储中所述[连接字符串和配置文件](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)。
 
-##  <a name="write-the-code-for-the-forms"></a>编写窗体代码
+## <a name="write-the-code-for-the-forms"></a>编写窗体代码
 
 本部分包含每个窗体的功能的简要的概述。 它还提供单击窗体上的按钮时定义的基本逻辑的代码。
 
@@ -180,6 +180,7 @@ Navigation 窗体的代码页，在完成三个按钮方法体 click 事件处�
      ```csharp
      using System.Data.SqlClient;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      ```
@@ -212,6 +213,7 @@ FillOrCancel 窗体将运行查询时要返回订单输入订单 ID，然后单�
      using System.Data.SqlClient;
      using System.Text.RegularExpressions;
      ```
+
      ```vb
      Imports System.Data.SqlClient
      Imports System.Text.RegularExpressions

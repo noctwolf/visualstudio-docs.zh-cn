@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105833"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "58937898"
   
   必须执行以下步骤以使用受信任的应用程序部署：  
   
-1.  获取发布者的证书。  
+1. 获取发布者的证书。  
   
-2.  将发布者添加到所有客户端上的受信任的发布者存储区。  
+2. 将发布者添加到所有客户端上的受信任的发布者存储区。  
   
-3.  创建你的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。  
+3. 创建你的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。  
   
-4.  使用发布者的证书来签署部署清单。  
+4. 使用发布者的证书来签署部署清单。  
   
-5.  将应用程序部署发布到客户端计算机。  
+5. 将应用程序部署发布到客户端计算机。  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>获取发布者的证书  
  数字证书是 Microsoft 验证码身份验证和安全系统的核心组件。 验证码是 Windows 操作系统的标准部分。 所有 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序均必须使用数字证书进行签名，无论它们是否参与受信任的应用程序部署。 有关验证码如何与协同工作的完整说明[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，请参阅[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。  
@@ -78,9 +78,9 @@ ms.locfileid: "58937898"
   
  如果未在托管的桌面环境中部署应用程序，可使用以下选项将证书添加到受信任的发布者存储区：  
   
--   <xref:System.Security.Cryptography?displayProperty=fullName> 命名空间。  
+- <xref:System.Security.Cryptography?displayProperty=fullName> 命名空间。  
   
--   CertMgr.exe，这是 Internet Explorer 的一个组件，因此存在于 Windows 98 及所有更高版本中。 有关详细信息，请参阅[Certmgr.exe （证书管理器工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
+- CertMgr.exe，这是 Internet Explorer 的一个组件，因此存在于 Windows 98 及所有更高版本中。 有关详细信息，请参阅[Certmgr.exe （证书管理器工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
   
 ### <a name="create-a-clickonce-application"></a>创建 ClickOnce 应用程序  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序是一个结合有可描述应用程序并提供安装参数的清单文件的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 客户端应用程序。 可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的“发布”  命令将你的程序转换成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应用程序。 或者，可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 附带的工具生成 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有文件。 有关详细步骤[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  

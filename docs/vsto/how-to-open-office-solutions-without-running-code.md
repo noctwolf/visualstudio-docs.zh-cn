@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117156"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：打开 Office 解决方案但不运行代码
   创建具有托管的代码扩展的 Microsoft Office 解决方案运行，即使最终用户 Office 应用程序中的安全设置设为高。 这是因为.NET 程序集代码安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office。
@@ -36,7 +36,7 @@ ms.locfileid: "56616126"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>若要使用 Shift 键的跳过程序集
 
--   打开的文档和工作簿**文件**时按下菜单**Shift**密钥以防止 Word 和 Excel 打开文档时引发初始化事件。
+- 打开的文档和工作簿**文件**时按下菜单**Shift**密钥以防止 Word 和 Excel 打开文档时引发初始化事件。
 
     > [!NOTE]
     >  如果您打开的文档或从工作簿**Getting Started**任务窗格中，按住**Shift**未跳过代码。 此外，按下 shift 键不会阻止事件被引发后在文档处于打开状态。
@@ -45,7 +45,7 @@ ms.locfileid: "56616126"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>若要重命名或移除它通过绕过程序集
 
--   如果该程序集所在的计算机上具有所需的权限，可以重命名或删除程序集，使文档或工作簿找不到它。 这会导致每次打开 Office 文档时引发错误。
+- 如果该程序集所在的计算机上具有所需的权限，可以重命名或删除程序集，使文档或工作簿找不到它。 这会导致每次打开 Office 文档时引发错误。
 
      如果该解决方案由多个人员，此方法会运行所有这些解决方案。 如果在代码或引用的服务器中发现有问题，并且你想要停止执行其所有用户，这很有用。
 

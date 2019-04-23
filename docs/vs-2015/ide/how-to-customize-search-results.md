@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa56b6c1dbb79cf3d6c59283856e763c2cf7a958
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108381"
 ---
 # <a name="how-to-customize-search-results"></a>如何：自定义搜索结果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54799780"
   
 #### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>要更改一次显示的主题的数量  
   
-1.  在**工具栏**上，选择“查看器选项”。  
+1. 在**工具栏**上，选择“查看器选项”。  
   
      显示“查看器选项”对话框。  
   
-2.  在“最大搜索结果”列表中，选择 25、50、100 或 200。  
+2. 在“最大搜索结果”列表中，选择 25、50、100 或 200。  
   
 ## <a name="search-for-content-by-language"></a>按语言搜索内容  
  文档可能包含非英语的内容。 可以将搜索结果缩小到特定语言的内容。 还可以包含与搜索查询相匹配的任何英文内容。  
@@ -43,11 +43,11 @@ ms.locfileid: "54799780"
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>要包括英语内容和其他语言内容  
   
-1.  在**工具栏**上，选择“查看器选项”。  
+1. 在**工具栏**上，选择“查看器选项”。  
   
      显示“查看器选项”对话框。  
   
-2.  选择“在所有导航选项卡和 F1 请求中包括英语内容”复选框。  
+2. 选择“在所有导航选项卡和 F1 请求中包括英语内容”复选框。  
   
 ## <a name="see-also"></a>请参阅  
  [全文搜索提示](../ide/full-text-search-tips.md)

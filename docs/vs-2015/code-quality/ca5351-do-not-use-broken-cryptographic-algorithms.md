@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0b8129b4ff946658c5e1b4f24c57ca77cb50e14a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102661"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不使用损坏的加密算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "58935593"
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  使用更强大的加密选项：  
   
--   对于 MD5，请使用 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列的哈希（例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>）。  
+- 对于 MD5，请使用 [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) 系列的哈希（例如 <xref:System.Security.Cryptography.SHA512>、 <xref:System.Security.Cryptography.SHA384>、 <xref:System.Security.Cryptography.SHA256>）。  
   
--   对于 DES 和 RC2，请使用 <xref:System.Security.Cryptography.Aes> 加密。  
+- 对于 DES 和 RC2，请使用 <xref:System.Security.Cryptography.Aes> 加密。  
   
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  除非经过加密专家审查，否则不要禁止显示此规则的警告。  

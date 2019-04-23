@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099372"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何：添加和删除项 SharePoint 功能
   创建 SharePoint 解决方案时，Visual Studio 会将默认 SharePoint 项目项添加到你的功能。 在部署之前，可以添加和删除要修改 SharePoint 功能的 SharePoint 项目项。
@@ -46,9 +46,9 @@ ms.locfileid: "56619220"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>若要删除的功能设计器的 SharePoint 项目
 
-1.  选择中的一个或多个项**功能中的项**列表。
+1. 选择中的一个或多个项**功能中的项**列表。
 
-2.  选择**删除**按钮 (<)，一次删除一项或选择**全部删除**按钮 (<<) 删除所有项。
+2. 选择**删除**按钮 (<)，一次删除一项或选择**全部删除**按钮 (<<) 删除所有项。
 
      SharePoint 项目项会出现在**解决方案中的项**列表。
 

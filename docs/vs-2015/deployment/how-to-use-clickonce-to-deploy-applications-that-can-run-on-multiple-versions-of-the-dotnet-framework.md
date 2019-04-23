@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937796"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095472"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ ms.locfileid: "58937796"
   
  此过程需要执行以下步骤：  
   
-1.  生成应用程序和部署清单。  
+1. 生成应用程序和部署清单。  
   
-2.  更改部署清单，若要列出多个.NET Framework 版本。  
+2. 更改部署清单，若要列出多个.NET Framework 版本。  
   
-3.  更改 app.config 文件，若要列出兼容.NET Framework 运行时版本。  
+3. 更改 app.config 文件，若要列出兼容.NET Framework 运行时版本。  
   
-4.  更改要将标记作为.NET Framework 程序集的依赖程序集的应用程序清单。  
+4. 更改要将标记作为.NET Framework 程序集的依赖程序集的应用程序清单。  
   
-5.  对应用程序清单进行签名。  
+5. 对应用程序清单进行签名。  
   
-6.  更新和部署清单进行签名。  
+6. 更新和部署清单进行签名。  
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>若要生成应用程序和部署清单  
   
--   使用项目设计器的发布页或发布向导发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何：发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或[发布页上，项目设计器](../ide/reference/publish-page-project-designer.md)。  
+- 使用项目设计器的发布页或发布向导发布应用程序并生成应用程序和部署清单文件。 有关详细信息，请参阅[如何：发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)或[发布页上，项目设计器](../ide/reference/publish-page-project-designer.md)。  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>若要更改部署清单，若要列出多个.NET Framework 版本  
   
-1.  在发布目录中，在 Visual Studio 中使用 XML 编辑器打开部署清单。 部署清单具有.application 文件扩展名。  
+1. 在发布目录中，在 Visual Studio 中使用 XML 编辑器打开部署清单。 部署清单具有.application 文件扩展名。  
   
-2.  之间的 XML 代码替换为`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`和`</compatibleFrameworks>`列出你的应用程序支持的.NET Framework 版本的 XML 元素。  
+2. 之间的 XML 代码替换为`<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">`和`</compatibleFrameworks>`列出你的应用程序支持的.NET Framework 版本的 XML 元素。  
   
      下表显示了一些可用的.NET Framework 版本和相应的 XML 可添加到部署清单。  
   
@@ -68,9 +68,9 @@ ms.locfileid: "58937796"
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>若要更改 app.config 文件，若要列出兼容.NET Framework 运行时版本  
   
-1.  在解决方案资源管理器，通过在 Visual Studio 中使用 XML 编辑器中打开 App.config 文件。  
+1. 在解决方案资源管理器，通过在 Visual Studio 中使用 XML 编辑器中打开 App.config 文件。  
   
-2.  替换 （或添加） 之间的 XML 代码`<startup>`和`</startup>`列出了受支持的.NET Framework 运行时为应用程序的 XML 元素。  
+2. 替换 （或添加） 之间的 XML 代码`<startup>`和`</startup>`列出了受支持的.NET Framework 运行时为应用程序的 XML 元素。  
   
      下表显示了一些可用的.NET Framework 版本和相应的 XML 可添加到部署清单。  
   
@@ -83,15 +83,15 @@ ms.locfileid: "58937796"
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>若要更改要将标记作为.NET Framework 程序集的依赖程序集的应用程序清单  
   
-1.  在发布目录中，在 Visual Studio 中使用 XML 编辑器打开应用程序清单。 部署清单具有.manifest 文件扩展名。  
+1. 在发布目录中，在 Visual Studio 中使用 XML 编辑器打开应用程序清单。 部署清单具有.manifest 文件扩展名。  
   
-2.  添加`group="framework"`sentinel 程序集的依赖项 XML 到 (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 应如下所示：  
+2. 添加`group="framework"`sentinel 程序集的依赖项 XML 到 (`System.Core`， `WindowsBase`， `Sentinel.v3.5Client`，和`System.Data.Entity`)。 例如，XML 应如下所示：  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  更新的版本号`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 元素到是最低通用标准.NET Framework 的版本号。 例如，如果应用程序面向.NET Framework 3.5 和[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]，使用 2.0.50727.0 版本号和 XML 应如下所示：  
+3. 更新的版本号`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 元素到是最低通用标准.NET Framework 的版本号。 例如，如果应用程序面向.NET Framework 3.5 和[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]，使用 2.0.50727.0 版本号和 XML 应如下所示：  
   
     ```  
     <dependency>  
@@ -103,7 +103,7 @@ ms.locfileid: "58937796"
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>若要更新和重新签名的应用程序和部署清单  
   
--   更新和应用程序和部署清单重新签名。 有关详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+- 更新和应用程序和部署清单重新签名。 有关详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   

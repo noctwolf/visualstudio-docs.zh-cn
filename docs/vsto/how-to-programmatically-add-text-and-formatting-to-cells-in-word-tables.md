@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 983b2939d652c20c3fbcb42dd8caded802495c8d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063863"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>如何：以编程方式添加的文本和格式向 Word 表中的单元格
   每个表都包含一个单元格集合。 每个单独的 <xref:Microsoft.Office.Interop.Word.Cell> 对象都表示表中的一个单元格。 你可以通过表中每个单元格的位置对其进行引用。 此示例引用位于表中第一行和第一列的单元格；将文本添加到单元格；并应用格式设置。
@@ -29,7 +29,7 @@ ms.locfileid: "56614644"
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>若要将文本和格式设置添加到单元格
 
-1.  通过单元格在表中的位置对其进行引用，将文本添加到单元，并应用格式设置。
+1. 通过单元格在表中的位置对其进行引用，将文本添加到单元，并应用格式设置。
 
      下面的代码示例可用于文档级自定义项。 若要使用此示例，请从项目的 `ThisDocument` 类中运行它。
 

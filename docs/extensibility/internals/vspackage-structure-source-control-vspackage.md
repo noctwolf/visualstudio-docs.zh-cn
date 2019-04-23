@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aeaa87cf55b9429904286817b043dcba92d2bfcf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 03b9d4fb6a92694df55d6732ac80d75645209a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071273"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 结构（源代码管理 VSPackage）
 
@@ -28,23 +28,23 @@ VSPackage 声明其菜单项，并建立通过.vsct 文件的默认项状态。 
 
 源代码管理 VSPackage 深入地集成到 Visual Studio。 VSPackage 语义包括：
 
--   由于正在 VSPackage 实现的接口 (`IVsPackage`接口)
+- 由于正在 VSPackage 实现的接口 (`IVsPackage`接口)
 
--   UI 命令实现 (.vsct 文件和实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口)
+- UI 命令实现 (.vsct 文件和实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口)
 
--   使用 Visual Studio VSPackage 的注册。
+- 使用 Visual Studio VSPackage 的注册。
 
 源代码管理 VSPackage 必须与这些其他 Visual Studio 实体通信：
 
--   项目
+- 项目
 
--   编辑器
+- 编辑器
 
--   解决方案
+- 解决方案
 
--   Windows
+- Windows
 
--   运行文档表
+- 运行文档表
 
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>可能使用的 visual Studio 环境服务
 

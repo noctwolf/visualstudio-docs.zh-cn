@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38601f8d88b56c3957943b28be298ac24eb12c91
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983918"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567875"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 Azure 应用服务
 
@@ -55,9 +55,9 @@ ms.locfileid: "57983918"
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>在 Visual Studio 中新建 ASP.NET 项目
 
-1. 在运行 Visual Studio 的计算机中，依次选择“文件” > “新建项目”。
+1. 在运行 Visual Studio 的计算机上，创建新项目。
 
-1. 在 Visual C# 或 Visual Basic 下选择“Web”，然后在中间窗格中选择“ASP.NET Web 应用程序(.NET Framework)”或（仅限 C#）“ASP.NET Core Web 应用程序”，然后单击“确定”。
+    选择正确的模板。 在此示例中，选择“ASP.NET Web 应用程序(.NET Framework)”或“ASP.NET Core Web 应用程序”（仅限 C#），然后单击“确定”。
 
     如果没有看到指定的项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 安装“ASP.NET 和 Web 开发”工作负载。
 

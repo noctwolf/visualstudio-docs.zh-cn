@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106353"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：显示和隐藏寄存器组
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58931988"
   
 ### <a name="to-display-or-hide-register-groups"></a>显示或隐藏寄存器组  
   
-1.  右击“寄存器”窗口。  
+1. 右击“寄存器”窗口。  
   
-2.  在快捷菜单上，选择要显示或隐藏的寄存器组。  
+2. 在快捷菜单上，选择要显示或隐藏的寄存器组。  
   
      正在调试的硬件不支持的寄存器组在快捷菜单中被禁用，因此不能被选择。  
   

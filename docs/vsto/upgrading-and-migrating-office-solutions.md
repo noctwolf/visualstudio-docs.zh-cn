@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089363"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>升级和迁移 Office 解决方案
   如果你拥有在 Visual Studio 早期版本中创建的 Microsoft Office 项目，则必须升级该项目以在 Visual Studio 当前版本中使用。 若要升级 Microsoft Office 项目，请在包含 Microsoft Office 开发人员工具的 Visual Studio 版本中打开该项目。 有关包括 Microsoft Office 开发人员工具的 Visual Studio 版本的详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
@@ -35,22 +35,22 @@ ms.locfileid: "56635704"
 ## <a name="changes-to-upgraded-projects"></a>对升级后的项目的更改
  升级 Microsoft Office 项目时，Visual Studio 会将项目修改为面向以下各项：
 
--   Visual Studio 2010 Tools for Office 运行时。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+- Visual Studio 2010 Tools for Office 运行时。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
--   当前程序集引用。
+- 当前程序集引用。
 
--   该项目类型所支持的 .NET framework 版本（仅在升级到 Visual Studio 2013 时支持）。
+- 该项目类型所支持的 .NET framework 版本（仅在升级到 Visual Studio 2013 时支持）。
 
--   该项目类型所支持的 Microsoft Office 版本（仅在升级到 Visual Studio 2013 时支持）。
+- 该项目类型所支持的 Microsoft Office 版本（仅在升级到 Visual Studio 2013 时支持）。
 
 ## <a name="assembly-references"></a>程序集引用
  Visual Studio 将升级项目中的以下程序集引用：
 
--   Microsoft Office 主互操作程序集 (PIA)。
+- Microsoft Office 主互操作程序集 (PIA)。
 
--   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的程序集。 有关这些程序集的详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中的程序集。 有关这些程序集的详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
--   新的或更新版本的依赖程序集。
+- 新的或更新版本的依赖程序集。
 
 ## <a name="targeted-net-framework"></a>已面向 .NET Framework
  将项目升级到 Visual Studio 2013 时，Visual Studio 会将该项目修改为面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 或 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 项目所面向的 .NET Framework 版本取决于你计算机上安装的 Office 的版本。 如果安装的是 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ，Visual Studio 会将项目修改为面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 否则，Visual Studio 会将项目修改为面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。

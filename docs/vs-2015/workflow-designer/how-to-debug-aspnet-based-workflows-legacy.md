@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069592"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>如何：调试基于 ASP.NET 的工作流（旧版）
 本主题介绍如何在旧 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 中，调试基于 [!INCLUDE[wf](../includes/wf-md.md)] 并面向 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序。  
@@ -28,25 +28,25 @@ ms.locfileid: "58932452"
   
 ### <a name="to-debug-an-aspnet-based-workflow"></a>调试基于 ASP.NET 的工作流  
   
-1.  为启用调试 ASP.NET 应用程序通过设置**调试 = true** web.config 文件中。  
+1. 为启用调试 ASP.NET 应用程序通过设置**调试 = true** web.config 文件中。  
   
-2.  将工作流库设置为启动项目，并在工作流上设置断点。  
+2. 将工作流库设置为启动项目，并在工作流上设置断点。  
   
-3.  在工作流项目属性中输入默认网页的 URL**调试**选项**与外部 URL 启动浏览器**文本框。  
+3. 在工作流项目属性中输入默认网页的 URL**调试**选项**与外部 URL 启动浏览器**文本框。  
   
-4.  选择**附加到进程**上**调试**菜单。  
+4. 选择**附加到进程**上**调试**菜单。  
   
-5.  选择要从附加到的进程**可用进程**列表。  
+5. 选择要从附加到的进程**可用进程**列表。  
   
      附加到承载工作流的 w3wp.exe、webdev.webserver 或 aspnet_wp 进程。  
   
-6.  单击**选择**旁边**附加到**文本框。  
+6. 单击**选择**旁边**附加到**文本框。  
   
      **选择代码类型**对话框随即出现。  
   
-7.  选择**调试这些代码类型**，然后选择**工作流**。  
+7. 选择**调试这些代码类型**，然后选择**工作流**。  
   
-8.  单击 **“确定”**。  
+8. 单击 **“确定”**。  
   
 9. 单击 **“附加”**。  
   

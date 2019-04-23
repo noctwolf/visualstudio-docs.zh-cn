@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102938"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>连接到 Access 数据库中的数据（Windows 窗体）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +40,30 @@ ms.locfileid: "58932584"
   
 #### <a name="to-create-the-dataset"></a>创建数据集  
   
-1.  打开要将数据连接到的 Windows 窗体应用程序。  
+1. 打开要将数据连接到的 Windows 窗体应用程序。  
   
-2.  上**视图**菜单中，选择**其他 Windows** > **数据源**。  
+2. 上**视图**菜单中，选择**其他 Windows** > **数据源**。  
   
      ![查看其他 Windows 数据源](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
+3. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
   
      ![添加新数据源](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  选择**数据库**上**选择数据源类型**页，，然后选择**下一步**。  
+4. 选择**数据库**上**选择数据源类型**页，，然后选择**下一步**。  
   
-5.  选择**数据集**上**选择数据库模型**页，，然后选择**下一步**。  
+5. 选择**数据集**上**选择数据库模型**页，，然后选择**下一步**。  
   
-6.  在“选择数据连接”页面上选择“新建连接”，配置一个新的数据连接。  
+6. 在“选择数据连接”页面上选择“新建连接”，配置一个新的数据连接。  
   
-7.  更改**数据源**到**OLE DB 的.NET Framework 数据提供程序**。  
+7. 更改**数据源**到**OLE DB 的.NET Framework 数据提供程序**。  
   
      ![将数据提供程序更改为 OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
     >  尽管数据源的**Microsoft Access 数据库文件 (OLE DB)** 似乎是正确的选择，只能为.mdb 数据库文件使用该数据源类型。  
   
-8.  在中**OLE DB 访问接口**，选择**Microsoft Office 12.0 Access 数据库引擎 OLE DB 访问接口**。  
+8. 在中**OLE DB 访问接口**，选择**Microsoft Office 12.0 Access 数据库引擎 OLE DB 访问接口**。  
   
      ![OLE DB 提供程序 Microsoft Office 12.0 Access](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
@@ -87,23 +87,23 @@ ms.locfileid: "58932584"
   
 #### <a name="to-create-the-dataset"></a>创建数据集  
   
-1.  打开要将数据连接到的 Windows 窗体应用程序。  
+1. 打开要将数据连接到的 Windows 窗体应用程序。  
   
-2.  上**视图**菜单中，选择**其他 Windows** > **数据源**。  
+2. 上**视图**菜单中，选择**其他 Windows** > **数据源**。  
   
      ![查看其他 Windows 数据源](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
+3. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。  
   
-4.  选择**数据库**上**选择数据源类型**页，，然后选择**下一步**。  
+4. 选择**数据库**上**选择数据源类型**页，，然后选择**下一步**。  
   
-5.  选择**数据集**上**选择数据库模型**页，，然后选择**下一步**。  
+5. 选择**数据集**上**选择数据库模型**页，，然后选择**下一步**。  
   
-6.  在“选择数据连接”页面上选择“新建连接”，配置一个新的数据连接。  
+6. 在“选择数据连接”页面上选择“新建连接”，配置一个新的数据连接。  
   
-7.  如果数据源不是**Microsoft Access 数据库文件 (OLE DB)**，选择**更改**以打开**更改数据源**对话框，选择**Microsoft访问数据库文件**，然后选择**确定**。  
+7. 如果数据源不是**Microsoft Access 数据库文件 (OLE DB)**，选择**更改**以打开**更改数据源**对话框，选择**Microsoft访问数据库文件**，然后选择**确定**。  
   
-8.  在中**数据库文件的名称**，指定的路径和你想要连接，，然后选择的.mdb 文件的名称**确定**。  
+8. 在中**数据库文件的名称**，指定的路径和你想要连接，，然后选择的.mdb 文件的名称**确定**。  
   
      ![添加连接 Access 数据库文件](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ ms.locfileid: "58932584"
 ## <a name="next-steps"></a>后续步骤  
  你刚刚创建的数据集现已推出**数据源**窗口。 现在可以执行以下任何任务：  
   
--   选择中的项**数据源**窗口并将其拖到窗体上 (请参阅[绑定 Windows 窗体控件添加到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
+- 选择中的项**数据源**窗口并将其拖到窗体上 (请参阅[绑定 Windows 窗体控件添加到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md))。  
   
--   在要添加或编辑组成数据集的对象的数据集设计器中打开数据源。  
+- 在要添加或编辑组成数据集的对象的数据集设计器中打开数据源。  
   
--   添加验证逻辑<xref:System.Data.DataTable.ColumnChanging>或<xref:System.Data.DataTable.RowChanging>数据表中数据集事件 (请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md))。  
+- 添加验证逻辑<xref:System.Data.DataTable.ColumnChanging>或<xref:System.Data.DataTable.RowChanging>数据表中数据集事件 (请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md))。  
   
 ## <a name="see-also"></a>请参阅
 

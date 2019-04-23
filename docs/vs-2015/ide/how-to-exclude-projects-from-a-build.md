@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04a3a45af932a34b89feb2726e7a137ceea2ac5a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6a0b46a4aaa780357faa38a9ee4b01d04b1a0ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110921"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：从生成中排除项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,29 +31,29 @@ ms.locfileid: "54780121"
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>从活动解决方案配置中暂时删除项目  
   
-1.  在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
+1. 在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
   
-2.  在“项目上下文”表中，找到要从生成中排除的项目。  
+2. 在“项目上下文”表中，找到要从生成中排除的项目。  
   
-3.  在项目的“生成”列中，清除复选框。  
+3. 在项目的“生成”列中，清除复选框。  
   
-4.  选择“关闭”按钮，然后重新生成解决方案。  
+4. 选择“关闭”按钮，然后重新生成解决方案。  
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>创建排除项目的解决方案配置  
   
-1.  在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
+1. 在菜单栏上，依次选择 **“生成”**、 **“配置管理器”**。  
   
-2.  在“活动解决方案配置”列表中，选择“\<新建>”。  
+2. 在“活动解决方案配置”列表中，选择“\<新建>”。  
   
-3.  在“名称”框中，输入解决方案配置的名称。  
+3. 在“名称”框中，输入解决方案配置的名称。  
   
-4.  在“从以下对象复制设置”列表中，选择新配置所要基于的解决方案配置（例如，“调试”），然后选择“确定”按钮。  
+4. 在“从以下对象复制设置”列表中，选择新配置所要基于的解决方案配置（例如，“调试”），然后选择“确定”按钮。  
   
-5.  在“配置管理器”对话框中，清除待排除项目的“生成”列中的复选框，然后选择“关闭”按钮。  
+5. 在“配置管理器”对话框中，清除待排除项目的“生成”列中的复选框，然后选择“关闭”按钮。  
   
-6.  在“标准”工具栏上，确保“解决方案配置”框中的新解决方案配置是活动配置。  
+6. 在“标准”工具栏上，确保“解决方案配置”框中的新解决方案配置是活动配置。  
   
-7.  在菜单栏上，依次选择“生成”、“重新生成解决方案”。  
+7. 在菜单栏上，依次选择“生成”、“重新生成解决方案”。  
   
 ## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   

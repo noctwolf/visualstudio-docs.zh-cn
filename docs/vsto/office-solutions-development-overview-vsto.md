@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c9c834d3fbb49775d9462ac5e6ce3d27127f793
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061952"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。
@@ -43,11 +43,11 @@ ms.locfileid: "56628775"
 
  有关自定义项的详细信息，请参阅以下主题：
 
--   [用于 Excel 的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
+- [用于 Excel 的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 
--   [Word 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)
+- [Word 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 
--   [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
+- [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 
 ### <a name="vsto-add-ins"></a>VSTO 外接程序
  VSTO 外接程序包含与 Microsoft Office 应用程序相关联的程序集。 通常情况下，启动相关联的应用程序时，VSTO 外接程序就会运行，但是用户还可以在运行应用程序之后加载 VSTO 外接程序。 无论打开哪一个文档，所创建的 VSTO 外接程序中的功能都可用于应用程序自身。
@@ -56,9 +56,9 @@ ms.locfileid: "56628775"
 
  有关 VSTO 外接程序的详细信息，请参阅以下主题：
 
--   [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
+- [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
 
--   [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)
+- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>通过使用主互操作程序集自动化 Office 应用程序
  通过编写访问应用程序对象模型的代码，你可以以编程方式将 Office 应用程序的功能合并到你的解决方案。 对象模型是通过各种属性和方法公开功能的类的排列。 每个 Office 应用程序的对象模型都不同。
@@ -69,9 +69,9 @@ ms.locfileid: "56628775"
 
  有关使用 VSTO Office 解决方案中的 PIA 的详细信息，请参阅以下主题：
 
--   [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)
+- [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)
 
--   [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)
+- [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>在最终用户计算机上运行 Microsoft VSTO Office 解决方案
  当创建 VSTO Office 解决方案时，请考虑部署要求可能影响开发选择的方式。

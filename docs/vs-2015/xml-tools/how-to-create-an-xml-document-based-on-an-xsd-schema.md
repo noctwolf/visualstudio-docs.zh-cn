@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70b42db031c200f16a9189c4d750c9011e739029
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 623da37807e0fd61041bfeb9ab411ce0cb96d4b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091118"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：基于 XSD 架构创建 XML 文档
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ ms.locfileid: "59647566"
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>基于 XSD 文件生成 XML 实例文档  
   
-1.  按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
+1. 按照中的步骤[如何：创建和编辑 XSD 架构文件](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
   
-2.  在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。  
+2. 在中[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)，右键单击`PurchaseOrder`全局元素。 选择**生成示例 XML**。  
   
      在您选择此选项后，将生成使用以下示例 XML 内容的 PurchaseOrder.xml 文件并在“XML 编辑器”中打开该文件：  
   

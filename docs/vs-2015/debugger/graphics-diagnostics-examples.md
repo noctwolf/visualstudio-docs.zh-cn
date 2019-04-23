@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52c1c2cc7304828e9ace7e9b5072d262a5395a1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 14b4ac689109e29baa4ee06c668b208d0d5227b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072768"
 ---
 # <a name="graphics-diagnostics-examples"></a>图形诊断示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "58933804"
 ## <a name="capturing-graphics-information"></a>捕获图形信息  
  在可以使用图形诊断来诊断应用中的呈现问题之前，必须在应用运行时从应用中捕获图形信息。 可以从正在本地运行的应用或从正在远程计算机或其他设备上运行的应用中捕获图形信息。 以下演练演示如何通过手动方式或编程方式从应用中捕获图形信息：  
   
--   [演练：捕获图形信息](../debugger/walkthrough-capturing-graphics-information.md)  
+- [演练：捕获图形信息](../debugger/walkthrough-capturing-graphics-information.md)  
   
--   [演练：以编程方式捕获图形信息](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
+- [演练：以编程方式捕获图形信息](../debugger/walkthrough-capturing-graphics-information-programmatically.md)  
   
 ## <a name="use-graphics-diagnostics-with-an-arm-based-device"></a>将图形诊断用于基于 ARM 的设备  
  通过使用远程调试，你可以使用图形诊断调试基于 ARM 的设备上的 Direct3D 应用。 有关详细信息，请参阅[操作说明：将图形诊断用于 ARM 设备](../debugger/how-to-use-graphics-diagnostics-with-an-arm-device.md)。  
@@ -39,18 +39,18 @@ ms.locfileid: "58933804"
   
  以下方案演示如何使用图形诊断确定缺少对象的原因，以及查找有关代码。  
   
--   [演练：因设备状态而缺少对象](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
+- [演练：因设备状态而缺少对象](../debugger/walkthrough-missing-objects-due-to-device-state.md)  
   
--   [演练：因顶点着色而缺少对象](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
+- [演练：因顶点着色而缺少对象](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)  
   
--   [演练：因管道误配置而缺少对象](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
+- [演练：因管道误配置而缺少对象](../debugger/walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   
 ## <a name="debugging-rendering-errors"></a>调试呈现错误  
  一个对象（或多个对象）具有的外观不正确是图形开发人员遇到的另一个常见问题。 这种问题很难诊断，因为不正确的外观及其成因可能非常明显（绑定了错误纹理），也可能难以捉摸（着色器代码中的 Bug 或着色器之间的意外交互）。 某些问题可能是由一组错误导致的。  
   
  以下方案演示如何使用图形诊断跟踪由较小的着色器 Bug 引起的不太难捉摸的呈现问题：  
   
--   [演练：调试因着色引起的呈现错误](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
+- [演练：调试因着色引起的呈现错误](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)  
   
 ## <a name="debugging-compute-shaders"></a>调试计算着色器  
  可以使用图形诊断调试产生不正确结果的 DirectCompute 计算着色器内核。 借助 DirectCompute，你可以使用 GPU 的计算能力，以并行执行大量数据元素上的计算。 对于某些种类的问题，可以多次执行使用 GPU，速度甚至比良好优化过的 CPU 代码还快。 但是，传统的调试器无法检测在 GPU 上运行的代码。 调试此种代码需要专用工具，这些工具通常特定于供应商，而且可能不会与 Visual Studio 很好地集成。 为了使计算着色器调试在 GPU 范围内更为一致，图形诊断将捕获 DirectCompute 调度事件（包括 Direct3D 呈现事件），以便你可以使用熟悉的工具调试计算着色器代码中的问题。  

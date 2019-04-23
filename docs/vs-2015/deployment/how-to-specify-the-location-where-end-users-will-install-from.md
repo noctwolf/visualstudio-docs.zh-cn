@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5dd42c4753bdea11c32f6de06c6386320aa2a2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108498"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定最终用户从中进行安装的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58935981"
   
 ### <a name="to-specify-an-installation-url"></a>若要指定安装 URL  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击“发布”选项卡。  
+2. 单击“发布”选项卡。  
   
-3.  在安装 URL 字段中，输入使用完全限定的 URL 使用以下格式的安装位置 http://www.microsoft.com/ApplicationName，或使用以下格式的 UNC 路径\\\Server\ApplicationName。  
+3. 在安装 URL 字段中，输入使用完全限定的 URL 使用以下格式的安装位置 http://www.microsoft.com/ApplicationName，或使用以下格式的 UNC 路径\\\Server\ApplicationName。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：指定 Visual Studio 复制文件的位置](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

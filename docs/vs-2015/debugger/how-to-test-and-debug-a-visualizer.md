@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d19fa9b1859e97b115ca0799520456c102fecac9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044091"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：测试和调试可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58937090"
   
 ### <a name="to-create-a-visualizer-development-host"></a>创建可视化工具开发宿主  
   
-1.  在调试器端类中，包含一个创建 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> 对象并调用其 show 方法的静态方法：  
+1. 在调试器端类中，包含一个创建 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> 对象并调用其 show 方法的静态方法：  
   
     ```  
     public static void TestShowVisualizer(object objectToVisualize)  
@@ -48,7 +48,7 @@ ms.locfileid: "58937090"
   
      用于构造宿主的参数是数据对象（将显示在可视化工具 (`objectToVisualize`) 中）和调试器端类的类型。  
   
-2.  添加下面的语句以调用 `TestShowVisualizer`。 如果可视化工具是在类库中创建的，则需要创建调用该类库的可执行文件，并将此语句放置到可执行文件中：  
+2. 添加下面的语句以调用 `TestShowVisualizer`。 如果可视化工具是在类库中创建的，则需要创建调用该类库的可执行文件，并将此语句放置到可执行文件中：  
   
     ```  
     DebuggerSide.TestShowVisualizer(myString);  

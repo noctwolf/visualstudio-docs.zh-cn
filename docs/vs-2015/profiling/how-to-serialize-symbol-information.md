@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3f0359613586531a4cc7b80e25acc02be9ae37f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103792"
 ---
 # <a name="how-to-serialize-symbol-information"></a>如何：序列化符号信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "54769169"
   
 ### <a name="to-automatically-serialize-symbol-information"></a>自动序列化符号信息  
   
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
      随即出现“选项”对话框。  
   
-2.  单击“性能工具”。  
+2. 单击“性能工具”。  
   
-3.  在“常规设置”下，选择“自动序列化符号信息”。  
+3. 在“常规设置”下，选择“自动序列化符号信息”。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   

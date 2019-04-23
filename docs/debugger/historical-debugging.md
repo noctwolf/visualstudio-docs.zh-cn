@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075312"
 ---
-# <a name="historical-debugging-c-visual-basic-c"></a>历史调试 (C#，Visual Basic、 c + +)
+# <a name="historical-debugging-c-visual-basic-c"></a>历史调试 (C#，Visual Basic 中， C++)
 
 历史调试是取决于 IntelliTrace 所收集信息的调试模式。 它允许你向前和前后移动应用程序的执行，并检查其状态。
 
@@ -31,8 +31,8 @@ ms.locfileid: "56689260"
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>如何开始使用历史调试？
 
- 默认启用 IntelliTrace。 您需要做的只是决定哪些事件和函数调用感兴趣，并且是否想要查看完整的应用程序状态的快照。 要详细了解如何定义想查看的内容，请参阅 [IntelliTrace 功能](../debugger/intellitrace-features.md)。 支持的功能因语言和应用程序类型。
+默认启用 IntelliTrace。 您需要做的只是决定哪些事件和函数调用感兴趣，并且是否想要查看完整的应用程序状态的快照。 要详细了解如何定义想查看的内容，请参阅 [IntelliTrace 功能](../debugger/intellitrace-features.md)。 支持的功能因语言和应用程序类型。
 
- - 若要查看使用历史调试快照，请参阅[检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)
- - 若要了解如何检查变量和导航代码，请参阅[检查使用历史调试对应用程序](../debugger/historical-debugging-inspect-app.md)
- - 若要了解有关使用 IntelliTrace 事件进行调试的详细信息，请参阅[演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。
+- 若要查看使用历史调试快照，请参阅[检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)
+- 若要了解如何检查变量和导航代码，请参阅[检查使用历史调试对应用程序](../debugger/historical-debugging-inspect-app.md)
+- 若要了解有关使用 IntelliTrace 事件进行调试的详细信息，请参阅[演练：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。

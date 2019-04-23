@@ -19,23 +19,22 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec788e9f0ef80a1543aa15f4ff9bfb21daac6123
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6470125656debf420990ed9b471a5303f66d5712
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803464"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654908"
 ---
 # <a name="lc-task"></a>LC 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 LC.exe 文件，它可从 .licx 文件生成 .license 文件。 有关 LC.exe 的详细信息，请参阅 [Lc.exe (License Compiler)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460)（Lc.exe（许可证编译器））。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `LC` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`LicenseTarget`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定将为其生成 .licenses 文件的可执行文件。|  
 |`NoLogo`|可选 `Boolean` 参数。<br /><br /> 取消显示 Microsoft 启动版权标志。|  

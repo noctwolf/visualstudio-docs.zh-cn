@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090536"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>表达式计算的实现示例
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684970"
 
  `IDebugExpressionEvaluator::Parse`执行下列任务：
 
-1.  [C + +]分析表达式来查找错误。
+1. [C++仅]分析表达式来查找错误。
 
-2.  实例化一个类 (称为`CParsedExpression`在此示例中) 运行一次`IDebugParsedExpression`接口，并将存储在类中要分析的表达式。
+2. 实例化一个类 (称为`CParsedExpression`在此示例中) 运行一次`IDebugParsedExpression`接口，并将存储在类中要分析的表达式。
 
-3.  返回`IDebugParsedExpression`接口从`CParsedExpression`对象。
+3. 返回`IDebugParsedExpression`接口从`CParsedExpression`对象。
 
 > [!NOTE]
 >  在下面的示例和 MyCEE 示例中，表达式计算器不会将从评估分析。

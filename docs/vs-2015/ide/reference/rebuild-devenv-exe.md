@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 027612d7ce4ee2ec933897b05f33f03e8a6df992
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037941"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 清理然后生成指定解决方案配置。  
   
 ## <a name="syntax"></a>语法  
@@ -49,11 +48,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="remarks"></a>备注  
   
--   在集成开发环境 (IDE) 中，此开关执行与“重新生成解决方案”菜单命令相同的功能。  
+- 在集成开发环境 (IDE) 中，此开关执行与“重新生成解决方案”菜单命令相同的功能。  
   
--   用双引号将含有空格的字符串引起来。  
+- 用双引号将含有空格的字符串引起来。  
   
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示清理和生成的摘要信息（包括错误）。  
+- “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示清理和生成的摘要信息（包括错误）。  
   
 ## <a name="example"></a>示例  
  本示例使用 `MySolution` 的 `Debug` 解决方案配置中的 `Debug` 项目生成配置来清理和重新生成 `CSharpWinApp` 项目。  

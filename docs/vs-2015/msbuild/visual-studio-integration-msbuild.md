@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2446320f1cbf0551fdfb1532df4fea23631b1131
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117494"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>进程内编译器  
  如果可能，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将尝试使用进程内版本的 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 编译器来提高性能。 （不适用于 [!INCLUDE[csprcs](../includes/csprcs-md.md)]。）为了让它正确工作，必须满足下面的条件：  
   
--   在项目的目标中，必须具有名为 `Vbc` 的任务（适用于 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目）。  
+- 在项目的目标中，必须具有名为 `Vbc` 的任务（适用于 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目）。  
   
--   任务的 `UseHostCompilerIfAvailable` 参数必须设置为 True。  
+- 任务的 `UseHostCompilerIfAvailable` 参数必须设置为 True。  
   
 ## <a name="design-time-intellisense"></a>设计时 IntelliSense  
  在生成过程生成输出程序集之前，若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中获得 IntelliSense 支持，必须满足下面的条件：  
   
--   必须有名为 `Compile`的目标。  
+- 必须有名为 `Compile`的目标。  
   
--   `Compile` 目标或它的一个依赖项必须调用该项目的编译器任务，例如， `Csc` 或 `Vbc`。  
+- `Compile` 目标或它的一个依赖项必须调用该项目的编译器任务，例如， `Csc` 或 `Vbc`。  
   
--   `Compile` 目标或它的一个依赖项必须导致编译器接收使用 IntelliSense 所需的所有参数，特别是所有引用。  
+- `Compile` 目标或它的一个依赖项必须导致编译器接收使用 IntelliSense 所需的所有参数，特别是所有引用。  
   
--   “进程内编译器”部分中列出的条件必须满足。  
+- “进程内编译器”部分中列出的条件必须满足。  
   
 ## <a name="building-solutions"></a>生成解决方案  
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，解决方案文件和项目生成顺序由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 本身进行控制。 在命令行用 msbuild.exe 生成解决方案时，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 将分析解决方案文件，并对项目生成进行排序。 在这两种情况下，项目都将按依赖顺序逐个生成，因此，不会来回进行项目到项目的引用。 相比之下，用 msbuild.exe 生成单个项目时，则会来回进行项目到项目的引用。  
@@ -127,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>设计时目标执行  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 加载项目时，它将尝试执行具有某些名称的目标。 这些目标包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 和 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将运行这些目标，以便可以执行以下操作：初始化编译器以提供 IntelliSense，初始化调试器，以及解析在解决方案资源管理器中显示的引用。 如果这些目标不出现，项目将正确加载和生成，但是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的设计时体验将不会完全有效。  
   
-##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  若要直接编辑 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目，你可以在 Visual Studio XML 编辑器中打开项目文件。  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>在 Visual Studio 中卸载和编辑项目文件  
   
-1.  在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”**。  
+1. 在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”**。  
   
      该项目即被标记为 **“(不可用)”**。  
   
-2.  在“解决方案资源管理器”中，打开不可用项目的快捷菜单，然后选择“编辑 \<项目文件>”。  
+2. 在“解决方案资源管理器”中，打开不可用项目的快捷菜单，然后选择“编辑 \<项目文件>”。  
   
      该项目文件即在 Visual Studio XML 编辑器中打开。  
   
-3.  编辑、保存，然后关闭项目文件。  
+3. 编辑、保存，然后关闭项目文件。  
   
-4.  在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。  
+4. 在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 和验证  
  使用 XML 编辑器编辑项目文件时，IntelliSense 和验证由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 架构文件驱动。 这些安装在架构缓存中，安装目录为 *\<Visual Studio 安装目录>* \Xml\Schemas\1033\MSBuild。  
@@ -158,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>引用解析  
  引用解析是使用项目文件中存储的引用项来查找实际程序集的过程。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必须触发引用解析，才能在“属性”窗口中显示每个引用的详细属性。 下面的列表描述了三种类型引用和如何解析它们。  
   
--   程序集引用：  
+- 程序集引用：  
   
      项目系统调用具有已知名称 `ResolveAssemblyReferences`的目标。 此目标应当产生具有项类型名称 `ReferencePath`的项。 这些项中的每一个都应当有包含引用的完整路径的项规范（项的 `Include` 特性的值）。 除了下面的新元数据以外，项应当让来自输入项的所有元数据通过：  
   
-    -   `CopyLocal`，指示程序集是否应当复制到输出文件夹中、设置为 True 还是 False。  
+    - `CopyLocal`，指示程序集是否应当复制到输出文件夹中、设置为 True 还是 False。  
   
-    -   `OriginalItemSpec`，包含引用的原始项规范。  
+    - `OriginalItemSpec`，包含引用的原始项规范。  
   
-    -   `ResolvedFrom`，如果从 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目录解析它，则设置为“{TargetFrameworkDirectory}”。  
+    - `ResolvedFrom`，如果从 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目录解析它，则设置为“{TargetFrameworkDirectory}”。  
   
--   COM 引用：  
+- COM 引用：  
   
      项目系统调用具有已知名称 `ResolveCOMReferences`的目标。 此目标应当产生具有项类型名称 `ComReferenceWrappers`的项。 这些项中的每一个都应当有项规范，其中包含 COM 引用的 interop 程序集的完整路径。 除了具有名称 `CopyLocal`（用于指示程序集是否应当复制到输出文件夹中、设置为 true 还是 false）的新元数据以外，项应当让来自输入项的所有元数据通过。  
   
--   本机引用  
+- 本机引用  
   
      项目系统调用具有已知名称 `ResolveNativeReferences`的目标。 此目标应当产生具有项类型名称 `NativeReferenceFile`的项。 除了名为 `OriginalItemSpec`（包含引用的原始项规范）的新元数据片段以外，项应当让来自输入项的所有元数据通过。  
   

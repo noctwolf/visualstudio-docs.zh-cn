@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955305"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647448"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 
@@ -78,13 +78,13 @@ ms.locfileid: "55955305"
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>将样式或模板应用于控件
 
-在[对象和时间线](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel)面板中右键单击某个对象，选择“编辑模板”，然后选择“应用资源”。
+在[对象和时间线](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window)窗口中右键单击某个对象，选择“编辑模板”，然后选择“应用资源”。
 
 ![“应用资源”菜单](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>还原控件的默认样式或模板
 
-选择控件，在[属性面板](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel)中，找到“样式”或“模板”属性。 选择“高级选项”，然后在快捷菜单上单击“重置”。
+选择控件，在[属性](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window)窗口中，找到“样式”或“模板”属性。 选择“高级选项”，然后在快捷菜单上单击“重置”。
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>可视状态：根据控件状态更改其外观
 

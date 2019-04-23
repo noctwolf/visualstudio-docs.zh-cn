@@ -1,5 +1,5 @@
 ---
-title: 如何： 更改图形诊断播放机 |Microsoft Docs
+title: 如何：更改图形诊断播放机 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af2fc0c847c88aa4cc7cb0b15a80e9bdfa4703d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 11f5c8e32086b32c0c7167a70588ee446ec409c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107226"
 ---
-# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放机
+# <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放计算机
 使用本地计算机，或使用远程计算机或设备，你可以播放图形信息。
 
 ## <a name="choosing-a-playback-machine"></a>选择播放计算机
@@ -23,27 +23,27 @@ ms.locfileid: "56723339"
 
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>若要使用本地计算机播放图形信息
 
-1.  在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。
+1. 在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。
 
-2.  下**手动配置**，在**地址**属性中，输入`localhost`。
+2. 下**手动配置**，在**地址**属性中，输入`localhost`。
 
-3.  设置**身份验证模式**属性设置为**None**。
+3. 设置**身份验证模式**属性设置为**None**。
 
-4.  选择“选择”按钮。
+4. 选择“选择”按钮。
 
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>若要使用远程计算机播放图形信息
 
-1.  在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。
+1. 在图形日志文档窗口中，选择**播放机**链接。 **远程调试器连接**对话框随即出现。
 
-2.  下**手动配置**，在**地址**属性，输入 Windows 域名或 IP 地址的计算机或你想要用于播放图形信息的设备。
+2. 下**手动配置**，在**地址**属性，输入 Windows 域名或 IP 地址的计算机或你想要用于播放图形信息的设备。
 
-3.  指定想要用于保护与播放计算机的连接的授权类型。
+3. 指定想要用于保护与播放计算机的连接的授权类型。
 
-    -   对于 Windows 身份验证设置**身份验证模式**属性设置为**Windows**。
+    - 对于 Windows 身份验证设置**身份验证模式**属性设置为**Windows**。
 
-    -   对于无身份验证设置**身份验证模式**属性设置为**None**。
+    - 对于无身份验证设置**身份验证模式**属性设置为**None**。
 
-4.  选择“选择”按钮。
+4. 选择“选择”按钮。
 
 > [!NOTE]
 >  **远程调试器连接**对话框还可能显示直接连接到你的开发计算机或同一子网的远程调试目标。 您可以使用远程调试目标： 作为图形诊断播放计算机无需手动配置。 在中**远程调试器连接**对话框框中，选择您想，然后选择的目标**选择**按钮。

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040449"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 解决方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 包含以下功能，可帮助增强 SharePoint 应用程序的安全性。
@@ -46,42 +46,42 @@ ms.locfileid: "54862937"
 ## <a name="sharepoint-permissions-considerations"></a>SharePoint 权限注意事项
  若要开发 SharePoint 解决方案，必须具有足够的权限来运行和调试 SharePoint 解决方案。 你可以测试 SharePoint 解决方案之前，请执行以下步骤以确保拥有所需的权限：
 
-1.  将你的用户帐户添加为系统上的管理员。
+1. 将你的用户帐户添加为系统上的管理员。
 
-2.  将你的用户帐户添加为 SharePoint 服务器场管理员。
+2. 将你的用户帐户添加为 SharePoint 服务器场管理员。
 
-    1.  在 SharePoint 2010 管理中心，选择**管理服务器场管理员组**链接。
+    1. 在 SharePoint 2010 管理中心，选择**管理服务器场管理员组**链接。
 
-    2.  上**服务器场管理员**页上，选择**新建**菜单选项
+    2. 上**服务器场管理员**页上，选择**新建**菜单选项
 
-3.  添加到你的用户帐户向 WSS_ADMIN_WPG 组。
+3. 添加到你的用户帐户向 WSS_ADMIN_WPG 组。
 
 ## <a name="additional-security-resources"></a>其他安全资源
  有关安全问题的详细信息，请参阅。
 
 ### <a name="visual-studio-security"></a>Visual Studio 安全
 
--   [安全性和用户权限](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [安全性和用户权限](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [本机代码和.NET Framework 代码中的安全性](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [本机代码和.NET Framework 代码中的安全性](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [.NET Framework 中的安全性](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [.NET Framework 中的安全性](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>SharePoint 安全性
 
--   [SharePoint Foundation 管理和安全性](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [SharePoint Foundation 管理和安全性](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [SharePoint 安全资源中心](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [SharePoint 安全资源中心](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [保护 SharePoint Foundation 中的 Web 部件](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [保护 SharePoint Foundation 中的 Web 部件](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [提高 Web 应用程序安全性：威胁和对策](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [提高 Web 应用程序安全性：威胁和对策](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>常规安全
 
--   [MSDN 安全开发生命周期](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN 安全开发生命周期](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [构建安全的 ASP.NET 应用程序：身份验证、 授权和安全通信](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [构建安全的 ASP.NET 应用程序：身份验证、 授权和安全通信](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>请参阅
 

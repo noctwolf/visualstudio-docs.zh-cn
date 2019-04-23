@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116143"
 ---
 # <a name="how-to-edit-a-register-value"></a>如何：编辑寄存器值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "58937228"
   
 ### <a name="to-change-the-value-of-a-register"></a>更改寄存器值  
   
-1.  在“寄存器”窗口中，使用 Tab 或鼠标可以将插入点移到要更改的值的位置。 在开始键入之前，光标必须位于要覆盖的值之前。  
+1. 在“寄存器”窗口中，使用 Tab 或鼠标可以将插入点移到要更改的值的位置。 在开始键入之前，光标必须位于要覆盖的值之前。  
   
-2.  键入新值。  
+2. 键入新值。  
   
     > [!CAUTION]
     >  更改寄存器值（特别是 EIP 和 EBP 寄存器中的值）可能会影响程序的执行。  

@@ -9,17 +9,16 @@ caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 14b04de6ea4c945b67bada257d7822790b683b38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772934"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660497"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自定义 VSTU 创建的项目文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools for Unity 在项目文件生成期间提供 Unity 样式回调。 注册 `VisualStudioIntegration.ProjectFileGeneration` 事件以在生成项目文件时对其进行修改。  
   
 ## <a name="demonstrates"></a>演示  

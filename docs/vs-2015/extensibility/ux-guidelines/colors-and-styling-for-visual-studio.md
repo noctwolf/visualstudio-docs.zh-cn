@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095810"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58932276"
 |你有单个功能组并且没有类似的元素没有共享的颜色。|**自定义颜色**|特定于区域且不应与其他 UI，共享的颜色标记名称|
 |你想要允许最终用户将自定义 UI 或内容 （例如，文本编辑器或专门的设计器窗口）。|**最终用户自定义**<br /><br /> **(工具 > 选项对话框)**|定义的"字体和颜色"页中设置**工具 > 选项**对话框或特定于一个用户界面功能的专用的页面。|
 
-
 ### <a name="visual-studio-themes"></a>Visual Studio 主题
  Visual Studio 提供三种不同的颜色主题： 浅色、 深色，和蓝色。 它还检测高对比度模式，这是系统范围内颜色主题用于可访问性。
 
@@ -80,8 +79,7 @@ ms.locfileid: "58932276"
 
  **工具 > 选项对话框**
 
-
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
  Visual Studio 提供的环境颜色服务，也称为 VSColor service 或外壳颜色服务。 此服务，可将 UI 元素的颜色值绑定到集，其中包含每个主题颜色的名称-值颜色。 VSColor 服务必须用于所有 UI 元素，以便颜色自动更改以反映当前用户选择了主题，并以使 UI 绑定到的环境颜色服务将集成新的主题在将来版本的 Visual Studio。
 
 ### <a name="how-the-service-works"></a>服务工作原理
@@ -258,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> 选择高对比度颜色
+## <a name="BKMK_ChoosingHighContrastColors"></a> 选择高对比度颜色
 
 ### <a name="overview"></a>概述
  Windows 使用增加的文本、 背景和图像的色彩对比度的多个高对比度系统级主题使元素显示在屏幕上更为明显。 可访问性原因，务必在用户切换到高对比度主题时，Visual Studio 界面元素做出正确响应。
 
  只有几种系统颜色可用于高对比度主题。 在选择您的系统颜色名称时，请记住以下提示：
 
-1.  **选择具有相同的语义含义的系统颜色**着色的元素。 例如，如果您所选择的时间段内的文本的高对比度颜色，使用 WindowText 和不 ControlText。
+1. **选择具有相同的语义含义的系统颜色**着色的元素。 例如，如果您所选择的时间段内的文本的高对比度颜色，使用 WindowText 和不 ControlText。
 
-2.  **选择前景/背景对**一起或不会相信您的颜色选择，将所有高对比度主题中正常工作。
+2. **选择前景/背景对**一起或不会相信您的颜色选择，将所有高对比度主题中正常工作。
 
-3.  **确定你的 UI 中的哪些部分是最重要，并确保将脱颖而出的内容区域。** 因此强边框颜色的使用通常定义的内容区域，因为有不同的内容区域没有颜色变体，您将丢失详细信息，通常会区分颜色色调细微的差异，很的多。
+3. **确定你的 UI 中的哪些部分是最重要，并确保将脱颖而出的内容区域。** 因此强边框颜色的使用通常定义的内容区域，因为有不同的内容区域没有颜色变体，您将丢失详细信息，通常会区分颜色色调细微的差异，很的多。
 
 ### <a name="system-color-set"></a>系统颜色集
  在表[WPF 团队博客：SystemColors 引用](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx)指示一整套的系统颜色的名称，并显示在每个主题对应色调。
@@ -325,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-IDE 边框|
 |WindowText|-自动隐藏选项卡上的前景色<br />-所选工具窗口选项卡前景色<br />-失去焦点或未选定的临时选项卡前景色和失去焦点的文档窗口选项卡<br />-未选定标志符号通过树视图默认前景色和悬停<br />的所选工具窗口选项卡边框<br />-滚动条滚动块背景、 边框和标志符号|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> 为最终用户公开的颜色
+## <a name="BKMK_ExposingColorsForEndUsers"></a> 为最终用户公开的颜色
 
 ### <a name="overview"></a>概述
  有时想要允许最终用户将自定义 UI，如创建的代码编辑器或设计图面。 若要执行此操作的最常见方法是通过使用**工具 > 选项**对话框。 除非您拥有高度专业化需要特殊的控件的 UI，以提供自定义项的最简单方法是通过**字体和颜色**页内**环境**对话框部分。 对于公开自定义每个元素，用户可以选择更改的前景色、 背景色，或两者。
@@ -337,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  若要实现自定义类别或显示的项，VSPackage 必须：
 
--   **创建或标识注册表中的类别。** IDE 的实现**字体和颜色**属性页使用此信息来正确地查询支持给定的类别的服务。
+- **创建或标识注册表中的类别。** IDE 的实现**字体和颜色**属性页使用此信息来正确地查询支持给定的类别的服务。
 
--   **创建或标识 （可选） 在注册表中的组。** 它可能是很适合用于定义一个表示集合的两个或多个类别的组。 如果定义一个组，则 IDE 将自动合并子类别，并将分发在组中的显示项。
+- **创建或标识 （可选） 在注册表中的组。** 它可能是很适合用于定义一个表示集合的两个或多个类别的组。 如果定义一个组，则 IDE 将自动合并子类别，并将分发在组中的显示项。
 
--   **实现 IDE 的支持。**
+- **实现 IDE 的支持。**
 
--   **处理更改字体和颜色。**
+- **处理更改字体和颜色。**
 
 #### <a name="to-create-or-identify-categories"></a>若要创建或标识类别
  构造一个特殊类型的类别下的注册表项 [HKLM\SOFTWARE\Microsoft \Visual Studio\\< Visual Studio 版本\>\FontAndColors\\< 类别\>]。 \<类别 > 是的非本地化的类别的名称。
@@ -428,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **注意：**
 
--   "NameID"= 在包中的本地化的类别名称的资源 ID
+- "NameID"= 在包中的本地化的类别名称的资源 ID
 
--   "ToolWindowPackage"= 包 GUID
+- "ToolWindowPackage"= 包 GUID
 
--   "类别"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"是只是一个示例，实际值可以是由实现者提供一个新的 GUID。
+- "类别"="{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}"是只是一个示例，实际值可以是由实现者提供一个新的 GUID。
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>设置字体和颜色的属性类别的 GUID
  下面的代码示例演示如何设置类别的 Guid。

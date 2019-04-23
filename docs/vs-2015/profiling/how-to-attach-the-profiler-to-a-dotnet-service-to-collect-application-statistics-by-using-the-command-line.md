@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ca0b64b112e149404b2ee8861103b25fd6780ccc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040245"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务以收集应用程序统计信息
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：Profiler 附加到.NET 服务以使用命令行收集应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具将探查器附加 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。  
@@ -44,9 +44,9 @@ ms.locfileid: "54760173"
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** 启用采样。  
+   - **/globalsampleon** 启用采样。  
 
-   -   **/samplelineoff** 禁用向特定源代码行分配收集的数据。 指定此选项时，仅向函数分配数据。  
+   - **/samplelineoff** 禁用向特定源代码行分配收集的数据。 指定此选项时，仅向函数分配数据。  
 
 4. 重新启动计算机。  
 
@@ -65,14 +65,13 @@ ms.locfileid: "54760173"
    > [!NOTE]
    >  **/User** 和 **/crosssession** 选项通常为服务所需选项。  
 
-   |                                 选项                                  |                                                                                                                                          说明​​                                                                                                                                           |
+   |                                 选项                                  |                                                                                                                                          描述                                                                                                                                           |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` |      指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。       |
    |              [/crosssession](../profiling/crosssession.md)              | 启用其他会话中的进程分析。 在其他的会话中运行该服务时需要此选项。 会话 ID 在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                           指定要在分析期间收集的 Windows 性能计数器。                                                                                                            |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                         仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。                                                                          |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                            指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。                                                                            |
-
 
 7. 必要时，请启动该服务。  
 
@@ -84,23 +83,23 @@ ms.locfileid: "54760173"
 
      默认情况下，性能数据为每 10,000,000 个非暂停处理器时钟周期采样一次。 在 1GH 处理器上，每秒约为 100 次采样。 可以指定以下选项之一，更改时钟周期间隔或指定不同的采样事件。  
 
-   |样本事件|说明​​|  
+   |样本事件|描述|  
    |------------------|-----------------|  
    |[/timer](../profiling/timer.md) **:** `Interval`|将采样间隔更改为 `Interval` 所指定的非暂停时钟周期数目。|  
    |[/pf](../profiling/pf.md)[**:**`Interval`]|将采样事件更改为页面错误。 如果已指定 `Interval`，则会设置样本之间的页面错误数目。 默认值为 10。|  
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|将采样事件更改为从进程对操作系统内核的系统调用 (syscall)。 如果已指定 `Interval`，则会设置样本之间的调用次数。 默认值为 10。|  
    |[/counter](../profiling/counter.md) **:** `Config`|将采样事件和间隔更改为 `Config` 中指定的处理器性能计数器和间隔。|  
 
-   -   **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。  
+   - **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。  
 
 ## <a name="controlling-data-collection"></a>控制数据收集  
  服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|说明​​|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -113,23 +112,23 @@ ms.locfileid: "54760173"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  执行下列操作之一以从目标应用程序中拆离探查器：  
+1. 执行下列操作之一以从目标应用程序中拆离探查器：  
 
-    -   停止服务。  
+    - 停止服务。  
 
          或  
 
-    -   键入 **VSPerfCmd /detach**  
+    - 键入 **VSPerfCmd /detach**  
 
-2.  关闭探查器。 类型：  
+2. 关闭探查器。 类型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  （可选）清除分析环境变量。 类型：  
+3. （可选）清除分析环境变量。 类型：  
 
      VSPerfClrEnv /globaloff  
 
-4.  重新启动计算机。  
+4. 重新启动计算机。  
 
 ## <a name="see-also"></a>请参阅  
  [分析服务](../profiling/command-line-profiling-of-services.md)   

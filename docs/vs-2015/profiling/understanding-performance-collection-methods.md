@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7432009cb64081fc235ec48a3de5400311260f3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079053"
 ---
 # <a name="understanding-performance-collection-methods"></a>了解性能收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-|方法|说明​​|  
+|方法|描述|  
 |------------|-----------------|  
 |[采样](#sampling)|收集有关应用程序执行的工作的统计数据。|  
 |[检测](#instrumentation)|收集有关每个函数调用的详细计时信息。|  
@@ -38,7 +38,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
   
  通过使用一些分析方法，还可以收集其他数据，如软件和硬件性能计数器。 有关详细信息，请参阅[收集其他性能数据](../profiling/collecting-additional-performance-data.md)。  
   
-##  <a name="sampling"></a> 采样  
+## <a name="sampling"></a> 采样  
  采样分析方法收集有关应用程序在分析运行过程中执行的工作的统计数据。 采样方法是轻量级的，对应用程序方法的执行几乎没有什么影响。  
   
  采样是 Visual Studio 分析工具的默认方法。 它可用于以下情况：  
@@ -57,7 +57,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
   
   [采样方法数据视图](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> 检测  
+## <a name="instrumentation"></a> 检测  
  检测分析方法为分析的应用程序中的函数调用收集详细计时。 检测分析可用于以下情况：  
   
 - 调查输入/输出瓶颈（如磁盘 I/O）。  
@@ -82,7 +82,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
   
   [检测方法数据视图](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> 并发  
+## <a name="concurrency"></a> 并发  
  并发分析收集有关多线程应用程序的信息。 资源争用分析收集每次争用线程被迫等待访问共享资源时的详细调用堆栈信息。 并发可视化还收集有关多线程应用程序如何与自己、硬件、操作系统和主计算机上的其他进程进行交互的更多常规信息：  
   
 - 资源争用报告显示争用的总数，以及对于在其中发生等待的模块、函数、源代码行和指令，等待资源所用的总时间。 时间线关系图也会在争用发生时显示争用。  
@@ -97,7 +97,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
   
   [并发可视化工具](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> .NET 内存  
+## <a name="net_memory"></a> .NET 内存  
  .NET 内存分配分析方法在分析的应用程序中每次分配 .NET Framework 对象时都中断计算机处理器。 同时收集对象生存期数据时，探查器会在每个 .NET Framework 垃圾回收之后中断处理器。  
   
  探查器收集有关在分配中创建的对象或在垃圾回收中销毁的对象的类型、大小和数量的信息。  
@@ -118,7 +118,7 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
   
   [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> 层交互  
+## <a name="tier_interaction"></a> 层交互  
  层交互分析将有关 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 页面或其他应用程序与 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 数据库之间的同步 [!INCLUDE[vstecado](../includes/vstecado-md.md)] 调用的信息添加到分析数据文件。 这些数据包括调用的数量和时间，以及最大和最小次数。 层交互数据可以添加到使用采样、检测、.NET 内存或并发方法收集的分析数据。  
   
  ![层交互分析数据](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  

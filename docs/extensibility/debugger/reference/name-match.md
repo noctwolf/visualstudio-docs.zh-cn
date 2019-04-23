@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26666ff9955d7516ff30c7276bfd46e990577e70
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087938"
 ---
 # <a name="namematch"></a>NAME_MATCH
 选择用于匹配名称的大小写选项。
@@ -50,13 +50,13 @@ public enum NameMatchOptions { 
 ## <a name="remarks"></a>备注
  作为参数传递给以下方法：
 
--   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
+- [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
--   [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)
+- [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)
 
--   [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
+- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)
 
--   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
+- [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>要求
  标头： sh.h

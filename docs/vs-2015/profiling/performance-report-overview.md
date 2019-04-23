@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091600"
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ ms.locfileid: "54785617"
 ## <a name="customizable-filter-control"></a>可自定义筛选器控件  
  可自定义筛选器控件具有以下选项：  
   
--   **导入筛选器** - 检索以前保存的自定义查询。  
+- **导入筛选器** - 检索以前保存的自定义查询。  
   
--   **导出筛选器** - 将自定义查询保存到指定位置。  
+- **导出筛选器** - 将自定义查询保存到指定位置。  
   
--   **执行查询** - 运行在自定义查询控件中显示的查询。  
+- **执行查询** - 运行在自定义查询控件中显示的查询。  
   
--   **停止查询** - 停止正在运行的查询的执行。 如果没有查询正在运行，则此按钮不可用。  
+- **停止查询** - 停止正在运行的查询的执行。 如果没有查询正在运行，则此按钮不可用。  
   
--   **显示查询** - 显示/隐藏自定义查询控件。  
+- **显示查询** - 显示/隐藏自定义查询控件。  
   
--   **保存分析结果** - 将报告及其当前分析保存为 .vsps 文件。  
+- **保存分析结果** - 将报告及其当前分析保存为 .vsps 文件。  
   
--   **导出** - 将当前报告保存在 .CVS 格式或 .XML 格式文件中（可以选择保存不同的视图）。  
+- **导出** - 将当前报告保存在 .CVS 格式或 .XML 格式文件中（可以选择保存不同的视图）。  
   
 ## <a name="see-also"></a>请参阅  
  [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)   

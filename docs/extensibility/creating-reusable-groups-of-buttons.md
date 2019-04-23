@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89b4f55e5e5de564db6cb7a1217b79a15283fb93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051656"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>创建可重用的按钮的组
 命令组是始终一起出现的菜单或工具栏的命令的集合。 可通过将其分配到不同的父菜单的 CommandPlacements 部分中重复使用任何命令组 *.vsct*文件。
@@ -26,13 +26,13 @@ ms.locfileid: "56712315"
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>若要创建可重用的一组按钮
 
-1.  创建一个名为的 VSIX 项目`ReusableButtons`。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 创建一个名为的 VSIX 项目`ReusableButtons`。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2.  项目打开后，添加名为的自定义命令项模板**ReusableCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*ReusableCommand.cs*。
+2. 项目打开后，添加名为的自定义命令项模板**ReusableCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*ReusableCommand.cs*。
 
-3.  在中 *.vsct*文件中，转到符号部分，找到包含组和项目的命令的 GuidSymbol 元素。 它应命名 guidReusableCommandPackageCmdSet。
+3. 在中 *.vsct*文件中，转到符号部分，找到包含组和项目的命令的 GuidSymbol 元素。 它应命名 guidReusableCommandPackageCmdSet。
 
-4.  添加将添加到组，如以下示例所示的每个按钮 IDSymbol。
+4. 添加将添加到组，如以下示例所示的每个按钮 IDSymbol。
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ ms.locfileid: "56712315"
 
      默认情况下，该命令项模板将创建一个名为组**MyMenuGroup**和一个按钮，已提供，以及每个 IDSymbol 条目的名称。
 
-5.  在组部分中，创建一个具有相同的 GUID 和 ID 属性与符号部分中提供的组元素。 您还可以使用现有的组，或使用提供的命令模板，如以下示例所示的条目。 此组显示在**工具**菜单
+5. 在组部分中，创建一个具有相同的 GUID 和 ID 属性与符号部分中提供的组元素。 您还可以使用现有的组，或使用提供的命令模板，如以下示例所示的条目。 此组显示在**工具**菜单
 
     ```xml
     <Groups>
@@ -56,7 +56,7 @@ ms.locfileid: "56712315"
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>若要创建一组以供重复使用的按钮
 
-1.  通过使用组作为父定义中的命令或菜单中，或通过将命令或菜单组中置于使用 CommandPlacements 部分，可在组中将命令或菜单。
+1. 通过使用组作为父定义中的命令或菜单中，或通过将命令或菜单组中置于使用 CommandPlacements 部分，可在组中将命令或菜单。
 
      按钮部分中定义一个按钮，将组作为其父级，或使用由包模板提供的按钮，如下面的示例中所示。
 
@@ -70,7 +70,7 @@ ms.locfileid: "56712315"
     </Button>
     ```
 
-2.  如果一个按钮必须出现在多个组，一个条目为其创建后的命令部分必须放置在 CommandPlacements 部分中。 设置 CommandPlacement 元素以匹配你想要放置，该按钮的 GUID 和 ID 属性，然后设置的 GUID 和其父元素的 ID 与目标组中，如下面的示例中所示。
+2. 如果一个按钮必须出现在多个组，一个条目为其创建后的命令部分必须放置在 CommandPlacements 部分中。 设置 CommandPlacement 元素以匹配你想要放置，该按钮的 GUID 和 ID 属性，然后设置的 GUID 和其父元素的 ID 与目标组中，如下面的示例中所示。
 
     ```xml
     <CommandPlacements>

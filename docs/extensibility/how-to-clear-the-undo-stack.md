@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1b1c1d79bab15baa8e8afcab719b3081e7265b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d6e7c2536b7c5556139ce7a9b56756e20fd3648
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072859"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>如何：清除撤消堆栈
 下面的以下过程说明如何清除撤消堆栈。
 
 ## <a name="to-clear-the-undo-stack"></a>若要清除撤消堆栈
 
-1.  若要清除撤消堆栈使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 以下是此示例：
+1. 若要清除撤消堆栈使用[IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom)方法。 以下是此示例：
 
     ```
     HRESULT CCmdWindow::ClearUndoStack()

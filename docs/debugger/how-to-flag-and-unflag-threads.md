@@ -1,5 +1,5 @@
 ---
-title: 如何： 标记线程和取消标记线程 |Microsoft Docs
+title: 如何：标记线程和取消标记线程 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d106260aab40707aeb04f37df05a9d1ffb26a1b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069635"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何： 标记线程和取消标记线程 (C#，Visual Basic、 c + +)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：标记线程和取消标记线程 (C#，Visual Basic 中， C++)
 
 可以标记要特别注意通过将其标记为一个图标中为提供一个线程**线程**，**并行堆栈**（线程视图），**并行监视**，并且**GPU 线程**windows。 此图标有助于您和其他人将标记的线程与其他线程区别开来。
 
@@ -35,32 +35,32 @@ ms.locfileid: "58324411"
 
 ### <a name="to-unflag-all-threads"></a>取消标记所有线程
 
--   在“线程”窗口中右击任意线程，然后单击“取消标志所有线程”。
--   在中**并行监视**窗口中，选择所有标记的线程，然后右键单击并选择**取消标记**。
+- 在“线程”窗口中右击任意线程，然后单击“取消标志所有线程”。
+- 在中**并行监视**窗口中，选择所有标记的线程，然后右键单击并选择**取消标记**。
 
 ### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程
 
--   选择**仅显示标记的线程**一个多线程调试窗口中的按钮。
+- 选择**仅显示标记的线程**一个多线程调试窗口中的按钮。
 
 ### <a name="to-flag-just-my-code"></a>标记“仅我的代码”
 
-1.  在“线程”窗口顶部的工具栏中，单击标志图标。
+1. 在“线程”窗口顶部的工具栏中，单击标志图标。
 
-2.  在下拉列表中，单击“标记‘仅我的代码’”。
+2. 在下拉列表中，单击“标记‘仅我的代码’”。
 
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>标记与选定模块关联的线程
 
-1.  在“线程”窗口的工具栏中，单击标志图标。
+1. 在“线程”窗口的工具栏中，单击标志图标。
 
-2.  在下拉列表中，单击“标记自定义模块选择”。
+2. 在下拉列表中，单击“标记自定义模块选择”。
 
-3.  在“选择模块”对话框中，选择需要的模块。
+3. 在“选择模块”对话框中，选择需要的模块。
 
-4.  （可选）在“搜索”框中，键入用于搜索特定模块的字符串。
+4. （可选）在“搜索”框中，键入用于搜索特定模块的字符串。
 
-5.  单击 **“确定”**。
+5. 单击 **“确定”**。
 
 ## <a name="see-also"></a>请参阅
 - [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)
-- [演练： 调试多线程应用程序使用线程窗口](../debugger/how-to-use-the-threads-window.md)
+- [演练：调试多线程应用程序使用线程窗口](../debugger/how-to-use-the-threads-window.md)

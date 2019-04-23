@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fb997d8184ea9459b46eee95bfe2863e8c1c6ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59367285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047119"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302：在调用 BinaryFormatter.Deserialize 之前，确保设置 BinaryFormatter.Binder
 
@@ -34,25 +34,24 @@ ms.locfileid: "59367285"
 
 [!INCLUDE[insecure-deserializers-description](includes/insecure-deserializers-description-md.md)]
 
-此规则查找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>反序列化方法调用或引用，当<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>时其<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>可能为 null。 如果你想要禁止与任何反序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>而不考虑<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性，禁用此规则并[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)，并启用规则[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
+此规则查找<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter?displayProperty=nameWithType>反序列化方法调用或引用时<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>可能为 null。 如果你想要禁止与任何反序列化<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>而不考虑<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性，禁用此规则并[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)，并启用规则[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
 - 如果可能，而是使用安全的序列化程序和**不允许攻击者能够指定任意类型进行反序列化**。 一些更安全的序列化程序包括：
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永远不会使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果必须使用类型解析程序，您必须将反序列化的类型对预期的列表。
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -永远不会使用<xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>。 如果必须使用类型解析程序，到预期的列表限制反序列化的类型。
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET-使用 TypeNameHandling.None。 如果必须为 TypeNameHandling 使用另一个值，然后必须将反序列化的类型对预期的列表。
+  - NewtonSoft Json.NET-使用 TypeNameHandling.None。 如果必须为 TypeNameHandling 使用另一个值，限制对具有自定义 ISerializationBinder 预期列表反序列化的类型。
   - 协议缓冲区
-- 使序列化的数据篡改。 在序列化之后, 密码学角度上登录序列化的数据。 在反序列化之前, 验证的加密签名。 您必须从正在泄露保护加密密钥和应设计为密钥轮换。
+- 使序列化的数据篡改。 在序列化之后, 密码学角度上登录序列化的数据。 在反序列化之前验证的加密签名。 从正在泄露保护加密密钥和密钥轮换的设计。
 - 限制反序列化的类型。 实现一个自定义<xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>。 反序列化之前<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>，将<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性设置为您的自定义的一个实例<xref:System.Runtime.Serialization.SerializationBinder>。 在重写<xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A>方法，如果类型为意外然后引发一个异常。
   - 确保所有代码路径都有<xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder>属性集。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
-- 它可以安全地禁止显示此规则的警告，如果知道输入是受信任。 请考虑应用程序的信任边界和数据流可能随时间变化。
-- 它可以安全地禁止显示此警告，如果您执行了上述的预防措施之一。
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>伪代码示例
 
@@ -123,6 +122,7 @@ End Class
 ```
 
 ### <a name="solution"></a>解决方案
+
 ```csharp
 using System;
 using System.IO;
@@ -144,7 +144,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -197,7 +197,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

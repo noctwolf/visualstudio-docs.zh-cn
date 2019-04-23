@@ -1,5 +1,5 @@
 ---
-title: Format Specifiers in c + + |Microsoft Docs
+title: 格式说明符在C++|Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116207"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式说明符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58932928"
 >  更改到新调试引擎的 Visual Studio 本机调试器。 作为此更改的一部分，添加了一些新的格式说明符，删除了一些旧的格式说明符。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。 本主题的以下各部分介绍每种调试引擎的格式说明符。  
 > 
 > - [格式说明符](#BKMK_Visual_Studio_2012_format_specifiers) 描述新的调试引擎中的格式说明符。  
->   -   [使用 C++/CLI 的互操作调试的格式说明符](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述较早的调试引擎中的格式说明符。  
+>   - [使用 C++/CLI 的互操作调试的格式说明符](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述较早的调试引擎中的格式说明符。  
   
 ## <a name="using-format-specifiers"></a>设置格式说明符  
  如果你有以下代码：  
@@ -63,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式说明符  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式说明符  
  下表介绍了可在 Visual Studio 中使用的格式说明符。 粗体说明符仅受新调试器支持，且不适用于通过 C++/CLI 进行互操作调试。  
   
 |说明符|格式|原始监视值|显示的值|  
@@ -94,7 +94,7 @@ int main() {
 > [!NOTE]
 >  如果存在“hv”  格式说明符，调试器会尝试确定缓冲区的长度并显示相应的元素数。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 “Hv”  格式说明符用于缓冲区大小尚不可使用的情况。  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 指针的大小说明符作为数组  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 指针的大小说明符作为数组  
  如果有一个指针指向要以数组形式查看的对象，则可以使用一个整数或表达式来指定数组中元素的数量：  
   
 |说明符|格式|原始监视 Valuen|显示的值|  
@@ -103,7 +103,7 @@ int main() {
 |**[exp]**|计算结果为一个整数的有效的 C++ 表达式。|pBuffer,[bufferSize]|将 pBuffer 显示为 `bufferSize` 元素的一个数组。|  
 |**expand(n)**|计算结果为一个整数的有效的 C++ 表达式。|pBuffer, expand(2)|显示  `pBuffer`的第三个元素|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的互操作调试的格式说明符  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的互操作调试的格式说明符  
  **粗体** 的说明符仅支持本地调试和 C++/CLI 代码。  
   
 |说明符|格式|原始监视值|显示的值|  
@@ -126,7 +126,7 @@ int main() {
 |wm|Windows 消息数字|0x0010|WM_CLOSE|  
 |!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 与 C++/CLI 进行交互操作调试的格式说明符内存位置  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 与 C++/CLI 进行交互操作调试的格式说明符内存位置  
  下表介绍了用于内存位置的格式化符号。 可将内存位置说明符与任何值或任何计算结果为某位置的表达式一起使用。  
   
 |符号|格式|原始监视值|显示的值|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 个双字|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|双字节字符 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 指针的大小说明符作为使用 C++/CLI 的互操作调试中的数组  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 指针的大小说明符作为使用 C++/CLI 的互操作调试中的数组  
  如果有一个指针指向要以数组形式查看的对象，则可以使用一个整数来指定数组中元素的数量：  
   
 |说明符|格式|表达式|显示的值|  

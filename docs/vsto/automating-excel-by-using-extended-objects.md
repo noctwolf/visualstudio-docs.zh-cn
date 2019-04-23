@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070051"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>通过使用扩展的对象自动化 Excel
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。
@@ -37,11 +37,11 @@ ms.locfileid: "56600849"
 ## <a name="excel-host-items"></a>Excel 主机项
  Excel 项目可授予你访问几个主机项的权限：
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>。 此主机项包含并表示你的项目中的工作表。 它还可充当托管控件（包括主机控件和 Windows 窗体控件），的容器并且还可保留有关其界面上的控件的信息。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>。 此主机项包含并表示你的项目中的工作表。 它还可充当托管控件（包括主机控件和 Windows 窗体控件），的容器并且还可保留有关其界面上的控件的信息。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>。 此主机项表示你项目中的工作簿，可充当工作簿中所有工作表共享的组件的容器。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。
+- <xref:Microsoft.Office.Tools.Excel.Workbook>。 此主机项表示你项目中的工作簿，可充当工作簿中所有工作表共享的组件的容器。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>。 此主机项表示只包含一个图表并公开事件的 Excel 中的工作表。
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>。 此主机项表示只包含一个图表并公开事件的 Excel 中的工作表。
 
      当在设计时将图表工作表作为 Microsoft Office Excel 文档级自定义项目中的新工作表进行添加时，Visual Studio 将自动创建 <xref:Microsoft.Office.Tools.Excel.ChartSheet> 主机项。
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600849"
 
  有关可以在 Excel 项目中使用的主机控件的详细信息，请参阅以下主题：
 
--   [图表控件](../vsto/chart-control.md)
+- [图表控件](../vsto/chart-control.md)
 
--   [ListObject 控件](../vsto/listobject-control.md)
+- [ListObject 控件](../vsto/listobject-control.md)
 
--   [NamedRange 控件](../vsto/namedrange-control.md)
+- [NamedRange 控件](../vsto/namedrange-control.md)
 
--   [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)
+- [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>请参阅
 - [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)

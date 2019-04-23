@@ -22,17 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 242596220b12756b6b5243b008b52db207c22cb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656773"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 TableAdapter 组件填充数据库，基于一个或多个查询或您指定的存储的过程中的数据的数据集。 Tableadapter 还可以执行添加、 更新和删除数据库来保存对数据集所做的更改。 此外可以颁发任何特定表，该表不相关的全局命令。  
   
 > [!NOTE]

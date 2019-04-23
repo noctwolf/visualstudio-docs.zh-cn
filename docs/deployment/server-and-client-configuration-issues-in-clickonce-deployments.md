@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597792"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654082"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果在 Windows Server 上使用 Internet 信息服务 (IIS) 和你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。
@@ -49,7 +49,7 @@ ms.locfileid: "56597792"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和代理身份验证
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从.NET Framework 3.5 的 Windows 集成代理身份验证提供支持。 没有特定 machine.config 指令是必需的。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不等基本或摘要式其他身份验证协议提供支持。
 
- 此外可以应用于.NET Framework 2.0，若要启用此功能的修补程序。 有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkId=158730。
+ 此外可以应用于.NET Framework 2.0，若要启用此功能的修补程序。 有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=158730 。
 
  有关详细信息，请参阅[ \<defaultProxy > 元素 （网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。
 
@@ -94,23 +94,22 @@ ms.locfileid: "56597792"
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>FTP 协议不支持用于安装应用程序
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支持从任何 HTTP 1.1 Web 服务器或文件服务器安装的应用程序。 FTP 文件传输协议不支持用于安装应用程序。 可以使用 FTP 发布应用程序。 下表总结了这些差异：
 
-
-| URL 类型 | 说明 |
+| URL 类型 | 描述 |
 |----------| - |
 | ftp:// | 您可以将发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 | http:// | 你可以安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 | https:// | 你可以安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 | file:// | 你可以安装[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序使用此协议。 |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Windows 防火墙
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2：Windows 防火墙
  默认情况下，Windows XP SP2 启用 Windows 防火墙。 如果正在开发应用程序在已安装的 Windows XP 的计算机上，您将仍可以发布和运行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从正在运行 IIS 的本地服务器的应用程序。 但是，不能访问该服务器正在运行的 IIS 从另一台计算机只有打开 Windows 防火墙。 有关管理 Windows 防火墙的说明，请参阅 Windows 帮助。
 
-## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server： 启用 FrontPage 服务器扩展
+## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server：启用 FrontPage 服务器扩展
  Microsoft FrontPage 服务器扩展是必需的应用程序发布到使用 HTTP 的 Windows Web 服务器。
 
  默认情况下，Windows Server 没有安装的 FrontPage 服务器扩展。 如果你想要使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]若要发布到 HTTP 使用 FrontPage 服务器扩展的 Windows Server Web 服务器，必须先安装 FrontPage 服务器扩展。 可以通过使用 Windows Server 中管理您的服务器管理工具来执行安装。
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server： 锁定的内容类型
+## <a name="windows-server-locked-down-content-types"></a>Windows Server：锁定的内容类型
  上的 IIS[!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)]锁定除某些已知的内容类型以外的所有文件类型 (例如， *.htm*， *.html*， *.txt*，依此类推)。 若要启用的部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用此服务器应用程序，您需要更改 IIS 设置，以允许下载文件的类型 *.application*， *.manifest*，和任何其他自定义文件类型使用你的应用程序。
 
  如果部署使用 IIS 服务器，运行*inetmgr.exe*并添加默认网页的新文件类型：

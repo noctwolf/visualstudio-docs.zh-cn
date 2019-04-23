@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c438514263d9934f70927b46c8d1c9130746a06f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77b50f5511f76cceda1827d2a36db7514daa6bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076011"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002:不要公开泛型列表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58926200"
 ## <a name="rule-description"></a>规则说明
  <xref:System.Collections.Generic.List%601?displayProperty=fullName> 是专为性能和不继承的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 不包含虚拟成员，从而使更轻松地更改继承的类的行为。 下面的泛型集合用于继承，因此而不是不应公开<xref:System.Collections.Generic.List%601?displayProperty=fullName>。
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请更改<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型设置为一个针对继承设计的泛型集合。

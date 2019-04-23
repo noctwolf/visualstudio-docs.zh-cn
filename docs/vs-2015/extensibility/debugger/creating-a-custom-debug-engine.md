@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111514"
 ---
 # <a name="creating-a-custom-debug-engine"></a>创建自定义调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "58931337"
   
  创建部署包含以下步骤：  
   
-1.  使用 Visual Studio 注册 DE  
+1. 使用 Visual Studio 注册 DE  
   
-2.  启用要进行调试的程序  
+2. 启用要进行调试的程序  
   
-3.  执行控件和状态评估  
+3. 执行控件和状态评估  
   
-4.  发送事件  
+4. 发送事件  
   
-5.  终止和分离  
+5. 终止和分离  
   
 ## <a name="in-this-section"></a>本节内容  
  [注册自定义调试引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md)  

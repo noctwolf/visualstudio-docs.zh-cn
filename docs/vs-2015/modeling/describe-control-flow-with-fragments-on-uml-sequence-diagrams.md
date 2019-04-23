@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934862"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107081"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>使用 UML 序列图中的片段描述控制流
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ ms.locfileid: "58934862"
   
  图中显示的元素如下所示。  
   
-1.  组合片段。 组合片段有好几种类型。 此示例是 Alt 组合片段，你可以使用它显示可能发生消息备选序列。  
+1. 组合片段。 组合片段有好几种类型。 此示例是 Alt 组合片段，你可以使用它显示可能发生消息备选序列。  
   
-2.  交互操作数。 每个组合片段都包含至少一个交互操作数，它可以包含消息、交互使用和较小的组合片段。 在此示例中，Alt 组合片段有两个交互操作数，显示了两个消息备选序列。  
+2. 交互操作数。 每个组合片段都包含至少一个交互操作数，它可以包含消息、交互使用和较小的组合片段。 在此示例中，Alt 组合片段有两个交互操作数，显示了两个消息备选序列。  
   
-3.  你可以通过单击其内部分别选择每个交互操作数。 此示例选择了顶部的交互操作数，因此，可以看见其边界。 通常，仅交互操作数之间的分隔线可见。  
+3. 你可以通过单击其内部分别选择每个交互操作数。 此示例选择了顶部的交互操作数，因此，可以看见其边界。 通常，仅交互操作数之间的分隔线可见。  
   
     > [!NOTE]
     >  若要选择顶部的交互操作数，则不能在太靠近组合片段的顶部位置单击。  
   
-4.  临界。 你可以为每个交互操作数提供一个临界。 描述将在其下执行交互操作数内的消息的条件。  
+4. 临界。 你可以为每个交互操作数提供一个临界。 描述将在其下执行交互操作数内的消息的条件。  
   
 ## <a name="creating-combined-fragments"></a>创建组合片段  
  有关可创建的片段种类的列表，请参阅 [组合片段的种类](#KindsOfFragment)。  
@@ -97,12 +97,12 @@ ms.locfileid: "58934862"
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>若要设置或查看组合片段的属性  
   
--   右键单击组合片段的标题，然后单击“属性” 。  
+- 右键单击组合片段的标题，然后单击“属性” 。  
   
     > [!NOTE]
     >  不同种类的组合片段具有不同的属性。  
   
-##  <a name="KindsOfFragment"></a> 组合片段的种类  
+## <a name="KindsOfFragment"></a> 组合片段的种类  
   
 ### <a name="fragments-describing-control-flow"></a>描述控制流的片段  
  简单的序列图只显示一个典型的序列。 你可以使用以下类型的组合片段来描述可能发生在不同场合的变体。  

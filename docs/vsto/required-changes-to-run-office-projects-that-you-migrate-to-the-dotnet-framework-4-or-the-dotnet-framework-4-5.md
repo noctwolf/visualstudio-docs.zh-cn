@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072814"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>运行迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目所需的更改
   如果 Office 项目的目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本从.NET Framework 的早期版本，必须执行以下任务以确保在开发计算机和最终用户计算机上可以运行该解决方案：
@@ -39,14 +39,14 @@ ms.locfileid: "56625694"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>若要删除 SecurityTransparentAttribute
 
-1.  在 Visual Studio 中打开项目后，打开 **“解决方案资源管理器”**。
+1. 在 Visual Studio 中打开项目后，打开 **“解决方案资源管理器”**。
 
-2.  在 C# 的 **“属性”** 节点或在 Visual Basic 的 **“我的项目”** 节点下，双击 AssemblyInfo 代码文件以在代码编辑器中打开它。
+2. 在 C# 的 **“属性”** 节点或在 Visual Basic 的 **“我的项目”** 节点下，双击 AssemblyInfo 代码文件以在代码编辑器中打开它。
 
     > [!NOTE]
     >  在 Visual Basic 项目中，必须单击 **“解决方案资源管理器”** 中的 **“显示所有文件”** 按钮，才能查看 AssemblyInfo 代码文件。
 
-3.  找到 <xref:System.Security.SecurityTransparentAttribute> 并且将其从文件中删除或注释掉。
+3. 找到 <xref:System.Security.SecurityTransparentAttribute> 并且将其从文件中删除或注释掉。
 
     ```vb
     <Assembly: SecurityTransparent()>

@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 68a0c1b707011026d4fe58d86fc187b0152dae3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042646"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,64 +50,64 @@ ms.locfileid: "54795855"
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>针对 Visual Basic 单元测试项目重定目标为特定版本的 .NET Framework   
   
-1.  创建一个新的 Visual Basic 单元测试项目。 在“文件”菜单上选择“新建”，再选择“项目”。  
+1. 创建一个新的 Visual Basic 单元测试项目。 在“文件”菜单上选择“新建”，再选择“项目”。  
   
      随即显示“新建项目”对话框。  
   
-2.  在“已安装的模板”下面展开“Visual Basic”。 选择“测试”，然后选择“测试项目”模板。  
+2. 在“已安装的模板”下面展开“Visual Basic”。 选择“测试”，然后选择“测试项目”模板。  
   
-3.  在“名称”框中，键入 Visual Basic 测试项目名称，然后选择“确定”。  
+3. 在“名称”框中，键入 Visual Basic 测试项目名称，然后选择“确定”。  
   
-4.  在解决方案资源管理器中，从新的 Visual Basic 测试项目的快捷菜单中选择“属性”。  
+4. 在解决方案资源管理器中，从新的 Visual Basic 测试项目的快捷菜单中选择“属性”。  
   
      随即显示 Visual Basic 测试项目的属性。  
   
-5.  在“编译”选项卡上选择“高级编译选项”，如下图所示。  
+5. 在“编译”选项卡上选择“高级编译选项”，如下图所示。  
   
      ![高级编译选项](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
-6.  使用“目标框架 (所有配置)”下拉列表，将目标框架更改为 **.NET Framework 3.5**或更高版本，如下图中的标注 B 所示。 不应指定客户端版本。  
+6. 使用“目标框架 (所有配置)”下拉列表，将目标框架更改为 **.NET Framework 3.5**或更高版本，如下图中的标注 B 所示。 不应指定客户端版本。  
   
      ![目标框架下拉列表](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>针对 Visual C# 单元测试项目重定目标为特定版本的 .NET Framework  
   
-1.  创建一个新的 Visual C# 单元测试项目。 在“文件”菜单上选择“新建”，再选择“项目”。  
+1. 创建一个新的 Visual C# 单元测试项目。 在“文件”菜单上选择“新建”，再选择“项目”。  
   
      随即显示“新建项目”对话框。  
   
-2.  在“已安装的模板”下面展开“Visual C#”。 选择“测试”，然后选择“测试项目”模板。  
+2. 在“已安装的模板”下面展开“Visual C#”。 选择“测试”，然后选择“测试项目”模板。  
   
-3.  在“名称”文本框中，键入 Visual C# 测试项目名称，然后选择“确定”。  
+3. 在“名称”文本框中，键入 Visual C# 测试项目名称，然后选择“确定”。  
   
-4.  在解决方案资源管理器中，从新的 Visual C# 测试项目的快捷菜单中选择“属性”。  
+4. 在解决方案资源管理器中，从新的 Visual C# 测试项目的快捷菜单中选择“属性”。  
   
      随即显示 Visual C# 测试项目的属性。  
   
-5.  在“应用程序”选项卡上选择“目标框架”，然后从下拉列表中选择“.NET Framework 3.5”或更高版本，以更改目标框架，如下图所示。 不应指定客户端版本。  
+5. 在“应用程序”选项卡上选择“目标框架”，然后从下拉列表中选择“.NET Framework 3.5”或更高版本，以更改目标框架，如下图所示。 不应指定客户端版本。  
   
      ![目标框架下拉列表](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>针对 C++/CLI 单元测试项目重定目标为特定版本的 .NET Framework   
   
-1.  创建一个新的 C++ 单元测试项目。 在“文件”菜单上，选择“新建” ，然后单击“项目”。  
+1. 创建一个新的 C++ 单元测试项目。 在“文件”菜单上，选择“新建” ，然后单击“项目”。  
   
      随即显示“新建项目”对话框。  
   
     > [!WARNING]
     >  若要为以前版本的适用于 Visual C++ 的 .NET Framework 生成 C++/CLI 单元测试，则必须使用相应版本的 Visual Studio。 例如，若要面向 .NET Framework 3.5，必须安装 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] 和 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1。  
   
-2.  在“已安装的模板”下面展开“Visual C++”。 选择“测试”，然后选择“测试项目”模板。  
+2. 在“已安装的模板”下面展开“Visual C++”。 选择“测试”，然后选择“测试项目”模板。  
   
-3.  在“名称”文本框中，键入 Visual C++ 测试项目名称，然后选择“确定”。  
+3. 在“名称”文本框中，键入 Visual C++ 测试项目名称，然后选择“确定”。  
   
-4.  在解决方案资源管理器中，从新的 Visual C++ 测试项目中选择“卸载项目”。  
+4. 在解决方案资源管理器中，从新的 Visual C++ 测试项目中选择“卸载项目”。  
   
-5.  在解决方案资源管理器中，选择已卸载的 Visual C++ 测试项目，然后选择“编辑\<项目名称>.vcxproj”。  
+5. 在解决方案资源管理器中，选择已卸载的 Visual C++ 测试项目，然后选择“编辑\<项目名称>.vcxproj”。  
   
      即可在编辑器中打开 .vcxproj 文件。  
   
-6.  在标记为`"Globals"`的 `PropertyGroup` 中将 `TargetFrameworkVersion` 设为版本 3.5 或更高版本。 不应指定客户端版本：  
+6. 在标记为`"Globals"`的 `PropertyGroup` 中将 `TargetFrameworkVersion` 设为版本 3.5 或更高版本。 不应指定客户端版本：  
   
     ```  
     <PropertyGroup Label="Globals">  
@@ -121,9 +121,9 @@ ms.locfileid: "54795855"
   
     ```  
   
-7.  保存并关闭 .vcxproj 文件。  
+7. 保存并关闭 .vcxproj 文件。  
   
-8.  在解决方案资源管理器中，从新的 Visual C++ 测试项目的快捷菜单中选择“重载项目”。  
+8. 在解决方案资源管理器中，从新的 Visual C++ 测试项目的快捷菜单中选择“重载项目”。  
   
 ## <a name="see-also"></a>请参阅  
  [为现有代码创建和运行单元测试](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   

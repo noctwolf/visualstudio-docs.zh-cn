@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070259"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上，或者由于网络问题或存在防火墙而无法访问远程计算机，可能会出现此消息。
@@ -81,7 +81,6 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 - 远程调试器版本与 Visual Studio 不匹配。 若要获取远程调试器的正确版本，请参阅[远程调试](../debugger/remote-debugging.md)
 
-
 ## <a name="valid_name"></a> 请求的名称是有效的但未找到所请求类型的任何数据
 
 在远程计算机存在，但 Visual Studio 无法连接到远程调试器。 此消息可能会发生以下几个原因：
@@ -118,7 +117,7 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 ### <a name="server_incorrect"></a> 服务器名称不正确或第三方软件正在干扰远程调试器
 
-在 Visual Studio 中，查看项目属性，并确保服务器名称正确。 请参阅主题[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)并[c + +](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 对于 ASP.NET 中，打开**属性 / Web / 服务器**或**属性 / 调试**具体取决于您的项目类型。
+在 Visual Studio 中，查看项目属性，并确保服务器名称正确。 请参阅主题[C#和 Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp)并[ C++ ](../debugger/remote-debugging-cpp.md#remote_cplusplus)。 对于 ASP.NET 中，打开**属性 / Web / 服务器**或**属性 / 调试**具体取决于您的项目类型。
 
 > [!NOTE]
 > 如果您附加到进程，不使用项目属性中的远程设置。
@@ -131,16 +130,16 @@ Visual Studio 无法连接到远程调试器。 此消息可能会发生以下�
 
 可通过下列方法之一解决此问题：
 
--   将 Visual Studio 用户添加到远程调试器权限 (在远程调试器窗口中，选择**工具 > 权限**)。
+- 将 Visual Studio 用户添加到远程调试器权限 (在远程调试器窗口中，选择**工具 > 权限**)。
 
--   在远程计算机上重新启动远程调试器下的同一用户帐户和使用 Visual Studio 计算机的密码。
+- 在远程计算机上重新启动远程调试器下的同一用户帐户和使用 Visual Studio 计算机的密码。
 
     > [!NOTE]
     > 如果远程服务器上运行远程调试器，右键单击远程调试器应用并选择**以管理员身份运行**（或者，可以作为服务运行远程调试器）。 如果你不远程服务器上运行它，只是它正常启动。
 
--   可以使用“/allow \<username>”参数 `msvsmon /allow <username@computer>` 从命令行启动远程调试器。
+- 可以使用“/allow \<username>”参数 `msvsmon /allow <username@computer>` 从命令行启动远程调试器。
 
--   或者，可以允许任何用户进行远程调试。 在远程调试器窗口中，转到“工具”>“选项”对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但是，你应该尝试此选项仅当其他选项失败，则为专用网络上。
+- 或者，可以允许任何用户进行远程调试。 在远程调试器窗口中，转到“工具”>“选项”对话框。 选中“无身份验证”   后，可选中 “允许任何用户进行调试”。 但是，你应该尝试此选项仅当其他选项失败，则为专用网络上。
 
 ### <a name="firewall"></a> 远程计算机上的防火墙不允许对远程调试器使用传入连接
  Visual Studio 计算机上的防火墙和远程计算机上的防火墙都必须配置为允许在 Visual Studio 和远程调试器之间进行通信。 有关远程调试器使用的端口的信息，请参阅 [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。 有关配置 Windows 防火墙的信息，请参阅 [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md)。

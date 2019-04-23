@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58931725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114101"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管道误配置而缺少对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "58931725"
   
  此演练阐释了以下任务：  
   
--   使用“图形事件列表”  定位问题的潜在根源。  
+- 使用“图形事件列表”  定位问题的潜在根源。  
   
--   使用“图形管道阶段”  窗口来检查 `DrawIndexed` Direct3D API 调用的效果。  
+- 使用“图形管道阶段”  窗口来检查 `DrawIndexed` Direct3D API 调用的效果。  
   
--   检查设备上下文以确认未设置着色器阶段。  
+- 检查设备上下文以确认未设置着色器阶段。  
   
--   搭配使用“图形管道阶段”  窗口和“图形事件调用堆栈”  来帮助查找未设置的像素着色器来源。  
+- 搭配使用“图形管道阶段”  窗口和“图形事件调用堆栈”  来帮助查找未设置的像素着色器来源。  
   
 ## <a name="scenario"></a>方案  
  当 3-D 应用中缺少对象时，有时是因为其中一个着色器阶段未在呈现对象前设置。 在具有简单呈现需要的应用中，此错误的来源通常位于对象绘图调用的调用堆栈中某个位置。 但是作为一种优化手段，某些应用批量处理具有共同的着色器程序、纹理或其他数据的对象，从而最大程度减少状态更改的开销。 在这些应用中，错误来源可能隐藏在批处理系统中，而不是位于绘图调用的调用堆栈中。 本演练中的方案演示具有简单呈现需求的应用，因此可在调用堆栈中找到错误源。  

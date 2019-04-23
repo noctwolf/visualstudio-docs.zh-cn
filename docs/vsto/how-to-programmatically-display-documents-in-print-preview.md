@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 846dbee5f66fbdafa9a4b53bab3947ecb95b006c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049395"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>如何：以编程方式在打印预览中显示文档
   如果你的解决方案生成了报告，你可能需要以打印预览模式向用户显示报告。
@@ -29,14 +29,14 @@ ms.locfileid: "56602619"
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>通过调用 PrintPreview 方法在打印预览中显示文档
 
-1.  调用 <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> 类的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。
+1. 调用 <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> 类的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#13)]
      [!code-csharp[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#13)]
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>通过设置 PrintPreview 属性在打印预览中显示文档
 
-1.  将 <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Application> 属性设置为 **true**。
+1. 将 <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Application> 属性设置为 **true**。
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
@@ -45,14 +45,14 @@ ms.locfileid: "56602619"
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>通过调用 PrintPreview 方法在打印预览中显示文档
 
-1.  调用要预览的 <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
+1. 调用要预览的 <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#13)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#13)]
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>通过设置 PrintPreview 属性在打印预览中显示文档
 
-1.  将 <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Application> 属性设置为 **true**。
+1. 将 <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Application> 属性设置为 **true**。
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]

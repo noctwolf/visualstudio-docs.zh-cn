@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58931750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071923"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：查找 ASP.NET 进程的名称
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ ms.locfileid: "58931750"
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>确定项目代码驻留在文件系统上还是 IIS 上  
   
-1.  在 Visual Studio 中打开**解决方案资源管理器**如果已打开。  
+1. 在 Visual Studio 中打开**解决方案资源管理器**如果已打开。  
   
-2.  选择包含该应用程序名称的顶部节点。  
+2. 选择包含该应用程序名称的顶部节点。  
   
-3.  如果**属性**窗口标题包含文件路径，则应用程序代码驻留在文件系统。  
+3. 如果**属性**窗口标题包含文件路径，则应用程序代码驻留在文件系统。  
   
      否则为**属性**窗口标题将包含 Web 站点的名称。  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>确定应用程序正在哪个 IIS 版本下运行  
   
-1.  查找**管理工具**并运行它。 根据您的操作系统，这可能是中的一个图标**Control Panel**，或当您单击时出现的菜单项**启动**。  
+1. 查找**管理工具**并运行它。 根据您的操作系统，这可能是中的一个图标**Control Panel**，或当您单击时出现的菜单项**启动**。  
   
      在 Windows XP 中，**控制面板**可以采用分类视图或经典视图。 您需要在类别视图中，单击**切换到经典视图**或**性能和维护**以查看**管理工具**图标。  
   
-2.  从**管理工具**，运行 Internet Information Services。 将出现一个 MMC 对话框。  
+2. 从**管理工具**，运行 Internet Information Services。 将出现一个 MMC 对话框。  
   
-3.  如果左侧窗格中列出了多个计算机，请选择驻留了该应用程序代码的那个计算机。  
+3. 如果左侧窗格中列出了多个计算机，请选择驻留了该应用程序代码的那个计算机。  
   
-4.  IIS 版本处于**版本**的右窗格中的列。  
+4. IIS 版本处于**版本**的右窗格中的列。  
   
 ## <a name="see-also"></a>请参阅  
  [远程调试 Web 应用程序的必备组件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

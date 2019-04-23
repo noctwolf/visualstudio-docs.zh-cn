@@ -19,23 +19,22 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 16a522044188db854b89f87ccba0ef3393ab70fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e6d527b00e8cbfe6a6f4ad5d112a23e46d4edb8e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803931"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656955"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 检索 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 的路径。  
   
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `GetFrameworkSdkPath` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|可选的 `String` 只读输出参数。<br /><br /> 如果存在，则返回 .NET SDK 2.0 版的路径。 否则返回 `String.Empty`。|  
 |`FrameworkSdkVersion35Path`|可选的 `String` 只读输出参数。<br /><br /> 如果存在，则返回 .NET SDK 3.5 版的路径。 否则返回 `String.Empty`。|  

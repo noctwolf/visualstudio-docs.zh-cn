@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105715"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ ms.locfileid: "58936192"
 > [!NOTE]
 >  “IntelliTrace”选项页上的所有设置都针对 Visual Studio 这个整体，而不针对单个项目或解决方案。 这些设置中的更改适用于 Visual Studio 的所有实例、所有调试会话和所有项目或解决方案。  
   
-##  <a name="ChooseEvents"></a> 选择 IntelliTrace 记录的事件  
+## <a name="ChooseEvents"></a> 选择 IntelliTrace 记录的事件  
  可以启用或禁用针对特定 IntelliTrace 事件的记录。  
   
  如果在进行调试，请停止调试。 转到**工具 / 选项 / IntelliTrace / IntelliTrace 事件**。 选择想要 IntelliTrace 记录的事件。  
   
-##  <a name="GoingFurther"></a> 收集 IntelliTrace 事件和调用信息  
+## <a name="GoingFurther"></a> 收集 IntelliTrace 事件和调用信息  
  默认情况下不启用此选项，但 IntelliTrace 可以随事件一起记录方法调用。 若要启用的方法调用转到集合**工具 / 选项 / IntelliTrace / 常规**，然后选择**IntelliTrace 事件和调用信息**。  
   
  这使你可以查看调用堆栈历史记录以及在代码中的调用间后退和前进。 IntelliTrace 记录的数据包括方法名、方法进入和退出点，以及部分参数值和返回值。  
@@ -75,14 +75,14 @@ ms.locfileid: "58936192"
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>在 IntelliTrace 中搜索某行或某个方法  
  仅当已启用方法调用信息时才可以搜索方法。 可以搜索 IntelliTrace 历史记录以查找特定行或方法。 暂停调试程序执行时，在函数正文内右键单击以查看上下文菜单，然后单击“在 IntelliTrace 中搜索此行”或“在 IntelliTrace 中搜索此方法”。  
   
-###  <a name="ControlCallData"></a> 控制 IntelliTrace 记录的调用信息量  
+### <a name="ControlCallData"></a> 控制 IntelliTrace 记录的调用信息量  
  默认情况下，IntelliTrace 记录解决方案使用的所有模块的信息。 可以将 IntelliTrace 设置为仅记录你感兴趣的模块的调用信息。 在中**工具 / 选项 / IntelliTrace / 模块**，可以指定要包括或排除从 IntelliTrace 的模块。 IntelliTrace 将仅收集你指定的模块中生成的事件，以及你感兴趣的模块内发生的方法调用。  
   
  若要添加多个模块，请在字符串的开头或结尾使用通配符 *。 对于模块名称，请使用文件名，而不是程序集名称。 不接受文件路径。  
   
  尝试将模块数保持为最小值。 因为要收集的数据变少，所以可以获得更好的性能。 UI 中的噪音也会减少，因为要浏览的数据变少。  
   
-##  <a name="SaveSession"></a> 将 IntelliTrace 数据保存到文件  
+## <a name="SaveSession"></a> 将 IntelliTrace 数据保存到文件  
  可以保存 IntelliTrace 收集的数据转到**调试 / IntelliTrace / 保存 IntelliTrace 会话**时进行调试和应用程序处于中断状态。 如果应用程序仍在运行或如果你已经停止调试，则菜单项会被禁用，且你将无法保存 IntelliTrace 收集的数据。  
   
  可以配置 IntelliTrace 以自动保存到文件，通过转到**工具 / 选项 / IntelliTrace / 高级**，然后选择**在此目录中的存储 IntelliTrace 记录**。 还可以为生成的文件配置固定大小，这会让 IntelliTrace 在空间不足时覆盖旧数据。 自动保存文件并启用 Visual Studio 承载进程 (vshost.exe) 时，Visual Studio 会为每个 IntelliTrace 会话创建两个文件。  

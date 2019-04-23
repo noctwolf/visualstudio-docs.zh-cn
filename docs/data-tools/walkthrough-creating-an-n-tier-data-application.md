@@ -1,5 +1,5 @@
 ---
-title: 演练：创建 N 层数据应用程序
+title: 演练：创建 N 层数据应用程序”视频
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091819"
 ---
-# <a name="walkthrough-create-an-n-tier-data-application"></a>演练： 创建 n 层数据应用程序
+# <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
 
 在 N 层应用程序中，分离各层的一种方法是为要包括在应用程序中的每一层创建相互独立的项目。 类型化数据集包含一个 `DataSet Project` 属性，该属性决定了生成的数据集和 `TableAdapter` 代码应归属到哪些项目中。
@@ -30,25 +30,25 @@ ms.locfileid: "55933010"
 
 在本演练中，你将执行以下步骤：
 
--   创建新的 n 层解决方案包含多个项目。
+- 创建新的 n 层解决方案包含多个项目。
 
--   将两个类库项目添加到 N 层解决方案中。
+- 将两个类库项目添加到 N 层解决方案中。
 
--   使用“数据源配置”向导创建类型化数据集。
+- 使用“数据源配置”向导创建类型化数据集。
 
--   将生成[Tableadapter](create-and-configure-tableadapters.md)和数据集代码分离到相互独立的项目。
+- 将生成[Tableadapter](create-and-configure-tableadapters.md)和数据集代码分离到相互独立的项目。
 
--   创建 Windows Communication Foundation (WCF) 服务以调入数据访问层。
+- 创建 Windows Communication Foundation (WCF) 服务以调入数据访问层。
 
--   在服务中创建函数以从数据访问层检索数据。
+- 在服务中创建函数以从数据访问层检索数据。
 
--   创建 Windows 窗体应用程序来充当表示层。
+- 创建 Windows 窗体应用程序来充当表示层。
 
--   创建绑定到数据源的 Windows 窗体控件。
+- 创建绑定到数据源的 Windows 窗体控件。
 
--   编写代码以填充数据表。
+- 编写代码以填充数据表。
 
-![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。
+![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 n 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。
 
 ## <a name="prerequisites"></a>系统必备
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
@@ -77,7 +77,7 @@ ms.locfileid: "55933010"
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
-2. 展开**可视化C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows Desktop**。
+2. 展开**Visual C#** 或**Visual Basic**在左侧窗格中，然后选择**Windows 桌面**。
 
 3. 在中间窗格中，选择**类库**项目类型。
 
@@ -104,7 +104,7 @@ ms.locfileid: "55933010"
  下一步是创建类型化数据集。 使用这两个数据集类创建类型化数据集 (包括`DataTables`类) 和`TableAdapter`单个项目中的类。 （所有类都将生成到单个文件中。）分离时的数据集和 Tableadapter 到不同的项目，它是移动到其他项目，使数据集类`TableAdapter`原始项目中的类。 因此，最终将包含 Tableadapter （DataAccessTier 项目） 的项目中创建数据集。 使用创建数据集**数据源配置向导**。
 
 > [!NOTE]
-> 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关如何设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+> 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关如何设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-dataset"></a>创建数据集
 
@@ -154,7 +154,7 @@ ms.locfileid: "55933010"
 
 5. 在“生成”菜单上，选择“生成解决方案”。
 
-   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (`DataAccessTier`) 现在只包含 Tableadapter。 中指定的项目**数据集项目**属性 (`DataEntityTier`) 包含类型化数据集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
+   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (`DataAccessTier`) 现在只包含 Tableadapter。 中指定的项目**数据集项目**属性 (`DataEntityTier`) 包含类型化数据集：*NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
 
 > [!NOTE]
 > 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 你必须手动将它们移到数据集项目中。
@@ -301,7 +301,7 @@ ms.locfileid: "55933010"
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>将新的表示层项目设置为启动项目
 
--   在“解决方案资源管理器”中，右键单击“PresentationTier”，然后单击“设为启动项目”。
+- 在“解决方案资源管理器”中，右键单击“PresentationTier”，然后单击“设为启动项目”。
 
 ## <a name="add-references-to-the-presentation-tier"></a>将引用添加到表示层
  客户端应用程序 PresentationTier 需要具有对数据服务的服务引用，才能访问服务中的方法。 另外，WCF 服务又需要具有对数据集的引用，才能启用类型共享。 启用类型共享通过数据服务时之前, 添加到数据集分部类的代码不可用到表示层。 因为你通常将添加代码，例如验证代码的行和列更改事件的数据表，则很可能要从客户端访问此代码。
@@ -361,7 +361,7 @@ ms.locfileid: "55933010"
 默认值为`maxReceivedMessageSize`不是足够大以保存从检索的数据`Customers`和`Orders`表。 在以下步骤中，会增加为 6553600 的值。 更改客户端会自动更新服务引用的值。
 
 > [!NOTE]
-> 较小的默认大小旨在降低遭受拒绝服务 (DoS) 攻击的可能性。 有关更多信息，请参见<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
+> 较小的默认大小旨在降低遭受拒绝服务 (DoS) 攻击的可能性。 有关详细信息，请参阅 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值
 
@@ -375,9 +375,9 @@ ms.locfileid: "55933010"
 ## <a name="next-steps"></a>后续步骤
  根据应用程序的需求，在基于 Windows 的应用程序中保存相关数据后，可能还要执行一些步骤。 例如，你可以对此应用程序进行以下增强：
 
--   将验证添加到数据集。
+- 将验证添加到数据集。
 
--   将其他方法添加到服务，以将数据更新回数据库。
+- 将其他方法添加到服务，以将数据更新回数据库。
 
 ## <a name="see-also"></a>请参阅
 

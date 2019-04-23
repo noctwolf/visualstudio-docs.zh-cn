@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053879"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>演练：捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ ms.locfileid: "58933821"
   
  此演练阐释了以下任务：  
   
--   将图形诊断挂接到你的应用  
+- 将图形诊断挂接到你的应用  
   
--   捕获图形信息  
+- 捕获图形信息  
   
 ## <a name="capturing-graphics-information"></a>捕获图形信息  
  若要使用图形诊断工具，首先，你必须捕获它所依赖的图形信息。 若要启用捕获，请使用“启动诊断”  命令将图形诊断在启动时挂接到你的应用。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>在加载项目或解决方案后启用图形信息捕获  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，为你希望从中捕获图形信息的应用加载项目或解决方案文件。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，为你希望从中捕获图形信息的应用加载项目或解决方案文件。  
   
-2.  在“图形诊断”工具栏上，选择“启动诊断” 。  
+2. 在“图形诊断”工具栏上，选择“启动诊断” 。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>不加载项目或解决方案而启用图形信息捕获  
   
@@ -59,7 +59,7 @@ ms.locfileid: "58933821"
 ## <a name="next-steps"></a>后续步骤  
  本演练演示了如何手动捕获图形信息。 下一步，请考虑此选项：  
   
--   了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
+- 了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

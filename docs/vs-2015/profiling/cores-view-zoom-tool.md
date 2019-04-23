@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105419"
 ---
 # <a name="cores-view-zoom-tool"></a>内核视图缩放工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "54801448"
   
 ## <a name="other-ways-to-zoom"></a>其他缩放方式  
   
--   放大：通过拖动在时间线视图中选择一个区域。 释放鼠标按钮后，时间线视图会放大选定的范围。  
+- 放大：通过拖动在时间线视图中选择一个区域。 释放鼠标按钮后，时间线视图会放大选定的范围。  
   
--   放大和缩小：将鼠标悬停在时间线上，然后按住 CTRL 并移动鼠标滚轮。  
+- 放大和缩小：将鼠标悬停在时间线，然后按 CTRL，并移动鼠标滚轮。  
   
 ## <a name="see-also"></a>请参阅  
  [内核视图](../profiling/cores-view.md)

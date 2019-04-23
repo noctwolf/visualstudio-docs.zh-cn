@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: deee2af2ccf1f2561410bc66b7f2f096bab61dd5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7bba9c5b46aa01cddca4de5c8e1347b540999289
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764932"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668088"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 写入当前上下文的日志文件。  
   
 ## <a name="syntax"></a>语法  
@@ -44,10 +43,10 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  日志文件名的根名称。  
   
 ## <a name="return-value"></a>返回值  
- 如果曾创建了跟踪上下文，则返回带 [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 位集的 [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->)。  
+ 一个 [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) 使用的 [SUCCEEDED] （<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) 如果跟踪上下文创建位集。  
   
 ## <a name="requirements"></a>要求  
- 标头：FileTracker.h  
+ **标头：** FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

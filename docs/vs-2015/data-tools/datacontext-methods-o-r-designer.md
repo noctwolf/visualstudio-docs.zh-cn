@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05acf62d30a1ac272003c0883b4a8c927e13e659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042741"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False 和自动升级 = True) 方法 (的上下文中[LINQ to SQL 工具在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)) 的方法<xref:System.Data.Linq.DataContext>运行存储的类过程和在数据库中的函数。  
   
  <xref:System.Data.Linq.DataContext> 类是一个 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 类，它充当 SQL Server 数据库与映射到该数据库的 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 实体类之间的管道。 <xref:System.Data.Linq.DataContext> 类包含用于连接数据库以及操作数据库数据的连接字符串信息和方法。 默认情况下，<xref:System.Data.Linq.DataContext> 类包含多个可以调用的方法，例如用于将已更新数据从 <xref:System.Data.Linq.DataContext.SubmitChanges%2A> 类发送到数据库的 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 方法。 还可以创建其他映射到存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法。 也就是说，调用这些自定义方法将运行数据库中 <xref:System.Data.Linq.DataContext> 方法所映射到的存储过程或函数。 和可以添加方法对任何类进行扩展一样，您也可以将新方法添加到 <xref:System.Data.Linq.DataContext> 类。 但是，在 <xref:System.Data.Linq.DataContext>的上下文中讨论 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法时，讨论的是映射到存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法。  
@@ -33,11 +32,11 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False 和自
 ## <a name="two-types-of-datacontext-methods"></a>DataContext 方法的两种类型  
  DataContext 方法指的是那些映射到数据库中的存储过程和函数的方法。 您可以在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 的方法窗格上创建并添加 DataContext 方法。 有两种不同类型的 <xref:System.Data.Linq.DataContext> 方法；一种会返回一个或多个结果集，而另一种则不会：  
   
--   返回一个或多个结果集的 <xref:System.Data.Linq.DataContext> 方法：  
+- 返回一个或多个结果集的 <xref:System.Data.Linq.DataContext> 方法：  
   
      如果应用程序只需运行数据库中的存储过程和函数并返回结果，可创建这种 <xref:System.Data.Linq.DataContext> 方法。 有关详细信息，请参阅[如何：创建映射到存储的过程和函数 （O/R 设计器） 的 DataContext 方法](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)，System.Data.Linq.ISingleResult\<T >，和<xref:System.Data.Linq.IMultipleResults>。  
   
--   不返回结果集的 <xref:System.Data.Linq.DataContext> 方法，例如：对特定实体类执行插入、更新和删除操作。  
+- 不返回结果集的 <xref:System.Data.Linq.DataContext> 方法，例如：对特定实体类执行插入、更新和删除操作。  
   
      如果应用程序需要运行存储过程而不是使用默认 <xref:System.Data.Linq.DataContext> 行为来保存实体类和数据库之间修改的数据，可创建这种 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 方法。 有关详细信息，请参阅[如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。  
   

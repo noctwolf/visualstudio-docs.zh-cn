@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092313"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
 VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和工具窗口，通过 Visual studio *.vsct*文件。
@@ -27,11 +27,11 @@ VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio 命令表体系结构
  如所述，命令表体系结构支持前面提到的体系结构原则。 后面的抽象、 数据结构和工具的命令表体系结构原则是按如下所示：
 
--   有三种基本类型的项： 菜单、 命令和组。 作为菜单、 子菜单、 工具栏或工具窗口，可以在 UI 中公开菜单。 命令是过程，其中用户可以执行在 IDE 中，并可以将它们公开为菜单项、 按钮、 列表框或其他控件。 组是菜单和命令的容器。
+- 有三种基本类型的项： 菜单、 命令和组。 作为菜单、 子菜单、 工具栏或工具窗口，可以在 UI 中公开菜单。 命令是过程，其中用户可以执行在 IDE 中，并可以将它们公开为菜单项、 按钮、 列表框或其他控件。 组是菜单和命令的容器。
 
--   每个项被指定的描述项目、 相对于其他项和修改其行为的标志其优先级的定义。
+- 每个项被指定的描述项目、 相对于其他项和修改其行为的标志其优先级的定义。
 
--   每个项都有描述项的父级的位置。 项可以有多个父级，以便它可以出现在 UI 中的多个位置。
+- 每个项都有描述项的父级的位置。 项可以有多个父级，以便它可以出现在 UI 中的多个位置。
 
      每个命令必须作为其父级具有一个组，即使它是在该组中的唯一子级。 每个标准菜单还必须具有父组。 工具栏和工具窗口用作其自己的父项。 组可以包含作为其父级主要 Visual Studio 菜单栏中，或任何菜单、 工具栏或工具窗口。
 
@@ -74,15 +74,15 @@ VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和
 ### <a name="menus-groups-and-commands"></a>菜单、 组和命令
  当菜单、 组或命令具有 GUID 和 ID 时，它可以添加到 IDE。 每个 UI 元素必须具有以下操作：
 
--   一个`guid`属性的名称相匹配`GuidSymbol`下定义的 UI 元素的元素。
+- 一个`guid`属性的名称相匹配`GuidSymbol`下定义的 UI 元素的元素。
 
--   `id`属性关联的名称相匹配`IDSymbol`元素。
+- `id`属性关联的名称相匹配`IDSymbol`元素。
 
      共同`guid`和`id`属性 compose*签名*的 UI 元素。
 
--   一个`priority`确定其父菜单或组中的 UI 元素的位置的属性。
+- 一个`priority`确定其父菜单或组中的 UI 元素的位置的属性。
 
--   一个[父元素](../../extensibility/parent-element.md)具有`guid`和`id`属性指定的父菜单或组的签名。
+- 一个[父元素](../../extensibility/parent-element.md)具有`guid`和`id`属性指定的父菜单或组的签名。
 
 #### <a name="menus"></a>菜单
  每个菜单指[Menu element](../../extensibility/menu-element.md)中`Menus`部分。 菜单必须具有`guid`， `id`，并`priority`属性，和一个`Parent`元素，还以下附加特性和子级：
@@ -263,17 +263,17 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>一般要求
  你的命令必须通过以下一系列测试之前可以显示并启用：
 
--   该命令是正确定位。
+- 该命令是正确定位。
 
--   `DefaultInvisible`未设置标志。
+- `DefaultInvisible`未设置标志。
 
--   父菜单或工具栏是可见的。
+- 父菜单或工具栏是可见的。
 
--   该命令不是不可见由于中的上下文项[VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)部分。
+- 该命令不是不可见由于中的上下文项[VisibilityConstraints 元素](../../extensibility/visibilityconstraints-element.md)部分。
 
--   实现的 VSPackage 代码<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口显示，并使您的命令。 没有接口代码已截获此并已按照它。
+- 实现的 VSPackage 代码<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口显示，并使您的命令。 没有接口代码已截获此并已按照它。
 
--   当用户单击你的命令时，它将成为受中所述的过程[路由算法](../../extensibility/internals/command-routing-algorithm.md)。
+- 当用户单击你的命令时，它将成为受中所述的过程[路由算法](../../extensibility/internals/command-routing-algorithm.md)。
 
 ## <a name="call-pre-defined-commands"></a>调用预定义的命令
  [UsedCommands 元素](../../extensibility/usedcommands-element.md)使 Vspackage 能够访问由其他 Vspackage 或由 IDE 提供的命令。 若要执行此操作，创建[UsedCommand 元素](../../extensibility/usedcommand-element.md)具有 GUID 以及要使用的命令 ID。 这可确保 Visual Studio 中，将加载该命令是即使它不是当前的 Visual Studio 配置的一部分。 有关详细信息，请参阅[UsedCommand 元素](../../extensibility/usedcommand-element.md)。

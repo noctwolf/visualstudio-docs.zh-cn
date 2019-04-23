@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084916"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：配置项目以面向目标平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791405"
   
 2. 在“活动解决方案平台”列表中，选择一个 64 位平台作为解决方案目标，然后选择“关闭”按钮。  
   
-   1.  如果所需平台未出现在“活动解决方案平台”列表中，请选择“新建”。  
+   1. 如果所需平台未出现在“活动解决方案平台”列表中，请选择“新建”。  
   
         将显示“新建解决方案平台”对话框。  
   
-   2.  在“键入或选择新平台”列表中，选择“x64”。  
+   2. 在“键入或选择新平台”列表中，选择“x64”。  
   
        > [!NOTE]
        >  如果对配置进行了重命名，则可能需要修改“项目设计器”中的设置，以面向正确的平台。  
   
-   3.  如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。  
+   3. 如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。  
   
    面向 64 位平台的所有项目的属性均已更新，并将为 64 位平台优化项目的下一个生成。  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791405"
   
  此任务的执行根据所用编程语言而有所不同。 有关详细信息，请参阅以下链接：  
   
--   对于 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目，请参阅 [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)。  
+- 对于 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目，请参阅 [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1)。  
   
--   对于 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目，请参阅[“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。  
+- 对于 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目，请参阅[“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。  
   
--   对于 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目，请参阅 [/clr（公共语言运行时编译）](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
+- 对于 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目，请参阅 [/clr（公共语言运行时编译）](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c)。  
   
 ## <a name="see-also"></a>请参阅  
  [了解生成平台](../ide/understanding-build-platforms.md)   

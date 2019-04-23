@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 412dee9ec920d4d94e2b4f2f176d1b1634a34eef
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115674"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="remarks"></a>备注  
  根据为活动解决方案配置指定的设置编译并运行指定项目或解决方案。 此开关会在项目或解决方案处于运行状态时最小化 IDE，会在项目或解决方案完成运行后关闭 IDE。  
   
--   用双引号将含有空格的字符串引起来。  
+- 用双引号将含有空格的字符串引起来。  
   
--   “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。  
+- “命令”窗口或使用 `/out` 开关指定的任何日志文件中都可显示摘要信息（包括错误）。  
   
 ## <a name="example"></a>示例  
  此示例会在最小化的 IDE 中使用活动部署配置运行解决方案 `MySolution`，然后关闭 IDE。  

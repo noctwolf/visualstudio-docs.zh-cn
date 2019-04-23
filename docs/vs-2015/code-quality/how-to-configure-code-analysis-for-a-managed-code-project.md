@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104312"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：为托管代码项目配置代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ ms.locfileid: "58936216"
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要配置的规则设置为.NET Framework 项目  
   
-1.  在中**解决方案资源管理器**，单击该项目。  
+1. 在中**解决方案资源管理器**，单击该项目。  
   
-2.  上**分析**菜单上，单击**的配置代码分析** *ProjectName*。  
+2. 上**分析**菜单上，单击**的配置代码分析** *ProjectName*。  
   
-3.  在中**配置**并**平台**列表中，单击生成配置和目标平台。  
+3. 在中**配置**并**平台**列表中，单击生成配置和目标平台。  
   
-4.  若要运行代码分析，每次使用所选的配置生成项目，选择**启用生成代码分析 （定义 CODE_ANALYSIS 常量）** 复选框。 您可以还手动运行代码分析通过打开**分析**菜单，然后单击**上运行代码分析** *ProjectName*。  
+4. 若要运行代码分析，每次使用所选的配置生成项目，选择**启用生成代码分析 （定义 CODE_ANALYSIS 常量）** 复选框。 您可以还手动运行代码分析通过打开**分析**菜单，然后单击**上运行代码分析** *ProjectName*。  
   
-5.  默认情况下，代码分析不报告由外部工具自动生成的代码所产生的警告。 若要查看生成的代码，请清除**禁止显示生成代码的结果**复选框。  
+5. 默认情况下，代码分析不报告由外部工具自动生成的代码所产生的警告。 若要查看生成的代码，请清除**禁止显示生成代码的结果**复选框。  
   
     > [!NOTE]
     >  当生成的代码所产生的代码分析错误和警告出现在窗体和模板中时，此选项不会取消显示它们。 可以查看和维护窗体或模板的源代码。  
   
-6.  在中**运行此规则集**列表中，执行下列操作之一：  
+6. 在中**运行此规则集**列表中，执行下列操作之一：  
   
-    -   单击你想要使用的规则集。  
+    - 单击你想要使用的规则集。  
   
-    -   单击**\<浏览...>** 可以指定现有的自定义规则集不在列表中。  
+    - 单击**\<浏览...>** 可以指定现有的自定义规则集不在列表中。  
   
-    -   定义自定义规则集。  
+    - 定义自定义规则集。  
   
          有关详细信息，请参阅[创建自定义规则集](../code-quality/creating-custom-code-analysis-rule-sets.md)。  
   

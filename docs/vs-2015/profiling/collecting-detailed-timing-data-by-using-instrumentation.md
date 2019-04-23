@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087971"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用检测收集详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54794321"
   
  你可以使用以下步骤之一来指定检测方法：  
   
--   在分析向导的第一页，选择“检测” 。  
+- 在分析向导的第一页，选择“检测” 。  
   
--   在“性能资源管理器”  工具栏的“方法”  列表中，单击“检测” 。  
+- 在“性能资源管理器”  工具栏的“方法”  列表中，单击“检测” 。  
   
--   在性能会话的属性对话框的“常规”  页上，选择“检测” 。  
+- 在性能会话的属性对话框的“常规”  页上，选择“检测” 。  
   
 ## <a name="common-tasks"></a>常规任务  
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  

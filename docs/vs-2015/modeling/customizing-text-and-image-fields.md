@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077162"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>若要创建的 ImageField 子类  
   
-1.  设置**生成双派生**的 DSL 定义中的父形状类的属性。  
+1. 设置**生成双派生**的 DSL 定义中的父形状类的属性。  
   
-2.  重写`InitializeShapeFields`形状类的方法。  
+2. 重写`InitializeShapeFields`形状类的方法。  
   
-    -   在 DSL 项目中，创建一个新代码文件并编写形状类的分部类定义。 重写的方法定义。  
+    - 在 DSL 项目中，创建一个新代码文件并编写形状类的分部类定义。 重写的方法定义。  
   
-3.  检查的代码`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。  
+3. 检查的代码`InitializeShapeFields`DSL\GeneratedCode\Shapes.cs 中。  
   
      在重写方法中，调用基方法，然后创建你自己的图像字段类的实例。 用于替换中的正则图像字段`shapeFields`列表。  
   

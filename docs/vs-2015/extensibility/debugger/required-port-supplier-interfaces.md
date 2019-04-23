@@ -11,12 +11,12 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83dd349f4678af512ec5178c5f7704fcbb13c031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82e70ea9a4ba30b6b1d312188a91d9c0c8aa2904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116636"
 ---
 # <a name="required-port-supplier-interfaces"></a>所需的端口提供程序接口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "58935921"
   
  由于端口提供程序都提供端口，它还必须实现它们。 因此，它必须实现以下接口：  
   
--   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
+- [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
      描述该端口和可枚举的端口上运行的所有进程。  
   
--   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
+- [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
      提供用于启动和终止进程的端口上。  
   
--   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
+- [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
      提供了一种机制，通知程序节点创建和析构的此端口的上下文中运行的程序。 有关详细信息，请参阅[程序节点](../../extensibility/debugger/program-nodes.md)。  
   
--   `IConnectionPointContainer`  
+- `IConnectionPointContainer`  
   
      提供的连接点[IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md)。  
   
@@ -48,37 +48,37 @@ ms.locfileid: "58935921"
   
  因为一个端口可以启动和终止进程的物理和逻辑的程序，还必须调试引擎中实现这些接口：  
   
--   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
+- [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
      介绍了物理过程。 至少必须实现以下方法：  
   
-    -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
+    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
-    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
-    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
-    -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
-    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
+    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
   
-    -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
+    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
   
--   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
+- [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
      提供有关 SDM，附加和分离本身从进程的方法。  
   
--   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
+- [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
      描述逻辑的程序。 至少必须实现以下方法：  
   
-    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
   
-    -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
+    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
   
-    -   [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
+    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
   
--   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
+- [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   
      提供有关 SDM，附加到此程序的方法。  
   

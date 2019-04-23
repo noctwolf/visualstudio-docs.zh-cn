@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117845"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何：创建。从现有的 Vsct 文件。启动 Ctc 文件
 可以从现有的命令表 .ctc 源文件创建一个基于 XML 的 .vsct 文件。 通过执行此操作，可以利用基于 XML 的新 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令表 (VSCT) 编译器格式。  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>从 .ctc 文件创建 .vsct  文件  
   
-1.  获取 Perl 语言的副本。  
+1. 获取 Perl 语言的副本。  
   
-2.  获取 Perl 脚本 ConvertCTCToVSCT.pl，通常位于一份 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Tools\bin 文件夹。  
+2. 获取 Perl 脚本 ConvertCTCToVSCT.pl，通常位于一份 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Tools\bin 文件夹。  
   
-3.  获取要转换的 .ctc 源文件的副本。  
+3. 获取要转换的 .ctc 源文件的副本。  
   
-4.  将这些文件放在同一个目录中。  
+4. 将这些文件放在同一个目录中。  
   
-5.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示窗口中，导航到该目录。  
+5. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示窗口中，导航到该目录。  
   
-6.  类型  
+6. 类型  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

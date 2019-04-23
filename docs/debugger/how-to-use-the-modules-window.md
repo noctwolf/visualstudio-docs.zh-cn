@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0425929908f17b33de71a49b03ae8de729f28309
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047548"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
 
@@ -69,13 +69,13 @@ ms.locfileid: "56681890"
 
 1. 选择**加载所有符号**，或选择要包含或排除的模块。
 
-1. 选择“确定”。 在下一个调试会话中，更改才会生效。
+1. 选择 **确定**。 在下一个调试会话中，更改才会生效。
 
 更改特定模块的符号加载行为：
 
-1.  在“模块”窗口中右键单击所需模块。
+1. 在“模块”窗口中右键单击所需模块。
 
-1.  在右键单击菜单中，选择或取消选择“始终自动加载”。 在下一个调试会话中，更改才会生效。
+1. 在右键单击菜单中，选择或取消选择“始终自动加载”。 在下一个调试会话中，更改才会生效。
 
 ## <a name="see-also"></a>请参阅
 - [中断执行](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))

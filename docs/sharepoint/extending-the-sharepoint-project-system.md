@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b02d831093173b28cfd6c004e16c4514977a044
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061601"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>扩展 SharePoint 项目系统
   可以通过使用 Visual Studio 中的一组项目模板和项模板创建 SharePoint 解决方案。 这些模板满足要求的许多开发方案，但您可能会发现某些情况下，它们不提供所需的功能。 在这些情况下，可以扩展 SharePoint 项目系统。
@@ -33,20 +33,20 @@ ms.locfileid: "56617400"
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>如何扩展 SharePoint 项目系统
  你可以按以下方式扩展 SharePoint 项目系统：
 
--   定义你自己的 SharePoint 项目项类型并将其与新项模板或 Visual Studio 中的项目模板关联。 例如，您可以创建自定义操作或字段的定义 SharePoint 项目项类型。 有关详细信息，请参阅[定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
+- 定义你自己的 SharePoint 项目项类型并将其与新项模板或 Visual Studio 中的项目模板关联。 例如，您可以创建自定义操作或字段的定义 SharePoint 项目项类型。 有关详细信息，请参阅[定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。
 
--   扩展已安装 Visual Studio 中的 SharePoint 项目项类型。 例如，可以将快捷菜单项添加到项目项中**解决方案资源管理器**和开发人员选择菜单项时自定义项目项。 有关详细信息，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。
+- 扩展已安装 Visual Studio 中的 SharePoint 项目项类型。 例如，可以将快捷菜单项添加到项目项中**解决方案资源管理器**和开发人员选择菜单项时自定义项目项。 有关详细信息，请参阅[扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。
 
--   扩展 SharePoint 项目。 例如，可以添加事件处理程序时添加或删除从 SharePoint 项目项执行特定任务。 有关详细信息，请参阅[扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)。
+- 扩展 SharePoint 项目。 例如，可以添加事件处理程序时添加或删除从 SharePoint 项目项执行特定任务。 有关详细信息，请参阅[扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)。
 
--   扩展 SharePoint 项目项和 SharePoint 项目的打包和部署行为。 例如，可以创建自己的部署步骤来部署或收回一个项目，或当 Visual Studio 执行某些部署步骤时，你可以执行其他自定义任务时执行。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
+- 扩展 SharePoint 项目项和 SharePoint 项目的打包和部署行为。 例如，可以创建自己的部署步骤来部署或收回一个项目，或当 Visual Studio 执行某些部署步骤时，你可以执行其他自定义任务时执行。 有关详细信息，请参阅[扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ## <a name="common-development-tasks"></a>常见开发任务
  扩展 SharePoint 项目系统中，可以执行以下常见任务：
 
--   将自定义字符串数据保存在多种不同类型的项目文件、 项目项。 有关详细信息，请参阅[将数据保存在 SharePoint 项目系统的扩展](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+- 将自定义字符串数据保存在多种不同类型的项目文件、 项目项。 有关详细信息，请参阅[将数据保存在 SharePoint 项目系统的扩展](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
--   将对象转换到 Visual Studio 自动化对象模型或集成对象模型中的相应对象在 SharePoint 项目系统中，反之亦然。 有关详细信息，请参阅[SharePoint 项目系统类型和其他 Visual Studio 项目类型之间将](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
+- 将对象转换到 Visual Studio 自动化对象模型或集成对象模型中的相应对象在 SharePoint 项目系统中，反之亦然。 有关详细信息，请参阅[SharePoint 项目系统类型和其他 Visual Studio 项目类型之间将](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
 
 ## <a name="see-also"></a>请参阅
 - [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)

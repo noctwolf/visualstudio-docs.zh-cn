@@ -9,25 +9,25 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: 91c1527de5a5af57602350f317507f97bac53810
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056167"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>如何：创建。从现有的 Vsct 文件。首席技术官文件
 可从现有的二进制 .cto 文件创建一个基于 XML 的 .vsct 文件。 这样既可充分利用新的命令表编译器格式。 即使 .cto 文件是从 .ctc 文件编译而来，此过程仍然有效。 你可以编辑 .vsct 文件并将其编译到其他 .cto 文件。  
   
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>从 .cto 文件创建 .Vsct 文件  
   
-1.  获取 .cto 文件及其对应 .ctsym 文件的副本。  
+1. 获取 .cto 文件及其对应 .ctsym 文件的副本。  
   
-2.  将文件与 vsct.exe 编译器放在同一目录中。  
+2. 将文件与 vsct.exe 编译器放在同一目录中。  
   
-3.  在 Visual Studio 命令提示符处，转到包含 .cto 和 .ctsym 文件的目录。  
+3. 在 Visual Studio 命令提示符处，转到包含 .cto 和 .ctsym 文件的目录。  
   
-4.  类型 **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**。  
+4. 类型 **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**。  
   
      `ctofilename` 是 .cto 文件的名称，`vsctfilename` 是要创建的 vsct 文件的名称，而 `symfilename` 是 .ctsym 文件的名称。  
   

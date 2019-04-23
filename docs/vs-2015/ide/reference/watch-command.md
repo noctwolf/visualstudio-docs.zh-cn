@@ -14,17 +14,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1a04dce73dbf2551b51f2395b3512e62daf3766
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bd362c01c996dc6a32197b9acd88f11b26c034bf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788185"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655798"
 ---
 # <a name="watch-command"></a>“监视”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 创建并打开指定“监视”  窗口的实例。 可使用“监视”窗口计算变量、表达式或寄存器的值，然后编辑这些值并保存结果。  
   
 ## <a name="syntax"></a>语法  

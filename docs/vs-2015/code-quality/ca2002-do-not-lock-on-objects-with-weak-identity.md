@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9c525aa18e94e7951e6355c959a105aa5841e10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 631979309d9ad42a25b244e8806e5a6849f8b81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081451"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002:不要锁定具有弱标识的对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "58931383"
 ## <a name="rule-description"></a>规则说明
  当可以跨应用程序域边界直接进行访问对象时，则认为该对象具有弱标识。 对于尝试获取对具有弱标识的对象的锁的线程，该线程可能会被其他应用程序域中持有对同一对象的锁的另一线程所阻止。 下面的类型具有弱标识，该规则标记：
 
--   <xref:System.MarshalByRefObject>
+- <xref:System.MarshalByRefObject>
 
--   <xref:System.ExecutionEngineException>
+- <xref:System.ExecutionEngineException>
 
--   <xref:System.OutOfMemoryException>
+- <xref:System.OutOfMemoryException>
 
--   <xref:System.StackOverflowException>
+- <xref:System.StackOverflowException>
 
--   <xref:System.String>
+- <xref:System.String>
 
--   <xref:System.Reflection.MemberInfo>
+- <xref:System.Reflection.MemberInfo>
 
--   <xref:System.Reflection.ParameterInfo>
+- <xref:System.Reflection.ParameterInfo>
 
--   <xref:System.Threading.Thread>
+- <xref:System.Threading.Thread>
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请使用来自不在列表中的说明部分中的类型的对象。

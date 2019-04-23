@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080808"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -108,42 +108,42 @@ ms.locfileid: "58515332"
 
 有多种方法来禁止显示规则冲突：
 
-- 若要禁止显示所有当前的冲突，请选择**分析** > **运行代码分析并取消未解决的问题**菜单栏上。 这有时称为"基线"。
+- 从**分析**菜单
 
-- 若要禁止显示从诊断**解决方案资源管理器**，其严重级别设置为**None**。
+   选择**分析** > **运行代码分析并取消未解决的问题**要禁止显示所有当前的冲突的菜单栏上。 这有时称为"基线"。
 
-- 若要禁止显示从规则集编辑器的诊断，请取消选中其名称旁边的框，或设置**操作**到**None**。
+- 从**解决方案资源管理器**
 
-- 若要禁止显示代码编辑器中的诊断，请将光标放置在一行代码冲突并按**Ctrl**+**。** 若要打开**快速操作**菜单。 选择**禁止显示 CAxxxx** > **源中**或**取消 CAxxxx** > **在禁止显示文件**。
+   若要禁止显示中的违反**解决方案资源管理器**，将该规则的严重性设置为**None**。
+
+- 从**规则集编辑器**
+
+   若要禁止显示从规则集编辑器的冲突，请取消选中其名称旁边的框，或设置**操作**到**None**。
+
+- 从**代码编辑器**
+
+   若要禁止显示代码编辑器中的冲突，请将光标放置在一行代码冲突并按**Ctrl**+**。** 若要打开**快速操作**菜单。 选择**禁止显示 CAXXXX** > **源/禁止显示文件**。
 
    ![禁止显示诊断从快速操作菜单](media/suppress-diagnostic-from-editor.png)
 
-- 若要禁止显示从诊断**错误列表**，请参阅[禁止显示错误列表中的冲突](#suppress-violations-from-the-error-list)。
+- 从**错误列表**
 
-### <a name="suppress-violations-from-the-error-list"></a>禁止显示错误列表中的冲突
+   您可以禁止显示来自一个或多个诊断**错误列表**的选择的想要禁止显示，并单击右键并选择**禁止** > **中 Source/In禁止显示文件**。
 
-您可以禁止显示来自一个或多个诊断**错误列表**的选择的想要禁止显示，并单击右键并选择**禁止** > **在源**或**取消** > **在禁止显示文件**。
+   - 如果您禁止显示**在源**，则**预览更改**对话框将打开并显示的预览C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指令添加到源代码。
 
-- 如果选择**在源**，则**预览更改**对话框将打开并显示的 C# 预览[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指令添加到源代码。
+      ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
 
-   ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
+   - 如果选择**在禁止显示文件**，则**预览更改**对话框将打开并显示的预览<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>添加到全局禁止显示文件的属性。
 
-- 如果选择**在禁止显示文件**，则**预览更改**对话框将打开并显示的预览<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>添加到全局禁止显示文件的属性。
+      ![SuppressMessage 特性添加到禁止显示文件的预览](media/preview-changes-in-suppression-file.png)
 
-   ![SuppressMessage 特性添加到禁止显示文件的预览](media/preview-changes-in-suppression-file.png)
+   在中**预览更改**对话框中，选择**应用**。
 
-在中**预览更改**对话框中，选择**应用**。
-
-**错误列表**显示诊断或从这两个冲突实时代码分析和生成的规则。 由于生成诊断可能是陈旧，例如，如果你已编辑代码来解决冲突，但尚未重新生成，无法禁止显示来自这些诊断**错误列表**。 但是，来自实时分析或智能感知，诊断始终是当前源代码的最新并可从抑制**错误列表**。 如果右键单击或从上下文菜单中禁用禁止显示选项，则它可能是因为有一个或多个生成所选内容中的诊断。 若要从所选内容中排除生成诊断，请切换**错误列表**源筛选器从**生成 + IntelliSense**到**Intellisense 仅**。 然后，选择你想要取消，并在继续操作，因为前面所述的诊断。
-
-![在 Visual Studio 中的错误列表源筛选器](media/error-list-filter.png)
-
-> [!NOTE]
-> 在.NET Core 项目中，如果添加对具有 NuGet 分析器的项目的引用这些分析器将自动添加到依赖项目太。 若要禁用此行为，例如，如果依赖项目是单元测试项目，将标记为在专用的 NuGet 包 *.csproj*或 *.vbproj*被引用项目文件：
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > 如果没有看到**禁止**中的菜单选项**解决方案资源管理器**，冲突可能来自生成和不实时分析。 **错误列表**显示诊断或从这两个冲突实时代码分析和生成的规则。 由于生成诊断可能是陈旧，例如，如果你已编辑代码来解决冲突，但尚未重新生成，无法禁止显示来自这些诊断**错误列表**。 来自实时分析或智能感知，诊断始终是当前源代码的最新，并可从抑制**错误列表**。 若要排除*构建*从你的选择，诊断切换**错误列表**源筛选器从**生成 + IntelliSense**到**仅 Intellisense**. 然后，选择你想要取消，并在继续操作，因为前面所述的诊断。
+   >
+   > ![在 Visual Studio 中的错误列表源筛选器](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>命令行使用情况
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 下图显示了构建包含分析器规则冲突的项目的命令行生成输出：
 
 ![带规则冲突的 MSBuild 输出](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>相关项目
+
+在.NET Core 项目中，如果添加对具有 NuGet 分析器的项目的引用这些分析器将自动添加到依赖项目太。 若要禁用此行为，例如，如果依赖项目是单元测试项目，将标记为在专用的 NuGet 包 *.csproj*或 *.vbproj*文件引用的项目，通过设置**PrivateAssets**属性：
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>请参阅
 

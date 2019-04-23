@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052527"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：在文档级项目中的复杂数据绑定
   本演练演示在文档级项目中的复杂数据绑定的基础知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。
@@ -40,20 +40,20 @@ ms.locfileid: "56643101"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
--   对具有 Northwind SQL Server 示例数据库的服务器的访问。
+- 对具有 Northwind SQL Server 示例数据库的服务器的访问。
 
--   读取和写入到 SQL Server 数据库的权限。
+- 读取和写入到 SQL Server 数据库的权限。
 
 ## <a name="create-a-new-project"></a>创建新项目
  第一步是创建的 Excel 工作簿项目。
 
 ### <a name="to-create-a-new-project"></a>创建新项目
 
-1.  使用名称创建的 Excel 工作簿项目**我的复杂数据绑定**。 在向导中，选择**创建一个新文档**。
+1. 使用名称创建的 Excel 工作簿项目**我的复杂数据绑定**。 在向导中，选择**创建一个新文档**。
 
      有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643101"
 
 #### <a name="to-add-a-list-object"></a>若要添加列表对象
 
-1.  确认**我的复杂数据 Binding.xlsx**工作簿是在 Visual Studio 设计器中，打开与**Sheet1**显示。
+1. 确认**我的复杂数据 Binding.xlsx**工作簿是在 Visual Studio 设计器中，打开与**Sheet1**显示。
 
-2.  打开**数据源**窗口，然后选择**员工**节点。
+2. 打开**数据源**窗口，然后选择**员工**节点。
 
-3.  单击显示的下拉箭头。
+3. 单击显示的下拉箭头。
 
-4.  选择**ListObject**下拉列表中。
+4. 选择**ListObject**下拉列表中。
 
-5.  拖动**员工**表与单元格**A6**。
+5. 拖动**员工**表与单元格**A6**。
 
      一个<xref:Microsoft.Office.Tools.Excel.ListObject>名为控件`EmployeesListObject`单元格中创建**A6**。 同时，在<xref:System.Windows.Forms.BindingSource>名为`EmployeesBindingSource`，一个表适配器和一个<xref:System.Data.DataSet>实例添加到项目。 该控件绑定到<xref:System.Windows.Forms.BindingSource>，后者又绑定到<xref:System.Data.DataSet>实例。
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643101"
 
 ### <a name="to-save-changes-to-the-database"></a>若要将更改保存到数据库
 
-1.  添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`button`，并添加以下代码以提交回数据库做在数据集中的所有更改。
+1. 添加事件处理程序<xref:System.Windows.Forms.Control.Click>事件的`button`，并添加以下代码以提交回数据库做在数据集中的所有更改。
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643101"
 
 ### <a name="to-test-the-data-binding"></a>若要测试的数据绑定
 
--   按 F5 。
+- 按 F5 。
 
      验证，该工作簿打开时，则列表对象中的数据填充**员工**表。
 
 ### <a name="to-modify-data"></a>若要修改的数据
 
-1.  单击单元格**B7**，其中包含名称应该**Davolio**。
+1. 单击单元格**B7**，其中包含名称应该**Davolio**。
 
-2.  键入名称**Anderson**，然后按**Enter**。
+2. 键入名称**Anderson**，然后按**Enter**。
 
 ### <a name="to-modify-a-column-header"></a>若要修改的列标题
 
-1.  单击包含列标题的单元格**LastName**。
+1. 单击包含列标题的单元格**LastName**。
 
-2.  类型**姓氏**，其中包括两个字之间有空格，然后按**Enter**。
+2. 类型**姓氏**，其中包括两个字之间有空格，然后按**Enter**。
 
 ### <a name="to-save-data"></a>若要保存数据
 
-1.  单击**保存**工作表上。
+1. 单击**保存**工作表上。
 
-2.  退出 Excel。 单击**否**时提示您保存所做的更改。
+2. 退出 Excel。 单击**否**时提示您保存所做的更改。
 
-3.  按**F5**以再次运行该项目。
+3. 按**F5**以再次运行该项目。
 
      列表对象中的数据填充**员工**表。
 
-4.  请注意，在单元格中的名称**B7**仍**Anderson**，这是将数据更改你所做和保存回数据库。 列标题**LastName**已改回其原始格式没有空格，因为列标题不绑定到数据库，并且未保存到工作表中所做的更改。
+4. 请注意，在单元格中的名称**B7**仍**Anderson**，这是将数据更改你所做和保存回数据库。 列标题**LastName**已改回其原始格式没有空格，因为列标题不绑定到数据库，并且未保存到工作表中所做的更改。
 
 ### <a name="to-add-new-rows"></a>若要添加新行
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643101"
 
 ### <a name="to-delete-rows"></a>若要删除的行
 
--   数字 16 （第 16 行） 最左侧的工作表中，右键单击，然后单击**删除**。
+- 数字 16 （第 16 行） 最左侧的工作表中，右键单击，然后单击**删除**。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>若要在列表中的行进行排序
 
-1.  选择列表内的单元格。
+1. 选择列表内的单元格。
 
      箭头按钮出现在每个列标题。
 
-2.  单击箭头按钮在**姓氏**列标题。
+2. 单击箭头按钮在**姓氏**列标题。
 
-3.  单击**按升序排序**。
+3. 单击**按升序排序**。
 
      对行的最后一个名称按字母顺序排序。
 
 ### <a name="to-filter-information"></a>若要筛选器信息
 
-1.  选择列表内的单元格。
+1. 选择列表内的单元格。
 
-2.  单击箭头按钮在**标题**列标题。
+2. 单击箭头按钮在**标题**列标题。
 
-3.  单击**销售代表**。
+3. 单击**销售代表**。
 
      该列表显示了仅有的行**销售代表联系**中**标题**列。
 
-4.  单击箭头按钮在**标题**再次列标题。
+4. 单击箭头按钮在**标题**再次列标题。
 
-5.  单击 **（全部）**。
+5. 单击 **（全部）**。
 
      筛选中删除，并且所有行都显示。
 
 ## <a name="next-steps"></a>后续步骤
  本演练演示在数据库中的表绑定到列表对象的基础知识。 以下是接下来可能要执行的一些任务：
 
--   缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
+- 缓存数据，以便可以脱机使用。 有关详细信息，请参阅[如何：脱机时或者在服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
 
--   部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+- 部署解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
--   创建一个字段与表之间的主/从关系。 有关详细信息，请参见[演练：创建使用缓存的数据集的主从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。
+- 创建一个字段与表之间的主/从关系。 有关详细信息，请参见[演练：创建使用缓存的数据集的主从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。
 
 ## <a name="see-also"></a>请参阅
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)

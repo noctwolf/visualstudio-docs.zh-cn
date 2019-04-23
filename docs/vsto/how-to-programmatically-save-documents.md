@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e8a4e1c44928663d0d055d84899c60b968f90a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056271"
 ---
 # <a name="how-to-programmatically-save-documents"></a>如何：以编程方式保存文档
   有几种方法来保存 Microsoft Office Word 文档。 您可以将文档保存而无需更改文档的名称或可以使用新名称保存文档。
@@ -29,7 +29,7 @@ ms.locfileid: "56636458"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>若要保存与文档级自定义关联的文档
 
-1.  调用 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 类的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。
+1. 调用 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 类的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]
@@ -45,7 +45,7 @@ ms.locfileid: "56636458"
 
 ### <a name="to-save-a-document-specified-by-name"></a>若要保存由名称指定的文档
 
-1.  使用文档名称的参数作为<xref:Microsoft.Office.Interop.Word.Documents>集合。 若要使用此代码模板，请从项目中的 `ThisDocument` 或 `ThisAddIn` 类运行它。
+1. 使用文档名称的参数作为<xref:Microsoft.Office.Interop.Word.Documents>集合。 若要使用此代码模板，请从项目中的 `ThisDocument` 或 `ThisAddIn` 类运行它。
 
      [!code-vb[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#9)]
      [!code-csharp[Trin_VstcoreWordAutomation#9](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#9)]
@@ -58,7 +58,7 @@ ms.locfileid: "56636458"
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>若要保存与具有新名称的文档级自定义项关联的文档
 
-1.  调用<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法的`ThisDocument`类在项目中，使用完全限定的路径和文件名。 如果该文件夹中已存在具有该名称的文件，则以无提示方式覆盖它。 若要使用此代码示例，请从 `ThisDocument` 类中运行它。
+1. 调用<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法的`ThisDocument`类在项目中，使用完全限定的路径和文件名。 如果该文件夹中已存在具有该名称的文件，则以无提示方式覆盖它。 若要使用此代码示例，请从 `ThisDocument` 类中运行它。
 
     > [!NOTE]
     >  <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法将引发异常，如果目标目录不存在或保存文件的其他问题。 它是使用一个好办法**try...catch**阻止围绕<xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A>方法或在调用方法。
@@ -68,7 +68,7 @@ ms.locfileid: "56636458"
 
 ### <a name="to-save-a-native-document-with-a-new-name"></a>若要使用新名称保存本机文档
 
-1.  调用<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>方法的<xref:Microsoft.Office.Interop.Word.Document>要保存，请使用完全限定的路径和文件名。 如果该文件夹中已存在具有该名称的文件，则以无提示方式覆盖它。
+1. 调用<xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A>方法的<xref:Microsoft.Office.Interop.Word.Document>要保存，请使用完全限定的路径和文件名。 如果该文件夹中已存在具有该名称的文件，则以无提示方式覆盖它。
 
      下面的代码示例将使用新名称保存活动文档。 若要使用此代码模板，请从项目中的 `ThisDocument` 或 `ThisAddIn` 类运行它。
 
@@ -81,9 +81,9 @@ ms.locfileid: "56636458"
 ## <a name="compile-the-code"></a>编译代码
  此代码示例要求满足以下条件：
 
--   若要按名称保存文档，文档名为*NewDocument.doc*必须存在于一个名为目录*测试*在驱动器 c。
+- 若要按名称保存文档，文档名为*NewDocument.doc*必须存在于一个名为目录*测试*在驱动器 c。
 
--   若要使用新名称保存文档，目录的名称*测试*必须位于驱动器 c。
+- 若要使用新名称保存文档，目录的名称*测试*必须位于驱动器 c。
 
 ## <a name="see-also"></a>请参阅
 - [如何：以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)

@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091520"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何：访问内置的字体和配色方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>若要注册使用内置的字体和颜色的类别  
   
-1.  构造一个特殊类型的类别中的以下位置的注册表条目：  
+1. 构造一个特殊类型的类别中的以下位置的注册表条目：  
   
      [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
   
      *\<类别 >* 类别的非本地化名称。  
   
-2.  填充注册表来使用的常用字体和配色方案包含四个值：  
+2. 填充注册表来使用的常用字体和配色方案包含四个值：  
   
     |名称|类型|数据|描述|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
     |NameID|REG_DWORD|Id|在 VSPackage 中的可本地化的类别名称的资源 ID。|  
     |ToolWindowPackage|REG_SZ|GUID|VSPackage 实现的 GUID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>若要启动使用系统提供的字体和颜色  
   

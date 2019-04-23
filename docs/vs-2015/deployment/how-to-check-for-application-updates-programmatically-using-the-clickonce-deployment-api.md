@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074344"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：检查使用 ClickOnce 部署 API 以编程方式的应用程序更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
   
 ### <a name="to-check-for-updates-programmatically"></a>若要以编程方式检查更新  
   
-1.  创建新的 Windows 窗体应用程序使用您首选的命令行或 visual 工具。  
+1. 创建新的 Windows 窗体应用程序使用您首选的命令行或 visual 工具。  
   
-2.  创建任何按钮、 菜单项或其他用户界面项你希望用户能够进行选择以检查更新。 从该项目的事件处理程序，调用以下方法，以检查并安装更新。  
+2. 创建任何按钮、 菜单项或其他用户界面项你希望用户能够进行选择以检查更新。 从该项目的事件处理程序，调用以下方法，以检查并安装更新。  
   
      [!code-cpp[ClickOnceAPI#6](../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
      [!code-csharp[ClickOnceAPI#6](../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
      [!code-vb[ClickOnceAPI#6](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
   
-3.  编译应用程序。  
+3. 编译应用程序。  
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 Mage.exe 部署以编程方式检查更新的应用程序  
   
--   按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
+- 按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 在调用 Mage.exe 生成部署清单，请确保使用命令行开关`providerUrl`，并指定 ClickOnce 检查更新的位置的 URL。 如果你的应用程序将更新从[ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp)，例如，若要生成的部署清单的调用可能如下所示：  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -57,7 +57,7 @@ ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>使用 MageUI.exe 部署以编程方式检查更新的应用程序  
   
--   按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 上**部署选项**选项卡上，设置**开始位置**字段检查更新的 ClickOnce 应用程序清单。 上**更新选项**选项卡上，清除**此应用程序应检查更新**复选框。  
+- 按照说明部署你的应用程序中所述使用 Mage.exe[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 上**部署选项**选项卡上，设置**开始位置**字段检查更新的 ClickOnce 应用程序清单。 上**更新选项**选项卡上，清除**此应用程序应检查更新**复选框。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  你的应用程序必须具有完全信任权限，用于以编程方式更新。  

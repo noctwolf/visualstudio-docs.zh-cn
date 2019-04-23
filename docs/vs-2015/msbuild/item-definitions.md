@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796667"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668487"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素来启用项目文件中项的静态声明。 但是，只能在项级别添加元数据，即使所有项的元数据均相同，也是如此。 从 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 开始引入了一个名为 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的项目元素，从而克服了这一限制。 使用 *ItemDefinitionGroup* 可以定义一组项定义，这些项定义将默认元数据值添加到命名项类型中的所有项中。  
   
  *ItemDefinitionGroup* 元素紧跟在项目文件的 [Project](../msbuild/project-element-msbuild.md) 元素之后。 项定义提供以下功能：  
@@ -175,7 +174,7 @@ ms.locfileid: "54796667"
 </ItemDefinitionGroup>  
 ```  
   
- 在此示例中，项"i"的引用在条件中的项"test"。  
+ 在此示例中，项“i”在条件中引用项“test”。  
   
 ## <a name="overriding-and-deleting-metadata"></a>替代和删除元数据  
  通过将元数据值设置为空白，在 ItemDefinitionGroup 元素中定义的元数据可以在之后的 ItemDefinitionGroup 元素中被替代。 还可通过将元数据项设置为空值，高效删除元数据项。 例如:  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694395"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049118"
 ---
 # <a name="messages-view"></a>消息视图
 每个窗口都有相关联的消息流。 消息视图窗口会显示此消息流。 显示的窗口句柄、 消息代码和消息。 可以创建线程或进程以及消息视图。 这样，您可以查看发送到特定的进程或线程，尤其是用于捕获窗口初始化消息所拥有的所有窗口的消息。
@@ -30,21 +30,21 @@ ms.locfileid: "56694395"
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>若要打开的窗口、 进程或线程的消息视图
 
-1.  将焦点移至[Windows 视图](../debugger/windows-view.md)，[进程视图](../debugger/processes-view.md)，或[线程视图](../debugger/threads-view.md)窗口。
+1. 将焦点移至[Windows 视图](../debugger/windows-view.md)，[进程视图](../debugger/processes-view.md)，或[线程视图](../debugger/threads-view.md)窗口。
 
-2.  查找你想要检查，其消息的项的节点并选择它。
+2. 查找你想要检查，其消息的项的节点并选择它。
 
-3.  从**Spy**菜单中，选择**日志消息**。
+3. 从**Spy**菜单中，选择**日志消息**。
 
      [消息选项对话框](../debugger/message-options-dialog-box.md)随即打开。
 
-4.  选择你想要显示的消息的选项。
+4. 选择你想要显示的消息的选项。
 
-5.  按**确定**开始日志记录消息。
+5. 按**确定**开始日志记录消息。
 
      一个视图窗口将打开，消息的以及**消息**菜单添加到 Spy + + 工具栏。 根据所选的选项，消息开始流式传送到活动的消息视图窗口。
 
-6.  在必须足够多的消息，请选择**停止日志记录**从**消息**菜单。
+6. 在必须足够多的消息，请选择**停止日志记录**从**消息**菜单。
 
 ## <a name="in-this-section"></a>本节内容
  [控制消息视图](../debugger/how-to-control-messages-view.md)说明如何管理消息视图。

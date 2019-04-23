@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097487"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主机控件中的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：
@@ -42,7 +42,7 @@ ms.locfileid: "56637589"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>若要更新在运行时的内存中数据源
 
--   调用将控件绑定到数据源的 <xref:System.Windows.Forms.Binding.WriteValue%2A> 对象的 <xref:System.Windows.Forms.Binding> 方法。
+- 调用将控件绑定到数据源的 <xref:System.Windows.Forms.Binding.WriteValue%2A> 对象的 <xref:System.Windows.Forms.Binding> 方法。
 
      下面的示例将在 Excel 工作表中对 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件所做的更改保存到数据源。 此示例假定你有一个名为 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637589"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>通过使用设计器将控件设置为自动更新内存中数据源
 
-1.  在 Visual Studio 的设计器中，打开 Word 文档或 Excel 工作簿。
+1. 在 Visual Studio 的设计器中，打开 Word 文档或 Excel 工作簿。
 
-2.  单击希望其自动更新数据源的控件。
+2. 单击希望其自动更新数据源的控件。
 
-3.  在“属性”  窗口中，展开“(DataBindings)”  属性。
+3. 在“属性”  窗口中，展开“(DataBindings)”  属性。
 
-4.  下一步 **（高级）** 属性中，单击省略号按钮 (![VisualStudioEllipsesButton 屏幕快照](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 屏幕快照"))。
+4. 下一步 **（高级）** 属性中，单击省略号按钮 (![VisualStudioEllipsesButton 屏幕快照](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 屏幕快照"))。
 
-5.  在“格式设置和高级绑定”  对话框中，单击“数据源更新模式”  下拉列表并选择以下值之一：
+5. 在“格式设置和高级绑定”  对话框中，单击“数据源更新模式”  下拉列表并选择以下值之一：
 
-    -   若要在验证控件时更新数据源，请选择“OnValidation” 。
+    - 若要在验证控件时更新数据源，请选择“OnValidation” 。
 
-    -   若要在控件的数据绑定属性值更改时更新数据源，请选择“OnPropertyChanged” 。
+    - 若要在控件的数据绑定属性值更改时更新数据源，请选择“OnPropertyChanged” 。
 
         > [!NOTE]
         >  因为 Word 不提供文档更改或控件更改通知，所以“OnPropertyChanged”  选项不适用于 Word 宿主控件。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
 
-6.  关闭“格式设置和高级绑定”  对话框。
+6. 关闭“格式设置和高级绑定”  对话框。
 
 ## <a name="update-the-database"></a>更新数据库
  如果内存中数据源与某个数据库关联，则必须使用对该数据源所做的更改来更新此数据库。 有关更新数据库的详细信息，请参阅[将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)并[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)。
 
 ### <a name="to-update-the-database"></a>更新数据库
 
-1.  调用控件的 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 的 <xref:System.Windows.Forms.BindingSource> 方法。
+1. 调用控件的 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 的 <xref:System.Windows.Forms.BindingSource> 方法。
 
      在设计时将数据绑定控件添加到文档或工作簿时，会自动生成 <xref:System.Windows.Forms.BindingSource> 。 <xref:System.Windows.Forms.BindingSource> 将该控件连接到项目中的类型化数据集。 有关详细信息，请参阅[BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637589"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  调用`Update`在项目中生成的 TableAdapter 的方法。
+2. 调用`Update`在项目中生成的 TableAdapter 的方法。
 
      在设计时向文档或工作簿添加数据绑定控件时，会自动生成的 TableAdapter。 TableAdapter 将你的项目中的类型化数据集连接到数据库。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 

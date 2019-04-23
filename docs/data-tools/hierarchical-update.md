@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089310"
 ---
 # <a name="hierarchical-update"></a>分层更新
 
@@ -87,9 +87,9 @@ ms.locfileid: "55933245"
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新代码以在保存前提交对相关表的更改
 
-1.  双击 <xref:System.Windows.Forms.BindingNavigator> 上的“保存”按钮以在代码编辑器中打开“Form1”。
+1. 双击 <xref:System.Windows.Forms.BindingNavigator> 上的“保存”按钮以在代码编辑器中打开“Form1”。
 
-2.  在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 “保存”按钮 click 事件中的代码应如下所示：
+2. 在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 “保存”按钮 click 事件中的代码应如下所示：
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ ms.locfileid: "55933245"
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>添加代码以在添加新子记录之前在数据集中提交父记录
 
-1.  为 `OrdersBindingSource.AddingNew` 事件创建一个事件处理程序。
+1. 为 `OrdersBindingSource.AddingNew` 事件创建一个事件处理程序。
 
-    -   打开**Form1**在设计视图中，选择**OrdersBindingSource**在组件栏中，选择**事件**中**属性**窗口中，并然后双击**AddingNew**事件。
+    - 打开**Form1**在设计视图中，选择**OrdersBindingSource**在组件栏中，选择**事件**中**属性**窗口中，并然后双击**AddingNew**事件。
 
-2.  将一行代码添加到的事件处理程序调用`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件处理程序中的代码应如下所示：
+2. 将一行代码添加到的事件处理程序调用`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件处理程序中的代码应如下所示：
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
@@ -118,7 +118,7 @@ ms.locfileid: "55933245"
 
 以下是常用的方法和属性`TableAdapterManager`类：
 
-|成员|说明​​|
+|成员|描述|
 |------------|-----------------|
 |`UpdateAll` 方法|将保存数据的所有表中的所有数据。|
 |`BackUpDataSetBeforeUpdate` 属性|确定是否在执行前创建数据集的备份副本`TableAdapterManager.UpdateAll`方法。一个布尔值。|

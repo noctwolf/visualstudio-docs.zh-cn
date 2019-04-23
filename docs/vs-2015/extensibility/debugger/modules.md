@@ -11,23 +11,23 @@ ms.assetid: c4cf2809-dbdb-4e75-9273-b3d3d77b67d0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 802a40c248df243adf1319c522278ad94d69eeed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a2b2f04e1088b9b06cb05015a6b0b4da5d60927
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076379"
 ---
 # <a name="modules"></a>模块
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在调试器体系结构，方面**模块**:  
   
--   是，如可执行文件或 DLL 的物理容器。  
+- 是，如可执行文件或 DLL 的物理容器。  
   
--   可以重新加载其符号，并描述自身。 模块说明显示在 IDE 的模块窗口中。  
+- 可以重新加载其符号，并描述自身。 模块说明显示在 IDE 的模块窗口中。  
   
--   为由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)调试引擎来描述该模块创建的接口。  
+- 为由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)调试引擎来描述该模块创建的接口。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   

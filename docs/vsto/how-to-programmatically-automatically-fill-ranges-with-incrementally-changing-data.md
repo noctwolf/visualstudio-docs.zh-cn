@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117884"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>对象，您可以自动使用值填充工作表中的范围。 大多数情况下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用于存储以增量方式增加或减少的范围内的值。 可以通过提供从一个可选常量指定行为<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>枚举。
@@ -29,9 +29,9 @@ ms.locfileid: "56638525"
 
  使用时，必须指定两个范围<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
 
--   调用区域<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法，它指定填充的起始点并包含一个初始值。
+- 调用区域<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法，它指定填充的起始点并包含一个初始值。
 
--   你想要填充，范围作为参数传递给<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法。 目标范围必须包括包含初始值的范围。
+- 你想要填充，范围作为参数传递给<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法。 目标范围必须包括包含初始值的范围。
 
     > [!NOTE]
     >  不能将传递<xref:Microsoft.Office.Tools.Excel.NamedRange>控件来代替<xref:Microsoft.Office.Interop.Excel.Range>。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
@@ -45,11 +45,11 @@ ms.locfileid: "56638525"
 
  该示例需要填充三个区域：
 
--   B 列是包含 5 个工作日。 对于初始的值，请键入**星期一**单元格 B1 中。
+- B 列是包含 5 个工作日。 对于初始的值，请键入**星期一**单元格 B1 中。
 
--   C 列是包含五个月。 对于初始的值，请键入**年 1 月**单元格 C1 中。
+- C 列是包含五个月。 对于初始的值，请键入**年 1 月**单元格 C1 中。
 
--   列 D 是包含一系列数字，每次递增两个用于每个行。 对于初始的值中，键入**4** D1 单元格中并**6** D2 单元格中。
+- 列 D 是包含一系列数字，每次递增两个用于每个行。 对于初始的值中，键入**4** D1 单元格中并**6** D2 单元格中。
 
 ## <a name="see-also"></a>请参阅
 - [使用范围](../vsto/working-with-ranges.md)

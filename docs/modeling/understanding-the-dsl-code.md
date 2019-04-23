@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087764"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 
@@ -45,15 +45,15 @@ ms.locfileid: "58416014"
 
  强烈建议你不要直接编辑生成的代码，因为当重新生成解决方案时你的编辑将会丢失。 相反，若要自定义 DSL，请执行以下操作：
 
--   调整 DSL 定义中的多个参数。
+- 调整 DSL 定义中的多个参数。
 
--   在单独的代码文件中编写分部类，以重写在生成的类中定义的或由生成的类继承的方法。 在某些情况下，必须设置**生成双派生**若要重写生成的方法将在 DSL 定义中，类的选项。
+- 在单独的代码文件中编写分部类，以重写在生成的类中定义的或由生成的类继承的方法。 在某些情况下，必须设置**生成双派生**若要重写生成的方法将在 DSL 定义中，类的选项。
 
--   在 DSL 定义中，则生成的代码将为你自己的代码提供 hook 设置选项。
+- 在 DSL 定义中，则生成的代码将为你自己的代码提供 hook 设置选项。
 
      例如，如果您设置**具有自定义构造函数**域类的选项，然后生成解决方案，你会看到错误消息。 在双击其中一个错误消息时，你将在生成的代码中看到注释，阐释了你的自定义代码应提供的内容。
 
--   编写你自己的文本模板以生成特定于应用程序的代码。 您可以使用包含文件来共享许多项目通用的模板的部分，并且可以创建 Visual Studio 项目模板来设置使用你自己的文件结构初始化的项目。
+- 编写你自己的文本模板以生成特定于应用程序的代码。 您可以使用包含文件来共享许多项目通用的模板的部分，并且可以创建 Visual Studio 项目模板来设置使用你自己的文件结构初始化的项目。
 
 ## <a name="generated-files-in-dsl"></a>DSL 中生成的文件
  以下生成的文件出现在**Dsl**项目。

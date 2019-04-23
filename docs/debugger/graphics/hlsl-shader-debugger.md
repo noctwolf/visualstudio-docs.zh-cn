@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066385"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 着色器调试器
 Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器代码在应用的实际条件下如何运行。
@@ -50,9 +50,9 @@ Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>从“图形管道阶段”窗口启动 HLSL 调试器
 
-1.  在“图形管道阶段”窗口中，找到与要调试的着色器关联的管道阶段。
+1. 在“图形管道阶段”窗口中，找到与要调试的着色器关联的管道阶段。
 
-2.  在管道阶段标题下，选择“开始调试”（显示为小绿色箭头）。
+2. 在管道阶段标题下，选择“开始调试”（显示为小绿色箭头）。
 
     > [!NOTE]
     >  HLSL 调试器中的此入口点仅调试对应阶段的第一个着色器线程，即处理的第一个顶点或像素。 可以使用“像素历史记录”来访问这些着色器阶段的其他线程。

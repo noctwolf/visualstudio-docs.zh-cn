@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b093a8474d9dd7971b6a5f311deea9a522730c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042569"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>将应用迁移到通用 Windows 平台 (UWP)
 对使用 Visual Studio 2015 RC 创建的 Windows Store 8.1 应用、Windows Phone 8.1 应用或通用 Windows 应用的现有项目文件进行必要的手动更改，以便它们能与 Visual Studio 2015 RTM 一起使用。 （如果你的 Windows 8.1 通用应用同时具有 Windows 应用项目和 Windows Phone 项目，则需要按照以下步骤迁移每个项目。）  
@@ -31,17 +31,17 @@ ms.locfileid: "58932469"
   
   如果你不想进行所有这些更改，请了解如何 [移植现有应用](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 项目。  
   
-##  <a name="MigrateCSharp"></a> 迁移 C# /VB Windows 应用商店 8.1 或 Windows Phone 8.1 应用以使用通用 Windows 平台  
+## <a name="MigrateCSharp"></a> 迁移 C# /VB Windows 应用商店 8.1 或 Windows Phone 8.1 应用以使用通用 Windows 平台  
   
 #### <a name="migrate-your-cvb-project-files"></a>迁移 C#/VB 项目文件  
   
-1.  若要了解已安装的通用 Windows 平台，请打开此文件夹： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 它包含每个已安装通用 Windows 平台的文件夹列表。 文件夹名称是已安装的通用 Windows 平台版本。 例如，此 Windows 10 设备安装了 10.0.10240.0 版的通用 Windows 平台。  
+1. 若要了解已安装的通用 Windows 平台，请打开此文件夹： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 它包含每个已安装通用 Windows 平台的文件夹列表。 文件夹名称是已安装的通用 Windows 平台版本。 例如，此 Windows 10 设备安装了 10.0.10240.0 版的通用 Windows 平台。  
   
      ![打开文件夹以查看安装的版本](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      可以安装多个版本的通用 Windows 平台。 建议对你的应用使用最新版本。  
   
-2.  使用文件资源管理器，转到存储 UWP 项目的文件夹。 在此文件夹中创建 .json 文件。 将该文件命名为 project.json，然后将以下内容添加到此文件：  
+2. 使用文件资源管理器，转到存储 UWP 项目的文件夹。 在此文件夹中创建 .json 文件。 将该文件命名为 project.json，然后将以下内容添加到此文件：  
   
     ```json  
     {  
@@ -66,7 +66,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-3.  创建名为 default.rd.xml 且包含以下内容的文件。 如果具有 VB 项目，请将此文件添加到项目的“我的项目”目录中。 如果具有 C# 项目，请将此文件添加到项目的“属性”目录中。  
+3. 创建名为 default.rd.xml 且包含以下内容的文件。 如果具有 VB 项目，请将此文件添加到项目的“我的项目”目录中。 如果具有 C# 项目，请将此文件添加到项目的“属性”目录中。  
   
     ```xml  
     <?xml version="1.0"?>  
@@ -78,23 +78,23 @@ ms.locfileid: "58932469"
     </Application></Directives>  
     ```  
   
-4.  在 Visual Studio 中打开包含你现有 Windows 应用商店 8.1 应用或 Windows Phone 8.1 应用的解决方案。  
+4. 在 Visual Studio 中打开包含你现有 Windows 应用商店 8.1 应用或 Windows Phone 8.1 应用的解决方案。  
   
-5.  在解决方案资源管理器中右键单击你应用的现有项目，然后选择 **“卸载项目”**。 卸载项目后，再次右键单击项目文件，然后选择编辑 .csproj 或 .vbproj 文件。  
+5. 在解决方案资源管理器中右键单击你应用的现有项目，然后选择 **“卸载项目”**。 卸载项目后，再次右键单击项目文件，然后选择编辑 .csproj 或 .vbproj 文件。  
   
      ![右键单击项目，然后选择编辑](../misc/media/uap-editproject.png "UAP_EditProject")  
   
-6.  查找\<PropertyGroup > 元素，其中包含\<TargetPlatformVersion > 元素的值为 8.1。 为此请执行以下步骤\<PropertyGroup > 元素：  
+6. 查找\<PropertyGroup > 元素，其中包含\<TargetPlatformVersion > 元素的值为 8.1。 为此请执行以下步骤\<PropertyGroup > 元素：  
   
-    1.  设置的值\<平台 > 元素： **x86**。  
+    1. 设置的值\<平台 > 元素： **x86**。  
   
-    2.  添加\<TargetPlatformIdentifier > 元素并将其值设置为：**UAP**。  
+    2. 添加\<TargetPlatformIdentifier > 元素并将其值设置为：**UAP**。  
   
-    3.  更改的现有值\<TargetPlatformVersion > 元素为你安装的通用 Windows 平台版本的值。 此外将添加\<TargetPlatformMinVersion > 元素并为其提供相同的值。  
+    3. 更改的现有值\<TargetPlatformVersion > 元素为你安装的通用 Windows 平台版本的值。 此外将添加\<TargetPlatformMinVersion > 元素并为其提供相同的值。  
   
-    4.  值更改\<MinimumVisualStudioVersion > 元素：**14**.  
+    4. 值更改\<MinimumVisualStudioVersion > 元素：**14**.  
   
-    5.  替换为\<ProjectTypeGuids > 元素，如下所示：  
+    5. 替换为\<ProjectTypeGuids > 元素，如下所示：  
   
          对于 C#：  
   
@@ -108,9 +108,9 @@ ms.locfileid: "58932469"
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>  
         ```  
   
-    6.  添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： **true**。  
+    6. 添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： **true**。  
   
-    7.  通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
+    7. 通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
   
          现在你\<PropertyGroup > 元素应类似于以下示例：  
   
@@ -129,7 +129,7 @@ ms.locfileid: "58932469"
         </PropertyGroup>  
         ```  
   
-7.  将 12.0 的所有实例替换为 14.0，以反映你现在使用的 Visual Studio 版本。 如以下实例：  
+7. 将 12.0 的所有实例替换为 14.0，以反映你现在使用的 Visual Studio 版本。 如以下实例：  
   
     ```xml  
     <Project Tools Version="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -140,7 +140,7 @@ ms.locfileid: "58932469"
         <VisualStudioVersion>14.0</VisualStudioVersion>  
     ```  
   
-8.  查找\<PropertyGroup > 元素的 Condition 特性的一部分为 AnyCPU 平台配置的。 删除这些元素及其所有子元素。 在 Visual Studio 2015 中，Windows 10 应用不支持 AnyCPU。 例如，你应删除\<PropertyGroup > 元素喜欢这些代码：  
+8. 查找\<PropertyGroup > 元素的 Condition 特性的一部分为 AnyCPU 平台配置的。 删除这些元素及其所有子元素。 在 Visual Studio 2015 中，Windows 10 应用不支持 AnyCPU。 例如，你应删除\<PropertyGroup > 元素喜欢这些代码：  
   
     ```xml  
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">  
@@ -246,35 +246,35 @@ ms.locfileid: "58932469"
   
      现在需要遵循相关步骤，为你的所有 Windows Store 8.1 或 Windows Phone 8.1 项目 [更新包清单文件](#PackageManifest) 。  
   
-##  <a name="MigrateCPlusPlus"></a> 迁移 c + + Windows 应用商店 8.1 或 Windows Phone 8.1 应用以使用通用 Windows 平台  
+## <a name="MigrateCPlusPlus"></a> 迁移在C++Windows 应用商店 8.1 或 Windows Phone 8.1 应用以使用通用 Windows 平台  
   
 #### <a name="migrate-your-c-project-files"></a>迁移 C++ 项目文件  
   
-1.  若要了解已安装的通用 Windows 平台，请打开此文件夹： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 它包含每个已安装通用 Windows 平台的文件夹列表。 文件夹名称是已安装的通用 Windows 平台版本。 例如，此 Windows 10 设备安装了 10.0.10240.0 版的通用 Windows 平台。  
+1. 若要了解已安装的通用 Windows 平台，请打开此文件夹： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 它包含每个已安装通用 Windows 平台的文件夹列表。 文件夹名称是已安装的通用 Windows 平台版本。 例如，此 Windows 10 设备安装了 10.0.10240.0 版的通用 Windows 平台。  
   
      ![打开文件夹以查看安装的版本](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      可以安装多个版本的通用 Windows 平台。 建议对你的应用使用最新版本。  
   
-2.  在 Visual Studio 中打开包含现有 C++ Windows 应用商店 8.1 应用或 Windows Phone 8.1 应用的解决方案。  
+2. 在 Visual Studio 中打开包含现有 C++ Windows 应用商店 8.1 应用或 Windows Phone 8.1 应用的解决方案。  
   
      在解决方案资源管理器中右键单击现有项目，然后选择“卸载项目”。  卸载项目后，再次右键单击项目文件，并选择编辑 .vcxproj 文件。  
   
      ![右&#45;单击项目文件并选择编辑](../misc/media/uap-editcplusproject.png "UAP_EditCPlusProject")  
   
-3.  查找\<PropertyGroup > 元素，其中包含\<ApplicationTypeRevision > 元素的值为 8.1。 为此请执行以下步骤\<PropertyGroup > 元素：  
+3. 查找\<PropertyGroup > 元素，其中包含\<ApplicationTypeRevision > 元素的值为 8.1。 为此请执行以下步骤\<PropertyGroup > 元素：  
   
-    1.  添加\<WindowsTargetPlatformVersion > 元素和一个\<WindowsTargetPlatformMinVersion > 元素并为他们提供你安装的通用 Windows 平台版本的值。  
+    1. 添加\<WindowsTargetPlatformVersion > 元素和一个\<WindowsTargetPlatformMinVersion > 元素并为他们提供你安装的通用 Windows 平台版本的值。  
   
-    2.  将 ApplicationTypeRevision 元素的值从 8.1 更新为 10.0。  
+    2. 将 ApplicationTypeRevision 元素的值从 8.1 更新为 10.0。  
   
-    3.  值更改\<MinimumVisualStudioVersion > 元素：14.  
+    3. 值更改\<MinimumVisualStudioVersion > 元素：14.  
   
-    4.  添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： true。  
+    4. 添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： true。  
   
-    5.  通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
+    5. 通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
   
-    6.  对于 Windows Phone 项目，更改的值\<ApplicationType > 从 Windows Phone 到 Windows 应用商店。  
+    6. 对于 Windows Phone 项目，更改的值\<ApplicationType > 从 Windows Phone 到 Windows 应用商店。  
   
          现在你\<PropertyGroup > 元素应类似于以下示例：  
   
@@ -292,7 +292,7 @@ ms.locfileid: "58932469"
         </PropertyGroup>  
         ```  
   
-4.  所有实例都更改\<PlatformToolset > 元素具有值 v140。 例如：  
+4. 所有实例都更改\<PlatformToolset > 元素具有值 v140。 例如：  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -304,7 +304,7 @@ ms.locfileid: "58932469"
       </PropertyGroup>  
     ```  
   
-5.  对每个剩余\<PropertyGroup > 元素中，如果元素具有使用发布配置的条件属性的检查。 如果存在，但它不包含\<UseDotNetNativeToolchain > 元素，然后添加一个。 设置的值为\<UseDotNetNativeToolchain > 元素为 true，如下：  
+5. 对每个剩余\<PropertyGroup > 元素中，如果元素具有使用发布配置的条件属性的检查。 如果存在，但它不包含\<UseDotNetNativeToolchain > 元素，然后添加一个。 设置的值为\<UseDotNetNativeToolchain > 元素为 true，如下：  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">  
@@ -317,13 +317,13 @@ ms.locfileid: "58932469"
   
     ```  
   
-6.  保存更改。 然后关闭项目文件。  
+6. 保存更改。 然后关闭项目文件。  
   
-7.  在解决方案资源管理器中右键单击项目文件，然后从上下文菜单中选择“重新加载项目”。 项目中的所有文件现在都应显示在解决方案资源管理器中。  
+7. 在解决方案资源管理器中右键单击项目文件，然后从上下文菜单中选择“重新加载项目”。 项目中的所有文件现在都应显示在解决方案资源管理器中。  
   
      现在需要遵循相关步骤，为你的所有 Windows Store 8.1 或 Windows Phone 8.1 项目 [更新包清单文件](#PackageManifest) 。  
   
-##  <a name="PackageManifest"></a> 更新包清单文件的所有 Windows 应用商店 8.1 或 Windows Phone 8.1 项目  
+## <a name="PackageManifest"></a> 更新包清单文件的所有 Windows 应用商店 8.1 或 Windows Phone 8.1 项目  
  必须更新解决方案中每个项目的包清单文件。  
   
 #### <a name="update-your-package-manifest-file"></a>更新包清单文件  
@@ -585,22 +585,22 @@ ms.locfileid: "58932469"
   
 17. 需要删除某些隐藏文件，才能重新打开解决方案。  
   
-    1.  打开文件资源管理器，单击工具栏中的“视图”  ，然后选择“已隐藏项”  和“文件名扩展” 。 打开此文件夹在你的计算机上：\<解决方案的位置的路径 >\\.vs\\{项目名称} \v14。 如果存在具有 .suo 文件扩展名的文件，请将其删除。  
+    1. 打开文件资源管理器，单击工具栏中的“视图”  ，然后选择“已隐藏项”  和“文件名扩展” 。 打开此文件夹在你的计算机上：\<解决方案的位置的路径 >\\.vs\\{项目名称} \v14。 如果存在具有 .suo 文件扩展名的文件，请将其删除。  
   
-    2.  现在返回解决方案所在的文件夹。 打开解决方案中存在的项目的任何文件夹。 如果任何这些项目文件夹中的文件具有 .csproj.user 或 .vbproj.user 扩展名，请将其删除。  
+    2. 现在返回解决方案所在的文件夹。 打开解决方案中存在的项目的任何文件夹。 如果任何这些项目文件夹中的文件具有 .csproj.user 或 .vbproj.user 扩展名，请将其删除。  
   
          现在可以在 Visual Studio 中重新打开解决方案。 现在你可以使用通用 Windows 平台对应用程序进行编码、编译和调试。  
   
          了解如何 [调整代码](https://msdn.microsoft.com/library/windows/apps/dn954974.aspx) 以利用通用 Windows 平台的新增功能。  
   
-##  <a name="PreviousVersions"></a> 有关使用 Visual Studio 2015 RC 创建的现有通用 Windows 应用所需的更改  
+## <a name="PreviousVersions"></a> 有关使用 Visual Studio 2015 RC 创建的现有通用 Windows 应用所需的更改  
  如果你使用 Visual Studio 2015 RC 创建了 Windows 10 通用应用，则需重定项目的目标，以使用随最新版 Visual Studio 2015 一起安装的通用 Windows 平台的版本。 不支持任何以前的版本。 所需更改因用于创建应用的语言而异：  
   
--   [C# /VB 应用](#RCUpdate10CSharp)  
+- [C# /VB 应用](#RCUpdate10CSharp)  
   
--   [C + + 应用程序](#RCUpdate10CPlusPlus)  
+- [C++应用程序](#RCUpdate10CPlusPlus)  
   
-###  <a name="RCUpdate10CSharp"></a> 更新 C# /VB 项目以使用最新的通用 Windows 平台  
+### <a name="RCUpdate10CSharp"></a> 更新 C# /VB 项目以使用最新的通用 Windows 平台  
  为现有应用打开解决方案时，你将看到你的应用需要更新：  
   
  ![在解决方案资源管理器中查看你的项目](../misc/media/uwp-updaterequired.png "UWP_UpdateRequired")  
@@ -731,13 +731,13 @@ ms.locfileid: "58932469"
   
 13. 在项目中打开 package.appxmanifest 文件。  
   
-    1.  查找\<TargetDeviceFamily > 元素。 更改其 MinVersion 和 MaxVersionTested 特性，使其与已安装的通用 Windows 平台版本相对应。 如：  
+    1. 查找\<TargetDeviceFamily > 元素。 更改其 MinVersion 和 MaxVersionTested 特性，使其与已安装的通用 Windows 平台版本相对应。 如：  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  保存更改。  
+    2. 保存更改。  
   
 14. 使用 NuGet 管理器添加你在之前步骤中删除的包。 Visual Studio 2015 RC 与 Visual Studio 2015 RTM 在 Windows 10 项目格式上的其中一个显著区别是 RTM 格式使用 [NuGet](http://docs.nuget.org/) 版本 3。  
   
@@ -745,19 +745,19 @@ ms.locfileid: "58932469"
   
     如果你有针对通用 Windows 应用的单元测试项目，也必须遵循 [这些步骤](#MigrateUnitTest)。  
   
-###  <a name="RCUpdate10CPlusPlus"></a> 更新 c + + 项目以使用最新的通用 Windows 平台  
+### <a name="RCUpdate10CPlusPlus"></a> 更新在C++项目以使用最新的通用 Windows 平台  
   
-1.  若要了解已安装的通用 Windows 平台，请打开此文件夹： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 它包含每个已安装通用 Windows 平台的文件夹列表。 文件夹名称是已安装的通用 Windows 平台版本。 例如，此 Windows 10 设备安装了 10.0.10240.0 版的通用 Windows 平台。  
+1. 若要了解已安装的通用 Windows 平台，请打开此文件夹： **\Program Files (x86)\Windows Kits\10\Platforms\UAP**。 它包含每个已安装通用 Windows 平台的文件夹列表。 文件夹名称是已安装的通用 Windows 平台版本。 例如，此 Windows 10 设备安装了 10.0.10240.0 版的通用 Windows 平台。  
   
      ![打开文件夹以查看安装的版本](../misc/media/uap-uwpversions.png "UAP_UWPVersions")  
   
      可以安装多个版本的通用 Windows 平台。 建议对你的应用使用最新版本。  
   
-2.  打开包含 C++ 通用 Windows 应用的解决方案。 右键单击项目 .vcxproj 文件，然后选择卸载项目文件。 卸载项目后，再次右键单击项目文件，并选择编辑它。  
+2. 打开包含 C++ 通用 Windows 应用的解决方案。 右键单击项目 .vcxproj 文件，然后选择卸载项目文件。 卸载项目后，再次右键单击项目文件，并选择编辑它。  
   
      ![卸载项目，然后编辑项目文件](../misc/media/uap-editearliercplus.png "UAP_EditEarlierCPlus")  
   
-3.  找不到任何\<PropertyGroup > 元素不包含 Condition 特性但包含\<ApplicationTypeRevision > 元素。 将 ApplicationTypeRevision 值从 8.2 更新为 10.0。 添加\<WindowsTargetPlatformVersion > 和\<WindowsTargetPlatformMinVersion > 元素并设置其值为你安装的通用 Windows 平台版本的值。  
+3. 找不到任何\<PropertyGroup > 元素不包含 Condition 特性但包含\<ApplicationTypeRevision > 元素。 将 ApplicationTypeRevision 值从 8.2 更新为 10.0。 添加\<WindowsTargetPlatformVersion > 和\<WindowsTargetPlatformMinVersion > 元素并设置其值为你安装的通用 Windows 平台版本的值。  
   
      添加\<EnableDotNetNativeCompatibleProfile > 元素并设置其值为 true，如果该元素尚不存在。  
   
@@ -779,7 +779,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-4.  对每个剩余\<PropertyGroup > 元素中，如果元素具有使用发布配置的条件属性的检查。 如果存在，但它不包含\<UseDotNetNativeToolchain > 元素，然后添加一个。 设置的值为\<UseDotNetNativeToolchain > 元素为 true，如下：  
+4. 对每个剩余\<PropertyGroup > 元素中，如果元素具有使用发布配置的条件属性的检查。 如果存在，但它不包含\<UseDotNetNativeToolchain > 元素，然后添加一个。 设置的值为\<UseDotNetNativeToolchain > 元素为 true，如下：  
   
     ```xml  
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">  
@@ -792,34 +792,34 @@ ms.locfileid: "58932469"
   
     ```  
   
-5.  你需要更新\<EnableDotNetNativeCompatibleProfile > 元素和\<UseDotNetNativeToolchain > 元素以启用.NET Native，但.NET 本机 c + + 模板中未启用。  
+5. 你需要更新\<EnableDotNetNativeCompatibleProfile > 元素和\<UseDotNetNativeToolchain > 元素以启用.NET Native，但.NET 本机中未启用C++模板。  
   
      保存更改。 然后关闭项目文件。  
   
-6.  在解决方案资源管理器中右键单击项目文件，然后从上下文菜单中选择“重新加载项目”。 项目中的所有文件现在都应显示在解决方案资源管理器中。  
+6. 在解决方案资源管理器中右键单击项目文件，然后从上下文菜单中选择“重新加载项目”。 项目中的所有文件现在都应显示在解决方案资源管理器中。  
   
-7.  在项目中打开 package.appxmanifest 文件。  
+7. 在项目中打开 package.appxmanifest 文件。  
   
-    1.  查找\<TargetDeviceFamily > 元素。 更改其 MinVersion 和 MaxVersionTested 特性，使其与已安装的通用 Windows 平台版本相对应。 如：  
+    1. 查找\<TargetDeviceFamily > 元素。 更改其 MinVersion 和 MaxVersionTested 特性，使其与已安装的通用 Windows 平台版本相对应。 如：  
   
         ```xml  
         <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />  
         ```  
   
-    2.  保存更改。  
+    2. 保存更改。  
   
          现在可以对应用进行编码、编译和调试。  
   
          如果你有针对通用 Windows 应用的单元测试项目，也必须遵循 [这些步骤](#MigrateUnitTest)。  
   
-##  <a name="MigrateUnitTest"></a> 有关使用 Visual Studio 2015 RC 创建的通用 Windows 应用的现有单元测试项目所需的更改  
+## <a name="MigrateUnitTest"></a> 有关使用 Visual Studio 2015 RC 创建的通用 Windows 应用的现有单元测试项目所需的更改  
  如果你使用 Visual Studio 2015 RC 创建了针对 Windows 10 通用应用的单元测试项目，则需要对你的项目文件进行这些额外更改，以将这些测试项目与最新版 Visual Studio 2015 一起使用。 所需更改因用于创建应用的语言而异：  
   
--   [C# /VB 应用](#UnitTestRCUpdate10CSharp)  
+- [C# /VB 应用](#UnitTestRCUpdate10CSharp)  
   
--   [C + + 应用程序](#UnitTestRCUpdate10CPlusPlus)  
+- [C++应用程序](#UnitTestRCUpdate10CPlusPlus)  
   
-###  <a name="UnitTestRCUpdate10CSharp"></a> 更新 C# /VB 单元测试项目  
+### <a name="UnitTestRCUpdate10CSharp"></a> 更新 C# /VB 单元测试项目  
   
 1. 使用 Visual Studio，打开包含 C#/VB 单元测试项目的解决方案。 值更改\<OuttputType > 元素：AppContainerExe.  
   
@@ -992,9 +992,9 @@ ms.locfileid: "58932469"
   
    现在可以运行你的单元测试。  
   
-###  <a name="UnitTestRCUpdate10CPlusPlus"></a> 更新 c + + 项目以使用最新的通用 Windows 平台  
+### <a name="UnitTestRCUpdate10CPlusPlus"></a> 更新在C++项目以使用最新的通用 Windows 平台  
   
-1.  使用 Visual Studio，打开包含你 C++ 单元测试项目的解决方案。 删除下列元素：  
+1. 使用 Visual Studio，打开包含你 C++ 单元测试项目的解决方案。 删除下列元素：  
   
     ```xml  
   
@@ -1005,7 +1005,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-2.  添加以下\<ProjectConfiguration > 元素下此元素的元素\<u p Label ="ProjectConfigurations"> 如果它们尚不存在此：  
+2. 添加以下\<ProjectConfiguration > 元素下此元素的元素\<u p Label ="ProjectConfigurations"> 如果它们尚不存在此：  
   
     ```xml  
   
@@ -1020,7 +1020,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-3.  替换此元素的每个匹配项：  
+3. 替换此元素的每个匹配项：  
   
     ```xml  
   
@@ -1036,7 +1036,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-4.  添加这些\<PropertyGroup > 元素，如果它们尚不在文件中：  
+4. 添加这些\<PropertyGroup > 元素，如果它们尚不在文件中：  
   
     ```xml  
   
@@ -1055,7 +1055,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-5.  替换此元素的每个匹配项：  
+5. 替换此元素的每个匹配项：  
   
     ```xml  
   
@@ -1070,7 +1070,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-6.  替换此元素的每个匹配项：  
+6. 替换此元素的每个匹配项：  
   
     ```xml  
   
@@ -1086,7 +1086,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-7.  添加以下\<ItemDefinitionGroup > 中已包含其他的部分元素\<ItemDefinitionGroup > 元素：  
+7. 添加以下\<ItemDefinitionGroup > 中已包含其他的部分元素\<ItemDefinitionGroup > 元素：  
   
     ```xml  
   
@@ -1113,7 +1113,7 @@ ms.locfileid: "58932469"
   
     ```  
   
-8.  删除以下\<ItemGroup > 元素：  
+8. 删除以下\<ItemGroup > 元素：  
   
     ```xml  
   

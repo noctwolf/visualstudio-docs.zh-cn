@@ -34,17 +34,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753373"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658024"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>预生成事件/生成后事件命令行对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 可以直接在编辑框中键入[“项目设计器”>“生成事件页”(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的预生成或生成后事件，或者可以从可用宏的列表中选择预生成和生成后宏。  
   
 > [!NOTE]
@@ -57,7 +56,7 @@ ms.locfileid: "54753373"
 > [!NOTE]
 >  在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
- 宏  
+ **宏**  
  展开编辑框，显示要插入到命令行编辑框的宏列表。  
   
  宏表格  
@@ -69,7 +68,7 @@ ms.locfileid: "54753373"
 ### <a name="macros"></a>宏  
  可以使用任何宏来指定文件位置，或在存在多种选择的情况下获取输入文件的实际名称。 这些宏不区分大小写。  
   
-|宏|说明​​|  
+|宏|描述|  
 |-----------|-----------------|  
 |`$(ConfigurationName)`|当前项目配置的名称，例如，“调试”。|  
 |`$(OutDir)`|相对于项目目录的输出文件目录的路径。 这解析为输出目录属性的值。 它包括尾随反斜杠“\\”。|  

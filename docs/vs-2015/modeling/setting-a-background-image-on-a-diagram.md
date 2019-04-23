@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062914"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ ms.locfileid: "58932869"
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>为生成的设计器设置背景图像  
   
-1.  将要用作关系图的背景的图像文件复制到当前项目的 Dsl\Resources 目录中。  
+1. 将要用作关系图的背景的图像文件复制到当前项目的 Dsl\Resources 目录中。  
   
-2.  在中**解决方案资源管理器**，右键单击 Dsl\Resources 文件夹，指向**添加**，然后单击**现有项**。  
+2. 在中**解决方案资源管理器**，右键单击 Dsl\Resources 文件夹，指向**添加**，然后单击**现有项**。  
   
-3.  在中**添加现有项**对话框中，浏览到 Dsl\Resources 文件夹。  
+3. 在中**添加现有项**对话框中，浏览到 Dsl\Resources 文件夹。  
   
-4.  在中**类型的文件**列表中，单击**图像文件**。  
+4. 在中**类型的文件**列表中，单击**图像文件**。  
   
-5.  单击复制到目录，该图像文件，然后单击**添加**。  
+5. 单击复制到目录，该图像文件，然后单击**添加**。  
   
-6.  右键单击 Dsl，然后单击**属性**以打开 Dsl 项目的属性。  
+6. 右键单击 Dsl，然后单击**属性**以打开 Dsl 项目的属性。  
   
-7.  上**资源**选项卡上，单击**此项目不包含默认资源文件。单击此处创建一个资源文件。”**。  
+7. 上**资源**选项卡上，单击**此项目不包含默认资源文件。单击此处创建一个资源文件。”**。  
   
-8.  将图像文件添加到资源文件，通过将图片从**解决方案资源管理器**到资源窗口。  
+8. 将图像文件添加到资源文件，通过将图片从**解决方案资源管理器**到资源窗口。  
   
 9. 打开“文件”菜单，然后单击该选项以保存项目属性。  
   

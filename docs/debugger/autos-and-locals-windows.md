@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103090"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
@@ -56,9 +56,9 @@ ms.locfileid: "59366544"
 >[!CAUTION]
 >在更改值和表达式之前，请确保你了解其后果。 一些可能存在的问题有：
 >
->-   计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2` 的值。 据说这些表达式具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果你不了解这些副作用，则可能会导致意外结果。
+>- 计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2` 的值。 据说这些表达式具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果你不了解这些副作用，则可能会导致意外结果。
 >
->-   编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中的位的某些更改。
+>- 编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中的位的某些更改。
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>在自动或局部变量窗口中搜索
@@ -85,9 +85,9 @@ ms.locfileid: "59366544"
 
 ## <a name="bkmk_whatvariables"></a> 自动窗口中的变量 （C#、C++、Visual Basic、Python）
 
-  不同的代码语言在“自动”  窗口中显示不同的变量。
+ 不同的代码语言在“自动”  窗口中显示不同的变量。
 
- - 在 C# 和 Visual Basic 中，“自动”  窗口显示当前行或上一行使用的任何变量 例如，在 C# 或 Visual Basic 代码中，声明以下四个变量：
+- 在 C# 和 Visual Basic 中，“自动”  窗口显示当前行或上一行使用的任何变量 例如，在 C# 或 Visual Basic 代码中，声明以下四个变量：
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ ms.locfileid: "59366544"
 
    `c` 的值为 0，因为尚未执行 `c = 3` 行。
 
- -  在 C++ 中，“自动”窗口显示在暂停执行的当前行之前至少三行中使用的变量。 例如，在 C++ 代码中，声明六个变量：
+-  在 C++ 中，“自动”窗口显示在暂停执行的当前行之前至少三行中使用的变量。 例如，在 C++ 代码中，声明六个变量：
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ ms.locfileid: "59366544"
 
     未初始化变量 `e`，因为尚未执行 `e = 5` 行。
 
-##  <a name="bkmk_returnValue"></a> 查看方法调用的返回值
+## <a name="bkmk_returnValue"></a> 查看方法调用的返回值
   在.NET 和 C ++ 代码中，当单步调试或退出方法调用时，可以在“自动”窗口中检查返回值 如果方法调用返回值未保存在局部变量中，查看这些返回值会非常有用。 方法可以用作参数或用作另一种方法的返回值。
 
  例如，下面的 C# 代码将添加两个函数的返回值：

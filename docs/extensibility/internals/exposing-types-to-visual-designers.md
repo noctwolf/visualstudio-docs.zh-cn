@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104054"
 ---
 # <a name="expose-types-to-visual-designers"></a>可视化设计器向公开类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须具有访问的类和类型定义在设计时才能显示一个可视化设计器。 从一组预定义的包含完整的依赖项集的当前项目 （引用以及其依赖项） 的程序集加载的类。 可能还会对访问类和自定义工具生成的文件中定义的类型所需的可视化设计器。
@@ -31,15 +31,15 @@ ms.locfileid: "56629685"
 
  自定义工具，它们利用临时 PE 支持必须遵循以下规则：
 
--   **GeneratesDesignTimeSource**必须在注册表中设置为 1。
+- **GeneratesDesignTimeSource**必须在注册表中设置为 1。
 
      如果没有此设置没有程序可执行文件编译发生。
 
--   生成的代码必须在全局项目设置相同的语言。
+- 生成的代码必须在全局项目设置相同的语言。
 
      临时 PE 编译而不考虑自定义工具报告为在请求的扩展<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提**GeneratesDesignTimeSource**在注册表中设置为 1。 该扩展不需要进行 *.vb*， *.cs*，或 *.jsl*; 它可以是任何扩展。
 
--   自定义工具生成的代码必须是有效的并且它必须在其自身仅存在于项目中引用的集时使用编译<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成执行。
+- 自定义工具生成的代码必须是有效的并且它必须在其自身仅存在于项目中引用的集时使用编译<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成执行。
 
      编译的临时 PE 后，仅提供给编译器的源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。
 

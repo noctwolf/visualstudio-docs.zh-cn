@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a75386844e3653a4dbf791980737f8d339072c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059703"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安装可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "58931020"
   
 ### <a name="to-install-a-visualizer"></a>安装可视化工具  
   
-1.  查找包含已创建的可视化工具的 DLL。  
+1. 查找包含已创建的可视化工具的 DLL。  
   
-2.  将 DLL 复制到下列位置之一：  
+2. 将 DLL 复制到下列位置之一：  
   
-    -   VisualStudioInstallPath `\Common7\Packages\Debugger\Visualizers`  
+    - VisualStudioInstallPath `\Common7\Packages\Debugger\Visualizers`  
   
-    -   `My Documents\` VisualStudioVersion `\Visualizers`  
+    - `My Documents\` VisualStudioVersion `\Visualizers`  
   
-3.  若要使用托管可视化工具进行远程调试，请将 DLL 复制到远程计算机上的同一路径。  
+3. 若要使用托管可视化工具进行远程调试，请将 DLL 复制到远程计算机上的同一路径。  
   
-4.  重新启动调试会话。  
+4. 重新启动调试会话。  
   
 ## <a name="see-also"></a>请参阅  
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   

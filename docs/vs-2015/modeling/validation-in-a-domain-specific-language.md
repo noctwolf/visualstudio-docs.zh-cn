@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113451"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "58937541"
   
 1. 中启用验证**编辑器 \ 验证**节点：  
   
-   1.  打开**Dsl\DslDefinition.dsl**。  
+   1. 打开**Dsl\DslDefinition.dsl**。  
   
-   2.  在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。  
+   2. 在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。  
   
-   3.  在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。  
+   3. 在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。  
   
-   4.  单击**转换所有模板**解决方案资源管理器工具栏中。  
+   4. 单击**转换所有模板**解决方案资源管理器工具栏中。  
   
 2. 为一个或多个域类或域关系编写分部类定义。 中的新代码文件中编写这些定义**Dsl**项目。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "58937541"
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   默认情况下，此特性还将针对派生类启用验证。 如果想要针对特定派生类禁用验证，则可以使用 `ValidationState.Disabled`。  
+   - 默认情况下，此特性还将针对派生类启用验证。 如果想要针对特定派生类禁用验证，则可以使用 `ValidationState.Disabled`。  
   
 4. 将验证方法添加到类。 每个验证方法都可以具有任何名称，但要具有类型 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 的一个参数。  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  在影响链接或元素的“撤消”或“重做”操作后，还将调用处理程序。  
   
-##  <a name="custom"></a> 自定义验证类别  
+## <a name="custom"></a> 自定义验证类别  
  除了标准验证类别（如“菜单”和“打开”），还可以定义自己的类别。 可以从程序代码调用这些类别。 用户无法直接调用它们。  
   
  自定义类别通常用于定义测试模型是否满足特定工具的前提条件的类别。  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> 验证的替代方法  
+## <a name="alternatives"></a> 验证的替代方法  
  验证约束报告错误，但不更改模型。 相反，如果你想要防止模型变为无效，则可以使用其他技术。  
   
  但是，不建议使用这些技术。 通常，最好让用户决定如何更正无效的模型。  

@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd40ac13cf00db2903f9c9dca7cf154572e2b81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091949"
 ---
 # <a name="breakpoint-related-methods"></a>断点相关的方法
 调试引擎 (DE) 必须支持的设置的断点。 Visual Studio 调试支持以下类型的断点：
 
--   绑定
+- 绑定
 
      通过用户界面请求和成功绑定到指定的代码位置
 
--   挂起
+- 挂起
 
      通过 UI 但尚未绑定到实际说明请求
 

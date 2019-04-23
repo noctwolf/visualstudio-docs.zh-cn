@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce7b6705fcbafaf713faed6f937fcfa29bd013d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067516"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索 SharePoint 项目服务
   您可以访问以下类型的解决方案中的 SharePoint 项目服务：
 
--   SharePoint 项目系统，如项目扩展、 项目项扩展或项目项类型定义的扩展。 有关这些类型的扩展的详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。
+- SharePoint 项目系统，如项目扩展、 项目项扩展或项目项类型定义的扩展。 有关这些类型的扩展的详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。
 
--   扩展**SharePoint 连接**中的节点**服务器资源管理器**。 有关这些类型的扩展的详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+- 扩展**SharePoint 连接**中的节点**服务器资源管理器**。 有关这些类型的扩展的详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
--   Visual Studio 扩展，如 VSPackage 的另一种类型。
+- Visual Studio 扩展，如 VSPackage 的另一种类型。
 
 ## <a name="retrieve-the-service-in-project-system-extensions"></a>检索项目系统扩展中的服务
  在任何扩展的 SharePoint 项目系统中，可以访问项目服务，通过使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A>属性的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject>对象。
@@ -35,9 +35,9 @@ ms.locfileid: "56597370"
 
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>若要检索项目扩展中的服务
 
-1.  中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>接口中，找到<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。
+1. 中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>接口中，找到<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法。
 
-2.  使用*projectService*参数来访问该服务。
+2. 使用*projectService*参数来访问该服务。
 
      下面的代码示例演示如何使用项目服务编写一条消息**输出**窗口和**错误列表**中简单的项目扩展的窗口。
 
@@ -48,9 +48,9 @@ ms.locfileid: "56597370"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>若要检索项目项扩展中的服务
 
-1.  中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>接口中，找到<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。
+1. 中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>接口中，找到<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。
 
-2.  使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A>的属性*projectItemType*参数来检索服务。
+2. 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A>的属性*projectItemType*参数来检索服务。
 
      下面的代码示例演示如何使用项目服务编写一条消息**输出**窗口和**错误列表**窗口中的简单扩展**列表定义**项目项。
 
@@ -61,9 +61,9 @@ ms.locfileid: "56597370"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>若要检索的项目项类型定义中的服务
 
-1.  中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>接口中，找到<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。
+1. 中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>接口中，找到<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法。
 
-2.  使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A>的属性*typeDefinition*参数来检索服务。
+2. 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A>的属性*typeDefinition*参数来检索服务。
 
      下面的代码示例演示如何使用项目服务编写一条消息**输出**窗口和**错误列表**简单的项目项类型定义中的窗口。
 
@@ -77,9 +77,9 @@ ms.locfileid: "56597370"
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>若要检索的服务中的服务器资源管理器扩展
 
-1.  获取<xref:System.IServiceProvider>对象从<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>属性的<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>在扩展中的对象。
+1. 获取<xref:System.IServiceProvider>对象从<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A>属性的<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode>在扩展中的对象。
 
-2.  使用<xref:System.IServiceProvider.GetService%2A>方法来请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。
+2. 使用<xref:System.IServiceProvider.GetService%2A>方法来请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象。
 
      下面的代码示例演示如何使用项目服务编写一条消息**输出**窗口和**错误列表**从通过扩展添加到中的列表节点的快捷菜单窗口**服务器资源管理器**。
 

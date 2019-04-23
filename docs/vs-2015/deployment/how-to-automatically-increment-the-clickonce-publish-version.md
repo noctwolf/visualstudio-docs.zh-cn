@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d779e364f5cbe7bc4b90e0a77ab3fb825a7b6c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab2dc62add13db9af1186a8974ffe5694a98e62e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083488"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自动递增 ClickOnce 发布版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "58935807"
   
 ### <a name="to-disable-automatically-incrementing-the-publish-version"></a>若要禁用自动递增发布版本  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击“发布”选项卡。  
+2. 单击“发布”选项卡。  
   
-3.  在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。  
+3. 在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)   

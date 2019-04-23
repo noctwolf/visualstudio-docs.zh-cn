@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4118c9c3e69cbc14481c0057562fdca16414f520
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103715"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::findInlineeLinesByRVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyrva.md)|检索一个枚举，允许客户端进行循环访问，将内联，直接或间接地，此符号中指定的相对虚拟地址 (RVA) 中的所有函数的行号信息。|  
 |[IDiaSymbol::findInlineeLinesByVA](../../debugger/debug-interface-access/idiasymbol-findinlineelinesbyva.md)|检索一个枚举，允许客户端进行循环访问，将内联，直接或间接地，此符号中指定的虚拟地址 (VA) 中的所有函数的行号信息。|  
 |[IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsbyrvaforacceleratorpointertag.md)|提供相应的标记值，此方法返回在指定的相对虚拟地址此存根 （stub） 函数中包含的符号的枚举。|  
-|[IDiaSymbol::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsforacceleratorpointertag.md)|在 c + + AMP 存根 （stub） 函数中返回加速器指针标记的数。|  
-|[IDiaSymbol::get_acceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-acceleratorpointertags.md)|对 c + + AMP 快捷键存根 （stub） 函数返回对应的所有快捷键指针标记值。|  
+|[IDiaSymbol::findSymbolsForAcceleratorPointerTag](../../debugger/debug-interface-access/idiasymbol-findsymbolsforacceleratorpointertag.md)|返回 accelerator 指针中的标记数C++AMP 存根 （stub） 函数。|  
+|[IDiaSymbol::get_acceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-acceleratorpointertags.md)|返回对应的所有快捷键指针标记值C++AMP 快捷键存根 （stub） 函数。|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|检索的类成员的访问修饰符。|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|检索地址位置的偏移量的部分。|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|检索的部分一部分的地址位置。|  
@@ -96,7 +96,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_hasAssignmentOperator](../../debugger/debug-interface-access/idiasymbol-get-hasassignmentoperator.md)|检索一个标志，指示用户定义数据类型是否具有任何定义的赋值运算符。|  
 |[IDiaSymbol::get_hasCastOperator](../../debugger/debug-interface-access/idiasymbol-get-hascastoperator.md)|检索一个标志，指示用户定义数据类型是否具有任何定义的强制转换运算符。|  
 |[IDiaSymbol::get_hasDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-hasdebuginfo.md)|检索一个标志，指示是否将编译单位包含的任何调试信息。|  
-|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|检索一个标志，指示函数是否具有 c + + 样式异常处理程序。|  
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|检索一个标志，指示函数是否具有C++-样式异常处理程序。|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|检索一个标志，指示函数是否具有异步异常处理程序。|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|检索一个标志，指示函数是否具有内联程序集。|  
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|检索一个标志，指示函数是否包含 longjmp 命令 （C 样式异常处理的一部分）。|  
@@ -109,8 +109,8 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|检索一个标志，指示函数是否已标记为内联属性。|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|检索一个标志，指示函数是否返回从中断指令。|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|检索一个标志，指示函数是否基类虚函数。|  
-|[IDiaSymbol::get_isAcceleratorGroupSharedLocal](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorgroupsharedlocal.md)|检索一个标志，指示符号是否与组共享本地变量在编译 c + + AMP 快捷键代码相对应。|  
-|[IDiaSymbol::get_isAcceleratorPointerTagLiveRange](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorpointertagliverange.md)|检索一个标志，指示符号是否对应于*定义范围符号*指针变量的 c + + AMP 快捷键编译的代码中的标记组件。 定义范围符号是地址的范围变量的位置。|  
+|[IDiaSymbol::get_isAcceleratorGroupSharedLocal](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorgroupsharedlocal.md)|检索一个标志，指示符号是否与组共享本地变量在编译的代码相对应C++AMP 快捷键。|  
+|[IDiaSymbol::get_isAcceleratorPointerTagLiveRange](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorpointertagliverange.md)|检索一个标志，指示符号是否对应于*定义范围符号*标记组件的指针的变量中的代码编译为C++AMP 快捷键。 定义范围符号是地址的范围变量的位置。|  
 |[IDiaSymbol::get_isAcceleratorStubFunction](../../debugger/debug-interface-access/idiasymbol-get-isacceleratorstubfunction.md)|指示是否符号对应于顶层函数符号的着色器编译到相对应的快捷键`parallel_for_each`调用。|  
 |[IDiaSymbol::get_isAggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)|检索一个标志，指示数据是否聚合的多个符号的一部分。|  
 |[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|检索一个标志，指示符号文件是否包含 C 类型。|  
@@ -156,7 +156,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|检索一个标志，指示是否已使用声明函数[noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)属性。|  
 |[IDiaSymbol::get_noStackOrdering](../../debugger/debug-interface-access/idiasymbol-get-nostackordering.md)|检索一个标志，指示是否可以作为堆栈缓冲区检查的一部分实现没有堆栈一定的顺序。|  
 |[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|检索一个标志，指示是否永远不会达到函数或标签。|  
-|[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|在 c + + AMP 存根 （stub） 函数中返回加速器指针标记的数。|  
+|[IDiaSymbol::get_numberOfAcceleratorPointerTags](../../debugger/debug-interface-access/idiasymbol-get-numberofacceleratorpointertags.md)|返回 accelerator 指针中的标记数C++AMP 存根 （stub） 函数。|  
 |[IDiaSymbol::get_numberOfModifiers](../../debugger/debug-interface-access/idiasymbol-get-numberofmodifiers.md)|检索应用于原始类型的修饰符的数目。|  
 |[IDiaSymbol::get_numberOfRegisterIndices](../../debugger/debug-interface-access/idiasymbol-get-numberofregisterindices.md)|检索注册索引的数目。|  
 |[IDiaSymbol::get_numberOfRows](../../debugger/debug-interface-access/idiasymbol-get-numberofrows.md)|检索矩阵中的行数。|  
@@ -206,7 +206,7 @@ IDiaSymbol : IUnknown
 |[IDiaSymbol::get_uavSlot](../../debugger/debug-interface-access/idiasymbol-get-uavslot.md)|检索 uav 槽。|  
 |[IDiaSymbol::get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)|检索用户定义类型 (UDT) 的多样性。|  
 |[IDiaSymbol::get_unalignedType](../../debugger/debug-interface-access/idiasymbol-get-unalignedtype.md)|检索一个标志，指示用户定义数据类型是否未对齐。|  
-|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|检索有关 c + + 修饰，或链接，名称的未修饰的名称。|  
+|[IDiaSymbol::get_undecoratedName](../../debugger/debug-interface-access/idiasymbol-get-undecoratedname.md)|检索的未修饰的名称C++进行修饰，或链接、 名称。|  
 |[IDiaSymbol::get_undecoratedNameEx](../../debugger/debug-interface-access/idiasymbol-get-undecoratednameex.md)|扩展的`get_undecoratedName`检索基于扩展字段的值的未修饰的名称的方法。|  
 |[IDiaSymbol::get_unmodifiedTypeId](../../debugger/debug-interface-access/idiasymbol-get-unmodifiedtypeid.md)|检索原始 （未修改） 类型的 ID。|  
 |[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|检索 FORTRAN 数组维度的上限。|  
@@ -228,37 +228,37 @@ IDiaSymbol : IUnknown
 ## <a name="notes-for-callers"></a>调用方的说明  
  通过调用以下方法之一来获取此接口：  
   
--   [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)  
+- [IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)  
   
--   [IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)  
+- [IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)  
   
--   [IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)  
+- [IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)  
   
--   [IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)  
+- [IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)  
   
--   [IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)  
+- [IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)  
   
--   [IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)  
+- [IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)  
   
--   [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)  
+- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)  
   
--   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
+- [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   
--   [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
+- [IDiaSession::findSymbolByRVA](../../debugger/debug-interface-access/idiasession-findsymbolbyrva.md)  
   
--   [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
+- [IDiaSession::findSymbolByRVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyrvaex.md)  
   
--   [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
+- [IDiaSession::findSymbolByVA](../../debugger/debug-interface-access/idiasession-findsymbolbyva.md)  
   
--   [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
+- [IDiaSession::findSymbolByVAEx](../../debugger/debug-interface-access/idiasession-findsymbolbyvaex.md)  
   
--   [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
+- [IDiaSession::findSymbolByToken](../../debugger/debug-interface-access/idiasession-findsymbolbytoken.md)  
   
--   [IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)  
+- [IDiaSession::symbolById](../../debugger/debug-interface-access/idiasession-symbolbyid.md)  
   
--   [IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)  
+- [IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)  
   
--   [IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)  
+- [IDiaSymbol::get_types](../../debugger/debug-interface-access/idiasymbol-get-types.md)  
   
 ## <a name="example"></a>示例  
  此示例演示如何在给定的相对虚拟地址处显示函数的局部变量。 它还显示如何彼此相关的不同类型的符号。  

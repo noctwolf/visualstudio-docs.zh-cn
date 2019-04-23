@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342489"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807415"
 ---
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
@@ -91,22 +91,24 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    ![Visual Studio 成员列表](../media/intellisense-list-members.png)
 
-- [快速启动](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- 搜索框
 
-   visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用**快速启动**搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，“快速启动”提供了打开 Visual Studio 安装程序以安装工作负载或单个组件的结果。
+   visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，可使用搜索框提供的结果打开 Visual Studio 安装程序以安装工作负载或单个组件。
 
    > [!TIP]
-   > 按 Ctrl+Q 作为“快速启动”搜索框的快捷方式。
+   > 按 Ctrl+Q 作为启动搜索框的快捷方式。
 
    ::: moniker range="vs-2017"
 
    ![Visual Studio 2017 中的“快速启动”搜索框](../media/quick-launch-nuget.png)
 
+   有关详细信息，请参阅[快速启动](../../ide/reference/quick-launch-environment-options-dialog-box.md)。
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Visual Studio 2019 中的“快速启动”搜索框](../media/vs-2019/quick-launch-nuget.png)
+   ![Visual Studio 2019 中的搜索框](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069858"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可移动媒体，才能供用户使用。 可以使用发布向导发布应用程序；与发布相关的其他属性位于“项目设计器”的“发布”页中。 有关详细信息，请参阅[发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)。
@@ -47,11 +47,11 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
 
 4. 在“用户如何安装应用程序?”页面中，选择用户安装应用程序的位置：
 
-   -   如果用户从网站安装，则单击“从网站”，并输入与上一步中输入的文件路径相对应的 URL。 单击 **“下一步”**。 （此选项通常在将 FTP 地址指定为发布位置时使用。 不支持从 FTP 直接下载。 因此，必须在此处输入 URL。）
+   - 如果用户从网站安装，则单击“从网站”，并输入与上一步中输入的文件路径相对应的 URL。 单击 **“下一步”**。 （此选项通常在将 FTP 地址指定为发布位置时使用。 不支持从 FTP 直接下载。 因此，必须在此处输入 URL。）
 
-   -   如果用户将直接从文件共享安装应用程序，请单击“从 UNC 路径或文件共享”，然后单击“下一步”。 （此选项用于形式为“c:\deploy\myapp”或“\\\server\myapp”的发布位置。）
+   - 如果用户将直接从文件共享安装应用程序，请单击“从 UNC 路径或文件共享”，然后单击“下一步”。 （此选项用于形式为“c:\deploy\myapp”或“\\\server\myapp”的发布位置。）
 
-   -   如果用户从可移动媒体安装，则单击“从 CD-ROM 或 DVD-ROM”，然后单击“下一步”。
+   - 如果用户从可移动媒体安装，则单击“从 CD-ROM 或 DVD-ROM”，然后单击“下一步”。
 
 5. 在“该应用程序可以脱机使用吗?”页上，单击适当的选项：
 

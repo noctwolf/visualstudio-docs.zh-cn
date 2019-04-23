@@ -22,19 +22,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17e0c76e45dccb657b90fa0b36934061944cac0b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cac0524c0d4421c034ebfd6dfa6f61a0e9b589fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047615"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何调试 Windows API 函数？
 如果要调试加载了 NT 符号的 Windows API 函数，必须执行以下步骤。
 
 ### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>若要在加载了 NT 符号的 Windows API 函数中设置断点
 
--   输入函数名以及函数所在 DLL 的名称。 在 32 位代码中，使用函数名的修饰形式。 例如，若要给”MessageBeep” 设置断点，你必须输入如下内容。
+- 输入函数名以及函数所在 DLL 的名称。 在 32 位代码中，使用函数名的修饰形式。 例如，若要给”MessageBeep” 设置断点，你必须输入如下内容。
 
     ```cpp
     {,,USER32.DLL}_MessageBeep@4

@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801669"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668322"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和工具的引用。 MSBuild 包括标准工具集，但也可以创建自定义工具集。 有关如何指定工具集的信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
 
 ## <a name="standard-toolset-configurations"></a>标准工具集配置  
  MSBuild 12.0 包括以下标准工具集：  
-
 
 | ToolsVersion | 工具集路径（如 MSBuildToolsPath 或 MSBuildBinPath 生成属性中所指定） |
 |--------------|--------------------------------------------------------------------------------------|

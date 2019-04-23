@@ -1,6 +1,6 @@
 ---
 title: 发布到 Azure 应用服务
-ms.date: 01/17/2019
+ms.date: 04/02/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844264"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856296"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 将 Web 应用发布到 Azure 应用服务
 
@@ -25,9 +25,9 @@ ms.locfileid: "56844264"
 
 ## <a name="prerequisites"></a>系统必备
 
- - 已安装 [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017)并启用了 ASP.NET Core。
+ - 已安装 [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)，并启用了 ASP.NET Core。
  - 一个 Azure 订阅。 如果还没有订阅，请[免费注册](https://azure.microsoft.com/free/dotnet/)，其中包括为期 30 天的 $200 额度和为期 12 个月的热门免费服务。
- - ASP.NET Core 项目。 如果还没有项目，则可以[创建一个新的项目](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017)。
+ - ASP.NET Core 项目。 如果还没有项目，则可以[创建一个新的项目](~/create-new-projects.md)。
 
 ## <a name="publish-to-azure-app-service"></a>发布到 Azure 应用服务
 

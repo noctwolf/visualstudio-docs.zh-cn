@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5c7b62ce9e117b348daaa54da3d397346b6eab0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043103"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd 错误
 FxCopCmd 不考虑所有错误是致命的。 如果 FxCopCmd 具有足够的信息来执行分部分析，它将执行分析和报告发生的错误。 错误代码，它是一个 32 位整数，包含与错误对应的数字值的按位组合。  
@@ -40,13 +40,13 @@ FxCopCmd 不考虑所有错误是致命的。 如果 FxCopCmd 具有足够的信
   
  严重错误会返回分析错误。 它指示无法完成分析。 如果适用，错误代码还包含错误的根本原因。 以下情况下将生成错误：  
   
--   分析无法执行由输入不足所导致。  
+- 分析无法执行由输入不足所导致。  
   
--   分析引发不由 FxCopCmd 处理了异常。  
+- 分析引发不由 FxCopCmd 处理了异常。  
   
--   指定的项目文件未找到或已损坏。  
+- 指定的项目文件未找到或已损坏。  
   
--   未指定输出选项，或无法写入该文件。  
+- 未指定输出选项，或无法写入该文件。  
   
     > [!NOTE]
     >  FxCopCmd 返回代码"程序集引用错误"0x200 本身是一条警告，而不是错误。 此返回代码指示未找到缺少的间接引用，但 FxCopCmd 无法处理它们。 它是一条警告，存在一些分析结果可能已泄露的可能性。 与任何其他返回代码结合使用它时，请考虑"程序集引用错误"返回代码为错误。  

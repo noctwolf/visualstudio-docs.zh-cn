@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 99c65e6178fa774f18765dba4b877a57bc2a5f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9073edad55a648286a068df5e368e08893ff0a3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071377"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>错误：不支持对 IA64 进程执行混合模式调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58937574"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   生成 32 位版本的应用程序以进行调试。  
+- 生成 32 位版本的应用程序以进行调试。  
   
 ## <a name="see-also"></a>请参阅  
  [在设备上安装远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937505"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046010"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "58937505"
   
 #### <a name="to-create-the-package-manifest"></a>若要创建程序包清单  
   
-1.  创建引导程序包的目录。 此示例使用 C:\package。  
+1. 创建引导程序包的目录。 此示例使用 C:\package。  
   
-2.  与区域设置，例如 en 表示英语名称创建一个子目录。  
+2. 与区域设置，例如 en 表示英语名称创建一个子目录。  
   
-3.  在 Visual Studio 中，创建一个 XML 文件，名为`package.xml`，并将其保存到 C:\package\en 文件夹。  
+3. 在 Visual Studio 中，创建一个 XML 文件，名为`package.xml`，并将其保存到 C:\package\en 文件夹。  
   
-4.  添加 XML 以列出引导程序包的名称、 此本地化的包清单和可选的许可协议的区域性。 下面的 XML 使用的变量`DisplayName`和`Culture`，其定义中的更高版本的元素。  
+4. 添加 XML 以列出引导程序包的名称、 此本地化的包清单和可选的许可协议的区域性。 下面的 XML 使用的变量`DisplayName`和`Culture`，其定义中的更高版本的元素。  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ ms.locfileid: "58937505"
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  添加 XML 以列出特定于区域设置的目录中的所有文件。 下面的 XML 使用的文件，名为适用于 eula.txt **en**区域设置。  
+5. 添加 XML 以列出特定于区域设置的目录中的所有文件。 下面的 XML 使用的文件，名为适用于 eula.txt **en**区域设置。  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ ms.locfileid: "58937505"
     </PackageFiles>  
     ```  
   
-6.  添加 XML 以定义引导程序包可本地化的字符串。 下面的 XML 将添加的英语区域设置的错误字符串。  
+6. 添加 XML 以定义引导程序包可本地化的字符串。 下面的 XML 将添加的英语区域设置的错误字符串。  
   
     ```  
       <Strings>  
@@ -74,7 +74,7 @@ ms.locfileid: "58937505"
     </Strings>  
     ```  
   
-7.  C:\package 文件夹复制到 Visual Studio 引导程序目录。 对于 Visual Studio 2010 中，这是 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 目录。  
+7. C:\package 文件夹复制到 Visual Studio 引导程序目录。 对于 Visual Studio 2010 中，这是 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 目录。  
   
 ## <a name="example"></a>示例  
  包清单包含特定于区域设置的信息，如错误消息、 软件许可条款和语言包。  

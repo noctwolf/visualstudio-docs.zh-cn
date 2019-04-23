@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110487"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  请注意，此模板有关的以下几点：  
   
--   域类、 属性和在 DSL 定义中定义的关系，可以使用该模板。  
+- 域类、 属性和在 DSL 定义中定义的关系，可以使用该模板。  
   
--   加载模板中指定的模型文件`requires`属性。  
+- 加载模板中指定的模型文件`requires`属性。  
   
--   中的属性`this`包含根元素。 在这里，你的代码可以导航到模型的其他元素。 属性的名称通常是与你的 DSL 的根域类相同。 在此示例中，设为 `this.ExampleModel`。  
+- 中的属性`this`包含根元素。 在这里，你的代码可以导航到模型的其他元素。 属性的名称通常是与你的 DSL 的根域类相同。 在此示例中，设为 `this.ExampleModel`。  
   
--   尽管编写的代码片段所用的语言为 C#，可以生成任何类型的文本。 或者可以在编写代码[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]属性添加`language="VB"`到`template`指令。  
+- 尽管编写的代码片段所用的语言为 C#，可以生成任何类型的文本。 或者可以在编写代码[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]属性添加`language="VB"`到`template`指令。  
   
--   若要调试该模板，添加`debug="true"`到`template`指令。 该模板将在另一个实例中打开[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]如果发生异常。 如果你想要在代码中的特定点在调试器中中断，insert 语句 `System.Diagnostics.Debugger.Break();`  
+- 若要调试该模板，添加`debug="true"`到`template`指令。 该模板将在另一个实例中打开[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]如果发生异常。 如果你想要在代码中的特定点在调试器中中断，insert 语句 `System.Diagnostics.Debugger.Break();`  
   
      有关详细信息，请参阅[调试 T4 文本模板](../modeling/debugging-a-t4-text-template.md)。  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  DSL 的指令处理器将执行两个主要任务：  
   
--   它有效地将程序集和导入指令插入到模板中引用你的 DSL。 这样可以在模板代码中使用域类。  
+- 它有效地将程序集和导入指令插入到模板中引用你的 DSL。 这样可以在模板代码中使用域类。  
   
--   它将加载在指定的文件`requires`参数，并且设置属性`this`，是指加载模型的根元素。  
+- 它将加载在指定的文件`requires`参数，并且设置属性`this`，是指加载模型的根元素。  
   
 ## <a name="validating-the-model-before-running-the-template"></a>在运行该模板之前验证模型  
  您可能会导致执行该模板之前要验证的模型。  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    如果找到错误，则它将在错误窗口中，报告和结果文件将包含一条错误消息。  
   
-##  <a name="Multiple"></a> 从文本模板访问多个模型  
+## <a name="Multiple"></a> 从文本模板访问多个模型  
   
 > [!NOTE]
 >  此方法允许你读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取的 ModelBus 引用连接符的模型，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  

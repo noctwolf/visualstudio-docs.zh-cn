@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085033"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:丢失范围之前释放对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58931849"
   
  以下是某些情况下，使用语句不足以保护 IDisposable 对象，并可以导致 CA2000 发生。  
   
--   返回可释放的对象需要外使用 try/finally 块中构造对象块。  
+- 返回可释放的对象需要外使用 try/finally 块中构造对象块。  
   
--   初始化可释放对象的成员不应在构造函数中使用的语句。  
+- 初始化可释放对象的成员不应在构造函数中使用的语句。  
   
--   嵌套只能通过一个异常处理程序保护的构造函数。 例如，应用于对象的  
+- 嵌套只能通过一个异常处理程序保护的构造函数。 例如，应用于对象的  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "58931849"
   
      导致 CA2000 发生，因为在 StreamReader 对象的构造中的失败可能会导致永远不会关闭该 FileStream 对象。  
   
--   动态对象应使用卷影对象实现 IDisposable 的对象的释放模式。  
+- 动态对象应使用卷影对象实现 IDisposable 的对象的释放模式。  
   
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告  
  不要禁止显示此规则发出的警告，除非您对您的对象调用了一个方法，而该方法调用 `Dispose`，例如 <xref:System.IO.Stream.Close%2A>；或者，如果引发警告的方法返回一个包装您的对象的 IDisposable 对象。  

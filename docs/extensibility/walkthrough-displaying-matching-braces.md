@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a137f5ee777785fe3709ace14b5af3385cdaa19
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086528"
 ---
 # <a name="walkthrough-display-matching-braces"></a>演练：显示匹配大括号
 实现基于语言的功能，例如，大括号匹配通过定义您希望匹配，括在括号的内，并将文本标记标记添加到匹配大括号，当脱字号上一个大括号。 可以定义一种语言的上下文中的大括号、 定义您自己的文件扩展名和内容类型和应用标签来只是该类型或将标记应用到现有内容类型 （例如"text")。 下面的演练演示如何将应用标记为"text"内容类型匹配的大括号。
@@ -27,50 +27,50 @@ ms.locfileid: "56682539"
 
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目
 
-1.  创建编辑器分类器项目。 将解决方案命名为 `BraceMatchingTest`。
+1. 创建编辑器分类器项目。 将解决方案命名为 `BraceMatchingTest`。
 
-2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
-3.  删除现有的类文件。
+3. 删除现有的类文件。
 
 ## <a name="implement-a-brace-matching-tagger"></a>实现的大括号匹配标记器
  若要获取大括号突出显示与 Visual Studio 中使用的一个示例类似的效果，可以实现的类型的标记器<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。 下面的代码演示如何定义的任何层级的嵌套的大括号对标记器。 在此示例中，[] 的大括号对和{}中标记器构造函数中，但在完整的语言实现，对语言规范中定义的相关大括号中定义。
 
 ### <a name="to-implement-a-brace-matching-tagger"></a>若要实现的大括号匹配标记器
 
-1.  添加一个类文件并将其命名括号匹配。
+1. 添加一个类文件并将其命名括号匹配。
 
-2.  导入以下命名空间。
+2. 导入以下命名空间。
 
      [!code-csharp[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_1.cs)]
      [!code-vb[VSSDKBraceMatchingTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_1.vb)]
 
-3.  定义一个类`BraceMatchingTagger`，它继承自<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>类型的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。
+3. 定义一个类`BraceMatchingTagger`，它继承自<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>类型的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。
 
      [!code-csharp[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_2.cs)]
      [!code-vb[VSSDKBraceMatchingTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_2.vb)]
 
-4.  添加文本视图、 源缓冲区、 当前快照点，以及一组大括号对的属性。
+4. 添加文本视图、 源缓冲区、 当前快照点，以及一组大括号对的属性。
 
      [!code-csharp[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_3.cs)]
      [!code-vb[VSSDKBraceMatchingTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_3.vb)]
 
-5.  标记器构造函数中，在设置属性和订阅以查看更改的事件<xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged>和<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>。 在此示例中，用于说明目的，匹配对还定义构造函数中。
+5. 标记器构造函数中，在设置属性和订阅以查看更改的事件<xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged>和<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>。 在此示例中，用于说明目的，匹配对还定义构造函数中。
 
      [!code-csharp[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_4.cs)]
      [!code-vb[VSSDKBraceMatchingTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_4.vb)]
 
-6.  作为的一部分<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>实现中，声明 TagsChanged 事件。
+6. 作为的一部分<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>实现中，声明 TagsChanged 事件。
 
      [!code-csharp[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_5.cs)]
      [!code-vb[VSSDKBraceMatchingTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_5.vb)]
 
-7.  事件处理程序更新的当前插入符号位置`CurrentChar`属性和引发 TagsChanged 事件。
+7. 事件处理程序更新的当前插入符号位置`CurrentChar`属性和引发 TagsChanged 事件。
 
      [!code-csharp[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_6.cs)]
      [!code-vb[VSSDKBraceMatchingTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_6.vb)]
 
-8.  实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法来匹配大括号内的任何一个时的当前字符是左大括号或前一个字符时关闭的大括号，如 Visual Studio 中所示。 当找到匹配项时，此方法实例化两个标记、 左大括号和右大括号。
+8. 实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法来匹配大括号内的任何一个时的当前字符是左大括号或前一个字符时关闭的大括号，如 Visual Studio 中所示。 当找到匹配项时，此方法实例化两个标记、 左大括号和右大括号。
 
      [!code-csharp[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_7.cs)]
      [!code-vb[VSSDKBraceMatchingTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_7.vb)]
@@ -90,12 +90,12 @@ ms.locfileid: "56682539"
 
 ### <a name="to-implement-a-brace-matching-tagger-provider"></a>若要实现的大括号匹配标记器提供程序
 
-1.  声明的标记器提供程序继承自<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>，其命名为 BraceMatchingTaggerProvider，并将其与导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"text"和一个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。
+1. 声明的标记器提供程序继承自<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>，其命名为 BraceMatchingTaggerProvider，并将其与导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"text"和一个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>的<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>。
 
      [!code-csharp[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_10.cs)]
      [!code-vb[VSSDKBraceMatchingTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_10.vb)]
 
-2.  实现<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>方法可实例化 BraceMatchingTagger。
+2. 实现<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A>方法可实例化 BraceMatchingTagger。
 
      [!code-csharp[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-matching-braces_11.cs)]
      [!code-vb[VSSDKBraceMatchingTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-matching-braces_11.vb)]
@@ -105,11 +105,11 @@ ms.locfileid: "56682539"
 
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>若要生成和测试 BraceMatchingTest 解决方案
 
-1.  生成解决方案。
+1. 生成解决方案。
 
-2.  当在调试器中运行此项目时，将启动 Visual Studio 的第二个实例。
+2. 当在调试器中运行此项目时，将启动 Visual Studio 的第二个实例。
 
-3.  创建一个文本文件并键入一些文本，其中包括匹配大括号。
+3. 创建一个文本文件并键入一些文本，其中包括匹配大括号。
 
     ```
     hello {
@@ -120,7 +120,7 @@ ms.locfileid: "56682539"
     {hello}
     ```
 
-4.  当将左大括号之前插入符号时，该大括号和关闭的匹配大括号应突出显示。 时恰好在关闭的大括号后放置光标，该大括号和匹配的左大括号应突出显示。
+4. 当将左大括号之前插入符号时，该大括号和关闭的匹配大括号应突出显示。 时恰好在关闭的大括号后放置光标，该大括号和匹配的左大括号应突出显示。
 
 ## <a name="see-also"></a>请参阅
 - [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

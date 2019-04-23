@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059846"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59000661"
   
  请注意，大多数关系图类型可以用于其他目的。 有关关系图类型的概述，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。 有关绘制关系图的基本信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
-##  <a name="UseCases"></a> 描述如何使用您的系统  
+## <a name="UseCases"></a> 描述如何使用您的系统  
  创建用例图来描述系统的使用者以及他们使用系统的用途。 用例子表示系统用户的目标，以及他们执行操作以达到目标的过程。  
   
  例如，在线售餐系统必须允许顾客从菜单中选择项目，也必须允许提供服务的餐厅可以更新菜单。 可以在用例图中对此进行汇总：  
@@ -93,7 +93,7 @@ ms.locfileid: "59000661"
 |用例图上的元素|[UML 用例关系图：参考](../modeling/uml-use-case-diagrams-reference.md)|  
 |如何从用例中开发代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> 定义用于描述要求的术语  
+## <a name="RequirementsClasses"></a> 定义用于描述要求的术语  
  可以使用 UML 类图来帮助开发一致的、用于以下用途的业务概念术语：  
   
 - 由用户自身讨论系统要作用于的业务。  
@@ -140,7 +140,7 @@ ms.locfileid: "59000661"
   
  在概念类图中，通常在关联上放置箭头来表示可导航性没什么用处。 这是因为此关系图并不表示实现。 关联表示现实世界对象间的关系。 以下[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展将无方向箭头当成默认值：[示例：UML 域建模功能](http://go.microsoft.com/fwlink/?LinkId=213849)。  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  
   
  许多业务规则受概念类间关系的约束。 您可以编写这些*静态业务规则*作为与概念类图上的相关类关联的注释。 例如：  
@@ -161,7 +161,7 @@ ms.locfileid: "59000661"
 |概念类图上的元素|[UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)|  
 |如何开发符合业务规则的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  服务质量要求有多个类别。 它们包括以下类型：  
   
 - 性能  
@@ -185,7 +185,7 @@ ms.locfileid: "59000661"
 |将其他文档附加到用例|[将用例链接到文档和关系图](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |如何开发符合服务质量要求的代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> 显示用户与系统之间的工作流  
+## <a name="Workflow"></a> 显示用户与系统之间的工作流  
  可以使用活动图来显示不同用例间的工作流。 通过绘制显示用户执行的主要任务（通过系统执行或在系统以外执行的任务）的活动图来开始建立要求模型常常非常有用。  
   
  例如：  
@@ -206,7 +206,7 @@ ms.locfileid: "59000661"
 |活动图中的元素|[UML 活动关系图：参考](../modeling/uml-activity-diagrams-reference.md)|  
 |如何从活动图中开发代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> 显示用户与系统之间的交互  
+## <a name="Sequences"></a> 显示用户与系统之间的交互  
  可以使用序列图显示系统和外部参与者之间或系统的各部件与系统之间的消息交换。 这在用例中提供了一个步骤视图，非常清晰地显示了交互序列。 当用例内有多个交互方，且你的系统有 API 时，序列图非常有用。  
   
  例如：  

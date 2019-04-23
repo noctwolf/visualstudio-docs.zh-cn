@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073730"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>将数据绑定到 Office 解决方案中的控件
   可以将 Microsoft Office Word 文档或 Microsoft Office Excel 工作表中的 Windows 窗体控件和 *宿主控件* 绑定到某个数据源，以便这些控件自动显示数据。 可以将数据绑定到应用程序级项目和文档级项目中的控件。
@@ -73,22 +73,22 @@ ms.locfileid: "56605713"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>在设计时在文档级项目中绑定数据
  下面的主题介绍在设计时绑定数据的示例：
 
--   [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [如何：滚动工作表中的数据库记录](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [如何：滚动工作表中的数据库记录](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>在 VSTO 外接程序项目中绑定数据
  在 VSTO 外接程序项目中，可以仅在运行时添加控件。 以下主题介绍在运行时绑定数据的示例：
 
--   [演练：VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [演练：VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [演练：VSTO 外接程序项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [演练：VSTO 外接程序项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>绑定到宿主控件更新数据
  在数据源和宿主控件之间进行数据绑定会涉及到双向数据更新。 在简单数据绑定中，数据源中所做的更改会在宿主控件中自动反映，但宿主控件中所做的更改则需要通过显式调用才能更新数据源。 原因是，在某些情况下，如果只更改一个数据绑定字段而没有相应地更改另一个数据绑定字段，则不会接受对该数据绑定字段所做的更改。 例如，假定有两个字段，一个是年龄字段，另一个是工作经验字段。 工作经验值不可能比年龄值大。 用户不能将年龄字段从 50 更新为 25，然后再将工作经验字段从 30 更新为 10，而只能同时对这两个字段做相应更改。 若要解决此问题，只有通过代码来显式发送更新，才能对简单数据绑定字段进行更新。

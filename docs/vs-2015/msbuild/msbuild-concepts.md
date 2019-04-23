@@ -11,22 +11,21 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770861"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663305"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供可用于控制生成平台如何生成软件的基本 XML 架构。 若要指定生成中的组件及其生成方式，请使用这四个 MSBuild 部件：属性、项、任务和目标。  
   
 ## <a name="related-topics"></a>相关主题  
   
-|Title|说明​​|  
+|Title|描述|  
 |-----------|-----------------|  
 |[MSBuild 属性](../msbuild/msbuild-properties1.md)|介绍属性和属性集合。 属性是可用于配置生成的键/值对。|  
 |[项](../msbuild/msbuild-items.md)|介绍 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 文件格式背后的常规概念，以及所有这些概念之间的关系。|  

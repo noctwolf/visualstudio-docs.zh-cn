@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a35630000c92e88c77039114313799b000d5ebbd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604114"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062633"
 ---
 # <a name="namedrange-control"></a>NamedRange 控件
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件是一个具有唯一名称的范围，可用于公开事件且可以绑定到数据。 有关详细信息，请参阅[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。
@@ -55,21 +55,21 @@ ms.locfileid: "56604114"
 ## <a name="events"></a>事件
  以下事件可用于 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件：
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
 ## <a name="see-also"></a>请参阅
 - [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

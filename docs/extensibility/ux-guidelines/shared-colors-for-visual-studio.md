@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89c4a4a25c2dfdeb33bfadcf8416a0cbc4726658
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089534"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 当您正在设计使用公共 Visual Studio shell 元素的 UI 或希望界面元素将与类似功能一致时，使用包定义文件中现有的标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。
@@ -22,11 +22,11 @@ ms.locfileid: "59649949"
 
 请确保正确使用标记名称：
 
--   **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的函数不同，以及如果组合框中更改与关联的颜色，则可能不再是合适于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
+- **使用基于功能，不是颜色本身的标记名称。** 公共共享颜色与特定界面元素关联，仅用于相同或类似功能。 例如，不要仅仅因为你喜欢某个已按下组合框的颜色，便将该颜色重复用于旋转进度动画。 组合框和动画的函数不同，以及如果组合框中更改与关联的颜色，则可能不再是合适于动画元素的颜色。 以一致方法使用颜色可帮助使用户适应，防止产生混乱。
 
--   **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联的文本颜色，不要将该背景色用于期望显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。
+- **采用正确组合使用背景和文本颜色。** 要用于文本的背景色具有关联文本颜色。 不要使用为该背景指定的颜色之外的文本颜色。 如果没有关联的文本颜色，不要将该背景色用于期望显示文本的任何图面。 文本和背景色的其他组合可能会导致不可读的界面。
 
--   **使用适合于其位置的控件颜色。** 在某些状态，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。
+- **使用适合于其位置的控件颜色。** 在某些状态，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。
 
 > [!IMPORTANT]
 > 不要使用"起始页"或"Cider。"类别中找到的标记
@@ -623,13 +623,13 @@ ms.locfileid: "59649949"
 
 搜索框可以具有多种状态之一，其中一些状态互相排斥：
 
--   “已设定焦点”或“失去焦点”是指光标是否处于文本框中。
+- “已设定焦点”或“失去焦点”是指光标是否处于文本框中。
 
--   “活动”或“非活动”是指用户是否在文本框中输入了搜索查询。
+- “活动”或“非活动”是指用户是否在文本框中输入了搜索查询。
 
--   “悬停”表示用户将鼠标指针置于搜索框上方（此状态优先于所有其他状态）。
+- “悬停”表示用户将鼠标指针置于搜索框上方（此状态优先于所有其他状态）。
 
--   “已禁用”表示为当前上下文关闭了搜索功能。
+- “已禁用”表示为当前上下文关闭了搜索功能。
 
 ![搜索框 （红线）](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303年 110_SearchBoxRedline")<br />搜索框 （红线）
 
@@ -854,7 +854,7 @@ ms.locfileid: "59649949"
 | 链接背景 | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />（梯度停止点不在主题 UI 中使用此令牌。） |
 | 前景（链接文本） | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> 树视图
+### <a name="BKMK_TreeView"></a> 树视图
 多个工具窗口，其中包括解决方案资源管理器、 服务器资源管理器和类视图实现其颜色控制中的颜色名称的分层组织方案`TreeView`类别。 树视图中的所有项都具有背景和文本颜色。 具有嵌套子元素的项还具有指示该项是展开还是折叠的标志符号。
 
 ![树视图 （红线）](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303年 147_TreeViewRedline")<br />树视图 （红线）
@@ -1037,7 +1037,7 @@ ms.locfileid: "59649949"
 
 ## <a name="command-structures"></a>命令结构
 
-###  <a name="BKMK_CommandMenus"></a> 菜单
+### <a name="BKMK_CommandMenus"></a> 菜单
 菜单可以出现在 Visual Studio 的多个位置上： 主菜单栏、 嵌入在文档或工具窗口或整个 IDE 的各个位置右键单击。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。
 
 ![Visual Studio 菜单 （红线）](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303年 000_MenuRedline")<br />Visual Studio 菜单 （红线）
@@ -1278,7 +1278,7 @@ ms.locfileid: "59649949"
 | 前景（文本） | `Environment.CommandBarTextInactive` |
 | Border | 不适用 |
 
-####  <a name="BKMK_CommandComboBox"></a> 命令栏组合框
+#### <a name="BKMK_CommandComboBox"></a> 命令栏组合框
 
 > [!IMPORTANT]
 > 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，使用的颜色标记[命令栏下拉列表确定](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)。
@@ -1410,7 +1410,7 @@ ms.locfileid: "59649949"
 | 背景 | None |
 | 前景（标志符号） | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> 命令栏下拉列表
+#### <a name="BKMK_CommandDropDown"></a> 命令栏下拉列表
 
 > [!IMPORTANT]
 >  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，使用的颜色标记[命令栏组合框](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。
@@ -1713,9 +1713,9 @@ ms.locfileid: "59649949"
 #### <a name="open-document-tabs"></a>打开文档选项卡
 每个打开的文档都在文档选项卡通道中具有显示其名称的选项卡。 文档可以处于已选定状态，或在后台打开，其选项卡会反映这些状态：
 
--   已选定选项卡表示当前显示在文档井中的文档。 已选定选项卡具有沿文档井上边缘扩展的文档边框。
+- 已选定选项卡表示当前显示在文档井中的文档。 已选定选项卡具有沿文档井上边缘扩展的文档边框。
 
--   背景选项卡为不是当前已选定选项卡的任何文档选项卡。单击之后，它们会成为已选定选项卡，并从这些标记名称获取所有背景、边框和文本颜色。
+- 背景选项卡为不是当前已选定选项卡的任何文档选项卡。单击之后，它们会成为已选定选项卡，并从这些标记名称获取所有背景、边框和文本颜色。
 
 ![打开的文档选项卡 （红线）](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303年 073_OpenDocumentTabRedline")<br />打开的文档选项卡 （红线）
 

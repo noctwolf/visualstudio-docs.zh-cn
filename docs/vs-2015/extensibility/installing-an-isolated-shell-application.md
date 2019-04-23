@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062823"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安装独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58934066"
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>若要准备 MSI 部署一个外壳应用程序  
   
-1.  编辑你的解决方案中每个的.vsixmanifest 文件。  
+1. 编辑你的解决方案中每个的.vsixmanifest 文件。  
   
      在中`Identifier`元素中，添加`InstalledByMSI`元素和一个`SystemComponent`元素，然后将其值设置为`true`。  
   
      这些元素可防止 VSIX 安装程序尝试从使用卸载安装您的组件和用户**扩展和更新**对话框。  
   
-2.  有关每个项目包含 VSIX 清单，请编辑生成任务输出内容将在其中安装 MSI 的位置。 包括在 VSIX 清单中生成输出，但不生成.vsix 文件。  
+2. 有关每个项目包含 VSIX 清单，请编辑生成任务输出内容将在其中安装 MSI 的位置。 包括在 VSIX 清单中生成输出，但不生成.vsix 文件。  
   
 ## <a name="creating-an-msi-for-your-shell"></a>为你的 Shell 中创建 MSI  
  若要生成 MSI 包，我们建议你使用[Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=82720)因为它提供更大的灵活性比标准安装程序项目。  
@@ -85,7 +85,7 @@ ms.locfileid: "58934066"
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>若要设置布局的外壳程序组件  
   
-1.  创建层次结构的`Directory`元素来表示所有要在目标计算机上，在文件系统上创建如下例所示的目录。  
+1. 创建层次结构的`Directory`元素来表示所有要在目标计算机上，在文件系统上创建如下例所示的目录。  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ ms.locfileid: "58934066"
   
      这些目录到引用的`Id`时指定必须安装的文件。  
   
-2.  标识外壳和外壳应用程序需要，如以下示例所示的组件。  
+2. 标识外壳和外壳应用程序需要，如以下示例所示的组件。  
   
     > [!NOTE]
     >  某些元素可以引用其他.wxs 文件中定义。  
@@ -123,7 +123,7 @@ ms.locfileid: "58934066"
     </Feature>  
     ```  
   
-    1.  `ComponentRef`元素引用另一个标识当前组件所需文件的.wxs 文件。 例如，GeneralProfile HelpAbout.wxs 中具有以下定义。  
+    1. `ComponentRef`元素引用另一个标识当前组件所需文件的.wxs 文件。 例如，GeneralProfile HelpAbout.wxs 中具有以下定义。  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ ms.locfileid: "58934066"
   
          `DirectoryRef`元素指定在用户的计算机上转这些文件。 `Directory`元素指定，则将安装到子目录，而每台`File`元素表示的文件生成或，作为解决方案的一部分存在，并且标识该文件可以找到创建的 MSI 文件时。  
   
-    2.  `ComponentGroupRef`元素表示一组的其他组件 （或组件以及组件组）。 例如， `ComponentGroupRef` ApplicationGroup 下定义，如下所示 Application.wxs 中。  
+    2. `ComponentGroupRef`元素表示一组的其他组件 （或组件以及组件组）。 例如， `ComponentGroupRef` ApplicationGroup 下定义，如下所示 Application.wxs 中。  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ ms.locfileid: "58934066"
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>若要将集成到 MSI 的注册表项  
   
-1.  在中**外壳自定义设置**文件夹中，打开*ProjectName*。 地区  
+1. 在中**外壳自定义设置**文件夹中，打开*ProjectName*。 地区  
   
-2.  $RootFolder$ 令牌的所有实例都替换为目标安装目录的路径。  
+2. $RootFolder$ 令牌的所有实例都替换为目标安装目录的路径。  
   
-3.  添加应用程序所需的任何其他注册表项。  
+3. 添加应用程序所需的任何其他注册表项。  
   
-4.  打开 ApplicationRegistry.wxs。  
+4. 打开 ApplicationRegistry.wxs。  
   
-5.  为在每个注册表条目*ProjectName*.reg，添加相应的注册表块，如以下示例所示。  
+5. 为在每个注册表条目*ProjectName*.reg，添加相应的注册表块，如以下示例所示。  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ ms.locfileid: "58934066"
 ## <a name="creating-a-setup-bootstrapper"></a>创建安装程序引导程序  
  仅当首次安装所有必备组件，将安装已完成的 MSI。 若要简化最终用户体验，创建收集并安装你的应用程序之前安装所有必备组件的安装程序。 若要确保成功安装，请执行以下操作：  
   
--   强制执行由管理员安装。  
+- 强制执行由管理员安装。  
   
--   检测是否安装了 Visual Studio Shell （独立）。  
+- 检测是否安装了 Visual Studio Shell （独立）。  
   
--   按顺序运行一个或两个命令行程序安装程序。  
+- 按顺序运行一个或两个命令行程序安装程序。  
   
--   处理重新启动请求。  
+- 处理重新启动请求。  
   
--   运行 MSI。  
+- 运行 MSI。  
   
 ### <a name="enforcing-installation-by-administrator"></a>强制执行由管理员安装  
  此过程需启用安装程序来访问所需的目录，如 \Program Files\\。  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>若要强制执行由管理员安装  
   
-1.  打开安装项目的快捷菜单，然后选择**属性**。  
+1. 打开安装项目的快捷菜单，然后选择**属性**。  
   
-2.  下**配置属性 / 链接器 / 清单文件**，请设置**UAC 执行级别**到**requireAdministrator**。  
+2. 下**配置属性 / 链接器 / 清单文件**，请设置**UAC 执行级别**到**requireAdministrator**。  
   
      此属性将放到嵌入的清单文件，以管理员身份运行该程序所需的属性。  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  若要处理的重启，请执行以下操作：  
   
--   设置注册表以继续安装，Windows 启动时。  
+- 设置注册表以继续安装，Windows 启动时。  
   
--   执行双引导程序重新启动。  
+- 执行双引导程序重新启动。  
   
--   删除命令行程序安装程序 ResumeData 密钥。  
+- 删除命令行程序安装程序 ResumeData 密钥。  
   
--   重启 Windows。  
+- 重启 Windows。  
   
--   重置的 MSI 开始路径。  
+- 重置的 MSI 开始路径。  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>当 Windows 启动时恢复安装程序将注册表设置  
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ 注册表项在使用管理权限的系统启动时执行，然后清除。 HKEY_CURRENT_USER 包含类似的密钥，但它以普通用户身份运行，并不适用于安装。 可以通过将一个字符串值放入 RunOnce 项调用您的安装程序继续安装。 但是，我们建议使用调用安装程序**重启**或类似的参数，以通知它正在恢复而不启动该应用程序。 此外可以包含参数来指示安装过程中，这可能需要多次重新启动的安装中特别有用的。  

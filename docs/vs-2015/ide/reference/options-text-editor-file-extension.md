@@ -16,17 +16,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b81d4f2341f9ddca3468bd77f0f79940dba3d29
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d42495542f96a4ae4918d9d6477f0877979871d2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755001"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655881"
 ---
 # <a name="options-text-editor-file-extension"></a>选项，文本编辑器，文件扩展名
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 通过此“选项”对话框，可以指定 Visual Studio 集成开发环境 (IDE) 对具有特定文件扩展名的所有文件的处理方式。 对于输入的每个“扩展名”，可以选择一个编辑体验。 这样便可选择在某种类型的哪些文档中打开 IDE 编辑器或设计器。 若要显示这些选项，请从“工具”菜单中选择“选项”，展开“文本编辑器”节点并选择“文件扩展名”。  
   
  选中“使用编码”选项后，每当打开该类型的文档时，都会显示一个对话框，用户可以为该文档选择编码方案。 在准备不同版本的项目文档以用于不同的平台或不同的目标语言时，此选项将很有帮助。  

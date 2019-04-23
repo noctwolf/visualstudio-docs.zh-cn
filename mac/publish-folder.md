@@ -1,6 +1,6 @@
 ---
 title: 发布到文件夹
-ms.date: 01/22/2019
+ms.date: 04/02/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -9,12 +9,12 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: c59e19434edcb19982fa72d3ddc96d7cb6a870a8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0ab1b01900077fdbad5dec3fb968abcf46db62d8
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840362"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856523"
 ---
 # <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 将 Web 应用发布到文件夹
 
@@ -22,8 +22,8 @@ ms.locfileid: "56840362"
 
 ## <a name="prerequisites"></a>系统必备
 
- - 已安装 [Visual Studio 2017 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017)并启用了 ASP.NET Core。
- - ASP.NET Core 项目。 如果还没有项目，则可以[创建一个新的项目](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017)。
+ - 已安装 [Visual Studio 2019 for Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019)，并启用了 ASP.NET Core。
+ - ASP.NET Core 项目。 如果还没有项目，则可以[创建一个新的项目](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019)。
 
 ## <a name="publish-to-folder"></a>发布到文件夹
 

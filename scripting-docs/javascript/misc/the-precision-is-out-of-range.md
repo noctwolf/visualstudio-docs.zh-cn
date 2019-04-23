@@ -14,19 +14,19 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 875f09acb6a9ab66c656524a7bb2a1a61cbcdb6f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095511"
 ---
 # <a name="the-precision-is-out-of-range"></a>精度超出范围
 尝试向函数传递了无效的参数**Number.prototype.toPrecision**。 参数**toPrecision**必须介于 1 和 21 （含） 之间。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保参数`toPrecision`不是太大或太小。  
+- 确保参数`toPrecision`不是太大或太小。  
   
 ## <a name="see-also"></a>请参阅  
  [toPrecision 方法 (Number)](../../javascript/reference/toprecision-method-number-javascript.md)

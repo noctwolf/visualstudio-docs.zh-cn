@@ -14,12 +14,12 @@ ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b1e404a9df368f639530d533b8cf4bf063f8ad6
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079586"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>字符集范围无效 (JavaScript)
 你试图使用无效的字符设置范围创建正则表达式。 字符集的范围必须在单个字符，例如 a 到 z 或 0-9;中的字符，不能包含字符类，如 \w。 范围内的第一个字符还必须在范围内的第二个字符之前。 例如：  
@@ -31,7 +31,7 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   使用只将单个字符来撰写应用正则表达式的字符集，并确保它们是正确的顺序。  
+- 使用只将单个字符来撰写应用正则表达式的字符集，并确保它们是正确的顺序。  
   
 ## <a name="see-also"></a>请参阅  
  [正则表达式对象](../../javascript/reference/regular-expression-object-javascript.md)   

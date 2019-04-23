@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8819964eff232cc01cbcfc2081e01eca47f04c15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086697"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：引用 Windows 符号信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例�
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>使用 Microsoft 符号服务器  
   
-1.  创建用于包含符号文件信息的文件夹，如 C:\SymbolCache。  
+1. 创建用于包含符号文件信息的文件夹，如 C:\SymbolCache。  
   
-2.  在 **“工具”** 菜单上，单击 **“选项”**。  
+2. 在 **“工具”** 菜单上，单击 **“选项”**。  
   
      这将显示 **“选项”** 对话框。  
   
-3.  展开“调试”树，然后单击“符号”。  
+3. 展开“调试”树，然后单击“符号”。  
   
-4.  在“符号文件(.pdb)位置”中，选择“Microsoft 符号服务器”  
+4. 在“符号文件(.pdb)位置”中，选择“Microsoft 符号服务器”  
   
-5.  在“将符号从符号服务器缓存到此目录”中，键入在第 1 步中创建的文件夹的路径，例如：  
+5. 在“将符号从符号服务器缓存到此目录”中，键入在第 1 步中创建的文件夹的路径，例如：  
   
      **C:\SymbolCache**  
   
@@ -51,4 +51,4 @@ Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例�
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
- [如何：序列化符号信息](../profiling/how-to-serialize-symbol-information.md)
+ [如何：串行化符号信息](../profiling/how-to-serialize-symbol-information.md)

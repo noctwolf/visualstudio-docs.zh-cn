@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3daab1196e151a4fea57ae120b2ec280e2e23a
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "58070212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067607"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：结合使用 XML 架构设计器和 XML 文本
 
@@ -23,7 +23,7 @@ ms.locfileid: "58070212"
 
 ## <a name="create-a-new-visual-basic-project"></a>创建新的 Visual Basic 项目
 
-1.  打开 Visual Studio。
+1. 打开 Visual Studio。
 
 2. 创建一个新的 Visual Basic**控制台应用程序**名为项目**XMLLiterals**。
 
@@ -31,11 +31,11 @@ ms.locfileid: "58070212"
 
 ## <a name="add-an-existing-xsd-file"></a>添加现有的 XSD 文件
 
-1.  在记事本中打开新的文本文件。 中的 XML 架构示例代码复制[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并将其粘贴到该文件。
+1. 在记事本中打开新的文本文件。 中的 XML 架构示例代码复制[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)并将其粘贴到该文件。
 
-2.  将文件保存在某个位置具有名称*PurchaseOrderSchema.xsd*。
+2. 将文件保存在某个位置具有名称*PurchaseOrderSchema.xsd*。
 
-3.  在中**解决方案资源管理器**，右键单击项目的名称，选择**添加**，然后选择**现有项**。 **添加现有项**对话框随即出现。 浏览到*PurchaseOrderSchema.xsd*文件中，选择它，，然后单击**添加**。
+3. 在中**解决方案资源管理器**，右键单击项目的名称，选择**添加**，然后选择**现有项**。 **添加现有项**对话框随即出现。 浏览到*PurchaseOrderSchema.xsd*文件中，选择它，，然后单击**添加**。
 
      XMLLiterals 项目现在包含两个文件：*Module1.vb*并*PurchaseOrderSchema.xsd*。
 

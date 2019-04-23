@@ -1,6 +1,6 @@
 ---
 title: 创建单元测试方法存根
-ms.date: 05/02/2017
+ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -9,32 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddc4e7a44aa0d5d42a64556092874413e3a3b2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982761"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857718"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用“创建单元测试”命令创建单元测试方法存根
 
-Visual Studio 中的“创建单元测试”命令能够创建单元测试方法存根。 借助此功能，可以轻松地配置测试项目、测试类和其中的测试方法存根。
+“创建单元测试”命令创建单元测试方法存根。 借助此功能，可以轻松地配置测试项目、测试类和其中的测试方法存根。
 
-## <a name="availability-and-extensions"></a>可用性和扩展
+> [!NOTE]
+> “创建单元测试”菜单命令仅适用于面向 .NET Framework（但不是 .NET Core）的托管代码。
 
-“创建单元测试”菜单命令：
-
-* 在 Visual Studio Community 2015、Visual Studio Professional 2015 和 Visual Studio Enterprise 2015 及更高版本中提供。
-
-* 仅支持面向 .NET Framework 的 C# 代码。
-
-* 可扩展并支持以 MSTest、MSTest V2、NUnit 和 xUnit 格式发出测试。
-
-* 在 .NET Core 项目中尚不可用。
+“创建单元测试”菜单命令可扩展，并可用于为 MSTest、MSTest V2、NUnit 和 xUnit 生成测试。
 
 ## <a name="get-started"></a>入门
 
-首先，在代码编辑器中选择要测试项目中的方法、类型或命名空间，打开快捷菜单，然后选择“创建单元测试”。 “创建单元测试”对话框随即打开，可在其中选择用于创建新单元测试的选项。
+首先，在代码编辑器中选择要测试项目中的方法、类型或命名空间，右键单击，然后选择“创建单元测试”。 “创建单元测试”对话框随即打开，可在其中配置创建测试的方式。
 
 ![使用“创建单元测试”命令](media/createunittestcommand.png)
 
@@ -46,25 +39,7 @@ Visual Studio 中的“创建单元测试”命令能够创建单元测试方法
 
 ## <a name="use-third-party-unit-test-frameworks"></a>使用第三方单元测试框架
 
-通过 Visual Studio，可轻松使用任何测试框架来创建单元测试。 安装其他测试框架：
-
-::: moniker range="vs-2017"
-
-1. 选择“工具”>“扩展和更新”。
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. 选择“扩展”>“管理扩展”。
-
-::: moniker-end
-
-2. 展开“联机” > “Visual Studio Marketplace” > “工具”，然后选择“测试”。
-
-![使用第三方测试框架](media/createunittestfx.png)
-
-Visual Studio Marketplace 中提供了测试框架扩展：
+若要自动为 NUnit 或 xUnit 生成单元测试，请从 Visual Studio Marketplace 安装以下某个测试框架扩展：
 
 * [适用于测试生成器的 NUnit 扩展](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
 * [适用于测试生成器的 xUnit.net 扩展](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
@@ -73,7 +48,7 @@ Visual Studio Marketplace 中提供了测试框架扩展：
 
 只要需要创建单元测试就可使用此功能，但在测试代码覆盖率很小或没有覆盖率且没有任何文档的现有代码时尤其适用。 换而言之，在代码说明有限或不存在代码说明的情况下适用。 它可有效实现类似于[智能单元测试](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/)的方法，确定观察到的代码行为的特征。
 
-但此功能同样适用于以下情况：开发人员在开始时编写代码，然后使用该代码启动单元测试规程。 在编码流程中，开发人员可能想要为特定的一段代码快速创建一个单元测试方法存根（包含合适的测试类和合适的测试项目）。
+但此功能同样适用于以下情况：开发人员在开始时编写代码，然后使用该代码启动单元测试。 在编码流程中，开发人员可能想要为特定的一段代码快速创建一个单元测试方法存根（包含合适的测试类和合适的测试项目）。
 
 ## <a name="see-also"></a>请参阅
 

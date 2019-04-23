@@ -11,12 +11,12 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b1f0f97aa33c56df7a512389daf1801157e693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061783"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加到程序和从程序分离
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "58931705"
   
     如果`S_OK`返回，DE 会加载 SDM 作为在同一进程中。 SDM 执行以下任务：  
   
-   1.  调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。  
+   1. 调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。  
   
-   2.  共同创建 DE。  
+   2. 共同创建 DE。  
   
-   3.  调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
+   3. 调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
   
 2. DE 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)到使用 SDM`EVENT_SYNC`属性。  
   

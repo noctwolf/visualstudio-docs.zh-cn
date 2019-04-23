@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f73011cd675772add62b25a1f94de52c0018e667
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 725566a4bc09a7c787c5ffa96b9422d15fd197b1
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867960"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790948"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP 应用中的 JavaScript 内存使用情况
 JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内存使用情况，在使用 JavaScript 为 Windows 构建的 UWP 应用中查找内存泄漏。 受支持的应用包括通用 Windows 应用的应用。
@@ -102,7 +103,7 @@ JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内
 
 1. 在 Visual Studio 中打开应用程序。
 
-2. 运行 JavaScript 内存分析器。 有关更多信息，请参见 [运行 JavaScript 内存分析器](#run-the-JavaScript-memory-analyzer)。
+2. 运行 JavaScript 内存分析器（请参阅前面的步骤）。
 
 3. 通过要测试的方案运行应用。 例如，方案可能涉及大型 DOM 转变、加载特定页时或启动应用时。
 

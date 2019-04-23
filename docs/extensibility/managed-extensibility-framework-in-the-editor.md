@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a272c01f76787e60e7796173b52b563f8e8718
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 708d9c7e41a3be24f9eaf28d86da94d47b187a93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054009"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>在编辑器中管理可扩展性框架
 使用 Managed Extensibility Framework (MEF) 组件生成编辑器。 您可以构建您自己的 MEF 组件来扩展编辑器中，和你的代码可以使用编辑器的组件。
@@ -82,25 +82,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>若要使用 MEF 组件部分中的编辑器功能
 
-1.  将引用添加到*System.Composition.ComponentModel.dll*，这是在全局程序集缓存 (GAC) 中，并对编辑器程序集。
+1. 将引用添加到*System.Composition.ComponentModel.dll*，这是在全局程序集缓存 (GAC) 中，并对编辑器程序集。
 
-2.  添加相关 using 语句。
+2. 添加相关 using 语句。
 
     ```
     using System.ComponentModel.Composition;
     using Microsoft.VisualStudio.Text;
     ```
 
-3.  添加`[Import]`属性到你的服务接口，如下所示。
+3. 添加`[Import]`属性到你的服务接口，如下所示。
 
     ```
     [Import]
     ITextBufferFactoryService textBufferService;
     ```
 
-4.  时获取该服务后，可以使用其组件之一。
+4. 时获取该服务后，可以使用其组件之一。
 
-5.  当已编译您的程序集，将其放在 *...\Common7\IDE\Components\*的 Visual Studio 安装文件夹。
+5. 当已编译您的程序集，将其放在 *...\Common7\IDE\Components\*的 Visual Studio 安装文件夹。
 
 ## <a name="see-also"></a>请参阅
 - [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

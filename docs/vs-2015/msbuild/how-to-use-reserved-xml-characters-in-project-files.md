@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9943378043c7ddd5787d32b331334555b27cd947
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aba17e94486ca04e12055c7bf9959f927440c53d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089364"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在项目文件中使用保留的 XML 字符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在创作项目文件时，可能需要使用保留的 XML 字符，例如在属性值或任务参数值中。 但是，某些保留字符必须替换为命名实体，以便可以分析项目文件。  
   
 ## <a name="using-reserved-characters"></a>使用保留字符  
@@ -38,7 +37,7 @@ ms.locfileid: "54780635"
   
 #### <a name="to-use-double-quotes-in-a-project-file"></a>在项目文件中使用双引号  
   
--   将双引号替换为相应的命名实体 &quot;。 例如，若要在 `EXEFile` 项列表两边放置双引号，请键入：  
+- 将双引号替换为相应的命名实体 &quot;。 例如，若要在 `EXEFile` 项列表两边放置双引号，请键入：  
   
     ```  
     <Message Text="The output file is "@(EXEFile)"."/>  

@@ -14,19 +14,19 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bd30ac1a49ff976ae928243fb74b9939c1eaf27
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840615"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097266"
 ---
 # <a name="array-or-arguments-object-expected"></a>缺少 Array 或 arguments 对象
 未作为参数提供一个数组。 此错误适用于**Function.prototype.apply**仅限方法。 如果指定，此函数的第二个参数必须处于`Array`对象或**自变量**对象。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   指定`Array`或**自变量**对象作为第二个参数。  
+- 指定`Array`或**自变量**对象作为第二个参数。  
   
 ## <a name="see-also"></a>请参阅  
  [使用数组](../../javascript/advanced/using-arrays-javascript.md)   

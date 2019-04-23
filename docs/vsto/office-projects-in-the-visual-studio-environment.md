@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091012"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>在 Visual Studio 环境中的 office 项目
   Microsoft Office 项目的开发体验与 Visual Studio 中其他类型的项目（如 Windows 窗体项目）相似。 当你创建或打开 Office 项目时，项目项会出现在 **“解决方案资源管理器”** 中。 对于文档级项目，文档（即 Word 文档或 Excel 工作簿）将在 Visual Studio 中打开，该文档的行为就如同一个可视化设计器。
@@ -73,7 +73,7 @@ ms.locfileid: "54865978"
 ### <a name="temporary-certificates"></a>临时证书
  Office 项目还包括名为 *Project Name*_TemporaryKey.pfx 的临时证书。 此证书用于在开发期间对项目的应用程序和部署清单进行签名。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)并[保护 Office 解决方案](../vsto/securing-office-solutions.md)。
 
-###  <a name="hiddenfiles"></a> 隐藏的项目文件
+### <a name="hiddenfiles"></a> 隐藏的项目文件
  默认情况下，某些项目文件是隐藏的。 这些文件由 Visual Studio 生成，它们因项目类型而异。 若要显示隐藏文件，请在 **“解决方案资源管理器”** 中，单击 **“显示所有文件”**。
 
  不要修改隐藏项目文件。 不支持直接更改这些文件，否则可能损坏你的项目。 每当文档中发生某些更改时，就会重新生成隐藏的项目文件。 如果你对隐藏的项目文件进行手动更改，这些更改将在下次文件重新生成时丢失。

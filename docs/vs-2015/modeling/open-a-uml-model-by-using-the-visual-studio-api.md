@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f9b02b84644bd748c88e9d08647fa7d57d951b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5baa2168eeae12f1a85fdce0b2981e267dcd6fbc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083876"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>使用 Visual Studio API 打开 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ ms.locfileid: "58931887"
   
  如果你只想读取程序代码中的模型而不使其对用户可见，你可以使用以下方法：  
   
--   Visual Studio 模型总线允许你访问他们中的模型和元素，并提供一种在模型间建立连接的标准方法。 有关详细信息，请参阅[与其他模型和工具集成 UML 模型](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
+- Visual Studio 模型总线允许你访问他们中的模型和元素，并提供一种在模型间建立连接的标准方法。 有关详细信息，请参阅[与其他模型和工具集成 UML 模型](../modeling/integrate-uml-models-with-other-models-and-tools.md)。  
   
--   你可以在只读模式下打开某个模型。 有关详细信息，请参阅[读取程序代码中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
+- 你可以在只读模式下打开某个模型。 有关详细信息，请参阅[读取程序代码中的 UML 模型](../modeling/read-a-uml-model-in-program-code.md)。  
   
-##  <a name="Showing"></a> 在 Visual Studio 中打开模型和关系图  
+## <a name="Showing"></a> 在 Visual Studio 中打开模型和关系图  
  若要在用户界面中打开某个模型，请使用标准 Visual Studio API `EnvDTE.DTE`。 有两个有用的强制转换，你可以在建模项目项上执行：  
   
 - 如果项目是建模项目，并且已在当前 AppDomain 中加载该项目，则 `EnvDTE.Project` 可以在 `IModelingProject` 间来回转换。  

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040711"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开可用于获取和设置在运行时的功能区控件的属性的强类型化的对象模型。 例如，您可以动态填充菜单控件，或显示和隐藏控件根据上下文。 向功能区，但只能在功能区加载 Office 应用程序之前，还可以添加选项卡、 组和控件。 有关信息，请参阅[设置属性变为只读](#SettingReadOnlyProperties)。
@@ -26,21 +26,21 @@ ms.locfileid: "56601031"
 
  此功能区对象模型包含主要[功能区类](#RibbonClass)，[功能区事件](#RibbonEvents)，并[功能区控件类](#RibbonControlClasses)。
 
-##  <a name="RibbonClass"></a> 功能区类
+## <a name="RibbonClass"></a> 功能区类
  添加一个新**功能区 （可视化设计器）** Visual Studio 将添加到项目，项**功能区**类到你的项目。 **功能区**类继承自<xref:Microsoft.Office.Tools.Ribbon.RibbonBase>类。
 
  此类显示为功能区代码文件和功能区设计器代码文件之间拆分的分部类。
 
-##  <a name="RibbonEvents"></a> 功能区事件
+## <a name="RibbonEvents"></a> 功能区事件
  **功能区**类包含以下三个事件：
 
-|事件|描述|
+|Event|描述|
 |-----------|-----------------|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Load>|当 Office 应用程序加载功能区自定义项时引发。 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>事件处理程序会自动添加到功能区代码文件。 使用此事件处理程序运行时在功能区加载自定义代码。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|您可以在功能区自定义项的缓存映像时在功能区加载。 如果您编写代码以缓存此事件处理程序中的功能区映像，可以获取略微的性能提升。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>。|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|功能区实例关闭时引发。|
 
-##  <a name="RibbonControlClasses"></a> 功能区控件
+## <a name="RibbonControlClasses"></a> 功能区控件
  <xref:Microsoft.Office.Tools.Ribbon>命名空间包含您在中看到每个控件的类型**Office 功能区控件**组**工具箱**。
 
  下表显示每个类型`Ribbon`控件。 每个控件的说明，请参阅[功能区概述](../vsto/ribbon-overview.md)。
@@ -85,11 +85,11 @@ ms.locfileid: "56601031"
 |获取中的项<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>， <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>，或<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> 控件。|使用项目属性。|
 |将项添加到<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>， <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>，或<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>控件。|使用项目属性。|
 |将控件添加到<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>。|使用项目属性。<br /><br /> 若要将控件添加到<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>功能区加载到 Office 应用程序后，必须设置<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A>属性设置为**true**功能区加载到 Office 应用程序之前。 有关信息，请参阅[设置属性变为只读](#SettingReadOnlyProperties)。|
-|获取选定的项的<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 或 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|使用 SelectedItem 属性。 有关<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，使用<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>属性。|
+|获取选定的项的<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，<br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>或<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>。|使用 SelectedItem 属性。 有关<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>，使用<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Text%2A>属性。|
 |获取组<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>。|使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A> 属性。|
 |指定行和列中显示的数字<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>。|使用<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A>和<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A>属性。|
 
-##  <a name="SettingReadOnlyProperties"></a> 设置变为只读的属性
+## <a name="SettingReadOnlyProperties"></a> 设置变为只读的属性
  某些属性仅在功能区加载之前设置。 有以下三个位置设置这些属性：
 
 - 在 Visual Studio**属性**窗口。
@@ -126,7 +126,7 @@ ms.locfileid: "56601031"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> 变为只读的属性
+### <a name="ReadOnlyProperties"></a> 变为只读的属性
  下表显示只能在功能区加载之前设置的属性。
 
 > [!NOTE]
@@ -168,7 +168,7 @@ ms.locfileid: "56601031"
 ## <a name="ribbon-control-events"></a>功能区控件事件
  每个控件类包含一个或多个事件。 下表描述了这些事件。
 
-|事件|描述|
+|Event|描述|
 |-----------|-----------------|
 |单击|当单击控件时发生。|
 |TextChanged|当编辑框或组合框的文本更改时发生。|

@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081861"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>调试用户代码仅使用仅我的代码
 
 *仅我的代码*Visual Studio 调试功能的自动步骤是通过对系统、 框架和其他非用户代码的调用。 在中**调用堆栈**窗口中，仅我的代码折叠这些调用 **[外部代码]** 帧。
 
-仅我的代码的工作方式在.NET Framework、 c + + 和 JavaScript 项目。
+仅我的代码的工作方式在.NET Framework 中， C++，和 JavaScript 项目。
 
 ## <a name="BKMK_Enable_or_disable_Just_My_Code"></a>启用或禁用“仅我的代码”
 
@@ -81,25 +81,25 @@ ms.locfileid: "58325326"
 
 ## <a name="BKMK_C___Just_My_Code"></a>C++“仅我的代码”
 
-启动 Visual Studio 2017 版本 15.8，代码仅我的代码中也支持单步执行。 此功能还需要使用[/JMC （仅我的代码的调试）](/cpp/build/reference/jmc)编译器开关。 默认情况下，在 c + + 项目中启用开关。 有关**调用堆栈**窗口和调用堆栈的支持仅我的代码，在不需要 /JMC 开关。
+启动 Visual Studio 2017 版本 15.8，代码仅我的代码中也支持单步执行。 此功能还需要使用[/JMC （仅我的代码的调试）](/cpp/build/reference/jmc)编译器开关。 默认情况下启用了开关C++项目。 有关**调用堆栈**窗口和调用堆栈的支持仅我的代码，在不需要 /JMC 开关。
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> 被归类为用户代码，其中包含用户代码二进制文件的 PDB 必须加载由调试器 (使用**模块**窗口要检查此项)。
 
-对于调用堆栈行为，如在**调用堆栈**窗口中，c + + 中仅我的代码将仅为这些函数视为*非用户代码*:
+对于调用堆栈行为，如在**调用堆栈**窗口中，仅在我的代码C++将仅为这些函数视为*非用户代码*:
 
 - 在其符号文件中去除了源信息的函数。
 - 符号文件指示没有对应于堆栈帧的源文件的函数。
 - 中指定的函数 *\*.natjmc*中的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
 
-仅我的代码在 c + + 中为代码单步执行行为将仅为这些函数*非用户代码*:
+有关代码单步执行行为，仅在我的代码C++会考虑仅为这些函数*非用户代码*:
 
 - 为其相应的 PDB 文件尚未加载在调试器中的函数。
 - 中指定的函数 *\*.natjmc*中的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
 
 > [!NOTE]
-> 有关代码单步执行支持仅我的代码中，c + + 代码必须使用编译的 MSVC 编译器在 Visual Studio 15.8 预览版 3 或更高版本，并且必须启用 /JMC 编译器开关 （默认情况下已启用）。 有关其他详细信息，请参阅[自定义 c + + 调用堆栈和代码单步执行行为](#BKMK_CPP_Customize_call_stack_behavior))，这[博客文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 对于使用较旧的编译器编译的代码 *.natstepfilter*文件是唯一的方法自定义代码单步执行，这是独立于仅我的代码。 请参阅[自定义 c + + 单步执行行为](#BKMK_CPP_Customize_stepping_behavior)。
+> 代码单步执行中的支持仅我的代码，C++必须使用在 Visual Studio 15.8 Preview 3 或更高版本的 MSVC 编译器编译代码，必须启用 /JMC 编译器开关 （默认情况下已启用）。 有关其他详细信息，请参阅[自定义C++调用堆栈和代码单步执行行为](#BKMK_CPP_Customize_call_stack_behavior))，这[博客文章](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/)。 对于使用较旧的编译器编译的代码 *.natstepfilter*文件是唯一的方法自定义代码单步执行，这是独立于仅我的代码。 请参阅[自定义C++单步执行行为](#BKMK_CPP_Customize_stepping_behavior)。
 
-<a name="BKMK_CPP_Stepping_behavior"></a> 在 c + + 调试：
+<a name="BKMK_CPP_Stepping_behavior"></a> 在C++调试：
 
 - **调试** > **单步执行**(或**F11**) 非用户代码的步骤的代码到下一行用户代码。
 - **调试** > **单步跳出**(或**Shift**+**F11**) 非用户代码运行到下一行用户代码。
@@ -110,9 +110,9 @@ ms.locfileid: "58325326"
 
 如果调试器遇到异常时，它将停止的异常，不管它们是在用户或非用户代码。 **用户未处理**中的选项**异常设置**对话框将被忽略。
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义 c + + 调用堆栈和单步执行行为的代码
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义C++调用堆栈和代码单步执行行为
 
-对于 c + + 项目，您可以指定模块、 源文件和函数**调用堆栈**窗口将视为非用户代码通过指定其 *\*.natjmc*文件。 此自定义也适用于单步执行，如果您使用的最新编译器的代码 (请参阅[c + + ' 仅我的代码](#BKMK_CPP_User_and_non_user_code))。
+有关C++项目中，可以指定模块、 源文件和函数**调用堆栈**窗口将视为非用户代码通过指定其 *\*.natjmc*文件。 此自定义也适用于单步执行，如果您使用的最新编译器的代码 (请参阅[C++仅我的代码](#BKMK_CPP_User_and_non_user_code))。
 
 - 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加 *.natjmc*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
 - 若要指定为单个用户的非用户代码，请添加 *.natjmc*的文件 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*文件夹。
@@ -141,28 +141,28 @@ ms.locfileid: "58325326"
 
  **模块元素属性**
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 模块的完整路径。 可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为 *\3rdParty\UtilLibs* 外部代码的任何驱动器上。|
 |`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|
 
  **文件元素属性**
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|
 
  **函数元素属性**
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 要视为外部代码的函数的完全限定的名称。|
 |`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|
 |`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自定义 c + + 单步执行行为独立于仅我的代码设置
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自定义C++单步执行行为独立于仅我的代码设置
 
-在 c + + 项目中，可以指定要通过为非用户代码中单步函数 *\*.natstepfilter*文件。 中列出的函数 *\*.natstepfilter*文件不是依赖于仅我的代码设置。
+在C++项目中，可以指定要通过为非用户代码中单步函数 *\*.natstepfilter*文件。 中列出的函数 *\*.natstepfilter*文件不是依赖于仅我的代码设置。
 
 - 若要指定非用户代码的所有本地 Visual Studio 用户，请添加 *.natstepfilter*的文件 *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers*文件夹。
 - 若要指定为单个用户的非用户代码，请添加 *.natstepfilter*的文件 *%USERPROFILE%\My Documents\\< Visual Studio 版本\>\Visualizers*文件夹。
@@ -185,14 +185,14 @@ ms.locfileid: "58325326"
 
 ```
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |`Function`|必需。 将一个或多个函数指定为非用户函数。|
-|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|
+|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如：<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|
 |`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|
 |`Action`|必需。 以下区分大小写的值之一：<br /><br /> `NoStepInto`  -告知调试器单步执行函数。<br /> `StepInto`  -告知调试器单步执行函数，重写任何其他`NoStepInto`为匹配的函数。|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”
+## <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”
 
 <a name="BKMK_JS_User_and_non_user_code"></a>JavaScript“仅我的代码”控件通过采用以下分类之一对代码进行分类，来控制单步执行和调用堆栈显示：
 
@@ -205,10 +205,10 @@ ms.locfileid: "58325326"
 JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类：
 
 1. 默认分类中。
-   -   通过将字符串传递给主机提供执行脚本`eval`技术支持部门**MyCode**。
-   -   通过将字符串传递到执行脚本`Function`构造函数是**LibraryCode**。
-   -   框架引用，如 WinJS 或 Azure SDK 中的脚本已**LibraryCode**。
-   -   通过将字符串传递到执行脚本`setTimeout`， `setImmediate`，或`setInterval`functions 是**UnrelatedCode**。
+   - 通过将字符串传递给主机提供执行脚本`eval`技术支持部门**MyCode**。
+   - 通过将字符串传递到执行脚本`Function`构造函数是**LibraryCode**。
+   - 框架引用，如 WinJS 或 Azure SDK 中的脚本已**LibraryCode**。
+   - 通过将字符串传递到执行脚本`setTimeout`， `setImmediate`，或`setInterval`functions 是**UnrelatedCode**。
 
 2. 指定的所有 Visual Studio JavaScript 项目中的分类 *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json*文件。
 

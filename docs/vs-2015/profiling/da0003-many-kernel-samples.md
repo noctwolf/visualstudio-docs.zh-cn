@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076480"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：大量内核样本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ ms.locfileid: "54782629"
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  请考虑使用以下选项之一再次分析应用程序：  
   
--   使用检测方法进行分析。  
+- 使用检测方法进行分析。  
   
--   提高采样率，尝试在用户模式下收集更多样本。
+- 提高采样率，尝试在用户模式下收集更多样本。

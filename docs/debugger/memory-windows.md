@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526680"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061614"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 调试器中的内存窗口 (C#，c + +、 Visual Basic 中， F#)
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>使用 Visual Studio 调试器中的内存窗口 (C#， C++，Visual Basic 中， F#)
 
 在调试期间，**内存**窗口将显示你的应用使用的内存空间。
 
@@ -84,7 +84,7 @@ ms.locfileid: "57526680"
 
 **更改内存内容的格式：**
 
--  在中右击**内存**窗口中，并从上下文菜单中选择所需的格式。
+- 在中右击**内存**窗口中，并从上下文菜单中选择所需的格式。
 
 **更改“内存”窗口中的列数：**
 

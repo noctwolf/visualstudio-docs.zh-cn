@@ -19,23 +19,22 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1a4610f5603ad0197487c198074ad72d1381fda1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3d829a439ec7fb61247e28146e80d4988f04623
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802184"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659691"
 ---
 # <a name="vbc-task"></a>Vbc 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装可生成可执行文件 (.exe)、动态链接库 (.dll) 或代码模块 (.netmodule) 的 vbc.exe。 有关 vbc.exe 的详细信息，请参阅[Visual Basic 命令行编译器](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `Vbc` 任务的参数。  
   
-|参数|说明​​|  
+|参数|描述|  
 |---------------|-----------------|  
 |`AdditionalLibPaths`|可选 `String[]` 参数。<br /><br /> 指定要在其中查找 References 属性中指定的程序集的其他文件夹。|  
 |`AddModules`|可选 `String[]` 参数。<br /><br /> 使编译器让指定文件中的所有类型信息可供当前正在编译的项目使用。 此参数对应于 vbc.exe 编译器的 [/addmodule](http://msdn.microsoft.com/library/fb4b89d4-4926-4f20-868d-427fa28497b2) 开关。|  
@@ -53,7 +52,7 @@ ms.locfileid: "54802184"
 |`Imports`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 从指定项集合导入命名空间。 此参数对应于 vbc.exe 编译器的 [/imports](http://msdn.microsoft.com/library/9a93fb53-c080-497b-bf9b-441022dbbc39) 开关。|  
 |`KeyContainer`|可选 `String` 参数。<br /><br /> 指定加密密钥容器的名称。 此参数对应于 vbc.exe 编译器的 [/keycontainer](http://msdn.microsoft.com/library/6a9bc861-1752-4db1-9f64-b5252f0482cc) 开关。|  
 |`KeyFile`|可选 `String` 参数。<br /><br /> 指定含有加密密钥的文件名。 有关详细信息，请参阅 [/keyfile](http://msdn.microsoft.com/library/ffa82a4b-517a-4c6c-9889-5bae7b534bb8)。|  
-|`LangVersion`|可选 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 指定语言版本，“9”或“10”。|  
+|`LangVersion`|可选 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 指定语言版本，“9”或“10”。|  
 |`LinkResources`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 创建指向输出文件中的 .NET Framework 资源的链接；资源文件不会放入输出文件中。 此参数对应于 vbc.exe 编译器的 [/linkresource](http://msdn.microsoft.com/library/cf4dcad8-17b7-404c-9184-29358aa05b15) 开关。|  
 |`MainEntryPoint`|可选 `String` 参数。<br /><br /> 指定包含 `Sub Main` 过程的类或模块。 此参数对应于 vbc.exe 编译器的 [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0) 开关。|  
 |`ModuleAssemblyName`|可选 `String` 参数。<br /><br /> 指定此模块所属程序集。|  

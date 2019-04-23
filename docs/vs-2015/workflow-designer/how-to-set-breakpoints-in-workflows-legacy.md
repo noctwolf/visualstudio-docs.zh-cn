@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e3f7e4ffefcd6dc8509cf4c787af67c9a03305f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069960"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>如何：在工作流中设置断点（旧版）
 本主题介绍如何在使用旧 [!INCLUDE[wf](../includes/wf-md.md)] 生成的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序中设置断点。 在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 应用程序需要面向 [!INCLUDE[wf2](../includes/wf2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -30,11 +30,11 @@ ms.locfileid: "58937779"
   
  可通过以下方式在工作流设计图面上设置活动断点：  
   
--   右键单击该活动，然后选择**断点 \ 插入断点**。  
+- 右键单击该活动，然后选择**断点 \ 插入断点**。  
   
--   选择活动并按 F9。  
+- 选择活动并按 F9。  
   
--   选择**新断点**从**调试**菜单。  
+- 选择**新断点**从**调试**菜单。  
   
      您也可以使用此选项在调试时设置新断点，这时调试器将在断点处停止。  
   
@@ -43,24 +43,24 @@ ms.locfileid: "58937779"
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>使用“调试”菜单上的“新建断点”选项设置断点  
   
-1.  上**调试**菜单中，选择**新断点**。  
+1. 上**调试**菜单中，选择**新断点**。  
   
-2.  单击**在函数处中断**。  
+2. 单击**在函数处中断**。  
   
      **新断点**对话框随即打开。  
   
-3.  指定的名称中的活动**函数**文本框中，使用以下语法： `QualifiedActivityId[:[FullClassName][:InstanceId]]`。  
+3. 指定的名称中的活动**函数**文本框中，使用以下语法： `QualifiedActivityId[:[FullClassName][:InstanceId]]`。  
   
     > [!NOTE]
     >  （可选） 而不是使用中的活动名称**函数**文本框中，您可以通过指定的工作流活动的绝对路径来设置断点。 例如，假设有一个名为工作流解决方案**WorkflowConsoleApplication1**和名为解决方案中的工作流**Workflow1** ，它使用一个名为活动**Delay1**. 可以使用活动名称**Delay1**或将路径指定为**Delay1:WorkflowConsoleApplication1.Workflow1**或**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**。  
   
-4.  选择**使用 IntelliSense**复选框，以验证函数名称。  
+4. 选择**使用 IntelliSense**复选框，以验证函数名称。  
   
      如果未选中此复选框，则不会执行断点名称验证。  
   
-5.  选择**工作流**从**语言**列表。  
+5. 选择**工作流**从**语言**列表。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
  [调试旧版工作流](../workflow-designer/debugging-legacy-workflows.md)   

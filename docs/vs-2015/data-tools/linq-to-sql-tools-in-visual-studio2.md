@@ -9,16 +9,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7dcb33add9726a341c1b4b92c032be7c289c2d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931154"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656929"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具在 Visual Studio 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 LINQ to SQL 是由 Microsoft 发布的第一个对象关系映射技术。 它适用于基本方案，并继续支持在 Visual Studio 中，但它不再处于积极开发阶段。 使用 LINQ to SQL 时维护的旧版应用程序已在使用它，或在简单的应用程序使用 SQL Server，不需要多表映射。 一般情况下，新的应用程序应使用实体框架时是必需的对象关系映射器层。
 

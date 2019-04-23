@@ -10,23 +10,23 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ec5124144e93d37c0f288450b00865461091253f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0107befa502d13ada7f5fd9e6081dde5f7c1cdc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100139"
 ---
 # <a name="document-position"></a>文档位置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试**文档位置**:  
   
--   提供已知的 IDE 中的源文件的位置的抽象。 对大多数语言今天，文档位置可以认为的源文件中的位置。  
+- 提供已知的 IDE 中的源文件的位置的抽象。 对大多数语言今天，文档位置可以认为的源文件中的位置。  
   
--   描述调试引擎中的源文档中的位置。  
+- 描述调试引擎中的源文档中的位置。  
   
--   由实现[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)接口。  
+- 由实现[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)接口。  
   
 ## <a name="see-also"></a>请参阅  
  [代码上下文](../../extensibility/debugger/code-context.md)   

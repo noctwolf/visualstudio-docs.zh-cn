@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936829"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088673"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>将用例链接到文档和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ ms.locfileid: "58936829"
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>打开与项目关联的文档  
   
--   在用例图上，双击项目形状。  
+- 在用例图上，双击项目形状。  
   
      关联的文档随即打开。  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>若要将用例链接到同一解决方案中的关系图或文件  
   
-1.  绘制关系图（如序列图或活动图）来演示用例的方案。  
+1. 绘制关系图（如序列图或活动图）来演示用例的方案。  
   
-2.  返回到用例图。  
+2. 返回到用例图。  
   
-3.  将关系图或文件从解决方案资源管理器拖动到用例图的空白部分。  
+3. 将关系图或文件从解决方案资源管理器拖动到用例图的空白部分。  
   
-4.  从项目连接到使用大小写使用**依赖项**。  
+4. 从项目连接到使用大小写使用**依赖项**。  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>若要链接到诸如 Word 文档或 PowerPoint 演示文稿等解决方案文件  
   
-1.  向解决方案中添加文档。  
+1. 向解决方案中添加文档。  
   
-    1.  将该 Word 文档移入解决方案所在的 Windows 文件夹。  
+    1. 将该 Word 文档移入解决方案所在的 Windows 文件夹。  
   
-    2.  在解决方案资源管理器中右键单击解决方案，指向**外**，然后单击**现有项**。  
+    2. 在解决方案资源管理器中右键单击解决方案，指向**外**，然后单击**现有项**。  
   
-    3.  导航到 Word 文档，然后单击**添加**。  
+    3. 导航到 Word 文档，然后单击**添加**。  
   
          该 Word 文档将显示在解决方案资源管理器的解决方案文件夹中。  
   
-2.  将 Word 文档从解决方案资源管理器拖动到用例图的空白部分。  
+2. 将 Word 文档从解决方案资源管理器拖动到用例图的空白部分。  
   
      随即显示新项目。  
   
-3.  从项目连接到使用大小写使用**依赖项**。  
+3. 从项目连接到使用大小写使用**依赖项**。  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>若要链接到共享文档、OneNote 元素或网页  
   
-1.  获取的共享元素的 URL。 这可能是，例如，从网络文件路径开始\\\\，或网页上或 Sharepoint URL 开头 http:// 或指向 OneNote 节、 页面上，或段落开头 onenote:。  
+1. 获取的共享元素的 URL。 这可能是，例如，从网络文件路径开始\\\\，或网页上或 Sharepoint URL 开头 http:// 或指向 OneNote 节、 页面上，或段落开头 onenote:。  
   
-2.  在工具箱中，单击**项目**，然后单击用例关系图中。  
+2. 在工具箱中，单击**项目**，然后单击用例关系图中。  
   
-3.  选择新项目后，键入或粘贴到 URL**超链接**属性。  
+3. 选择新项目后，键入或粘贴到 URL**超链接**属性。  
   
     > [!NOTE]
     >  如果你想要提供的文件路径，则最好在常见的工作区中选择一个文件 (从开始\\\\)，或在 Visual Studio 解决方案中的文件。 这可以确保文件路径在其他团队成员的计算机上或该解决方案被移动后仍将有效。 若要将文档如 Word 文档添加到你的解决方案，右键单击解决方案资源管理器中的解决方案，指向**外**，然后单击**现有项**。  

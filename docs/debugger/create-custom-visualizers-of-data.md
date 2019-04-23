@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6342b571d1116d4a67e5ae01268c636ffbba6722
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048939"
 ---
 # <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
  一个*可视化工具*属于[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器用户界面中以适合其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并显示结果，就像在浏览器窗口中显示。 位图可视化工具解释位图结构并显示它所代表的图形。 某些可视化工具可让你还可以查看的数据修改。
@@ -58,27 +58,27 @@ ms.locfileid: "56633689"
 
 自定义可视化工具可能有安全性问题。 请参阅[可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)。
 
-以下步骤进行可视化工具创建了高级概述。 有关详细说明，请参阅[演练： 编写可视化工具C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)或[演练： 用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)。
+以下步骤进行可视化工具创建了高级概述。 有关详细说明，请参阅[演练：编写可视化工具C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)或[演练：在 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)。
 
 ### <a name="to-create-the-debugger-side"></a>创建调试器端
 
 若要在调试器端创建可视化工具用户界面，您可以创建继承的类<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>，并替代<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName>方法来显示的界面。 可以使用<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>要在可视化工具中显示 Windows 窗体、 对话框和控件。
 
-1.  使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 方法在调试器端获取可视化的对象。
+1. 使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 方法在调试器端获取可视化的对象。
 
-1.  创建一个从 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 继承的类。
+1. 创建一个从 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 继承的类。
 
-1.  重写 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以显示接口。 使用<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>方法，以便在界面中显示 Windows 窗体、 对话框和控件。
+1. 重写 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以显示接口。 使用<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>方法，以便在界面中显示 Windows 窗体、 对话框和控件。
 
-4.  将应用<xref:System.Diagnostics.DebuggerVisualizerAttribute>，为其提供要显示的可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
+4. 将应用<xref:System.Diagnostics.DebuggerVisualizerAttribute>，为其提供要显示的可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
 
 ### <a name="to-create-the-debuggee-side"></a>创建调试对象端
 
 使用指定调试对象端代码<xref:System.Diagnostics.DebuggerVisualizerAttribute>。
 
-1.  应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，为它指定可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) 和对象源 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)。 如果省略对象源，可视化工具将使用默认对象源。
+1. 应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，为它指定可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) 和对象源 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)。 如果省略对象源，可视化工具将使用默认对象源。
 
-1.  若要允许编辑，也显示的数据对象的可视化工具，请重写`TransferData`或`CreateReplacementObject`方法从<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。
+1. 若要允许编辑，也显示的数据对象的可视化工具，请重写`TransferData`或`CreateReplacementObject`方法从<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。
 
 ## <a name="see-also"></a>请参阅
 

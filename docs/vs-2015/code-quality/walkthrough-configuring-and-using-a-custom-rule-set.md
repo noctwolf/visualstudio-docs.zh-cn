@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052059"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>演练：配置和使用自定义规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ ms.locfileid: "58934639"
   
  在本演练中，将逐步完成以下过程：  
   
--   创建一个类库。  
+- 创建一个类库。  
   
--   选择**Microsoft 基本设计准则规则**代码分析规则集。  
+- 选择**Microsoft 基本设计准则规则**代码分析规则集。  
   
--   将你自己的代码添加到类。  
+- 将你自己的代码添加到类。  
   
--   运行代码分析。  
+- 运行代码分析。  
   
--   自定义规则集。  
+- 自定义规则集。  
   
--   运行代码分析，请参阅如何设置自定义行为的工作方式的规则。  
+- 运行代码分析，请参阅如何设置自定义行为的工作方式的规则。  
   
 ## <a name="prerequisites"></a>系统必备  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>使用规则集对代码分析  
  首先，创建一个简单的类库。  
@@ -148,9 +148,9 @@ ms.locfileid: "58934639"
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>第二次对 RuleSetSample 项目运行代码分析  
   
-1.  上**分析**菜单上，单击**RuleSetSample 对运行代码分析**。  
+1. 上**分析**菜单上，单击**RuleSetSample 对运行代码分析**。  
   
-2.  在错误列表窗口中，请注意，当您单击**警告**，不会再看到"标识符应正确拼写"规则冲突的 CA1704 警告。  
+2. 在错误列表窗口中，请注意，当您单击**警告**，不会再看到"标识符应正确拼写"规则冲突的 CA1704 警告。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 01e3254c3716cd1c3aaeaa6ca76b33c95f525186
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9799e958903c56f5a3423f86736668a2affd87da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071442"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何：以编程方式搜索和替换文档中的文本
   <xref:Microsoft.Office.Interop.Word.Find> 对象是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 对象的成员，可使用其中任何一个来搜索 Microsoft Office Word 文档中的文本。 替换命令是查找命令的扩展。
@@ -101,20 +101,20 @@ ms.locfileid: "56610627"
 
 ### <a name="to-search-for-and-replace-text-in-documents"></a>在文档中搜索并替换文本
 
-1.  将以下示例代码添加到项目的 `ThisDocument` 或 `ThisAddIn` 类中。
+1. 将以下示例代码添加到项目的 `ThisDocument` 或 `ThisAddIn` 类中。
 
      [!code-vb[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#75)]
      [!code-csharp[Trin_VstcoreWordAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#75)]
 
      <xref:Microsoft.Office.Interop.Word.Find> 类具有 <xref:Microsoft.Office.Interop.Word.Find.ClearFormatting%2A> 方法，而 <xref:Microsoft.Office.Interop.Word.Replacement> 类也具有自己的 <xref:Microsoft.Office.Interop.Word.Replacement.ClearFormatting%2A> 方法。 当执行查找和替换操作时，必须使用这两个对象的清除格式方法。 如果仅在 <xref:Microsoft.Office.Interop.Word.Find> 对象上使用该方法，则可能会在替换文本中得到意外的结果。
 
-2.  使用 <xref:Microsoft.Office.Interop.Word.Find> 对象的 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 方法来替换每个找到的项。 若要指定要替换的项，请使用*替换为*参数。 此参数可能是以下 <xref:Microsoft.Office.Interop.Word.WdReplace> 值之一：
+2. 使用 <xref:Microsoft.Office.Interop.Word.Find> 对象的 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 方法来替换每个找到的项。 若要指定要替换的项，请使用*替换为*参数。 此参数可能是以下 <xref:Microsoft.Office.Interop.Word.WdReplace> 值之一：
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> 将替换所有找到的项。
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceAll> 将替换所有找到的项。
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> 不会替换任何找到的项。
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceNone> 不会替换任何找到的项。
 
-    -   <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> 将替换找到的第一个项。
+    - <xref:Microsoft.Office.Interop.Word.WdReplace.wdReplaceOne> 将替换找到的第一个项。
 
 ## <a name="see-also"></a>请参阅
 - [如何：以编程方式在 Word 中设置搜索选项](../vsto/how-to-programmatically-set-search-options-in-word.md)

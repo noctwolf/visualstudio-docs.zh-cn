@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bfb6270f4b6e5a0c4f65f5490def24c03cad6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101634"
 ---
 # <a name="debugger-security"></a>调试器安全
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "58936223"
 ### <a name="web-services-debugging-security"></a>Web 服务调试安全  
  本地调试要安全一些，但是如果在 Web 服务器上没有安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，则本地调试也许不是实际可行的。 通常，调试 Web 服务都是远程完成的，除非在开发期间，因此远程调试安全的建议也适用于 Web 服务调试。 下面是一些其他最佳做法。 有关详细信息，请参阅 [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
   
--   不要在已受威胁的 Web 服务器上启用调试。  
+- 不要在已受威胁的 Web 服务器上启用调试。  
   
--   在调试前，请确保你知道该 Web 服务器是安全的。 如果你不能确定它是安全的，请不要调试它。  
+- 在调试前，请确保你知道该 Web 服务器是安全的。 如果你不能确定它是安全的，请不要调试它。  
   
--   如果你正在调试对 Internet 公开的 Web 服务，请特别小心。  
+- 如果你正在调试对 Internet 公开的 Web 服务，请特别小心。  
   
 ### <a name="external-components"></a>外部组件  
  请注意与你程序交互的外部组件的信任状态，尤其是如果你没有编写此代码。 还要注意 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或调试器可能使用的组件。  

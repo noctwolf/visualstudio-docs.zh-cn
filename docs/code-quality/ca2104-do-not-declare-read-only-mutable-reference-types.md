@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a033ed83d6d349ac3876a6f11a24570f3ff8f60c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077701"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104:不要声明只读可变引用类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "55945009"
 |是否重大更改|非换行|
 
 > [!NOTE]
-> 规则 CA2104 已过时，将 Visual Studio 的未来版本中删除。
+> 规则 CA2104 已过时，将 Visual Studio 的未来版本中删除。 不将作为实现[分析器](roslyn-analyzers-overview.md)由于所需确定一种类型的实际不变性的复杂分析。
 
 ## <a name="cause"></a>原因
 
@@ -45,7 +45,7 @@ ms.locfileid: "55945009"
 
 可变类型是实例数据可被修改的类型。 <xref:System.Text.StringBuilder?displayProperty=fullName>类是可变引用类型的一个示例。 它包含可以更改的类的实例值的成员。 不可变的引用类型的一个示例是<xref:System.String?displayProperty=fullName>类。 已实例化后，其值可能永远不会更改。
 
-只读修饰符 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)中C#， [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)在 Visual Basic 中，并[const](/cpp/cpp/const-cpp) c + + 中) 在上一个引用类型字段 （或 c + + 中的指针） 会阻止从字段正在替换为引用类型的不同实例。 但是，修饰符不会阻止通过引用类型进行修改的字段的实例数据。
+只读修饰符 ([readonly](/dotnet/csharp/language-reference/keywords/readonly)中C#， [ReadOnly](/dotnet/visual-basic/language-reference/modifiers/readonly)在 Visual Basic 中，和[const](/cpp/cpp/const-cpp)在C++) 的引用类型字段上 (或指针中的C++)防止字段替换为引用类型的不同实例。 但是，修饰符不会阻止通过引用类型进行修改的字段的实例数据。
 
 此规则可能会无意中显示一种类型的冲突的是，实际上，不可变。 在这种情况下，则可以安全地禁止显示警告。
 

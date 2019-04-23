@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934899"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116233"
 ---
 # <a name="debugger-contexts"></a>调试器上下文
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试，调试引擎 (DE) 同时在内运行多个不同的上下文中，按如下所示：  
   
--   代码上下文，其中描述了用于控制程序执行流中的当前位置。  
+- 代码上下文，其中描述了用于控制程序执行流中的当前位置。  
   
--   文档上下文或位置，其中描述了源文档中的当前位置。  
+- 文档上下文或位置，其中描述了源文档中的当前位置。  
   
--   表达式计算上下文描述中的表达式求值将发生的上下文。  
+- 表达式计算上下文描述中的表达式求值将发生的上下文。  
   
 ## <a name="in-this-section"></a>本节内容  
  [代码上下文](../../extensibility/debugger/code-context.md)  

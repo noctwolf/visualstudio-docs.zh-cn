@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f655979e010ea7aa0dafee78648a970cb2e3229
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113737"
 ---
 # <a name="extend-the-status-bar"></a>扩展状态栏
 可用于 Visual Studio 状态栏在 IDE 底部显示的信息。
@@ -32,9 +32,9 @@ ms.locfileid: "56704769"
 
 ### <a name="read-and-write-to-the-status-bar"></a>读取和写入到状态栏
 
-1.  创建一个名为的 VSIX 项目**TestStatusBarExtension**并添加名为的菜单命令**TestStatusBarCommand**。
+1. 创建一个名为的 VSIX 项目**TestStatusBarExtension**并添加名为的菜单命令**TestStatusBarCommand**。
 
-2.  在中*TestStatusBarCommand.cs*，将为命令处理程序方法代码 (`MenuItemCallback`) 以下：
+2. 在中*TestStatusBarCommand.cs*，将为命令处理程序方法代码 (`MenuItemCallback`) 以下：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ ms.locfileid: "56704769"
     }
     ```
 
-3.  编译代码并开始调试。
+3. 编译代码并开始调试。
 
-4.  打开**工具**Visual Studio 的实验实例中的菜单。 单击**调用 TestStatusBarCommand**按钮。
+4. 打开**工具**Visual Studio 的实验实例中的菜单。 单击**调用 TestStatusBarCommand**按钮。
 
      您应该会看到现在读取状态栏中的文本**我们刚刚写入状态栏。** 并将显示该消息框具有相同的文本。
 
 ### <a name="update-the-progress-bar"></a>更新进度条
 
-1.  在此过程中，我们将演示如何初始化和更新进度条。
+1. 在此过程中，我们将演示如何初始化和更新进度条。
 
-2.  打开*TestStatusBarCommand.cs*文件，然后替换`MenuItemCallback`方法使用以下代码：
+2. 打开*TestStatusBarCommand.cs*文件，然后替换`MenuItemCallback`方法使用以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ ms.locfileid: "56704769"
     }
     ```
 
-3.  编译代码并开始调试。
+3. 编译代码并开始调试。
 
-4.  打开**工具**Visual Studio 的实验实例中的菜单。 单击**调用 TestStatusBarCommand**按钮。
+4. 打开**工具**Visual Studio 的实验实例中的菜单。 单击**调用 TestStatusBarCommand**按钮。
 
      您应该会看到现在读取状态栏中的文本**写入进度栏。** 您还会看到进度栏会更新每秒 20 秒的时间。 在此之后清除状态栏，进度栏。
 
 ### <a name="display-an-animation"></a>显示动画
 
-1.  状态栏会显示循环的动画指示一个长时间运行的操作 （例如，生成解决方案中的多个项目）。 如果看不到此动画，请确保您具有正确**工具** > **选项**设置：
+1. 状态栏会显示循环的动画指示一个长时间运行的操作 （例如，生成解决方案中的多个项目）。 如果看不到此动画，请确保您具有正确**工具** > **选项**设置：
 
      转到**工具** > **选项** > **常规**选项卡上，取消选中**自动调整视觉体验基于客户端性能**。 然后检查子选项**启用丰富客户端视觉体验**。 现在应能够生成你的 Visual Studio 的实验实例中的项目时看到动画。
 
      在此过程中，我们显示标准的 Visual Studio 动画表示生成项目或解决方案。
 
-2.  打开*TestStatusBarCommand.cs*文件，然后替换`MenuItemCallback`方法使用以下代码：
+2. 打开*TestStatusBarCommand.cs*文件，然后替换`MenuItemCallback`方法使用以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ ms.locfileid: "56704769"
     }
     ```
 
-3.  编译代码并开始调试。
+3. 编译代码并开始调试。
 
-4.  打开**工具**在实验实例中的 Visual Studio，然后单击菜单**调用 TestStatusBarCommand**。
+4. 打开**工具**在实验实例中的 Visual Studio，然后单击菜单**调用 TestStatusBarCommand**。
 
      当您看到的消息框时，还将看到在状态栏中的动画最右侧。 当您关闭消息框时，动画将消失。

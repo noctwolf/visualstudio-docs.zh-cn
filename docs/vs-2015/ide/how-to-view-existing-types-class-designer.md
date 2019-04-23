@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5eb3891026976c036fb48b16ed5ebfeba909100e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758138"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046489"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：查看现有类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "54758138"
   
  你可以查看本地类型和引用类型。 本地类型存在于当前打开的项目中，是可读/写的。 被引用的类型存在于其他项目中或被引用程序集中，是只读的。  
   
- 若要设计类图上的新类型，请参阅[如何：使用类设计器创建类型](../ide/how-to-create-types-by-using-class-designer.md)。  
+ 若要在类图上设计新类型，请参阅[如何：使用类设计器创建类型](../ide/how-to-create-types-by-using-class-designer.md)。  
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在类图上查看项目中的类型  
   
-1. 从解决方案资源管理器中的项目中，打开现有类图 (.cd) 文件。 如果不存在任何类图，请向项目中添加新类图。 请参阅[如何：向项目中添加类图（类设计器）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
+1. 从解决方案资源管理器中的项目中，打开现有类图 (.cd) 文件。 如果不存在任何类图，请向项目中添加新类图。 请参阅[如何：将类图添加到项目 （类设计器）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
   
 2. 从解决方案资源管理器中的项目中，将源代码文件拖动到类图中。  
   
@@ -41,9 +41,9 @@ ms.locfileid: "54758138"
    >  如果你的解决方案有共享跨多个应用的代码的项目，则可以仅从以下源将文件或代码拖动到类图：  
    > 
    > - 包含图的应用项目  
-   >   -   应用项目导入的共享项目  
-   >   -   引用的项目  
-   >   -   程序集  
+   >   - 应用项目导入的共享项目  
+   >   - 引用的项目  
+   >   - 程序集  
   
     表示在源代码文件中定义的类型的形状即会显示在关系图上你将源代码文件拖动到的位置。  
   
@@ -61,11 +61,11 @@ ms.locfileid: "54758138"
   
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>若要在类图中显示项目的内容  
   
-1.  在“解决方案资源管理器”或“类视图”中，右键单击该项目并选择“视图”，然后选择“查看类图”。  
+1. 在“解决方案资源管理器”或“类视图”中，右键单击该项目并选择“视图”，然后选择“查看类图”。  
   
      即会创建一个自动填充的类图。  
   
 ## <a name="see-also"></a>请参阅  
- [如何：查看类型之间的继承（类设计器）](../ide/how-to-view-inheritance-between-types-class-designer.md)   
- [如何：自定义类图（类设计器）](../ide/how-to-customize-class-diagrams-class-designer.md)   
+ [如何：查看类型之间的继承 （类设计器）](../ide/how-to-view-inheritance-between-types-class-designer.md)   
+ [如何：自定义类图 （类设计器）](../ide/how-to-customize-class-diagrams-class-designer.md)   
  [查看类型和关系（类设计器）](../ide/viewing-types-and-relationships-class-designer.md)

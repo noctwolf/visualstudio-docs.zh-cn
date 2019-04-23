@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087178"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>如何：将对话框启动器添加到功能区组
   您可以向功能区上的任何组添加对话框启动器。 对话框启动器是一组中出现一个小图标。 用户单击此图标可打开相关的对话框或提供更多与该组相关的选项的任务窗格。
@@ -27,11 +27,11 @@ ms.locfileid: "56629945"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>若要将对话框启动器添加到功能区组
 
-1.  选择功能区代码文件 (*.vb*或 *.cs*文件) 中**解决方案资源管理器**。
+1. 选择功能区代码文件 (*.vb*或 *.cs*文件) 中**解决方案资源管理器**。
 
-2.  上**视图**菜单上，单击**设计器**。
+2. 上**视图**菜单上，单击**设计器**。
 
-3.  在功能区设计器中，右键单击任意组，然后单击**添加 DialogBoxLauncher**。
+3. 在功能区设计器中，右键单击任意组，然后单击**添加 DialogBoxLauncher**。
 
      将代码添加到<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick>要打开自定义或内置对话框中的组的事件。
 

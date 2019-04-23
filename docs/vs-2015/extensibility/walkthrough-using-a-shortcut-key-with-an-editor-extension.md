@@ -10,12 +10,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b40c0590b19b555f757af1e0a38481b0b245c07d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085893"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练：将快捷键与编辑器扩展结合使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>定义命令的筛选器  
  命令筛选器是实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，用于处理该命令通过实例化修饰。  
   
-1.  添加一个类文件并将其命名为 `KeyBindingCommandFilter`。  
+1. 添加一个类文件并将其命名为 `KeyBindingCommandFilter`。  
   
-2.  添加下面的 using 语句。  
+2. 添加下面的 using 语句。  
   
     ```csharp  
     using System;  
@@ -63,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  名为 KeyBindingCommandFilter 的类应继承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
+3. 名为 KeyBindingCommandFilter 的类应继承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  在命令链和一个标志，用于表示是否已添加命令筛选器中添加私有字段文本视图、 下一个命令。  
+4. 在命令链和一个标志，用于表示是否已添加命令筛选器中添加私有字段文本视图、 下一个命令。  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -78,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  添加构造函数，用于设置文本视图。  
+5. 添加构造函数，用于设置文本视图。  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -88,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  实现`QueryStatus()`方法，如下所示。  
+6. 实现`QueryStatus()`方法，如下所示。  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -97,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  实现`Exec()`方法，使其向视图添加一个紫色框，如果键入字符 +。  
+7. 实现`Exec()`方法，使其向视图添加一个紫色框，如果键入字符 +。  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -124,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>添加命令筛选器  
  修饰提供程序必须将命令筛选器添加到文本视图。 在此示例中，提供程序实现<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>来侦听文本视图创建事件。 此修饰提供程序还将导出修饰层，它定义的修饰的 Z 顺序。  
   
-1.  在 KeyBindingTestTextViewCreationListener 文件中，添加以下 using 语句：  
+1. 在 KeyBindingTestTextViewCreationListener 文件中，添加以下 using 语句：  
   
     ```csharp  
     using System;  
@@ -139,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  在修饰层定义中，更改名称从 AdornmentLayer **KeyBindingTest**到**PurpleCornerBox**。  
+2. 在修饰层定义中，更改名称从 AdornmentLayer **KeyBindingTest**到**PurpleCornerBox**。  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -148,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  若要获取文本视图适配器，必须导入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。  
+3. 若要获取文本视图适配器，必须导入<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -156,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  更改<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便将其添加`KeyBindingCommandFilter`。  
+4. 更改<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便将其添加`KeyBindingCommandFilter`。  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -165,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  `AddCommandFilter`获取文本视图适配器处理程序，并添加命令筛选器。  
+5. `AddCommandFilter`获取文本视图适配器处理程序，并添加命令筛选器。  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -238,8 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>生成和测试代码  
   
-1.  生成 KeyBindingTest 解决方案并在实验实例中运行它。  
+1. 生成 KeyBindingTest 解决方案并在实验实例中运行它。  
   
-2.  创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入 + 文本视图中的任意位置。  
+2. 创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入 + 文本视图中的任意位置。  
   
      紫色正方形应当出现在文件中的每个 a 字符。

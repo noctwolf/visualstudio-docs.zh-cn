@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046081"
 ---
 # <a name="localizing-vsix-packages"></a>本地化 VSIX 包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ ms.locfileid: "58931411"
   
 #### <a name="to-set-the-include-in-vsix-property"></a>若要设置包括在 Vsix 属性  
   
-1.  在中**解决方案资源管理器**，右键单击 Extension.vsixlangpack 文件，然后单击**属性**。  
+1. 在中**解决方案资源管理器**，右键单击 Extension.vsixlangpack 文件，然后单击**属性**。  
   
-2.  在属性网格中，单击**包含在 Vsix**，并将其值设置为`true`。  
+2. 在属性网格中，单击**包含在 Vsix**，并将其值设置为`true`。  
   
 ## <a name="example"></a>示例  
   

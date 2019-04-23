@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051630"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>演练：使用 XSLT 层次结构
 
@@ -69,7 +69,7 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
     </xsl:stylesheet>
     ```
 
-3.  添加以下*xslinclude.xsl*文件：
+3. 添加以下*xslinclude.xsl*文件：
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常�
     </xsl:stylesheet>
     ```
 
-4.  在指令处添加一个断点`<xsl:include href="xslincludefile.xsl" />`。
+4. 在指令处添加一个断点`<xsl:include href="xslincludefile.xsl" />`。
 
-5.  开始调试。
+5. 开始调试。
 
-6.  当调试器在指令处停止时`<xsl:include href="xslincludefile.xsl" />`，按**单步执行**按钮。 可以在引用的样式表中继续调试。 该层次结构可见，并且设计器显示正确的路径。
+6. 当调试器在指令处停止时`<xsl:include href="xslincludefile.xsl" />`，按**单步执行**按钮。 可以在引用的样式表中继续调试。 该层次结构可见，并且设计器显示正确的路径。
 
 ## <a name="see-also"></a>请参阅
 

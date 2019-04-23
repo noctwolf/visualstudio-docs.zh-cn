@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769218"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668114"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。  
   
 ## <a name="task-parameters"></a>任务参数  
@@ -96,11 +95,11 @@ ms.locfileid: "54769218"
   
    指定一个位置，以供引导程序查找要安装的安装必备组件。 此参数可以具有下列值：  
   
-  - `HomeSite`：指示必备组件正由组件供应商联系托管。  
+  - `HomeSite`：指示必备组件正由组件供应商托管。  
   
   - `Relative`：指示必备组件位于应用程序的同一位置。  
   
-  - `Absolute`：指示所有组件在集中式 URL 处找到。 此值应与 `ComponentsUrl` 输入参数结合使用。  
+  - `Absolute`：指示所有组件都可在集中式 URL 处找到。 此值应与 `ComponentsUrl` 输入参数结合使用。  
   
     如果未指定 `ComponentsLocation`，则默认情况下使用 `HomeSite`。  
   

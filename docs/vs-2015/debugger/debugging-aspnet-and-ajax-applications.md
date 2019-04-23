@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116779"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>调试 ASP.NET 和 AJAX 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序类似于调试 Windows 窗体或任何其他 Windows 应用程序，因为这两种应用程序都涉及到控件和事件。 但是，Web 应用程序与 Windows 应用程序之间还有一些基本差异：  
   
--   在 Web 应用程序中跟踪状态更为复杂。  
+- 在 Web 应用程序中跟踪状态更为复杂。  
   
--   在 Windows 应用程序中，要调试的代码几乎全部位于一个位置；而在 Web 应用程序中，该代码可以分别位于客户端和服务器上。 虽然 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码全都在服务器上，但在客户端上可能还有 JavaScript 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 代码。  
+- 在 Windows 应用程序中，要调试的代码几乎全部位于一个位置；而在 Web 应用程序中，该代码可以分别位于客户端和服务器上。 虽然 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码全都在服务器上，但在客户端上可能还有 JavaScript 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 代码。  
   
 ## <a name="in-this-section"></a>本节内容  
  [调试 ASP.NET 的准备工作](../debugger/preparing-to-debug-aspnet.md)  

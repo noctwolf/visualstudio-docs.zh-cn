@@ -18,17 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbba71e6c1e636abe160036f10c1de1d11004a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059027"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>扩展 TableAdapter 的功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 可以通过将代码添加到 TableAdapter 的分部类文件扩展 TableAdapter 的功能。  
   
  中对 TableAdapter 进行任何更改时重新生成代码，用于定义 TableAdapter**数据集设计器**，或当向导修改 TableAdapter 的配置。 若要防止在 TableAdapter 的重新生成过程中删除你的代码，请将代码添加到 TableAdapter 的分部类文件。  
@@ -42,13 +41,13 @@ ms.locfileid: "58932420"
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要为 TableAdapter 创建分部类  
   
-1.  将新类添加到你的项目，通过转到**项目**菜单并选择**添加类**。  
+1. 将新类添加到你的项目，通过转到**项目**菜单并选择**添加类**。  
   
-2.  将此类命名为 `CustomersTableAdapterExtended`。  
+2. 将此类命名为 `CustomersTableAdapterExtended`。  
   
-3.  选择“添加”。  
+3. 选择“添加”。  
   
-4.  该代码将替换为正确的命名空间和你的项目的分部类名称，如下所示：  
+4. 该代码将替换为正确的命名空间和你的项目的分部类名称，如下所示：  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

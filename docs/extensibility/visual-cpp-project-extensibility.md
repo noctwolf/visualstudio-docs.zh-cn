@@ -1,5 +1,5 @@
 ---
-title: Visual c + + 项目扩展性
+title: VisualC++项目扩展性
 ms.date: 01/25/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a524d242f5c3fb146f3446cd0c020b01e130277c
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268733"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660734"
 ---
-# <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
+# <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual StudioC++项目系统可扩展性和工具集集成
 
-Visual c + + 项目系统用于.vcxproj 文件。 它基于[Visual Studio 公共项目系统 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，并提供附加的 c + + 特定扩展点的新工具集、 生成体系结构和目标平台轻松进行集成。
+视觉对象C++项目系统用于.vcxproj 文件。 它基于[Visual Studio 公共项目系统 (CPS)](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md) ，并提供附加的C++轻松集成的新工具集的特定扩展点生成体系结构，并为目标平台。
 
-## <a name="c-msbuild-targets-structure"></a>C + + 的 MSBuild 目标结构
+## <a name="c-msbuild-targets-structure"></a>C++MSBuild 目标结构
 
 所有.vcxproj 文件导都入这些文件：
 
@@ -83,7 +83,7 @@ Visual c + + 项目系统用于.vcxproj 文件。 它基于[Visual Studio 公共
 
 ## <a name="the-vcxproj-import-tree"></a>.Vcxproj 导入树
 
-简化的 Microsoft c + + 属性和目标文件的导入树如下所示：
+Microsoft 的导入的简化的树C++属性和目标文件如下所示：
 
 `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*默认*\\\*.*属性* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*应用程序类型*\\ `$(ApplicationType)`\\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*应用程序类型*\\`$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*ImportAfter*\\*默认*\\\*。*属性*
 
@@ -135,11 +135,11 @@ Windows 桌面项目不定义`$(ApplicationType)`，因此它们只能导入
 
    此文件将确定 Windows SDK 的位置，并定义面向 Windows 的应用程序的某些重要属性。
 
-### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>将特定于工具集的目标集成使用默认的 c + + 生成过程
+### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>将特定于工具集的目标集成，默认值C++生成过程
 
-在定义了默认的 c + + 生成过程*Microsoft.CppCommon.targets*。 存在的目标不调用任何特定的生成工具;它们指定了主构建步骤中，其顺序和依赖项。
+默认值C++中定义生成过程*Microsoft.CppCommon.targets*。 存在的目标不调用任何特定的生成工具;它们指定了主构建步骤中，其顺序和依赖项。
 
-C + + 生成具有三个主要步骤，由以下目标：
+C++生成具有三个主要步骤，由以下目标：
 
 - `BuildGenerateSources`
 
@@ -263,7 +263,7 @@ Microsoft.Cpp.Common.Tasks.dll 实现这些任务：
 
 默认 MSBuild 增量生成目标将使用`Inputs`和`Outputs`属性。 如果你指定它们，MSBuild 会调用目标仅当任何输入的所有输出比更高版本的时间戳。 源代码文件通常包括或导入其他文件和生成工具生成不同的输出，具体取决于工具选项，因为它很难指定所有可能的输入和 MSBuild 目标中的输出。
 
-若要管理此问题，c + + 生成使用另一种技术来支持增量生成。 大多数目标没有指定输入和输出，并因此，始终在生成过程进行。 调用的目标的任务编写所有信息输入，并将输出到*tlog* .tlog 扩展名的文件。 .Tlog 文件由更高版本生成，以检查内容已更改，并且需要重新生成，并且什么是最新状态。 .Tlog 文件也是默认生成最新检查在 IDE 中的唯一来源。
+若要管理此问题，C++生成使用另一种技术来支持增量生成。 大多数目标没有指定输入和输出，并因此，始终在生成过程进行。 调用的目标的任务编写所有信息输入，并将输出到*tlog* .tlog 扩展名的文件。 .Tlog 文件由更高版本生成，以检查内容已更改，并且需要重新生成，并且什么是最新状态。 .Tlog 文件也是默认生成最新检查在 IDE 中的唯一来源。
 
 若要确定所有输入和输出，本机工具任务使用 tracker.exe 并[FileTracker](/dotnet/api/microsoft.build.utilities.filetracker) MSBuild 提供的类。
 
@@ -285,7 +285,6 @@ MSBuild 提供了这些帮助器类读取和写入.tlog 文件：
 [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata)类可用于访问这两个读取和写入.tlog 文件，并确定新的文件不是输出，或缺少输出的输入。 最新检查中使用。
 
 命令行的.tlog 文件包含在生成中使用命令行有关的信息。 它们仅用于增量生成，不是最新检查，因此内部格式由生成它们的 MSBuild 任务。
-
 
 ### <a name="read-tlog-format"></a>阅读的.tlog 格式
 
@@ -333,9 +332,9 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
 
 在 IDE 中，.vcxproj 项目使用一的组 MSBuild 目标，若要从项目中获取的其他信息以及重新生成输出文件。 仅在设计时生成中使用这些目标的某些，但其中的许多用于常规生成和设计时生成。
 
-有关设计时生成的常规信息，请参阅的 CPS 文档[设计时生成](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)。 此文档仅是部分适用于 Visual c + + 项目。
+有关设计时生成的常规信息，请参阅的 CPS 文档[设计时生成](https://github.com/dotnet/project-system/blob/master/docs/design-time-builds.md)。 本文档才一定程度上适用于视觉对象C++项目。
 
-`CompileDesignTime`和`Compile`设计时中所述的目标生成文档的.vcxproj 项目永远不会运行。 Visual c + +.vcxproj 项目使用不同的设计时目标来获取 IntelliSense 信息。
+`CompileDesignTime`和`Compile`设计时中所述的目标生成文档的.vcxproj 项目永远不会运行。 Visual C++ .vcxproj 项目使用不同的设计时目标来获取 IntelliSense 信息。
 
 ### <a name="design-time-targets-for-intellisense-information"></a>IntelliSense 信息的设计时目标
 
@@ -410,15 +409,15 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 @="{83046B3F-8984-444B-A5D2-8029DEE2DB70}"
 ```
 
-## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual Studio IDE 中的 visual c + + 项目扩展性
+## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>VisualC++项目中 Visual Studio IDE 可扩展性
 
-Visual c + + 项目系统基于[VS 项目系统](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，并使用其可扩展性点。 但是，项目层次结构实现是特定于 Visual c + + 并不基于 CPS，因此层次结构可扩展性是限制为项目项。
+视觉对象C++项目系统基于[VS 项目系统](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，并使用其可扩展性点。 但是，项目层次结构实现是特定于视觉对象C++而不基于 CPS，因此层次结构可扩展性空间限制为项目项。
 
 ### <a name="project-property-pages"></a>项目属性页
 
 常规设计信息，请参阅[Framework 多目标的 VC + + 项目](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)。
 
-简单来说，属性页中看到**项目属性**由定义 c + + 项目对话框*规则*文件。 规则文件指定要显示在属性页上，以及如何在项目中保存的位置和文件属性的集。 规则文件是使用 Xaml 格式的.xml 文件。 使用其进行序列化的类型所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 有关使用项目中的规则文件的详细信息，请参阅[属性页 XML 规则文件](/cpp/build/reference/property-page-xml-files)。
+简单来说，属性页中看到**项目属性**对话框C++定义项目*规则*文件。 规则文件指定要显示在属性页上，以及如何在项目中保存的位置和文件属性的集。 规则文件是使用 Xaml 格式的.xml 文件。 使用其进行序列化的类型所述[Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)。 有关使用项目中的规则文件的详细信息，请参阅[属性页 XML 规则文件](/cpp/build/reference/property-page-xml-files)。
 
 必须将规则文件添加到`PropertyPageSchema`项组：
 
@@ -435,7 +434,7 @@ Visual c + + 项目系统基于[VS 项目系统](https://github.com/Microsoft/VS
 
 `Project` | `File` | `PropertySheet`
 
-CPS 支持其他值的上下文类型，但它们不在 Visual c + + 项目中使用。
+CPS 上下文类型支持其他值，但它们未在视觉对象中使用C++项目。
 
 如果该规则应在多个上下文中可见，则使用分号 (**;**) 来分隔的上下文值，如下所示：
 
@@ -479,7 +478,7 @@ CPS 支持其他值的上下文类型，但它们不在 Visual c + + 项目中�
 
 #### <a name="override-a-rule"></a>重写规则
 
-您可能希望您的工具集使用的大多数项目默认规则，而是替换只是一个或多个这些。 例如，假设你只想要更改要显示不同的编译器开关的 C/c + + 规则。 可以提供新规则具有相同名称和显示名称与现有的规则，并将其包含在`PropertyPageSchema`项组的默认 cpp 目标导入之后。 在项目中，使用只有一个具有给定名称的规则和最后一个包含到`PropertyPageSchema`项组 wins。
+您可能希望您的工具集使用的大多数项目默认规则，而是替换只是一个或多个这些。 例如，假设你只想要更改 C /C++规则，以显示不同的编译器开关。 可以提供新规则具有相同名称和显示名称与现有的规则，并将其包含在`PropertyPageSchema`项组的默认 cpp 目标导入之后。 在项目中，使用只有一个具有给定名称的规则和最后一个包含到`PropertyPageSchema`项组 wins。
 
 #### <a name="project-items"></a>项目项
 
@@ -614,7 +613,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="project-cache-and-extensibility"></a>项目缓存和可扩展性
 
-若要使用在 Visual Studio 2017 中，大型 c + + 解决方案时提高性能[项目缓存](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)引入了。 它作为一个填充了项目数据，并随后用于加载项目，而不加载到内存中的 MSBuild 或 CPS 项目的 SQLite 数据库实现。
+若要使用较大时提高性能C++在 Visual Studio 2017 中，解决方案[项目缓存](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)引入了。 它作为一个填充了项目数据，并随后用于加载项目，而不加载到内存中的 MSBuild 或 CPS 项目的 SQLite 数据库实现。
 
 由于存在可用于从缓存加载的.vcxproj 项目没有 CPS 对象，该扩展的 MEF 组件的导入`UnconfiguredProject`或`ConfiguredProject`无法创建。 若要支持可扩展性，Visual Studio 会检测是否一个项目使用 （或可能使用） MEF 扩展时，不使用项目缓存。
 
@@ -636,8 +635,8 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="additional-resources"></a>其他资源
 
-Microsoft 生成系统 ([MSBuild](../msbuild/msbuild.md)) 为项目文件中提供的生成引擎和可扩展的基于 XML 的格式。 您应了解使用 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)和如何[Visual c + + 的 MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)工作原理，若要将 Visual c + + 扩展项目系统。
+Microsoft 生成系统 ([MSBuild](../msbuild/msbuild.md)) 为项目文件中提供的生成引擎和可扩展的基于 XML 的格式。 您应了解使用 basic [MSBuild 概念](../msbuild/msbuild-concepts.md)和如何[视觉对象的 MSBuild C++ ](/cpp/build/reference/msbuild-visual-cpp-overview)若要将视觉对象扩展的工作原理C++项目系统。
 
-Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了扩展 CPS 和 Visual c + + 项目系统使用的 Api。 CPS 如何使用 MEF 的概述，请参阅[CPS，MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem 概述 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了扩展 CPS 和视觉对象所使用的 ApiC++项目系统。 CPS 如何使用 MEF 的概述，请参阅[CPS，MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)中[VSProjectSystem 概述 MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)。
 
-您可以自定义现有的生成系统，以添加生成步骤或新的文件类型。 有关详细信息，请参阅[MSBuild （Visual c + +） 概述](/cpp/build/reference/msbuild-visual-cpp-overview)并[使用项目属性](/cpp/build/working-with-project-properties)。
+您可以自定义现有的生成系统，以添加生成步骤或新的文件类型。 有关详细信息，请参阅[MSBuild (Visual C++) 概述](/cpp/build/reference/msbuild-visual-cpp-overview)并[使用项目属性](/cpp/build/working-with-project-properties)。

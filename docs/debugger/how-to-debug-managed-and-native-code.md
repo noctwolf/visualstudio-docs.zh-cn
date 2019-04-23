@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476002"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856497"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -41,10 +41,10 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 ## <a name="prerequisites"></a>系统必备
 
 必须安装 Visual Studio 并具有下列工作负荷：
-- 使用 C++ 的桌面开发
+- **使用 C++ 的桌面开发**
 - .NET 桌面开发或 .NET Core 跨平台开发，具体取决于你想要创建哪种应用类型。
 
-如果未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 页面，进行免费安装。
+如果未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页面，进行免费安装。
 
 如果已安装 Visual Studio，但没有所需工作负荷，请选择 Visual Studio“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”。 在 Visual Studio 安装程序中，选择所需工作负荷，然后选择“修改”。
 
@@ -55,7 +55,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 1. 打开 Visual Studio 并创建一个项目。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“空项目”，选择“模板”，然后选择“创建新的空项目项目”(C++)。 在出现的对话框中，选择“创建”。 然后，键入名称（如“Mixed_Mode_Debugging”）并单击“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“空项目”，选择“模板”，然后选择“创建新的空项目项目”(C++)。 在出现的对话框中，选择“创建”。 然后，键入名称（如“Mixed_Mode_Debugging”）并单击“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C++”下，选择“其他”，然后在中间窗格中选择“空项目”。 然后，键入名称（如“Mixed_Mode_Debugging”）并单击“确定”。
@@ -132,7 +132,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    键入 Ctrl+Q 以打开搜索框，键入“控制台”，选择“模板”，然后选择“创建新的控制台应用(.NET Framework)项目”(C#)。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“控制台”，选择“模板”，然后选择“创建新的控制台应用(.NET Framework)项目”(C#)。 在出现的对话框中，选择“创建”。
 
     然后，键入名称（如“Mixed_Mode_Calling_App”）并单击“创建”。
     ::: moniker-end
@@ -193,7 +193,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>为 .NET Core 应用配置混合模式调试
 
-在 Visual Studio 2017 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试。 要跟踪本功能的 UI 更新，请查看 [GitHub 问题](https://github.com/dotnet/project-system/issues/1125)。
+从 Visual Studio 2017 开始，在 Visual Studio 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试。 要跟踪本功能的 UI 更新，请查看 [GitHub 问题](https://github.com/dotnet/project-system/issues/1125)。
 
 1. 在“解决方案资源管理器”中展开“属性”，然后打开 launchSettings.json 文件。
 

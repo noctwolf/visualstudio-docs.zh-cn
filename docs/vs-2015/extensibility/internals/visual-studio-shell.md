@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065540"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ ms.locfileid: "58933033"
   
 - 管理某些共享服务，如<xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>，它提供基本外壳程序功能和<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，其中提供了基本窗口化功能。  
   
-- 管理解决方案 (.sln) 文件。 解决方案包含相关项目，类似于在 Visual c + + 6.0 的工作区 (.dsw) 文件的组。  
+- 管理解决方案 (.sln) 文件。 解决方案包含的相关项目，类似于视觉对象中的工作区 (.dsw) 文件组C++6.0。  
   
 - 跟踪命令行程序范围内所选内容、 上下文和货币。 Shell 跟踪以下类型的项：  
   
-  -   当前项目  
+  - 当前项目  
   
-  -   当前项目项的 ItemID 当前 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - 当前项目项的 ItemID 当前 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   有关当前所选内容**属性**窗口或 `SelectionContainer`  
+  - 有关当前所选内容**属性**窗口或 `SelectionContainer`  
   
-  -   UI 上下文 Id 或 CmdUIGuids 控制命令、 菜单和工具栏的可见性  
+  - UI 上下文 Id 或 CmdUIGuids 控制命令、 菜单和工具栏的可见性  
   
-  -   活动窗口、 文档和撤消管理器当前处于活动状态元素  
+  - 活动窗口、 文档和撤消管理器当前处于活动状态元素  
   
-  -   驱动器动态帮助用户上下文属性  
+  - 驱动器动态帮助用户上下文属性  
   
   在 shell 还负责调解安装的 Vspackage 和当前服务之间的通信。 它支持 shell 的核心功能，并使所有的 Vspackage 中集成[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 这些核心功能包括以下各项：  
   

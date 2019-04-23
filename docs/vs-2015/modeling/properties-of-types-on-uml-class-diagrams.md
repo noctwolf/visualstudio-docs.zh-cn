@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062225"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 类图上类型的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "58937772"
 > [!NOTE]
 >  本主题介绍 UML 类图中的类型的属性。 有关详细信息，请参阅下列主题：  
   
--   [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
+- [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
   
--   [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)  
+- [UML 类关系图：指南](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [UML 类图上特性的属性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [UML 类图上特性的属性](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [UML 类图中操作的属性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [UML 类图中操作的属性](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [UML 类图上关联的属性](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [UML 类图上关联的属性](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>属性  
  这些是类、接口或枚举的属性。  

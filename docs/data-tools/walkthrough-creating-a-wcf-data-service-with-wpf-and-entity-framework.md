@@ -1,5 +1,5 @@
 ---
-title: 演练：使用 WPF 和 Entity Framework 创建 WCF Data Service
+title: 演练：通过 WPF 和实体框架创建 WCF 数据服务
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081380"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：使用 WPF 和 Entity Framework 创建 WCF Data Service
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 本演练演示如何创建一个承载于 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序中的简单 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，然后从 Windows 窗体应用程序中访问它。
 
 在本演练中你：
@@ -90,11 +90,11 @@ ms.locfileid: "57223164"
 
 5. 在 **“选择你的数据连接”** 页上执行下列步骤之一：
 
-    -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
+    - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
          或
 
-    -   选择“新建连接”按钮来配置新数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+    - 选择“新建连接”按钮来配置新数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
 6. 如果数据库需要密码，请选择“是，在连接字符串中包含敏感数据”选项按钮，然后选择“下一步”按钮。
 
@@ -154,7 +154,7 @@ ms.locfileid: "57223164"
 
 1. 在菜单栏上依次选择文件，**外** > **新项目**。
 
-2. 在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点中，选择**Windows**节点，然后选择**Windows 窗体应用程序**。
+2. 在中**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，选择**Windows**节点，然后选择**Windows 窗体应用程序**。
 
 3. 在“名称”文本框中，输入 `NorthwindClient`，然后选择“确定”按钮。
 
@@ -289,4 +289,4 @@ ms.locfileid: "57223164"
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [如何：添加、更新或删除 WCF Data Service 引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

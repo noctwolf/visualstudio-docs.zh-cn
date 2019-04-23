@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104988"
 ---
 # <a name="how-to-implement-nested-projects"></a>如何：实现嵌套的项目
 
@@ -24,18 +24,18 @@ ms.locfileid: "56335241"
 
 ## <a name="create-nested-projects"></a>创建嵌套的项目
 
-1.  集成的开发环境 (IDE) 加载父项目的项目文件和启动信息通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>接口。 创建父项目并将其添加到解决方案。
+1. 集成的开发环境 (IDE) 加载父项目的项目文件和启动信息通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>接口。 创建父项目并将其添加到解决方案。
 
     > [!NOTE]
     > 此时，它是太早，父项目来创建嵌套的项目，因为必须创建父项目，然后才能创建子项目的过程中。 遵循此序列中，父项目可以将设置应用于子项目和子项目可以根据需要获取父项目中的信息。 此序列是如果需要在客户端，如源代码管理 (SCC) 和**解决方案资源管理器**。
 
      父项目必须等待<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>项目，它可以创建其嵌套 （子） 之前由 IDE 调用的方法。
 
-2.  IDE 调用`QueryInterface`上的父项目<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>。 如果此调用成功，IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>方法要打开的所有嵌套项目的父项目的父级。
+2. IDE 调用`QueryInterface`上的父项目<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>。 如果此调用成功，IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>方法要打开的所有嵌套项目的父项目的父级。
 
-3.  父项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A>即将创建方法以通知嵌套项目的侦听器。 SCC，例如，侦听这些事件，以知道是否在顺序中发生的解决方案和项目创建过程中的步骤。 如果不按顺序执行步骤，解决方案可能不是与源代码管理正确注册。
+3. 父项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A>即将创建方法以通知嵌套项目的侦听器。 SCC，例如，侦听这些事件，以知道是否在顺序中发生的解决方案和项目创建过程中的步骤。 如果不按顺序执行步骤，解决方案可能不是与源代码管理正确注册。
 
-4.  父项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A>及其子项目的每个方法。
+4. 父项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A>及其子项目的每个方法。
 
      您传递<xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS>到`AddVirtualProject`方法，以指示应将虚拟 （嵌套） 的项目添加到项目窗口中，从生成中排除添加到源代码管理中，依次类推。 `VSADDVPFLAGS` 允许您控制的可见性嵌套的项目，并指示哪些功能是与之相关联。
 
@@ -43,15 +43,15 @@ ms.locfileid: "56335241"
 
      如果没有 GUID，例如当您添加新的嵌套的项目，该解决方案将创建一个项目时将其添加到父。 它负责的父项目以保存该项目在其项目文件中的 GUID。 如果你删除嵌套的项目，还可以删除该项目的 GUID。
 
-5.  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren>父项目的每个子项目的方法。
+5. IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren>父项目的每个子项目的方法。
 
      父项目必须实现`IVsParentProject`如果你想要将嵌套的项目。 但项目永远不会调用的父级`QueryInterface`为`IVsParentProject`即使它具有其下的父项目。 该解决方案处理在调用`IVsParentProject`并实现它后，如果调用`OpenChildren`创建嵌套的项目。 `AddVirtualProjectEX` 始终从调用`OpenChildren`。 它永远不应由父项目保留在层次结构创建事件的顺序调用。
 
-6.  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>子项目的方法。
+6. IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>子项目的方法。
 
-7.  父项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A>方法以通知侦听器已创建了父级的子项目。
+7. 父项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A>方法以通知侦听器已创建了父级的子项目。
 
-8.  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A>父项目之后已打开所有子项目的方法。
+8. IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A>父项目之后已打开所有子项目的方法。
 
      如果已存在，父项目通过调用创建的每个嵌套的项目 GUID `CoCreateGuid`。
 

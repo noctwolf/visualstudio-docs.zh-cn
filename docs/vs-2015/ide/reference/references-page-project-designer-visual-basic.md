@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114361"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ ms.locfileid: "59649142"
 >  当项目系统查找一个程序集引用时，系统通过在以下位置查找，按以下顺序解析引用：  
 > 
 > 1. 项目文件夹。 “显示所有文件”未生效时，解决方案资源管理器中会出现项目文件夹文件。  
->    2.  在“引用路径”对话框中指定的文件夹。  
->    3.  其文件出现在“添加引用”对话框中的文件夹。  
->    4.  项目的 obj 文件夹。 （向项目添加 COM 引用时，可将一个或多个程序集添加到项目的 obj 文件夹中。）  
+>    2. 在“引用路径”对话框中指定的文件夹。  
+>    3. 其文件出现在“添加引用”对话框中的文件夹。  
+>    4. 项目的 obj 文件夹。 （向项目添加 COM 引用时，可将一个或多个程序集添加到项目的 obj 文件夹中。）  
   
  **参考资料**  
  此列表显示项目中的所有引用，包括使用的或未使用的引用。  
@@ -80,11 +80,11 @@ ms.locfileid: "59649142"
  更新用户导入  
  在命名空间列表中选择用户指定的命名空间，在“导入的命名空间”框中键入要替换的名称，然后单击此按钮，更改为新的命名空间。 只有当所选的命名空间是通过使用“添加用户导入”按钮添加到列表中时，按钮才是活动的。 可以添加：  
   
--   类或命名空间，例如 <xref:System.Math?displayProperty=fullName>。  
+- 类或命名空间，例如 <xref:System.Math?displayProperty=fullName>。  
   
--   别名导入，例如 `VB=Microsoft.VisualBasic`。  
+- 别名导入，例如 `VB=Microsoft.VisualBasic`。  
   
--   XML 命名空间，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。  
+- XML 命名空间，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。  
   
 ## <a name="see-also"></a>请参阅  
  [NIB 如何：添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

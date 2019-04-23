@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08ab6ab47ff3c916b2818d9cceac1ee839939a42
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79ae6aee44f720b868e30c831ee4d6aa61c9611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090402"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>如何：向 Word 文档添加 XMLNode 控件
   **重要**设置 Microsoft Word 有关本主题中的信息是提供的以独占方式适合的权益和使用个人和组织用户位于美国州和其领土的外部或使用，或开发运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已由 Microsoft 许可的 Microsoft Word 产品被与 Microsoft Word 中的自定义 XML。 有关 Microsoft Word 此信息可能不读取或使用的个人或组织在美国或其区域使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后，由 Microsoft 已许可的产品运行的程序中;这些产品不将行为与相同产品许可在该日期之前或购买，美国以外的使用许可。
@@ -34,32 +34,32 @@ ms.locfileid: "56638473"
 
 ### <a name="to-add-an-xmlnode-control-to-a-document"></a>若要向文档添加 XMLNode 控件
 
-1.  在 Visual Studio 设计器中，在功能区中，在文档中，单击**开发人员**选项卡。
+1. 在 Visual Studio 设计器中，在功能区中，在文档中，单击**开发人员**选项卡。
 
     > [!NOTE]
     >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
-2.  在中**XML**组中，单击**架构**。
+2. 在中**XML**组中，单击**架构**。
 
      **模板和外接程序**对话框随即打开。
 
-3.  单击**XML 架构**选项卡。
+3. 单击**XML 架构**选项卡。
 
-4.  单击**将架构添加**。
+4. 单击**将架构添加**。
 
      **添加架构**对话框随即打开。
 
-5.  选择包含中的非重复架构元素的 XML 架构**添加架构**对话框中，单击**打开**。
+5. 选择包含中的非重复架构元素的 XML 架构**添加架构**对话框中，单击**打开**。
 
      **架构设置**对话框随即出现。
 
-6.  分配一个别名，或单击**确定**添加不带别名的架构。
+6. 分配一个别名，或单击**确定**添加不带别名的架构。
 
      该架构添加到**添加架构**对话框。
 
-7.  在中**添加架构**对话框中，单击**确定**。
+7. 在中**添加架构**对话框中，单击**确定**。
 
-8.  **XML 结构**任务窗格随即打开。
+8. **XML 结构**任务窗格随即打开。
 
 9. 单击的非重复架构元素**XML 结构**任务窗格，以将其添加到文档。
 

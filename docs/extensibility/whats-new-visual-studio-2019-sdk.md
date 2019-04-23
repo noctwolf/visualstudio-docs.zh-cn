@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daa4203ccdcbce89f1eb09efdd9433210bcbc987
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 4f818d89a51603bf2698e6c1db034f5341f23098
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086555"
 ---
-# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>什么是 Visual Studio 2019 SDK 中的新增功能
+# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Visual Studio 2019 SDK 的新增功能
 
 Visual Studio SDK 的 Visual Studio 2019 具有以下新的和更新功能。
 

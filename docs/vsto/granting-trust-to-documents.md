@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053008"
 ---
 # <a name="grant-trust-to-documents"></a>向文档授予信任
   文档级项目与应用程序级项目具有相同的安全要求：使用证书对清单进行签名，或单击信任提示。 此外，文档或工作簿必须位于指定为受信任位置的目录中。
@@ -35,13 +35,13 @@ ms.locfileid: "56599657"
 ## <a name="security-considerations-for-office-solutions"></a>有关 Office 解决方案的安全注意事项
  在考虑将哪些文件夹添加到受信任的位置时，存在几个安全问题：
 
--   将本地文件夹视为较安全并且隐式受信任。 必须将远程位置（例如，文件共享）指定为受信任的位置。
+- 将本地文件夹视为较安全并且隐式受信任。 必须将远程位置（例如，文件共享）指定为受信任的位置。
 
--   当将某个目录添加到受信任的位置时，此操作将不仅向 Office 解决方案，还向 VBA 和 ActiveX 代码授予完全信任。 出于此原因，根目录并*我的文档*文件夹不应被指定为可信。
+- 当将某个目录添加到受信任的位置时，此操作将不仅向 Office 解决方案，还向 VBA 和 ActiveX 代码授予完全信任。 出于此原因，根目录并*我的文档*文件夹不应被指定为可信。
 
--   尽管通过使用受信任的位置使文档本身受到信任，但仍需要其他权限来信任该自定义项。 可以通过使用证书对清单进行签名、 单击信任提示，或安装的 Office 解决方案授予完全信任的自定义*Program Files*目录。
+- 尽管通过使用受信任的位置使文档本身受到信任，但仍需要其他权限来信任该自定义项。 可以通过使用证书对清单进行签名、 单击信任提示，或安装的 Office 解决方案授予完全信任的自定义*Program Files*目录。
 
--   可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关详细信息，请参阅[如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。
+- 可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关详细信息，请参阅[如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。
 
 ## <a name="see-also"></a>请参阅
 - [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)

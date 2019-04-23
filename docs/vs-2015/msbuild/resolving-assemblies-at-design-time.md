@@ -11,17 +11,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6dca0197ee25bc56f3ab017530baeb842572fc16
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801739"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657098"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在设计时解析程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 当通过“添加引用”对话框的“.NET”选项卡添加对程序集的引用时，引用将指向一个中间引用程序集；所谓中间引用程序集，是指包含所有类型和签名信息但不一定包含任何代码的程序集。 .NET 选项卡列出 .NET Framework 中运行时程序集对应的引用程序集。 此外，它还列出第三方使用的注册 AssemblyFoldersEx 文件夹中运行时程序集所对应的的引用程序集。  
   
 ## <a name="multi-targeting"></a>多目标  

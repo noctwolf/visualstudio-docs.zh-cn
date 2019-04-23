@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106665"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "58931802"
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
 
-1.  找到包含.xsd 文件 （数据集） 的项目。
+1. 找到包含.xsd 文件 （数据集） 的项目。
 
-2.  选择 **.xsd**文件打开数据集。
+2. 选择 **.xsd**文件打开数据集。
 
-3.  右键单击你想要添加代码 （表中的标题栏名称），并选择的数据表**查看代码**。
+3. 右键单击你想要添加代码 （表中的标题栏名称），并选择的数据表**查看代码**。
 
      分部类将创建并在代码编辑器中打开。
 
-4.  添加代码的分部类声明。
+4. 添加代码的分部类声明。
 
      下面的示例显示了将代码添加到 NorthwindDataSet 中 CustomersDataTable 的位置：
 

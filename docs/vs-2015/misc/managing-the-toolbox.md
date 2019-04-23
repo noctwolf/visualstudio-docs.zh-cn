@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054763"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 允许 VSPackage（如编辑器或设计器）管理“工具箱” 的成员资格和外观。  
@@ -27,9 +27,9 @@ ms.locfileid: "58933368"
   
  此支持仅限于编辑器和设计器，并要求：  
   
-1.  实现工厂对象以提供编辑器或设计器实例。 有关实现设计器或编辑器工厂对象的详细信息，请参阅 [Editor Factories](../extensibility/editor-factories.md)。  
+1. 实现工厂对象以提供编辑器或设计器实例。 有关实现设计器或编辑器工厂对象的详细信息，请参阅 [Editor Factories](../extensibility/editor-factories.md)。  
   
-2.  如果存在编辑器或设计器，则将自动激活工具箱选项卡的注册。  
+2. 如果存在编辑器或设计器，则将自动激活工具箱选项卡的注册。  
   
 ## <a name="controlling-the-toolbox"></a>控制工具箱  
  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 提供以下接口，使 VSPackage 能够更好地控制对“工具箱”  的管理方式，对自动支持进行了补充。  

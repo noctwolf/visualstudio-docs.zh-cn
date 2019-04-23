@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612668"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658053"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依赖项&gt;元素 （ClickOnce 应用程序）
 标识应用程序所需的平台或程序集依赖项。
@@ -96,7 +96,7 @@ ms.locfileid: "56612668"
 
  `dependentOS` 支持以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`supportUrl`|可选。 指定依赖于平台的支持 URL。 如果找到所需的平台，将向用户显示此 URL。|
 |`description`|可选。 介绍了用户可读的窗体中所描述的操作系统`dependentOS`元素。|
@@ -107,7 +107,7 @@ ms.locfileid: "56612668"
 ### <a name="os"></a>操作系统
  必需。 此元素是 `osVersionInfo` 元素的子元素。 此元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`majorVersion`|必需。 指定操作系统的主版本号。|
 |`minorVersion`|必需。 指定操作系统的次版本号。|
@@ -122,19 +122,18 @@ ms.locfileid: "56612668"
 
  `dependentAssembly` 具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-----------------------| - |
 | `dependencyType` | 必需。 指定的依赖关系类型。 有效值为 `preprequisite` 和 `install`。 `install`的一部分安装的程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 一个`prerequisite`程序集必须位于全局程序集缓存 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以安装应用程序。 |
 | `allowDelayedBinding` | 必需。 指定是否可以在运行时以编程方式加载程序集。 |
-| `group` | 可选。 如果`dependencyType`属性设置为`install`，指定该仅按需安装的程序集的命名的组。 有关详细信息，请参阅[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果设置为`framework`并`dependencyType`属性设置为`prerequisite`，将该程序集指定为.NET Framework 的一部分。 全局程序集缓存 (GAC) 时不会检查此程序集安装在[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]及更高版本。 |
+| `group` | 可选。 如果`dependencyType`属性设置为`install`，指定该仅按需安装的程序集的命名的组。 有关详细信息，请参见[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果设置为`framework`并`dependencyType`属性设置为`prerequisite`，将该程序集指定为.NET Framework 的一部分。 全局程序集缓存 (GAC) 时不会检查此程序集安装在[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]及更高版本。 |
 | `codeBase` | 时需要`dependencyType`属性设置为`install`。 依赖程序集的路径。 可以是绝对路径或相对路径的清单代码基。 此路径必须是为了使程序集清单是有效的 URI 有效。 |
 | `size` | 时需要`dependencyType`属性设置为`install`。 依赖程序集，以字节为单位的大小。 |
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
  必需。 此元素是 `dependentAssembly` 元素的子元素，并且包含下列元素。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`name`|必需。 标识应用程序的名称。|
 |`version`|必需。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|
@@ -153,16 +152,14 @@ ms.locfileid: "56612668"
 ### <a name="dsigtransform"></a>dsig:Transform
  `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 `dsig:Transform` 元素具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。 |
 
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod
  `dsig:DigestMethod`元素是必需的子`hash`元素。 `dsig:DigestMethod` 元素具有以下属性。
 
-
-| 特性 | 说明 |
+| 特性 | 描述 |
 |-------------| - |
 | `Algorithm` | 用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。 |
 

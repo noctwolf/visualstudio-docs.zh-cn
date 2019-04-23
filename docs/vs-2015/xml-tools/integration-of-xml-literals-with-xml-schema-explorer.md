@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52d0fe19390703f3c5262de1dbcc9a52ff108fe7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935241"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654420"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 文本与 XML 架构资源管理器的集成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Basic 支持 XML 文本，这意味着，您可以直接在 Visual Basic 代码合并 XML 片段。 有关详细信息，请参阅[XML 文本概述](http://go.microsoft.com/fwlink/?LinkId=140325)。  
   
  如果 Visual Basic 项目中的 XSD 文件包括一个 XML 文本，则可以在 XML 架构资源管理器中查看 XML 架构集。 若要查看与 XML 文本关联的架构集，右键单击 XML 文本或导入的 XML 命名空间中的 XML 节点，然后选择**在架构资源管理器中显示**。  

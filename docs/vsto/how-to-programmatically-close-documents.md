@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd5e73a272243aeb2ddc38ea5c2f49bb1b62e6a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca8537e6e28461bfd2e3b3d6d116571d15c04ea5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084435"
 ---
 # <a name="how-to-programmatically-close-documents"></a>如何：以编程方式关闭文档
   可以关闭活动文档，也可以指定关闭某个文档。
@@ -30,7 +30,7 @@ ms.locfileid: "56598357"
 
 ### <a name="to-close-the-active-document-in-a-document-level-customization"></a>关闭文档级自定义项中的活动文档
 
-1.  调用项目中 <xref:Microsoft.Office.Tools.Word.Document.Close%2A> 类的 `ThisDocument` 方法，以关闭与自定义关联的文档。 若要使用以下代码示例，请从 `ThisDocument` 类中运行它。
+1. 调用项目中 <xref:Microsoft.Office.Tools.Word.Document.Close%2A> 类的 `ThisDocument` 方法，以关闭与自定义关联的文档。 若要使用以下代码示例，请从 `ThisDocument` 类中运行它。
 
     > [!NOTE]
     >  此示例将 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 值传递给要关闭的 *SaveChanges* 参数，而无需保存更改或提示用户。
@@ -40,7 +40,7 @@ ms.locfileid: "56598357"
 
 ### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>关闭 VSTO 外接程序中的活动文档
 
-1.  调用 <xref:Microsoft.Office.Interop.Word._Document.Close%2A> 属性的 <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> 方法，以关闭活动文档。 若要使用下面的代码示例，请从项目的 `ThisAddIn` 类中运行它。
+1. 调用 <xref:Microsoft.Office.Interop.Word._Document.Close%2A> 属性的 <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> 方法，以关闭活动文档。 若要使用下面的代码示例，请从项目的 `ThisAddIn` 类中运行它。
 
     > [!NOTE]
     >  此示例将 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 值传递给要关闭的 *SaveChanges* 参数，而无需保存更改或提示用户。
@@ -53,7 +53,7 @@ ms.locfileid: "56598357"
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>关闭按名称指定的文档
 
-1.  将文档名称指定为 <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> 集合的参数，然后调用 <xref:Microsoft.Office.Interop.Word._Document.Close%2A> 方法。 以下代码示例假设在 Word 中打开了名为 **NewDocument** 的文档。
+1. 将文档名称指定为 <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> 集合的参数，然后调用 <xref:Microsoft.Office.Interop.Word._Document.Close%2A> 方法。 以下代码示例假设在 Word 中打开了名为 **NewDocument** 的文档。
 
     > [!NOTE]
     >  此示例将 <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> 值传递给要关闭的 *SaveChanges* 参数，而无需保存更改或提示用户。

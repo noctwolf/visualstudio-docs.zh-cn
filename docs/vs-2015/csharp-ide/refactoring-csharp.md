@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046313"
 ---
 # <a name="refactoring-c"></a>重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "58935420"
   
  Visual C# 上提供以下重构命令**重构**菜单：  
   
--   [提取方法重构 (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [提取方法重构 (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [重命名重构 (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [重命名重构 (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [封装字段重构 (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [封装字段重构 (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [提取接口重构 (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [提取接口重构 (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [移除参数重构 (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [移除参数重构 (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [重新排列参数重构 [C#]](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [重新排列参数重构 [C#]](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>多项目重构  
  Visual Studio 支持多项目重构用于项目的同一解决方案中。 更正文件中引用的重构操作的所有更正这些引用在同一语言的所有项目。 这适用于任何项目到项目引用。 例如，如果已重命名类库类型时引用的类库的控制台应用程序 (使用`Rename`重构操作)，还将更新对该控制台应用程序中的类库类型的引用。  

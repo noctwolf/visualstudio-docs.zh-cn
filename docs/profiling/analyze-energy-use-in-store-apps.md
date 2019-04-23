@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d948234846a3d4f9fe240a6bf30854d3f0c7007
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872041"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790428"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 
@@ -64,6 +64,7 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
 
 有关示例代码，请参阅 Windows SDK 示例 [LoggingSession 示例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。
 
+::: moniker range="vs-2017"
 **向 JavaScript 代码添加标记**
 
 若要添加用户标记，请在代码中要标记的位置添加以下代码：
@@ -75,6 +76,7 @@ if (performance && performance.mark) {
 ```
 
 *markDescription* 是包含要在用户标记工具提示中显示的消息的字符串。
+::: moniker-end
 
 ## <a name="configure-your-environment-for-profiling"></a>配置要分析的环境
  若要获取合理估计值，你需要分析由电池供电的低功率设备上的应用程序的能量使用情况。 由于 Visual Studio 不能在大多数的此类设备上运行，因此你需要使用 Visual Studio 远程工具将 Visual Studio 计算机连接到此类设备。 若要连接到远程设备，需要配置 Visual Studio 项目和此远程设备。 有关详细信息，请参阅[在远程计算机上运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。
@@ -147,11 +149,11 @@ if (performance && performance.mark) {
 
 ## <a name="other-resources"></a>其他资源
 
-- [C#/VB/C++ 和 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 以及 [JavaScript 和 HTML](/previous-versions/windows/apps/hh452983(v=win.10)) 的“连接状态和成本管理”部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。
+- [C#/VB/C++ 和 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 的“连接状态和成本管理”部分介绍了提供网络连接信息的 Windows API，应用程序可以使用这些信息最大程度降低网络通信成本。
 
    使用 UWP 应用的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参阅[在模拟器中运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)
 
-- **“JavaScript 函数计时”** 和 **“CPU 使用量”** 工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/beginners-guide-to-performance-profiling.md)。
+- “CPU 使用情况”工具有助于降低由低效函数导致的 CPU 负载。 请参阅[分析 CPU 使用情况](../profiling/beginners-guide-to-performance-profiling.md)。
 
 ## <a name="see-also"></a>请参阅
 

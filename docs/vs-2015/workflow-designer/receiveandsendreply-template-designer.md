@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 39c8a88a3c0e798734a55aac66136e15d86d7e17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9de3e8446250829d431dcbf33b14effd607ab545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075767"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 模板设计器
 **ReceiveAndSendReply**使用模板来创建一对预配置<xref:System.ServiceModel.Activities.Receive>并<xref:System.ServiceModel.Activities.SendReply>中的活动<xref:System.Activities.Statements.Sequence>作为请求/响应消息交换的一部分而关联的活动在服务器上的模式。  
@@ -25,11 +25,11 @@ ms.locfileid: "58931200"
 ## <a name="the-receiveandsendreply-template"></a>ReceiveAndSendReply 模板  
  添加**ReceiveAndSendReply**模板执行除了创建三个操作<xref:System.ServiceModel.Activities.Receive>并<xref:System.ServiceModel.Activities.SendReply>与活动<xref:System.Activities.Statements.Sequence>活动：  
 
-1.  配置 <xref:System.ServiceModel.Activities.Receive.OperationName%2A> 活动的 <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> 和 <xref:System.ServiceModel.Activities.Receive> 属性。  
+1. 配置 <xref:System.ServiceModel.Activities.Receive.OperationName%2A> 活动的 <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> 和 <xref:System.ServiceModel.Activities.Receive> 属性。  
 
-2.  将 <xref:System.ServiceModel.Activities.SendReply.Request%2A> 活动的 <xref:System.ServiceModel.Activities.Receive> 属性绑定到 <xref:System.ServiceModel.Activities.Send> 活动。  
+2. 将 <xref:System.ServiceModel.Activities.SendReply.Request%2A> 活动的 <xref:System.ServiceModel.Activities.Receive> 属性绑定到 <xref:System.ServiceModel.Activities.Send> 活动。  
 
-3.  创建一个 <xref:System.ServiceModel.Activities.CorrelationHandle> 作为父活动中的一个变量。  
+3. 创建一个 <xref:System.ServiceModel.Activities.CorrelationHandle> 作为父活动中的一个变量。  
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>使用 ReceiveAndSendReply 模板设计器  
  **ReceiveAndSendReply**活动设计器可在**消息传送**类别**工具箱**，这通过单击来访问**工具箱**选项卡中[!INCLUDE[wfd2](../includes/wfd2-md.md)](或者，选择**工具栏**从**视图**菜单或 CTRL + ALT + X。)  
@@ -42,7 +42,6 @@ ms.locfileid: "58931200"
 
 ### <a name="properties-of-sendreply"></a>SendReply 的属性  
  下表列出 <xref:System.ServiceModel.Activities.SendReply> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性还可以在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 设计器图面上进行编辑。  
-
 
 |                               属性名                                | 必需 |                                                                                                                                                                                                                                                                                                                                                      用法                                                                                                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf6e693bf216cedf2734d78ca13662739981f235
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092690"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>如何：将 ListObject 列映射到数据
   将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件绑定到 <xref:System.Data.DataTable>时，可能不希望显示列表中的所有列，或可能具有未绑定到数据的特定列。 调用 <xref:Microsoft.Office.Tools.Excel.ListObject> 方法时，可以映射希望出现在 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 中的列。
@@ -31,17 +31,17 @@ ms.locfileid: "56639890"
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>将数据表映射到列表中的列
 
-1.  在类级创建 <xref:System.Data.DataTable> 。
+1. 在类级创建 <xref:System.Data.DataTable> 。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2.  添加示例列和中的数据`Startup`事件处理程序`Sheet1`类 （在文档级项目中） 或`ThisAddIn`类 （在 VSTO 外接程序项目中）。
+2. 添加示例列和中的数据`Startup`事件处理程序`Sheet1`类 （在文档级项目中） 或`ThisAddIn`类 （在 VSTO 外接程序项目中）。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3.  调用 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法并以列名应显示的顺序传入列表。 列表对象会绑定到新创建<xref:System.Data.DataTable>，但列表对象中列的顺序将不同于它们中的显示的顺序<xref:System.Data.DataTable>。
+3. 调用 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法并以列名应显示的顺序传入列表。 列表对象会绑定到新创建<xref:System.Data.DataTable>，但列表对象中列的顺序将不同于它们中的显示的顺序<xref:System.Data.DataTable>。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -51,7 +51,7 @@ ms.locfileid: "56639890"
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>在映射 ListObject 列时指定未映射的列
 
-1.  调用 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法并以列名应显示的顺序传入列表。 使用空字符串可指示添加未映射的列的位置；在此例中，是介于标题.栏与最后一个名称列之间。
+1. 调用 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 方法并以列名应显示的顺序传入列表。 使用空字符串可指示添加未映射的列的位置；在此例中，是介于标题.栏与最后一个名称列之间。
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]

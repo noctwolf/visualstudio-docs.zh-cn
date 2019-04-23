@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104351"
 ---
 # <a name="evaluating-a-watch-expression"></a>计算监视表达式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58933019"
   
  在此实现中的`IDebugParsedExpression::EvaluateSync`，该表达式进行分析和计算在同一时间。 此实现将执行以下任务：  
   
-1.  分析和计算表达式来生成用于保存的值，其类型的泛型对象。 在 C# 中，这表示为`object`虽然 c + + 中这表示为`VARIANT`。  
+1. 分析和计算表达式来生成用于保存的值，其类型的泛型对象。 在C#，这表示为`object`中时，在C++这以表示`VARIANT`。  
   
-2.  实例化一个类 (称为`CValueProperty`在此示例中)，它实现`IDebugProperty2`接口，并存储在类中要返回的值。  
+2. 实例化一个类 (称为`CValueProperty`在此示例中)，它实现`IDebugProperty2`接口，并存储在类中要返回的值。  
   
-3.  返回`IDebugProperty2`接口从`CValueProperty`对象。  
+3. 返回`IDebugProperty2`接口从`CValueProperty`对象。  
   
 ## <a name="managed-code"></a>托管代码  
  这是一个实现的`IDebugParsedExpression::EvaluateSync`在托管代码中。 帮助器方法`Tokenize`分析到分析树的表达式。 帮助器函数`EvalToken`将令牌转换为一个值。 帮助器函数`FindTerm`以递归方式遍历分析树中，调用`EvalToken`表示值和表达式中应用任何操作 （加或减） 每个节点。  

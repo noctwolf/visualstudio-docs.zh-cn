@@ -3,20 +3,20 @@ title: 创建新项目和解决方案
 description: 本文介绍如何在 Visual Studio for Mac 中创建项目和解决方案
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294261"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856468"
 ---
 # <a name="creating-new-projects-and-solutions"></a>创建新项目和解决方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>使用模板创建新项目和解决方案
 
-可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”，然后依次选择所需平台和所需模板 ****：
+可在任何时间使用预定义的模板创建解决方案。 从 Visual Studio 2019 for Mac 开始，在启动窗口中选择“新建”。 或者，浏览到“文件”>“新建解决方案” ****。 选择所需平台，然后选择所需模板：
 
 ![创建新解决方案](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "51294261"
 
 ## <a name="opening-recent-solutions"></a>打开“最近使用的解决方案”。
 
-Visual Studio 的登录页面显示最近使用的项目列表：
+Visual Studio 的启动窗口显示最近使用的项目列表：
 
 ![欢迎页上的最近使用解决方案部分](media/create-new-projects-recent.png)
 

@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782276"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658612"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“快速启动”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 可以使用“快速启动”快速搜索并对选项、模板和菜单等 IDE 资产执行操作。 不能使用“快速启动”搜索代码和符号。 “快速启动”搜索框位于菜单栏的右上角并且可以通过选择 Ctrl + Q 键进行访问。 只需在框中输入搜索字符串。 若要搜索包含 @ 的字符串，请使用“@@”。  
   
  默认情况下，安装 Visual Studio 时会启用“快速启动”。 在菜单栏中，可以通过依次选择“工具”、“选项”，显示或隐藏“快速启动”。 展开“环境”节点，然后选择“快速启动”。 选中或清除“启用快速启动”复选框。 你还可以启用或禁用此页上的搜索类别。  

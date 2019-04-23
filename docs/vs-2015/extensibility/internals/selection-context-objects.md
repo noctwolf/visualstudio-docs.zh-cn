@@ -11,12 +11,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3824edb97306dd7730c8d57b955afeab6df816a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092183"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58936637"
   
   按以下顺序显示了典型的选定内容跟踪过程。  
   
-1.  IDE 从新打开的窗口检索选定内容上下文，并将其放入全局选定内容上下文。 如果选定内容上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息不会传播到全局上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
+1. IDE 从新打开的窗口检索选定内容上下文，并将其放入全局选定内容上下文。 如果选定内容上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息不会传播到全局上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
   
-2.  通知事件广播到任何请求它们的 VSPackage。  
+2. 通知事件广播到任何请求它们的 VSPackage。  
   
-3.  VSPackage 作用于它执行活动，例如更新层次结构中，重新激活一款工具，或者其他类似任务接收的事件。  
+3. VSPackage 作用于它执行活动，例如更新层次结构中，重新激活一款工具，或者其他类似任务接收的事件。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   

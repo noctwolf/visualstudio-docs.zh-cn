@@ -1,5 +1,5 @@
 ---
-title: 如何： 编辑寄存器值 |Microsoft Docs
+title: 如何：编辑寄存器值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 430ee5d0b36196c85d7c81b63503bfcc471d7664
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075087"
 ---
-# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何： 编辑寄存器值 (C#，c + +、 Visual Basic 中， F#)
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：编辑寄存器值 (C#， C++，Visual Basic 中， F#)
 
 只有在“选项”对话框中的“调试”节点下启用了地址级调试后，“寄存器”窗口才可用。
 
 ### <a name="to-change-the-value-of-a-register"></a>更改寄存器值
 
-1.  在“寄存器”窗口中，使用 Tab 或鼠标可以将插入点移到要更改的值的位置。 在开始键入之前，光标必须位于要覆盖的值之前。
+1. 在“寄存器”窗口中，使用 Tab 或鼠标可以将插入点移到要更改的值的位置。 在开始键入之前，光标必须位于要覆盖的值之前。
 
-2.  键入新值。
+2. 键入新值。
 
     > [!CAUTION]
     >  更改寄存器值（特别是 EIP 和 EBP 寄存器中的值）可能会影响程序的执行。

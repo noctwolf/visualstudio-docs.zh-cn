@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755334"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096447"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,14 +49,14 @@ ms.locfileid: "54755334"
   
   多项目模板的根 .vstemplate 文件不同于单项目模板，表现在以下方面：  
   
-- `VSTemplate` 元素的 `Type` 属性包含值：`ProjectGroup`。 例如:  
+- `VSTemplate` 元素的 `Type` 属性包含值：`ProjectGroup`。 例如：  
   
   ```  
   <VSTemplate Version="2.0.0" Type="ProjectGroup"  
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
   ```  
   
-- `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 .vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如:  
+- `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 .vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如：  
   
   ```  
   <TemplateContent>  
@@ -79,15 +79,15 @@ ms.locfileid: "54755334"
   
 ### <a name="to-create-a-multi-project-template"></a>创建多项目模板  
   
-1.  创建要在多项目模板中包括的项目。  
+1. 创建要在多项目模板中包括的项目。  
   
-2.  创建每个项目的 .vstemplate 文件。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)。  
+2. 创建每个项目的 .vstemplate 文件。 有关详细信息，请参阅[如何：创建项目模板](../ide/how-to-create-project-templates.md)。  
   
-3.  创建根 .vstemplate 文件，使其包含多项目模板的元数据。 有关详细信息，请参阅下一节的第一个示例。  
+3. 创建根 .vstemplate 文件，使其包含多项目模板的元数据。 有关详细信息，请参阅下一节的第一个示例。  
   
-4.  选择要在模板中包含的文件和文件夹，右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹(zip 格式)”。 这些文件和文件夹会压缩到一个 .zip 文件中。  
+4. 选择要在模板中包含的文件和文件夹，右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹(zip 格式)”。 这些文件和文件夹会压缩到一个 .zip 文件中。  
   
-5.  将该 .zip 模板文件放入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板目录。 默认情况下，此目录为 \My Documents\Visual Studio Version\Templates\ProjectTemplates\\。  
+5. 将该 .zip 模板文件放入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板目录。 默认情况下，此目录为 \My Documents\Visual Studio Version\Templates\ProjectTemplates\\。  
   
 ## <a name="example"></a>示例  
  此示例演示一个基本的多项目根 .vstemplate 文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 设置要分配给此项目的名称。 如果不存在 `ProjectName` 特性，则会使用 .vstemplate 文件的名称作为项目名称。  

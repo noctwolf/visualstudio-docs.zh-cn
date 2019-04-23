@@ -23,12 +23,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 392e50b9494d2de17f2d1ac2b0f3c23f1e872fa6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936806"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046144"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>演练：在设计时调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58936806"
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>以命中断点，从即时窗口  
   
-1.  将以下代码粘贴到 Visual Basic 控制台应用程序：  
+1. 将以下代码粘贴到 Visual Basic 控制台应用程序：  
   
     ```  
     Module Module1  
@@ -63,19 +63,19 @@ ms.locfileid: "58936806"
     End Module  
     ```  
   
-2.  在读取时，在行上设置断点`s="Add BreakPoint Here"`。  
+2. 在读取时，在行上设置断点`s="Add BreakPoint Here"`。  
   
-3.  键入以下内容中的**即时**窗口： `?MyFunction<enter>`  
+3. 键入以下内容中的**即时**窗口： `?MyFunction<enter>`  
   
-4.  验证命中断点和调用堆栈准确。  
+4. 验证命中断点和调用堆栈准确。  
   
-5.  上**调试**菜单上，单击**继续**，并验证是否仍处于设计模式。  
+5. 上**调试**菜单上，单击**继续**，并验证是否仍处于设计模式。  
   
-6.  键入以下内容中的**即时**窗口： `?MyFunction<enter>`  
+6. 键入以下内容中的**即时**窗口： `?MyFunction<enter>`  
   
-7.  键入以下内容中的**即时**窗口： `?MySub<enter>`  
+7. 键入以下内容中的**即时**窗口： `?MySub<enter>`  
   
-8.  验证是否命中了断点，并检查静态变量的值`i`中**局部变量**窗口。 它应具有的值为 3。  
+8. 验证是否命中了断点，并检查静态变量的值`i`中**局部变量**窗口。 它应具有的值为 3。  
   
 9. 验证调用堆栈准确。  
   

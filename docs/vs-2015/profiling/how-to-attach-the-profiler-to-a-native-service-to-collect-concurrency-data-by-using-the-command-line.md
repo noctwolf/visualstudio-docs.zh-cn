@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070558"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机服务以收集并发数据
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>如何：Profiler 附加到本机服务以使用命令行收集并发数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具将探查器附加到本机 (C/C++) 服务并使用采样方法收集进程和线程并发数据。  
@@ -47,14 +47,13 @@ ms.locfileid: "54780852"
    > [!NOTE]
    >  大多数服务都需要 **/user** 和 **/crosssession** 选项。  
 
-   |                               选项                               |                                                                     说明​​                                                                      |
+   |                               选项                               |                                                                     描述                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
    | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           指定要向探查器授予访问权限的帐户的可选域和用户名。                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               启用其他登录会话中的进程分析。                                                |
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      指定要在分析期间收集的 Windows 性能计数器。                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500。 |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。       |
-
 
 3. 在命令提示符中键入以下命令以将探查器附加到服务：  
 
@@ -67,9 +66,9 @@ ms.locfileid: "54780852"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
-    |选项|说明​​|  
+    |选项|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
@@ -80,10 +79,10 @@ ms.locfileid: "54780852"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  通过停止服务或在命令提示符中键入以下命令将探查器与目标应用程序分离：  
+1. 通过停止服务或在命令提示符中键入以下命令将探查器与目标应用程序分离：  
 
      键入 **VSPerfCmd /detach**  
 
-2.  在命令提示符下键入以下命令以关闭探查器：  
+2. 在命令提示符下键入以下命令以关闭探查器：  
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)

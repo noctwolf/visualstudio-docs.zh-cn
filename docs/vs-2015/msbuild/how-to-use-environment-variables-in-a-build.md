@@ -13,17 +13,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf043fbaac2e718b108920a61026378545fa5a95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 40b296e33d00e6abf6730c7ec29a1fe9ed8e039b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780968"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067984"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在生成中使用环境变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 在生成项目时，有时经常需要使用非项目文件或构成项目的文件中的信息来设置生成选项。 此信息通常存储在环境变量中。  
   
 ## <a name="referencing-environment-variables"></a>引用环境变量  
@@ -42,7 +41,7 @@ ms.locfileid: "54780968"
   
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供属性的默认值  
   
--   仅当某属性不具有任何值时，使用该属性上的 `Condition` 特性来设置值。 例如，仅在未设置 `ToolsPath` 环境变量时，以下代码才将 `ToolsPath` 属性设置为 c:\tools：  
+- 仅当某属性不具有任何值时，使用该属性上的 `Condition` 特性来设置值。 例如，仅在未设置 `ToolsPath` 环境变量时，以下代码才将 `ToolsPath` 属性设置为 c:\tools：  
   
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
@@ -72,4 +71,4 @@ ms.locfileid: "54780968"
 
 [MSBuild 属性](../msbuild/msbuild-properties1.md)
 
-[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[如何：生成相同的源文件使用不同选项](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

@@ -1,5 +1,5 @@
 ---
-title: 保护 ClickOnce 应用程序 |Microsoft Docs
+title: 保护 ClickOnce 应用程序 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076193"
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58937640"
  默认权限取决于部署初始应用程序版本的位置；应用程序的更新将继承这些权限。 如果将应用程序配置为从 Web 或网络位置检查是否有更新且存在较新的版本，则初始安装可以获得 Internet 或 Intranet 区域的权限，而不是完全信任权限。 如果不想让系统提示用户，系统管理员可以指定一个 ClickOnce 部署策略，将某个特定的应用程序发行者定义为受信任的来源。 对于部署此策略的计算机，系统会自动授予权限而不会提示用户授予权限。 有关详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。 若要配置受信任的应用程序部署，可以将证书安装到计算机或企业级别。 有关详细信息，请参阅[如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。  
   
 ## <a name="code-access-security-policies"></a>代码访问安全性策略  
- 应用程序的权限由中设置[ \<trustInfo > 元素](../deployment/trustinfo-element-clickonce-application.md)应用程序清单中的元素。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会根据项目的 **“安全性”** 属性页上的设置自动生成此信息。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序仅被授予它所请求的特定权限。 例如，文件访问需要完全信任权限时，如果应用程序请求文件访问权限，则它仅被授予文件访问权限，而不会被授予完全信任权限。 在开发 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，你应确保仅请求应用程序需要的特定权限。 在大多数情况下，你可以使用 Internet 区域和本地 Intranet 区域来将你的应用程序限制为部分信任。 有关详细信息，请参阅[如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果应用程序需要自定义权限，则您可以创建一个自定义区域。 有关详细信息，请参阅[如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
+ 应用程序的权限由应用程序清单的 [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md) 元素中的设置决定。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会根据项目的 **“安全性”** 属性页上的设置自动生成此信息。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序仅被授予它所请求的特定权限。 例如，文件访问需要完全信任权限时，如果应用程序请求文件访问权限，则它仅被授予文件访问权限，而不会被授予完全信任权限。 在开发 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，你应确保仅请求应用程序需要的特定权限。 在大多数情况下，你可以使用 Internet 区域和本地 Intranet 区域来将你的应用程序限制为部分信任。 有关详细信息，请参阅[如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果应用程序需要自定义权限，则您可以创建一个自定义区域。 有关详细信息，请参阅[如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
  如果包括应用程序部署区域的默认权限集以外的权限，则会导致在安装或更新时提示最终用户授予权限。 如果不想让系统提示用户，系统管理员可以指定一个 ClickOnce 部署策略，将某个特定的应用程序发行者定义为受信任的来源。 在部署此策略的计算机上，系统会自动授予权限而不会提示用户授予权限。  
   
@@ -79,11 +79,11 @@ ms.locfileid: "58937640"
 ## <a name="deploying-obfuscated-assemblies"></a>部署经过模糊处理的程序集  
  您可能想要使用 Dotfuscator 对应用程序进行模糊处理，以防止他人对代码进行反向工程处理。 但是，程序集模糊处理并未集成到 Visual Studio IDE 或 ClickOnce 部署过程中。 因此，您将需要使用生成后步骤在部署过程以外执行模糊处理。 生成项目之后，您会在 Visual Studio 之外手动执行下列步骤：  
   
-1.  使用 Dotfuscator 执行模糊处理。  
+1. 使用 Dotfuscator 执行模糊处理。  
   
-2.  使用 Mage.exe 或 MageUI.exe 生成 ClickOnce 清单并签名。 有关详细信息，请参阅[Mage.exe （清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)并[MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+2. 使用 Mage.exe 或 MageUI.exe 生成 ClickOnce 清单并签名。 有关详细信息，请参阅[Mage.exe （清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)并[MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
-3.  将文件手动发布（复制）到部署源位置（Web 服务器、UNC 共享或 CD-ROM）。  
+3. 将文件手动发布（复制）到部署源位置（Web 服务器、UNC 共享或 CD-ROM）。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

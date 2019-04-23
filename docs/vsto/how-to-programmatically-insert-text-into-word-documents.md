@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654017"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060626"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式向 Word 文档中插入文本
   向 Microsoft Office Word 文档中插入文本主要有三种方式：
 
--   在范围中插入文本。
+- 在范围中插入文本。
 
--   将范围中的文本替换为新文本。
+- 将范围中的文本替换为新文本。
 
--   使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Selection> 方法在光标或所选位置处插入文本。
+- 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Selection> 方法在光标或所选位置处插入文本。
 
 > [!NOTE]
 >  你还可以将文本插入到内容控件和书签中。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)并[Bookmark 控件](../vsto/bookmark-control.md)。
@@ -42,7 +42,7 @@ ms.locfileid: "56654017"
 
 ### <a name="to-insert-text-in-a-range"></a>若要在范围中插入文本
 
-1.  在文档开头指定一个范围，并插入文本 **New Text**。
+1. 在文档开头指定一个范围，并插入文本 **New Text**。
 
      下面的代码示例可用于文档级自定义项。
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654017"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  选择 <xref:Microsoft.Office.Interop.Word.Range> 对象，该对象已从一个字符长度扩展到了插入文本的长度。
+2. 选择 <xref:Microsoft.Office.Interop.Word.Range> 对象，该对象已从一个字符长度扩展到了插入文本的长度。
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654017"
 
 ### <a name="to-replace-text-in-a-range"></a>若要替换范围中的文本
 
-1.  创建一个 <xref:Microsoft.Office.Interop.Word.Range> 对象，该对象包含文档中的前 12 个字符。
+1. 创建一个 <xref:Microsoft.Office.Interop.Word.Range> 对象，该对象包含文档中的前 12 个字符。
 
      下面的代码示例可用于文档级自定义项。
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654017"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  将这些字符替换为字符串 **New Text**。
+2. 将这些字符替换为字符串 **New Text**。
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  选择范围。
+3. 选择范围。
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

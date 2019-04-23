@@ -1,5 +1,5 @@
 ---
-title: 演练： 捕获图形信息 |Microsoft Docs
+title: 演练：捕获图形信息 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092248"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>演练：捕获图形信息
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断从 Direct3D 应用手动捕获图形信息。
 
  此演练阐释了以下任务：
 
--   将图形诊断挂接到你的应用
+- 将图形诊断挂接到你的应用
 
--   捕获图形信息
+- 捕获图形信息
 
 ## <a name="capturing-graphics-information"></a>捕获图形信息
  若要使用图形诊断工具，首先，你必须捕获它所依赖的图形信息。 若要启用捕获，请使用“启动诊断”  命令将图形诊断在启动时挂接到你的应用。
@@ -56,7 +56,7 @@ ms.locfileid: "56711769"
 ## <a name="next-steps"></a>后续步骤
  本演练演示了如何手动捕获图形信息。 下一步，请考虑此选项：
 
--   了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](overview-of-visual-studio-graphics-diagnostics.md)。
+- 了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](overview-of-visual-studio-graphics-diagnostics.md)。
 
 ## <a name="see-also"></a>请参阅
 - [Capturing Graphics Information](capturing-graphics-information.md)

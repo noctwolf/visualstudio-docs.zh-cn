@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 59c7e42e005e423a27adc7676a05ebc03cd068d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116194"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58931589"
   
  请注意，创建 Dll 作为其输出的这些项目类型已被分组到[调试 DLL 项目](../debugger/debugging-dll-projects.md)由于它们共享的常见功能。  
   
-##  <a name="BKMK_In_this_topic"></a> 在本主题中  
+## <a name="BKMK_In_this_topic"></a> 在本主题中  
  [建议的属性设置](#BKMK_Recommended_Property_Settings)  
   
  [Win32 项目](#BKMK_Win32_Projects)  
@@ -45,10 +45,10 @@ ms.locfileid: "58931589"
   
   [Windows 窗体应用程序 (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
-##  <a name="BKMK_Recommended_Property_Settings"></a>建议的属性设置  
- 应以相同的方式设置所有非托管调试方案的某些属性。 以下各表显示了建议的属性设置。 未在此处列出的设置可能有各种不同的非托管项目类型。 有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
+## <a name="BKMK_Recommended_Property_Settings"></a>建议的属性设置  
+ 应以相同的方式设置所有非托管调试方案的某些属性。 以下各表显示了建议的属性设置。 未在此处列出的设置可能有各种不同的非托管项目类型。 有关详细信息，请参阅[的项目设置C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
   
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>配置属性&#124;C/c + +&#124;优化节点  
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>配置属性&#124;C /C++ &#124;优化节点  
   
 |属性名|设置|  
 |-------------------|-------------|  
@@ -62,22 +62,22 @@ ms.locfileid: "58931589"
   
  [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Win32_Projects"></a>Win32 项目  
+## <a name="BKMK_Win32_Projects"></a>Win32 项目  
  Win32 应用程序是用 C 或 C++ 编写的传统 Windows 程序。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序非常简单。  
   
  Win32 应用程序包括 MFC 应用程序和 ATL 项目。 Win32 应用程序使用 Windows API，也可使用 MFC 或 ATL，但不使用公共语言运行时 (CLR)。 但是，它们可以调用使用 CLR 的托管代码。  
   
  下面的过程解释如何在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试 Win32 项目。 调试 Win32 应用程序的另一种方法是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之外启动并附加到该应用程序。 有关详细信息，请参阅[附加到运行中的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
-###  <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>调试 C 或 C++ Win32 应用程序  
+### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a>调试 C 或 C++ Win32 应用程序  
   
-1.  在 Visual Studio 中打开项目。  
+1. 在 Visual Studio 中打开项目。  
   
-2.  在“调试”菜单上选择“启动”。  
+2. 在“调试”菜单上选择“启动”。  
   
-3.  使用中讨论的技术进行调试[调试器基础知识](../debugger/debugger-basics.md)。  
+3. 使用中讨论的技术进行调试[调试器基础知识](../debugger/debugger-basics.md)。  
   
-###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a>手动设置调试配置  
+### <a name="BKMK_To_manually_set_a_Debug_configuration"></a>手动设置调试配置  
   
 1. 在“视图”菜单上，单击“属性页”。  
   
@@ -95,18 +95,18 @@ ms.locfileid: "58931589"
   
 6. 打开“链接器”节点，然后选择“调试”。 在第一个“常规”行的下拉列表中，选择“是(/DEBUG)”。 调试期间应始终这样设置。  
   
-   有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+   有关详细信息，请参阅[的项目设置C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
    [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows 窗体应用程序 (.NET)  
+## <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows 窗体应用程序 (.NET)  
  “Windows 窗体应用程序 (.NET)”模板可创建 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Windows 窗体应用程序。 有关详细信息，请参阅[如何：创建一个 Windows 应用程序项目](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序类似于在托管的 Windows 窗体应用程序中进行调试。  
   
  用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 如有必要，可在“\<项目名称> 属性页”对话框中更改这些设置。 有关详细信息，请参阅[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。  
   
- 有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+ 有关详细信息，请参阅[的项目设置C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
  调试 Windows 窗体应用程序的另一种方法是从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部启动应用程序并附加到它上面。 有关详细信息，请参阅[附加到正在运行的程序或多个程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   

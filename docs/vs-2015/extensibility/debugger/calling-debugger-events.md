@@ -10,12 +10,12 @@ ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6a5e75ab97f44efd52ef648791658ded34d085
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f162affe2324afaa8fb1d506c3177311386bfc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110344"
 ---
 # <a name="calling-debugger-events"></a>调用调试器事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ ms.locfileid: "58935358"
 ## <a name="discussion"></a>讨论  
  若要了解的调试引擎 (DE) 和会话调试管理器 (SDM) 之间的调用模式，以下内容代表典型的调试会话中发生的事件的调用顺序：  
   
-1.  [附加和分离到程序](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
+1. [附加和分离到程序](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
-2.  [启动调试器](../../extensibility/debugger/launching-the-debugger.md)  
+2. [启动调试器](../../extensibility/debugger/launching-the-debugger.md)  
   
-3.  [终止程序](../../extensibility/debugger/terminating-a-program.md)  
+3. [终止程序](../../extensibility/debugger/terminating-a-program.md)  
   
-4.  [创建断点](../../extensibility/debugger/creating-a-breakpoint.md)  
+4. [创建断点](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [当断点绑定或成为取消绑定](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5. [当断点绑定或成为取消绑定](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
-6.  [断点错误](../../extensibility/debugger/breakpoint-errors.md)  
+6. [断点错误](../../extensibility/debugger/breakpoint-errors.md)  
   
-7.  [命中断点](../../extensibility/debugger/hitting-a-breakpoint.md)  
+7. [命中断点](../../extensibility/debugger/hitting-a-breakpoint.md)  
   
-8.  [删除断点](../../extensibility/debugger/deleting-a-breakpoint.md)  
+8. [删除断点](../../extensibility/debugger/deleting-a-breakpoint.md)  
   
 9. [进入中断模式](../../extensibility/debugger/entering-break-mode.md)  
   

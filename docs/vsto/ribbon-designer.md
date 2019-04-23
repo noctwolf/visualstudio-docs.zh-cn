@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867255"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103631"
 ---
 # <a name="ribbon-designer"></a>功能区设计器
   功能区设计器是一个可视化设计画布。 使用功能区设计器将自定义选项卡、 组和控件添加到 Microsoft Office 应用程序的功能区。
@@ -40,11 +40,11 @@ ms.locfileid: "54867255"
 
  若要打开功能区设计器，添加**功能区 （可视化设计器）** 到你的项目项。 然后可以执行以下任务使用的设计工具：
 
--   [设计功能区布局](#DesigningRibbonLayout)
+- [设计功能区布局](#DesigningRibbonLayout)
 
--   [处理事件并设置控件属性](#HandleEventsSetProperties)
+- [处理事件并设置控件属性](#HandleEventsSetProperties)
 
--   [将控件添加到 Backstage 视图](#CustomizingMicrosoftOfficeButton)
+- [将控件添加到 Backstage 视图](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  将使用功能区设计器无法完成某些任务。 有关这些任务以及如何实现的详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。
@@ -64,7 +64,7 @@ ms.locfileid: "54867255"
 
   如果已有**功能区 （可视化设计器）** 项从另一个项目，您可以重复使用它在当前项目中使用**添加现有项**对话框。
 
-##  <a name="DesigningRibbonLayout"></a> 设计功能区
+## <a name="DesigningRibbonLayout"></a> 设计功能区
  有三种方法打开功能区设计器：
 
 - 在中**解决方案资源管理器**，双击功能区代码文件。
@@ -98,7 +98,7 @@ ms.locfileid: "54867255"
 
    您不能将控件从一个选项卡到另一个功能区上。 如果你想要将控件移动到另一个选项卡，则必须使用**剪切**命令移除该控件从一个选项卡，然后再将粘贴另一个选项卡上的控件。如果执行剪切的控件，并将其粘贴，事件处理程序将停止工作。 你可以重新连接中的事件处理程序**属性**窗口。 有关详细信息，请参阅[属性窗口](../ide/reference/properties-window.md)。
 
-###  <a name="AddTabToRibbon"></a> 向功能区添加自定义选项卡
+### <a name="AddTabToRibbon"></a> 向功能区添加自定义选项卡
  有三种方法可以向功能区添加自定义选项卡：
 
 - 添加从选项卡**工具箱**。
@@ -114,11 +114,11 @@ ms.locfileid: "54867255"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>从功能区中删除自定义选项卡
  有三种方法可以从功能区中删除自定义选项卡：
 
--   右键单击设计器中，然后依次**删除功能区选项卡**。
+- 右键单击设计器中，然后依次**删除功能区选项卡**。
 
--   在中**命令**窗格**属性**窗口中，单击**删除功能区选项卡**。
+- 在中**命令**窗格**属性**窗口中，单击**删除功能区选项卡**。
 
--   打开**Tab 集合编辑器**，选择选项卡，然后单击**删除**。
+- 打开**Tab 集合编辑器**，选择选项卡，然后单击**删除**。
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>更改功能区上选项卡的位置
  可以更改功能区上的自定义选项卡的顺序。 此外可以将自定义选项卡放置之前或之后在功能区上的内置选项卡。 有关详细信息，请参阅[如何：更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)。
@@ -132,10 +132,10 @@ ms.locfileid: "54867255"
 
  有关如何自定义内置选项卡的详细信息，请参阅[如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。
 
-###  <a name="AddGroupsToTab"></a> 将组添加到选项卡
+### <a name="AddGroupsToTab"></a> 将组添加到选项卡
  组按照逻辑组织功能区上的控件。 将组添加到选项卡。 将所有其他控件添加到组。
 
-###  <a name="AddControlsToGroups"></a> 将控件添加到组
+### <a name="AddControlsToGroups"></a> 将控件添加到组
  将一个或多个控件添加到组。 下表描述了每个控件。
 
 |控件|描述|
@@ -154,7 +154,7 @@ ms.locfileid: "54867255"
 |**SplitButton**|一个具有附加菜单按钮。 拆分按钮可以包含任何以下控件：<br /><br /> -按钮<br />-复选框<br />库<br />-菜单<br />拆分按钮<br />-切换按钮<br />-   Separator<br /><br /> 菜单上，与拆分按钮有其自己的设计图面。 但是，与不同的菜单中，你只能在功能区加载到 Office 应用程序之前更新拆分按钮中的项。 有关如何更新拆分按钮中的项的信息，请参阅[功能区对象模型概述](../vsto/ribbon-object-model-overview.md)。|
 |**ToggleButton**|将出现一个按钮按下或未按下状态。|
 
-##  <a name="HandleEventsSetProperties"></a> 处理事件和设置属性
+## <a name="HandleEventsSetProperties"></a> 处理事件和设置属性
  功能区设计器，可使用在设计时设置控件属性**属性**窗口。 此外，在功能区公开可用于获取和设置在运行时的功能区控件的属性的强类型化的对象模型。
 
  你可以双击要打开该控件的默认事件的事件处理程序的设计器上的任何控件。 可以使用创建的所有其他控件事件的事件处理程序**属性**窗口。
@@ -163,7 +163,7 @@ ms.locfileid: "54867255"
 
  有关处理功能区事件和在运行时设置功能区控件的属性的信息，请参阅[功能区对象模型概述](../vsto/ribbon-object-model-overview.md)。
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> 自定义 Backstage 视图
+## <a name="CustomizingMicrosoftOfficeButton"></a> 自定义 Backstage 视图
  可以使用功能区设计器将控件添加到单击时打开的菜单**文件**选项卡。此菜单称为 Backstage 视图。
 
  使用功能区设计器，无法在内置控件前后放置控件。 内置控件是已出现在 Backstage 视图中的控件。 如果你想要在内置控件前后放置控件，必须使用功能区 XML。 有关详细信息**功能区 (XML)**，请参阅[功能区 XML](../vsto/ribbon-xml.md)。 有关自定义 Backstage 视图的详细信息，请参阅[开发人员的 Office 2010 Backstage 视图简介](http://go.microsoft.com/fwlink/?LinkId=182189)并[自定义开发人员的 Office 2010 Backstage 视图](http://go.microsoft.com/fwlink/?LinkId=182188)。
@@ -172,7 +172,7 @@ ms.locfileid: "54867255"
 
  有关如何将控件添加到 Backstage 视图的信息，请参阅[如何：将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)。
 
-##  <a name="Accessibility"></a> 功能区设计器中的辅助功能
+## <a name="Accessibility"></a> 功能区设计器中的辅助功能
  可以使用键盘快捷键在功能区设计器中移动控件。 某些键盘快捷键适用于所有控件，而某些仅适用于具有菜单的控件。
 
  适用于所有控件的键盘快捷键表所示。

@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048369"
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,14 +28,14 @@ ms.locfileid: "54791648"
 ## <a name="highlighting-the-execution-hot-path"></a>突出显示执行热路径  
  “调用树”视图可以展开并突出显示进程的执行路径或创建最多争用的函数。  
   
--   若要显示最活跃的路径，请右键单击该进程或函数，然后单击“展开热路径”。  
+- 若要显示最活跃的路径，请右键单击该进程或函数，然后单击“展开热路径”。  
   
 ## <a name="setting-the-call-tree-root-node"></a>设置调用树根节点  
  分析运行中的每个进程均显示为根节点。 若要设置“调用关系树”视图的开始节点，请右键单击要设置为开始节点的节点，然后单击“设置根节点”。  
   
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，可在“调用树”视图中右键单击，然后单击“重置根节点”。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|阻止此执行路径中此函数的实例在分析运行中执行的时间。 此时间不包括此函数调用的子函数的阻塞时间。|  
 |**独占阻塞的时间百分比**|此执行路径中此函数的独占阻塞时间占分析运行中的所有阻塞时间的百分比。|  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e28c5802b866c7fea0b1e079e2d22aecee60e690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7de1bf04137c0e799e19e658307d630ec3fa6a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068738"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何：将快捷菜单项添加到自定义的 SharePoint 项目项类型
   在定义的自定义 SharePoint 项目项类型时，可以将快捷菜单项添加到项目项。 用户右键单击中的项目项时出现的菜单项**解决方案资源管理器**。
@@ -28,11 +28,11 @@ ms.locfileid: "56621534"
 
 ### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>若要将快捷菜单项添加到自定义项目项类型
 
-1.  在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法将<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>实现、 句柄<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>的事件*projectItemTypeDefinition*参数。
+1. 在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A>方法将<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>实现、 句柄<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>的事件*projectItemTypeDefinition*参数。
 
-2.  在事件处理程序中的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>事件，添加一个新<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>对象传递给<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A>或<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A>事件自变量参数的集合。
+2. 在事件处理程序中的<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested>事件，添加一个新<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>对象传递给<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A>或<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A>事件自变量参数的集合。
 
-3.  在中<xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新的事件处理程序<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>对象中，执行你想要在用户选择快捷菜单项时执行的任务。
+3. 在中<xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click>新的事件处理程序<xref:Microsoft.VisualStudio.SharePoint.IMenuItem>对象中，执行你想要在用户选择快捷菜单项时执行的任务。
 
 ## <a name="example"></a>示例
  下面的代码示例演示如何将一个上下文菜单项添加到自定义项目项类型。 当用户打开从项目项的快捷菜单**解决方案资源管理器**，并选择**将消息写入到输出窗口**菜单项，Visual Studio 将显示一条消息中的**输出**窗口。
@@ -45,9 +45,9 @@ ms.locfileid: "56621534"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集的类库项目：
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>部署项目项
  若要启用其他开发人员能够使用您的项目项，请创建项目模板或项目项模板。 有关详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。

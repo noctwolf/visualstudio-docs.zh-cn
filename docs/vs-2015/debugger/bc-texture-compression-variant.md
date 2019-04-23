@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934352"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111228"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 纹理压缩变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "58934352"
   
 - 在 `D3D11_TEXTURE2D_DESC` 中传递的 `pDesc` 对象描述了不变的着色器资源；即：  
   
-  -   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
+  - BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
   
-  -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
+  - 将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
-  -   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
+  - 将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
   
-  -   SamplerDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
+  - SamplerDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
   
 - 为对 `CreateTexture2D` 的调用提供了初始数据。  
   

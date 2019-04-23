@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3c582696dfba5abdcf132308477e586575777a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a236b30552007112663ad9f985ddc94995fe1ef8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050019"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>如何：打印时隐藏工作表上的控件
   如果打印包含 Windows 窗体控件的 Microsoft Office Excel 文档，控件将显示在打印工作表上。 打印工作表时，可以隐藏控件。
@@ -35,11 +35,11 @@ ms.locfileid: "56612616"
 
 ## <a name="to-hide-controls-when-a-worksheet-is-printed"></a>若要隐藏工作表时的控件打印
 
-1.  创建或在 Visual Studio 中打开 Excel 项目并确认**Sheet1**在设计器中可见。 有关创建项目的信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 创建或在 Visual Studio 中打开 Excel 项目并确认**Sheet1**在设计器中可见。 有关创建项目的信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2.  从**公共控件**选项卡**工具箱**，将<xref:Microsoft.Office.Tools.Excel.Controls.Button>控制到单元格上`Sheet1`。
+2. 从**公共控件**选项卡**工具箱**，将<xref:Microsoft.Office.Tools.Excel.Controls.Button>控制到单元格上`Sheet1`。
 
-3.  在中**属性**窗口中，将<xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A>属性设置为**False**。
+3. 在中**属性**窗口中，将<xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A>属性设置为**False**。
 
 ## <a name="see-also"></a>请参阅
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)

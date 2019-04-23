@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27aed07b7e4212502a819ce024b0ce46680df6bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089563"
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "54759956"
   
 #### <a name="to-magnify-a-timeline-segment"></a>放大时间线片段  
   
--   将鼠标指针拖动到时间线的某个区域上。  
+- 将鼠标指针拖动到时间线的某个区域上。  
   
      释放鼠标按钮后，视图会放大到所选时间片段。 可以重复该过程以进一步放大片段。 时间滚动条上的滚动框表示出现在视图中的时间片段的相对大小。  
   
 #### <a name="to-zoom-out-on-a-timeline"></a>缩小时间线  
   
--   执行以下步骤之一：  
+- 执行以下步骤之一：  
   
-    -   单击“缩小”以返回到以前的缩放级别。  
+    - 单击“缩小”以返回到以前的缩放级别。  
   
-    -   单击“缩放重置”以在视图中显示所有时间线。  
+    - 单击“缩放重置”以在视图中显示所有时间线。  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>查看事件的调用堆栈  
   
--   在时间线关系图中，单击事件条。  
+- 在时间线关系图中，单击事件条。  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>查看或编辑调用堆栈中的函数的源代码  
   
@@ -55,12 +55,12 @@ ms.locfileid: "54759956"
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>查看资源的争用事件的调用树  
   
--   在时间线关系图中，单击“总计”。  
+- 在时间线关系图中，单击“总计”。  
   
      资源的“争用”视图会出现。 有关详细信息，请参阅[“资源争用”视图](../profiling/resource-contentions-view-contention-data.md)  
   
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>查看线程的所有争用事件  
   
--   在时间线关系图中，单击线程的名称或 ID。  
+- 在时间线关系图中，单击线程的名称或 ID。  
   
      所选线程的“线程详细信息”视图会出现。 有关详细信息，请参阅[“线程详细信息”视图](../profiling/thread-details-view-contention-data.md)。

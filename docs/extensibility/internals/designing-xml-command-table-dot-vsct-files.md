@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091559"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表格 (.vsct) 文件
 XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
@@ -98,19 +98,19 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 ## <a name="vsct-file-design-guidelines"></a>.vsct 文件设计指导原则
  已成功设计 *.vsct*文件中，请遵循以下准则。
 
--   可以仅为组中置于命令、 组可放置仅在菜单和菜单可以放置仅在组中。 仅菜单实际显示在 IDE 中，组和命令不。
+- 可以仅为组中置于命令、 组可放置仅在菜单和菜单可以放置仅在组中。 仅菜单实际显示在 IDE 中，组和命令不。
 
--   子菜单不能直接分配给一个菜单，但必须将分配给一个组，该组又分配给一个菜单。
+- 子菜单不能直接分配给一个菜单，但必须将分配给一个组，该组又分配给一个菜单。
 
--   命令、 子菜单和组可以分配给一个父级组或使用其定义的指令的父字段的菜单。
+- 命令、 子菜单和组可以分配给一个父级组或使用其定义的指令的父字段的菜单。
 
--   组织仅通过的指令中的父字段的命令表有一个明显的限制。 定义对象的指令可能只有一个父参数。
+- 组织仅通过的指令中的父字段的命令表有一个明显的限制。 定义对象的指令可能只有一个父参数。
 
--   重复使用的命令、 组或子菜单需要新的指令以创建对象的新实例有其自身使用`GUID:ID`对。
+- 重复使用的命令、 组或子菜单需要新的指令以创建对象的新实例有其自身使用`GUID:ID`对。
 
--   每个`GUID:ID`对都必须唯一。 重复使用，例如，已放在菜单上，工具栏上，或上下文菜单上的命令由处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口。
+- 每个`GUID:ID`对都必须唯一。 重复使用，例如，已放在菜单上，工具栏上，或上下文菜单上的命令由处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口。
 
--   命令和子菜单还可以分配给多个组和组可以分配给使用多个菜单[Commands 元素](../../extensibility/commands-element.md)。
+- 命令和子菜单还可以分配给多个组和组可以分配给使用多个菜单[Commands 元素](../../extensibility/commands-element.md)。
 
 ## <a name="vsct-file-notes"></a>.vsct 文件说明
  如果进行的任何更改 *.vsct*文件在同时对其进行编译，并将其放在本机附属 DLL 后，应运行**devenv.exe /setup /nosetupvstemplates**。 实验性注册表以重新读取和描述的内部数据库中指定的 VSPackage 资源执行操作，强制[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]重新生成。

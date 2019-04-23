@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658781"
 ---
 # <a name="properties-window"></a>属性窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用此窗口可查看和更改编辑器和设计器中选中对象的设计时属性和事件。 还可以使用“属性”窗口编辑和查看文件、项目和解决方案属性。 可以在“视图”菜单上找到“属性”窗口。 可以按 F4 打开它，也可以在“快速启动”窗口中键入“属性”打开。  
   
  “属性”窗口显示不同类型的编辑字段，具体取决于特定属性的需要。 这些编辑字段包括编辑框、下拉列表和自定义编辑器对话框的链接。 以灰色显示的属性为只读属性。  

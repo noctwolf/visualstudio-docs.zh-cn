@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cebba40ee1c438e7be8ea97dcfc7050491511039
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8058995c8ae45c40f202aaa1e788891da3eb985d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086782"
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ CPU 使用率图显示一段时间内应用中的使用程度。 X 轴表示跟�
   
 ## <a name="cpu-utilization-graph-colors"></a>CPU 使用率图颜色  
   
--   绿色表示系统中当前进程的逻辑内核使用率。  
+- 绿色表示系统中当前进程的逻辑内核使用率。  
   
--   浅灰色表示系统上其他进程的逻辑内核利用率。 如果 CPU 图中的浅灰色百分比过高，则表示其他进程已使系统负载过重，您的进程可能会被这些进程抢占资源。 若要减少其他进程使用的逻辑内核数，请减少系统上运行的逻辑内核数。  
+- 浅灰色表示系统上其他进程的逻辑内核利用率。 如果 CPU 图中的浅灰色百分比过高，则表示其他进程已使系统负载过重，您的进程可能会被这些进程抢占资源。 若要减少其他进程使用的逻辑内核数，请减少系统上运行的逻辑内核数。  
   
--   深灰色表示系统进程的逻辑内核消耗。 您无法直接控制这部分逻辑内核消耗，但由于这些消耗会影响您的进程可以使用的逻辑内核情况，因此了解这些消耗何时出现非常有用。  
+- 深灰色表示系统进程的逻辑内核消耗。 您无法直接控制这部分逻辑内核消耗，但由于这些消耗会影响您的进程可以使用的逻辑内核情况，因此了解这些消耗何时出现非常有用。  
   
--   白色表示系统上未使用逻辑内核的可用性。 如果可以找到更多的并行机会，这些核心则可用于你的进程。  
+- 白色表示系统上未使用逻辑内核的可用性。 如果可以找到更多的并行机会，这些核心则可用于你的进程。  
   
 ## <a name="see-also"></a>请参阅  
  [使用率视图](../profiling/utilization-view.md)   

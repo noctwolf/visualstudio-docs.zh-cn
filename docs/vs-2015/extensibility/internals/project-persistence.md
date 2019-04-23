@@ -11,12 +11,12 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9627170ad65906af1bc7930897c374504cae4552
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074237"
 ---
 # <a name="project-persistence"></a>项目持久性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "59000764"
   
  项目项可以是基于文件的或非基于文件的：  
   
--   基于文件的项可以是本地或远程。 在 C# 中的 Web 项目，例如，将连接到远程系统上的文件保留本地，而在远程系统上保留文件本身。  
+- 基于文件的项可以是本地或远程。 在 C# 中的 Web 项目，例如，将连接到远程系统上的文件保留本地，而在远程系统上保留文件本身。  
   
--   不基于文件的项可以将项目保存到数据库或存储库。  
+- 不基于文件的项可以将项目保存到数据库或存储库。  
   
 ## <a name="commit-models"></a>提交模型  
  在决定后的项目项的位置，必须选择相应提交模型。 例如，在基于文件的模型中使用本地文件，每个项目可以保存自主操作。 在存储库模型中，您可以保存在一个事务中的多个项。 有关详细信息，请参阅[项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)。  

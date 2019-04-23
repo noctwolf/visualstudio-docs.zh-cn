@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040736"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>如何：手动将扩展打包 （VSIX 部署）
 可以创建 VSIX 包来包装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展，以便进行部署。 创建包的方式有三种：  
@@ -33,25 +33,25 @@ ms.locfileid: "58933587"
   
 #### <a name="to-manually-create-a-vsix-package"></a>手动创建 VSIX 包  
   
-1.  创建一个 Visual Studio 扩展，其类型受 VSIX 架构支持。  
+1. 创建一个 Visual Studio 扩展，其类型受 VSIX 架构支持。  
   
-2.  创建一个 XML 文件，将其命名为 `extension.vsixmanifest`。  
+2. 创建一个 XML 文件，将其命名为 `extension.vsixmanifest`。  
   
-3.  根据 VSIX 架构填写 extension.vsixmanifest 文件。 有关示例清单，请参阅 [PackageManifest 元素（根元素，VSX 架构）](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
+3. 根据 VSIX 架构填写 extension.vsixmanifest 文件。 有关示例清单，请参阅 [PackageManifest 元素（根元素，VSX 架构）](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
   
-4.  再创建一个 XML 文件，将其命名为 `[Content_Types].xml`。  
+4. 再创建一个 XML 文件，将其命名为 `[Content_Types].xml`。  
   
-5.  填写 [Content_Types].xml 文件中的规定[的结构 Content_types\].xml 文件](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)。  
+5. 填写 [Content_Types].xml 文件中的规定[的结构 Content_types\].xml 文件](../extensibility/the-structure-of-the-content-types-dot-xml-file.md)。  
   
-6.  将这两个 XML 文件与要部署的扩展一起放在某个目录。  
+6. 将这两个 XML 文件与要部署的扩展一起放在某个目录。  
   
      如果是项目模板或项模板，则将包含该模板的 .zip 文件放在 XML 文件所在的文件夹中。 不要将 XML 文件放在 .zip 文件中。  
   
      在其他所有情况下，将 XML 文件放在生成输出所在的目录中。  
   
-7.  在 Windows 资源管理器中，右键单击包含扩展内容和这两个 XML 文件的文件夹，单击“发送到” ，然后单击“压缩(zipped)文件夹” 。  
+7. 在 Windows 资源管理器中，右键单击包含扩展内容和这两个 XML 文件的文件夹，单击“发送到” ，然后单击“压缩(zipped)文件夹” 。  
   
-8.  将生成的 .zip 文件重命名为 *Filename*.vsix，其中 *Filename* 是用于安装包的可再发行文件的名称。  
+8. 将生成的 .zip 文件重命名为 *Filename*.vsix，其中 *Filename* 是用于安装包的可再发行文件的名称。  
   
 ## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)   

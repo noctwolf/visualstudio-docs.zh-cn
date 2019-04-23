@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072631"
 ---
 # <a name="options-text-editor-cc-advanced"></a>选项，文本编辑器，C/C++，高级
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 通过更改这些选项，你可以在用 C 或 C++ 进行编程时更改与 IntelliSense 和浏览数据库有关的行为。  
   
  若要访问此页，请在“选项”对话框的左窗格中，展开“文本编辑器”，再展开“C/C++”，然后选择“高级”。  
@@ -74,19 +73,19 @@ ms.locfileid: "54790092"
   
  通过以下诸多选项进行设置：  
   
--   0 - 无  
+- 0 - 无  
   
--   1 - 常规  
+- 1 - 常规  
   
--   2 - 空闲  
+- 2 - 空闲  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>回退位置  
  回退位置指不使用主位置（与解决方案位于同一目录）时 SDF 和 IntelliSense 支持文件（例如，iPCH）所在的位置。 当用户无权写入到解决方案目录或者解决方案目录位于一个慢速设备上时，可能会出现这种情况。 默认回退位置位于用户的临时目录中。  

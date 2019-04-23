@@ -24,12 +24,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 42e9e050fb6417914d25e25927a248557e7905f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934160"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075384"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ ms.locfileid: "58934160"
   
 ## <a name="struct-and-class-annotations"></a>结构和类批注  
   
--   `_Field_range_(low, high)`  
+- `_Field_range_(low, high)`  
   
      该字段是从 （含） 范围内`low`到`high`。  等效于`_Satisfies_(_Curr_ >= low && _Curr_ <= high)`通过使用适当的前置或后置条件应用于带批注的对象。  
   
--   `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
+- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
      具有可写大小以元素 （或字节数） 为指定的字段`size`。  
   
--   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
      具有可写大小以元素 （或字节数） 为指定的字段`size`，和`count`这些元素 （字节） 的可读。  
   
--   `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
+- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
      具有可读和可写大小元素 （或字节数） 为指定的字段`size`。  
   
--   `_Struct_size_bytes_(size)`  
+- `_Struct_size_bytes_(size)`  
   
      具有可读和可写大小元素 （或字节数） 为指定的字段`size`。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "58934160"
     ```  
   
 ## <a name="see-also"></a>请参阅  
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065579"
 ---
 # <a name="attach-after-a-launch"></a>启动后附加
 程序启动后，调试会话已准备好附加到上述程序的调试引擎 (DE)。
@@ -23,9 +23,9 @@ ms.locfileid: "56704041"
 ## <a name="design-decisions"></a>设计决策
  因为通信更容易共享的地址空间内，必须选择两种设计方法是： 设置调试会话和设备之间的通信。 或者，设置 DE 和程序之间的通信。 在以下选择：
 
--   如果它更有意义设置调试会话和设备之间的通信，调试会话共同创建 DE 并询问 DE 将附加到该程序。 这种设计使调试会话，DE 一起中一个地址空间的运行时环境和程序中另一个合并在一起。
+- 如果它更有意义设置调试会话和设备之间的通信，调试会话共同创建 DE 并询问 DE 将附加到该程序。 这种设计使调试会话，DE 一起中一个地址空间的运行时环境和程序中另一个合并在一起。
 
--   如果它更有意义设置 DE 与程序之间的通信，运行时环境共同创建 DE。 这种设计离开一个地址空间和 DE、 运行时环境和程序中的 SDM 中另一个合并在一起。 这种设计是典型的部署使用解释器以运行脚本化的语言实现。
+- 如果它更有意义设置 DE 与程序之间的通信，运行时环境共同创建 DE。 这种设计离开一个地址空间和 DE、 运行时环境和程序中的 SDM 中另一个合并在一起。 这种设计是典型的部署使用解释器以运行脚本化的语言实现。
 
     > [!NOTE]
     >  如何将 DE 附加到该程序是依赖于实现的。 DE 和程序之间的通信也是依赖于实现的。

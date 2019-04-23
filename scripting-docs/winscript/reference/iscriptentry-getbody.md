@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a2cb9757c0a9683a00768d8947dfe33749e4bb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064913"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 返回对应的文本正文的`IScriptEntry`脚本块、 函数块或 scriptlet。  
@@ -39,16 +39,16 @@ HRESULT GetBody(
  `pbstr`  
  [out]在以下项之一的正文中的文本：  
   
--   `IScriptEntry`脚本块  
+- `IScriptEntry`脚本块  
   
--   `IScriptEntry`函数块中的函数  
+- `IScriptEntry`函数块中的函数  
   
--   `IScriptEntry` Scriptlet 事件处理程序  
+- `IScriptEntry` Scriptlet 事件处理程序  
   
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

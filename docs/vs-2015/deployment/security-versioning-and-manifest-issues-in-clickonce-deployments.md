@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043675"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全、版本控制和清单问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ ms.locfileid: "58935467"
   
  如果您已手动编辑部署或应用程序清单，您可能会无意中损坏它们。 清单损坏会阻止的正确[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]安装。 可以通过单击来在运行时调试此类错误**详细信息**上**ClickOnce 错误**对话框中，并读取日志中的错误消息。 日志将列出以下消息之一：  
   
--   语法错误的行号和字符的描述发生错误的位置。  
+- 语法错误的行号和字符的描述发生错误的位置。  
   
--   元素或属性在违反该清单的架构中使用的名称。 如果你已手动添加 XML，到对清单，必须将比较你添加到清单架构。 有关详细信息，请参阅[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)并[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。  
+- 元素或属性在违反该清单的架构中使用的名称。 如果你已手动添加 XML，到对清单，必须将比较你添加到清单架构。 有关详细信息，请参阅[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)并[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。  
   
--   ID 冲突。 部署和应用程序清单中的依赖关系引用必须是唯一在这种他们`name`和`publicKeyToken`属性。 如果在清单中任意两个元素之间的这两个属性匹配，清单分析将会失败。  
+- ID 冲突。 部署和应用程序清单中的依赖关系引用必须是唯一在这种他们`name`和`publicKeyToken`属性。 如果在清单中任意两个元素之间的这两个属性匹配，清单分析将会失败。  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>手动更改清单或应用程序时的注意事项  
  更新应用程序清单时，必须重新签名的应用程序清单和部署清单。 部署清单包含对包含该文件的哈希和其数字签名的应用程序清单的引用。  

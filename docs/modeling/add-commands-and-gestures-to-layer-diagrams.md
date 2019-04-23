@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077870"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>向依赖项关系图添加命令和手势
 
@@ -66,7 +66,7 @@ ms.locfileid: "58415468"
 
 如果想要创建一个包含命令、层验证程序和其他扩展的 VSIX，建议创建一个项目来定义 VSIX，并分隔处理程序的项目。
 
-1. 创建一个新**类库**项目。 此项目将包含命令或笔势处理程序类。
+1. 创建新的“类库”项目。 此项目将包含命令或笔势处理程序类。
 
    > [!NOTE]
    > 可以在一个类库中定义多个命令或笔势处理程序类，但应在单独的类库中定义层验证类。
@@ -108,7 +108,7 @@ ms.locfileid: "58415468"
 
 8. 若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 双击文件资源管理器中的 VSIX 文件。
 
-##  <a name="command"></a> 定义菜单命令
+## <a name="command"></a> 定义菜单命令
 
 可向现有笔势或命令项目添加更多菜单命令定义。 每个命令均由具有以下特性的类进行定义：
 
@@ -124,11 +124,11 @@ ms.locfileid: "58415468"
 
 - 实现 `ICommandExtension` 的方法如下：
 
-  -   `string Text {get;}` - 菜单中显示的标签。
+  - `string Text {get;}` - 菜单中显示的标签。
 
-  -   `void QueryStatus(IMenuCommand command)` - 用户右键单击关系图时调用它，用于确定对于用户的当前选择内容，命令是否可见和已启用。
+  - `void QueryStatus(IMenuCommand command)` - 用户右键单击关系图时调用它，用于确定对于用户的当前选择内容，命令是否可见和已启用。
 
-  -   `void Execute(IMenuCommand command)` - 用户选择此命令时调用它。
+  - `void Execute(IMenuCommand command)` - 用户选择此命令时调用它。
 
 - 若要确定当前选择内容，可导入 `IDiagramContext`：
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> 定义笔势处理程序
+## <a name="gesture"></a> 定义笔势处理程序
 
 用户将项拖到依赖项关系图上时，当用户双击关系图中的任意位置时，笔势处理程序会做出响应。
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 请注意关于笔势处理程序的以下几点：
 
--   `IGestureExtension` 的成员如下：
+- `IGestureExtension` 的成员如下：
 
      **OnDoubleClick** - 用户双击关系图上的任意位置时调用它。
 
@@ -246,7 +246,7 @@ namespace MyLayerExtensions // change to your preference
 
      **OnDragDrop** - 用户将项放到关系图上时调用它。
 
--   每个方法的第一个参数是 `IShape`，你可以从它获取层元素。 例如：
+- 每个方法的第一个参数是 `IShape`，你可以从它获取层元素。 例如：
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ namespace MyLayerExtensions // change to your preference
     }
     ```
 
--   已为某些类型的拖动项定义了处理程序。 例如，用户可以将项从解决方案资源管理器拖动到依赖项关系图。 无法为这些类型的项定义拖动处理程序。 在这些情况下，不会调用 `DragDrop` 方法。
+- 已为某些类型的拖动项定义了处理程序。 例如，用户可以将项从解决方案资源管理器拖动到依赖项关系图。 无法为这些类型的项定义拖动处理程序。 在这些情况下，不会调用 `DragDrop` 方法。
 
 ## <a name="see-also"></a>请参阅
 

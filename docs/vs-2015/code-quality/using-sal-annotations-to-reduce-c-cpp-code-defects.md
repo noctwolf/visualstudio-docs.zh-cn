@@ -1,5 +1,5 @@
 ---
-title: 使用 SAL 注释减少 C + + 代码缺陷 |Microsoft Docs
+title: 使用 SAL 注释减少 C-C++代码缺陷 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1331fb7df7cc2c1aaff6a498aab0d9cf8ec8f57f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046261"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 批注以减少 C/C++ 代码缺陷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ SAL 是 Microsoft 源代码注释语言。 通过使用源的代码注释，您�
   
  文档文章在本部分中讨论的 SAL 方面、 参考提供有关 SAL 语法，并为提供其用法的示例。  
   
--   [了解 SAL](../code-quality/understanding-sal.md)  
+- [了解 SAL](../code-quality/understanding-sal.md)  
   
      提供信息和示例，演示 SAL 注释的核心。  
   
--   [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)  
+- [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)  
   
      列出了函数和函数参数的 SAL 批注。  
   
--   [对函数行为进行批注](../code-quality/annotating-function-behavior.md)  
+- [对函数行为进行批注](../code-quality/annotating-function-behavior.md)  
   
      列出了函数和函数行为的 SAL 批注。  
   
--   [批注结构和类](../code-quality/annotating-structs-and-classes.md)  
+- [批注结构和类](../code-quality/annotating-structs-and-classes.md)  
   
      列出了结构和类的 SAL 批注。  
   
--   [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)  
+- [对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)  
   
      介绍如何使用 SAL 注释与锁定机制。  
   
--   [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+- [指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      列出了指定的条件或作用域 （位置） 的其他 SAL 批注的 SAL 批注。  
   
--   [内部函数](../code-quality/intrinsic-functions.md)  
+- [内部函数](../code-quality/intrinsic-functions.md)  
   
      列出了内部函数的 SAL 批注。  
   
--   [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)  
+- [最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)  
   
      提供演示如何使用 SAL 注释的示例。 此外介绍了常见缺陷。  
   

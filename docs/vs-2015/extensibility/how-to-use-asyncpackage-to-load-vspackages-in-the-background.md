@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091663"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何：在后台使用 AsyncPackage 加载 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>将现有的 VSPackage 转换为 AsyncPackage  
  大部分工作是创建一个新相同**AsyncPackage**。 您需要执行步骤 1 至 5 更高版本。 此外需要执行以下额外小心：  
   
-1.  请记住删除**初始化**必须在包中的重写。  
+1. 请记住删除**初始化**必须在包中的重写。  
   
-2.  避免死锁：可能有其在后台线程上现在会在代码中隐藏的 Rpc。 您需要确保，如果要进行 RPC (例如**GetService**)，需要转到主线程 (1) 或 （2） 使用一个 API 的异步版本存在 (例如**GetServiceAsync**)。  
+2. 避免死锁：可能有其在后台线程上现在会在代码中隐藏的 Rpc。 您需要确保，如果要进行 RPC (例如**GetService**)，需要转到主线程 (1) 或 （2） 使用一个 API 的异步版本存在 (例如**GetServiceAsync**)。  
   
-3.  请勿过于频繁地在线程之间切换。 尝试对后台线程中，可能发生的工作进行本地化。 这将减少加载时间。  
+3. 请勿过于频繁地在线程之间切换。 尝试对后台线程中，可能发生的工作进行本地化。 这将减少加载时间。  
   
 ## <a name="querying-services-from-asyncpackage"></a>查询从 AsyncPackage 服务  
  **AsyncPackage**可能或可能不会加载以异步方式具体取决于调用方。 例如，  

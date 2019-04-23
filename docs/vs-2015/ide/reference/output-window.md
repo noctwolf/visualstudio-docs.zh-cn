@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784814"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668907"
 ---
 # <a name="output-window"></a>输出窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 “输出”窗口在集成开发环境 (IDE) 中可显示各种功能的状态消息。 若要打开“输出”窗口，请在菜单栏上选择“视图/输出”（或单击 Ctrl+Alt+O）。  
   
 > [!WARNING]
@@ -69,7 +68,7 @@ ms.locfileid: "54784814"
   
 ## <a name="see-also"></a>请参阅  
  [“输出”窗口中的诊断消息](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [如何：控制“输出”窗口](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [如何：控制输出窗口](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [编译和生成](../../ide/compiling-and-building-in-visual-studio.md)   
  [了解生成配置](../../ide/understanding-build-configurations.md)   
  [类库概述](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044182"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "58934688"
   
  有效表达式语法按以下方式定义：  
   
--   功能表达式，如"(visual c &#124; CSharp) + (MSTest &#124; NUnit)"。  
+- 功能表达式，如"(visual c &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
--   "&#124;"是或运算符。  
+- "&#124;"是或运算符。  
   
--   "&"和"+"字符均为 AND 运算符。  
+- "&"和"+"字符均为 AND 运算符。  
   
--   “!”字符是 NOT 运算符。  
+- “!”字符是 NOT 运算符。  
   
--   括号强制使用计算优先顺序。  
+- 括号强制使用计算优先顺序。  
   
--   null 或空表达式作为匹配计算。  
+- null 或空表达式作为匹配计算。  
   
--   项目功能可以是除以下保留字符之外的任何字符:"':;,+-*/\\！ ~&#124;和 %$@^() ={}[] <>？ \t\b\n\r  
+- 项目功能可以是除以下保留字符之外的任何字符:"':;,+-*/\\！ ~&#124;和 %$@^() ={}[] <>？ \t\b\n\r  
   
 ## <a name="example"></a>示例  
  下面的示例演示三个不同模板。 `Template1` 适用于所有 C# 项目类型或支持 `WindowsAppContainer` 功能的任何其他项目类型。 `Template2` 适用于所有类型的 C# 项目。 `Template3` 适用于 `WindowsAppContainer` 项目以外的 C# 项目。  

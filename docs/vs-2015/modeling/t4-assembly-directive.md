@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f81bdcad4f255585c2c554add59ed04dea5872d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074211"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "58936487"
   
 - 包含 DSL 的程序集。  
   
-##  <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的项目属性  
+## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的项目属性  
  Visual Studio 宏（如 $(SolutionDir）在 MSBuild 中不起作用。 如果你想要在生成计算机中转换模板，则必须改用项目属性。  
   
  编辑 .csproj 或 .vbproj 文件以定义项目属性。 此示例定义一个名为 `myLibFolder` 的属性：  

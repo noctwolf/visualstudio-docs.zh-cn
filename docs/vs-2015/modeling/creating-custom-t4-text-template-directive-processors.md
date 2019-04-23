@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab39de049b1ab3ff8054070b863380b66fd35018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058578"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58934019"
   
  可以自定义指令处理器的一些示例：  
   
--   若要从作为参数接受用户名和密码的数据库中返回的数据指令处理器。  
+- 若要从作为参数接受用户名和密码的数据库中返回的数据指令处理器。  
   
--   打开和读取文件的指令处理器作为参数接受的文件的名称。  
+- 打开和读取文件的指令处理器作为参数接受的文件的名称。  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>自定义指令处理器的主体部分  
  若要开发指令处理器，必须创建从继承的类<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>或<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>。  

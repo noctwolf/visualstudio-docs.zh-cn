@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094315"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何：添加和删除使用包设计器的功能和包项
   创建 SharePoint 解决方案时，Visual Studio 会将默认的 SharePoint 功能添加到解决方案中的包。 然后才能最终部署，可以添加和删除 SharePoint 项目项和修改 SharePoint 包的功能。
@@ -52,7 +52,7 @@ ms.locfileid: "56608092"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>若要使用包设计器删除 SharePoint 功能
 
-1.  在中**包中的项**列表中，选择你想要删除，然后选择的项**删除**(<) 按钮，或选择**全部删除**按钮 (<<) 若要删除所有项。
+1. 在中**包中的项**列表中，选择你想要删除，然后选择的项**删除**(<) 按钮，或选择**全部删除**按钮 (<<) 若要删除所有项。
 
      SharePoint 项出现在**解决方案中的项**列表。
 

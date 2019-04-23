@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079339"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 元素 （Visual Studio 模板）
 指定有关程序集，该模板使用以将该程序集的引用添加到项目的信息。
@@ -52,7 +52,7 @@ ms.locfileid: "56710976"
 
  此文本指定要实例化项模板时，向项目添加的程序集。 必须通过以下方式之一指定此程序集名称：
 
--   为完整的程序集名称。 例如：
+- 为完整的程序集名称。 例如：
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ ms.locfileid: "56710976"
     </Assembly>
     ```
 
--   为简单文本引用。 例如：
+- 为简单文本引用。 例如：
 
     ```
     <Assembly> System </Assembly>

@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936203"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668023"
 ---
 # <a name="typed-vs-untyped-datasets"></a>类型化与非类型化数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 类型化数据集是首先派生自基本的数据集<xref:System.Data.DataSet>类，然后使用中的信息**数据集设计器**，它存储在一个.xsd 文件，生成一个新强类型化数据集类。 生成并编译到这个新的数据集类作为第一类对象和属性的一组架构 （表、 列等） 中的信息。 由于类型化数据集继承自基类<xref:System.Data.DataSet>类，类型化的类假定所有的功能<xref:System.Data.DataSet>类，并可用于的一个实例的方法<xref:System.Data.DataSet>类作为参数。  
   
  非类型化的数据集，与此相反，有没有相应的内置架构。 类型化数据集，如中所示的非类型化数据集包含表、 列等，但那些仅作为集合公开。 (但是，手动创建的表和其他数据元素中的非类型化数据集后，您可以导出数据集的结构作为架构通过使用数据集的<xref:System.Data.DataSet.WriteXmlSchema%2A>方法。)  

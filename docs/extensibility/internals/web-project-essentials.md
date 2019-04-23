@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234b2958fd3a5a533e881fc2589c275893326814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071326"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网页的 Web 应用程序。 智能 Web 页面已呈现按需 Web 页面的服务器端代码。
@@ -28,9 +28,9 @@ Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网
 
 - 其他的源代码文件，如不与特定的 Web 页上，相关联的帮助程序类位于网站 /App_Code 文件夹中。
 
-  -   网站项目 (WSP) 会生成一个可执行文件为每个智能的网页。 其他可执行文件是从任何 /App_Code 文件夹中的源代码文件生成的。
+  - 网站项目 (WSP) 会生成一个可执行文件为每个智能的网页。 其他可执行文件是从任何 /App_Code 文件夹中的源代码文件生成的。
 
-  -   Web 应用程序项目 (WAP) 生成结合代码，以所有智能 Web 页面，以及 /App_Code 文件夹中的所有源文件的单个可执行文件。
+  - Web 应用程序项目 (WAP) 生成结合代码，以所有智能 Web 页面，以及 /App_Code 文件夹中的所有源文件的单个可执行文件。
 
 - Web 项目的解决方案文件位于独立于该网站本身。 默认情况下，解决方案文件位于 \Documents 和设置\\*YourAccount*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。
 
@@ -53,9 +53,9 @@ Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网
 
 - 智能的网页将 HTML 与服务器端编程语言相结合。 服务器端的语言称为包含的语言。 若要支持包含的语言，Web 项目系统必须实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage>系列的接口。
 
-  -   若要支持在编辑器中包含的语言，HTML 语言服务必须推迟到包含的语言服务中显示包含的语言代码。
+  - 若要支持在编辑器中包含的语言，HTML 语言服务必须推迟到包含的语言服务中显示包含的语言代码。
 
-  -   始终应在代码编辑器的主缓冲区中创建错误标记 （红色标记）。
+  - 始终应在代码编辑器的主缓冲区中创建错误标记 （红色标记）。
 
 ## <a name="see-also"></a>请参阅
 - [Web 项目](../../extensibility/internals/web-projects.md)

@@ -8,82 +8,82 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: efde723cfb72c8f91b0ba88c0a24bb2d9a3d245d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040826"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_CommonControls"></a> 公共控件
+## <a name="BKMK_CommonControls"></a> 公共控件
 
 ### <a name="overview"></a>概述
  公共控件构成了大多数 Visual Studio 中的用户界面。 在 Visual Studio 界面中使用的最常见控件应遵循[Windows 桌面的交互指南](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)。 本文档是特定于 Visual Studio，并介绍了特殊情形或扩充这些 Windows 准则的详细信息。
 
 #### <a name="common-controls-in-this-topic"></a>本主题中的公共控件
 
--   [滚动条](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
+- [滚动条](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_Scrollbars)
 
--   [输入的字段](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
+- [输入的字段](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_InputFields)
 
--   [组合框和下拉列表](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
+- [组合框和下拉列表](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ComboBoxesAndDropDowns)
 
--   [复选框](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
+- [复选框](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CheckBoxes)
 
--   [单选按钮](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
+- [单选按钮](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_RadioButtons)
 
--   [组帧](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
+- [组帧](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_GroupFrames)
 
--   [文本控件](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
+- [文本控件](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TextControls)
 
--   [按钮和超链接](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
+- [按钮和超链接](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_ButtonsAndHyperlinks)
 
--   [树视图](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
+- [树视图](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViews)
 
 #### <a name="visual-style"></a>视觉样式
  设置控件的样式时要考虑的第一个操作是是否主题化 UI 中使用的控件。 标准用户界面中的控件为非主题 UI 并且必须遵循[普通的 Windows 桌面样式](https://msdn.microsoft.com/library/windows/desktop/dn742399\(v=vs.85\).aspx)，这意味着它们不是重新模板化，应会出现在其默认控件外观。
 
--   **标准 （实用工具） 对话框：** 不主题化。 执行操作而不重新模板。 使用基本的控件样式的默认值。
+- **标准 （实用工具） 对话框：** 不主题化。 执行操作而不重新模板。 使用基本的控件样式的默认值。
 
--   **工具窗口、 文档编辑器，设计图面和主题化的对话框：** 使用专用应用主题外观，可以使用颜色服务。
+- **工具窗口、 文档编辑器，设计图面和主题化的对话框：** 使用专用应用主题外观，可以使用颜色服务。
 
-###  <a name="BKMK_Scrollbars"></a> 滚动条
+### <a name="BKMK_Scrollbars"></a> 滚动条
  滚动条应遵循[Windows 滚动条的常见交互模式](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx)除非它们增加内容的信息，如代码编辑器中。
 
-###  <a name="BKMK_InputFields"></a> 输入的字段
+### <a name="BKMK_InputFields"></a> 输入的字段
  典型的交互行为，请按照[文本框中的 Windows 桌面准则](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx)。
 
 #### <a name="visual-style"></a>视觉样式
 
--   不是输入的字段实用程序对话框中设置样式。 使用该控件中的内部的基本样式。
+- 不是输入的字段实用程序对话框中设置样式。 使用该控件中的内部的基本样式。
 
--   主题化的输入的字段应仅用于主题化的对话框和工具窗口。
+- 主题化的输入的字段应仅用于主题化的对话框和工具窗口。
 
 #### <a name="specialized-interactions"></a>专用的交互
 
--   只读字段将具有灰色 （禁用） 背景但 （活动） 的默认前景色。
+- 只读字段将具有灰色 （禁用） 背景但 （活动） 的默认前景色。
 
--   所需的字段应有**\<所需 >** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。
+- 所需的字段应有**\<所需 >** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。
 
--   错误验证：请参阅[Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
+- 错误验证：请参阅[Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
--   输入的字段，应调整以适应其内容，不适合在其中显示它们，在窗口的宽度也以任意匹配很长的字段，例如路径的长度。 长度可能会向用户指示的关于字段中允许多少个字符的限制。
+- 输入的字段，应调整以适应其内容，不适合在其中显示它们，在窗口的宽度也以任意匹配很长的字段，例如路径的长度。 长度可能会向用户指示的关于字段中允许多少个字符的限制。
 
      ![不正确的输入的字段控件宽度](../../extensibility/ux-guidelines/media/0707-01-incorrectinputfieldcontrol.png "0707年 01_IncorrectInputFieldControl") **不正确的输入的字段长度：不太可能的名称将是这么一段时间。**
 
      ![更正的输入的字段控件宽度](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707年 02_CorrectInputFieldControl") **更正输入字段长度：输入的字段是预期的内容的合理宽度。**
 
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a> 组合框和下拉列表
+### <a name="BKMK_ComboBoxesAndDropDowns"></a> 组合框和下拉列表
  典型的交互行为，请按照[下拉列表和组合框的 Windows 桌面准则](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx)。
 
 #### <a name="visual-style"></a>视觉样式
 
--   实用程序对话框中执行操作而不重新模板控件。 使用该控件中的内部的基本样式。
+- 实用程序对话框中执行操作而不重新模板控件。 使用该控件中的内部的基本样式。
 
--   在主题 UI 中，组合框和下拉列表按照标准主题的控件。
+- 在主题 UI 中，组合框和下拉列表按照标准主题的控件。
 
 #### <a name="layout"></a>布局
  组合框和下拉列表确定应将其调整为适应内容，不适合在其中显示它们，在窗口的宽度也以任意匹配很长的字段，例如路径的长度。
@@ -96,26 +96,26 @@ ms.locfileid: "58931030"
 
  **下拉列表控件的正确的字段长度**
 
-###  <a name="BKMK_CheckBoxes"></a> 复选框
+### <a name="BKMK_CheckBoxes"></a> 复选框
  典型的交互行为，请按照[复选框的 Windows 桌面准则](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx)。
 
 #### <a name="visual-style"></a>视觉样式
 
--   实用程序对话框中执行操作而不重新模板控件。 使用该控件中的内部的基本样式。
+- 实用程序对话框中执行操作而不重新模板控件。 使用该控件中的内部的基本样式。
 
--   在主题 UI 中的复选框按照标准主题的控件。
+- 在主题 UI 中的复选框按照标准主题的控件。
 
 #### <a name="specialized-interactions"></a>专用的交互
 
--   有一个复选框的交互必须永远不会弹出一个对话框，或导航到另一个区域。
+- 有一个复选框的交互必须永远不会弹出一个对话框，或导航到另一个区域。
 
--   使复选框与的第一行文本基线对齐。
+- 使复选框与的第一行文本基线对齐。
 
      ![不正确的复选框对齐方式](../../extensibility/ux-guidelines/media/0707-05-incorrectcheckboxalign.png "0707年 05_IncorrectCheckBoxAlign") **不正确的复选框对齐方式：复选框的文本居中。**
 
      ![更正复选框对齐方式](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707年 06_CorrectCheckBoxAlign") **更正复选框对齐方式：复选框与文本的第一行基线对齐。**
 
-###  <a name="BKMK_RadioButtons"></a> 单选按钮
+### <a name="BKMK_RadioButtons"></a> 单选按钮
  典型的交互行为，请按照[单选按钮的 Windows 桌面准则](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx)。
 
 #### <a name="visual-style"></a>视觉样式
@@ -124,7 +124,7 @@ ms.locfileid: "58931030"
 #### <a name="specialized-interactions"></a>专用的交互
  不需要使用一个组框以便包含单选选项。
 
-###  <a name="BKMK_GroupFrames"></a> 组帧
+### <a name="BKMK_GroupFrames"></a> 组帧
  典型的交互行为，请按照[组帧的 Windows 桌面准则](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx)。
 
 #### <a name="visual-style"></a>视觉样式
@@ -132,13 +132,13 @@ ms.locfileid: "58931030"
 
 #### <a name="layout"></a>布局
 
--   不需要使用一个组框以便包含单选选项，除非您需要维护组紧密布局中的差异。
+- 不需要使用一个组框以便包含单选选项，除非您需要维护组紧密布局中的差异。
 
--   单个控件永远不会使用一个组框。
+- 单个控件永远不会使用一个组框。
 
--   有时是可接受使用水平规则而不是组帧容器。
+- 有时是可接受使用水平规则而不是组帧容器。
 
-##  <a name="BKMK_TextControls"></a> 文本控件
+## <a name="BKMK_TextControls"></a> 文本控件
 
 ### <a name="labels"></a>标签
 
@@ -146,11 +146,11 @@ ms.locfileid: "58931030"
 
 ##### <a name="utility-standard-dialogs"></a>实用程序 （标准） 对话框）
 
--   一般情况下，按照控件标签的 Windows 桌面指导。
+- 一般情况下，按照控件标签的 Windows 桌面指导。
 
--   在实用工具对话框中，标签应显示非加粗，在标准环境字体和文本颜色。 请参阅[Visual Studio 的字体和格式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)。
+- 在实用工具对话框中，标签应显示非加粗，在标准环境字体和文本颜色。 请参阅[Visual Studio 的字体和格式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)。
 
--   省略号应始终遵循标签。
+- 省略号应始终遵循标签。
 
 ##### <a name="signature-themed-dialogs"></a>签名 （主题） 对话框）
  标签控件可能会变为粗体或浅灰色。
@@ -168,11 +168,11 @@ ms.locfileid: "58931030"
 #### <a name="instructional-text"></a>说明文本
  某些界面元素受益于以帮助用户了解 UI 目的或以指示要采取的操作的说明文本。
 
--   说明文本顶部的对话框，最常见的是，但可以出现在其他区域提供的复杂控件分组的指令。
+- 说明文本顶部的对话框，最常见的是，但可以出现在其他区域提供的复杂控件分组的指令。
 
--   说明文本非交互式的但可能包含超链接的帮助主题。
+- 说明文本非交互式的但可能包含超链接的帮助主题。
 
--   使用说明文本，尽量少以及仅在需要时。
+- 使用说明文本，尽量少以及仅在需要时。
 
 ##### <a name="formatting"></a>格式化
  说明文本应环境字体的标准 （非主题） 的控件文本。 请参阅[Visual Studio 的字体和格式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)。
@@ -227,7 +227,7 @@ ms.locfileid: "58931030"
 
   **Visual Studio 中的水印文本的示例**
 
-##  <a name="BKMK_ButtonsAndHyperlinks"></a> 按钮和超链接
+## <a name="BKMK_ButtonsAndHyperlinks"></a> 按钮和超链接
 
 ### <a name="overview"></a>概述
  按钮和链接控件 （的超链接） 应遵循[上的超链接的基本 Windows 桌面指南](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx)的使用情况，措词、 调整大小，和间距。
@@ -352,13 +352,13 @@ ms.locfileid: "58931030"
 
 #### <a name="visual-style"></a>视觉样式
 
--   应始终使用超链接[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。 如果超链接的样式设置不正确，它会闪烁红色活动时或在被访问后显示不同的颜色。
+- 应始终使用超链接[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。 如果超链接的样式设置不正确，它会闪烁红色活动时或在被访问后显示不同的颜色。
 
--   不包括在停留状态，除非该链接是在完整句子中的句子片段如水印中的控件的下划线。
+- 不包括在停留状态，除非该链接是在完整句子中的句子片段如水印中的控件的下划线。
 
--   悬停时的情况下不应出现下划线。 相反，对链接处于活动状态的用户的反馈是轻微的颜色更改和相应的链接游标。
+- 悬停时的情况下不应出现下划线。 相反，对链接处于活动状态的用户的反馈是轻微的颜色更改和相应的链接游标。
 
-##  <a name="BKMK_TreeViews"></a> 树视图
+## <a name="BKMK_TreeViews"></a> 树视图
 
 ### <a name="overview"></a>概述
  树视图提供了到父-子组列出了组织复杂的方法。 用户可以展开或折叠父组，以显示或隐藏基础子项目。 可以选择树视图中的每个项目，以提供进一步的操作。
@@ -367,11 +367,11 @@ ms.locfileid: "58931030"
 
 #### <a name="in-this-topic"></a>在本主题中
 
--   [视觉样式](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
+- [视觉样式](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewVisualStyle)
 
--   [交互](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
+- [交互](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-###  <a name="BKMK_TreeViewVisualStyle"></a> 视觉样式
+### <a name="BKMK_TreeViewVisualStyle"></a> 视觉样式
 
 #### <a name="expanders"></a>扩展器
  使用 Windows 和 Visual Studio 的扩展器设计应符合树视图控件。 每个节点使用 expander 控件以显示或隐藏基础项。 使用扩展器控件的用户可能会遇到 Windows 和 Visual Studio 中的不同的树视图中提供一致性。
@@ -405,7 +405,7 @@ ms.locfileid: "58931030"
 
  **因为内容已经超出了树视图控件的限制，会显示这两个垂直和水平滚动条。**
 
-###  <a name="BKMK_TreeViewInteractions"></a> 交互
+### <a name="BKMK_TreeViewInteractions"></a> 交互
 
 #### <a name="context-menus"></a>上下文菜单
  树视图节点可以显示上下文菜单中的子菜单选项。 通常，当用户右键单击某个项或与选择的项的 Windows 键盘上按菜单键时出现此情况。 务必节点获得焦点并处于选中状态。 这有助于用户确定子菜单属于哪个项。
@@ -420,15 +420,15 @@ ms.locfileid: "58931030"
 ##### <a name="tree-view-control"></a>树视图控件
  Visual Studio 树控件应遵循通用的键盘导航：
 
--   **向上键：** 选择项目树中向上移动
+- **向上键：** 选择项目树中向上移动
 
--   **向下箭头：** 选择通过树向下移动的项
+- **向下箭头：** 选择通过树向下移动的项
 
--   **向右箭头：** 展开树中的节点
+- **向右箭头：** 展开树中的节点
 
--   **向左的箭头：** 折叠树中的节点
+- **向左的箭头：** 折叠树中的节点
 
--   **输入密钥：** 启动、 加载和执行所选的项
+- **输入密钥：** 启动、 加载和执行所选的项
 
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid （树视图和网格视图）
  Trid 控件是一个复杂的控件，它包含 grid 中的树视图。 展开、 折叠，和导航树应遵守相同的键盘命令为树视图中，添加以下内容：

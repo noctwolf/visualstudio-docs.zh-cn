@@ -1,5 +1,5 @@
 ---
-title: 步骤 3：设置窗体属性 | Microsoft Docs
+title: 步骤 3：设置窗体属性 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782244"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067243"
 ---
 # <a name="step-3-set-your-form-properties"></a>步骤 3：设置窗体属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 接下来，使用“属性”窗口更改窗体的外观。  
   
- ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)（教程 1：用 Visual Basic 创建图片查看器 - 视频 1）或 [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)（教程 1：用 C# 创建图片查看器 - 视频 1）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
+ ![视频链接](../data-tools/media/playvideo.gif "播放视频")本主题的视频版本，请参阅[教程 1:在 Visual Basic-视频 1 中创建图片查看器](http://go.microsoft.com/fwlink/?LinkId=205209)或[教程 1:创建图片查看器中的C#-视频 1](http://go.microsoft.com/fwlink/?LinkId=205199)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
   
 ### <a name="to-set-your-form-properties"></a>设置窗体属性  
   
@@ -64,14 +64,14 @@ ms.locfileid: "54782244"
   
 7. 在转到下一个步骤之前，请停止程序，因为 IDE 不允许您在程序处于运行状态时更改程序。 记住，您可以使用以下任何一种方法来停止程序。  
   
-   -   在工具栏上，选择“停止调试”按钮。  
+   - 在工具栏上，选择“停止调试”按钮。  
   
-   -   在菜单栏上，依次选择“调试”、“停止调试”。  
+   - 在菜单栏上，依次选择“调试”、“停止调试”。  
   
-   -   选择“Form1”窗口上角的 X 按钮。  
+   - 选择“Form1”窗口上角的 X 按钮。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   
--   若要转到下一个示例步骤，请参阅[步骤 4：使用 TableLayoutPanel 控件设置窗体的布局](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。  
+- 要转到下一个教程步骤，请参阅[步骤 4：使用 TableLayoutPanel 控件设置窗体布局](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。  
   
--   若要返回上一个示例步骤，请参阅[步骤 2：运行程序](../ide/step-2-run-your-program.md)。
+- 要返回上一个教程步骤，请参阅[步骤 2：运行程序](../ide/step-2-run-your-program.md)。

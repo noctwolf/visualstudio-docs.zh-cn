@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087139"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 活动图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "58937769"
 |13|**发送信号的操作**|一种可以将消息或信号发送给另一个活动，或同一活动中的并发线程的操作。 操作的标题或其他注释中指定的信息包含了消息的类型和内容。<br /><br /> 此操作能够以信号形式发送数据，信号可以传递给对象流或输入插针 (16) 中的操作。|  
 |14|**接受事件的操作**|一种要在等到消息或信号后才能继续执行的操作。 标题或其他注释中指定的信息包含了此操作能接收的消息类型。<br /><br /> 如果此操作没有传入控制流，它会在收到消息后立即生成一个令牌。<br /><br /> 此操作能够以信号形式接收数据，信号可以在对象流或输出插针 (17) 中进行传递。<br /><br /> -   **IsUnmarshall** -如果为 true，可以有多个类型化的输出插针，且数据它们它们上面。 如果为 False，则所有数据都显示在一个插针上。|  
   
-###  <a name="DataFlow"></a> 数据流  
+### <a name="DataFlow"></a> 数据流  
  可以描述从一个操作到另一个操作的数据流。 有关此节中所用元素的更多信息，请参见“绘制活动图指南”主题的“绘制数据流”一节。  
   
  ![活动图中显示数据流](../modeling/media/uml-actovdata.png "UML_ActOvData")  

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107159"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58932463"
   
 1. 在 DSL 定义关系图中，图标或你想要显示的文本修饰器添加到形状类。  
   
-   1.  右键单击形状类、 指向**添加**，然后单击所需的类型的修饰器。  
+   1. 右键单击形状类、 指向**添加**，然后单击所需的类型的修饰器。  
   
-   2.  设置修饰器的**位置**属性。 多个修饰器可以具有相同的位置。 例如，你可以为 male 和 female 共享相同的位置的图标。  
+   2. 设置修饰器的**位置**属性。 多个修饰器可以具有相同的位置。 例如，你可以为 male 和 female 共享相同的位置的图标。  
   
-   3.  设置**默认图标**图标修饰器的属性。  
+   3. 设置**默认图标**图标修饰器的属性。  
   
 2. 选择关系图元素映射，这是形状类和 DSL 定义关系图上的域类之间的灰色线条。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "58932463"
   
     否则为单击下拉列表菜单，然后导航到关系或类属性所在的位置。  
   
-   -   若要避免错误报告，您应导航通过关系标记为"*"导航工具中。  
+   - 若要避免错误报告，您应导航通过关系标记为"*"导航工具中。  
   
 6. 设置**筛选器属性**为域属性。 例如，性别。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "58932463"
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>若要控制修饰器根据公式的可见性  
   
-1.  将计算的域属性添加到域类。 在中**属性**窗口中，设置以下值：  
+1. 将计算的域属性添加到域类。 在中**属性**窗口中，设置以下值：  
   
      **IsBrowsable =**`False`**-这将隐藏来自用户的属性**  
   
@@ -72,27 +72,27 @@ ms.locfileid: "58932463"
   
      有关详细信息，请参阅[计算和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。  
   
-2.  请控制修饰器的可见性的新属性。  
+2. 请控制修饰器的可见性的新属性。  
   
-    1.  选择关系图元素映射，它是从域类到形状中的灰色线。 在中**DSL 详细信息**窗口中，打开**DecoratorMap**选项卡。  
+    1. 选择关系图元素映射，它是从域类到形状中的灰色线。 在中**DSL 详细信息**窗口中，打开**DecoratorMap**选项卡。  
   
-    2.  检查**可见性筛选器**框。  
+    2. 检查**可见性筛选器**框。  
   
-    3.  在中**筛选器属性**，选择的控件属性**DecoratorControl**。  
+    3. 在中**筛选器属性**，选择的控件属性**DecoratorControl**。  
   
-    4.  下**可见性条目**，输入`True`。  
+    4. 下**可见性条目**，输入`True`。  
   
-3.  单击**转换所有模板**解决方案资源管理器工具栏中。  
+3. 单击**转换所有模板**解决方案资源管理器工具栏中。  
   
-4.  单击**生成解决方案**上**生成**菜单。  
+4. 单击**生成解决方案**上**生成**菜单。  
   
-5.  双击错误报告，其中显示："*YourClass*不包含定义为 GetDecoratorControlValue..."。  
+5. 双击错误报告，其中显示："*YourClass*不包含定义为 GetDecoratorControlValue..."。  
   
      在 Dsl\GeneratedCode\DomainClasses.cs 上打开文本编辑器。 上面突出显示的错误是请求你添加的方法的注释。  
   
-6.  请注意缺少的命名空间、 类和方法。  例如，Company.FamilyTree.Person.GetDecoratorControlValue()。  
+6. 请注意缺少的命名空间、 类和方法。  例如，Company.FamilyTree.Person.GetDecoratorControlValue()。  
   
-7.  在单独的代码文件中编写分部类定义包含缺少的方法。 例如：  
+7. 在单独的代码文件中编写分部类定义包含缺少的方法。 例如：  
   
     ```  
     namespace Company.FamilyTree  
@@ -105,7 +105,7 @@ ms.locfileid: "58932463"
   
      有关自定义使用程序代码模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-8.  重新生成并运行解决方案。  
+8. 重新生成并运行解决方案。  
   
 ## <a name="see-also"></a>请参阅  
  [定义形状和连接线](../modeling/defining-shapes-and-connectors.md)   

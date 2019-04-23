@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab40302e7b92f0cb3789c7510ba80904b45f5afe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096124"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Guid 和 Id 的 Visual Studio 命令
 Visual Studio SDK 的一部分安装的.vsct 文件中定义的 Visual Studio 集成的开发环境 (IDE) 中包含的命令的 GUID 和 ID 值。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -52,11 +52,11 @@ Visual Studio SDK 的一部分安装的.vsct 文件中定义的 Visual Studio �
 ### <a name="special-cases"></a>特殊情况
  在以下情况下，菜单文本或工具提示文本可能不完全匹配中的命令定义。
 
--   包括带下划线的字符，如下所述的菜单项**打印**命令**文件**菜单中的，在其中*P*带下划线。
+- 包括带下划线的字符，如下所述的菜单项**打印**命令**文件**菜单中的，在其中*P*带下划线。
 
      与符号前面的字符 (&) 菜单项名称中的字符将显示为带下划线。 但是， *.vsct*文件写入在 XML 中，它使用与号 (&) 字符以指示特殊字符，并要求必须在作为拼写与号以显示 *&amp;a m p;*。 因此，在 *.vsct*文件中，**打印**命令将显示为 *&amp;a m p;打印*。
 
--   命令，具有动态文本，如**保存**\<当前文件名\>，动态生成菜单项，例如各项**最近使用的文件**列表。
+- 命令，具有动态文本，如**保存**\<当前文件名\>，动态生成菜单项，例如各项**最近使用的文件**列表。
 
      没有可靠的方法来搜索动态文本。 相反，查找所需的命令在承载的咨询的组[Guid 和 Id 的 Visual Studio 菜单](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，并搜索该组的 ID。 如果命令定义不具备组作为其[父元素](../../extensibility/parent-element.md)，搜索*SharedCmdPlace.vsct*并*ShellCmdPlace.vsct* (或*VsDbgCmdPlace.vsct*调试器命令) 为`<CommandPlacement>`设置命令的父级的元素。 *SharedCmdPlace.vsct*， *ShellCmdPlace.vsct*，和*VsDbgCmdPlace.vsct*位于*\<Visual Studio SDK 安装路径\>\VisualStudioIntegration\Common\Inc\\*文件夹。
 

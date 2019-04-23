@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061315"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：公开库提供对对象管理器的符号列表
 符号浏览工具中，**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，将为新数据传送到请求传递给[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器。 对象管理器查找合适的库，并请求新的符号列表。 这些库通过提供到请求的数据来响应[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口以获取数据，并使用它来填充或更新符号浏览工具的视图。
@@ -31,10 +31,9 @@ ms.locfileid: "56612460"
 >
 >  对于本机代码符号提供程序实现，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>接口。
 
-
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>若要向对象管理器提供的符号列表
 
-1.  获取符号的列表中的项的数目，通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下面的示例演示如何对象管理器获取的列表中的项目数的信息。
+1. 获取符号的列表中的项的数目，通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下面的示例演示如何对象管理器获取的列表中的项目数的信息。
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -56,7 +55,7 @@ ms.locfileid: "56612460"
 
     ```
 
-2.  获取有关各类别以及给定的列表项的属性的实现信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的项类别<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>枚举。 下面的示例演示如何对象管理器获取给定类别的项的属性。
+2. 获取有关各类别以及给定的列表项的属性的实现信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的项类别<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>枚举。 下面的示例演示如何对象管理器获取给定类别的项的属性。
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -151,7 +150,7 @@ ms.locfileid: "56612460"
 
     ```
 
-3.  获取给定的列表项的文本表示形式通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下面的示例演示如何获取给定项的完整名称。
+3. 获取给定的列表项的文本表示形式通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下面的示例演示如何获取给定项的完整名称。
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -169,7 +168,7 @@ ms.locfileid: "56612460"
 
     ```
 
-4.  获取给定的列表项的图标信息通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 图标表示的类型 （类、 方法和等等） 和可访问性 （私有、 公共的等等） 的列表项。 下面的示例演示如何获取基于给定的项属性的信息图标。
+4. 获取给定的列表项的图标信息通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 图标表示的类型 （类、 方法和等等） 和可访问性 （私有、 公共的等等） 的列表项。 下面的示例演示如何获取基于给定的项属性的信息图标。
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -251,7 +250,7 @@ ms.locfileid: "56612460"
 
     ```
 
-5.  获取有关给定的列表项是否通过实现是可展开的信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下面的示例演示如何获取给定的项是否可以通过展开的信息。
+5. 获取有关给定的列表项是否通过实现是可展开的信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下面的示例演示如何获取给定的项是否可以通过展开的信息。
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -278,7 +277,7 @@ ms.locfileid: "56612460"
 
     ```
 
-6.  通过实现获取的给定的列表项的符号的子列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下面的示例演示如何获取的给定项的符号的子列表**调用**或**的调用方**关系图。
+6. 通过实现获取的给定的列表项的符号的子列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下面的示例演示如何获取的给定项的符号的子列表**调用**或**的调用方**关系图。
 
     ```vb
     ' Call graph list.

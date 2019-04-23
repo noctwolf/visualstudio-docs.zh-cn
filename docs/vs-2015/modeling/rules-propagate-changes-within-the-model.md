@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067555"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>域类上定义规则  
 
--   自定义代码文件中定义的类和它前面加<xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute>属性：  
+- 自定义代码文件中定义的类和它前面加<xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute>属性：  
 
     ```  
     [RuleOn(typeof(ExampleElement),   
@@ -97,19 +97,19 @@ namespace ExampleNamespace
 
     ```  
 
--   中的第一个参数的使用者类型可以是域类、 域关系、 形状、 连接符或关系图。 通常情况下，将规则应用于域类和关系。  
+- 中的第一个参数的使用者类型可以是域类、 域关系、 形状、 连接符或关系图。 通常情况下，将规则应用于域类和关系。  
 
      `FireTime`通常是`TopLevelCommit`。 这可确保仅进行的事务的所有主要更改后执行规则。 备选方法是内联的这在更改; 后立即执行该规则和 LocalCommit，规则的当前事务 （这可能不是最外面） 结束时执行。 此外可以设置会影响在队列中，其排序顺序的规则的优先级，但这是一个不可靠的方法的实现所需的结果。  
 
--   作为使用者类型，可以指定一个抽象类。  
+- 作为使用者类型，可以指定一个抽象类。  
 
--   此规则适用于所有使用者类的实例。  
+- 此规则适用于所有使用者类的实例。  
 
--   默认值为`FireTime`是 TimeToFire.TopLevelCommit。 这会导致最外部事务提交时要执行的规则。 一种替代方法是 TimeToFire.Inline。 这将导致触发事件后立即执行的规则。  
+- 默认值为`FireTime`是 TimeToFire.TopLevelCommit。 这会导致最外部事务提交时要执行的规则。 一种替代方法是 TimeToFire.Inline。 这将导致触发事件后立即执行的规则。  
 
 ### <a name="to-register-the-rule"></a>若要注册规则  
 
--   将规则类添加到的返回类型列表`GetCustomDomainModelTypes`域模型中：  
+- 将规则类添加到的返回类型列表`GetCustomDomainModelTypes`域模型中：  
 
     ```  
     public partial class ExampleDomainModel  
@@ -125,14 +125,13 @@ namespace ExampleNamespace
 
     ```  
 
--   如果您不确定域模型类的名称，该文件中查找**Dsl\GeneratedCode\DomainModel.cs**  
+- 如果您不确定域模型类的名称，该文件中查找**Dsl\GeneratedCode\DomainModel.cs**  
 
--   在 DSL 项目中的自定义代码文件中编写此代码。  
+- 在 DSL 项目中的自定义代码文件中编写此代码。  
 
 ### <a name="to-write-the-code-of-the-rule"></a>若要编写规则的代码  
 
 - 从以下基类之一派生规则类：  
-
 
   |                             基类                              |                                                                                                                                                                                                                                                                                                                                                                              触发器                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -147,24 +146,23 @@ namespace ExampleNamespace
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      执行事务时，将为已提交。                                                                                                                                                                                                                                                                                                                                                      |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     要回滚事务时执行。                                                                                                                                                                                                                                                                                                                                                     |
 
-
 - 每个类有一个方法重写。 类型`override`来发现它在类中。 此方法的参数标识要更改的元素。  
 
   请注意有关规则的以下几点：  
 
-1.  组在事务中的更改可能会触发许多规则。 通常情况下，当最外面的事务提交时，会执行规则。 中未指定的顺序执行它们。  
+1. 组在事务中的更改可能会触发许多规则。 通常情况下，当最外面的事务提交时，会执行规则。 中未指定的顺序执行它们。  
 
-2.  始终在事务内执行规则。 因此，无需创建一个新事务来进行更改。  
+2. 始终在事务内执行规则。 因此，无需创建一个新事务来进行更改。  
 
-3.  事务回滚时，或执行撤消或重做操作时，不会执行规则。 这些操作将在存储区中的所有内容重都置为其以前的状态。 因此，如果你的规则发生更改的应用商店之外的任何内容的状态，它可能保留在与应用商店 synchronism 内容。 若要更新在存储外的状态，则最好使用事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+3. 事务回滚时，或执行撤消或重做操作时，不会执行规则。 这些操作将在存储区中的所有内容重都置为其以前的状态。 因此，如果你的规则发生更改的应用商店之外的任何内容的状态，它可能保留在与应用商店 synchronism 内容。 若要更新在存储外的状态，则最好使用事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
 
-4.  从文件加载模型时，将执行一些规则。 若要确定是否加载或保存正在进行，请使用`store.TransactionManager.CurrentTransaction.IsSerializing`。  
+4. 从文件加载模型时，将执行一些规则。 若要确定是否加载或保存正在进行，请使用`store.TransactionManager.CurrentTransaction.IsSerializing`。  
 
-5.  如果你的规则的代码创建更多规则触发器，它们将添加到激发列表的末尾，并在事务完成之前将执行。 DeletedRules 筛选器之后执行的所有其他规则。 一个规则可以在事务中，每个更改一次运行多次。  
+5. 如果你的规则的代码创建更多规则触发器，它们将添加到激发列表的末尾，并在事务完成之前将执行。 DeletedRules 筛选器之后执行的所有其他规则。 一个规则可以在事务中，每个更改一次运行多次。  
 
-6.  要传递到和从规则的信息，您可以将信息存储在`TransactionContext`。 这是仅在事务期间维护的字典。 在事务结束时，它已被释放。 每个规则中的事件自变量提供对它的访问。 请记住规则未按可预测的顺序执行。  
+6. 要传递到和从规则的信息，您可以将信息存储在`TransactionContext`。 这是仅在事务期间维护的字典。 在事务结束时，它已被释放。 每个规则中的事件自变量提供对它的访问。 请记住规则未按可预测的顺序执行。  
 
-7.  在考虑其他备选方法后使用规则。 例如，如果你想要更新属性值发生更改时，请考虑使用计算的属性。 如果你想要约束的大小或形状的位置，使用`BoundsRule`。 如果你想要对属性值的更改作出响应，将添加`OnValueChanged`给属性的处理程序。 有关详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。  
+7. 在考虑其他备选方法后使用规则。 例如，如果你想要更新属性值发生更改时，请考虑使用计算的属性。 如果你想要约束的大小或形状的位置，使用`BoundsRule`。 如果你想要对属性值的更改作出响应，将添加`OnValueChanged`给属性的处理程序。 有关详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。  
 
 ## <a name="example"></a>示例  
  域关系实例化，若要链接两个元素时，下面的示例将更新一个属性。 不仅用户创建一个链接上一个关系图，而且还如果程序代码将创建一个链接时，将会触发规则。  

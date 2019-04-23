@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051786"
 ---
 # <a name="document-position"></a>文档位置
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试*文档位置*:
 
--   提供已知的 IDE 中的源文件的位置的抽象。 对大多数语言今天，文档位置可以认为的源文件中的位置。
+- 提供已知的 IDE 中的源文件的位置的抽象。 对大多数语言今天，文档位置可以认为的源文件中的位置。
 
--   描述调试引擎中的源文档中的位置。
+- 描述调试引擎中的源文档中的位置。
 
--   由实现[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)接口。
+- 由实现[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)接口。
 
 ## <a name="see-also"></a>请参阅
 - [代码上下文](../../extensibility/debugger/code-context.md)

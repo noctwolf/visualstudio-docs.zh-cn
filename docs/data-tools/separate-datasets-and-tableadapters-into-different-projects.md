@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096863"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>将数据集和 TableAdapter 分离到不同的项目中
 类型化数据集已得到增强，以便[Tableadapter](create-and-configure-tableadapters.md)和可以在不同的项目生成数据集类。 这使您可以快速分离各应用程序层及生成 n 层数据应用程序。
@@ -30,25 +30,25 @@ ms.locfileid: "55927654"
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>若要将数据集划分为不同的项目
 
-1.  打开包含数据集的解决方案 (*.xsd*文件)。
+1. 打开包含数据集的解决方案 (*.xsd*文件)。
 
     > [!NOTE]
     >  如果解决方案不包含想要将数据集代码分离到其中的项目，创建项目，或将现有项目添加到解决方案。
 
-2.  双击类型化数据集文件 ( *.xsd*文件) 中**解决方案资源管理器**以打开中的数据集**数据集设计器**。
+2. 双击类型化数据集文件 ( *.xsd*文件) 中**解决方案资源管理器**以打开中的数据集**数据集设计器**。
 
-3.  选择的空白区域**数据集设计器**。
+3. 选择的空白区域**数据集设计器**。
 
-4.  在中**属性**窗口中，找到**数据集项目**节点。
+4. 在中**属性**窗口中，找到**数据集项目**节点。
 
-5.  在中**数据集项目**列表中，选择要在其中生成数据集代码的项目的名称。
+5. 在中**数据集项目**列表中，选择要在其中生成数据集代码的项目的名称。
 
      选择想要生成数据集代码中，在其中的项目后**数据集文件**属性填充默认的文件名。 如有必要，可以更改此名称。 此外，如果你想要为特定目录中生成数据集代码，则可以设置**项目文件夹**属性设置为的文件夹名称。
 
     > [!NOTE]
     >  当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。
 
-6.  保存的数据集。
+6. 保存的数据集。
 
      数据集代码生成到中的选定项目**数据集项目**属性，并**TableAdapter**到当前项目生成代码。
 
@@ -60,7 +60,7 @@ ms.locfileid: "55927654"
 ## <a name="see-also"></a>请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
-- [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [演练：创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [分层更新](../data-tools/hierarchical-update.md)
 - [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

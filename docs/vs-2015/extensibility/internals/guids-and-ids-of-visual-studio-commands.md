@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107744"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令中的 GUID 和 ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Visual Studio SDK 的一部分安装的.vsct 文件中定义的 Visual Studio �
 ### <a name="special-cases"></a>特殊情况
  在以下情况下，菜单文本或工具提示文本可能不完全匹配中的命令定义。
 
--   包括带下划线的字符，如下所述的菜单项**打印**命令**文件**菜单中，P 是否带下划线。
+- 包括带下划线的字符，如下所述的菜单项**打印**命令**文件**菜单中，P 是否带下划线。
 
      在菜单项名称中的 & 字符前面的字符显示为带下划线。 不过，在 XML 中，它使用 & 字符以指示特殊字符，并需要显示 & 符必须拼写出来写入.vsct 文件为&amp;。 因此，在.vsct 文件中，**打印**命令将显示为&amp;打印。
 
--   命令，具有动态文本，如**保存***当前文件名*，动态生成菜单项，例如各项**最近使用的文件**列表。
+- 命令，具有动态文本，如**保存***当前文件名*，动态生成菜单项，例如各项**最近使用的文件**列表。
 
      没有可靠的方法来搜索动态文本。 相反，查找所需的命令在承载的咨询的组[Guid 和 Id 的 Visual Studio 菜单](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，并搜索该组的 ID。 如果命令定义不具备组作为其[父元素](../../extensibility/parent-element.md)，搜索 SharedCmdPlace.vsct 和 ShellCmdPlace.vsct （或调试器命令 VsDbgCmdPlace.vsct）`<CommandPlacement>`设置的父级的元素命令。 SharedCmdPlace.vsct，ShellCmdPlace.vsct，andVsDbgCmdPlace.vsct 处于*Visual Studio SDK 安装路径*\VisualStudioIntegration\Common\Inc\ 文件夹。
 

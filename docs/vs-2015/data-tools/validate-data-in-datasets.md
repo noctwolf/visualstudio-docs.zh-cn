@@ -24,17 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1740e9d7668101911862c91457a2c81c48f7b72d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67c9b9aed677e83cd8012b53530b4c474922108e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047132"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。  
   
  你可以确认正在写入到数据集的数据是通过构建到数据集本身的验证检查有效。 数据集可以检查的数据，无论执行更新时正在 — 不管是直接通过控件在表单中，在一个组件，或以其他方式。 因为数据集 （不同于数据库后端） 应用程序的一部分，它是生成特定于应用程序的验证逻辑位置。  
@@ -104,9 +103,9 @@ ms.locfileid: "58936220"
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要验证数据的行时将更改 (Visual Basic)  
   
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  双击想要验证的表的标题栏。 此操作将自动创建<xref:System.Data.DataTable.RowChanging>事件处理程序<xref:System.Data.DataTable>数据集的分部类文件中。  
+2. 双击想要验证的表的标题栏。 此操作将自动创建<xref:System.Data.DataTable.RowChanging>事件处理程序<xref:System.Data.DataTable>数据集的分部类文件中。  
   
     > [!TIP]
     >  双击要创建的行更改的事件处理程序的表名称的左侧。 如果您双击表名，可以对其进行编辑。  
@@ -115,14 +114,14 @@ ms.locfileid: "58936220"
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>若要验证数据的行时更改 (C#)  
   
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  双击想要验证的表的标题栏。 此操作将创建的分部类文件<xref:System.Data.DataTable>。  
+2. 双击想要验证的表的标题栏。 此操作将创建的分部类文件<xref:System.Data.DataTable>。  
   
     > [!NOTE]
     >  **数据集设计器**不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>事件。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>挂接表的初始化方法中的事件的事件，并运行的代码。  
   
-3.  将以下代码复制到分部类：  
+3. 将以下代码复制到分部类：  
   
     ```  
     public override void EndInit()  
@@ -156,7 +155,7 @@ ms.locfileid: "58936220"
   
 #### <a name="to-get-all-changed-records-from-a-dataset"></a>若要获取所有已更改的记录来自数据集  
   
--   调用<xref:System.Data.DataSet.GetChanges%2A>数据集的方法。  
+- 调用<xref:System.Data.DataSet.GetChanges%2A>数据集的方法。  
   
      下面的示例创建名为的新数据集`changedRecords`并填充名为的另一数据集的所有更改记录`dataSet1`。  
   
@@ -165,7 +164,7 @@ ms.locfileid: "58936220"
   
 #### <a name="to-get-all-changed-records-from-a-data-table"></a>若要获取所有已更改的记录从数据表  
   
--   调用<xref:System.Data.DataTable.GetChanges%2A>的数据表的方法。  
+- 调用<xref:System.Data.DataTable.GetChanges%2A>的数据表的方法。  
   
      下面的示例创建名为的新数据表`changedRecordsTable`并填充名为的另一个数据表中的所有更改记录`dataTable1`。  
   
@@ -174,14 +173,14 @@ ms.locfileid: "58936220"
   
 #### <a name="to-get-all-records-that-have-a-specific-row-state"></a>若要获取的特定行状态的所有记录  
   
--   调用`GetChanges`方法的数据集或数据表并传递<xref:System.Data.DataRowState>枚举值作为参数。  
+- 调用`GetChanges`方法的数据集或数据表并传递<xref:System.Data.DataRowState>枚举值作为参数。  
   
      下面的示例演示如何创建名为的新数据集`addedRecords`并仅填充已添加到的记录`dataSet1`数据集。  
   
      [!code-csharp[VbRaddataEditing#16](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#16)]
      [!code-vb[VbRaddataEditing#16](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#16)]  
   
--   下面的示例演示如何返回最近添加到的所有记录`Customers`表：  
+- 下面的示例演示如何返回最近添加到的所有记录`Customers`表：  
   
      [!code-csharp[VbRaddataEditing#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#17)]
      [!code-vb[VbRaddataEditing#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#17)]  
@@ -196,7 +195,7 @@ ms.locfileid: "58936220"
   
 #### <a name="to-get-the-original-version-of-a-record"></a>若要获取一条记录的原始版本  
   
--   通过传入访问列的值<xref:System.Data.DataRowVersion>你想要返回的行。  
+- 通过传入访问列的值<xref:System.Data.DataRowVersion>你想要返回的行。  
   
      下面的示例演示如何使用<xref:System.Data.DataRowVersion>若要获取的原始值的值`CompanyName`字段中<xref:System.Data.DataRow>:  
   
@@ -207,7 +206,7 @@ ms.locfileid: "58936220"
   
 #### <a name="to-get-the-current-version-of-a-record"></a>若要获取一条记录的当前版本  
   
--   访问的列的值，然后将参数添加到索引，指示你想要返回的行版本。  
+- 访问的列的值，然后将参数添加到索引，指示你想要返回的行版本。  
   
      下面的示例演示如何使用<xref:System.Data.DataRowVersion>要获取的当前值的值`CompanyName`字段中<xref:System.Data.DataRow>:  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ab342c2d038a0021d94858de916e66456622adb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086762"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中为应用商店应用创建并运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Visual Studio 2012 Express for Windows 8 单元测试工具旨在为那些将单
 >  本部分中的主题描述了 Visual Studio 2012 Express for Windows 8 的功能。 Visual Studio Ultimate、VS Premium 和 VS Professional 提供其他适用于单元测试的功能。
 >
 > - 在 VS Ultimate、VS Premium 和 VS Professional 中，你可以使用已为 Microsoft 测试资源管理器创建外接程序适配器的任何第三方和开放源代码单元测试框架。 还可使用 VS Ultimate 和 VS Premium 为测试分析和显示代码覆盖率信息。
->   -   在 VS Ultimate 中，你可以在每次生成后运行测试。 你也可以使用 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码将你的测试集中于你自己的代码之上。
->   -   **JavaScript**。 Visual Studio Express for Windows 8 的 IDE 不提供 JavaScript 单元测试功能。 在 Visual Studio Professional、Premium 和 Ultimate 中，JavaScript 单元测试框架作为 Visual Studio 库中的扩展提供。 你也可以使用某个独立的第三方或开源 JavaScript 单元测试框架，测试 JavaScript 代码。
+>   - 在 VS Ultimate 中，你可以在每次生成后运行测试。 你也可以使用 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码将你的测试集中于你自己的代码之上。
+>   - **JavaScript**。 Visual Studio Express for Windows 8 的 IDE 不提供 JavaScript 单元测试功能。 在 Visual Studio Professional、Premium 和 Ultimate 中，JavaScript 单元测试框架作为 Visual Studio 库中的扩展提供。 你也可以使用某个独立的第三方或开源 JavaScript 单元测试框架，测试 JavaScript 代码。
 >
 >   有关详细信息，请参阅 MSDN 库中的[单元测试代码](../test/unit-test-your-code.md)。
 

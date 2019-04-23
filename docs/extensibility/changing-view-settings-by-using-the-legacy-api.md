@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106483"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>通过使用传统的 API 更改视图设置
 可以通过用户更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。
@@ -25,13 +25,13 @@ ms.locfileid: "56697593"
 
  下面是典型的过程中更改的核心编辑器实例的视图设置。
 
-1.  调用`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口。
+1. 调用`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口。
 
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，将值指定为 GUID_EditPropCategory_View_MasterSettings`rguidCategory`参数。
+2. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，将值指定为 GUID_EditPropCategory_View_MasterSettings`rguidCategory`参数。
 
      执行此操作将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口，其中包含的视图的强制属性集。 永久强制此组中的任何设置。 如果设置不在此组中，则它将遵循中指定的选项**选项**对话框或用户的命令。
 
-3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，指定在相应的设置值`idprop`参数。
+3. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，指定在相应的设置值`idprop`参数。
 
      例如，若要强制执行自动换行，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>并指定 VSEDITPROPID_ViewLangOpt_WordWrap，值`vt`为`idprop`参数。 在此调用中，`vt`是 VT_BOOL 类型的变体和`vt.boolVal`为 VARIANT_TRUE。
 

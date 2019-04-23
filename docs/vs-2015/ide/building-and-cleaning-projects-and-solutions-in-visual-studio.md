@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba3a7c26f56b923b9286a5e2f290502f2765e2b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054542"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,28 +40,28 @@ ms.locfileid: "54753188"
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>生成、重新生成或清理整个解决方案
 
-1.  在“解决方案资源管理器”中，选择或打开解决方案。
+1. 在“解决方案资源管理器”中，选择或打开解决方案。
 
-2.  在菜单栏上选择“生成”，然后选择下列命令之一：
+2. 在菜单栏上选择“生成”，然后选择下列命令之一：
 
-    -   选择“生成”或“生成解决方案”，仅编译自最近生成以来更改过的项目文件和组件。
+    - 选择“生成”或“生成解决方案”，仅编译自最近生成以来更改过的项目文件和组件。
 
         > [!NOTE]
         >  当解决方案包括多个项目时，“生成”命令将变成“生成解决方案”。
 
-    -   选择“重新生成解决方案”清理解决方案，然后创建所有项目文件和组件。
+    - 选择“重新生成解决方案”清理解决方案，然后创建所有项目文件和组件。
 
-    -   选择“清理解决方案”，删除任何中间文件和输出文件。 仅剩下项目和组件文件后，可生成中间文件和输出文件的新实例。
+    - 选择“清理解决方案”，删除任何中间文件和输出文件。 仅剩下项目和组件文件后，可生成中间文件和输出文件的新实例。
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>生成或重新生成单个项目
 
-1.  在“解决方案资源管理器”中，选择或打开项目。
+1. 在“解决方案资源管理器”中，选择或打开项目。
 
-2.  在菜单栏上选择“生成”，再选择“生成 ProjectName”或“重新生成 ProjectName”。
+2. 在菜单栏上选择“生成”，再选择“生成 ProjectName”或“重新生成 ProjectName”。
 
-    -   选择“生成 ProjectName”后，仅生成自上次生成起更改过的项目组件。
+    - 选择“生成 ProjectName”后，仅生成自上次生成起更改过的项目组件。
 
-    -   选择“重新生成 ProjectName”项目名称可清理项目，然后生成项目文件和所有项目组件。
+    - 选择“重新生成 ProjectName”项目名称可清理项目，然后生成项目文件和所有项目组件。
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>仅生成启动项目及其依赖项
 
@@ -97,17 +97,17 @@ ms.locfileid: "54753188"
 
 ## <a name="to-compile-multiple-c-project-items"></a>编译多个 C++ 项目项
 
-1.  在“解决方案资源管理器”中，选择多个具有可编译操作的文件，打开某个文件的快捷菜单，然后选择“编译”。
+1. 在“解决方案资源管理器”中，选择多个具有可编译操作的文件，打开某个文件的快捷菜单，然后选择“编译”。
 
      如果文件具有依赖项，则按依赖顺序编译文件。 如果编译时无法提供文件所需的预编译标头，编译操作将失败。 编译操作使用当前的活动解决方案配置。
 
 ## <a name="to-stop-a-build"></a>停止生成
 
-1.  任意执行以下步骤之一：
+1. 任意执行以下步骤之一：
 
-    -   在菜单栏上，选择“生成”，再选择“取消”。
+    - 在菜单栏上，选择“生成”，再选择“取消”。
 
-    -   选择 Ctrl + Break 键。
+    - 选择 Ctrl + Break 键。
 
 ## <a name="see-also"></a>请参阅
- [如何：查看、 保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)[编译和生成](../ide/compiling-and-building-in-visual-studio.md)[了解生成配置](../ide/understanding-build-configurations.md) [调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/c + + 生成参考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+ [如何：查看、 保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)[编译和生成](../ide/compiling-and-building-in-visual-studio.md)[了解生成配置](../ide/understanding-build-configurations.md) [调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++生成参考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)

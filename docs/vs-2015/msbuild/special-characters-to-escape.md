@@ -17,24 +17,23 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2701c698d795f1af1f888e677362bb2cf248111
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: beeed84db240ecf57ca18dd9aef08622f14b06fc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782457"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659668"
 ---
 # <a name="special-characters-to-escape"></a>要转义的特殊字符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 仅当特殊字符在使用它们的上下文中具有特殊意义时，才必须对特殊字符进行转义。 例如，星号 (*) 仅在项定义的“Include”和“Exclude”属性对 <xref:Microsoft.Build.Tasks.CreateItem> 的调用中是特殊字符。 在所有其他情况下，星号都将被视为原义星号。 虽然不需要转义项目文件中无处不在的星号，但做也没有坏处。  
   
  使用表示法 %*xx* 替换特殊字符，其中 *xx* 表示 ASCII 字符的十六进制值。 例如，如需将星号 (*) 用作原义字符，可使用值 `%2A`。  
   
  要转义的特殊字符的完整列表紧跟：  
   
-|字符|说明​​|  
+|字符|描述|  
 |---------------|-----------------|  
 |%|百分号，用于引用元数据。|  
 |$|美元符号，用于引用属性。|  
@@ -47,5 +46,5 @@ ms.locfileid: "54782457"
 |*|星号，描述项的“Include/Exclude”节中的文件规范时使用的通配符。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：转义 MSBuild 中的特殊字符](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
+ [如何：在 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)

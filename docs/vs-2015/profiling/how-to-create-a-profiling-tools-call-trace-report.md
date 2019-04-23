@@ -1,5 +1,5 @@
 ---
-title: 如何：创建分析工具调用跟踪报告 | Microsoft Docs
+title: 如何：创建分析工具调用跟踪报表 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117819"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：创建分析工具调用跟踪报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "54774896"
   
 ### <a name="to-create-a-call-trace-report"></a>创建调用跟踪报告  
   
-1.  打开“命令提示符”窗口。  
+1. 打开“命令提示符”窗口。  
   
-2.  在命令提示符处，键入下列命令：  
+2. 在命令提示符处，键入下列命令：  
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
@@ -42,5 +42,5 @@ ms.locfileid: "54774896"
     |Xml|生成 Xml 格式的报告。|  
   
 ## <a name="see-also"></a>请参阅  
- [如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [如何：收集的事件跟踪 Windows (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [分析工具 API](../profiling/profiling-tools-apis.md)

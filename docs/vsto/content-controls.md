@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69ad44cefad48199efdb70bd88c1ed3b117d48ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062173"
 ---
 # <a name="content-controls"></a>内容控件
   借助内容控件，可设计出具有以下功能的文档和模板：
@@ -116,8 +116,8 @@ ms.locfileid: "56630855"
 
 |对于此任务：|执行此操作：|
 |--------------------|--------------|
-|获取或设置控件中显示的文本。|使用**文本**属性。 **注意：**<xref:Microsoft.Office.Tools.Word.PictureContentControl> 和 <xref:Microsoft.Office.Tools.Word.ContentControl> 类型不具有此属性。|
-|获取或设置在用户编辑控件、控件中填充数据源的数据或者控件的内容被删除之前，在控件中显示的临时文本。|使用**PlaceholderText**属性。 **注意：**<xref:Microsoft.Office.Tools.Word.PictureContentControl> 类型没有此属性。|
+|获取或设置控件中显示的文本。|使用**文本**属性。 **注意：** <xref:Microsoft.Office.Tools.Word.PictureContentControl> 和 <xref:Microsoft.Office.Tools.Word.ContentControl> 类型不具有此属性。|
+|获取或设置在用户编辑控件、控件中填充数据源的数据或者控件的内容被删除之前，在控件中显示的临时文本。|使用**PlaceholderText**属性。 **注意：** <xref:Microsoft.Office.Tools.Word.PictureContentControl> 类型没有此属性。|
 |获取或设置在用户单击时，显示在内容控件的边框中的标题。|使用**标题**属性。|
 |用户编辑控件后，自动删除文档中的控件。 （控件中的文本保留在文档中。）|使用**临时**属性。|
 |当用户在内容控件中单击，或者光标以编程方式移动到内容控件中时，运行代码。|处理控件的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 事件。|
@@ -125,7 +125,7 @@ ms.locfileid: "56630855"
 |在内容控件由于恢复或撤销操作而被添加到文档之后，运行代码。|处理控件的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> 事件。|
 |在正要从文档中删除内容控件之前，运行代码。|处理控件的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> 事件。|
 
-##  <a name="Protection"></a> 使用内容控件保护文档的某些部分
+## <a name="Protection"></a> 使用内容控件保护文档的某些部分
  当保护文档的某一部分时，将阻止用户更改或删除文档该部分中的内容。 有以下几种可使用内容控件保护文档各部分的方式。
 
  如果要保护的区域位于内容控件中，则可以使用内容控件的属性来阻止用户编辑或删除控件：
@@ -141,7 +141,7 @@ ms.locfileid: "56630855"
 
  有关如何使用内容控件保护文档的某些部分的详细信息，请参阅[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
-##  <a name="DataBinding"></a> 将数据绑定到内容控件
+## <a name="DataBinding"></a> 将数据绑定到内容控件
  可通过将内容控件绑定到数据源，来显示文档中的数据。 数据源更新时，内容控件会反映出更改。 还可以将更改保存回数据源。
 
  内容控件提供以下数据绑定选项：
@@ -163,7 +163,7 @@ ms.locfileid: "56630855"
 |---------------|-----------------------------|----------------------------------------------------------------|
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 数组|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|无|
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 数组|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|None|
 
  在文档级和 VSTO 外接程序项目中，可以使用控件中 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 属性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以编程方式将内容控件绑定到数据源。 如果这样做，在字符串中传递**文本**到*propertyName*参数的<xref:System.Windows.Forms.ControlBindingsCollection.Add%2A>方法。 **文本**属性是内容控件的默认数据绑定属性。
 
@@ -191,20 +191,20 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  可以将以下类型的内容控件绑定到自定义 XML 部件：
 
--   <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
+- <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
+- <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
+- <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PictureContentControl>
+- <xref:Microsoft.Office.Tools.Word.PictureContentControl>
 
--   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
+- <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>
 
 ### <a name="data-bind-events-for-content-controls"></a>将数据绑定的内容控件的事件
  所有内容控件都提供一组可以处理的事件，以执行数据相关的任务，例如在更新数据源之前验证控件中的文本是否符合某些标准。 下表列出了与数据绑定有关的内容控件事件。
 
-|任务|事件|
+|任务|Event|
 |----------|-----------|
 |在 Word 正要自动更新已绑定到自定义 XML 部件的内容控件中的文本之前，运行代码。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|
 |在 Word 正要自动更新已绑定到内容控件的自定义 XML 部件中的数据之前（即在内容控件中的文本更改之后），运行代码。|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|
@@ -228,7 +228,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 
  若要确定用户何时编辑内容控件的内容，可以将该控件绑定到自定义 XML 部件，然后处理 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 事件。 当用户更改已绑定到自定义 XML 部件的控件的内容时，引发此事件。 有关演示如何将内容控件绑定到自定义 XML 部件的演练，请参阅[演练：将内容控件绑定到自定义 XML 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
 
-###  <a name="checkbox"></a> 在 Word 项目中的复选框内容控件
+### <a name="checkbox"></a> 在 Word 项目中的复选框内容控件
  Word 2010 引入了一种表示复选框的新型内容控件。 但是，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不提供相应的 CheckBoxContentControl 类型，以便在 Office 项目中使用。 若要在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 Word 2010 项目中创建复选框内容控件，请使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 方法创建 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，然后将 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 值传递到该方法，以指定复选框内容控件。 下面的代码示例演示如何执行此操作。
 
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

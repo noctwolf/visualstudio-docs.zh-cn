@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054439"
 ---
 # <a name="target-build-order"></a>目标生成顺序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,19 +107,19 @@ ms.locfileid: "59651077"
 ## <a name="determining-the-target-build-order"></a>确定目标生成顺序  
  MSBuild 按以下方式确定目标生成顺序：  
   
-1.  运行 `InitialTargets` 目标。  
+1. 运行 `InitialTargets` 目标。  
   
-2.  运行由 **/target** 开关在命令行上指定的目标。 如果未在命令行上指定目标，则运行 `DefaultTargets` 目标。 如果都不存在，则运行出现的第一个目标。  
+2. 运行由 **/target** 开关在命令行上指定的目标。 如果未在命令行上指定目标，则运行 `DefaultTargets` 目标。 如果都不存在，则运行出现的第一个目标。  
   
-3.  评估目标的 `Condition` 属性。 如果出现 `Condition` 属性且评估结果为 `false`，那么不会运行该目标，且目标不会对生成造成进一步影响。  
+3. 评估目标的 `Condition` 属性。 如果出现 `Condition` 属性且评估结果为 `false`，那么不会运行该目标，且目标不会对生成造成进一步影响。  
   
-4.  执行目标前，运行其 `DependsOnTargets` 目标。  
+4. 执行目标前，运行其 `DependsOnTargets` 目标。  
   
-5.  执行目标前，运行 `BeforeTargets` 属性中列出的所有目标。  
+5. 执行目标前，运行 `BeforeTargets` 属性中列出的所有目标。  
   
-6.  执行目标前，会比较其 `Inputs` 属性和 `Outputs` 属性。 如果 MSBuild 确定任何输出文件相对于相应的输入文件过期，那么 MSBuild 将执行该目标。 否则，MSBuild 会跳过该目标。  
+6. 执行目标前，会比较其 `Inputs` 属性和 `Outputs` 属性。 如果 MSBuild 确定任何输出文件相对于相应的输入文件过期，那么 MSBuild 将执行该目标。 否则，MSBuild 会跳过该目标。  
   
-7.  执行或跳过目标后，运行 `AfterTargets` 属性中列出的所有目标。  
+7. 执行或跳过目标后，运行 `AfterTargets` 属性中列出的所有目标。  
   
 ## <a name="see-also"></a>请参阅  
  [目标](../msbuild/msbuild-targets.md)

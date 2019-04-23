@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039283"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>创建参数化 TableAdapter 查询
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58935424"
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>在设计数据绑定窗体时创建参数化的查询  
   
-1.  在窗体中选择已绑定到数据集的控件。 有关详细信息，请参阅[绑定 Windows 窗体控件添加到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。  
+1. 在窗体中选择已绑定到数据集的控件。 有关详细信息，请参阅[绑定 Windows 窗体控件添加到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。  
   
-2.  上**数据**菜单中，选择**添加查询**。  
+2. 上**数据**菜单中，选择**添加查询**。  
   
-3.  将 WHERE 语句和所需参数添加到 SQL 语句中，以完成“搜索标准生成器”对话框。  
+3. 将 WHERE 语句和所需参数添加到 SQL 语句中，以完成“搜索标准生成器”对话框。  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>将查询添加到现有数据绑定窗体  
   
@@ -91,11 +91,11 @@ ms.locfileid: "58935424"
   
 ### <a name="enable-a-query-to-accept-null-values"></a>启用查询能够接受 null 值  
   
-1.  在中**数据集设计器**，选择需要接受 null 参数值的 TableAdapter 查询。  
+1. 在中**数据集设计器**，选择需要接受 null 参数值的 TableAdapter 查询。  
   
-2.  在中**属性**窗口中，选择**参数**。 然后按旁边的省略号 (**...**) 按钮以打开**参数集合编辑器**。  
+2. 在中**属性**窗口中，选择**参数**。 然后按旁边的省略号 (**...**) 按钮以打开**参数集合编辑器**。  
   
-3.  选择允许 null 值的参数，并设置**AllowDbNull**属性设置为`true`。  
+3. 选择允许 null 值的参数，并设置**AllowDbNull**属性设置为`true`。  
   
 ## <a name="see-also"></a>请参阅
 

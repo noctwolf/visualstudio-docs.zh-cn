@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084877"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58932201"
 将分类的项目模板，使其显示在指定的组**新的项目**或**添加新项**对话框。  
   
 > [!WARNING]
->  启动 Visual Studio 2012 中的 c + + 支持项目模板。 不支持在 Visual Studio 2010 及更早版本的 c + +。  
+>  为支持项目模板C++从 Visual Studio 2012 开始。 它们不支持C++在 Visual Studio 2010 及更早版本。  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -57,11 +57,11 @@ ms.locfileid: "58932201"
   
  此值指定的类型的项目模板将创建并必须包含以下值之一：  
   
--   `CSharp`：指定此模板创建[!INCLUDE[csprcs](../includes/csprcs-md.md)]项目或项。  
+- `CSharp`：指定此模板创建[!INCLUDE[csprcs](../includes/csprcs-md.md)]项目或项。  
   
--   `VisualBasic`：指定此模板创建[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]项目或项。  
+- `VisualBasic`：指定此模板创建[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]项目或项。  
   
--   `Web`：指定此模板创建 Web 项目或项。 如果`ProjectType`元素包含此值，在中定义的项目或项的语言[ProjectSubType 元素 （Visual Studio 模板）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
+- `Web`：指定此模板创建 Web 项目或项。 如果`ProjectType`元素包含此值，在中定义的项目或项的语言[ProjectSubType 元素 （Visual Studio 模板）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
   
 ## <a name="remarks"></a>备注  
  `ProjectType` 是 `TemplateData` 的必需子元素。  

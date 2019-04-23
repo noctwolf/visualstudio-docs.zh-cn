@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756658"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653588"
 ---
 # <a name="cl-task"></a>CL 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 包装 Visual C++ 编译器工具 cl.exe。 编译器生成可执行 (.exe) 文件、动态链接库 (.dll) 文件或者代码模块 (.netmodule) 文件。 有关详细信息，请参阅[编译器选项](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)。  
   
 ## <a name="parameters"></a>参数  
@@ -54,7 +53,7 @@ ms.locfileid: "54756658"
   
    有关详细信息，请参阅[编译器选项](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c)。  
   
-- **AdditionalUsingDirectories**可选 String [] 参数。  
+- AdditionalUsingDirectories 可选 String[] 参数。  
   
    指定在解析传递给 **#using** 指令的文件引用时编译器将搜索的目录。  
   

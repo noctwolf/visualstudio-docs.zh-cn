@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97ff0b7e11bf79a8da6f3e034227c66ae1f9189
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110942"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>在 Visual Studio 中比较 VBA 和 Office 解决方案
   Microsoft Visual Basic for Applications (VBA) 使用与 Office 应用程序紧密集成的非托管代码。 你可以通过使用 Visual Studio 创建 Microsoft Office 项目以便充分利用 .NET Framework 和 Visual Studio 设计工具。
@@ -38,9 +38,9 @@ ms.locfileid: "56618323"
 
  使用 VBA 执行某些操作仍可更轻松地快速完成。 具体而言，以下操作可能适合继续使用 VBA：
 
--   自定义工作表函数。
+- 自定义工作表函数。
 
--   宏录制。
+- 宏录制。
 
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>结合 VBA 解决方案和使用 Visual Studio 创建 Office 解决方案
  可以从使用 Visual Studio 创建的 Office 解决方案中调用 VBA 代码，也可以从 VBA 调用使用 Visual Studio 创建的 Office 解决方案中的代码。 特定方法根据 Office 解决方案是 VSTO 外接程序还是文档级自定义项而有所不同。 有关详细信息，请参阅[从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)并[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。

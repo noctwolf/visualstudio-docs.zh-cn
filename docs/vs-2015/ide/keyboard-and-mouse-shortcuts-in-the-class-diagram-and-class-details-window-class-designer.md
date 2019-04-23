@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113009"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>类图和“类详细信息”窗口中的键盘快捷键和鼠标快捷方式（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ ms.locfileid: "54775822"
   
  **在本主题中**  
   
--   [在类设计器中使用鼠标](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [在类设计器中使用鼠标](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [在类详细信息窗口中使用鼠标](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [在类详细信息窗口中使用鼠标](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [在类设计器中使用键盘](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [在类设计器中使用键盘](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [在类详细信息窗口中使用键盘](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [在类详细信息窗口中使用键盘](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a>在类设计器中使用鼠标  
+## <a name="MouseClassDesigner"></a>在类设计器中使用鼠标  
  类图中支持下列鼠标操作：  
   
-|鼠标组合|上下文|说明​​|  
+|鼠标组合|上下文|说明|  
 |-----------------------|-------------|-----------------|  
 |双击|Shape 元素|打开代码编辑器。|  
 ||棒糖形连接器|展开/折叠棒糖形。|  
@@ -49,23 +49,23 @@ ms.locfileid: "54775822"
 |CTRL + 鼠标滚轮|类图|缩放。|  
 |CTRL + Shift + 单击|类图|缩放。|  
   
-##  <a name="MouseClassDetails"></a>在类详细信息窗口中使用鼠标  
+## <a name="MouseClassDetails"></a>在类详细信息窗口中使用鼠标  
  通过使用鼠标，可按以下列方式更改类详细信息窗口及其显示的数据的外观：  
   
--   单击任何可编辑的单元格即可编辑该单元格的内容。 你所做的更改会反映在存储或显示数据的所有位置，包括属性窗口中和源代码中。  
+- 单击任何可编辑的单元格即可编辑该单元格的内容。 你所做的更改会反映在存储或显示数据的所有位置，包括属性窗口中和源代码中。  
   
--   单击某一行的任何单元格将使属性窗口显示该行所表示的元素的属性。  
+- 单击某一行的任何单元格将使属性窗口显示该行所表示的元素的属性。  
   
--   若要更改列的宽度，请将拖动列标题右侧的边界，直到列变成你想要的宽度。  
+- 若要更改列的宽度，请将拖动列标题右侧的边界，直到列变成你想要的宽度。  
   
--   通过单击行左侧的箭头符号，可以扩展或折叠隔离舱或属性节点。  
+- 通过单击行左侧的箭头符号，可以扩展或折叠隔离舱或属性节点。  
   
--   类详细信息窗口提供了几个按钮，用于在当前类中创建新成员以及在类详细信息窗口网格中的成员隔离舱之间进行导航。 有关详细信息，请参阅类详细信息窗口按钮。  
+- 类详细信息窗口提供了几个按钮，用于在当前类中创建新成员以及在类详细信息窗口网格中的成员隔离舱之间进行导航。 有关详细信息，请参阅类详细信息窗口按钮。  
   
-##  <a name="KeyboardClassDesigner"></a>在类设计器中使用键盘  
+## <a name="KeyboardClassDesigner"></a>在类设计器中使用键盘  
  类图中支持下列键盘操作：  
   
-|键|上下文|说明​​|  
+|键|上下文|说明|  
 |---------|-------------|-----------------|  
 |箭头键|在类型形状内|对形状内容的树式导航（支持环绕形状）。 如果当前项可展开，则左键和右键会展开/折叠此项；如果当前项不可展开，则导航到其父级（请参阅视图导航以了解详细行为）。|  
 ||顶级形状|定义关系图上的形状。|  
@@ -89,7 +89,7 @@ ms.locfileid: "54775822"
 |Shift+Tab|全部上下文|导航至相同父项中的上一个子级（支持环绕）。|  
 |空格键|全部上下文|在当前元素上切换选择。|  
   
-##  <a name="KeyboardClassDetails"></a>在类详细信息窗口中使用键盘  
+## <a name="KeyboardClassDetails"></a>在类详细信息窗口中使用键盘  
   
 > [!NOTE]
 >  选择下列键绑定以专用于模拟键入代码的体验。  

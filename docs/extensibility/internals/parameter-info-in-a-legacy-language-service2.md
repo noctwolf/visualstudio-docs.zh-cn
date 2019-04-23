@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57c5516c70819f8f86d56e93f78ec5d877c72a78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 838e057fd0063df6a1c592dfefee759b56b9f89b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041190"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 参数的 IntelliSense 信息是在用户键入的参数列表时显示的一种方法签名的工具提示启动的方法参数列表的字符 （通常左括号）。 在输入每个参数和类型化参数分隔符 （通常为逗号） 时，工具提示将更新以显示下一个参数以粗体显示。
@@ -111,10 +111,10 @@ testfunc("a string",3);
 
  解析程序采用的步骤如下所示：
 
-1.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>带有文本"testfunc"。
+1. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>带有文本"testfunc"。
 
-2.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。
+2. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>。
 
-3.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。
+3. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>。
 
-4.  分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。
+4. 分析器调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>。

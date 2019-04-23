@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f3d513010b94c61e09f8bda6a9fb3074ba949bdd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057831"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>如何：设置性能数据文件名选项
+# <a name="how-to-set-performance-data-file-name-options"></a>如何：集性能数据文件名选项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 默认情况下，使用以下语法保存分析数据 (.vsp) 文件：  
@@ -27,7 +27,7 @@ ms.locfileid: "54760409"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 |||  
 |-|-|  
@@ -38,11 +38,11 @@ ms.locfileid: "54760409"
   
 ### <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>更改性能会话分析数据文件的命名语法  
   
-1.  在“性能资源管理器”中，右键单击性能会话的名称，然后单击“属性”。  
+1. 在“性能资源管理器”中，右键单击性能会话的名称，然后单击“属性”。  
   
-2.  单击“常规”。  
+2. 单击“常规”。  
   
-3.  在“报告”下更改下列任意设置：  
+3. 在“报告”下更改下列任意设置：  
   
     |||  
     |-|-|  

@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100594"
 ---
 # <a name="upgrading-projects"></a>升级项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58937564"
 ## <a name="upgrade-strategies"></a>升级策略  
  若要支持升级，您的项目系统实现必须定义并实施升级策略。 在确定您的策略时，你可以选择以支持并行 (SxS) 备份、 复制备份，或两者。  
   
--   SxS 备份意味着一个项目将需要升级到位，请添加合适的文件名称后缀，例如，".old 标记"这些文件复制。  
+- SxS 备份意味着一个项目将需要升级到位，请添加合适的文件名称后缀，例如，".old 标记"这些文件复制。  
   
--   复制备份意味着一个项目将项目的所有项都复制到用户提供的备份位置。 然后升级原始项目位置的相关文件。  
+- 复制备份意味着一个项目将项目的所有项都复制到用户提供的备份位置。 然后升级原始项目位置的相关文件。  
   
 ## <a name="how-upgrade-works"></a>如何升级的工作原理  
  在早期版本中创建解决方案时[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]较新版本，该解决方案文件以确定它是否需要升级的 IDE 检查中打开。 如果升级是必需的**升级向导**引导用户完成升级过程将自动启动。  
@@ -37,7 +37,7 @@ ms.locfileid: "58937564"
  当升级需求的解决方案时，它会查询其升级策略每个项目工厂。 该策略确定项目工厂是否支持复制备份或并行备份。 信息发送到**升级向导**，来收集备份所需的信息和向用户提供的适用选项。  
   
 ### <a name="multi-project-solutions"></a>多项目解决方案  
- 如果解决方案包含多个项目和升级策略不同，如项目工厂仅支持并行备份的 c + + 项目时，仅支持复制备份的 Web 项目，必须协商的升级策略。  
+ 如果解决方案包含多个项目和不同的升级策略，例如C++项目仅支持并行备份和 Web 项目，仅支持复制备份，项目工厂必须协商的升级策略。  
   
  该解决方案查询的每个项目工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>。 然后，它调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly%2A>全局项目文件是否需要升级并确定受支持的升级策略。 **升级向导**然后调用。  
   

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052774"
 ---
 # <a name="custom-xml-parts-overview"></a>自定义 XML 部件概述
   对于某些 Microsoft Office 应用程序，可在文档中嵌入 XML 数据。 时在文档中嵌入 XML 数据，数据被称为*自定义 XML 部件*。
@@ -47,13 +47,13 @@ ms.locfileid: "56616217"
 
  有关 Open XML 和自定义 XML 部件的结构的详细信息，请参阅以下文章：
 
--   [介绍 Office (2007) Open XML 文件格式](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [介绍 Office (2007) Open XML 文件格式](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [如何：处理 Open XML 格式文档](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [如何：处理 Open XML 格式文档](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [演练：Word 2007 XML 格式](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [演练：Word 2007 XML 格式](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [生成使用 Open XML 格式的 Word 2007 文档](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [生成使用 Open XML 格式的 Word 2007 文档](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Excel、Word 和 PowerPoint 还使你可以使用以二进制文件格式保存的文档中的自定义 XML 部件。 但如果文档以二进制格式保存，则无法添加或修改自定义 XML 部件，除非启动 Microsoft Office 应用程序。
@@ -66,9 +66,9 @@ ms.locfileid: "56616217"
 
  若要通过使用 Visual Studio 来创建自定义 XML 部件，请将新的 <xref:Microsoft.Office.Core.CustomXMLPart> 添加到文档中的 <xref:Microsoft.Office.Core.CustomXMLParts> 集合。 有关详细信息，请参阅下列主题：
 
--   [如何：将自定义 XML 部件添加到文档级自定义项](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [如何：将自定义 XML 部件添加到文档级自定义项](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>修改 XML 部件，而无需启动 Office 应用程序
  可在不启动 Excel、PowerPoint 或 Word 的情况下添加或修改自定义 XML 部件。 需在未安装 Microsoft Office 应用程序的计算机（如服务器）上使用文档中的 XML 数据时，这将非常有用。

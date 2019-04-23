@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067035"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>帮助查看器疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "54774596"
   
 #### <a name="to-activate-windows-search-service"></a>激活 Windows Search 服务  
   
-1.  启动服务器管理器。  
+1. 启动服务器管理器。  
   
-2.  在左侧导航窗格中，选择“角色”。  
+2. 在左侧导航窗格中，选择“角色”。  
   
-3.  在“角色摘要”窗格中，选择“添加角色”。  
+3. 在“角色摘要”窗格中，选择“添加角色”。  
   
-4.  选择“文件服务”角色，然后选择“下一步”按钮。  
+4. 选择“文件服务”角色，然后选择“下一步”按钮。  
   
-5.  选择 Windows Search 角色服务。  
+5. 选择 Windows Search 角色服务。  
   
 ## <a name="additional-resources"></a>其他资源  
  通过使用以下资源，可以获取更多信息，并针对 Help Viewer 提供反馈：  

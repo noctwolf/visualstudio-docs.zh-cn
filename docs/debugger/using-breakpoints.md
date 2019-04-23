@@ -34,17 +34,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfb3e68f1f967c3c74c93107b622c618a8af728
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537593"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085254"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
 
-##  <a name="BKMK_Overview"></a> 在源代码中设置断点
+## <a name="BKMK_Overview"></a> 在源代码中设置断点
  可以在任意可执行代码行上设置断点。 例如，在以下 C# 代码，可以设置断点在变量声明`for`循环中或内的任何代码`for`循环。 命名空间或类声明或方法签名，无法设置断点。
 
  若要在源代码中设置断点，请单击代码行旁边的最左侧边距中。 您还可以选择行，然后按**F9**，选择**调试** > **切换断点**，或右键单击并选择**断点** > **插入断点**。 断点显示为左边距中的一个红点。
@@ -67,7 +67,7 @@ ms.locfileid: "59537593"
 
 - 设置条件和操作、 添加和编辑标签，或将断点导出，右键单击该和选择合适的命令，或将鼠标悬停其上，然后选择**设置**图标。
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Windows 从调试器中设置断点
+## <a name="BKMK_Set_a_breakpoint_in_a_function"></a> Windows 从调试器中设置断点
 
 您还可以设置从断点**调用堆栈**并**反汇编**调试器窗口。
 
@@ -97,7 +97,7 @@ ms.locfileid: "59537593"
 
 2. 在中**反汇编**窗口中，单击想要中断的指令的左边距中。 此外可以选择它，然后按**F9**，或右键单击并选择**断点** > **插入断点**。
 
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 设置函数断点
+## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 设置函数断点
 
   当调用函数，可以中断执行。
 
@@ -136,17 +136,18 @@ ms.locfileid: "59537593"
 ### <a name="set-a-function-breakpoint-using-a-memory-address-native-c-only"></a>设置函数断点使用的内存地址 (本机C++仅)
  一个对象的地址可用于由特定类的实例调用的方法上设置函数断点。  例如，给定类型的对象可寻址`my_class`，可以在设置函数断点`my_method`实例调用的方法。
 
-1.  实例化类的实例之后，地方设置断点。
+1. 实例化类的实例之后，地方设置断点。
 
-2.  查找实例的地址 (例如， `0xcccccccc`)。
+2. 查找实例的地址 (例如， `0xcccccccc`)。
 
-3.  选择**调试** > **新断点** > **函数断点**，或按**Alt** +**F9** > **Ctrl**+**B**。
+3. 选择**调试** > **新断点** > **函数断点**，或按**Alt** +**F9** > **Ctrl**+**B**。
 
-4.  以下内容添加至**函数名**，然后选择**C++** 语言。
+4. 以下内容添加至**函数名**，然后选择**C++** 语言。
 
     ```C++
     ((my_class *) 0xcccccccc)->my_method
     ```
+
 ::: moniker range=">= vs-2019"
 
 ## <a name="BKMK_set_a_data_breakpoint_managed"></a>设置数据断点 (.NET Core 3.0 或更高版本)
@@ -185,16 +186,16 @@ ms.locfileid: "59537593"
 3. 在 **“字节计数”** 下拉菜单中，选择你想要调试程序监视的字节数。 例如，如果选择 **4**，则调试程序将监视从 `&avar` 开始的四个字节，并在其中任何字节的值发生更改时执行中断操作。
 
 在以下情况下，数据断点不起作用：
--   将未经调试的进程写入内存位置。
--   在两个或多个进程间共享内存位置。
--   内存位置在内核内更新。 例如，如果内存传递给 32 位 Windows`ReadFile`函数，将从内核模式下，更新内存，因此调试器不会中断该更新。
+- 将未经调试的进程写入内存位置。
+- 在两个或多个进程间共享内存位置。
+- 内存位置在内核内更新。 例如，如果内存传递给 32 位 Windows`ReadFile`函数，将从内核模式下，更新内存，因此调试器不会中断该更新。
 
 >[!NOTE]
 >- 数据断点依赖于特定的内存地址。 变量的地址更改从一个调试会话为下一步，因此数据断点将被自动禁用每个调试会话结束时。
 >
 >- 如果在局部变量上设置数据断点，则断点在函数结束时仍处于启用状态，但内存地址不再适用，因此断点的行为不可预测。 如果在本地变量上设置数据断点，应删除或禁用在函数结束前的断点。
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>在“断点”窗口中管理断点
+## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>在“断点”窗口中管理断点
 
  可以使用**断点**窗口来查看和管理你的解决方案中的所有断点。 此集中的位置是在大型解决方案中，或对于复杂断点非常关键的调试方案尤其有用。
 
@@ -206,7 +207,7 @@ ms.locfileid: "59537593"
 
 若要选择要在中显示的列**断点**窗口中，选择**显示列**。 选择一个列标题以对断点列表，可按该列进行排序。
 
-###  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 断点标签
+### <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 断点标签
 可以使用标签进行排序和筛选列表中的断点**断点**窗口。
 
 1. 若要将标签添加到断点中，右键单击该断点的源代码中或**断点**窗口中，并选择**编辑标签**。 添加新标签或选择一个现有证书，然后选择**确定**。
@@ -220,7 +221,7 @@ ms.locfileid: "59537593"
 - 要导出的所有断点，请取消选中所有框，并将**搜索**字段留空。 选择**导出满足当前搜索条件的所有断点**图标，并保存该文件。
 - 若要在中导入断点，**断点**窗口中，选择**从文件导入断点**图标，导航到 XML 文件位置，然后选择**打开**。
 
-##  <a name="breakpoint-conditions"></a>断点条件
+## <a name="breakpoint-conditions"></a>断点条件
  可以通过设置条件来控制在何时何处执行断点。 条件可以是调试器能够识别任何有效表达式。 有关有效表达式的详细信息，请参见[调试器中的表达式](../debugger/expressions-in-the-debugger.md)。
 
 **若要设置断点条件：**
@@ -293,15 +294,15 @@ ms.locfileid: "59537593"
 
 下**条件**中**断点设置**窗口中，选择**筛选器**，然后输入一个或多个以下表达式：
 
--   MachineName = "name"
--   ProcessId = value
--   ProcessName = "name"
--   ThreadId = value
--   ThreadName = "name"
+- MachineName = "name"
+- ProcessId = value
+- ProcessName = "name"
+- ThreadId = value
+- ThreadName = "name"
 
 将字符串值放在双引号内。 可以使用 `&` (AND)、 `||` (OR)、 `!` (NOT) 和括号合并子句。
 
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>断点操作和跟踪点
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>断点操作和跟踪点
  “跟踪点”是将消息打印到“输出”窗口的断点。 跟踪点的作用像这种编程语言中的一个临时跟踪语句。
 
 **若要设置跟踪点：**

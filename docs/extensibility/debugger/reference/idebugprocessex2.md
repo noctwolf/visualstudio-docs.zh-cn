@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8fd848ed1a8298cc4ea8a5ce9d2c0463a2b779
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e0b29d88387ccb2ed711f1a000bf7bb00a34dd01
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084253"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 此接口允许的会话调试管理器 (SDM) 通知过程将附加到或与进程分离。
@@ -39,7 +39,7 @@ IDebugProcessEx2 : IUnknown
 
 ## <a name="notes-for-callers"></a>调用方的说明
 
--   SDM 调用[QueryInterface](/cpp/atl/queryinterface)上`IDebugProcess2`接口，以获得此接口。
+- SDM 调用[QueryInterface](/cpp/atl/queryinterface)上`IDebugProcess2`接口，以获得此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法`IDebugProcessEx2`。

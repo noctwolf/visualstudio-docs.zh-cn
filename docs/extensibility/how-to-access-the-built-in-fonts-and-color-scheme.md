@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068218"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>如何：访问内置的字体和颜色 ccheme
 Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关联的字体和颜色的方案。 您可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。
@@ -34,28 +34,28 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>若要定义使用内置的字体和颜色的类别
 
-1.  创建任意的 GUID。
+1. 创建任意的 GUID。
 
      使用此 GUID 来唯一地标识一个类别。 IDE 的默认字体和颜色规范，将重新使用此类别。
 
     > [!NOTE]
     >  检索使用字体和颜色数据时<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他接口的 Vspackage 使用此 GUID 来引用内置的信息。
 
-2.  必须将该类别的名称添加到 VSPackage 的资源内部的字符串表 (*.rc*) 文件，以便可以根据需要在 IDE 中显示时进行本地化。
+2. 必须将该类别的名称添加到 VSPackage 的资源内部的字符串表 (*.rc*) 文件，以便可以根据需要在 IDE 中显示时进行本地化。
 
      有关详细信息，请参阅[添加或删除字符串](/cpp/windows/adding-or-deleting-a-string)。
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>若要注册使用内置的字体和颜色的类别
 
-1.  构造一个特殊类型的类别中的以下位置的注册表条目：
+1. 构造一个特殊类型的类别中的以下位置的注册表条目：
 
      *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<类别 >* 类别的非本地化名称。
 
-2.  填充注册表来使用的常用字体和配色方案包含四个值：
+2. 填充注册表来使用的常用字体和配色方案包含四个值：
 
-    |name|类型|数据|描述|
+    |名称|类型|数据|描述|
     |----------|----------|----------|-----------------|
     |类别|REG_SZ|GUID|标识包含股票的字体和配色方案的类别的任意 GUID。|
     |package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> 此 GUID 可供所有使用默认的字体和颜色配置的 Vspackage。|

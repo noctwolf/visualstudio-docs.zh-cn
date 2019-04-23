@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07afb43ebe34e5bbaba045bf26e83dbf51ed4bc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104520"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何：向 Word 文档添加书签控件
   在文档级项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>控件添加到你的项目在设计时或在运行时中的文档。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。
@@ -38,7 +38,7 @@ ms.locfileid: "56631271"
 
   有关详细信息<xref:Microsoft.Office.Tools.Word.Bookmark>控件，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。
 
-##  <a name="designtime"></a> 在设计时添加书签控件
+## <a name="designtime"></a> 在设计时添加书签控件
  可通过几种方式在设计时向文档级项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件：
 
 - 从 Visual Studio **“工具箱”**。
@@ -57,27 +57,27 @@ ms.locfileid: "56631271"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>若要从工具箱向文档添加书签控件
 
-1.  打开 **“工具箱”** 并单击 **“Word 控件”** 选项卡。
+1. 打开 **“工具箱”** 并单击 **“Word 控件”** 选项卡。
 
-2.  将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件拖动到文档。
+2. 将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件拖动到文档。
 
      **“添加书签”** 对话框随即出现。
 
-3.  选择文本或你想要包括在书签中的其他项。
+3. 选择文本或你想要包括在书签中的其他项。
 
-4.  单击 **“确定”**。
+4. 单击 **“确定”**。
 
      如果不希望保留默认书签名称，可以在 **“属性”** 窗口中更改名称。
 
 #### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>若要在 Word 中向文档添加书签控件
 
-1.  在托管在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 设计器的文档中，将光标置于要添加书签的地方，或选择你想要书签括起来的文本。
+1. 在托管在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 设计器的文档中，将光标置于要添加书签的地方，或选择你想要书签括起来的文本。
 
-2.  在功能区 **“插入”** 选项卡上的 **“链接”** 组中，单击 **“书签”** 按钮。
+2. 在功能区 **“插入”** 选项卡上的 **“链接”** 组中，单击 **“书签”** 按钮。
 
-3.  在 **“书签”** 对话框中，键入新书签的名称，然后单击 **“添加”**。
+3. 在 **“书签”** 对话框中，键入新书签的名称，然后单击 **“添加”**。
 
-##  <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加书签控件
+## <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加书签控件
  您可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>到你的文档在运行时以编程方式控制使用的方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>属性的`ThisDocument`在项目中的类。 有两种方法重载可用于按以下方式添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件：
 
 - 在指定范围内添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 。
@@ -88,7 +88,7 @@ ms.locfileid: "56631271"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>以编程方式向文档添加书签控件
 
-1.  在项目中的 `ThisDocument_Startup` 事件处理程序中，插入以下代码以将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件添加到文档中的第一个段落。
+1. 在项目中的 `ThisDocument_Startup` 事件处理程序中，插入以下代码以将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件添加到文档中的第一个段落。
 
      [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
@@ -96,7 +96,7 @@ ms.locfileid: "56631271"
     > [!NOTE]
     >  如果你想要从现有的 <xref:Microsoft.Office.Tools.Word.Bookmark> 创建 <xref:Microsoft.Office.Interop.Word.Bookmark>控件，请使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法并传入现有的 <xref:Microsoft.Office.Interop.Word.Bookmark>。
 
-##  <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加书签控件
+## <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加书签控件
  您可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>以编程方式向任何打开的文档，在运行时由 VSTO 外接程序中使用的控件。 若要执行此操作，生成基于打开的文档的 <xref:Microsoft.Office.Tools.Word.Document> 主机项，然后使用此主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 有两种方法重载可用于按以下方式添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件：
 
 - 在指定范围内添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 。
@@ -109,7 +109,7 @@ ms.locfileid: "56631271"
 
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>若要在指定范围内添加书签控件
 
-1.  使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法，并在你想要添加 <xref:Microsoft.Office.Interop.Word.Range> 的地方传入 <xref:Microsoft.Office.Tools.Word.Bookmark>。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法，并在你想要添加 <xref:Microsoft.Office.Interop.Word.Range> 的地方传入 <xref:Microsoft.Office.Tools.Word.Bookmark>。
 
      下面的代码示例将一个新 <xref:Microsoft.Office.Tools.Word.Bookmark> 添加到活动文档的开头。 若要使用此示例，在 Word VSTO 外接程序项目中运行来自 `ThisAddIn_Startup` 事件处理程序的代码。
 
@@ -118,7 +118,7 @@ ms.locfileid: "56631271"
 
 #### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>若要添加基于本机书签控件的书签控件
 
-1.  使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法，并传入你想要用作新 <xref:Microsoft.Office.Interop.Word.Bookmark> 的基础的现有的 <xref:Microsoft.Office.Tools.Word.Bookmark>。
+1. 使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法，并传入你想要用作新 <xref:Microsoft.Office.Interop.Word.Bookmark> 的基础的现有的 <xref:Microsoft.Office.Tools.Word.Bookmark>。
 
      下面的代码示例创建一个新 <xref:Microsoft.Office.Tools.Word.Bookmark> ，它基于活动文档中的第一个 <xref:Microsoft.Office.Interop.Word.Bookmark> 。 若要使用此示例，在 Word VSTO 外接程序项目中运行来自 `ThisAddIn_Startup` 事件处理程序的代码。
 

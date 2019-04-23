@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875442"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117924"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>XML 架构和文档级自定义项中的数据
   **重要**设置 Microsoft Word 有关本主题中的信息是提供的以独占方式适合的权益和使用个人和组织用户位于美国州和其领土的外部或使用，或开发运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已由 Microsoft 许可的 Microsoft Word 产品被与 Microsoft Word 中的自定义 XML。 有关 Microsoft Word 此信息可能不读取或使用的个人或组织在美国或其区域使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后，由 Microsoft 已许可的产品运行的程序中;这些产品不将行为与相同产品许可在该日期之前或购买，美国以外的使用许可。
@@ -40,16 +40,16 @@ ms.locfileid: "54875442"
 
  有两个主要对象：
 
--   XML 架构 （XSD 文件）。 对于工作簿中的每个架构，Visual Studio 将架构添加到项目。 这显示为项目项中扩展名为 XSD**解决方案资源管理器**。
+- XML 架构 （XSD 文件）。 对于工作簿中的每个架构，Visual Studio 将架构添加到项目。 这显示为项目项中扩展名为 XSD**解决方案资源管理器**。
 
--   类型化 <xref:System.Data.DataSet> 类。 此类是根据架构创建的。 此数据集类是在可见**类视图**。
+- 类型化 <xref:System.Data.DataSet> 类。 此类是根据架构创建的。 此数据集类是在可见**类视图**。
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>架构元素映射到 Excel 工作表时创建的对象
  当您将映射从一个架构元素**XML 源**任务窗格中的向工作表中，Visual Studio 会自动创建多个对象，并将它们添加到你的项目：
 
--   控件。 为工作簿中每个映射对象<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>（对于非重复架构元素） 的控件或<xref:Microsoft.Office.Tools.Excel.ListObject>（适用于重复架构元素） 的控件中的编程模型创建。 <xref:Microsoft.Office.Tools.Excel.ListObject>可以仅通过从该工作簿中删除映射和映射的对象中删除控件。 有关控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
+- 控件。 为工作簿中每个映射对象<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>（对于非重复架构元素） 的控件或<xref:Microsoft.Office.Tools.Excel.ListObject>（适用于重复架构元素） 的控件中的编程模型创建。 <xref:Microsoft.Office.Tools.Excel.ListObject>可以仅通过从该工作簿中删除映射和映射的对象中删除控件。 有关控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
--   BindingSource。 当您创建<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>通过将非重复架构元素映射到工作表中，<xref:System.Windows.Forms.BindingSource>创建并<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件绑定到<xref:System.Windows.Forms.BindingSource>。 必须将绑定<xref:System.Windows.Forms.BindingSource>映射到文档，如类型化的一个实例的架构匹配的数据源的实例<xref:System.Data.DataSet>创建类。 通过设置创建绑定<xref:System.Windows.Forms.BindingSource.DataSource%2A>并<xref:System.Windows.Forms.BindingSource.DataMember%2A>属性中公开**属性**窗口。
+- BindingSource。 当您创建<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>通过将非重复架构元素映射到工作表中，<xref:System.Windows.Forms.BindingSource>创建并<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件绑定到<xref:System.Windows.Forms.BindingSource>。 必须将绑定<xref:System.Windows.Forms.BindingSource>映射到文档，如类型化的一个实例的架构匹配的数据源的实例<xref:System.Data.DataSet>创建类。 通过设置创建绑定<xref:System.Windows.Forms.BindingSource.DataSource%2A>并<xref:System.Windows.Forms.BindingSource.DataMember%2A>属性中公开**属性**窗口。
 
     > [!NOTE]
     >  <xref:System.Windows.Forms.BindingSource>没有为创建<xref:Microsoft.Office.Tools.Excel.ListObject>对象。 您必须手动将绑定<xref:Microsoft.Office.Tools.Excel.ListObject>通过设置与数据源<xref:System.Windows.Forms.BindingSource.DataSource%2A>并<xref:System.Windows.Forms.BindingSource.DataMember%2A>中的属性**属性**窗口。

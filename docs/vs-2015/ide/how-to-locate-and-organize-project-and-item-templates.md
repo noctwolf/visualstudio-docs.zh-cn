@@ -16,14 +16,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091234"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目模板和项模板
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 必须将模板文件放置在 Visual Studio 能够识别的位置，这样“新建项目”和“添加新项”对话框中才会显示这些模板。 可以为模板创建自定义子类别，以使用户界面中也显示这些子类别。  
@@ -90,23 +90,23 @@ ms.locfileid: "54778521"
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>如要新建已安装的项模板类别  
   
-1.  在已安装的模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项模板创建 Web 类别，你将创建以下目录：  
+1. 在已安装的模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项模板创建 Web 类别，你将创建以下目录：  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  将此类别的所有模板放入新文件夹。  
+2. 将此类别的所有模板放入新文件夹。  
   
-3.  关闭 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有实例。  
+3. 关闭 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有实例。  
   
-4.  在“启动”菜单上，单击“运行”，键入“cmd”，然后单击“确定”。  
+4. 在“启动”菜单上，单击“运行”，键入“cmd”，然后单击“确定”。  
   
-5.  在命令提示符处，找到包含 devenv.exe 的目录，然后键入“devenv /setup”。  
+5. 在命令提示符处，找到包含 devenv.exe 的目录，然后键入“devenv /setup”。  
   
-6.  运行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+6. 运行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-7.  创建项目或打开现有项目。  
+7. 创建项目或打开现有项目。  
   
-8.  在 **“项目”** 菜单上，单击 **“添加新项”**。  
+8. 在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
 9. 验证确认 Web 类别显示在“项目类型”窗格的“添加新项”对话框中。  
   
@@ -129,30 +129,30 @@ ms.locfileid: "54778521"
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>新建自定义项模板类别  
   
-1.  在自定义项模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
+1. 在自定义项模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
   
      \My Documents\\<Visual Studio version\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  将此类别的所有模板放入新文件夹。  
+2. 将此类别的所有模板放入新文件夹。  
   
-3.  创建项目或打开现有项目。  
+3. 创建项目或打开现有项目。  
   
-4.  在 **“项目”** 菜单上，单击 **“添加新项”**。  
+4. 在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
-5.  验证确认 HelloWorld 类别显示在“项目类型”窗格中的“添加新项”对话框中。  
+5. 验证确认 HelloWorld 类别显示在“项目类型”窗格中的“添加新项”对话框中。  
   
 ### <a name="displaying-templates-in-parent-categories"></a>在父类别中显示模板  
  可以通过使用 .vstemplate 文件中的 `NumberOfParentCategoriesToRollUp` 元素允许子类别中的模板显示在其父类别中。 对于项目模板和项模板，操作步骤相同。  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>在父类别中显示模板  
   
-1.  找到包含模板的 .zip 文件。  
+1. 找到包含模板的 .zip 文件。  
   
-2.  解压缩 .zip 文件。  
+2. 解压缩 .zip 文件。  
   
-3.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开 .vstemplate 文件。  
+3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开 .vstemplate 文件。  
   
-4.  在 `TemplateData` 元素内，添加一个 `NumberOfParentCategoriesToRollUp` 元素。 例如，以下代码使模板在父类别中可见，但在更高层次结构中不可见。  
+4. 在 `TemplateData` 元素内，添加一个 `NumberOfParentCategoriesToRollUp` 元素。 例如，以下代码使模板在父类别中可见，但在更高层次结构中不可见。  
   
     ```  
     <TemplateData>  
@@ -164,13 +164,13 @@ ms.locfileid: "54778521"
     </TemplateData>  
     ```  
   
-5.  保存并关闭 .vstemplate 文件。  
+5. 保存并关闭 .vstemplate 文件。  
   
-6.  选择模板中的文件，右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹(zip 格式)”。 这些文件被压缩到一个 .zip 文件中。  
+6. 选择模板中的文件，右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹(zip 格式)”。 这些文件被压缩到一个 .zip 文件中。  
   
-7.  删除解压缩的模板文件和旧的 .zip 模板文件。  
+7. 删除解压缩的模板文件和旧的 .zip 模板文件。  
   
-8.  将新的 .zip 文件放入曾容纳已删除 .zip 文件的目录。  
+8. 将新的 .zip 文件放入曾容纳已删除 .zip 文件的目录。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义模板](../ide/customizing-project-and-item-templates.md)   

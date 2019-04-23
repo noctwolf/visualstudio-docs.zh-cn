@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 87c786f39e4bd9b55e81ae17e6e92b15aa36039b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b54e74297ca44662f49b5842aae8e334a8f4045a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095862"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144:透明代码不应从字节数组加载程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58935567"
 ## <a name="cause"></a>原因
  透明方法加载程序集从字节数组，使用以下方法之一：
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
--   <xref:System.Reflection.Assembly.Load%2A>
+- <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>规则说明
  透明代码安全检查不像关键代码的安全检查一样全面，因为透明代码不能执行安全敏感的操作。 从字节数组中加载的程序集在不透明的代码中可能不会被注意到，并且该字节数组可能包含确实需要审核的关键或更重要的安全关键代码。 因此，透明代码不应从字节数组加载程序集。

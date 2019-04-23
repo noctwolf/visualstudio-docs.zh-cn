@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae4a99fd1473ea25667887701198efee23b1356
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063421"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html >..."和所有其他标准部件的 HTML 页。 插入到模板中都*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
@@ -25,11 +25,11 @@ ms.locfileid: "55970798"
 
  文本模板由以下部件组成：
 
--   **指令**-控制模板的处理方式的元素。
+- **指令**-控制模板的处理方式的元素。
 
--   **文本块**-内容的直接复制到输出。
+- **文本块**-内容的直接复制到输出。
 
--   **控制块**-程序代码，用于将变量值插入到文本，以及控制条件或重复的文本部分。
+- **控制块**-程序代码，用于将变量值插入到文本，以及控制条件或重复的文本部分。
 
 若要试用此主题中的示例，将它们复制到模板文件中所述[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 编辑模板文件后, 保存该文件，，然后检查输出 **.txt**文件。
 
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- 请注意，开始符号有三个字符“<#=”。
+ 请注意，开始符号有三个字符"< #="。
 
  表达式可以包含作用域中的任何变量。 例如，下面的块输出数字行：
 

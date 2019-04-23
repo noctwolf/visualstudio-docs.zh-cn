@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7ceba236859b61444546661c2b8395c75b8d792
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109499"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安装 Office 主互操作程序集
   当你安装 Office 时，安装 Microsoft Office 主互操作程序集 (PIA)。
 
 ## <a name="to-install-the-pias-when-you-install-office"></a>安装 Office 时安装 PIA
 
-1.  确保具有不超过 2.0 版本的 .NET Framework。
+1. 确保具有不超过 2.0 版本的 .NET Framework。
 
-2.  安装 Microsoft Office，请确保 **.NET 可编程性支持**功能你想要扩展的应用程序选择 （默认安装中包括此功能）。
+2. 安装 Microsoft Office，请确保 **.NET 可编程性支持**功能你想要扩展的应用程序选择 （默认安装中包括此功能）。
 
     > [!WARNING]
     >  默认情况下，PIA 的生成这样就不必将 Pia 分发给用户，作为使用 VSTO 外接程序或自定义的先决条件时你的解决方案中嵌入。

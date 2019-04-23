@@ -16,17 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 767bb04bcfe14c8cafbe69e5cb19ecbd8082ee40
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 612b6cf34b345381c211f40cd66f7c69dda9dafa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084942"
 ---
 # <a name="options-text-editor-cc-formatting"></a>选项，文本编辑器，C/C++，格式设置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 允许你在使用 C 或 C++ 编程时更改代码编辑器的默认行为。  
   
  若要访问此页，请在“选项”对话框的左窗格中，展开“文本编辑器”，再展开“C/C++”，然后单击“格式设置”。  
@@ -72,11 +71,11 @@ ms.locfileid: "54770634"
  **语句块的自动大纲显示**  
  选择此选项时，将对下列语句构造启用自动大纲显示：  
   
--   [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
--   [switch 语句 (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch 语句 (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
--   [While 语句 (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [While 语句 (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)   

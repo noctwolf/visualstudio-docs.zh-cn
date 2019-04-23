@@ -13,12 +13,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088439"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54792871"
   
 #### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>使用“性能向导”选择收集方法  
   
--   在向导的第一页上，选择下列选项之一：  
+- 在向导的第一页上，选择下列选项之一：  
   
-|选项|说明​​|  
+|选项|描述|  
 |------------|-----------------|  
 |**CPU 采样**|收集对初始分析和分析 CPU 使用率问题非常有用的应用程序统计信息。|  
 |**检测**|收集对重点分析和分析输入/输出性能问题非常有用的详细的计时数据。|  
@@ -48,53 +48,53 @@ ms.locfileid: "54792871"
   
 #### <a name="to-select-a-collection-method-using-performance-explorer"></a>使用“性能资源管理器”选择收集方法  
   
-1.  在“性能资源管理器”工具栏上，单击“方法”下拉列表旁的箭头。  
+1. 在“性能资源管理器”工具栏上，单击“方法”下拉列表旁的箭头。  
   
-2.  单击想选择的收集方法。  
+2. 单击想选择的收集方法。  
   
 ## <a name="performance-session-property-pages"></a>性能会话属性页  
   
 #### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>使用性能会话属性选择采样或检测方法  
   
-1.  在“性能资源管理器”中，选择性能会话。  
+1. 在“性能资源管理器”中，选择性能会话。  
   
      性能会话文件的扩展名为 .psess。  
   
-2.  右键单击性能会话，然后单击“属性”。  
+2. 右键单击性能会话，然后单击“属性”。  
   
-3.  在“属性页”中，单击“常规”。  
+3. 在“属性页”中，单击“常规”。  
   
-4.  单击想选择的收集方法。  
+4. 单击想选择的收集方法。  
   
-    -   有关收集采样数据时其他可用选项的信息，请参阅[使用采样收集性能统计信息](../profiling/collecting-performance-statistics-by-using-sampling.md)  
+    - 有关收集采样数据时其他可用选项的信息，请参阅[使用采样收集性能统计信息](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-    -   有关收集采样数据时其他可用选项的信息，请参阅[使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)。  
+    - 有关收集采样数据时其他可用选项的信息，请参阅[使用检测收集详细计时数据](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)。  
   
 #### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>使用性能会话属性选择 .NET 内存数据收集  
   
-1.  在“性能资源管理器”中，选择性能会话。  
+1. 在“性能资源管理器”中，选择性能会话。  
   
      性能会话文件的扩展名为 .psess。  
   
-2.  右键单击性能会话，然后单击“属性”。  
+2. 右键单击性能会话，然后单击“属性”。  
   
-3.  在“属性页”中，单击“常规”。  
+3. 在“属性页”中，单击“常规”。  
   
-4.  单击“采样”或“检测”。  
+4. 单击“采样”或“检测”。  
   
-5.  单击“收集 .NET 对象分配信息”收集 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 对象分配的大小和数量。  
+5. 单击“收集 .NET 对象分配信息”收集 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 对象分配的大小和数量。  
   
-6.  （可选）单击“同时收集 .NET 对象的生存期信息”收集有关对象内存回收在其中的垃圾回收生成的数据。  
+6. （可选）单击“同时收集 .NET 对象的生存期信息”收集有关对象内存回收在其中的垃圾回收生成的数据。  
   
      有关收集 .NET 内存数据时其他可用选项的信息，请参阅[收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)。  
   
 #### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>使用性能会话属性选择并发数据收集  
   
-1.  在“性能资源管理器” 中，右键单击性能会话，然后单击“属性” 。  
+1. 在“性能资源管理器” 中，右键单击性能会话，然后单击“属性” 。  
   
-2.  在“属性页”中，单击“常规”。  
+2. 在“属性页”中，单击“常规”。  
   
-3.  单击“并发”。  
+3. 单击“并发”。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   

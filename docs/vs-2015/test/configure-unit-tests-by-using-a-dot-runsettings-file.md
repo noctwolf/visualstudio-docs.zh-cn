@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043037"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54792149"
   
    ![启用运行设置文件](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="example"></a>复制此示例 .runsettings 文件  
+## <a name="example"></a>复制此示例 .runsettings 文件  
  这是典型的 *.runsettings 文件。 文件的每个元素是可选的，因为每个值都有默认值。  
   
 ```xml  
@@ -152,7 +152,7 @@ ms.locfileid: "54792149"
 |配置|默认|值|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|在 Visual Studio 2012 中，已对 MSTest 适配器进行了优化，使其变得更快且更具可伸缩性。 某些行为（如测试的运行顺序）可能不与 Visual Studio 早期版本中的完全一致。 将此值设置为 `true` 可使用旧测试适配器。<br /><br /> 例如，如果为单元测试指定 app.config 文件，则可能会用到此配置。<br /><br /> 我们建议你考虑重构测试以便可以使用较新的适配器。|  
-|IgnoreTestImpact|False|当在 MSTest 中或从 Microsoft 测试管理器运行时，测试影响功能会设置受最近更改影响的测试的优先级。 此设置会停用该功能。 有关详细信息，请参阅[操作说明：收集数据来检查该测试应是运行代码更改后](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)。|  
+|IgnoreTestImpact|False|当在 MSTest 中或从 Microsoft 测试管理器运行时，测试影响功能会设置受最近更改影响的测试的优先级。 此设置会停用该功能。 有关详细信息，请参阅[如何：收集数据来检查该测试应是运行代码更改后](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47)。|  
 |SettingsFile||你可以指定测试设置文件以便与此处的 MS 测试适配器配合使用。 你还可以使用“测试” 、“测试设置” 和“选择测试设置文件” 菜单指定测试设置文件。<br /><br /> 如果指定此值，则还必须将“ForcedlegacyMode”  设置为“true” 。<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|False|测试运行完成后，MSTest 将关闭。 任何作为测试的一部分启动的进程也将在此时终止。 如果要使测试执行器保持活动状态，请将此配置设置为 true。<br /><br /> 例如，可以使用此配置让浏览器保持在编码的 UI 测试之间运行。|  
 |DeploymentEnabled|true|如果将此配置设置为 false，则不会将已在测试方法中指定的部署项目复制到部署目录中。|  

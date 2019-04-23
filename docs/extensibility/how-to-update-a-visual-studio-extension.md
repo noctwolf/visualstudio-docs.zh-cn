@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042114"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何：更新 Visual Studio 扩展
 可以通过使用你的系统上更新 Visual Studio 扩展**扩展和更新**若要安装的更新的版本。 如果您创建扩展的更新的版本，您可以将其表示为更新的 VSIX 清单中的版本号递增。
@@ -28,30 +28,30 @@ ms.locfileid: "56702455"
 
 ## <a name="to-update-an-extension-on-your-system"></a>若要更新你的系统上的扩展
 
-1.  在  “工具”菜单上，单击 “扩展和更新”。
+1. 在  “工具”菜单上，单击 “扩展和更新”。
 
-2.  在左窗格中，单击**更新**。
+2. 在左窗格中，单击**更新**。
 
-3.  在中间窗格中，单击你想要安装的更新。
+3. 在中间窗格中，单击你想要安装的更新。
 
      更新扩展的版本号显示在右窗格中，以及其他信息。
 
-4.  在右窗格的底部，单击**更新**。
+4. 在右窗格的底部，单击**更新**。
 
 ## <a name="to-publish-an-update-of-an-extension"></a>若要发布扩展的更新
 
-1.  在 Visual Studio 中，打开你想要更新的扩展的解决方案。 进行更改。
+1. 在 Visual Studio 中，打开你想要更新的扩展的解决方案。 进行更改。
 
     > [!IMPORTANT]
     >  无符号不会自动更新所有用户扩展。 你始终应登录你的扩展。
 
-2.  在中**解决方案资源管理器**，打开*source.extension.manifest*。
+2. 在中**解决方案资源管理器**，打开*source.extension.manifest*。
 
-3.  在清单设计器中的数字将值增加**版本**字段。
+3. 在清单设计器中的数字将值增加**版本**字段。
 
-4.  保存解决方案，并生成它。
+4. 保存解决方案，并生成它。
 
-5.  上传新 *.vsix*文件 (在 * \bin\Debug\*项目文件夹中的) 到[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web 站点。
+5. 上传新 *.vsix*文件 (在 * \bin\Debug\*项目文件夹中的) 到[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web 站点。
 
      当具有扩展的早期版本的用户身份打开**扩展和更新**，新版本将出现在**更新**列表中，前提是该工具将自动查找更新。
 

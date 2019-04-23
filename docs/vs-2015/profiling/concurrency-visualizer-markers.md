@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47860775a6351cab83cd43975e94373c3558305a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 143cea7a60fd136777943e849713ca0bdfe171fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078312"
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ ms.locfileid: "54795342"
 ## <a name="kinds-of-markers"></a>标记类型  
  并发可视化工具使用三类标记来表示应用程序事件：标志、消息和跨度。  
   
-1.  *标志*用于指示应用中关注的时间点。  例如，您可以使用标记来表示一个达到特定阈值或引发异常的变量值。  
+1. *标志*用于指示应用中关注的时间点。  例如，您可以使用标记来表示一个达到特定阈值或引发异常的变量值。  
   
-2.  *消息*也标记时间点，但可以将其用于日志样式的跟踪。  例如，过去可能转储到日志文件的内容，现在可以包装到消息调用中，以便对其进行追踪并在并发可视化工具中查看。 还可以使用并发可视化工具将此数据导出到 CSV 文件。  
+2. *消息*也标记时间点，但可以将其用于日志样式的跟踪。  例如，过去可能转储到日志文件的内容，现在可以包装到消息调用中，以便对其进行追踪并在并发可视化工具中查看。 还可以使用并发可视化工具将此数据导出到 CSV 文件。  
   
-3.  *范围*表示应用中的时间间隔，例如，它其中的某个阶段。  
+3. *范围*表示应用中的时间间隔，例如，它其中的某个阶段。  
   
 ## <a name="marker-linkage-to-threads"></a>线程的标记链接  
  每个生成标记的线程都有单独的时间线通道。  负责生成标记事件的线程的 ID 显示在标记通道的说明旁。  标记通道左侧显示的 ID 与当前进程中其他线程的 ID 匹配。  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b33a3f7980031a84e381a317213de988280517c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598216"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085839"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：将操作窗格添加到 Word 文档或 Excel 工作簿
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，首先创建 Windows 窗体用户控件。 然后，将用户控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`在项目中的字段 (Excel)。
@@ -35,26 +35,26 @@ ms.locfileid: "56598216"
 
 #### <a name="to-create-the-user-control"></a>若要创建用户控件
 
-1.  在 Visual Studio 中打开 Word 或 Excel 文档级项目。
+1. 在 Visual Studio 中打开 Word 或 Excel 文档级项目。
 
-2.  在 **“项目”** 菜单上，单击 **“添加新项”**。
+2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-3.  在中**添加新项**对话框中，选择**操作窗格控件**，其命名为**HelloControl**，然后单击**添加**。
+3. 在中**添加新项**对话框中，选择**操作窗格控件**，其命名为**HelloControl**，然后单击**添加**。
 
     > [!NOTE]
     >  或者，可以添加**用户控件**到你的项目项。 由生成的类**操作窗格控件**并**用户控件**项在功能上等效。
 
-4.  从**Windows 窗体**选项卡**工具箱中，** 拖动**按钮**控件放到控件。
+4. 从**Windows 窗体**选项卡**工具箱中，** 拖动**按钮**控件放到控件。
 
     > [!NOTE]
     >  如果控件不可见的设计器中，双击**HelloControl**中**解决方案资源管理器**。
 
-5.  将代码添加到<xref:System.Windows.Forms.Control.Click>按钮事件处理程序。 下面的示例显示了 Microsoft Office Word 文档的代码。
+5. 将代码添加到<xref:System.Windows.Forms.Control.Click>按钮事件处理程序。 下面的示例显示了 Microsoft Office Word 文档的代码。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
      [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
 
-6.  在 C# 中，必须添加为按钮单击事件处理程序。 您可以将此代码放置在`HelloControl`构造函数调用的后面`InitializeComponent`。
+6. 在 C# 中，必须添加为按钮单击事件处理程序。 您可以将此代码放置在`HelloControl`构造函数调用的后面`InitializeComponent`。
 
      有关如何创建事件处理程序的信息，请参阅[如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
@@ -65,12 +65,12 @@ ms.locfileid: "56598216"
 
 ### <a name="to-add-the-user-control-to-the-actions-pane"></a>若要将用户控件添加到操作窗格
 
-1.  将以下代码添加到`ThisDocument`或`ThisWorkbook`为类级别声明的类 （不添加此代码的方法）。
+1. 将以下代码添加到`ThisDocument`或`ThisWorkbook`为类级别声明的类 （不添加此代码的方法）。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
      [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
 
-2.  将以下代码添加到`ThisDocument_Startup`事件处理程序`ThisDocument`类或`ThisWorkbook_Startup`事件处理程序`ThisWorkbook`类。
+2. 将以下代码添加到`ThisDocument_Startup`事件处理程序`ThisDocument`类或`ThisWorkbook_Startup`事件处理程序`ThisWorkbook`类。
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
      [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]

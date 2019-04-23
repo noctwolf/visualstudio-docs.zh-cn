@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062043"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相关服务和界面（源代码管理 VSPackage）
 本部分列出了所有的源控件中的 VSPackage 相关接口[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 源代码管理 VSPackage 实现这些接口的一些，并使用其他人来完成源代码管理任务。
@@ -30,13 +30,13 @@ ms.locfileid: "56598994"
 
  接口是：
 
--   必需：相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。
+- 必需：相应的实体 （源代码管理 VSPackage，源存根 （stub） 项目） 必须实现接口。
 
--   建议：实体应实现此接口;否则，源代码管理功能，可能会受到限制。
+- 建议：实体应实现此接口;否则，源代码管理功能，可能会受到限制。
 
--   可选： 实体可以实现此接口可提供更丰富的功能集。
+- 可选： 实体可以实现此接口可提供更丰富的功能集。
 
-| 接口 | 目标 | 由实现 | 实现？ |
+| 接口 | 用途 | 由实现 | 实现？ |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | 编辑器调用此接口，然后再修改或保存文件。 源代码管理 VSPackage 可以签出该文件或拒绝该操作，如果签出失败。 | 源代码管理 VSPackage | 建议 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | 此接口提供基本源代码管理功能，对于项目，如注册和取消注册与源代码管理项目和基本源控件中绘制标志符号提供支持。 | 源代码管理 VSPackage | 必需 |

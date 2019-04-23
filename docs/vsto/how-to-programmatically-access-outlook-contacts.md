@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104221"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>如何：以编程方式访问 Outlook 联系人
   本示例查找其姓氏包含指定的搜索字符串的所有联系人。
@@ -32,7 +32,7 @@ ms.locfileid: "56598201"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
--   联系人姓氏和名字包含字符串"**Na"** (例如，Tzipi Butnaru) 在**联系人**文件夹。
+- 联系人姓氏和名字包含字符串"**Na"** (例如，Tzipi Butnaru) 在**联系人**文件夹。
 
 ## <a name="see-also"></a>请参阅
 - [使用联系人项](../vsto/working-with-contact-items.md)

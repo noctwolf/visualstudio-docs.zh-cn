@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39156994caa9e6ec073a05b0d8d04edab40e11e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073627"
 ---
 # <a name="listobject-control"></a>ListObject 控件
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是公开事件并且可以绑定到数据的列表。 当将列表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件，你可以直接针对此控件编程而无需遍历 Microsoft Office Excel 对象模型。
@@ -79,33 +79,33 @@ ms.locfileid: "56609379"
 ## <a name="events"></a>事件
  以下事件可用于 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件：
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataBindingFailure>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataMemberChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.DataSourceChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Deselected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectedIndexChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
 ## <a name="see-also"></a>请参阅
 - [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)

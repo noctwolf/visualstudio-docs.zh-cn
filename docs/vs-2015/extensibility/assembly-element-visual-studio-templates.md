@@ -13,12 +13,12 @@ ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e3dfc502157b2d0016f1a0fd9a12dc3905f623c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112351"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58936948"
   
  此文本指定要实例化项模板时，向项目添加的程序集。 必须通过以下方式之一指定此程序集名称：  
   
--   为完整的程序集名称。 例如：  
+- 为完整的程序集名称。 例如：  
   
     ```  
     <Assembly>  
@@ -65,7 +65,7 @@ ms.locfileid: "58936948"
     </Assembly>  
     ```  
   
--   为简单文本引用。 例如：  
+- 为简单文本引用。 例如：  
   
     ```  
     <Assembly> System </Assembly>  

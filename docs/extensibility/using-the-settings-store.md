@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5c2d39ce4652b6c41d80e919cca93c83c38fb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045396"
 ---
 # <a name="using-the-settings-store"></a>使用设置存储
 有两种类型的设置存储：
@@ -77,11 +77,11 @@ ms.locfileid: "56684996"
 
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>若要使用注册表编辑器来验证配置设置
 
-1.  打开 Regedit.exe。
+1. 打开 Regedit.exe。
 
-2.  导航到 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。
+2. 导航到 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\。
 
     > [!NOTE]
     >  请确保您查看时包含 \14.0Exp_Config\ 且不 \14.0_Config 密钥\\。 当您运行的 Visual Studio 实验实例时，配置设置是在注册表配置单元"14.0Exp_Config"。
 
-3.  展开 \Installed Products\ 节点。 如果在前面步骤中的消息是**Microsoft Windows Phone 开发人员工具安装：True**，\Installed Products\ 应包含 Microsoft Windows Phone 开发人员工具节点。 如果消息是**Microsoft Windows Phone 开发人员工具安装：False**，然后 \Installed Products\ 不应包含 Microsoft Windows Phone 开发人员工具节点。
+3. 展开 \Installed Products\ 节点。 如果在前面步骤中的消息是**Microsoft Windows Phone 开发人员工具安装：True**，\Installed Products\ 应包含 Microsoft Windows Phone 开发人员工具节点。 如果消息是**Microsoft Windows Phone 开发人员工具安装：False**，然后 \Installed Products\ 不应包含 Microsoft Windows Phone 开发人员工具节点。

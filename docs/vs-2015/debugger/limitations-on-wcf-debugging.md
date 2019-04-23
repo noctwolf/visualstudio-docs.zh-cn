@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095095"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58934365"
 ## <a name="limitations-on-stepping-into-a-service"></a>单步执行服务的限制  
  若要从正在调试的客户端应用程序单步执行服务，必须满足下列条件：  
   
--   客户端必须使用同步客户端对象调用服务。  
+- 客户端必须使用同步客户端对象调用服务。  
   
--   协定操作不能是单向的。  
+- 协定操作不能是单向的。  
   
--   如果服务器是异步的，则无法在服务内部执行代码时查看完整的调用堆栈。  
+- 如果服务器是异步的，则无法在服务内部执行代码时查看完整的调用堆栈。  
   
--   必须使用 app.config 或 Web.config 文件中的以下代码启用调试：  
+- 必须使用 app.config 或 Web.config 文件中的以下代码启用调试：  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ ms.locfileid: "58934365"
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>自动附加到服务的限制  
  自动附加到服务具有下列限制：  
   
--   该服务必须是要调试的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案的一部分。  
+- 该服务必须是要调试的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案的一部分。  
   
--   该服务必须进行托管。 它可以是网站项目（文件系统和 HTTP）、Web 应用程序项目（文件系统和 HTTP）或 WCF 服务库项目的一部分。 WCF 服务库项目可以是服务库或工作流服务库。  
+- 该服务必须进行托管。 它可以是网站项目（文件系统和 HTTP）、Web 应用程序项目（文件系统和 HTTP）或 WCF 服务库项目的一部分。 WCF 服务库项目可以是服务库或工作流服务库。  
   
--   必须从 WCF 客户端调用该服务。  
+- 必须从 WCF 客户端调用该服务。  
   
--   必须使用 app.config 或 Web.config 文件中的以下代码启用调试：  
+- 必须使用 app.config 或 Web.config 文件中的以下代码启用调试：  
   
     ```  
     <system.web>  

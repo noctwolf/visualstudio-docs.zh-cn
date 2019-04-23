@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066762"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中的对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。
@@ -57,13 +57,13 @@ ms.locfileid: "57525192"
 
 - 一个工厂对象，该对象使你可在运行时在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的项目中创建功能区控件和主机项。 可以通过使用 `Globals.Factory` 属性访问此对象。 此对象是实现以下接口之一的类的实例：
 
-  -   <xref:Microsoft.Office.Tools.Factory>
+  - <xref:Microsoft.Office.Tools.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+  - <xref:Microsoft.Office.Tools.Excel.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - <xref:Microsoft.Office.Tools.Outlook.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Word.Factory>
+  - <xref:Microsoft.Office.Tools.Word.Factory>
 
   例如，当用户单击 Excel 的文档级项目中的操作窗格上的按钮时，你可以使用 `Globals.Sheet1` 属性将文本插入到 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控件中。
 

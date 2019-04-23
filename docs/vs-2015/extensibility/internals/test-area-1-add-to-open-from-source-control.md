@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064851"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1：从源代码管理添加到 / Open
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ ms.locfileid: "58936051"
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]测试用例中使用集成的开发环境菜单路径：  
   
--   有关[!INCLUDE[vsvss](../../includes/vsvss-md.md)]、 源代码管理中打开：**文件**，**开放**，**项目**/**解决方案**; 查找中[!INCLUDE[vsvss](../../includes/vsvss-md.md)]位置。  
+- 有关[!INCLUDE[vsvss](../../includes/vsvss-md.md)]、 源代码管理中打开：**文件**，**开放**，**项目**/**解决方案**; 查找中[!INCLUDE[vsvss](../../includes/vsvss-md.md)]位置。  
   
--   其他源代码管理插件，请从源代码管理打开：**文件**，**源控件**，**源代码管理中打开**。  
+- 其他源代码管理插件，请从源代码管理打开：**文件**，**源控件**，**源代码管理中打开**。  
   
--   将添加到源代码管理：**文件**，**源控件**，**解决方案添加到源代码管理文件**，**源代码管理**，**将所选的项目添加到源代码管理**.  
+- 将添加到源代码管理：**文件**，**源控件**，**解决方案添加到源代码管理文件**，**源代码管理**，**将所选的项目添加到源代码管理**.  
   
--   快捷菜单 （项目/解决方案），**将解决方案添加到源代码管理**。  
+- 快捷菜单 （项目/解决方案），**将解决方案添加到源代码管理**。  
   
--   从源代码管理添加：**文件**，**源控件**，**从源代码管理添加项目**。  
+- 从源代码管理添加：**文件**，**源控件**，**从源代码管理添加项目**。  
   
--   有关[!INCLUDE[vsvss](../../includes/vsvss-md.md)]，添加从源控件也会从可用**文件**，**添加**，**现有项目**; 查找中[!INCLUDE[vsvss](../../includes/vsvss-md.md)]位置。  
+- 有关[!INCLUDE[vsvss](../../includes/vsvss-md.md)]，添加从源控件也会从可用**文件**，**添加**，**现有项目**; 查找中[!INCLUDE[vsvss](../../includes/vsvss-md.md)]位置。  
   
     > [!NOTE]
     >  可以在此测试中使用本地文件或本地 IIS （web 服务器） 的路径。  
   
 ## <a name="expected-behavior"></a>预期的行为  
   
--   对于每个支持的项目类型，用户应该能够"将添加到"和"打开从"源代码管理。  
+- 对于每个支持的项目类型，用户应该能够"将添加到"和"打开从"源代码管理。  
   
--   当项目添加到源代码管理，相应\< *ProjectName*> 创建.vspscc 文件 （项目提示文件）。 它包含排除的文件列表和连接信息。 不要删除此文件，因为它包含特定于项目的信息。  
+- 当项目添加到源代码管理，相应\< *ProjectName*> 创建.vspscc 文件 （项目提示文件）。 它包含排除的文件列表和连接信息。 不要删除此文件，因为它包含特定于项目的信息。  
   
--   当将解决方案添加到源代码管理，相应\< *SolutionName*> 创建.vssscc （三元组 S） 文件。 文本文件包含连接信息和排除文件列表，类似于项目提示文件。 此文件是暂时性的只在源代码管理数据库中存在。  
+- 当将解决方案添加到源代码管理，相应\< *SolutionName*> 创建.vssscc （三元组 S） 文件。 文本文件包含连接信息和排除文件列表，类似于项目提示文件。 此文件是暂时性的只在源代码管理数据库中存在。  
   
--   从源代码管理打开解决方案时\< *SolutionName*> 只在源代码管理数据库中存在的.vsscc (双精度 S) 文件在一个临时文件在本地创建。 此文件包含从解决方案的连接文件夹到解决方案文件的路径。 此文件是暂时性的在"从源代码管理打开"操作完成后，将删除本地副本。  
+- 从源代码管理打开解决方案时\< *SolutionName*> 只在源代码管理数据库中存在的.vsscc (双精度 S) 文件在一个临时文件在本地创建。 此文件包含从解决方案的连接文件夹到解决方案文件的路径。 此文件是暂时性的在"从源代码管理打开"操作完成后，将删除本地副本。  
   
--   一个项目添加到源代码管理后，您可以对其 （签出、 Get，等等） 执行任何源代码控制操作。  
+- 一个项目添加到源代码管理后，您可以对其 （签出、 Get，等等） 执行任何源代码控制操作。  
   
 ## <a name="test-cases"></a>测试用例  
  以下是为添加的特定测试用例向 / 从源代码管理测试区域打开。  

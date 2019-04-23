@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ddfc891126e5018757f50a1a04378793fe83c53
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 816f750148cc30de86fc116f80f64b218b4699d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763150"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069740"
 ---
 # <a name="understanding-memory-allocation-and-object-lifetime-data-values"></a>了解内存分配数据值和对象生存期数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "54763150"
   
  内存分配事件发生时，探查器会递增调用堆栈中每个函数的样本计数。 收集数据时，调用堆栈上只有一个函数当前在执行自己函数体中的代码。 堆栈上的其他函数是函数调用层次结构中的父级，在等待它们调用的函数返回。  
   
--   对于分配事件，探查器会递增当前在执行其指令的函数的独占样本计数。 因为独占样本也是函数的总计（非独占）样本的一部分，所以前处于活动状态的函数的非独占样本计数也会递增。  
+- 对于分配事件，探查器会递增当前在执行其指令的函数的独占样本计数。 因为独占样本也是函数的总计（非独占）样本的一部分，所以前处于活动状态的函数的非独占样本计数也会递增。  
   
--   探查器会递增调用堆栈上所有其他函数的非独占样本计数。  
+- 探查器会递增调用堆栈上所有其他函数的非独占样本计数。  
   
 ## <a name="lifetime-data"></a>生存期数据  
  .NET Framework 的垃圾回收器会为应用程序管理内存的分配和释放。 为优化垃圾回收器的性能，将托管堆分为三代：第 0 代、第 1 代和第 2 代。 运行时的垃圾回收器将新对象存储在第 0 代中。 未回收的对象将会升级并存储在第 1 代和第 2 代中。  

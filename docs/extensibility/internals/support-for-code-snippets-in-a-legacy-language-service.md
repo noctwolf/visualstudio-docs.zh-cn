@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043956"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码片段是一段代码将插入到源文件。 在代码段是使用一组字段的基于 XML 的模板。 插入代码段，并可以具有不同的值，具体取决于在其中插入片段的上下文后，将突出显示这些字段。 立即插入代码段后，可以设置的语言服务的格式代码段。
@@ -39,11 +39,11 @@ ms.locfileid: "56612096"
 ## <a name="providing-support-for-code-snippets"></a>提供代码片段的支持
  若要启用的代码片段支持，必须提供或安装代码片段，必须提供用户插入这些代码段的方式。 有三个步骤启用对代码片段的支持：
 
-1.  安装的代码段文件。
+1. 安装的代码段文件。
 
-2.  启用语言服务的代码段。
+2. 启用语言服务的代码段。
 
-3.  调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider>对象。
+3. 调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider>对象。
 
 ### <a name="installing-the-snippet-files"></a>安装代码片段文件
  一个有通常代码片段模板每个文件的一种语言的所有代码段将存储为 XML 文件中的模板。 有关使用代码片段模板的 XML 架构的详细信息，请参阅[代码片段架构参考](../../ide/code-snippets-schema-reference.md)。 每个代码片段模板标识与语言 id。 此语言 ID 在注册表中指定和放入`Language`属性的\<代码 > 模板中的标记。
@@ -115,9 +115,9 @@ ms.locfileid: "56612096"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>通过使用菜单命令插入代码片段
  若要使用菜单命令显示代码段浏览器，添加一个菜单命令，然后调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>中的方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>响应该菜单命令的接口。
 
-1.  将命令和一个按钮添加到.vsct 文件。 您可以找到在操作的说明[使用菜单命令创建扩展](../../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 将命令和一个按钮添加到.vsct 文件。 您可以找到在操作的说明[使用菜单命令创建扩展](../../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2.  从派生类<xref:Microsoft.VisualStudio.Package.ViewFilter>类并重写<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>方法，以指示对新的菜单命令的支持。 此示例将始终启用菜单命令。
+2. 从派生类<xref:Microsoft.VisualStudio.Package.ViewFilter>类并重写<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>方法，以指示对新的菜单命令的支持。 此示例将始终启用菜单命令。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ ms.locfileid: "56612096"
     }
     ```
 
-3.  重写<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>中的方法<xref:Microsoft.VisualStudio.Package.ViewFilter>类来获取<xref:Microsoft.VisualStudio.Package.ExpansionProvider>对象，并调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>对该对象的方法。
+3. 重写<xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A>中的方法<xref:Microsoft.VisualStudio.Package.ViewFilter>类来获取<xref:Microsoft.VisualStudio.Package.ExpansionProvider>对象，并调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>对该对象的方法。
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ ms.locfileid: "56612096"
 
      中的以下方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>类是由 Visual Studio 的顺序调用给定插入代码段的过程：
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      之后<xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>方法调用时，插入代码段和<xref:Microsoft.VisualStudio.Package.ExpansionProvider>对象是在特殊的编辑模式下用于修改刚插入的代码段。
 

@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113958"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何：使用 AsyncPackage 在后台加载 Vspackage
 加载和初始化 VS 包可能会导致磁盘 I/O。 如果此类 I/O 在 UI 线程上发生的情况，它会导致响应能力问题。 若要解决此问题，Visual Studio 2015 引入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>类，使包加载在后台线程上的。
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>将现有的 VSPackage 转换为 AsyncPackage
  大部分工作是创建一个新相同**AsyncPackage**。 执行步骤 1 至 5 更高版本。 此外需要额外的要小心，使用以下建议：
 
-1.  请记住删除`Initialize`必须在包中的重写。
+1. 请记住删除`Initialize`必须在包中的重写。
 
-2.  避免死锁：可能有隐藏在代码中的 Rpc。 现在发生在后台线程上。 请确保，如果要进行 RPC (例如， **GetService**)，需要转到主线程 (1) 或 （2） 使用一个 API 的异步版本存在 (例如， **GetServiceAsync**).
+2. 避免死锁：可能有隐藏在代码中的 Rpc。 现在发生在后台线程上。 请确保，如果要进行 RPC (例如， **GetService**)，需要转到主线程 (1) 或 （2） 使用一个 API 的异步版本存在 (例如， **GetServiceAsync**).
 
-3.  请勿过于频繁地在线程之间切换。 尝试将本地化可以发生在后台线程来减少加载时间的工作。
+3. 请勿过于频繁地在线程之间切换。 尝试将本地化可以发生在后台线程来减少加载时间的工作。
 
 ## <a name="querying-services-from-asyncpackage"></a>查询从 AsyncPackage 服务
  **AsyncPackage**可能或可能不会加载以异步方式具体取决于调用方。 例如，

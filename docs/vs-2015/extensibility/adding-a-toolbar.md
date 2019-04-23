@@ -11,12 +11,12 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12c57f83e992750ddc12c50fafb2065345022f80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933149"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077714"
 ---
 # <a name="adding-a-toolbar"></a>添加工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58933149"
   
 ## <a name="creating-a-toolbar-for-the-ide"></a>Ide 创建工具栏  
   
-1.  在 ToolbarTestCommandPackage.vsct，查找符号部分。 在名为 guidToolbarTestCommandPackageCmdSet GuidSymbol 元素中，添加一个工具栏和工具栏组声明，如下所示。  
+1. 在 ToolbarTestCommandPackage.vsct，查找符号部分。 在名为 guidToolbarTestCommandPackageCmdSet GuidSymbol 元素中，添加一个工具栏和工具栏组声明，如下所示。  
   
     ```xml  
     <IDSymbol name="Toolbar" value="0x1000" />  
@@ -45,7 +45,7 @@ ms.locfileid: "58933149"
   
     ```  
   
-2.  在顶部的命令部分，创建一个菜单的部分。 将菜单元素添加到菜单部分来定义您的工具栏。  
+2. 在顶部的命令部分，创建一个菜单的部分。 将菜单元素添加到菜单部分来定义您的工具栏。  
   
     ```xml  
     <Menus>  
@@ -62,7 +62,7 @@ ms.locfileid: "58933149"
   
      不能像子菜单嵌套工具栏。 因此，无需分配父组。 此外，您无需设置优先级，因为用户可以移动工具栏。 通常情况下，初始放置工具栏的定义以编程方式，但用户的后续更改永久保存。  
   
-3.  在中[组](../extensibility/groups-element.md)部分中，现有的组项之后, 定义[组](../extensibility/group-element.md)元素以包含工具栏的命令。  
+3. 在中[组](../extensibility/groups-element.md)部分中，现有的组项之后, 定义[组](../extensibility/group-element.md)元素以包含工具栏的命令。  
   
     ```xml  
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"  
@@ -71,7 +71,7 @@ ms.locfileid: "58933149"
     </Group>  
     ```  
   
-4.  请在工具栏上显示的按钮。 在按钮部分中，将为到工具栏按钮中的父块。 生成的按钮块应如下所示：  
+4. 请在工具栏上显示的按钮。 在按钮部分中，将为到工具栏按钮中的父块。 生成的按钮块应如下所示：  
   
     ```xml  
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">  
@@ -85,11 +85,11 @@ ms.locfileid: "58933149"
   
      默认情况下，如果一个工具栏不具有任何命令，它不会不显示。  
   
-5.  生成项目并启动调试。 应显示在实验实例。  
+5. 生成项目并启动调试。 应显示在实验实例。  
   
-6.  右键单击 Visual Studio 菜单栏，以获取工具栏的列表。 选择**测试工具栏**。  
+6. 右键单击 Visual Studio 菜单栏，以获取工具栏的列表。 选择**测试工具栏**。  
   
-7.  现在应为一个图标文件图标中查找右侧看到您的工具栏。 当单击图标时，应看到一个消息框，显示**ToolbarTestCommandPackage。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. 现在应为一个图标文件图标中查找右侧看到您的工具栏。 当单击图标时，应看到一个消息框，显示**ToolbarTestCommandPackage。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

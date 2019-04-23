@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 427035b0fa07f390e13c21a0e420fed89e2d461b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056076"
 ---
 # <a name="walkthrough-outlining"></a>演练：大纲显示
 设置基于语言的功能，例如通过定义类型的文本区域，你想要展开或折叠大纲显示。 可以在语言服务的上下文中定义的区域或定义自己的文件名称扩展和内容类型和将区域定义应用于只为该类型，或适用于现有内容类型 （例如"text") 的区域定义。 本演练演示如何定义和显示大纲区域。
@@ -27,11 +27,11 @@ ms.locfileid: "56697411"
 
 ### <a name="to-create-a-mef-project"></a>创建 MEF 项目
 
-1.  创建 VSIX 项目。 将解决方案命名为 `OutlineRegionTest`。
+1. 创建 VSIX 项目。 将解决方案命名为 `OutlineRegionTest`。
 
-2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
-3.  删除现有的类文件。
+3. 删除现有的类文件。
 
 ## <a name="implement-an-outlining-tagger"></a>实现大纲显示标记器
  大纲区域被标记为的类型的标记 (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 此标记提供了标准大纲显示行为。 可以展开或折叠大纲方式显示的区域。 空心的区域标记的正号 (**+**) 如果它处于折叠状态或负号 (**-**) 如果已展开，并展开的区域一条竖直线方式来划分。
@@ -40,39 +40,39 @@ ms.locfileid: "56697411"
 
 ### <a name="to-implement-an-outlining-tagger"></a>若要实现大纲显示标记器
 
-1.  添加一个类文件并将其命名为 `OutliningTagger`。
+1. 添加一个类文件并将其命名为 `OutliningTagger`。
 
-2.  导入以下命名空间。
+2. 导入以下命名空间。
 
      [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
      [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]
 
-3.  创建一个名为类`OutliningTagger`，并让其实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
+3. 创建一个名为类`OutliningTagger`，并让其实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
 
      [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
      [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]
 
-4.  添加一些字段来跟踪文本缓冲区和快照和累积应标记为大纲显示区域的行集。 此代码包括区域表示对象 （若要在以后定义） 的大纲显示区域的列表。
+4. 添加一些字段来跟踪文本缓冲区和快照和累积应标记为大纲显示区域的行集。 此代码包括区域表示对象 （若要在以后定义） 的大纲显示区域的列表。
 
      [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
      [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]
 
-5.  添加字段，初始化一个标记器构造函数分析缓冲区，并添加到事件处理程序<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。
+5. 添加字段，初始化一个标记器构造函数分析缓冲区，并添加到事件处理程序<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。
 
      [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
      [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]
 
-6.  实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法，它会实例化标记跨越。 此示例假定在 span<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>中传递给该方法是连续的尽管它可能不始终是这种情况。 此方法为每个大纲区域实例化新的标记跨度。
+6. 实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>方法，它会实例化标记跨越。 此示例假定在 span<xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection>中传递给该方法是连续的尽管它可能不始终是这种情况。 此方法为每个大纲区域实例化新的标记跨度。
 
      [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
      [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]
 
-7.  声明`TagsChanged`事件处理程序。
+7. 声明`TagsChanged`事件处理程序。
 
      [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
      [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]
 
-8.  添加`BufferChanged`事件处理程序来响应<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>通过分析的文本缓冲区的事件。
+8. 添加`BufferChanged`事件处理程序来响应<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>通过分析的文本缓冲区的事件。
 
      [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
      [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]
@@ -102,12 +102,12 @@ ms.locfileid: "56697411"
 
 ### <a name="to-implement-a-tagger-provider"></a>若要实现一个标记器提供程序
 
-1.  创建一个名为类`OutliningTaggerProvider`实现<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>，并将其导出具有 ContentType 和 TagType 属性。
+1. 创建一个名为类`OutliningTaggerProvider`实现<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>，并将其导出具有 ContentType 和 TagType 属性。
 
      [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
      [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]
 
-2.  实现<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A>方法通过添加`OutliningTagger`到缓冲区的属性。
+2. 实现<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A>方法通过添加`OutliningTagger`到缓冲区的属性。
 
      [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
      [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]
@@ -117,11 +117,11 @@ ms.locfileid: "56697411"
 
 ### <a name="to-build-and-test-the-outlineregiontest-solution"></a>若要生成和测试 OutlineRegionTest 解决方案
 
-1.  生成解决方案。
+1. 生成解决方案。
 
-2.  当在调试器中运行此项目时，将启动 Visual Studio 的第二个实例。
+2. 当在调试器中运行此项目时，将启动 Visual Studio 的第二个实例。
 
-3.  创建文本文件。 键入一些文本，其中包括左大括号和右方括号。
+3. 创建文本文件。 键入一些文本，其中包括左大括号和右方括号。
 
     ```
     [
@@ -129,7 +129,7 @@ ms.locfileid: "56697411"
     ]
     ```
 
-4.  应包括这两个方括号的大纲区域。 您应可以通过单击左侧的左大括号负号，若要折叠大纲区域。 当区域处于折叠状态，省略号符号 (*...*) 应显示在折叠的区域和一个弹出窗口，其中包含文本的左侧**将鼠标悬停在文本**应显示的省略号上移动指针时。
+4. 应包括这两个方括号的大纲区域。 您应可以通过单击左侧的左大括号负号，若要折叠大纲区域。 当区域处于折叠状态，省略号符号 (*...*) 应显示在折叠的区域和一个弹出窗口，其中包含文本的左侧**将鼠标悬停在文本**应显示的省略号上移动指针时。
 
 ## <a name="see-also"></a>请参阅
 - [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

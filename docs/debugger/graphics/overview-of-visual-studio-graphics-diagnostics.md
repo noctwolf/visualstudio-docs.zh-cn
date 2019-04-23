@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4a839c1d93d89cf6d0502e234f7cb1401a6809
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055400"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断概述
 Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Direct3D 应用中的呈现问题和性能问题。 可以在 Windows PC 上或在远程 PC 或设备上本地运行的应用程序上使用图形诊断。
@@ -59,7 +59,7 @@ Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Dir
 
 #### <a name="to-open-the-directx-control-panel"></a>打开 DirectX 控制面板
 
--   在菜单栏上，依次选择“调试”、“图形”、“DirectX 控制面板”。
+- 在菜单栏上，依次选择“调试”、“图形”、“DirectX 控制面板”。
 
 ## <a name="graphics-analyzer"></a>图形分析器
  Visual Studio 图形分析器是一个专用接口，用于检查你已捕获的帧中的呈现和性能问题。 在图形分析器中，你将发现多种工具，可帮助你浏览和理解应用的呈现行为。 每个工具会公开一种不同的有关正在检查的帧的信息，这些工具旨在协同使用以直观缩小呈现问题的源范畴，从其在帧缓冲区中的外观开始。

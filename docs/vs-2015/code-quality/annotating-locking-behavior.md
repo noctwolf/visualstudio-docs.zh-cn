@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58938011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052384"
 ---
 # <a name="annotating-locking-behavior"></a>对锁定行为进行批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ ms.locfileid: "58938011"
   
  应记住的一些线程所有权规则：  
   
--   自旋锁是具有明确线程所有权的非计数锁。  
+- 自旋锁是具有明确线程所有权的非计数锁。  
   
--   互斥锁和临界区是具有明确线程所有权的计数锁。  
+- 互斥锁和临界区是具有明确线程所有权的计数锁。  
   
--   信号量和事件是不具有明确线程所有权的计数锁。  
+- 信号量和事件是不具有明确线程所有权的计数锁。  
   
 ## <a name="locking-annotations"></a>锁定批注  
  下表列出了锁定批注。  
@@ -109,7 +109,7 @@ ms.locfileid: "58938011"
 |`_Write_guarded_by_(expr)`|批注变量并表明变量每次受到修改时，`expr` 命名的锁对象的锁计数至少为 1。|  
   
 ## <a name="see-also"></a>请参阅  
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

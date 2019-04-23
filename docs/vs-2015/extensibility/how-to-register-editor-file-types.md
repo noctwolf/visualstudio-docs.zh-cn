@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042036"
 ---
 # <a name="how-to-register-editor-file-types"></a>如何：注册编辑器文件类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58937649"
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>若要注册使用 MPF 类编辑器文件类型  
   
-1.  提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>类编辑器在你的 VSPackage 的类中的相应参数。  
+1. 提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>类编辑器在你的 VSPackage 的类中的相应参数。  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ ms.locfileid: "58937649"
   
      `NameResourceID` BasicEditorUI 项目 Resources.h 文件中定义并标识为"My 编辑器"编辑器。  
   
-2.  重写 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。  
+2. 重写 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。  
   
      中的实现<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中，调用<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法并传递下面所示为编辑器工厂的实例。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "58937649"
   
      此步骤中注册编辑器工厂和编辑器文件扩展名。  
   
-3.  取消注册编辑器工厂。  
+3. 取消注册编辑器工厂。  
   
      当释放 VSPackage 时，编辑器工厂会自动注销。 如果编辑器工厂对象实现<xref:System.IDisposable>接口，其`Dispose`后工厂已被注销与调用方法[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "58937649"
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>若要注册使用注册表脚本编辑器的文件类型  
   
-1.  在注册表脚本中，定义编辑器工厂和编辑器工厂的 GUID 字符串中所示`GUID_BscEditorFactory`部分中的以下注册表脚本。 此外，定义扩展插件和编辑器扩展的优先级：  
+1. 在注册表脚本中，定义编辑器工厂和编辑器工厂的 GUID 字符串中所示`GUID_BscEditorFactory`部分中的以下注册表脚本。 此外，定义扩展插件和编辑器扩展的优先级：  
   
     ```  
   
@@ -92,9 +92,9 @@ ms.locfileid: "58937649"
   
      在此示例中的编辑器文件扩展名标识为".rtf"并且其优先级为"50"。 Resource.h 文件的 BscEdit 示例项目中定义的 GUID 字符串。  
   
-2.  将 VSPackage 注册。  
+2. 将 VSPackage 注册。  
   
-3.  注册编辑器工厂。  
+3. 注册编辑器工厂。  
   
      注册时使用的编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>实现。  
   

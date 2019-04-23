@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 304b61a7e0e11cf3b714fcc6f43855f5ded35713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079003"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 外接程序
   通过创建 VSTO 外接程序扩展 Microsoft Office 应用程序时，可以直接接针对项目中的 `ThisAddIn` 类编写代码。 此类可用于执行下列任务，例如：访问 Microsoft Office 主机应用程序的对象模型、自定义应用程序的用户界面 (UI) 和向其他 Office 解决方公开 VSTO 外接程序中的对象。
@@ -91,21 +91,21 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  有关特定 Microsoft Office 应用程序的对象模型的详细信息，请参阅以下主题：
 
--   [Excel 对象模型概述](../vsto/excel-object-model-overview.md)
+- [Excel 对象模型概述](../vsto/excel-object-model-overview.md)
 
--   [Word 对象模型概述](../vsto/word-object-model-overview.md)
+- [Word 对象模型概述](../vsto/word-object-model-overview.md)
 
--   [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)
+- [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)
 
--   [InfoPath 解决方案](../vsto/infopath-solutions.md)
+- [InfoPath 解决方案](../vsto/infopath-solutions.md)
 
--   [PowerPoint 解决方案](../vsto/powerpoint-solutions.md)
+- [PowerPoint 解决方案](../vsto/powerpoint-solutions.md)
 
--   [项目解决方案](../vsto/project-solutions.md)
+- [项目解决方案](../vsto/project-solutions.md)
 
--   [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
+- [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
 
-###  <a name="AccessingDocuments"></a> Office 应用程序启动时访问的文档
+### <a name="AccessingDocuments"></a> Office 应用程序启动时访问的文档
  并非所有 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 应用程序都会在启动时自动打开文档，任何 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 应用程序在启动时都不会打开文档。 因此，不将代码添加在`ThisAdd-In_Startup`如果代码需要文档才能打开的事件处理程序。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 这样，可以保证在代码执行对文档的操作前，该文档已打开。
 
  仅当在用户创建一个文档或打开现有文档时，以下代码示例才会使用 Word 中的文档。

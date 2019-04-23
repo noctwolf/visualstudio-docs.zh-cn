@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4ae0d3390be709dfe07f174bbb9754b986cdafc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eb15c6d19ab40df6913dd67466dc20012492b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913687"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058584"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中向工作流添加注释
 
 为方便创建更大、 更复杂的工作流，.NET Framework 4.5，开发人员可将批注添加到以下类型的设计器中的项：
 
--   <xref:System.Activities.Activity>
+- <xref:System.Activities.Activity>
 
--   <xref:System.Activities.Statements.State>
+- <xref:System.Activities.Statements.State>
 
--   <xref:System.Activities.Statements.Transition>
+- <xref:System.Activities.Statements.Transition>
 
--   从 <xref:System.Activities.Statements.FlowNode> 中派生的类
+- 从 <xref:System.Activities.Statements.FlowNode> 中派生的类
 
--   <xref:System.Activities.Variable>
+- <xref:System.Activities.Variable>
 
--   <xref:System.Activities.Argument>
+- <xref:System.Activities.Argument>
 
 > [!IMPORTANT]
 > 批注的内容作为纯文本保存到与工作流关联的 XAML 文件，并可能被其他人读取。 将敏感信息输入批注时要谨慎。
@@ -75,16 +75,16 @@ ms.locfileid: "55913687"
 
 1. 若要同时删除所有批注，请右键单击工作流设计器，然后选择**批注**，**都删除所有批注**。
 
-## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或自变量的批注
+## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或参数的批注
 
 1. 右键单击某个变量或参数，然后选择“添加批注”。
 
 1. 输入批注的文本。 变量或参数显示的批注图标。
 
-1. 右键单击有批注的某个变量或自变量。 选择“编辑批注”。
+1. 右键单击有批注的某个变量或参数。 选择“编辑批注”。
 
    批注打开以进行编辑。
 
-1. 右键单击有批注的某个变量或自变量。 选择“删除批注”。
+1. 右键单击有批注的某个变量或参数。 选择“删除批注”。
 
    删除批注。

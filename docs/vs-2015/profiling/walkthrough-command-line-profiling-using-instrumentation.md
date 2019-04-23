@@ -13,37 +13,37 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064688"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>演练：使用检测进行命令行分析
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>演练：命令行使用检测进行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本演练将演示通过使用分析工具的检测方法分析 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 独立应用程序以收集详细的计时和调用计数数据。 在本演练中，你将完成以下任务：  
   
--   使用 [VSInstr](../profiling/vsinstr.md) 命令行工具生成被检测的二进制文件。  
+- 使用 [VSInstr](../profiling/vsinstr.md) 命令行工具生成被检测的二进制文件。  
   
--   使用 [VSPerfCLREnv](../profiling/vsperfclrenv.md) 工具设置环境变量以收集 .NET 分析数据。  
+- 使用 [VSPerfCLREnv](../profiling/vsperfclrenv.md) 工具设置环境变量以收集 .NET 分析数据。  
   
--   使用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具收集分析数据。  
+- 使用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具收集分析数据。  
   
--   使用 [VSPerfReport](../profiling/vsperfreport.md) 工具生成基于文件的分析数据的报告。  
+- 使用 [VSPerfReport](../profiling/vsperfreport.md) 工具生成基于文件的分析数据的报告。  
   
 ## <a name="prerequisites"></a>系统必备  
   
--   [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
+- [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
--   对 C# 有中等程度的理解  
+- 对 C# 有中等程度的理解  
   
--   对命令行工具的使用有中等程度的理解  
+- 对命令行工具的使用有中等程度的理解  
   
--   [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本  
+- [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本  
   
--   若要使用分析提供的信息，最好有可用的调试符号信息。 有关详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
+- 若要使用分析提供的信息，最好有可用的调试符号信息。 有关详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>使用检测方法进行命令行分析  
  检测是一种分析方法，通过它，被检测二进制文件的特别生成的版本中将包含可在被监测模块中收集函数进入和退出时的计时信息的探测函数。 由于这种分析方法比采样更具侵入性，因此将导致更多的开销。 被检测的二进制文件也大于调试或发布二进制文件，并且不适用于部署。  
@@ -53,19 +53,19 @@ ms.locfileid: "54755428"
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>使用检测方法分析 PeopleTrax 应用程序  
   
-1.  安装 PeopleTrax 示例应用程序并生成发布版本。  
+1. 安装 PeopleTrax 示例应用程序并生成发布版本。  
   
-2.  打开命令提示符窗口，然后向本地路径环境变量添加**分析工具**目录。  
+2. 打开命令提示符窗口，然后向本地路径环境变量添加**分析工具**目录。  
   
-3.  将工作目录更改为包含 PeopleTrax 二进制文件的目录。  
+3. 将工作目录更改为包含 PeopleTrax 二进制文件的目录。  
   
-4.  创建目录以包含基于文件的报表。 键入以下命令：  
+4. 创建目录以包含基于文件的报表。 键入以下命令：  
   
     ```  
     md Reports  
     ```  
   
-5.  将 VSInstr 命令行工具用于检测应用程序中的二进制文件。 在单独的命令行上键入以下命令：  
+5. 将 VSInstr 命令行工具用于检测应用程序中的二进制文件。 在单独的命令行上键入以下命令：  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -77,19 +77,19 @@ ms.locfileid: "54755428"
   
      **请注意**：默认情况下，VSInstr 将保存原始文件的非检测备份。 备份文件的扩展名为 .orig。 例如，“MyApp.exe”的原始版本将另存为“MyApp.exe.orig”。  
   
-6.  键入以下命令设置相应的环境变量：  
+6. 键入以下命令设置相应的环境变量：  
   
     ```  
     VsPerfCLREnv /traceon  
     ```  
   
-7.  若要启动探查器，请键入以下命令：  
+7. 若要启动探查器，请键入以下命令：  
   
     ```  
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  在跟踪模式下启动探查器后，请运行 PeopleTrax.exe 进程的被检测版本以收集数据。  
+8. 在跟踪模式下启动探查器后，请运行 PeopleTrax.exe 进程的被检测版本以收集数据。  
   
      将出现“PeopleTrax”应用程序窗口。  
   

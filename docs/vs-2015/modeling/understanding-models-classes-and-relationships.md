@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108685"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "58937952"
   
  若要重新排列的 DSL 定义关系图，您可以：  
   
--   交换主并通过引用视图**将树放在此处**并**拆分树**命令。 右键单击单个域类，若要查看这些命令。  
+- 交换主并通过引用视图**将树放在此处**并**拆分树**命令。 右键单击单个域类，若要查看这些命令。  
   
--   通过按 Ctrl + Up 和 Ctrl + 向下进行重新排序的域类和形状类。  
+- 通过按 Ctrl + Up 和 Ctrl + 向下进行重新排序的域类和形状类。  
   
--   折叠或展开类在每个形状的右上方使用的图标。  
+- 折叠或展开类在每个形状的右上方使用的图标。  
   
--   通过单击底部的域类减号 （-） 折叠树的部分。  
+- 通过单击底部的域类减号 （-） 折叠树的部分。  
   
 ## <a name="inheritance"></a>继承  
  可以使用继承定义域类。 若要创建继承派生，单击继承工具，单击派生的类，然后单击类的基类。 模型元素具有其自己的域类，以及从基类继承的所有属性定义的所有属性。 它还继承关系中的其角色。  

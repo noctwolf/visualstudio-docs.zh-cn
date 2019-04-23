@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c80ee3cebe003eff7248626f0d8e27b3c179453
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9ec010680a490d538b1cdbe6d3994f075adaf193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083772"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 该编辑器还提供可以扩展为 Managed Extensibility Framework (MEF) 组件部件，其中包括大多数语言服务功能的扩展点。 主要扩展点类别如下：
 
--   内容类型
+- 内容类型
 
--   分类类型和分类格式
+- 分类类型和分类格式
 
--   边距和滚动条
+- 边距和滚动条
 
--   Tags
+- Tags
 
--   修饰
+- 修饰
 
--   鼠标处理器
+- 鼠标处理器
 
--   拖放处理程序
+- 拖放处理程序
 
--   选项
+- 选项
 
--   IntelliSense
+- IntelliSense
 
 ## <a name="extend-content-types"></a>扩展内容类型
  内容类型是类型的文本编辑器，例如处理、"text"、"代码"或"CSharp"的定义。 通过声明类型的变量来定义新的内容类型<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>并提供一个唯一的名称的新内容类型。 若要使用编辑器注册内容类型，请将其导出以及以下属性：
@@ -400,21 +400,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>： 此拖放处理程序的有效的文本格式。 按从最高到低的优先级顺序处理以下格式：
 
-  1.  任何自定义格式
+  1. 任何自定义格式
 
-  2.  FileDrop
+  2. FileDrop
 
-  3.  EnhancedMetafile
+  3. EnhancedMetafile
 
-  4.  WaveAudio
+  4. WaveAudio
 
-  5.  Riff
+  5. Riff
 
-  6.  差异
+  6. 差异
 
-  7.  区域设置
+  7. 区域设置
 
-  8.  调色板
+  8. 调色板
 
   9. PenData
 
@@ -498,39 +498,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implement-an-intellisense-source"></a>实现智能感知源
  若要自定义源，必须实现一个 （或多个） 的以下源接口：
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已弃用的<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。
 
  此外，必须实现相同类型的提供的程序：
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已弃用的<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。
 
  必须导出提供程序和以下属性：
 
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 源的名称。
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 源的名称。
 
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 源适用的内容 （例如，"text"或"代码"） 类型。
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 源适用的内容 （例如，"text"或"代码"） 类型。
 
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 源应 （相对于其他源） 的显示的顺序。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 源应 （相对于其他源） 的显示的顺序。
 
--   下面的示例显示了完成源提供程序上的导出特性。
+- 下面的示例显示了完成源提供程序上的导出特性。
 
 ```
 Export(typeof(ICompletionSourceProvider))]

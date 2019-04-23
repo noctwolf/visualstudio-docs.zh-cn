@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb764b453caa0a6230929fdc5fd002eb56550d67
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62af216c2c748aafd5128a861fec5033f0ba5d37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051981"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：与对象管理器注册库
 符号浏览工具，如**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，可以查看在项目中或在外部组件的符号。 符号包括命名空间、 类、 接口、 方法和其他语言元素。 库跟踪这些符号和公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器填充的数据的工具。
@@ -38,7 +38,7 @@ ms.locfileid: "56609057"
 
 ### <a name="to-register-a-library-with-the-object-manager"></a>若要向对象管理器注册库
 
-1.  创建一个库。
+1. 创建一个库。
 
     ```vb
     Private m_CallBrowserLibrary As CallBrowser.Library = Nothing
@@ -55,7 +55,7 @@ ms.locfileid: "56609057"
 
     ```
 
-2.  获取对的对象的引用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>类型并调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。
+2. 获取对的对象的引用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>类型并调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.RegisterSimpleLibrary%2A>方法。
 
     ```vb
     Private Sub RegisterLibrary()
@@ -111,7 +111,7 @@ ms.locfileid: "56609057"
 
 ### <a name="to-unregister-a-library-with-the-object-manager"></a>若要注销的对象管理器库
 
-1.  获取对的对象的引用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>类型并调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。
+1. 获取对的对象的引用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>类型并调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2.UnregisterLibrary%2A>方法。
 
     ```vb
     Private Sub UnregisterLibrary()

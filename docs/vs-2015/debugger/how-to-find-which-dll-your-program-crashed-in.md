@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060561"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>如何：查找导致程序崩溃的 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "58933003"
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>使用“模块”窗口查找崩溃发生的位置  
   
-1.  记下崩溃发生的地址。  
+1. 记下崩溃发生的地址。  
   
-2.  在“调试”菜单上，选择“Windows”，然后单击“模块”。  
+2. 在“调试”菜单上，选择“Windows”，然后单击“模块”。  
   
-3.  在“模块”窗口中，找到“地址”列。 可能需要使用滚动条来查看。  
+3. 在“模块”窗口中，找到“地址”列。 可能需要使用滚动条来查看。  
   
-4.  单击列顶部的“地址”按钮，按地址对 DLL 进行排序。  
+4. 单击列顶部的“地址”按钮，按地址对 DLL 进行排序。  
   
-5.  细查排序的列表，找到其地址包含崩溃位置的 DLL。  
+5. 细查排序的列表，找到其地址包含崩溃位置的 DLL。  
   
-6.  查看“名称”和“路径”列来查看 DLL 的名称和路径。  
+6. 查看“名称”和“路径”列来查看 DLL 的名称和路径。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：调试本机 Dll](../debugger/how-to-debug-native-dlls.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a710554d46df8238f33aa90b647def337b57a9a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a3ddd7896732c5b87c5b6bd2032c27fffd96a41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109733"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用转义序列基于模板生成模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58930600"
   
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>若要生成从文本模板中的文本模板  
   
--   使用反斜杠符号 (\\) 作为转义字符，以生成指令、 语句、 表达式、 文本模板中必需的标记和类中的单独的文本模板文件的功能。  
+- 使用反斜杠符号 (\\) 作为转义字符，以生成指令、 语句、 表达式、 文本模板中必需的标记和类中的单独的文本模板文件的功能。  
   
     ```  
     \<#@ directive \#>  
