@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654316"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042376"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中特定错误的疑难解答
 本文列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供了步骤来解决每个问题。
@@ -81,9 +81,9 @@ ms.locfileid: "59654316"
 
  您应执行以下操作：
 
--   验证所有唯一的部署清单的标识、 应用程序清单的标识和主应用程序 EXE 的标识。
+- 验证所有唯一的部署清单的标识、 应用程序清单的标识和主应用程序 EXE 的标识。
 
--   验证文件路径不超过 100 个字符。 如果你的应用程序包含文件路径太长，则可能会超过路径可以存储的最大限制。 请缩短路径并重新安装。
+- 验证文件路径不超过 100 个字符。 如果你的应用程序包含文件路径太长，则可能会超过路径可以存储的最大限制。 请缩短路径并重新安装。
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>不遵循应用程序配置文件中的 PrivatePath 设置
  若要使用 PrivatePath （合成探测路径），该应用程序必须请求完全信任权限。 请尝试更改应用程序清单来请求完全信任，然后重试。
@@ -112,9 +112,9 @@ ms.locfileid: "59654316"
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>尝试登录时使用你的证书存储和接收到的空消息框中的证书
  在中**签名**对话框中，您必须：
 
--   选择**使用存储的证书签名**，和
+- 选择**使用存储的证书签名**，和
 
--   从列表; 选择一个证书第一个证书不是默认选择。
+- 从列表; 选择一个证书第一个证书不是默认选择。
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>单击"不登录"按钮时导致异常
  此问题是一个已知的 bug。 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单都需要进行签名。 只需选择一个签名的选项，然后依次**确定**。

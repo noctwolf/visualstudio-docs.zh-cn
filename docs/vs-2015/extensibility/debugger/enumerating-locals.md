@@ -11,12 +11,12 @@ ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 422a641455d6b706250ca34e3857c3e8d21920ca
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58933290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039194"
 ---
 # <a name="enumerating-locals"></a>枚举局部
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ ms.locfileid: "58933290"
   
  此实现`IDebugProperty2::EnumChildren`执行下列任务：  
   
-1.  可确保这表示一种方法。  
+1. 可确保这表示一种方法。  
   
-2.  使用`guidFilter`参数以确定哪种方法要对其调用[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)对象。 如果`guidFilter`等于：  
+2. 使用`guidFilter`参数以确定哪种方法要对其调用[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)对象。 如果`guidFilter`等于：  
   
-    1.  `guidFilterLocals`调用[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)来获取[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)对象。  
+    1. `guidFilterLocals`调用[EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)来获取[IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md)对象。  
   
-    2.  `guidFilterArgs`调用[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)若要获取`IEnumDebugFields`对象。  
+    2. `guidFilterArgs`调用[EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)若要获取`IEnumDebugFields`对象。  
   
-    3.  `guidFilterLocalsPlusArgs`从结果进行组合的枚举合成`IDebugMethodField::EnumLocals`和`IDebugMethodField::EnumArguments`。 类表示此合成`CEnumMethodField`。  
+    3. `guidFilterLocalsPlusArgs`从结果进行组合的枚举合成`IDebugMethodField::EnumLocals`和`IDebugMethodField::EnumArguments`。 类表示此合成`CEnumMethodField`。  
   
-3.  实例化一个类 (称为`CEnumPropertyInfo`在此示例中)，它实现`IEnumDebugPropertyInfo2`接口并包含`IEnumDebugFields`对象。  
+3. 实例化一个类 (称为`CEnumPropertyInfo`在此示例中)，它实现`IEnumDebugPropertyInfo2`接口并包含`IEnumDebugFields`对象。  
   
-4.  返回`IEnumDebugProperty2Info2`接口从`CEnumPropertyInfo`对象。  
+4. 返回`IEnumDebugProperty2Info2`接口从`CEnumPropertyInfo`对象。  
   
 ## <a name="managed-code"></a>托管代码  
  此示例演示一种实现`IDebugProperty2::EnumChildren`在托管代码中。  

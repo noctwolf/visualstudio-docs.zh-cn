@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b531fdbbd637d2d505d44ea27bcdfb5350ad36a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039825"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：向应用程序添加自定义任务窗格
   你可以通过使用 VSTO 外接程序向上面列出的应用程序添加自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
@@ -32,24 +32,24 @@ ms.locfileid: "56616776"
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>若要向应用程序添加自定义任务窗格
 
-1.  为上面列出的应用程序之一打开或创建 VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 为上面列出的应用程序之一打开或创建 VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-2.  在 **“项目”** 菜单上，单击 **“添加用户控件”**。
+2. 在 **“项目”** 菜单上，单击 **“添加用户控件”**。
 
-3.  在中**添加新项**对话框中，更改到新的用户控件的名称**MyUserControl**，然后单击**添加**。
+3. 在中**添加新项**对话框中，更改到新的用户控件的名称**MyUserControl**，然后单击**添加**。
 
      用户控件将在设计器中打开。
 
-4.  添加一个或多个 Windows 窗体控件从**工具箱**到用户控件。
+4. 添加一个或多个 Windows 窗体控件从**工具箱**到用户控件。
 
-5.  打开**ThisAddIn.cs**或**ThisAddIn.vb**代码文件。
+5. 打开**ThisAddIn.cs**或**ThisAddIn.vb**代码文件。
 
-6.  向 `ThisAddIn` 类添加下面的代码。 此代码将 `MyUserControl` 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 的实例声明为 `ThisAddIn` 类的成员。
+6. 向 `ThisAddIn` 类添加下面的代码。 此代码将 `MyUserControl` 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 的实例声明为 `ThisAddIn` 类的成员。
 
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
 
-7.  将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码通过将 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象添加到 `MyUserControl` 集合来创建新 `CustomTaskPanes` 。 代码还将显示任务窗格。
+7. 将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码通过将 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象添加到 `MyUserControl` 集合来创建新 `CustomTaskPanes` 。 代码还将显示任务窗格。
 
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]

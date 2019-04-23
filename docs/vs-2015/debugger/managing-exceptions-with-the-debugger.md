@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040959"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>管理调试器的异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ ms.locfileid: "58936240"
   
  异常发生时，调试程序将一条异常消息写入到输出窗口。 它可能会在以下情况中中断执行：  
   
--   引发异常且未进行处理时。  
+- 引发异常且未进行处理时。  
   
--   调试程序设置为在引发异常时立即中断执行（在调用任何处理程序之前）时。  
+- 调试程序设置为在引发异常时立即中断执行（在调用任何处理程序之前）时。  
   
--   如果设置了 [Just My Code](../debugger/just-my-code.md)，且调试程序设置为出现任何未在用户代码中进行处理的异常时执行中断操作。  
+- 如果设置了 [Just My Code](../debugger/just-my-code.md)，且调试程序设置为出现任何未在用户代码中进行处理的异常时执行中断操作。  
   
 > [!NOTE]
 >  ASP.NET 有一个顶级异常处理程序，可以在浏览器中显示错误页。 除非启用 **“仅我的代码”** ，否则它不会中断执行。 有关示例，请参阅以下 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
@@ -141,7 +141,7 @@ ms.locfileid: "58936240"
   
    ![还原异常设置中的默认值](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Setting the debugger to 用户未经处理的异常时继续  
+### <a name="BKMK_UserUnhandled"></a> Setting the debugger to 用户未经处理的异常时继续  
  如果正在使用 [Just My Code](../debugger/just-my-code.md)调试 .NET 或 JavaScript 代码，则对于未在用户代码中进行处理但在其他地方进行了处理的异常，可以让调试程序不要执行中断操作。  
   
 1. 在 **“异常设置”** 窗口中，通过在窗口中右键单击打开上下文菜单，然后选择 **“显示列”**。 （如果已禁用 **“仅我的代码”**，则将看不到此命令。）  

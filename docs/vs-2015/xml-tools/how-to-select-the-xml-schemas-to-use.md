@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933125"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670064"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 “XML 编辑器”提供的架构缓存位于 %InstallDir%\Xml\Schemas 目录。 架构缓存中包括用于智能感知和 XML 文档验证的常见 XML 架构。  
   
  **架构**文档属性用于选择一个或多个 XML 架构定义语言 (XSD) 架构使用。 使用该属性可以从架构缓存中选择架构，也可以指定不在缓存中的架构。  

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039872"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：调试 Code Center Premium 源代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ ms.locfileid: "59000785"
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>使用“附加到进程”调试源代码  
   
-1.  连接您的智能卡读卡器，并插入您从共享源计划所取得的智能卡。  
+1. 连接您的智能卡读卡器，并插入您从共享源计划所取得的智能卡。  
   
-2.  启动 Visual Studio。  
+2. 启动 Visual Studio。  
   
-3.  打开 Visual Studio 项目。  
+3. 打开 Visual Studio 项目。  
   
-4.  上**工具**菜单上，单击**附加到进程**。  
+4. 上**工具**菜单上，单击**附加到进程**。  
   
-5.  在中**附加到进程**对话框中，单击**选择**。  
+5. 在中**附加到进程**对话框中，单击**选择**。  
   
-6.  在中**选择代码类型**对话框中的**检测以下代码类型**，选择**本机**，**托管**，和**托管 （v4.0)**。  
+6. 在中**选择代码类型**对话框中的**检测以下代码类型**，选择**本机**，**托管**，和**托管 （v4.0)**。  
   
-7.  单击**确定**以关闭**选择代码类型**对话框。  
+7. 单击**确定**以关闭**选择代码类型**对话框。  
   
-8.  在中**可用进程**框中，选择你想要调试的进程。  
+8. 在中**可用进程**框中，选择你想要调试的进程。  
   
 9. 单击 **“附加”**。  
   
@@ -117,27 +117,27 @@ ms.locfileid: "59000785"
   
 4. 对于解决方案中的每个托管项目，请执行下列操作  
   
-   1.  在解决方案资源管理器，打开项目的快捷菜单，然后选择**属性**。  
+   1. 在解决方案资源管理器，打开项目的快捷菜单，然后选择**属性**。  
   
-   2.  选择**调试**，然后选择**启用非托管代码调试**。  
+   2. 选择**调试**，然后选择**启用非托管代码调试**。  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>调试解决方案的 Code Center Premium 源代码  
   
-1.  在 `Package` 类中，在包构造函数上设置一个断点。  
+1. 在 `Package` 类中，在包构造函数上设置一个断点。  
   
-2.  在中`Debug`菜单上，单击**启动调试**。  
+2. 在中`Debug`菜单上，单击**启动调试**。  
   
-3.  当命中包构造函数中的断点时，请转到**调用堆栈**窗口中，右键单击你想要加载的程序集的堆栈帧符号，然后单击**加载符号**。  
+3. 当命中包构造函数中的断点时，请转到**调用堆栈**窗口中，右键单击你想要加载的程序集的堆栈帧符号，然后单击**加载符号**。  
   
      双击调用帧以加载源代码。  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>浏览 Code Center Premium 上的源代码  
   
-1.  连接您的智能卡读卡器，并插入您从共享源计划所取得的智能卡。  
+1. 连接您的智能卡读卡器，并插入您从共享源计划所取得的智能卡。  
   
-2.  启动 Internet Explorer 输入下列 URL：`https://codepremium.msdn.microsoft.com`  
+2. 启动 Internet Explorer 输入下列 URL：`https://codepremium.msdn.microsoft.com`  
   
-3.  浏览找到所需的源代码。  
+3. 浏览找到所需的源代码。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   

@@ -11,17 +11,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3477c7f4a9f6368ce8c2ef5a87c101e8ef66f4bf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758561"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670259"
 ---
 # <a name="item-functions"></a>项函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 从 MSBuild 4.0 开始，任务和目标中的代码可以调用项函数来获取项目中各项的相关信息。 这些函数简化 Distinct() 项的获取过程，并且比循环遍历项的速度更快。  
   
 ## <a name="string-item-functions"></a>字符串项函数  
@@ -55,7 +54,7 @@ ms.locfileid: "54758561"
 ## <a name="intrinsic-item-functions"></a>内部项函数  
  下表列出了可用于各项的内部函数。  
   
-|函数|示例|说明​​|  
+|函数|示例|说明|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|返回项计数。|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|返回每个项的 `Path.DirectoryName` 等效项。|  

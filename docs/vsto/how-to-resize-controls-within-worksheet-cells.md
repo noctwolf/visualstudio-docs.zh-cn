@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041897"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：调整工作表单元格中的控件的大小
   调整列或工作表上的行，单元格内的任何主机控件自动调整大小后的高度或宽度调整了大小的单元格。 默认情况下，Windows 窗体控件执行操作不自动调整。
@@ -35,13 +35,13 @@ ms.locfileid: "56625460"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>若要使控件在设计时调整大小与单元格
 
-1.  从**工具箱**，将 Windows 窗体控件拖到工作表。
+1. 从**工具箱**，将 Windows 窗体控件拖到工作表。
 
-2.  右键单击该控件，然后依次**格式控件**。
+2. 右键单击该控件，然后依次**格式控件**。
 
-3.  在中**设置控件格式**对话框中，单击**属性**选项卡。
+3. 在中**设置控件格式**对话框中，单击**属性**选项卡。
 
-4.  下**对象定位**，选择**移动并调整其大小与单元格**选项，并单击**确定**。
+4. 下**对象定位**，选择**移动并调整其大小与单元格**选项，并单击**确定**。
 
      当调整包含该控件的单元格的大小时，该控件调整大小以适合该单元格。
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625460"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>若要使控件在运行时调整大小与单元格
 
-1.  将控件添加到 A1 的范围。
+1. 将控件添加到 A1 的范围。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625460"
 ## <a name="reset-control-placement"></a>控件位置重置
  你可以重置的位置和通过设置控件的大小调整`Placement`属性设置为下列任一<xref:Microsoft.Office.Interop.Excel.XlPlacement>值：
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>若要更改控件的行为，以便它不会重设大小或移动与该单元格
 
-1.  调用控件的位置属性，并将值设置为<xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>。
+1. 调用控件的位置属性，并将值设置为<xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

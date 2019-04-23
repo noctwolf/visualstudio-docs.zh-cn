@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042505"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：下载 ClickOnce 部署 API 使用设计器中使用按需程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -71,15 +71,15 @@ ms.locfileid: "54919299"
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>使用 Visual Studio 在 ClickOnce 应用程序中将程序集标记为可选
 
-1.  在“解决方案资源管理器”  中右键单击 Windows 窗体项目，然后单击“属性” 。 选择“发布”  选项卡。
+1. 在“解决方案资源管理器”  中右键单击 Windows 窗体项目，然后单击“属性” 。 选择“发布”  选项卡。
 
-2.  单击“应用程序文件”  按钮。
+2. 单击“应用程序文件”  按钮。
 
-3.  在列表中找到 ClickOnceLibrary.dll。 将“发布状态”  下拉框设置为“包括” 。
+3. 在列表中找到 ClickOnceLibrary.dll。 将“发布状态”  下拉框设置为“包括” 。
 
-4.  展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。
+4. 展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。
 
-5.  继续发布应用程序，如中所述[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+5. 继续发布应用程序，如中所述[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用清单生成和编辑工具在 ClickOnce 应用程序中将程序集标记为可选 — 图形客户端 (MageUI.exe)
 

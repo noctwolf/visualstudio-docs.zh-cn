@@ -1,5 +1,5 @@
 ---
-title: 独立 Shell 入口点参数 （c + +） |Microsoft Docs
+title: 独立 Shell 入口点参数 (C++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,14 +11,14 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 313632661c3f73fdbd0f23616a068913c77508f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041943"
 ---
-# <a name="isolated-shell-entry-point-parameters-c"></a>独立的 Shell 入口点参数 （c + +）
+# <a name="isolated-shell-entry-point-parameters-c"></a>独立 Shell 入口点参数 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 基于 shell 的应用程序启动时，它调用的 Visual Studio shell 的启动入口点。 可以在外壳程序的启动入口点的调用中重写以下设置。 每个设置的说明，请参阅[。Pkgdef 文件](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
@@ -79,17 +79,17 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
  对于布尔设置，以下字符串表示值 true;所有其他字符串表示值 false。 这些字符串不区分大小写。  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   on  
+- on  
   
--   true  
+- true  
   
--   是  
+- 是  
   
 ## <a name="example"></a>示例  
  若要禁用加载项和更改你的应用程序的默认项目位置，可以设置为"AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp"的最后一个参数。  

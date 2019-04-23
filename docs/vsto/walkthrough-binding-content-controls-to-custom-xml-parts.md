@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 118b97b3d8bd07eecf129b41d74785a37eae72b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041613"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>演练：将内容控件绑定到自定义 XML 部件
   本演练演示如何将对 Word 的文档级自定义项中的内容控件绑定到存储在文档中的 XML 数据。
@@ -50,16 +50,16 @@ ms.locfileid: "56632922"
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word。
+- Microsoft Word。
 
 ## <a name="create-a-new-word-document-project"></a>创建新的 Word 文档项目
  创建将在本演练中使用的 Word 文档。
 
 ### <a name="to-create-a-new-word-document-project"></a>创建新的 Word 文档项目
 
-1.  具有名称创建一个 Word 文档项目**为 employeecontrols**。 创建解决方案的新文档。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 具有名称创建一个 Word 文档项目**为 employeecontrols**。 创建解决方案的新文档。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开新的 Word 文档并将添加**为 employeecontrols**投影到**解决方案资源管理器**。
 
@@ -104,17 +104,17 @@ ms.locfileid: "56632922"
 
 #### <a name="to-create-the-data-file"></a>创建数据文件
 
-1.  在 **“项目”** 菜单上选择 **“添加新项”**。
+1. 在 **“项目”** 菜单上选择 **“添加新项”**。
 
      “添加新项”对话框随即出现。
 
-2.  在中**模板**窗格中，选择**XML 文件**。
+2. 在中**模板**窗格中，选择**XML 文件**。
 
-3.  将文件命名**employees.xml**，然后选择**添加**按钮。
+3. 将文件命名**employees.xml**，然后选择**添加**按钮。
 
      **Employees.xml**文件将在代码编辑器中打开。
 
-4.  内容替换为**employees.xml**具有以下文本的文件。
+4. 内容替换为**employees.xml**具有以下文本的文件。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -127,9 +127,9 @@ ms.locfileid: "56632922"
     </employees>
     ```
 
-5.  在中**解决方案资源管理器**，选择**employees.xml**文件。
+5. 在中**解决方案资源管理器**，选择**employees.xml**文件。
 
-6.  在中**属性**窗口中，选择**生成操作**属性，然后将值更改为**嵌入的资源**。
+6. 在中**属性**窗口中，选择**生成操作**属性，然后将值更改为**嵌入的资源**。
 
      生成项目时，此步骤将 XML 文件作为资源嵌入程序集。 这使您在运行时的 XML 文件的内容进行访问。
 
@@ -138,19 +138,19 @@ ms.locfileid: "56632922"
 
 #### <a name="to-create-an-xml-schema"></a>若要创建 XML 架构
 
-1.  在 **“项目”** 菜单上选择 **“添加新项”**。
+1. 在 **“项目”** 菜单上选择 **“添加新项”**。
 
      “添加新项”对话框随即出现。
 
-2.  在中**模板**窗格中，选择**XML 架构**。
+2. 在中**模板**窗格中，选择**XML 架构**。
 
-3.  架构命名**employees.xsd** ，然后选择**添加**按钮。
+3. 架构命名**employees.xsd** ，然后选择**添加**按钮。
 
      架构设计器随即打开。
 
-4.  在中**解决方案资源管理器**，打开快捷菜单**employees.xsd**，然后选择**查看代码**。
+4. 在中**解决方案资源管理器**，打开快捷菜单**employees.xsd**，然后选择**查看代码**。
 
-5.  内容替换为**employees.xsd**具有以下架构文件。
+5. 内容替换为**employees.xsd**具有以下架构文件。
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -181,63 +181,63 @@ ms.locfileid: "56632922"
     </xs:schema>
     ```
 
-6.  上**文件**菜单上，单击**全部保存**若要保存到所做的更改**employees.xml**并**employees.xsd**文件。
+6. 上**文件**菜单上，单击**全部保存**若要保存到所做的更改**employees.xml**并**employees.xsd**文件。
 
 ## <a name="attach-the-xml-schema-to-the-document"></a>将 XML 架构附加到文档
  必须将 XML 架构附加到文档以将 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 绑定到 `title` 元素的有效值。
 
 ### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>若要将 XML 架构附加到文档 ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])
 
-1.  激活**EmployeeControls.docx**在设计器中。
+1. 激活**EmployeeControls.docx**在设计器中。
 
-2.  在功能区中，选择**开发人员**选项卡，然后选择**外接程序**按钮。
+2. 在功能区中，选择**开发人员**选项卡，然后选择**外接程序**按钮。
 
-3.  在中**模板和外接程序**对话框框中，选择**XML 架构**选项卡，然后选择**添加架构**按钮。
+3. 在中**模板和外接程序**对话框框中，选择**XML 架构**选项卡，然后选择**添加架构**按钮。
 
-4.  浏览到**employees.xsd**架构之前创建的位于项目目录，然后选择**打开**按钮。
+4. 浏览到**employees.xsd**架构之前创建的位于项目目录，然后选择**打开**按钮。
 
-5.  选择**确定**按钮**架构设置**对话框。
+5. 选择**确定**按钮**架构设置**对话框。
 
-6.  选择**确定**按钮以关闭**模板和外接程序**对话框。
+6. 选择**确定**按钮以关闭**模板和外接程序**对话框。
 
 ### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>若要将 XML 架构附加到文档 (Word 2010)
 
-1.  激活**EmployeeControls.docx**在设计器中。
+1. 激活**EmployeeControls.docx**在设计器中。
 
-2.  在功能区中，选择**开发人员**选项卡。
+2. 在功能区中，选择**开发人员**选项卡。
 
-3.  在中**XML**组中，选择**架构**按钮。
+3. 在中**XML**组中，选择**架构**按钮。
 
-4.  在中**模板和外接程序**对话框框中，选择**XML 架构**选项卡，然后选择**添加架构**按钮。
+4. 在中**模板和外接程序**对话框框中，选择**XML 架构**选项卡，然后选择**添加架构**按钮。
 
-5.  浏览到**employees.xsd**架构之前，创建它位于项目目录，然后选择**打开**按钮。
+5. 浏览到**employees.xsd**架构之前，创建它位于项目目录，然后选择**打开**按钮。
 
-6.  选择**确定**按钮**架构设置**对话框。
+6. 选择**确定**按钮**架构设置**对话框。
 
-7.  选择**确定**按钮以关闭**模板和外接程序**对话框。
+7. 选择**确定**按钮以关闭**模板和外接程序**对话框。
 
      **XML 结构**任务窗格随即打开。
 
-8.  关闭**XML 结构**任务窗格。
+8. 关闭**XML 结构**任务窗格。
 
 ## <a name="add-a-custom-xml-part-to-the-document"></a>将自定义 XML 部件添加到文档
  在可以将内容控件绑定到 XML 文件中的元素之前，你必须将 XML 文件的内容添加到文档中的新自定义 XML 部件。
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>如要向文档添加自定义 XML 部件
 
-1.  在中**解决方案资源管理器**，打开快捷菜单**ThisDocument.cs**或**ThisDocument.vb**，然后选择**查看代码**。
+1. 在中**解决方案资源管理器**，打开快捷菜单**ThisDocument.cs**或**ThisDocument.vb**，然后选择**查看代码**。
 
-2.  将以下声明添加到 `ThisDocument` 类。 此代码声明了将自定义 XML 部件添加到对象所用的几个对象。
+2. 将以下声明添加到 `ThisDocument` 类。 此代码声明了将自定义 XML 部件添加到对象所用的几个对象。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]
 
-3.  将以下方法添加到 `ThisDocument` 类。 此方法获取作为资源嵌入到程序集中的 XML 数据文件的内容，并以 XML 字符串形式返回该内容。
+3. 将以下方法添加到 `ThisDocument` 类。 此方法获取作为资源嵌入到程序集中的 XML 数据文件的内容，并以 XML 字符串形式返回该内容。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]
 
-4.  将以下方法添加到 `ThisDocument` 类。 `AddCustomXmlPart` 方法创建新的自定义 XML 部件，其中包含传递给该方法的 XML 字符串。
+4. 将以下方法添加到 `ThisDocument` 类。 `AddCustomXmlPart` 方法创建新的自定义 XML 部件，其中包含传递给该方法的 XML 字符串。
 
      为确保只创建一次自定义 XML 部件，该方法仅在文档中不存在具有匹配 GUID 的自定义 XML 部件时，才会创建自定义 XML 部件。 第一次调用此方法时，该方法将 <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> 属性的值保存为 `employeeXMLPartID` 字符串。 `employeeXMLPartID` 字符串的值将持久保存在文档中，因为该值是使用 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 属性声明的。
 
@@ -249,7 +249,7 @@ ms.locfileid: "56632922"
 
 ### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>若要将内容控件绑定到自定义 XML 部件中的元素
 
-1.  将以下方法添加到 `ThisDocument` 类。 此方法将每个内容控件绑定到自定义 XML 部件中的元素，并设置 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 的日期显示格式。
+1. 将以下方法添加到 `ThisDocument` 类。 此方法将每个内容控件绑定到自定义 XML 部件中的元素，并设置 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 的日期显示格式。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]
@@ -259,7 +259,7 @@ ms.locfileid: "56632922"
 
 ### <a name="to-run-your-code-when-the-document-is-opened"></a>若要在打开文档后运行代码
 
-1.  将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法。 此代码获取中的 XML 字符串**employees.xml**文件中，将 XML 字符串添加到在文档中，新的自定义 XML 部件，并将内容控件绑定到自定义 XML 部件中的元素。
+1. 将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法。 此代码获取中的 XML 字符串**employees.xml**文件中，将 XML 字符串添加到在文档中，新的自定义 XML 部件，并将内容控件绑定到自定义 XML 部件中的元素。
 
      [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
      [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]
@@ -269,9 +269,9 @@ ms.locfileid: "56632922"
 
 ### <a name="to-test-the-content-controls"></a>若要测试内容控件
 
-1.  按 F5 运行项目。
+1. 按 F5 运行项目。
 
-2.  验证文档中的表格类似于下表。 第二列中的每个字符串的均来自文档的自定义 XML 部件中的元素。
+2. 验证文档中的表格类似于下表。 第二列中的每个字符串的均来自文档的自定义 XML 部件中的元素。
 
     |||
     |-|-|
@@ -279,17 +279,17 @@ ms.locfileid: "56632922"
     |**雇佣日期**|**1999 年 4 月 1日日**|
     |**标题**|**Manager**|
 
-3.  选择右侧的单元格**员工姓名**单元格并键入不同的名称。
+3. 选择右侧的单元格**员工姓名**单元格并键入不同的名称。
 
-4.  选择右侧的单元格**雇佣日期**单元格并在日期选取器中选择一个不同的日期。
+4. 选择右侧的单元格**雇佣日期**单元格并在日期选取器中选择一个不同的日期。
 
-5.  选择右侧的单元格**标题**单元格并从下拉列表中选择新项。
+5. 选择右侧的单元格**标题**单元格并从下拉列表中选择新项。
 
-6.  保存并关闭文档。
+6. 保存并关闭文档。
 
-7.  在文件资源管理器中打开*\bin\Debug*项目位置下的文件夹。
+7. 在文件资源管理器中打开*\bin\Debug*项目位置下的文件夹。
 
-8.  打开快捷菜单**EmployeeControls.docx** ，然后选择**重命名**。
+8. 打开快捷菜单**EmployeeControls.docx** ，然后选择**重命名**。
 
 9. 将文件命名**EmployeeControls.docx.zip**。
 
@@ -310,11 +310,11 @@ ms.locfileid: "56632922"
 ## <a name="next-steps"></a>后续步骤
  可从以下主题了解有关如何使用内容控件的更多信息：
 
--   使用所有可用的内容控件创建模板。 有关详细信息，请参见[演练：使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。
+- 使用所有可用的内容控件创建模板。 有关详细信息，请参见[演练：使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。
 
--   关闭该文档时修改自定义 XML 部件中的数据。 下次用户打开文档时，绑定到的 XML 元素的内容控件将显示新的数据。
+- 关闭该文档时修改自定义 XML 部件中的数据。 下次用户打开文档时，绑定到的 XML 元素的内容控件将显示新的数据。
 
--   使用内容控件保护文档的某些部分。 有关详细信息，请参阅[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
+- 使用内容控件保护文档的某些部分。 有关详细信息，请参阅[如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
 ## <a name="see-also"></a>请参阅
 - [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)

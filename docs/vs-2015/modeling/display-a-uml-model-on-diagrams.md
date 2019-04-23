@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042348"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在关系图上显示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 扩展的程序代码中，可以控制模型元素在关系图上的显示方式。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 本主题内容：  
- -   [若要在关系图上显示的元素](#Display)  
+本主题内容：  
+- [若要在关系图上显示的元素](#Display)  
   
--   [访问表示元素的形状](#GetShapes)  
+- [访问表示元素的形状](#GetShapes)  
   
--   [移动和调整形状的大小](#Moving)  
+- [移动和调整形状的大小](#Moving)  
   
--   [若要从关系图中删除形状](#Removing)  
+- [若要从关系图中删除形状](#Removing)  
   
--   [打开并创建关系图](#Opening)  
+- [打开并创建关系图](#Opening)  
   
--   [示例：用于对齐形状命令](#AlignCommand)  
+- [示例：用于对齐形状命令](#AlignCommand)  
   
-##  <a name="Display"></a> 若要在关系图上显示的元素  
+## <a name="Display"></a> 若要在关系图上显示的元素  
  创建用例或操作等元素时，用户可以在 UML 模型资源管理器中看到它，但它并不始终自动显示在关系图中。 在某些情况下，必须编写代码才能显示它。 下表总结了备选项。  
   
 |元素的类型|例如|若要显示它，你的代码必须|  
@@ -47,7 +47,7 @@ ms.locfileid: "58933103"
 |行为的子级|生命线、消息、操作、对象节点|自动 - 无需任何代码。<br /><br /> 如果父级绑定到了关系图，则将显示它。|  
 |关系|关联、泛化、流、依赖关系|自动 - 无需任何代码。<br /><br /> 它将在显示两端的每个关系图上显示。|  
   
-##  <a name="GetShapes"></a> 访问表示元素的形状  
+## <a name="GetShapes"></a> 访问表示元素的形状  
  表示元素属于以下类型的形状：  
   
  `IShape`  
@@ -68,7 +68,7 @@ ms.locfileid: "58933103"
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|将泛型 `IShape` 转换为强类型 `IShape<IElement>`。|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|将形状从一个参数化形状类型转换到另一个类型。|  
   
-##  <a name="Moving"></a> 移动和调整形状的大小  
+## <a name="Moving"></a> 移动和调整形状的大小  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ ms.locfileid: "58933103"
   
  有关示例，请参阅[定义对齐命令](#AlignCommand)。  
   
-##  <a name="Removing"></a> 若要从关系图中删除形状  
+## <a name="Removing"></a> 若要从关系图中删除形状  
  可以删除某些类型的元素的形状而不删除元素本身。  
   
 |模型元素|若要删除形状|  
@@ -86,7 +86,7 @@ ms.locfileid: "58933103"
 |行为：交互或活动|可以从项目中删除关系图。 使用 `IDiagram.FileName` 获取路径。<br /><br /> 这不会从模型中删除行为。|  
 |任何其他形状|不能从关系图中显式删除其他形状。 如果从模型中删除元素，或从关系图中删除父形状，形状将自动消失。|  
   
-##  <a name="Opening"></a> 打开并创建关系图  
+## <a name="Opening"></a> 打开并创建关系图  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>若要从命令或笔势扩展访问用户的当前关系图  
  在类中声明此导入的属性：  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> 示例：用于对齐形状命令  
+## <a name="AlignCommand"></a> 示例：用于对齐形状命令  
  以下代码实现可准确对齐形状的菜单命令。 用户必须先将两个或更多形状在垂直或水平方向上大致对齐。 然后才能使用对齐命令使它们居中对齐。  
   
  若要使此命令可用，请将此代码添加到菜单命令项目，然后将生成的扩展部署到用户。 有关详细信息，请参阅[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  

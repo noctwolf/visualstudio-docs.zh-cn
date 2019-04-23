@@ -11,17 +11,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03a0dcde4b96afa028a69f5def5cdb52632e5e85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792165"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670298"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 内联任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
   
  从 .NET Framework 版本 4 开始，你可以在项目文件中创建内联任务。 无需创建单独的程序集来承载该任务。 这使得更易于跟踪源代码和部署任务。 源代码将集成到脚本中。  

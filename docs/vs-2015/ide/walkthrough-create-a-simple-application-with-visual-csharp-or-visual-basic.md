@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040554"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54802611"
 > [!NOTE]
 >  此演练基于 Visual Studio Professional，你将使用其中提供的 WPF 应用程序模板生成用于此演练的项目。 Visual Studio Express for Windows Desktop 也提供此模板，但 Visual Studio Express for Windows 和 Visual Studio Express for Web 不提供。 有关如何使用 Visual Studio Express for Windows 的介绍性信息，请参阅 [Windows 应用商店应用开发人员中心](http://msdn.microsoft.com/windows/apps/br229519)。 有关如何使用 Visual Studio Express for Web 的介绍性信息，请参阅 [Get Started with ASP.NET](http://www.asp.net/get-started)（ASP.NET 入门）。 此外，你的 Visual Studio 版本和你使用的设置将决定某些用户界面元素的名称和位置。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
-##  <a name="BKMK_ConfigureIDE"></a> 配置 IDE  
+## <a name="BKMK_ConfigureIDE"></a> 配置 IDE  
  第一次启动 Visual Studio 时，Visual Studio 会提示使用 Microsoft 服务帐户 (MSA)登录， [登录到 Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)。 您不需要登录，而是可以稍后登录。  
   
  在您的 Visual Studio 启动时，您接下来必须选择适用于 IDE 的一组预定义的自定义项的设置组合。 每个设置组合旨在使你更轻松地开发应用程序。  
@@ -69,7 +69,7 @@ ms.locfileid: "54802611"
   
    本演练剩余部分的图片使用的颜色主题是浅色主题。 若要深入了解如何自定义 IDE，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
-##  <a name="BKMK_CreateApp"></a> 创建简单的应用程序  
+## <a name="BKMK_CreateApp"></a> 创建简单的应用程序  
   
 ### <a name="create-the-project"></a>创建项目  
  在 Visual Studio 中创建应用程序时，应首先创建项目和解决方案。 在此示例中，您将创建一个 Windows Presentation Foundation 项目。  
@@ -199,7 +199,7 @@ ms.locfileid: "54802611"
   
 ##### <a name="add-code-to-display-message-boxes"></a>添加代码以显示消息框  
   
-1.  在设计图面上，双击 **“显示”** 按钮。  
+1. 在设计图面上，双击 **“显示”** 按钮。  
   
      此时将打开 Greetings.xaml.vb 或 Greetings.xaml.cs，光标则位于 Button_Click 事件上。 您还可以添加一个 click 事件处理程序，如下所示（如果粘贴的代码的任何名称下有红色的波浪线，则您可能没有选择设计界面上的单选按钮控件并将其重命名）：  
   
@@ -220,7 +220,7 @@ ms.locfileid: "54802611"
     }  
     ```  
   
-2.  对于 Visual Basic，请输入以下代码：  
+2. 对于 Visual Basic，请输入以下代码：  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ ms.locfileid: "54802611"
     }  
     ```  
   
-3.  保存应用程序。  
+3. 保存应用程序。  
   
-##  <a name="BKMK_DebugTest"></a> 调试并测试应用程序  
+## <a name="BKMK_DebugTest"></a> 调试并测试应用程序  
  接下来，你将调试应用程序以查找错误并测试两个消息框是否正确显示。 下面的说明介绍如何生成和启动调试器，但以后可以阅读[生成 WPF 应用程序 (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) 和[调试 WPF](../debugger/debugging-wpf.md) 以获取有关详细信息。  
   
 ### <a name="find-and-fix-errors"></a>查找并修复错误  
@@ -280,29 +280,29 @@ ms.locfileid: "54802611"
   
 ##### <a name="to-add-breakpoints"></a>添加断点  
   
-1.  打开 Greetings.xaml.vb 或 Greetings.xaml.cs，然后选择以下行： `MessageBox.Show("Hello.")`  
+1. 打开 Greetings.xaml.vb 或 Greetings.xaml.cs，然后选择以下行： `MessageBox.Show("Hello.")`  
   
-2.  通过选择 **“调试”**-&gt; **“切换断点”**，从菜单中添加断点。  
+2. 通过选择 **“调试”**-&gt; **“切换断点”**，从菜单中添加断点。  
   
      ![“调试”菜单上的“切换断点”命令](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      编辑器窗口最左侧边距中该代码行附近将显示一个红圈。  
   
-3.  选择以下行： `MessageBox.Show("Goodbye.")`。  
+3. 选择以下行： `MessageBox.Show("Goodbye.")`。  
   
-4.  按 F9 键添加断点，然后按 F5 键启动调试。  
+4. 按 F9 键添加断点，然后按 F5 键启动调试。  
   
-5.  在 **“Greetings”** 窗口中，选择 **“Hello”** 单选按钮，然后选择 **“显示”** 按钮。  
+5. 在 **“Greetings”** 窗口中，选择 **“Hello”** 单选按钮，然后选择 **“显示”** 按钮。  
   
      行 `MessageBox.Show("Hello.")` 将用黄色突出显示。 在 IDE 底部，“自动”、“本地”和“监视”窗口一起停靠在左侧，而“调用堆栈”、“断点”、“命令”、“即时”和“输出”窗口一起停靠在右侧。  
   
-6.  在菜单栏上，选择 **“调试”**-> **“跳出”**。  
+6. 在菜单栏上，选择 **“调试”**-> **“跳出”**。  
   
      应用程序继续执行，并显示带单词“Hello”的消息框。  
   
-7.  选择消息框上的 **“确定”** 按钮将其关闭。  
+7. 选择消息框上的 **“确定”** 按钮将其关闭。  
   
-8.  在 **“Greetings”** 窗口中，选择 **“Goodbye”** 单选按钮，然后选择 **“显示”** 按钮。  
+8. 在 **“Greetings”** 窗口中，选择 **“Goodbye”** 单选按钮，然后选择 **“显示”** 按钮。  
   
      行 `MessageBox.Show("Goodbye.")` 将用黄色突出显示。  
   

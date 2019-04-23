@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039409"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替换模板中的参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54780286"
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>使用参数将命名空间名称替换为项目名称  
   
-1.  将参数插入模板中的一个或多个代码文件中。 例如:  
+1. 将参数插入模板中的一个或多个代码文件中。 例如：  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ ms.locfileid: "54780286"
     > [!NOTE]
     >  模板参数是以 $参数$ 格式编写的。  
   
-2.  在模板的 .vstemplate 文件中，找到包括此文件的 `ProjectItem` 元素。  
+2. 在模板的 .vstemplate 文件中，找到包括此文件的 `ProjectItem` 元素。  
   
-3.  将 `ProjectItem` 元素的 `ReplaceParameters` 特性设置为 `true`。 例如:  
+3. 将 `ProjectItem` 元素的 `ReplaceParameters` 特性设置为 `true`。 例如：  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

@@ -9,12 +9,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 427e854c19e65463abcd8780cfe95d38f3ea66f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d62f1936e4cf424bde526301210e61f38e5b767
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038800"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>如何：在工作流设计器中使用搜索
 为方便创建更大、更复杂的工作流，可在工作流设计器中使用搜索来按关键字查找项。 请注意，设计器不支持替换。 搜索将在设计器中查找以下内容：  
@@ -22,21 +22,21 @@ ms.locfileid: "58935857"
 ## <a name="quick-find"></a>快速查找  
  快速查找将在设计器中查找以下内容：  
   
--   <xref:System.Activities.Activity> 对象、<xref:System.Activities.Statements.FlowNode> 对象、<xref:System.Activities.Statements.State> 对象、转换以及其他自定义流控制项的属性。  
+- <xref:System.Activities.Activity> 对象、<xref:System.Activities.Statements.FlowNode> 对象、<xref:System.Activities.Statements.State> 对象、转换以及其他自定义流控制项的属性。  
   
--   变量  
+- 变量  
   
--   自变量  
+- 自变量  
   
--   表达式  
+- 表达式  
   
 #### <a name="using-quick-find"></a>使用“快速查找”  
   
-1.  工作流设计器中打开，然后按**Ctrl + F**，或选择**编辑**，**查找和替换**，**快速查找**。  
+1. 工作流设计器中打开，然后按**Ctrl + F**，或选择**编辑**，**查找和替换**，**快速查找**。  
   
-2.  输入到搜索词**查找内容**文本框中，单击**查找下一个**。  
+2. 输入到搜索词**查找内容**文本框中，单击**查找下一个**。  
   
-3.  将在当前工作流中查找搜索词。 下面的屏幕快照显示了位于设计器中的活动显示名称。  
+3. 将在当前工作流中查找搜索词。 下面的屏幕快照显示了位于设计器中的活动显示名称。  
   
      ![在工作流设计器中搜索结果](../workflow-designer/media/designersearch.png "DesignerSearch")  
   
@@ -45,8 +45,8 @@ ms.locfileid: "58935857"
   
 #### <a name="using-find-in-files"></a>使用“在文件中查找”  
   
-1.  在 Visual Studio 中，按**Ctrl + Shift + F**，或选择**编辑**，**查找和替换**，**在文件中查找**  
+1. 在 Visual Studio 中，按**Ctrl + Shift + F**，或选择**编辑**，**查找和替换**，**在文件中查找**  
   
-2.  输入搜索项插入**查找内容**文本框中，单击**查找全部**  
+2. 输入搜索项插入**查找内容**文本框中，单击**查找全部**  
   
-3.  查找的结果将显示[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**查找结果**视图。 双击某个结果项将导航到包含工作流设计器中的匹配项的活动。
+3. 查找的结果将显示[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]**查找结果**视图。 双击某个结果项将导航到包含工作流设计器中的匹配项的活动。

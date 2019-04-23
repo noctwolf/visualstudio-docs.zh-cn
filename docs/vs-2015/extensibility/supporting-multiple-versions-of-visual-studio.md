@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1a4ad8b128ea614ba60a19c3526d20af80aab937
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042135"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支持多个版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ ms.locfileid: "58935425"
 
  使你的 VSPackage 可以被加载到 Visual Studio 的并行版本之前，请考虑以下方面：
 
--   您必须确定你想要遵循哪个-同时实施策略。
+- 您必须确定你想要遵循哪个-同时实施策略。
 
      有关详细信息，请参阅[之间共享选择和版本控制的 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)。
 
--   您的解决方案和项目文件格式必须符合实施策略。
+- 您的解决方案和项目文件格式必须符合实施策略。
 
      有关详细信息，请参阅[升级自定义项目](../misc/upgrading-custom-projects.md)并[注册的文件扩展名的并行部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。
 
--   您的安装程序必须处理实施策略，以便版本化的组件，以及所有版本之间共享的组件正确安装和注册。
+- 您的安装程序必须处理实施策略，以便版本化的组件，以及所有版本之间共享的组件正确安装和注册。
 
      有关详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)以及[组件管理](../extensibility/internals/component-management.md)。
 

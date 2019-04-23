@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a68d93e43feea26dc62635fccb561f9c2bd025a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041586"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。
@@ -38,18 +38,18 @@ ms.locfileid: "55945802"
 ## <a name="validate-data"></a>验证数据
  在数据集中的验证是按以下方式实现的：
 
--   通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。 有关详细信息，请参阅[如何： 在列更改过程中验证数据](validate-data-in-datasets.md)。
+- 通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。 有关详细信息，请参阅[如何：在列更改过程中验证数据](validate-data-in-datasets.md)。
 
--   通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关详细信息，请参阅[如何： 在行更改过程中验证数据](validate-data-in-datasets.md)。
+- 通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关详细信息，请参阅[如何：在行更改过程中验证数据](validate-data-in-datasets.md)。
 
--   通过创建关键字、 唯一约束，等等为数据集的实际架构定义的一部分。
+- 通过创建关键字、 唯一约束，等等为数据集的实际架构定义的一部分。
 
--   通过设置的属性<xref:System.Data.DataColumn>对象，如<xref:System.Data.DataColumn.MaxLength%2A>， <xref:System.Data.DataColumn.AllowDBNull%2A>，和<xref:System.Data.DataColumn.Unique%2A>。
+- 通过设置的属性<xref:System.Data.DataColumn>对象，如<xref:System.Data.DataColumn.MaxLength%2A>， <xref:System.Data.DataColumn.AllowDBNull%2A>，和<xref:System.Data.DataColumn.Unique%2A>。
 
 多个事件引发的<xref:System.Data.DataTable>对象记录中发生更改时：
 
--   <xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>期间和之后的单个列对每个更改，则会引发事件。 <xref:System.Data.DataTable.ColumnChanging>事件非常有用，当你想要验证的特定列中的更改。 有关建议的更改的信息作为与事件自变量传递。
--   <xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>引发事件期间和之后任何行中的更改。 <xref:System.Data.DataTable.RowChanging>事件是更多常规。 它表示在一行中，某个位置发生更改，但不知道哪些列发生改变。
+- <xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>期间和之后的单个列对每个更改，则会引发事件。 <xref:System.Data.DataTable.ColumnChanging>事件非常有用，当你想要验证的特定列中的更改。 有关建议的更改的信息作为与事件自变量传递。
+- <xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>引发事件期间和之后任何行中的更改。 <xref:System.Data.DataTable.RowChanging>事件是更多常规。 它表示在一行中，某个位置发生更改，但不知道哪些列发生改变。
 
 默认情况下，对列的每个更改因此引发四个事件。 第一个是<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>正在更改的特定列的事件。 接下来是<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>事件。 如果对行进行了多个更改，每次更改都会引发事件。
 
@@ -64,7 +64,7 @@ ms.locfileid: "55945802"
 
 ## <a name="data-update-events"></a>数据更新事件
 
-|事件|说明​​|
+|Event|描述|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|正在更改的列中值。 该事件，传递的行和列以及建议的新值。|
 |<xref:System.Data.DataTable.ColumnChanged>|列中的值已更改。 该事件，传递的行和列以及建议的值。|
@@ -84,11 +84,11 @@ ms.locfileid: "55945802"
 
 通过响应中的数据列的值更改时，可以验证数据<xref:System.Data.DataTable.ColumnChanging>事件。 当引发，此事件将传递的事件自变量 (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>)，其中包含个当前列的建议的值。 基于内容的`e.ProposedValue`，你可以：
 
--   接受建议的值，方法不执行任何操作。
+- 接受建议的值，方法不执行任何操作。
 
--   通过设置列错误拒绝建议的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 从列更改事件处理程序中。
+- 通过设置列错误拒绝建议的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 从列更改事件处理程序中。
 
--   （可选） 使用<xref:System.Windows.Forms.ErrorProvider>控件来向用户显示一条错误消息。 有关详细信息，请参阅 [ErrorProvider 组件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
+- （可选） 使用<xref:System.Windows.Forms.ErrorProvider>控件来向用户显示一条错误消息。 有关详细信息，请参阅 [ErrorProvider 组件](/dotnet/framework/winforms/controls/errorprovider-component-windows-forms)。
 
 此外可以在执行验证<xref:System.Data.DataTable.RowChanging>事件。
 
@@ -97,25 +97,25 @@ ms.locfileid: "55945802"
 
 ### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>若要验证数据的行时将更改 (Visual Basic)
 
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  双击想要验证的表的标题栏。 此操作将自动创建<xref:System.Data.DataTable.RowChanging>事件处理程序<xref:System.Data.DataTable>数据集的分部类文件中。
+2. 双击想要验证的表的标题栏。 此操作将自动创建<xref:System.Data.DataTable.RowChanging>事件处理程序<xref:System.Data.DataTable>数据集的分部类文件中。
 
     > [!TIP]
     >  双击要创建的行更改的事件处理程序的表名称的左侧。 如果您双击表名，可以对其进行编辑。
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
-### <a name="to-validate-data-when-a-row-changes-c"></a>若要验证数据行发生更改时 (C#)
+### <a name="to-validate-data-when-a-row-changes-c"></a>若要验证数据的行时更改 (C#)
 
-1.  在“数据集设计器”中打开数据集。 有关详细信息，请参阅[演练： 创建数据集设计器中的数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参见[演练：在数据集设计器中创建数据集](walkthrough-creating-a-dataset-with-the-dataset-designer.md)。
 
-2.  双击想要验证的表的标题栏。 此操作将创建的分部类文件<xref:System.Data.DataTable>。
+2. 双击想要验证的表的标题栏。 此操作将创建的分部类文件<xref:System.Data.DataTable>。
 
     > [!NOTE]
     >  **数据集设计器**不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>事件。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>挂接表的初始化方法中的事件的事件，并运行的代码。
 
-3.  将以下代码复制到分部类：
+3. 将以下代码复制到分部类：
 
     ```csharp
     public override void EndInit()
@@ -149,7 +149,7 @@ ms.locfileid: "55945802"
 
 ### <a name="to-get-all-changed-records-from-a-dataset"></a>若要获取所有已更改的记录来自数据集
 
--   调用<xref:System.Data.DataSet.GetChanges%2A>数据集的方法。
+- 调用<xref:System.Data.DataSet.GetChanges%2A>数据集的方法。
 
      下面的示例创建名为的新数据集`changedRecords`并填充名为的另一数据集的所有更改记录`dataSet1`。
 
@@ -158,7 +158,7 @@ ms.locfileid: "55945802"
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>若要获取所有已更改的记录从数据表
 
--   调用<xref:System.Data.DataTable.GetChanges%2A>的数据表的方法。
+- 调用<xref:System.Data.DataTable.GetChanges%2A>的数据表的方法。
 
      下面的示例创建名为的新数据表`changedRecordsTable`并填充名为的另一个数据表中的所有更改记录`dataTable1`。
 
@@ -167,7 +167,7 @@ ms.locfileid: "55945802"
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>若要获取的特定行状态的所有记录
 
--   调用`GetChanges`方法的数据集或数据表并传递<xref:System.Data.DataRowState>枚举值作为参数。
+- 调用`GetChanges`方法的数据集或数据表并传递<xref:System.Data.DataRowState>枚举值作为参数。
 
      下面的示例演示如何创建名为的新数据集`addedRecords`并仅填充已添加到的记录`dataSet1`数据集。
 
@@ -189,7 +189,7 @@ ms.locfileid: "55945802"
 
 ### <a name="to-get-the-original-version-of-a-record"></a>若要获取一条记录的原始版本
 
--   通过传入访问列的值<xref:System.Data.DataRowVersion>你想要返回的行。
+- 通过传入访问列的值<xref:System.Data.DataRowVersion>你想要返回的行。
 
      下面的示例演示如何使用<xref:System.Data.DataRowVersion>若要获取的原始值的值`CompanyName`字段中<xref:System.Data.DataRow>:
 
@@ -200,7 +200,7 @@ ms.locfileid: "55945802"
 
 ### <a name="to-get-the-current-version-of-a-record"></a>若要获取一条记录的当前版本
 
--   访问的列的值，然后将参数添加到索引，指示你想要返回的行版本。
+- 访问的列的值，然后将参数添加到索引，指示你想要返回的行版本。
 
      下面的示例演示如何使用<xref:System.Data.DataRowVersion>要获取的当前值的值`CompanyName`字段中<xref:System.Data.DataRow>:
 
@@ -210,5 +210,5 @@ ms.locfileid: "55945802"
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
-- [如何：在 Windows 窗体 DataGridView 控件中验证数据](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [如何：使用 Windows 窗体 ErrorProvider 组件为窗体验证显示错误图标](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [如何：验证 Windows 窗体 DataGridView 控件中的数据](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [如何：显示窗体验证与 Windows 窗体 ErrorProvider 组件的错误图标](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

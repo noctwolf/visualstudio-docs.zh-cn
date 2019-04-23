@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039728"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 以下是常见的问题可能与你的 VSPackage 并解决问题的提示。
@@ -56,7 +56,7 @@ ms.locfileid: "56706985"
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>若要进行故障排除不会注册 VSPackage
 
-1.  请确保 VSPackage 程序集位于受信任的位置。 RegPkg 无法在不受信任或部分受信任的位置，例如默认的.net 安全配置中的网络共享中注册程序集。 每当用户在不受信任的位置创建一个项目时，会出现一个警告，尽管"不再显示此消息"复选框可以避免重复此警告。
+1. 请确保 VSPackage 程序集位于受信任的位置。 RegPkg 无法在不受信任或部分受信任的位置，例如默认的.net 安全配置中的网络共享中注册程序集。 每当用户在不受信任的位置创建一个项目时，会出现一个警告，尽管"不再显示此消息"复选框可以避免重复此警告。
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>若要进行故障排除的命令不可见或当您单击的命令生成错误
 
@@ -64,44 +64,44 @@ ms.locfileid: "56706985"
 
 2. 请确保[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可以找到 UI.dll 为你的 VSPackage。
 
-   1.  在注册表的程序包部分中找到的 vspackage 的 CLSID:
+   1. 在注册表的程序包部分中找到的 vspackage 的 CLSID:
 
         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
 
-   2.  验证给定 SatelliteDll 子项的路径正确。
+   2. 验证给定 SatelliteDll 子项的路径正确。
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>若要解决意外的行为的 VSPackage
 
-1.  在代码中设置断点。
+1. 在代码中设置断点。
 
      用于调试的良好起点是构造函数和初始化方法。 此外可以在您想要评估，如菜单命令的区域中设置断点。 若要启用断点，必须在调试器下运行。
 
-    1.  在“项目”菜单上，单击“属性”。
+    1. 在“项目”菜单上，单击“属性”。
 
-    2.  上**属性页**对话框中，选择**调试**选项卡。
+    2. 上**属性页**对话框中，选择**调试**选项卡。
 
-    3.  在中**命令行参数**框中，键入在开发环境的根后缀的 VSPackage 目标。 例如，若要选择的实验性生成，请键入： **RootSuffix Exp**。
+    3. 在中**命令行参数**框中，键入在开发环境的根后缀的 VSPackage 目标。 例如，若要选择的实验性生成，请键入： **RootSuffix Exp**。
 
-    4.  上**调试**菜单上，单击**开始调试**或按 F5。
+    4. 上**调试**菜单上，单击**开始调试**或按 F5。
 
         > [!NOTE]
         >  如果你正在调试一个项目，创建或现在加载你的项目的现有实例。
 
-2.  使用活动日志。
+2. 使用活动日志。
 
      通过将信息写入到的关键点的活动日志跟踪 VSPackage 行为。 此方法时，尤其是零售环境中运行 VSPackage。 有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。
 
-3.  使用公共符号。
+3. 使用公共符号。
 
      若要调试的同时提高可读性，可以附加到调试器符号。
 
-    1.  从**工具/选项**菜单中，导航到**调试/符号**对话框。
+    1. 从**工具/选项**菜单中，导航到**调试/符号**对话框。
 
-    2.  添加以下**符号文件 (.pdb) 位置**:
+    2. 添加以下**符号文件 (.pdb) 位置**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  为了提高性能，请指定一个符号缓存文件夹，例如：
+    3. 为了提高性能，请指定一个符号缓存文件夹，例如：
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ ms.locfileid: "56706985"
 
 1. 对于托管代码中，请确保引用路径正确。
 
-   1.  在“项目”菜单上，单击“属性”。
+   1. 在“项目”菜单上，单击“属性”。
 
-   2.  选择**引用**选项卡**属性页**对话框，并确保所有路径都是否正确。 或者，可以使用**对象浏览器**来查找被引用对象。
+   2. 选择**引用**选项卡**属性页**对话框，并确保所有路径都是否正确。 或者，可以使用**对象浏览器**来查找被引用对象。
 
         对于托管代码中，你可以使用[Fuslogvw.exe （程序集绑定日志查看器）](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)显示失败的程序集加载的详细信息。
 

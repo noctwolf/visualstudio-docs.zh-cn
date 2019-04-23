@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb78a5c1962d855a2e191d16487a52d5f94c9567
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 37cc40651056b634deb9e81fc7407472485cb72b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933613"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670155"
 ---
 # <a name="data-class-inheritance-or-designer"></a>数据类继承（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 像其他对象一样，[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 类可以使用继承，并可从其他类派生。 在代码中，可以通过声明一个类继承自另一个类来指定对象间的继承关系。 在数据库中，可通过多种方式创建继承关系。 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)]（[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]）支持通常在关系系统中实现的单表继承概念。  
   
  在单表继承中，一个数据库表同时包含基类和派生类的列。 使用关系数据时，一个鉴别器列包含的值确定任意给定的记录属于哪个类。 例如，考虑一个包含公司所有员工的 Persons 表。 一些人是员工，一些人是经理。 Persons 表包含一个名为 Type 的列，该列用值 1 表示经理，用值 2 表示员工。 Type 列是鉴别器列。 在此方案中，可以创建一个员工子类，并仅使用 Type 值为 2 的记录来填充该类。  

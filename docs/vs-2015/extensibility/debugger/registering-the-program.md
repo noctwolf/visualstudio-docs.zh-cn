@@ -11,27 +11,27 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bc4a8de9f93a04fb062954703a1c14b4c4447308
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 484aa854a8e0987bf034e829a3acf02d6d637870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042638"
 ---
 # <a name="registering-the-program"></a>注册程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 调试引擎已获取某个端口后，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，启用要进行调试的程序的下一步是将其注册到该端口。 注册后，该程序是可用于调试通过以下方法之一：  
   
--   连接的过程，这使调试器能够获取正在运行的应用程序的完整调试控件。  
+- 连接的过程，这使调试器能够获取正在运行的应用程序的完整调试控件。  
   
--   在实时 (JIT) 调试时，这允许事实后调试的一个独立于调试器运行程序。 当运行时体系结构会捕获错误时，调试器通知操作系统之前或运行时环境释放的内存和出错的程序的资源。  
+- 在实时 (JIT) 调试时，这允许事实后调试的一个独立于调试器运行程序。 当运行时体系结构会捕获错误时，调试器通知操作系统之前或运行时环境释放的内存和出错的程序的资源。  
   
 ## <a name="registering-procedure"></a>注册过程  
   
 #### <a name="to-register-your-program"></a>若要注册你的程序  
   
-1.  调用[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)方法实现的端口。  
+1. 调用[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)方法实现的端口。  
   
      `IDebugPortNotify2::AddProgramNode` 要求一个指向[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口。  
   

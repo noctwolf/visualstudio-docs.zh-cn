@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041830"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58195159"
  ![Visual Studio 2015 安装对话框](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>使用多个帐户登录
- 借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的“添加连接的服务”  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。
+ 借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的 **“添加连接的服务”**  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。
 
  你可以随时添加多个用户帐户或通过新的帐户管理器进行添加，从而在 Visual Studio 中使用这些帐户。 然后，你可以在连接到服务或访问联机资源时在这些帐户之间即时切换。 Visual Studio 会记住你添加的帐户，因此你可从 Visual Studio 或 Blend 的任何实例使用这些帐户。 Visual Studio 还将随你的个性化帐户一起漫游帐户列表（但我们不会漫游你的重要凭据），因此你可以在另一台设备上快速地开始使用其中的一个帐户。 当然，你可以随时从“帐户设置”对话框中移除帐户。 若要开始操作，请参见 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。
 
@@ -61,7 +61,7 @@ ms.locfileid: "58195159"
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>针对本机 C++ 的跨平台应用程序和库
  C++ 是跨大部分移动设备本机可用的语言。 它可用于编写跨平台共享代码库，这些代码库可以针对多个移动平台目标进行生成。 甚至可以使用 C++ 创建完整的移动应用。 Visual C++ 为你提供编辑、生成、部署和调试跨平台代码的工具。 除适用于 Windows 应用的模板外，还可以根据适用于 Android Native Activity 应用和 iOS 应用的模板创建项目，或创建适用于多个平台的共享代码库项目，包括 Xamarin 混合应用。 借助特定于平台的 IntelliSense，可以浏览 API 以及生成针对 Android、iOS 或 Windows 目标的正确代码。 可以针对 x86 或 ARM 本机平台配置生成，并将代码部署到 iOS 模拟器、联网 Mac 上 iOS 设备或直接附加的 Android 设备，或使用高性能的 Microsoft Visual Studio Emulator for Android 进行测试。 可以在 Visual Studio 调试程序中设置断点、监视变量、查看堆栈和逐句通过 C++ 代码。 可以跨多个应用平台共享除最具有平台特定性的代码之外的所有代码，并在 Visual Studio 中用一个解决方案生成所有这些代码。
 
- 若要开始跨平台 c + +，请参阅[生成 Visual c + + 的跨平台移动应用](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
+ 若要开始跨平台上C++，请参阅[构建跨平台移动应用程序通过视觉对象C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>适用于任何 Windows 10 设备的通用 Windows 应用
  使用通用 Windows 平台和我们的一项 Windows 核心，可在任何 Windows 10 设备上（从电话到桌面）运行同一应用。 使用 Visual Studio 2015 和通用 Windows 应用开发工具创建这些通用 Windows 应用。
@@ -92,7 +92,7 @@ ms.locfileid: "58195159"
 #### <a name="c"></a>C++
  Visual C++ 在以下方面有大幅提升：C++11/14 语言一致性、对跨平台移动设备开发的支持、对可恢复函数和 await 的支持（目前计划在 C++17 中进行标准化）、C 运行时库 (CRT) 和 C++ 标准库 (STL) 实现中的改进和 Bug 修复、MFC 中可调整大小的对话框、新的编译器优化、更好的生成性能、代码编辑器中的新诊断功能和新效率工具。
 
- 有关详细信息，请参阅[What's New for Visual c + +](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)并[Visual c + + 博客](http://blogs.msdn.com/b/vcblog/)。
+ 有关详细信息，请参阅[What's New for Visual C++ ](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)并[VisualC++博客](http://blogs.msdn.com/b/vcblog/)。
 
 ## <a name="device-preview-menu-bar"></a>设备预览菜单栏
  在通用 Windows 平台项目中，设备预览菜单栏使你可以查看基于 XAML 的 UI 在各种屏幕尺寸上的呈现方式。
@@ -123,15 +123,15 @@ ms.locfileid: "58195159"
 ## <a name="cross-platform-debugging-support"></a>跨平台调试支持
  可以使用 Visual Studio 创建和调试在 Windows、iOS 和 Android 设备运行的本机移动应用。 使用 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)，或连接设备并在 Visual Studio 中直接调试代码。
 
--   **JavaScript/Cordova**。 使用 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) ，通过 JavaScript 生成适用于 Windows、iOS 和 Android 的本机应用。
+- **JavaScript/Cordova**。 使用 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) ，通过 JavaScript 生成适用于 Windows、iOS 和 Android 的本机应用。
 
      [调试您的应用程序](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)在 MSDN 库中是调试支持 Cordova 的 Visual Studio 的详细的信息。
 
--   **C#/Xamarin**。 通过 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) ，在 Visual Studio 中使用 C# 生成适用于 Windows、iOS 和 Android 的本机应用。
+- **C#/Xamarin**。 通过 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) ，在 Visual Studio 中使用 C# 生成适用于 Windows、iOS 和 Android 的本机应用。
 
      [Xamarin 开发人员指南](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 中的 [调试](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 和 [在设备上进行调试](http://developer.xamarin.com/guides) 介绍了调试体验。
 
--   **C++/Android**。 配合使用 [用于跨平台移动开发的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 模板和 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 等第三方工具，创建适用于 Windows 和 Android 的本机应用。
+- **C++/Android**。 配合使用 [用于跨平台移动开发的 Visual C++](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) 模板和 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 等第三方工具，创建适用于 Windows 和 Android 的本机应用。
 
 ## <a name="debugging-and-diagnostics"></a>调试和诊断
 
@@ -140,7 +140,7 @@ ms.locfileid: "58195159"
 下面是对代码执行不同类型的诊断和分析的新功能和改进的工具：
 
 ### <a name="perftips"></a>性能提示
- 性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始使用，请参阅 [性能提示：使用 Visual Studio 调试时的性能信息一览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ 性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始，请参阅[性能提示：使用 Visual Studio 调试时快速查看性能信息](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>错误列表
  错误列表现在支持任何列的筛选。 它还在你输入时显示整个 C# 或 Visual Basic 解决方案中错误、警告和代码分析的实时视图，即使代码更改生成上千个警告时也是如此。 新的“错误列表”重新兼容现有的用法。 有关更多信息，请参见 [Error List Window](./ide/reference/error-list-window.md)。
@@ -179,18 +179,18 @@ ms.locfileid: "58195159"
 ### <a name="notification-hub"></a>通知中心
  通知中心的 UI 已经得到了简化，从而使快速浏览更为轻松。 已添加其他类型的通知（包括性能问题、呈现问题和崩溃），并且现在让 Visual Studio 停止显示通知。 有关详细信息，请参阅 [Visual Studio 通知](./ide/visual-studio-notifications.md)。
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：查找代码所发生的变化（仅适用于企业版和专业版）
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens：查找你的代码 （仅限 Enterprise 和 Professional 版本） 发生了什么情况
  专注于工作的同时，查找有关代码的信（不离开编辑器）。 可以针对存储在 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 中的代码查看工作项、bug、代码评审等的更改和其他历史记录。
 
  在 Visual Studio Enterprise 和 Visual Studio Professional 中，你现在可以：
 
 - 获取 Visual Studio 编辑器中整个代码文件的历史记录。
 
-   ![CodeLens：获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens:获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - 查看显示更改你的代码的人员的图。 这可以帮助发现团队更改中的模式并评估它们的影响。
 
-   ![CodeLens：通过图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")
+   ![CodeLens:作为图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")
 
 - 轻松查看上次更改代码的时间。
 

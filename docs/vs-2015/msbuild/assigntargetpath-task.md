@@ -14,23 +14,22 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efae349037d6a826c4d267e12d901306eed7629b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f7bf12e9f6c90ce544205370a8ed26440388b0a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758688"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670051"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 此任务接受文件列表，并添加 `<TargetPath>` 属性（如果尚未指定）。  
   
 ## <a name="task-parameters"></a>任务参数  
  下表描述了 `AssignTargetPath` 任务的参数。  
   
-|参数|说明​​|  
+|参数|说明|  
 |---------------|-----------------|  
 |`RootFolder`|可选的 `string` 输入参数。<br /><br /> 包含文件夹的路径，该文件夹包含目标链接。|  
 |`Files`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输入参数。<br /><br /> 包含传入的文件列表。|  

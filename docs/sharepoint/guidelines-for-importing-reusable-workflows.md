@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641515"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041216"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>导入可重用工作流的准则
   若要导入在 SharePoint Designer 中创建的可重用工作流，请使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的“导入可重用 SharePoint 2010 工作流”项目模板。 此模板导入*声明性**工作流*([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-仅)，并将其转换*代码工作流*，这是可以使用增强的工作流[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]代码。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [演练：SharePoint Designer 可重用工作流导入 Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)。
@@ -36,13 +36,13 @@ ms.locfileid: "56641515"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>使用导入 SharePoint 2010 解决方案包模板导入可重用工作流
  如果使用“导入 SharePoint 2010 解决方案包”模板导入可重用工作流，您需要考虑下列问题：
 
--   导入工作流之后, 您可以立即部署并运行它[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]通过选择**F5**密钥。 但是，如果您更改导入的解决方案中的工作流中的任何内容，您可能需要手动修复项目中的元素，可以部署和运行工作流之前。
+- 导入工作流之后, 您可以立即部署并运行它[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]通过选择**F5**密钥。 但是，如果您更改导入的解决方案中的工作流中的任何内容，您可能需要手动修复项目中的元素，可以部署和运行工作流之前。
 
--   由于声明性工作流，不能将代码添加到它。 若要在工作流转换为代码工作流，你必须将其导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用导入可重用 SharePoint 2010 工作流模板。
+- 由于声明性工作流，不能将代码添加到它。 若要在工作流转换为代码工作流，你必须将其导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用导入可重用 SharePoint 2010 工作流模板。
 
--   虽然您可以编辑在设计视图中的工作流设计器 (.xoml) 文件，建议在源视图中编辑它因为工作流设计器显示 false 错误。
+- 虽然您可以编辑在设计视图中的工作流设计器 (.xoml) 文件，建议在源视图中编辑它因为工作流设计器显示 false 错误。
 
--   在工作流中进行调试并不适用于声明性内容。 在中设置断点[!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)]未命中。
+- 在工作流中进行调试并不适用于声明性内容。 在中设置断点[!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)]未命中。
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>导入全局可重用工作流解决方案
  无法使用“导入可重用 SharePoint 2010 工作流”模板导入全局可重用工作流。 若要导入全局可重用工作流，您必须将其转换为非全局可重用工作流或必须使用“导入 SharePoint 2010 解决方案包”模板。

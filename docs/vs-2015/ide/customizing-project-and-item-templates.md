@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa5df395aee8e93c191535a7bec5b078563e3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039041"
 ---
 # <a name="customizing-project-and-item-templates"></a>自定义项目模板和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,22 +26,22 @@ ms.locfileid: "54801100"
   
  例如，可以执行下列任务：  
   
--   修改并将现有模板导出为自定义模板。  
+- 修改并将现有模板导出为自定义模板。  
   
      有关详细信息，请参阅[如何：更新现有模板](../ide/how-to-update-existing-templates.md)。  
   
--   将自定义参数传递给模板以替换现有值。  
+- 将自定义参数传递给模板以替换现有值。  
   
      有关详细信息，请参阅[如何：替换模板中的参数](../ide/how-to-substitute-parameters-in-a-template.md)。  
   
--   自定义根据模板创建项目的向导。  
+- 自定义根据模板创建项目的向导。  
   
      有关详细信息，请参阅[如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)。  
   
 ## <a name="related-sections"></a>相关章节  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)  
   
- [如何：模板故障排除](../ide/how-to-troubleshoot-templates.md)  
+ [如何：模板疑难解答](../ide/how-to-troubleshoot-templates.md)  
   
  [如何：创建项目模板](../ide/how-to-create-project-templates.md)  
   

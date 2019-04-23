@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7533d2217682b7be2b48c7aa3a5943c270de5a1a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8461fdd3fd0aaedbbdd770a4e2762c4912c3ce0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040154"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
 
@@ -73,15 +73,15 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
 ### <a name="to-call-a-command-from-an-assembly"></a>若要从程序集调用命令
 
-1.  在解决方案中，添加对程序集的引用。
+1. 在解决方案中，添加对程序集的引用。
 
-2.  在顶部*StartPage.xaml*文件，将命名空间指令添加程序集，如下面的示例中所示。
+2. 在顶部*StartPage.xaml*文件，将命名空间指令添加程序集，如下面的示例中所示。
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3.  通过设置调用命令`Command`XAML 对象，如下面的示例中所示的属性。
+3. 通过设置调用命令`Command`XAML 对象，如下面的示例中所示的属性。
 
      Xaml
 

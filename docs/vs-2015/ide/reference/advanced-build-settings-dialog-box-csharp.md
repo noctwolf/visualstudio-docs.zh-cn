@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4336ef93eded7ed1d56a8ee34fff0189813da17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bbdbee2043066716cca2646847c42d0878bab385
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763343"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670194"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 使用“项目设计器”的“高级生成设置”对话框来指定项目的高级生成配置属性。 此对话框仅适用于 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目。  
   
 ## <a name="general"></a>常规  
@@ -51,7 +50,7 @@ ms.locfileid: "54763343"
   **不引用 mscorlib.dll**  
   指定是否将 mscorlib.dll 导入程序，同时定义整个 <xref:System> 命名空间。 如果想要定义或创建自己的 <xref:System> 命名空间和对象，请选中此框。 有关详细信息，请参阅 [/nostdlib（C# 编译器选项）](http://msdn.microsoft.com/library/ec197989-fa49-4725-a455-e06b551eb65f)。  
   
-## <a name="output"></a>输出  
+## <a name="output"></a>Output  
  使用以下选项可以指定高级输出选项。  
   
  **调试信息**  

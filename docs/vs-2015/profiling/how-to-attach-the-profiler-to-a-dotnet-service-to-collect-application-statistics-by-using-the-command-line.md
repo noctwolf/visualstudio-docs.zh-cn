@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca0b64b112e149404b2ee8861103b25fd6780ccc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040245"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：Profiler 附加到.NET 服务以使用命令行收集应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ ms.locfileid: "59668413"
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** 启用采样。  
+   - **/globalsampleon** 启用采样。  
 
-   -   **/samplelineoff** 禁用向特定源代码行分配收集的数据。 指定此选项时，仅向函数分配数据。  
+   - **/samplelineoff** 禁用向特定源代码行分配收集的数据。 指定此选项时，仅向函数分配数据。  
 
 4. 重新启动计算机。  
 
@@ -90,14 +90,14 @@ ms.locfileid: "59668413"
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|将采样事件更改为从进程对操作系统内核的系统调用 (syscall)。 如果已指定 `Interval`，则会设置样本之间的调用次数。 默认值为 10。|  
    |[/counter](../profiling/counter.md) **:** `Config`|将采样事件和间隔更改为 `Config` 中指定的处理器性能计数器和间隔。|  
 
-   -   **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。  
+   - **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。  
 
 ## <a name="controlling-data-collection"></a>控制数据收集  
  服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
     |选项|描述|  
     |------------|-----------------|  
@@ -112,23 +112,23 @@ ms.locfileid: "59668413"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  执行下列操作之一以从目标应用程序中拆离探查器：  
+1. 执行下列操作之一以从目标应用程序中拆离探查器：  
 
-    -   停止服务。  
+    - 停止服务。  
 
          或  
 
-    -   键入 **VSPerfCmd /detach**  
+    - 键入 **VSPerfCmd /detach**  
 
-2.  关闭探查器。 类型：  
+2. 关闭探查器。 类型：  
 
      **VSPerfCmd /shutdown**  
 
-3.  （可选）清除分析环境变量。 类型：  
+3. （可选）清除分析环境变量。 类型：  
 
      VSPerfClrEnv /globaloff  
 
-4.  重新启动计算机。  
+4. 重新启动计算机。  
 
 ## <a name="see-also"></a>请参阅  
  [分析服务](../profiling/command-line-profiling-of-services.md)   

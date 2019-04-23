@@ -1,5 +1,5 @@
 ---
-title: 如何： 发布启用了视觉样式的 WPF 应用程序 |Microsoft Docs
+title: 如何：发布启用了视觉样式的 WPF 应用程序 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038122"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布启用了视觉样式的 WPF 应用程序
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布已启用视觉样式的 WPF 应用程序
 
 视觉样式可启用常用控件以基于用户选择的主题更改的外观。 默认情况下，视觉样式未启用的 Windows Presentation Foundation (WPF) 应用程序中，因此你必须手动启用它们。 但是，启用视觉样式的 WPF 应用程序，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误，发布启用了视觉样式的 WPF 应用程序的过程。 视觉样式的详细信息，请参阅[视觉样式概述](/windows/desktop/Controls/visual-styles-overview)。 有关错误消息的详细信息，请参阅[排查 ClickOnce 部署中的特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "56953912"
 
   然后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>将解决方案发布不使用视觉样式已启用
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>将解决方案发布不使用视觉样式已启用
 
 1. 请确保你的项目不具有视觉样式已启用。 首先，检查你的项目的清单文件的以下 XML。 然后，如果存在 XML，则请将带有注释标记的 XML。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56953912"
 
          在中打开 app.manifest 文件**代码编辑器**。
 
-    **若要打开清单文件中的C#项目**
+    **若要在 C# 项目中打开清单文件**
 
     1. 在菜单栏上依次选择**项目**， *ProjectName* **属性**，其中*ProjectName*是 WPF 项目的名称。
 
@@ -72,7 +72,7 @@ ms.locfileid: "56953912"
 
          此按钮将显示所有项目项，其中包括已排除，以及通常处于隐藏状态。 清单文件显示为一个项目项。
 
-2. 生成和发布你的解决方案。 有关如何发布解决方案的详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+2. 生成和发布你的解决方案。 有关如何发布解决方案的详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ## <a name="create-a-manifest-file"></a>创建清单文件
 

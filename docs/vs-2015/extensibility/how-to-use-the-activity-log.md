@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50ef738826a9eb85a081a7063c1ca55280bed3a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042582"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>若要向活动日志写入条目  
   
-1.  此代码中的插入<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法，但 VSPackage 构造函数中：  
+1. 此代码中的插入<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法或任何其他方法，但 VSPackage 构造函数中：  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -42,13 +42,13 @@ Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售
   
      此代码获取<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> 写入到活动日志中，使用当前区域性上下文的信息项。  
   
-2.  加载 VSPackage 时 （通常在调用命令或打开一个窗口时），会在活动日志中写入文本。  
+2. 加载 VSPackage 时 （通常在调用命令或打开一个窗口时），会在活动日志中写入文本。  
   
 ### <a name="to-examine-the-activity-log"></a>活动日志中检查  
   
-1.  Visual Studio 数据查找的子文件夹中的活动日志： *%appdata%* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
+1. Visual Studio 数据查找的子文件夹中的活动日志： *%appdata%* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
   
-2.  使用任何文本编辑器打开活动日志。 以下是典型条目：  
+2. 使用任何文本编辑器打开活动日志。 以下是典型条目：  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  

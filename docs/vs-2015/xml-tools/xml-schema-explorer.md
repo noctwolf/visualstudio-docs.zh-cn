@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937751"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670428"
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 XML 架构资源管理器与 Microsoft Visual Studio 和 XML 编辑器相集成，从而使您可以使用 XML 架构定义语言 (XSD) 架构。 当打开 XML 架构文件时**架构集**节点将出现在 XML 架构资源管理器。 目标文件的所有包含架构、导入架构或重新定义的架构，以及通过 `include` 或 `import` 语句引用的任何文件，也出现在 XML 架构资源管理器中。  
   
  使用 XML 架构资源管理器，您可以执行下列操作：  

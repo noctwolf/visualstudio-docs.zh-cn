@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622717"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670441"
 ---
 # <a name="support-for-user-settings"></a>支持用户设置
 VSPackage 可以定义一个或多个设置类别，是一组保留在用户选择时的状态变量**导入/导出设置**命令**工具**菜单。 若要启用此持久性，您使用的设置 Api 中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
@@ -50,8 +50,7 @@ VSPackage 可以定义一个或多个设置类别，是一组保留在用户选�
 
  AlternateParent = CategoryName
 
-
-| name | 类型 | 数据 | 描述 |
+| 名称 | 类型 | 数据 | 描述 |
 |-----------------|--------| - | - |
 | (默认) | REG_SZ | 自定义设置点的名称 | 密钥的名称， `<CSPName`>，是自定义设置点的未本地化的名称。<br /><br /> 为基于 MPF 实现，该密钥的名称获取通过组合`categoryName`并`objectName`的参数<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>构造函数到`categoryName_objectName`。<br /><br /> 键可以是空的也可以包含在附属 DLL 中的本地化字符串的引用的 ID。 此值从获取`objectNameResourceID`自变量<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>构造函数。 |
 | package | REG_SZ | GUID | 实现自定义设置点的 VSPackage 的 GUID。<br /><br /> 实现基于使用 MPF<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>类中，使用构造函数的`objectType`参数，其中包含 VSPackage 的<xref:System.Type>和反射来获取此值。 |

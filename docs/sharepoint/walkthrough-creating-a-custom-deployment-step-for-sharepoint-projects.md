@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ece85279e4ecff20eff0a79c75f4f316de1a54cf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609392"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040167"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练：创建 SharePoint 项目的自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。
@@ -27,17 +27,17 @@ ms.locfileid: "56609392"
 
  本演练演示了下列任务：
 
--   创建 Visual Studio 扩展将执行两项主要任务：
+- 创建 Visual Studio 扩展将执行两项主要任务：
 
-    -   扩展插件定义自定义部署步骤，若要升级 SharePoint 解决方案。
+    - 扩展插件定义自定义部署步骤，若要升级 SharePoint 解决方案。
 
-    -   该扩展会定义新的部署配置，这是针对给定项目执行部署步骤的一组项目扩展。 新的部署配置包括自定义部署步骤和几个内置部署步骤。
+    - 该扩展会定义新的部署配置，这是针对给定项目执行部署步骤的一组项目扩展。 新的部署配置包括自定义部署步骤和几个内置部署步骤。
 
--   创建两个扩展插件程序集调用的自定义 SharePoint 命令。 SharePoint 命令都可由扩展插件程序集的 SharePoint 服务器对象模型中使用 Api 调用的方法。 有关详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
+- 创建两个扩展插件程序集调用的自定义 SharePoint 命令。 SharePoint 命令都可由扩展插件程序集的 SharePoint 服务器对象模型中使用 Api 调用的方法。 有关详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
--   生成 Visual Studio 扩展 (VSIX) 包来部署这两个程序集。
+- 生成 Visual Studio 扩展 (VSIX) 包来部署这两个程序集。
 
--   测试新的部署步骤。
+- 测试新的部署步骤。
 
 ## <a name="prerequisites"></a>系统必备
  需要要完成本演练的开发计算机上安装以下组件：
@@ -67,84 +67,84 @@ ms.locfileid: "56609392"
 
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目
 
-1.  启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
+1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
+2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-3.  在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
+3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
     > [!NOTE]
     >  **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
 
-4.  在对话框的顶部，选择 **.NET Framework 4.5** .NET Framework 版本的列表中。
+4. 在对话框的顶部，选择 **.NET Framework 4.5** .NET Framework 版本的列表中。
 
-5.  选择**VSIX 项目**模板，将项目命名**UpgradeDeploymentStep**，然后选择**确定**按钮。
+5. 选择**VSIX 项目**模板，将项目命名**UpgradeDeploymentStep**，然后选择**确定**按钮。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**UpgradeDeploymentStep**投影到**解决方案资源管理器**。
 
 #### <a name="to-create-the-extension-project"></a>若要创建扩展项目
 
-1.  在中**解决方案资源管理器**，打开 UpgradeDeploymentStep 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。
+1. 在中**解决方案资源管理器**，打开 UpgradeDeploymentStep 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。
 
-2.  在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**Windows**节点。
+2. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**Windows**节点。
 
-3.  在对话框的顶部，选择 **.NET Framework 4.5** .NET Framework 版本的列表中。
+3. 在对话框的顶部，选择 **.NET Framework 4.5** .NET Framework 版本的列表中。
 
-4.  选择**类库**项目模板，请将项目命名**DeploymentStepExtension**，然后选择**确定**按钮。
+4. 选择**类库**项目模板，请将项目命名**DeploymentStepExtension**，然后选择**确定**按钮。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**DeploymentStepExtension**到解决方案并打开默认 Class1 代码文件。
 
-5.  从项目中删除的 Class1 代码文件。
+5. 从项目中删除的 Class1 代码文件。
 
 #### <a name="to-create-the-sharepoint-command-project"></a>若要创建 SharePoint 命令项目
 
-1.  在中**解决方案资源管理器**，打开 UpgradeDeploymentStep 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。
+1. 在中**解决方案资源管理器**，打开 UpgradeDeploymentStep 解决方案节点的快捷菜单，选择**添加**，然后选择**新项目**。
 
-2.  在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows**节点。
+2. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows**节点。
 
-3.  在对话框的顶部，选择 **.NET Framework 3.5** .NET Framework 版本的列表中。
+3. 在对话框的顶部，选择 **.NET Framework 3.5** .NET Framework 版本的列表中。
 
-4.  选择**类库**项目模板，请将项目命名**SharePointCommands**，然后选择**确定**按钮。
+4. 选择**类库**项目模板，请将项目命名**SharePointCommands**，然后选择**确定**按钮。
 
      Visual Studio 将添加**SharePointCommands**到解决方案并打开默认 Class1 代码文件。
 
-5.  从项目中删除的 Class1 代码文件。
+5. 从项目中删除的 Class1 代码文件。
 
 ## <a name="configure-the-projects"></a>配置项目
  编写代码以创建自定义部署步骤之前，必须添加代码文件和程序集引用，并且您必须配置项目。
 
 #### <a name="to-configure-the-deploymentstepextension-project"></a>若要配置 DeploymentStepExtension 项目
 
-1.  在中**DeploymentStepExtension**项目中，添加具有以下名称的两个文件：
+1. 在中**DeploymentStepExtension**项目中，添加具有以下名称的两个文件：
 
-    -   UpgradeStep
+    - UpgradeStep
 
-    -   DeploymentConfigurationExtension
+    - DeploymentConfigurationExtension
 
-2.  打开上 DeploymentStepExtension 项目的快捷菜单，然后选择**添加引用**。
+2. 打开上 DeploymentStepExtension 项目的快捷菜单，然后选择**添加引用**。
 
-3.  上**Framework**选项卡上，选择复选框的 System.ComponentModel.Composition 程序集。
+3. 上**Framework**选项卡上，选择复选框的 System.ComponentModel.Composition 程序集。
 
-4.  上**扩展**选项卡上，对于 Microsoft.VisualStudio.SharePoint 程序集，选中的复选框，然后选择**确定**按钮。
+4. 上**扩展**选项卡上，对于 Microsoft.VisualStudio.SharePoint 程序集，选中的复选框，然后选择**确定**按钮。
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>若要配置 SharePointCommands 项目
 
-1.  在中**SharePointCommands**项目中，添加名为命令的代码文件。
+1. 在中**SharePointCommands**项目中，添加名为命令的代码文件。
 
-2.  在中**解决方案资源管理器**，打开快捷菜单上**SharePointCommands**项目节点，然后选择**添加引用**。
+2. 在中**解决方案资源管理器**，打开快捷菜单上**SharePointCommands**项目节点，然后选择**添加引用**。
 
-3.  上**扩展**选项卡上，对于以下程序集，选中的复选框，然后单击选择**确定**按钮
+3. 上**扩展**选项卡上，对于以下程序集，选中的复选框，然后单击选择**确定**按钮
 
-    -   Microsoft.SharePoint
+    - Microsoft.SharePoint
 
-    -   Microsoft.VisualStudio.SharePoint.Commands
+    - Microsoft.VisualStudio.SharePoint.Commands
 
 ## <a name="define-the-custom-deployment-step"></a>定义自定义部署步骤
  创建一个类，用于定义升级部署步骤。 若要定义部署步骤，此类应实现<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>接口。 实现此接口，只要您想要定义自定义部署步骤。
 
 #### <a name="to-define-the-custom-deployment-step"></a>若要定义自定义部署步骤
 
-1.  在中**DeploymentStepExtension**项目，打开 UpgradeStep 代码文件，然后将以下代码粘贴到其中。
+1. 在中**DeploymentStepExtension**项目，打开 UpgradeStep 代码文件，然后将以下代码粘贴到其中。
 
     > [!NOTE]
     >  添加此代码，此项目将具有某些编译错误，但它们将消失后添加的代码在后续步骤中。
@@ -159,7 +159,7 @@ ms.locfileid: "56609392"
 
 #### <a name="to-create-the-deployment-configuration"></a>若要创建的部署配置
 
-1.  在中**DeploymentStepExtension**项目，打开 DeploymentConfigurationExtension 代码文件，然后将以下代码粘贴到其中。
+1. 在中**DeploymentStepExtension**项目，打开 DeploymentConfigurationExtension 代码文件，然后将以下代码粘贴到其中。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]
@@ -169,7 +169,7 @@ ms.locfileid: "56609392"
 
 #### <a name="to-define-the-sharepoint-commands"></a>若要定义的 SharePoint 命令
 
-1.  在中**SharePointCommands**项目，打开命令的代码文件，然后将以下代码粘贴到其中。
+1. 在中**SharePointCommands**项目，打开命令的代码文件，然后将以下代码粘贴到其中。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]
@@ -179,37 +179,37 @@ ms.locfileid: "56609392"
 
 #### <a name="to-build-the-projects"></a>若要生成项目
 
-1.  在中**解决方案资源管理器**，打开快捷菜单**DeploymentStepExtension**项目，，然后选择**生成**。
+1. 在中**解决方案资源管理器**，打开快捷菜单**DeploymentStepExtension**项目，，然后选择**生成**。
 
-2.  打开快捷菜单**SharePointCommands**项目，，然后选择**生成**。
+2. 打开快捷菜单**SharePointCommands**项目，，然后选择**生成**。
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>创建 VSIX 包，以将扩展部署
  若要将扩展部署，使用 VSIX 项目在解决方案中创建 VSIX 包。 首先，通过修改 VSIX 项目中的 source.extension.vsixmanifest 文件中配置 VSIX 包。 通过生成解决方案，然后创建 VSIX 包。
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>若要配置和创建 VSIX 包
 
-1.  在中**解决方案资源管理器**下**UpgradeDeploymentStep**项目中，打开快捷菜单**source.extension.vsixmanifest**文件，，然后选择**打开**。
+1. 在中**解决方案资源管理器**下**UpgradeDeploymentStep**项目中，打开快捷菜单**source.extension.vsixmanifest**文件，，然后选择**打开**。
 
      Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。
 
-2.  在中**产品名称**框中，输入**升级 SharePoint 项目的部署步骤**。
+2. 在中**产品名称**框中，输入**升级 SharePoint 项目的部署步骤**。
 
-3.  在中**作者**框中，输入**Contoso**。
+3. 在中**作者**框中，输入**Contoso**。
 
-4.  在中**描述**框中，输入**提供了可以在 SharePoint 项目中使用的自定义升级部署步骤**。
+4. 在中**描述**框中，输入**提供了可以在 SharePoint 项目中使用的自定义升级部署步骤**。
 
-5.  在中**资产**选项卡的编辑器中，选择**新建**按钮。
+5. 在中**资产**选项卡的编辑器中，选择**新建**按钮。
 
      **添加新资产**对话框随即出现。
 
-6.  在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。
+6. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
     >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
-7.  在中**源**列表中，选择**当前解决方案中的项目**。
+7. 在中**源**列表中，选择**当前解决方案中的项目**。
 
-8.  在中**项目**列表中，选择**DeploymentStepExtension**，然后选择**确定**按钮。
+8. 在中**项目**列表中，选择**DeploymentStepExtension**，然后选择**确定**按钮。
 
 9. 在清单编辑器中，选择**新建**按钮再次。
 
@@ -237,13 +237,13 @@ ms.locfileid: "56609392"
 
 #### <a name="to-start-debugging-the-extension"></a>若要开始调试扩展
 
-1.  使用管理凭据，重新启动 Visual Studio，然后打开 UpgradeDeploymentStep 解决方案。
+1. 使用管理凭据，重新启动 Visual Studio，然后打开 UpgradeDeploymentStep 解决方案。
 
-2.  在 DeploymentStepExtension 项目中，打开 UpgradeStep 代码文件，并将断点添加到代码中的第一行`CanExecute`和`Execute`方法。
+2. 在 DeploymentStepExtension 项目中，打开 UpgradeStep 代码文件，并将断点添加到代码中的第一行`CanExecute`和`Execute`方法。
 
-3.  开始调试通过选择**F5**关键的或在菜单栏中选择**调试** > **开始调试**。
+3. 开始调试通过选择**F5**关键的或在菜单栏中选择**调试** > **开始调试**。
 
-4.  Visual Studio 会安装 SharePoint Projects\1.0 到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 部署步骤扩展，并启动 Visual Studio 的实验实例。 将 Visual Studio 的此实例中测试升级的部署步骤。
+4. Visual Studio 会安装 SharePoint Projects\1.0 到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 部署步骤扩展，并启动 Visual Studio 的实验实例。 将 Visual Studio 的此实例中测试升级的部署步骤。
 
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>若要使用列表定义和列表实例创建一个 SharePoint 项目
 
@@ -288,13 +288,13 @@ ms.locfileid: "56609392"
 
 12. 在列表设计器上**列**选项卡上，选择**键入新的或现有的列名称**行，以及如何将在以下各列**列显示名称**列表：
 
-    1.  名字
+    1. 名字
 
-    2.  公司
+    2. 公司
 
-    3.  办公电话
+    3. 办公电话
 
-    4.  电子邮件
+    4. 电子邮件
 
 13. 保存所有文件，然后关闭列表设计器。
 
@@ -335,21 +335,21 @@ ms.locfileid: "56609392"
 
 #### <a name="to-deploy-the-list-definition-and-list-instance"></a>若要部署的列表定义和列表实例
 
-1.  在中**解决方案资源管理器**，选择**EmployeesListDefinition**项目节点。
+1. 在中**解决方案资源管理器**，选择**EmployeesListDefinition**项目节点。
 
-2.  在中**属性**窗口中，请确保**活动部署配置**属性设置为**默认**。
+2. 在中**属性**窗口中，请确保**活动部署配置**属性设置为**默认**。
 
-3.  选择**F5**键，或在菜单栏上选择**调试** > **开始调试**。
+3. 选择**F5**键，或在菜单栏上选择**调试** > **开始调试**。
 
-4.  验证是否已成功生成项目、 web 浏览器打开到 SharePoint 站点的**列出了**快速启动栏中的项包括新**员工**列表中，并且**员工**列表包括为荣条目。
+4. 验证是否已成功生成项目、 web 浏览器打开到 SharePoint 站点的**列出了**快速启动栏中的项包括新**员工**列表中，并且**员工**列表包括为荣条目。
 
-5.  关闭 Web 浏览器。
+5. 关闭 Web 浏览器。
 
 #### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>若要修改的列表定义和列表实例并重新部署
 
-1.  在 EmployeesListDefinition 项目中，打开*Elements.xml*的子文件**员工列表实例**项目项。
+1. 在 EmployeesListDefinition 项目中，打开*Elements.xml*的子文件**员工列表实例**项目项。
 
-2.  删除`Data`元素及其子项来为荣从列表中删除该条目。
+2. 删除`Data`元素及其子项来为荣从列表中删除该条目。
 
      完成后，该文件应包含以下 XML。
 
@@ -365,19 +365,19 @@ ms.locfileid: "56609392"
     </Elements>
     ```
 
-3.  保存并关闭*Elements.xml*文件。
+3. 保存并关闭*Elements.xml*文件。
 
-4.  打开快捷菜单**员工列表**项，项目，然后选择**打开**或**属性**。
+4. 打开快捷菜单**员工列表**项，项目，然后选择**打开**或**属性**。
 
-5.  在列表设计器中，选择**视图**选项卡。
+5. 在列表设计器中，选择**视图**选项卡。
 
-6.  在中**所选列**列表中，选择**附件**，然后选择 < 键移动到该列**可用列**列表。
+6. 在中**所选列**列表中，选择**附件**，然后选择 < 键移动到该列**可用列**列表。
 
-7.  重复上一步移动**办公电话**从列**所选列**到列出**可用列**列表。
+7. 重复上一步移动**办公电话**从列**所选列**到列出**可用列**列表。
 
      此操作将删除这些字段的默认视图**员工**SharePoint 站点上的列表。
 
-8.  开始调试通过选择**F5**关键的或在菜单栏中选择**调试** > **开始调试**。
+8. 开始调试通过选择**F5**关键的或在菜单栏中选择**调试** > **开始调试**。
 
 9. 确认**部署冲突**对话框随即出现。
 
@@ -389,28 +389,28 @@ ms.locfileid: "56609392"
 
 11. 在中**列出了**部分的快速启动栏中，选择**员工**列表，并验证以下详细信息：
 
-    -   **附件**并**住宅电话号码**列不会显示在此视图中的列表。
+    - **附件**并**住宅电话号码**列不会显示在此视图中的列表。
 
-    -   该列表为空。 使用时**默认**要重新部署该解决方案，部署配置**员工**列表已替换为你的项目中的新空列表。
+    - 该列表为空。 使用时**默认**要重新部署该解决方案，部署配置**员工**列表已替换为你的项目中的新空列表。
 
 ## <a name="test-the-deployment-step"></a>测试部署步骤
  现在您就可以测试升级的部署步骤。 首先，将项添加到 SharePoint 中的列表实例。 然后更改列表定义和列表实例，将其升级在 SharePoint 网站上，并确认升级部署步骤不会覆盖新项。
 
 #### <a name="to-manually-add-an-item-to-the-list"></a>若要手动将某项添加到列表
 
-1.  在功能区在 SharePoint 站点下**列表工具**选项卡上，选择**项**选项卡。
+1. 在功能区在 SharePoint 站点下**列表工具**选项卡上，选择**项**选项卡。
 
-2.  在中**新建**组中，选择**新项**。
+2. 在中**新建**组中，选择**新项**。
 
      作为替代方法，你可以选择**添加新项**项列表自身的链接。
 
-3.  在**员工-新项**窗口，请在**标题**框中，输入**设施 Manager**。
+3. 在**员工-新项**窗口，请在**标题**框中，输入**设施 Manager**。
 
-4.  在中**名字**框中，输入**Andy**。
+4. 在中**名字**框中，输入**Andy**。
 
-5.  在中**公司**框中，键入**Contoso**。
+5. 在中**公司**框中，键入**Contoso**。
 
-6.  选择**保存**按钮，验证是否在列表中，将出现新项，然后关闭 web 浏览器。
+6. 选择**保存**按钮，验证是否在列表中，将出现新项，然后关闭 web 浏览器。
 
      稍后在本演练中，将使用此项以验证升级部署步骤不会覆盖此列表的内容。
 
@@ -457,31 +457,31 @@ ms.locfileid: "56609392"
 
 #### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>若要从 SharePoint 站点中删除列表实例
 
-1.  打开**员工**列出 SharePoint 站点上，如果尚未打开列表。
+1. 打开**员工**列出 SharePoint 站点上，如果尚未打开列表。
 
-2.  在功能区中的 SharePoint 站点上，选择**列表工具**选项卡，然后选择**列表**选项卡。
+2. 在功能区中的 SharePoint 站点上，选择**列表工具**选项卡，然后选择**列表**选项卡。
 
-3.  在中**设置**组中，选择**列表设置**项。
+3. 在中**设置**组中，选择**列表设置**项。
 
-4.  下**权限和管理**，选择**删除此列表**命令中，选择**确定**以确认你想要将列表发送到回收站，然后关闭 web浏览器。
+4. 下**权限和管理**，选择**删除此列表**命令中，选择**确定**以确认你想要将列表发送到回收站，然后关闭 web浏览器。
 
 #### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>若要从 SharePoint 站点中删除列表定义
 
-1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**构建** > **Retract**。
+1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**构建** > **Retract**。
 
      Visual Studio 将收回从 SharePoint 站点的列表定义。
 
 #### <a name="to-uninstall-the-extension"></a>卸载扩展
 
-1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
+1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
 
      此时，“扩展和更新”对话框打开。
 
-2.  在扩展的列表，选择**升级 SharePoint 项目的部署步骤**，然后选择**卸载**命令。
+2. 在扩展的列表，选择**升级 SharePoint 项目的部署步骤**，然后选择**卸载**命令。
 
-3.  在出现的对话框中，选择**是**以确认你要卸载扩展，然后选择**立即重新启动**以完成卸载。
+3. 在出现的对话框中，选择**是**以确认你要卸载扩展，然后选择**立即重新启动**以完成卸载。
 
-4.  关闭 Visual Studio （实验实例和在其中 UpgradeDeploymentStep 解决方案已打开的 Visual Studio 的实例） 的两个实例。
+4. 关闭 Visual Studio （实验实例和在其中 UpgradeDeploymentStep 解决方案已打开的 Visual Studio 的实例） 的两个实例。
 
 ## <a name="see-also"></a>请参阅
 - [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
