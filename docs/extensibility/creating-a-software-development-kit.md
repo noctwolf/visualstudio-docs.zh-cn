@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc6849aa5c0dec07fc7dbdd08a950809624015d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052072"
 ---
 # <a name="create-a-software-development-kit"></a>创建软件开发工具包
 软件开发工具包 (SDK) 是一系列 Api，您可以参考作为 Visual Studio 中的单个项。 **引用管理器**对话框会列出与项目相关的所有 Sdk。 向项目添加 SDK，Api 时，Visual Studio 中提供。
@@ -30,7 +30,7 @@ ms.locfileid: "59661215"
 
 - [扩展 Sdk](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> 平台 Sdk
+## <a name="PlatformSDKs"></a> 平台 Sdk
  开发适用于平台的应用需要平台 Sdk。 例如，[!INCLUDE[win81](../debugger/includes/win81_md.md)]开发适用于应用程序所需的 SDK [!INCLUDE[win81](../debugger/includes/win81_md.md)]。
 
 ### <a name="installation"></a>安装
@@ -58,7 +58,7 @@ ms.locfileid: "59661215"
 | *体系结构*文件夹 | 任何受支持*体系结构*文件夹可以存在。 Visual Studio 支持以下体系结构： x86、 x64、 ARM 和非特定语言。 注意:Win32 映射为 x86，而 AnyCPU 映射到非特定语言。<br /><br /> MSBuild 仅查找*\CommonConfiguration\neutral*平台 sdk。 |
 | *SDKManifest.xml* | 此文件描述了 Visual Studio 应如何使用 SDK。 查看 SDK 清单[!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** 对象浏览器将显示在浏览列表中的值。<br /><br /> **PlatformIdentity:** 此属性存在本地告知 Visual Studio 和 MSBuild SDK 是一个平台 SDK 并且不应复制添加从它的引用。<br /><br /> **TargetFramework:** Visual Studio 使用此属性以确保，它仅投影面向此设置的值中指定的同一框架属性可以使用 SDK。<br /><br /> **MinVSVersion:** Visual Studio 使用此属性使用适用于它的 Sdk。<br /><br /> **参考：** 此属性必须指定为只有那些包含控件的引用。 有关如何指定包含控件的引用的信息，请参阅下面。 |
 
-##  <a name="ExtensionSDKs"></a> 扩展 Sdk
+## <a name="ExtensionSDKs"></a> 扩展 Sdk
  以下部分介绍需要执行的操作将部署扩展 SDK。
 
 ### <a name="installation"></a>安装
@@ -72,13 +72,13 @@ ms.locfileid: "59661215"
 
  如果你想要使用不同的位置，必须执行两项操作之一：
 
-1.  注册表项中指定它：
+1. 注册表项中指定它：
 
      **HKLM\Software\Microsoft\Microsoft Sdk\<目标平台 > \v < 平台版本号\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      并添加具有值 （默认值） 子项`<path to SDK><SDKName><SDKVersion>`。
 
-2.  添加 MSBuild 属性`SDKReferenceDirectoryRoot`到项目文件。 此属性的值是你想要引用扩展 Sdk 驻留在其中的目录的以分号分隔列表。
+2. 添加 MSBuild 属性`SDKReferenceDirectoryRoot`到项目文件。 此属性的值是你想要引用扩展 Sdk 驻留在其中的目录的以分号分隔列表。
 
 ### <a name="installation-layout"></a>安装布局
  扩展 Sdk 具有以下安装布局：
@@ -191,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. 文件引用：指定包含控件或本机 Winmd 的引用。 有关如何指定包含控件的引用的信息，请参阅[指定的工具箱项的位置](#ToolboxItems)下面。
 
-##  <a name="ToolboxItems"></a> 指定的工具箱项的位置
+## <a name="ToolboxItems"></a> 指定的工具箱项的位置
  ToolBoxItems 元素*SDKManifest.xml*架构在平台和扩展 Sdk 中指定的类别和工具箱项的位置。 以下示例演示如何指定不同的位置。 这是适用于 WinMD 或 DLL 的引用。
 
-1.  将控件放在工具箱的默认类别。
+1. 将控件放在工具箱的默认类别。
 
     ```
     <File Reference = "sample.winmd">
@@ -202,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  放置在特定的类别名称的控件。
+2. 放置在特定的类别名称的控件。
 
     ```
     <File Reference = "sample.winmd">
@@ -210,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  放置在特定类别名称的控件。
+3. 放置在特定类别名称的控件。
 
     ```
     <File Reference = "sample.winmd">
@@ -221,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  在 Blend 和 Visual Studio 放置在不同的类别名称的控件。
+4. 在 Blend 和 Visual Studio 放置在不同的类别名称的控件。
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -231,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  枚举以不同的方式在 Blend 和 Visual Studio 中的特定控件。
+5. 枚举以不同的方式在 Blend 和 Visual Studio 中的特定控件。
 
     ```
     <File Reference = "sample.winmd">
@@ -242,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  枚举特定控件，并将其放置在 Visual Studio 通用路径下或仅在所有的控件组。
+6. 枚举特定控件，并将其放置在 Visual Studio 通用路径下或仅在所有的控件组。
 
     ```
     <File Reference = "sample.winmd">
@@ -253,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  枚举特定控件，并没有它们在 ChooseItems 中显示指定的一组要在工具箱中。
+7. 枚举特定控件，并没有它们在 ChooseItems 中显示指定的一组要在工具箱中。
 
     ```
     <File Reference = "sample.winmd">

@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051610"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "59670314"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>更改基于文本的工具窗口和编辑器中文本的大小  
   
-1.  从“工具”菜单中选择“选项”。  
+1. 从“工具”菜单中选择“选项”。  
   
-2.  在“环境”文件夹上选择“字体和颜色”。  
+2. 在“环境”文件夹上选择“字体和颜色”。  
   
-3.  在“显示其设置”下拉菜单中选择一个选项。  
+3. 在“显示其设置”下拉菜单中选择一个选项。  
   
      若要更改编辑器中文本的字号，请选择“文本编辑器”。  
   
@@ -56,16 +56,16 @@ ms.locfileid: "59670314"
   
      若要更改语句完成弹出消息中文本的字号，请选择“语句完成”。  
   
-4.  从“显示项”中选择“纯文本”。  
+4. 从“显示项”中选择“纯文本”。  
   
-5.  在“字体”中选择一个新的字体类型。  
+5. 在“字体”中选择一个新的字体类型。  
   
-6.  在“大小”中选择一个新的字号。  
+6. 在“大小”中选择一个新的字号。  
   
     > [!NOTE]
     >  若要重置基于文本的工具窗口和编辑器的文本大小，请选择“使用默认值”。  
   
-7.  选择 **“确定”**。  
+7. 选择 **“确定”**。  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>更改 IDE 中使用的颜色  
  也可以选择更改编辑器中文本、边距指示器、空格和码位元素的默认颜色。  
@@ -75,40 +75,40 @@ ms.locfileid: "59670314"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>更改编辑器中项的颜色  
   
-1.  从“工具”菜单中选择“选项”。  
+1. 从“工具”菜单中选择“选项”。  
   
-2.  在“环境”文件夹中选择“字体和颜色”。  
+2. 在“环境”文件夹中选择“字体和颜色”。  
   
-3.  在“显示其设置”中选择“文本编辑器”。  
+3. 在“显示其设置”中选择“文本编辑器”。  
   
-4.  从“显示项”中选择要更改其显示方式的项，例如“纯文本”、“指示器边距”、“可见空白”、“HTML 特性名”或“XML 特性”。  
+4. 从“显示项”中选择要更改其显示方式的项，例如“纯文本”、“指示器边距”、“可见空白”、“HTML 特性名”或“XML 特性”。  
   
-5.  从下列选项中选择显示设置：“项前景”、“项背景”和“粗体”。  
+5. 从下列选项中选择显示设置：“项前景”、“项背景”和“粗体”。  
   
-6.  选择 **“确定”**。  
+6. 选择 **“确定”**。  
   
 ## <a name="toolbars"></a>工具栏  
  为了提高工具栏的可用性和易用性，可以向工具栏按钮添加文本。  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>为工具栏按钮指定文本  
   
-1.  在“工具”菜单中选择“自定义”。  
+1. 在“工具”菜单中选择“自定义”。  
   
-2.  在“自定义”对话框中选择“命令”选项卡。  
+2. 在“自定义”对话框中选择“命令”选项卡。  
   
-3.  选择“工具栏”，然后选择包含要显示其文本的按钮的工具栏名称。  
+3. 选择“工具栏”，然后选择包含要显示其文本的按钮的工具栏名称。  
   
-4.  在列表中，选择要更改的命令。  
+4. 在列表中，选择要更改的命令。  
   
-5.  选择“修改所选内容”。  
+5. 选择“修改所选内容”。  
   
-6.  选择“图像和文本”。  
+6. 选择“图像和文本”。  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>修改按钮的显示文本  
   
-1.  重新选择“修改所选内容”。  
+1. 重新选择“修改所选内容”。  
   
-2.  在“名称”旁边为选定的按钮插入一个新标题。  
+2. 在“名称”旁边为选定的按钮插入一个新标题。  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 的辅助功能](../../ide/reference/accessibility-features-of-visual-studio.md)   

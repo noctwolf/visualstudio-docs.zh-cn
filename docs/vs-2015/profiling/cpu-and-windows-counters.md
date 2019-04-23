@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046238"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54800435"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -104,24 +104,24 @@ ms.locfileid: "54800435"
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>查看当前平台上支持的 Windows 计数器列表的列表  
   
-1.  在“性能资源管理器”中，右键单击性能会话，然后单击“属性”。  
+1. 在“性能资源管理器”中，右键单击性能会话，然后单击“属性”。  
   
-2.  单击“Windows 计数器”。  
+2. 单击“Windows 计数器”。  
   
-3.  选择“收集 Windows 计数器”。  
+3. 选择“收集 Windows 计数器”。  
   
-4.  从“计数器类别”列表中，选择一个计数器组。 该组的 Windows 计数器将显示在列表框中。  
+4. 从“计数器类别”列表中，选择一个计数器组。 该组的 Windows 计数器将显示在列表框中。  
   
-     **请注意**：单击“取消”可返回到上一个计数器收集配置。  
+     **注意：** 单击“取消”可返回到上一个计数器收集配置。  
   
 ### <a name="command-line"></a>命令行  
  通过使用 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具，可以从命令行中列出计算机上可用的 CPU 计数器。  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>查看当前平台上支持的 CPU 计数器的列表  
   
-1.  打开命令提示符窗口。  
+1. 打开命令提示符窗口。  
   
-2.  类型  
+2. 类型  
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   

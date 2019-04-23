@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056765"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>如何：创建 LINQ to SQL 类 （O/R 设计器） 之间的关联 （关系）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "59669050"
   
 ### <a name="to-create-an-association-between-entity-classes"></a>创建实体类之间的关联  
   
-1.  右击表示关联中的父类的实体类，指向“添加”，然后单击“关联”。  
+1. 右击表示关联中的父类的实体类，指向“添加”，然后单击“关联”。  
   
-2.  验证在“关联编辑器”对话框中是否选择了正确的“父类”。  
+2. 验证在“关联编辑器”对话框中是否选择了正确的“父类”。  
   
-3.  选择组合框中的“子类”。  
+3. 选择组合框中的“子类”。  
   
-4.  选择实现类之间的关联的“关联属性”。 通常，这种关联对应于数据库中定义的外键关系。 例如，在 Customers 和 Orders 关联中，**关联属性**是为每个类的 CustomerID。  
+4. 选择实现类之间的关联的“关联属性”。 通常，这种关联对应于数据库中定义的外键关系。 例如，在 Customers 和 Orders 关联中，**关联属性**是为每个类的 CustomerID。  
   
-5.  单击“确定”创建关联。  
+5. 单击“确定”创建关联。  
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

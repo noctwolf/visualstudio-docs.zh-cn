@@ -13,21 +13,21 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c420c4546a836d1440bdb150eba1319ad6218622
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050241"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>用 MSBuild 并行生成多个项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通过 MSBuild，可通过并行运行多个项目来更快地生成它们。 若要并行运行生成，请在一台多核或多处理器计算机上采用以下设置：  
   
--   在命令提示符处使用 `/maxcpucount` 开关。  
+- 在命令提示符处使用 `/maxcpucount` 开关。  
   
--   在 MSBuild 任务中使用 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 任务参数。  
+- 在 MSBuild 任务中使用 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 任务参数。  
   
 > [!NOTE]
 >  命令行中的 **/verbosity** (**/v**) 开关也会影响生成性能。 如果将生成日志信息的详细级别设置为详细或诊断以用于疑难解答，生成性能可能会降低。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)和[命令行引用](../msbuild/msbuild-command-line-reference.md)。  

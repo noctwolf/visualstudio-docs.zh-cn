@@ -10,12 +10,12 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052176"
 ---
 # <a name="how-to-get-a-service"></a>如何：获取服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58934538"
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>从已初始化的 VSPackage 中获取服务  
   
-1.  每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 项目名为`GetServiceExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C# / 可扩展性**。  
+1. 每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSIX 项目名为`GetServiceExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C# / 可扩展性**。  
   
-2.  现在，添加名为的自定义命令项模板**GetServiceCommand**。 在中**添加新项**对话框中，转到**Visual C# / 可扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为**GetServiceCommand.cs**。 详细了解如何创建自定义命令[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. 现在，添加名为的自定义命令项模板**GetServiceCommand**。 在中**添加新项**对话框中，转到**Visual C# / 可扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为**GetServiceCommand.cs**。 详细了解如何创建自定义命令[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  在 GetServiceCommand.cs，MenuItemCommand 方法的主体中删除并添加以下代码：  
+3. 在 GetServiceCommand.cs，MenuItemCommand 方法的主体中删除并添加以下代码：  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -43,9 +43,9 @@ ms.locfileid: "58934538"
   
      此代码获取 SVsActivityLog 服务并将强制转换到<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关示例，请参见 [如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。  
   
-4.  生成项目并启动调试。 将显示在实验实例。  
+4. 生成项目并启动调试。 将显示在实验实例。  
   
-5.  在实验实例工具菜单中，找到**调用 GetServiceCommand**按钮。 当单击此按钮时，您应看到一个消息框，显示**找到活动日志服务。**  
+5. 在实验实例工具菜单中，找到**调用 GetServiceCommand**按钮。 当单击此按钮时，您应看到一个消息框，显示**找到活动日志服务。**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>从工具窗口或控件容器中获取服务  
  有时您可能需要从工具窗口中获得的服务或控制已没有已就位，否则使用并不了解所需的服务的服务提供商确定位置的容器。 例如，你可能想要写入活动日志从控件中。  

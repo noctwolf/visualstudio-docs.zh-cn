@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051344"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 使用专用的 Visual Studio 解决方案，可创建域特定语言 (DSL)。
@@ -54,9 +54,9 @@ ms.locfileid: "58416183"
 
 3. 输入文件扩展名**文件扩展名**页。 它应该是唯一在您的计算机，并想要安装 DSL 在其上的任何计算机。 你应看到消息**没有应用程序或 Visual Studio 编辑器使用此扩展**。
 
-   -   如果您曾经用尚未完全安装的上一个实验性 Dsl 的文件扩展名，则可以清除它们出通过使用**重置实验实例**工具，可以在 Visual Studio SDK 菜单中找到。
+   - 如果您曾经用尚未完全安装的上一个实验性 Dsl 的文件扩展名，则可以清除它们出通过使用**重置实验实例**工具，可以在 Visual Studio SDK 菜单中找到。
 
-   -   如果已在计算机上完全安装另一个 Visual Studio 扩展，使用此文件扩展名，请考虑卸载它。 上**工具**菜单上，单击**扩展管理器**。
+   - 如果已在计算机上完全安装另一个 Visual Studio 扩展，使用此文件扩展名，请考虑卸载它。 上**工具**菜单上，单击**扩展管理器**。
 
 4. 检查，并根据需要调整，其余向导页中的字段。 设置感到满意，单击**完成**。 有关设置的详细信息，请参阅[DSL 设计器向导页](#settings)。
 
@@ -85,15 +85,15 @@ ms.locfileid: "58416183"
 
  如果看到一系列工具或包，应执行下列任一操作：
 
--   键入不同的文件扩展名。
+- 键入不同的文件扩展名。
 
      \- 或 -
 
--   重置 Visual Studio 实验实例。 这将取消注册所有以前生成的 Dsl。 上**启动**菜单上，单击**所有程序**， **Microsoft Visual Studio 2010 SDK**，**工具**，，然后**重置Microsoft Visual Studio 2010 实验实例**。 您可以重新生成任何其他你想要再次使用的 Dsl。
+- 重置 Visual Studio 实验实例。 这将取消注册所有以前生成的 Dsl。 上**启动**菜单上，单击**所有程序**， **Microsoft Visual Studio 2010 SDK**，**工具**，，然后**重置Microsoft Visual Studio 2010 实验实例**。 您可以重新生成任何其他你想要再次使用的 Dsl。
 
      \- 或 -
 
--   如果已在计算机上完全安装 Visual Studio 扩展，使用此文件扩展名，则将其卸载。 上**工具**菜单上，单击**扩展管理器**。
+- 如果已在计算机上完全安装 Visual Studio 扩展，使用此文件扩展名，则将其卸载。 上**工具**菜单上，单击**扩展管理器**。
 
 ### <a name="product-settings-page"></a>产品设置页
  **新的特定于域的语言所属的产品名称是什么？**

@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ce859a1fd6ee491ecf22003f5ef99936136496a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045598"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663137"
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>设置一组属性（基于另一个属性）  
   
--   在 `PropertyGroup` 元素中使用 `Condition` 属性，类似以下代码：  
+- 在 `PropertyGroup` 元素中使用 `Condition` 属性，类似以下代码：  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -44,7 +44,7 @@ ms.locfileid: "59663137"
   
 #### <a name="to-define-a-property-based-on-another-property"></a>定义属性（基于另一个属性）  
   
--   在 `Property` 元素中使用 `Condition` 属性，类似以下代码：  
+- 在 `Property` 元素中使用 `Condition` 属性，类似以下代码：  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -55,7 +55,7 @@ ms.locfileid: "59663137"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性  
   
--   使用 **/property** 开关以及属性和属性值。 例如：  
+- 使用 **/property** 开关以及属性和属性值。 例如：  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  

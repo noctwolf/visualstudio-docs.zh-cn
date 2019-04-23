@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建产品清单 |Microsoft Docs
+title: 如何：创建产品清单 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568096"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057402"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 若要部署应用程序的先决条件，你可以创建引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 包清单包含包的特定于本地化的方面。 这包括字符串、 最终用户许可协议和语言包。
 
- 有关包清单的详细信息，请参阅[如何： 创建程序包清单](../deployment/how-to-create-a-package-manifest.md)。
+ 有关包清单的详细信息，请参阅[如何：创建包清单](../deployment/how-to-create-a-package-manifest.md)。
 
 ## <a name="create-the-product-manifest"></a>创建产品清单
 
 #### <a name="to-create-the-product-manifest"></a>若要创建产品清单
 
-1.  创建引导程序包的目录。 此示例使用 C:\package。
+1. 创建引导程序包的目录。 此示例使用 C:\package。
 
-2.  在 Visual Studio 中，创建名为的新 XML 文件*product.xml*，并将其保存到*C:\package*文件夹。
+2. 在 Visual Studio 中，创建名为的新 XML 文件*product.xml*，并将其保存到*C:\package*文件夹。
 
-3.  添加以下 XML 来描述包的 XML 命名空间和产品代码。 产品代码替换包的唯一标识符。
+3. 添加以下 XML 来描述包的 XML 命名空间和产品代码。 产品代码替换包的唯一标识符。
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ ms.locfileid: "58568096"
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  添加 XML 以指定的包具有依赖项。 此示例使用在 Microsoft Windows Installer 3.1 上的依赖项。
+4. 添加 XML 以指定的包具有依赖项。 此示例使用在 Microsoft Windows Installer 3.1 上的依赖项。
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ ms.locfileid: "58568096"
       </RelatedProducts>
     ```
 
-5.  添加 XML 以列出引导程序包中的所有文件。 此示例使用包文件的名称*CorePackage.msi*。
+5. 添加 XML 以列出引导程序包中的所有文件。 此示例使用包文件的名称*CorePackage.msi*。
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ ms.locfileid: "58568096"
     </PackageFiles>
     ```
 
-6.  复制或移动*CorePackage.msi*的文件*C:\package*文件夹。
+6. 复制或移动*CorePackage.msi*的文件*C:\package*文件夹。
 
-7.  添加 XML 以使用引导程序命令安装包。 引导程序会自动添加 **/qn**标记，用于 *.msi*文件，它将以无提示方式安装。 如果该文件是 *.exe*，引导程序运行 *.exe*文件使用命令行程序。 以下 XML 显示没有自变量*CorePackage.msi*，而您可以将其放到命令行参数`Arguments`属性。
+7. 添加 XML 以使用引导程序命令安装包。 引导程序会自动添加 **/qn**标记，用于 *.msi*文件，它将以无提示方式安装。 如果该文件是 *.exe*，引导程序运行 *.exe*文件使用命令行程序。 以下 XML 显示没有自变量*CorePackage.msi*，而您可以将其放到命令行参数`Arguments`属性。
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  添加以下 XML 来检查是否安装了此引导程序包。 产品代码替换为可再发行组件的 GUID。
+8. 添加以下 XML 来检查是否安装了此引导程序包。 产品代码替换为可再发行组件的 GUID。
 
     ```xml
     <InstallChecks>

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046068"
 ---
 # <a name="draw-shapes-and-paths"></a>绘制形状和路径
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "54775345"
   
  **在本主题中：**  
   
--   [绘制形状](#Shape)  
+- [绘制形状](#Shape)  
   
--   [绘制路径](#Path)  
+- [绘制路径](#Path)  
   
--   [将形状转换为路径](#Convert)  
+- [将形状转换为路径](#Convert)  
   
--   [合并路径](#Combine)  
+- [合并路径](#Combine)  
   
--   [创建复合路径](#Compound)  
+- [创建复合路径](#Compound)  
   
--   [创建剪切路径](#Clipping)  
+- [创建剪切路径](#Clipping)  
   
-##  <a name="Shape"></a> 绘制形状  
+## <a name="Shape"></a> 绘制形状  
  可以在“资产”  面板中查找形状。  
   
  ![“资产”面板上的“形状”类别](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -46,7 +46,7 @@ ms.locfileid: "54775345"
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a> 绘制路径  
+## <a name="Path"></a> 绘制路径  
  路径是一系列连接的直线和曲线。 使用路径可创建“资产”  面板中未提供的有趣形状。  
   
  可以使用线条、笔或铅笔绘制路径。 可以在“工具”  面板中找到这些工具。  
@@ -96,12 +96,12 @@ ms.locfileid: "54775345"
   
  使用“选择”工具 ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") 选择路径。 使用“笔”工具 ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54")，单击想要在其中添加点的路径上的任意位置。  
   
-##  <a name="Convert"></a> 将形状转换为路径  
+## <a name="Convert"></a> 将形状转换为路径  
  若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。  
   
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。  
   
-##  <a name="Combine"></a> 合并路径  
+## <a name="Combine"></a> 合并路径  
  可以将路径和形状合并到单个路径中。  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
@@ -114,7 +114,7 @@ ms.locfileid: "54775345"
   
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。  
   
-##  <a name="Compound"></a> 创建复合路径  
+## <a name="Compound"></a> 创建复合路径  
  创建复合路径时，会从结果中减去路径的任何相交部分，生成的路径会采取最底部路径的视觉属性。  
   
  可以在创建之后随时分离复合路径。  
@@ -123,7 +123,7 @@ ms.locfileid: "54775345"
   
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [处理路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。  
   
-##  <a name="Clipping"></a> 创建剪切路径  
+## <a name="Clipping"></a> 创建剪切路径  
  剪切路径是应用于另一个对象的路径或形状，可隐藏遮蔽对象处于剪切路径之外的部分。  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  

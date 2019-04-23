@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050917"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>通过使用扩展的对象自动化 Word
   当在 Visual Studio 中开发 Word 解决方案时，可以使用解决方案中的 *宿主项* 和 *宿主控件*。 这些对象可扩展 Word 对象模型（即由 Word 主互操作程序集公开的对象模型）中的一些常用对象，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象。 扩展对象的行为类似于其所基于的 Word 对象，但它们可以将其他事件和数据绑定功能添加到对象。
@@ -39,20 +39,20 @@ ms.locfileid: "56598263"
 
  有关详细信息，请参阅[文档宿主项](../vsto/document-host-item.md)。
 
-## <a name="word-host-controls"></a>Word 主机控件
+## <a name="word-host-controls"></a>Word 宿主控件
  有多个可用于 Word 的宿主控件，这些控件有助于你创建、组织和自动处理文档。 它们的大部分功能包含了导入、呈现和保护数据。 这些宿主控件可提供本机 Word 对象模型中的相应控件所无法提供的事件和数据绑定功能。
 
  在文档级项目中，可以在设计时向文档添加宿主控件或可以在运行时添加内容控件和书签控件。 在 VSTO 外接程序项目中，可以向任何打开的文档在运行时添加内容控件和书签控件。
 
  有关可以在 Word 项目中使用的宿主控件的详细信息，请参阅以下主题：
 
--   [内容控件](../vsto/content-controls.md)
+- [内容控件](../vsto/content-controls.md)
 
--   [Bookmark 控件](../vsto/bookmark-control.md)
+- [Bookmark 控件](../vsto/bookmark-control.md)
 
--   [XMLNode 控件](../vsto/xmlnode-control.md)
+- [XMLNode 控件](../vsto/xmlnode-control.md)
 
--   [XMLNodes 控件](../vsto/xmlnodes-control.md)
+- [XMLNodes 控件](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>请参阅
 - [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)

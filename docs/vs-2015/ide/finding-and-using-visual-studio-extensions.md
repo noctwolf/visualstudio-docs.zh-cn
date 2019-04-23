@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051903"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的 Visual Studio 功能。 你可以在此处找到有关 Visual Studio 扩展的详细信息： [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了新的或者改进后的 Visual Studio 功能。 可以在此处找到有关 Visual Studio 扩展的详细信息：[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  你可以使用 **“扩展和更新”** 对话框安装来自网站或其他位置的 Visual Studio 扩展及示例，然后启用、禁用、更新或卸载这些扩展和示例。 （“工具”/“扩展和更新”，或在“快速启动”  窗口中输入 **扩展** ）。 该对话框还显示用于已安装的示例和扩展的更新。 还可以从网站下载扩展，或从其他开发人员处获取它们。
 
@@ -54,9 +54,9 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 
  若要禁用自动更新，可为所有扩展或仅特定扩展禁用该功能。
 
--   若要为所有扩展禁用自动更新，请单击 **“扩展和更新”** 对话框上的 **“更改扩展和更新设置”** 链接，并取消选中 **“自动更新扩展”**。
+- 若要为所有扩展禁用自动更新，请单击 **“扩展和更新”** 对话框上的 **“更改扩展和更新设置”** 链接，并取消选中 **“自动更新扩展”**。
 
--   若要为特定扩展禁用自动更新，请取消选中 **“扩展和更新”** 对话框右侧的扩展详细信息窗格中的 **“自动更新此扩展插件”** 选项。
+- 若要为特定扩展禁用自动更新，请取消选中 **“扩展和更新”** 对话框右侧的扩展详细信息窗格中的 **“自动更新此扩展插件”** 选项。
 
 > [!NOTE]
 >  从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”/“选项”/“环境”/“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。

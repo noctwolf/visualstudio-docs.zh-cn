@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051409"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 
@@ -31,15 +31,15 @@ ms.locfileid: "58268561"
 
 本演练涉及以下任务：
 
--  创建和使用应用程序中配置数据源[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
+- 创建和使用应用程序中配置数据源[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)。
 
--  设置控件中的项[数据源窗口](add-new-data-sources.md#data-sources-window)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+- 设置控件中的项[数据源窗口](add-new-data-sources.md#data-sources-window)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
--  通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。
+- 通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。
 
--  修改数据集中每个表中的几个记录。
+- 修改数据集中每个表中的几个记录。
 
--  修改用于将数据集中的更新后的数据发回数据库的代码。
+- 修改用于将数据集中的更新后的数据发回数据库的代码。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -65,7 +65,7 @@ ms.locfileid: "58268561"
 
 ## <a name="create-the-data-source"></a>创建数据源
 
-此步骤使用“数据源配置向导”从 Northwind 数据库创建一个数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+此步骤使用“数据源配置向导”从 Northwind 数据库创建一个数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅[如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 1. 上**数据**菜单中，选择**显示数据源**。
 

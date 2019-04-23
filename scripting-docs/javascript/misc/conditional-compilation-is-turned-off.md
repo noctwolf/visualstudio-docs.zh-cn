@@ -14,12 +14,12 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d3c225df20113308ee7037742ad74efb6a0cc2e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840349"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051734"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>条件编译已关闭
 你尝试使用条件编译变量，但不将首次启用条件性编译上。 打开条件编译告知[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]编译器将解释为条件编译变量，开头的标识符。 为此，可开始使用该语句将条件代码：  
@@ -30,7 +30,7 @@ ms.locfileid: "56840349"
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   将以下语句添加到条件代码的开头：  
+- 将以下语句添加到条件代码的开头：  
   
     ```JavaScript  
     /*@cc_on @*/  

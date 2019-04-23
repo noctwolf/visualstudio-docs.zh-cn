@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052085"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,23 +22,23 @@ ms.locfileid: "54765094"
   
 ## <a name="create-a-simple-windows-phone-app"></a>创建简单的 Windows Phone 应用  
   
-1.  使用 Visual C# 或 Visual Basic 模板，为空白的 Windows Phone 应用创建新项目。  
+1. 使用 Visual C# 或 Visual Basic 模板，为空白的 Windows Phone 应用创建新项目。  
   
      ![新建 Windows Phone 应用](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")  
   
-2.  在解决方案资源管理器中，打开 MainPage.xaml。 从工具箱中，将按钮控件和文本框控件拖动到设计图面。  
+2. 在解决方案资源管理器中，打开 MainPage.xaml。 从工具箱中，将按钮控件和文本框控件拖动到设计图面。  
   
      ![向 MainPage.xaml 添加控件](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")  
   
-3.  在“属性”窗口中命名该按钮控件。  
+3. 在“属性”窗口中命名该按钮控件。  
   
      ![命名按钮控件](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")  
   
-4.  命名该文本框控件。  
+4. 命名该文本框控件。  
   
      ![命名文本框控件](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")  
   
-5.  在设计图面上，双击该按钮控件并添加以下代码：  
+5. 在设计图面上，双击该按钮控件并添加以下代码：  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,15 +58,15 @@ ms.locfileid: "54765094"
     End Class  
     ```  
   
-6.  按 F5 以在模拟器中运行你的 Windows Phone 应用并且验证其是否工作。  
+6. 按 F5 以在模拟器中运行你的 Windows Phone 应用并且验证其是否工作。  
   
      ![运行 Windows Phone 应用](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")  
   
-7.  退出模拟器。  
+7. 退出模拟器。  
   
 ## <a name="deploy-the-windows-phone-app"></a>部署 Windows Phone 应用  
   
-1.  在编码的 UI 测试可以映射应用的控件前，你必须先部署该应用。  
+1. 在编码的 UI 测试可以映射应用的控件前，你必须先部署该应用。  
   
      ![部署 Windows Phone 应用](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")  
   
@@ -287,7 +287,7 @@ ms.locfileid: "54765094"
   
 ## <a name="run-the-coded-ui-test"></a>运行编码的 UI 测试  
   
-1.  生成你的测试，然后使用测试资源管理器运行该测试。  
+1. 生成你的测试，然后使用测试资源管理器运行该测试。  
   
      ![使用测试资源管理器构建并运行测试](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")  
   
@@ -299,7 +299,7 @@ ms.locfileid: "54765094"
   
      ![测试资源管理器结果](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")  
   
-##  <a name="TestingPhoneAppsCodedUI_DataDriven"></a> 在 Windows Phone 应用上使用数据驱动的编码的 UI 测试  
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> 在 Windows Phone 应用上使用数据驱动的编码的 UI 测试  
  若要测试不同的条件，编码的 UI 测试可以使用不同的数据集多次运行。  
   
  适用于 Windows Phone 的数据驱动的编码 UI 测试使用测试方法中的 DataRow 特性定义。 在以下示例中，x 和 y 为测试的第一次迭代使用值 1 和 2，为第二次迭代使用值 -1 和 -2。  
@@ -314,25 +314,25 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ## <a name="q--a"></a>问题解答  
   
-### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>问：为了映射 UI 控件，我是否必须在模拟器中部署 Windows Phone 应用？  
- **答**：是的，编码的 UI 测试生成器需要运行模拟器并且将应用部署到该模拟器。 否则，它会引发一条错误消息，说明未能找到运行的模拟器。  
+### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>问：我是否需要部署 Windows Phone 应用程序在模拟器中的，以便将 UI 控件映射？  
+ **答**：是的编码的 UI 测试生成器需要运行仿真程序，并且将应用部署到它。 否则，它会引发一条错误消息，说明未能找到运行的模拟器。  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> 问：测试是否只能在模拟器上执行，或者我还可以使用物理设备？  
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> 问：只能，在模拟器上执行测试，或者我还可以使用物理设备？  
  **答**：支持任一选项。 通过更改模拟器类型或选择设备工具栏中的设备，选择测试执行的目标。 如果选择设备，则 Phone Blue 设备需要连接到计算机的 USB 端口之一。  
   
  ![选择仿真程序版本或物理设备](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
   
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>问：为什么在“生成编码的 UI 测试的代码”对话框中看不到用于记录我的编码的 UI 测试的选项？  
- **答**：Windows Phone 应用不支持录制选项。  
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>问：为什么没有看见用于记录编码的 UI 测试编码的 UI 测试的对话框的生成代码中的选项？  
+ **答**：对于 Windows Phone 应用不支持记录选项。  
   
-### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>问：我是否能为基于 WinJS、Silverlight 或 HTML5 的 Windows Phone 应用创建编码的 UI 测试？  
- **答**：否，仅支持基于 XAML 的应用。  
+### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>问：可以为基于 WinJS、 Silverlight 或 HTML5 Windows Phone 应用创建编码的 UI 测试？  
+ **答**：否，仅基于 XAML 支持的应用。  
   
-### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>问：我是否能在未运行 Windows 8.1 或 Windows 10 的系统上为 Windows Phone 应用创建编码的 UI 测试？  
- **答**：否，编码的 UI 测试项目模板仅适用于 Windows 8.1 和 Windows 10。 若要为通用 Windows 平台 (UWP) 应用创建自动化项，需要 Windows 10。  
+### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>问：可以为我未运行 Windows 8.1 或 Windows 10 的系统上的 Windows Phone 应用创建编码的 UI 测试？  
+ **答**：否，编码的 UI 测试项目模板是仅适用于 Windows 8.1 和 Windows 10。 若要为通用 Windows 平台 (UWP) 应用创建自动化项，需要 Windows 10。  
 
 <a name="uwpapps"></a>  
-### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>问：如何为通用 Windows 平台 (UWP) 应用创建编码的 UI 测试？  
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>问：如何创建通用 Windows 平台 (UWP) 应用的编码的 UI 测试？  
  **答**：根据要在其中测试 UWP 应用的平台，通过以下方式之一创建编码的 UI 测试项目：  
   
 - 在本地计算机上运行的 UWP 应用将作为应用商店应用运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows”** 节点。  
@@ -341,17 +341,17 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
   创建项目后，将测试创作为与之前保持相同。  
   
-### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>问：我是否可以选择模拟器外部的控件？  
+### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>问：可以选择模拟器外部的控件？  
  **答**：否，生成器将不会检测它们。  
   
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>问：我是否可以使用编码的 UI 测试生成器来映射使用物理手机设备的控件？  
- **答**：否，如果应用已部署到模拟器，生成器只能映射 UI 元素。  
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>问：可以使用编码的 UI 测试生成器来映射使用物理手机设备的控件？  
+ **答**：否，生成器只能映射 UI 元素如果您的应用程序部署到模拟器。  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>问：为什么我无法修改 UIMap.Designer 文件中的代码？  
- **答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都将覆盖在 UIMapDesigner.cs 文件中所做的任何代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>问：为什么无法修改 UIMap.Designer 文件中的代码？  
+ **答**：每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
-### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>问：我是否可以从命令行对 Windows Phone 应用运行编码的 UI 测试？  
- **答**：是，你使用 runsettings 文件来指定用于测试执行的目标设备。 例如:  
+### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>问：我可以编码的 UI 测试上运行我的 Windows Phone 应用程序从命令行？  
+ **答**：是，你使用 runsettings 文件来指定用于执行测试的目标设备。 例如：  
   
  **vstest.console.exe “pathToYourCodedUITestDll” /settings:devicetarget.runsettings**  
   
@@ -369,7 +369,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>  
 ```  
   
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>问：针对基于 XAML 的 Windows 应用商店应用和 Windows Phone 应用的编码的 UI 测试有什么区别？  
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>问：编码的 UI 测试基于 XAML 的 Windows 应用商店应用程序和 Windows Phone 应用程序之间的区别是什么？  
  **答**：以下是一些主要差异：  
   
 |功能|Windows 应用商店应用程序|Windows Phone 应用|  

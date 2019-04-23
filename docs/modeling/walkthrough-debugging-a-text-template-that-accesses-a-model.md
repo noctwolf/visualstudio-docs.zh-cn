@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b314dc9eedbf99ba130772ac226d45239b4de455
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045052"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试文本模板访问模型
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。
@@ -38,11 +38,11 @@ ms.locfileid: "55938106"
 
 #### <a name="to-create-a-text-template"></a>若要创建文本模板
 
-1.  生成解决方案并启动调试器中运行。 (在**构建**菜单上，单击**重新生成解决方案**，然后在**调试**菜单上，单击**开始调试**。)Visual Studio 的新实例打开调试项目。
+1. 生成解决方案并启动调试器中运行。 (在**构建**菜单上，单击**重新生成解决方案**，然后在**调试**菜单上，单击**开始调试**。)Visual Studio 的新实例打开调试项目。
 
-2.  添加一个名为文本文件`DebugTest.tt`到调试项目。
+2. 添加一个名为文本文件`DebugTest.tt`到调试项目。
 
-3.  请确保**自定义工具**DebugTest.tt 属性设置为`TextTemplatingFileGenerator`。
+3. 请确保**自定义工具**DebugTest.tt 属性设置为`TextTemplatingFileGenerator`。
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>从文本模板访问模型的调试指令
  您可以从语句和表达式中的文本模板访问模型之前，必须首先调用生成的指令处理器。 调用生成的指令处理器将使类在模型中供文本模板代码作为属性。 有关详细信息，请参阅[从文本模板访问模型](../modeling/accessing-models-from-text-templates.md)。
@@ -51,7 +51,7 @@ ms.locfileid: "55938106"
 
 #### <a name="to-debug-an-incorrect-directive-name"></a>若要调试不正确的指令名称
 
-1.  DebugTest.tt 中的代码替换为以下代码：
+1. DebugTest.tt 中的代码替换为以下代码：
 
     > [!NOTE]
     >  该代码包含一个错误。 若要调试它引入了错误。
@@ -87,7 +87,7 @@ ms.locfileid: "55938106"
     #>
     ```
 
-2.  在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
+2. 在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
 
      **错误列表**窗口会显示此错误：
 
@@ -95,9 +95,9 @@ ms.locfileid: "55938106"
 
      在这种情况下，指令调用包含不正确的指令名称。 具有指定`modelRoot`原样指令的名称，但正确指令名称`DebuggingTestLanguage`。
 
-3.  双击中的错误**错误列表**窗口跳转到代码。
+3. 双击中的错误**错误列表**窗口跳转到代码。
 
-4.  若要更正此代码，更改到的指令名称`DebuggingTestLanguage`。
+4. 若要更正此代码，更改到的指令名称`DebuggingTestLanguage`。
 
      此更改会突出显示。
 
@@ -109,13 +109,13 @@ ms.locfileid: "55938106"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5.  在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
+5. 在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
 
      现在系统转换文本模板，并生成相应的输出文件。 你将看不到中的任何错误**错误列表**窗口。
 
 #### <a name="to-debug-an-incorrect-property-name"></a>若要调试的错误的属性名称
 
-1.  DebugTest.tt 中的代码替换为以下代码：
+1. DebugTest.tt 中的代码替换为以下代码：
 
     > [!NOTE]
     >  该代码包含一个错误。 若要调试它引入了错误。
@@ -151,7 +151,7 @@ ms.locfileid: "55938106"
     #>
     ```
 
-2.  在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
+2. 在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
 
      **错误列表**窗口随即出现并显示以下错误之一：
 
@@ -169,9 +169,9 @@ ms.locfileid: "55938106"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
     ```
 
-3.  双击错误列表窗口来跳转到代码中的错误。
+3. 双击错误列表窗口来跳转到代码中的错误。
 
-4.  若要更正代码，将属性名称更改为`LibraryModel`文本模板代码中。
+4. 若要更正代码，将属性名称更改为`LibraryModel`文本模板代码中。
 
      突出显示所作更改。
 
@@ -206,6 +206,6 @@ ms.locfileid: "55938106"
     #>
     ```
 
-5.  在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
+5. 在中**解决方案资源管理器**，右键单击 DebugTest.tt，，然后单击**运行自定义工具**。
 
      现在系统转换文本模板，并生成相应的输出文件。 你将看不到中的任何错误**错误列表**窗口。

@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052553"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：从生成中排除文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59656449"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>包括除 Form2 以外的所有.cs 或.vb 文件  
   
--   使用以下 `Include` 和 `Exclude` 属性之一：  
+- 使用以下 `Include` 和 `Exclude` 属性之一：  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ ms.locfileid: "59656449"
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>包括除 Form2 和 Form3 以外的所有.cs 或.vb 文件  
   
--   使用以下 `Include` 和 `Exclude` 属性之一：  
+- 使用以下 `Include` 和 `Exclude` 属性之一：  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ ms.locfileid: "59656449"
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>包括除 Version2 目录中的 .jpg 文件以外，图像目录子目录中的所有 .jpg 文件  
   
--   使用以下 `Include` 和 `Exclude` 属性：  
+- 使用以下 `Include` 和 `Exclude` 属性：  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ ms.locfileid: "59656449"
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>仅在发布生成中包括文件 Formula.vb  
   
--   使用类似于如下的 `Condition` 属性：  
+- 使用类似于如下的 `Condition` 属性：  
   
     ```  
     <Compile  
