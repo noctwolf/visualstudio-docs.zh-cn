@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066060"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>如何：从 XML 文档创建 XML 架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "59669974"
   
 ### <a name="to-create-an-xml-schema"></a>创建 XML 架构  
   
-1.  将 XML 实例文档加载到“XML 编辑器”中。  
+1. 将 XML 实例文档加载到“XML 编辑器”中。  
   
-2.  单击**Create Schema**按钮从**工具栏**。  
+2. 单击**Create Schema**按钮从**工具栏**。  
   
      将为 XML 实例文档中发现的每个命名空间创建并打开一个 XML 架构文档。 每个架构作为临时的杂项文件打开。  
   

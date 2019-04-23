@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066255"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 Windows 安装程序安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。
@@ -57,15 +57,15 @@ Windows 安装程序安装和卸载应用程序或用户的计算机上的软件
 
 #### <a name="installer-enforced-rules"></a>安装程序强制实施的规则
 
--   给定组件中的所有文件必须都安装到同一个目录。 相反，安装在单独的文件夹的文件都必须属于单独的组件。
+- 给定组件中的所有文件必须都安装到同一个目录。 相反，安装在单独的文件夹的文件都必须属于单独的组件。
 
--   可能有每个组件只有一个注册表项路径。 密钥路径是只是文件或注册表项表示的整个组件。
+- 可能有每个组件只有一个注册表项路径。 密钥路径是只是文件或注册表项表示的整个组件。
 
 #### <a name="component-provider-responsibilities"></a>组件提供程序的责任
 
--   在后续版本中可能会分开提供任何两个资源应位于单独的组件。 仅当确定永远不会将单独提供这些资源，应将资源分组到同一组件。 事实上，建议所有主要资源 (例如 Dll) 中单独 WICs 始终存在。 有关详细信息，请参阅[定义安装程序组件](/windows/desktop/Msi/defining-installer-components)。
+- 在后续版本中可能会分开提供任何两个资源应位于单独的组件。 仅当确定永远不会将单独提供这些资源，应将资源分组到同一组件。 事实上，建议所有主要资源 (例如 Dll) 中单独 WICs 始终存在。 有关详细信息，请参阅[定义安装程序组件](/windows/desktop/Msi/defining-installer-components)。
 
--   无版本控制的资源不断应在多个 WIC 中提供。
+- 无版本控制的资源不断应在多个 WIC 中提供。
 
 ## <a name="see-also"></a>请参阅
 - [如果组件规则中断，会发生什么情况？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)
