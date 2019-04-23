@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661056"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102713"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>创建父容器的解决方案文件夹
 在源控制插件 API 版本 1.2，用户可以指定一个根源控制目标的解决方案中的所有 web 项目。 此单个根称为超级统一根 (SUR)。
@@ -35,13 +35,13 @@ ms.locfileid: "59661056"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]时将解决方案添加到源代码管理后，IDE 将几乎总是创建 SUR 文件夹。 具体而言，它是在以下情况下：
 
--   项目是一个文件共享 web 项目。
+- 项目是一个文件共享 web 项目。
 
--   有不同的项目和解决方案文件的驱动器。
+- 有不同的项目和解决方案文件的驱动器。
 
--   没有为项目和解决方案文件的不同共享。
+- 没有为项目和解决方案文件的不同共享。
 
--   将项目添加单独 （在受源代码管理解决方案）。
+- 将项目添加单独 （在受源代码管理解决方案）。
 
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，建议 SUR 文件夹的名称是不带扩展名的解决方案名称相同。 下表总结了两个版本中的行为。
 

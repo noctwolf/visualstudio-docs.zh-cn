@@ -9,12 +9,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea13b68f65d20f48a15c155761adef6bcbd4536b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102284"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将 Profiler 附加到 ASP.NET Web 应用程序以使用命令行收集并发数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,16 +51,16 @@ ms.locfileid: "59666015"
 
 3. 通过键入以下命令将探查器附加到 ASP.NET 工作进程：**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
 
-   -   `PID` 指定 ASP.NET 工作进程的 ID 或名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID。  
+   - `PID` 指定 ASP.NET 工作进程的 ID 或名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID。  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 此参数可选。  
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 此参数可选。  
 
 ## <a name="controlling-data-collection"></a>控制数据收集  
  应用程序运行时，可以通过使用 VSPerfCmd.exe 选项开始和停止向文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
 
--   下表中的 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
+- 下表中的 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。  
 
     |选项|描述|  
     |------------|-----------------|  
@@ -73,11 +73,11 @@ ms.locfileid: "59666015"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  
 
-1.  通过将其关闭或在命令提示符中键入以下命令将探查器与目标应用程序分离：  
+1. 通过将其关闭或在命令提示符中键入以下命令将探查器与目标应用程序分离：  
 
      **VSPerfCmd /detach**  
 
-2.  在命令提示符下键入以下命令以关闭探查器：  
+2. 在命令提示符下键入以下命令以关闭探查器：  
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
 

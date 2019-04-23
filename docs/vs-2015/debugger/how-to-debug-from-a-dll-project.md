@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102245"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>如何：从 DLL 项目进行调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ ms.locfileid: "58934970"
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>在 C++ 项目中指定调用应用程序  
   
-1.  右键单击项目节点中的**解决方案资源管理器**，然后选择**属性**。 转到**调试**选项卡。  
+1. 右键单击项目节点中的**解决方案资源管理器**，然后选择**属性**。 转到**调试**选项卡。  
   
-2.  确保窗口顶部的“配置”字段设置为“调试”。  
+2. 确保窗口顶部的“配置”字段设置为“调试”。  
   
-3.  转到**配置属性 / 调试**。  
+3. 转到**配置属性 / 调试**。  
   
-4.  在中**要启动的调试器**列表中，选择**本地 Windows 调试器**或**远程 Windows 调试器**。  
+4. 在中**要启动的调试器**列表中，选择**本地 Windows 调试器**或**远程 Windows 调试器**。  
   
-5.  在中**命令**或**远程命令**框中，添加该应用程序的完全限定路径名称。  
+5. 在中**命令**或**远程命令**框中，添加该应用程序的完全限定路径名称。  
   
-6.  向“命令参数”框添加任何必要的程序参数。  
+6. 向“命令参数”框添加任何必要的程序参数。  
   
 ### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 项目中指定调用应用程序  
   
-1.  右键单击项目节点中的**解决方案资源管理器**，然后选择**属性**。 转到**调试**选项卡。  
+1. 右键单击项目节点中的**解决方案资源管理器**，然后选择**属性**。 转到**调试**选项卡。  
   
      选择**启动外部程序**，并添加要运行的程序的完全限定的路径名称。  
   
      如果你需要添加外部程序的命令行自变量，将其添加到**命令行参数**字段。  
   
-2.  你还可以将应用程序作为 URL 调用。 (如果你正在调试由本地 ASP.NET 应用程序使用的托管 DLL，则可能想要执行此操作。)  
+2. 你还可以将应用程序作为 URL 调用。 (如果你正在调试由本地 ASP.NET 应用程序使用的托管 DLL，则可能想要执行此操作。)  
   
      下**启动操作**，选择**URL 启动浏览器：** 单选按钮，并填写 URL。  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>从 DLL 项目启动调试  
   
-1.  根据需要设置断点。  
+1. 根据需要设置断点。  
   
-2.  开始调试 (按 F5，单击绿色箭头，或单击**调试 / 启动调试**)。  
+2. 开始调试 (按 F5，单击绿色箭头，或单击**调试 / 启动调试**)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 DLL 项目](../debugger/debugging-dll-projects.md)   

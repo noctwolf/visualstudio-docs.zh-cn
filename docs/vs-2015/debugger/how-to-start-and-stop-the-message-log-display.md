@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc3619136b103230efae183b49d4c7d3ba00880d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102193"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>如何：开始和停止消息日志显示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ ms.locfileid: "58932720"
   
 ### <a name="to-start-the-message-log-display"></a>若要开始显示消息日志  
   
-1.  从**消息**菜单中，选择**开始日志记录**。  
+1. 从**消息**菜单中，选择**开始日志记录**。  
   
 ### <a name="to-stop-the-message-log-display"></a>若要停止显示消息日志  
   
-1.  从**消息**菜单中，选择**停止日志记录**。
+1. 从**消息**菜单中，选择**停止日志记录**。

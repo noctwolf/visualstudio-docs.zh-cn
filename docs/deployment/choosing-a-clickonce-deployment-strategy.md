@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102180"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：
 
--   从 Web 或网络共享安装
+- 从 Web 或网络共享安装
 
--   从 CD 安装
+- 从 CD 安装
 
--   从 Web 或网络共享启动应用程序
+- 从 Web 或网络共享启动应用程序
 
     > [!NOTE]
     >  除了选择部署策略外，您可能还想选择提供应用程序更新的策略。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
@@ -39,7 +39,7 @@ ms.locfileid: "56603971"
 
  因为此策略依赖于网络连接，所以最适合将部署到可以访问局域网或高速 Internet 连接的用户的应用程序。
 
- 如果从 Web 部署应用程序，则可以在使用 URL 激活应用程序时将参数传递给应用程序。 有关详细信息，请参阅[如何： 检索在联机 ClickOnce 应用程序中的查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 无法将参数传递给使用本文档中描述的任何其他方法激活的应用程序。
+ 如果从 Web 部署应用程序，则可以在使用 URL 激活应用程序时将参数传递给应用程序。 有关详细信息，请参阅[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 无法将参数传递给使用本文档中描述的任何其他方法激活的应用程序。
 
  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中启用此部署策略，请在发布向导的“安装方式”页上单击“从 Web”或“从 UNC 路径或文件共享”。
 
@@ -74,5 +74,5 @@ ms.locfileid: "56603971"
 ## <a name="see-also"></a>请参阅
 - [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
 - [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)
-- [如何： 使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

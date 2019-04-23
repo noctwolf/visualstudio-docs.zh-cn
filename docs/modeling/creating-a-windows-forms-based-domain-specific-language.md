@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e952cda19664a9d73ebe6b77daba3ecfd78777c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101790"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示特定于域的语言 (DSL) 模型，而不是使用 DSL 关系图的状态。 本主题将指导你通过将 Windows 窗体绑定到使用 Visual Studio 可视化和建模 SDK 的 DSL。
@@ -35,11 +35,11 @@ ms.locfileid: "59658704"
 
 2. 该模板提供的初始示例试验：
 
-   1.  转换所有模板。
+   1. 转换所有模板。
 
-   2.  生成并运行示例 (**CTRL + F5**)。
+   2. 生成并运行示例 (**CTRL + F5**)。
 
-   3.  在 Visual Studio 的实验实例中，打开`Sample`调试的项目文件中。
+   3. 在 Visual Studio 的实验实例中，打开`Sample`调试的项目文件中。
 
         请注意显示的 Windows 窗体控件。
 
@@ -49,17 +49,17 @@ ms.locfileid: "59658704"
 
    在 Visual Studio 的主实例，请注意有关 DSL 解决方案的以下几点：
 
--   `DslDefinition.dsl` 不包含任何关系图元素。 这是因为不会使用 DSL 关系图来查看此 DSL 的实例模型。 相反，会将 Windows 窗体绑定到模型中，并在窗体上的元素将显示该模型。
+- `DslDefinition.dsl` 不包含任何关系图元素。 这是因为不会使用 DSL 关系图来查看此 DSL 的实例模型。 相反，会将 Windows 窗体绑定到模型中，并在窗体上的元素将显示该模型。
 
--   除了`Dsl`并`DslPackage`项目，该解决方案包含一个名为的第三个项目`UI.` **UI**项目包含 Windows 窗体控件的定义。 `DslPackage` 取决于`UI`，并`UI`取决于`Dsl`。
+- 除了`Dsl`并`DslPackage`项目，该解决方案包含一个名为的第三个项目`UI.` **UI**项目包含 Windows 窗体控件的定义。 `DslPackage` 取决于`UI`，并`UI`取决于`Dsl`。
 
--   在中`DslPackage`项目中，`UI\DocView.cs`包含显示在 Windows 窗体控件中定义的代码`UI`项目。
+- 在中`DslPackage`项目中，`UI\DocView.cs`包含显示在 Windows 窗体控件中定义的代码`UI`项目。
 
--   `UI`项目包含窗体控件绑定到 DSL 的工作示例。 但是，它不会有更改 DSL 定义时。 `UI`项目包含：
+- `UI`项目包含窗体控件绑定到 DSL 的工作示例。 但是，它不会有更改 DSL 定义时。 `UI`项目包含：
 
-    -   一个名为 Windows 窗体类`ModelViewControl`。
+    - 一个名为 Windows 窗体类`ModelViewControl`。
 
-    -   名为的文件`DataBinding.cs`，其中包含的其他分部定义`ModelViewControl`。 若要查看其内容，在**解决方案资源管理器**，打开该文件的快捷菜单，然后选择**查看代码**。
+    - 名为的文件`DataBinding.cs`，其中包含的其他分部定义`ModelViewControl`。 若要查看其内容，在**解决方案资源管理器**，打开该文件的快捷菜单，然后选择**查看代码**。
 
 ### <a name="about-the-ui-project"></a>有关 UI 项目
  更新要定义你自己的 DSL 的 DSL 定义文件时，你将需要更新中的控件`UI`项目以显示你的 DSL。 与不同`Dsl`并`DslPackage`项目，该示例`UI`从不生成项目`DslDefinitionl.dsl`。 可以添加.tt 文件生成代码，如果你想，尽管本演练未介绍的。
@@ -71,34 +71,34 @@ ms.locfileid: "59658704"
 
 #### <a name="to-update-the-dsl-definition"></a>若要更新 DSL 定义
 
-1.  在 DSL 设计器中打开 DslDefinition.dsl。
+1. 在 DSL 设计器中打开 DslDefinition.dsl。
 
-2.  删除**ExampleElement**
+2. 删除**ExampleElement**
 
-3.  重命名**ExampleModel**域类到`Farm`。
+3. 重命名**ExampleModel**域类到`Farm`。
 
      为其提供名为其他域属性`Size`类型的**Int32**，和`IsOrganic`类型的**布尔**。
 
     > [!NOTE]
     >  如果您删除根域类，然后创建一个新的根目录，你将必须重置编辑器根类属性。 在中**DSL 资源管理器**，选择**编辑器**。 然后在属性窗口中设置**根类**到`Farm`。
 
-4.  使用**名为域类**工具来创建以下域类：
+4. 使用**名为域类**工具来创建以下域类：
 
-    -   `Field` -为此提供一个名为其他域属性`Size`。
+    - `Field` -为此提供一个名为其他域属性`Size`。
 
-    -   `Animal` -在属性窗口中，设置**继承修饰符**到**抽象**。
+    - `Animal` -在属性窗口中，设置**继承修饰符**到**抽象**。
 
-5.  使用**域类**工具来创建以下类：
+5. 使用**域类**工具来创建以下类：
 
-    -   `Sheep`
+    - `Sheep`
 
-    -   `Goat`
+    - `Goat`
 
-6.  使用**继承**工具，使`Goat`并`Sheep`继承`Animal`。
+6. 使用**继承**工具，使`Goat`并`Sheep`继承`Animal`。
 
-7.  使用**Embedding**工具，用于嵌入`Field`并`Animal`下`Farm`。
+7. 使用**Embedding**工具，用于嵌入`Field`并`Animal`下`Farm`。
 
-8.  你可能想要整理关系图。 若要减少重复的元素数，请使用**将子树放在此处**叶元素的快捷菜单命令。
+8. 你可能想要整理关系图。 若要减少重复的元素数，请使用**将子树放在此处**叶元素的快捷菜单命令。
 
 9. **转换所有模板**的解决方案资源管理器工具栏中。
 
@@ -112,13 +112,13 @@ ms.locfileid: "59658704"
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>若要定义 DSL 模型作为数据源
 
-1.  上**数据**菜单中，选择**显示数据源**。
+1. 上**数据**菜单中，选择**显示数据源**。
 
      “数据源”窗口随即打开。
 
      选择**添加新数据源**。 “数据源配置”向导随即打开。
 
-2.  选择**对象**，**下一步**。
+2. 选择**对象**，**下一步**。
 
      展开**Dsl**， **Company.FarmApp**，然后选择**场**，这是您的模型的根类。 选择“完成”。
 
@@ -175,7 +175,7 @@ ms.locfileid: "59658704"
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>若要完成到 DSL 的绑定
 
-1.  在单独的代码文件中添加以下代码**UI**项目：
+1. 在单独的代码文件中添加以下代码**UI**项目：
 
     ```csharp
     using System.ComponentModel;
@@ -201,7 +201,7 @@ ms.locfileid: "59658704"
     }
     ```
 
-2.  在中**DslPackage**项目中，编辑**DslPackage\DocView.tt**更新以下变量定义：
+2. 在中**DslPackage**项目中，编辑**DslPackage\DocView.tt**更新以下变量定义：
 
     ```csharp
     string viewControlTypeName = "FarmControl";
@@ -212,18 +212,18 @@ ms.locfileid: "59658704"
 
 #### <a name="to-test-the-dsl"></a>若要测试 DSL
 
-1.  生成和运行解决方案。
+1. 生成和运行解决方案。
 
-2.  在 Visual Studio 的实验实例中，打开**示例**文件。
+2. 在 Visual Studio 的实验实例中，打开**示例**文件。
 
-3.  在中**FarmApp 资源管理器**，打开快捷菜单上**场**根节点，然后选择**添加新 Goat**。
+3. 在中**FarmApp 资源管理器**，打开快捷菜单上**场**根节点，然后选择**添加新 Goat**。
 
      `Goat1` 将出现在**动物**视图。
 
     > [!WARNING]
     >  必须在使用的快捷菜单**场**节点中，不**动物**节点。
 
-4.  选择**场**根节点并查看其属性。
+4. 选择**场**根节点并查看其属性。
 
      在窗体视图中，更改**名称**或**大小**的场。
 
@@ -233,13 +233,13 @@ ms.locfileid: "59658704"
 
 #### <a name="to-make-the-properties-update-immediately"></a>若要立即更新的属性设为
 
-1.  在 FarmControl.cs 设计视图中，选择简单字段如名称、 大小或 IsOrganic。
+1. 在 FarmControl.cs 设计视图中，选择简单字段如名称、 大小或 IsOrganic。
 
-2.  在属性窗口中，展开**DataBindings** ，然后打开 **（高级）**。
+2. 在属性窗口中，展开**DataBindings** ，然后打开 **（高级）**。
 
      在中**格式设置和高级绑定**对话框下**数据源更新模式**，选择**OnPropertyChanged**。
 
-3.  生成和运行解决方案。
+3. 生成和运行解决方案。
 
      验证时更改字段，场模型更改立即的相应属性的内容。
 

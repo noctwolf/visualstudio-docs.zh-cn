@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102752"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在上下文中的.NET data tools 在 Visual Studio 中，术语*数据源*指连接到数据存储和公开到.NET 应用程序数据的.NET 对象。 Visual Studio 设计器可以使用数据源以生成将数据绑定到窗体上，拖动并放置中的数据库对象时的样板代码的输出**数据源**窗口。 此类数据源可以是：  
   
--   与某种类型的数据库相关联的实体框架模型中的类。  
+- 与某种类型的数据库相关联的实体框架模型中的类。  
   
--   一个与某种类型的数据库相关联的数据集。  
+- 一个与某种类型的数据库相关联的数据集。  
   
--   一个表示 Windows Communication Foundation (WCF) 数据服务或 REST 服务之类的网络服务的类。  
+- 一个表示 Windows Communication Foundation (WCF) 数据服务或 REST 服务之类的网络服务的类。  
   
--   一个表示 SharePoint 服务的类。  
+- 一个表示 SharePoint 服务的类。  
   
--   类或你的解决方案中的集合。  
+- 类或你的解决方案中的集合。  
   
 > [!NOTE]
 >  如果不使用数据绑定功能，则不适用的数据集、 实体框架中，LINQ to SQL，WCF 或 SharePoint，"数据源"的概念。 只需通过直接连接到该数据库使用 SQLCommand 对象并直接与数据库通信。  
@@ -77,11 +77,11 @@ ms.locfileid: "59670168"
   
  可以从以下类型的服务创建数据源：  
   
--   WCF 数据服务。 有关详细信息，请参阅[概述](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
+- WCF 数据服务。 有关详细信息，请参阅[概述](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
   
--   WCF 数据服务。 有关详细信息，请参阅[Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
+- WCF 数据服务。 有关详细信息，请参阅[Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
   
--   Web 服务。  
+- Web 服务。  
   
     > [!NOTE]
     >  在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，会显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。  
