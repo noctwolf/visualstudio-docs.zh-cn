@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083644"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何报告 Visual Studio 2015 的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Microsoft 尊重你的隐私。 有关我们如何处理你发送给我们的数
 
 ## <a name="describe-the-problem"></a>描述此问题
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. 为此问题提供一个描述性标题，帮助我们将它发送到 Visual Studio 中的正确团队。
 
@@ -49,15 +49,15 @@ Microsoft 尊重你的隐私。 有关我们如何处理你发送给我们的数
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>提供跟踪和堆转储（可选）
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  跟踪和堆转储文件在帮助我们诊断问题方面非常有用。   如果你使用“报告问题”工具记录重现步骤并将数据发送给 Microsoft，我们非常感激。
+1. 跟踪和堆转储文件在帮助我们诊断问题方面非常有用。   如果你使用“报告问题”工具记录重现步骤并将数据发送给 Microsoft，我们非常感激。
 
-2.  单击“记录操作以重现问题” 旁边的 V 形。 如果你的问题导致 Visual Studio 挂起或崩溃，则打开 Visual Studio 的另一个实例，并从列表视图中选择它。
+2. 单击“记录操作以重现问题” 旁边的 V 形。 如果你的问题导致 Visual Studio 挂起或崩溃，则打开 Visual Studio 的另一个实例，并从列表视图中选择它。
 
-3.  单击“开始记录”  并执行重现该问题的步骤。 完成后，单击浮动窗口中的“停止记录”  按钮。
+3. 单击“开始记录”  并执行重现该问题的步骤。 完成后，单击浮动窗口中的“停止记录”  按钮。
 
-4.  请等待几分钟时间，以便 Visual Studio 收集和打包已记录的信息。 收集过程完成后，对话框将如下所示：
+4. 请等待几分钟时间，以便 Visual Studio 收集和打包已记录的信息。 收集过程完成后，对话框将如下所示：
 
      ![记录跟踪文件](../ide/media/record-a-trace-file.png "记录跟踪文件")
 

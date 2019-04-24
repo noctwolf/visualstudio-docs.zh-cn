@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090754"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668487"
   
  *ItemDefinitionGroup* 元素紧跟在项目文件的 [Project](../msbuild/project-element-msbuild.md) 元素之后。 项定义提供以下功能：  
   
--   可为目标外部的项定义全局默认元数据。 也就是说，相同的元数据适用于指定类型的所有项。  
+- 可为目标外部的项定义全局默认元数据。 也就是说，相同的元数据适用于指定类型的所有项。  
   
--   项目类型可以有多个定义。 当其他元数据规范添加到该类型中时，最新的规范优先。 \(元数据遵循与属性相同的导入顺序。\)  
+- 项目类型可以有多个定义。 当其他元数据规范添加到该类型中时，最新的规范优先。 \(元数据遵循与属性相同的导入顺序。\)  
   
--   元数据可具有累加性。 例如，根据要设置的属性，CDefines 值可以有条件地累积。 例如 `MT;STD_CALL;DEBUG;UNICODE`。  
+- 元数据可具有累加性。 例如，根据要设置的属性，CDefines 值可以有条件地累积。 例如 `MT;STD_CALL;DEBUG;UNICODE`。  
   
--   可删除元数据。  
+- 可删除元数据。  
   
--   可使用条件来控制元数据的包含。  
+- 可使用条件来控制元数据的包含。  
   
 ## <a name="item-metadata-default-values"></a>项元数据默认值  
  在 ItemDefinitionGroup 中定义的项元数据仅是默认元数据的声明。 除非定义一个使用 ItemGroup 包含元数据值的项，否则元数据不适用。  
@@ -66,21 +66,21 @@ ms.locfileid: "59668487"
 ## <a name="value-sources"></a>值源  
  ItemDefinitionGroup 中定义的元数据的值可能来自许多不同的源，如下所示：  
   
--   PropertyGroup 属性  
+- PropertyGroup 属性  
   
--   ItemDefinitionGroup 中的项  
+- ItemDefinitionGroup 中的项  
   
--   ItemDefinitionGroup 项上的项转换  
+- ItemDefinitionGroup 项上的项转换  
   
--   环境变量  
+- 环境变量  
   
--   \(MSBuild.exe 命令行\)中的全局属性  
+- \(MSBuild.exe 命令行\)中的全局属性  
   
--   保留属性  
+- 保留属性  
   
--   ItemDefinitionGroup 中项上的常见元数据  
+- ItemDefinitionGroup 中项上的常见元数据  
   
--   CDATA 节 \<\!\[CDATA\[此处的所有内容均未分析\]\]\>  
+- CDATA 节 \<\!\[CDATA\[此处的所有内容均未分析\]\]\>  
   
 > [!NOTE]
 >  ItemGroup 中的项元数据在 ItemDefinitionGroup 元数据声明中无用，这是因为已在 ItemGroup 元素之前处理 ItemDefinitionGroup 元素。  
