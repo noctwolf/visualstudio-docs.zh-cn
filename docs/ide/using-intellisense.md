@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821669"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 IntelliSense
 
@@ -46,7 +46,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ## <a name="parameter-info"></a>参数信息
 
-“参数信息”提供方法、特性泛型类型参数（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
+“参数信息”提供方法、特性泛型形参（在 C# 中）或模板（在 C++ 中）中所需的参数数目、参数名称和参数类型的相关信息。
 
 以粗体显示的参数指示键入函数时所需的下一参数。 对于重载函数，可以使用“向上键”和“向下键”查看函数重载的替代参数信息。
 

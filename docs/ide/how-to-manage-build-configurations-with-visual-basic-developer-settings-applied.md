@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f4f1ef20a376c0f77f8ecbbea87ad9769870d60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ee2ecb5e501390dfc82d895bf6a81706f4297a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430284"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在应用 Visual Basic 开发人员设置后管理生成配置
 
@@ -29,16 +29,16 @@ ms.locfileid: "55949286"
 
 默认情况下，Visual Basic 开发人员设置将隐藏用于打开“Configuration Manager”对话框以及[项目设计器](../ide/reference/application-page-project-designer-visual-basic.md)中的“配置”和“平台”列表的选项。
 
-1.  在 **“工具”** 菜单上，单击 **“选项”**。
+1. 在 **“工具”** 菜单上，单击 **“选项”**。
 
-2.  展开“项目和解决方案”并单击“常规”。
+2. 展开“项目和解决方案”并单击“常规”。
 
     > [!NOTE]
     > 即使未选中“显示所有设置”选项，“常规”节点也仍然可见。 如果要查看每个可用选项，请单击“显示所有设置”。
 
-3.  单击“显示高级生成配置”。
+3. 单击“显示高级生成配置”。
 
-4.  单击 **“确定”**。
+4. 单击 **“确定”**。
 
      现在可在“生成”菜单上使用“Configuration Manager”，并且“项目设计器”上会显示“配置”和“平台”列表。
 

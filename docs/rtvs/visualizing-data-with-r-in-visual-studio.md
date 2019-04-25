@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811039"
 ---
 # <a name="create-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 
@@ -45,7 +45,7 @@ ms.locfileid: "55911762"
 
 绘图窗口工具栏会保存适用的命令，其中大部分命令可通过“R 工具” > “绘图”菜单使用。
 
-| Button | 命令 | 说明​​ |
+| Button | 命令 | 说明 |
 | --- | --- | --- |
 | ![“新建绘图窗口”按钮](media/plotting-toolbar-01-new-plot-window.png) | 新建绘图窗口 | 创建具有自己的历史记录的单独绘图窗口。 请参阅[多个绘图窗口](#multiple-plot-windows)。 |
 | ![“激活绘图窗口”按钮](media/plotting-toolbar-02-activate-plot-window.png) | 激活绘图窗口 | 将当前绘图窗口设置为活动窗口，以便将后续 `plot` 命令呈现给该窗口。 请参阅[多个绘图窗口](#multiple-plot-windows)。 请参阅[多个绘图窗口](#multiple-plot-windows)。 |

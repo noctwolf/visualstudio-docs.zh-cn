@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824186"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和删除项目依赖项
 
@@ -47,18 +47,18 @@ ms.locfileid: "55907655"
 
 ## <a name="to-remove-dependencies-from-projects"></a>删除项目中的依赖项
 
-1.  在“解决方案资源管理器”中，选择一个项目。
+1. 在“解决方案资源管理器”中，选择一个项目。
 
-2.  在“项目”菜单上，选择“项目依赖项”。
+2. 在“项目”菜单上，选择“项目依赖项”。
 
      “项目依赖项”对话框随即打开。
 
     > [!NOTE]
     > “项目依赖项”选项仅可在具有多个项目的解决方案中使用。
 
-3.  从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。
+3. 从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。
 
-4.  在“依赖对象”字段中，清除不再属于此项目依赖项的任何其他项目的复选框。
+4. 在“依赖对象”字段中，清除不再属于此项目依赖项的任何其他项目的复选框。
 
 ## <a name="see-also"></a>请参阅
 

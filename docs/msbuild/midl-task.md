@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817566"
 ---
 # <a name="midl-task"></a>MIDL 任务
 包装 Microsoft 接口定义语言 (MIDL) 编译器工具 (midl.exe)。 有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)。
@@ -39,7 +39,7 @@ ms.locfileid: "56618154"
 ## <a name="parameters"></a>参数
  下表描述了 MIDL 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      可选 **String []** 参数。
 
@@ -47,7 +47,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /I 选项。
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      可选 **String** 参数。
 
@@ -55,7 +55,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)。
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      可选 **Boolean** 参数。
 
@@ -63,7 +63,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /app_config 选项。
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      可选 **String** 参数。
 
@@ -71,7 +71,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /cstub 选项。 另请参阅此表格中的 **ServerStubFile** 参数。
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      可选 **String** 参数。
 
@@ -79,7 +79,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /cpp_opt 选项。
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      可选 **String** 参数。
 
@@ -87,7 +87,7 @@ ms.locfileid: "56618154"
 
      指定以下值之一，其中每个值对应于一个命令行选项。
 
-    |“值”|命令行选项|
+    |值|命令行选项|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -95,7 +95,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /char 选项。
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      可选 **String** 参数。
 
@@ -103,7 +103,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /dlldata 选项。
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      可选 **String** 参数。
 
@@ -111,7 +111,7 @@ ms.locfileid: "56618154"
 
      指定以下值之一，其中每个值对应于一个命令行选项。
 
-    |“值”|命令行选项|
+    |值|命令行选项|
     |-----------|--------------------------|
     |**无**|**/error none**|
     |**EnableCustom**|**/error**|
@@ -119,7 +119,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /error 选项。
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      可选 **Boolean** 参数。
 
@@ -127,7 +127,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /error 分配选项。
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      可选 **Boolean** 参数。
 
@@ -135,7 +135,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /error bounds_check 选项。
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      可选 **Boolean** 参数。
 
@@ -143,7 +143,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 midl.exe 命令行帮助 (/?) 中的 /error enum 选项。
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      可选 **Boolean** 参数。
 
@@ -151,7 +151,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /error ref 选项。
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      可选 **Boolean** 参数。
 
@@ -159,7 +159,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /error stub_data 选项。
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      可选 **String** 参数。
 
@@ -167,14 +167,14 @@ ms.locfileid: "56618154"
 
      指定以下值之一，其中每个值对应于一个命令行选项。
 
-    |“值”|命令行选项|
+    |值|命令行选项|
     |-----------|--------------------------|
     |**无**|**/client none**|
     |**Stub**|**/client stub**|
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /client 选项。
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      可选 **String** 参数。
 
@@ -189,7 +189,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /server 选项。
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      可选 **Boolean** 参数。
 
@@ -197,7 +197,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /Oicf 选项。
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      可选 **Boolean** 参数。
 
@@ -205,7 +205,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /notlb 选项。
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      可选 **String** 参数。
 
@@ -213,7 +213,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /h 或 /header 选项。
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      可选 **Boolean** 参数。
 
@@ -221,7 +221,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /no_def_idir 选项。
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      可选 **String** 参数。
 
@@ -229,7 +229,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /iid 选项。
 
--   **LocaleID**
+- **LocaleID**
 
      可选 **int** 参数。
 
@@ -237,7 +237,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /lcid 选项。 另请参阅 [Locale identifiers（区域设置标识符）](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers)。
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      可选 **Boolean** 参数。
 
@@ -245,7 +245,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /mktyplib203 选项。 另请参阅 MSDN 网站上的 [ODL file syntax（ODL 文件语法）](/previous-versions/windows/desktop/automat/odl-file-syntax)。
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      可选 **String** 参数。
 
@@ -253,7 +253,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /out 选项。
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      可选 **String []** 参数。
 
@@ -261,7 +261,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /D 选项。 另请参阅此表中的 **UndefinePreprocessorDefinitions** 参数。
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      可选 **String** 参数。
 
@@ -269,7 +269,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /proxy 选项。
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      可选 **String** 参数。
 
@@ -277,7 +277,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /o 选项。
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      可选 **String** 参数。
 
@@ -285,13 +285,13 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /sstub 选项。 另请参阅此表格中的 **ClientStubFile** 参数。
 
--   **Source**
+- **Source**
 
      必选 `ITaskItem[]` 参数。
 
      指定用空格分隔的源文件列表。
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      可选 **String** 参数。
 
@@ -309,7 +309,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /Zp 选项。 **/Zp** 选项相当于 **/pack** 选项以及较早的 **/align** 选项。
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      可选 **Boolean** 参数。
 
@@ -317,7 +317,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /no_warn 选项。
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      可选 `Boolean` 参数。
 
@@ -325,7 +325,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /nologo 选项。
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      可选 **String** 参数。
 
@@ -342,13 +342,13 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /env 选项。
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      可选 `String` 参数。
 
      指定存储此任务跟踪日志的中间目录。
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      可选 **String** 参数。
 
@@ -363,7 +363,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /newtlb 选项。
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      可选 **String** 参数。
 
@@ -371,7 +371,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /tlb 选项。
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      可选 **String []** 参数。
 
@@ -379,7 +379,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /U 选项。 另请参阅此表中的 **PreprocessorDefinitions** 参数。
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      可选 `Boolean` 参数。
 
@@ -387,7 +387,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /robust 和 /no_robust 选项。
 
--   **WarnAsError**
+- **WarnAsError**
 
      可选 `Boolean` 参数。
 
@@ -397,7 +397,7 @@ ms.locfileid: "56618154"
 
      有关详细信息，请参阅 [MIDL 命令行参考](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference)中的 /WX 选项。 另请参阅此表格中的 **WarningLevel** 参数。
 
--   **WarningLevel**
+- **WarningLevel**
 
      可选 **String** 参数。
 

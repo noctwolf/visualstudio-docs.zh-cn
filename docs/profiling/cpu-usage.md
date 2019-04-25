@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553433"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用情况
 
@@ -31,7 +31,7 @@ ms.locfileid: "59366752"
 >[!NOTE]
 >需要 Windows 7 或更高版本才能使用[性能探查器](../profiling/profiling-feature-tour.md)。
 
-##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量数据
+## <a name="collect-cpu-usage-data"></a>收集 CPU 使用量数据
 
 1. 在 Visual Studio 项目中，将解决方案配置设置为“发布”，然后选择“本地计算机”作为部署目标。
 
@@ -51,7 +51,6 @@ ms.locfileid: "59366752"
 
    ![CPU 使用量报表](../profiling/media/cpu_use_wt_report.png "CPU Usage report")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量报告
 
 诊断报表按“CPU 总量”从最高到最低进行排序。 通过选择列标题更改排序顺序或排序列。 使用“筛选器”下拉列表以选择或取消选择要显示的线程，并使用“搜索”框搜索特定线程或节点。
@@ -60,19 +59,19 @@ ms.locfileid: "59366752"
 从 Visual Studio 2019 开始，可以单击“展开热路径”和“显示热路径”按钮，以查看树视图中使用最高 CPU 百分比的函数调用。
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> CPU 使用情况数据列
+### <a name="BKMK_Call_tree_data_columns"></a> CPU 使用情况数据列
 
 |||
 |-|-|
-|**CPU 总量 [单位，以百分数计算]**|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 调用函数所使用的毫秒数和 CPU 百分比，以及函数在所选时间范围内调用的函数。 这与“CPU 利用率”时间线图不同，后者是将时间范围内的 CPU 总活动量与可用 CPU 总量进行比较。|
-|**自 CPU [单位，以百分数计算]**|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在所选时间范围内调用函数所使用的毫秒数和 CPU 百分比，不包括函数调用的函数。|
+|CPU 总量 [单位，以百分数计算]|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 调用函数所使用的毫秒数和 CPU 百分比，以及函数在所选时间范围内调用的函数。 这与“CPU 利用率”时间线图不同，后者是将时间范围内的 CPU 总活动量与可用 CPU 总量进行比较。|
+|自 CPU [单位，以百分数计算]|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在所选时间范围内调用函数所使用的毫秒数和 CPU 百分比，不包括函数调用的函数。|
 |**模块**|包含函数的模块的名称。
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率调用关系树
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率调用关系树
 
 要查看调用关系树，请选择报表中的父节点。 “CPU 使用情况”页面将打开“调用方/被调用方”视图。 在“当前视图”下拉列表中，选择“调用树”。
 
-####  <a name="BKMK_Call_tree_structure"></a>调用关系树结构
+#### <a name="BKMK_Call_tree_structure"></a>调用关系树结构
 
 ::: moniker range=">=vs-2019"
 ![调用树结构](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Call tree structure")
@@ -88,7 +87,7 @@ ms.locfileid: "59366752"
 |![第 3 步](../profiling/media/procguid_3.png "ProcGuid_3")|二级节点的子级为用户代码方法和异步例程，它们由二级系统和框架代码进行调用或创建。|
 |![第 4 步](../profiling/media/procguid_4.png "ProcGuid_4")|方法的子节点仅有父方法调用的数据。 禁用“显示外部代码”  后，应用方法只能包含 **[外部代码]** 节点。|
 
-####  <a name="BKMK_External_Code"></a> 外部代码
+#### <a name="BKMK_External_Code"></a> 外部代码
 
 由代码执行的系统和框架函数称为“外部代码”。 外部代码函数启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用情况调用树可将用户方法的外部函数收集到一个“[外部代码]”节点中。
 
@@ -109,7 +108,7 @@ ms.locfileid: "59366752"
 ![搜索嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用情况调用树中的异步函数
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用情况调用树中的异步函数
 
  当编译器遇到异步方法时，它会创建一个隐藏的类来控制方法的执行。 从概念上讲，此类是状态机。 该类具有编译器生成的异步调用原始方法以及运行其所需的回调、计划程序和迭代器的函数。 当父方法调用原始方法时，编译器将从父方法的执行上下文中删除该方法，并在控制应用执行的系统和框架代码的上下文中运行隐藏的类方法。 异步方法通常（但不总是）在一个或多个不同线程上执行。 此代码在“CPU 使用情况”调用树中显示为“[外部代码]”节点的子节点，位于树的顶部节点下面。
 

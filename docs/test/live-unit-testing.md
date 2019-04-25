@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786472"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>使用 Visual Studio 执行 Live Unit Testing
 
@@ -27,7 +27,6 @@ ms.locfileid: "58325128"
 
 ## <a name="supported-test-frameworks"></a>受支持的测试框架
 Live Unit Testing 适用于下表中列出的三个常用的单元测试框架。 表中还列出了其适配器和框架支持的最低版本。 单元测试框架都可从 NuGet.org 获得。
-
 
 |测试框架  |Visual Studio 适配器最低版本  |Framework 最低版本  |
 |---------|---------|---------|

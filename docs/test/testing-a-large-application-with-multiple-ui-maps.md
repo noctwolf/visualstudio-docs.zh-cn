@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429170"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 
@@ -42,9 +42,9 @@ ms.locfileid: "55918143"
 ## <a name="do-you-need-multiple-ui-maps"></a>你是否需要多个 UI 映射？
  可在以下情况下创建多个 UI 映射：
 
--   一起执行逻辑操作的多个复杂的复合 UI 控件集，如网站中的注册页或购物车的购买页。
+- 一起执行逻辑操作的多个复杂的复合 UI 控件集，如网站中的注册页或购物车的购买页。
 
--   可从应用程序的各个点进行访问的一组独立控件，如具有多个操作页的向导。 如果向导的每页都特别复杂，则可为每页创建单独的 UI 映射。
+- 可从应用程序的各个点进行访问的一组独立控件，如具有多个操作页的向导。 如果向导的每页都特别复杂，则可为每页创建单独的 UI 映射。
 
 ## <a name="add-multiple-ui-maps"></a>添加多个 UI 映射
 

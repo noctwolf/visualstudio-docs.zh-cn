@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431179"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>支持编码的 UI 测试和操作录制的配置和平台
 
@@ -27,7 +27,7 @@ ms.locfileid: "56796564"
 
 **要求**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>支持的配置
 
@@ -41,10 +41,9 @@ ms.locfileid: "56796564"
 > [!NOTE]
 > UI 同步是一种功能，该功能在每个控件的消息队列中验证播放。   如果某个控件未响应发送给它的事件，则会重新发送该事件。
 
-
 ## <a name="platform-support"></a>平台支持
 
-| 平台 | 支持级别 |
+| Platform | 支持级别 |
 |-| - |
 | Windows Phone 应用 | 仅支持基于 WinRT-XAML 的 Phone 应用。 |
 | UWP 应用 | 仅支持基于 XAML 的 UWP 应用。 |

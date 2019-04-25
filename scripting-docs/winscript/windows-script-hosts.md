@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840039"
 ---
 # <a name="windows-script-hosts"></a>Windows 脚本宿主
 实现 Microsoft Windows 脚本宿主时，只要宿主执行以下操作，即可以大胆地假定脚本引擎只在基础线程的上下文中调用 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口：  

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777671"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
@@ -169,4 +169,4 @@ ms.locfileid: "59232666"
 本教程中介绍了如何收集和分析 CPU 使用量数据。 完成[首先了解分析工具](../profiling/profiling-feature-tour.md)后，你可能想要快速了解如何分析应用中的内存使用情况。
 
 > [!div class="nextstepaction"]
-> [在 Visual Studio 中分析内存使用情况](../profiling/memory-usage.md)
+> [Visual Studio 中的配置文件内存使用](../profiling/memory-usage.md)

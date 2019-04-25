@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428606"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中识别并自定义键盘快捷方式
 
@@ -134,7 +134,7 @@ ms.locfileid: "57222056"
 
 5. 选择“下一步”按钮。
 
-6.  在“要导入哪些设置?”下，清除“所有设置”复选框，展开“选项”，然后展开“环境”。
+6. 在“要导入哪些设置?”下，清除“所有设置”复选框，展开“选项”，然后展开“环境”。
 
 7. 选中“键盘”复选框，然后选择“完成”按钮。
 

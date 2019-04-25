@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582533"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>配置用于 IntelliSense 的 C++ 项目
 
 在某些情况下，可能需要手动配置 C++ 项目，这样 IntelliSense 才能正常运行。 对于 MSBuild 项目（基于 .vcxproj 文件），可以在项目属性中调整设置。 对于非 MSBuild 项目，可以在项目根目录中的 CppProperties.json 文件内调整设置。 在某些情况下，可能需要创建有助于 IntelliSense 了解宏定义的提示文件。 Visual Studio IDE 有助于发现并修复 IntelliSense 问题。
-
-
 
 ## <a name="single-file-intellisense"></a>单个文件 IntelliSense
 
