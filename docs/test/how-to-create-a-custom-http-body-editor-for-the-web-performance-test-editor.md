@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eef7dd68ba29f4a0100dfe5207c0b6179a76410
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950262"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -23,9 +23,9 @@ ms.locfileid: "58415065"
 
 可以实现以下类型的编辑器：
 
--   **字符串内容编辑器** 此编辑器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口实现的。
+- **字符串内容编辑器** 此编辑器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口实现的。
 
--   **二进制内容编辑器** 此编辑器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 接口实现的。
+- **二进制内容编辑器** 此编辑器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 接口实现的。
 
 这些接口包含在 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空间中。
 
@@ -210,7 +210,7 @@ messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 ### <a name="to-add-the-ibinaryhttpbodyeditorplugin-to-the-class"></a>向类中添加 IBinaryHttpBodyEditorPlugin
 
--   在前面过程中添加的 XmlMessageEditor 类下编写或复制以下代码以从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 接口实例化 Msbin1MessageEditor 类并实现所需方法：
+- 在前面过程中添加的 XmlMessageEditor 类下编写或复制以下代码以从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 接口实例化 Msbin1MessageEditor 类并实现所需方法：
 
     ```csharp
     /// <summary>

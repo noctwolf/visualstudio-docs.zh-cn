@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957222"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步骤 4：使用完整的 Flask Web 项目模板
 
-**上一步：[为静态文件提供服务、添加页面和使用模板继承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**上一步：[提供静态文件、添加页面和使用模板继承](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 通过在 Visual Studio 中的“空白 Flask 应用项目”模板上生成应用，你已经了解了 Flask 的基础知识，现在可以轻松地了解“Flask Web 项目”模板生成的更完整的应用。
 
@@ -169,6 +169,7 @@ index.html 和 contact.html 使用相同的结构，在“内容”块中提供�
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 在 templates 文件夹中，会看到 .jade 文件而不是 .html 模板，并且 views.py 中的视图在对 `flask.render_template` 的调用中引用这些文件。 否则，视图代码相同。
 
 打开其中一个 .jade 文件，可以看到模板更简洁的表达式。 例如，以下是由“Flask/Jade Web 项目”模板创建的 templates/layout.jade 的内容：

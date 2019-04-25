@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791089"
 ---
 # <a name="change-a-method-signature-refactoring"></a>“更改方法签名”重构
 
@@ -60,7 +60,7 @@ ms.locfileid: "55934180"
 
    ![“更改签名”对话框](media/changesignature-dialog-cs.png)
 
-   | Button | 说明​​
+   | Button | 说明
    | ------ | ---
    | 上移/下移 | 在列表中向上和向下移动所选的参数
    | **移除** | 从列表删除所选的参数

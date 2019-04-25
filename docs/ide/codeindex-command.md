@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d472ec7d35b886dbc2294d2c3172b61d3b1e7702
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974951"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
 使用 **CodeIndex** 命令管理 Team Foundation Server 中的代码索引。 例如，你可能希望重置该索引以修复 CodeLens 信息，或关闭索引以调查服务器性能问题。
 
-## <a name="required-permissions"></a>所需权限
+## <a name="required-permissions"></a>需要的权限
 
 若要使用 **CodeIndex** 命令，必须是“Team Foundation Administrators”安全组的成员。 请参阅[为 Azure DevOps Services 和 TFS 定义的权限和组](/azure/devops/organizations/security/permissions?view=vsts)。
 

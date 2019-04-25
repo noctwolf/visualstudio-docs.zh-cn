@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815457"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序的系统要求
 
@@ -26,7 +26,7 @@ ms.locfileid: "57869065"
 > [!IMPORTANT]
 > 仿真器的安装程序会检查运行 Visual Studio Emulator for Android 的先决条件。 如果先决条件不存在将显示警告，但并不需要这些条件。
 
-##  <a name="Checklist"></a> 快速清单
+## <a name="Checklist"></a> 快速清单
 
 以下是 Visual Studio Emulator for Android 运行要求的快速清单。 有关更多详细信息，请参阅本主题的后续章节。
 
@@ -50,11 +50,11 @@ Hyper-V 要求
 
 - 在 BIOS 中，必须支持以下功能：
 
-  -   硬件辅助虚拟化
+  - 硬件辅助虚拟化
 
-  -   第二级别的地址转换 (SLAT)
+  - 第二级别的地址转换 (SLAT)
 
-  -   基于硬件的数据执行保护 (DEP)
+  - 基于硬件的数据执行保护 (DEP)
 
 - 在 Windows 中，必须启用并运行 Hyper-V。
 

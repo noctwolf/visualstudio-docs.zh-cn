@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974964"
 ---
 # <a name="code-snippet-functions"></a>代码片段函数
 
@@ -27,7 +27,7 @@ ms.locfileid: "55939507"
 
 下表介绍可与代码片段中的 `Function` 元素一起使用的函数。
 
-|函数|说明​​|语言|
+|函数|说明|语言|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|C#|
 |`ClassName()`|返回包含插入的代码片段的类的名称。|C#|

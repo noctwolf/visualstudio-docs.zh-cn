@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406149"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
 可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。
 
 > [!NOTE]
->  从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Visual Studio 2015 并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。
+> 从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Visual Studio 2015 并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下载并发可视化命令行工具
  若要下载并安装命令行实用程序，请转到 [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，按照说明进行操作。 默认情况下，CVCollectionCmd.exe 安装在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\（在 x64 计算机上为 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\）。
@@ -54,13 +54,12 @@ ms.locfileid: "56612317"
  如果你使用 CVCollectionCmd 来收集跟踪并且希望自定义收集设置，则使用配置文件来指定它们。
 
 > [!NOTE]
->  当你使用 Visual Studio 收集跟踪时，请不要直接修改配置文件。  而是使用 [高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 对话框来修改设置。
+> 当你使用 Visual Studio 收集跟踪时，请不要直接修改配置文件。  而是使用 [高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 对话框来修改设置。
 
  若要修改收集设置，则在你将运行 CVCollectionCmd 实用工具的计算机上创建配置文件。 你可以从头开始创建配置文件，或者可以在安装了 Visual Studio 的计算机上复制配置文件并修改该文件。 该文件名为 UserConfig.xml 并且位于“本地 AppData”文件夹中。 当你运行实用工具时，与“启动”、“附加”或“分析”命令结合使用 Config 选项。  在与 Config 选项相关联的参数中，指定配置文件的路径。
 
 ### <a name="configuration-file-tags"></a>配置文件标记
  此配置文件基于 XML 文件。 以下是有效的标记和值：
-
 
 | 标记 | 说明 | 值 |
 |-------------------------| - | - |

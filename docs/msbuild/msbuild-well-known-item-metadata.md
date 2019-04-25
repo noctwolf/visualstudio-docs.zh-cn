@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4c87d9dd6200fdd386db750a97e8f0866597d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963930"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 下表描述了创建每个项时分配给该项的元数据。 在每个示例中，以下项声明用于将文件 C:\MyProject\Source\Program.cs 包含在项目中。

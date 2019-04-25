@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789587"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>如何：在 Visual Studio 中更改编辑器中的字体和颜色
 
@@ -33,20 +33,20 @@ ms.locfileid: "57223177"
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>更改默认字体、字体大小和颜色
 
-1.  从“工具”菜单中选择“选项”，并在“环境”文件夹中选择“字体和颜色”。
+1. 从“工具”菜单中选择“选项”，并在“环境”文件夹中选择“字体和颜色”。
 
      [“选项”对话框 ->“环境”->“字体和颜色”](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)随即打开。
 
-2.  在“显示以下对象的设置”中，选择“文本编辑器”。
+2. 在“显示以下对象的设置”中，选择“文本编辑器”。
 
-3.  修改“字体”和“大小”选项可更改所有编辑器中所用文本元素的字体和大小。
+3. 修改“字体”和“大小”选项可更改所有编辑器中所用文本元素的字体和大小。
 
-4.  在“显示项”中选择合适的项，然后修改“项前景”和“项背景”选项。
+4. 在“显示项”中选择合适的项，然后修改“项前景”和“项背景”选项。
 
     > [!TIP]
     > 单击“使用默认值”重置默认设置。
 
-5.  单击 **“确定”**。
+5. 单击 **“确定”**。
 
 ## <a name="see-also"></a>请参阅
 

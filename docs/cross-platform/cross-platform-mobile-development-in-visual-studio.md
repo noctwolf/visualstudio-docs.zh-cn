@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816094"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -40,7 +40,7 @@ ms.locfileid: "58069679"
 |[了解 Visual Studio 中的通用 Windows 应用](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[了解 Swift 与 C# 之间的相似之处](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a>通过单个基本代码面向 Android、iOS 和 Windows
+### <a name="AndroidHTML"></a>通过单个基本代码面向 Android、iOS 和 Windows
 
  可使用 C# 或 F# 构建面向 Android、iOS 和 Windows 的本机应用（目前不支持 Visual Basic）。  首先，请安装 Visual Studio 2017，在安装程序中选择“使用 .NET 的移动开发”选项。
 
@@ -56,7 +56,7 @@ ms.locfileid: "58069679"
 
  根据应用设计的复杂性，可以考虑使用项目模板“移动应用”  组中的 **Xamarin.Forms** 模板生成应用。 Xamarin.Forms 是一个 UI 工具包，可用于创建在 Android、iOS 和 Windows 之间共享的单一界面。  编译 Xamarin.Forms 解决方案时，会分别获得一个 Android 应用、iOS 应用和 Windows 应用。 有关更多详细信息，请参阅[了解关于使用 Xamarin 进行移动开发的信息](/xamarin/cross-platform/get-started/introduction-to-mobile-development/)和 [Xamarin.Forms 文档](/xamarin/xamarin-forms/)。
 
-####  <a name="ShareHTML"></a> 在 Android、iOS 和 Windows 应用间共享代码
+#### <a name="ShareHTML"></a> 在 Android、iOS 和 Windows 应用间共享代码
 
  如果不使用 Xamarin.Forms 并选择为每个平台单独设计，可在平台项目（Android、iOS 和 Windows）之间共享大多数的非 UI 代码。 这包括所有的业务逻辑、云集成、数据库访问和其他所有面向 .NET 框架的代码。 唯一不能共享的代码是面向特定平台的代码。
 
@@ -69,7 +69,7 @@ ms.locfileid: "58069679"
 |[共享代码选项](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[.NET 的代码共享选项](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a>面向 Windows 10 设备
+### <a name="WindowsHTML"></a>面向 Windows 10 设备
 
  ![Windows 设备](../cross-platform/media/windowsdevices.png "Windows 设备")
 
@@ -84,7 +84,7 @@ ms.locfileid: "58069679"
 |[开发通用 Windows 平台 (UWP) 的应用](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[将应用迁移到通用 Windows 平台 (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a>构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)
+## <a name="HTML"></a>构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)
 
  ![Windows、iOS 和 Android 设备](../cross-platform/media/homedevices.png "Windows、iOS 和 Android 设备")
 

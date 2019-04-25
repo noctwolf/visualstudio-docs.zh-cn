@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975172"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>如何：在类设计器中实现接口
 
@@ -27,9 +27,9 @@ ms.locfileid: "55923908"
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>通过绘制继承连线实现接口
 
-1.  在类图上，显示接口和将实现该接口的类。
+1. 在类图上，显示接口和将实现该接口的类。
 
-2.  从类和接口绘制一条继承连线。
+2. 从类和接口绘制一条继承连线。
 
      将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根。
 
@@ -37,14 +37,14 @@ ms.locfileid: "55923908"
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>从“类视图”窗口实现接口
 
-1.  在类图上，显示要实现接口的类。
+1. 在类图上，显示要实现接口的类。
 
-2.  打开类视图，并查找该接口。
+2. 打开类视图，并查找该接口。
 
     > [!TIP]
     > 如果类视图尚未打开，则从“视图”菜单或按 Ctrl+Shift+C 打开类视图。
 
-3.  在关系图上将接口节点拖到类形状。
+3. 在关系图上将接口节点拖到类形状。
 
      将有一个棒糖形附加在类上，还有一个带接口名称的标签，用以标识继承关系。 Visual Studio 为所有接口成员生成存根；至此就实现了接口。
 

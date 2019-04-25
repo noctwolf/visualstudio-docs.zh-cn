@@ -1,27 +1,31 @@
 ---
 title: Publish-WebApplicationVM | Microsoft Docs
 description: 了解如何将 Web 应用程序部署到虚拟机。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572280"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM（Windows PowerShell 脚本）
 将 Web 应用程序部署到虚拟机。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。
 
 ```
 Publish-WebApplicationVM
-–Configuration <configuration>
+-Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -118,7 +122,7 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括创建项�
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "West US",
+            "location": "China North",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -180,3 +184,6 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括创建项�
 ```
 
 可以编辑 JSON 配置文件以更改预配的内容。 虚拟机和云服务是必需的，但数据库部分则是可选的。
+
+
+<!-- Update_Description: update metedata properties -->

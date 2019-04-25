@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428997"
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理编辑器窗口
 
@@ -33,9 +33,9 @@ ms.locfileid: "55949260"
 
 ### <a name="to-split-a-pane"></a>拆分窗格
 
-1.  在编辑器窗口中单击以获得焦点。
+1. 在编辑器窗口中单击以获得焦点。
 
-2.  在“窗口”菜单中，选择“拆分”。
+2. 在“窗口”菜单中，选择“拆分”。
 
      编辑区域分为由分隔条隔开的两个窗格。 可以分别滚动这两个窗格，以便同时查看和编辑活动文档的不同部分。 窗格中的任何更改都会在其他窗格中反映。
 
@@ -44,7 +44,7 @@ ms.locfileid: "55949260"
 
 ### <a name="to-return-to-single-pane-view"></a>返回单一窗格视图
 
--   在“窗口”菜单中，选择“移除拆分”。
+- 在“窗口”菜单中，选择“移除拆分”。
 
 ## <a name="create-new-windows"></a>新建窗口
 

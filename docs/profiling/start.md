@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979674"
 ---
 # <a name="start"></a>Start
 Start 选项是一个 VSPerfCmd.exe 选项，可将探查器初始化为指定分析方法。
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>参数
  `Method` 必须是以下关键字之一：
 
--   **TRACE** - 指定检测方法。
+- **TRACE** - 指定检测方法。
 
--   **SAMPLE** - 指定采样方法。
+- **SAMPLE** - 指定采样方法。
 
--   **COVERAGE** - 指定代码覆盖率。
+- **COVERAGE** - 指定代码覆盖率。
 
--   **CONCURRENCY** - 指定资源争用方法。
+- **CONCURRENCY** - 指定资源争用方法。
 
 ## <a name="required-options"></a>必需选项
  在命令行上指定 **Start** 时，必须指定 **Output** 选项。

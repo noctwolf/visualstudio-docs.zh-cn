@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38ebb717b351bacdb5704b72af25320fd98763c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977181"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 如果你创建了若干个 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件后，或许发现自己可能需要在不同项目文件中使用相同的任务和目标。 无需将这些任务或目标的完整说明包含在每个项目文件中，相反，你可以将目标保存在单独的项目文件中，然后将该项目导入任何需要使用该目标的其他项目。
@@ -26,13 +26,13 @@ ms.locfileid: "56614111"
 
 #### <a name="to-import-a-project"></a>导入项目
 
-1.  在正在导入的项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。
+1. 在正在导入的项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。
 
-2.  使用 `Import` 元素导入项目。 例如:
+2. 使用 `Import` 元素导入项目。 例如:
 
      `<Import Project="MyCommon.targets"/>`
 
-3.  在 `Import` 元素之后定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。
+3. 在 `Import` 元素之后定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。
 
 ## <a name="order-of-evaluation"></a>计算顺序
  当 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 到达 `Import` 元素后，已导入项目将被高效地插入位于 `Import` 元素所处位置的正在导入的项目中。 因此，`Import` 元素的位置可能会影响属性和项的值。 请务必了解已导入项目所设置的属性和项，以及已导入项目所使用的属性和项。
@@ -74,11 +74,11 @@ ms.locfileid: "56614111"
 
 #### <a name="use-the-following-approach-when-importing-projects"></a>在导入项目时使用以下方法
 
-1.  在项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。
+1. 在项目文件中，定义所有在已导入项目中作为属性和项的参数使用的属性和项。
 
-2.  导入项目。
+2. 导入项目。
 
-3.  在项目文件中定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。
+3. 在项目文件中定义所有属性和项，它们必须替代已导入项目中属性和项的默认定义。
 
 ## <a name="example"></a>示例
  下面的代码示例演示了第二个代码示例所导入的 MyCommon.targets 文件。 .targets 文件将评估正在导入的项目中的属性，以配置生成。

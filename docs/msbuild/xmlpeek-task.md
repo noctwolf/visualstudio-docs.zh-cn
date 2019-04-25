@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19b8273617955092519bf16f0aa5b3fbea86218a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777816"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 任务
 从 XML 文件返回 XPath 查询指定的值。

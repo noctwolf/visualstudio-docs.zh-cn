@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553222"
 ---
 # <a name="copy-selection"></a>复制选择
 若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。

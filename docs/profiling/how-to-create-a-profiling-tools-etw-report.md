@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439140"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>如何：创建分析工具 ETW 报告
 Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能会话中所记录的 ETW 事件。 ETW 数据收集在二进制 (.etl) 文件中。 有关此报告的详细信息，请参阅 [Windows 事件跟踪 (ETW) 报告](../profiling/event-tracing-for-windows-etw-report.md)。
 
 > [!NOTE]
->  不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口中显示 ETW 报告。
+> 不能在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口中显示 ETW 报告。
 
 - 有关如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的接口收集 ETW 数据的详细信息，请参阅[如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)。
 
@@ -29,7 +29,7 @@ Windows 事件跟踪 (ETW) 报告列出 [!INCLUDE[vsprvs](../code-quality/includ
 
 ### <a name="to-generate-an-etw-report"></a>创建 ETW 报告
 
--   在“命令提示符”窗口中，键入以下命令行：
+- 在“命令提示符”窗口中，键入以下命令行：
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 

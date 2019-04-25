@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784945"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -88,7 +88,7 @@ ms.locfileid: "59366518"
 
 ## <a name="packages-tab"></a>包选项卡
 
-*在先前版本中还标记为“pip”。*
+在先前版本中还标记为“pip”。
 
 使用 pip（“包(PyPI)”选项卡）或 conda（对于 Visual Studio 2017 版本 15.7 及更高版本的 conda 环境，为“包(Conda)”选项卡）管理环境中安装的程序包。 在此选项卡中，还可以搜索并安装新的程序包，包括其依赖项。
 

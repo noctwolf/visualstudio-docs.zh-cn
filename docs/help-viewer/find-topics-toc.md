@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951331"
 ---
 # 如何：在目录中查找主题
 
@@ -33,9 +33,9 @@ ms.locfileid: "55942097"
 
 可以筛选 TOC 来缩小“目录”选项卡中显示的主题范围。只有当标题包含所指定的术语根时才会在列表中显示。 例如，如果将“疑难解答”指定为筛选器，则只会显示包含“排除故障”或“疑难解答”的标题。 其标题不包含术语的节点会折叠为带省略号 (...) 的单个节点。
 
-1.  选择“目录”选项卡。
+1. 选择“目录”选项卡。
 
-2.  在“筛选目录”文本框中，输入一个词。
+2. 在“筛选目录”文本框中，输入一个词。
 
 > [!NOTE]
 > 如果筛选器运行很长时间，可以使用 `title:` 高级搜索运算符更快显示结果。
@@ -44,9 +44,9 @@ ms.locfileid: "55942097"
 
 如果你已使用索引或全文搜索功能打开了一个主题，则可以通过将 TOC 与主题窗口同步确定该主题在 TOC 中的位置。
 
-1.  查看主题。
+1. 查看主题。
 
-2.  单击工具栏上的“在目录中显示主题”按钮，或按 Ctrl+S。
+2. 单击工具栏上的“在目录中显示主题”按钮，或按 Ctrl+S。
 
      “目录”选项卡将打开并显示 TOC 中的主题位置。
 

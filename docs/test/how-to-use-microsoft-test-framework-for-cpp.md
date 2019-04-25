@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970341"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
 默认情况下，适用于 C++ 的 Microsoft 单元测试框架包含在“使用 C++ 的桌面开发”工作负荷中。
 
-##  <a name="separate_project"></a> 在单独的项目中编写单元测试
+## <a name="separate_project"></a> 在单独的项目中编写单元测试
 
 通常，你在测试代码自己的项目（与要测试的代码处于相同解决方案中）中运行测试代码。 若要设置和配置新测试项目，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
 
-##  <a name="same_project"></a> 在同一项目中编写单元测试的具体步骤
+## <a name="same_project"></a> 在同一项目中编写单元测试的具体步骤
 
 在某些情况下，例如测试 DLL 中的非导出函数时，可能需要在所测试程序所处的同一项目中创建测试。 在同一项目中编写单元测试：
 
@@ -32,16 +32,14 @@ ms.locfileid: "58324904"
 
    2. 单击以下行中的向下箭头，然后选择 \<Edit>：
 
-
       | 目录 | Property |
       |-| - |
       | **包含目录** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **库目录** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. 添加 C++ 单元测试文件：
 
-   -   右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 单元测试”。
+   - 右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 单元测试”。
 
 ## <a name="write-the-tests"></a>编写测试
 

@@ -13,21 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc1651ae769a9dbe8ef8fbd9b8a1a50dd83ea0f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 67cdd6fa3517402dbd9c1e85a84f762f9aa7dd17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816878"
 ---
 # <a name="formatversion-task"></a>FormatVersion 任务
 将修订号追加到版本号。
 
--   案例 #1：输入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"
+- 案例 #1：输入：Version=\<undefined>;  Revision=\<don't care>;   Output:OutputVersion="1.0.0.0"
 
--   案例 #2：输入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"
+- 案例 #2：输入：Version="1.0.0.*"  Revision="5"  Output:OutputVersion="1.0.0.5"
 
--   案例 #3：输入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"
+- 案例 #3：输入：Version="1.0.0.0"  Revision=\<don't care>;  Output:OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>参数
  下表描述了 `FormatVersion` 任务的参数。

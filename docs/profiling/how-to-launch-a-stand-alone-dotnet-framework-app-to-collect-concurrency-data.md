@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f2c146398e6ec3d8fba7f3bf0922c0050eddb4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47b004c5f7d127c78e4fd6f7c00b34c502d07f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386735"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，并通过命令行收集并发数据
 本主题介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据
 
 > [!NOTE]
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
  将探查器附加到应用程序时，可以暂停和恢复数据收集。 若要结束分析会话，探查器不得再附加于应用程序，并且必须显示关闭探查器。
 
@@ -36,13 +36,11 @@ ms.locfileid: "56640982"
 
    - [/start](../profiling/start.md) 选项可初始化探查器。
 
-
      | | |
      |-------------------------------------| - |
      | **/start:concurrency** | 允许收集资源争用和线程执行数据。 |
      | **/start:concurrency,resourceonly** | 允许仅收集资源争用数据。 |
      | **/start:concurrency,threadonly** | 允许仅收集线程执行数据。 |
-
 
    - [/output](../profiling/output.md)**:**`OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
 
@@ -55,7 +53,6 @@ ms.locfileid: "56640982"
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
-
 
 3. 启动目标应用程序。 类型：
 
@@ -74,7 +71,7 @@ ms.locfileid: "56640982"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
-1.  以下 VSPerfCmd.exe 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+1. 以下 VSPerfCmd.exe 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -87,15 +84,15 @@ ms.locfileid: "56640982"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  执行下列操作之一以从目标应用程序中分离探查器。
+1. 执行下列操作之一以从目标应用程序中分离探查器。
 
-    -   关闭目标应用程序。
+    - 关闭目标应用程序。
 
          或
 
-    -   键入 **VSPerfCmd /detach**
+    - 键入 **VSPerfCmd /detach**
 
-2.  关闭探查器
+2. 关闭探查器
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 

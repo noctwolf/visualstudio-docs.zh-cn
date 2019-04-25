@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 825c6b897447a5a628d9a97e4c7e64f1427fb4d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817666"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 元素 (MSBuild)
 包含用户定义的项元数据键，其中包含项元数据值。 一个项可能具有任意数量的元数据键值对。
