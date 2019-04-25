@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b046fb7aa11aa9ab917774dcf4fe3b4e47932afa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001109"
 ---
 # <a name="concurrency-visualizer-sdk"></a>并发可视化工具 SDK
 可通过使用并发可视化工具 SDK 检测源代码，以在并发可视化工具中显示附加信息。 可以在代码中将其他数据与阶段和事件关联。 这些其他的可视化被称为标记。  有关介绍性演练，请参阅 [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405)（并发可视化工具 SDK 简介）。
@@ -31,11 +31,11 @@ ms.locfileid: "56621599"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>向 C# 或 Visual Basic 项目添加 SDK 支持
 
-1.  在菜单栏上，选择“分析”、“并发可视化工具”和“将 SDK 添加到项目中”。
+1. 在菜单栏上，选择“分析”、“并发可视化工具”和“将 SDK 添加到项目中”。
 
-2.  选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”按钮。
+2. 选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”按钮。
 
-3.  向代码添加 Imports 或 Using 语句。
+3. 向代码添加 Imports 或 Using 语句。
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
@@ -50,19 +50,19 @@ ms.locfileid: "56621599"
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>向 C++ 或 C 项目添加 SDK 支持
 
-1.  在菜单栏上，选择“分析”、“并发可视化工具”和“将 SDK 添加到项目中”。
+1. 在菜单栏上，选择“分析”、“并发可视化工具”和“将 SDK 添加到项目中”。
 
-2.  选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”按钮。
+2. 选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”按钮。
 
-3.  对于 C++，请包括 `cvmarkersobj.h`。 对于 C，请包括 `cvmarkers.h`。
+3. 对于 C++，请包括 `cvmarkersobj.h`。 对于 C，请包括 `cvmarkers.h`。
 
-4.  向代码添加 Using 语句。
+4. 向代码添加 Using 语句。
 
     ```cpp
     using namespace Concurrency::diagnostic;
     ```
 
-5.  创建 `marker_series` 对象，并将其传递给 `span` 构造函数。
+5. 创建 `marker_series` 对象，并将其传递给 `span` 构造函数。
 
     ```C++
 
@@ -76,19 +76,19 @@ ms.locfileid: "56621599"
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 项目中使用新的标记提供程序
 
-1.  创建 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 对象。  构造函数采用一个 GUID。
+1. 创建 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 对象。  构造函数采用一个 GUID。
 
-2.  若要注册该提供程序，请打开并发可视化工具的[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”选项卡，然后选择“添加新提供程序”按钮。 在[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。
+2. 若要注册该提供程序，请打开并发可视化工具的[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”选项卡，然后选择“添加新提供程序”按钮。 在[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 项目中使用新的标记提供程序
 
-1.  使用 `CvInitProvider` 函数初始化 PCV_PROVIDER。  构造函数采用 GUID* 和 PCV_PROVIDER\*。
+1. 使用 `CvInitProvider` 函数初始化 PCV_PROVIDER。  构造函数采用 GUID* 和 PCV_PROVIDER\*。
 
-2.  若要注册该提供程序，请打开[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”选项卡，然后选择“添加新提供程序”按钮。 在此对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。
+2. 若要注册该提供程序，请打开[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”选项卡，然后选择“添加新提供程序”按钮。 在此对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 项目中使用标记系列
 
-1.  要使用新的 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>，首先使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 对象来创建它，然后直接从新系列中生成标记事件。
+1. 要使用新的 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>，首先使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 对象来创建它，然后直接从新系列中生成标记事件。
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -102,7 +102,7 @@ ms.locfileid: "56621599"
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>在 C++ 项目中使用标记系列
 
-1.  创建 `marker_series` 对象。  可以从此新系列生成事件。
+1. 创建 `marker_series` 对象。  可以从此新系列生成事件。
 
     ```scr
     marker_series series;
@@ -111,7 +111,7 @@ ms.locfileid: "56621599"
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>在 C 项目中使用标记系列
 
-1.  使用 `CvCreateMarkerSeries` 函数创建 PCV_MARKERSERIES。
+1. 使用 `CvCreateMarkerSeries` 函数创建 PCV_MARKERSERIES。
 
     ```C++
     PCV_MARKERSERIES series;

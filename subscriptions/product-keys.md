@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何获取和管理 Visual Studio 订阅中的产品密钥。
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977707"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 
@@ -53,7 +53,6 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 根据具体的产品，有多种密钥类型可供选择。
 
-
 ### <a name="product-key-types"></a>产品密钥类型
 
 |    密钥类型           |    说明                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 ### <a name="claiming-product-keys"></a>索取产品密钥
 只有拥有活动订阅的订阅者才可下载产品和索取产品密钥。  当订阅处于活动状态时，可从“[产品密钥](https://my.visualstudio.com/productkeys)”页导出索取的密钥。
-
 
 索取产品密钥：
 1. 登录到你的 Visual Studio 订阅。  必须登录才能下载产品或索取产品密码。

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000077"
 ---
 # <a name="lines-view"></a>“行”视图
 “行”视图仅适用于使用采样方法收集的探查器数据， 不适用于使用检测方法收集的数据。
@@ -30,17 +30,17 @@ ms.locfileid: "56613981"
 
  语句由以下数据标识：
 
--   包含函数语句的源文件。
+- 包含函数语句的源文件。
 
--   包含该语句的函数。
+- 包含该语句的函数。
 
--   该语句的起始源代码行。
+- 该语句的起始源代码行。
 
--   该语句的起始源代码行中的字符。
+- 该语句的起始源代码行中的字符。
 
--   该语句的结束源代码行。
+- 该语句的结束源代码行。
 
--   该语句的结束源代码行中的字符。
+- 该语句的结束源代码行中的字符。
 
 ## <a name="see-also"></a>请参阅
 - [“行”视图](../profiling/lines-view-sampling-data.md)

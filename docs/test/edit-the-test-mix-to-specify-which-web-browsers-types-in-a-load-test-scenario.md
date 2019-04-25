@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783830"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括哪些 Web 浏览器类型
 
@@ -34,34 +34,34 @@ ms.locfileid: "55955552"
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>向方案中添加新浏览器
 
-1.  在为方案指定浏览器组合的过程中，选择“添加”。
+1. 在为方案指定浏览器组合的过程中，选择“添加”。
 
      新的浏览器项即添加到网格中。
 
     > [!NOTE]
     > 若要显示“编辑浏览器组合”对话框，请右键单击现有方案，然后选择“编辑浏览器组合”。
 
-2.  在“浏览器类型”列中，选择表示新项的箭头，然后选择所需的浏览器类型。
+2. 在“浏览器类型”列中，选择表示新项的箭头，然后选择所需的浏览器类型。
 
-3.  （可选）调整混合控件以指定测试分布。
+3. （可选）调整混合控件以指定测试分布。
 
-4.  完成浏览器的添加后，选择“确定”。
+4. 完成浏览器的添加后，选择“确定”。
 
-##  <a name="remove-browsers-from-a-scenario"></a>从方案中移除浏览器
+## <a name="remove-browsers-from-a-scenario"></a>从方案中移除浏览器
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>从方案中移除浏览器
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
-2.  右键单击要从中移除浏览器的方案，然后选择“编辑浏览器组合”。
+2. 右键单击要从中移除浏览器的方案，然后选择“编辑浏览器组合”。
 
      将显示“编辑浏览器组合”对话框。
 
-3.  在网格中选择浏览器，然后选择“移除”。
+3. 在网格中选择浏览器，然后选择“移除”。
 
-4.  （可选）调整混合控件以指定测试分布。
+4. （可选）调整混合控件以指定测试分布。
 
-5.  完成浏览器的移除后，选择“确定”。
+5. 完成浏览器的移除后，选择“确定”。
 
 ## <a name="about-the-mix-control"></a>关于混合控件
 

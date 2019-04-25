@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777634"
 ---
 # <a name="xsd-task"></a>XSD 任务
 包装从源生成架构或类文件的 XML 架构定义工具 (xsd.exe)。
@@ -36,13 +36,13 @@ ms.locfileid: "57982982"
 ## <a name="parameters"></a>参数
  下表介绍了 **XSD** 任务的参数。
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      可选 **String** 参数。
 
      在命令行上指定的选项列表。 例如，/\<option1> /\<option2> /\<option#>。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      可选 **String** 参数。
 
@@ -50,11 +50,11 @@ ms.locfileid: "57982982"
 
      指定以下一个值，其中每个值对应于一个 XSD 选项。
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **语言**
+- **语言**
 
      可选 **String** 参数。
 
@@ -62,25 +62,25 @@ ms.locfileid: "57982982"
 
      从 **CS**（默认情况下为 C#）、**VB** (Visual Basic) 或 **JS** (JScript) 中进行选择。 也可指定实现 `System.CodeDom.Compiler.CodeDomProvider Class` 的类的完全限定名。
 
--   **Namespace**
+- **Namespace**
 
      可选 **String** 参数。
 
      为生成的类型指定运行时命名空间。
 
--   **Sources**
+- **Sources**
 
      必选 `ITaskItem[]` 参数。
 
      定义可以被任务使用和发出的 MSBuild 源文件项的数组。
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      可选 **Boolean** 参数。
 
      如果为 `true`，则在任务开始时阻止显示版权和版本号消息。
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      可选 **String** 参数。
 

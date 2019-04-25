@@ -7,12 +7,12 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 description: 设置云订阅的管理员
 searchscope: VS Subscription
-ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945817"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>设置 Visual Studio 云订阅的管理员
 
@@ -45,7 +45,6 @@ Visual Studio 云订阅由管理员进行管理。 管理员可以分配订阅�
 页面中心将显示指定的订阅者，并且其角色显示为“用户访问管理员”。
 
 新管理员这时可以登录到[管理门户](https://manage.visualstudio.com)，从页面左上角的列表中选择用于购买云订阅的同一个 Azure 订阅，然后开始管理这些订阅。
-
 
 > [!NOTE]
 > 如果看到具有访问权限的用户要编辑你未以管理员身份建立的云订阅，他们可能具有基础 Azure 订阅中的角色，使他们能够管理订阅。 这些角色包括：所有者、参与者、服务管理员或共同管理员。有关详细信息，请访问[添加账单管理员](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts)。

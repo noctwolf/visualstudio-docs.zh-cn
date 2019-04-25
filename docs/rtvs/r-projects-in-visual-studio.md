@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809888"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>在 Visual Studio 中创建 R 项目
 
@@ -62,7 +62,6 @@ rproject.rproj 文件维护不由 Visual Studio 管理的某些 R 特定的项�
 ## <a name="project-properties"></a>项目属性
 
 要打开项目属性页，请在解决方案资源管理器中右键单击项目，然后选择“属性”，或选择“项目”>“（项目名称）属性”菜单项。 打开的窗口会显示项目属性：
-
 
 | Tab | Property | 说明 |
 | --- | --- | --- |

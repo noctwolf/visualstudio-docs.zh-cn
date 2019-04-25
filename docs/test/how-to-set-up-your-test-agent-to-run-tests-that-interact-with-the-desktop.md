@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785986"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>如何：设置测试代理以运行与桌面交互的测试
 
@@ -25,7 +25,7 @@ ms.locfileid: "55947762"
 > 如果使用 Microsoft 测试管理器设置实验室环境，则会安装测试代理。 可在“环境创建向导”中指定要配置某个角色以运行编码的 UI 测试。
 
 > [!IMPORTANT]
-> 如果计算机正在运行代理，而你想要针对该代理运行编码的 UI 测试，则不能锁定该计算机，或者该计算机不能具有活动的屏幕保护程序。
+> 如果计算机正在运行代理，而您想要针对该代理运行编码的 UI 测试，则不能锁定该计算机，或者该计算机不能具有活动的屏幕保护程序。
 
 如果运行的编码的 UI 测试将启动浏览器，则测试代理的服务帐户用于启动该浏览器。 此服务帐户必须是此计算机上某个活动用户的用户帐户。 如果不是同一用户帐户，浏览器将不会启动。
 
@@ -47,7 +47,7 @@ ms.locfileid: "55947762"
 3. 输入将运行测试代理进程的用户的用户名和密码。
 
    > [!NOTE]
-   > - 对于你所添加的启动进程的用户，还必须将其添加为此代理的测试控制器计算机上 TeamTestAgentService 组的成员。 如果此用户是当前用户，则在向测试控制器计算机添加此用户时，你必须注销或重启。
+   > - 对于您所添加的启动进程的用户，还必须将其添加为此代理的测试控制器计算机上 TeamTestAgentService 组的成员。 如果此用户是当前用户，则在向测试控制器计算机添加此用户时，你必须注销或重启。
    > - 用户帐户不支持空密码。
    > - 如果要使用 IntelliTrace 或网络仿真数据和诊断适配器，则用户帐户必须是 Administrators 组的成员。 如果运行测试代理的计算机正在运行具有最少特权用户帐户的操作系统，则还必须以管理员身份（提升的权限）运行该计算机。 如果代理用户名不在代理服务中，则它将尝试添加代理用户名，这需要有测试控制器权限。
    > - 尝试使用测试控制器的用户必须位于测试控制器的 Users 帐户中，否则他们将无法针对控制器运行测试。

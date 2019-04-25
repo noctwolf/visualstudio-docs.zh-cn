@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990498"
 ---
 # <a name="troubleshoot-code-coverage"></a>代码覆盖率疑难解答
 
@@ -43,9 +43,9 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 在修改并重新运行测试时，前一个代码覆盖率结果可能仍是可见的，包括来自上次运行的代码着色。
 
-1.  运行“分析代码覆盖率”。
+1. 运行“分析代码覆盖率”。
 
-2.  确保选择了“代码覆盖率结果”窗口中的最新结果集。
+2. 确保选择了“代码覆盖率结果”窗口中的最新结果集。
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>.pdb（符号）文件不可用
 
@@ -91,17 +91,17 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 解决方法 &mdash; 有两种可能的错误类型：
 
--   **XML 错误**
+- **XML 错误**
 
      在 Visual Studio XML 编辑器中打开 .runsettings 文件。 查找错误提示。
 
--   **正则表达式错误**
+- **正则表达式错误**
 
      文件中的每个字符串都是正则表达式。 检查每个字符串中是否存在错误，尤其是查找：
 
-    -   不匹配的括号 (...) 或非转义括号 \\(...\\)。 如果要在搜索字符串中匹配某个括号，则必须对其进行转义。 例如，若要匹配某个函数，请使用：`.*MyFunction\(double\)`
+    - 不匹配的括号 (...) 或非转义括号 \\(...\\)。 如果要在搜索字符串中匹配某个括号，则必须对其进行转义。 例如，若要匹配某个函数，请使用：`.*MyFunction\(double\)`
 
-    -   表达式开头有星号或加号。 若要匹配任意字符串，请使用句点后跟星号：`.*`
+    - 表达式开头有星号或加号。 若要匹配任意字符串，请使用句点后跟星号：`.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>使用了错误排除的自定义 .runsettings 文件
 

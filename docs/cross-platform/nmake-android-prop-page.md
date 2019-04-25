@@ -19,11 +19,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: ba13da583e5ea5dd6cc625e165902bbf6c408f28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815709"
 ---
 # <a name="nmake-properties-android-c"></a>NMake 属性 (Android C++)
 
@@ -32,7 +32,7 @@ Property | 说明
 “生成”命令行 | 指定用于运行“生成”命令的命令行。
 “全部重新生成”命令行 | 指定用于运行“全部重新生成”命令的命令行。
 “清除”命令行 | 指定用于运行“清除”命令的命令行。
-输出 | 指定要生成的输出文件。
+Output | 指定要生成的输出文件。
 预处理器定义 | 指定源文件使用的预处理器定义。
 包含搜索路径 | 指定用于解析所含文件的包含搜索路径。
 强制包含 | 指定强制包含的文件。

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979546"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步骤 1：创建项目并向窗体添加表
 
@@ -47,9 +47,9 @@ ms.locfileid: "58647487"
 
 4. 在“属性”窗口中，设置下列窗体属性。
 
-   1.  将窗体的“Text”属性从“Form1”更改为“Matching Game”。 该文本显示在游戏窗口的顶部。
+   1. 将窗体的“Text”属性从“Form1”更改为“Matching Game”。 该文本显示在游戏窗口的顶部。
 
-   2.  将窗体大小设置为 550 像素（宽）× 550 像素（高）。 设置方法有两种：将“Size”属性设置为“550, 550”；或者拖拽窗体的边角，直至你在集成开发环境 (IDE) 的右下角看到正确大小。
+   2. 将窗体大小设置为 550 像素（宽）× 550 像素（高）。 设置方法有两种：将“Size”属性设置为“550, 550”；或者拖拽窗体的边角，直至你在集成开发环境 (IDE) 的右下角看到正确大小。
 
 5. 通过选择 IDE 左侧的“工具箱”选项卡显示工具箱。
 
@@ -76,19 +76,19 @@ ms.locfileid: "58647487"
 
     选择“TableLayoutPanel”后，打开“工具箱”并向 TableLayoutPanel 的左上角单元格添加 <xref:System.Windows.Forms.Label> 控件（位于“公共控件”类别中）。 现在，Label 控件在 IDE 中应处于选中状态。 为其设置下列属性。
 
-   1.  请确保将标签的“BackColor”属性设置为“CornflowerBlue”。
+   1. 请确保将标签的“BackColor”属性设置为“CornflowerBlue”。
 
-   2.  将“AutoSize”属性设置为“False”。
+   2. 将“AutoSize”属性设置为“False”。
 
-   3.  将“Dock”属性设置为“Fill”。
+   3. 将“Dock”属性设置为“Fill”。
 
-   4.  通过选择“TextAlign”属性旁的下拉按钮并选择中间按钮，将该属性设置为“MiddleCenter”。 这将确保图标显示在单元格中间。
+   4. 通过选择“TextAlign”属性旁的下拉按钮并选择中间按钮，将该属性设置为“MiddleCenter”。 这将确保图标显示在单元格中间。
 
-   5.  选择“Font”属性。 此时应显示一个省略号 (...) 按钮。
+   5. 选择“Font”属性。 此时应显示一个省略号 (...) 按钮。
 
-   6.  选择省略号按钮，并将“Font”值设置为“Webdings”，将“Font Style”设置为“Bold”，并将“Size”设置为“48”。
+   6. 选择省略号按钮，并将“Font”值设置为“Webdings”，将“Font Style”设置为“Bold”，并将“Size”设置为“48”。
 
-   7.  将标签的“Text”属性设置为字母“c”。
+   7. 将标签的“Text”属性设置为字母“c”。
 
         TableLayoutPanel 中的左上角单元格现在应包含一个位于蓝色背景中心的黑色框。
 
@@ -106,6 +106,6 @@ ms.locfileid: "58647487"
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   要转到下一个教程步骤，请参阅[步骤 2：添加 Random 对象和图标列表](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中添加的列表拉取随机图标。
+- 要转到下一个教程步骤，请参阅[步骤 2：添加 Random 对象和图标列表](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)中添加的列表拉取随机图标。
 
--   要返回概述主题，请参阅[教程 3：创建匹配游戏](../ide/tutorial-3-create-a-matching-game.md)。
+- 要返回概述主题，请参阅[教程 3：创建匹配游戏](../ide/tutorial-3-create-a-matching-game.md)。
