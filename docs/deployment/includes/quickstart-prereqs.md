@@ -1,22 +1,22 @@
 ---
-ms.openlocfilehash: 969b9ecb5dca1802acb70405421614b3c860247e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 983e25e65600a4174c305557b2a58e20b91f63f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58051727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927595"
 ---
 ## <a name="prerequisites"></a>系统必备
 
 ::: moniker range=">=vs-2019"
 
-* 安装有 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 并具有所选语言相应的工作负载：
+* 安装有 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 并具有所选语言相应的工作负载：
   * ASP.NET：**ASP.NET 和 Web 开发**
   * Python：Python 开发
   * Node.js：Node.js 开发
 ::: moniker-end
 ::: moniker range="vs-2017"
-* 安装有 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/)并具有所选语言相应的工作负荷：
+* 安装有 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)并具有所选语言相应的工作负荷：
   * ASP.NET：**ASP.NET 和 Web 开发**
   * Python：Python 开发
   * Node.js：Node.js 开发

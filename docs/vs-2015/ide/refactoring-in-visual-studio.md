@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d11fa85073c9bf1ed9657fbb47705953c7593d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117585"
 ---
 # <a name="refactoring-in-visual-studio"></a>在 Visual Studio 中重构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54772055"
 
    因为重构的逻辑与语言语法密切相关，所以 Visual Studio 中的每个语言服务都会提供自己的重构功能。 有关详细信息，请参阅以下页面：
 
-### <a name="refactoring-in-c"></a>在 C# 中重构
+### <a name="refactoring-in-c"></a>在 C\# 中重构
  [重构 (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>在 Visual Basic 中重构
@@ -40,7 +40,7 @@ ms.locfileid: "54772055"
 ### <a name="refactoring-in-c"></a>在 C++ 中重构
  [编写和重构代码 (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
-### <a name="refactoring-in-f"></a>在 F# 中重构
+### <a name="refactoring-in-f"></a>在 F\# 中重构
  [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff)（第三方 Visual Studio 扩展）中提供 F# 的重构支持。
 
 ## <a name="see-also"></a>请参阅

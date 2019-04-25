@@ -1,5 +1,5 @@
 ---
-title: 安装 Visual Studio 版本的并排方案 |Microsoft Docs
+title: 并排安装 Visual Studio 版本 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 67a564b789d24b11b92b218c2a30673c6bd7baad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834856"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117637"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>并行安装 Visual Studio 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "54834856"
 
  在并行安装各版本之前，您应该了解以下情况：
 
--   如果使用 Visual Studio 2015 打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中创建的解决方案，则稍后可以在旧版本中再次打开和修改该解决方案，前提是你没有执行任何 Visual Studio 2015 特有的功能。
+- 如果使用 Visual Studio 2015 打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中创建的解决方案，则稍后可以在旧版本中再次打开和修改该解决方案，前提是你没有执行任何 Visual Studio 2015 特有的功能。
 
--   如果你尝试使用 Visual Studio 2015 打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或更早的版本中创建的解决方案，则可能需要修改你的项目和文件才能与 Visual Studio 2015 兼容。 有关详细信息，请参阅[端口、 迁移和升级 Visual Studio 项目](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)页。
+- 如果你尝试使用 Visual Studio 2015 打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或更早的版本中创建的解决方案，则可能需要修改你的项目和文件才能与 Visual Studio 2015 兼容。 有关详细信息，请参阅[移植、迁移和升级 Visual Studio 项目](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)页。
 
--   如果在已安装多个版本的计算机上卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一个版本，则将为所有版本移除 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的文件关联。 通过使用 **“选项”** 对话框的 **“常规”** 页上的 **“环境”** 中的 [“还原文件关联”](../ide/reference/general-environment-options-dialog-box.md) 按钮，可以重新映射这些文件关联。
+- 如果在已安装多个版本的计算机上卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一个版本，则将为所有版本移除 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的文件关联。 通过使用 **“选项”** 对话框的 **“常规”** 页上的 **“环境”** 中的 [“还原文件关联”](../ide/reference/general-environment-options-dialog-box.md) 按钮，可以重新映射这些文件关联。
 
--   因为并非所有扩展都兼容，所以 Visual Studio 不会自动升级扩展。 您必须重新安装的扩展[Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891)或软件发布者。
+- 因为并非所有扩展都兼容，所以 Visual Studio 不会自动升级扩展。 必须从 [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) 或软件发行者处重新安装扩展。
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 版本和并行安装
 
--   Visual Basic、Visual C# 和 Visual F# 项目使用 **“项目设计器”** 中的 **“目标框架”** 选项来指定项目使用的 .NET Framework 版本。 对于 C++ 项目，您可以通过修改 .vcxproj 文件手动更改目标框架。 有关详细信息，请参阅[的版本兼容性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
+- Visual Basic、Visual C# 和 Visual F# 项目使用 **“项目设计器”** 中的 **“目标框架”** 选项来指定项目使用的 .NET Framework 版本。 对于 C++ 项目，您可以通过修改 .vcxproj 文件手动更改目标框架。 有关详细信息，请参阅[版本兼容性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
 
      创建项目时，可以在 **“新建项目”** 对话框中的 **“.NET Framework”** 列表中指定项目针对的 .NET Framework 版本。
 
