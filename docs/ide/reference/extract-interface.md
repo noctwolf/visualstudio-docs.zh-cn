@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791189"
 ---
 # <a name="extract-an-interface-refactoring"></a>“提取接口”重构
 
@@ -58,13 +58,11 @@ ms.locfileid: "57983191"
 
    ![提取接口](media/extractinterface-dialog-same-file.png)
 
-
    | 字段 | 说明 |
    | - | - |
    | “新接口名称” | 要创建的接口的名称。 名称将默认为“IClassName”，其中“ClassName”是上面所选类的名称。 |
    | “新文件名” | 包含接口的生成文件的名称。 与接口名称一样，此名称将默认为“IClassName”，其中“ClassName”是上面所选类的名称。 还可以选择“添加到当前文件”的选项。 |
    | “选择构成接口的公共成员” | 要提取到接口的项。 你可以选择你想要的数量。 |
-
 
 4. 选择 **“确定”**。
 
@@ -73,15 +71,13 @@ ms.locfileid: "57983191"
    - C#：
 
       ![生成的类 - C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![生成的接口 - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic：
 
       ![生成的类 - Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![生成的接口 - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>请参阅

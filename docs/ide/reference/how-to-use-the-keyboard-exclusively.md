@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789652"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：仅使用键盘进行操作
 
@@ -55,19 +55,19 @@ ms.locfileid: "56315529"
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>使用键盘设置对话框选项
 
-1.  使用 Tab 或 Shift + Tab，在对话框中的控件间上下移动。
+1. 使用 Tab 或 Shift + Tab，在对话框中的控件间上下移动。
 
-2.  更改选项设置：
+2. 更改选项设置：
 
-    -   对于单选按钮，请使用向上键和向下键更改选择内容。
+    - 对于单选按钮，请使用向上键和向下键更改选择内容。
 
-    -   对于复选框，请使用空格键选择或取消选择。
+    - 对于复选框，请使用空格键选择或取消选择。
 
-    -   对于下拉列表，请使用 Alt + 向下键显示项，然后使用向上键和向下键更改选定的项。
+    - 对于下拉列表，请使用 Alt + 向下键显示项，然后使用向上键和向下键更改选定的项。
 
-    -   对于按钮，按 Enter 可激活。
+    - 对于按钮，按 Enter 可激活。
 
-    -   对于网格，请使用箭头键导航。 对于网格中的下拉列表，请使用 Shift + Alt + 向下键显示项，然后使用向上键和向下键更改选定的项。
+    - 对于网格，请使用箭头键导航。 对于网格中的下拉列表，请使用 Shift + Alt + 向下键显示项，然后使用向上键和向下键更改选定的项。
 
 ## <a name="window-and-file-navigation"></a>窗口和文件导航
 
@@ -75,29 +75,29 @@ ms.locfileid: "56315529"
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>使用键盘在 IDE 的窗口和文件间导航
 
--   若要在编辑器或设计器中的文件间移动，请选择 Ctrl+Tab 键，显示 IDE 导航器，并选中“活动文件”。 选择 Enter 键，导航到突出显示的文件。
+- 若要在编辑器或设计器中的文件间移动，请选择 Ctrl+Tab 键，显示 IDE 导航器，并选中“活动文件”。 选择 Enter 键，导航到突出显示的文件。
 
--   若要在停靠的工具窗口间移动，请选择 Alt+F7，显示 IDE 导航器，并选择“活动工具窗口”。 选择 Enter 键，导航到突出显示的窗口。
+- 若要在停靠的工具窗口间移动，请选择 Alt+F7，显示 IDE 导航器，并选择“活动工具窗口”。 选择 Enter 键，导航到突出显示的窗口。
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>通过键盘移动和停靠工具窗口
 
-1.  导航到要移动的工具窗口，并将焦点置于该窗口。
+1. 导航到要移动的工具窗口，并将焦点置于该窗口。
 
-2.  在“窗口”菜单上，选择“可停靠”选项。
+2. 在“窗口”菜单上，选择“可停靠”选项。
 
-3.  按 Alt + 空格，然后选择“移动”。
+3. 按 Alt + 空格，然后选择“移动”。
 
      随即显示停靠菱形引导标记。
 
-4.  使用箭头键将窗口移动到新位置。
+4. 使用箭头键将窗口移动到新位置。
 
      使用箭头键时，鼠标指针会随窗口移动。
 
-5.  到达新位置后，使用箭头键将鼠标指针移到菱形引导标记的正确部位。
+5. 到达新位置后，使用箭头键将鼠标指针移到菱形引导标记的正确部位。
 
      新的停靠位置便出现工具窗口的边框。
 
-6.  按 Enter。
+6. 按 Enter。
 
      工具窗口随即进入新的停靠位置。
 

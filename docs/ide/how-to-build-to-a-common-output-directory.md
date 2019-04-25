@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547814"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：生成到公共输出目录
 
@@ -26,13 +26,13 @@ ms.locfileid: "55949703"
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>将所有解决方案输出都放到一个共同目录中
 
-1.  单击解决方案中的项目。
+1. 单击解决方案中的项目。
 
-2.  在“项目”菜单上，单击“属性”。
+2. 在“项目”菜单上，单击“属性”。
 
-3.  根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。
+3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。
 
-4.  为解决方案中的所有项目重复 1-3 步骤。
+4. 为解决方案中的所有项目重复 1-3 步骤。
 
 ## <a name="see-also"></a>请参阅
 

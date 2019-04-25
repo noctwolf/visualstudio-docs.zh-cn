@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b8930d288b5f37d59f3c14657aee045a6a95fb96
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555293"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>使用多种服务配置来配置 Visual Studio 中的 Azure 项目
 
@@ -28,7 +28,6 @@ Visual Studio 中的 Azure 云服务项目包括三个配置文件：`ServiceDef
 ![VS_Solution_Explorer_Roles_Properties](./media/vs-azure-tools-multiple-services-project-configurations/IC784076.png)
 
 有关服务定义文件和服务配置文件的基础架构的信息，请参阅 [.csdef XML 架构](/azure/cloud-services/schema-csdef-file)和 [.cscfg XML 架构](/azure/cloud-services/schema-cscfg-file)文章。 有关服务配置的详细信息，请参阅[如何配置云服务](/azure/cloud-services/cloud-services-how-to-configure-portal)。
-
 
 ## <a name="configuration-page"></a>配置页
 

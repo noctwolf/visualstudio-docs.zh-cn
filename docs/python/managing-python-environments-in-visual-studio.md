@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536578"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -270,4 +270,4 @@ conda 环境文件夹如下所示：
 - [为项目选择解释器](selecting-a-python-environment-for-a-project.md)
 - [对依赖项使用 requirements.txt](managing-required-packages-with-requirements-txt.md)
 - [搜索路径](search-paths.md)
-- [Python 环境窗口引用](python-environments-window-tab-reference.md)
+- [“Python 环境”窗口参考](python-environments-window-tab-reference.md)

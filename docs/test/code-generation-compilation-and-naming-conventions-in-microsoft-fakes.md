@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822756"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
@@ -20,8 +20,8 @@ ms.locfileid: "55947337"
 
 **要求**
 
--   Visual Studio Enterprise
--   .NET Framework 项目
+- Visual Studio Enterprise
+- .NET Framework 项目
 
 > [!NOTE]
 > 不支持 .NET Standard 项目。
@@ -62,23 +62,23 @@ ms.locfileid: "55947337"
 
 筛选器字符串使用简单语法定义如何完成匹配：
 
--   默认情况下筛选器不区分大小写；筛选器可执行子字符串匹配：
+- 默认情况下筛选器不区分大小写；筛选器可执行子字符串匹配：
 
      `el` 匹配“hello”
 
--   将 `!` 添加到筛选器的末尾，使其成为精确区分大小写匹配：
+- 将 `!` 添加到筛选器的末尾，使其成为精确区分大小写匹配：
 
      `el!` 不匹配“hello”
 
      `hello!` 匹配“hello”
 
--   将 `*` 添加到筛选器的末尾，使其匹配字符串前缀：
+- 将 `*` 添加到筛选器的末尾，使其匹配字符串前缀：
 
      `el*` 不匹配“hello”
 
      `he*` 匹配“hello”
 
--   以分号分隔的列表中的多个筛选器已合并为析取：
+- 以分号分隔的列表中的多个筛选器已合并为析取：
 
      `el;wo` 匹配“hello”和“world”
 
@@ -114,9 +114,9 @@ Fakes 代码生成器为对生成的 Fakes 程序集可见的类型生成填充�
 
  如果已填充的程序集具有强名称，并且希望访问该程序集的内部类型：
 
--   测试程序集和 Fakes 程序集都必须具有强名称。
+- 测试程序集和 Fakes 程序集都必须具有强名称。
 
--   将测试的公钥和 Fakes 程序集添加到已填充的程序集的“InternalsVisibleToAttribute”属性中。 这是当已填充的程序集具有强名称时，在已填充的程序集代码中的示例属性所呈现的效果：
+- 将测试的公钥和 Fakes 程序集添加到已填充的程序集的“InternalsVisibleToAttribute”属性中。 这是当已填充的程序集具有强名称时，在已填充的程序集代码中的示例属性所呈现的效果：
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ Fakes 程序集的编译可极大地加快生成时间。 通过为独立集中�
 
 从单元测试项目中，将引用添加到放置在项目文件夹 FakesAssemblies 下的已编译的 Fakes 程序集。
 
-1.  使用与你的测试项目匹配的 .NET 运行时版本创建新的类库。 我们称之为 Fakes.Prebuild。 从项目中删除不需要的 class1.cs 文件。
+1. 使用与你的测试项目匹配的 .NET 运行时版本创建新的类库。 我们称之为 Fakes.Prebuild。 从项目中删除不需要的 class1.cs 文件。
 
-2.  添加对需要 Fakes 的所有系统和第三方程序集的引用。
+2. 添加对需要 Fakes 的所有系统和第三方程序集的引用。
 
-3.  为每个程序集和生成添加一个 .fakes 文件。
+3. 为每个程序集和生成添加一个 .fakes 文件。
 
-4.  从测试项目
+4. 从测试项目
 
-    -   确保具有对 Fakes 运行时 DLL 的引用：
+    - 确保具有对 Fakes 运行时 DLL 的引用：
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   对于每个已为其创建 Fakes 的程序集，请添加对相应 DLL 文件的引用，该文件位于项目文件夹的 Fakes.Prebuild\FakesAssemblies 中。
+    - 对于每个已为其创建 Fakes 的程序集，请添加对相应 DLL 文件的引用，该文件位于项目文件夹的 Fakes.Prebuild\FakesAssemblies 中。
 
 ### <a name="avoid-assembly-name-clashing"></a>避免程序集名称冲突
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 下面的规则按递归方式应用：
 
--   由于 Fakes 使用 C# 生成 Fakes 程序集，因此，生成无效 C# 标记的所有字符都将转义为“_”（下划线）。
+- 由于 Fakes 使用 C# 生成 Fakes 程序集，因此，生成无效 C# 标记的所有字符都将转义为“_”（下划线）。
 
--   如果生成的名称与声明类型的任何成员发生冲突，则通过追加一个两位数的计数器（从 01 开始）来使用编号方案。
+- 如果生成的名称与声明类型的任何成员发生冲突，则通过追加一个两位数的计数器（从 01 开始）来使用编号方案。
 
 ## <a name="see-also"></a>请参阅
 

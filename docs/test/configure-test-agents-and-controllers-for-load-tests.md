@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783916"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 
@@ -27,11 +27,11 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 负载模拟体系结构包含 Visual Studio 客户端、测试控制器和测试代理。
 
--   客户端用于开发测试、运行测试，以及查看测试结果。
+- 客户端用于开发测试、运行测试，以及查看测试结果。
 
--   测试控制器用于管理测试代理和收集测试结果。
+- 测试控制器用于管理测试代理和收集测试结果。
 
--   使用测试代理来运行测试并收集数据，包括系统信息和测试设置中定义的 ASP.NET 分析数据。
+- 使用测试代理来运行测试并收集数据，包括系统信息和测试设置中定义的 ASP.NET 分析数据。
 
 此体系结构提供了以下好处：
 

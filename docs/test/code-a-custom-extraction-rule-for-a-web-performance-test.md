@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822932"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义提取规则
 
@@ -31,24 +31,24 @@ ms.locfileid: "55923442"
 
 ## <a name="to-create-a-custom-extraction-rule"></a>创建自定义提取规则
 
-1.  打开一个包含 Web 性能测试的测试项目。
+1. 打开一个包含 Web 性能测试的测试项目。
 
-2.  （可选）创建一个单独的类库项目来存储您的提取规则。
+2. （可选）创建一个单独的类库项目来存储您的提取规则。
 
     > [!IMPORTANT]
     > 你可以在测试所在的项目中创建类。 但是，如果你希望重用规则，则最好创建一个单独的类库项目来存储规则。 如果创建单独的项目，则必须完成本过程中的可选步骤。
 
-3.  （可选）在该类库项目中，添加一个对 Microsoft.VisualStudio.QualityTools.WebTestFramework dll 的引用。
+3. （可选）在该类库项目中，添加一个对 Microsoft.VisualStudio.QualityTools.WebTestFramework dll 的引用。
 
-4.  创建一个从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 类派生的类。 实现 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> 成员。
+4. 创建一个从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 类派生的类。 实现 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*> 成员。
 
-5.  （可选）生成新的类库项目。
+5. （可选）生成新的类库项目。
 
-6.  （可选）在测试项目中添加一个对包含自定义提取规则的类库项目的引用。
+6. （可选）在测试项目中添加一个对包含自定义提取规则的类库项目的引用。
 
-7.  在测试项目中的“Web 性能测试编辑器”中打开一个 Web 性能测试。
+7. 在测试项目中的“Web 性能测试编辑器”中打开一个 Web 性能测试。
 
-8.  若要添加自定义提取规则，请右键单击某个 Web 性能测试请求并选择“添加提取规则”。
+8. 若要添加自定义提取规则，请右键单击某个 Web 性能测试请求并选择“添加提取规则”。
 
      出现“添加提取规则”对话框。 将在“选择规则”列表中看到自定义验证规则以及预定义的验证规则。 选择自定义提取规则，然后选择“确定”。
 

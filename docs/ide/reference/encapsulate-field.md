@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9030fd2ae85d12760d6f6a12be54492f3c14e12b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791269"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>“封装字段”重构
 
@@ -54,7 +54,7 @@ ms.locfileid: "55911269"
       - 选择“编辑 > 重构> 封装字段”。
       - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择任意一个“封装字段”项。
 
-   选择 | 说明​​
+   选择 | 说明
    --------- | -----------
    封装字段 (并使用属性) | 使用属性封装字段，并将此字段的所有用法更新为使用所生成的属性
    封装字段 (但仍使用字段) | 使用属性封装字段，但将此字段的所有用法保留不变

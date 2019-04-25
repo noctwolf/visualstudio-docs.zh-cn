@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 09ed64d6bffaa4453c3294229ee48fd0a065eb74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778168"
 ---
 # <a name="options-text-editor-javascript-project"></a>“选项”>“文本编辑器”>“JavaScript”>“项目”
 
@@ -60,7 +60,7 @@ ms.locfileid: "55936741"
 
 ### <a name="uielement-list"></a>UIElement 列表
 
-|选项|说明​​|
+|选项|说明|
 |------------|-----------------|
 |**React 框架**|在你选中此选项后，代码编辑器会发出 .js 文件扩展名。|
 |**Preserve**|在你选中此选项后，代码编辑器会在输出中保留 JSX，并发出 .jsx 文件扩展名。|

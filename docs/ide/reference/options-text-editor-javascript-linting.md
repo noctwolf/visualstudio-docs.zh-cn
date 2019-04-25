@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74cd522da1d29ce7f9a58737fc44ecec0909ed1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778334"
 ---
 # <a name="options-text-editor-javascript-linting"></a>“选项”>“文本编辑器”>“JavaScript”>“Lint”
 
@@ -30,7 +30,7 @@ ms.locfileid: "55933998"
 
 ### <a name="uielement-list"></a>UIElement 列表
 
-|选项|说明​​|
+|选项|说明|
 |------------|-----------------|
 |**启用 ESLint**|如果你选中此选项，代码编辑器就会允许对代码进行静态分析。|
 |**对项目中的所有文件(甚至包括已关闭文件)执行 Lint**|如果你选中此选项，代码编辑器就会分析已关闭文件，除非仅报告已打开文件的诊断信息。|

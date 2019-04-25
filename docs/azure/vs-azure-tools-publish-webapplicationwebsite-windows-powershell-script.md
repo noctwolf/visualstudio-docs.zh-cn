@@ -1,27 +1,31 @@
 ---
 title: Publish-WebApplicationWebSite（Windows PowerShell 脚本）| Microsoft Docs
 description: 了解如何将 Web 项目发布到 Azure 网站。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
-ms.openlocfilehash: dacc30785fc26e2f07bf5265eda8490d24333154
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
+ms.openlocfilehash: 2e5bd615e83c56a257e093c42fca2a98c5a3efd8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427437"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite（Windows PowerShell 脚本）
 ## <a name="syntax"></a>语法
 将 Web 项目发布到 Azure 网站。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。
 
     Publish-WebApplicationWebSite
-    –Configuration <configuration>
+    -Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
@@ -98,7 +102,7 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括当创建�
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "West US"
+                "location": "China North"
             },
             "databases": [
                 {
@@ -110,7 +114,7 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括当创建�
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "West US"
+                    "location": "China North"
                 }
             ]
         }
@@ -120,3 +124,6 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括当创建�
 
 ## <a name="next-steps"></a>后续步骤
 有关详细信息，请参阅[Publish-WebApplicationVM（Windows PowerShell 脚本）](vs-azure-tools-publish-webapplicationvm.md)
+
+
+<!-- Update_Description: update metedata properties -->

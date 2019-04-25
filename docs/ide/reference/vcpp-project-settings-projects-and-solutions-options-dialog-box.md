@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789313"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。
 
 ### <a name="to-access-this-dialog-box"></a>访问此对话框
 
-1.  在 **“工具”** 菜单上，单击 **“选项”**。
+1. 在 **“工具”** 菜单上，单击 **“选项”**。
 
-2.  依次选择“项目和解决方案”和“VC++ 项目设置”。
+2. 依次选择“项目和解决方案”和“VC++ 项目设置”。
 
 ## <a name="build-logging"></a>生成日志
  **是**
