@@ -4,17 +4,19 @@ description: 概述如何在 Visual Studio 的服务器资源管理器中查看�
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: e4f8f72dcc19ebe721e79c7b5268fd73d2cc469e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427021"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>从服务器资源管理器访问 Azure 虚拟机
 
@@ -33,7 +35,7 @@ ms.locfileid: "55930826"
    | 状态 |值包括“正在启动”、“已启动”、“正在停止”、“已停止”和“正在检索状态”。 如果出现“正在检索状态”，则表示当前状态未知。 此属性的值不同于 [Azure 门户](http://go.microsoft.com/fwlink/p/?LinkID=525040)上使用的值。 |
    | 订阅 ID |Azure 帐户的订阅 ID。 可以通过在 [Azure 门户](http://go.microsoft.com/fwlink/p/?LinkID=525040)上查看订阅的属性来显示此信息。 |
 2. 选择一个终结点节点，并查看“属性”窗口。
-3. 下表描述了可用的终结点属性，但这些属性都是只读的。 若要添加或编辑虚拟机的终结点，请使用 [Azure 门户](http://go.microsoft.com/fwlink/p/?LinkID=525040)。
+3. 下表描述了可用的终结点属性，但这些属性都是只读的。 若要添加或编辑虚拟机的终结点，请使用 [Azure 门户](http://go.microsoft.com/fwlink/p/?LinkID=525040)。 
 
    | Property | 说明 |
    | --- | --- |

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975794"
 ---
 # <a name="active-script-debugging-overview"></a>活动脚本调试概述
 活动脚本调试接口可以进行中性语言调试和中性主机调试，并支持各种开发环境。  

@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950147"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 创建负载测试性能报告
 
@@ -24,9 +24,9 @@ ms.locfileid: "55955591"
 
 负载测试报告分为两种：
 
--   **运行比较**这种方式会创建一组报告，它们使用表和条形图比较两个负载测试结果的数据。
+- **运行比较**这种方式会创建一组报告，它们使用表和条形图比较两个负载测试结果的数据。
 
--   **趋势**可基于两个或更多负载测试结果生成趋势分析。 其结果以折线图显示，但可从数据透视表获得数据。
+- **趋势**可基于两个或更多负载测试结果生成趋势分析。 其结果以折线图显示，但可从数据透视表获得数据。
 
 > [!TIP]
 > 也可以通过从摘要视图、关系图视图和表视图中复制和粘贴数据来手动创建 Microsoft Word 报告。 请参阅[如何：使用 Microsoft Word 手动创建负载测试性能报告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)。
@@ -40,7 +40,7 @@ ms.locfileid: "55955591"
 > [!NOTE]
 > 可以共享 Excel 工作簿；但是，只有计算机上已安装 Visual Studio 的用户能够修改任意电子表格。 其他用户在 Office 功能区中将看不到“负载测试报告”选项，但他们将能查看工作簿。
 
-下图是显示事务（更新购物车）速度的下降和（% 处理器）计数器的退化之间的相关性的报告示例。 这指向应用程序代码而不是数据库或网络中的潜在问题，并且适于使用 ASP.NET 探查器进行诊断。
+下图是显示处理（更新购物车）速度的下降和（% 处理器）计数器的退化之间的相关性的报告示例。 这指向应用程序代码而不是数据库或网络中的潜在问题，并且适于使用 ASP.NET 探查器进行诊断。
 
 ![应用程序代码中的潜在问题](../test/media/lt_excel.png)
 

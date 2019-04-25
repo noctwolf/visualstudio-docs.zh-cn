@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 searchscope: VS Subscription
-ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948439"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -43,10 +43,8 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 *包括不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)
 
-
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
-
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
@@ -92,10 +90,9 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 如果团队和组织中的某人代表你购买了订阅，请联系组织的 Visual Studio 管理员并请求一个 Visual Studio 订阅以获取所需的 Azure 月额度。   请求管理员将新订阅分配到以前订阅分配到的同一个用户 ID，以免担心传输 Azure 订阅的问题。
 
-
 如果直接购买了订阅，请执行以下任一操作：
-1.  通过 Visual Studio Marketplace 购买年度 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 或 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 云订阅。
-2.  通过 [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) 利用 50% 或更高的折扣力度续订当前订阅。
+1. 通过 Visual Studio Marketplace 购买年度 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 或 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 云订阅。
+2. 通过 [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) 利用 50% 或更高的折扣力度续订当前订阅。
 
 比较所有的[订阅及其权益](https://visualstudio.microsoft.com/vs/pricing/)。
 
@@ -111,8 +108,8 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 ## <a name="support-resources"></a>支持资源
 
--  需要与 Azure 有关的帮助？  请参阅下列资源：
+- 需要与 Azure 有关的帮助？  请参阅下列资源：
     - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure 文档](/azure/)
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

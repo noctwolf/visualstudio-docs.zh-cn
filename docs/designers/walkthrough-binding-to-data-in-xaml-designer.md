@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892832"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>演练：在 XAML 设计器中绑定数据
 
-在 XAML 设计器中，可以通过使用美工板和“属性”窗口设置数据绑定属性。 本演练中的示例演示如何将数据绑定到控件。 具体而言，本演练展示如何创建具有名为 `ItemCount` 的 [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) 的简单购物车类，然后将 `ItemCount` 属性绑定到 [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) 控件的 **Text** 属性。
+在 XAML 设计器中，可使用美工板和“属性”窗口设置数据绑定属性。 本演练中的示例演示如何将数据绑定到控件。 具体而言，本演练展示如何创建具有名为 `ItemCount` 的 [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) 的简单购物车类，然后将 `ItemCount` 属性绑定到 [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) 控件的 **Text** 属性。
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>创建一个类以用作数据源的步骤
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>若要创建类用作数据源，请执行以下操作
 
 1. 在“文件”菜单上，选择“新建” > “项目”。
 
@@ -31,7 +31,7 @@ ms.locfileid: "55957593"
 
 1. 将项目命名为“BindingTest”，然后选择“确定”按钮。
 
-1. 打开 MainWindow.xaml.cs（或 MainWindow.xaml.vb）文件并添加下面的代码。 在 C# 中，在 `BindingTest` 命名空间中添加代码（文件中最后一个右括号之前）。 在 Visual Basic 中，仅添加新类。
+1. 打开 MainWindow.xaml.cs（或 MainWindow.xaml.vb）文件并添加下面的代码。 在 C# 中，将这段代码添加到 `BindingTest` 命名空间中（在文件中的最后一个右括号之前）。 在 Visual Basic 中，添加新类即可。
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -69,7 +69,7 @@ ms.locfileid: "55957593"
 
 1. 在“文件”菜单上，选择“生成” > “生成解决方案”。
 
-## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>将 ItemCount 属性绑定到 TextBlock 控件的步骤
+## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>若要将 ItemCount 属性绑定到 TextBlock 控件，请执行以下操作
 
 1. 在解决方案资源管理器中，打开 MainWindow.xaml 的快捷菜单，然后选择“视图设计器”。
 
@@ -85,7 +85,7 @@ ms.locfileid: "55957593"
 
 1. 在“工具箱”中，选择一个 `TextBlock` 控件将其添加到窗体。
 
-1. 选定 `TextBlock` 控件后，在“属性”窗口中，选择“文本”属性右侧的属性标记，然后选择“创建数据绑定”。 （属性标记看上去像一个小框。）
+1. 选定 `TextBlock` 控件后，在“属性”窗口中，选择“文本”属性右侧的属性标记，然后选择“创建数据绑定”。 （属性标记看上去像是一个小方框。)
 
 1. 在“创建数据绑定”对话框的“路径”框中，选择“ItemCount: (int32)”属性，然后选择“确定”按钮。
 
@@ -95,7 +95,7 @@ ms.locfileid: "55957593"
 
 1. 按 F5  运行应用。
 
-     `TextBlock` 控件应将默认值 0 显示为文本。
+     该 `TextBlock` 控件应显示默认值 0 作为文本。
 
 ## <a name="see-also"></a>请参阅
 

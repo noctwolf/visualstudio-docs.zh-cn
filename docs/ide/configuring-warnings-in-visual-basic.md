@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 022ba767a7d1952b659d66532d5542c42fa2f9bb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976574"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 
@@ -50,7 +50,7 @@ ms.locfileid: "55949819"
 ## <a name="examples"></a>示例
  下表包含命令行参数示例，并对每个参数的作用进行了说明。
 
-|参数|说明​​|
+|参数|说明|
 |--------------|-----------------|
 |`vbc /warnaserror`|指定应将所有警告都视为错误。|
 |`vbc /warnaserror:42024`|指定应将 42024 警告视为错误。|

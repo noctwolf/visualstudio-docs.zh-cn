@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830819"
 ---
 # <a name="measure-mode-onoff"></a>打开/关闭度量模式
 通过使用此工具，可以精确地测量时间线中的时间长度。 若要启用度量模式，请单击“度量”按钮（它具有一个标尺图标），然后在时间线中拖动。 注意在拖动时，指针下面的区域会用黄色突出显示，度量的时间显示在工具栏中该按钮的右侧。 拖动时动态计算此值，以便能够立即看到特定事件占用的时间。 释放鼠标按钮后，时间值保持可见。

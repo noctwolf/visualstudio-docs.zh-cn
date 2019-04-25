@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822968"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>编码的 UI 测试的最佳做法
 
@@ -26,29 +26,29 @@ ms.locfileid: "55924482"
 
 使用以下准则来创建灵活的编码的 UI 测试。
 
--   尽可能使用**编码的 UI 测试生成器**。
+- 尽可能使用**编码的 UI 测试生成器**。
 
--   请不要直接修改 UIMap.Designer.cs 文件。 如果修改该文件，会覆盖对该文件的更改。
+- 请不要直接修改 UIMap.Designer.cs 文件。 如果修改该文件，会覆盖对该文件的更改。
 
--   将测试创建为一系列记录的方法。 若要详细了解如何录制方法，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
+- 将测试创建为一系列记录的方法。 若要详细了解如何录制方法，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
 
--   每个记录的方法应作用于单个页面、窗体或对话框。 为每个新页面、窗体或对话框创建新测试方法。
+- 每个记录的方法应作用于单个页面、窗体或对话框。 为每个新页面、窗体或对话框创建新测试方法。
 
--   创建方法时，请使用有意义的方法名称，而不是默认名称。 有意义的名称有助于标识方法的用途。
+- 创建方法时，请使用有意义的方法名称，而不是默认名称。 有意义的名称有助于标识方法的用途。
 
--   如果可能，将每个记录的方法限制为少于 10 次操作。 这种模块化方法便于在 UI 更改时替换方法。
+- 如果可能，将每个记录的方法限制为少于 10 次操作。 这种模块化方法便于在 UI 更改时替换方法。
 
--   使用“编码的 UI 测试生成器”创建每个断言，这会自动向 UIMap.Designer.cs 文件添加断言方法。
+- 使用“编码的 UI 测试生成器”创建每个断言，这会自动向 UIMap.Designer.cs 文件添加断言方法。
 
--   如果用户界面 (UI) 更改，请重新记录测试方法或断言方法，或重新记录现有测试方法中受影响的部分。
+- 如果用户界面 (UI) 更改，请重新记录测试方法或断言方法，或重新记录现有测试方法中受影响的部分。
 
--   为受测应用程序中的每个模块创建一个单独的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 文件。 有关详细信息，请参阅[使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)。
+- 为受测应用程序中的每个模块创建一个单独的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 文件。 有关详细信息，请参阅[使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)。
 
--   在受测应用程序中创建 UI 控件时，请使用有意义的名称。 使用有意义的名称比自动生成的控件名称更清晰，更易于使用。
+- 在受测应用程序中创建 UI 控件时，请使用有意义的名称。 使用有意义的名称比自动生成的控件名称更清晰，更易于使用。
 
--   如果通过用 API 编码来创建断言，请为 UIMap.cs 文件中 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类部分中的每个断言创建一个方法。 若要执行断言，请从测试方法中调用此方法。
+- 如果通过用 API 编码来创建断言，请为 UIMap.cs 文件中 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类部分中的每个断言创建一个方法。 若要执行断言，请从测试方法中调用此方法。
 
--   如果直接用 API 编码，请在代码中尽可能使用 UIMap.Designer.cs 文件中生成的类中的属性和方法。 这些类将使您的工作更简单可靠，并帮助您提高效率。
+- 如果直接用 API 编码，请在代码中尽可能使用 UIMap.Designer.cs 文件中生成的类中的属性和方法。 这些类将使您的工作更简单可靠，并帮助您提高效率。
 
 编码的 UI 测试能够自动适应用户界面中的许多更改。 例如，在大多数情况下，如果 UI 元素更改了位置或颜色，则编码的 UI 测试仍将找到正确的元素。
 
@@ -58,15 +58,15 @@ ms.locfileid: "55924482"
 
 在开发过程中，用户界面经常更改。 下面提供了一些可以降低这些更改的影响的方法：
 
--   查找引用此控件的已录制方法，并使用“编码的 UI 测试生成器”重新录制此方法的操作。 可对方法使用同一名称，以覆盖现有操作。
+- 查找引用此控件的已录制方法，并使用“编码的 UI 测试生成器”重新录制此方法的操作。 可对方法使用同一名称，以覆盖现有操作。
 
--   如果控件有一个不再有效的断言，则执行下列操作：
+- 如果控件有一个不再有效的断言，则执行下列操作：
 
-    -   删除包含断言的方法。
+    - 删除包含断言的方法。
 
-    -   从测试方法中删除对此方法的调用。
+    - 从测试方法中删除对此方法的调用。
 
-    -   通过将十字线按钮拖动到 UI 控件上来添加新的断言，打开 UI 映射，并添加新的断言。
+    - 通过将十字线按钮拖动到 UI 控件上来添加新的断言，打开 UI 映射，并添加新的断言。
 
 若要详细了解如何录制编码的 UI 测试，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。
 

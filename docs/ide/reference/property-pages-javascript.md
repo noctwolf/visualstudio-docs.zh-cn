@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969015"
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 “属性页”提供对项目设置的访问。 可使用“属性页”中显示的页面来更改项目属性。
@@ -49,7 +49,6 @@ ms.locfileid: "55929487"
 > [!NOTE]
 > 某些选项仅可用于 UWP 应用。
 
-
  输出路径
 
  指定项目的配置的输出文件的位置。 该路径是相对；如果输入绝对路径，绝对路径会保存在项目中。 默认路径为 bin\Debug。
@@ -66,16 +65,15 @@ ms.locfileid: "55929487"
 > [!NOTE]
 > 某些选项仅可用于 UWP 应用。
 
-
  要启动的调试器
 
  指定调试器的默认主机。
 
--   选择“本地计算机”可在 Visual Studio 主机计算机上启动应用程序。 有关详细信息，请参阅[在本地计算机上运行应用](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
+- 选择“本地计算机”可在 Visual Studio 主机计算机上启动应用程序。 有关详细信息，请参阅[在本地计算机上运行应用](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
 
--   选择“模拟器”可在模拟器中启动应用程序。 有关详细信息，请参阅[在模拟器中运行应用](../../debugger/run-windows-store-apps-in-the-simulator.md)。
+- 选择“模拟器”可在模拟器中启动应用程序。 有关详细信息，请参阅[在模拟器中运行应用](../../debugger/run-windows-store-apps-in-the-simulator.md)。
 
--   选择“远程计算机”可在远程计算机上启动应用程序。 有关远程调试的详细信息，请参阅[在远程计算机上运行应用](../../debugger/run-windows-store-apps-on-a-remote-machine.md)。
+- 选择“远程计算机”可在远程计算机上启动应用程序。 有关远程调试的详细信息，请参阅[在远程计算机上运行应用](../../debugger/run-windows-store-apps-on-a-remote-machine.md)。
 
 启动应用程序
 

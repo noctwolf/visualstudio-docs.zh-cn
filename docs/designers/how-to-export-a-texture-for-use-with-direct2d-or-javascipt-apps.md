@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844379"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用
 
@@ -21,31 +21,31 @@ ms.locfileid: "55939998"
 
 本文档演示了这些活动：
 
--   将源映像配置为由图像内容管道进行处理。
+- 将源映像配置为由图像内容管道进行处理。
 
--   配置图像内容管道以生成可在 Direct2D 或 JavaScript 应用中使用的纹理。
+- 配置图像内容管道以生成可在 Direct2D 或 JavaScript 应用中使用的纹理。
 
-    -   生成块压缩的 .dds 文件。
+    - 生成块压缩的 .dds 文件。
 
-    -   生成预乘的 Alpha。
+    - 生成预乘的 Alpha。
 
-    -   禁用 mipmap 生成。
+    - 禁用 mipmap 生成。
 
 ## <a name="rendering-conventions-in-direct2d"></a>Direct2D 中的呈现约定
 
 Direct2D 的上下文中使用的纹理必须符合这些 Direct2D 内部呈现约定：
 
--   Direct2D 通过使用预乘的 Alpha 实现透明度和半透明度。 与 Direct2D 一起使用的纹理必须包含预乘的 Alpha，即使该纹理不使用透明度或半透明度也是如此。 有关预乘 Alpha 的详细信息，请参阅[如何：导出包含预乘 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
+- Direct2D 通过使用预乘的 Alpha 实现透明度和半透明度。 与 Direct2D 一起使用的纹理必须包含预乘的 Alpha，即使该纹理不使用透明度或半透明度也是如此。 有关预乘 Alpha 的详细信息，请参阅[如何：导出包含预乘 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)。
 
--   必须通过使用以下块压缩格式之一以 .dds 格式应用纹理：
+- 必须通过使用以下块压缩格式之一以 .dds 格式应用纹理：
 
-    -   BC1_UNORM 压缩
+    - BC1_UNORM 压缩
 
-    -   BC2_UNORM 压缩
+    - BC2_UNORM 压缩
 
-    -   BC3_UNORM 压缩
+    - BC3_UNORM 压缩
 
--   不支持 mipmap。
+- 不支持 mipmap。
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>创建与 Direct2D 呈现约定相兼容的纹理
 

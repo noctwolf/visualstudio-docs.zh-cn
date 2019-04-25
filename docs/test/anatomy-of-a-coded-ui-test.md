@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18a2da2ad79a91ca90a749471765970cfd7a1cbd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7ad2a26e7499758ec144c586f6526bfa33180961
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822665"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 
@@ -33,7 +33,7 @@ ms.locfileid: "55911515"
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 类](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [属性](#CodedUITestProperties)|是|
 |[UIMap.uitest](#UIMapuitest)|用于测试的 UI 的 XML 映射。|No|
 
-###  <a name="UIMapDesignerFile"></a>UIMap.Designer.cs
+### <a name="UIMapDesignerFile"></a>UIMap.Designer.cs
  此文件包含在测试创建后由**编码的 UI 测试生成器**自动创建的代码。 此文件会在每次更改测试时重新创建，因此，你不可以在其中添加或修改代码。
 
 #### <a name="declarations-section"></a>声明部分
@@ -57,7 +57,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 
  包含用于 Windows 用户界面 (UI) 的 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> 命名空间。 对于网页 UI，命名空间将为 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>；对于 Windows Presentation Foundation UI，命名空间将为 <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>。
 
-####  <a name="UIMapClass"></a>UIMap 类
+#### <a name="UIMapClass"></a>UIMap 类
  该文件的下一部分是 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类。
 
 ```csharp
@@ -92,7 +92,7 @@ public UIStartWindow UIStartWindow
 public UIMathApplicationWindow UIMathApplicationWindow
 ```
 
-#####  <a name="UIMapMethods"></a>UIMap 方法
+##### <a name="UIMapMethods"></a>UIMap 方法
  每种方法都具有类似于 `AddItems()` 方法的结构。 这将在代码中详细介绍，为清楚起见，代码中添加了换行符。
 
 ```csharp
@@ -139,7 +139,7 @@ Assert.AreEqual(
 
  由于 Windows 计算器应用程序的开发人员的未提供该控件公开可用的名称，因此文本框的名称被列为未知。 当实际值不等于预期值时，<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=fullName> 方法失败，从而导致测试失败。 另请注意，预期值的小数点后面有一个空格。 如果你永远都不会修改此特定测试的功能，则必须允许该小数点和空格。
 
-#####  <a name="UIMapProperties"></a>UIMap 属性
+##### <a name="UIMapProperties"></a>UIMap 属性
  每个属性的代码在整个类中都是标准的。 下面的 `AddItemsParams` 属性的代码用于 `AddItems()` 方法。
 
 ```csharp
@@ -183,7 +183,7 @@ public class AddItemsParams
 
 正如 UIMap.cs 文件中的其他所有类一样，此类也以 <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> 开头。 在此示例中，小类是 `Fields` 区域，它定义了用作 <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> 方法的参数的字符串，该方法是我们之前介绍的 `UIMap.AddItems()` 方法中使用的方法。 你可以在调用在其中使用这些参数的方法之前，编写代码以替换这些字符串字段中的值。
 
-###  <a name="UIMapCS"></a>UIMap.cs
+### <a name="UIMapCS"></a>UIMap.cs
  默认情况下，此文件包括没有方法或属性的分部 `UIMap` 类。
 
 #### <a name="uimap-class"></a>UIMap 类
@@ -191,7 +191,7 @@ public class AddItemsParams
 
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 的所有部分都可以使用 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类的任何其他部分的方法和属性。
 
-###  <a name="CodedUITestCS"></a>CodedUITest1.cs
+### <a name="CodedUITestCS"></a>CodedUITest1.cs
  此文件由**编码的 UI 测试生成器**生成，但不会在每次测试有修改时重新创建，因此可以在此文件中修改代码。 文件的名称由你创建测试时为该测试指定的名称生成。
 
 #### <a name="codeduitest1-class"></a>CodedUITest1 类
@@ -205,7 +205,7 @@ public class CodedUITest1
 
 <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> 自动应用于类，这使得测试框架可将其识别为一个测试扩展。 另请注意，这不是一个分部类。 此文件中包含所有类代码。
 
-#####  <a name="CodedUITestProperties"></a>CodedUITest1 属性
+##### <a name="CodedUITestProperties"></a>CodedUITest1 属性
 
 此类包含两个位于文件底部的默认属性。 请不要修改它们。
 
@@ -218,7 +218,7 @@ public TestContext TestContext
 public UIMap UIMap
 ```
 
-#####  <a name="CodedUITestMethods"></a>CodedUITest1 方法
+##### <a name="CodedUITestMethods"></a>CodedUITest1 方法
  默认情况下，此类只包含一种方法。
 
 ```csharp
@@ -261,7 +261,7 @@ public void MyTestCleanup()
 
  如果使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute> 将更多方法添加到此类，则测试框架会在测试过程中调用每个方法。
 
-###  <a name="UIMapuitest"></a>UIMap.uitest
+### <a name="UIMapuitest"></a>UIMap.uitest
  这是一个 XML 文件，表示编码的 UI 测试录制及其所有部分的结构。 除类的方法和属性之外，其中还包括操作以及这些类。 [UIMap.Designer.cs](#UIMapDesignerFile) 文件包含编码的 UI 测试生成器为了重现测试结构而生成的代码，并建立与测试框架的连接。
 
  UIMap.uitest 文件不可直接编辑。 但是，可使用编码的 UI 生成器来修改测试，从而自动修改 UIMap.uitest 文件和 [UIMap.Designer.cs](#UIMapDesignerFile) 文件。

@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429777"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
 
@@ -42,21 +42,21 @@ ms.locfileid: "55907137"
 
 启用“全屏”模式后，可选择隐藏所有工具窗口并仅查看文档窗口。
 
--   按 **Alt**+**Shift**+**Enter** 可进入或退出“全屏”模式。
+- 按 **Alt**+**Shift**+**Enter** 可进入或退出“全屏”模式。
 
      --或者--
 
--   在“命令”窗口中发出命令 `View.Fullscreen`。
+- 在“命令”窗口中发出命令 `View.Fullscreen`。
 
 ## <a name="enable-virtual-space-mode"></a>启用虚空格模式
 
 在“虚空格”模式下，将在每个代码行末尾插入空格。 选择此选项可将注释放置在代码旁的一致位置。
 
-1.  从“工具”菜单中选择“选项”。
+1. 从“工具”菜单中选择“选项”。
 
-2.  展开“文本编辑器”文件夹，选择“所有语言”，全局设置此选项，或选择特定语言的文件夹。 例如，若要仅在 Visual Basic 中启用行号，则选择“Basic” > “文本编辑器”节点。
+2. 展开“文本编辑器”文件夹，选择“所有语言”，全局设置此选项，或选择特定语言的文件夹。 例如，若要仅在 Visual Basic 中启用行号，则选择“Basic” > “文本编辑器”节点。
 
-3.  选择“常规”选项，然后在“设置”下选择“启用虚空格”。
+3. 选择“常规”选项，然后在“设置”下选择“启用虚空格”。
 
     > [!NOTE]
     > “虚空格”在“列选择”模式下启用。 如果未启用“虚空格”模式，插入点将从一行的末尾直接移动到下一行的第一个字符。

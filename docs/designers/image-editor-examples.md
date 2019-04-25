@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9388744cd9ded83a82be96f4c3413ce88470168
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893229"
 ---
 # <a name="image-editor-examples"></a>图像编辑器示例
 
 本节文档中的文章包含演示如何使用图像编辑器的示例。
 
-|Title|说明​​|
+|Title|说明|
 |-----------|-----------------|
 |[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)|演示如何创建基本纹理。|
 |[如何：创建和修改 MIP 级别](../designers/how-to-create-and-modify-mip-levels.md)|演示如何从图像生成 MIP 级别。|

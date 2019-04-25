@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: 了解 Open 和到 Visual Studio 订阅管理门户的 Open License 迁移。
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821726"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Open 和到 Visual Studio 订阅管理门户的 Open License 迁移
 
@@ -38,7 +38,6 @@ ms.locfileid: "56843190"
 
 - 为代表客户管理订阅，合作伙伴需要在管理门户上注册。 以下列出了获取访问权限的各种方法（类似于 add-open 进程）。
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>现有合作伙伴添加新许可证
 
 这适用于有权访问 [Visual Studio 订阅管理门户](https://manage.visualstudio.com)、订购了用于 Visual Studio 订阅的 Open Licenses 并需要对其进行管理的合作伙伴。
@@ -48,7 +47,6 @@ ms.locfileid: "56843190"
 - 选择协议下拉列表并滚动到底部，其中有“+新建 Open License”选项。
 
 - 在弹出式面板中，合作伙伴需输入协议上的授权号、许可证号、客户电子邮件地址，勾选复选框，然后单击“提交”。
-
 
 > [!NOTE]
 > 客户将收到通知电子邮件，告知他们已将合作伙伴添加到 Open License 中。 他们可选择删除合作伙伴的访问权限。
@@ -67,7 +65,6 @@ ms.locfileid: "56843190"
 
 - 合作伙伴此后便可管理该 Open License 的订阅。
 
-
 > [!NOTE]
 > 客户将收到通知电子邮件，告知他们已将合作伙伴添加到 Open License 中。 他们可选择删除合作伙伴的访问权限。
 
@@ -80,7 +77,6 @@ ms.locfileid: "56843190"
 - 他们收到一个错误，指示他们无法被识别。
 
 - 合作伙伴需要选择“OLP 合作伙伴”注册选项，并输入订单上使用的授权号、许可证号、客户电子邮件地址，选中复选框，然后单击“提交”。
-
 
 > [!NOTE]
 > 客户将收到通知电子邮件，告知他们已将合作伙伴添加到 Open License 中。 他们可选择删除合作伙伴的访问权限。

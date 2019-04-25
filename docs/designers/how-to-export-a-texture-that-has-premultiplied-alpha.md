@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893375"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含自左乘的 alpha 的纹理
 
@@ -21,20 +21,20 @@ ms.locfileid: "55946868"
 
 本文档演示了这些活动：
 
--   将源映像配置为由图像内容管道进行处理。
+- 将源映像配置为由图像内容管道进行处理。
 
--   配置图像内容管道以生成预乘 alpha。
+- 配置图像内容管道以生成预乘 alpha。
 
 ## <a name="premultiplied-alpha"></a>预乘 Alpha
  预乘 Alpha 相对于常规非预乘 Alpha 来说具有若干优点，因为它通过透明度（允许通过的底色的量）来分离纹素添加的颜色（纹素添加到场景中的颜色），更好的体现了现实世界与物理材质的光线交互。 使用预乘 Alpha 的一些优点为：
 
--   与预乘 Alpha 混合的是一种结合性运算，无论按何种顺序混合纹理，混合多个半透明纹理的结果都是相同的。
+- 与预乘 Alpha 混合的是一种结合性运算，无论按何种顺序混合纹理，混合多个半透明纹理的结果都是相同的。
 
--   因为混合预乘 Alpha 具有结合性，所以简化了半透明对象的多通渲染。
+- 因为混合预乘 Alpha 具有结合性，所以简化了半透明对象的多通渲染。
 
--   通过使用预乘 Alpha，可以同时实现纯附加混合（通过将 Alpha 设置为零）和线性内插混合。 例如，在粒子系统中，附加混合火粒子可能会成为通过使用线性内插混合成的半透明烟粒子。 如果没有预乘 Alpha，将需要在烟粒子之外单独绘制火粒子，并修改绘图调用间的呈现状态。
+- 通过使用预乘 Alpha，可以同时实现纯附加混合（通过将 Alpha 设置为零）和线性内插混合。 例如，在粒子系统中，附加混合火粒子可能会成为通过使用线性内插混合成的半透明烟粒子。 如果没有预乘 Alpha，将需要在烟粒子之外单独绘制火粒子，并修改绘图调用间的呈现状态。
 
--   使用预乘 Alpha 时，纹理拥有更高的压缩质量，并且它们不显示变色的边缘（或“晕轮效应”），这种边缘会在混合不使用预乘 alpha 的纹理时出现。
+- 使用预乘 Alpha 时，纹理拥有更高的压缩质量，并且它们不显示变色的边缘（或“晕轮效应”），这种边缘会在混合不使用预乘 alpha 的纹理时出现。
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>创建使用预乘 Alpha 的纹理
 

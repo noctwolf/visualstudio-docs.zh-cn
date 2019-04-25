@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956448"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 
@@ -82,11 +82,11 @@ ms.locfileid: "56335125"
 
  在命名空间列表中选择用户指定的命名空间，在“导入的命名空间”框中键入要替换的名称，然后单击此按钮，更改为新的命名空间。 只有当所选的命名空间是通过使用“添加用户导入”按钮添加到列表中时，按钮才是活动的。 可以添加：
 
--   类或命名空间，例如 <xref:System.Math?displayProperty=fullName>。
+- 类或命名空间，例如 <xref:System.Math?displayProperty=fullName>。
 
--   别名导入，例如 `VB=Microsoft.VisualBasic`。
+- 别名导入，例如 `VB=Microsoft.VisualBasic`。
 
--   XML 命名空间，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。
+- XML 命名空间，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。
 
 ## <a name="see-also"></a>请参阅
 

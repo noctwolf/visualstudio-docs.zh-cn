@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976241"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -30,7 +30,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 
 下表列出了 VSTest.Console.exe 的所有选项以及对应的简短说明。 在命令行上键入 `VSTest.Console/?` 可以看到类似的摘要。
 
-| 选项 | 说明​​ |
+| 选项 | 说明 |
 |---|---|
 |**[测试文件]**|从指定文件运行测试。 用空格分隔多个测试文件名。<br />示例：`mytestproject.dll`、`mytestproject.dll myothertestproject.exe`|
 |**/Settings:[文件名]**|使用其他设置（如数据收集器）运行测试。<br />示例：`/Settings:Local.RunSettings`|

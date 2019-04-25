@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtualize/SOA Test Professional 订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947253"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 
 更早和更频繁地执行测试。  模拟和测试不可用的以及不断演变的应用程序和系统的行为。  权益包含六个月的免费订阅。  六个月的订阅结束之后，有资格获得年度订阅价格 25％ 的折扣。
-
 
 ## <a name="activation-steps"></a>激活步骤
 
@@ -30,7 +29,6 @@ ms.locfileid: "56844108"
 3. 将重定向到 Parasoft 网站，可在此处创建帐户。  只需提供联系信息，然后单击“提交”。
    > [!div class="mx-imgBorder"]
    > ![Parasoft 权益：创建帐户](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. 创建帐户后，可以看到一条已发送包含下载说明的电子邮件的通知。  （如果未在收件箱中看到此电子邮件，请记得检查垃圾邮件文件夹。）
 
@@ -81,16 +79,14 @@ ms.locfileid: "56844108"
 | Visual Studio Dev Essentials | NA  | 不可用|NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务。
-
+<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务*。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
 
-
 ## <a name="support-resources"></a>支持资源
--  需要 Parasoft 产品帮助？  请参阅下列资源：
+- 需要 Parasoft 产品帮助？  请参阅下列资源：
     - 技术支持： https://www.parasoft.com/support/
     - Parasoft 资源中心： https://www.parasoft.com/resources/
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

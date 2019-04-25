@@ -10,12 +10,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40ce0d5d4c1988e40a7b7530b61fcfbaa1f7131d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950277"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器添加自定义计数器集
 
@@ -32,16 +32,16 @@ ms.locfileid: "55932698"
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>向负载测试添加自定义计数器集
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
-2.  展开“计数器集”节点。 添加到负载测试中的所有计数器集都会显示出来。
+2. 展开“计数器集”节点。 添加到负载测试中的所有计数器集都会显示出来。
 
-3.  右键单击“计数器集”节点，并选择“添加自定义计数器集”。
+3. 右键单击“计数器集”节点，并选择“添加自定义计数器集”。
 
     > [!NOTE]
     > 会向此计数器集赋予一个默认名称，如 Custom1。 可以使用“属性”窗口更改该名称。 按 F4 以显示“属性”窗口。
 
-4.  若要向自定义计数器集添加计数器，请右键单击新的计数器集，然后选择“添加计数器”。 有关如何添加计数器的更多信息，请参见[如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
+4. 若要向自定义计数器集添加计数器，请右键单击新的计数器集，然后选择“添加计数器”。 有关如何添加计数器的更多信息，请参见[如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)。
 
     > [!NOTE]
     > 还可以通过右键单击现有计数器集，选择“复制”，然后将其粘贴到“计数器集”节点来添加自定义计数器集。 可以删除那些复制了但不需要的多余计数器。 可以使用“属性”窗口更改新计数器集的名称。

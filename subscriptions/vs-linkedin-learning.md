@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的作为 LinkedIn Premium 订阅一部分的 LinkedIn Learning 权益。
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948524"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn Learning 权益
 
@@ -28,7 +28,6 @@ ms.locfileid: "56841544"
 2. 在教育类别中找到 LinkedIn 学习磁贴，然后单击“获取代码”链接。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning：权益磁贴](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. 如果你已拥有 LinkedIn 帐户并且已自动登录，则会立即进入 LinkedIn 学习权益激活页。  如果你拥有 LinkedIn 帐户但是未自动登录，则只需输入用户名和密码，然后单击“登录”。  请跳到[此步骤](#activate-your-offer)以激活产品/服务。
 
@@ -80,7 +79,6 @@ ms.locfileid: "56841544"
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning：激活](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. 可以开始浏览感兴趣的技能。  从建议列表中进行选择，搜索其他技能，或单击“跳过”以继续进行而不选择技能。
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning：技能](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ ms.locfileid: "56841544"
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 3 个月                                                            |不是。  仅对新订阅者可用         |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不是。  仅对新订阅者可用         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              | 不是。  仅对新订阅者可用         |
-| Visual Studio Dev Essentials | NA  | 3 个月 |不是。  仅对新订阅者可用 |
+| Visual Studio Dev Essentials | NA  | 不可用 |NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务。
-
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。不包括：Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务*。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
-
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
@@ -114,8 +110,8 @@ ms.locfileid: "56841544"
 答：不，LinkedIn Learning 优惠仅对新订阅者可用。
 
 ## <a name="support-resources"></a>支持资源
--  需要与 LinkedIn 学习有关的帮助？  请参阅下列资源：
+- 需要与 LinkedIn 学习有关的帮助？  请参阅下列资源：
     - 与[使用 LinkedIn 学习](https://www.linkedin.com/help/learning)有关的帮助。
     - 帮助解答有关 [LinkedIn](https://www.linkedin.com/help/linkedin) 的常规问题，例如创建帐户和个人资料，以及维护网络。
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

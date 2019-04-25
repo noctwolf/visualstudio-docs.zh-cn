@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823059"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突
 
@@ -34,7 +34,7 @@ ms.locfileid: "55943397"
 
  阈值冲突表显示前 1,000 个冲突。 下面举例说明了一个表：
 
-|列|说明​​|默认情况下可见|
+|列|说明|默认情况下可见|
 |-|-|-|
 |时间|负载测试过程中发生冲突的时间。|是|
 |计算机|发生冲突的测试计算机的名称。 **注意：** 在远程测试机组 (Rig) 上运行负载测试时，这一项很重要。|是|
@@ -66,7 +66,7 @@ ms.locfileid: "55943397"
 
  也可以在关系图上显示阈值冲突。 阈值图标显示在关系图上发生阈值冲突的数据点旁边。
 
- 在计数器树中，阈值冲突的图标从特定计数器节点向上传播到根节点。 这会提醒你注意可能由于树未展开而在树中不可见的计数器上发生的冲突。
+ 在计数器树中，阈值冲突的图标从特定计数器节点向上传播到根节点。 这会提醒您注意可能由于树未展开而在树中不可见的计数器上发生的冲突。
 
 ## <a name="view-threshold-violations-on-the-graph"></a>在关系图上查看阈值冲突
 

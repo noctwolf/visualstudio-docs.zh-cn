@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972988"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 
@@ -45,13 +45,13 @@ ms.locfileid: "56841570"
 
 要求：
 
--   客户端计算机必须可以访问 Internet。
+- 客户端计算机必须可以访问 Internet。
 
--   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
+- 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
 
 注意：
 
--   帮助的默认源仍处于联机状态。
+- 帮助的默认源仍处于联机状态。
 
 ### <a name="example"></a>示例
 
@@ -59,13 +59,13 @@ ms.locfileid: "56841570"
 
 #### <a name="to-install-english-content-from-the-internet"></a>从 Internet 安装英语内容
 
-1.  选择“开始”，然后选择“运行”。
+1. 选择“开始”，然后选择“运行”。
 
-2.  键入下列命令：
+2. 键入下列命令：
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  按 **Enter**。
+3. 按 **Enter**。
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>在客户端计算机上部署预先安装的本地帮助内容
 
@@ -73,16 +73,16 @@ ms.locfileid: "56841570"
 
 要求：
 
--   用于安装内容集的计算机必须可以访问 Internet。
+- 用于安装内容集的计算机必须可以访问 Internet。
 
--   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
+- 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
 
     > [!TIP]
     > 如果用户没有管理员权限，则建议在 Help Viewer 中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../help-viewer/behavior-overrides.md)。
 
 注意：
 
--   帮助的默认源仍处于联机状态。
+- 帮助的默认源仍处于联机状态。
 
 ### <a name="create-the-content-set"></a>创建内容集
 
@@ -104,23 +104,23 @@ ms.locfileid: "56841570"
 
 #### <a name="to-download-the-content"></a>下载内容
 
-1.  在 Help Viewer 中，选择“管理内容”选项卡。
+1. 在 Help Viewer 中，选择“管理内容”选项卡。
 
-2.  在“推荐的文档”或“可用的文档”下，导航到要下载的文档集，然后选择“添加”。
+2. 在“推荐的文档”或“可用的文档”下，导航到要下载的文档集，然后选择“添加”。
 
-3.  选择“更新”。
+3. 选择“更新”。
 
 接下来，需要对内容进行打包，以便它可以部署到客户端计算机。
 
 #### <a name="to-package-the-content"></a>对内容进行打包
 
-1.  创建要将内容复制到其中的文件夹以便将来进行部署。 例如:C:\VSHelp。
+1. 创建要将内容复制到其中的文件夹以便将来进行部署。 例如:C:\VSHelp。
 
-2.  使用管理员权限打开 cmd.exe。
+2. 使用管理员权限打开 cmd.exe。
 
-3.  导航到在步骤 1 中创建的文件夹。
+3. 导航到在步骤 1 中创建的文件夹。
 
-4.  键入下列命令：
+4. 键入下列命令：
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ ms.locfileid: "56841570"
 
 ### <a name="deploy-the-content"></a>部署内容
 
-1.  创建网络共享，然后将帮助内容复制到该位置。
+1. 创建网络共享，然后将帮助内容复制到该位置。
 
      例如，将 C:\VSHelp 中的内容复制到 \\\myserver\VSHelp。
 
-2.  创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如:
+2. 创建用于包含帮助内容的部署脚本的 .bat 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ ms.locfileid: "56841570"
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  在要安装帮助内容的本地计算机上运行 .bat 文件。
+3. 在要安装帮助内容的本地计算机上运行 .bat 文件。
 
 ## <a name="see-also"></a>请参阅
 

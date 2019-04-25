@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818481"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安装并配置使用 iOS 进行构建的工具
 
@@ -66,13 +66,13 @@ ms.locfileid: "58897577"
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> 安装适用于 iOS 的远程代理
+## <a name="Install"></a> 安装适用于 iOS 的远程代理
 
 当安装用于跨平台移动开发的 Visual C++ 时，Visual Studio 可以与 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)进行通信，这是一个在 Mac 上运行的远程代理，用于传输文件、生成和运行 iOS 应用，以及发送调试命令。
 
 安装远程代理之前，请确保已经满足[先决条件](#prerequisites)并安装了[用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
 
-###  <a name="DownloadInstall"></a> 下载和安装远程代理
+### <a name="DownloadInstall"></a> 下载和安装远程代理
 
 - 在 Mac 上的 Terminal 应用中，输入：
 
@@ -87,11 +87,11 @@ ms.locfileid: "58897577"
 
 如果更新到新版本的 Visual Studio，那么必须将远程代理也更新到最新版本。 若要更新远程代理，请重复下载并安装远程代理的步骤。
 
-##  <a name="Start"></a> 启动远程代理
+## <a name="Start"></a> 启动远程代理
 
 必须运行远程代理才能通过 Visual Studio 生成并运行 iOS 代码。 Visual Studio 必须先与远程代理配对，然后才能进行通信。 默认情况下，远程代理在安全的连接模式下运行，此模式下需要 PIN 才能与 Visual Studio 配对。
 
-###  <a name="RemoteAgentStartServer"></a> 若要启动远程代理
+### <a name="RemoteAgentStartServer"></a> 若要启动远程代理
 
 - 在 Mac 上的 Terminal 应用中，输入：
 
@@ -127,7 +127,7 @@ ms.locfileid: "58897577"
 
 - 在正在运行 vcremote 的终端窗口中，输入 Control+C。
 
-##  <a name="ConfigureVS"></a> 在 Visual Studio 中配置远程代理
+## <a name="ConfigureVS"></a> 在 Visual Studio 中配置远程代理
 
 若要从 Visual Studio 连接到远程代理，必须在 Visual Studio 选项中指定远程配置。
 
@@ -164,7 +164,7 @@ ms.locfileid: "58897577"
 
 你每次在 Visual Studio 时，它会使用相同信息连接到 Mac 上的远程代理。 除非你在 Mac 上生成了新的安全证书，或其主机名或 IP 地址发生了更改，否则，你无需再次将 Visual Studio 与远程代理进行配对。
 
-##  <a name="GeneratePIN"></a> Generate a new security PIN
+## <a name="GeneratePIN"></a> Generate a new security PIN
 
 当你第一次启动远程代理时，生成的 PIN 在有限的时间（默认 10 分钟）内有效。 如果在此有限时间段内未将 Visual Studio 与远程代理进行配对，则需要生成一个新的 PIN。
 
@@ -178,7 +178,7 @@ ms.locfileid: "58897577"
 
    远程代理将生成一个新的临时 PIN。 若要使用新的 PIN 配对 Visual Studio，请重复 [在 Visual Studio 中配置远程代理](#ConfigureVS)中的步骤。
 
-##  <a name="GenerateCert"></a> 生成新的服务器证书
+## <a name="GenerateCert"></a> 生成新的服务器证书
 
 出于安全目的，将 Visual Studio 与远程代理配对的服务器证书关联到你的 Mac 的 IP 地址或主机名。 如果这些值已更改，则必须生成一个新的服务器证书，然后使用新值重新配置 Visual Studio。
 
@@ -200,7 +200,7 @@ ms.locfileid: "58897577"
 
 1. 若要使用新的 PIN 配对 Visual Studio，请重复 [在 Visual Studio 中配置远程代理](#ConfigureVS)中的步骤。
 
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
 你可以使用各种命令行选项配置远程代理。 例如，你可以指定用于接收版本请求的端口以及要在文件系统上进行维护的最大生成数量。 默认限制为 10 个生成。 远程代理会在关机时删除超过最大数量的生成。
 

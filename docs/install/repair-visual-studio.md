@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 690fe29373e80d9dfc560a616d0e914731d9b6cf
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973200"
 ---
 # <a name="repair-visual-studio"></a>修复 Visual Studio
 
@@ -74,7 +74,6 @@ Visual Studio 安装有时会损毁或损坏。 通过修复可以解决此问�
    > “修复”选项仅对已安装的 Visual Studio 实例显示。 如果没有看到“修复”选项，很可能是因为选择“更多”时所在的版本在 Visual Studio 安装程序中列为“可用”，而不是“已安装”。
 
 ::: moniker-end
-
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

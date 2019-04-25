@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957168"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：提供静态文件、添加页面和使用模板继承
 
@@ -285,7 +285,7 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
 
 ## <a name="go-deeper"></a>深入了解
 
-- [将 Web 应用部署到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 有关 Jinja 模板的更多功能（如控制流），请参阅 [Jinja 模板设计器文档](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - 有关使用 `url_for` 的详细信息，请参阅 Flask 应用程序对象文档中的 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) (flask.pocoo.org)
 - GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

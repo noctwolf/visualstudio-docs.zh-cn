@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944012"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 
@@ -27,7 +27,7 @@ ms.locfileid: "58857562"
 
 ::: moniker range="vs-2017"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
 
 ::: moniker-end
 
@@ -177,11 +177,11 @@ ms.locfileid: "58857562"
 
 如果你已准备好使用 Visual Studio 进行编码，请深入了解以下特定于语言的任何教程：
 
-- [Visual Studio 教程 | C#](./csharp/index.yml)
-- [Visual Studio 教程 | Visual Basic](./visual-basic/index.yml)
-- [Visual Studio 教程 | C++](/cpp/get-started/)
+- Visual Studio 教程 | [C#](./csharp/index.yml)
+- Visual Studio 教程 | [Visual Basic](./visual-basic/index.yml)
+- Visual Studio 教程 | C++[](/cpp/get-started/)
 - [Visual Studio 教程 | Python](/visualstudio/python/)
-- [Visual Studio 教程 | JavaScript、TypeScript 和 Node.js](/visualstudio/javascript/)
+- Visual Studio 教程 | [JavaScript、TypeScript 和 Node.js](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>请参阅
 

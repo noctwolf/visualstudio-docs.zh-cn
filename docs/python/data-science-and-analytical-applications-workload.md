@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958279"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 
@@ -98,9 +98,9 @@ SQL Server 支持使用 Python 直接在 SQL Server 内执行高级分析。 SQL
 
 ::: moniker range="vs-2017"
 - [使用 SQL Server 和 R](../rtvs/integrating-sql-server-with-r.md)
-- [在 SQL Server 2016 中利用 R 执行数据库内高级分析（博客）](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
+- [In-database Advanced Analytics with R in SQL Server 2016](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)（在 SQL Server 2016 中利用 R 执行数据库内高级分析）（博客）
 ::: moniker-end
-- [SQL Server 2017 中的 Python：增强版数据库内机器学习（博客）](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
+- [Python in SQL Server 2017: enhanced in-database machine learning](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)（SQL Server 2017 中的 Python：增强版数据库内机器学习）（博客）
 
 ## <a name="additional-services-and-sdks"></a>其他服务和 SDK
 

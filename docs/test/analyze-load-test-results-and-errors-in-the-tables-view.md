@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823036"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在负载测试分析器的表视图中分析负载测试结果和错误
 
@@ -50,7 +50,7 @@ ms.locfileid: "55941304"
 
 下表列出了可用于分析负载测试运行的表。
 
-|表名称|说明​​|
+|表名称|说明|
 |-|-|
 |错误|显示在负载测试运行期间发生的错误的列表。 有关详细信息，请参阅[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)和本主题中的[“错误”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)。|
 |Pages|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
@@ -72,7 +72,7 @@ ms.locfileid: "55941304"
 
  下表列出了“请求”表中的列：
 
-|列|说明​​|默认情况下可见|
+|列|说明|默认情况下可见|
 |-|-|-|
 |**请求**|请求的 URL。 例如，home.html 或 orange-arrow.gif。|是|
 |**方案**|方案的名称。|是|
@@ -94,7 +94,7 @@ ms.locfileid: "55941304"
 
  下表列出了“测试”表中的列。
 
-|列|说明​​|默认情况下可见|
+|列|说明|默认情况下可见|
 |-|-|-|
 |**测试**|测试的名称。|是|
 |**方案**|方案的名称。|是|
@@ -118,9 +118,9 @@ ms.locfileid: "55941304"
 > [!NOTE]
 > 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关详细信息，请参阅[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
-|列|说明​​|可见，但没有计时详细信息|
+|列|说明|可见，但没有计时详细信息|
 |-|-|-|
-|**事务**|事务名称。|是|
+|**事务**|事务的名称。|是|
 |**方案**|方案的名称。|是|
 |**测试**|测试的名称。|是|
 |**总计**|负载测试运行期间发出的事务的总数。|是|
@@ -144,7 +144,7 @@ ms.locfileid: "55941304"
 
  错误表中包含以下列：
 
-|列|说明​​|默认情况下可见|
+|列|说明|默认情况下可见|
 |-|-|-|
 |类型|错误类型。 例如，HttpError。|是|
 |子类型|错误的子类型。 例如，LoadTestException。|是|
@@ -162,7 +162,7 @@ ms.locfileid: "55941304"
 
 “负载测试错误”表包含以下列：
 
-|列|说明​​|
+|列|说明|
 |-|-|
 |**时间**|负载测试过程中发生错误的时间。|
 |**代理**|发生错误的代理计算机的名称。 使用测试控制器和测试代理运行负载测试时此设置很重要。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|
