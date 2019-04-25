@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970091"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 “分配”视图列出在分析运行期间创建的类型。 每个类型都是一个调用树的根节点，该调用树显示导致分配该类型的函数执行路径。
@@ -36,7 +36,7 @@ ms.locfileid: "56626799"
 ## <a name="highlight-the-execution-hot-path"></a>突出显示执行热路径
  可以找到调用树中创建了最多父类型对象的执行路径。
 
--   若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。
+- 若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。
 
 |列|说明|
 |------------|-----------------|

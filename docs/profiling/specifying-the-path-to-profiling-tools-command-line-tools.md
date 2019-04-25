@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979830"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令行工具的路径
 
@@ -34,21 +34,21 @@ ms.locfileid: "57868945"
 在 64 位计算机上，根据被分析应用程序的目标平台指定路径。
 
 ::: moniker range=">=vs-2019"
--   对于 32 位应用程序，默认的探查器工具目录为：
+- 对于 32 位应用程序，默认的探查器工具目录为：
 
      （本机）Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK（托管）Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools
 
--   对于 64 位应用程序，默认的探查器工具目录为：
+- 对于 64 位应用程序，默认的探查器工具目录为：
 
      （本机）Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK（托管）Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   对于 32 位应用程序，默认的探查器工具目录为：
+- 对于 32 位应用程序，默认的探查器工具目录为：
 
      （本机）Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK（托管）Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools
 
--   对于 64 位应用程序，默认的探查器工具目录为：
+- 对于 64 位应用程序，默认的探查器工具目录为：
 
      （本机）Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK（托管）Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\64
 ::: moniker-end

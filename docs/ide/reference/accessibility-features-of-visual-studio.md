@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793152"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318584"
 
 除了 Windows 中的辅助功能和实用工具，以下功能也使 Visual Studio 更便于残障人士使用：
 
--   工具栏按钮和文本放大
+- 工具栏按钮和文本放大
 
--   编辑器中的文本大小选项
+- 编辑器中的文本大小选项
 
--   编辑器中的颜色自定义
+- 编辑器中的颜色自定义
 
--   键盘快捷方式自定义
+- 键盘快捷方式自定义
 
--   方法和参数功能的自动完成
+- 方法和参数功能的自动完成
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
@@ -44,15 +44,15 @@ ms.locfileid: "56318584"
 
 有关详细信息，请参阅下列主题：
 
--   [如何：设置 IDE 辅助功能选项](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [如何：设置 IDE 辅助功能选项](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [如何：仅使用键盘进行操作](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [如何：仅使用键盘进行操作](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [默认键盘快捷方式](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [默认键盘快捷方式](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [辅助功能提示和技巧](../../ide/reference/accessibility-tips-and-tricks.md)
+- [辅助功能提示和技巧](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [如何：更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>请参阅
 

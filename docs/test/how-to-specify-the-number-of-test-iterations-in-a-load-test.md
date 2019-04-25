@@ -9,12 +9,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d35552ad224b038886bcb9dd44177b80b1536ed
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970700"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在负载测试运行设置中指定测试迭代数
 
@@ -29,19 +29,19 @@ ms.locfileid: "55954512"
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>在运行设置中指定测试迭代次数
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
      “负载测试编辑器”随即出现并显示负载测试树。
 
-2.  在负载测试树的“运行设置”文件夹中，选择“运行设置”。
+2. 在负载测试树的“运行设置”文件夹中，选择“运行设置”。
 
-3.  在“视图”菜单上，选择“属性窗口”以查看负载运行设置的类别和属性。
+3. 在“视图”菜单上，选择“属性窗口”以查看负载运行设置的类别和属性。
 
-4.  将“使用测试迭代”属性设置为 True。
+4. 将“使用测试迭代”属性设置为 True。
 
-5.  在“测试迭代”属性中输入一个数字，指示要在负载测试期间运行的测试迭代的次数。
+5. 在“测试迭代”属性中输入一个数字，指示要在负载测试期间运行的测试迭代的次数。
 
-6.  更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“测试迭代”值运行负载测试。
+6. 更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“测试迭代”值运行负载测试。
 
 ## <a name="see-also"></a>请参阅
 

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解管理员如何将许可证分配给订阅者
 searchscope: VS Subscription
 ms.openlocfilehash: 97962571d8a7c433a5f72af90d9107f9e2b08a9b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946415"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中分配许可证
 

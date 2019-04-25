@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003660"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。

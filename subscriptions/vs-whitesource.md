@@ -7,14 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bolt 订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 482f0e5054b1b2ad7ea677b40d5d368004227ec8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810906"
 ---
-#  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
+# <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
 查找和修复开源漏洞，在内部版本中生成所有开源组件的综合清单和许可报告。 一些 Visual Studio 订阅包括 6 个月免费访问期限。
 
@@ -37,7 +37,6 @@ ms.locfileid: "56842190"
 5. 该页面的“激活帐户”部分将引导你完成以下四个步骤：
 
    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 Azure DevOps Services 的免费扩展](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
-
 
 如果使用的是 Azure DevOps Services，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此示例中，我们将使用 Azure DevOps Services。
 > [!div class="mx-imgBorder"]
@@ -82,17 +81,15 @@ ms.locfileid: "56842190"
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。
-
+<sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
-
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
 
--  需要 WhiteSource Bolt 帮助？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 与 WhiteSource Bolt 代表实时聊天
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 需要 WhiteSource Bolt 帮助？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 与 WhiteSource Bolt 代表实时聊天
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

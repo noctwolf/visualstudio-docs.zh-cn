@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb3ef4d928aaac57f39a48e5be212c1148ef58eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552676"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函数
 为给定提供程序创建标记系列。

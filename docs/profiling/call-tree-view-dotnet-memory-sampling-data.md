@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8d05809d7d2c3c0c93044eee4d44603eac2bffec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776798"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>“调用树”视图 - .NET 内存采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都会列出它调用的所有函数以及有关这些函数调用的 .NET 内存分配数据。

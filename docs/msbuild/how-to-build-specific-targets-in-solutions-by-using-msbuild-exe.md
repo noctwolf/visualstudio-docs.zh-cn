@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 695ca538a872677f5ed24b7fef9b7c3b8ee5641c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53ce05490ac46d7a4f01010e5709364f5d35222d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977256"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 生成解决方案中的特定目标
 可使用 MSBuild 在解决方案中生成特定项目的特定目标。
 
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>在解决方案中生成特定项目的特定目标
 
-1.  在命令行中，键入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 对应于包含要执行的目标的解决方案的文件名。
+1. 在命令行中，键入 `MSBuild.exe <SolutionName>.sln`，其中 `<SolutionName>` 对应于包含要执行的目标的解决方案的文件名。
 
 2. 指定 \<ProjectName> 格式的 `-target:` 开关后的目标：\<TargetName>。 如果项目名称包含任何字符 `%`、`$`、`@`、`;`、`.`、`(`、`)` 或 `'`，请将其替换为指定目标名称中的 `_`。
 

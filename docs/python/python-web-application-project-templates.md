@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954794"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -109,11 +109,11 @@ Microsoft Azure 云服务支持 requirements.txt 文件。 有关详细信息，
 
 - **运行服务器命令**组：
   - **命令**：`bottle`（模块）
-  - **参数**： `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **参数**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **调试服务器命令**组：
   - **命令**：`bottle`（模块）
-  - **自变量** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **参数**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 使用 Visual Studio 进行调试时，不建议使用 `--reload` 选项。
 
@@ -126,11 +126,11 @@ Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建
 
 - **运行服务器命令**组：
   - 命令：`..\env\scripts\pserve-script.py`（脚本）
-  - 参数： `Production.ini`
+  - 参数：`Production.ini`
 
 - **调试服务器命令**组：
   - 命令：`..\env\scripts\pserve-script.py`（脚本）
-  - 参数： `Development.ini`
+  - 参数：`Development.ini`
 
 > [!Tip]
 > 你可能需要配置项目的“工作目录”属性，因为 Pyramid 应用通常是项目根目录下的一个文件夹。

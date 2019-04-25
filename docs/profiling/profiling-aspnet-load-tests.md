@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994962"
 ---
 # <a name="profile-aspnet-load-tests"></a>分析 ASP.NET 负载测试
 可以从在 ASP.NET 网站项目上运行的自动 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Web 测试收集分析数据。 可以收集采样和层交互数据。 有关详细信息，请参阅下列主题：

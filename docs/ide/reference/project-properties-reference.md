@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969223"
 ---
 # <a name="project-properties-reference"></a>项目属性引用
 详细了解如何配置和自定义项目属性。
 
 ## <a name="project-properties-pages"></a>项目属性页
 
-| Title | 说明​​ |
+| Title | 说明 |
 | - | - |
 | [“项目设计器”->“应用程序”页 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | 使用此页指定 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目的应用程序设置和属性。 |
 | [“项目设计器”->“应用程序”页 (C#)](../../ide/reference/application-page-project-designer-csharp.md) | 使用此页指定 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目的应用程序设置和属性。 |

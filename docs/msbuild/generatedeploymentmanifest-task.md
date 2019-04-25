@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003344"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 任务
 
@@ -31,7 +31,6 @@ ms.locfileid: "56610315"
 ## <a name="parameters"></a>参数
 
 下表描述了 `GenerateDeploymentManifest` 任务的参数。
-
 
 | 参数 | 说明 |
 |--------------------------| - |

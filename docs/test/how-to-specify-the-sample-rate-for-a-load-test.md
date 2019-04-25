@@ -8,12 +8,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970661"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定采样率
 
@@ -36,19 +36,19 @@ ms.locfileid: "55939445"
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>在运行设置中指定性能计数器采样速率
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
      “负载测试编辑器”随即显示。 其中显示负载测试树。
 
-2.  在负载测试树的“运行设置”文件夹中，选择要为其指定采样率的运行设置。
+2. 在负载测试树的“运行设置”文件夹中，选择要为其指定采样率的运行设置。
 
-3.  在“视图”菜单上选择“属性窗口”。
+3. 在“视图”菜单上选择“属性窗口”。
 
      负载运行设置的类别和属性将显示在“属性”窗口中。
 
-4.  在“采样率”属性中，输入一个时间值以指示负载测试收集性能计数器数据的频率。
+4. 在“采样率”属性中，输入一个时间值以指示负载测试收集性能计数器数据的频率。
 
-5.  更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“采样率”值来运行负载测试。
+5. 更改完此属性后，请选择“文件”菜单上的“保存”。 然后，可以使用新的“采样率”值来运行负载测试。
 
 ## <a name="see-also"></a>请参阅
 

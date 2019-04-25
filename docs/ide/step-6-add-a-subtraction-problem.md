@@ -8,27 +8,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996629"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步骤 6：添加减法问题
 在本教程的第 6 部分中，你将添加一道减法题并了解如何执行以下任务：
 
--   存储做减法的值。
+- 存储做减法的值。
 
--   生成用于提问的随机数字，并确保答案介于 0 和 100 之间。
+- 生成用于提问的随机数字，并确保答案介于 0 和 100 之间。
 
--   更新用于检查答案的方法，使之同时检查新添加的减法题。
+- 更新用于检查答案的方法，使之同时检查新添加的减法题。
 
--   更新计时器的 <xref:System.Windows.Forms.Timer.Tick> 事件处理程序，以便此事件处理程序在时间用完之前会填写出正确答案。
+- 更新计时器的 <xref:System.Windows.Forms.Timer.Tick> 事件处理程序，以便此事件处理程序在时间用完之前会填写出正确答案。
 
 ## <a name="to-add-a-subtraction-problem"></a>添加减法问题
 
-1.  将此减法题的两个整型变量添加到窗体中，并放置在加法题和计时器的整型变量之间。 代码应如下所示。
+1. 将此减法题的两个整型变量添加到窗体中，并放置在加法题和计时器的整型变量之间。 代码应如下所示。
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -37,7 +37,7 @@ ms.locfileid: "55917384"
 
      接下来，您将修改 `StartTheQuiz()` 方法，以便为减法题提供随机值。
 
-2.  将下面的代码添加到“Fill in the subtraction problem”注释之后。
+2. 将下面的代码添加到“Fill in the subtraction problem”注释之后。
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
@@ -58,19 +58,19 @@ IntelliSense 窗口工具提示
 
      在此示例中，您想要选择最后一个重载，因为您可以指定最小值和最大值。
 
-3.  修改 `CheckTheAnswer()` 方法来检查减法答案是否正确。
+3. 修改 `CheckTheAnswer()` 方法来检查减法答案是否正确。
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
      在 Visual C# 中，`&&` 是 `logical and` 运算符。 在 Visual Basic 中，等效的运算符是 `AndAlso`。 这些运算符表示“addend1 和 addend2 的和是否等于 sum NumericUpDown 的值，并且 minuend 减去 subtrahend 是否等于 difference NumericUpDown 的值”。 仅当加法题和减法题的答案都正确时，`CheckTheAnswer()` 方法才会返回 `true`。
 
-4.  将计时器 Tick 事件处理程序的最后部分替换为下面的代码，使其在时间用完时填充正确答案。
+4. 将计时器 Tick 事件处理程序的最后部分替换为下面的代码，使其在时间用完时填充正确答案。
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  保存并运行代码。
+5. 保存并运行代码。
 
      如下图所示，你的程序包括一道减法题：
 
@@ -79,6 +79,6 @@ IntelliSense 窗口工具提示
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   要转到下一个教程步骤，请参阅[步骤 7：添加乘法和除法问题](../ide/step-7-add-multiplication-and-division-problems.md)。
+- 要转到下一个教程步骤，请参阅[步骤 7：添加乘法和除法问题](../ide/step-7-add-multiplication-and-division-problems.md)。
 
--   要返回上一个教程步骤，请参阅[步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。
+- 要返回上一个教程步骤，请参阅[步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6eb5d461045bd555b87b42c7de8e5c669952392d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847740"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的“美工板”修改键
 某些键盘快捷方式没有关联的菜单项，这意味着你无法使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 用户界面来发现这些键盘快捷方式。 下表列出了修改操作（例如调整对象的大小）的快捷方式。

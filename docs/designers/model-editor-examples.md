@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4fd7bf21c214abfab535f954eb404280234ccb6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844198"
 ---
 # <a name="model-editor-examples"></a>模型编辑器示例
 
@@ -21,7 +21,7 @@ ms.locfileid: "55942409"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明​​|
+|Title|说明|
 |-----------|-----------------|
 |[如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)|介绍如何创建基本三维模型。|
 |[如何：修改三维模型的透视点](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|介绍如何修改三维模型的透视点和规模。|

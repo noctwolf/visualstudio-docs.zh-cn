@@ -8,19 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b49f87013671d459c0cd5843b9ecb4c4a0b3ae74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06fd67a62e37b3e498272fcc629b479b50c42944
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436755"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>如何：使用探查器命令行检测独立 .NET Framework 组件，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测独立应用程序的 .NET Framework 组件（如 .exe 或 .dll 文件）以及如何使用探查器收集内存信息。
 
 > [!NOTE]
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
-
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
  若要使用检测方法收集 .NET Framework 组件的内存数据，可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具生成该组件的受检测版本，并使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化分析环境变量。 然后使用 *VSPerfCmd.exe* 工具启动探查器。
 
@@ -40,7 +39,7 @@ ms.locfileid: "56604634"
 
     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
 
-   -   **/tracegc** 和 **/tracegclife** 选项用于初始化环境变量，以便只收集内存分配数据，或同时收集内存分配数据和对象生存期数据。
+   - **/tracegc** 和 **/tracegclife** 选项用于初始化环境变量，以便只收集内存分配数据，或同时收集内存分配数据和对象生存期数据。
 
        |选项|说明|
        |------------|-----------------|
@@ -67,7 +66,6 @@ ms.locfileid: "56604634"
    | [/counter](../profiling/counter.md) **:** `Config` | 从 Config 中所指定的处理器性能计数器收集信息。计数器信息将添加到在每个分析事件中收集的数据中。 |
    | [events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
 
-
 5. 从命令提示符窗口中启动目标应用程序。
 
 ## <a name="control-data-collection"></a>控制数据收集
@@ -75,7 +73,7 @@ ms.locfileid: "56604634"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -88,13 +86,13 @@ ms.locfileid: "56604634"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  关闭目标应用程序。
+1. 关闭目标应用程序。
 
-2.  关闭探查器。 类型：
+2. 关闭探查器。 类型：
 
      **VSPerfCmd /shutdown**
 
-3.  （可选）清除分析环境变量。 类型：
+3. （可选）清除分析环境变量。 类型：
 
      **VSPerfCmd /off**
 

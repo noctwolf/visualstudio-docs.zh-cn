@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Visual Studio 订阅中包含的专业开发权益
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007690"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Visual Studio 订阅中提供的专业开发权益
 
@@ -26,4 +26,4 @@ ms.locfileid: "59018358"
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
 - [MSDN 杂志](vs-msdn.md)
-- [LinkedIn Learning](vs-linkedin-learning.md)
+- [LinkedIn 学习](vs-linkedin-learning.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422926"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法，可以从动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细计时数据、.NET 内存分配数据和 .NET 对象生存期数据。
@@ -21,7 +21,7 @@ ms.locfileid: "56616685"
  本主题介绍如何修改 web.config 配置文件才能检测和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。
 
 > [!NOTE]
->  使用采样分析方法时或要检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模块时，不必修改 *web.config* 文件。
+> 使用采样分析方法时或要检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模块时，不必修改 *web.config* 文件。
 
  web.config 文件的根元素为 configuration 元素。 若要检测和分析动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，必须添加或修改以下元素：
 
@@ -45,11 +45,9 @@ ms.locfileid: "56616685"
 
 3. 将下列属性名称和值添加到 **assemblyBinding** 元素：
 
-
    | 特性名 | 特性值 |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. 添加 **dependentAssembly** 元素作为 **assemblyBinding** 元素的子元素。
 
@@ -59,13 +57,11 @@ ms.locfileid: "56616685"
 
 6. 将下列属性名称和值添加到 **assemblyIdentity** 元素：
 
-
    | 特性名 | 特性值 |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. 添加 **codeBase** 元素作为 **dependentAssembly** 元素的子元素。
 
@@ -100,15 +96,15 @@ ms.locfileid: "56616685"
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>将探查器后续处理步骤添加到 configuration/system.web/compilation 元素
 
-1.  如有必要，请添加 **system.web** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。
+1. 如有必要，请添加 **system.web** 元素作为 **configuration** 元素的子元素；否则，请转到下一步。
 
      **system.web** 元素没有任何属性。 **configuration** 元素只能有一个 **system.web** 子元素。
 
-2.  如有必要，请添加 **compilation** 元素作为 **system.web** 元素的子元素；否则，请转到下一步。
+2. 如有必要，请添加 **compilation** 元素作为 **system.web** 元素的子元素；否则，请转到下一步。
 
      **system.web** 元素只能有一个 **compilation** 子元素。
 
-3.  从 **compilation** 元素中删除任何现有属性，并添加以下属性名称和值：
+3. 从 **compilation** 元素中删除任何现有属性，并添加以下属性名称和值：
 
     |特性名|特性值|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ ms.locfileid: "56616685"
 
 3. 将下列属性名称和值添加到 **add** 元素：
 
-
    | 特性名 | 特性值 |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **值** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. 再添加一个 **add** 元素作为 **appSettings** 元素的子元素。
 
@@ -157,7 +151,6 @@ ms.locfileid: "56616685"
    |**值**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` 是探查器可执行文件的路径。 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
-
 
 ```xml
     <configuration>

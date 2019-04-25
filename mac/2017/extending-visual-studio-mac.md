@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998233"
 ---
 # <a name="extending-visual-studio-for-mac"></a>扩展 Visual Studio for Mac
 
@@ -81,10 +81,10 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 扩展节点包含的路径属性指定它插入的扩展点，在本示例中为 `/MonoDevelop/Ide/Commands/Edit`。 此外，它还充当该命令的父节点。 该命令节点具有以下属性：
 
-*   **id** - 为该命令指定标识符。 命令标识符必须声明为枚举成员，用于将命令连接到命令项。
-*   **_label** - 在菜单中显示的文本。
-*   **_description** - 作为工具栏按钮的工具提示显示的文本。
-*   **defaultHandler** - 指定加强该命令的 `CommandHandler` 类
+* **id** - 为该命令指定标识符。 命令标识符必须声明为枚举成员，用于将命令连接到命令项。
+* **_label** - 在菜单中显示的文本。
+* **_description** - 作为工具栏按钮的工具提示显示的文本。
+* **defaultHandler** - 指定加强该命令的 `CommandHandler` 类
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ public enum DateInserterCommands
 
 若要了解有关可用于开发的区域范围，请参阅 [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference)（扩展树引用）和 [API Overview](http://monodevelop.com/Developers/Articles/API_Overview)（API 概述）。 生成高级扩展包时，另请参阅[开发者文章](http://monodevelop.com/Developers/Articles)。 以下是自定义区域的部分列表：
 
-*   面板
-*   键绑定方案
-*   策略
-*   代码格式化程序
-*   项目文件格式
-*   首选项面板
-*   选项面板
-*   调试器协议
-*   调试器可视化工具
-*   工作区布局
-*   Solution Pad 树节点
-*   源编辑器边距
-*   单元测试引擎
-*   代码生成器
-*   代码片段
-*   目标框架
-*   目标运行时
-*   VCS 后端
-*   重构
-*   执行处理程序
-*   语法突出显示
+* 面板
+* 键绑定方案
+* 策略
+* 代码格式化程序
+* 项目文件格式
+* 首选项面板
+* 选项面板
+* 调试器协议
+* 调试器可视化工具
+* 工作区布局
+* Solution Pad 树节点
+* 源编辑器边距
+* 单元测试引擎
+* 代码生成器
+* 代码片段
+* 目标框架
+* 目标运行时
+* VCS 后端
+* 重构
+* 执行处理程序
+* 语法突出显示
 
 ## <a name="additional-information"></a>其他信息
 

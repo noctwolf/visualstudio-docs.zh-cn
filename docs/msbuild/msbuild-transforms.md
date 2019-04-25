@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414703"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 转换
 转换是指采用一对一的方式将一个项列表转换为另一项列表。 通过转换，不仅项目可以转换项列表，而且目标还可以标识其输入和输出之间的直接映射。 本主题介绍转换以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用转换更有效地生成项目。
@@ -33,7 +33,7 @@ ms.locfileid: "56627254"
 例如，如果 @(RESXFile) 项列表中的项为 Form1.resx、Form2.resx 和 Form3.resx，那么转换列表中的输出为 Form1.resources、Form2.resources 和 Form3.resources。
 
 > [!NOTE]
->  可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML：`@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> 可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML：`@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>使用多个修饰符
  转换表达式可包含多个修饰符，这些修饰符可按任何顺序组合，还可重复使用。 在以下示例中，包含文件的目录的名称会更改，但文件会保留原来的名称和文件扩展名。

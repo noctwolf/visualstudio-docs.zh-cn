@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933611"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 
@@ -149,9 +149,7 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
     - Http POST CRUD
     - 带有参数的 Http 触发器
 
-
 - **计时器** - 按照预定义计划执行清除或其他批处理任务。 此模板采用两个字段：Name 和 schedule（一个具有 6 个字段的 CRON 表达式）。 有关详细信息，请参阅[关于时间的 Azure functions 文章](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **队列触发器** - 这是在消息到达 Azure Storage 队列时会对消息进行响应的函数。 除函数名称之外，此模板还采用一个路径（将从中读取消息的队列名称）和存储帐户连接（包含存储帐户连接字符串的应用设置名称）。 有关详细信息，请参阅[关于队列存储的 Azure functions 文章](/azure/azure-functions/functions-create-storage-queue-triggered-function)。
 

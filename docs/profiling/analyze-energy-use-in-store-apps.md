@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777110"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>收集应用的能量分布曲线数据
 
-1.  在“调试”  菜单中，选择 “启动诊断（不调试）”。
+1. 在“调试”  菜单中，选择 “启动诊断（不调试）”。
 
      ![在诊断中心中选择“能量消耗”](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  选择 **“能耗”** ，然后选择 **“启动”**。
+2. 选择 **“能耗”** ，然后选择 **“启动”**。
 
     > [!NOTE]
     > 启动“能耗”探查器时，可能会看到“用户帐户控制”窗口，要求你提供运行 VsEtwCollector.exe 的权限。 选择 **“是”**。
 
-3.  执行你的应用程序以收集数据。
+3. 执行你的应用程序以收集数据。
 
-4.  若要停止分析，请切回到 Visual Studio (Alt + Tab) 并在“诊断中心”页面上选择 **“停止收集”** 。
+4. 若要停止分析，请切回到 Visual Studio (Alt + Tab) 并在“诊断中心”页面上选择 **“停止收集”** 。
 
      ![停止收集数据](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 

@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824676"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行参数
 
 可以使用 Help Content Manager (HlpCtntMgr.exe) 的命令行参数指定如何部署和管理本地帮助内容。 必须以管理员权限运行此命令行工具的脚本，无法以服务形式运行这些脚本。 可以使用此工具执行以下任务：
 
--   从磁盘或云添加或更新本地帮助内容。
+- 从磁盘或云添加或更新本地帮助内容。
 
--   移除本地帮助内容。
+- 移除本地帮助内容。
 
--   移动本地帮助内容存储区。
+- 移动本地帮助内容存储区。
 
--   以无提示方式添加、更新、移除或移动本地帮助内容。
+- 以无提示方式添加、更新、移除或移动本地帮助内容。
 
 语法：
 

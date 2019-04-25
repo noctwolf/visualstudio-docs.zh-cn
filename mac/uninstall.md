@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971432"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
@@ -48,12 +48,14 @@ ms.locfileid: "58856442"
     ```bash
     cd /location/of/file
     ```
+
 3. 使脚本可执行，并通过 **sudo** 运行它：
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. 最后，删除卸载脚本。
 
 ### <a name="net-core-script"></a>.NET Core 脚本
@@ -68,12 +70,14 @@ ms.locfileid: "58856442"
     ```bash
     cd /location/of/file
     ```
+
 3. 使脚本可执行，并通过 **sudo** 运行它：
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. 最后，删除 .NET Core 卸载脚本。
 
 ## <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
@@ -104,7 +108,6 @@ rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>卸载 Mono SDK (MDK)
 
@@ -195,10 +198,10 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 需要在旧版本手动删除以下项目：
 
-* 删除 Workbooks 应用 `"/Applications/Xamarin Workbooks.app"`
-* 删除 Inspector 应用 `"Applications/Xamarin Inspector.app"`
+* 在 `"/Applications/Xamarin Workbooks.app"` 删除 Workbooks 应用
+* 在 `"Applications/Xamarin Inspector.app"` 删除 Inspector 应用
 * 删除加载项：`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` 和 `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* 删除此处的 Inspector 和支持文件：`/Library/Frameworks/Xamarin.Interactive.framework` 和 `/Library/Frameworks/Xamarin.Inspector.framework`
+* 在 `/Library/Frameworks/Xamarin.Interactive.framework` 和 `/Library/Frameworks/Xamarin.Inspector.framework` 删除 Inspector 和支持文件
 
 ## <a name="uninstall-the-xamarin-profiler"></a>卸载 Xamarin Profiler
 

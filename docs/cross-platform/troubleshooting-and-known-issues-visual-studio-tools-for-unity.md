@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815581"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 
@@ -124,7 +124,7 @@ USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设�
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>报告使用 Visual Studio Tools for Unity 进行调试时 Visual Studio 会冻结
 
-*在 Windows 上：*
+在 Windows 上：
 
 1. 打开 Visual Studio 的新实例。
 
@@ -142,7 +142,7 @@ USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设�
 
     你可能首先需要使“命令”  窗口可见。 在 Visual Studio 中的主菜单上，选择“视图” 、“其他窗口” 、“命令窗口” 。
 
-*在 Mac 上：*
+在 Mac 上：
 
 1. 打开终端并获取 Visual Studio for Mac 的 PID：
 

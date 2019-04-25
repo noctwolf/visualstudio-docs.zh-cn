@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970156"
 ---
 # <a name="list-disassembly-command"></a>“列出反汇编”命令
 开始调试进程，并允许指定如何处理错误。

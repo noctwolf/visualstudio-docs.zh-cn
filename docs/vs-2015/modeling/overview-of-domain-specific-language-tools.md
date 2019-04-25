@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568351"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "54805633"
   
  DSL 工具包含以下工具：  
   
--   项目向导 - 可使用各种解决方案模板帮助你开始开发域特定语言。  
+- 项目向导 - 可使用各种解决方案模板帮助你开始开发域特定语言。  
   
--   图形设计器 - 用于创建和编辑域特定语言定义。  
+- 图形设计器 - 用于创建和编辑域特定语言定义。  
   
--   验证引擎 - 可确保域特定语言定义的格式正确，并在出现问题时显示错误和警告。  
+- 验证引擎 - 可确保域特定语言定义的格式正确，并在出现问题时显示错误和警告。  
   
--   代码生成器 - 获取域特定语言定义作为输入，并产生源代码作为输出。  
+- 代码生成器 - 获取域特定语言定义作为输入，并产生源代码作为输出。  
   
 ## <a name="the-dsl-tools-solution"></a>DSL 工具解决方案  
  域特定设计器向导提供以下解决方案模板：  

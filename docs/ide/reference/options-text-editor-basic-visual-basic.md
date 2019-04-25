@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817783"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
 在“选项”（“工具”菜单）对话框中“文本编辑器”文件夹的“基本”文件夹内，“VB 专用”属性页包含以下属性：
@@ -50,7 +50,6 @@ ms.locfileid: "55925457"
    选择这些选项时，[快速操作](../quick-actions.md)可用于安装 NuGet 包，并为未引用的类型添加 `using` 指令。
 
    ![用于在 Visual Studio 中安装 NuGet 包的快速操作](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Highlighting
 
@@ -82,19 +81,19 @@ ms.locfileid: "55925457"
 
 **整齐排列代码（重新设置格式）** 文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：
 
--   将代码与正确的制表符位置对齐
+- 将代码与正确的制表符位置对齐
 
--   重新确定关键字、变量和对象的大小写，以符合正确的形式
+- 重新确定关键字、变量和对象的大小写，以符合正确的形式
 
--   向 `If...Then` 语句添加缺少的 `Then`
+- 向 `If...Then` 语句添加缺少的 `Then`
 
--   在函数调用中添加括号
+- 在函数调用中添加括号
 
--   在字符串中添加缺少的结束引号
+- 在字符串中添加缺少的结束引号
 
--   重新设置指数表示法格式
+- 重新设置指数表示法格式
 
--   重新设置日期格式
+- 重新设置日期格式
 
 **自动插入最终构造**
 

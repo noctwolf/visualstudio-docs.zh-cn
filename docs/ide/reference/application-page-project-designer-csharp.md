@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791066"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 

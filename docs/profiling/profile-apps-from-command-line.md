@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: b2de537b17b68461c16f886c1eab706d2438ff6c
-ms.sourcegitcommit: 62149c96de0811415e99bb1e0194e76c320e1a1e
+ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "57007494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972404"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>从命令行测量应用程序性能
 
@@ -87,7 +87,3 @@ VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;
 ## <a name="permissions"></a>权限
 
 要分析需要提升权限的应用程序，必须从提升的命令提示符执行操作。
-
-
-
-

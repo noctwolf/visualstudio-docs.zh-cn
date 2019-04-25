@@ -11,19 +11,30 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 568742f1ef59eeb282cdf167096310c658c01c50
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 8931e16751355a7f25c9ab88dbcd554bc7cb0ea7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965573"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>通过 Visual Basic 了解项目和解决方案
 
 在这篇介绍性的文章中，我们将探讨在 Visual Studio 中创建解决方案和项目的含义。 解决方案是一个容器，用于组织一个或多个相关的代码项目，例如，一个类库项目和一个对应的测试项目。 我们会介绍项目的属性和其中包含的一些文件。 此外，我们还会在一个项目中创建对另一项目的引用。
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
+
+::: moniker-end
 
 我们会从头开始构建解决方案和项目，将此作为教学手段来介绍项目的概念。 一般来说，使用 Visual Studio 创建新项目时，很可能会用到 Visual Studio 提供的部分项目模板。
 
