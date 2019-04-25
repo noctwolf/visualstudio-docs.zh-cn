@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821243"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用负载测试分析器在负载测试中查看网页响应时间
 
@@ -25,15 +25,15 @@ ms.locfileid: "55970759"
 
 如果在负载测试中的压力下运行 Web 性能测试，你将能够分析各页的以下信息：
 
--   页面的平均响应时间。
+- 页面的平均响应时间。
 
--   满足页面的响应时间目标的测试迭代次数百分比。
+- 满足页面的响应时间目标的测试迭代次数百分比。
 
--   可以使用负载测试分析器中的表视图或关系图视图来分析网页响应时间：
+- 可以使用负载测试分析器中的表视图或关系图视图来分析网页响应时间：
 
--   在表视图中分析网页响应时间
+- 在表视图中分析网页响应时间
 
--   在关系图视图中分析网页响应时间
+- 在关系图视图中分析网页响应时间
 
 ## <a name="view-response-time-data-in-a-table"></a>在表中查看响应时间数据
 
@@ -43,7 +43,7 @@ ms.locfileid: "55970759"
 
 3. 网格中将显示每页的数据。 通常会显示以下列。
 
-   |列标题|说明​​|
+   |列标题|说明|
    |-|-|
    |**页**|网页的名称。|
    |**方案**|方案的名称。 如果在 Web 性能测试中有多个方案，则这一列很重要。|
@@ -66,7 +66,7 @@ ms.locfileid: "55970759"
 
 ## <a name="view-response-time-data-in-a-graph"></a>在关系图中查看响应时间数据
 
-你还可以在关系图中查看响应时间数据，以了解负载测试期间这些数据随时间的变化情况。 这对于负载模式随测试的运行而增加的情况（例如，当使用单步负载模式时）尤其有用。 有关详细信息，请参阅[编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
+您还可以在关系图中查看响应时间数据，以了解负载测试期间这些数据随时间的变化情况。 这对于负载模式随测试的运行而增加的情况（例如，当使用单步负载模式时）尤其有用。 有关详细信息，请参阅[编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
 在关系图中查看响应时间数据：
 

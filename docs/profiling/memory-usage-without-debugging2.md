@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830618"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>分析不调试的内存使用情况
 
@@ -56,13 +56,13 @@ ms.locfileid: "57873449"
 
 要收集快照，请在要捕获内存数据时选择“拍摄快照”。
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> 关闭诊断会话
+### <a name="BKMK_Close_a_monitoring_session"></a> 关闭诊断会话
 
 若要在不创建报告的情况下监视会话，只需关闭诊断窗口。 要在完成收集或拍摄快照后生成报表，请选择“停止收集”。
 
 ![停止收集](../profiling/media/memuse__stopcollection.png "Stop Collection")
 
-##  <a name="memory-usage-reports"></a>内存使用情况报表
+## <a name="memory-usage-reports"></a>内存使用情况报表
 
 停止收集数据后，“内存使用情况”工具将停止应用并显示“内存使用情况”概述页。
 
@@ -103,7 +103,7 @@ ms.locfileid: "57873449"
 
 - “引用类型”或“引用对象”树显示所选类型或实例引用的对象。
 
-###  <a name="BKMK_Report_tree_filters_"></a>报告树筛选器
+### <a name="BKMK_Report_tree_filters_"></a>报告树筛选器
 
 应用中的许多类型对应用程序开发人员来说并不是很有趣。 快照报表筛选器可以将大多数这些类型隐藏在“托管堆”和“根的路径”树的路径中。
 
@@ -123,7 +123,7 @@ ms.locfileid: "57873449"
 
 这两个链接都会打开同一个报表。 唯一的区别是“托管堆”树的起始排序顺序不同。 大小链接按“非独占大小(字节)”列对报表进行排序。 对象链接按“计数”列对报表进行排序。 可以在报表打开后更改排序列或顺序。
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a>托管堆树（快照详细信息报表）
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a>托管堆树（快照详细信息报表）
  **托管堆**树列出了内存中保存的对象类型。 可以展开类型名称以查看十大类型示例（按大小排列）。 通过选择类型或实例，以显示选定项的“根的路径”和“引用对象”树。
 
  ![托管堆树](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Managed Heap tree")
@@ -138,14 +138,14 @@ ms.locfileid: "57873449"
 |“非独占大小(字节)”|类型实例的大小或单个实例的大小，其中包括所含对象的大小。|
 |**模块**|包含此对象的模块。|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> 根的路径树（快照详细信息报表）
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> 根的路径树（快照详细信息报表）
 “根的路径”树显示引用类型或实例的对象链。 .NET Framework 垃圾回收器仅在释放对某个对象的所有引用后清理该对象的内存。
 
 对于“根的路径”树中的类型，持有对该类型的引用的对象的数量将出现在“引用计数”列中。
 
 ![各类型的根的路径树](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Paths to Root tree for types")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> 引用类型或引用对象树（快照详细信息报表）
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> 引用类型或引用对象树（快照详细信息报表）
 “引用类型”或“引用对象”树显示所选类型或实例引用的对象。
 
 ![实例的引用对象树](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Referenced Objects tree for instances")
@@ -168,7 +168,7 @@ ms.locfileid: "57873449"
 
  ![快照窗格中的差异报表链接](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links to difference report in a snapshot pane")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>托管堆树（快照差异报表）
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>托管堆树（快照差异报表）
 
  **托管堆**树列出了内存中保存的对象类型。 你可以展开类型名称以查看十大类型示例（按大小排列）。 通过选择类型或实例，以显示选定项的“根的路径”和“引用对象”树。
 
@@ -187,7 +187,7 @@ ms.locfileid: "57873449"
 |“非独占大小差异(字节)”|对于类型，主快照和上一个快照之间的所有类型实例大小的差异，其中包括对象中包含的对象的大小。 对于实例，字段是空白的。|
 |**模块**|包含此对象的模块。|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> 根的路径树（快照差异报表）
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> 根的路径树（快照差异报表）
 
 “根的路径”树显示引用类型或实例的对象链。 .NET Framework 垃圾回收器仅在释放对某个对象的所有引用后清理该对象的内存。
 
@@ -195,7 +195,7 @@ ms.locfileid: "57873449"
 
  ![差异报表中的根的路径树](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Paths To Root tree in a diff report")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> 引用类型或引用对象树（快照差异报表）
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> 引用类型或引用对象树（快照差异报表）
 
 “引用类型”或“引用对象”树显示所选类型或实例引用的对象。
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951486"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -77,13 +77,13 @@ ms.locfileid: "58866713"
 
 Azure 提供一系列完整的虚拟机大小。 因为 Visual Studio 是一个功能强大的多线程应用程序，所以需要至少包含 2 个处理器和 7 GB 内存的 VM 大小。 建议 Visual Studio 映像采用下列 VM 大小：
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 有关最新虚拟机大小的详细信息，请参阅 [Azure 中的 Windows 虚拟机大小](/azure/virtual-machines/windows/sizes)。
 
@@ -105,7 +105,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 
 ![通过 Azure 门户 UI 捕获映像](media/capture-vm.png)
 
-*（图 1）通过 Azure 门户 UI 捕获映像。*
+（图 1）通过 Azure 门户 UI 捕获映像。
 
 有关详细信息，请参阅[在 Azure 中创建通用化 VM 的托管映像](/azure/virtual-machines/windows/capture-image-resource)。
 

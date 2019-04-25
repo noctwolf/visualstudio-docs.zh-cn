@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822710"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用编码的 UI 测试日志分析编码的 UI 测试
 
@@ -60,18 +60,18 @@ ms.locfileid: "55948545"
 
 对 QTAgent32.exe.config 文件就地运行编码的 UI 测试并对其进行修改时，可在“测试资源管理器”结果中看到一条输出链接。 日志文件不仅在测试失败时生成，而且在跟踪级别设置为“详细”时也会对成功的测试生成。
 
-1.  在“测试”菜单上，选择“窗口”，然后选择“测试资源管理器”。
+1. 在“测试”菜单上，选择“窗口”，然后选择“测试资源管理器”。
 
-2.  在 **“生成”** 菜单上，选择 **“生成解决方案”**。
+2. 在 **“生成”** 菜单上，选择 **“生成解决方案”**。
 
-3.  在测试资源管理器中，选择想要运行的编码的 UI 测试、打开其快捷菜单，然后选择“运行选定测试”。
+3. 在测试资源管理器中，选择想要运行的编码的 UI 测试、打开其快捷菜单，然后选择“运行选定测试”。
 
      自动测试会运行并指示它们是否通过。
 
     > [!TIP]
     > 要查看测试资源管理器，请选择“测试” > “窗口”，然后选择“测试资源管理器”。
 
-4.  在“测试资源管理器”结果中选择“输出”链接。
+4. 在“测试资源管理器”结果中选择“输出”链接。
 
      ![测试资源管理器中的输出链接](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,7 +79,7 @@ ms.locfileid: "55948545"
 
      ![编码的 UI 测试中的结果和输出链接](../test/media/cuit_htmlactionlog2.png)
 
-5.  选择 UITestActionLog.html 链接。
+5. 选择 UITestActionLog.html 链接。
 
      该日志显示在你的 Web 浏览器中。
 

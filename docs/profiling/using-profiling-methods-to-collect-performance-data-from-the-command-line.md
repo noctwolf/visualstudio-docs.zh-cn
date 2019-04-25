@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831435"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>使用分析方法通过命令行收集性能数据
 选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如进行分析的应用程序的类型、要使用的分析方法以及是以本机还是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 代码编码目标应用程序。
@@ -37,17 +37,17 @@ ms.locfileid: "56624485"
 
  **目标应用程序类型**
 
--   [.NET Framework 独立组件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [.NET Framework 独立组件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [本机独立组件](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [本机独立组件](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [静态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [静态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [动态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [动态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [.NET 服务](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [.NET 服务](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [本机服务](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [本机服务](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>使用 .NET 内存方法收集内存分配数据和对象生存期数据
  分析工具 .NET 内存方法使你可以收集有关 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中的对象生存期的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内存分配数据和信息。

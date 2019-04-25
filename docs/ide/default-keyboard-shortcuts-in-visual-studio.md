@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962036"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -40,22 +40,22 @@ ms.locfileid: "56607403"
 |[调试器上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[其他上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[诊断中心](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a>全局
+## <a name="bkmk_global"></a>全局
 
-###  <a name="bkmk_analyze"></a>分析
+### <a name="bkmk_analyze"></a>分析
 
 |命令|键盘快捷键|
 |--------------| - |
 |分析.向后定位|**Shift+Alt+3**|
 |分析.向前定位|**Shift+Alt+4**|
 
-###  <a name="bkmk_architecture"></a>体系结构
+### <a name="bkmk_architecture"></a>体系结构
 
 |命令|键盘快捷键|
 |--------------| - |
 |体系结构.新建关系图|**Ctrl+\\、Ctrl+N**|
 
-###  <a name="bkmk_build"></a>生成
+### <a name="bkmk_build"></a>生成
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -64,13 +64,13 @@ ms.locfileid: "56607403"
 |生成.编译|**Ctrl+F7**|
 |生成.对解决方案运行代码分析|**Alt+F11**|
 
-###  <a name="bkmk_classview"></a>类视图上下文菜单
+### <a name="bkmk_classview"></a>类视图上下文菜单
 
 |命令|键盘快捷键|
 |--------------| - |
 |类视图上下文菜单.类视图多选项目引用项.属性|**Alt+Enter**|
 
-###  <a name="bkmk_debug"></a>调试
+### <a name="bkmk_debug"></a>调试
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -138,7 +138,7 @@ ms.locfileid: "56607403"
 |调试.监视3|**Ctrl+Alt+W、3**|
 |调试.监视4|**Ctrl+Alt+W、4**|
 
-###  <a name="bkmk_debugger"></a>调试器上下文菜单
+### <a name="bkmk_debugger"></a>调试器上下文菜单
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -146,13 +146,13 @@ ms.locfileid: "56607403"
 |调试器上下文菜单.断点窗口.转到反汇编|**Alt+F9、A**|
 |调试器上下文菜单.断点窗口.转到源代码|**Alt+F9、S**|
 
-###  <a name="bkmk_diagnostics"></a>诊断中心
+### <a name="bkmk_diagnostics"></a>诊断中心
 
 |命令|键盘快捷键|
 |-------------| - |
 |诊断中心.停止收集|**Ctrl+Alt+F2**|
 
-###  <a name="bkmk_edit"></a>编辑
+### <a name="bkmk_edit"></a>编辑
 
 |命令|键盘快捷键|
 |--------------|-|
@@ -211,7 +211,7 @@ ms.locfileid: "56607403"
 |编辑.外侧代码|**Ctrl+K、Ctrl+S**|
 |编辑.取消|**Ctrl+Z**<br /><br /> or<br /><br /> **Alt+Backspace**|
 
-###  <a name="bkmk_editorContext"></a>编辑器上下文菜单
+### <a name="bkmk_editorContext"></a>编辑器上下文菜单
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -222,7 +222,7 @@ ms.locfileid: "56607403"
 |编辑器上下文菜单.代码窗口.切换标头代码文件|**Ctrl+K、Ctrl+O**（字母“O”）|
 |编辑器上下文菜单.代码窗口.查看调用层次结构|**Ctrl+K、Ctrl+T**<br /><br /> or<br /><br /> **Ctrl+K、T**|
 
-###  <a name="bkmk_file"></a>文件
+### <a name="bkmk_file"></a>文件
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -238,7 +238,7 @@ ms.locfileid: "56607403"
 |文件.保存选定项|**Ctrl+S**|
 |文件.在浏览器中查看|**Ctrl+Shift+W**|
 
-###  <a name="bkmk_help"></a>帮助
+### <a name="bkmk_help"></a>帮助
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -247,19 +247,19 @@ ms.locfileid: "56607403"
 |Help.ViewHelp|**Ctrl+F1**|
 |帮助.窗口帮助|**Shift+F1**|
 
-###  <a name="bkmk_loadtest"></a>负载测试
+### <a name="bkmk_loadtest"></a>负载测试
 
 |命令|键盘快捷键|
 |-------------| - |
 |负载测试.跳至计数器窗格|**Ctrl+R、Q**|
 
-###  <a name="bkmk_otherContext"></a>其他上下文菜单
+### <a name="bkmk_otherContext"></a>其他上下文菜单
 
 |命令|键盘快捷键|
 |-------------| - |
 |其他上下文菜单.Microsoft 数据实体设计上下文.添加新关系图|插入|
 
-###  <a name="bkmk_project"></a>项目
+### <a name="bkmk_project"></a>项目
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -271,14 +271,14 @@ ms.locfileid: "56607403"
 |项目.发布选定文件|依次按 Alt+; 和 Alt+P|
 |项目.替换服务器上的选定文件|依次按 Alt+; 和 Alt+R|
 
-###  <a name="bkmk_projectContext"></a>项目和解决方案上下文菜单
+### <a name="bkmk_projectContext"></a>项目和解决方案上下文菜单
 
 |命令|键盘快捷键|
 |--------------| - |
 |项目和解决方案上下文菜单.项.下移|**Alt+向下键**|
 |项目和解决方案上下文菜单.项.上移|**Alt+向上键**|
 
-###  <a name="bkmk_refactor"></a>重构
+### <a name="bkmk_refactor"></a>重构
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -289,7 +289,7 @@ ms.locfileid: "56607403"
 |重构.重命名|**Ctrl+R、Ctrl+R**|
 |重构.重新排列参数|**Ctrl+R、Ctrl+O**（字母“O”）|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a>解决方案资源管理器
+### <a name="bkmk_solutionexplorerGLOBAL"></a>解决方案资源管理器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -297,7 +297,7 @@ ms.locfileid: "56607403"
 |解决方案资源管理器.挂起更改筛选器|**Ctrl+[**、**P**<br /><br /> or<br /><br /> **Ctrl+[**、**Ctrl+P**|
 |解决方案资源管理器.与活动文档同步|**Ctrl+[**、**S**<br /><br /> or<br /><br /> **Ctrl+[**、**Ctrl+S**|
 
-###  <a name="bkmk_team"></a>团队
+### <a name="bkmk_team"></a>团队
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -306,7 +306,7 @@ ms.locfileid: "56607403"
 |团队.Git.转到 Git 提交|**Ctrl+0**（数字“0”）、**Ctrl+O**（字母“O”）<br /><br /> or<br /><br /> **Ctrl+0、O**|
 |团队.团队资源管理器搜索|**Ctrl+'**|
 
-###  <a name="bkmk_TFcontext"></a>Team Foundation 上下文菜单
+### <a name="bkmk_TFcontext"></a>Team Foundation 上下文菜单
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -321,14 +321,14 @@ ms.locfileid: "56607403"
 |Team Foundation 上下文菜单.命令.转到 Web 访问|**Ctrl+0**（数字“0”）、**Ctrl+A**<br /><br /> or<br /><br /> **Ctrl+0、A**|
 |Team Foundation 上下文菜单.命令.转到工作项|**Ctrl+0**（数字“0”）、**Ctrl+W**<br /><br /> or<br /><br /> **Ctrl+0、W**|
 
-###  <a name="bkmk_test"></a>测试
+### <a name="bkmk_test"></a>测试
 
 |命令|键盘快捷键|
 |--------------| - |
 |测试.使用编码的 UI 测试生成器|**Ctrl+\\、Ctrl+C**|
 |测试.使用现有的操作录制|**Ctrl+\\、Ctrl+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a>测试资源管理器
+### <a name="bkmk_testexplorerGLOBAL"></a>测试资源管理器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -338,7 +338,7 @@ ms.locfileid: "56607403"
 |测试资源管理器.运行所有测试|**Ctrl+R、A**|
 |测试资源管理器.运行上下文中的所有测试|**Ctrl+R、T**|
 
-###  <a name="bkmk_tools"></a>工具
+### <a name="bkmk_tools"></a>工具
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -347,7 +347,7 @@ ms.locfileid: "56607403"
 |工具.强制 GC|**Ctrl+Shift+Alt+F12、Ctrl+Shift+Alt+F12**|
 |工具.转到命令行|**Ctrl+/**|
 
-###  <a name="bkmk_view"></a>视图
+### <a name="bkmk_view"></a>视图
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -396,7 +396,7 @@ ms.locfileid: "56607403"
 |视图.放大|**Ctrl+Shift+.**|
 |视图.缩小|**Ctrl+Shift+,**|
 
-###  <a name="bkmk_window"></a>窗口
+### <a name="bkmk_window"></a>窗口
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -427,14 +427,14 @@ ms.locfileid: "56607403"
 |窗口.解决方案资源管理器搜索|**Ctrl+;**|
 |窗口.窗口搜索|**Alt+`**|
 
-###  <a name="bkmk_windowsazure"></a>Azure
+### <a name="bkmk_windowsazure"></a>Azure
 
 |命令|键盘快捷键|
 |--------------| - |
 |WindowsAzure.重试移动服务脚本操作|**Ctrl+Num \*、Ctrl+R**|
 |WindowsAzure.显示移动服务脚本错误详细信息|**Ctrl+Num \*、Ctrl+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>ADO.NET 实体数据模型设计器
+## <a name="adonet-entity-data-model-designer"></a>ADO.NET 实体数据模型设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -449,7 +449,7 @@ ms.locfileid: "56607403"
 |视图.实体数据模型资源浏览器|**Ctrl+1**|
 |视图.实体数据模型映射详细信息|**Ctrl+2**|
 
-##  <a name="class-diagram"></a>类图
+## <a name="class-diagram"></a>类图
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -461,7 +461,7 @@ ms.locfileid: "56607403"
 |编辑.从关系图中移除|**删除**|
 |视图.查看代码|Enter|
 
-##  <a name="coded-ui-test-editor"></a>编码的 UI 测试编辑器
+## <a name="coded-ui-test-editor"></a>编码的 UI 测试编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -472,14 +472,14 @@ ms.locfileid: "56607403"
 |其他上下文菜单.UI 测试编辑器上下文菜单.移动代码|**Ctrl+Alt+C**|
 |其他上下文菜单.UI 测试编辑器上下文菜单.拆分成新方法|**Ctrl+Shift+T**|
 
-##  <a name="dataset-editor"></a>数据集编辑器
+## <a name="dataset-editor"></a>数据集编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|插入|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
-##  <a name="difference-viewer"></a>差异查看器
+## <a name="difference-viewer"></a>差异查看器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -495,7 +495,7 @@ ms.locfileid: "56607403"
 |编辑器上下文菜单.代码窗口.添加注释|**Ctrl+Shift+K**|
 |编辑器上下文菜单.代码窗口.编辑本地文件|**Ctrl+Shift+P**|
 
-##  <a name="dom-explorer"></a>DOM 资源管理器
+## <a name="dom-explorer"></a>DOM 资源管理器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -503,13 +503,13 @@ ms.locfileid: "56607403"
 |DOM 资源管理器.选择元素|**Ctrl+B**|
 |DOM 资源管理器.显示布局|**Ctrl+Shift+I**|
 
-##  <a name="f-interactive"></a>F# 交互
+## <a name="f-interactive"></a>F# 交互
 
 |命令|键盘快捷键|
 |-------------| - |
 |其他上下文菜单.FSI 控制台上下文.取消交互评估|**Ctrl+Break**|
 
-##  <a name="graph-document-editor"></a>关系图文档编辑器
+## <a name="graph-document-editor"></a>关系图文档编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -521,7 +521,7 @@ ms.locfileid: "56607403"
 |体系结构上下文菜单.定向关系图上下文菜单.删除|**删除**|
 |体系结构上下文菜单.定向关系图上下文菜单.重命名|F2|
 
-##  <a name="graphics-diagnostics"></a>图形诊断
+## <a name="graphics-diagnostics"></a>图形诊断
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -535,13 +535,13 @@ ms.locfileid: "56607403"
 |Graphics.ZoomIn|**Shift+Alt+=**|
 |Graphics.ZoomOut|**Shift+Alt+-**|
 
-##  <a name="html-editor"></a>HTML 编辑器
+## <a name="html-editor"></a>HTML 编辑器
 
 |命令|键盘快捷键|
 |-------------| - |
 |其他上下文菜单.HTML 上下文.转到控制器|**Ctrl+M、Ctrl+G**|
 
-##  <a name="html-editor-design-view"></a>HTML 编辑器设计视图
+## <a name="html-editor-design-view"></a>HTML 编辑器设计视图
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -564,7 +564,7 @@ ms.locfileid: "56607403"
 |视图.查看标记|**Shift+F7**|
 |窗口.上一选项卡|**Ctrl+PgUp**|
 
-##  <a name="html-editor-source-view"></a>HTML 编辑器源视图
+## <a name="html-editor-source-view"></a>HTML 编辑器源视图
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -574,13 +574,13 @@ ms.locfileid: "56607403"
 |视图.视图设计器|**Shift+F7**|
 |窗口.上一选项卡|**Ctrl+PgUp**|
 
-##  <a name="layer-diagram"></a>层关系图
+## <a name="layer-diagram"></a>层关系图
 
 |命令|键盘快捷键|
 |-------------| - |
 |编辑.删除|**Shift+Delete**|
 
-##  <a name="managed-resources-editor"></a>托管资源编辑器
+## <a name="managed-resources-editor"></a>托管资源编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -595,7 +595,7 @@ ms.locfileid: "56607403"
 |资源.其他|**Ctrl+6**|
 |资源.字符串|**Ctrl+1**|
 
-##  <a name="merge-editor-window"></a>合并编辑器窗口
+## <a name="merge-editor-window"></a>合并编辑器窗口
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -603,7 +603,7 @@ ms.locfileid: "56607403"
 |Team Foundation 上下文菜单.合并上下文菜单.在结果窗口上设置焦点|**Alt+2**|
 |Team Foundation 上下文菜单.合并上下文菜单.在右侧窗口上设置焦点|**Alt+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，架构比较
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，架构比较
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -614,7 +614,7 @@ ms.locfileid: "56607403"
 |SQL.SSDT 架构比较停止|**Alt+Break**|
 |SQL.SSDT 架构比较写入更新|**Shift+Alt+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，表设计器
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，表设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -625,7 +625,7 @@ ms.locfileid: "56607403"
 |SQL.重命名|F2<br /><br /> or<br /><br /> **Ctrl+R、R**<br /><br /> or<br /><br /> **Ctrl+R、Ctrl+R**|
 |在脚本面板中查看文件|**Shift+Alt+PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 编辑器
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -646,7 +646,7 @@ ms.locfileid: "56607403"
 |TSql 编辑器克隆查询|**Ctrl+Alt+N**|
 |TSql 编辑器数据库组合|**Shift+Alt+PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 编辑器
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -661,13 +661,13 @@ ms.locfileid: "56607403"
 |TSql 编辑器克隆查询|**Ctrl+Alt+N**|
 |TSql 编辑器数据库组合|**Shift+Alt+PgDn**|
 
-##  <a name="page-inspector"></a>Page Inspector
+## <a name="page-inspector"></a>Page Inspector
 
 |命令|键盘快捷键|
 |-------------| - |
 |PageInspector.最小化|**F12**|
 
-##  <a name="query-designer"></a>查询设计器
+## <a name="query-designer"></a>查询设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -680,7 +680,7 @@ ms.locfileid: "56607403"
 |查询设计器.结果|**Ctrl+4**|
 |查询设计器.SQL|**Ctrl+3**|
 
-##  <a name="query-results"></a>查询结果
+## <a name="query-results"></a>查询结果
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -688,7 +688,7 @@ ms.locfileid: "56607403"
 |SQL.查询结果刷新|**Shift+Alt+R**|
 |SQL.查询结果停止|**Alt+Break**|
 
-##  <a name="report-designer"></a>报表设计器
+## <a name="report-designer"></a>报表设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -714,14 +714,14 @@ ms.locfileid: "56607403"
 |编辑.左缩进|**Shift+Tab**|
 |视图.报告数据|**Ctrl+Alt+D**|
 
-##  <a name="sequence-diagram"></a>序列图
+## <a name="sequence-diagram"></a>序列图
 
 |命令|键盘快捷键|
 |--------------| - |
 |体系结构设计器.序列.导航到代码|**F12**|
 |编辑.删除|**Shift+Del**|
 
-##  <a name="settings-designer"></a>设置设计器
+## <a name="settings-designer"></a>设置设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -730,13 +730,13 @@ ms.locfileid: "56607403"
 |编辑.取消选定|**Esc**|
 |视图.查看代码|**F7**|
 
-##  <a name="solution-explorer"></a>“解决方案资源管理器”
+## <a name="solution-explorer"></a>“解决方案资源管理器”
 
 |命令|键盘快捷键|
 |-------------| - |
 |类视图上下文菜单.类视图项目.查看.在 Page Inspector 中查看|**Ctrl+K、Ctrl+G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |命令|键盘快捷键|
 |-------------| - |
@@ -761,13 +761,13 @@ ms.locfileid: "56607403"
 |Team Foundation 上下文菜单.我的工作页正在进行.Tfs 上下文我的工作页新建链接 WI|**Shift+Alt+L**|
 |视图.刷新|**F5**|
 
-##  <a name="test-explorer"></a>测试资源管理器
+## <a name="test-explorer"></a>测试资源管理器
 
 |命令|键盘快捷键|
 |-------------| - |
 |测试资源管理器.打开测试|**F12**|
 
-##  <a name="text-editor"></a>文本编辑器
+## <a name="text-editor"></a>文本编辑器
 
 | 命令 | 键盘快捷键 |
 | - | - |
@@ -884,38 +884,38 @@ ms.locfileid: "56607403"
 | Team Foundation 上下文菜单.批注.Tfs 批注移动下一个区域 | **Alt+PgDn** |
 | Team Foundation 上下文菜单.批注.Tfs 批注移动上一个区域 | **Alt+PgUp** |
 
-##  <a name="uml-activity-diagram"></a>UML 活动图
+## <a name="uml-activity-diagram"></a>UML 活动图
 
 |命令|键盘快捷键|
 |-------------| - |
 |编辑.删除|**Shift+Del**|
 
-##  <a name="uml-class-diagram"></a>UML 类图
+## <a name="uml-class-diagram"></a>UML 类图
 
 |命令|键盘快捷键|
 |-------------| - |
 |编辑.从模型中删除|**Shift+Del**|
 
-##  <a name="uml-component-diagram"></a>UML 组件图
+## <a name="uml-component-diagram"></a>UML 组件图
 
 |命令|键盘快捷键|
 |-------------| - |
 |编辑.从模型中删除|**Shift+Del**|
 
-##  <a name="uml-use-case-diagram"></a>UML 用例图
+## <a name="uml-use-case-diagram"></a>UML 用例图
 
 |命令|键盘快捷键|
 |-------------| - |
 |编辑.从模型中删除|**Shift+Del**|
 
-##  <a name="vc-accelerator-editor"></a>VC 快捷键编辑器
+## <a name="vc-accelerator-editor"></a>VC 快捷键编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
 |编辑.新建快捷键|插入|
 |编辑.键入的下一个键|**Ctrl+W**|
 
-##  <a name="vc-dialog-editor"></a>VC 对话框编辑器
+## <a name="vc-dialog-editor"></a>VC 对话框编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -949,7 +949,7 @@ ms.locfileid: "56607403"
 |格式.测试对话框|**Ctrl+T**|
 |格式.切换辅助线|**Ctrl+G**|
 
-##  <a name="vc-image-editor"></a>VC 图像编辑器
+## <a name="vc-image-editor"></a>VC 图像编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -991,13 +991,13 @@ ms.locfileid: "56607403"
 |图像.放大|**Ctrl+Shift+.**<br /><br /> or<br /><br /> **Ctrl+向上键**|
 |图像.缩小|**Ctrl+Shift+,**<br /><br /> or<br /><br /> **Ctrl+向下键**|
 
-##  <a name="vc-string-editor"></a>VC 字符串编辑器
+## <a name="vc-string-editor"></a>VC 字符串编辑器
 
 |命令|键盘快捷键|
 |-------------| - |
 |编辑.新建字符串|插入|
 
-##  <a name="view-designer"></a>视图设计器
+## <a name="view-designer"></a>视图设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1010,13 +1010,13 @@ ms.locfileid: "56607403"
 |查询设计器.结果|**Ctrl+4**|
 |查询设计器.SQL|**Ctrl+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |命令|键盘快捷键|
 |-------------| - |
 |其他上下文菜单.或设计器上下文.隐藏方法窗格|**Ctrl+1**|
 
-##  <a name="windows-forms-designer"></a>Windows Forms Designer — Windows 窗体设计器
+## <a name="windows-forms-designer"></a>Windows Forms Designer — Windows 窗体设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1045,7 +1045,7 @@ ms.locfileid: "56607403"
 |编辑.向上调整控件大小|**Ctrl+Shift+向上键**|
 |编辑.左缩进|**Shift+Tab**|
 
-##  <a name="work-item-editor"></a>工作项编辑器
+## <a name="work-item-editor"></a>工作项编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1053,7 +1053,7 @@ ms.locfileid: "56607403"
 |编辑.刷新工作项|**F5**|
 |团队.新建链接工作项|**Shift+Alt+L**|
 
-##  <a name="work-item-query-view"></a>工作项查询视图
+## <a name="work-item-query-view"></a>工作项查询视图
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1064,7 +1064,7 @@ ms.locfileid: "56607403"
 |团队.刷新|**F5**|
 |窗口.切换|**Shift+Alt+V**|
 
-##  <a name="work-item-results-view"></a>工作项结果视图
+## <a name="work-item-results-view"></a>工作项结果视图
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1077,7 +1077,7 @@ ms.locfileid: "56607403"
 |团队.刷新|**F5**|
 |窗口.切换|**Shift+Alt+V**|
 
-##  <a name="workflow-designer"></a>工作流设计器
+## <a name="workflow-designer"></a>工作流设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1105,7 +1105,7 @@ ms.locfileid: "56607403"
 |工作流设计器.放大|**Ctrl+Num +**|
 |工作流设计器.缩小|**Ctrl+Num -**|
 
-##  <a name="xaml-ui-designer"></a>XAML 设计器
+## <a name="xaml-ui-designer"></a>XAML 设计器
 
 |命令|键盘快捷键|
 |--------------| - |
@@ -1127,14 +1127,14 @@ ms.locfileid: "56607403"
 |视图.向右移动右边缘|**Ctrl+Shift+Alt+.**|
 |View.ShowPropertyMarkerMenu|**Ctrl+空格键**|
 
-##  <a name="xml-text-editor"></a>XML（文本）编辑器
+## <a name="xml-text-editor"></a>XML（文本）编辑器
 
 |命令|键盘快捷键|
 |--------------| - |
 |XML.启动 XSLT (调试)|**Alt+F5**|
 |XML.启动 XSLT (不调试)|**Ctrl+Alt+F5**|
 
-##  <a name="xml-schema-designer"></a>XML 架构设计器
+## <a name="xml-schema-designer"></a>XML 架构设计器
 
 |命令|键盘快捷键|
 |--------------| - |

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899331"
 ---
 # <a name="draw-shapes-and-paths"></a>绘制形状和路径
 
@@ -21,7 +21,7 @@ ms.locfileid: "55918879"
 
 形状和路径使用矢量图形，因此它们可很好地按高分辨率显示进行缩放。 若要了解有关向量图形的详细信息，请参阅 [什么是向量图形](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [向量图形](http://www.webopedia.com/TERM/V/vector_graphics.html)。
 
-##  <a name="Shape"></a> 绘制形状
+## <a name="Shape"></a> 绘制形状
  可以在“资产”  面板中查找形状。
 
  ![“资产”面板上的“形状”类别](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ ms.locfileid: "55918879"
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> 绘制路径
+## <a name="Path"></a> 绘制路径
  路径是一系列连接的直线和曲线。 使用路径可创建“资产”  面板中未提供的有趣形状。
 
  可以使用线条、笔或铅笔绘制路径。 可以在“工具”  面板中找到这些工具。
@@ -80,12 +80,12 @@ ms.locfileid: "55918879"
 
  使用“选择”工具![选择工具](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png)选择路径。 使用“触笔”工具![触笔工具](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png)，以单击想要在其中添加点的路径上的任意位置。
 
-##  <a name="Convert"></a> 将形状转换为路径
+## <a name="Convert"></a> 将形状转换为路径
  若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。
 
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
-##  <a name="Combine"></a> 合并路径
+## <a name="Combine"></a> 合并路径
  可以将路径和形状合并到单个路径中。
 
  ![合并路径](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ ms.locfileid: "55918879"
 
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
 
-##  <a name="Compound"></a> 创建复合路径
+## <a name="Compound"></a> 创建复合路径
  创建复合路径时，会从结果中减去路径的任何相交部分，生成的路径会采取最底部路径的视觉属性。
 
  可以在创建之后随时分离复合路径。
@@ -107,7 +107,7 @@ ms.locfileid: "55918879"
 
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
 
-##  <a name="Clipping"></a> 创建剪切路径
+## <a name="Clipping"></a> 创建剪切路径
  剪切路径是应用于另一个对象的路径或形状，可隐藏遮蔽对象处于剪切路径之外的部分。
 
  ![剪切路径](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

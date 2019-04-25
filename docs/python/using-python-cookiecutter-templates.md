@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832134"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -100,7 +100,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 | Label | 指定编辑器上方显示的关于变量的内容，而不是变量名称。 |
 | 说明 | 指定编辑控件上显示的工具提示，而不是该变量的默认值。 |
 | URL | 将标签转换为超链接，并使用工具提示显示该 URL。 单击超链接将打开用户默认浏览器，并转到该 URL。 |
-| 选择器 | 允许为变量自定义编辑器。 目前支持以下选择器：<ul><li>`string`:标准文本框，默认用于符串。</li><li>`list`:标准组合框，默认用于列表。</li><li>`yesno`:在 `y` 和 `n` 之间进行选择的组合框，用于字符串。</li><li>`odbcConnection`:具有“...”按钮的文本框，可用于打开数据库连接对话框。</li></ul> |
+| 选择器 | 允许为变量自定义编辑器。 目前支持以下选择器：<ul><li>`string`：标准文本框，默认用于符串。</li><li>`list`：标准组合框，默认用于列表。</li><li>`yesno`：在 `y` 和 `n` 之间进行选择的组合框，用于字符串。</li><li>`odbcConnection`：具有“...”按钮的文本框，可用于打开数据库连接对话框。</li></ul> |
 
 示例:
 

@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821803"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 
 在本教程中，您将生成一个从文件加载图片并将其显示在窗口中的程序。 你将学习如何使用 Windows 窗体设计器拖动控件（如窗体上的按钮和图片框）、设置控件属性，以及如何使用容器来平滑地调整窗体的大小。 您还将开始编写代码。 您将学习如何：
 
--   创建新项目。
+- 创建新项目。
 
--   测试（调试）应用程序。
+- 测试（调试）应用程序。
 
--   向窗体中添加基本控件（如复选框和按钮）。
+- 向窗体中添加基本控件（如复选框和按钮）。
 
--   使用布局在窗体上定位控件。
+- 使用布局在窗体上定位控件。
 
--   向窗体中添加“打开文件”和“颜色”对话框。
+- 向窗体中添加“打开文件”和“颜色”对话框。
 
--   使用 IntelliSense 和代码片段编写代码。
+- 使用 IntelliSense 和代码片段编写代码。
 
--   编写事件处理程序方法。
+- 编写事件处理程序方法。
 
 完成时，程序将类似下图所示：
 
@@ -52,7 +52,7 @@ ms.locfileid: "55941486"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明​​|
+|Title|说明|
 |-----------|-----------------|
 |[步骤 1：创建 Windows 窗体应用程序项目](../ide/step-1-create-a-windows-forms-application-project.md)|首先创建 Windows 窗体应用程序项目。|
 |[步骤 2：运行程序](../ide/step-2-run-your-program.md)|运行您在上一步中创建的 Windows 窗体应用程序。|

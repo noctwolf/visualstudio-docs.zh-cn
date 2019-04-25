@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844037"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>在 XAML 设计器中使用元素
 
-可以使用 XAML 代码或 XAML 设计器向你的应用程序添加控件、布局和形状等元素。 本主题介绍如何在 Visual Studio 或 Blend for Visual Studio 中使用 XAML 设计器中的元素。
+可以在 XAML 中、在代码中或使用 XAML 设计器向应用程序中添加元素（控件、布局和形状）。 本主题介绍如何在 Visual Studio 或 Blend for Visual Studio 中使用 XAML 设计器中的元素。
 
 ## <a name="add-an-element-to-a-layout"></a>将元素添加到布局
 
 布局是调整元素在 UI 中的大小和位置的过程。 若要放置可视元素，必须将这些元素置于布局[面板](/uwp/api/Windows.UI.Xaml.Controls.Panel)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) 类型的集合。 可使用各种 `Panel` 子元素（如 [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas)[StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) 和 [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid)）来充当布局容器以及在页面上放置和排列元素。
 
-默认情况下，`Grid` 面板用作页面或窗体中的顶级布局容器。 可以添加布局面板、控件或顶级页面布局中的其他元素。
+默认情况下，`Grid` 面板用作页面或窗体中的顶级布局容器。 可在顶级页面布局内添加布局面板、控件或其他元素。
 
 若要将元素添加到 XAML 设计器中的布局，请执行以下操作之一：
 
@@ -35,7 +35,7 @@ ms.locfileid: "55931333"
 
 ## <a name="change-the-layering-order-of-elements"></a>更改元素的分层顺序
 
-当 XAML 设计器中的美工板上有两个元素时，其中一个元素将以分层顺序显示于另一个元素之前。 文档大纲窗口中的元素列表底部是最靠前的元素（除了在设置了元素的 ZIndex 属性时）。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。
+当 XAML 设计器中美工板上有两个元素时，一个元素在分层顺序中将显示在另一个元素之前。 文档大纲窗口中的元素列表底部是最靠前的元素（除了在设置了元素的 ZIndex 属性时）。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。
 
 若要更改其分层顺序，请执行以下操作之一：
 
@@ -61,53 +61,53 @@ ms.locfileid: "55931333"
 
 使用菜单命令对齐两个或多个元素的步骤：
 
-1.  选择想要对齐的元素。 可以通过按住 Ctrl 键的同时选择元素来选择多个元素。
+1. 选择要对齐的元素。 可以通过按住 Ctrl 键的同时选择元素来选择多个元素。
 
-2.  在属性窗口中“布局”部分的“HorizontalAlignment”下，选择以下属性之一：“左对齐”、“居中对齐”、“右对齐”或“拉伸对齐”。
+2. 在属性窗口中“布局”部分的“HorizontalAlignment”下，选择以下属性之一：“左对齐”、“居中对齐”、“右对齐”或“拉伸对齐”。
 
-3.  在属性窗口中“布局”部分的“VerticalAlignment”下，选择以下属性之一：“顶部对齐”、“居中对齐”、“底部对齐”或“拉伸对齐”。
+3. 在属性窗口中“布局”部分的“VerticalAlignment”下，选择以下属性之一：“顶部对齐”、“居中对齐”、“底部对齐”或“拉伸对齐”。
 
 若要使用对齐线对齐两个或多个元素，在 XAML 设计器中，在至少包含有两个元素的布局中拖动元素或调整一个元素的大小，以便其边缘与另一个元素对齐。
 
-当边缘对齐时，将显示“对齐边界”以指示对齐方式。 对齐边界是红色的虚线。 仅当启用了“对齐线对齐”  时，才会显示对齐边界。 有关显示对齐边界的美工板图示，请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
+当边缘对齐时，将显示“对齐边界”以指示对齐方式。 对齐边界显示为红色虚线。 仅当启用了“对齐线对齐”  时，才会显示对齐边界。 有关显示对齐边界的美工板图示，请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
 ## <a name="change-an-elements-margins"></a>更改元素的边距
 
-XAML 设计器中的边距决定了美工板上元素周围的空白空间量。 例如，边距指定了元素外边缘与包含该元素的 `Grid` 面板的边界之间的空间量。 边距还指定包含于 `StackPanel` 中的元素之间的空间量。
+XAML 设计器中的边距决定了美工板上元素周围的空白区域的大小。 例如，边距指定元素外边缘与包含该元素的 `Grid` 面板的边界之间空白区域的大。 边距还指定 `StackPanel` 中包含的元素之间空白区域的大小。
 
 在“属性”窗口中更改元素边距的步骤：
 
-1.  选择想要更改边距的元素。
+1. 选择要更改边距的元素。
 
-2.  在属性窗口中的“布局”下，更改任何“边距”属性（“顶部”、“左”、“右”或“底部”）的值（以像素为单位或与设备无关的单位，大约 1/96 英寸）。
+2. 在属性窗口中的“布局”下，更改任何“边距”属性（“顶部”、“左”、“右”或“底部”）的值（以像素为单位或与设备无关的单位，大约 1/96 英寸）。
 
 在美工板中，若要更改元素相对于其布局容器的边距，请在元素处于选中状态且位于布局容器内时，单击元素周围出现的“边距装饰器”。 有关显示边距装饰器的图示，请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
-如果边距装饰器已打开，呈垂直或水平时，则未设置该边距。 如果边距装饰器已关闭，则已设置该边距。
+如果边距装饰器以垂直或水平方向打开，则未设置相应的边距。 如果边距装饰器关闭，则已设置相应的边距。
 
-打开边距装饰器但未设置相反的边距时，将根据元素在美工板中的位置将相反的边距设置为正确的值。 对于相反的边距（如“左侧”和“右侧”边距），将始终至少设置一个属性。
+当打开边距装饰器而未设置相反边距时，请根据美工板中的元素的位置，将相反边距设置为正确的值。 对于相反的边距（如“左侧”和“右侧”边距），将始终至少设置一个属性。
 
 > [!IMPORTANT]
-> 置于某些布局容器中的元素（如 <xref:Windows.UI.Xaml.Controls.Canvas>）没有边距装饰器。 放置于 <xref:Windows.UI.Xaml.Controls.StackPanel> 中的元素有用于左边距和右边距或顶部和底部边距的边距装饰器，具体取决于 `StackPanel` 的方向。
+> 置于某些布局容器内的元素（如 <xref:Windows.UI.Xaml.Controls.Canvas>）没有边距装饰器。 置于 <xref:Windows.UI.Xaml.Controls.StackPanel> 内的元素对于左边距和右边距或上边距和下边距有边距装饰器，具体取决于 `StackPanel` 的方向。
 
 ## <a name="group-and-ungroup-elements"></a>将元素分组和取消分组
 
-对 XAML 设计器中的两个或多个元素进行分组，可创建新的布局容器，并将这些元素置于该容器中。 将两个或多个元素一起置于一个布局容器，让你可轻松地选择、移动和转换组，似乎该组中的元素是一个元素一样。 分组在某种程度上对于标识彼此相关的元素也很有用，如组成导航元素的按钮。 当对元素进行取消分组时，只需删除包含这些元素的布局容器。
+对 XAML 设计器中的两个或更多元素进行分组可创建一个新的布局容器，然后将这些元素置于该容器内。 通过将两个或更多元素一起置于一个布局容器中，可轻松地选择、移动和转换该组，如同该组中的所有元素是一个元素。 对于识别以某种方式相互关联的元素（如组成导航元素的按钮），分组也很有用。 对元素进行取消分组时，只需删除包含这些元素的布局容器即可。
 
 将元素分组到一个新布局容器的步骤：
 
-1. 选择想要分组的元素。 （若要选择多个元素，请在按住 Ctrl 键的同时单击这些元素。）
+1. 选择要分组的元素。 （若要选择多个元素，请在按住 Ctrl 键的同时单击这些元素。）
 
 2. 右键单击选定的元素，指向“分组”，然后单击想要在其中放置该组的布局容器的类型。
 
     > [!TIP]
-    > 如果选择 <xref:Windows.UI.Xaml.Controls.Viewbox><xref:Windows.UI.Xaml.Controls.Border>, 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 来分组元素，则元素将被放置于 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内的一个新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果在这些布局容器的其中之一取消分组，则仅将删除 <xref:Windows.UI.Xaml.Controls.Viewbox><xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，而将保留 <xref:Windows.UI.Xaml.Controls.Grid> 面板。 若要删除 `Grid` 面板，请再次取消分组该元素。
+    > 如果选择 <xref:Windows.UI.Xaml.Controls.Viewbox><xref:Windows.UI.Xaml.Controls.Border>, 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 来分组元素，则元素将被放置于 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内的一个新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果在其中某个布局容器中对元素进行取消分组，则仅删除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，而保留 <xref:Windows.UI.Xaml.Controls.Grid> 面板。 若要删除 `Grid` 面板，请再次对这些元素进行取消分组。
 
 若要将元素取消分组并删除布局，请右键单击想要取消分组的组并单击“取消分组”。 还可以通过右键单击文档大纲窗口中选定的项，然后单击“分组”或“取消分组”，以对元素进行分组或取消分组 。
 
 ## <a name="reset-the-element-layout"></a>重置元素布局
 
-可以通过使用“布局重置”命令还原某个元素特定布局属性的默认值。 通过使用此命令，可以单独或一起重置边距、对齐方式、宽度、高度和元素大小。
+可以通过使用“布局重置”命令还原某个元素特定布局属性的默认值。 通过使用此命令可重置元素的边距、对齐方式、宽度、高度和大小，个别重置或同时全部重置均可。
 
 若要重置元素布局，请在文档大纲窗口或美工板中右键单击该元素，然后选择“布局” > “重置 PropertyName”，其中 PropertyName 是想要重置的属性（或者选择“布局” > “全部重置”，重置该元素的所有布局属性）。
 

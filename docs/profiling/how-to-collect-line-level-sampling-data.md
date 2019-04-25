@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834583"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。
@@ -49,11 +49,11 @@ ms.locfileid: "56624277"
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>关闭托管代码的行级采样
  默认情况下，行级采样处于开启状态。 可以使用以下任一命令来关闭托管代码的行级数据收集：
 
--   分析前，键入 **VSPerfCLREnv /samplelineoff**。 这会影响应用程序和服务。
+- 分析前，键入 **VSPerfCLREnv /samplelineoff**。 这会影响应用程序和服务。
 
      — 或 —
 
--   启动应用程序时，键入 **VSPerfCmd /lineoff \<其他参数>**。
+- 启动应用程序时，键入 **VSPerfCmd /lineoff \<其他参数>**。
 
 ## <a name="see-also"></a>请参阅
 - [配置性能会话](../profiling/configuring-performance-sessions.md)

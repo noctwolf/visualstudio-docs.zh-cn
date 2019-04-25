@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979310"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
@@ -30,7 +30,7 @@ ms.locfileid: "55926549"
 IntelliTrace 数据存储在扩展名为“.iTrace”的文件中。 运行测试时如果某个测试步骤未通过，则可以创建一个 Bug。 包含诊断信息的 IntelliTrace 文件会自动附加到此 Bug 中。
 
 > [!NOTE]
-> IntelliTrace 的诊断数据适配器在成功通过测试时未创建 IntelliTrace 文件。 它只对未通过的测试用例保存文件，或者只有当你提交 Bug 时，它才会保存文件。
+> IntelliTrace 的诊断数据适配器在成功通过测试时未创建 IntelliTrace 文件。 它只对未通过的测试用例保存文件，或者只有当您提交 Bug 时，它才会保存文件。
 
 IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误所需的时间，从而提高调试效率。 此外，由于您可与能在其计算机上复制您的本地会话的其他人共享 IntelliTrace 文件，因此它减少了 Bug 将不可重现的可能性。
 
@@ -51,11 +51,11 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>将数据配置为通过 IntelliTrace 诊断数据适配器进行收集
 
-1.  选择用于收集 IntelliTrace 数据的角色。
+1. 选择用于收集 IntelliTrace 数据的角色。
 
-2.  选择“IntelliTrace”。
+2. 选择“IntelliTrace”。
 
-3.  若要为 Web 客户端角色或 ASP.NET Web 应用程序添加 IntelliTrace，还必须选择“用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理”。
+3. 若要为 Web 客户端角色或 ASP.NET Web 应用程序添加 IntelliTrace，还必须选择“用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理”。
 
      此代理允许你为 IntelliTrace 和测试影响诊断数据适配器收集有关从客户端到 Web 服务器的 http 调用的信息。
 
@@ -64,22 +64,22 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
     >
     > runas /user:domain\name /profile cmd.exe
 
-4.  对“IntelliTrace”选择“配置”可修改默认的 IntelliTrace 设置。
+4. 对“IntelliTrace”选择“配置”可修改默认的 IntelliTrace 设置。
 
      此时将显示用于配置将要收集的数据的对话框。
 
     > [!WARNING]
     > 如果启用收集 IntelliTrace 数据，则收集代码覆盖率数据将不起作用。
 
-5.  选择“常规”选项卡。选择“仅 IntelliTrace 事件”以记录测试时对性能影响最小的重要诊断事件。
+5. 选择“常规”选项卡。选择“仅 IntelliTrace 事件”以记录测试时对性能影响最小的重要诊断事件。
 
      或
 
      选择“IntelliTrace 事件和调用信息”以记录诊断事件以及用于显示调用信息的方法级别跟踪。 在运行测试时，此跟踪级别可能对性能有影响。
 
-6.  若要从正在 Internet Information Services 上运行的 ASP.NET 应用程序中收集数据，请选择“从 Internet Information Services 上运行的 ASP.NET 应用程序中收集数据”。 在 Web 服务器角色上安装并配置你的测试代理。 请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
+6. 若要从正在 Internet Information Services 上运行的 ASP.NET 应用程序中收集数据，请选择“从 Internet Information Services 上运行的 ASP.NET 应用程序中收集数据”。 在 Web 服务器角色上安装并配置你的测试代理。 请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
 
-7.  选择“模块”选项卡。选择“从以下模块以外的所有模块收集数据”并使用“添加”可添加到模块列表中，单击“移除”可移除模块。 通过使用此选项，您可以包含除指定的模块之外的系统上运行的所有模块。
+7. 选择“模块”选项卡。选择“从以下模块以外的所有模块收集数据”并使用“添加”可添加到模块列表中，单击“移除”可移除模块。 通过使用此选项，您可以包含除指定的模块之外的系统上运行的所有模块。
 
      或
 
@@ -88,7 +88,7 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
     > [!NOTE]
     > 如果可能，请选择要监视的特定进程。 建议这样做以便优化性能。
 
-8.  选择“进程”选项卡。选择“从以下进程之外的所有进程收集数据”，然后使用“添加”以添加到进程列表中，使用“移除”以移除进程。 通过使用此选项，您可以包含除指定的进程之外的系统上运行的所有进程。
+8. 选择“进程”选项卡。选择“从以下进程之外的所有进程收集数据”，然后使用“添加”以添加到进程列表中，使用“移除”以移除进程。 通过使用此选项，您可以包含除指定的进程之外的系统上运行的所有进程。
 
      或
 
@@ -101,7 +101,7 @@ IntelliTrace 文件中收集的数据可减少重现和诊断代码中的错误�
 11. （可选）选择“高级”选项卡。接着，选择“用于记录的最大磁盘空间”旁边的箭头，并选择想要留给 IntelliTrace 文件使用的磁盘空间的最大大小。
 
     > [!NOTE]
-    > 如果增大记录的大小，则可能会在你将此记录与测试结果一起保存时出现超时问题。
+    > 如果增大记录的大小，则可能会在您将此记录与测试结果一起保存时出现超时问题。
 
 12. 如果正在使用 Microsoft 测试管理器，请选择“保存”。 如果使用的是 Visual Studio，请选择“确定”。 现在已为测试设置配置并保存了 IntelliTrace 设置。
 

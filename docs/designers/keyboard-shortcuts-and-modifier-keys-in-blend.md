@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844476"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的键盘快捷方式和修改键
 
@@ -37,8 +37,8 @@ ms.locfileid: "55939666"
 
 某些键盘快捷方式没有关联的菜单项，这意味着你无法使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 用户界面来发现这些键盘快捷方式。 以下主题列出了用于修改工具行为或修改操作（例如重设对象大小）的快捷方式：
 
--   [“美工板”修改键](../designers/artboard-modifier-keys-in-blend.md)
+- [“美工板”修改键](../designers/artboard-modifier-keys-in-blend.md)
 
--   [“笔”工具修改键](../designers/pen-tool-modifier-keys-in-blend.md)
+- [“笔”工具修改键](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [“路径选择”工具修改键](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [“路径选择”工具修改键](../designers/direct-selection-tool-modifier-keys-in-blend.md)

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968592"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>“编译”页, 项目设计器 (Visual Basic)
 
@@ -70,11 +70,11 @@ ms.locfileid: "55913036"
 
  **Option strict** 指定是否强制执行严格类型语义。 “Option Strict”为“开启”时，以下情况会导致编译时错误：
 
--   隐式收缩转换
+- 隐式收缩转换
 
--   后期绑定
+- 后期绑定
 
--   隐式键入会导致 `Object` 类型
+- 隐式键入会导致 `Object` 类型
 
 隐式数据类型转换为收缩转换时，将发生隐式收缩转换错误。 有关详细信息，请参阅 [Option Strict 语句](/dotnet/visual-basic/language-reference/statements/option-strict-statement)[隐式转换和显式转换](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)以及[扩大转换和收缩转换](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions)。
 
@@ -91,11 +91,11 @@ ms.locfileid: "55913036"
 Option Strict 个别警告。
 “编译”页的“警告配置”部分具有与 `Option Strict` 开启时引起编译时错误的三种情况相对应的设置。 这些设置如下：
 
--   隐式转换
+- 隐式转换
 
--   晚期绑定；调用可能在运行时失败
+- 晚期绑定；调用可能在运行时失败
 
--   隐式类型；假定为对象
+- 隐式类型；假定为对象
 
 “Option Strict”设置为“开启”时，所有这三个警告配置设置都将被设置为“错误”。 “Option Strict”设置为“关闭”时，所有这三个设置都将被设置为“无”。
 
@@ -127,11 +127,11 @@ Option Strict 个别警告。
 
 仅在以下条件都为 true 的情况下，才可使用此复选框：
 
--   在“编译”页上，“目标 CPU”列表被设置为“任何 CPU”。
+- 在“编译”页上，“目标 CPU”列表被设置为“任何 CPU”。
 
--   在“应用程序”页上，“应用程序类型”列表指定项目为应用程序。
+- 在“应用程序”页上，“应用程序类型”列表指定项目为应用程序。
 
--   在“应用程序”页上，“目标框架”列表指定 .NET Framework 4.5。
+- 在“应用程序”页上，“目标框架”列表指定 .NET Framework 4.5。
 
 **警告配置** 此表列出了生成条件以及“无”、“警告”或“错误”各自对应的通知级别。
 
@@ -158,7 +158,6 @@ Option Strict 个别警告。
 **生成事件** 单击此按钮，访问“生成事件”对话框。 使用此对话框为指定项目的预先生成和后期生成配置说明。 此对话框仅适用于 Visual Basic 项目。 有关详细信息，请参阅[“生成事件”对话框 (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md)。
 
 **高级编译选项** 单击此按钮，访问“高级编译器设置”对话框。 使用“高级编译器设置”对话框，指定项目的高级生成配置属性。 此对话框仅适用于 Visual Basic 项目。 有关详细信息，请参阅[“高级编译器设置”对话框 (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)。
-
 
 ## <a name="see-also"></a>请参阅
 

@@ -11,23 +11,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bd897d6b986b1d0c7a06a36a58eb88ba929bfc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a58a5a1431dbb8ddbc9b23d93928f615e945b3b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834302"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>通过使用检测收集详细计时数据
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法将分析代码注入到模块的副本中。 该代码记录分析运行期间模块中函数的每次进入、退出和函数调用。 在收集有关你的代码的某一部分的详细计时信息，以及了解输入和输出操作对应用程序性能的影响时，该检测方法会十分有用。
 
  你可以使用以下步骤之一来指定检测方法：
 
--   在分析向导的第一页，选择“检测” 。
+- 在分析向导的第一页，选择“检测” 。
 
--   在“性能资源管理器”  工具栏的“方法”  列表中，单击“检测” 。
+- 在“性能资源管理器”  工具栏的“方法”  列表中，单击“检测” 。
 
--   在性能会话的属性对话框的“常规”  页上，选择“检测” 。
+- 在性能会话的属性对话框的“常规”  页上，选择“检测” 。
 
 ## <a name="common-tasks"></a>常见任务
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：

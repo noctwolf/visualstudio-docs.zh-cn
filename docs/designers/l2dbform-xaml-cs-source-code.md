@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12c9515cf6f4841dd1f5ebfb554e00a262b8a160
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893133"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 源代码
 
@@ -23,9 +23,9 @@ ms.locfileid: "55951314"
 
 使用两个私有数据成员将此类与 L2DBForm.xaml 中使用的窗口资源相关联。
 
--   命名空间变量 `myBooks` 初始化为 `"http://www.mybooks.com"`。
+- 命名空间变量 `myBooks` 初始化为 `"http://www.mybooks.com"`。
 
--   用下面的行将构造函数中的成员 `bookList` 初始化为 L2DBForm.xaml 中的 CDATA 字符串：
+- 用下面的行将构造函数中的成员 `bookList` 初始化为 L2DBForm.xaml 中的 CDATA 字符串：
 
     ```csharp
     bookList = (XElement)((ObjectDataProvider)Resources["LoadedBooks"]).Data;
@@ -35,11 +35,11 @@ ms.locfileid: "55951314"
 
 此方法包含下面三个语句：
 
--   第一个条件语句用于输入验证。
+- 第一个条件语句用于输入验证。
 
--   第二个语句根据用户在“添加新书籍”用户界面 (UI) 区域中输入的字符串值新建 <xref:System.Xml.Linq.XElement>。
+- 第二个语句根据用户在“添加新书籍”用户界面 (UI) 区域中输入的字符串值新建 <xref:System.Xml.Linq.XElement>。
 
--   最后一个语句将此新书籍元素添加到 L2DBForm.xaml 中的数据提供程序。 因此，动态数据绑定将用此新项自动更新 UI；不需要用户提供额外的代码。
+- 最后一个语句将此新书籍元素添加到 L2DBForm.xaml 中的数据提供程序。 因此，动态数据绑定将用此新项自动更新 UI；不需要用户提供额外的代码。
 
 ## <a name="onremove-event-handler"></a>OnRemove 事件处理程序
 
@@ -47,13 +47,13 @@ ms.locfileid: "55951314"
 
 但是，移除所选书籍项的核心工作仅通过两个语句完成：
 
--   首先，检索与列表框中当前所选项相关联的书籍元素：
+- 首先，检索与列表框中当前所选项相关联的书籍元素：
 
     ```csharp
     XElement selBook = (XElement)lbBooks.SelectedItem;
     ```
 
--   然后，从数据提供程序中删除此元素：
+- 然后，从数据提供程序中删除此元素：
 
     ```csharp
     selBook.Remove();

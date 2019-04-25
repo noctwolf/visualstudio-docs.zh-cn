@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b985d4609c40c36d15a5ba8dea0a57aff06b2941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950326"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
@@ -70,7 +70,7 @@ ms.locfileid: "58790363"
 |在文件中查找|Ctrl+Shift+F|
 |在文件中替换|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a>代码编辑器
+## <a name="BKMK_CodeEditor"></a>代码编辑器
 
 |命令|快捷键|引入时|
 |-|-|-|

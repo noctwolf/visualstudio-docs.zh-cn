@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 79140e61844ce450db86ba3bd0b0d6577dec3531
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431314"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>为负载测试中的计算机指定计数器集和阈值规则
 
@@ -33,7 +33,7 @@ ms.locfileid: "55946504"
 
 默认情况下，在控制器和代理上收集性能计数器。 有关详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
-你应将正在测试的服务器添加到需要收集其计数器的计算机的列表中，这一点很重要。 然后即可在负载测试期间收集和监视任何重要的系统数据。
+您应将正在测试的服务器添加到需要收集其计数器的计算机的列表中，这一点很重要。 然后即可在负载测试期间收集和监视任何重要的系统数据。
 
 ## <a name="tasks"></a>任务
 

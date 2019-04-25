@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950249"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：创建记录器插件
 
@@ -33,20 +33,20 @@ ms.locfileid: "58415896"
 
 ### <a name="to-create-a-recorder-plug-in"></a>创建记录器插件
 
-1.  打开包含 Web 性能和负载测试项目以及要为之创建记录器插件的 Web 性能测试的解决方案。
+1. 打开包含 Web 性能和负载测试项目以及要为之创建记录器插件的 Web 性能测试的解决方案。
 
-2.  将新的“类库”项目添加到该解决方案中。
+2. 将新的“类库”项目添加到该解决方案中。
 
-3.  在解决方案资源管理器的新类库项目文件夹中，右键单击“引用”文件夹，然后选择“添加引用”。
+3. 在解决方案资源管理器的新类库项目文件夹中，右键单击“引用”文件夹，然后选择“添加引用”。
 
     > [!TIP]
     > 新类库项目文件夹的一个示例为“RecorderPlugins”。
 
      随即显示“添加引用”对话框。
 
-4.  选择“.NET”选项卡。
+4. 选择“.NET”选项卡。
 
-5.  向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”。
+5. 向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”。
 
      将“Microsoft.VisualStudio.QualityTools.WebTestFramework”添加到解决方案资源管理器的“引用”文件夹中。
 
@@ -88,11 +88,11 @@ ms.locfileid: "58415896"
 
 ### <a name="execute-the-recorder-plug-in"></a>执行记录器插件
 
-1.  创建新的 Web 性能测试。
+1. 创建新的 Web 性能测试。
 
      随即显示“启用 WebTestRecordPlugins”对话框。
 
-2.  选中记录器插件对应的复选框，然后选择“确定”。
+2. 选中记录器插件对应的复选框，然后选择“确定”。
 
      在 Web 性能测试完成记录后，将执行新记录器插件。
 

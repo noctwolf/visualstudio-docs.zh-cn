@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957644"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -156,11 +156,11 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 在分析来自命令输出的错误和警报时，Visual Studio 期望 `ErrorRegex` 和 `WarningRegex` 值中的正则表达式使用以下命名组：
 
-- `(?<message>...)`:错误文本
-- `(?<code>...)`:错误代码
-- `(?<filename>...)`:报告其出现错误的文件的名称
-- `(?<line>...)`:报告其出现错误的文件的位置行号。
-- `(?<column>...)`:报告其出现错误的文件的位置列号。
+- `(?<message>...)`：错误文本
+- `(?<code>...)`：错误代码
+- `(?<filename>...)`：报告其出现错误的文件的名称
+- `(?<line>...)`：报告其出现错误的文件的位置行号。
+- `(?<column>...)`：报告其出现错误的文件的位置列号。
 
 例如，PyLint 生成以下形式的警报：
 
@@ -379,7 +379,7 @@ C:  1, 0: Missing module docstring (missing-docstring)
 - 所需的 `Target` 属性为空。
 - 所需的 `TargetType` 属性为空或包含不可识别的值。
 - 所需的 `ExecuteIn` 属性为空或包含不可识别的值。
-- `ErrorRegex` 或指定了 `WarningRegex`，但未指定 `ExecuteIn="output"` 设置。
+- 指定了 `ErrorRegex` 或 `WarningRegex`，但未指定 `ExecuteIn="output"` 设置。
 - 元素中存在不可识别的属性。 例如，可能使用了 `Argumnets`（拼写错误）而不是 `Arguments`。
 
 如果引用未定义的属性，则属性值可能为空。 例如，例如使用 `$(StartupFile)` 标记，但未在项目中定义任何启动文件，则标记解析为空字符串。 此类情况下，可能需要定义一个默认值。 例如，如果尚未在项目属性中指定服务器启动文件，则在 Bottle，Flask 和 Django 项目模板中定义的“Run server”和“Run debug server”命令将默认为 manage.py。

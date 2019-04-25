@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892993"
 ---
 # <a name="shader-designer"></a>着色器设计器
 
@@ -81,7 +81,7 @@ ms.locfileid: "55940342"
 
 下表介绍了“着色器设计器模式”工具栏上的项，按其从左至右的显示顺序列出：
 
-|工具栏项|说明​​|
+|工具栏项|说明|
 |------------------|-----------------|
 |**选择**|启用关系图中节点与边缘的交互。 在此模式下，可以选择节点并移动或删除它们，也可以建立边缘或中断它们。|
 |**平移**|相对于窗口框架移动着色器图。 若要进行平移，请选择设计图面上的一个点，然后将其四处移动。<br /><br /> 在“选择”模式下，可以按住 Ctrl 来暂时激活“平移”模式。|
@@ -199,7 +199,7 @@ ms.locfileid: "55940342"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明​​|
+|Title|说明|
 |-----------|-----------------|
 |[处理游戏和应用的三维资产](../designers/working-with-3-d-assets-for-games-and-apps.md)|概述了可用来处理纹理和图像、三维模型和着色器效果的 Visual Studio 工具。|
 |[图像编辑器](../designers/image-editor.md)|介绍如何使用 Visual Studio 图像编辑器处理纹理和图像。|

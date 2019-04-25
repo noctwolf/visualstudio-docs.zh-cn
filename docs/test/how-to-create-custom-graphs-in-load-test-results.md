@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949947"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在负载测试结果中创建自定义关系图
 
@@ -26,7 +26,7 @@ ms.locfileid: "55932399"
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>创建自定义负载测试结果关系图
 
-1.  在“负载测试”工具栏上选择“添加新关系图”。
+1. 在“负载测试”工具栏上选择“添加新关系图”。
 
      \- 或 -
 
@@ -34,11 +34,11 @@ ms.locfileid: "55932399"
 
      随即显示“请输入关系图名称”对话框。
 
-2.  在“关系图名称”下，键入关系图的名称，然后选择“确定”。
+2. 在“关系图名称”下，键入关系图的名称，然后选择“确定”。
 
      新关系图将出现在“负载测试分析器”中。 新关系图还会出现在当前所选的关系图面板中，并替换该面板中原来显示的关系图。
 
-3.  通过添加计数器来自定义新的关系图。 有关详细信息，请参阅[如何：在关系图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
+3. 通过添加计数器来自定义新的关系图。 有关详细信息，请参阅[如何：在关系图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
 
 ## <a name="see-also"></a>请参阅
 
