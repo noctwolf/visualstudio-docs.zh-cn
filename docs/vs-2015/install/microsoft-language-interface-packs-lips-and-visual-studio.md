@@ -1,5 +1,5 @@
 ---
-title: Microsoft 语言界面包 (Lip) |Microsoft Docs
+title: Microsoft 语言界面包 (LIP) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096499"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 语言界面包 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ ms.locfileid: "54776917"
 ### <a name="support-for-code-pages"></a>代码页支持
  当文本包含不在当前代码页中的字符时，某些 Visual Studio 工具无法正确显示文本。 而是会显示问号或文本损坏。 以下工具或区域会受到影响：
 
--   使用 FTP 部署的站点。
+- 使用 FTP 部署的站点。
 
--   某些控件中的非 ASCII 计算机名。
+- 某些控件中的非 ASCII 计算机名。
 
--   在 Visual Studio 外部运行的命令行工具。
+- 在 Visual Studio 外部运行的命令行工具。
 
--   Visual Basic 迁移向导。
+- Visual Basic 迁移向导。
 
--   ActiveX 控件测试容器。
+- ActiveX 控件测试容器。
 
--   OLE/COM 对象查看器。
+- OLE/COM 对象查看器。
 
--   ISAPI Web 调试工具。
+- ISAPI Web 调试工具。
 
--   具有 HTML 帮助内容的 MFC 应用程序项目。
+- 具有 HTML 帮助内容的 MFC 应用程序项目。
 
--   Visual SourceSafe/SCCI UI 会在存在不兼容的代码页时回退到英语。
+- Visual SourceSafe/SCCI UI 会在存在不兼容的代码页时回退到英语。
 
--   Visual SourceSafe 不支持 Unicode 文件名。
+- Visual SourceSafe 不支持 Unicode 文件名。
 
--   最终用户定义的字符（专用区域）不能用作标记/标识符。
+- 最终用户定义的字符（专用区域）不能用作标记/标识符。
 
--   当 Windows 代码页设置为东亚语言时，拉丁语扩展 B 字符在某些 Visual Studio 工具窗口中无法显示。
+- 当 Windows 代码页设置为东亚语言时，拉丁语扩展 B 字符在某些 Visual Studio 工具窗口中无法显示。
 
--   由多个语言脚本中的字符组成的文本运行可能会对某些字符显示默认字形。
+- 由多个语言脚本中的字符组成的文本运行可能会对某些字符显示默认字形。
 
--   将复杂脚本字符串复制并粘贴到公共控件中可能会导致字符形状丢失。 请改用对应的语言键盘输入文本。
+- 将复杂脚本字符串复制并粘贴到公共控件中可能会导致字符形状丢失。 请改用对应的语言键盘输入文本。
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>正确显示未包含在当前代码页中的字符
 
-1.  单击“开始”，单击“控制面板”，然后打开“区域和语言选项”（或者在 [!INCLUDE[win8](../includes/win8-md.md)] 中为“区域”）。
+1. 单击“开始”，单击“控制面板”，然后打开“区域和语言选项”（或者在 [!INCLUDE[win8](../includes/win8-md.md)] 中为“区域”）。
 
     > [!NOTE]
     >  必须是计算机上的管理员才能执行这些步骤。
 
-2.  单击“高级”选项卡。
+2. 单击“高级”选项卡。
 
-3.  在“选择一种语言，使之与您想使用的非 Unicode 程序的语言版本相匹配”列表中，选择当前所用的语言。
+3. 在“选择一种语言，使之与您想使用的非 Unicode 程序的语言版本相匹配”列表中，选择当前所用的语言。
 
-4.  单击 **“确定”**。
+4. 单击 **“确定”**。
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>更改在 Visual Studio 中用于 UI 文本的语言
  在同一台计算机上安装多个语言版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI 默认为“与 Microsoft Windows 相同”。 此设置指示 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用指定为操作系统显示语言的语言来显示 UI 文本。

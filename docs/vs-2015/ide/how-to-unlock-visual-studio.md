@@ -1,5 +1,5 @@
 ---
-title: 解锁 Visual Studio 2015 |Microsoft Docs"
+title: 解锁 Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072547"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解锁 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以免费使用 Visual Studio 长达 30 天。 登录 IDE 时，可以将试用期延长 90 天。 若要继续使用 Visual Studio，可以解锁 IDE，方法是
 
-1.  使用在线订阅。
+1. 使用在线订阅。
 
-2.  输入产品密钥。
+2. 输入产品密钥。
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>使用在线订阅解锁 Visual studio 的步骤
  使用 MSDN 或者与 Microsoft 帐户、工作或学校帐户相关联的 Visual Studio 在线订阅解锁 Visual Studio：
 
-1.  单击 IDE 右上角的“登录”按钮（或转到“文件”>“帐户设置”，以打开“帐户设置”对话框，然后单击"登录"按钮。）
+1. 单击 IDE 右上角的“登录”按钮（或转到“文件”>“帐户设置”，以打开“帐户设置”对话框，然后单击"登录"按钮。）
 
-2.  对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找 MSDN 订阅或与你的帐户相关联的 Visual Studio Team Services 订阅。
+2. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找 MSDN 订阅或与你的帐户相关联的 Visual Studio Team Services 订阅。
 
 > [!IMPORTANT]
 >  当连接到“团队资源管理器”工具窗口的 Visual Studio Team Services 帐户时，Visual Studio 将自动查找相关联的在线订阅。 当连接到 Visual Studio Team Services 帐户时，可以使用 Microsoft 和工作或学校帐户登录。 如果该用户帐户有在线订阅，则 Visual Studio 将自动为你解锁 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用产品密钥解锁 Visual Studio
 
-1.  选择“文件”>“帐户设置”，打开“帐户设置”对话框并单击“使用产品密钥获得许可”链接。
+1. 选择“文件”>“帐户设置”，打开“帐户设置”对话框并单击“使用产品密钥获得许可”链接。
 
-2.  在提供的空白处输入产品密钥。
+2. 在提供的空白处输入产品密钥。
 
 > [!TIP]
 >  Visual Studio 的预发布版本没有产品密钥。 必须登录 IDE，才能使用预发布版本。
@@ -68,9 +68,9 @@ ms.locfileid: "54774538"
 ### <a name="updating-expired-licenses"></a>更新已过期的许可证
  如果你的订阅已完全过期，你不再具有 Visual Studio 的访问权限，必须：
 
-1.  续订你的订阅 若要查看有关正在使用的许可证的详细信息，请转到“文件”>“帐户设置”对话框，然后在该对话框的右侧查看许可证信息。
+1. 续订你的订阅 若要查看有关正在使用的许可证的详细信息，请转到“文件”>“帐户设置”对话框，然后在该对话框的右侧查看许可证信息。
 
-2.  如果拥有另一个与不同的帐户相关联的订阅，请通过单击“添加帐户...”链接，将该帐户添加到“文件”>“帐户设置”对话框左侧的“所有帐户” 列表中。
+2. 如果拥有另一个与不同的帐户相关联的订阅，请通过单击“添加帐户...”链接，将该帐户添加到“文件”>“帐户设置”对话框左侧的“所有帐户” 列表中。
 
 ## <a name="see-also"></a>请参阅
  [登录 Visual Studio](../ide/signing-in-to-visual-studio.md)

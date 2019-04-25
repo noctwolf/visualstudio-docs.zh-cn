@@ -1,5 +1,5 @@
 ---
-title: 提示和技巧 |Microsoft Docs
+title: 提示和技巧 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096564"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 的提示和技巧
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用本主题介绍的快捷方式可更轻松地在 Visual Studio 中进行导航。 有关更多常规信息，请参阅[Visual Studio 中的键盘快捷键](default-keyboard-shortcuts-in-visual-studio.md)。 有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。
+使用本主题介绍的快捷方式可更轻松地在 Visual Studio 中进行导航。 有关更多常规信息，请参阅 [Visual Studio 中的键盘快捷键](default-keyboard-shortcuts-in-visual-studio.md)。 有关如何优化 Visual Studio 的辅助功能的信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)。
 
--   [窗口管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [窗口管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [窗口快捷方式](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [窗口快捷方式](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Visual Studio 搜索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Visual Studio 搜索](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [编辑器查找](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [编辑器查找](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [代码编辑器](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [代码编辑器](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [工具栏](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [工具栏](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [调试](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [调试](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [应用程序生命周期管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [应用程序生命周期管理](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a>窗口管理
+## <a name="BKMK_WindowMgmt"></a>窗口管理
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ ms.locfileid: "54771174"
 |显示打开的文件列表|Ctrl+Alt+向下键|
 |显示全部浮动窗口|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a>窗口快捷方式
+## <a name="BKMK_WindowShortcuts"></a>窗口快捷方式
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "54771174"
 |启动新实例|Win+Shift+n|
 |在窗口之间切换|Win+n|
 
-##  <a name="BKMK_Search"></a>Visual Studio 搜索
+## <a name="BKMK_Search"></a>Visual Studio 搜索
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ ms.locfileid: "54771174"
 |快速启动范围结果|-   @opt 选项<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 打开文档|
 |在工具选项中搜索|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a>编辑器查找
+## <a name="BKMK_EditorFind"></a>编辑器查找
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ ms.locfileid: "54771174"
 |在文件中查找|Ctrl+Shift+F|
 |在文件中替换|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a>代码编辑器
+## <a name="BKMK_CodeEditor"></a>代码编辑器
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ ms.locfileid: "54771174"
 |在多个查看结果之间导航|F8 和 Shift+F8|
 |在“代码编辑器”窗口和“查看定义”窗口之间切换|Shift+Esc|
 
-##  <a name="BKMK_Toolbars"></a>工具栏
+## <a name="BKMK_Toolbars"></a>工具栏
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ ms.locfileid: "54771174"
 |查找文本框命令模式|键入“>”|
 |新建别名|>alias NewAlias 命令|
 
-##  <a name="BKMK_Debugging"></a>调试
+## <a name="BKMK_Debugging"></a>调试
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ ms.locfileid: "54771174"
 |即时窗口清除缓冲区|>cls|
 |即时窗口打印值|?varname|
 
-##  <a name="BKMK_ALM"></a>应用程序生命周期管理
+## <a name="BKMK_ALM"></a>应用程序生命周期管理
 
 请参阅[键盘快捷键：Visual Studio Online、TFS Web 门户和团队资源管理器](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)。
 

@@ -1,5 +1,5 @@
 ---
-title: 如何： 在 IDE 中移动 |Microsoft Docs
+title: 如何：在 IDE 中移动 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069505"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中移动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ ms.locfileid: "54805414"
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>切换到编辑器中的特定文件
 
--   按 Ctrl+Tab 显示“IDE 导航器”。 按住 CTRL 键并重复按 TAB，直到选中要切换到的文件。
+- 按 Ctrl+Tab 显示“IDE 导航器”。 按住 CTRL 键并重复按 TAB，直到选中要切换到的文件。
 
     > [!TIP]
     >  若要颠倒浏览“活动文件”列表的顺序，请按住 Ctrl+Shift 键，并按 Tab。
 
      \- 或 -
 
--   在编辑器的右上角，选择“活动文件”按钮，然后从列表中选择要切换到的文件。
+- 在编辑器的右上角，选择“活动文件”按钮，然后从列表中选择要切换到的文件。
 
      \- 或 -
 
--   在菜单栏上，依次选择“窗口”、“窗口”。
+- 在菜单栏上，依次选择“窗口”、“窗口”。
 
--   在列表中，选择想要查看的文件，然后选择“激活”。
+- 在列表中，选择想要查看的文件，然后选择“激活”。
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>在 IDE 中的工具窗口间导航
  “IDE 导航器”还允许在 IDE 中打开的工具窗口之间循环切换。 可以使用两个命令中的任一个来访问“IDE 导航器”以便在工具窗口间循环切换，具体取决于你希望的循环切换顺序。 使用 `Window.PreviousToolWindowNav` 可移动到最近访问的文件，使用 `Window.NextToolWindowNav` 可按相反顺序移动。 常规开发设置将 SHIFT + ALT + F7 分配给 `Window.PreviousDocumentWindowNav`，将 ALT + F7 分配给 `Window.NextDocumentWindowNav`。
@@ -86,10 +86,10 @@ ms.locfileid: "54805414"
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>切换到 IDE 中的特定工具窗口
 
--   按 Alt+F7 显示“IDE 导航器”。 按住 ALT 键并重复按 F7，直到选中要切换到的窗口。
+- 按 Alt+F7 显示“IDE 导航器”。 按住 ALT 键并重复按 F7，直到选中要切换到的窗口。
 
     > [!TIP]
     >  若要颠倒浏览“活动工具窗口”列表的顺序，请按住 Shift+Alt 键，并按 F7。
 
 ## <a name="see-also"></a>请参阅
- [自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)[默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)
+ [自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md) [默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)
