@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d4895da5247cbfba2263b3b298850086ed16c9b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442467"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54761438"
 VSPerfCmd.exe **PF** 选项将采样的分析事件设置为页面错误，还可以选择将采样间隔内的页面错误数从默认值 10 改为其他值。  
   
 > [!NOTE]
->  PF 不能用于 64 位系统。  
+> PF 不能用于 64 位系统。  
   
  **注意：** 64 位计算机上不支持 PF。只能在包含 **Launch** 或 **Attach** 选项的命令行中使用 **PF**。  
   

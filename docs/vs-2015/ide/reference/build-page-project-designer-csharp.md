@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256ceb2e1a40d41798ea8dd38757b447221fab16
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 99fb00ded29b9d0764f04d5062a7ee971954fbf7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433773"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59658352"
  通过以下选项，可选择要显示或修改的配置和平台。  
   
 > [!NOTE]
->  使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示这些选项。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+> 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示这些选项。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **配置**  
  指定要显示或修改的配置设置。 设置可以是“活动(调试)”（默认设置）、“调试”、“发布”或“所有配置”。  

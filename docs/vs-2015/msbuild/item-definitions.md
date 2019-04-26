@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433590"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090754"
  在 ItemDefinitionGroup 中定义的项元数据仅是默认元数据的声明。 除非定义一个使用 ItemGroup 包含元数据值的项，否则元数据不适用。  
   
 > [!NOTE]
->  在本主题的诸多示例中，尽管显示了 ItemDefinitionGroup 元素，但为清楚起见，省略了相应的 ItemGroup 定义。  
+> 在本主题的诸多示例中，尽管显示了 ItemDefinitionGroup 元素，但为清楚起见，省略了相应的 ItemGroup 定义。  
   
  ItemGroup 中显式定义的元数据优先于 ItemDefinitionGroup 中的元数据。 ItemDefinitionGroup 中的元数据仅应用于 ItemGroup 中未定义的元数据。 例如:  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090754"
  在本例中，默认元数据“m”应用于项“i”，这是由于项“i”没有显式定义元数据“m”。 但是，默认元数据“n”无法应用于项“i”，这是由于元数据“n”已经由项“i”定义。  
   
 > [!NOTE]
->  XML 元素和参数名均区分大小写。 项元数据和项\/属性名均不区分大小写。 因此，应将名称中仅大小写不同的 ItemDefinitionGroup 项视作同一个 ItemGroup。  
+> XML 元素和参数名均区分大小写。 项元数据和项\/属性名均不区分大小写。 因此，应将名称中仅大小写不同的 ItemDefinitionGroup 项视作同一个 ItemGroup。  
   
 ## <a name="value-sources"></a>值源  
  ItemDefinitionGroup 中定义的元数据的值可能来自许多不同的源，如下所示：  
@@ -83,7 +83,7 @@ ms.locfileid: "60090754"
 - CDATA 节 \<\!\[CDATA\[此处的所有内容均未分析\]\]\>  
   
 > [!NOTE]
->  ItemGroup 中的项元数据在 ItemDefinitionGroup 元数据声明中无用，这是因为已在 ItemGroup 元素之前处理 ItemDefinitionGroup 元素。  
+> ItemGroup 中的项元数据在 ItemDefinitionGroup 元数据声明中无用，这是因为已在 ItemGroup 元素之前处理 ItemDefinitionGroup 元素。  
   
 ## <a name="additive-and-multiple-definitions"></a>累加性和多个定义  
  当添加定义或使用多个 ItemDefinitionGroup 时，请记住以下几点：  
@@ -128,7 +128,7 @@ ms.locfileid: "60090754"
  在本例中，元数据“m”先前定义的值 \(m1\) 被添加至新值 \(m2\)，因此最终值为“m1;m2”。  
   
 > [!NOTE]
->  在相同的 ItemDefinitionGroup 中也可能出现这种情况。  
+> 在相同的 ItemDefinitionGroup 中也可能出现这种情况。  
   
  当替代先前定义的元数据时，最新规范优先。 在下列示例中，元数据“m”的最终值从“m1”变为“m1a”。  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090754"
  在这种情况下，仅当“Configuration”属性的值为“Debug”时，才包括项“i”上的默认元数据“m1”。  
   
 > [!NOTE]
->  在条件中仅支持本地元数据引用。  
+> 在条件中仅支持本地元数据引用。  
   
  对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项\-。 例如:  
   
