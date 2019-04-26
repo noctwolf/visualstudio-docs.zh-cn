@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445618"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>演练：创建内联任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "60061588"
     `Hello, world!`  
   
    > [!NOTE]
-   >  如果未显示问候消息，请尝试再次保存项目文件，然后运行 Hello 任务。  
+   > 如果未显示问候消息，请尝试再次保存项目文件，然后运行 Hello 任务。  
   
    通过在代码编辑器和“命令提示符窗口”之间进行交替，可更改项目文件并快速查看结果。  
   

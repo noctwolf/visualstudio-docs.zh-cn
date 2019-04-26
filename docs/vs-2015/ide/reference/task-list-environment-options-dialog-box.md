@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410038"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“任务列表”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59651651"
  选中后，任何时候从“任务列表”删除用户任务时都会显示一个消息框，用来确认删除。 默认情况下选择此选项。  
   
 > [!NOTE]
->  若要删除任务注释，使用该链接查找注释，然后将其从你的代码中删除。  
+> 若要删除任务注释，使用该链接查找注释，然后将其从你的代码中删除。  
   
  仅显示文件名  
  选中后，“任务列表”的“文件”列只显示要进行编辑的文件名，而不是其完整路径。  
@@ -53,7 +53,7 @@ ms.locfileid: "59651651"
  显示标记列表，并允许你添加或删除自定义标记。 注释标记在 Visual C# 和 Visual C++ 中要区分大小写，但在 Visual Basic 中不区分大小写。  
   
 > [!NOTE]
->  如果未按标记在“标记列表”中显示的样子键入所需标记，那么注释任务不会在“任务列表”中显示。  
+> 如果未按标记在“标记列表”中显示的样子键入所需标记，那么注释任务不会在“任务列表”中显示。  
   
  Priority  
  设置使用所选标记的任务的优先级。 将在“任务列表”中为以此标记开头的任务注释自动分配指定的优先级。  
@@ -71,7 +71,7 @@ ms.locfileid: "59651651"
  单击可使用在“名称”和“优先级”字段中输入的值更改现有标记。  
   
 > [!NOTE]
->  无法重命名或删除默认注释标记，但可以更改其优先级别。  
+> 无法重命名或删除默认注释标记，但可以更改其优先级别。  
   
 ## <a name="see-also"></a>请参阅  
  [使用任务列表](../../ide/using-the-task-list.md)   
