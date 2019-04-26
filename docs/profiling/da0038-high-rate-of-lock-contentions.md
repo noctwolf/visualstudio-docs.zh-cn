@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab09f43d5c665067786fc502137902eee846d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba95cde967f428717be852dad785233eb96cb290
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444880"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率高
 
@@ -46,7 +46,7 @@ ms.locfileid: "56654134"
  分析运行期间采用的测量值表明锁争用过高时，将触发此规则。 锁争用将延迟执行等待锁的线程。 即使是在低端硬件上运行的单元测试或负载测试中的少量锁争用，也应进行调查。
 
 > [!NOTE]
->  当分析数据中报告的锁争用率过高时，将触发[DA0039：锁争用率高](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告消息，而不不会触发此信息性消息。
+> 当分析数据中报告的锁争用率过高时，将触发[DA0039：锁争用率高](../profiling/da0039-very-high-rate-of-lock-contentions.md)警告消息，而不不会触发此信息性消息。
 
 ## <a name="how-to-investigate-a-warning"></a>如何调查警告
  双击消息导航到分析数据的[“标记”](../profiling/marks-view.md)视图。  查找 **.NET CLR LocksAndThreads\Contention Rate / sec** 列。 确定是否存在特定阶段的程序执行，其中锁争用高于其他阶段。
