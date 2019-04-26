@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946916"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单签名
 
@@ -39,43 +39,43 @@ ms.locfileid: "58790844"
 
 ## <a name="sign-using-a-certificate"></a>使用证书签名
 
-1.  转到项目属性窗口（右键单击“解决方案资源管理器”中的项目节点，然后选择“属性”）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。
+1. 转到项目属性窗口（右键单击“解决方案资源管理器”中的项目节点，然后选择“属性”）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。
 
-2.  单击“从存储中选择”按钮。
+2. 单击“从存储中选择”按钮。
 
      “选择证书”对话框将会出现并显示 Windows 证书存储中的内容。
 
     > [!TIP]
     > 如果单击“单击此处查看证书属性”，将会出现“证书详细信息”对话框。 此对话框中包括有关证书的详细信息以及其他选项。 可以单击“证书”查看其他帮助信息。
 
-3.  选择要用于对清单进行签名的证书。
+3. 选择要用于对清单进行签名的证书。
 
-4.  还可以在“时间戳服务器 URL”文本框中指定时间戳服务器的地址。 此服务器提供一个时间戳，用于指定对清单进行签名的时间。
+4. 还可以在“时间戳服务器 URL”文本框中指定时间戳服务器的地址。 此服务器提供一个时间戳，用于指定对清单进行签名的时间。
 
 ## <a name="sign-using-an-existing-key-file"></a>使用现有密钥文件签名
 
-1.  在“签名”页上，选中“为 ClickOnce 清单签名”复选框。
+1. 在“签名”页上，选中“为 ClickOnce 清单签名”复选框。
 
-2.  单击“从文件选择”按钮。
+2. 单击“从文件选择”按钮。
 
      “选择文件”对话框随即出现。
 
-3.  在“选择文件”对话框中，浏览到要使用的密钥文件 (.pfx) 的位置，然后单击“打开”。
+3. 在“选择文件”对话框中，浏览到要使用的密钥文件 (.pfx) 的位置，然后单击“打开”。
 
     > [!NOTE]
     > 此选项仅支持具有 .pfx 扩展名的文件。 如果有其他格式的密钥文件或证书，请将其存储在 Windows 证书存储区中并选择前面的过程中描述的证书。 选定证书的用途应该包括代码签名。
 
      “输入密码以打开文件”对话框随即出现。 （如果 .pfx 文件已经存储在 Windows 证书存储中或没有密码保护，则不会提示输入密码。）
 
-4.  输入访问密钥文件的密码，然后按 Enter。
+4. 输入访问密钥文件的密码，然后按 Enter。
 
 ## <a name="sign-using-a-test-certificate"></a>使用测试证书签名
 
-1.  在“签名”页上，选中“为 ClickOnce 清单签名”复选框。
+1. 在“签名”页上，选中“为 ClickOnce 清单签名”复选框。
 
-2.  若要创建用于测试的新证书，请单击“创建测试证书”按钮。
+2. 若要创建用于测试的新证书，请单击“创建测试证书”按钮。
 
-3.  在“创建测试证书”对话框中，输入密码以帮助保护测试证书的安全。
+3. 在“创建测试证书”对话框中，输入密码以帮助保护测试证书的安全。
 
 ## <a name="generate-unsigned-manifests"></a>生成未签名的清单
 
@@ -88,24 +88,24 @@ ms.locfileid: "58790844"
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>生成未签名的清单并将所有文件包含在生成的哈希中
 
-1.  若要生成包含哈希中所有文件的未签名清单，必须首先将应用程序与签名的清单一起发布。 因此，应首先按照上述过程之一为 ClickOnce 清单签名，然后再发布应用程序。
+1. 若要生成包含哈希中所有文件的未签名清单，必须首先将应用程序与签名的清单一起发布。 因此，应首先按照上述过程之一为 ClickOnce 清单签名，然后再发布应用程序。
 
-2.  在“签名”页上，清除“为 ClickOnce 清单签名”复选框。
+2. 在“签名”页上，清除“为 ClickOnce 清单签名”复选框。
 
-3.  重置发布版本，以使应用程序仅有一个版本可用。 默认情况下，每次发布应用程序时，Visual Studio 都会自动递增发布版本的版本号。 有关详细信息，请参阅[如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
+3. 重置发布版本，以使应用程序仅有一个版本可用。 默认情况下，每次发布应用程序时，Visual Studio 都会自动递增发布版本的版本号。 有关详细信息，请参阅[如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)。
 
-4.  发布应用程序。
+4. 发布应用程序。
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>生成未签名的清单并从生成的哈希中排除一个或多个文件
 
-1.  在“签名”页上，清除“为 ClickOnce 清单签名”复选框。
+1. 在“签名”页上，清除“为 ClickOnce 清单签名”复选框。
 
-2.  打开“应用程序文件”对话框，对于要从生成的哈希中排除的文件，请将“哈希”设置为“排除”。
+2. 打开“应用程序文件”对话框，对于要从生成的哈希中排除的文件，请将“哈希”设置为“排除”。
 
     > [!NOTE]
     > 从哈希中排除文件会将 ClickOnce 配置为禁用对清单进行自动签名，这样便无需首先将应用程序与签名的清单一起发布（如上述过程所述）。
 
-3.  发布应用程序。
+3. 发布应用程序。
 
 ## <a name="see-also"></a>请参阅
 

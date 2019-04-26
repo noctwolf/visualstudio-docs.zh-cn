@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 有关在 MPN 中提供的订阅、应用的规则以及提供的订阅数的详细信息。
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945396"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
@@ -43,7 +43,6 @@ ms.locfileid: "56843152"
 | 只拥有白银资格的合作伙伴可获得的最大权益                   | 拥有至少一项黄金资格的合作伙伴可获得的最大权益               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 每个国家/地区可获得 25 个 Visual Studio Enterprise 订阅；全球共可获得 75 个          | 每个国家/地区可获得 50 个 Visual Studio Enterprise 订阅；全球共可获得 150 个         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>购买 Action Pack 的合作伙伴可获得的订阅数
 具备资格的合作伙伴不能购买 Action Pack。 每个合作伙伴只能购买一个 Action Pack。

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6407102230141ab75e819f32f03eb6acad94a004
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892443"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>使用 LINQ to XML 的 WPF 数据绑定示例
 
@@ -21,7 +21,7 @@ ms.locfileid: "55951639"
 
 ## <a name="in-this-section"></a>本节内容
 
-|主题|说明​​|
+|主题|说明|
 |-----------|-----------------|
 |[如何：生成并运行 LinqToXmlDataBinding 示例](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|以分步说明的形式，介绍如何创建、填充和生成此示例的 Visual Studio 项目。|
 |[演练：LinqToXmlDataBinding 示例](../designers/walkthrough-linqtoxmldatabinding-example.md)|介绍该项目的主要源文件，并对在代码中将 LINQ to XML 用于数据绑定的方式进行说明。|

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975530"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>如何：向类图添加注释
 
@@ -31,9 +31,9 @@ ms.locfileid: "55970538"
 
 ## <a name="to-add-a-comment"></a>添加注释
 
-1.  将注释从“类设计器工具箱”拖动到类图。
+1. 将注释从“类设计器工具箱”拖动到类图。
 
-2.  单击关系图上的新注释形状，并键入所需文本。
+2. 单击关系图上的新注释形状，并键入所需文本。
 
 ## <a name="see-also"></a>请参阅
 

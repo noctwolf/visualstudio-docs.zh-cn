@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: 如果别名或友好名称已被使用，登录可能会失败
 searchscope: VS Subscription
-ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946159"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
@@ -51,7 +51,6 @@ ms.locfileid: "58195146"
     > [!div class="mx-imgBorder"]
     > ![“订阅”菜单](_img//vlsc/vlsc-subscriptions.png)
 
-
 3. 单击与 Visual Studio 订阅相关联的“协议编号”。
 
     > [!div class="mx-imgBorder"]
@@ -82,21 +81,23 @@ ms.locfileid: "58195146"
 
 由于欢迎电子邮件无法成功发送给订阅者，请将以下邮件复制并粘贴到电子邮件中并发送给订阅者。 针对每个订阅者将 ％WORD％ 替换为适当的信息。
 
------------ 复制以下内容 (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-%SUBSCRIBER NAME% 你好
+Hello %SUBSCRIBER NAME%
 
-已向你分配 Visual Studio 订阅。 请访问 https://my.visualstudio.com ，并使用 %DIRECTORY ADDRESS% 地址登录，以激活和访问你的订阅。
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-如果遇到问题，请联系支持团队 (https://visualstudio.microsoft.com/subscriptions/support/))。
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-在页面底部，选择以下内容：
-   - 帐户、订阅和账单支持
-   - 从问题中选择订阅登录支持
-   - 选择相应的国家/地区
-   - 选择所需的辅助支持选项
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ 结束复制 -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>将工作或学校帐户定义为个人帐户
 
@@ -127,35 +128,37 @@ ms.locfileid: "58195146"
 
 在上述情况中，订阅者将收到“欢迎电子邮件”，但由于存在别名，他们可能会发现自己无法登录。  你可以使用以下文本通知上述步骤中的订阅者，并根据需要推荐支持选项。  针对每个订阅者将 ％WORD％ 替换为适当的信息。
 
------------ 复制以下内容 (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-%SUBSCRIBER NAME% 你好
+Hello %SUBSCRIBER NAME%
 
-我们已向你分配了 Visual Studio 订阅，你可以按照欢迎电子邮件的指示登录 https://my.visualstudio.com 。  虽然这是使用权益的正确网站，但我们的组织要求你在访问该网站之前执行一些额外步骤。  请按照以下说明帮助你创建一个与我们的公司电子邮件地址绑定的“Microsoft帐户”。  完成这些步骤后，可使用你的电子邮件地址来访问订阅权益。
-1. 访问 https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. 单击右侧的“创建新的 Microsoft 帐户”
+2. Click Create new Microsoft Account on the right hand side
 
-3. 填写此表单：
-   - 在 someone@example.com 框中填写公司电子邮件地址
-   - 输入密码
-   - 选择促销首选项
-   - 单击“下一步”
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. 完成帐户验证步骤
+4. Complete the account validation steps
 
-5. 如有必要，完成 Visual Studio 个人资料
+5. If necessary, complete the Visual Studio profile
 
-6. 你现在应可看到你的权益
+6. You should now see your benefits
 
-注意:以后访问 https://my.visualstudio.com 时，系统可能会提示你选择想要使用的帐户（例如，“工作或学校帐户”或“个人帐户”）。  执行上述步骤后，你将需要利用“个人帐户”选项。
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-如果遇到问题，请联系支持团队 (https://visualstudio.microsoft.com/subscriptions/support/))。
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-在页面底部，选择以下内容：
-   - 帐户、订阅和账单支持
-   - 从问题中选择订阅登录支持
-   - 选择相应的国家/地区
-   - 选择所需的辅助支持选项
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ 结束复制 -----------
+----------- End Copy -----------
+```

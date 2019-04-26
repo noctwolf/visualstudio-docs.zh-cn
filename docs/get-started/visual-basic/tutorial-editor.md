@@ -12,19 +12,30 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af730ae4d5b358eab223e2a5a8288daaf632071
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972161"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
 在这个 10 分钟的 Visual Studio 代码编辑器简介中，我们会向文件添加代码，了解 Visual Studio 编写、导航和了解代码的简便方法。
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
+
+::: moniker-end
 
 本文假定你已熟悉 Visual Basic。 如果不熟悉，建议先浏览 [Visual Studio 中的 Visual Basic 入门](../../get-started/visual-basic/tutorial-console.md)。
 
@@ -105,7 +116,7 @@ Visual Studio 提供了实用的代码片段，可用于快速方便地生成常
                Select word
    ```
 
-1. 我们现在没有使用 `morewords` 数组，但稍后可能会用到，所以我们不想彻底删除它。 那我们就来为这些行加上注释。 选择整个 `morewords` 定义直到结束花括号，然后选择工具栏上的“为选定行添加注释”。 如果想要使用键盘，请按 Ctrl+K、Ctrl+C。
+1. 我们现在没有使用 `morewords` 数组，但稍后可能会用到，所以我们不想彻底删除它。 那我们就来为这些行加上注释。 选择整个 `morewords` 定义直到结束花括号，然后选择工具栏上的“为选定行添加注释”。 如果想要使用键盘，请按 Ctrl+K, Ctrl+C。
 
    ![“添加注释”按钮](media/tutorial-comment-out.png)
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903868"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C++
 

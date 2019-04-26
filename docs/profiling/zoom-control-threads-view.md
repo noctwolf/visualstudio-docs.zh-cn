@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960155"
 ---
 # <a name="zoom-control-threads-view"></a>缩放控件（线程视图）
 缩放控件是一个滑块，用于在时间线上进行放大和缩小操作，以便于你关注特定的感兴趣的区域。 因为此控件放大时间线视图的中心位置，所以在放大之前将感兴趣的区域移到中心位置。

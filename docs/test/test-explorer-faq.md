@@ -15,17 +15,17 @@ ms.workload:
 author: kendrahavens
 manager: jillfra
 ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429437"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
 ## <a name="dynamic-test-discovery"></a>动态测试发现
 
-**测试资源管理器未发现动态定义的测试。（例如，理论、自定义适配器、自定义特征和 #ifdef 等）如何发现这些测试？
+**测试资源管理器未发现动态定义的测试。（例如，理论、自定义适配器、自定义特征和 #ifdef 等）如何发现这些测试？**
 
 请生成项目，并确保在“工具” > “选项” > “测试”中打开基于程序集的发现。
 
@@ -105,7 +105,7 @@ Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些
 
 所有测试项目必须在其 csproj 中包含各自的 .NET 测试适配器 NuGet 引用。 如果未包含，在生成之后启动测试适配器扩展的发现或用户尝试运行所选测试时，项目中将显示以下测试输出：
 
-测试项目 {} 不引用任何 .NET NuGet 适配器。测试发现或执行可能不适用于此项目。建议在解决方案的每个 .NET 测试项目中引用 NuGet 测试适配器。
+测试项目 {} 不引用任何 .NET NuGet 适配器。测试发现或执行可能不适用于此项目。建议在解决方案的每个 .NET 测试项目中引用 NuGet 测试适配器。**
 
 项目需要使用测试适配器 NuGet 包，而不使用测试适配器扩展。 该需求极大地提高了性能，并通过持续集成减少产生的问题。 阅读[发行说明](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension)中有关 .NET 测试适配器扩展弃用的详细信息。
 
