@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426113"
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "59656734"
  但 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 提供了两个新的保留元数据项，属性和 AdditionalProperties，这两个元数据项提供了使用 [MSBuild 任务](../msbuild/msbuild-task.md)为正在生成的不同项目传递不同属性的一种灵活的方式。  
   
 > [!NOTE]
->  这些新的元数据项仅适用于在 [MSBuild任务](../msbuild/msbuild-task.md)的项目属性中传递的项。  
+> 这些新的元数据项仅适用于在 [MSBuild任务](../msbuild/msbuild-task.md)的项目属性中传递的项。  
   
 ## <a name="multi-processor-build-benefits"></a>多处理器生成的优点  
  在多处理器系统上并行生成项目时，则会体验到使用此新元数据的其中一个主要的好处。 通过元数据可将所有项目合并到单个 [MSBuild 任务](../msbuild/msbuild-task.md)调用中，而无需执行任何批处理或条件性 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 任务。 仅调用单个 [MSBuild 任务](../msbuild/msbuild-task.md) 时，将并行生成项目属性中列出的所有项目。 （但仅适用于 `BuildInParallel=true` 属性存在于 [MSBuild 任务](../msbuild/msbuild-task.md)中时。）有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。  
@@ -77,7 +77,7 @@ ms.locfileid: "59656734"
  常见的方案是使用 [MSBuild 任务](../msbuild/msbuild-task.md)生成多个解决方案文件时，仅使用不同的生成配置。 你可能希望使用调试配置生成解决方案 a1，使用发布配置生成解决方案 a2。 在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 中，此项目文件将如下所示：  
   
 > [!NOTE]
->  在以下示例中，“...”表示其他解决方案文件。  
+> 在以下示例中，“...”表示其他解决方案文件。  
   
 ### <a name="aproj"></a>a.proj  
   

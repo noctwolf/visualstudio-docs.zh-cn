@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445385"
 ---
 # <a name="task-writing"></a>任务写入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 文件 Microsoft.Common.Tasks 是一个包含 `UsingTask` 元素列表的项目文件，这些元素注册随 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 一起提供的所有任务。 生成每个项目时会自动包括该文件。 如果在 Microsoft.Common.Tasks 中注册的任务也在当前项目文件中进行了注册，则当前项目文件具有优先权；也就是说，可以使用自己的同名任务重写默认任务。  
   
 > [!TIP]
->  通过查看 Microsoft.Common.Tasks 的内容，可以看到随 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 一起提供的任务列表。  
+> 通过查看 Microsoft.Common.Tasks 的内容，可以看到随 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 一起提供的任务列表。  
   
 ## <a name="raising-events-from-a-task"></a>从任务引发事件  
  如果任务派生自 <xref:Microsoft.Build.Utilities.Task> 帮助器类，可以使用 <xref:Microsoft.Build.Utilities.Task> 类上的下列任一帮助器方法来引发由任何注册的记录器捕获并显示的事件：  

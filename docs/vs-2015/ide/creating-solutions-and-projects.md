@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437578"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109804"
 项目是生成应用程序所需的所有内容的逻辑容器。 从主菜单上选择“文件”|“新建”|“项目”创建项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将创建一个解决方案来包含它。 如有必要，可以继续向解决方案添加更多新项目或现有项目。 可以从现有代码文件创建项目，也可创建在使用完毕后删除的临时项目（仅 .NET）。  
   
 > [!NOTE]
->  本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>从已安装项目模板创建项目  
  从主菜单上依次选择“文件”|“新建”|“项目”，打开“新建项目”对话框。 在“已安装”|“模板”下的左侧窗格中，选择编程语言和平台或技术，然后在中间窗格中选择可用的模板。  
@@ -42,7 +42,7 @@ ms.locfileid: "60109804"
  如果有一系列松散源文件，则可以轻松创建一个包含它们的项目。 选择“文件”|“新建”|“从现有代码新建项目”，启动“从现有代码文件创建项目向导”，并按照提示进行操作。  
   
 > [!TIP]
->  此选项最适合于相对简单的文件集合。  
+> 此选项最适合于相对简单的文件集合。  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>创建临时项目（C# 和 Visual Basic）  
  使用临时项目时，你可以在不指定磁盘位置的情况下创建和试验 .NET 项目。 创建项目时，只需在 **“新建项目”** 对话框中选择项目类型和模板，并指定名称。 使用临时项目时，你可以随时保存或放弃它。  
@@ -83,7 +83,7 @@ ms.locfileid: "60109804"
  您可以永久性删除解决方案，但不能使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]来删除解决方案。 在删除解决方案前，把您要再次使用的任何项目移动到其他解决方案中。 然后，使用文件资源管理器删除包含 .sln 和 .suo 解决方案文件的目录。  
   
 > [!NOTE]
->  .suo 文件是隐藏文件，在默认的文件资源管理器设置下不会显示。  
+> .suo 文件是隐藏文件，在默认的文件资源管理器设置下不会显示。  
   
 ##### <a name="to-delete-a-solution"></a>要删除解决方案  
   

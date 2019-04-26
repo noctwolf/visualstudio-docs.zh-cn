@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 168441c5037a7c326f0426e428fba6e58c1e5f30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443409"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>使用 RoslynCodeTaskFactory 创建 MSBuild 内联任务
 RoslynCodeTaskFactory 与 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 类似，它使用跨平台的 Roslyn 编译器来生成内存中任务程序集用作内联任务。  RoslynCodeTaskFactory 任务面向的是 .NET Standard，它可用于 .NET Framework 和 .NET Core 运行时，还可用于 Linux 和 Mac 操作系统等其他平台。
@@ -46,26 +46,26 @@ RoslynCodeTaskFactory 与 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 
 
  示例中的 `UsingTask` 元素具有三个属性，用于描述任务和编译该任务的内联任务工厂。
 
--   `TaskName` 属性命名任务，在本例中，即为 `DoNothing`。
+- `TaskName` 属性命名任务，在本例中，即为 `DoNothing`。
 
--   `TaskFactory` 属性命名实现内联任务工厂的类。
+- `TaskFactory` 属性命名实现内联任务工厂的类。
 
--   `AssemblyFile` 属性提供内联任务工厂的位置。 或者，可以使用 `AssemblyName` 属性来指定内联任务工厂类的完全限定的名称，它通常位于全局程序集缓存 (GAC) 中。
+- `AssemblyFile` 属性提供内联任务工厂的位置。 或者，可以使用 `AssemblyName` 属性来指定内联任务工厂类的完全限定的名称，它通常位于全局程序集缓存 (GAC) 中。
 
 `DoNothing` 任务的其余元素为空，用于说明内联任务的顺序和结构。 本主题后面部分将提供更为全面的示例。
 
--   `ParameterGroup` 元素是可选的。 如果指定，它会声明任务的参数。 有关输入和输出参数的详细信息，请参阅本主题后面的[输入和输出参数](#input-and-output-parameters)。
+- `ParameterGroup` 元素是可选的。 如果指定，它会声明任务的参数。 有关输入和输出参数的详细信息，请参阅本主题后面的[输入和输出参数](#input-and-output-parameters)。
 
--   `Task` 元素描述且包含任务源代码。
+- `Task` 元素描述且包含任务源代码。
 
--   `Reference` 元素指定对在代码中使用的 .NET 程序集的引用。 这相当于在 Visual Studio 中添加对项目的引用。 `Include` 属性指定引用的程序集的路径。
+- `Reference` 元素指定对在代码中使用的 .NET 程序集的引用。 这相当于在 Visual Studio 中添加对项目的引用。 `Include` 属性指定引用的程序集的路径。
 
--   `Using` 元素列出你想要访问的命名空间。 这类似于 Visual C# 中的 `Using` 语句。 `Namespace` 属性指定要包含的命名空间。
+- `Using` 元素列出你想要访问的命名空间。 这类似于 Visual C# 中的 `Using` 语句。 `Namespace` 属性指定要包含的命名空间。
 
 `Reference` 和 `Using` 元素都与语言无关。 可以用任何一种受支持的 .NET CodeDom 语言（例如，Visual Basic 或 Visual C#）编写内联任务。
 
 > [!NOTE]
->  由 `Task` 元素包含的元素均特定于任务工厂，在本例中，即代码任务工厂。
+> 由 `Task` 元素包含的元素均特定于任务工厂，在本例中，即代码任务工厂。
 
 ### <a name="code-element"></a>代码元素
 最后一个出现在 `Task`元素内的子元素是 `Code` 元素。 `Code` 元素包含或定位你想要编译到任务中的代码。 放置于 `Code` 元素中的内容具体取决于你希望如何编写任务。
@@ -74,18 +74,18 @@ RoslynCodeTaskFactory 与 [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md) 
 
 `Type` 属性指定 `Code` 元素中找到的代码类型。
 
--   如果 `Type` 的值为 `Class`，则 `Code` 元素将包含派生自 <xref:Microsoft.Build.Framework.ITask> 接口的类的代码。
+- 如果 `Type` 的值为 `Class`，则 `Code` 元素将包含派生自 <xref:Microsoft.Build.Framework.ITask> 接口的类的代码。
 
--   如果 `Type` 的值为 `Method`，则代码将定义 <xref:Microsoft.Build.Framework.ITask> 接口的 `Execute` 方法的替代。
+- 如果 `Type` 的值为 `Method`，则代码将定义 <xref:Microsoft.Build.Framework.ITask> 接口的 `Execute` 方法的替代。
 
--   如果 `Type` 的值为 `Fragment`，则代码将定义 `Execute` 方法的内容，但不定义签名和 `return` 语句。
+- 如果 `Type` 的值为 `Fragment`，则代码将定义 `Execute` 方法的内容，但不定义签名和 `return` 语句。
 
 通常，该代码本身会出现在 `<![CDATA[` 标记和 `]]>` 标记之间。 由于代码位于 CDATA 部分中，因此你不必担心转义保留字符（例如，“\<”或“>”）。
 
 或者，可以使用 `Code` 元素的 `Source` 属性来指定包含任务代码的文件的位置。 源文件中的代码的类型必须为由 `Type` 属性所指定的类型。 如果存在 `Source` 属性，则 `Type` 的默认值为 `Class`。 如果 `Source` 不存在，则默认值为 `Fragment`。
 
 > [!NOTE]
->  当在源文件中定义任务类时，类名必须符合对应的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素的 `TaskName` 属性。
+> 当在源文件中定义任务类时，类名必须符合对应的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素的 `TaskName` 属性。
 
 ## <a name="hello-world"></a>Hello World
  下面是使用 RoslynCodeTaskFactory 创建的内联任务，它的性能更可靠。 HelloWorld 任务 在默认错误日志记录设备上显示“Hello, World!”，该设备通常为系统控制台或 Visual Studio **输出**窗口。 示例中包含了 `Reference` 元素，这仅用于阐释目的。
@@ -135,11 +135,11 @@ Log.LogError("Hello, world!");
 
 参数可能有以下一个或多个属性：
 
--   `Required` 是可选属性，默认值为 `false`。 如果为 `true`，则该参数是必需的，且必须在调用任务之前为其赋予值。
+- `Required` 是可选属性，默认值为 `false`。 如果为 `true`，则该参数是必需的，且必须在调用任务之前为其赋予值。
 
--   `ParameterType` 是可选属性，默认值为 `System.String`。 可以将它设置为任何完全限定的类型（项或值），通过使用 System.Convert.ChangeType，可将其转换为字符串或从字符串转换为完全限定的类型。 （换言之，可传递至外部任务或可从外部任务传递的任何类型。）
+- `ParameterType` 是可选属性，默认值为 `System.String`。 可以将它设置为任何完全限定的类型（项或值），通过使用 System.Convert.ChangeType，可将其转换为字符串或从字符串转换为完全限定的类型。 （换言之，可传递至外部任务或可从外部任务传递的任何类型。）
 
--   `Output` 是可选属性，默认值为 `false`。 如果为 `true`，则必须先为该参数赋予值，然后才能通过 Execute 方法返回。
+- `Output` 是可选属性，默认值为 `false`。 如果为 `true`，则必须先为该参数赋予值，然后才能通过 Execute 方法返回。
 
 例如，应用于对象的
 
@@ -153,11 +153,11 @@ Log.LogError("Hello, world!");
 
 定义以下三个参数：
 
--   `Expression` 为必需的输入参数，其类型为 System.String。
+- `Expression` 为必需的输入参数，其类型为 System.String。
 
--   `Files` 是必需的项列表输入参数。
+- `Files` 是必需的项列表输入参数。
 
--   `Tally` 是输出参数，其类型为 System.Int32。
+- `Tally` 是输出参数，其类型为 System.Int32。
 
 如果 `Code` 元素具有 `Fragment` 或 `Method` 的 `Type` 特性，则将自动为每个参数创建属性。 否则，属性必须在源代码中显示声明，并且必须与其参数定义完全匹配。
 

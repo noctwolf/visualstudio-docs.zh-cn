@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442245"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暂停和恢复性能数据收集
 在分析会话页窗口中，您可以交互控制分析数据的收集。
@@ -25,17 +25,17 @@ ms.locfileid: "56626942"
  ![分析会话页](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
->  还可以在暂停分析的情况下启动性能会话，然后在以后执行程序时恢复分析。 若要在暂停分析的情况下启动性能会话，请选择“调试”菜单中的“在暂停分析的情况下启动性能分析”命令。
+> 还可以在暂停分析的情况下启动性能会话，然后在以后执行程序时恢复分析。 若要在暂停分析的情况下启动性能会话，请选择“调试”菜单中的“在暂停分析的情况下启动性能分析”命令。
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>暂停、恢复或停止分析
 
--   在分析会话页上：
+- 在分析会话页上：
 
-    -   选择“暂停收集”可暂停数据收集。
+    - 选择“暂停收集”可暂停数据收集。
 
-    -   暂停数据收集后，选择“恢复收集”可重新启动数据收集。
+    - 暂停数据收集后，选择“恢复收集”可重新启动数据收集。
 
-    -   选择“停止分析”可结束分析会话并生成报告。
+    - 选择“停止分析”可结束分析会话并生成报告。
 
 ## <a name="see-also"></a>请参阅
 - [控制数据收集](../profiling/controlling-data-collection.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432328"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60053554"
      有关详细信息，请参阅[“选项”对话框->“项目和解决方案”->“生成和运行”](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)和 <xref:Microsoft.Build.Framework.LoggerVerbosity>。  
   
     > [!IMPORTANT]
-    >  更改要在“输出”窗口（所有项目）和 ProjectName.txt 文件（仅限 C++ 项目）中生效，必须重新生成该项目。  
+    > 更改要在“输出”窗口（所有项目）和 ProjectName.txt 文件（仅限 C++ 项目）中生效，必须重新生成该项目。  
   
 ## <a name="see-also"></a>请参阅  
  [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)   

@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412360"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60097409"
 1. 在“管理内容”选项卡上，选择“磁盘”选项按钮。  
   
     > [!NOTE]
-    >  如果管理员已阻止你修改内容安装源，“磁盘”选项将不可用。 有关详细信息，请参阅[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)。  
+    > 如果管理员已阻止你修改内容安装源，“磁盘”选项将不可用。 有关详细信息，请参阅[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)。  
   
 2. 执行以下步骤之一：  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60097409"
  如果你下载了内容并安装在本地计算机上，则无需 Internet 连接即可查看主题。  
   
 > [!IMPORTANT]
->  若要安装内容，必须使用具有管理权限的帐户登录。  
+> 若要安装内容，必须使用具有管理权限的帐户登录。  
   
  如果 Visual Studio IDE 设置为英语以外的语言，则可以安装英语内容和/或本地化内容。 但是，如果只安装英语版本，且清除了“查看器选项”对话框中的“所有导航选项卡和 F1 请求中均包含英语内容”复选框，则将不会显示内容。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "60097409"
  可以删除计算机中不需要的内容来节省磁盘空间。  
   
 > [!IMPORTANT]
->  必须具有管理权限才能删除内容。  
+> 必须具有管理权限才能删除内容。  
   
  如果将 Visual Studio IDE 设置为英语以外的语言、删除本地化内容并且清除了“查看器选项”对话框中的“所有导航选项卡和 F1 请求中包括英语内容”复选框，则将不会显示内容。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "60097409"
  状态栏指示已安装内容的更新何时可用。  
   
 > [!IMPORTANT]
->  如果希望帮助查看器自动检查联机更新，必须打开“查看器选项”对话框，然后选择“联机检查内容更新”复选框。  
+> 如果希望帮助查看器自动检查联机更新，必须打开“查看器选项”对话框，然后选择“联机检查内容更新”复选框。  
   
 #### <a name="to-update-local-content"></a>要更新本地内容  
   
@@ -112,7 +112,7 @@ ms.locfileid: "60097409"
  可以通过将本地计算机上安装的内容移到网络共享或本地计算机上的其他分区来节省磁盘空间。  
   
 > [!IMPORTANT]
->  若要移动内容，必须使用具有管理权限的帐户登录。  
+> 若要移动内容，必须使用具有管理权限的帐户登录。  
   
 #### <a name="to-move-local-content"></a>要移动本地内容  
   

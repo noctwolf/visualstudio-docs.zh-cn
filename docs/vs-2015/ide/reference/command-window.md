@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441454"
 ---
 # <a name="command-window"></a>“命令”窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "59650429"
 |向下滚动窗口。|“命令”窗口内容|向下键或 Ctrl+向下键|  
   
 > [!TIP]
->  通过滚动到前一个命令，突出显示该命令的全部或部分内容，然后按 Enter，可以将该命令的全部或部分内容复制到输入行中。  
+> 通过滚动到前一个命令，突出显示该命令的全部或部分内容，然后按 Enter，可以将该命令的全部或部分内容复制到输入行中。  
   
 ## <a name="mark-mode"></a>标记模式  
  在“命令”窗口中单击前面的任何行时，将自动切换到“标记”模式。 这允许你像在任何文本编辑器中那样选择、编辑和复制以前命令的文本，并将其粘贴到当前行中。  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` 和 `oldpar` 是参数  
   
   > [!NOTE]
-  >  任何包含空格的命令、参数、开关或值都必须用双引号引起来。  
+  > 任何包含空格的命令、参数、开关或值都必须用双引号引起来。  
   
   在命令行上，开关和参数的位置可以随便互换，但 [Shell](../../ide/reference/shell-command.md) 命令是个例外，它要求开关和参数按特定的顺序出现。  
   

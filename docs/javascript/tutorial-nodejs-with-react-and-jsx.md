@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446338"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -165,7 +165,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 * *app.tsx*
 * *webpack-config.js*
-* *index.html*
+* index.html
 * *tsconfig.json*
 
 对于此简单应用，将新建项目文件添加到项目根中。 （在大多数应用中，通常将文件添加到子文件夹并相应调整相对路径引用。）
@@ -376,8 +376,10 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
     这样在启动 Chrome 时会同时启用调试。
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
-    > 还可以在浏览器启动时设置 `--remote-debugging-port` 标志，方法是从“调试”工具栏选择“浏览方式...”，然后选择“添加”，并在“参数”字段中设置标志。 使用其他浏览器的友好名称，如“带有调试功能的 Chrome”。 有关详细信息，请参阅[发行说明](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)。
+    > 还可以在浏览器启动时设置 `--remote-debugging-port` 标志，方法是从“调试”工具栏选择“浏览方式...”，然后选择“添加”，并在“参数”字段中设置标志。 为浏览器使用其他易记名称，如“带有调试功能的 Chrome”。 有关详细信息，请参阅[发行说明](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support)。
+
     ::: moniker-end
 
 3. 如下图所示，切换到 Visual Studio 并在 `render()` 函数的 app-bundle.js 代码中设置断点：

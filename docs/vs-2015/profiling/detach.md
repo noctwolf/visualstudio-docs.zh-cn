@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1262e88055fceef0b2170c304c8ff646eea07205
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1b35765614f57350cdace560aa61c721cc831581
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444021"
 ---
 # <a name="detach"></a>Detach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ VSPerfCmd.exe“Detach”选项可断开探查器与指定进程或所有进程�
  “Detach”不会关闭分析数据文件。 使用“Shutdown”选项结束分析并关闭数据文件。  
   
 > [!NOTE]
->  如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。  
+> 如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。  
   
 ## <a name="syntax"></a>语法  
   

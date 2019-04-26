@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445742"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多定向概述
 通过 MSBuild，可将应用程序编译为在若干 .NET Framework 版本的任一版本和若干系统平台的任一平台上运行。 例如，可将同一应用程序编译为既能在 32 位平台的 .NET Framework 2.0 上运行，也能在 64 位平台的 .NET Framework 4.5 上运行。
 
 > [!IMPORTANT]
->  尽管名称为“多定向”，一个项目一次只能针对一个框架和一个平台。
+> 尽管名称为“多定向”，一个项目一次只能针对一个框架和一个平台。
 
  以下是 MSBuild 定向的部分功能：
 
--   可开发面向 .NET Framework 早期版本（例如，版本 2.0、3.5 或 4）的应用程序。
+- 可开发面向 .NET Framework 早期版本（例如，版本 2.0、3.5 或 4）的应用程序。
 
--   可以面向 .NET Framework 之外的框架，例如 Silverlight Framework。
+- 可以面向 .NET Framework 之外的框架，例如 Silverlight Framework。
 
--   可以一个*框架配置文件*为目标，该文件是目标框架的预定义子集。
+- 可以一个*框架配置文件*为目标，该文件是目标框架的预定义子集。
 
--   如果已发布 .NET Framework 当前版本的 Service Pack，则可以将其作为目标。
+- 如果已发布 .NET Framework 当前版本的 Service Pack，则可以将其作为目标。
 
--   MSBuild 多定向功能可保证应用程序仅使用目标框架和平台中的可用功能。
+- MSBuild 多定向功能可保证应用程序仅使用目标框架和平台中的可用功能。
 
 ## <a name="target-framework-and-platform"></a>目标框架和平台
  目标框架是项目生成后要在其上运行的一个 .NET Framework 版本；目标平台项目生成后要在其上运行的一个系统平台。  例如，你可能希望将 .NET Framework 2.0 应用程序的目标设定为在与 802x86 处理器系列 (x86) 兼容的 32 位平台上运行。 目标框架与目标平台的组合称为“目标上下文”。 有关详细信息，请参阅[目标框架和目标平台](../msbuild/msbuild-target-framework-and-target-platform.md)。

@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444394"
 ---
 # <a name="signfile-task"></a>SignFile 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59660341"
  请注意：仅允许在具有 .NET 4.5 和更高版本的计算机上使用 SHA-256 证书。  
   
 > [!WARNING]
->  自 Visual Studio 2013 Update 3 起，此任务有一个新的签名，使你可以指定文件的目标框架版本。 建议尽可能地使用此新签名，因为 MSBuild 过程只在目标框架为 .NET 4.5 或更高版本时使用 SHA-256 哈希。 如果目标框架是 .NET 4.0 或更低版本，将不使用 SHA-256 哈希。  
+> 自 Visual Studio 2013 Update 3 起，此任务有一个新的签名，使你可以指定文件的目标框架版本。 建议尽可能地使用此新签名，因为 MSBuild 过程只在目标框架为 .NET 4.5 或更高版本时使用 SHA-256 哈希。 如果目标框架是 .NET 4.0 或更低版本，将不使用 SHA-256 哈希。  
   
 |参数|说明|  
 |---------------|-----------------|  
@@ -70,7 +70,7 @@ ms.locfileid: "59660341"
 ```  
   
 > [!NOTE]
->  证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅 [Obtain the SHA-1 Hash of a Trusted Root CA Certificate](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)（获取受信任的根 CA 证书的 SHA-1 哈希）。  
+> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅 [Obtain the SHA-1 Hash of a Trusted Root CA Certificate](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)（获取受信任的根 CA 证书的 SHA-1 哈希）。  
   
 ## <a name="example"></a>示例  
  以下示例使用 `Exec` 任务来签署 `FilesToSign` 项集合中指定的文件，使用的证书由 `Certificate` 属性定义。 你可用此在生成过程中对 Windows 安装程序文件进行签名。  

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443183"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787071"
 类设计器支持 C++ 类，直观呈现本机 C++ 类的方式与直观呈现 Visual Basic 和 Visual C# 类形状时大致相同，不同之处在于 C++ 类可以有多个继承关系。 可以展开类形状来显示类中的更多字段和方法，也可以折叠类形状来节省空间。  
   
 > [!NOTE]
->  类设计器不支持联合（一种特殊类型的类，仅分配联合的最大数据成员所需的内存量）。  
+> 类设计器不支持联合（一种特殊类型的类，仅分配联合的最大数据成员所需的内存量）。  
   
 ## <a name="simple-inheritance"></a>简单继承  
  如果将存在单类继承关系的多个类拖到类图上，它们将会通过箭头相连。 箭头指向基类的方向。 例如，如果类图中有以下类，这两个类将会通过箭头相连，箭头从 B 指向 A：  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  右键单击类形状，然后单击“显示基类”，可以显示选定类的基类。  
   
 > [!NOTE]
->  C++ 代码不支持“显示派生类”命令。 可以转到类视图，依次展开类型节点和“Derived Types”子文件夹，然后将这些类型拖到类图上，即可显示派生类。  
+> C++ 代码不支持“显示派生类”命令。 可以转到类视图，依次展开类型节点和“Derived Types”子文件夹，然后将这些类型拖到类图上，即可显示派生类。  
   
  有关多类继承的详细信息，请参阅 [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多个基类](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49b9f88dd00321e00f5c64dad3616cd5a0ddb51a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 00c77675b1a2300468c7848facf498ac3816e136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437213"
 ---
 # <a name="alias-command"></a>“别名”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59654277"
 为完整命令、完整命令和参数或另一个别名创建新别名。  
   
 > [!TIP]
->  键入 `>alias` 但不带任何参数会显示别名及其定义的当前列表。  
+> 键入 `>alias` 但不带任何参数会显示别名及其定义的当前列表。  
   
 ## <a name="syntax"></a>语法  
   

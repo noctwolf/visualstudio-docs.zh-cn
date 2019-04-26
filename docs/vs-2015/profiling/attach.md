@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2aa44ee0d7d4a1b9965e653ac089c4c5dd78821b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b9adb5a0a47c1ee98e0e390cfaf8b3a6dc78146
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433798"
 ---
 # <a name="attach"></a>Attach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ VSPerfCmd.exe“Attach”选项开始对进程 ID (PID) 指定的运行过程进
  若要使用“Attach”选项，必须在“Start”选项中指定“Sample”方法。  
   
 > [!NOTE]
->  如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。  
+> 如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。  
   
 ## <a name="syntax"></a>语法  
   

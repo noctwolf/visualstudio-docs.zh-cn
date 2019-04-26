@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434274"
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091600"
 在 Visual Studio Team System Development Edition 集成开发环境 (IDE) 的“性能报告”窗口中，可以查看性能会话的分析数据。 分析数据保存在 .vsp 和 .vsps 文件中。 报告视图窗口可用于查看和分析应用程序性能问题。  
   
 > [!CAUTION]
->  分析数据文件包含敏感信息，如计算机名、操作系统的版本、文件路径、内存信息和其他计算机设置信息。 无论是采用本机 .vsp 格式，还是导出到 .csv 或 .xml 文件时，都应对数据的分发保持严格控制。  
+> 分析数据文件包含敏感信息，如计算机名、操作系统的版本、文件路径、内存信息和其他计算机设置信息。 无论是采用本机 .vsp 格式，还是导出到 .csv 或 .xml 文件时，都应对数据的分发保持严格控制。  
 >   
->  如果事件跟踪数据作为性能会话的一部分进行收集，则其他信息可能会出现在事件跟踪日志 (.etl) 文件中。 此信息包括域和用户名；因此，应对日志文件的分发保持严格控制。  
+> 如果事件跟踪数据作为性能会话的一部分进行收集，则其他信息可能会出现在事件跟踪日志 (.etl) 文件中。 此信息包括域和用户名；因此，应对日志文件的分发保持严格控制。  
   
 ## <a name="performance-report-window"></a>“性能报告”窗口  
  “性能报告”窗口是一个工具窗口，用于查看、管理和筛选性能数据，包含可自定义查询控制。  

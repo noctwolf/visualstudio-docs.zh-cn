@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433000"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft 语言界面包 (LIP) 和 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60096499"
  Visual Studio 使用统一的语言包。 若要安装这些产品的多个语言版本，必须首先安装某个完整语言产品，然后安装一个或多个语言包。
 
 > [!NOTE]
->  Visual Studio 不支持在同一台计算机上安装多个语言版本的完整语言产品。 安装一个完整语言产品之后，必须使用语言包添加语言版本。 仍可以在同一台计算机上安装速成版的多个完整语言产品。
+> Visual Studio 不支持在同一台计算机上安装多个语言版本的完整语言产品。 安装一个完整语言产品之后，必须使用语言包添加语言版本。 仍可以在同一台计算机上安装速成版的多个完整语言产品。
 
 ### <a name="support-for-code-pages"></a>代码页支持
  当文本包含不在当前代码页中的字符时，某些 Visual Studio 工具无法正确显示文本。 而是会显示问号或文本损坏。 以下工具或区域会受到影响：
@@ -76,7 +76,7 @@ ms.locfileid: "60096499"
 1. 单击“开始”，单击“控制面板”，然后打开“区域和语言选项”（或者在 [!INCLUDE[win8](../includes/win8-md.md)] 中为“区域”）。
 
     > [!NOTE]
-    >  必须是计算机上的管理员才能执行这些步骤。
+    > 必须是计算机上的管理员才能执行这些步骤。
 
 2. 单击“高级”选项卡。
 
@@ -88,7 +88,7 @@ ms.locfileid: "60096499"
  在同一台计算机上安装多个语言版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] UI 默认为“与 Microsoft Windows 相同”。 此设置指示 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使用指定为操作系统显示语言的语言来显示 UI 文本。
 
 > [!NOTE]
->  如果 Visual Studio 设置为使用“与 Microsoft Windows 相同”，并且未安装匹配的 Visual Studio 语言包，则 Visual Studio 会使用第一个 Visual Studio 安装的语言。
+> 如果 Visual Studio 设置为使用“与 Microsoft Windows 相同”，并且未安装匹配的 Visual Studio 语言包，则 Visual Studio 会使用第一个 Visual Studio 安装的语言。
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>设置在 Visual Studio 中用于 UI 文本的语言
 

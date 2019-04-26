@@ -9,22 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0018ee6f723f6cfd1d4d099714c1bda153d832a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a476ea94506800679c51b4d9081aeecdfb92f273
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439617"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 .NET 服务，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 >
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 >
->  若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
+> 若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)。
 
  若要从 .NET Framework 服务收集性能数据，请使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化相应的环境变量。 随后必须重新启动承载服务的计算机，并配置该计算机进行分析。 随后将探查器附加到服务进程。 将探查器附加到服务时，可以暂停和恢复数据收集。
 
@@ -42,9 +42,9 @@ ms.locfileid: "56603685"
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]
 
-   -   **/globalsampleon** 启用采样。
+   - **/globalsampleon** 启用采样。
 
-   -   **/samplelineoff** 禁用向特定源代码行分配收集的数据。 指定此选项时，仅向函数分配数据。
+   - **/samplelineoff** 禁用向特定源代码行分配收集的数据。 指定此选项时，仅向函数分配数据。
 
 4. 重新启动计算机。
 
@@ -61,7 +61,7 @@ ms.locfileid: "56603685"
      可以将以下任意选项与 **/start:sample** 选项一起使用。
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 选项通常为服务所需选项。
+   > **/User** 和 **/crosssession** 选项通常为服务所需选项。
 
    | 选项 | 说明 |
    | - | - |
@@ -70,7 +70,6 @@ ms.locfileid: "56603685"
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
-
 
 7. 必要时，请启动该服务。
 
@@ -89,14 +88,14 @@ ms.locfileid: "56603685"
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|将采样事件更改为从进程对操作系统内核的系统调用 (syscall)。 如果已指定 `Interval`，则会设置样本之间的调用次数。 默认值为 10。|
    |[/counter](../profiling/counter.md) **:** `Config`|将采样事件和间隔更改为 `Config` 中指定的处理器性能计数器和间隔。|
 
-   -   **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。
+   - **targetclr:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 可选。
 
 ## <a name="control-data-collection"></a>控制数据收集
  服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -111,23 +110,23 @@ ms.locfileid: "56603685"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  执行下列操作之一以从目标应用程序中拆离探查器：
+1. 执行下列操作之一以从目标应用程序中拆离探查器：
 
-    -   停止服务。
+    - 停止服务。
 
          或
 
-    -   键入 **VSPerfCmd /detach**
+    - 键入 **VSPerfCmd /detach**
 
-2.  关闭探查器。 类型：
+2. 关闭探查器。 类型：
 
      **VSPerfCmd /shutdown**
 
-3.  （可选）清除分析环境变量。 类型：
+3. （可选）清除分析环境变量。 类型：
 
      VSPerfClrEnv /globaloff
 
-4.  重新启动计算机。
+4. 重新启动计算机。
 
 ## <a name="see-also"></a>请参阅
 - [分析服务](../profiling/command-line-profiling-of-services.md)

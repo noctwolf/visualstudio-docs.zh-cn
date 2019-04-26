@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443591"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。
@@ -54,7 +54,7 @@ ms.locfileid: "58515202"
  若要从生成工具中获取环境变量的当前值，请使用[属性函数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 不过，首选方法是使用任务参数 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 可将此字符串数组中的环境属性集传递给生成工具，而不影响系统环境变量。
 
 > [!TIP]
->  并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。
+> 并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。
 
  有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>在执行过程中创建属性
  在生成的评估阶段会为 `Target` 元素外的属性分配值。 在后续执行阶段中，可按以下方式创建或修改属性：
 
--   任何任务都可以发出属性。 若要发出属性，[Task](../msbuild/task-element-msbuild.md) 元素必须具有含有 `PropertyName` 属性的 [Output](../msbuild/output-element-msbuild.md) 子元素。
+- 任何任务都可以发出属性。 若要发出属性，[Task](../msbuild/task-element-msbuild.md) 元素必须具有含有 `PropertyName` 属性的 [Output](../msbuild/output-element-msbuild.md) 子元素。
 
--   [CreateProperty](../msbuild/createproperty-task.md) 任务可发出属性。 此用法已弃用。
+- [CreateProperty](../msbuild/createproperty-task.md) 任务可发出属性。 此用法已弃用。
 
--   从 .NET Framework 3.5 起，`Target` 元素可能会包含 `PropertyGroup` 元素，后者可能会包含属性声明。
+- 从 .NET Framework 3.5 起，`Target` 元素可能会包含 `PropertyGroup` 元素，后者可能会包含属性声明。
 
 ## <a name="store-xml-in-properties"></a>在属性中存储 XML
  属性可包含任意 XML，这有助于将值传递给任务或显示日志记录信息。 以下示例介绍了 `ConfigTemplate` 属性，它具有一个包含 XML 和其他属性引用的值。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用其相应属性值来替换属性引用。 属性值按其显示顺序进行分配。 因此，在此示例中，`$(MySupportedVersion)`、`$(MyRequiredVersion)` 和 `$(MySafeMode)` 应已定义。

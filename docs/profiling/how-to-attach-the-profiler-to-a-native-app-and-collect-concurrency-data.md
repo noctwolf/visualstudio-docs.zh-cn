@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a16aa073583c62577f6a40fb24aac69c7e95b93e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b91bd0d7dde275c9822deb6546dfbd1d6241ed56
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439597"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到本机独立应用程序，并使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到运行中的本机 (C/C++) 独立应用程序并收集线程争用数据。
 
 > [!NOTE]
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
  将探查器附加到应用程序时，可以暂停和恢复数据收集。 若要结束分析会话，探查器不得再附加于应用程序，并且必须显示关闭探查器。
 
@@ -28,7 +28,7 @@ ms.locfileid: "56624368"
 
 #### <a name="to-attach-the-profiler-to-a-running-native-application"></a>将探查器附加到正在运行的本机应用程序
 
-1.  在命令提示符下，键入以下命令：
+1. 在命令提示符下，键入以下命令：
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
 
@@ -42,7 +42,7 @@ ms.locfileid: "56624368"
     |[/automark](../profiling/automark.md) **:** `Interval`|仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500。|
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。|
 
-2.  在命令提示符下输入以下命令以将探查器附加到目标应用程序：
+2. 在命令提示符下输入以下命令以将探查器附加到目标应用程序：
 
      **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}
 
@@ -53,7 +53,7 @@ ms.locfileid: "56624368"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 下表中的选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -66,10 +66,10 @@ ms.locfileid: "56624368"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  通过将其关闭或键入以下命令将探查器与目标应用程序分离：
+1. 通过将其关闭或键入以下命令将探查器与目标应用程序分离：
 
      **VSPerfCmd /detach**
 
-2.  通过键入以下命令关闭探查器：
+2. 通过键入以下命令关闭探查器：
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)

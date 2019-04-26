@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435096"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解锁 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60072547"
 2. 对 Microsoft 帐户、工作或学校帐户输入凭据。 Visual Studio 将查找 MSDN 订阅或与你的帐户相关联的 Visual Studio Team Services 订阅。
 
 > [!IMPORTANT]
->  当连接到“团队资源管理器”工具窗口的 Visual Studio Team Services 帐户时，Visual Studio 将自动查找相关联的在线订阅。 当连接到 Visual Studio Team Services 帐户时，可以使用 Microsoft 和工作或学校帐户登录。 如果该用户帐户有在线订阅，则 Visual Studio 将自动为你解锁 IDE。
+> 当连接到“团队资源管理器”工具窗口的 Visual Studio Team Services 帐户时，Visual Studio 将自动查找相关联的在线订阅。 当连接到 Visual Studio Team Services 帐户时，可以使用 Microsoft 和工作或学校帐户登录。 如果该用户帐户有在线订阅，则 Visual Studio 将自动为你解锁 IDE。
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>使用产品密钥解锁 Visual Studio
 
@@ -43,7 +43,7 @@ ms.locfileid: "60072547"
 2. 在提供的空白处输入产品密钥。
 
 > [!TIP]
->  Visual Studio 的预发布版本没有产品密钥。 必须登录 IDE，才能使用预发布版本。
+> Visual Studio 的预发布版本没有产品密钥。 必须登录 IDE，才能使用预发布版本。
 
 ## <a name="addressing-license-problem-states"></a>解决许可证问题状态
 
@@ -63,7 +63,7 @@ ms.locfileid: "60072547"
    如果不重新输入凭据，则令牌将过期。 发生这种情况时，“帐户设置”对话框将显示距令牌完全过期还有多少天。 令牌过期后，需要使用以上另一种方法重新对此帐户或许可证输入凭据，然后才能继续使用 Visual Studio。
 
 > [!IMPORTANT]
->  如果在有限或者没有 Internet 访问的环境中延长使用 Visual Studio，应该使用产品密钥解锁 Visual Studio，以避免中断。
+> 如果在有限或者没有 Internet 访问的环境中延长使用 Visual Studio，应该使用产品密钥解锁 Visual Studio，以避免中断。
 
 ### <a name="updating-expired-licenses"></a>更新已过期的许可证
  如果你的订阅已完全过期，你不再具有 Visual Studio 的访问权限，必须：
