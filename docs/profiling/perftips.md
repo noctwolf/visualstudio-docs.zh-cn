@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797949"
 ---
 # <a name="perftips"></a>性能提示
 Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具”** 可帮助在调试时监视和分析应用的性能。
@@ -32,27 +32,27 @@ Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具�
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   **“中断事件”** 时间线会标记在调试会话中命中的断点。 在 **“调试器”** 详细信息列表中单击事件以选择它。
+- **“中断事件”** 时间线会标记在调试会话中命中的断点。 在 **“调试器”** 详细信息列表中单击事件以选择它。
 
--   **“CPU 使用率”** 关系图会显示调试会话中所有处理器核心间的 CPU 使用情况变化。
+- **“CPU 使用率”** 关系图会显示调试会话中所有处理器核心间的 CPU 使用情况变化。
 
--   **“调试器”** 详细信息窗格的 **“事件”** 列表包含用于每个中断事件的项。
+- **“调试器”** 详细信息窗格的 **“事件”** 列表包含用于每个中断事件的项。
 
--   中断事件的 **“持续时间”** 列显示事件与上一个断点之间经过的时间。
+- 中断事件的 **“持续时间”** 列显示事件与上一个断点之间经过的时间。
 
 ## <a name="turn-perftips-on-or-off"></a>打开或关闭性能提示
  启用或禁用性能提示：
 
-1.  在 **“调试”** 菜单上，选择 **“选项”**。
+1. 在 **“调试”** 菜单上，选择 **“选项”**。
 
-2.  选中或清除 **“在调试过程中显示占用时间性能提示”**。
+2. 选中或清除 **“在调试过程中显示占用时间性能提示”**。
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>打开或关闭“诊断工具”窗口
  启用或禁用“诊断工具”窗口：
 
-1.  在 **“调试”** 菜单上，选择 **“选项”**。
+1. 在 **“调试”** 菜单上，选择 **“选项”**。
 
-2.  选中或清除 **“在调试过程中启用诊断工具”**。
+2. 选中或清除 **“在调试过程中启用诊断工具”**。
 
 ## <a name="see-also"></a>请参阅
 - [使用 Visual Studio 分析](../profiling/index.md)
