@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441700"
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59658484"
  “杂项文件”文件夹将文件表示为链接。 尽管此文件夹不是解决方案的一部分，但当打开某解决方案时，上次关闭该解决方案时打开的部分或全部杂项文件会重新打开，具体取决于该文件夹的设置。  
   
 > [!NOTE]
->  有些没有在“杂项文件”文件夹中显示的文件是不能在 IDE 中修改的文件，例如 .zip 文件和 .doc 文件。 IDE 不会跟踪那些只能通过外部编辑器修改的文件。  
+> 有些没有在“杂项文件”文件夹中显示的文件是不能在 IDE 中修改的文件，例如 .zip 文件和 .doc 文件。 IDE 不会跟踪那些只能通过外部编辑器修改的文件。  
   
 ## <a name="commands-available-in-the-ide"></a>IDE 中可用的命令  
  根据打开的文件的格式，它们包含的菜单、工具栏和命令会发生变化。 例如，打开一个文本文件时，会出现“文本编辑器”工具栏而且其命令可用。 如果接着打开 XML 架构文件，则出现“XML 架构”工具栏。 编辑 XML 架构时，“文本编辑器”工具栏的命令（或该工具栏本身）不可用。 XML 架构是活动窗口，因此具有当前选定内容上下文。 当从项目文件切换到杂项文件时，所有与项目相关的命令将消失，仅显示那些直接与杂项文件相关的命令。  

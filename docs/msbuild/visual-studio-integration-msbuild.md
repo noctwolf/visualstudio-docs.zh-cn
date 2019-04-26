@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445376"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  某些项类型名称是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 所特有的，但没有在此下拉列表中列出。
+> 某些项类型名称是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 所特有的，但没有在此下拉列表中列出。
 
 ## <a name="in-process-compilers"></a>进程内编译器
  如果可能， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将尝试使用进程内版本的 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编译器来提高性能。 （不适用于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]。）为了让它正确工作，必须满足下面的条件：
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>设计时 IntelliSense
  在生成过程生成输出程序集之前，若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中获得 IntelliSense 支持，必须满足下面的条件：
 
--   必须有名为 `Compile`的目标。
+- 必须有名为 `Compile`的目标。
 
--   `Compile` 目标或它的一个依赖项必须调用该项目的编译器任务，例如， `Csc` 或 `Vbc`。
+- `Compile` 目标或它的一个依赖项必须调用该项目的编译器任务，例如， `Csc` 或 `Vbc`。
 
--   `Compile` 目标或它的一个依赖项必须导致编译器接收使用 IntelliSense 所需的所有参数，特别是所有引用。
+- `Compile` 目标或它的一个依赖项必须导致编译器接收使用 IntelliSense 所需的所有参数，特别是所有引用。
 
--   [进程内编译器](#in-process-compilers)部分中列出的条件必须满足。
+- [进程内编译器](#in-process-compilers)部分中列出的条件必须满足。
 
 ## <a name="build-solutions"></a>生成解决方案
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，解决方案文件和项目生成顺序由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 本身进行控制。 在命令行用 msbuild.exe 生成解决方案时，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将分析解决方案文件，并对项目生成进行排序。 在这两种情况下，项目都将按依赖顺序逐个生成，因此，不会来回进行项目到项目的引用。 相比之下，用 msbuild.exe 生成单个项目时，则会来回进行项目到项目的引用。
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>设计时目标执行
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 加载项目时，它将尝试执行具有某些名称的目标。 这些目标包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 和 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将运行这些目标，以便可以执行以下操作：初始化编译器以提供 IntelliSense，初始化调试器，以及解析在解决方案资源管理器中显示的引用。 如果这些目标不出现，项目将正确加载和生成，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的设计时体验将不会完全有效。
 
-##  <a name="edit-project-files-in-visual-studio"></a>在 Visual Studio 中编辑项目文件
+## <a name="edit-project-files-in-visual-studio"></a>在 Visual Studio 中编辑项目文件
  若要直接编辑 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目，你可以在 Visual Studio XML 编辑器中打开项目文件。
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>在 Visual Studio 中卸载和编辑项目文件
 
-1.  在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”**。
+1. 在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”**。
 
      该项目即被标记为 **“(不可用)”**。
 
-2.  在“解决方案资源管理器”中，打开不可用项目的快捷菜单，然后选择“编辑 \<项目文件>”。
+2. 在“解决方案资源管理器”中，打开不可用项目的快捷菜单，然后选择“编辑 \<项目文件>”。
 
      该项目文件即在 Visual Studio XML 编辑器中打开。
 
-3.  编辑、保存，然后关闭项目文件。
+3. 编辑、保存，然后关闭项目文件。
 
-4.  在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。
+4. 在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。
 
 ## <a name="intellisense-and-validation"></a>IntelliSense 和验证
  使用 XML 编辑器编辑项目文件时，IntelliSense 和验证由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 架构文件驱动。 这些安装在架构缓存中，安装目录为 \<Visual Studio 安装目录>\Xml\Schemas\1033\MSBuild。

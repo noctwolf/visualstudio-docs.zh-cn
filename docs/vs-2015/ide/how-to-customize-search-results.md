@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416848"
 ---
 # <a name="how-to-customize-search-results"></a>如何：自定义搜索结果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60108381"
  文档可能包含非英语的内容。 可以将搜索结果缩小到特定语言的内容。 还可以包含与搜索查询相匹配的任何英文内容。  
   
 > [!WARNING]
->  仅当已安装内容的主要语言不是英语时才能启用此功能。  
+> 仅当已安装内容的主要语言不是英语时才能启用此功能。  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>要包括英语内容和其他语言内容  
   

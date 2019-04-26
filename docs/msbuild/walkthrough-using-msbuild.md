@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445304"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 
@@ -56,13 +56,13 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 
 **检查项目文件**
 
-1.  在“解决方案资源管理器”中，单击项目节点“BuildApp”。
+1. 在“解决方案资源管理器”中，单击项目节点“BuildApp”。
 
-2.  请注意，在“属性”浏览器中，“项目文件”属性是“BuildApp.csproj”。 所有项目文件名称中都带有后缀“proj”。 如果创建了 Visual Basic 项目，则项目文件名称将为“BuildApp.vbproj”。
+2. 请注意，在“属性”浏览器中，“项目文件”属性是“BuildApp.csproj”。 所有项目文件名称中都带有后缀“proj”。 如果创建了 Visual Basic 项目，则项目文件名称将为“BuildApp.vbproj”。
 
-3.  右键单击项目节点，然后单击“卸载项目”。
+3. 右键单击项目节点，然后单击“卸载项目”。
 
-4.  再次右键单击项目节点，然后单击“编辑 BuildApp.csproj”。
+4. 再次右键单击项目节点，然后单击“编辑 BuildApp.csproj”。
 
      该项目文件出现在代码编辑器中。
 
@@ -130,7 +130,7 @@ Message 任务将文本属性的字符串值作为输入并显示在输出设备
  从 Visual Studio 的“开发人员命令提示符”运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 -target 或 -t 命令行开关选择目标。
 
 > [!NOTE]
->  以下各部分将“开发人员命令提示”称为“命令窗口”。
+> 以下各部分将“开发人员命令提示”称为“命令窗口”。
 
 **生成目标**
 
@@ -156,7 +156,7 @@ Message 任务将文本属性的字符串值作为输入并显示在输出设备
     ```
 
 > [!NOTE]
->  如果出现的是 `The target "HelloWorld" does not exist in the project`，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。
+> 如果出现的是 `The target "HelloWorld" does not exist in the project`，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。
 
  通过在代码编辑器和命令窗口之间进行交替，可更改项目文件并快速查看结果。
 
@@ -222,20 +222,24 @@ $(PropertyName)
 4. 检查输出。 应看到这两行（.NET Framework 版本可能不同）：
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
->  如果未看到这两行，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。
+> 如果未看到这两行，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。
 
 ### <a name="conditional-properties"></a>条件属性
 
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **在命令行中设置属性值**
 
-1.  在“命令窗口”输入并执行此行：
+1. 在“命令窗口”输入并执行此行：
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  检查输出。 应看到此行：
+2. 检查输出。 应看到此行：
 
     ```
     Configuration is Release.
@@ -333,7 +337,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。
 
 > [!NOTE]
->  文件路径相对于包含 MSBuild 项目文件的文件夹。
+> 文件路径相对于包含 MSBuild 项目文件的文件夹。
 
 ## <a name="examine-item-type-values"></a>检查项类型值
 
@@ -381,21 +385,21 @@ MSBuild 创建配置属性并赋予其“发布”值。
 
 **每行显示一个项类型值**
 
-1.  从代码编辑器中使用此行替换 Message 任务：
+1. 从代码编辑器中使用此行替换 Message 任务：
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  保存项目文件。
+2. 保存项目文件。
 
-3.  在“命令窗口”输入并执行此行：
+3. 在“命令窗口”输入并执行此行：
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  检查输出。 应看到这些行：
+4. 检查输出。 应看到这些行：
 
     ```
     Compile item type contains Form1.cs

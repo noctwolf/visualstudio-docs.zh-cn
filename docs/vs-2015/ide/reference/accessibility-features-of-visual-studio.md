@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa41d340aff0c56975d2af66031b5d0d2343a0ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1d6c0a8fd4110b2e75d634a8ecfd5e397bb459f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441145"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60061796"
 - 方法和参数功能的自动完成
 
 > [!IMPORTANT]
->  本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果在美国以外的其他国家/地区获取到该产品，那么可以使用软件包附带的分公司信息卡或访问[“Microsoft 支持”的“联系我们”页面](http://support.microsoft.com/ContactUs)，然后单击“查找 Microsoft 全球办事处”链接（靠近网页底部）。 这一页面提供了载有 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。
+> 本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果在美国以外的其他国家/地区获取到该产品，那么可以使用软件包附带的分公司信息卡或访问[“Microsoft 支持”的“联系我们”页面](http://support.microsoft.com/ContactUs)，然后单击“查找 Microsoft 全球办事处”链接（靠近网页底部）。 这一页面提供了载有 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。
 
  有关详细信息，请参阅下列主题：
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446554"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：从生成中排除文件
 在项目文件中，可以使用通配符将所有文件包括在一个目录或一组嵌套目录中，以作为生成的输入。 但是，对于目录中的某个文件或嵌套目录中的某个目录，你可能并不希望将其作为生成的输入包括在内。 你可以从输入列表中显示排除该文件或目录。 有些时候，你只希望在特定情况下才包括项目中的某个文件。 那么你可以显式声明将文件包括在生成中的条件。
@@ -36,7 +36,7 @@ ms.locfileid: "56603165"
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>包括除 Form2 以外的所有.cs 或.vb 文件
 
--   使用以下 `Include` 和 `Exclude` 属性之一：
+- 使用以下 `Include` 和 `Exclude` 属性之一：
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ ms.locfileid: "56603165"
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>包括除 Form2 和 Form3 以外的所有.cs 或.vb 文件
 
--   使用以下 `Include` 和 `Exclude` 属性之一：
+- 使用以下 `Include` 和 `Exclude` 属性之一：
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ ms.locfileid: "56603165"
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>包括除 Version2 目录中的 .jpg 文件以外，图像目录子目录中的所有 .jpg 文件
 
--   使用以下 `Include` 和 `Exclude` 属性：
+- 使用以下 `Include` 和 `Exclude` 属性：
 
     ```xml
     <JPGFile
@@ -73,14 +73,14 @@ ms.locfileid: "56603165"
     ```
 
     > [!NOTE]
-    >  必须指定这两个属性的路径。 如果你使用绝对路径在 `Include` 属性中指定文件位置，那么在 `Exclude` 属性中也必须使用绝对路径；如果你在 `Include` 属性中使用相对路径，那么在 `Exclude` 属性中也必须使用相对路径。
+    > 必须指定这两个属性的路径。 如果你使用绝对路径在 `Include` 属性中指定文件位置，那么在 `Exclude` 属性中也必须使用绝对路径；如果你在 `Include` 属性中使用相对路径，那么在 `Exclude` 属性中也必须使用相对路径。
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>使用条件从生成的输入中排除文件或目录
  如果你希望在调试生成中包括某些项，而不希望在发布生成中包括这些项，则可以使用 `Condition` 属性来指定包括该项的条件。
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>仅在发布生成中包括文件 Formula.vb
 
--   使用类似于如下的 `Condition` 属性：
+- 使用类似于如下的 `Condition` 属性：
 
     ```xml
     <Compile
@@ -100,7 +100,7 @@ ms.locfileid: "56603165"
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

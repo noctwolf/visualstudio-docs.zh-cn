@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439366"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批处理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664331"
  你指定希望 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用其中一个任务特性中的 %(ItemMetaDataName) 表示法对任务执行批处理。 以下示例基于 `Color` 项元数据值将 `Example` 项列表划分为几个批次，并将每个批次单独地传递到 `MyTask` 任务。  
   
 > [!NOTE]
->  如果未在任务特性的其他位置引用项列表，或者如果元数据名称可能不明确，则可以使用 %(*ItemCollection.ItemMetaDataName*) 表示法完全限定要用于进行批处理的项元数据值。  
+> 如果未在任务特性的其他位置引用项列表，或者如果元数据名称可能不明确，则可以使用 %(*ItemCollection.ItemMetaDataName*) 表示法完全限定要用于进行批处理的项元数据值。  
   
 ```  
 <Project  

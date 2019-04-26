@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432988"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "59650572"
  选中此复选框时，如果有 JavaScript 文件在项目上下文外部打开，Visual Studio 将下载在文件中引用的远程 JavaScript 文件，以提供 IntelliSense 信息。 如果选择此选项，当你在 JavaScript 文件中包括这些文件作为引用时，将下载这些文件。  
   
 > [!NOTE]
->  对于 Web 项目，默认下载你的项目中所引用的远程文件。  
+> 对于 Web 项目，默认下载你的项目中所引用的远程文件。  
   
 ## <a name="statement-completion"></a>语句结束  
  可以使用这些选项更改 IntelliSense 语句结束的行为。  
@@ -74,7 +74,7 @@ ms.locfileid: "59650572"
   此选项指定文件加载到语言服务上下文的顺序。 可以使用 **“移除”**、 **“上移”** 和 **“下移”** 按钮配置此顺序。 为使 IntelliSense 正常工作，依赖于另一文件的文件必须在另一文件加载后加载。  
   
 > [!CAUTION]
->  如果在两个或更多隐式引用中无条件定义了一个对象，则将使用此列表中的最后一个引用来定义此对象。  
+> 如果在两个或更多隐式引用中无条件定义了一个对象，则将使用此列表中的最后一个引用来定义此对象。  
   
  **添加对组的引用**  
  使用此选项，可通过浏览到相应文件来添加其他 IntelliSense .js 文件。  

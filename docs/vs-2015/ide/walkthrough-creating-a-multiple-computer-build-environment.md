@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438137"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ ms.locfileid: "60044298"
   请注意，Program Files 文件夹的名称取决于所安装的操作系统。 在 x86 计算机上，名称为 \Program Files\\；在 x64 计算机上，名称为 \Program Files (x86)\\。 不考虑系统体系结构，此演练中的 Program Files 文件夹指的是 %ProgramFiles%。  
   
 > [!NOTE]
->  在生成计算机上，所有相关文件必须位于同一驱动器上；但是，该驱动器的驱动器号可能与主计算机上安装 Visual Studio 的驱动器的驱动器号不同。 在任何情况下，您在创建注册表项时，必须考虑文件位置，如本文档下文所述。  
+> 在生成计算机上，所有相关文件必须位于同一驱动器上；但是，该驱动器的驱动器号可能与主计算机上安装 Visual Studio 的驱动器的驱动器号不同。 在任何情况下，您在创建注册表项时，必须考虑文件位置，如本文档下文所述。  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>将 Windows SDK 文件复制到生成计算机  
   
@@ -223,7 +223,7 @@ ms.locfileid: "60044298"
 1. 标识注册表项的父文件夹。 所有注册表项均是在同一父项下创建的。 在 x86 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。 在 x64 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。 不考虑系统体系结构，此演练中的父项指的是 %RegistryRoot%。  
   
    > [!NOTE]
-   >  如果您的主计算机体系结构与您的生成计算机的不同，则请确保在每台计算机上使用适当的父项。 这在您实现导出过程的自动化时尤其重要。  
+   > 如果您的主计算机体系结构与您的生成计算机的不同，则请确保在每台计算机上使用适当的父项。 这在您实现导出过程的自动化时尤其重要。  
    >   
    >  此外，如果您在生成计算机上使用的驱动器号不同于在主计算机上使用的，则请确保更改注册表项的值以匹配。  
   
@@ -334,7 +334,7 @@ ms.locfileid: "60044298"
      **gacutil -i \<file>**  
   
     > [!NOTE]
-    >  若要将程序集完全安装到 GAC 中，可能需要重新启动。  
+    > 若要将程序集完全安装到 GAC 中，可能需要重新启动。  
   
 ## <a name="BuildingProjects"></a>生成项目  
  您可以使用 Team Foundation Build 生成 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目和解决方案，也可以在命令行上生成它们。 当您使用 Team Foundation Build 生成项目时，将调用对应于系统体系结构的 MSBuild 可执行文件。  在命令行上，您可以使用 32 位 MSBuild 或 64 位 MSBuild，并且您可以通过设置 PATH 环境变量或通过直接调用特定于体系结构的 MSBuild 可执行文件来选择 MSBuild 的体系结构。  
@@ -346,17 +346,17 @@ ms.locfileid: "60044298"
  若要详细了解如何在命令行处使用 MSBuild，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
->  若要生成 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目，您必须使用“v110”平台工具集。 如果您不想编辑 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目文件，则可以使用此命令行参数来设置平台工具集：  
+> 若要生成 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目，您必须使用“v110”平台工具集。 如果您不想编辑 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目文件，则可以使用此命令行参数来设置平台工具集：  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a>创建可以签入源代码管理的生成环境  
  您可以创建可部署到不同计算机的生成环境，这不需要 GAC 文件，也不需要修改注册表设置。 下列步骤只是实现此目的的一种途径。 使这些步骤适应您的生成环境的独特特征。  
   
 > [!NOTE]
->  您必须禁用增量生成，以便 tracker.exe 不会在生成期间引发错误。 若要禁用增量生成，请设置此生成参数：  
+> 您必须禁用增量生成，以便 tracker.exe 不会在生成期间引发错误。 若要禁用增量生成，请设置此生成参数：  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>创建可签入源代码管理的生成环境  
   

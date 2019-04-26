@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422890"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和移除项目依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60117624"
     “项目依赖项”对话框随即打开。  
   
    > [!NOTE]
-   >  “项目依赖项”选项仅可在具有多个项目的解决方案中使用。  
+   > “项目依赖项”选项仅可在具有多个项目的解决方案中使用。  
   
 3. 从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60117624"
      “项目依赖项”对话框随即打开。  
   
     > [!NOTE]
-    >  “项目依赖项”选项仅可在具有多个项目的解决方案中使用。  
+    > “项目依赖项”选项仅可在具有多个项目的解决方案中使用。  
   
 3. 从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。  
   

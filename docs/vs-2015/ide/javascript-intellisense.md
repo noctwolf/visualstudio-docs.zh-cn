@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412309"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 - [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]（如果正在使用支持 AJAX 的 ASP.NET Web 应用程序）。
 
     > [!NOTE]
-    >  HTML 元素的事件处理程序特性中的脚本或者在 `href` 特性中定义的脚本不支持 IntelliSense。
+    > HTML 元素的事件处理程序特性中的脚本或者在 `href` 特性中定义的脚本不支持 IntelliSense。
 
 ## <a name="ProcessingIntelliSenseInformation"></a>处理 Intellisense 信息
  为提供 JavaScript IntelliSense，该语言服务将执行以下操作：
@@ -189,7 +189,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  包含在 Web 应用程序项目 (WAP) 内的 Web 服务 (.asmx) 文件中的脚本不支持 JavaScript IntelliSense。
+> 包含在 Web 应用程序项目 (WAP) 内的 Web 服务 (.asmx) 文件中的脚本不支持 JavaScript IntelliSense。
 
  下面的示例演示如何引用基于页面的脚本。
 
@@ -233,18 +233,18 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
   在大多数情况下，你不必修改引用组。 但是，如果要更改，可使用 JavaScript 代码编辑器的配置选项，指定引用组中包含的文件。 有关使用此功能的说明，请参阅[选项、文本编辑器、JavaScript、IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。
 
 > [!TIP]
->  IntelliSense 引用通常用于为全局对象以及 IntelliSense [扩展](#Extensibility)提供 IntelliSense 支持。 你还可以对必须在运行时使用脚本加载程序加载的脚本使用该功能。
+> IntelliSense 引用通常用于为全局对象以及 IntelliSense [扩展](#Extensibility)提供 IntelliSense 支持。 你还可以对必须在运行时使用脚本加载程序加载的脚本使用该功能。
 
 ### <a name="remote-file-references"></a>远程文件引用
  你可以指示 Visual Studio 下载 JavaScript 文件所引用的远程 JavaScript 文件，以便为远程文件或库提供 IntelliSense 支持。 当你使用该功能时，文件会在你将其作为引用包含到 JavaScript 文件中时进行下载。
 
 > [!NOTE]
->  除 Web 项目外，该功能仅适用于在项目上下文外部打开的 JavaScript 文件。 对于 Web 项目，默认下载你的项目中所引用的远程文件。
+> 除 Web 项目外，该功能仅适用于在项目上下文外部打开的 JavaScript 文件。 对于 Web 项目，默认下载你的项目中所引用的远程文件。
 
  有关使用此功能的说明，请参阅[选项、文本编辑器、JavaScript、IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。
 
 > [!WARNING]
->  如果你启用该功能后发现代码编辑器速度降低，我们建议你将其禁用。
+> 如果你启用该功能后发现代码编辑器速度降低，我们建议你将其禁用。
 
 ### <a name="XMLDocComments"></a> XML 文档注释
  XML 文档注释是添加到脚本中的代码元素的文本说明。 引用注释的脚本时，IntelliSense 中将显示这些文本说明。 例如，你可提供有关函数的参数和返回值的信息。 XML 文档注释只能从引用的文件、程序集和服务中提供。 有关详细信息，请参阅 [XML 文档注释](../ide/xml-documentation-comments-javascript.md)和[创建 XML 文档注释](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)。
@@ -263,7 +263,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
  ASP.NET AJAX 也支持 JavaScript IntelliSense。 ASP.NET AJAX 包含一个客户端框架，该框架将扩展可用于 ECMAScript (JavaScript) 的标准类型。 为使 JavaScript IntelliSense 能够提供有关 ASP.NET AJAX 对象的详细信息，XML 文档注释已添加到整个 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 中。 使用包含在 ASP.NET AJAX 库中的类型和成员时，将会显示这些 XML 文档注释。
 
 > [!NOTE]
->  JavaScript IntelliSense 不显示私有成员。 在 ASP.NET AJAX 中用以下划线 (_) 开头的成员来表示私有成员。
+> JavaScript IntelliSense 不显示私有成员。 在 ASP.NET AJAX 中用以下划线 (_) 开头的成员来表示私有成员。
 
 ## <a name="Extensibility"></a> JavaScript IntelliSense 扩展性
  使用 JavaScript Language Service 提供的对象和函数，你将能够改变使用第三方库的开发人员的 IntelliSense 体验。 当默认语言服务无法提供你需要提供给客户的所有信息时，这些功能尤为有用。 有关详细信息，请参阅[扩展 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。

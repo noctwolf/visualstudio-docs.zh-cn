@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445656"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "59669037"
  如果 `UsingTask` 元素在项目文件中显式显示或通过导入的项目文件显示，则可以在该元素的任意位置引用环境变量、命令行属性和项目级属性。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
   
 > [!NOTE]
->  如果 `UsingTask` 元素来自使用 MSBuild 引擎进行全局注册的某个 .tasks 文件，则项目级属性没有意义。 项目级属性对于 MSBuild 而言不是全局性的。  
+> 如果 `UsingTask` 元素来自使用 MSBuild 引擎进行全局注册的某个 .tasks 文件，则项目级属性没有意义。 项目级属性对于 MSBuild 而言不是全局性的。  
   
  在 MSBuild 4.0 中，可以从 .overridetask 文件加载使用任务。  
   

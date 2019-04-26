@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443275"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60113945"
   下面列出了这些问题的补救措施。  
   
 > [!NOTE]
->  使用项目文件的绝对路径引用程序集中的文件。 因此，在多开发人员环境下工作的用户可能会在其本地环境中缺少引用的程序集。 为了避免这些错误，在这些情况下最好添加项目到项目的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)和[使用程序集编程](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。  
+> 使用项目文件的绝对路径引用程序集中的文件。 因此，在多开发人员环境下工作的用户可能会在其本地环境中缺少引用的程序集。 为了避免这些错误，在这些情况下最好添加项目到项目的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)和[使用程序集编程](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。  
   
 ## <a name="reference-path-is-incorrect"></a>引用路径不正确  
  如果在不同计算机上共享项目，当组件位于每台计算机上的不同目录中时可能找不到某些引用。 引用存储时采用组件文件的名称（例如，MyComponent）。 向项目添加引用时，组件文件的文件夹位置（例如 C:\MyComponents\\）追加到 **ReferencePath** 项目属性。  
@@ -50,7 +50,7 @@ ms.locfileid: "60113945"
  若要解决此问题，可以删除损坏的引用，然后使用“添加引用”对话框替换引用。 另一种解决方案是使用项目的属性页中的“引用路径”项，并修改列表中的文件夹，以指向正确位置。 为每台计算机上的每位用户保留“引用路径”属性。 因此，修改引用路径不会影响项目中的其他用户。  
   
 > [!TIP]
->  项目到项目的引用不存在这些问题。 因此，如果可以，请使用项目到项目的引用，而不是文件引用。  
+> 项目到项目的引用不存在这些问题。 因此，如果可以，请使用项目到项目的引用，而不是文件引用。  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>通过纠正引用路径修复损坏的项目引用  
   

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5c734d4d0b12bea1e13ac216700be5f85ed088
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440293"
 ---
 # <a name="attach"></a>Attach
 VSPerfCmd.exe“Attach”选项开始对进程 ID (PID) 指定的运行过程进行样本分析。
@@ -21,7 +21,7 @@ VSPerfCmd.exe“Attach”选项开始对进程 ID (PID) 指定的运行过程进
  若要使用“Attach”选项，必须在“Start”选项中指定“Sample”方法。
 
 > [!NOTE]
->  如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。
+> 如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。
 
 ## <a name="syntax"></a>语法
 
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] 指定采样间隔的数量和类型。
 
--   Timer - 每 `Cycles` 个处理器时钟周期采样一次。 如果未指定 `Cycles`，则使用 10,000,000 个周期。
+- Timer - 每 `Cycles` 个处理器时钟周期采样一次。 如果未指定 `Cycles`，则使用 10,000,000 个周期。
 
--   PF - 每 `Events` 个页面错误采样一次。 如果未指定 `Events`，则使用 10 个页面错误。
+- PF - 每 `Events` 个页面错误采样一次。 如果未指定 `Events`，则使用 10 个页面错误。
 
--   Sys - 每 `Events` 次操作系统调用采样一次。 如果未指定 `Events`，则使用 10 次系统调用。
+- Sys - 每 `Events` 次操作系统调用采样一次。 如果未指定 `Events`，则使用 10 次系统调用。
 
--   Counter - 每 `Reload` 个 `Name` 所指定的 CPU 性能计数器采样一次。 或者，`FriendlyName` 可指定一个字符串，将其用作探查器报告中的列标头。
+- Counter - 每 `Reload` 个 `Name` 所指定的 CPU 性能计数器采样一次。 或者，`FriendlyName` 可指定一个字符串，将其用作探查器报告中的列标头。
 
 ## <a name="example"></a>示例
  此示例演示如何附加到进程 ID 为 12345 的正在运行的应用程序实例。

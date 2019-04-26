@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441660"
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60114790"
  选择执行段中的一个点时，并发可视化工具会在相关调用堆栈上查找该时间点，然后在执行段中所选点上方显示黑色脱字号，并在“当前堆栈”选项卡上显示调用堆栈本身。可以在执行段上选择多个点。  
   
 > [!NOTE]
->  并发可视化工具可能无法解析执行段上的选择。 通常，当段的持续时间小于一毫秒时，会发生这种情况。  
+> 并发可视化工具可能无法解析执行段上的选择。 通常，当段的持续时间小于一毫秒时，会发生这种情况。  
   
  若要获取当前所选时间范围内所有已启用（未隐藏）线程的执行分析，请选择活动图例中的“执行”按钮。  
   

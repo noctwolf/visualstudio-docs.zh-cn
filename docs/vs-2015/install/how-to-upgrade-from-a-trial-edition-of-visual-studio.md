@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433033"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>如何：从 Visual Studio 的试用版升级
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069895"
  例如，你下载 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 并在使用了 10 天时进行注册，则可以再使用 80 天。 若要在 90 天之后继续使用产品，必须提供有效的产品密钥，或是使用与 MSDN 订阅或 Visual Studio Online 订阅关联的 Microsoft 帐户（或组织帐户）登录 Visual Studio。 有关如何查找或获取产品密钥的信息，请参阅[如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)和[如何购买 Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs)。
 
 > [!IMPORTANT]
->  Visual Studio Express 版的发行版本的试用期也为 30 天。 若要无限延长 Visual Studio 学习版的试用期，请登录到 Visual Studio 或注册该产品。
+> Visual Studio Express 版的发行版本的试用期也为 30 天。 若要无限延长 Visual Studio 学习版的试用期，请登录到 Visual Studio 或注册该产品。
 
  在升级之前，建议下载并查看 Microsoft 网站上提供的 [Visual Studio 和 MSDN 授权白皮书](http://www.microsoft.com/download/details.aspx?id=13350)。 有关其他帮助，请参阅 [Visual Studio 支持](http://support.microsoft.com/ph/1117/en-us)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "60069895"
 4. 输入有效的产品密钥，然后选择“应用”按钮。
 
     > [!NOTE]
-    >  若要注册和取消锁定 Visual Studio 的任意版本，需要接入 Internet。 但是，在注册 Visual Studio 之后，Internet 连接是可选的。
+    > 若要注册和取消锁定 Visual Studio 的任意版本，需要接入 Internet。 但是，在注册 Visual Studio 之后，Internet 连接是可选的。
 
 ## <a name="see-also"></a>请参阅
  [安装 Visual Studio](../install/install-visual-studio-2015.md) [登录 Visual Studio](../ide/signing-in-to-visual-studio.md) [如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md) [查找或更改 Team Foundation Server 的产品密钥](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

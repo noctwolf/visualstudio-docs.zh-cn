@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438035"
 ---
 # <a name="properties-window"></a>属性窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ ms.locfileid: "59658781"
  显示对象的事件。  
   
 > [!NOTE]
->  该“属性”窗口工具栏控件仅在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目的上下文中的窗体或控件设计器处于活动状态时可用。 编辑 XAML 文件时，事件将显示在属性窗口的单独选项卡上。  
+> 该“属性”窗口工具栏控件仅在 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目的上下文中的窗体或控件设计器处于活动状态时可用。 编辑 XAML 文件时，事件将显示在属性窗口的单独选项卡上。  
   
  消息  
  列出所有 Windows 消息。 允许针对为选定类提供的消息添加或删除指定处理程序函数。  
   
 > [!NOTE]
->  该“属性”窗口工具栏控件仅在“类视图”在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目的上下文中为活动窗口时可用。  
+> 该“属性”窗口工具栏控件仅在“类视图”在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目的上下文中为活动窗口时可用。  
   
  Overrides  
  列出选定类的所有虚函数并允许添加或删除重写函数。  
   
 > [!NOTE]
->  该“属性”窗口工具栏控件仅在“类视图”在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目的上下文中为活动窗口时可用。  
+> 该“属性”窗口工具栏控件仅在“类视图”在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目的上下文中为活动窗口时可用。  
   
  说明窗格  
  显示属性类型和属性的简短说明。 可以使用快捷菜单上的说明命令关闭和打开属性的说明。  
   
 > [!NOTE]
->  在设计器中编辑 XAML 文件时，此“属性”窗口工具栏控件不可用。  
+> 在设计器中编辑 XAML 文件时，此“属性”窗口工具栏控件不可用。  
   
  缩略图视图  
  在设计器中编辑 XAML 文件时，显示了当前所选元素的可视表示形式。  
