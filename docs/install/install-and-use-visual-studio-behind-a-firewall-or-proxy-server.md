@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974704"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -121,7 +121,7 @@ ms.locfileid: "58857523"
 | 快照 <br>调试器 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022（Visual Studio 从属版本） | 1.查询 .json 文件的应用服务 SKU 大小 <br>2.各种 Azure RM 调用 <br>3.站点预热调用渠道  <br>4.客户的目标应用服务 Kudu 终结点 <br>5.查询 nuget.org 中发布的站点扩展版本 <br>6.远程调试通道 |
 | Azure 流分析 <br><br>HDInsight | Management.azure.com | https | 443 | 用于查看、提交、运行和管理 ASA 作业 <br><br> 用于浏览 HDI 群集，以及提交、诊断和调试 HDI 作业 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用于编译、提交、查看、诊断和调试作业；用于浏览 ADLS 文件；用于上传和下载文件 |
-| 打包服务 | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 仅特定生成任务方案（例如：NuGet 工具安装程序、节点工具安装程序）或者打算将公共上游与源结合使用时才需使用 \*.npmjs.org、\*.nuget.org 和 \*.nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
+| 打包服务 | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 仅特定生成任务方案（例如：NuGet 工具安装程序、节点工具安装程序）或者打算将公共上游与源结合使用时才需使用 .npmjs.org、.nuget.org 和 .nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | 用于连接 Azure DevOps Services |
 | | | | | |
 
@@ -141,8 +141,8 @@ ms.locfileid: "58857523"
 
 ## <a name="see-also"></a>请参阅
 
-* [Live Share 的连接性要求](/visualstudio/liveshare/reference/connectivity/)
+* [Live Share 连接性要求](/visualstudio/liveshare/reference/connectivity/)
 * [创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)
-* [对 Visual Studio 中网络相关错误的故障排除](troubleshooting-network-related-errors-in-visual-studio.md)
+* [对 Visual Studio 中与网络相关错误的故障排除](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [在防火墙或代理服务器后安装 (Visual Studio for Mac)](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)

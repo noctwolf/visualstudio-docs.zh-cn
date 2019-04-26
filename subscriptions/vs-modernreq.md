@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio Enterprise 订阅中包含的 ModernRequirements 产品套件。
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947745"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 MODERNRequirements4TFS 权益
 
 所选的 Visual Studio 订阅包含 6 个月的 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 订阅。  MODERNRequirements SmartOffice4TFS 通过基于 Microsoft Word 的报告以及快捷简化的富文本编写功能扩展了 TFS 或 Azure DevOps Services 的功能。  ModernRequirements4TFS 提供工作项基线和 HTML5 模拟功能。
-
 
 ## <a name="activation-steps"></a>激活步骤
 1. 若要使用 MODERNRequirementsTFS 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
@@ -31,11 +30,9 @@ ms.locfileid: "56842502"
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements 登录页](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. 下一页包含你的许可证密钥。  请查看页面上提供的安装信息，然后单击页面中间蓝色的“请单击此处下载软件”链接。
    > [!div class="mx-imgBorder"]
    > ![ModernRequirements 许可证密钥](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. 在下载页上，可以选择安装 MODERNRequirements 套件或 SMARTOffice4TFS 套件的单个模块。  根据首选项和所安装的 TFS 版本选择合适的选项。  请务必熟悉页面上的信息，有助于选择合适版本的产品。
    > [!div class="mx-imgBorder"]
@@ -93,15 +90,14 @@ ms.locfileid: "56842502"
 | Visual Studio Dev Essentials | NA  |不可用                                                          |NA     |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (Enterprise)、FTE。不包括：Microsoft 合作伙伴网络 (Professional)、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务。
+<sup>1</sup>包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (Enterprise)、FTE。不包括：Microsoft 合作伙伴网络 (Professional)、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务*。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
 
-
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
--  需要与 ModernRequirements 产品相关的帮助？  请访问 https://www.modernrequirements.com/support-2/。
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 需要与 ModernRequirements 产品相关的帮助？  请访问 https://www.modernrequirements.com/support-2/。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

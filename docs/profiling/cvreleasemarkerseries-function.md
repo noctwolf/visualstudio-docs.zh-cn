@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d100b7ff37ea5a3cd224fd420f14e4cb23061903
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974136"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函数
 发布标记系列。 在发布之后请勿使用标记系列对象，否则应用程序可能会崩溃。 标记系列发布失败会导致内存泄漏。

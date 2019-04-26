@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956925"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -127,14 +127,14 @@ ms.locfileid: "59366895"
     | | **项目默认值** > **配置类型** | **动态库(.dll)** |
     | **C/C++** > **常规** | **附加包含目录** | 根据相应的安装添加 Python“include” 文件夹，例如 `c:\Python36\include`。  |
     | **C/C++** > **预处理器** | **预处理器定义** | **仅 CPython**：将 `Py_LIMITED_API;` 添加到字符串开头（包括分号）。 此定义会限制可从 Python 调用的某些函数，并使代码在 Python 不同版本之间更易于移植。 如果使用的是 PyBind11，请勿添加此定义，否则将会看到生成错误。 |
-    | **C/C++** > **代码生成** | **运行库** | **多线程 DLL (/MD)**（请参阅下面的“警告”） |
+    | **C/C++** > **代码生成** | **运行时库** | **多线程 DLL (/MD)**（请参阅下面的“警告”） |
     | 链接器 > **常规** | **附加库目录** | 根据相应的安装添加包含 .lib 文件的 Python“libs”文件夹，例如 `c:\Python36\libs`。 （务必指向包含 .lib 文件的“libs”文件夹，而非包含 .py 文件的 Lib 文件夹。） |
 
     > [!Tip]
     > 如果在项目属性中未看到 C/C++ 选项卡，这是因为项目不包含标识为 C/C++ 源文件的任何文件。 如果创建的源文件不含 .c 或 .cpp 扩展名，则可能出现这种情况。 例如，如果之前在“新建项”对话框中不小心输入了 `module.coo`（而不是 `module.cpp`），则 Visual Studio 会创建文件，但不会将文件类型设置为“C/C+ 代码”，而正是它激活 C/C++ 属性选项卡。即使将文件重命名为带 `.cpp`，此类识别错误仍会存在。 为了正确设置文件类型，请在“解决方案资源管理器”中右键单击文件，选择“属性”，然后将“文件类型”设置为“C/C++ 代码”。
 
     > [!Warning]
-    > 即使对于调试配置，也始终将“C/C++” > “代码生成” > “运行时库”选项设置为“多线程 DLL (/MD)”，因为此设置是生成非调试 Python 二进制文件时使用的设置。 使用 CPython 时，如果碰巧设置了“多线程调试 DLL (/MDd)”选项，生成“调试”配置会生成错误“C1189:Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG”。 此外，如果删除 `Py_LIMITED_API`（使用 CPython 时必须这样做，但在使用 PyBind11 时则不是）以免出现生成错误，Python 会在尝试导入模块时发生故障。 （如下所述，对 `PyModule_Create` 的 DLL 调用中发生故障，显示输出消息“Python 错误:PyThreadState_Get: 无当前线程”。）
+    > 即使对于调试配置，也始终将“C/C++” > “代码生成” > “运行时库”选项设置为“多线程 DLL (/MD)”，因为此设置是生成非调试 Python 二进制文件时使用的设置。 使用 CPython 时，如果碰巧设置了“多线程调试 DLL (/MDd)”选项，生成“调试”配置会生成错误“C1189:Py_LIMITED_API is incompatible with Py_DEBUG, Py_TRACE_REFS, and Py_REF_DEBUG”**。 此外，如果删除 `Py_LIMITED_API`（使用 CPython 时必须这样做，但在使用 PyBind11 时则不是）以免出现生成错误，Python 会在尝试导入模块时发生故障。 （如下所述，对 `PyModule_Create` 的 DLL 调用中发生故障，显示输出消息“Python 错误:PyThreadState_Get: 无当前线程”**。）
     >
     > /MDd 选项用于生成 Python 调试二进制文件（例如 python_d.exe），但对扩展 DLL 选择此选项仍会导致 `Py_LIMITED_API` 的生成错误。
 
@@ -264,7 +264,7 @@ ms.locfileid: "59366895"
 
 C++ 模块可能无法编译的原因如下：
 
-- 无法找到 Python.h（E1696：无法打开源文件 "Python.h" 和/或 C1083：无法打开 include 文件："Python.h"：没有此类文件或目录）：验证项目属性中的“C/C++” > “常规” > “附加 Include 目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
+- 无法找到 Python.h（E1696：无法打开源文件 "Python.h" 和/或 C1083：无法打开 include 文件："Python.h"：没有此类文件或目录）：验证项目属性中的“C/C++” > “常规” > “附加 Include 目录”中的路径是否指向 Python 安装的“include”文件夹**。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
 - 无法找到 Python 库：验证项目属性中的“链接器” > “常规” > “附加库目录”中的路径是否指向 Python 安装的“libs”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
@@ -288,7 +288,7 @@ C++ 模块可能无法编译的原因如下：
 
 1. 右键单击 C++ 项目，然后选择“添加” > “新建项”，在项目中创建名为 setup.py 的文件。 然后选择“C++ 文件 (.cpp)”并命名为 `setup.py`，再选择“确定”（尽管使用了 C++ 文件模板，但使用 .py 扩展命名文件可让 Visual Studio 将其识别为 Python）。 编辑器中出现该文件时，以适合扩展方法的形式将以下代码粘贴到其中：
 
-    **CPython 扩展（superfastcode 项目）：**
+    CPython 扩展（superfastcode 项目）：
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -303,7 +303,7 @@ C++ 模块可能无法编译的原因如下：
 
     请参阅 [Building C and C++ Extentions](https://docs.python.org/3/extending/building.html)（生成 C 和 C++ 扩展）(python.org)，获取此脚本相关文档。
 
-    **PyBind11（superfastcode2 项目）：**
+    PyBind11（superfastcode2 项目）：
 
     ```python
     import os, sys

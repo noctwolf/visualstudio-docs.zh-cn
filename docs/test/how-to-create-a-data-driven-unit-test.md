@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979235"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 
@@ -27,27 +27,27 @@ ms.locfileid: "55931437"
 
 创建数据驱动的单元测试包括以下步骤：
 
-1.  创建包含测试方法中使用的值的数据源。 数据源可以是在运行测试的计算机上注册的任何类型数据源。
+1. 创建包含测试方法中使用的值的数据源。 数据源可以是在运行测试的计算机上注册的任何类型数据源。
 
-2.  将私有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 字段和公共 `TestContext` 属性添加到测试类。
+2. 将私有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 字段和公共 `TestContext` 属性添加到测试类。
 
-3.  创建单元测试方法并为其添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 属性。
+3. 创建单元测试方法并为其添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 属性。
 
-4.  使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引器属性检索测试中使用的值。
+4. 使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> 索引器属性检索测试中使用的值。
 
 ## <a name="the-method-under-test"></a>待测试的方法
 
 例如，假定已具有：
 
-1.  一种名为 `MyBank` 的解决方案，此解决方案接受并处理不同类型的帐户的事务。
+1. 一种名为 `MyBank` 的解决方案，此解决方案接受并处理不同类型的帐户的事务。
 
-2.  `MyBank` 中名为 `BankDb` 的项目，此项目管理帐户的事务。
+2. `MyBank` 中名为 `BankDb` 的项目，此项目管理帐户的事务。
 
-3.  `DbBank` 项目中名为 `Maths` 的类，此类执行数学函数，以确保任何事务对银行有利。
+3. `DbBank` 项目中名为 `Maths` 的类，此类执行数学函数，以确保任何事务对银行有利。
 
-4.  名为 `BankDbTests` 的单元测试项目，用于测试 `BankDb` 组件的行为。
+4. 名为 `BankDbTests` 的单元测试项目，用于测试 `BankDb` 组件的行为。
 
-5.  名为 `MathsTests` 的单元测试类，用于验证 `Maths` 类的行为。
+5. 名为 `MathsTests` 的单元测试类，用于验证 `Maths` 类的行为。
 
 我们将在 `Maths` 中测试一个方法，此方法使用循环添加两个整数：
 

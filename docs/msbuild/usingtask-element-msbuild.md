@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411011"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 将 [Task](../msbuild/task-element-msbuild.md) 元素中引用的任务映射到包含该任务实现的程序集。
@@ -69,7 +69,7 @@ ms.locfileid: "56645740"
  `UsingTask` 元素（该元素直接进入或通过导入项目文件而包括在项目文件中）可以引用环境变量、命令行属性、项目级属性及项目级项。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。
 
 > [!NOTE]
->  如果 `UsingTask` 元素来自使用 MSBuild 引擎进行全局注册的某个 .tasks 文件，则项目级属性和项没有意义。 项目级值对于 MSBuild 而言不是全局性的。
+> 如果 `UsingTask` 元素来自使用 MSBuild 引擎进行全局注册的某个 .tasks 文件，则项目级属性和项没有意义。 项目级值对于 MSBuild 而言不是全局性的。
 
  在 MSBuild 4.0 中，可以从 .overridetask 文件加载 using 任务。
 
