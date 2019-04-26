@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729f09f680969cb6a6653109f57d382cd7238557
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779086"
 ---
 # <a name="warning-task"></a>Warning 任务
 基于评估的条件语句，在生成期间记录警告。
 
 ## <a name="parameters"></a>参数
  下表描述了 `Warning` 任务的参数。
-
 
 | 参数 | 说明 |
 |---------------| - |

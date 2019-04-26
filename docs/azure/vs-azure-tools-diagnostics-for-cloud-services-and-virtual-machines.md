@@ -1,19 +1,21 @@
 ---
 title: 为 Azure 云服务和虚拟机设置诊断 | Microsoft Docs
 description: 了解如何在 Visual Studio 中为调试 Azure 云服务和虚拟机 (VM) 设置诊断。
-author: ghogen
+author: mikejo5000
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556232"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>为 Azure 云服务和虚拟机设置诊断
 需要对 Azure 云服务或虚拟机进行故障排除时，可使用 Visual Studio 更轻松地设置 Azure 诊断。 诊断可以在运行云服务的虚拟机和虚拟机实例上捕获系统数据和日志记录数据。 诊断数据传输到所选的存储帐户。 有关 Azure 中诊断日志记录的详细信息，请参阅[为 Azure 应用服务中的 Web 应用启用诊断日志记录](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -154,6 +156,7 @@ ms.locfileid: "55908721"
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>性能计数器
 性能计数器信息可以帮助找到系统瓶颈，并优化系统和应用程序性能。 有关详细信息，请参阅[在 Azure 应用程序中创建和使用性能计数器](https://msdn.microsoft.com/library/azure/hh411542.aspx)。 若要捕获性能计数器，请选中“启用性能计数器的传输”复选框。 若要增加或减少事件日志传输到存储帐户的时间间隔，请更改“传输周期(分钟)”值。 选中与要跟踪的性能计数器对应的复选框。
 

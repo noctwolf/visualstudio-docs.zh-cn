@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953800"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
 在 5-10 分钟介绍“用作 Python IDE 的 Visual Studio”的简介中，你将基于 Flask 框架创建一个简单的 Python Web 应用程序。 你将通过介绍 Visual Studio 基本功能的单独步骤创建项目。
 
-如果你尚未安装 Visual Studio，请转到 [ Visual Studio下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)免费安装它。 在安装程序中，请确保选择“Python 开发”工作负荷。
+::: moniker range="vs-2017"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。 在安装程序中，请确保选择“Python 开发”工作负荷。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。 在安装程序中，请确保选择“Python 开发”工作负荷。
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>创建项目
 

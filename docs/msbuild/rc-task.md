@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974652"
 ---
 # <a name="rc-task"></a>RC 任务
 包装 Microsoft Windows 资源编译器工具 rc.exe。 RC 任务将游标、图标、位图、对话框和字体等资源编译为一个资源 (.res) 文件。 有关详细信息，请参阅[资源编译器](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler)。

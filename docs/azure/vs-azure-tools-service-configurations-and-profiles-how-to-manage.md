@@ -4,17 +4,19 @@ description: 了解如何使用服务配置和配置文件，这两种配置文�
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568991"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服务配置和配置文件
 ## <a name="overview"></a>概述
@@ -31,28 +33,28 @@ ms.locfileid: "55919347"
 
 ### <a name="to-add-a-service-configuration"></a>添加服务配置
 1. 在解决方案资源管理器中，打开 Azure 项目的快捷菜单，并选择“管理配置”。
-
+   
     此时会显示“管理服务配置”对话框。
 2. 若要添加服务配置，必须创建现有配置的副本。 为此，请从“名称”列表中选择想要复制的配置，并选择“创建副本”。
 3. （可选）要为服务配置指定其他名称，请从“名称”列表中选择新的服务配置，并选择“重命名”。 在“名称”文本框中，键入要用于此服务配置的名称，并选择“确定”。
-
+   
     此时名为 ServiceConfiguration.[New Name].cscfg 的新服务配置文件将添加到解决方案资源管理器的 Azure 项目中。
 
 ### <a name="to-delete-a-service-configuration"></a>删除服务配置
 1. 在解决方案资源管理器中，打开 Azure 项目的快捷菜单，并选择“管理配置”。
-
+   
     此时会显示“管理服务配置”对话框。
 2. 要删除服务配置，请从“名称”列表中选择要删除的配置，并选择“删除”。 此时会显示一个对话框框以确认要删除此配置。
 3. 选择“删除”。
-
+   
      此时该服务配置文件将从解决方案资源管理器的 Azure 项目中删除。
 
 ### <a name="to-rename-a-service-configuration"></a>重命名服务配置
 1. 在解决方案资源管理器中，打开 Azure 项目的快捷菜单，并选择“管理配置”。
-
+   
     此时会显示“管理服务配置”对话框。
 2. 要重命名服务配置，请从“名称”列表中选择新的服务配置，并选择“重命名”。 在“名称”文本框中，键入要用于此服务配置的名称，并选择“确定”。
-
+   
     此时该服务配置文件的名称会在解决方案资源管理器的 Azure 项目中更改。
 
 ### <a name="to-change-a-service-configuration"></a>更改服务配置
@@ -66,16 +68,16 @@ ms.locfileid: "55919347"
 ### <a name="to-add-a-profile"></a>添加配置文件
 1. 打开 Azure 项目的快捷菜单，并选择“发布”。
 2. 选择“目标配置文件”列表旁边的“保存配置文件”按钮，如下图所示。 这会创建一个配置文件。
-
+   
     ![创建新的配置文件](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. 创建配置文件后，选择“目标配置文件”列表中的“<管理…>”。
-
+   
     此时会显示“管理配置文件”对话框，如下图所示。
-
+   
     ![“管理配置文件”对话框](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. 在“名称”列表中，选择一个配置文件，并选择“创建副本”。
 5. 选择“关闭”按钮。
-
+   
     此时新的配置文件将出现在“目标配置文件”列表中。
 6. 在“目标配置文件”列表中，选择刚创建的配置文件。 将使用所选配置文件中的选项填充“发布向导”设置。
 7. 选择“上一页”和“下一页”按钮以显示发布向导的每一页，并自定义此配置文件的设置。 有关信息，请参阅 [Publish Azure Application Wizard](http://go.microsoft.com/fwlink/p/?LinkID=623085)（发布 Azure 应用程序向导）。
