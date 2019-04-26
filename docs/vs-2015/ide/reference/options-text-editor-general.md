@@ -48,12 +48,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9787342709ba9b09ac533177fd6600b9e5c86a0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b33fb6408bc9d37d7f0c94af9253a1ce9879235a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441323"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "59668998"
 使用此对话框可以更改 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 代码和文本编辑器的全局设置。 若要显示此对话框，请在“工具”菜单上单击“选项”，展开“文本编辑器”文件夹，然后单击“常规”。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="settings"></a>设置  
  拖放文本编辑  

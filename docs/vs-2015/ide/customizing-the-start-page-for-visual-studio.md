@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c5897c6ffc2b4530ce74b29114c84cd3556f25cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437566"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>自定义 Visual Studio 的起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60062927"
     - 从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)、其他网站或本地 Intranet 中的页上安装起始页。
 
         > [!NOTE]
-        >  如果你希望使用面向早期版本 Visual Studio 的页，则可以使用 Visual Studio SDK 升级此页。 请参阅[如何：升级 Visual Studio 自定义起始页](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。
+        > 如果你希望使用面向早期版本 Visual Studio 的页，则可以使用 Visual Studio SDK 升级此页。 请参阅[如何：升级 Visual Studio 自定义起始页](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md)。
 
          打开包含自定义起始页的 .vsix 文件，或复制起始页文件并将其粘贴到计算机上的“%USERPROFILE% \My Documents\Visual Studio 2015\StartPages”文件夹。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60062927"
 4. 在“自定义起始页”列表中，选择所需的页。
 
 > [!NOTE]
->  如果自定义起始页中的错误导致 Visual Studio 崩溃，则可以使用安全模式下启动 Visual Studio，然后将其设置为使用默认起始页。 请参阅 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
+> 如果自定义起始页中的错误导致 Visual Studio 崩溃，则可以使用安全模式下启动 Visual Studio，然后将其设置为使用默认起始页。 请参阅 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
 
 ## <a name="see-also"></a>请参阅
  [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [创建自己的起始页](../misc/creating-your-own-start-page.md)

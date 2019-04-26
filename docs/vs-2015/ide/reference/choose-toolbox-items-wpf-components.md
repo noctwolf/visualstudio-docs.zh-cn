@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433690"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>选择工具箱项，WPF 组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ ms.locfileid: "59647697"
 - 选中组件旁边的复选框后，该组件的图标将显示在“工具箱”中。  
   
   > [!TIP]
-  >  若要将 WPF 控件的实例添加到打开进行编辑的项目文档，请将其“工具箱”图标拖动到“设计”视图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[如何：管理“工具箱”窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+  > 若要将 WPF 控件的实例添加到打开进行编辑的项目文档，请将其“工具箱”图标拖动到“设计”视图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[如何：管理“工具箱”窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
 - 清除组件旁边的复选框后，将从中“工具箱”中删除相应的图标。  
   
   > [!NOTE]
-  >  计算机上安装的 .NET Framework 组件仍然可用，无论其图标是否显示在“工具箱”中。  
+  > 计算机上安装的 .NET Framework 组件仍然可用，无论其图标是否显示在“工具箱”中。  
   
   “WPF 组件”选项卡上的列包含下列信息：  
   

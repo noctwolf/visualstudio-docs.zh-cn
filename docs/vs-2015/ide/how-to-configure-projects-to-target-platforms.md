@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422790"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：配置项目以面向目标平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60084916"
    2. 在“键入或选择新平台”列表中，选择“x64”。  
   
        > [!NOTE]
-       >  如果对配置进行了重命名，则可能需要修改“项目设计器”中的设置，以面向正确的平台。  
+       > 如果对配置进行了重命名，则可能需要修改“项目设计器”中的设置，以面向正确的平台。  
   
    3. 如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。  
   

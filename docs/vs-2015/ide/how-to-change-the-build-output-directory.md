@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2e1fd8e54d34d8998158781c9de67d2e3a8cf01
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439261"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60104858"
 可以按项目生成的配置（调试、发布或两者）指定输出的位置。  
   
 > [!NOTE]
->  如果你具有“安装”  项目，请参阅本文末尾处的注释。  
+> 如果你具有“安装”  项目，请参阅本文末尾处的注释。  
   
 ## <a name="changing-the-build-output-directory"></a>更改生成输出目录  
   
@@ -39,7 +39,7 @@ ms.locfileid: "60104858"
      查找输出路径条目（Visual Basic 中的 **“生成输出路径”** ，Visual C++中的 **“输出目录”** ，JavaScript 和 C# 中的 **“输出路径”** ）。 指定一个相对于项目目录的新的生成输出目录。  
   
 > [!NOTE]
->  在“安装”项目中，“输出文件名称”  框仅更改 Setup.exe 文件的位置，而不更改项目文件的位置。 有关详细信息，请参阅 **生成、配置属性、“部署项目属性”对话框**。  
+> 在“安装”项目中，“输出文件名称”  框仅更改 Setup.exe 文件的位置，而不更改项目文件的位置。 有关详细信息，请参阅 **生成、配置属性、“部署项目属性”对话框**。  
   
 ## <a name="see-also"></a>请参阅  
  [生成页、项目设计器 (C#)](../ide/reference/build-page-project-designer-csharp.md)   

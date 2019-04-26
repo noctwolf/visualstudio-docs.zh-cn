@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432312"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中标识并自定义键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60056063"
   如果一个快捷键仅分配给全局上下文中的一个命令，则该快捷键将始终调用该命令。 但是，一个快捷键可以同时分配给全局上下文和特定上下文中的不同命令。 如果你在特定上下文中使用这个快捷键，则该快捷键将调用特定上下文中的命令，而非全局上下文中的命令。
 
 > [!NOTE]
->  你的 Visual Studio 设置和版本可能会更改对话框中显示的菜单命令和选项的名称和位置。 本主题基于“常规开发设置”。
+> 你的 Visual Studio 设置和版本可能会更改对话框中显示的菜单命令和选项的名称和位置。 本主题基于“常规开发设置”。
 
 ## <a name="bkmk_identify"></a>认识键盘快捷方式
 
@@ -91,12 +91,12 @@ ms.locfileid: "60056063"
      例如，如果希望快捷方式适用于所有上下文，可选择“全局”。 你可以使用没有在另一个编辑器中映射（为“全局”）的任何快捷键。 否则，编辑器将会重写快捷键。
 
     > [!NOTE]
-    >  以下键不能用于构成“全局”范围中的键盘快捷方式：PrtScn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、PgUp、PgDn、Windows 徽标键、应用程序键、任何箭头键或 Enter；数字键盘上的 Num Lock、Del 或 Clear；或者 Ctrl+Alt+Delete。
+    > 以下键不能用于构成“全局”范围中的键盘快捷方式：PrtScn/Sys Rq、Scroll Lock、Pause/Break、Tab、Caps Lock、Insert、Home、End、PgUp、PgDn、Windows 徽标键、应用程序键、任何箭头键或 Enter；数字键盘上的 Num Lock、Del 或 Clear；或者 Ctrl+Alt+Delete。
 
 6. 在“按快捷键”框中，输入要使用的快捷方式。
 
     > [!NOTE]
-    >  你可以创建将字母与 Alt 键和/或 Ctrl 键相结合的快捷键。 你也可以创建将 Shift 键和字母与 Alt 键和/或 Ctrl 键相结合的快捷键。
+    > 你可以创建将字母与 Alt 键和/或 Ctrl 键相结合的快捷键。 你也可以创建将 Shift 键和字母与 Alt 键和/或 Ctrl 键相结合的快捷键。
 
      如果快捷方式已分配给另一个命令，则显示在“快捷方式的当前使用对象”框中。 在这种情况下，按 Backspace 键删除该快捷键，然后再尝试另一个。
 
@@ -105,7 +105,7 @@ ms.locfileid: "60056063"
 7. 选择“分配”按钮。
 
     > [!NOTE]
-    >  如果为命令指定不同的快捷方式，则选择“分配”按钮，然后选择“取消”按钮，对话框随即关闭，但是更改不会撤消。
+    > 如果为命令指定不同的快捷方式，则选择“分配”按钮，然后选择“取消”按钮，对话框随即关闭，但是更改不会撤消。
 
 ## <a name="bkmk_transfer"></a>共享自定义键盘快捷方式
  你可以共享你的自定义键盘快捷键，方法是将其导出到文件中，然后将文件提供给他人，以便他们导入数据。

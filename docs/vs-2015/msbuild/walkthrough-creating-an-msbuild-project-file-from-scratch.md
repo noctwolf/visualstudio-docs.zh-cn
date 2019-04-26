@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445611"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ ms.locfileid: "60096577"
  Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `Csc` 任务是唯一的任务。 它需要编译一系列源文件，这一系列文件由 `Compile` 项的值指定。 `Compile` 项只引用一个源文件，即 Helloworld.cs。  
   
 > [!NOTE]
->  在项元素中，可以使用星号通配符 (*) 来引用文件扩展名为 .cs 的所有文件，如下所示：  
+> 在项元素中，可以使用星号通配符 (*) 来引用文件扩展名为 .cs 的所有文件，如下所示：  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  但是，建议不要使用通配符，因为在添加或删除了源文件的情况下，这样会使调试和选择性目标设定更为困难。  
+> 但是，建议不要使用通配符，因为在添加或删除了源文件的情况下，这样会使调试和选择性目标设定更为困难。  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>扩展路径以包括 MSBuild  
  必须先扩展 PATH 环境变量以包括 .NET Framework 文件夹，然后才能访问 MSBuild。  
@@ -182,9 +182,9 @@ ms.locfileid: "60096577"
      显示的消息应为 **Hello, world!** 。  
   
 > [!NOTE]
->  可以通过提高详细信息级别来查看有关生成的更多详细级别。 要将详细级别设置为“详细”，请在命令提示符下键入以下任一命令：  
+> 可以通过提高详细信息级别来查看有关生成的更多详细级别。 要将详细级别设置为“详细”，请在命令提示符下键入以下任一命令：  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>添加生成属性  
  可以将生成属性添加到项目文件中，从而进一步控制生成。 现在添加以下属性：  
@@ -243,17 +243,17 @@ ms.locfileid: "60096577"
 ```  
   
 > [!NOTE]
->  在 `OutputPath` 元素中指定文件夹名称时，建议在文件夹名称的末尾添加反斜杠 (\\) 路径分隔符，而不是将其添加到 `Csc` 任务的 `OutputAssembly` 属性中。 因此，  
+> 在 `OutputPath` 元素中指定文件夹名称时，建议在文件夹名称的末尾添加反斜杠 (\\) 路径分隔符，而不是将其添加到 `Csc` 任务的 `OutputAssembly` 属性中。 因此，  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  优于  
+> 优于  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>测试生成属性  
  现在即可使用项目文件来生成应用程序，在该项目文件中，你使用了生成属性来指定输出文件夹和应用程序名称。  

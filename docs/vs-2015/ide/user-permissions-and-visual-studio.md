@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443222"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60101881"
 出于安全目的，你应尽可能以普通用户的身份来运行 Visual Studio。
 
 > [!WARNING]
->  你还应确保不要编译、启动或调试任何来自不受信任用户或地址的 Visual Studio 解决方案。
+> 你还应确保不要编译、启动或调试任何来自不受信任用户或地址的 Visual Studio 解决方案。
 
  作为普通用户，你可以在 Visual Studio IDE 中完成几乎所有操作，但你需要管理员权限才能完成以下任务：
 

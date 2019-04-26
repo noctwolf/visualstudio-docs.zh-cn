@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422903"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60071195"
 - 在“解决方案资源管理器”中，打开解决方案的快捷菜单，然后选择“配置管理器”。  
   
   > [!NOTE]
-  >  如果快捷菜单上没有“配置管理器”命令，请查看菜单栏上的“生成”菜单。 如果菜单栏上也没有，请依次选择“工具”、“选项”，然后在“选项”对话框的左侧窗格中依次展开“项目和解决方案”、“常规”，之后在右侧窗格中选择“显示高级生成配置”复选框。  
+  > 如果快捷菜单上没有“配置管理器”命令，请查看菜单栏上的“生成”菜单。 如果菜单栏上也没有，请依次选择“工具”、“选项”，然后在“选项”对话框的左侧窗格中依次展开“项目和解决方案”、“常规”，之后在右侧窗格中选择“显示高级生成配置”复选框。  
   
    在“配置管理器”对话框中，可以使用“活动解决方案配置”下拉列表选择解决方案级生成配置，修改现有配置或创建新的配置。 可以使用“活动解决方案平台”下拉列表选择配置面向的平台、修改现有平台或添加新的平台。 “项目上下文”窗格会列出解决方案中的项目。 对于每个项目，可以选择项目特定的配置和平台、修改现有配置和平台、创建新配置或添加新平台。 使用解决方案级配置生成或部署解决方案时，还可以选择指示是否包含每个项目的复选框。  
   

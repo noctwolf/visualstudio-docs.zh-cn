@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445321"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>演练：创建内联任务
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 从 .NET Framework 版本 4 开始，可以在项目文件中创建内联任务。 无需创建单独的程序集来承载该任务。 有关详细信息，请参阅[内联任务](../msbuild/msbuild-inline-tasks.md)。
 
  此演练演示如何创建和运行以下内联任务：
 
--   不具有任何输入参数或输出参数的任务。
+- 不具有任何输入参数或输出参数的任务。
 
--   具有一个输入参数但不具有输出参数的任务。
+- 具有一个输入参数但不具有输出参数的任务。
 
--   具有两个输入参数且具有一个返回 MSBuild 属性的输出参数的任务。
+- 具有两个输入参数且具有一个返回 MSBuild 属性的输出参数的任务。
 
--   具有两个输入参数且具有一个返回 MSBuild 项的输出参数的任务。
+- 具有两个输入参数且具有一个返回 MSBuild 项的输出参数的任务。
 
 若要创建并运行这些任务，请使用 Visual Studio 和 **Visual Studio 命令提示符窗口**，如下所示：
 
-1.   使用 Visual Studio 创建一个 MSBuild 项目文件。
+1. 使用 Visual Studio 创建一个 MSBuild 项目文件。
 
-2.   在 Visual Studio 中修改此项目文件来创建内联任务。
+2. 在 Visual Studio 中修改此项目文件来创建内联任务。
 
-3.   使用**命令提示符窗口**生成项目并检查结果。
+3. 使用**命令提示符窗口**生成项目并检查结果。
 
 ## <a name="create-and-modify-an-msbuild-project"></a>创建和修改 MSBuild 项目
  Visual Studio 项目系统以 MSBuild 为基础。 因此，可使用 Visual Studio 创建生成项目文件。 本部分将创建 Visual C# 项目文件。 （也可创建 Visual Basic 项目文件。 在本教程的上下文中，两种项目文件间的差异很小。）
 
 #### <a name="to-create-and-modify-a-project-file"></a>创建和修改项目文件
 
-1.  在 Visual Studio 中的“文件”菜单上，单击“新建”，然后单击“项目”。
+1. 在 Visual Studio 中的“文件”菜单上，单击“新建”，然后单击“项目”。
 
-2.  在“新建项目”对话框中，选择“Visual C#”项目类型，然后选择“Windows 窗体应用程序”模板。 在“名称”框中键入 `InlineTasks`。 键入解决方案的“位置”，例如 D:\\。 请确保选择“创建解决方案目录”和清除“添加到源代码管理”，并确保“解决方案名称”为 InlineTasks。
+2. 在“新建项目”对话框中，选择“Visual C#”项目类型，然后选择“Windows 窗体应用程序”模板。 在“名称”框中键入 `InlineTasks`。 键入解决方案的“位置”，例如 D:\\。 请确保选择“创建解决方案目录”和清除“添加到源代码管理”，并确保“解决方案名称”为 InlineTasks。
 
-3.  单击“确定”创建项目文件。
+3. 单击“确定”创建项目文件。
 
-3.  在“解决方案资源管理器”中，右键单击 InlineTasks 项目节点，然后单击“卸载项目”。
+3. 在“解决方案资源管理器”中，右键单击 InlineTasks 项目节点，然后单击“卸载项目”。
 
-4.  再次右键单击项目节点，然后单击“编辑 InlineTasks.csproj”。
+4. 再次右键单击项目节点，然后单击“编辑 InlineTasks.csproj”。
 
      该项目文件出现在代码编辑器中。
 
@@ -103,7 +103,7 @@ ms.locfileid: "56597262"
     `Hello, world!`
 
    > [!NOTE]
-   >  如果未显示问候消息，请尝试再次保存项目文件，然后运行 Hello 任务。
+   > 如果未显示问候消息，请尝试再次保存项目文件，然后运行 Hello 任务。
 
    通过在代码编辑器和“命令提示符窗口”之间进行交替，可更改项目文件并快速查看结果。
 

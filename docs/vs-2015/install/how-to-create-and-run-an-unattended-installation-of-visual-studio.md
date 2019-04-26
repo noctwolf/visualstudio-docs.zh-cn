@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433053"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60040541"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的安装应用程序的网络路径类似于 \\\\ServerName\IDEinstall\\Product.exe。
 
     > [!NOTE]
-    >  如果任何路径和文件名的组合超过 260 个字符，则安装可能失败。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的路径的最大长度为 221 个字符。  本地路径名称不应超过 70 个字符，并且网络路径名称不应超过 39 个字符。
+    > 如果任何路径和文件名的组合超过 260 个字符，则安装可能失败。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的路径的最大长度为 221 个字符。  本地路径名称不应超过 70 个字符，并且网络路径名称不应超过 39 个字符。
 
      如果路径中的文件夹名称包含嵌入的空格（例如，“\\\\ServerName\IDE install”或 \\\\ServerName\Visual Studio\\），则安装也可能失败。
 
@@ -46,16 +46,16 @@ ms.locfileid: "60040541"
  若要在无人参与模式下部署 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，则必须修改 AdminDeployment.xml 文件。 若要执行此操作，必须首先使用 `/CreateAdminFile` \<file location> 命令行参数创建 AdminDeployment.xml 文件。 然后，可以使用此文件将 Visual Studio 的部署推送到你的网络或拉入安装（如果将该文件放入 *Drive*:\IDEinstall\packages 目录中）。 AdminDeployment.xml 文件对于某个操作系统、体系结构、Visual Studio 版本或操作系统语言不是唯一的。
 
 > [!CAUTION]
->  有时，依照 AdminDeployment.xml 文件中的所选内容而列出的项无法安装。 若要解决此问题，将标记为“Selected="yes"”的项放在 AdminDeployment.xml 文件的 **末尾** 。
+> 有时，依照 AdminDeployment.xml 文件中的所选内容而列出的项无法安装。 若要解决此问题，将标记为“Selected="yes"”的项放在 AdminDeployment.xml 文件的 **末尾** 。
 >
->  如果不想安装某项的可选依赖项，则必须首先选中父级，然后取消选中父级后的可选依赖项，如下面的屏幕快照中所示：
+> 如果不想安装某项的可选依赖项，则必须首先选中父级，然后取消选中父级后的可选依赖项，如下面的屏幕快照中所示：
 >
->  ![AdminDeployment.xml 文件末尾的安装项](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![AdminDeployment.xml 文件末尾的安装项](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  执行此操作的另一个方法是省略可选父级的子级 - 换而言之，不要包括任何“Selected=”no””项，但你仍须将所有“Selected=”yes””项放在 AdminDeployment.xml 文件末尾。
+> 执行此操作的另一个方法是省略可选父级的子级 - 换而言之，不要包括任何“Selected=”no””项，但你仍须将所有“Selected=”yes””项放在 AdminDeployment.xml 文件末尾。
 
 > [!IMPORTANT]
->  在安装期间，计算机可能会自动重启一次或多次。 重启后，必须使用相同的用户帐户重新登录，以进行安全，然后再重启计算机。 在运行无人参与安装之前安装系统必备组件，可以避免自动重启。 有关详细信息，请参阅 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)中标题为“安装期间避免重启”的部分。
+> 在安装期间，计算机可能会自动重启一次或多次。 重启后，必须使用相同的用户帐户重新登录，以进行安全，然后再重启计算机。 在运行无人参与安装之前安装系统必备组件，可以避免自动重启。 有关详细信息，请参阅 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)中标题为“安装期间避免重启”的部分。
 
  AdminDeployment 文件架构包含下列元素：
 
@@ -71,7 +71,7 @@ ms.locfileid: "60040541"
 |BundleCustomizations|NoCacheOnlyMode|是|默认值|阻止包缓存的预填充。|
 
 > [!WARNING]
->  安装应用程序将遵守 SelectableItem 的选定状态，即使它被隐藏。 例如，如果你想要始终安装某个可选项，可以将其标记为隐藏和已选定。
+> 安装应用程序将遵守 SelectableItem 的选定状态，即使它被隐藏。 例如，如果你想要始终安装某个可选项，可以将其标记为隐藏和已选定。
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>创建 Visual Studio 的无人参与安装
 
@@ -100,7 +100,7 @@ ms.locfileid: "60040541"
  如果打开 **“控制面板”** 并重新运行安装应用程序，则可以修改 Visual Studio 的功能、卸载编程语言以及修复或卸载 Visual Studio。
 
 > [!NOTE]
->  你必须在本地计算机上具有管理凭据才能使用维护模式。
+> 你必须在本地计算机上具有管理凭据才能使用维护模式。
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>维护客户端计算机上的安装
 

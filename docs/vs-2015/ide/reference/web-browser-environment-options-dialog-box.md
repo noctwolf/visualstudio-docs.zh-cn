@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419721"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663974"
 为内部 Web 浏览器和 Internet Explorer 设置选项。 若要访问此对话框，请在“工具”菜单上单击“选项”，展开“环境”文件夹，然后选择“Web 浏览器”。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 > [!IMPORTANT]
->  从 Web 打开某些文件或组件可在计算机上执行代码。  
+> 从 Web 打开某些文件或组件可在计算机上执行代码。  
   
  主页  
  设置打开 IDE Web 浏览器时显示的页面。  
@@ -61,7 +61,7 @@ ms.locfileid: "59663974"
   单击此选项可更改“Internet 属性”对话框中的 Internet Explorer 选项。 在此对话框中所做的更改会同时影响内部 Web 浏览器和在 Visual Studio 的 IDE 外部（例如，从“开始”菜单）启动的 Internet Explorer 实例。  
   
 > [!NOTE]
->  若要替换 Visual Studio 内部 Web 浏览器（使用其他外部 Web 浏览器的 Internet Explorer 版本），请使用“浏览方式”对话框。  
+> 若要替换 Visual Studio 内部 Web 浏览器（使用其他外部 Web 浏览器的 Internet Explorer 版本），请使用“浏览方式”对话框。  
   
 ## <a name="see-also"></a>请参阅  
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)   

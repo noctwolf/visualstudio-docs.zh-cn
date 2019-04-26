@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438433"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：创建基本纹理着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60048562"
    下图显示了已完成的着色器关系图和应用于立方体的着色器预览。  
   
 > [!NOTE]
->  在此插图中，飞机用作预览形状，并且已指定一个纹理以更好地演示着色器的效果。  
+> 在此插图中，飞机用作预览形状，并且已指定一个纹理以更好地演示着色器的效果。  
   
  ![着色器图及其效果预览](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

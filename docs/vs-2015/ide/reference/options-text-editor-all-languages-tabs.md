@@ -21,12 +21,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d94aa2f9445104ab6d645d057e68186e917d12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 42fb2e9e91698c276e2b14b3acff9068581a1e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432054"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>选项，文本编辑器，所有语言，选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ ms.locfileid: "59658235"
 使用此对话框可更改代码编辑器的默认行为。 这些设置也适用于其他基于代码编辑器的编辑器，如 HTML 设计器的“源”视图。 若要显示这些选项，请选择“工具”菜单中的“选项”。 在“文本编辑器”中，展开“所有语言”子文件夹，然后选择“制表符”。  
   
 > [!CAUTION]
->  在此页面用于设置所有开发语言的默认选项。 请记住，重置此对话框中的一个选项会将所有语言的“制表符”选项重置为在此处选择的任何选项。 若要只为一种语言更改文本编辑器选项，请展开该语言的子文件夹并选择其选项页。  
+> 在此页面用于设置所有开发语言的默认选项。 请记住，重置此对话框中的一个选项会将所有语言的“制表符”选项重置为在此处选择的任何选项。 若要只为一种语言更改文本编辑器选项，请展开该语言的子文件夹并选择其选项页。  
   
  如果在“制表符”选项页上为特定的编程语言选择了不同的设置，则对于不同的“缩进”选项，将显示消息“各种文本格式的缩进设置相互冲突”；对于不同的“制表符”选项，将显示消息“各种文本格式的制表符设置相互冲突”。 例如，如果为 Visual Basic 选择了“智能缩进”选项，但为 Visual C++ 选择了“块缩进”，则会显示此提醒。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="indenting"></a>缩进  
  None  

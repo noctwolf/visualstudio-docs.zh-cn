@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433079"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>如何：安装特定版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60054464"
 |Visual Studio Enterprise（原始 RTM，不包含任何更新）|Visual Studio Enterprise RTM（可从 [MSDN 订阅下载页](https://msdn.microsoft.com/subscriptions/downloads/)获取）|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Visual Studio 安装程序将使用发布 RTM 时提供的 feed.xml|
 
 > [!IMPORTANT]
->  根据你想要使用的语言，请将“enu”（英语）替换为以下值之一：
+> 根据你想要使用的语言，请将“enu”（英语）替换为以下值之一：
 >
 > - chs（简体中文）
 >   - cht（繁体中文）

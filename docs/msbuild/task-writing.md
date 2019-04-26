@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439991"
 ---
 # <a name="task-writing"></a>任务写入
 任务提供在生成过程中运行的代码。 任务包含在目标中。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 附带一个典型任务库，也可以创建自己的任务。 有关 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 附带的任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。
@@ -27,9 +27,9 @@ ms.locfileid: "56629919"
 
  实现任务时，有两种方法可供选择：
 
--   直接实现 <xref:Microsoft.Build.Framework.ITask> 接口。
+- 直接实现 <xref:Microsoft.Build.Framework.ITask> 接口。
 
--   从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Task> 中派生类。 任务实现 ITask，并提供了一些 ITask 成员的默认实现。 此外，日志记录更为简单。
+- 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Task> 中派生类。 任务实现 ITask，并提供了一些 ITask 成员的默认实现。 此外，日志记录更为简单。
 
 在这两种情况下，都必须向类添加一个名为 `Execute` 的方法，也就是在任务运行时调用的方法。 该方法不带任何参数并返回一个 `Boolean` 值：如果任务成功，则返回 `true`；如果失败，则返回 `false`。 以下示例显示一个不执行任何操作并返回 `true` 的任务。
 
@@ -97,7 +97,7 @@ namespace MyTasks
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 文件 Microsoft.Common.Tasks 是一个包含 `UsingTask` 元素列表的项目文件，这些元素注册随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 一起提供的所有任务。 生成每个项目时会自动包括该文件。 如果在 Microsoft.Common.Tasks 中注册的任务也在当前项目文件中进行了注册，则当前项目文件具有优先权；也就是说，可以使用自己的同名任务重写默认任务。
 
 > [!TIP]
->  通过查看 Microsoft.Common.Tasks 的内容，可以看到随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 一起提供的任务列表。
+> 通过查看 Microsoft.Common.Tasks 的内容，可以看到随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 一起提供的任务列表。
 
 ## <a name="raise-events-from-a-task"></a>从任务引发事件
  如果任务派生自 <xref:Microsoft.Build.Utilities.Task> 帮助器类，可以使用 <xref:Microsoft.Build.Utilities.Task> 类上的下列任一帮助器方法来引发由任何注册的记录器捕获并显示的事件：

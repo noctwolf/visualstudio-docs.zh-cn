@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433595"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54797289"
  若要使用 **CodeIndex** 命令，必须是“Team Foundation Administrators”安全组的成员。 请参阅 [Team Foundation Server 权限参考](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6)。  
   
 > [!NOTE]
->  即使你使用管理凭据进行登录，也必须使用提升权限打开命令提示符窗口以运行此命令。 你还必须从 Team Foundation 的应用层运行此命令。  
+> 即使你使用管理凭据进行登录，也必须使用提升权限打开命令提示符窗口以运行此命令。 你还必须从 Team Foundation 的应用层运行此命令。  
   
 ## <a name="syntax"></a>语法  
   
@@ -62,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>示例  
   
 > [!NOTE]
->  此处描述的示例公司、组织、产品、域名、电子邮件地址、徽标、人员、地点和事件均属虚构。  无意与任何真实的公司、组织、产品、域名、电子邮件地址、徽标、人物、地点或事件相关联，也不应进行这方面的推断。  
+> 此处描述的示例公司、组织、产品、域名、电子邮件地址、徽标、人员、地点和事件均属虚构。  无意与任何真实的公司、组织、产品、域名、电子邮件地址、徽标、人物、地点或事件相关联，也不应进行这方面的推断。  
   
  查看代码索引状态和配置：  
   

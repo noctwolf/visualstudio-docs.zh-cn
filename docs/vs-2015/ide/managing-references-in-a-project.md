@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424541"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ ms.locfileid: "60057091"
 2. 转到拥有不受支持的扩展 SDK 的供应商站点，安装具有与你的项目所面向的平台版本兼容的依赖项的扩展 SDK 版本。  
   
     > [!NOTE]
-    >  找出扩展 SDK 与其他扩展 SDK 是否具有依赖关系的一种方法是：重新启动 Visual Studio，创建一个新的 C# Windows 应用商店项目，右键单击该项目并选择 **“添加引用”**，依次转到 **“Windows”** 选项卡和 **“扩展”** 子选项卡，然后选择该扩展 SDK 并查看 **“引用管理器”** 中的右窗格。 如果具有依赖关系，则将在该位置列出依赖关系。  
+    > 找出扩展 SDK 与其他扩展 SDK 是否具有依赖关系的一种方法是：重新启动 Visual Studio，创建一个新的 C# Windows 应用商店项目，右键单击该项目并选择 **“添加引用”**，依次转到 **“Windows”** 选项卡和 **“扩展”** 子选项卡，然后选择该扩展 SDK 并查看 **“引用管理器”** 中的右窗格。 如果具有依赖关系，则将在该位置列出依赖关系。  
   
     > [!IMPORTANT]
-    >  如果你的项目面向 Windows 10，并且上一步中安装的扩展 SDK 在 Microsoft Visual C 运行时包上具有依赖关系，则与 Windows 10 兼容的 Microsoft Visual C++ 运行时包的版本为 v14.0，并与 Visual Studio 2015 一起安装。  
+    > 如果你的项目面向 Windows 10，并且上一步中安装的扩展 SDK 在 Microsoft Visual C 运行时包上具有依赖关系，则与 Windows 10 兼容的 Microsoft Visual C++ 运行时包的版本为 v14.0，并与 Visual Studio 2015 一起安装。  
   
 3. 如果上一步中安装的扩展 SDK 在其他扩展 SDK 上具有依赖关系，请转到拥有依赖关系的供应商站点，并安装与你的项目所面向的平台版本相兼容的版本的依赖项。  
   
@@ -89,9 +89,9 @@ ms.locfileid: "60057091"
 - 同一解决方案中的其他项目目录。 （可以在 **“项目”** 选项卡上找到这些程序集。）  
   
 > [!NOTE]
->  所有项目都包含对 mscorlib 的隐式引用。 Visual Basic 项目包含对 `Microsoft.VisualBasic`的隐式引用。  
+> 所有项目都包含对 mscorlib 的隐式引用。 Visual Basic 项目包含对 `Microsoft.VisualBasic`的隐式引用。  
 >   
->  Visual Studio 中的所有项目都包含对 `System.Core`的隐式引用，即使 `System.Core` 已从引用列表中删除也是如此。  
+> Visual Studio 中的所有项目都包含对 `System.Core`的隐式引用，即使 `System.Core` 已从引用列表中删除也是如此。  
   
 ## <a name="references-to-shared-components-at-run-time"></a>在运行时对共享组件的引用  
  在运行时，组件必须位于项目的输出路径或 [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果项目中包含对某个对象的引用，但该对象不是上述的其中一个位置，则必须在生成项目时将该引用复制到项目的输出路径。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 属性指示是否必须进行复制。 如果值为 **True**，则生成项目时，引用将复制到项目目录。 如果值为 **False**，则不复制引用。  
@@ -111,7 +111,7 @@ ms.locfileid: "60057091"
  如果拥有生成程序集的项目，则应引用该项目并且不使用文件引用（见下文）。 项目到项目的引用的一个优点是能够在生成系统中的项目之间创建依赖关系。 如果依赖项目在上次生成引用项目之后已发生更改，则将生成该依赖项目。 文件引用不会创建生成依赖关系，因此可以在不生成依赖项目的情况下生成引用项目，并且该引用可能会过时。 （也就是说，项目可以引用以前生成的项目版本。）这可能导致 bin 目录中所需的单个 DLL 同时存在多个版本，而这种情况实际是不可能出现的。 当此冲突发生时，你将看到一条消息，例如[“警告：无法将项目 ‘project’ 中的依赖关系‘file’复制到运行目录，因为它将覆盖引用 ‘file’。”](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md)。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)以及[如何：创建和删除项目依赖关系](../ide/how-to-create-and-remove-project-dependencies.md)。  
   
 > [!NOTE]
->  如果一个项目的目标 .NET Framework 版本是 4.5，而另一个项目的目标版本是 2、3、3.5 或 4.0，则创建的是文件引用而非项目到项目的引用。  
+> 如果一个项目的目标 .NET Framework 版本是 4.5，而另一个项目的目标版本是 2、3、3.5 或 4.0，则创建的是文件引用而非项目到项目的引用。  
   
 ## <a name="file-references"></a>文件引用  
  文件引用是对 Visual Studio 项目上下文之外的程序集的直接引用；通过使用 **“引用管理器”** 中的 **“浏览”** 选项卡进行创建。 当只有程序集或组件，而没有将其创建为输出的项目时，则使用文件引用。  

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c65f17d9c37cf885460be8a2c9c3560d12f64dd5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8a28551656c7cb47185713a6246479ef2bd96325
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446821"
 ---
 # <a name="detach"></a>Detach
 VSPerfCmd.exe“Detach”选项可断开探查器与指定进程或所有进程（如果未指定）的连接。 必须已使用采样方法初始化分析。
@@ -23,7 +23,7 @@ VSPerfCmd.exe“Detach”选项可断开探查器与指定进程或所有进程�
  “Detach”不会关闭分析数据文件。 使用“Shutdown”选项结束分析并关闭数据文件。
 
 > [!NOTE]
->  如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。
+> 如果已使用“Crosssession”选项指定“Start”选项，则对 VSPerfCmd /Attach 或 VSPerfCmd /Detach 的任何调用也必须指定“Crosssession”。
 
 ## <a name="syntax"></a>语法
 

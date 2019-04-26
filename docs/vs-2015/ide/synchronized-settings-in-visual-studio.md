@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428269"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Visual Studio 中的同步设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60108995"
  可以在 Visual Studio 2015 的任何版本（包括 Express 和 Community）之间同步设置。 Visual Studio 系列产品（如 Blend）之间的设置也是同步的。 但是，这些系列产品中的每一个都可能具有它自己与 Visual Studio 不共享的设置。 例如，特定于计算机 A 上的 Blend 设置将与计算机 B 上的 Blend 共享，但不与计算机 A 或 B 上的 Visual Studio 共享。
 
 > [!WARNING]
->  Visual Studio 2013 和 Visual Studio 2015 之间不同步设置。 首次打开 Visual Studio 2015 时，将迁移 Visual Studio 2013 的设置，但此后无法将其迁移回 Visual Studio 2013。
+> Visual Studio 2013 和 Visual Studio 2015 之间不同步设置。 首次打开 Visual Studio 2015 时，将迁移 Visual Studio 2013 的设置，但此后无法将其迁移回 Visual Studio 2013。
 
 ## <a name="see-also"></a>请参阅
  [个性化设置 IDE](../ide/personalizing-the-visual-studio-ide.md)

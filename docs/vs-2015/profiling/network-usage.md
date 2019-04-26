@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114491"
 ---
 # <a name="network-usage"></a>网络使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,13 +67,13 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 ### <a name="analysis-tips"></a>分析提示  
  此工具突出显示运行网络相关分析时可能有用的某些区域：  
   
-1.  完全来自缓存的请求在“已接收”列中显示为“(来自缓存)”。 这有助于你确定你是否在有效地使用缓存来节省用户的带宽，或是否在错误地缓存响应并为应用程序最终用户提供过时的数据。  
+1. 完全来自缓存的请求在“已接收”列中显示为“(来自缓存)”。 这有助于你确定你是否在有效地使用缓存来节省用户的带宽，或是否在错误地缓存响应并为应用程序最终用户提供过时的数据。  
   
-2.  “结果”列中使用红色状态代码显示错误响应（4xx 或 5xx），这些错误响应在“摘要”栏中突出显示。 这有助于轻松发现应用程序上众多潜在请求中的错误。  
+2. “结果”列中使用红色状态代码显示错误响应（4xx 或 5xx），这些错误响应在“摘要”栏中突出显示。 这有助于轻松发现应用程序上众多潜在请求中的错误。  
   
-3.  响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。  
+3. 响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。  
   
 ## <a name="see-also"></a>请参阅  
  [运行分析工具而不进行调试](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Visual Studio 博客：引入了 Visual Studio 的网络检查器](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [第 9 频道视频：VS 诊断工具 – 新网络 Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
