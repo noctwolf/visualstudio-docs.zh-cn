@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975698"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -53,7 +53,7 @@ ms.locfileid: "55938991"
 
 ### <a name="navigation-tabs"></a>导航选项卡
 
-|Tab|说明​​|
+|Tab|说明|
 |---|-----------|
 |内容|以层次结构（目录）的形式显示已安装的内容。 可指定用于筛选所示标题的条件。|
 |索引|显示索引词的字母顺序列表。 可搜索索引，指定用于筛选条目的条件，并要求索引条目包含所指定的文本或以此文本开头。|

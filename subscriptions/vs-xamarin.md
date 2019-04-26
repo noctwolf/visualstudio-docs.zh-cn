@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中随附的 Xamarin University 培训订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810549"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Xamarin University 培训权益
 
@@ -28,11 +28,10 @@ Xamarin University 将把内容转移到 [Microsoft Learn](http://microsoft.com/
 
 直到 2018 年 12 月 21 日，Visual Studio Enterprise 订阅者可获得六个月无限制访问完整 Xamarin University 目录的权限。  Visual Studio Professional 订阅者可以获得三个月的访问权限。
 
-
 ## <a name="support-resources"></a>支持资源
--  需要 Xamarin University 帮助？  访问 [https://university.xamarin.com/support](https://university.xamarin.com/support) 可以找到各种支持资源。
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 需要 Xamarin University 帮助？  访问 [https://university.xamarin.com/support](https://university.xamarin.com/support) 可以找到各种支持资源。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q--if-ive-already-activated-my-xamarin-university-benefit-by-december-21-2018-what-happens-after-that-date"></a>问：如果我已经在 2018 年 12 月 21 日之前激活了 Xamarin University 的权益，那么之后会发生什么?

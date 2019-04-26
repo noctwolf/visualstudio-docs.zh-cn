@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94ac6e9e85a2d7dd504b2d2bd83bd1bbdb265ea0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776772"
 ---
 # <a name="channels-threads-view"></a>通道（线程视图）
 并发可视化工具显示四类通道：线程通道、磁盘通道、标记通道和 GPU 通道。

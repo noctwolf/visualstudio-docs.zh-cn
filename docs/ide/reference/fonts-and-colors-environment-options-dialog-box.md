@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790203"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 
@@ -42,26 +42,26 @@ ms.locfileid: "58647461"
 
 列出可更改其字体和配色方案的所有用户界面元素。 从此列表中选择一项后，可以为“显示项”中选定的项自定义颜色设置。
 
--   **文本编辑器**
+- **文本编辑器**
 
      对“文本编辑器”的字体样式、字号和颜色显示设置的更改将影响默认文本编辑器中的文本外观。 在 IDE 之外的文本编辑器中打开的文件将不受这些设置的影响。
 
--   打印机
+- 打印机
 
      对“打印机”的字体样式、字号和颜色显示设置的更改将影响打印文档中的文本外观。
 
     > [!NOTE]
     > 根据需要，可以选择不同于文本编辑器的显示字体的默认打印字体。 这在打印同时包含单字节和双字节字符的代码时很有用。
 
--   语句结束
+- 语句结束
 
      对出现在编辑器的语句完成弹出菜单中的文本更改字体样式和字号。
 
--   编辑器工具提示
+- 编辑器工具提示
 
      对出现在编辑器中显示的工具提示中的文本更改字体样式和字号。
 
--   环境字体
+- 环境字体
 
      为在“显示其设置”中还没有单独选项的所有 IDE 用户界面元素更改字体样式和字号。
 
@@ -71,7 +71,7 @@ ms.locfileid: "58647461"
 
      ::: moniker-end
 
--   [全部文本工具窗口]
+- [全部文本工具窗口]
 
      对此项的字体样式、字号和颜色显示设置的更改将影响在 IDE 中具有输出窗格的工具窗口中的文本外观。 例如，“输出”窗口、“命令”窗口和“即时”窗口等。
 

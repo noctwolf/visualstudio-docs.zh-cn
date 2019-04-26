@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548415"
 ---
 # <a name="installation"></a>安装
 
@@ -87,6 +87,7 @@ Python 已成为用于深入学习应用程序的主要编程语言。 需要 **
 随后需要验证是否正确安装了 Python 3.5 并将 pip 升级到最新版本，具体方法是在终端中执行以下命令：
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Python 已成为用于深入学习应用程序的主要编程语言。 需要 **
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ pip3.5 install -U numpy scipy
 若要安装 MXNet，请在终端中运行以下命令：
 
 - 具有 GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - 没有 GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

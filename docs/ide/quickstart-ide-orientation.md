@@ -8,18 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954192"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，我们将介绍一些窗口、菜单和其他 UI 功能。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+::: moniker range="vs-2017"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 

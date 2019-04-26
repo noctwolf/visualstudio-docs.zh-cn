@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789365"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 
@@ -39,7 +39,7 @@ Visual Studio 命令的转义符是一个插入符号 (^) 字符，其表示紧�
 
 以下命令采用参数和/或开关。
 
-| 命令名： | 说明​​ |
+| 命令名： | 说明 |
 | - | - |
 | [添加现有项](../../ide/reference/add-existing-item-command.md) | 将现有文件添加到当前解决方案中并打开它。 |
 | [添加现有项目](../../ide/reference/add-existing-project-command.md) | 将现有项目添加到当前解决方案中。 |

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792213"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 
@@ -55,7 +55,7 @@ ms.locfileid: "55930451"
 
 指定是否将 mscorlib.dll 导入程序，同时定义整个 <xref:System> 命名空间。 如果想要定义或创建自己的 <xref:System> 命名空间和对象，请选中此框。 有关详细信息，请参阅 [/nostdlib（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)。
 
-## <a name="output"></a>输出
+## <a name="output"></a>Output
 
 使用以下选项可以指定高级输出选项。
 
@@ -75,7 +75,7 @@ ms.locfileid: "55930451"
 
    允许在调试器中启动程序时进行源代码调试，但仅在正在运行的程序附加到调试器时才显示汇编程序。
 
--  **portable**
+- **portable**
 
    生成 .PDB 文件，这是一种未特定于任何平台的可移植符号文件，可提供其他工具（尤其是调试器）、主可执行文件内容的相关信息及其生成方式。 有关详细信息，请参阅 [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md)（可移植 PDB）。
 

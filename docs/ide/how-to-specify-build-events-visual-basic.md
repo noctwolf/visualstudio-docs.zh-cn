@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549328"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 
@@ -34,13 +34,13 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
 
 ### <a name="to-specify-a-build-event"></a>指定生成事件
 
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
 
-2.  单击“编译”选项卡。
+2. 单击“编译”选项卡。
 
-3.  单击“生成事件”按钮以打开“生成事件”对话框。
+3. 单击“生成事件”按钮以打开“生成事件”对话框。
 
-4.  输入预生成操作或生成后操作的命令行参数，然后单击“确定”。
+4. 输入预生成操作或生成后操作的命令行参数，然后单击“确定”。
 
     > [!NOTE]
     > 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。
@@ -125,14 +125,14 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>调用生成后事件以更改应用程序清单
 
-1.  为要发布的项目创建 Windows 应用程序。 在“文件”菜单上，单击“新建”，然后单击“项目”。
+1. 为要发布的项目创建 Windows 应用程序。 在“文件”菜单上，单击“新建”，然后单击“项目”。
 
-2.  在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows 桌面”、“Windows 窗体应用”模板。 将项目命名为 `VBWinApp`。
-3.  在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。
+2. 在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows 桌面”、“Windows 窗体应用”模板。 将项目命名为 `VBWinApp`。
+3. 在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。
 
-4.  在项目设计器中，转到“发布”页面，并将“发布位置”设置为 C:\TEMP。
+4. 在项目设计器中，转到“发布”页面，并将“发布位置”设置为 C:\TEMP。
 
-5.  单击“立即发布”以发布项目。
+5. 单击“立即发布”以发布项目。
 
      随即生成清单文件并将其放入 C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest。 若要查看清单，请右键单击该文件，然后依次单击“打开方式”、“从列表中选择程序”、“记事本”。
 
@@ -142,9 +142,9 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  在项目设计器中，转到“编译”选项卡，然后单击“生成事件”按钮以打开“生成事件”对话框。
+6. 在项目设计器中，转到“编译”选项卡，然后单击“生成事件”按钮以打开“生成事件”对话框。
 
-7.  在“生成后事件命令行”框中，输入以下命令：
+7. 在“生成后事件命令行”框中，输入以下命令：
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
 
      `$(TargetPath)` 宏表示正在创建的可执行文件的完整路径。 因此，$(TargetPath).manifest 将指定在 bin 目录中创建的应用程序清单。 发布操作会将此清单复制到之前设置的发布位置。
 
-8.  再次发布该项目。 转到“发布”页面，然后单击“立即发布”。
+8. 再次发布该项目。 转到“发布”页面，然后单击“立即发布”。
 
      再次查看该清单。 若要查看清单，请转到发布目录、右键单击该文件，然后依次单击“打开方式”、“从列表中选择程序”、“记事本”。
 

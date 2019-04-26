@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945487"
 ---
 # <a name="security-page-project-designer"></a>”项目设计器“ ->“安全”页
 
@@ -34,7 +34,6 @@ ms.locfileid: "55936130"
 
 > [!NOTE]
 > 使用“发布”向导发布应用程序时，会自动启用此选项。
-
 
  选择此选项时，可以选择以下两个单选按钮之一：“这是完全信任应用程序”或“这是部分信任应用程序”。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779014"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>“选项”>“文本编辑器”>“HTML (Web 窗体)”>“格式化”
 
@@ -41,7 +41,6 @@ ms.locfileid: "55927173"
 |**小写**|将元素名称重格式化为小写。|
 |**程序集定义**|元素大小写由相应类型类如何定义元素决定。|
 
-
 **“客户端标记”>“客户端属性”**
 
 这些选项用于指定自动格式化将 HTML 属性名更改为大写、小写还是按输入原样。
@@ -51,7 +50,6 @@ ms.locfileid: "55927173"
 |**按输入原样**|属性大小写与输入时完全相同。|
 |**大写**|将特性名称重新格式化为大写。|
 |**小写**|将特性名称重新格式化为小写。|
-
 
 ## <a name="automatic-formatting-options"></a>自动格式化选项
 
@@ -65,7 +63,6 @@ ms.locfileid: "55927173"
 - **键入时插入属性值引号**
 
    如果你选中此选项，编辑器就会在你键入时自动在属性前后添加引号（例如，ID="Select1"）。 如果更希望手动将引号插入到标记中，请清除此选项。
-
 
    > [!NOTE]
    > 无论是否选中此选项，标记中的全部现有引号都将会保留；引号绝不会移除。

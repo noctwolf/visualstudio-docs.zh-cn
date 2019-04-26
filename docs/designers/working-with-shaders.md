@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1f07b293447a10a7d39e24ef42b1faedc27c7d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892398"
 ---
 # <a name="work-with-shaders"></a>使用着色器
 
@@ -35,7 +35,7 @@ ms.locfileid: "55934857"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|说明​​|
+|Title|说明|
 |-----------|-----------------|
 |[着色器设计器](../designers/shader-designer.md)|描述如何使用 Visual Studio 着色器设计器处理着色器。|
 |[着色器设计器节点](../designers/shader-designer-nodes.md)|讨论可用于实现图形效果的着色器设计器节点的种类。|

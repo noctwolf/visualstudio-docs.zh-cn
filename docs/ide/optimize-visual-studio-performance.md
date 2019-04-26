@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569844"
 ---
 # <a name="optimize-visual-studio-performance"></a>优化 Visual Studio 性能
 
@@ -25,11 +25,11 @@ ms.locfileid: "57223750"
 
 ## <a name="upgrade-visual-studio"></a>升级 Visual Studio
 
-如果当前使用 Visual Studio 2015，请免费下载 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，以检查其改进性能。 在 Visual Studio 2015 中，解决方案的加载速度要快两到三倍，其他方面的性能也有所改善。 Visual Studio 2017 和 Visual Studio 2019 与 Visual Studio 2015 并行兼容，因此不会因为尝试而丢失任何内容。
+如果当前使用 Visual Studio 2015，请免费下载 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)，以检查其改进性能。 在 Visual Studio 2015 中，解决方案的加载速度要快两到三倍，其他方面的性能也有所改善。 Visual Studio 2017 和 Visual Studio 2019 与 Visual Studio 2015 并行兼容，因此不会因为尝试而丢失任何内容。
 
 ::: moniker range="vs-2017"
 
-如果已在使用 Visual Studio 2017，请确保运行版本 15.6 或更高版本。 数据显示，在版本 15.6 中，解决方案的加载速度最高可提升两到三倍。 在[此处](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)下载。
+如果已在使用 Visual Studio 2017，请确保运行版本 15.6 或更高版本。 数据显示，在版本 15.6 中，解决方案的加载速度最高可提升两到三倍。 在[此处](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)下载。
 
 ::: moniker-end
 

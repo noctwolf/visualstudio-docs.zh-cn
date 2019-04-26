@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569675"
 ---
 # <a name="compare-properties-and-items"></a>比较属性和项
 MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存储可在整个项目文件中引用的值。
@@ -86,7 +86,6 @@ MSBuild 执行项类型之间的转换，并且需要字符串值。 若要查�
 - 按照项定义的显示顺序，对其进行定义和修改。
 
 - 按照项的显示顺序，对其进行定义和修改。
-
 
 在生成的执行阶段期间，在目标内定义的属性和项将以其显示顺序，在一个阶段中进行评估。
 

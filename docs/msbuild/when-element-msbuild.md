@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777953"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 指定一个可能的代码块供 `Choose` 元素选择。

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569861"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。
@@ -81,7 +81,6 @@ ms.locfileid: "58897681"
 ### <a name="compile"></a>Compile
  表示编译器的源文件。
 
-
 | 项元数据名称 | 说明 |
 |-----------------------| - |
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件。 |
@@ -92,7 +91,6 @@ ms.locfileid: "58897681"
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  表示要在生成的程序集中嵌入的资源。
-
 
 | 项元数据名称 | 说明 |
 |-----------------------| - |
@@ -108,7 +106,6 @@ ms.locfileid: "58897681"
 ### <a name="content"></a>内容
  表示不会编译到项目中，但可能会嵌入到其中或随其一起发布的文件。
 
-
 | 项元数据名称 | 说明 |
 |-----------------------| - |
 | DependentUpon | 可选的字符串。 指定该文件正确编译所依赖的文件。 |
@@ -123,7 +120,6 @@ ms.locfileid: "58897681"
 
 ### <a name="none"></a>None
  表示不应在生成过程中具有角色的文件。
-
 
 | 项元数据名称 | 说明 |
 |-----------------------| - |

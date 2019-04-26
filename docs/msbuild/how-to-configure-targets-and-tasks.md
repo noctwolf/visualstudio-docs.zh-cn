@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946659"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：配置目标和任务
 可将所选的 MSBuild 任务设置为在其目标环境中运行，而不考虑开发计算机的环境。 例如，当使用 64 位计算机生成面向 32 位体系结构的应用程序时，将在 32 位进程中运行所选的任务。

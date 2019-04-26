@@ -14,16 +14,16 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785917"
 ---
 # <a name="load-test-results-summary-overview"></a>负载测试结果摘要概述
 
-运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 您还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当您从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
 ![“摘要”视图](../test/media/ltest_summaryview.png)
 
@@ -31,7 +31,7 @@ ms.locfileid: "55928720"
 
 ## <a name="the-load-test-summary"></a>负载测试摘要
 
-负载测试摘要分为几个小节。 开头几节显示在摘要的顶部，并且始终可见。 当你查看负载测试摘要时，首先会看到下列各项：
+负载测试摘要分为几个小节。 开头几节显示在摘要的顶部，并且始终可见。 当您查看负载测试摘要时，首先会看到下列各项：
 
 - 有关测试运行的信息
 
@@ -62,7 +62,7 @@ ms.locfileid: "55928720"
 
 ## <a name="test-run-information"></a>测试运行信息
 
-“有关测试运行的信息”一节包含有关运行的一般信息，包括测试的名称、开始时间和结束时间以及运行测试的控制器。 此节还包含有关运行的可选说明，这些说明是你在运行负载测试时添加的。
+“有关测试运行的信息”一节包含有关运行的一般信息，包括测试的名称、开始时间和结束时间以及运行测试的控制器。 此节还包含有关运行的可选说明，这些说明是您在运行负载测试时添加的。
 
 ## <a name="overall-results"></a>整体结果
 
@@ -107,9 +107,9 @@ ms.locfileid: "55928720"
 
 百分比值报告以下事务信息：
 
--   在 \< 秒之内完成了事务总数的 90%。
+- 在 \< 秒之内完成了事务总数的 90%。
 
--   在 \< 秒之内完成了事务总数的 95%。
+- 在 \< 秒之内完成了事务总数的 95%。
 
 ## <a name="system-under-test-resources"></a>受测系统的资源
 
