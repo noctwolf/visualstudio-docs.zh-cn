@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778487"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>选项, 文本编辑器, JavaScript, 代码验证
 使用“代码验证”页的“选项”对话框修改影响 JavaScript 处理错误的方式的设置。 可以通过选择菜单栏上的“工具” > “选项”，然后展开“文本编辑器” > “JavaScript” > “代码验证”来访问“代码验证”页面。

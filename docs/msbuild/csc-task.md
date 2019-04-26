@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a505194a71058d791b7d67d74cd203c43298d684
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778401"
 ---
 # <a name="csc-task"></a>Csc 任务
 包装 csc.exe，生成可执行 (.exe) 文件、动态链接库（.dll 文件）或者代码模块（.netmodule 文件）。 有关 csc.exe 的详细信息，请参阅 [C# 编译器选项](/dotnet/csharp/language-reference/compiler-options/index)。
