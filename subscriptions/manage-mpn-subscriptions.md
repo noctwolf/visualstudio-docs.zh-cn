@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: 对于 MPN 合作伙伴而言，如何将 Visual Studio 订阅分配到最终用户。
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412390"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅
 
@@ -42,7 +42,6 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
     - 联系人电子邮件
 13. 登录现已完成，订阅者应可以访问权益
 
-
 ### <a name="competency-partners"></a>能力合作伙伴
 1. 选择“需求和资产”
 2. 选择“特权”
@@ -66,7 +65,7 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 
 > [!NOTE]
 > Visual Studio 订阅需要技术联系人角色
->     - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
+> - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
 
 ## <a name="need-help"></a>需要帮助？
 订阅者和计划管理器应直接与 Microsoft 合作伙伴网络支持团队协作，以解决订阅者访问订阅时出现的任何问题。 请访问[“支持合作伙伴”](https://partner.microsoft.com/support)页寻求帮助。 （需要提供 MPN 登录凭据。）

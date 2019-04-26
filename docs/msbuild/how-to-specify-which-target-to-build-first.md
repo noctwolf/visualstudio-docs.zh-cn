@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997364"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定首先生成的目标
 项目文件可以包含一个或多个用于定义如何生成项目的 `Target` 元素。 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 引擎生成它找到的第一个项目以及所有依赖项，除非项目文件包含 `DefaultTargets` 属性、`InitialTargets` 属性，或目标是在命令行中使用 -target 开关进行指定。
@@ -35,7 +35,7 @@ ms.locfileid: "56603422"
 
 #### <a name="to-specify-more-than-one-initial-target"></a>指定多个初始目标
 
--   在 `Project` 元素的 `InitialTargets` 属性中列出初始目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：
+- 在 `Project` 元素的 `InitialTargets` 属性中列出初始目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,23 +52,22 @@ ms.locfileid: "56603422"
 
 #### <a name="to-specify-more-than-one-default-target"></a>指定多个默认目标
 
--   在 `Project` 元素的 `DefaultTargets` 属性中列出默认目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：
+- 在 `Project` 元素的 `DefaultTargets` 属性中列出默认目标，用分号分隔。 例如，若要运行 `Clean` 目标，然后运行 `Compile` 目标，则键入：
 
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>使用 -target 开关
  如果未在项目文件中定义默认目标，或不希望使用默认目标，可使用命令行开关 -target 指定其他目标。 运行的是使用 -target 开关指定的一个或多个目标，而不是 `DefaultTargets` 属性指定的目标。 `InitialTargets` 属性中指定的目标将始终首先运行。
 
-
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>首先使用非默认目标的目标
 
--   使用 -target 命令行开关将目标指定为第一个目标。 例如:
+- 使用 -target 命令行开关将目标指定为第一个目标。 例如:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>首先使用非默认目标的多个目标
 
--   使用 -target 命令行开关列出目标（由分号或逗号分隔）。 例如:
+- 使用 -target 命令行开关列出目标（由分号或逗号分隔）。 例如:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

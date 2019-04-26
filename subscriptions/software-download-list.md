@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 查找 Visual Studio 订阅随附的软件下载列表。
 searchscope: VS Subscription
 ms.openlocfilehash: fea44e77267a7f2e2d0964ee614807875198cd92
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561034"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>我如何知道哪些软件可供下载？
 

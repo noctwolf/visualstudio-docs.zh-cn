@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006788"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。
@@ -107,6 +107,7 @@ ms.locfileid: "56643764"
     </CSFile>
 </ItemGroup>
 ```
+
 以下代码示例演示如何使用 `Update` 属性修改通过 glob 包含的 somefile.cs 文件中的元数据。 （仅适用于 Visual Studio 2017 或更高版本中的 .NET Core 项目。）
 
 ```xml

@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002239"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>如何：向负载测试添加额外的运行设置
 
@@ -26,21 +26,21 @@ ms.locfileid: "55917540"
 
 ## <a name="to-add-another-run-setting"></a>添加另一个运行设置
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
-2.  （可选）展开“运行设置”文件夹。
+2. （可选）展开“运行设置”文件夹。
 
-3.  右键单击“运行设置”文件夹并选择“添加运行设置”。
+3. 右键单击“运行设置”文件夹并选择“添加运行设置”。
 
      将一个新的运行设置添加到“运行设置”文件夹中。
 
-4.  在“视图”菜单上，选择“属性”窗口。
+4. 在“视图”菜单上，选择“属性”窗口。
 
      此时将显示“属性”窗口，其中包含了所选运行设置的属性。
 
-5.  在“属性”窗口中，使用“名称”属性文本框为新运行设置指定一个名称，该名称描述此运行设置的目的（例如“Run Setting: Five minute run”）。
+5. 在“属性”窗口中，使用“名称”属性文本框为新运行设置指定一个名称，该名称描述此运行设置的目的（例如“Run Setting: Five minute run”）。
 
-6.  使用“属性窗口”更改运行设置。 例如，将运行持续时间更改为“00:05:00”以使测试运行五分钟。
+6. 使用“属性窗口”更改运行设置。 例如，将运行持续时间更改为“00:05:00”以使测试运行五分钟。
 
     > [!NOTE]
     > 有关运行设置属性及其说明的完整列表，请参阅[负载测试运行设置属性](../test/load-test-run-settings-properties.md)。

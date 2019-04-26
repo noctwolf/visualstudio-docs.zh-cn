@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428130"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 
@@ -39,8 +39,6 @@ ms.locfileid: "57868200"
 
  对于托管代码，探查器 API 位于 Microsoft.VisualStudio.Profiler.dll 中。 此 DLL 位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。 对于 64 位应用，文件夹为 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64。 有关更多信息，请参见<xref:Microsoft.VisualStudio.Profiler>。
 
-
-
 ## <a name="prerequisites"></a>系统必备
  本演练假定用户选择的开发环境配置为支持调试和采样。 以下主题概述了这些系统必备：
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>创建要分析的代码
 
-1.  在 Visual Studio 中创建一个新的 C# 项目，或使用命令行生成，具体取决于用户的选择。
+1. 在 Visual Studio 中创建一个新的 C# 项目，或使用命令行生成，具体取决于用户的选择。
 
     > [!NOTE]
-    >  生成必须引用 Microsoft.VisualStudio.Profiler.dll 库，该库位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。
+    > 生成必须引用 Microsoft.VisualStudio.Profiler.dll 库，该库位于 Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools 目录。
 
-2.  将以下代码复制并粘贴到项目中：
+2. 将以下代码复制并粘贴到项目中：
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>在命令行收集和查看数据
 
-1.  编译在“创建要分析的代码”过程（本演练前面部分）中创建的代码示例的调试版本。
+1. 编译在“创建要分析的代码”过程（本演练前面部分）中创建的代码示例的调试版本。
 
-2.  若要分析托管应用程序，请键入以下命令设置适当的环境变量：
+2. 若要分析托管应用程序，请键入以下命令设置适当的环境变量：
 
      **VsPerfCLREnv /traceon**
 
-3.  键入以下命令：**VSInstr\<filename>.exe**
+3. 键入以下命令：**VSInstr\<filename>.exe**
 
-4.  键入以下命令：**VSPerfCmd /start:trace /output:\<filename>.vsp**
+4. 键入以下命令：**VSPerfCmd /start:trace /output:\<filename>.vsp**
 
-5.  键入以下命令：**VSPerfCmd /globaloff**
+5. 键入以下命令：**VSPerfCmd /globaloff**
 
-6.  执行程序。
+6. 执行程序。
 
-7.  键入以下命令：**VSPerfCmd /shutdown**
+7. 键入以下命令：**VSPerfCmd /shutdown**
 
-8.  键入以下命令：**VSPerfReport /calltrace:\<>.vsp**
+8. 键入以下命令：**VSPerfReport /calltrace:\<>.vsp**
 
      当前目录中即会创建一个 .csv 文件，该文件包含得到的性能数据。
 

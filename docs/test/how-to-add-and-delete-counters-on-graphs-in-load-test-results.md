@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002263"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>如何：在负载测试结果中的关系图上添加和删除计数器
 
@@ -51,25 +51,25 @@ ms.locfileid: "55936067"
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>在负载测试关系图上显示特定性能计数器
 
-1.  在完成负载测试后或加载测试结果后，在负载测试分析器的工具栏中选择“关系图”。
+1. 在完成负载测试后或加载测试结果后，在负载测试分析器的工具栏中选择“关系图”。
 
      “计数器”面板显示在关系图视图中。
 
     > [!NOTE]
     > 如果看不到“计数器”面板，请选择工具栏上的“显示计数器面板”。
 
-2.  在“计数器”面板中，展开层次结构中的节点，直到找到希望以图形方式显示的性能计数器。
+2. 在“计数器”面板中，展开层次结构中的节点，直到找到希望以图形方式显示的性能计数器。
 
      例如，若要显示运行测试的计算机上的可用内存，请展开“计算机”，展开该计算机的节点，然后展开“内存”。 将看到“Available MBytes”计数器。
 
-3.  选择要在上面显示性能计数器的关系图。
+3. 选择要在上面显示性能计数器的关系图。
 
-4.  在“计数器”面板中右键单击性能计数器，然后选择“在关系图上显示计数器”。
+4. 在“计数器”面板中右键单击性能计数器，然后选择“在关系图上显示计数器”。
 
     > [!TIP]
     > 若要暂时停止在关系图上显示性能计数器数据，请清除图例中性能计数器的复选框。 这样仍可以分析最小值、最大值和平均值统计信息，而不用在关系图上查看趋势线。 如果在分析问题时关系图包含几个重叠的性能计数器图形，这会非常有用。 有关详细信息，请参阅[使用关系图视图图例分析负载测试](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)。
 
-5.  若要从关系图删除性能计数器数据，请右击图例的“计数器”列中的性能计数器，然后选择“删除”。
+5. 若要从关系图删除性能计数器数据，请右击图例的“计数器”列中的性能计数器，然后选择“删除”。
 
      \- 或 -
 

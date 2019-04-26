@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002555"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 
@@ -29,13 +29,13 @@ ms.locfileid: "57869271"
 
 ## <a name="generate-a-coded-web-performance-test"></a>生成编码的 Web 性能测试
 
-1.  如果尚未创建 Web 性能测试，请参阅[记录 Web 性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
+1. 如果尚未创建 Web 性能测试，请参阅[记录 Web 性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
 
-2.  生成编码的测试。
+2. 生成编码的测试。
 
      ![生成编码的 Web 性能测试](../test/media/web_test_coded_generate.png)
 
-3.  为测试命名。
+3. 为测试命名。
 
      ![输入编码 Web 性能测试的名称](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "57869271"
 
      你可在代码中看到 C# 中的 GetRequestEnumerator() 方法或 Visual Basic 中的 Run() 方法包括每个验证规则和已记录测试中的 Web 请求。
 
-4.  若要展示添加一些简单代码的操作，请向下滚动到所选方法的末尾，并在最后一个 Web 请求的代码后面添加以下代码：
+4. 若要展示添加一些简单代码的操作，请向下滚动到所选方法的末尾，并在最后一个 Web 请求的代码后面添加以下代码：
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ ms.locfileid: "57869271"
     End If
     ```
 
-5.  生成解决方案来验证你的自定义代码是否编译。
+5. 生成解决方案来验证你的自定义代码是否编译。
 
-6.  运行测试。
+6. 运行测试。
 
      ![运行编码的 Web 性能测试](../test/media/web_test_coded_generate_run.png)
 

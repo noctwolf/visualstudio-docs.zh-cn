@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403554"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。
@@ -22,7 +22,7 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
  “网络”工具仅支持 UWP 应用。 目前不支持其他平台。
 
 > [!NOTE]
->  有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
+> 有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/)。
 
 ## <a name="collect-network-tool-data"></a>收集网络工具数据
  你应在 Visual Studio 计算机上打开的 Visual Studio 项目中运行“网络”工具。
@@ -65,11 +65,11 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 ### <a name="analysis-tips"></a>分析提示
  在运行网络相关分析时，此工具突出显示某些可能有用的区域：
 
-1.  完全来自缓存的请求在“已接收”列中显示为“(来自缓存)”。 这有助于你确定你是否在有效地使用缓存来节省用户的带宽，或是否在错误地缓存响应并为应用程序最终用户提供过时的数据。
+1. 完全来自缓存的请求在“已接收”列中显示为“(来自缓存)”。 这有助于你确定你是否在有效地使用缓存来节省用户的带宽，或是否在错误地缓存响应并为应用程序最终用户提供过时的数据。
 
-2.  “结果”列中使用红色状态代码显示错误响应（4xx 或 5xx），这些错误响应在“摘要”栏中突出显示。 这有助于轻松发现应用程序上众多潜在请求中的错误。
+2. “结果”列中使用红色状态代码显示错误响应（4xx 或 5xx），这些错误响应在“摘要”栏中突出显示。 这有助于轻松发现应用程序上众多潜在请求中的错误。
 
-3.  响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。
+3. 响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。
 
 ## <a name="see-also"></a>请参阅
 

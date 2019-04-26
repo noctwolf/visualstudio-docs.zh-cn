@@ -13,34 +13,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 347b35a1ed47236c0d6e6c187224ee50fd79852c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422875"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：引用 Windows 符号信息
 Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例如，程序二进制文件中的函数名称。 可以按照以下步骤为本地计算机上的 Windows 版本自动下载和更新正确的 .pdb 文件。
 
 > [!NOTE]
->  此设置不会影响现有报告。 只有在指定符号服务器以后创建的报告才会有符号信息。
+> 此设置不会影响现有报告。 只有在指定符号服务器以后创建的报告才会有符号信息。
 
  有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 ### <a name="to-use-the-microsoft-symbol-server"></a>使用 Microsoft 符号服务器
 
-1.  创建用于包含符号文件信息的文件夹，如 C:\SymbolCache。
+1. 创建用于包含符号文件信息的文件夹，如 C:\SymbolCache。
 
-2.  在 **“工具”** 菜单上，单击 **“选项”**。
+2. 在 **“工具”** 菜单上，单击 **“选项”**。
 
      这将显示 **“选项”** 对话框。
 
-3.  展开“调试”树，然后单击“符号”。
+3. 展开“调试”树，然后单击“符号”。
 
-4.  在“符号文件(.pdb)位置”中，选择“Microsoft 符号服务器”
+4. 在“符号文件(.pdb)位置”中，选择“Microsoft 符号服务器”
 
-5.  在“将符号从符号服务器缓存到此目录”中，键入在第 1 步中创建的文件夹的路径，例如：
+5. 在“将符号从符号服务器缓存到此目录”中，键入在第 1 步中创建的文件夹的路径，例如：
 
      **C:\SymbolCache**
 

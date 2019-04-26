@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415995"
 ---
 # <a name="windows-script-engines"></a>Windows 脚本引擎
 若要实现 Microsoft Windows 脚本引擎，则要创建支持下列接口的 OLE COM 对象。  
@@ -31,7 +31,7 @@ ms.locfileid: "58157758"
 |IPersist*|提供持久性支持。 若未实现 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md)，则至少需实现下列接口之一。<br /><br /> IPersistStorage：支持 OBJECT 标记中的 DATA={url} 属性。<br /><br /> IPersistStreamInit：同样支持 `IPersistStorage`，还支持 OBJECT 标记中的 DATA="string-encoded byte stream" 属性。<br /><br /> IPersistPropertyBag：支持 OBJECT 标记中的 PARAM= attribute。|  
   
 > [!NOTE]
->  可能始终不会调用此脚本引擎来通过 `IPersist*` 保存或还原脚本状态。 相反，会调用 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 来使用 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) 创建空白脚本，然后使用 [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) 添加 scriptlet 并将其连接到事件，并使用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 添加常规代码。 但是，脚本引擎应至少完整实现一个 `IPersist*` 接口（最好是 `IPersistStreamInit`），因为其他主机应用程序可能会尝试使用这些接口。  
+> 可能始终不会调用此脚本引擎来通过 `IPersist*` 保存或还原脚本状态。 相反，会调用 [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) 来使用 [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) 创建空白脚本，然后使用 [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) 添加 scriptlet 并将其连接到事件，并使用 [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) 添加常规代码。 但是，脚本引擎应至少完整实现一个 `IPersist*` 接口（最好是 `IPersistStreamInit`），因为其他主机应用程序可能会尝试使用这些接口。  
   
  下面的部分将详细介绍实现 Windows 脚本引擎的过程。  
   

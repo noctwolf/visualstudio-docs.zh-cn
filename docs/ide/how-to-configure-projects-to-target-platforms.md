@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438192"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：将项目配置为面向平台
 
@@ -35,20 +35,20 @@ ms.locfileid: "55942110"
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>将项目配置为面向 64 位平台
 
-1.  在菜单栏上，依次选择“生成” > “Configuration Manager”。
+1. 在菜单栏上，依次选择“生成” > “Configuration Manager”。
 
-2.  在“活动解决方案平台”列表中，选择一个 64 位平台作为解决方案目标，然后选择“关闭”按钮。
+2. 在“活动解决方案平台”列表中，选择一个 64 位平台作为解决方案目标，然后选择“关闭”按钮。
 
-    1.  如果所需平台未出现在“活动解决方案平台”列表中，请选择“新建”。
+    1. 如果所需平台未出现在“活动解决方案平台”列表中，请选择“新建”。
 
          将显示“新建解决方案平台”对话框。
 
-    2.  在“键入或选择新平台”列表中，选择“x64”。
+    2. 在“键入或选择新平台”列表中，选择“x64”。
 
         > [!NOTE]
-        >  如果对配置进行了重命名，则可能需要修改“项目设计器”中的设置，以面向正确的平台。
+        > 如果对配置进行了重命名，则可能需要修改“项目设计器”中的设置，以面向正确的平台。
 
-    3.  如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。
+    3. 如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。
 
 面向 64 位平台的所有项目的属性均已更新，并将为 64 位平台优化项目的下一个生成。
 

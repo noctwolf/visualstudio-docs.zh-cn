@@ -14,19 +14,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0257b29d327610b6b301d3c368e727a0912ab691
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a2a65534cda2571c36bb0c2caa16bf2f3394a804
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435058"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教程：在 Visual Studio 中使用 XAML 和 C&#35 创建第一个通用 Windows 平台应用程序；
 
 在这个 Visual Studio 集成开发环境 (IDE) 简介中，你将创建能在任何 Windows 10 设备上运行的“Hello World”应用。 为此，将使用通用 Windows 平台 (UWP) 项目模板、Extensible Application Markup Language (XAML) 和 C# 编程语言。
 
 ::: moniker range="vs-2017"
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
 ::: moniker-end
 ::: moniker range="vs-2019"
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
@@ -70,7 +70,7 @@ ms.locfileid: "58856415"
 
    > [!NOTE]
    > 如果你是第一次使用 Visual Studio 创建 UWP 应用，则可能会出现“设置”对话框。 选择“开发人员模式”，然后选择“是”。<br><br>
-   ![在“UWP 设置”对话框中启用开发人员模式](media/enable-developer-mode.png)<br><br>Visual Studio 会为你安装其他开发人员模式包。 包安装完成时，请关闭“设置”对话框。
+   > ![在“UWP 设置”对话框中启用开发人员模式](media/enable-developer-mode.png)<br><br>Visual Studio 会为你安装其他开发人员模式包。 包安装完成时，请关闭“设置”对话框。
 
 ## <a name="create-the-application"></a>创建应用程序
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 041a04827ee904f309b62b8fb875198cc8991b34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434158"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。
@@ -51,7 +51,7 @@ ms.locfileid: "56620286"
 ```
 
 > [!NOTE]
->  关闭并重新打开项目后，还应重新生成该项目以确保所有引用正确解析。
+> 关闭并重新打开项目后，还应重新生成该项目以确保所有引用正确解析。
 
 ## <a name="see-also"></a>请参阅
 - [如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)

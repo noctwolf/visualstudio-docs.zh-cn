@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437840"
 ---
 # <a name="mt-task"></a>MT 任务
 包装 Microsoft 清单工具 mt.exe。 有关详细信息，请参见 [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe)。
@@ -38,7 +38,7 @@ ms.locfileid: "56654466"
  下表描述了 MT 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。
 
 > [!NOTE]
->  mt.exe 文档使用连字符 (-) 作为前缀，用于命令行选项，但本主题使用斜杠 (/)。 以上任意一种前缀都是可接受的。
+> mt.exe 文档使用连字符 (-) 作为前缀，用于命令行选项，但本主题使用斜杠 (/)。 以上任意一种前缀都是可接受的。
 
 |参数|说明|
 |---------------|-----------------|

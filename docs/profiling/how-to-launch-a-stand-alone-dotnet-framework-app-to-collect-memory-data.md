@@ -8,26 +8,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18e90e44da8b36dbc4824817c7f13bbe423a2c12
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386052"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，以使用命令行收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序以及收集内存数据。
 
  分析会话包括三部分：
 
--   使用探查器启动应用程序。
+- 使用探查器启动应用程序。
 
--   收集分析数据。
+- 收集分析数据。
 
--   结束分析会话。
+- 结束分析会话。
 
 > [!NOTE]
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
 ## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序
  若要使用探查器来启动目标应用程序，请使用 **VSPerfCmd.exe/start** 和 **/launch** 选项来初始化探查器并启动应用程序。 可以在一个命令行中指定 **/start** 和 **/launch** 及其各自的选项。
@@ -52,7 +52,6 @@ ms.locfileid: "56614176"
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |
-
 
 3. 启动目标应用程序。 类型：
 
@@ -79,7 +78,7 @@ ms.locfileid: "56614176"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -87,22 +86,22 @@ ms.locfileid: "56614176"
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** 将启动由 `PID`（进程 ID）指定的进程的数据收集。 **/detach** 将停止所有进程的数据收集。|
 
--   还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选数据。
+- 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选数据。
 
 ## <a name="end-the-profiling-session"></a>结束分析会话
  若要结束分析会话，必须将探查器与所有被分析进程分离，并且必须显式关闭探查器。 可通过关闭应用程序或调用 **VSPerfCmd /detach** 选项从使用采样方法分析的应用程序分离探查器。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。 **VSPerfClrEnv /off** 命令会清除分析环境变量。
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  执行下列步骤之一，从目标应用程序分离探查器：
+1. 执行下列步骤之一，从目标应用程序分离探查器：
 
-    -   关闭目标应用程序。
+    - 关闭目标应用程序。
 
          或
 
-    -   键入 **VSPerfCmd /detach**
+    - 键入 **VSPerfCmd /detach**
 
-2.  关闭探查器。 类型：
+2. 关闭探查器。 类型：
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 

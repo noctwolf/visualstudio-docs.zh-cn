@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004580"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。
@@ -45,15 +45,15 @@ ms.locfileid: "56634417"
 ## <a name="target-build-order"></a>目标生成顺序
  如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可以通过多种方法指定目标的运行顺序。
 
--   初始目标
+- 初始目标
 
--   默认目标
+- 默认目标
 
--   第一个目标
+- 第一个目标
 
--   目标依赖项
+- 目标依赖项
 
--   `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)
 
 目标决不会在一个生成过程中运行两次，即使在生成中有后续目标依赖于该目标。 目标运行后，其在生成中的任务就已完成。
 
