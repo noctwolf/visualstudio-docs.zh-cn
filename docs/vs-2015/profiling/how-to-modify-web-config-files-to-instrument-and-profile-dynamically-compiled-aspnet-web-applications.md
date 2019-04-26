@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432607"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60099581"
  本主题介绍如何修改 web.config 配置文件才能检测和分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序。  
   
 > [!NOTE]
->  使用采样分析方法时或要检测预编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 模块时，不必修改 web.config 文件。  
+> 使用采样分析方法时或要检测预编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 模块时，不必修改 web.config 文件。  
   
  web.config 文件的根元素为 **configuration** 元素。 若要检测和分析动态编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序，必须添加或修改以下元素：  
   
