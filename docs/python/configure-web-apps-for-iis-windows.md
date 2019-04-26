@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 - azure
 ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957367"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 
@@ -139,7 +139,7 @@ FastCGI 是在请求级别工作的接口。 IIS 接收传入的连接，并将�
     ALLOWED_HOSTS = ['1.2.3.4']
     ```
 
-    未能将 URL 添加到该阵列会导致出现错误“不允许的主机 / 无效的 HTTP_HOST 标头: ‘\<站点 URL\>’。可能需要将‘\<站点 URL\>’添加到 ALLOWED_HOSTS。”
+    未能将 URL 添加到该阵列会导致出现错误“不允许的主机 / 无效的 HTTP_HOST 标头: ‘\<站点 URL\>’。可能需要将‘\<站点 URL\>’添加到 ALLOWED_HOSTS。”**
 
     请注意，当数组为空时，Django 会自动允许“localhost”和“127.0.0.1”，而添加生产 URL 则会删除这些功能。 因此，可能需要保留单独的 settings.py 开发和生产副本，或者使用环境变量来控制运行时值。
 

@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的技术支持权益。
 searchscope: VS Subscription
-ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811440"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活并使用 Visual Studio 订阅中的技术支持权益
 
@@ -83,7 +83,6 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 
 4. 输入“访问 ID”和“合同 ID”。  单击 **添加**。
 
-
    > [!div class="mx-imgBorder"]
    > ![技术支持权益事件提交 - 添加合同 ID](_img/vs-tech-support/vs-tech-support-add-contract-id.png)
 
@@ -119,6 +118,6 @@ Visual Studio 订阅中的技术支持权益用于解决仍处于[支持生命�
 
 <sup>1</sup>  *包括：Imagine Premium、BizSpark。不包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、Imagine Standard、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。*
 
-<sup>2</sup> 包括：Imagine 标准版。
+<sup>2</sup> 包括：Imagine 标准版*。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。

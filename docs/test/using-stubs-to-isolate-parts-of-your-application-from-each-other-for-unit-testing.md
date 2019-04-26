@@ -11,11 +11,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961960"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根隔离应用程序的各个部分以进行单元测试
 
@@ -33,7 +33,7 @@ ms.locfileid: "55932282"
 
 ## <a name="how-to-use-stubs"></a>如何使用存根
 
-### <a name="design-for-dependency-injection"></a>依赖关系注入设计
+### <a name="design-for-dependency-injection"></a>依赖项注入的设计
 
 若要使用存根，则必须将应用程序设计为使不同的组件不相互依赖，而只依赖接口定义。 各个组件在运行时连接在一起，而不是在编译时进行耦合。 这种模式可帮助制作可靠且易于更新的软件，因为更改往往不会跨组件边界传播。 即使未使用存根，也建议采用此模式。 若要编写新代码，采用[依赖项注入](http://en.wikipedia.org/wiki/Dependency_injection)模式会很容易。 如果要为现有软件编写测试，你可能必须重构它。 如果这样做可行，则可以考虑改用填充码。
 
@@ -392,7 +392,7 @@ public void TestGetValue()
 
 如果代码是为了调用具有任何其他实例化的 `GetValue<T>`，存根将只调用行为。
 
-### <a name="stubs-of-virtual-classes"></a>虚拟类的存根
+### <a name="stubs-of-virtual-classes"></a>虚拟类的存根 
 
 在前面的示例中，已从接口生成存根。 还可以从具有虚拟或抽象成员的类生成存根。 例如:
 

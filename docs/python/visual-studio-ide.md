@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957419"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 
 Visual Studio“集成开发环境”是面向 Python （和其他语言）的创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括代码完成工具、交互式 REPL 环境以及其他功能，以简化软件开发过程。
 
-[![V带有 Python 项目的 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![带有 Python 项目的 Visual Studio](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 此图像显示 Visual Studio 中含有一个打开的 Python 项目和若干重要的工具窗口：
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443141"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>编写可识别多处理器的记录器
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 利用多个处理器的能力可以缩短项目生成时间，但同时会增加生成事件日志记录的复杂性。 在单处理器环境下，事件、消息、警告和错误以可预测的顺序方式到达记录器。 但在多处理器环境下，来自不同源的事件可能同时或不按顺序到达。 为了应对此情况，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了可以识别多处理器的记录器以及新的日志记录模型，并允许创建自定义“转发记录器”。
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  可通过以下两种方法来使用分布式日志记录：
 
--   自定义名为 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 的预制转发记录器。
+- 自定义名为 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 的预制转发记录器。
 
--   编写自己的自定义转发记录器。
+- 编写自己的自定义转发记录器。
 
 可根据你的需要，对 ConfigurableForwardingLogger 进行修改。 为此，请使用 MSBuild.exe 在命令行中调用记录器，并列出希望记录器转发至中心节点的生成事件。
 
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  必须用星号 (*) 来分隔 `-dl` 开关中的两个记录器名称。
+> 必须用星号 (*) 来分隔 `-dl` 开关中的两个记录器名称。
 
  使用 ConfigurableForwardingLogger 与使用其他任何记录器相似（如[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)中所述），区别在于要附加 ConfigurableForwardingLogger 记录器而不是通常的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 记录器，而且要将希望 ConfigurableForwardingLogger 传递到中心节点的事件指定为参数。
 
