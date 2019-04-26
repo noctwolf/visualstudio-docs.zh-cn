@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950043"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
 可以使用以下命名空间来扩展“Web 性能测试结果查看器”的 UI：
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 此外，还需要添加对位于 %ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\Enterprise\Common7\IDE\PrivateAssemblies 文件夹中的 LoadTestPackage DLL 的引用。
 
@@ -109,31 +109,31 @@ ms.locfileid: "58416352"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>创建要在 Web 测试结果查看器中使用的控件
 
-1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
+1. 在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
 2. 创建新的“Windows 窗体控件库”项目。
 
-3.  从“工具箱”中将 <xref:System.Windows.Forms.DataGridView> 拖动到 userControl1 的图面上。
+3. 从“工具箱”中将 <xref:System.Windows.Forms.DataGridView> 拖动到 userControl1 的图面上。
 
 4. 单击 <xref:System.Windows.Forms.DataGridView> 的右上角的操作标记字形（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），并按照以下步骤操作：
 
-    1.  选择“在父容器中停靠”。
+    1. 选择“在父容器中停靠”。
 
-    2.  清除“启用添加”、“启用编辑”、“启用删除”和“启用列重新排序”复选框。
+    2. 清除“启用添加”、“启用编辑”、“启用删除”和“启用列重新排序”复选框。
 
-    3.  选择“添加列”。
+    3. 选择“添加列”。
 
          随即出现“添加列”对话框。
 
-    4.  在“类型”下拉列表中，选择“DataGridViewTextBoxColumn”。
+    4. 在“类型”下拉列表中，选择“DataGridViewTextBoxColumn”。
 
-    5.  清除“标头文本”中的文本“Column1”。
+    5. 清除“标头文本”中的文本“Column1”。
 
-    6.  选择“添加”。
+    6. 选择“添加”。
 
-    7.  选择“关闭”。
+    7. 选择“关闭”。
 
-5.  在“属性”窗口中，将 <xref:System.Windows.Forms.DataGridView> 的“(Name)”属性更改为“resultControlDataGridView”。
+5. 在“属性”窗口中，将 <xref:System.Windows.Forms.DataGridView> 的“(Name)”属性更改为“resultControlDataGridView”。
 
 6. 右键单击设计图面并选择“查看代码”。
 
@@ -158,21 +158,21 @@ ms.locfileid: "58416352"
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>向 WebPerfTestResultsViewerAddin 添加代码
 
-1.  在解决方案资源管理器中，右键单击 WebPerfTestResultsViewerAddin 项目中的“引用”节点，然后选择“添加引用”。
+1. 在解决方案资源管理器中，右键单击 WebPerfTestResultsViewerAddin 项目中的“引用”节点，然后选择“添加引用”。
 
-2.  在“添加引用”对话框中，选择“.NET”选项卡。
+2. 在“添加引用”对话框中，选择“.NET”选项卡。
 
-3.  向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”和“System.Windows.Forms”。
+3. 向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”和“System.Windows.Forms”。
 
-4.  选择 **“确定”**。
+4. 选择 **“确定”**。
 
-5.  再次右键单击“引用”节点，然后选择“添加引用”。
+5. 再次右键单击“引用”节点，然后选择“添加引用”。
 
-6.  在“添加引用”对话框中，选择“浏览”选项卡。
+6. 在“添加引用”对话框中，选择“浏览”选项卡。
 
-7.  选择“查找范围”下拉列表，并导航到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies，然后选择 Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll 文件。
+7. 选择“查找范围”下拉列表，并导航到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies，然后选择 Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll 文件。
 
-8.  选择 **“确定”**。
+8. 选择 **“确定”**。
 
 9. 右键单击“WebPerfTestResultsViewerAddin”项目节点，然后选择“添加引用”。
 
@@ -254,28 +254,28 @@ ms.locfileid: "58416352"
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>向 WebPerfTestResultsViewerControl 添加代码
 
-1.  在解决方案资源管理器中右键单击 WebPerfTestResultsViewerControl 项目节点，然后选择“属性”。
+1. 在解决方案资源管理器中右键单击 WebPerfTestResultsViewerControl 项目节点，然后选择“属性”。
 
-2.  选择“应用程序”选项卡，再选择“目标框架”下拉列表，然后选择“.NET Framework 4”并关闭“属性”。
+2. 选择“应用程序”选项卡，再选择“目标框架”下拉列表，然后选择“.NET Framework 4”并关闭“属性”。
 
      为支持扩展“Web 性能测试结果查看器”所需的 DLL 引用，此操作是必需的。
 
-3.  在解决方案资源管理器中，在 WebPerfTestResultsViewerControl 项目中右键单击“引用”节点，然后选择“添加引用”。
+3. 在解决方案资源管理器中，在 WebPerfTestResultsViewerControl 项目中右键单击“引用”节点，然后选择“添加引用”。
 
-4.  在“添加引用”对话框中，单击“.NET”选项卡。
+4. 在“添加引用”对话框中，单击“.NET”选项卡。
 
-5.  向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”。
+5. 向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”。
 
-6.  选择 **“确定”**。
+6. 选择 **“确定”**。
 
-7.  在 UserControl1.cs 文件中，添加以下 Using 语句：
+7. 在 UserControl1.cs 文件中，添加以下 Using 语句：
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  添加 Update 方法，然后从 Connect.cs 文件中的 WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged 方法调用该方法并传递 WebTestRequestResult。 Update 方法使用在 WebTestRequestResult 中传递给它的各种属性填充 DataGridView。
+8. 添加 Update 方法，然后从 Connect.cs 文件中的 WebPerfTestResultsViewerAddin WebTestResultViewer_SelectedChanged 方法调用该方法并传递 WebTestRequestResult。 Update 方法使用在 WebTestRequestResult 中传递给它的各种属性填充 DataGridView。
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ ms.locfileid: "58416352"
 
 ### <a name="to-build-the-solution"></a>生成解决方案
 
--   在“生成”菜单上，选择“生成解决方案”。
+- 在“生成”菜单上，选择“生成解决方案”。
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>注册 WebPerfTestResultsViewerAddin 外接程序
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>使用外接程序管理器注册外接程序
 
-1.  在“工具”菜单上，选择“外接程序管理器”。
+1. 在“工具”菜单上，选择“外接程序管理器”。
 
-2.  随即出现“外接程序管理器”对话框。
+2. 随即出现“外接程序管理器”对话框。
 
-3.  在“可用外接程序”列中，选中 WebPerfTestResultsViewerAddin 外接程序对应的复选框，然后清除“启动”列和“命令行”列下方的复选框。
+3. 在“可用外接程序”列中，选中 WebPerfTestResultsViewerAddin 外接程序对应的复选框，然后清除“启动”列和“命令行”列下方的复选框。
 
-4.  选择 **“确定”**。
+4. 选择 **“确定”**。
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>使用“生成 WebPerfTestResultsViewerAddin 外接程序”运行 Web 性能测试
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>为 Web 测试结果查看器运行新的 VS 外接程序
 
-1.  运行 Web 性能测试，你将会看到在“Web 性能测试结果查看器”中显示的 WebPerfTestResultsViewerAddin 加载项的标题为“Sample”的新选项卡。
+1. 运行 Web 性能测试，你将会看到在“Web 性能测试结果查看器”中显示的 WebPerfTestResultsViewerAddin 加载项的标题为“Sample”的新选项卡。
 
-2.  选择此选项卡可查看 DataGridView 中显示的属性。
+2. 选择此选项卡可查看 DataGridView 中显示的属性。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
 
@@ -336,9 +336,9 @@ ms.locfileid: "58416352"
 
  选项页中外接程序安全性的设置如下所示：
 
--   **允许加载外接程序组件。** 默认情况下选中此选项。 在选中时，允许在 Visual Studio 中加载外接程序。 在未选中时，禁止在 Visual Studio 中加载外接程序。
+- **允许加载外接程序组件。** 默认情况下选中此选项。 在选中时，允许在 Visual Studio 中加载外接程序。 在未选中时，禁止在 Visual Studio 中加载外接程序。
 
--   **允许从 URL 加载外接程序组件。** 默认情况下不选择此选项。 在选中时，可从外部网站加载外接程序。 在未选中时，禁止在 Visual Studio 中加载远程外接程序。 如果某个外接程序由于某种原因无法加载，则无法从网站加载它。 此设置只控制外接程序 DLL 的加载。 .Addin 注册文件必须始终位于本地系统上。
+- **允许从 URL 加载外接程序组件。** 默认情况下不选择此选项。 在选中时，可从外部网站加载外接程序。 在未选中时，禁止在 Visual Studio 中加载远程外接程序。 如果某个外接程序由于某种原因无法加载，则无法从网站加载它。 此设置只控制外接程序 DLL 的加载。 .Addin 注册文件必须始终位于本地系统上。
 
 ## <a name="see-also"></a>请参阅
 

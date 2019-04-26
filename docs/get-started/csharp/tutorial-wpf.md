@@ -14,19 +14,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426352"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C\# 创建简单应用
 
 通过完成本教程，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建“Hello, World”应用程序、设计 UI、添加代码并调试错误。在此期间，你将了解如何使用集成开发环境 ([IDE](visual-studio-ide.md))。
 
 ::: moniker range="vs-2017"
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
@@ -84,7 +84,6 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 1. 在“开始”窗口上，选择“创建新项目”。
 
    ![查看“创建新项目”窗口](../../get-started/media/vs-2019/start-window-create-new-project.png)
-
 
 2. 在“创建新项目”屏幕上，搜索“WPF”，选择“WPF 应用 (.NET Framework)”，然后选择“下一步”。
 
@@ -267,7 +266,7 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>添加断点
 
-1. 打开“Greetings.xaml.cs”，并选择以下行： `MessageBox.Show("Hello.")`
+1. 打开“Greetings.xaml.cs”，并选择以下行：`MessageBox.Show("Hello.")`
 
 2. 通过选择 **“调试”**-&gt; **“切换断点”**，从菜单中添加断点。
 

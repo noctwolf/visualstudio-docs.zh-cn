@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979323"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>如何：将测试控制器或测试代理绑定到网络适配器
 
@@ -35,19 +35,19 @@ ms.locfileid: "58414965"
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>获取网络适配器的 IP 地址
 
-1.  在 Microsoft Windows 中，选择“开始”，在“开始搜索”框中选择，键入 cmd，然后选择“输入”。
+1. 在 Microsoft Windows 中，选择“开始”，在“开始搜索”框中选择，键入 cmd，然后选择“输入”。
 
-2.  键入 ipconfig /all。
+2. 键入 ipconfig /all。
 
      将显示网络适配器的 IP 地址。 记录要将控制器绑定到的网络适配器的 IP 地址。
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>将网络适配器绑定到测试控制器
 
-1.  在 Microsoft Windows 中，选择“开始”，在“开始搜索”框中选择，键入 services.msc，然后选择“输入”。
+1. 在 Microsoft Windows 中，选择“开始”，在“开始搜索”框中选择，键入 services.msc，然后选择“输入”。
 
      将显示“服务”对话框。
 
-2.  在结果窗格中的“名称”列中，右键单击“Visual Studio Test Controller”服务，然后选择“停止”。
+2. 在结果窗格中的“名称”列中，右键单击“Visual Studio Test Controller”服务，然后选择“停止”。
 
      或
 
@@ -55,9 +55,9 @@ ms.locfileid: "58414965"
 
      `net stop vsttcontroller`
 
-3.  打开位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE 中的 QTCcontroller.exe.config XML 配置文件。
+3. 打开位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE 中的 QTCcontroller.exe.config XML 配置文件。
 
-4.  找到 `<appSettings>` 标记。
+4. 找到 `<appSettings>` 标记。
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ ms.locfileid: "58414965"
     </appSettings>
     ```
 
-5.  添加 `BindTo` 键以指定要在 `<appSettings>` 节中使用的网络适配器。
+5. 添加 `BindTo` 键以指定要在 `<appSettings>` 节中使用的网络适配器。
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  启动测试控制器服务。 为此，请在命令提示符处运行以下命令：
+6. 启动测试控制器服务。 为此，请在命令提示符处运行以下命令：
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ ms.locfileid: "58414965"
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>将网络接口卡绑定到测试代理
 
-1.  在 Microsoft Windows 中，选择“开始”，在“开始搜索”框中选择，键入 services.msc，然后选择“输入”。
+1. 在 Microsoft Windows 中，选择“开始”，在“开始搜索”框中选择，键入 services.msc，然后选择“输入”。
 
     将显示“服务”对话框。
 
-2.  在结果窗格中的“名称”列中，右键单击“Visual Studio Test Agent”服务，然后选择“停止”。
+2. 在结果窗格中的“名称”列中，右键单击“Visual Studio Test Agent”服务，然后选择“停止”。
 
      或
 
@@ -101,9 +101,9 @@ ms.locfileid: "58414965"
 
      net stop vsttagent
 
-3.  打开位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE 中的 QTAgentService.exe.config XML 配置文件。
+3. 打开位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE 中的 QTAgentService.exe.config XML 配置文件。
 
-4.  找到 `<appSettings>` 标记。
+4. 找到 `<appSettings>` 标记。
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ ms.locfileid: "58414965"
     </appSettings>  </appSettings>
     ```
 
-5.  添加 `BindTo` 键以指定要在 `<appSettings>` 节中使用的网络适配器。
+5. 添加 `BindTo` 键以指定要在 `<appSettings>` 节中使用的网络适配器。
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  启动测试代理服务。 为此，请在命令提示符处运行以下命令：
+6. 启动测试代理服务。 为此，请在命令提示符处运行以下命令：
 
     `net start vsttagent`
 

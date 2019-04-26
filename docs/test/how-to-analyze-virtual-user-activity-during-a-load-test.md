@@ -8,12 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979414"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虚拟用户活动图分析虚拟用户在负载测试期间的操作
 
@@ -25,9 +25,9 @@ ms.locfileid: "55917488"
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>在负载测试结果中查看虚拟用户活动图
 
-1.  若要查看虚拟用户数据，必须首先为与负载测试关联的“计时详细信息存储”属性配置“所有的详细信息”设置。 然后运行负载测试。
+1. 若要查看虚拟用户数据，必须首先为与负载测试关联的“计时详细信息存储”属性配置“所有的详细信息”设置。 然后运行负载测试。
 
-2.  运行完负载测试之后，将显示测试结果摘要页。 选择工具栏上的“用户详细信息”按钮。
+2. 运行完负载测试之后，将显示测试结果摘要页。 选择工具栏上的“用户详细信息”按钮。
 
      或
 

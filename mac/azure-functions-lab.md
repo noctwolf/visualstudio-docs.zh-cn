@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986499"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -87,7 +87,7 @@ ms.locfileid: "51296432"
 
     ![含有输入的连接密钥的本地设置文件](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>示例 3：创建和调试 Azure Function
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>示例 3：创建和调试 Azure 函数
 
 1. 现在可以开始添加一些代码。 使用 .NET 类库时，Azure Functions 将作为静态方法进行添加。 在“Solution Pad”中，右键单击“AzureFunctions”项目节点，选择“添加”>“添加函数”：
 
@@ -104,6 +104,7 @@ ms.locfileid: "51296432"
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. 删除现有 `Run` 方法，并将以下方法添加到类中作为 Azure Function：
 
     ```csharp
@@ -119,6 +120,7 @@ ms.locfileid: "51296432"
         return x + y;
     }
     ```
+
 1. 让我们逐部分地了解此方法。
 
     首先看到的是将此方法标记为 Azure Function 的 FunctionName 特性。 该特性指定函数的公共名称。 特性名称无需与实际方法名称匹配。
@@ -169,7 +171,7 @@ ms.locfileid: "51296432"
 
     ![“停止调试”选项](media/azure-functions-lab-image22.png)
 
-1. 在 Run 方法中，将 x 和 y 定义替换为以下代码。 此代码从 URL 的查询字符串中提取值，以便可以根据提供的参数动态执行添加操作。
+1. 在 Run 方法中，将 x 和 y 定义替换替换为以下代码。 此代码从 URL 的查询字符串中提取值，以便可以根据提供的参数动态执行添加操作。
 
     ```csharp
     var query = HttpUtility.ParseQueryString(req.RequestUri.Query);
@@ -180,6 +182,7 @@ ms.locfileid: "51296432"
 
     return x + y;
     ```
+
 1. 运行该应用程序。
 
 1. 返回到浏览器窗口，将字符串 `/?x=2&y=3` 追加到 URL。 整个 URL 现在应为 `http://localhost:7071/api/Add?x=2&y=3`。 导航到新的 URL。
@@ -188,10 +191,9 @@ ms.locfileid: "51296432"
 
 1. 停止调试会话。
 
-
 ## <a name="exercise-4-working-with-functionjson"></a>练习 4：使用 function.json
 
-1.  在之前的练习中，提到了 Visual Studio for Mac 为库中定义的 Azure Function“生成了”一个作业函数。 这是因为 Azure Functions 实际上并未在运行时使用该方法特性，而使用的是编译时文件系统约定来配置 Azure Functions 可供使用的位置及方式。 在“Solution Pad”中，右键单击项目节点并选择“在查找器中展现”。
+1. 在之前的练习中，提到了 Visual Studio for Mac 为库中定义的 Azure Function“生成了”一个作业函数。 这是因为 Azure Functions 实际上并未在运行时使用该方法特性，而使用的是编译时文件系统约定来配置 Azure Functions 可供使用的位置及方式。 在“Solution Pad”中，右键单击项目节点并选择“在查找器中展现”。
 
      ![“在查找器中展现”菜单选项](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ ms.locfileid: "51296432"
         return x + y;
     }
     ```
+
 1. 按 F5 生成并运行项目。
 
 1. 在构建完成并且平台运行时，它将指示为映射至新添加方法的请求提供了第二个路由：
@@ -316,6 +319,7 @@ ms.locfileid: "51296432"
         public int Sum { get; set; }
     }
     ```
+
 1. 在 Add 类中，添加以下代码以引入另一个函数。 注意，到目前为止，它是唯一的，因为它不涉及 HTTP 响应。 最后一行返回了新的 TableRow，其中填有可使其之后易于检索的一些关键信息（PartitionKey 和 RowKey），还返回了其参数和总和。 该方法内的代码还使用 TraceWriter，以便更轻松地了解函数何时运行。
 
     ```csharp
@@ -341,6 +345,7 @@ ms.locfileid: "51296432"
         };
     }
     ```
+
 1. 按 F5 生成并运行项目。
 
 1. 在浏览器选项卡中，导航到 http://localhost:7071/api/Process/4/6。 这会将另一条消息置于队列中，最终将使另一行添加到表中。
@@ -363,6 +368,7 @@ ms.locfileid: "51296432"
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. 将以下代码添加到方法的开头。 如果 tableRow 不为 null，则我们已有要请求的操作的结果，并且可立即返回它。 否则，该函数将像以前那样继续运行。 虽然这可能不是返回数据的最可靠方式，但它表明可通过很少的代码跨多个可伸缩层安排非常复杂的操作。
 
     ```csharp
@@ -372,6 +378,7 @@ ms.locfileid: "51296432"
         return null;
     }
     ```
+
 1. 按 F5 生成并运行项目。
 
 1. 在浏览器选项卡中，刷新 http://localhost:7071/api/Process/4/6 处的 URL。 由于此记录的表行已存在，因此它应立即返回且不能出错。 由于不存在任何 HTTP 输出，因此可在终端中查看输出。
@@ -409,4 +416,3 @@ ms.locfileid: "51296432"
 ## <a name="summary"></a>总结
 
 在本实验室中，你已了解如何使用 Visual Studio for Mac 开始生成 Azure Functions。
-

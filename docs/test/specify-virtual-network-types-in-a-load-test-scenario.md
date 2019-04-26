@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990652"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在负载测试方案中指定虚拟网络类型
 
@@ -41,17 +41,17 @@ ms.locfileid: "55925484"
 
 Visual Studio 对所有测试类型（包括负载测试）使用基于软件的真实网络仿真。 真实网络仿真通过直接操作网络数据包来模拟各种网络情况。 真实网络仿真程序通过使用可靠的物理链接（如以太网）可模拟有线和无线网络的行为。 下列网络特性加入到了真实网络仿真中：
 
--   通过网络的往返时间（延迟）
+- 通过网络的往返时间（延迟）
 
--   可用带宽量
+- 可用带宽量
 
--   排队行为
+- 排队行为
 
--   数据包丢失
+- 数据包丢失
 
--   数据包的重新排序
+- 数据包的重新排序
 
--   错误传播。
+- 错误传播。
 
 真实网络仿真还提供在基于 IP 地址或协议（如 TCP、UDP 和 ICMP）筛选网络数据包方面的灵活性。
 
@@ -59,30 +59,30 @@ Visual Studio 对所有测试类型（包括负载测试）使用基于软件的
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>向方案中添加新网络
 
-1.  在为方案指定网络组合的过程中，请选择“添加”。
+1. 在为方案指定网络组合的过程中，请选择“添加”。
 
      新的网络项即添加到网格中。
 
     > [!NOTE]
     > 若要显示“编辑网络组合”对话框，请右键单击现有方案，然后选择“编辑网络组合”。
 
-2.  在“网络类型”列中，选择箭头来添加新项。 选择所需的网络类型。
+2. 在“网络类型”列中，选择箭头来添加新项。 选择所需的网络类型。
 
-3.  （可选）调整混合控件以指定测试分布。 有关详细信息，请参阅[关于混合控件](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+3. （可选）调整混合控件以指定测试分布。 有关详细信息，请参阅[关于混合控件](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
 
-4.  完成网络的添加后，选择“确定”。
+4. 完成网络的添加后，选择“确定”。
 
 ## <a name="to-remove-networks-from-a-scenario"></a>从方案中移除网络
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
-2.  右键单击要从中移除网络的方案，然后选择“编辑网络组合”。 随即出现“编辑网络组合”对话框。
+2. 右键单击要从中移除网络的方案，然后选择“编辑网络组合”。 随即出现“编辑网络组合”对话框。
 
-3.  在网格中选择网络，然后选择“移除”。
+3. 在网格中选择网络，然后选择“移除”。
 
-4.  （可选）调整混合控件以指定测试分布。 有关详细信息，请参阅[关于混合控件](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+4. （可选）调整混合控件以指定测试分布。 有关详细信息，请参阅[关于混合控件](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
 
-5.  完成网络的移除之后，选择“确定”。
+5. 完成网络的移除之后，选择“确定”。
 
 ## <a name="about-the-mix-control"></a>关于混合控件
 

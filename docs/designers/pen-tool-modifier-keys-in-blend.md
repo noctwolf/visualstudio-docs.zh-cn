@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844796"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Blend 中的“笔”工具修改键
 下表列出了在使用“笔”工具 ![笔工具](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png) 创建路径时可用于修改此路径的快捷方式。 “笔”工具还可用于在现有路径上添加或删除点，或联接两个现有路径。

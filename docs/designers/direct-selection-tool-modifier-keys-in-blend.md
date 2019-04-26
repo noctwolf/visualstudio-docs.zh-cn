@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 955968137e1f8d2ba1322f5ccf9be2eac6196580
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845740"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的“路径选择”工具修改键
 下表列出了在使用“路径选择”工具 ![Direct selection tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 修改现有路径形状时可使用的快捷方式。 要在现有路径上添加或删除点，或联接两个现有路径，请使用“钢笔”工具。
