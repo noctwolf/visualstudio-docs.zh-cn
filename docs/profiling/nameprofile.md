@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403625"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函数会将字符串分配给指定的进程或线程。
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  如果指定当前进程或线程以外的进程或线程，则必须先确保它已初始化并开始运行，然后才能对其命名。 否则，NameProfile 方法会失败。
 
 > [!IMPORTANT]
->  CreateProcess() 和 CreateThread() API 函数可以在初始化线程或进程前返回。
+> CreateProcess() 和 CreateThread() API 函数可以在初始化线程或进程前返回。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 等效项
  Microsoft.VisualStudio.Profiler.dll

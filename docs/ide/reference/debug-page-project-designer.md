@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968171"
 ---
 # <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 
@@ -33,11 +33,11 @@ ms.locfileid: "59504401"
 
 通过以下选项，可选择要显示或修改的配置和平台。
 
-**Configuration**
+**配置**
 
 指定要显示或修改的配置设置。 设置可以为“调试”（默认）、“发布”或“所有配置”。
 
-**Platform**
+**平台**
 
 指定要显示或修改的平台设置。 这些选择包括“任何 CPU”（默认）、“x64”和“x86”。
 
@@ -85,6 +85,6 @@ ms.locfileid: "59504401"
 
 - [初探调试器](../../debugger/debugger-feature-tour.md)
 - [C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)
-- [Project Settings for a Visual Basic Debug Configuration](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
+- [如何：使用受限权限调试 ClickOnce 应用程序](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)

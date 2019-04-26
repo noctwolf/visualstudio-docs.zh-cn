@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f5164ca6795811efa528db01aacf79aea250aff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975489"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>如何：将类图元素复制到 Microsoft Office 文档
 
@@ -28,15 +28,15 @@ ms.locfileid: "55956683"
 
 ## <a name="copy-several-elements"></a>复制多个元素
 
-1.  在关系图上选择要复制的形状。
+1. 在关系图上选择要复制的形状。
 
-2.  右键单击选择内容，然后选择“复制图像”。
+2. 右键单击选择内容，然后选择“复制图像”。
 
 ## <a name="copy-all-the-elements-in-a-class-diagram"></a>在类图中复制所有元素
 
-1.  右键单击关系图面，然后选择“全选”或按“Ctrl + A”。
+1. 右键单击关系图面，然后选择“全选”或按“Ctrl + A”。
 
-2.  在“编辑”菜单上，选择“复制图像”。
+2. 在“编辑”菜单上，选择“复制图像”。
 
 还可以选择“复制”而不是“复制图像”。 “复制”将图像复制为常规位图。 “复制图像”将图像复制为大多数 Office 应用程序的显示效果会更好的基于矢量的图像。
 

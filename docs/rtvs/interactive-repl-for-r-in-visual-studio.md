@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814852"
 ---
 # <a name="work-with-the-r-interactive-window"></a>使用 R 交互窗口
 
@@ -50,7 +50,7 @@ REPL 中以前的所有输入和输出都是只读的，不能更改。 但是�
 
 工具栏命令如下所示，其中多数命令具有键盘等效项，并且可在“R 工具” > “会话”和“R 工具” > “工作目录”菜单中获取（或如上所述）：
 
-| Button | 命令 | 组合键 | 说明​​ |
+| Button | 命令 | 组合键 | 说明 |
 | --- | --- | --- | --- |
 | ![“重置”按钮](media/repl-toolbar-01-reset.png) | 重置 | Ctrl+Shift+F10 | 重置交互窗口会话，清除所有变量和历史记录。 |
 | ![“清除”按钮](media/repl-toolbar-02-clear.png) | 清除 | Ctrl + L | 清除交互窗口中显示的输出，不影响会话变量或历史记录。 |

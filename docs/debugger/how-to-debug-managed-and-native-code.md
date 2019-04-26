@@ -16,11 +16,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847924"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -41,7 +41,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 ## <a name="prerequisites"></a>系统必备
 
 必须安装 Visual Studio 并具有下列工作负荷：
-- **使用 C++ 的桌面开发**
+- 使用 C++ 的桌面开发
 - .NET 桌面开发或 .NET Core 跨平台开发，具体取决于你想要创建哪种应用类型。
 
 如果未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页面，进行免费安装。

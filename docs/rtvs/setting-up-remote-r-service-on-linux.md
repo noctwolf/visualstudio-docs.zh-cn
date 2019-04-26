@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809552"
 ---
 # <a name="remote-r-service-for-linux"></a>适用于 Linux 的远程 R 服务
 
@@ -166,5 +166,6 @@ ms.locfileid: "55945815"
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. 使用 `az container list` 命令检查状态。 查找 `provisioningState`：`Succeeded`。
 1. 如果预配成功，则现在可以连接到容器。 在 `ipAddress` 字段中查找公共 IP 地址，此 IP 地址与 docker 文件中的凭据配合使用，可用于从 RTVS 连接到容器。
