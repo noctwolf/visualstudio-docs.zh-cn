@@ -1,5 +1,5 @@
 ---
-title: 负载测试对测试控制器和测试代理的需求
+title: 负载测试对测试控制器和测试代理的要求
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56004b22c77fe1388a666e175171579e60ffb3ad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431441"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的要求
 
@@ -24,11 +24,11 @@ ms.locfileid: "55938080"
 
 ## <a name="hardware-and-software-requirements"></a>硬件和软件要求
 
-测试控制器和测试代理计算机均具有特定的硬件和软件需求。 此外，如果你需要跨多种语言部署测试控制器和测试代理计算机，则必须计划如何支持这些语言。
+测试控制器和测试代理计算机均具有特定的硬件和软件要求。 此外，如果你需要跨多种语言部署测试控制器和测试代理计算机，则必须计划如何支持这些语言。
 
 ### <a name="hardware-requirements"></a>硬件要求
 
-下表演示对部署测试控制器和测试代理建议的硬件需求。
+下表演示对部署测试控制器和测试代理建议的硬件要求。
 
 |**配置**|**组件**|**CPU**|**HD**|**内存**|
 |-|-------------------|-|------------|-|

@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999757"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概述
 
@@ -133,7 +133,7 @@ IntelliTest 不了解本机代码，如通过 P/Invoke 调用的 x86 指令。 �
 
 建议的解决方法是当此类方法位于动态程序集的类型中时采用测试模式。 但是，即使某些方法未检测，IntelliTest 也会尝试尽可能多地覆盖已检测的代码。
 
-### <a name="platform"></a>平台
+### <a name="platform"></a>Platform
 
 仅 32 位的 X86 NETframework 支持 IntelliTest。
 

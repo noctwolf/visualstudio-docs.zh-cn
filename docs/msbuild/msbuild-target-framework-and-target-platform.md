@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004616"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标框架和目标平台
 可以生成要在目标框架（.NET Framework 的一个特定版本）和目标平台（一种特定的软件体系结构）上运行的项目。  例如，可将一个应用程序的目标设定为在与 802x86 处理器系列 (“x86”) 兼容的 32 位平台上的 .NET Framework 2.0 上运行。 目标框架与目标平台的组合称为“目标上下文”。
@@ -61,11 +61,11 @@ ms.locfileid: "56607468"
 ## <a name="target-platform"></a>目标平台
  平台是定义特定运行时环境的硬件和软件的组合。 例如，应用于对象的
 
--   `x86` 指定在 Intel 80x86 处理器或等效处理器上运行的 32 位 Windows 操作系统。
+- `x86` 指定在 Intel 80x86 处理器或等效处理器上运行的 32 位 Windows 操作系统。
 
--   `x64` 指定在 Intel x64 处理器或等效处理器上运行的 64 位 Windows 操作系统。
+- `x64` 指定在 Intel x64 处理器或等效处理器上运行的 64 位 Windows 操作系统。
 
--   `Xbox` 指定 Microsoft Xbox 360 平台。
+- `Xbox` 指定 Microsoft Xbox 360 平台。
 
 目标平台是指将在其上运行生成项目的特定平台。 目标平台是在项目文件中的 `PlatformTarget` 生成属性中指定的。 可通过在 IDE 中使用项目属性页或**配置管理器**来更改目标平台。
 

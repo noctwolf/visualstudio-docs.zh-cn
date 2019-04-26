@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385819"
 ---
 # <a name="bscmake-task"></a>BscMake 任务
 > [!IMPORTANT]
->  Visual Studio IDE 不再使用 BscMake。 自 Visual Studio 2008 起，浏览信息自动存储在解决方案文件夹的 .sdf 文件中。
+> Visual Studio IDE 不再使用 BscMake。 自 Visual Studio 2008 起，浏览信息自动存储在解决方案文件夹的 .sdf 文件中。
 
  包装 Microsoft 浏览信息维护实用工具 (bscmake.exe)。  Bscmake.exe 工具从在编译期间创建的源浏览器文件 (.sbr) 生成浏览信息文件 (.bsc)。 可使用对象浏览器查看 .bsc 文件。 有关详细信息，请参阅 [BSCMAKE 参考](/cpp/build/reference/bscmake-reference)。
 

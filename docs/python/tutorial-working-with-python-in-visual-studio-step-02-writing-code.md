@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429999"
 ---
 # <a name="step-2-write-and-run-code"></a>步骤 2：编写并运行代码
 
@@ -89,7 +89,7 @@ ms.locfileid: "59366427"
 ## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
-> [使用交互式 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [使用交互 REPL 窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>深入了解
 

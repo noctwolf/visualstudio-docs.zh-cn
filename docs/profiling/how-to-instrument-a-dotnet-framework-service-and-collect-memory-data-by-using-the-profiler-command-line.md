@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9db76f90f50fd2eda6fcb443b2b7ca34a8bbc169
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aa6d9416a6ce368a666d3f379e86752d82f00a91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436740"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET Framework 服务，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务和收集内存使用情况数据。 可以收集内存分配数据，也可以同时收集内存分配数据和对象生存期数据。
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
+> Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。
 >
 > [!NOTE]
->  如果某服务在计算机启动之后无法重启（此类服务在操作系统启动时启动），则无法使用检测方法分析该服务。
+> 如果某服务在计算机启动之后无法重启（此类服务在操作系统启动时启动），则无法使用检测方法分析该服务。
 >
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
 ## <a name="start-the-profiling-session"></a>启动分析会话
  若要从 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服务收集性能数据，可使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化适当的环境变量，并使用 [VSInstr.exe](../profiling/vsinstr.md) 工具创建服务二进制文件的检测副本。
@@ -47,7 +47,7 @@ ms.locfileid: "56604697"
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}
 
-   -   **/globaltracegc** 和 **/globaltracegclife** 启用内存分配数据和对象生存期数据的收集。
+   - **/globaltracegc** 和 **/globaltracegclife** 启用内存分配数据和对象生存期数据的收集。
 
        |选项|说明|
        |------------|-----------------|
@@ -69,7 +69,7 @@ ms.locfileid: "56604697"
      可以将以下任意选项与 **/start:sample** 选项一起使用。
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 选项通常为服务所需选项。
+   > **/User** 和 **/crosssession** 选项通常为服务所需选项。
 
    | 选项 | 说明 |
    | - | - |
@@ -82,21 +82,20 @@ ms.locfileid: "56604697"
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
 
-
 8. 必要时，请启动该服务。
 
 9. 将探查器附加到该服务。 类型：
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`
 
-    -   指定服务的进程 ID 或进程名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID 和名称。
+    - 指定服务的进程 ID 或进程名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID 和名称。
 
 ## <a name="control-data-collection"></a>控制数据收集
  服务运行时，可以使用 VSPerfCmd.exe 选项开始和停止向文件的数据写入，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 以下 **VSPerfCmd** 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -109,19 +108,19 @@ ms.locfileid: "56604697"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  从服务控制管理器停止服务。
+1. 从服务控制管理器停止服务。
 
-2.  关闭探查器。 类型：
+2. 关闭探查器。 类型：
 
      **VSPerfCmd /shutdown**
 
-3.  完成所有分析后，清除分析环境变量。 类型：
+3. 完成所有分析后，清除分析环境变量。 类型：
 
      VSPerfClrEnv /globaloff
 
      使用原始模块替换被检测模块。 如有必要，重新配置服务的“启动类型”。
 
-4.  重新启动计算机。
+4. 重新启动计算机。
 
 ## <a name="see-also"></a>请参阅
 - [分析服务](../profiling/command-line-profiling-of-services.md)

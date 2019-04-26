@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: 了解登录 Visual Studio 订阅时可能出现的问题
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008038"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登录 Visual Studio 订阅时遇到的问题
 若要使用 Visual Studio 订阅，必须先登录。  根据订阅，你可能已使用 Microsoft 帐户 (MSA) 或 Azure Active Directory (AAD) 标识进行设置。  本文讨论了在登录订阅时可能遇到的一些问题。
@@ -55,7 +55,6 @@ ms.locfileid: "56840943"
 为避免对订阅访问权限产生影响，请使用以下方法之一。
 - 部署单一标识管理系统（MSA 或AAD），但不能同时部署这两者。
 - 通过租户关联 AAD 和 MSA 标识。
-
 
 ## <a name="next-steps"></a>后续步骤
 - 了解如何在 AAD 中[关联 MSA 和 AAD 帐户](/azure/active-directory/b2b/add-users-administrator)。

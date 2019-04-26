@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438109"
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。
@@ -61,7 +61,6 @@ ms.locfileid: "55928746"
 > [!TIP]
 > 通过滚动到前一个命令，突出显示该命令的全部或部分内容，然后按 Enter，可以将该命令的全部或部分内容复制到输入行中。
 
-
 ## <a name="mark-mode"></a>标记模式
  在“命令”窗口中单击前面的任何行时，将自动切换到“标记”模式。 这允许你像在任何文本编辑器中那样选择、编辑和复制以前命令的文本，并将其粘贴到当前行中。
 
@@ -81,16 +80,16 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  在此示例中，
 
--   `Edit.ReplaceInFiles` 是命令
+- `Edit.ReplaceInFiles` 是命令
 
--   `/case` 和 `/pattern:regex` 是开关（以斜杠 [/] 字符开头）
+- `/case` 和 `/pattern:regex` 是开关（以斜杠 [/] 字符开头）
 
--   `regex` 是 `/pattern` 开关的值；`/case` 开关没有值
+- `regex` 是 `/pattern` 开关的值；`/case` 开关没有值
 
--   `var[1-3]+` 和 `oldpar` 是参数
+- `var[1-3]+` 和 `oldpar` 是参数
 
     > [!NOTE]
-    >  任何包含空格的命令、参数、开关或值都必须用双引号引起来。
+    > 任何包含空格的命令、参数、开关或值都必须用双引号引起来。
 
 在命令行上，开关和参数的位置可以随便互换，但 [Shell](../../ide/reference/shell-command.md) 命令是个例外，它要求开关和参数按特定的顺序出现。
 

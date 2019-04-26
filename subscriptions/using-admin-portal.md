@@ -7,14 +7,14 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何使用管理员门户管理组织的 Visual Studio 订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 0c22fa379a3bca8987b50f1e8c19240e4a30fb98
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 4c8d3aa20138e7ebe56d5b51472ecc54abcf32f9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427830"
 ---
-#  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
+# <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
 
 使用 Visual Studio 订阅管理门户时，需要记住：
 

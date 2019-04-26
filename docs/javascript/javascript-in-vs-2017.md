@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553342"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -52,14 +52,14 @@ TypeScript 的主要功能之一是可以将 ES6+ 代码转译为 ES5 或 ES3，
 
 Tsconfig 文件的必需设置如下：
 
- - `allowJs`：必须将此值设置为 `true`，才能识别 JavaScript 文件。 默认值为 `false`，因为 TypeScript 编译为 JavaScript，并且编译器不应包含刚刚编译的文件。
- - `outDir`：应将此值设置为未包含在项目中的位置，这样就不会检测已发出 JavaScript 文件并将文件添加到项目中（请参阅 `exclude`）。
- - `module`：如果使用的是模块，此设置会指示编译器已发出代码应使用哪种模块格式（例如，用于节点的 `commonjs`，或 Browserify 等捆绑程序）。
- - `exclude`：此设置指明不要在项目中添加的文件夹。
- 应向此设置添加输出位置和非项目文件夹（如 `node_modules` 或 `temp`）。
- - `enableAutoDiscovery`：此设置按上面所述启用自动检测和下载定义文件。
- - `compileOnSave`：此设置指示编译器是否只要在 Visual Studio 中保存源文件时就应重新编译。
- - `typeAcquisition`：这组设置控制自动类型获取的行为（[这一部分](/visualstudio/ide/javascript-intellisense#Auto)进一步说明了这一点）
+- `allowJs`：必须将此值设置为 `true`，才能识别 JavaScript 文件。 默认值为 `false`，因为 TypeScript 编译为 JavaScript，并且编译器不应包含刚刚编译的文件。
+- `outDir`：应将此值设置为未包含在项目中的位置，这样就不会检测已发出 JavaScript 文件并将文件添加到项目中（请参阅 `exclude`）。
+- `module`：如果使用的是模块，此设置会指示编译器已发出代码应使用哪种模块格式（例如，用于节点的 `commonjs`，或 Browserify 等捆绑程序）。
+- `exclude`：此设置指明不要在项目中添加的文件夹。
+应向此设置添加输出位置和非项目文件夹（如 `node_modules` 或 `temp`）。
+- `enableAutoDiscovery`：此设置按上面所述启用自动检测和下载定义文件。
+- `compileOnSave`：此设置指示编译器是否只要在 Visual Studio 中保存源文件时就应重新编译。
+- `typeAcquisition`：这组设置控制自动类型获取的行为（[这一部分](/visualstudio/ide/javascript-intellisense#Auto)进一步说明了这一点）
 
 为了将 JavaScript 文件转换为 CommonJS 模块并将其放置在 `./out` 文件夹中，可以使用以下 `tsconfig.json` 文件：
 

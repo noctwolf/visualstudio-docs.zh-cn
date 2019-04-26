@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386176"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：选择要生成的文件
 如果生成包含多个文件的项目，可以在项目文件中分别列出每个文件，也可以使用通配符将一个目录或一组嵌套目录中的所有文件都包括进去。
@@ -42,7 +42,7 @@ ms.locfileid: "56610536"
 
 #### <a name="to-declare-multiple-items"></a>声明多个项
 
--   使用 `Include` 属性，如下所示：
+- 使用 `Include` 属性，如下所示：
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ Project\Images\ImgJpgs\Img1
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  必须将通配符与项配合使用来指定生成的输入，不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务（如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)）中的 `Sources` 属性来指定输入。 下面的示例在项目文件中无效：
+> 必须将通配符与项配合使用来指定生成的输入，不能使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务（如 [Csc](../msbuild/csc-task.md) 或 [Vbc](../msbuild/vbc-task.md)）中的 `Sources` 属性来指定输入。 下面的示例在项目文件中无效：
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

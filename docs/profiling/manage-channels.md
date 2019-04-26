@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435632"
 ---
 # <a name="manage-channels"></a>管理通道
 在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。
@@ -47,7 +47,7 @@ ms.locfileid: "56646494"
  如果要隐藏通道，请选择此控件。 例如，如果一个线程在您托管进程的生存期内 100% 同步，则可以在分析其他线程时隐藏该线程。
 
 > [!NOTE]
->  隐藏某个线程时，还会将其从计算时间中移除，计算时间显示在活动图例和分析报告中。
+> 隐藏某个线程时，还会将其从计算时间中移除，计算时间显示在活动图例和分析报告中。
 
 ## <a name="show-all-channels"></a>显示所有通道
  当一个或多个通道被隐藏时，此控件处于活动状态。 如果选择此控件，将显示所有隐藏的元素并将其全部添加回时间计算。

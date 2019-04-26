@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b8ffac5d508f8b46df827876a4568fbfba5929b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ac3b886fec1ab2135dd74b24b7d2fe3284249f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386719"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 组件或网站，以及如何收集 .NET 内存分配、对象生存期和详细的计时数据。
 
 > [!NOTE]
->  若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
+> 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
  要使用检测方法从 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 组件收集数据，可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具生成该组件的已检测版本。 在承载该组件的计算机上，将组件的未检测版本替换为已检测版本。 然后使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全局分析环境变量并重新启动承载计算机。 然后启动探查器。
 
@@ -43,9 +43,9 @@ ms.locfileid: "56645896"
 
     VSPerfClrEnv /globaltracegclife
 
-   -   /globaltracegc 收集 .NET 内存分配和计时数据。
+   - /globaltracegc 收集 .NET 内存分配和计时数据。
 
-   -   /globaltracegclife 收集 .NET 内存分配、对象生存期和详细的计时数据。
+   - /globaltracegclife 收集 .NET 内存分配、对象生存期和详细的计时数据。
 
 4. 重新启动计算机。
 
@@ -62,7 +62,7 @@ ms.locfileid: "56645896"
      可以将以下任意选项与 **/start:trace** 选项一起使用。
 
    > [!NOTE]
-   >  **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。
+   > **/user** 和 **/crosssession** 选项通常为 ASP.NET 应用程序所需选项。
 
    | 选项 | 说明 |
    | - | - |
@@ -73,7 +73,6 @@ ms.locfileid: "56645896"
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要启动探查器而暂停数据收集，请将 **/globaloff** 选项添加到 **/start** 命令行。 使用 **/globalon** 可恢复分析。 |
 
-
 7. 打开包含已检测的组件的网站。
 
 ## <a name="control-data-collection"></a>控制数据收集
@@ -81,7 +80,7 @@ ms.locfileid: "56645896"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 以下选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|

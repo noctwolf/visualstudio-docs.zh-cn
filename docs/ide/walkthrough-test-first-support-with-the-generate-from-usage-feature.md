@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432040"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>演练：带有“使用时生成”功能的测试先行开发
 
@@ -50,13 +50,13 @@ ms.locfileid: "58355625"
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>向类库项目添加引用
 
-1.  在“解决方案资源管理器”中的相应单元测试项目下，右键单击“引用”条目，然后选择“添加引用”。
+1. 在“解决方案资源管理器”中的相应单元测试项目下，右键单击“引用”条目，然后选择“添加引用”。
 
-2.  在“引用管理器”对话框中，选择“项目”，然后选择类库项目。
+2. 在“引用管理器”对话框中，选择“项目”，然后选择类库项目。
 
-3.  选择“确定”，关闭“引用管理器”对话框。
+3. 选择“确定”，关闭“引用管理器”对话框。
 
-4.  保存解决方案。 现在，就可以开始编写测试。
+4. 保存解决方案。 现在，就可以开始编写测试。
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>从单元测试生成一个新类
 
@@ -65,7 +65,7 @@ ms.locfileid: "58355625"
 2. 找到类 `UnitTest1` 的声明并将其重命名为 `AutomobileTest`。
 
    > [!NOTE]
-   >  IntelliSense 现在提供完成 IntelliSense 语句的两种模式： *完成模式* 和 *建议模式*。 对于先使用类和成员然后再对其进行定义的情况，采用建议模式。 当 IntelliSense 窗口打开时，可以按 Ctrl+Alt+空格键 以实现完成模式与建议模式之间的切换。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。 当你在下一步键入 `Automobile` 时，建议模式将有助于完成此操作。
+   > IntelliSense 现在提供完成 IntelliSense 语句的两种模式： *完成模式* 和 *建议模式*。 对于先使用类和成员然后再对其进行定义的情况，采用建议模式。 当 IntelliSense 窗口打开时，可以按 Ctrl+Alt+空格键 以实现完成模式与建议模式之间的切换。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。 当你在下一步键入 `Automobile` 时，建议模式将有助于完成此操作。
 
 3. 找到 `TestMethod1()` 方法并将其重命名为 `DefaultAutomobileIsInitializedCorrectly()`。 在此方法中，创建名为 `Automobile` 的类的新实例，如以下屏幕截图所示。 将出现一条波浪形下划线，指示编译时错误，且[快速操作](../ide/quick-actions.md)错误灯泡会出现在左边距中，或直接出现在波浪线下（如果将鼠标悬停在波浪线上）。
 
@@ -107,12 +107,11 @@ ms.locfileid: "58355625"
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  单击红色波形线下的“快速操作”错误灯泡，然后单击“在 'Automobile' 中生成构造函数”。
+2. 单击红色波形线下的“快速操作”错误灯泡，然后单击“在 'Automobile' 中生成构造函数”。
 
      在 `Automobile` 类文件中，请注意，新的构造函数已检查构造函数调用中使用的局部变量的名称，在 `Automobile` 类中找到具有相同名称的属性，并在构造函数主体中提供代码以存储属性 `Model` 和 `TopSpeed` 中的参数。
 
-
-3.  生成新的构造函数后，在 `DefaultAutomobileIsInitializedCorrectly`中默认构造函数的调用下出现一条波浪形下划线。 该错误消息指出 `Automobile` 类不具有不含参数的构造函数。 若要生成不带参数的显式默认构造函数，请单击“快速操作”错误灯泡，然后单击“在 'Automobile' 中生成构造函数”。
+3. 生成新的构造函数后，在 `DefaultAutomobileIsInitializedCorrectly`中默认构造函数的调用下出现一条波浪形下划线。 该错误消息指出 `Automobile` 类不具有不含参数的构造函数。 若要生成不带参数的显式默认构造函数，请单击“快速操作”错误灯泡，然后单击“在 'Automobile' 中生成构造函数”。
 
 ### <a name="generate-a-stub-for-a-method"></a>为方法生成存根
 假定该规范指明，如果新的 `Automobile` 的属性 `IsRunning` 和 `Model` 设置为默认值以外的值，则可将其置于 `TopSpeed` 状态下。
@@ -122,15 +121,15 @@ ms.locfileid: "58355625"
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  单击 `myAuto.Start` 方法调用的“快速操作”错误灯泡，然后单击“生成方法 'Automobile.Start'”。
+2. 单击 `myAuto.Start` 方法调用的“快速操作”错误灯泡，然后单击“生成方法 'Automobile.Start'”。
 
-3.  单击 `IsRunning` 属性的“快速操作”灯泡，然后单击“生成属性 'Automobile.IsRunning'”。
+3. 单击 `IsRunning` 属性的“快速操作”灯泡，然后单击“生成属性 'Automobile.IsRunning'”。
 
      `Automobile` 类现在包含一个名为 `Start()` 的方法和一个名为 `IsRunning` 的属性。
 
 ### <a name="run-the-tests"></a>运行测试
 
-1.  在“测试”菜单中，选择“运行” > “全部测试”。
+1. 在“测试”菜单中，选择“运行” > “全部测试”。
 
      “运行” > “全部测试”命令会运行任何测试框架中为当前解决方案编写的所有测试。 在本例中，存在两个测试，并如预期一样，它们都失败了。 `DefaultAutomobileIsInitializedCorrectly` 测试失败，因为 `Assert.IsTrue` 条件返回了 `False`。 `AutomobileWithModelNameCanStart` 测试失败，因为 `Start` 类中的 `Automobile` 方法引发异常。
 
@@ -138,16 +137,16 @@ ms.locfileid: "58355625"
 
      ![失败的测试结果](../ide/media/testsfailed.png)
 
-2.  在“测试结果”窗口中，双击每个测试结果行以转到每个测试的位置。
+2. 在“测试结果”窗口中，双击每个测试结果行以转到每个测试的位置。
 
 ### <a name="implement-the-source-code"></a>实现源代码
 
-1.  将以下代码添加到默认构造函数，以便 `Model`、`TopSpeed` 和 `IsRunning` 属性全部初始化为其正确的默认值 `"Not specified"`、`-1` 和 `False`（或对于 C#，`false`）。
+1. 将以下代码添加到默认构造函数，以便 `Model`、`TopSpeed` 和 `IsRunning` 属性全部初始化为其正确的默认值 `"Not specified"`、`-1` 和 `False`（或对于 C#，`false`）。
 
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
      [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
 
-2.  当调用 `Start` 方法时，它应仅在 `IsRunning` 或 `Model` 属性设置为其默认值以外的值时才将 `TopSpeed` 标志设置为 true。 从方法主体删除 `NotImplementedException` 并添加以下代码。
+2. 当调用 `Start` 方法时，它应仅在 `IsRunning` 或 `Model` 属性设置为其默认值以外的值时才将 `TopSpeed` 标志设置为 true。 从方法主体删除 `NotImplementedException` 并添加以下代码。
 
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
      [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]

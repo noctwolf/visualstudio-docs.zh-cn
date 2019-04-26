@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a2c05d029e2a46aba736288fd794af12206c80e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436861"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 
@@ -82,46 +82,46 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
 
 MSBuild 提供了两种方式来访问工具集：
 
--   使用工具集属性
+- 使用工具集属性
 
--   使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法
+- 使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法
 
 工具集属性指定工具的路径。 自 Visual Studio 2017 起，MSBuild 不再保存在固定位置。 此文件默认位于 MSBuild\15.0\Bin 文件夹中（相对 Visual Studio 安装位置而言）。 在早期版本中，MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。
 
  这些是工具集属性：
 
--   `MSBuildToolsPath` 指定 MSBuild 二进制文件的路径。
+- `MSBuildToolsPath` 指定 MSBuild 二进制文件的路径。
 
--   `SDK40ToolsPath` 为 MSBuild 4.x（可以是 4.0 或 4.5）指定其他托管工具的路径。
+- `SDK40ToolsPath` 为 MSBuild 4.x（可以是 4.0 或 4.5）指定其他托管工具的路径。
 
--   `SDK35ToolsPath` 为 MSBuild 3.5 指定其他托管工具的路径。
+- `SDK35ToolsPath` 为 MSBuild 3.5 指定其他托管工具的路径。
 
 或者，可以通过调用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 类的方法以编程方式确定工具集。 此类包括以下方法：
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> 返回 .NET Framework 文件夹的路径。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> 返回 .NET Framework 文件夹的路径。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> 返回 .NET Framework 文件夹中文件的路径。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> 返回 .NET Framework 文件夹中文件的路径。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> 返回托管工具文件夹的路径。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> 返回托管工具文件夹的路径。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 返回某个文件的路径，该文件通常位于托管工具文件夹中。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> 返回某个文件的路径，该文件通常位于托管工具文件夹中。
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 返回生成工具的路径。
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> 返回生成工具的路径。
 
 ### <a name="sub-toolsets"></a>子工具集
 
  对于早于 15.0 的 MSBuild 版本，MSBuild 使用注册表项来指定基本工具的路径。 如果该注册表项具有一个子项，则 MSBuild 将使用它来指定包含其他工具的子工具集的路径。 在这种情况下，通过合并在这两个项中定义的属性定义对工具集进行定义。
 
 > [!NOTE]
->  如果工具集属性名称发生冲突，则为子项路径定义的值会覆盖为根项路径定义的值。
+> 如果工具集属性名称发生冲突，则为子项路径定义的值会覆盖为根项路径定义的值。
 
  若存在 `VisualStudioVersion` 生成属性，则子工具集将变为活动状态。 此属性可能会采用以下值之一：
 
--   “10.0”表示 .NET Framework 4 子工具集
+- “10.0”表示 .NET Framework 4 子工具集
 
--   “11.0”表示 .NET Framework 4.5 子工具集
+- “11.0”表示 .NET Framework 4.5 子工具集
 
--   “12.0”表示 .NET Framework 4.5.1 子工具集
+- “12.0”表示 .NET Framework 4.5.1 子工具集
 
 子工具集 10.0 和 11.0 应与 ToolsVersion 4.0 一起使用。 在更高版本中，子工具集版本和 ToolsVersion 应匹配。
 
