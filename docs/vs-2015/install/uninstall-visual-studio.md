@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546897"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ ms.locfileid: "59667295"
 
 ## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>卸载 Visual Studio 和所有其他相关文件（即，卸载几乎所有项）
 
-1.  找到 Visual Studio .exe 文件（例如，找到“vs_enterprise.exe”）。
+1. 找到 Visual Studio .exe 文件（例如，找到“vs_enterprise.exe”）。
 
     > [!NOTE]
     > 该文件应位于“%ProgramData%\Package Cache”的子文件夹中，例如：C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe
 
-2.  使用 /uninstall /force 命令行参数运行 .exe 文件。
+2. 使用 /uninstall /force 命令行参数运行 .exe 文件。
 
      例如，运行 ```vs_enterprise.exe /uninstall /force```，这将删除 Visual Studio 以及留在默认卸载中的大部分核心组件。 但是，不会删除 Visual Studio 附加产品和扩展可以安装的所有其他内容（例如，Visual Studio 更新和其他可选组件）。
 
@@ -53,9 +53,9 @@ ms.locfileid: "59667295"
 
 ## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>在无提示或被动模式下卸载 Visual Studio（即，从源中卸载）
 
-1.  在安装了 Visual Studio 的计算机上，打开 Windows 命令提示符。
+1. 在安装了 Visual Studio 的计算机上，打开 Windows 命令提示符。
 
-2.  输入以下参数：
+2. 输入以下参数：
 
      DVDRoot \\<Installation File\> \</quiet&#124;/passive> [/norestart]/uninstall
 
