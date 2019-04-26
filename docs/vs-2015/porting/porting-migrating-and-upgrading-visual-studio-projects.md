@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046587"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Porting, Migrating, and Upgrading Visual Studio Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59654693"
 
  如果将 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 与 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 一起使用，则可在任意一个版本中创建和修改项目和文件。 可以在各个版本之间传输项目和文件，前提是不添加其中某个版本不支持的功能。
 
-##  <a name="project"></a>项目
+## <a name="project"></a>项目
  以下列表描述了 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 和 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中对使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 创建的项目的支持。 使用此列表来帮助确定你是否可以在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]、[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中“按原样”打开项目，或者是否必须修改项目以确保兼容性。
 
 |项目类型|兼容性|
@@ -68,7 +68,7 @@ ms.locfileid: "59654693"
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] 学习版|如果在运行 [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 的计算机上安装了 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]Express，则可以在这三个版本中打开项目。|
 |SQL Server 报告项目|只能在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中打开项目。 对于仅限本地模式（即，在未连接到 SQL Server 时），你不会获得与 [!INCLUDE[vs2010](../includes/vs2010-md.md)]中的查看器相关联的控件的设计时体验，但是项目在运行时将正常工作。 注意：如果添加 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 特定的功能，则报表架构将自动升级，并且你无法再在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中打开项目。|
 |单元测试|可以在 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 中使用 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]打开在任何这些版本中创建的测试。|
-|Visual C++|可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 打开在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中创建的 C++ 项目。 如果要使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 生成环境来生成在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中创建的项目，则必须在同一计算机上安装这两个版本的 Visual Studio。 有关详细信息，请参阅[如何：将 Visual C++ 项目升级到 Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md)和 [Visual C++ 移植和升级指南](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)。|
+|Visual C++|可以使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 打开在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中创建的 C++ 项目。 如果要使用 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 生成环境来生成在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]中创建的项目，则必须在同一计算机上安装这两个版本的 Visual Studio。 有关详细信息，请参阅[如何：将 Visual C++ 项目升级到 Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) 和 [Visual C++ 移植和升级指南](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)。|
 |Visual Studio 2010 网站|如果允许 Visual Studio 自动升级项目，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开它。|
 |Visual Studio 2010 数据库 (.dbproj)|如果将项目转换为 SQL Server Data Tools 数据库项目，则可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中打开它。 但是， [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 不支持下列项目：<br /><br /> - 单元测试<br />- 数据生成计划<br />- 数据比较文件<br />- 静态代码分析的自定义规则扩展<br />- server.sqlsettings<br />- .sqlcmd 文件<br />- 自定义部署扩展<br />- 分部项目 (.files)<br /><br /> 如果你安装了 SQL Server Data Tools，则可以在转换后在 Visual Studio 2010 SP1 中打开项目。 有关详细信息，请参阅 [Microsoft SQL Server Data Tools](http://msdn.microsoft.com/data/tools.aspx)。|
 |Visual Studio 2010 Visual Database Tools|可以在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]、 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]和 Visual Studio 2010 SP1 中打开此项目。|
@@ -89,7 +89,7 @@ ms.locfileid: "59654693"
 
 - 如果你尝试打开一个项目，但是该项目在 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 或 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中不受支持且未安装关联的 Visual Studio 版本，则可能会出现项目类型不受支持的消息，而该项目类型可能会在“不受支持的项目”  下的“检查项目和解决方案更改” 对话框中列出。 若要解决此问题，可在 Windows 的 **“控制面板”** 中打开“程序和功能”页，选择 **“Visual Studio”**，然后选择 **“更改”** 和 **“修复”**。 然后，可以安装所缺少的版本。
 
-- 如果你尝试在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)]中打开桌面应用项目，则会发生错误，并且会显示以下消息之一：“此版本的 Visual Studio 仅支持 [!INCLUDE[win81](../includes/win81-md.md)] 应用”或“此项目与当前版本的 Visual Studio 不兼容”。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 仅限于为 Windows 8.1 设计的 Windows 应用商店应用的开发、测试和部署。 若要打开桌面应用程序项目，必须使用支持该项目类型的 Visual Studio 版本。
+- 如果尝试在 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 中打开桌面应用的项目，会出现错误，显示以下消息中的其中一条：“此 Visual Studio 版本仅支持 [!INCLUDE[win81](../includes/win81-md.md)] 应用”或“此项目与 Visual Studio 的当前版本不兼容”。 [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] 仅限于为 Windows 8.1 设计的 Windows 应用商店应用的开发、测试和部署。 若要打开桌面应用程序项目，必须使用支持该项目类型的 Visual Studio 版本。
 
    有关 Visual Studio 版本的详细信息，请参阅 [Microsoft Visual Studio 产品](https://visualstudio.microsoft.com/products/)
 
@@ -101,7 +101,7 @@ ms.locfileid: "59654693"
 
   有关其他的疑难解答信息，请参阅 [Visual Studio 2013 兼容性](http://support.microsoft.com/kb/2863286) 知识库文章。
 
-##  <a name="file"></a>文件
+## <a name="file"></a>文件
  以下列表标识了 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 是否支持每个类型的文件、是否可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 和 Visual Studio 2010 SP1 中打开文件以及是否必须修改它以确保兼容性。
 
 |文件类型|兼容性|
@@ -121,7 +121,7 @@ ms.locfileid: "59654693"
 |来自 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 的 IntelliTrace 日志文件|可以在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]、 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]和 Visual Studio 2010 SP1 中打开这些文件。|
 |JavaScript 内存分析程序 (.diagsession) 文件|由 Visual Studio 早期版本创建的文件可在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中查看。 但是，根据收集的信息，在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 中创建的文件可能无法在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 或 Visual Studio 2010 SP1 中打开。|
 
-##  <a name="integration"></a>集成资产
+## <a name="integration"></a>集成资产
  如果你所使用的客户端和服务器的 Visual Studio Team Foundation Server 版本不同，则可能遇到兼容性问题。
 
 |集成类型|兼容性|
