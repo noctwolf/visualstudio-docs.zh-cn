@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844525"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>演练：创建真实的三维台球
 
@@ -23,11 +23,11 @@ ms.locfileid: "55946147"
 
 需以下组件和技能来完成本演练：
 
--   用于将纹理组合成立方体贴图的工具，例如 2010 年 6 月的 DirectX SDK 中包含的 DirectX 纹理工具。
+- 用于将纹理组合成立方体贴图的工具，例如 2010 年 6 月的 DirectX SDK 中包含的 DirectX 纹理工具。
 
--   熟悉 Visual Studio 中的图像编辑器。
+- 熟悉 Visual Studio 中的图像编辑器。
 
--   熟悉 Visual Studio 中的着色器设计器。
+- 熟悉 Visual Studio 中的着色器设计器。
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>使用形状和纹理创建基本外观
 

@@ -42,12 +42,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817844"
 ---
 # <a name="options-text-editor-all-languages"></a>选项、文本编辑器、所有语言
 
@@ -115,9 +115,9 @@ ms.locfileid: "55929331"
 
 此选项设置当你将插入点放置在空行上，未选中任何内容，然后复制或剪切时，编辑器的行为。
 
--   选中此选项后，将复制或剪切空行。 如果随后执行粘贴操作，会插入一个新的空行。
+- 选中此选项后，将复制或剪切空行。 如果随后执行粘贴操作，会插入一个新的空行。
 
--   清除此选项后，“剪切”命令将移除空行。 但仍保留剪贴板中的数据。 因此，如果随后使用“粘贴”命令，则会粘贴最近复制到剪贴板的内容。 如果先前没有复制任何内容，则不会粘贴任何内容。
+- 清除此选项后，“剪切”命令将移除空行。 但仍保留剪贴板中的数据。 因此，如果随后使用“粘贴”命令，则会粘贴最近复制到剪贴板的内容。 如果先前没有复制任何内容，则不会粘贴任何内容。
 
 此设置对行非空时的复制或剪切操作无效。 如果未选择任何内容，将会对整行进行复制或剪切。 如果随后执行粘贴操作，则粘贴整行文本及其行尾字符。
 

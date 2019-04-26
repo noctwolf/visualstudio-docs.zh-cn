@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975211"
 ---
 # <a name="how-to-customize-class-diagrams"></a>如何：自定义类图
 
@@ -37,7 +37,7 @@ ms.locfileid: "55923969"
 
 2. 在“类设计器”工具栏中，单击“放大”或“缩小”按钮以更改设计器图面的缩放级别。
 
-     或
+     or
 
      指定特定的缩放值。 可以使用“缩放”下拉列表进行选择或键入有效的缩放级别（有效范围介于 10% 到 400% 之间）。
 

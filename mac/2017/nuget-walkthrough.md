@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58569299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989200"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -77,9 +77,9 @@ using Newtonsoft.Json;
 
 ![包菜单](media/nuget-walkthrough-PackagesMenu.png)
 
-*   添加包 - 打开窗口，将更多包添加到项目。
-*   更新 - 检查每个包的源服务器并下载任何更新版本。
-*   还原 - 下载任何缺少的包（无需将现有包升级到更新版本）。
+* 添加包 - 打开窗口，将更多包添加到项目。
+* 更新 - 检查每个包的源服务器并下载任何更新版本。
+* 还原 - 下载任何缺少的包（无需将现有包升级到更新版本）。
 
 现在也提供解决方案级别的“更新”和“还原”选项，这些选项可影响该解决方案中的所有项目。
 
@@ -87,9 +87,9 @@ using Newtonsoft.Json;
 
 ![包菜单](media/nuget-walkthrough-PackageMenu.png)
 
-*   版本号 - 版本号是禁用的菜单项 - 仅用于提供信息。
-*   更新 - 检查源服务器并下载更新版本（如果存在）。
-*   删除 - 从此项目中删除包，并从项目引用中删除相关的程序集。
+* 版本号 - 版本号是禁用的菜单项 - 仅用于提供信息。
+* 更新 - 检查源服务器并下载更新版本（如果存在）。
+* 删除 - 从此项目中删除包，并从项目引用中删除相关的程序集。
 
 ## <a name="adding-package-sources"></a>添加包源
 

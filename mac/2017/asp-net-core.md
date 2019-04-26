@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933122"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 ASP.NET Core 应用将通过 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 实例配置并启动主机，以此在其 Main 方法中创建一个 Web 服务器。 此生成器提供方法以允许配置主机。 在模板应用中使用了以下配置：
 
 * `UseKestrel`：指定应用将使用的 Kestrel 服务器
@@ -104,8 +105,8 @@ public class Startup
 
 Startup 类必须始终遵守以下规则：
 
- - 始终为公共
- - 包含两个公共方法：`ConfigureServices` 和 `Configure`
+- 始终为公共
+- 包含两个公共方法：`ConfigureServices` 和 `Configure`
 
 `ConfigureServices` 方法定义将在应用中使用的服务。
 
@@ -218,7 +219,6 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 9. 尝试浏览到 `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy`（使用正确端口替代 `xxxx`），应显示如下信息：
 
     ![通过参数在浏览器中运行应用](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>疑难解答
 

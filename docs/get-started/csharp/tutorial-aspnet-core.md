@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 11f2849a2cf36564104d3250bdbad66ac69a0b40
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971849"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
@@ -33,7 +33,7 @@ ms.locfileid: "58856562"
 
 ::: moniker range="vs-2017"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
 
 ::: moniker-end
 
@@ -222,6 +222,7 @@ ms.locfileid: "58856562"
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. 请注意在环境和字符串下显示的两个波浪下划线。 显示波浪下划线是因为这些类型不在作用域内。
 
    ![OnGet 方法中使用波浪下划线标记的错误](media/csharp-aspnet-razor-add-new-on-get-method.png)
@@ -267,4 +268,4 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 ## <a name="see-also"></a>请参阅
 
-[使用 Visual Studio 将 Web 应用发布到 Azure 应用服务](../../deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../../deployment/quickstart-deploy-to-azure.md)

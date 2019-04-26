@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975094"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：查看类设计器中类型之间的继承
 
@@ -27,9 +27,9 @@ ms.locfileid: "55907827"
 
 ## <a name="to-find-the-base-type"></a>查找基类型
 
-1.  在类关系图中，单击要查看基类或基接口的类型。
+1. 在类关系图中，单击要查看基类或基接口的类型。
 
-2.  在“类图”菜单中，选择“显示基类”或“显示基接口”。
+2. 在“类图”菜单中，选择“显示基类”或“显示基接口”。
 
      类型的基类或基接口在关系图中显示为选中状态。 原来隐藏的所有继承连线现在都会出现在两个形状之间。
 
@@ -37,9 +37,9 @@ ms.locfileid: "55907827"
 
 ## <a name="to-find-the-derived-types"></a>查找派生类型
 
-1.  在类关系图中，单击要查看派生类或派生接口的类型。
+1. 在类关系图中，单击要查看派生类或派生接口的类型。
 
-2.  在“类图”菜单中，选择“显示派生类”或“显示派生接口”。
+2. 在“类图”菜单中，选择“显示派生类”或“显示派生接口”。
 
      该类型的派生类或派生接口即会出现在关系图中。 原来隐藏的所有继承连线现在都会出现在形状之间。
 

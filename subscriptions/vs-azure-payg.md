@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何设置 Azure 即用即付帐户。
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948217"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>设置 Azure 开发/测试即用即付订阅
 与团队在云中协作。  创建多个开发和测试即用即付订阅，这样可与其他订阅者进行协作，并将团队与环境隔离。  可享受针对开发/测试的专享优惠小时费率，还可获得 Azure 上订阅软件的云使用权限。
@@ -31,11 +31,9 @@ ms.locfileid: "56843904"
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG 注册](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. 接下来，请提供帐户的账单信息，然后单击“下一步”。  （你购买的所有 Azure 服务都将以此信用卡付费。）
    > [!div class="mx-imgBorder"]
    > ![Azure PAYG 付款](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. 在“协议”部分，单击复选框接受订阅协议、套餐详情和隐私声明，然后单击“购买”。
 

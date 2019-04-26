@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778563"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 使用 **“选项”** 对话框的 **“IntelliSense”** 页可以修改影响 IntelliSense for JavaScript 行为的设置。 可以通过选择菜单栏上的“工具” > “选项”，然后展开“文本编辑器” > “JavaScript” > “IntelliSense”来访问“IntelliSense”页面。
@@ -59,7 +59,6 @@ ms.locfileid: "55938691"
 > [!CAUTION]
 > 如果在两个或更多隐式引用中无条件定义了一个对象，则将使用此列表中的最后一个引用来定义此对象。
 
-
 **添加对组的引用**
 
 使用此选项，可通过浏览到相应文件来添加其他 IntelliSense .js 文件。
@@ -70,8 +69,6 @@ ms.locfileid: "55938691"
 
 > [!NOTE]
 > 对于 Web 项目，默认下载你的项目中所引用的远程文件。
-
-
 
 ## <a name="see-also"></a>请参阅
 

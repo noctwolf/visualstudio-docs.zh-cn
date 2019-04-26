@@ -12,7 +12,7 @@ ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937115"
+ms.locfileid: "62988470"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：设置多个启动项目
 

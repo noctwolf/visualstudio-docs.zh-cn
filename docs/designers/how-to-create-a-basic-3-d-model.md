@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894180"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：创建基本三维模型
 
 本文说明如何使用模型编辑器创建基本三维模型。 包含以下活动：
 
--   将对象添加到场景中
+- 将对象添加到场景中
 
--   选择面和边缘
+- 选择面和边缘
 
--   转换选定内容
+- 转换选定内容
 
--   使用“细分面”和“延伸面”工具
+- 使用“细分面”和“延伸面”工具
 
--   使用“三角测量”命令
+- 使用“三角测量”命令
 
 ## <a name="create-a-basic-3d-model"></a>创建基本三维模型
  可使用模型编辑器创建和修改游戏或应用的三维模型和场景。 下列步骤说明如何使用模型编辑器创建房屋的简化三维模型。 简化模型可用作仍在创建的最终艺术资产的替代物、用作冲突检测的网格或用作在所表示的对象太远而无法从更详细的呈现中获益时要使用的详细程度低的模型。

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973014"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 
@@ -24,13 +24,13 @@ ms.locfileid: "57983022"
 
 ## <a name="whats-supported-across-all-web-browsers"></a>哪些是所有 Web 浏览器都支持的功能？
 
--   [添加用于控制功能（如属性、搜索和播放等待应用）的自定义代码](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)。
+- [添加用于控制功能（如属性、搜索和播放等待应用）的自定义代码](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)。
 
--   弹出窗口和对话框
+- 弹出窗口和对话框
 
--   [执行不含返回类型的基本 JavaScript](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [执行不含返回类型的基本 JavaScript](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   搜索恢复能力（使用智能匹配）和[性能提升](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- 搜索恢复能力（使用智能匹配）和[性能提升](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>为什么应在多个 Web 浏览器类型中使用编码的 UI 测试?
 
@@ -78,17 +78,17 @@ ms.locfileid: "57983022"
 
 若要能够调试 Web 应用程序，则必须完成以下配置选项：
 
-1.  启用“仅我的代码”：
+1. 启用“仅我的代码”：
 
-    1.  在“工具”菜单上，依次选择“选项”和“调试”。
+    1. 在“工具”菜单上，依次选择“选项”和“调试”。
 
-    2.  选择“启用‘仅我的代码’”。
+    2. 选择“启用‘仅我的代码’”。
 
-2.  禁用 CLR 异常：
+2. 禁用 CLR 异常：
 
-    1.  选择“调试”菜单上的“异常”。
+    1. 选择“调试”菜单上的“异常”。
 
-    2.  对于“公共语言运行时异常”，请取消选中“用户未处理的”。
+    2. 对于“公共语言运行时异常”，请取消选中“用户未处理的”。
 
 如果在编码的 UI 测试中没有看到用于更改 `BrowserWindow.CurrentBrowser` 的选项，则使用的 Visual Studio 版本可能不支持使用各种 Web 浏览器的编码的 UI 测试。 若要使用此类编码的 UI 测试，必须使用 Visual Studio Enterprise 版本。
 
