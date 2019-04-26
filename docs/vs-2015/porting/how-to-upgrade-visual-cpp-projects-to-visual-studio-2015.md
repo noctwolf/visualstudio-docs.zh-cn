@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425884"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：将 Visual C++ 项目升级到 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60095734"
     - 你可以通过允许 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 进行本主题稍后所述的更改来更新项目。 如果你的解决方案中的 Visual C++ 项目超过一个，则必须将它们全部更新。
 
         > [!NOTE]
-        >  如果你在系统首次提醒时拒绝更新，则可以稍后在“项目”  菜单上选择“更新 VC++ 项目”  来更新项目。 如果此命令未出现，则不需要更新。
+        > 如果你在系统首次提醒时拒绝更新，则可以稍后在“项目”  菜单上选择“更新 VC++ 项目”  来更新项目。 如果此命令未出现，则不需要更新。
 
 ## <a name="upgrading-a-visual-c-project"></a>升级 Visual C++ 项目
  如果你允许 [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] 自动更新项目，则要进行以下更改：

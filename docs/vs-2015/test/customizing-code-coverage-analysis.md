@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059248"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "54768028"
 >  符号解析可能很耗时，尤其是在使用包含大量程序集的远程文件位置时。 因此，请考虑将远程 .pdb 文件复制到与二进制文件（.dll 和 .exe）相同的本地位置。  
   
 ### <a name="excluding-and-including"></a>排除和包括  
- 你可以从代码覆盖率分析中排除指定的程序集。 例如:  
+ 你可以从代码覆盖率分析中排除指定的程序集。 例如：  
   
 ```minterastlib  
 <ModulePaths>  
@@ -115,7 +115,7 @@ ms.locfileid: "54768028"
   
    所有匹配项都不区分大小写。  
   
-   例如:  
+   例如：  
   
 ```xml  
 <ModulePaths>  
@@ -183,11 +183,11 @@ ms.locfileid: "54768028"
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>在命令行测试中自定义运行设置  
  若要从命令行运行测试，请使用 vstest.console.exe。 此设置文件是此实用工具的一个参数。 有关详细信息，请参阅[通过命令行使用 VSTest.console](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
   
-1.  启动 Visual Studio 开发人员命令提示符：  
+1. 启动 Visual Studio 开发人员命令提示符：  
   
      在 Windows 的“开始”上，依次选择“所有程序”、“Microsoft Visual Studio”、“Visual Studio Tools”和“开发人员命令提示”。  
   
-2.  运行：  
+2. 运行：  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ ms.locfileid: "54768028"
   
 3. 在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 选择 **.runsettings** 文件。  
   
-   - 不过，显示的是“测试程序集”，而不是“测试源”<em>。尝试设置“运行设置”字段时，我只能选择 .testsettings 文件。*  
+   - 不过，显示的是“测试程序集”，而不是“测试源”<em>。尝试设置“运行设置”** 字段时，我只能选择 .testsettings 文件。*  
   
       在“自动测试”下，依次选择“测试程序集”和行尾的“[...]”。 在“添加/编辑测试运行”对话框中，将“测试运行程序”设为“Visual Studio 测试运行程序”。  
   
    结果在生成报告的摘要部分可见。  
   
-##  <a name="sample"></a>示例 .runsettings 文件  
+## <a name="sample"></a>示例 .runsettings 文件  
  复制此代码并对其进行编辑以满足你自己的需求。 这是默认的 .runsettings 文件。  
   
  （有关 .runsettings 文件的其他用法，请参阅[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。）  
