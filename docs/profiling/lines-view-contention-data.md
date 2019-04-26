@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000614"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 - 争用数据
 争用数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。 在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。

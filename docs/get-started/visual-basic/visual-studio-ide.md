@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966336"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>欢迎使用 Visual Studio IDE | Visual Basic
 
@@ -197,7 +197,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ::: moniker range="vs-2017"
 
-首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
 
 ::: moniker-end
 

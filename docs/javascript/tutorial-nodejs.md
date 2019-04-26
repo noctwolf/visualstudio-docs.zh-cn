@@ -11,16 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995037"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 
-本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)免费安装。
+本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 
+
+::: moniker range="vs-2017"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)页免费安装。
+
+::: moniker-end
 
 在本教程中，你将了解：
 > [!div class="checklist"]
@@ -186,7 +198,7 @@ IntelliSense 是一款可帮助编写代码的 Visual Studio 工具。
 
 1. 在 `"data"` 前添加逗号 (`,`)，修复代码。
 
-    更正后，代码行应如下所示： `res.render('index', { title: 'Express', "data": getData() });`
+    更正后，代码行应如下所示：`res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>设置断点
 

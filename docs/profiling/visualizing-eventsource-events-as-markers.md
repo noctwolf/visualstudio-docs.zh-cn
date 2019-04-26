@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422097"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
 并发可视化工具可以将 EventSource 事件显示为标记，并且可以控制标记的显示方式。 若要查看 EventSource 标记，请使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框注册 ETW 提供程序 GUID。 并发可视化工具具有将 EventSource 事件表示为[标志标记](../profiling/flag-markers.md)、[范围标记](../profiling/span-markers.md)和[消息标记](../profiling/message-markers.md)的默认约定。 可以通过向事件添加自定义字段自定义 EventSource 事件的显示方式。 有关标记的详细信息，请参阅[并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)。 有关 EventSource 事件的详细信息，请参阅 <xref:System.Diagnostics.Tracing>。
@@ -23,11 +23,11 @@ ms.locfileid: "56639799"
 
 ### <a name="marker-type"></a>标记类型
 
-1.  具有[操作码](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start 或 win:Stop 的事件将分别被视为范围的开始或结束。  无法显示嵌套或重叠的范围。 无法显示以一个线程开始并以另一个线程结束的事件对。
+1. 具有[操作码](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start 或 win:Stop 的事件将分别被视为范围的开始或结束。  无法显示嵌套或重叠的范围。 无法显示以一个线程开始并以另一个线程结束的事件对。
 
-2.  其操作码既不是 win:Start 也不是 win:Stop 的事件将被视为标记标志，除非其[级别](/windows/desktop/WES/defining-severity-levels)（EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的字段）为 win:Verbose 或更高版本。
+2. 其操作码既不是 win:Start 也不是 win:Stop 的事件将被视为标记标志，除非其[级别](/windows/desktop/WES/defining-severity-levels)（EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的字段）为 win:Verbose 或更高版本。
 
-3.  在所有其他情况下，事件均被视为消息。
+3. 在所有其他情况下，事件均被视为消息。
 
 ### <a name="importance"></a>重要性
  下表定义了事件级别映射到标记重要性的方式。
@@ -91,7 +91,7 @@ ms.locfileid: "56639799"
  使用 cvSpanId 字段（一个整数型）匹配事件对。 每对开始/停止事件的值，该值表示范围必须是唯一的。 通常对于并发代码，这需要使用同步基元（如 <xref:System.Threading.Interlocked.Exchange%2A>）以确保密钥（用于 CvSpanID 的值）正确。
 
 > [!NOTE]
->  不支持以下操作：使用 SpanID 以嵌套范围，允许它们部分重叠在同一线程上或允许它们以一个线程开始并以另一个线程结束。
+> 不支持以下操作：使用 SpanID 以嵌套范围，允许它们部分重叠在同一线程上或允许它们以一个线程开始并以另一个线程结束。
 
 ## <a name="see-also"></a>请参阅
 - [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)

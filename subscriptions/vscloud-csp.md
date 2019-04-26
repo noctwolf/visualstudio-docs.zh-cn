@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: 有关云解决方案提供商如何为客户购买和管理 Visual Studio 云订阅的信息。
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978505"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 
@@ -20,10 +20,8 @@ ms.locfileid: "58323576"
 
 [比较云订阅选项](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
-
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -84,7 +82,6 @@ ms.locfileid: "58323576"
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | 企业             |  订阅                         | Visual Studio Enterprise 月度订阅   |
 | Visual Studio     | Professional           |  订阅                         | Visual Studio Professional 月度订阅 |
-
 
 我们为每月（为给定客户）购买的每种 Visual Studio 订阅的第 6 个单位提供 5% 的折扣。 因此，每个订阅会显示两行选项。 一行显示“最小值”为 0，应该将其理解为第 1 至 5 个单位的基准价格。 另一行显示“最小值”为 5，这是适用于第 6 个及以上单位的 5% 折扣价格。
 

@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3a8b210c91019b2b7285288c7826f4983dfed6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437851"
 ---
 # <a name="msbuild-task"></a>MSBuild 任务
 从另一 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目生成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目。
 
 ## <a name="parameters"></a>参数
  下表描述了 `MSBuild` 任务的参数。
-
 
 | 参数 | 说明 |
 |-----------------------------------| - |
@@ -66,7 +65,7 @@ ms.locfileid: "56627319"
  但是，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 提供两个新的保留元数据项，即 Properties 和 AdditionalProperties，让你能够灵活地使用 [MSBuild 任务](../msbuild/msbuild-task.md)为正在生成的不同项目传递不同的属性。
 
 > [!NOTE]
->  这些新的元数据项仅适用于在 [MSBuild 任务](../msbuild/msbuild-task.md)的项目属性中传递的项。
+> 这些新的元数据项仅适用于在 [MSBuild 任务](../msbuild/msbuild-task.md)的项目属性中传递的项。
 
 ## <a name="multi-processor-build-benefits"></a>多处理器生成的优点
  在多处理器系统上并行生成项目时，则会体验到使用此新元数据的其中一个主要的好处。 通过元数据可将所有项目合并到单个 [MSBuild 任务](../msbuild/msbuild-task.md)调用中，而无需执行任何批处理或条件性 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。 仅调用单个 [MSBuild 任务](../msbuild/msbuild-task.md) 时，将并行生成项目属性中列出的所有项目。 （但仅适用于 `BuildInParallel=true` 属性存在于 [MSBuild 任务](../msbuild/msbuild-task.md)中时。）有关详细信息，请参阅[并行生成多个项目](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)。
@@ -75,7 +74,7 @@ ms.locfileid: "56627319"
  常见的方案是使用 [MSBuild 任务](../msbuild/msbuild-task.md)生成多个解决方案文件时，仅使用不同的生成配置。 你可能希望使用调试配置生成解决方案 a1，使用发布配置生成解决方案 a2。 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 中，此项目文件将如下所示：
 
 > [!NOTE]
->  在以下示例中，“...”表示其他解决方案文件。
+> 在以下示例中，“...”表示其他解决方案文件。
 
 ### <a name="aproj"></a>a.proj
 

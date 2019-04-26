@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf47871b8b1c2e6f8e4f67bf26ba5f73ca078c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970013"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用情况性能规则
 .Net Framework 使用类别中的性能规则标识可以优化的特定方法，并且还标识可调查性能问题的更为通用的使用模式，例如垃圾回收和锁争用。

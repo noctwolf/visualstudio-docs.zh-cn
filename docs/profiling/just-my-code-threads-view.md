@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995340"
 ---
 # <a name="just-my-code-threads-view"></a>仅我的代码（线程视图）
 如果选择此选项，将筛选调用堆栈，仅显示你的代码和一级被调用的函数。

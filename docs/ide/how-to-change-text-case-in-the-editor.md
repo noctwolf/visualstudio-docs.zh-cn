@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824212"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：在编辑器中更改文本大小写
 
@@ -27,11 +27,11 @@ ms.locfileid: "55907446"
 
 ## <a name="to-switch-text-to-upper-case"></a>将文本切换为大写
 
-1.  选择要转换的文本。
+1. 选择要转换的文本。
 
-2.  在“编辑”菜单上，选择“高级”。
+2. 在“编辑”菜单上，选择“高级”。
 
-3.  若要将文本全部转换为大写，请选择“转换为大写”，或按 **Ctrl**+**Shift**+**U**。
+3. 若要将文本全部转换为大写，请选择“转换为大写”，或按 **Ctrl**+**Shift**+**U**。
 
     — 或 —
 

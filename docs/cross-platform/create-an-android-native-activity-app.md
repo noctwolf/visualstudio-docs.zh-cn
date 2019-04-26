@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819590"
 ---
 # <a name="create-an-android-native-activity-app"></a>创建 Android 本机活动应用
 
@@ -45,9 +45,9 @@ ms.locfileid: "58069692"
 
    新的 Android 本机活动应用解决方案包括两个项目：
 
--   `MyAndroidApp.NativeActivity` 包含应用的引用和粘附代码，以作为本机活动在 Android 上运行。 粘附代码的入口点的实现位于 main.cpp。 预编译头位于 pch.h。 本机活动应用项目编译为一个由打包项目选取的共享库 .so 文件。
+- `MyAndroidApp.NativeActivity` 包含应用的引用和粘附代码，以作为本机活动在 Android 上运行。 粘附代码的入口点的实现位于 main.cpp。 预编译头位于 pch.h。 本机活动应用项目编译为一个由打包项目选取的共享库 .so 文件。
 
--   `MyAndroidApp.Packaging` 创建 .apk 文件，用于 Android 设备或仿真程序上的开发。 这包括在此设置清单属性的资源和 AndroidManifest.xml 文件。 它还包括控制 Ant 生成过程的 build.xml 文件。 默认情况下，它被设置为启动项目，因此可从 Visual Studio 直接部署和运行它。
+- `MyAndroidApp.Packaging` 创建 .apk 文件，用于 Android 设备或仿真程序上的开发。 这包括在此设置清单属性的资源和 AndroidManifest.xml 文件。 它还包括控制 Ant 生成过程的 build.xml 文件。 默认情况下，它被设置为启动项目，因此可从 Visual Studio 直接部署和运行它。
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>生成和运行默认的 Android 本机活动应用
 
@@ -55,21 +55,21 @@ ms.locfileid: "58069692"
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>生成并运行默认本机活动应用
 
-1.  如果尚未选中，则从“解决方案平台”下拉列表中选择“x86”。
+1. 如果尚未选中，则从“解决方案平台”下拉列表中选择“x86”。
 
      ![解决方案平台下拉列表 x86 选择](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      如果未显示“解决方案平台”列表，则从“添加/删除按钮”列表中选择“解决方案平台”，然后选择所需平台。
 
-2.  在菜单栏上，依次选择“生成” > “生成解决方案”。
+2. 在菜单栏上，依次选择“生成” > “生成解决方案”。
 
      “输出”窗口显示针对解决方案中两个项目的生成过程的输出。
 
-3.  选择其中一个 VS 仿真程序 Android Phone (x86) 配置文件作为部署目标。
+3. 选择其中一个 VS 仿真程序 Android Phone (x86) 配置文件作为部署目标。
 
      如果你已安装了其他仿真程序或连接了一个 Android 设备，则可在部署目标下拉列表中选择它们。
 
-4.  按下 F5 启动调试，或按下 Shift+F5 以在不进行调试的情况下启动。
+4. 按下 F5 启动调试，或按下 Shift+F5 以在不进行调试的情况下启动。
 
      以下是适用于 Android 的 Visual Studio 仿真程序中的默认应用。
 
@@ -77,6 +77,6 @@ ms.locfileid: "58069692"
 
      Visual Studio 启动仿真程序，需要几秒钟时间来加载和部署你的代码。 一旦你的应用启动，你可以设置断点，并使用调试器逐步调试代码，检查局部变量并监视值。
 
-5.  按下 Shift+F5 来停止调试。
+5. 按下 Shift+F5 来停止调试。
 
      仿真程序是一个继续运行的单独进程。 你可多次编辑、编译和部署代码到同一仿真程序。

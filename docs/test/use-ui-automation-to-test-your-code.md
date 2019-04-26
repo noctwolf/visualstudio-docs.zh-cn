@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973415"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -253,7 +253,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 若要更改键盘分配，请修改以下配置文件：
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config
 
 在配置文件中，更改 `HoverKeyModifier` 和 `HoverKey` 键的值以修改键盘分配：
 
@@ -272,7 +272,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 若要在 Web 浏览器中启用隐式悬停的录制，请打开配制文件：
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config
 
 验证该配置文件是否具有设置为 `RecordImplicitiHovers` 值的 `true` 键，如以下示例所示：
 
@@ -305,7 +305,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
        - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 
-       - [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
+       - [通过多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
        - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
@@ -465,4 +465,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [创建编码的 UI 测试来测试 UWP 应用](test-uwp-app-with-coded-ui-test.md)
 - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
 - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
-- [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [通过多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)

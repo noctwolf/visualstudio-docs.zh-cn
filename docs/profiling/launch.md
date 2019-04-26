@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d4c2c81583015aca39f00cc20a6286297476cc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c105f5176948271c832330f01d0d03d270e69a97
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995322"
 ---
 # <a name="launch"></a>启动
 “Launch”选项使用采样方法启动探查器，还会启动指定的应用程序。
@@ -54,15 +54,15 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] 指定采样间隔的数量和类型。
 
--   Timer - 每 `Cycles` 个非暂停的处理器时钟周期采样一次。 如果未指定 `Cycles`，则使用 10,000,000 个周期。
+- Timer - 每 `Cycles` 个非暂停的处理器时钟周期采样一次。 如果未指定 `Cycles`，则使用 10,000,000 个周期。
 
--   PF - 每 `Events` 个页面错误采样一次。 如果未指定 `Events`，则使用 10 个页面错误。
+- PF - 每 `Events` 个页面错误采样一次。 如果未指定 `Events`，则使用 10 个页面错误。
 
--   Sys - 每 `Events` 次操作系统调用采样一次。 如果未指定 `Events`，则使用 10 次系统调用。
+- Sys - 每 `Events` 次操作系统调用采样一次。 如果未指定 `Events`，则使用 10 次系统调用。
 
--   Counter - 每 `Reload` 个 `Name` 所指定的 CPU 性能计数器采样一次。 或者，`FriendlyName` 可指定一个字符串，将其用作探查器报告中的列标头。
+- Counter - 每 `Reload` 个 `Name` 所指定的 CPU 性能计数器采样一次。 或者，`FriendlyName` 可指定一个字符串，将其用作探查器报告中的列标头。
 
--   GC - 收集 .NET 内存数据。 默认情况 (allocation) 下，每次发生内存分配事件时都收集数据。 如果指定 lifetime 参数，则每次发生垃圾回收事件时也收集数据。
+- GC - 收集 .NET 内存数据。 默认情况 (allocation) 下，每次发生内存分配事件时都收集数据。 如果指定 lifetime 参数，则每次发生垃圾回收事件时也收集数据。
 
 ## <a name="example"></a>示例
  此示例演示如何使用 Launch 启动应用程序。

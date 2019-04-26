@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977393"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 将一个项目文件的内容导入其他项目文件中。
@@ -69,7 +69,6 @@ ms.locfileid: "56629906"
  如果导入项目没有 `DefaultTargets` 属性，则会按导入顺序检查导入项目，并使用发现的第一个 `DefaultTargets` 属性的值。 例如，如果 ProjectA 导入 ProjectB 和 ProjectC（按照该顺序），并且 ProjectB 导入 ProjectD，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会首先查找 ProjectA 上指定的 `DefaultTargets` ，然后是 ProjectB，接下来是 ProjectD，最后是 ProjectC。
 
  导入项目的架构与标准项目相同。 虽然 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可能能够生成导入项目，不过这不太可能，因为导入项目通常不包含有关要设置的属性或运行目标的顺序的信息。 导入项目依靠将它导入其中的项目来提供该信息。
-
 
 ## <a name="wildcards"></a>通配符
  在 .NET Framework 4 中，MSBuild 允许在项目属性中使用通配符。 存在通配符时，找到的所有匹配项会进行排序（实现可再现性），随后它们会按该顺序导入（如同显式设置了该顺序一样）。

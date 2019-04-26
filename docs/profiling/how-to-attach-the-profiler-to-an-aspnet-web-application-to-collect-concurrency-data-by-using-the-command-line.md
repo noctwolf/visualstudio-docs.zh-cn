@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f01f0fd090bdfdef1f09f0446980756232a3abf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974263"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 ASP.NET Web 应用程序并收集进程和线程并发数据。
@@ -45,21 +45,20 @@ ms.locfileid: "56604608"
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
 
-
 2. 以典型方式启动 ASP.NET 应用程序。
 
 3. 通过键入以下命令将探查器附加到 ASP.NET 工作进程：**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]
 
-   -   `PID` 指定 ASP.NET 工作进程的 ID 或名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID。
+   - `PID` 指定 ASP.NET 工作进程的 ID 或名称。 可以在 Windows 任务管理器中查看所有运行中的进程的进程 ID。
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 此参数可选。
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 此参数可选。
 
 ## <a name="control-data-collection"></a>控制数据收集
  应用程序运行时，可以通过使用 VSPerfCmd.exe 选项开始和停止向文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
--   下表中的 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+- 下表中的 VSPerfCmd 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|说明|
     |------------|-----------------|
@@ -72,11 +71,11 @@ ms.locfileid: "56604608"
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 
-1.  通过将其关闭或在命令提示符中键入以下命令将探查器与目标应用程序分离：
+1. 通过将其关闭或在命令提示符中键入以下命令将探查器与目标应用程序分离：
 
      **VSPerfCmd /detach**
 
-2.  在命令提示符下键入以下命令以关闭探查器：
+2. 在命令提示符下键入以下命令以关闭探查器：
 
      **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 

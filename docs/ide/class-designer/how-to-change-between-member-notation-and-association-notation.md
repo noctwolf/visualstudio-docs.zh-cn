@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975498"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>如何：在类设计器中的成员表示法与关联表示法之间转换
 
@@ -29,9 +29,9 @@ ms.locfileid: "55913819"
 
 ## <a name="to-change-member-notation-to-association-notation"></a>将成员表示法更改为关联表示法
 
-1.  从“解决方案资源管理器”中的项目节点打开类图 (.cd) 文件。
+1. 从“解决方案资源管理器”中的项目节点打开类图 (.cd) 文件。
 
-2.  在类图上的类型形状中，右键单击表示此关联的成员属性或字段，然后选择“显示为关联”。
+2. 在类图上的类型形状中，右键单击表示此关联的成员属性或字段，然后选择“显示为关联”。
 
     > [!TIP]
     > 如果在类型形状中没有看到属性或字段，则形状中的隔离舱处于折叠状态。 若要展开类型形状，请双击隔离舱名称或右键单击类型形状，然后选择“展开”。

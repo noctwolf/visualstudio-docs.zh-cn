@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791664"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 使用“项目设计器”的“生成”页指定项目的生成配置属性。 此页仅适用于 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目。
@@ -56,12 +56,11 @@ ms.locfileid: "55922142"
 
 仅在以下条件都为 true 的情况下，才可使用此复选框：
 
--   在“生成”页上，“平台目标”列表设置为“任何 CPU”。
+- 在“生成”页上，“平台目标”列表设置为“任何 CPU”。
 
--   在“应用程序”页上，“输出类型”列表指定项目是应用程序。
+- 在“应用程序”页上，“输出类型”列表指定项目是应用程序。
 
--   在“应用程序”页上，“目标框架”列表指定 .NET Framework 4.5。
-
+- 在“应用程序”页上，“目标框架”列表指定 .NET Framework 4.5。
 
 **允许不安全代码**允许使用[不安全](/dotnet/csharp/language-reference/keywords/unsafe)关键字进行编译的代码。 有关详细信息，请参阅 [/unsafe（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option)。
 
@@ -83,7 +82,7 @@ ms.locfileid: "55922142"
 
 **所有**将所有警告视为错误。
 
-## <a name="output"></a>输出
+## <a name="output"></a>Output
 以下设置用于配置生成过程的输出选项。
 
 **输出路径**指定该项目配置的输出文件的位置。 在此框中输入生成输出的路径，或选择“浏览”按钮指定路径。 请注意，该路径是相对的；如果输入绝对路径，将保存为相对路径。 默认路径为 bin\Debug 或 bin\Release\\。

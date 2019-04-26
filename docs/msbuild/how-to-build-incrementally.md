@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977366"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 生成一个大项目时，不重新生成以前生成过但仍然为最新状态的组件十分重要。 如果每次都生成所有目标，则每次生成都需要很长时间才能完成。 为了启用增量生成（这类生成仅重新生成以前未生成过或已过期的目标）， [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 但是，在输入和输出之间必须存在一对一映射。 可以使用转换来使目标能够识别此直接映射。 有关转换的详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。
@@ -61,7 +61,6 @@ ms.locfileid: "56621326"
 - `GenerateContentFiles`：将 .txt 文件转换成 .content 文件。
 
 - `BuildHelp`：将 .content 文件与 XML 元数据文件合并，生成 .help 最终文件。
-
 
 该项目通过转换过程来建立 `GenerateContentFiles` 任务中输入和输出之间的一一映射。 有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。 此外，设置了 `Output` 元素，以便自动将 `GenerateContentFiles` 任务的输出用作 `BuildHelp` 任务的输入。
 

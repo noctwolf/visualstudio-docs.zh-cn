@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002296"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>如何：使用负载测试编辑器添加阈值规则
 
@@ -26,17 +26,17 @@ ms.locfileid: "55930306"
 
 ## <a name="to-add-a-threshold-rule"></a>添加阈值规则
 
-1.  打开一个负载测试。
+1. 打开一个负载测试。
 
-2.  在负载测试编辑器中展开“计数器集”节点。
+2. 在负载测试编辑器中展开“计数器集”节点。
 
-3.  在其中一个计数器集中展开一种“计数器类别”。 例如，可以选择“LoadTest:Scenario”。 展开该节点。
+3. 在其中一个计数器集中展开一种“计数器类别”。 例如，可以选择“LoadTest:Scenario”。 展开该节点。
 
-4.  右键单击其中一个计数器，例如“LoadTest:Scenario”下的“用户负载”。 选择“添加阈值规则”。
+4. 右键单击其中一个计数器，例如“LoadTest:Scenario”下的“用户负载”。 选择“添加阈值规则”。
 
      “添加阈值规则”对话框随即显示。
 
-5.  可以从两种规则中选择：“比较常数”和“比较计数器”。 选择适当的类型并对值进行设置。
+5. 可以从两种规则中选择：“比较常数”和“比较计数器”。 选择适当的类型并对值进行设置。
 
     > [!NOTE]
     > 将“如果超过则发出警报”属性设置为“True”，指示高于阈值会出现问题；或者设为“False”，指示低于阈值会出现问题。

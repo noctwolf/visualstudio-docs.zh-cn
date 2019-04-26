@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553158"
 ---
 # <a name="cores-view-legend"></a>“核心”视图图例
 “核心”视图图例按颜色和名称标识每个线程。 它包括一些列，分别显示跨核心上下文切换数、上下文切换总数以及跨越核心的上下文切换所占的百分比。 图例中的行按跨核心上下文切换数以降序排序。
