@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438386"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 响应能力
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "60070356"
 4. 或者，使用 performance.mark [标记要分析的代码](#ProfileMark)。  
   
     > [!TIP]
-    >  在查看探查器数据时，用户标记可帮助你确定响应能力问题。 例如，可以在导致响应能力问题的代码部分的开头和结尾添加用户标记。  
+    > 在查看探查器数据时，用户标记可帮助你确定响应能力问题。 例如，可以在导致响应能力问题的代码部分的开头和结尾添加用户标记。  
   
 5. 按照上一节中的说明运行 UI 响应能力探查器。  
   
@@ -127,7 +127,7 @@ ms.locfileid: "60070356"
     - 在以下部分中指定的其他事件： [Profiler event reference](#ProfilerEvents)。  
   
     > [!TIP]
-    >  探查器中的大部分有用信息显示在“时间线详细信息”图中。  
+    > 探查器中的大部分有用信息显示在“时间线详细信息”图中。  
   
 12. 在“CPU 使用率”或“可视吞吐量”(FPS) 图中选择一个区域后，选择 **“放大”** （按钮或上下文菜单）可获取更为详细的信息。 此图的时间线将更改为仅显示选定时间段。  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  将鼠标指针停留在用户标记上时，该事件说明将会作为工具提示显示。 可以根据需要添加许多用户标记。  
   
 > [!NOTE]
->  `console.timeStamp`，Chrome 命令，也显示为用户标记。  
+> `console.timeStamp`，Chrome 命令，也显示为用户标记。  
   
  下图显示了包含一个用户标记及其工具提示的诊断标尺。  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。  
   
 > [!NOTE]
->  图中不显示 GPU 利用率。  
+> 图中不显示 GPU 利用率。  
   
  下例显示了“CPU 使用率”图的外观：  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  该图显示 UI 线程工作并关注可导致视觉对象更新缓慢的后台线程。 此图不显示 JavaScript JIT 工作、异步 GPU 工作、在宿主进程之外执行的工作（例如 RuntimeBroker.exe 和 dwm.exe 工作），或尚未基于分析目的而检测的 Windows 运行时方面的工作（例如磁盘 I/O）。  
   
 > [!TIP]
->  当后台线程发生事件时，事件名称旁边的括号内将显示线程 ID。  
+> 当后台线程发生事件时，事件名称旁边的括号内将显示线程 ID。  
   
  下例显示了选择 DOM Click 事件的事件侦听器后，“时间线详细信息”图的外观：  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - 对于计时器、事件侦听器（DOM 事件）、布局事件和动画帧回调， **“非独占时间摘要”** 部分（彩色编码环）中会显示选定事件及其所有子项的彩色编码摘要。 图像中彩色编码的每一片都表示一个事件类型。 工具提示提供事件类型名称。  
   
     > [!TIP]
-    >  时间线详细信息图和 **“包含时间摘要”** 可帮助你识别需要优化的方面。 如果其中一个视图显示有大量的小型任务，则事件可能需要优化。 例如，应用可能会频繁刷新 DOM 元素，造成大量布局和 HTML 解析事件。 你或许能够通过批处理此工作来优化性能。  
+    > 时间线详细信息图和 **“包含时间摘要”** 可帮助你识别需要优化的方面。 如果其中一个视图显示有大量的小型任务，则事件可能需要优化。 例如，应用可能会频繁刷新 DOM 元素，造成大量布局和 HTML 解析事件。 你或许能够通过批处理此工作来优化性能。  
   
 ### <a name="FilterTimelineDetails"></a> 筛选时间线详细信息  
  通过从指定事件的上下文菜单中选择 **“筛选到事件”** ，可以在时间线详细信息中将视图筛选到特定事件。 当选择此选项时，时间线和网格视图的范围限于所选事件。 “CPU 使用率”图中选定内容的范围也限于特定事件。  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  若要筛选出 UI 线程活动，请清除 **“UI 活动”** 选项。  
   
 > [!TIP]
->  清除此选项并选择“网络流量”选项以调查与网络延迟相关的问题。  
+> 清除此选项并选择“网络流量”选项以调查与网络延迟相关的问题。  
   
  若要筛选出用户度量，请清除 **“用户测量”** 选项。 用户测量是无子项的顶级事件。  
   

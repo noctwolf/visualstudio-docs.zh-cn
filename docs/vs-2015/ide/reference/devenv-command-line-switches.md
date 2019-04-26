@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444735"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050696"
 Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令行生成、调试和部署项目。 使用这些开关从脚本或 .bat 文件（例如每夜生成的脚本）运行 IDE，或以特定配置启动 IDE。  
   
 > [!NOTE]
->  对于与生成相关的任务，现在推荐使用 MSBuild，而非 devenv。 有关详细信息，请参阅[命令行参考](../../msbuild/msbuild-command-line-reference.md)。  
+> 对于与生成相关的任务，现在推荐使用 MSBuild，而非 devenv。 有关详细信息，请参阅[命令行参考](../../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
->  必须以管理员身份运行 devenv 才能使用 [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) 和 [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) 开关。  
+> 必须以管理员身份运行 devenv 才能使用 [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) 和 [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) 开关。  
   
 ## <a name="devenv-switch-syntax"></a>Devenv 开关语法  
  默认情况下，devenv 命令将开关传递给 devenv.com 实用工具。  
@@ -57,7 +57,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 - 如果提供项目文件名而不是解决方案文件名，`devenv` 命令会在项目文件的父文件夹中搜索具有相同名称的解决方案文件。 例如，`devenv /build myproject1.vbproj` 命令会在父文件夹中搜索命名为“myproject1.sln”的解决方案文件。  
   
     > [!NOTE]
-    >  引用此项目的唯一一个解决方案文件应位于其父文件夹中。 如果父文件夹不包含引用此项目的解决方案文件，或父文件夹包含引用此项目的两个或更多解决方案文件，则将创建一个为此项目命名并引用此项目的临时解决方案文件。  
+    > 引用此项目的唯一一个解决方案文件应位于其父文件夹中。 如果父文件夹不包含引用此项目的解决方案文件，或父文件夹包含引用此项目的两个或更多解决方案文件，则将创建一个为此项目命名并引用此项目的临时解决方案文件。  
   
 - 当文件路径和文件名中包含空格时，必须用双引号 ("") 将它们括起来。 例如 "c:\project a\\"。  
   

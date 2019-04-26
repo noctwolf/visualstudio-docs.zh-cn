@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424635"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54758116"
  ![解决方案资源管理器树中的属性节点](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  解决方案和项目项都具有一些属性；这些属性可在[属性窗口](../ide/reference/properties-window.md)中访问，而不是在**项目设计器**中访问。  
+> 解决方案和项目项都具有一些属性；这些属性可在[属性窗口](../ide/reference/properties-window.md)中访问，而不是在**项目设计器**中访问。  
   
 ## <a name="project-properties"></a>项目属性  
  项目属性分到各个组且每组具有自己的属性页，而这些页面可能因语言和项目类型不同而有所不同。  

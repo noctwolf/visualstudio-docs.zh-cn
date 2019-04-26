@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436797"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668181"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可基于相同元数据将多个项列表划分为多个批。 这样可以轻松地将不同项列表划分为多个批来生成多个程序集。 例如，可将 .cs 文件的项列表划分为一个应用程序批和一个程序集批，并将资源文件的项列表划分为一个应用程序批和程序集批。 然后，可以使用批处理将这些项列表传递到一个任务，并生成应用程序和程序集。  
   
 > [!NOTE]
->  如果正被传递到任务的项列表不包含任何具有引用元数据的项，则该项列表中的每个项会被传递到每个批。  
+> 如果正被传递到任务的项列表不包含任何具有引用元数据的项，则该项列表中的每个项会被传递到每个批。  
   
  以下示例演示了如何基于项元数据将多个项列表划分为多个批。 `ExampColl` 项列表和 `ExampColl2` 项列表基于 `Number` 项元数据分别被划分为三个批。 若 `Text` 属性中存在 `%(Number)`，则会通知 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 应执行批处理。 `ExampColl` 项列表和 `ExampColl2` 项列表基于 `Number` 元数据被划分为三个批，其中每个批被单独传递到任务。  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405631"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051610"
  此外，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支持 Dvorak 键盘布局，这些布局使最频繁键入的字符使用起来更为方便。 还可以自定义适用于 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 的默认快捷键。 有关详细信息，请参阅[标识并自定义键盘快捷方式](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>编辑器、对话框和工具窗口  
  默认情况下，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中的对话框和工具窗口使用与操作系统相同的字号和颜色。 IDE 框架、对话框、工具栏和工具窗口的颜色设置是基于配色方案的：深色或浅色。 可在[“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)中更改当前颜色主题。  
@@ -63,7 +63,7 @@ ms.locfileid: "60051610"
 6. 在“大小”中选择一个新的字号。  
   
     > [!NOTE]
-    >  若要重置基于文本的工具窗口和编辑器的文本大小，请选择“使用默认值”。  
+    > 若要重置基于文本的工具窗口和编辑器的文本大小，请选择“使用默认值”。  
   
 7. 选择 **“确定”**。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051610"
  也可以选择更改编辑器中文本、边距指示器、空格和码位元素的默认颜色。  
   
 > [!NOTE]
->  若要对操作系统上的所有应用程序窗口使用高对比度的颜色，请按左 Alt+左 Shift+PrtScn。 如果 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 处于打开状态，请关闭并重新打开 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 以完全实现高对比度的颜色。  
+> 若要对操作系统上的所有应用程序窗口使用高对比度的颜色，请按左 Alt+左 Shift+PrtScn。 如果 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 处于打开状态，请关闭并重新打开 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 以完全实现高对比度的颜色。  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>更改编辑器中项的颜色  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403448"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60045135"
      当打开边距装饰器而未设置相反边距时，请根据美工板中的元素的位置，将相反边距设置为正确的值。 对于相反的边距（如“左侧”和“右侧”边距），将始终至少设置一个属性。  
   
     > [!IMPORTANT]
-    >  置于某些布局容器内的元素（如 <xref:Windows.UI.Xaml.Controls.Canvas>）没有边距装饰器。 置于 <xref:Windows.UI.Xaml.Controls.StackPanel> 内的元素对于左边距和右边距或上边距和下边距有边距装饰器，具体取决于 `StackPanel` 的方向。  
+    > 置于某些布局容器内的元素（如 <xref:Windows.UI.Xaml.Controls.Canvas>）没有边距装饰器。 置于 <xref:Windows.UI.Xaml.Controls.StackPanel> 内的元素对于左边距和右边距或上边距和下边距有边距装饰器，具体取决于 `StackPanel` 的方向。  
   
 ## <a name="grouping-and-ungrouping-elements"></a>对元素进行分组和取消分组  
  对 XAML 设计器中的两个或更多元素进行分组可创建一个新的布局容器，然后将这些元素置于该容器内。 通过将两个或更多元素一起置于一个布局容器中，可轻松地选择、移动和转换该组，如同该组中的所有元素是一个元素。 对于识别以某种方式相互关联的元素（如组成导航元素的按钮），分组也很有用。 对元素进行取消分组时，只需删除包含这些元素的布局容器即可。  
@@ -106,7 +106,7 @@ ms.locfileid: "60045135"
 2. 右键单击选定的元素，指向“分组”，然后单击想要在其中放置该组的布局容器的类型。  
   
     > [!TIP]
-    >  如果选择 <xref:Windows.UI.Xaml.Controls.Viewbox><xref:Windows.UI.Xaml.Controls.Border>, 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 来分组元素，则元素将被放置于 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内的一个新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果在其中某个布局容器中对元素进行取消分组，则仅删除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，而保留 <xref:Windows.UI.Xaml.Controls.Grid> 面板。 若要删除 `Grid` 面板，请再次对这些元素进行取消分组。  
+    > 如果选择 <xref:Windows.UI.Xaml.Controls.Viewbox><xref:Windows.UI.Xaml.Controls.Border>, 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 来分组元素，则元素将被放置于 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer> 内的一个新 <xref:Windows.UI.Xaml.Controls.Grid> 面板中。 如果在其中某个布局容器中对元素进行取消分组，则仅删除 <xref:Windows.UI.Xaml.Controls.Viewbox>、<xref:Windows.UI.Xaml.Controls.Border> 或 <xref:Windows.UI.Xaml.Controls.ScrollViewer>，而保留 <xref:Windows.UI.Xaml.Controls.Grid> 面板。 若要删除 `Grid` 面板，请再次对这些元素进行取消分组。  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>若要对元素进行取消分组并删除布局，请执行以下操作  
   
