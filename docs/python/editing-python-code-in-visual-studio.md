@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959137"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -76,7 +76,7 @@ Visual Studio 2017 版本 15.6 及更高版本使用另外一种方法提供不�
 
 ### <a name="type-hints"></a>类型提示
 
-*Visual Studio 2017 版本 15.7 及更高版本。*
+Visual Studio 2017 版本 15.7 和更高版本。
 
 Python 3.5+ 中的“类型提示”([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) 是用于函数和指示参数类型、返回值以及类属性的类的注释语法。 将鼠标悬停在包含这些注释的函数调用、参数和变量上时，IntelliSense 显示类型提示。
 
@@ -227,6 +227,6 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 
 ## <a name="see-also"></a>请参阅
 
-- [格式化](formatting-python-code.md)
+- [格式设置](formatting-python-code.md)
 - [重构](refactoring-python-code.md)
 - [使用 Linter](linting-python-code.md)

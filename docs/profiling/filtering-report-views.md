@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c099fac3abba543c177becc1fe375b43ce1dd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969883"
 ---
 # <a name="filter-report-views"></a>筛选报告视图
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。
@@ -28,11 +28,11 @@ ms.locfileid: "56604426"
 
 #### <a name="to-create-a-profiler-report-filter"></a>创建探查器报告筛选器
 
-1.  如果未显示“性能报告”视图筛选器窗口，请单击“性能报告”视图工具栏上的“显示筛选器”。
+1. 如果未显示“性能报告”视图筛选器窗口，请单击“性能报告”视图工具栏上的“显示筛选器”。
 
      “性能报告”视图筛选器是一个表。 该表的每一行代表一个筛选器子句。 可以向筛选器添加任意多个子句。
 
-2.  对于要添加到筛选器的每个子句，在行的下列字段中，选择或输入值。
+2. 对于要添加到筛选器的每个子句，在行的下列字段中，选择或输入值。
 
     |字段|说明|
     |-----------|-----------------|
@@ -40,7 +40,6 @@ ms.locfileid: "56604426"
     |**字段**|从显示的数据字段列表中选择要在筛选器子句中使用的报告字段。|
     |**Operator**|选择用于指定子句中字段与值之间的关系的运算符。<br /><br /> =    等于<br /><br /> <>  不等于<br /><br /> <    小于<br /><br /> >    大于<br /><br /> <=  小于或等于<br /><br /> >=  大于或等于|
     |**值**|选择或输入要查找的值。 某些字段会列出字段的可用值。|
-
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>从“标记报告”视图中创建探查器报告筛选器
 
@@ -62,33 +61,33 @@ ms.locfileid: "56604426"
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>从文件加载现有筛选器
 
-1.  在“性能报告视图”工具栏上，单击“导入筛选器”。
+1. 在“性能报告视图”工具栏上，单击“导入筛选器”。
 
      此时将显示“加载筛选器”对话框。
 
-2.  指定要加载的筛选器 (.vspf) 文件的位置和文件名。
+2. 指定要加载的筛选器 (.vspf) 文件的位置和文件名。
 
 #### <a name="to-execute-a-filter"></a>执行筛选器
 
--   在“性能报告视图”工具栏上，单击“执行筛选器”。
+- 在“性能报告视图”工具栏上，单击“执行筛选器”。
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>停止耗费太长执行时间的筛选器
 
--   在“性能报告视图”工具栏上，单击“停止筛选器”。
+- 在“性能报告视图”工具栏上，单击“停止筛选器”。
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>删除报表视图中的筛选器
 
-1.  删除“性能报告视图”筛选器中的子句行。
+1. 删除“性能报告视图”筛选器中的子句行。
 
-2.  在“性能报告视图”工具栏上，单击“执行筛选器”。
+2. 在“性能报告视图”工具栏上，单击“执行筛选器”。
 
 #### <a name="to-save-a-filter-to-a-file"></a>将筛选器保存到文件
 
-1.  在“性能报告视图”工具栏上，单击“导出筛选器”。
+1. 在“性能报告视图”工具栏上，单击“导出筛选器”。
 
      此时将显示“保存筛选器”对话框。
 
-2.  指定要保存的筛选器 (.vspf) 文件的位置和文件名。
+2. 指定要保存的筛选器 (.vspf) 文件的位置和文件名。
 
 ## <a name="see-also"></a>请参阅
 - [自定义性能工具报表视图](../profiling/customizing-performance-tools-report-views.md)

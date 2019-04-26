@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996218"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用并发可视化工具标记 SDK
 本主题演示如何使用并发可视化工具 SDK 来创建范围并编写标志、消息和警报。
 
 ### <a name="to-use-c"></a>使用 C++
 
-1.  向应用程序添加并发可视化工具 SDK 支持。 有关详细信息，请参阅[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)。
+1. 向应用程序添加并发可视化工具 SDK 支持。 有关详细信息，请参阅[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)。
 
-2.  为该 SDK 添加 `include` 语句和 `using` 语句。
+2. 为该 SDK 添加 `include` 语句和 `using` 语句。
 
     ```C++
 
@@ -31,7 +31,7 @@ ms.locfileid: "57323531"
 
     ```
 
-3.  添加代码以在默认标记系列中创建三个范围，并编写一个标志、一条消息和一个警报（各自对应一个范围）。 用于编写标志、消息和警报的方法是 [marker_series](../profiling/marker-series-class.md) 类的成员。 [span](../profiling/span-class.md) 类的构造函数需要 `marker_series` 对象，以便让每个范围均与特定的标记系列相关联。 `span` 在被删除时结束。
+3. 添加代码以在默认标记系列中创建三个范围，并编写一个标志、一条消息和一个警报（各自对应一个范围）。 用于编写标志、消息和警报的方法是 [marker_series](../profiling/marker-series-class.md) 类的成员。 [span](../profiling/span-class.md) 类的构造函数需要 `marker_series` 对象，以便让每个范围均与特定的标记系列相关联。 `span` 在被删除时结束。
 
     ```C++
 
@@ -50,11 +50,11 @@ ms.locfileid: "57323531"
 
     ```
 
-4.  在菜单栏上，依次选择“分析”、“并发可视化工具”、“从当前项目开始”以运行应用并显示并发可视化工具。 下图显示并发可视化工具中的三个范围和三种标记。
+4. 在菜单栏上，依次选择“分析”、“并发可视化工具”、“从当前项目开始”以运行应用并显示并发可视化工具。 下图显示并发可视化工具中的三个范围和三种标记。
 
      ![具有 3 种标记和警报的并发可视化工具](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
-5.  添加代码，以通过调用 `marker_series` 的构造函数（对标记系列采用字符串名称）来创建附加的自定义标记系列。
+5. 添加代码，以通过调用 `marker_series` 的构造函数（对标记系列采用字符串名称）来创建附加的自定义标记系列。
 
     ```C++
 
@@ -74,15 +74,15 @@ ms.locfileid: "57323531"
 
     ```
 
-6.  启动当前项目以显示并发可视化工具。 在“线程”视图中，两个标记系列显示在其各自的通道中。 下图显示两个新范围。
+6. 启动当前项目以显示并发可视化工具。 在“线程”视图中，两个标记系列显示在其各自的通道中。 下图显示两个新范围。
 
      ![具有 3 个自定义标记系列的并发可视化工具](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>使用 Visual Basic 或 C\#
 
-1.  向应用程序添加并发可视化工具 SDK 支持。 有关详细信息，请参阅[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)。
+1. 向应用程序添加并发可视化工具 SDK 支持。 有关详细信息，请参阅[并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)。
 
-2.  为该 SDK 添加 `using` 或 `Imports` 语句。
+2. 为该 SDK 添加 `using` 或 `Imports` 语句。
 
     ```VB
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
@@ -93,7 +93,7 @@ ms.locfileid: "57323531"
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3.  添加代码以在默认标记系列中创建三个范围，并编写一个标志、一条消息和一个警报（各自对应一个范围）。 通过调用静态 `EnterSpan` 方法创建 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> 对象。 若要写入到默认序列，请使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 类的静态写入方法。
+3. 添加代码以在默认标记系列中创建三个范围，并编写一个标志、一条消息和一个警报（各自对应一个范围）。 通过调用静态 `EnterSpan` 方法创建 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> 对象。 若要写入到默认序列，请使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 类的静态写入方法。
 
     ```VB
 
@@ -134,11 +134,11 @@ ms.locfileid: "57323531"
     alertSpan.Leave();
     ```
 
-4.  在菜单栏上，依次选择“分析”、“并发可视化工具”、“从当前项目开始”以运行应用并显示并发可视化工具。 下图在并发可视化工具的“线程”视图中显示三个范围和三种标记。
+4. 在菜单栏上，依次选择“分析”、“并发可视化工具”、“从当前项目开始”以运行应用并显示并发可视化工具。 下图在并发可视化工具的“线程”视图中显示三个范围和三种标记。
 
      ![具有标记和警报的并发可视化工具](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5.  添加代码，使用静态 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> 方法创建客户标记序列。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> 类包含用于创建范围和编写标志、消息和警报的方法。
+5. 添加代码，使用静态 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> 方法创建客户标记序列。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> 类包含用于创建范围和编写标志、消息和警报的方法。
 
     ```VB
 
@@ -172,7 +172,7 @@ ms.locfileid: "57323531"
     messageSeriesSpan.Leave();
     ```
 
-6.  启动当前项目以显示并发可视化工具。 在“线程”视图中，三个标记系列显示在其各自的通道中。 下图显示三个新范围。
+6. 启动当前项目以显示并发可视化工具。 在“线程”视图中，三个标记系列显示在其各自的通道中。 下图显示三个新范围。
 
      ![具有 3 个自定义标记系列的并发可视化工具](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 

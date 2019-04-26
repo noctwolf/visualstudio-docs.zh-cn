@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990053"
 ---
 # <a name="shell-command"></a>shell 命令
 从 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内启动可执行程序。
@@ -64,7 +64,6 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > [!CAUTION]
 > 如果 `path` 参数提供了目录路径和文件名，则应该将整个路径名引在原义引号 (""") 中，如下所示：
 
-
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
@@ -77,7 +76,6 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 
 > [!CAUTION]
 > 如果未将路径字符串引在文本引号 (""") 中，Windows 将只使用第一个空格前的字符串部分。 例如，如果上面的路径字符串引用不正确，则 Windows 将查找 C:\ 根目录中的名为“Program”的文件。 如果 C:\Program.exe 可执行文件实际可用，则即使是由非法篡改安装的，Windows 也会尝试执行该程序，而不执行所需的“c:\Program Files\SomeFile.exe”程序。
-
 
 ## <a name="example"></a>示例
  以下命令使用 xcopy.exe 将文件 `MyText.txt` 复制到 `Text` 文件夹。 xcopy.exe 的输出同时显示在“命令”窗口和“输出”窗口中。

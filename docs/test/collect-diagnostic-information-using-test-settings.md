@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823010"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用测试设置收集诊断信息
 
 在运行测试时，可使用 Visual Studio 中的测试设置来收集额外的数据。 例如，你可能想在运行测试时录制视频。 可通过诊断数据适配器执行以下操作：
 
--   以文本格式收集每个 UI 操作步骤
+- 以文本格式收集每个 UI 操作步骤
 
--   记录每个 UI 操作以便播放
+- 记录每个 UI 操作以便播放
 
--   收集系统信息
+- 收集系统信息
 
--   收集事件日志数据
+- 收集事件日志数据
 
--   收集 IntelliTrace 数据来帮助隔离不可重现的 Bug
+- 收集 IntelliTrace 数据来帮助隔离不可重现的 Bug
 
 诊断数据适配器还可用于更改测试计算机的行为。 例如，利用 Visual Studio 中的测试设置，可以模拟各种网络拓扑瓶颈以评估团队应用程序的性能。
 

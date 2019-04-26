@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deeb74e8e8763feb62b0cc21fcfbfbf3c6b220ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979882"
 ---
 # <a name="shutdown"></a>关闭
 “关闭”选项会等待任何当前分析的进程结束或分离，然后关闭探查器和分析数据文件。 “关闭”选项必须是分析运行的最后一个命令。
@@ -29,8 +29,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```
 
 #### <a name="parameters"></a>参数
- `Timeout`
- -   （可选）如果指定，则此选项将在指定的秒数后返回，而不会关闭探查器或分析数据文件。
+`Timeout`
+- （可选）如果指定，则此选项将在指定的秒数后返回，而不会关闭探查器或分析数据文件。
 
 ## <a name="see-also"></a>请参阅
 - [VSPerfCmd](../profiling/vsperfcmd.md)

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: da292a0e830c38ef6fa35873575c4e43ca6f2abd
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1439e50eba4a0000a1bf78b3f24c74fb164c1faf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54936159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818133"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>用于跨平台移动开发的 Visual C++
 可通过适用于跨平台移动开发的 Visual C++，构建面向 iOS、Android 和 Windows 设备的本机 C++ 应用，并在为 iOS、Android 和 Windows 构建的库中分享通用代码。 这是安装了 SDK 以及共享库和本机应用的跨平台开发所需的工具的 Visual Studio 2015 中提供的一个选项。 安装后，你可以使用 Visual C++ 创建除了在 Windows、Windows Phone 和 Xbox，还可以在 iOS 和 Android 设备和平台上运行的代码。
@@ -26,11 +26,11 @@ ms.locfileid: "54936159"
 
  使用用于跨平台移动开发的 Visual C++ 进行开发具有以下优点：
 
-1.  **安装简便。** Visual Studio 安装程序将获取并安装所需的第三方工具，以及构建适用于 Android 和 iOS 的应用或库所需的 SDK。 配置和安装很简单，并且主要是自动进行的。
+1. **安装简便。** Visual Studio 安装程序将获取并安装所需的第三方工具，以及构建适用于 Android 和 iOS 的应用或库所需的 SDK。 配置和安装很简单，并且主要是自动进行的。
 
-2.  **功能强大且熟悉的生成环境。** 使用 Visual Studio 模板轻松创建可共享的跨平台解决方案和项目。 使用一个通用接口管理所有项目的属性。 在 Visual Studio 编辑器中编辑你的所有代码，并利用内置的跨平台 IntelliSense 补全代码和突出显示错误。
+2. **功能强大且熟悉的生成环境。** 使用 Visual Studio 模板轻松创建可共享的跨平台解决方案和项目。 使用一个通用接口管理所有项目的属性。 在 Visual Studio 编辑器中编辑你的所有代码，并利用内置的跨平台 IntelliSense 补全代码和突出显示错误。
 
-3.  **统一的调试体验。** 使用 Visual Studio 中一流的调试工具在所有平台上监视和逐步执行 C++ 代码，包括 Android 设备和仿真程序、iOS 模拟器和设备以及 Windows 或 Windows Phone 设备和仿真程序。
+3. **统一的调试体验。** 使用 Visual Studio 中一流的调试工具在所有平台上监视和逐步执行 C++ 代码，包括 Android 设备和仿真程序、iOS 模拟器和设备以及 Windows 或 Windows Phone 设备和仿真程序。
 
 ## <a name="get-the-tools"></a>获取工具
  用于跨平台移动开发的 Visual C++ 是 Visual Studio 2015 附带的可安装选项。 有关系统必备和安装说明，请参阅[安装用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要生成用于 iOS 的代码，你还需要 Mac 计算机和 Apple iOS 开发人员帐户。 有关详细信息，请参阅[安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。
@@ -40,55 +40,55 @@ ms.locfileid: "54936159"
 
  用于跨平台移动开发的 Visual C++ 包括多个模板，可帮助你开始编写应用：
 
--   OpenGLES 2 应用程序（Android、iOS 和 Windows Universal）
+- OpenGLES 2 应用程序（Android、iOS 和 Windows Universal）
 
      创建包含一组项目的解决方案，用于构建 Android 本机活动应用、iOS 应用、通用 Windows 应用以及共享的 C++ 代码库。 这些应用使用通过使用公共 C++ OpenGL ES 代码创建的特定于平台的库，以在每个应用中绘制相同的旋转立方体。 安装 Visual Studio 来使用此模板时，必须随附通用 Windows 应用开发工具选项。
 
--   Native-Activity 应用程序(Android)
+- Native-Activity 应用程序(Android)
 
      创建一个完整的 C++ OpenGL 应用作为 Android 本机活动项目。
 
--   OpenGLES 应用程序(Android、iOS)
+- OpenGLES 应用程序(Android、iOS)
 
      创建一个解决方案，其中包括一组用于构建 Android 本机活动应用和 iOS 应用的项目。 这些应用使用通过使用公共 C++ OpenGL ES 代码创建的特定于平台的库，以在每个应用中绘制相同的旋转立方体。
 
--   共享库 (Android、iOS)
+- 共享库 (Android、iOS)
 
      创建一个解决方案，其中包括在共享项目中使用公共 C++ 代码创建 Android 动态库 (.so) 文件和 iOS 静态库 (.a) 文件的项目。
 
--   基本应用程序（Android、Ant）
+- 基本应用程序（Android、Ant）
 
      创建仅使用 Java 源代码和 Ant 生成系统的 Android "Hello，World" 应用项目。
 
--   基本应用程序（Android、Gradle）
+- 基本应用程序（Android、Gradle）
 
      创建仅使用 Java 源代码和 Gradlet 生成系统的 Android "Hello，World" 应用项目。
 
--   基本库（Android、Ant）
+- 基本库（Android、Ant）
 
      创建仅使用 Java 源代码和 Ant 生成系统的 Android "Hello，World" 库项目。
 
--   基本库（Android、Gradle）
+- 基本库（Android、Gradle）
 
      创建仅使用 Java 源代码和 Gradle 生成系统的 Android "Hello，World" 库项目。
 
--   动态共享库(Android)
+- 动态共享库(Android)
 
      通过使用 C++ 代码创建一个 Android 动态库 (.so) 文件。
 
--   OpenGLES 2 应用程序 (iOS)
+- OpenGLES 2 应用程序 (iOS)
 
      创建具有一组项目的解决方案，用于构建 OpenGL ES 2 iOS 应用。 该应用使用 C++ OpenGL ES 代码库在 iOS 应用中绘制旋转立方体。 该应用是用于查看如何将 C++ 库导入 iOS 应用的良好起点。
 
--   静态库(Android)
+- 静态库(Android)
 
      创建一个项目以构建用于 Android 的静态库。 你仅能链接 Android 应用中的一个动态库，但你可以链接到任意数量的静态库。
 
--   静态库(iOS)
+- 静态库(iOS)
 
      创建一个项目以构建用于 iOS 的静态库。
 
--   生成文件项目(Android)
+- 生成文件项目(Android)
 
      为你自己的 Android 生成文件项目创建项目包装。
 
@@ -97,12 +97,12 @@ ms.locfileid: "54936159"
 
 ## <a name="in-this-section"></a>本节内容
 
-1.  [安装用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+1. [安装用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
 
-2.  [安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
+2. [安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
 
-3.  [创建 Android 本机活动应用](../cross-platform/create-an-android-native-activity-app.md)
+3. [创建 Android 本机活动应用](../cross-platform/create-an-android-native-activity-app.md)
 
-4.  [在 Android 和 iOS 上生成 OpenGL ES 应用程序](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)
+4. [在 Android 和 iOS 上生成 OpenGL ES 应用程序](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)
 
-5.  [跨平台移动开发示例](../cross-platform/cross-platform-mobile-development-examples.md)
+5. [跨平台移动开发示例](../cross-platform/cross-platform-mobile-development-examples.md)

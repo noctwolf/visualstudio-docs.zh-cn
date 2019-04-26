@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9a210b61a1ba28d2dca2f81184b3d20a91ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817494"
 ---
 # <a name="lc-task"></a>LC 任务
 包装 LC.exe 文件，它可从 .licx 文件生成 .license 文件。 有关 LC.exe 的详细信息，请参阅 [Lc.exe（许可证编译器）](/dotnet/framework/tools/lc-exe-license-compiler)。

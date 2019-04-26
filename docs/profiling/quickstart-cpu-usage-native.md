@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6b5df5e8b8dba85ae26d0c606f4ed3f0b343d7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968176"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>快速入门：在 Visual Studio 中分析 CPU 使用率数据 (C++)
 
@@ -115,26 +115,26 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
 ## <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据
 
-1.  首先，在应用中在 `main` 函数的该代码行处设置一个断点：
+1. 首先，在应用中在 `main` 函数的该代码行处设置一个断点：
 
     `for (int i = 0; i < 10; ++i) {`
 
     单击代码行左侧的装订线，设置断点。
 
-2.  然后，在 `main` 函数末尾的右括号处设置第二个断点：
+2. 然后，在 `main` 函数末尾的右括号处设置第二个断点：
 
      ![设置断点以进行分析](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "设置断点以进行分析")
 
     > [!TIP]
     > 通过设置两个断点，可将数据收集限制到想要分析的代码部分。
 
-3.  已显示“诊断工具”窗口，除非已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
+3. 已显示“诊断工具”窗口，除非已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
 
-4.  依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
+4. 依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
 
      应用完成加载后，将显示诊断工具的“摘要”视图。
 
-5.  调试器暂停时，选择“记录 CPU 配置文件”以启用 CPU 使用率数据的收集，然后打开“CPU 使用率”选项卡。
+5. 调试器暂停时，选择“记录 CPU 配置文件”以启用 CPU 使用率数据的收集，然后打开“CPU 使用率”选项卡。
 
      ![诊断工具启用 CPU 分析](../profiling/media/quickstart-cpu-usage-summary.png "诊断工具启用 CPU 分析")
 
@@ -142,7 +142,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
      选择“记录 CPU 配置文件”时，Visual Studio 将开始记录函数和执行函数所花的时间，还会提供一个时间线关系图，可使用此关系图专注于采样会话的特定分段。只有应用程序在断点处停止时，才可以查看该收集数据。
 
-6.  按 F5 将应用运行到第二个断点。
+6. 按 F5 将应用运行到第二个断点。
 
      现在将拥有应用程序特定于在两个断点间运行的代码区域的性能数据。
 

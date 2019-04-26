@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951280"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 一起分发的工具）。 此程序集链接器工具用于创建包含来自一个或多个文件（这些文件可以是模块或资源文件）的清单的程序集。 编译器和开发环境可能已提供这些功能，因此通常不需要直接使用此任务。 对于需要从多个组件文件（例如可能从混合语言开发生成的组件文件）创建单个程序集的开发人员来说，程序集链接器非常有用。 此任务不能将模块合并到单个程序集文件；单个模块必须仍为分布式且可用，以便正确加载生成程序集。 有关 AL.exe 的详细信息，请参阅 [Al.exe（程序集链接器）](/dotnet/framework/tools/al-exe-assembly-linker)。
 
 ## <a name="parameters"></a>参数
  下表描述了 `AL` 任务的参数。
-
 
 | 参数 | 说明 |
 |---------------------| - |

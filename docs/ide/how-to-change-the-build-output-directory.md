@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824225"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 
@@ -27,11 +27,11 @@ ms.locfileid: "55911528"
 
 ## <a name="change-the-build-output-directory"></a>更改生成输出目录
 
-1.  在菜单栏上，选择“项目” > **\<**“Appname > 属性”。 还可以在解决方案资源管理器中右键单击项目节点并选择“属性”。
+1. 在菜单栏上，选择“项目” > **\<**“Appname > 属性”。 还可以在解决方案资源管理器中右键单击项目节点并选择“属性”。
 
-2.  如果你有 Visual Basic 项目，请选择 **“编译”** 选项卡。如果你有 C# 项目，请选择“生成”选项卡。如果你具有 C++ 项目或 JavaScript 项目，请选择 **“常规”** 选项卡。
+2. 如果你有 Visual Basic 项目，请选择 **“编译”** 选项卡。如果你有 C# 项目，请选择“生成”选项卡。如果你具有 C++ 项目或 JavaScript 项目，请选择 **“常规”** 选项卡。
 
-3.  在顶部的配置下拉列表中，选择你想要更改其输出文件位置的配置（调试、发布或全部）。
+3. 在顶部的配置下拉列表中，选择你想要更改其输出文件位置的配置（调试、发布或全部）。
 
      查找输出路径条目（Visual Basic 中的“生成输出路径”、Visual C++中的“输出目录”、JavaScript 和 C# 中的“输出路径”）。 指定一个相对于项目目录的新的生成输出目录。
 

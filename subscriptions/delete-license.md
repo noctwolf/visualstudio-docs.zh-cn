@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: 了解管理员如何删除订阅分配
 searchscope: VS Subscription
 ms.openlocfilehash: fa591d8ab6a53539c7f76ddea4a80270b9cbc1a3
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945900"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>删除 Visual Studio 订阅中的分配
 

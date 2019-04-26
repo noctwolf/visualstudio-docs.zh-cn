@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793976"
 ---
 # <a name="performance-report-view-filter"></a>性能报告视图筛选器
 “探查器报告视图筛选器”窗口位于“性能报告”窗口顶部。 如果看不到它，请单击“显示筛选器”按钮。
