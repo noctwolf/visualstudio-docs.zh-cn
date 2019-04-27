@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251dc4279530c2d10ba8b404ee515824d0671037
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62579978"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>“行”视图 - .NET 内存采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54776991"
   
   根据定义，语句不调用其他函数。 因此，仅列出独占值。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**进程 ID**|分析运行的进程 ID (PID)。|  
 |**进程名**|进程的名称。|  

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cb6b8191b39bfc79615bf0bbcd4fb469395f8d8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583153"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 — 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "54779045"
   
   下表介绍“行视图”报告中的各列。  
   
-|列|说明​​|  
+|列|说明|  
 |------------|-----------------|  
 |**独占阻塞的时间**|因争用事件而阻滞此语句执行语句中代码的时间长度。 不包括语句所调用的函数中的阻塞时间。|  
 |**独占阻塞的时间百分比**|语句的独占阻塞时间占进程中所有阻塞时间的百分比。|  
