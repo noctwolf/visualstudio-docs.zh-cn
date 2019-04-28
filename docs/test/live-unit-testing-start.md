@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787296"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
@@ -94,11 +94,11 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
    `StringLibrary` 有三种静态方法：
 
-      - 如果字符串以大写字符开头，则 `StartsWithUpper` 返回 `true`；否则返回 `false`。
+   - 如果字符串以大写字符开头，则 `StartsWithUpper` 返回 `true`；否则返回 `false`。
 
-      - 如果字符串以小写字符开头，则 `StartsWithLower` 返回 `true`；否则返回 `false`。
+   - 如果字符串以小写字符开头，则 `StartsWithLower` 返回 `true`；否则返回 `false`。
 
-      - 如果字符串包含嵌入的空格字符，则 `HasEmbeddedSpaces` 返回 `true`；否则返回 `false`。
+   - 如果字符串包含嵌入的空格字符，则 `HasEmbeddedSpaces` 返回 `true`；否则返回 `false`。
 
 6. 从顶级 Visual Studio 菜单中依次选择“生成” > “生成解决方案”。 Visual Studio 应会成功生成库。
 
@@ -140,11 +140,11 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
    `StringLibrary` 有三种静态方法：
 
-      - 如果字符串以大写字符开头，则 `StartsWithUpper` 返回 `true`；否则返回 `false`。
+   - 如果字符串以大写字符开头，则 `StartsWithUpper` 返回 `true`；否则返回 `false`。
 
-      - 如果字符串以小写字符开头，则 `StartsWithLower` 返回 `true`；否则返回 `false`。
+   - 如果字符串以小写字符开头，则 `StartsWithLower` 返回 `true`；否则返回 `false`。
 
-      - 如果字符串包含嵌入的空格字符，则 `HasEmbeddedSpaces` 返回 `true`；否则返回 `false`。
+   - 如果字符串包含嵌入的空格字符，则 `HasEmbeddedSpaces` 返回 `true`；否则返回 `false`。
 
 6. 右键单击“解决方案资源管理器”中的 StringLibrary 项目，然后选择“属性”。 在“应用程序”选项卡中，删除“根命名空间”文本框中的文本，如下图所示。 根命名空间由源代码中的 [Namespace 语句](/dotnet/visual-basic/language-reference/statements/namespace-statement)定义。
 

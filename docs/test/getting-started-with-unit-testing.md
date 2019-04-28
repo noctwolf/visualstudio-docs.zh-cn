@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003149"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -24,10 +24,19 @@ ms.locfileid: "58856455"
 
 本节从较高层面介绍了如何创建单元测试项目。
 
-> [!TIP]
-> 正在测试的项目“HelloWorldCore”是一个示例项目，不会显示其任何代码。 如果要创建要测试的“Hello World”项目，请参阅[创建首个 C# 控制台应用](../ide/quickstart-csharp-console.md)。 有关完整的演练文章，请参阅[创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
-
 1. 在 Visual Studio 中，打开要测试的项目。
+
+   为了演示示例单元测试，本文测试了简单的“Hello World”项目。 此类项目的示例代码如下所示：
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. 在“解决方案资源管理器”中，选择解决方案节点。 然后，在顶部菜单栏中，选择“文件” > “添加” > “新项目”。
 
@@ -62,6 +71,9 @@ ms.locfileid: "58856455"
 1. 向单元测试方法添加代码。
 
    ![在 Visual Studio 中向单元测试方法添加代码](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> 有关创建单元测试的更详细演练，请参阅[创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)。
 
 ## <a name="run-unit-tests"></a>运行单元测试
 

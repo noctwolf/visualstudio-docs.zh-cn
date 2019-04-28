@@ -1,6 +1,6 @@
 ---
 title: 创建多项目模板
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430492"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 
@@ -36,13 +36,13 @@ ms.locfileid: "59232616"
 
 例如，具有两个项目的多项目模板 .zip 文件包含以下文件和目录：
 
-- *MultiProjectTemplate.vstemplate*
+- MultiProjectTemplate.vstemplate
 - *\Project1\MyTemplate.vstemplate*
-- *\Project1\Project1.vbproj*
-- *\Project1\Class.vb*
+- \Project1\Project1.vbproj
+- \Project1\Class.vb
 - *\Project2\MyTemplate.vstemplate*
-- *\Project2\Project2.vbproj*
-- *\Project2\Class.vb*
+- \Project2\Project2.vbproj
+- \Project2\Class.vb
 
 多项目模板的根 vstemplate 文件不同于单项目模板，表现在以下方面：
 
@@ -67,6 +67,19 @@ ms.locfileid: "59232616"
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> 如果只需在“新建项目”对话框中显示多项目模板（而不是所包含的各个项目），请将内部模板标记为[隐藏](../extensibility/hidden-element-visual-studio-templates.md)。 例如:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>从现有解决方案中创建多项目模板
 

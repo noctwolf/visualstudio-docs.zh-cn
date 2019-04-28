@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211e9ca6e5b30d2a2b88f03430090c155ef7627a
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794045"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -25,7 +25,7 @@ ms.locfileid: "57223751"
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[Visual Studio for Mac 中的 EditorConfig](/visualstudio/mac/editorconfig)。
 
-## <a name="coding-consistency"></a>编码一致性
+## <a name="code-consistency"></a>代码一致性
 
 EditorConfig 文件中的设置用于在基本代码库中维持一致的编码风格和设置，例如缩进样式、选项卡宽度、行尾字符以及编码等，而无需考虑使用的编辑器或 IDE。 例如，使用 C# 编码时，如果基本代码约定为始终缩进五个空格字符、文档使用 UTF-8 编码，且每一行始终以 CR/LF 结束，则可以配置 .editorconfig 文件达到此效果。
 
@@ -51,7 +51,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 所有 Visual Studio 支持的语言（XML 除外）均支持 EditorConfig 编辑器设置。 此外，EditorConfig 还支持适用于 C# 和 Visual Basic 的[代码样式](../ide/editorconfig-code-style-settings-reference.md)约定和[命名](../ide/editorconfig-naming-conventions.md)约定。
 
-## <a name="adding-and-removing-editorconfig-files"></a>添加和删除 EditorConfig 文件
+## <a name="add-and-remove-editorconfig-files"></a>添加和删除 EditorConfig 文件
 
 将 EditorConfig文件添加到项目或基本代码不会将现有样式转换为新样式。 例如，如果文件中存在制表符格式的缩进，并添加了以空格缩进的 EditorConfig 文件，则缩进字符不会自动转换为空格。 但任何新的代码行都将根据 EditorConfig 文件设置格式。 此外，如果设置文档格式（“编辑” > “高级” > “设置文档格式”或 Ctrl+K，Ctrl+D），则 EditorConfig 文件中的设置将应用到现有代码行。
 
@@ -94,7 +94,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 - 试用 [IntelliCode 扩展](/visualstudio/intellicode/intellicode-visual-studio)。 此试验性扩展从现有代码中推断出你的代码样式，然后创建一个非空的 .editorconfig 文件，并且已定义代码样式首选项。
 
-## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
+## <a name="file-hierarchy-and-precedence"></a>文件层次结构和优先级
 
 如果将 .editorconfig 文件添加到文件层次结构中的某文件夹，则其设置将应用于该级别及更低级别的所有适用文件。 还可替代特定项目、代码库或部分代码库的 EditorConfig 设置，以使其使用与代码库其他部分不同的约定。 当要包含其他地方的代码而不想更改其约定时，这会很有用。
 
@@ -109,9 +109,9 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 root = true
 ```
 
-EditorConfig 文件从上到下进行读取，最近的 EditorConfig 文件会最后读取。 来自匹配 EditorConfig 部分的约定会按读取顺序进行应用，因此更近文件中的约定会优先使用。
+从上到下读取 EditorConfig 文件。 如果有多个具有相同名称的属性，则最近找到的具有该名称的属性具有优先权。
 
-## <a name="editing-editorconfig-files"></a>编辑 EditorConfig 文件
+## <a name="edit-editorconfig-files"></a>编辑 EditorConfig 文件
 
 Visual Studio 提供 IntelliSense 完成列表，帮助你编辑 .editorconfig 文件。
 
@@ -148,7 +148,7 @@ indent_style = tab
 
 ![使用 Tab 键添加制表符](../ide/media/vside_editorconfig_tab.png)
 
-## <a name="troubleshooting-editorconfig-settings"></a>EditorConfig 设置疑难解答
+## <a name="troubleshoot-editorconfig-settings"></a>EditorConfig 设置疑难解答
 
 如果在目录结构中处于或高于你项目所在位置的任何位置存在 EditorConfig 文件，则 Visual Studio 会将该文件中的编辑器设置应用于编辑器。 在这种情况下，可能会在状态栏中看到以下消息：
 

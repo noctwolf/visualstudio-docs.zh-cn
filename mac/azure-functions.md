@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984964"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 
@@ -37,7 +37,7 @@ Azure Function 工具包含在 Visual Studio for Mac 7.5 和更高版本中。
 
     > [!TIP]
     > 虽然已尽可能地将捆绑的 Azure Functions 运行时和模板 (CLI) 保持最新，但它们难免会过时。 创建新的 Functions 项目时，Visual Studio for Mac 将检查 CLI 的更新并发出通知，如下图所示。 只需单击按钮即可下载更新的模板。
-    > ![显示存在 Azure Functions 更新的“新建项目”对话框](media/azure-functions-update.png)
+    > ![显示 Azure Functions 更新可用的“新建项目”对话框](media/azure-functions-update.png)
 
     根据所选函数类型，下一页会提示输入详细信息，例如访问权限，如下图所示：
 
@@ -147,9 +147,7 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
     - Http POST CRUD
     - 带有参数的 Http 触发器
 
-
 - **计时器** - 按照预定义计划执行清除或其他批处理任务。 此模板采用两个字段：Name 和 schedule（一个具有 6 个字段的 CRON 表达式）。 有关详细信息，请参阅[关于时间的 Azure functions 文章](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **队列触发器** - 这是在消息到达 Azure Storage 队列时会对消息进行响应的函数。 除函数名称之外，此模板还采用一个路径（将从中读取消息的队列名称）和存储帐户连接（包含存储帐户连接字符串的应用设置名称）。 有关详细信息，请参阅[关于队列存储的 Azure functions 文章](/azure/azure-functions/functions-create-storage-queue-triggered-function)。
 

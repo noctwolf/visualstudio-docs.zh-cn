@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985640"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 
@@ -33,8 +33,8 @@ ms.locfileid: "58856789"
 
 - **.NET Core > 空**
 - **.NET Core > API**
-- **.NET Core > Web 应用程序**
-- **.NET Core > Web 应用程序（模型-视图-控制器）**
+- **.NET Core > Web 应用**
+- **.NET Core > Web 应用（模型-视图-控制器）**
 
 ![ASP.NET 项目选项](media/asp-net-core-2019-new-asp-core.png)
 
@@ -63,15 +63,16 @@ ASP.NET Core 空模板通过以下两个默认文件创建一个 Web 应用程�
                 .UseStartup<Startup>();
     }
 ```
+
 ASP.NET Core 应用将通过 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 实例配置并启动主机，以此在其 Main 方法中创建一个 Web 服务器。 此生成器提供方法以允许配置主机。 在模板应用中使用了以下配置：
 
-* `.UseStartup<Startup>()`:指定启动类。
+* `.UseStartup<Startup>()`：指定启动类。
 
 但是，也可以添加其他配置，例如：
 
-* `UseKestrel`:指定应用将使用的 Kestrel 服务器
-* `UseContentRoot(Directory.GetCurrentDirectory())`:从 Web 项目的根文件夹启动应用时，使用此文件夹作为应用的内容根
-* `.UseIISIntegration()`:指定应用应使用 IIS。 要在 ASP.NET Core 中使用 IIS，需要指定 `UseKestrel` 和 `UseIISIntegration`。
+* `UseKestrel`：指定应用将使用的 Kestrel 服务器
+* `UseContentRoot(Directory.GetCurrentDirectory())`：从 Web 项目的根文件夹启动应用时，使用此文件夹作为应用的内容根
+* `.UseIISIntegration()`：指定应用应使用 IIS。 要在 ASP.NET Core 中使用 IIS，需要指定 `UseKestrel` 和 `UseIISIntegration`。
 
 ### <a name="startupcs"></a>Startup.cs
 
@@ -106,8 +107,8 @@ ASP.NET Core 应用将通过 [`WebHostBuilder`](/aspnet/core/fundamentals/hostin
 
 Startup 类必须始终遵守以下规则：
 
- - 始终为公共
- - 包含两个公共方法：`ConfigureServices` 和 `Configure`
+- 始终为公共
+- 包含两个公共方法：`ConfigureServices` 和 `Configure`
 
 `ConfigureServices` 方法定义将在应用中使用的服务。
 
@@ -220,7 +221,6 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 9. 尝试浏览到 `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy`（使用正确端口替代 `xxxx`），应显示如下信息：
 
     ![通过参数在浏览器中运行应用](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>疑难解答
 

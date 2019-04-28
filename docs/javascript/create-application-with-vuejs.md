@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960621"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用针对 Visual Studio 的 Node.js 工具创建 Vue.js 应用程序
 
@@ -31,12 +31,17 @@ Visual Studio 中有以下新功能支持 Vue.js 应用程序开发：
 
 ## <a name="prerequisites"></a>系统必备
 
-* 必须安装 Visual Studio 2017 版本 15.8 预览版 3 或更高版本，且有“Node.js 开发”工作负载。
+* 必须安装 Visual Studio 2017 版本 15.8 或更高版本，且有“Node.js 开发”工作负载。
 
     > [!IMPORTANT]
-    > 本文需要的功能仅从 Visual Studio 2017 版本 15.8 预览版 3 开始提供。
+    > 本文需要的功能仅从 Visual Studio 2017 版本 15.8 开始提供。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
+    ::: moniker range=">=vs-2019"
+    如果尚未安装所需版本，请安装 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 页免费安装。
+    ::: moniker-end
 
     如果需要安装工作负载但已有 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“Node.js 开发”工作负载，然后选择“修改”。
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990253"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -82,9 +82,12 @@ public void Withdraw(double amount)
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>生成单元测试项目和单元测试存根
 
-1. 在代码编辑器窗口中，右键单击并从右键单击菜单中选择“创建单元测试”。
+1. 在代码编辑器窗口中，右键单击并从右键单击菜单中选择[创建单元测试](create-unit-tests-menu.md)。
 
-    ![从编辑器窗口查看上下文菜单](../test/media/createunittestsrightclick.png)
+   ![从编辑器窗口查看上下文菜单](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > “创建单元测试”菜单命令仅适用于面向 .NET Framework（但不是 .NET Core）的托管代码。
 
 2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。
 
@@ -127,17 +130,17 @@ public void Withdraw(double amount)
 
    若要创建代码项目的引用：
 
-   1.  在解决方案资源管理器中，选择项目。
+   1. 在解决方案资源管理器中，选择项目。
 
-   2.  在“项目”菜单上，选择“添加引用” 。
+   2. 在“项目”菜单上，选择“添加引用” 。
 
-   3.  在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
+   3. 在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
 
 每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：
 
--   `AccountInfoTests` 类包含用于 `AccountInfo` 项目中 `Accounts` 类的单元测试方法
+- `AccountInfoTests` 类包含用于 `AccountInfo` 项目中 `Accounts` 类的单元测试方法
 
--   `CheckingAccountTests` 类包含用于 `CheckingAccount` 类的单元测试方法。
+- `CheckingAccountTests` 类包含用于 `CheckingAccount` 类的单元测试方法。
 
 ## <a name="write-your-tests"></a>编写测试
 
@@ -185,11 +188,11 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 有关 Microsoft 单元测试框架的详细信息，请参阅以下主题之一：
 
--   [单元测试代码](unit-test-your-code.md)
+- [单元测试代码](unit-test-your-code.md)
 
--   [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+- [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
 
--   [在单元测试中使用 MSTest 框架](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [在单元测试中使用 MSTest 框架](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>为单元测试设置超时值
 
@@ -260,12 +263,12 @@ public void My_Test ()
 
 **答：** 使用“测试资源管理器”为测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：
 
-1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。
+1. 在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。
 
     > [!NOTE]
     > 因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。
 
-2.  在“测试资源管理器”中，选择测试方法，然后从快捷菜单选择“调试选定的测试”。
+2. 在“测试资源管理器”中，选择测试方法，然后从快捷菜单选择“调试选定的测试”。
 
 了解有关 [调试单元测试](../debugger/debugger-feature-tour.md)的更多详细信息。
 
@@ -327,9 +330,9 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
 Microsoft Fakes 使用两种方法为外部依赖项创建替代类：
 
-1.  *存根 (stub)* 生成派生自目标依赖关系类的父接口的替代类。 可以将存根 (stub) 方法替换为目标类的公共虚拟方法。
+1. *存根 (stub)* 生成派生自目标依赖关系类的父接口的替代类。 可以将存根 (stub) 方法替换为目标类的公共虚拟方法。
 
-2.  *填充码* 使用运行时检测将对目标方法的调用转移到非虚拟方法的替代填充码方法。
+2. *填充码* 使用运行时检测将对目标方法的调用转移到非虚拟方法的替代填充码方法。
 
 通过这两种方法，你可以使用对依赖关系方法的调用所生成的委托，指定测试方法中所需的行为。
 

@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553911"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>步骤 3：使用实体框架处理数据
 
 请按照下列步骤开始在 ASP.NET Core Web 应用中使用 Entity Framework Core 来处理数据。
 
-_观看此视频，按照说明将数据添加到你的首个 ASP.NET Core 应用。_
+观看此视频，按照说明将数据添加到你的首个 ASP.NET Core 应用。
 
 > [!VIDEO https://www.youtube.com/embed/dulJCwNrqhM]
 
@@ -126,5 +126,5 @@ public static void Main(string[] args)
 
 ## <a name="see-also"></a>请参阅
 
-- [ASP.NET Core 中的 Razor Pages 和 Entity Framework Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
+- [在 ASP.NET Core 中结合使用 Razor Pages 和 Entity Framework Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
 - [ASP.NET Core Razor Pages 和 EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

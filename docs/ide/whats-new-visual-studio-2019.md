@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432022"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -84,7 +84,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 与新文档运行状况指示符配对是一种新的代码清理命令。 可以使用此新命令通过单击按钮来识别并修复警告和建议。
 
-清理将格式化代码并应用[当前设置](code-styles-and-quick-actions.md) [.editorconfig 文件](create-portable-custom-editor-options.md)或 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)建议的任何代码修复程序。
+清理将格式化代码并应用[当前设置](code-styles-and-quick-actions.md)和 [.editorconfig 文件](create-portable-custom-editor-options.md)建议的任何代码修复程序。
 
    ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile.png)
 
@@ -168,6 +168,12 @@ Visual Studio 2019 中会默认安装此服务。
 
 有关详细信息，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用](../debugger/debug-live-azure-applications.md)页，和 [Visual Studio Enterprise 2019 按时间顺序查看调试简介](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/)博客文章。
 
+## <a name="whats-next"></a>后续步骤
+
+我们经常更新 Visual Studio 2019 的新功能，不断提升开发体验。 若要了解有关我们最新创新的详细信息，请查看 [Visual Studio 博客](https://devblogs.microsoft.com/visualstudio/)。 对于我们迄今为止在预览版中发布的内容记录，请参阅[预览发行说明](/visualstudio/releases/2019/release-notes-preview/)。
+
+想要了解更多关于 Visual Studio 2019 的其他功能吗？ 请参阅 [Visual Studio 路线图](/visualstudio/productinfo/vs-roadmap/)。
+
 ## <a name="give-us-feedback"></a>给我们提供反馈
 
 为什么将反馈发送至 Visual Studio 团队？ 因为我们严肃对待客户反馈。 这会给予我们巨大的行事动力。
@@ -182,4 +188,4 @@ Visual Studio 2019 中会默认安装此服务。
 * [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
-* [Microsoft Connect(); 2018 会议](https://www.microsoft.com/connectevent)
+* [Microsoft Connect()；2018 会议](https://www.microsoft.com/connectevent)

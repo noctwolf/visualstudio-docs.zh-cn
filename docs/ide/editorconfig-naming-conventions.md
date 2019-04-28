@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557293"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
 命名约定与类、属性和方法等码位元素的命名有关。 例如，可以指定公共成员必须采用大写形式，或者异步方法必须以“Async”结尾。 可以通过在 [.editorconfig 文件](../ide/create-portable-custom-editor-options.md)中指定这些规则来加以实施。 命名规则冲突显示在“错误列表”中，或者作为建议显示在名称之下，具体取决于为规则选择的严重性。 不需要生成项目即可查看冲突。
 
-命名约定在 .editorconfig 文件中的排序顺序应为从最具体到最抽象。 遇到的第一个可应用规则是唯一应用的规则。
+命名约定在 EditorConfig 文件中的排序顺序应为从最具体到最抽象。 遇到的第一个可应用规则是唯一应用的规则。 但是，如果有多个具有相同名称的规则属性，则最近找到的具有该名称的属性具有优先权。 有关详细信息，请参阅[文件层次结构和优先级](create-portable-custom-editor-options.md#file-hierarchy-and-precedence)。
 
 对于每个命名约定，必须使用下面介绍的属性指定适用的符号、命名样式和实施约定的严重性。 属性的顺序并不重要。
 
@@ -100,11 +100,11 @@ ms.locfileid: "59232588"
 
 以下列表显示了允许的值（以逗号分隔多个值）：
 
-- `abstract` or `must_inherit`
+- `abstract` 或 `must_inherit`
 - `async`
 - `const`
 - `readonly`
-- `static` or `shared`
+- `static` 或 `shared`
 
    > [!NOTE]
    > 如果 `static` 或 `shared` 符号有命名规则，此规则也适用于 `const` 符号，因为它们是隐式静态的。 如果不希望将 `static` 命名规则应用于 `const` 符号，请为 `const` 符号单独创建命名规则。

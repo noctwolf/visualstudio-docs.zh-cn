@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973261"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>面向 C# 开发人员的 Visual Studio 工作效率指南
 
@@ -154,10 +154,12 @@ Visual Studio 具有许多功能可帮助你搜索和[导航代码](../ide/navig
 从 Visual Studio 2017 开始，测试体验有了许多改进。 可以使用 MSTest v1、MSTest v2、NUnit 或 XUnit 测试框架进行测试。
 
 - 测试资源管理器测试发现速度很快。
-- 使用分层排序组织测试资源管理器中的测试。
-- [Live Unit Testing](../test/live-unit-testing.md) 持续运行受代码更改影响的测试并更新内联编辑器图标以显示测试的状态。 包含或排除实时测试集中的特定测试或测试项目。
 
-![Visual Studio 中的文本资源管理器的层次结构视图](../ide/media/VSGuide_Testing.png)
+- 使用分层排序组织测试资源管理器中的测试。
+
+   ![Visual Studio 中的文本资源管理器的层次结构视图](../ide/media/VSGuide_Testing.png)
+
+- [Live Unit Testing](../test/live-unit-testing.md) 持续运行受代码更改影响的测试并更新内联编辑器图标以显示测试的状态。 包含或排除实时测试集中的特定测试或测试项目。 （仅限 Visual Studio Enterprise Edition。）
 
 ## <a name="debugging"></a>调试
 
@@ -178,7 +180,7 @@ Visual Studio 的一些调试功能包括：
 - 运行到点击位置，可以通过该功能将鼠标悬停在一行代码旁，点击出现的绿色“运行”图标，则程序会运行到该行停止。
 - 异常帮助程序，该功能将最重要的信息置于对话框顶层，例如，哪些变量在 `NullReferenceException` 中是 `null`。
 - [后退式调试](../debugger/view-historical-application-state.md)，可通过该功能返回到上一个断点或步骤，并查看当时应用程序的状态。
-- 快照调试[](/azure/application-insights/app-insights-snapshot-debugger)，可通过该功能在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
+- [快照调试](/azure/application-insights/app-insights-snapshot-debugger)，可通过该功能在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
 
 ::: moniker-end
 
@@ -211,5 +213,5 @@ Visual Studio 的一些调试功能包括：
 | 启用完整解决方案分析 | 请在错误列表中查看解决方案中的所有错误 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用完整解决方案分析” |
 | 启用导航到反编译源 | 对外部源的类型/成员启用“转到定义”并使用 ILSpy 反编译程序显示方法体 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源” |
 | 完成/建议模式 | 更改 IntelliSense 中的完成行为。 有 IntelliJ 背景的开发人员往往会使用此处的非默认设置。 | “菜单” > “编辑” > “IntelliSense” > “切换完成模式” |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 显示编辑器中的代码引用信息和更改历史记录 | “工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens” |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 显示编辑器中的代码引用信息和更改历史记录。 （源代码管理 CodeLens 指示器在 Visual Studio Community Edition 中不可用。） | “工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens” |
 | [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助清除常见样本代码 | 键入代码片段名称，然后按两次 Tab。 |

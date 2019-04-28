@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840398"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>步骤 2：创建首个 ASP.NET Core Web 应用
 
 通过此视频教程和分步说明创建首个 ASP.NET Core Web 应用。
 
-_观看此视频，按照说明创建首个 ASP.NET Core 应用。_
+观看此视频，按照说明创建首个 ASP.NET Core 应用。
 
 > [!VIDEO https://www.youtube.com/embed/-79RkpyFB6E]
 
@@ -122,4 +122,4 @@ public void OnGet()
 
 ## <a name="see-also"></a>请参阅
 
-- [教程：使用 ASP.NET Core 创建 Razor 页面 Web 应用](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [教程：使用 ASP.NET Core 创建 Razor Pages Web 应用](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

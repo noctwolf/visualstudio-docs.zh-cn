@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983007"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安装 Visual Studio 2019 for Mac
 
@@ -24,7 +24,7 @@ ms.locfileid: "58857315"
 
 要为 iOS 或 macOS 构建 Xamarin 应用，还需要：
 
-- Xcode 11.0 或更高版本。 通常建议使用稳定的最新版本。
+- Xcode 10.0 或更高版本。 通常建议使用稳定的最新版本。
 - 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
 
 ## <a name="installation-instructions"></a>安装说明
@@ -32,20 +32,20 @@ ms.locfileid: "58857315"
 1. 从 [Visual Studio for Mac 下载页面](https://aka.ms/vsmac)下载安装程序。
 2. 下载完成后，单击 VisualStudioforMacInstaller.dmg 以装载安装程序，然后双击箭头徽标运行它：
 
-    [![C单击大箭头开始安装](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![单击大箭头开始安装](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. 可能会收到有关从 Internet 下载应用程序的警告。 单击“打开”。
 4. 安装程序检查系统时，请耐心等待：
 
-    [![T安装程序会检查系统中是否有已安装的组件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![安装程序会检查系统中是否有已安装的组件](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. 将出现一条警告，要求确认隐私和许可条款。 请点击链接仔细阅读，如果同意，则按“继续”：
 
-    [![F请点击隐私和条款的链接，如果同意，请继续](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![请点击隐私和条款的链接，如果同意，请继续](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
 6. 此时显示可用的工作负载列表。 选择你要使用的工作负载：
 
-    [![C选择要安装的可选工作负载功能](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![选择要安装的可选工作负载功能](media/install-selection-sml.png)](media/install-selection.png#lightbox)
 
 7. 完成选择后，按下“安装”按钮。
 8. 安装程序将在下载并安装 Visual Studio for Mac 和所选工作负载时显示进度。 系统可能会提示输入密码以授予安装所需的权限。

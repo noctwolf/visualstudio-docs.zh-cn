@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823404"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在负载测试分析器的详细信息视图中分析负载测试虚拟用户活动
 
@@ -45,11 +45,11 @@ ms.locfileid: "55936949"
 
  筛选结果面板显示在虚拟用户活动图中。 筛选结果面板可以按以下方式进行筛选：
 
--   “仅显示含日志的结果”仅显示具有关联测试日志的测试结果。
+- “仅显示含日志的结果”仅显示具有关联测试日志的测试结果。
 
--   “显示成功结果”显示成功的结果。
+- “显示成功结果”显示成功的结果。
 
--   “显示包含错误的结果”显示包含可以帮助调试的错误的结果。
+- “显示包含错误的结果”显示包含可以帮助调试的错误的结果。
 
 ## <a name="tasks"></a>任务
 

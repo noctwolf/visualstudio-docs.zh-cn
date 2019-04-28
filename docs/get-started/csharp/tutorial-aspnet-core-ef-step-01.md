@@ -18,11 +18,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838922"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>教程：使用实体框架和 Visual Studio 2019 创建首个 ASP.NET Core 应用
 
@@ -38,7 +38,7 @@ ms.locfileid: "59018111"
 
 了解如何使用此视频教程和分步说明安装 Visual Studio 2019。 如果已安装 Visual Studio，请跳到[步骤 2：创建首个 ASP.NET Core Web 应用](tutorial-aspnet-core-ef-step-02.md)。
 
-_观看本视频，跟随视频安装 Visual Studio 并创建你的首个 ASP.NET Core 应用。_
+观看本视频，按照说明安装 Visual Studio 并创建首个 ASP.NET Core 应用。
 
 > [!VIDEO https://www.youtube.com/embed/Fz_HAqQGLtY]
 

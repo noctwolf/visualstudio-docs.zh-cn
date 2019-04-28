@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0726ddf0bb0798a5f989e902662ee5b4e26c6801
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819558"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发通用 Windows 平台 (UWP) 的应用
 
@@ -38,11 +38,25 @@ ms.locfileid: "58152585"
 
 下面是所需软件的列表：
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 只在 Windows 10 上支持 UWP 开发。 有关详细信息，请参阅 Visual Studio [平台目标](/visualstudio/productinfo/vs2017-compatibility-vs)和[系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)。 你还需要通用 Windows 平台开发工作负荷（可选）。
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)。 你还需要通用 Windows 平台开发工作负荷（可选）。
 
      ![UWP 工作负荷](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2019 只在 Windows 10 上支持 UWP 开发。 有关详细信息，请参阅 Visual Studio [平台目标](/visualstudio/releases/2019/compatibility/)和[系统要求](/visualstudio/releases/2019/system-requirements/)。
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 你还需要通用 Windows 平台开发工作负荷（可选）。
+
+     ![UWP 工作负荷](media/uwp_workload.png)
+
+::: moniker-end
 
 安装此软件后，需要启用 Windows 10 设备以进行开发。 请参阅[启用设备进行开发](/windows/uwp/get-started/enable-your-device-for-development)。 不再需要每个 Windows 10 设备的开发者许可证。
 

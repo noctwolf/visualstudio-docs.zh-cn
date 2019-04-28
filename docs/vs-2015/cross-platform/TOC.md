@@ -19,7 +19,7 @@
 ### [更改日志](change-log-visual-studio-tools-for-unity.md)
 ### [适用于 Unity 应用的应用程序生命周期管理 (ALM)](application-lifecycle-management-alm-with-unity-apps.md)
 ## [用于跨平台移动开发的 Visual C++](visual-cpp-for-cross-platform-mobile-development.md)
-### [安装适用于跨平台移动开发的 Visual C++](install-visual-cpp-for-cross-platform-mobile-development.md)
+### [Install Visual C++ for Cross-Platform Mobile Development](install-visual-cpp-for-cross-platform-mobile-development.md)
 #### [安装并配置使用 iOS 进行构建的工具](install-and-configure-tools-to-build-using-ios.md)
 ### [创建 Android 本机活动应用](create-an-android-native-activity-app.md)
 ### [在 Android 和 iOS 上生成 OpenGL ES 应用程序](build-an-opengl-es-application-on-android-and-ios.md)
