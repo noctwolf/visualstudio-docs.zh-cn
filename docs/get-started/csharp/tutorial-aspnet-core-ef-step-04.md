@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553846"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>步骤 4：从 ASP.NET Core 应用中公开 Web API
 
 请按照下列步骤将 Web API 添加到现有的 ASP.NET Core 应用。
 
-_观看此视频，按照说明将 Web API 支持添加到你的首个 ASP.NET Core 应用。_
+观看此视频，按照说明向你的首个 ASP.NET Core 应用添加 Web API 支持。
 
 > [!VIDEO https://www.youtube.com/embed/o_fYPOsAXts]
 

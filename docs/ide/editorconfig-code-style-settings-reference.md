@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557211"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 编码约定设置
 
@@ -62,7 +62,7 @@ ms.locfileid: "59232796"
 严重性 | 效果
 :------- | ------
 `none` | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。 “快速操作和重构”菜单中永远不会出现严重性为 `none` 的规则。 大多数情况下，此情况被视为“禁用”或“忽略”。
-`silent` （在 Visual Studio 2017 版本 15.8 中也是 `refactoring`） | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。 严重性为 `silent` 的规则参与清理，并在“快速操作和重构”菜单中显示。
+`silent`（在 Visual Studio 2017 版本 15.8 中也是 `refactoring`） | 如违反此规则，不会向用户显示任何内容。 但代码生成功能会以此样式生成代码。 严重性为 `silent` 的规则参与清理，并在“快速操作和重构”菜单中显示。
 `suggestion` | 如违反此样式规则，会将其作为建议向用户显示。 建议显示为前两个字符下的三个灰点。
 `warning` | 如违反此样式规则，显示编译器警告。
 `error` | 如违反此样式规则，显示编译器错误。
@@ -70,7 +70,7 @@ ms.locfileid: "59232796"
 以下列表显示允许的语言代码样式规则：
 
 - .NET 代码样式设置
-    - [“This.” 和“Me.” 限定符](#this_and_me)
+    - [“This.”和“Me.”限定符](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -329,13 +329,14 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-此规则不接受“true”或“false”值；此规则接受下表中的值：
+此规则接受下表中的一个值：
 
 | 值 | 说明 |
 | ----- |:----------- |
 | always | 优先指定可访问性修饰符 |
-| for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 这与往常相同，并且已添加以用于未来验证（如果 C# 添加默认接口方法）。 |
+| for\_non\_interface_members | 优先声明可访问性修饰符，公共接口成员除外。 （这与往常相同，并且已添加以用于未来验证（如果 C# 添加默认接口方法）。） |
 | never | 不优先指定可访问性修饰符 |
+| omit_if_default | 优先指定可访问性修饰符（除非它们是默认修饰符） |
 
 代码示例：
 
@@ -637,7 +638,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**dotnet\_style\_prefer\_inferred\_tuple_names**
+dotnet\_style\_prefer\_inferred\_tuple_names
 
 - 此规则设置为 true 时，首选推断元组元素名称。
 - 此规则设置为 false 时，首选显式元组元素名称。
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -1465,7 +1464,7 @@ using System.Threading.Tasks;
 dotnet_sort_system_directives_first = true
 ```
 
-**dotnet\_separate\_import\_directive\_groups**
+dotnet\_separate\_import\_directive\_groups
 
 - 当此规则设置为 true 时，请在 using 指令组之间放置一个空行。
 - 当此规则设置为 false 时，请勿在 using 指令组之间放置空行。

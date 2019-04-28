@@ -32,7 +32,7 @@
 #### [代码覆盖率疑难解答](troubleshooting-code-coverage.md)
 ### [使用模拟器分离 Sharepoint 2010 单元测试](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 ## [使用 UI 自动化来测试代码](use-ui-automation-to-test-your-code.md)
-### [演练：创建、编辑和维护编码的 UI 测试](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+### [演练：创建、编辑和维护已编码 UI 测试](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 ### [通过编码的 UI 测试进行 Windows UWP 和 8.1 应用商店应用测试](test-windows-store-8-1-apps-with-coded-ui-tests.md)
 ### [通过编码的 UI 测试进行 Windows UWP 和 8.1 电话应用测试](test-windows-phone-8-1-apps-with-coded-ui-tests.md)
 ### [为 Windows 应用商店控件设置唯一的自动化属性以进行测试](set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

@@ -2,7 +2,7 @@
 title: Visual Studio 管理员指南
 titleSuffix: ''
 description: 详细了解如何在企业环境中部署 Visual Studio。
-ms.date: 03/30/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951342"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -99,3 +99,4 @@ Value = (DWORD)
 * [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
 * [控制 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)

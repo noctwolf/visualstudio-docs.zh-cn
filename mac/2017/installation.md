@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998059"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安装 Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 for Mac [现已推出](installation.md?view=vsmac-2019)。
+> Visual Studio 2019 for Mac [现已推出](installation.md?view=vsmac-2019)。 对于较旧版本的 Visual Studio for Mac，请参阅 Visual Studio [下载页](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>从 Visual Studio 2019 for Mac 降级？
+
+为获得最佳体验，降级之前，应确保[卸载](uninstall.md) Visual Studio 2019 for Mac。 如果遇到导致下载的问题，请务必通过[报告问题](report-a-problem.md)让我们知道。
+ 
 ## <a name="requirements"></a>要求
 
 下载 Visual Studio for Mac 后，要开始开发本机跨平台应用，还需先安装并设置一些其他内容。
@@ -31,7 +35,7 @@ ms.locfileid: "58856672"
 
 ## <a name="install"></a>安装
 
-1. 从 [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/) 下载 Visual Studio for Mac
+1. 从 [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) 下载 Visual Studio for Mac
 
 2. 下载安装包后，单击“VisualStudioForMacInstaller.dmg”文件装载安装程序，然后通过双击徽标运行它，如下图所示：
 

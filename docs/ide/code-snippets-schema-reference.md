@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974977"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -175,7 +175,7 @@ $selected$ is a great color. I love $selected$.
 
 |子元素|说明|
 |-------------------|-----------------|
-|[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet-element)|可选元素。 所有代码段数据的父元素。 `CodeSnippets` 元素中可能有零个或零个以上的 `CodeSnippet` 元素。|
+|[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet-element)|可选元素。 所有代码段数据的父元素。 `CodeSnippet` 元素中可能有零个或零个以上的 `CodeSnippets` 元素。|
 
 ## <a name="declarations-element"></a>Declarations 元素
 
@@ -190,8 +190,8 @@ $selected$ is a great color. I love $selected$.
 
 |子元素|说明|
 |-------------------|-----------------|
-|[Literal 元素](../ide/code-snippets-schema-reference.md#literal-element)|可选元素。 定义你可以编辑的代码段的文本。 `Declarations` 元素中可能有零个或零个以上的 `Literal` 元素。|
-|[Object 元素](../ide/code-snippets-schema-reference.md#object-element)|可选元素。 定义你可以编辑的代码段的对象。 `Declarations` 元素中可能有零个或零个以上的 `Object` 元素。|
+|[Literal 元素](../ide/code-snippets-schema-reference.md#literal-element)|可选元素。 定义你可以编辑的代码段的文本。 `Literal` 元素中可能有零个或零个以上的 `Declarations` 元素。|
+|[Object 元素](../ide/code-snippets-schema-reference.md#object-element)|可选元素。 定义你可以编辑的代码段的对象。 `Object` 元素中可能有零个或零个以上的 `Declarations` 元素。|
 
 |父元素|说明|
 | - |-----------------|
@@ -320,9 +320,6 @@ $selected$ is a great color. I love $selected$.
 
 指定 IntelliSense 代码段使用的导入的命名空间。
 
-> [!NOTE]
-> 只有 Visual Basic 项目支持 `Import` 元素。
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ $selected$ is a great color. I love $selected$.
 ## <a name="imports-element"></a>Imports 元素
 
 对单个 `Import` 元素进行分组。
-
-> [!NOTE]
-> 只有 Visual Basic 项目支持 `Imports` 元素。
 
 ```xml
 <Imports>
@@ -387,7 +381,7 @@ $selected$ is a great color. I love $selected$.
 
 |子元素|说明|
 |-------------------|-----------------|
-|[Keyword 元素](../ide/code-snippets-schema-reference.md#keyword-element)|可选元素。 包含代码段的各个关键字。 `Keywords` 元素中可能有零个或零个以上的 `Keyword` 元素。|
+|[Keyword 元素](../ide/code-snippets-schema-reference.md#keyword-element)|可选元素。 包含代码段的各个关键字。 `Keyword` 元素中可能有零个或零个以上的 `Keywords` 元素。|
 
 |父元素|说明|
 | - |-----------------|
@@ -425,10 +419,7 @@ $selected$ is a great color. I love $selected$.
 
 ## <a name="namespace-element"></a>Namespace 元素
 
-指定使代码段能够正常编译和运行而必须导入的命名空间。 如果尚不存在命名空间，系统会将 `Namespace` 元素中指定的命名空间自动添加到代码起始位置处的 `Imports` 语句中。
-
-> [!NOTE]
-> 只有 Visual Basic 项目支持 `Namespace` 元素。
+指定使代码段能够正常编译和运行而必须导入的命名空间。 如果尚不存在命名空间，系统会将 `Namespace` 元素中指定的命名空间自动添加到代码起始位置处的 `using` 指令或 `Imports` 语句中。
 
 ```xml
 <Namespace>
@@ -504,7 +495,7 @@ $selected$ is a great color. I love $selected$.
 
 |子元素|说明|
 |-------------------|-----------------|
-|[Reference 元素](../ide/code-snippets-schema-reference.md#reference-element)|可选元素。 包含有关代码段的程序集引用的信息。 `References` 元素中可能有零个或零个以上的 `Reference` 元素。|
+|[Reference 元素](../ide/code-snippets-schema-reference.md#reference-element)|可选元素。 包含有关代码段的程序集引用的信息。 `Reference` 元素中可能有零个或零个以上的 `References` 元素。|
 
 |父元素|说明|
 | - |-----------------|
@@ -569,11 +560,11 @@ $selected$ is a great color. I love $selected$.
 
 此文本值必须为以下值之一：
 
--   `SurroundsWith`：允许将代码段放置在一段选定的代码周围。
+- `SurroundsWith`：允许将代码段放置在一段选定的代码周围。
 
--   `Expansion`：允许将代码段插入到光标处。
+- `Expansion`：允许将代码段插入到光标处。
 
--   `Refactoring`：指定在 C# 重构过程中使用代码片段。 不能在自定义代码段中使用 `Refactoring`。
+- `Refactoring`：指定在 C# 重构过程中使用代码片段。 不能在自定义代码段中使用 `Refactoring`。
 
 ## <a name="snippettypes-element"></a>SnippetTypes 元素
 
@@ -588,7 +579,7 @@ $selected$ is a great color. I love $selected$.
 
 |子元素|说明|
 |-------------------|-----------------|
-|[SnippetType 元素](../ide/code-snippets-schema-reference.md#snippettype-element)|可选元素。 指定 Visual Studio 如何将代码段插入到代码中。 `SnippetTypes` 元素中可能有零个或零个以上的 `SnippetType` 元素。|
+|[SnippetType 元素](../ide/code-snippets-schema-reference.md#snippettype-element)|可选元素。 指定 Visual Studio 如何将代码段插入到代码中。 `SnippetType` 元素中可能有零个或零个以上的 `SnippetTypes` 元素。|
 
 |父元素|说明|
 | - |-----------------|

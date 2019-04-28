@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974175"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
 
@@ -33,13 +33,17 @@ ms.locfileid: "58856283"
 要直接控制 Visual Studio 查找更新的位置，可对其查找的位置进行修改。 还可对控制用户更新到的版本。 为此，请执行以下步骤：
 
 1. 创建脱机布局：
+
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. 将脱机布局复制到托管文件共享上：
+
    ```cmd
    xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. 修改布局中的 response.json 文件，将 `channelUri` 值更改为指向管理员控制的 channelManifest.json 的副本。
 
    请务必在此值中转义反斜杠，如下例所示：
@@ -49,6 +53,7 @@ ms.locfileid: "58856283"
    ```
 
    现在，最终用户可以从此共享运行安装程序来安装 Visual Studio。
+
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
@@ -56,13 +61,17 @@ ms.locfileid: "58856283"
 如果确定用户应更新到更高版本的 Visual Studio，企业管理员可以[更新布局位置](update-a-network-installation-of-visual-studio.md)，以纳入更新后的文件，如下所示。
 
 1. 使用类似于以下的命令：
+
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. 确保在更新后的布局中 response.json 文件仍包含自定义设置，特别是 channelUri 修改，如下所示：
+
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
+
    通过此布局安装的现有 Visual Studio 将在 `\\server\share\VS\ChannelManifest.json` 中查找更新。 如果此 channelManifest.json 比用户已安装的版本更高，Visual Studio 会通知用户有更新可供安装。
 
    安装 Visual Studio 的新用户将直接通过此布局自动安装更新后的 Visual Studio 版本。
@@ -94,6 +103,7 @@ ms.locfileid: "58856283"
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -119,3 +129,4 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用于管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)

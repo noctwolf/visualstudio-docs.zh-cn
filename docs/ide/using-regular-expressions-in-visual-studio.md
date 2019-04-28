@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821073"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -61,12 +61,12 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |与字边界匹配|\b（在字符类外部，`\b` 指定字边界，而在字符类内部，`\b` 指定退格符。）|`\bin` 匹配“inside”中的“in”，不匹配“pinto”。|
 |与换行符（即新行后跟回车）相匹配。|\r?\n|仅当“End”是一行的最后一个字符串，且“Begin”是下一行的第一个字符串时，`End\r?\nBegin` 才匹配“End”和“Begin”。|
 |匹配任意字母数字字符|\w|`a\wd` 匹配“add”和“a1d”，不匹配“a d”。|
-|匹配任意空格字符。|(?([^\r\n])\s)|`Public\sInterface` 匹配词组“Public Interface”。|
+|匹配任意空格字符。|\s|`Public\sInterface` 匹配词组“Public Interface”。|
 |匹配任意数字字符|\d|`\d` 匹配“3456”中的“3”，“23”中的“2”和“1”中的“1”。|
 |匹配 Unicode 字符|\uXXXX，其中 XXXX 指定 Unicode 字符值。|`\u0065` 匹配字符“e”。|
 |匹配标识符|\b[\_\w-[0-9]][\_\w]*\b|匹配“type1”，但不匹配“&type1”或“#define”。|
 |与引号中的字符串匹配|((\\".+?\\")&#124;('.+?'))|匹配单引号或双引号内的任意字符串。|
-|匹配十六进制数|\b0[xX]([0-9a-fA-F]\)\b|匹配“0xc67f”但不匹配“0xc67fc67f”。|
+|匹配十六进制数|\b0[xX]([0-9a-fA-F]+\)\b|匹配“0xc67f”但不匹配“0xc67g”。|
 |匹配整数和小数|\b[0-9]*\\.\*[0-9]+\b|匹配“1.333”。|
 
 > [!TIP]

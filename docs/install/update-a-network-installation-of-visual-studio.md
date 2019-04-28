@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971363"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -105,7 +105,6 @@ ms.locfileid: "58790402"
 
 ::: moniker-end
 
-
 > [!NOTE]
 > 使用 [vswhere.exe 命令](tools-for-managing-visual-studio-instances.md)可标识客户端计算机上 Visual Studio 现有实例的安装路径。
 >
@@ -175,3 +174,4 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
 * [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
+* [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)

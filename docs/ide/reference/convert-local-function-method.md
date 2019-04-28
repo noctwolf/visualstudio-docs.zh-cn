@@ -10,39 +10,39 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968263"
 ---
-# <a name="convert-local-function-to-method"></a>将本地函数转换为方法
+# <a name="convert-a-local-function-to-a-method"></a>将本地函数转换为方法
 
 此重构适用于：
 
 - C#
 - Visual Basic
 
-**功能：** 将本地函数转换为方法
+**功能：** 将本地函数转换为方法。
 
-**使用时机：** 你希望将一个本地函数在当前本地上下文之外定义。
+**使用时机：** 需要在当前本地上下文之外定义一个本地函数。
 
-操作原因：你可能需要将本地函数转换为方法，以便可以在本地上下文之外调用它。 本地函数变得太长时，可能需要将其转换为方法。 在单独的方法中定义它，使代码更容易读取。
+操作原因：需要将本地函数转换为方法，以便可以在本地上下文之外调用它。 本地函数变得太长时，可能需要将其转换为方法。 在单独的方法中定义函数时，代码更易于阅读。
 
 ## <a name="convert-local-function-to-method-refactoring"></a>将本地函数转换为方法重构
 
-1. 请将光标置于本地函数。
+1. 将光标置于本地函数中。
 
-    ![将本地函数转换为方法](media/convert-local-function-to-method.png)
+    ![将本地函数转换为方法代码示例](media/convert-local-function-to-method.png)
 
 2. 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
 
-    ![将本地函数转换为方法代码修补程序](media/convert-local-function-to-method-codefix.png)
+    ![将本地函数转换为方法代码修补程序示例](media/convert-local-function-to-method-codefix.png)
 
 2. 按 Enter 接受重构。
 
-    ![将本地函数转换为方法结果](media/convert-local-function-to-method-result.png)
+    ![将本地函数转换为方法结果示例](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>请参阅
 

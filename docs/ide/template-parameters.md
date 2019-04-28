@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950349"
 ---
 # <a name="template-parameters"></a>模板参数
 
@@ -52,13 +52,13 @@ ms.locfileid: "58355667"
 |clrversion|公共语言运行时 (CLR) 的当前版本。|
 |ext_*|将 `ext_` 前缀添加到任何参数，以引用父模板的变量。 例如 `ext_safeprojectname`。|
 |guid[1-10]|一个用于替换项目文件中的项目 GUID 的 GUID。 可指定最多 10 个唯一的 GUID（例如，`guid1`）。|
-|itemname|“添加新项”对话框中由用户提供的名称。|
+|itemname|在其中使用参数的文件的名称。|
 |machinename|当前的计算机名称（例如，Computer01）。|
 |projectname|创建项目时由用户提供的名称。|
 |registeredorganization|来自 HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization 的注册表项值。|
 |rootnamespace|当前项目的根命名空间。 此参数仅适用于项模板。|
-|safeitemname|用户在“添加新项”对话框中提供的名称，名称中移除了所有的不安全字符和空格。|
-|safeprojectname|用户在创建项目时提供的名称，但名称中移除了所有的不安全字符和空格。|
+|safeitemname|与 `itemname` 相同，但删除了所有不安全字符和空格。|
+|safeprojectname|用户在创建项目时提供的名称，但名称中删除了所有不安全字符和空格。|
 |时间|以 DD/MM/YYYY 00:00:00 格式表示的当前时间。|
 |SpecificSolutionName|解决方案的名称。 在选中“创建解决方案目录”时，`SpecificSolutionName` 具有解决方案名称。 在未选中“创建解决方案目录”时，`SpecificSolutionName` 为空。|
 |userdomain|当前的用户域。|

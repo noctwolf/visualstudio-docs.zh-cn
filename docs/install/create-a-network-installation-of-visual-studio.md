@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974090"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>创建 Visual Studio 的网络安装
 
@@ -111,10 +111,10 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 
 可使用多个选项自定义网络布局。 可以创建仅包含一组特定[语言区域设置](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)、[工作负载、组件及其推荐或可选依赖项](workload-and-component-ids.md)的部分布局。 如果确定只会将部分工作负载部署到客户端工作站，部分布局就非常有用。 用于自定义布局的常见命令行参数包括：
 
-* `--add` 用于指定[工作负载或组件 ID](workload-and-component-ids.md)。 <br>如果使用 `--add`，只会下载使用 `--add` 指定的工作负载和组件。  如果不使用 `--add`，将下载所有工作负载和组件。
-* `--includeRecommended` 用于添加针对指定工作负载 ID 的所有推荐组件
-* `--includeOptional` 用于添加针对指定工作负载 ID 的所有推荐和可选组件。
-* `--lang` 用于指定[语言区域设置](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)。
+* `--add`：用于指定[工作负载或组件 ID](workload-and-component-ids.md)。 <br>如果使用 `--add`，只会下载使用 `--add` 指定的工作负载和组件。  如果不使用 `--add`，将下载所有工作负载和组件。
+* `--includeRecommended`：用于添加针对指定工作负载 ID 的所有推荐组件
+* `--includeOptional`：用于添加针对指定工作负载 ID 的所有推荐和可选组件。
+* `--lang`：用于指定[语言区域设置](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)。
 
 下面的几个示例展示了如何创建自定义部分布局。
 
@@ -153,6 +153,7 @@ xcopy /e c:\vsoffline \\server\products\VS2019
     ```cmd
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>15.3 版中的新增功能
@@ -194,11 +195,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 管理员可以通过安装脚本将 Visual Studio 部署到客户端工作站上。 拥有管理员权限的用户也可以直接从共享运行安装程序，从而在自己的计算机上安装 Visual Studio。
 
 * 用户可通过运行以下命令进行安装： <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * 管理员可以通过运行以下命令在无人参与模式下进行安装：
+
     ```cmd
     \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
@@ -270,6 +273,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 * [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
 * [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
+* [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

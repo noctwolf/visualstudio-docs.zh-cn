@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972569"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制
 
@@ -58,7 +58,7 @@ Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一�
 
 1. 启动 macOS 终端应用程序。
 1. 使用终端和 [Homebrew 主页](https://brew.sh/)上的说明安装 Homebrew。
-1. 安装 Homebrew 后，从终端运行以下命令： `brew install tee-clc`
+1. 安装 Homebrew 后，从终端运行以下命令：`brew install tee-clc`
 
 若要手动设置 TEE-CLC：
 

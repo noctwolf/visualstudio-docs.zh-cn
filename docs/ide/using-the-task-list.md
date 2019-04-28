@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821556"
 ---
 # <a name="use-the-task-list"></a>使用任务列表
 
@@ -34,7 +34,7 @@ ms.locfileid: "55954694"
 
 若要打开“任务列表”，请选择“视图” > “任务列表”，或从键盘按 Ctrl+\\、T。
 
-![任务列表窗口](../ide/media/vs2015_task_list.png)
+![“任务列表”窗口](../ide/media/vs2015_task_list.png)
 
 要更改列表的排序顺序，请选择任意列的标头。 若要进一步优化搜索结果，请按住 Shift 键单击另一个列标头。 另一种方法是，在快捷菜单上选择“排序方式”，然后选择一个标头。 若要进一步优化搜索结果，请按住 Shift 并选择另一个标头。
 
@@ -83,6 +83,9 @@ Visual Studio 2015 中已删除用户任务功能。 若打开的解决方案具
 4. 在 **“优先级别”** 下拉列表中，为新令牌选择默认优先级别。
 
 5. 选择“添加”。
+
+> [!TIP]
+> 输入名称后将启用“添加”按钮。 必须先输入名称，然后再单击“添加”。
 
 ### <a name="c-todo-comments"></a>C++ TODO 注释
 

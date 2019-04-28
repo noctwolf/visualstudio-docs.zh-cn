@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897780"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本 Phong 着色器
 
@@ -27,7 +27,7 @@ ms.locfileid: "55926133"
 
 开始前，请确保显示“属性”窗口和“工具箱”。
 
-1. 按[如何：创建基本 Lambert 着色器](../designers/how-to-create-a-basic-lambert-shader.md)。
+1. 按照以下方法创建 Lambert 着色器：[如何：创建基本 Lambert 着色器](../designers/how-to-create-a-basic-lambert-shader.md)。
 
 2. 从“最终颜色”节点断开“朗伯”节点。 选择“朗伯”节点的“RGB”终端，然后选择“断开链接”。 这为在下一步中添加的节点腾出空间。
 
