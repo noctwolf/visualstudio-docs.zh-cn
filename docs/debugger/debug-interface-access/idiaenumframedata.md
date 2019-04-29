@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833614"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 枚举数据源中包含的各种框架的数据元素。
@@ -31,7 +31,7 @@ IDiaEnumFrameData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaEnumFrameData`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|检索`IEnumVARIANT Interface`此枚举器的版本。|
 |[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|检索帧数据元素数。|
@@ -101,7 +101,7 @@ void ShowFrameData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-**标头：** Dia2.h
+**标头：** dia2.h
 
 **库：** diaguids.lib
 

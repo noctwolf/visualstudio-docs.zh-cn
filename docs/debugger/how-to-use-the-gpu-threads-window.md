@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846840"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>如何：使用 GPU 线程窗口 (C++)
 在“GPU 线程”窗口中，可以检查和使用在要调试的应用程序中的 GPU 上运行的线程。 有关在 GPU 运行的应用程序的详细信息，请参阅[ C++ AMP 概述](/cpp/parallel/amp/cpp-amp-overview)。
@@ -105,4 +105,4 @@ ms.locfileid: "60071351"
 ## <a name="see-also"></a>请参阅
 - [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：使用“并行监视”窗口](../debugger/how-to-use-the-parallel-watch-window.md)
-- [演练：调试C++AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [演练：调试 C++ AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
