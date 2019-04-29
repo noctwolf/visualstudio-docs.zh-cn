@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967541"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>区别沙盒解决方案与场解决方案
   编译 SharePoint 解决方案时，它将部署到 SharePoint 服务器，并附加调试器来调试它。 用于调试解决方案的过程取决于沙盒解决方案属性的设置： 沙盒解决方案或场解决方案。

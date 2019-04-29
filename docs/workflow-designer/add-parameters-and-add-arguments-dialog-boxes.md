@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993366"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>“添加参数”对话框
 
@@ -32,6 +32,6 @@ ms.locfileid: "55953667"
 |||
 |-|-|
 |**名称**|参数的名称。|
-|**方向**|指定该自变量是否表示数据流入委托、流出委托还是流入和流出委托。|
+|**方向**|指定该参数是否表示数据流入委托、流出委托还是流入和流出委托。|
 |**Type**|新自变量的类型名称。|
 |**值**|要用于委托自变量的此实例的值。|

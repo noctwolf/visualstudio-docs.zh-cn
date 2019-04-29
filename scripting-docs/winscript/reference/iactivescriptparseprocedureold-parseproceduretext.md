@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8e521bbdcd8d7397c1c2dfb377fd9b41811499f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993210"
 ---
 # <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
 分析给定的代码过程并将匿名过程添加到命名空间。  
@@ -68,7 +68,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  [in]与该过程关联的标志。 可以是这些值的组合。  
   
-|返回的常量|值|含义|  
+|返回的常量|“值”|含义|  
 |--------------|-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|0x00000020|指示中的代码`pstrCode`一个表达式，表示该过程的返回值。|  
 |SCRIPTPROC_IMPLICIT_THIS|0x00000100|指示`this`指针包括在该过程的范围。|  

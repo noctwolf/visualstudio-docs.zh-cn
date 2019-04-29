@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949509"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>如何：在工作流设计器中定义和使用活动委托
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415806"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>使用工作流中的自定义活动
 
-1.  生成项目，通过按**Ctrl**+**Shift**+**B**。
+1. 生成项目，通过按**Ctrl**+**Shift**+**B**。
 
-2.  在中**解决方案资源管理器**，打开**Workflow1.xaml**在设计器中。
+2. 在中**解决方案资源管理器**，打开**Workflow1.xaml**在设计器中。
 
-3.  拖动**myforeach**活动从工具箱拖到设计器图面。 此活动是在与项目同名的工具箱的部分。
+3. 拖动**myforeach**活动从工具箱拖到设计器图面。 此活动是在与项目同名的工具箱的部分。
 
-4.  设置**项**的属性**myforeach**活动**new Object [] {1，"abc"}**。
+4. 设置**项**的属性**myforeach**活动**new Object [] {1，"abc"}**。
 
-5.  拖动<xref:System.Activities.Statements.WriteLine>活动从**基元**部分中的工具箱拖到**Delegate: Body**一部分**myforeach**活动。
+5. 拖动<xref:System.Activities.Statements.WriteLine>活动从**基元**部分中的工具箱拖到**Delegate: Body**一部分**myforeach**活动。
 
-6.  设置**文本**的属性<xref:System.Activities.Statements.WriteLine>活动**argument.tostring （)**。
+6. 设置**文本**的属性<xref:System.Activities.Statements.WriteLine>活动**argument.tostring （)**。
 
 当执行工作流时，控制台将显示以下输出：
 

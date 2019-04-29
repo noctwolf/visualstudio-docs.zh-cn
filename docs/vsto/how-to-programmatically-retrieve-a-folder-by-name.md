@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955724"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>如何：以编程方式按名称检索文件夹
   此示例获取命名的自定义文件夹的引用，然后显示文件夹的内容。

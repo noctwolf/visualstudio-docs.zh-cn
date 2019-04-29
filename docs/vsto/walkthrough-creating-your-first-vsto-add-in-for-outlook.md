@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aceab3fba1020c08382c31a2de32368e8ba12a05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981318"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>演练：在第一个 VSTO 外接程序为 Outlook 创建
   本演练显示如何为 Microsoft Office Outlook 创建 VSTO 外接程序。 在此类解决方案中创建的功能可用于应用程序本身，而与所打开的 Outlook 项无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。

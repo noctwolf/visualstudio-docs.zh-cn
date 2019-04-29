@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5aba4c6446b2dbcfcb31c423a28eedd552799b4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967665"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以编程方式向文档中的文本添加注释
   文档类的注释属性将注释添加到 Microsoft Office Word 文档中的文本范围。

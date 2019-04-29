@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953239"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发）
   **AppAddin**元素的`vstov4`命名空间存储 VSTO 外接程序的特定于自定义的信息。

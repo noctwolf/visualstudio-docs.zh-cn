@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d68c044cdc3d523841cc56814b8ca34bcd8aa037
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944792"
 ---
 # <a name="iprocessdebugmanager-interface"></a>IProcessDebugManager 接口
 进程调试管理器的主接口。 此接口可以在进程中创建、添加或删除虚拟应用程序。 它可以枚举堆栈帧和应用程序线程。  

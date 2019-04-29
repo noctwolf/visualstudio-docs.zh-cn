@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3396aee8c044ee9b84d7d6256c6ad69a99965170
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954879"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
 分析给定的代码 scriptlet，添加声明到命名空间和评估与相应的代码。  
@@ -55,7 +55,7 @@ HRESULT ParseScriptText(
 |`ulStartingLineNumber`|[in]指定分析开始的行的从零开始值。|  
 |`dwFlags`|[in]与 scriptlet 相关联的标志。 可以是这些值的组合：|  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |SCRIPTTEXT_ISEXPRESSION|如果计算表达式和语句之间的差异非常重要，但在脚本语言的语法模糊，此标志指定 scriptlet 会被解释为表达式，而不是语句或语句的列表。 默认情况下，除非可以从 scriptlet 文本的语法确定正确的选择，否则要假定语句。|  
 |SCRIPTTEXT_ISPERSISTENT|指示是否保存脚本引擎应保存在此调用过程中添加的代码 (例如，通过调用`IPersist*::Save`)，或如果脚本引擎通过转换为初始化状态重置。|  

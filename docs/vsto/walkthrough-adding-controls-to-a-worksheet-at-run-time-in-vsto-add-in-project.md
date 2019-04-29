@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 04de1e652aae1de91695029c9af66c4ad331f789
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982107"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练：将控件添加到在运行时在 VSTO 外接程序项目中的工作表
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。

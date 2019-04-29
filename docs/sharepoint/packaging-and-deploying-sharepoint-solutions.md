@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953499"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 若要将你的 SharePoint 项目项组织到功能并创建要部署您的 SharePoint 功能的程序包，可以使用 Visual Studio。

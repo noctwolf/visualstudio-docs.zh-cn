@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970804"
 ---
 # <a name="properties-of-connectors"></a>连接线的属性
 连接符表示生成的设计器中的域关系。
@@ -27,8 +27,8 @@ ms.locfileid: "55909227"
 |-|-|-|
 |颜色|此连接符的颜色。|黑色|
 |短划线样式|此连接器 （纯色、 短划线、 圆点、 DashDot、 DashDotDot 或自定义） 的线条的短划线样式。|单色|
-|源端样式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或无） 此连接符源端样式。|无|
-|目标端样式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或无） 此连接符目标端样式。|无|
+|源端样式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或无） 此连接符源端样式。|None|
+|目标端样式|（HollowArrow、 EmptyArrow、 FilledArrow、 EmptyDiamond、 FilledDiamond，或无） 此连接符目标端样式。|None|
 |文本颜色|使用此连接器与相关联的文本修饰器的颜色。|黑色|
 |Thickness|此连接符线的粗细以英寸为单位测量。|0.03125|
 |访问修饰符|类的访问级别 (`public`或`internal`)。|Public|
@@ -37,7 +37,7 @@ ms.locfileid: "55909227"
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |继承修饰符|说明可从连接器生成的源代码类继承的类型 (`none`，`abstract`或`sealed`)。|无|
 |基本连接符|此连接器的基类。|(无)|
-|name|此连接器的名称。|当前名称|
+|名称|此连接器的名称。|当前名称|
 |命名空间|隶属于此连接器命名空间。|当前命名空间|
 |工具提示类型|如何定义工具提示 （固定的变量，或无）。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，然后在工具提示中定义自定义代码。|\<none>|
 |说明|此连接器与相关联的非正式说明。|\<none>|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fed87ee8106c3e8a09c341b9de4709060627dac1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982566"
 ---
 # <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Outlook 项目中的窗体区域
   如果具有窗体区域的 Outlook VSTO 外接程序项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须对生成的窗体区域代码和在运行时实例化某些窗体区域类的任何代码进行更改。

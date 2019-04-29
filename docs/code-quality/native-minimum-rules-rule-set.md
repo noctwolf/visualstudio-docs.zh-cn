@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820656"
 ---
 # <a name="native-minimum-rules-rule-set"></a>“本机最少量规则”规则集
 Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全漏洞和应用程序崩溃的最关键问题。 应在你为本机项目创建的任何自定义规则集中包含此规则集。

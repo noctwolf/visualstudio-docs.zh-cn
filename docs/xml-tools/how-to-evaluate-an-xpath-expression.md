@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002086"
 ---
 # <a name="evaluate-xpath-expressions"></a>计算 XPath 表达式
 
@@ -28,7 +28,7 @@ ms.locfileid: "57526317"
 > [!NOTE]
 > XSLT 调试是仅在 Visual Studio Enterprise edition 中可用。
 
-## <a name="evaluate-an-xpath-expression"></a>计算 XPath 表达式
+## <a name="evaluate-an-xpath-expression"></a>评估 XPath 表达式
 
 以下过程使用*average.xsl 下面*并*books.xml*文件从[演练：调试 XSLT 样式表](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files)页。
 

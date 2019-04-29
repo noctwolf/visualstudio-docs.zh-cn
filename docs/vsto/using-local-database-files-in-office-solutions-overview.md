@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ea260a6286c8a923d56ab7a5088b55de57004489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982236"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>使用本地数据库文件在 Office 解决方案概述
   可以包括数据库文件，如 SQL Server Express (*.mdf*) 文件或 Microsoft Office Access (*.mdb*) 文件，在 Office 解决方案中的。 这使最终用户能够在其中维护集中式的数据库不是必需的例如在只有一台计算机使用的本地清单解决方案的情况下对本地数据库进行维护。

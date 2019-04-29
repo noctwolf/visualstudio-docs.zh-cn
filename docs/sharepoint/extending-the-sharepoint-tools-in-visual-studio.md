@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d70d9b5bac260dc0731d06ebb11780114f0edf5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967417"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>扩展 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具满足许多应用程序开发方案的要求。 但是，可能会发现它们不提供你或其他开发人员需要的功能的情况。 在这些情况下，您可以扩展 SharePoint 工具以创建所需的功能。

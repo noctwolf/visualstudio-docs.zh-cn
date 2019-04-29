@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f37e2f1d785399283e9da8f4ecb853f0728d9830
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976951"
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>通过远程计算机调试工作流（旧版）
 本主题介绍如何调试使用旧 [!INCLUDE[wf](../includes/wf-md.md)] 生成的旧远程 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序。 在应用程序需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

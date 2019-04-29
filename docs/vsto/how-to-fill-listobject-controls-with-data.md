@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967974"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>如何：用数据填充 ListObject 控件
   可以使用数据绑定快速地将数据添加到文档中。 将数据绑定到列表对象后，可以断开列表对象的连接，以便它能显示数据且不再与数据源绑定。

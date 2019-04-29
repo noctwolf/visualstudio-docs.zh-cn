@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c9bf341adeaeb17c8986b1b30b12f58113aef562
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978991"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx 接口
 提供由调试器 IDE 以启用主机和语言启动调试的主要接口。 它将建立一个正在运行的应用程序的调试会话。 此接口由计算机调试管理器实现。  

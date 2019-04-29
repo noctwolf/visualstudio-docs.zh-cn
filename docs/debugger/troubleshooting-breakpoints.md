@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929665"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的断点疑难解答
 
@@ -35,7 +35,7 @@ ms.locfileid: "56714175"
 
 * 如果你的模块未加载，请检查以下内容来查找原因：
   * 确认您正在调试的正确过程。
-  * 请检查你正在调试的代码正确的类型。 您可以了解哪种代码将调试器配置为在调试**进程**窗口 (**调试** > **Windows**  >  **进程**)。 例如，如果你尝试调试C#代码中，确认是否为适当类型的.NET Framework 配置您的调试器 (例如，托管 (v4\*) 与托管 (v2\*/v3\*) 与托管 (CoreCLR)).
+  * 请检查你正在调试的代码正确的类型。 您可以了解哪种代码将调试器配置为在调试**进程**窗口 (**调试** > **Windows**  >  **进程**)。 如果想要调试 C# 代码，例如，确认是否为适当类型的.NET Framework 配置您的调试器 (例如，托管 (v4\*) 与托管 (v2\*/v3\*) 与托管 (CoreCLR))。
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… 当前源代码是从...中内置的版本不同"
 
@@ -53,7 +53,7 @@ ms.locfileid: "56714175"
 
 下面是要检查的几个事项：
 1. 如果在多个进程或多台计算机运行你的代码，请确保你正在调试的正确的进程或计算机。
-2. 确认你的代码正在运行。 若要测试你的代码运行，将调用添加到`System.Diagnostics.Debugger.Break`(C#/VB) 或`__debugbreak`（c + +） 到在您尝试设置了断点，然后重新生成你的项目的代码行。
+2. 确认你的代码正在运行。 若要测试你的代码运行，将调用添加到`System.Diagnostics.Debugger.Break`(C#/VB) 或`__debugbreak`(C++) 到在您尝试设置了断点，然后重新生成你的项目的代码行。
 3. 如果你正在调试优化的代码，请确保在其中设置断点的函数不被内联到另一个函数。 `Debugger.Break`如何工作的上一个检查中所述的测试，测试以及此问题。
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>我删除了断点，但在再次启动调试时继续命中该断点

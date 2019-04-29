@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955548"
 ---
 # <a name="schema-cache"></a>架构缓存
 
@@ -78,7 +78,7 @@ XML 编辑器还可以查找解决方案中的架构，在指定架构**架构**
 
 - LCID
 
-编录文档可以包含 `Catalog` 元素，该元素指向其他编录。 可以使用 `Catalog` 元素指向您的团队或公司共享的中心编录或与业务伙伴共享的联机编录。 `href` 属性是其他编录的文件路径或 http URL。 以下是 `Catalog` 元素的示例：
+编录文档可以包含 `Catalog` 元素，该元素指向其他编录。 可以使用 `Catalog` 元素指向你的团队或公司共享的中心编录或与业务伙伴共享的联机编录。 `href` 属性是其他编录的文件路径或 http URL。 以下是 `Catalog` 元素的示例：
 
 ```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>

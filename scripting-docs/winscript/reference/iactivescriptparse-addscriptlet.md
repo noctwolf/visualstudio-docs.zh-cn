@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ee5d76060789118e9051c2d8dcc5fc570617f6a8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954948"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 将代码 scriptlet 添加到该脚本。 此方法使用环境中使用主机文档混合在一起的持久状态的脚本主机负责还原脚本，而不通过`IPersist*`接口。 主要示例是允许要附加到内部事件的 HTML 文档中嵌入的代码 scriptlet 的 HTML 脚本语言 (例如，ONCLICK="button1.text='Exit")。  

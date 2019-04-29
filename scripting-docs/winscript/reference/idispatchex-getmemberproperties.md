@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000813"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 检索成员的属性。  
@@ -44,7 +44,7 @@ HRESULT GetMemberProperties(
  `grfdexFetch`  
  确定要检索的属性。 这可以是下列出的值的组合`pgrfdex`和/或以下值的组合：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |grfdexPropCanAll|FdexPropCanGet、 fdexPropCanPut、 fdexPropCanPutRef、 fdexPropCanCall、 fdexPropCanConstruct 和 fdexPropCanSourceEvents 相结合。|  
 |grfdexPropCannotAll|FdexPropCannotGet、 fdexPropCannotPut、 fdexPropCannotPutRef、 fdexPropCannotCall、 fdexPropCannotConstruct 和 fdexPropCannotSourceEvents 相结合。|  

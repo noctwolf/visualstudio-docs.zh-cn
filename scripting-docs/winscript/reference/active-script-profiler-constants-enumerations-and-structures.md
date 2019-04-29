@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1d39e6feb2cddd0c573368db9bf50b1e77f2e48d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955490"
 ---
 # <a name="active-script-profiler-constants-enumerations-and-structures"></a>活动脚本探查器常量、枚举和结构
 活动脚本 Profiler 接口使用以下枚举。  

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944238"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication 接口
 表示正在运行的应用程序。 它不需要以与操作系统进程相对应。 通常情况下，调试器以用于调试的应用程序目标。 进程调试管理器通常实现应用程序对象。  

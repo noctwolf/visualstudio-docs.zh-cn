@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1dca1ce2504d557050adc1cb015eb7c6da056c70
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925689"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件源 (Visual Studio SDK)
 有两个源的事件： 调试引擎 (DE) 和会话调试管理器 (SDM)。 从设备发送的事件具有一个非 NULL 引擎，而从 SDM 发送事件都具有一个 NULL 引擎。

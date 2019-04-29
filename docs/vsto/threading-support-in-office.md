@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978762"
 ---
 # <a name="threading-support-in-office"></a>Office 中的线程支持
   本文提供了有关如何线程处理在 Microsoft Office 对象模型中支持的信息。 Office 对象模型不是线程安全的但可以使用的 Office 解决方案中的多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于不是线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便在服务器上执行任何时候只有一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 调用进行序列化，因为调用方可能阻止一段时间中，而服务器太忙或处理在后台线程上的其他调用。

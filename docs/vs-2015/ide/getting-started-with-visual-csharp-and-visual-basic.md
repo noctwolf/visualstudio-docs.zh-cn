@@ -1,5 +1,5 @@
 ---
-title: 开始使用 VisualC#和 Visual Basic |Microsoft Docs
+title: Visual C# 和 Visual Basic 入门 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584691"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54788276"
  若要了解 Visual C++，请参阅 [Visual C++ 资源](http://msdn.microsoft.com/vstudio/hh386302.aspx)。  
   
 ## <a name="in-this-section"></a>本节内容  
- [演练：创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ [演练：创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
  认识 Visual Studio IDE 中的基本窗口，通过配置设置优化你的开发体验，然后生成一个简单的程序。  
   
  [教程 1：创建图片查看器](../ide/tutorial-1-create-a-picture-viewer.md)  

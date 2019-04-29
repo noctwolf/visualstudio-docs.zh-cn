@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964477"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练：使用快捷键与编辑器扩展
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。

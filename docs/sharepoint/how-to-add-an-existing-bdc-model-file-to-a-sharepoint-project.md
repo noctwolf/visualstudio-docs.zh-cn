@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9c10dcf48e5c047778b86c524b35b4e1d5d8cc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967048"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>如何：将现有 BDC 模型文件添加到 SharePoint 项目
   可以自定义、 打包和重新部署业务数据连接 (BDC) 模型使用 Visual Studio 添加的模型文件 (*.bdcm*) 向任何 SharePoint 场项目。 有关详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。

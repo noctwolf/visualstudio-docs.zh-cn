@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 02bc8d858f28799020b958978845c0994accd554
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952798"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>演练：创建边缘字形
 可以使用自定义编辑器扩展自定义编辑器边距的外观。 本演练中放入自定义标志符号指示器边距时代码注释中显示单词"todo"。

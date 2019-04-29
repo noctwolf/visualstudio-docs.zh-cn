@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992740"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 检索唯一标识当前的文档版本的主机定义的字符串。 如果 Windows 脚本 （如下所示使用记事本正在编辑的 HTML 页的情况下） 范围内已更改的相关的文档，脚本引擎可以将它保存以及其保留的状态，强制重新编译下次加载脚本。  

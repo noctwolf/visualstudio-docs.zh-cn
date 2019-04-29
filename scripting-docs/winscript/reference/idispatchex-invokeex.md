@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000742"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 提供对属性和方法公开的访问`IDispatchEx`对象。  
@@ -55,7 +55,7 @@ HRESULT InvokeEx(
   
  描述的上下文的标志`InvokeEx`调用：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |DISPATCH_METHOD|作为一种方法在调用成员。 如果属性具有相同的名称，可能会设置此和 DISPATCH_PROPERTYGET 标志 (由定义`IDispatch`)。|  
 |DISPATCH_PROPERTYGET|该成员作为属性或数据成员进行检索 (由定义`IDispatch`)。|  

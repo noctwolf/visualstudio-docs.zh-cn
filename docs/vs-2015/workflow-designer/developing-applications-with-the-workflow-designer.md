@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977015"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流设计器开发应用程序
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 是可视化设计器和调试器，用于以图形化的方式构造和调试 [!INCLUDE[wf](../includes/wf-md.md)] 开发环境中承载的 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 应用程序。 它可用于通过使用模板和活动设计器来撰写复合工作流应用程序、活动库或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服务。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流，请参阅[Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。  

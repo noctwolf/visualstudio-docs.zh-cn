@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ce0ebe3b32b11bdd79884504233b3f4e09a035f8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944342"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
 导致应用程序在最早的机会在调试器中中断。  

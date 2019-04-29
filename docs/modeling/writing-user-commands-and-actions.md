@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00da6f72bfafcc62075bc06739e4daec0fe45994
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951204"
 ---
 # <a name="writing-user-commands-and-actions"></a>编写用户命令和操作
 通过将命令添加到关系图，以及通过响应笔势（例如拖放、单击和双击事件），可自定义域特定语言。

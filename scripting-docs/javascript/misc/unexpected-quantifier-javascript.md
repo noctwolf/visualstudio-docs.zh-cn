@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 52b98875b560e4863a93849cf99c2f8756cd438a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005886"
 ---
 # <a name="unexpected-quantifier-javascript"></a>意外的限定符 (JavaScript)
 编写正则表达式搜索模式，创建的 pattern 元素非法的重复因子。 例如，模式  
