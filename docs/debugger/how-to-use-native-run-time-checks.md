@@ -38,11 +38,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846964"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 在 Visual C++ 中，可以使用本机 [runtime_checks](/cpp/preprocessor/runtime-checks) 捕获常见的运行时错误，例如：

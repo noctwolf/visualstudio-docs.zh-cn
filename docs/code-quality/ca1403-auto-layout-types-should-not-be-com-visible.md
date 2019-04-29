@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546194"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403:自动布局类型不应对 COM 可见
 
@@ -39,7 +39,7 @@ ms.locfileid: "55910865"
 
 ## <a name="rule-description"></a>规则说明
 
-<xref:System.Runtime.InteropServices.LayoutKind> 由公共语言运行时管理布局类型。 这些类型的布局可以更改.NET Framework 中，将中断要求特定布局的 COM 客户端的不同版本之间。 如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>未指定属性，指定 C#、 Visual Basic 和 c + + 编译器[LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)对于值类型。
+<xref:System.Runtime.InteropServices.LayoutKind> 由公共语言运行时管理布局类型。 这些类型的布局可以更改.NET Framework 中，将中断要求特定布局的 COM 客户端的不同版本之间。 如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>未指定属性， C#，Visual Basic 中，和C++编译器指定[LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)对于值类型。
 
 除非以其他方式标记，所有公共、 非泛型类型对于 COM 可见，且所有的非公共和泛型类型对 COM 不可见 但是，若要减少误报，此规则要求显式声明的类型的 COM 可见性。 包含程序集必须使用标记<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>设置为`false`和类型必须标有<xref:System.Runtime.InteropServices.ComVisibleAttribute>设置为`true`。
 

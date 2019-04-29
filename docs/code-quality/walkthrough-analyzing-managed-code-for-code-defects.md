@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825038"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：分析托管的代码进行代码缺陷
 
@@ -151,7 +151,7 @@ ms.locfileid: "55952836"
 
    1. 上**文件**菜单中，选择**保存选定项**，然后关闭属性页。
 
-   [CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:添加 [Serializable] 属性，键入演示，因为此类型实现了 ISerializable。
+   [CA2237：用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md):Microsoft.Usage:添加 [Serializable] 属性，键入演示，因为此类型实现了 ISerializable。
 
    1. 添加`[Serializable ()]`到类属性`demo`。
 

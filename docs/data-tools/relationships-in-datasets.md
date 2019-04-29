@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 653a9b589e68c326fc40a94ed0fa3ab7e49acb8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567645"
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过将相关的表添加到数据集**数据源配置向导**，或**数据集设计器**下创建并配置<xref:System.Data.DataRelation>为您的对象。

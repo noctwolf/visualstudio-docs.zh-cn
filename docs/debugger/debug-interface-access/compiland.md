@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555256"
 ---
 # <a name="compiland"></a>编译单位
 还有一个`SymTagCompiland`符号将每个编译单位链接到.exe 文件。 编译单位信息用于分隔包含符号`SymTagCompiland`标记，而不加载其他编译单位符号可以检索，和与符号`SymTagCompilandDetails`标记，这可能需要加载其他符号。
@@ -26,7 +26,7 @@ ms.locfileid: "56613237"
 ## <a name="properties"></a>属性
  下表显示适用于此符号类型的属性。
 
-|属性|数据类型|说明|
+|属性|数据类型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` 如果在编译上启用编辑并继续。|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|.Exe 文件的符号。|

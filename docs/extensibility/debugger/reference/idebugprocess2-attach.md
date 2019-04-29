@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871284"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 将会话调试管理器 (SDM) 附加到进程。
@@ -62,7 +62,7 @@ int Attach( 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了其他可能的值。
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的进程已附加到调试器。|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|在附加过程中发生了安全冲突。|

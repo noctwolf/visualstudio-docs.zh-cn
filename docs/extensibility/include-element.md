@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d77cca0b197f939170fc92f4d7d07bcadae8b53d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861796"
 ---
 # <a name="include-element"></a>包含元素
 Include 元素指定的文件，可以找到对提供包括插入到当前文件的路径。  所有符号和定义的类型将都成为已编译的结果的一部分。

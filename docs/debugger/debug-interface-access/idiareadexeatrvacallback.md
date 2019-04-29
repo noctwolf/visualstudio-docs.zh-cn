@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c86a0e995e3336bc217bcc9ad0e7ce28a6434478
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832508"
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 允许客户端应用程序提供的可执行文件的相对虚拟地址由指定的字节数。
@@ -31,7 +31,7 @@ IDiaReadExeAtRVACallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法`IDiaReadExeAtRVACallback`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|读取指定的开始的指定相对虚拟地址 (RVA) 从可执行文件的字节数。|
 
@@ -42,7 +42,7 @@ IDiaReadExeAtRVACallback : IUnknown
  此方法是由客户端应用程序实现并传递给[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法作为一种方法来读取文件。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2.h
+ 标头：dia2.h
 
  库： diaguids.lib
 

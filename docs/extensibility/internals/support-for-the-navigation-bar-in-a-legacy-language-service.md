@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858112"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>旧版语言服务中的导航栏支持
 在的编辑器视图顶部的导航栏显示文件中的类型和成员。 在左侧的下拉列表中显示类型和成员显示在右侧下拉列表。 当用户选择一种类型时，该类型的第一行放置插入符号。 当用户选择成员时，将插入符号放置在上成员的定义。 下拉列表框会更新以反映当前插入符号的位置。

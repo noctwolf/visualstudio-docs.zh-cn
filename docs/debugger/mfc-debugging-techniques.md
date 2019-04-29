@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905439"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。
@@ -140,7 +140,7 @@ MFC 框架的“Debug”版本自动使用 `DEBUG_NEW` ，但代码不自动使�
 
 - 如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。
 
-  |“值”|说明|
+  |“值”|描述|
   |-----------|-----------------|
   |**allocMemDF**|打开诊断内存分配器（默认）。|
   |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838088"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 显示堆栈帧的属性。
@@ -31,11 +31,11 @@ IDiaStackFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 以下是支持此接口的方法：
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|检索一个标志，指示此地址范围中的代码，会分配给基的指针。 已弃用此方法。|
 |[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|检索地址基的帧。|
-|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|检索指示 c + + 异常处理有效的标志。|
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|检索一个标志，指示的C++实际上是异常处理。|
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|检索一个标志，指示块包含一个函数的入口点。|
 |[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|检索局部变量推送到堆栈上的字节的数。|
 |[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|检索的参数推送到堆栈上的字节数。|
@@ -101,7 +101,7 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

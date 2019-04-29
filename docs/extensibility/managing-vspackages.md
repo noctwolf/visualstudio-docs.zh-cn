@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856224"
 ---
-# <a name="manage-vspackages"></a>管理 VSPackages
+# <a name="manage-vspackages"></a>管理 VSPackage
 在大多数情况下，您不必担心如何管理 Vspackage，因为项目和项模板注册，并自动加载包。 但是，在某些情况下您可能需要了解详细信息，以便管理您的包。
 
 ## <a name="use-the-experimental-instance"></a>使用实验实例

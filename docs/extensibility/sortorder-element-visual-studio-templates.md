@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4477d5ff193df40eaf84175b09b5e28a521f72c7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432624"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 元素（Visual Studio 模板）
 指定一个值，用于排列在同一类别中的其他模板之间的模板中显示该值**新的项目**或**添加新项**对话框。

@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546653"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ OptIn
 |主题|描述|  
 |-----------|-----------------|  
 |[如何：安装特定版本的 Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|介绍如何安装当前版本的特定配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
-|[如何：创建和运行 Visual Studio 的无人参与的安装](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|介绍如何安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]无人参与模式。|  
-|[如何：部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|介绍如何部署到多台计算机时应用产品密钥。|  
+|[如何：创建和运行 Visual Studio 的无人参与安装](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|介绍如何安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]无人参与模式。|  
+|[如何：在部署 Visual Studio 时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|介绍如何部署到多台计算机时应用产品密钥。|  
 |[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)|提供有关如何管理本地帮助安装的或不能访问 internet 的网络环境的信息。|  
 |[安装 Visual Studio](../install/install-visual-studio-2015.md)|提供相关说明和链接，这些主题介绍如何安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|

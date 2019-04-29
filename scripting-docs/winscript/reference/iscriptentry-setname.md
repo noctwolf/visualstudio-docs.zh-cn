@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6476869a54921cfdac34e9f1ed202adef909ddf
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787596"
 ---
 # <a name="iscriptentrysetname"></a>IScriptEntry::SetName
 对于表示单个对象 （如某个函数） 的条目，设置的对象的名称。  
@@ -42,7 +42,7 @@ HRESULT SetName(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908032"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Shell 是中的集成主代理[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 在 shell 提供了必要的功能，以允许 Vspackage 共享通用的服务。 由于体系结构的目标[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]背心在 Vspackage 中的主要功能是 shell 是一个框架，可提供基本功能并支持跨-在 Vspackage 及其组件之间进行通信。

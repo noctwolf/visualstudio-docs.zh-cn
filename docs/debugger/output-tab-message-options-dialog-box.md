@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905070"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“输出”选项卡
 使用**输出**选项卡以指定每个消息的列表中的哪些数据[消息视图](../debugger/messages-view.md)。 若要显示[消息选项对话框](../debugger/message-options-dialog-box.md)，选择**日志消息**从**Spy**菜单。

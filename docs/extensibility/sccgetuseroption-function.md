@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433183"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
 此函数检索各种特定于用户的选项。
@@ -48,7 +48,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|已成功检索选项。|
 |SCC_E_OPNOTSUPPORTED|不支持选项。|

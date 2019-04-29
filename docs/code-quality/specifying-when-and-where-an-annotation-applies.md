@@ -14,11 +14,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b94bd5dc40102bce073e42302e92b737b4e8b0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825222"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定何时以及在何处应用批注
 条件批注时，可能需要指定到分析器的其他批注。  例如，如果函数具有可以是同步还是异步的变量，将函数的行为，如下所示：在同步的情况下它始终会最终成功，但在异步情况下它报告错误如果它不能立即成功。 以同步方式调用该函数时，检查结果值提供到代码分析器的任何值，因为它将不返回。  但是，当以异步方式调用该函数并不检查函数结果，可能发生严重错误。 此示例说明了你可以在其中使用情况`_When_`批注 — 本文稍后所述，若要启用检查。

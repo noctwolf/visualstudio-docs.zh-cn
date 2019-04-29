@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859939"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 从资源工具清单是采用一系列图像资源 （.png 或.xaml 文件），并生成.imagemanifest 文件，以允许与 Visual Studio 映像服务一起使用这些映像的控制台应用程序。 此外，此工具可用于将图像添加到现有.imagemanifest。 此工具可用于添加到 Visual Studio 扩展的映像支持高 DPI 和主题。 生成的.imagemanifest 文件应包含在和部署 Visual Studio 扩展 (.vsix) 的一部分。

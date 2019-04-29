@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433014"
 ---
 # <a name="shipping-visual-studio-extensions"></a>传送 Visual Studio 扩展
 完成开发您的扩展插件后，可以在其他计算机上安装、 共享与朋友和同事，或在 Visual Studio Marketplace 上发布。 在本部分中，我们介绍需要执行的操作将发布和维护您的扩展插件的所有操作： 使用.vsix 文件，发布、 本地化，和更新。
@@ -47,7 +47,7 @@ ms.locfileid: "56796590"
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
+|Title|描述|
 |-----------|-----------------|
 |[VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)|介绍如何使用 VSIX 项目模板来安装自定义项目模板。|
 |[VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)|介绍了 VSIX 包的组件。|

@@ -1,5 +1,5 @@
 ---
-title: CA2241:为格式化方法提供正确的自变量
+title: CA2241:为格式化方法提供正确的参数
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,13 +19,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541462"
 ---
-# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241:为格式化方法提供正确的自变量
+# <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241:为格式化方法提供正确的参数
 
 |||
 |-|-|

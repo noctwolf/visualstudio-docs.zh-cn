@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554865"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 示例
 
@@ -28,7 +28,7 @@ Dia2dump 示例随 Visual Studio 安装，并包含文件的解决方案和源�
 
 ## <a name="install-the-sample"></a>安装示例
 
-该示例安装时选择**使用 c + + 的桌面开发**Visual Studio 安装程序中的工作负荷。 有关如何安装 Visual Studio 并选择特定的工作负荷和各个组件的信息，请参阅[安装 Visual Studio](../../install/install-visual-studio.md)。
+该示例安装时选择**使用的桌面开发C++**  Visual Studio 安装程序中的工作负荷。 有关如何安装 Visual Studio 并选择特定的工作负荷和各个组件的信息，请参阅[安装 Visual Studio](../../install/install-visual-studio.md)。
 
 安装时，该示例是在 Visual Studio 安装目录中名为 \DIA SDK\Samples\DIA2Dump 子目录中。
 
@@ -44,7 +44,7 @@ Dia2dump 示例随 Visual Studio 安装，并包含文件的解决方案和源�
 
 1. 打开项目的“属性页”  对话框。 有关详细信息，请参阅[使用项目属性](/cpp/ide/working-with-project-properties)。
 
-1. 打开**配置属性** > **C/c + +** > **常规**属性页。
+1. 打开**配置属性** > **C /C++** > **常规**属性页。
 
 1. 在中**附加包含目录**属性中，选择下拉列表控件，然后选择**编辑**。
 

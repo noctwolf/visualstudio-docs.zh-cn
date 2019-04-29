@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847760"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行辅助进程
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行工作进程
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。
 
  > [!IMPORTANT]
@@ -45,21 +45,22 @@ ms.locfileid: "56698997"
 
 4. 在 [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)]上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：
 
-   1.  单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。
+   1. 单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。
 
-   2.  在 **“Internet 信息服务”** 对话框中，右击 **“网站”** 文件夹并选择 **“属性”**。
+   2. 在 **“Internet 信息服务”** 对话框中，右击 **“网站”** 文件夹并选择 **“属性”**。
 
-   3.  在 **“网站属性”** 对话框中选择 **“服务”**。
+   3. 在 **“网站属性”** 对话框中选择 **“服务”**。
 
-   4.  选择 **“以 IIS6.0 隔离模式运行 WWW 服务”**。
+   4. 选择 **“以 IIS6.0 隔离模式运行 WWW 服务”**。
 
-   5.  关闭 **“属性”** 对话框和 **“Internet 服务管理器”**。
+   5. 关闭 **“属性”** 对话框和 **“Internet 服务管理器”**。
 
 5. 打开 Windows 命令提示窗口，通过运行下面的命令重置服务器：
 
    ```cmd
    iisreset
    ```
+
    — 或 —
 
    ```cmd
@@ -77,7 +78,7 @@ ms.locfileid: "56698997"
 
     将出现 **“选择用户、计算机或组”** 对话框。
 
-10. 在 **“输入要选择的对象名称”** 框中键入用户名，然后单击 **“确定”**。 用户名必须遵循以下格式：域名\用户名。
+10. 在 **“输入要选择的对象名称”** 框中键入用户名，然后单击 **“确定”**。 用户名称必须遵循以下格式：域名 \ 用户名。
 
 11. 在 **“临时 ASP.Net 文件的权限项”** 对话框中，授予用户 **“完全控制”**，然后单击 **“确定”** 以关闭 **“临时 ASP.Net 文件项”** 对话框。
 

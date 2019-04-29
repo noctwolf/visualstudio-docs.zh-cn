@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d82bca64870c65efaeaa58077b90cecf073be5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859379"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧版语言服务
 在托管的包框架 (MPF) 中，语言服务由 VSPackage 提供 (请参阅[Vspackage](../../extensibility/internals/vspackages.md)) 并使用注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过添加注册表项和条目。 在安装过程中部分和部分在运行时，此注册过程中完成。

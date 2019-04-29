@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898631"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>如何：将数据文件添加到 ClickOnce 应用程序中
 每个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]安装的应用程序分配一个应用程序可以在其中管理其自己的数据的目标计算机的本地磁盘上的数据目录。 数据文件可以包含任何类型的文件： 文本文件、 XML 文件或甚至 Microsoft Access 数据库 (*.mdb*) 文件。 以下过程显示如何将添加到任何类型的数据文件在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。

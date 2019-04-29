@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860247"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 有关如何创建您自己的项目类型有没有想过吗？ 想知道实际情况时创建新的项目？ 让我们了解一下实质上，了解实际情况。
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode**显示为子节点的 Visual C# Windows 节点的正下方。
 
 ## <a name="see-also"></a>请参阅
-- [生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [生成新项目：揭秘，第 2 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 250fa110b43aad38e6fc4323d6214bfb5fc7b5cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852109"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。

@@ -1,51 +1,52 @@
 ---
 title: IEnumDebugFields::Skip | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IEnumDebugFields::Skip
 helpviewer_keywords:
 - IEnumDebugFields::Skip method
 ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
-author: gregvanl
+caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 03a3070ecfbc5db48c78506cb2fefab7b3f8c4fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62867246"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
-此方法跳过指定数量的元素。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>语法
-
-```cpp
-HRESULT Skip(
-   ULONG celt
-);
-```
-
-```csharp
-int Skip(
-   uint celt
-);
-```
-
-#### <a name="parameters"></a>参数
- `celt`
-
- [in]要跳过的元素数。
-
-## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。
-
-## <a name="remarks"></a>备注
- 如果`celt`指定的值数比大剩余元素的枚举设置为结束和`S_FALSE`返回。
-
-## <a name="see-also"></a>请参阅
-- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
+此方法跳过指定数量的元素。  
+  
+## <a name="syntax"></a>语法  
+  
+```cpp#  
+HRESULT Skip(  
+   ULONG celt  
+);  
+```  
+  
+```csharp  
+int Skip(  
+   uint celt  
+);  
+```  
+  
+#### <a name="parameters"></a>参数  
+ `celt`  
+ [in]要跳过的元素数。  
+  
+## <a name="return-value"></a>返回值  
+ 如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。  
+  
+## <a name="remarks"></a>备注  
+ 如果`celt`指定的值数比大剩余元素的枚举设置为结束和`S_FALSE`返回。  
+  
+## <a name="see-also"></a>请参阅  
+ [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

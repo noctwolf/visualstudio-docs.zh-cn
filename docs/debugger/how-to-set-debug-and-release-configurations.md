@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847697"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>在 Visual Studio 中设置调试和发布配置
 
@@ -44,7 +44,7 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 在调试配置中，您的程序将编译使用完整符号调试信息，不进行优化。 优化会使调试复杂化，因为源代码和生成的指令之间的关系更加复杂。
 
-您的程序的发布配置具有任何符号调试信息进行了完全优化。 在.pdb 文件中，可以为托管的代码和 c + + 代码，生成调试信息[具体取决于编译器选项](#BKMK_symbols_release)的使用。 创建.pdb 文件可能很有用，如果您稍后必须调试发行版本。
+您的程序的发布配置具有任何符号调试信息进行了完全优化。 对于托管代码和C++代码中，可以在.pdb 文件中生成调试信息[具体取决于编译器选项](#BKMK_symbols_release)使用。 创建.pdb 文件可能很有用，如果您稍后必须调试发行版本。
 
 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。
 
@@ -56,13 +56,13 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
 
 * 从**构建**菜单中，选择**Configuration Manager**，然后选择**调试**或者**版本**。
 
-or
+或
 
 * 在工具栏上，从“解决方案配置”列表选择“调试”或“发布”。
 
   ![工具栏生成配置](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
-## <a name="BKMK_symbols_release"></a>生成符号 (.pdb) 文件 (C#，c + +、 Visual Basic 中， F#)
+## <a name="BKMK_symbols_release"></a>生成符号 (.pdb) 文件 (C#， C++，Visual Basic 中， F#)
 
 您可以选择生成符号 (.pdb) 文件以及调试要包含的信息。 对于大多数项目类型，编译器将生成默认情况下调试的符号文件和发布版本，而其他默认设置因项目类型和 Visual Studio 版本而异。
 
@@ -71,9 +71,9 @@ or
 
 每个项目类型可能具有不同的方式设置这些选项。
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>生成的符号文件C#，ASP.NET 或 Visual 基本项目
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>生成 C#、 ASP.NET 或 Visual Basic 项目的符号文件
 
-有关详细信息中的调试配置的项目设置C#或 Visual Basic，请参阅[项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)或[项目的 Visual Basic 调试设置配置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)。
+在 C# 或 Visual Basic 调试配置的项目设置的详细信息，请参阅[调试配置适用于 C# 项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)或[项目设置适用于 Visual Basic 调试配置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. 在“解决方案资源管理器”中，选择项目。
 
@@ -87,15 +87,15 @@ or
 
 6. 在中**调试信息**列表 (或**生成调试信息**在 Visual Basic 中的列表)，选择**完整**， **pdb**，或**可移植**。
 
-   可移植格式是.NET Core 的最新的跨平台格式。 有关选项的详细信息，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
+   可移植的格式是为.NET Core 的最新的跨平台格式。 有关选项的详细信息，请参阅[高级生成设置对话框 (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md)。
 
-   ![为在云中生成的 Pdb C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![在 C# 中生成的生成 Pdb](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. 生成你的项目。
 
    编译器在可执行文件或主输出文件所在的文件夹中创建的符号文件。
 
-### <a name="generate-symbol-files-for-a-c-project"></a>生成 c + + 项目的符号文件
+### <a name="generate-symbol-files-for-a-c-project"></a>生成的符号文件C++项目
 
 1. 在“解决方案资源管理器”中，选择项目。
 
@@ -105,13 +105,13 @@ or
 
 4. 在侧窗格中，选择**链接器 > 调试**，然后选择选项**生成调试信息**。
 
-   在 c + + 调试配置的项目设置的详细信息，请参阅[调试配置的 c + + 项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
+   有关详细信息中的调试配置的项目设置C++，请参阅[项目设置为C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。
 
 5. 配置选项**生成程序数据库文件**。
 
-   在大多数 c + + 项目中，默认值是`$(OutDir)$(TargetName).pdb`，其中的输出文件夹中生成.pdb 文件。
+   在大多数C++项目中，默认值是`$(OutDir)$(TargetName).pdb`，其中的输出文件夹中生成.pdb 文件。
 
-   ![C + + 中生成的生成 Pdb](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
+   ![为在云中生成的 Pdb C++ ](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
 6. 生成你的项目。
 

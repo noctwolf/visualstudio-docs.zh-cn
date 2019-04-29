@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891886"
 ---
 # <a name="add-icons-to-menu-commands"></a>将图标添加到菜单命令
 命令可出现在菜单和工具栏。 在工具栏上很常见的命令将使用只是一个图标 （为节省空间） 时菜单上显示命令通常显示带图标和文本。

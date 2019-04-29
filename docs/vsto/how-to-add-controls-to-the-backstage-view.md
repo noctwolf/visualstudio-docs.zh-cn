@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826776"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：将控件添加到 Backstage 视图
   可以使用功能区设计器将控件添加到单击时打开的菜单**文件**选项卡。当运行该应用程序，您将添加到的控件**文件**选项卡显示名为的组**外接程序**。

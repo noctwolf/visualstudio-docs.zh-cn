@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 55439ebe48704e3d67fe0b8b4987447fbc143391
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891182"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a>CreateInPlace 元素 （Visual Studio 模板）
 指定是否要创建项目和在指定位置中，执行参数替换或在一个临时位置执行参数替换，然后将项目保存到指定的位置。

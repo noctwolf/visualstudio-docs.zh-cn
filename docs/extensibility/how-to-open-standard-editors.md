@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f34a239628c3ed9e8bccaa8590cb22100d7d290f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862909"
 ---
 # <a name="how-to-open-standard-editors"></a>如何：打开标准编辑器
 当您打开标准编辑器时，您让 IDE 确定指定的文件类型，而不是指定文件的特定于项目的编辑器的标准编辑器。

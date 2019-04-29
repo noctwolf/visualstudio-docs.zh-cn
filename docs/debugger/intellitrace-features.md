@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846366"
 ---
-# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic、 c + +)
+# <a name="intellitrace-features-c-visual-basic-c"></a>IntelliTrace 功能 (C#，Visual Basic 中， C++)
 
 可以使用 IntelliTrace 记录事件和调用应用程序的方法，它让你能够在执行中的不同位置检查其状态（调用堆栈和局部变量值）。 正常启动调试即可，默认启用 IntelliTrace，并且可以在“事件”选项卡下的新“诊断工具”窗口中看到 IntelliTrace 正在记录的信息。选择一个事件，然后单击“激活历史调试”以查看为此事件记录的调用堆栈和局部变量。
 
@@ -46,7 +46,7 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 
 如果在进行调试，请停止调试。 转到**工具 > 选项 > IntelliTrace > IntelliTrace 事件**。 选择想要 IntelliTrace 记录的事件。
 
-## <a name="Snapshots"></a> 收集快照 (C#，Visual Basic、 c + +)
+## <a name="Snapshots"></a> 收集快照 (C#，Visual Basic 中， C++)
 
 这不默认启用，但 IntelliTrace 可以捕获每个断点和调试程序单步执行事件，应用程序的快照和历史调试会话中，可以查看这些快照。 快照提供完整的应用程序状态的视图。 若要启用捕获的快照，请转到**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 快照 （托管和本机）**。 有关详细信息，请参阅[使用 IntelliTrace 检查上一应用状态](../debugger/view-historical-application-state.md)
 
@@ -92,7 +92,7 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 
 尝试将模块数保持为最小值。 因为要收集的数据变少，所以可以获得更好的性能。 UI 中的噪音也会减少，因为要浏览的数据变少。
 
-## <a name="SaveSession"></a> 将 IntelliTrace 数据保存到文件 (C#，Visual Basic、 c + +)
+## <a name="SaveSession"></a> 将 IntelliTrace 数据保存到文件 (C#，Visual Basic 中， C++)
 
 正在进行调试且应用程序处于中断状态时，通过转到“调试”>“IntelliTrace”>“保存 IntelliTrace 会话”，可以保存 IntelliTrace 收集的数据。 如果应用程序仍在运行或如果你已经停止调试，则菜单项会被禁用，且你将无法保存 IntelliTrace 收集的数据。
 

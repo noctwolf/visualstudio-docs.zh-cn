@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566570"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 
@@ -41,13 +41,13 @@ ms.locfileid: "55928655"
 
 如果您熟悉使用 Tableadapter，您可以直接跳转到以下主题之一：
 
-|主题|说明​​|
+|主题|描述|
 |-----------|-----------------|
 |[将新记录插入数据库](../data-tools/insert-new-records-into-a-database.md)|如何执行更新和插入使用 Tableadapter 或命令对象|
 |[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)|如何执行与 Tableadapter 的更新|
 |[分层更新](../data-tools/hierarchical-update.md)|如何从具有两个或多个相关表的数据集执行的更新|
 |[处理并发异常](../data-tools/handle-a-concurrency-exception.md)|如何在两个用户尝试同时更改相同的数据在数据库中时处理异常|
-|[如何：通过使用事务来保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何将数据保存在事务中使用的系统。 事务命名空间和 TransactionScope 对象|
+|[如何：使用事务保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何将数据保存在事务中使用的系统。 事务命名空间和 TransactionScope 对象|
 |[将数据保存在事务中](../data-tools/save-data-in-a-transaction.md)|创建 Windows 窗体应用程序来演示保存到数据库在事务内的数据的演练|
 |[将数据保存到数据库（多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)|如何编辑记录并将更改保存回数据库的多个表中|
 |[将数据从对象保存到数据库](../data-tools/save-data-from-an-object-to-a-database.md)|如何将数据传递到数据库的数据集在不是使用 TableAdapter DbDirect 方法的对象从|
@@ -125,7 +125,7 @@ ms.locfileid: "55928655"
 
 下表详细说明的可能值<xref:System.Data.DataRowState>枚举：
 
-|DataRowState 值|说明​​|
+|DataRowState 值|描述|
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|行添加到的项作为<xref:System.Data.DataRowCollection>。 (处于此状态的行不具有相应的原始版本，因为它不存在时最后一个<xref:System.Data.DataRow.AcceptChanges%2A>调用方法)。|
 |<xref:System.Data.DataRowState.Deleted>|使用已删除该行<xref:System.Data.DataRow.Delete%2A>的<xref:System.Data.DataRow>对象。|
@@ -139,7 +139,7 @@ ms.locfileid: "55928655"
 
 下表详细说明的可能值<xref:System.Data.DataRowVersion>枚举：
 
-|DataRowVersion 值|说明​​|
+|DataRowVersion 值|描述|
 | - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|一条记录的当前版本包含在上次记录执行的所有修改<xref:System.Data.DataRow.AcceptChanges%2A>调用。 如果行已被删除，则没有当前版本。|
 |<xref:System.Data.DataRowVersion.Default>|一条记录，定义数据集架构或数据源的默认值。|
@@ -279,4 +279,4 @@ ms.locfileid: "55928655"
 - [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [验证数据](validate-data-in-datasets.md)
-- [如何：添加、修改和删除实体（WCF 数据服务）](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [如何：添加、 修改和删除实体 (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

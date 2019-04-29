@@ -24,11 +24,11 @@ ms.workload:
 - cplusplus
 - dotnet
 ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846942"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在“调用堆栈”窗口中缺少本机框架时单步执行托管代码
 

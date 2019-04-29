@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16031cbe5152c49c56b4c151e85b01ecf2f91a21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859560"
 ---
 # <a name="project-type-essentials"></a>项目类型基础知识
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包括几种语言的项目类型，如[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]或[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 此外可以创建自己的项目类型。
@@ -32,7 +32,7 @@ ms.locfileid: "56624355"
 
   必须创建新项目类型的项目的基于一种语言以外[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]如果你想要支持的一个或多项操作：
 
-- 生成
+- Build
 
 - 部署
 
@@ -52,7 +52,7 @@ ms.locfileid: "56624355"
 
 - 项目类型是在 VSPackage 中实现的接口集的对象[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]要求。 如果你使用 C# 开发的项目类型，托管包框架项目类为您实现必要的接口，让您继承该实现。 有关详细信息，请参阅[使用托管包框架来实现一种项目类型 (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md)。
 
-- 对于 c + + 开发人员，HierUtil 库中的类以类似的方式工作。 有关详细信息，请参阅[不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
+- 有关C++以类似的方式工作的开发人员，HierUtil 库中的类。 有关详细信息，请参阅[不在生成中：使用 HierUtil7 项目类来实现一种项目类型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
 
 - 项目类型可支持典型的源代码生成为.exe 或.dll 程序集的代码文件之外的数据。 例如，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]数据库项目包含对存储在磁盘上的脚本和查询文件的引用，并将命令添加到**解决方案资源管理器**执行脚本和针对数据库中，但项目的查询不支持生成行为。 有关详细信息，请参阅[打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。
 

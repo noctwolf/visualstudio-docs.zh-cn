@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 38b56753bfc56a1143d8c5423ddf7714f0b2f21e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861099"
 ---
 # <a name="filter-the-additem-dialog-box-for-nested-projects"></a>筛选嵌套项目的 AddItem 对话框
 当显示**AddItem**嵌套项目，父项目对话框可以控制在对话框中显示的项。

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7a58b2c8f14f1dff241b7f3c7d783460a83b7bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852368"
 ---
 # <a name="debugging-linq"></a>调试 LINQ
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支持对语言集成查询 (LINQ) 代码进行调试，但是有一些限制。 大多数调试功能都对 LINQ 语句有效，其中包括单步执行、设置断点以及在调试器窗口中查看结果。 本主题介绍 LINQ 调试的主要限制。

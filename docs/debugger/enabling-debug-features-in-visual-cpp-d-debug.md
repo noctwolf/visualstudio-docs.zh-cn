@@ -25,14 +25,14 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 295bdc7b220f8977c85dd1b359f99af2f8d5d72a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850962"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>在 Visual C++ 中启用调试功能 (/D_DEBUG)
-在 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 中，如果在编译程序时定义了 _DEBUG 符号，则将启用某些调试功能（如断言）。 可以用下列两种方法之一定义 _DEBUG：
+在[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]中，当你使用已定义的 **_DEBUG**符号编译程序时，断言等调试功能处于启用状态。 你可以用两种方式之一定义 **_DEBUG**：
 
 - 在源代码中指定 #define _DEBUG，或
 

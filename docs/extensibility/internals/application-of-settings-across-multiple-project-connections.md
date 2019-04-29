@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861675"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
 源代码管理插件使用源控制插件 API 版本 1.2，生成可用于批处理操作执行相同的源代码管理操作跨多个项目或多个连接上下文。 若要消除冗余，每个项目对话框从用户体验，可以使用批处理。

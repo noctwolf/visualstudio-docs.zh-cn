@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 26f5ee29a52546e7f2111189f54d64c160a94cea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860341"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用于扩展项目系统的 IDE 定义的命令
 当你想要扩展项目系统时，可以使用命令和命令组提供的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。

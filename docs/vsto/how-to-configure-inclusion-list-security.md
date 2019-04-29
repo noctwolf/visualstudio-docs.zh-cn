@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826374"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>如何：配置包含列表安全性
   如果您具有管理员权限，则可以配置[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示，以控制最终用户是否可以通过将信任决策保存到包含列表中安装 Office 解决方案的选择。 有关包含列表的信息，请参阅[使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。

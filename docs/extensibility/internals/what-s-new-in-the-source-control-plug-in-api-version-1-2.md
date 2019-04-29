@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0ab98719f13ed787947a5e1d8a06d2080718eb0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907566"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>什么&#39;中的源控制插件 API 版本 1.2
 本部分重点介绍在源控件插件 API 版本 1.2 中的高级的源代码代码控件功能。 下面列出了版本 1.2 中的新增功能：

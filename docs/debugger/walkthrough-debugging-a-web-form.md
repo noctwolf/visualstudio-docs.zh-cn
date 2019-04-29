@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901552"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向你演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 此外，还会演示如何启动和停止执行、设置断点以及在“监视”窗口中检查变量。
@@ -108,7 +108,7 @@ ms.locfileid: "54948721"
 
 4. 在 Internet Explorer 中，单击此按钮。
 
-    在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，此操作将带您转到代码页 Default.aspx.cs 或 Default.aspx.vb 上设置了断点的行上。 该行将用黄色突出显示。 现在，可以查看应用程序中的变量并控制其执行。 应用程序停止执行并等待您的命令。
+    在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，此操作将带你转到代码页 Default.aspx.cs 或 Default.aspx.vb 上设置了断点的行上。 该行将用黄色突出显示。 现在，可以查看应用程序中的变量并控制其执行。 应用程序停止执行并等待您的命令。
 
 5. 在“调试”菜单上，单击“窗口”，再单击“监视”，然后单击“Watch1”。
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833681"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 准备存储在内存中数据的流通过访问程序数据库 (.pdb) 文件中的调试数据。
@@ -38,7 +38,7 @@ HRESULT loadDataFromIStream ( 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。
 
-|“值”|说明|
+|“值”|描述|
 |-----------|-----------------|
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|
 |E_INVALIDARG|参数无效。|

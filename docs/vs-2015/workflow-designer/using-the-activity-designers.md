@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858418"
 ---
 # <a name="using-the-activity-designers"></a>使用活动设计器
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包含系统提供的若干活动，构造活动和工作流时可以使用它们。 本节介绍系统提供的可用活动及其设计器的类别。 有关每个类别内各活动及其相应设计器的主题将介绍这些活动的用途并提供使用指南。  

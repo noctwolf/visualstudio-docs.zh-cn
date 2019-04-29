@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564094"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 当调试器因异常而中断执行时，默认情况下，你将看到**异常帮助器**。 如果你已在**选项**对话框中禁用了**异常帮助器**，将看到**异常助手**（C# 或 Visual Basic）或**异常**对话框 (C++)。

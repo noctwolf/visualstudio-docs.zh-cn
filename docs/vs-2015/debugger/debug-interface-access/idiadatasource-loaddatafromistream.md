@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35644f06ae929e4168d5dc44d6fc488de020a637
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58931780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547450"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ HRESULT loadDataFromIStream ( 
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
 |E_INVALIDARG|参数无效。|  

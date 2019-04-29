@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 519ba206b334ef9c955245c152fb14663366472b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891595"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此字段允许您指定各种菜单中显示的文本。 默认情况下，`ButtonText`元素出现在菜单控制器。 `ButtonText`元素也将成为默认如果其他文本字段为空白。 `ButtonText`元素不能为空，即使指定的其他文本字段。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e8956fb7da61519ed9d0939da087ce8a4181ac1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839870"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 访问注入 DIA 数据源中存储的源代码。
@@ -31,7 +31,7 @@ IDiaInjectedSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaInjectedSource`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|检索从源代码的字节计算的循环冗余检查 (CRC)。|
 |[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|检索的代码的字节数。|
@@ -42,7 +42,7 @@ IDiaInjectedSource : IUnknown
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|检索源代码字节。|
 
 ## <a name="remarks"></a>备注
-插入的源是在编译过程中注入的文本。 这并不意味着预处理器`#include`在 c + + 中使用。
+插入的源是在编译过程中注入的文本。 这并不意味着预处理器`#include`中使用C++。
 
 ## <a name="notes-for-callers"></a>调用方的说明
 通过调用来获取此接口[idiaenuminjectedsources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)或[idiaenuminjectedsources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)方法。 请参阅[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)接口以举例说明获取`IDiaInjectedSource`接口。
@@ -113,7 +113,7 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8366b8a18c2512aa55f2bab70ac9523e9265f5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ac19a3e59e70d0a1fb03b78e64036bd2ac23219
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865831"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -47,7 +47,7 @@ public struct METADATA_ADDRESS_LOCAL {
 
 方法或函数的 ID 本地变量为的一部分。
 
-[C + +]`_mdToken`是`typedef`适用于 32 位`int`。
+[C++]`_mdToken`是`typedef`适用于 32 位`int`。
 
 `pLocal`
 
@@ -62,12 +62,12 @@ public struct METADATA_ADDRESS_LOCAL {
 此结构是中的联合的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构时`dwKind`字段`DEBUG_ADDRESS_UNION`结构设置为`ADDRESS_KIND_LOCAL`(从值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举）。
 
 > [!WARNING]
-> [C + +]如果`pLocal`不为 null，则必须调用`Release`上标记的指针 (`addr`是中的字段[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构):
+> [C++仅]如果`pLocal`不为 null，则必须调用`Release`上标记的指针 (`addr`是中的字段[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)结构):
 >
 > ```cpp
 > if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
 > {
-     addr.addr.addrLocal.pLocal->Release();
+>     addr.addr.addrLocal.pLocal->Release();
 > }
 > ```
 

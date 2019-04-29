@@ -13,18 +13,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833449"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 枚举可用的各种堆栈帧。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|枚举序列中检索指定的数量的堆栈帧元素。|
 |[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|将枚举序列重置到开头。|
@@ -63,7 +63,7 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

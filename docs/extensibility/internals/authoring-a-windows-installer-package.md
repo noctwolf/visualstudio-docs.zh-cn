@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57871599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910561"
 ---
 # <a name="author-a-windows-installer-package"></a>创作 Windows Installer 包
 数据驱动器的 Windows 安装程序模型。 而不是编写过程的脚本，以将文件复制和写入注册表项，例如，您创建行和列中包含的文件和注册表数据的数据库表。

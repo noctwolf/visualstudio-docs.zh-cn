@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12ccb2770cc15962f3899b99f14dd8c7f342c3cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553027"
 ---
 # <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-检索一个标志，指示是否实际上是 c + + 异常处理。  
+检索一个标志，指示是否C++实际上是异常处理。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,13 +35,13 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回`TRUE`如果 c + + 异常处理是有效; 否则为返回`FALSE`。  
+ [out]返回`TRUE`如果C++异常处理是有效; 否则为返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回 `S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 若要确定结构化异常处理是否有效 （这是非常不同于 c + + 异常处理），请调用[idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)方法。  
+ 若要确定结构化异常处理有效是否 (这是非常不同于C++异常处理)，调用[idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

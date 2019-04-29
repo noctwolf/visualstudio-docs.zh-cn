@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827240"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>将数据保存在 SharePoint 项目系统的扩展
   扩展 SharePoint 项目系统时，可以保存字符串数据的 SharePoint 项目关闭后仍然存在。 数据是与特定项目项或项目本身通常相关联。

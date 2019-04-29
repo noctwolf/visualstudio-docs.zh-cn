@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909197"
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 以下模型表示源控件实现的示例。 在模型中，您可以看到必须实现的接口和必须调用环境服务。 类似于所有服务，实际调用通过该服务获取特定接口的方法。 类的名称进行标识，以便更轻松地查看如何执行源代码管理。

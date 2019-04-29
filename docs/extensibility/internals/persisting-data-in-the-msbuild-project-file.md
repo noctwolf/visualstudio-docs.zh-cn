@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909172"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>保留 MSBuild 项目文件中的数据
 项目子类型可能需要将特定于子类型的数据保存到项目文件以供将来使用。 项目子类型使用项目文件持久性来满足以下要求：

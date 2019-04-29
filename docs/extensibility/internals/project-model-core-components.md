@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859606"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 下表展开项目模型。 这些表格显示接口和服务模型的接口和与特定对象关联的服务中标识的简短说明。 此外，在表详细介绍在项目的创建和维护，具体取决于特定项目类型的要求中是可选的其他接口。
@@ -102,6 +102,6 @@ ms.locfileid: "56636146"
 ## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829841"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 将打开并准备与.exe/.dll 文件相关联的调试数据。
@@ -48,7 +48,7 @@ pCallback
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了一些可能的错误代码为此方法。
 
-|值|说明|
+|“值”|描述|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|无法打开该文件，或该文件具有无效的格式。|
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|

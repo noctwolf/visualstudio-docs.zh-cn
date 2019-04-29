@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846110"
 ---
 # <a name="message-properties-dialog-box"></a>“消息属性”对话框
 使用此对话框中，若要了解有关特定的消息的详细信息。 若要显示此对话框中，将焦点移至[消息视图](../debugger/messages-view.md)窗口。 在树中，选择消息的任何节点，然后选择**属性**从**视图**菜单。

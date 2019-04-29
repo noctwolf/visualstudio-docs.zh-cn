@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15e09d7837c04c276e955f88e8b1afd670d6e948
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433469"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素 （Visual Studio 模板）
 指定的预览图像，为的文件名称，将出现在任何一个的预览图像**新的项目**或**添加新项**对话框。

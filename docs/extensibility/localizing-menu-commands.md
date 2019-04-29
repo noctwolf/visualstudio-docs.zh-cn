@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907358"
 ---
 # <a name="localize-menu-commands"></a>本地化菜单命令
 您可以通过创建本地化提供菜单和工具栏命令的本地化的文本 *.vsct*文件，并本地化 *.resx*为你的 VSPackage，以及然后更新项目文件将合并的文件更改。

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890769"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加和分离到程序
 附加调试器需要发送正确的方法和使用适当的属性的事件顺序。
