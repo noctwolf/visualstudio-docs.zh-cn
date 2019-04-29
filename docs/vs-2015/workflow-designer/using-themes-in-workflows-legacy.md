@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 79dc06eb352c3196418d5ebe274b10c6740f5e75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855694"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>在工作流中使用主题（旧版）
 本主题介绍在使用面向 [!INCLUDE[wf](../includes/wf-md.md)] 或 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的旧 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，如何使用 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 中的主题。  

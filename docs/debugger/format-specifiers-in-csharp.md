@@ -26,13 +26,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849839"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式说明符在C#Visual Studio 调试器中
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的 C# 格式说明符
 你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并在源窗口中。 如果暂停这些窗口中的表达式，该结果将显示在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式显示。
 
 若要使用的格式说明符，输入变量表达式后跟一个逗号和适当的说明符。
@@ -70,7 +70,7 @@ ms.locfileid: "57870515"
 |dynamic|使用“动态”视图显示指定对象|显示对象的所有成员，包括动态视图|仅显示动态视图|
 |h|十六进制整数|61541|0x0000F065|
 |nq|不带引号的字符串|"My String"|My String|
-|nse|指定行为，不格式。 使用"无副作用"的表达式的计算结果。 如果表达式不能解释和才可以解析 （如函数调用） 评估，您将看到错误。|不可用|不可用|
+|nse|指定行为，不格式。 使用"无副作用"的表达式的计算结果。 如果表达式不能解释和才可以解析 （如函数调用） 评估，您将看到错误。|不适用|不适用|
 |隐藏|显示所有公共成员和非公共成员|显示公共成员|显示所有成员|
 |raw|以项在原始项节点中的显示格式来显示项。 只对代理对象有效。|字典\<T >|字典中的原始视图\<T >|
 |results|与实现 IEnumerable 或 IEnumerable 的类型的变量一起使用\<T >，通常在查询表达式的结果。 仅显示包含查询结果的成员。|显示所有成员|显示满足查询条件的成员|

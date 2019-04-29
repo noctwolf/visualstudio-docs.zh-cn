@@ -22,21 +22,21 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540816"
 ---
-# <a name="code-analysis-for-cc-overview"></a>代码分析 C/c + + 概述
+# <a name="code-analysis-for-cc-overview"></a>C/C++ 代码分析概述
 
-C/c + + 代码分析工具提供了有关 C/c + + 源代码中可能存在的缺陷的信息。 工具报告的常见编码错误包括缓冲区溢出、内存未初始化、null 指针取消引用以及内存和资源泄漏。 该工具还可以运行针对检查[c + + Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
+C /C++代码分析工具提供了有关在 C 中可能存在的缺陷信息 /C++的源代码。 工具报告的常见编码错误包括缓冲区溢出、内存未初始化、null 指针取消引用以及内存和资源泄漏。 该工具还可以运行针对检查[ C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md)。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （集成的开发环境） 集成
 
 在 Visual Studio ide 完全集成的代码分析工具。
 
-在生成过程中，为源代码生成任何警告都显示在错误列表中。 可以导航到导致该警告的源代码，并可以查看有关原因和可能的问题的解决方案的其他信息。
+在生成过程中，源代码产生的任何警告都显示在错误列表中。 你可以导航到导致该警告的源代码并查看更多信息，了解相关原因和找出问题可能的解决方案。
 
 ## <a name="command-line-support"></a>命令行支持
 
@@ -50,27 +50,27 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支持
 
-可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何：设置 C/c + + 项目的代码分析属性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
+可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何：设置的 C 代码分析属性 /C++项目](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
 
 ## <a name="annotation-support"></a>批注的支持
 
-批注可以提高代码分析的准确性。 批注函数参数上提供有关预处理脚本和后续条件的其他信息和返回类型。 有关详细信息，请参阅[如何：使用 __analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+注释可以提高代码分析的准确性。 注释可以提供有关函数参数和返回类型的先决条件和后置条件的其他信息。 有关详细信息，请参阅[如何：使用 _analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
 
-## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>签入策略的一部分运行分析工具
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>根据签入策略运行代码分析
 
-你可能需要所有源的代码签入行为都满足特定的策略。 具体而言，你想要确保分析最新的本地生成的步骤的形式运行。 有关启用代码分析签入策略的详细信息，请参阅[创建和签入策略使用代码分析](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+建议要求所有源代码签入均满足特定策略。 具体而言，建议确保在最近的本地生成过程中运行分析。 有关启用代码分析签入策略的详细信息，请参阅[创建和使用代码分析签入策略](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
 
 ## <a name="team-build-integration"></a>Team Build 集成
 
-您可以使用生成系统的集成的功能的步骤的形式运行代码分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]生成过程。 有关详细信息，请参阅 [Azure 管道](/azure/devops/pipelines/index?view=vsts)。
+你可以使用生成系统的集成功能在 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 生成过程中运行代码分析工具。 有关详细信息，请参阅 [Azure 管道](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="see-also"></a>请参阅
 
-- [快速入门：C/c + + 代码分析](quick-start-code-analysis-for-c-cpp.md)
-- [演练：分析 C/c + + 代码进行缺陷](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [快速入门：为 C 代码分析 /C++](quick-start-code-analysis-for-c-cpp.md)
+- [演练：分析 C /C++代码缺陷](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [C/C++ 代码分析警告](code-analysis-for-c-cpp-warnings.md)
 - [使用 C++ Core Guidelines 检查器](using-the-cpp-core-guidelines-checkers.md)
-- [C + + Core Guidelines 检查程序引用](code-analysis-for-cpp-corecheck.md)
+- [C++核心准则检查程序参考](code-analysis-for-cpp-corecheck.md)
 - [使用规则集指定要运行的 C++ 规则](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [使用代码分析工具来分析驱动程序质量](/windows-hardware/drivers/develop/analyzing-driver-quality-by-using-code-analysis-tools)
 - [代码分析驱动程序警告](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings)

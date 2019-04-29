@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96b24dac472525a711073eccf41355ddb6f10611
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554230"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
 提供了控制 DIA SDK 如何计算的调试对象的虚拟和相对虚拟地址。
@@ -31,7 +31,7 @@ IDiaAddressMap : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法`IDiaAddressMap`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|指示是否已为特定会话建立映射的地址。|
 |[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|指定是否应使用映射地址将符号地址转换。|
@@ -49,7 +49,7 @@ IDiaAddressMap : IUnknown
  此接口是可从 DIA 会话对象。 客户端调用`QueryInterface`DIA 会话对象接口方法，通常[IDiaSession](../../debugger/debug-interface-access/idiasession.md)来检索`IDiaAddressMap`接口。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2.h
+ 标头：dia2.h
 
  库： diaguids.lib
 

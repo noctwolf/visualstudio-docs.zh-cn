@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2c042d75ad74cc42d94596d60008dc43704e612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854883"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 当创建.exe 文件时，提供每个公共符号 （@ 最小值、 每个全局函数和数据符号）`SymTagPublicSymbol`标记。
@@ -27,7 +27,7 @@ ms.locfileid: "56617530"
 ## <a name="properties"></a>属性
  下表显示适用于此符号类型的属性。
 
-|Property|数据类型|说明|
+|属性|数据类型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|偏移量部分的位置;有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|位置; 部分一部分有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|

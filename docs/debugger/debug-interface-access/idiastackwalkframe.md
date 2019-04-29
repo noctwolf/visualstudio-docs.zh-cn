@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 343c56e3d3175c26900b0cfb4cdc3d816a324404
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831814"
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 维护之间的调用堆栈上下文[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。
@@ -31,7 +31,7 @@ IDiaStackWalkFrame : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法`IDiaStackWalkFrame`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|检索寄存器的值。|
 |[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|设置寄存器的值。|
@@ -46,7 +46,7 @@ IDiaStackWalkFrame : IUnknown
  客户端应用程序实现此接口，并将传递到接口的实例[idiaframedata:: Execute](../../debugger/debug-interface-access/idiaframedata-execute.md)方法。 重复使用此接口的同一实例的每个调用期间保存的寄存器状态`execute`方法。 `execute`方法还使用此接口来确定返回的地址。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2.h
+ 标头：dia2.h
 
  库： diaguids.lib
 

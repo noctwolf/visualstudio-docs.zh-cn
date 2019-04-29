@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 392c0150c9bfb653a3a52c11c0d31097e04c9cc1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849987"
 ---
 # <a name="find-window-dialog-box"></a>“查找窗口”对话框
 使用此对话框以选择一个窗口并显示其属性或消息。 若要显示此对话框，从**Spy**菜单中选择**查找窗口**。

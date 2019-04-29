@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564792"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
@@ -92,7 +92,7 @@ ms.locfileid: "60091819"
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>若要为 Tableadapter 创建单独的类库
 
-1. 右键单击解决方案中**解决方案资源管理器**，然后选择**添加** > **新建项目**。
+1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
 2. 在中**新的项目**对话框中，在中间窗格中，选择**类库**。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60091819"
 
 ### <a name="to-create-a-new-wcf-service-application"></a>创建新的 WCF 服务应用程序
 
-1. 右键单击解决方案中**解决方案资源管理器**，然后选择**添加** > **新建项目**。
+1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
 2. 在中**新的项目**对话框中，在左侧窗格中，选择**WCF**。 在中间窗格中，选择**WCF 服务库**。
 
@@ -288,7 +288,7 @@ ms.locfileid: "60091819"
 
 ### <a name="to-create-the-presentation-tier-project"></a>创建表示层项目
 
-1. 右键单击解决方案中**解决方案资源管理器**，然后选择**添加** > **新建项目**。
+1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
 2. 在中**新的项目**对话框中，在左侧窗格中，选择**Windows Desktop**。 在中间窗格中，选择**Windows 窗体应用**。
 

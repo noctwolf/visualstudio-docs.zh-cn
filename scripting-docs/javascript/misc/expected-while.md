@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433756"
 ---
 # <a name="expected-while"></a>应有“while”
 您未包括`while`条件中`do...while`循环。 一个**做**语句必须具有相应`while`测试的代码块的末尾。  

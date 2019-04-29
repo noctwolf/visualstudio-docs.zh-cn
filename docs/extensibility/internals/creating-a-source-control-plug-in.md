@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c33b852a585825f3c5b5fc415b01ac31e35f763f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861352"
 ---
 # <a name="create-a-source-control-plug-in"></a>创建源代码管理插件
 Visual Studio SDK 提供资源，使您可以添加到源控件功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 它允许您在本文档中所述在源控件插件 API 中使用符合任何插件 DLL。

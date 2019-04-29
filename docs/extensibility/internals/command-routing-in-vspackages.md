@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5749875a440a3122a06b81ae9d721e75ded6202c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861987"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令传送
 命令路由中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]基于在其中执行的上下文。 它从初始上下文外部路由到全局上下文。

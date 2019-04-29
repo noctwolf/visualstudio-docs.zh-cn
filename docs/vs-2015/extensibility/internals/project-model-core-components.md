@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 30ec67e1e58e0c546c70ecb87841293161463b1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429105"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -104,6 +104,6 @@ ms.locfileid: "58932370"
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)

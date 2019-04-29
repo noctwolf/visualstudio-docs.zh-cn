@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837602"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 检索此符号的基类型<em>。</em>
@@ -61,7 +61,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v7.0|

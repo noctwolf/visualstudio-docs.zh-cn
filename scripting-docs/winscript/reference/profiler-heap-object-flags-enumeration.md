@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f7fde5ed275691d78e534cd7b8d8e958a8f20325
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823832"
 ---
 # <a name="profilerheapobjectflags-enumeration"></a>PROFILER_HEAP_OBJECT_FLAGS 枚举
 表示堆对象有关的基本信息的标志。 在中使用[PROFILER_HEAP_OBJECT 结构](../../winscript/reference/profiler-heap-object-structure.md)。  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT            = 0
   
 ## <a name="members"></a>成员  
   
-|成员|值|描述|  
+|成员|“值”|描述|  
 |------------|-----------|-----------------|  
 |PROFILER_HEAP_OBJECT_FLAGS_NEW_OBJECT|0x00000001|此堆对象所分配的上一堆枚举请求之后。 [PROFILER_HEAP_OBJECT_ID 类型](../../winscript/reference/profiler-heap-object-id-type.md)可以重复使用的值，如果对象被收集。|  
 |PROFILER_HEAP_OBJECT_FLAGS_IS_ROOT|0x00000002|此堆对象是对象图的根对象。|  

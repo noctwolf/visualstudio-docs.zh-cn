@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852693"
 ---
 # <a name="debugger-project-settings"></a>调试器项目设置
 某些项目设置也对调试产生影响。 这些设置决定诸如调试器查看的目录、用于启动程序的命令和命令参数以及为程序创建的调试信息的类型等内容。 可以在 **“属性页”** 对话框中更改这些设置。
@@ -29,11 +29,11 @@ ms.locfileid: "56695578"
  本节介绍可用选项，并介绍如何进行设置。
 
 ## <a name="in-this-section"></a>本节内容
- [如何： 指定调试器设置](../debugger/how-to-specify-debugger-settings.md)介绍调试器中的设置**选项**对话框。
+ [如何：指定调试器设置](../debugger/how-to-specify-debugger-settings.md)介绍调试器中的设置**选项**对话框。
 
- [如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)描述**调试**并**发行**设置，以及如何在它们之间进行切换。
+ [如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)描述**调试**并**发行**设置，以及如何在它们之间进行切换。
 
- [项目用于 c + + 调试配置的设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)列出了中的可用属性**属性页**C 或 c + + 项目的对话框。
+ [项目设置为C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)列出了中的可用属性**属性页**于 c 语言的对话框或C++项目。
 
  [项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)列出了中的可用属性**属性页**对话框C#项目。
 

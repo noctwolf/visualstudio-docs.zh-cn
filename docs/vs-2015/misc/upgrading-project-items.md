@@ -12,11 +12,11 @@ ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434171"
 ---
 # <a name="upgrading-project-items"></a>升级项目项
 如果您添加或管理不实现项目系统内的项，您可能需要参与项目升级过程。 Crystal Reports 是项的可以添加到项目系统的示例。  

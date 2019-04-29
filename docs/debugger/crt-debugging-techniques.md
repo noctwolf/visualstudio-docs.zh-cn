@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564029"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 如果调试使用 C 运行时库的程序，这些调试方法可能会有用。
@@ -56,5 +56,5 @@ ms.locfileid: "56619077"
 
 ## <a name="related-sections"></a>相关章节
 
-- [调试本机代码](../debugger/debugging-native-code.md)-讨论的一些常见调试问题和 C 和 c + + 应用程序的方法。
+- [调试本机代码](../debugger/debugging-native-code.md)-于 c 语言中讨论的一些常见调试问题和技术和C++应用程序。
 - [调试器安全](../debugger/debugger-security.md)-提供有关调试更安全的建议。

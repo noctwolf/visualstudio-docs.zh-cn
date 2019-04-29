@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823900"
 ---
 # <a name="properties-of-swimlanes"></a>泳道属性
 可以将泳道添加到关系图。 泳道将关系图划分为垂直或水平区域。 您可以定义要显示在泳道内其他形状。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -37,7 +37,7 @@ ms.locfileid: "55956839"
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |继承修饰符|介绍的从泳道生成源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|
 |基本泳道|此泳道的基类。|(无)|
-|name|此泳道的名称。|当前名称|
+|名称|此泳道的名称。|当前名称|
 |命名空间|隶属于此泳道的命名空间。|当前命名空间|
 |工具提示类型|如何定义工具提示 (`fixed`， `variable`，或`none`)。 如果`fixed`，则将的值`Fixed Tooltip Text`使用属性; 如果`variable`，然后在自定义代码中定义工具提示。|\<none>|
 |说明|此泳道与相关联的非正式说明。|\<none>|

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851256"
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
 “编辑并继续”是 [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] 调试中的一项功能，可让你在中断模式下在代码运行时更改代码。 在应用代码编辑后，可以继续执行新编辑过的代码并观察效果。
@@ -45,7 +45,7 @@ ms.locfileid: "56699244"
  本节中各个主题提供的详细信息涉及：如何使用此功能，允许进行哪些类型的更改。
 
 ## <a name="in-this-section"></a>本节内容
- [如何： 在中断模式下使用编辑并继续应用编辑](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)介绍了如何将应用在中断模式下编辑代码。
+ [如何：应用在中断模式下使用编辑并继续编辑](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)介绍了如何将应用在中断模式下编辑代码。
 
  [支持代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)描述的编辑的类型不能为在执行[!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)]编辑并继续。
 

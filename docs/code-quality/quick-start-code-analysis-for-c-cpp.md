@@ -11,11 +11,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825398"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>快速入门：C/C++ 代码分析
 
@@ -34,7 +34,7 @@ ms.locfileid: "55950092"
         > [!NOTE]
         > 当生成的代码所产生的代码分析错误和警告出现在窗体和模板中时，此选项不会取消显示它们。 可以查看和维护窗体或模板的源代码。
 
-3. 若要运行代码分析，每次使用所选的配置生成项目，选择**上生成 C/c + + 时启用代码分析**复选框。 您可以还手动运行代码分析通过打开**分析**菜单，然后选择**上运行代码分析** *ProjectName*。
+3. 若要运行代码分析，每次使用所选的配置生成项目，选择**于 c 语言时启用代码分析 /C++上生成**复选框。 您可以还手动运行代码分析通过打开**分析**菜单，然后选择**上运行代码分析** *ProjectName*。
 
 4. 在中**运行此规则集**列表中，执行下列操作之一：
 
@@ -95,7 +95,7 @@ Visual Studio 包括两个本机代码标准规则集：
 
 可以使用 Visual Studio 中的工作项跟踪功能来记录 bug。 若要使用此功能，必须连接到 Team Foundation Server 的实例。
 
-**若要创建工作项的一个或多个 C/c + + 代码警告**
+**若要创建工作项的一个或多个 C /C++代码警告**
 
 1. 在错误列表中，展开并选择警告
 
@@ -115,4 +115,4 @@ Visual Studio 包括两个本机代码标准规则集：
 
 ## <a name="see-also"></a>请参阅
 
-[C/c + + 代码分析](../code-quality/code-analysis-for-c-cpp-overview.md)
+[为 C 代码分析 /C++](../code-quality/code-analysis-for-c-cpp-overview.md)

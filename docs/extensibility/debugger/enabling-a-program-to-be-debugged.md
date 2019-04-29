@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1f301de66421ef1327b86d900305cb4ecbfb5623
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889689"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>启用要进行调试的程序
 在调试引擎 (DE) 可调试的程序之前，必须先启动 DE 或将其附加到现有的程序。

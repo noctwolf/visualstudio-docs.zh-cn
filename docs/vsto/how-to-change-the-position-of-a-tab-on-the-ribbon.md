@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826727"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：更改功能区上选项卡的位置
   可以通过更改功能区上的自定义选项卡的顺序**Tab 集合编辑器**。 之前或之后在功能区上的内置选项卡，您可以定位自定义选项卡。 内置选项卡是已在 Microsoft Office 应用程序的功能区选项卡。 例如，**数据**选项卡是在 Excel 中的内置选项卡。

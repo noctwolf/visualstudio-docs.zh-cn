@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859107"
 ---
 # <a name="service-essentials"></a>服务基础知识
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的另一个 VSPackage 来使用的接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 的集合。

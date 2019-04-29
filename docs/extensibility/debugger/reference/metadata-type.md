@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865672"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此结构指定从元数据字段类型有关的信息。
@@ -53,7 +53,7 @@ public struct METADATA_TYPE {
 
  此类型的元数据令牌 ID。
 
- [C + +]`_mdToken`是`typedef`适用于 32 位`int`。
+ [C++]`_mdToken`是`typedef`适用于 32 位`int`。
 
 ## <a name="remarks"></a>备注
  此结构显示为中的联合的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构时`dwKind`字段`TYPE_INFO`结构设置为`TYPE_KIND_METADATA`(从值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举）。

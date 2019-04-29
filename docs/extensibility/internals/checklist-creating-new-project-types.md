@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861747"
 ---
 # <a name="checklist-create-new-project-types"></a>清单：创建新的项目类型
 必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南：

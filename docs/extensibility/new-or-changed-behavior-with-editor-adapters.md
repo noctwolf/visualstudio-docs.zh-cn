@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 63c04e808228898e7542f67ec72bf9d36203547d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433651"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>新的或更改行为与编辑器适配器
 如果要更新已针对早期版本的 Visual Studio 核心编辑器，编写的代码，并且你打算使用的编辑器适配器 （或填充程序） 而不是使用新的 API，你应注意的以下编辑器适配器的行为差异相对于以前的核心编辑器。

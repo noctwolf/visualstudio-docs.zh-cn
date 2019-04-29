@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832273"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 检索的校验和类型。
@@ -41,7 +41,7 @@ HRESULT get_checksumType ( 
 ## <a name="remarks"></a>备注
  校验和类型是可以映射到校验和算法的值。 例如，在标准的 PDB 文件格式可以通常具有下列值之一：
 
-|校验和类型|CryptoAPI 标签|说明|
+|校验和类型|CryptoAPI 标签|描述|
 |-------------------|---------------------|-----------------|
 |0|\<none>|不存在的校验和。|
 |1|`CALG_MD5`|使用 MD5 哈希算法生成的校验和。|

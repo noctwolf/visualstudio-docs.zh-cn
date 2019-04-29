@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553648"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
 如果针对 Visual Studio 中设计的新功能，请按照 Visual Studio 用户体验指南。 这些指南包含有关常见用户模型和交互模式的信息，以便新用户界面 (UI) 的设计人员可以创建无缝且一致的开发环境中的用户体验。

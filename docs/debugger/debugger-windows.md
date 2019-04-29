@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852506"
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>了解有关 Visual Studio 中的调试器 Windows
 
@@ -25,7 +25,7 @@ ms.locfileid: "57526342"
 |**窗口**|**热键**|**请参阅主题**|
 |断点|CTRL+ALT+B|[使用断点](../debugger/using-breakpoints.md)|
 |异常设置|CTRL+ALT+E|[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)|
-|输出|CTRL+ALT+O|[输出窗口](../ide/reference/output-window.md)|
+|Output|CTRL+ALT+O|[输出窗口](../ide/reference/output-window.md)|
 |监视|CTRL+ALT+W、（1、2、3、4）|[监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)|
 |快速监视|SHIFT+F9|[监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)|
 |自动|CTRL+ALT+V、A|[“自动”和“局部变量”窗口](../debugger/autos-and-locals-windows.md)|

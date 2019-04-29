@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd12d18c0230af4307d0dec8fe37868801226472
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432483"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的应用程序模式
 ## <a name="BKMK_WindowInteractions"></a> 窗口的交互

@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856668"
 ---
 # <a name="language-server-protocol"></a>语言服务器协议
 
 ## <a name="what-is-the-language-server-protocol"></a>什么是语言服务器协议？
 
-支持丰富的编辑功能等源的代码自动完成或**转到定义**编辑器或 IDE 中的编程语言是传统上非常困难并花费较长时间。 通常需要编写编程语言的编辑器或 IDE 中的域模型 （扫描器、 分析器、 类型检查器、 生成器和的详细信息）。 例如，提供了支持 C/c + + 在 Eclipse IDE 的 Eclipse CDT 插件是用 Java 编写由于 Eclipse IDE 本身用 Java 编写。 按照此方法，它将表示为 Visual Studio 在 C# 中实现针对 Visual Studio Code，TypeScript 中的 C/c + + 域模型和单独的域模型。
+支持丰富的编辑功能等源的代码自动完成或**转到定义**编辑器或 IDE 中的编程语言是传统上非常困难并花费较长时间。 通常需要编写编程语言的编辑器或 IDE 中的域模型 （扫描器、 分析器、 类型检查器、 生成器和的详细信息）。 例如，Eclipse CDT 插件，它提供对 C /C++在 Eclipse IDE 中用 Java 编写由于 Eclipse IDE 本身用 Java 编写。 按照此方法，则意味着实现 C /C++用于 Visual Studio Code，TypeScript 中的域模型和中的单独的域模型C#用于 Visual Studio。
 
-创建特定于语言的域模型也是容易得多，如果一个开发工具，可以重复使用现有的特定于语言的库。 但是，这些库通常实现的编程语言本身 （例如，好 C/c + + 域模型在 C/c + + 中实现）。 集成到编辑器以 TypeScript 编写 C/c + + 库是从技术上讲可能但艰巨的任务。
+创建特定于语言的域模型也是容易得多，如果一个开发工具，可以重复使用现有的特定于语言的库。 但是，这些库通常实现本身的编程语言 (例如，良好的 C /C++在 C 中实现域模型 /C++)。 集成了 C /C++到编辑器中编写的 TypeScript 库从技术上讲是可行的但艰巨的任务。
 
 ### <a name="language-servers"></a>语言服务器
 
@@ -59,7 +59,7 @@ LSP 不断发展变化，并且立即在 3.0 版。 它启动时的语言服务�
 
 此示例说明了与编辑器功能，如"转到定义"，"查找所有引用"级别语言服务器协议的通信方式。 协议使用的数据类型是编辑器或 IDE 数据类型，如当前打开的文本文档和光标的位置。 在编程语言域模型通常提供抽象语法树和编译器符号 （例如，解析类型、 命名空间，...） 的级别不是数据类型。这大大简化了该协议。
 
-现在让我们看一下更多详细信息中的 textDocument/定义请求。 下面是客户端工具，并在 c + + 文档中的"转到定义"请求的语言服务器之间的负载。
+现在让我们看一下更多详细信息中的 textDocument/定义请求。 下面是客户端工具和语言中的"转到定义"请求服务器之间的负载C++文档。
 
 这是请求：
 

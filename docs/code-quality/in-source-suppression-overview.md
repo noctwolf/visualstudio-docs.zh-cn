@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825811"
 ---
 # <a name="suppress-code-analysis-warnings"></a>禁止显示代码分析警告
 
@@ -27,7 +27,7 @@ ms.locfileid: "57223074"
 
 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>属性是仅当在编译时定义 CODE_ANALYSIS 编译符号中的托管的代码程序集，IL 元数据包含条件属性。
 
-在 C + + /cli CLI，使用宏 CA\_禁止\_消息或 CA\_GLOBAL\_SUPPRESS_MESSAGE 标头文件中的，若要将属性添加。
+在C++/CLI，使用宏 CA\_禁止\_消息或 CA\_全局\_SUPPRESS_MESSAGE 标头文件中的，若要将属性添加。
 
 > [!NOTE]
 > 不应使用在发布版本，在源代码中禁止显示来防止意外地传送在源代码中禁止显示元数据。 此外，由于在源代码中禁止显示的处理成本，可以降低您的应用程序的性能。

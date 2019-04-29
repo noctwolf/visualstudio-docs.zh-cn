@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ba784f3a544b2f66f1f2c9c229f85477bf6c782
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890034"
 ---
 # <a name="debug-package"></a>调试包
 调试包在 Visual Studio shell 中运行，并处理所有用户界面。 它使用 Visual Studio 调试接口，并与会话调试管理器 (SDM) 进行通信。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5759d810bf9180522508a6be54e5c94ffcfadb3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839376"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 检索指定的父标识符相匹配的名称和符号类型的所有子级。

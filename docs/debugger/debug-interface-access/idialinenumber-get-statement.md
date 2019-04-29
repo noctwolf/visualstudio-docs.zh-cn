@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 397873a65176024327f371e9727b15984cd7d03f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828385"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 检索一个标志，指示此行信息描述了一条语句，而不是程序源中的表达式的开头。

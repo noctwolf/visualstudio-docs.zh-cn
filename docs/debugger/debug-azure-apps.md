@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - azure
 ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563355"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>调试 Visual Studio 中的 Azure 服务
 
 可以使用 Visual Studio 在不同的场景中调试 Azure 服务：
 
-- 若要调试在 Azure 应用服务中托管的生产应用，请参阅[调试实时 ASP.NET 应用中使用快照调试程序](../debugger/debug-live-azure-applications.md)。
+- 若要调试在 Azure 应用服务中托管的生产应用，请参阅[使用 Snapshot Debugger 调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)。
 
 - 若要调试在 Azure 虚拟机或 Azure 虚拟机规模集托管的生产应用，请参阅[调试实时 ASP.NET Azure 虚拟机和 Azure 虚拟机规模集使用 Snapshot Debugger](../debugger/debug-live-azure-virtual-machines.md)。
 

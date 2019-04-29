@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555035"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 指定应用程序或链接的模块的源代码语言。
@@ -49,7 +49,7 @@ typedef enum CV_CFL_LANG {
 ## <a name="elements"></a>元素
 CV_CFL_C 应用程序语言为 c。
 
-CV_CFL_CXX 应用程序语言是 c + +。
+CV_CFL_CXX 应用程序语言是C++。
 
 CV_CFL_FORTRAN 应用程序语言是 FORTRAN。
 

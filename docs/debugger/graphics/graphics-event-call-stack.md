@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848769"
 ---
 # <a name="graphics-event-call-stack"></a>图形事件调用堆栈
 Visual Studio 图形分析器中的图形事件调用堆栈可帮助你映射有问题的图形事件和应用的源代码之间的关系。
@@ -32,7 +32,7 @@ Visual Studio 图形分析器中的图形事件调用堆栈可帮助你映射有
 ### <a name="graphics-event-call-stack-information"></a>图形事件调用堆栈信息
  调用堆栈不支持预框架事件或用户定义的事件。 图形事件的调用堆栈以表格形式显示。
 
-|列|说明|
+|列|描述|
 |------------|-----------------|
 |**名称**|包含调用站点的函数的唯一标识符号。 这个函数的调试符号在它可用时显示；否则将显示函数偏移量。|
 |**文件**|包含调用站点的源代码文件或库文件的文件名。|

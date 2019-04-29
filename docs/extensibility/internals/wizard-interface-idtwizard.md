@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb22e857322cbd1893048392de85768287339198
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856763"
 ---
 # <a name="wizard-interface-idtwizard"></a>向导界面 (IDTWizard)
 集成的开发环境 (IDE) 使用<xref:EnvDTE.IDTWizard>接口与向导进行通信。 向导必须实现此接口，以便在 IDE 中安装。

@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 489ebd4e5aff3ef9b93ef0d8fe18f9ae8cc85011
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537197"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>从命令行创建探查器报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用 VSPerfReport 命令行工具可从分析数据 (.vsp) 文件创建 .xml 或逗号分隔值 (.csv) 报告。 VSPerfReport 报告类型非常类似基于表的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 界面视图。 可以筛选报告，使之仅显示你的代码以及分析数据文件中的一段。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
+使用 VSPerfReport 命令行工具可从分析数据 (.vsp) 文件创建 .xml 或逗号分隔值 (.csv) 报告。 VSPerfReport 报告类型非常类似基于表的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 界面视图。 可以筛选报告，使之仅显示您的代码以及分析数据文件中的一段。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
   
  通过在 .vsp 文件中嵌入符号和创建较小且打开速度较快的预分析报告 (.vsps) 文件，还可以使共享分析数据文件变得更加容易。  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 62f5547da6e2181590b231175a409c505f3da7a0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824371"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 引用
 本部分包含有关 Visual Studio 的命名空间、 相关命名空间和感兴趣的其他区域的开发人员使用 Visual Studio SDK 的信息。
@@ -126,11 +126,11 @@ ms.locfileid: "56685744"
 
 - <xref:EnvDTE100> 用于 Visual Studio 自动化。
 
-- <xref:Microsoft.VisualStudio.VCCodeModel> 用于 Visual c + + 项目自动化。
+- <xref:Microsoft.VisualStudio.VCCodeModel> 用于 VisualC++项目自动化。
 
-- <xref:Microsoft.VisualStudio.VCProject> 用于 Visual c + + 项目自动化的类。
+- <xref:Microsoft.VisualStudio.VCProject> 使用视觉对象的类C++项目自动化。
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine> 用于 Visual c + + 项目自动化。
+- <xref:Microsoft.VisualStudio.VCProjectEngine> 用于 VisualC++项目自动化。
 
 - <xref:Microsoft.VisualStudio.VsWizard> 用于 Visual Studio 向导。
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 977962352887e9cce09b3b703c3f66dd15cb7397
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889861"
 ---
 # <a name="evaluate-locals"></a>评估局部变量
 > [!IMPORTANT]
@@ -32,7 +32,7 @@ ms.locfileid: "56710898"
 
 3. 设置基于本地的类型的值的格式。
 
-4. 返回泛型对象，其中包含的本地值。 在 C# 中，这是`object`，并在 c + +，这是`VARIANT`。
+4. 返回泛型对象，其中包含的本地值。 在C#，这是`object`，然后在C++，这是`VARIANT`。
 
 ## <a name="managed-code"></a>托管代码
  这是函数的本地的检索在托管代码中值的实现。

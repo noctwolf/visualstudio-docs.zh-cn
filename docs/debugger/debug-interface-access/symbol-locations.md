@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854764"
 ---
 # <a name="symbol-locations"></a>符号位置
 大多数的符号拥有图像文件中定义的位置。 中的值指定符号的位置[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)枚举。 符号可能支持其他属性，具体取决于其位置。

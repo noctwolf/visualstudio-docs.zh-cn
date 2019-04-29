@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855287"
 ---
 # <a name="workflow-designer-ui-help"></a>工作流设计器 UI 帮助
 本节包含 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的上下文相关帮助主题。 在中工作时[!INCLUDE[vs2010](../includes/vs2010-md.md)]，可以从用户界面中访问这些主题按**F1**时[!INCLUDE[wfd2](../includes/wfd2-md.md)]对话框处于打开状态。  

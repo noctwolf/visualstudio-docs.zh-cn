@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0365c253626546d824459c580fdf2be1b87ed4ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829084"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 检索一个标志，指示系统异常处理是否生效。
@@ -41,7 +41,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="remarks"></a>备注
  系统异常处理通常称为结构化的异常处理。
 
- 若要确定是否有效 c + + 异常处理，请调用[idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)方法。
+ 若要确定是否C++异常处理处于有效时，调用[idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)方法。
 
 ## <a name="see-also"></a>请参阅
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -191,6 +191,8 @@
               href: how-to-open-standard-editors.md
             - name: 打开开放文档的编辑器
               href: how-to-open-editors-for-open-documents.md
+        - name: XAML 设计器扩展性迁移指南
+          href: xaml-designer-extensibility-migration.md
 - name: 扩展项目
   href: extending-projects.md
   items:
@@ -429,7 +431,7 @@
   href: addressing-dpi-issues2.md
 - name: 映像服务和目录
   href: image-service-and-catalog.md
-- name: 使用并提供服务
+- name: 使用和提供服务
   href: using-and-providing-services.md
   items:
     - name: 获取服务
@@ -440,7 +442,7 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: 服务疑难解答
       href: how-to-troubleshoot-services.md
-- name: 管理 VSPackages
+- name: 管理 VSPackage
   href: managing-vspackages.md
   items:
     - name: 实验实例
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: Shell（集成或独立）
   href: 'https://vspartner.com/pages/vsshells'
-- name: 传送 Visual Studio 扩展
+- name: 提供 Visual Studio 扩展
   href: shipping-visual-studio-extensions.md
   items:
     - name: VSIX 项目模板
