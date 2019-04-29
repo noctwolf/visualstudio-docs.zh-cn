@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3566709819d2023dfd6e38e40f88a454de83e3e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861734"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>项目和编辑器的其他源代码管理指南
 有大量的项目和编辑器应遵循为支持源代码管理的准则。

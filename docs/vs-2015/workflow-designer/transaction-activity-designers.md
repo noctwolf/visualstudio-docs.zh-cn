@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b73a28e9a3f0fb5a3b5aa618296fe5a44b88cff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976584"
 ---
 # <a name="transaction-activity-designers"></a>事务活动设计器
 各事务活动设计器用于创建和配置事务性活动，如补偿和确认。 本节中所包含并在下表中列出的各主题介绍如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活动和模板设计器。  

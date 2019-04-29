@@ -17,19 +17,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a7bc365df9ef84b5ef8e501bcbbfd48865bb865e
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952680"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>创建项模板和用于 SharePoint 项目项的项目模板
-  在定义的自定义 SharePoint 项目项类型时，可以将其与项模板或项目模板。 这种关联允许其他开发人员使用 Visual Studio 中的项目项。 此外可以创建模板向导。
 
- 例如，Visual Studio 不包括项目模板或项模板将字段添加到 SharePoint 站点。 可以定义 SharePoint 项目项类型表示的字段，然后构造其他开发人员可用于将字段项添加到 SharePoint 项目项模板。 或者，您可以构建项目模板，以便开发人员可以创建新的 SharePoint 项目具有字段项。 在这两种情况下，你还可以提供开发人员使用你的模板时，将显示一个向导。 此向导可以从开发人员配置新项目收集的信息。
+在定义的自定义 SharePoint 项目项类型时，可以将其与项模板或项目模板。 这种关联允许其他开发人员使用 Visual Studio 中的项目项。 此外可以创建模板向导。
 
- 项模板和项目模板是 *.zip*包含 Visual Studio 用来创建项目项或项目的文件的文件。 有关项模板和项目模板的基础知识的详细信息，请参阅[创建项目和项模板](../ide/creating-project-and-item-templates.md)。
+例如，Visual Studio 不包括项目模板或项模板将字段添加到 SharePoint 站点。 可以定义 SharePoint 项目项类型表示的字段，然后构造其他开发人员可用于将字段项添加到 SharePoint 项目项模板。 或者，您可以构建项目模板，以便开发人员可以创建新的 SharePoint 项目具有字段项。 在这两种情况下，你还可以提供开发人员使用你的模板时，将显示一个向导。 此向导可以从开发人员配置新项目收集的信息。
+
+项模板和项目模板是 *.zip*包含 Visual Studio 用来创建项目项或项目的文件的文件。 有关项模板和项目模板的基础知识的详细信息，请参阅[创建项目和项模板](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="create-item-templates"></a>创建项模板
  创建 SharePoint 项目项的项模板时，有一些始终是必需的文件和可能使用的某些类型的项目项的可选文件。 有关演示如何定义 SharePoint 项目项类型并为其创建项模板的演练，请参阅[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
@@ -43,7 +44,6 @@ ms.locfileid: "57868029"
 |Visual Studio 的扩展插件程序集，实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>接口。|此程序集定义项目项的运行的时的行为。 此程序集必须包含带有项模板 VSIX 包中。 有关详细信息，请参阅[定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)并[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。|
 
  下表列出了一些最常见的可选文件可以包括在项模板。 某些类型的项目项可能需要此处未列出的其他文件。
-
 
 | 可选文件 | 描述 |
 |----------------------| - |
@@ -72,7 +72,7 @@ ms.locfileid: "57868029"
 
 |可选文件|描述|
 |-------------------|-----------------|
-|SharePoint 项目项|可以包含一个或多个.spdata 文件，用于定义 SharePoint 项目项类型。 每个 *.spdata*文件必须具有匹配<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>VSIX 包项目模板中包括的扩展程序集中实现。 有关详细信息，请参阅[创建项模板](#createitemtemplates)。<br /><br /> 通常情况下，SharePoint 项目包含至少一个 SharePoint 项目项。 但是，这不是必需的。|
+|SharePoint 项目项|可以包含一个或多个.spdata 文件，用于定义 SharePoint 项目项类型。 每个 *.spdata*文件必须具有匹配<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>VSIX 包项目模板中包括的扩展程序集中实现。 有关详细信息，请参阅[创建项模板](#create-item-templates)。<br /><br /> 通常情况下，SharePoint 项目包含至少一个 SharePoint 项目项。 但是，这不是必需的。|
 |*\<featureName>.feature*|此文件定义了一项 SharePoint 功能，用于部署的多个项目项进行分组。 当功能设计器用于在项目中自定义功能时，Visual Studio 将在此文件中存储有关功能的数据。 如果你想要将项目项分组为不同的功能，可以包括多个 *.feature*文件。<br /><br /> 创建自定义 SharePoint 项目模板时，我们建议在每个包含的最小所需的内容 *.feature*文件，并使用中的 Api 配置功能<xref:Microsoft.VisualStudio.SharePoint.Features>中的命名空间与项目模板关联的扩展。 如果这样做，你的项目模板防止将来的更改的结构 *.feature*文件。 有关示例，演示如何创建 *.feature*文件具有的最低要求的内容，请参阅[演练：使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。<br /><br /> 如果你想要修改 *.feature*直接文件中，您可以通过使用中的架构来验证内容 *%Program Files (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\FeatureModelSchema.xsd*。|
 |*\<featureName>.Template.xml*|此文件提供了基础功能清单文件 (*Feature.xml*) 从项目生成的每项功能。 如果你想要指定不应由您的项目类型的用户更改某些行为，可以添加到此文件的内容。 有关详细信息，请参阅[构建基块：功能](http://go.microsoft.com/fwlink/?LinkId=169183)并[Feature.xml](http://go.microsoft.com/fwlink/?LinkId=177795)文件。<br /><br /> Visual Studio 生成时从项目的解决方案包，将每个对的内容合并 *\<featureName >.feature*文件并*\<功能名 >。Template.xml*文件到一项功能清单文件。 有关生成解决方案包的详细信息，请参阅[如何：使用 MSBuild 任务创建 SharePoint 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)。|
 

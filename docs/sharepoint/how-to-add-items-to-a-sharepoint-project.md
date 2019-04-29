@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 572b466907fdbe43c5b9f094b74837ca05d1b212
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966947"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：将项添加到 SharePoint 项目
   SharePoint 解决方案包含一个或多个项目，其中每个包含多个 SharePoint 项目项。 打开或创建 SharePoint 解决方案后，您可以将新的或现有项添加到这些项目。 例如，新工作流项目附带一个默认窗体，名为 default.aspx，但可以替换为新的或不同的窗体，该窗体或添加另一个 ASPX 窗体。

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c999543306508bdba4a1b600e509ffadbe2ce4c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945201"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素可确定命令和工具栏的静态可见性。 每个条目标识命令或菜单中，以及关联的命令 UI 上下文。 Visual Studio 检测命令、 菜单和工具栏和其可见性，而不加载 Vspackage 的定义它们。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法来确定命令 UI 上下文是否处于活动状态。
@@ -49,7 +49,7 @@ ms.locfileid: "56689780"
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
- 无
+ None
 
 ### <a name="parent-elements"></a>父元素
 

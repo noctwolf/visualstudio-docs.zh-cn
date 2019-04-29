@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28334cc7aa0c8a5587a20d6c9dfdee3133d9ea7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921785"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此接口表示源文档。
@@ -43,7 +43,7 @@ IDebugDocument2 : IUnknown
 |[GetDocumentClassID](../../../extensibility/debugger/reference/idebugdocument2-getdocumentclassid.md)|获取文档的类标识符。|
 
 ## <a name="remarks"></a>备注
- 仅当 DE 提供的源代码时，实现此接口。 例如，调试 HTML 页面上的脚本时，DE 提供的源代码由于下载或动态生成的源，并且不存在为磁盘文件。 传统的语言，如 c + +，进行调试时则不需要实现此接口。
+ 仅当 DE 提供的源代码时，实现此接口。 例如，调试 HTML 页面上的脚本时，DE 提供的源代码由于下载或动态生成的源，并且不存在为磁盘文件。 当调试传统语言中，如C++，不需要实现此接口。
 
 ## <a name="requirements"></a>要求
  标头： msdbg.h

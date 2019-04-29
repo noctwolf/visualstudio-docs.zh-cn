@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898719"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;元素 （引导程序）
 `RelatedProducts`元素定义取决于或当前产品中包含其他产品。
@@ -57,7 +57,7 @@ ms.locfileid: "56621625"
 
  `DependsOnProduct` 具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Code`|所含的产品，由指定的代号`ProductCode`属性的`Product`元素。 有关详细信息，请参阅[\<产品 > 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -69,7 +69,7 @@ ms.locfileid: "56621625"
 
  `IncludesProduct` 具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Code`|所含的产品，由指定的代号`ProductCode`属性的`Product`元素。 有关详细信息，请参阅[\<产品 > 元素](../deployment/product-element-bootstrapper.md)。|
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5b100ccac042aeed3ed8211c56fc1129311d850b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889848"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>表达式计算 (Visual Studio Debugging SDK)
 在中断模式下，IDE 的计算结果必须涉及多个程序变量的简单表达式。 若要完成其评估，调试引擎 (DE) 必须分析和计算表达式，用于输入到其中一个 IDE 的窗口。

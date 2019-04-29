@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f070b02c9b91420fab9058e3d33aa682334f9cd4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974665"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用域特定语言解决方案
 使用 Visual Studio 解决方案创建域特定语言 (DSL)。 本部分是有关如何设置和自定义解决方案。

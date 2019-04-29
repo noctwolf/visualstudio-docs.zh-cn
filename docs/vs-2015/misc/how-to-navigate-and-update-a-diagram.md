@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71d37232bd2179b2fe27d7bcbad49ab4aac991ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938230"
 ---
 # <a name="how-to-navigate-and-update-a-diagram"></a>如何：导航和更新图表
 本主题已与其他内容合并。 请转到[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。

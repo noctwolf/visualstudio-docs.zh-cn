@@ -1,5 +1,5 @@
 ---
-title: 如何： 显示窗口属性 |Microsoft Docs
+title: 如何：显示窗口属性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c1be02b5adb486cf101dc9b021ea70bbd72674a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906747"
 ---
 # <a name="how-to-display-window-properties"></a>如何：显示窗口属性
 若要了解有关中列出的窗口的详细信息[Windows 视图](../debugger/windows-view.md)，使用[窗口属性对话框](../debugger/window-properties-dialog-box.md)。

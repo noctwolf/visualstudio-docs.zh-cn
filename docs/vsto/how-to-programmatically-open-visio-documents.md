@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812246"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
   有两种方法来打开现有 Microsoft Office Visio 文档：打开和 OpenEx。 OpenEx 方法等同于 Open 方法，只不过它提供调用方可以在其中指定文档打开方式的参数。

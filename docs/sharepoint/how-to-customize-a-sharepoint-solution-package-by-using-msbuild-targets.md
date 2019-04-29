@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814012"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用 MSBuild 目标自定义 SharePoint 解决方案包
   通过在命令提示符处使用 MSBuild 目标，您可以自定义 Visual Studio 创建 SharePoint 包文件的方式 (*.wsp*)。 例如，可以自定义 MSBuild 属性以更改打包中间目录，以及自定义 MSBuild 项组以指定枚举的文件。
 
 ## <a name="customize-and-run-msbuild-targets"></a>自定义和运行 MSBuild 目标
- 如果自定义 BeforeLayout 和 AfterLayout 目标，你可以在布局包之前执行任务，例如，添加、移除或修改要打包的文件。
+ 如果自定义 BeforeLayout 和 AfterLayout 目标，您可以在布局包之前执行任务，例如，添加、移除或修改要打包的文件。
 
 #### <a name="to-customize-the-beforelayout-target"></a>若要自定义 BeforeLayout 目标
 

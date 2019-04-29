@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6e060f168ea301b898fe578ac0d5030a2ae7e774
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937479"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用代码映射来映射依赖项
 
@@ -38,7 +38,7 @@ ms.locfileid: "57223697"
 
 - Visual C# 或 Visual Basic 中的解决方案或程序集 (*.dll*或 *.exe*)
 
-- 在 Visual c + + 项目中，标头文件的本机或托管 C 或 c + + 代码 (*.h*或`#include`)，或二进制文件
+- 本机或托管 C 或C++视觉对象中的代码C++项目，标头文件 (*.h*或`#include`)，或二进制文件
 
 - 通过 Microsoft Dynamics AX 的 .NET 模块生成的 X++ 项目和程序集
 

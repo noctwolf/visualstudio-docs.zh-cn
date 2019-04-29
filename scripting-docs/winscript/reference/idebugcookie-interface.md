@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8ee129526113a1c8af8f918de81c1f286d5cb703
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974509"
 ---
 # <a name="idebugcookie-interface"></a>IDebugCookie 接口
 允许设置，以用于调试 cookie`IMachineDebugManagerCookie`接口。 有关详细信息，请参阅[IMachineDebugManagerCookie 接口](../../winscript/reference/imachinedebugmanagercookie-interface.md)。 此接口已实现的进程调试管理器 (PDM) 和已使用脚本调试器。  

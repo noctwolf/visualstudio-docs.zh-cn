@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a3bd991a1d8beb355456e3b8cf7f864975b499cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934881"
 ---
 # <a name="expected-identifier-string-or-number"></a>应为标识符、字符串或数字
 不正确的文本语法用于声明对象文字。 对象文字的属性必须是标识符、 字符串或数字。 对象文字 （也称为"对象初始值设定项"） 包含以逗号分隔的属性： 值对，所有包含在括号内的列表。 例如：  
