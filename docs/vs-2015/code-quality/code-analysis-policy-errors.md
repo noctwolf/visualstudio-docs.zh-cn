@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 9b61d7d9718e9557ef153474718542f889ad7629
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576736"
 ---
 # <a name="code-analysis-policy-errors"></a>代码分析策略错误
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,9 +71,9 @@ ms.locfileid: "58934187"
   
    应用于此错误[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目和 Web 项目。 该策略需要托管的代码分析，以执行，但未启用客户端上的当前项目中。  
   
-   **必须在项目中启用 C/c + + 代码分析{0}属性和之前的版本签入。**  
+   **必须启用 C /C++项目中的代码分析{0}属性和之前的版本签入。**  
   
-   此错误适用于非托管项目。 代码分析策略要求代码分析 C/c + +，但它未启用客户端上的当前项目中。  
+   此错误适用于非托管项目。 代码分析策略要求代码分析 c /C++，但它未启用客户端上的当前项目中。  
   
 ## <a name="see-also"></a>请参阅  
  [代码分析应用程序错误](../code-quality/code-analysis-application-errors.md)

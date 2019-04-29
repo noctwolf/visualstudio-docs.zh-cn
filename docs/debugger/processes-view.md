@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904219"
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示在系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定系统进程，它通常对应于正在执行的程序，请使用进程视图。 进程标识由模块名称，或者它们被指定"系统进程"。

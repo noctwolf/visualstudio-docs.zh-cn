@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905235"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>快照调试程序入门
 
@@ -57,7 +57,7 @@ Visual Studio 快照调试器现在连接到你的服务，可以开始收集快
 
     ![吸附点条件](../media/snapshot-startpage-logpoint.png)
 
-3. 在中**消息**字段中，输入想要记录的日志消息。 您也可以通过将它们放在大括号内将日志消息中计算变量。
+3. 在中**消息**字段中，输入想要记录的日志消息。 还可以将日志消息中的变量放在大括号中，从而计算它们的值。
 
     如果愿意**将发送到输出窗口**，命中记录点时，诊断工具窗口中将显示该消息。
 

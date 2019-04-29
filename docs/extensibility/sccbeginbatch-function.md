@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5fd571f967e478b3a03347d6151deb9fc88f62ef
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433313"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函数
 此函数将启动批处理序列的源代码管理操作。 [SccEndBatch](../extensibility/sccendbatch-function.md)将调用以结束该批处理。 这些批不能嵌套。
@@ -34,7 +34,7 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|一批操作已成功开始。|
 |SCC_E_UNKNOWNERROR|非特定故障。|

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e14086ea395ffe65a52f47d0bfaa320fb19bc8f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910061"
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
 接口和实现中的所有项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共享的基本结构： 你的项目类型的项目模型。 在你的项目模型中，这是你正在开发的 VSPackage，你将创建符合您的设计决策，并且由 IDE 提供全局功能协同工作的对象。 尽管您控制如何保持项目项，例如，您不控制通知必须保留一个文件。 当用户将焦点放置于打开项目项上，选择**保存**上**文件**菜单上的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]菜单栏中，你的项目类型代码必须截获从 IDE 命令，保存该文件，并发送通知到 IDE 的文件不能再更改。
@@ -32,7 +32,7 @@ ms.locfileid: "56623094"
 
 - 每个项目必须有一个模板文件或向导来初始化新的项目文件，当用户创建新的项目通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]模板初始化什么最终成为.vcproj 文件。
 
-  下图显示了主要接口、 服务和对象组成的典型项目中实现。 可以使用应用程序帮助器， `HierUtil7`、 创建基础对象和其他编程样板。 有关详细信息`HierUtil7`应用程序的帮助器，请参阅[使用 HierUtil7 项目类以实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
+  下图显示了主要接口、 服务和对象组成的典型项目中实现。 可以使用应用程序帮助器， `HierUtil7`、 创建基础对象和其他编程样板。 有关详细信息`HierUtil7`应用程序的帮助器，请参阅[使用 HierUtil7 项目类以实现一种项目类型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)。
 
   ![Visual Studio 项目模型图](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")项目模型
 
@@ -42,7 +42,7 @@ ms.locfileid: "56623094"
 
 ## <a name="see-also"></a>请参阅
 - [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [使用 HierUtil7 项目类来实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [使用 HierUtil7 项目类来实现一种项目类型 (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [项目模型核心组件](../../extensibility/internals/project-model-core-components.md)
 - [使用项目工厂创建的项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 - [如何：获取服务](../../extensibility/how-to-get-a-service.md)

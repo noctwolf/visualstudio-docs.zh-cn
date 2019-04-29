@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 519602b09ea1adcf00ed534ecb22b4a082018464
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838036"
 ---
 # <a name="idiastackframegetsystemexceptionhandling"></a>IDiaStackFrame::get_systemExceptionHandling
 检索一个标志，指示系统异常处理是否生效。
@@ -39,9 +39,9 @@ HRESULT get_systemExceptionHandling ( 
  如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 系统异常处理也称为是结构化的异常处理。 这不是与 c + + 异常处理相同的功能。
+ 系统异常处理也称为是结构化的异常处理。 这不是与相同的C++异常处理。
 
- 若要确定是否有效 c + + 异常处理，请调用[idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)方法。
+ 若要确定是否C++异常处理处于有效时，调用[idiastackframe:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)方法。
 
 ## <a name="see-also"></a>请参阅
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

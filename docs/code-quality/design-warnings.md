@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816794"
 ---
 # <a name="design-warnings"></a>设计警告
 设计警告支持对.NET Framework 设计准则的遵从性。
@@ -28,7 +28,7 @@ ms.locfileid: "55908889"
 
 | 规则 | 描述 |
 | - | - |
-| [CA1000:不要在泛型类型中声明静态成员](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | 调用泛型类型的静态成员时，必须指定该类型的类型参数。 当调用不支持推理的泛型实例成员时，必须指定该成员的类型参数。 在上述两种情况下，用于指定类型参数的语法不同，但很容易混淆。 |
+| [CA1000:不要在泛型类型中声明静态成员](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | 调用泛型类型的静态成员时，必须指定该类型的类型参数。 当调用不支持推理的泛型实例成员时，必须指定该成员的类型参数。 在上述两种情况下，用于指定类型自变量的语法不同，但很容易混淆。 |
 | [CA1001：具有可释放字段的类型应该是可释放的](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | 一个类声明并实现 System.IDisposable 类型的实例字段和类不实现 IDisposable。 声明 IDisposable 字段的类间接拥有非托管资源，并且应该实现 IDisposable 接口。 |
 | [CA1002:不要公开泛型列表](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (的\<(T >) >) 是专为性能，不继承的泛型集合。 因此，List 不包含任何虚拟成员。 应改为公开针对继承设计的泛型集合。 |
 | [CA1003:使用泛型事件处理程序实例](../code-quality/ca1003-use-generic-event-handler-instances.md) | 一种类型包含一个委托，它返回 void，其签名包含两个参数 （一个的对象的第一个和第二个是分配给 EventArgs 的类型） 和包含程序集针对[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。 |
@@ -39,7 +39,7 @@ ms.locfileid: "55908889"
 | [CA1008:枚举应具有零值](../code-quality/ca1008-enums-should-have-zero-value.md) | 像其他值类型一样，未初始化枚举的默认值为零。 无标志特性化枚举应定义一个成员，通过使用值为零，默认值枚举的有效值。 如果应用了 FlagsAttribute 特性的枚举定义值为零成员，则该成员的名称应为“None”，以指示枚举中尚未设置值。 |
 | [CA1009:正确声明事件处理程序](../code-quality/ca1009-declare-event-handlers-correctly.md) | 事件处理程序方法采用两个参数。 第一个参数属于 System.Object 类型，名为“sender”。 它是引发事件的对象。 第二个参数属于 System.EventArgs 类型，名为“e”。 这是与该事件关联的数据。 事件处理程序方法不应返回值；在 C# 编程语言中，这由返回类型 void 指示。 |
 | [CA1010:集合应实现泛型接口](../code-quality/ca1010-collections-should-implement-generic-interface.md) | 若要扩大集合的用途，应实现某个泛型集合接口。 然后，可以使用该集合来填充泛型集合类型。 |
-| [CA1011:请考虑将基类型作为参数传递](../code-quality/ca1011-consider-passing-base-types-as-parameters.md) | 在方法声明中将基类型指定为参数时，可以将派生自基类型的任何类型作为相应的自变量传递给方法。 如果不需要派生参数类型提供的其他功能，则使用基类型将使方法可以得到更广泛的使用。 |
+| [CA1011:请考虑将基类型作为参数传递](../code-quality/ca1011-consider-passing-base-types-as-parameters.md) | 在方法声明中将基类型指定为参数时，可以将派生自基类型的任何类型作为相应的参数传递给方法。 如果不需要派生参数类型提供的其他功能，则使用基类型将使方法可以得到更广泛的使用。 |
 | [CA1012:抽象类型不应具有构造函数](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | 抽象类型的构造函数只能由派生类型调用。 由于公共构造函数用于创建类型的实例，但无法为抽象类型创建实例，因此具有公共构造函数的抽象类在设计上是错误的。 |
 | [CA1013:重载相等运算符，加法和减法](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | 公共或受保护类型实现加或减运算符时没有实现相等运算符。 |
 | [CA1014:用 CLSCompliantAttribute 标记程序集](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | 公共语言规范 (CLS) 定义了程序集在跨编程语言使用时必须符合的命名限制、数据类型和规则。 好的设计要求所有程序集显式使用 CLSCompliantAttribute 指示 CLS 遵从性。 如果程序集没有此特性，则该程序集即不合规。 |
@@ -51,7 +51,7 @@ ms.locfileid: "55908889"
 | [CA1021:避免使用 out 参数](../code-quality/ca1021-avoid-out-parameters.md) | 通过引用（使用 out 或 ref）传递类型要求具有使用指针的经验，了解值类型和引用类型的不同之处，以及能处理具有多个返回值的方法。 另外，out 和 ref 参数之间的差异没有得到广泛了解。 |
 | [CA1023:索引器不应是多维](../code-quality/ca1023-indexers-should-not-be-multidimensional.md) | 索引器（即索引属性）应该使用一个索引。 多维索引器会大大降低库的可用性。 |
 | [CA1024： 在适用处在适用处使用属性](../code-quality/ca1024-use-properties-where-appropriate.md) | 公共或受保护方法的名称以“Get”开头，没有采用任何参数或返回的值不是数组。 该方法可能很适于成为属性。 |
-| [CA1025:用形参数组替换重复的实参](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md) | 如果自变量的具体数量未知且变量自变量为相同类型或可作为相同类型传递，请使用参数数组代替重复自变量。 |
+| [CA1025:用形参数组替换重复的实参](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md) | 如果参数的具体数量未知且变量参数为相同类型或可作为相同类型传递，请使用参数数组代替重复参数。 |
 | [CA1026:不应使用默认参数](../code-quality/ca1026-default-parameters-should-not-be-used.md) | CLS 中允许使用默认参数的方法；但是 CLS 允许编译器忽略为这些参数分配的值。 为了跨编程语言维护所需的行为，必须使用提供默认参数的方法重载来替换使用默认参数的方法。 |
 | [CA1027:用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md) | 枚举是一种值类型，它定义一组相关的已命名常数。 如果可以按照有意义的方式组合一个枚举的已命名常数，则对该枚举应用 FlagsAttribute。 |
 | [CA1028:枚举存储应为 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md) | 枚举是一种值类型，它定义一组相关的已命名常数。 默认情况下，System.Int32 数据类型用于存储常量值。 尽管可以更改此基础类型，它不要求或不推荐用于大多数方案。 |

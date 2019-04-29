@@ -26,26 +26,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898128"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。
 
  产品和包文件包含的顶级`Product`或`Package`元素，其中每个包含下列元素。
 
-|元素|说明|特性|
+|元素|描述|特性|
 |-------------|-----------------|----------------|
-|[\<产品 > 元素](../deployment/product-element-bootstrapper.md)|所需的产品文件的顶级元素。|None|
-|[\<包 > 元素](../deployment/package-element-bootstrapper.md)|必需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 中的其他产品的此产品安装或依赖于。|None|
-|[\<InstallChecks > 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出的依赖项检查过程中要执行本地计算机上安装。|None|
-|[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查，如中所述`InstallChecks`，表示要安装的包应检查失败。|None|
-|[\<PackageFiles > 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出可能情况下此安装过程中安装的包。|None|
-|[\<字符串 > 元素](../deployment/strings-element-bootstrapper.md)|必需的元素。 存储的本地化版本的产品名称和错误字符串。|None|
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|所需的产品文件的顶级元素。|None|
+|[\<Package> 元素](../deployment/package-element-bootstrapper.md)|必需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 中的其他产品的此产品安装或依赖于。|None|
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出的依赖项检查过程中要执行本地计算机上安装。|None|
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查，如中所述`InstallChecks`，表示要安装的包应检查失败。|None|
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出可能情况下此安装过程中安装的包。|None|
+|[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必需的元素。 存储的本地化版本的产品名称和错误字符串。|None|
 
 ## <a name="remarks"></a>备注
  使用包架构*Setup.exe*，由 MS 生成启动包含其自身的少硬编码的逻辑任务生成的存根 （stub） 程序。 该架构可以促进安装过程的各个方面。

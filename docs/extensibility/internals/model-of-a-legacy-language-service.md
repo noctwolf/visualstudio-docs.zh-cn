@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860095"
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧版语言服务模型
 语言服务定义的元素和特定语言的功能，用于在编辑器提供特定于该语言的信息。 例如，在编辑器需要知道的元素和语言的关键字，才能支持语法突出显示。

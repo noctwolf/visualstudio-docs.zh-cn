@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908915"
 ---
 # <a name="test-area-2-get-from-source-control"></a>测试区域 2：从源代码管理获取
 此测试部分覆盖了用于从通过 Get 命令的版本存储区中检索项的测试用例。 可以应用这些测试用例，对本地和 Web 项目。

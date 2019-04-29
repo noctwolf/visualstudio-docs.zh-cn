@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d64e774fe418bb7373a6e632b1e8c2cebecc2854
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815019"
 ---
 # <a name="work-with-ranges"></a>使用范围
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Interop.Excel.Range> 类包含用于对范围执行任务的方法和属性。

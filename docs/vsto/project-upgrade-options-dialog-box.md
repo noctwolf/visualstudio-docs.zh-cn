@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561733"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>项目升级，选项对话框
   使用“项目升级”  页可指定 Visual Studio 是否将自动更改 VSTO 外接程序项目以面向开发计算机上安装的 Office 版本。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832550"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 允许客户端应用程序提供的按文件位置指定的可执行文件的字节数。
@@ -31,7 +31,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法`IDiaReadExeAtOffsetCallback`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|读取指定的可执行文件从指定的偏移量开始的字节数。|
 
@@ -42,7 +42,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
  此方法是由客户端应用程序实现并传递给[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法作为一种方法来读取文件。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2.h
+ 标头：dia2.h
 
  库： diaguids.lib
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98402a61629b48b25a8636aaf6a912e89c283951
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910021"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>在旧版语言服务中自定义文档属性
 文档属性可以显示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**属性**窗口。 编程语言通常没有与单个源代码文件相关联的属性。 但是，XML 支持会影响编码、 架构和样式表的文档属性。

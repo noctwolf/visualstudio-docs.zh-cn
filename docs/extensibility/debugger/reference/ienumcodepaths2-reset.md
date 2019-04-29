@@ -1,44 +1,46 @@
 ---
 title: IEnumCodePaths2::Reset | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IEnumCodePaths2::Reset
 helpviewer_keywords:
 - IEnumCodePaths2::Reset
 ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: a20697c83546fc08c3c08154961a403f18a39c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62867611"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
-将枚举重置为第一个元素。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>语法
-
-```cpp
-HRESULT Reset(
-   void
-);
-```
-
-```csharp
-int Reset();
-```
-
-## <a name="return-value"></a>返回值
- 如果成功，则返回`S_OK`; 否则为返回错误代码。
-
-## <a name="remarks"></a>备注
- 调用此方法下, 一步调用后[下一步](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)方法返回的第一个元素的枚举。
-
-## <a name="see-also"></a>请参阅
-- [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
+将枚举重置为第一个元素。  
+  
+## <a name="syntax"></a>语法  
+  
+```cpp#  
+HRESULT Reset(  
+   void  
+);  
+```  
+  
+```csharp  
+int Reset();  
+```  
+  
+## <a name="return-value"></a>返回值  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。  
+  
+## <a name="remarks"></a>备注  
+ 调用此方法下, 一步调用后[下一步](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)方法返回的第一个元素的枚举。  
+  
+## <a name="see-also"></a>请参阅  
+ [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

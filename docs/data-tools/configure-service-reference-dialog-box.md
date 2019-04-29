@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567968"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 
@@ -105,5 +105,5 @@ ms.locfileid: "55955240"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：添加对 Web 服务的引用](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [如何：添加对 web 服务的引用](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/configure-service-reference-dialog-box.md)

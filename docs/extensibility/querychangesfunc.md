@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2c7a993bca55f1224661e15f9a7ecbf0a967e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433417"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是一个回调函数，用于通过[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举集合的文件的名称，并确定每个文件的状态。

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895368"
 ---
 # <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
 定义图形日志文件的默认文件名。
@@ -27,7 +27,7 @@ ms.locfileid: "56711821"
 #### <a name="parameters"></a>参数
  `filename` 以编程方式捕获图形信息时默认为图形日志文件指定的文件名。
 
-## <a name="value"></a>值
+## <a name="value"></a>“值”
  表示图形日志文件的文件名的字符串。 默认情况下为 L"default.vsglog"。
 
 ```C++

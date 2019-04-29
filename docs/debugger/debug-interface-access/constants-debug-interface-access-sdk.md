@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed505499efcabd7173fea9d668cd9afa5ed6d925
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555073"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常量（调试接口访问 SDK）
 这些字符串常量可用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。
 
 ## <a name="constants"></a>常量
-以下被声明为 C/c + + 宏。
+以下声明为 C /C++宏。
 
-|宏|值|
+|宏|“值”|
 |-----------|-----------|
 |`DiaTable_Symbols`|L"符号"|
 |`DiaTable_Sections`|L"Section"|
