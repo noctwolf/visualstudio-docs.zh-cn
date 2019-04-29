@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964295"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 DslDefinition 属性将显示在**属性**窗口时单击关系图中的空白区域*域特定语言设计器*。
@@ -28,7 +28,7 @@ DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 Dsl
 |访问修饰符|确定域类的访问修饰符是否为公用或内部。|public|
 |自定义特性|自定义的域类的属性。<br /><br /> **请注意**使用浏览按钮将属性添加。|\<none>|
 |公司名称|在系统注册表中的当前公司名称的名称。|当前的公司名称|
-|name|此域类的名称。|当前名称|
+|名称|此域类的名称。|当前名称|
 |命名空间|隶属于此域类的命名空间。|当前命名空间|
 |包 Guid|为此 DSL 生成的 Visual Studio 包 guid。|\<none>|
 |包 Namespace|为此 DSL 生成的 Visual Studio 包命名空间。|\<none>|
@@ -37,7 +37,7 @@ DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 Dsl
 |描述|此域类的说明。|\<none>|
 |显示名称|将此域类生成的设计器中显示的名称。|\<none>|
 |帮助关键字|与此域类关联的帮助关键字。|\<none>|
-|生成|有关此特定于域的语言定义的增量生成数。|0|
+|Build|有关此特定于域的语言定义的增量生成数。|0|
 |主要版本|有关此特定于域的语言定义的增量的主要版本号。|1|
 |次要版本|有关此特定于域的语言定义的增量的次要版本号。|0|
 |Revision|有关此特定于域的语言定义的递增修订版本号。|0|

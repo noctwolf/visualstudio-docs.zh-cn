@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971116"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：对 Office 解决方案进行签名
   如果登录解决方案，可以授予对使用证书作为证据的解决方案的信任。 可将同一个证书用于多个解决方案，并且所有解决方案都将没有进行任何额外的安全策略更新受信任。

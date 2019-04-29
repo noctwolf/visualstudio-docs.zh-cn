@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c761fccfafae4af864264cc5b9d103d09b61710
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994447"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>从域特定语言生成代码
 Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供了一种强大方法从模型中表示的数据生成代码、 文档、 配置文件和其他项目。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，可以创建一组类，表示数据，可以编写文本模板中的类名称和属性反映了该数据。
@@ -38,11 +38,11 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供了一种强大方
 
  提供有关特定于域的语言在文本模板中引用的基本信息。
 
- [演练：调试文本模板访问模型](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [演练：调试访问模型的文本模板](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  描述如何进行故障排除和调试特定于域的语言是指在文本模板。
 
- [演练：将主机连接到生成的指令处理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [演练：将主机连接到所生成的指令处理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  介绍如何连接到生成的指令处理器自定义主机。
 

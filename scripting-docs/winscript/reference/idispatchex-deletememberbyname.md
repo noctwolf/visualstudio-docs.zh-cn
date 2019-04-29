@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: dc7c8db4ab28e0bd0fcb48f352cb07595f72fd17
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000885"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 按名称删除一个成员。  
@@ -43,7 +43,7 @@ HRESULT DeleteMemberByName(
  `grfdex`  
  确定成员名称是否区分大小写。 这可以是下列值之一：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|名称查找区分大小写的方式完成的请求。 可以忽略不支持区分大小写查找的对象。|  
 |fdexNameCaseInsensitive|该名称查找可在不区分大小写的方式完成的请求。 可以忽略不支持不区分大小写查找的对象。|  

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ec5c271c023483ea64ddbabb83129ea9a44e4c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911609"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何：注册文本缓冲区事件与传统的 API
 如果使用传统的 API 来访问文本缓冲区，则应注册文本缓冲区事件，如下面的过程中所示。

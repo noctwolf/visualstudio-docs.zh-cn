@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907597"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 为自定义创建新的项目类型提供了基础[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为你的用户。 但是，创建新的项目类型不是必需的所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自定义项。 以下指导原则应帮助您确定是否需要为你的方案的新项目类型。

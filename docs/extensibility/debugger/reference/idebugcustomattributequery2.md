@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 23f76cfc71fab73d5d31fe3f47c3f8c552271aa7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921628"
 ---
 # <a name="idebugcustomattributequery2"></a>IDebugCustomAttributeQuery2
 确定存在此字段的自定义属性，并且如果存在，将返回属性信息。

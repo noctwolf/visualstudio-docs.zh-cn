@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f1719656c475dc6ee78de27f068baaf77c8b2a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971403"
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint 开发示例
   Visual Studio 可用于下载和安装的 SharePoint 应用程序从[MSDN 代码库](http://go.microsoft.com/fwlink/?LinkId=254185)。

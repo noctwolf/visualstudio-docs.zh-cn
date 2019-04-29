@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: cb8f1b5aac6df8d8659fa323f3f1efcb7721d97f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955052"
 ---
 # <a name="iactivescriptauthorgetscriptlettextattributes"></a>IActiveScriptAuthor::GetScriptletTextAttributes
 返回 scriptlet 文本的属性。  
@@ -52,7 +52,7 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  [in]与 scriptlet 文本属性相关联的标志。 可以是以下值的组合。  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|标识具有 SOURCETEXT_ATTR_IDENTIFIER 属性的标识符和标识具有 SOURCETEXT_ATTR_MEMBERLOOKUP 属性的圆点运算符。|  
 |GETATTRFLAG_THIS|0x0100|标识具有 SOURCETEXT_ATTR_THIS 属性的当前对象。|  

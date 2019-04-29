@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999258"
 ---
 # <a name="properties-of-diagrams"></a>关系图的属性
 可以设置指定关系图将在生成的设计器中的显示方式的属性。 例如，您可以在关系图中指定文本的默认颜色。
@@ -33,9 +33,9 @@ ms.locfileid: "55937250"
 |自定义特性|用于将属性添加到生成的代码类。|\<none>|
 |生成双派生|如果`True`，将生成的基类和一个分部类 （以支持通过重写自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
-|继承修饰符|描述的关系图生成源代码类的继承的类型 (`none`， `abstract`，或`sealed`)。|无|
+|继承修饰符|描述的关系图生成源代码类的继承的类型 (`none`， `abstract`，或`sealed`)。|None|
 |基本关系图|此关系图的基类。|(无)|
-|name|此关系图的名称。|当前名称|
+|名称|此关系图的名称。|当前名称|
 |命名空间|隶属于此关系图命名空间。|当前命名空间|
 |表示类|此关系图表示的根域类。|如果适用的当前根类|
 |说明|与此元素相关联的非正式说明。|\<none>|

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992017"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 返回一个标准脚本统计信息。  
@@ -41,7 +41,7 @@ HRESULT GetStat(
  `stid`  
  [in]指定要返回的统计信息。 必须为值：  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|返回自启动的脚本或已重置统计信息以来执行的语句数。|  
   

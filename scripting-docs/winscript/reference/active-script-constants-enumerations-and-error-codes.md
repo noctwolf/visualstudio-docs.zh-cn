@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 090b494e904fbef1c0d3d8b380f7a184a6042788
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953993"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>活动脚本常量、枚举和错误代码
 本部分介绍枚举和错误代码在 Windows 脚本引擎中使用。  
@@ -27,7 +27,7 @@ ms.locfileid: "58150941"
 |--------------|-----------------|  
 |[SCRIPTTHREADID 常量](../../winscript/reference/scriptthreadid-constants.md)|指定线程的类型。|  
   
-## <a name="properties"></a>Properties  
+## <a name="properties"></a>属性  
   
 |属性|描述|  
 |--------------|-----------------|  

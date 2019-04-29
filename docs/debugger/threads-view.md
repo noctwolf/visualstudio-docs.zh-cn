@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929947"
 ---
 # <a name="threads-view"></a>线程视图
 线程视图是在系统上的 windows 与关联的所有线程的平面列表。 显示线程 ID 和每个线程的模块名称。 进程不包括在内，但可以轻松地找到拥有所选的线程的进程。

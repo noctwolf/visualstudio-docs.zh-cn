@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cb1699db54691e81c49b686c245d96f9b5a5442
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003377"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共享模型和导出关系图
 在 Visual Studio 中，你可以通过多种方式与同事共享模型和关系图。
@@ -43,7 +43,7 @@ ms.locfileid: "55945971"
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
+|Title|描述|
 |-|-|
 |[安排建模解决方案](../modeling/structure-your-modeling-solution.md)|共享大型或中型项目的模型。|
 |[将关系图导出为图像](../modeling/export-diagrams-as-images.md)|你可以将部分关系图复制到 PowerPoint 或 Word 等应用程序，或将关系图打印到 XPS 文件。|

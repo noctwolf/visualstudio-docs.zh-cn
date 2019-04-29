@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992556"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 实现的主机来创建 Windows 脚本引擎的站点。 通常情况下，此站点将会向脚本 （例如，ActiveX 控件） 的所有对象的容器与相关联。 通常情况下，此容器将对应于正在查看的页的文档。 例如，Microsoft Internet Explorer 中，将创建此类容器显示每个 HTML 页。 每个 ActiveX 控件 （或其他自动化对象） 上的网页和脚本引擎本身，将可枚举此容器中。  
