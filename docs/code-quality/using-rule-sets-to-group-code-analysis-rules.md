@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825079"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用规则集对代码分析规则进行分组
 
@@ -24,7 +24,7 @@ ms.locfileid: "58515228"
 
 你可以自定义规则集通过添加或删除规则或更改规则的严重级别显示为警告性警报或中的错误**错误列表**。 自定义的规则集可满足特定的开发环境的需求。 自定义规则集时，规则集编辑器提供了搜索和筛选工具来帮助您在过程中。
 
-规则集是可用于[托管代码的静态分析](how-to-configure-code-analysis-for-a-managed-code-project.md)， [c + + 代码分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，并[Roslyn 分析器](analyzer-rule-sets.md)。
+规则集是可用于[托管代码的静态分析](how-to-configure-code-analysis-for-a-managed-code-project.md)，[分析C++代码](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，并[Roslyn 分析器](analyzer-rule-sets.md)。
 
 ## <a name="rule-set-format"></a>规则将格式设置
 

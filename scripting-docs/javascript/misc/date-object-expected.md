@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946376"
 ---
 # <a name="date-object-expected"></a>缺少日期对象
 你尝试调用**Date.prototype.toString**或**Date.prototype.valueOf**方法以外的类型的对象上`Date`。 调用此类型的对象的类型必须是`Date`。 例如：  

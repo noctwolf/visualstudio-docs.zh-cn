@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806623"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:终结器应受到保护
 
@@ -34,7 +34,7 @@ ms.locfileid: "55917475"
  公共类型实现终结器没有指定系列 （受保护） 的访问。
 
 ## <a name="rule-description"></a>规则说明
- 终结器必须使用族访问修饰符。 此规则由 C#、 Visual Basic 和 Visual c + + 编译器强制执行。
+ 终结器必须使用族访问修饰符。 此规则强制执行由C#，Visual Basic 和 VisualC++编译器。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请更改为系列可访问的终结器。

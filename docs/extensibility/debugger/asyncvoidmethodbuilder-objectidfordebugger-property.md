@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 63446ad31f57c63650076e42d31226d7728e1e15
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926055"
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 属性
 获取可用于唯一地标识调试器到此生成器的对象。

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: df8cc7fa837e5308d2e6ba18501d7bfb93a83223
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829929"
 ---
 # <a name="baseclass"></a>BaseClass
 每个基类的用户定义类型 (UDT) 符号由具有的子项`SymTagBaseClass`标记。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)属性为基础的 UDT，包含的符号和用户定义的基础类型的所有属性都均可作为此 BaseClass 符号的一部分。
@@ -27,7 +27,7 @@ ms.locfileid: "56626384"
 ## <a name="properties"></a>属性
  下表显示此符号类型的其他有效属性。
 
-|Property|数据类型|说明|
+|属性|数据类型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|应用于此基类的访问修饰符。 之一[CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)值。|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|封闭类 （如果有） 的符号。|

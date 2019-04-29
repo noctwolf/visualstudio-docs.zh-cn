@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908793"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的选择和货币
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 维护有关用户的信息当前所选对象，通过使用所选内容*上下文*。 使用选定内容上下文的 Vspackage 可以参与货币跟踪两种方式：

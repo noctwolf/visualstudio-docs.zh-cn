@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3d4d6eec08ae75efbd9104ace25409d336e45f40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814683"
 ---
 # <a name="work-with-workbooks"></a>使用工作簿
   <xref:Microsoft.Office.Tools.Excel.Workbook> 和 <xref:Microsoft.Office.Interop.Excel.Workbooks> 类包含用于执行工作簿相关任务的方法和属性。

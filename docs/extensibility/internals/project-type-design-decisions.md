@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909112"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
 在创建新的项目类型之前，必须将多个设计决策制定您的项目类型。 您必须决定要将哪些类型的项将包含你的项目、 如何将保留项目文件，以及哪些承诺模型。

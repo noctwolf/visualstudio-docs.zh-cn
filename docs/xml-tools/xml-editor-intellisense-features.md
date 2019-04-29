@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807956"
 ---
-# <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
+# <a name="xml-editor-intellisense-features"></a>XML 编辑器 IntelliSense 功能
 
 “XML 编辑器”提供了完整的智能感知功能，可与 Visual Studio 中提供的其他语言编辑器相比。 本节介绍如何使用 XML 架构定义语言 (XSD) 和 XSLT 文档中的 IntelliSense。
 
@@ -53,7 +53,7 @@ ms.locfileid: "57525812"
 
 ## <a name="auto-completion"></a>自动完成功能
 
-“XML 编辑器”还通过为您填写必需的 XML 语法，使编辑 XML 更加容易。 例如，如果您键入以下开始标记：
+“XML 编辑器”还通过为您填写必需的 XML 语法，使编辑 XML 更加容易。 例如，如果你键入以下开始标记：
 
 `<book>`
 
@@ -111,7 +111,7 @@ XML 编辑器还具有能够插入命名空间声明，如果您选择的命名�
 
 **自动插入**一部分**杂项**页控制以下行为：
 
-|name|描述|
+|名称|描述|
 |-|-----------------|
 |结束标记|为新元素插入结束标记。|
 |属性引号|在输入新特性名时插入特性值引号。|

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c394e909ec7ff51a7c6baf0bac85df3d2fce7b78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928479"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>如何：指定 ClickOnce 脱机或联机安装模式
 `Install Mode`为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序确定应用程序是脱机还是联机。 当你选择**应用程序仅可在线**，用户必须有权访问[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]发布位置 （Web 页面或文件共享） 才能运行该应用程序。 当你选择**应用程序也可以脱机使用**，应用程序将条目添加到**启动**菜单并**添加或删除程序**对话框; 用户是能够在不连接时运行该应用程序。

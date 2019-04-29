@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9373ed07ec49bd41dad343dc447b4b2026793492
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966999"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：添加和删除功能依赖关系
   SharePoint 功能可能依赖的功能或数据的其他功能。 在这些情况下，可以将这些其他功能为您的功能标记为依赖项。 这样一来，SharePoint 服务器会确保你的功能被激活之前激活相关功能。

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826704"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何：向工作表添加 ListObject 控件
   您可以添加<xref:Microsoft.Office.Tools.Excel.ListObject>到 Microsoft Office Excel 工作表在设计时和运行时在文档级项目中的控件。

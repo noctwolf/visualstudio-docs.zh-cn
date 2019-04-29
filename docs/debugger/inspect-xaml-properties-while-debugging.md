@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906035"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 通过“实时可视化树”和“实时属性资源管理器”，可以获取正在运行 XAML 代码的实时视图。 这些工具为你提供了正在运行的 XAML 应用程序的 UI 元素的树视图，并显示你选择的任何 UI 元素的运行时属性。

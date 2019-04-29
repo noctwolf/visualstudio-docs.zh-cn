@@ -8,18 +8,18 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820401"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 
-Microsoft 源代码注释语言 (SAL) 提供了一组可用于描述函数如何使用它的参数、 关于它们的假设和它对完成的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 注释来修改其分析函数。 Windows 驱动程序开发的 SAL 2.0 的详细信息，请参阅[SAL 2.0 注释为 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。
+Microsoft 源代码注释语言 (SAL) 提供了一组可用于描述函数如何使用它的参数、 关于它们的假设和它对完成的保证的批注。 标头文件中定义批注`<sal.h>`。 Visual Studio 代码分析C++使用 SAL 注释来修改其分析函数。 Windows 驱动程序开发的 SAL 2.0 的详细信息，请参阅[SAL 2.0 注释为 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。
 
-本机 C 和 c + + 提供仅面向开发人员来一致地表达意图和不变性有限的方式。 通过使用 SAL 注释，可以描述中更详细地介绍函数，以便开发人员会使用这些资源可以更好地了解如何使用它们。
+本机 C 和C++提供仅面向开发人员来一致地表达意图和不变性有限的方式。 通过使用 SAL 注释，可以描述中更详细地介绍函数，以便开发人员会使用这些资源可以更好地了解如何使用它们。
 
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>什么是 SAL 以及您为何使用它?
 
@@ -105,14 +105,14 @@ wchar_t * wmemcpy(
 ## <a name="sal-examples"></a>SAL 示例
  本部分展示了基本的 SAL 注释的代码示例。
 
-### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio Code 分析工具查找 Bug
+### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio 代码分析工具查找 Bug
  在示例中，Visual Studio 代码分析工具是与一起使用 SAL 批注以查找代码缺陷。 下面介绍了如何执行此操作。
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>使用 Visual Studio 代码分析工具和 SAL
 
-1.  在 Visual Studio 中，打开包含 SAL 注释的 c + + 项目。
+1. 在 Visual Studio 中打开C++项目，其中包含 SAL 注释。
 
-2.  在菜单栏上依次选择**构建**，**对解决方案运行代码分析**。
+2. 在菜单栏上依次选择**构建**，**对解决方案运行代码分析**。
 
      请考虑\_在\_在本部分中的示例。 如果对其运行代码分析，则显示此警告：
 
@@ -122,15 +122,15 @@ wchar_t * wmemcpy(
 
 `_In_`批注指示：
 
--   该参数必须是有效，并且不会被修改。
+- 该参数必须是有效，并且不会被修改。
 
--   该函数将只读取单个元素缓冲区中。
+- 该函数将只读取单个元素缓冲区中。
 
--   调用方必须提供缓冲区，并对其进行初始化。
+- 调用方必须提供缓冲区，并对其进行初始化。
 
--   `_In_` 指定"只读"。 一个常见错误是应用`_In_`参数应具有`_Inout_`批注相反。
+- `_In_` 指定"只读"。 一个常见错误是应用`_In_`参数应具有`_Inout_`批注相反。
 
--   `_In_` 允许在非指针标量分析器但被忽略。
+- `_In_` 允许在非指针标量分析器但被忽略。
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -361,7 +361,7 @@ Visual Studio 代码分析验证此函数检查 null 之前`*pInt`被取消引�
 
 ### <a name="example-the-success-annotation-in-combination-with-out"></a>示例:\_成功\_批注结合\_出\_
 
-批注可以应用于大多数对象。  具体而言，你可以批注整个函数。  一个函数的最明显特征之一是它可以成功或失败。 但其大小和缓冲区之间的关联，如 C/c + + 无法表达函数成功还是失败。 通过使用`_Success_`批注，您可以说，函数成功指数。  为参数`_Success_`批注是只是一个表达式，为 true 表示该函数已成功。 表达式可以是任何批注分析器可以处理。 如果此函数成功后该函数将返回, 的批注的效果才适用。 此示例演示如何`_Success_`与交互`_Out_`以执行正确的操作。 可以使用关键字`return`来表示返回值。
+批注可以应用于大多数对象。  具体而言，你可以批注整个函数。  一个函数的最明显特征之一是它可以成功或失败。 但如缓冲区和其大小，C 之间的关联 /C++不能表达函数成功还是失败。 通过使用`_Success_`批注，您可以说，函数成功指数。  为参数`_Success_`批注是只是一个表达式，为 true 表示该函数已成功。 表达式可以是任何批注分析器可以处理。 如果此函数成功后该函数将返回, 的批注的效果才适用。 此示例演示如何`_Success_`与交互`_Out_`以执行正确的操作。 可以使用关键字`return`来表示返回值。
 
 ```cpp
 _Success_(return != false) // Can also be stated as _Success_(return)

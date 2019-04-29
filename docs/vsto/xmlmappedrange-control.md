@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810744"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控件
   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件是仅在非重复架构元素映射到 Microsoft Office Excel 中的单元格上时创建一个范围。 例如，当`maxOccurs`架构元素的特性等于 1。 Visual Studio 将创建 XML 映射范围后，你可以针对它编程直接而无需遍历 Excel 对象模型。 您只能删除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>中移除的元素映射时，在 Excel 内的控件。

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848384"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>调试 Visual Studio 中的 ASP.NET 或 ASP.NET Core 应用
 
@@ -184,9 +184,9 @@ ASP.NET 项目具有*web.config*文件默认情况下，其中包含这两个应
 
 ## <a name="see-also"></a>请参阅
 - [ASP.NET 调试：系统要求](aspnet-debugging-system-requirements.md)
-- [如何：在用户帐户下运行工作进程](how-to-run-the-worker-process-under-a-user-account.md)
+- [如何：辅助角色下运行进程的用户帐户](how-to-run-the-worker-process-under-a-user-account.md)
 - [如何：查找 ASP.NET 进程的名称](how-to-find-the-name-of-the-aspnet-process.md)
 - [调试已部署的 Web 应用程序](debugging-deployed-web-applications.md)
-- [演练：调试 Web 窗体](walkthrough-debugging-a-web-form.md)
+- [演练：调试 web 窗体](walkthrough-debugging-a-web-form.md)
 - [如何：调试 ASP.NET 异常](how-to-debug-aspnet-exceptions.md)
 - [调试 Web 应用程序：错误和疑难解答](debugging-web-applications-errors-and-troubleshooting.md)

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799058"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自定义编辑器中的语法着色
 Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务来标识特定的语法项并将其与给定的文档视图的指定颜色显示。

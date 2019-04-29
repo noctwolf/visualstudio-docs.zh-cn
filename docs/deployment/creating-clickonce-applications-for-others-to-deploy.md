@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01e85c0257d372fa9b27ec5f031aae61132f7edc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928913"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 并非所有开发人员正在创建 ClickOnce 部署都计划来部署应用程序本身。 其中许多只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，如大公司。 客户将成为一个负责承载其网络上的应用程序。 本主题讨论了一些在 3.5 版之前的.NET Framework 的版本中的此类部署中固有的问题。 然后，它介绍通过使用新的"使用信任的清单"功能在.NET Framework 3.5 中提供的一个新的解决方案。 最后，则可以确定创建的客户仍在使用较旧版本的.NET Framework 的 ClickOnce 部署的建议策略。
@@ -56,7 +56,7 @@ ms.locfileid: "56600548"
 
  使用自签名的证书进行部署清单提供了几个优势。 通过消除对客户可获取或创建自己的验证码证书，需要`<useManifestForTrust>`简化了部署，客户，同时还允许开发人员维护他们自己的应用程序上的品牌标识。 结果是更安全，并且具有唯一的应用程序标识的已签名部署一组。 这消除了从相同应用程序部署到多个客户可能会发生潜在冲突。
 
- 有关如何创建使用 ClickOnce 部署的分步信息`<useManifestForTrust>`启用，请参阅[演练： 手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ 有关如何创建使用 ClickOnce 部署的分步信息`<useManifestForTrust>`启用，请参阅[演练：手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。
 
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>在运行时的信任的应用程序清单工作原理
  若要获取使用信任的应用程序清单在运行时的工作方式更好地理解，请考虑下面的示例。 面向.NET Framework 3.5 的 ClickOnce 应用程序是由 Microsoft 创建的。 应用程序清单使用`<useManifestForTrust>`元素和由 Microsoft 签名。 Adventure Works 通过使用自签名的证书对签名部署清单。 Adventure Works 客户端配置为信任由 Microsoft 签名的任何应用程序。
@@ -100,4 +100,4 @@ ms.locfileid: "56600548"
 ## <a name="see-also"></a>请参阅
 - [无需重新签名部署 ClickOnce 应用程序测试和生产服务器](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)
+- [演练：手动部署不需要重新签名且保留品牌信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

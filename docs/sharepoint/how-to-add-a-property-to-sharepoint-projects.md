@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967209"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：将属性添加到 SharePoint 项目
   项目扩展可用于将属性添加到任何 SharePoint 项目。 属性将出现在**属性**窗口中选择项目时**解决方案资源管理器**。

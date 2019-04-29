@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c5e617b57437033f4194d96647ebff9d1c4e2c2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813992"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何：扩展服务器资源管理器中的 SharePoint 节点
   您可以扩展节点下的**SharePoint 连接**中的节点**服务器资源管理器**。 当你想要将新的子节点、 快捷菜单项或属性添加到现有节点时，这很有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

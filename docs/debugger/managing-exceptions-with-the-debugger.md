@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846457"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
@@ -100,7 +100,7 @@ ms.locfileid: "57428695"
 
   但它不会显示`here`行。
 
-- 一个C#控制台应用程序引用具有两种方法的类的类库。 一种方法引发异常，并处理它，而第二种方法会引发同一异常但不会进行处理。
+- C# 控制台应用程序引用具有两种方法的类的类库。 一种方法引发异常，并处理它，而第二种方法会引发同一异常但不会进行处理。
 
   ```csharp
   public class Class1

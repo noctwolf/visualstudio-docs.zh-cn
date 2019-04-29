@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935381"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 返回类型的代码块中的信息和给定的字符的定位点位置。 IntelliSense、 全局列表和参数的提示，这提供有关成员的信息。  
@@ -57,7 +57,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  [in]请求列表类型。 可以是以下值的组合：  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|没有列表。|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|成员的列表。|  

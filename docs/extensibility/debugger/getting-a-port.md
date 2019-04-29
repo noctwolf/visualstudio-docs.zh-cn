@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 25b703eafccb412c33640a9e73e72afa09c0c277
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889887"
 ---
 # <a name="get-a-port"></a>获取端口
 端口表示进程正在其运行的计算机的连接。 该计算机可以是本地计算机或远程计算机 (这可能可能运行非基于 Windows 的操作系统，请参阅[端口](../../extensibility/debugger/ports.md)有关详细信息)。

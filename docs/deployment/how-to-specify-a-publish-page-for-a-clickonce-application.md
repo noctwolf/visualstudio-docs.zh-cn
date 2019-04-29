@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29d83dd1a232ae1cf0437c1ab6d4662acef2900d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928342"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 安装应用程序和/或任何系统必备组件的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 **发布页面**为你的项目的属性，可指定的 Web 页面的名称在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。

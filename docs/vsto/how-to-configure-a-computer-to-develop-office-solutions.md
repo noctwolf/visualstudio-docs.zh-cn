@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b1f87b9548aceab58e1a8e1c6178a1dca759c312
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825984"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何：配置计算机以开发 Office 解决方案
   若要配置开发计算机以便可以使用 Visual Studio 中的 Microsoft Office 开发人员工具，请按照本主题中的说明进行操作。 必须在本地计算机上具有管理特权才能执行这些步骤。

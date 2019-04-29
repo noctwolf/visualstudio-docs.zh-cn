@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ff9c73ebbe976df7c3d25304280e743cad0423c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908512"
 ---
 # <a name="source-control-plug-in-architecture"></a>源代码管理插件体系结构
 您可以添加到源控件支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]实现并附加了源代码管理插件集成的开发环境 (IDE)。 IDE 连接到源代码管理插件通过定义完善的源控制插件 API。 IDE 公开源控制系统版本控制的功能通过提供工具栏和菜单命令组成的用户界面 (UI)。 源代码管理插件实现的源代码管理功能。
 
 ## <a name="source-control-plug-in-resources"></a>源控制插件资源
- 源代码管理插件提供资源来帮助创建并连接到你的版本控制应用程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 源代码管理插件包含 API 规范，以便它可以集成到源代码管理插件必须实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 它还包含实现的主干源控制插件演示实现基本功能与源控制插件 API 兼容的代码示例 （c + + 中编写）。
+ 源代码管理插件提供资源来帮助创建并连接到你的版本控制应用程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 源代码管理插件包含 API 规范，以便它可以集成到源代码管理插件必须实现[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 它还包含一个代码示例 (编写C++)，它实现的主干源控制插件演示实现基本功能与源控制插件 API 兼容。
 
  源控件插件 API 规范可支持你将所选的任何源代码管理系统，如果使用所需的源控制插件 API 根据实现的函数集创建源控件 DLL。
 

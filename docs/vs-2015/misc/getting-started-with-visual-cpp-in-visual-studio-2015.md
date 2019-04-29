@@ -1,5 +1,5 @@
 ---
-title: Visual c + + 入门 |Microsoft Docs
+title: 开始使用 Visual C++ |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -15,11 +15,11 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: df01ce47f28d2fc6eabb0f182a82ddcf04b825e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822456"
 ---
-# <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>在 Visual Studio 2015 中 Visual c + + 入门
-此内容已移除。 在 Visual Studio 中的 Visual c + + 的介绍，请参阅[Visual c + + 指导教程](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。
+# <a name="getting-started-with-visual-c-in-visual-studio-2015"></a>开始使用 VisualC++在 Visual Studio 2015
+此内容已移除。 为视觉对象简介C++在 Visual Studio 中，请参阅[可视化C++指导教程](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aed2acd4dbf921d99bcefe2e74575401fc01c7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895975"
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 图形日志文档是对你的应用在图形诊断会话下运行时发生的图形事件的记录。 在记录后，你可以在 Visual Studio 图形分析器中检查日志，以诊断呈现和性能问题。
