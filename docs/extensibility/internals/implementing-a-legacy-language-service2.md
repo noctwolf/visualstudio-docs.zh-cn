@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8592103bad3f6949f37a190c25633398af89a166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909635"
 ---
 # <a name="implementing-a-legacy-language-service"></a>实现旧版语言服务
 若要实现使用托管的包框架 (MPF) 的语言服务，你必须从派生类<xref:Microsoft.VisualStudio.Package.LanguageService>类并实现以下抽象方法和属性：

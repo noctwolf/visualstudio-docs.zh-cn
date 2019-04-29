@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813884"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>如何：执行 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建一个自定义*SharePoint 命令*来调用 API。 定义该命令并将其部署与 SharePoint 工具扩展插件后，您的扩展插件可以执行命令来调入 SharePoint 服务器对象模型。 若要执行此命令，使用 ExecuteCommand 方法之一<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>对象。

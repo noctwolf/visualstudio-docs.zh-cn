@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849866"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>“字体”对话框（Microsoft Spy++ 帮助）
 使用此对话框配置 [Spy++ 视图](../debugger/spy-increment-views.md)窗口中使用的字符字体。 若要显示此对话框，请展开“视图”菜单并选择“字体”。

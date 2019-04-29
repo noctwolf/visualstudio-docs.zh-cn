@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "57870268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909652"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 
@@ -69,7 +69,7 @@ ms.locfileid: "57870268"
 ## <a name="document-windows"></a>文档窗口
  文档窗口是带边框的子窗口的多文档界面 (MDI) 窗口。 文档窗口通常要用于宿主的文本编辑器、 窗体编辑器 （也称为设计器） 或编辑控件，但它们还可以托管其他功能的类型。 **新的文件**对话框包括 Visual Studio 提供的文档窗口的示例。
 
- 大多数编辑器是特定于编程语言或文件类型，如 HTML 页面、 框架、 c + + 文件或标头文件。 通过选择中的模板**新的文件**对话框中，用户动态创建一个文档窗口是与模板关联的文件类型的编辑器。 当用户打开现有文件，还会创建一个文档窗口。
+ 大多数编辑器是特定于编程语言或文件类型，如 HTML 页，框架集，C++文件或标头文件。 通过选择中的模板**新的文件**对话框中，用户动态创建一个文档窗口是与模板关联的文件类型的编辑器。 当用户打开现有文件，还会创建一个文档窗口。
 
  文档窗口仅限于在 MDI 工作区。 每个文档窗口的顶部，有一个选项卡和 tab 键顺序链接至其他 MDI 区域中可以在打开的窗口。 右键单击文档窗口的选项卡显示包括用于将 MDI 区域拆分为多个水平或垂直选项卡组的选项的快捷菜单。 拆分 MDI 区可以同时查看多个文件。 有关详细信息，请参阅[文档 Windows](../../extensibility/internals/document-windows.md)。
 
@@ -87,7 +87,7 @@ ms.locfileid: "57870268"
 
 在 Visual Studio 中，项目是开发人员用于组织和生成的源代码和其他资源的容器。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以通过提供项目类型、 项目子类型和自定义工具来扩展 Visual Studio 项目系统。
 
-项目可能还收集在一起*解决方案*，这是一个或多个协同工作以创建应用程序的项目的分组。 适用于解决方案的项目和状态信息存储在两个解决方案文件中，基于文本的[解决方案 (.sln) 文件](solution-dot-sln-file.md)和二进制[解决方案用户选项 (.suo) 文件](solution-user-options-dot-suo-file.md)。 这些文件是类似于早期版本的 Visual Basic 中，和工作区 (.dsw) 时使用的组 (文件.vbg) 文件和 c + + 的早期版本中使用的用户选项 (.opt) 文件。
+项目可能还收集在一起*解决方案*，这是一个或多个协同工作以创建应用程序的项目的分组。 适用于解决方案的项目和状态信息存储在两个解决方案文件中，基于文本的[解决方案 (.sln) 文件](solution-dot-sln-file.md)和二进制[解决方案用户选项 (.suo) 文件](solution-user-options-dot-suo-file.md)。 这些文件是类似于早期版本的 Visual Basic 中使用的组 (文件.vbg) 文件和工作区 (.dsw) 和用户选项 (.opt) 文件的早期版本中使用C++。
 
 有关详细信息，请参阅[项目](../../extensibility/internals/projects.md)并[解决方案](../../extensibility/internals/solutions-overview.md)。
 

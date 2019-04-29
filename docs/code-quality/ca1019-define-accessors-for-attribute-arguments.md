@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e9491a608087565e84274d47c601b0629737d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779345"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019:定义特性参数的访问器
 
@@ -37,7 +37,7 @@ ms.locfileid: "55942474"
  在其构造函数，属性定义不具有相应的属性的参数。
 
 ## <a name="rule-description"></a>规则说明
- 特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些自变量也称为位置自变量，因为它们将作为位置参数提供给特性构造函数。 对于每一个强制自变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该自变量的值。 此规则检查每个构造函数参数，您已经定义了相应的属性。
+ 特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些自变量也称为位置自变量，因为它们将作为位置参数提供给特性构造函数。 对于每一个强制变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该变量的值。 此规则检查每个构造函数参数，您已经定义了相应的属性。
 
  特性还可以定义可选实参，可选实参也称为命名实参。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。
 

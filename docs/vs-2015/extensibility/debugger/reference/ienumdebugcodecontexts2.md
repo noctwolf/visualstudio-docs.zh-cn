@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f36da19e6bc47d70010dd96a26256537803ccb29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551613"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ IEnumDebugCodeContexts2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|获取一个枚举器中的代码上下文的数目。|  
   
 ## <a name="remarks"></a>备注  
- Visual Studio 调用[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)来填充的列表的代码上下文中的用户可以选择从时设置的下一个语句或显示源文件的反汇编。 例如，当有多个 c + + 样式模板的实例时，可以出现多个代码上下文。  
+ Visual Studio 调用[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)来填充的列表的代码上下文中的用户可以选择从时设置的下一个语句或显示源文件的反汇编。 多个代码上下文可以发生，例如，如果有多个实例的C++的样式模板。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  

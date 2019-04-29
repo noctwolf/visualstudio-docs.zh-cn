@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bec9296f15c48cf3b327c78cd0ce7d57adafa002
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57874657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571467"
 ---
-# <a name="analyzers-faq"></a>分析器常见问题
+# <a name="analyzers-faq"></a>分析器常见问题解答
 
 此页包含有关 Roslyn 分析器在 Visual Studio 中一些常见问题的解答。
 

@@ -16,14 +16,14 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 41ac8e38f501152d329e788572c500f68a8d2214
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820715"
 ---
 # <a name="intrinsic-functions"></a>内部函数
-在 SAL 表达式可以是 C/c + + 表达式，前提是不具有副作用的表达式，例如，+ +、--，和所有在此上下文中具有副作用的函数调用。  但是，SAL 提供一些类似函数的对象以及可以在 SAL 表达式中使用一些保留的符号。 这些称为*内部函数*。
+在 SAL 表达式可以是 C /C++表达式提供，它是不具有副作用的表达式-例如，+ +、--，和所有在此上下文中具有副作用的函数调用。  但是，SAL 提供一些类似函数的对象以及可以在 SAL 表达式中使用一些保留的符号。 这些称为*内部函数*。
 
 ## <a name="general-purpose"></a>通用
  以下内部函数批注的 sal 提供常规实用程序。
@@ -35,7 +35,7 @@ ms.locfileid: "55907953"
 |`_Nullterm_length_(param)`|`param` 是最多缓冲区，但不是包括 null 终止符中的元素数。 它可应用于非聚合，非 void 类型的任何缓冲。|
 |`_Old_(expr)`|在不满足前提条件，计算时`_Old_`将返回输入的值`expr`。  当它计算后置条件中时，它将返回值`expr`根据它进行计算中不满足前提条件。|
 |`_Param_(n)`|`n`个参数的函数，从 1 到计数`n`，和`n`是文本的整数常量。 如果名为的参数，此批注等同于按名称访问该参数。 **注意：** `n`可能指由省略号，或者可能在不使用名称函数原型中使用的位置参数。|
-|`return`|C/c + + 保留关键字`return`可以 SAL 表达式中使用以指示函数的返回值。  在 post 状态; 值才可用它会导致语法错误之前状态使用它。|
+|`return`|C /C++保留的关键字`return`可用于在 SAL 表达式中指示函数的返回值。  在 post 状态; 值才可用它会导致语法错误之前状态使用它。|
 
 ## <a name="string-specific"></a>特定于字符串
  下面的内部函数批注启用操作的字符串。 这些函数的所有四个具有相同的用途： 若要返回的 null 终止符之前找到的类型的元素数。 差异几种类型的引用的元素中的数据。 请注意，如果你想要指定以 null 结尾的长度的缓冲区，不由字符，请使用`_Nullterm_length_(param)`批注与上一节。

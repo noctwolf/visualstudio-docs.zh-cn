@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d1e0af87618955c492bef68be45c8c623f41218
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554513"
 ---
 # <a name="function-debug-interface-access-sdk"></a>函数（调试接口访问 SDK）
 每个函数由`SymTagFunction`符号。
@@ -25,7 +25,7 @@ ms.locfileid: "56634040"
 ## <a name="properties"></a>属性
  下表显示适用于此符号类型的属性。
 
-|Property|`Data type`|说明|
+|属性|`Data type`|描述|
 |--------------|-----------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|值之一[CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)，如果该函数是成员函数。|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|偏移量部分的位置;有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|
@@ -36,7 +36,7 @@ ms.locfileid: "56634040"
 |[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` 如果该函数使用自定义调用约定 （仅在 DIA SDK V8.0 或更高版本）。|
 |[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` 如果函数不执行得返回 （仅在 DIA SDK V8.0 或更高版本）。|
 |[IDiaSymbol::get_hasAlloca](../../debugger/debug-interface-access/idiasymbol-get-hasalloca.md)|`BOOL`|`TRUE` 如果该函数使用分配的内存函数 (仅 uinnder DIA SDK V8.0 或更高版本)。|
-|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 如果该函数包含 c + + 样式异常处理 （仅在 DIA SDK V8.0 或更高版本）。|
+|[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` 如果该函数包含C++-样式异常处理 （仅在 DIA SDK V8.0 或更高版本）。|
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` 如果该函数包含异步异常处理 （仅在 DIA SDK V8.0 或更高版本）。|
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` 如果该函数包含内联程序集 （仅在 DIA SDK V8.0 或更高版本）。|
 |[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` 如果该函数包含[longjmp](/cpp/c-runtime-library/reference/longjmp)调用 （仅在 DIA SDK V8.0 或更高版本）。|

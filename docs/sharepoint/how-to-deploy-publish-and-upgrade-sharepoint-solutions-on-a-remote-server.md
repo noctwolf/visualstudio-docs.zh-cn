@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813938"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案
   除了对本地系统中部署 SharePoint 解决方案，可以将沙盒 SharePoint 解决方案发布到远程站点或本地 SharePoint 站点中。 远程发布进程副本 *.wsp*文件到 SharePoint 服务器，安装解决方案，然后再启用您激活解决方案。 对其进行更改之后，你还可以升级远程 SharePoint 解决方案安装。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06ec985dc6709651be7bd2f12b024eda4ed03d5a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908448"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 MSBuild 提供了用于创建全面地描述要生成、 生成任务，并生成配置的项目项的项目文件以定义完善且可扩展 XML 格式。

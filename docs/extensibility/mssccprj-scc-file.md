@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806433"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 文件
 在将 Visual Studio 解决方案或项目使用 IDE 的源代码管理下，IDE 会收到两个关键信息。 这些信息来自源代码管理插件形式的字符串。 这些字符串，"AuxPath"和"项目名称"，是不透明的 IDE，但它们用于该插件在版本控制中找到解决方案或项目。 IDE 通常这些字符串第一次通过调用来获取[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然后将其保存在解决方案或项目文件中为未来调用[SccOpenProject](../extensibility/sccopenproject-function.md)。 在解决方案和项目文件中嵌入的"AuxPath"和"项目名称"字符串自动时未更新用户的分支，分叉，或将版本控制中的解决方案和项目文件复制。 若要确保解决方案和项目文件指向其在版本控制中的正确位置，用户必须手动更新这些字符串。 字符串应该是不透明，因为它可能始终无法清除更新方式。
