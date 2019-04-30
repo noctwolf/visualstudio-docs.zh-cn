@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e193f5c8363cda4e3519df45d001a1972865813e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3b1e96a850cfde1af6ad3aac2df4310a3875f49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429968"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>在旧版语言服务中进行语法着色
 
@@ -28,7 +28,7 @@ Visual Studio 使用着色服务识别的语言的元素并将其用在编辑器
  ![SVC 着色程序图](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
->  语法突出显示服务是独立于用于对文本着色的常规 Visual Studio 机制。 有关常规详细信息[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]机制支持着色，请参阅[使用的字体和颜色](../../extensibility/using-fonts-and-colors.md)。
+> 语法突出显示服务是独立于用于对文本着色的常规 Visual Studio 机制。 有关常规详细信息[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]机制支持着色，请参阅[使用的字体和颜色](../../extensibility/using-fonts-and-colors.md)。
 
  除了着色器，语言服务可以提供由编辑器中，通过它提供自定义可着色项的广告的自定义可着色项。 您可以执行此操作通过实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>接口上实现的相同对象<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>接口。 当在编辑器调用时，它返回自定义可着色项的数目<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A>方法，并返回单个自定义可着色项，当在编辑器调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>方法。
 
@@ -60,7 +60,7 @@ Visual Studio 使用着色服务识别的语言的元素并将其用在编辑器
     3. 使用返回的着色信息<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>方法来显示所选的文本。
 
 > [!NOTE]
->  除了使用的语言服务 colorizer，VSPackage 还可以使用常规用途的 Visual Studio 文本着色机制。 有关此机制的详细信息，请参阅[使用字体和颜色](../../extensibility/using-fonts-and-colors.md)。
+> 除了使用的语言服务 colorizer，VSPackage 还可以使用常规用途的 Visual Studio 文本着色机制。 有关此机制的详细信息，请参阅[使用字体和颜色](../../extensibility/using-fonts-and-colors.md)。
 
 ## <a name="in-this-section"></a>本节内容
 - [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)

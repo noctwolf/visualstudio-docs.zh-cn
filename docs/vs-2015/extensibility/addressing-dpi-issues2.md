@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443960"
 ---
 # <a name="addressing-dpi-issues"></a>解决 DPI 问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  不要在模块级别或类级别静态变量中使用的帮助器函数。 库还使用线程同步的静态变量，并可能会遇到顺序初始化问题。 将这些静态对象转换为非静态成员变量，或者将它们包装到的函数 （因此，在首次访问获取构造它们）。  
+> 不要在模块级别或类级别静态变量中使用的帮助器函数。 库还使用线程同步的静态变量，并可能会遇到顺序初始化问题。 将这些静态对象转换为非静态成员变量，或者将它们包装到的函数 （因此，在首次访问获取构造它们）。  
   
  若要从 Visual Studio 环境中运行的托管代码访问 DPI 帮助器函数：  
   

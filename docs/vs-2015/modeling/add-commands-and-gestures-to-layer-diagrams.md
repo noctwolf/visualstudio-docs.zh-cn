@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444214"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>向层关系图添加命令和笔势
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60079819"
  如果你愿意，可以在同一 Visual Studio 项目中定义多个命令和笔势处理程序。 还可以将多个此类项目合并到一个 VSIX 中。 例如，你可以定义其中包含层命令、特定于域的语言和用于 UML 关系图的命令的单个 VSIX。  
   
 > [!NOTE]
->  还可以自定义体系结构验证，在其中对用户的源代码和层关系图进行比较。 应在单独的 Visual Studio 项目中定义体系结构验证。 你可以将其添加到其他扩展所在的同一 VSIX 中。 有关详细信息，请参阅[向层关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
+> 还可以自定义体系结构验证，在其中对用户的源代码和层关系图进行比较。 应在单独的 Visual Studio 项目中定义体系结构验证。 你可以将其添加到其他扩展所在的同一 VSIX 中。 有关详细信息，请参阅[向层关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
   
 ## <a name="requirements"></a>要求  
  请参阅 [要求](../modeling/extend-layer-diagrams.md#prereqs)。  
@@ -65,7 +65,7 @@ ms.locfileid: "60079819"
 1. 在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含命令或笔势处理程序类。  
   
     > [!NOTE]
-    >  可以在一个类库中定义多个命令或笔势处理程序类，但应在单独的类库中定义层验证类。  
+    > 可以在一个类库中定义多个命令或笔势处理程序类，但应在单独的类库中定义层验证类。  
   
 2. 在解决方案中标识或创建 VSIX 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。 若要添加 VSIX 项目：  
   

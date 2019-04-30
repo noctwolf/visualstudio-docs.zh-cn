@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用查找程序工具 |Microsoft Docs
+title: 如何：使用查找程序工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387657"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 可以使用中查找程序工具**查找窗口**对话框以显示窗口属性或消息。 查找程序工具还可以找到已禁用的子窗口，并识别哪个窗口以突出显示如果禁用子级窗口重叠。
@@ -41,7 +41,7 @@ ms.locfileid: "56694616"
      如果有你想要检查 （例如，复制从调试器） 窗口的句柄，则键入到**处理**文本框。
 
    > [!TIP]
-   >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主 Spy + + 窗口中，并仅留下**查找窗口**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。
+   > 若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主 Spy + + 窗口中，并仅留下**查找窗口**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。
 
 4. 下**显示**，选择**属性**或**消息**。
 

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444667"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 内存问题
 通过使用 Visual Studio 托管内存分析程序，在 .NET Framework 代码中查找内存泄漏和低效内存使用。 目标代码的最低 .NET Framework 版本为 .NET Framework 4.5。  
@@ -59,7 +59,7 @@ ms.locfileid: "60107653"
  内存分析工具分析中的信息*转储文件*包含堆信息。 你可以在 Visual Studio 中，创建转储文件，或者可以使用之类的工具[ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx)从[Windows Sysinternals](http://technet.microsoft.com/sysinternals)。 请参阅[什么是转储，以及如何创建？](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) Visual Studio 调试器团队博客上。  
   
 > [!NOTE]
->  大部分工具可以收集附带或不附带完整堆内存数据的转储信息。 Visual Studio 内存分析程序需要完整的堆信息。  
+> 大部分工具可以收集附带或不附带完整堆内存数据的转储信息。 Visual Studio 内存分析程序需要完整的堆信息。  
   
  **若要从 Visual Studio 收集转储**  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443362"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "60073421"
      ![此图标显示 VSTU 已连接到 Unity。](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  如果插入图标显示选中标记，则已连接到 Unity 实例。  
+> 如果插入图标显示选中标记，则已连接到 Unity 实例。  
   
  “选择 Unity 实例”对话框将显示有关每个可以连接的 Unity 实例的信息。  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60073421"
  此 Unity 实例正在通过其进行通信的 UDP 套接字的端口号。  
   
 > [!IMPORTANT]
->  由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因而你的防火墙可能会对其进行询问。 如果发生这种情况，则必须授权连接，以便 VSTU 和 Unity 可以进行通信。  
+> 由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因而你的防火墙可能会对其进行询问。 如果发生这种情况，则必须授权连接，以便 VSTU 和 Unity 可以进行通信。  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a>调试 Unity 播放器中的项目  
  未运行 Unity 编辑器时，可以直接将 Visual Studio Tools for Unity 连接到在独立播放器上运行的 Unity 应用，或调试特定于平台的问题。  
@@ -154,7 +154,7 @@ ms.locfileid: "60073421"
 - 在 Unity Web Player 的上下文菜单上，选择“版本通道”并确保“开发”选项处于启用状态。  
   
   > [!IMPORTANT]
-  >  在 Unity 4.2 及更高版本中，“版本通道”上下文菜单项仅当打开上下文菜单并按下 **Alt** 键时，才在 Web Player 上下文菜单上可用。 如果 Web Player 正在 Mac OS X 上运行，则按“选项”键。  
+  > 在 Unity 4.2 及更高版本中，“版本通道”上下文菜单项仅当打开上下文菜单并按下 **Alt** 键时，才在 Web Player 上下文菜单上可用。 如果 Web Player 正在 Mac OS X 上运行，则按“选项”键。  
   
   最后，请确保连接到要调试的 Unity 实例。 有关如何执行该操作的信息，请参阅[将 Visual Studio 连接到 Unity](#connecting-visual-studio-to-unity) 部分。  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60073421"
  许多 Unity 开发人员将代码组件编写为外部 Dll，以便可轻松地与其他项目共享开发的功能。 Visual Studio Tools for Unity 可以轻松无缝地调试这些 DLL 中的代码以及 Unity 项目中的其他代码。  
   
 > [!NOTE]
->  Visual Studio Tools for Unity 此时仅支持托管 DLL。 它不支持调试本机代码 DLL，如使用 C++ 编写的代码。  
+> Visual Studio Tools for Unity 此时仅支持托管 DLL。 它不支持调试本机代码 DLL，如使用 C++ 编写的代码。  
   
  请注意，此处所述的方案假定你具有源代码（即你正在开发或重用自己的第一方代码）或具有第三方库的源代码，并计划在 Unity 项目中将其作为 DLL 进行部署。 此方案未描述不具备源代码时的 DLL 调试。  
   

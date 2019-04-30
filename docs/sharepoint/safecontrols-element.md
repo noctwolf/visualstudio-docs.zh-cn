@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce943416bba84c46ce7b709c3d2bdb6ddb3e4447
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009553"
 ---
 # <a name="safecontrols-element"></a>SafeControls 元素
   ASPX 控件和指定的任何用户访问 SharePoint 站点上任何 ASPX 页上的安全的 Web 部件的集合。
@@ -58,7 +58,7 @@ ms.locfileid: "58322488"
 |**命名空间**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint 项目项架构|
 |**验证文件**|ProjectItemModelSchema.xsd|
-|**可以为空**|No|
+|**可以为空**|否|
 
 ## <a name="see-also"></a>请参阅
 - [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)

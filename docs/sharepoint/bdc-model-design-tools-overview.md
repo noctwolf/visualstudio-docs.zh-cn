@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387717"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   可以通过使用 BDC 设计器中，设计业务数据连接 (BDC) 模型**BDC 方法详细信息**窗口中，并**BDC 资源管理器**。
@@ -63,13 +63,13 @@ ms.locfileid: "56596563"
  选择中的节点时**BDC 资源管理器**，选择每个节点的属性将显示在**属性**窗口。 其中的许多属性对应于模型文件中的特性。 可以通过使用顶部的搜索框搜索模型**BDC 资源管理器**。
 
 > [!NOTE]
->  **BDC 资源管理器**不显示标识符、 自定义属性、 本地化的字符串、 关联组、 操作、 筛选器描述符、 操作控件列表和默认参数值。
+> **BDC 资源管理器**不显示标识符、 自定义属性、 本地化的字符串、 关联组、 操作、 筛选器描述符、 操作控件列表和默认参数值。
 
 ### <a name="define-type-descriptors"></a>定义类型描述符
  使用**BDC 资源管理器**定义类型描述符。 BDC 资源管理器，可将类型描述符定义一次，然后在重用您的模型中的其他位置该类型描述符。 若要实现此目的，复制的类型描述符并将其粘贴到任何其他参数或类型描述符。
 
 > [!NOTE]
->  对原始的类型描述符的更改不会影响该类型描述符的副本。
+> 对原始的类型描述符的更改不会影响该类型描述符的副本。
 
  有关详细信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 

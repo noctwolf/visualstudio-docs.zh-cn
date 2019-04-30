@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de8b942b64de56b93b2fece3f46b23413b6981
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea3286c2d4ae27afc7422700bd4f745ab28520fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399440"
 ---
 # <a name="debugging-gpu-code"></a>调试 GPU 代码
 可以调试在图形处理单元 (GPU) 上运行的 C++ 代码。 Visual Studio 中的 GPU 调试支持包括争用检测、启动进程并附加到进程以及与调试窗口集成。
@@ -27,7 +27,7 @@ ms.locfileid: "60038276"
  [!INCLUDE[win7](../debugger/includes/win7_md.md)]、[!INCLUDE[win8](../debugger/includes/win8_md.md)]、[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] 和 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] 上支持调试。 对于在软件模拟器上进行的调试，需要 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或 [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]。 对于在硬件上进行的调试，您必须为图形卡安装驱动程序。 并非所有硬件供应商都实现所有调试器功能。 有关限制，请参阅供应商文档。
 
 > [!NOTE]
->  希望在 Visual Studio 中支持 GPU 调试的独立硬件供应商必须创建一个 DLL, 该 DLL 实现 VSD3DDebug 接口并面向其自己的驱动程序。
+> 希望在 Visual Studio 中支持 GPU 调试的独立硬件供应商必须创建一个 DLL, 该 DLL 实现 VSD3DDebug 接口并面向其自己的驱动程序。
 
 ## <a name="configuring-gpu-debugging"></a>配置 GPU 调试
  调试器无法同时在同一应用执行中的 CPU 代码和 GPU 代码处中断。 默认情况下，调试器在 CPU 代码处中断。 若要调试 GPU 代码，请使用以下两个步骤之一：
@@ -80,6 +80,6 @@ ms.locfileid: "60038276"
  C++ AMP 计算可能会超过由 Windows 超时检测和恢复进程 (TDR) 设置的默认时间间隔。 在这种情况下，计算将被取消，并且数据将丢失。 有关详细信息，请参阅[在 C++ AMP 中处理 TDR](http://go.microsoft.com/fwlink/p/?LinkId=249154)。
 
 ## <a name="see-also"></a>请参阅
-- [演练：调试C++AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [演练：调试 C++ AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [在 Visual Studio 中开始 GPU 调试](http://go.microsoft.com/fwlink/p/?LinkId=255381)

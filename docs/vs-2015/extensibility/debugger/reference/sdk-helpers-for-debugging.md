@@ -14,20 +14,20 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435990"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-这些函数和声明是用于在 c + + 中实现的调试引擎中，表达式计算器和符号提供程序的全局帮助器函数。  
+这些函数和声明是全局的 helper 函数，用于实现的调试引擎中，表达式计算器和符号中的提供程序C++。  
   
 > [!NOTE]
->  此时没有上述函数和声明的托管的版本。  
+> 此时没有上述函数和声明的托管的版本。  
   
 ## <a name="overview"></a>概述  
  为了使用由 Visual Studio 的调试引擎中，表达式计算器和符号提供程序，必须在注册它们。 这是通过设置注册表子项和注册表项，也称为"度量值设置。" 以下全局函数旨在简化更新这些度量值的过程。 在注册表位置来找出这些函数更新每个注册表子项的布局，请参阅部分。  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
  指标是从读取和写入到注册表中，特别是在`VisualStudio`子项。  
   
 > [!NOTE]
->  大多数情况下，度量值将写入到 HKEY_LOCAL_MACHINE 项。 但是，有时 HKEY_CURRENT_USER 将是目标项。 Dbgmetric.lib 处理这两个密钥。 度量值时，它将搜索 HKEY_CURRENT_USER 中，然后 HKEY_LOCAL_MACHINE。 它会将设置度量值，当参数指定要使用哪个顶级密钥。  
+> 大多数情况下，度量值将写入到 HKEY_LOCAL_MACHINE 项。 但是，有时 HKEY_CURRENT_USER 将是目标项。 Dbgmetric.lib 处理这两个密钥。 度量值时，它将搜索 HKEY_CURRENT_USER 中，然后 HKEY_LOCAL_MACHINE。 它会将设置度量值，当参数指定要使用哪个顶级密钥。  
   
  *[registry key]*\  
   
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[metric value]*|分配给该度量值的值。 应具有的值 （字符串、 数字等） 的类型取决于该度量值。|  
   
 > [!NOTE]
->  格式存储所有 Guid `{GUID}`。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
+> 格式存储所有 Guid `{GUID}`。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
 ### <a name="debug-engines"></a>调试引擎  
  以下是在注册表中的调试引擎指标的组织。 `Engine` 调试引擎的指标类型名称和对应于 *[指标类型]* 上述注册表子树中。  
@@ -350,7 +350,7 @@ HRESULT EnumMetricSections(
  以下是在注册表中的表达式计算器指标的组织。 `ExpressionEvaluator` 表达式计算器的指标类型名称和对应于 *[指标类型]*。  
   
 > [!NOTE]
->  指标类型`ExpressionEvaluator`未定义在 dbgmetric.h，因为它假定所有度量值更改为表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上很复杂，因此详细信息隐藏在 dbgmetric.lib）。  
+> 指标类型`ExpressionEvaluator`未定义在 dbgmetric.h，因为它假定所有度量值更改为表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上很复杂，因此详细信息隐藏在 dbgmetric.lib）。  
   
  `ExpressionEvaluator`\  
   
@@ -416,7 +416,7 @@ HRESULT EnumMetricSections(
 |占位符|描述|  
 |-----------------|-----------------|  
 |*[调试引擎 guid]*|支持异常的调试引擎的 GUID。|  
-|*[exception types]*|子项标识可以处理的异常的类的一个常规标题。 典型的名称是**c + + 异常**， **Win32 异常**，**公共语言运行时异常**，以及**本机运行时检查**。 这些名称也用于标识特定类别的用户的例外。|  
+|*[exception types]*|子项标识可以处理的异常的类的一个常规标题。 典型的名称是**C++异常**， **Win32 异常**，**公共语言运行时异常**，并**本机运行时检查**. 这些名称也用于标识特定类别的用户的例外。|  
 |*[exception]*|异常的名称： 例如， **_com_error**或**控制中断**。 这些名称还用于确定向用户特定异常。|  
   
 ## <a name="requirements"></a>要求  

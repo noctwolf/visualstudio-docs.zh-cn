@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402832"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）
 
@@ -59,7 +59,7 @@ ms.locfileid: "60049837"
 10. 单击“确定”或“应用”。
 
     > [!NOTE]
-    >  你可以继续配置，只要你单击每个类和行为组合的行为**应用**每次更改后。 如果您更改的类或行为之前单击**应用**，警告对话框将出现，并提供应用所做的更改的机会。
+    > 你可以继续配置，只要你单击每个类和行为组合的行为**应用**每次更改后。 如果您更改的类或行为之前单击**应用**，警告对话框将出现，并提供应用所做的更改的机会。
 
 若要恢复为使用默认运行时更新逻辑，请单击“属性”窗口中“插入”、“更新”或“删除”命令旁边的省略号，然后在“配置行为”对话框中选择“使用运行时”。
 

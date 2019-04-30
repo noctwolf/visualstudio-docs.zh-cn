@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3011664cc2261b0213e7ce743167579b2b0786
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444927"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>演练：使用编辑器扩展中使用 shell 命令
 从 VSPackage，你可以向编辑器中添加功能，如菜单命令。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。
@@ -52,7 +52,7 @@ ms.locfileid: "60088478"
  要添加到 VSPackage 的 MEF 组件，因为必须在清单中指定这两种类型的资产。
 
 > [!NOTE]
->  有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
+> 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>来指代 VSPackage 项目中的 MEF 组件
 

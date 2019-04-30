@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443254"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60077272"
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上依次选择“生成”和“配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。  
   
 > [!NOTE]
->  如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：管理配置应用的 Visual Basic 开发人员设置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。  
+> 如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：管理配置应用的 Visual Basic 开发人员设置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。  
   
  默认情况下，调试和发布配置包含在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模板创建的项目中。 调试配置支持应用的调试，而发布配置生成可部署的应用版本。 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 还可以创建自定义解决方案配置和项目配置。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。  
   
@@ -49,9 +49,9 @@ ms.locfileid: "60077272"
  解决方案配置的“项目上下文”框中的每个条目均表示解决方案中的一个项目。 对于“活动解决方案配置”和“活动解决方案平台”的每个组合，都可以设置每个项目的使用方式。 （有关解决方案平台的详细信息，请参阅[了解生成平台](../ide/understanding-build-platforms.md)。）  
   
 > [!NOTE]
->  在定义新的解决方案配置并选中“创建新的项目配置”复选框后，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动将新的配置分配给所有项目。 同样，在定义新的解决方案平台并选中“创建新的项目平台”复选框后，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 也会自动将新的平台分配给所有项目。 此外，如果您添加一个面向新平台的项目，则 Visual Studio 会将该平台添加到解决方案平台列表中并将其分配给所有项目。  
+> 在定义新的解决方案配置并选中“创建新的项目配置”复选框后，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动将新的配置分配给所有项目。 同样，在定义新的解决方案平台并选中“创建新的项目平台”复选框后，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 也会自动将新的平台分配给所有项目。 此外，如果您添加一个面向新平台的项目，则 Visual Studio 会将该平台添加到解决方案平台列表中并将其分配给所有项目。  
 >   
->  您仍可以修改每个项目的设置。  
+> 您仍可以修改每个项目的设置。  
   
  活动解决方案配置还为 IDE 提供了上下文。 例如，如果处理的是项目，并且配置指定将针对移动设备生成，那么“工具箱”只会显示可在移动设备项目中使用的项。  
   

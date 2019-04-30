@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442340"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "58937252"
  此外，还可以确定应用程序检查更新的时间间隔，并且可以强制必须执行更新。  
   
 > [!NOTE]
->  应用程序更新需要网络连接。 如果不存在网络连接，则应用程序会在不检查更新的情况下运行，而无论选择的是何种更新策略。  
+> 应用程序更新需要网络连接。 如果不存在网络连接，则应用程序会在不检查更新的情况下运行，而无论选择的是何种更新策略。  
   
 > [!NOTE]
->  在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 <xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider` 元素对应于 Visual Studio 中“发布”选项卡的“更新”对话框上的“更新位置”字段。在 .NET Framework 3.5 中，此规则为宽松规则。 有关详细信息，请参阅[部署 ClickOnce 应用程序的测试和生产服务器，而无需 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
+> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 <xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider` 元素对应于 Visual Studio 中“发布”选项卡的“更新”对话框上的“更新位置”字段。在 .NET Framework 3.5 中，此规则为宽松规则。 有关详细信息，请参阅[部署 ClickOnce 应用程序的测试和生产服务器，而无需 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
   
 ## <a name="checking-for-updates-after-application-startup"></a>在应用程序启动后检查是否有更新  
  通过使用此策略，应用程序会在运行期间尝试在后台查找并读取部署清单文件。 如果有某个更新可用，则当用户下一次运行应用程序时，会提示用户下载并安装该更新。  
@@ -79,7 +79,7 @@ ms.locfileid: "58937252"
  在有些情况下，您可能需要要求用户运行更新版本的应用程序。 例如，你可能对诸如 Web 服务等外部资源进行了某种更改，而这种更改会使得较早版本的应用程序不能正常工作。 在这种情况下，您需要将更新标记为“必需”，并阻止用户运行较早的版本。  
   
 > [!NOTE]
->  虽然使用其他更新策略也可以强制进行更新，但是“在应用程序启动前”进行检查是保证不运行较早版本的应用程序的唯一方法。 如果在启动时检测到强制更新，则用户必须要么接受更新，要么关闭应用程序。  
+> 虽然使用其他更新策略也可以强制进行更新，但是“在应用程序启动前”进行检查是保证不运行较早版本的应用程序的唯一方法。 如果在启动时检测到强制更新，则用户必须要么接受更新，要么关闭应用程序。  
   
  若要将更新标记为“必需”，请单击“应用程序更新”对话框中的“指定该应用程序需要的最低版本”，然后指定发布版本（“主版本”、“次版本”、“内部版本”、“修订版本”），该发布版本指定可以安装的应用程序的最低版本号。  
   

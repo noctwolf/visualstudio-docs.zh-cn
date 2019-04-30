@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442473"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步骤 7：向窗体添加对话框组件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60061471"
 1. 选择 Windows 窗体设计器（Form1.cs [设计] 或 Form1.vb [设计]），然后打开工具箱中的“对话框”组。  
   
     > [!NOTE]
-    >  工具箱中的“对话框”组具有可用于打开多个有用的对话框的组件，这些对话框可用于打开和保存文件、浏览文件夹以及选择字体和颜色。 在此项目中使用两个对话框组件：**OpenFileDialog**并**ColorDialog**。  
+    > 工具箱中的“对话框”组具有可用于打开多个有用的对话框的组件，这些对话框可用于打开和保存文件、浏览文件夹以及选择字体和颜色。 在此项目中使用两个对话框组件：**OpenFileDialog**并**ColorDialog**。  
   
 2. 要向窗体添加一个名为“openFileDialog1”的组件，请双击“OpenFileDialog”。 要向窗体添加一个名为“colorDialog1”的组件，请双击工具箱中的“ColorDialog”。 （将在下一个教程步骤中使用后一个组件。）Windows 窗体设计器的底部（在“图片查看器”窗体下方）应出现一个区域，其中包含与已添加的两个对话框组件对应的图标，如下图所示。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60061471"
          Filter 属性设置指定在“选择图片”文件对话框中显示的文件类型的种类。  
   
     > [!NOTE]
-    >  要查看其他应用程序中的“打开文件”对话框的示例，请打开“记事本”或“画图”，然后在菜单栏上选择“文件”、“打开”。 请注意“文件类型”下拉列表是如何在底部出现的。 刚才已使用“OpenFileDialog”组件中的 Filter 属性进行了此设置。 还请注意“属性”窗口中的 Title 和 Filter 属性是如何加粗的。 IDE 执行上述操作是为了显示其默认值已更改的任何属性。  
+    > 要查看其他应用程序中的“打开文件”对话框的示例，请打开“记事本”或“画图”，然后在菜单栏上选择“文件”、“打开”。 请注意“文件类型”下拉列表是如何在底部出现的。 刚才已使用“OpenFileDialog”组件中的 Filter 属性进行了此设置。 还请注意“属性”窗口中的 Title 和 Filter 属性是如何加粗的。 IDE 执行上述操作是为了显示其默认值已更改的任何属性。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   

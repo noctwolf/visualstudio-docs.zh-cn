@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405620"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58936195"
 4. 直到找到未映射，请尝试不同的键组合。  
   
    > [!NOTE]
-   >  使用 ALT 的键盘快捷方式可能打开一个菜单，并不是直接执行命令。 因此，**快捷键的当前使用**类型包括 ALT 的快捷方式时，框可能为空。 你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。  
+   > 使用 ALT 的键盘快捷方式可能打开一个菜单，并不是直接执行命令。 因此，**快捷键的当前使用**类型包括 ALT 的快捷方式时，框可能为空。 你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。  
   
    以下过程假设您有一个菜单命令与现有 VSPackage。 如果您需要执行该操作的帮助，看一看[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "58936195"
 2. 创建一个空`<KeyBindings>`部分后`<Commands>`如果尚不存在。  
   
    > [!WARNING]
-   >  键绑定的详细信息，请参阅[键绑定](../extensibility/keybinding-element.md)。  
+   > 键绑定的详细信息，请参阅[键绑定](../extensibility/keybinding-element.md)。  
   
     在中`<KeyBindings>`部分中，创建`<KeyBinding>`条目。  
   

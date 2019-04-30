@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423964"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 参数的 IntelliSense 信息工具提示为用户提供有关其所在的语言构造中的提示。
@@ -27,7 +27,7 @@ ms.locfileid: "60086308"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[扩展编辑器和语言服务](../../extensibility/extending-the-editor-and-language-services.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
 ## <a name="how-parameter-info-tooltips-work"></a>参数信息工具提示的工作原理
  当在编辑器中键入一条语句时，VSPackage 将显示包含所键入的语句定义的小工具提示窗口。 例如，如果键入 Microsoft 基础类 (MFC) 语句 (如`pMainFrame ->UpdateWindow`) 和按左括号键用于开始列出的参数，将显示的方法提示，显示的定义`UpdateWindow`方法。

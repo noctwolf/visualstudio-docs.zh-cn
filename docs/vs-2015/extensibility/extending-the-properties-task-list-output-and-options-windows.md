@@ -15,12 +15,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b215d969ba7898923e98f063a47132125d82119b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443906"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>扩展属性、任务列表、输出和选项窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60042608"
 1. 创建一个名为项目**TodoList**使用 VSIX 模板，并添加一个名为的自定义工具窗口项模板**TodoWindow**。  
   
     > [!NOTE]
-    >  有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+    > 有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="set-up-the-tool-window"></a>设置工具窗口  
  添加在其中可键入新的 ToDo 项，以将新项添加到列表中，一个按钮和列表框中显示的项在列表中的文本框。  
@@ -43,7 +43,7 @@ ms.locfileid: "60042608"
 1. 在 TodoWindow.xaml，从 UserControl 中删除按钮、 文本框和 StackPanel 控件。  
   
     > [!NOTE]
-    >  这不会删除**button1_Click**事件处理程序，将在稍后的步骤中重复使用。  
+    > 这不会删除**button1_Click**事件处理程序，将在稍后的步骤中重复使用。  
   
 2. 从**所有 WPF 控件**一部分**工具箱**，拖动**画布**到网格控件。  
   

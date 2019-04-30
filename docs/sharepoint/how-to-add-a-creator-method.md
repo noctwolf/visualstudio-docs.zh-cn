@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443579"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：添加 Creator 方法
   创建者方法将新数据添加到的数据源的实体。 业务数据连接 (BDC) 服务调用此方法时用户选择**新项**按钮**功能区**的基于模型的列表。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -58,7 +58,7 @@ ms.locfileid: "56619311"
 5. 将代码添加到将数据添加到数据源的创建者方法。 下面的示例适用于 SQL Server 将联系人添加到 AdventureWorks 示例数据库。
 
    > [!NOTE]
-   >  值替换为`ServerName`字段与服务器的名称。
+   > 值替换为`ServerName`字段与服务器的名称。
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

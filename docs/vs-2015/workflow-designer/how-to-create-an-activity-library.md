@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce02d639f6fcd3040566a2c279713c046f9c6ead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444576"
 ---
 # <a name="how-to-create-an-activity-library"></a>如何：创建活动库
 自定义活动用于在工作流中对特定业务流程进行建模。 通过 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中的活动库模板，可使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 直观地创建这种自定义活动。  
@@ -38,14 +38,14 @@ ms.locfileid: "60068088"
 7. 在中**解决方案**框中，键入描述性名称为您的解决方案，然后单击**确定**。  
   
     > [!NOTE]
-    >  如果你想要添加到现有解决方案工作流控制台应用程序，打开该解决方案[!INCLUDE[vs2010](../includes/vs2010-md.md)]，右键单击中的解决方案**解决方案资源管理器**，然后选择**添加**，然后**新建项目...** 若要打开**新的项目**对话框。 按照此过程中的上述步骤继续操作。  
+    > 如果你想要添加到现有解决方案工作流控制台应用程序，打开该解决方案[!INCLUDE[vs2010](../includes/vs2010-md.md)]，右键单击中的解决方案**解决方案资源管理器**，然后选择**添加**，然后**新建项目...** 若要打开**新的项目**对话框。 按照此过程中的上述步骤继续操作。  
   
 8. 该项目模板将创建一个 XAML 格式的活动定义。 [!INCLUDE[wfd1](../includes/wfd1-md.md)]将打开并显示自定义活动的画布。  
   
 9. 将从活动拖放**工具箱**到设计图面上要包含在自定义活动中。  
   
     > [!CAUTION]
-    >  自定义活动的主体中只能有一个子活动；但是，该子活动可以是一个复合活动，如 <xref:System.Activities.Statements.Sequence> 活动或 <xref:System.Activities.Statements.Flowchart> 活动。  
+    > 自定义活动的主体中只能有一个子活动；但是，该子活动可以是一个复合活动，如 <xref:System.Activities.Statements.Sequence> 活动或 <xref:System.Activities.Statements.Flowchart> 活动。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建活动](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   

@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402623"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符号类型的类层次结构
 下表介绍的类层次结构中的符号类型。
 
 ## <a name="symbol-types"></a>符号类型
 
-|符号类型|说明|
+|符号类型|描述|
 |-----------------|-----------------|
 |[UDT](../../debugger/debug-interface-access/udt.md)|符号用于表示每个类、 结构和联合。|
 |[枚举（调试接口访问 SDK）](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|枚举类型的符号。|
@@ -43,7 +43,7 @@ ms.locfileid: "56604439"
 |[维度](../../debugger/debug-interface-access/dimension.md)|数组维数的符号。|
 
 > [!NOTE]
->  每个符号可以保存有关符号，以及对其他符号的引用信息的属性。 单个符号主题中列出了这些属性。
+> 每个符号可以保存有关符号，以及对其他符号的引用信息的属性。 单个符号主题中列出了这些属性。
 
 ## <a name="see-also"></a>请参阅
 - [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)

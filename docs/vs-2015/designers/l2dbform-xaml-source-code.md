@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403490"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,10 +84,10 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
   
 ## <a name="example"></a>示例  
   
-### <a name="description"></a>说明​​  
+### <a name="description"></a>描述  
   
 > [!NOTE]
->  建议您将下面的代码复制到代码编辑器（如 Visual Studio 中的 C# 源代码编辑器）中，以便更易于跟踪行号。  
+> 建议您将下面的代码复制到代码编辑器（如 Visual Studio 中的 C# 源代码编辑器）中，以便更易于跟踪行号。  
   
 ### <a name="code"></a>代码  
   

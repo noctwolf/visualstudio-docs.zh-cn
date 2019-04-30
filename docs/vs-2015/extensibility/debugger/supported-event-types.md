@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446441"
 ---
 # <a name="supported-event-types"></a>支持的事件类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio 调试当前支持以下事件类型：
     接口[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)并[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)是停止事件的示例。  
   
   > [!NOTE]
-  >  不支持异步停止事件。 它是错误发送异步停止事件。  
+  > 不支持异步停止事件。 它是错误发送异步停止事件。  
   
 ## <a name="discussion"></a>讨论  
  事件的实际实现取决于你 DE 设计。 发送每个事件的类型是由设计 DE 时设置其属性确定的。 例如，可能会发送一个 DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)作为异步事件，而另一个可能会将其作为停止事件。  
@@ -53,7 +53,7 @@ Visual Studio 调试当前支持以下事件类型：
  下表指定哪些程序和线程的参数是必需的事件，以及事件类型。 任何事件可以是同步的。 不需要是同步的任何事件。  
   
 > [!NOTE]
->  [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)接口是必需的所有事件。  
+> [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md)接口是必需的所有事件。  
   
 |Event|IDebugProgram2|IDebugThread2|停止事件|  
 |-----------|--------------------|-------------------|---------------------|  

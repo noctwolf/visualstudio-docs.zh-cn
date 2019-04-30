@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412630"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 此接口表示堆栈帧属性或其他某个属性的引用。
 
 > [!NOTE]
->  `IDebugReference2` 保留供将来使用，和它的方法应返回所有`E_NOTIMPL`。
+> `IDebugReference2` 保留供将来使用，和它的方法应返回所有`E_NOTIMPL`。
 
 ## <a name="syntax"></a>语法
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>备注
 
 > [!NOTE]
->  "属性"的这种用法不应混淆，这意味着类的成员变量与尽管`IDebugReference2`可以表示这样的实体。
+> "属性"的这种用法不应混淆，这意味着类的成员变量与尽管`IDebugReference2`可以表示这样的实体。
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的属性，而`IDebugReference2`表示属性，通常对正在调试的程序中的对象的引用的引用。
 

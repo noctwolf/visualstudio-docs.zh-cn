@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409544"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：将应用程序页添加到工作流
   本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练：使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
@@ -295,7 +295,7 @@ ms.locfileid: "60083021"
     ```
 
     > [!WARNING]
-    >  请务必将"TestServer"的有效运行 SharePoint 的服务器名称替换为在代码中。
+    > 请务必将"TestServer"的有效运行 SharePoint 的服务器名称替换为在代码中。
 
 ## <a name="test-the-application-page"></a>测试应用程序页
  接下来，确定应用程序页上是否正确显示费用数据。

@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442428"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>从 UML 类关系图生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ ms.locfileid: "60056154"
 2. 在中**属性**窗口中，选择中的下拉箭头**构造型**属性，并选择你想要应用的构造型的复选框。  
 
    > [!TIP]
-   >  如果未出现 C# 构造型，则为模型或包含你感兴趣的模型元素的包启用 C# 配置文件。 选择包或模型中的根**UML 模型资源管理器**。 然后在**属性**窗口中，选择**配置文件**，然后启用 C# 配置文件。  
+   > 如果未出现 C# 构造型，则为模型或包含你感兴趣的模型元素的包启用 C# 配置文件。 选择包或模型中的根**UML 模型资源管理器**。 然后在**属性**窗口中，选择**配置文件**，然后启用 C# 配置文件。  
 
 3. 展开**构造型**属性以查看可设置的其他属性。  
 
@@ -144,7 +144,7 @@ ms.locfileid: "60056154"
  可将多个模板应用于一个模型元素。 可从每个模型元素中生成多个文件。  
 
 > [!NOTE]
->  附加到模型的根的绑定将充当模型中所有元素的默认值。 若要查看这些默认绑定，请打开**UML 模型资源管理器**。 打开建模项目的快捷菜单，然后选择**设置代码生成**。 或者，在“UML 模型资源管理器”中选择模型的根。 在属性窗口中，选择 **[...]** 中**文本模板绑定**属性。 直到您使用的绑定将不会出现**生成代码**至少一次命令。 无法将模板绑定附加到关系图。  
+> 附加到模型的根的绑定将充当模型中所有元素的默认值。 若要查看这些默认绑定，请打开**UML 模型资源管理器**。 打开建模项目的快捷菜单，然后选择**设置代码生成**。 或者，在“UML 模型资源管理器”中选择模型的根。 在属性窗口中，选择 **[...]** 中**文本模板绑定**属性。 直到您使用的绑定将不会出现**生成代码**至少一次命令。 无法将模板绑定附加到关系图。  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>将文本模板绑定附加到包或其他模型元素  
 

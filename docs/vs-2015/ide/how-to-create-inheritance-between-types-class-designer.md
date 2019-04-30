@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c0e8594014848bee103c65127b5edb7ad969284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80d4ebe992a3406a4e8c54b033cd4f526335231b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416978"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>如何：创建类型之间的继承（类设计器） 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60104689"
 4. （可选）当你有从泛型类型派生的类型时，单击该继承连线。 在“属性”窗口中，设置“类型参数”属性，使其与要用于泛型类型的类型匹配。  
   
     > [!NOTE]
-    >  如果父抽象类至少包含一个抽象成员，则所有这些成员都将作为非抽象的继承类实现。   
+    > 如果父抽象类至少包含一个抽象成员，则所有这些成员都将作为非抽象的继承类实现。   
     >   
     >  尽管可对现有泛型类型进行可视化，但不能创建新的泛型类型。 还不能更改现有泛型类型的类型参数。  
   

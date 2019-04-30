@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443555"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>创建业务数据连接模型
   可以创建业务数据连接 (BDC) 模型，也可以使用 Visual Studio 自定义现有 BDC 模型。 每个 SharePoint 项目可以包含一个模型。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
@@ -29,7 +29,7 @@ ms.locfileid: "56605726"
  若要创建新模型，创建**业务数据连接模型**项目或添加**业务数据连接模型**项**空 SharePoint 项目**。
 
 > [!NOTE]
->  您必须具有[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]在计算机上安装。
+> 您必须具有[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]在计算机上安装。
 
  Visual Studio 向项目添加一个文件夹。 此文件夹的名称为指定的名称**业务数据连接模型**中的项**添加新项**对话框。 如果您创建一个新**业务数据连接模型**项目，Visual Studio 将该文件夹命名**BdcModel1**。
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605726"
  在编译项目时，Visual Studio 创建程序集。 确保不要将其他项添加到将代码添加到项目程序集的项目 (例如：**顺序工作流**项或**Web 部件**项)。 因为解决方案包不会复制到全局程序集缓存程序集部署解决方案时，将不会运行该项目的代码。  解决方案包部署到仅在 SharePoint 中的 BDC 数据库程序集。
 
 > [!NOTE]
->  调试项目时，visual Studio 将该程序集复制到本地计算机上的这两个位置。
+> 调试项目时，visual Studio 将该程序集复制到本地计算机上的这两个位置。
 
 ## <a name="add-an-existing-model"></a>添加现有模型
  您可以导入已通过使用其他工具，例如 SharePoint 设计器的模型。 您可以选择现有模型导入在以下情况下你的项目：
@@ -62,7 +62,7 @@ ms.locfileid: "56605726"
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
+|标题|说明|
 |-----------|-----------------|
 |[如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)|演示如何创建新的 BDC 模型。|
 |[如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|演示如何将现有模型导入 SharePoint 项目。|

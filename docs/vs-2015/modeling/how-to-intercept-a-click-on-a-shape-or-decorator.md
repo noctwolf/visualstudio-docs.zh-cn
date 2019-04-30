@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441076"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：截获对形状或修饰器的单击
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  设置`e.Handled`到`true`，除非你想要传递给包含形状或关系图的事件。  
+> 设置`e.Handled`到`true`，除非你想要传递给包含形状或关系图的事件。  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>若要截获对修饰器的单击  
  图像修饰器 ImageField 类，该类包含 OnDoubleClick 方法的实例上执行。 可以截获下鼠标，如果您编写 ImageField 子类。 InitializeShapeFields 方法中设置字段。 因此，您必须更改该方法，以实例化而不是正则 ImageField 子类。 InitializeShapeFields 方法是形状类的生成的代码中。 可以重写形状类，如果您设置其`Generates Double Derived`属性，如以下过程中所述。  

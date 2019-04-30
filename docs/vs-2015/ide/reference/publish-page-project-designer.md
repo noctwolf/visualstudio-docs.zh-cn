@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441313"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59658209"
  若要访问“发布”  页面，请在“解决方案资源管理器” 中选择项目节点，再在“项目”  菜单上单击“属性” 。 当 **“项目设计器”** 出现时，单击 **“发布”** 选项卡。  
   
 > [!NOTE]
->  此处介绍的一些 ClickOnce 属性也可以在“发布向导”（可从“生成”菜单或通过单击此页面上的“发布向导”按钮来使用）中进行设置。  
+> 此处介绍的一些 ClickOnce 属性也可以在“发布向导”（可从“生成”菜单或通过单击此页面上的“发布向导”按钮来使用）中进行设置。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **发布文件夹所在的位置**  

@@ -8,12 +8,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430682"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不使用损坏的加密算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60102661"
 |是否重大更改|非重大更改|  
   
 > [!NOTE]
->  此警告上次更新于 2015 年 11 月。  
+> 此警告上次更新于 2015 年 11 月。  
   
 ## <a name="cause"></a>原因  
  哈希函数（如 <xref:System.Security.Cryptography.MD5> ）和加密算法（如 <xref:System.Security.Cryptography.DES> 和 <xref:System.Security.Cryptography.RC2> ）可能会带来重大风险，并可能通过普通的攻击技术（如暴力攻击和哈希冲突）导致暴露敏感信息。  

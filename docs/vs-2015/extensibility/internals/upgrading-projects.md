@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441237"
 ---
 # <a name="upgrading-projects"></a>升级项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60100594"
  在更新后所有相关的全局文件，可以选择每个项目工厂实例化一个项目。 项目实现必须支持<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>然后调用方法来升级相关的项目的所有项。  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>方法不提供 SVsUpgradeLogger 服务。 此服务可以通过调用来获取<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>。  
+> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A>方法不提供 SVsUpgradeLogger 服务。 此服务可以通过调用来获取<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>。  
   
 ## <a name="best-practices"></a>最佳做法  
  使用<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>服务，以检查是否可以编辑它之前, 编辑的文件，并可以将其保存在保存它之前。 这将帮助你的备份和升级实现可处理源代码管理下的项目文件中，文件没有足够的权限，等等。  

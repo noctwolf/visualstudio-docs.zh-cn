@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447011"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>发布页，项目设计器 （在 Visual Studio 中的 Office 开发）
   “项目设计器”  的“发布”  页面用于针对部署配置属性。
@@ -29,7 +29,7 @@ ms.locfileid: "60103508"
  若要访问此页，请选择中的项目**解决方案资源管理器**，然后在**项目**菜单中，选择*Projectname* **属性**. 如果“发布”  页面未显示，请选择“发布”  选项卡。
 
 > [!NOTE]
->  你也可以在“发布向导” 中设置发布位置。 有关详细信息，请参阅[如何：使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
+> 你也可以在“发布向导” 中设置发布位置。 有关详细信息，请参阅[如何：使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。
 
 ## <a name="uielement-list"></a>UIElement 列表
  **发布文件夹位置 （网站、 ftp 服务器或文件路径）** 所需。

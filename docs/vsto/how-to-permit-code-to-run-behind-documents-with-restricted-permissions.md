@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445341"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允许代码以使用受限权限的文档的后台运行
   Microsoft Office 信息权限管理 (IRM) 功能可用于限制对文档或工作簿的权限。 默认情况下，受限制的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿后的代码不被允许运行。 可以更改默认值，使托管的代码扩展可以访问的对象模型，该解决方案将适用。
@@ -38,7 +38,7 @@ ms.locfileid: "56637654"
 2. 单击**文件**选项卡上，依次指向**准备**，指向**限制权限**，然后单击**受限访问权限**。
 
    > [!NOTE]
-   >  首次使用时，系统会提示安装的 Windows 权限管理客户端。 安装客户端后，你可能需要重复这些步骤。
+   > 首次使用时，系统会提示安装的 Windows 权限管理客户端。 安装客户端后，你可能需要重复这些步骤。
 
 3. 在中**权限**对话框中，选择**限制此文档的权限**，然后单击**更多选项**。
 

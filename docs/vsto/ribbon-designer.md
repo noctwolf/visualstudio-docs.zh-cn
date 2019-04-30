@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447007"
 ---
 # <a name="ribbon-designer"></a>功能区设计器
   功能区设计器是一个可视化设计画布。 使用功能区设计器将自定义选项卡、 组和控件添加到 Microsoft Office 应用程序的功能区。
@@ -47,7 +47,7 @@ ms.locfileid: "60103631"
 - [将控件添加到 Backstage 视图](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  将使用功能区设计器无法完成某些任务。 有关这些任务以及如何实现的详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。
+> 将使用功能区设计器无法完成某些任务。 有关这些任务以及如何实现的详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。
 
  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：使用功能区设计器自定义 Outlook 功能区中？](http://go.microsoft.com/fwlink/?LinkID=130312).
 

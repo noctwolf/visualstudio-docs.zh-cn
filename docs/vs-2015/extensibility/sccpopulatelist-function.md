@@ -12,12 +12,12 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446776"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_E_NONSPECIFICERROR|非特定故障。|  
@@ -81,7 +81,7 @@ SCCRTN SccPopulateList (
  该插件将继续调用`pfnPopulate`函数，它将添加或删除文件，直到它完成，然后返回从`SccPopulateList`函数。 然后，IDE 可以显示其列表。 `lpStatus`数组均表示由 IDE 传入的原始列表中的所有文件。 回调函数的使用中的所有这些文件除了要让状态插件的填充。  
   
 > [!NOTE]
->  源代码管理插件始终可以选择只是此函数，因为它是离开列表立即返回。 如果插件实现此函数，则可以通过设置表示此`SCC_CAP_POPULATELIST`功能对的第一个调用中的位标志[SccInitialize](../extensibility/sccinitialize-function.md)。 默认情况下，该插件应始终假定要传入的所有项都是文件。 但是，如果 IDE 设置`SCC_PL_DIR`标记中`fOptions`参数中传递的所有项都都视为目录。 插件应在目录中添加属于的所有文件。 IDE 永远不会将传入文件和目录的混合。  
+> 源代码管理插件始终可以选择只是此函数，因为它是离开列表立即返回。 如果插件实现此函数，则可以通过设置表示此`SCC_CAP_POPULATELIST`功能对的第一个调用中的位标志[SccInitialize](../extensibility/sccinitialize-function.md)。 默认情况下，该插件应始终假定要传入的所有项都是文件。 但是，如果 IDE 设置`SCC_PL_DIR`标记中`fOptions`参数中传递的所有项都都视为目录。 插件应在目录中添加属于的所有文件。 IDE 永远不会将传入文件和目录的混合。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

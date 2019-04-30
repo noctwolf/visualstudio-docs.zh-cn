@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446018"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>支持编码的 UI 测试和操作录制的配置和平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109034"
 下表针对 Visual Studio Enterprise 列出了编码的 UI 测试支持的配置和平台。 这些配置也适用于使用 [!INCLUDE[MTRlong](../includes/mtrlong-md.md)]创建的操作录制。  
   
 > [!NOTE]
->  编码的 UI 测试进程必须具有与受测应用程序相同的特权。  
+> 编码的 UI 测试进程必须具有与受测应用程序相同的特权。  
   
  **要求**  
   
@@ -39,7 +39,7 @@ ms.locfileid: "60109034"
 |.NET|.NET 2.0、3.0、3.5、4 和 4.5。 **注意：**[!INCLUDE[TCMext](../includes/tcmext-md.md)] 和 Visual Studio 都需要 .NET 4 才能运行。 但是，支持使用列出的 .NET 版本开发的应用程序。|  
   
 > [!NOTE]
->  UI 同步是一种功能，该功能在每个控件的消息队列中验证播放。   如果某个控件未响应发送给它的事件，则会重新发送该事件。  
+> UI 同步是一种功能，该功能在每个控件的消息队列中验证播放。   如果某个控件未响应发送给它的事件，则会重新发送该事件。  
   
 ## <a name="platform-support"></a>平台支持  
   

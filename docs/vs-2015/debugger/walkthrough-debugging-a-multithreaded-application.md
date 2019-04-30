@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444319"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>演练：调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. 转到**调试位置**工具栏，然后单击**线程**列表。  
   
     > [!NOTE]
-    >  您可以通过三个突出显示的列表来识别此工具栏：**进程**，**线程**，和**堆栈帧**。  
+    > 您可以通过三个突出显示的列表来识别此工具栏：**进程**，**线程**，和**堆栈帧**。  
   
 3. 请注意列表中显示的线程数目。  
   

@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406745"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新应用程序使用 ClickOnce 技术部署，如果您已开发您的项目与 Visual Basic 和 Visual 提供完全支持C#。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual 信息C++应用程序，请参阅[视觉对象的 ClickOnce 部署C++应用程序](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署克服了部署中的三个主要问题：
 
@@ -54,13 +54,13 @@ ms.locfileid: "56612902"
  代码访问安全性帮助限制代码对受保护资源的访问权限。 在大多数情况下，可以选择 Internet 或本地 Intranet 区域来限制权限。 使用**安全**页面**ProjectDesigner**请求适合于应用程序的区域。 此外可以调试具有受限的权限来模拟最终用户体验的应用程序。 有关详细信息，请参阅 [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)。
 
 ### <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示
- 如果应用程序请求更多的权限超出允许的区域，可以提示最终用户做出信任决策。 最终用户可以决定是否信任，可以运行 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 XAML 浏览器应用程序，和 Office 解决方案。 有关详细信息，请参阅[如何： 配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
+ 如果应用程序请求更多的权限超出允许的区域，可以提示最终用户做出信任决策。 最终用户可以决定是否信任，可以运行 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 XAML 浏览器应用程序，和 Office 解决方案。 有关详细信息，请参阅[如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
 
 ## <a name="how-clickonce-deployment-works"></a>ClickOnce 部署的工作原理
  核心[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署体系结构基于两个 XML 清单文件： 应用程序清单和部署清单。 这些文件用于描述从何处安装 ClickOnce 应用程序、 更新的方式和更新时。
 
 ### <a name="publish-clickonce-applications"></a>发布 ClickOnce 应用程序
- 应用程序清单描述应用程序本身。 这包括程序集、 依赖项和文件组成应用程序、 所需的权限，以及更新将在其中可用的位置。 应用程序开发人员通过使用 Visual Studio 或清单生成和编辑工具中的发布向导编写应用程序清单 (*Mage.exe*) 中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+ 应用程序清单描述应用程序本身。 这包括程序集、 依赖项和文件组成应用程序、 所需的权限，以及更新将在其中可用的位置。 应用程序开发人员通过使用 Visual Studio 或清单生成和编辑工具中的发布向导编写应用程序清单 (*Mage.exe*) 中[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。 有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
  部署清单描述应用程序的部署方式。 这包括应用程序清单的位置和客户端应运行的应用程序的版本。
 
@@ -75,13 +75,13 @@ ms.locfileid: "56612902"
  可以将应用程序添加到用户的**启动**菜单并对其**添加或删除程序**组中**控制面板**。 与其他部署技术，执行任何操作添加到**Program Files**文件夹或注册表中，并且没有管理权限所需的安装
 
 > [!NOTE]
->  还有可能阻止应用程序添加到**启动**菜单并**添加或删除程序**组中，有效并且它类似于 Web 应用程序。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
+> 还有可能阻止应用程序添加到**启动**菜单并**添加或删除程序**组中，有效并且它类似于 Web 应用程序。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
 ### <a name="update-clickonce-applications"></a>更新 ClickOnce 应用程序
  当应用程序开发人员创建应用程序的更新的版本时，它们生成一个新的应用程序清单，并将文件复制到部署位置-通常是原始应用程序部署文件夹的同级文件夹。 管理员将更新部署清单，以指向新版本的应用程序的位置。
 
 > [!NOTE]
->  **发布向导**在 Visual Studio 中可用于执行这些步骤。
+> **发布向导**在 Visual Studio 中可用于执行这些步骤。
 
  除了部署位置，部署清单还包含应用程序在其中检查更新版本的更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 可以在部署清单中，指定更新行为或其形式可以是通过应用程序的用户界面中的用户选择[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，Publish 属性还可用于将更新设置为强制执行，或用于将应用程序回滚到较早版本。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
@@ -91,11 +91,11 @@ ms.locfileid: "56612902"
 ## <a name="clickonce-tools"></a>ClickOnce 工具
  下表显示的工具可用于生成、 编辑、 登录，并对应用程序和部署清单重新签名。
 
-|工具|说明|
+|Tool|描述|
 |----------|-----------------|
 |[“项目设计器”->“安全”页](../ide/reference/security-page-project-designer.md)|登录应用程序和部署清单。|
-|[“项目设计器”->“发布”页](../ide/reference/publish-page-project-designer.md)|生成和编辑应用程序和部署清单的 Visual Basic 和 VisualC#应用程序。|
-|[*Mage.exe*（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|对于 Visual Basic，视觉对象中生成应用程序和部署清单C#，和 Visual c + + 应用程序。<br /><br /> 签名和重新签名的应用程序和部署清单。<br /><br /> 可以从批处理脚本和命令提示符下运行。|
+|[“项目设计器”->“发布”页](../ide/reference/publish-page-project-designer.md)|生成和编辑 Visual Basic 和 Visual C# 应用程序的应用程序和部署清单。|
+|[*Mage.exe*（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|对于 Visual Basic，视觉对象中生成应用程序和部署清单C#，并且 VisualC++应用程序。<br /><br /> 签名和重新签名的应用程序和部署清单。<br /><br /> 可以从批处理脚本和命令提示符下运行。|
 |[*MageUI.exe*（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|生成和编辑应用程序和部署清单。<br /><br /> 签名和重新签名的应用程序和部署清单。|
 |[GenerateApplicationManifest 任务](../msbuild/generateapplicationmanifest-task.md)|生成应用程序清单。<br /><br /> 可以从 MSBuild 运行。 有关详细信息，请参阅 [MSBuild 参考](../msbuild/msbuild-reference.md)。|
 |[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)|生成部署清单。<br /><br /> 可以从 MSBuild 运行。 有关详细信息，请参阅 [MSBuild 参考](../msbuild/msbuild-reference.md)。|

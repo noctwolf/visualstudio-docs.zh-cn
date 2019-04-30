@@ -10,12 +10,12 @@ ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d2e6f5213f5b12c38ed5529551c47654231035c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 457e2daf3e52c23ba9733d09d3aeb94750b5fab9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446254"
 ---
 # <a name="sending-the-required-events"></a>发送必需事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60091066"
 5. 如果启动要调试的应用程序时，发送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)到 SDM 代码运行时体系结构中的第一个指令时要执行的事件对象。 此事件始终是停止事件。 当单步执行调试会话，IDE 将停止对此事件。  
   
 > [!NOTE]
->  许多语言使用全局初始值设定项或外部、 预编译函数 （从的 CRT 库或 _Main） 在其代码的开头。 如果你正在调试的程序的语言包含下列任意一种元素之前的初始入口点，然后运行此代码并发送入口点事件时的用户入口点，如**主要**或`WinMain`，达到了。  
+> 许多语言使用全局初始值设定项或外部、 预编译函数 （从的 CRT 库或 _Main） 在其代码的开头。 如果你正在调试的程序的语言包含下列任意一种元素之前的初始入口点，然后运行此代码并发送入口点事件时的用户入口点，如**主要**或`WinMain`，达到了。  
   
 ## <a name="see-also"></a>请参阅  
  [启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

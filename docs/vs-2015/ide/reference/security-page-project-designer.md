@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441278"
 ---
 # <a name="security-page-project-designer"></a>”项目设计器“ ->“安全”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59647920"
  确定是否在设计时启用安全设置。 清除此选项后，“安全”页上的所有其他选项均不可用。  
   
 > [!NOTE]
->  使用“发布”向导发布应用程序时，会自动启用此选项。  
+> 使用“发布”向导发布应用程序时，会自动启用此选项。  
   
  选择此选项时，可以选择以下两个单选按钮之一：“这是完全信任应用程序”或“这是部分信任应用程序”。  
   

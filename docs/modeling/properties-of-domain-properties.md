@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443122"
 ---
 # <a name="properties-of-domain-properties"></a>域属性的属性
 一个*域属性*是一项功能可以保存值的模型元素。 例如，`Person` 域类可以具有属性 `Name` 和 `BirthDate`。 在 DSL 定义中，域属性列出在关系图上的域类框中以及 DSL 资源管理器中的域类下。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。
 
 > [!NOTE]
->  “属性”一词有两种用法。 一个*域属性*是一项功能的域类上定义。 与此相反，DSL 的许多元素都有*属性*中, 列出了这些**属性**DSL 定义中的窗口。 例如，每个域属性都具有一组属性，本主题对它们进行了描述。
+> “属性”一词有两种用法。 一个*域属性*是一项功能的域类上定义。 与此相反，DSL 的许多元素都有*属性*中, 列出了这些**属性**DSL 定义中的窗口。 例如，每个域属性都具有一组属性，本主题对它们进行了描述。
 
  在运行时，如果用户创建域类的实例，则可以在“属性”窗口中查看域属性的值，并且这些值可显示在形状上。
 

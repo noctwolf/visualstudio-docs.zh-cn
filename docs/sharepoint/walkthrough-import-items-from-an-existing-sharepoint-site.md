@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446606"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>演练：从现有的 SharePoint 网站导入项目
   本演练演示如何从现有的 SharePoint 网站到导入项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。
@@ -75,7 +75,7 @@ ms.locfileid: "60110853"
  接下来，获取一个包含 SharePoint 项和你想要导入到的元素的 SharePoint 安装程序 (.wsp) 文件您[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 如果你还没有.wsp 文件，则必须创建一个从现有的 SharePoint 网站。 对于此示例中，将默认的 SharePoint 站点导出到.wsp 文件。
 
 > [!IMPORTANT]
->  如果收到运行时错误，执行以下过程，您必须能够访问 SharePoint 站点的系统上执行该过程。
+> 如果收到运行时错误，执行以下过程，您必须能够访问 SharePoint 站点的系统上执行该过程。
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>若要导出的现有 SharePoint 站点
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110853"
 6. 在中**指定新项目源**页上，浏览到您保存在系统上的位置 *.wsp*以前文件，然后选择**下一步**按钮。
 
    > [!NOTE]
-   >  如果愿意**完成**按钮在此页上，在所有可用项 *.wsp*将导入文件。
+   > 如果愿意**完成**按钮在此页上，在所有可用项 *.wsp*将导入文件。
 
 7. 在中**选择要导入的项**框中，清除所有除列表中的复选框**测试列**，然后选择**完成**按钮。
 

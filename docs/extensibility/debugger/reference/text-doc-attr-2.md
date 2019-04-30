@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6167c5472f06e016fa45f17fb7cb493224f1668b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 20d8a92e7fcd8c02ee659b997bc4530c8570d3fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415896"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 描述了文档的属性。
@@ -39,7 +39,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>备注
 
 > [!NOTE]
->  实际的程序集的 C# 中未定义此值。 相反，您必须将定义复制到您的源文件。
+> 实际的程序集的 C# 中未定义此值。 相反，您必须将定义复制到您的源文件。
 
  作为参数传递[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)方法。
 

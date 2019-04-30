@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443496"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以通过使用调试 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 当开始调试，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 站点的实例。 以下各节说明如何调试 SharePoint 应用程序中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
@@ -103,7 +103,7 @@ ms.locfileid: "60060795"
 8. 对于工作流，将与 SharePoint 库、 列表或你在中选择的站点关联工作流**SharePoint 自定义向导**。
 
    > [!NOTE]
-   >  仅当你选择，会发生这种关联**自动关联工作流**向导中。
+   > 仅当你选择，会发生这种关联**自动关联工作流**向导中。
 
 9. 在运行的可自定义后期部署命令。
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060795"
  调试工作流项目时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将 （具体取决于它的类型） 的工作流模板添加到库或列表。 然后，可以手动或通过添加或更新项启动工作流模板。 然后，可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试工作流。
 
 > [!NOTE]
->  如果添加对其他程序集的引用，请确保这些程序集文件安装在全局程序集缓存 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否则，工作流解决方案将会失败。 有关如何安装的程序集的信息，请参阅[手动启动工作流上的文档或项](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。
+> 如果添加对其他程序集的引用，请确保这些程序集文件安装在全局程序集缓存 ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)])。 否则，工作流解决方案将会失败。 有关如何安装的程序集的信息，请参阅[手动启动工作流上的文档或项](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963)。
 
  但是，部署过程不会启动工作流。 必须从 SharePoint Web 站点启动工作流。 使用的客户端应用程序，例如 Microsoft Office Word 2010 中，或使用单独的服务器端代码，还可以启动工作流。 使用一种方法中指定**SharePoint 自定义向导**。
 

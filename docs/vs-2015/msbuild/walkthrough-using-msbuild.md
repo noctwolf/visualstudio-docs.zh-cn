@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445590"
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
  从 **Visual Studio 命令提示符**运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 /Target 或 /t 命令行开关选择该目标。  
   
 > [!NOTE]
->  以下各部分将 **Visual Studio 命令提示符**称为**命令窗口**。  
+> 以下各部分将 **Visual Studio 命令提示符**称为**命令窗口**。  
   
 #### <a name="to-build-the-target"></a>生成目标  
   
@@ -154,12 +154,12 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
     ```  
   
 > [!NOTE]
->  如果出现的是 `The target "HelloWorld" does not exist in the project`，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。  
+> 如果出现的是 `The target "HelloWorld" does not exist in the project`，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。  
   
  通过在代码编辑器和命令窗口之间进行交替，可更改项目文件并快速查看结果。  
   
 > [!NOTE]
->  如果运行不带 /t 命令开关的 MSBuild，MSBuild 将生成由 Project 元素（在本例中为“Build”）的 DefaultTarget 属性给定的目标。 此操作生成 Windows 窗体应用程序 BuildApp.exe。  
+> 如果运行不带 /t 命令开关的 MSBuild，MSBuild 将生成由 Project 元素（在本例中为“Build”）的 DefaultTarget 属性给定的目标。 此操作生成 Windows 窗体应用程序 BuildApp.exe。  
   
 ## <a name="build-properties"></a>生成属性  
  生成属性是引导生成的名称/值对。 已在项目文件顶部定义了几个生成属性：  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  如果未看到这两行，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。  
+> 如果未看到这两行，则可能是忘记将项目文件保存到代码编辑器中。 请保存文件并重试。  
   
 ### <a name="conditional-properties"></a>条件属性  
  许多属性（如配置）都是按条件进行定义的，也就是说，条件属性出现在 property 元素中。 仅当条件评估结果为“true”时才定义或重新定义条件属性。 请注意，会向未定义的属性给定空字符串的默认值。 例如，应用于对象的  
@@ -319,7 +319,7 @@ $(PropertyName)
  有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
   
 > [!NOTE]
->  文件路径相对于包含 MSBuild 项目文件的文件夹。  
+> 文件路径相对于包含 MSBuild 项目文件的文件夹。  
   
 ## <a name="examining-item-type-values"></a>检查项类型值  
  若要获取项类型的值，请使用以下语法，其中 ItemType 是项类型的名称：  

@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445045"
 ---
 # <a name="how-to-use-the-registers-window"></a>如何：使用寄存器窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60042870"
  有关寄存器和寄存器窗口背后概念的简要介绍，请参阅[调试基础知识：寄存器窗口](../debugger/debugging-basics-registers-window.md)。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-display-the-registers-window"></a>显示“寄存器”窗口  
   
@@ -55,7 +55,7 @@ ms.locfileid: "60042870"
      调试器必须正在运行或处于中断模式。  
   
     > [!NOTE]
-    >  寄存器信息对于脚本或 SQL 应用程序不可用。  
+    > 寄存器信息对于脚本或 SQL 应用程序不可用。  
   
 ## <a name="see-also"></a>请参阅  
  [调试基础知识：寄存器窗口](../debugger/debugging-basics-registers-window.md)   

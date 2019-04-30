@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445150"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 你可以迁移项目的定义和使用特定于域的语言设置为[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]的版本从[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]一起分发[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
@@ -53,7 +53,7 @@ ms.locfileid: "60040127"
    - 选择项目或解决方案，以查看该工具将做的更改的列表。
 
        > [!NOTE]
-       >  显示文件夹名称旁边的复选框没有任何影响。 必须展开要检查项目和解决方案的文件夹。
+       > 显示文件夹名称旁边的复选框没有任何影响。 必须展开要检查项目和解决方案的文件夹。
 
 4. 转换项目。
 
@@ -74,7 +74,7 @@ ms.locfileid: "60040127"
    2. 单击**转换所有模板**解决方案资源管理器的标头中的按钮。
 
        > [!NOTE]
-       >  您可以进行此步骤不必要。 有关详细信息，请参阅[如何自动执行转换所有模板](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
+       > 您可以进行此步骤不必要。 有关详细信息，请参阅[如何自动执行转换所有模板](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 6. 更新自定义代码，在转换后的项目中。
 

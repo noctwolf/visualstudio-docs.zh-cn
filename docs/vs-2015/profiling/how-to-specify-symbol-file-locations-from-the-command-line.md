@@ -1,5 +1,5 @@
 ---
-title: 如何：从命令行指定符号文件位置 | Microsoft Docs
+title: 如何：通过命令行指定符号文件位置 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436913"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：从命令行指定符号文件位置
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：指定符号文件位置，从命令行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 为了显示函数名称和行号等符号信息，VSPerfReport 命令行工具要求访问被分析组件的符号 (.pdb) 文件以及 Windows 系统文件。 编译组件时会创建符号文件。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 自动搜索以下位置的符号文件：  
@@ -38,7 +38,7 @@ ms.locfileid: "54776173"
   还可以同时使用这两种方法。  
   
 > [!NOTE]
->  如果本地计算机上安装了 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，则可能已指定了 Windows 符号文件的位置。 有关详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。 仍必须配置 VSPerfReport 才能使用位置和服务器，如本主题后面所述。  
+> 如果本地计算机上安装了 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，则可能已指定了 Windows 符号文件的位置。 有关详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。 仍必须配置 VSPerfReport 才能使用位置和服务器，如本主题后面所述。  
   
 ## <a name="specifying-windows-symbol-files"></a>指定 Windows 符号文件  
   

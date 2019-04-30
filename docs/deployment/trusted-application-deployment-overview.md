@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406640"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 本主题概述了如何通过使用受信任的应用程序部署技术部署具有提升权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。
@@ -29,7 +29,7 @@ ms.locfileid: "60064292"
  借助作为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署技术一部分的受信任的应用程序部署，任何规模的组织都可更容易地以更安全的方式授予对托管应用程序的其他权限而无需用户提示。 通过受信任的应用程序部署，组织可以只将客户端计算机配置为具有用验证码证书标识的受信任发布者的列表。 此后，由任一这些受信任的发布者签名的任何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序均将接收更高级别的信任。
 
 > [!NOTE]
->  受信任的应用程序部署要求一次性配置用户的计算机。 在托管的桌面环境中，可使用全局策略来执行此配置。 如果你不想对你的应用程序进行如此配置，请改用权限提升。 有关详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。
+> 受信任的应用程序部署要求一次性配置用户的计算机。 在托管的桌面环境中，可使用全局策略来执行此配置。 如果你不想对你的应用程序进行如此配置，请改用权限提升。 有关详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。
 
 ## <a name="trusted-application-deployment-basics"></a>受信任的应用程序部署基础知识
  下表显示了受信任的应用程序部署中所涉及的对象和角色。
@@ -88,7 +88,7 @@ ms.locfileid: "60064292"
  获取证书后，必须用它对部署进行签名。 如果正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 发布者向导部署应用程序，此向导将在你自身尚未指定证书时自动为你生成一个测试证书。 但是，还可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目设计器窗口提供由 CA 提供的证书。  另请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 > [!CAUTION]
->  我们不建议使用测试证书来部署应用程序。
+> 我们不建议使用测试证书来部署应用程序。
 
  还可以使用 Mage.exe 或 MageUI.exe SDK 工具来对应用程序进行签名。 有关详细信息，请参见[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 与部署签名相关的命令行选项的完整列表，请参阅[Mage.exe （清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 

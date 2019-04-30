@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443901"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Visual Studio 体系结构的通用的视图
 ## <a name="document-windows"></a>文档窗口  
  文档窗口是带边框的子窗口的多文档界面 (MDI) 窗口。 文档窗口通常要用于宿主的文本编辑器、 窗体编辑器 （也称为设计器） 或编辑控件，但它们还可以托管其他功能的类型。 **新的文件**对话框包括 Visual Studio 提供的文档窗口的示例。  
   
- 大多数编辑器是特定于编程语言或文件类型，如 HTML 页面、 框架、 c + + 文件或标头文件。 通过选择中的模板**新的文件**对话框中，用户动态创建一个文档窗口是与模板关联的文件类型的编辑器。 当用户打开现有文件，还会创建一个文档窗口。  
+ 大多数编辑器是特定于编程语言或文件类型，如 HTML 页，框架集，C++文件或标头文件。 通过选择中的模板**新的文件**对话框中，用户动态创建一个文档窗口是与模板关联的文件类型的编辑器。 当用户打开现有文件，还会创建一个文档窗口。  
   
  文档窗口仅限于在 MDI 工作区。 每个文档窗口的顶部，有一个选项卡和 tab 键顺序链接至其他 MDI 区域中可以在打开的窗口。 右键单击文档窗口的选项卡显示包括用于将 MDI 区域拆分为多个水平或垂直选项卡组的选项的快捷菜单。 拆分 MDI 区可以同时查看多个文件。 有关详细信息，请参阅[文档 Windows](../../extensibility/internals/document-windows.md)。  
   
@@ -98,7 +98,7 @@ Visual Studio 体系结构的通用的视图
  模板包含的项目结构和所需构建特定类型的应用程序、 控件、 库或类的基本文件。 当你想要开发软件，类似于一个模板时，创建基于模板的项目，然后修改该项目中的文件。  
   
 > [!NOTE]
->  此模板体系结构不支持为[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目。 有关如何创建[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目模板，请参阅[设计向导](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
+> 此模板体系结构不支持为[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目。 有关如何创建[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目模板，请参阅[设计向导](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
   
  有关详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   

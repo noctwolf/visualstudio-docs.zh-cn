@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441009"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041284"
  ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此引用可存储在该模型外部，例如另一个模型的元素中。 在随后的场合中，当工具想要获取对元素的访问权限时，模型总线基础结构将加载相应的模型并返回元素。 如果需要，可以向用户显示该模型。 如果不能在其以前的位置中访问该文件，则 ModelBus 将要求用户查找该文件。 如果用户找到该文件，则 ModelBus 将修复所有对该文件的引用。
 
 > [!NOTE]
->  在 ModelBus 的当前 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实现中，链接的模型必须是同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项。
+> 在 ModelBus 的当前 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实现中，链接的模型必须是同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项。
 
  有关其他信息和示例代码，请参阅：
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041284"
 5. 单击**确定**，然后单击**转换所有模板**在解决方案资源管理器工具栏中。
 
     > [!WARNING]
-    >  如果未选择有效的模型或实体，则“确定”按钮将不起作用，即使它可能显示为“已启用”也是如此。
+    > 如果未选择有效的模型或实体，则“确定”按钮将不起作用，即使它可能显示为“已启用”也是如此。
 
 6. 如果指定了目标类型（如 Company.FamilyTree.Person）的列表，则必须将程序集引用添加到 DSL 项目，从而引用目标 DSL 的 DLL（例如 Company.FamilyTree.Dsl.dll）
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041284"
 3. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例的调试项目中，添加作为每个 DSL 的实例的文件。
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
 
 4. 在公开的 DSL 的实例中创建一些元素和链接，并将其保存。
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041284"
  若要创建元素引用，你需要用于模型文件的适配器，以及要引用的元素。
 
 > [!NOTE]
->  使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus，只能创建对同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项的引用。
+> 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus，只能创建对同一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项的引用。
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>导入公开的 DSL 程序集
  在使用的项目中，将项目引用添加到 DSL 和公开的 DSL 的 ModelBusAdapter 程序集。
@@ -197,7 +197,7 @@ using System.Linq;
  你可以从 AdapterManager 中获取一个适配器，该适配器提供了对模型中各个元素的访问权限。
 
 > [!NOTE]
->  你必须在使用完适配器后将其公开。 实现此目的的最简便方式是使用 `using` 语句。 下面的示例阐释了这一点。
+> 你必须在使用完适配器后将其公开。 实现此目的的最简便方式是使用 `using` 语句。 下面的示例阐释了这一点。
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

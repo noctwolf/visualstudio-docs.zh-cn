@@ -13,12 +13,12 @@ ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f450453ce8e336fecb401e30bc777c7b9c8ef7d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441493"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58933845"
 采用 Visual Studio 扩展中作为参数的.dll 文件并创建伴随该.dll 的.pkgdef 文件。 .Pkgdef 文件包含否则会在安装该扩展时写入到系统注册表的所有信息。  
   
 > [!NOTE]
->  大部分自动包含在 Visual Studio SDK 中的项目模板创建.pkgdef 文件作为生成过程的一部分。 本文档旨在为那些想要手动创建包或转换现有的包以使用.pkgdef 部署。  
+> 大部分自动包含在 Visual Studio SDK 中的项目模板创建.pkgdef 文件作为生成过程的一部分。 本文档旨在为那些想要手动创建包或转换现有的包以使用.pkgdef 部署。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,7 +53,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  .Pkgdef 文件必须安装在以下位置之一： %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ 或 %vsinstalldir%\Common7\IDE\Extensions\\。 如果安装文件夹是 %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\，扩展将识别的 Visual Studio 中，但默认情况下将禁用。 用户可以启用扩展，通过使用**扩展和更新**。 如果安装文件夹是 %vsinstalldir%\Common7\IDE\Extensions\\，默认情况下启用扩展。  
   
 > [!NOTE]
->  **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。  
+> **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。  
   
 ## <a name="see-also"></a>请参阅  
  [CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)

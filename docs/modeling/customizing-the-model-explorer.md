@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445840"
 ---
 # <a name="customizing-the-model-explorer"></a>自定义模型资源管理器
 您可以更改的外观和行为在资源管理器域特定语言设计器，如下所示：
@@ -59,7 +59,7 @@ ms.locfileid: "60058000"
     在资源管理器应显示三个**Actor**具有您的图标的节点。
 
 > [!NOTE]
->  如果设置了生成资源管理器中显示的任何元素节点图标，资源管理器中的所有节点将都显示图标。 如果尚未设置任何图标，节点将显示默认图标。
+> 如果设置了生成资源管理器中显示的任何元素节点图标，资源管理器中的所有节点将都显示图标。 如果尚未设置任何图标，节点将显示默认图标。
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>更改显示在资源管理器节点的名称
  您可以更改模型元素的名称在资源管理器中的显示方式。 下面的过程演示如何显示的名称**任务**引用**注释**注释节点中。

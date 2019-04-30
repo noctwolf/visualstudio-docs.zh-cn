@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e60fe59b4d515f37593175f0b76d1562f170abfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447319"
 ---
 # <a name="error-aspnet-not-installed"></a>错误：未安装 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60059092"
      *版本*表示你的计算机中安装的 .NET Framework 的版本号，例如 v1.0.370。 你可以通过查看`\WINDOWS\Microsoft.NET\Framework` 目录确定的 Framework 版本。  
   
     > [!NOTE]
-    >  对于 Windows Server 2003，可以通过在控制面板中使用**添加或删除程序**安装[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]。  
+    > 对于 Windows Server 2003，可以通过在控制面板中使用**添加或删除程序**安装[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 Web 应用程序：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442893"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "60113789"
     **若要暂停录制**（例如，如果你必须处理接收的邮件），请选择“暂停”。
 
    > [!WARNING]
-   >  将录制在桌面上执行的所有操作。 如果你正在执行可能会导致敏感数据被包括在录制中的操作，则暂停录制。
+   > 将录制在桌面上执行的所有操作。 如果你正在执行可能会导致敏感数据被包括在录制中的操作，则暂停录制。
 
     **若要删除错误录制的操作**，请选择“编辑操作”。
 
@@ -113,7 +113,7 @@ ms.locfileid: "60113789"
     ![编码的 UI 测试目标元素](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  在录制操作和验证值之间交替。 在每个操作或验证序列的结尾生成代码。 如果你愿意，可以随后插入新的操作和验证。
+   > 在录制操作和验证值之间交替。 在每个操作或验证序列的结尾生成代码。 如果你愿意，可以随后插入新的操作和验证。
 
     有关详细信息，请参阅[验证控件的属性](#VerifyingCodeUsingCUITGenerateAssertions)。
 
@@ -230,7 +230,7 @@ ms.locfileid: "60113789"
   若要使用键盘选择 UI 控件，请使用鼠标悬停在该控件上。 然后，同时按住“Ctrl”键和“I”键。 释放这些键。 此控件由编码的 UT 测试生成器录制。
 
 > [!WARNING]
->  如果你使用 Microsoft Lync，必须在启动编码的 UI 测试生成器前关闭 Lync。 Microsoft Lync 会影响“Ctrl+I”键盘快捷方式。
+> 如果你使用 Microsoft Lync，必须在启动编码的 UI 测试生成器前关闭 Lync。 Microsoft Lync 会影响“Ctrl+I”键盘快捷方式。
 
  *我无法录制控件上的鼠标悬停。是否有解决此问题的方法？*
  **手动录制鼠标悬停**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  如有必要，用于在编码的 UI 测试中应用鼠标悬停事件的默认 Ctrl+Shift+R 键盘分配可以配置为使用不同的键。
 
 > [!WARNING]
->  一般情况下，不必更改鼠标悬停事件的键盘分配。 在重新分配键盘分配时，请谨慎从事。 你的选择可能已用在 Visual Studio 内或测试的应用程序中的其他位置。
+> 一般情况下，不必更改鼠标悬停事件的键盘分配。 在重新分配键盘分配时，请谨慎从事。 你的选择可能已用在 Visual Studio 内或测试的应用程序中的其他位置。
 
  若要更改键盘分配，你必须修改以下配置文件：
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  你不应编辑此文件，因为它在你创建更多测试时会重新生成。
+  > 你不应编辑此文件，因为它在你创建更多测试时会重新生成。
 
    通过将这些方法复制到 UIMap.cs，你可以制作方法的改编版。 例如，你可以制作可以从测试方法调用的参数化版本：
 

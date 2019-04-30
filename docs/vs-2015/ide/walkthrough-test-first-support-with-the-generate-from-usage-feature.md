@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443431"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>演练：测试第一个支持从使用情况功能生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60084981"
 2. 找到类 `UnitTest1` 的声明并将其重命名为 `AutomobileTest`。 在 C# 中，如果存在 `UnitTest1()` 构造函数，则将其重命名为 `AutomobileTest()`。  
   
     > [!NOTE]
-    >  IntelliSense 现在提供完成 IntelliSense 语句的两种模式： *完成模式* 和 *建议模式*。 对于先使用类和成员然后再对其进行定义的情况，采用建议模式。 当 IntelliSense 窗口打开时，可以按“CTRL+ALT+空格键”以实现完成模式与建议模式之间的切换。 有关更多信息，请参见 [Using IntelliSense](../ide/using-intellisense.md) 。 当你在下一步键入 `Automobile` 时，建议模式将有助于完成此操作。  
+    > IntelliSense 现在提供完成 IntelliSense 语句的两种模式： *完成模式* 和 *建议模式*。 对于先使用类和成员然后再对其进行定义的情况，采用建议模式。 当 IntelliSense 窗口打开时，可以按“CTRL+ALT+空格键”以实现完成模式与建议模式之间的切换。 有关更多信息，请参见 [Using IntelliSense](../ide/using-intellisense.md) 。 当你在下一步键入 `Automobile` 时，建议模式将有助于完成此操作。  
   
 3. 找到 `TestMethod1()` 方法并将其重命名为 `DefaultAutomobileIsInitializedCorrectly()`。 在此方法中，创建名为 `Automobile`的类的新实例，如下图所示。 会出现波浪形下划线，指示编译时错误，并会在类型名称下出现智能标记。 智能标记的确切位置会有所不同，具体取决于使用的是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 还是 [!INCLUDE[csprcs](../includes/csprcs-md.md)]。  
   

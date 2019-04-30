@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428585"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：检查代码、为代码添加注释和测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ ms.locfileid: "60059859"
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  “showButton”按钮的 Click 事件处理程序现已完成并可正常使用。 您已开始编写代码（从 `if` 语句开始）。 `if` 语句用于告知程序“检查此项，如果为 true，请执行这些操作。” 在此示例中，告知程序打开“打开文件”对话框，如果用户选择一个文件并选择“确定”按钮，则会在 PictureBox 中加载此文件。  
+    > “showButton”按钮的 Click 事件处理程序现已完成并可正常使用。 您已开始编写代码（从 `if` 语句开始）。 `if` 语句用于告知程序“检查此项，如果为 true，请执行这些操作。” 在此示例中，告知程序打开“打开文件”对话框，如果用户选择一个文件并选择“确定”按钮，则会在 PictureBox 中加载此文件。  
   
     > [!TIP]
-    >  IDE 可让你轻松地编写代码，而代码片段 是 IDE 为此采取的方式之一。 代码片段是一类快捷方式，它可展开到一个小的代码块。  
+    > IDE 可让你轻松地编写代码，而代码片段 是 IDE 为此采取的方式之一。 代码片段是一类快捷方式，它可展开到一个小的代码块。  
     >   
     >  您可看到所有可用的代码片段。 在菜单栏上，选择“工具”、“代码片段管理器”。 对于 Visual C#，`if` 片段位于“Visual C#”中。 对于 Visual Basic，`if` 片段位于“条件语句和循环”、“代码模式”中。 可使用此管理器来浏览现有代码片段或添加自己的代码片段。  
     >   
@@ -83,7 +83,7 @@ ms.locfileid: "60059859"
 2. 选择“显示图片”按钮可运行刚刚编写的代码。 首先，该程序会打开“打开文件”对话框。 确认在该对话框底部的“文件类型”下拉列表中会出现筛选器。 然后，定位到一张图片并将其打开。 通常可以在“我的文档”文件夹内的“图片收藏\示例图片”文件夹中找到 Windows 操作系统附带的示例图片。  
   
     > [!NOTE]
-    >  如果“选择图片文件”对话框中未显示任何图像，请确保选择了对话框右下方下拉列表中的“所有文件(*.\*)”筛选器。  
+    > 如果“选择图片文件”对话框中未显示任何图像，请确保选择了对话框右下方下拉列表中的“所有文件(*.\*)”筛选器。  
   
 3. 加载一张图片后，此图片会在 PictureBox 中出现。 然后尝试通过拖动窗体的边框来调整其大小。 由于已将 PictureBox 停靠在 TableLayoutPanel 内部，而 TableLayoutPanel 自身停靠在窗体内部，因此图片区域会自行重设大小，使自身的宽度与窗体的宽度相同，并占据窗体上部空间的 90%。 这就是为什么使用 TableLayoutPanel 和 FlowLayoutPanel 容器：当用户调整窗体的大小时，二者可以使窗体具有适当的大小。  
   

@@ -12,18 +12,18 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b5ea8cbdfa9644e103f32d49ea0964bbb90bad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f13573cfecbd81f36e3b77e9b23beeaa558c08dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444798"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>计算监视窗口表达式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  当将暂停执行时，Visual Studio 调用调试引擎 (DE) 来确定其监视列表中的每个表达式的当前值。 DE 每个使用计算表达式的表达式计算器 (EE) 和 Visual Studio 将显示在其值**监视**窗口。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60075852"
  分析复杂表达式可能需要更长时间对其进行评估，因为表达式的计算过程分成了两个步骤：1) 分析表达式和 2） 的计算结果的已分析的表达式。 这样一来，评估可能会发生很多时候但需要进行一次分析该表达式。 中间分析得出的表达式返回从 EE [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象，进而封装并返回从作为 DE [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpression`对象将所有计算交都由`IDebugParsedExpression`对象。  
   
 > [!NOTE]
->  不遵守此两步过程，即使 Visual Studio 假设这一点; EE 的必要条件EE 可以分析和评估在相同的步骤时[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)称为 （这是 MyCEE 示例的工作方式，例如）。 如果你的语言可以构成复杂的表达式，您可能想要单独评估步骤中的分析。 许多监视表达式时，这可以提高在 Visual Studio 调试器中的性能显示。  
+> 不遵守此两步过程，即使 Visual Studio 假设这一点; EE 的必要条件EE 可以分析和评估在相同的步骤时[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)称为 （这是 MyCEE 示例的工作方式，例如）。 如果你的语言可以构成复杂的表达式，您可能想要单独评估步骤中的分析。 许多监视表达式时，这可以提高在 Visual Studio 调试器中的性能显示。  
   
 ## <a name="in-this-section"></a>本节内容  
  [表达式计算的实现示例](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386847"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：查看和编辑代码使用查看定义 (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60055726"
  可对 C#、Visual Basic 和 C++ 代码使用“查看定义”。 在 Visual Basic 中，“查看定义”显示一个链接，指向不包含定义元数据（例如内置的 .NET Framework 类型）的符号的“对象浏览器”。  
   
 > [!IMPORTANT]
->  你不能在任何 Visual Studio 2013 Express 版本中使用此命令。  
+> 你不能在任何 Visual Studio 2013 Express 版本中使用此命令。  
   
 ## <a name="working-with-peek-definition"></a>使用“查看定义”  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055726"
     |在代码编辑器窗口和定义窗口之间切换|Shift+Esc|  
   
     > [!NOTE]
-    >  也可使用在 Visual Studio 其他位置所用的键盘快捷方式在“查看定义”窗口中编辑代码。  
+    > 也可使用在 Visual Studio 其他位置所用的键盘快捷方式在“查看定义”窗口中编辑代码。  
   
 ## <a name="see-also"></a>请参阅  
  [工作效率提示](../ide/productivity-tips-for-visual-studio.md)

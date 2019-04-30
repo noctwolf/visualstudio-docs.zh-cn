@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce0be90be111d458229189c2a06624bd726ac05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447070"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>发布向导 （在 Visual Studio 中的 Office 开发）
   使用**发布向导**若要将解决方案文件复制到指定位置，创建清单文件，并创建安装程序。
@@ -46,7 +46,7 @@ ms.locfileid: "56604822"
   默认情况下，发布位置是*http://localhost/projectname/* 如果您安装了 IIS，或如果这样做的 publish\ 目录不具有安装 IIS。
 
 > [!NOTE]
->  如果目标计算机正在运行 Windows Vista，有更多注意事项。 必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置始终是*发布\\*目录下，无论是否安装了 IIS。
+> 如果目标计算机正在运行 Windows Vista，有更多注意事项。 必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置始终是*发布\\*目录下，无论是否安装了 IIS。
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>最终用户计算机上的默认安装路径是什么？
  安装路径是可选的。 如果您愿意，可以稍后再设置安装路径。 有关详细信息，请参阅[如何：更改 Office 解决方案的安装路径](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。

@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445724"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （集成）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Visual Studio 集成 shell 包括集成的开发环境 (IDE)、 调试器和源�
  Visual Studio 集成 shell 是实际的 Visual Studio 独立 shell 与其他安装，其中包括集成的 shell 特定组件的组合。  集成的外壳应用程序应包括这两个独立的 shell 可再发行组件包从[Microsoft Visual Studio Shell （独立） Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616022)以及集成的 shell 可再发行组件包从[Microsoft Visual Studio Shell （集成） Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616021)。  
   
 > [!NOTE]
->  在可以访问独立和集成 shell 可再发行组件包之前，系统将要求填写份简短的客户调查。  填写调查之后, 你将定向到 Visual Studio Connect 页面使用可再发行组件包下载链接。  可以在以后访问下的 Visual Studio Connect 站点上找到的下载链接**程序&#124;VISUAL STUDIO 2015 集成和独立 SHELL**选项卡。  
+> 在可以访问独立和集成 shell 可再发行组件包之前，系统将要求填写份简短的客户调查。  填写调查之后, 你将定向到 Visual Studio Connect 页面使用可再发行组件包下载链接。  可以在以后访问下的 Visual Studio Connect 站点上找到的下载链接**程序&#124;VISUAL STUDIO 2015 集成和独立 SHELL**选项卡。  
   
  如果在作为完整版本的 Visual Studio 在同一台计算机上安装集成的外壳应用程序，将在 Visual Studio 中直接集成应用程序的组件。  
   

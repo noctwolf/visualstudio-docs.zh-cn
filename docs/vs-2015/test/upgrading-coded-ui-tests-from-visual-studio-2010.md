@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445892"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "60080691"
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。 有关详细信息，请参见 [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
+> Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。 有关详细信息，请参见 [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
 
 > [!WARNING]
->  在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或与 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 并行安装的 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中打开包含编码 UI 测试的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]测试项目时，必须重新生成该测试项目。
+> 在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或与 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 并行安装的 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中打开包含编码 UI 测试的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]测试项目时，必须重新生成该测试项目。
 
 > [!WARNING]
->  当在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中打开创建于 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]且仅包含单元测试的测试项目时，无法向其添加编码 UI 测试。 同样，也无法向创建于 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]的单元测试项目添加编码 UI 测试。
+> 当在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中打开创建于 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]且仅包含单元测试的测试项目时，无法向其添加编码 UI 测试。 同样，也无法向创建于 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]的单元测试项目添加编码 UI 测试。
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Visual Studio 2010 和 Visual Studio 2012 之间的兼容性问题
  下表列出了在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]之间迁移编码 UI 测试时应注意的问题。
 
 > [!CAUTION]
->  有一个关于编码 UI 测试项目中的引用在解决方案资源管理器中不显示的已知问题。 有关详细信息，请参阅 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 安装媒体上包含的自述文件。
+> 有一个关于编码 UI 测试项目中的引用在解决方案资源管理器中不显示的已知问题。 有关详细信息，请参阅 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 安装媒体上包含的自述文件。
 
 |编码 UI 功能|问题|解决方案|
 |----------------------------|-----------|--------------|

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443044"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105027"
 在本部分中，你将了解如何安装 Visual Studio Tools for Unity，以及如何配置你的 Unity 项目以使用 Visual Studio。  
   
 > [!IMPORTANT]
->  Unity 5.2 增加了对 Visual Studio Tools for Unity 2.1 的内置支持，从而简化了项目设置。 若要利用这一支持，你需要在 Windows 上使用 Unity version 5.2.0 或更高版本以及 Visual Studio Tools for Unity 2.1 或更高版本。  
+> Unity 5.2 增加了对 Visual Studio Tools for Unity 2.1 的内置支持，从而简化了项目设置。 若要利用这一支持，你需要在 Windows 上使用 Unity version 5.2.0 或更高版本以及 Visual Studio Tools for Unity 2.1 或更高版本。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要使用 Visual Studio Tools for Unity，你需要：  
@@ -55,7 +55,7 @@ ms.locfileid: "60105027"
      [下载 Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Visual Studio 的 Express 版本不支持扩展件（如 Visual Studio Tools for Unity）。 Visual Studio Community 是 Visual Studio 的免费版本，它支持 Visual Studio Tools for Unity 和其他扩展。 对于大多数用户来说，选择 Visual Studio Community 比选择 Express 更好。  
+> Visual Studio 的 Express 版本不支持扩展件（如 Visual Studio Tools for Unity）。 Visual Studio Community 是 Visual Studio 的免费版本，它支持 Visual Studio Tools for Unity 和其他扩展。 对于大多数用户来说，选择 Visual Studio Community 比选择 Express 更好。  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity 的第一个 Unity 项目  
  现在，一切准备就绪，你可以着手将 Visual Studio 用于第一个 Unity 项目了。 你的 Unity 项目的设置会因所安装的 Unity 和 Visual Studio Tools for Unity 的版本而异。 请按照下列步骤获取已安装的 Unity 和 Visual Studio Tools for Unity 的版本。  

@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441059"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60103467"
    - 选择**最小语言**在其他情况下，或如果你不确定。  
   
        > [!NOTE]
-       >  如果想要创建类图或组件图，请考虑使用 UML 模型。 UML 建模工具提供了一组围绕单个模型集成的关系图。 这些关系图是可扩展的，并且可以使用 ModelBus 与你的 DSL 集成。 有关详细信息，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。  
+       > 如果想要创建类图或组件图，请考虑使用 UML 模型。 UML 建模工具提供了一组围绕单个模型集成的关系图。 这些关系图是可扩展的，并且可以使用 ModelBus 与你的 DSL 集成。 有关详细信息，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。  
   
    - 选择**最小 WinForm 设计器**或**最小 WPF 设计器**以创建 Windows 窗体或 WPF 图面显示的 DSL。 必须编写代码，才能定义编辑器。 有关详细信息，请参阅下列主题：  
   
@@ -108,7 +108,7 @@ ms.locfileid: "60103467"
  关闭 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
 > [!NOTE]
->  已修改 DSL 后，你将不再能够查看“Sample”测试文件上的形状。 但是，将能够创建新元素。  
+> 已修改 DSL 后，你将不再能够查看“Sample”测试文件上的形状。 但是，将能够创建新元素。  
   
 ### <a name="modifying-the-template-dsl"></a>修改模板 DSL  
  重命名并保留模板 DSL 定义中的某些或全部域类和形状类。 新的类名应为有效的 CLR 名称，不带有空格或标点。  
@@ -137,7 +137,7 @@ ms.locfileid: "60103467"
   以下部分将介绍如何构造几种最有用的 DSL 功能。 存在许多可以用来构造 DSL 的其他模式，但这些模式是最常用的。  
   
 > [!NOTE]
->  添加一项功能后, 不要忘记单击**转换所有模板**之前你的解决方案资源管理器工具栏中生成并运行 DSL。  
+> 添加一项功能后, 不要忘记单击**转换所有模板**之前你的解决方案资源管理器工具栏中生成并运行 DSL。  
   
  下图显示了用作本主题中的示例的 DSL 的类和关系部分。  
   
@@ -148,7 +148,7 @@ ms.locfileid: "60103467"
  ![生成的 DSL 实例模型](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  “模型”是指用户创建的 DSL 的实例，并且通常显示为关系图。 本主题讨论了 DSL 定义关系图和在使用 DSL 时显示的模型关系图。  
+> “模型”是指用户创建的 DSL 的实例，并且通常显示为关系图。 本主题讨论了 DSL 定义关系图和在使用 DSL 时显示的模型关系图。  
   
 ## <a name="classes"></a> 定义域类  
  域类表示 DSL 的概念。 两个实例*模型元素*。 例如在**MusicLibrary** DSL 可能具有名为的域类**唱片集**并**歌曲**。  
@@ -185,7 +185,7 @@ ms.locfileid: "60103467"
  有关详细信息，请参阅[属性的域关系](../modeling/properties-of-domain-relationships.md)并[属性的域角色](../modeling/properties-of-domain-roles.md)。  
   
 > [!NOTE]
->  嵌入与继承不同。 嵌入关系中的子级不会从其父级继承功能。  
+> 嵌入与继承不同。 嵌入关系中的子级不会从其父级继承功能。  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>将域属性添加到每个域类  
  域属性存储值。 示例包括：名称、 标题、 发布日期。  
@@ -296,7 +296,7 @@ ms.locfileid: "60103467"
    2. 右键单击该节点下的**工具箱选项卡**具有与你的 DSL，如 MusicLibrary 相同的名称。 单击**添加元素工具**。  
   
        > [!NOTE]
-       >  如果您右键单击**工具**节点，则不会看到**添加元素工具**。 应改为单击其上方的节点。  
+       > 如果您右键单击**工具**节点，则不会看到**添加元素工具**。 应改为单击其上方的节点。  
   
    3. 在新元素工具处于选中状态的属性窗口中，设置**类**到最近添加的域类。  
   
@@ -464,7 +464,7 @@ ms.locfileid: "60103467"
          下**显示属性**，选择应显示在列表中的属性。 在该示例中，此属性是 Title。  
   
 > [!NOTE]
->  通过使用“修饰器映射和隔离舱”映射字段中的“路径”字段，可以在域类和隔离舱形状之间建立更复杂的关系。  
+> 通过使用“修饰器映射和隔离舱”映射字段中的“路径”字段，可以在域类和隔离舱形状之间建立更复杂的关系。  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>定义用于创建形状的工具  
   
@@ -475,7 +475,7 @@ ms.locfileid: "60103467"
 3. 右键单击该节点下的**工具箱选项卡**具有与你的 DSL，如 MusicLibrary 相同的名称。 单击**添加元素工具**。  
   
     > [!NOTE]
-    >  如果您右键单击**工具**节点，则不会看到**添加元素工具**。 应改为单击其上方的节点。  
+    > 如果您右键单击**工具**节点，则不会看到**添加元素工具**。 应改为单击其上方的节点。  
   
 4. 在新元素工具处于选中状态的属性窗口中，设置**类**到最近添加的域类。  
   

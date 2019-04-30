@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446714"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  在代码中，可以使用 `Write();` 语句的位置都可以插入文本块。  
   
 > [!NOTE]
->  当嵌入例如循环或条件的复合语句内的文本块时，请始终使用大括号 {...} 若要包含文本块。  
+> 当嵌入例如循环或条件的复合语句内的文本块时，请始终使用大括号 {...} 若要包含文本块。  
   
 ### <a name="expression-control-blocks"></a>表达式控制块  
  表达式控制块计算表达式并将其转换为字符串。 该字符串将插入到输出文件中。  

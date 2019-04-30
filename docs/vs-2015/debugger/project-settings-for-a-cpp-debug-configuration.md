@@ -1,5 +1,5 @@
 ---
-title: 项目的 c + + 调试配置的设置 |Microsoft Docs
+title: 项目设置为C++调试配置 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -112,20 +112,20 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446172"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可以更改 C 或 Visual c + + 调试配置中的项目设置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。  
+可以更改 C 或视觉对象的项目设置C++中的调试配置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。  
   
 > [!WARNING]
->  中的调试项目设置**配置属性/调试**类别的 Windows 应用商店应用程序和 c + + 编写的组件有所不同。 请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows 开发中心中。  
+> 中的调试项目设置**配置属性/调试**类别的 Windows 应用商店应用程序和组件中编写的C++不同。 请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) Windows 开发中心中。  
   
  指定要在中使用的调试器**要启动的调试器**列表框。 您的选择将影响属性的可见性。  
   

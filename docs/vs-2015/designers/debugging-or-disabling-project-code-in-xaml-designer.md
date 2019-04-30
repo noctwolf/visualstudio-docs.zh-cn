@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436203"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ ms.locfileid: "60060769"
      你可以再次切换按钮以重新启用项目代码。  
   
     > [!NOTE]
-    >  对于面向 ARM 或 X64 处理器的项目，Visual Studio 无法在设计器中运行项目代码，因此禁用设计器中的“禁用项目代码”  按钮。  
+    > 对于面向 ARM 或 X64 处理器的项目，Visual Studio 无法在设计器中运行项目代码，因此禁用设计器中的“禁用项目代码”  按钮。  
   
 - 其中任一选项都将导致设计器重载，然后会禁用关联项目的所有代码。  
   
     > [!NOTE]
-    >  禁用项目代码可能导致设计时数据丢失。 或者调试在设计器中运行的代码。  
+    > 禁用项目代码可能导致设计时数据丢失。 或者调试在设计器中运行的代码。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)

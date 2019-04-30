@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443983"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097383"
 本主题可将引导你概览有助于了解如何使用 Xamarin 开发跨平台移动应用的资料。 如果尚未安装 Visual Studio 和 Xamarin，请首先启动 [Setup and install](../cross-platform/setup-and-install.md) 过程，然后在安装程序运行期间返回此处浏览这些资源。  
   
 > [!NOTE]
->  除另有说明的情况外，我们建议最初仅浏览直接链接至此的页面而不浏览子页面。 如果完成此列表后安装过程仍在运行，请随意返回浏览其他主题。  
+> 除另有说明的情况外，我们建议最初仅浏览直接链接至此的页面而不浏览子页面。 如果完成此列表后安装过程仍在运行，请随意返回浏览其他主题。  
 >   
->  还可随意查看标记为“基础知识”的主题，并在稍后返回到“深入了解”主题。  
+> 还可随意查看标记为“基础知识”的主题，并在稍后返回到“深入了解”主题。  
   
 ## <a name="essentials-introduction-to-xamarin"></a>基础知识：Xamarin 简介  
  *10-20 分钟*  

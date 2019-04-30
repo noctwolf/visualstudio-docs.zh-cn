@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440989"
 ---
 # <a name="layer-diagrams-reference"></a>层关系图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "60061980"
      **层资源管理器**将打开并显示链接到所选层的项目。 **层资源管理器**有一列显示了每个项目链接的属性。  
   
     > [!NOTE]
-    >  如果您不能查看所有这些属性，请展开**层资源管理器**窗口。  
+    > 如果您不能查看所有这些属性，请展开**层资源管理器**窗口。  
   
     |**层资源管理器中的列**|**说明**|  
     |----------------------------------|---------------------|  

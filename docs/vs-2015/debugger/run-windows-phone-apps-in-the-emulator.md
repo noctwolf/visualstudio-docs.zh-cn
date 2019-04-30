@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442326"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在仿真程序中运行 Windows Phone 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试
    若选定的仿真程序已在运行，将部署应用并且该应用将在运行的仿真程序上启动。 每次只能运行每个仿真程序的一个实例。  
   
 > [!TIP]
->  若要在仿真程序上测试应用，请在调试会话之间将仿真程序保持为打开状态，以便能够再次快速运行该应用。  
+> 若要在仿真程序上测试应用，请在调试会话之间将仿真程序保持为打开状态，以便能够再次快速运行该应用。  
   
 ### <a name="BKMK_vs"></a> 从 Visual Studio 运行应用  
   

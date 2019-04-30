@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ba8aadaa55a22c8e8c645866a9163628404407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412668"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 当它想要截获的当前异常时由当前堆栈帧上的调试器调用。
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  当调试器想要知道是否拦截异常时，它在当前堆栈帧对象上调用此方法。 此方法负责处理异常的所有详细信息。 如果[IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)未实现接口或`InterceptStackException`方法会返回任何错误，则调试器会继续正常处理该异常。
 
 > [!NOTE]
->  异常会被截取只能在托管代码中，它是正在调试的程序在运行时的.NET 下运行时。 当然，第三方语言实现者可以实现`InterceptStackException`中选择性地他们自己的调试引擎。
+> 异常会被截取只能在托管代码中，它是正在调试的程序在运行时的.NET 下运行时。 当然，第三方语言实现者可以实现`InterceptStackException`中选择性地他们自己的调试引擎。
 
  拦截完成后[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)发出信号。
 

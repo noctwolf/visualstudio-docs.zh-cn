@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446995"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开可用于获取和设置在运行时的功能区控件的属性的强类型化的对象模型。 例如，您可以动态填充菜单控件，或显示和隐藏控件根据上下文。 向功能区，但只能在功能区加载 Office 应用程序之前，还可以添加选项卡、 组和控件。 有关信息，请参阅[设置属性变为只读](#SettingReadOnlyProperties)。
@@ -130,7 +130,7 @@ ms.locfileid: "60040711"
  下表显示只能在功能区加载之前设置的属性。
 
 > [!NOTE]
->  在任何时候，可以设置动态菜单上的控件的属性。 此表不适用于这种情况下。
+> 在任何时候，可以设置动态菜单上的控件的属性。 此表不适用于这种情况下。
 
 |属性|功能区控件类|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040711"
  如果有任何这些属性设置为不同的值时创建功能区的其他实例的条件逻辑，此代码不会影响。
 
 > [!NOTE]
->  絋粄**名称**属性设置为向 Outlook 功能区添加每个控件。 如果向 Outlook 功能区在运行时添加控件，则必须在代码中设置此属性。 如果在设计时将控件添加到 Outlook 功能区中，会自动设置 Name 属性。
+> 絋粄**名称**属性设置为向 Outlook 功能区添加每个控件。 如果向 Outlook 功能区在运行时添加控件，则必须在代码中设置此属性。 如果在设计时将控件添加到 Outlook 功能区中，会自动设置 Name 属性。
 
 ## <a name="ribbon-control-events"></a>功能区控件事件
  每个控件类包含一个或多个事件。 下表描述了这些事件。

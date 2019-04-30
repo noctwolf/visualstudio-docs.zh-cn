@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440971"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>将用例链接到文档和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "60088673"
 3. 选择新项目后，键入或粘贴到 URL**超链接**属性。  
   
     > [!NOTE]
-    >  如果你想要提供的文件路径，则最好在常见的工作区中选择一个文件 (从开始\\\\)，或在 Visual Studio 解决方案中的文件。 这可以确保文件路径在其他团队成员的计算机上或该解决方案被移动后仍将有效。 若要将文档如 Word 文档添加到你的解决方案，右键单击解决方案资源管理器中的解决方案，指向**外**，然后单击**现有项**。  
+    > 如果你想要提供的文件路径，则最好在常见的工作区中选择一个文件 (从开始\\\\)，或在 Visual Studio 解决方案中的文件。 这可以确保文件路径在其他团队成员的计算机上或该解决方案被移动后仍将有效。 若要将文档如 Word 文档添加到你的解决方案，右键单击解决方案资源管理器中的解决方案，指向**外**，然后单击**现有项**。  
   
 ## <a name="see-also"></a>请参阅  
  [UML 用例关系图：引用](../modeling/uml-use-case-diagrams-reference.md)   

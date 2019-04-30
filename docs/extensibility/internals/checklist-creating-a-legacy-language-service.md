@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420695"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>清单：创建旧版语言服务
 以下清单汇总了要创建的语言服务，必须执行的基本步骤[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心编辑器。 若要将集成到语言服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必须创建调试表达式计算器。 有关详细信息，请参阅[编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。
@@ -61,7 +61,7 @@ ms.locfileid: "60075985"
     必须处理的命令取决于所提供服务。 有关详细信息，请参阅[适用于语言的重要命令服务筛选器](../../extensibility/internals/important-commands-for-language-service-filters.md)。
 
     > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>必须为同一对象上实现接口<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口。
+    > <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter>必须为同一对象上实现接口<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口。
 
 - 语句结束
 

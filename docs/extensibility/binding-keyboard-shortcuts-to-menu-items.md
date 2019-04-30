@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410116"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 若要绑定到自定义菜单命令的键盘快捷方式，只需添加一个条目 *.vsct*包文件。 本主题说明如何映射到自定义按钮、 菜单项或工具栏命令的键盘快捷方式以及如何将应用的默认编辑器中的键盘映射或将其限制到自定义编辑器。
@@ -42,7 +42,7 @@ ms.locfileid: "56705854"
 4. 直到找到未映射，请尝试不同的键组合。
 
    > [!NOTE]
-   >  即使用键盘快捷方式**Alt**可能会打开一个菜单，并不是直接执行命令。 因此，**当前使用的快捷方式**框中键入包括的快捷方式时可能为空**Alt**。你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。
+   > 即使用键盘快捷方式**Alt**可能会打开一个菜单，并不是直接执行命令。 因此，**当前使用的快捷方式**框中键入包括的快捷方式时可能为空**Alt**。你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。
 
    以下过程假设您有一个菜单命令与现有 VSPackage。 如果您需要执行该操作的帮助，看一看[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "56705854"
 2. 创建一个空`<KeyBindings>`部分后`<Commands>`如果尚不存在。
 
    > [!WARNING]
-   >  键绑定的详细信息，请参阅[键绑定](../extensibility/keybinding-element.md)。
+   > 键绑定的详细信息，请参阅[键绑定](../extensibility/keybinding-element.md)。
 
     在中`<KeyBindings>`部分中，创建`<KeyBinding>`条目。
 

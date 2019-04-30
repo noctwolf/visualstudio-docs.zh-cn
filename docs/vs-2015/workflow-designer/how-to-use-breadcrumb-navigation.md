@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444139"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>如何：使用痕迹导航
 更改 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中显示的活动集的方法主要有三种：  
@@ -38,7 +38,7 @@ ms.locfileid: "60109694"
 2. 单击该按钮更改展开状态时，新的展开状态将保存在 XAML 中。  
   
     > [!WARNING]
-    >  并非所有活动都可就地展开。 在两种情况下不能就地展开活动：一种是活动的父级不允许其子级就地展开（例如，流程图中的活动不能就地展开），另一种是活动设计器不允许自身就地展开。 虽然 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中包含的所有活动设计器都没有后一种行为，但有的自定义活动可能具有此行为。  
+    > 并非所有活动都可就地展开。 在两种情况下不能就地展开活动：一种是活动的父级不允许其子级就地展开（例如，流程图中的活动不能就地展开），另一种是活动设计器不允许自身就地展开。 虽然 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中包含的所有活动设计器都没有后一种行为，但有的自定义活动可能具有此行为。  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>展开或折叠所有活动  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60109694"
 2. 已应用全部展开或折叠所有状态后，可以单击**还原**按钮，它可返回到查看以前应用于每个活动的状态。  
   
     > [!WARNING]
-    >  如果某个活动，如<xref:System.Activities.Statements.Flowchart>，已选择加入共就地展开，相关联的功能**全部展开**并**全部折叠**上禁用按钮**流程图**设计器。 [!INCLUDE[crabout](../includes/crabout-md.md)] **流程图**设计器，请参见[流程图](../workflow-designer/flowchart-activity-designer.md)主题。  
+    > 如果某个活动，如<xref:System.Activities.Statements.Flowchart>，已选择加入共就地展开，相关联的功能**全部展开**并**全部折叠**上禁用按钮**流程图**设计器。 [!INCLUDE[crabout](../includes/crabout-md.md)] **流程图**设计器，请参见[流程图](../workflow-designer/flowchart-activity-designer.md)主题。  
   
     > [!WARNING]
-    >  全部展开中也有特殊效果**交换机**并**TryCatch**活动设计器。 当您单击**全部展开**，显示所有 switch 事例和所有 try/catch/finally 块。 单击**还原**或**全部折叠**返回这些设计器为其默认状态，你可以单击单个事例/块来查看其内容。
+    > 全部展开中也有特殊效果**交换机**并**TryCatch**活动设计器。 当您单击**全部展开**，显示所有 switch 事例和所有 try/catch/finally 块。 单击**还原**或**全部折叠**返回这些设计器为其默认状态，你可以单击单个事例/块来查看其内容。

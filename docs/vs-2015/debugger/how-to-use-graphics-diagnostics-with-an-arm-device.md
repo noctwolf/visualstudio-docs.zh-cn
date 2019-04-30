@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384009"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>如何：将图形诊断用于 ARM 设备
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104864"
 2. 安装[远程调试工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)基于 ARM 的设备上。  
   
 > [!IMPORTANT]
->  对于 Windows Phone 8.1 设备，你可能需要注册手机以供开发。 为此，你必须是已注册的开发人员。 有关详细信息，请参阅[如何部署和运行 Windows Phone 8 应用](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
+> 对于 Windows Phone 8.1 设备，你可能需要注册手机以供开发。 为此，你必须是已注册的开发人员。 有关详细信息，请参阅[如何部署和运行 Windows Phone 8 应用](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx)。  
   
  在设备上启用了远程调试后，请将它作为你的调试目标并启动图形诊断。  
   

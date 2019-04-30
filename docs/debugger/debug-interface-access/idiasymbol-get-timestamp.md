@@ -1,45 +1,47 @@
 ---
 title: IDiaSymbol::get_timeStamp | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_timeStamp method
 ms.assetid: 5d707b76-dbaa-4d88-86c3-6f3672cc6d4c
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: 726c452abe8f435ab05e3e6a5606b21fb8d9eba1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399871"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-检索基础可执行文件的时间戳。
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>语法
-
-```C++
-HRESULT get_timeStamp ( 
-   DWORD* pRetVal
-);
-```
-
-#### <a name="parameters"></a>参数
- `pRetVal`
-
-[out]返回基础可执行文件的时间戳。
-
-## <a name="return-value"></a>返回值
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
-
+检索基础可执行文件的时间戳。  
+  
+## <a name="syntax"></a>语法  
+  
+```cpp#  
+HRESULT get_timeStamp (   
+   DWORD* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>参数  
+ `pRetVal`  
+ [out]返回基础可执行文件的时间戳。  
+  
+## <a name="return-value"></a>返回值  
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
+  
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
-
-## <a name="see-also"></a>请参阅
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
+  
+## <a name="see-also"></a>请参阅  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

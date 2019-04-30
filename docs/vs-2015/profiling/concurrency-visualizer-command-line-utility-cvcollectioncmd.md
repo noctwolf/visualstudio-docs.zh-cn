@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444051"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752908"
 你可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
   
 > [!NOTE]
->  从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103)（Visual Studio 2015 并发可视化工具收集工具）。  
+> 从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103)（Visual Studio 2015 并发可视化工具收集工具）。  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下载并发可视化工具命令行实用程序  
  若要下载并安装命令行实用程序，请转到 [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，按照说明进行操作。 默认情况下，CVCollectionCmd.exe 安装在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\（在 x64 计算机上为 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\）。  
@@ -41,9 +41,9 @@ ms.locfileid: "54752908"
   
  **CvCollectionCmd /?**  
   
-|选项|说明|参数|返回值|  
+|选项|描述|参数|返回值|  
 |------------|-----------------|----------------|-------------------|  
-|查询|返回是否可以启动收集。|无|如果准备开始启动收集，则为 0。<br /><br /> 如果收集已在进行中，则为 1。<br /><br /> 如果收集未在进行，但是已经启用一个或多个必需的 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 会话，则为 2。|  
+|查询|返回是否可以启动收集。|None|如果准备开始启动收集，则为 0。<br /><br /> 如果收集已在进行中，则为 1。<br /><br /> 如果收集未在进行，但是已经启用一个或多个必需的 [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) 会话，则为 2。|  
 |启动|在并发可视化工具下运行指定的进程。|可执行文件的路径。|如果运行已成功，则为 0。<br /><br /> 如果因为目标应用程序无法启动而运行失败，则为 1。<br /><br /> 如果因为 CVCollectionCmd 没有足够的权限写入指定的输出目录而运行失败，则为 13。|  
 |Attach|开始收集系统级跟踪，否则如果指定了一个进程，则附加到该进程。|无。|如果附加成功，则为 0。<br /><br /> 如果因为指定的进程无效或不明确而附加失败，则为 1。<br /><br /> 如果因为 CVCollectionCmd 没有足够的权限写入指定的输出目录而附加失败，则为 13。|  
 |Detach|停止收集。|无。|如果分离成功，则为 0。<br /><br /> 如果因为收集当前没有进行而分离失败，则为 1。<br /><br /> 如果因为无法停止收集而分离失败，则为 2。|  
@@ -57,14 +57,14 @@ ms.locfileid: "54752908"
  如果你使用 CVCollectionCmd 来收集跟踪并且希望自定义收集设置，则使用配置文件来指定它们。  
   
 > [!NOTE]
->  当你使用 Visual Studio 收集跟踪时，请不要直接修改配置文件。  而是使用 [高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 对话框来修改设置。  
+> 当你使用 Visual Studio 收集跟踪时，请不要直接修改配置文件。  而是使用 [高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 对话框来修改设置。  
   
  若要修改收集设置，则在你将运行 CVCollectionCmd 实用工具的计算机上创建配置文件。 你可以从头开始创建配置文件，或者可以在安装了 Visual Studio 的计算机上复制配置文件并修改该文件。 该文件名为 `UserConfig.xml` 并且位于“本地 AppData”  文件夹中。 当你运行实用工具时，与“启动”、“附加”或“分析”命令结合使用 Config 选项。  在与 Config 选项相关联的参数中，指定配置文件的路径。  
   
 ### <a name="configuration-file-tags"></a>配置文件标记  
  此配置文件基于 XML 文件。 以下是有效的标记和值：  
   
-|标记|说明|值|  
+|标记|描述|值|  
 |---------|-----------------|------------|  
 |配置|划分整体配置文件。|必须包含以下元素：<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|指定配置文件的主要版本。|对于 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 项目，必须为 1。 如果不是 1，则实用工具不起作用。|  
@@ -76,7 +76,7 @@ ms.locfileid: "54752908"
 |MarkerProvider|指定单个标记提供程序。|必须包含以下元素：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可以包含以下元素：<br /><br /> -   Categories<br />-   IsEnabled|  
 |级别|设置 MarkerProvider 的重要性级别。|-   低<br />-   普通<br />-   高<br />-   严重<br />-   全部|  
 |GUID|ETW 标记提供程序的全局唯一标识符。|一个 GUID。|  
-|name|指定标记提供程序的说明。|一个字符串。|  
+|名称|指定标记提供程序的说明。|一个字符串。|  
 |类别|指定为标记提供程序收集的类别。|一个以逗号分隔的数字或数字范围的字符串。|  
 |IsEnabled|设置一个值，该值确定是否针对收集启用标记提供程序。|-   True<br />-   False|  
 |FilterConfig|指定 ETW 事件的配置选项的列表，这些事件筛选自收集。|可能包含以下元素：<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

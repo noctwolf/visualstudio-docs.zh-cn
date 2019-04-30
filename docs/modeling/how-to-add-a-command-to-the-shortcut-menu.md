@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442366"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -118,7 +118,7 @@ ms.locfileid: "60092716"
 5. 将 `{000...000}` 替换为标识组和菜单项的 GUID。 若要获取新的 GUID，请使用**创建 GUID**上**工具**菜单。
 
     > [!NOTE]
-    >  如果添加更多组或菜单项，则可以使用同一 GUID。 但是，你必须将新值用于 `IDSymbols`。
+    > 如果添加更多组或菜单项，则可以使用同一 GUID。 但是，你必须将新值用于 `IDSymbols`。
 
 6. 在已从此过程复制的代码中，将以下字符串的每个匹配项替换为自己的字符串：
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  使用相同的 GUID 值中插入**Commands.vsct**。
 
 > [!NOTE]
->  如果更改 VSCT 文件的“符号”部分，还必须更改这些要匹配的声明。 还应在 Package.tt 中递增版本号
+> 如果更改 VSCT 文件的“符号”部分，还必须更改这些要匹配的声明。 还应在 Package.tt 中递增版本号
 
  将菜单命令注册为此命令集的一部分。 当初始化关系图时，将调用一次 `GetMenuCommands()`：
 

@@ -11,12 +11,12 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56aeb6a43cea18513a422741289a08a5b7c901c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f060f6c49fc02c75b3fe9f792133c9ee88c6d56c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441592"
 ---
 # <a name="command-availability"></a>命令可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual Studio 上下文确定有哪些命令。 根据当前的项目、 当前�
 3. 将通过调用上下文 Guid 打开和关闭<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法。  
   
     > [!CAUTION]
-    >  请确保你的 VSPackage 不因为其他 Vspackage 可能依赖于这些影响任何现有上下文的 Guid。  
+    > 请确保你的 VSPackage 不因为其他 Vspackage 可能依赖于这些影响任何现有上下文的 Guid。  
   
 ## <a name="see-also"></a>请参阅  
  [选择上下文对象](../../extensibility/internals/selection-context-objects.md)   

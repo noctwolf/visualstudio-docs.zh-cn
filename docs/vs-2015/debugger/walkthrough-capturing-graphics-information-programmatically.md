@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444343"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60093095"
 - 捕获图形信息  
   
 > [!NOTE]
->  以前的编程捕获的实现依赖于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具提供捕获功能，但 Windows 8.1 直接通过 Direct3D 11.2 支持捕获。 因此，你不再需要在 Windows 8.1 上安装用于编程捕获的远程工具。  
+> 以前的编程捕获的实现依赖于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具提供捕获功能，但 Windows 8.1 直接通过 Direct3D 11.2 支持捕获。 因此，你不再需要在 Windows 8.1 上安装用于编程捕获的远程工具。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>准备你的应用以使用编程捕获  
  若要在应用中使用编程捕获，它必须包括必要的标头。 这些标头属于 Windows 8.1 SDK。  
@@ -58,10 +58,10 @@ ms.locfileid: "60093095"
     ```  
   
     > [!IMPORTANT]
-    >  不包括标头文件 vsgcapture.h—which 支持编程捕获在 Windows 8.0 及更早版本 — Windows 8.1 应用程序中执行编程捕获。 此标头无法与 DirectX 11.2 兼容。 如果此文件包括包含 d3d11_2.h 标头后，则编译器会发出警告。 如果之前 d3d11_2.h 包含 vsgcapture.h，则不会启动该应用程序。  
+    > 不包括标头文件 vsgcapture.h—which 支持编程捕获在 Windows 8.0 及更早版本 — Windows 8.1 应用程序中执行编程捕获。 此标头无法与 DirectX 11.2 兼容。 如果此文件包括包含 d3d11_2.h 标头后，则编译器会发出警告。 如果之前 d3d11_2.h 包含 vsgcapture.h，则不会启动该应用程序。  
   
     > [!NOTE]
-    >  如果你的计算机上安装了 DirectX SDK（2010 年 6 月），并且你的项目的包括路径包含 `%DXSDK_DIR%includex86`，请将它移动到包括路径末尾。 针对你的库路径执行相同操作。  
+    > 如果你的计算机上安装了 DirectX SDK（2010 年 6 月），并且你的项目的包括路径包含 `%DXSDK_DIR%includex86`，请将它移动到包括路径末尾。 针对你的库路径执行相同操作。  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
  由于 Windows Phone 8.1 SDK 不包括 DXProgrammableCapture.h 标头，您将需要定义`IDXGraphicsAnalysis`，以便可以使用接口自行`BeginCapture()`和`EndCapture()`方法。 包括上一节中所述的其他标头。  
@@ -85,7 +85,7 @@ ms.locfileid: "60093095"
  在可以从 DirectX 11.2 中捕获图形信息之前，你必须获取 DXGI 调试接口。  
   
 > [!IMPORTANT]
->  当使用编程捕获时，必须仍运行你的应用在图形诊断下 (中的 Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) 或下[命令行捕获工具](../debugger/command-line-capture-tool.md)。  
+> 当使用编程捕获时，必须仍运行你的应用在图形诊断下 (中的 Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) 或下[命令行捕获工具](../debugger/command-line-capture-tool.md)。  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>获取 IDXGraphicsAnalysis 接口  
   
@@ -106,7 +106,7 @@ ms.locfileid: "60093095"
     ```  
   
     > [!NOTE]
-    >  如果在 `DXGIGetDebugInterface1` 返回 `E_NOINTERFACE` （`error: E_NOINTERFACE No such interface supported`），请确保应用在图形诊断下运行（ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Alt + F5）。  
+    > 如果在 `DXGIGetDebugInterface1` 返回 `E_NOINTERFACE` （`error: E_NOINTERFACE No such interface supported`），请确保应用在图形诊断下运行（ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Alt + F5）。  
   
 ### <a name="capturing-graphics-information"></a>捕获图形信息  
  现在你已拥有一个有效的 `IDXGraphicsAnalysis` 接口，你可以使用 `BeginCapture` 和 `EndCapture` 捕获图形信息。  
@@ -150,7 +150,7 @@ ms.locfileid: "60093095"
  或者， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将安装必需的组件来为 32 位应用执行远程捕获。  
   
 > [!NOTE]
->  因为对于 ARM 设备，大多数 Windows 桌面应用（包括 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]）在 [!INCLUDE[win8](../includes/win8-md.md)] 上不受支持，因此将 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具和编程捕获 API 结合使用是在 ARM 设备上捕获图形诊断的唯一方法。  
+> 因为对于 ARM 设备，大多数 Windows 桌面应用（包括 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]）在 [!INCLUDE[win8](../includes/win8-md.md)] 上不受支持，因此将 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具和编程捕获 API 结合使用是在 ARM 设备上捕获图形诊断的唯一方法。  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>准备你的应用以使用编程捕获  
  若要使用图形诊断工具，首先，你必须捕获它所依赖的图形信息。 通过使用 `CaptureCurrentFrame` API，可采用编程方式捕获该信息。  
@@ -185,13 +185,13 @@ ms.locfileid: "60093095"
   有关[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用，临时目录的位置是特定于每个用户和应用程序，并通常位于某个位置，例如 C:\users\\*用户名*\AppData\Local\Packages\\ *包系列名称*\TempState\\。 对于桌面应用，临时目录的位置特定于每个用户，通常位于某个位置，例如 C:\Users\\*用户名*\AppData\Local\Temp\\。  
   
 > [!NOTE]
->  若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请牢记，就可以写入数据的位置而言， [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用比桌面应用更受限制，而且可能需要进行额外配置才能写入某些位置。  
+> 若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请牢记，就可以写入数据的位置而言， [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用比桌面应用更受限制，而且可能需要进行额外配置才能写入某些位置。  
   
 ### <a name="capturing-the-graphics-information"></a>捕获图形信息  
  在准备好应用以用于编程捕获并有选择地配置好图形日志文件的位置和名称之后，请生成该应用，然后运行或调试它以捕获数据；当使用编程捕获 API 时，请不要从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中启动图形诊断。 图形日志将写入你指定的位置。 如果你想要保留此版本的日志，请将它移动到另一个位置；否则，当你再次运行该应用时，会对其进行重写。  
   
 > [!TIP]
->  使用编程捕获时，你仍然可以手动捕获图形信息（以应用为焦点，直接按 **“Print Screen”**）。 你可以使用此技术捕获编程捕获 API 未捕获到的其他图形信息。  
+> 使用编程捕获时，你仍然可以手动捕获图形信息（以应用为焦点，直接按 **“Print Screen”**）。 你可以使用此技术捕获编程捕获 API 未捕获到的其他图形信息。  
   
 ## <a name="next-steps"></a>后续步骤  
  本演练演示了如何采用编程方式捕获图形信息。 下一步，请考虑此选项：  

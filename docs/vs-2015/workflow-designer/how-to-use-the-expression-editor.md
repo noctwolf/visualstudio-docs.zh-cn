@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408385"
 ---
 # <a name="how-to-use-the-expression-editor"></a>如何：使用表达式编辑器
 表达式编辑器是许多工作流活动中使用的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 控件，用于输入和计算这些表达式。 表达式编辑器提供全面的 IDE 编辑体验，包括 IntelliSense、着色、ParamInfo、错误波形曲线和其他功能。 编译器在表达式输入后对它进行验证。 如果表达式无效，则显示一个错误图标。 此外可以为打开编辑器**表达式编辑器**对话框。  
@@ -32,7 +32,7 @@ ms.locfileid: "60057181"
 - 如果在重新承载的工作流设计器中将焦点置于表达式编辑器，则该编辑器的行为类似于 TextBox。 当在重新承载的工作流设计器中失去焦点后，表达式编辑器看上去又像一个常规 TextBlock 了。  
   
 > [!NOTE]
->  表达式编辑器的 IntelliSense 仅在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 内可用。 在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 和重新承载的方案中，编译器在表达式输入后对它进行验证，如果该表达式无效，则表达式编辑器将显示一个错误图标。  
+> 表达式编辑器的 IntelliSense 仅在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 内可用。 在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 和重新承载的方案中，编译器在表达式输入后对它进行验证，如果该表达式无效，则表达式编辑器将显示一个错误图标。  
   
 ### <a name="using-the-expression-editor"></a>使用表达式编辑器  
   
@@ -41,7 +41,7 @@ ms.locfileid: "60057181"
 2. 向工作流添加诸如 <xref:System.Activities.Statements.Assign> 之类的活动。  
   
     > [!NOTE]
-    >  多种工作流活动具有表达式编辑器。 表达式 TextBlock 还显示在变量设计器、自变量设计器和动态自变量设计器中。 <xref:System.Activities.Statements.Assign> 活动用作一个示例。  
+    > 多种工作流活动具有表达式编辑器。 表达式 TextBlock 还显示在变量设计器、自变量设计器和动态自变量设计器中。 <xref:System.Activities.Statements.Assign> 活动用作一个示例。  
   
 3. 在 <xref:System.Activities.Statements.Assign> 活动的活动设计器中单击左侧表达式编辑器。  
   

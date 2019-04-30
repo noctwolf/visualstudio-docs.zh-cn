@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444969"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "58934050"
  目前，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]仅当使用 Internet Explorer 打开部署清单的 URL，将启动安装。 仅当 Internet Explorer 设置为默认 Web 浏览器，从另一个应用程序，如 Microsoft Office Outlook 启动其 URL，则的部署将成功启动。  
   
 > [!NOTE]
->  如果部署提供程序不为空或已安装 Microsoft.NET Framework Assistant 扩展，则支持 Mozilla Firefox。 此扩展与.NET Framework 3.5 SP1 一起打包。 有关 XBAP 支持，在需要时激活插件 NPWPF。  
+> 如果部署提供程序不为空或已安装 Microsoft.NET Framework Assistant 扩展，则支持 Mozilla Firefox。 此扩展与.NET Framework 3.5 SP1 一起打包。 有关 XBAP 支持，在需要时激活插件 NPWPF。  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>激活 ClickOnce 应用程序可以通过浏览器脚本  
  如果您已开发一个自定义网页，将启动[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]使用活动脚本应用程序可能会发现在某些计算机上将不启动应用程序。 Internet Explorer 包含名为的设置**自动提示文件下载**，这会影响此行为。 此设置位于**安全**选项卡中其**选项**会影响此行为的菜单。 它称为**文件下载自动提示**，，下列出**下载**类别。 属性设置为**启用**默认情况下，为 intranet Web 页，并向**禁用**默认情况下，Internet Web pages。 如果此设置设置为**禁用**，任何尝试激活[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序以编程方式 (例如，通过将分配到其 URL`document.location`属性) 将被阻止。 在此情况下，用户可以启动应用程序只能通过用户启动的下载，例如，通过单击超链接设置为应用程序的 URL。  
@@ -78,7 +78,7 @@ ms.locfileid: "58934050"
 ```  
   
 > [!NOTE]
->  可以让 NTLM （NT 质询-响应） 身份验证工作如果该站点会提示您提供默认凭据，之外的凭据，然后在安全对话框中，单击**确定**如果你想要保存所提供提示你时将来的会话的凭据。 但是，此解决方法将不适用于基本身份验证。  
+> 可以让 NTLM （NT 质询-响应） 身份验证工作如果该站点会提示您提供默认凭据，之外的凭据，然后在安全对话框中，单击**确定**如果你想要保存所提供提示你时将来的会话的凭据。 但是，此解决方法将不适用于基本身份验证。  
   
 ## <a name="using-third-party-web-servers"></a>使用第三方 Web 服务器  
  如果要部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]从 Web 服务器 IIS 之外的应用程序，您可能会遇到问题如果服务器返回内容类型不正确的密钥[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]文件，如部署清单和应用程序清单。 若要解决此问题，请参阅有关如何将新内容类型添加到服务器，并确保所有文件名称扩展映射下, 表中都列出的文档位于适当位置的 Web 服务器的帮助。  

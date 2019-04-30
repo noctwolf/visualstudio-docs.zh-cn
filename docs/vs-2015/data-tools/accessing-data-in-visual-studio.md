@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444490"
 ---
 # <a name="accessing-data-in-visual-studio"></a>在 Visual Studio 中访问数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "59669453"
  许多数据库供应商和第三方通过 NuGet 包支持 Visual Studio 集成。 在 nuget.org 上或通过 NuGet 包管理器在 Visual Studio 中，可以浏览产品/服务 (**工具** > **NuGet 包管理器** > **管理 NuGet解决方案包**)。 其他数据库产品与 Visual Studio 集成扩展。   您可以通过导航到浏览 Visual Studio 库中的这些产品/服务**工具** > **扩展和更新**，然后选择**联机**左侧在对话框的窗格。  有关详细信息，请参阅[安装数据库系统、 工具和示例](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 > [!NOTE]
->  对 SQL Server 2005 的延长的支持已于 2016 年 4 月 12 日结束。   就数据工具在 Visual Studio 2015 及更高版本将继续使用 SQL Server 2005 在此日期之后不能保证。 有关详细信息，请参阅[SQL Server 2005 的最终支持公告](https://www.microsoft.com/sql-server/sql-server-2005)。
+> 对 SQL Server 2005 的延长的支持已于 2016 年 4 月 12 日结束。   就数据工具在 Visual Studio 2015 及更高版本将继续使用 SQL Server 2005 在此日期之后不能保证。 有关详细信息，请参阅[SQL Server 2005 的最终支持公告](https://www.microsoft.com/sql-server/sql-server-2005)。
 
 ### <a name="net-languages"></a>.NET 语言
  所有.NET 数据访问，包括在.NET Core 中，都基于 ADO.NET 中，定义用于访问任何类型的关系和非关系数据源的接口的一组类。 Visual Studio 具有几个工具和设计人员可使用 ADO.NET 来帮助您连接到数据库，操作数据，并向用户呈现数据。 在本部分中的文档介绍如何使用这些工具。 您还可以直接对 ADO.NET 命令对象进行编程。 直接调用 ADO.NET Api 的详细信息，请参阅[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN 库中。

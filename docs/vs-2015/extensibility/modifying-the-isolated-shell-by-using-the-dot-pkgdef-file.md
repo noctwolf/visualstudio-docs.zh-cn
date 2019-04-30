@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386032"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>通过使用修改独立的 Shell。Pkgdef 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663961"
 .Pkgdef 文件支持可用于自定义独立的 shell 应用程序的设置。 它指定应用程序的计算机上安装并启动应用程序时所引用的 Visual Studio shell 时创建的值。 设置组织根据适用的注册表项在文件中。  
 
 > [!WARNING]
->  请注意 Visual Studio 启动时不会扫描 VSPackage 的.vsixmanifest 文件中未声明的.pkgdef 文件。  
+> 请注意 Visual Studio 启动时不会扫描 VSPackage 的.vsixmanifest 文件中未声明的.pkgdef 文件。  
 
  .Pkgdef 文件包含部分，每个由键标识，或者`[$RootKey$]`或`[$RootKey$\`*子项*`]`，其中 $RootKey$ 是应用程序的根键。  
 
@@ -53,7 +53,7 @@ ms.locfileid: "59663961"
  以下各节介绍影响 Visual Studio shell 在独立模式下的行为的特定注册表值。 此外可以在此文件中定义应用程序的其他注册表值。  
 
 > [!NOTE]
->  如果.pkgdef 文件中未提供一种设置，则没有对应的条目进行在注册表中。  
+> 如果.pkgdef 文件中未提供一种设置，则没有对应的条目进行在注册表中。  
 
 ## <a name="settings"></a>设置  
  下表介绍 [$RootKey$] 下定义的值。  
