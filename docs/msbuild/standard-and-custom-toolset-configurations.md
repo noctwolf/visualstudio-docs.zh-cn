@@ -28,7 +28,7 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
 
 |ToolsVersion|工具集路径（如 MSBuildToolsPath 或 MSBuildBinPath 生成属性中所指定）|
 |------------------| - |
-|2.0|\<Windows installation path\Microsoft.Net\Framework\v2.0.50727\\\|
+|2.0|\<Windows installation path\Microsoft.Net\Framework\v2.0.50727\\|
 |3.5|\<Windows installation path>\Microsoft.NET\Framework\v3.5\\|
 |4.0|\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\|
 |当前|\<Visual Studio installation path>\MSBuild\Current\bin|
@@ -42,7 +42,7 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
 
 |ToolsVersion|工具集路径（如 MSBuildToolsPath 或 MSBuildBinPath 生成属性中所指定）|
 |------------------| - |
-|2.0|\<Windows installation path\Microsoft.Net\Framework\v2.0.50727\\\|
+|2.0|\<Windows installation path\Microsoft.Net\Framework\v2.0.50727\\|
 |3.5|\<Windows installation path>\Microsoft.NET\Framework\v3.5\\|
 |4.0|\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\|
 |15.0|\<Visual Studio installation path>\MSBuild\15.0\bin|
