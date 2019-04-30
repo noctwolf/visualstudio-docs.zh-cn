@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439179"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>管理调试器的异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ ms.locfileid: "60040959"
 - 如果设置了 [Just My Code](../debugger/just-my-code.md)，且调试程序设置为出现任何未在用户代码中进行处理的异常时执行中断操作。  
   
 > [!NOTE]
->  ASP.NET 有一个顶级异常处理程序，可以在浏览器中显示错误页。 除非启用 **“仅我的代码”** ，否则它不会中断执行。 有关示例，请参阅以下 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
+> ASP.NET 有一个顶级异常处理程序，可以在浏览器中显示错误页。 除非启用 **“仅我的代码”** ，否则它不会中断执行。 有关示例，请参阅以下 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
   
 > [!NOTE]
->  在 Visual Basic 应用程序中，调试程序将所有错误作为异常进行管理，即使使用出错时样式错误处理程序也是如此。  
+> 在 Visual Basic 应用程序中，调试程序将所有错误作为异常进行管理，即使使用出错时样式错误处理程序也是如此。  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>使用异常设置窗口管理异常  
  可以使用 **“异常设置”** 窗口指定哪些异常（或异常组）将导致调试程序执行中断操作，以及你想要它执行中断操作的位置。 可以添加或删除异常，或指定要对其执行中断操作的异常。 单击 **“调试”/“窗口”/“异常设置”**，以在打开解决方案时打开此窗口。  
@@ -162,7 +162,7 @@ ms.locfileid: "60040959"
  如果想要将异常添加到 GPU 内存访问异常、JavaScript 运行时异常或 Win32 异常类别，则需要包括错误代码和说明。  
   
 > [!TIP]
->  请检查你的拼写！ **“异常设置”** 窗口不会检查是否存在添加的异常。 因此，如果键入 **Sytem.UriTemplateMatchException**，则将获得该异常的条目（而不是 **System.UriTemplateMatchException**的条目）。  
+> 请检查你的拼写！ **“异常设置”** 窗口不会检查是否存在添加的异常。 因此，如果键入 **Sytem.UriTemplateMatchException**，则将获得该异常的条目（而不是 **System.UriTemplateMatchException**的条目）。  
   
  异常设置在解决方案的 .suo 文件中保留，因此适用于特定解决方案。 无法跨解决方案重用特定异常设置。 此时，仅保留添加的异常，而不会保留删除的异常。 换而言之，可以添加一个异常，然后关闭并重新打开解决方案，该异常将仍然存在。 但是，如果删除一个异常，然后关闭/重新打开解决方案，异常将消失。  
   

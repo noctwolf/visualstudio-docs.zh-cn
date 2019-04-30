@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439977"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60090014"
  如果你的应用尚未启用 MSAA，则 2x MSAA 和 4x MSAA 变体指示在应用中启用它们后的相对性能开销。 当开销处于可接受的低水平时，请考虑启用 MSAA 以增强应用的图像质量。  
   
 > [!NOTE]
->  你的硬件可能无法针对所有格式完全支持 MSAA。 如果任何变体遇到无法解决的硬件限制问题，则在性能摘要表中它的列将为空白，并且会产生一条错误消息。  
+> 你的硬件可能无法针对所有格式完全支持 MSAA。 如果任何变体遇到无法解决的硬件限制问题，则在性能摘要表中它的列将为空白，并且会产生一条错误消息。  
   
 ## <a name="remarks"></a>备注  
  调用创建呈现器目标的 `ID3DDevice::CreateTexture2D` 时，这些变体将重写样本计数和 sample-quality 自变量。 具体而言，在以下情况下将重写这些参数：  

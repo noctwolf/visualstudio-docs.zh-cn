@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22096541df20d2eb6ba5bd00c2fc531e9988d5e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0db5cba76f464e559f46963afd0be6b663ad6d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407875"
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
 变量设计器用于创建在数据绑定方案和条件语句中使用的变量。 通过单击来访问在设计器**变量**设计画布左下角的按钮。 该设计器包含一组这些变量显示在表格窗体中并可以按每一列标题排序除外**默认**列。 每个变量都包含名称、变量类型、作用域和默认值（如果有）。 名称和默认值是可编辑的文本字段，而类型和作用域是下拉项。 作用域是调用变量设计器时选择的活动。 如果无法在选定的范围内创建某个变量，则范围将默认为允许变量在其范围内创建的最靠近选定内容的上级活动。 [!INCLUDE[crabout](../includes/crabout-md.md)] 变量，请参阅[变量和自变量](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
@@ -34,7 +34,7 @@ ms.locfileid: "60104286"
 4. 单击标记为空的行**变量创建**。 这会将新行添加使用新的变量使用以下默认值： 为 variablex**名称**其中 x 是一个整数，其初始值为 1 的自动递增，从而创建唯一变量名**字符串**有关**变量类型**，和**序列**有关**作用域**。 为添加任何值**默认**。 可以在工作流设计过程中随时更改这些值。  
   
     > [!NOTE]
-    >  若要删除变量，通过单击选择该变量，然后按**删除**密钥。  
+    > 若要删除变量，通过单击选择该变量，然后按**删除**密钥。  
   
 ## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)   

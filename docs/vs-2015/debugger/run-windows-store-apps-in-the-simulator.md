@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426612"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模拟器中运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
  有关 Windows Phone 的信息，请参阅 [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) 。  
   
 > [!IMPORTANT]
->  Visual Studio 2015 模拟器不包括地理位置按钮。 这是因为 Windows 10 模拟器中不包含地理位置模拟。 如果需要进行这种类型的模拟，则可以在 Windows 8.1 或更早的操作系统上使用 Visual Studio 2013 模拟器。  
+> Visual Studio 2015 模拟器不包括地理位置按钮。 这是因为 Windows 10 模拟器中不包含地理位置模拟。 如果需要进行这种类型的模拟，则可以在 Windows 8.1 或更早的操作系统上使用 Visual Studio 2013 模拟器。  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> 设置模拟器作为目标  
  若要在模拟器中运行 Windows 应用商店应用程序，请从调试器的 **“标准”** 工具栏上的 **“启动调试”** 按钮旁的下拉列表中选择 **“模拟器”** 。  
@@ -86,10 +86,10 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
  可通过以任意方向将模拟器旋转 90 度，在纵向与横向之间切换设备方向。  
   
 > [!NOTE]
->  模拟器不遵从项目的 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 属性。 例如，如果项目将方向设置为 `Landscape`，然后将模拟器的方向旋转至纵向，则模拟器显示的图像仍将经过旋转和调整大小。 请在真实设备上测试这些设置。  
+> 模拟器不遵从项目的 [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) 属性。 例如，如果项目将方向设置为 `Landscape`，然后将模拟器的方向旋转至纵向，则模拟器显示的图像仍将经过旋转和调整大小。 请在真实设备上测试这些设置。  
   
 > [!NOTE]
->  如果旋转模拟器，并因此使模拟器的一个边大于显示模拟器的屏幕，则自动调整模拟器大小以适合屏幕。 如果再次旋转模拟器，也不会将大小调整回其原始大小。  
+> 如果旋转模拟器，并因此使模拟器的一个边大于显示模拟器的屏幕，则自动调整模拟器大小以适合屏幕。 如果再次旋转模拟器，也不会将大小调整回其原始大小。  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 更改模拟屏幕的大小和分辨率  
  若要更改模拟屏幕的大小和分辨率，请选择调色板上的  “更改分辨率”按钮，然后从列表中选择新的大小和分辨率。  
@@ -97,13 +97,13 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
  屏幕的大小和分辨率以 *屏幕宽度（以英寸为单位）、像素宽度 X 像素高度*形式列出。 注意，同时模拟屏幕大小和分辨率。 模拟器上的位置坐标将转换为所选设备大小和分辨率的坐标。  
   
 > [!NOTE]
->  可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参见 [响应式设计 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。  
+> 可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参见 [响应式设计 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 捕获应用程序的屏幕快照以提交到 Windows 应用商店  
  向 Windows 应用商店提交应用时，必须包含该应用的屏幕快照。  
   
 > [!NOTE]
->  屏幕快照按模拟器的当前分辨率进行保存。 若要更改分辨率，请选择 **“更改分辨率”** 按钮。  
+> 屏幕快照按模拟器的当前分辨率进行保存。 若要更改分辨率，请选择 **“更改分辨率”** 按钮。  
   
 - 若要从模拟器创建应用程序的屏幕快照，请选择 **“将屏幕快照捕获到剪贴板”** 按钮。  
   

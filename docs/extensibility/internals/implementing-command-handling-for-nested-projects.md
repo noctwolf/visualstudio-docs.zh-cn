@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a75c6edcc084c8ec7c6942e011af9978a961c83
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ccdf1d4dbab45716aca11630885ed41ce25e24a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420560"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现嵌套项目的命令处理
 IDE 可将通过传递的命令传递<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口连接到嵌套的项目或父项目可以筛选或重写命令。
 
 > [!NOTE]
->  只有通常由父项目的命令可以进行筛选。 命令，如**构建**并**部署**由处理不能筛选的 IDE。
+> 只有通常由父项目的命令可以进行筛选。 命令，如**构建**并**部署**由处理不能筛选的 IDE。
 
  以下步骤介绍了如何实现命令处理。
 

@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422919"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](../ide/template-parameters.md)。
@@ -48,7 +48,7 @@ ms.locfileid: "56611858"
 ## <a name="tokens-list"></a>标记列表
  下表列出了可用的标记。
 
-|name|描述|
+|名称|描述|
 |----------|-----------------|
 |$SharePoint.Project.FileName$|名称包含的项目文件，如*NewProj.csproj*。|
 |$SharePoint.Project.FileNameWithoutExtension$|包含不带文件扩展名的项目文件的名称。 例如，"NewProj"。|
@@ -86,7 +86,7 @@ ms.locfileid: "56611858"
   但是，可以向列表添加其他文件扩展名。 添加`<TokenReplacementFileExtensions>`之前定义到任何 SharePoint 项目文件中的 PropertyGroup 元素\<导入 > SharePoint 目标文件。
 
 > [!NOTE]
->  编译项目后发生令牌替换，因为您不应将进行编译，如的文件类型的文件扩展名添加 *.cs*， *.vb*或 *.resx*。 仅在未编译的文件中替换标记。
+> 编译项目后发生令牌替换，因为您不应将进行编译，如的文件类型的文件扩展名添加 *.cs*， *.vb*或 *.resx*。 仅在未编译的文件中替换标记。
 
  例如，若要添加的文件扩展名 (*.myextension*并 *.yourextension*) 到的标记替换文件扩展名的列表中，你会将以下代码添加到项目 (*.csproj*) 文件：
 

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4b1441ef6547fe955734fd7556b27a08781461c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7906cc40eef813fcfd8996954e7073eb3e8508e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438847"
 ---
 # <a name="xml-document-properties-properties-window"></a>XML 文档属性，“属性”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "59660653"
 **属性**窗口提供了有关在 XML 编辑器中处于活动状态的文档的基本信息。 可用的属性取决于当前的活动 XML 文档的类型。  
   
 > [!NOTE]
->  所有 XML 文档属性均保存在该解决方案中。 因此，下次打开该解决方案时，不必重新输入这些值。  
+> 所有 XML 文档属性均保存在该解决方案中。 因此，下次打开该解决方案时，不必重新输入这些值。  
   
  **编码**  
  文件的字符编码。 更改此属性将同时更改 XML 声明的编码属性，反之亦然。 新编码将用于在保存文件时为文件编码。  

@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438487"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>如何：从 DLL 项目进行调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60102245"
  如果本机代码调用了托管 DLL，而你想对这两者进行调试，则可以在项目属性中指定此项。 有关详细信息，请参阅[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。  
   
 > [!NOTE]
->  不能在 Visual Studio 的 Express 版本中指定外部调用应用程序。 相反，你需要向解决方案添加一个可执行项目，将其设置为启动项目，然后从该可执行项目调用 DLL 中的方法。  
+> 不能在 Visual Studio 的 Express 版本中指定外部调用应用程序。 相反，你需要向解决方案添加一个可执行项目，将其设置为启动项目，然后从该可执行项目调用 DLL 中的方法。  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>在 C++ 项目中指定调用应用程序  
   

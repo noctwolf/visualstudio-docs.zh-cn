@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 893418ca5eb82e9466ea13a12088b38fd496e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438594"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>演练：使用 Windows 窗体收集数据
   本演练演示如何从 Microsoft Office Excel 文档级自定义项打开 Windows 窗体、从用户处收集信息并将这些信息写入工作表单元格。
@@ -37,7 +37,7 @@ ms.locfileid: "60116122"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="create-a-new-project"></a>创建新项目
  第一步是创建一个 Excel 工作簿项目。
@@ -91,7 +91,7 @@ ms.locfileid: "60116122"
 2. 在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件处理程序中，添加以下代码以声明窗体 `GetInputString` 的变量，然后显示窗体。
 
    > [!NOTE]
-   >  在 C# 中，必须如下方 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件中所示添加事件处理程序。 有关创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+   > 在 C# 中，必须如下方 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件中所示添加事件处理程序。 有关创建事件处理程序的信息，请参阅[如何：Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]

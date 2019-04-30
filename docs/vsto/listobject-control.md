@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438792"
 ---
 # <a name="listobject-control"></a>ListObject 控件
   <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是公开事件并且可以绑定到数据的列表。 当将列表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件，你可以直接针对此控件编程而无需遍历 Microsoft Office Excel 对象模型。
@@ -34,13 +34,13 @@ ms.locfileid: "60073627"
  在文档级项目中，可以在设计时或运行时向工作表中添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Excel.ListObject>控件添加到工作表只能在运行时。 有关详细信息，请参阅[如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)。
 
 > [!NOTE]
->  默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="bind-data-to-the-control"></a>将数据绑定到控件
  <xref:Microsoft.Office.Tools.Excel.ListObject> 控件支持简单和复杂数据绑定。 <xref:Microsoft.Office.Tools.Excel.ListObject>控件可以绑定到数据源使用<xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A>并<xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A>在设计时属性或<xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A>方法在运行时。
 
 > [!NOTE]
->  当 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到在数据更改时会引发事件的数据源（如 <xref:System.Data.DataTable>）时，它会自动更新。 如果将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到在数据更改时不会引发事件的数据源，则必须调用 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> 或 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> 方法以更新 <xref:Microsoft.Office.Tools.Excel.ListObject>。
+> 当 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到在数据更改时会引发事件的数据源（如 <xref:System.Data.DataTable>）时，它会自动更新。 如果将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到在数据更改时不会引发事件的数据源，则必须调用 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> 或 <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> 方法以更新 <xref:Microsoft.Office.Tools.Excel.ListObject>。
 
  通过将重复架构元素映射到工作表单元格来将 <xref:Microsoft.Office.Tools.Excel.ListObject> 添加到该单元格时，Visual Studio 会自动将 <xref:Microsoft.Office.Tools.Excel.ListObject> 映射到生成的数据集。 但是， <xref:Microsoft.Office.Tools.Excel.ListObject> 不会自动绑定到数据。 您可以采取措施来绑定<xref:Microsoft.Office.Tools.Excel.ListObject>到在设计时或在运行时在文档级项目中的数据集。 你可以以编程方式将绑定<xref:Microsoft.Office.Tools.Excel.ListObject>到在 VSTO 外接程序中的运行时数据集。
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073627"
  可以通过将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到数据源来快速填充 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 如果在数据绑定 <xref:Microsoft.Office.Tools.Excel.ListObject>中编辑数据，则也会在数据源中自动进行更改。 如果要填充 <xref:Microsoft.Office.Tools.Excel.ListObject> ，然后使用户可以更改 <xref:Microsoft.Office.Tools.Excel.ListObject> 中的数据而无需修改数据源，则可以使用 <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> 方法将 <xref:Microsoft.Office.Tools.Excel.ListObject> 从数据源分离。 有关详细信息，请参阅[如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)。
 
 > [!NOTE]
->  重叠 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件不支持数据绑定。
+> 重叠 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件不支持数据绑定。
 
 ### <a name="improve-performance-in-listobject-controls"></a>提高在 ListObject 控件中的性能
  如果先绑定控件，然后调用 <xref:Microsoft.Office.Tools.Excel.ListObject> 以填充数据集，则将 XML 文件读取到数据绑定 <xref:System.Data.DataSet.ReadXml%2A> 控件中的过程倾向于越来越慢。 要改进性能，请在绑定控件之前调用 <xref:System.Data.DataSet.ReadXml%2A> 。

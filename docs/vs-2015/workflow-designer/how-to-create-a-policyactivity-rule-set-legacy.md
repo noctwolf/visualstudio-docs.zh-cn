@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433573"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>如何：创建 PolicyActivity 规则集（旧版）
 本主题介绍如何使用面向 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 的旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 来创建策略活动规则集。  
@@ -28,7 +28,7 @@ ms.locfileid: "60050774"
  拖动后**策略**活动项从**工具箱**到工作流设计图面上，你将想要选择现有规则或创建新规则集为[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)活动。 选择现有规则集通过使用[选择设置规则对话框 （旧版）](../workflow-designer/select-rule-set-dialog-box-legacy.md)并使用创建规则集[规则设置编辑器对话框 （旧版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)。  
   
 > [!NOTE]
->  您可以打开[规则设置编辑器对话框 （旧版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)直接通过双击对话框[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)是工作流设计图面的活动。  
+> 您可以打开[规则设置编辑器对话框 （旧版）](../workflow-designer/rule-set-editor-dialog-box-legacy.md)直接通过双击对话框[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)是工作流设计图面的活动。  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>为 PolicyActivity 活动选择或创建规则集  
   

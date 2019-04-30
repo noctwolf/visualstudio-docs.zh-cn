@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435445"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙盒解决方案注意事项
   *沙盒解决方案*是使站点集合用户上传自己的自定义代码的解决方案的 Microsoft SharePoint 2010 中的功能。 常见的沙盒解决方案是将 Web 部件添加其自己的用户。
@@ -34,7 +34,7 @@ ms.locfileid: "56621690"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 支持通过布尔项目属性的沙盒解决方案称为*沙盒解决方案*。 可以随时在项目中，设置此属性或可以指定当您创建的项目中**SharePoint 自定义向导**。
 
 > [!NOTE]
->  更改*沙盒解决方案*属性在创建后的项目可能会导致验证错误。
+> 更改*沙盒解决方案*属性在创建后的项目可能会导致验证错误。
 
  该解决方案被视为场范围的解决方案，如果*沙盒解决方案*属性设置为**false**或者选择**部署为场解决方案**选项。 但是，该解决方案不会被视为场解决方案如果*沙盒解决方案*属性设置为**true**或者选择**部署为沙盒解决方案**在向导中的选项。
 

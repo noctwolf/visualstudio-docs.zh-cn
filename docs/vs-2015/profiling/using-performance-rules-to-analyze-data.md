@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7aacae0d5432af6a28e6f134e84d613774b82978
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e0ddfda1e46dc1c5918a4ee1095f39db027bd3fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431601"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>使用性能规则对数据进行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54791974"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具的性能警告指示所分析应用程序中可能会减慢程序执行的问题。 警告还可指示可能需要更改收集方法才能收集更多有用的数据。 性能警告在分析会话中会自动生成。 在 Visual Studio 中打开分析数据文件时，这些警告将显示在“错误列表”窗口中。 从“错误列表”窗口中，可以找到问题的源代码，并且可以显示有关错误的详细信息（如有关如何解决问题的信息）。 还可以禁用不感兴趣的警告。  
   
 > [!NOTE]
->  探查器性能警告由程序执行的动态分析生成，独立于代码分析警告。 代码分析还会基于源代码的静态分析为托管代码生成性能警告。 有关详细信息，请参阅[分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)和[性能警告](../code-quality/performance-warnings.md)。  
+> 探查器性能警告由程序执行的动态分析生成，独立于代码分析警告。 代码分析还会基于源代码的静态分析为托管代码生成性能警告。 有关详细信息，请参阅[分析托管代码质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)和[性能警告](../code-quality/performance-warnings.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：查看性能警告](../profiling/how-to-view-performance-warnings.md)  

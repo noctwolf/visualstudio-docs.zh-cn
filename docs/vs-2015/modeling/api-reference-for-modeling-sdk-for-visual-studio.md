@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e788abb51425e0f2656c10ba860602a36c8aad8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408443"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio 的建模 SDK 的 API 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "58937017"
 Visual Studio 可视化和建模 SDK 提供了你的域特定语言 (DSL) 和 UML 工具生成的平台。
 
 > [!NOTE]
->  有关 UML 建模 API 的信息，请参阅[UML 建模扩展性的 API 参考](../modeling/api-reference-for-uml-modeling-extensibility.md)。 有关文本转换的信息，请参阅[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)。
+> 有关 UML 建模 API 的信息，请参阅[UML 建模扩展性的 API 参考](../modeling/api-reference-for-uml-modeling-extensibility.md)。 有关文本转换的信息，请参阅[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)。
 
  本部分包含具有以"Microsoft.VisualStudio.Modeling"开头的名称的命名空间的参考资料。
 

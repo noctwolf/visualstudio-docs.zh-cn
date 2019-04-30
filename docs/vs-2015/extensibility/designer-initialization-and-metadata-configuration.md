@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439047"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器初始化和元数据配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60049252"
 1. 创建一个对象，实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类。  
   
    > [!NOTE]
-   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类应永远不会在与相同的对象上实现<xref:Microsoft.VisualStudio.Shell.Package>类。  
+   > <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类应永远不会在与相同的对象上实现<xref:Microsoft.VisualStudio.Shell.Package>类。  
   
 2. 注册类实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>作为 VSPackage 的设计器扩展提供支持，通过应用的实例<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>，<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>并<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到提供的 VSPackage 的实现类<xref:Microsoft.VisualStudio.Shell.Package>.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "60049252"
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  在存在时，设计图面上仅支持创建组件，因此只有组件可以使本地元数据。 在上面的示例中，我们已尝试修改一个属性，如`Color`对象的属性。 如果`false`传入的全局标志`CustomBrowser`将永远不会显示，因为在设计器永远不会实际创建的实例`Color`。 全局标志设置为`false`对于组件，如控件、 计时器和对话框很有用。  
+> 在存在时，设计图面上仅支持创建组件，因此只有组件可以使本地元数据。 在上面的示例中，我们已尝试修改一个属性，如`Color`对象的属性。 如果`false`传入的全局标志`CustomBrowser`将永远不会显示，因为在设计器永远不会实际创建的实例`Color`。 全局标志设置为`false`对于组件，如控件、 计时器和对话框很有用。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

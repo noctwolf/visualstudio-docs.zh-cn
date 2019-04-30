@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc54f8a01e1bd8c7a35779fdcec66bcb64d01379
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412850"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 执行一个步骤。
 
 > [!NOTE]
->  已弃用此方法。 使用[步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法相反。
+> 已弃用此方法。 使用[步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法相反。
 
 ## <a name="syntax"></a>语法
 
@@ -63,7 +63,7 @@ int Step( 
  如果没有任何线程同步或线程之间的通信，当特定线程单步执行时应运行程序中的其他线程。
 
 > [!WARNING]
->  不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。
+> 不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

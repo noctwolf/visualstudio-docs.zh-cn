@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436708"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入门：C/C++ 代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60099359"
     2. 默认情况下，代码分析不报告由外部工具自动生成的代码所产生的警告。 若要查看生成的代码，请清除**禁止显示生成代码的结果**复选框。  
   
         > [!NOTE]
-        >  当生成的代码所产生的代码分析错误和警告出现在窗体和模板中时，此选项不会取消显示它们。 可以查看和维护窗体或模板的源代码。  
+        > 当生成的代码所产生的代码分析错误和警告出现在窗体和模板中时，此选项不会取消显示它们。 可以查看和维护窗体或模板的源代码。  
   
 3. 若要运行代码分析，每次使用所选的配置生成项目，选择**于 c 语言时启用代码分析 /C++上生成**复选框。 您可以还手动运行代码分析通过打开**分析**菜单，然后选择**上运行代码分析** *ProjectName*。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60099359"
  了解问题后，可在代码中解决该问题。 然后重新运行代码分析，以确保警告不再显示在“代码分析”窗口中，并且修复未引发新的警告。  
   
 > [!TIP]
->  可从“代码分析”窗口中重新运行代码分析。 选择**分析**按钮，然后选择分析的范围。 可对整个解决方案对所选项目重新运行分析。  
+> 可从“代码分析”窗口中重新运行代码分析。 选择**分析**按钮，然后选择分析的范围。 可对整个解决方案对所选项目重新运行分析。  
   
 ## <a name="BKMK_Suppress"></a>禁止显示代码分析警告  
  有时，你可能会决定不修复代码分析警告。 你可能会觉得与代码的任何真实实现中引发问题的可能性相比，解决警告所需的重新编码工作量过大。 或者，你可能会认为在警告中使用的分析不适合特定的上下文。 可禁止显示个别警告，以使“代码分析”窗口中不再显示这些警告。  

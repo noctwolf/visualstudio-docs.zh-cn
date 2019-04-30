@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424910"
 ---
 # <a name="upgrade-mdf-files"></a>升级 .mdf 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60079903"
   您可能还会提示您升级如果文件的版本与不兼容的 SQL Server Express 或当前已安装的 LocalDB 实例通过早期版本的 SQL Server Express 或 LocalDB 创建一个数据库文件。 若要解决此问题，Visual Studio 将提示你升级该文件。  
   
 > [!IMPORTANT]
->  我们建议在升级之前备份数据库文件。  
+> 我们建议在升级之前备份数据库文件。  
   
 > [!WARNING]
->  如果升级到 LocalDB 2016 (V13) 的 32 位 LocalDB 2014 (V12) 中创建的.mdf 文件时，你将不能以 32 位版本的 LocalDB 中再次打开该文件。  在 Update 2，LocalDB V13 是仅限 64 位。  
+> 如果升级到 LocalDB 2016 (V13) 的 32 位 LocalDB 2014 (V12) 中创建的.mdf 文件时，你将不能以 32 位版本的 LocalDB 中再次打开该文件。  在 Update 2，LocalDB V13 是仅限 64 位。  
   
  将数据库升级之前，请考虑以下条件：  
   

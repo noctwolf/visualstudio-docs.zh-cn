@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435555"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60079599"
 - 创建的项目属性页。  
   
 > [!NOTE]
->  在本演练中的步骤基于 C# 项目。 但是，除了如文件扩展名和代码的详细信息，可以使用相同的步骤对于 Visual Basic 项目。  
+> 在本演练中的步骤基于 C# 项目。 但是，除了如文件扩展名和代码的详细信息，可以使用相同的步骤对于 Visual Basic 项目。  
   
 ## <a name="creating-a-visual-studio-template"></a>创建 Visual Studio 模板  
  [创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)演示如何创建基本项目模板，并将其添加到项目系统。 它还演示如何通过 Visual Studio 注册此模板使用<xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute>属性，它在系统注册表中写入 \Templates\Projects\SimpleProject\ 文件夹的完整路径。  
@@ -100,7 +100,7 @@ ms.locfileid: "60079599"
 - \<ProjectType > 元素中的项目类型命名**新建项目**对话框。 此名称将替换 ProvideProjectFactory 属性的项目名称参数。  
   
   > [!NOTE]
-  >  \<ProjectType > 元素必须匹配`LanguageVsTemplate`自变量的`ProvideProjectFactory`SimpleProjectPackage.cs 文件中的属性。  
+  > \<ProjectType > 元素必须匹配`LanguageVsTemplate`自变量的`ProvideProjectFactory`SimpleProjectPackage.cs 文件中的属性。  
   
   \<TemplateContent > 部分介绍了创建新项目时，将生成这些文件：  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60079599"
   有关 Visual Studio 模板架构中的元素的详细信息，请参阅[Visual Studio 模板架构引用](../extensibility/visual-studio-template-schema-reference.md)。  
   
 > [!NOTE]
->  如果项目具有多个 Visual Studio 模板，每个模板是在单独的文件夹。 在该文件夹中的每个文件必须具有**生成操作**设置为**ZipProject**。  
+> 如果项目具有多个 Visual Studio 模板，每个模板是在单独的文件夹。 在该文件夹中的每个文件必须具有**生成操作**设置为**ZipProject**。  
   
 ## <a name="adding-a-minimal-vsct-file"></a>添加最小.vsct 文件  
  Visual Studio 必须以识别新的或修改 Visual Studio 模板模式下安装程序在运行。 模式下安装程序需要.vsct 文件必须存在。 因此，必须将最小.vsct 文件添加到项目。  

@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403575"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ ms.locfileid: "60099671"
 - [用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  某些版本的 Visual Studio 支持层验证以及代码图和 UML 关系图的只读版本以进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+  > 某些版本的 Visual Studio 支持层验证以及代码图和 UML 关系图的只读版本以进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="UnderstandingCommunicating"></a> 了解和传达系统相关信息  
  由于没有规定 Visual Studio 建模图的使用顺序，因此你可以根据自己的需求和方法来使用它们。 通常，团队会在整个项目中反复而频繁地重新访问其模型。 每个关系图都有自己的长处，可帮助你理解、描述和沟通正在开发的系统的各方面问题。  

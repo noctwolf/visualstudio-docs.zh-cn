@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437151"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：管理在编辑器中的自动换行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60088036"
  有关详细信息，请参阅[如何：设置常规编辑器选项](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="procedure"></a>过程  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60088036"
 4. 如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项。 如果不希望显示这些指示箭头，则清除此复选框。  
   
     > [!NOTE]
-    >  这些提醒箭头不会添加到代码中：它们仅用于显示。  
+    > 这些提醒箭头不会添加到代码中：它们仅用于显示。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义编辑器](../../ide/customizing-the-editor.md)   

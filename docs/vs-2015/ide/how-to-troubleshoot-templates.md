@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246ce82eef63559060c9c4ea4daabd3ae1e5a284
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435124"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：模板故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60079767"
 5. 验证 .vstemplate 文件的 XML 是否遵循 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 模板架构。 有关 .vstemplate 架构的详细信息，请参阅 [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。  
   
     > [!NOTE]
-    >  要在创作 .vstemplate 文件时获得 IntelliSense 支持，请将`xmlns` 属性添加到 `VSTemplate` 元素，并为其赋值 http://schemas.microsoft.com/developer/vstemplate/2005。  
+    > 要在创作 .vstemplate 文件时获得 IntelliSense 支持，请将`xmlns` 属性添加到 `VSTemplate` 元素，并为其赋值 http://schemas.microsoft.com/developer/vstemplate/2005。  
   
 6. 保存并关闭 .vstemplate 文件。  
   

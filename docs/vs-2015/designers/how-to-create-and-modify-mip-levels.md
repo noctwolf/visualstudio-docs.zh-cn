@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434463"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：创建和修改 MIP 级别
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60055088"
 2. 选择想要修改的 MIP 级别后，可以使用绘图工具对其进行修改，而不会更改其他 MIP 级别的内容。 “图像编辑器”工具栏上提供了绘图工具。 选择工具后，可以在“属性”窗口中更改其属性。 有关绘图工具及其属性的信息，请参阅[图像编辑器](../designers/image-editor.md)。  
   
 > [!NOTE]
->  如果无需修改单个 MIP 级别的内容（可能会执行此操作以实现某些效果），建议在生成时从源纹理生成 mipmap。 这有助于确保 MIP 级别与源纹理保持同步，因为对某一 MIP 级别的修改不会自动传播到其他级别。 有关如何在生成时生成 mipmap 的详细信息，请参阅[如何：导出包含 Mipmap 的纹理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。  
+> 如果无需修改单个 MIP 级别的内容（可能会执行此操作以实现某些效果），建议在生成时从源纹理生成 mipmap。 这有助于确保 MIP 级别与源纹理保持同步，因为对某一 MIP 级别的修改不会自动传播到其他级别。 有关如何在生成时生成 mipmap 的详细信息，请参阅[如何：导出包含 Mipmap 的纹理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)

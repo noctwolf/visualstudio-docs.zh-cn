@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427964"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主机项和主机控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。
@@ -113,7 +113,7 @@ ms.locfileid: "56607104"
   您还可以通过将 Windows 窗体控件添加到 Word 和 Excel 文档图面，从而在 Office 解决方案中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
 > [!NOTE]
->  不支持将宿主控件或 Windows 窗体控件添加到 Word 子文档。
+> 不支持将宿主控件或 Windows 窗体控件添加到 Word 子文档。
 
 ### <a name="add-host-controls-to-your-documents"></a>将宿主控件添加到你的文档
  在文档级项目中，你可以在设计时通过以下方式将宿主控件添加到 Word 文档或 Excel 工作表：
@@ -148,7 +148,7 @@ ms.locfileid: "56607104"
  将宿主控件从“工具箱”  拖动到文档时，将自动使用末端尾号递增的控件类型对该控件命名。 例如，书签命名为 **bookmark1**、 **bookmark2**，依此类推。 如果使用 Word 或 Excel 的本机功能来添加控件，你可以在创建此控件时指定特定名称。 也可以通过在“属性”  窗口更改“名称”  属性的值来重命名你的控件。
 
 > [!NOTE]
->  不能使用保留字来命名宿主控件。 例如，如果你将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表，并将名称更改为 **System**，生成项目时将出现错误。
+> 不能使用保留字来命名宿主控件。 例如，如果你将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表，并将名称更改为 **System**，生成项目时将出现错误。
 
 ### <a name="delete-host-controls"></a>删除宿主控件
  在文档级项目中，您可以删除宿主控件在设计时通过选择 Excel 工作表或 Word 文档上的控件并按**删除**密钥。 但是，在 Excel 中必须使用“定义名称”  对话框来删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。
@@ -160,13 +160,13 @@ ms.locfileid: "56607104"
  如果最终用户在运行时从文档删除宿主控件，该解决方案可能会以意外的方式失败。 你可以使用 Word 和 Excel 中的文档保护功能来防止删除宿主控件。 有关详细信息，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。
 
 > [!NOTE]
->  请不要在文档或工作表的 `Shutdown` 事件处理程序过程中以编程方式删除控件。 发生 `Shutdown` 事件时，UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 `BeforeClose` 或 `BeforeSave`。
+> 请不要在文档或工作表的 `Shutdown` 事件处理程序过程中以编程方式删除控件。 发生 `Shutdown` 事件时，UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 `BeforeClose` 或 `BeforeSave`。
 
 ### <a name="program-against-host-control-events"></a>针对宿主控件事件进行编程
  宿主控件扩展 Office 对象的一种方法是通过添加事件。 例如，在 Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 对象和在 Word 中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象不具有事件，但 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 通过添加可编程事件来扩展这些对象。 你可以用访问 Windows 窗体上控件的事件的方式对这些事件进行访问和编码：通过 Visual Basic 中的事件下拉列表和 C# 中的事件属性页。 有关详细信息，请参见[演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。
 
 > [!NOTE]
->  不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 **false** 可防止 Excel 引发任何事件，包括宿主控件的事件。
+> 不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 **false** 可防止 Excel 引发任何事件，包括宿主控件的事件。
 
 ## <a name="see-also"></a>请参阅
 - [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

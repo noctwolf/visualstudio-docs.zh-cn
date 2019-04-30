@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd6adeba6d2c131da10ce028c12c6f50b827444
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440315"
 ---
 # <a name="chart-control"></a>图表控件
   <xref:Microsoft.Office.Tools.Excel.Chart> 控件是公开事件的图表对象。 当将图表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.Chart> 对象，你可以直接针对此对象编程而无需遍历 Microsoft Office Excel 对象模型。
@@ -34,7 +34,7 @@ ms.locfileid: "60088766"
  您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>向在 VSTO 外接程序中的运行时工作表中的控件。 有关详细信息，请参阅[如何：将图表控件添加到工作表](../vsto/how-to-add-chart-controls-to-worksheets.md)。
 
 > [!NOTE]
->  工作表关闭时，动态创建的图表控件不作为主机控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 工作表关闭时，动态创建的图表控件不作为主机控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="formatting"></a>格式化
  可应用于 <xref:Microsoft.Office.Interop.Excel.Chart> 的所有格式设置也可应用于 <xref:Microsoft.Office.Tools.Excel.Chart> 控件。 这包括边框、字体、图表类型、网格线、图例和数据标签。

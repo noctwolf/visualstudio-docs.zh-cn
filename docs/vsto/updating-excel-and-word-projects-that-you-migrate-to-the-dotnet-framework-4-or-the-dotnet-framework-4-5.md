@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1a814e71563f8b31c54fb9caaeb062a505c186e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd80f4a72151fdebb3f0445024963a65db981e63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436473"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Excel 和 Word 项目
   如果你的一个 Excel 或 Word 项目使用以下任何功能，且如果目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须修改你的代码：
@@ -48,7 +48,7 @@ ms.locfileid: "60087243"
 2. 在 C# 的 **“属性”** 节点或在 Visual Basic 的 **“我的项目”** 节点下，双击 AssemblyInfo 代码文件以在代码编辑器中打开它。
 
     > [!NOTE]
-    >  在 Visual Basic 项目中，必须单击 **“解决方案资源管理器”** 中的 **“显示所有文件”** 按钮，才能查看 AssemblyInfo 代码文件。
+    > 在 Visual Basic 项目中，必须单击 **“解决方案资源管理器”** 中的 **“显示所有文件”** 按钮，才能查看 AssemblyInfo 代码文件。
 
 3. 找到 `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` 并且将其从文件中删除或注释掉。
 

@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433290"
 ---
 # <a name="customizing-deletion-behavior"></a>自定义删除行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60107574"
  DSL 定义文件中的选项仅允许你选择是否将删除传播到邻近内容。 若要实现删除传播的更复杂方案，你可以编写程序代码。  
   
 > [!NOTE]
->  若要将程序代码添加到 DSL 定义中，创建单独的代码文件中**Dsl**项目并编写分部定义以生成的代码文件夹中增加类。 有关详细信息，请参阅[编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
+> 若要将程序代码添加到 DSL 定义中，创建单独的代码文件中**Dsl**项目并编写分部定义以生成的代码文件夹中增加类。 有关详细信息，请参阅[编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
 ## <a name="closure"></a> 定义删除闭包  
  删除操作使用该类_YourModel_**DeleteClosure**来确定要删除给定了初始选择的元素。 它将重复调用 `ShouldVisitRelationship()` 和 `ShouldVisitRolePlayer()`，从而遍历这些关系图。 可以重写这些方法。 ShouldVisitRolePlayer 与链接的标识和一个链接角色的元素一起提供。 它应返回以下值之一：  
@@ -213,7 +213,7 @@ partial class Artist
      有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
   
     > [!WARNING]
-    >  已删除某个元素后，可以访问其域属性值，但无法导航关系链接。 但是，如果在关系上设置了 Deleted 事件，则还可以访问作为其角色扮演者的两个元素。 因此，如果想要响应模型元素的删除，但不想要访问它链接到的元素，则在关系上而不是模型元素的域类上设置 Delete 事件。  
+    > 已删除某个元素后，可以访问其域属性值，但无法导航关系链接。 但是，如果在关系上设置了 Deleted 事件，则还可以访问作为其角色扮演者的两个元素。 因此，如果想要响应模型元素的删除，但不想要访问它链接到的元素，则在关系上而不是模型元素的域类上设置 Delete 事件。  
   
 ### <a name="example-deletion-rules"></a>示例 Deletion 规则  
   

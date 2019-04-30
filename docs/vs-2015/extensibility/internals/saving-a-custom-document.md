@@ -12,12 +12,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 443139194a9be59a26a812bd8026270749105a30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d41b075111797a12d68b4aa30c23e3cbacd8058a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432099"
 ---
 # <a name="saving-a-custom-document"></a>保存自定义文档
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60043755"
      对于自定义编辑器中，文档数据对象和项目之间的通信是私有的。 因此，任何特殊的持久性问题被处理这两个对象之间。  
   
     > [!NOTE]
-    >  如果您实现您自己的持久性，请务必调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法来节省时间。 此方法进行检查以确保其安全地保存该文件 （例如，文件不是只读的）。  
+    > 如果您实现您自己的持久性，请务必调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>方法来节省时间。 此方法进行检查以确保其安全地保存该文件 （例如，文件不是只读的）。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417086"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081549"
 本主题包含可帮助你解决某些问题的信息，当使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到这些问题。
 
 > [!WARNING]
->  安装仿真程序时，安装程序将检查运行软件的系统必备组件。 如果系统必备不存在，该程序将发出警告，但不会要求安装这些系统必备组件。
+> 安装仿真程序时，安装程序将检查运行软件的系统必备组件。 如果系统必备不存在，该程序将发出警告，但不会要求安装这些系统必备组件。
 
  本主题包含以下各节：
 
@@ -70,7 +70,7 @@ ms.locfileid: "60081549"
  ![Android_Emu_Install_Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  对于适用于 Android 的 Visual Studio 仿真程序和 Windows Phone 仿真程序，此消息均适用。 Windows 8.1 和 Windows 10 支持仿真程序。
+> 对于适用于 Android 的 Visual Studio 仿真程序和 Windows Phone 仿真程序，此消息均适用。 Windows 8.1 和 Windows 10 支持仿真程序。
 
  如果看到此消息，请查阅 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) ，以查看是否可以运行仿真程序。
 

@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437083"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>利用团队项目签入策略提高代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60103363"
 - **工作项**:需要将一个或多个工作项与签入相关联。  
   
 > [!IMPORTANT]
->  若要使用签入策略，你必须连接到 [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]。  
+> 若要使用签入策略，你必须连接到 [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]。  
   
 ## <a name="common-tasks"></a>常规任务  
   

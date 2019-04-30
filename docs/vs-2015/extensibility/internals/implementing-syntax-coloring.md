@@ -12,12 +12,12 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d2b47598e4102eefaa671fd5f362975aae0f4d53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447275"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60059808"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语法着色的新方法的详细信息，请参阅[演练：突出显示文本](../../extensibility/walkthrough-highlighting-text.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>后跟一个编辑器，用于为文本着色的步骤  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425059"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>将数据从对象保存到数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60074878"
  默认情况下，可以直接对数据库运行的 TableAdapter 上创建 DBDirect 方法。 这些方法可以直接调用，并且不需要<xref:System.Data.DataSet>或<xref:System.Data.DataTable>对象来协调更改即可将更新发送到数据库。  
   
 > [!NOTE]
->  在配置 TableAdapter 时，主查询必须提供足够的信息供 DBDirect 方法创建。 例如，如果 TableAdapter 查询的数据配置不具有定义的主键列的表中，它不生成 DBDirect 方法。  
+> 在配置 TableAdapter 时，主查询必须提供足够的信息供 DBDirect 方法创建。 例如，如果 TableAdapter 查询的数据配置不具有定义的主键列的表中，它不生成 DBDirect 方法。  
   
 |TableAdapter DBDirect 方法|描述|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ ms.locfileid: "60074878"
 - 通过调用修改记录`TableAdapter.Update`方法，传入新值更新记录，并传入要找到的记录的原始值。  
   
     > [!NOTE]
-    >  您的对象需要维护的原始值，以便将它们传递给`Update`方法。 此示例使用属性与`orig`前缀来存储原始值。  
+    > 您的对象需要维护的原始值，以便将它们传递给`Update`方法。 此示例使用属性与`orig`前缀来存储原始值。  
   
      下面的示例更新中的现有记录`Customers`表中的新的和原始值传递`Customer`对象传递给`TableAdapter.Update`方法。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "60074878"
 - 通过调用删除记录`TableAdapter.Delete`方法并传入要找到的记录的原始值。  
   
     > [!NOTE]
-    >  您的对象需要维护的原始值，以便将它们传递给`Delete`方法。 此示例使用属性与`orig`前缀来存储原始值。  
+    > 您的对象需要维护的原始值，以便将它们传递给`Delete`方法。 此示例使用属性与`orig`前缀来存储原始值。  
   
      以下示例将删除来自`Customers`表中的原始值表示通过`Customer`对象传递给`TableAdapter.Delete`方法。  
   

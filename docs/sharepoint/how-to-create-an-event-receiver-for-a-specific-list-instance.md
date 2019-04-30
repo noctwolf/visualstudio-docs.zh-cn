@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408559"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：创建事件接收器的特定列表实例
   列表实例事件接收方响应的列表定义的任何实例中发生的事件。 虽然事件接收方模板不会启用特定列表实例的目标，你可修改的范围限定为列表定义以响应特定列表实例中的事件的事件接收器。
@@ -43,7 +43,7 @@ ms.locfileid: "60094341"
 6. 在中**所需哪种类型的事件接收器？** 列表中，选择**列表项事件**。
 
     > [!NOTE]
-    >  您还可以选择任何其他类型的范围限于列表定义，例如，事件接收器**列出的电子邮件事件**或**列出的工作流事件**。
+    > 您还可以选择任何其他类型的范围限于列表定义，例如，事件接收器**列出的电子邮件事件**或**列出的工作流事件**。
 
 7. 在中**哪个项应为事件源？** 列表中，选择**公告**。
 

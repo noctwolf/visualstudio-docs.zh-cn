@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03c039d0059e3e5768681ece9bb547b0f4eb7783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432753"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：创建分析工具调用跟踪报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117819"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具的调用跟踪报告将列出应用程序函数每个入口点和出口点的计时信息，以及该函数对其他函数的每次调用的计时信息。 仅当使用检测方法收集时，调用跟踪报告才可用于分析数据。  
   
 > [!NOTE]
->  不能在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中显示调用跟踪报告。 必须使用 VSPerfReport 命令行工具才能生成逗号分隔值 (.csv) 或 XML 文件。 有关此工具的详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
+> 不能在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中显示调用跟踪报告。 必须使用 VSPerfReport 命令行工具才能生成逗号分隔值 (.csv) 或 XML 文件。 有关此工具的详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
   
 ### <a name="to-create-a-call-trace-report"></a>创建调用跟踪报告  
   

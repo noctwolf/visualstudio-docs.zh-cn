@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3168a53ca503a60a8aa5009d02a0f3a4d72b94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d9705555ad76663e1fb1bc402d5b050649d934ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411188"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>实现类型可视化工具和自定义查看器
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  类型可视化工具和自定义查看器允许用户查看特定类型的数据是比简单的十六进制转储的数字更有意义的方式。 表达式计算器 (EE) 可以将自定义查看器与特定类型的数据或变量相关联。 EE 通过实现这些自定义查看器。 EE 还可以支持外部类型可视化工具，可能来自另一个第三方供应商或最终用户也是如此。
 

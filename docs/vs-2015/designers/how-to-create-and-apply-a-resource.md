@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434475"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
    - 将样式或控件模板资源应用于控件。 在“文档大纲”窗口中打开某个控件的上下文菜单，选择“编辑模板”或“编辑其他模板”，选择“应用资源”，然后从显示的列表中选择控件模板的名称。  
   
      > [!NOTE]
-     >  “编辑模板”用于应用控件模板。 “编辑其他模板”用于应用其他模板类型。  
+     > “编辑模板”用于应用控件模板。 “编辑其他模板”用于应用其他模板类型。  
   
      资源可应用于兼容的任何位置。 例如，画笔资源可应用于 <xref:Windows.UI.Xaml.Controls.TextBox> 控件的“前景”属性。  
   

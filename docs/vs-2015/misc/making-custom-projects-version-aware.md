@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422728"
 ---
 # <a name="making-custom-projects-version-aware"></a>使自定义项目版本可区别
 在自定义项目系统中，你可以允许在多个版本的 Visual Studio 中加载该类型的项目。 也可以阻止在早期版本的 Visual Studio 中加载该类型的项目。 还可以使该项目将其自身标识为较新版本，以防该项目需要修复、转换或弃用。  
@@ -37,7 +37,7 @@ ms.locfileid: "60096590"
 6. `VSPUVF_PROJECT_DEPRECATED`：指示此项目不再受支持。  
   
 > [!NOTE]
->  为避免混淆，设置升级标志时请勿将其合并。 例如，请勿创建 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`等不明确的升级状态。  
+> 为避免混淆，设置升级标志时请勿将其合并。 例如，请勿创建 `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`等不明确的升级状态。  
   
  项目风格可能从 `UpgradeProjectFlavor_CheckOnly` 接口实现函数 `IVsProjectFlavorUpgradeViaFactory2` 。 若要使此函数生效，则前述 `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` 实现必须调用该函数。 已在 Visual Basic 或 C# 基本项目系统中实现此调用。 此函数使得在基本项目系统已确定的升级需求之外，项目风格也能确定项目的升级需求。 兼容性对话框将显示这两个要求中较严格者。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60096590"
      如果你实现此代码，则将出现项目兼容性对话框。 该对话框将会要求用户允许将所有指定项目标记为不兼容。 如果用户同意，则 `AskForUserConsentToBreakAssetCompat` 将返回 `S_OK`；否则 `AskForUserConsentToBreakAssetCompat` 将返回 `OLE_E_PROMPTSAVECANCELLED`。  
   
     > [!WARNING]
-    >  在最常见的情况下， `IVsHierarchy` 数组将仅包含一个项。  
+    > 在最常见的情况下， `IVsHierarchy` 数组将仅包含一个项。  
   
 3. 如果 `AskForUserConsentToBreakAssetCompat` 返回 `S_OK`，则该组件将做出或接受破坏兼容性的更改。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "60096590"
      有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>。  
   
 > [!IMPORTANT]
->  必须实现 `VSHPROPID_MinimumDesignTimeCompatVersion` 属性以将项目标记为兼容或不兼容。 例如，如果项目系统使用 MSBuild 项目文件，请向项目文件添加一个具有与相应 `<MinimumVisualStudioVersion>` 属性值的相等的值的生成属性 `VSHPROPID_MinimumDesignTimeCompatVersion` 。  
+> 必须实现 `VSHPROPID_MinimumDesignTimeCompatVersion` 属性以将项目标记为兼容或不兼容。 例如，如果项目系统使用 MSBuild 项目文件，请向项目文件添加一个具有与相应 `<MinimumVisualStudioVersion>` 属性值的相等的值的生成属性 `VSHPROPID_MinimumDesignTimeCompatVersion` 。  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>检测项目是否不兼容  
  必须阻止加载与当前版本的 Visual Studio 不兼容的项目。 而且，不能对不兼容的项目进行升级或修复。 因此，必须两次检查项目的兼容性：第一次在考虑进行升级或修复时，第二次在加载之前。  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新实现让你可以更精确地指定迁移类型。  
   
 > [!NOTE]
->  可以缓存 `UpgradeProject_CheckOnly` 方法所进行兼容性检查的结果，以供对 `CreateProject`的后续调用使用。  
+> 可以缓存 `UpgradeProject_CheckOnly` 方法所进行兼容性检查的结果，以供对 `CreateProject`的后续调用使用。  
   
  例如，如果为带有 SP1 的 `UpgradeProject_CheckOnly` 项目系统编写的 `CreateProject` 和 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 方法检查项目文件并发现 `<MinimumVisualStudioVersion>` 版本属性为“11.0”，则带有 SP1 的 Visual Studio 2010 不会加载该项目。 此外，“解决方案导航器”  将指示该项目为“不兼容”，并且不会加载它。  
   

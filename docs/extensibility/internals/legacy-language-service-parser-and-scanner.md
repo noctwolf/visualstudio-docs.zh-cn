@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418378"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要一个语言分析器，以选择要显示的代码有关的信息。 分析器将文本分隔成词法标记，然后确定这些令牌的类型和功能。
@@ -66,7 +66,7 @@ namespace MyNamespace
  与不同的编译器 （其中令牌转换为某种形式的可执行代码） 的一部分使用的分析器，原因有多种不同，在许多不同的上下文中，可以调用语言服务分析器。 如何实现在这种方法<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类是由您决定。 务必要记住的<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>可能会在后台线程上调用方法。
 
 > [!CAUTION]
->  <xref:Microsoft.VisualStudio.Package.ParseRequest>结构包含对引用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>对象。 这<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>对象不能使用在后台线程中。 事实上，许多 MPF 基类不能在后台线程中使用。 其中包括<xref:Microsoft.VisualStudio.Package.Source>， <xref:Microsoft.VisualStudio.Package.ViewFilter>，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>类和其他任何直接或间接与视图进行通信的类。
+> <xref:Microsoft.VisualStudio.Package.ParseRequest>结构包含对引用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>对象。 这<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>对象不能使用在后台线程中。 事实上，许多 MPF 基类不能在后台线程中使用。 其中包括<xref:Microsoft.VisualStudio.Package.Source>， <xref:Microsoft.VisualStudio.Package.ViewFilter>，<xref:Microsoft.VisualStudio.Package.CodeWindowManager>类和其他任何直接或间接与视图进行通信的类。
 
  此分析器通常分析整个源文件第一个时间调用它或分析时原因的值<xref:Microsoft.VisualStudio.Package.ParseReason>提供。 对后续调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法处理的已分析的代码的一小部分，并可以通过使用上一个完整的分析操作的结果更加迅速地执行。 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法来传递通过分析操作的结果<xref:Microsoft.VisualStudio.Package.AuthoringSink>和<xref:Microsoft.VisualStudio.Package.AuthoringScope>对象。 <xref:Microsoft.VisualStudio.Package.AuthoringSink>对象用于为特定的分析原因，例如，span 的信息匹配大括号或具有参数列表的方法签名中收集信息。 <xref:Microsoft.VisualStudio.Package.AuthoringScope>提供的声明和方法签名以及支持集合对于转到高级的编辑选项 (**转到定义**，**转到声明**，**转到引用**)。
 

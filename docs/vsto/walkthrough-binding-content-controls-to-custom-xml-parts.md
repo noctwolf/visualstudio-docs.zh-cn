@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52366cc268335df98da53701e5cde283c67a022d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438707"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>演练：将内容控件绑定到自定义 XML 部件
   本演练演示如何将对 Word 的文档级自定义项中的内容控件绑定到存储在文档中的 XML 数据。
@@ -85,7 +85,7 @@ ms.locfileid: "60041613"
 5. 在功能区中，选择**开发人员**选项卡。
 
    > [!NOTE]
-   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+   > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 6. 在中**控件**组中，选择**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。
 

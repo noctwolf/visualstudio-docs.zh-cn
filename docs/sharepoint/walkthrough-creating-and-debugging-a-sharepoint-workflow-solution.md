@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430368"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>演练：创建和调试 SharePoint 工作流解决方案
   本演练演示如何创建一个基本顺序工作流模板。 工作流检查以确定文档是否已评审的共享的文档库的属性。 如果已查看过该文档，则工作流完成。
@@ -35,9 +35,9 @@ ms.locfileid: "60109551"
 - 处理工作流活动事件。
 
 > [!NOTE]
->  尽管本演练使用顺序工作流项目，该过程是相同的状态机工作流项目。
+> 尽管本演练使用顺序工作流项目，该过程是相同的状态机工作流项目。
 >
->  此外，您的计算机可能会显示不同的名称或位置的某些 Visual Studio 用户界面元素中的以下说明进行操作。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 此外，您的计算机可能会显示不同的名称或位置的某些 Visual Studio 用户界面元素中的以下说明进行操作。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：

@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425903"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60050395"
   你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
   
 > [!NOTE]
->  你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
+> 你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
   
  本主题概述了 MSBuild。 有关介绍性教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
@@ -83,7 +83,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  有关 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 命令行选项的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!IMPORTANT]
->  在下载项目之前，请确定代码的可信度。  
+> 在下载项目之前，请确定代码的可信度。  
   
 ## <a name="BKMK_ProjectFile"></a>项目文件  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 使用基于 XML 的项目文件格式，既简单又可扩展。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目文件格式允许开发者描述要生成的项，以及如何针对不同的操作系统和配置生成这些项。 另外，这种项目文件格式还允许开发人员创作可重用的生成规则，这些规则可以包含到不同的文件中，以便可以在产品内的不同项目之间一致地执行生成。  
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Title|描述|  
 |-----------|-----------------|  
-|[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|  
+|[演练：从头创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|  
 |[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio IDE 的情况下编写、操作和调试 MSBuild 项目。|  
 |[MSBuild 概念](../msbuild/msbuild-concepts.md)|演示 MSBuild 的四个生成块：属性、项、目标和任务。|  
 |[项](../msbuild/msbuild-items.md)|介绍 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 文件格式背后的常规概念，以及所有这些概念之间的关系。|  

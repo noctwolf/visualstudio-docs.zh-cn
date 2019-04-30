@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419705"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：脱机时或者在服务器上缓存数据以供使用
   您可以将标记数据项目，在文档中，缓存，以便可脱机。 这还使得数据中的服务器上存储的文档时，其他代码要操作的文档。
@@ -32,7 +32,7 @@ ms.locfileid: "60094536"
  可以将标记数据项目，在代码中，声明数据项时或者如果正在使用缓存<xref:System.Data.DataSet>，通过设置属性以**属性**窗口。 如果要缓存不是数据项<xref:System.Data.DataSet>或<xref:System.Data.DataTable>，确保其满足缓存到文档中的条件。 有关详细信息，请参阅[缓存数据](../vsto/caching-data.md)。
 
 > [!NOTE]
->  使用 Visual Basic 中标记为创建的数据集**Cached**并**WithEvents** (包括从拖动的数据集**数据源**窗口或**工具箱**具有**CacheInDocument**属性设置为**True**) 具有下划线的缓存中名称的前缀。 例如，如果您创建数据集并将其命名**客户**，则<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名称将是 **_Customers**缓存中。 当你使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>若要访问此缓存的项，必须指定 **_Customers**而不是**客户**。
+> 使用 Visual Basic 中标记为创建的数据集**Cached**并**WithEvents** (包括从拖动的数据集**数据源**窗口或**工具箱**具有**CacheInDocument**属性设置为**True**) 具有下划线的缓存中名称的前缀。 例如，如果您创建数据集并将其命名**客户**，则<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>名称将是 **_Customers**缓存中。 当你使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>若要访问此缓存的项，必须指定 **_Customers**而不是**客户**。
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>使用代码在文档中的缓存数据
 

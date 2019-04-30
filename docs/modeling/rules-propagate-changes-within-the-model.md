@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437409"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 可以创建将更改传播从一个元素到另一个可视化和建模 SDK (VMSDK) 中的存储规则。 在存储区中的任何元素更改时，规则计划执行，通常在最外部事务提交时。 有不同类型的规则对于不同类型的事件，如添加一个元素，或删除它。 可以将规则附加到特定类型的元素、 形状或关系图。 许多内置功能由规则定义： 例如，规则可确保在模型更改时，更新关系图。 可以添加自己的规则来自定义您的特定于域的语言。
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  规则的代码应更改仅的商店; 内的元素的状态也就是说，该规则应更改仅模型元素、 关系、 形状、 连接器、 关系图或它们的属性。 如果你想要将更改传播到应用商店以外的资源，定义存储事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> 规则的代码应更改仅的商店; 内的元素的状态也就是说，该规则应更改仅模型元素、 关系、 形状、 连接器、 关系图或它们的属性。 如果你想要将更改传播到应用商店以外的资源，定义存储事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>若要定义规则
 

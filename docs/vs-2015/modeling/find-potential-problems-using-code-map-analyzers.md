@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db54fef40914dc234f507935a646292eb8d4914e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cd771cf35ef684edd8d5c9dd82436759ec9443a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437503"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用代码图分析器查找潜在问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58937808"
    在你应用代码图分析器之后，它们将继续运行。 如果更改代码图，应用的任何分析器将自动重新处理更新的代码图。 若要停止运行分析器，请在代码图的工具栏上，依次选择“布局” 、“分析器” 。 关闭所选的分析器。  
   
 > [!TIP]
->  如果你的代码图非常大，运行分析器则可能导致内存不足异常。 如果发生这种情况，请编辑代码图以减小其范围，或者生成一个较小的代码图，然后运行分析器。  
+> 如果你的代码图非常大，运行分析器则可能导致内存不足异常。 如果发生这种情况，请编辑代码图以减小其范围，或者生成一个较小的代码图，然后运行分析器。  
   
 ## <a name="see-also"></a>请参阅  
  [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)   

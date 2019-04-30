@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436923"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048654"
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。  
   
 > [!IMPORTANT]
->  Visual Studio 2015 可以加载 Visual Studio 2010、 Visual Studio 2012 或 Visual Studio 2013 格式的 VSIX 文件。  
+> Visual Studio 2015 可以加载 Visual Studio 2010、 Visual Studio 2012 或 Visual Studio 2013 格式的 VSIX 文件。  
   
 ## <a name="package-manifest-schema"></a>包清单架构  
  清单 XML 文件的根元素是`<PackageManifest>`，使用单个属性`Version`，即清单格式的版本。 如果对格式进行了重大更改，将更改的版本格式。 本主题介绍了清单格式版本 2.0 中，通过设置指定在清单中`Version`属性值版本 ="2.0"。  
@@ -129,7 +129,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
         - 单个版本 #-指定的版本。  
   
         > [!IMPORTANT]
-        >  在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。  
+        > 在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。  
   
     - `AnyAttribute*` –`<InstallationTarget>`元素允许的属性将公开在运行时作为名称 / 值对字典的开放式集。  
   

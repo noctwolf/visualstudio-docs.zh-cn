@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440078"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式说明符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60116207"
  还可在“即时”  窗口、“命令”  窗口甚至是源窗口中使用格式说明符。 如果将鼠标悬停在这些窗口中的表达式上，结果将在数据提示中显示。 “数据提示”显示格式说明符。  
   
 > [!NOTE]
->  更改到新调试引擎的 Visual Studio 本机调试器。 作为此更改的一部分，添加了一些新的格式说明符，删除了一些旧的格式说明符。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。 本主题的以下各部分介绍每种调试引擎的格式说明符。  
+> 更改到新调试引擎的 Visual Studio 本机调试器。 作为此更改的一部分，添加了一些新的格式说明符，删除了一些旧的格式说明符。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。 本主题的以下各部分介绍每种调试引擎的格式说明符。  
 > 
 > - [格式说明符](#BKMK_Visual_Studio_2012_format_specifiers) 描述新的调试引擎中的格式说明符。  
 >   - [使用 C++/CLI 的互操作调试的格式说明符](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述较早的调试引擎中的格式说明符。  
@@ -92,7 +92,7 @@ int main() {
 |!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|  
   
 > [!NOTE]
->  如果存在“hv”  格式说明符，调试器会尝试确定缓冲区的长度并显示相应的元素数。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 “Hv”  格式说明符用于缓冲区大小尚不可使用的情况。  
+> 如果存在“hv”  格式说明符，调试器会尝试确定缓冲区的长度并显示相应的元素数。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 “Hv”  格式说明符用于缓冲区大小尚不可使用的情况。  
   
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 指针的大小说明符作为数组  
  如果有一个指针指向要以数组形式查看的对象，则可以使用一个整数或表达式来指定数组中元素的数量：  

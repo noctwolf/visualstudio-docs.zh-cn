@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432136"
 ---
 # <a name="editor-imports"></a>编辑器导入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58934587"
  若要使用的编辑器导入，则其作为导入的字段或属性的类的导出 Managed Extensibility Framework 组件部件。  
   
 > [!NOTE]
->  有关托管可扩展性框架的详细信息，请参阅[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 有关托管可扩展性框架的详细信息，请参阅[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ## <a name="import-syntax"></a>导入语法  
  下面的示例演示如何导入编辑器选项工厂服务。  
@@ -44,13 +44,13 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  使用导入更多示例，请参阅以下演练：  
   
- [演练：创建边缘字形](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [演练：创建边距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [演练：自定义文本视图](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)  
   
- [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [演练：显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
   

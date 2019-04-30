@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411359"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>创建可重用的按钮的组
 命令组是始终一起出现的菜单或工具栏的命令的集合。 可通过将其分配到不同的父菜单的 CommandPlacements 部分中重复使用任何命令组 *.vsct*文件。
@@ -81,7 +81,7 @@ ms.locfileid: "60051656"
     ```
 
     > [!NOTE]
-    >  优先级字段的值确定该命令在新的命令组中的位置。 在元素中的项定义设置会覆盖的 CommandPlacement 中设置优先级。 在具有较高优先级值的命令之前将显示具有较低优先级值的命令。 允许使用重复的优先级值，但不能保证具有相同的优先级值的命令的相对位置，因为依据的顺序**devenv /setup**命令从注册表中创建的最后一个接口可能不一致。
+    > 优先级字段的值确定该命令在新的命令组中的位置。 在元素中的项定义设置会覆盖的 CommandPlacement 中设置优先级。 在具有较高优先级值的命令之前将显示具有较低优先级值的命令。 允许使用重复的优先级值，但不能保证具有相同的优先级值的命令的相对位置，因为依据的顺序**devenv /setup**命令从注册表中创建的最后一个接口可能不一致。
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>将在菜单上的一组可重用按钮
 

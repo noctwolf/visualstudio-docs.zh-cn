@@ -37,12 +37,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426336"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "54756873"
  若要查找和替换正则表达式，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。  
   
 > [!TIP]
->  “查找/命令”框仍可用作工具栏控件，但不再默认可见。 通过在“标准”工具栏上选择“添加或删除按钮”，然后选择“查找”，即可显示“查找/命令”框。 有关详细信息，请参阅[“查找/命令”框](../ide/find-command-box.md)。  
+> “查找/命令”框仍可用作工具栏控件，但不再默认可见。 通过在“标准”工具栏上选择“添加或删除按钮”，然后选择“查找”，即可显示“查找/命令”框。 有关详细信息，请参阅[“查找/命令”框](../ide/find-command-box.md)。  
   
 ## <a name="find-and-replace-control"></a>“查找和替换”控件  
  “查找和替换”控件显示在代码编辑器窗口的右上角。 “查找和替换”控件会立即突出显示给定搜索字符串在当前文档中的每个匹配项。 通过在搜索控件上选择“查找下一个”按钮或“查找上一个”按钮，可以从一个匹配项导航到另一个匹配项。  

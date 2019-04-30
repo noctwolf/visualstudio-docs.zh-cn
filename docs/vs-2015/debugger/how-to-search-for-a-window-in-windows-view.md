@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9d7a64191db82d5fb0b82518d3db1cf1eb1e0ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439067"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在窗口视图中搜索窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113028"
      [窗口搜索对话框](../debugger/window-search-dialog-box.md)随即打开。  
   
     > [!TIP]
-    >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏 Spy + + 主窗口，仅留下**窗口搜索**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。  
+    > 若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏 Spy + + 主窗口，仅留下**窗口搜索**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。  
   
 3. 拖动**查找程序工具**通过目标窗口。 拖动该工具中，**窗口搜索**对话框显示有关所选的窗口的详细信息。  
   

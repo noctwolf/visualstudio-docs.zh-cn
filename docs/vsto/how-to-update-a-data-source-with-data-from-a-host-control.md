@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421018"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主机控件中的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：
@@ -61,7 +61,7 @@ ms.locfileid: "60097487"
    - 若要更新的数据源控件的数据绑定属性的值更改时，将此属性设置为 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged。
 
      > [!NOTE]
-     >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 选项不适用于 Word 主机控件，因为 Word 不提供文档更改或控件更改通知。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
+     > System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 选项不适用于 Word 主机控件，因为 Word 不提供文档更改或控件更改通知。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
 
      下面的示例将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件配置为当该控件中的值更改时自动更新数据源。 此示例假定你有一个名为 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097487"
     - 若要在控件的数据绑定属性值更改时更新数据源，请选择“OnPropertyChanged” 。
 
         > [!NOTE]
-        >  因为 Word 不提供文档更改或控件更改通知，所以“OnPropertyChanged”  选项不适用于 Word 宿主控件。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
+        > 因为 Word 不提供文档更改或控件更改通知，所以“OnPropertyChanged”  选项不适用于 Word 宿主控件。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
 
 6. 关闭“格式设置和高级绑定”  对话框。
 

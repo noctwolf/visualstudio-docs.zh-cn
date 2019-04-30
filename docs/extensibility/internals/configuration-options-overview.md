@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415152"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 中的项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支持多个可以生成、 调试、 运行，和/或已部署的配置。 配置是使用属性、 通常编译器开关和文件位置的命名集所述的生成类型。 默认情况下，新的解决方案包含两个配置*调试*并*发行*。 可以使用其默认设置，或修改以满足您特定的解决方案和/或项目要求应用这些配置。 某些包可以生成两种方式： 作为一个 ActiveX 编辑器，或作为就地组件。 项目不需要支持多个配置，但是。 如果没有可用的只有一个配置，则该配置映射到的所有解决方案配置。
@@ -33,10 +33,10 @@ ms.locfileid: "56605089"
 |------------------------|----------------------|----------------------|
 |*调试*|\<调试 Win32 设置 >|\<调试 Win64 设置 >|
 |*发布*|\<发布 Win32 设置 >|\<发布 Win64 设置 >|
-|*MyConfig*|不可用|\<MyConfig Win64 设置 >|
+|*MyConfig*|不适用|\<MyConfig Win64 设置 >|
 
 > [!NOTE]
->  无法创建*MyConfig*排除 Win32 平台，除非面向项目的解决方案配置不支持 Win32。
+> 无法创建*MyConfig*排除 Win32 平台，除非面向项目的解决方案配置不支持 Win32。
 
  更改活动解决方案配置该解决方案中选择一的生成、 运行、 调试，或部署的项目配置。 例如，如果您更改活动解决方案配置从*发行*到*调试*，使用所示的项目的配置中自动生成该解决方案中的所有项目解决方案的调试配置。 项目的配置的命名也*调试*除非用户已手动更改环境的配置管理器中。
 

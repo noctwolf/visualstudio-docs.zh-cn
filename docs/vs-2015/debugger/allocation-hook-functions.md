@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8d2aff47737443b998cfae8d16c3d95a5eb1d2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439941"
 ---
 # <a name="allocation-hook-functions"></a>分配挂钩函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58936778"
 分配挂钩函数，使用安装[_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d)，每次分配、 重新分配或释放内存时调用。 该类型的挂钩可用于很多不同用途。 例如，可用它测试应用程序处理内存不足情况的方式，检查分配模式，或记录分配信息以供将来分析。  
   
 > [!NOTE]
->  注意有关在分配挂钩函数中使用 C 运行库函数的限制，详见[分配挂钩和 C 运行时内存分配](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)中的说明。  
+> 注意有关在分配挂钩函数中使用 C 运行库函数的限制，详见[分配挂钩和 C 运行时内存分配](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)中的说明。  
   
  分配挂钩函数应有类似下面的原型：  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5178ff7becc318b4f5b796046118bccb83129a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433783"
 ---
 # <a name="c-library-reference"></a>C 库参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54797007"
 此节包含并发可视化工具 SDK 的参考信息。  
   
 > [!NOTE]
->  C 语言标准将以下划线 (`_`) 字符开头的标识符保留，供实现（例如，库）使用。 请勿在代码中使用以下划线开头的名称。 其名称遵循此约定的代码元素的行为尚未得到保证，在将来发布的版本中可能会有更改。 出于这些原因，此文档中省略了此类代码元素。  
+> C 语言标准将以下划线 (`_`) 字符开头的标识符保留，供实现（例如，库）使用。 请勿在代码中使用以下划线开头的名称。 其名称遵循此约定的代码元素的行为尚未得到保证，在将来发布的版本中可能会有更改。 出于这些原因，此文档中省略了此类代码元素。  
   
 ## <a name="in-this-section"></a>本节内容  
  [CvCreateDefaultMarkerSeriesOfDefaultProvider 函数](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  

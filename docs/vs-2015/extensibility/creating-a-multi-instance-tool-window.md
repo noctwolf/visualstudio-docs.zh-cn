@@ -11,12 +11,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fa0acb706d0b5cb6a37578ab6cb7b707850c5949
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dcdfe3f6e488514bb2ee1ca950e952b16039b42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433839"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>创建多实例工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60070623"
 1. 创建一个名为项目**MultiInstanceToolWindow**使用 VSIX 模板，并添加一个名为的自定义工具窗口项模板**MIToolWindow**。  
   
     > [!NOTE]
-    >  有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+    > 有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="making-a-tool-window-multi-instance"></a>使工具窗口的多实例  
   

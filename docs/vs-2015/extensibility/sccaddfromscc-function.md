@@ -12,12 +12,12 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 346a036d38c7ee86daf30320c5f454f9e807f7d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432494"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功，文件已位于和添加到项目中。|  
 |SCC_I_OPERATIONCANCELED|操作已取消使用任何影响。|  
@@ -67,7 +67,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` 是`char ***`指针。 源代码管理插件将放置到指向文件的名称，因此将列表中的标准方法传递此 api 的指针的数组的指针。  
   
 > [!NOTE]
->  VSSCI API 的初始版本未提供一种方法，以指示添加的文件的目标项目。 为了满足这一点的语义`lplpFIleNames`参数已得到增强，使其输入/输出参数而不是输出参数。 如果仅指定单个文件，即指向的值由`lpnFiles`= 1，则第一个元素的`lplpFileNames`包含目标文件夹。 若要使用这些新的语义，IDE 调用`SccSetOption`函数与`nOption`参数设置为`SCC_OPT_SHARESUBPROJ`。 如果源代码管理插件不支持语义，它将返回`SCC_E_OPTNOTSUPPORTED`。 执行使用的是禁用**从源代码管理添加**功能。 如果插件支持**从源代码管理中的添加**功能 (`SCC_CAP_ADDFROMSCC`)，则它必须支持新的语义，并返回`SCC_I_SHARESUBPROJOK`。  
+> VSSCI API 的初始版本未提供一种方法，以指示添加的文件的目标项目。 为了满足这一点的语义`lplpFIleNames`参数已得到增强，使其输入/输出参数而不是输出参数。 如果仅指定单个文件，即指向的值由`lpnFiles`= 1，则第一个元素的`lplpFileNames`包含目标文件夹。 若要使用这些新的语义，IDE 调用`SccSetOption`函数与`nOption`参数设置为`SCC_OPT_SHARESUBPROJ`。 如果源代码管理插件不支持语义，它将返回`SCC_E_OPTNOTSUPPORTED`。 执行使用的是禁用**从源代码管理添加**功能。 如果插件支持**从源代码管理中的添加**功能 (`SCC_CAP_ADDFROMSCC`)，则它必须支持新的语义，并返回`SCC_I_SHARESUBPROJOK`。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

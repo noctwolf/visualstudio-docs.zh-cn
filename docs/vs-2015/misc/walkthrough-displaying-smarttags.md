@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436515"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>演练：显示智能标记
 为支持灯泡已弃用智能标记。 请参阅[演练：显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)。  
@@ -24,7 +24,7 @@ ms.locfileid: "60110435"
  虽然智能标记是编辑器中 IntelliSense 实现的一部分，但是你可以通过子类化 <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>，然后实现 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> 接口和 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 接口来实现智能标记。  
   
 > [!NOTE]
->  可以采用类似的方式实现其他类型的标记。  
+> 可以采用类似的方式实现其他类型的标记。  
   
  下面的演练演示如何创建一个智能标记，将显示在当前单词上并且具有两个建议的操作：**将转换为大写**并**转换为小写**。  
   
@@ -183,4 +183,4 @@ ms.locfileid: "60110435"
 5. 当单击按钮时，应显示两个建议的操作：**将转换为大写**并**转换为小写**。 如果单击第一个操作，则当前单词中的所有文本都将转换为大写。 如果单击第二个操作，则所有文本都将转换为小写。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

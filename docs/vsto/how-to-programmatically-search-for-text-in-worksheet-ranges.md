@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419550"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何：以编程方式在工作表范围内搜索文本
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>对象可用于搜索的范围内的文本。 此文本也可以是任何错误字符串，如出现在工作表单元格`#NULL!`或`#VALUE!`。 有关错误字符串的详细信息，请参阅[单元格错误值](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)。
@@ -29,7 +29,7 @@ ms.locfileid: "56616971"
  下面的示例名为某个范围中搜索`Fruits`并修改的单元格包含单词"apples"的字体。 此过程还使用<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法，它使用先前设置搜索设置重复搜索。 指定在其搜索之后, 该单元格和<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法处理其余部分。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>后到达范围末尾的操作方法的搜索会返回到搜索范围的开头。 你的代码必须确保搜索不会不环绕在周围的无限循环。 示例过程显示了一种方法来处理这种使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>属性。
+> <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>后到达范围末尾的操作方法的搜索会返回到搜索范围的开头。 你的代码必须确保搜索不会不环绕在周围的无限循环。 示例过程显示了一种方法来处理这种使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>属性。
 
  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：在 Excel 外接程序中使用 Find 方法？](http://go.microsoft.com/fwlink/?LinkID=130294).
 

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424690"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练：使用单表继承创建 LINQ to SQL 类（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60111969"
 1. 在中**服务器资源管理器**/**数据库资源管理器**，右键单击**表**节点，然后单击**添加新表**。  
   
     > [!NOTE]
-    >  可以使用 Northwind 数据库或其他任何可添加表的数据库。  
+    > 可以使用 Northwind 数据库或其他任何可添加表的数据库。  
   
 2. 在表设计器中，向该表中添加以下列：  
   
@@ -96,7 +96,7 @@ ms.locfileid: "60111969"
 2. 将项目命名**InheritanceWalkthrough**。  
   
     > [!NOTE]
-    >  Visual Basic 和 C# 项目中都支持 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 请使用这些语言之一创建新项目。  
+    > Visual Basic 和 C# 项目中都支持 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]。 请使用这些语言之一创建新项目。  
   
 3. 单击**Windows 窗体应用程序**模板，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   

@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432469"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|工作副本和服务器版本是相同的。|  
 |SCC_I_FILESDIFFERS|工作副本与受源代码管理版本不同。|  
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  作为一种性能优化，源代码管理插件可能会使用基于校验和或时间戳而不是逐字节比较的所要求的替代方法`SCC_DIFF_CONTENTS`： 这些形式的比较都是很明显更快，但可靠性较低。 并非所有的源代码管理系统可能支持这些替代比较方法，并且该插件可能要故障回复到的内容比较。 所有源代码管理插件，至少必须都支持的内容比较。  
   
 > [!NOTE]
->  快速差异标志是互斥的。 有效地不传递任何标志，但它不是有效地同时传递多个。 `SCC_DIFF_QUICK_DIFF`它一个屏蔽，它结合了所有标志，可用于测试，但永远不应作为参数传递。  
+> 快速差异标志是互斥的。 有效地不传递任何标志，但它不是有效地同时传递多个。 `SCC_DIFF_QUICK_DIFF`它一个屏蔽，它结合了所有标志，可用于测试，但永远不应作为参数传递。  
   
 |`fOption`|含义|  
 |---------------|-------------|  

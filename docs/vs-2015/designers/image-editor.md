@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434411"
 ---
 # <a name="image-editor"></a>图像编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "60077376"
  在处理刚创建好的图像前，可更改图像默认配置。 例如，可更改图像使用的尺寸或颜色格式。 有关如何配置图像此类属性以及其他属性的信息，请参阅[图像属性](#ImageProperties)。  
   
 > [!NOTE]
->  保存工作前，如果要使用特定的颜色格式，请确保设置了“颜色格式”属性。 如果文件格式支持压缩，在首次保存文件或在选择“另存为”时可调整压缩设置。  
+> 保存工作前，如果要使用特定的颜色格式，请确保设置了“颜色格式”属性。 如果文件格式支持压缩，在首次保存文件或在选择“另存为”时可调整压缩设置。  
   
 ## <a name="working-with-the-image-editor"></a>使用图像编辑器  
  本部分描述如何使用图像编辑器修改纹理和图像。  
@@ -166,7 +166,7 @@ ms.locfileid: "60077376"
 |深度切片|当前深度切片。 仅可查看第一个切片；保存图像时会丢失所有其他切片。|  
   
 > [!NOTE]
->  由于“旋转角度”属性适用于所有工具和选择区域，因此它和其他工具属性始终显示在“属性”窗口的底部。 由于无其他选择或活动工具时会隐式选中整个图像，因此会始终显示“旋转角度”。 有关“旋转角度”属性的详细信息，请参阅[工具属性](#ToolProperties)。  
+> 由于“旋转角度”属性适用于所有工具和选择区域，因此它和其他工具属性始终显示在“属性”窗口的底部。 由于无其他选择或活动工具时会隐式选中整个图像，因此会始终显示“旋转角度”。 有关“旋转角度”属性的详细信息，请参阅[工具属性](#ToolProperties)。  
   
 #### <a name="resizing-images"></a>调整图像大小  
  以下是调整图像大小的两种方式。 在这两种情况下，图像编辑器均使用双线性内插来对图像重新取样。  

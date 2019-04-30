@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431206"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
      将参数从选中的存储过程映射到数据表中相应的列。 例如，如果你的存储的过程接受一个名为参数`@CompanyName`它传递给`CompanyName`在表中，列集**源列**的`@CompanyName`参数`CompanyName`。  
   
     > [!NOTE]
-    >  分配给 SELECT 命令的存储的过程是通过调用 TableAdapter 的方法，命名该向导的下一步中运行。 默认方法是`Fill`，因此通常用来运行 SELECT 过程的代码是`TableAdapter.Fill(tableName)`。 如果更改中的默认名称`Fill`，将替换`Fill`名称分配和"TableAdapter"替换为 TableAdapter 的实际名称 (例如， `CustomersTableAdapter`)。  
+    > 分配给 SELECT 命令的存储的过程是通过调用 TableAdapter 的方法，命名该向导的下一步中运行。 默认方法是`Fill`，因此通常用来运行 SELECT 过程的代码是`TableAdapter.Fill(tableName)`。 如果更改中的默认名称`Fill`，将替换`Fill`名称分配和"TableAdapter"替换为 TableAdapter 的实际名称 (例如， `CustomersTableAdapter`)。  
   
 - **高级选项**在该向导使您可以生成基于定义的 SELECT 语句的 INSERT、 UPDATE 和 DELETE 语句**生成 SQL 语句**页。 使用乐观并发，并指定是否在插入和更新后刷新数据表运行语句。  
   
@@ -82,7 +82,7 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
 3. 上**选择数据连接**屏幕上，选择或创建该查询要使用的连接。  
   
     > [!NOTE]
-    >  当在设计器无法确定正确的连接，若要使用，或没有连接可用时，才会显示此屏幕。  
+    > 当在设计器无法确定正确的连接，若要使用，或没有连接可用时，才会显示此屏幕。  
   
 4. 上**选择命令类型**屏幕上，从以下方法从数据库提取数据的选择：  
   
@@ -97,7 +97,7 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
 - 如果正在编辑现有 TableAdapter 查询，该查询中，右键单击，然后选择**配置**从快捷菜单。  
   
     > [!NOTE]
-    >  右键单击 TableAdapter 的主查询重新配置 TableAdapter 和<xref:System.Data.DataTable>架构。 右键单击 TableAdapter 上的其他查询，但是，配置所选的查询。 **TableAdapter 配置向导**TableAdapter 查询配置向导重新配置所选的查询时将 TableAdapter 定义中，重新配置。  
+    > 右键单击 TableAdapter 的主查询重新配置 TableAdapter 和<xref:System.Data.DataTable>架构。 右键单击 TableAdapter 上的其他查询，但是，配置所选的查询。 **TableAdapter 配置向导**TableAdapter 查询配置向导重新配置所选的查询时将 TableAdapter 定义中，重新配置。  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>若要向 TableAdapter 添加全局查询  
   
@@ -108,7 +108,7 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
 - 提供查询，例如，执行所需的任务， `SELECT COUNT(*) AS CustomerCount FROM Customers`。  
   
     > [!NOTE]
-    >  拖动**查询**直接拖到对象**数据集设计器**创建返回标量 （单个） 值的方法。 虽然查询或您选择的存储的过程可能返回多个单个值，由向导创建的方法仅返回单个值。 例如，查询可能返回返回的数据的第一行的第一列。  
+    > 拖动**查询**直接拖到对象**数据集设计器**创建返回标量 （单个） 值的方法。 虽然查询或您选择的存储的过程可能返回多个单个值，由向导创建的方法仅返回单个值。 例如，查询可能返回返回的数据的第一行的第一列。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)

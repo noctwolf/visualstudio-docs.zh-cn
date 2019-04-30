@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437541"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>设计类和类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54795507"
 使用类设计器不仅可以对类和类型进行可视化处理，而且还能对其进行设计。 以下主题介绍了如何执行此操作。  
   
 > [!NOTE]
->  使用类设计器时，应在执行之前检查它发出的代码，验证该代码是否适用于安全性上下文。  
+> 使用类设计器时，应在执行之前检查它发出的代码，验证该代码是否适用于安全性上下文。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：使用类设计器创建类型](../ide/how-to-create-types-by-using-class-designer.md)  
@@ -40,7 +40,7 @@ ms.locfileid: "54795507"
   
  介绍如何定义类图中的关联。  
   
- [如何：可视化集合关联（类设计器）](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [如何：直观显示集合关联（类设计器）](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  介绍如何定义类设计器中的集合关联。  
   

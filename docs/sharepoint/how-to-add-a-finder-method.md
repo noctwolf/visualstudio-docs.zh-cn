@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428728"
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
   若要启用业务数据连接 (BDC) 服务，以显示 web 部件或列表中的实体的列表，必须创建*Finder*方法。 查找程序方法是一种特殊的方法返回的实体实例的集合。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "56608066"
 4. 将类型描述符配置为实体集合类型描述符。 有关如何创建实体集合类型描述符的详细信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
    > [!NOTE]
-   >  无需执行此步骤中，如果特定的 Finder 方法添加到实体。 Visual Studio 将使用特定的 Finder 方法中定义的类型描述符。
+   > 无需执行此步骤中，如果特定的 Finder 方法添加到实体。 Visual Studio 将使用特定的 Finder 方法中定义的类型描述符。
 
 5. 在中**解决方案资源管理器**，打开实体，已生成的服务代码文件的快捷菜单，然后选择**查看代码**。 有关服务代码文件的详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608066"
      下面的示例返回一系列`Contact`通过用于 SQL Server 的 AdventureWorks 示例数据库中的数据的实体。
 
    > [!NOTE]
-   >  值替换为`ServerName`字段与服务器的名称。
+   > 值替换为`ServerName`字段与服务器的名称。
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

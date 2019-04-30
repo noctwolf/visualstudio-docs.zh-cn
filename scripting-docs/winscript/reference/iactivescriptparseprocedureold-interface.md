@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99fa06086bfad56b266b043716e82181aa4c97d5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386168"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld 接口
 允许源代码文本有关添加到脚本中的过程。 对于已解释的脚本语言不具有独立的创作环境，例如 VBScript 中，这提供了一种替代机制 (而不`IActiveScriptParse`或`IPersist*`) 添加到命名空间的脚本过程。  
   
 > [!NOTE]
->  此接口已弃用的`IActiveScriptParseProcedure`接口。  
+> 此接口已弃用的`IActiveScriptParseProcedure`接口。  
   
 ## <a name="methods"></a>方法  
  除了继承的方法之外`IUnknown`，则`IActiveScriptParseProcedureOld`接口公开以下方法。  

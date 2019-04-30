@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431239"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：添加和删除功能和包项使用打包资源管理器
   若要配置要部署的 SharePoint 项和功能的程序包，可以使用打包资源管理器。 .Wsp 文件中，可以调整的 SharePoint 项目项和功能。
@@ -51,7 +51,7 @@ ms.locfileid: "60104455"
     - 对于每项功能打开快捷菜单，选择**剪切**，打开你想要移动功能，然后选择该项目的快捷菜单**粘贴**。
 
     > [!NOTE]
-    >  如果解决方案中包含多个 SharePoint 项目，请使用此过程。
+    > 如果解决方案中包含多个 SharePoint 项目，请使用此过程。
 
 ## <a name="validate-a-feature-or-package"></a>验证功能或包
  可以通过验证文件中标识的 SharePoint 功能和包中的潜在问题。 在输出窗口和错误列表窗口中显示警告和错误。

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426040"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 转换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59653484"
 ```  
   
 > [!NOTE]
->  可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML。  
+> 可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML。  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  

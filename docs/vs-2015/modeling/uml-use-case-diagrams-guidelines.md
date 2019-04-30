@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424302"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 用例图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60067997"
 ## <a name="BasicSteps"></a> 绘制用例图的基本步骤  
   
 > [!NOTE]
->  创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+> 创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>创建新的用例图  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60067997"
  专用参与者可以有自己的额外用例，这些用例对于其他参与者是不可用的。  
   
 > [!CAUTION]
->  不应造成会导致参与者泛化自身的泛化关系循环。 循环可能会产生错误。  
+> 不应造成会导致参与者泛化自身的泛化关系循环。 循环可能会产生错误。  
   
 ### <a name="alternative-actor-icons"></a>可选参与者图标  
  可以使用自定义图标而不是标准线条图来表示参与者。 例如，可以将其更改为类似于设备、餐馆和银行等的图标。  
@@ -160,7 +160,7 @@ ms.locfileid: "60067997"
  ![参与者与用例一对一](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  如果它们都是隐藏的用例关系图上关联的重数**1**。  
+> 如果它们都是隐藏的用例关系图上关联的重数**1**。  
   
  默认情况下，每个重数是**1**。 在模型的严格释义中，以顾客订餐为例，重数为 1 表示一餐只有一名顾客预订并且每名顾客一次只订一餐。  
   
@@ -197,7 +197,7 @@ ms.locfileid: "60067997"
    - **\\*** 为此角色的零个或多个实例参与该链接的状态。  
   
 > [!NOTE]
->  很多团队不在用例图中提供重数信息，保留重数的默认值 1， 而是在用例的其他描述中提供该信息。 在这种情况下，用例图中的所有重数都将隐藏。  
+> 很多团队不在用例图中提供重数信息，保留重数的默认值 1， 而是在用例的其他描述中提供该信息。 在这种情况下，用例图中的所有重数都将隐藏。  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>在多个关系图中使用一个参与者或用例  
  可以在多个关系图中显示相同的参与者和用例。 例如：  
@@ -215,7 +215,7 @@ ms.locfileid: "60067997"
 3. 将参与者或用例从**模型资源管理器**到新关系图上。  
   
     > [!NOTE]
-    >  如果放入新关系图的是已关联的参与者和用例，则它们之间的关联将自动显示在新关系图中。  
+    > 如果放入新关系图的是已关联的参与者和用例，则它们之间的关联将自动显示在新关系图中。  
   
 ## <a name="Details"></a> 详细描述用例  
  用例表示：  
@@ -277,7 +277,7 @@ ms.locfileid: "60067997"
 3. 选择新项目后，键入或粘贴到 URL**超链接**属性。  
   
 > [!NOTE]
->  双击项目可打开与其链接的关系图或文档。  
+> 双击项目可打开与其链接的关系图或文档。  
   
 ### <a name="linking-use-cases-to-work-items"></a>将用例链接到工作项  
  如果你的项目使用[!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)]，并且必须[!INCLUDE[esprtfc](../includes/esprtfc-md.md)]，可以将每个用例链接到工作项中[!INCLUDE[esprfound](../includes/esprfound-md.md)]。 若要了解如何建立这些链接，请参阅[链接模型元素和工作项](../modeling/link-model-elements-and-work-items.md)。  
@@ -309,7 +309,7 @@ ms.locfileid: "60067997"
  使用**Include**关系可以表明该一个用例介绍了一些其他的详细信息。 在图中，**订餐**包括**支付**，**选择菜单**，以及**选择菜单项**。 每个被包括的细化用例是一个或多个参与者为了实现包括用例的整体目标可能必须执行的一个步骤。 箭头应指向细化的被包括用例。  
   
 > [!CAUTION]
->  不应造成会导致用例包括自身的包括关系循环。 循环可能会产生错误。  
+> 不应造成会导致用例包括自身的包括关系循环。 循环可能会产生错误。  
   
  可以共享被包括用例。 在示例中，**订餐**并**订阅评审**用的例均包含**支付**。  
   
@@ -346,7 +346,7 @@ ms.locfileid: "60067997"
  例如，**支付**通用化**通过信用卡付款**并**现金支付**。  
   
 > [!CAUTION]
->  不应造成会导致参与者泛化自身的泛化关系循环。 循环可能会产生错误。  
+> 不应造成会导致参与者泛化自身的泛化关系循环。 循环可能会产生错误。  
   
  专用用例有助于展示系统实现相同目标的不同方法。  
   
@@ -374,7 +374,7 @@ ms.locfileid: "60067997"
  ![一个用例扩展另一个](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  不应造成会导致参与者泛化自身的扩展关系循环。 循环可能会产生错误。  
+> 不应造成会导致参与者泛化自身的扩展关系循环。 循环可能会产生错误。  
   
  例如，**登录名**典型的 Web 站点的用例可以包括**注册新用户**-但仅当用户已经没有一个帐户。  
   
@@ -391,7 +391,7 @@ ms.locfileid: "60067997"
    3. 单击扩展的用例 (**登录名**在示例中)。  
   
        > [!NOTE]
-       >  避免在关系图中创建扩展关系的循环。 用例不能成为自身的扩展。  
+       > 避免在关系图中创建扩展关系的循环。 用例不能成为自身的扩展。  
   
 3. 如果已创建被扩展用例的方案，可将相关步骤移入扩展方案。  
   
@@ -425,7 +425,7 @@ ms.locfileid: "60067997"
    若要直接在子系统中创建新的用例，请单击**用例**在工具箱中，然后单击在子系统内。  
   
 > [!NOTE]
->  **主体**的用例属性指示包含它的子系统。  
+> **主体**的用例属性指示包含它的子系统。  
   
 ### <a name="use-cases-outside-the-system-scope"></a>系统范围外的用例  
  将属于业务组成部分但不由你开发的系统来处理的用例包括在关系图中通常是很有用的。 这有助于开发人员了解其工作背景。 例如，“送餐”可以显示为涉及参与者“餐馆”和“顾客”的用例，但在“订餐网站”的职责范围外。  

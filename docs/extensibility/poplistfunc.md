@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434240"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 此回调提供给[SccPopulateList](../extensibility/sccpopulatelist-function.md) ide 和源代码管理插件用于更新的文件或目录的列表 (还提供给`SccPopulateList`函数)。
@@ -47,7 +47,7 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>返回值
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |`TRUE`|该插件可以继续调用此函数。|
 |`FALSE`|在 IDE 端 （如不足的内存情况下） 已出现问题。 插件应停止操作。|
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  对于每个源代码管理插件想要添加到或从文件列表中删除的文件，它将调用此函数，并传入`lpFileName`。 `fAddRemove`标志指示要添加到列表中的新文件或要删除的旧文件。 `nStatus`参数指定了文件的状态。 当插件 SCC 完成添加和删除文件时，它将返回[SccPopulateList](../extensibility/sccpopulatelist-function.md)调用。
 
 > [!NOTE]
->  `SCC_CAP_POPULATELIST`功能位是所必需的 Visual Studio。
+> `SCC_CAP_POPULATELIST`功能位是所必需的 Visual Studio。
 
 ## <a name="see-also"></a>请参阅
 - [通过 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)

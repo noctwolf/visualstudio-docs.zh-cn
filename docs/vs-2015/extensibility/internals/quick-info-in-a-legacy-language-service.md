@@ -12,12 +12,12 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436658"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>旧版语言服务中的快速信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ IntelliSense 快速信息显示有关标识符的信息源中，当用户将插�
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练：显示快速信息工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
  托管的包框架 (MPF) 语言 service 类用于显示的 IntelliSense 快速信息工具提示提供完全支持。 您需要做的就是提供要显示和启用快速信息功能的文本。  
   

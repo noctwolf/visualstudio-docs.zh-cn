@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fae92cd0a2903753f5b02ca33308a83cdab67c7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1bb7766d96e142fc9208b2e102c2dc57059212d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434811"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 元素 （Visual Studio 项目模板）
 指定项目模板中包含的文件。
 
 > [!NOTE]
->  `ProjectItem`元素接受不同的属性，具体取决于该模板是针对某个项目或项。 本主题介绍了`ProjectItem`项目模板的元素。 有关的说明`ProjectItem`元素的项模板，请参阅[ProjectItem 元素 （Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)。
+> `ProjectItem`元素接受不同的属性，具体取决于该模板是针对某个项目或项。 本主题介绍了`ProjectItem`项目模板的元素。 有关的说明`ProjectItem`元素的项模板，请参阅[ProjectItem 元素 （Visual Studio 项模板）](../extensibility/projectitem-element-visual-studio-item-templates.md)。
 
  \<VSTemplate> \<TemplateContent> \<Project> \<ProjectItem>
 

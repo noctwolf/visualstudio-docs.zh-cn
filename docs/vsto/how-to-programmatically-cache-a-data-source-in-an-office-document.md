@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437108"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以编程方式缓存中的 Office 文档的数据源
   你可以以编程方式将数据对象添加到文档中的数据缓存通过调用`StartCaching`方法的主机项，如<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，或<xref:Microsoft.Office.Tools.Excel.Worksheet>。 从数据缓存中删除数据对象，通过调用`StopCaching`宿主项的方法。
@@ -52,7 +52,7 @@ ms.locfileid: "60109174"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  不要调用`StopCaching`的事件处理程序从`Shutdown`事件的文档或工作表。 按时间`Shutdown`引发事件，它太迟是若要修改的数据缓存。 有关详细信息`Shutdown`事件，请参阅[Events in Office Projects](../vsto/events-in-office-projects.md)。
+    > 不要调用`StopCaching`的事件处理程序从`Shutdown`事件的文档或工作表。 按时间`Shutdown`引发事件，它太迟是若要修改的数据缓存。 有关详细信息`Shutdown`事件，请参阅[Events in Office Projects](../vsto/events-in-office-projects.md)。
 
 ## <a name="see-also"></a>请参阅
 

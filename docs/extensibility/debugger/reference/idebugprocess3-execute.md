@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295db356ea11bb24eb8e121aca0fe54c015ef5e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413220"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 将继续运行此过程从已停止状态。 清除任何以前的执行状态 （如步骤），并再次执行该过程开始。
 
 > [!NOTE]
->  应使用此方法以代替[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。
+> 应使用此方法以代替[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)。
 
 ## <a name="syntax"></a>语法
 
@@ -51,7 +51,7 @@ int Execute(
  当用户从某个其他进程的线程已停止状态开始执行时，对此过程将调用此方法。 当用户选择此方法也称为**启动**命令**调试**菜单在 IDE 中的。 此方法的实现可能很简单，与调用[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)过程中在当前线程上的方法。
 
 > [!WARNING]
->  不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。
+> 不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

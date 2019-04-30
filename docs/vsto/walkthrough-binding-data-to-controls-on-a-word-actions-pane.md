@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438698"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>演练：将数据绑定到 Word 操作窗格上的控件
   本演练演示了数据绑定到 Word 中的操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
@@ -38,7 +38,7 @@ ms.locfileid: "60063603"
 - 当应用程序打开时显示操作窗格。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -78,7 +78,7 @@ ms.locfileid: "60063603"
 1. 如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。
 
    > [!NOTE]
-   >  如果**显示数据源**不可用，请单击 Word 文档，然后重新检查。
+   > 如果**显示数据源**不可用，请单击 Word 文档，然后重新检查。
 
 2. 单击**添加新数据源**以启动**数据源配置向导**。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063603"
 4. 选择`SuppliersBindingNavigator`中**组件**送纸器，然后按**删除**。 不会使用`SuppliersBindingNavigator`在本演练中。
 
     > [!NOTE]
-    >  正在删除`SuppliersBindingNavigator`不会删除所有已为其生成代码。 您可以删除此代码。
+    > 正在删除`SuppliersBindingNavigator`不会删除所有已为其生成代码。 您可以删除此代码。
 
 5. 移动组合框，以便它在标签和更改**大小**属性设置为**171，21**。
 

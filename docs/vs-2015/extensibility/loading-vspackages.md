@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439769"
 ---
 # <a name="loading-vspackages"></a>加载 VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60066567"
 Vspackage 加载到 Visual Studio 中，仅当其功能是必需的。 例如，加载 VSPackage 时 Visual Studio 使用项目工厂或 VSPackage 实现的服务。 此功能被称为延迟的加载，这尽可能使用以提高性能。  
   
 > [!NOTE]
->  Visual Studio 可以确定某些 VSPackage 信息，例如 VSPackage 提供，而不加载 VSPackage 的命令。  
+> Visual Studio 可以确定某些 VSPackage 信息，例如 VSPackage 提供，而不加载 VSPackage 的命令。  
   
  Vspackage 可以设置为自动加载在特定的用户界面 (UI) 上下文中，例如，打开解决方案时。 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>属性将设置此上下文中。  
   

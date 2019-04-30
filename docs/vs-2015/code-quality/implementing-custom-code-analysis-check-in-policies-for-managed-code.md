@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426552"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>对托管代码实施自定义代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60088751"
  若要创建自定义规则集为团队项目，您首先创建签入策略规则中设置的特殊文件夹**源控件资源管理器**。 然后创建规则集文件，并将文件添加到版本控制。 最后，指定将规则集的代码分析签入策略的团队项目。  
   
 > [!NOTE]
->  若要在团队项目中创建一个文件夹，首先必须映射团队项目根目录到本地计算机上的位置。 有关详细信息，请参阅[创建和使用工作区 （旧）](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
+> 若要在团队项目中创建一个文件夹，首先必须映射团队项目根目录到本地计算机上的位置。 有关详细信息，请参阅[创建和使用工作区 （旧）](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>若要创建签入策略规则集的版本控制文件夹  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60088751"
 4. 在中**签入**对话框中，您可以选择添加注释，然后单击**签入**。  
   
     > [!NOTE]
-    >  如果已为你的团队项目配置代码分析签入策略和所选**执行签入以只包含属于当前解决方案的文件**，将触发策略失败警告。 在策略失败对话框中，选择**重写策略失败并继续签入**。 添加所需的注释，然后依次**确定**。  
+    > 如果已为你的团队项目配置代码分析签入策略和所选**执行签入以只包含属于当前解决方案的文件**，将触发策略失败警告。 在策略失败对话框中，选择**重写策略失败并继续签入**。 添加所需的注释，然后依次**确定**。  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>若要指定该规则设置文件，为签入策略  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60088751"
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  可以使用中的以下过程之一来复制路径**源控件资源管理器**:  
+    > 可以使用中的以下过程之一来复制路径**源控件资源管理器**:  
   
     - 在中**文件夹**窗格中，单击包含规则集文件的文件夹。 将复制的文件夹中显示的版本控制路径**源**框，然后手动键入规则集文件的名称。  
   

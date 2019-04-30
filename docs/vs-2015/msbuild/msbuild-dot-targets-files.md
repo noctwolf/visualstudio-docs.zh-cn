@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 74ac0a2c1ab50cf4c707f4fc9414fe4aa4f403b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439387"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "59655057"
  `$(MSBuildToolsPath)` 值指定这些公用 .targets 文件的路径。 如果 `ToolsVersion` 为 4.0，则文件位于以下位置：`WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
->  若要了解如何创建自己的目标，请参阅[目标](../msbuild/msbuild-targets.md)。 有关如何使用信息`Import`元素将项目文件插入到另一个项目文件，请参阅[Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)和[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。  
+> 若要了解如何创建自己的目标，请参阅[目标](../msbuild/msbuild-targets.md)。 有关如何使用信息`Import`元素将项目文件插入到另一个项目文件，请参阅[Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)和[如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。  
   
 ## <a name="common-targets-files"></a>公用 .Targets 文件  
   

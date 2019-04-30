@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439811"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>独立 Shell 入口点参数 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  若要覆盖一个或多个设置，请将传递一个 Unicode 字符串，包含要重写的设置。 字符串是以分号分隔名称 / 值对的列表。 每个对包含要重写，请设置的名称跟有等号 （=） 后, 跟要应用于该设置的值。  
   
 > [!NOTE]
->  Unicode 字符串中不包含空格。  
+> Unicode 字符串中不包含空格。  
   
  对于布尔设置，以下字符串表示值 true;所有其他字符串表示值 false。 这些字符串不区分大小写。  
   

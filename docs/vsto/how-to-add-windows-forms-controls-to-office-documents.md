@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427493"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>如何：向 Office 文档添加 Windows 窗体控件
   你可以在设计时在文档级项目中，将 Windows 窗体控件添加到 Microsoft Office Excel 和 Microsoft Office Word 文档。 在运行时，您可以在文档级自定义项和 VSTO 外接程序中添加控件。例如，你可以将 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 控件添加到工作表，以便用户可以从选项列表选择。
@@ -49,7 +49,7 @@ ms.locfileid: "60047106"
 2. 在中**公共控件**选项卡**工具箱**，单击你想要添加，的控件并将其拖到文档。
 
     > [!NOTE]
-    >  当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
+    > 当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>若要在文档中绘制 Windows 窗体控件
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047106"
      该控件将按指定的位置和大小添加到文档。
 
     > [!NOTE]
-    >  在 Excel 中选择一个控件，你会看到 **=EMBED("WinForms.Control.Host","")** 中**公式栏**。 此文本是必需的并且不应删除。
+    > 在 Excel 中选择一个控件，你会看到 **=EMBED("WinForms.Control.Host","")** 中**公式栏**。 此文本是必需的并且不应删除。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>若要通过右键单击控件将 Windows 窗体控件添加到文档
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047106"
      该控件将以默认大小添加到文档。
 
     > [!NOTE]
-    >  当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
+    > 当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>若要通过双击控件将 Windows 窗体控件添加到文档
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047106"
      该控件将被添加到位于文档或活动窗格中心位置处的文档。
 
     > [!NOTE]
-    >  当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
+    > 当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>若要向文档添加 Windows 窗体控件，通过按 Enter 键
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047106"
      该控件将被添加到位于文档或活动窗格中心位置处的文档。
 
     > [!NOTE]
-    >  当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
+    > 当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
 
 ## <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加控件
  以编程方式可以在运行时向文档添加 Windows 窗体控件。 在 Word 中，请使用 `ThisDocument` 类的 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 属性的方法。 在 Excel 中，使用的方法<xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A>的属性`Sheet` *n*类。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。
@@ -125,7 +125,7 @@ ms.locfileid: "60047106"
 1. 使用一种方法具有名称外\<*控制类*> (其中*控件类*是想要添加，例如在 Windows 窗体控件的类名<xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>)。
 
     > [!NOTE]
-    >  在 VSTO 外接程序项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，必须添加对的引用*Microsoft.Office.Tools.Excel.v4.0.Utilities.dll*或*Microsoft.Office.Tools.Word.v4.0.Utilities.dll*程序集才能访问外\<*控制类*> 方法。
+    > 在 VSTO 外接程序项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本，必须添加对的引用*Microsoft.Office.Tools.Excel.v4.0.Utilities.dll*或*Microsoft.Office.Tools.Word.v4.0.Utilities.dll*程序集才能访问外\<*控制类*> 方法。
 
      下面的代码示例演示了如何通过使用 Word VSTO 外接程序将 <xref:Microsoft.Office.Tools.Word.Controls.Button> 添加到活动文档的第一段。
 

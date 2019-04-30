@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb9b7d406e7638a73e9c4db4974d493aa1d38e92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 25b38f008df47dd2912fef042424e4c3d42becd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415661"
 ---
 # <a name="register-a-custom-debug-engine"></a>注册自定义调试引擎
 调试引擎必须将自身注册为一个类工厂，以下 COM 约定，以及通过 Visual Studio 注册通过 Visual Studio 注册表子项。
 
 > [!NOTE]
->  您可以找到举例说明如何注册在 TextInterpreter 示例中，作为一部分生成的调试引擎[教程：生成调试引擎使用 ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。
+> 您可以找到举例说明如何注册在 TextInterpreter 示例中，作为一部分生成的调试引擎[教程：生成调试引擎使用 ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)。
 
 ## <a name="dll-server-process"></a>DLL 服务器进程
  调试引擎是通常设置在其自己的 DLL 中作为 COM 服务器。 在这种情况下，调试引擎必须注册类工厂的 CLSID COM Visual Studio 才能访问它。 然后，调试引擎必须注册自身建立任何属性 （也称为度量值） 的 Visual Studio 调试引擎支持。 度量值写入到 Visual Studio 注册表子项的选择取决于调试引擎支持的功能。
 
- [用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)介绍了不唯一的注册表位置必须注册的调试引擎; 它还介绍了*dbgmetric.lib*库，其中包含许多有用的功能和声明为使操作更容易注册表的 c + + 开发人员。
+ [用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)介绍了不唯一的注册表位置必须注册的调试引擎; 它还介绍了*dbgmetric.lib*库，其中包含许多有用的功能和声明有关C++开发人员，使操作更容易注册表。
 
 ### <a name="example"></a>示例
  下面的示例 （摘自 TextInterpreter 示例） 演示如何使用`SetMetric`函数 (从*dbgmetric.lib*)，以注册 Visual Studio 调试引擎。 中也定义了所传递的指标*dbgmetric.lib*。
 
 > [!NOTE]
->  TextInterpreter 是一种基本的调试引擎;它未设置，并因此不会注册 — 任何其他功能。 更完整的调试引擎必须一整个系列`SetMetric`调用或其等效项，一个用于调试引擎的每个功能支持。
+> TextInterpreter 是一种基本的调试引擎;它未设置，并因此不会注册 — 任何其他功能。 更完整的调试引擎必须一整个系列`SetMetric`调用或其等效项，一个用于调试引擎的每个功能支持。
 
 ```
 // Define base registry subkey to Visual Studio.

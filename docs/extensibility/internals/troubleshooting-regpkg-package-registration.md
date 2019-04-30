@@ -10,16 +10,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db6421d3d0a62f8a50df2301689b638ac42d4df
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 12beb4bda419c99c013a324b08b92bf3ff5365dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429872"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 包注册疑难解答
 > [!NOTE]
->  在 Visual Studio 中注册包的首选的方法是通过使用.pkgdef 文件。 这样可以扩展部署而无需访问系统注册表。 通过使用创建 Pkgdef 文件[CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)。
+> 在 Visual Studio 中注册包的首选的方法是通过使用.pkgdef 文件。 这样可以扩展部署而无需访问系统注册表。 通过使用创建 Pkgdef 文件[CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)。
 
  若要使用 RegPkg 中的注册包[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必须使用适合于您的包的 RegPkg 的版本。
 

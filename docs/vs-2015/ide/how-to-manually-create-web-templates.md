@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431101"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54782205"
 创建 Web 模板与创建其他种类的模板不同。 由于 Web 项目模板出现在”添加新网站“对话框中，并且 Web 项目项由编程语言分类，vstemplate 文件必须将模板指定为 Web 模板，并识别该编程语言。  
   
 > [!NOTE]
->  Web 模板必须包含空 webproj 文件，该文件通过使用元素 `Project` 的属性 `File` 指定。 虽然 Web 项目不需要项目文件，但需要此文件来让 Web 模板正常运行。  
+> Web 模板必须包含空 webproj 文件，该文件通过使用元素 `Project` 的属性 `File` 指定。 虽然 Web 项目不需要项目文件，但需要此文件来让 Web 模板正常运行。  
   
 ### <a name="to-manually-create-a-web-template"></a>手动创建 Web 模板  
   
@@ -47,7 +47,7 @@ ms.locfileid: "54782205"
   
    - VisualBasic  
   
-     例如:  
+     例如：  
   
    ```  
    <TemplateData>  

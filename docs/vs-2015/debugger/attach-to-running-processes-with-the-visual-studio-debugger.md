@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436814"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ ms.locfileid: "60053294"
 |调试未从 Visual Studio 启动的 Windows 通用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不适用|使用**调试 / 其他调试目标 / 调试已安装应用程序包**而不是**附加到进程**|
 
 > [!WARNING]
->  若要附加到用 JavaScript 编写的 Windows 通用应用，必须先为该应用启用调试。 请参阅 Windows 开发人员中心中的 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 。
+> 若要附加到用 JavaScript 编写的 Windows 通用应用，必须先为该应用启用调试。 请参阅 Windows 开发人员中心中的 [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) 。
 
 > [!NOTE]
->  为使调试器附加到用 C++ 编写的代码，该代码需要发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 链接器选项将它自动添加到代码中。
+> 为使调试器附加到用 C++ 编写的代码，该代码需要发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 链接器选项将它自动添加到代码中。
 
 ## <a name="what-debugger-features-can-i-use"></a>可以使用哪些调试器功能？
 

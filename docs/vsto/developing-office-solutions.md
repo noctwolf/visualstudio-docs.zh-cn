@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf2ef7aac4b9e9b54beeed0d4a6d6be31983c30e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6d4ee308c5c689644c9fd9ca6e85493a081e2cdf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440755"
 ---
 # <a name="develop-office-solutions"></a>开发 Office 解决方案
   使用 Visual Studio 中的 Office 开发人员工具设计项目并设置项目文件后，便可以开始集中精力实现代码和自定义用户界面 (UI)。
@@ -27,7 +27,7 @@ ms.locfileid: "56602255"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。
+> 开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。
 
 ## <a name="office-solutions-programming-model"></a>Office 解决方案编程模型
  Office 对象模型公开各种可以编程的对象。 每当使用托管代码进行 Office 解决方案编程，都将编写使用 Office 主互操作程序集中的类型的代码。 在使用 Visual Studio 中的 Office 项目模板创建的解决方案中，还编写直接针对项目中生成的类的代码。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。

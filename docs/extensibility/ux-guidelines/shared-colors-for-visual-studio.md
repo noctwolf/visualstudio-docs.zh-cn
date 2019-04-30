@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430238"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 当您正在设计使用公共 Visual Studio shell 元素的 UI 或希望界面元素将与类似功能一致时，使用包定义文件中现有的标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。
@@ -1413,7 +1413,7 @@ ms.locfileid: "60089534"
 #### <a name="BKMK_CommandDropDown"></a> 命令栏下拉列表
 
 > [!IMPORTANT]
->  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，使用的颜色标记[命令栏组合框](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。
+> 下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，使用的颜色标记[命令栏组合框](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。
 
 ![命令栏下拉 （红线）](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303年 042_DropdownRedline")<br />命令栏下拉 （红线）
 

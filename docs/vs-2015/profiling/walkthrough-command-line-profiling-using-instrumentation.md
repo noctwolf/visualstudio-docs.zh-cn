@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439701"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>演练：命令行使用检测进行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60064688"
  检测是一种分析方法，通过它，被检测二进制文件的特别生成的版本中将包含可在被监测模块中收集函数进入和退出时的计时信息的探测函数。 由于这种分析方法比采样更具侵入性，因此将导致更多的开销。 被检测的二进制文件也大于调试或发布二进制文件，并且不适用于部署。  
   
 > [!NOTE]
->  请勿向客户发送被检测的二进制文件。 被检测的二进制文件可能具有多种风险。 这些二进制文件包含使应用程序更容易反向工程以及安全性风险的信息。  
+> 请勿向客户发送被检测的二进制文件。 被检测的二进制文件可能具有多种风险。 这些二进制文件包含使应用程序更容易反向工程以及安全性风险的信息。  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>使用检测方法分析 PeopleTrax 应用程序  
   

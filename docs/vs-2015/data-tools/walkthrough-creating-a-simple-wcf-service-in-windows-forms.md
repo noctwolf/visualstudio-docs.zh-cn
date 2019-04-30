@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684afac90741bbac56a0fc295c21c96a2001859e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424942"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>演练：在 Windows 窗体中创建简单的 WCF 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60096083"
      ![WCF 服务库项目](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
-    >  这将创建可以测试和访问的工作服务。 以下两个步骤演示您可以如何修改使用不同数据类型的默认方法。 在实际应用中，您还会向服务中添加您自己的函数。  
+    > 这将创建可以测试和访问的工作服务。 以下两个步骤演示您可以如何修改使用不同数据类型的默认方法。 在实际应用中，您还会向服务中添加您自己的函数。  
   
 3. ![IService1 文件](../data-tools/media/wcf2.png "wcf2")  
   

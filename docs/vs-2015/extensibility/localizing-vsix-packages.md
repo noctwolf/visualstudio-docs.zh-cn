@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439762"
 ---
 # <a name="localizing-vsix-packages"></a>本地化 VSIX 包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60046081"
  Extension.vsixlangpack  
   
 > [!NOTE]
->  中的 VSIX 支持的项目模板[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]生成 VSIX 清单并将其命名 source.extension.vsixmanifest。 当 Visual Studio 生成项目时，它将复制该文件的内容到 Extension.VsixManifest VSIX 包中。  
+> 中的 VSIX 支持的项目模板[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]生成 VSIX 清单并将其命名 source.extension.vsixmanifest。 当 Visual Studio 生成项目时，它将复制该文件的内容到 Extension.VsixManifest VSIX 包中。  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Extension.vsixlangpack 文件  
  Extension.vsixlangpack 文件遵循[VSIX 语言包架构](../extensibility/vsx-language-pack-schema-reference.md)。 此架构具有[VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)根元素，而且这些四个子元素：[LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md)， [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)， [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)，并且[许可证](../extensibility/license-element-vsix-language-pack-schema.md)。 这些子元素对应于`Name`， `Description`， `MoreInfoURL`，和`License`的子元素`Identifier`Extension.vsixmanifest 文件的元素。  

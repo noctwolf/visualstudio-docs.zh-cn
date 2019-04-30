@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428173"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>对象，您可以自动使用值填充工作表中的范围。 大多数情况下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用于存储以增量方式增加或减少的范围内的值。 可以通过提供从一个可选常量指定行为<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>枚举。
@@ -34,7 +34,7 @@ ms.locfileid: "60117884"
 - 你想要填充，范围作为参数传递给<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法。 目标范围必须包括包含初始值的范围。
 
     > [!NOTE]
-    >  不能将传递<xref:Microsoft.Office.Tools.Excel.NamedRange>控件来代替<xref:Microsoft.Office.Interop.Excel.Range>。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+    > 不能将传递<xref:Microsoft.Office.Tools.Excel.NamedRange>控件来代替<xref:Microsoft.Office.Interop.Excel.Range>。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="example"></a>示例
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]

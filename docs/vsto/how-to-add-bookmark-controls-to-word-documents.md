@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427769"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何：向 Word 文档添加书签控件
   在文档级项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>控件添加到你的项目在设计时或在运行时中的文档。 在 VSTO 外接程序项目中，可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>向任何打开的文档在运行时的控件。
@@ -94,7 +94,7 @@ ms.locfileid: "60104520"
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    >  如果你想要从现有的 <xref:Microsoft.Office.Tools.Word.Bookmark> 创建 <xref:Microsoft.Office.Interop.Word.Bookmark>控件，请使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法并传入现有的 <xref:Microsoft.Office.Interop.Word.Bookmark>。
+    > 如果你想要从现有的 <xref:Microsoft.Office.Tools.Word.Bookmark> 创建 <xref:Microsoft.Office.Interop.Word.Bookmark>控件，请使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法并传入现有的 <xref:Microsoft.Office.Interop.Word.Bookmark>。
 
 ## <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加书签控件
  您可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>以编程方式向任何打开的文档，在运行时由 VSTO 外接程序中使用的控件。 若要执行此操作，生成基于打开的文档的 <xref:Microsoft.Office.Tools.Word.Document> 主机项，然后使用此主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 有两种方法重载可用于按以下方式添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件：

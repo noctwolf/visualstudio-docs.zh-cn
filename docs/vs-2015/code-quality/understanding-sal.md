@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435400"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` 用于进行批注可能会更改函数的指针参数。 指针必须指向有效的调用之前已初始化的数据，并且即使更改，仍必须有效的值返回。 批注指定函数可能会随意从读取和写入一个元素缓冲区。 调用方必须提供缓冲区，并对其进行初始化。  
   
 > [!NOTE]
->  像`_Out_`，`_Inout_`必须将应用于可修改的值。  
+> 像`_Out_`，`_Inout_`必须将应用于可修改的值。  
   
 ```cpp  
   

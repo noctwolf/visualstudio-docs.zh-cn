@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424491"
 ---
 # <a name="uml-class-diagrams-reference"></a>UML 类图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58937008"
 UML 类图描述在应用程序内部以及应用程序与其用户在通信时使用的对象和信息结构。 它描述的信息不具有对任何特定实现的引用。 它的类和关系可以采用许多方法来实现，例如数据库表、XML 节点或软件对象的组合。  
   
 > [!NOTE]
->  本主题针对 UML 类图。 还有另一种类图，即 .NET 类图，它用于可视化程序代码。 有关详细信息，请参阅[设计和查看类和类型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
+> 本主题针对 UML 类图。 还有另一种类图，即 .NET 类图，它用于可视化程序代码。 有关详细信息，请参阅[设计和查看类和类型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
  若要创建 UML 类图中，在**体系结构**菜单中，选择**新建 UML 或层关系图**。 有关如何绘制 UML 类图的详细信息，请参阅[UML 类图：指导原则](../modeling/uml-class-diagrams-guidelines.md)。 有关如何创建和绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431020"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 Windows 安装程序安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。
@@ -53,7 +53,7 @@ Windows 安装程序安装和卸载应用程序或用户的计算机上的软件
  两组规则确定通过安装程序的组件的资源的部署。 虽然应强制安装作者的第二个集由 Windows 安装程序本身，维护一个规则集。
 
 > [!NOTE]
->  仅当你运行.msi 文件的验证，则会发生的 Windows Installer 规则强制执行。 不过，警告将这些规则视为最佳做法。 有关详细信息，请参阅[验证安装数据库](/windows/desktop/Msi/validating-an-installation-database)并[包验证](/windows/desktop/Msi/package-validation)。
+> 仅当你运行.msi 文件的验证，则会发生的 Windows Installer 规则强制执行。 不过，警告将这些规则视为最佳做法。 有关详细信息，请参阅[验证安装数据库](/windows/desktop/Msi/validating-an-installation-database)并[包验证](/windows/desktop/Msi/package-validation)。
 
 #### <a name="installer-enforced-rules"></a>安装程序强制实施的规则
 

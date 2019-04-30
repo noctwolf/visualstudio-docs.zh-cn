@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439936"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60097123"
  如果将 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程更改为在自己的用户帐户下运行，则即使不是运行 IIS 的服务器上的管理员也可。  
   
 > [!CAUTION]
->  在将 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程更改为在其他帐户下运行之前，请考虑如果 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程在该帐户下运行时遭到黑客攻击可能会产生的后果。 “ASPNET”和“网络服务”用户帐户以最低的权限运行，减少了进程被黑客攻击时可能造成的损害。 如果必须将 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程更改为在具有更大权限的帐户下运行，则会增加受损的可能性。  
+> 在将 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程更改为在其他帐户下运行之前，请考虑如果 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程在该帐户下运行时遭到黑客攻击可能会产生的后果。 “ASPNET”和“网络服务”用户帐户以最低的权限运行，减少了进程被黑客攻击时可能造成的损害。 如果必须将 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程更改为在具有更大权限的帐户下运行，则会增加受损的可能性。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)   

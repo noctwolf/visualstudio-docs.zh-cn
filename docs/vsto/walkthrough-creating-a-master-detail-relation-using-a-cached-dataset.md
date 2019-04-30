@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438553"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：创建使用缓存的数据集的主从关系
   本演练演示在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。
@@ -36,7 +36,7 @@ ms.locfileid: "60091490"
 - 测试您的项目。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：

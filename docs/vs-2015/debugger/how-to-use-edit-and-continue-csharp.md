@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384027"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60042774"
  编辑并继续自动调用时在中断模式下进行更改，然后选择调试程序执行命令，如**继续**，**步骤**，或**设置下一语句**，或计算在调试器窗口函数。  
   
 > [!NOTE]
->  在调试 Compact Framework、优化代码、本机/托管混合代码或 SQL Server 公共语言运行时 (CLR) 集成代码时不支持“编辑并继续”。 如果你尝试应用代码更改在其中一种情形中的，则调试器将显示一个对话框，其中说明编辑并继续不受支持。  
+> 在调试 Compact Framework、优化代码、本机/托管混合代码或 SQL Server 公共语言运行时 (CLR) 集成代码时不支持“编辑并继续”。 如果你尝试应用代码更改在其中一种情形中的，则调试器将显示一个对话框，其中说明编辑并继续不受支持。  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>若要调用编辑并继续自动  
   

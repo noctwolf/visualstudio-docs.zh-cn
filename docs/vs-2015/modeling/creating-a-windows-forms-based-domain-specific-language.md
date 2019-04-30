@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433340"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
      为其提供名为其他域属性`Size`类型的**Int32**，和`IsOrganic`类型的**布尔**。  
 
     > [!NOTE]
-    >  如果您删除根域类，然后创建一个新的根目录，你将必须重置编辑器根类属性。 在中**DSL 资源管理器**，选择**编辑器**。 然后在属性窗口中设置**根类**到`Farm`。  
+    > 如果您删除根域类，然后创建一个新的根目录，你将必须重置编辑器根类属性。 在中**DSL 资源管理器**，选择**编辑器**。 然后在属性窗口中设置**根类**到`Farm`。  
 
 4. 使用**名为域类**工具来创建以下域类：  
 
@@ -110,7 +110,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 10. 构建**Dsl**项目。  
 
     > [!NOTE]
-    >  在此阶段，其他生成项目时将不未出现错误。 但是，我们想要构建 Dsl 项目，以便其程序集是数据源向导中提供。  
+    > 在此阶段，其他生成项目时将不未出现错误。 但是，我们想要构建 Dsl 项目，以便其程序集是数据源向导中提供。  
 
 ## <a name="updating-the-ui-project"></a>正在更新用户界面项目  
  现在可以创建新的用户控件将显示存储在 DSL 模型中的信息。 若要连接到模型的用户控件的最简单方法是通过数据绑定。 数据绑定名为适配器类型**ModelingBindingSource**专门用于连接到非 VMSDK 接口的 Dsl。  
@@ -154,7 +154,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 6. 使用工具箱中，创建的两个实例**DataGridView**，并将它们命名`AnimalGridView`和`FieldGridView`。  
 
    > [!NOTE]
-   >  一个可选步骤是从数据源窗口拖动到控件上拖动动物和字段项目。 此操作将自动创建的数据网格和网格视图和数据源之间的绑定。 但是，此绑定不会无法正常工作的 Dsl。 因此最好创建的数据网格和绑定手动。  
+   > 一个可选步骤是从数据源窗口拖动到控件上拖动动物和字段项目。 此操作将自动创建的数据网格和网格视图和数据源之间的绑定。 但是，此绑定不会无法正常工作的 Dsl。 因此最好创建的数据网格和绑定手动。  
 
 7. 如果工具箱中不包含**ModelingBindingSource**工具中，将其添加。 在快捷菜单上**数据**选项卡上，选择**选择项**。 在中**选择工具箱项**对话框中，选择**ModelingBindingSource**从 **.NET Framework 选项卡**。  
 
@@ -227,7 +227,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
      `Goat1` 将出现在**动物**视图。  
 
     > [!WARNING]
-    >  必须在使用的快捷菜单**场**节点中，不**动物**节点。  
+    > 必须在使用的快捷菜单**场**节点中，不**动物**节点。  
 
 4. 选择**场**根节点并查看其属性。  
 

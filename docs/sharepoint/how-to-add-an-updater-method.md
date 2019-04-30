@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431260"
 ---
 # <a name="how-to-add-an-updater-method"></a>如何：添加 Updater 方法
   可以让用户可以通过创建更新 SharePoint 外部列表中的业务数据*Updater*方法。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -50,7 +50,7 @@ ms.locfileid: "56596954"
      有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
    > [!NOTE]
-   >  如果实体类型的标识符表示不会自动生成的数据库表中的字段，设置**Pre-updater 字段**属性设置为**True**。
+   > 如果实体类型的标识符表示不会自动生成的数据库表中的字段，设置**Pre-updater 字段**属性设置为**True**。
 
 4. 在中**解决方案资源管理器**，打开实体，已生成的服务代码文件的快捷菜单，然后选择**查看代码**。
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596954"
 5. 将代码添加到要更新的数据的更新方法。 下面的示例更新 AdventureWorks 示例数据库中的联系人信息适用于 SQL Server。
 
    > [!NOTE]
-   >  值替换为`ServerName`字段与服务器的名称。
+   > 值替换为`ServerName`字段与服务器的名称。
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

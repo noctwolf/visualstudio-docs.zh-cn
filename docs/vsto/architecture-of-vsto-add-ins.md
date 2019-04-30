@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440352"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：
@@ -44,7 +44,7 @@ ms.locfileid: "60091067"
  如果为应用程序安装了多个 VSTO 外接程序，那么，每个 VSTO 外接程序都会加载到不同的应用程序域中。 这意味着某个行为不正确的 VSTO 外接程序不会导致其他 VSTO 外接程序失败。 这还有助于确保在关闭应用程序时，所有 VSTO 外接程序程序集都将从内存中卸载。 有关应用程序域的详细信息，请参阅[应用程序域](/dotnet/framework/app-domains/application-domains)。
 
 > [!NOTE]
->  对于使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序，仅当最终用户启动主机 Microsoft Office 应用程序时才会使用。 如果以编程方式（例如，通过使用自动化）启动应用程序，VSTO 外接程序可能不会按预期工作。
+> 对于使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序，仅当最终用户启动主机 Microsoft Office 应用程序时才会使用。 如果以编程方式（例如，通过使用自动化）启动应用程序，VSTO 外接程序可能不会按预期工作。
 
 ## <a name="AddinComponents"></a> VSTO 外接程序的组件
  尽管 VSTO 外接程序程序集是主要组件，但有其他若干组件对 Microsoft Office 应用程序如何发现和加载 VSTO 外接程序起重要作用。
@@ -70,7 +70,7 @@ ms.locfileid: "60091067"
  ![2007 office 外接程序体系结构](../vsto/media/office07addin.png "2007 Office 外接程序体系结构")
 
 > [!NOTE]
->  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 解决方案中，解决方案通过使用嵌入到解决方案程序集中的 PIA 类型信息调入主机应用程序的对象模型，而不是直接调入 PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
+> 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 解决方案中，解决方案通过使用嵌入到解决方案程序集中的 PIA 类型信息调入主机应用程序的对象模型，而不是直接调入 PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
 
 ### <a name="loading-process"></a>加载过程
  用户启动应用程序时，会执行以下步骤：
@@ -100,7 +100,7 @@ ms.locfileid: "60091067"
      可以选择替代此方法，以便通过返回实现扩展性接口的对象来扩展 Microsoft Office 功能。 有关详细信息，请参阅[使用扩展性接口自定义 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)。
 
     > [!NOTE]
-    >  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为主机应用程序支持的每个扩展性接口分别调用 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法。 尽管对 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的第一次调用通常发生在调用 `ThisAddIn_Startup` 方法之前，但 VSTO 外接程序不应作出有关 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的调用时间和次数的任何假设。
+    > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为主机应用程序支持的每个扩展性接口分别调用 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法。 尽管对 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的第一次调用通常发生在调用 `ThisAddIn_Startup` 方法之前，但 VSTO 外接程序不应作出有关 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的调用时间和次数的任何假设。
 
 11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在 VSTO 外接程序中调用 `ThisAddIn_Startup` 方法。 此方法是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的默认事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
 

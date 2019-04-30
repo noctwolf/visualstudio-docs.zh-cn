@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435888"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何：更新 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60064675"
 1. 在 Visual Studio 中，打开你想要更新的扩展的解决方案。 进行更改。
 
     > [!IMPORTANT]
-    >  无符号不会自动更新所有用户扩展。 你始终应登录你的扩展。
+    > 无符号不会自动更新所有用户扩展。 你始终应登录你的扩展。
 
 2. 在中**解决方案资源管理器**，打开 source.extension.manifest。
 
@@ -60,7 +60,7 @@ ms.locfileid: "60064675"
      可以启用或禁用自动检查更新的底部**更新**窗格 (**可用更新的启用/禁用自动检测**)，哪些更改**检查更新**中设置**工具 / 选项 / 环境 / 扩展和更新**。
 
     > [!NOTE]
-    >  从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”/“选项”/“环境”/“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。
+    > 从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”/“选项”/“环境”/“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。
 
 ## <a name="see-also"></a>请参阅
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)[查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)

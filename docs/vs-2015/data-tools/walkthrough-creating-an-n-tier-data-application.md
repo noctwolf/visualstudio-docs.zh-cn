@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424750"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序”视频
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
  本演练的第一步是创建一个解决方案和两个类库项目。 第一个类库将保存数据集（生成的类型化 DataSet 类以及将保存应用程序数据的数据表）。 此项目将用作应用程序的数据实体层，它通常位于中间层内。 数据集设计器用于创建初始数据集，并自动将代码分离到两个类库。  
   
 > [!NOTE]
->  请确保已正确命名项目和解决方案，然后再单击“确定”。 这样做可使你更轻松地完成本演练。  
+> 请确保已正确命名项目和解决方案，然后再单击“确定”。 这样做可使你更轻松地完成本演练。  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>创建 N 层解决方案和 DataEntityTier 类库  
   
 1. 从**文件**菜单中，创建一个新项目。  
   
     > [!NOTE]
-    >  **数据集设计器**中支持[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和 C# 项目。 请使用这些语言之一创建新项目。  
+    > **数据集设计器**中支持[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和 C# 项目。 请使用这些语言之一创建新项目。  
   
 2. 在中**新的项目**对话框中**项目类型**窗格中，单击**Windows**。  
   
@@ -125,7 +125,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
 6. 如果数据库需要密码，请选择该选项以包括敏感数据，然后单击 **“下一步”**。  
   
     > [!NOTE]
-    >  如果选择了本地数据库文件（而不是连接至 SQL Server），系统可能会询问你是否将该文件添加到项目中。 单击**是**将数据库文件添加到项目。  
+    > 如果选择了本地数据库文件（而不是连接至 SQL Server），系统可能会询问你是否将该文件添加到项目中。 单击**是**将数据库文件添加到项目。  
   
 7. 单击**下一步**上**将连接字符串保存到应用程序配置文件**页。  
   
@@ -153,7 +153,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
    将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (DataAccessTier) 现在只包含 TableAdapter。 中指定的项目**数据集项目**属性 (DataEntityTier) 包含类型化数据集：NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
   
 > [!NOTE]
->  分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 你必须手动将它们移到数据集项目中。  
+> 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 你必须手动将它们移到数据集项目中。  
   
 ## <a name="creating-a-new-service-application"></a>创建新的服务应用程序  
  由于本演练演示如何使用 WCF 服务访问数据访问层，因此需要创建一个新的 WCF 服务应用程序。  
@@ -220,7 +220,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
  现在数据访问层包含返回数据的方法，接下来要在数据服务中创建调用这些方法的方法。  
   
 > [!NOTE]
->  对于 C# 项目，必须添加对 `System.Data.DataSetExtensions` 程序集的引用，才能编译下面的代码。  
+> 对于 C# 项目，必须添加对 `System.Data.DataSetExtensions` 程序集的引用，才能编译下面的代码。  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>在数据服务中创建 GetCustomers 和 GetOrders 函数  
   
@@ -322,7 +322,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
 3. 选择**Service1**然后单击**确定**。  
   
     > [!NOTE]
-    >  如果当前计算机上存在多项服务，请选择你在本演练的前面部分中创建的服务（即包含 GetCustomers 和 GetOrders 方法的服务）。  
+    > 如果当前计算机上存在多项服务，请选择你在本演练的前面部分中创建的服务（即包含 GetCustomers 和 GetOrders 方法的服务）。  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>将 DataGridView 添加到窗体，以显示数据服务返回的数据  
  在添加对数据服务的服务引用后，将自动使用该服务返回的数据填充“数据源”窗口。  
@@ -361,7 +361,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
  由于服务会返回 Customers 和 Orders 表中的数据，而 maxReceivedMessageSize 的默认值还不够大，无法容纳这些数据，因此必须予以增加。 对于本演练，将值更改为 6553600。 将在客户端上更改该值，此操作将自动更新服务引用。  
   
 > [!NOTE]
->  较小的默认大小旨在降低遭受拒绝服务 (DoS) 攻击的可能性。 有关详细信息，请参阅 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。  
+> 较小的默认大小旨在降低遭受拒绝服务 (DoS) 攻击的可能性。 有关详细信息，请参阅 <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值  
   

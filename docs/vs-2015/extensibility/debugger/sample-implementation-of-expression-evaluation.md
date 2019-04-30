@@ -12,18 +12,18 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49fd700120e819bb0b38cb8d91401869a364714c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436696"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>表达式计算的实现示例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  有关**Watch**窗口表达式中，Visual Studio 调用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)以生成[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpressionContext2::ParseText` 实例化的表达式计算器 (EE) 和调用[分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)来获取[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60039448"
 3. 返回`IDebugParsedExpression`接口从`CParsedExpression`对象。  
   
 > [!NOTE]
->  在下面的示例和 MyCEE 示例中，表达式计算器不会将从评估分析。  
+> 在下面的示例和 MyCEE 示例中，表达式计算器不会将从评估分析。  
   
 ## <a name="managed-code"></a>托管代码  
  这是一个实现的`IDebugExpressionEvaluator::Parse`在托管代码中。 请注意此版本的方法将推迟到分析[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)用于分析的代码也计算在同一时间 (请参阅[计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md))。  

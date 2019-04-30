@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431088"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "60044914"
  使用 cvSpanId 字段（一个整数型）匹配事件对。 每对开始/停止事件的值，该值表示范围必须是唯一的。 通常对于并发代码，这需要使用同步基元（如 <xref:System.Threading.Interlocked.Exchange%2A>）以确保密钥（用于 CvSpanID 的值）正确。  
   
 > [!NOTE]
->  不支持以下操作：使用 SpanID 以嵌套范围，允许它们部分重叠在同一线程上或允许它们以一个线程开始并以另一个线程结束。  
+> 不支持以下操作：使用 SpanID 以嵌套范围，允许它们部分重叠在同一线程上或允许它们以一个线程开始并以另一个线程结束。  
   
 ## <a name="see-also"></a>请参阅  
  [并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)

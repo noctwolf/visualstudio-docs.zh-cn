@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426566"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>如何：使用菜单项禁止显示警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
->  在源代码中，不支持对网站项目进行禁止显示操作。  
+> 在源代码中，不支持对网站项目进行禁止显示操作。  
   
  你可以使用“代码分析”窗口来禁止显示代码分析警告。 禁止显示警告与禁用不同。 禁止显示警告时，它仅适用于此违反行为的特定实例。 仍将在错误列表窗口中报告相同的警告的其他冲突。  
   
@@ -42,4 +42,4 @@ ms.locfileid: "60080899"
      特定警告将被禁止显示，并且带着删除线显示在“代码分析”窗口中。  
   
 > [!NOTE]
->  不具有目标的禁止显示出现在全局禁止显示文件。
+> 不具有目标的禁止显示出现在全局禁止显示文件。

@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433174"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>演练：改进 UI 响应能力 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60071637"
 1. 在 Visual Studio 中，创建一个新的 Windows Universal JavaScript 项目。 （选择“文件”/“新建”/“项目”。 在左窗格中选择“JavaScript”，然后选择“Windows”、“Windows 10”，再选择“通用”或“Windows Phone”。  
   
 2. > [!IMPORTANT]
-    >  本主题中显示的诊断结果是针对 Windows 8 应用显示的。  
+    > 本主题中显示的诊断结果是针对 Windows 8 应用显示的。  
   
 3. 在中间窗格中选择一个空白项目模板，如“空白应用”。  
   

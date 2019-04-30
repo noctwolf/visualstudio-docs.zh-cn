@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430856"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104325"
 你可以通过使用 Microsoft Help Viewer 在本地计算机上安装和查看各种产品和技术的相关内容。  
   
 > [!WARNING]
->  安装 Visual Studio 时，将获得帮助查看器。 若要开始阅读帮助查看器（而不是 MSDN 下载站点）上的帮助主题，请转到 Visual Studio 中的“帮助”菜单，选择“设置帮助首选项”，然后选择“在帮助查看器中启动”。 给定版本的 Visual Studio 的脱机帮助主题仅在发布该版本的最终版本后提供。  
+> 安装 Visual Studio 时，将获得帮助查看器。 若要开始阅读帮助查看器（而不是 MSDN 下载站点）上的帮助主题，请转到 Visual Studio 中的“帮助”菜单，选择“设置帮助首选项”，然后选择“在帮助查看器中启动”。 给定版本的 Visual Studio 的脱机帮助主题仅在发布该版本的最终版本后提供。  
   
  可以完成以下工作：  
   

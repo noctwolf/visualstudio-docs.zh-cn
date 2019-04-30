@@ -12,12 +12,12 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be17b2f78048bd0e9c2052066796857dbeba2048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435267"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何：生成安装程序的注册表信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117728"
 RegPkg.exe 实用程序可用于生成托管的 VSPackage 注册清单。 清单可以合并到一个 Windows 安装程序安装程序包。 RegPkg 还可以生成可以在基于安装程序源文件中包含的文件[Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=62238)。  
   
 > [!IMPORTANT]
->  RegPkg 生成特定于你开发的系统的路径名称，以便每次使用 RegPkg，必须编辑输出以供使用适当的 Windows 安装程序格式属性。 例如，InprocServer32 值应 **[SystemFolder]mscoree.dll**和路径应使用 **[#filekey]** 并 **[$componentkey]**。 调整以这种方式输出支持使用 Windows 安装在不同的驱动器上或在不同的目录、 本地化的目录名称和路径可供用户选择的计算机。 有关详细信息，请参阅[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows 安装程序 SDK 中。 为您开发的系统路径遵循 RegPkg 约定 — 例如，文件 Id 的窗体 File_*文件名*— 需要进行更少的更改。  
+> RegPkg 生成特定于你开发的系统的路径名称，以便每次使用 RegPkg，必须编辑输出以供使用适当的 Windows 安装程序格式属性。 例如，InprocServer32 值应 **[SystemFolder]mscoree.dll**和路径应使用 **[#filekey]** 并 **[$componentkey]**。 调整以这种方式输出支持使用 Windows 安装在不同的驱动器上或在不同的目录、 本地化的目录名称和路径可供用户选择的计算机。 有关详细信息，请参阅[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows 安装程序 SDK 中。 为您开发的系统路径遵循 RegPkg 约定 — 例如，文件 Id 的窗体 File_*文件名*— 需要进行更少的更改。  
   
 ### <a name="to-create-a-registration-manifest"></a>若要创建注册清单  
   

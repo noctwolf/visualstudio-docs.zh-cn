@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432389"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ms.locfileid: "60070480"
  实现`GetCustomProperties`方法的类型描述符`ExampleModel`域类。  
   
 > [!NOTE]
->  DSL 工具生成的自定义类型描述符的代码`ExampleModel`调用`GetCustomProperties`; 但是，DSL 工具不会生成实现该方法的代码。  
+> DSL 工具生成的自定义类型描述符的代码`ExampleModel`调用`GetCustomProperties`; 但是，DSL 工具不会生成实现该方法的代码。  
   
  定义此方法将创建跟踪的跟踪属性的 Namespace 属性描述符。 此外，跟踪属性提供属性使**属性**窗口以正确显示属性。  
   
@@ -344,7 +344,7 @@ ms.locfileid: "60070480"
  实现`GetCustomElementsValue`方法`ExampleModel`域类。  
   
 > [!NOTE]
->  DSL 工具生成的代码`ExampleModel`调用`GetCustomElementsValue`; 但是，DSL 工具不会生成实现该方法的代码。  
+> DSL 工具生成的代码`ExampleModel`调用`GetCustomElementsValue`; 但是，DSL 工具不会生成实现该方法的代码。  
   
  定义`GetCustomElementsValue`方法提供逻辑的 CustomElements 计算属性`ExampleModel`。 此方法进行计数的`ExampleElement`具有跟踪属性有一个用户更新的值，并返回一个字符串，表示此计数为模型中的总元素的一定比例 Namespace 的域类。  
   
@@ -425,7 +425,7 @@ ms.locfileid: "60070480"
  此外，添加的存储和方法来获取和设置的 Namespace 自定义存储属性`ExampleElement`域类。  
   
 > [!NOTE]
->  DSL 工具生成的代码`ExampleModel`调用 get 和 set 方法; 但是，DSL 工具不会生成实现方法的代码。  
+> DSL 工具生成的代码`ExampleModel`调用 get 和 set 方法; 但是，DSL 工具不会生成实现方法的代码。  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>若要添加的自定义类型描述符的方法  
   
@@ -591,7 +591,7 @@ ms.locfileid: "60070480"
  添加代码以支持 XML 序列化自定义的后期加载行为。  
   
 > [!NOTE]
->  DSL 工具生成调用的代码`OnPostLoadModel`和`OnPostLoadModelAndDiagram`方法; 但是，DSL 工具不会生成实现这些方法的代码。  
+> DSL 工具生成调用的代码`OnPostLoadModel`和`OnPostLoadModelAndDiagram`方法; 但是，DSL 工具不会生成实现这些方法的代码。  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>若要添加代码以支持自定义的后期加载行为  
   

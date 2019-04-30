@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439749"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>层关系图扩展疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60098683"
 2. 删除以下文件夹： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
   
    > [!NOTE]
-   >  %Localappdata%通常是*DriveName*: \Users\\*用户名*\AppData\Local。  
+   > %Localappdata%通常是*DriveName*: \Users\\*用户名*\AppData\Local。  
   
    如有必要，请继续下一个过程。  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434110"
 ---
 # <a name="debug-multiple-processes"></a>调试多个进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60039690"
 - [开始调试 Visual Studio 解决方案中的多个进程](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution)•[更改启动项目](#BKMK_Change_the_startup_project)•[启动解决方案中的特定项目](#BKMK_Start_a_specific_project_in_a_solution)•[启动多个项目解决方案](#BKMK_Start_multiple_projects_in_a_solution)•[附加到进程](#BKMK_Attach_to_a_process)•[自动在调试器中启动的进程](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  调试器不会自动附加到调试进程所启动的子进程中，即使子项目位于同一个解决方案中。 调试子进程：  
+> 调试器不会自动附加到调试进程所启动的子进程中，即使子项目位于同一个解决方案中。 调试子进程：  
 > 
 > - 在子进程启动后附加到该子进程。  
 > 
@@ -166,7 +166,7 @@ ms.locfileid: "60039690"
 ### <a name="BKMK_Break__step__and_continue_commands"></a>中断、单步执行和继续命令  
   
 > [!NOTE]
->  默认情况下，中断、继续和分步调试器命令会影响所有正在调试的进程。 若要更改此行为，请参阅[配置多个进程的执行行为](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> 默认情况下，中断、继续和分步调试器命令会影响所有正在调试的进程。 若要更改此行为，请参阅[配置多个进程的执行行为](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ ms.locfileid: "60039690"
   例如，如果您开始调试 Visual Studio 解决方案中的进程，附加到已在运行，另一个进程，然后选择**停止调试**，则在调试会话结束，在 Visual Studio 中启动进程被终止，而您附加的进程将保持运行。 您可以使用以下过程控制停止调试的方法。  
   
 > [!NOTE]
->  **一个进程中断时则中断所有进程**选项不影响停止调试或终止进程以及与进程分离。  
+> **一个进程中断时则中断所有进程**选项不影响停止调试或终止进程以及与进程分离。  
   
  **若要更改如何停止调试影响单个进程**  
   

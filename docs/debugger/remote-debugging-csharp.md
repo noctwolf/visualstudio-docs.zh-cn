@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408533"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试C#或 Visual Studio 中的 Visual Basic 项目
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>远程调试 Visual Studio 中的 C# 或 Visual Basic 项目
 若要调试已部署在另一台计算机的 Visual Studio 应用程序，安装和在其中部署您的应用程序的计算机上运行远程工具、 将项目配置为从 Visual Studio 中，连接到远程计算机，然后运行应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -90,7 +90,7 @@ ms.locfileid: "58355158"
 10. 将你刚才从 Visual Studio 计算机生成的可执行文件复制到远程计算机上新创建的文件夹。
 
     > [!CAUTION]
-    >  对代码或重新生成不会进行任何更改 （或必须重复此步骤）。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。
+    > 对代码或重新生成不会进行任何更改 （或必须重复此步骤）。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。
 
     可以手动复制该项目，使用 Xcopy、 Robocopy、 Powershell 或其他选项。
 

@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439348"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "59664984"
 |`ResolvedAssemblyReferences`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定已解析的程序集引用。|  
 |`ResolvedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定磁盘上的完全限定文件，这些文件与作为此任务的输入提供的类型库的物理位置相对应。|  
 |`ResolvedModules`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。|  
-|`SdkToolsPath`|可选 [String] (<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果 `ExecuteAsTool` 为 `true`，则必须将此参数设置为作为目标的框架版本的 SDK 工具路径。|  
+|`SdkToolsPath`|可选 [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) 参数。<br /><br /> 如果 `ExecuteAsTool` 为 `true`，则必须将此参数设置为作为目标的框架版本的 SDK 工具路径。|  
 |`StateFile`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定 COM 组件时间戳的缓存文件。 如果不存在，则每次运行将重新生成所有包装器。|  
 |`TargetFrameworkVersion`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定项目目标框架版本。<br /><br /> 默认值为 `String.Empty`。 这意味着没有基于目标框架的引用的筛选。|  
 |`TargetProcessorArchitecture`|Optional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> 参数。<br /><br /> 指定首选的目标处理器体系结构。 转换后传递给 tlbimp.exe /machine 标志。<br /><br /> 参数值应属于 <xref:Microsoft.Build.Utilities.ProcessorArchitecture>。|  
@@ -75,7 +75,7 @@ ms.locfileid: "59664984"
 |`WrapperTool`|可选项元数据。<br /><br /> 指定用于生成此类型库的程序集包装器的包装工具。 如果未指定此项元数据，任务将使用默认包装工具“tlbimp”。 可供类型库使用且区分大小写的选项有：<br /><br /> -   `Primary`：如果希望使用已为 COM 组件生成的主互操作程序集，请使用此包装工具。 使用此包装工具时，请勿指定包装器输出目录，否则任务会失败。<br />-   `TLBImp`：如果希望为 COM 组件生成互操作程序集，请使用此包装工具。<br />-   `AXImp`：如果希望为 ActiveX 控件生成互操作程序集，请使用此包装工具。|  
   
 > [!NOTE]
->  为类型库提供的唯一标识符信息越多，任务能解析磁盘上正确文件的可能性就越大。  
+> 为类型库提供的唯一标识符信息越多，任务能解析磁盘上正确文件的可能性就越大。  
   
 ## <a name="remarks"></a>备注  
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Utilities.Task> 类继承参数。 有关这些其他参数的列表及其说明，请参阅[任务基类](../msbuild/task-base-class.md)。  

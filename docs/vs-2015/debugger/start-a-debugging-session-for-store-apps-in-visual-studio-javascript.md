@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427294"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>在 Visual Studio 中为应用商店应用启动调试会话 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60105083"
  本主题介绍如何针对用 JavaScript 和 HTML5 编写的 Windows 应用商店应用启动调试会话。 你可以使用单个按键启动调试，或者你可以为特定的场景配置调试会话，然后选择启动应用的方式。
 
 > [!NOTE]
->  编写 XAML 和视觉对象中的应用C#、 Visual C++，或 Visual Basic，请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> 编写 XAML 和视觉对象中的应用C#、 Visual C++，或 Visual Basic，请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> 在本主题中
  [在本主题中](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ ms.locfileid: "60105083"
    ![选择远程调试器连接](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  “选择远程调试器连接”对话框显示本地子网上的计算机以及通过以太网电缆直接连接到 Visual Studio 计算机的计算机。 若要指定其他计算机，请在 **“计算机名称”** 框中输入名称。
+  > “选择远程调试器连接”对话框显示本地子网上的计算机以及通过以太网电缆直接连接到 Visual Studio 计算机的计算机。 若要指定其他计算机，请在 **“计算机名称”** 框中输入名称。
 
   ![仅适用于 Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ ms.locfileid: "60105083"
  若要将已安装的应用程序设置为在调试模式中运行，请执行下列操作：
 
 > [!NOTE]
->  在你启动此过程时，应用程序不得运行。
+> 在你启动此过程时，应用程序不得运行。
 
 1. 在 **“调试”** 菜单上，选择 **“调试安装的应用程序包”**
 
@@ -226,9 +226,9 @@ ms.locfileid: "60105083"
 ### <a name="BKMK_Attach_the_debugger"></a> 附加调试器
 
 > [!TIP]
->  JavaScript 应用使用 wwahost.exe 进程的实例运行。 附加到应用时，如果其他 JavaScript 应用正在运行，你将需要了解应用正在运行的 wwahost.exe 的数字进程 ID (PID)。
+> JavaScript 应用使用 wwahost.exe 进程的实例运行。 附加到应用时，如果其他 JavaScript 应用正在运行，你将需要了解应用正在运行的 wwahost.exe 的数字进程 ID (PID)。
 >
->  处理此情形的最简单方法是关闭所有其他 JavaScript 应用。 否则，你可以在启动应用之前打开 Windows 任务管理器并记下 wwahost.exe 进程的 ID。 当你指定要附加到进程**可用进程**对话框中，该应用的 wwahost.exe 具有不同于你记录的 id。
+> 处理此情形的最简单方法是关闭所有其他 JavaScript 应用。 否则，你可以在启动应用之前打开 Windows 任务管理器并记下 wwahost.exe 进程的 ID。 当你指定要附加到进程**可用进程**对话框中，该应用的 wwahost.exe 具有不同于你记录的 id。
 
  若要附加调试器，请执行以下操作：
 

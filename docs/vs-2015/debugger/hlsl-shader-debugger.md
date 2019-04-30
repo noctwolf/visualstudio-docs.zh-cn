@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410188"
 ---
 # <a name="hlsl-shader-debugger"></a>HLSL 着色器调试器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器
 2. 在管道阶段标题下，选择“开始调试”（显示为小绿色箭头）。  
   
     > [!NOTE]
-    >  HLSL 调试器中的此入口点仅调试对应阶段的第一个着色器线程，即处理的第一个顶点或像素。 可以使用“像素历史记录”来访问这些着色器阶段的其他线程。  
+    > HLSL 调试器中的此入口点仅调试对应阶段的第一个着色器线程，即处理的第一个顶点或像素。 可以使用“像素历史记录”来访问这些着色器阶段的其他线程。  
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>从“图形像素历史记录”窗口启动 HLSL 调试器  
   
@@ -71,7 +71,7 @@ Visual Studio 图形分析器中的 HLSL 调试器可帮助了解 HLSL 着色器
     在所选着色器的右侧，选择“开始调试”（显示为小绿色箭头）。  
   
    > [!NOTE]
-   >  HLSL 调试器中的此入口点调试与你选择的绘图调用、基元和像素对应的像素着色器线程，或调试与通过你选择的绘图调用、基元和像素来插入结果的顶点着色器线程对应的像素着色器线程。 对于顶点着色器，可通过展开顶点着色器详细信息，将入口点进一步细化到特定顶点。  
+   > HLSL 调试器中的此入口点调试与你选择的绘图调用、基元和像素对应的像素着色器线程，或调试与通过你选择的绘图调用、基元和像素来插入结果的顶点着色器线程对应的像素着色器线程。 对于顶点着色器，可通过展开顶点着色器详细信息，将入口点进一步细化到特定顶点。  
   
    有关如何使用 HLSL 调试器来调试着色器错误的示例，请参阅[示例](../debugger/graphics-diagnostics-examples.md)或在另请参见部分的演练链接。  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435382"
 ---
 # <a name="transition-activity-designer"></a>事务活动设计器
 <xref:System.Activities.Statements.Transition> 表示两个状态间的转换。  
@@ -40,7 +40,7 @@ ms.locfileid: "58931416"
  通过将某行从一个状态拖到另一个状态，或在从一个状态拖动到另一个状态时通过将状态拖放到出现的三角形上，来创建转换。 若要通过拖动来创建转换，请将鼠标悬停在源状态的边缘，并将某行从源状态拖到目标状态。 若要通过拖放方式创建转换，请拖动目标状态并将其悬停在源状态，将它拖到源状态周围显示的四个三角形之一。 目标状态可以是从的新状态**工具箱**，或从工作流设计器中拖动的现有状态。  
   
 > [!NOTE]
->  状态机中的单个状态使用工作流设计器可以创建多达 76 个转换。 对在设计器外创建的工作流状态的转换限制只受系统资源限制。  
+> 状态机中的单个状态使用工作流设计器可以创建多达 76 个转换。 对在设计器外创建的工作流状态的转换限制只受系统资源限制。  
   
  共享触发器转换是共享相同的触发事件的一组转换。 共享触发器基于为共享公用触发器事件的多个转换配置的表达式评估结果，允许有条件转换到目标状态。 若要将其他操作添加到转换和创建共享转换，请单击指示所需转换的开始的圆并将它拖到所需的状态。 新转换将与初始转换共享相同的触发器，但它将具有一个唯一的条件和操作。 共享的转换还可以创建从在转换设计器通过单击**添加共享的触发器转换**底部的转换设计器，然后选择所需的目标状态从**若要连接的可用状态**下拉列表。  
   

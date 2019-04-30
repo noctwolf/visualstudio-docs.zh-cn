@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431271"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何：添加特定的 Finder 方法
   可以通过创建返回单个实体实例*特定的 Finder*方法。 在用户在业务数据 web 部件或外部列表中选择一个实体时，业务数据连接 (BDC) 服务将执行特定的 Finder 方法。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -58,10 +58,10 @@ ms.locfileid: "56615281"
 5. 将返回参数的类型描述符配置为实体类型描述符。 有关如何创建实体类型描述符的信息，请参阅[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
    > [!NOTE]
-   >  您无需执行此步骤，如果为实体添加查找程序方法。 Visual Studio 使用查找程序方法中定义的类型描述符。
+   > 您无需执行此步骤，如果为实体添加查找程序方法。 Visual Studio 使用查找程序方法中定义的类型描述符。
 
    > [!NOTE]
-   >  如果实体类型的标识符字段表示自动生成的数据库表中的字段，设置**只读**属性的标识符字段**True**。
+   > 如果实体类型的标识符字段表示自动生成的数据库表中的字段，设置**只读**属性的标识符字段**True**。
 
 6. 在中**方法的详细信息**窗口中，选择方法实例的方法。
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615281"
      下面的示例适用于 SQL Server 返回 AdventureWorks 示例数据库中的联系人。
 
      > [!NOTE]
-     >  值替换为`ServerName`字段与服务器的名称。
+     > 值替换为`ServerName`字段与服务器的名称。
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

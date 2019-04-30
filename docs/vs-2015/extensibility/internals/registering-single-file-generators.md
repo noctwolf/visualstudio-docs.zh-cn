@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436596"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60055413"
          必需。 指示是否通过此自定义工具生成的文件中的类型将提供给可视化设计器。 此参数的值必须是类型向可视化设计器不可用 （零） 0 或类型可用于可视化设计器 （一个） 1。  
   
     > [!NOTE]
-    >  必须注册为其所需的自定义工具，可用于每种语言单独的自定义工具。  
+    > 必须注册为其所需的自定义工具，可用于每种语言单独的自定义工具。  
   
      例如，MSDataSetGenerator 自行注册一次为每种语言：  
   

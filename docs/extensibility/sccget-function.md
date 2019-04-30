@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434656"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数可检索一个或多个文件用于查看和编译但不能用于编辑的副本。 在大多数系统中，将文件标记为只读的。
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`可以结合标志`SCC_GET_RECURSIVE`标志，用于检索在给定目录中的所有文件和所有子目录。
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` 应永远不会传递而无需`SCC_GET_ALL`。 此外，请注意，如果目录*C:\A*和*C:\A\B*两者上递归 get，传递*C:\A\B*和实际上将两次检索所有的子目录。 IDE 的负责 — 并不是源代码管理插件的 — 若要确保从数组的保持这种重复项。
+> `SCC_GET_RECURSIVE` 应永远不会传递而无需`SCC_GET_ALL`。 此外，请注意，如果目录*C:\A*和*C:\A\B*两者上递归 get，传递*C:\A\B*和实际上将两次检索所有的子目录。 IDE 的负责 — 并不是源代码管理插件的 — 若要确保从数组的保持这种重复项。
 
  最后，即使在进行源代码管理插件指定`SCC_CAP_GET_NOUI`上初始化，表示它没有 Get 命令的用户界面，在 IDE 中检索文件可能仍调用此函数的标志。 该标志只是意味着 IDE 不会显示 Get 菜单项和，该插件不需要提供任何 UI。
 

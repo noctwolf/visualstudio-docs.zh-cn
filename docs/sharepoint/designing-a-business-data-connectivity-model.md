@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431289"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>设计业务数据连接模型
   可以通过将实体和方法添加到模型文件来开发业务数据连接 (BDC) 服务的模型。 实体描述数据字段的集合。 例如，实体可以表示在数据库中的表。 一种方法执行如添加、 删除或更新实体所表示的数据的任务。 有关详细信息，请参阅[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
@@ -96,7 +96,7 @@ ms.locfileid: "56628411"
  此外可以设置单独的模型或外部内容类型的安全权限。 有关如何设置模型的安全权限的详细信息，请参阅[BDC 模型管理](http://go.microsoft.com/fwlink/?LinkID=178884)。 有关如何设置外部内容类型的安全权限的详细信息，请参阅[外部内容类型管理](http://go.microsoft.com/fwlink/?LinkID=178885)。
 
 > [!NOTE]
->  使用这些设置来调试你的本地 SharePoint 服务器上的解决方案。 有关如何在生产 SharePoint 服务器上配置 BDC 相关安全性设置的详细信息，请参阅[Business Data Connectivity Services 安全性概述](http://go.microsoft.com/fwlink/?LinkID=178886)。
+> 使用这些设置来调试你的本地 SharePoint 服务器上的解决方案。 有关如何在生产 SharePoint 服务器上配置 BDC 相关安全性设置的详细信息，请参阅[Business Data Connectivity Services 安全性概述](http://go.microsoft.com/fwlink/?LinkID=178886)。
 
 ### <a name="retract-models-that-become-corrupt"></a>收回损坏的模型
  当您第一次启动调试器时，Visual Studio 会将整个模型部署到 SharePoint。 每次之后，Visual Studio 使用的部署之间所做的任何更改更新 SharePoint 中的模型。

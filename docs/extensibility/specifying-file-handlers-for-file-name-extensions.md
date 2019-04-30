@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434546"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定文件扩展名的文件处理程序
 有多种方法来确定处理特定文件扩展名的文件的应用程序。 OpenWithList 和 OpenWithProgids 谓词是两种方法来指定文件的文件扩展名的注册表项之下的处理程序。
@@ -34,7 +34,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
->  指定应用程序的键是从 HKEY_CLASSES_ROOT\Applications 下的列表。
+> 指定应用程序的键是从 HKEY_CLASSES_ROOT\Applications 下的列表。
 
  添加 OpenWithList 键，来声明你的应用程序支持文件扩展名，即使另一个应用程序将获得该扩展的所有权。 这可能是你的应用程序或其他应用程序的未来版本。
 
@@ -50,7 +50,7 @@ HKEY_CLASSES_ROOT\
  您可以注册不同的应用程序能够打开特定文件扩展名，请将版本控制的 Progid 作为值添加到 HKEY_CLASSES_ROOT\\*\<扩展 >* \OpenWithProgids 密钥。 此注册表项包含文件扩展名关联的备用 Progid 的列表。 在显示与列出的 Progid 关联的应用程序**打开**_产品名称_子菜单。 如果同一应用程序中同时指定`OpenWithList`和`OpenWithProgids`密钥，操作系统将合并重复项。
 
 > [!NOTE]
->  `OpenWithProgids`密钥仅支持在 Windows XP 中。 因为其他操作系统忽略此密钥，请不要使用它作为唯一的注册文件处理程序。 使用此密钥来提供在 Windows XP 中更好的用户体验。
+> `OpenWithProgids`密钥仅支持在 Windows XP 中。 因为其他操作系统忽略此密钥，请不要使用它作为唯一的注册文件处理程序。 使用此密钥来提供在 Windows XP 中更好的用户体验。
 
  将所需的 Progid 添加为类型 REG_NONE 的值。 下面的代码提供注册文件扩展名的 Progid 的示例 (。*ext*)。
 

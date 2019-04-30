@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437321"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>如何：调试部分信任应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60106860"
  您可以在以后返回并查看自己在调试期间添加了哪些权限。 如果你在调试期间必须添加权限，则可能表示你需要在代码中相应的点添加“用户同意提示”。  
   
 > [!NOTE]
->  调试器可视化工具要求比部分信任的应用程序允许的特权更大的特权。 在部分信任的代码中停止时，可视化工具不会加载。 若要使用可视化工具进行调试，必须运行完全信任的代码。  
+> 调试器可视化工具要求比部分信任的应用程序允许的特权更大的特权。 在部分信任的代码中停止时，可视化工具不会加载。 若要使用可视化工具进行调试，必须运行完全信任的代码。  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>为部分信任的应用程序选择一个区域  
   

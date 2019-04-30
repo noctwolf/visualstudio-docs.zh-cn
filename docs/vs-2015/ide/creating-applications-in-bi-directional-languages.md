@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437595"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104975"
 通过使用 Visual Studio，可以创建能正确显示从右向左书写的语言（包括阿拉伯语和希伯来语）文本的应用程序。 对于某些功能，只需设置属性即可。 而在其他一些情况下，必须通过代码来实现功能。  
   
 > [!NOTE]
->  若要输入和显示双向语言，必须使用已配置相应语言的 Windows 版本。 可以是安装了适当语言包的英文版 Windows，或者是已相应本地化的 Windows 版本。  
+> 若要输入和显示双向语言，必须使用已配置相应语言的 Windows 版本。 可以是安装了适当语言包的英文版 Windows，或者是已相应本地化的 Windows 版本。  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>支持双向语言的应用程序类型  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60104975"
 - 文件内容。 可使用 Unicode 编码或选定的代码页来打开或保存文件。  
   
     > [!NOTE]
-    >  代码编辑器的情况比较特殊。 有关详细信息，请参见以下内容。  
+    > 代码编辑器的情况比较特殊。 有关详细信息，请参见以下内容。  
   
 - 数据元素。 “服务器资源管理器”将正确显示这些元素，并允许对其进行编辑。  
   
@@ -79,10 +79,10 @@ ms.locfileid: "60104975"
 - 代码和文本。 在代码编辑器（也是文本编辑器）中，可使用阿拉伯语或希伯来语命名类、函数、变量、属性、字符串文本、特性，等等。 但是，编辑器不支持从右向左的读取顺序；文本总是从左边开始。  
   
     > [!TIP]
-    >  建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参见[演练：本地化 Windows 窗体](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    > 建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参见[演练：本地化 Windows 窗体](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   
     > [!NOTE]
-    >  用这些语言命名的对象的引用方式必须保持一致。 例如，如果使用 Kashida 命名阿拉伯语变量，则引用该变量时必须总是使用 Kashida，否则会产生错误。  
+    > 用这些语言命名的对象的引用方式必须保持一致。 例如，如果使用 Kashida 命名阿拉伯语变量，则引用该变量时必须总是使用 Kashida，否则会产生错误。  
   
 - 代码注释。 可使用阿拉伯语或希伯来语创建注释。 还可在注释生成器工具中使用这些语言。  
   

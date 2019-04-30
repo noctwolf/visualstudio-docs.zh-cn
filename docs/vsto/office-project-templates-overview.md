@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438777"
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：
@@ -77,7 +77,7 @@ ms.locfileid: "60054568"
   “Word 模板”和“Excel 模板”项目模板的工作方式与“Word 文档”和“Excel 工作簿”项目模板相同。 但是，用户可以使用“Word 模板”和“Excel 模板”项目模板轻松地为解决方案中的自定义模板创建新的本地文档或工作簿副本。 用户从模板创建的新文档中提供了你的解决方案中的功能。
 
 > [!NOTE]
->  引用托管代码扩展的 Word 模板不能被用作全局 VSTO 外接程序。如果从 Word 的 Startup 目录加载模板，则不会调用该程序集。 有关详细信息，请参阅[全局模板和 Excel 外接程序 （.xla 文件） 的限制](#Limitations)
+> 引用托管代码扩展的 Word 模板不能被用作全局 VSTO 外接程序。如果从 Word 的 Startup 目录加载模板，则不会调用该程序集。 有关详细信息，请参阅[全局模板和 Excel 外接程序 （.xla 文件） 的限制](#Limitations)
 
  有关这些项目类型的入门信息，请参阅下列主题：
 

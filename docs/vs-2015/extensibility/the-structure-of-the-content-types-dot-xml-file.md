@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77810368ea6eea8f31a660e6487091459962e0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4117e028611c2ff64102a97579d17d72f50407e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430158"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>结构的 Content_types].xml 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58935229"
 包含有关的 VSIX 包中的内容类型的信息。 Visual Studio 使用 [Content_Types].xml 文件来安装包，但它不会安装文件本身。  
   
 > [!NOTE]
->  本主题仅适用于 VSIX 包中使用的 [Content_Type].xml 文件，尽管 [Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC:新标准的打包数据](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。  
+> 本主题仅适用于 VSIX 包中使用的 [Content_Type].xml 文件，尽管 [Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC:新标准的打包数据](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。  
   
 ## <a name="attributes-and-elements"></a>特性和元素  
  以下部分介绍的根元素及其属性和子元素。  
@@ -45,7 +45,7 @@ ms.locfileid: "58935229"
   
 ### <a name="attribute-name-attribute"></a>{属性名称}属性  
   
-|                           值                           |                描述                |
+|                           “值”                           |                描述                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | 内容类型架构的位置。 |
   

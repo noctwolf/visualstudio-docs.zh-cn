@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3feb17c2cfc51326f125fb6991b37ccde1f9b1bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438566"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>演练：使用内容控件创建模板
   本演练演示如何创建使用内容控件在 Microsoft Office Word 模板中创建可重用结构化内容的文档级自定义项。
@@ -83,7 +83,7 @@ ms.locfileid: "60074370"
 5. 在功能区上，单击 **“开发人员”** 选项卡。
 
    > [!NOTE]
-   >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+   > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 6. 在中**控件**组中，单击**文本**按钮![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")添加<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>到第一个单元格。
 

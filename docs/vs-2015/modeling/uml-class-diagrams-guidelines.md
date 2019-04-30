@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424493"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 类图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60088881"
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  本主题针对 UML 类图。 还可以创建另一种类图，它用于可视化程序代码。 请参阅[设计和查看类和类型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
+> 本主题针对 UML 类图。 还可以创建另一种类图，它用于可视化程序代码。 请参阅[设计和查看类和类型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
 ## <a name="Using"></a> 使用 UML 类图  
  UML 类图有多种用途：  
@@ -82,7 +82,7 @@ ms.locfileid: "60088881"
  有关参考信息的元素的 UML 类图，请参阅[UML 类图：参考](../modeling/uml-class-diagrams-reference.md)。  
   
 > [!NOTE]
->  创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+> 创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
 #### <a name="to-create-a-uml-class-diagram"></a>创建 UML 类图  
   
@@ -185,7 +185,7 @@ ms.locfileid: "60088881"
   还可以写入尚未在模型中定义的类型的名称。 此名称将下方列出**未指定的类型**UML 模型资源管理器中。  
   
 > [!NOTE]
->  如果你随后在模型中定义一个具有此名称的类或接口，则以前的特性和操作仍将引用“未指定的类型”中的元素。 如果你希望将其更改为引用新类，则必须访问每个特性或操作，并通过从下拉菜单中选择新类来重新设置类型。  
+> 如果你随后在模型中定义一个具有此名称的类或接口，则以前的特性和操作仍将引用“未指定的类型”中的元素。 如果你希望将其更改为引用新类，则必须访问每个特性或操作，并通过从下拉菜单中选择新类来重新设置类型。  
   
 #### <a name="multiple-types"></a>多个类型  
  可以设置任何特性、操作或参数类型的重数。  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  每个类型都可为模型中已定义的类型、诸如 Integer 或 String 之类的标准类型或者尚未定义的新类型的名称。  
   
 > [!NOTE]
->  如果在参数列表中写入名称而不带类型，则该名称指示参数的名称而不是参数的类型。 在下例中，MenuItem 和 Integer 成为没有指定类型的两个参数的名称：  
+> 如果在参数列表中写入名称而不带类型，则该名称指示参数的名称而不是参数的类型。 在下例中，MenuItem 和 Integer 成为没有指定类型的两个参数的名称：  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  若要在签名中设置类型的重数，请将重数写入方括号，放在类型名称之后，例如：  
   

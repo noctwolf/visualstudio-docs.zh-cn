@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436306"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 菜单中的 GUID 和 ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -180,7 +180,7 @@ ms.locfileid: "58937807"
  以下层次结构显示了与 Visual Studio 菜单栏上的菜单相关联的子菜单。 由于仅允许一组可作为其父菜单，因此每个子菜单必须降从组在菜单上，而不是直接从菜单。 有关菜单、 组和子菜单之间的关系的详细信息，请参阅[将子菜单添加到菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。
 
 > [!NOTE]
->  在 Visual Studio 菜单栏上的菜单名称单独不显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示：IDG_VS_*菜单名称*_*组名称*。
+> 在 Visual Studio 菜单栏上的菜单名称单独不显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示：IDG_VS_*菜单名称*_*组名称*。
 
 |父组|子菜单|子组|
 |------------------|-------------|------------------|

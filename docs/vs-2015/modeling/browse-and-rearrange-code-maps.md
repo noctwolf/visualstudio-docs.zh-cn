@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433442"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>浏览和重新排列代码图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ ms.locfileid: "60055244"
 - 聚合链接表示两个组之间所有指向同一方向的关系。  
   
 > [!TIP]
->  默认情况下，代码图仅对所选节点显示跨组链接。 若要更改此行为，以显示或隐藏组之间的聚合的链接，请单击**布局**的代码图工具栏，然后选择**高级**，然后**显示所有跨组链接**或**隐藏所有跨组链接**。 请参阅[隐藏或显示节点和链接](#HidingShowing)的更多详细信息。  
+> 默认情况下，代码图仅对所选节点显示跨组链接。 若要更改此行为，以显示或隐藏组之间的聚合的链接，请单击**布局**的代码图工具栏，然后选择**高级**，然后**显示所有跨组链接**或**隐藏所有跨组链接**。 请参阅[隐藏或显示节点和链接](#HidingShowing)的更多详细信息。  
   
 |**若要**|**执行这些步骤**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ ms.locfileid: "60055244"
  隐藏节点将阻止节点参与布局算法。 默认情况下，将隐藏跨组链接。 跨组链接是连接跨组节点的单个链接。 如果组处于折叠状态，则代码图会将所有跨组链接聚合为组之间的单个链接。 当你展开一个组并选择该组内的节点时，跨组链接将出现并将显示组内的依赖项。  
   
 > [!CAUTION]
->  在你与使用 Visual Studio Professional 的用户共享在 Visual Studio Enterprise 中创建的代码图之前，请确保取消隐藏你希望其他人看到的所有节点或跨组链接。 否则，这些用户将无法取消隐藏这些项目。  
+> 在你与使用 Visual Studio Professional 的用户共享在 Visual Studio Enterprise 中创建的代码图之前，请确保取消隐藏你希望其他人看到的所有节点或跨组链接。 否则，这些用户将无法取消隐藏这些项目。  
   
 ### <a name="to-hide-or-show-nodes"></a>隐藏或显示节点  
   
@@ -153,7 +153,7 @@ ms.locfileid: "60055244"
  可以在代码图上显示更多或更少项，以便向下钻取或简化代码图。 你也可以重命名项，并将注释添加到项。  
   
 > [!CAUTION]
->  在你与使用 Visual Professional 的用户共享使用 Visual Studio Enterprise 创建的代码图之前，请确保你希望其他人看到的代码元素在代码图上可见。 否则，这些用户将无法检索已删除的代码元素。  
+> 在你与使用 Visual Professional 的用户共享使用 Visual Studio Enterprise 创建的代码图之前，请确保你希望其他人看到的代码元素在代码图上可见。 否则，这些用户将无法检索已删除的代码元素。  
   
 ### <a name="add-a-node-for-a-code-element"></a>为代码元素添加节点  
   
@@ -267,7 +267,7 @@ ms.locfileid: "60055244"
 3. 如果列表不包含类别或属性，选择**+** 中**图例**，然后选择**节点属性**，**节点类别**，**链接属性**，或**链接类别**。 然后选择属性或类别。 类别或属性现在显示在**图例**框。  
   
     > [!NOTE]
-    >  若要创建并向代码元素分配一个类别或属性，可以编辑图的.dgml 文件;请参阅[通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+    > 若要创建并向代码元素分配一个类别或属性，可以编辑图的.dgml 文件;请参阅[通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
 4. 在中**图例**框中，单击类别或你添加的属性旁边的图标或你想要更改。  
   
@@ -290,7 +290,7 @@ ms.locfileid: "60055244"
     |特定颜色或图标|打开类别或属性值列表。 选择颜色或图标。|  
   
     > [!NOTE]
-    >  您可以重新排列、 删除或暂时禁用中的样式**图例**框。 请参阅[编辑图例框](#ModifyLegend)。  
+    > 您可以重新排列、 删除或暂时禁用中的样式**图例**框。 请参阅[编辑图例框](#ModifyLegend)。  
   
 ## <a name="ModifyLegend"></a> 编辑图例框  
  您可以重新排列、 删除或暂时禁用中的样式**图例**框：  

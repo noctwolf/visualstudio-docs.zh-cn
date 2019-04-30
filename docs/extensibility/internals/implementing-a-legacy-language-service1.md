@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88db1e11286c022552419fa70bb6847d36035c36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420498"
 ---
 # <a name="implementing-a-legacy-language-service"></a>实现旧版语言服务
 您可以使用托管的包框架 (MPF) 中的类来实现旧版语言服务支持各种功能，如语法突出显示、 大括号匹配和 IntelliSense 完成。
@@ -23,7 +23,7 @@ ms.locfileid: "56602853"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
 ## <a name="in-this-section"></a>本节内容
 - [旧版语言服务概述](../../extensibility/internals/legacy-language-service-overview.md)
@@ -46,7 +46,7 @@ ms.locfileid: "56602853"
 
  提供在 VSPackage 中实现的 MPF 语言服务所需的基本步骤。
 
-- [演练：获取安装的代码片段 （旧版实现） 的列表](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [演练：获取包含已安装的代码片段的列表（旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
  演示如何检索已安装的代码片段的列表的技术。
 

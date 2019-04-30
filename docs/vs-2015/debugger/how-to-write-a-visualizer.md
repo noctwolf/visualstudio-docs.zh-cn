@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0d27b8a326f72098df7f700c2bc3fac8b85e109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ce50276e4e83a1a055294c8e2b6e09cd0f93d54d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440170"
 ---
 # <a name="how-to-write-a-visualizer"></a>如何：编写可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092924"
 可以为任何托管类（除 <xref:System.Object> 或 <xref:System.Array> 之外）的对象编写自定义可视化工具。  
   
 > [!NOTE]
->  在中**Store**应用，仅在标准文本支持 HTML、 XML 和 JSON 可视化工具。 不支持自定义（用户创建的）可视化工具。  
+> 在中**Store**应用，仅在标准文本支持 HTML、 XML 和 JSON 可视化工具。 不支持自定义（用户创建的）可视化工具。  
   
  调试器可视化工具的结构由两部分组成：  
   

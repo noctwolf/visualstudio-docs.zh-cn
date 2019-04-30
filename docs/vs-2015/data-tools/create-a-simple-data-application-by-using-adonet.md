@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436978"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60047420"
  本文演示了以非常快的方式获取数据，这个数据库的简单方法。 如果你的应用程序需要修改重要的方法中的数据并更新数据库，则应考虑使用实体框架和使用数据绑定，以自动同步到基础数据中的更改的用户界面控件。  
   
 > [!IMPORTANT]
->  要使代码保持简单，请不要包括生产就绪的异常处理。  
+> 要使代码保持简单，请不要包括生产就绪的异常处理。  
   
  **在本主题中**  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60047420"
 3. 对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。  
   
    > [!NOTE]
-   >  分组框和标签控件可提高清晰度，但不在代码中使用。  
+   > 分组框和标签控件可提高清晰度，但不在代码中使用。  
   
    **Navigation 窗体**  
   
@@ -135,7 +135,7 @@ ms.locfileid: "60047420"
 5. 在中**值**列中，输入连接字符串 （而无需任何外部引号），然后保存所做的更改。  
   
 > [!NOTE]
->  在实际的应用程序，您应在连接字符串，安全地存储中所述[连接字符串和配置文件](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
+> 在实际的应用程序，您应在连接字符串，安全地存储中所述[连接字符串和配置文件](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> 检索连接字符串  
   

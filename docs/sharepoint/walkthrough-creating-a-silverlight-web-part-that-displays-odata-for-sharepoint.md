@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430389"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练：创建显示 SharePoint OData 的 Silverlight web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，由 RESTful 服务 ListData.svc 实现 OData 服务。 本演练演示如何创建承载 Silverlight 应用程序的 SharePoint web 部件。 Silverlight 应用程序使用 ListData.svc 显示 SharePoint 公告列表信息。 有关详细信息，请参阅[SharePoint Foundation REST 接口](http://go.microsoft.com/fwlink/?LinkId=225999)并[开放数据协议](http://go.microsoft.com/fwlink/?LinkId=226000)。
@@ -35,7 +35,7 @@ ms.locfileid: "60058247"
  首先，在 Visual Studio 中创建 Silverlight 应用程序。 Silverlight 应用程序通过使用 ListData.svc 服务从 SharePoint Announcements 列表检索数据。
 
 > [!NOTE]
->  任何版本的 Silverlight 4.0 之前引用 SharePoint 列表数据不支持所需的接口。
+> 任何版本的 Silverlight 4.0 之前引用 SharePoint 列表数据不支持所需的接口。
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>若要创建 Silverlight 应用程序和 Silverlight web 部件
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058247"
 2. 在中**解决方案资源管理器**，打开快捷菜单**引用**，然后选择**添加服务引用**。
 
     > [!NOTE]
-    >  如果您正在使用 Visual Basic，则必须选择**显示所有文件**顶部的图标**解决方案资源管理器**以显示**引用**节点。
+    > 如果您正在使用 Visual Basic，则必须选择**显示所有文件**顶部的图标**解决方案资源管理器**以显示**引用**节点。
 
 3. 中的地址框**添加服务引用**对话框框中，输入您的 SharePoint 站点的 URL，例如**http://MySPSite**，然后选择**转**按钮。
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058247"
      现在应显示 Silverlight web 部件从 SharePoint 站点发布数据。 默认情况下，页面存储在 SharePoint 中的站点页面列表。
 
     > [!NOTE]
-    >  在访问在 Silverlight 中跨域的数据时，Silverlight 可防止可以被用来利用 web 应用程序的安全漏洞。 如果在访问在 Silverlight 中的远程数据时遇到问题，请参阅[使服务跨域边界可用](http://go.microsoft.com/fwlink/?LinkId=223276)。
+    > 在访问在 Silverlight 中跨域的数据时，Silverlight 可防止可以被用来利用 web 应用程序的安全漏洞。 如果在访问在 Silverlight 中的远程数据时遇到问题，请参阅[使服务跨域边界可用](http://go.microsoft.com/fwlink/?LinkId=223276)。
 
 ## <a name="see-also"></a>请参阅
 - [为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)

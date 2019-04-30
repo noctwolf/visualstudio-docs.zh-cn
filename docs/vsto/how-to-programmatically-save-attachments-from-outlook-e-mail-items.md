@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 413cee4a768dcf2fe1b6b82b78e213db5b1df9b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419521"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>如何：以编程方式保存 Outlook 电子邮件项的附件
   此示例会在收件箱接收到电子邮件时将邮件中的附件保存到指定的文件夹中。
 
 > [!IMPORTANT]
->  此示例仅适用于添加名为的文件夹**TestFileSave** C 目录的根目录。
+> 此示例仅适用于添加名为的文件夹**TestFileSave** C 目录的根目录。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

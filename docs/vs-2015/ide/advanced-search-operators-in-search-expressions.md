@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408410"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>搜索表达式中的高级搜索运算符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54775569"
 通过使用高级的搜索运算符，您可以通过创建更复杂的搜索表达式较简单的优化内容搜索。 如下表所示，这些运算符可限制运行查询的上下文。  
   
 > [!WARNING]
->  输入的高级搜索运算符必须以冒号结尾并且逗号前不能有空格，这样搜索引擎才能识别这些运算符。  
+> 输入的高级搜索运算符必须以冒号结尾并且逗号前不能有空格，这样搜索引擎才能识别这些运算符。  
   
 |要搜索|使用|示例|结果|  
 |-------------------|---------|-------------|------------|  
@@ -42,11 +42,11 @@ ms.locfileid: "54775569"
   
 |编程语言|使用|  
 |--------------------------|---------|  
-|Visual Basic|code:vb<br /><br /> or<br /><br /> code:visualbasic|  
-|C#|code:C#<br /><br /> or<br /><br /> code:csharp|  
-|C++|code:cpp<br /><br /> or<br /><br /> code:c++<br /><br /> or<br /><br /> code:cplusplus|  
-|F#|code:f#<br /><br /> or<br /><br /> code:fsharp|  
-|JavaScript|code:javascript<br /><br /> or<br /><br /> code:js|  
+|Visual Basic|code:vb<br /><br /> 或<br /><br /> code:visualbasic|  
+|C#|code:c#<br /><br /> 或<br /><br /> code:csharp|  
+|C++|code:cpp<br /><br /> 或<br /><br /> code:c++<br /><br /> 或<br /><br /> code:cplusplus|  
+|F#|code:f#<br /><br /> 或<br /><br /> code:fsharp|  
+|JavaScript|code:javascript<br /><br /> 或<br /><br /> code:js|  
 |XAML|code:xaml|  
   
 ## <a name="see-also"></a>请参阅  

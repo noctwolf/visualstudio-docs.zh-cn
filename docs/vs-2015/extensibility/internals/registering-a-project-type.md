@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436630"
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58933733"
  在下面的示例中，从注册表语句提供默认路径和数据 （如果适用） 后, 跟的表包含每个语句的注册表脚本中的条目。 表提供了脚本条目和语句的附加信息。  
   
 > [!NOTE]
->  下面的注册表信息用于类型的示例和您将编写注册您的项目类型的注册表脚本中的条目的目的。 实际的条目和它们的用途可能因您的项目类型的特定要求。 您应查看可用于找到相似的项目进行开发，类型的一个示例，然后查看该示例注册表脚本。  
+> 下面的注册表信息用于类型的示例和您将编写注册您的项目类型的注册表脚本中的条目的目的。 实际的条目和它们的用途可能因您的项目类型的特定要求。 您应查看可用于找到相似的项目进行开发，类型的一个示例，然后查看该示例注册表脚本。  
   
  下面的示例是从 HKEY_CLASSES_ROOT。  
   

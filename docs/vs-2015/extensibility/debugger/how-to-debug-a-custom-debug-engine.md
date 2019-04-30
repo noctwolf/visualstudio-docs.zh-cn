@@ -11,12 +11,12 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7e710cec4536a5a1327580e56c60cb23ca36f4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436362"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：调试自定义调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "60039944"
 项目类型启动的调试引擎 (DE) 从<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着，受控制的实例的启动 DE[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]控制项目类型。 但是，该实例的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]不能调试 DE。 接下来是使你能够调试自定义设备的步骤。  
   
 > [!NOTE]
->  :   在"调试自定义调试引擎"过程中，你必须等待 DE 来启动，然后可以将附加到它。 如果 DE 启动时显示在 DE 开始后不久将一个消息框，您可以附加在该点，然后清除消息框以继续。 这样一来，您可以捕获所有 DE 事件。  
+> :   在"调试自定义调试引擎"过程中，你必须等待 DE 来启动，然后可以将附加到它。 如果 DE 启动时显示在 DE 开始后不久将一个消息框，您可以附加在该点，然后清除消息框以继续。 这样一来，您可以捕获所有 DE 事件。  
   
 > [!WARNING]
->  您必须具有远程调试安装，然后尝试以下过程。 请参阅[远程调试](../../debugger/remote-debugging.md)有关详细信息。  
+> 您必须具有远程调试安装，然后尝试以下过程。 请参阅[远程调试](../../debugger/remote-debugging.md)有关详细信息。  
   
 ### <a name="debugging-a-custom-debug-engine"></a>调试自定义调试引擎  
   

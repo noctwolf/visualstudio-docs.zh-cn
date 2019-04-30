@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434439"
 ---
 # <a name="how-to-model-3-d-terrain"></a>如何：三维地形模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60097474"
 2. 将平面添加到场景中。 在“工具箱”中的“形状”下，选择“平面”，然后将其移到设计图面。  
   
    > [!TIP]
-   >  为了使平面对象更易于使用，可以在设计图面中对向其添加框架。 在“选择”模式中，选择平面对象，然后在“模型编辑器”工具栏上，选择“框选对象”按钮。  
+   > 为了使平面对象更易于使用，可以在设计图面中对向其添加框架。 在“选择”模式中，选择平面对象，然后在“模型编辑器”工具栏上，选择“框选对象”按钮。  
   
 3. 进入面选择模式。 在“模型编辑器”工具栏上，选择“选择面”。  
   
@@ -62,7 +62,7 @@ ms.locfileid: "60097474"
 7. 修改点以创建地形特征。 在点选择模式中，选择其中一个点，然后在“模型编辑器”工具栏上选择“转换”工具。 一个表示点的框显示在设计图面上。 使用绿色箭头移动框，从而修改点的高度。 对不同的点重复此步骤以创建有趣的地形特征。  
   
    > [!TIP]
-   >  可以一次性选择多个点以统一修改它们。  
+   > 可以一次性选择多个点以统一修改它们。  
   
    地形模型已完成。 下面是应用了 Phong 着色的最终模型：  
   

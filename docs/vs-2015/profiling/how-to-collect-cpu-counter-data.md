@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b197bbc434ecf01ad5b6df332530ad719575aede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432800"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本主题演示
 4. 对于想要收集的每个事件，选择该事件，然后单击右箭头以将事件添加到“所选计数器”列表。  
   
     > [!NOTE]
-    >  仅在选择“收集 CPU 计数器”复选框时，“可用的性能计数器”才会启用。  
+    > 仅在选择“收集 CPU 计数器”复选框时，“可用的性能计数器”才会启用。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   

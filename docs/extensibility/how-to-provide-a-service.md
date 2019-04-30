@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2be56d37ddcd1047e776df2652c7e874e260a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417096"
 ---
 # <a name="how-to-provide-a-service"></a>如何：提供的服务
 VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供服务，VSPackage 必须使用 Visual Studio 中注册该服务并将服务添加。
@@ -25,7 +25,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
  有关服务的详细信息，请参阅[服务 essentials](../extensibility/internals/service-essentials.md) 。
 
 > [!NOTE]
->  当 VSPackage 即将卸载时，Visual Studio 等待，直到已传递为 VSPackage 提供的服务的所有请求。 它不允许对这些服务的新请求。 不应显式调用<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法撤消时卸载服务。
+> 当 VSPackage 即将卸载时，Visual Studio 等待，直到已传递为 VSPackage 提供的服务的所有请求。 它不允许对这些服务的新请求。 不应显式调用<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法撤消时卸载服务。
 
 ## <a name="implement-a-service"></a>实现服务
 
@@ -89,7 +89,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
      此属性注册`SMyService`使用 Visual Studio。
 
     > [!NOTE]
-    >  若要注册一个服务来替换具有相同名称的另一个服务，请使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 请注意在允许的服务只有一个重写。
+    > 若要注册一个服务来替换具有相同名称的另一个服务，请使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 请注意在允许的服务只有一个重写。
 
 ### <a name="add-a-service"></a>添加服务
 
@@ -117,7 +117,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
     ```
 
     > [!NOTE]
-    >  Visual Studio 可以拒绝的请求提供服务。 它是如果另一个 VSPackage 已经提供了该服务。
+    > Visual Studio 可以拒绝的请求提供服务。 它是如果另一个 VSPackage 已经提供了该服务。
 
 3. 现在，您可以获取该服务，使用它的方法。 下面的示例显示了使用初始值设定项中的服务，但您可以获取的服务任意位置你想要使用服务。
 

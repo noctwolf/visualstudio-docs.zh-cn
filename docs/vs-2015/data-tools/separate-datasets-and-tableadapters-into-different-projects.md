@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425102"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>将数据集和 TableAdapter 分离到不同的项目中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "59647455"
 1. 打开包含数据集 （.xsd 文件） 的解决方案。  
   
    > [!NOTE]
-   >  如果解决方案不包含想要将数据集代码分离到其中的项目，创建项目，或将现有项目添加到解决方案。  
+   > 如果解决方案不包含想要将数据集代码分离到其中的项目，创建项目，或将现有项目添加到解决方案。  
   
 2. 双击类型化数据集文件 （.xsd 文件） 中**解决方案资源管理器**以打开中的数据集**数据集设计器**。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59647455"
     选择想要生成数据集代码中，在其中的项目后**数据集文件**属性填充默认的文件名。 如有必要，可以更改此名称。 此外，如果你想要为特定目录中生成数据集代码，则可以设置**项目文件夹**属性设置为的文件夹名称。  
   
    > [!NOTE]
-   >  当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。  
+   > 当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 向数据集项目，必须手动移动现有数据集分部类。  
   
 6. 保存的数据集。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "59647455"
    默认情况下之后将数据集, 和`TableAdapter`代码，结果是每个项目中的离散类文件。 原始项目将包含名为的文件 DatasetName.Designer.vb （或 DatasetName.Designer.cs），其中包含`TableAdapter`代码。 中指定的项目**数据集项目**属性将包含一个名为 DatasetName.DataSet.Designer.vb （或 DatasetName.DataSet.Designer.cs），其中包含数据集代码。  
   
 > [!NOTE]
->  若要查看生成的类文件，选择的数据集或`TableAdapter`项目。 然后，在**解决方案资源管理器**，选择**显示所有文件**。  
+> 若要查看生成的类文件，选择的数据集或`TableAdapter`项目。 然后，在**解决方案资源管理器**，选择**显示所有文件**。  
   
 ## <a name="see-also"></a>请参阅  
  [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)   

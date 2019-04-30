@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436527"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 互操作程序集参数封送处理
 在托管代码中编写 Vspackage 可能需要调用或是由非托管 COM 代码进行调用。 通常情况下，转换，或自动封送，互操作封送处理程序方法自变量。 但是，有时参数无法转换直接的方式。 在这些情况下，互操作程序集方法原型参数用于尽可能接近地匹配 COM 函数参数。 有关详细信息，请参阅[互操作封送处理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
@@ -46,7 +46,7 @@ ms.locfileid: "60105054"
  有时，COM 接口生成`IUnknown`对象和 COM 接口然后将其作为传递类型`void **`。 这些接口是特别重要因为如果变量定义为 [out] 在 IDL，则`IUnknown`对象是使用引用计数`AddRef`方法。 如果无法正确处理该对象，则会发生内存泄漏。  
   
 > [!NOTE]
->  `IUnknown`创建的 COM 接口和 [out] 变量中返回的对象会导致内存泄漏，如果未显式释放。  
+> `IUnknown`创建的 COM 接口和 [out] 变量中返回的对象会导致内存泄漏，如果未显式释放。  
   
  处理此类对象的托管的方法应将<xref:System.IntPtr>指向的指针作为`IUnknown`对象，并调用<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>方法获取的对象。 调用方应然后返回值转换为任何类型是合适的。 当不再需要对象时，调用<xref:System.Runtime.InteropServices.Marshal.Release%2A>以将其释放。  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  已知以下方法传递`IUnknown`作为类型对象的指针<xref:System.IntPtr>。 在本部分中所述处理它们。  
+> 已知以下方法传递`IUnknown`作为类型对象的指针<xref:System.IntPtr>。 在本部分中所述处理它们。  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

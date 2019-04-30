@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952195ab33b9a7e35265f5ecf40a8de3cf958fb3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7d2da473d201ff02b65262190158da1818bb1816
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434574"
 ---
 # <a name="signing-vsix-packages"></a>对 VSIX 包进行签名
 不需要扩展插件程序集进行签名之前它们可以运行在 Visual Studio 中，但它是执行此操作的好办法。
@@ -27,7 +27,7 @@ ms.locfileid: "56720583"
  如果你想要保护你的扩展，并确保它尚未被篡改，您可以将数字签名添加到 VSIX 包。 当 VSIX 中进行了签名时，VSIX 安装程序将显示一条消息指出进行签名，以及有关签名本身的详细信息。 如果 VSIX 内容已被修改，并且不重新签名 VSIX，VSIX 安装程序将显示签名无效。 不停止安装，但警告用户。
 
 > [!IMPORTANT]
->  从 Visual Studio 2015 开始，使用 SHA256 加密以外的任何签名的 VSIX 包将标识为具有无效签名。 VSIX 安装不会被阻止，但会警告用户。
+> 从 Visual Studio 2015 开始，使用 SHA256 加密以外的任何签名的 VSIX 包将标识为具有无效签名。 VSIX 安装不会被阻止，但会警告用户。
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>签名与 VSIXSignTool VSIX
  没有 SHA256 加密签名工具，可从[VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility)在 nuget.org 上[VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool)。

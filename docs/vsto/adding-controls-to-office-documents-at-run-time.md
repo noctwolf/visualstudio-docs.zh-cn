@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440404"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>在运行时向 Office 文档添加控件
   可以将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿在运行时。 此外可以在运行时删除它们。 添加或删除在运行时中的控件称为*动态控件*。
@@ -74,7 +74,7 @@ ms.locfileid: "60075800"
  无法删除静态控件在运行时。 如果尝试使用 `Delete` 或 `Remove` 方法来删除静态控件，会引发 <xref:Microsoft.Office.Tools.CannotRemoveControlException>。
 
 > [!NOTE]
->  请不要以编程方式在文档的 `Shutdown` 事件处理程序中删除控件。 发生 `Shutdown` 事件时，文档的 UI 元素将不再可用。 如果要在关闭文档之前删除控件，请将你的代码添加到另一个事件的事件处理程序中，对于 Word 为 <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> 或 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> ，对于 Excel 为 <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>或 <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> 。
+> 请不要以编程方式在文档的 `Shutdown` 事件处理程序中删除控件。 发生 `Shutdown` 事件时，文档的 UI 元素将不再可用。 如果要在关闭文档之前删除控件，请将你的代码添加到另一个事件的事件处理程序中，对于 Word 为 <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> 或 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> ，对于 Excel 为 <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>或 <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> 。
 
 ## <a name="HostControls"></a> 将宿主控件添加到文档
 
@@ -103,7 +103,7 @@ ms.locfileid: "60075800"
  保存并关闭文档后，会自动从文档中删除所有动态创建的 Windows 窗体控件。 可以向解决方案中添加代码，以在重新打开文档时重新创建这些控件。 如果使用 VSTO 外接程序中创建动态 Windows 窗体控件，控件的 ActiveX 包装会保留在文档中。 有关详细信息，请参阅[持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
 
 > [!NOTE]
->  不能以编程方式向受保护的文档添加 Windows 窗体控件。 如果通过以编程方式取消 Word 文档或 Excel 工作表保护来添加控件，则必须编写额外的代码在关闭文档时删除该控件的 ActiveX 包装。 该控件的 ActiveX 包装不会从受保护的文档中自动删除。
+> 不能以编程方式向受保护的文档添加 Windows 窗体控件。 如果通过以编程方式取消 Word 文档或 Excel 工作表保护来添加控件，则必须编写额外的代码在关闭文档时删除该控件的 ActiveX 包装。 该控件的 ActiveX 包装不会从受保护的文档中自动删除。
 
 ### <a name="add-custom-controls"></a>添加自定义控件
  如果想要添加可用帮助器方法不支持的 <xref:System.Windows.Forms.Control> （如自定义用户控件），请使用以下方法：

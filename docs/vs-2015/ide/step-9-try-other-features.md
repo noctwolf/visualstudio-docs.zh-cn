@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428289"
 ---
 # <a name="step-9-try-other-features"></a>步骤 9：尝试其他功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ ms.locfileid: "60102648"
 - 将图标和颜色替换为您选择的图标和颜色。  
   
     > [!TIP]
-    >  尝试查看标签的 [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) 属性。  
+    > 尝试查看标签的 [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) 属性。  
   
 - 添加一个游戏计时器，记录玩家赢得游戏所用的时间。  
   
     > [!TIP]
-    >  为此，你可以在 TableLayoutPanel 上方的窗体中添加一个标签来显示逝去的时间，并在窗体中添加另一个计时器来记录时间。 使用代码在玩家开始游戏时启动计时器，并在最后两个图标匹配成功后停止计时器。  
+    > 为此，你可以在 TableLayoutPanel 上方的窗体中添加一个标签来显示逝去的时间，并在窗体中添加另一个计时器来记录时间。 使用代码在玩家开始游戏时启动计时器，并在最后两个图标匹配成功后停止计时器。  
   
 - 当玩家找到匹配的图标时会添加一种声音，当玩家发现两个不匹配的图标时会添加另一种声音，当程序再次隐藏图标时会添加第三种声音。  
   
     > [!TIP]
-    >  若要播放声音，你可以使用 System.media 命名空间。 有关详细信息，请参阅[在 Windows 窗体应用中播放声音 (C# .NET)](http://youtu.be/qOh4ooHg1UU) 或[如何在 Visual Basic 中播放音频](http://youtu.be/-4oPDeQrtMs)。  
+    > 若要播放声音，你可以使用 System.media 命名空间。 有关详细信息，请参阅[在 Windows 窗体应用中播放声音 (C# .NET)](http://youtu.be/qOh4ooHg1UU) 或[如何在 Visual Basic 中播放音频](http://youtu.be/-4oPDeQrtMs)。  
   
 - 通过将图板变大，增加游戏的难度。  
   
     > [!TIP]
-    >  你将不仅需要向 TableLayoutPanel 中添加行和列，还需要考虑创建的图标数目。  
+    > 你将不仅需要向 TableLayoutPanel 中添加行和列，还需要考虑创建的图标数目。  
   
 - 如果玩家反应太慢，在定量时间前没有选择第二个图标，则隐藏第一个图标，以使游戏更具挑战性。  
   

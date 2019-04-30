@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418464"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何：创建.vsct 文件
 
@@ -80,7 +80,7 @@ ms.locfileid: "56602801"
     此操作将创建一个新 *.vsct* XML 命令表源文件。 可以使用编译此文件*Vsct.exe*，使用 VSCT 编译器为您像对任何其他 *.vsct*文件。
 
    > [!NOTE]
-   >  可以改进的可读性 *.vsct*通过重新格式化 XML 注释的文件。
+   > 可以改进的可读性 *.vsct*通过重新格式化 XML 注释的文件。
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ ms.locfileid: "56602801"
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>从 .cto 文件创建 .Vsct 文件
 
-1.  获取的副本 *.cto*文件和其对应 *.ctsym*文件。
+1. 获取的副本 *.cto*文件和其对应 *.ctsym*文件。
 
-2.  将文件放到与相同的目录*vsct.exe*编译器。
+2. 将文件放到与相同的目录*vsct.exe*编译器。
 
-3.  在 Visual Studio 命令提示符处，转到包含的目录 *.cto*并 *.ctsym*文件。
+3. 在 Visual Studio 命令提示符处，转到包含的目录 *.cto*并 *.ctsym*文件。
 
-4.  类型
+4. 类型
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ ms.locfileid: "56602801"
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>若要将.vsct 文件添加到项目编译
 
-1.  在编辑器中打开项目文件。 如果加载该项目，必须先卸载它。
+1. 在编辑器中打开项目文件。 如果加载该项目，必须先卸载它。
 
-2.  添加[ItemGroup 元素](../../msbuild/itemgroup-element-msbuild.md)，其中包含`VSCTCompile`元素，如下面的示例中所示。
+2. 添加[ItemGroup 元素](../../msbuild/itemgroup-element-msbuild.md)，其中包含`VSCTCompile`元素，如下面的示例中所示。
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ ms.locfileid: "56602801"
 
      `ResourceName`元素应始终设置为`Menus.ctmenu`。
 
-3.  如果您的项目包含 *.resx*文件中，添加`EmbeddedResource`元素，其中包含`MergeWithCTO`元素，如下面的示例中所示：
+3. 如果您的项目包含 *.resx*文件中，添加`EmbeddedResource`元素，其中包含`MergeWithCTO`元素，如下面的示例中所示：
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ ms.locfileid: "56602801"
 
      此标记应发送到内部`ItemGroup`包含嵌入的资源的元素。
 
-4.  打开包文件，通常名为 *\<ProjectName\>Package.cs*或 *\<ProjectName\>Package.vb*，在编辑器中。
+4. 打开包文件，通常名为 *\<ProjectName\>Package.cs*或 *\<ProjectName\>Package.vb*，在编辑器中。
 
-5.  添加`ProvideMenuResource`属性包类，如下面的示例中所示。
+5. 添加`ProvideMenuResource`属性包类，如下面的示例中所示。
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

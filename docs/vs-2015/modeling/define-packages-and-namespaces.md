@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434359"
 ---
 # <a name="define-packages-and-namespaces"></a>定义包和命名空间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60052800"
 2. 右键单击想要向其中添加新包的包或模型。  
   
    > [!NOTE]
-   >  可以将一个包嵌套到另一个包中。  
+   > 可以将一个包嵌套到另一个包中。  
   
 3. 指向**外**，然后单击**包**。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "60052800"
 - 将包从 UML 模型资源管理器拖动到类图中。  
   
     > [!NOTE]
-    >  此操作会在该关系图中创建包的视图， 但不一定会在关系图中显示包中包含的所有元素。 要确保能看到包中的所有内容，请在 UML 模型资源管理器中进行查看。  
+    > 此操作会在该关系图中创建包的视图， 但不一定会在关系图中显示包中包含的所有元素。 要确保能看到包中的所有内容，请在 UML 模型资源管理器中进行查看。  
   
 ## <a name="Elements"></a> 创建包内的模型元素  
  可以通过以下四种方法将模型元素放置到包中：  
@@ -123,7 +123,7 @@ ms.locfileid: "60052800"
 4. 为新元素键入名称。  
   
     > [!NOTE]
-    >  新元素不会在任何关系图中显示。 要创建新元素的视图，可以将其从 UML 模型资源管理器拖动到关系图中。 该关系图必须为将显示此类元素的类型。  
+    > 新元素不会在任何关系图中显示。 要创建新元素的视图，可以将其从 UML 模型资源管理器拖动到关系图中。 该关系图必须为将显示此类元素的类型。  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>在 UML 类图中创建包中的元素  
   
@@ -173,7 +173,7 @@ ms.locfileid: "60052800"
      元素的限定名将进行相应更改，以显示其所属的新包。  
   
     > [!NOTE]
-    >  如果将一个元素从包中拖出，并将其放到关系图中的空白部分，那么其所属的包不会更改。 这样一来，你就可以绘制一个显示多个包中的元素，而不必显示包本身的关系图。  
+    > 如果将一个元素从包中拖出，并将其放到关系图中的空白部分，那么其所属的包不会更改。 这样一来，你就可以绘制一个显示多个包中的元素，而不必显示包本身的关系图。  
   
 ## <a name="Pasting"></a> 将元素粘贴到包  
  可以将元素粘贴到包中。 如果将一组相关的元素粘贴到包中，那么这些元素之间的关系也会随之粘贴。  
@@ -185,7 +185,7 @@ ms.locfileid: "60052800"
 2. 右键单击包，然后单击**粘贴**。  
   
     > [!NOTE]
-    >  包可以位于其他关系图上。  
+    > 包可以位于其他关系图上。  
   
 ## <a name="Import"></a> 导入包之间的关系  
  可以定义之间使用的包的导入关系**导入**工具。  

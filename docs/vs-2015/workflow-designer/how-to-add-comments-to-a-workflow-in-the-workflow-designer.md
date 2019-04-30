@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f826168d3b198090ba58f409f096b4b12c760c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 507bb70539019646f57f0aa9267573429d3fa202
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433560"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中向工作流添加注释
 为方便创建更大、更复杂的工作流，[!INCLUDE[net_v45](../includes/net-v45-md.md)] 允许开发人员在设计器中将批注添加到以下类型的项：  
@@ -35,7 +35,7 @@ ms.locfileid: "60059664"
 - <xref:System.Activities.Argument>  
   
 > [!IMPORTANT]
->  批注的内容作为纯文本保存到与工作流关联的 XAML 文件，并可能被其他人读取。 将敏感信息输入批注时要谨慎。  
+> 批注的内容作为纯文本保存到与工作流关联的 XAML 文件，并可能被其他人读取。 将敏感信息输入批注时要谨慎。  
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>在设计器中将批注添加到活动  
   

@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436972"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用设计器创建 SQL 数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ ms.locfileid: "60069778"
 6. 为至少三个订单添加数据。  
   
     > [!IMPORTANT]
-    >  请确保所有订单 ID 和订单数量是整数，并且每个客户 ID 与 Customers 表中的 CustomerID 列中指定的值相匹配。  
+    > 请确保所有订单 ID 和订单数量是整数，并且每个客户 ID 与 Customers 表中的 CustomerID 列中指定的值相匹配。  
   
 7. 在菜单栏上，选择**文件** > **全部保存**。  
   
 8. 在菜单栏上，选择**文件** > **关闭解决方案**。  
   
     > [!NOTE]
-    >  最好备份刚创建的数据库文件，你可以复制并粘贴到其他位置，或以不同名称另存一份。  
+    > 最好备份刚创建的数据库文件，你可以复制并粘贴到其他位置，或以不同名称另存一份。  
   
 ## <a name="next-steps"></a>后续步骤  
  现在，已用一些示例数据的本地数据库文件，可以完成任何演示数据库任务的演练。

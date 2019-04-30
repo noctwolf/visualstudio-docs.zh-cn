@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7c86228d21323d1928acb9fc94582fbb9d320248
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9735f6ab6a44041deabdae0d57782da6f8c98b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434339"
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
->  对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：  
+> 对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：  
 > 
 > - 下载              [并发可视化工具](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 扩展。  
 >   - 下载              [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。  
@@ -39,7 +39,7 @@ ms.locfileid: "60084838"
  并发可视化工具依赖 [Windows 事件跟踪](http://go.microsoft.com/fwlink/?LinkId=234579) 功能。  
   
 > [!NOTE]
->  并发可视化工具不支持 Web 项目。  
+> 并发可视化工具不支持 Web 项目。  
   
 ## <a name="related-topics"></a>相关主题  
   

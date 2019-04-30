@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7c7b3641a6c9fbc680f4a902b2f0e5d7bf331401
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430166"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网
 - Web 项目的解决方案文件位于独立于该网站本身。 默认情况下，解决方案文件位于 \Documents 和设置\\*YourAccount*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
   
     > [!NOTE]
-    >  如果你想要保留与网站的解决方案文件，只需将其移动到并重新打开它。  
+    > 如果你想要保留与网站的解决方案文件，只需将其移动到并重新打开它。  
   
 - 如果您打开在 Visual Studio 中没有解决方案文件的网站，为其自动生成新的解决方案文件。  
   

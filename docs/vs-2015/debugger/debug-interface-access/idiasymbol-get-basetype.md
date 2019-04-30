@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d090df12a8b19d81717a71496f47c753c4acee7c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: df922cbbe1c065f4df79fa62b7b4b0213dd7f487
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430322"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_baseType ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  可通过首先获取符号的类型，然后询问的返回类型的基类型确定符号的基本类型。 请注意，某些符号可能不具有基类型，例如，结构名称。  

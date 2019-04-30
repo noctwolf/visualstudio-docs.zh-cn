@@ -10,12 +10,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424507"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58932752"
   
  下表显示了常见`HRESULT`方法返回的值。  
   
-|名称|描述|值|  
+|名称|描述|“值”|  
 |----------|-----------------|-----------|  
 |S_OK|成功。|0x00000000|  
 |E_UNEXPECTED|意外的失败。|0x8000FFFF|  
@@ -39,10 +39,10 @@ ms.locfileid: "58932752"
 |E_ACCESSDENIED|常规拒绝访问错误。|0x80070005|  
   
 > [!NOTE]
->  当[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]调试方法返回`S_OK`，假定参数指针是否有效解决所有问题、 out 参数的指针上执行任何验证，即时`S_OK`返回。  
+> 当[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]调试方法返回`S_OK`，假定参数指针是否有效解决所有问题、 out 参数的指针上执行任何验证，即时`S_OK`返回。  
   
 > [!NOTE]
->  无效或`NULL`[out] 参数可能会导致 IDE 崩溃。  
+> 无效或`NULL`[out] 参数可能会导致 IDE 崩溃。  
   
 ## <a name="see-also"></a>请参阅  
  [接口](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   

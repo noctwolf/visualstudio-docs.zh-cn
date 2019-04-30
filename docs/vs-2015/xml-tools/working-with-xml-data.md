@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438865"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ XML 及其相关技术对 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visua
  Visual Studio 支持调试 XSLT 样式表。 使用调试程序，可以在 XSLT 样式表中设置断点，从代码进入并逐行执行 XSLT 样式表，等等。  
   
 > [!NOTE]
->  Professional Edition 和 Team Edition 支持 XSLT 调试。  
+> Professional Edition 和 Team Edition 支持 XSLT 调试。  
   
 ## <a name="in-this-section"></a>本节内容  
  [XML 编辑器](../xml-tools/xml-editor.md)  

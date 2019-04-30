@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436562"
 ---
 # <a name="support-for-settings-categories"></a>支持设置类别
 设置类别包含一组可自定义集成开发环境 (IDE) 的选项。 例如，设置可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口的布局和菜单的内容。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
@@ -25,7 +25,7 @@ ms.locfileid: "60054477"
  此页面的导航窗格中的树控件会列出类别。 类别是一组显示为“自定义设置点”（即显示为复选框）的相关设置。 使用这些复选框可选择要保留在 .vsettings 文件中的类别。 向导允许命名 .vsettings 文件并指定其路径。  
   
 > [!NOTE]
->  设置会作为类别进行保存或还原，各个设置名称不会显示在向导中。  
+> 设置会作为类别进行保存或还原，各个设置名称不会显示在向导中。  
   
  托管包框架 (MPF) 支持使用最少的额外代码创建设置类别。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60054477"
  类别设置的注册表路径通过将 <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>、UserSettings 一词、设置类别和自定义设置点的名称进行组合来确定。 类别设置和自定义设置点的名称进行联接并使用下划线进行分隔，以形成出现在注册表中的非本地化规范名称。 例如，如果类别设置是“My Category”，自定义设置点名称是“My Settings”，并且 ApplicationRegistryRoot 是 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp，则设置类别具有注册表项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings。  
   
 > [!NOTE]
->  规范名称不会出现在用户界面 (UI) 中。 它用于将可读名称与设置类别进行关联，非常类似于编程标识符 (ProgID)。  
+> 规范名称不会出现在用户界面 (UI) 中。 它用于将可读名称与设置类别进行关联，非常类似于编程标识符 (ProgID)。  
   
 ### <a name="settings-category-attribute"></a>设置类别属性  
  <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>确定到中的自定义设置点类别的映射**导入和导出设置向导**通过将类别与提供它的 VSPackage 相关联。 考虑以下代码片断：  

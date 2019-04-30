@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434680"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函数
 此函数显示在客户端磁盘上的当前本地目录与源代码管理下的相应项目之间的差异。
@@ -58,7 +58,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|在磁盘上的目录是在源代码管理中的项目相同。|
 |SCC_I_FILESDIFFER|从源代码管理中的项目不同磁盘上的目录。|
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|如果插件支持，以无提示方式比较其时间戳，通过目录或者，如果不受支持，将回退 SCC_DIFF_QD_CHECKSUM 或 SCC_DIFF_QD_CONTENTS 上。|
 
 > [!NOTE]
->  此函数使用相同的命令标志，作为[SccDiff](../extensibility/sccdiff-function.md)。 但是，可以选择源代码管理插件不支持目录的"快速 diff"操作。
+> 此函数使用相同的命令标志，作为[SccDiff](../extensibility/sccdiff-function.md)。 但是，可以选择源代码管理插件不支持目录的"快速 diff"操作。
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 功能](../extensibility/source-control-plug-in-api-functions.md)

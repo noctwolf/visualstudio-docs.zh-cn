@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421817"
 ---
 # <a name="just-my-code"></a>仅我的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "60084331"
  ![启用仅我的代码选项对话框中](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  **启用 ' 仅我的代码**设置是应用于所有语言中的所有 Visual Studio 项目的全局设置。  
+> **启用 ' 仅我的代码**设置是应用于所有语言中的所有 Visual Studio 项目的全局设置。  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> 重写调用堆栈筛选  
  在调用堆栈显示中（如“调用堆栈”和“任务”窗口），“仅我的代码”会将非用户代码折叠为带有标签 `[External Code]` 的带批注帧。 若要查看折叠的帧，请选择**显示外部代码**在调用堆栈的上下文菜单上显示。  
   
 > [!NOTE]
->  **显示外部代码**设置保存到当前用户的探查器。 它会应用于所有语言中由用户打开的所有项目。  
+> **显示外部代码**设置保存到当前用户的探查器。 它会应用于所有语言中由用户打开的所有项目。  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework 仅我的代码  
   

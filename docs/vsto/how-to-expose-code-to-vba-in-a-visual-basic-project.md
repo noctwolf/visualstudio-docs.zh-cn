@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a5f19574974ce8d3928997a6b02bbf59062d89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0213df05e12ae69b4e24841971a518acc008599f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419417"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>如何：向 VBA 公开代码在 Visual Basic 项目中
   您可以公开中的代码[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]项目到 Visual Basic for Applications (VBA) 代码，如果您希望两种类型的代码与彼此进行交互。
@@ -50,7 +50,7 @@ ms.locfileid: "60101311"
      有关支持的宏的文档文件格式的详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
 
     > [!NOTE]
-    >  此功能无法在 Word 模板项目中使用。
+    > 此功能无法在 Word 模板项目中使用。
 
 2. 请确保允许文档中的 VBA 代码不提示用户启用宏的情况下运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。
 
@@ -65,7 +65,7 @@ ms.locfileid: "60101311"
      设置此属性后，Visual Studio 将自动设置**ReferenceAssemblyFromVbaProject**属性设置为**True**。
 
     > [!NOTE]
-    >  如果工作簿或文档尚未包含 VBA 代码，或如果文档中的 VBA 代码不受信任运行，在设置时，将收到一条错误消息**EnableVbaCallers**属性设置为**True**。 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
+    > 如果工作簿或文档尚未包含 VBA 代码，或如果文档中的 VBA 代码不受信任运行，在设置时，将收到一条错误消息**EnableVbaCallers**属性设置为**True**。 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
 
 5. 在显示的消息中单击 **“确定”** 。 此消息提醒您将 VBA 代码添加到工作簿或文档，而如果您正在运行中的项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]下, 一次生成项目时，将丢失的 VBA 代码。 这是因为每次生成项目时，覆盖生成输出文件夹中的文档。
 
@@ -83,7 +83,7 @@ ms.locfileid: "60101311"
      有关支持的宏的文档文件格式的详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
 
     > [!NOTE]
-    >  此功能无法在 Word 模板项目中使用。
+    > 此功能无法在 Word 模板项目中使用。
 
 2. 请确保允许文档中的 VBA 代码不提示用户启用宏的情况下运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。
 
@@ -109,7 +109,7 @@ ms.locfileid: "60101311"
 7. 在 **“属性”** 窗口中，选择 **“ReferenceAssemblyFromVbaProject”** 属性，并将值更改为 **“True”**。
 
     > [!NOTE]
-    >  如果工作簿或文档尚未包含 VBA 代码，或如果文档中的 VBA 代码不受信任运行，在设置时，将收到一条错误消息**ReferenceAssemblyFromVbaProject**属性设置为 **，则返回 True**. 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
+    > 如果工作簿或文档尚未包含 VBA 代码，或如果文档中的 VBA 代码不受信任运行，在设置时，将收到一条错误消息**ReferenceAssemblyFromVbaProject**属性设置为 **，则返回 True**. 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
 
 8. 在显示的消息中单击 **“确定”** 。 此消息提醒您将 VBA 代码添加到工作簿或文档，而如果您正在运行中的项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]下, 一次生成项目时，将丢失的 VBA 代码。 这是因为每次生成项目时，覆盖生成输出文件夹中的文档。
 

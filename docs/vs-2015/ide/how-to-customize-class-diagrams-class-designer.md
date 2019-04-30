@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416860"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>如何：自定义类图（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60065826"
  例如，你可以调整整个类图的缩放级别，更改各个类型成员的分组和排序方式，隐藏或显示关系并将单个类型或类型集移动到类图上的任意位置。  
   
 > [!NOTE]
->  自定义类图上的形状显示方式不会更改类图上表示的类型的基础代码。  
+> 自定义类图上的形状显示方式不会更改类图上表示的类型的基础代码。  
   
  包含类型成员的部分（例如类中的“属性”部分）被称为隔离舱。 你可以隐藏或显示各个隔离舱和类型成员。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065826"
      指定特定的缩放值。 可以使用“缩放”下拉列表进行选择或键入有效的缩放级别（有效范围介于 10% 到 400% 之间）。  
   
     > [!NOTE]
-    >  更改缩放级别并不影响类图的打印输出比例。  
+    > 更改缩放级别并不影响类图的打印输出比例。  
   
 ## <a name="CustomizeGroupingSorting"></a> 自定义类型成员的分组和排序  
   

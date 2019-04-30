@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431403"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59662248"
  当目标中指定了输入和输出时，要么每个输出只能映射到一个输入，要么在输出和输入之间不能有任何直接映射。 例如，在前面的 [Csc 任务](../msbuild/csc-task.md)中，输出 hello.exe 不能映射到任何一个单独的输入，因为它依赖于所有输入。  
   
 > [!NOTE]
->  对于输入和输出之间不存在直接映射的目标，它的生成频率总是比每个输出只能映射到一个输入的目标高，因为如果某些输入发生了更改， [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 无法确定需要重新生成哪些输出。  
+> 对于输入和输出之间不存在直接映射的目标，它的生成频率总是比每个输出只能映射到一个输入的目标高，因为如果某些输入发生了更改， [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 无法确定需要重新生成哪些输出。  
   
  输出和输入之间存在直接映射的任务（如 [LC 任务](../msbuild/lc-task.md)）最适合增量生成；而 `Csc` 和 [Vbc](../msbuild/vbc-task.md) 等任务则与上述任务存在差异，对于此类任务，多个输入才能产生一个输出程序集。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "59662248"
   此项目文件包含 `Convert` 和 `Build` 目标。 `GenerateContentFiles` 和 `BuildHelp` 任务分别位于 `Convert` 和 `Build` 目标中，以便可以增量生成每个目标。 通过使用 `Output` 元素，将 `GenerateContentFiles` 任务的输出放入 `ContentFile` 项列表中，这样，就可以将这些输出用作 `BuildHelp` 任务的输入。 通过按此方法使用 `Output` 元素，可自动将一个任务的输出作为另一个任务的输入，这样就不必在每个任务中手动列出各个项或项列表。  
   
 > [!NOTE]
->  尽管可增量生成 `GenerateContentFiles` 目标，但该目标的所有输出始终都需要作为 `BuildHelp` 目标的输入。 使用 `Output` 元素时，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 会自动将一个目标中的所有输出作为另一个目标的输入提供。  
+> 尽管可增量生成 `GenerateContentFiles` 目标，但该目标的所有输出始终都需要作为 `BuildHelp` 目标的输入。 使用 `Output` 元素时，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 会自动将一个目标中的所有输出作为另一个目标的输入提供。  
   
 ```  
 <Project DefaultTargets="Build"  

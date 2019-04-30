@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438416"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本 Phong 着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60113750"
   
 #### <a name="to-create-a-phong-shader"></a>创建冯氏着色器  
   
-1. 按[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
+1. 按照以下方法创建 Lambert 着色器：[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。  
   
 2. 从“最终颜色”节点断开“朗伯”节点。 选择“朗伯”节点的“RGB”终端，然后选择“断开链接”。 这为在下一步中添加的节点腾出空间。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "60113750"
    下图显示了已完成的着色器关系图和应用于茶壶体的着色器预览。  
   
 > [!NOTE]
->  为了更好地演示该图中着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色，并使用  **MaterialSpecular** 和 **MaterialSpecularPower**  参数指定了金属外观。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。  
+> 为了更好地演示该图中着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色，并使用  **MaterialSpecular** 和 **MaterialSpecularPower**  参数指定了金属外观。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。  
   
  ![着色器图及其效果预览](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ ms.locfileid: "60113750"
  下图显示了本文档中所述的应用于三维模型的着色器。 **MaterialSpecular** 属性设置为 (1.00, 0.50, 0.20, 0.00)，并将其 **MaterialSpecularPower** 属性设置为 16。  
   
 > [!NOTE]
->  **MaterialSpecular** 属性确定表面材质的表面光洁度。 高光泽表面（如玻璃或塑料）往往具有白色明亮阴影的反射颜色。 金属表面往往具有接近其漫射颜色的反射颜色。 缎面表面往往具有深灰色的反射颜色。  
+> **MaterialSpecular** 属性确定表面材质的表面光洁度。 高光泽表面（如玻璃或塑料）往往具有白色明亮阴影的反射颜色。 金属表面往往具有接近其漫射颜色的反射颜色。 缎面表面往往具有深灰色的反射颜色。  
 >   
->  **MaterialSpecularPower** 属性确定高光的强度。 高反射强度模拟更暗淡、更局部化的高光效果。 较低的反射强度模拟大幅度的强烈高光，其可能会过度饱和并遮掩整个表面的颜色。  
+> **MaterialSpecularPower** 属性确定高光的强度。 高反射强度模拟更暗淡、更局部化的高光效果。 较低的反射强度模拟大幅度的强烈高光，其可能会过度饱和并遮掩整个表面的颜色。  
   
  ![应用于模型的冯氏照明](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

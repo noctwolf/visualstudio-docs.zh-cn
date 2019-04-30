@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437745"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58935970"
  调试器是否计算此隐式 `ToString()` 调用取决于“工具”/“选项”/“调试”  对话框中的用户设置。 Visual Basic 不实现此隐式 `ToString()` 计算。  
   
 > [!IMPORTANT]
->  如果在“工具”/“选项”/“调试”  对话框中选中了“在变量窗口中显示对象的原始结构”  复选框，则将忽略 `DebuggerDisplay` 特性。  
+> 如果在“工具”/“选项”/“调试”  对话框中选中了“在变量窗口中显示对象的原始结构”  复选框，则将忽略 `DebuggerDisplay` 特性。  
   
  下表显示 `DebuggerDisplay` 特性的一些可能用法和示例输出。  
   
@@ -101,7 +101,7 @@ public sealed class MyClass
 |**名称**|**“值”**|**Type**|  
 |--------------|---------------|--------------|  
 |键|"three"|object {string}|  
-|值|3|object {int}|  
+|“值”|3|object {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  

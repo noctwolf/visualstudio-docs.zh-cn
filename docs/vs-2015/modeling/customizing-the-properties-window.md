@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433223"
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60088790"
  若要转发属性，您定义的域类型描述符。 如果您有两个域类之间的域关系，可以使用域类型描述符中的第二个域类的域属性的值的第一个类中设置域属性。 例如，如果有之间的关系**书籍**域类和一个**作者**域类，您可以使用的域类型说明符以使**名称**属性本书**作者**出现在属性窗口中，当用户选择一书。  
   
 > [!NOTE]
->  当用户编辑模型时，属性转发会影响仅属性窗口。 它不接收类上定义的域属性。 如果你想要访问已转发的域属性在 DSL 定义的其他部分或在程序代码中，你必须访问转发元素。  
+> 当用户编辑模型时，属性转发会影响仅属性窗口。 它不接收类上定义的域属性。 如果你想要访问已转发的域属性在 DSL 定义的其他部分或在程序代码中，你必须访问转发元素。  
   
  以下过程假设已创建 DSL。 第一个几个步骤总结了系统必备组件。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "60088790"
         在下，将出现一个新项**域类型**节点。  
   
        > [!WARNING]
-       >  菜单项不是在 DSL 的根节点，**域类型**节点。  
+       > 菜单项不是在 DSL 的根节点，**域类型**节点。  
   
    2. 在属性窗口中设置的名称和新类型的命名空间。  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60088790"
   你还可以提供的图形表示形式将在属性网格中显示的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor>。  
   
 > [!NOTE]
->  在单独的代码文件中添加代码**Dsl**项目。  
+> 在单独的代码文件中添加代码**Dsl**项目。  
   
  例如：  
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  可以提供一系列可供选择的用户的值。  
   
 > [!NOTE]
->  此方法提供了一系列可以在运行时更改的值。 如果你想要提供一个列表，其中不会更改，请考虑改为使用一个枚举的类型作为域属性的类型。  
+> 此方法提供了一系列可以在运行时更改的值。 如果你想要提供一个列表，其中不会更改，请考虑改为使用一个枚举的类型作为域属性的类型。  
   
  若要定义的标准值的列表，您将添加到域属性的 CLR 属性，具有以下形式：  
   

@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435241"
 ---
 # <a name="how-to-implement-nested-projects"></a>如何：实现嵌套项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58936388"
 1. 集成的开发环境 (IDE) 加载父项目的项目文件和启动信息通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>接口。 创建父项目并将其添加到解决方案。  
   
    > [!NOTE]
-   >  此时，它是太早，父项目来创建嵌套的项目，因为必须创建父项目，然后才能创建子项目的过程中。 遵循此序列中，父项目可以将设置应用于子项目和子项目可以根据需要获取父项目中的信息。 此序列是如果它由源代码管理 (SCC) 和解决方案资源管理器等的客户端上所需。  
+   > 此时，它是太早，父项目来创建嵌套的项目，因为必须创建父项目，然后才能创建子项目的过程中。 遵循此序列中，父项目可以将设置应用于子项目和子项目可以根据需要获取父项目中的信息。 此序列是如果它由源代码管理 (SCC) 和解决方案资源管理器等的客户端上所需。  
   
     父项目必须等待<xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A>项目，它可以创建其嵌套 （子） 之前由 IDE 调用的方法。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "58936388"
     如果已存在，父项目通过调用创建的每个嵌套的项目 GUID `CoCreateGuid`。  
   
    > [!NOTE]
-   >  `CoCreateGuid` 若要创建一个 GUID 时调用 COM API。 有关详细信息，请参阅`CoCreateGuid`和 MSDN Library 中的 Guid。  
+   > `CoCreateGuid` 若要创建一个 GUID 时调用 COM API。 有关详细信息，请参阅`CoCreateGuid`和 MSDN Library 中的 Guid。  
   
     父项目将此 GUID 存储在要从中检索下一次在 IDE 中打开其项目文件中。 请参阅有关的调用与相关的详细信息的步骤 4`AddVirtualProjectEX`来检索`guidProjectID`子项目。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "58936388"
      由于以编程方式实例化父和子项目，可以在这里设置嵌套项目的属性。  
   
     > [!NOTE]
-    >  不仅能执行将收到的上下文信息从嵌套的项目，但您还可以要求父项目是否为该项的任何上下文通过检查<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 这种方式，可以向嵌套的各个项目中添加额外的动态帮助属性和特定的菜单选项。  
+    > 不仅能执行将收到的上下文信息从嵌套的项目，但您还可以要求父项目是否为该项的任何上下文通过检查<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>。 这种方式，可以向嵌套的各个项目中添加额外的动态帮助属性和特定的菜单选项。  
   
 10. 在层次结构生成显示在解决方案资源管理器通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>方法。  
   

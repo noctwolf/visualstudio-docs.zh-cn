@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417785"
 ---
 # <a name="model-your-app39s-architecture"></a>建模应用程序&#39;s 体系结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60098436"
  模型的目的是减少自然语言说明中的歧义，并帮助你和同事对设计进行可视化以及讨论备选设计。 模型应与其他文档或讨论一起使用。 就其本身而言，模型不表示该体系结构的完整规范。  
   
 > [!NOTE]
->  在本主题中，“系统”表示你正在开发的软件。 它可能是许多软件和硬件组件的大型集合、或单个应用程序或某个应用程序的一部分。  
+> 在本主题中，“系统”表示你正在开发的软件。 它可能是许多软件和硬件组件的大型集合、或单个应用程序或某个应用程序的一部分。  
   
  系统的体系结构可以分为两个区域：  
   

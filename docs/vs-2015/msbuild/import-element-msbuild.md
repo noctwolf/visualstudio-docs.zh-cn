@@ -19,12 +19,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9f8edefc8e097f7ada67041b807231f594774548
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433554"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ ms.locfileid: "59654290"
  导入项目的架构与标准项目相同。 虽然 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可能能够生成导入项目，不过这不太可能，因为导入项目通常不包含有关要设置的属性或运行目标的顺序的信息。 导入项目依靠将它导入其中的项目来提供该信息。  
   
 > [!NOTE]
->  虽然条件导入语句可在命令行 MSBuild 中正常工作，不过它们不适用于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 中的 MSBuild。 使用加载项目时设置的配置和平台值来计算条件导入。 如果随后进行了需要对项目文件中的条件进行重新计算的更改（例如更改平台），则 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会对属性和项重新计算条件，但不会对导入重新计算。 因为不会重新计算导入条件，所以会跳过导入。  
+> 虽然条件导入语句可在命令行 MSBuild 中正常工作，不过它们不适用于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 中的 MSBuild。 使用加载项目时设置的配置和平台值来计算条件导入。 如果随后进行了需要对项目文件中的条件进行重新计算的更改（例如更改平台），则 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会对属性和项重新计算条件，但不会对导入重新计算。 因为不会重新计算导入条件，所以会跳过导入。  
 >   
->  若要解决此问题，请将条件导入置于 .targets 文件中，或将代码置于条件块（如 [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 块）中。  
+> 若要解决此问题，请将条件导入置于 .targets 文件中，或将代码置于条件块（如 [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 块）中。  
   
 ## <a name="wildcards"></a>通配符  
  在 .NET Framework 4 中，MSBuild 允许在项目属性中使用通配符。 存在通配符时，找到的所有匹配项会进行排序（实现可再现性），随后它们会按该顺序导入（如同显式设置了该顺序一样）。  
@@ -116,4 +116,4 @@ ms.locfileid: "59654290"
   
 ## <a name="see-also"></a>请参阅  
  [项目文件架构参考](../msbuild/msbuild-project-file-schema-reference.md)   
- [如何：在多个项目文件中使用相同的目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

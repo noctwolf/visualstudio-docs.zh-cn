@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430341"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**的节点**服务器资源管理器**来查看 SharePoint 站点上的组件。 但是，**服务器资源管理器**默认情况下不会显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它显示在 Web 部件库在每个连接 SharePoint 站点。
@@ -40,7 +40,7 @@ ms.locfileid: "60040567"
 - 调试和测试扩展。
 
 > [!NOTE]
->  此演练，而不是其服务器对象模型中使用 SharePoint 的客户端对象模型的替代版本，请参阅[演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
+> 此演练，而不是其服务器对象模型中使用 SharePoint 的客户端对象模型的替代版本，请参阅[演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。
 
 ## <a name="prerequisites"></a>系统必备
  需要要完成本演练的开发计算机上安装以下组件：
@@ -75,7 +75,7 @@ ms.locfileid: "60040567"
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
     > [!NOTE]
-    >  **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
+    > **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
 
 4. 在对话框的顶部，选择 **.NET Framework 4.5** .NET Framework 版本的列表中。
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040567"
 1. 在 WebPartNodeExtension 项目中，打开 SiteNodeExtension 代码文件，以及然后将以下代码粘贴到其中。
 
     > [!NOTE]
-    >  添加此代码，此项目将具有某些编译错误，但它们将消失后添加的代码在后续步骤中。
+    > 添加此代码，此项目将具有某些编译错误，但它们将消失后添加的代码在后续步骤中。
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040567"
 1. 在菜单栏上，依次选择“生成” > “生成解决方案”。
 
     > [!WARNING]
-    >  此时，WebPartNode 项目可能会生成错误，因为 VSIX 清单文件不具有的作者的值。 当在后续步骤中添加值时，此错误将消失。
+    > 此时，WebPartNode 项目可能会生成错误，因为 VSIX 清单文件不具有的作者的值。 当在后续步骤中添加值时，此错误将消失。
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>创建 VSIX 包，以将扩展部署
  若要将扩展部署，使用 VSIX 项目在解决方案中创建 VSIX 包。 首先，通过修改 VSIX 项目中的 source.extension.vsixmanifest 文件中配置 VSIX 包。 然后，通过生成解决方案中创建 VSIX 包。
@@ -290,7 +290,7 @@ ms.locfileid: "60040567"
 6. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在中**源**列表中，选择**当前解决方案中的项目**。
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040567"
 10. 在中**类型**框中，输入**SharePoint.Commands.v4**。
 
     > [!NOTE]
-    >  此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    > 此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
 11. 在中**源**列表中，选择**当前解决方案中的项目**列表项。
 

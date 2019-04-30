@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436498"
 ---
 # <a name="ribbon-xml"></a>功能区 XML
   功能区 (XML) 项，您可以使用 XML 自定义功能区。 如果你想要自定义功能区 （可视化设计器） 项不支持一种方法在功能区，请使用功能区 (XML) 项。 可以对每个项执行的操作的比较，请参阅[功能区概述](../vsto/Ribbon-overview.md)。
@@ -60,7 +60,7 @@ ms.locfileid: "60117533"
 - 定义功能区类中的回叫方法。
 
 > [!NOTE]
->  Outlook 还需要一个额外的步骤。 有关详细信息，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
+> Outlook 还需要一个额外的步骤。 有关详细信息，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
  有关演示如何实现自动化从功能区的应用程序的演练，请参阅[演练：使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)。
 

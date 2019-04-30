@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427433"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：向工作表添加 XMLMappedRange 控件
   在将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动添加<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>到工作表中的控件。
@@ -26,7 +26,7 @@ ms.locfileid: "60085709"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件上不可用**工具箱**或**数据源**窗口。 此外，不能创建<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>以编程方式控制。
+> <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件上不可用**工具箱**或**数据源**窗口。 此外，不能创建<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>以编程方式控制。
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>若要向工作表添加 XMLMappedRange 控件
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085709"
 3. 上**开发人员**选项卡上，单击**源**。
 
     > [!NOTE]
-    >  如果**开发人员**选项卡不在功能区上可见，则必须启用它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果**开发人员**选项卡不在功能区上可见，则必须启用它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
      **XML 源**此时将显示任务窗格。
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085709"
      <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>被创建并添加到项目。
 
     > [!NOTE]
-    >  如果您将从父元素拖**XML 源**任务窗格中，<xref:Microsoft.Office.Tools.Excel.ListObject>创建控件。
+    > 如果您将从父元素拖**XML 源**任务窗格中，<xref:Microsoft.Office.Tools.Excel.ListObject>创建控件。
 
 ## <a name="see-also"></a>请参阅
 - [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)

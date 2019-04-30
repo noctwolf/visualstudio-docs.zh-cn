@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432562"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：使用向导来处理项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 1. 创建一个 C# 项目模板项目 (在 Visual Studio 中，**文件 / 新建 / 项目 / Visual C# / 可扩展性 / C# 项目模板**)。 其命名为**MyProjectTemplate**。  
   
     > [!NOTE]
-    >  您可能需要安装 Visual Studio SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+    > 您可能需要安装 Visual Studio SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 2. 添加新的 VSIX 项目 (**文件 / 新建 / 项目 / Visual C# / 可扩展性 / VSIX 项目**) 中与项目模板项目相同的解决方案 (在**解决方案资源管理器**，选择解决方案节点，右键单击，然后选择**添加 / 新建项目**)。 其命名为**MyProjectWizard。**  
   

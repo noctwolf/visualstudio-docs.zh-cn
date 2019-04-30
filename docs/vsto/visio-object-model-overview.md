@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438754"
 ---
 # <a name="visio-object-model-overview"></a>Visio 对象模型概述
   要为 Microsoft Office Visio 开发 Office 解决方案，则可以与 Visio 对象模型进行交互。 此对象模型包含 Visio 中主互操作程序集所提供的类和接口，并在 `Microsoft.Office.Interop.Visio` 命名空间中定义。
@@ -67,7 +67,7 @@ ms.locfileid: "60096551"
  VBA 对象模型引用中的所有对象和成员都对应于 Visio 主互操作程序集 (PIA) 中的类型和成员。 例如， `Document` VBA 对象模型引用中的对象对应于 Visio PIA 中的 Microsoft.Office.Interop.Visio.Document 类型。 虽然 VBA 对象模型引用提供大多数属性、方法和事件的代码示例，但如果想要将其用于使用 Visual Studio 创建的 Visio VSTO 外接程序项目，则必须将本引用中的 VBA 代码转换成 Visual Basic 或 Visual C#。
 
 > [!NOTE]
->  此时，没有任何 Visio 主互操作程序集的参考文档。
+> 此时，没有任何 Visio 主互操作程序集的参考文档。
 
  有关相关的代码示例和创建 Visio 解决方案的其他工具，请参阅[Visio 2010 软件开发工具包](http://go.microsoft.com/fwlink/?LinkId=196501)。
 

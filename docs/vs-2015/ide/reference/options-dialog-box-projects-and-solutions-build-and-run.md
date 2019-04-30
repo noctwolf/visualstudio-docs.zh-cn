@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433680"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>选项对话框，项目和解决方案，生成和运行
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "59652613"
   
  **运行期间，当项目过期时**  
  > [!NOTE]
->  此列表仅适用于 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目。  
+> 此列表仅适用于 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目。  
   
  默认情况下，如果在选择 F5 键或在菜单栏上依次选择“调试”、“启动”时，项目配置已过期，则将显示一条消息。 你可以指定是否仍要生成项目以及是否显示消息。 此选项用于指定是否将显示消息以及不显示消息时的生成行为。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "59652613"
  如果从“生成”菜单启动生成时出现生成错误，则将显示一条消息。 您可以指定是否要继续通过启动该应用程序和该消息将显示每次生成错误发生。 此选项用于指定是否将显示消息以及不显示消息时的行为。  
   
 > [!NOTE]
->  此选项仅适用于 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目。  
+> 此选项仅适用于 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目。  
   
  **提示启动**  
  在每次出现生成错误时显示一个消息框。  
@@ -73,7 +73,7 @@ ms.locfileid: "59652613"
   
  **MSBuild 项目生成日志文件详细信息**  
  > [!NOTE]
->  此选项仅适用于 Visual C++ 项目。  
+> 此选项仅适用于 Visual C++ 项目。  
   
  确定写入到生成日志文件中的信息数，该文件位于 \\...\\ProjectName\Debug\\ProjectName.log。  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46e41cacafa2251c96ec7a97899b81034f455d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414216"
 ---
 # <a name="program-control"></a>程序控制
 在 Visual Studio 中调试时，所有以下单步执行和继续例程出现在程序级别上：
@@ -33,7 +33,7 @@ ms.locfileid: "60072950"
 - 继续执行所包含的程序线程
 
 > [!NOTE]
->  在线程级别上实现查看调用堆栈。 若要枚举帧信息查看线程的调用堆栈时，必须实现的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口。
+> 在线程级别上实现查看调用堆栈。 若要枚举帧信息查看线程的调用堆栈时，必须实现的所有方法[IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口。
 
 ## <a name="methods-of-program-control"></a>程序控件的方法
  下表显示的方法[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) ，必须实现最小功能调试引擎 (DE) 和执行控制。

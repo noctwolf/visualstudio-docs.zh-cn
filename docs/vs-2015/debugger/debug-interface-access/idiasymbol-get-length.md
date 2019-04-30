@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2942c69908348b13bb2a682471ca82cff850830d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9f8c757d3da3049c29f7da13b13985dc2c50b4b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422986"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_length ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  如果[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)的符号是`LocIsBitField`，此方法返回的长度是以位为单位; 否则，长度是以字节为单位的所有其他位置类型。  

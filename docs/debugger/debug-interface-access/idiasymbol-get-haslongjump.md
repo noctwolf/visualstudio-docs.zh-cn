@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e942128cdf05f19ecf618cc78dcc1d401ea6ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401505"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 检索一个标志，指定该函数是否包含的一种用法[longjmp](/cpp/c-runtime-library/reference/longjmp)命令 (已与配对[setjmp](/cpp/c-runtime-library/reference/setjmp)命令时，它们构成异常处理的 C 样式方法)。
@@ -39,11 +39,11 @@ HRESULT get_hasLongJump
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v8.0|

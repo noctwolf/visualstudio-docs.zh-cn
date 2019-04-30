@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428199"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>演练：为创建和运行单元测试 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069845"
 Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用进行单元测试，并包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
   
 > [!TIP]
->  有关开发 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用的详细信息，请参阅 [Windows 应用商店应用入门](http://go.microsoft.com/fwlink/?LinkID=241410)。  
+> 有关开发 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用的详细信息，请参阅 [Windows 应用商店应用入门](http://go.microsoft.com/fwlink/?LinkID=241410)。  
   
  Visual Studio 提供以下单元测试功能：  
   
@@ -54,7 +54,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
 2. 在“模板”之下，选择要用以创建单元测试的编程语言，然后选择关联的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 单元测试库。 例如，选择 **“Visual C#”** ，然后选择 **“Windows 应用商店”**，再选择 **“单元测试库(Windows 应用商店应用)”**。  
   
     > [!NOTE]
-    >  Visual Studio 包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
+    > Visual Studio 包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
   
 3. （可选）在 **“名称”** 文本框中，输入要用于 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]单元测试项目的名称。  
   
@@ -84,7 +84,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
 3. 在 **“功能”** 下面的列表中，选择你的单元测试和所测试代码需要具备的功能。 例如，单元测试及其测试的代码需要具备访问 Internet 的功能，那么请选中 **“Internet”** 复选框。  
   
     > [!NOTE]
-    >  所选功能只应包括 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 单元测试正常运行所需的功能。 这些功能完全不必包含不属于所测试 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的功能，一般应是为所测试 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用指定的功能的子集。  
+    > 所选功能只应包括 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 单元测试正常运行所需的功能。 这些功能完全不必包含不属于所测试 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的功能，一般应是为所测试 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用指定的功能的子集。  
   
      有关详细信息，请参阅 [Configure a Windows 8.1 app package by using the manifest designer](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)（使用清单设计器配置 Windows 8.1 应用包）。  
   
@@ -111,22 +111,22 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
      现在，你的单元测试已列出。  
   
     > [!NOTE]
-    >  必须生成解决方案，才能在“测试资源管理器”中更新单元测试列表。  
+    > 必须生成解决方案，才能在“测试资源管理器”中更新单元测试列表。  
   
     > [!WARNING]
-    >  Visual Studio 中的已知问题：生成测试项目之前，必须打开测试资源管理器。  
+    > Visual Studio 中的已知问题：生成测试项目之前，必须打开测试资源管理器。  
   
 3. 在“测试资源管理器”中，选择你创建的单元测试。  
   
     > [!TIP]
-    >  “测试资源管理器”在 **“源:”** 旁边提供指向源代码的链接。  
+    > “测试资源管理器”在 **“源:”** 旁边提供指向源代码的链接。  
   
 4. 选择 **“全部运行”**。  
   
      ![单元测试资源管理器 &#45; 运行单元测试](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  可以选择资源管理器中列出的一个或多个单元测试，然后右击并选择 **“运行选定测试”**。  
+    > 可以选择资源管理器中列出的一个或多个单元测试，然后右击并选择 **“运行选定测试”**。  
     >   
     >  此外，你也可以选择 **“调试所选测试”**、 **“打开测试”**，并使用 **“属性”** 选项。  
     >   

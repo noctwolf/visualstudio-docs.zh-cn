@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433931"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 给定的文本可用，但它不提供字符通知帮助器。  
@@ -46,7 +46,7 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_FAIL`|该方法失败。|  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  假定调用一次`IDebugDocumentText::GetText`可以从多个调用中获取字符`AddDeferredText`。 帮助程序类可能会要求延迟字符的相同范围超过一次。  
   
 > [!NOTE]
->  调用`AddDeferredText`不应通过调用混`AddUnicodeText`或`AddDBCSText`。 如果发生这种情况，`E_FAIL`返回。  
+> 调用`AddDeferredText`不应通过调用混`AddUnicodeText`或`AddDBCSText`。 如果发生这种情况，`E_FAIL`返回。  
   
 ## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)   

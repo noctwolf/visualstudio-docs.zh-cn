@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438826"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 类管理服务器上的文档
   可以使用`ServerDocument`类中[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]来管理文档级自定义的几个方面，即使未安装 Microsoft Office Word 和 Microsoft Office Excel。 您可以执行以下任务：
@@ -38,7 +38,7 @@ ms.locfileid: "60045482"
  详细了解 Visual Studio 2010 Tools for Office Runtime 和 Office 扩展的.NET Framework，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
 > [!NOTE]
->  如果已使用的旧应用程序`ServerDocument`类中`Visual Studio Tools for Office`系统 (版本 3.0 运行时)，则`Visual Studio Tools for Office`必须运行该应用程序的计算机上安装系统 （版本 3.0 运行时）。 `Visual Studio 2010 Tools for Office runtime`无法运行这些应用程序。
+> 如果已使用的旧应用程序`ServerDocument`类中`Visual Studio Tools for Office`系统 (版本 3.0 运行时)，则`Visual Studio Tools for Office`必须运行该应用程序的计算机上安装系统 （版本 3.0 运行时）。 `Visual Studio 2010 Tools for Office runtime`无法运行这些应用程序。
 
 ## <a name="CachedData"></a> 使用文档中的缓存数据
  `ServerDocument`类提供了可用于使用自定义文档中的数据缓存的成员。 有关缓存数据的详细信息，请参阅[缓存数据](../vsto/caching-data.md)并[访问服务器上的文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)。

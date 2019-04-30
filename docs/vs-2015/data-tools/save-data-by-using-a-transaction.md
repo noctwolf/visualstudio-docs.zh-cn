@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425085"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用事务保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60065254"
  项目不会创建对 System.Transactions 程序集的引用，因此您需要手动添加对项目使用事务的引用。  
   
 > [!NOTE]
->  <xref:System.Transactions>在 Windows 2000 或更高版本支持命名空间。  
+> <xref:System.Transactions>在 Windows 2000 或更高版本支持命名空间。  
   
  若要实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象中`using`语句。 (有关详细信息，请参阅[Using 语句](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)，并[using 语句](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3)。)在中运行的代码`using`语句参与事务。  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431949"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656773"
 TableAdapter 组件填充数据库，基于一个或多个查询或您指定的存储的过程中的数据的数据集。 Tableadapter 还可以执行添加、 更新和删除数据库来保存对数据集所做的更改。 此外可以颁发任何特定表，该表不相关的全局命令。  
   
 > [!NOTE]
->  Tableadapter 是由 Visual Studio 设计器生成的。 如果要以编程方式创建数据集，然后使用 DataAdapter，这是.NET Framework 类。  
+> Tableadapter 是由 Visual Studio 设计器生成的。 如果要以编程方式创建数据集，然后使用 DataAdapter，这是.NET Framework 类。  
   
  TableAdapter 操作有关的详细信息，您可以直接跳到以下主题之一：  
   
@@ -98,7 +98,7 @@ TableAdapter 组件填充数据库，基于一个或多个查询或您指定的�
  当使用 TableAdapter 时，它将有效地执行与你通常会执行的命令相同的操作。 例如，当调用该适配器`Fill`方法，该适配器运行数据命令其`SelectCommand`属性，并使用数据读取器 (例如， <xref:System.Data.SqlClient.SqlDataReader>) 要加载的结果集到数据表。 同样，当调用该适配器`Update`方法，它运行相应的命令 (在`UpdateCommand`， `InsertCommand`，和`DeleteCommand`属性) 为每个更改数据表中的记录。  
   
 > [!NOTE]
->  如果没有足够的信息在主查询中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`生成 TableAdapter 时默认情况下创建命令。 如果 TableAdapter 的主查询不只是一个单表 SELECT 语句，就可以在设计器将无法生成`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 如果不会生成这些命令，在运行时，可能会收到错误`TableAdapter.Update`方法。  
+> 如果没有足够的信息在主查询中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`生成 TableAdapter 时默认情况下创建命令。 如果 TableAdapter 的主查询不只是一个单表 SELECT 语句，就可以在设计器将无法生成`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 如果不会生成这些命令，在运行时，可能会收到错误`TableAdapter.Update`方法。  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
  除了`InsertCommand`， `UpdateCommand`，和`DeleteCommand`，可以直接对数据库运行的方法创建 Tableadapter。 这些方法 (`TableAdapter.Insert`， `TableAdapter.Update`，和`TableAdapter.Delete`) 可以调用直接以操作数据库中的数据。 这意味着您可以从您的代码而不是调用调用这些单个方法`TableAdapter.Update`处理插入、 更新和删除操作处于挂起状态的相关联的数据表。  

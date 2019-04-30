@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2e2b21f69d0688f3554aec8cf751cf674c2b5e30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411474"
 ---
 # <a name="text-template-control-blocks"></a>文本模板控制块
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Found another one!
 ```  
   
 > [!WARNING]
->  始终使用 {...} 若要分隔包含嵌入的纯文本的嵌套的语句。 以下示例可能无法正常工作：  
+> 始终使用 {...} 若要分隔包含嵌入的纯文本的嵌套的语句。 以下示例可能无法正常工作：  
 >   
->  `<# if (ShouldPrint) #> Some text. -- WRONG`  
+> `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
->  相反，应包括 {大括号}，如下所示：  
+> 相反，应包括 {大括号}，如下所示：  
   
 ```  
   
@@ -120,7 +120,7 @@ Some text.
 ```  
   
 > [!NOTE]
->  类功能控制块的后面一定不能跟相同模板文件中的标准控制块。 但是，此限制并不适用于使用 `<#@include#>` 指令的结果。 每个包含的文件都可以具有后跟类功能块的标准块。  
+> 类功能控制块的后面一定不能跟相同模板文件中的标准控制块。 但是，此限制并不适用于使用 `<#@include#>` 指令的结果。 每个包含的文件都可以具有后跟类功能块的标准块。  
   
  你可以通过将文本和表达式块嵌入到类功能控制块来创建生成输出的函数。 例如：  
   

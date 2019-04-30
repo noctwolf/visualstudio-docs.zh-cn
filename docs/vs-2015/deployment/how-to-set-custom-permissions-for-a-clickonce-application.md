@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 502560791295bed256834f8a00bfb55ce5aa448a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424617"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序设置自定义权限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60085657"
 7. 在 `</applicationRequestMinimum>` 元素之前，为应用程序所需的权限添加 XML 代码。  
   
     > [!NOTE]
-    >  可以使用权限集的 `ToXml` 方法为应用程序清单生成 XML 代码。 例如，若要为 <xref:System.Security.Permissions.EnvironmentPermission> 权限集生成 XML，请调用 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 有关详细信息的结构的权限集 XML，请参阅[NIB:如何：通过使用 XML 文件的权限集的导入](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)。  
+    > 可以使用权限集的 `ToXml` 方法为应用程序清单生成 XML 代码。 例如，若要为 <xref:System.Security.Permissions.EnvironmentPermission> 权限集生成 XML，请调用 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。 有关详细信息的结构的权限集 XML，请参阅[NIB:如何：通过使用 XML 文件的权限集的导入](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236)。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   

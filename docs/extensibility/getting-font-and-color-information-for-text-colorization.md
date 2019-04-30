@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417162"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>获取对文本着色的字体和颜色信息
 呈现或以的文本显示在用户界面 (UI) 元素中的过程取决于项目、 其技术和开发人员首选项的类型。 **字体和颜色**属性页存储的设置。
@@ -24,7 +24,7 @@ ms.locfileid: "60042402"
  显示以的文本的大多数实现需要<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>和关联接口，用于显示、 检索和存储文本显示设置。
 
 > [!NOTE]
->  自定义核心编辑器时 (它也支持**文本 EditorCategory**)，建议你使用的着色技术语言服务中。 有关详细信息，请参阅[字体和颜色概述](../extensibility/font-and-color-overview.md)。
+> 自定义核心编辑器时 (它也支持**文本 EditorCategory**)，建议你使用的着色技术语言服务中。 有关详细信息，请参阅[字体和颜色概述](../extensibility/font-and-color-overview.md)。
 
 ## <a name="get-default-font-and-color-information"></a>获取默认字体和颜色信息
  所有**字体和颜色**应在指定的任何窗口中显示的文本设置**显示项**之一**类别**。 有关详细信息，请参阅[字体和颜色、 环境、 选项对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。

@@ -12,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: d8e2bbf51aa6266411558e91f3c17905d0c8605c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422752"
 ---
 # <a name="managed-package-framework-classes"></a>托管包框架类
 使用托管代码，托管包框架 (MPF) 类可以用于创建 Vspackage。 它们提供许多 VSPackage 接口的默认实现。 通过隐藏实现细节和复杂性，MPF 使你能够利用最少量的代码创建 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成产品。  
   
 > [!WARNING]
->  大多包含托管包框架类的程序集都附带有 Visual Studio SDK。 可以在 [项目的托管包框架](http://mpfproj11.codeplex.com/)下载适用于项目 的托管包框架的源代码。  
+> 大多包含托管包框架类的程序集都附带有 Visual Studio SDK。 可以在 [项目的托管包框架](http://mpfproj11.codeplex.com/)下载适用于项目 的托管包框架的源代码。  
   
 ## <a name="mpf-namespaces"></a>MPF 命名空间  
  下表列出了由 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供的 MPF 命名空间。  

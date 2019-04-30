@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 516098cef38a70ef746d2307504a625d64d4ded6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9bec7cdbf0641bbd1bba1e70c2f21ec232a18e6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431805"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_type ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  若要确定符号的类型，必须调用此方法，并检查生成[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象。 请注意，可能具有的类型的符号。 例如，结构的名称具有任何类型，但它可能具有子级的符号 (使用[idiasymbol:: Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)方法来检查这些子级)。  

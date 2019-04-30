@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422946"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 
@@ -21,7 +21,7 @@ ms.locfileid: "55922363"
  编写文本模板的一般概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
 
 > [!NOTE]
->  运行时（预处理）文本模板中不需要 `assembly` 指令。 相反，将添加到必需的程序集**引用**的 Visual Studio 项目。
+> 运行时（预处理）文本模板中不需要 `assembly` 指令。 相反，将添加到必需的程序集**引用**的 Visual Studio 项目。
 
 ## <a name="using-the-assembly-directive"></a>使用 Assembly 指令
  该指令的语法如下所示：

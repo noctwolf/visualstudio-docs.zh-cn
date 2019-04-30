@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438614"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练：更改工作表格式设置使用 CheckBox 控件
   本演练显示了使用 Microsoft Office Excel 工作表上的复选框来更改格式设置基础的知识。 将使用 Visual Studio 中的 Office 开发工具创建并将代码添加到你的项目。 若要查看已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "60061684"
 - 测试您的项目。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -94,7 +94,7 @@ ms.locfileid: "60061684"
      接下来，将拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>到工作表中的控件。
 
     > [!NOTE]
-    >  您还可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>通过键入控件**textFont**到**名称**框。
+    > 您还可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>通过键入控件**textFont**到**名称**框。
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>若要将文本添加到 NamedRange 控件
 

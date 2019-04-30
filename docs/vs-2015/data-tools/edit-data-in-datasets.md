@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425384"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60104997"
      此方法不会以物理方式删除记录。 相反，它将标记为删除的记录。  
   
     > [!NOTE]
-    >  如果收到的 count 属性<xref:System.Data.DataRowCollection>，在生成的计数包括已标记为删除的记录。 若要获取不会将标记为删除的记录的精确计数，可以循环访问集合，查看<xref:System.Data.DataRow.RowState%2A>每个记录属性。 (标记为删除的记录具有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState>。)或者，可以创建数据视图的筛选器根据行状态的数据集，并从那里获取的 count 属性。  
+    > 如果收到的 count 属性<xref:System.Data.DataRowCollection>，在生成的计数包括已标记为删除的记录。 若要获取不会将标记为删除的记录的精确计数，可以循环访问集合，查看<xref:System.Data.DataRow.RowState%2A>每个记录属性。 (标记为删除的记录具有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState>。)或者，可以创建数据视图的筛选器根据行状态的数据集，并从那里获取的 count 属性。  
   
      下面的示例演示如何调用<xref:System.Data.DataRow.Delete%2A>方法将标记中的第一行`Customers`表为已删除：  
   

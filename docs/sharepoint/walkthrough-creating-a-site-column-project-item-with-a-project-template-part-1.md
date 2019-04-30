@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430390"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板，第 1 部分创建站点栏项目项
   SharePoint 项目是针对一个或多个 SharePoint 项目项的容器。 可以通过创建自己的 SharePoint 项目项类型，然后将其关联到的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏中，定义项目项类型，然后将创建可用于创建包含网站栏项目项的新项目的项目模板。
@@ -75,7 +75,7 @@ ms.locfileid: "60059989"
 4. 展开**Visual Basic**或**Visual C#** 节点，然后选择**扩展性**节点。
 
     > [!NOTE]
-    >  **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
+    > **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
 
 5. 在项目模板列表中，选择**VSIX 项目**。
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059989"
 2. 创建名为 SharePoint 2010 项目**BaseSharePointProject**。
 
    > [!IMPORTANT]
-   >  在中**SharePoint 自定义向导**，不选择**部署为场解决方案**选项按钮。
+   > 在中**SharePoint 自定义向导**，不选择**部署为场解决方案**选项按钮。
 
 3. 将空元素项添加到项目中，并将其命名为项**Field1**。
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059989"
 7. 在目录中包含 BaseSharePointProject 项目，选择 key.snk 文件，然后选择**添加**按钮。
 
    > [!NOTE]
-   >  在本演练中，您创建的项目模板使用相同的 key.snk 文件进行签名使用模板创建的每个项目。 若要了解如何扩展此示例，以便创建不同的 key.snk 文件，为每个项目实例，请参阅[演练：使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+   > 在本演练中，您创建的项目模板使用相同的 key.snk 文件进行签名使用模板创建的每个项目。 若要了解如何扩展此示例，以便创建不同的 key.snk 文件，为每个项目实例，请参阅[演练：使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 8. 重复步骤 5-8，从 BaseSharePointProject 目录中指定的子文件夹中添加以下文件：
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059989"
 6. 在中**类型**列表中，选择**Microsoft.VisualStudio.ProjectTemplate**。
 
     > [!NOTE]
-    >  此值对应于`ProjectTemplate`extension.vsixmanifest 文件中的元素。 此元素标识的子文件夹中包含的项目模板的 VSIX 包。 有关详细信息，请参阅[ProjectTemplate 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
+    > 此值对应于`ProjectTemplate`extension.vsixmanifest 文件中的元素。 此元素标识的子文件夹中包含的项目模板的 VSIX 包。 有关详细信息，请参阅[ProjectTemplate 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
 
 7. 在中**源**列表中，选择**当前解决方案中的项目**。
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059989"
 10. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 11. 在中**源**列表中，选择**当前解决方案中的项目**。
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059989"
      此步骤中指定你想要用于调试的开发计算机上的本地 SharePoint 站点。
 
     > [!NOTE]
-    >  **站点 URL**属性为空默认情况下，因为网站栏项目模板不会提供一个向导，用于创建项目时收集此值。 若要了解如何将添加一个向导，要求开发人员输入此值，然后在新项目中配置此属性，请参阅[演练：使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+    > **站点 URL**属性为空默认情况下，因为网站栏项目模板不会提供一个向导，用于创建项目时收集此值。 若要了解如何将添加一个向导，要求开发人员输入此值，然后在新项目中配置此属性，请参阅[演练：使用项目模板，第 2 部分中创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 3. 选择 F5。
 
      打包和部署到 SharePoint 站点中指定的网站栏**站点 URL**项目的属性。 Web 浏览器打开到此站点的默认页。
 
     > [!NOTE]
-    >  如果**脚本调试被禁用**出现对话框，请选择**是**按钮以继续调试项目。
+    > 如果**脚本调试被禁用**出现对话框，请选择**是**按钮以继续调试项目。
 
 4. 上**站点操作**菜单中，选择**站点设置**。
 

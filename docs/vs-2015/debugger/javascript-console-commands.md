@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431422"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60081419"
  如果 JavaScript 控制台窗口已关闭，则可以打开它通过选择 Visual Studio 中调试时，**调试** > **Windows** > **JavaScript控制台**。  
   
 > [!NOTE]
->  如果该窗口在调试会话期间不可用，请确保在项目的“调试”属性中将调试器类型设置为 **“脚本”** 。  
+> 如果该窗口在调试会话期间不可用，请确保在项目的“调试”属性中将调试器类型设置为 **“脚本”** 。  
   
 ## <a name="console-object-commands"></a>控制台对象命令  
  下表显示 `console` 对象命令的语法，这些命令可用在“JavaScript 控制台”窗口中或者可用于从代码中向控制台发送消息。 此对象提供多种形式，以使你可区分信息性消息和错误消息（如果要区分）。  
@@ -43,7 +43,7 @@ ms.locfileid: "60081419"
  如果需要避免可能与由局部对象命名的控制台产生混淆，可使用较长的命令形式 `window.console.[command]` 。  
   
 > [!TIP]
->  较旧版本的 Visual Studio 不支持完整的命令集。 使用控制台对象上的 IntelliSense 快速获取有关支持命令的信息。  
+> 较旧版本的 Visual Studio 不支持完整的命令集。 使用控制台对象上的 IntelliSense 快速获取有关支持命令的信息。  
   
 |命令|描述|示例|  
 |-------------|-----------------|-------------|  

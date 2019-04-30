@@ -10,12 +10,12 @@ ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eeb378b09ffc3e12de8996d7feabbd20a4b40068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436667"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>启动后发送启动事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58934961"
 - 加载完成事件，发送的代码时加载并准备好运行，但在执行任何代码之前  
   
   > [!NOTE]
-  >  当此事件继续执行时，全局变量进行初始化并启动例程运行。  
+  > 当此事件继续执行时，全局变量进行初始化并启动例程运行。  
   
 - 可能的其他线程的创建和模块加载事件。  
   

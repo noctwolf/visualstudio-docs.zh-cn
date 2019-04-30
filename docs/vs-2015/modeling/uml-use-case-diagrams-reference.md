@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424316"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML 用例图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58934231"
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  本主题介绍了用例图中可用的元素。 有关如何绘制用例图的详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。 有关如何创建和绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+> 本主题介绍了用例图中可用的元素。 有关如何绘制用例图的详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。 有关如何创建和绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
 ## <a name="reading-use-case-diagrams"></a>阅读用例图  
  以下各节中的表介绍了用例图上可用的元素及其主要属性。 有关属性的完整列表，请参阅[uml 元素的属性用例图](../modeling/properties-of-elements-on-uml-use-case-diagrams.md)。  

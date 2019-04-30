@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c5c775dc309c02ca24d27e8b8ac19d2c9d9d588
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440180"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60105715"
  若要确认已启用 IntelliTrace，请打开**工具 / 选项 / IntelliTrace**选项页。 默认情况下应选中“启用 IntelliTrace”。  
   
 > [!NOTE]
->  “IntelliTrace”选项页上的所有设置都针对 Visual Studio 这个整体，而不针对单个项目或解决方案。 这些设置中的更改适用于 Visual Studio 的所有实例、所有调试会话和所有项目或解决方案。  
+> “IntelliTrace”选项页上的所有设置都针对 Visual Studio 这个整体，而不针对单个项目或解决方案。 这些设置中的更改适用于 Visual Studio 的所有实例、所有调试会话和所有项目或解决方案。  
   
 ## <a name="ChooseEvents"></a> 选择 IntelliTrace 记录的事件  
  可以启用或禁用针对特定 IntelliTrace 事件的记录。  
@@ -54,9 +54,9 @@ ms.locfileid: "60105715"
  这使你可以查看调用堆栈历史记录以及在代码中的调用间后退和前进。 IntelliTrace 记录的数据包括方法名、方法进入和退出点，以及部分参数值和返回值。  
   
 > [!TIP]
->  默认情况下不启用此选项，因为它会增加大量开销。 IntelliTrace 不仅需要截获应用程序生成的每个方法调用，当需要在屏幕上显示数据或将数据保留到磁盘时，它还需要处理一组更大的数据。  
+> 默认情况下不启用此选项，因为它会增加大量开销。 IntelliTrace 不仅需要截获应用程序生成的每个方法调用，当需要在屏幕上显示数据或将数据保留到磁盘时，它还需要处理一组更大的数据。  
 >   
->  可以通过限制 IntelliTrace 记录的事件列表以及将收集的模块数保持为最小值来减少性能开销。 有关详细信息，请参阅[控制 IntelliTrace 记录的调用信息量](../debugger/intellitrace-features.md#ControlCallData)。  
+> 可以通过限制 IntelliTrace 记录的事件列表以及将收集的模块数保持为最小值来减少性能开销。 有关详细信息，请参阅[控制 IntelliTrace 记录的调用信息量](../debugger/intellitrace-features.md#ControlCallData)。  
   
 ### <a name="using-the-navigation-gutter"></a>使用导航线  
  可以使用代码窗口左侧显示的导航线。 如果没有看到导航线，请转到**工具 / 选项 / IntelliTrace / 高级**，然后选择**显示在调试模式下的导航滚动条槽**。  
@@ -88,7 +88,7 @@ ms.locfileid: "60105715"
  可以配置 IntelliTrace 以自动保存到文件，通过转到**工具 / 选项 / IntelliTrace / 高级**，然后选择**在此目录中的存储 IntelliTrace 记录**。 还可以为生成的文件配置固定大小，这会让 IntelliTrace 在空间不足时覆盖旧数据。 自动保存文件并启用 Visual Studio 承载进程 (vshost.exe) 时，Visual Studio 会为每个 IntelliTrace 会话创建两个文件。  
   
 > [!TIP]
->  要节省磁盘空间，请在不再需要时禁用自动保存文件。 不会删除任何现有文件。 可以随时从上下文菜单按需保存到文件。  
+> 要节省磁盘空间，请在不再需要时禁用自动保存文件。 不会删除任何现有文件。 可以随时从上下文菜单按需保存到文件。  
   
  将 IntelliTrace 数据保存到文件中时，每个 IntelliTrace 从中进行收集的进程都将获得一个 .itrace 文件。 你可以然后打开.itrace 文件在 Visual Studio 中通过转到**文件 / 打开 / 文件**并从打开文件对话框中选择.itrace 文件。 有关详细信息，请参阅[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。  
   

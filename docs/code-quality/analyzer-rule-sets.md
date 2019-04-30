@@ -1,6 +1,6 @@
 ---
 title: 分析器规则集
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387698"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>规则集适用于 Roslyn 分析器
 
@@ -25,7 +25,7 @@ ms.locfileid: "57866992"
 
 ## <a name="use-analyzer-rule-sets"></a>使用分析工具规则集
 
-之后您[安装 NuGet 分析器包](install-roslyn-analyzers.md)，找到预定义的规则中设置其*ruleset*目录，例如 *%USERPROFILE%\\.nuget\packages\microsoft.codequality.analyzers\<版本 > \rulesets*。 在这里，可以拖动和删除，请复制并粘贴一个或多个到 Visual Studio 项目中的 ruleset**解决方案资源管理器**。
+之后您[安装 NuGet 分析器包](install-roslyn-analyzers.md)，找到预定义的规则中设置其*ruleset*目录。 例如，如果您引用`Microsoft.CodeAnalysis.FxCopAnalyzers`分析器包然后可以查找在其规则集目录 *%USERPROFILE%\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<版本\>\rulesets*。 在这里，可以拖动和删除，请复制并粘贴一个或多个到 Visual Studio 项目中的 ruleset**解决方案资源管理器**。
 
 若要使规则集的活动规则集进行分析，右键单击该项目中**解决方案资源管理器**，然后选择**属性**。 在项目属性页中，选择**代码分析**选项卡。下**运行此规则集**，选择**浏览**，然后选择所需的规则集复制到项目目录。 现在您只看到在所选的规则集中启用这些规则的规则冲突。
 
@@ -54,7 +54,7 @@ ms.locfileid: "57866992"
 
 ## <a name="see-also"></a>请参阅
 
-- [分析器常见问题](analyzers-faq.md)
+- [分析器常见问题解答](analyzers-faq.md)
 - [.NET Compiler Platform 分析器概述](roslyn-analyzers-overview.md)
 - [安装分析器](install-roslyn-analyzers.md)
 - [使用分析器](use-roslyn-analyzers.md)

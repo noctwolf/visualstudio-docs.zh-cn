@@ -12,12 +12,12 @@ ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b86ac7c701f96d467f0c059fc7e4b732699b1da5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7334ddd1ce6c7f9feac63253246e55b65121e18b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432442"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询已成功。|  
 |SCC_E_OPNOTSUPPORTED|源代码控制系统不支持此操作。|  
@@ -64,7 +64,7 @@ LPLONG  lpStatus
  IDE 使用此函数之前目录已重命名，以检查是否该目录位于源控件下通过查询其是否具有相应的项目。 如果目录不受源代码管理中，IDE 可以向用户提供正确的警告。  
   
 > [!NOTE]
->  如果源代码管理插件选择实现一个或多个状态的值，则未实现的位应设置为零。  
+> 如果源代码管理插件选择实现一个或多个状态的值，则未实现的位应设置为零。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427055"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "60090610"
     一种解决方案会生成包含两个项目。 它们被命名为 Dsl 和 DslPackage。 关系图文件，它是打开命名的 DslDefinition.dsl。  
   
    > [!NOTE]
-   >  你可以在两个项目中的文件夹中看到的代码大部分是从 DslDefinition.dsl 生成的。 出于此原因，对你的 DSL 的大多数修改都会在此文件中。  
+   > 你可以在两个项目中的文件夹中看到的代码大部分是从 DslDefinition.dsl 生成的。 出于此原因，对你的 DSL 的大多数修改都会在此文件中。  
   
    用户界面现在类似于下图。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "60090610"
 1. 单击**转换所有模板**解决方案资源管理器工具栏中。 此时将重新生成大部分 DslDefinition.dsl 中的源代码。  
   
    > [!NOTE]
-   >  只要您更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   > 只要您更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. 按 F5，或在**调试**菜单上，单击**开始调试**。  
   
@@ -171,7 +171,7 @@ ms.locfileid: "60090610"
    可以将任意数量的文本模板文件添加到项目。 每个模板生成一个结果文件。  
   
 > [!NOTE]
->  当您更改 DSL 定义中时，示例文本模板代码才会生效，更新它。  
+> 当您更改 DSL 定义中时，示例文本模板代码才会生效，更新它。  
   
  有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)并[编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "60090610"
  当你想要修改 DSL 定义中时，关闭实验实例并更新主定义[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]实例。  
   
 > [!NOTE]
->  已修改 DSL 定义后，可能会丢失已使用早期版本创建的测试模型中的信息。  例如，调试解决方案包含名为示例，其中包含一些形状和连接线的文件。 在开始开发你的 DSL 定义后，它们将不可见，并保存文件时它们将会丢失。  
+> 已修改 DSL 定义后，可能会丢失已使用早期版本创建的测试模型中的信息。  例如，调试解决方案包含名为示例，其中包含一些形状和连接线的文件。 在开始开发你的 DSL 定义后，它们将不可见，并保存文件时它们将会丢失。  
   
  您可以对你的 DSL 各种各样的扩展。 下面的示例将为您提供展示了可能的值。  
   
@@ -285,7 +285,7 @@ ms.locfileid: "60090610"
          设置其名称，例如**城镇**。  
   
         > [!NOTE]
-        >  除了根模型的每个域类必须至少一个嵌入关系的目标或它必须继承自目标的一个嵌入的类。 出于此原因，它是通常比较方便使用的嵌入关系工具创建域类。  
+        > 除了根模型的每个域类必须至少一个嵌入关系的目标或它必须继承自目标的一个嵌入的类。 出于此原因，它是通常比较方便使用的嵌入关系工具创建域类。  
   
     2. 将域属性添加到新类，例如**名称**。  
   
@@ -296,7 +296,7 @@ ms.locfileid: "60090610"
          ![DSL 定义片段： 家谱根目录](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  引用关系到另一个从模型树的一部分表示交叉引用。  
+        > 引用关系到另一个从模型树的一部分表示交叉引用。  
   
 3. 添加形状以表示城市分类模型关系图上。  
   

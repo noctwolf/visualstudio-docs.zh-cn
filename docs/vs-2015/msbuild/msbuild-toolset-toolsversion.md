@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426302"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
  如本主题前面所述，MSBuild 使用注册表项来指定基本工具的路径。 如果该注册表项具有一个子项，则 MSBuild 将使用它来指定包含其他工具的子工具集的路径。 在这种情况下，通过合并在这两个项中定义的属性定义对工具集进行定义。  
   
 > [!NOTE]
->  如果工具集属性名称发生冲突，则为子项路径定义的值会覆盖为根项路径定义的值。  
+> 如果工具集属性名称发生冲突，则为子项路径定义的值会覆盖为根项路径定义的值。  
   
  若存在 `VisualStudioVersion` 生成属性，则子工具集将变为活动状态。 此属性可能会采用以下值之一：  
   

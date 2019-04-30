@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436491"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>有关 Office 解决方案的特定安全注意事项
   Microsoft .NET Framework 和 Microsoft Office 提供的安全功能有助于保护你的 Office 解决方案免受可能的安全威胁。 本主题将介绍其中一些威胁并提供有助于免受这些威胁的建议。 还包括有关 Microsoft Office 安全设置如何影响 Office 解决方案的信息。
@@ -74,7 +74,7 @@ ms.locfileid: "60081315"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  如果 Outlook 与 Exchange 一起使用，则从 `ThisAddIn.Application` 获取所有 Outlook 对象不能保证 VSTO 外接程序能够访问整个 Outlook 对象模型。 例如，如果 Exchange 管理员将 Outlook 自动设置为拒绝所有尝试访问地址信息使用 Outlook 对象模型中，则 Outlook 将不允许前面的代码示例，若要访问在 To 属性，即使该代码示例使用受信任的`ThisAddIn.Application`字段。
+> 如果 Outlook 与 Exchange 一起使用，则从 `ThisAddIn.Application` 获取所有 Outlook 对象不能保证 VSTO 外接程序能够访问整个 Outlook 对象模型。 例如，如果 Exchange 管理员将 Outlook 自动设置为拒绝所有尝试访问地址信息使用 Outlook 对象模型中，则 Outlook 将不允许前面的代码示例，若要访问在 To 属性，即使该代码示例使用受信任的`ThisAddIn.Application`字段。
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>指定要信任使用 Exchange 时的插件
  当 Outlook 与 Exchange 一起使用时，管理员可以指定某些 VSTO 外接程序可以在不遇到对象模型防护的情况下运行。 不能单独信任使用 Visual Studio 中的 Office 解决方案创建的 Outlook VSTO 外接程序；只能将它们作为一个组来信任。

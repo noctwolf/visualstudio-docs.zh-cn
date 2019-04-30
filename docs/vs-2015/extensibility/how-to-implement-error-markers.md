@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435971"
 ---
 # <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60118027"
 1. 正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。  
   
     > [!NOTE]
-    >  有关方法的提示、 语句完成、 错误标记等，可以使用的相同命令筛选器。  
+    > 有关方法的提示、 语句完成、 错误标记等，可以使用的相同命令筛选器。  
   
 2. 当筛选器收到一个事件，指示已移动到另一个行时，创建任务，检查有错误。  
   

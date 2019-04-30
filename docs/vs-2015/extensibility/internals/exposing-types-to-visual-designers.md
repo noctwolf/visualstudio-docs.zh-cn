@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a50b298dfafe093e404c6575b16a074d106522ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436317"
 ---
 # <a name="exposing-types-to-visual-designers"></a>向可视化设计器公开类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60103428"
  项目系统提供完全支持跟踪以更改到的输出文件的自定义工具，前提是这些更改是正在运行的自定义工具的结果。 每次运行自定义工具时，生成新的临时 PE，并相应通知发送到设计器。  
   
 > [!NOTE]
->  因为临时程序可执行文件的生成文件在后台发生，所以在编译失败，向用户未不报告任何错误。  
+> 因为临时程序可执行文件的生成文件在后台发生，所以在编译失败，向用户未不报告任何错误。  
   
  自定义工具，它们利用临时 PE 支持必须遵循以下规则：  
   

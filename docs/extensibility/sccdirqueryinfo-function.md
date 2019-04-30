@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4953c8478e25a1534691e99c41dce03930ac46ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434666"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函数
 此函数将检查以了解其当前状态的完全限定目录的列表。
@@ -53,7 +53,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|查询已成功。|
 |SCC_E_OPNOTSUPPORTED|源代码控制系统不支持此操作。|
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  IDE 使用此函数之前目录已重命名，以检查是否该目录位于源控件下通过查询其是否具有相应的项目。 如果目录不受源代码管理中，IDE 可以向用户提供正确的警告。
 
 > [!NOTE]
->  如果源代码管理插件选择实现一个或多个状态的值，则未实现的位应设置为零。
+> 如果源代码管理插件选择实现一个或多个状态的值，则未实现的位应设置为零。
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 功能](../extensibility/source-control-plug-in-api-functions.md)

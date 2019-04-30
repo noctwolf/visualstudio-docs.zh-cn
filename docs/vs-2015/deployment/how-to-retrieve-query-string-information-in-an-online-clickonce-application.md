@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431507"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "60069531"
  以下两个过程演示如何使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序获取查询字符串信息。  
   
 > [!NOTE]
->  仅当使用 HTTP（而不是使用文件共享或本地文件系统）启动应用程序时，才能在查询字符串中传递信息。  
+> 仅当使用 HTTP（而不是使用文件共享或本地文件系统）启动应用程序时，才能在查询字符串中传递信息。  
   
  第一个过程演示 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序如何使用一小段代码在应用程序启动时读取这些值。  
   
  下一个过程演示如何使用 MageUI.exe 配置 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序，以便它可以接受查询字符串参数。 每次发布应用程序时都需要执行此操作。  
   
 > [!NOTE]
->  决定启用此功能之前，请参阅本主题后面的“安全性”一节。  
+> 决定启用此功能之前，请参阅本主题后面的“安全性”一节。  
   
  有关如何创建[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署使用 Mage.exe 或 MageUI.exe 中，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 > [!NOTE]
->  从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。  
+> 从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。  
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>从 ClickOnce 应用程序获取查询字符串信息  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60069531"
 4. 在“文件”  菜单中选择“保存” 。  
   
 > [!NOTE]
->  或者，可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中启用查询字符串传递。 选中“允许向应用程序传递 URL 参数”  复选框（可以通过打开“项目属性” ，选择“发布”  选项卡，单击“选项”  按钮，然后选择“清单” 来找到该复选框）。  
+> 或者，可以在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]中启用查询字符串传递。 选中“允许向应用程序传递 URL 参数”  复选框（可以通过打开“项目属性” ，选择“发布”  选项卡，单击“选项”  按钮，然后选择“清单” 来找到该复选框）。  
   
 ## <a name="robust-programming"></a>可靠编程  
  使用查询字符串参数时，必须仔细考虑如何安装和激活应用程序。 如果应用程序配置为从 Web 或网络共享安装在用户计算机上，则用户可能只会通过 URL 激活应用程序一次。 之后，用户通常会使用“开始”  菜单中的快捷方式激活应用程序。 因此，应用程序确保只会在其生存期中接收查询字符串参数一次。 如果你选择将这些参数存储在用户计算机上以供将来使用，则由你负责以安全稳妥的方式存储它们。  

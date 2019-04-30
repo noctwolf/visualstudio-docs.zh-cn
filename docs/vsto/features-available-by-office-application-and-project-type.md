@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cff118e31a10780a4573608a6516ddea9e4f73a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df645fc7f53bbcd0ad5294182d13e96b57b5d42d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431578"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>按 Office 应用程序和项目类型提供的功能
   Visual Studio 具有几种类型的项目模板，它们支持 Microsoft Office 应用程序的不同业务方案，包括以下类型：
@@ -36,7 +36,7 @@ ms.locfileid: "56626747"
   并非所有应用程序都可以使用所有项目类型。 例如，文档级项目仅可用于 Microsoft Office Word 和 Microsoft Office Excel。 同样，某些功能仅可用于特定类型的项目或应用程序。 例如，操作窗格仅在文档级项目中可用，而功能区扩展仅可用于某些应用程序。 有关不同的项目类型的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
 
 > [!NOTE]
->  Office 项目模板仅在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的某些版本中可用。 有关详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
+> Office 项目模板仅在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的某些版本中可用。 有关详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。
 
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>可用的不同 Microsoft Office 应用程序的项目类型
  下表显示了可使用所有项目类型的应用程序。

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cb1793407b7baa3d290d43b0c0ef5a815cb8c40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 386fee1c5c7da4eb06618d0afc522648b5248c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438645"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>演练：更改服务器上的工作簿中的缓存的数据
   本演练演示如何修改 Microsoft Office Excel 工作簿中缓存而不启动 Excel 使用的数据集<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。
@@ -43,7 +43,7 @@ ms.locfileid: "60116961"
   尽管本演练假定您在开发计算机上运行代码，可以在没有安装 Excel 的服务器上使用本演练中所示的代码。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -269,7 +269,7 @@ ms.locfileid: "60116961"
    - 一个<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>要用来访问该工作簿中的数据缓存对象。
 
      > [!NOTE]
-     >  以下代码假定你正在使用具有工作簿 *.xlsx*文件扩展名。 如果你的项目中的工作簿具有不同的文件扩展名，修改根据此路径。
+     > 以下代码假定你正在使用具有工作簿 *.xlsx*文件扩展名。 如果你的项目中的工作簿具有不同的文件扩展名，修改根据此路径。
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]

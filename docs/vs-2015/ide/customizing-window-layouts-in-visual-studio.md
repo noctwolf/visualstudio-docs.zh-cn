@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437546"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60098579"
   可以通过拖动、使用 **“窗口”** 菜单上的命令或右键单击待排列窗口的标题栏，来排列工具窗口和文档窗口。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ### <a name="docking-windows"></a>停靠窗口
  单击和拖动工具窗口的标题栏或文档窗口的选项卡时，将显示一个菱形引导标记。 进行拖动操作时，当鼠标光标悬停在菱形中的一个箭头之上时，将出现一个阴影区域，显示如果现在释放鼠标按钮，窗口将停靠的位置。
@@ -106,16 +106,16 @@ ms.locfileid: "60098579"
  ![自动隐藏](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  若要设置“自动隐藏”是单独针对工具窗口执行还是作为停靠组执行，请选中或清除 **“选项”** 对话框中的 **“自动隐藏按钮仅影响活动工具窗口”** 。 有关详细信息，请参阅 [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md)。
+> 若要设置“自动隐藏”是单独针对工具窗口执行还是作为停靠组执行，请选中或清除 **“选项”** 对话框中的 **“自动隐藏按钮仅影响活动工具窗口”** 。 有关详细信息，请参阅 [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md)。
 
 > [!NOTE]
->  当窗口处于使用状态时，启用了“自动隐藏”的工具窗口可能会暂时滑入视野。 若要再次隐藏该窗口，请选择位于当前窗口之外的项。 当窗口不处于使用状态时，它将滑出视野。
+> 当窗口处于使用状态时，启用了“自动隐藏”的工具窗口可能会暂时滑入视野。 若要再次隐藏该窗口，请选择位于当前窗口之外的项。 当窗口不处于使用状态时，它将滑出视野。
 
 ### <a name="specifying-a-monitor"></a>指定监视器
  如果你还有一个监视器，并且操作系统支持，你可以选择在任一监视器上显示窗口。 甚至可以将多个窗口组合到其他监视器上的“筏”中。
 
 > [!TIP]
->  可以创建 **“解决方案资源管理器”** 的多个实例，并将它们移动到另一个监视器。 右键单击窗口，并选择 **“新建解决方案资源管理器视图”**。 可以通过在选择 Ctrl 键的同时双击，使所有窗口返回到原监视器。
+> 可以创建 **“解决方案资源管理器”** 的多个实例，并将它们移动到另一个监视器。 右键单击窗口，并选择 **“新建解决方案资源管理器视图”**。 可以通过在选择 Ctrl 键的同时双击，使所有窗口返回到原监视器。
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>重置、命名窗口布局，以及在各布局间切换
  使用 **“重置窗口布局”** 命令，可将 IDE 恢复到原窗口布局以用于设置集合。 运行此命令时，将出现以下操作：

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422659"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60062238"
  此外，作为 DSL，作者可以定义*锁定策略。* 锁定策略定义哪些锁是允许、 不允许，或强制。 例如，当发布 DSL 时，您可以鼓励第三方开发人员能够扩展使用的新命令。 但也可以使用锁定策略以防止其更改模型的指定部分的只读状态。  
   
 > [!NOTE]
->  可以通过使用反射避开锁定策略。 它为第三方开发人员提供明确的边界，但不是提供强安全性。  
+> 可以通过使用反射避开锁定策略。 它为第三方开发人员提供明确的边界，但不是提供强安全性。  
   
  详细信息和示例目前[!INCLUDE[vsprvs](../includes/vsprvs-md.md)][可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkId=186128) Web 站点。  
   

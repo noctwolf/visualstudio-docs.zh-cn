@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440439"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>为 Visual Studio 中的应用商店应用启动调试会话（VB、C#、C++ 和 XAML）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60095342"
  本主题介绍如何针对用 XAML 和 Visual C++、Visual C# 或 Visual Basic 编写的应用商店应用启动调试会话。 调试应用程序涉及配置调试会话和选择启动应用程序的方式。
 
 > [!NOTE]
->  有关用 JavaScript 和 HTML 编写的应用，请参阅[启动调试会话 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。
+> 有关用 JavaScript 和 HTML 编写的应用，请参阅[启动调试会话 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)。
 
 ## <a name="BKMK_In_this_topic"></a> 在本主题中
  [启动调试的简单方法](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ ms.locfileid: "60095342"
     ![选择远程调试器连接对话框](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  **“选择远程调试器连接”** 对话框显示本地子网上的计算机以及通过以太网电缆直接连接到 Visual Studio 计算机的计算机。 若要指定其他计算机，请在 **“计算机名称”** 框中输入名称。
+  > **“选择远程调试器连接”** 对话框显示本地子网上的计算机以及通过以太网电缆直接连接到 Visual Studio 计算机的计算机。 若要指定其他计算机，请在 **“计算机名称”** 框中输入名称。
 
   ![仅适用于 Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ ms.locfileid: "60095342"
  默认情况下，必须提供凭据才能运行远程调试器。
 
 > [!IMPORTANT]
->  可以选择在“无身份验证”模式下运行远程调试器，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
+> 可以选择在“无身份验证”模式下运行远程调试器，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
 
  若有移除身份验证要求，请执行以下操作：
 
@@ -250,7 +250,7 @@ ms.locfileid: "60095342"
  若要将已安装的应用程序设置为在调试模式中运行，请执行下列操作：
 
 > [!NOTE]
->  在你启动此过程时，应用程序不得运行。
+> 在你启动此过程时，应用程序不得运行。
 
 1. 在 **“调试”** 菜单上，选择 **“调试安装的应用程序包”**
 

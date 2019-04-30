@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ca9d7841671c44702b883cc8efcc23e803ea8fe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412866"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 将继续运行此程序从已停止状态。 保留任何以前的执行状态 （如步骤），然后再次执行该程序开始。
 
 > [!NOTE]
->  已弃用此方法。 使用[继续](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法相反。
+> 已弃用此方法。 使用[继续](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法相反。
 
 ## <a name="syntax"></a>语法
 
@@ -51,7 +51,7 @@ int Continue( 
  在此程序而不考虑正在调试程序数，或哪些程序生成 stopping 事件上调用此方法。 实现必须保留以前的执行状态 （如步骤），并继续执行，就好像它永远不会有停止之前完成其前面的执行。 也就是说，如果此程序中的线程执行逐过程操作，并已停止，因为其他程序中停止，并调用该方法然后，程序必须完成原始逐过程操作。
 
 > [!WARNING]
->  不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。
+> 不发送停止事件或将即时 （同步） 事件与[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)时处理此调用; 否则调试器可能会挂起。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

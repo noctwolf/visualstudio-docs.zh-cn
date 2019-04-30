@@ -12,12 +12,12 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b780681ec94d347885cdc1134b4ef51776945dc8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 12102c297c34649c753cf1c811994f9e750b9605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435698"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ public struct TYPE_INFO {
  中的值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举，它确定如何解释并集。  
   
  type.typeMeta  
- [C + +]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)结构，如果`dwKind`是`TYPE_KIND_METADATA`。  
+ [C++仅]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)结构，如果`dwKind`是`TYPE_KIND_METADATA`。  
   
  type.typePdb  
- [C + +]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)结构，如果`dwKind`是`TYPE_KIND_PDB`。  
+ [C++仅]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)结构，如果`dwKind`是`TYPE_KIND_PDB`。  
   
  type.typeBuilt  
- [C + +]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)结构，如果`dwKind`是`TYPE_KIND_BUILT`。  
+ [C++仅]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)结构，如果`dwKind`是`TYPE_KIND_BUILT`。  
   
  type.unused  
  未使用空白值。  
@@ -71,7 +71,7 @@ public struct TYPE_INFO {
  此结构传递给[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)填写其中的方法。 如何解释该结构的内容基于`dwKind`字段。  
   
 > [!NOTE]
->  [C + +]如果`dwKind`等于`TYPE_KIND_BUILT`，然后才可释放基础[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象时销毁`TYPE_INFO`结构。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。  
+> [C++仅]如果`dwKind`等于`TYPE_KIND_BUILT`，然后才可释放基础[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象时销毁`TYPE_INFO`结构。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。  
   
  [C#仅]下表显示了如何解释`unionmember`每种类型的成员。 以下示例显示如何这是一种类型的类型。  
   

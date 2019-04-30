@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9531e3e36c6689e4a162649fcb9364067e5f6a13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc268136e898b7ef348b2910e080323347eb5716
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438624"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>演练：从 VBA 调用 VSTO 外接程序中的代码
   本演练演示如何向其他 Microsoft Office 解决方案（包括 Visual Basic for Applications (VBA) 和 COM VSTO 外接程序）公开 VSTO 外接程序中的对象。
@@ -113,7 +113,7 @@ ms.locfileid: "60106613"
 3. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在 **“代码”** 组中，单击 **“Visual Basic”**。
 

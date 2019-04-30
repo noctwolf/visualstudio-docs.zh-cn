@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f466473bcc811a688f06e6cf4cdd8b4fc8e80648
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411317"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>公共语言运行时和表达式计算
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  编译器，如 Visual Basic 和 C# （读作 c-sharp），面向公共语言运行时 (CLR)，生成 Microsoft 中间语言 (MSIL)，这是更高版本编译为本机代码。 CLR 提供调试引擎 (DE) 生成的代码进行调试。 如果你打算将专有的编程语言集成到 Visual Studio IDE，您可以选择将编译为 MSIL 并因此不需要编写您自己 DE。 但是，您将必须编写能够计算上下文中的编程语言的表达式的表达式计算器 (EE)。
 

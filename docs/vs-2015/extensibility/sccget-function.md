@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432434"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL`可以结合标志`SCC_GET_RECURSIVE`标志，用于检索在给定目录中的所有文件和所有子目录。  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` 应永远不会传递而无需`SCC_GET_ALL`。 另请注意，是否目录 C:\A 和 C:\A\B 传递递归 get，C:\A\B 及其所有的子目录将实际检索两次。 IDE 的负责 — 并不是源代码管理插件的 — 若要确保从数组的保持这种重复项。  
+> `SCC_GET_RECURSIVE` 应永远不会传递而无需`SCC_GET_ALL`。 另请注意，是否目录 C:\A 和 C:\A\B 传递递归 get，C:\A\B 及其所有的子目录将实际检索两次。 IDE 的负责 — 并不是源代码管理插件的 — 若要确保从数组的保持这种重复项。  
   
  最后，即使在进行源代码管理插件指定`SCC_CAP_GET_NOUI`上初始化，表示它没有 Get 命令的用户界面，在 IDE 中检索文件可能仍调用此函数的标志。 该标志只是意味着 IDE 不会显示 Get 菜单项和，该插件不需要提供任何 UI。  
   

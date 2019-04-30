@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427766"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：将图表控件添加到工作表
   您可以添加<xref:Microsoft.Office.Tools.Excel.Chart>到 Microsoft Office Excel 工作表在设计时和运行时在文档级自定义项中的控件。 您还可以添加<xref:Microsoft.Office.Tools.Excel.Chart>在运行时在 VSTO 外接程序中的控件。
@@ -39,7 +39,7 @@ ms.locfileid: "60056310"
  可按照与从应用程序添加图表相同的方式，将 <xref:Microsoft.Office.Tools.Excel.Chart> 控件添加到工作表中。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Excel.Chart>控件不是从可用**工具箱**或**数据源**窗口。
+> <xref:Microsoft.Office.Tools.Excel.Chart>控件不是从可用**工具箱**或**数据源**窗口。
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>将图表主机控件添加到 Excel 的工作表中
 

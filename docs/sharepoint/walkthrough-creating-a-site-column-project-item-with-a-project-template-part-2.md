@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436718"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板，第 2 部分中创建站点栏项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板关联后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板创建新的项目包含项目项。 可以使用你收集的信息来初始化项目项。
@@ -222,7 +222,7 @@ ms.locfileid: "60059103"
  添加 XAML 定义的用户界面的向导窗口和用户界面提供向导页中，两个用户控件并添加代码以定义的窗口和用户控件的行为。 该向导创建类似于 Visual Studio 中的 SharePoint 项目的内置向导。
 
 > [!NOTE]
->  在以下步骤中，项目将具有某些编译错误后将 XAML 或代码添加到你的项目。 在后续步骤中添加代码时，这些错误将消失。
+> 在以下步骤中，项目将具有某些编译错误后将 XAML 或代码添加到你的项目。 在后续步骤中添加代码时，这些错误将消失。
 
 #### <a name="to-create-the-wizard-window-ui"></a>若要创建向导窗口 UI
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059103"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  在此 XAML 中创建的窗口派生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基类。 时向 Visual Studio 添加自定义的 WPF 对话框中，我们建议从为具有与其他 Visual Studio 对话框一致样式并避免可能出现的模式对话框问题此类派生您的对话框。 有关详细信息，请参阅[创建和管理模式对话框](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
+    > 在此 XAML 中创建的窗口派生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基类。 时向 Visual Studio 添加自定义的 WPF 对话框中，我们建议从为具有与其他 Visual Studio 对话框一致样式并避免可能出现的模式对话框问题此类派生您的对话框。 有关详细信息，请参阅[创建和管理模式对话框](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
 
 3. 如果要开发 Visual Basic 项目，删除`ProjectTemplateWizard`从命名空间`WizardWindow`中的类名`x:Class`属性的`Window`元素。 此元素是在 XAML 中的第一行中。 完成后，第一行应类似下面的示例。
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059103"
      为打包的站点列并将其部署到 SharePoint 站点**站点 URL**项目的属性指定。 Web 浏览器打开到此站点的默认页。
 
     > [!NOTE]
-    >  如果**脚本调试被禁用**出现对话框，请选择**是**按钮以继续调试项目。
+    > 如果**脚本调试被禁用**出现对话框，请选择**是**按钮以继续调试项目。
 
 2. 上**站点操作**菜单中，选择**站点设置**。
 
