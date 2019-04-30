@@ -1,54 +1,56 @@
 ---
 title: IDiaSymbol::get_liveRangeLength |Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_liveRangeLength
 ms.assetid: ffcce3cc-085c-44eb-8145-46e3819c54f9
-author: mikejo5000
+caps.latest.revision: 10
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: e9f1c8caa9e658cfca4e4b2ede8a38b57fcf8713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400364"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
-返回本地符号无效的地址范围的长度。
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>语法
-
-```C++
-HRESULT get_liveRangeLength ( 
-   ULONGLONG* length
-);
-```
-
-#### <a name="parameters"></a>参数
- `length`
-
-[out]返回的地址范围的长度。
-
-## <a name="return-value"></a>返回值
- 如果成功，则返回`S_OK`; 否则为返回错误代码。
-
+返回本地符号无效的地址范围的长度。  
+  
+## <a name="syntax"></a>语法  
+  
+```cpp#  
+HRESULT get_liveRangeLength (   
+   ULONGLONG* length  
+);  
+```  
+  
+#### <a name="parameters"></a>参数  
+ `length`  
+ [out]返回的地址范围的长度。  
+  
+## <a name="return-value"></a>返回值  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。  
+  
 > [!NOTE]
->  返回的错误代码表示符号不具有实时范围信息。
-
-## <a name="remarks"></a>备注
-
-## <a name="requirements"></a>要求
- 标头： Dia2.h
-
- 库： diaguids.lib
-
- DLL: msdia100.dll
-
-## <a name="see-also"></a>请参阅
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> 返回的错误代码表示符号不具有实时范围信息。  
+  
+## <a name="remarks"></a>备注  
+  
+## <a name="requirements"></a>要求  
+ 标头：dia2.h  
+  
+ 库： diaguids.lib  
+  
+ DLL: msdia100.dll  
+  
+## <a name="see-also"></a>请参阅  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7cfce045531a871e4630a6175d2fc24f4a50ebd8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926613"
 ---
 # <a name="combo-element"></a>组合元素
 定义组合框中显示的命令。 有四种类型的组合框，如下所示：下拉组合、 DynamicCombo、 IndexCombo 和 MRUCombo。

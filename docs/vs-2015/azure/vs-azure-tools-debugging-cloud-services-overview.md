@@ -1,21 +1,26 @@
 ---
 title: 调试 Azure 云服务的选项 | Microsoft Docs
 description: 调试 Azure 云服务
-author: mikejo5000
-manager: jillfra
+services: visual-studio-online
+documentationcenter: n/a
+author: mikejo
+manager: douge
+editor: ''
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
-ms.topic: conceptual
-ms.workload: azure-vs
-ms.date: 03/18/2017
-ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
+ms.service: visual-studio-online
+ms.devlang: multiple
+ms.topic: article
+ms.tgt_pltfrm: multiple
+ms.workload: na
+origin.date: 03/18/2017
+ms.date: 05/11/2018
+ms.author: v-junlch
 ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963645"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>了解调试 Azure 云服务的各种方法
 本文提供了调试 Azure 云服务的各种方法的链接。 
@@ -31,3 +36,5 @@ ms.locfileid: "58934153"
 
 ## <a name="next-steps"></a>后续步骤
 - [在 Visual Studio 中调试 Azure 云服务或 VM](./vs-azure-tools-debug-cloud-services-virtual-machines.md) - 了解如何调试 Azure 云服务的详细信息。
+
+<!-- Update_Description: update metedata properties -->

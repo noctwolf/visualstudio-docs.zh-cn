@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8ecec386030299be7b6c9571218dec0c3396440
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8b4f47894f4aaf12c724153d45378dcb9e8510b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433433"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您从不支持的数据库提供程序选择了数据库对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60073587"
 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) 支持的 SQL Server 仅.NET Framework 数据提供程序 (<xref:System.Data.SqlClient>)。 虽然可以单击“确定”并继续使用来自不支持的数据库提供程序的对象，但在运行时可能遇到意外行为。  
   
 > [!NOTE]
->  仅支持使用用于 SQL Server 的 .NET Framework 数据提供程序的数据连接。  
+> 仅支持使用用于 SQL Server 的 .NET Framework 数据提供程序的数据连接。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   

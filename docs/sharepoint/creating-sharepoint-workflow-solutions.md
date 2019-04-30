@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443529"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
 
@@ -57,7 +57,7 @@ ms.locfileid: "54874063"
  在创建工作流后，您可以修改其属性在属性窗口中。 虽然可以直接在属性窗口中更改大多数工作流属性，但一些要求您单击省略号按钮 (![ASP.NET 移动设计器椭圆](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器椭圆")) 到更改它们的值。 此按钮将重新启动**SharePoint 自定义向导**。 使属性值更改时，请选择后**完成**按钮来完成更改。
 
 > [!NOTE]
->  **工作流类型**属性是只读的不能更改。 如果你想要更改工作流类型，则必须创建另一个工作流。
+> **工作流类型**属性是只读的不能更改。 如果你想要更改工作流类型，则必须创建另一个工作流。
 
 ## <a name="design-a-sharepoint-workflow"></a>设计 SharePoint 工作流
  在业务流程中定义的所有步骤后，使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流设计器来设计 SharePoint 工作流。 若要打开设计器，请双击 Workflow1.cs 或 Workflow1.vb 中的**解决方案资源管理器**，或者为这些文件的打开的快捷菜单，然后选择**打开**。

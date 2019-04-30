@@ -1,5 +1,5 @@
 ---
-title: 远程调试 Visual c + + 项目 |Microsoft Docs
+title: 远程调试视觉对象C++项目 |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903491"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
+# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试视觉对象C++Visual Studio 项目中
 若要调试在另一台计算机上的 Visual Studio 应用程序、 安装和将在其中部署您的应用程序的计算机上运行远程工具，将项目配置为从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -67,7 +67,7 @@ ms.locfileid: "57526057"
 
 5. 对属性进行以下更改：
 
-   |设置|值|
+   |设置|“值”|
    |-|-|
    |远程命令|C:\remotetemp\mymfc.exe|
    |工作目录|C:\remotetemp|

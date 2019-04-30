@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839428"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 将数据从节号线段的地址空间的映射。
@@ -31,7 +31,7 @@ IDiaSegment : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaSegment`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|检索段数目。|
 |[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|检索部分的开始处的段中的偏移量。|
@@ -94,7 +94,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

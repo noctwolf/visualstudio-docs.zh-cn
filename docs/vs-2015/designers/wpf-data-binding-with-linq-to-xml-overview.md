@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403420"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>使用 LINQ to XML 进行 WPF 数据绑定概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54774173"
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation 中的数据绑定  
  WPF 数据绑定可使 UI 元素将其一个属性与一个数据源相关联。 这种情况的一个简单示例是 <xref:System.Windows.Controls.Label>，其文本表示用户定义对象中一个公共属性的值。 WPF 数据绑定依赖于下列组件：  
   
-|组件|说明|  
+|组件|描述|  
 |---------------|-----------------|  
 |绑定目标|要与数据源关联的 UI 元素。 WPF 中的可视元素是从 <xref:System.Windows.UIElement> 类派生的。|  
 |目标属性|绑定目标的依赖项属性，反映数据绑定源的值。 从中派生 <xref:System.Windows.DependencyObject> 的 <xref:System.Windows.UIElement> 类直接支持依赖项属性。|  
@@ -61,7 +61,7 @@ ms.locfileid: "54774173"
  这些动态属性是特殊的运行时属性，它们重复 <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 类中现有方法和属性的功能。 将这些属性添加到这些类中只是为了使这些类能够充当 WPF 的动态数据源。 为了满足这一要求，所有这些动态属性都要实现更改通知。 下一节 [LINQ to XML 动态属性](../designers/linq-to-xml-dynamic-properties.md)中提供有关这些动态属性的详细参考。  
   
 > [!NOTE]
->  <xref:System.Xml.Linq> 命名空间的各个类中的很多标准公共属性都可用于一次性数据绑定。 但请记住，在这种方案下，源和目标都不会动态更新。  
+> <xref:System.Xml.Linq> 命名空间的各个类中的很多标准公共属性都可用于一次性数据绑定。 但请记住，在这种方案下，源和目标都不会动态更新。  
   
 ### <a name="accessing-dynamic-properties"></a>访问动态属性  
  不能像访问标准属性那样访问 <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 类中的动态属性。 例如，在符合 CLR 的语言（如 C#）中，动态属性不能：  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909191"
 ---
 # <a name="projects"></a>项目
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和显示在其他资源的容器**解决方案资源管理器**。 通常情况下，项目是存储对源代码文件和资源，如位图文件的引用的文件 （例如，对于 C# 项目的.csproj 文件）。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以扩展 Visual Studio 项目系统在三个方面：*项目类型*，*项目子类型*，并*自定义工具*。
@@ -31,13 +31,13 @@ ms.locfileid: "56840898"
 
 - [项目子类型](../../extensibility/internals/project-subtypes.md)
 
- *项目子类型*基于项目类型，可用于自定义生成、 调试和部署项目的方式。 Visual Studio 使用项目子类型用于智能设备项目;它们通过将新生成的程序从开发计算机复制到目标设备自定义部署。 C# 和 Visual Basic 项目类型可以用作基础项目子类型;C + + 项目类型不能。 为项目子类型，你自己的项目类型还可以用作基础。 有关详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。
+ *项目子类型*基于项目类型，可用于自定义生成、 调试和部署项目的方式。 Visual Studio 使用项目子类型用于智能设备项目;它们通过将新生成的程序从开发计算机复制到目标设备自定义部署。 C#和 Visual Basic 项目类型可以用作基础项目子类型;C++项目类型不能。 为项目子类型，你自己的项目类型还可以用作基础。 有关详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。
 
 - [Web 项目](../../extensibility/internals/web-projects.md)
 
  介绍 Web 项目中，创建 Web 应用程序。
 
-- [生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[生成新项目：实质上，第二部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)和[生成新项目：揭秘，第 2 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
 
  介绍什么实际发生的情况时创建新的项目。
 

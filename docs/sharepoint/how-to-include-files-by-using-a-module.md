@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813639"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：通过使用模块包括文件
   *模块*(不要与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]模块) 是，你可以部署到 SharePoint 的文件，如 ASPX 母版页、 文本文件或图像的容器。

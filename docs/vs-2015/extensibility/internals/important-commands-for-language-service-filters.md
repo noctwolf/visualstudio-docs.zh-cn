@@ -11,12 +11,12 @@ ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f253f053f9f8fc9a7e377d78ae46307262c13006
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03bb20abf32f7c320ed56f4a649a9f43453e7694
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447257"
 ---
 # <a name="important-commands-for-language-service-filters"></a>语言服务筛选器的重要命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58934878"
 ## <a name="commands-to-handle"></a>句柄的命令  
   
 > [!NOTE]
->  不一定要筛选的下表中的每个命令。  
+> 不一定要筛选的下表中的每个命令。  
   
 |命令|描述|  
 |-------------|-----------------|  

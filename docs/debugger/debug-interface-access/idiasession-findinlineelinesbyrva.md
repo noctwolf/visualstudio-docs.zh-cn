@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 900680fe58ab5061d3f8cca07fa1906cf34f7e5b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839324"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 检索一个枚举，它允许客户端可以循环访问的所有函数的内联，直接或间接地，由指定的父符号的行号信息且包含在指定的相对虚拟地址 (RVA)。

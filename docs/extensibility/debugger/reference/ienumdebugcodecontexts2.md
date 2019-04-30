@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 282dd2db7048a9cd69ecf38839338ae29015f3f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914962"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 此接口枚举与调试会话，或与特定的程序或文档关联的代码上下文。
@@ -48,7 +48,7 @@ IEnumDebugCodeContexts2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-getcount.md)|获取一个枚举器中的代码上下文的数目。|
 
 ## <a name="remarks"></a>备注
- Visual Studio 调用[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)来填充的列表的代码上下文中的用户可以选择从时设置的下一个语句或显示源文件的反汇编。 例如，当有多个 c + + 样式模板的实例时，可以出现多个代码上下文。
+ Visual Studio 调用[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)来填充的列表的代码上下文中的用户可以选择从时设置的下一个语句或显示源文件的反汇编。 多个代码上下文可以发生，例如，如果有多个实例的C++的样式模板。
 
 ## <a name="requirements"></a>要求
  标头： msdbg.h

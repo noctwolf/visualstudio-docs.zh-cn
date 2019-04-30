@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419586"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以编程方式向 Word 表中添加行和列
   在 Microsoft Office Word 表中，单元格组织为行和列。 你可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 对象的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法将行添加到表，并可以使用 <xref:Microsoft.Office.Interop.Word.Columns> 对象的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法添加列。
@@ -30,7 +30,7 @@ ms.locfileid: "60078014"
  可以在文档级自定义项中使用下列代码示例。 若要使用这些示例，请从项目中的 `ThisDocument` 类运行它们。 这些示例假定与你的自定义相关联的文档已具有至少一个表。
 
 > [!IMPORTANT]
->  此代码仅在使用下列任意项目模板创建的项目中运行：
+> 此代码仅在使用下列任意项目模板创建的项目中运行：
 >
 > - Word 2013 文档
 > - Word 2013 模板
@@ -57,9 +57,9 @@ ms.locfileid: "60078014"
  可以在 VSTO 外接程序中使用下列代码示例。 若要使用这些示例，请从项目中的 `ThisAddIn` 类运行它们。 这些示例假定活动文档已经具有至少一个表。
 
 > [!IMPORTANT]
->  此代码仅在你使用 Word VSTO 外接程序模板创建的项目中运行。
+> 此代码仅在你使用 Word VSTO 外接程序模板创建的项目中运行。
 >
->  如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Word**程序集，然后必须使用该程序集的类以向表添加行和列。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。
+> 如果你想要在任何其他类型的项目中执行此任务，则必须添加对的引用**Microsoft.Office.Interop.Word**程序集，然后必须使用该程序集的类以向表添加行和列。 有关详细信息，请参阅[如何：面向 Office 应用程序可以通过主互操作程序集](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)并[Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。
 
 ### <a name="to-add-a-row-to-a-table"></a>向表中添加行
 

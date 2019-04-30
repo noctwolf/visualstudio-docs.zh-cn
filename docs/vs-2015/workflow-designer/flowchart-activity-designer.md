@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943474"
 ---
 # <a name="flowchart-activity-designer"></a>流程图活动设计器
 <xref:System.Activities.Statements.Flowchart> 活动用于创建定义和管理复杂流控制的工作流。 可以使用代码或 <xref:System.Activities.Statements.Flowchart> 创作 [!INCLUDE[wfd2](../includes/wfd2-md.md)]。 本主题讲述 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 体验。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 工作流活动设计器使开发人员能够以自然的方式创作工作流。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828511"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 公开的模块或映像的基的位置和内存偏移量的详细信息。
@@ -31,7 +31,7 @@ IDiaImageData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaImageData`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|检索虚拟内存中的位置相对于应用程序的模块。|
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|检索虚拟内存中的映像的位置。|
@@ -111,7 +111,7 @@ void ShowImageData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

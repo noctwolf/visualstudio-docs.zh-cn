@@ -12,12 +12,12 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2fb579cf56d0fdf9e8c441a1393d934fcc7348d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446829"
 ---
 # <a name="scchistory-function"></a>SccHistory 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功地获取版本历史记录。|  
 |SCC_I_RELOADFILE|源代码管理系统实际上在情况下修改磁盘上的文件提取历史记录 （例如，通过获取的旧版本），因此 IDE 应重新加载此文件。|  
@@ -76,7 +76,7 @@ SCCRTN SccHistory(
  请注意，在某些情况下，此调用的执行期间可能会更改要检查的文件。 例如， [!INCLUDE[vsvss](../includes/vsvss-md.md)] history 命令使用户有机会以获取文件的旧版本。 在这种情况下，源代码管理插件返回`SCC_I_RELOAD`来警告 IDE，它需要重新加载该文件。  
   
 > [!NOTE]
->  如果源代码管理插件不支持此函数的文件的数组，可以显示仅的第一个文件文件历史记录。  
+> 如果源代码管理插件不支持此函数的文件的数组，可以显示仅的第一个文件文件历史记录。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

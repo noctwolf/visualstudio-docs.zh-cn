@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcfd234f67245ee39e8ba278ec256ba68b158785
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dae5bb86cd7f9da6151920a8020d71452bf8863f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443997"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,14 +79,14 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ## <a name="remarks"></a>备注  
   
 > [!NOTE]
->  启用 CLR ETW 事件后，跟踪视图报告中还将收集额外的启动数据。 若要将启动事件从报告中排除，请使用以下命令：  
+> 启用 CLR ETW 事件后，跟踪视图报告中还将收集额外的启动数据。 若要将启动事件从报告中排除，请使用以下命令：  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  如果不排除启动事件，则由于这些事件未在托管对象格式 (MOF) 文件中列出，它们将在报告中显示为 GUID。 有关详细信息，请参阅 Microsoft 网站上的此页面：[托管对象格式 (MOF) 文件示例](http://go.microsoft.com/fwlink/?linkid=37118)。  
+> 如果不排除启动事件，则由于这些事件未在托管对象格式 (MOF) 文件中列出，它们将在报告中显示为 GUID。 有关详细信息，请参阅 Microsoft 网站上的此页面：[示例托管对象格式 (MOF) 文件](http://go.microsoft.com/fwlink/?linkid=37118)。  
   
 ## <a name="see-also"></a>请参阅  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

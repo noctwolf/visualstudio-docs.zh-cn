@@ -1,45 +1,47 @@
 ---
 title: 'Idiasymbol:: Get_targetsection |Microsoft Docs'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_targetSection method
 ms.assetid: 95382395-da41-4aa8-87f1-5b03da128565
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: e6e91c7b13bbc9162993a016e040c2922f6dcde7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1dcfd72d7cd4cca527c2318b0c3c412020457e8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400482"
 ---
 # <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
-检索转换 （thunk） 目标的地址部分。
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>语法
-
-```C++
-HRESULT get_targetSection ( 
-   DWORD* pRetVal
-);
-```
-
-#### <a name="parameters"></a>参数
- `pRetVal`
-
-[out]部分的转换 （thunk） 目标地址的一部分。
-
-## <a name="return-value"></a>返回值
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
-
+检索转换 （thunk） 目标的地址部分。  
+  
+## <a name="syntax"></a>语法  
+  
+```cpp#  
+HRESULT get_targetSection (   
+   DWORD* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>参数  
+ `pRetVal`  
+ [out]部分的转换 （thunk） 目标地址的一部分。  
+  
+## <a name="return-value"></a>返回值  
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
+  
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
-
-## <a name="see-also"></a>请参阅
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
+  
+## <a name="see-also"></a>请参阅  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

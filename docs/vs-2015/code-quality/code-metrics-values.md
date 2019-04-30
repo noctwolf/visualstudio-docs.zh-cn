@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437092"
 ---
 # <a name="code-metrics-values"></a>代码度量值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60049552"
 - **圈复杂度**– 衡量代码的结构化的复杂程度。 通过计算该程序的流中的不同代码路径数则创建它。 具有复杂的控制流的程序将需要更多测试来实现良好的代码覆盖率并不容易维护。  
   
     > [!NOTE]
-    >  在某些情况下中的方法的圈复杂度计算[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]不同于早期版本。 详细信息，请参阅"更改在 Visual Studio 2010 代码复杂度计算部分"的[故障排除代码度量问题](../code-quality/troubleshooting-code-metrics-issues.md)。  
+    > 在某些情况下中的方法的圈复杂度计算[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)]不同于早期版本。 详细信息，请参阅"更改在 Visual Studio 2010 代码复杂度计算部分"的[故障排除代码度量问题](../code-quality/troubleshooting-code-metrics-issues.md)。  
   
 - **继承深度**– 指示扩展到类层次结构的根的类定义的数量。 越深的层次结构的难度可能会以了解其中定义特定的方法和字段或 / 和重新定义。  
   

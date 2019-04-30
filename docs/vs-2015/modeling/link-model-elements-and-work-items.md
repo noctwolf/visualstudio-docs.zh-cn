@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440960"
 ---
 # <a name="link-model-elements-and-work-items"></a>链接模型元素和工作项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60071858"
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  必须使用 Team Explorer 才能创建和打开链接。 确保你的建模项目和关系图已签入到版本控制中，以便其他人可打开链接的关系图。  
+> 必须使用 Team Explorer 才能创建和打开链接。 确保你的建模项目和关系图已签入到版本控制中，以便其他人可打开链接的关系图。  
   
  例如，你可以链接：  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60071858"
 - 关系图。 若要选择关系图，请选择关系图的空白部分。  
   
 > [!WARNING]
->  必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
+> 必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
   
 - [连接到团队项目](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ ms.locfileid: "60071858"
      Visual Studio 将模型元素链接到新的工作项。 模型元素上或其附近将显示一个图标。  
   
 > [!WARNING]
->  必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
+> 必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
   
 ## <a name="LinkExisting"></a> 将模型元素链接到现有工作项  
  将模型元素链接到工作项时，从模型元素而不是工作项开始。  
@@ -123,7 +123,7 @@ ms.locfileid: "60071858"
      完成后，模型元素的 **“工作项”** 属性将显示一个比之前更大的数字。 模型元素上或其附近还将显示一个图标。  
   
 > [!WARNING]
->  必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
+> 必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
   
 ## <a name="OpenWorkItem"></a> 查看工作项链接到模型元素  
   
@@ -132,7 +132,7 @@ ms.locfileid: "60071858"
 2. 在建模图上或 **“UML 模型资源管理器”** 中，打开模型元素的快捷菜单。 选择 **“查看工作项”** 以查看链接工作项的列表。  
   
     > [!NOTE]
-    >  仅显示当前连接的服务器中的工作项。 如果你未看到任何工作项，请确保你已连接到 **“团队资源管理器”** 中的正确服务器。  
+    > 仅显示当前连接的服务器中的工作项。 如果你未看到任何工作项，请确保你已连接到 **“团队资源管理器”** 中的正确服务器。  
   
 ## <a name="ViewLinkedModels"></a> 视图模型元素链接到工作项  
  你可在 Visual Studio Team Services 和 Team Foundation Server 2012 或更高版本中查看建模图和已链接到工作项的元素。 例如，一个工作项可能已链接到类模型，这些类模型显示要实现的新类的设计。  
@@ -140,7 +140,7 @@ ms.locfileid: "60071858"
 1. 在“团队资源管理器” 中，确保你已连接团队项目，该团队项目中的模型元素已链接到工作项。  
   
     > [!NOTE]
-    >  你只能使用团队资源管理器（而不是 Team Web Access）查看链接的模型元素。 确保你的工作区已映射到包含建模图或元素的建模项目。 如果你没有工作区，则必须创建它。 请参阅 [疑难解答](#Troubleshooting) 和 [创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
+    > 你只能使用团队资源管理器（而不是 Team Web Access）查看链接的模型元素。 确保你的工作区已映射到包含建模图或元素的建模项目。 如果你没有工作区，则必须创建它。 请参阅 [疑难解答](#Troubleshooting) 和 [创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
   
 2. 打开工作项，选择 **“链接”**。 在 **“模型链接”** 下，打开链接的模型元素的快捷菜单。 选择 **“打开链接项”**。  
   
@@ -160,7 +160,7 @@ ms.locfileid: "60071858"
     2. 在 **“工作项”** 属性中，选择省略按钮 **[…]**。  
   
         > [!NOTE]
-        >  将仅显示当前服务器上的工作项。 如果列表为空，但工作项的数量不为零，则确保你已连接到 **“团队资源管理器”** 中的正确服务器。  
+        > 将仅显示当前服务器上的工作项。 如果列表为空，但工作项的数量不为零，则确保你已连接到 **“团队资源管理器”** 中的正确服务器。  
   
 3. 在 **“移除指向工作项的链接”** 下，清除要取消链接的选定项。 选择 **“确定”**。  
   

@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443872"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
     ```
 
     > [!NOTE]
-    >  替换*ServiceReference*使用的服务引用和替换的命名空间*Service1Client*与服务的名称。
+    > 替换*ServiceReference*使用的服务引用和替换的命名空间*Service1Client*与服务的名称。
 
 3. 智能感知列表将显示具有构造函数重载。 选择`endpointConfigurationName As String`重载。
 
 4. 该重载后面，键入`=` *ConfigurationName*，其中*ConfigurationName*是你想要使用的终结点的名称。
 
     > [!NOTE]
-    >  如果不知道可用的终结点的名称，可以在 app.config 文件中找到它们。
+    > 如果不知道可用的终结点的名称，可以在 app.config 文件中找到它们。
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>若要查找的可用终结点的 WCF 服务
 
@@ -164,7 +164,7 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
  默认情况下，向项目添加服务引用时它配置为以同步方式调用的方法。 你可以通过更改中的设置以异步方式调用方法的行为**配置服务引用**对话框。
 
 > [!NOTE]
->  基于每个服务设置此选项。 如果以异步方式调用服务的一种方法，则必须以异步方式调用所有方法。
+> 基于每个服务设置此选项。 如果以异步方式调用服务的一种方法，则必须以异步方式调用所有方法。
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

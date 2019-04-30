@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432628"
 ---
 # <a name="model-editor"></a>模型编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ ms.locfileid: "60072287"
 2. 在“属性”窗口中，为“旋转”、“缩放”和“平移”属性指定值。  
   
    > [!IMPORTANT]
-   >  对于“旋转”属性，请分别指定绕每一个轴旋转的度数。 旋转将按顺序应用，因此请确保先按 x 轴旋转，然后再按 y 轴、z 轴旋转，以此制定旋转计划。  
+   > 对于“旋转”属性，请分别指定绕每一个轴旋转的度数。 旋转将按顺序应用，因此请确保先按 x 轴旋转，然后再按 y 轴、z 轴旋转，以此制定旋转计划。  
   
    通过使用建模工具，你可以快速创建转换，但不精确。 通过设置对象属性，你可以精确指定转换，但速度不快。 我们建议你使用建模工具来获取“足够接近”你的需求的转换，然后微调属性值。  
   

@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431157"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>创建和管理数据库和 Visual Studio 中的数据层应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 重要提示
->  早期版本中包含的数据库项目[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中现在提供[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]工具。 有关详细信息，请参阅[SQL Server 开发人员工具](http://go.microsoft.com/fwlink/?LinkId=228126)。
+> 早期版本中包含的数据库项目[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中现在提供[!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]工具。 有关详细信息，请参阅[SQL Server 开发人员工具](http://go.microsoft.com/fwlink/?LinkId=228126)。
 
  可以使用数据库项目来创建新数据库，新的数据层应用程序 (Dac)，以及更新现有数据库和数据层应用程序。 数据库项目和 DAC 项目，可以大致相同的方式将这些技术应用于托管或本机代码中将版本控制和项目管理技术应用于进行数据库开发工作。 可帮助开发团队通过创建管理数据库和数据库服务器将变为*DAC 项目*，*数据库项目*，或*服务器项目*并将其置于在版本控制。 你的团队成员可以然后签出文件，以使、 生成和测试中的更改*隔离的开发环境*，或沙盒之前与团队共享它们。 若要帮助确保代码质量，你的团队可以完成并部署到生产环境的更改之前在过渡环境中测试的特定版本的数据库的所有更改。
 

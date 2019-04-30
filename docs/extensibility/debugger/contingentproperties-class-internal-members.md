@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 60129950c2311cc94b8573de4cd8ae3c46194e75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925993"
 ---
 # <a name="contingentproperties-class---internal-members"></a>ContingentProperties 类-内部成员
 包含的其他属性<xref:System.Threading.Tasks.Task>对象。
@@ -38,7 +38,7 @@ ms.locfileid: "56704743"
 
 ### <a name="fields"></a>字段
 
-|name|描述|
+|名称|描述|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|使用此任务中注册的子任务的列表。|
 

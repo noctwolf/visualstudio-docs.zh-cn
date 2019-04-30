@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442883"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用中的 Visual Basic 和 C# 代码质量
 
@@ -27,7 +27,7 @@ ms.locfileid: "60108330"
  Visual Studio Express 中的代码分析工具可检查代码中是否存在一组常见缺陷以及违反良好编程习惯的情况。 代码分析警告与编译器错误和警告不同，因为代码分析工具搜索的是虽然有效但仍会为你或使用你代码的其他人员带来问题的特定代码模式。 代码分析还可在代码中找到通过测试难以发现的缺陷。 在开发过程中定期运行代码分析工具可提高所编写的应用程序的质量。
 
 > [!NOTE]
->  在 Visual Studio 旗舰版、Visual Studio 高级专业版和 Visual Studio 专业版中，可使用完整的代码分析功能。 请参阅 MSDN 库中的 [Analyzing Application Quality by Using Code Analysis Tools](http://msdn.microsoft.com/library/dd264897.aspx)（使用代码分析工具分析应用程序质量）。
+> 在 Visual Studio 旗舰版、Visual Studio 高级专业版和 Visual Studio 专业版中，可使用完整的代码分析功能。 请参阅 MSDN 库中的 [Analyzing Application Quality by Using Code Analysis Tools](http://msdn.microsoft.com/library/dd264897.aspx)（使用代码分析工具分析应用程序质量）。
 
 ## <a name="in-this-topic"></a>在本主题中
  可了解：
@@ -69,7 +69,7 @@ ms.locfileid: "60108330"
  了解问题后，可在代码中解决该问题。 然后重新运行代码分析，以确保警告不再显示在“代码分析”窗口中，并且修复未引发新的警告。
 
 > [!TIP]
->  可从“代码分析”窗口中重新运行代码分析。 单击“分析”按钮，然后选择分析的范围。 可对整个解决方案对所选项目重新运行分析。
+> 可从“代码分析”窗口中重新运行代码分析。 单击“分析”按钮，然后选择分析的范围。 可对整个解决方案对所选项目重新运行分析。
 
 ## <a name="BKMK_Suppress"></a>禁止显示代码分析警告
  有时，你可能会决定不修复代码分析警告。 你可能会觉得与代码的任何真实实现中引发问题的可能性相比，解决警告所需的重新编码工作量过大。 或者，你可能会认为在警告中使用的分析不适合特定的上下文。 可禁止显示个别警告，以使“代码分析”窗口中不再显示这些警告。

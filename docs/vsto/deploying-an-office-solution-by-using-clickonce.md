@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441858"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，应考虑使用 Windows 安装程序 (*.msi*) 如果多个用户将在同一台计算机上运行你的解决方案。
@@ -83,7 +83,7 @@ ms.locfileid: "60060731"
 9. 如果解决方案同时面向.NET Framework 4.5 中，选择**Visual Studio 2010 Tools for Office Runtime**复选框。
 
     > [!NOTE]
-    >  默认情况下，不会显示此复选框。 若要显示此复选框，必须创建引导程序包。 请参阅[使用 Visual Studio 2012 创建的 Office 2013 VSTO 外接程序的引导程序包](create-vsto-add-ins-for-office-by-using-visual-studio.md)。
+    > 默认情况下，不会显示此复选框。 若要显示此复选框，必须创建引导程序包。 请参阅[使用 Visual Studio 2012 创建的 Office 2013 VSTO 外接程序的引导程序包](create-vsto-add-ins-for-office-by-using-visual-studio.md)。
 
 10. 下**指定系统必备组件的安装位置**，选择一个选项，会出现，然后选择**确定**按钮。
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060731"
 11. 选择**更新**按钮，指定你希望每个最终用户的 VSTO 外接程序或自定义以检查更新，然后选择何种频率**确定**按钮。
 
     > [!NOTE]
-    >  如果要使用 CD 或可移动驱动器进行部署，请选择**从不检查更新**选项按钮。
+    > 如果要使用 CD 或可移动驱动器进行部署，请选择**从不检查更新**选项按钮。
 
      有关如何发布更新的信息，请参阅[发布更新](#Update)。
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060731"
       ![发布文件夹结构](../vsto/media/publishfolderstructure.png "发布文件夹结构")
 
     > [!NOTE]
-    >  ClickOnce 将追加 *.deploy*对程序集的扩展，使受保护的安装 Internet 信息服务 (IIS) 不会阻止文件，因为不安全的扩展。 当用户安装解决方案后时，ClickOnce 将移除 *.deploy*扩展。
+    > ClickOnce 将追加 *.deploy*对程序集的扩展，使受保护的安装 Internet 信息服务 (IIS) 不会阻止文件，因为不安全的扩展。 当用户安装解决方案后时，ClickOnce 将移除 *.deploy*扩展。
 
 14. 将解决方案文件复制到你先前在此过程中指定的安装位置。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060731"
 6. 在中**MIME 类型**窗口中，输入 **.vsto**作为扩展名，输入**应用程序/x 的 ms-vsto**作为 MIME 类型，，然后应用新设置。
 
     > [!NOTE]
-    >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 必须刷新浏览器的磁盘缓存，然后尝试打开 *.vsto*再次文件。
+    > 为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 必须刷新浏览器的磁盘缓存，然后尝试打开 *.vsto*再次文件。
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>向 IIS 7.0 添加 .vsto MIME 类型
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060731"
     ```
 
     > [!NOTE]
-    >  为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 必须刷新浏览器的磁盘缓存，然后尝试打开 *.vsto*再次文件。
+    > 为使更改生效，必须重新启动万维网发布服务或者等待工作进程回收。 必须刷新浏览器的磁盘缓存，然后尝试打开 *.vsto*再次文件。
 
 ## <a name="Put"></a> 将解决方案文档置于最终用户的计算机 （仅文档级自定义） 上
  通过创建后期部署操作，可以为其复制到最终用户的计算机上将解决方案的文档。 这样一来，用户不必手动将文档复制从安装位置到其计算机后在安装解决方案。 您必须创建定义后期部署操作的类、 生成和发布解决方案，修改应用程序清单和应用程序和部署清单重新签名。
@@ -300,7 +300,7 @@ ms.locfileid: "60060731"
     ```
 
     > [!NOTE]
-    >  在上一示例中，你的解决方案的最新发布版本的版本号替换 MostRecentVersionNumber (例如， **1_0_0_4**)。
+    > 在上一示例中，你的解决方案的最新发布版本的版本号替换 MostRecentVersionNumber (例如， **1_0_0_4**)。
 
      将出现“ExcelWorkbook.vsto 已成功签名”消息。
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060731"
   若要更改解决方案的安装路径，必须更新安装程序，用户随后必须运行安装程序。 对于文档级自定义项，用户还必须更新其文档中的属性以指向新位置。
 
 > [!NOTE]
->  如果不希望要求用户更新文档属性，可以要求用户从安装位置获取更新后的文档。
+> 如果不希望要求用户更新文档属性，可以要求用户从安装位置获取更新后的文档。
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>更改安装程序中的安装路径
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060731"
    ```
 
    > [!NOTE]
-   >  如果显示消息，表明可执行文件的签名将无效，用于对解决方案进行签名的证书将不再有效，并且发布者未知。 因此，用户需要先确认他们信任解决方案的源，才能安装解决方案。
+   > 如果显示消息，表明可执行文件的签名将无效，用于对解决方案进行签名的证书将不再有效，并且发布者未知。 因此，用户需要先确认他们信任解决方案的源，才能安装解决方案。
 
    > [!NOTE]
-   >  若要显示 URL 的当前值，请运行 `setup.exe /url`。
+   > 若要显示 URL 的当前值，请运行 `setup.exe /url`。
 
    对于文档级自定义项，用户必须打开该文档，然后更新其 _AssemblyLocation 属性。 下面的步骤描述用户如何执行此任务。
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060731"
      用户下次打开应用程序或自定义文档时，系统将检测到此部署清单更改。 此 Office 解决方案的早期版本会从 ClickOnce 缓存运行。
 
 > [!NOTE]
->  仅为解决方案的一个早期版本保存本地数据。 如果回滚两个版本，不保留本地数据。 有关本地数据的详细信息，请参阅[访问 ClickOnce 应用程序中的本地和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
+> 仅为解决方案的一个早期版本保存本地数据。 如果回滚两个版本，不保留本地数据。 有关本地数据的详细信息，请参阅[访问 ClickOnce 应用程序中的本地和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。
 
 ## <a name="see-also"></a>请参阅
 

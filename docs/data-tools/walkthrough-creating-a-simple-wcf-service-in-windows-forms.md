@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565295"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>演练： 在 Windows 窗体中创建一个简单的 WCF 服务
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>演练：在 Windows 窗体中创建一个简单的 WCF 服务
 
 本演练演示如何创建简单的 Windows Communication Foundation (WCF) 服务并测试它，然后从 Windows 窗体应用程序访问它。
 

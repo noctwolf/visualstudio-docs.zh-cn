@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900849"
 ---
 # <a name="windows-view"></a>窗口视图
 当你首次打开 Spy + + 时，Windows 视图将显示在系统中的所有窗口和控件树。 显示的窗口句柄和类名。 当前桌面窗口是树的顶部。 所有其他窗口是在桌面的子级，并列出根据标准的窗口层次结构。 在下方其父项缩进的可扩展列表中显示同级窗口。
@@ -31,11 +31,11 @@ ms.locfileid: "56689546"
  当 Windows 视图具有焦点时，可以使用中的查找程序工具[窗口搜索对话框](../debugger/window-search-dialog-box.md)你系统上显示任何打开的窗口中的信息。
 
 ## <a name="in-this-section"></a>本节内容
- [如何： 使用查找程序工具](../debugger/how-to-use-the-finder-tool.md)显示此工具如何扫描 windows 属性或消息。
+ [如何：使用查找程序工具](../debugger/how-to-use-the-finder-tool.md)显示此工具如何扫描 windows 属性或消息。
 
- [如何： 搜索在 Windows 视图窗口](../debugger/how-to-search-for-a-window-in-windows-view.md)介绍了如何在 Windows 视图中查找特定窗口。
+ [如何：搜索在 Windows 视图窗口](../debugger/how-to-search-for-a-window-in-windows-view.md)介绍了如何在 Windows 视图中查找特定窗口。
 
- [如何： 显示窗口属性](../debugger/how-to-display-window-properties.md)m 过程打开窗口属性对话框。
+ [如何：显示窗口属性](../debugger/how-to-display-window-properties.md)m 过程打开窗口属性对话框。
 
 ## <a name="related-sections"></a>相关章节
  [Spy + + 视图](../debugger/spy-increment-views.md)介绍的 windows、 消息、 进程和线程的 Spy + + 树视图。

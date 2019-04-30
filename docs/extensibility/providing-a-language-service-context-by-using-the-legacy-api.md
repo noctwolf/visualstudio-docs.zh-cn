@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 66e8da821657dc1aefd8563f3826891cb75e1792
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805958"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>通过使用传统的 API 提供的语言服务上下文
 有两个选项的语言服务以提供用户上下文中使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器： 提供文本标记的上下文，或提供所有的用户上下文。 下面概述了每个之间的差异。

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419488"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>如何：以编程方式保存工作簿
   可通过多种方式保存工作簿。 可以保存工作簿而不更改路径。 如果以前没有保存过工作簿，则应该通过指定一个路径来保存工作簿。 如果没有显式路径，Microsoft Office Excel 会使用创建文件时为其指定的名称将文件保存在当前文件夹中。 还可以保存工作簿的副本，而不修改内存中打开的工作簿。
@@ -46,7 +46,7 @@ ms.locfileid: "60093054"
  可以将指定的工作簿保存到新位置或以新名称保存，还可以选择指定文件格式、密码和访问模式等。
 
 > [!NOTE]
->  你可能想要设置<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>属性设置为**False**使用新路径保存工作簿，因为以某些格式保存需要交互之前。 此属性设置为**False**将导致 Excel 使用所有默认值。
+> 你可能想要设置<xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A>属性设置为**False**使用新路径保存工作簿，因为以某些格式保存需要交互之前。 此属性设置为**False**将导致 Excel 使用所有默认值。
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>保存与文档级自定义项关联的工作簿
 

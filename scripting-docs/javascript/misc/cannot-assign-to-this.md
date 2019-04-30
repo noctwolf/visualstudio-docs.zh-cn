@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4a4ba5d852a7d131a88930dd66931c026074549b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946584"
 ---
 # <a name="cannot-assign-to-this"></a>无法给“this”赋值
 尝试将一个值赋给**这**。 **这**是[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]关键字是指：

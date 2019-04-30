@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445880"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60100399"
  **录制：** 必须使用编码的 UI 测试生成器来录制在 Internet Explorer 中运行的 Web 应用测试。 你可以选择使用一组预定义的属性为已测试的控件添加验证和自定义代码，这与你通常对编码的 UI 测试所做的一样。 有关详细信息，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。  
   
 > [!NOTE]
->  你无法使用 Google Chrome 或 Mozilla Firefox 浏览器记录编码的 UI 测试。  
+> 你无法使用 Google Chrome 或 Mozilla Firefox 浏览器记录编码的 UI 测试。  
   
  **使用 Internet Explorer 播放：** 如果未明确指定浏览器，则默认情况下将在 Internet Explorer 上运行测试。 可以在测试代码中设置 **BrowserWindow.CurrentBrowser** 属性来显式声明要使用的浏览器。 对于 Internet Explorer，应将此属性设为“IE”或“Internet Explorer”。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60100399"
 3. 依次选择扩展和“下载”。  
   
    > [!TIP]
-   >  还可以从[此处](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下载用于编码的 UI 跨浏览器测试的 Selenium 组件。  
+   > 还可以从[此处](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)下载用于编码的 UI 跨浏览器测试的 Selenium 组件。  
   
    若要详细了解如何创建和使用编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
   

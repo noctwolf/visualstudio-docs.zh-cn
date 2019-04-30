@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446761"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. 在 Visual Studio 中，创建一个名为 CustomDP 的 C# 或 Visual Basic 类库项目。  
 
     > [!NOTE]
-    >  如果要在多台计算机上安装指令处理器，最好使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) 项目并在扩展中包含一个 .pkgdef 文件。 有关详细信息，请参阅[部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)。  
+    > 如果要在多台计算机上安装指令处理器，最好使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) 项目并在扩展中包含一个 .pkgdef 文件。 有关详细信息，请参阅[部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)。  
 
 2. 添加对下列程序集的引用：  
 
@@ -619,7 +619,7 @@ End Property
  可以从中的文本模板调用指令之前[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，必须添加注册表项为指令处理器。  
 
 > [!NOTE]
->  如果要在多台计算机上安装指令处理器，最好定义一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX)，其中包含一个 .pkgdef 文件和您的程序集。 有关详细信息，请参阅[部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)。  
+> 如果要在多台计算机上安装指令处理器，最好定义一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX)，其中包含一个 .pkgdef 文件和您的程序集。 有关详细信息，请参阅[部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)。  
 
  指令处理器的项在注册表的以下位置：  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  在本节中，将在注册表中的该位置为自定义指令处理器添加一个项。  
 
 > [!CAUTION]
->  注册表编辑不当可能会严重损坏系统。 更改注册表之前，应备份计算机中的所有重要数据。  
+> 注册表编辑不当可能会严重损坏系统。 更改注册表之前，应备份计算机中的所有重要数据。  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>为指令处理器添加注册表项  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. 添加名为 CustomDirectiveProcessor 的新项。  
 
    > [!NOTE]
-   >  这是将在自定义指令的 Processor 字段中使用的名称。 此名称不必与指令名称、指令处理器类名称或指令处理器命名空间一致。  
+   > 这是将在自定义指令的 Processor 字段中使用的名称。 此名称不必与指令名称、指令处理器类名称或指令处理器命名空间一致。  
 
 4. 添加名为 Class 的新字符串值，该新字符串名称的值为 CustomDP.CustomDirectiveProcessor。  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. 创建一个名为文本文件`DocFile.xml`使用任何文本编辑器 （例如，记事本）。  
 
     > [!NOTE]
-    >  可以在任意位置（如 C:\Test\DocFile.xml）创建此文件。  
+    > 可以在任意位置（如 C:\Test\DocFile.xml）创建此文件。  
 
 2. 向文本文件中添加以下内容：  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. 将 TestDP.tt 的内容更改为以下文本。  
 
     > [!NOTE]
-    >  请务必替换字符串 <`YOUR PATH>`替换为 DocFile.xml 文件的路径。  
+    > 请务必替换字符串 <`YOUR PATH>`替换为 DocFile.xml 文件的路径。  
 
      文本模板的语言不必与指令处理器的语言一致。  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  在本示例中，`Processor` 参数的值为 `CustomDirectiveProcessor`。 `Processor` 参数的值必须与处理器的注册表项的名称一致。  
+    > 在本示例中，`Processor` 参数的值为 `CustomDirectiveProcessor`。 `Processor` 参数的值必须与处理器的注册表项的名称一致。  
 
 5. 在“文件”菜单上，单击“全部保存”。  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. 用下面的代码替换 TestDP.tt 中的代码。 HTML 为突出显示状态。 请务必替换字符串`YOUR PATH`替换为 DocFile.xml 文件的路径。  
 
     > [!NOTE]
-    >  附加的开始\<# 和结束 #> 标记将语句代码分离从 HTML 标记。  
+    > 附加的开始\<# 和结束 #> 标记将语句代码分离从 HTML 标记。  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

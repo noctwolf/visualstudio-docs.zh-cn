@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37b887e21da73acffde6f5ae21adf766e64e55fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838127"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 表示一个源代码文件。
@@ -31,7 +31,7 @@ IDiaSourceFile : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaSourceFile`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|检索一个简单的整数密钥值，该值是唯一的此映像。|
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|检索源文件名。|
@@ -73,7 +73,7 @@ void ShowSourceFiles(IDiaTable *pTable)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

@@ -12,12 +12,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4978a2a8d176ecf3c270bad32a1ae9f82397a642
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6ac1fd0dc242ae8b8979a3f420f5e1c4d837f62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405720"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>创建可重复使用的按钮组
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ ms.locfileid: "60065800"
     ```  
   
     > [!NOTE]
-    >  优先级字段的值确定该命令在新的命令组中的位置。 在元素中的项定义设置会覆盖的 CommandPlacement 中设置优先级。 在具有较高优先级值的命令之前将显示具有较低优先级值的命令。 允许使用重复的优先级值，但不能保证具有相同的优先级值的命令的相对位置，因为依据的顺序**devenv /setup**命令从注册表中创建的最后一个接口可能不一致。  
+    > 优先级字段的值确定该命令在新的命令组中的位置。 在元素中的项定义设置会覆盖的 CommandPlacement 中设置优先级。 在具有较高优先级值的命令之前将显示具有较低优先级值的命令。 允许使用重复的优先级值，但不能保证具有相同的优先级值的命令的相对位置，因为依据的顺序**devenv /setup**命令从注册表中创建的最后一个接口可能不一致。  
   
 ### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>将在菜单上的一组可重用按钮  
   

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918735"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 获取要显示的消息。
@@ -60,7 +60,7 @@ int GetMessage( 
 
  `pbstrHelpFileName`
 
- [in、 out]返回的帮助文件名称。 如果没有帮助文件可能是 null （c + +） 或空值 (C#)。
+ [in、 out]返回的帮助文件名称。 可能为 null (C++) 或为空 (C#) 如果没有帮助文件，则值。
 
  `pdwHelpId`
 

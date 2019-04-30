@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63ce45c0973d65d240136d7b42aef0c078b00c9a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992295"
 ---
 # <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
 使宿主可以指定应终止脚本。  
@@ -39,7 +39,7 @@ HRESULT QueryContinue();
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|调用成功，且主机允许脚本继续运行。|  
 |`S_FALSE`|成功的调用和脚本终止的主机请求。|  

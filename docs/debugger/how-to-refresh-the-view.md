@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847720"
 ---
 # <a name="how-to-refresh-the-view"></a>如何：刷新视图
 Spy + + 的系统表的"快照"，并刷新基于此信息的视图。 请务必定期刷新你的系统视图。 如果您有一个 Spy + + 视图打开且尚未刷新视图，您将不看到这些进程、 线程和后续创建的 windows。 此外，可能会看到不再存在的项。 **刷新**命令是可用于消息视图之外的所有视图。

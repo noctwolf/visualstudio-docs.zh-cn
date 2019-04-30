@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399510"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 你可以使用 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的工具在应用中调试 XAML。 生成项目时，任何错误都会在“结果”面板中显示。 双击错误可找到与该错误相关的标记。 如果需要更多工作空间，还可以按 F12 隐藏“结果”面板。
@@ -27,7 +27,7 @@ ms.locfileid: "56631037"
  如果 XAML 或代码隐藏文件不遵循该语言的格式设置规则，则会出现语法错误。 错误的说明有助于了解如何更正该错误。 该列表还会指定文件名称和发生错误的行号。 XAML 错误会在“结果”面板的“标记”选项卡上列出。
 
 > [!TIP]
->  XAML 是一种基于 XML 的标记语言，并遵循 XML 语法规则。
+> XAML 是一种基于 XML 的标记语言，并遵循 XML 语法规则。
 
  XAML 语法错误的某些常见原因如下：
 

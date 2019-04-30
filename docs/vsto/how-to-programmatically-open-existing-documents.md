@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 490dda6e5357cd0933c6a8b494cc4373038e5c1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812376"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>如何：以编程方式打开现有文档
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法打开指定的完全限定的路径和文件名称的现有 Microsoft Office Word 文档。 此方法返回<xref:Microsoft.Office.Interop.Word.Document>表示打开的文档。

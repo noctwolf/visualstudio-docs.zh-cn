@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441053"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60110318"
    - 选择项目或解决方案，以查看该工具将做的更改的列表。  
   
        > [!NOTE]
-       >  显示文件夹名称旁边的复选框没有任何影响。 必须展开要检查项目和解决方案的文件夹。  
+       > 显示文件夹名称旁边的复选框没有任何影响。 必须展开要检查项目和解决方案的文件夹。  
   
 4. 转换项目。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60110318"
    2. 单击**转换所有模板**解决方案资源管理器的标头中的按钮。  
   
        > [!NOTE]
-       >  您可以进行此步骤不必要。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+       > 您可以进行此步骤不必要。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 6. 更新自定义代码，在转换后的项目中。  
   

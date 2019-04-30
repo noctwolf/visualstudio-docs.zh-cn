@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444232"
 ---
 # <a name="watch-and-quickwatch-windows"></a>监视和快速监视窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  存在你想要观察特定对象的行为的情况；例如，你可能想要在一个局部变量超出范围时跟踪一个由该变量引用的对象。 在 C# 和 Visual Basic 中，你可以创建引用类型的特定实例的对象 ID，并在“监视”窗口中和断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  
   
 > [!NOTE]
->  对象 ID 创建弱引用，且不会阻止对象被垃圾回收。 它们仅对当前调试会话有效。  
+> 对象 ID 创建弱引用，且不会阻止对象被垃圾回收。 它们仅对当前调试会话有效。  
   
  在以下代码中，一个方法使用局部变量创建 `Person` ，但你想要找出另一个不同方法中 `Person`的名称是什么：  
   
@@ -215,7 +215,7 @@ public class Program
 6. 继续调试，当执行在 `DoSomething()` 方法处停止时，“监视”  窗口会显示 `Person` 对象。  
   
 > [!NOTE]
->  如果想要查看对象属性，如以上示例中的 `Person.Name` ，必须启用属性计算。  
+> 如果想要查看对象属性，如以上示例中的 `Person.Name` ，必须启用属性计算。  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>在“监视”窗口（仅 C++）中使用寄存器  
  如果正在调试本机代码，则可以添加寄存器名，以及使用的变量名 **$\<注册名称 >** 或 **@\<注册名称 >**.  有关详细信息，请参阅 [Pseudovariables](../debugger/pseudovariables.md)。  

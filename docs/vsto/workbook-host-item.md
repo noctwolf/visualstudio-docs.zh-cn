@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445528"
 ---
 # <a name="workbook-host-item"></a>工作簿主机项
   <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项这种类型从 Excel 的主互操作程序集扩展 <xref:Microsoft.Office.Interop.Excel.Workbook> 类型。 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项提供与 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象完全相同的属性、方法和事件，但它还提供其他功能。
@@ -49,10 +49,10 @@ ms.locfileid: "56625253"
  <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项不充当宿主控件的容器。 因此，不能将任何可见控件添加到工作簿，但可以添加 <xref:System.Data.DataSet>等组件，以便这些组件可由所有工作表共享。 在文档级项目中，可用于工作簿的组件可在“工具箱”  的“组件”  选项卡、“数据”  选项卡和“所有 Windows 窗体” 选项卡中找到。
 
 > [!NOTE]
->  Visual Studio 中的 Office 开发工具不支持共享工作簿。
+> Visual Studio 中的 Office 开发工具不支持共享工作簿。
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的工作簿宿主项
- 在 VSTO 外接程序项目中，您可以生成<xref:Microsoft.Office.Tools.Excel.Workbook>在运行时为在 Excel 中打开任何工作簿主机项。 若要生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 主机项，请使用 `GetVstoObject` 方法。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+ 在 VSTO 外接程序项目中，您可以生成<xref:Microsoft.Office.Tools.Excel.Workbook>在运行时为在 Excel 中打开任何工作簿主机项。 若要生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项，请使用 `GetVstoObject` 方法。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 ## <a name="see-also"></a>请参阅
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935700"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 克隆当前脚本引擎 （减去任何当前执行状态），返回当前线程中没有站点加载脚本引擎。 此新的脚本引擎的属性将与原始脚本引擎会采用如果它已转换回为初始化状态的属性相同。  

@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445713"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：添加或删除导入命名空间 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60065410"
 3. 在“导入的命名空间”列表中，选中要添加的命名空间对应的复选框。  
   
     > [!NOTE]
-    >  为了能够完成导入，命名空间必须位于引用组件中。 如果列表中未显示命名空间，需要添加对包含该命名空间的组件的引用。 有关详细信息，请参阅[NIB 如何：添加或删除引用通过使用添加引用对话框中](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+    > 为了能够完成导入，命名空间必须位于引用组件中。 如果列表中未显示命名空间，需要添加对包含该命名空间的组件的引用。 有关详细信息，请参阅[NIB 如何：添加或删除引用通过使用添加引用对话框中](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 ### <a name="to-remove-an-imported-namespace"></a>移除导入的命名空间  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065410"
 4. 单击“添加用户导入”按钮，将命名空间添加到“导入的命名空间”列表。  
   
     > [!NOTE]
-    >  如果该命名空间与列表中已存在的某个命名空间匹配，将禁用“添加用户导入”按钮；一个导入不能添加两次。  
+    > 如果该命名空间与列表中已存在的某个命名空间匹配，将禁用“添加用户导入”按钮；一个导入不能添加两次。  
   
 #### <a name="to-update-a-user-import"></a>更新用户导入  
   

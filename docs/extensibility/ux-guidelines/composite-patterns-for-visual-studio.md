@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 686239ed719a74cc91d9aec1412c81f38ecdd956
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387475"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio 的复合模式
 复合模式组合不同配置中的交互和设计元素。 在 Visual Studio 中的一致性方面的最重要复合模式包括：
@@ -431,7 +431,7 @@ ms.locfileid: "60056105"
  在该列表中选择的关键概念在于，它是基于行的这意味着，整个行做出选择时选择作为一个单元。 与此相反，网格可以允许特定的单元格，而不会影响任何其他方面的行的选择。 网格还可能包含嵌套行 （如树网格） 允许整个分支层次结构以取消选择通过与父行交互和所选的层次的结构。 在整行数据的简单突出显示颜色显示为列表中的选择。 通过单个像素的虚线边框环绕当前可编辑的行或单元格 （如果所有单元格是只读的则为行） 显示焦点。
 
 > [!NOTE]
->  **焦点**并**选择**是不同的概念。 *焦点*哪种 UI 的目标元素指示可接收的输入未显式定向到另一个对象，同时*选择*表示的对象包含在后续的对象的一组状态操作可能会发生。
+> **焦点**并**选择**是不同的概念。 *焦点*哪种 UI 的目标元素指示可接收的输入未显式定向到另一个对象，同时*选择*表示的对象包含在后续的对象的一组状态操作可能会发生。
 
  在列表中的选择可能是连续的、 连续的或区域。 当多选，允许的连续未分配和非连续选择应始终受支持，同时对区域 （框） 选择的支持是可选的。 区域的选择是通过拖动列表正文的空白区域启动的。
 

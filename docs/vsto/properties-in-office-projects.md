@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561355"
 ---
 # <a name="properties-in-office-projects"></a>Office 项目中的属性
   有几个重要属性可用于 Visual Studio 中的 Office 项目。 可在 **“属性”** 窗口中访问这些属性。

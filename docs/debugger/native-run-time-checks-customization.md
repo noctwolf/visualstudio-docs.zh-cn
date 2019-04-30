@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66591308c2b0c59cf310d3957131f80191cc51c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905481"
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
 使用编译 **/RTC** （运行时检查），或使用`runtime_checks`杂注，C 运行时库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：
@@ -40,7 +40,7 @@ ms.locfileid: "56723586"
 
   若要自定义运行时错误检查，可以：
 
-- 编写一个运行时错误报告函数。 有关详细信息，请参阅[如何： 编写运行时错误报告函数](../debugger/how-to-write-a-run-time-error-reporting-function.md)。
+- 编写一个运行时错误报告函数。 有关详细信息，请参阅[如何：编写运行时错误报告函数](../debugger/how-to-write-a-run-time-error-reporting-function.md)。
 
 - 自定义错误消息目标。
 

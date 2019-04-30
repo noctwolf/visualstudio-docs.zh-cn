@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff59be63ef1d6e7120842c936dd64dbb77d7ed70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907911"
 ---
 # <a name="web-site-support"></a>网站支持
 网站项目系统是创建 Web 项目的项目系统。 反过来，web 项目创建 Web 应用程序。 网站项目会生成一个可执行文件，每个网页关联的代码。 其他可执行文件是从 /App_Code 文件夹中的源代码文件生成的。

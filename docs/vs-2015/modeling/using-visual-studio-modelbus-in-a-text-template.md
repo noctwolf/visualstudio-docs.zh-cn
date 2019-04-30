@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ed19a280f791fa857ffbf00ba25aa18c490aa65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444645"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60069049"
 - 模板必须继承自<xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>。
 
 > [!NOTE]
->  如果你想要读取 DSL 模型中不包含 ModelBus 引用，可以使用在你的 DSL 项目中生成的指令处理器。 有关详细信息，请参阅[从文本模板访问模型](../modeling/accessing-models-from-text-templates.md)。
+> 如果你想要读取 DSL 模型中不包含 ModelBus 引用，可以使用在你的 DSL 项目中生成的指令处理器。 有关详细信息，请参阅[从文本模板访问模型](../modeling/accessing-models-from-text-templates.md)。
 
  有关文本模板的详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 

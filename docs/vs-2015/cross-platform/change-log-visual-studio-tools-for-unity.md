@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 99a254798ad3e222401a8346df454a70699c7feb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443019"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -401,7 +401,7 @@ Visual Studio Tools for Unity 更改日志。
 - 修复对 Visual Studio 主题各部分的处理。
 
 > [!IMPORTANT]
->  C# 是 Unity 生态系统中的主要语言（即新的示例资产均以 C# 表示，Unity 文档将默认采用 C#），我们删除了对 UnityScript 和 Boo 的基本支持，以便更好地关注 C# 体验。 因此，VSTU 解决方案现在仅使用 C#，加载速度更快。
+> C# 是 Unity 生态系统中的主要语言（即新的示例资产均以 C# 表示，Unity 文档将默认采用 C#），我们删除了对 UnityScript 和 Boo 的基本支持，以便更好地关注 C# 体验。 因此，VSTU 解决方案现在仅使用 C#，加载速度更快。
 
 ## <a name="182"></a>1.8.2
  发布时间 2014-01-07
@@ -740,7 +740,7 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了 Unity 4 中 .pdb 符号的转换。
 
 > [!IMPORTANT]
->  由于 Visual Studio 2012 支持，我们不得不重命名几个文件并移动某些其他文件。 要导入 Unity 的 UnityVS 包现在分别为 Visual Studio 2010 和 Visual Studio 2012 命名为 UnityVS 2010 或 UnityVS 2012。 此版本还需要重新生成 UnityVS 项目文件。
+> 由于 Visual Studio 2012 支持，我们不得不重命名几个文件并移动某些其他文件。 要导入 Unity 的 UnityVS 包现在分别为 Visual Studio 2010 和 Visual Studio 2012 命名为 UnityVS 2010 或 UnityVS 2012。 此版本还需要重新生成 UnityVS 项目文件。
 
 ## <a name="106---internal-build"></a>1.0.6 - 内部版本
  发布时间 2012-09-12

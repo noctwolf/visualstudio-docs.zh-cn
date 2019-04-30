@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2342555c4ee92b403aa01cc0ca15bb805f2b002e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955245"
 ---
 # <a name="debugtext-constants"></a>DEBUG_TEXT 常量
 过程中使用[IDebugExpressionContext::ParseLanguageText](../../winscript/reference/idebugexpressioncontext-parselanguagetext.md)。  
@@ -29,7 +29,7 @@ typedef DWORD DEBUG_TEXT;
   
 ## <a name="constants"></a>常量  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |DWORD DEBUG_TEXT_ISEXPRESSION|0x00000001|指示该文本是而不是语句表达式。 此标志可能会影响在其中的一些语言分析文本的方式。|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|如果返回值不可用，调用方将使用它。|  

@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442961"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 编辑 UML 序列图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  有两种类型的序列图：在 UML 建模项目中手动创建的序列图，以及从程序代码生成的序列图。 使用 `UmlMode` 属性来发现你所拥有的序列图。  
   
 > [!NOTE]
->  此属性仅对使用 Visual Studio 2013 及更早版本从代码生成的序列图返回 false。 这包括从 2013 及更早版本迁移的代码生成序列图。 此版本的 Visual Studio 不支持生成新序列图。  
+> 此属性仅对使用 Visual Studio 2013 及更早版本从代码生成的序列图返回 false。 这包括从 2013 及更早版本迁移的代码生成序列图。 此版本的 Visual Studio 不支持生成新序列图。  
   
  例如，如果想要使某个菜单命令仅在 UML 序列图上可见，则 `QueryStatus()` 方法可能包括以下语句：  
   

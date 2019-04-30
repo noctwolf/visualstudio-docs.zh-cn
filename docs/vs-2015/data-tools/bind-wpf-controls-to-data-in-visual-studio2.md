@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437045"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 WPF 控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60111995"
      若要选择一个不同的控件，请单击项旁边的下拉箭头，然后选择一个控件。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
     > [!NOTE]
-    >  如果你不希望显示特定的列或属性，请展开该项以显示其子级。 单击列或你不想要显示，然后再单击属性旁边的下拉箭头**None**。
+    > 如果你不希望显示特定的列或属性，请展开该项以显示其子级。 单击列或你不想要显示，然后再单击属性旁边的下拉箭头**None**。
 
 3. 在设计器中将项拖动到有效容器（例如 <xref:System.Windows.Controls.Grid>）中。 有关有效容器的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60111995"
 2. 单击项目并选择旁边的下拉箭头**详细信息**。
 
     > [!NOTE]
-    >  如果你不希望显示特定的列或属性，请展开该项以显示其子级。 单击列或你不想要显示，然后再单击属性旁边的下拉箭头**None**。
+    > 如果你不希望显示特定的列或属性，请展开该项以显示其子级。 单击列或你不想要显示，然后再单击属性旁边的下拉箭头**None**。
 
 3. 在设计器中将项拖动到有效容器（例如 <xref:System.Windows.Controls.Grid>）中。 有关有效容器的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
@@ -118,7 +118,7 @@ ms.locfileid: "60111995"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]和代码以将控件绑定到数据。 有关详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。
 
     > [!NOTE]
-    >  如果该控件已绑定到数据，则会将该控件的数据绑定重置为最近拖动到该控件上的项。
+    > 如果该控件已绑定到数据，则会将该控件的数据绑定重置为最近拖动到该控件上的项。
 
 ## <a name="see-also"></a>请参阅
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [WPF 应用程序中创建查找表](../data-tools/create-lookup-tables-in-wpf-applications.md) [WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)[绑定 WPF 控件添加到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)[绑定 WPF 控件添加到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)[演练：在 WPF 应用程序中显示相关的数据](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

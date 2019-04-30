@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c33fff3d8b5bd30ecec1b566e550d14e4cb68c11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925799"
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 表达式计算器 (EE) 检查一种语言来分析和在运行时计算变量和表达式的语法使他们能够在 IDE 处于中断模式下时由用户查看。

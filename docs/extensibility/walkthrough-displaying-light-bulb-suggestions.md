@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444942"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>演练：显示灯泡建议
 电灯泡是 Visual Studio 编辑器中展开此项可显示的一组操作，例如，通过内置的代码分析器或重构代码标识的问题的修补程序的图标。
@@ -177,7 +177,7 @@ ms.locfileid: "60086671"
 6. 实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A>方法，返回的数组<xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet>包含不同的对象<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>对象。 灯泡图标展开时，调用此方法。
 
     > [!WARNING]
-    >  应确保的实现`HasSuggestedActionsAsync()`并`GetSuggestedActions()`是否一致; 即，如果`HasSuggestedActionsAsync()`返回`true`，然后`GetSuggestedActions()`应具有某些操作来显示。 在许多情况下，`HasSuggestedActionsAsync()`之前调用`GetSuggestedActions()`，但并不总是这种情况。 例如，如果用户通过按调用灯泡操作 (**CTRL +** 。) 仅`GetSuggestedActions()`调用。
+    > 应确保的实现`HasSuggestedActionsAsync()`并`GetSuggestedActions()`是否一致; 即，如果`HasSuggestedActionsAsync()`返回`true`，然后`GetSuggestedActions()`应具有某些操作来显示。 在许多情况下，`HasSuggestedActionsAsync()`之前调用`GetSuggestedActions()`，但并不总是这种情况。 例如，如果用户通过按调用灯泡操作 (**CTRL +** 。) 仅`GetSuggestedActions()`调用。
 
     ```csharp
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)
@@ -326,7 +326,7 @@ ms.locfileid: "60086671"
     ```
 
     > [!WARNING]
-    >  灯泡菜单操作**Invoke**方法不应显示 UI。 如果你的操作会带来新的用户界面 （例如预览或选择对话框），不会显示直接从用户界面**Invoke**方法，但改为计划从返回之后显示 UI **Invoke**.
+    > 灯泡菜单操作**Invoke**方法不应显示 UI。 如果你的操作会带来新的用户界面 （例如预览或选择对话框），不会显示直接从用户界面**Invoke**方法，但改为计划从返回之后显示 UI **Invoke**.
 
 10. 若要完成实现，添加`Dispose()`和`TryGetTelemetryId()`方法。
 

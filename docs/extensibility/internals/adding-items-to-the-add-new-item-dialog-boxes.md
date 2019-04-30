@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418690"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>将项目添加到添加新项对话框
 将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示**AddItemTemplates**部分包含的路径和名称的目录中提供哪些项**添加新项**放入对话框。
 
 > [!NOTE]
->  紧跟代码段的表包含有关注册表项的其他信息。
+> 紧跟代码段的表包含有关注册表项的其他信息。
 
  本部分位于**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**。
 
@@ -42,7 +42,7 @@ ms.locfileid: "59651277"
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | 确定文件中显示的树节点中的排序顺序**添加新项**对话框。 |
 
 > [!NOTE]
->  Visual C# 和 Visual Basic 项目类型的 GUID 如下所示：
+> Visual C# 和 Visual Basic 项目类型的 GUID 如下所示：
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ ms.locfileid: "59651277"
  但是，不需要已做好所有之一 *.vsdir*文件。 您可以将一个 *.vsdir*目录中的每个项的文件。 有关详细信息，请参阅[向导 (.vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)并[模板目录说明 (.vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。
 
 > [!NOTE]
->  *.Vsdir*模板目录中的文件是可选的。 如果只是想要将在目录中的项目元素和其显示在**添加新项**对话框中，可以将该文件放入中指定的模板目录**TemplatesDir**语句。 然后，该文件将显示在右窗格中**添加新项**对话框中的为该项目。 但是，如果你想要显示的文件或图标的本地化的标题，您必须包含至少一个 *.vsdir*模板目录中的文件。
+> *.Vsdir*模板目录中的文件是可选的。 如果只是想要将在目录中的项目元素和其显示在**添加新项**对话框中，可以将该文件放入中指定的模板目录**TemplatesDir**语句。 然后，该文件将显示在右窗格中**添加新项**对话框中的为该项目。 但是，如果你想要显示的文件或图标的本地化的标题，您必须包含至少一个 *.vsdir*模板目录中的文件。
 
 ## <a name="group-project-items"></a>项目项进行分组
  如果你想要包含在文件夹中的模板组**添加新项**对话框框树中，你必须使用项模板根目录下的子目录中。 当**添加新项**向用户显示对话框中，它们还可以查看子文件夹，并可以从中选择项目元素。

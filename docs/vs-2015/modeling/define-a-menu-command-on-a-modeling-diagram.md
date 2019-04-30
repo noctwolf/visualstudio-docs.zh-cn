@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433149"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在建模图上定义菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60046236"
 3. 将类文件添加到项目中，并将其内容设置为下面的代码。  
 
    > [!NOTE]
-   >  根据你的喜好更改 `Text` 返回的命名空间、类名和值。  
+   > 根据你的喜好更改 `Text` 返回的命名空间、类名和值。  
    >   
    >  如果定义多个命令，它们将按类名的字母顺序出现在菜单上。  
 
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
 
-    - 在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
+    - 在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序”  字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 

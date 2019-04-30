@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408486"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>演练：创建和运行托管代码的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "60058884"
   [使用单元测试以改进代码](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  此演练使用用于托管代码的 Microsoft 单元测试框架。 测试资源管理器还可以在具有测试资源管理器适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)  
+> 此演练使用用于托管代码的 Microsoft 单元测试框架。 测试资源管理器还可以在具有测试资源管理器适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
+> 有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
   
 ## <a name="prerequisites"></a>系统必备  
   
@@ -71,12 +71,12 @@ ms.locfileid: "60058884"
 5. 在 **“名称”** 框中键入 `Bank` ，然后单击 **“确定”**。  
   
    > [!NOTE]
-   >  如果名称“Bank”已被使用，请为该项目选择其他名称。  
+   > 如果名称“Bank”已被使用，请为该项目选择其他名称。  
   
     将创建新的 Bank 项目并将其显示在解决方案资源管理器中，而且将在代码编辑器中打开 Class1.cs 文件。  
   
    > [!NOTE]
-   >  如果代码编辑器中未打开 Class1.cs 文件，请在解决方案资源管理器中双击文件 Class1.cs 将其打开。  
+   > 如果代码编辑器中未打开 Class1.cs 文件，请在解决方案资源管理器中双击文件 Class1.cs 将其打开。  
   
 6. 复制[用于创建单元测试的示例项目](../test/sample-project-for-creating-unit-tests.md)中的源代码。  
   

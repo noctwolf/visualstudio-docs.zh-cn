@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00e1e849ba12303041d23b89e65230c2a5aafc9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58094d505cf2fd3621b801040f0f71904796d86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388421"
 ---
 # <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何：编辑寄存器值 (C#， C++，Visual Basic 中， F#)
 
@@ -37,10 +37,10 @@ ms.locfileid: "60075087"
 2. 键入新值。
 
     > [!CAUTION]
-    >  更改寄存器值（特别是 EIP 和 EBP 寄存器中的值）可能会影响程序的执行。
+    > 更改寄存器值（特别是 EIP 和 EBP 寄存器中的值）可能会影响程序的执行。
 
     > [!CAUTION]
-    >  编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中某些最不重要的数据位发生变化。
+    > 编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中某些最不重要的数据位发生变化。
 
 ## <a name="see-also"></a>请参阅
 - [如何：使用“寄存器”窗口](../debugger/how-to-use-the-registers-window.md)

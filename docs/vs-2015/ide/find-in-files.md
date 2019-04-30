@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383384"
 ---
 # <a name="find-in-files"></a>在文件中查找
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "54804354"
    若要取消“查找”操作，请按 CTRL + BREAK。  
   
 > [!NOTE]
->  “查找和替换”工具不会搜索具有 `Hidden` 或 `System` 特性集的目录。  
+> “查找和替换”工具不会搜索具有 `Hidden` 或 `System` 特性集的目录。  
   
 ## <a name="find-what"></a>查找内容  
  若要搜索一个新的文本字符串或表达式，请在框中进行指定。 若要搜索最近搜索的 20 条字符串中的任意一条，请打开列表并选择想要搜索的字符串。 若要在搜索字符串中使用一个或多个正则表达式，请选择相邻的“表达式生成器”按钮。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。  
@@ -53,10 +53,10 @@ ms.locfileid: "54804354"
  从“查找范围”下拉列表中选择的选项可确定是仅在当前活动文件中进行“在文件中查找”搜索，还是在存储于某些文件夹的所有文件中进行此种搜索。 从列表中选择搜索范围，或单击“浏览(...)”按钮以显示“选择搜索文件夹”对话框并输入自己的目录集。 也可以直接在“查找范围”框中键入路径。  
   
 > [!WARNING]
->  使用“整个解决方案”或“当前项目”选项，可不搜索项目和解决方案文件。 如果想要在项目文件进行查找，请选择搜索文件夹。  
+> 使用“整个解决方案”或“当前项目”选项，可不搜索项目和解决方案文件。 如果想要在项目文件进行查找，请选择搜索文件夹。  
   
 > [!NOTE]
->  如果选中“查找范围”选项会导致搜索已从源代码管理中签出的文件，则只会搜索已下载到本机计算机的文件版本。  
+> 如果选中“查找范围”选项会导致搜索已从源代码管理中签出的文件，则只会搜索已下载到本机计算机的文件版本。  
   
 ## <a name="include-subfolders"></a>包含子文件夹  
  指定将搜索“查找范围”文件夹的子文件夹。  

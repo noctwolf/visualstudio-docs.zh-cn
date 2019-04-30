@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 48196badc0d10435760a8af7ac5029e83d9de232
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857481"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表格 (.Vsct) 文件
 命令表配置文件是描述的 VSPackage 包含的命令集的文本文件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令表 (VSCT) 编译器将基于 XML 的配置文件 （.vsct 文件） 编译为二进制的命令表输出 (.cto) 文件。 生成.cto 文件是不同于使用命令表 (启动 CTC) 编译器来编译.ctc 配置文件创建的。 但是，基于 XML 的.vsct 文件具有一些优势，例如 XML 编辑器和 XML IntelliSense。
@@ -28,7 +28,7 @@ ms.locfileid: "56630972"
 
  介绍如何设计.vsct 文件。
 
- [如何：创建。Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
+ [如何：创建 .Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
  比较用于创建.vsct 文件的方法。 介绍手动创建一个新的.vsct 文件的过程。
 

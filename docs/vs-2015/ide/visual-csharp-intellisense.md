@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443165"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60075754"
  在 Visual C# 中，完成列表包含位于作用域的扩展方法。  
   
 > [!NOTE]
->  完成列表不显示 <xref:System.String> 对象的所有扩展方法。  
+> 完成列表不显示 <xref:System.String> 对象的所有扩展方法。  
   
  扩展方法使用不同于实例方法的图标。 若要了解列表图标的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。 当具有相同名称的实例方法和扩展方法都处于作用域时，完成列表将显示扩展方法图标。  
   
@@ -148,12 +148,12 @@ ms.locfileid: "60075754"
  ![生成事件处理程序](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  如果由 IntelliSense 创建的新委托引用现有的事件处理程序，IntelliSense 将在工具提示中传达此信息。 然后，可以修改此引用；已在代码编辑器中选定该文本。 否则，自动事件挂钩将在此时完成。  
+> 如果由 IntelliSense 创建的新委托引用现有的事件处理程序，IntelliSense 将在工具提示中传达此信息。 然后，可以修改此引用；已在代码编辑器中选定该文本。 否则，自动事件挂钩将在此时完成。  
   
  如果按 TAB 键，IntelliSense 将引出具有正确签名的方法并将光标放在事件处理程序的正文中。  
   
 > [!NOTE]
->  使用“视图”菜单上的“向后导航”命令 (Ctrl+-) 可返回到事件挂钩语句。  
+> 使用“视图”菜单上的“向后导航”命令 (Ctrl+-) 可返回到事件挂钩语句。  
   
  下面的任务演示 IntelliSense 如何自动将名为 `button1_Click` 的事件处理程序挂钩到名为 `button1.Click` 的事件字段。  
   

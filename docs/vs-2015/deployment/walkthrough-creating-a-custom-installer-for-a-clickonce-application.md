@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386589"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>演练：创建 ClickOnce 应用程序的自定义安装程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60078871"
      这些方法调用<xref:System.Deployment.Application.InPlaceHostingManager>方法下载部署清单中，添加相应的权限，要求用户提供权限来安装，然后下载并安装到 ClickOnce 缓存的应用程序。 自定义安装程序可以指定 ClickOnce 应用程序预受信任，也可以将推迟到信任决定<xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A>方法调用。 此代码预信任应用程序。  
   
     > [!NOTE]
-    >  通过预先信任分配的权限不能超过的自定义安装程序代码的权限。  
+    > 通过预先信任分配的权限不能超过的自定义安装程序代码的权限。  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  

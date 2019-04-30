@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981421"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练：为 Excel 创建第一个 VSTO 外接程序
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。

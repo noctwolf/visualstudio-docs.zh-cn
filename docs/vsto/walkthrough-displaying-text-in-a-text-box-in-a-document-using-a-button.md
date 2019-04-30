@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443825"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>演练：在文本框中使用按钮在文档中显示文本
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用按钮和文本框。
@@ -60,7 +60,7 @@ ms.locfileid: "60071754"
 2. 从**公共控件**选项卡**工具箱**，拖动<xref:Microsoft.Office.Tools.Word.Controls.TextBox>到文档。
 
    > [!NOTE]
-   >  在 Word 中，默认情况下控件将按照文本进行删除。 您可以修改的方式控件和形状对象插入上更改默认值**编辑**选项卡**选项**在 Word 中的对话框。
+   > 在 Word 中，默认情况下控件将按照文本进行删除。 您可以修改的方式控件和形状对象插入上更改默认值**编辑**选项卡**选项**在 Word 中的对话框。
 
 3. 在 **“视图”** 菜单上，单击 **“属性窗口”**。
 

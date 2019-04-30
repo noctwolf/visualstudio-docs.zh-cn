@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4087e77fdd87aaa012e4d09013bb92ae5835bb0d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446907"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 返回的帮助文件的路径和解释该错误，如有可能的主题的上下文 ID。  
@@ -57,7 +57,7 @@ HRESULT GetHelpInfo(
  此方法返回的帮助文件的路径和解释该错误，如有可能的主题的上下文 ID。  
   
 > [!NOTE]
->  未实现此方法。  
+> 未实现此方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDispError 接口](../../winscript/reference/idisperror-interface.md)

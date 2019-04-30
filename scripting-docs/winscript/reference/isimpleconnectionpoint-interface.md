@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001500"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint 接口
 用于描述和枚举的特定连接点上触发的事件提供一个简单的方法。 此接口，还可轻松挂接`IDispatch`这些事件的对象。 此接口是实现由进程调试管理器 (PDM)，并使用的脚本引擎。  

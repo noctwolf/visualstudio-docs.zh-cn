@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee61f388da8098c20c65be8859b336c1ab86bebd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910665"
 ---
 # <a name="add-project-and-project-item-templates"></a>添加项目和项目项模板
 创建你自己的项目类型时，你必须通过使用标准添加新项目和项目项提供支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 对话框。 以下主题讨论不同的技术来添加项目和项目项。

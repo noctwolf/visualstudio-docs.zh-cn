@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443538"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
   *应用程序页*是专为在 SharePoint 网站中使用的 ASP.NET 网页。 应用程序页面是 ASP.NET 页的专用化的类型。 应用程序页和一个标准的 ASP.NET 页面的主要区别是应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页作为站点上的其他页面共享相同的外观和行为。
@@ -36,7 +36,7 @@ ms.locfileid: "56644440"
  应用程序页不能执行这些操作。 但是应用程序页是页的最适合后，可以创建如果你想要包含自定义代码的页。 虽然可以将自定义代码添加到站点页面，在代码停止运行时在用户通过使用诸如 SharePoint Designer 之类的工具自定义页。
 
 > [!NOTE]
->  Visual Studio 不提供模板，帮助你创建的 SharePoint 站点的站点页面。 有关详细信息，请参阅[SharePoint 页面类型](http://go.microsoft.com/fwlink/?LinkID=211584)。
+> Visual Studio 不提供模板，帮助你创建的 SharePoint 站点的站点页面。 有关详细信息，请参阅[SharePoint 页面类型](http://go.microsoft.com/fwlink/?LinkID=211584)。
 
 ## <a name="create-an-application-page"></a>创建应用程序页
  若要创建的应用程序页，添加**应用程序页**向 SharePoint 项目项。 创建应用程序页，在 Visual Studio 将添加到你的项目的以下文件夹：
@@ -58,7 +58,7 @@ ms.locfileid: "56644440"
  通过使用 Visual Studio 中的设计器视图来设计应用程序页的内容。 在项目中打开应用程序页上时显示此设计器 (通过双击它或打开其快捷菜单，然后选择**打开**)，然后选择**设计**底部的按钮在编辑器中。
 
 > [!NOTE]
->  您可以设计页仅在**源**在设计器视图。 **设计**为应用程序页禁用设计器的视图。
+> 您可以设计页仅在**源**在设计器视图。 **设计**为应用程序页禁用设计器的视图。
 
  您可以调试应用程序页，就像就像调试其他 Visual Studio 中的 SharePoint 项目项。 启动 Visual Studio 调试器时，Visual Studio 会打开 SharePoint 站点。
 

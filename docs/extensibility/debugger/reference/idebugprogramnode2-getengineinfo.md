@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916899"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 获取名称和标识符的运行程序的调试引擎 (DE)。
@@ -41,11 +41,11 @@ int GetEngineInfo(
 #### <a name="parameters"></a>参数
  `pbstrEngine`
 
- [out]返回的运行程序 DE 名称 (c + + 专用： 这可以是 null 指针，该值指示调用方不希望该引擎的名称)。
+ [out]返回的运行程序 DE 名称 (C++-特定： 这可以是 null 指针，该值指示调用方不希望该引擎的名称)。
 
  `pguidEngine`
 
- [out]返回运行程序 DE 的全局唯一标识符 (特定于 c + + 的： 这可以是 null 指针，该值指示调用方不感兴趣的引擎的 GUID)。
+ [out]返回运行程序 DE 的全局唯一标识符 (C++-特定： 这可以是 null 指针，该值指示调用方不感兴趣的引擎的 GUID)。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

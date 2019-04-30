@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0b5a8c0ec9d7dfcae3cd97b0018de355ae7748a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443502"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60116844"
 指定目标注册。  
   
 > [!NOTE]
->  因为`CV_HREG_e`枚举太大，无法复制无法全部展示，作为参考提供的简化的版本。 在斜体标记缺失的条目。 完整的枚举是 cvconst.h 标头文件中。  
+> 因为`CV_HREG_e`枚举太大，无法复制无法全部展示，作为参考提供的简化的版本。 在斜体标记缺失的条目。 完整的枚举是 cvconst.h 标头文件中。  
   
 ## <a name="syntax"></a>语法  
   

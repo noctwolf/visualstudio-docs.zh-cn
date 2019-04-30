@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442533"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60070246"
 TableLayoutPanel 控件  
   
     > [!NOTE]
-    >  添加 TableLayoutPanel 后，如果窗体中出现标题为“TableLayoutPanel 任务”的窗口，请选择窗体内的任何位置来关闭此窗口。 在本教程后面部分，您将学习到有关此窗口的更多内容。  
+    > 添加 TableLayoutPanel 后，如果窗体中出现标题为“TableLayoutPanel 任务”的窗口，请选择窗体内的任何位置来关闭此窗口。 在本教程后面部分，您将学习到有关此窗口的更多内容。  
   
      请注意当选择“工具箱”选项卡时工具箱是如何展开以覆盖窗体的，以及当选择工具箱外部的任何位置后它是如何关闭的。 这就是 IDE 自动隐藏功能。 通过选择窗口右上角的图钉图标在自动隐藏和就地锁定之间切换，您可为任何窗口打开或关闭工具箱。 图钉图标如下所示。  
   
@@ -62,7 +62,7 @@ TableLayoutPanel 控件
 7. 将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。  
   
     > [!NOTE]
-    >  TableLayoutPanel 的工作方式类似于 Microsoft Office Word 中的表：它有行和列，并且单个单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 `PictureBox` 控件、一个位于其左下方单元格中的 `CheckBox` 控件和四个位于其右下方单元格中的 `Button` 控件。  
+    > TableLayoutPanel 的工作方式类似于 Microsoft Office Word 中的表：它有行和列，并且单个单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 `PictureBox` 控件、一个位于其左下方单元格中的 `CheckBox` 控件和四个位于其右下方单元格中的 `Button` 控件。  
   
 8. TableLayoutPanel 当前具有两个大小相等的行和两个大小相等的列。 您需要调整它们，以使顶部行和右侧列更大一些。 在 Windows 窗体设计器中选择“TableLayoutPanel”。 在右上角有一个小的黑色三角形按钮，如下所示。  
   

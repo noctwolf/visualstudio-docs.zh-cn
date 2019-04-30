@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849947"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
@@ -32,7 +32,7 @@ Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”
 以下各节介绍了 Visual Studio 支持的语言表达式计算的限制。
 
 ## <a name="f-expressions-are-not-supported"></a>不支持 F# 表达式。
-无法识别 F# 表达式。 如果正在调试 F# 代码，你需要在向调试器窗口或对话框中输入表达式之前，将表达式转换为 C# 语法。 当把表达式从 F# 转换到 C# 时，请务必记住 C# 使用 `==` 运算符来测试相等性，而 F# 使用单个 `=`。
+无法识别 F# 表达式。 如果正在调试 F# 代码，你需要在向调试器窗口或对话框中输入表达式之前，将表达式转换为 C# 语法。 当把表达式从 F # 转换到 C# 时，请务必记住 C# 使用 `==` 运算符来测试相等性，而 F # 使用单个 `=`。
 
 ## <a name="c-expressions"></a>C++ 表达式
 有关将上下文运算符用于 C++ 中的表达式的信息，请参阅 [上下文运算符 (C++)](../debugger/context-operator-cpp.md)。

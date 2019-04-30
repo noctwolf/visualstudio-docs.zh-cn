@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 84255e364630245564a0cbab5d38c6dff38df0a8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978466"
 ---
 # <a name="idebugexpressiongetresultasstring"></a>IDebugExpression::GetResultAsString
 返回一个字符串和操作的返回值为表达式计算的结果。  
@@ -46,7 +46,7 @@ HRESULT GetResultAsString(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_PENDING`|该操作仍是挂起。|  

@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442607"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步骤 3：添加倒计时计时器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094810"
 在本教程的第 3 部分中，您将添加一个倒计时计时器，用于跟踪测验对象完成测验所剩秒数。  
   
 > [!NOTE]
->  本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时的数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
+> 本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时的数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 ### <a name="to-add-a-countdown-timer"></a>添加倒计时计时器  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60094810"
      您刚刚添加了 `if else` 语句，可通过这种方式告诉程序做出判断。 `if else` 语句如下所示。  
   
     > [!NOTE]
-    >  下面的示例仅用于说明，请勿将其添加到您的项目。  
+    > 下面的示例仅用于说明，请勿将其添加到您的项目。  
   
     ```vb  
     If (something that your program will check) Then  

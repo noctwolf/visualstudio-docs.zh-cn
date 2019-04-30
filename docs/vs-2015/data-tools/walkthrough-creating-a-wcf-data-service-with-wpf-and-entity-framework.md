@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424855"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,12 +89,12 @@ ms.locfileid: "60107033"
 6. 如果数据库需要密码，请选择“是，在连接字符串中包含敏感数据”选项按钮，然后选择“下一步”按钮。  
   
    > [!NOTE]
-   >  如果显示一个对话框，请选择“是”，将该文件保存到项目中。  
+   > 如果显示一个对话框，请选择“是”，将该文件保存到项目中。  
   
 7. 在“选择版本”页上，选择“Entity Framework 5.0”选项按钮，然后选择“下一步”按钮。  
   
    > [!NOTE]
-   >  为了使用具有 WCF 服务的 Entity Framework 6 的最新版本，你需要安装 WCF Data Services Entity Framework Provider NuGet 程序包。 请参阅[使用 WCF Data Services 5.6.0 与 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。  
+   > 为了使用具有 WCF 服务的 Entity Framework 6 的最新版本，你需要安装 WCF Data Services Entity Framework Provider NuGet 程序包。 请参阅[使用 WCF Data Services 5.6.0 与 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。  
   
 8. 在“选择数据库对象”页上，展开“表”节点、选中“客户”复选框，然后选择“完成”按钮。  
   
@@ -129,7 +129,7 @@ ms.locfileid: "60107033"
     Customers 表中的数据将以 XML 表示形式显示。  
   
    > [!NOTE]
-   >  某些情况下，Internet Explorer 会将数据错误解释为 RSS 源。 必须确保禁用显示 RSS 源的选项。 有关详细信息，请参阅[的服务引用的疑难解答](../data-tools/troubleshooting-service-references.md)。  
+   > 某些情况下，Internet Explorer 会将数据错误解释为 RSS 源。 必须确保禁用显示 RSS 源的选项。 有关详细信息，请参阅[的服务引用的疑难解答](../data-tools/troubleshooting-service-references.md)。  
   
 8. 关闭浏览器窗口。  
   

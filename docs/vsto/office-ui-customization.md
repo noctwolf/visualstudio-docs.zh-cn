@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 052149783f93c1bf2f394be2fac9f6a51c9c0cf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977910"
 ---
 # <a name="office-ui-customization"></a>Office UI 自定义
   可以使用 Visual Studio 中的 Office 开发人员工具自定义 Microsoft Office 应用程序的用户界面 (UI)。 本主题介绍自定义的 UI 功能，分为以下几个部分：

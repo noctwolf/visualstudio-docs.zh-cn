@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815824"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>如何：手动运行托管代码的代码分析
 代码分析工具为您提供了有关在源代码中可能存在的缺陷的信息。 你可以使用代码项目中，每个生成自动运行代码分析，还可以手动运行代码分析。 在项目属性页代码分析页上指定的规则时运行代码分析签入。 有关详细信息，请参阅[如何：配置托管的代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900339"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令&gt;元素 （引导程序）
 `Commands`元素实现下面的元素描述的测试`InstallChecks`元素，并声明哪个包[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]如果测试失败，应安装引导程序。
@@ -68,14 +68,14 @@ ms.locfileid: "56598500"
 ## <a name="elements-and-attributes"></a>元素和属性
  `Commands`元素是必需的。 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Reboot`|可选。 确定是否的任何包返回重新启动退出代码应重新启动系统。 以下列表显示了有效的值：<br /><br /> `Defer`。 在重启推迟到将来的某个时间。<br /><br /> `Immediate`。 如果某个包返回了重新启动退出代码，会导致立即重新启动。<br /><br /> `None`。 使被忽略的任何重新启动请求。<br /><br /> 默认值为 `Immediate`。|
 
 ## <a name="command"></a>命令
  `Command` 元素是 `Commands` 元素的一个子元素。 一个`Commands`元素可以具有一个或多个`Command`元素。 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`PackageFile`|必需。 要安装的包的名称应该为一个或多个指定的条件`InstallConditions`返回 false。 必须通过使用在同一文件中定义包`PackageFile`元素。|
 |`Arguments`|可选。 一组命令行参数将传递到包文件。|
@@ -92,7 +92,7 @@ ms.locfileid: "56598500"
 
  `BypassIf` 具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要测试的属性的名称。 该属性必须之前已由定义的子`InstallChecks`元素。 有关详细信息，请参阅[ \<InstallChecks > 元素](../deployment/installchecks-element-bootstrapper.md)。|
 |`Compare`|必需。 要执行的比较类型。 以下列表显示了有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
@@ -104,7 +104,7 @@ ms.locfileid: "56598500"
 
  `FailIf` 具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Property`|必需。 要测试的属性的名称。 该属性必须之前已由定义的子`InstallChecks`元素。 有关详细信息，请参阅[ \<InstallChecks > 元素](../deployment/installchecks-element-bootstrapper.md)。|
 |`Compare`|必需。 要执行的比较类型。 以下列表显示了有效的值：<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
@@ -118,7 +118,7 @@ ms.locfileid: "56598500"
 ## <a name="exitcode"></a>ExitCode
  `ExitCode`元素是子元素的`ExitCodes`元素。 `ExitCode`元素可确定安装应执行什么操作来响应来自包的退出代码。 `ExitCode` 不包含任何子元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Value`|必需。 退出代码值此`ExitCode`元素将适用。|
 |`Result`|必需。 如何安装应响应此退出代码。 以下列表显示了有效的值：<br /><br /> `Success`。 标记为已成功安装的包。<br /><br /> `SuccessReboot`。 将该包标记为已成功安装，并指示系统在重新启动。<br /><br /> `Fail`。 标记为失败的包。<br /><br /> `FailReboot`。 将该包标记为失败，并指示系统在重新启动。|

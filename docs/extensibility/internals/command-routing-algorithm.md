@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 591a5bdbeaa8724eb51d5755066b382c08740bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910392"
 ---
 # <a name="command-routing-algorithm"></a>命令传送算法
 在 Visual Studio 中由多个不同组件处理命令。 命令是从最内部的上下文中，基于当前所选内容路由到最外层的上下文 （也称为全局）。 有关详细信息，请参阅[命令可用性](../../extensibility/internals/command-availability.md)。

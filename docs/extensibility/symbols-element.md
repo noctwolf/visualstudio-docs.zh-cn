@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b6c5dcbd3601a6075097a44d2cd5dd625b4a87
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799498"
 ---
 # <a name="symbols-element"></a>Symbols 元素
 定义 Guid 并由其他 VSCT 元素的 Id。 对于非托管代码中，此信息通常来自所指定的标头文件[Extern 元素](../extensibility/extern-element.md)。 托管代码使用符号元素定义此信息的子元素。
@@ -41,7 +41,7 @@ ms.locfileid: "56706686"
 
 |特性|描述|
 |---------------|-----------------|
-|无||
+|None||
 
 ### <a name="child-elements"></a>子元素
 

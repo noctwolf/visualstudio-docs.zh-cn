@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f138492e5b0a465bb0f101c15457ed1021ab3d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991093"
 ---
 # <a name="iapplicationdebuggerui-interface"></a>IApplicationDebuggerUI 接口
 由调试器集成的开发环境 (IDE) 实现 (除了`IApplicationDebugger`) 提供更好地控制调试器的用户界面 (UI) 的外部组件。  

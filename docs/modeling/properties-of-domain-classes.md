@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb66a0d497c86091f689f119e57a5230f125e8de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999194"
 ---
 # <a name="properties-of-domain-classes"></a>域类的属性
 域类具有下表中的属性。 域类的相关信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -27,7 +27,7 @@ ms.locfileid: "55938119"
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|`False`|
 |继承修饰符|介绍的从域类生成的源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|`none`|
 |基类|如果此域类派生，类的基类的名称。|\<none>|
-|name|此域类的名称。|当前名称|
+|名称|此域类的名称。|当前名称|
 |命名空间|此域类的命名空间。|当前命名空间|
 |说明|此域类相关联的非正式说明。|\<none>|
 |描述|用于记录生成的设计器的 UI 说明。|\<none>|

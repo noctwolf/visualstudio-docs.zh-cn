@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445086"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>如何：使用并行监视窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60050305"
 - 可配置的列，可显示计算机、进程、平铺、任务和线程。  
   
   > [!TIP]
-  >  必须打开**并行任务**窗口中显示中的任务信息**并行监视**窗口。  
+  > 必须打开**并行任务**窗口中显示中的任务信息**并行监视**窗口。  
   
 - **\<添加监视 >** 列中，您可以在其中输入要监视的表达式。  
   
@@ -90,4 +90,4 @@ ms.locfileid: "60050305"
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)   
- [演练：调试C++AMP 应用程序](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [演练：调试 C++ AMP 应用程序](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

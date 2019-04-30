@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 390742c7b9dea5b39432a5998ec367555700d890
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75d45f4aacad052d587950e5656dd74f153eba21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446142"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Project Settings for a Visual Basic Debug Configuration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58934721"
 可以在“属性页”窗口中更改 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 调试配置的项目设置，这在[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中进行了探讨。 下表显示“属性页”窗口中与调试器有关的设置的位置。  
   
 > [!WARNING]
->  本主题不适用于应用商店应用。 请参阅[启动调试会话 (VB、 C#、 c + + 和 XAML）](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+> 本主题不适用于应用商店应用。 请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>“调试”选项卡  
   

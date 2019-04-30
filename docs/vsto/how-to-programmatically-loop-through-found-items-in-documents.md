@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 22f8035cc7c1b09e7fd54f3c10842237ee6273b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812405"
 ---
 # <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以编程方式遍历在文档中找到的项
   <xref:Microsoft.Office.Interop.Word.Find>类具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>属性，它返回**true**每当找到搜索的项。 你可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法循环访问在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有实例。

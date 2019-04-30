@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927902"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;元素 （引导程序）
 `InstallChecks`元素支持启动各种对本地计算机以确保所有适当的应用程序的必备组件都已安装的测试。

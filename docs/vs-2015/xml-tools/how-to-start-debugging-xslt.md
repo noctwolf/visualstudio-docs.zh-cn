@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3067b86c7474858379a26803e6809b1c21f8d21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433095"
 ---
 # <a name="how-to-start-debugging-xslt"></a>如何：开始调试 XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60104091"
  也可以在调试应用程序的同时进入并逐行执行 XSLT。 在 <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> 调用中按 F11 键时，调试程序可以进入并逐行执行 XSLT 代码。  
   
 > [!NOTE]
->  不支持从 <xref:System.Xml.Xsl.XslTransform> 类进入并逐行执行 XSLT。 <xref:System.Xml.Xsl.XslCompiledTransform> 类是唯一支持在调试的同时进入并逐行执行 XSLT 的 XSLT 处理器。  
+> 不支持从 <xref:System.Xml.Xsl.XslTransform> 类进入并逐行执行 XSLT。 <xref:System.Xml.Xsl.XslCompiledTransform> 类是唯一支持在调试的同时进入并逐行执行 XSLT 的 XSLT 处理器。  
   
 #### <a name="to-start-debugging-an-xslt-application"></a>开始调试 XSLT 应用程序  
   

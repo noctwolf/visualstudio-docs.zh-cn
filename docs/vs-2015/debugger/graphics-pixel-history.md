@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420073"
 ---
 # <a name="graphics-pixel-history"></a>图形像素历史记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，
 3. 在感兴趣的基元下，点击着色器标题链接 - 例如，点击链接“顶点着色器 obj:30”查看顶点着色器源代码。  
   
     > [!TIP]
-    >  对象编号“obj:30”用于在整个图形分析器界面中（如对象表和“管道阶段”窗口中）标识此着色器。  
+    > 对象编号“obj:30”用于在整个图形分析器界面中（如对象表和“管道阶段”窗口中）标识此着色器。  
   
 ##### <a name="to-debug-a-shader"></a>调试着色器  
   

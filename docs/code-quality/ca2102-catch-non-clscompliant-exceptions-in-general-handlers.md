@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545767"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102:在常规处理程序中捕捉非 CLSCompliant 异常
 
@@ -39,7 +39,7 @@ ms.locfileid: "55923703"
 
 - C#：`catch {}`
 
-- C + +:`catch(...) {}`或 `catch(Object^) {}`
+- C++:`catch(...) {}`或 `catch(Object^) {}`
 
 在 catch 块中删除以前允许的权限时，未处理的非 CLS 兼容异常将成为安全问题。 未捕获非 CLS 兼容异常，因为可以使用提升的权限运行恶意方法引发非 CLS 兼容异常。
 

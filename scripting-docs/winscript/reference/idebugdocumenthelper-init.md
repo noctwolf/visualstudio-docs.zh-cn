@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000988"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
 `Init`方法初始化使用名称和初始属性的调试文档帮助程序。  
@@ -54,7 +54,7 @@ HRESULT Init(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

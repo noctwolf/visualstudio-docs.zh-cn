@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 744407f129c85f4e083007186dd167e39401d850
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961932"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用域特定语言资源管理器
 **DSL 资源管理器**树视图中显示多种类型的信息。 有关 DSL 资源管理器中的项的大多数详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。

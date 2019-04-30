@@ -10,12 +10,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441529"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>安装后必须运行的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58936748"
 如果通过某一.msi 文件部署您的扩展插件，则必须运行`devenv /setup`作为您的安装顺序 for Visual Studio 以发现你的扩展的一部分。  
   
 > [!NOTE]
->  本主题中的信息适用于查找 DevEnv 使用 Visual Studio 2008 及更早版本。 有关如何发现具有更高版本的 Visual Studio DevEnv 的信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
+> 本主题中的信息适用于查找 DevEnv 使用 Visual Studio 2008 及更早版本。 有关如何发现具有更高版本的 Visual Studio DevEnv 的信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
   
 ## <a name="finding-devenvexe"></a>查找 devenv.exe  
  您可以找到每个版本的 devenv.exe 从注册表值[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]编写安装程序，使用 RegLocator 表和 AppSearch 表作为属性存储的注册表值。 有关详细信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
@@ -59,7 +59,7 @@ ms.locfileid: "58936748"
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>若要运行 devenv.exe 的 CustomAction 表行  
   
-|操作|类型|源|Target|  
+|操作|类型|Source|Target|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
@@ -69,7 +69,7 @@ ms.locfileid: "58936748"
  到 InstallExecuteSequence 表进行的安装过程的执行计划，必须编写自定义操作。 使用条件列的每一行中的相应属性以防止从正在运行，如果自定义操作的版本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]系统上未安装。  
   
 > [!NOTE]
->  `Null` 属性的计算结果为`False`在条件中使用时。  
+> `Null` 属性的计算结果为`False`在条件中使用时。  
   
  每个自定义操作序列列的值取决于你的 Windows 安装程序包中的其他序列值。 序列值应该是这样，在之前的 InstallFinalize 标准操作到尽可能接近 devenv.exe 自定义操作以运行。  
   

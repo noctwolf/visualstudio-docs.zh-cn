@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442850"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110487"
 通过使用文本模板，可以创建报表文件、 源代码文件和其他基于特定于域的语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时你正在调试你的 DSL 中，将在实验模式下工作，还将具有在其部署 DSL 的计算机上工作。  
   
 > [!NOTE]
->  创建 DSL 解决方案、 示例文本模板时 **\*.tt**调试的项目中生成文件。 当您更改的域类的名称时，这些模板将不再起作用。 然而，它们包括所需的基本指令，并且提供了示例，可以更新以匹配你的 DSL。  
+> 创建 DSL 解决方案、 示例文本模板时 **\*.tt**调试的项目中生成文件。 当您更改的域类的名称时，这些模板将不再起作用。 然而，它们包括所需的基本指令，并且提供了示例，可以更新以匹配你的 DSL。  
   
  若要从文本模板访问模型：  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> 从文本模板访问多个模型  
   
 > [!NOTE]
->  此方法允许你读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取的 ModelBus 引用连接符的模型，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
+> 此方法允许你读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取的 ModelBus 引用连接符的模型，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。  
   
  如果你想要从相同的文本模板访问多个模型，则必须调用生成的指令处理器一次为每个模型。 必须指定每个模型中的文件名称`requires`参数。 必须指定要用于中的根域类的名称`provides`参数。 必须指定不同的值`provides`中每个指令调用的参数。 例如，假定您有三个名为 Library.xyz、 School.xyz 和 Work.xyz 的模型文件。 若要从相同的文本模板访问它们，必须编写类似于以下的三个指令调用。  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  此示例代码是一种语言，根据最小语言解决方案模板。  
+> 此示例代码是一种语言，根据最小语言解决方案模板。  
   
  若要访问在文本模板中的模型，现在可以在下面的示例中编写代码的代码相似。  
   

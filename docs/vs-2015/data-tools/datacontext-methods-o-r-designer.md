@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431138"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法（O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False 和自
  映射到存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法显示在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]的方法窗格中。 方法窗格是沿的侧窗格**实体**窗格 （主设计图面）。 方法窗格列出使用 <xref:System.Data.Linq.DataContext>创建的所有 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 方法。 默认情况下，方法窗格为空;将存储的过程或函数从拖动**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]创建<xref:System.Data.Linq.DataContext>方法并填充方法窗格。 有关详细信息，请参阅[如何：创建映射到存储过程和函数的 DataContext 方法（O/R 设计器）](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)。  
   
 > [!NOTE]
->  打开和关闭方法窗格中右键单击[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，然后单击**隐藏方法窗格**或**显示方法窗格**，或使用键盘快捷方式 CTRL + 1。  
+> 打开和关闭方法窗格中右键单击[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，然后单击**隐藏方法窗格**或**显示方法窗格**，或使用键盘快捷方式 CTRL + 1。  
   
 ## <a name="two-types-of-datacontext-methods"></a>DataContext 方法的两种类型  
  DataContext 方法指的是那些映射到数据库中的存储过程和函数的方法。 您可以在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 的方法窗格上创建并添加 DataContext 方法。 有两种不同类型的 <xref:System.Data.Linq.DataContext> 方法；一种会返回一个或多个结果集，而另一种则不会：  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False 和自
  当您将存储的过程和函数从**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，生成的返回类型<xref:System.Data.Linq.DataContext>方法不同具体取决于项的放置位置。 如果直接将项放在现有实体类上，则将创建具有该实体类返回类型的 <xref:System.Data.Linq.DataContext> 方法；如果将项放在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]（任一窗格）的空白区域，则将创建返回自动生成类型的 <xref:System.Data.Linq.DataContext> 方法。 创建的自动生成类型的名称与存储过程或函数名称匹配，属性映射到存储过程或函数返回的字段。  
   
 > [!NOTE]
->  在将 <xref:System.Data.Linq.DataContext> 方法添加到方法窗格后可以更改该方法的返回类型。 若要检查或更改 <xref:System.Data.Linq.DataContext> 方法的返回类型，请选中该方法并在“属性”窗口中检查“返回类型”属性。 有关详细信息，请参阅[如何：更改 DataContext 方法的返回类型（O/R 设计器）](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。  
+> 在将 <xref:System.Data.Linq.DataContext> 方法添加到方法窗格后可以更改该方法的返回类型。 若要检查或更改 <xref:System.Data.Linq.DataContext> 方法的返回类型，请选中该方法并在“属性”窗口中检查“返回类型”属性。 有关详细信息，请参阅[如何：更改 DataContext 方法的返回类型（O/R 设计器）](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。  
   
  从数据库拖动到 O/R 设计器图面上的对象将根据数据库中的对象的名称自动命名。 如果您多次拖动同一个对象，将会在新名称的末尾追加一个数字来区别名称。 如果数据库对象名称包含空格或 Visual Basic 或 C# 中不支持的字符，将使用下划线替代空格或无效字符。  
   

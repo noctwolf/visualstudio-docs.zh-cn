@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442377"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
@@ -294,7 +294,7 @@ DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使
          设置其名称，例如**城镇**。
 
         > [!NOTE]
-        >  除了根模型的每个域类必须至少一个嵌入关系的目标或它必须继承自目标的一个嵌入的类。 出于此原因，它是通常比较方便使用的嵌入关系工具创建域类。
+        > 除了根模型的每个域类必须至少一个嵌入关系的目标或它必须继承自目标的一个嵌入的类。 出于此原因，它是通常比较方便使用的嵌入关系工具创建域类。
 
     2. 将域属性添加到新类，例如**名称**。
 
@@ -305,7 +305,7 @@ DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使
          ![DSL 定义片段：家谱根目录](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  引用关系到另一个从模型树的一部分表示交叉引用。
+        > 引用关系到另一个从模型树的一部分表示交叉引用。
 
 3. 添加形状以表示城市分类模型关系图上。
 

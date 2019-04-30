@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5f210d3f0f8f2a9d28abee3d1956a3b4d09038a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918089"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 使[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]UI 来显示内的文本**传输信息**一部分**附加到进程**对话框。

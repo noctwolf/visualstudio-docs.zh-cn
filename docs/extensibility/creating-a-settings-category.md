@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411339"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 
@@ -46,7 +46,7 @@ ms.locfileid: "60100581"
      该名称的类别"My Category"、 对象"我的设置"，和类别说明"OptionInteger 和 OptionFloat"，这将创建资源。
 
     > [!NOTE]
-    >  这三个字段，仅类别名称中没有**导入和导出设置**向导。
+    > 这三个字段，仅类别名称中没有**导入和导出设置**向导。
 
 3. 在中*MyToolsOptionsPackage.cs*，添加`float`名为属性`OptionFloat`到`OptionPageGrid`类，如以下示例所示。
 
@@ -76,7 +76,7 @@ ms.locfileid: "60100581"
     ```
 
     > [!NOTE]
-    >  `OptionPageGrid`现在名为"My Category"类别包含两个属性，`OptionInteger`和`OptionFloat`。
+    > `OptionPageGrid`现在名为"My Category"类别包含两个属性，`OptionInteger`和`OptionFloat`。
 
 4. 添加<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>到`MyToolsOptionsPackage`类并为其提供 CategoryName"My Category"，为其提供的对象名"我的设置"，并将 isToolsOptionPage 设置为 true。 设置 categoryResourceID、 objectNameResourceID 和 DescriptionResourceID 为 Id 前面创建的相应字符串资源。
 

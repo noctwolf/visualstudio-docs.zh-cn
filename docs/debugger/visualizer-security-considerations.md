@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a79abb14c6c5eaa47dfacc42f0b1d50b0dadd1c5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929444"
 ---
 # <a name="visualizer-security-considerations"></a>可视化工具安全注意事项
 编写可视化工具伴有可能的安全威胁。 目前尚未发现利用这些潜在威胁的攻击，但是开发人员应该密切关注此类攻击并采取此处所描述的相应安全预防措施，以防止在将来受到攻击。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965049"
 ---
 # <a name="walkthrough-outlining"></a>演练：大纲显示
 设置基于语言的功能，例如通过定义类型的文本区域，你想要展开或折叠大纲显示。 可以在语言服务的上下文中定义的区域或定义自己的文件名称扩展和内容类型和将区域定义应用于只为该类型，或适用于现有内容类型 （例如"text") 的区域定义。 本演练演示如何定义和显示大纲区域。

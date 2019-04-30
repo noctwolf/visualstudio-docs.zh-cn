@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007461"
 ---
 # <a name="illegal-assignment-javascript"></a>非法赋值 (JavaScript)
 你试图将值分配为只读的标识符。 不能将值分配到只读的标识符。 例如，主机定义的对象和外部 COM 对象。  

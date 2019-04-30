@@ -13,11 +13,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 08a70bc02268e5814982f76cd91dc5d2e2e1cac2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547086"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  该方法的 ID。  
   
- [C + +]`_mdToken`是`typedef`适用于 32 位`int`。  
+ [C++]`_mdToken`是`typedef`适用于 32 位`int`。  
   
  dwOffset  
  从类开始到此方法 （可以代表偏移量到 vtable） 的偏移量。  

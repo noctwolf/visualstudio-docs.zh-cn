@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415498"
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何：添加标准文本标记
 使用以下过程来创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。
@@ -27,7 +27,7 @@ ms.locfileid: "60060080"
      在此方法调用中，指定标记类型，范围内的文本，通过创建标记和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。 然后将此方法返回指向到新创建的文本标记。 标记类型取自<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>枚举。 指定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口如果你想要通知的标记事件。
 
     > [!NOTE]
-    >  在主 UI 线程上创建文本标记。 核心编辑器依赖于要创建文本标记的文本缓冲区的内容，而文本缓冲区不是线程安全。
+    > 在主 UI 线程上创建文本标记。 核心编辑器依赖于要创建文本标记的文本缓冲区的内容，而文本缓冲区不是线程安全。
 
 ## <a name="add-a-custom-command"></a>添加自定义命令
  实现`IVsTextMarkerClient`接口并向其提供一个指针，从标记增强了几种方式标记行为。 首先，这允许您在标记为提供提示，并执行命令。 这还允许您以接收各个标记的事件通知，并通过标记创建自定义上下文菜单。 使用以下过程将自定义命令添加到标记上下文菜单。

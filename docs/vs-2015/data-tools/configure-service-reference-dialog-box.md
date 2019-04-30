@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437013"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60114140"
 **配置服务引用**对话框中，您可以配置的行为[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]服务。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  要访问“配置服务引用”对话框，请右键单击“解决方案资源管理器”中的服务引用，然后选择“配置服务引用”。 还可以通过单击“添加服务引用对话框”中的“高级”按钮来访问该对话框。  
   
@@ -51,13 +51,13 @@ ms.locfileid: "60114140"
  用于更新服务引用在其中查找服务的 Web 地址。 例如，在开发过程中服务可能承载在开发服务器上，之后又移到了生产服务器上，因而需要进行地址更改。  
   
 > [!NOTE]
->  从“添加服务引用”对话框中显示“配置服务引用”对话框时，“地址”元素不可用 。  
+> 从“添加服务引用”对话框中显示“配置服务引用”对话框时，“地址”元素不可用 。  
   
  **生成的类的访问级别**  
  确定 WCF 客户端类的代码访问级别。  
   
 > [!NOTE]
->  对于网站项目，该选项将始终设置为 `Public`，并且无法更改。 有关详细信息，请参阅[的服务引用的疑难解答](../data-tools/troubleshooting-service-references.md)。  
+> 对于网站项目，该选项将始终设置为 `Public`，并且无法更改。 有关详细信息，请参阅[的服务引用的疑难解答](../data-tools/troubleshooting-service-references.md)。  
   
  **生成异步操作**  
  确定 WCF 服务的方法是同步调用（默认）还是异步调用。  
@@ -90,10 +90,10 @@ ms.locfileid: "60114140"
  显示[NIB:添加 Web 引用对话框](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)。  
   
 > [!NOTE]
->  此选项只应该用于针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 版的项目。  
+> 此选项只应该用于针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 版的项目。  
   
 > [!NOTE]
->  **添加 Web 引用**按钮是否时才可用**配置服务引用**对话框中显示从**添加服务引用对话框**。  
+> **添加 Web 引用**按钮是否时才可用**配置服务引用**对话框中显示从**添加服务引用对话框**。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：添加、 更新或删除服务引用](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415496"
 ---
 # <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义实现。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记略有标记语言分析器认为不正确并波浪或波浪红线的文本。 此指标帮助程序员通过直观地显示不正确的代码。
@@ -45,7 +45,7 @@ ms.locfileid: "60078210"
 1. 正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。
 
     > [!NOTE]
-    >  有关方法的提示、 语句完成、 错误标记等，可以使用的相同命令筛选器。
+    > 有关方法的提示、 语句完成、 错误标记等，可以使用的相同命令筛选器。
 
 2. 当筛选器收到一个事件，指示已移动到另一个行时，创建任务，检查有错误。
 

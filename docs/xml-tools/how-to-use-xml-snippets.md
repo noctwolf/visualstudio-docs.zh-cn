@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002052"
 ---
-# <a name="how-to-use-xml-snippets"></a>如何：使用 XML 代码段
+# <a name="how-to-use-xml-snippets"></a>如何：使用 XML 片段
 
 可以通过使用 XML 编辑器快捷菜单上的以下两个命令调用 XML 代码段。 **插入代码段**命令将在光标位置处插入 XML 代码段。 **Surround With**命令包装所选文本环绕 XML 代码段。 每个 XML 代码段具有指定的代码段类型。 代码段类型确定是否使用可用代码片段**插入代码段**命令， **Surround With**命令还是两个。
 
@@ -98,7 +98,7 @@ ms.locfileid: "57526212"
 
 3. 从列表中使用鼠标，或通过键入代码片段和按名称选择代码片段**选项卡**或**Enter**。
 
-## <a name="use-xml-snippets"></a>使用 XML 代码段
+## <a name="use-xml-snippets"></a>使用 XML 片段
 
 选择了 XML 代码段后，代码段的文本将自动插入光标位置。 代码段中的任何可编辑字段都将突出显示，并自动选中第一个可编辑字段。 当前选中的字段将框选。
 

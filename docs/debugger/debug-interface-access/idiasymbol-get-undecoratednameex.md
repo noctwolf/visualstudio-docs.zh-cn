@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400568"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
-检索部分或全部 c + + 的未修饰名称修饰 （链接） 名称。
+检索部分或全部的未修饰名称C++修饰 （链接） 名称。
 
 ## <a name="syntax"></a>语法
 
@@ -38,21 +38,21 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out]返回未修饰的名为 c + + 修饰名。
+[out]返回的未修饰的名称C++修饰名。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="remarks"></a>备注
  `undecorateOptions`可以是下列标志的组合。
 
 > [!NOTE]
->  标记名称未定义在 DIA SDK 中，因此您需要将声明添加到你的代码，或使用原始值。
+> 标记名称未定义在 DIA SDK 中，因此您需要将声明添加到你的代码，或使用原始值。
 
-|Flag|“值”|说明|
+|Flag|“值”|描述|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|启用完全 undecoration。|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|从删除前导下划线 Microsoft 扩展关键字。|

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556684"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：将自定义 SharePoint 节点添加到服务器资源管理器
   可以添加自定义节点下的**SharePoint 连接**中的节点**服务器资源管理器**。 当你想要显示的不会显示在其他 SharePoint 组件时，这是很有用**服务器资源管理器**默认情况下。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

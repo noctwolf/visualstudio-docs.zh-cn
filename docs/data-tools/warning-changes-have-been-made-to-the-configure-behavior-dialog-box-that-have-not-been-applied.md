@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565168"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：对“配置行为”对话框进行了更改但未应用这些更改
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：尚未应用对“配置行为”对话框所做的更改
 
 警告。 尚未应用对“配置行为”对话框所做的更改。 是否要应用您所做的更改?
 

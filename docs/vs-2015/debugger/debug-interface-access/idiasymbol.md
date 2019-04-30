@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447231"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  下表显示的方法`IDiaSymbol`。  
   
 > [!NOTE]
->  符号将为仅其中的某些方法，具体取决于符号的类型返回有意义的数据。 如果方法返回`S_OK`，则该方法具有返回有意义的数据。  
+> 符号将为仅其中的某些方法，具体取决于符号的类型返回有意义的数据。 如果方法返回`S_OK`，则该方法具有返回有意义的数据。  
   
 |方法|描述|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  此示例演示如何在给定的相对虚拟地址处显示函数的局部变量。 它还显示如何彼此相关的不同类型的符号。  
   
 > [!NOTE]
->  `CDiaBSTR` 是一个类，包装`BSTR`和实例化超出范围时释放该字符串将自动处理。  
+> `CDiaBSTR` 是一个类，包装`BSTR`和实例化超出范围时释放该字符串将自动处理。  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

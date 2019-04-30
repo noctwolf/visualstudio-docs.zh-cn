@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 87a2b604b27b58c40f1ba1ad8628fe2be06701e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860354"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
 
@@ -29,7 +29,7 @@ ms.locfileid: "56695786"
 | 服务 | 接口 | Visual Studio | Visual Studio 2005 | 描述 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 使用 Vspackage 获取<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>ActiveX 控件以便于异步数据传输中的接口。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化的设计时可扩展性 (DTE) 对象。<br /><br /> C/C + + ID:SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化的设计时可扩展性 (DTE) 对象。<br /><br /> C /C++ ID:SID_SDTE |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | 是 | 是 | 由窗体设计器以显示控件的默认事件处理程序实现。 |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | 是 | 是 | 允许 VSPackage 来访问另一个 VSPackage 或控件的自动化接口。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | 是 | 是 | 允许 VSPackage 来添加或创建一个扩展的类型库。 |

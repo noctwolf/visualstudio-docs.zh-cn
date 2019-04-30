@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424802"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练：自定义实体类的插入、更新和删除行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60112112"
 2. 将项目命名**UpdatingwithSProcsWalkthrough**。  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 和 C# 项目都支持 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 因此，请使用这两种语言之一创建新项目。  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 和 C# 项目都支持 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 因此，请使用这两种语言之一创建新项目。  
   
 3. 单击**Windows 窗体应用程序**模板，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60112112"
      将创建一个名为“Customer”的实体类。 该类具有与 Customers 表中的列相对应的属性。 由于该实体类表示 Customers 表中的单个客户，因此将该类命名为“Customer”（而不是“Customers”）。  
   
     > [!NOTE]
-    >  这种重命名行为称为“复数化”。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何：打开和关闭复数形式（O/R 设计器）](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。  
+    > 这种重命名行为称为“复数化”。 可以通过启用或禁用[选项对话框](../ide/reference/options-dialog-box-visual-studio.md)。 有关详细信息，请参阅[如何：打开和关闭复数形式（O/R 设计器）](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)。  
   
 3. 在“生成”菜单上单击“生成 UpdatingwithSProcsWalkthrough”以生成该项目。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "60112112"
 7. 展开“UpdatingwithSProcsWalkthrough”节点，然后找到并选择“Customer”类。  
   
     > [!NOTE]
-    >  如果“Customer”类不可用，则退出向导，生成项目，然后重新运行向导。  
+    > 如果“Customer”类不可用，则退出向导，生成项目，然后重新运行向导。  
   
 8. 单击“完成”以创建数据源，并将“Customer”实体类添加到“数据源”窗口。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60112112"
 2. 从**数据源**窗口中，拖动**客户**节点拖到 Form1 上的。  
   
     > [!NOTE]
-    >  若要显示“数据源”窗口，请单击“数据”菜单上的“显示数据源”。  
+    > 若要显示“数据源”窗口，请单击“数据”菜单上的“显示数据源”。  
   
 3. 在代码编辑器中打开 Form1。  
   
@@ -192,7 +192,7 @@ ms.locfileid: "60112112"
 9. 单击“应用”保存所选择的类和行为的配置。  
   
     > [!NOTE]
-    >  只要在每次更改后单击“应用”，就可以继续为每个类/行为组合配置行为。 如果您更改的类或行为之前单击**应用**、 提供商机应用任何更改将出现一个警告对话框。  
+    > 只要在每次更改后单击“应用”，就可以继续为每个类/行为组合配置行为。 如果您更改的类或行为之前单击**应用**、 提供商机应用任何更改将出现一个警告对话框。  
   
 10. 在“行为”列表中选择“更新”。  
   
@@ -205,7 +205,7 @@ ms.locfileid: "60112112"
 13. 将“Original_CustomerID”方法参数映射到“CustomerID (Original)”类属性。  
   
     > [!NOTE]
-    >  默认情况下，当名称匹配时，方法自变量会映射到类属性。 如果属性名称发生更改并且在表与实体类之间不再匹配，则在 O/R 设计器无法确定正确的映射时，您可能必须选择等效的类属性进行映射。 此外，如果方法参数没有用于进行映射的有效类属性，则可以将“类属性”值设置为“(无)”。  
+    > 默认情况下，当名称匹配时，方法自变量会映射到类属性。 如果属性名称发生更改并且在表与实体类之间不再匹配，则在 O/R 设计器无法确定正确的映射时，您可能必须选择等效的类属性进行映射。 此外，如果方法参数没有用于进行映射的有效类属性，则可以将“类属性”值设置为“(无)”。  
   
 14. 单击“应用”保存所选择的类和行为的配置。  
   
@@ -220,7 +220,7 @@ ms.locfileid: "60112112"
 19. 单击 **“确定”**。  
   
 > [!NOTE]
->  在本演练中，虽然以下事实并不会产生问题，但仍然需要注意：[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 会在插入和更新操作期间自动为标识（自动递增）列、rowguidcol（数据库生成的 GUID）列以及时间戳列处理数据库生成的值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
+> 在本演练中，虽然以下事实并不会产生问题，但仍然需要注意：[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 会在插入和更新操作期间自动为标识（自动递增）列、rowguidcol（数据库生成的 GUID）列以及时间戳列处理数据库生成的值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
 ## <a name="testing-the-application"></a>测试应用程序  
  再次运行应用程序以验证“UpdateCustomers”存储过程是否能够正确更新数据库中的客户记录。  

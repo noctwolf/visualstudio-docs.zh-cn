@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445922"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60087516"
 3. 如果结果显示覆盖率较低，请调查代码的哪些部分没有执行测试，并编写更多测试来覆盖它们。 开发团队通常以大约 80% 的代码覆盖率为目标。 在某些情况下，较低的覆盖率是可接受的。 例如，当某代码是从标准模板生成时，可接受较低的覆盖率。  
   
 > [!TIP]
->  若要获得准确的结果：  
+> 若要获得准确的结果：  
 > 
 > - 确保关闭编译器优化。  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - 必须通过设置编译器选项或使用 `#pragma managed(off)` 将排除编译为非托管（本机）代码。  
   
 > [!NOTE]
->  若要排除 C++/CLI 代码中的函数，应对函数应用特性 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]`。 这与 C# 中的做法相同。  
+> 若要排除 C++/CLI 代码中的函数，应对函数应用特性 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]`。 这与 C# 中的做法相同。  
   
 ### <a name="including-or-excluding-additional-elements"></a>包括或排除其他元素  
  仅对已加载并且在 .dll 或 .exe 文件所在相同目录中有可用的 .pdb 文件的程序集执行代码覆盖率分析。 因此，在某些情况下，可以通过获取适当的 .pdb 文件的副本来扩展包含的一组程序集。  

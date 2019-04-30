@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73bbfc4557324a221e993ed51c300b6924abd6c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3d5033bc9953aa00efb950eabce5e7346952f9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444157"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>如何：调用工作流调试器
 通常，您可以像调试用其他 Visual Studio 编程语言编写的程序那样调试工作流。 可通过以下方法启动工作流调试器：  
@@ -26,7 +26,7 @@ ms.locfileid: "60099515"
 - 使用远程调试。 有关使用远程调试的信息，请参阅[如何：启用远程调试](http://go.microsoft.com/fwlink/?LinkId=196257)。  
   
     > [!NOTE]
-    >  如果工作流应用程序针对 x86 体系结构并位于运行 64 位操作系统的计算机上远程调试将不工作，除非[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]工作流应用程序更改为安装在远程计算机或目标上**任何 CPU**。  
+    > 如果工作流应用程序针对 x86 体系结构并位于运行 64 位操作系统的计算机上远程调试将不工作，除非[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]工作流应用程序更改为安装在远程计算机或目标上**任何 CPU**。  
   
 ### <a name="stepping-through-code"></a>逐句通过代码  
   

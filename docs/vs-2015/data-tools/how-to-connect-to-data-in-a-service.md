@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386114"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60090376"
  在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。  
   
 > [!NOTE]
->  “数据源”窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，则显示任何项中**数据源窗口**完成该向导时。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。  
+> “数据源”窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，则显示任何项中**数据源窗口**完成该向导时。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60090376"
 4. （可选） 一个新**Namespace**可以替代默认值类型。  
   
     > [!NOTE]
-    >  单击**高级**以打开[配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)。  
+    > 单击**高级**以打开[配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)。  
   
 5. 单击**确定**添加到你的项目的服务引用。  
   

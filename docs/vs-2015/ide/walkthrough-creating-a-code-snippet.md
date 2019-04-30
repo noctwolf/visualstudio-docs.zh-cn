@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388335"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>演练：创建代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109798"
 只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 使用代码片段管理器（工具/代码片段管理器）上的“导入”按钮，即可向自己的 Visual Studio 安装添加代码片段。  
   
 > [!TIP]
->  有关如何更轻松地编写代码片段，如搜索 CodePlex 网站获取的社区工具[Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033)。  
+> 有关如何更轻松地编写代码片段，如搜索 CodePlex 网站获取的社区工具[Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033)。  
   
 ## <a name="snippet-template"></a>代码片段模板  
  以下是基本代码片段模板：  

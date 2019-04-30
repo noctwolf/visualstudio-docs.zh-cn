@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443002"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>定向图形标记语言 (DGML) 引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60106015"
  请注意，某些版本的 Visual Studio 支持仅部分 DGML 功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!NOTE]
->  在编辑 .dgml 文件时，IntelliSense 可帮助您标识对每个元素及其值可用的特性。 若要指定特性中的颜色，请使用常用颜色的名称，如“Blue”或 ARGB 十六进制值（如“#ffa0b1c3”）。 DGML 使用一小部分 Windows Presentation Foundation (WPF) 颜色定义格式。 有关详细信息，请参阅[颜色类](http://go.microsoft.com/fwlink/?LinkId=182345)。  
+> 在编辑 .dgml 文件时，IntelliSense 可帮助您标识对每个元素及其值可用的特性。 若要指定特性中的颜色，请使用常用颜色的名称，如“Blue”或 ARGB 十六进制值（如“#ffa0b1c3”）。 DGML 使用一小部分 Windows Presentation Foundation (WPF) 颜色定义格式。 有关详细信息，请参阅[颜色类](http://go.microsoft.com/fwlink/?LinkId=182345)。  
   
 ## <a name="DGML"></a> DGML 语法  
  下表描述在 DGML 中使用的各种元素：  
@@ -70,7 +70,7 @@ ms.locfileid: "60106015"
    此可选元素包含 `<Node/>` 元素的列表，这些元素可定义代码图上的节点。 有关更多信息，请参见 `<Node/>` 元素。  
   
   > [!NOTE]
-  >  在 `<Link/>` 元素中引用未定义的节点时，代码图会自动创建 `<Node/>` 元素。  
+  > 在 `<Link/>` 元素中引用未定义的节点时，代码图会自动创建 `<Node/>` 元素。  
   
    示例:  
   
@@ -151,7 +151,7 @@ ms.locfileid: "60106015"
    此元素定义一个用于将源节点连接到目标节点的链接。 该节点将出现在 `<Links></Links>` 元素列表内。  
   
   > [!NOTE]
-  >  如果此元素引用未定义的节点，则代码图文档将自动创建具有指定特性（如果有）的节点。  
+  > 如果此元素引用未定义的节点，则代码图文档将自动创建具有指定特性（如果有）的节点。  
   
    此元素必须包括以下特性：  
   

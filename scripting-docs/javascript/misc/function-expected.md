@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007101"
 ---
 # <a name="function-expected"></a>缺少函数
 要么你尝试调用之一**函数原型**不是对象上的方法`Function`对象，或者您的函数调用上下文中使用一个对象。 例如，下面的代码生成此错误，因为**示例**不是函数。  

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961587"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：删除文档中的托管的代码扩展
   从文档或工作簿的 Microsoft Office Word 或 Microsoft Office Excel 文档级自定义的一部分，可以以编程方式删除自定义程序集。 然后，用户可以打开的文档并查看内容，但不是会向文档添加任何自定义用户界面 (UI)，而你的代码不会运行。

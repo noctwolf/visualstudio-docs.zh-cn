@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7575368a39aa7b6306336883327e2f7b9cafa8a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d87a14143bb73e3bd370a9315cea9250be07df3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415379"
 ---
 # <a name="how-to-use-text-markers"></a>如何：使用文本标记
 文本标记可用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。
@@ -27,12 +27,12 @@ ms.locfileid: "60109707"
 1. 获取的实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>类。
 
     > [!NOTE]
-    >  核心编辑器会自动将标准文本标记应用于任何文档的编辑，并且不应需要显式应用标准文本标记。
+    > 核心编辑器会自动将标准文本标记应用于任何文档的编辑，并且不应需要显式应用标准文本标记。
 
 2. 获取通过调用感兴趣的标记的标记类型 ID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法替换`GUID`你想要使用的文本标记。
 
     > [!NOTE]
-    >  不要使用`GUID`VSPackage 或提供文本标记的服务。
+    > 不要使用`GUID`VSPackage 或提供文本标记的服务。
 
 3. 使用标记类型 ID 获取通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>作为参数来调用方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法将文本标记应用于给定文本的区域。
 

@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911890"
 ---
 # <a name="extern-element"></a>Extern 元素
-Extern 元素引用外部的所有标头 (*.h*) 要使用合并的文件 *.vsct*在编译时的文件。 要合并的文件必须位于包含路径提供给 VSCT 编译器或引用的[Include 元素](../extensibility/include-element.md)。 这些文件可能是其他 *.vsct*文件或 c + + 标头文件。
+Extern 元素引用外部的所有标头 (*.h*) 要使用合并的文件 *.vsct*在编译时的文件。 要合并的文件必须位于包含路径提供给 VSCT 编译器或引用的[Include 元素](../extensibility/include-element.md)。 这些文件可能是其他 *.vsct*文件或C++标头文件。
 
  标头文件中的定义必须是窗体的"#define [符号] [值]"的值可能是另一个符号，如果以前已定义。 定义可用于条件语句的命令项。 实际上未使用任何符号将被放弃。
 

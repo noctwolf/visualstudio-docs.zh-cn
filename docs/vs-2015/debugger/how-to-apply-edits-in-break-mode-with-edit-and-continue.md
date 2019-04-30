@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437362"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>如何：应用编辑在中断模式下使用编辑并继续
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "60069921"
      有关详细信息，请参阅[不支持在 Visual Basic 编辑并继续编辑](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)。  
   
     > [!NOTE]
-    >  如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。  
+    > 如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。  
   
 3. 在 “调试” 菜单上，单击 “继续” 继续执行。  
   

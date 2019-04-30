@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 99b57aece9b835ac1f2277fdd626a9fdff7b903f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916968"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 此接口允许的会话调试管理器 (SDM) 附加到的程序和获取与程序关联的程序节点。

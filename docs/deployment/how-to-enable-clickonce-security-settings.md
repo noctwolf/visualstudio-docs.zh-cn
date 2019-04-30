@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e52acc18aa18873076df3d02071616c0399b1f33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407120"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>如何：启用 ClickOnce 安全设置
 若要发布应用程序，必须启用 ClickOnce 应用程序的代码访问安全性。 当您发布应用程序使用发布向导时，这是自动完成。
@@ -41,7 +41,7 @@ ms.locfileid: "60068933"
      现在，您可以为安全性页上的应用程序定制的安全设置。
 
     > [!NOTE]
-    >  每次通过发布应用程序会自动选中此复选框**发布**向导。
+    > 每次通过发布应用程序会自动选中此复选框**发布**向导。
 
 ### <a name="to-disable-clickonce-security-settings"></a>若要禁用 ClickOnce 安全设置
 
@@ -54,7 +54,7 @@ ms.locfileid: "60068933"
      将使用完全信任安全设置; 运行你的应用程序上的任何设置**安全**页将被忽略。
 
     > [!NOTE]
-    >  使用发布向导发布应用程序每次将选中此复选框;每次成功发布后，您必须清除它。
+    > 使用发布向导发布应用程序每次将选中此复选框;每次成功发布后，您必须清除它。
 
 ## <a name="see-also"></a>请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

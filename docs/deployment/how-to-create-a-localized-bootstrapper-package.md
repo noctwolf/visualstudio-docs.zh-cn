@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406828"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建已本地化的引导程序包
 在创建引导程序包以后，可以通过为每个区域设置再创建两个文件（软件许可条款文件（如 eula.rtf）和包清单 (package.xml)）来创建引导程序包的本地化版本。
@@ -31,7 +31,7 @@ ms.locfileid: "60061484"
 3. 创建名为 package.xml 的包清单，更新字符串和区域性，并将该文件放入新的文件夹中。 如果已经用目标语言创建 Visual Studio 的引导程序，则可以复制 Visual Studio package.xml 文件并在此步骤中修改它。
 
 > [!NOTE]
->  如果使用安装项目来部署应用程序，则可以通过更改“本地化”属性来本地化应用程序。
+> 如果使用安装项目来部署应用程序，则可以通过更改“本地化”属性来本地化应用程序。
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952731"
 ---
 # <a name="create-sharepoint-features"></a>创建 SharePoint 功能
   SharePoint 功能可用于更轻松地部署的相关的 SharePoint 项目项进行分组。 可以创建功能、 设置作用域，并使用 SharePoint 功能设计器将其他功能标记为依赖项。 在设计器还会生成一个清单，这是一个 XML 文件，描述每个功能。

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909977"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用项目工厂创建的项目实例
 中的项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目工厂*若要创建的项目对象的实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable;它们只能通过使用项目工厂创建。

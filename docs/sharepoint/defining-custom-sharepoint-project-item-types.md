@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580779"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定义自定义 SharePoint 项目项类型
   当你想要创建一种新的 SharePoint 项目项时，请定义新的 SharePoint 项目项类型。 例如，Visual Studio 不包括添加字段或自定义操作向 SharePoint 站点的 SharePoint 项目项。 可以定义自己的用于创建字段、 自定义操作或其他类型的 SharePoint 组件的 SharePoint 项目项的类型。

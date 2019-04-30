@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417144"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何：打开项目特定的编辑器
 如果要打开的项目项文件本质上绑定到该项目的特定编辑器中，项目必须使用特定于项目的编辑器打开文件。 该文件不能被委派到 IDE 的机制，用于选择一个编辑器。 例如，而不是使用标准的位图编辑器，您可以使用此项目特定的编辑器选项来指定一个特定的位图编辑器，识别仅适用于你的项目文件中的信息。
@@ -29,7 +29,7 @@ ms.locfileid: "60053749"
 1. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法 (`RDT_EditLock`) 来确定文件 （文档数据对象） 是否已打开。
 
     > [!NOTE]
-    >  有关文档数据和文档视图对象的详细信息，请参阅[文档自定义编辑器中的数据和文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)。
+    > 有关文档数据和文档视图对象的详细信息，请参阅[文档自定义编辑器中的数据和文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)。
 
 2. 如果该文件已打开，通过调用 resurface 文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>方法，并将值指定为 IDO_ActivateIfOpen`grfIDO`参数。
 

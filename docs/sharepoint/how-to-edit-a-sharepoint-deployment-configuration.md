@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444703"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：编辑 SharePoint 部署配置
   您可以创建部署配置或修改现有的部署配置。 例如，无法运行单步执行或更改的部署过程中的步骤顺序。 您可能想要创建或修改部署配置，因为不能更改的内置和以编程方式添加了配置。
@@ -39,7 +39,7 @@ ms.locfileid: "60093704"
 4. 在**可用的部署步骤**窗格中，选择你想要添加到部署配置，请选择的步骤 (**>**) 按钮，，然后选择**确定**按钮。
 
     > [!NOTE]
-    >  如果已配置预先部署命令或后期部署命令，这些步骤将运行仅当将它们添加到自定义的部署配置。
+    > 如果已配置预先部署命令或后期部署命令，这些步骤将运行仅当将它们添加到自定义的部署配置。
 
 ## <a name="change-the-active-deployment-configuration"></a>更改活动部署配置
 

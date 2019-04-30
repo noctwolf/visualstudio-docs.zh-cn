@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908955"
 ---
 # <a name="source-control-integration-essentials"></a>源代码管理集成基础知识
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种类型的源代码管理集成： 提供基本功能，并且使用源控制插件 API （前称 MSSCCI API） 和基于 VSPackage 的源代码控制集成解决方案生成了源代码管理插件的提供了更强大的功能。

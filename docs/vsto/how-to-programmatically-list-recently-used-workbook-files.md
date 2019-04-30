@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 954a106b87d0ee941aa9c3a6c9c35579d1cb3d54
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812529"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以编程方式列出最近使用的工作簿文件
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>属性返回一个集合，包含显示最近使用的文件的 Microsoft Office Excel 列表中的所有文件的名称。 该列表的长度而异，具体取决于用户选择要保留的文件数量。 在范围内，可以显示结果。

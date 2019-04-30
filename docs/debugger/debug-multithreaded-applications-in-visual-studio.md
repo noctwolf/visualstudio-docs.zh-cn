@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f2fc8b6acd38393cf9fefb1c5581ab4d1a0712
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852926"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其授予处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。
@@ -42,9 +42,9 @@ Visual Studio 提供不同的工具用于调试多线程应用程序。
 
 - 对于线程，用于调试线程的主要工具是**线程**窗口中，源窗口中的线程标记**并行堆栈**窗口中，**并行监视**窗口中，并**调试位置**工具栏。 若要了解如何**线程**窗口和**调试位置**工具栏中，请参阅[演练：使用“线程”窗口进行调试](../debugger/how-to-use-the-threads-window.md)。 若要了解如何使用**并行堆栈**并**并行监视**windows，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 这两个主题显示如何使用线程标记。
 
-- 使用的代码[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime/)，用于调试的主要工具是**并行堆栈**窗口中， **并行监视**窗口中，并**任务**窗口中，它还支持 JavaScript。 若要开始，请参阅[演练： 调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)并[演练： 调试 c + + AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。
+- 使用的代码[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime/)，用于调试的主要工具是**并行堆栈**窗口中， **并行监视**窗口中，并**任务**窗口中，它还支持 JavaScript。 若要开始，请参阅[演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)和[演练：调试C++AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)。
 
-- 对于调试 GPU 上的线程，主要工具是“GPU 线程”窗口。 请参阅[如何： 使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)。
+- 对于调试 GPU 上的线程，主要工具是“GPU 线程”窗口。 请参阅[如何：使用 GPU 线程窗口](../debugger/how-to-use-the-gpu-threads-window.md)。
 
 - 对于进程，主要工具是“附加到进程”对话框、“进程”窗口和“调试位置”工具栏。
 

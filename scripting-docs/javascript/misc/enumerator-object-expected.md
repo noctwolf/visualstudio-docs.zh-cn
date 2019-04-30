@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946337"
 ---
 # <a name="enumerator-object-expected"></a>缺少枚举器对象
 你尝试调用**Enumerator.prototype.atEnd、 Enumerator.prototype.item、 Enumerator.prototype.moveFirst，** 或**Enumerator.prototype.moveNext**上其他类型的对象的方法比`Enumerator`。 调用此类型的对象的类型必须是`Enumerator`。 下面是代码的一个违反此规则示例：  

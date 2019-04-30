@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430703"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 网站栏、 内容类型和列表
   以下过程演示如何创建自定义 SharePoint 站点列，或*字段*— 以及使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。
@@ -112,7 +112,7 @@ ms.locfileid: "60057727"
 6. 内容类型设计器显示后，在**列**选项卡上，添加三个站点以前定义的列：**患者名称**，**患者 ID**，和**医生名称**。 若要添加这些列，请选择第一个列表框下的站点列列表中**显示名称**，然后选择每个站点列列表中一次。
 
     > [!TIP]
-    >  若要更快地选择站点列，请通过输入的列的名称的第几个字母筛选列表。
+    > 若要更快地选择站点列，请通过输入的列的名称的第几个字母筛选列表。
 
 7. 三个自定义站点列，以及添加**注释**站点列列表中的站点列。
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057727"
      自定义列表列仅适用于此列表。 当将自定义列表列添加到列表中时，新列表的内容类型，包括添加到列表中，所有列创建，并设置为默认列表。
 
     > [!TIP]
-    >  如果从站点列的列表中选择一列，则使用现有站点列。 但是，如果您输入的列名称值而不在列表中选择任何列，自定义列表创建列后，即使列表中已存在具有相同名称的列。
+    > 如果从站点列的列表中选择一列，则使用现有站点列。 但是，如果您输入的列名称值而不在列表中选择任何列，自定义列表创建列后，即使列表中已存在具有相同名称的列。
 
      （可选） 而不是设置的自定义列表列的数据类型**单个文本行**，可以改为将此列的数据类型为查找，并将从表或另一个列表检索其值。 有关查找列的信息，请参阅[SharePoint 2010 中的列表关系](http://go.microsoft.com/fwlink/?LinkId=224994)并[查找和列表关系](http://go.microsoft.com/fwlink/?LinkID=224995)。
 

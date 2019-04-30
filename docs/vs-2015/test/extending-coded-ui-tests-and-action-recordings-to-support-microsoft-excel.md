@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416469"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>扩展编码的 UI 测试和操作录制以支持 Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "54791987"
   从此[博客文章](http://go.microsoft.com/fwlink/?LinkID=185592)获取示例。  
   
 > [!NOTE]
->  该示例旨在与 Microsoft Excel 2010 配合使用。 该示例可以与其他版本的 Microsoft Excel 一起使用，但目前不支持如此。  
+> 该示例旨在与 Microsoft Excel 2010 配合使用。 该示例可以与其他版本的 Microsoft Excel 一起使用，但目前不支持如此。  
   
 ## <a name="details-about-the-sample"></a>有关该示例的详细信息  
  以下各节提供有关该示例及其结构的信息。  
@@ -51,7 +51,7 @@ ms.locfileid: "54791987"
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Microsoft Excel 外接程序：ExcelCodedUIAddinHelper  
  此项目包含在 Excel 进程中运行的外接程序。 有关外接程序项目的简要概述，请参阅[编码的 UI 测试的 Excel 外接程序示例](../test/sample-excel-add-in-for-coded-ui-testing.md)。  
   
- 有关详细信息，请参阅[演练：创建你的第一个 Excel VSTO 外接程序](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)。  
+ 有关详细信息，请参见[演练：创建第一个 VSTO 外接程序 excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)。  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Excel UI 通信：ExcelUIcommunicationHelper  
  此项目包括用于在编码的 UI 测试框架和 Excel 之间传递数据的 `IExcelUICommunication` 接口和信息类。 有关详细信息，请参阅[示例 Excel Communicator 接口](../test/sample-excel-communicator-interface.md)。  

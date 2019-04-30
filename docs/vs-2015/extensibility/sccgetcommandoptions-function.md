@@ -12,12 +12,12 @@ ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cb5290b607d20ef38481cfae9eaa3310857915f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 55d4d2cae73dd77fc601ca85ab45d969fc0e4de8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432410"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
 |SCC_I_ADV_SUPPORT|源代码管理插件支持命令的高级的选项。|  
@@ -75,7 +75,7 @@ SCCRTN SccGetCommandOptions(
  最后，当用户单击**确定**在 IDE 中**获取**对话框中，IDE 调用[SccGet](../extensibility/sccget-function.md)，并传入此结构中返回`ppvOptions`，其中包含高级的选项。  
   
 > [!NOTE]
->  该命令`SCC_COMMAND_OPTIONS`则 IDE 将显示时，将使用**选项**对话框中，使用户能够设置控制集成的工作方式的首选项。 如果源代码管理插件想要提供其自己的首选项对话框中，它可以显示它从**高级**IDE 的首选项对话框中的按钮。 在插件处于全权负责获取和保存此信息;IDE 不会使用它或对其进行修改。  
+> 该命令`SCC_COMMAND_OPTIONS`则 IDE 将显示时，将使用**选项**对话框中，使用户能够设置控制集成的工作方式的首选项。 如果源代码管理插件想要提供其自己的首选项对话框中，它可以显示它从**高级**IDE 的首选项对话框中的按钮。 在插件处于全权负责获取和保存此信息;IDE 不会使用它或对其进行修改。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   

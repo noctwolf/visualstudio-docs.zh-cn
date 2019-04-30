@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895187"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 类
 表示用于以编程方式控制图形诊断的应用内组件的接口。
@@ -29,14 +29,14 @@ class VsgDbg;
 
 ### <a name="public-constructors"></a>公共构造函数
 
-|name|说明|
+|名称|描述|
 |----------|-----------------|
 |[VsgDbg::VsgDbg（构造函数）](vsgdbg-vsgdbg-constructor.md)|构造一个实例`VsgDbg`类，并根据需要准备图形诊断来主动捕获并记录图形信息的应用内组件。|
 |[VsgDbg::~VsgDbg（析构函数）](vsgdbg-tilde-vsgdbg-destructor.md)|销毁实例`VsgDbg`类。|
 
 ### <a name="public-methods"></a>公共方法
 
-|name|说明|
+|名称|描述|
 |----------|-----------------|
 |[AddMessage](addmessage.md)|将自定义消息添加到图形诊断 HUD（提醒显示）。|
 |[BeginCapture](begincapture.md)|开始将结尾的捕获时间间隔`EndCapture`。|

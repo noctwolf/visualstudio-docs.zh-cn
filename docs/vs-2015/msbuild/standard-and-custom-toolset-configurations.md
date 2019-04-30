@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444375"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
  `VisualStudioVersion` 生成属性指示子工具集是否变为活动状态。 例如，`VisualStudioVersion` 值“12.0”指定 MSBuild 12.0 子工具集。 有关详细信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的“子工具集”一节。  
 
 > [!NOTE]
->  建议避免更改这些设置。 不过，还是可以添加自己的设置并定义计算机范围内的自定义工具集定义，这将在下一节中进行介绍。  
+> 建议避免更改这些设置。 不过，还是可以添加自己的设置并定义计算机范围内的自定义工具集定义，这将在下一节中进行介绍。  
 
 ## <a name="custom-toolset-definitions"></a>自定义工具集定义  
  当标准工具集不满足生成要求时，可以创建自定义工具集。 例如，你可能有一套生成实验室方案，方案中必须有一个单独的系统用于生成 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目。 通过使用自定义工具集，可在创建项目或运行 MSBuild.exe 时将自定义值指定为 `ToolsVersion` 属性。 这样，也可以使用 `$(MSBuildToolsPath)` 属性从该目录导入 .targets 文件，以及定义自己的自定义工具集属性，该属性可用于任何使用该工具集的项目。  
@@ -86,12 +86,12 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
 ```  
 
 > [!NOTE]
->  若要正确读取，`<configSections>` 必须是 `<configuration>` 部分中的第一个子节。  
+> 若要正确读取，`<configSections>` 必须是 `<configuration>` 部分中的第一个子节。  
 
  `ToolsetConfigurationSection` 是一个可供任意 MSBuild 主机用于自定义配置的自定义配置部分。 如果使用自定义工具集，则主机除了提供配置文件项外，无需再执行任何其他操作便可初始化生成引擎。 通过在注册表中定义这些项，可指定计算机范围内的、适用于 MSBuild.exe、[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 及所有 MSBuild 主机的工具集。  
 
 > [!NOTE]
->  如果已在注册表中定义了 `ToolsVersion` 的设置，而后又在配置文件中对其进行了定义，则这两个定义并不会合并。 配置文件中的定义具有优先权，而注册表中的 `ToolsVersion` 设置则会被忽略。  
+> 如果已在注册表中定义了 `ToolsVersion` 的设置，而后又在配置文件中对其进行了定义，则这两个定义并不会合并。 配置文件中的定义具有优先权，而注册表中的 `ToolsVersion` 设置则会被忽略。  
 
  下列属性特定于项目中所用的 `ToolsVersion` 的值：  
 

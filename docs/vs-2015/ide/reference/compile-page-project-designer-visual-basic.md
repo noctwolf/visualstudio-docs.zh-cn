@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441502"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>“编译”页, 项目设计器 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59649051"
  通过以下设置，可选择要显示或修改的配置和平台。  
   
 > [!NOTE]
->  使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+> 使用简化的生成配置，项目系统可确定是生成调试版本还是发行版本。 因此，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **配置**  
  指定要显示或修改的配置设置。 这些设置为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)和[如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)。  

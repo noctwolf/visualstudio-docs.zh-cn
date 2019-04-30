@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443105"
 ---
 # <a name="how-to-localize-aspx-markup"></a>如何：本地化 ASPX 标记
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] (.aspx) 页通常使用硬编码的字符串值。 若要本地化这些字符串，这些替换表达式引用本地化的资源。
@@ -36,7 +36,7 @@ ms.locfileid: "60057563"
     2. 若要添加的资源文件，在**解决方案资源管理器**，打开 SharePoint 项目项的快捷菜单，然后选择**添加** > **新项**。 下**Visual Basic**或**Visual C#** 节点，选择**资源文件**模板。
 
     > [!NOTE]
-    >  请确保将资源文件添加到 SharePoint 项目项以启用部署类型属性。 稍后在此过程需要此属性。 如果你的解决方案不具有 SharePoint 项目项，您可以添加一个空 SharePoint 项目和删除其默认值*Elements.xml*文件。
+    > 请确保将资源文件添加到 SharePoint 项目项以启用部署类型属性。 稍后在此过程需要此属性。 如果你的解决方案不具有 SharePoint 项目项，您可以添加一个空 SharePoint 项目和删除其默认值*Elements.xml*文件。
 
 2. 为追加与所选的指定名称的默认语言资源文件 *.resx*扩展名，例如 MyAppResources.resx。 对每个本地化资源文件使用同一基名称，但添加区域性 [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，本地化资源名称德语*MyAppResources.de-DE.resx*。
 

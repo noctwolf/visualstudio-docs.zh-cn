@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 56e57d182a21429d73b8eae0b79f96532732ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428568"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -241,7 +241,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
  在此示例中，`_Out_opt_` 声明作为前置条件的一部分，指针可以为 NULL。 但是，前置条件不能应用于返回值。 在这种情况下，正确的批注为 `_Ret_maybenull_`。  
   
 ## <a name="see-also"></a>请参阅  
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

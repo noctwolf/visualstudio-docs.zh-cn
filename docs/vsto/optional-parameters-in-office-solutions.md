@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442419"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
   Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，您不能省略可选**ref**的参数`ThisDocument`在文档级 Word 项目中的类。
@@ -33,7 +33,7 @@ ms.locfileid: "56639256"
  有关使用 Visual C# 和 Visual Basic 项目中的可选参数的详细信息，请参阅[命名参数和可选参数&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)并[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)。
 
 > [!NOTE]
->  在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual C# 项目在 Visual Studio 中的 office 仍然包含`missing`变量，但你通常不需要开发中的 Office 解决方案时使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，当您调用具有可选的方法除外**ref**中的参数`ThisDocument`Word 的文档级项目中的类。
+> 在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual C# 项目在 Visual Studio 中的 office 仍然包含`missing`变量，但你通常不需要开发中的 Office 解决方案时使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，当您调用具有可选的方法除外**ref**中的参数`ThisDocument`Word 的文档级项目中的类。
 
 ## <a name="example-in-excel"></a>Excel 中的示例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法具有多个可选参数。 可以为某些参数指定值，并接受其他参数的默认值，如下面的代码示例所示。 此示例需要一个具有名为 `Sheet1` 的工作表类的文档级项目。

@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b9b07bc801e687da9ce93968dbac59966328484
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e37125f8098d854d887c7bc5d209b30af2d12222
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409662"
 ---
 # <a name="regpkg-utility"></a>RegPkg 实用工具
 > [!NOTE]
->  在 Visual Studio 中注册包的首选的方法是通过使用.pkgdef 文件。 这样可以扩展部署而无需访问是必需的 VSIX 部署的系统注册表。 通过使用创建 Pkgdef 文件[CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)。 Visual Studio 包部署的详细信息，请参阅[传送 Visual Studio 扩展](../../extensibility/shipping-visual-studio-extensions.md)。
+> 在 Visual Studio 中注册包的首选的方法是通过使用.pkgdef 文件。 这样可以扩展部署而无需访问是必需的 VSIX 部署的系统注册表。 通过使用创建 Pkgdef 文件[CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)。 Visual Studio 包部署的详细信息，请参阅[传送 Visual Studio 扩展](../../extensibility/shipping-visual-studio-extensions.md)。
 
  RegPkg.exe 实用程序注册与 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使其准备好部署。 此实用程序在后台使用 VSPackage 开发过程。 它作为生成过程的一部分运行，以便可以生成并在实验性配置单元中运行 VSPackage。
 

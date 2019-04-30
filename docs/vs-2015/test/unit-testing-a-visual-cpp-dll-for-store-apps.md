@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445956"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>对应用商店应用的 Visual C++ DLL 进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ ms.locfileid: "60104171"
     ```  
   
     > [!TIP]
-    >  建议你不更改已通过的测试。 相反，请添加新测试，更新代码，使测试通过，然后添加其他测试，依此类推。  
+    > 建议你不更改已通过的测试。 相反，请添加新测试，更新代码，使测试通过，然后添加其他测试，依此类推。  
     >   
     >  当用户更改其要求时，请禁用不再正确的测试。 编写新测试，并以相同的增量方式使他们每次运行一个。  
   
@@ -231,7 +231,7 @@ ms.locfileid: "60104171"
      ![RangeTest 未通过](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。  
+    > 验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。  
   
 4. 增强受测代码，以便新测试通过。 将以下内容添加到 **RooterLib.cpp**：  
   
@@ -259,7 +259,7 @@ ms.locfileid: "60104171"
      两个测试均通过。  
   
 > [!TIP]
->  通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。  
+> 通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> 调试失败测试  
   
@@ -346,6 +346,6 @@ ms.locfileid: "60104171"
 2. 选择“全部运行”以测试已重构的方法，并确保你未引入回归。  
   
     > [!TIP]
-    >  一组稳定的优良单元测试可保证你在更改代码时不会引入 Bug。  
+    > 一组稳定的优良单元测试可保证你在更改代码时不会引入 Bug。  
     >   
     >  将重构更改与其他更改分开。

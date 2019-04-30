@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961134"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>如何：面向 Office 多语言用户界面
   多语言用户界面 (MUI) 是 Microsoft Office 功能，使最终用户能够更改用户界面 (UI) 的语言。 例如，最终用户使用英语 UI，可以将 UI 的语言更改为西班牙语。

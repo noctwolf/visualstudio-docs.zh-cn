@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807709"
 ---
 # <a name="xml-document-validation"></a>XML 文档验证
 
@@ -21,21 +21,21 @@ XML 编辑器检查 XML 1.0 语法，并键入时还执行数据验证。 编辑
 
  将已编译架构的 `targetNamespace` 与元素的 xmlns 声明进行匹配，可以找到验证中使用的架构。 已编译架构从下列位置之一加载（按优先级顺序列出）：
 
--   在指定的文件名称**架构**的文档字段**属性**窗口。
+- 在指定的文件名称**架构**的文档字段**属性**窗口。
 
--   内联架构或 DTD。
+- 内联架构或 DTD。
 
--   外部 DTD 或 `xsd:schemaLocation` 和 `xsd:noNamespaceSchemaLocation` 属性
+- 外部 DTD 或 `xsd:schemaLocation` 和 `xsd:noNamespaceSchemaLocation` 属性
 
--   “x-schema”XDR 架构命名空间 URI。
+- “x-schema”XDR 架构命名空间 URI。
 
 如果架构具有非空目标命名空间，在下列附加位置也可以找到架构：
 
--   包含架构的另一个编辑器窗口。
+- 包含架构的另一个编辑器窗口。
 
--   当前解决方案中的架构。
+- 当前解决方案中的架构。
 
--   架构缓存目录中的架构。
+- 架构缓存目录中的架构。
 
 ## <a name="xslt-files"></a>XSLT 文件
  编辑 XSLT 文件时*xslt.xsd*使用架构缓存中的文件进行验证。 验证错误以蓝色的波浪形下划线显示。 XSLT 编译器中的错误显示为红色的波浪形下划线。

@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444519"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60097227"
 - [跨平台完成具有本机外观的 UI](#finish)
 
 > [!TIP]
->  可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。
+> 可以在 [xamarin-forms-samples repository on GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather)（GitHub 上的 xamarin-forms-samples 存储库）中找到此项目完整的源代码。
 
 ## <a name="solution"></a> 设置你的解决方案
  这些步骤创建 Xamarin.Forms 解决方案，该方案包含共享代码的 PCL 和两个添加的 NuGet 包。
@@ -59,7 +59,7 @@ ms.locfileid: "60097227"
     - **WeatherApp.WinPhone (Windows Phone 8.1)**：包含本机 Windows Phone 代码的项目。
 
     > [!NOTE]
-    >  可随意删除你不准备面向的目标平台的任何项目。 出于本演练的目的，我们将参考 Android、iOS 和 Windows Phone 8.1 项目 处理 UWP 和 Windows 8.1 项目与处理 Windows Phone 8.1 项目非常相似。
+    > 可随意删除你不准备面向的目标平台的任何项目。 出于本演练的目的，我们将参考 Android、iOS 和 Windows Phone 8.1 项目 处理 UWP 和 Windows 8.1 项目与处理 Windows Phone 8.1 项目非常相似。
 
      在每个本机项目中，你有权访问相应平台的本机设计器，并且可以根据需要实现特定于平台的屏幕和功能。
 

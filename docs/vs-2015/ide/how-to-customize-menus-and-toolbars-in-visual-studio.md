@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416788"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094523"
 在自定义 Visual Studio 时，你不仅可以添加和移除工具栏及菜单栏上的菜单，而且还可以添加和移除与任何给定工具栏或菜单有关的命令。
 
 > [!WARNING]
->  自定义工具栏或菜单后，请确保在“自定义”对话框中继续选中其复选框。 否则，在关闭并重新打开 Visual Studio 之后，你所做的更改将不会保留。
+> 自定义工具栏或菜单后，请确保在“自定义”对话框中继续选中其复选框。 否则，在关闭并重新打开 Visual Studio 之后，你所做的更改将不会保留。
 
  **本主题内容：**
 
@@ -84,14 +84,14 @@ ms.locfileid: "60094523"
     - 若要删除自定义工具栏，请在“工具栏”列表中选择该工具栏，然后选择“删除”按钮。
 
         > [!IMPORTANT]
-        >  你可以删除自己创建的工具栏，但无法删除默认的工具栏。
+        > 你可以删除自己创建的工具栏，但无法删除默认的工具栏。
 
     - 若要将工具栏移动到其他停靠位置，请在“工具栏”列表中选择该工具栏，选择“修改所选内容”按钮，然后在随后显示的列表中选择一个位置。
 
          你也可以拖动工具栏的左边缘，将其移动到主停靠区域内的任何位置。
 
         > [!NOTE]
-        >  有关如何改进工具栏的可用性和辅助功能的详细信息，请参阅[如何：设置 IDE 辅助功能选项](../ide/reference/how-to-set-ide-accessibility-options.md)。
+        > 有关如何改进工具栏的可用性和辅助功能的详细信息，请参阅[如何：设置 IDE 辅助功能选项](../ide/reference/how-to-set-ide-accessibility-options.md)。
 
 ## <a name="bkmk_customize"></a>自定义菜单或工具栏
 

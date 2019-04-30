@@ -1,5 +1,5 @@
 ---
-title: PTVS 入门： 编辑代码 |Microsoft Docs
+title: PTVS 入门：编辑代码 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550907"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>PTVS 入门：编辑代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ from math import sin
   
 ```  
   
- 编写代码时，如果使用的是未绑定但可在库中找到的标识符，PTVS 会提供弹出式快速修补程序来添加所需的适当导入语句。  例如，如果您键入`cos`，则将显示**导入从数学**提供。  
+ 编写代码时，如果使用的是未绑定但可在库中找到的标识符，PTVS 会提供弹出式快速修补程序来添加所需的适当导入语句。  例如，如果键入 `cos`，你会看到提供了“从数学导入”。  
   
  可使用代码段生成代码。  在“编辑”菜单下，依次选择 IntelliSense 和“插入代码段”。  现在选择 Python，然后选择“定义”。调用函数 `make_dot_string` 并添加参数 `x`。  现在可将断言添加到文件用于测试驱动开发，此时 PTVS 已经可以在完成列表中提供新函数。  
   

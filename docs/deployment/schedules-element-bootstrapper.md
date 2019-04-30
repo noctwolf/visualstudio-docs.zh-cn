@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f6e4ae90dbd36dab4f4df7f72d5ecf57ee04b1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927327"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划&gt;元素 （引导程序）
 `Schedules`元素包含`Schedule`元素，用于定义在定义的命令的特定时间`Command`元素应运行。
@@ -47,7 +47,7 @@ ms.locfileid: "56639422"
 
  `Schedule` 具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 计划项的名称。 这对应于`ScheduleName`属性的`Command`元素。 当`Command`引用指定的计划，在所指示的时间，将仅执行`Schedule`元素。 此外可能与之关联的计划`FailIf`和`BypassIf`元素，将这些条件测试限制为按指定计划执行。 有关详细信息，请参阅[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)。|
 

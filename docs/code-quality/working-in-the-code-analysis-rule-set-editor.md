@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820309"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 
@@ -29,7 +29,7 @@ ms.locfileid: "55937214"
 |Error|生成中的错误**错误列表**还在生成的时间。|
 |T:System.Diagnostics.Switch|生成中的消息**错误列表**。|
 |Hidden|冲突不是对用户可见的。 IDE 通知冲突，但是。|
-|无|抑制规则。 行为是相同的像规则已移除从规则集。|
+|None|抑制规则。 行为是相同的像规则已移除从规则集。|
 
 编辑器中指定的字段组的规则的规则设置的树状结构中显示的规则。 若要添加或删除规则集中的规则，请执行一个或多个以下步骤：
 

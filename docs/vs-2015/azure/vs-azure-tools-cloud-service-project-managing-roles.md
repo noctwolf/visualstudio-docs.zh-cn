@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 391cddd0214abf1eea9e4dc20f2222a46fff6f08
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "59000808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963805"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>使用 Visual Studio 管理 Azure 云服务中的角色
 创建 Azure 云服务后，即可向其添加新角色或从中删除现有角色。 也可以导入现有项目并将其转换为角色。 例如，可以导入 ASP.NET Web 应用程序并将其指定为 Web 角色。

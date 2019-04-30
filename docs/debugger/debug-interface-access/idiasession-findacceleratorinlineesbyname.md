@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb3caa5574605864a0dd16b59b6f451530b8e631
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827785"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
 返回与指定为内联函数名称相对应的内嵌帧的符号的枚举。
@@ -47,7 +47,7 @@ HRESULT findAcceleratorInlineeLinesByName ( 
  如果成功，则返回`S_OK`; 否则为返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此函数将搜索仅在加速器存根 （stub） 函数中的内联函数。 它会忽略本机 c + + 过程记录。
+ 此函数将搜索仅在加速器存根 （stub） 函数中的内联函数。 它会忽略本机C++过程的记录。
 
 ## <a name="see-also"></a>请参阅
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

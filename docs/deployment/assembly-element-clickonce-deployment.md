@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b639a7f95cfb59844fa37963730e22ead450482
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929080"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;程序集&gt;元素 （ClickOnce 部署）
 部署清单的的顶级元素。
@@ -40,7 +40,7 @@ ms.locfileid: "56635457"
 
  `assembly` 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`manifestVersion`|必需。 此属性必须设置为`1.0`。|
 

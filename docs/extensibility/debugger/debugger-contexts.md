@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889977"
 ---
 # <a name="debugger-contexts"></a>调试器上下文
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试，调试引擎 (DE) 同时在内运行多个不同的上下文中，按如下所示：

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 31eb3427a441b4b79bbd57d9da9871118173b15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849410"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio-c-visual-basic-c"></a>如何：在 Visual Studio 中调试时切换到另一个线程 (C#，Visual Basic 中， C++)
 当调试多线程应用程序时，可以使用几种方法之一从你一直在处理到另一个线程的线程切换。

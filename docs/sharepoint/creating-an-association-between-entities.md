@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952888"
 ---
 # <a name="create-an-association-between-entities"></a>创建实体之间的关联
   可以定义您通过创建关联的业务数据连接 (BDC) 模型中实体之间的关系。 Visual Studio 生成的模型的使用者提供有关每个关联的信息的方法。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。

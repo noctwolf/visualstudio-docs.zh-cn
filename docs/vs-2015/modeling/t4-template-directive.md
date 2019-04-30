@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411454"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  还可以使用普通手写类作为基类。 基类必须提供派生类使用的方法。  
   
 > [!WARNING]
->  如果同时使用 `inherits` 和 `hostspecific` 特性，则请在派生类和基类中分别指定 hostspecific="trueFromBase" 和 host="true"。 这样可避免双重定义生成代码中的 `Host` 属性。  
+> 如果同时使用 `inherits` 和 `hostspecific` 特性，则请在派生类和基类中分别指定 hostspecific="trueFromBase" 和 host="true"。 这样可避免双重定义生成代码中的 `Host` 属性。  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>设计时文本模板中的继承  
  设计时文本模板是为其文件**自定义工具**设置为**TextTemplatingFileGenerator**。 该模板会生成代码或文本的输出文件，此文件将组成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的一部分。 若要生成输出文件，首先要将模板转换为中间程序代码文件，你通常不会看到该文件。 `inherits` 特性为此中间代码指定基类。  

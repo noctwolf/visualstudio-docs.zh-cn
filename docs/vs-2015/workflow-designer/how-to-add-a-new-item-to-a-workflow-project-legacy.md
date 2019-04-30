@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954773"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>如何：向工作流项目添加新项（旧版）
 在使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供的、面向 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 的旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 创建工作流项目之后，可向该项目添加 [!INCLUDE[wf](../includes/wf-md.md)] 项和其他熟悉的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项。  

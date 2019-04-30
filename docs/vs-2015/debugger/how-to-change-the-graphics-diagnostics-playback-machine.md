@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444822"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放计算机
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60045148"
 4. 选择“选择”按钮。  
   
 > [!NOTE]
->  **远程调试器连接**对话框还可能显示直接连接到你的开发计算机或同一子网的远程调试目标。 您可以使用远程调试目标： 作为图形诊断播放计算机无需手动配置。 在中**远程调试器连接**对话框框中，选择您想，然后选择的目标**选择**按钮。  
+> **远程调试器连接**对话框还可能显示直接连接到你的开发计算机或同一子网的远程调试目标。 您可以使用远程调试目标： 作为图形诊断播放计算机无需手动配置。 在中**远程调试器连接**对话框框中，选择您想，然后选择的目标**选择**按钮。  
   
 ## <a name="see-also"></a>请参阅  
  [图形日志文档](../debugger/graphics-log-document.md)

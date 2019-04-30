@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910562"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>创建父容器的解决方案文件夹
 在源控制插件 API 版本 1.2，用户可以指定一个根源控制目标的解决方案中的所有 web 项目。 此单个根称为超级统一根 (SUR)。

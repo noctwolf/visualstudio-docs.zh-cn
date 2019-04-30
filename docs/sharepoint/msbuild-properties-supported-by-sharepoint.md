@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429208"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支持的 MsBuild 属性
   任何[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]Microsoft.VisualStudio.SharePoint.targets 文件、 项目文件或项目用户文件中定义的属性可在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。 除了常见[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]由项目中，SharePoint 提供的属性定义是特定于 SharePoint 项目的其他属性。
@@ -49,7 +49,7 @@ ms.locfileid: "56599683"
  对于大的灵活性，而不是使用硬编码的字符串中**预先部署命令行**并**后期部署命令行**框在 SharePoint 属性页上，可以使用 SharePoint作为自变量的属性。 例如，而不是指定一个特定[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]字符串的 SharePoint 站点，则可以使用`$(SharePointSiteUrl)`。
 
 > [!NOTE]
->  你可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]的变量语法`$(` *propertyName* `)`或环境变量语法`%` *propertyName* `%`若要指定的属性。
+> 你可以使用[!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]的变量语法`$(` *propertyName* `)`或环境变量语法`%` *propertyName* `%`若要指定的属性。
 
 ## <a name="see-also"></a>请参阅
 

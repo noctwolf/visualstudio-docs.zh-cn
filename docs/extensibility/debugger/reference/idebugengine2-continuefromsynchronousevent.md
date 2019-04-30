@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875316"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 由会话调试管理器 (SDM) 以指示同步调试事件，以前由调试引擎 (DE) 发送到 SDM，已接收并处理调用。

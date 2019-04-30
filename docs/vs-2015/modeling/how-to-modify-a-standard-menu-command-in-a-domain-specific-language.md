@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441037"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60058475"
    本主题解释了此过程。  
   
 > [!NOTE]
->  如果你想要创建自己的菜单命令，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+> 如果你想要创建自己的菜单命令，请参阅[如何：将命令添加到快捷菜单](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
 ## <a name="what"></a> 您可以修改哪些命令？  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60058475"
 5. 关闭该文件，无需保存编辑。  
   
     > [!NOTE]
-    >  通常，不应编辑已生成的文件。 任何编辑都将在下次生成文件时丢失。  
+    > 通常，不应编辑已生成的文件。 任何编辑都将在下次生成文件时丢失。  
   
 ## <a name="extend"></a> 扩展相应的命令集类  
  创建包含命令集类的分部声明的新文件。  
@@ -90,7 +90,7 @@ ms.locfileid: "60058475"
  以下示例将在用户已选择多个形状时禁用“删除”菜单项。  
   
 > [!NOTE]
->  此方法不影响命令通过击键是否可用。 例如，禁用“删除”菜单项不会阻止通过 Delete 键来调用命令。  
+> 此方法不影响命令通过击键是否可用。 例如，禁用“删除”菜单项不会阻止通过 Delete 键来调用命令。  
   
 ```  
 /// <summary>  

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a1a113dc3b4a4b3a8a4482dd092878851d740c6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911691"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：关闭的源代码管理插件的兼容性警告
 使用源代码管理中的时，用户可能会看到几个兼容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 显示警告取决于源代码管理插件的功能，可禁用详细信息如下。

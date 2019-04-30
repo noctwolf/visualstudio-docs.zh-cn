@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440873"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>演练：在 Outlook 中显示电子邮件消息的自定义任务的窗格
   本演练演示如何显示创建或打开的每个电子邮件的自定义任务窗格的唯一实例。 用户可以通过使用每封电子邮件功能区中的按钮显示或隐藏自定义任务窗格。
@@ -31,7 +31,7 @@ ms.locfileid: "60062550"
  若要使用多个资源管理器或检查器窗口显示自定义任务窗格，则必须为打开的每个窗口创建自定义任务窗格的实例。 有关 Outlook 窗口中的自定义任务窗格的行为的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
 
 > [!NOTE]
->  本演练分小段展示 VSTO 外接程序代码以便更容易讨论代码背后的逻辑。
+> 本演练分小段展示 VSTO 外接程序代码以便更容易讨论代码背后的逻辑。
 
  本演练阐释了以下任务：
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062550"
 - 将功能区切换按钮与自定义任务窗格同步。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：

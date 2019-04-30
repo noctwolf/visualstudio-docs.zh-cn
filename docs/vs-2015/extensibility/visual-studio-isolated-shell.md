@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403585"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 独立 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Visual Studio 独立 shell，可创建独立的应用程序可以运行的同时
  若要创建独立的 shell 应用程序，请使用 Visual Studio Shell 独立项目开始。 此项目包含你开发和测试独立的 shell 应用程序所需的所有内容。 若要编写部署你的应用程序安装程序准备就绪后，必须获取从独立的 shell 可再发行组件包[Microsoft Visual Studio Shell （独立） Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616022)。  
   
 > [!NOTE]
->  在可以访问独立的 shell 可再发行组件包之前，系统将要求填写份简短的客户调查。  填写调查之后, 你将定向到 Visual Studio Connect 页面使用可再发行组件包下载链接。  可以在以后访问下的 Visual Studio Connect 站点上找到的下载链接**程序&#124;VISUAL STUDIO 2015 集成和独立 SHELL**选项卡。  
+> 在可以访问独立的 shell 可再发行组件包之前，系统将要求填写份简短的客户调查。  填写调查之后, 你将定向到 Visual Studio Connect 页面使用可再发行组件包下载链接。  可以在以后访问下的 Visual Studio Connect 站点上找到的下载链接**程序&#124;VISUAL STUDIO 2015 集成和独立 SHELL**选项卡。  
   
 > [!NOTE]
->  有关如何部署独立的基于 shell 的应用程序的详细信息，请参阅[演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
+> 有关如何部署独立的基于 shell 的应用程序的详细信息，请参阅[演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)。  
   
 ## <a name="working-with-the-isolated-shell"></a>使用独立 shell  
  Visual Studio 独立 shell 应用程序具有对 Visual Studio 服务的完全访问权限，并支持特殊的自定义和品牌。 有几种方法可以自定义独立的 shell 应用程序：  

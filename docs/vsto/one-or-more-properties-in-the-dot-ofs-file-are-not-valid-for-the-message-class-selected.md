@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977856"
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>.ofs 文件中的一个或多个属性对于选定的消息类无效
   导入在 Outlook 中设计的窗体区域时，会出现此错误，但窗体区域上的一个或多个字段不兼容的最后一页上选择的邮件类**新建窗体区域**向导。

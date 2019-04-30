@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 426adc0cd150d5867760a8570df5777fec8260a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859254"
 ---
 # <a name="registering-vspackages"></a>注册 VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依赖于要描述和定位 VSPackage 的.pkgdef 文件。 .Pkgdef 文件包含否则会添加到系统注册表的所有注册信息。 通过将属性添加到源代码，然后运行注册托管的 Vspackage [CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md)上生成的程序集生成.pkgdef 文件。

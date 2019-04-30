@@ -11,11 +11,11 @@ ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: jillfra
 ms.openlocfilehash: bde7742bc9165413abcf98bfb475c19ec0e45f51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838758"
 ---
 # <a name="managed-vspackages"></a>托管的 VSPackage
 以下主题介绍如何创建 VSPackage。 VSPackage 是软件模块扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过提供用户界面 (UI) 元素、 服务、 项目、 编辑器和设计器的集成的开发环境 (IDE)。 有关更多信息，请参见 [VSPackages](../extensibility/internals/vspackages.md)。  

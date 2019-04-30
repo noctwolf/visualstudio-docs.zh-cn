@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76aa6fe6218205874ab616f5c0ffb09f5c5c3cbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796337"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>演练：创建使用 JavaScript SDK
 本演练介绍了如何使用 JavaScript 创建简单的数学运算 SDK 作为 Visual Studio 扩展 (VSIX)。  本演练分为以下部分：
@@ -27,19 +27,19 @@ ms.locfileid: "56711795"
 ## <a name="prerequisites"></a>系统必备
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-##  <a name="createSimpleMathVSIX"></a> 若要创建 SimpleMathVSIX 扩展 SDK 项目
+## <a name="createSimpleMathVSIX"></a> 若要创建 SimpleMathVSIX 扩展 SDK 项目
 
-1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2.  在模板类别列表中下**Visual C#**，选择**扩展性**，然后选择**VSIX 项目**模板。
+2. 在模板类别列表中下**Visual C#**，选择**扩展性**，然后选择**VSIX 项目**模板。
 
-3.  在中**名称**文字框中，指定`SimpleMathVSIX`，然后选择**确定**按钮。
+3. 在中**名称**文字框中，指定`SimpleMathVSIX`，然后选择**确定**按钮。
 
-4.  如果**Visual Studio 包向导**出现，请选择**下一步**按钮**欢迎**页上，然后在**7 的第 1 页**，选择**完成**按钮。
+4. 如果**Visual Studio 包向导**出现，请选择**下一步**按钮**欢迎**页上，然后在**7 的第 1 页**，选择**完成**按钮。
 
      尽管**清单设计器**随即打开，我们将继续本演练简单通过直接修改清单文件。
 
-5.  在中**解决方案资源管理器**，打开快捷菜单**source.extension.vsixmanifest**文件，，然后选择**查看代码**。 使用此代码替换文件中的现有内容。
+5. 在中**解决方案资源管理器**，打开快捷菜单**source.extension.vsixmanifest**文件，，然后选择**查看代码**。 使用此代码替换文件中的现有内容。
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,11 +61,11 @@ ms.locfileid: "56711795"
     </PackageManifest>
     ```
 
-6.  在中**解决方案资源管理器**，打开快捷菜单**SimpleMathVSIX**项目，，然后选择**添加** > **新项**.
+6. 在中**解决方案资源管理器**，打开快捷菜单**SimpleMathVSIX**项目，，然后选择**添加** > **新项**.
 
-7.  在中**数据**类别中，选择**XML 文件**，将文件命名`SDKManifest.xml`，然后选择**添加**按钮。
+7. 在中**数据**类别中，选择**XML 文件**，将文件命名`SDKManifest.xml`，然后选择**添加**按钮。
 
-8.  在中**解决方案资源管理器**，打开快捷菜单**SDKManifest.xml**文件，，然后选择**打开**以显示中的文件**XML 编辑器**.
+8. 在中**解决方案资源管理器**，打开快捷菜单**SDKManifest.xml**文件，，然后选择**打开**以显示中的文件**XML 编辑器**.
 
 9. 将以下代码添加到**SDKManifest.xml**文件。
 
@@ -126,9 +126,9 @@ ms.locfileid: "56711795"
 
 17. 在中**解决方案资源管理器**，在快捷菜单上**arithmetic.js**文件中，选择**属性**。 更改这些属性：
 
-    -   设置**包含在 VSIX**属性设置为**True**。
+    - 设置**包含在 VSIX**属性设置为**True**。
 
-    -   设置**复制到输出目录**属性设置为**始终复制**。
+    - 设置**复制到输出目录**属性设置为**始终复制**。
 
 18. 在中**解决方案资源管理器**，在快捷菜单上**SimpleMathVSIX**项目中，选择**生成**。
 
@@ -138,7 +138,7 @@ ms.locfileid: "56711795"
 
 21. 重新启动 Visual Studio。
 
-##  <a name="createSampleApp"></a> 若要创建使用 SDK 的示例应用
+## <a name="createSampleApp"></a> 若要创建使用 SDK 的示例应用
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 

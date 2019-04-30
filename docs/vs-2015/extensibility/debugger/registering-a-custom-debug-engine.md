@@ -10,12 +10,12 @@ ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b840d262849fc59f3868451f201316094f2e5346
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e7055d69ea387994ea8011ac779334e61b899abf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435704"
 ---
 # <a name="registering-a-custom-debug-engine"></a>注册自定义调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ ms.locfileid: "58936928"
 调试引擎必须将自身注册为 COM 约定的类工厂，以及通过 Visual Studio 注册通过 Visual Studio 注册表子项。  
   
 > [!NOTE]
->  如何注册调试引擎的示例可以找到在 TextInterpreter 示例中，作为一部分生成[教程：生成调试引擎使用 ATL COM](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)。  
+> 如何注册调试引擎的示例可以找到在 TextInterpreter 示例中，作为一部分生成[教程：生成调试引擎使用 ATL COM](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)。  
   
 ## <a name="dll-server-process"></a>DLL 服务器进程  
  通常情况下，调试引擎 DLL 中实现其自身作为 COM 服务器。 这意味着，调试引擎必须类工厂的 CLSID 向 COM 注册 Visual Studio 才能访问它。 然后调试引擎必须自身注册 Visual Studio 自身建立任何属性 （也称为度量值） 调试引擎支持。 写入调试引擎的 Visual Studio 注册表子项的度量值的选择取决于调试引擎支持的功能。  
   
- [以便进行调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)描述不仅注册表位置必须注册的调试引擎; 它还介绍了 dbgmetric.lib 库，其中包含许多有用的函数和 c + + 开发人员，使声明操作更容易注册表。  
+ [以便进行调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)描述不仅注册表位置必须注册的调试引擎; 它还介绍了 dbgmetric.lib 库，其中包含大量有用的函数并声明C++，使开发人员操作更容易注册表。  
   
 ### <a name="example"></a>示例  
  以下是典型示例 （从 TextInterpreter 示例） 演示如何使用`SetMetric`函数 （从 dbgmetric.lib)，以注册 Visual Studio 调试引擎。 Dbgmetric.lib 中也定义了所传递的度量值。  
   
 > [!NOTE]
->  TextInterpreter 是一种基本的调试引擎;它不实现，并因此不会注册 — 任何其他功能。 更完整的调试引擎必须一整个系列`SetMetric`调用或其等效项，一个用于调试引擎的每个功能支持。  
+> TextInterpreter 是一种基本的调试引擎;它不实现，并因此不会注册 — 任何其他功能。 更完整的调试引擎必须一整个系列`SetMetric`调用或其等效项，一个用于调试引擎的每个功能支持。  
   
 ```  
 // Define base registry subkey to Visual Studio.  

@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444180"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>如何：在工作流中设置断点（旧版）
 本主题介绍如何在使用旧 [!INCLUDE[wf](../includes/wf-md.md)] 生成的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序中设置断点。 在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 应用程序需要面向 [!INCLUDE[wf2](../includes/wf2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -39,7 +39,7 @@ ms.locfileid: "60069960"
      您也可以使用此选项在调试时设置新断点，这时调试器将在断点处停止。  
   
     > [!NOTE]
-    >  不支持在调用的工作流上设置断点。  
+    > 不支持在调用的工作流上设置断点。  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>使用“调试”菜单上的“新建断点”选项设置断点  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60069960"
 3. 指定的名称中的活动**函数**文本框中，使用以下语法： `QualifiedActivityId[:[FullClassName][:InstanceId]]`。  
   
     > [!NOTE]
-    >  （可选） 而不是使用中的活动名称**函数**文本框中，您可以通过指定的工作流活动的绝对路径来设置断点。 例如，假设有一个名为工作流解决方案**WorkflowConsoleApplication1**和名为解决方案中的工作流**Workflow1** ，它使用一个名为活动**Delay1**. 可以使用活动名称**Delay1**或将路径指定为**Delay1:WorkflowConsoleApplication1.Workflow1**或**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**。  
+    > （可选） 而不是使用中的活动名称**函数**文本框中，您可以通过指定的工作流活动的绝对路径来设置断点。 例如，假设有一个名为工作流解决方案**WorkflowConsoleApplication1**和名为解决方案中的工作流**Workflow1** ，它使用一个名为活动**Delay1**. 可以使用活动名称**Delay1**或将路径指定为**Delay1:WorkflowConsoleApplication1.Workflow1**或**Delay1:WorkflowConsoleApplication1.Workflow1: {6614886A-608E-412B-BF98-99FF1559DDDF}**。  
   
 4. 选择**使用 IntelliSense**复选框，以验证函数名称。  
   

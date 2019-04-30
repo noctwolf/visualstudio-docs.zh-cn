@@ -12,11 +12,11 @@ ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
 manager: jillfra
 ms.openlocfilehash: 6dc542d2e410b79a21e436a1881c06bd3cc4eef8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434314"
 ---
 # <a name="support-for-state-persistence"></a>状态持久性支持
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以维护公共对象的状态。 例如，解决方案和项目属性将保存到和从解决方案和项目文件中还原。 可以导出到和从设置文件导入用户设置。  

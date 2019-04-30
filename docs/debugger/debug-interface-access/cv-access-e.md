@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555125"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 指定的成员函数和变量的可见性 （访问级别） 的范围。

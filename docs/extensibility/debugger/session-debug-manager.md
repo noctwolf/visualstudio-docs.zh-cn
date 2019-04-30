@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: edbb1510265307e1c9fe6c8a01cffc0115d879ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864260"
 ---
 # <a name="session-debug-manager"></a>会话调试管理器
 会话调试管理器 (SDM) 管理任意数量的任意数量的多个进程中的程序调试跨任意数量的计算机的调试引擎 (DE)。 除了多路复用器的调试引擎外，SDM 提供到 IDE 的调试会话的统一的视图。

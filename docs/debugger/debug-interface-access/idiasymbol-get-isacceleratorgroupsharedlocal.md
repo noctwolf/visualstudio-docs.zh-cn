@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836831"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
-检索一个标志，指示符号是否与组共享本地变量在编译 c + + AMP 快捷键代码相对应。
+检索一个标志，指示符号是否与组共享本地变量在编译的代码相对应C++AMP 快捷键。
 
 ## <a name="syntax"></a>语法
 
@@ -30,7 +30,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>参数
  `pFlag`
 
-[out]一个指向`BOOL`，该值指示符号是否与组共享本地变量在编译 c + + AMP 快捷键代码相对应。 如果`TRUE`，则`get_baseDataSlot`和`get_baseDataOffset`方法可用于获取变量的存储位置信息。
+[out]一个指向`BOOL`，该值指示符号是否与组共享本地变量在编译的代码相对应C++AMP 快捷键。 如果`TRUE`，则`get_baseDataSlot`和`get_baseDataOffset`方法可用于获取变量的存储位置信息。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。

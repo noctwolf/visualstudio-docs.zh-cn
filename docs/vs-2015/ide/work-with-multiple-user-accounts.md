@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a60a44a20c06c24645583db4e16ce60cef166554
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441647"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60081224"
 2. 右键单击解决方案资源管理器中的项目节点，选择“添加”>“连接的服务”。 “添加连接的服务”向导出现，显示与 Visual Studio 登录 ID 相关联的 Azure 帐户中的服务列表。 请注意：无需单独登录 Azure。 但是，第一次尝试从给定计算机访问其资源时，你需要登录到其他帐户。  
   
     > [!WARNING]
-    >  如果这是首次创建应用商店应用程序在 Visual Studio 2015 中的特定计算机上，系统会提示通过转到启用设备的开发模式**设置&#124;。更新和安全&#124;适用于开发人员**您的计算机上。 有关详细信息，请参阅[启用设备进行开发](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)。  
+    > 如果这是首次创建应用商店应用程序在 Visual Studio 2015 中的特定计算机上，系统会提示通过转到启用设备的开发模式**设置&#124;。更新和安全&#124;适用于开发人员**您的计算机上。 有关详细信息，请参阅[启用设备进行开发](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx)。  
   
 ### <a name="access_azure"></a> 在 Web 项目中访问 Azure Active Directory  
  Azure AD 支持 ASP.NET MVC web 应用程序中的最终用户单一登录或 Web API 服务中的 AD 身份验证。 域身份验证不同于单个用户帐户身份验证；有权访问 Active Directory 域的用户可以使用其现有的 Azure AD 帐户连接到你的 web 应用程序。 Office 365 应用还可以使用域身份验证。 为此，创建一个 Web 应用程序（“文件”>“新建项目”>“C#”>“云”>“ASP.NET Web 应用程序”）。 在“新的 ASP.NET 项目”对话框中，选择 **“更改身份验证”**。 身份验证向导随即显示，你能够选择要在你的应用程序中使用的身份验证类型。  

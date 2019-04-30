@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446569"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 返回添加的使用的字符范围`IDebugDocumentHelper::AddDeferredText`方法，请在原始主机文档。  
@@ -58,7 +58,7 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_NOTIMPL`|未实现方法。|  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  此方法可能会返回`E_NOTIMPL`，如果主机不会调用`IDebugDocumentHelper::AddDeferredText`。  
   
 > [!NOTE]
->  此方法返回从原始文档的文本。 主机不会不跟踪的编辑或对文档的其他更改。  
+> 此方法返回从原始文档的文本。 主机不会不跟踪的编辑或对文档的其他更改。  
   
 ## <a name="see-also"></a>请参阅  
  [IDebugDocumentHost 接口](../../winscript/reference/idebugdocumenthost-interface.md)   

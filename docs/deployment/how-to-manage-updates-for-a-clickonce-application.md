@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928561"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>如何：管理 ClickOnce 应用程序的更新
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序可以自动或以编程方式检查更新。 作为开发人员，您可以自由地指定何时以及如何执行更新检查更新是否强制性的以及应用程序应检查更新。

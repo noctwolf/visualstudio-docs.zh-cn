@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f805153a35517c473e95beb871ae7d12a2776bd4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967603"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以编程方式向文档添加图片和艺术字
   可以在设计时或运行时向文档中添加图片和图形对象。 可使用“艺术字”向 Microsoft Office Word 文档添加装饰性文本。 这些特殊文本效果是一些图形对象，你可以自定义这些图形对象并插入到文档中。

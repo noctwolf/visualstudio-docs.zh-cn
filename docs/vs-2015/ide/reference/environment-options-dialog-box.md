@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441728"
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59650026"
 使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过在菜单栏上依次选择“工具”、“选项”、“环境”来访问“环境”页。  
   
 > [!NOTE]
->  显示在计算机上的对话框和菜单命令可能与“帮助”中说明的不同，具体取决于处于活动状态的设置以及你使用的 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示在计算机上的对话框和菜单命令可能与“帮助”中说明的不同，具体取决于处于活动状态的设置以及你使用的 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 |有关如何执行下列操作的信息|查看|  
 |----------------------------------|---------|  

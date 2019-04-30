@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434095"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58933624"
  如果 XAML 或代码隐藏文件不遵循该语言的格式设置规则，则会出现语法错误。 错误的说明有助于了解如何更正该错误。 该列表还会指定文件名称和发生错误的行号。 XAML 错误会在“结果”面板的“标记”选项卡上列出。  
   
 > [!TIP]
->  XAML 是一种基于 XML 的标记语言，并遵循 XML 语法规则。  
+> XAML 是一种基于 XML 的标记语言，并遵循 XML 语法规则。  
   
  XAML 语法错误的某些常见原因如下：  
   

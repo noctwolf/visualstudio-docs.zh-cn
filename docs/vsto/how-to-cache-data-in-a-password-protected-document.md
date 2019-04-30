@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826740"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果将数据添加到文档或使用密码保护的工作簿中的数据缓存，不会自动保存对缓存数据的更改。 通过重写在项目中的两种方法，可以将更改保存到缓存的数据。

@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59bdcbd3cefe185a8809e471be22f00ea2478857
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6833e9735aa6a360ce0642e991bd019df347d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442506"
 ---
 # <a name="step-6-add-a-timer"></a>步骤 6：添加计时器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082682"
 计时器  
   
     > [!NOTE]
-    >  如果工具箱是空的，请确保在打开工具箱前选择窗体设计器，而不是窗体的后台代码。  
+    > 如果工具箱是空的，请确保在打开工具箱前选择窗体设计器，而不是窗体的后台代码。  
   
 2. 选择 **Timer1** 图标以选中该计时器。 在“属性”窗口中，从查看事件切换到查看属性。 然后将计时器的 **Interval** 属性设置为 **750**，但保留 **Enabled** 属性的设置“False”。 **Interval** 属性将通知计时器两个计时周期之间的等待时长，或何时触发 Tick 事件。 值为 750 时，将通知计时器等待四分之三秒（750 毫秒）后触发 Tick 事件。 只有在玩家选择第二个标签后，你才能调用 `Start()` 方法启动计时器。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "60082682"
      Tick 事件处理程序将执行三项操作：首先，通过调用 `Stop()` 方法确保计时器没有运行。 然后，它使用两个引用变量 `firstClicked` 和 `secondClicked`，使得玩家选择的两个标签的图标再次不可见。 最后，它将 `firstClicked` 和 `secondClicked` 引用变量重置为 `null`（Visual C# 中）或 `Nothing`（Visual Basic 中）。 这一步很重要，因为程序本身就是这样重置的。 现在，它不跟踪任何 `Label` 控件，并已准备好让玩家再次选择标签。  
   
     > [!NOTE]
-    >  `Timer` 对象具有 `Start()` 方法和 `Stop()` 方法，分别用以启动和停止计时器。 如果你在“属性”窗口中将计时器的“Enabled” 属性设置为“True”，则只要程序开始运行，计时器就会开始计时。 但是，如果将该属性保留设置为“False”，则在调用计时器的 `Start()` 方法之前，计时器不会开始计时。 通常，计时器会使用 **Interval** 属性确定在计时周期之间等待的毫秒数，从而反复触发其 Tick 事件。 您可能已经注意到在 Tick 事件中调用计时器的 `Stop()` 方法的方式。 这会将计时器置于“单触发模式”，意味着调用 `Start()` 方法时，计时器会等待指定的间隔时间，触发单个 Tick 事件，然后停止。  
+    > `Timer` 对象具有 `Start()` 方法和 `Stop()` 方法，分别用以启动和停止计时器。 如果你在“属性”窗口中将计时器的“Enabled” 属性设置为“True”，则只要程序开始运行，计时器就会开始计时。 但是，如果将该属性保留设置为“False”，则在调用计时器的 `Start()` 方法之前，计时器不会开始计时。 通常，计时器会使用 **Interval** 属性确定在计时周期之间等待的毫秒数，从而反复触发其 Tick 事件。 您可能已经注意到在 Tick 事件中调用计时器的 `Stop()` 方法的方式。 这会将计时器置于“单触发模式”，意味着调用 `Start()` 方法时，计时器会等待指定的间隔时间，触发单个 Tick 事件，然后停止。  
   
 4. 若要查看正在使用的新计时器，请转至代码编辑器，将以下代码添加到 `label_Click()` 事件处理程序方法的顶部和底部。 （你要将 `if` 语句添加到顶部，将三个语句添加到底部；该方法的其余部分保持相同。）  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443767"
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60039859"
  此方法的好处在于它可创建单个部署，并简化已本地化的部署。 在运行时，将根据用户 Windows 操作系统的默认区域性使用适当的附属程序集。 此方法的缺点为只要客户端计算机上安装或更新了应用程序，此方法就会下载所有附属程序集。 如果你的应用程序具有大量字符串，或客户的网络连接速度慢，则此过程在应用程序更新期间会影响性能。  
   
 > [!NOTE]
->  此方法假定你的应用程序将自动调整控件的高度、宽度和位置以适应不同区域性中不同的文本字符串大小。 Windows 窗体包含各种控件和技术，这些控件和技术使你可以设计更易于本地化的窗体，其中包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控件以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 属性。  另请参阅[如何：支持对使用 AutoSize 和 TableLayoutPanel 控件的 Windows 窗体的本地化](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))。  
+> 此方法假定你的应用程序将自动调整控件的高度、宽度和位置以适应不同区域性中不同的文本字符串大小。 Windows 窗体包含各种控件和技术，这些控件和技术使你可以设计更易于本地化的窗体，其中包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控件以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 属性。  另请参阅[如何：支持对使用 AutoSize 和 TableLayoutPanel 控件的 Windows 窗体的本地化](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))。  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>为每种区域性生成一个部署  
  在此部署策略中，可以生成多个部署。 在每个部署中，仅包括特定区域性所需的附属程序集，并将该部署标记为特定于该区域性。  

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966804"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：创建 SharePoint web 部件
   可以创建并通过添加自定义 web 部件**Web 部件**向任何 SharePoint 项目项，然后编辑 web 部件或使用设计器的代码文件。 有关详细信息，请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。

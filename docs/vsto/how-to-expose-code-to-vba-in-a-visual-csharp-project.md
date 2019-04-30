@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419492"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：向视觉对象中的 VBA 公开代码C#项目
   如果您希望两种类型的代码与彼此进行交互，您可以公开 Visual C# 项目中为 Visual Basic for Applications (VBA) 代码的代码。
@@ -42,7 +42,7 @@ ms.locfileid: "56604474"
     有关支持的宏的文档文件格式的详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
 
    > [!NOTE]
-   >  此功能无法在 Word 模板项目中使用。
+   > 此功能无法在 Word 模板项目中使用。
 
 2. 请确保允许文档中的 VBA 代码不提示用户启用宏的情况下运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604474"
 10. 在 **“属性”** 窗口中，选择 **“ReferenceAssemblyFromVbaProject”** 属性，并将值更改为 **“True”**。
 
     > [!NOTE]
-    >  如果工作簿或文档尚未包含 VBA 代码，或如果文档中的 VBA 代码不受信任运行，在设置时，将收到一条错误消息**ReferenceAssemblyFromVbaProject**属性设置为**True**. 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
+    > 如果工作簿或文档尚未包含 VBA 代码，或如果文档中的 VBA 代码不受信任运行，在设置时，将收到一条错误消息**ReferenceAssemblyFromVbaProject**属性设置为**True**. 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
 
 11. 在显示的消息中单击 **“确定”** 。 此消息提醒你如果你添加 VBA 代码到工作簿或文档时运行中的项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，下次生成项目时，将丢失的 VBA 代码。 这是因为中的文档中生成输出文件夹覆盖每次生成项目。
 

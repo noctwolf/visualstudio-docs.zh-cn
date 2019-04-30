@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e124bb05fa42be48fc0c9054df9cb056d0680958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408625"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据 (C#，Visual Basic 中， C++)
 
@@ -64,7 +64,7 @@ ms.locfileid: "60081016"
     - 在“重现步骤” 下，选择“IntelliTrace”  链接。
 
 > [!TIP]
->  如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace” 、“显示日志摘要” 。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。
+> 如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace” 、“显示日志摘要” 。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。
 
 ## <a name="Understand"></a> 理解 IntelliTrace 日志
  .iTrace 文件的以下各节中的某些内容只有当你从特定源（如从测试管理器或 SharePoint 应用程序）收集数据时才会显示。

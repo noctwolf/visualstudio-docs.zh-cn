@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442753"
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60066698"
  当你启动 Spy + +，如果显示一条消息询问权限对计算机进行更改，请单击**是**。  
   
 > [!NOTE]
->  可以运行 Spy + + 的一个实例。 如果你尝试运行另一个实例，它只会导致当前正在运行的实例，若要获取焦点。  
+> 可以运行 Spy + + 的一个实例。 如果你尝试运行另一个实例，它只会导致当前正在运行的实例，若要获取焦点。  
   
 ### <a name="to-start-spy-from-visual-studio"></a>若要从 Visual Studio 启动 Spy + +  
   
@@ -35,7 +35,7 @@ ms.locfileid: "60066698"
      因为 Spy + + 独立运行，在启动后，你可以关闭 Visual Studio。  
   
     > [!NOTE]
-    >  当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。  
+    > 当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>若要在命令提示符处启动 Spy + +  
   

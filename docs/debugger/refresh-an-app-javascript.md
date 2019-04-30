@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ee4c97c4ecbf665bbaef39b658a4b96715acb23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408635"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>刷新在 Visual Studio 中的 UWP 应用
 
@@ -43,7 +43,7 @@ ms.locfileid: "60088023"
 - 项目和项属性更改（如对所选调试设备的更改）或对文件的程序包操作的更改（在“属性”窗口中）。
 
 > [!IMPORTANT]
->  在更改引用或包清单或者进行上面的列表中指定的其他更改时，必须停止并重新启动调试器以更新 HTML、CSS 和 JavaScript 源文件。
+> 在更改引用或包清单或者进行上面的列表中指定的其他更改时，必须停止并重新启动调试器以更新 HTML、CSS 和 JavaScript 源文件。
 
 ### <a name="to-refresh-an-app"></a>刷新应用程序
 

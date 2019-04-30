@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815810"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：设置 C/C++ 项目的代码分析属性
 可以配置代码分析工具使用来分析每个配置项目中的代码的规则。 此外，还可以指示代码分析禁止显示警告的生成并由第三方工具添加到你的项目的代码。
@@ -35,7 +35,7 @@ ms.locfileid: "55917322"
  **配置**列表和**平台**列表，可以将不同的代码分析设置应用于不同的项目配置和平台组合。 例如，可以直接将代码分析，以将一组规则应用到用于调试的项目生成并生成一组不同的版本。
 
 ## <a name="enabling-code-analysis"></a>启用代码分析
- 您可以决定是否通过选择启用你的项目的代码分析**启用代码分析的 C/c + + 生成**。 结合**配置**列表中，您可以例如，决定禁用调试版本并启用为发布版本的代码分析。
+ 您可以决定是否通过选择启用你的项目的代码分析**启用代码分析的 C /C++上生成**。 结合**配置**列表中，您可以例如，决定禁用调试版本并启用为发布版本的代码分析。
 
  如果你的项目包含托管的代码，您可以决定是否启用或禁用通过选择代码分析**生成时启用代码分析**。
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926496"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>通过使用传统的 API 自定义编辑器控件和 Mmenus
 上下文菜单和在编辑器中的控件，可以控制语言服务或文本视图。 在本部分中的页详细介绍如何使用这些功能。

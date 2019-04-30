@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f74b2d08a268bc79bcd7d2fd33513b5ccf5b1415
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817448"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以编程方式将样式应用于工作簿中的范围
   可以将已命名的样式应用到工作簿中的区域。 Excel 提供了大量预定义样式。

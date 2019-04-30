@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447077"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>主机项和主机控件的编程限制
   每个宿主项和宿主控件的行为都类似于相应的本机 Microsoft Office Word 或 Microsoft Office Excel 对象，并且具有附加功能。 但是，在运行时宿主项和宿主控件的行为与本机 Office 对象之间存在一些本质区别。
@@ -57,7 +57,7 @@ ms.locfileid: "56596137"
  不能向本机 <xref:Microsoft.Office.Interop.Word.Document> 或 <xref:Microsoft.Office.Interop.Excel.Worksheet>添加宿主控件。
 
 > [!NOTE]
->  不能以编程方式向工作表或文档添加以下宿主控件： <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>和 <xref:Microsoft.Office.Tools.Word.XMLNodes>。
+> 不能以编程方式向工作表或文档添加以下宿主控件： <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>和 <xref:Microsoft.Office.Tools.Word.XMLNodes>。
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>了解类型主机项、 宿主控件和本机 Office 对象之间的差异
  对于每个宿主项和宿主控件，都有基础本机 Microsoft Office Word 或 Microsoft Office Excel 对象。 可以使用主机项或宿主控件的 InnerObject 属性来访问基础对象。 但是，没有办法将本机 Office 对象强制转换为其对应的宿主项或宿主控件。 如果尝试将本机 Office 对象强制转换为宿主项或宿主控件的类型，将引发 <xref:System.InvalidCastException> 。

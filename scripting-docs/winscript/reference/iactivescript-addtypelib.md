@@ -18,14 +18,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955086"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
-将类型库添加到该脚本在命名空间。 它类似于`#include`C/c + + 中的指令。 它允许一组预定义项目类的定义，如`typedefs`，和命名的常量添加到可供脚本运行时环境。  
+将类型库添加到该脚本在命名空间。 它类似于`#include`指令在 C /C++。 它允许一组预定义项目类的定义，如`typedefs`，和命名的常量添加到可供脚本运行时环境。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,7 +51,7 @@ HRESULT AddTypeLib(
  `dwFlags`  
  [in]选项标志。 可以是以下值：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |SCRIPTTYPELIB_ISCONTROL|类型库描述主机所使用的 ActiveX 控件。|  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c679f9a322d079f5037cea1e48fa8690daceb496
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446972"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>演练：导入在 Outlook 中设计的窗体区域
   此演练演示如何在 Microsoft Office Outlook 中设计窗体区域，然后通过使用“新建窗体区域”  向导将窗体区域导入 Outlook VSTO 外接程序项目。 通过在 Outlook 中设计窗体区域，可以将本机 Outlook 控件添加到绑定到 Outlook 数据的窗体区域。 导入窗体区域后，可以处理每个控件的事件。
@@ -43,7 +43,7 @@ ms.locfileid: "60101075"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：创建使用 Visual Studio 2008 的 Outlook 窗体区域？](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>在 Outlook 中使用的窗体区域设计器设计的窗体区域

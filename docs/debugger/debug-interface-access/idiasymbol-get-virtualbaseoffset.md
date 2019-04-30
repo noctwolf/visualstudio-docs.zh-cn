@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a600b3ce956867c98fb94435e6461b7bf7f73e1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f1cb4a34f9947d2f5ee50488876d44042b4cb228
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400688"
 ---
 # <a name="idiasymbolgetvirtualbaseoffset"></a>IDiaSymbol::get_virtualBaseOffset
 检索虚拟函数的虚函数表中的偏移量。
@@ -39,7 +39,7 @@ HRESULT get_virtualBaseOffset ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="see-also"></a>请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

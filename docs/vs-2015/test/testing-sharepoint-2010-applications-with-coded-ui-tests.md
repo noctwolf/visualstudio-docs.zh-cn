@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445975"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 SharePoint 2010 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ ms.locfileid: "60094549"
  ![SharePoint Web 部件](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  如果要录制操作，请在生成代码前验证操作。 因为有多种行为与鼠标悬停操作相关联，所以它在默认情况下处于开启状态。 注意从编码的 UI 测试中移除冗余的悬停操作。 为此，您可以编辑测试的代码，或者使用 [编码的 UI 测试编辑器](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。  
+> 如果要录制操作，请在生成代码前验证操作。 因为有多种行为与鼠标悬停操作相关联，所以它在默认情况下处于开启状态。 注意从编码的 UI 测试中移除冗余的悬停操作。 为此，您可以编辑测试的代码，或者使用 [编码的 UI 测试编辑器](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>在 SharePoint 应用程序中包括 Office 2010 控件的测试  
  若要对 SharePoint 应用中的某些 office 2010 Web 部件实现自动化，您必须作出一些细微的代码修改。  
   
 > [!WARNING]
->  不支持对 Visio 和 PowerPoint 2010 控件的支持。  
+> 不支持对 Visio 和 PowerPoint 2010 控件的支持。  
   
 ### <a name="excel-2010-cell-controls"></a>Excel 2010 单元格控件  
  若要包括 Excel 单元格控件，则必须在编码的 UI 测试代码中做一些更改。  
   
 > [!WARNING]
->  如果在任何 Excel 单元格中输入文本，然后进行箭头键操作，将无法正确进行录制。 使用鼠标选择单元格。  
+> 如果在任何 Excel 单元格中输入文本，然后进行箭头键操作，将无法正确进行录制。 使用鼠标选择单元格。  
   
  如果要录制对空单元格的操作，则必须双击该单元格，然后执行设置文本操作，以此修改代码。 这是必需的，因为如果单击单元格，然后进行任何键盘操作，将会激活单元格内的 `textarea` 。 如果只是录制对空单元格的 `setvalue` ，将会搜索直到单击单元格后才会显示的 `editbox` 。 例如：  
   

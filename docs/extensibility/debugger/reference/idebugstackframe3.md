@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee9310ff6dff36e09b5d0db356659ada427dd3a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412568"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 此接口扩展[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)来处理已截获的异常。
@@ -50,7 +50,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  通过截获异常，调试器可以允许用户对正在调试的程序的状态进行更改，然后继续执行在引发异常的点。
 
 > [!NOTE]
->  已截获的异常只允许出现在托管代码中，即，在程序运行在公共语言运行时 (CLR) 中。
+> 已截获的异常只允许出现在托管代码中，即，在程序运行在公共语言运行时 (CLR) 中。
 
  调试引擎，它支持通过设置"metricExceptions"截取异常为值 1 在运行时通过使用指示`SetMetric`函数。 有关详细信息，请参阅[以便进行调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。
 

@@ -25,11 +25,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571415"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 你可以通过使用类似于固定条件注释批注结构和类成员，它们都假定为满足的任何函数调用或进入/退出函数涉及封闭结构作为参数或结果值。

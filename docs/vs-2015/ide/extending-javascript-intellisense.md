@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441467"
 ---
 # <a name="extending-javascript-intellisense"></a>扩展 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ JavaScript IntelliSense 扩展性功能，可自定义在第三方库的 JavaScr
   
  若要进一步提高开发人员体验，可能想要向开发人员在弹出框中提供类型信息。 可以通过使用 JavaScript 提供类型信息[XML 文档注释](../ide/xml-documentation-comments-javascript.md)而不是标准的注释标记。 使用三斜杠注释标记 （/ /） 和一组定义的 XML 元素添加 XML 文档注释。  
   
- 或者，您可以通过使用 JavaScript IntelliSense 扩展性提供类型信息。 此功能，可通过创建 JavaScript 扩展并将其添加到脚本上下文自定义 IntelliSense 结果。 在扩展中，它是一个 JavaScript 文件，你订阅的事件公开的`intellisense`语言服务的对象。 JavaScript IntelliSense 扩展性是库的首选的解决方案，如果库中的行为模式，使 JavaScript 语言服务无法提供所需的级别的 IntelliSense 支持，并且如果声明性 XML 的替代方法文档注释，也需要。 通过自定义 IntelliSense 结果，可以创建一流的 IntelliSense 体验，而不考虑任何可能会限制语言服务的默认功能的行为模式。 有关详细信息，请参阅[适用于标识符的语句结束](../ide/statement-completion-for-identifiers.md)。  
+ 或者，您可以通过使用 JavaScript IntelliSense 扩展性提供类型信息。 此功能，可通过创建 JavaScript 扩展并将其添加到脚本上下文自定义 IntelliSense 结果。 在扩展中，它是一个 JavaScript 文件，你订阅的事件公开的`intellisense`语言服务的对象。 JavaScript IntelliSense 扩展性是库的首选的解决方案，如果库中的行为模式，使 JavaScript 语言服务无法提供所需的级别的 IntelliSense 支持，并且如果声明性 XML 的替代方法文档注释，也需要。 通过自定义 IntelliSense 结果，可以创建一流的 IntelliSense 体验，而不考虑任何可能会限制语言服务的默认功能的行为模式。 有关详细信息，请参阅[标识符的语句完成](../ide/statement-completion-for-identifiers.md)。  
   
 ## <a name="adding-an-extension-to-the-script-context"></a>将扩展添加到脚本上下文  
  若要执行的 IntelliSense 扩展，它需要添加到当前脚本上下文。 扩展可以自动添加到脚本上下文的自动发现机制，或者你可以将扩展添加到脚本上下文手动使用引用组或引用指令。  
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  对于其他示例，请查看\\ \\ *Visual Studio 安装路径*\JavaScript\References 文件夹。 此文件夹中的 showPlainComments.js 文件提供了示例的使用其他事件提供默认的 IntelliSense 支持的标准 JavaScript 注释标记 (/ /)。 如 underscorefilter.js，showPlainComments.js 已可用作工作扩展，并且注释标记在代码中使用的变量、 函数和对象时，可以看到生成的 IntelliSense 信息。 有关其他示例，请参阅[代码示例](#CodeExamples)。  
   
 > [!WARNING]
->  如果您修改 Visual Studio 附带的扩展文件，可能会禁用 JavaScript IntelliSense 或扩展所支持的功能。  
+> 如果您修改 Visual Studio 附带的扩展文件，可能会禁用 JavaScript IntelliSense 或扩展所支持的功能。  
   
  在扩展代码中，可以创建以下事件类型的处理程序，通过使用`addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   显示 IntelliSense 功能，如语句完成、 参数信息和快速信息的示例，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。  
   
 > [!NOTE]
->  在 JavaScript 中，快速信息是指将出现完成列表右侧的弹出框。 不能手动调用快速信息。  
+> 在 JavaScript 中，快速信息是指将出现完成列表右侧的弹出框。 不能手动调用快速信息。  
   
 ## <a name="intellisenseObject"></a> intellisense 对象  
  下表显示了可用于函数`intellisense`对象。 `intellisense`对象是只能在设计时可用。  

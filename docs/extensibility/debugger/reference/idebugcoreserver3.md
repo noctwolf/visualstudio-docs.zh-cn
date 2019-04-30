@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 629e35e8756be1dfa6df9f21eda02624b4c363de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921900"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 此接口可以访问的服务器进程正在运行中的相关信息。

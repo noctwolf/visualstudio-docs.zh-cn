@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eada57433b37f759da51ecdb380e530f3fb77fdf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839467"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 描述了部分内容中检索数据，也就是说，连续内存块归功于图像编译单位。
@@ -31,7 +31,7 @@ IDiaSectionContrib : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaSectionContrib`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|检索提供本部分的编译单位符号的引用。|
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|检索的部分一部分发布内容的地址。|
@@ -127,7 +127,7 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

@@ -11,12 +11,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 467554b8e50878bcdf1029e4792bbf168a09fa11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445245"
 ---
 # <a name="detecting-system-requirements"></a>检测系统要求
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft
    安装的"更高"的版本时，会添加与"低"的版本以及该版本的注册表项。 也就是说，如果安装的 Enterprise edition，则安装密钥设置为 1 企业版、 以及专业版和社区版。 因此需要进行仅检查所需的"最高"版本。  
   
 > [!NOTE]
->  在注册表编辑器的 64 位版本，32 位密钥将显示下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\。 Visual Studio 键是下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\。  
+> 在注册表编辑器的 64 位版本，32 位密钥将显示下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\。 Visual Studio 键是下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\。  
   
 |产品|键|  
 |-------------|---------|  

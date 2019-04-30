@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967476"
 ---
 # <a name="extend-sharepoint-projects"></a>扩展 SharePoint 项目
   如果想要自定义 SharePoint 项目的项目级功能，请创建一个项目扩展。 例如，可以添加自定义项目属性中，或对用户开发 Visual Studio 中的 SharePoint 解决方案时引发的项目级事件做出响应。

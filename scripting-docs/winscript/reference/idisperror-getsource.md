@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f793675d40c87e4c64c2a83d37327f5222d8d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446880"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 返回的类或引发了错误的应用程序的依赖于语言的编程标识符。  
@@ -42,7 +42,7 @@ HRESULT GetSource(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
@@ -50,7 +50,7 @@ HRESULT GetSource(
  此方法用于确定类或应用程序发生异常。 指定在调用时提供的区域设置标识符 (LCID) 的语言中可能会返回的编程标识符。  
   
 > [!NOTE]
->  未实现此方法。  
+> 未实现此方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDispError 接口](../../winscript/reference/idisperror-interface.md)

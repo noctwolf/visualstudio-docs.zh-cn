@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981384"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>演练：创建在第一个 VSTO 外接程序项目
   本演练演示如何为 Microsoft Office Project 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的项目无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。

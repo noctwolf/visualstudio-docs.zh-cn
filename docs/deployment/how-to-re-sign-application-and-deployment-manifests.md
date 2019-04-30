@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928355"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：对应用程序清单和部署清单重新签名
 对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，必须重新签名的应用程序和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。

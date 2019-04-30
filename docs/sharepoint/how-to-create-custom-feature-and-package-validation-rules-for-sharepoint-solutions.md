@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966739"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>如何：创建自定义功能和包验证规则为 SharePoint 解决方案
   可以创建自定义验证规则来验证由 Visual Studio 生成的解决方案包。 可以在整个功能或包上执行完全验证，通过选择**Validate**从包中的新功能的上下文菜单**PackagingExplorer**。 将新的 SharePonit 项目项或功能添加到项目，以确定包或功能将会处于有效状态时执行部分验证。

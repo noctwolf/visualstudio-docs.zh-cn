@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909244"
 ---
 # <a name="project-priority"></a>项目优先级
 项目项通常是解决方案中只有一个项目的成员。 因此，IDE 可以轻松地确定使用哪个项目打开的项。 但是，如果项是多个项目的成员，IDE 将使用优先级方案来确定打开的项的最佳项目。
@@ -34,5 +34,5 @@ ms.locfileid: "60089440"
 
 ## <a name="see-also"></a>请参阅
 - [杂项文件项目](../../extensibility/internals/miscellaneous-files-project.md)
-- [如何：打开编辑器的打开的文档](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [如何：打开开放文档的编辑器](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)

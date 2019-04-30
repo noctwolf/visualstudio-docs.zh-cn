@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443210"
 ---
 # <a name="viewing-the-structure-of-code"></a>查看代码的结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60115063"
  如果你安装了 Visual Studio Enterprise，则可以使用代码图来直观显示代码的结构及其在整个解决方案中的相关性，并深入查看你感兴趣的代码部分。 有关详细信息，请参阅[映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
   
 > [!NOTE]
->  正在使用的 Visual Studio 版本和设置可能会影响 IDE 中的功能。 它们可能与本主题中介绍的功能有所不同。  
+> 正在使用的 Visual Studio 版本和设置可能会影响 IDE 中的功能。 它们可能与本主题中介绍的功能有所不同。  
   
 ## <a name="BKMK_ClassView"></a>类视图（Visual Basic、C#、C++）  
  “类视图”显示为“解决方案资源管理器”的一部分并位于单独的窗口中。 “类视图”窗口显示应用程序的元素。 上部窗格显示命名空间、类型、接口、枚举和类，下部窗格显示属于在上部窗格中所选类型的成员。 通过使用此窗口，可以移到源代码（或“对象浏览器”，如果该元素在解决方案外部进行定义）中的成员定义。  

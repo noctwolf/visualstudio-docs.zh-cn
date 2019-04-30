@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435459"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>如何：创建 SharePoint 命令
   如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建一个自定义*SharePoint 命令*来调用 API。 直接调入服务器对象模型的程序集中定义的 SharePoint 命令。
@@ -33,7 +33,7 @@ ms.locfileid: "60082316"
     - 面向 AnyCPU 或 x64 平台。 默认情况下，类库项目的目标平台为 AnyCPU。 有关选择目标平台的详细信息，请参阅[如何：将项目配置为面向平台](../ide/how-to-configure-projects-to-target-platforms.md)。
 
     > [!NOTE]
-    >  不能定义 SharePoint 工具扩展，在同一项目中实现 SharePoint 命令，因为 SharePoint 命令针对.NET Framework 3.5 和 SharePoint 工具扩展目标[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 必须定义任何由你在一个单独的项目中的扩展的 SharePoint 命令。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+    > 不能定义 SharePoint 工具扩展，在同一项目中实现 SharePoint 命令，因为 SharePoint 命令针对.NET Framework 3.5 和 SharePoint 工具扩展目标[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。 必须定义任何由你在一个单独的项目中的扩展的 SharePoint 命令。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
 2. 添加对下列程序集的引用：
 

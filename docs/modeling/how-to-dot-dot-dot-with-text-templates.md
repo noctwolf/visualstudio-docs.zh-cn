@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993542"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 在 Visual Studio 中的文本模板提供任何类型的生成文本的有用的方法。 可以使用文本模板生成文本，在你的应用程序的一部分运行时和在设计时生成的某些项目代码。 本主题总结了最常要求"如何实现...？" 问题。

@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444986"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全、版本控制和清单问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ ms.locfileid: "60043675"
  如果你想要移动或复制应用程序，则还必须更新`deploymentProvider`路径，以便在客户端实际安装从新位置。 正在更新此路径是主要是一个问题，如果你已安装应用程序。 联机应用程序通过设置的原始 URL 始终启动`deploymentProvider`是可选的。 如果`deploymentProvider`，则将起作用，否则，用于启动应用程序的 URL 将使用用作基 URL，以下载应用程序文件。  
   
 > [!NOTE]
->  每次更新的清单时您必须还对其签名再次。  
+> 每次更新的清单时您必须还对其签名再次。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6affc24a84ef4d008ece5f95e45a11eb70f33b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854708"
 ---
 # <a name="symbols-and-symbol-tags"></a>符号和符号标记
 使用调试接口访问 (DIA) SDK Api 可以访问的符号作为在程序数据库 (.pdb) 文件中存储有关已编译的程序的调试信息。 所有符号都有[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和一个[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)属性。 `symTag`属性指示符号的类型由定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 `symIndexId`属性是`DWORD`值，该值包含一个符号的每个实例的唯一标识符。

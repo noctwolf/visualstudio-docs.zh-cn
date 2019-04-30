@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441738"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用内容控件保护文档的某些部分
   当你保护文档的一部分时，将阻止用户更改或删除文档该部分中的内容。 通过使用内容控件，有以下几种方法来保护 Microsoft Office Word 文档的各个部分：
@@ -73,7 +73,7 @@ ms.locfileid: "60103507"
 - 想要保护其中已包含内容控件，但想要保护的文本或其他项不在内容控件中的区域。
 
 > [!NOTE]
->  如果创建包含嵌入式内容控件的 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则不会自动保护嵌入的内容控件。 若要阻止用户编辑嵌入的内容控件，请使用**LockContents**控件的属性。
+> 如果创建包含嵌入式内容控件的 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则不会自动保护嵌入的内容控件。 若要阻止用户编辑嵌入的内容控件，请使用**LockContents**控件的属性。
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>若要在设计时保护文档的某一区域
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103507"
 2. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 3. 在中**控件**组中，单击**组**下拉列表按钮，然后再单击**组**。
 

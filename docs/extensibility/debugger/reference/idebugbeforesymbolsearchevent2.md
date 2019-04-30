@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4f563d8cd40a8c30542b1aa93fa22afc8d161a52
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923736"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 调试引擎 (DE) 期间将发送此接口到会话调试管理器 (SDM) 设置的状态消息栏符号加载。

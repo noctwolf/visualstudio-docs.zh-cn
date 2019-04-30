@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425668"
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 在创建新项目类型时，必须创建注册表项，使[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来识别和处理您的项目类型。 您通常使用注册表脚本 (.rgs) 文件创建这些注册表项。
@@ -25,7 +25,7 @@ ms.locfileid: "56623809"
  在下面的示例中，从注册表语句提供默认路径和数据 （如果适用） 后, 跟的表包含每个语句的注册表脚本中的条目。 表提供了脚本条目和语句的附加信息。
 
 > [!NOTE]
->  下面的注册表信息用于类型的示例和您将编写注册您的项目类型的注册表脚本中的条目的目的。 实际的条目和它们的用途可能因您的项目类型的特定要求。 您应查看可用于找到相似的项目进行开发，类型的一个示例，然后查看该示例注册表脚本。
+> 下面的注册表信息用于类型的示例和您将编写注册您的项目类型的注册表脚本中的条目的目的。 实际的条目和它们的用途可能因您的项目类型的特定要求。 您应查看可用于找到相似的项目进行开发，类型的一个示例，然后查看该示例注册表脚本。
 
  下面的示例是从 HKEY_CLASSES_ROOT。
 
@@ -47,7 +47,7 @@ ms.locfileid: "56623809"
    @="devenv.exe \"%1\""
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|具有扩展.figp 的文件类型名称和项目的说明。|
 |`Content Type`|REG_SZ|`Text/plain`|项目文件的的内容类型。|
@@ -79,7 +79,7 @@ ms.locfileid: "56623809"
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |`@` （默认值）|REG_SZ|`FigPrj Project VSPackage`|这可本地化的名称注册 VSPackage （项目类型）。|
 |`InprocServer32`|REG_SZ|`%MODULE%`|DLL 的项目类型的路径。 IDE 加载此 DLL，并将传递到 VSPackage CLSID`DllGetClassObject`若要获取<xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory>构造<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>对象。|
@@ -130,7 +130,7 @@ ms.locfileid: "56623809"
    "SortPriority"=dword:00000064
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|此类型的项目的默认名称。|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|包下注册的名称的资源 ID 来检索从附属 DLL。|
@@ -170,7 +170,7 @@ ms.locfileid: "56623809"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|新项目模板的资源 ID。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|默认为已注册的项目类型的项目的路径。|
@@ -191,9 +191,9 @@ ms.locfileid: "56623809"
    "SortPriority"=dword:00000064
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|无|默认值，该值指示以下条目，是用于杂项文件项目项。|
+|`@`|REG_SZ|None|默认值，该值指示以下条目，是用于杂项文件项目项。|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|添加新项模板文件的资源 ID 值。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|将显示在项的默认路径**添加新项**对话框。|
 |`SortPriority`|REG_DWORD|`100 (vcprx64)`|建立的树节点中显示的排序顺序**添加新项**对话框。|
@@ -220,7 +220,7 @@ ms.locfileid: "56623809"
 
   最后一个字段标识 CTMENU 资源的版本号。 你可以通过更改版本号再次合并菜单。
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |%CLSID_Package%|REG_SZ|`,1000,1`|要检索的菜单信息的资源。|
 
@@ -234,7 +234,7 @@ ms.locfileid: "56623809"
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|图项目新项目模板的资源 ID 值。|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|新的项目目录的默认路径。 此目录中的项将显示在**新建项目向导**对话框。|
@@ -249,7 +249,7 @@ ms.locfileid: "56623809"
    "UseInterface"=dword:00000001
 ```
 
-|name|类型|数据|描述|
+|名称|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|类 ID 的已注册 VSPackage。|
 |`UseInterface`|REG_DWORD|`1`|1 表示 UI 将用于与此项目进行交互。 0 表示没有 UI 界面。|

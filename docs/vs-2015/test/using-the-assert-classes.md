@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 338a18bb48c20c20fa1f89583ed0d4af84c99d5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408393"
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "54834617"
  测试生成无结论的结果时，将引发 AssertInconclusiveException。 通常，将 Assert.Inconclusive 语句添加到仍在进行的测试中以指示它尚未准备好运行。  
   
 > [!NOTE]
->  替代策略将使用 Ignore 属性标记尚未准备好运行的测试。 但是，这样做的弊端是你无法轻松地对尚待执行的测试的数量生成报表。  
+> 替代策略将使用 Ignore 属性标记尚未准备好运行的测试。 但是，这样做的弊端是你无法轻松地对尚待执行的测试的数量生成报表。  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   

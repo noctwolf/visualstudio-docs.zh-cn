@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813967"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：部署和发布到本地 SharePoint 站点的 SharePoint 解决方案
   可以部署或在开发计算机上将 SharePoint 解决方案发布到本地 SharePoint 服务器。 部署进程副本 *.wsp*文件到 SharePoint 服务器，安装该解决方案，然后激活功能。 发布处理仅副本 *.wsp*到 SharePoint 服务器的文件并将其安装。 您必须手动激活它，以使它在 SharePoint 中。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823989"
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 
@@ -58,7 +58,7 @@ ms.locfileid: "55938145"
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |继承修饰符|说明图像形状从生成的源代码类继承的类型 (`none`，`abstract`或`sealed`)。|无|
 |基本图像形状|此形状的基类。|(无)|
-|name|此形状的名称。|当前名称|
+|名称|此形状的名称。|当前名称|
 |命名空间|与此形状相关联的命名空间。|当前命名空间|
 |工具提示类型|其中定义工具提示的位置 （固定的变量，或无）。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，然后在工具提示中定义自定义代码。|无|
 |说明|与此形状相关联的非正式说明。|\<none>|

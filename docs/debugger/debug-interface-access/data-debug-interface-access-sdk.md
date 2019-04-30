@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f0cf6e4f02d8a80f74d0edb46e188b41bfb425c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554943"
 ---
 # <a name="data-debug-interface-access-sdk"></a>数据（调试界面访问 SDK）
 所有变量，如参数、 局部变量、 全局变量和类成员，由都标识`SymTagData`符号。 常量值 (`LocIsConstant`) 还可以标识与此类型。
@@ -28,7 +28,7 @@ ms.locfileid: "56644492"
 ## <a name="properties"></a>属性
  下表显示适用于此符号类型的属性。
 
-|属性|数据类型|说明|
+|属性|数据类型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|如果一个字段，然后的值之一[CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)。|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|偏移量部分的位置;有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|

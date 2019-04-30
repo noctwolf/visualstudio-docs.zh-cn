@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898115"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 部署疑难解答
 本主题可帮助您诊断和解决最常见的问题与[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。
@@ -32,7 +32,7 @@ ms.locfileid: "56612576"
 
 ## <a name="deployment-considerations"></a>部署注意事项
 
- [如何：为 ClickOnce 部署错误设置一个自定义日志文件位置](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
+ [如何：设置 ClickOnce 部署错误的自定义日志文件位置](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
  介绍如何重定向所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]到单个日志文件的计算机上的激活失败。
 

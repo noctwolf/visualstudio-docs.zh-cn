@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439258"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：在编辑器中更改文本大小写
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060314"
 可使用菜单命令或键盘快捷方式将所选文本全部转换为大写或小写。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="procedure"></a>过程  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60060314"
      若要将文本全部转换为小写，请选择“转换为小写”，或按 Ctrl+U。  
   
     > [!TIP]
-    >  若要还原到此更改前的大小写格式，请从“编辑”菜单中选择“撤消”。  
+    > 若要还原到此更改前的大小写格式，请从“编辑”菜单中选择“撤消”。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义编辑器](../ide/customizing-the-editor.md)   

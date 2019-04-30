@@ -8,11 +8,11 @@ ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
 manager: jillfra
 ms.openlocfilehash: 47e99e64e96c0572f7b3c9e93c0ee034afcfd9f1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002129"
 ---
 # <a name="vssdk-samples"></a>VSSDK 示例
 Visual Studio 扩展性示例的官方主页是 [MSDN 代码库](http://go.microsoft.com/fwlink/?LinkID=127810) 网站。 网站包含介绍性示例、演示 Visual Studio 中新功能的示例、深入探讨文档、共享源项目的链接和帮助扩展 Visual Studio 的其他资源。 若要查看这些资源的列表，请在主页上的“搜索示例”  框中键入 **VSX** 。  

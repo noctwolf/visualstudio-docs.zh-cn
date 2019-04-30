@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 727c999e275830260ce83eac3d2d72024e89882b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909853"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定义的命令、菜单和组
 多个菜单、 命令和命令组已定义以供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 在扩展时，这些命令也已可供你使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837857"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
 检索一个枚举，允许客户端进行循环访问，将内联，直接或间接地，此符号中指定的虚拟地址 (VA) 中的所有函数的行号信息。

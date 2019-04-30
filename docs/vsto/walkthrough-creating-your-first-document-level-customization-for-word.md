@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66580d29c50332d32554334e1315d7be88810a0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438513"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>演练：创建 word 在第一个文档级自定义项
   本介绍性演练演示了如何创建 Microsoft Office Word 的文档级自定义项。 仅在特定文档处于打开状态时，才可提供你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何文档处于打开状态时显示新“功能区”选项卡。
@@ -112,7 +112,7 @@ ms.locfileid: "60095452"
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    >  此代码使用索引值 1 来访问 <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> 属性的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。
+    > 此代码使用索引值 1 来访问 <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> 属性的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。
 
 ## <a name="test-the-project"></a>测试项目
 

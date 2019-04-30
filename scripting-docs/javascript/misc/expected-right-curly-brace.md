@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 02d6772a6bfe8d71c65fb866f097d3f2da97f86a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935006"
 ---
 # <a name="expected-"></a>应有“}”
 未包含标记的函数体、 循环、 代码块末尾的右大括号或对象初始值设定项。 此错误的示例将**为**仅标记的循环主体的左大括号的循环。  

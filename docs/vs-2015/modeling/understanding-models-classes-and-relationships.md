@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424334"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ ms.locfileid: "60108685"
  当将模型保存到文件以 XML 形式，嵌入的元素都放在其父项，除非自定义序列化。  
   
 > [!NOTE]
->  嵌入与继承不同。 中的嵌入关系的子级不继承父项的属性。 嵌入是链接的一种模型元素之间。 继承类之间的关系并不会创建模型元素之间的链接。  
+> 嵌入与继承不同。 中的嵌入关系的子级不继承父项的属性。 嵌入是链接的一种模型元素之间。 继承类之间的关系并不会创建模型元素之间的链接。  
   
 ### <a name="embedding-rules"></a>嵌入的规则  
  实例模型中的每个元素必须是一个嵌入链接，但模型根除外的目标。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912515"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
 您可以通过指定在运行时添加菜单项`DynamicItemStart`命令在 Visual Studio 命令表中的占位符按钮定义的标志 (*.vsct*) 文件，然后 （在代码中） 定义要显示的菜单项的数量和处理命令。 加载 VSPackage 时，包含动态菜单项会替换占位符。

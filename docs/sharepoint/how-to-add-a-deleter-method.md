@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418353"
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：添加 Deleter 方法
   可以启用最终用户可以向模型添加 Deleter 方法从 SharePoint 站点上的外部列表中删除数据记录。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -58,10 +58,10 @@ ms.locfileid: "56644388"
 5. 将代码添加到要删除的记录的删除器方法。 下面的示例使用 AdventureWorks 示例数据库的 SQL Server 从销售订单删除行项。
 
    > [!NOTE]
-   >  此示例中的方法使用两个输入的参数。
+   > 此示例中的方法使用两个输入的参数。
 
    > [!NOTE]
-   >  值替换为`ServerName`字段与服务器的名称。
+   > 值替换为`ServerName`字段与服务器的名称。
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

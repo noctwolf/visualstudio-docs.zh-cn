@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441639"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>通过编辑 DGML 文件自定义代码图
 
@@ -117,7 +117,7 @@ ms.locfileid: "60047718"
 - 基于特定条件的代码元素和链接组
 
 > [!TIP]
->  如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅[为代码元素和链接分配类别](#AssignCategories)并[为代码元素和链接分配属性](#AssignProperties)。
+> 如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅[为代码元素和链接分配类别](#AssignCategories)并[为代码元素和链接分配属性](#AssignProperties)。
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>将自定义样式应用于单个代码元素
 
@@ -555,7 +555,7 @@ ms.locfileid: "60047718"
  可以通过以下方式将文档或 URL 链接到代码元素或链接：编辑代码图的 .dgml 文件并将 `Reference` 特性添加到代码元素的 `<Node/>` 元素或链接的 `<Link/>` 元素。 然后，你可以打开并查看代码元素或链接的内容。 `Reference` 特性指定该内容的路径。 此路径可能是相对于 .dgml 文件位置的路径，也可能是绝对路径。
 
 > [!CAUTION]
->  如果使用相对路径，并将 .dgml 文件移至其他位置，则将不再解析这些路径。 当你尝试打开并查看链接内容时，将出现表示内容无法查看的错误。
+> 如果使用相对路径，并将 .dgml 文件移至其他位置，则将不再解析这些路径。 当你尝试打开并查看链接内容时，将出现表示内容无法查看的错误。
 
  例如，你可能希望链接以下代码元素：
 
@@ -580,7 +580,7 @@ ms.locfileid: "60047718"
    - 在 `<Node/>` 或 `<Link/>` 元素中，添加 `Reference` 特性以指定代码元素的位置。
 
      > [!NOTE]
-     >  每个元素只能具有一个 `Reference` 特性。
+     > 每个元素只能具有一个 `Reference` 特性。
 
      例如：
 

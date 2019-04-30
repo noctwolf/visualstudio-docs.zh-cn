@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f717345689de9be640e03e9c7d81726a57d494b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008277"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练：创建自定义站点工作流活动
   本演练演示如何创建自定义活动的站点级工作流使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （站点级工作流应用于整个站点，而不仅仅是在站点上的列表。）自定义活动创建的备份通知列表，然后将公告列表的内容复制到其中。

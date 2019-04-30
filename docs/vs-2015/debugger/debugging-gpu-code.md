@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434869"
 ---
 # <a name="debugging-gpu-code"></a>调试 GPU 代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60114127"
  [!INCLUDE[win7](../includes/win7-md.md)]、[!INCLUDE[win8](../includes/win8-md.md)]、[!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] 和 [!INCLUDE[winserver8](../includes/winserver8-md.md)] 上支持调试。 对于在软件模拟器上进行的调试，需要 [!INCLUDE[win8](../includes/win8-md.md)] 或 [!INCLUDE[winserver8](../includes/winserver8-md.md)]。 对于在硬件上进行的调试，您必须为图形卡安装驱动程序。 并非所有硬件供应商都实现所有调试器功能。 有关限制，请参阅供应商文档。  
   
 > [!NOTE]
->  希望在 Visual Studio 中支持 GPU 调试的独立硬件供应商必须创建一个 DLL, 该 DLL 实现 VSD3DDebug 接口并面向其自己的驱动程序。  
+> 希望在 Visual Studio 中支持 GPU 调试的独立硬件供应商必须创建一个 DLL, 该 DLL 实现 VSD3DDebug 接口并面向其自己的驱动程序。  
   
 ## <a name="configuring-gpu-debugging"></a>配置 GPU 调试  
  调试器无法同时在同一应用执行中的 CPU 代码和 GPU 代码处中断。 默认情况下，调试器在 CPU 代码处中断。 若要调试 GPU 代码，请使用以下两个步骤之一：  

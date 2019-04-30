@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 056403fd0f1c90f53105c84f30fc2be2383900bf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433430"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 元素 （Visual Studio 模板）
 指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统将生成的模板中的默认名称**添加新项**或**新项目**对话框。

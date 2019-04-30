@@ -8,12 +8,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f792c29b50be5bbadf34980b81f7c5dd329cccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442829"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60096616"
 单元测试往往反映被测代码的结构。 例如，系统会为项目中的每个代码项目创建一个单元测试项目。 测试项目可以与成品代码位于同一解决方案中，也可以位于单独的解决方案中。 解决方案中可以有多个单元测试项目。  
   
 > [!NOTE]
->  本机代码的单元测试位置和测试项目结构可能与本主题中描述的结构不同。 有关详细信息，请参阅[向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。  
+> 本机代码的单元测试位置和测试项目结构可能与本主题中描述的结构不同。 有关详细信息，请参阅[向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。  
   
 ## <a name="to-create-a-unit-test-project"></a>创建单元测试项目：  
   

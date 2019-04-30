@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564107"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定你预期程序中的某个点为 true 的条件。 如果该条件不为 true，则断言失败，程序执行中断并显示[“断言失败”对话框](../debugger/assertion-failed-dialog-box.md)。

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16f3a33ff273b62c701eae66d8fda1ff7178c5c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965036"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到的文件扩展名
 您可以定义您自己的内容类型和使用的编辑器 Managed Extensibility Framework (MEF) 扩展链接到它的文件扩展名。 在某些情况下，文件扩展名已由语言服务定义。 但是，若要使用 MEF 中使用它，你必须仍将其链接到内容类型。

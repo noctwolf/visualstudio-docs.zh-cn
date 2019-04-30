@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903751"
 ---
 # <a name="process-properties-dialog-box"></a>“进程属性”对话框
-使用此对话框中，若要了解有关特定的进程的详细信息。 若要显示此对话框中，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 在树中，选择任何进程节点，然后选择**属性**从**视图**菜单。
+使用此对话框中，若要了解有关特定的进程的详细信息。 若要显示此对话框中，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”菜单中选择“属性”。
 
  Windows 98 和 Windows 95 在操作系统上，修改版本的**常规**显示选项卡。
 

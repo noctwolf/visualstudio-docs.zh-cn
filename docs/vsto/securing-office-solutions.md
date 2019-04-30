@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978576"
 ---
 # <a name="secure-office-solutions"></a>保护 Office 解决方案
   Office 解决方案的安全模型涉及多种技术： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限的站点区域中的信任中心。 以下各节介绍不同安全功能的工作方式：

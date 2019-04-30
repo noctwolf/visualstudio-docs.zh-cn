@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441019"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程序代码中从文件打开模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60071845"
 3. 在项目属性窗口中，在**应用程序**选项卡上，设置**目标框架**字段 **.NET Framework 4**。  
   
 > [!NOTE]
->  可能需要执行此操作，即使所选 **.NET Framework 4**项目创建对话框中。 不应为目标框架 **.NET Framework 4 Client Profile**。  
+> 可能需要执行此操作，即使所选 **.NET Framework 4**项目创建对话框中。 不应为目标框架 **.NET Framework 4 Client Profile**。  
   
 ## <a name="references"></a>参考资料  
  您必须添加到这些引用在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应用程序项目：  

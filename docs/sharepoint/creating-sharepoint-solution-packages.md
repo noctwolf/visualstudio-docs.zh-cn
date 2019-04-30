@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952713"
 ---
 # <a name="create-sharepoint-solution-packages"></a>创建 SharePoint 解决方案包
   通过使用包设计器，可以创建和自定义部署包。 例如，可以添加 SharePoint 项目项和功能，重置 IIS 服务器、 设置功能激活作用域，并识别功能依赖关系。 在设计器还会生成一个清单，描述每个包的 XML 文件。

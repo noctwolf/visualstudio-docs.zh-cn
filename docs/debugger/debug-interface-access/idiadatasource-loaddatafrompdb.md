@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554139"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
 此时将打开并准备程序数据库 (.pdb) 文件用作调试数据源。
@@ -38,7 +38,7 @@ pdbPath
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。
 
-|“值”|说明|
+|“值”|描述|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|无法打开该文件，或确定该文件具有无效的格式。|
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|

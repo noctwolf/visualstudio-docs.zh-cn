@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967352"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>扩展服务器资源管理器中的 SharePoint 连接节点
   在 Visual Studio 中，您可以使用连接到开发计算机上的本地 SharePoint 站点**SharePoint 连接**中的节点**服务器资源管理器**窗口。 此节点显示许多组件的本地 SharePoint 站点层次结构树视图中。 例如，您可以在本地站点上查看列表、 文档库和内容类型。 有关使用详细信息**服务器资源管理器**若要连接到本地 SharePoint 站点，请参阅[使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)。

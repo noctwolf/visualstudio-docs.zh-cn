@@ -10,11 +10,11 @@ ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822572"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>确定项目的默认命名空间
 有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，如果`CustomToolNamespace`输入文件，然后的值上设置属性`CustomToolNamespace`成为传递给的默认命名空间参数的值<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>方法。 否则为`wszDefaultNamespace`参数传递给`Generate`也始终等于根命名空间。 命名空间的详细信息，请参阅[Namespace 关键字](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b)。  

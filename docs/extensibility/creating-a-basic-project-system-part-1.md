@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409988"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和其他资产的容器。 项目显示为解决方案中的子级**解决方案资源管理器**。 项目可组织、 生成、 调试和部署的源代码和创建对 Web 服务、 数据库和其他资源的引用。
@@ -25,7 +25,7 @@ ms.locfileid: "60060301"
  项目文件中定义项目，例如 *.csproj* Visual C# 项目文件。 可以创建自己的项目类型具有自己的项目文件扩展名。 有关项目类型的详细信息，请参阅[项目类型](../extensibility/internals/project-types.md)。
 
 > [!NOTE]
->  如果你需要使用自定义项目类型来扩展 Visual Studio，我们强烈建议利用[Visual Studio 项目系统](https://github.com/Microsoft/VSProjectSystem)(VSP) 具有一系列通过生成一个从零开始的项目系统的优势：
+> 如果你需要使用自定义项目类型来扩展 Visual Studio，我们强烈建议利用[Visual Studio 项目系统](https://github.com/Microsoft/VSProjectSystem)(VSP) 具有一系列通过生成一个从零开始的项目系统的优势：
 >
 > - 更轻松的载入。  基本项目系统需要成千上万行代码。  利用 VSP 可以载入成本减少到几次单击之前已准备好你的需求进行自定义。
 > - 更便于维护。  通过利用 VSP，只需维护自己的方案。  我们处理所有项目系统基础结构在其的执行。
@@ -35,7 +35,7 @@ ms.locfileid: "60060301"
  本演练演示如何创建具有项目文件扩展名的项目类型 *.myproj*。 本演练中利用的现有的 Visual C# 项目系统。
 
 > [!NOTE]
->  扩展项目的更多示例，请参阅[VSSDK 示例](https://aka.ms/vs2015sdksamples)。
+> 扩展项目的更多示例，请参阅[VSSDK 示例](https://aka.ms/vs2015sdksamples)。
 
  本演练介绍了如何完成这些任务：
 
@@ -101,7 +101,7 @@ ms.locfileid: "60060301"
    ```
 
    > [!IMPORTANT]
-   >  这不是最终的窗体*Program.cs*代码; 参数将在后面的步骤处理的替换。 你可能会看到编译错误，但只要文件的**BuildAction**是**内容**，您应该能够生成并照常运行项目。
+   > 这不是最终的窗体*Program.cs*代码; 参数将在后面的步骤处理的替换。 你可能会看到编译错误，但只要文件的**BuildAction**是**内容**，您应该能够生成并照常运行项目。
 
 7. 保存该文件。
 
@@ -110,7 +110,7 @@ ms.locfileid: "60060301"
 9. 在中*Projects\SimpleProject*文件夹中添加名为 XML 文件*SimpleProject.myproj*。
 
    > [!NOTE]
-   >  此类型的所有项目的文件扩展名是 *.myproj*。 如果你想要对其进行更改，必须在本演练中提到的所有位置更改。
+   > 此类型的所有项目的文件扩展名是 *.myproj*。 如果你想要对其进行更改，必须在本演练中提到的所有位置更改。
 
 10. 现有内容替换为以下行。
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  请不要忘记在路径末尾的反斜杠。
+        > 请不要忘记在路径末尾的反斜杠。
 
     3. 重新加载项目。
 

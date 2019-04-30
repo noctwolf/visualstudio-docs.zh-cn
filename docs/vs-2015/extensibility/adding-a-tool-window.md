@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444834"
 ---
 # <a name="adding-a-tool-window"></a>添加工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60087557"
 1. 创建一个名为项目**FirstToolWin**使用 VSIX 模板，并添加一个名为的自定义工具窗口项模板**FirstToolWindow**。  
   
     > [!NOTE]
-    >  有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+    > 有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="add-a-control-to-the-tool-window"></a>将控件添加到工具窗口  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      第一个命名的参数是`Style`，其值为`Tabbed`，这意味着窗口将在现有窗口中的选项卡。 停靠的位置由指定`Window`参数，这种情况下，n 的 GUID**解决方案资源管理器**。  
   
     > [!NOTE]
-    >  有关在 IDE 中窗口的类型的详细信息，请参阅<xref:EnvDTE.vsWindowType>。  
+    > 有关在 IDE 中窗口的类型的详细信息，请参阅<xref:EnvDTE.vsWindowType>。  
   
 ## <a name="testing-the-tool-window"></a>测试工具窗口  
   

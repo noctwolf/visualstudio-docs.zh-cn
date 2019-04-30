@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446100"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60076206"
 2. 在下载页上，选择与匹配 (x 86、 x64 或 ARM 版本） 操作系统的版本的工具和下载远程工具。
   
     > [!IMPORTANT]
-    >  我们建议安装最新版本的远程工具与你的 Visual Studio 版本匹配。 不建议版本不匹配。  
+    > 我们建议安装最新版本的远程工具与你的 Visual Studio 版本匹配。 不建议版本不匹配。  
     >   
     >  此外，必须安装具有相同的体系结构作为你想要将其安装操作系统的远程工具。 换而言之，如果你想要调试远程计算机运行 64 位操作系统上的 32 位应用程序，您必须在远程计算机上安装远程工具的 64 位版本。  
   
@@ -145,7 +145,7 @@ ms.locfileid: "60076206"
    默认情况下使用的端口号的列表，请参阅[Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)。  
   
    > [!WARNING]
-  >  可以选择在“无身份验证”模式下运行远程工具，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
+  > 可以选择在“无身份验证”模式下运行远程工具，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。
 
 ## <a name="bkmk_configureService"></a> （可选）配置远程调试器作为服务
  用于调试 ASP.NET 和其他服务器环境中，您必须以管理员身份运行远程调试器或时，如果希望始终运行，作为服务运行远程调试器。
@@ -221,7 +221,7 @@ ms.locfileid: "60076206"
 11. 在 Visual Studio 计算机上，你应看到在断点处已停止执行。  
   
     > [!TIP]
-    >  或者，你可以采用单独的步骤部署文件。 在“解决方案资源管理器”中，右键单击“mymfc”节点，然后选择“部署”。  
+    > 或者，你可以采用单独的步骤部署文件。 在“解决方案资源管理器”中，右键单击“mymfc”节点，然后选择“部署”。  
   
     如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 / 新建文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 / 现有项**，然后选择的文件。)。 在每个文件的“属性”页中，将“复制到输出目录”设置为“始终复制”。  
   
@@ -253,7 +253,7 @@ ms.locfileid: "60076206"
 10. 将你刚才从 Visual Studio 计算机生成的可执行文件复制到远程计算机上新创建的文件夹。
   
     > [!CAUTION]
-    >  对代码或重新生成不会进行任何更改 （或必须重复此步骤）。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。
+    > 对代码或重新生成不会进行任何更改 （或必须重复此步骤）。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。
 
     可以手动复制该项目，使用 Xcopy、 Robocopy、 Powershell 或其他选项。
   

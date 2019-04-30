@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447162"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。
@@ -69,7 +69,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```
 
 > [!NOTE]
->  有关使用全局`missing`变量代替可选参数在 Visual C# 中，请参阅[Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。
+> 有关使用全局`missing`变量代替可选参数在 Visual C# 中，请参阅[Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。
 
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>在文档级自定义项从 VBA 中调用代码
  可以配置 Word 或 Excel 的文档级项目，以便文档中的 Visual Basic for Applications (VBA) 代码能够调用自定义程序集中的代码。 这在以下应用场景中很有用：
@@ -81,7 +81,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Visual Studio 中的 Office 开发工具可为 VSTO 外接程序提供相似的功能。如果你正在开发 VSTO 外接程序，可以从其他 Microsoft Office 解决方案调用 VSTO 外接程序中的代码。 有关详细信息，请参阅[从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。
 
 > [!NOTE]
->  此功能无法在 Word 模板项目中使用。 它只能在 Word 文档、Excel 工作簿或 Excel 模板项目中使用。
+> 此功能无法在 Word 模板项目中使用。 它只能在 Word 文档、Excel 工作簿或 Excel 模板项目中使用。
 
 ## <a name="requirements"></a>要求
  你的项目必须满足以下要求，然后才能使 VBA 代码调入自定义项程序集：
@@ -120,7 +120,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 属性仅在设计时在 **“属性”** 窗口中可用，无法在运行时使用。 若要查看这些属性，请在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开主机项的设计器。 Visual Studio 设置这些属性时执行的特定任务的详细信息，请参阅[由主机项属性执行的任务](#PropertyTasks)。
 
 > [!NOTE]
->  如果工作簿或文档尚未包含 VBA 代码，或者如果运行文档中的 VBA 代码时不信任该代码，则在将 **“EnableVbaCallers”** 或 **“ReferenceAssemblyFromVbaProject”** 属性设置为 **“True”** 时，你将收到一条错误消息。 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
+> 如果工作簿或文档尚未包含 VBA 代码，或者如果运行文档中的 VBA 代码时不信任该代码，则在将 **“EnableVbaCallers”** 或 **“ReferenceAssemblyFromVbaProject”** 属性设置为 **“True”** 时，你将收到一条错误消息。 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。
 
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>使用成员中的 VBA 代码调入自定义程序集
  在将项目配置为使 VBA 代码能够调入自定义项程序集后，Visual Studio 会将以下成员添加到文档中的 VBA 项目：
@@ -132,7 +132,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   可以使用 `CallVSTOAssembly` 属性或 `GetManagedClass` 方法来访问向项目中的 VBA 代码公开的类的公共成员。
 
 > [!NOTE]
->  在开发和部署解决方案时，可以在多个不同的文档副本中添加 VBA 代码。 有关详细信息，请参阅[向文档添加 VBA 的准则代码](#Guidelines)。
+> 在开发和部署解决方案时，可以在多个不同的文档副本中添加 VBA 代码。 有关详细信息，请参阅[向文档添加 VBA 的准则代码](#Guidelines)。
 
 ### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>在 Visual Basic 项目中使用 CallVSTOAssembly 属性
  使用 `CallVSTOAssembly` 属性来访已添加到主机项类的公共成员。 例如，下面的 VBA 宏调用一个名为 `MyVSTOMethod` 的方法，该方法是在 Excel 工作簿项目的 `Sheet1` 类中定义的。
@@ -189,7 +189,7 @@ GetManagedClass(pdispInteropObject Object) As Object
  当文档在设计器中处于打开状态时，无法向其中添加 VBA 代码。 必须先在设计器中关闭文档，然后在 Word 或 Excel 中直接打开该文档。
 
 > [!CAUTION]
->  如果添加在可以打开文档时运行的 VBA 代码，在极少数情况下，此代码可能损坏文档，或或使文档无法在设计器中打开。
+> 如果添加在可以打开文档时运行的 VBA 代码，在极少数情况下，此代码可能损坏文档，或或使文档无法在设计器中打开。
 
 ### <a name="in-the-publish-or-installation-folder"></a>发布或安装文件夹中
  在某些情况下，可能适合将 VBA 代码添加到发布文件夹或安装文件夹中的文档。 例如，如果 VBA 代码是由其他开发人员在未安装 Visual Studio 的计算机上编写和测试的，你可以选择此选项。
@@ -220,7 +220,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 5. 从主机项类删除 **GetAutomationObject** 方法。
 
    > [!NOTE]
-   >  Visual Studio 不会自动将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**。 可以使用 **“属性”** 窗口将此属性手动设置为 **False** 。
+   > Visual Studio 不会自动将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**。 可以使用 **“属性”** 窗口将此属性手动设置为 **False** 。
 
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject
  当 Visual Basic 项目或 Visual C# 项目中任何主机项的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**时，Visual Studio 将执行以下任务：

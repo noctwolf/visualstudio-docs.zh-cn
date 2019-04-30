@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b2a73dfae7772d8edec076238704aa1b52c9b028
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383444"
 ---
 # <a name="creating-a-custom-debug-engine"></a>创建自定义调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60111514"
 调试引擎 (DE) 是允许调试特定运行时体系结构的组件。 通常是只有一个 DE 实现每个运行时环境。  
   
 > [!NOTE]
->  虽然有单独的 DE 实现 TRANSACT-SQL 和 JScript，VBScript 和 JScript 共享单个 DE。  
+> 虽然有单独的 DE 实现 TRANSACT-SQL 和 JScript，VBScript 和 JScript 共享单个 DE。  
   
  部署适用于解释器或操作系统提供执行控制、 断点、 和表达式计算等调试服务。 这些服务通过 DE 接口实现，并可能会导致调试程序对不同的操作模式之间的转换。 有关详细信息，请参阅[操作模式](../../extensibility/debugger/operational-modes.md)。  
   

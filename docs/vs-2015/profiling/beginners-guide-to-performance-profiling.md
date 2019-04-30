@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433818"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>性能分析初学者指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60059222"
  如果**采样**未提供所需数据，其他分析工具收集方法可提供可能有帮助的不同种类的信息。 有关这些其他方法的详细信息，请参阅[如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)。  
   
 > [!TIP]
->  如果分析调用 Windows 函数的代码，应确保具有最新的 .pdb 文件。 如果没有这些文件，报告视图将列出含义隐晦、难以理解的 Windows 函数名称。 有关如何确保具有所需文件的详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
+> 如果分析调用 Windows 函数的代码，应确保具有最新的 .pdb 文件。 如果没有这些文件，报告视图将列出含义隐晦、难以理解的 Windows 函数名称。 有关如何确保具有所需文件的详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
   
 ## <a name="Step1"></a>创建并运行性能会话  
  若要获取需要分析的数据，必须先创建性能会话，然后运行会话。 可通过**性能向导**实现这两项操作。  
@@ -46,7 +46,7 @@ ms.locfileid: "60059222"
 1. 在 Visual Studio 中打开解决方案。 设置要发布的配置。 （在工具栏上找到“解决方案配置”框，默认情况下它设置为“调试”。 将其更改为“发布”。）  
   
     > [!IMPORTANT]
-    >  如果你在所使用的计算机上并非管理员身份，则在使用探查器时应以管理员身份运行 Visual Studio。 （右键单击 Visual Studio 应用程序图标，然后单击“以管理员身份运行”。  
+    > 如果你在所使用的计算机上并非管理员身份，则在使用探查器时应以管理员身份运行 Visual Studio。 （右键单击 Visual Studio 应用程序图标，然后单击“以管理员身份运行”。  
   
 2. 在“调试”菜单上，单击“性能探查器”。  
   

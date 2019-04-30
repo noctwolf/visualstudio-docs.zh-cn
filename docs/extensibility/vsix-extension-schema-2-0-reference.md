@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411129"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。
 
 > [!IMPORTANT]
->  Visual Studio 2015 可以加载 Visual Studio 2010、 Visual Studio 2012 或 Visual Studio 2013 格式的 VSIX 文件。
+> Visual Studio 2015 可以加载 Visual Studio 2010、 Visual Studio 2012 或 Visual Studio 2013 格式的 VSIX 文件。
 
 ## <a name="package-manifest-schema"></a>包清单架构
  清单 XML 文件的根元素是`<PackageManifest>`。 它具有单个属性`Version`，即清单格式的版本。 如果对格式进行了重大更改，则更改的版本格式。 本指南介绍了清单格式版本 2.0 中，通过设置指定在清单中`Version`属性版本的值 ="2.0"。

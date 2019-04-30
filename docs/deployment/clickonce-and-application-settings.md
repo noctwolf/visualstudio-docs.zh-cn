@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153df515fc762b7262dce81d8c1d1c4fe617ad61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900606"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和应用程序设置
 Windows 窗体的应用程序设置，可以轻松地创建、 存储和维护自定义应用程序和客户端上的用户首选项。 以下文档介绍了在 ClickOnce 应用程序中，应用程序设置文件的工作方式和用户升级到下一版本时，ClickOnce 如何迁移设置。

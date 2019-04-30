@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418313"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：将筛选器描述符添加到 Finder 方法
   筛选器描述符，它们执行之前将值传递给方法的模型的使用者。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -62,7 +62,7 @@ ms.locfileid: "60068660"
      以下示例返回具有指定的订单日期的销售订单。
 
     > [!NOTE]
-    >  值替换为`ServerName`字段与服务器的名称。
+    > 值替换为`ServerName`字段与服务器的名称。
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]

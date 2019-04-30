@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982098"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练：更改文档格式设置使用 CheckBox 控件
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改文本格式。

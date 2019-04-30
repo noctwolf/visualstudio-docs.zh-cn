@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443084"
 ---
 # <a name="how-to-localize-code"></a>如何：本地化代码
   未本地化的代码使用硬编码的字符串值。 若要本地化代码字符串，将其替换为对调用<xref:System.Web.HttpContext.GetGlobalResourceObject%2A>，这是引用本地化的资源的方法。
@@ -32,7 +32,7 @@ ms.locfileid: "60066281"
      选择**资源文件**模板。
 
     > [!NOTE]
-    >  请确保将资源文件添加到 SharePoint 项目项，以便部署类型属性。 稍后在此过程需要此属性。
+    > 请确保将资源文件添加到 SharePoint 项目项，以便部署类型属性。 稍后在此过程需要此属性。
 
 2. 为追加与所选的指定名称的默认语言资源文件 *.resx*扩展，如*MyAppResources.resx*。
 

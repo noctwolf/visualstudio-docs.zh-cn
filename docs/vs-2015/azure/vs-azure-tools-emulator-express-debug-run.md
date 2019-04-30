@@ -11,11 +11,11 @@ ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.openlocfilehash: 8ce7337350ac80e1992e850eb10d0ac7297f9502
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963556"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本地计算机上运行和调试 Azure 云服务
 通过使用 Emulator Express，可以测试和调试云服务，而不需要以管理员身份运行 Visual Studio。 可以将项目设置指定为根据云服务的要求使用 Emulator Express 或完整版模拟器。 有关完整模拟器的详细信息，请参阅 [Run an Azure Application in the Compute Emulator](/azure/storage/common/storage-use-emulator)（在计算模拟器中运行 Azure 应用程序）。

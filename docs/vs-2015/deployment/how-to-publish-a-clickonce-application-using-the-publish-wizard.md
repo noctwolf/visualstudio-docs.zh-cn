@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442702"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
  在运行发布向导前，应适当地设置发布属性。 例如，如果要指定密钥为 ClickOnce 应用程序签名，则可以在“项目设计器”的“签名”页中执行该操作。 有关详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
   
 > [!NOTE]
->  当使用 ClickOnce 安装多个版本的应用程序时，安装会将应用程序的早期版本移动到位于你指定的发布位置的名为“Archive”的文件夹中。 按照这种方式对早期版本进行存档，可以使安装目录与早期版本所在的文件夹分开。  
+> 当使用 ClickOnce 安装多个版本的应用程序时，安装会将应用程序的早期版本移动到位于你指定的发布位置的名为“Archive”的文件夹中。 按照这种方式对早期版本进行存档，可以使安装目录与早期版本所在的文件夹分开。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请单击 **“工具”** 菜单上的 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请单击 **“工具”** 菜单上的 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>发布到文件共享或路径  
   
@@ -83,7 +83,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
 4. 在“用户如何安装应用程序?”页上，单击“从 CD-ROM 或 DVD-ROM”，然后单击“下一步”。  
   
    > [!NOTE]
-   >  如果希望在将 CD-ROM 插入驱动器时自动运行安装，请打开“项目设计器”中的“发布”页，并单击“选项”按钮，然后在“发布选项”向导中，选择“对于 CD 安装，插入 CD 时自动启动安装程序”。  
+   > 如果希望在将 CD-ROM 插入驱动器时自动运行安装，请打开“项目设计器”中的“发布”页，并单击“选项”按钮，然后在“发布选项”向导中，选择“对于 CD 安装，插入 CD 时自动启动安装程序”。  
   
 5. 如果在 CD-ROM 上发布应用程序，可能会希望从网站提供更新。 在“应用程序将到哪里检查更新?”页中，选择更新选项：  
   
@@ -98,7 +98,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
     发布状态显示在状态通知区域中。  
   
    > [!NOTE]
-   >  完成发布后，必须使用 CD 刻录机或 DVD 刻录机从步骤 3 中指定的位置将文件复制到 CD-ROM 或 DVD-ROM 媒体。  
+   > 完成发布后，必须使用 CD 刻录机或 DVD 刻录机从步骤 3 中指定的位置将文件复制到 CD-ROM 或 DVD-ROM 媒体。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

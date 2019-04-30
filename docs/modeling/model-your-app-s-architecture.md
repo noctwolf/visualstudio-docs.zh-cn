@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436883"
 ---
 # <a name="model-your-app39s-architecture"></a>建模应用程序&#39;s 体系结构
 为了帮助确保软件系统或应用程序满足用户的需求，作为您的整体结构的说明和软件系统或应用程序的行为的一部分，可以在 Visual Studio 中创建模型。 使用模型，也可以描述在整个设计中使用的模式。 这些模型可你帮助了解现有的体系结构、讨论更改和清楚地传达你的意图。
@@ -24,7 +24,7 @@ ms.locfileid: "60047808"
  模型的目的是减少自然语言说明中的歧义，并帮助你和同事对设计进行可视化以及讨论备选设计。 模型应与其他文档或讨论一起使用。 就其本身而言，模型不表示该体系结构的完整规范。
 
 > [!NOTE]
->  在本主题中，“系统”表示你正在开发的软件。 它可能是许多软件和硬件组件的大型集合、或单个应用程序或某个应用程序的一部分。
+> 在本主题中，“系统”表示你正在开发的软件。 它可能是许多软件和硬件组件的大型集合、或单个应用程序或某个应用程序的一部分。
 
  系统的体系结构可以分为两个区域：
 

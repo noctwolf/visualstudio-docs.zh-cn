@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909161"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>旧版语言服务中的成员完成
 
@@ -38,7 +38,7 @@ IntelliSense 成员完成是工具提示显示特定的作用域，如类、 结
 
 - <xref:Microsoft.VisualStudio.Package.IScanner>扫描程序检测到的成员完成字符和设置的令牌触发器[TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) ，该字符。
 
-成员完成字符表示的类、 结构或枚举成员遵循。 例如，在 C# 或 Visual Basic 中的成员完成字符是`.`，而 c + + 中的字符是任一`.`或`->`。 触发器值的成员选择字符扫描时设置。
+成员完成字符表示的类、 结构或枚举成员遵循。 例如，在C#或 Visual Basic 的成员完成字符`.`，在C++字符可以是`.`或`->`。 触发器值的成员选择字符扫描时设置。
 
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 成员 List 命令
 

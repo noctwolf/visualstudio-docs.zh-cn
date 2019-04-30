@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415557"
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何：创建自定义文本标记
 如果你想要创建自定义文本标记，以强调或组织代码，必须执行以下步骤：
@@ -41,7 +41,7 @@ ms.locfileid: "60103391"
     `<PackageGUID>` VSPackage 的 GUID 实现自动化对象。
 
    > [!NOTE]
-   >  根路径**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<版本 >** 初始化 Visual Studio shell 时，有关详细信息，请参阅时，可以使用备用根覆盖[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。
+   > 根路径**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<版本 >** 初始化 Visual Studio shell 时，有关详细信息，请参阅时，可以使用备用根覆盖[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。
 
 2. 创建四个值下的**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<版本 > \Text Editor\External 标记\\\<MarkerGUID >**
 

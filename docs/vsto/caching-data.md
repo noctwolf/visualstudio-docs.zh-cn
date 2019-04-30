@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939410"
 ---
 # <a name="cache-data"></a>缓存数据
   可以缓存文档级自定义项中的数据对象，以便脱机或而无需打开 Microsoft Office Word 或 Microsoft Office Excel，可以访问的数据。 若要缓存对象，该对象必须满足某些要求的数据类型。 .NET Framework 中的许多常见数据类型满足这些要求，包括<xref:System.String>， <xref:System.Data.DataSet>，和<xref:System.Data.DataTable>。

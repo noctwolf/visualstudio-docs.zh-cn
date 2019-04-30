@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18956cd3f4fa1a550808577f9e7fec9c9b193b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445133"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程序代码中从文件打开模型
 您可以在任何应用程序中打开 DSL 模型。
@@ -31,7 +31,7 @@ ms.locfileid: "60095852"
 3. 在项目属性窗口中，在**应用程序**选项卡上，设置**目标框架**字段 **.NET Framework 4**。
 
 > [!NOTE]
->  可能需要执行此操作，即使所选 **.NET Framework 4**项目创建对话框中。 不应为目标框架 **.NET Framework 4 Client Profile**。
+> 可能需要执行此操作，即使所选 **.NET Framework 4**项目创建对话框中。 不应为目标框架 **.NET Framework 4 Client Profile**。
 
 ## <a name="references"></a>参考资料
  您需要添加这些对你的 Visual Studio 应用程序项目的引用：

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5606101d4c4a790db57f2a5b051bc128ea50c684
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901923"
 ---
 # <a name="symbol-load-information-dialog-box"></a>“符号加载信息”对话框
 右键单击“模块”窗口并选择“符号加载信息”后，将打开“符号加载信息”对话框。

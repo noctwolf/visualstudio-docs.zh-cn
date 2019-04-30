@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926892"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>通过使用传统的 API 更改视图设置
 可以通过用户更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。

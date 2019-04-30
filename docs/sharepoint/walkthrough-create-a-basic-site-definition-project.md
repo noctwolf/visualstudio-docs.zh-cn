@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009406"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本站点定义项目
   本演练演示如何创建包含与上它的某些控件的可视 Web 部件的基本网站定义。 为清楚起见，您创建的可视化 Web 部件有仅几个控件。 但是，可以创建包含更多的功能的更复杂的 SharePoint 网站定义。

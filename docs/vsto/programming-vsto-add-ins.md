@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425838"
 ---
 # <a name="program-vsto-add-ins"></a>VSTO 外接程序
   通过创建 VSTO 外接程序扩展 Microsoft Office 应用程序时，可以直接接针对项目中的 `ThisAddIn` 类编写代码。 此类可用于执行下列任务，例如：访问 Microsoft Office 主机应用程序的对象模型、自定义应用程序的用户界面 (UI) 和向其他 Office 解决方公开 VSTO 外接程序中的对象。
@@ -54,7 +54,7 @@ ms.locfileid: "60079003"
  `ThisAddIn` 类中有两个默认的事件处理程序。 若要在加载 VSTO 外接程序后运行代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。 若要在卸载 VSTO 外接程序前运行代码，请将代码添加到 `ThisAddIn_Shutdown` 事件处理程序。 有关这些事件处理程序的详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
 
 > [!NOTE]
->  在 Outlook 中，卸载 VSTO 外接程序时默认情况下不会始终调用 `ThisAddIn_Shutdown` 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
+> 在 Outlook 中，卸载 VSTO 外接程序时默认情况下不会始终调用 `ThisAddIn_Shutdown` 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。
 
 ### <a name="access-the-object-model-of-the-host-application"></a>访问主机应用程序的对象模型
  若要访问主机应用程序的对象模型，请使用 `Application` 类的 `ThisAddIn` 字段。 此字段会返回一个表示主机程序当前实例的对象。 下表列出了每个 VSTO 外接程序项目中 `Application` 字段的返回值类型。

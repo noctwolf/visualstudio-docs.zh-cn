@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd3d32873b98187f2a24a0e31e8d24ae8b0a6a01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 63941028b4bf461184c4ea203d6b529c00195faf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584331"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：生成到公共输出目录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "54805427"
   
 ### <a name="to-place-all-solution-outputs-in-a-common-directory"></a>将所有解决方案输出都放到一个共同目录中  
   
-1.  单击解决方案中的项目。  
+1. 单击解决方案中的项目。  
   
-2.  在“项目”菜单上，单击“属性”。  
+2. 在“项目”菜单上，单击“属性”。  
   
-3.  根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。  
+3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。  
   
-4.  为解决方案中的所有项目重复 1-3 步骤。  
+4. 为解决方案中的所有项目重复 1-3 步骤。  
   
 ## <a name="see-also"></a>请参阅  
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   

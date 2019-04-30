@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007714"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 项目项架构参考
   Visual Studio 将使用 SharePoint 项目项架构验证的内容 *.spdata*文件。 *.Spdata*文件指定的内容和 SharePoint 项目项的行为。 SharePoint 项目项的内容的详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。

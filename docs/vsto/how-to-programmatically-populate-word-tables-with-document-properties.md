@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e8a7e87268b021d8bc8a14b1b5d99f3331c0f431
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955984"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>如何：以编程方式填充 Word 表使用文档属性
   下面的示例在文档的顶部创建 Microsoft Office Word 表格，并使用主机文档的属性填充它。

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 89f0fba2f5210cdcf4bb8f17443f948cb9ba1f4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004854"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall 接口
 `IDebugThreadCall`界面通常由组件可以使用的跨线程调用实现`IDebugThread`封送由进程调试管理器 (PDM) 提供实现。  

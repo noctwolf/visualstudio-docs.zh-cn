@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389697"
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 DXCap.exe 是一个用于图形诊断捕获和播放的命令行工具。 它在所有功能级别支持从 Direct3D 10 到 Direct3D 12 的所有版本。
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` 在验证模式下，`events` 指定一组其即时结果将被比较的图形事件。 例如，`-examine present,draw,copy,clear`使比较仅属于这些类别的事件。
 
 > [!TIP]
->  我们建议从开始`-examine present,draw,copy,clear`因为这将显示出大多数问题，但时间要少得比更广泛的一组事件。 如有必要，你可以指定数目更多的或另一组事件来验证这些事件并发现其他类型的问题。
+> 我们建议从开始`-examine present,draw,copy,clear`因为这将显示出大多数问题，但时间要少得比更广泛的一组事件。 如有必要，你可以指定数目更多的或另一组事件来验证这些事件并发现其他类型的问题。
 
  `-haltonfail` 在验证模式下，`-haltonfail`硬件和 WARP 呈现器之间检测到差异时，会停止验证。 在按下一个键后，验证将继续进行。
 
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  查看位于使用 WebGL API 来呈现三维内容的 www.fishgl.com 中的网页时，上述示例中的命令将从桌面版本的 Internet Explorer 中捕获图形信息。
 
 > [!NOTE]
->  由于出现在应用之后的命令行参数会被传递给它，因此必须在使用 `-c` 选项前指定要用于 DXCap.exe 的参数。
+> 由于出现在应用之后的命令行参数会被传递给它，因此必须在使用 `-c` 选项前指定要用于 DXCap.exe 的参数。
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>捕获图形信息从 UWP 应用。
  您可以捕获图形信息从 UWP 应用。
@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  上面的命令枚举匹配"映射"; 的 UWP 应用下面是输出：
 
- **包"Microsoft.BingMaps":** **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **名称： Microsoft.BingMaps** **发布者： CN = MicrosoftCorporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本： 2.1.2914.1734** **可启动应用程序：** **Id: AppexMaps****Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA： 否** **AppSpec （将启动）： DXCap.exe-cMicrosoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。
+ 包“Microsoft.BingMaps”：**InstallDirectory：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名称：Microsoft.BingMaps** **发布服务器：CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本：2.1.2914.1734** **可启动应用程序：****id:AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:否** **AppSpec （将启动）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>捕获特定帧或特定时段内的帧。
  使用`-frame`指定你想要使用逗号和范围捕获的帧：

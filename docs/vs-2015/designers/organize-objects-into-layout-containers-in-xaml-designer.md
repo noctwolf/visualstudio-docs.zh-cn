@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432604"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 设计器中将对象组织到布局容器中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60059196"
  此页面介绍布局面板和控件，然后引导你观看帮助你开始使用它们的简短视频。  
   
 > [!NOTE]
->  某些视频可能指 Blend 或 Expression Blend，与 Visual Studio 和 Blend for Visual Studio 使用的 XAML 设计器相同。  
+> 某些视频可能指 Blend 或 Expression Blend，与 Visual Studio 和 Blend for Visual Studio 使用的 XAML 设计器相同。  
   
 ## <a name="layout-panels"></a>布局面板  
  通过选择这些布局面板之一来开始设计你的页面。 页面可以具有多个布局面板。 例如，可从 Grid 布局面板开始，然后将一个 StackPanel 添加到 Grid 中的某个区域，即可在该元素中垂直排列控件。  

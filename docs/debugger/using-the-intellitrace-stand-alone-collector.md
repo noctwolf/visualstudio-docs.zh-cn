@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407632"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器 (C#，Visual Basic)
 
@@ -26,10 +26,10 @@ ms.locfileid: "60077650"
  观看运行中的 IntelliTrace：[收集并分析生成的 IntelliTrace 数据以便进行调试 （第 9 频道视频）](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  通过在 **跟踪** 模式下使用 **Microsoft 监视代理** ，你还可以收集远程计算机上运行的 Web 及 SharePoint 应用的相同 IntelliTrace 数据。
+> 通过在 **跟踪** 模式下使用 **Microsoft 监视代理** ，你还可以收集远程计算机上运行的 Web 及 SharePoint 应用的相同 IntelliTrace 数据。
 >
->  可通过在 **监视** 模式下运行代理来收集 IntelliTrace 数据中与性能相关的事件。 与**跟踪** 模式或 **IntelliTrace 独立收集器** 相比， **IntelliIntelliTrace 独立收集器 stand-alone collector**模式对性能的影响更小。 安装时，Microsoft 监视代理确实会改变目标系统的环境。 请参阅[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
->  IntelliTrace 独立收集器不支持进程快照。
+> 可通过在 **监视** 模式下运行代理来收集 IntelliTrace 数据中与性能相关的事件。 与**跟踪** 模式或 **IntelliTrace 独立收集器** 相比， **IntelliIntelliTrace 独立收集器 stand-alone collector**模式对性能的影响更小。 安装时，Microsoft 监视代理确实会改变目标系统的环境。 请参阅[使用 Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md)。
+> IntelliTrace 独立收集器不支持进程快照。
 
  **要求**
 
@@ -38,7 +38,7 @@ ms.locfileid: "60077650"
 - 开发计算机或其他计算机上的 Visual Studio Enterprise（但不是 Professional 或 Community 版本），可用来打开 .iTrace 文件
 
   > [!NOTE]
-  >  务必保存符号 (.pdb) 文件。 要调试 IntelliTrace 并单步调试代码，你必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
+  > 务必保存符号 (.pdb) 文件。 要调试 IntelliTrace 并单步调试代码，你必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
 
   **常见问题解答**
 
@@ -111,7 +111,7 @@ ms.locfileid: "60077650"
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  该句点（“.”）保留包含本地化收集计划的子文件夹。
+       > 该句点（“.”）保留包含本地化收集计划的子文件夹。
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> 设置回收器目录的权限
 
@@ -216,7 +216,7 @@ ms.locfileid: "60077650"
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  运行此命令后，键入“Y”  确认你希望开始收集数据。
+    > 运行此命令后，键入“Y”  确认你希望开始收集数据。
 
      如，要收集 **SharePoint - 80** 应用程序池中 SharePoint 应用程序中的数据，请：
 
@@ -247,7 +247,7 @@ ms.locfileid: "60077650"
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  运行此命令后，键入“Y”  确认你希望停止收集数据。 否则，收集器可能会继续收集数据、iTrace 文件将继续处于锁定状态或文件中可能包含一些无用的数据。
+    > 运行此命令后，键入“Y”  确认你希望停止收集数据。 否则，收集器可能会继续收集数据、iTrace 文件将继续处于锁定状态或文件中可能包含一些无用的数据。
 
 6. [在 Visual Studio Enterprise 中打开 .iTrace 文件](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ ms.locfileid: "60077650"
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> 在 Visual Studio Enterprise 中打开 .iTrace 文件
 
 > [!NOTE]
->  要调试 IntelliTrace 并单步调试代码，你必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
+> 要调试 IntelliTrace 并单步调试代码，你必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
 
 1. 将 .iTrace 文件移到或复制到装有 Visual Studio Enterprise（但不是 Professional 或 Community 版）的计算机中。
 
@@ -284,7 +284,7 @@ ms.locfileid: "60077650"
      Visual Studio 显示“IntelliTrace 摘要”  页面。 你可以查看大多数部分中的事件或其他项，请选择一项并开始使用 IntelliTrace 调试事件发生地点及其时间点。 请参阅[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。
 
     > [!NOTE]
-    >  要调试 IntelliTrace 并单步调试代码，你的开发计算机上必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
+    > 要调试 IntelliTrace 并单步调试代码，你的开发计算机上必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
 
 ## <a name="Minimizing"></a> 如何在应用速度不减的前提下获取最多的数据？
  IntelliTrace 可收集大量数据，因此对应用性能的影响取决于 IntelliTrace 收集的数据及其分析的代码类型。 请参阅 [优化生产服务器上的 IntelliTrace 收集](http://go.microsoft.com/fwlink/?LinkId=255233)。

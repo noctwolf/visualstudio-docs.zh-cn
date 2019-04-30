@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422234"
 ---
 # <a name="active-script-profiler-interfaces"></a>活动脚本探查器接口
 活动脚本 Profiler 接口使您能够接收来自分析事件[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎。  
@@ -47,9 +47,9 @@ ms.locfileid: "58160558"
 - [活动脚本探查器常量、枚举和结构](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Internet Explorer 8 中首次发布活动脚本 Profiler 接口。 `IActiveScriptProfilerControl2`和`IActiveScriptProfilerCallback2`Internet Explorer 9 中首次发布接口。 [IActiveScriptProfilerControl3 接口](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)， [IActiveScriptProfilerCallback3 接口](../../winscript/reference/iactivescriptprofilercallback3-interface.md)，并[IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)的接口首次发布的 Internet Explorer 10。 [IActiveScriptProfilerControl5 接口](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)使用 Internet Explorer 11 首次发布。  
+> Internet Explorer 8 中首次发布活动脚本 Profiler 接口。 `IActiveScriptProfilerControl2`和`IActiveScriptProfilerCallback2`Internet Explorer 9 中首次发布接口。 [IActiveScriptProfilerControl3 接口](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)， [IActiveScriptProfilerCallback3 接口](../../winscript/reference/iactivescriptprofilercallback3-interface.md)，并[IActiveScriptProfilerHeapEnum 接口](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)的接口首次发布的 Internet Explorer 10。 [IActiveScriptProfilerControl5 接口](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)使用 Internet Explorer 11 首次发布。  
 >   
->  在 Internet Explorer 8 和 Internet Explorer 9，仅[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]语言使用这些接口以支持脚本性能分析。  
+> 在 Internet Explorer 8 和 Internet Explorer 9，仅[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]语言使用这些接口以支持脚本性能分析。  
   
 ## <a name="see-also"></a>请参阅  
  [Windows 脚本接口参考](../../winscript/reference/windows-script-interfaces-reference.md)

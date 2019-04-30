@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418666"
 ---
 # <a name="develop-a-legacy-language-service"></a>开发旧版语言服务
 此部分链接到主题可帮助您创建旧版语言服务。
@@ -29,7 +29,7 @@ ms.locfileid: "56631869"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
 ## <a name="in-this-section"></a>本节内容
 - [旧版语言服务模型](../../extensibility/internals/model-of-a-legacy-language-service.md)

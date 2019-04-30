@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 825aba3c77d4986d9187b147f90725eda4d6e5aa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433105"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函数
 此函数设置控制的源代码管理插件行为的选项。
@@ -48,7 +48,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|已成功设置的选项。|
 |SCC_I_SHARESUBPROJOK|如果`nOption`已`SCC_OPT_SHARESUBPROJ`和源代码管理插件允许 IDE 以将目标文件夹设置。|
@@ -66,7 +66,7 @@ SCCRTN SccSetOption(
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|指示是否在 IDE 目前支持取消操作。|
 |`SCC_OPT_NAMECHANGEPFN`|指向[OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)回调函数|设置的名称更改回调函数的指针。|
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|指示 IDE 允许带其文件 （通过源代码管理用户界面） 手动检查，或是否它们必须先签出只能通过源代码管理插件。|
-|`SCC_OPT_SHARESUBPROJ`|不可用|如果源代码管理插件允许 IDE 以指定的本地项目文件夹，该插件返回`SCC_I_SHARESUBPROJOK`。|
+|`SCC_OPT_SHARESUBPROJ`|不适用|如果源代码管理插件允许 IDE 以指定的本地项目文件夹，该插件返回`SCC_I_SHARESUBPROJOK`。|
 
 ## <a name="sccopteventqueue"></a>SCC_OPT_EVENTQUEUE
  如果`nOption`是`SCC_OPT_EVENTQUEUE`，禁用 （或重新启用） 在 IDE 后台处理。 例如，在编译期间 IDE 可能会指示源代码管理插件，以停止上空闲处理的任何类型。 在编译后它会重新启用后台处理，以保持最新的即插即用接事件队列。 对应于`SCC_OPT_EVENTQUEUE`的值`nOption`，有两个可能值为`dwVal`，即`SCC_OPT_EQ_ENABLE`和`SCC_OPT_EQ_DISABLE`。

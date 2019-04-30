@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583934"
 ---
 # <a name="late-binding-in-office-solutions"></a>在 Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能的功能。 例如，一些方法和属性可以返回不同类型的对象，具体取决于 Office 应用程序的上下文和某些类型可以公开不同的方法或不同的上下文中的属性。

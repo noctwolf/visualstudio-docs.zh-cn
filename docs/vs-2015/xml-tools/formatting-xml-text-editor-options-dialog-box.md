@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34eedf61afd79570ca1e4ba471efa9802aae7bfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417419"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>格式化，XML，文本编辑器，“选项”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "59664120"
 使用此对话框可以指定“XML 编辑器”的格式化设置。 您可以访问**选项**对话框从**工具**菜单。  
   
 > [!NOTE]
->  当您选择这些设置才可用**文本编辑器**文件夹中， **XML**文件夹，然后**格式设置**选项从**选项**对话框。  
+> 当您选择这些设置才可用**文本编辑器**文件夹中， **XML**文件夹，然后**格式设置**选项从**选项**对话框。  
   
 ## <a name="attributes"></a>特性  
  **保留手动特性格式设置**  
  属性不会重新格式化。 这是默认设置。  
   
 > [!NOTE]
->  如果属性在多行上，编辑器将对每行属性进行缩进，以便与父元素的缩进匹配。  
+> 如果属性在多行上，编辑器将对每行属性进行缩进，以便与父元素的缩进匹配。  
   
  **对齐属性每个在其自己的行上**  
  使第二个以及后续的属性纵向对齐，以便与第一个属性的缩进匹配。 以下 XML 文本是如何对齐属性的示例。  

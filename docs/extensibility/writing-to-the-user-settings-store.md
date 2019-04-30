@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444909"
 ---
 # <a name="writing-to-the-user-settings-store"></a>写入用户设置存储
 用户设置是可写设置中的一样**工具 / 选项**对话框、 属性窗口和某些其他对话框。 Visual Studio 扩展可能会使用这些存储少量数据。 本演练演示如何将记事本到 Visual Studio 添加为外部工具，通过读取和写入用户设置存储。
@@ -27,7 +27,7 @@ ms.locfileid: "60054100"
 3. 导航到 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。
 
     > [!NOTE]
-    >  请确保您查看时包含 \14.0Exp\ 且不 \14.0 密钥\\。 运行 Visual Studio 的实验实例，您的用户设置时，在注册表配置单元"14.0Exp"。
+    > 请确保您查看时包含 \14.0Exp\ 且不 \14.0 密钥\\。 运行 Visual Studio 的实验实例，您的用户设置时，在注册表配置单元"14.0Exp"。
 
 4. 右键单击 \External Tools\ 子项，然后依次**导出**。 请确保**所选分支**处于选中状态。
 

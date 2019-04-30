@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445674"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：添加或删除引用通过使用引用管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60041177"
 - 应当避免添加对同一解决方案中另一个项目的输出的文件引用，因为这样做可能导致编译错误。 而应使用“添加引用”对话框的“项目”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)。  
   
 - > [!NOTE]
-    >  在 Visual Studio 2015 中，如果一个项目的 .NET Framework 目标版本为版本 4.5，而另一个项目的目标版本为版本 2、3、3.5 或 4.0，则将创建文件引用而不是项目引用。  
+    > 在 Visual Studio 2015 中，如果一个项目的 .NET Framework 目标版本为版本 4.5，而另一个项目的目标版本为版本 2、3、3.5 或 4.0，则将创建文件引用而不是项目引用。  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>在“添加引用”对话框中显示程序集  
   
@@ -181,7 +181,7 @@ ms.locfileid: "60041177"
  SDK 是文件集合，Visual Studio 将其视为单个组件。 在“扩展”选项卡中，应用于调用了“引用管理器”对话框的项目的 SDK 将作为单个项列出。 添加到项目时，所有 SDK 内容将由 Visual Studio 使用，这样，用户无需采取任何额外操作即可使用 IntelliSense、工具箱、设计器、对象浏览器、生成、部署、调试和打包中的 SDK 内容。 若要了解如何在“扩展”选项卡中显示 SDK，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)。  
   
 > [!NOTE]
->  如果项目引用的 SDK 依赖于另一 SDK，则只有在用户手动添加对另一 SDK 的引用后，Visual Studio 才会使用另一 SDK。 用户在“扩展”选项卡上选择 SDK 时，“引用管理器”对话框不仅会列出此 SDK 的名称和版本，还会在详细信息窗格中列出所有 SDK 依赖项的名称，从而帮助用户确定 SDK 依赖项。 如果用户未注意到依赖项，仅添加此 SDK，MSBuild 将提示用户添加依赖项。  
+> 如果项目引用的 SDK 依赖于另一 SDK，则只有在用户手动添加对另一 SDK 的引用后，Visual Studio 才会使用另一 SDK。 用户在“扩展”选项卡上选择 SDK 时，“引用管理器”对话框不仅会列出此 SDK 的名称和版本，还会在详细信息窗格中列出所有 SDK 依赖项的名称，从而帮助用户确定 SDK 依赖项。 如果用户未注意到依赖项，仅添加此 SDK，MSBuild 将提示用户添加依赖项。  
   
  如果项目类型不支持“扩展”，则此选项卡不会显示在“引用管理器”对话框中。  
   
@@ -207,7 +207,7 @@ ms.locfileid: "60041177"
     ```  
   
     > [!NOTE]
-    >  如果添加属性，生成可能会运行较慢。  
+    > 如果添加属性，生成可能会运行较慢。  
   
 ## <a name="recent"></a>Recent  
  “程序集”、“COM”、“Windows”和“浏览”均支持“最近”选项卡，此选项卡可枚举最近添加到项目的组件的列表。  

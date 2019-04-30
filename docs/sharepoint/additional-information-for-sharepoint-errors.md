@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988293"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 错误的其他信息
   您可以在故障排除中查找帮助[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具错误和故障排除主题和公共论坛中的警告。

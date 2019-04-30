@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1802cdcdabe2ae462960378d0e869838cdaa6e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000916"
 ---
 # <a name="idebugthreadcallthreadcallhandler"></a>IDebugThreadCall::ThreadCallHandler
 处理调用另一线程中运行代码。  
@@ -50,7 +50,7 @@ HRESULT ThreadCallHandler(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

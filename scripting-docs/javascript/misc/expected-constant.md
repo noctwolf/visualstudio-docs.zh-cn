@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10564f34683fec5c38ae069f2fb0c51fb0c8902a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935089"
 ---
 # <a name="expected-constant"></a>应为常量
 你尝试在条件编译测试语句中使用 （非条件编译） 变量。 测试条件编译语句的计算结果必须是常数。  

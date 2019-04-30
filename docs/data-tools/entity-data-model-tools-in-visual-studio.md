@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567156"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的实体框架工具
 
 Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它不要求提供开发人员通常需要编写的大部分数据访问代码。 实体框架是建模技术，用于新的.NET 应用程序的建议的对象关系映射 (ORM)。
 
-实体框架工具旨在帮助你构建 Entity Framework (EF) 应用程序。 此处是有关实体框架的完整文档： [EF Core 和 EF 6](/ef/)。
+实体框架工具旨在帮助你构建 Entity Framework (EF) 应用程序。 此处是有关实体框架的完整文档：[EF Core 和 EF 6](/ef/)。
 
 使用 Entity Framework Tools，您可以创建*概念模型*从现有数据库，然后以图形方式直观显示和编辑概念模型。 或者，您可以首先以图形方式创建概念模型，然后生成支持模型的数据库。 无论哪种情况，你都可以在基础数据库更改时自动更新模型，并为应用程序生成对象层代码。 数据库生成和对象层代码生成是可自定义的。
 
@@ -44,7 +44,7 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 
 ## <a name="related-topics"></a>相关主题
 
-| Title | 说明​​ |
+| 标题 | 描述 |
 | - | - |
 | [ADO.NET 实体框架](/dotnet/framework/data/adonet/ef/index) | 介绍如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供创建应用程序。 |
 | [实体数据模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用于处理数据的基础上构建的应用程序使用链接和信息[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。 |

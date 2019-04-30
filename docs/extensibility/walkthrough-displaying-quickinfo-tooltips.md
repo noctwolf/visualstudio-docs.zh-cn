@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef70f9a776163419819e2283a031261c6e84a159
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965201"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>演练：显示快速信息工具提示
 快速信息 IntelliSense 功能，用于显示方法签名，说明当用户将指针移到方法名称。 您可以通过定义的标识符来提供快速信息的说明，并创建要在其中显示内容的工具提示实现基于语言的功能，例如快速信息。 可以在语言服务的上下文中定义 QuickInfo 或可以定义自己的文件名称扩展和内容类型并显示快速信息只是该类型或可以为现有内容类型 （例如"text") 显示快速信息。 本演练演示如何显示快速信息的"text"内容类型。

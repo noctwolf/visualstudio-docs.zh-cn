@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852082"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>调试准备： 控制台项目 (C#，c + +、 Visual Basic 中， F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>调试准备：控制台项目 (C#， C++，Visual Basic 中， F#)
 
 准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项。 有关详细信息，请参阅[Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)，和[调试准备：Windows 窗体应用程序 (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：
 
@@ -35,7 +35,7 @@ ms.locfileid: "56709234"
 
 - C++ 控制台应用程序 (Win32)
 
-  可能必须为控制台应用程序指定命令行自变量。 有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)。
+  可能必须为控制台应用程序指定命令行自变量。 有关详细信息，请参阅[的项目设置C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)。
 
   同所有项目属性一样，这些参数将在调试会话之间和 Visual Studio 会话之间保留。 因此，如果控制台应用程序是以前调试过的，请记得在“\<项目”>“属性页”对话框中可能输入了先前会话中的参数。
 

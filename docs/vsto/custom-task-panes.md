@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445542"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一个用户界面面板，通常停靠在 Microsoft Office 应用程序中某一窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
@@ -38,7 +38,7 @@ ms.locfileid: "60106197"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  自定义任务窗格不同于操作窗格。 操作窗格是 Microsoft Office Word 和 Microsoft Office Excel 的文档级自定义项的一部分。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。
+> 自定义任务窗格不同于操作窗格。 操作窗格是 Microsoft Office Word 和 Microsoft Office Excel 的文档级自定义项的一部分。 有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。
 
 ## <a name="benefits-of-custom-task-panes"></a>自定义任务窗格的优点
  使用自定义任务窗格，可以将各种功能集成到一个熟悉的用户界面中。 可以使用 Visual Studio 工具快速创建自定义任务窗格。

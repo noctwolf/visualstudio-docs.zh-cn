@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f5c6b6dc6f02bfc22e6a02f708deefe4208d91ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912625"
 ---
 # <a name="editor-factories"></a>编辑器工厂
 编辑器工厂创建编辑器对象，并将其放在窗口框架中，称为物理视图。 它创建的文档数据和创建编辑器和设计器所需的文档视图对象。 创建 Visual Studio 核心编辑器和任何标准编辑器需要编辑器工厂。 也可以使用编辑器工厂创建的自定义编辑器。

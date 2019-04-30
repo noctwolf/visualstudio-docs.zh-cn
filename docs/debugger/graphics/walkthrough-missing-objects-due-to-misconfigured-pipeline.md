@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388577"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管道误配置而缺少对象
 本演练演示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具来调查由于未设置的像素着色器而缺失的对象。
@@ -61,7 +61,7 @@ ms.locfileid: "60097604"
     在“图形管道阶段”  窗口中，“输入装配器”  阶段将显示转换前的对象的几何图形，而“顶点着色器”  阶段显示转换后的相同对象。 在此方案中，请注意“图形管道阶段”  窗口显示“输入装配器”  阶段和“顶点着色器”   阶段，但不显示其中一个绘图调用的“像素着色器”  阶段。
 
    > [!NOTE]
-   >  如果其他管道阶段（例如外壳着色器、域着色器或几何着色器阶段）处理该对象，则其中的任何一个都可能是导致问题的原因。 通常情况下，该问题与结果未显示或以意外方式显示的最早阶段相关联。
+   > 如果其他管道阶段（例如外壳着色器、域着色器或几何着色器阶段）处理该对象，则其中的任何一个都可能是导致问题的原因。 通常情况下，该问题与结果未显示或以意外方式显示的最早阶段相关联。
 
 4. 当到达对应于缺失对象的绘图调用时即停止。 在此方案中，“图形管道阶段”  窗口指示几何图形发布到 GPU（由存在“输入装配器”  阶段指示）并且进行了转换（由“顶点着色器”  阶段指示），但因为似乎不存在活动像素着色器而未显示在呈现目标中（由缺少“像素着色器”  阶段指示）。 在此方案中，甚至还可以在“输出合并器”  阶段查看缺失对象的轮廓：
 
@@ -84,7 +84,7 @@ ms.locfileid: "60097604"
 1. 查找对应于缺失对象的 `PSSetShader` 调用。 在“图形事件列表”  窗口中，请在“图形事件列表”  窗口右上角的“搜索”  框中输入“Draw;PSSetShader”。 这将筛选列表，使其仅包含“PSSetShader”事件，以及标题中具有“Draw”的事件。 选择出现在缺失对象绘图调用之前的第一个 `PSSetShader` 调用。
 
    > [!NOTE]
-   >  如果未在此帧内进行设置，则`PSSetShader` 不会显示在“图形事件列表”  窗口。 通常仅当只有一个像素着色器用于所有对象，或者此帧期间 `PSSetShader` 调用被无意跳过时发生这种情况。 在任一情况下，我们建议你搜索应用的源代码获取 `PSSetShader` 调用，并使用传统调试技术检查这些调用的行为。
+   > 如果未在此帧内进行设置，则`PSSetShader` 不会显示在“图形事件列表”  窗口。 通常仅当只有一个像素着色器用于所有对象，或者此帧期间 `PSSetShader` 调用被无意跳过时发生这种情况。 在任一情况下，我们建议你搜索应用的源代码获取 `PSSetShader` 调用，并使用传统调试技术检查这些调用的行为。
 
 2. 打开“图形事件调用堆栈”  窗口。 在“图形诊断”  工具栏上，选择“图形事件调用堆栈” 。
 
@@ -93,7 +93,7 @@ ms.locfileid: "60097604"
     ![未初始化像素着色器代码](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  如果仅通过检查调用堆栈无法找到 null 值的源，我们建议在 `PSSetShader` 调用上设置条件断点，以便像素着色器将被设置为 null 时程序执行中断。 然后在调试模式下重新启动此应用，并使用传统调试技术来查找 null 值的源。
+   > 如果仅通过检查调用堆栈无法找到 null 值的源，我们建议在 `PSSetShader` 调用上设置条件断点，以便像素着色器将被设置为 null 时程序执行中断。 然后在调试模式下重新启动此应用，并使用传统调试技术来查找 null 值的源。
 
    若要解决此问题，通过 `ID3D11DeviceContext::PSSetShader` API 调用的第一个参数来分配正确的像素着色器。
 

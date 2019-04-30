@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446220"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>对 Visual Studio 中的应用商店应用运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104169"
 本主题描述如何通过使用 Microsoft Visual Studio 中的测试资源管理器运行单元测试
 
 > [!NOTE]
->  本部分中的主题描述了 Visual Studio Express for Windows 8 的功能。 Visual Studio Community、Enterprise. 和 Professional 提供其他适用于单元测试的功能。
+> 本部分中的主题描述了 Visual Studio Express for Windows 8 的功能。 Visual Studio Community、Enterprise. 和 Professional 提供其他适用于单元测试的功能。
 >
 > - 使用已为 Microsoft 测试资源管理器创建附加设备适配器的任何第三方或开放源代码单元测试框架。 还可为测试分析并显示代码覆盖率信息。
 >   - 在每次生成后运行测试。 你也可以使用 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码将你的测试集中于你自己的代码之上。
@@ -118,7 +118,7 @@ ms.locfileid: "60104169"
 1. 在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。
 
    > [!NOTE]
-   >  因为测试方法可以按任何顺序运行，请在想要调试的所有测试方法中设置断点。
+   > 因为测试方法可以按任何顺序运行，请在想要调试的所有测试方法中设置断点。
 
 2. 在测试资源管理器中，选择测试方法，然后选择快捷菜单上的“调试选定的测试”。
 

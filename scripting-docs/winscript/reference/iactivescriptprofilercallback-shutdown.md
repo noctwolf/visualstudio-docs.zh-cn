@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993418"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 调用以通知探查器对象，只要在脚本引擎停止分析。 这样一来，如果需要，探查器对象可以调用其清理例程。 当脚本引擎正在关闭，或者当调用还通过脚本引擎调用此方法[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)失败。  

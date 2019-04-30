@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443518"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>调试 Visual Studio 中的 SharePoint 工具扩展
   您可以调试实验实例或 Visual Studio 常规实例中的 SharePoint 工具扩展。 如果需要进行故障排除的行为扩展，还可以修改注册表值以显示其他错误信息并配置 Visual Studio 执行 SharePoint 命令的方式。
@@ -102,7 +102,7 @@ ms.locfileid: "60094393"
 3. 在中**可用进程**列表中，选择*vssphost.exe*。
 
     > [!NOTE]
-    >  如果列表中不显示 vssphost.exe，则必须首先*vssphost4.exe*进程中运行该扩展的 Visual Studio 的实例。 通常情况下，您会为此，执行的操作导致 Visual Studio 以连接到开发计算机上的 SharePoint 站点。 例如，Visual Studio 将启动*vssphost4.exe*当您展开站点连接节点 （节点显示站点 URL） 下**SharePoint 连接**中的节点**服务器资源管理器**窗口中，或当你添加特定的 SharePoint 项目项，例如**列表实例**或**事件接收器**向 SharePoint 项目项。
+    > 如果列表中不显示 vssphost.exe，则必须首先*vssphost4.exe*进程中运行该扩展的 Visual Studio 的实例。 通常情况下，您会为此，执行的操作导致 Visual Studio 以连接到开发计算机上的 SharePoint 站点。 例如，Visual Studio 将启动*vssphost4.exe*当您展开站点连接节点 （节点显示站点 URL） 下**SharePoint 连接**中的节点**服务器资源管理器**窗口中，或当你添加特定的 SharePoint 项目项，例如**列表实例**或**事件接收器**向 SharePoint 项目项。
 
 4. 选择**附加**按钮。
 

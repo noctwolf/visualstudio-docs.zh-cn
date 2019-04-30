@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446125"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入门：调试 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60068153"
  DOM 资源管理器展示所呈现的页面的视图，还可使用 DOM 资源管理器更改值并立即看到结果。 这使你可以在无需停止和重新启动调试器的情况下测试更改。 使用此方法与页面进行交互时不更改项目中的源代码，因此当发现代码中要更正的内容时，请对源代码作出更改。  
   
 > [!TIP]
->  若要在更改源代码时避免停止和重新启动调试器，你可以使用“调试”工具栏上的 **“刷新 Windows 应用”** 按钮（或按 F4）刷新应用。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
+> 若要在更改源代码时避免停止和重新启动调试器，你可以使用“调试”工具栏上的 **“刷新 Windows 应用”** 按钮（或按 F4）刷新应用。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
  可使用 DOM 资源管理器：  
   
@@ -74,12 +74,12 @@ ms.locfileid: "60068153"
   调试应用程序时，通常需要在 DOM 资源管理器中选择元素。 选择某个元素后，DOM 资源管理器右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的选定元素。 以下是在选项卡：**样式**，**计算**，**布局**。 Windows 应用商店应用还支持“事件”  和“更改”  选项卡。 有关选择元素的详细信息，请参见 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
->  如果“DOM 资源管理器”窗口已关闭，请依次选择“调试” > >  以重新打开它。 仅在脚本调试会话期间显示该窗口。  
+> 如果“DOM 资源管理器”窗口已关闭，请依次选择“调试” > >  以重新打开它。 仅在脚本调试会话期间显示该窗口。  
   
  在后续过程中，我们将通过使用 DOM 资源管理器完成以交互方式调试应用程序的过程。 我们将创建一个使用 `FlipView` 控件的应用程序，然后调试它。 此应用程序包含若干错误。  
   
 > [!WARNING]
->  以下示例应用是一个 Windows 应用商店应用。 Cordova 支持以上相同的功能，但应用会有所不同。  
+> 以下示例应用是一个 Windows 应用商店应用。 Cordova 支持以上相同的功能，但应用会有所不同。  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>通过检查实时 DOM 进行调试  
   
@@ -183,14 +183,14 @@ ms.locfileid: "60068153"
 10. 切换到 Visual Studio 并选择 **“DOM 资源管理器”** 选项卡。  
   
     > [!TIP]
-    >  可按 Alt+Tab 或 F12，在 Visual Studio 和正在运行的应用程序之间切换。  
+    > 可按 Alt+Tab 或 F12，在 Visual Studio 和正在运行的应用程序之间切换。  
   
 11. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （使用右键头键可以查看元素的子元素。）  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  也可通过在 >> 输入提示符下键入 `select(fView)`，然后按 Enter，在“JavaScript 控制台”窗口的左下角选择此 DIV 元素。  
+    > 也可通过在 >> 输入提示符下键入 `select(fView)`，然后按 Enter，在“JavaScript 控制台”窗口的左下角选择此 DIV 元素。  
   
      “DOM 资源管理器”窗口的右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的当前元素。  
   
@@ -209,7 +209,7 @@ ms.locfileid: "60068153"
 15. 选择 `width: 100px;height: 100px;`，并按 Delete 键，然后按 Enter。 按 Enter 后，模拟器或 Phone 仿真程序中将立即反映新值，即使尚未停止调试会话也是如此。  
   
     > [!IMPORTANT]
-    >  你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”** 和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)并[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
+    > 你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”** 和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)并[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
   
 16. 通过选择模拟器或 Phone 仿真程序，或通过使用 Alt+Tab 切换到此应用程序。  
   
@@ -281,7 +281,7 @@ ms.locfileid: "60068153"
   在选择突出显示元素时，将突出显示模拟器中指针悬停在其上方的元素。 突出显示的元素的颜色与 DOM 资源管理器的 **“布局”** 选项卡中显示的方框模型匹配。  
   
 > [!NOTE]
->  指针悬停在元素上方时突出显示的元素在 Windows Phone 模拟器中仅部分受支持。  
+> 指针悬停在元素上方时突出显示的元素在 Windows Phone 模拟器中仅部分受支持。  
   
  有关示例，演示如何使用选择的元素**Select 元素**按钮，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)。  
   

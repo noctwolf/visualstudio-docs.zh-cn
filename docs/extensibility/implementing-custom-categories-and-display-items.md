@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418838"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>实现自定义类别和显示项
 VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过自定义类别和显示项的集成的开发环境 (IDE)。
@@ -88,7 +88,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
   - 显示的每个成员的信息**类别**。
 
   > [!NOTE]
-  >  每个**类别**必须包含至少一个**显示项**。
+  > 每个**类别**必须包含至少一个**显示项**。
 
 - IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>接口可定义多个类别的联合。
 
@@ -120,7 +120,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
      这可以通过系统实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。 主要用于支持暂留，尽管<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A>方法可用于获取字体和颜色信息**显示项**。 有关详细信息，请参阅[访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)。
 
     > [!NOTE]
-    >  若要确保正确轮询所获得的结果，可能会使用很有用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口，以确定是否刷新的缓存和 update 之前调用的检索方法所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
+    > 若要确保正确轮询所获得的结果，可能会使用很有用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口，以确定是否刷新的缓存和 update 之前调用的检索方法所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
 
 ## <a name="see-also"></a>请参阅
 

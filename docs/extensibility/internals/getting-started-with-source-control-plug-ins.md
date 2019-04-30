@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74fe044f5ce00697be36fc69413e0bf7d0042e62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909937"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>开始使用源代码管理插件
 若要创建源代码管理插件，必须创建实现源控件插件 API 中定义的函数的 DLL，然后注册与 DLL [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，使其可供使用源代码版本控制中。

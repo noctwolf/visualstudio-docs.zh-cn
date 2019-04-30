@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850835"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>错误：调试失败，因为没有启用集成 Windows 身份验证
 由于身份验证错误，无法对请求调试的用户进行身份验证。 尝试单步执行 Web 应用程序或 XML Web service 时可能会出现此问题。 导致此错误的一种原因是未启用集成 Windows 身份验证。 若要启用该身份验证，请按照“启用集成 Windows 身份验证”中的步骤操作。

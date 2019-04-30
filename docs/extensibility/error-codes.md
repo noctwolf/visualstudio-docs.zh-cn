@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863962"
 ---
 # <a name="error-codes"></a>错误代码
 当源控制插件 API 函数将返回错误时，它应是以下的错误代码之一。 所有错误都是负数，警告或信息性错误代码都为正数，并且成功是 0。

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6e1d2c71ce7bdb876df997812644fbb819c8977
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912700"
 ---
 # <a name="error-handling-and-return-values"></a>错误处理和返回值
 Vspackage 和 COM 使用相同的体系结构的错误。 `SetErrorInfo`和`GetErrorInfo`函数是 Win32 应用程序编程接口 (API) 的一部分。 在集成的开发环境 (IDE) 中的任何 VSPackage 可以调用这些全局 Win32 Api，用于记录丰富的错误消息时接收错误通知。 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供互操作程序集来管理错误的信息。

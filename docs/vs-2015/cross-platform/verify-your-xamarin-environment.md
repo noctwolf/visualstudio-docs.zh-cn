@@ -6,12 +6,12 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8dd993f918d9f2d884b9e2d082a71c9c4eebc9cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5373f1fa9d6bb596e099f3b7396ef13c91ee5a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387646"
 ---
 # <a name="verify-your-xamarin-environment"></a>验证 Xamarin 环境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60097201"
  ![利用“空白应用(本机可移植)”模板新建项目的结果](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin Verify 1")  
   
 > [!NOTE]
->  如果模板不存在，请参阅[是否缺少 Xamarin 项目模板？请尝试本页底部的 ](#missing)。  
+> 如果模板不存在，请参阅[是否缺少 Xamarin 项目模板？请尝试本页底部的 ](#missing)。  
   
 ## <a name="android"></a>Android  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60097201"
         - 对于 Windows 7 和更低操作系统版本：在下拉列表中改为选择“适用于 Android 的 Xamarin Player”并按 F5 运行。 有关 Xamarin 播放器、其设备管理器和故障排除技巧的详细信息，请参阅 [Xamarin Android 播放器](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com)。  
   
 > [!NOTE]
->  在 Visual Studio 中，你可能会看到工具栏中有一个 Android 模拟器管理器 (AVD) 按钮（如下所示），该按钮可打开专用于配置 Google Android 模拟器的设备管理器。  它对 Visual Studio Android 模拟器或 Xamarin 播放器均无影响，这二者均通过其自己的设备管理器来配置配置文件。  See [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) and [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) for details.  
+> 在 Visual Studio 中，你可能会看到工具栏中有一个 Android 模拟器管理器 (AVD) 按钮（如下所示），该按钮可打开专用于配置 Google Android 模拟器的设备管理器。  它对 Visual Studio Android 模拟器或 Xamarin 播放器均无影响，这二者均通过其自己的设备管理器来配置配置文件。  See [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (Visual Studio ALM blog) and [Xamarin Android Player](http://developer.xamarin.com/guides/android/getting_started/installation/android-player/) (xamarin.com) for details.  
 > ![CrossPlat Xamarin 验证 7](../cross-platform/media/crossplat-xamarin-verify-7.png "CrossPlat Xamarin Verify 7")  
   
 ## <a name="windows-phone"></a>Windows Phone  

@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840274"
 ---
 # <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE 错误代码
 脚本错误被传播到调用方，这可能是在不同线程中。 主机应传递给调用方的错误代码。  

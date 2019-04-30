@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977895"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文档上的密码保护
   就可以在 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿上设置密码，以便它们不能打开的人不知道密码。 此选项将称为**处于打开状态的密码**。

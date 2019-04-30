@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e02bfd8b528c484518816589f4f3e0e19bfa8c94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913172"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>扩展调试器的路线图
 本文档提供了指南和参考信息，用于扩展[!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)]调试器与[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
@@ -25,7 +25,7 @@ ms.locfileid: "56687518"
 
  你的编译器和其输出确定所需设置在您的产品中进行调试。 如果您的编译器：
 
-- 面向 Windows 本机操作系统并将写入 *。PDB*文件中，您可以使用本机代码调试引擎 (DE)，其集成到调试程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 不需要实现 DE 或表达式计算器。 表达式计算器是针对 c + + 编程语言的语法编写的。
+- 面向 Windows 本机操作系统并将写入 *。PDB*文件中，您可以使用本机代码调试引擎 (DE)，其集成到调试程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 不需要实现 DE 或表达式计算器。 表达式计算器编写其语法的C++编程语言。
 
 - 生成的 Microsoft 中间语言 (MSIL) 输出，可以通过托管的代码调试引擎 DE，这也集成到调试程序[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 因此，只需实现的表达式计算器。 示例表达式计算器会为您提供。 有关详细信息，请参阅下列主题：
 

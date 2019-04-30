@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998969"
 ---
 # <a name="properties-of-geometry-shapes"></a>几何形状的属性
 几何形状可用于指定域类的实例中的域特定语言的显示方式。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -39,9 +39,9 @@ ms.locfileid: "55937245"
 |具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|False|
 |继承修饰符|介绍的形状从生成的源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|无|
 |基本几何形状|此形状的基类。|(无)|
-|name|此形状的名称。|当前名称|
+|名称|此形状的名称。|当前名称|
 |命名空间|与此形状相关联的命名空间。|当前命名空间|
-|工具提示类型|如何定义工具提示 （固定的变量，或无）。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，然后在工具提示中定义自定义代码。|无|
+|工具提示类型|如何定义工具提示 （固定的变量，或无）。 如果固定，然后的值`Fixed Tooltip Text`属性用作工具提示; 如果变量，然后在工具提示中定义自定义代码。|None|
 |说明|与此元素相关联的非正式说明。|\<none>|
 |初始高度|此形状，以英寸为单位的初始高度。|1|
 |初始宽度|此形状，以英寸为单位的初始宽度。|1.5|

@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e4a5287648d515d1aca340ab55d5f21b494610b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814726"
 ---
 # <a name="worksheet-host-item"></a>工作表主机项
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项这种类型从 Excel 的主互操作程序集扩展 <xref:Microsoft.Office.Interop.Excel.Worksheet> 类型。 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项提供与 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象完全相同的属性、方法和事件，但它还公开其他事件并充当宿主控件和 Windows 窗体控件的容器。
@@ -52,7 +52,7 @@ ms.locfileid: "56612473"
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的工作表宿主项
  在应用程序级项目中，可以在运行时为 Excel 中打开的任何工作表生成 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项。 可以使用 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项将控件添加到关联的工作表，或处理在 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象中不可用的事件。
 
- 若要生成 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主机项，请使用 `GetVstoObject` 方法。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+ 若要生成 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项，请使用 `GetVstoObject` 方法。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 ## <a name="see-also"></a>请参阅
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)

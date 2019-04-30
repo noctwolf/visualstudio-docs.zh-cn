@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 816fad53554675e7f29cef838d4ea24e154dca8c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871929"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 此接口表示断点已准备好将绑定到代码位置。
@@ -54,7 +54,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="remarks"></a>备注
  `IDebugPendingBreakpoint2` 可以认为的将断点绑定到可以应用于一个或多个程序的代码所需的所有必要信息的提供程序。
 
- 挂起断点可能会生成多个绑定的断点。 例如，c + + 样式模板中的断点可能会生成有关该模板的每个唯一实例绑定的断点。
+ 挂起断点可能会生成多个绑定的断点。 例如中的断点C++的样式模板可能会生成有关该模板的每个唯一实例绑定的断点。
 
 ## <a name="requirements"></a>要求
  标头： msdbg.h

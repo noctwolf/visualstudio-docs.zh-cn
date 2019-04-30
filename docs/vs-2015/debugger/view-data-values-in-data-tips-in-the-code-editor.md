@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437689"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在代码编辑器中查看数据提示中的数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60039110"
     屏幕上显示数据提示。  
   
    > [!NOTE]
-   >  始终在挂起执行的上下文中（而不是在光标的悬停位置）计算数据提示。 如果将鼠标指针悬停在另一函数中的变量的上方（该变量与当前上下文中的某个变量同名），则另一函数中该变量的值将显示为当前上下文中的该变量的值。  
+   > 始终在挂起执行的上下文中（而不是在光标的悬停位置）计算数据提示。 如果将鼠标指针悬停在另一函数中的变量的上方（该变量与当前上下文中的某个变量同名），则另一函数中该变量的值将显示为当前上下文中的该变量的值。  
   
 2. 移开鼠标指针时，数据提示会消失。 若要固定数据提示以便它保持打开状态，请单击**固定到源**图标，或  
   

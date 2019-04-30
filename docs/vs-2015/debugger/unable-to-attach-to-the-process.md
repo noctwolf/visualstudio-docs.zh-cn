@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e8f3e5b87879d34ab61f0b50e5e4b91e84933b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c74799daf57ca031c4b3ce6bf76f72e453eeb0b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446552"
 ---
 # <a name="unable-to-attach-to-the-process"></a>无法附加到进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60063083"
 6. 在**网络访问：本地帐户的共享和安全模型**对话框框中，将本地安全设置更改为**经典**，然后单击**确定**。  
   
     > [!CAUTION]
-    >    将安全模型更改为“传统型”可能会导致对共享文件和 DCOM 组件的意外访问。 如果进行此更改，则远程用户可以使用您的本地用户帐户（而不是“来宾”）进行身份验证。 如果某个远程用户与您的用户名和密码匹配，则该用户将能够访问您已对外共享的任何文件夹或 DCOM 对象。如果您使用此安全模型，请确保计算机上的所有用户帐户都具有强密码，或者为正在调试或已经调试过的计算机设置独立的网络孤岛以防止未经授权的访问。  
+    >   将安全模型更改为“传统型”可能会导致对共享文件和 DCOM 组件的意外访问。 如果进行此更改，则远程用户可以使用您的本地用户帐户（而不是“来宾”）进行身份验证。 如果某个远程用户与您的用户名和密码匹配，则该用户将能够访问您已对外共享的任何文件夹或 DCOM 对象。如果您使用此安全模型，请确保计算机上的所有用户帐户都具有强密码，或者为正在调试或已经调试过的计算机设置独立的网络孤岛以防止未经授权的访问。  
   
 7. 关闭所有窗口。  
   

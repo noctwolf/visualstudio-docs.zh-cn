@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc3edfabe041804a632b919eff4e565be9cc5e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848598"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断
 Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。
@@ -64,7 +64,7 @@ Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用
 
 ## <a name="related-sections"></a>相关章节
 
-| Title | 说明 |
+| 标题 | 描述 |
 | - | - |
 | [调试器功能简介](/visualstudio/debugger/debugger-feature-tour) | 介绍 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的调试功能。 |
 | [DirectX 图形和游戏](http://go.microsoft.com/fwlink/?LinkId=256498) | 提供讨论 DirectX 图形技术的文章。 |

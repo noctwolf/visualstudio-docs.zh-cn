@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d6875baf72d94494a1abaea9260e344b236f83c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925580"
 ---
 # <a name="implement-a-port-supplier"></a>实现端口提供程序
 端口提供程序提供对会话调试管理器 (SDM) 请求上的端口。 向非 DCOM 机或新设备时需要支持进行调试时，必须实现端口提供程序。 例如，若要提供对移动电话调试，你可能会设置端口提供程序提供端口中，它连接到手机 （也许是通过红外线 （ir） 或单元格连接） 和枚举的过程和程序在手机上运行。

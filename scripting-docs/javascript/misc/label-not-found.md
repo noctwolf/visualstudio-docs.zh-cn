@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007368"
 ---
 # <a name="label-not-found"></a>未找到标签
 您所做的引用不存在的标签。 标签可用于将标记块的代码，但在指定作用域内，必须是唯一的。  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a2ae77a390553fc95c7a29d24eff70fde231b7b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410026"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 包的剖析
 VSIX 包是 *.vsix*文件，其中包含一个或多个 Visual Studio 扩展，与 Visual Studio 的元数据一起使用来进行分类和安装的扩展。 该元数据包含在 VSIX 清单中， *[Content_Types].xml*文件。 VSIX 包可能还包含一个或多个*Extension.vsixlangpack*文件，以提供本地化安装程序文本，并可能包含其他 VSIX 包安装依赖项。
@@ -25,7 +25,7 @@ VSIX 包是 *.vsix*文件，其中包含一个或多个 Visual Studio 扩展，�
  VSIX 包格式遵循开放式打包约定 (OPC) 标准。 包中包含二进制文件和支持文件，连同 *[Content_Types].xml*文件和一个 *.vsix*清单文件。 一个 VSIX 包可能包含多个项目或甚至多个具有其自己的清单的包的输出。
 
 > [!NOTE]
->  VSIX 包中包括的文件的名称不能包含空格，也不保留在统一资源标识符 (URI)，作为字符定义下[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。
+> VSIX 包中包括的文件的名称不能包含空格，也不保留在统一资源标识符 (URI)，作为字符定义下[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。
 
 ## <a name="the-vsix-manifest"></a>VSIX 清单
  VSIX 清单包含有关要安装扩展和 VSX 架构如下所示的信息。 有关详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。 有关示例 VSIX 清单，请参阅[PackageManifest 元素 （根元素，VSX 架构）](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187)。

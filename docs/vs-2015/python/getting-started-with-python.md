@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575645"
 ---
 # <a name="getting-started-with-python"></a>Python 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,4 +96,4 @@ Azure SDK for Python 支持 Windows、Mac 和 Linux，使得使用和管理 Micr
 [PTVS 入门：编辑代码](../python/getting-started-with-ptvs-editing-code.md)
 [PTVS 入门：调试](../python/getting-started-with-ptvs-debugging.md)
 [PTVS 入门：交互式 Python](../python/getting-started-with-ptvs-interactive-python.md)
-[PTVS 入门：构建在 Azure 网站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[PTVS 入门：在 Azure 中构建网站](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

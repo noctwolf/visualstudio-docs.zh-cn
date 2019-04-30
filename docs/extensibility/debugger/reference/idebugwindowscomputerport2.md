@@ -1,44 +1,46 @@
 ---
 title: IDebugWindowsComputerPort2 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 helpviewer_keywords:
 - IDebugWindowsComputerPort2 interface
 ms.assetid: 25f327b8-0303-4268-88d1-74df630436aa
-author: gregvanl
+caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 9126d7507f47852b7fc9bcd3777b112932892bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868173"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
-允许的目标计算机的信息进行查询。
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>语法
-
-```
-IDebugWindowsComputerPort2 : IUnknown
-```
-
-## <a name="notes-for-implementers"></a>实施者的说明
- 此接口是由会话调试管理器的 port 对象实现的。
-
-## <a name="methods"></a>方法
- 下表显示的方法`IDebugWindowsComputerPort2`。
-
-|方法|描述|
-|------------|-----------------|
-|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|检索有关计算机上的信息的调试器中运行。|
-
-## <a name="requirements"></a>要求
- 标头：Msdbg.h
-
- 命名空间:Microsoft.VisualStudio.Debugger.Interop
-
+允许的目标计算机的信息进行查询。  
+  
+## <a name="syntax"></a>语法  
+  
+```  
+IDebugWindowsComputerPort2 : IUnknown  
+```  
+  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ 此接口是由会话调试管理器的 port 对象实现的。  
+  
+## <a name="methods"></a>方法  
+ 下表显示的方法`IDebugWindowsComputerPort2`。  
+  
+|方法|描述|  
+|------------|-----------------|  
+|[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|检索有关计算机上的信息的调试器中运行。|  
+  
+## <a name="requirements"></a>要求  
+ 标头：Msdbg.h  
+  
+ 命名空间:Microsoft.VisualStudio.Debugger.Interop  
+  
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll

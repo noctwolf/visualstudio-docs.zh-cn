@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425391"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 5. 添加代码以显示 XML 架构中的 XML 文件基于<xref:System.Windows.Forms.TextBox>控件  
   
 > [!NOTE]
->  对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-new-project"></a>创建新项目  
  在此步骤中，您可以创建包含本演练中的 Visual Basic 或 Visual C# 项目。  

@@ -11,11 +11,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410233"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>在 Visual Studio 中的远程 IIS 计算机上的远程调试 ASP.NET Core
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。

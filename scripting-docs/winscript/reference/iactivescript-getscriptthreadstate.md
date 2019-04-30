@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a0066894830c111a8e0ad18f7acdc09d6114162e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935598"
 ---
 # <a name="iactivescriptgetscriptthreadstate"></a>IActiveScript::GetScriptThreadState
 检索脚本线程的当前的状态。  
@@ -40,7 +40,7 @@ HRESULT GetScriptThreadState(
  `stidThread`  
  [in]为其状态所需的线程的标识符或下列特殊线程标识符之一：  
   
-|值|含义|  
+|“值”|含义|  
 |-----------|-------------|  
 |SCRIPTTHREADID_BASE|基础线程;也就是说，在其中的脚本引擎的线程已实例化。|  
 |SCRIPTTHREADID_CURRENT|当前正在执行的线程。|  

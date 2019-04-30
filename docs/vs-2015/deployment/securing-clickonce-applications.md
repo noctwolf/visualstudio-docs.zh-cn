@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445020"
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "60076193"
  在未检查参数以确保参数安全的情况下，决不要将通过查询字符串检索的参数传递给数据库或命令行。 不安全参数是包含数据库或命令行转义符的参数，这些转义符可以让恶意用户操纵应用程序执行任意命令。  
   
 > [!NOTE]
->  查询字符串参数是在启动时向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数的唯一途径。 不能从命令行向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数。  
+> 查询字符串参数是在启动时向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数的唯一途径。 不能从命令行向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数。  
   
 ## <a name="deploying-obfuscated-assemblies"></a>部署经过模糊处理的程序集  
  您可能想要使用 Dotfuscator 对应用程序进行模糊处理，以防止他人对代码进行反向工程处理。 但是，程序集模糊处理并未集成到 Visual Studio IDE 或 ClickOnce 部署过程中。 因此，您将需要使用生成后步骤在部署过程以外执行模糊处理。 生成项目之后，您会在 Visual Studio 之外手动执行下列步骤：  

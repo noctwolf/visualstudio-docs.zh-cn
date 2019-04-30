@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444464"
 ---
 # <a name="properties-of-domain-roles"></a>域角色的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "58930607"
 |属性显示名称|在生成的设计器生成的角色属性中显示的名称。|调整后的值的属性名称属性。|  
   
 > [!NOTE]
->  显示名称的默认值基于关联的属性值插入每个大写字符小写字符前面和未跟一个大写字符之前的空格。  
+> 显示名称的默认值基于关联的属性值插入每个大写字符小写字符前面和未跟一个大写字符之前的空格。  
   
 ## <a name="see-also"></a>请参阅  
  [域关系的属性](../modeling/properties-of-domain-relationships.md)

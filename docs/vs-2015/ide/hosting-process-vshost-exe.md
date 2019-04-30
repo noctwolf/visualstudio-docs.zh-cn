@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445702"
 ---
 # <a name="hosting-process-vshostexe"></a>承载进程 (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54788129"
 承载进程是 Visual Studio 中的功能，它改进了调试性能、启用了部分信任调试和设计时表达式计算。 承载进程文件的文件名中包含 vshost，位于项目的输出文件夹中。 有关详细信息，请参阅[调试和承载进程](../debugger/debugging-and-the-hosting-process.md)。  
   
 > [!NOTE]
->  承载进程文件 (.vshost.exe) 适用于 Visual Studio 并且不应直接运行或与应用程序一起部署。  
+> 承载进程文件 (.vshost.exe) 适用于 Visual Studio 并且不应直接运行或与应用程序一起部署。  
   
 ## <a name="improved-debugging-performance"></a>改进的调试性能  
  承载进程创建应用程序域并将调试器与应用程序关联起来。 执行这些任务会导致开始调试和开始运行应用程序之间出现明显时间延迟。 承载进程可帮助提高性能，方法是：在后台创建应用程序域并关联调试器，然后在运行应用程序之间保存应用程序域和调试器状态。 有关应用程序域的详细信息，请参阅[应用程序域](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)。  
@@ -38,6 +38,6 @@ ms.locfileid: "54788129"
   
 ## <a name="see-also"></a>请参阅  
  [调试和承载进程](../debugger/debugging-and-the-hosting-process.md)   
- [如何：禁用承载进程](../ide/how-to-disable-the-hosting-process.md)   
+ [如何：禁用托管进程](../ide/how-to-disable-the-hosting-process.md)   
  [即时窗口](../ide/reference/immediate-window.md)   
  [应用程序域](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)

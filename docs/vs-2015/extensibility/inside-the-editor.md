@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414619"
 ---
 # <a name="inside-the-editor"></a>编辑器内
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60056037"
  作为一系列字符或一系列行，可以查看文本快照的内容。 字符和行都是同时索引从零开始。 空文本快照包含零个字符和一个空的行。 由任何有效 Unicode 换行字符序列，或开始或缓冲区末尾的分隔行。 换行字符显式表示文本快照中并不是所有具有相同文本快照中的换行。  
   
 > [!NOTE]
->  有关 Visual Studio 编辑器中的换行字符的详细信息，请参阅[编码和换行符](../ide/encodings-and-line-breaks.md)。  
+> 有关 Visual Studio 编辑器中的换行字符的详细信息，请参阅[编码和换行符](../ide/encodings-and-line-breaks.md)。  
   
  表示文本行<xref:Microsoft.VisualStudio.Text.ITextSnapshotLine>对象，可以获取从文本快照的特定行数或特定的字符位置。  
   

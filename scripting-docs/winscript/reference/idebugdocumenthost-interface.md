@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226e2700b471cd34496682d233e57946e124ff3b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939217"
 ---
 # <a name="idebugdocumenthost-interface"></a>IDebugDocumentHost 接口
 公开特定于宿主的功能，如语法着色，到调试器。 `IDebugDocumentHelper::SetDebugDocumentHost`方法采用此接口作为参数。  

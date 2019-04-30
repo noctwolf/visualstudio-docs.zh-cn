@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8ac5600f22239a751bddde528664eac052b82565
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007069"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>“选择条件”对话框（旧版）
 本主题介绍如何使用**选择条件**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

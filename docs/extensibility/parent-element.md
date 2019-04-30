@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7220e435090cc688d32a2d6d26917a8c05510d4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806104"
 ---
 # <a name="parent-element"></a>父元素
 按钮或组合框的父节点可能只是一个组。 菜单或组的父节点可能是任何其他菜单或组。 在中[CommandPlacement 元素](../extensibility/commandplacement-element.md)，此元素是必需的; 所有其他实例中为可选属性。 如果省略此元素，则父级的`Group_Undefined:0`将隐式。
@@ -38,7 +38,7 @@ ms.locfileid: "56687908"
 |id|必需。 ID 的 GUID/ID 命令标识符。|
 
 ### <a name="child-elements"></a>子元素
- 无
+ None
 
 ### <a name="parent-elements"></a>父元素
 

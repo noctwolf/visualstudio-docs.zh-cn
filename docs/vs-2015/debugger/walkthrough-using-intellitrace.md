@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444258"
 ---
 # <a name="walkthrough-using-intellitrace"></a>演练：使用 IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60053801"
 5. 照常启动调试。 （按 **“F5”** 或单击 **“调试”/“启动调试”**）。  
   
     > [!TIP]
-    >  在调试时使 **“局部变量”** 和 **“自动”** 窗口保持打开状态，以查看并记录这些窗口中的值。  
+    > 在调试时使 **“局部变量”** 和 **“自动”** 窗口保持打开状态，以查看并记录这些窗口中的值。  
   
 6. 执行在断点处停止。 如果未显示 **“诊断工具”** 窗口，则单击 **“调试”/“Windows”/“IntelliTrace 事件”**。  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60053801"
 1. 启用调用收集。 （在 **“工具”/“选项”/“IntelliTrace”/“常规”** 中，选择 **“IntelliTrace 事件和调用信息”**）。 IntelliTrace 将在下一个调试会话启动时开始收集此信息。  
   
     > [!TIP]
-    >  这可能会降低应用程序速度并增加保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要获取最多调用数据但最大程度减小影响，请仅记录来自你感兴趣的模块的数据。 若要更改 .iTrace 文件的最大大小，请转到 **“工具”/“选项”/“IntelliTrace”/“高级”**，然后指定最大磁盘空间。 默认值为 250 MB。  
+    > 这可能会降低应用程序速度并增加保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要获取最多调用数据但最大程度减小影响，请仅记录来自你感兴趣的模块的数据。 若要更改 .iTrace 文件的最大大小，请转到 **“工具”/“选项”/“IntelliTrace”/“高级”**，然后指定最大磁盘空间。 默认值为 250 MB。  
   
 2. 开始调试在上一节中创建的 C# 控制台应用程序。 执行在断点处停止。 如果未显示 **“诊断工具”** 窗口，则单击 **“调试”/“Windows”/“IntelliTrace 事件”**。  
   
@@ -98,6 +98,6 @@ ms.locfileid: "60053801"
      选择一个函数调用并双击它。 应看到函数入口点和退出点，以及当前调用对其他函数进行的调用和由该调用引发的 IntelliTrace 事件。 如果未启用“历史调试”，则此操作会将其启用。 有关历史调试的详细信息，请参阅 [Historical Debugging](../debugger/historical-debugging.md)。  
   
     > [!NOTE]
-    >  你可能会看到某些调用变暗。 这是因为 IntelliTrace 未记录来自相应模块的数据。 若要查看此数据，请让 IntelliTrace 从这些模块中收集数据。 有关指定模块的信息，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+    > 你可能会看到某些调用变暗。 这是因为 IntelliTrace 未记录来自相应模块的数据。 若要查看此数据，请让 IntelliTrace 从这些模块中收集数据。 有关指定模块的信息，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ## <a name="next-steps"></a>后续步骤

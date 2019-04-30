@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 187548a8510b3075c476a1309d1897eb60a647c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939919"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Visual Studio 中的 Office 解决方案的体系结构
   本部分中的主题提供有关使用 Visual Studio 中的 Office 开发人员工具创建的解决方案的工作原理的信息。

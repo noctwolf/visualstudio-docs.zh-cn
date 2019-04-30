@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431616"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>性能工具问题疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ ms.locfileid: "60077350"
 - 在分析数据 (.vsp) 文件中嵌入符号信息。 有关详细信息，请参阅[使用性能数据文件保存符号信息](../profiling/saving-symbol-information-with-performance-data-files.md)。  
   
 > [!NOTE]
->  分析引擎要求 .pdb 文件的版本与编译的应用程序文件相同。 来自应用程序文件的早期版本或更高版本的 .pdb 文件无法正常工作。
+> 分析引擎要求 .pdb 文件的版本与编译的应用程序文件相同。 来自应用程序文件的早期版本或更高版本的 .pdb 文件无法正常工作。

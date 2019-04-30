@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445438"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ ms.locfileid: "60084036"
 6. WCF 服务配置编辑器：可以创建和修改 WCF 服务的配置设置。  
   
 > [!WARNING]
->  您可能会看到其他外部工具列表，具体取决于已安装的 Visual Studio 的版本以及已应用的设置配置文件。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 您可能会看到其他外部工具列表，具体取决于已安装的 Visual Studio 的版本以及已应用的设置配置文件。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="adding-new-tools"></a>添加新工具  
  可将外部工具添加到“工具”菜单。 打开“外部工具”对话框并单击“添加”，然后填写信息。 例如，以下条目会导致 Windows 资源管理器在当前已在 Visual Studio 中打开的文件目录中打开：  
@@ -100,7 +100,7 @@ ms.locfileid: "60084036"
  以下自变量是在启动外部工具时分配的 Visual Studio 变量。 使用“外部工具”对话框，可以在“工具”菜单上列出指向外部工具（如记事本或 Spy++）的链接。  
   
 > [!NOTE]
->  IDE 状态栏会显示当前行和当前列变量，以指示插入点在活动代码编辑器中的位置。 当前文本变量返回在该位置选择的文本或代码。  
+> IDE 状态栏会显示当前行和当前列变量，以指示插入点在活动代码编辑器中的位置。 当前文本变量返回在该位置选择的文本或代码。  
   
 |名称|参数|描述|  
 |----------|--------------|-----------------|  

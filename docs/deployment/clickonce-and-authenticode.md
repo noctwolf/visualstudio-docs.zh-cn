@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900543"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *验证码* 是使用行业标准加密，通过验证应用程序发行者真实性的数字证书对应用程序代码进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。

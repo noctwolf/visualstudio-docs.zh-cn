@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b97903e0167ba2aba83ea0cfecdd6084c9270e85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818138"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>无法创建关联&lt;关联名称&gt; - 属性类型不匹配
 
@@ -37,4 +37,4 @@ ms.locfileid: "55911827"
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何： 创建 LINQ to SQL 类 （O/R 设计器） 之间的关联](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [如何：创建 LINQ to SQL 类 （O/R 设计器） 之间的关联](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

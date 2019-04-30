@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005950"
 ---
 # <a name="unterminated-comment"></a>未终止的注释
 开始的多行注释块，但未正确终止它。 多行注释开头"/ *"的组合，并最终以反"\*/"组合。 下面是一个示例：  

@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580616"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中，使用 XAML 设计器创建 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,9 +87,9 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  **显示** 为应用指定不同的显示大小和分辨率。
 
- **方向** 为应用指定不同的方向：“横向”或“纵向”。
+ **方向**指定不同的应用的方向：“横向”或“纵向”。
 
- **边缘** 为应用指定不同的边缘对齐方式：“两端对齐”、“左对齐”、“右对齐”或“无”。
+ **边缘**指定不同的边缘对齐方式，为你的应用：“两者”、“左对齐”、“右对齐”或“无”。
 
  **高对比度** 根据选定的对比度设置预览应用。 如果将此设置的值不是“默认值” ，将重写 App.xaml 中的 `RequestedTheme` 属性设置。
 

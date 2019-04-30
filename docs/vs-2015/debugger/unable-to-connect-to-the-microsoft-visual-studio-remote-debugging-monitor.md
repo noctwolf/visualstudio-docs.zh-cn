@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437779"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60085761"
 当你在“附加到进程”  对话框中输入无效的 Visual Studio 远程调试监视器名称时，会出现此错误消息。 远程调试监视器名称通常与尝试连接以进行远程调试的计算机的名称相同。 出现此消息的原因可能是网络上不存在该远程计算机，远程计算机上的远程调试监视器未正确设置，或者由于网络问题或存在防火墙而导致远程计算机不可访问。  
   
 > [!IMPORTANT]
->  如果你认为你因产品 Bug 而收到此消息，请向 Visual Studio 报告此问题 [发送笑脸](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。  
+> 如果你认为你因产品 Bug 而收到此消息，请向 Visual Studio 报告此问题 [发送笑脸](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>我在本地调试时收到了此消息  
  如果在本地调试时收到此消息，问题可能出在你的防病毒软件或第三方防火墙。 Visual Studio 是一个 32 位应用程序，因此它使用 64 位的远程调试器版本来调试 64 位应用程序。 两个进程使用本地计算机内的本地网络进行通信。 计算机会持续进行网络通信，但第三方安全软件可能会阻止通信。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562357"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 元素
   表示 SharePoint 文件，如功能元素文件部署到 SharePoint 时，包含与项目项。

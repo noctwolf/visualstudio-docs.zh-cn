@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584579"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>用于本地化的资源的分层组织
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

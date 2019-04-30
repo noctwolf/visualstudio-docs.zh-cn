@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ba3b7c2c1cac1255c6234d2b9a8ed6ab4fd05820
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909432"
 ---
 # <a name="managing-configuration-options"></a>管理配置选项
 当你创建新的项目类型时，您必须管理项目和解决方案配置设置以确定如何在将生成项目，打包、 部署和运行。 以下主题讨论项目和解决方案配置。

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445694"
 ---
 # <a name="help-viewer-administrator-guide"></a>帮助查看器管理员指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60086593"
 - 帮助的默认源仍处于联机状态。  
   
   > [!TIP]
-  >  可以通过修改 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 注册表项来更改帮助的默认源。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+  > 可以通过修改 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 注册表项来更改帮助的默认源。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
 - 系统仍会在首次启动 Visual Studio 时提示客户端安装基本帮助内容。 可以通过修改 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 注册表项来禁用此提示。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60086593"
 - 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
   
   > [!TIP]
-  >  如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+  > 如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
   注意：  
   

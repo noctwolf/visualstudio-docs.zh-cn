@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 704e08524bb9aaf014dbd29e7df7361a7e1bbefe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967404"
 ---
 # <a name="form-support-in-workflows"></a>在工作流中的窗体支持
   可以在工作流中使用四种类型的窗体： 关联、 初始化、 任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于特定窗体取决于若干因素下, 表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)。

@@ -1,5 +1,5 @@
 ---
-title: 演练： 下载附属程序集使用 ClickOnce 部署 API 按需 |Microsoft Docs
+title: 演练：下载使用 ClickOnce 部署 API 按需的附属程序集 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 515149f6e4e01c27d4076580f7fe405f3c8c5496
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405928"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练： 下载使用 ClickOnce 部署 API 按需的附属程序集
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：下载使用 ClickOnce 部署 API 按需的附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。
 
  如中所述[本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)，可以包括适用于多个区域性相同的多个附属程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。
 
- 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中执行此任务。  另请参阅[演练： 下载 ClickOnce 部署 API 使用设计器中使用按需的附属程序集](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110))或[演练： 使用 ClickOnce 部署 API 使用按需的附属程序集下载在设计器](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。
+ 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中执行此任务。  另请参阅[演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110))或[演练：下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。
 
 > [!NOTE]
->  出于测试目的，下面的代码示例以编程方式将区域性设置为 `ja-JP`。 有关如何为生产环境调整此代码的信息，请参阅本主题中后面的“后续步骤”部分。
+> 出于测试目的，下面的代码示例以编程方式将区域性设置为 `ja-JP`。 有关如何为生产环境调整此代码的信息，请参阅本主题中后面的“后续步骤”部分。
 
 ## <a name="prerequisites"></a>系统必备
- 本主题假定你知道如何使用 Visual Studio 将本地化的资源添加到应用程序。 有关详细说明，请参阅[演练： 本地化 Windows 窗体](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))。
+ 本主题假定你知道如何使用 Visual Studio 将本地化的资源添加到应用程序。 有关详细说明，请参阅[演练：本地化 Windows 窗体](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))。
 
 ### <a name="to-download-satellite-assemblies-on-demand"></a>按需下载附属程序集
 

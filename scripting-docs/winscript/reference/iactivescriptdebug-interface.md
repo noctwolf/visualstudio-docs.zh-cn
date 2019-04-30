@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6341b5c3763d6e4c836b3bdc0539552fcbe7f980
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955024"
 ---
 # <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug 接口
 由脚本引擎实现该支持调试。 通常情况下，实现的对象`IActiveScriptDebug`接口还实现`IActiveScript`接口。 如果是这样，调用`IActiveScript::QueryInterface`方法来获取`IActiveScriptDebug`接口。  

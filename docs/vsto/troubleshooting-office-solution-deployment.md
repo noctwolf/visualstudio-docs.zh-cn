@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978323"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 解决方案部署故障排除
   本主题包含有关如何解决在部署 Office 解决方案时可能遇到的常见问题的信息。

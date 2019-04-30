@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427941"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中的对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。
@@ -74,7 +74,7 @@ ms.locfileid: "60066762"
  尝试使用的代码`Globals`类之前初始化文档或 VSTO 外接程序可能会引发运行的时异常。 例如，声明一个类级变量时使用 `Globals` 可能会失败，因为在对声明的对象进行实例化之前，可能不会使用对所有主机项的引用将 `Globals` 类初始化。
 
 > [!NOTE]
->  永远不会在设计时初始化 `Globals` 类，控件实例由设计器创建。 这意味着，如果创建使用的属性的用户控件`Globals`类从在用户控件类中，您必须检查该属性是否返回**null**尝试使用返回的对象之前。
+> 永远不会在设计时初始化 `Globals` 类，控件实例由设计器创建。 这意味着，如果创建使用的属性的用户控件`Globals`类从在用户控件类中，您必须检查该属性是否返回**null**尝试使用返回的对象之前。
 
 ## <a name="see-also"></a>请参阅
 - [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)

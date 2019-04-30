@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444617"
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除参数重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045793"
  通过第一个定位游标的方法、 索引器或委托执行删除参数操作。 当光标处于位置，以便调用 Remove`Parameters`操作中，单击**重构**菜单中，按键盘快捷方式，或从快捷菜单中选择该命令。  
   
 > [!NOTE]
->  无法为扩展方法中删除第一个参数。  
+> 无法为扩展方法中删除第一个参数。  
   
 ### <a name="to-remove-parameters"></a>若要删除参数  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045793"
  您可以从方法声明或方法调用中删除参数。 将光标放置在方法声明或委托名称并调用删除参数。  
   
 > [!CAUTION]
->  删除参数允许您删除的成员，但它在正文中引用的参数不会在方法体中删除对该参数的引用。 这可以引入你的代码生成错误。 但是，可以使用**预览更改**对话框在执行重构操作之前检查你的代码。  
+> 删除参数允许您删除的成员，但它在正文中引用的参数不会在方法体中删除对该参数的引用。 这可以引入你的代码生成错误。 但是，可以使用**预览更改**对话框在执行重构操作之前检查你的代码。  
   
  如果对方法调用期间修改正在移除的参数，则删除该参数还会删除修改。 例如，如果一个方法调用是从更改  
   

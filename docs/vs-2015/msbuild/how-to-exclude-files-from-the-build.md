@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440064"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：从生成中排除文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60052553"
     ```  
   
     > [!NOTE]
-    >  必须指定这两个属性的路径。 如果你使用绝对路径在 `Include` 属性中指定文件位置，那么在 `Exclude` 属性中也必须使用绝对路径；如果你在 `Include` 属性中使用相对路径，那么在 `Exclude` 属性中也必须使用相对路径。  
+    > 必须指定这两个属性的路径。 如果你使用绝对路径在 `Include` 属性中指定文件位置，那么在 `Exclude` 属性中也必须使用绝对路径；如果你在 `Include` 属性中使用相对路径，那么在 `Exclude` 属性中也必须使用相对路径。  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>使用条件从生成的输入中排除文件或目录  
  如果你希望在调试生成中包括某些项，而不希望在发布生成中包括这些项，则可以使用 `Condition` 属性来指定包括该项的条件。  
@@ -127,4 +127,4 @@ ms.locfileid: "60052553"
   
 ## <a name="see-also"></a>请参阅  
  [项](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)

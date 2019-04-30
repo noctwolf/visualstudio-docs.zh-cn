@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408453"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60104892"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练：实现代码片段](../../extensibility/walkthrough-implementing-code-snippets.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>托管包框架支持的代码段  
  托管的包框架 (MPF) 支持大多数代码段功能，从读取到插入代码段模板并启用特殊的编辑模式。 通过管理支持<xref:Microsoft.VisualStudio.Package.ExpansionProvider>类。  
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)   
  [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [代码片段](../../ide/code-snippets.md)   
- [演练：获取安装的代码片段 （旧版实现） 的列表](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [演练：获取包含已安装的代码片段的列表（旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

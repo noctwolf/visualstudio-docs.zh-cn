@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fefbbbced72a53566ffb726c9ea900e037ee4639
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3ac97d97c17bd09882bc347116c2aec44db3f28a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413373"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 将继续运行此过程从已停止状态。 保留任何以前的执行状态 （如步骤），并再次执行该过程开始。
 
 > [!NOTE]
->  应使用此方法以代替[继续](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
+> 应使用此方法以代替[继续](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
 
 ## <a name="syntax"></a>语法
 

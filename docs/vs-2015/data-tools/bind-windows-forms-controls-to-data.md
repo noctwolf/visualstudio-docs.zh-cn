@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439474"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>将 Windows 窗体控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59668985"
  ![将数据源绑定到详细信息](../data-tools/media/raddata-bind-data-source-to-details.png "raddata 绑定数据源详细信息")  
   
 > [!IMPORTANT]
->  请注意，在上图中，将从客户表不能从 Orders 表的 Orders 属性。 通过绑定到 Customer.Orders 属性，在详细信息控件中立即反映在 DataGridView 中进行导航命令中。 如果您从订单表拖动，仍会将控件绑定到数据集，但不是它们将不会与同步 DataGridView。  
+> 请注意，在上图中，将从客户表不能从 Orders 表的 Orders 属性。 通过绑定到 Customer.Orders 属性，在详细信息控件中立即反映在 DataGridView 中进行导航命令中。 如果您从订单表拖动，仍会将控件绑定到数据集，但不是它们将不会与同步 DataGridView。  
   
  下图中显示的默认的客户表中的 Orders 属性绑定到"详细信息"后，添加到窗体数据绑定控件**数据源**窗口。  
   

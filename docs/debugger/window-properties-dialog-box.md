@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929215"
 ---
 # <a name="window-properties-dialog-box"></a>“窗口属性”对话框
 使用此对话框中，若要了解有关特定窗口的详细信息。 若要显示此对话框中，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”。 

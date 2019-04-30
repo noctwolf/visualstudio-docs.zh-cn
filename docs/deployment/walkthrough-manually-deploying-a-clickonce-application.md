@@ -1,5 +1,5 @@
 ---
-title: 演练： 手动部署 ClickOnce 应用程序 |Microsoft Docs
+title: 演练：手动部署 ClickOnce 应用程序 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405800"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用程序
 如果您不能使用 Visual Studio 部署应用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，或者需要使用高级的部署功能，如受信任的应用程序部署，应使用*Mage.exe*命令行工具来创建你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]清单。 本演练介绍如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]通过使用命令行版本的部署 (*Mage.exe*) 或图形版本 (*MageUI.exe*) 的清单生成和编辑工具。
@@ -43,7 +43,7 @@ ms.locfileid: "56628099"
 
 - 确定如何将分布式部署。
 
-   分布选项包括： Web、 文件共享或 CD。 有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。
+   分布选项包括：Web、 文件共享或 CD。 有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。
 
 - 确定应用程序是否需要提升的信任级别。
 
@@ -54,13 +54,13 @@ ms.locfileid: "56628099"
    你应登录你的部署使用验证码证书。 您可以使用 Visual Studio 中，生成测试证书*MageUI.exe*，或*MakeCert.exe*并*Pvk2Pfx.exe*工具，也可以从证书获取证书颁发机构 (CA)。 如果您选择使用受信任的应用程序部署，您还必须执行的一次性安装到所有客户端计算机上的证书。 有关详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。
 
   > [!NOTE]
-  >  也可以登录你的部署使用 CNG 证书，你可以从证书颁发机构获取。
+  > 也可以登录你的部署使用 CNG 证书，你可以从证书颁发机构获取。
 
 - 请确保该应用程序不具有与 UAC 信息嵌入到清单。
 
    您需要确定你的应用程序是否包含具有用户帐户控制 (UAC) 信息的清单，如`<dependentAssembly>`元素。 若要检查的应用程序清单，可以使用 Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035)实用程序。
 
-   如果你的应用程序包含具有 UAC 的详细信息的清单，您必须重新生成不带 UAC 的信息。 有关C#项目在 Visual Studio 中，打开项目属性并选择应用程序选项卡。在中**清单**下拉列表中，选择**创建不带清单的应用程序**。 对于 Visual Basic 项目在 Visual Studio 中，打开项目属性，选择应用程序选项卡，然后单击**查看 UAC 设置**。 在打开清单文件中，删除的所有元素内单个`<asmv1:assembly>`元素。
+   如果你的应用程序包含具有 UAC 的详细信息的清单，您必须重新生成不带 UAC 的信息。 对于 C# 项目在 Visual Studio 中，打开项目属性并选择应用程序选项卡。在中**清单**下拉列表中，选择**创建不带清单的应用程序**。 对于 Visual Basic 项目在 Visual Studio 中，打开项目属性，选择应用程序选项卡，然后单击**查看 UAC 设置**。 在打开清单文件中，删除的所有元素内单个`<asmv1:assembly>`元素。
 
 - 确定应用程序是否需要客户端计算机上的系统必备组件。
 
@@ -73,7 +73,7 @@ ms.locfileid: "56628099"
 2. 在部署目录中刚刚创建，创建一个版本子目录。 如果这是首次部署应用程序，命名为版本子目录**1.0.0.0**。
 
    > [!NOTE]
-   >  你的部署的版本可以不同于你的应用程序的版本。
+   > 你的部署的版本可以不同于你的应用程序的版本。
 
 3. 所有应用程序文件复制到版本子目录，其中包括可执行文件、 程序集、 资源和数据文件。 如有必要，可以创建其他子目录包含其他文件。
 
@@ -86,7 +86,7 @@ ms.locfileid: "56628099"
    ```
 
    > [!NOTE]
-   >  请务必包括句点 （.） 后`-FromDirectory`选项，它指示当前目录。 如果不包含点，必须对应用程序文件指定的路径。
+   > 请务必包括句点 （.） 后`-FromDirectory`选项，它指示当前目录。 如果不包含点，必须对应用程序文件指定的路径。
 
 6. 使用验证码证书对应用程序清单进行签名。 替换*mycert.pfx*替换为您的证书文件的路径。 替换*passwd*替换为您的证书文件的密码。
 
@@ -112,7 +112,7 @@ ms.locfileid: "56628099"
 
 10. 将在部署目录中的所有文件复制到部署目标或媒体中。 这可能是网站或 FTP 站点、 文件共享或 CD-ROM 上的文件夹。
 
-11. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，则必须向你的用户的完整路径的部署清单。 例如，如果部署到 AppToDeploy http://webserver01/ AppToDeploy 目录中的完整 URL 路径会 http://webserver01/AppToDeploy/AppToDeploy.application。
+11. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，则必须向你的用户的完整路径的部署清单。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，在完整的 URL 路径应 http://webserver01/AppToDeploy/AppToDeploy.application 。 
 
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>若要使用 MageUI.exe 图形工具部署应用程序
 
@@ -121,7 +121,7 @@ ms.locfileid: "56628099"
 2. 在部署目录中刚刚创建，创建一个版本子目录。 如果这是首次部署应用程序，命名为版本子目录**1.0.0.0**。
 
    > [!NOTE]
-   >  你的版本是部署的你的应用程序的版本可能不同。
+   > 你的版本是部署的你的应用程序的版本可能不同。
 
 3. 所有应用程序文件复制到版本子目录，其中包括可执行文件、 程序集、 资源和数据文件。 如有必要，可以创建其他子目录包含其他文件。
 
@@ -187,7 +187,7 @@ ms.locfileid: "56628099"
 
 28. 将在部署目录中的所有文件复制到部署目标或媒体中。 这可能是网站或 FTP 站点、 文件共享或 CD-ROM 上的文件夹。
 
-29. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，您必须为用户提供的部署清单的完整路径。 例如，如果部署到 AppToDeploy http://webserver01/ AppToDeploy 目录中的完整 URL 路径会 http://webserver01/AppToDeploy/AppToDeploy.application。
+29. 向用户提供 URL、 UNC 或安装应用程序所需的物理介质。 如果提供的 URL 或 UNC，您必须为用户提供的部署清单的完整路径。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，在完整的 URL 路径应 http://webserver01/AppToDeploy/AppToDeploy.application 。 
 
 ## <a name="next-steps"></a>后续步骤
  当你需要进行部署的应用程序的新版本时，创建新版本命名的新目录 — 1.0.0.1—and 例如，将新的应用程序文件复制到新目录。 接下来，您需要按照前面的步骤来创建和注册一个新的应用程序清单，并更新和部署清单进行签名。 请务必指定相同的更高版本中均*Mage.exe* `-New`和`-Update`调用，作为[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]仅更新更高版本中，最重要的最左侧的整数。 如果您使用了*MageUI.exe*，你可以更新部署清单通过打开它，选择**应用程序引用**选项卡上，单击**选择清单**按钮，并然后选择更新的应用程序清单。

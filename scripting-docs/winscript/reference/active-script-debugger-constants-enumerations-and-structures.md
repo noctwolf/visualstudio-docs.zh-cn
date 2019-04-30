@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b287001371b80612a2b09a9672e59aff51309cc9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997338"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>活动脚本调试器常量、枚举和结构
 下面的常量、枚举和结构由 Active Debugging 接口使用。  

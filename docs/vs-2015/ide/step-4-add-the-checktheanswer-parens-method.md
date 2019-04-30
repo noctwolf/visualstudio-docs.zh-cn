@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b2473654bf05a66ef94bd0e88f06ae3e27dbf12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a9806bad150a5d03a942c7dfb36753f91d10536e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442563"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>步骤 4：添加 CheckTheAnswer() 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60060535"
 在本教程的第 4 部分中，您将编写一个方法 `CheckTheAnswer()`，用于判定数学题的答案是否正确。 本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时的数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 > [!NOTE]
->  如果您一直使用 Visual Basic 学习本教程，则将使用 `Function` 关键字而不是一般的 `Sub` 关键字，因为此方法将返回一个值。 真的很简单：sub 不会返回值，但函数会返回值。  
+> 如果您一直使用 Visual Basic 学习本教程，则将使用 `Function` 关键字而不是一般的 `Sub` 关键字，因为此方法将返回一个值。 真的很简单：sub 不会返回值，但函数会返回值。  
   
 ### <a name="to-verify-whether-the-answers-are-correct"></a>验证答案是否正确  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60060535"
 3. 保存并运行您的程序，开始测验，并提供加法题的正确答案。  
   
     > [!NOTE]
-    >  在输入答案时，您必须在开始输入答案前选择默认值或手动删除零。 您将在本教程的后面部分中纠正这一行为。  
+    > 在输入答案时，您必须在开始输入答案前选择默认值或手动删除零。 您将在本教程的后面部分中纠正这一行为。  
   
      提供正确答案后，将打开一个消息框，“开始”按钮变得可用，同时计时器将停止。  
   

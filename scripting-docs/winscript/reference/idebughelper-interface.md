@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1708b742a484a2e7d6d48cf759f15c08711e13d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979183"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper 接口
 充当对象浏览器和简单的连接点的工厂。 进程调试管理器 (PDM) 实现此接口，这由脚本引擎。  

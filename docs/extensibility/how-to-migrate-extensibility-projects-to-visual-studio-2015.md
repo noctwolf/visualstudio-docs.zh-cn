@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415282"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>如何：将扩展性项目迁移到 Visual Studio 2015
 下面介绍了如何升级您的扩展插件。
 
 > [!IMPORTANT]
->  如果你想要维护针对早期版本的 Visual Studio 扩展解决方案的版本，请务必在升级之前创建一个副本。 它可能很难返回到其以前的状态的升级后的版本。
+> 如果你想要维护针对早期版本的 Visual Studio 扩展解决方案的版本，请务必在升级之前创建一个副本。 它可能很难返回到其以前的状态的升级后的版本。
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>若要升级的可扩展性解决方案
 
@@ -52,4 +52,4 @@ ms.locfileid: "60072794"
 5. 此外可以切换到使用 VS SDK 生成工具的 NuGet 版本。 此 NuGet 包[Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools)和一次添加到你的项目将包含必要的工具和目标文件，以使您可以在计算机上构建扩展性项目，而无需安装 VS SDK。
 
 > [!NOTE]
->  它不是所需更新现有扩展性项目以使用 NuGet 引用程序集和工具。  他们可以继续使用引用程序集和与 VS SDK 一起安装的工具进行生成。
+> 它不是所需更新现有扩展性项目以使用 NuGet 引用程序集和工具。  他们可以继续使用引用程序集和与 VS SDK 一起安装的工具进行生成。

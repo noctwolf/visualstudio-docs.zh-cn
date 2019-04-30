@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384049"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具在 Visual Studio 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ LINQ to SQL 是由 Microsoft 发布的第一个对象关系映射技术。 它�
  ![LINQ to SQL 设计器](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL 设计器")
 
 > [!IMPORTANT]
->  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射，如将实体类映射到联接表;使用实体框架为复杂的映射。 此外，该设计器还是一个单向代码生成器。 这表示代码文件中只反映对设计器图面所做的更改。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中不会反映对代码文件的手动更改。 在保存设计器并重新生成代码时，将覆盖在代码文件中手动进行的所有更改。 了解如何添加用户代码和扩展由生成的类[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，请参阅[如何：扩展 O/R 设计器生成的代码](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射，如将实体类映射到联接表;使用实体框架为复杂的映射。 此外，该设计器还是一个单向代码生成器。 这表示代码文件中只反映对设计器图面所做的更改。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中不会反映对代码文件的手动更改。 在保存设计器并重新生成代码时，将覆盖在代码文件中手动进行的所有更改。 了解如何添加用户代码和扩展由生成的类[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，请参阅[如何：扩展 O/R 设计器生成的代码](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)。
 
 ## <a name="creating-and-configuring-the-datacontext"></a>创建和配置 DataContext
  添加后**LINQ to SQL 类**项到项目并打开[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，空设计图面表示一个空<xref:System.Data.Linq.DataContext>可对其进行配置。 <xref:System.Data.Linq.DataContext>配置通过拖动到设计图面上的第一项提供的连接信息... 因此，<xref:System.Data.Linq.DataContext> 是使用放置到设计图面上的第一项中的连接信息进行配置的。 有关详细信息<xref:System.Data.Linq.DataContext>类，请参阅[DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)。
@@ -53,7 +53,7 @@ LINQ to SQL 是由 Microsoft 发布的第一个对象关系映射技术。 它�
  您可以创建<xref:System.Data.Linq.DataContext>调用的方法 （映射到中） 存储过程和函数，通过将其从拖动**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. 存储过程和函数作为 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] 的方法添加到 <xref:System.Data.Linq.DataContext>中。
 
 > [!NOTE]
->  当您将存储的过程和函数从**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，生成的返回类型<xref:System.Data.Linq.DataContext>方法不同具体取决于项的放置位置。 有关详细信息，请参阅[DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)。
+> 当您将存储的过程和函数从**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]，生成的返回类型<xref:System.Data.Linq.DataContext>方法不同具体取决于项的放置位置。 有关详细信息，请参阅[DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)。
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>配置 DataContext 以使用存储过程来保存实体类和数据库之间的数据
  如上文所述，您可以创建调用存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法。 此外，您还可以分配执行插入、更新和删除操作的默认 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 运行时行为可以使用的存储过程。 有关详细信息，请参阅[如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。

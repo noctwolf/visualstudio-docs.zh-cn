@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab2f063f684407c89cd3ec73cd256d0219805b66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409432"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60080626"
 通过使用 InstallShield Limited Edition，你可以创建安装文件并将其分发给用户，以便他们可以在不连接到网络的情况下安装桌面应用程序或组件。 InstallShield Limited Edition 对 Visual Studio 专业版和企业版用户免费。 它取代了 Windows Installer 技术，Visual Studio 不再支持该技术。 作为替代方法，你可以使用需要网络连接的 ClickOnce 来分发应用程序和组件。 请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。  
   
 > [!NOTE]
->  通过安装 Visual Studio 安装程序项目扩展，你可以继续使用在早期版本的 Visual Studio 中创建的 Windows Installer 项目。 请参阅 [Visual Studio 安装程序项目扩展](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)。  
+> 通过安装 Visual Studio 安装程序项目扩展，你可以继续使用在早期版本的 Visual Studio 中创建的 Windows Installer 项目。 请参阅 [Visual Studio 安装程序项目扩展](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)。  
   
 ### <a name="to-enable-installshield-limited-edition"></a>启用 InstallShield Limited Edition  
   
