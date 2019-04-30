@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432680"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：为特定 Dll 的限制规范
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "60091312"
 7. 可选。 若要添加更多 .dll 文件，请右键单击“目标”，然后选择“添加目标二进制文件”。 在“添加目标二进制文件”对话框中选择这些文件。  
   
     > [!NOTE]
-    >  请勿指定执行 DLL 的可执行 (.exe) 文件。  
+    > 请勿指定执行 DLL 的可执行 (.exe) 文件。  
   
 ## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   

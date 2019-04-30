@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009333"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
 如果 Windows 脚本引擎允许原始文本的代码 scriptlet，若要添加到脚本中，或允许要在运行时计算的表达式文本，它实现`IActiveScriptParse`接口。 对于已解释的脚本语言具有任何独立的创作环境，例如 VBScript 中，这提供了其他机制 (而不`IPersist*`) 若要获取到脚本引擎的脚本代码，并将附加到各种对象的脚本片段事件。  

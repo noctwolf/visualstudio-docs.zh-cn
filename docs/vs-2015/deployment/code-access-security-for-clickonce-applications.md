@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423283"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 - 当应用程序需要完全信任权限时，可能会提示最终用户向其授予对该应用程序的权限。 这意味着应用程序不会真正提供 ClickOnce 体验，并且该提示可能会给经验较少的用户造成混淆。  
   
   > [!NOTE]
-  >  当从可移动媒体（如 CD-ROM）安装应用程序时，将不会提示用户。 此外，网络管理员可以配置网络策略，以便在从受信任的源安装应用程序时不会提示用户。 有关更多信息，请参见 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
+  > 当从可移动媒体（如 CD-ROM）安装应用程序时，将不会提示用户。 此外，网络管理员可以配置网络策略，以便在从受信任的源安装应用程序时不会提示用户。 有关更多信息，请参见 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
   若要限制 ClickOnce 应用程序的权限，可以修改应用程序的代码访问安全性权限，以请求最适合你的应用程序所需权限的区域。 在大多数情况下，你可以选择从中部署该应用程序的区域。 例如，如果你的应用程序是企业应用程序，则可以使用 **“本地 Intranet”** 区域。 如果你的应用程序是 Internet 应用程序，则可以使用 **“Internet”** 区域。  
   

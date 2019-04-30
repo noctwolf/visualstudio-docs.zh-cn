@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429921"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>源代码管理插件的测试指南
 本部分提供用于测试你的源代码管理插件与指导[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 提供的最常见的测试区域，以及一些可能会出现问题的更多复杂区域的广泛概述。 本概述不应为测试用例的详尽列表。
 
 > [!NOTE]
->  某些 bug 修复和改进到最新[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 可能会发现与现有源控件的管理单元以前未使用的早期版本时遇到的问题[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 强烈建议测试你现有的源代码管理插件在此部分中，枚举的区域，即使以来的以前版本的插件进行任何更改[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
+> 某些 bug 修复和改进到最新[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 可能会发现与现有源控件的管理单元以前未使用的早期版本时遇到的问题[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 强烈建议测试你现有的源代码管理插件在此部分中，枚举的区域，即使以来的以前版本的插件进行任何更改[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="common-preparation"></a>常见的准备工作
  具有计算机[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和安装，是必需的目标源代码管理插件。 与此类似配置的第二个计算机可用于某些打开从源代码管理的测试。
@@ -51,7 +51,7 @@ ms.locfileid: "60061029"
 
 ## <a name="test-areas-covered-in-this-section"></a>在本部分中介绍的测试环节
 
-- [测试区域 1:从源代码管理添加到 / Open](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [测试区域 1：添加到源代码管理/从源代码管理打开](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - Case 1a:将解决方案添加到源代码管理
 
@@ -59,9 +59,9 @@ ms.locfileid: "60061029"
 
     - 案例 1 c:从源代码管理添加解决方案
 
-- [测试区域 2:从源代码管理获取](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [测试区域 2：从源代码管理获取](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [测试区域 3:签出/撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [测试区域 3：签出/撤消签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - 案例 3:签出/撤销签出
 
@@ -75,7 +75,7 @@ ms.locfileid: "60061029"
 
     - Case 3e:撤消签出
 
-- [测试区域 4:登记](../../extensibility/internals/test-area-4-check-in.md)
+- [测试区域 4：签入](../../extensibility/internals/test-area-4-check-in.md)
 
     - Case 4a:修改的项目
 
@@ -83,7 +83,7 @@ ms.locfileid: "60061029"
 
     - 用例 4 c:添加项目
 
-- [测试区域 5:更改源代码管理](../../extensibility/internals/test-area-5-change-source-control.md)
+- [测试区域 5：更改源代码管理](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - Case 5a:将绑定
 
@@ -91,11 +91,11 @@ ms.locfileid: "60061029"
 
     - 用例 5 c:重新绑定
 
-- [测试区域 6:删除](../../extensibility/internals/test-area-6-delete.md)
+- [测试区域 6：删除](../../extensibility/internals/test-area-6-delete.md)
 
-- [测试区域 7:共享](../../extensibility/internals/test-area-7-share.md)
+- [测试区域 7：共享](../../extensibility/internals/test-area-7-share.md)
 
-- [测试区域 8:插件切换](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [测试区域 8：插件切换](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - Case 8a:自动更改
 

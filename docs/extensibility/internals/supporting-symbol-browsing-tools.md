@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4d3d15f6d38ab494c586f22cc428d5e00442e84
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428758"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支持符号浏览工具
 **对象浏览器**，**类视图**，**调用浏览器**并**查找符号结果**工具提供浏览功能在 Visual Studio 中的符号。 这些工具显示的符号的层次结构树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和不同组件中包含其他语言元素。 这些组件包括 Visual Studio 项目中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。
@@ -46,9 +46,9 @@ ms.locfileid: "56616997"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法来确定给定的列表项是否可展开，并具有子级的项。 对象管理器 UI 发送请求以展开元素，如果通过调用请求符号的子列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 正在生成按需在树的不同部分继续。
 
 > [!NOTE]
->  若要实现的本机代码符号提供程序，请使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>接口。
+> 若要实现的本机代码符号提供程序，请使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>接口。
 
 ## <a name="see-also"></a>请参阅
 - [如何：使用对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
-- [如何：公开库提供对对象管理器的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-- [如何：确定库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+- [如何：向对象管理器公开库提供的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+- [如何：识别库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

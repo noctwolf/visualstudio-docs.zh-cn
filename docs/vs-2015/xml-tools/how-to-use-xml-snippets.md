@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440580"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60055257"
  下面的过程介绍如何访问**插入代码段**命令。  
   
 > [!NOTE]
->  **插入代码段**命令也是可通过键盘快捷方式 （CTRL + K，然后选择 CTRL + X）。  
+> **插入代码段**命令也是可通过键盘快捷方式 （CTRL + K，然后选择 CTRL + X）。  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>从快捷菜单插入代码段  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60055257"
 4. 按两次 TAB 键调用 XML 代码段。  
   
 > [!NOTE]
->  有时可能无法调用 XML 代码段。 例如，如果尝试将 `xs:complexType` 元素插入 `xs:element` 节点，编辑器不会生成 XML 代码段。 如果在 `xs:complexType` 节点中使用 `xs:element` 元素，则不需要任何属性或子元素，所以，编辑器没有任何要插入的数据。  
+> 有时可能无法调用 XML 代码段。 例如，如果尝试将 `xs:complexType` 元素插入 `xs:element` 节点，编辑器不会生成 XML 代码段。 如果在 `xs:complexType` 节点中使用 `xs:element` 元素，则不需要任何属性或子元素，所以，编辑器没有任何要插入的数据。  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>使用快捷名称插入代码段  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055257"
  下面的过程介绍如何访问**Surround With**命令。  
   
 > [!NOTE]
->  **Surround With**命令也是可通过键盘快捷方式 （CTRL + K，然后选择 CTRL + S）。  
+> **Surround With**命令也是可通过键盘快捷方式 （CTRL + K，然后选择 CTRL + S）。  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>在上下文菜单中使用“环绕”命令  
   

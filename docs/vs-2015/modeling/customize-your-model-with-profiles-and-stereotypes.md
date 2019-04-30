@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433348"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用配置文件和构造型自定义模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58931820"
  ![具有 stereotype 的 UML 类。](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  如果使用配置文件创建模型，然后与他人共享该模型，他们将无法看到构造型，除非他们在计算机上安装了相同的配置文件。  
+> 如果使用配置文件创建模型，然后与他人共享该模型，他们将无法看到构造型，除非他们在计算机上安装了相同的配置文件。  
   
 ## <a name="related-topics"></a>相关主题  
   

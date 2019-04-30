@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b13931746cc9668ea18ead71babd5140e971818
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90fb5b1c9a388d64e191915bbcbbe3de65f6aa99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437628"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>为 JavaScript IntelliSense 创建 XML 文档注释
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "60079274"
  本主题提供有关使用 XML 文档注释的基本教程。 了解如何使用其他元素，如[ \<var >](../ide/var-javascript.md)并[\<值 >](../ide/value-javascript.md)，和其他代码示例，请参阅[XML 文档注释](../ide/xml-documentation-comments-javascript.md). 了解如何提供 IntelliSense 信息的异步回调，如`Promise`，请参阅[\<返回 >](../ide/returns-javascript.md)。  
   
 > [!NOTE]
->  XML 文档注释只能从引用的文件、程序集和服务中提供。  
+> XML 文档注释只能从引用的文件、程序集和服务中提供。  
   
 ### <a name="to-create-xml-documentation-comments-for-a-javascript-function"></a>若要创建 XML 文档注释的 JavaScript 函数  
   
 - 在函数中，添加[\<摘要 >](../ide/summary-javascript.md)， [ \<param >](../ide/param-javascript.md)，以及[\<返回 >](../ide/returns-javascript.md)元素，每个元素与前面三个正斜杠标记 （/ /）。  
   
     > [!NOTE]
-    >  每个元素必须是单个行上。  
+    > 每个元素必须是单个行上。  
   
      下面的示例显示了一个 JavaScript 函数。  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60079274"
 1. 创建具有 OpenAjax MessageBundle 格式的文档注释的 XML 文件。  
   
     > [!IMPORTANT]
-    >  MessageBundle 是建议的格式。 在 Microsoft Ajax 或.winmd 文件中不支持此格式。 有关使用替代方法`VSDoc`格式，请参阅[ \<loc >](../ide/loc-javascript.md)。  
+    > MessageBundle 是建议的格式。 在 Microsoft Ajax 或.winmd 文件中不支持此格式。 有关使用替代方法`VSDoc`格式，请参阅[ \<loc >](../ide/loc-javascript.md)。  
   
      下面的示例演示内容，其中包含本地化的 IntelliSense 信息挎斗文件中。 这是特定于区域性的文件夹，如 JA 中的 XML 文件。 文件夹必须位于与包含的.js 文件位于相同位置`<loc>`元素。 XML 文件的文件名称必须匹配`filename`参数中指定`<loc>`元素。  
   

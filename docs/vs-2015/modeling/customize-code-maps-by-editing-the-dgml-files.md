@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433328"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>通过编辑 DGML 文件自定义代码图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60088725"
  在文本编辑器或 XML 编辑器中编辑代码图的 .dgml 文件。 映射是在 Visual Studio 解决方案的一部分，如果选择在它**解决方案资源管理器**，打开快捷菜单，然后选择**打开**， **XML （文本） 编辑器**。  
   
 > [!NOTE]
->  若要创建代码图，必须具有 Visual Studio Enterprise。 在 Visual Studio 中编辑代码图时，Visual Studio 会在保存 .dgml 文件时删除所有未使用的 DGML 元素和属性以进行清理。 当手动添加新链接时，它还将自动创建代码元素。 当你保存 .dgml 文件时，你添加到元素的任何特性可能会按字母顺序重新排列。  
+> 若要创建代码图，必须具有 Visual Studio Enterprise。 在 Visual Studio 中编辑代码图时，Visual Studio 会在保存 .dgml 文件时删除所有未使用的 DGML 元素和属性以进行清理。 当手动添加新链接时，它还将自动创建代码元素。 当你保存 .dgml 文件时，你添加到元素的任何特性可能会按字母顺序重新排列。  
   
 ## <a name="OrganizeNodes"></a> 代码元素分组  
  你可以添加新组，也可以将现有节点转换为一个组。  
@@ -120,7 +120,7 @@ ms.locfileid: "60088725"
 - 基于特定条件的代码元素和链接组  
   
 > [!TIP]
->  如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅[为代码元素和链接分配类别](#AssignCategories)并[为代码元素和链接分配属性](#AssignProperties)。  
+> 如果很多代码元素或链接具有重复的样式，则可以考虑向这些代码元素或链接应用一个类别，然后向该类别应用一个样式。 有关详细信息，请参阅[为代码元素和链接分配类别](#AssignCategories)并[为代码元素和链接分配属性](#AssignProperties)。  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>将自定义样式应用于单个代码元素  
   
@@ -558,7 +558,7 @@ ms.locfileid: "60088725"
  可以通过以下方式将文档或 URL 链接到代码元素或链接：编辑代码图的 .dgml 文件并将 `Reference` 特性添加到代码元素的 `<Node/>` 元素或链接的 `<Link/>` 元素。 然后，你可以打开并查看代码元素或链接的内容。 `Reference` 特性指定该内容的路径。 此路径可能是相对于 .dgml 文件位置的路径，也可能是绝对路径。  
   
 > [!CAUTION]
->  如果使用相对路径，并将 .dgml 文件移至其他位置，则将不再解析这些路径。 当你尝试打开并查看链接内容时，将出现表示内容无法查看的错误。  
+> 如果使用相对路径，并将 .dgml 文件移至其他位置，则将不再解析这些路径。 当你尝试打开并查看链接内容时，将出现表示内容无法查看的错误。  
   
  例如，你可能希望链接以下代码元素：  
   
@@ -583,7 +583,7 @@ ms.locfileid: "60088725"
    - 在 `<Node/>` 或 `<Link/>` 元素中，添加 `Reference` 特性以指定代码元素的位置。  
   
      > [!NOTE]
-     >  每个元素只能具有一个 `Reference` 特性。  
+     > 每个元素只能具有一个 `Reference` 特性。  
   
      例如：  
   

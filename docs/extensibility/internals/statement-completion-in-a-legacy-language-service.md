@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428909"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>旧版语言服务中的语句完成
 语句完成是依据语言服务可帮助用户完成语言关键字或他们已启动核心编辑器中键入的元素的过程。 本主题讨论语句完成的工作原理以及如何在你的语言服务中实现它。
@@ -24,7 +24,7 @@ ms.locfileid: "56622795"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现的语句结束的新方法的详细信息，请参阅[演练：显示语句完成](../../extensibility/walkthrough-displaying-statement-completion.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
 ## <a name="implementing-statement-completion"></a>实现的语句结束
  在核心编辑器中，语句完成后会激活一个特殊的用户界面，以交互方式可以帮助你更轻松和快速编写代码。 语句完成有助于通过显示相关对象或类在需要时可避免您无需记住特定元素，也无需查找帮助参考主题中。

@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432397"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>向层关系图添加自定义体系结构验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "60045874"
  当用户在层关系图上选择“验证体系结构”  命令时，会调用标准验证方法，接着会调用已安装的任意验证扩展。  
   
 > [!NOTE]
->  层关系图中的验证与 UML 关系图中的验证不同。 在层关系图中，主要目的是将关系图与解决方案中其他部分的程序代码进行比较。  
+> 层关系图中的验证与 UML 关系图中的验证不同。 在层关系图中，主要目的是将关系图与解决方案中其他部分的程序代码进行比较。  
   
  你可以将层验证扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。 你可以通过其自身将你的验证程序放入 VSIX 中，也可以作为其他扩展在同一 VSIX 中组合使用。 应在其自身的 Visual Studio 项目中编写验证程序的代码，而不是在与其他扩展相同的项目中编写。  
   
 > [!WARNING]
->  创建验证项目之后，请复制本主题末尾的 [示例代码](#example) ，然后根据自己的需要进行编辑。  
+> 创建验证项目之后，请复制本主题末尾的 [示例代码](#example) ，然后根据自己的需要进行编辑。  
   
 ## <a name="requirements"></a>要求  
  请参阅 [要求](../modeling/extend-layer-diagrams.md#prereqs)。  
@@ -48,7 +48,7 @@ ms.locfileid: "60045874"
     该模板将创建包含一个小型示例的项目。  
   
    > [!WARNING]
-   >  到 makethe 模板正常工作：  
+   > 到 makethe 模板正常工作：  
    > 
    > - 编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。  
    >   - 如果使用自定义属性，应用更新中所述[向层关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)。  
@@ -58,7 +58,7 @@ ms.locfileid: "60045874"
 4. 若要测试此扩展，请参阅 [调试层验证](#debugging)。  
   
    > [!NOTE]
-   >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
+   > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
 5. 主实例中安装扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件*bin\\*。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60045874"
 7. 若要测试此扩展，请参阅 [调试层验证](#debugging)。  
   
     > [!NOTE]
-    >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
+    > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
 8. 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。 （Windows 8 中为文件资源管理器。）  
   
@@ -147,7 +147,7 @@ ms.locfileid: "60045874"
 - 如果发现错误，可以使用 `LogValidationError()`进行报告。  
   
   > [!WARNING]
-  >  不要使用 `LogValidationError`的可选参数。  
+  > 不要使用 `LogValidationError`的可选参数。  
   
   用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：  
   
@@ -162,7 +162,7 @@ ms.locfileid: "60045874"
   构造图形后，将调用标准验证方法。 完成此操作后，将以未指定的顺序调用已安装的任何扩展验证方法。 该图形会传递给每个 `ValidateArchitecture` 方法，以便扫描图形并报告找到的任何错误。  
   
 > [!NOTE]
->  这与应用到 UML 关系图的验证过程不同，也与在域特定语言中可使用的验证过程不同。  
+> 这与应用到 UML 关系图的验证过程不同，也与在域特定语言中可使用的验证过程不同。  
   
  验证方法不应更改正在验证的层模型或代码。  
   

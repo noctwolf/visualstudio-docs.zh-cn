@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410134"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>使用编辑器项模板创建扩展
 可以使用 Visual Studio SDK 创建基本编辑器扩展，添加到编辑器分类器、 在修饰和边距中包含的项模板。 编辑器项模板是适用于 Visual C# 或 Visual Basic VSIX 项目。
@@ -63,7 +63,7 @@ ms.locfileid: "60079806"
  编辑器视区修饰模板会创建将添加一个具有视区的右上角，以红色的紫色框相对于视区的修饰。
 
 > [!NOTE]
->  **视区**是当前显示的文本视图的区域。
+> **视区**是当前显示的文本视图的区域。
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>若要使用的编辑器视区修饰模板创建的视区修饰扩展
 

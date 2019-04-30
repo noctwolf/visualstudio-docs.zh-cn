@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435469"
 ---
 # <a name="how-to-create-a-bdc-model"></a>如何：创建 BDC 模型
   可以通过使用这种项的模板并将模型添加到任何 SharePoint 项目来创建业务数据连接 (BDC) 模型。 有关详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 有关如何设计模型的详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "60106652"
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
     > [!NOTE]
-    >  如果您的 IDE 设置为使用 Visual Basic 开发设置，请选择**文件** > **新项目**。
+    > 如果您的 IDE 设置为使用 Visual Basic 开发设置，请选择**文件** > **新项目**。
 
      **“新建项目”** 对话框随即打开。
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106652"
      将测试指定的 SharePoint 站点上的模型。
 
     > [!IMPORTANT]
-    >  因为 BDC 模型仅支持场解决方案，您必须将项目部署为场解决方案。
+    > 因为 BDC 模型仅支持场解决方案，您必须将项目部署为场解决方案。
 
      创建一个空 SharePoint 项目。
 

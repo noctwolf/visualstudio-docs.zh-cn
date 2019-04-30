@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421539"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes 控件
   **重要**设置 Microsoft Word 有关本主题中的信息是提供的以独占方式适合的权益和使用个人和组织用户位于美国州和其领土的外部或使用，或开发运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已由 Microsoft 许可的 Microsoft Word 产品被与 Microsoft Word 中的自定义 XML。 有关 Microsoft Word 此信息可能不读取或使用的个人或组织在美国或其区域使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后，由 Microsoft 已许可的产品运行的程序中;这些产品不将行为与相同产品许可在该日期之前或购买，美国以外的使用许可。
@@ -30,7 +30,7 @@ ms.locfileid: "60090575"
  Visual Studio 创建的 XML 节点集合后，可以对其进行编程控制直接而无需遍历 Word 对象模型。 <xref:Microsoft.Office.Tools.Word.XMLNodes>可以仅通过从文档中移除的元素映射删除控件。
 
 > [!NOTE]
->  如果您访问的子元素<xref:Microsoft.Office.Tools.Word.XMLNodes>通过控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>属性，它将返回<xref:Microsoft.Office.Interop.Word.XMLNode>对象而非<xref:Microsoft.Office.Tools.Word.XMLNode>控件。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
+> 如果您访问的子元素<xref:Microsoft.Office.Tools.Word.XMLNodes>通过控制<xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A>属性，它将返回<xref:Microsoft.Office.Interop.Word.XMLNode>对象而非<xref:Microsoft.Office.Tools.Word.XMLNode>控件。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="bind-data-to-the-control"></a>将数据绑定到控件
  <xref:Microsoft.Office.Tools.Word.XMLNodes>控件不支持数据绑定。 这是因为<xref:Microsoft.Office.Tools.Word.XMLNodes>控件不具有复杂数据绑定功能，并简单数据绑定不能表示重复数据。

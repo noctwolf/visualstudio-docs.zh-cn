@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0fc22e0c8ae0b0bdaf0729b3cdb3847cd25f580f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008195"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>演练：添加功能事件接收器
   功能事件接收器是在 SharePoint 中与功能相关的以下事件之一发生时执行的方法：

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c5f6d73f3606813fd9a1954cdc10bb562baf34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56ce4766f2afb148bbbc495d151b052de3334a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407733"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 因为远程调试监视器未正确设置远程计算机上，或者由于网络问题或存在防火墙而无法访问远程计算机，可能会出现此消息。
 
 > [!IMPORTANT]
->  如果你认为你因产品 bug 而收到此消息，请[报告此问题](../ide/how-to-report-a-problem-with-visual-studio.md)到 Visual Studio。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。
+> 如果你认为你因产品 bug 而收到此消息，请[报告此问题](../ide/how-to-report-a-problem-with-visual-studio.md)到 Visual Studio。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。
 
 ## <a name="specificerrors"></a>详细的错误消息是什么？
 

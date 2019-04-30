@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34f50b457dcc8b6db8e48e7072e8956fa78f6a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430910"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在消息视图中搜索消息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58931694"
 4. 清除不想为其指定值的任何字段。  
   
    > [!TIP]
-   >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主 Spy + + 窗口中，并仅留下**查找窗口**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。  
+   > 若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主 Spy + + 窗口中，并仅留下**查找窗口**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。  
   
 5. 选择**向上**或**向下**搜索的初始方向。  
   

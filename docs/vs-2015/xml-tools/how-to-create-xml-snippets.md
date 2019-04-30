@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c7eecfb6d56d4db378882f6cd45f96454a086dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421738"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60101366"
  `Code` 元素定义要在调用代码段时插入的 XML 文本。  
   
 > [!NOTE]
->  XML 代码段文本必须包含在 `<![CDATA[...]]>` 节中。  
+> XML 代码段文本必须包含在 `<![CDATA[...]]>` 节中。  
   
  以下是代码段样本创建的 `Code` 元素。  
   

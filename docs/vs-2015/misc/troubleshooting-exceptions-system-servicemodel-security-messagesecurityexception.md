@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436556"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>异常疑难解答：System.ServiceModel.Security.MessageSecurityException
 一个<xref:System.ServiceModel.Security.MessageSecurityException>时将引发异常[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]确定消息未受到正确保护或已被篡改。 当下列条件全为真时，此错误会非常频繁地发生：  
@@ -35,7 +35,7 @@ ms.locfileid: "60058871"
  如果远程用户可能通过使用 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server 来运行网站，并且还使用 Web 服务或 WCF 服务，则可以创建自定义服务绑定或关闭 NTLM 安全。  
   
 > [!IMPORTANT]
->  建议不要关闭 NTLM 安全功能，否则可能构成安全威胁。  
+> 建议不要关闭 NTLM 安全功能，否则可能构成安全威胁。  
   
  如果创建自定义服务绑定，仍然可以受 NTLM 身份验证保护。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60058871"
    在处理 WCF 服务引用时，可以按照以下步骤来禁用 NTLM 安全。  
   
 > [!IMPORTANT]
->  建议不要关闭 NTLM 安全功能，否则可能构成安全威胁。  
+> 建议不要关闭 NTLM 安全功能，否则可能构成安全威胁。  
   
 #### <a name="to-turn-off-ntlm-security"></a>关闭 NTLM 安全  
   

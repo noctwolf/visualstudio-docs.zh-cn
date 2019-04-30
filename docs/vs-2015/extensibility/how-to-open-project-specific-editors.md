@@ -12,12 +12,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46f6b64fecfbbe3a57dad130ad0a65475fad56af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435942"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何：打开项目特定的编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60105391"
 1. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法 (RDT_EditLock)，以确定文件 （文档数据对象） 是否已打开。  
   
     > [!NOTE]
-    >  有关文档数据和文档视图对象的详细信息，请参阅[文档数据和自定义编辑器中的文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)。  
+    > 有关文档数据和文档视图对象的详细信息，请参阅[文档数据和自定义编辑器中的文档视图](../extensibility/document-data-and-document-view-in-custom-editors.md)。  
   
 2. 如果该文件已打开，通过调用 resurface 文件<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>方法，并将值指定为 IDO_ActivateIfOpen`grfIDO`参数。  
   
@@ -56,4 +56,4 @@ ms.locfileid: "60105391"
 ## <a name="see-also"></a>请参阅  
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
  [如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)   
- [如何：打开编辑器的打开的文档](../extensibility/how-to-open-editors-for-open-documents.md)
+ [如何：打开开放文档的编辑器](../extensibility/how-to-open-editors-for-open-documents.md)

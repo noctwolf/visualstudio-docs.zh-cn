@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437714"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
      确保在开始监视前已创建此目录。 为避免应用速度变慢，请选择本地高速磁盘上不常用的位置。  
   
     > [!IMPORTANT]
-    >  IntelliTrace 日志中包含个人数据及敏感数据。 此目录中只限存放那些与文件兼容的标识。 查看你所在公司的隐私政策。  
+    > IntelliTrace 日志中包含个人数据及敏感数据。 此目录中只限存放那些与文件兼容的标识。 查看你所在公司的隐私政策。  
   
 5. 要运行详细的函数级监视或要监视 SharePoint 应用程序，需授予托管 Web 应用或 SharePoint 应用程序的应用程序池对 IntelliTrace 日志目录的读写权限。 [问：如何设置访问应用程序池的权限？](#FullPermissionsITLog)  
   
@@ -259,7 +259,7 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
 3. 将日志复制到一个安全的共享文件夹中，随后从装有 Visual Studio Enterprise （但不是 Professional 或 Community 版本）的计算机打开该日志。  
   
    > [!IMPORTANT]
-   >  共享 IntelliTrace 日志时务必小心，因为这些日志中可能包含个人数据及敏感数据。 确保可访问这些日志的所有人拥有查看相应数据的权限。 查看你所在公司的隐私政策。  
+   > 共享 IntelliTrace 日志时务必小心，因为这些日志中可能包含个人数据及敏感数据。 确保可访问这些日志的所有人拥有查看相应数据的权限。 查看你所在公司的隐私政策。  
   
    **下一篇：**[诊断 Visual Studio Enterprise 中记录的事件](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   

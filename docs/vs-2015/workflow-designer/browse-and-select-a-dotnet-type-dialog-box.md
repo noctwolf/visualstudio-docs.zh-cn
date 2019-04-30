@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417575"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 在中**属性**窗口、 对话框或如变量设计器中，当您选择的设计器**浏览类型...** 从数据类型的列表，是**浏览并选择.NET 类型**对话框 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。  
@@ -31,7 +31,7 @@ ms.locfileid: "60079832"
 - 在 <xref:System.Activities.Statements.TryCatch> 活动上添加一个 catch 时。  
   
 > [!NOTE]
->  类型浏览器可以显示 Visual Basic 交错数组类型，但不显示多维数组类型。 请参阅[交错数组](http://go.microsoft.com/fwlink/?LinkId=195226)并[多维数组](http://go.microsoft.com/fwlink/?LinkId=195227)有关详细信息。  
+> 类型浏览器可以显示 Visual Basic 交错数组类型，但不显示多维数组类型。 请参阅[交错数组](http://go.microsoft.com/fwlink/?LinkId=195226)并[多维数组](http://go.microsoft.com/fwlink/?LinkId=195227)有关详细信息。  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>从类型浏览器中选择值或引用类型  
   

@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410083"
 ---
 # <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
 调试引擎 (DE) 是允许调试特定运行时体系结构的组件。 通常是只有一个 DE 实现每个运行时环境。
 
 > [!NOTE]
->  虽然有单独的 DE 实现 TRANSACT-SQL 和 JScript，VBScript 和 JScript 共享单个 DE。
+> 虽然有单独的 DE 实现 TRANSACT-SQL 和 JScript，VBScript 和 JScript 共享单个 DE。
 
  部署适用于解释器或操作系统提供执行控制、 断点、 和表达式计算等调试服务。 这些服务通过 DE 接口实现，并可能会导致调试程序对不同的操作模式之间的转换。 有关详细信息，请参阅[操作模式](../../extensibility/debugger/operational-modes.md)。
 

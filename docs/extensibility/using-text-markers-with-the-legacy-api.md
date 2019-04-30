@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6a3807dc91b129ba4b337f57e3f857e4f379581
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434192"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
 文本标记是区域的文本的浮动的范围内的缓冲区中，可能会影响显示和文本的行为。 标记包括断点、 书签、 波浪形下划线和只读区域。 文本标记为基本上不同于语法颜色设置。 语法颜色设置是通信与文本的区域关联的语言语法的快速方法。 Windows 重新绘制屏幕时速度很重要时通常所请求语法颜色设置。 语法颜色设置更改文本的颜色。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"并将应用特殊行为和颜色设置。
@@ -23,11 +23,11 @@ ms.locfileid: "56696684"
  由于与文本标记相关的性能开销，而不要创建多个标记的文本缓冲区。 每个标记是用户编辑缓冲区内容每次更新。
 
 > [!NOTE]
->  用户可以更改可见标记类型，但不是其形状和样式的颜色。 有关详细信息，请参阅[字体和 Colors，Environment，Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
+> 用户可以更改可见标记类型，但不是其形状和样式的颜色。 有关详细信息，请参阅[字体和 Colors，Environment，Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
 
 ## <a name="related-topics"></a>相关主题
 
-| 标题 | 描述 |
+| Title | 说明 |
 | - | - |
 | [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md) | 描述如何添加由提供的标准文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器文本视图。 |
 | [如何：实现错误标记](../extensibility/how-to-implement-error-markers.md) | 介绍如何实现的实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]标记，用于通过使用红色的波浪形下划线指示错误。 |

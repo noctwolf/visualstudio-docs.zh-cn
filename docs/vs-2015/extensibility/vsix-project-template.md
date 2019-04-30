@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436904"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ ms.locfileid: "60096123"
  VSIX 部署支持 Vspackage、 程序集、 MEF 组件、 项目模板、 项模板，工具箱控件和自定义扩展插件类型。  
   
 > [!NOTE]
->  若要使用 VSIX 项目，必须安装 Visual Studio SDK。 有关 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+> 若要使用 VSIX 项目，必须安装 Visual Studio SDK。 有关 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>在哪里可以找到 VSIX 项目模板  
  VSIX 项目模板现已推出**新的项目**对话框。 展开**Visual Basic**节点或**Visual C#** 节点，然后选择**扩展性**。  
   
 > [!TIP]
->  请确保该.NET Framework 4.5 或更高版本在顶部的下拉列表中指定**新的项目**对话框。  
+> 请确保该.NET Framework 4.5 或更高版本在顶部的下拉列表中指定**新的项目**对话框。  
   
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX 项目模板的用途  
  VSIX 项目模板具有两个主要用途：  

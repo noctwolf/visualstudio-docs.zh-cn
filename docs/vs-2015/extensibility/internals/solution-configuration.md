@@ -10,12 +10,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eb14a2031b89f2a7deeb7d98cc483e90125b1905
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432094"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58934707"
  标准 Visual Studio 工具栏中包含开始按钮和一个解决方案配置下拉列表右侧的开始按钮。 此列表，用户可以选择按下 F5 时要启动的配置、 创建其自己的解决方案配置，或编辑现有配置。  
   
 > [!NOTE]
->  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，有用于管理解决方案生成的可扩展 Api。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
+> 没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，有用于管理解决方案生成的可扩展 Api。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
   
  下面是如何实现您的项目类型支持的解决方案配置：  
   

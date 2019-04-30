@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403547"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>如何：为 ClickOnce 部署错误设置自定义日志文件位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "60116144"
  可以为特定的客户端更改此行为，使用注册表编辑器 (**regedit.exe**) 设置自定义日志文件路径。 在这种情况下，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]单个文件中记录激活成功和失败的所有部署。  
   
 > [!CAUTION]
->  如果注册表编辑器使用不当可能会导致严重的问题，可能需要重新安装操作系统。 使用注册表编辑器的风险由用户自行承担。  
+> 如果注册表编辑器使用不当可能会导致严重的问题，可能需要重新安装操作系统。 使用注册表编辑器的风险由用户自行承担。  
   
 > [!NOTE]
->  你将需要截断或删除日志文件，有时可用于阻止其增长得过大。  
+> 你将需要截断或删除日志文件，有时可用于阻止其增长得过大。  
   
  以下过程介绍如何为单个客户端设置自定义日志文件位置。  
   

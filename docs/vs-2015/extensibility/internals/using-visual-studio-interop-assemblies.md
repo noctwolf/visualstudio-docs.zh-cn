@@ -12,12 +12,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 303947c2299601e68ae830b13e6b6753c5e0dd79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60ae3ad958ca97250ba74ac2c7aada7dddcf91d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434799"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio 互操作程序集
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Visual Studio 互操作程序集允许访问提供 Visual Studio 可扩展性的
  默认情况下，每次向 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 传递值小于零的 HRESULT 时，它都会引发异常。 如果此类 HRESULT 是可接受的值，不应引发异常，那么，应在测试完其他 HRESULT 的值后，将这些值传递给 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>。 如果所测试的 HRESULT 与显式传递到 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 的任何 HRESULT 值匹配，则不会引发异常。
 
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants>类通用 hresult 包含常量等<xref:Microsoft.VisualStudio.VSConstants.S_OK>并<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]HRESULT，例如，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 还提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，分别对应于 COM 中的 SUCCEEDED 宏和 FAILED 宏。
+> <xref:Microsoft.VisualStudio.VSConstants>类通用 hresult 包含常量等<xref:Microsoft.VisualStudio.VSConstants.S_OK>并<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>，和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]HRESULT，例如，<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>和<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>。 <xref:Microsoft.VisualStudio.VSConstants> 还提供 <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> 和 <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> 方法，分别对应于 COM 中的 SUCCEEDED 宏和 FAILED 宏。
 
  例如，在以下函数调用中，<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> 是可接受的返回值，而其他所有小于零的 HRESULT 均表示错误。
 
@@ -48,7 +48,7 @@ Visual Studio 互操作程序集允许访问提供 Visual Studio 可扩展性的
  如果不确定要引发哪个异常，但知道要返回到 COM 的 HRESULT，则可以使用 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 方法引发相应的异常。 即使是非标准错误（例如 <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>），也同样可行。 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 会尝试将传递给它的 HRESULT 映射到强类型化的异常。 如果无法映射，它会改为引发一般的 COM 异常。 最终结果是，从托管代码传递到 <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> 的 HRESULT 返回到调用它的 COM 函数中。
 
 > [!NOTE]
->  异常会降低性能，它用于指示程序的异常状况。 对于所发生的状况，通常应以内联方式处理，而不是引发异常。
+> 异常会降低性能，它用于指示程序的异常状况。 对于所发生的状况，通常应以内联方式处理，而不是引发异常。
 
 ## <a name="iunknown-parameters-passed-as-type-void"></a>IUnknown 参数作为类型 void * * 传递
  [Out] 参数被定义为类型寻找`void **`com 接口，但这指`[``iid_is``]`中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]互操作程序集方法原型。
@@ -56,7 +56,7 @@ Visual Studio 互操作程序集允许访问提供 Visual Studio 可扩展性的
  有时，COM 接口生成`IUnknown`对象和 COM 接口然后将其作为传递类型`void **`。 这些接口是特别重要因为如果变量定义为 [out] 在 IDL，则`IUnknown`对象是使用引用计数`AddRef`方法。 如果无法正确处理该对象，则会发生内存泄漏。
 
 > [!NOTE]
->  `IUnknown`创建的 COM 接口和 [out] 变量中返回的对象会导致内存泄漏，如果未显式释放。
+> `IUnknown`创建的 COM 接口和 [out] 变量中返回的对象会导致内存泄漏，如果未显式释放。
 
  处理此类对象的托管的方法应将<xref:System.IntPtr>指向的指针作为`IUnknown`对象，并调用<xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A>方法获取的对象。 调用方应然后返回值转换为任何类型是合适的。 当不再需要对象时，调用<xref:System.Runtime.InteropServices.Marshal.Release%2A>以将其释放。
 
@@ -87,7 +87,7 @@ else
 ```
 
 > [!NOTE]
->  已知以下方法传递`IUnknown`作为类型对象的指针<xref:System.IntPtr>。 在本部分中所述处理它们。
+> 已知以下方法传递`IUnknown`作为类型对象的指针<xref:System.IntPtr>。 在本部分中所述处理它们。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420955"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>如何：一个新行添加到 ListObject 控件时验证数据
   用户可以向绑定到数据的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加新行。 可以在将更改提交到数据源之前验证用户数据。
@@ -30,7 +30,7 @@ ms.locfileid: "60039306"
  每当向绑定到数据的 <xref:Microsoft.Office.Tools.Excel.ListObject> 添加行时，便会引发 <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> 事件。 可以处理此事件以执行数据验证。 例如，如果你的应用程序需要只有年龄在 18 岁与 65 岁之间的员工可以添加到数据源，验证添加行之前输入的年龄处于该范围内。
 
 > [!NOTE]
->  除了在客户端上，还应始终在服务器上检查用户输入。 有关详细信息，请参阅[保护客户端应用程序](/dotnet/framework/data/adonet/secure-client-applications)。
+> 除了在客户端上，还应始终在服务器上检查用户输入。 有关详细信息，请参阅[保护客户端应用程序](/dotnet/framework/data/adonet/secure-client-applications)。
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>在向数据绑定 ListObject 添加新行时验证数据
 

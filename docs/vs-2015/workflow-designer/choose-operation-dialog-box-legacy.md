@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b9d40f3627cd24aa7758a0d599eb6e5d770c9f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417559"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>“选择操作”对话框（旧版）
 本主题介绍如何使用**选择操作**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -36,7 +36,7 @@ ms.locfileid: "58931007"
 |**权限**|此选项卡包含允许调用此操作的用户的 <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> 和 <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> 属性。 例如，如果仅允许来自管理员组的用户调用此操作，然后将"管理员"中编写**角色**文本框。<br /><br /> 通过创建的操作启用此选项卡**ChooseOperation**对话框，并通过导入操作**导入**按钮。|  
   
 > [!NOTE]
->  **选择操作**对话框中显示了仅协定或由其他操作<xref:System.Workflow.Activities.SendActivity>工作流中的活动。 同样，**选择操作**对话框<xref:System.Workflow.Activities.ReceiveActivity>唯一协定或由其他操作，显示了活动**ReceiveActivity**工作流中的活动。  
+> **选择操作**对话框中显示了仅协定或由其他操作<xref:System.Workflow.Activities.SendActivity>工作流中的活动。 同样，**选择操作**对话框<xref:System.Workflow.Activities.ReceiveActivity>唯一协定或由其他操作，显示了活动**ReceiveActivity**工作流中的活动。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：实现 WCF 协定操作 （旧版）](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   

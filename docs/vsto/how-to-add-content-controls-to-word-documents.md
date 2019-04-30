@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427622"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>如何：添加内容控件添加到 Word 文档
   在文档级 Word 项目中，您可以添加内容控件到文档中你的项目在设计时或在运行时。 在 Word VSTO 外接程序项目中，可以向任何打开的文档在运行时添加内容控件。
@@ -78,10 +78,10 @@ ms.locfileid: "60080406"
     - 将某个内容控件从 **“工具箱”** 拖动到文档中。 内容控件将添加到文档中当前所选内容的位置，而不是鼠标指针的位置。
 
 > [!NOTE]
->  你不能使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> “工具箱” **添加**。 您可以只添加<xref:Microsoft.Office.Tools.Word.GroupContentControl>在 Word 中，或在运行时。
+> 你不能使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> “工具箱” **添加**。 您可以只添加<xref:Microsoft.Office.Tools.Word.GroupContentControl>在 Word 中，或在运行时。
 
 > [!NOTE]
->  Visual Studio 在工具箱中不提供复选框内容控件。 若要向文档添加复选框内容控件，则必须以编程方式创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。
+> Visual Studio 在工具箱中不提供复选框内容控件。 若要向文档添加复选框内容控件，则必须以编程方式创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>若要在 Word 中向文档添加内容控件
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080406"
 2. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 3. 在 **“控件”** 组中，单击你想要添加的内容控件的图标。
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080406"
   文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 > [!NOTE]
->  若要在 Word 2010 项目中向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。
+> 若要在 Word 2010 项目中向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>在当前所选内容中添加内容控件
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080406"
   在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 > [!NOTE]
->  若要向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。
+> 若要向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>在当前所选内容中添加内容控件
 

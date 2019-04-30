@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437477"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60113451"
  如果你要编写可处理用户的模型的文本模板或其他工具，则验证尤其重要。 验证可确保模型满足由这些工具假定的前提条件。  
   
 > [!WARNING]
->  还可以允许验证约束以及扩展菜单命令和笔势处理程序一起定义在对 DSL 的单独扩展中。 除了 DSL，用户还可以选择安装这些扩展。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
+> 还可以允许验证约束以及扩展菜单命令和笔势处理程序一起定义在对 DSL 的单独扩展中。 除了 DSL，用户还可以选择安装这些扩展。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
   
 ## <a name="running-validation"></a>运行验证  
  当用户编辑模型时（即域特定语言的实例），以下操作可运行验证：  
@@ -52,7 +52,7 @@ ms.locfileid: "60113451"
  每个验证方法都将报告它找到的所有错误。  
   
 > [!NOTE]
->  验证方法报告错误，但不更改模型。 如果你想要调整或阻止某些更改，请参阅[验证的替代方法](#alternatives)。  
+> 验证方法报告错误，但不更改模型。 如果你想要调整或阻止某些更改，请参阅[验证的替代方法](#alternatives)。  
   
 #### <a name="to-define-a-validation-constraint"></a>定义验证约束  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  你可以为方法添加带有任意数目的 `[ValidationMethod()]` 特性的前缀。 可以将方法同时添加到自定义类别和标准类别。  
+> 你可以为方法添加带有任意数目的 `[ValidationMethod()]` 特性的前缀。 可以将方法同时添加到自定义类别和标准类别。  
   
  若要调用自定义验证，请执行以下操作：  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **如果尝试无效的更改，则，回滚事务。** 你还可以为此，可以定义规则，但在某些情况下就可以重写属性处理程序**onvaluechanging （)**，或重写一个方法，如`OnDeleted().`若要回滚事务，请使用`this.Store.TransactionManager.CurrentTransaction.Rollback().`的详细信息信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。  
   
 > [!WARNING]
->  请确保用户知道更改已调整或已回滚。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
+> 请确保用户知道更改已调整或已回滚。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   

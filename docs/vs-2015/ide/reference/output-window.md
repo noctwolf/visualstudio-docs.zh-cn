@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438066"
 ---
 # <a name="output-window"></a>输出窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668907"
 “输出”窗口在集成开发环境 (IDE) 中可显示各种功能的状态消息。 若要打开“输出”窗口，请在菜单栏上选择“视图/输出”（或单击 Ctrl+Alt+O）。  
   
 > [!WARNING]
->  “输出”窗口不会在 Visual Studio Express 版的“视图”菜单中显示。 若要显示此窗口，请使用热键 Ctrl+Alt+O。  
+> “输出”窗口不会在 Visual Studio Express 版的“视图”菜单中显示。 若要显示此窗口，请使用热键 Ctrl+Alt+O。  
   
 ## <a name="toolbar"></a>Toolbar  
  **显示输出来源**  

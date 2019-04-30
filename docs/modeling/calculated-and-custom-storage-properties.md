@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440024"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 域特定语言 (DSL) 中的所有域属性可以显示给用户在关系图上和在语言资源管理器中，并且可以通过程序代码访问。 但是，属性不同的方式存储它们的值。
@@ -50,7 +50,7 @@ ms.locfileid: "60060418"
      在 Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 将打开。 上面突出显示的方法调用中，注释会提示你提供一个实现 get*YourProperty*（)。
 
     > [!NOTE]
-    >  从 DslDefinition.dsl 生成此文件。 如果编辑此文件时，所做的更改将会丢失您单击下一次**转换所有模板**。 相反，在单独的文件添加所需的方法。
+    > 从 DslDefinition.dsl 生成此文件。 如果编辑此文件时，所做的更改将会丢失您单击下一次**转换所有模板**。 相反，在单独的文件添加所需的方法。
 
 6. 创建或打开类文件在单独的文件夹，例如独特\\*YourDomainClass*。 cs。
 

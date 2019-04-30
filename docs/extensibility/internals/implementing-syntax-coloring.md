@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420431"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 时语言服务都会提供语法着色，分析器将一行文本转换为可着色项的数组，并返回与这些可着色项相对应的令牌类型。 分析器应返回属于可着色项列表的令牌类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据分配给相应的标记类型的着色器对象的属性在代码窗口中显示每个可着色项。
@@ -27,7 +27,7 @@ ms.locfileid: "60080197"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语法着色的新方法的详细信息，请参阅[演练：突出显示文本](../../extensibility/walkthrough-highlighting-text.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>后跟一个编辑器，用于为文本着色的步骤
 

@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437931"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60087737"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[扩展编辑器和语言服务](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="implementation"></a>实现  
  分析器应设置触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到参数列表的开始字符 （通常左括号） 时设置。 应设置<xref:Microsoft.VisualStudio.Package.TokenTriggers>找到参数分隔符 （通常逗号） 时触发。 这将导致参数信息工具提示，以更新并显示下一个参数以粗体显示。 分析器应设置触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>时如果查找的参数列表末尾字符 （通常右括号）。  
@@ -37,7 +37,7 @@ ms.locfileid: "60087737"
  <xref:Microsoft.VisualStudio.Package.TokenTriggers>触发器值开始调用<xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A>方法，后者又调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法分析器分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。 如果分析器会认为该标识符的参数列表的开始字符之前是已识别的方法名称，它将返回一系列匹配方法签名中的<xref:Microsoft.VisualStudio.Package.AuthoringScope>对象。 如果未找到任何方法签名，参数信息工具提示会显示在列表中的第一个签名。 随输入的多个签名，然后将更新该工具提示。 参数列表末尾字符键入时，将从视图中删除参数信息工具提示。  
   
 > [!NOTE]
->  若要确保正确格式化的参数信息工具提示，您必须在重写属性<xref:Microsoft.VisualStudio.Package.Methods>类，以提供相应的字符。 基<xref:Microsoft.VisualStudio.Package.Methods>类假定 C#-样式方法签名。 请参阅<xref:Microsoft.VisualStudio.Package.Methods>有关如何执行此操作的详细信息的类。  
+> 若要确保正确格式化的参数信息工具提示，您必须在重写属性<xref:Microsoft.VisualStudio.Package.Methods>类，以提供相应的字符。 基<xref:Microsoft.VisualStudio.Package.Methods>类假定 C#-样式方法签名。 请参阅<xref:Microsoft.VisualStudio.Package.Methods>有关如何执行此操作的详细信息的类。  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>启用对参数信息的支持  
  若要支持的参数信息工具提示，必须设置`ShowCompletion`名为的参数<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>到`true`。 语言服务中读取中此注册表项的值<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>属性。  

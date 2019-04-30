@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419284"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以编程方式存储和检索日期值在 Excel 范围内
   可以存储和检索中的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。
@@ -34,7 +34,7 @@ ms.locfileid: "60082901"
  如果存储属于上或在范围内使用 Visual Studio 中的 Office 开发工具的 1/1/1900年之后的日期值，则将它存储在 OLE 自动化 (OA) 格式。 必须使用<xref:System.DateTime.FromOADate%2A>方法来检索其中的 OLE 自动化 (OA) 日期值。 如果日期早于 1900 年 1 月 1 日，则将它存储为字符串。
 
 > [!NOTE]
->  Excel 日期不同于 1900年前两个月的 OLE 自动化日期。 如果也会有差异**1904年日期系统**选项处于选中状态。 下面的代码示例不考虑这些差异。
+> Excel 日期不同于 1900年前两个月的 OLE 自动化日期。 如果也会有差异**1904年日期系统**选项处于选中状态。 下面的代码示例不考虑这些差异。
 
 ## <a name="use-a-namedrange-control"></a>使用 NamedRange 控件
 

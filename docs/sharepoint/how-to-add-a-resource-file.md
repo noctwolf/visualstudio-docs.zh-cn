@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c806e2d84973c445c9ab8a6aedb7c4f1fb28354
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b8394d0c21ed5a45639e4dad5fe3695aaccc27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440013"
 ---
 # <a name="how-to-add-a-resource-file"></a>如何：添加资源文件
   解决方案节点并在解决方案资源管理器功能节点的快捷菜单上是用于将资源文件添加的命令。 有关详细信息，请参阅[本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)。
@@ -32,7 +32,7 @@ ms.locfileid: "60075540"
 3. 在中**添加新项**对话框框中，选择**全局资源文件**模板，然后选择**添加**按钮。
 
    > [!NOTE]
-   >  仅当选择 SharePoint 项目项时，将出现全局资源文件项目项模板。
+   > 仅当选择 SharePoint 项目项时，将出现全局资源文件项目项模板。
 
 4. 在中**添加资源**对话框框中，选择资源文件，例如英语 （美国） 区域性。
 

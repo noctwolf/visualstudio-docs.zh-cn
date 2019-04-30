@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437512"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中的常用命令的默认键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60068868"
 你可以通过按以下默认键盘快捷键访问 Visual Studio 中的常用命令。 有关具有默认快捷方式的命令的完整列表，请参阅[默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
->  通过打开“选项”对话框，展开“环境”节点，然后选择“键盘”，可以查找任何命令的快捷方式。
+> 通过打开“选项”对话框，展开“环境”节点，然后选择“键盘”，可以查找任何命令的快捷方式。
 
  **在本主题中**
 

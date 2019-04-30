@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434516"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：添加到应用程序配置文件C#项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60044971"
 通过将应用程序配置文件（app.config 文件）添加到 C# 项目中，你可以自定义公共语言运行时定位和加载程序集文件的方式。 有关应用程序配置文件的详细信息，请参阅[运行时如何定位程序集](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)。  
   
 > [!NOTE]
->  不支持 Windows 应用商店<xref:System.Configuration>。 因此，应用商店应用程序不包含 app.config 模板。  
+> 不支持 Windows 应用商店<xref:System.Configuration>。 因此，应用商店应用程序不包含 app.config 模板。  
   
  生成项目时，开发环境会自动将你的 app.config 文件的复制、 更改以匹配你可执行文件的副本的文件名，然后会将副本移动到 bin 目录。  
   

@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433916"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60103285"
  安装程序在安装仿真器时尝试以静默方式配置这些先决条件。 安装程序成功配置这些先决条件后，仿真器即会按预期方式工作。 否则，可能需要手动实现这些先决条件。 如果必须手动配置这些先决条件，则步骤和工具与 [此处](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) 所述的针对 Windows Phone 仿真器的步骤相同。
 
 > [!IMPORTANT]
->  仿真器的安装程序会检查运行 Visual Studio Emulator for Android 的先决条件。 如果先决条件不存在将显示警告，但并不需要这些条件。
+> 仿真器的安装程序会检查运行 Visual Studio Emulator for Android 的先决条件。 如果先决条件不存在将显示警告，但并不需要这些条件。
 
  本主题包含以下各节：
 

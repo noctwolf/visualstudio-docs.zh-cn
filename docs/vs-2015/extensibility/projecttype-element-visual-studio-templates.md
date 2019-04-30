@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388396"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60084877"
 将分类的项目模板，使其显示在指定的组**新的项目**或**添加新项**对话框。  
   
 > [!WARNING]
->  为支持项目模板C++从 Visual Studio 2012 开始。 它们不支持C++在 Visual Studio 2010 及更早版本。  
+> 为支持项目模板C++从 Visual Studio 2012 开始。 它们不支持C++在 Visual Studio 2010 及更早版本。  
   
  \<VSTemplate>  
  \<TemplateData>  

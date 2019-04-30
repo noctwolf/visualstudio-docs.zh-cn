@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 217cef39fb3f8564d4ac51878e515622706811ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431544"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:不要通过引用来传递类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58932136"
  尽管比较常见并大量使用正确的应用程序的返回值`out`和`ref`参数需要中间设计和编码技能。 库设计为普通用户不应指望用户掌握了架构师`out`或`ref`参数。
 
 > [!NOTE]
->  当您处理大型结构参数时，复制这些结构所需的其他资源在按值传递时可能会导致性能影响。 在这些情况下，您可以考虑使用`ref`或`out`参数。
+> 当您处理大型结构参数时，复制这些结构所需的其他资源在按值传递时可能会导致性能影响。 在这些情况下，您可以考虑使用`ref`或`out`参数。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复与由值类型导致此规则的冲突，使该方法返回的对象作为其返回值。 如果该方法必须返回多个值，重新设计它返回一个对象，保存值的单个实例。

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88acd6cf55e8d03b355f1defb861bc5ae919ed52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 94ee2d0585892730659943b6dc826ca1b8947510
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415469"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何：更新状态栏
 **状态栏**控件条位于底部的多个应用程序窗口，其中包含一个或多个状态文本行或指示器。
@@ -27,7 +27,7 @@ ms.locfileid: "60047964"
 2. 当调用 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的信息**状态栏**通过调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。
 
     > [!NOTE]
-    >  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。
+    > IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。
 
 ## <a name="robust-programming"></a>可靠编程
  一个**状态栏**包含四个单独的字段：

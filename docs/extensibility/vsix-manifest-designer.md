@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411095"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，这会设置 Visual Studio 扩展的安装行为。
@@ -29,7 +29,7 @@ ms.locfileid: "56722858"
  若要打开**VSIX 清单设计器**，找到*source.extension.vsixmanifest*文件中**解决方案资源管理器**，并打开该文件。 如果文件不包含有效的 XML，不会打开清单设计器。
 
 > [!NOTE]
->  *Source.extension.vsixmanifest*文件输出到*extension.vsixmanifest*生成包时。
+> *Source.extension.vsixmanifest*文件输出到*extension.vsixmanifest*生成包时。
 
 ## <a name="uielement-list"></a>UIElement 列表
  **VSIX 清单设计器**包含对应于这些架构的顶级元素的四个部分：

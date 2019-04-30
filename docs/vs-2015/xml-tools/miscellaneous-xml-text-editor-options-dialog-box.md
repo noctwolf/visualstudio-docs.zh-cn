@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cfebf34b9fc45a94733b4b10cb22b74190ebb127
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: edf638420ac41d6ad6f7ebf5e20ab5d78d1c7b3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435369"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>杂项，XML，文本编辑器，“选项”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "59667126"
 使用此对话框可以更改“XML 编辑器”的自动完成和架构设置。 您可以访问**选项**对话框从**工具**菜单。  
   
 > [!NOTE]
->  当您选择这些设置才可用**文本编辑器**文件夹中， **XML**文件夹，然后**杂项**选项**选项**对话框。  
+> 当您选择这些设置才可用**文本编辑器**文件夹中， **XML**文件夹，然后**杂项**选项**选项**对话框。  
   
 ## <a name="auto-insert"></a>自动插入  
  **结束标记**  

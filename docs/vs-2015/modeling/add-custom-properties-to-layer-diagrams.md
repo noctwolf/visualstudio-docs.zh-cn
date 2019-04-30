@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9db49c3aaaedde8676b4db2c5e798ad61782aed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430521"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>向层关系图添加自定义属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60075202"
  **初始准备**  
   
 > [!IMPORTANT]
->  要显示属性，您必须对要显示层属性的每台计算机做出以下更改。  
+> 要显示属性，您必须对要显示层属性的每台计算机做出以下更改。  
 > 
 >  1. 使用运行记事本**以管理员身份运行**。 打开 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 >  

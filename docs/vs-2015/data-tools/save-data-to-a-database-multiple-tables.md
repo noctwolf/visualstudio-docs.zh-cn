@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425023"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60118209"
  通过调用 TableAdapter 的 `Update` 方法，可以将应用程序中的数据保存回数据库。 当您将从表**数据源**自动添加到窗体，将数据保存所需的代码窗口。添加到窗体的任何其他表需要手动添加此代码。 本演练显示了如何添加从多个表保存更新的代码。  
   
 > [!NOTE]
->  对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  本演练涉及以下任务：  
   
@@ -118,7 +118,7 @@ ms.locfileid: "60118209"
 2. 将相关的“Orders”节点从“数据源”窗口拖到“Form1”上。  
   
     > [!NOTE]
-    >  相关的“Orders”节点位于“Fax”列下，该节点是“Customers”节点的子节点。  
+    > 相关的“Orders”节点位于“Fax”列下，该节点是“Customers”节点的子节点。  
   
      用于导航记录的 <xref:System.Windows.Forms.DataGridView> 控件和工具栏（<xref:System.Windows.Forms.BindingNavigator>）将显示在窗体上。 OrdersTableAdapter 和<xref:System.Windows.Forms.BindingSource>组件栏中出现。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "60118209"
  通过调用“Customers”和“Orders”TableAdapter 的 `Update` 方法，可更新数据库。 默认情况下，事件处理程序**保存**按钮的<xref:System.Windows.Forms.BindingNavigator>添加到窗体的代码以将更新发送到数据库。 此过程修改代码以将更新发送正确的顺序。这将消除产生引用完整性错误的可能性。 该代码还将通过在 try-catch 块中包装更新调用来实现错误处理。 可以根据应用程序的需要修改代码。  
   
 > [!NOTE]
->  为清楚起见，本演练不使用事务。但是，如果要更新两个或多个相关表，包含在一个事务内的所有更新逻辑。 事务是一个过程，可确保提交任何更改之前，对数据库的所有相关的更改成功。 有关详细信息，请参阅[事务和并发性](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
+> 为清楚起见，本演练不使用事务。但是，如果要更新两个或多个相关表，包含在一个事务内的所有更新逻辑。 事务是一个过程，可确保提交任何更改之前，对数据库的所有相关的更改成功。 有关详细信息，请参阅[事务和并发性](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
   
 #### <a name="to-add-update-logic-to-the-application"></a>将更新逻辑添加到应用程序  
   

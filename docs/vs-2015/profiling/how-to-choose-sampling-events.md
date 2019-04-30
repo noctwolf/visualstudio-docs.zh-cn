@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432834"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：选择采样事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60105495"
 - 性能计数器 - 用于低级别性能问题的 CPU 计数器。  
   
 > [!IMPORTANT]
->  如果正在使用采样方法收集 .NET 内存数据（分配和/或对象生存期），将忽略所有用户指定的采样事件，且相应的内存分配和/或垃圾回收事件将用于收集数据。  
+> 如果正在使用采样方法收集 .NET 内存数据（分配和/或对象生存期），将忽略所有用户指定的采样事件，且相应的内存分配和/或垃圾回收事件将用于收集数据。  
   
 ### <a name="to-select-a-sample-event"></a>选择样本事件  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60105495"
 3. 从“示例事件”下拉列表中，选择要用于分析应用程序的示例事件。  
   
     > [!NOTE]
-    >  仅当从“示例事件”下拉列表中选择“性能计数器”时，“可用的性能计数器”才会启用。  
+    > 仅当从“示例事件”下拉列表中选择“性能计数器”时，“可用的性能计数器”才会启用。  
   
 4. 如果选择“性能计数器”，请从“可用的性能计数器”树视图控件中选择特定的 CPU 计数器。  
   

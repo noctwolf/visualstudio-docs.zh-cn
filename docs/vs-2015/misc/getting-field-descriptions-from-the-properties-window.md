@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432277"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>从属性窗口中获取字段说明
 在“属性”  窗口底部，说明区域显示了与所选属性字段相关的信息。 默认情况下此功能处于开启状态。 如果你想要隐藏说明字段，右键单击“属性”  窗口并单击“说明” 。 执行此操作还会删除“菜单”窗口中“说明”  标题旁的复选标记。 你可以按照将“说明”  切换回开启状态的步骤来再次显示该字段。  
@@ -26,7 +26,7 @@ ms.locfileid: "58937044"
 1. 将 `helpstringdll` 特性添加到类型库中的库语句（`typelib`）。  
   
    > [!NOTE]
-   >  如果类型库位于对象库 (.olb) 文件中，则此步骤是可选的。  
+   > 如果类型库位于对象库 (.olb) 文件中，则此步骤是可选的。  
   
 2. 为字符串指定 `helpstringcontext` 特性。 你还可以指定 `helpstring` 特性。  
   

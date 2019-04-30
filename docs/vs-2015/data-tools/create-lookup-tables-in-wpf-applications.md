@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434513"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60095914"
     - 对象。 有关详细信息，请参阅[如何：连接到对象中的数据](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b)。  
   
     > [!NOTE]
-    >  创建查找表之前，必须存在两个相关的表或对象作为项目的数据源。  
+    > 创建查找表之前，必须存在两个相关的表或对象作为项目的数据源。  
   
 2. 打开**WPF 设计器**，并确保该设计器包含有效的放置目标中的项容器**数据源**窗口。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "60095914"
 4. 展开中的节点**数据源**窗口中，直至你可看到父表或对象和相关的子表或对象。  
   
     > [!NOTE]
-    >  相关的子表或对象是显示为父表或对象下可展开子节点的节点。  
+    > 相关的子表或对象是显示为父表或对象下可展开子节点的节点。  
   
 5. 单击子节点的下拉列表菜单，然后选择**详细信息**。  
   
@@ -73,12 +73,12 @@ ms.locfileid: "60095914"
     - **ListView**  
   
         > [!NOTE]
-        >  如果**ListBox**或**ListView**控件不会出现在列表中，可以将这些控件添加到列表。 有关信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+        > 如果**ListBox**或**ListView**控件不会出现在列表中，可以将这些控件添加到列表。 有关信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
     - 任何自定义控件派生自<xref:System.Windows.Controls.Primitives.Selector>。  
   
         > [!NOTE]
-        >  了解如何添加自定义控件添加到的控件列表您可以选择中的项**数据源**窗口中，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
+        > 了解如何添加自定义控件添加到的控件列表您可以选择中的项**数据源**窗口中，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
 8. 将从子节点**数据源**窗口拖到 WPF 设计器中的容器。 (在上述示例中，子节点是**订单**节点。)  
   

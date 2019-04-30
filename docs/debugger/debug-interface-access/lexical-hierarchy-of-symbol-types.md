@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92f3f8f5174717b3fe3e992706a0f16478f99df
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399405"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符号类型的词法层次结构
 下表显示了词法层次结构中的符号类型。
 
 ## <a name="symbol-types"></a>符号类型
 
-|符号类型|说明|
+|符号类型|描述|
 |-----------------|-----------------|
 |[批注](../../debugger/debug-interface-access/annotation.md)|在程序代码中指定带批注的位置。|
 |[块](../../debugger/debug-interface-access/block.md)|在函数中指定嵌套作用域。|
@@ -43,7 +43,7 @@ ms.locfileid: "56612798"
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|指定`namespace`标识符。|
 
 > [!NOTE]
->  其他符号属性可能可用，具体取决于符号类型。 单个符号主题中列出了这些属性。
+> 其他符号属性可能可用，具体取决于符号类型。 单个符号主题中列出了这些属性。
 
 ## <a name="see-also"></a>请参阅
 - [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

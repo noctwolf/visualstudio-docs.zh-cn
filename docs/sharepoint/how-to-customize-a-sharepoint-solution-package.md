@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420200"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
   在包设计器可用于创建和自定义包 (*.wsp*)。 例如，可以添加 SharePoint 项目项和功能，指定是否 Web 服务器是重置时部署解决方案，并设置部署服务器类型。
@@ -47,7 +47,7 @@ ms.locfileid: "60074916"
 2. 展开包中，展开 Package.package，，然后打开*Package.Template.xml*文件。
 
     > [!NOTE]
-    >  当打开包模板的清单 XML 文件时，将自动验证这些文件，并可以忽略在错误列表窗口中显示的警告。
+    > 当打开包模板的清单 XML 文件时，将自动验证这些文件，并可以忽略在错误列表窗口中显示的警告。
 
 ## <a name="change-the-manifest-template"></a>更改清单模板
  你可以在 Visual Studio XML 编辑器或清单模板窗格中打包的清单文件的 XML 代码。 对 XML 代码的任何更改将合并到包打包的清单文件。
@@ -68,7 +68,7 @@ ms.locfileid: "60074916"
  可以禁用包设计器，并创建*manifest.xml*手动文件。 第一次执行此过程中，在包设计器中的当前设置保存到包模板 XML 文件。 然后，可以修改或覆盖的 XML 代码。
 
 > [!NOTE]
->  如果添加或禁用包设计器时，删除在 XML 文件中的 SharePoint 项目项和功能，不会打包到这些项目项和功能。
+> 如果添加或禁用包设计器时，删除在 XML 文件中的 SharePoint 项目项和功能，不会打包到这些项目项和功能。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>若要通过禁用设计器覆盖打包的清单文件
 

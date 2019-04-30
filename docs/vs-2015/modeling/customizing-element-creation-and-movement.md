@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433275"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ ms.locfileid: "60100516"
    例如，可以使用该模型中的新位置中的数据合并的元素中设置属性。  
   
 > [!NOTE]
->  如果你编写自定义的合并代码，它会影响使用此 EMD 执行的唯一合并。 如果合并相同类型的对象，其他 EMDs 或如果没有其他自定义代码，而无需使用 EMD 创建这些对象，然后它们将不会影响你的自定义的合并代码。  
+> 如果你编写自定义的合并代码，它会影响使用此 EMD 执行的唯一合并。 如果合并相同类型的对象，其他 EMDs 或如果没有其他自定义代码，而无需使用 EMD 创建这些对象，然后它们将不会影响你的自定义的合并代码。  
 >   
->  如果你想要确保新的元素或新的关系始终处理由自定义代码，请考虑定义`AddRule`上的嵌入关系和`DeleteRule`元素的域类上。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。  
+> 如果你想要确保新的元素或新的关系始终处理由自定义代码，请考虑定义`AddRule`上的嵌入关系和`DeleteRule`元素的域类上。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>示例:定义 EMD 而无需自定义代码  
  以下示例允许用户通过从工具箱拖到现有的形状拖动在同一时间创建元素和连接器。 该示例将 EMD 添加到 DSL 定义中。 在这种修改之前, 用户可以在实际应用到关系图中，但不是到现有的形状上拖动工具。  

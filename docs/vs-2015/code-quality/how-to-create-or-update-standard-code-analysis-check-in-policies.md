@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436849"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053151"
 你可以要求运行代码分析将对团队项目中的所有代码项目通过使用代码分析签入策略。 需要代码分析可以提高签入代码库的代码的质量。  
   
 > [!NOTE]
->  仅当使用 Team Foundation Server 提供此功能。  
+> 仅当使用 Team Foundation Server 提供此功能。  
   
  代码分析签入策略设置在团队项目设置中，并将应用于团队项目中每个代码项目。 代码分析运行的代码项目的项目 (.xxproj) 文件中的代码项目的配置。 代码分析运行在本地计算机上执行。 时启用代码分析签入策略、 要签入代码项目中的文件必须在其最后一次编辑后编译和代码分析运行的最小值，包含团队项目设置中的规则必须在计算机上执行其中 changes 所做。  
   

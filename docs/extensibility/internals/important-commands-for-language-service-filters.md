@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff56ea4527fcc61c9b74c73df3b36c554c43072
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ade4bdfce2cd01864075e02648f233622cafc61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418422"
 ---
 # <a name="important-commands-for-language-service-filters"></a>语言服务筛选器的重要命令
 如果你想要创建一个全功能的语言服务筛选器，请考虑处理以下的命令。 在中定义的命令标识符的完整列表<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>非托管枚举为托管的代码和 Stdidcmd.h 标头文件[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]代码。 您可以找到 Stdidcmd.h 文件中的*Visual Studio SDK 安装路径*\VisualStudioIntegration\Common\Inc。
@@ -24,7 +24,7 @@ ms.locfileid: "56602411"
 ## <a name="commands-to-handle"></a>句柄的命令
 
 > [!NOTE]
->  不一定要筛选的下表中的每个命令。
+> 不一定要筛选的下表中的每个命令。
 
 |命令|描述|
 |-------------|-----------------|

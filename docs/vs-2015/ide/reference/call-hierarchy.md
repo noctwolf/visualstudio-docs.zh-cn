@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433700"
 ---
 # <a name="call-hierarchy"></a>调用层次结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "59649402"
 - “代码定义”窗口（如果打开）显示选定成员的代码。 C# 和 C++ 提供此窗口。 有关此窗口的详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。  
   
 > [!NOTE]
->  调用层次结构不会查找方法组引用，这些引用包含将方法添加为事件处理程序或将方法分配给委托的位置。 若要查找对方法的所有引用，可以使用“查找所有引用”命令。  
+> 调用层次结构不会查找方法组引用，这些引用包含将方法添加为事件处理程序或将方法分配给委托的位置。 若要查找对方法的所有引用，可以使用“查找所有引用”命令。  
   
 ## <a name="shortcut-menu-items"></a>快捷菜单项  
  下表描述了在树状视图窗格中右键单击某个节点时，可以使用的多个快捷菜单选项。  

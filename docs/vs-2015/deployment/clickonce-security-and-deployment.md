@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423260"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全和部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual c + + 应用程序的信息，请参阅[Visual c + + 应用程序的 ClickOnce 部署](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual 信息C++应用程序，请参阅[视觉对象的 ClickOnce 部署C++应用程序](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署克服了部署中的三个主要问题：  
   
@@ -78,13 +78,13 @@ ms.locfileid: "58926152"
  可以将应用程序添加到用户的**启动**菜单并对其**添加或删除程序**组中**控制面板**。 与其他部署技术，执行任何操作添加到**Program Files**文件夹或注册表中，并且没有管理权限所需的安装  
   
 > [!NOTE]
->  还有可能阻止应用程序添加到**启动**菜单并**添加或删除程序**组中，有效并且它类似于 Web 应用程序。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  
+> 还有可能阻止应用程序添加到**启动**菜单并**添加或删除程序**组中，有效并且它类似于 Web 应用程序。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  
   
 ### <a name="updating-clickonce-applications"></a>更新 ClickOnce 应用程序  
  当应用程序开发人员创建应用程序的更新的版本时，它们生成一个新的应用程序清单，并将文件复制到部署位置-通常是原始应用程序部署文件夹的同级文件夹。 管理员将更新部署清单，以指向新版本的应用程序的位置。  
   
 > [!NOTE]
->  **发布向导**在 Visual Studio 中可用于执行这些步骤。  
+> **发布向导**在 Visual Studio 中可用于执行这些步骤。  
   
  除了部署位置，部署清单还包含应用程序在其中检查更新版本的更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 可以在部署清单中，指定更新行为或其形式可以是通过应用程序的用户界面中的用户选择[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Api。 此外，Publish 属性还可用于将更新设置为强制执行，或用于将应用程序回滚到较早版本。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "58926152"
 |----------|-----------------|  
 |[“项目设计器”->“安全”页](../ide/reference/security-page-project-designer.md)|登录应用程序和部署清单。|  
 |[“项目设计器”->“发布”页](../ide/reference/publish-page-project-designer.md)|生成和编辑 Visual Basic 和 Visual C# 应用程序的应用程序和部署清单。|  
-|[Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|生成 Visual Basic、 Visual C# 和 Visual c + + 应用程序的应用程序和部署清单。<br /><br /> 签名和重新签名的应用程序和部署清单。<br /><br /> 可以从批处理脚本和命令提示符下运行。|  
+|[Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|对于 Visual Basic，视觉对象中生成应用程序和部署清单C#，并且 VisualC++应用程序。<br /><br /> 签名和重新签名的应用程序和部署清单。<br /><br /> 可以从批处理脚本和命令提示符下运行。|  
 |[MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|生成和编辑应用程序和部署清单。<br /><br /> 签名和重新签名的应用程序和部署清单。|  
 |[GenerateApplicationManifest 任务](../msbuild/generateapplicationmanifest-task.md)|生成应用程序清单。<br /><br /> 可以从 MSBuild 运行。 有关详细信息，请参阅 [MSBuild 参考](../msbuild/msbuild-reference.md)。|  
 |[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)|生成部署清单。<br /><br /> 可以从 MSBuild 运行。 有关详细信息，请参阅 [MSBuild 参考](../msbuild/msbuild-reference.md)。|  

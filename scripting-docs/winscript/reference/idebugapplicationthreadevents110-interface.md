@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440504"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 接口
 将添加更多的线程事件。 这些事件仅是本地的。 也就是说，您可以订阅它们仅在进程正在调试，请使用[IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738)通知和取消方法通知 PDM 应用程序线程对象 (对象实现[IDebugApplicationThread接口](../../winscript/reference/idebugapplicationthread-interface.md))。 从新提供的线程上发生。  
   
 > [!IMPORTANT]
->  此接口由 PDM v11.0 和更高版本实现。 在 activdbg100.h 中发现。  
+> 此接口由 PDM v11.0 和更高版本实现。 在 activdbg100.h 中发现。  
   
 ## <a name="methods"></a>方法  
  `IDebugActivationThreadEvents110` 接口公开以下方法。  

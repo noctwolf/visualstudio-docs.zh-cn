@@ -1,5 +1,5 @@
 ---
-title: 如何： 搜索在 Windows 视图窗口 |Microsoft Docs
+title: 如何：搜索在 Windows 视图窗口 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b65b8fd0b3dd7289e0ca435d6729bf6c9ea7a9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5ba5c8469885fd62c99a672e894cde82700c980d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389292"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在窗口视图中搜索窗口
 您可以使用其句柄、 标题、 类或其标题和类的组合作为搜索条件搜索 Windows 视图中的特定窗口。 此外可以指定搜索的初始传递方向。 在对话框中的字段将窗口树中显示所选的窗口的属性。
@@ -31,7 +31,7 @@ ms.locfileid: "56715344"
     [窗口搜索对话框](../debugger/window-search-dialog-box.md)随即打开。
 
    > [!TIP]
-   >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏 Spy + + 主窗口，仅留下**窗口搜索**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。
+   > 若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏 Spy + + 主窗口，仅留下**窗口搜索**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。
 
 3. 拖动**查找程序工具**通过目标窗口。 拖动该工具中，**窗口搜索**对话框显示有关所选的窗口的详细信息。
 

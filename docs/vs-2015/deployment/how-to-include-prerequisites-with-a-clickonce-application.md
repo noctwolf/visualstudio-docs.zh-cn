@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c2f3bfe9fc40aa21e02268bb403d7497ac41529
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433828"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序包括在一起
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059067"
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序分发这些软件。 当你发布的应用程序并选择**从与我的应用程序相同的位置下载系统必备组件**，如果安装程序包不在将会出错**包**文件夹。  
   
 > [!NOTE]
->  若要添加.NET Framework 的安装程序包，请参阅[开发人员的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
+> 若要添加.NET Framework 的安装程序包，请参阅[开发人员的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
   
 ## <a name="Package"></a> 使用 Package.xml 添加安装程序包  
   
@@ -37,10 +37,10 @@ ms.locfileid: "60059067"
 4. 找到**名称**元素，其中包含**http://go.microsoft.com/fwlink**，并复制 URL。 包括“LinkID”部分。  
   
     > [!NOTE]
-    >  如果没有**名称**元素包含**http://go.microsoft.com/fwlink**，打开**Product.xml**文件的系统必备组件的根文件夹中，找到**fwlink**字符串。  
+    > 如果没有**名称**元素包含**http://go.microsoft.com/fwlink**，打开**Product.xml**文件的系统必备组件的根文件夹中，找到**fwlink**字符串。  
   
     > [!IMPORTANT]
-    >  某些系统必备组件具有多个安装程序包（例如，用于 32 位或 64 位系统）。 如果多个“名称”元素包含“fwlink”，则必须对每个元素重复剩余步骤。  
+    > 某些系统必备组件具有多个安装程序包（例如，用于 32 位或 64 位系统）。 如果多个“名称”元素包含“fwlink”，则必须对每个元素重复剩余步骤。  
   
 5. 将该 URL 粘贴到浏览器的地址栏中，然后在系统提示运行或保存时，选择“保存”。  
   

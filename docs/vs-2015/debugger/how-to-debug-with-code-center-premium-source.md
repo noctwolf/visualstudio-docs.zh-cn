@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438333"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>如何：调试 Code Center Premium 源代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ ms.locfileid: "60039872"
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  请务必包括尾部反斜杠<strong>/</strong> 路径的末尾。  
+   > 请务必包括尾部反斜杠<strong>/</strong> 路径的末尾。  
   
      将这些位置移至列表顶端以确保首先加载这些符号。  
   
    > [!NOTE]
-   >  必须先列出这些 Code Center Premium 位置，以使它们成为首先加载的位置。 在 Visual Studio 2010 中，不能将上述任何服务器移**Microsoft 符号服务器**条目，这就是原因必须清除该复选框。  
+   > 必须先列出这些 Code Center Premium 位置，以使它们成为首先加载的位置。 在 Visual Studio 2010 中，不能将上述任何服务器移**Microsoft 符号服务器**条目，这就是原因必须清除该复选框。  
    > 
    >  若要在调试会话期间从 Microsoft 符号加载符号，请执行下列操作：  
    > 
@@ -113,7 +113,7 @@ ms.locfileid: "60039872"
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  请务必包括尾部反斜杠<strong>/</strong> 路径的末尾。  
+   > 请务必包括尾部反斜杠<strong>/</strong> 路径的末尾。  
   
 4. 对于解决方案中的每个托管项目，请执行下列操作  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437799"
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  在验证模式下，`events` 指定一组其即时结果将被比较的图形事件。 例如，`-examine present,draw,copy,clear`使比较仅属于这些类别的事件。  
   
 > [!TIP]
->  我们建议从开始`-examine present,draw,copy,clear`因为这将显示出大多数问题，但时间要少得比更广泛的一组事件。 如有必要，你可以指定数目更多的或另一组事件来验证这些事件并发现其他类型的问题。  
+> 我们建议从开始`-examine present,draw,copy,clear`因为这将显示出大多数问题，但时间要少得比更广泛的一组事件。 如有必要，你可以指定数目更多的或另一组事件来验证这些事件并发现其他类型的问题。  
   
  `-haltonfail`  
  在验证模式下，`-haltonfail`硬件和 WARP 呈现器之间检测到差异时，会停止验证。 在按下一个键后，验证将继续进行。  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  查看位于使用 WebGL API 来呈现三维内容的 www.fishgl.com 中的网页时，上述示例中的命令将从桌面版本的 Internet Explorer 中捕获图形信息。  
   
 > [!NOTE]
->  由于出现在应用之后的命令行参数会被传递给它，因此必须在使用 `–c` 选项前指定要用于 DXCap.exe 的参数。  
+> 由于出现在应用之后的命令行参数会被传递给它，因此必须在使用 `–c` 选项前指定要用于 DXCap.exe 的参数。  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>从 Windows 应用商店应用捕获图形信息。  
  你可以从 Windows 应用商店应用捕获图形信息。  

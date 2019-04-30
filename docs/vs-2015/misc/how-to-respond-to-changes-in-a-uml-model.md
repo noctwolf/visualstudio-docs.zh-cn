@@ -9,18 +9,18 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdc389460ea12dd2226fff1f450ae885e3ee3b7d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 4d012e3a8c8ef2a3848c4f602bb92e344550f1e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58933405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434986"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>如何：响应 UML 模型中的更改
 在 Visual Studio 中的 UML 模型中出现更改时可以编写已执行的代码。 它将同样会响应直接通过该用户，以及通过其他 Visual Studio 扩展所做的更改。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!WARNING]
->  这些技术不受 UML API 支持。 它们可能无法在将来版本的 Visual Studio 中使用。  
+> 这些技术不受 UML API 支持。 它们可能无法在将来版本的 Visual Studio 中使用。  
   
  示例代码位于[UML:通过使用事件和规则响应 UML 模型中的更改](http://code.msdn.microsoft.com/UML-Responding-to-changes-c024cd4b)  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422713"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>为 UML 模型定义验证约束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60071157"
     有关详细信息，请参阅 [评估验证约束](#Implementing)。  
   
    > [!IMPORTANT]
-   >  请确保你的 **.cs** 文件包含以下 `using` 语句：  
+   > 请确保你的 **.cs** 文件包含以下 `using` 语句：  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  验证方法应确定你要应用的验证约束是 true 还是 false。 如果为 true，则不执行任何操作。 如果为 false，则应使用 `ValidationContext` 参数提供的方法报告错误。  
   
 > [!NOTE]
->  验证方法不应更改模型。 不能保证约束的执行时间和执行顺序。 如果你需要在验证运行过程中连续执行验证方法之间传递信息，则可以使用 [协调多个验证](#ContextCache)中描述的上下文缓存。  
+> 验证方法不应更改模型。 不能保证约束的执行时间和执行顺序。 如果你需要在验证运行过程中连续执行验证方法之间传递信息，则可以使用 [协调多个验证](#ContextCache)中描述的上下文缓存。  
   
  例如，如果想要确保每种类型（类、接口或枚举器）具有长度为至少三个字符的名称，则可以使用此方法：  
   

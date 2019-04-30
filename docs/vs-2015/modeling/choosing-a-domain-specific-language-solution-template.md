@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433389"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>选择域特定语言解决方案模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58937777"
  域特定语言设计器向导中提供了以下解决方案模板。  
   
 > [!NOTE]
->  模板的用途是提供起始 DSL。 名为类和组件图的模板不是完整的 UML 关系图。 如果你想要创建 UML 模型，请考虑 UML 建模工具，提供了一组围绕单个模型集成的关系图。 这些关系图是可扩展的，并且可以使用 ModelBus 与你的 DSL 集成。 有关详细信息，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。  
+> 模板的用途是提供起始 DSL。 名为类和组件图的模板不是完整的 UML 关系图。 如果你想要创建 UML 模型，请考虑 UML 建模工具，提供了一组围绕单个模型集成的关系图。 这些关系图是可扩展的，并且可以使用 ModelBus 与你的 DSL 集成。 有关详细信息，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)。  
   
 |模板|功能|描述|  
 |--------------|--------------|-----------------|  

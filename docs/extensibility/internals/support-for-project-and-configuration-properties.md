@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428832"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 **属性**窗口中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 可以显示的项目和配置属性。 可以项目类型提供属性页，以便用户可以设置为应用程序的属性。
@@ -51,7 +51,7 @@ ms.locfileid: "56604673"
  它负责的项目，以保持项目文件的项目和配置属性。
 
 > [!NOTE]
->  一个项目可以通过保留唯一属性值不同于其默认值的优化暂留。
+> 一个项目可以通过保留唯一属性值不同于其默认值的优化暂留。
 
 ## <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
  `Microsoft.VisualStudio.Package.SettingsPage`类实现项目和配置属性页。 默认实现`SettingsPage`到泛型属性网格中的用户提供的公共属性。 `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids`方法选择类派生自`SettingsPage`的项目属性网格。 `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids`方法选择类派生自`SettingsPage`的配置属性网格。 您的项目类型应重写这些方法来选择相应的属性页。
@@ -63,7 +63,7 @@ ms.locfileid: "56604673"
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保持配置属性。
 
   > [!NOTE]
-  >  实现`Microsoft.VisualStudio.Package.SettingsPage`并`Microsoft.VisualStudio.Package.ProjectNode`类使用`Microsoft.Build.BuildEngine`(MSBuild) 方法来获取和设置从项目文件的项目和配置属性。
+  > 实现`Microsoft.VisualStudio.Package.SettingsPage`并`Microsoft.VisualStudio.Package.ProjectNode`类使用`Microsoft.Build.BuildEngine`(MSBuild) 方法来获取和设置从项目文件的项目和配置属性。
 
   从派生的类`SettingsPage`必须实现`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`来持久保存项目文件的项目或配置属性。
 
@@ -81,7 +81,7 @@ ms.locfileid: "56604673"
  <xref:System.ComponentModel.CategoryAttribute>， <xref:System.ComponentModel.DisplayNameAttribute>，和<xref:System.ComponentModel.DescriptionAttribute>特性确定布局、 设置标签和通用的属性页中的项目和配置属性的说明。 这些属性确定的类别，分别显示名称和选项的说明。
 
 > [!NOTE]
->  等效的属性、 SRCategory、 LocDisplayName 和 SRDescription，使用字符串资源本地化和中定义[项目的 Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。
+> 等效的属性、 SRCategory、 LocDisplayName 和 SRDescription，使用字符串资源本地化和中定义[项目的 Visual Studio 2013 的 MPF](https://github.com/tunnelvisionlabs/MPFProj10)。
 
  考虑以下代码片断：
 

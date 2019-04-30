@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b0343cd088a8d608cd3503162bf7fa737b79f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 19372b341a0a8ba49caa0208a9a2fbbfd0a6b29b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418700"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用工具
 采用 Visual Studio 扩展中作为参数的.dll 文件，并创建 *.pkgdef*随附的文件 *.dll*文件。 *.Pkgdef*文件包含否则会在安装该扩展时写入到系统注册表的所有信息。
 
 > [!NOTE]
->  大部分自动包含在 Visual Studio SDK 中的项目模板创建 *.pkgdef*文件作为生成过程的一部分。 本文档适用于想要手动创建包或转换现有包使用的那些 *.pkgdef*部署。
+> 大部分自动包含在 Visual Studio SDK 中的项目模板创建 *.pkgdef*文件作为生成过程的一部分。 本文档适用于想要手动创建包或转换现有包使用的那些 *.pkgdef*部署。
 
 ## <a name="syntax"></a>语法
 
@@ -55,7 +55,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   如果安装文件夹是 *%vsinstalldir%\Common7\IDE\Extensions\\*，默认情况下启用扩展。
 
 > [!NOTE]
->  **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。
+> **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。
 
 ## <a name="see-also"></a>请参阅
 - [CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)

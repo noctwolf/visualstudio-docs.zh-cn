@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431180"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079471"
 当将项从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)发挥了特殊考虑到 Windows 窗体设计器上： 标题标签中的列名称重新格式化为可读性更强的字符串，当两个或更多的词语找到要连接在一起。 你可以自定义在其中这些标签的创建的方式，通过设置**SmartCaptionExpression**， **SmartCaptionReplacement**，并**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data 设计人员**注册表项。
 
 > [!NOTE]
->  在创建之前，此注册表项不存在。
+> 在创建之前，此注册表项不存在。
 
  智能隐藏式字幕控制正则表达式的值中输入**SmartCaptionExpression**值。 添加**数据设计器**注册表项重写默认正则表达式，用于控制标题标签。 有关正则表达式的详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
@@ -54,9 +54,9 @@ ms.locfileid: "60079471"
 |**SmartCaptionSuffix**|:|表示字符追加到返回的字符串。 例如，如果标题是`Company Name`，后缀使得 `Company Name:`|
 
 > [!CAUTION]
->  你应执行任何操作在注册表编辑器时请格外小心。 在编辑之前备份注册表。 如果在注册表编辑器使用不当可能导致严重的问题，可能需要重新安装操作系统。 Microsoft 不保证可以解决通过注册表编辑器使用不当导致的问题。 使用注册表编辑器的风险由您自己承担。
+> 你应执行任何操作在注册表编辑器时请格外小心。 在编辑之前备份注册表。 如果在注册表编辑器使用不当可能导致严重的问题，可能需要重新安装操作系统。 Microsoft 不保证可以解决通过注册表编辑器使用不当导致的问题。 使用注册表编辑器的风险由您自己承担。
 >
->  以下知识库文章包含有关备份、 编辑和还原注册表的说明：[Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)
+> 以下知识库文章包含有关备份、 编辑和还原注册表的说明：[Microsoft Windows 注册表说明](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986)(http://support.microsoft.com/default.aspx?scid=kb; en-我们; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>若要修改的智能标题行为的数据源窗口
 

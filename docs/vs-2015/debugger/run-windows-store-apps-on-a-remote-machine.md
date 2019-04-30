@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426481"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在远程计算机上运行 Windows 应用商店应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60039790"
  默认情况下，远程调试器使用 Windows 身份验证。  
   
 > [!WARNING]
->  也可以选择在“无身份验证”模式下运行远程调试器，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。  
+> 也可以选择在“无身份验证”模式下运行远程调试器，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 只有在确认网络不会遇到恶意通信的情况下，才可选择“无身份验证”模式。  
   
 ## <a name="BKMK_DirectConnect"></a> 如何直接连接到远程设备  
  若要直接连接到远程计算机，请用标准以太网电缆将 Visual Studio 计算机连接到该设备。 如果设备没有以太网端口，可使用 USB 转以太网适配器连接到该电缆。  
@@ -74,15 +74,15 @@ ms.locfileid: "60039790"
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> 安装远程工具  
   
 > [!NOTE]
->  **版本与更新**  
+> **版本与更新**  
 >   
->  Visual Studio 的早期版本不支持 **Visual Studio 2015 远程工具** 。  
+> Visual Studio 的早期版本不支持 **Visual Studio 2015 远程工具** 。  
 >   
->  建议根据所安装的 Visual Studio 更新版本，安装与之对应的 Visual Studio 2015 远程工具更新版本。  
+> 建议根据所安装的 Visual Studio 更新版本，安装与之对应的 Visual Studio 2015 远程工具更新版本。  
 >   
->  VS 调试程序兼容任何 VS 2015 版本和 VS 2015 远程工具的组合。 但是，Visual Studio 中的最新功能要求使用最新版本的 Visual Studio 和远程工具。  
+> VS 调试程序兼容任何 VS 2015 版本和 VS 2015 远程工具的组合。 但是，Visual Studio 中的最新功能要求使用最新版本的 Visual Studio 和远程工具。  
 >   
->  其他诊断工具需要使用相同版本的远程工具和 Visual Studio。  
+> 其他诊断工具需要使用相同版本的远程工具和 Visual Studio。  
   
  **在远程设备上安装远程调试组件**  
   
@@ -101,7 +101,7 @@ ms.locfileid: "60039790"
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> 启动远程调试器监视器  
   
 > [!NOTE]
->  由于远程调试器将防火墙配置为允许与 Visual Studio 主机通信，所以在首次启动远程调试器时，您必须是远程设备上的管理员。  
+> 由于远程调试器将防火墙配置为允许与 Visual Studio 主机通信，所以在首次启动远程调试器时，您必须是远程设备上的管理员。  
   
  安装远程工具后，在 **“开始”** 屏幕上选择 **“远程调试器”** 。 **“远程调试配置”** 将在您启动远程调试器时首次显示。  
   
@@ -125,7 +125,7 @@ ms.locfileid: "60039790"
    2. 选择 **“权限”** ，添加或移除具有远程调试权限的用户。  
   
        > [!NOTE]
-       >  必须为远程调试的每个用户帐户授予权限。  
+       > 必须为远程调试的每个用户帐户授予权限。  
   
    使用 **“远程调试器配置向导”** ，设置远程调试器的高级选项。 若要打开向导，请选择“开始”屏幕上的 **“远程调试器配置向导”** 。  
   
@@ -141,7 +141,7 @@ ms.locfileid: "60039790"
  该对话框仅列出在 Visual Studio 计算机的本地子网上并且正在运行远程调试器的那些设备。  
   
 > [!TIP]
->  如果连接到远程设备时遇到问题，则尝试访问设备的 IP 地址。 若要确定设备的 IP 地址，请打开命令窗口，然后键入 **ipconfig**。 随后将以 **IPv4 Address**为标题列出 IP 地址。  
+> 如果连接到远程设备时遇到问题，则尝试访问设备的 IP 地址。 若要确定设备的 IP 地址，请打开命令窗口，然后键入 **ipconfig**。 随后将以 **IPv4 Address**为标题列出 IP 地址。  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> 为 C# 和 Visual Basic 项目选择远程设备  
  ![管理项目属性以便进行远程调试](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

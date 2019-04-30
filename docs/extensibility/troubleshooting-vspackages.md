@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434252"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 以下是常见的问题可能与你的 VSPackage 并解决问题的提示。
@@ -46,7 +46,7 @@ ms.locfileid: "60039728"
 4. 打开**输出**的实例的窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]无法加载 VSPackage。 有关 VSPackage 无法加载的原因的信息可能显示在该窗口中。
 
    > [!NOTE]
-   >  如果要开始的实验版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]从[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 中，检查**输出**窗口中的这两个版本。
+   > 如果要开始的实验版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]从[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 中，检查**输出**窗口中的这两个版本。
 
 5. 活动日志中检查。
 
@@ -85,7 +85,7 @@ ms.locfileid: "60039728"
     4. 上**调试**菜单上，单击**开始调试**或按 F5。
 
         > [!NOTE]
-        >  如果你正在调试一个项目，创建或现在加载你的项目的现有实例。
+        > 如果你正在调试一个项目，创建或现在加载你的项目的现有实例。
 
 2. 使用活动日志。
 

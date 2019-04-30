@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b8640636e48e2addedd5a59d30deb060cfdf118
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 49c211faf577df33bc6e7404eaa9631e734c9c36
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435321"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 文件的结构
 包含有关的 VSIX 包中的内容类型的信息。 Visual Studio 使用 [Content_Types].xml 文件来安装包，但它不会安装文件本身。
 
 > [!NOTE]
->  本主题仅适用于 VSIX 包中使用的 [Content_Type].xml 文件，尽管 [Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC:新标准的打包数据](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。
+> 本主题仅适用于 VSIX 包中使用的 [Content_Type].xml 文件，尽管 [Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC:新标准的打包数据](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。
 
 ## <a name="attributes-and-elements"></a>特性和元素
  以下部分介绍的根元素及其属性和子元素。

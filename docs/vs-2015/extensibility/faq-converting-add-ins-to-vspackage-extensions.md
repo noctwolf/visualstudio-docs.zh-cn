@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc6ed31f96fc2021d0d9e104692f0440cfb78a5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433741"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题解答：将外接程序转换为 VSPackage 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,14 +21,14 @@ ms.locfileid: "60048670"
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，您需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。  
   
 > [!WARNING]
->  对于 C# 和 Visual Basic 项目，开始在 Visual Studio 2015 中，可以使用 VSIX 项目并添加项模板的菜单命令、 工具窗口和 Vspackage。 有关详细信息，请参阅[What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)。  
+> 对于 C# 和 Visual Basic 项目，开始在 Visual Studio 2015 中，可以使用 VSIX 项目并添加项模板的菜单命令、 工具窗口和 Vspackage。 有关详细信息，请参阅[What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)。  
   
 > [!IMPORTANT]
->  在许多情况下可只需将外接程序代码传输到 VSPackage 项目项具有的 VSIX 项目。 你可以通过在 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 方法中调用 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 获取 DTE 自动化对象。  
+> 在许多情况下可只需将外接程序代码传输到 VSPackage 项目项具有的 VSIX 项目。 你可以通过在 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 方法中调用 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 获取 DTE 自动化对象。  
 >   
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
+> `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  有关详细信息，请参阅[如何在 VSPackage 中运行我的外接程序代码？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)下面。  
+> 有关详细信息，请参阅[如何在 VSPackage 中运行我的外接程序代码？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)下面。  
   
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>开发的 VSIX 扩展需要哪些软件？  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

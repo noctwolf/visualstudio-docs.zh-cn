@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432130"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>在属性窗口中公开属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ ms.locfileid: "60117127"
 10. 选中该复选框**MyToolWindow**窗口。 **IsChecked**中**属性**窗口更改为**True**。 清除中的复选框**MyToolWindow**窗口。 **IsChecked**中**属性**窗口更改为**False**。 更改的值**IsChecked**中**属性**窗口。 中的复选框**MyToolWindow**窗口更改以匹配新值。  
   
     > [!NOTE]
-    >  如果必须显示在对象的 dispose**属性**窗口中，调用`OnSelectChange`与`null`选择容器第一个。 后释放该属性或对象，您可以更改为已更新的选择容器<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>和<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>列出。  
+    > 如果必须显示在对象的 dispose**属性**窗口中，调用`OnSelectChange`与`null`选择容器第一个。 后释放该属性或对象，您可以更改为已更新的选择容器<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A>和<xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A>列出。  
   
 ## <a name="changing-selection-lists"></a>更改选择列表  
  在本部分中，添加选择列表的基本属性类并使用工具窗口界面选择要显示的选择列表。  
@@ -261,7 +261,7 @@ ms.locfileid: "60117127"
 6. 选择中的复选框**MyToolWindow**窗口。 **属性**窗口将显示`Simple`对象属性， **SomeText**并**ReadOnly**。 清除复选框。 在窗口的公共属性显示在**属性**窗口。  
   
     > [!NOTE]
-    >  显示名称**SomeText**是**我的文本**。  
+    > 显示名称**SomeText**是**我的文本**。  
   
 ## <a name="best-practice"></a>最佳做法  
  在此演练中，<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>实现，以便可选择对象集合和所选的对象集合是相同的集合。 仅所选的对象显示在属性浏览器列表。 有关更完整的 ISelectionContainer 实现，请参阅 Reference.ToolWindow 示例。  

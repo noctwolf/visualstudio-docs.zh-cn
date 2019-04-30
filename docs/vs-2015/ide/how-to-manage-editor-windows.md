@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430500"
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理编辑器 Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089921"
 可以一次处理多个位置的代码。 通过拆分编辑器窗口，或打开编辑器窗口的多个实例执行此操作。  
   
 > [!NOTE]
->  并非所有编辑器窗口都支持多个实例。  
+> 并非所有编辑器窗口都支持多个实例。  
   
 ## <a name="splitting-an-editor-window"></a>拆分编辑器窗口  
  编辑器窗口的实例可拆分为两个单独的视图，以便编辑。  
@@ -41,7 +41,7 @@ ms.locfileid: "60089921"
      编辑区域分为由分隔条隔开的两个窗格。 可以分别滚动这两个窗格，以便同时查看和编辑活动文档的不同部分。 窗格中的任何更改都会在其他窗格中反映。  
   
     > [!TIP]
-    >  若要使一个窗格大于其他窗格，可上下拖动分隔条。  
+    > 若要使一个窗格大于其他窗格，可上下拖动分隔条。  
   
 #### <a name="to-return-to-single-pane-view"></a>返回单一窗格视图  
   

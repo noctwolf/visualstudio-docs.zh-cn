@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433212"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Editor
 - 删除选项卡和工具。  
   
 > [!IMPORTANT]
->  若要在 DSL 资源管理器中添加或粘贴项，请右键单击新节点的祖父级。 例如，若要添加一种工具，请右键单击选项卡上，而非**工具**节点。 若要添加选项卡，右键单击**编辑器**节点。  
+> 若要在 DSL 资源管理器中添加或粘贴项，请右键单击新节点的祖父级。 例如，若要添加一种工具，请右键单击选项卡上，而非**工具**节点。 若要添加选项卡，右键单击**编辑器**节点。  
   
  **工具箱图标**属性的每个工具引用 16x16 位图文件。 这些文件通常保留在**Dsl\Resources**文件夹。  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   你必须提供一些程序代码，才能进行这些自定义。 若要发现你必须提供的代码，请检查这些框之一、单击“转换所有模板”，然后生成解决方案。 将产生一个错误报告。 双击该错误报告以查看注释，该注释解释了应添加的代码。  
   
 > [!NOTE]
->  若要添加自定义代码，请在与 GeneratedCode 文件夹中的代码文件不同的代码文件中创建分部类定义。 为避免丢失工作，不应编辑生成的代码文件。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。  
+> 若要添加自定义代码，请在与 GeneratedCode 文件夹中的代码文件不同的代码文件中创建分部类定义。 为避免丢失工作，不应编辑生成的代码文件。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。  
   
 #### <a name="creating-custom-connection-code"></a>创建自定义连接代码  
  在每个链接连接指令，**源角色指令**选项卡将定义从哪些类型可以拖动。 同样，**目标角色指令**选项卡将定义到哪些类型可以拖动。 对于每种类型，您可以进一步指定是否允许通过设置连接 （针对该链接连接指令）**自定义接受**标志，然后提供额外的代码。  

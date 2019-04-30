@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432586"
 ---
 # <a name="shader-designer"></a>着色器设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ ms.locfileid: "60116806"
 |**高级**|包含高级命令和选项。<br /><br /> **导出**：允许以多种格式导出着色器。<br /><br /> **导出为**：将着色器导出为 HLSL 源代码或已编译的着色器字节码。 有关如何导出着色器的详细信息，请参阅[如何：导出着色器](../designers/how-to-export-a-shader.md)。<br /><br /> **图形引擎**：允许选择用于显示设计图面的呈现器。<br /><br /> **使用 D3D11 呈现**：使用 Direct3D 11 呈现着色器设计器设计图面。<br /><br /> **使用 D3D11WARP 呈现**：使用 Direct3D 11 Windows 高级光栅化平台 (WARP) 呈现着色器设计器设计图面。<br /><br /> **视图**：允许选择有关着色器设计器的其他信息。<br /><br /> **帧速率**：启用后，会在设计图面的右上角显示当前帧速率。 帧速率为每秒绘制的帧数。  在启用“实时呈现模式”选项时，此选项才有用。|  
   
 > [!TIP]
->  可以选择“高级”按钮再次运行上一个命令。  
+> 可以选择“高级”按钮再次运行上一个命令。  
   
 ### <a name="working-with-nodes-and-connections"></a>使用节点和连接  
  使用“选择”模式来添加、删除、重新定位、连接和配置节点。 以下介绍了如何执行这些基本操作：  

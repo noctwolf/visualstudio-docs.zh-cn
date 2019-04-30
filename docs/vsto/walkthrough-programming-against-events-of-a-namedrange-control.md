@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446918"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>演练：针对 NamedRange 控件的事件进行编程
   本演练演示如何添加<xref:Microsoft.Office.Tools.Excel.NamedRange>对 Microsoft Office Excel 工作表和对其事件通过使用 Visual Studio 中的 Office 开发工具进行编程控制。
@@ -37,7 +37,7 @@ ms.locfileid: "60049927"
 - 测试您的项目。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -119,7 +119,7 @@ ms.locfileid: "60049927"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  双击 Excel 区域中的单元格进入编辑模式，因为<xref:Microsoft.Office.Tools.Excel.NamedRange.Change>所选内容移动的范围之外，即使未文本发生更改时发生事件。
+    > 双击 Excel 区域中的单元格进入编辑模式，因为<xref:Microsoft.Office.Tools.Excel.NamedRange.Change>所选内容移动的范围之外，即使未文本发生更改时发生事件。
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>添加代码以响应 SelectionChange 事件
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049927"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  双击 Excel 区域中的单元格使所选内容将移到范围，因为<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>事件之前发生<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>事件发生。
+    > 双击 Excel 区域中的单元格使所选内容将移到范围，因为<xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>事件之前发生<xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>事件发生。
 
 ## <a name="test-the-application"></a>测试应用程序
  现在可以测试你的工作簿以验证该文本描述的事件<xref:Microsoft.Office.Tools.Excel.NamedRange>引发事件时，将控件插入到另一个命名范围。

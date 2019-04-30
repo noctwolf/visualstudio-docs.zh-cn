@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439961"
 ---
 # <a name="rename-refactoring-c"></a>重命名重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114725"
 **重命名**是 Visual Studio 集成的开发环境 (IDE) 提供了一种简单的方法可以重命名代码符号，例如字段、 局部变量、 方法、 命名空间、 属性和类型的标识符中的重构功能。 **重命名**只能更改在注释并在字符串中的名称，并且若要更改的声明和调用的标识符。  
   
 > [!NOTE]
->  当使用针对 Visual Studio 源代码管理，再尝试执行重命名重构获取最新版本的源。  
+> 当使用针对 Visual Studio 源代码管理，再尝试执行重命名重构获取最新版本的源。  
   
  重命名重构为可从以下 Visual Studio 功能：  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114725"
 2. 声明中`MethodB`中，键入或 backspace 方法标识符。 此标识符下将显示智能标记提示。  
   
     > [!NOTE]
-    >  仅可以调用重命名重构在标识符声明中使用智能标记。  
+    > 仅可以调用重命名重构在标识符声明中使用智能标记。  
   
 3. 键入的键盘快捷方式 SHIFT + ALT + F10，，然后按向下箭头以显示智能标记菜单。  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114725"
  如果**重命名重载**处于选中状态，将重命名重构引擎`Derived.Method(int i)`因为它重载`Derived.Method()`，`Base.Method(int i)`因为由重写`Derived.Method(int i)`，和`Base.Method()`的重载，因为它`Base.Method(int i)`.  
   
 > [!NOTE]
->  重命名引用的程序集中定义的成员时，对话框中的文字重命名会导致生成错误。  
+> 重命名引用的程序集中定义的成员时，对话框中的文字重命名会导致生成错误。  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>重命名匿名类型的属性  
  当您重命名匿名类型中的属性时，重命名操作将传播到其他具有相同的属性的匿名类型中的属性。 以下示例说明了此行为。  

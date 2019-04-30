@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85aea5bfa6ccdf5f3753a1397729671249961152
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3181f7ab2e69dd04a21f5f81ca470f849c268e03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418391"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：支持旧版语言服务中的大纲显示
 使用大纲显示展开或折叠的文本的不同区域。 使用方式大纲显示可通过不同的语言以不同的方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。
@@ -25,7 +25,7 @@ ms.locfileid: "60060587"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现大纲显示的新方法的详细信息，请参阅[演练：大纲显示](../../extensibility/walkthrough-outlining.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
  以下演示如何为你的语言服务支持此命令。
 
@@ -43,7 +43,7 @@ ms.locfileid: "60060587"
  您可以调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A>方法通过指定这些区域中的多个大纲区域`rgOutlnReg`参数。 `rgOutlnReg`参数是<xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion>结构。 此过程允许您指定的隐藏区域，如是否展开或折叠某一特定区域的不同特征。
 
 > [!NOTE]
->  谨慎隐藏新行字符。 隐藏的文本，应将扩展从第一个行的开头到最后一个字符的一个部分中，仅显示最后一个新行字符的最后一行。
+> 谨慎隐藏新行字符。 隐藏的文本，应将扩展从第一个行的开头到最后一个字符的一个部分中，仅显示最后一个新行字符的最后一行。
 
 ## <a name="see-also"></a>请参阅
 - [如何：提供旧版语言服务中的隐藏的文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)

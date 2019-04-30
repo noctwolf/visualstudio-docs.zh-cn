@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425440"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075:不安全的 DTD 处理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "58935323"
 - 确保在所有 InnerXml 用例中 load () 方法均采用 XmlReader 实例。
 
 > [!NOTE]
->  此规则可能会针对某些有效 XmlSecureResolver 实例进行误报。 我们正在努力解决此问题，并预计于 2016 年中期之前解决此问题。
+> 此规则可能会针对某些有效 XmlSecureResolver 实例进行误报。 我们正在努力解决此问题，并预计于 2016 年中期之前解决此问题。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  除非确信已知道输入是来自受信任的源，否则请勿禁止显示此警告的规则。

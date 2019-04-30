@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414546"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安装独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "60062823"
 2. 标识外壳和外壳应用程序需要，如以下示例所示的组件。  
   
     > [!NOTE]
-    >  某些元素可以引用其他.wxs 文件中定义。  
+    > 某些元素可以引用其他.wxs 文件中定义。  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ ms.locfileid: "60062823"
         ```  
   
     > [!NOTE]
-    >  Shell （独立） 应用程序必需的依赖项是：DebuggerProxy，MasterPkgDef，资源 （尤其是.winprf 文件），应用程序和 PkgDefs。  
+    > Shell （独立） 应用程序必需的依赖项是：DebuggerProxy，MasterPkgDef，资源 （尤其是.winprf 文件），应用程序和 PkgDefs。  
   
 ### <a name="registry-entries"></a>注册表项  
  Shell （独立） 项目模板包括*ProjectName*合并安装上的注册表项的.reg 文件。 这些注册表项必须是安装和清理目的的 MSI 的一部分。 此外必须在 ApplicationRegistry.wxs 中创建匹配的注册表基块。  
@@ -211,7 +211,7 @@ ms.locfileid: "60062823"
  若要确定是否必须安装 Visual Studio Shell （独立），请首先确定是否已安装通过检查 HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install 的注册表值。  
   
 > [!NOTE]
->  由 Shell 检测块中 Product.wxs 还读取这些值。  
+> 由 Shell 检测块中 Product.wxs 还读取这些值。  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder 指定的位置的已安装 Visual Studio Shell，并可以检查那里文件。  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [演练：创建基本的独立的 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

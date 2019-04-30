@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 714a4307f6885dbfd8c1bed4ccd8f0cccc173c07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440453"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "58933694"
  对于本机代码，可以将自定义数据类型扩展添加到 autoexp.dat 文件中，该文件位于 Program Files\Microsoft Visual Studio 11.0\Common7\Packages\Debugger 目录中。 有关如何编写 `autoexp` 规则的说明就在该文件中。  
   
 > [!CAUTION]
->  在 Visual Studio 的不同版本中，此文件的结构和 autoexp 规则的语法可能不同。  
+> 在 Visual Studio 的不同版本中，此文件的结构和 autoexp 规则的语法可能不同。  
   
  通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例：调试表达式计算器外接程序](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   

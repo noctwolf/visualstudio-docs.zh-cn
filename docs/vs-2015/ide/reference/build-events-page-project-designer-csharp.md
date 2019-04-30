@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d04c750bbe8183ae8e39765e41af2f138704ba3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dc8fee5a01043a32061bfa711b7ad2009121b216
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433727"
 ---
 # <a name="build-events-page-project-designer-c"></a>“项目设计器”->“生成事件”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ ms.locfileid: "59654056"
  在生成开始之前，指定要执行的任何命令。 要键入长命令，单击“编辑预生成”，显示[预生成事件/生成后事件命令行对话框](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)。  
   
 > [!NOTE]
->  如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
+> 如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
   
  生成后事件命令行  
  在生成结束之后，指定要执行的任何命令。 要键入长命令，单击“编辑生成后”，显示“预生成事件/生成后事件命令行对话框”。  
   
 > [!NOTE]
->  在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+> 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
  运行生成后事件  
  指定以下生成后事件运行的条件，如下表所示。  

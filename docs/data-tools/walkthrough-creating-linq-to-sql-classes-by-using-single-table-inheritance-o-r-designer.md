@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402697"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练：创建 LINQ to SQL 类通过使用单表继承 （O/R 设计器）
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支持单表继承中，通常是在关系数据库管理系统中实现。 本演练中提供的通用步骤进行了扩展[如何：通过使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主题，并提供一些真实数据演示了如何使用中的继承[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。
@@ -45,7 +45,7 @@ ms.locfileid: "60114335"
 1. 在中**服务器资源管理器**或**数据库资源管理器**，右键单击**表**节点，然后单击**添加新表**。
 
     > [!NOTE]
-    >  可以使用 Northwind 数据库或其他任何可添加表的数据库。
+    > 可以使用 Northwind 数据库或其他任何可添加表的数据库。
 
 2. 在表设计器中，向该表中添加以下列：
 

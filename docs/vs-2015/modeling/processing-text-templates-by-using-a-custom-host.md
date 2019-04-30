@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2f10b239b4307b94c1f3b62b8e0a29767b22aaf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e9f27d203f317a63049015dbeba073d8ee075e61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428074"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自定义宿主处理文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "58937007"
 *文本模板转换*过程将*文本模板*文件作为输入并生成一个文本文件作为输出。 从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展或安装有 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的计算机上运行的独立应用程序，可以调用文本转换引擎。 但是，必须提供*文本模板化宿主*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。  
   
 > [!TIP]
->  如果要编写将在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内运行的包或扩展，请考虑使用文本模板化服务而不是编写您自己的主机。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
+> 如果要编写将在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内运行的包或扩展，请考虑使用文本模板化服务而不是编写您自己的主机。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
 > [!NOTE]
->  不建议在服务器应用程序中使用文本模板转换。 除非是在单个线程中，否则不建议使用文本模板转换。 这是因为文本模板化引擎可以重用单个 AppDomain，以便转换、编译和执行模板。 转换的代码未被设计为线程安全的。 该引擎旨在按顺序处理文件，因为在设计时它们位于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中。  
+> 不建议在服务器应用程序中使用文本模板转换。 除非是在单个线程中，否则不建议使用文本模板转换。 这是因为文本模板化引擎可以重用单个 AppDomain，以便转换、编译和执行模板。 转换的代码未被设计为线程安全的。 该引擎旨在按顺序处理文件，因为在设计时它们位于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中。  
 >   
->  对于运行时应用程序，请考虑使用预处理的文本模板： 请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
+> 对于运行时应用程序，请考虑使用预处理的文本模板： 请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
  如果应用程序使用一组在编译时固定的模板，使用预处理文本模板会更为简单。 如果应用程序将在未安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的计算机上运行，也可以使用该方法。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   

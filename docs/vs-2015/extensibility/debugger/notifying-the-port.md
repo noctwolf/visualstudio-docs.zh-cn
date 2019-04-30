@@ -10,12 +10,12 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d17331c9a18132a882f02c3ecbdc66ca8111e1e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410073"
 ---
 # <a name="notifying-the-port"></a>通知端口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,12 +33,12 @@ ms.locfileid: "58932054"
    以编程方式，当一个端口先接收新的程序节点，它会创建[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口来表示该程序。  
   
 > [!NOTE]
->  不应与混淆这`IDebugProgram2`接口更高版本创建的调试引擎 (DE)。  
+> 不应与混淆这`IDebugProgram2`接口更高版本创建的调试引擎 (DE)。  
   
  该端口将发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)程序创建事件返回到会话调试管理器 (SDM) 通过 COM`IConnectionPoint`接口。  
   
 > [!NOTE]
->  不应与混淆这`IDebugProgramCreateEvent2`接口，由 DE 发出的更高版本。  
+> 不应与混淆这`IDebugProgramCreateEvent2`接口，由 DE 发出的更高版本。  
   
  事件接口本身，以及该端口将发送[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)，并[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口，表示该端口，处理，并编程，分别。 SDM 调用[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)要获取可以调试程序，DE GUID。 从最初获取 GUID [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口。  
   

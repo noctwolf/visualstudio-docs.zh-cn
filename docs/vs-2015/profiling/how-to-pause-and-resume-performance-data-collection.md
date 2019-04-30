@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432631"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暂停和恢复性能数据收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60053996"
  ![分析会话页](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  还可以在暂停分析的情况下启动性能会话，然后在以后执行程序时恢复分析。 若要在暂停分析的情况下启动性能会话，请选择“调试”菜单中的“在暂停分析的情况下启动性能分析”命令。  
+> 还可以在暂停分析的情况下启动性能会话，然后在以后执行程序时恢复分析。 若要在暂停分析的情况下启动性能会话，请选择“调试”菜单中的“在暂停分析的情况下启动性能分析”命令。  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>暂停、恢复或停止分析  
   

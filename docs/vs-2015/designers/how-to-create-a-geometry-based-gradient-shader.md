@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436174"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：创建基于几何图形的渐变着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60071715"
    下图显示了已完成的着色器关系图和应用于球体的着色器预览。  
   
 > [!NOTE]
->  在此图中，指定了橙色以更好地演示着色器的效果，但因为预览形状在世界空间中没有位置，所以无法在着色器设计器中完全预览该着色器。 必须在实际场景中预览着色器以演示完全效果。  
+> 在此图中，指定了橙色以更好地演示着色器的效果，但因为预览形状在世界空间中没有位置，所以无法在着色器设计器中完全预览该着色器。 必须在实际场景中预览着色器以演示完全效果。  
   
  ![着色器图及其效果预览](../designers/media/digit-gradient-effect-graph.png "")  
   

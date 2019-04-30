@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419615"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中创建 Office 项目
   可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -44,7 +44,7 @@ ms.locfileid: "57868167"
     此时将出现“新建项目”对话框。
 
    > [!NOTE]
-   >  默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 有关详细信息，请参阅[.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。
+   > 默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 有关详细信息，请参阅[.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。
 
 2. 在所需的语言节点下的模板窗格中，展开**Office/SharePoint**。
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868167"
 4. 在项目模板列表中，选择 VSTO 外接程序项目模板。 有关可用 VSTO 外接程序项目模板的列表，请参阅[Office 项目模板概述](../vsto/office-project-templates-overview.md)。
 
    > [!NOTE]
-   >  如果项目模板不可见时选择**Office 加载项**节点，请确保 **.NET Framework 4**或更高版本选择对话框顶部组合框中。 Office 项目模板对于 .NET Framework 的两个版本均为可见。
+   > 如果项目模板不可见时选择**Office 加载项**节点，请确保 **.NET Framework 4**或更高版本选择对话框顶部组合框中。 Office 项目模板对于 .NET Framework 的两个版本均为可见。
 
 5. 在中**名称**框中，键入项目的名称。 默认情况下，项目名称也可用作解决方案名称。
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868167"
    - 百分号 (%)
 
    > [!NOTE]
-   >  如果在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 项目中使用现有文档，则只能使用在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 项目中创建的或转换为该项目格式的文档。 类似地，如果在 Word 2010 项目中使用现有文档，则只能使用在 Word 2010 中创建的或转换为该文档格式的文档。 如果使用 Word 早期版本创建的文档，将禁用文档中的某些功能。 如果尝试编写使用这些功能的代码，可能会在项目中出现错误。 若要将文档转换，打开在[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]或 Word 2010 中，在**文件**功能区上选项卡上，选择**信息** > **转换**。
+   > 如果在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 项目中使用现有文档，则只能使用在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 项目中创建的或转换为该项目格式的文档。 类似地，如果在 Word 2010 项目中使用现有文档，则只能使用在 Word 2010 中创建的或转换为该文档格式的文档。 如果使用 Word 早期版本创建的文档，将禁用文档中的某些功能。 如果尝试编写使用这些功能的代码，可能会在项目中出现错误。 若要将文档转换，打开在[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]或 Word 2010 中，在**文件**功能区上选项卡上，选择**信息** > **转换**。
 
 8. 选择“完成”。
 

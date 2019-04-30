@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431019"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60115570"
  本节中的步骤说明如何使用“XML 编辑器”的从架构生成 XML 代码段的功能。  
   
 > [!NOTE]
->  在开始下列步骤之前，先将架构文件保存到本地计算机上。  
+> 在开始下列步骤之前，先将架构文件保存到本地计算机上。  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>新建 XML 文件并将其与 XML 架构关联  
   

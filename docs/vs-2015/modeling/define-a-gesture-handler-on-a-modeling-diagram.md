@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433151"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在建模图上定义笔势处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "60067009"
 3. 将类文件添加到项目中，并将其内容设置为下面的代码。  
   
    > [!NOTE]
-   >  根据你的偏好更改命名空间和类名。  
+   > 根据你的偏好更改命名空间和类名。  
   
    ```  
    using System.ComponentModel.Composition;  
@@ -243,7 +243,7 @@ ms.locfileid: "60067009"
   
    - 如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
-   - 在“解决方案资源管理器”中，在“启动”或“仅项目”的快捷菜单上选择“属性”。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
+   - 在“解决方案资源管理器”中，在“启动”或“仅项目”的快捷菜单上选择“属性”。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序”  字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   

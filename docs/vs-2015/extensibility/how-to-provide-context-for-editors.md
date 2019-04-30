@@ -10,12 +10,12 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e5900d5c818883ffc78b2399b937c80307b52c36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435896"
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何：为编辑器提供的上下文
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "60116508"
      当**动态帮助**窗口调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>以指示它正在更新，编辑器或设计器可以在该时间更新父上下文包和任何子上下文包适当的上下文。  
   
     > [!NOTE]
-    >  `SetDirty`标志将自动设置为`true`每当添加或删除从上下文包上下文。 **动态帮助**窗口将仅调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>对上下文包如果`SetDirty`标志设置为`true`。 重置为`false`更新后。  
+    > `SetDirty`标志将自动设置为`true`每当添加或删除从上下文包上下文。 **动态帮助**窗口将仅调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>对上下文包如果`SetDirty`标志设置为`true`。 重置为`false`更新后。  
   
 3. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A>以将上下文添加到活动的上下文集合或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A>删除上下文。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "60116508"
  如果你正在编写您自己的编辑器，则必须完成所有这三个本主题为编辑器中提供的上下文中的过程。  
   
 > [!NOTE]
->  若要正确激活的编辑器或设计器窗口并确保命令路由已正确更新，必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>组件以使其焦点窗口上。  
+> 若要正确激活的编辑器或设计器窗口并确保命令路由已正确更新，必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>组件以使其焦点窗口上。  
   
  SEID 是基于对所选内容更改的属性的集合。 可通过全局选择 SEID 信息。 全局选择连接到触发的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>接口，并且已将所有内容的列表选择了 （当前编辑器、 当前工具窗口、 当前层次结构等）。  
   

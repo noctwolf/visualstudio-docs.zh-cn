@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435956"
 ---
 # <a name="how-to-implement-undo-management"></a>如何：实现撤消管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60112606"
    `OleUndoManager`类表示单个撤消堆栈实例。 因此，是每个被跟踪的撤消或重复的数据实体的一个撤消管理器对象。  
   
 > [!NOTE]
->  文本编辑器中广泛使用的撤消管理器对象，它是文本编辑器中没有特定支持的通用组件。 如果你想要支持多级撤消或重做，可以使用此对象来执行此操作。  
+> 文本编辑器中广泛使用的撤消管理器对象，它是文本编辑器中没有特定支持的通用组件。 如果你想要支持多级撤消或重做，可以使用此对象来执行此操作。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   

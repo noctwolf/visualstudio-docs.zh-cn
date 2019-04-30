@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420620"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：公开库提供对对象管理器的符号列表
 符号浏览工具中，**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，将为新数据传送到请求传递给[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器。 对象管理器查找合适的库，并请求新的符号列表。 这些库通过提供到请求的数据来响应[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口以获取数据，并使用它来填充或更新符号浏览工具的视图。
@@ -27,9 +27,9 @@ ms.locfileid: "60061315"
  调用该工具，该节点已展开，或刷新该视图时，库可能会收到针对数据的请求。 第一次调用符号浏览工具时，对象管理器请求库，以提供顶级的列表。 当在用户展开列表节点时，库提供的该节点下的子级的列表。 每个对象管理器查询包含所需的项的索引。 若要显示的新列表，对象管理器必须确定列表项、 其名称、 可访问性，以及其他属性的类型中有多少项。
 
 > [!NOTE]
->  下面的托管的代码示例演示如何提供了通过实现符号的列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 对象管理器调用此接口中的方法，并使用获得的数据填充或更新符号浏览工具。
+> 下面的托管的代码示例演示如何提供了通过实现符号的列表<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>接口。 对象管理器调用此接口中的方法，并使用获得的数据填充或更新符号浏览工具。
 >
->  对于本机代码符号提供程序实现，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>接口。
+> 对于本机代码符号提供程序实现，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>接口。
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>若要向对象管理器提供的符号列表
 

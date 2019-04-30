@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408758"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>演练：将用户设置保存在起始页上
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "60111150"
 ## <a name="prerequisites"></a>系统必备  
   
 > [!NOTE]
->  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+> 要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
 >   
->  可以使用下载起始页项目模板**扩展管理器**。  
+> 可以使用下载起始页项目模板**扩展管理器**。  
   
 ## <a name="setting-up-the-project"></a>设置项目  
   

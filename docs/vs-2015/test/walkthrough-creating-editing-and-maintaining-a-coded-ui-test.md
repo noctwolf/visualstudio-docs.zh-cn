@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428235"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>演练：创建、 编辑和维护编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ ms.locfileid: "60061809"
 2. 创建 SimpleWPFApp 应用程序的桌面快捷方式。 右键单击 SimpleWPFApp.exe 并选择“复制”。 在桌面上右键单击，然后选择“粘贴快捷方式”。  
   
     > [!TIP]
-    >  使用应用程序的快捷方式可以快速启动应用程序，因此便于为应用程序添加或修改编码的 UI 测试。  
+    > 使用应用程序的快捷方式可以快速启动应用程序，因此便于为应用程序添加或修改编码的 UI 测试。  
   
 3. 在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新建项目”。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "60061809"
      ![暂停记录](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  将录制在桌面上执行的所有操作。 如果你正在执行可能会导致敏感数据被包括在录制中的操作，则暂停录制。  
+    > 将录制在桌面上执行的所有操作。 如果你正在执行可能会导致敏感数据被包括在录制中的操作，则暂停录制。  
   
 9. 使用桌面快捷方式启动 SimpleWPFApp。  
   
@@ -203,7 +203,7 @@ ms.locfileid: "60061809"
 3. 若要更正此问题，可以使用 `WaitForControlEnabled()` 方法使编码的 UI 测试等待 CheckBox 控件被启用，然后再继续此行。  
   
     > [!WARNING]
-    >  请不要修改 UIMap.Designer.cs 文件。 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
+    > 请不要修改 UIMap.Designer.cs 文件。 每次使用“UIMap - 编码的 UI 测试生成器”生成代码时，都会覆盖在 UIMapDesigner.cs 文件中进行的所有代码更改。 如果必须修改录制的方法，则必须将其复制到 UIMap.cs 文件并对其重命名。 UIMap.cs 文件可用于重写 UIMapDesigner.cs 文件中的方法和属性。 必须在 Coded UITest.cs 文件中删除对原始方法的引用，并将其替换为重命名的方法名称。  
   
 4. 在解决方案资源管理器中，找到编码的 UI 测试项目中的 **UIMap.uitest**。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60061809"
      对测试方法的更新保存在 UIMap.Designer 文件中。  
   
     > [!CAUTION]
-    >  一旦移动了该方法，你就不再能使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。  
+    > 一旦移动了该方法，你就不再能使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。  
   
 10. 将方法由 `SimpleAppTest()` 重命名为 `ModifiedSimpleAppTest()`  
   

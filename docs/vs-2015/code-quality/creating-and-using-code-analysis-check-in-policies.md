@@ -11,22 +11,22 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437075"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>创建和使用代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-当你使用 Team Foundation 版本控制 (TFVC) 时，你可以为.NET Framework 和本机 （C/c + +） 代码项目的团队项目中创建代码分析签入策略。 代码分析签入策略可用于控制和改进签入代码库的代码的质量。  
+当你使用 Team Foundation 版本控制 (TFVC) 时，您可以创建代码分析签入策略的.NET Framework 和本机 (C /C++) 代码的团队项目中的项目。 代码分析签入策略可用于控制和改进签入代码库的代码的质量。  
   
  本地生成是最新的和已针对最新源文件运行代码分析时，将传递该策略。 至少，在代码项目中启用代码分析规则必须包含与在团队项目签入策略中定义相同的规则。 已指定为团队项目设置中的错误的规则还必须指定为在代码项目中的错误  
   
 > [!IMPORTANT]
->  代码分析签入策略不能应用于网站项目。 它们可以应用于 web 应用程序项目。  
+> 代码分析签入策略不能应用于网站项目。 它们可以应用于 web 应用程序项目。  
   
  通过使用团队项目设置的创建代码分析签入策略[!INCLUDE[esprscc](../includes/esprscc-md.md)]。 签入策略指定和强制执行团队项目，但代码分析运行是配置和本地开发计算机上运行的单个代码项目。 本部分介绍如何指定代码分析签入策略为团队项目以及如何实现托管代码的自定义代码分析策略。  
   

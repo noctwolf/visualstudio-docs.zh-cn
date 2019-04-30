@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408779"
 ---
 # <a name="walkthrough-highlighting-text"></a>演练：突出显示文本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ ms.locfileid: "60076585"
  若要创建应用标记器，必须实现<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 此类是 MEF 组件过程中，因此必须设置正确的属性，以便识别此扩展。  
   
 > [!NOTE]
->  有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 #### <a name="to-create-a-tagger-provider"></a>若要创建标记器提供程序  
   
@@ -408,4 +408,4 @@ ms.locfileid: "60076585"
 4. 将光标放在一个"你好"的出现次数。 每个匹配项应以蓝色突出显示。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

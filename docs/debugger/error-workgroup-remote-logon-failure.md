@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faecd527c0b9b442a163df0bdd749b8183163d03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399235"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>错误：工作组远程登录失败
 此错误显示如下：
@@ -39,7 +39,7 @@ ms.locfileid: "60114635"
 - 如果 Visual Studio 计算机和远程计算机都在工作组上，远程计算机的默认**本地安全策略**设置可能导致此错误。 **本地安全策略**默认设置为**仅来宾-本地用户以来宾身份验证**。 要在此设置上调试，必须在远程计算机上将设置更改为**经典-本地用户以自己的身份验证**。 
 
 > [!NOTE]
->  你必须是管理员才能执行以下任务。
+> 你必须是管理员才能执行以下任务。
 
 ### <a name="to-open-the-local-security-policy-window"></a>打开“本地安全策略”窗口
 

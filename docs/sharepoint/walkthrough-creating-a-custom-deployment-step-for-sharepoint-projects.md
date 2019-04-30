@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430422"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练：创建 SharePoint 项目的自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。
@@ -74,7 +74,7 @@ ms.locfileid: "60040167"
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
     > [!NOTE]
-    >  **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
+    > **扩展性**节点是安装 Visual Studio SDK 的情况下才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
 
 4. 在对话框的顶部，选择 **.NET Framework 4.5** .NET Framework 版本的列表中。
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040167"
 1. 在中**DeploymentStepExtension**项目，打开 UpgradeStep 代码文件，然后将以下代码粘贴到其中。
 
     > [!NOTE]
-    >  添加此代码，此项目将具有某些编译错误，但它们将消失后添加的代码在后续步骤中。
+    > 添加此代码，此项目将具有某些编译错误，但它们将消失后添加的代码在后续步骤中。
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040167"
 6. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在中**源**列表中，选择**当前解决方案中的项目**。
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040167"
 10. 在中**类型**列表中，输入**SharePoint.Commands.v4**。
 
     > [!NOTE]
-    >  此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
+    > 此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。
 
 11. 在中**源**列表中，选择**当前解决方案中的项目**。
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040167"
 6. 下**此 SharePoint 解决方案的信任级别是什么**，选择**部署为场解决方案**选项按钮。
 
    > [!NOTE]
-   >  升级部署步骤不支持沙盒解决方案。
+   > 升级部署步骤不支持沙盒解决方案。
 
 7. 选择**完成**按钮。
 

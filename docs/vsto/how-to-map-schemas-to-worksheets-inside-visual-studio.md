@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428116"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 内部的工作表
   在 Visual Studio 中打开工作表时，可以将 XML 架构映射到工作表。 使用 Visual Studio 外部打开工作簿时使用的相同 Microsoft Office Excel 工具。 Office 项目创建相同的对象是否将架构映射到工作表之前或之后创建 Excel 解决方案。
@@ -30,7 +30,7 @@ ms.locfileid: "60057168"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Excel 解决方案中，不能使用多部分的 XML 架构。
+> Excel 解决方案中，不能使用多部分的 XML 架构。
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>若要将 XML 架构映射到 Visual Studio 中的 Excel 工作表
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057168"
 3. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在中**XML**组中，单击**源**。
 

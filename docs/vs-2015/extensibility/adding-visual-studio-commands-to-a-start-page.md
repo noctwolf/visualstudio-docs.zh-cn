@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429011"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  `x:`别名引用的 XAML 架构，是必需的所有命令的开头。  
+> `x:`别名引用的 XAML 架构，是必需的所有命令的开头。  
   
  可以设置的值`Command`属性设置为从可以访问任何命令**命令**窗口。 有关可用命令的列表，请参阅[Visual Studio 命令别名](../ide/reference/visual-studio-command-aliases.md)。  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  通过使用相同的语法，用于调用其他 Visual Studio 命令，可以从已注册 Vspackage 调用命令。 例如，如果添加了已安装的 VSPackage**主页**命令**视图**菜单中，您可以通过设置调用该命令`CommandParameter`到`View.HomePage`。  
   
 > [!NOTE]
->  如果调用 VSPackage 与关联的命令，在调用命令时，必须加载包。  
+> 如果调用 VSPackage 与关联的命令，在调用命令时，必须加载包。  
   
 ## <a name="adding-commands-from-assemblies"></a>将命令添加从程序集  
  若要从程序集，或访问代码不是与菜单命令相关联的 VSPackage 中调用命令，你必须为程序集创建别名，然后调用该别名。  
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  必须复制您的程序集，然后将其粘贴在...\\ *Visual Studio 安装文件夹*\Common7\IDE\PrivateAssemblies\ 以确保加载之前调用它。  
+> 必须复制您的程序集，然后将其粘贴在...\\ *Visual Studio 安装文件夹*\Common7\IDE\PrivateAssemblies\ 以确保加载之前调用它。  
   
 ## <a name="adding-commands-with-the-dte-object"></a>将命令添加与 DTE 对象  
  您可以从起始页，在标记和代码中访问 DTE 对象。  

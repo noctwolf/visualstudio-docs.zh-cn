@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437606"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>创建和配置类型成员（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60060652"
 |模块（仅限 VB）|方法、属性、字段、事件、构造函数和常量|  
   
 > [!NOTE]
->  通过使用自动实现的属性（仅限 C#），属性的 get 和 set 访问器不需要其他逻辑，因而属性声明更加简洁。 若要显示完全签名，请从“类图”菜单中选择“更改成员格式”->“显示完全签名”。 有关自动实现的属性的详细信息，请参阅[自动实现的属性](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
+> 通过使用自动实现的属性（仅限 C#），属性的 get 和 set 访问器不需要其他逻辑，因而属性声明更加简洁。 若要显示完全签名，请从“类图”菜单中选择“更改成员格式”->“显示完全签名”。 有关自动实现的属性的详细信息，请参阅[自动实现的属性](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
   
 ## <a name="common-tasks"></a>常规任务  
   
@@ -85,10 +85,10 @@ ms.locfileid: "60060652"
 - “类详细信息”窗口  
   
 > [!NOTE]
->  还可使用本节中介绍的过程创建构造函数和析构函数。 请切记构造函数和析构函数是特殊类型的方法，因此这两种函数显示在类图形状的“方法”隔离舱以及“类详细信息”窗口网格的“方法”区域。  
+> 还可使用本节中介绍的过程创建构造函数和析构函数。 请切记构造函数和析构函数是特殊类型的方法，因此这两种函数显示在类图形状的“方法”隔离舱以及“类详细信息”窗口网格的“方法”区域。  
   
 > [!NOTE]
->  可以添加到委托中的唯一实体就是参数。 注意，标题为“使用‘类详细信息’窗口工具栏创建成员”的过程对此操作无效。  
+> 可以添加到委托中的唯一实体就是参数。 注意，标题为“使用‘类详细信息’窗口工具栏创建成员”的过程对此操作无效。  
   
 #### <a name="to-create-a-member-using-class-designer"></a>使用类设计器创建成员  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60060652"
 3. 编辑“类详细信息”窗口网格中各字段的值。 每编辑完一个字段按一下 Enter，或者以其他方式（例如按 Tab）将焦点从已编辑的字段中移开。 你的编辑将立即在代码中反映出来。  
   
     > [!NOTE]
-    >  如果只希望修改成员的名称，你可以使用就地编辑来进行操作。  
+    > 如果只希望修改成员的名称，你可以使用就地编辑来进行操作。  
   
 ## <a name="AddMethodParams"></a>向方法中添加参数  
  使用“类详细信息”窗口向方法中添加参数。 可以将参数配置为必需或可选。 如果为参数的“可选的默认值”属性提供值，将指示设计器以可选参数的形式生成代码。  
@@ -216,10 +216,10 @@ ms.locfileid: "60060652"
   属性窗口显示在类详细信息窗口中显示的属性的相同参数：“名称”、“类型”、“修饰符”、“摘要”以及“可选默认值”属性。 在一个位置更改某个属性将使该属性的值在全局范围内得到更新，包括这个属性值在其他位置的显示。  
   
 > [!NOTE]
->  若要向委托中添加参数，请参阅[创建成员](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
+> 若要向委托中添加参数，请参阅[创建成员](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers)。  
   
 > [!NOTE]
->  尽管析构函数是一种方法，但它不能有参数。  
+> 尽管析构函数是一种方法，但它不能有参数。  
   
 ### <a name="HowToAddParameterToMethod"></a>向方法添加参数  
   
@@ -254,7 +254,7 @@ ms.locfileid: "60060652"
 4. 在“属性”窗口中，为“可选的默认值”属性键入值。 如果设置参数的“可选的默认值”属性，将使该参数变为可选。  
   
     > [!NOTE]
-    >  可选参数必须是参数列表中位于最后面的参数。  
+    > 可选参数必须是参数列表中位于最后面的参数。  
   
 ## <a name="ClassDetailsUsageNotes"></a>“类详细信息”用法说明  
  请注意下面关于使用“类详细信息”窗口的技巧。  

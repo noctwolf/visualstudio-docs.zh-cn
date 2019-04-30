@@ -10,12 +10,12 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50b9ef50e077a4e335b0c4f0718a3c51624e09c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6bc1b57e189902624c13149d0264142ff66af050
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436008"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何：将视图附加到文档数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60080639"
 4. 如果关闭此文档，然后 Visual Studio 调用编辑器工厂的第二次。 在此调用时，`DocDataExisting`参数等于 NULL。 编辑器工厂实现然后可以在自己的编辑器中打开文档数据对象。  
   
     > [!NOTE]
-    >  若要确定是否可以使用现有的文档数据对象，您还可以使用专用接口实现的知识通过强制转换为实际的指针[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]私有实现的类。 例如，所有的标准编辑器实现`IVsPersistFileFormat`，后者又继承<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此，可以调用`QueryInterface`为<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>，并在现有的文档数据对象的类 ID 是否匹配你的实现的类 ID，然后可以使用文档数据对象。  
+    > 若要确定是否可以使用现有的文档数据对象，您还可以使用专用接口实现的知识通过强制转换为实际的指针[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]私有实现的类。 例如，所有的标准编辑器实现`IVsPersistFileFormat`，后者又继承<xref:Microsoft.VisualStudio.OLE.Interop.IPersist>。 因此，可以调用`QueryInterface`为<xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>，并在现有的文档数据对象的类 ID 是否匹配你的实现的类 ID，然后可以使用文档数据对象。  
   
 ## <a name="robust-programming"></a>可靠编程  
  当 Visual Studio 调用的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法，它返回将指针传递到现有的文档数据对象中`punkDocDataExisting`参数，如果存在。 检查文档数据对象中返回`punkDocDataExisting`来确定文档数据对象是否适合于您的编辑器中的此主题中的过程步骤 4 中的说明所述。 如果合适，则编辑器工厂应提供第二个视图的数据中所述[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。 如果没有，则它应显示相应的错误消息。  

@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33c3cabed451f7117a1d4914d0efe5fdcc5b64dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 659bfc8d01183d58bf122118891fff70a44b77dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410411"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-检索一个标志，指定该函数是否包含任何[结构化异常处理 （C/c + +）](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例如，__try /\__except 块)。  
+检索一个标志，指定该函数是否包含任何[结构化异常处理 (C /C++)](http://msdn.microsoft.com/library/dd3b647d-c269-43a8-aab9-ad1458712976) (例如，__try /\__except 块)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,7 +41,7 @@ HRESULT get_hasSEH(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

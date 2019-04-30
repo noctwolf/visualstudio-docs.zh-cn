@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408698"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>什么&#39;s Visual Studio 2015 SDK 中的新增功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ Visual Studio SDK 的 Visual Studio 2015 中，更新，Visual Studio 2015 和 V
  VS SDK 项模板其引用时使用 NuGet 和生成工具，以便获取默认情况下 NuGet 的优点。
 
 > [!NOTE]
->  可以继续使用你的项目使用的安装 VS SDK 引用程序集 (位于下\<Visual Studio 安装位置 > \ VSSDK\VisualStudioIntegration\Common\Assemblies) 和可扩展性的现有项目不需要为升级为使用 NuGet 包。  项目**引用 / 添加引用**对话框仍会继续使用已安装 VS SDK 引用程序集。
+> 可以继续使用你的项目使用的安装 VS SDK 引用程序集 (位于下\<Visual Studio 安装位置 > \ VSSDK\VisualStudioIntegration\Common\Assemblies) 和可扩展性的现有项目不需要为升级为使用 NuGet 包。  项目**引用 / 添加引用**对话框仍会继续使用已安装 VS SDK 引用程序集。
 >
->  如果你想要修改现有项目以使用 NuGet，请参阅[如何：将 VSPackages 迁移到 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有一节介绍了可扩展性项目更新对 NuGet 包。
+> 如果你想要修改现有项目以使用 NuGet，请参阅[如何：将 VSPackages 迁移到 Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)具有一节介绍了可扩展性项目更新对 NuGet 包。
 
 ## <a name="light-bulbs"></a>灯泡
  Roslyn 项目提供一个编写扩展代码的最令人兴奋的新方法。 有关详细信息，请参阅[Roslyn](https://github.com/dotnet/Roslyn)。

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437684"
 ---
 # <a name="view-dom-event-listeners"></a>查看 DOM 事件侦听器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60110474"
  上的列表**事件**是动态的选项卡。 如果在应用运行时添加事件侦听器，则列表中将显示该新事件侦听器。 有关添加和删除事件侦听器的信息，请参阅[解决问题的事件侦听器的提示](#Tips)本主题中。
 
 > [!NOTE]
->  如非 DOM 元素的代码元素的事件侦听器`xhr`，不会显示**事件**选项卡。
+> 如非 DOM 元素的代码元素的事件侦听器`xhr`，不会显示**事件**选项卡。
 
 ## <a name="view-event-listeners-for-dom-elements"></a>查看 DOM 元素的事件侦听器
  本示例展示了一个 Windows Phone 应用商店应用。 Windows 应用商店应用也支持此处描述的 DOM 资源管理器功能。

@@ -20,12 +20,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427260"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "58934032"
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何：与 ClickOnce 应用程序一起安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
 > [!NOTE]
->  若要更改由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，你需要在文本编辑器中编辑应用程序清单，然后重新对应用程序和部署清单进行签名。 有关详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
+> 若要更改由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，你需要在文本编辑器中编辑应用程序清单，然后重新对应用程序和部署清单进行签名。 有关详细信息，请参阅[如何：应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  
   
  如果你使用 Visual Studio 和 ClickOnce 来部署应用程序，则默认选中的引导程序包取决于解决方案中的 .NET Framework 版本。 但如果更改目标 .NET Framework 版本，则必须手动在“系统必备组件”对话框中更新选项。  
   

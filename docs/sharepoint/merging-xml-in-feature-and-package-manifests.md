@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429288"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>在功能和包清单中合并 XML
   通过定义功能和包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 这些打包的清单是从设计器和自定义生成的数据组合[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单模板中输入的用户。 在打包时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]合并自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]语句与设计器提供[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]形成打包[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]清单文件。 类似的元素合并异常更高版本中所示的异常进行合并，以避免[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]验证错误后将文件部署到 SharePoint，并使清单文件较小、 更高效。
@@ -51,11 +51,11 @@ ms.locfileid: "56646299"
 |ElementFile|位置|
 |ElementManifests/ElementManifest|位置|
 |属性/属性|键|
-|CustomUpgradeAction|name|
-|CustomUpgradeActionParameter|name|
+|CustomUpgradeAction|名称|
+|CustomUpgradeActionParameter|名称|
 
 > [!NOTE]
->  因为修改 CustomUpgradeAction 元素的唯一方法是在自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器中，未合并的效果较低。
+> 因为修改 CustomUpgradeAction 元素的唯一方法是在自定义[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]编辑器中，未合并的效果较低。
 
 ## <a name="package-manifest-elements"></a>包清单元素
  下表是可以合并的所有包清单元素和用于匹配其唯一键的列表。

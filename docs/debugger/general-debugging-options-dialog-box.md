@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399384"
 ---
 # <a name="general-debugging-options"></a>常规调试选项
 
@@ -85,7 +85,7 @@ ms.locfileid: "59504414"
 **启用源链接支持**：告知 Visual Studio 调试器下载包含源链接信息的 .pdb文件的源文件。 有关源链接的详细信息，请参阅[源链接规范](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md)。
 
 > [!IMPORTANT]
->  由于源链接将使用 http 或 https 下载文件，因此请确保你信任该 .pdb 文件。
+> 由于源链接将使用 http 或 https 下载文件，因此请确保你信任该 .pdb 文件。
 
 - **对于所有源链接请求，回退到 Git 凭据管理器身份验证**： 若源链接支持已启用且源链接请求未通过身份验证，则 Visual Studio 调用 Git 凭据管理器。
 

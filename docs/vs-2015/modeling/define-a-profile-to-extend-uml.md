@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433134"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定义用于扩展 UML 的配置文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60069363"
   你可以将自己的配置文件分发给你的团队。 每个团队成员都可以安装你的配置文件。 这样一来，团队成员便可以编辑和创建使用其构造型的模型。  
   
 > [!NOTE]
->  如果你在自己所编辑的模型中应用某个配置文件的构造型，然后与他人共享该模型，则他们应在其自己的计算机上安装同一配置文件。 否则，他们将无法看到你使用的构造型。  
+> 如果你在自己所编辑的模型中应用某个配置文件的构造型，然后与他人共享该模型，则他们应在其自己的计算机上安装同一配置文件。 否则，他们将无法看到你使用的构造型。  
   
  一个配置文件通常是更大一部分[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]扩展。 例如，你可以定义用于将模型的某些部件转换为代码的命令。 你可以定义用户必须应用到他们想要转换的包的配置文件。 您将在单个 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 扩展中分发您的新命令和该配置文件。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60069363"
 1. 创建 Visual Studio 扩展项目。  
   
    > [!NOTE]
-   >  必须安装 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此过程。  
+   > 必须安装 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此过程。  
   
    1. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
@@ -194,7 +194,7 @@ ms.locfileid: "60069363"
 2. 在默认配置文件所在目录中添加一个新目录。  
   
     > [!NOTE]
-    >  如果要使用 Visual Studio 扩展项目生成扩展，请使用解决方案资源管理器向该项目添加一个新文件夹。  
+    > 如果要使用 Visual Studio 扩展项目生成扩展，请使用解决方案资源管理器向该项目添加一个新文件夹。  
   
 3. 将新目录的名称更改为本地化区域性所对应的 ISO 短代码，例如保加利亚语对应 `bg`，法语对应 `fr`。 应使用非特定区域性代码（通常为两个字母），而不应使用特定区域性代码（例如 `fr-CA`）。 有关区域性代码的详细信息，请参阅[CultureInfo.GetCultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，提供区域性代码的完整列表。  
   
@@ -211,7 +211,7 @@ ms.locfileid: "60069363"
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  不应在 `extension.vsixmanifest` 中插入对配置文件的本地化版本的引用。 复制的配置文件必须与父文件夹中的配置文件同名。  
+    > 不应在 `extension.vsixmanifest` 中插入对配置文件的本地化版本的引用。 复制的配置文件必须与父文件夹中的配置文件同名。  
   
 5. 编辑配置文件的新副本，将用户可见的所有部分（例如 `displayName` 特性）转换为目标语言。  
   
@@ -247,7 +247,7 @@ ms.locfileid: "60069363"
 ```  
   
 > [!NOTE]
->  称为 `name` 的特性不能包含空格或标点。 在用户界面中显示的特性 `displayName` 应为有效的 XML 字符串。  
+> 称为 `name` 的特性不能包含空格或标点。 在用户界面中显示的特性 `displayName` 应为有效的 XML 字符串。  
   
  每个配置文件都包含三个主要部分。 按照相反顺序，这三个部分如下所示：  
   
@@ -310,7 +310,7 @@ ms.locfileid: "60069363"
  `name` 的 `metaclassMoniker` 特性是一个指向 `<metaClasses>` 部分中某个元素的链接。  
   
 > [!NOTE]
->  名字对象的名称必须以 `/yourProfileName/` 开头，其中 `yourProfileName` 在配置文件（此示例中为“CSharpProfile”）的 `name` 特性中定义。 名字对象以元类部分中的某个项的名称结尾。  
+> 名字对象的名称必须以 `/yourProfileName/` 开头，其中 `yourProfileName` 在配置文件（此示例中为“CSharpProfile”）的 `name` 特性中定义。 名字对象以元类部分中的某个项的名称结尾。  
   
  每个构造型都可以列出零个或多个属性，该构造型将这些属性添加到它所应用到的任何模型元素。 `<propertyType>`包含指向某个中定义的类型的`<propertyTypes>`部分。 该链接必须为用于引用 `<externalTypeMoniker>` 的 `<externalType>,`，或为用于引用 `<enumerationTypeMoniker>` 的 `<enumerationType>`。 再次强调，该链接以你的配置文件的名称开头。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436244"
 ---
 # <a name="code-snippets-schema-reference"></a>代码段架构参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE
  指定代码段引用的程序集的名称。  
   
 > [!NOTE]
->  只有 Visual Basic 代码段支持 `Assembly` 元素。  
+> 只有 Visual Basic 代码段支持 `Assembly` 元素。  
   
  **Assembly** 元素的文本值可以是程序集的友好文本名称（如 `System.dll`），也可以是程序集的强名称（如 `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`）。  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  指定当 Visual Studio 中的文本或对象收到焦点时要执行的函数。  
   
 > [!NOTE]
->  仅 Visual C# 代码片段中支持 `Function` 元素。  
+> 仅 Visual C# 代码片段中支持 `Function` 元素。  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  指定一个用于提供有关代码段的详细信息的 URL。  
   
 > [!NOTE]
->  Visual Studio 不使用 `HelpUrl` 元素。 该元素是 IntelliSense 代码段 XML 架构的一部分，包含该元素的任何代码段将进行验证，但是从不使用该元素的值。  
+> Visual Studio 不使用 `HelpUrl` 元素。 该元素是 IntelliSense 代码段 XML 架构的一部分，包含该元素的任何代码段将进行验证，但是从不使用该元素的值。  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  指定 IntelliSense 代码段使用的导入的命名空间。  
   
 > [!NOTE]
->  只有 Visual Basic 项目支持 `Import` 元素。  
+> 只有 Visual Basic 项目支持 `Import` 元素。  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  对单个 `Import` 元素进行分组。  
   
 > [!NOTE]
->  只有 Visual Basic 项目支持 `Imports` 元素。  
+> 只有 Visual Basic 项目支持 `Imports` 元素。  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  指定使代码段能够正常编译和运行而必须导入的命名空间。 如果尚不存在命名空间，系统会将 `Namespace` 元素中指定的命名空间自动添加到代码起始位置处的 `Imports` 语句中。  
   
 > [!NOTE]
->  只有 Visual Basic 项目支持 `Namespace` 元素。  
+> 只有 Visual Basic 项目支持 `Namespace` 元素。  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  指定有关代码段所需的程序集引用的信息。  
   
 > [!NOTE]
->  只有 Visual Basic 项目支持 `Reference` 元素。  
+> 只有 Visual Basic 项目支持 `Reference` 元素。  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  对单个 `Reference` 元素进行分组。  
   
 > [!NOTE]
->  只有 Visual Basic 项目支持 `References` 元素。  
+> 只有 Visual Basic 项目支持 `References` 元素。  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  指定用于插入代码段的快捷方式文本。 `Shortcut` 元素的文本值只能包含字母数字字符、连字符 (-) 和下划线 (_)。  
   
 > [!CAUTION]
->  C++ 代码段快捷方式不支持 _ 和 - 字符。  
+> C++ 代码段快捷方式不支持 _ 和 - 字符。  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  指定一个 URL，它提供有关所引用程序集的详细信息。  
   
 > [!NOTE]
->  只有 Visual Basic 项目支持 `Url` 元素。  
+> 只有 Visual Basic 项目支持 `Url` 元素。  
   
 ```xml  
 <Url>  

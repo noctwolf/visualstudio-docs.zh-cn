@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429114"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60055634"
  有关选择数据绑定控件中项创建的详细信息**数据源**窗口中，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="customizinglist"></a> 自定义数据类型可绑定控件的列表  
  若要添加或删除控件，从列表中的可用控件中的项**数据源**窗口具有特定的数据类型，请执行以下步骤。  
@@ -66,7 +66,7 @@ ms.locfileid: "60055634"
 5. 在中**关联的控件**框中，选择你想要将适用于所选的数据类型，每个控件或清除你想要从列表中删除任何控件的选择。  
   
     > [!NOTE]
-    >  如果你想要选择该控件不会出现在**关联的控件**框中，必须将控件添加到列表。 有关详细信息，请参阅[将控件添加到数据类型的关联控件列表](#addingcontrols)。  
+    > 如果你想要选择该控件不会出现在**关联的控件**框中，必须将控件添加到列表。 有关详细信息，请参阅[将控件添加到数据类型的关联控件列表](#addingcontrols)。  
   
 6. 单击 **“确定”**。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60055634"
 3. 在中**关联的控件**框中，只需添加到该控件**工具箱**现在应出现。  
   
     > [!NOTE]
-    >  是位于当前解决方案中引用的程序集中的唯一控件可以添加到关联控件的列表。 （控件还必须实现数据绑定特性之一上表中。）若要将数据绑定到在中不可用的自定义控件**数据源**窗口中，将从控件**工具箱**拖动到设计图面上，然后拖动要将绑定到中的项**数据源**窗口拖动到控件。  
+    > 是位于当前解决方案中引用的程序集中的唯一控件可以添加到关联控件的列表。 （控件还必须实现数据绑定特性之一上表中。）若要将数据绑定到在中不可用的自定义控件**数据源**窗口中，将从控件**工具箱**拖动到设计图面上，然后拖动要将绑定到中的项**数据源**窗口拖动到控件。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)

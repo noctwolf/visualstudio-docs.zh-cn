@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426606"
 ---
 # <a name="in-source-suppression-overview"></a>“源代码中禁止显示”概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60057155"
  不应在发布版本使用在源代码中禁止显示以防止意外地传送在源代码中禁止显示元数据。 由于在源代码中禁止显示的处理成本，还通过包括在源代码中禁止显示元数据降低应用程序的性能。  
   
 > [!NOTE]
->  您不需要亲自为手动代码这些属性。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 菜单项不是可用于C++代码。  
+> 您不需要亲自为手动代码这些属性。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。 菜单项不是可用于C++代码。  
   
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 特性  
  右键单击中的代码分析警告时**错误列表**，然后单击**禁止显示消息**即**SuppressMessage**在代码中或为添加属性项目的全局禁止显示文件。  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  禁止显示警告，其中包含命名空间范围内时，它将阻止对自身的命名空间的警告。 它不会取消该警告针对在命名空间内的类型。  
+> 禁止显示警告，其中包含命名空间范围内时，它将阻止对自身的命名空间的警告。 它不会取消该警告针对在命名空间内的类型。  
   
  可以通过指定显式作用域表示任何禁止显示。 在全局级别还必须遵循这些禁止显示。 不能通过修饰类型来指定成员级禁止显示。  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  目标始终包含完全限定的项名称。  
+> 目标始终包含完全限定的项名称。  
   
 ## <a name="global-suppression-file"></a>全局禁止显示文件  
  全局禁止显示文件维护全局级禁止显示或不指定目标的禁止显示的禁止显示。 例如，禁止显示的程序集级别冲突存储在该文件中。 此外，某些 ASP.NET 禁止显示存储在此文件中，是因为项目级别设置不可用于窗体背后的代码。 全局禁止显示被创建并添加到你的项目选择第一次**在项目禁止显示文件**的选项**禁止显示消息**命令，在错误列表窗口。 有关详细信息，请参阅[如何：使用菜单项禁止显示警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  

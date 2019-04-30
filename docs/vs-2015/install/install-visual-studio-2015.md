@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433010"
 ---
 # <a name="install-visual-studio-2015"></a>安装 Visual Studio 2015
 
@@ -53,7 +53,7 @@ ms.locfileid: "60118092"
  自定义组件包括 Visual C++、Visual F#、SQL Server Data Tools、跨平台移动工具和 SDK，以及第三方 SDK 和扩展。 如果在初始安装过程中没有选择这些自定义组件，则可以在之后安装任何自定义组件。
 
 > [!NOTE]
->  自定义安装自动包含默认安装中的组件。
+> 自定义安装自动包含默认安装中的组件。
 
  自定义组件的完整列表如下所示：
 
@@ -70,7 +70,7 @@ ms.locfileid: "60118092"
  可以通过使用安装媒体 (Dvd) 安装 Visual Studio，通过使用 Visual Studio 订阅服务从[My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015)网站，通过下载 web 安装程序从[Visual Studio下载](http://go.microsoft.com/fwlink/?LinkId=517106)网站，或通过创建脱机安装布局 (请参阅[创建脱机安装 Visual Studio 的](../install/create-an-offline-installation-of-visual-studio.md)页面了解更多详细信息)。
 
 > [!IMPORTANT]
->  你必须具有管理员凭据才能安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 但是，在安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之后，在使用时不需要凭据。
+> 你必须具有管理员凭据才能安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 但是，在安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 之后，在使用时不需要凭据。
 
  你的本地管理员帐户必须启用以下权限才能在 Visual Studio 中安装任意内容。
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387484"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045:不要通过引用来传递类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922870"
  尽管比较常见并大量使用正确的应用程序的返回值`out`和`ref`参数需要中间设计和编码技能。 库设计为普通用户不应指望用户掌握了架构师`out`或`ref`参数。
 
 > [!NOTE]
->  当您处理大型结构参数时，复制这些结构所需的其他资源在按值传递时可能会导致性能影响。 在这些情况下，您可以考虑使用`ref`或`out`参数。
+> 当您处理大型结构参数时，复制这些结构所需的其他资源在按值传递时可能会导致性能影响。 在这些情况下，您可以考虑使用`ref`或`out`参数。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复与由值类型导致此规则的冲突，使该方法返回的对象作为其返回值。 如果该方法必须返回多个值，重新设计它返回一个对象，保存值的单个实例。

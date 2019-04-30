@@ -34,12 +34,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438057"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>预生成事件/生成后事件命令行对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,14 +47,14 @@ ms.locfileid: "59658024"
 可以直接在编辑框中键入[“项目设计器”>“生成事件页”(C#)](../../ide/reference/build-events-page-project-designer-csharp.md)的预生成或生成后事件，或者可以从可用宏的列表中选择预生成和生成后宏。  
   
 > [!NOTE]
->  如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
+> 如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
   
 ## <a name="ui-element-list"></a>UI 元素列表  
  命令行编辑框  
  包含为预生成或生成后运行的事件。  
   
 > [!NOTE]
->  在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+> 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
  **宏**  
  展开编辑框，显示要插入到命令行编辑框的宏列表。  

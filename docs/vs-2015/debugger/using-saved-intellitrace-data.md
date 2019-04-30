@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3409cf6f5f86ea4e4649049f3cc1c49fbb1f5c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437766"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "60092703"
     - 在“重现步骤” 下，选择“IntelliTrace”  链接。  
   
 > [!TIP]
->  如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace” 、“显示日志摘要” 。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。  
+> 如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace” 、“显示日志摘要” 。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。  
   
 ## <a name="Understand"></a> 理解 IntelliTrace 日志  
  .iTrace 文件的以下各节中的某些内容只有当你从特定源（如从测试管理器或 SharePoint 应用程序）收集数据时才会显示。  

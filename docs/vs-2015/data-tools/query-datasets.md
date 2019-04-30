@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425376"
 ---
 # <a name="query-datasets"></a>查询数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60054776"
  在一个数据集、 表和列的名称是默认情况下不区分大小写，即，表中一个称为"客户"数据集可以也称为"customers。 这与在多个数据库，包括 SQL 服务器的 SQL Server 中的命名约定相匹配，则默认行为是，不能只是大小写区分的数据元素的名称。  
   
 > [!NOTE]
->  与不同的数据集、 XML 文档不区分大小写，因此在架构中定义的数据元素的名称是区分大小写。 例如，架构协议允许定义名为"客户"和一个名为"客户。"的不同表的表的架构 当包含仅大小写不同的元素的架构用于生成数据集类时，这可能导致名称冲突。  
+> 与不同的数据集、 XML 文档不区分大小写，因此在架构中定义的数据元素的名称是区分大小写。 例如，架构协议允许定义名为"客户"和一个名为"客户。"的不同表的表的架构 当包含仅大小写不同的元素的架构用于生成数据集类时，这可能导致名称冲突。  
   
  区分大小写，但是，可以是数据集内如何解释数据的一个因素。 例如，如果数据集表中的数据进行筛选，搜索条件可能返回不同的结果，具体取决于比较是否区分大小写。 您可以控制是否区分大小写的筛选、 搜索和排序通过设置数据集的<xref:System.Data.DataSet.CaseSensitive%2A>属性。 默认情况下，在数据集中的所有表都继承此属性的值。 (可以通过设置表的重写此属性对于每个表<xref:System.Data.DataTable.CaseSensitive%2A>属性。)  
   

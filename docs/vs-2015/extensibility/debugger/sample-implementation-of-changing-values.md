@@ -11,23 +11,23 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a7f8f8c352db4f2fcd0230f4eac66e8bddb94e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436675"
 ---
 # <a name="sample-implementation-of-changing-values"></a>更改值的实现示例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  显示在每个本地**局部变量**窗口具有[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象与之关联。 这`IDebugProperty2`对象包含的本地名称、 值和类型。 当用户更改局部值时，Visual Studio 会调用[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)更新内存中的本地值。 在此示例中，由表示本地`CFieldProperty`类，该类实现`IDebugProperty2`接口。  
   
 > [!NOTE]
->  有关**Watch**和**快速监视**表达式，由表示值发生更改`CValueProperty`MyCEE 示例中的类。 但是，实现`IDebugProperty2::SetValueAsString`相同，如下所示。  
+> 有关**Watch**和**快速监视**表达式，由表示值发生更改`CValueProperty`MyCEE 示例中的类。 但是，实现`IDebugProperty2::SetValueAsString`相同，如下所示。  
   
  此实现`IDebugProperty2::SetValueAsString`执行下列任务：  
   

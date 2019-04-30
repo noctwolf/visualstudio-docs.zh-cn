@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437448"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：
@@ -36,7 +36,7 @@ ms.locfileid: "56602229"
   通过“打印预览”窗口，设计人员和用户可以在打印窗体或窗体模板页面之前进行预览。
 
 > [!NOTE]
->  “打印预览”窗口中不显示  “外接程序”选项卡。 如果希望“打印预览”窗口中显示一个自定义选项卡，请确保该选项卡的“OfficeId”  属性未设置成“TabAddIns” 。
+> “打印预览”窗口中不显示  “外接程序”选项卡。 如果希望“打印预览”窗口中显示一个自定义选项卡，请确保该选项卡的“OfficeId”  属性未设置成“TabAddIns” 。
 
  必须为希望在其中显示功能区的每个窗口指定功能区类型。
 

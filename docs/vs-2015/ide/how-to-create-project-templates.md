@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 918462bff3c2ac8dc57cb9c2c55a7d901707683c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416924"
 ---
 # <a name="how-to-create-project-templates"></a>如何：创建项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60051539"
 1. 创建项目。  
   
     > [!NOTE]
-    >  如果命名的项目将成为模板的源，则只使用有效的标识符字符。 从采用无效字符命名的项目中导出的模板会导致在将来基于模板的项目中产生编译错误。 有关有效的标识符字符的详细信息，请参阅[已声明的元素名称](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)。  
+    > 如果命名的项目将成为模板的源，则只使用有效的标识符字符。 从采用无效字符命名的项目中导出的模板会导致在将来基于模板的项目中产生编译错误。 有关有效的标识符字符的详细信息，请参阅[已声明的元素名称](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66)。  
   
 2. 编辑项目，直到可以将它导出为一个模板。  
   

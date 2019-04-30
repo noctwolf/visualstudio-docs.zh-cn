@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437959"
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60066699"
 - 支持必要计时规范的 GPU 和驱动程序。  
   
   > [!NOTE]
-  >  有关支持的硬件和驱动程序的详细信息，请参阅本文档末尾的[硬件和驱动程序支持](#hwsupport)。  
+  > 有关支持的硬件和驱动程序的详细信息，请参阅本文档末尾的[硬件和驱动程序支持](#hwsupport)。  
   
   有关图形诊断要求的详细信息，请参阅[入门](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60066699"
     ![选择要使用的诊断工具。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  并非所有性能和诊断工具都可以同时使用。  
+   > 并非所有性能和诊断工具都可以同时使用。  
   
 3. 选择“性能和诊断”中心底部的蓝色“启动”按钮，以便在所选工具下运行应用。  
   
@@ -110,7 +110,7 @@ ms.locfileid: "60066699"
 |**线程 ID**|事件源于的线程 ID。|  
   
 > [!IMPORTANT]
->  Windows 8.1 是事件归属所必需的。 此外，如果你的 GPU 或驱动程序不支持必要的检测功能，则所有事件将都显示为“无归属”。 如果遇到此问题，请确保更新 GPU 驱动程序，然后重试。 有关详细信息，请参阅下面的[硬件和驱动程序支持](#hwsupport)。  
+> Windows 8.1 是事件归属所必需的。 此外，如果你的 GPU 或驱动程序不支持必要的检测功能，则所有事件将都显示为“无归属”。 如果遇到此问题，请确保更新 GPU 驱动程序，然后重试。 有关详细信息，请参阅下面的[硬件和驱动程序支持](#hwsupport)。  
   
 ## <a name="gpu-usage-settings"></a>GPU 使用情况设置  
  你可以将 GPU 使用情况工具配置为推迟收集分析信息，而不在应用启动后立即开始收集信息。 由于分析信息可能非常大，因此当你知道应用性能暂时不会降速时，这将很有用。  
@@ -126,7 +126,7 @@ ms.locfileid: "60066699"
      ![配置 GPU 使用情况收集何时开始](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Direct3D 12 当前不支持推迟分析。  
+> Direct3D 12 当前不支持推迟分析。  
   
  如果使用此设置推迟分析信息的收集，当你在 GPU 使用情况工具下运行应用时，GPU 使用情况工具窗口底部的一个附加链接将变为可用。 若要开始收集分析信息，请选择“开始收集更多详细 GPU 使用情况数据”消息中的“启动”链接。  
   

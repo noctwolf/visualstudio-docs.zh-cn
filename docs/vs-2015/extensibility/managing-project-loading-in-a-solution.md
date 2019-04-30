@@ -10,12 +10,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd99d223d8071b4f0c10052b0b42c421d2360e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a6598e2f1a178845b3ad2017716576439185379e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426450"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
  如果解决方案负载管理器要管理的一般情况下加载的解决方案，它可实现 VSPackage 的一部分。 通过添加，应将包设置为自动加载<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>上的值为 VSPackage <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>。 然后可以在激活解决方案负载管理器<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
   
 > [!NOTE]
->  有关自动加载包的详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
+> 有关自动加载包的详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
   
  因为 Visual Studio 能够识别仅在最后一个解决方案负载管理器来激活，通用的解决方案负载经理应该始终首先检测是否存在现有的负载管理器在激活本身之前。 如果解决方案服务上调用 GetProperty()<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>返回`null`，没有活动解决方案负载管理器。 如果它不返回 null，则检查对象是否与解决方案负载管理器相同。  
   
@@ -114,4 +114,4 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 调用此方法会强制中的项目`guidProjectID`加载完毕，该方法返回。  
   
 > [!NOTE]
->  . 默认情况下仅有需求的项目加载和后台负载优先级已加载，但如果<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>标志中传递给方法，所有项目将都加载的标记来显式加载除外。
+> . 默认情况下仅有需求的项目加载和后台负载优先级已加载，但如果<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>标志中传递给方法，所有项目将都加载的标记来显式加载除外。

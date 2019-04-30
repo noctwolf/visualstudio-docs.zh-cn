@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79ae6aee44f720b868e30c831ee4d6aa61c9611d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0f849088a2c3cc726adc6054aef1ff7a7c1c52f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427410"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>如何：向 Word 文档添加 XMLNode 控件
   **重要**设置 Microsoft Word 有关本主题中的信息是提供的以独占方式适合的权益和使用个人和组织用户位于美国州和其领土的外部或使用，或开发运行的程序，在 2010 年 1 月，Microsoft 中删除的特定功能实现的时间之前已由 Microsoft 许可的 Microsoft Word 产品被与 Microsoft Word 中的自定义 XML。 有关 Microsoft Word 此信息可能不读取或使用的个人或组织在美国或其区域使用，或开发在 Microsoft Word 2010 年 1 月 10 日之后，由 Microsoft 已许可的产品运行的程序中;这些产品不将行为与相同产品许可在该日期之前或购买，美国以外的使用许可。
@@ -28,7 +28,7 @@ ms.locfileid: "60090402"
  当非重复的 XML 架构元素映射到 Microsoft Office Word 文档时，Visual Studio 会自动添加<xref:Microsoft.Office.Tools.Word.XMLNode>到你的文档的控件。 有关映射重复的 XML 架构元素的信息，请参阅[如何：向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)。
 
 > [!NOTE]
->  <xref:Microsoft.Office.Tools.Word.XMLNode>控件不是从可用**工具箱**或**数据源**不能以编程方式创建窗口中，和它。
+> <xref:Microsoft.Office.Tools.Word.XMLNode>控件不是从可用**工具箱**或**数据源**不能以编程方式创建窗口中，和它。
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "60090402"
 1. 在 Visual Studio 设计器中，在功能区中，在文档中，单击**开发人员**选项卡。
 
     > [!NOTE]
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 2. 在中**XML**组中，单击**架构**。
 

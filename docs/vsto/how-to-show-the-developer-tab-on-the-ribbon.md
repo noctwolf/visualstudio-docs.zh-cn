@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418861"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：功能区上显示开发人员选项卡
   访问**开发人员**选项卡上的 Office 应用程序功能区中，您必须将其配置为显示该选项卡，因为它不会显示默认情况下。 例如，如果要向 Word 的文档级自定义项添加一个 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则必须显示该选项卡。
 
 > [!NOTE]
->  本指南仅适用于 Office 2010 或更高版本的应用程序。 如果你想要在 2007 Microsoft Office System 中显示此选项卡，请参阅本主题的以下版本[如何：功能区上显示开发人员选项卡](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> 本指南仅适用于 Office 2010 或更高版本的应用程序。 如果你想要在 2007 Microsoft Office System 中显示此选项卡，请参阅本主题的以下版本[如何：功能区上显示开发人员选项卡](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 )。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  不具有访问权限**开发人员**选项卡。
+> 不具有访问权限**开发人员**选项卡。
 
 ## <a name="to-show-the-developer-tab"></a>显示“开发工具”选项卡
 

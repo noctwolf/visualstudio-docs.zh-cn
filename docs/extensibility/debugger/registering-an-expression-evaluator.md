@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2de018cc757adba814c8705fb0f2e02e96f1c59c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420786"
 ---
 # <a name="register-an-expression-evaluator"></a>注册表达式计算器
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  表达式计算器 (EE) 必须将自身注册为使用 Windows COM 环境和 Visual Studio 的类工厂。 EE 是将设置为 DLL，以便它被注入到调试引擎 (DE) 地址空间或 Visual Studio 的地址空间，具体取决于实体实例化 EE。
 
@@ -101,7 +101,7 @@ namespace EEMC
  EE DLL 实现`DllRegisterServer`函数以将自身注册 COM 环境以及 Visual Studio。
 
 > [!NOTE]
->  可以在文件中查找 MyCEE 注册表的代码示例*dllentry.cpp*，位于下 EnVSDK\MyCPkgs\MyCEE VSIP 安装。
+> 可以在文件中查找 MyCEE 注册表的代码示例*dllentry.cpp*，位于下 EnVSDK\MyCPkgs\MyCEE VSIP 安装。
 
 ### <a name="dll-server-process"></a>DLL 服务器进程
  当注册 EE，DLL 服务器：
@@ -118,7 +118,7 @@ namespace EEMC
     |`metricEngine`|`GUID`秒的处理此 EE 的调试引擎 (DE)|
 
     > [!NOTE]
-    >  `metricLanguage``GUID`标识的名称，但它的语言是`guidLang`参数`SetEEMetric`选择语言。 当编译器生成调试信息文件时，它应编写相应`guidLang`以便 DE 知道要使用哪个 EE。 DE 通常会符号提供程序要求此语言`GUID`，它存储在调试信息文件。
+    > `metricLanguage``GUID`标识的名称，但它的语言是`guidLang`参数`SetEEMetric`选择语言。 当编译器生成调试信息文件时，它应编写相应`guidLang`以便 DE 知道要使用哪个 EE。 DE 通常会符号提供程序要求此语言`GUID`，它存储在调试信息文件。
 
 3. 注册 Visual Studio，通过创建密钥下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*，其中*X.Y*是 Visual Studio 将注册到的版本。
 

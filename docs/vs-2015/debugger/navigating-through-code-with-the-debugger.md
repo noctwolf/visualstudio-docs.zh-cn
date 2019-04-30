@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430968"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用调试器浏览代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60074331"
  若要停止调试时代码 （每个语句） 的每一行上，使用**F11**键盘快捷方式 (或**调试** / **单步执行**菜单上)。  
   
 > [!TIP]
->  执行每行代码，你可以悬停在变量，以查看它们的值，或者可以使用[局部变量](../debugger/autos-and-locals-windows.md)并[监视](../debugger/autos-and-locals-windows.md)windows 以监视更改其值。  
+> 执行每行代码，你可以悬停在变量，以查看它们的值，或者可以使用[局部变量](../debugger/autos-and-locals-windows.md)并[监视](../debugger/autos-and-locals-windows.md)windows 以监视更改其值。  
   
  下面是一些有关的行为的详细信息**单步执行**:  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60074331"
 |**Shift+F11**|**跳出**|**单步跳出**会继续运行代码，当前函数返回 （通过当前函数调试器跳） 时挂起执行。|  
   
 > [!TIP]
->  如果你需要在应用中查找的入口点，请先使用**F10**或**F11**。 检查应用程序状态或尝试找出有关其执行流的详细信息时，这些命令很有帮助。  
+> 如果你需要在应用中查找的入口点，请先使用**F10**或**F11**。 检查应用程序状态或尝试找出有关其执行流的详细信息时，这些命令很有帮助。  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> 运行到特定位置或函数  
  调试代码的首选的方法，这些方法时通常很有用知道具体的代码你想要检查，或至少知道你想要开始调试。  
@@ -140,7 +140,7 @@ ms.locfileid: "60074331"
 - 在反汇编窗口中，将光标放置在你想要执行的下，右键单击程序集指令上并选择**设置下一语句**。  
   
 > [!CAUTION]
->  设置下一条语句将导致程序计数器直接跳到新位置。 使用此命令时要小心：  
+> 设置下一条语句将导致程序计数器直接跳到新位置。 使用此命令时要小心：  
 > 
 > - 不执行旧执行点和新执行点之间的指令。  
 >   - 如果向后移动执行点，则不撤消插入的指令。  
@@ -149,7 +149,7 @@ ms.locfileid: "60074331"
 >   - 当启用“编辑并继续”时，如果你进行了“编辑并继续”无法立即重新映射的编辑，那么 **“设置下一语句”** 将失败。 例如，如果你编辑了 catch 块中的代码，将发生这种情况。 发生这种情况时，你将看到一条错误消息，告诉你该操作不受支持。  
 > 
 > [!NOTE]
->  在托管代码中，在以下情况下不能移动下一条语句：  
+> 在托管代码中，在以下情况下不能移动下一条语句：  
 > 
 > - 下一条语句与当前语句不在同一个方法中。  
 >   - 使用实时调试启动调试。  
@@ -166,7 +166,7 @@ ms.locfileid: "60074331"
  当禁用仅我的代码时，调试器可以单步执行非用户代码，在调试器窗口中显示非用户代码。  
   
 > [!NOTE]
->  设备项目不支持“仅我的代码”。  
+> 设备项目不支持“仅我的代码”。  
   
  **单步执行系统调用**  
   

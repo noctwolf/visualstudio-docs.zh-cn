@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429127"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60082199"
      你应登录你的部署使用验证码证书。 可以使用 Visual Studio、 MageUI.exe 中，或 MakeCert.exe 和 Pvk2Pfx.exe 工具来生成测试证书，或可以从证书颁发机构 (CA) 获取证书。 如果您选择使用受信任的应用程序部署，您还必须执行的一次性安装到所有客户端计算机上的证书。 有关详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
     > [!NOTE]
-    >  也可以登录你的部署使用 CNG 证书，你可以从证书颁发机构获取。  
+    > 也可以登录你的部署使用 CNG 证书，你可以从证书颁发机构获取。  
   
 - 请确保该应用程序不具有与 UAC 信息嵌入到清单。  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60082199"
 2. 在部署目录中刚刚创建，创建一个版本子目录。 如果这是首次部署应用程序，命名为版本子目录**1.0.0.0**。  
   
     > [!NOTE]
-    >  你的部署的版本可以不同于你的应用程序的版本。  
+    > 你的部署的版本可以不同于你的应用程序的版本。  
   
 3. 所有应用程序文件复制到版本子目录，其中包括可执行文件、 程序集、 资源和数据文件。 如有必要，可以创建其他子目录包含其他文件。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "60082199"
     ```  
   
     > [!NOTE]
-    >  请务必包括句点 （.） 后`-FromDirectory`选项，它指示当前目录。 如果不包含点，必须对应用程序文件指定的路径。  
+    > 请务必包括句点 （.） 后`-FromDirectory`选项，它指示当前目录。 如果不包含点，必须对应用程序文件指定的路径。  
   
 6. 使用验证码证书对应用程序清单进行签名。 替换*mycert.pfx*替换为您的证书文件的路径。 替换*passwd*替换为您的证书文件的密码。  
   
@@ -134,7 +134,7 @@ ms.locfileid: "60082199"
 2. 在部署目录中刚刚创建，创建一个版本子目录。 如果这是首次部署应用程序，命名为版本子目录**1.0.0.0**。  
   
     > [!NOTE]
-    >  你的版本是部署的你的应用程序的版本可能不同。  
+    > 你的版本是部署的你的应用程序的版本可能不同。  
   
 3. 所有应用程序文件复制到版本子目录，其中包括可执行文件、 程序集、 资源和数据文件。 如有必要，可以创建其他子目录包含其他文件。  
   

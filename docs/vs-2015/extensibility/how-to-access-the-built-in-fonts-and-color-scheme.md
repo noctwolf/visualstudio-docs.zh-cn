@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430925"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何：访问内置的字体和配色方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
     使用此 GUID 来唯一地标识一个类别<strong>。</strong> IDE 的默认字体和颜色规范，将重新使用此类别。  
   
    > [!NOTE]
-   >  检索使用字体和颜色数据时<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他接口的 Vspackage 使用此 GUID 来引用内置的信息。  
+   > 检索使用字体和颜色数据时<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他接口的 Vspackage 使用此 GUID 来引用内置的信息。  
   
 2. 该类别的名称必须添加到 VSPackage 的资源 (.rc) 文件内的字符串表中，以便可以根据需要在 IDE 中显示时进行本地化。  
   

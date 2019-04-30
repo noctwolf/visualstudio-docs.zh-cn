@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431729"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58932278"
 4. 清除不想为其指定值的任何字段。  
   
    > [!TIP]
-   >  若要查找模块拥有的所有进程，请清除**进程**框中，键入中的模块名称**模块**框。 然后，使用**查找下一个**表示不继续搜索的进程。  
+   > 若要查找模块拥有的所有进程，请清除**进程**框中，键入中的模块名称**模块**框。 然后，使用**查找下一个**表示不继续搜索的进程。  
   
 5. 选择**向上**或**向下**搜索的初始方向。  
   

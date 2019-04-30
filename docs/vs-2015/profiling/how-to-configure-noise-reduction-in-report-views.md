@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8c6974d7606a6c60df785fe2301a695f6775716d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5871473eaba749833714d6382beb487702ebe02d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432772"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报告视图中配置降噪
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60106080"
     1. 选择“启用修整”。 此为默认设置。  
   
         > [!NOTE]
-        >  如果启用了降噪，报表中将显示信息栏。 有关详细信息，请参阅[“调用关系树”视图](../profiling/call-tree-view.md)和[“分配”视图](../profiling/dotnet-memory-allocations-view.md)。  
+        > 如果启用了降噪，报表中将显示信息栏。 有关详细信息，请参阅[“调用关系树”视图](../profiling/call-tree-view.md)和[“分配”视图](../profiling/dotnet-memory-allocations-view.md)。  
   
     2. 使用“值”下拉列表并选择适用的设置，以配置值设置。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60106080"
     1. 选择“启用折叠”。 此为默认设置。  
   
         > [!NOTE]
-        >  如果启用了降噪，报表中将显示信息栏。 有关详细信息，请参阅[“调用关系树”视图](../profiling/call-tree-view.md)和[“分配”视图](../profiling/dotnet-memory-allocations-view.md)。  
+        > 如果启用了降噪，报表中将显示信息栏。 有关详细信息，请参阅[“调用关系树”视图](../profiling/call-tree-view.md)和[“分配”视图](../profiling/dotnet-memory-allocations-view.md)。  
   
     2. 使用“值”下拉列表并选择适用的设置，以配置值设置。  
   

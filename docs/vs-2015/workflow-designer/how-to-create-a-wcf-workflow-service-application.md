@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7cf338139da88fd4d3507ac7f6c7ab71dd881e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433520"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>如何：创建 WCF 工作流服务应用程序
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 工作流服务应用程序是在它们自身与客户端之间跨进程边界传递消息的分布式通信服务。 服务端服务协定的实现是通过 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 中的工作流活动，以类似于 .NET Framework 3.5 中的旧工作流服务的方式基于声明完成的。  
@@ -38,7 +38,7 @@ ms.locfileid: "60054906"
 7. 在中**解决方案**框中，选择此选项创建新的解决方案，然后单击**确定**。  
   
     > [!NOTE]
-    >  如果你想要添加到现有解决方案工作流控制台应用程序，打开该解决方案[!INCLUDE[vs2010](../includes/vs2010-md.md)]，右键单击中的解决方案**解决方案资源管理器**，然后选择**添加**，然后**新建项目...** 若要打开**新的项目**对话框。 按照此过程中的上述步骤继续操作。  
+    > 如果你想要添加到现有解决方案工作流控制台应用程序，打开该解决方案[!INCLUDE[vs2010](../includes/vs2010-md.md)]，右键单击中的解决方案**解决方案资源管理器**，然后选择**添加**，然后**新建项目...** 若要打开**新的项目**对话框。 按照此过程中的上述步骤继续操作。  
   
 8. 该项目模板将创建一个 XAML 格式的服务定义。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 打开设计视图，其中显示一个 <xref:System.Activities.Statements.Sequence> 活动，该活动包含一组 <xref:System.ServiceModel.Activities.Receive> 和 <xref:System.ServiceModel.Activities.SendReply> 活动。  
   

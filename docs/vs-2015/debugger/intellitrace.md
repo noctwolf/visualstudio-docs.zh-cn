@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440150"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60079300"
 |**不支持**|- C++、 其他语言和脚本<br />-Windows 服务、 Silverlight、 Xbox 或[!INCLUDE[winmobile](../includes/winmobile-md.md)]应用|  
   
 > [!NOTE]
->  如果要调试已经在运行的进程，则不能使用 IntelliTrace。 进程开始时，你必须启动 IntelliTrace。  
+> 如果要调试已经在运行的进程，则不能使用 IntelliTrace。 进程开始时，你必须启动 IntelliTrace。  
   
 ## <a name="IntelliTraceVSTraditional"></a>为何使用 IntelliTrace 进行调试？  
  传统或实时调试仅显示应用程序的当前状态以及有关过去事件的有限数据。 要么必须根据应用程序的当前状态推断这些事件，要么必须通过重新运行应用程序以重新生成这些事件。  
@@ -161,7 +161,7 @@ ms.locfileid: "60079300"
 - 指向第一级子对象的指针，而不是它们的值，除非它们为 null  
   
 > [!NOTE]
->  IntelliTrace 仅收集数组中的头 256 个对象和字符串的头 256 个字符。  
+> IntelliTrace 仅收集数组中的头 256 个对象和字符串的头 256 个字符。  
   
  请参阅[配置 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   

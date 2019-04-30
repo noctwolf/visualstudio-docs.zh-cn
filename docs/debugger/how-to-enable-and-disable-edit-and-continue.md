@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388483"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：启用和禁用编辑并继续 (C#，VB， C++)
 
@@ -46,7 +46,7 @@ ms.locfileid: "60070402"
 1. 在中**工具** > **选项**> (或**调试** > **选项**) >**调试** > **常规**，选择**编辑并继续**右窗格中。
 
     > [!NOTE]
-    >  如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[IntelliTrace](../debugger/intellitrace.md)。
+    > 如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[IntelliTrace](../debugger/intellitrace.md)。
 
 1. 有关C++代码，请确保**启用本机编辑并继续**选择，并设置其他选项：
     - **继续应用更改（仅限本机）**

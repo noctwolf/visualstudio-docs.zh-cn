@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9a3dcf6566267cebdfeecb91f57bf139be46de2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 94d120a7656fc9270543ceeb57063124764c4bca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431191"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721:属性名不应与 get 方法冲突
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "59000128"
  不禁止显示此规则发出的警告。
 
 > [!NOTE]
->  如果 Get 方法由实现 IExtenderProvider 接口可能排除此警告。
+> 如果 Get 方法由实现 IExtenderProvider 接口可能排除此警告。
 
 ## <a name="example"></a>示例
  下面的示例包含方法和属性都与此规则冲突。

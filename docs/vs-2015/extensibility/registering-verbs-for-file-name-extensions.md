@@ -10,12 +10,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432548"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58937459"
   只要有可能，注册标准谓词。 最常见的选择是动词 Open。 仅当没有打开的文件和编辑文件之间有明显差异，请使用编辑谓词。 例如，打开.htm 文件将其显示在浏览器中，而编辑.htm 文件启动 HTML 编辑器。 标准谓词已本地化的操作系统的区域设置。  
   
 > [!NOTE]
->  注册标准谓词时, 未设置的默认值为打开的注册表。 默认值包含在菜单上的显示字符串。 操作系统提供标准谓词此字符串。  
+> 注册标准谓词时, 未设置的默认值为打开的注册表。 默认值包含在菜单上的显示字符串。 操作系统提供标准谓词此字符串。  
   
  项目文件应注册为在启动的新实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]当用户在打开该文件。 下面的示例演示了标准谓词注册[!INCLUDE[csprcs](../includes/csprcs-md.md)]项目。  
   
@@ -111,7 +111,7 @@ ms.locfileid: "58937459"
  默认的谓词是当用户双击 Windows 资源管理器中的文件执行的操作。 默认的谓词是指定为默认值为 HKEY_CLASSES_ROOT 动词\\*progid*\Shell 密钥。 如果未不指定任何值，默认谓词是 HKEY_CLASSES_ROOT 中指定的第一个动作\\*progid*\Shell 键列表。  
   
 > [!NOTE]
->  如果你打算更改默认的谓词中的并行部署的扩展插件，请考虑对安装和删除的影响。 在安装过程中会覆盖原始默认值。  
+> 如果你打算更改默认的谓词中的并行部署的扩展插件，请考虑对安装和删除的影响。 在安装过程中会覆盖原始默认值。  
   
 ## <a name="see-also"></a>请参阅  
  [管理并行文件关联](../extensibility/managing-side-by-side-file-associations.md)

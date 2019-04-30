@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009193"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
 如果 Windows 脚本引擎允许添加到脚本中的过程的源代码文本，它实现`IActiveScriptParseProcedure`接口。 对于已解释的脚本语言具有任何独立的创作环境，例如 VBScript 中，这提供了其他机制 (而不`IActiveScriptParse`或`IPersist`*) 添加到命名空间的脚本过程。  

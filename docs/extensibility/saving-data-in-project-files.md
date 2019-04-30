@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53e227b2fdf97c406a86b31cee2a3c450948ee6b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434783"
 ---
 # <a name="save-data-in-project-files"></a>将数据保存在项目文件中
 项目子类型可以保存和检索子类型特定的项目文件中的数据。 托管包框架 (MPF) 提供了两个接口来完成此任务：
@@ -206,7 +206,7 @@ ms.locfileid: "60070330"
     ```
 
 > [!NOTE]
->  本主题中提供的所有代码示例都是在一个更大示例的组成部分[VSSDK 示例](https://aka.ms/vs2015sdksamples)。
+> 本主题中提供的所有代码示例都是在一个更大示例的组成部分[VSSDK 示例](https://aka.ms/vs2015sdksamples)。
 
 ## <a name="see-also"></a>请参阅
 - [将数据保存在 MSBuild 项目文件](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

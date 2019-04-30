@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437763"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>在 Windows 应用商店应用的 Visual Studio 调试会话中控制应用商店应用的执行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ ms.locfileid: "60043292"
  **调试器键盘快捷方式。** Visual Studio 调试器中的导航同时针对鼠标和键盘进行了优化。 本主题中的许多步骤都在括号备注中包含键盘加速器或快捷键。 例如，(键盘：F5) 指示按 F5 键启动或继续调试器的执行。
 
 > [!NOTE]
->  **模块模式**
+> **模块模式**
 >
->  Windows 应用商店应用通常使用 JavaScript *模块模式* 来封装某个页面的数据和函数。 模块模式使用一个自执行的匿名闭包将页面功能与全局命名空间相分离。 在本主题中，我们将该函数称为 *module*
+> Windows 应用商店应用通常使用 JavaScript *模块模式* 来封装某个页面的数据和函数。 模块模式使用一个自执行的匿名闭包将页面功能与全局命名空间相分离。 在本主题中，我们将该函数称为 *module*
 
 ## <a name="in-this-topic"></a>在本主题中
  你可以学习如何：

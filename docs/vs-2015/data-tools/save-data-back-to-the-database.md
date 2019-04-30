@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425338"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ ms.locfileid: "60056804"
 |当前|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  在中`preserveChanges = true`方案中，如果<xref:System.Data.DataSet.RejectChanges%2A>在目标数据集中，记录上调用方法，则它将恢复为原始数据从*源*数据集。 这意味着，如果你尝试更新原始数据源与目标数据集，它可能不能以查找要更新的原始行。 通过使用数据源的已更新的记录填充另一个数据集，然后执行合并来防止并发冲突，可以防止并发冲突。 （另一个用户修改数据源中的记录后填充数据集时出现的并发冲突。）  
+> 在中`preserveChanges = true`方案中，如果<xref:System.Data.DataSet.RejectChanges%2A>在目标数据集中，记录上调用方法，则它将恢复为原始数据从*源*数据集。 这意味着，如果你尝试更新原始数据源与目标数据集，它可能不能以查找要更新的原始行。 通过使用数据源的已更新的记录填充另一个数据集，然后执行合并来防止并发冲突，可以防止并发冲突。 （另一个用户修改数据源中的记录后填充数据集时出现的并发冲突。）  
   
 ## <a name="update-constraints"></a>更新约束  
  若要对现有的数据行进行更改，添加或更新单个列中的数据。 如果数据集包含约束 （如外键或不可以为 null 的约束），就可以记录可以暂时将处于错误状态在更新。 也就是说，它可以是处于错误状态在完成更新一列之后，但之前获取的下一个。  
@@ -110,7 +110,7 @@ ms.locfileid: "60056804"
   完成更新后，可以重新启用约束检查，还将重新启用更新事件并引发它们。  
   
 > [!NOTE]
->  在 Windows 窗体中数据网格中内置的数据绑定体系结构挂起约束检查，直到焦点移出一个行，并不需要显式调用<xref:System.Data.DataRow.BeginEdit%2A>， <xref:System.Data.DataRow.EndEdit%2A>，或<xref:System.Data.DataRow.CancelEdit%2A>方法。  
+> 在 Windows 窗体中数据网格中内置的数据绑定体系结构挂起约束检查，直到焦点移出一个行，并不需要显式调用<xref:System.Data.DataRow.BeginEdit%2A>， <xref:System.Data.DataRow.EndEdit%2A>，或<xref:System.Data.DataRow.CancelEdit%2A>方法。  
   
  约束会自动禁用时<xref:System.Data.DataSet.Merge%2A>数据集上调用方法。 合并完成后，如果无法启用对数据集的任何约束<xref:System.Data.ConstraintException>引发。 在此情况下，<xref:System.Data.DataSet.EnforceConstraints%2A>属性设置为`false,`和重置之前，必须解决所有约束冲突<xref:System.Data.DataSet.EnforceConstraints%2A>属性设置为`true`。  
   
@@ -182,12 +182,12 @@ ms.locfileid: "60056804"
 - 将数据集加载之后。 如果加载数据集通过调用 TableAdapter 的`Fill`方法，则适配器会自动为您提交更改。 但是，如果通过将另一个数据集合并到它加载数据集，然后你必须手动提交所做的更改。  
   
   > [!NOTE]
-  >  可以防止自动提交所做的更改时调用适配器`Fill`方法通过设置`AcceptChangesDuringFill`适配器添加到属性`false`。 如果设置为`false`，则<xref:System.Data.DataRow.RowState%2A>的每个填充过程中插入的行设置为<xref:System.Data.DataRowState>。  
+  > 可以防止自动提交所做的更改时调用适配器`Fill`方法通过设置`AcceptChangesDuringFill`适配器添加到属性`false`。 如果设置为`false`，则<xref:System.Data.DataRow.RowState%2A>的每个填充过程中插入的行设置为<xref:System.Data.DataRowState>。  
   
 - 之后将数据集更改发送到另一个进程，例如 XML Web 服务。  
   
   > [!CAUTION]
-  >  这种方法提交更改，则会删除任何更改信息。 不提交后的更改直到您完成执行的操作所要求应用程序知道在数据集中进行了哪些更改。  
+  > 这种方法提交更改，则会删除任何更改信息。 不提交后的更改直到您完成执行的操作所要求应用程序知道在数据集中进行了哪些更改。  
   
   此方法完成以下任务：  
   
@@ -208,7 +208,7 @@ ms.locfileid: "60056804"
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|提交的数据集的所有表中的所有行的更改。|  
   
 > [!NOTE]
->  如果加载数据集通过调用 TableAdapter 的`Fill`方法，您不必显式接受更改。 默认情况下`Fill`方法调用`AcceptChanges`后完成填充数据表的方法。  
+> 如果加载数据集通过调用 TableAdapter 的`Fill`方法，您不必显式接受更改。 默认情况下`Fill`方法调用`AcceptChanges`后完成填充数据表的方法。  
   
  相关的方法`RejectChanges`，通过复制来撤消更改的影响<xref:System.Data.DataRowVersion>回版本<xref:System.Data.DataRowVersion>的记录的版本。 它还设置<xref:System.Data.DataRow.RowState%2A>的每个记录回到<xref:System.Data.DataRowState>。  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60056804"
 - 数据在后端，通过将数据发送到数据源 — 例如，数据库，并使其能够接受或拒绝数据。 如果您正在使用的数据库，具有复杂的功能来验证数据并提供错误的信息，这可以是一个实用的方法，因为可以验证无论它是从哪里的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致大量的往返到数据源，具体取决于你的应用程序如何由后端引发的验证错误的解决方法。  
   
   > [!IMPORTANT]
-  >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+  > 使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
   在数据集中进行了更改后，可以传输到数据源的更改。 大多数情况下，执行此操作通过调用`Update`TableAdapter （或数据适配器） 的方法。 该方法将遍历每个表中记录数据，确定所需的更新的类型 （更新、 插入或删除） (如果有） 并运行相应命令。  
   
@@ -256,7 +256,7 @@ ms.locfileid: "60056804"
 - 传输的 SQL 语句包含 SET 子句，若要设置已修改的列的新值。  
   
     > [!NOTE]
-    >  如果 TableAdapter 的`UpdateCommand`属性已设置为存储过程的名称，该适配器并不会构造 SQL 语句。 相反，它与中的相应参数调用存储的过程。  
+    > 如果 TableAdapter 的`UpdateCommand`属性已设置为存储过程的名称，该适配器并不会构造 SQL 语句。 相反，它与中的相应参数调用存储的过程。  
   
 ## <a name="passing-parameters"></a>传递参数  
  通常使用参数来传递要在数据库中更新的记录的值。  当 TableAdapter 的`Update`方法运行 UPDATE 语句，它需要通过填充参数值。 获取这些值从`Parameters`相应的数据命令的集合，在这种情况下， `UpdateCommand` TableAdapter 中的对象。  
@@ -268,7 +268,7 @@ ms.locfileid: "60056804"
  在 UPDATE 语句中，您需要指定这两个新的值 （这些会写入到该记录） 以及旧值 （以便可以在数据库中位于该记录）。 因此，有两个形参，用于每个值： 一个用于 SET 子句，另一个则用于 WHERE 子句。 这两个参数更新时，记录中读取数据，但它们获取不同版本的基于参数的列值[SqlParameter.SourceVersion 属性](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)。 SET 子句的参数获取最新版本，并在 WHERE 子句的参数获取的原始版本。  
   
 > [!NOTE]
->  此外可以设置值`Parameters`集合中的数据适配器的事件处理程序中通常所执行的操作的代码中自行<xref:System.Data.DataTable.RowChanging>事件。  
+> 此外可以设置值`Parameters`集合中的数据适配器的事件处理程序中通常所执行的操作的代码中自行<xref:System.Data.DataTable.RowChanging>事件。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)   

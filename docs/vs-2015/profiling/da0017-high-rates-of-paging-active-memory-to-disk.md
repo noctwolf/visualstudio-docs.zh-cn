@@ -1,5 +1,5 @@
 ---
-title: 'DA0017: 活动内存到磁盘的分页速率很高 | Microsoft Docs'
+title: DA0017：以分页方式将活动内存移到磁盘的发生率高 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435862"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：以分页方式将活动内存移到磁盘的发生率高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "54803483"
 ## <a name="rule-description"></a>规则说明  
   
 > [!NOTE]
->  当活动内存的分页级别达到较高级别时，将会触发此信息规则。 当分页级别极高时，将改为触发警告规则 [DA0014: 活动内存到磁盘的分页速率极高](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。  
+> 当活动内存的分页级别达到较高级别时，将会触发此信息规则。 当分页级别极高时，将改为触发警告规则 [DA0014：活动内存到磁盘的分页速率极高](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md)。  
   
  物理内存不足可能引起到磁盘的过度分页。 如果分页操作控制对分页文件所在物理磁盘的使用，它们将减缓对同一磁盘的其他面向应用程序的磁盘操作。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435211"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60054633"
 2. 在搜索查询中，指定要应用于搜索的逻辑或高级搜索运算符（如果有）。 若要搜索所有可用帮助，请勿使用运算符。  
   
     > [!NOTE]
-    >  在“Viewer 选项”对话框中，可以指定附加首选项，比如一次显示的搜索结果最大数量，以及主要区域设置不是英语时是否包含英语内容。  
+    > 在“Viewer 选项”对话框中，可以指定附加首选项，比如一次显示的搜索结果最大数量，以及主要区域设置不是英语时是否包含英语内容。  
   
 3. 选择 Enter 键。  
   

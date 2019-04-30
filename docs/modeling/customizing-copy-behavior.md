@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414815"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在域特定语言 (DSL) 创建使用 Visual Studio 可视化和建模 SDK，可以更改当用户复制并粘贴元素时，会发生什么情况。
@@ -232,7 +232,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  对于复制、 粘贴、 创建和删除对象的 DSL 行为的许多方面均由的实例<xref:Microsoft.VisualStudio.Modeling.ElementOperations>的耦合到关系图。 您可以通过派生您自己的类从修改 DSL 的行为<xref:Microsoft.VisualStudio.Modeling.ElementOperations>并重写<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>关系图类的属性。
 
 > [!TIP]
->  通过使用程序代码自定义模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+> 通过使用程序代码自定义模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
  ![复制操作的序列图](../modeling/media/dslcopyseqdiagram.png)
 

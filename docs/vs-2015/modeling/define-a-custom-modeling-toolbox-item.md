@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433189"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定义自定义建模工具箱项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60105040"
 - 由关联链接的用于表示观察者模式的一对类。  
   
 > [!NOTE]
->  你可以使用此方法来创建元素工具。 也就是说，你可以创建将从工具箱拖到关系图上的工具。 你不能创建连接器工具。  
+> 你可以使用此方法来创建元素工具。 也就是说，你可以创建将从工具箱拖到关系图上的工具。 你不能创建连接器工具。  
   
 ## <a name="DefineTool"></a> 定义自定义建模工具  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60105040"
  可以在 Visual Studio 中编辑位图文件，并在“属性”窗口中将其高度和宽度设置为 16。  
   
 > [!NOTE]
->  如果在单独试用关系图文件后开始使用 .tbxinfo 文件，则可能会发现工具箱同时包含新旧版本的工具箱项。 如果在 .tbxinfo 文件中键入了错误的关系图文件名称，也会发生此问题。 如果发生这种情况，工具箱的快捷菜单上选择**重置工具箱**。 将不会显示自定义工具箱项。 重新启动 Visual Studio，此时将显示正确的自定义项。  
+> 如果在单独试用关系图文件后开始使用 .tbxinfo 文件，则可能会发现工具箱同时包含新旧版本的工具箱项。 如果在 .tbxinfo 文件中键入了错误的关系图文件名称，也会发生此问题。 如果发生这种情况，工具箱的快捷菜单上选择**重置工具箱**。 将不会显示自定义工具箱项。 重新启动 Visual Studio，此时将显示正确的自定义项。  
   
 ## <a name="Extension"></a> 如何将分发在 Visual Studio 扩展中的工具箱项  
  您可以将分发到其他的工具箱项[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]用户通过将它们打包到 Visual Studio 扩展 (VSIX)。 可以将命令、配置文件和其他扩展打包到同一个 VSIX 文件。 有关详细信息，请参阅[部署 Visual Studio 扩展](http://go.microsoft.com/fwlink/?LinkId=160780)。  
@@ -164,7 +164,7 @@ ms.locfileid: "60105040"
     - 在解决方案资源管理器，在该 VSIX 项目的快捷菜单上选择**外**，**现有项**。 在对话框中，将**对象的类型：所有文件**。 找到的文件，它们全部选中，并选择**添加**。  
   
         > [!NOTE]
-        >  在此项目中，你不能在模型编辑器中打开关系图文件。  
+        > 在此项目中，你不能在模型编辑器中打开关系图文件。  
   
 5. 设置刚添加的所有文件的以下属性。 通过在解决方案资源管理器中选择所有文件，可以同时设置这些属性。 请注意不要更改项目中其他文件的属性。  
   
@@ -185,7 +185,7 @@ ms.locfileid: "60105040"
     - “类型”= `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  这并不是下拉列表中的选项。 你必须使用键盘进行输入。  
+        > 这并不是下拉列表中的选项。 你必须使用键盘进行输入。  
   
     - **源** = **在文件系统上的文件**。  
   

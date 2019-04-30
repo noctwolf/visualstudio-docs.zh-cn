@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426852"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多定向概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60108277"
 通过 MSBuild，可将应用程序编译为在若干 .NET Framework 版本的任一版本和若干系统平台的任一平台上运行。 例如，可将同一应用程序编译为既能在 32 位平台的 .NET Framework 2.0 上运行，也能在 64 位平台的 .NET Framework 4.5 上运行。  
   
 > [!IMPORTANT]
->  尽管名称为“多定向”，一个项目一次只能针对一个框架和一个平台。  
+> 尽管名称为“多定向”，一个项目一次只能针对一个框架和一个平台。  
   
  以下是 MSBuild 定向的部分功能：  
   

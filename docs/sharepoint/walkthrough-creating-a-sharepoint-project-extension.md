@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430416"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
@@ -65,7 +65,7 @@ ms.locfileid: "60062348"
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
     > [!NOTE]
-    >  仅当安装 Visual Studio SDK 提供了此节点。 有关详细信息，请参阅本主题前面的先决条件部分。
+    > 仅当安装 Visual Studio SDK 提供了此节点。 有关详细信息，请参阅本主题前面的先决条件部分。
 
 4. 在对话框的顶部，选择 **.NET Framework 4.5**版本的.NET Framework 中，列表中，然后选择**VSIX 项目**模板。
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062348"
 6. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。
 
     > [!NOTE]
-    >  此值对应于`MEFComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 此值对应于`MEFComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
 
 7. 在中**源**列表中，选择**当前解决方案中的项目**选项按钮。
 

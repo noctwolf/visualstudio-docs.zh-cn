@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436281"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具栏中的 GUID 和 ID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58933813"
 本主题枚举包括 Visual Studio 集成的开发环境 (IDE) 中的工具栏的 GUID 和 ID 值，并包含的组。 在 Visual Studio SDK 的一部分安装的.vsct 文件中定义这些值。 有关详细信息，请参阅[IDE-Defined 命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
 
 > [!NOTE]
->  许多发布到 Visual Studio 工具栏未定义的 Visual Studio 中，并且其 GUID 和 ID 值不是公共。 本主题列出了在 Visual Studio SDK.vsct 文件中定义的工具栏。
+> 许多发布到 Visual Studio 工具栏未定义的 Visual Studio 中，并且其 GUID 和 ID 值不是公共。 本主题列出了在 Visual Studio SDK.vsct 文件中定义的工具栏。
 
  有关如何使用.vsct 文件中定义的 IDE 对象的详细信息，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。
 
@@ -110,7 +110,7 @@ ms.locfileid: "58933813"
  工具栏可以如出现在 IDE 中直接或工具窗口中**解决方案资源管理器**。 在.vsct 文件中未定义工具窗口，因为工具窗口工具栏不具有定义的父级。 相反，它们都放在代码中。 下表显示了在 IDE 中，工具窗口显示的工具栏和它们所包含的命令组。
 
 > [!NOTE]
->  工具栏和组使用的 GUID `guidSHLMainMenu`，除外另行指定通过使用 guid: id 语法。 其中 GUID 指定一个工具栏，则它也适用于源自该工具栏的组中。
+> 工具栏和组使用的 GUID `guidSHLMainMenu`，除外另行指定通过使用 guid: id 语法。 其中 GUID 指定一个工具栏，则它也适用于源自该工具栏的组中。
 
 |工具窗口|Toolbar|组|
 |-----------------|-------------|------------|

@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416348"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "60042646"
      随即显示“新建项目”对话框。  
   
     > [!WARNING]
-    >  若要为以前版本的适用于 Visual C++ 的 .NET Framework 生成 C++/CLI 单元测试，则必须使用相应版本的 Visual Studio。 例如，若要面向 .NET Framework 3.5，必须安装 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] 和 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1。  
+    > 若要为以前版本的适用于 Visual C++ 的 .NET Framework 生成 C++/CLI 单元测试，则必须使用相应版本的 Visual Studio。 例如，若要面向 .NET Framework 3.5，必须安装 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] 和 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1。  
   
 2. 在“已安装的模板”下面展开“Visual C++”。 选择“测试”，然后选择“测试项目”模板。  
   

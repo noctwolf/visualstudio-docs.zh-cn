@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 906dd308f4341b89153d7a9acaf79e815422ee16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424908"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113804"
 在数据集中的数据已修改并验证后，可以将更新后的数据发送回 databaseby 调用`Update`TableAdapter 的方法。 `Update`方法更新单个数据表，并运行基于的正确命令 （INSERT、 UPDATE 或 DELETE）<xref:System.Data.DataRow.RowState%2A>的表中每个数据行。 时数据集具有相关表，Visual Studio 生成一个 TableAdapterManager 类，用于执行更新操作。 TableAdapterManager 类可确保按正确的顺序基于数据库中定义的外键约束进行更新。 当您使用数据绑定控件时，数据绑定体系结构将创建调用 tableAdapterManager TableAdapterManager 类的一个成员变量。 有关详细信息，请参阅[分层更新概述](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)。  
   
 > [!NOTE]
->  当您尝试使用数据集的内容更新数据源时，你会遇到错误。若要避免错误，我们建议将调用该适配器的代码放在随时`Update`方法内的`try` / `catch`块。  
+> 当您尝试使用数据集的内容更新数据源时，你会遇到错误。若要避免错误，我们建议将调用该适配器的代码放在随时`Update`方法内的`try` / `catch`块。  
   
  更新数据源的确切步骤可以根据业务需求而有所不同，但包括以下步骤：  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424385"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML 组件图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "59656981"
  有关如何使用组件图设计过程中的详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
 
 > [!NOTE]
->  本主题介绍可以在组件图中使用的元素。 有关详细的有关如何绘制组件图的信息的详细信息请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。 有关如何在一般情况下绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+> 本主题介绍可以在组件图中使用的元素。 有关详细的有关如何绘制组件图的信息的详细信息请参阅[UML 组件图：指导原则](../modeling/uml-component-diagrams-guidelines.md)。 有关如何在一般情况下绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
 
 ## <a name="reading-component-diagrams"></a>读取组件图  
  下表介绍可以在组件图上使用的元素以及它们的主要属性。 元素的属性的完整列表，请参阅[UML 组件图上元素的属性](../modeling/properties-of-elements-on-uml-component-diagrams.md)。  

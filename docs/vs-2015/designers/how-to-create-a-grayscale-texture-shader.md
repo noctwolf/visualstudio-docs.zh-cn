@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7d35347a4b656f9610097bc8dfe03e7c8488c01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b43e7806ebf6d67300fdee7be165c7cd745c4acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431708"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：创建灰度纹理着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54779602"
   
 #### <a name="to-create-a-grayscale-texture-shader"></a>创建灰度纹理着色器  
   
-1. 按[如何：创建基本纹理着色器](../designers/how-to-create-a-basic-texture-shader.md)中所述创建基本纹理着色器。  
+1. 按[如何：创建基本纹理着色器](../designers/how-to-create-a-basic-texture-shader.md)。  
   
 2. 从“最终颜色”节点的“RGB”终端断开“纹理示例”节点的“RGB”终端。 在“选择”模式中，选择“纹理示例”节点的“RGB”终端，然后选择“断开链接”。 这为在下一步中添加的节点腾出空间。  
   
@@ -37,14 +37,14 @@ ms.locfileid: "54779602"
 4. 使用“去除饱和度”节点计算灰度值。 在“选择”模式中，将“纹理样示例”节点的“RGB”终端移到“去除饱和度”节点的“RGB”终端。  
   
    > [!NOTE]
-   >  默认情况下，“去除饱和度”节点完全去除输入颜色的饱和度，并使用标准亮度权重进行灰度转换。 可以通过更改“亮度”属性的值或仅部分去除输入颜色的饱和度来更改“去除饱和度”节点的行为方式。 若要部分去除输入颜色的饱和度，请向“去除饱和度”节点的“百分比”终端提供 [0,1) 范围中的标量值。  
+   > 默认情况下，“去除饱和度”节点完全去除输入颜色的饱和度，并使用标准亮度权重进行灰度转换。 可以通过更改“亮度”属性的值或仅部分去除输入颜色的饱和度来更改“去除饱和度”节点的行为方式。 若要部分去除输入颜色的饱和度，请向“去除饱和度”节点的“百分比”终端提供 [0,1) 范围中的标量值。  
   
 5. 将灰度颜色值连接到最终颜色。 将“去除饱和度”节点的“输出”终端移到“最终颜色”节点的“RGB”终端。  
   
    下图显示了已完成的着色器关系图和应用于立方体的着色器预览。  
   
 > [!NOTE]
->  在此插图中，飞机用作预览形状，并且已指定一个纹理以更好地演示着色器的效果。  
+> 在此插图中，飞机用作预览形状，并且已指定一个纹理以更好地演示着色器的效果。  
   
  ![着色器图及其效果预览](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
   

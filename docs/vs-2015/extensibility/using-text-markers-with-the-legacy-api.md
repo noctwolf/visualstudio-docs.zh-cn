@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430114"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58931683"
  由于与文本标记相关的性能开销，而不要创建多个标记的文本缓冲区。 每个标记是用户编辑缓冲区内容每次更新。  
   
 > [!NOTE]
->  用户可以更改可见标记类型，但不是其形状和样式的颜色。 有关详细信息，请参阅[字体和 Colors，Environment，Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  
+> 用户可以更改可见标记类型，但不是其形状和样式的颜色。 有关详细信息，请参阅[字体和 Colors，Environment，Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  
   
 ## <a name="related-topics"></a>相关主题  
   

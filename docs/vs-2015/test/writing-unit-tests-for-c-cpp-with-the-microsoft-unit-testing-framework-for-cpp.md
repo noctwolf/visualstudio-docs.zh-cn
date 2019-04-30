@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437962"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>用 Microsoft 适用于 C++ 的单元测试框架编写 C/C++ 单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ ms.locfileid: "60109408"
     ```  
   
     > [!TIP]
-    >  建议你不更改已通过的测试。 相反，请添加新测试，更新代码，使测试通过，然后添加其他测试，依此类推。  
+    > 建议你不更改已通过的测试。 相反，请添加新测试，更新代码，使测试通过，然后添加其他测试，依此类推。  
     >   
     >  当用户更改其要求时，请禁用不再正确的测试。 编写新测试，并以相同的增量方式使他们每次运行一个。  
   
@@ -258,7 +258,7 @@ ms.locfileid: "60109408"
      ![RangeTest 未通过](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。  
+    > 验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。  
   
 3. 增强测试代码，以便新测试通过：  
   
@@ -286,7 +286,7 @@ ms.locfileid: "60109408"
      ![单元测试资源管理器 &#45; 已通过范围测试](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。  
+    > 通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。  
   
 ### <a name="debug"></a> 调试失败测试  
   
@@ -361,7 +361,7 @@ ms.locfileid: "60109408"
      ![所有测试均通过](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。  
+> 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。  
   
 ### <a name="refactor"></a> 在不更改测试的情况下重构代码  
   
@@ -378,7 +378,7 @@ ms.locfileid: "60109408"
 2. 生成解决方案并选择“全部运行” ，以确保未引入错误。  
   
     > [!TIP]
-    >  良好的单元测试组可以让你确信在更改代码时不会引入 Bug。  
+    > 良好的单元测试组可以让你确信在更改代码时不会引入 Bug。  
     >   
     >  将重构更改与其他更改分开。  
   

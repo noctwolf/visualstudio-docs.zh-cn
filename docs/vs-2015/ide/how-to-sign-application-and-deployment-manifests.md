@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435181"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60051696"
  有关创建密钥文件的详细信息，请参阅[如何：创建公钥/私钥对](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 仅支持具有 .pfx 扩展名的个人信息交换 (PFX) 密钥文件。 但是，可通过单击项目属性“签名”页上的“从存储中选择”，从当前用户的 Windows 证书存储中选择其他类型的证书。  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 仅支持具有 .pfx 扩展名的个人信息交换 (PFX) 密钥文件。 但是，可通过单击项目属性“签名”页上的“从存储中选择”，从当前用户的 Windows 证书存储中选择其他类型的证书。  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>使用证书对应用程序和部署清单进行签名  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60051696"
      “选择证书”对话框将会出现并显示 Windows 证书存储中的内容。  
   
     > [!TIP]
-    >  如果单击“单击此处查看证书属性”，将会出现“证书详细信息”对话框。 此对话框中包括有关证书的详细信息以及其他选项。 可以单击“证书”查看其他帮助信息。  
+    > 如果单击“单击此处查看证书属性”，将会出现“证书详细信息”对话框。 此对话框中包括有关证书的详细信息以及其他选项。 可以单击“证书”查看其他帮助信息。  
   
 3. 选择要用于对清单进行签名的证书。  
   
@@ -65,7 +65,7 @@ ms.locfileid: "60051696"
 3. 在“选择文件”对话框中，浏览到要使用的密钥文件 (.pfx) 的位置，然后单击“打开”。  
   
     > [!NOTE]
-    >  此选项仅支持具有 .pfx 扩展名的文件。 如果有其他格式的密钥文件或证书，请将其存储在 Windows 证书存储区中并选择前面的过程中描述的证书。 选定证书的用途应该包括代码签名。  
+    > 此选项仅支持具有 .pfx 扩展名的文件。 如果有其他格式的密钥文件或证书，请将其存储在 Windows 证书存储区中并选择前面的过程中描述的证书。 选定证书的用途应该包括代码签名。  
   
      “输入密码以打开文件”对话框随即出现。 （如果 .pfx 文件已经存储在 Windows 证书存储中或没有密码保护，则不会提示输入密码。）  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60051696"
  对于基于 .exe 的应用程序，对 ClickOnce 清单进行签名是可选的。 下面的过程演示如何生成未签名的 ClickOnce 清单。  
   
 > [!IMPORTANT]
->  未签名的清单可以简化应用程序的开发和测试过程。 但是，未签名的清单也会在生产环境中带来重大的安全风险。 仅当 ClickOnce 应用程序在与 Internet 或其他恶意代码源完全隔离的 Intranet 内的计算机上运行时，才应考虑使用未签名的清单。  
+> 未签名的清单可以简化应用程序的开发和测试过程。 但是，未签名的清单也会在生产环境中带来重大的安全风险。 仅当 ClickOnce 应用程序在与 Internet 或其他恶意代码源完全隔离的 Intranet 内的计算机上运行时，才应考虑使用未签名的清单。  
   
  默认情况下，ClickOnce 将自动生成签名的清单，除非专门从生成的哈希中排除一个或多个文件。 换而言之，如果哈希中包含所有文件，则发布应用程序会得到经过签名的清单，即使清除了“为 ClickOnce 清单签名”复选框也是如此。  
   
@@ -104,7 +104,7 @@ ms.locfileid: "60051696"
 2. 打开“应用程序文件”对话框，对于要从生成的哈希中排除的文件，请将“哈希”设置为“排除”。  
   
     > [!NOTE]
-    >  从哈希中排除文件会将 ClickOnce 配置为禁用对清单进行自动签名，这样便无需首先将应用程序与签名的清单一起发布（如上述过程所述）。  
+    > 从哈希中排除文件会将 ClickOnce 配置为禁用对清单进行自动签名，这样便无需首先将应用程序与签名的清单一起发布（如上述过程所述）。  
   
 3. 发布应用程序。  
   

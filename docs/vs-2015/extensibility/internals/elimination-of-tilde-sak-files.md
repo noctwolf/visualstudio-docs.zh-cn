@@ -12,12 +12,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70efef9232bd7e9baf317e59111e59e9f98bf46b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 751acf4e5f56b7b477f05ab71571e0becd566649
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436329"
 ---
 # <a name="elimination-of-sak-files"></a>清除 ~SAK 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "58931547"
  [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateTemporaryFilesInSourceControl"= dword: 00000001  
   
 > [!NOTE]
->  如果此注册表项设置为 dword:00000000，它相当于键不存在，并且 Visual Studio 仍尝试创建临时文件。 但是，如果注册表项设置为 dword: 00000001，Visual Studio 不会尝试创建临时文件。 而是假定的源代码管理插件不支持 MSSCCPRJ。SCC 文件和不支持共享方式签出。  
+> 如果此注册表项设置为 dword:00000000，它相当于键不存在，并且 Visual Studio 仍尝试创建临时文件。 但是，如果注册表项设置为 dword: 00000001，Visual Studio 不会尝试创建临时文件。 而是假定的源代码管理插件不支持 MSSCCPRJ。SCC 文件和不支持共享方式签出。  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

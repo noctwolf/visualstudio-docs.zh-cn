@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423308"
 ---
 # <a name="project-configuration-for-output"></a>用于输出的项目配置
 每一种配置可以支持一组生成输出项，如可执行文件或资源文件的生成进程。 这些输出项专用于用户，并可以放入链接的输出，例如可执行文件 （.exe、.dll、.lib） 和源文件 （.idl、.h 文件） 的相关的类型的组。
@@ -25,7 +25,7 @@ ms.locfileid: "56616451"
  通过实现开发构造`IVsOutputGroup`允许到组根据使用情况的输出的项目。 例如，一个 DLL 可能与其程序数据库 (PDB) 进行分组。
 
 > [!NOTE]
->  PDB 文件包含调试信息并生成.dll 或.exe 时指定生成调试信息选项时创建它。 为仅调试项目配置通常生成.pdb 文件。
+> PDB 文件包含调试信息并生成.dll 或.exe 时指定生成调试信息选项时创建它。 为仅调试项目配置通常生成.pdb 文件。
 
  项目必须返回相同数量的支持，每个配置的组，即使的组中包含的输出数可能会配置配置有所不同。 例如，项目 Matt 的 DLL 可能会在调试配置中，包括 mattd.dll 和 mattd.pdb 但仅在零售配置中包括 matt.dll。
 

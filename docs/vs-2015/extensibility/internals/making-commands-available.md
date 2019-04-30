@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436249"
 ---
 # <a name="making-commands-available"></a>提供可用命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ ms.locfileid: "60071221"
 - 打开上下文`GUID`s 打开和关闭 (通过调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A>方法)。  
   
     > [!CAUTION]
-    >  请确保你的 VSPackage 不因为其他 Vspackage 可能依赖于这些影响任何现有上下文 GUID 的状态。  
+    > 请确保你的 VSPackage 不因为其他 Vspackage 可能依赖于这些影响任何现有上下文 GUID 的状态。  
   
 ## <a name="example"></a>示例  
  VSPackage 命令的下面的示例演示由命令上下文而不加载 VSPackage 的命令的动态可见性。  

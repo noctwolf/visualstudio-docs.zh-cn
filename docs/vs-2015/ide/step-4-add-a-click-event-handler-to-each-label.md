@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 763aa2c73effdb1f7daf86c18e6033f03bef5108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434041"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步骤 4：向每个标签添加一个 Click 事件处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ ms.locfileid: "60051370"
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
   
     > [!NOTE]
-    >  如果你复制和粘贴 `label_Click()` 代码块，而不是手动输入代码，请确保替换现有的 `label_Click()` 代码。 否则，你将得到重复的代码块。  
+    > 如果你复制和粘贴 `label_Click()` 代码块，而不是手动输入代码，请确保替换现有的 `label_Click()` 代码。 否则，你将得到重复的代码块。  
   
     > [!NOTE]
-    >  可能发现事件处理程序顶部的 `object sender` 与[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)教程。 这是因为你将不同的标签控件 Click 事件与一个事件处理程序方法挂钩，因此无论用户选择哪个标签，都调用同一方法。 该事件处理程序方法需要知道选定的标签，以便使用名称“sender”标识标签控件。 该方法的第一行通知程序：它并不是一般对象，而是专门的标签控件，并使用名称“clickedLabel”访问标签的属性和方法。  
+    > 可能发现事件处理程序顶部的 `object sender` 与[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)教程。 这是因为你将不同的标签控件 Click 事件与一个事件处理程序方法挂钩，因此无论用户选择哪个标签，都调用同一方法。 该事件处理程序方法需要知道选定的标签，以便使用名称“sender”标识标签控件。 该方法的第一行通知程序：它并不是一般对象，而是专门的标签控件，并使用名称“clickedLabel”访问标签的属性和方法。  
   
      该方法首先检查是否已将“clickedLabel”成功从对象转换（强制转换）为标签控件。 如果不成功，其值为 `null` (C#) 或 `Nothing` (Visual Basic)，你不需要执行该方法中的其余代码。 接下来，该方法使用标签的“ForeColor”属性检查所选标签的文本颜色。 如果标签的文本颜色为黑色，则表示已选择该图标并且该方法执行完毕。 （这就是 `return` 语句的作用：它通知程序停止执行该方法。）否则，表示图标尚未被选择，因此程序将标签的文本颜色更改为黑色。  
   

@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436126"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何添加用户界面元素
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和
  顶级元素`Symbols`部分[GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 元素将名称映射到 IDE 用于标识包和其组件部分的 Guid。  
   
 > [!NOTE]
->  Visual Studio 包模板会自动生成的 Guid。 此外可以通过单击创建的唯一 GUID**创建 GUID**上**工具**菜单。  
+> Visual Studio 包模板会自动生成的 Guid。 此外可以通过单击创建的唯一 GUID**创建 GUID**上**工具**菜单。  
   
  第一个`GuidSymbol`元素中，"guid [包名称] Pkg"，是包本身的 GUID。 这是 Visual Studio 用来加载此包的 GUID。 通常情况下，它没有子元素。  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434482"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>如何：调试可执行文件不属于 Visual Studio 解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60068699"
 5. 选择执行命令，如启动可执行文件**启动**，从**调试**菜单。  
   
     > [!NOTE]
-    >  并非所有编程语言都支持 EXE 项目。 如果需要使用此功能，请安装 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]。  
+    > 并非所有编程语言都支持 EXE 项目。 如果需要使用此功能，请安装 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]。  
   
      调试没有源代码的可执行文件时，可用的调试功能将受到限制，无论是附加到正在运行的可执行文件还是将可执行文件添加到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中。 如果可执行文件在生成时没有兼容格式的调试信息，则可用功能将进一步受到限制。 如果有源代码，则最佳方法是将源代码导入到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中并在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建可执行文件的调试版本。  
   

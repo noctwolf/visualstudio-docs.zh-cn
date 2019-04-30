@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438923"
 ---
 # <a name="memory-usage"></a>内存使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ ms.locfileid: "54766103"
   还可以在调试器外部使用内存工具。 请参阅 [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
   
 > [!NOTE]
->  **自定义分配器支持** 本机内存探查器的工作原理是在运行时收集 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 分配事件数据。  CRT 和 Windows SDK 中的分配器在源级别上注释，因此可以捕获其分配数据。  如果你正在编写你自己的分配器，则返回一个指向新分配的堆内存的任何函数可用 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)（分配器）进行修饰，如此 myMalloc 示例所示：  
+> **自定义分配器支持** 本机内存探查器的工作原理是在运行时收集 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 分配事件数据。  CRT 和 Windows SDK 中的分配器在源级别上注释，因此可以捕获其分配数据。  如果你正在编写你自己的分配器，则返回一个指向新分配的堆内存的任何函数可用 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)（分配器）进行修饰，如此 myMalloc 示例所示：  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>使用调试器分析内存使用  
   
 > [!NOTE]
->  因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要对本机或混合模式应用启用快照，请启动调试会话（快捷键： **F5**）。 当 **“诊断工具”** 窗口出现时，选择“内存使用率”选项卡，然后选择 **“启用快照”**。  
+> 因为收集内存数据可能会影响本机或混合模式应用的调试性能，所以内存快照在默认情况下处于禁用状态。 若要启用快照本机或混合模式应用程序，请启动调试会话 (快捷键：F5）。 当 **“诊断工具”** 窗口出现时，选择“内存使用率”选项卡，然后选择 **“启用快照”**。  
 >   
->  ![启用快照](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![启用快照](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  停止（快捷键：**Shift + F5**) 并重新启动调试。  
+> 停止（快捷键：**Shift + F5**) 并重新启动调试。  
   
  每当要捕获内存状态时，请在 **“内存使用率”** 摘要工具栏上选择 **“拍摄快照”** 。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "54766103"
   
 > [!TIP]
 > - 若要为进行内存比较而创建基线，请考虑在调试会话开始时拍摄快照。  
->   -   因为在应用经常分配并取消分配内存时捕获感兴趣的操作的内存配置文件十分具有挑战性，所以请在操作开始和结束时设置断点，或逐步执行操作以查找内存变化的确切点。  
+>   - 因为在应用经常分配并取消分配内存时捕获感兴趣的操作的内存配置文件十分具有挑战性，所以请在操作开始和结束时设置断点，或逐步执行操作以查找内存变化的确切点。  
   
 ## <a name="viewing-memory-snapshot-details"></a>查看内存快照详细信息  
  内存使用率摘要表中的行会列出在调试会话期间拍摄的快照。  
@@ -104,13 +104,13 @@ ms.locfileid: "54766103"
   
  **“类型视图”** 显示快照中类型的数量和大小。  
   
--   选择所选类型的实例图标（![“对象类型”列中的实例图标](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")）可显示有关快照中所选类型的对象信息。  
+- 选择所选类型的实例图标（![“对象类型”列中的实例图标](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")）可显示有关快照中所选类型的对象信息。  
   
      **“实例”** 视图显示所选类型的每个实例。 选择实例可显示导致在 **“分配调用堆栈”** 窗格中创建实例的调用堆栈。  
   
      ![实例视图](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   在 **“视图模式”** 列表中选择 **“堆栈视图”** 可查看所选类型的分配堆栈。  
+- 在 **“视图模式”** 列表中选择 **“堆栈视图”** 可查看所选类型的分配堆栈。  
   
      ![堆栈视图](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
@@ -131,7 +131,7 @@ ms.locfileid: "54766103"
 ## <a name="blogs-and-videos"></a>博客和视频  
  [Visual Studio 2015 中的“诊断工具”调试器窗口](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [博客在 Visual Studio 2015 中调试时的内存使用情况工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [博客：在 Visual Studio 2015 中调试时的内存使用情况工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
  [Visual C++ 博客：VS2015 预览版中的本机内存诊断](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   

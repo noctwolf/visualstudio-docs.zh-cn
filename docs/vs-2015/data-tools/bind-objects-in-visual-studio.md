@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439490"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio 中的绑定对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60053112"
 Visual Studio 提供用于为你的应用程序中的数据源使用自定义对象的设计时工具。 当你想要将绑定到 UI 控件的对象中存储数据库中的数据时，建议的方法是使用实体框架生成的类。 DbSet 对象上调用 AcceptChanges 时，实体 Frameworkautogenerates 所有样板更改跟踪代码，这意味着对本地对象的任何更改都会自动保存到数据库。    有关详细信息，请参阅[Entity Framework 文档](https://ef.readthedocs.org/en/latest/)。
 
 > [!TIP]
->  如果你的应用程序已基于数据集，才应考虑到这篇文章中的对象绑定的方法。如果你已熟悉的数据集，并进行处理的数据是表格和不太复杂或过大，则还可以使用这些方法。 更简单的示例，涉及将数据加载到对象直接，通过使用 DataReader 并手动更新用户界面而无需进行数据绑定，请参阅[使用 ADO.NET 创建简单的数据应用](../data-tools/create-a-simple-data-application-by-using-adonet.md)。
+> 如果你的应用程序已基于数据集，才应考虑到这篇文章中的对象绑定的方法。如果你已熟悉的数据集，并进行处理的数据是表格和不太复杂或过大，则还可以使用这些方法。 更简单的示例，涉及将数据加载到对象直接，通过使用 DataReader 并手动更新用户界面而无需进行数据绑定，请参阅[使用 ADO.NET 创建简单的数据应用](../data-tools/create-a-simple-data-application-by-using-adonet.md)。
 
 ## <a name="object-requirements"></a>对象要求
  若要处理的数据设计工具在 Visual Studio 中的自定义对象的唯一要求是，对象所需的至少一个公共属性。
@@ -55,7 +55,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 - 将数据从对象保存到数据库。
 
 > [!NOTE]
->  为了更好地了解，并为此页上的示例提供的上下文，我们建议你完成以下：[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 该演练创建此处所述的对象。
+> 为了更好地了解，并为此页上的示例提供的上下文，我们建议你完成以下：[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 该演练创建此处所述的对象。
 
 ### <a name="loaddata-into-objects"></a>为对象的 Loaddata
  对于此示例中，您将数据加载到您的对象使用 Tableadapter。 默认情况下，使用两种类型的方法，从数据库提取数据并填充数据的表创建 Tableadapter。
@@ -67,7 +67,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
   加载数据使用自定义对象的最简单方法是调用`TableAdapter.GetData`方法中，循环遍历返回的数据表中的行的集合，并填充每个行中的值与每个对象。 您可以创建`GetData`返回填充的数据表的任何添加到 TableAdapter 的查询的方法。
 
 > [!NOTE]
->  Visual Studio 名称 TableAdapter 查询`Fill`和`GetData`默认情况下，但这些名称可以更改为任何有效的方法名称。
+> Visual Studio 名称 TableAdapter 查询`Fill`和`GetData`默认情况下，但这些名称可以更改为任何有效的方法名称。
 
  下面的示例演示如何循环访问在数据表中的行和填充数据的对象：
 
@@ -82,7 +82,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
  中的自动生成的集合<xref:System.Windows.Forms.BindingSource>使用<xref:System.ComponentModel.BindingList%601>其类型的集合。 如果你的应用程序不需要额外的功能，则可以保留在集合内的<xref:System.Windows.Forms.BindingSource>。 有关详细信息，请参阅<xref:System.Windows.Forms.BindingSource.List%2A>属性的<xref:System.Windows.Forms.BindingSource>类。
 
 > [!NOTE]
->  如果你的集合要求没有提供的基实现的功能<xref:System.ComponentModel.BindingList%601>，应创建自定义集合，以便您可以根据需要添加到类。
+> 如果你的集合要求没有提供的基实现的功能<xref:System.ComponentModel.BindingList%601>，应创建自定义集合，以便您可以根据需要添加到类。
 
  下面的代码演示如何创建强类型化的集合类`Order`对象：
 
@@ -97,7 +97,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
  将对象添加到自定义集合的示例，请参阅`LoadOrders`中的方法[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
 
 > [!NOTE]
->  `Add`方法会自动提供为自定义集合时从继承<xref:System.ComponentModel.BindingList%601>。
+> `Add`方法会自动提供为自定义集合时从继承<xref:System.ComponentModel.BindingList%601>。
 
  下面的代码演示如何将对象添加到中的类型化集合<xref:System.Windows.Forms.BindingSource>:
 
@@ -107,7 +107,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
  下面的代码演示如何将对象添加到继承的类型集合<xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
->  在此示例中`Orders`集合是的一个属性`Customer`对象。
+> 在此示例中`Orders`集合是的一个属性`Customer`对象。
 
  [!code-csharp[VbRaddataConnecting#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#6)]
  [!code-vb[VbRaddataConnecting#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#6)]
@@ -116,7 +116,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
  您从集合中移除对象通过调用`Remove`或`RemoveAt`方法的自定义集合类或的<xref:System.Windows.Forms.BindingSource>。
 
 > [!NOTE]
->  `Remove`并`RemoveAt`方法自动提供为自定义集合，当从继承<xref:System.ComponentModel.BindingList%601>。
+> `Remove`并`RemoveAt`方法自动提供为自定义集合，当从继承<xref:System.ComponentModel.BindingList%601>。
 
  下面的代码演示如何查找并删除对象中的类型化集合<xref:System.Windows.Forms.BindingSource>与<xref:System.Windows.Forms.BindingSource.RemoveAt%2A>方法：
 

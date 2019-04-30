@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429991"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1：从源代码管理添加到 / Open
 此源代码管理插件测试区域介绍如何将解决方案或项目受源代码管理和从源代码管理检索它们。
@@ -37,7 +37,7 @@ ms.locfileid: "60083500"
 - 有关[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，添加从源控件也会从可用**文件**，**添加**，**现有项目**; 查找中[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]位置。
 
   > [!NOTE]
-  >  可以在此测试中使用本地文件或本地 IIS （web 服务器） 的路径。
+  > 可以在此测试中使用本地文件或本地 IIS （web 服务器） 的路径。
 
 ## <a name="expected-behavior"></a>预期的行为
 

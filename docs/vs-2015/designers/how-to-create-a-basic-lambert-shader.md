@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414685"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本 Lambert 着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60111241"
    下图显示了已完成的着色器关系图和应用于茶壶体的着色器预览。  
   
 > [!NOTE]
->  为了更好地演示该图着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色。 游戏或应用可使用此参数为每个对象提供唯一的颜色值。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。  
+> 为了更好地演示该图着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色。 游戏或应用可使用此参数为每个对象提供唯一的颜色值。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。  
   
  ![着色器关系图及其效果预览。](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   

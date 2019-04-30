@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a89e06fad1e47e3c2fd7be565acab9d94e3f29d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434430"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>如何：修改三维模型的透视点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60071780"
     还可以使用“属性”窗口中的“透视转换”属性以指定透视点。  
   
    > [!TIP]
-   >  可以通过旋转对象来查看新透视点的效果。 若要旋转它，请使用“旋转”工具或修改“旋转”属性。  
+   > 可以通过旋转对象来查看新透视点的效果。 若要旋转它，请使用“旋转”工具或修改“旋转”属性。  
   
    下面是具有修改后的中心点的模型：  
   

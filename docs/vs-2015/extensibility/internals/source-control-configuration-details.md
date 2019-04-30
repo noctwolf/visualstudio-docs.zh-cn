@@ -10,12 +10,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432065"
 ---
 # <a name="source-control-configuration-details"></a>源代码管理配置详细信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60109460"
  项目或编辑器在保存文件之前，必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 对于项目文件，这些调用会自动完成的解决方案，它知道何时将项目文件保存。 编辑器的负责进行这些调用，除非的编辑器实现`IVsPersistDocData2`使用 helper 函数<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>。 如果你的编辑器实现`IVsPersistDocData2`在这种方式，然后调用`IVsQueryEditQuerySave2::QuerySaveFile`或`IVsQueryEditQuerySave2::QuerySaveFiles`做。  
   
 > [!NOTE]
->  始终提前进行这些调用 — 即，当你的编辑器是能够接收取消一次。  
+> 始终提前进行这些调用 — 即，当你的编辑器是能够接收取消一次。  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>请求中添加、 删除或重命名项目中的文件的权限  
  一个项目可以添加、 重命名或删除文件或目录之前，必须调用适当`IVsTrackProjectDocuments2::OnQuery*`请求权限环境中的方法。 如果授予权限，则项目必须完成此操作，然后调用相应`IVsTrackProjectDocuments2::OnAfter*`方法以通知环境的操作已完成。 项目必须调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>界面，用于所有文件 （例如，特殊文件） 和不只是父文件。 文件调用是必需的但目录调用都是可选的。 如果你的项目目录的信息，则应调用相应<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>方法，但如果它没有此信息，则环境将推断目录信息。  

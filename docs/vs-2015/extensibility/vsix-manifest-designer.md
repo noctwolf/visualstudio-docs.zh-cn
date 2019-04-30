@@ -14,12 +14,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387573"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "58925860"
  若要打开**VSIX 清单设计器**，找到在 source.extension.vsixmanifest 文件**解决方案资源管理器**，并打开该文件。 如果文件不包含有效的 XML，将不会打开清单设计器。  
   
 > [!NOTE]
->  生成包时，Source.extension.vsixmanifest 被输出到 extension.vsixmanifest。  
+> 生成包时，Source.extension.vsixmanifest 被输出到 extension.vsixmanifest。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **VSIX 清单设计器**包含对应于这些架构的顶级元素的四个部分：  

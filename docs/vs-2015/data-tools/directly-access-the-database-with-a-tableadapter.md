@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 924a14cc3938420f32a1a2c25265ebe94e261b15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431964"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>使用 TableAdapter 直接访问数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "60106626"
 - 调用 TableAdapter 的`Insert`方法，在值中的每个列将作为参数传递。 以下过程使用`Region`表中 Northwind databaseas 示例。  
   
     > [!NOTE]
-    >  如果没有可用的实例，实例化想要使用的 TableAdapter。  
+    > 如果没有可用的实例，实例化想要使用的 TableAdapter。  
   
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
@@ -58,7 +58,7 @@ ms.locfileid: "60106626"
 - 调用 TableAdapter 的`Update`方法，在新的和原始值中的每个列将作为参数传递。  
   
     > [!NOTE]
-    >  如果没有可用的实例，实例化想要使用的 TableAdapter。  
+    > 如果没有可用的实例，实例化想要使用的 TableAdapter。  
   
      [!code-csharp[VbRaddataSaving#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#18)]
      [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]  
@@ -68,7 +68,7 @@ ms.locfileid: "60106626"
 - 调用 TableAdapter`Delete`方法，在值中的每个列将作为参数传递的`Delete`方法。 以下过程使用`Region`表中 Northwind databaseas 示例。  
   
     > [!NOTE]
-    >  如果没有可用的实例，实例化想要使用的 TableAdapter。  
+    > 如果没有可用的实例，实例化想要使用的 TableAdapter。  
   
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
      [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]  

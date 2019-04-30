@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406677"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：
@@ -32,7 +32,7 @@ ms.locfileid: "60102180"
 - 从 Web 或网络共享启动应用程序
 
     > [!NOTE]
-    >  除了选择部署策略外，您可能还想选择提供应用程序更新的策略。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+    > 除了选择部署策略外，您可能还想选择提供应用程序更新的策略。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ## <a name="install-from-the-web-or-a-network-share"></a>从 Web 或网络共享安装
  在使用此策略时，应用程序会部署到 Web 服务器或网络文件共享。 当最终用户要安装应用程序时，该用户在网页上单击图标或是在文件共享上双击图标。 然后会在最终用户的计算机上下载、安装并启动应用程序。 项被添加到“开始”菜单和“控制面板”中的“添加/删除程序”中。
@@ -49,7 +49,7 @@ ms.locfileid: "60102180"
  此策略与第一种策略相似，只是应用程序在此策略中的行为类似于 Web 应用程序。 当用户在网页上单击链接（或在文件共享上双击图标）时，应用程序被启动。 当用户关闭应用程序时，应用程序在用户的本地计算机上不再可用；此策略不会向“开始”菜单或“控制面板”中的“添加或删除程序”添加任何内容。
 
 > [!NOTE]
->  从技术角度看，应用程序被下载和安装到本地计算机上的应用程序缓存中，就如同 Web 应用程序被下载到 Web 缓存中一样。 与 Web 缓存一样，最后会从应用程序缓存中清理文件。 但是，从用户的角度来看，应用程序是从 Web 或文件共享运行的。
+> 从技术角度看，应用程序被下载和安装到本地计算机上的应用程序缓存中，就如同 Web 应用程序被下载到 Web 缓存中一样。 与 Web 缓存一样，最后会从应用程序缓存中清理文件。 但是，从用户的角度来看，应用程序是从 Web 或文件共享运行的。
 
  此策略最适用于不常用的应用程序，例如，通常一年才运行一次的雇员福利计算工具。
 

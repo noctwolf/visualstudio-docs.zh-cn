@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422451"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60065138"
  例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户的需求变化时，可以很容易地与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。  
   
 > [!NOTE]
->  一个*模型*是描述应用程序的特定方面的数据源。 它可以是任何形式、任何类型的文件或数据库。 它不必是任何特定形式，例如 UML 模型或域特定语言模型。 典型的模型是表或 XML 文件形式。  
+> 一个*模型*是描述应用程序的特定方面的数据源。 它可以是任何形式、任何类型的文件或数据库。 它不必是任何特定形式，例如 UML 模型或域特定语言模型。 典型的模型是表或 XML 文件形式。  
   
  你可能已熟悉代码生成。 在定义中的资源 **.resx**文件中您[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案、 类和方法的一组自动生成。 通过资源文件编辑资源比必须编辑类和方法要更加容易和可靠。 通过文本模板，可以使用相同的方式从自己设计的源中生成代码。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "60065138"
 6. 在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。  
   
     > [!NOTE]
-    >  如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。  
+    > 如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。  
   
 ### <a name="regenerating-the-code"></a>重新生成代码  
  在下列任何一种情况下，将执行模板，同时生成附属文件：  
@@ -141,9 +141,9 @@ ms.locfileid: "60065138"
   该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。  
   
 > [!TIP]
->  `debug="true"` 使生成的代码图更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。  
+> `debug="true"` 使生成的代码图更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。  
 >   
->  但是，即使不在进行调试，你仍可将该子句留在模板指令中。 这仅会使性能下降一点点。  
+> 但是，即使不在进行调试，你仍可将该子句留在模板指令中。 这仅会使性能下降一点点。  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>生成解决方案的代码或资源  
  可以根据模型生成不同的程序文件。 模型是输入源，如数据库、配置文件、UML 模型、DSL 模型或其他源。 通常从同一模型生成多个程序文件。 为此，可为生成的每个程序文件创建一个模板文件，然后让所有模板读取同一模型。  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  文本模板在它自己的应用域中运行，并通过封送访问服务。 在此情况下，GetCOMService() 比 GetService() 更可靠。  
+> 文本模板在它自己的应用域中运行，并通过封送访问服务。 在此情况下，GetCOMService() 比 GetService() 更可靠。  
   
 ## <a name="Regenerating"></a> 自动重新生成代码  
  通常，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的多个文件都使用一个输入模型生成。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。  

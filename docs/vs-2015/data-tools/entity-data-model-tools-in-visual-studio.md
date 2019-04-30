@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431939"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>在 Visual Studio 中的实体数据模型工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 - 可以使用**模型更新向导**基础数据库发生更改时，更新概念模型、 存储模型和映射。
 
   > [!NOTE]
-  >  从 Visual Studio 2010，开始[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具不支持[!INCLUDE[ss2k](../includes/ss2k-md.md)]。
+  > 从 Visual Studio 2010，开始[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具不支持[!INCLUDE[ss2k](../includes/ss2k-md.md)]。
 
   这些工具生成或修改.edmx 文件。 此文件包含描述概念模型、 存储模型中，以及它们之间的映射的信息。 有关详细信息，请参阅[EDMX](https://msdn.microsoft.com/data/jj650889.aspx)。
 

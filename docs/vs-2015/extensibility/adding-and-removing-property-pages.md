@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440142"
 ---
 # <a name="adding-and-removing-property-pages"></a>添加和删除属性页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ ms.locfileid: "60102791"
     ```  
   
 > [!NOTE]
->  本主题中提供的所有代码示例都是一个更大示例的组成部分[VSSDK 示例](../misc/vssdk-samples.md)。  
+> 本主题中提供的所有代码示例都是一个更大示例的组成部分[VSSDK 示例](../misc/vssdk-samples.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [项目子类型](../extensibility/internals/project-subtypes.md)

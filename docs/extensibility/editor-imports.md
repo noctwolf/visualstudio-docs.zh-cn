@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417345"
 ---
 # <a name="editor-imports"></a>编辑器导入
 您可以导入编辑器服务、 工厂，以及为您的扩展插件提供对核心编辑器的不同类型的访问权限的代理的数。 例如，您可以导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>以提供<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>为给定的内容类型。 （此导航器允许文本缓冲区上执行不同类型的搜索。）
@@ -23,7 +23,7 @@ ms.locfileid: "56715630"
  若要使用的编辑器导入，则其作为导入的字段或属性的类的导出 Managed Extensibility Framework 组件部件。
 
 > [!NOTE]
->  有关托管可扩展性框架的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
+> 有关托管可扩展性框架的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
 
 ## <a name="import-syntax"></a>导入语法
  下面的示例演示如何导入编辑器选项工厂服务。

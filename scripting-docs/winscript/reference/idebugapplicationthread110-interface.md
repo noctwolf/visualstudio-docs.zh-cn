@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a40b1a6f194ef0f335d8c6516b101250b0d980fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 44df7168c241c9a750354e1a603d6c5ba96dabd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440536"
 ---
 # <a name="idebugapplicationthread110-interface"></a>IDebugApplicationThread110 接口
 提供的更多功能[IDebugApplicationThread 接口](../../winscript/reference/idebugapplicationthread-interface.md)接口。  
   
 > [!IMPORTANT]
->  此接口由 PDM v11.0 和更高版本实现。 在 activdbg100.h 中发现。  
+> 此接口由 PDM v11.0 和更高版本实现。 在 activdbg100.h 中发现。  
   
 ## <a name="methods"></a>方法  
  `IDebugApplicationThread110` 接口公开以下方法。  

@@ -10,12 +10,12 @@ ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 565a8a91797c826b6419dc5a8488d7d3baf9cddc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435913"
 ---
 # <a name="how-to-provide-a-service"></a>如何：提供服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
  有关服务的详细信息，请参阅[服务基础知识](../extensibility/internals/service-essentials.md)。  
   
 > [!NOTE]
->  当 VSPackage 即将卸载时，Visual Studio 等待，直到已传递为 VSPackage 提供的服务的所有请求。 它不允许对这些服务的新请求。 不应显式调用<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法撤消时卸载服务。  
+> 当 VSPackage 即将卸载时，Visual Studio 等待，直到已传递为 VSPackage 提供的服务的所有请求。 它不允许对这些服务的新请求。 不应显式调用<xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A>方法撤消时卸载服务。  
   
 #### <a name="implementing-a-service"></a>实现服务  
   
@@ -91,7 +91,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
      此属性注册`SMyService`使用 Visual Studio。  
   
     > [!NOTE]
-    >  若要注册一个服务来替换具有相同名称的另一个服务，请使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 请注意在允许的服务只有一个重写。  
+    > 若要注册一个服务来替换具有相同名称的另一个服务，请使用<xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>。 请注意在允许的服务只有一个重写。  
   
 ### <a name="adding-a-service"></a>添加服务  
   
@@ -119,7 +119,7 @@ VSPackage 可以提供其他的 Vspackage 可以使用的服务。 若要提供�
     ```  
   
     > [!NOTE]
-    >  Visual Studio 可以拒绝的请求提供服务。 它是如果另一个 VSPackage 已经提供了该服务。  
+    > Visual Studio 可以拒绝的请求提供服务。 它是如果另一个 VSPackage 已经提供了该服务。  
   
 3. 现在，您可以获取该服务，使用它的方法。 我们将介绍这在初始值设定项，但您可以获取的服务任意位置你想要使用服务。  
   

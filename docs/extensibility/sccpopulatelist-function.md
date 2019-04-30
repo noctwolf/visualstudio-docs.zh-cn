@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434591"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 此函数可更新特定的源控制命令的文件的列表，并提供所有给定文件的源代码管理状态。
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  该插件将继续调用`pfnPopulate`函数，它将添加或删除文件，直到它完成，然后返回从`SccPopulateList`函数。 然后，IDE 可以显示其列表。 `lpStatus`数组均表示由 IDE 传入的原始列表中的所有文件。 回调函数的使用中的所有这些文件除了要让状态插件的填充。
 
 > [!NOTE]
->  源代码管理插件始终可以选择只是此函数，因为它是离开列表立即返回。 如果插件实现此函数，则可以通过设置表示此`SCC_CAP_POPULATELIST`功能对的第一个调用中的位标志[SccInitialize](../extensibility/sccinitialize-function.md)。 默认情况下，该插件应始终假定要传入的所有项都是文件。 但是，如果 IDE 设置`SCC_PL_DIR`标记中`fOptions`参数中传递的所有项都都视为目录。 插件应在目录中添加属于的所有文件。 IDE 永远不会将传入文件和目录的混合。
+> 源代码管理插件始终可以选择只是此函数，因为它是离开列表立即返回。 如果插件实现此函数，则可以通过设置表示此`SCC_CAP_POPULATELIST`功能对的第一个调用中的位标志[SccInitialize](../extensibility/sccinitialize-function.md)。 默认情况下，该插件应始终假定要传入的所有项都是文件。 但是，如果 IDE 设置`SCC_PL_DIR`标记中`fOptions`参数中传递的所有项都都视为目录。 插件应在目录中添加属于的所有文件。 IDE 永远不会将传入文件和目录的混合。
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

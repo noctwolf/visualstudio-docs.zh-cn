@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418815"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新启用 VSTO 外接程序中已禁用
   Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 当你尝试对 VSTO 外接程序进行调试时，如果应用程序不加载它，则此应用程序可能已硬禁用或软禁用此 VSTO 外接程序。
@@ -53,7 +53,7 @@ ms.locfileid: "60095058"
  当 VSTO 外接程序产生不会导致应用程序意外关闭的错误时，可能会发生软禁用。 例如，如果 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件处理程序正在执行时，某个应用程序引发了未处理异常，则此应用程序可能软禁用 VSTO 外接程序。
 
 > [!NOTE]
->  当重新启用软禁用的 VSTO 外接程序时，应用程序将立即尝试加载该 VSTO 外接程序。 如果最初导致应用程序软禁用 VSTO 外接程序的问题未得到解决，则该应用程序将再次软禁用 VSTO 外接程序。
+> 当重新启用软禁用的 VSTO 外接程序时，应用程序将立即尝试加载该 VSTO 外接程序。 如果最初导致应用程序软禁用 VSTO 外接程序的问题未得到解决，则该应用程序将再次软禁用 VSTO 外接程序。
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>若要重新启用 VSTO 外接程序
 

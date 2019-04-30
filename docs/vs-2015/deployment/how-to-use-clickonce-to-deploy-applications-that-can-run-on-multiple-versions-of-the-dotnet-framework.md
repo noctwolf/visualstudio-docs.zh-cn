@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432927"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095472"
 可以部署应用程序面向.NET Framework 的多个版本的使用 ClickOnce 部署技术。 这将要求您生成并更新应用程序和部署清单。  
   
 > [!NOTE]
->  更改要面向的.NET framework 的多个版本的应用程序之前，应确保应用程序在运行.NET Framework 的多个版本。 版本的公共语言运行时之间的差异[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]与.NET Framework 2.0、.NET Framework 3.0 和.NET Framework 3.5。  
+> 更改要面向的.NET framework 的多个版本的应用程序之前，应确保应用程序在运行.NET Framework 的多个版本。 版本的公共语言运行时之间的差异[!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]与.NET Framework 2.0、.NET Framework 3.0 和.NET Framework 3.5。  
   
  此过程需要执行以下步骤：  
   

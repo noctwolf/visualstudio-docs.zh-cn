@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437458"
 ---
 # <a name="validate-your-uml-model"></a>验证 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60113308"
 - **验证命令。** 若要调用在任何时间验证，请单击**验证 UML 模型**上**体系结构**菜单。  
   
   > [!NOTE]
-  >  仅当安装了验证约束时，才显示该命令。  
+  > 仅当安装了验证约束时，才显示该命令。  
   
 - **在保存模型时。** 可以在保存模型时应用验证约束。 这些约束的目的在于帮助确保不保存你的项目解释为无效的模型。  
   

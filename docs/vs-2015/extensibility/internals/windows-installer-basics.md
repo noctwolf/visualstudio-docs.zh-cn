@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437260"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Windows 安装程序安装和卸载应用程序或用户的计算机上的软件
  两组规则确定通过安装程序的组件的资源的部署。 虽然应强制安装作者的第二个集由 Windows 安装程序本身，维护一个规则集。  
   
 > [!NOTE]
->  仅当你运行.msi 文件的验证，则会发生的 Windows Installer 规则强制执行。 不过，警告将这些规则视为最佳做法。 有关详细信息，请参阅[验证安装数据库](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx)并[包验证](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx)。  
+> 仅当你运行.msi 文件的验证，则会发生的 Windows Installer 规则强制执行。 不过，警告将这些规则视为最佳做法。 有关详细信息，请参阅[验证安装数据库](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx)并[包验证](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx)。  
   
 #### <a name="installer-enforced-rules"></a>安装程序强制实施的规则  
   

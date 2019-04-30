@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431359"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支持多个版本的 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60042135"
      有关详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)以及[组件管理](../extensibility/internals/component-management.md)。
 
     > [!NOTE]
-    >  安装版本的 Visual Studio 还会安装相应版本的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 例如，在同一台计算机上安装 Visual Studio 2010 和 Visual Studio 2012 还会安装版本 4.0 和 4.5 的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]分别。
+    > 安装版本的 Visual Studio 还会安装相应版本的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 例如，在同一台计算机上安装 Visual Studio 2010 和 Visual Studio 2012 还会安装版本 4.0 和 4.5 的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]分别。
 
 ## <a name="in-this-section"></a>本节内容
  [选择之间共享和版本控制的 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)说明了如何解决你的 VSPackage 中的并行问题。

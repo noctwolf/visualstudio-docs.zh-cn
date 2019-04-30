@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 934073e5d266c2ddf645acd7dddcfb13711f92de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437709"
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58934570"
  ![并行任务窗口](../debugger/media/parallel-tasks-window.png "Parallel_Tasks_Window")  
   
 > [!NOTE]
->  在托管代码中，当托管线程处于休眠或联接状态时，状态为 <xref:System.Threading.Tasks.Task>、<xref:System.Threading.Tasks.TaskStatus> 或 <xref:System.Threading.Tasks.TaskStatus> 的 <xref:System.Threading.Tasks.TaskStatus> 不能显示在“任务”窗口中。  
+> 在托管代码中，当托管线程处于休眠或联接状态时，状态为 <xref:System.Threading.Tasks.Task>、<xref:System.Threading.Tasks.TaskStatus> 或 <xref:System.Threading.Tasks.TaskStatus> 的 <xref:System.Threading.Tasks.TaskStatus> 不能显示在“任务”窗口中。  
   
 ## <a name="tasks-column-information"></a>任务列信息  
  “任务”窗口中的列显示了以下信息。  

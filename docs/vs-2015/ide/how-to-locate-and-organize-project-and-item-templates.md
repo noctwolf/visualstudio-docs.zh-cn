@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416720"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60091234"
  “新建项目”和“添加新项”对话框中的类别反映存在于已安装模板位置和自定义模板位置的目录结构。 可以修改这些目录结构，以需要的方式组织模板。  
   
 > [!NOTE]
->  不能在编程语言级别创建新类别。 只能在每种语言中创建新类别。  
+> 不能在编程语言级别创建新类别。 只能在每种语言中创建新类别。  
   
  如果特定语言的已安装模板和自定义模板的目录结构不同（即一个文件夹下具有另一个文件夹下不存在的目录），则“新建项目”对话框中显示的类别集将是所有类别的合并。  
   

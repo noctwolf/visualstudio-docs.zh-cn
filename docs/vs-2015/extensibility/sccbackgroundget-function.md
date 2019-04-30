@@ -12,12 +12,12 @@ ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2462ca84ac2d0b902256c161e4997114489d1697
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 118d8458fd9581a87baea08452d0011d4d66c9a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432476"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ SCCRTN SccBackgroundGet(
  [in、 out]要检索的文件的名称的数组。  
   
 > [!NOTE]
->  名称必须是完全限定的本地文件名。  
+> 名称必须是完全限定的本地文件名。  
   
  dwFlags  
  [in]命令标志 (`SCC_GET_ALL`， `SCC_GET_RECURSIVE`)。  
@@ -58,7 +58,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
 |SCC_E_BACKGROUNDGETINPROGRESS|后台检索已正在的进行 （源代码管理插件应返回这仅在不支持同时执行的批操作）。|  

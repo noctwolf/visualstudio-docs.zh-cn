@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426957"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60068426"
  若要创建解决方案的大部分本主题中示例的源，创建从 DSL**组件模型**解决方案模板。 这是在创建新 DSL 解决方案时显示的标准模板之一。  
   
 > [!NOTE]
->  组件图 DSL 模板与可以在 Visual Studio 中使用的体系结构菜单创建的 UML 组件图无关。 在中**新的项目**对话框框中，展开**其他项目类型 \ 扩展性**，然后单击**域特定语言设计器**。  
+> 组件图 DSL 模板与可以在 Visual Studio 中使用的体系结构菜单创建的 UML 组件图无关。 在中**新的项目**对话框框中，展开**其他项目类型 \ 扩展性**，然后单击**域特定语言设计器**。  
   
  如果你不熟悉此解决方案模板，请按 F5 并进行试验。 特别注意，可通过将端口工具拖动到组件上来创建端口，并可连接端口。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "60068426"
   表示域模型的类。 它派生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。  
   
 > [!NOTE]
->  这与模型的根类不同。  
+> 这与模型的根类不同。  
   
  “复制”和“删除”闭包定义在复制或删除一个元素时应包含哪些其他元素。 可以通过设置控制此行为**传播复制**并**传播删除**两侧上的每个关系的角色的属性。 如果想要动态确定这些值，则可编写代码来重写“闭包”类的方法。 有关详细信息，请参阅[操作说明：编程复制和粘贴行为-重定向](../misc/how-to-program-copy-and-paste-behavior-redirect.md)。  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  若要自定义此文件，请编辑 `.tt` 文件。  
   
 > [!WARNING]
->  如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器，选择文件，请确保**包含在 VSIX**属性是`True`。  
+> 如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器，选择文件，请确保**包含在 VSIX**属性是`True`。  
   
  此文件控制将 DSL 打包到 Visual Studio 集成扩展 (VSIX) 中的方式。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   

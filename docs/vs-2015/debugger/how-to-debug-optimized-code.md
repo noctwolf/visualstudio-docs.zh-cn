@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435713"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 > [!NOTE]
->  [/Zo（增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译器选项（在 Visual Studio Update 3 中引入）为优化代码生成更丰富的调试信息（未使用“/Od”编译器选项生成的项目。 请参阅 [/O 选项（优化代码）](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)）。 这包括对调试本地变量和内联函数的改进的支持。  
+> [/Zo（增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译器选项（在 Visual Studio Update 3 中引入）为优化代码生成更丰富的调试信息（未使用“/Od”编译器选项生成的项目。 请参阅 [/O 选项（优化代码）](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)）。 这包括对调试本地变量和内联函数的改进的支持。  
 >   
->  “/Zo”编译器选项时，禁用[编辑并继续](../debugger/edit-and-continue-visual-csharp.md)。  
+> “/Zo”编译器选项时，禁用[编辑并继续](../debugger/edit-and-continue-visual-csharp.md)。  
   
  当编译器优化代码时，它将重新定位并重组指令， 这会得到更高效的编译的代码。 由于这种调整，调试器并不总能确定与一组指令对应的源代码。  
   
@@ -77,10 +77,10 @@ ms.locfileid: "58936172"
   
 8. 如果为“`Custom`”选择了“`Optimization`”选项，现在便可为属性列表中显示的其他任何属性设置选项。  
   
-9. 选择配置属性、 C/c + + 项目属性页中，命令行节点，并添加`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`到**其他选项**文本框。  
+9. 选择配置属性 C /C++，命令行节点的项目属性页中，并添加`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`到**其他选项**文本框。  
   
     > [!WARNING]
-    >  `/Zo` 需要 Visual Studio 2013 Update 3 或更高版本。  
+    > `/Zo` 需要 Visual Studio 2013 Update 3 或更高版本。  
     >   
     >  添加 `/Zo` 将禁用[编辑并继续](../debugger/edit-and-continue-visual-csharp.md)。  
   

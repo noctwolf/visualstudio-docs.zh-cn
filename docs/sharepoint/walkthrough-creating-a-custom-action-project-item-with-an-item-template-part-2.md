@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430470"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板，第 2 部分中创建自定义操作项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板向项目添加项目项的新实例。 可以使用你收集的信息来初始化项目项。
@@ -34,7 +34,7 @@ ms.locfileid: "60081133"
 - 调试和测试该向导。
 
 > [!NOTE]
->  您可以下载的示例[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，演示如何创建自定义工作流活动。
+> 您可以下载的示例[Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) ，演示如何创建自定义工作流活动。
 
 ## <a name="prerequisites"></a>系统必备
  若要执行本演练中，您必须首先创建 CustomActionProjectItem 解决方案完成[演练：使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。
@@ -125,12 +125,12 @@ ms.locfileid: "60081133"
 2. 在 XAML 视图中，使用以下 XAML 替换当前的 XAML。 XAML 定义包含一个标题，用于指定自定义操作和在窗口底部的导航按钮的行为控件的 UI。
 
     > [!NOTE]
-    >  添加此代码后，项目将具有某些编译错误。 在后续步骤中添加代码时，这些错误将消失。
+    > 添加此代码后，项目将具有某些编译错误。 在后续步骤中添加代码时，这些错误将消失。
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  在此 XAML 中创建的窗口派生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基类。 当向 Visual Studio 添加自定义的 WPF 对话框中时，我们建议从为具有其他对话框在 Visual Studio 中使用一致样式并避免问题可能会出现与模式对话框的此类派生您的对话框。 有关详细信息，请参阅[创建和管理模式对话框](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
+    > 在此 XAML 中创建的窗口派生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基类。 当向 Visual Studio 添加自定义的 WPF 对话框中时，我们建议从为具有其他对话框在 Visual Studio 中使用一致样式并避免问题可能会出现与模式对话框的此类派生您的对话框。 有关详细信息，请参阅[创建和管理模式对话框](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。
 
 3. 如果要开发 Visual Basic 项目，删除`ItemTemplateWizard`从命名空间`WizardWindow`中的类名`x:Class`属性的`Window`元素。 此元素是在 XAML 中的第一行中。 完成后，第一行应类似于以下代码：
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081133"
      打包和部署到 SharePoint 站点指定的自定义操作**站点 URL**属性的项目，并在 web 浏览器将打开到此站点的默认页。
 
     > [!NOTE]
-    >  如果**脚本调试被禁用**出现对话框，请选择**是**按钮。
+    > 如果**脚本调试被禁用**出现对话框，请选择**是**按钮。
 
 2. 在 SharePoint 站点列表区域中，选择**任务**链接。
 

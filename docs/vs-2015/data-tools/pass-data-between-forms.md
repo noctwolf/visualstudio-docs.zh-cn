@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425501"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107068"
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用的客户和订单来自 Northwind 的表，一个窗体，用户可以选择一个客户，并第二个窗体显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建一种方法。  
   
 > [!NOTE]
->  本演练仅演示在窗体之间传递数据的一种方法。 用于将数据传递到窗体，包括创建第二个构造函数来接收数据，其他选项，或创建一个公共属性可以用来设置数据从第一个窗体。  
+> 本演练仅演示在窗体之间传递数据的一种方法。 用于将数据传递到窗体，包括创建第二个构造函数来接收数据，其他选项，或创建一个公共属性可以用来设置数据从第一个窗体。  
   
  本演练涉及以下任务：  
   
@@ -142,7 +142,7 @@ ms.locfileid: "60107068"
     ```  
   
     > [!NOTE]
-    >  验证数据库的参数语法是否正确。 例如，在 Microsoft Access 中，WHERE 子句应当如下：`WHERE CustomerID = ?`。  
+    > 验证数据库的参数语法是否正确。 例如，在 Microsoft Access 中，WHERE 子句应当如下：`WHERE CustomerID = ?`。  
   
 6. 单击 **“下一步”**。  
   

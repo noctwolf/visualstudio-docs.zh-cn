@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423827"
 ---
 # <a name="project-configuration-for-building"></a>用于生成的项目配置
 解决方案配置对话框中由托管给定解决方案的解决方案配置的列表。
@@ -26,7 +26,7 @@ ms.locfileid: "56636771"
  如果用户创建新的解决方案配置名为 MyConfig2，Project1 其调试配置的解决方案配置为默认情况下绑定。 Project2 还将绑定其 MyConfig2 配置到解决方案配置默认情况下。
 
 > [!NOTE]
->  绑定是不区分大小写。
+> 绑定是不区分大小写。
 
  当用户选择**多个所选内容**项在配置下拉列表中，环境将显示一个对话框，提供了可用的配置的列表。
 
@@ -43,7 +43,7 @@ ms.locfileid: "56636771"
  项目依赖项确定在其中生成项目的顺序。 若要查看解决方案中的项目将生成，并使用依赖关系选项卡来修改生成顺序的确切顺序，请使用对话框的生成顺序选项卡。
 
 > [!NOTE]
->  已添加的环境，因为指定的显式依赖关系列表中的项目已选中其复选框，但显示为灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>接口，并且不能更改。 例如，添加项目引用从[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]到另一个项目的项目会自动添加仅可以通过删除引用删除的生成依赖项。 不能选择的项目的复选框清晰，并显示为灰色，因为执行此操作会在创建依赖关系循环 （例如，Project1 是依赖于 Project2，和将依赖于 Project1 Project2），这会停止生成。
+> 已添加的环境，因为指定的显式依赖关系列表中的项目已选中其复选框，但显示为灰色<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>接口，并且不能更改。 例如，添加项目引用从[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]到另一个项目的项目会自动添加仅可以通过删除引用删除的生成依赖项。 不能选择的项目的复选框清晰，并显示为灰色，因为执行此操作会在创建依赖关系循环 （例如，Project1 是依赖于 Project2，和将依赖于 Project1 Project2），这会停止生成。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 生成过程包括典型的编译和链接操作调用的单个生成命令。 也可以支持两个其他生成过程： 从之前的版本和最新检查以确定是否已更改配置中的输出项中删除所有输出项的清理操作。
 

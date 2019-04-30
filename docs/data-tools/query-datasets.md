@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402744"
 ---
 # <a name="query-datasets"></a>查询数据集
 若要搜索在数据集中的特定记录，请使用`FindBy`方法在 DataTable，编写自己的 foreach 语句循环访问表的行集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
@@ -25,7 +25,7 @@ ms.locfileid: "60050668"
 在一个数据集、 表和列的名称是默认情况下不区分大小写，即，表中一个称为"客户"数据集可以也称为"customers。 此匹配在多个数据库，包括 SQL Server 中的命名约定。 在 SQL Server 中，默认行为是，不能只是大小写区分的数据元素的名称。
 
 > [!NOTE]
->  与不同的数据集、 XML 文档不区分大小写，因此在架构中定义的数据元素的名称是区分大小写。 例如，架构协议允许定义名为"客户"和一个名为"客户。"的不同表的表的架构 当包含仅大小写不同的元素的架构用于生成数据集类时，这可能导致名称冲突。
+> 与不同的数据集、 XML 文档不区分大小写，因此在架构中定义的数据元素的名称是区分大小写。 例如，架构协议允许定义名为"客户"和一个名为"客户。"的不同表的表的架构 当包含仅大小写不同的元素的架构用于生成数据集类时，这可能导致名称冲突。
 
 区分大小写，但是，可以是数据集内如何解释数据的一个因素。 例如，如果数据集表中的数据进行筛选，搜索条件可能返回不同的结果，具体取决于比较是否区分大小写。 您可以控制是否区分大小写的筛选、 搜索和排序通过设置数据集的<xref:System.Data.DataSet.CaseSensitive%2A>属性。 默认情况下，在数据集中的所有表都继承此属性的值。 (可以通过设置表的重写此属性对于每个表<xref:System.Data.DataTable.CaseSensitive%2A>属性。)
 
@@ -68,7 +68,7 @@ ms.locfileid: "60050668"
 此页提供了示例使用类型化数据集。 有关在非类型化数据集中的关系中导航的信息，请参阅[导航 Datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations)。
 
 > [!NOTE]
->  如果您正在使用 Windows 窗体应用程序和使用数据绑定功能显示数据，设计器生成的表单可能会提供足够的功能为应用程序。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具体而言，请参阅[中的数据集的关系](relationships-in-datasets.md)。
+> 如果您正在使用 Windows 窗体应用程序和使用数据绑定功能显示数据，设计器生成的表单可能会提供足够的功能为应用程序。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具体而言，请参阅[中的数据集的关系](relationships-in-datasets.md)。
 
 下面的代码示例演示如何导航向上和向下中类型化数据集的关系。 代码示例使用类型化<xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) 和生成的 FindBy*PrimaryKey* (`FindByCustomerID`) 方法来查找所需的行并返回相关的记录。 示例编译并正常运行，仅在必须：
 

@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439801"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  若要将内容类型与文件扩展名相关联，请使用<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>。  
   
 > [!NOTE]
->  在 Visual Studio 中，文件扩展名注册使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>的语言服务包。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>将 MEF 内容类型与已在这种方式中注册的文件扩展名相关联。  
+> 在 Visual Studio 中，文件扩展名注册使用<xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>的语言服务包。 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>将 MEF 内容类型与已在这种方式中注册的文件扩展名相关联。  
   
  若要导出到内容类型定义的文件扩展名，必须包含以下属性：  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 使用修饰与相关联。  
   
   > [!NOTE]
-  >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+  > 有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 与可展开或折叠大纲显示中的区域相关联。  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  若要将此格式定义应用于一个标记，引用类 （而不是显示名称） 的名称属性中设置的名称。  
   
 > [!NOTE]
->  有关的示例<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，请参阅中的 HighlightWordFormatDefinition 类[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+> 有关的示例<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>，请参阅中的 HighlightWordFormatDefinition 类[演练：突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
 ## <a name="extending-adornments"></a>扩展修饰  
  修饰定义可添加到文本视图中显示的文本或文本视图自身中的视觉效果。 可以为任何类型的定义您自己修饰<xref:System.Windows.UIElement>。  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已弃用的<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已弃用的<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>。  
   
  此外，必须实现相同类型的提供的程序：  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已弃用的<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已弃用的<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>。  
   
  必须导出提供程序和以下属性：  
   
@@ -551,7 +551,7 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  有关实现 IntelliSense 源的详细信息，请参阅以下演练：  
   
- [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
  [演练：显示签名帮助](../extensibility/walkthrough-displaying-signature-help.md)  
   
@@ -578,4 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  有关使用 IntelliSense 控制器的详细信息，请参阅以下演练：  
   
- [演练：显示快速信息工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

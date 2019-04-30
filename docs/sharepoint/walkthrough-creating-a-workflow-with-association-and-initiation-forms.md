@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430376"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练：使用关联和初始化表单创建工作流
   本演练演示如何创建一个基本顺序工作流，其中包含使用关联和初始化窗体。 这些是启用 SharePoint 管理员 （关联窗体），首次关联以及由用户 （启动窗体） 启动工作流时要添加到工作流参数的 ASPX 窗体。
@@ -50,9 +50,9 @@ ms.locfileid: "60081731"
 - 手动启动工作流。
 
 > [!NOTE]
->  尽管本演练使用顺序工作流项目，该过程是相同的状态机工作流。
+> 尽管本演练使用顺序工作流项目，该过程是相同的状态机工作流。
 >
->  此外，您的计算机可能会显示不同的名称或位置用于某些[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]下列说明中的用户界面元素。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Edition 都可以和你使用的设置确定这些元素。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 此外，您的计算机可能会显示不同的名称或位置用于某些[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]下列说明中的用户界面元素。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Edition 都可以和你使用的设置确定这些元素。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -134,7 +134,7 @@ ms.locfileid: "60081731"
 3. 展开**ExpenseReportAssocForm.aspx**中的文件**解决方案资源管理器**以显示其依赖的文件。
 
     > [!NOTE]
-    >  如果你的项目处于[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]，必须选择**视图的所有文件**按钮以执行此步骤。
+    > 如果你的项目处于[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]，必须选择**视图的所有文件**按钮以执行此步骤。
 
 4. 打开 ExpenseReportAssocForm.aspx 文件的快捷菜单，然后选择**查看代码**。
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081731"
     ```
 
     > [!NOTE]
-    >  在代码中，替换`somedomain\\someuser`使用为其将在创建任务，例如，域和用户名称"`Office\\JoeSch`"。 对于测试是最容易使用开发时所用的帐户。
+    > 在代码中，替换`somedomain\\someuser`使用为其将在创建任务，例如，域和用户名称"`Office\\JoeSch`"。 对于测试是最容易使用开发时所用的帐户。
 
 3. 下面`MethodInvoking`方法中，添加下面的示例：
 

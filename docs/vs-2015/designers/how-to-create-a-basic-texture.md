@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438414"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60076794"
 5. 在“图像编辑器”工具栏上，选择“填充”工具，然后按住 Shift 键并选择图像中的任意点。 使用 Shift 键让填充颜色的 Alpha 值替换图像中的颜色；否则，Alpha 值将用于将填充颜色与图像中的颜色进行混合。  
   
    > [!IMPORTANT]
-   >  此步骤和上一步中的颜色选择一起确保为要绘制的“靶心”目标纹理准备好了基本图像。 当用透明黑色填充图像时（因为目标的边框是黑色的），目标周围将没有混叠的项。  
+   > 此步骤和上一步中的颜色选择一起确保为要绘制的“靶心”目标纹理准备好了基本图像。 当用透明黑色填充图像时（因为目标的边框是黑色的），目标周围将没有混叠的项。  
   
 6. 在“图像编辑器”工具栏上，选择“椭圆形”工具。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60076794"
 11. 使用“椭圆形”工具，从像素坐标 `(3, 3)` 到像素坐标 `(508, 508)` 绘制一个圆。 为了更轻松地绘制圆形，可以在绘制时按住 Shift 键。  
   
     > [!NOTE]
-    >  当前指针位置的像素坐标显示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 状态栏上。  
+    > 当前指针位置的像素坐标显示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 状态栏上。  
   
 12. 更改背景色。 将“R”设置为 `44`、将“G” 设置为 `165`、将“B” 设置为 `211`、将“A” 设置为 `255`。  
   

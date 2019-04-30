@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429379"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取包含已安装的代码片段的列表（旧版实现）
 代码段是一段代码可以插入到源缓冲区 （它允许选择安装的代码片段的列表） 的菜单命令或通过从 IntelliSense 完成列表中选择代码片段快捷方式。
@@ -106,7 +106,7 @@ ms.locfileid: "60056843"
 1. 下面的方法演示如何调用`GetSnippets`方法在分析操作完成。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>之后的分析操作中，原因是启动调用方法<xref:Microsoft.VisualStudio.Package.ParseReason>。
 
 > [!NOTE]
->  `expansionsList`出于性能原因缓存数组列表。 停止并重新加载语言服务之前，在列表中不反映对这些代码片段更改 (例如，通过停止并重新启动[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
+> `expansionsList`出于性能原因缓存数组列表。 停止并重新加载语言服务之前，在列表中不反映对这些代码片段更改 (例如，通过停止并重新启动[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。
 
 ```csharp
 class TestLanguageService : LanguageService

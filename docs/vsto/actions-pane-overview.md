@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440388"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**附加到特定的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的任务窗格。 操作窗格中进行托管 Office 任务窗格，以及其他内置任务窗格，如**XML 源**在 Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -30,7 +30,7 @@ ms.locfileid: "60099736"
  可以只在文档级自定义项中为 Word 或 Excel 创建一个操作窗格。 不能在 VSTO 外接程序中创建操作窗格。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
 > [!NOTE]
->  操作窗格不同于自定义任务窗格。 自定义任务窗格与应用程序（而不是特定文档）相关联。 你可以在 VSTO 外接程序中为某些 Microsoft Office 应用程序创建自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
+> 操作窗格不同于自定义任务窗格。 自定义任务窗格与应用程序（而不是特定文档）相关联。 你可以在 VSTO 外接程序中为某些 Microsoft Office 应用程序创建自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
 
  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：使用 Excel 操作窗格内的 WPF 控件？](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099736"
 2. 通过使用设计器或编写代码，将 Windows 窗体控件添加到 <xref:System.Windows.Forms.UserControl>。
 
    > [!NOTE]
-   >  还可以通过将 WPF <xref:System.Windows.Controls.UserControl> 添加到 Windows 窗体 <xref:System.Windows.Forms.UserControl>来将 WPF 控件添加到操作窗格。 有关详细信息，请参阅[使用 WPF 控件在 Office 解决方案中](../vsto/using-wpf-controls-in-office-solutions.md)。
+   > 还可以通过将 WPF <xref:System.Windows.Controls.UserControl> 添加到 Windows 窗体 <xref:System.Windows.Forms.UserControl>来将 WPF 控件添加到操作窗格。 有关详细信息，请参阅[使用 WPF 控件在 Office 解决方案中](../vsto/using-wpf-controls-in-office-solutions.md)。
 
 3. 将自定义用户控件的实例添加到项目中 `ThisWorkbook`（针对 Excel）或 `ThisDocument`（针对 Word）类的 `ActionsPane` 字段中所内含的控件。
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099736"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关详细信息，请参阅[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。
+> 最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关详细信息，请参阅[如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。
 
  设置<xref:Microsoft.Office.Tools.ActionsPane.Top%2A>并<xref:Microsoft.Office.Tools.ActionsPane.Left%2A>的属性<xref:Microsoft.Office.Tools.ActionsPane>不会更改其位置，因为<xref:Microsoft.Office.Tools.ActionsPane>对象内嵌在任务窗格。
 

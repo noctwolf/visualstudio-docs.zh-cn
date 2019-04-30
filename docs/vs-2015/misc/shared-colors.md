@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436575"
 ---
 # <a name="shared-colors"></a>共享颜色
 在此处插入介绍。  
@@ -31,7 +31,7 @@ ms.locfileid: "60117171"
 - **使用适合于其位置的控件颜色。** 在特定状态下，某些 Visual Studio 控件没有单独的边框和背景色。 而是从它们之后的图面选取这些颜色。 请确保始终使用适合于要在其中放置控件的位置的标记名称。  
   
 > [!IMPORTANT]
->  请勿使用在“起始页”或“Cider”类别中找到的标记！  
+> 请勿使用在“起始页”或“Cider”类别中找到的标记！  
   
 ### <a name="command-structures"></a>命令结构  
   
@@ -240,7 +240,7 @@ ms.locfileid: "60117171"
 ##### <a name="BKMK_CommandComboBox"></a> 组合框  
   
 > [!IMPORTANT]
->  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下的颜色标记。  
+> 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下的颜色标记。  
   
  ![Combo box redline](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ ms.locfileid: "60117171"
 ##### <a name="BKMK_CommandDropDown"></a> 下拉列表  
   
 > [!IMPORTANT]
->  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下的颜色标记。  
+> 下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下的颜色标记。  
   
  ![删除&#45;向下红线](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")  
   

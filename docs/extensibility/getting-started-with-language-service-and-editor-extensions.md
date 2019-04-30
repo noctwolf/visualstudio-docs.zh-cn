@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415566"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 编辑器扩展可用于将语言服务功能，例如大纲显示、 大括号匹配、 IntelliSense 和灯泡添加到您自己的编程语言或任何内容类型。 此外可以自定义外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 您还可以定义自己的类型的内容，并指定的外观和行为的内容将显示的文本视图。
@@ -23,7 +23,7 @@ ms.locfileid: "60049017"
  若要开始编写编辑器扩展，使用 Visual Studio SDK 的一部分安装的编辑器项目模板。 Visual Studio SDK 是一可下载的工具，有助于轻松地开发 Visual Studio 扩展，通过使用 Vspackage 或通过使用 Managed Extensibility Framework (MEF)。
 
 > [!NOTE]
->  有关 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
+> 有关 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
  我们建议你了解以下概念和技术编写您自己的编辑器扩展插件之前。
 
@@ -34,7 +34,7 @@ ms.locfileid: "60049017"
  在 Visual Studio 编辑器使用 Managed Extensibility Framework (MEF) 来管理其组件和扩展。 MEF 还允许开发人员轻松地创建主机应用程序类似于 Visual Studio 的扩展。 在此框架中，定义根据 MEF 协定的扩展，并将其导出为 MEF 组件部分。 主机应用程序通过查找、 注册它们，并确保其应用到的正确的上下文来管理组件的各部分。
 
 > [!NOTE]
->  在编辑器中 MEF 的详细信息，请参阅[在编辑器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。
+> 在编辑器中 MEF 的详细信息，请参阅[在编辑器中的 Managed Extensibility Framework](../extensibility/managed-extensibility-framework-in-the-editor.md)。
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Visual Studio 编辑器扩展点和扩展
  编辑器扩展点是 MEF 组件部分，可以自定义和扩展。 在某些情况下你通过实现接口并将其导出正确的元数据以及扩展的扩展点。 在其他情况下您只需声明扩展并将其导出为特定类型。
@@ -59,7 +59,7 @@ ms.locfileid: "60049017"
  当你的计算机上安装扩展时，包括到 Visual Studio 已知的文件夹的子文件夹中的二进制文件和清单。
 
 > [!WARNING]
->  无需担心清单和部署位置的详细信息，如果你使用包含在 Visual Studio 的编辑器可扩展性模板之一。 这些模板包含需注册和部署扩展的所有内容。
+> 无需担心清单和部署位置的详细信息，如果你使用包含在 Visual Studio 的编辑器可扩展性模板之一。 这些模板包含需注册和部署扩展的所有内容。
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>在实验实例中运行扩展
  通过将其部署在以下实验性文件夹 （在 Windows Vista 和 Windows 7） 中开发扩展时，可以使你的 Visual Studio 的工作版本：

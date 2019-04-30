@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420940"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提高 VSTO 外接程序的性能
   可以通过优化为 Office 应用程序创建的 VSTO 外接程序为用户提供更好的体验，以便他们快速启动、关闭和打开项，以及执行其他任务。 如果你的 VSTO 外接程序是用于 Outlook 的，则还可以降低由于性能不佳而禁用 VSTO 外接程序的风险。 可以通过实现以下策略来提高 VSTO 外接程序的性能：
@@ -93,7 +93,7 @@ ms.locfileid: "60071816"
 - 验证部署清单的数字签名。
 
   > [!NOTE]
-  >  此方法不需要在 VSTO 外接程序部署到用户的计算机上的安全位置。
+  > 此方法不需要在 VSTO 外接程序部署到用户的计算机上的安全位置。
 
   有关详细信息，请参阅[使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071816"
  请考虑在单独的线程中执行耗时的任务（如长时间运行的任务、数据库连接或其他类型的网络调用）。 有关详细信息，请参阅[Office 中的线程支持](../vsto/threading-support-in-office.md)。
 
 > [!NOTE]
->  调入 Office 对象模型的所有代码都必须在主线程中执行。
+> 调入 Office 对象模型的所有代码都必须在主线程中执行。
 
 ## <a name="see-also"></a>请参阅
 
