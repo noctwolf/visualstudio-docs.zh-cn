@@ -11,18 +11,18 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444772"
 ---
 # <a name="evaluating-locals"></a>计算局部
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)调用以获取本地，以及计算机的本地名称和类型的值。 由于局部变量的值是依赖于该程序的当前状态，则必须从内存获取局部变量的值。 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)对象用于绑定[IDebugField](../../extensibility/debugger/reference/idebugfield.md)到合适的位置在内存中包含的值表示本地对象。 表示在内存中的此位置[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
   

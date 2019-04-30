@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fb5c4d7497525706384ced52caae1ba8e02f3e23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966765"
 ---
 # <a name="how-to-create-an-application-page"></a>如何：创建应用程序页
   可以为一个或多个 SharePoint 网站创建 ASP.NET 网页。 在 SharePoint 中，这些页称为应用程序页。 与站点页上，不同的应用程序页包含页的后面运行的代码。 有关详细信息，请参阅[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)。

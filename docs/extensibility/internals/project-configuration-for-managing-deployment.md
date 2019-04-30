@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909346"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>用于管理部署的项目配置
 部署是以物理方式将输出项的生成过程从移动到预期位置用于调试和安装的行为。 例如，Web 应用程序可能会在本地计算机上生成，然后放在服务器上。

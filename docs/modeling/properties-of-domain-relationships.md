@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2693994c9ead711f3bb536d0e37f485bc00047b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998906"
 ---
 # <a name="properties-of-domain-relationships"></a>域关系的属性
 下表中的属性是与域关系相关联。 有关域关系的信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
@@ -29,7 +29,7 @@ ms.locfileid: "55938171"
 |允许存在重复项|如果`True`，域关系的重复链接可能会创建相同的两个元素之间。|`False`|
 |基关系|如果派生的域关系，域关系的基本关系。|\<none>|
 |嵌入|如果`True`，域关系是嵌入关系。 如果`False`，关系是引用关系。|\<both>|
-|name|域关系的名称。|当前名称|
+|名称|域关系的名称。|当前名称|
 |命名空间|与域关系相关联的命名空间。|当前命名空间|
 |说明|与域关系相关联的非正式说明。|\<none>|
 |描述|说明用于记录代码和生成的设计器在 UI 中使用。|\<none>|

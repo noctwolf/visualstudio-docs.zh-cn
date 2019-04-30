@@ -1,5 +1,5 @@
 ---
-title: 如何： 在消息视图中的消息搜索 |Microsoft Docs
+title: 如何：消息在消息视图中搜索 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5830076ab3bd0ea59912900e8a14c807d7c0941
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 37f99c30c23461ada406bb0650f86d45d2a4a2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388405"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>如何：在消息视图中搜索消息
 可以通过将其句柄、 类型或消息 ID 用作搜索条件来搜索特定的消息在消息视图中。 其中的任何一 — 或组合 — 将是有效的搜索条件。 此外可以指定搜索的初始传递方向。 在对话框中的字段是预先加载了当前所选消息的属性。
@@ -43,7 +43,7 @@ ms.locfileid: "56696254"
 4. 清除不想为其指定值的任何字段。
 
    > [!TIP]
-   >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主 Spy + + 窗口中，并仅留下**查找窗口**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。
+   > 若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主 Spy + + 窗口中，并仅留下**查找窗口**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。
 
 5. 选择**向上**或**向下**搜索的初始方向。
 

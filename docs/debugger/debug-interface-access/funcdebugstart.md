@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 078c2b7bfcf6ce2a86b5f059053f8f31376af595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554526"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 如果函数具有定义的点处的调试是若要开始，点由具有的符号`SymTagFuncDebugStart`标记。
@@ -26,7 +26,7 @@ ms.locfileid: "56644778"
 ## <a name="properties"></a>属性
  下表显示适用于此符号类型的属性。
 
-|属性|数据类型|说明|
+|属性|数据类型|描述|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|偏移量部分的位置;有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|位置; 部分一部分有关详细信息，请参阅[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)。|

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977934"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。

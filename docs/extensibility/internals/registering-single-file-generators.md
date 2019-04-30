@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426819"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 若要使自定义工具中可用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，因此必须注册该[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以实例化并将其关联与特定项目类型。
@@ -51,7 +51,7 @@ ms.locfileid: "60047184"
         必需。 指示是否通过此自定义工具生成的文件中的类型将提供给可视化设计器。 此参数的值必须是类型向可视化设计器不可用 （零） 0 或类型可用于可视化设计器 （一个） 1。
 
    > [!NOTE]
-   >  必须注册为其所需的自定义工具，可用于每种语言单独的自定义工具。
+   > 必须注册为其所需的自定义工具，可用于每种语言单独的自定义工具。
 
     例如，MSDataSetGenerator 自行注册一次为每种语言：
 

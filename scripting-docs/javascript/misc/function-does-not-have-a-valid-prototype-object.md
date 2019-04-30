@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007498"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>函数没有有效的原型对象
 你尝试使用**instanceof**若要确定是否已从特定函数类派生的对象，但重新定义对象的`prototype`属性为`null`，或外部的对象类型 (这两个不是有效[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]对象)。 外部对象可以是主机对象模型 （例如，Internet Explorer 的文档或窗口对象） 中的对象或一个外部 COM 对象。  

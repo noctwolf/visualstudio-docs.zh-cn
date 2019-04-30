@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 086c4546d72042d2b2c7c1789cdf1695bc54b81d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808542"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903:仅使用目标框架中的 API
 
@@ -44,7 +44,7 @@ ms.locfileid: "55955383"
 |.NET Framework 2.0|.NET framework 2.0 SP1 中，.NET Framework 2.0 SP2|
 |.NET Framework 3.0|.NET framework 2.0 SP1，.NET Framework 2.0 SP2，.NET Framework 3.0 SP1，.NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
-|.NET Framework 4|不可用|
+|.NET Framework 4|不适用|
 
  若要更改项目的目标框架，请参阅[面向特定的.NET Framework 版本](../ide/visual-studio-multi-targeting-overview.md)。
 

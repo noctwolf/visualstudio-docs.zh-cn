@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5f68db1a4c6fb3ea2a7f9542c1a9d2d313359554
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913103"
 ---
 # <a name="security-issues"></a>安全问题
 若要调试使用 Visual Studio 的程序，所需的唯一权限是相同的一名开发人员需要运行程序。 这包括大多数情况下的远程调试。 某些情况下，涉及其他服务，如 Internet 信息服务，可能需要更高级别的权限。

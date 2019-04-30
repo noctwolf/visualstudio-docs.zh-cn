@@ -25,16 +25,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896615"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的 c + + 格式说明符
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>格式说明符为C++Visual Studio 调试器中
 你可以在其中一个值中显示的格式**Watch**，**自动**，并**局部变量**窗口中的，使用格式说明符。
 
-此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并且即使在源窗口中。 如果暂停这些窗口中的表达式时，结果将出现在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 “数据提示”显示格式说明符。
+也可以在“即时”窗口、“命令”窗口、[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)和源窗口中使用格式说明符。 如果暂停这些窗口中的表达式时，结果将出现在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。 “数据提示”显示格式说明符。
 
 > [!NOTE]
 > 如果 Visual Studio 本机调试器更改为新的调试引擎中，添加了一些新的格式说明符和某些旧的已删除。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。
@@ -62,7 +62,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a>格式说明符
-下表描述了可以使用 Visual Studio 中的格式说明符。 加粗的说明符仅支持为新的调试器，而不是针对互操作调试使用 C + + /cli CLI。
+下表描述了可以使用 Visual Studio 中的格式说明符。 新的调试程序，而不是针对使用进行互操作调试中加粗的说明符仅支持C++/CLI。
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,8 +167,8 @@ int main() {
 |wm|Windows 消息数字|0x0010|WM_CLOSE|
 |!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 格式说明符内存位置在互操作调试中使用 C + + /cli CLI
-下表描述了用于内存位置的格式化符号。 可以使用带有计算为位置的任何值或表达式的内存位置说明符。
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 格式说明符中使用的互操作调试的内存位置的C++/CLI
+下表描述了用于内存位置的格式化符号。 可将内存位置说明符与任何值或任何计算结果为某位置的表达式一起使用。
 
 |符号|格式|原始监视值|显示的值|
 |------------|------------|--------------------------|---------------------|

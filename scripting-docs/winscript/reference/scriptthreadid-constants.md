@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840195"
 ---
 # <a name="scriptthreadid-constants"></a>SCRIPTTHREADID 常量
 用于指定线程的类型。  
@@ -35,7 +35,7 @@ typedef DWORD SCRIPTTHREADID;
   
 ## <a name="constants"></a>常量  
   
-|返回的常量|值|含义|  
+|返回的常量|“值”|含义|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|当前正在执行的线程。|  
 |SCRIPTTHREADID_BASE|0xFFFFFFFE|基础线程;也就是说，在其中的脚本引擎的线程已实例化。|  

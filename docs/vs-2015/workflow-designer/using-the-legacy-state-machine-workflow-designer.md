@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444110"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用旧版状态机工作流设计器
 在创建新的状态机工作流项目中[!INCLUDE[vs2010](../includes/vs2010-md.md)]面向[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]或[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]，你可以选择使用两种**状态机工作流控制台应用程序**或**状态机工作流库**旧项目模板。 如果选择其中一个状态机项目模板，则会以旧工作流设计器用户界面的形式呈现状态机设计器。 有关旧状态机项目模板的信息，请参阅[如何：创建状态机工作流控制台应用程序 （旧版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[如何：创建状态机工作流库 （旧版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)。  
@@ -53,9 +53,9 @@ ms.locfileid: "58925931"
  当您将一个新**StateActivity**到工作流设计图面上，可以添加[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)， [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)， [StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)，或其他**StateActivity**活动作为子活动。  
   
 > [!CAUTION]
->  当你使用状态机工作流设计器来创建工作流时，必须监视设计与工作流的结构**文档大纲**视图窗口。 状态机工作流中的结构的视图**文档大纲**视图窗口镜像的工作流标记文件中的活动的逻辑布局。 工作流活动显示在设计图面上的物理布局可能不会反映工作流标记文件中活动的逻辑布局。  
+> 当你使用状态机工作流设计器来创建工作流时，必须监视设计与工作流的结构**文档大纲**视图窗口。 状态机工作流中的结构的视图**文档大纲**视图窗口镜像的工作流标记文件中的活动的逻辑布局。 工作流活动显示在设计图面上的物理布局可能不会反映工作流标记文件中活动的逻辑布局。  
 >   
->  若要打开**文档大纲**窗口，请在**视图**菜单上，指向**其他 Windows**，然后选择**文档大纲**。  
+> 若要打开**文档大纲**窗口，请在**视图**菜单上，指向**其他 Windows**，然后选择**文档大纲**。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建状态机工作流控制台应用程序 （旧版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

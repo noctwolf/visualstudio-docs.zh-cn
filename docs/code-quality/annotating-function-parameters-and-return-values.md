@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388545"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 本指南介绍了简单的函数参数的批注的典型用途 — 标量和指向结构和类的指针，及大多数种类的缓冲区。  本文还介绍对批注的常见使用模式。 与函数相关的其他批注，请参阅[批注函数行为](../code-quality/annotating-function-behavior.md)
@@ -315,7 +315,7 @@ ms.locfileid: "60109853"
   下表中其他的子字符串插入批注名称，以进一步限定批注的含义。  各种子字符串`_z`， `_COM_`， `_buffer_`， `_bytebuffer_`，和`_to_`。
 
 > [!IMPORTANT]
->  如果批注的接口，COM 使用这些批注 COM 窗体。 不要与任何其他类型接口使用 COM 批注。
+> 如果批注的接口，COM 使用这些批注 COM 窗体。 不要与任何其他类型接口使用 COM 批注。
 
  **批注和说明**
 
@@ -471,7 +471,7 @@ ms.locfileid: "60109853"
      参数、 字段或结果是从 （含） 范围内`low`到`hi`。  等效于`_Satisfies_(_Curr_ >= low && _Curr_ <= hi)`应用于该带批注的对象与相应预状态或状态后条件。
 
     > [!IMPORTANT]
-    >  尽管名称包含"in"和"传出"操作的语义`_In_`并`_Out_`不要**不**适用于这些批注。
+    > 尽管名称包含"in"和"传出"操作的语义`_In_`并`_Out_`不要**不**适用于这些批注。
 
 - `_Pre_equal_to_(expr)`
 

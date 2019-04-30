@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4cd55ff42bc4ba81df881045d06362b469f009b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5c98405b424dd5402a903a236b1c5549a43616d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387521"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>如何：使用 RPC 调试来调试 COM 客户端和服务器
 可以使用远程过程调用 (RPC) 调试来调试 COM 客户端/服务器应用程序。 必须启用 RPC 调试才能使用它。 启用 RPC 调试后，当单步执行来自客户端的服务器调用时，调试器会附加到服务器上，使你能调试其代码。 附加调试器后，就可以对客户端和服务器进程使用所有的调试器功能。
@@ -47,10 +47,10 @@ ms.locfileid: "60112697"
 4. 选中“RPC 调试”复选框。
 
     > [!NOTE]
-    >  必须拥有“管理员”或“超级用户”权限，才能调试 RPC 调用。
+    > 必须拥有“管理员”或“超级用户”权限，才能调试 RPC 调用。
 
     > [!NOTE]
-    >  仅当将本机调试器附加到远程服务器时，RPC 才能进入运行 Microsoft Windows Vista 的远程服务器并单步执行。 否则，RPC 调用将失败并且不显示错误消息。 或者，RPC 调用可以完成，但无法单步执行 RPC 调用。
+    > 仅当将本机调试器附加到远程服务器时，RPC 才能进入运行 Microsoft Windows Vista 的远程服务器并单步执行。 否则，RPC 调用将失败并且不显示错误消息。 或者，RPC 调用可以完成，但无法单步执行 RPC 调用。
 
 ## <a name="see-also"></a>请参阅
 - [调试 COM 服务器和容器](../debugger/com-server-and-container-debugging.md)

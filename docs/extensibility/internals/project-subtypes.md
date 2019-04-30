@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423071"
 ---
 # <a name="project-subtypes"></a>项目子类型
 项目子类型可以自定义或 flavor 的项目系统的行为[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自定义项包括其他数据保存在项目文件中，添加或筛选中的项**添加新项**对话框中，控制如何调试和部署，程序集和扩展项目**属性页**对话框。 Vspackage 实现项目子类型使用 COM 聚合。
 
 > [!NOTE]
->  Visual c + + 项目系统不支持项目子类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用项目子类型实现 SQL Server 和智能设备项目本身。
+> 视觉对象C++项目系统不支持项目子类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用项目子类型实现 SQL Server 和智能设备项目本身。
 
 ## <a name="in-this-section"></a>本节内容
 - [项目子类型设计](../../extensibility/internals/project-subtypes-design.md)

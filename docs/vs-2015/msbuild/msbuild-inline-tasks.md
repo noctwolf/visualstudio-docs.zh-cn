@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439360"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 内联任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ ms.locfileid: "59670298"
   `Reference` 和 `Using` 元素都与语言无关。 可以用任何一种受支持的 .NET CodeDom 语言（例如，Visual Basic 或 Visual C#）编写内联任务。  
   
 > [!NOTE]
->  由 `Task` 元素包含的元素均特定于任务工厂，在本例中，即代码任务工厂。  
+> 由 `Task` 元素包含的元素均特定于任务工厂，在本例中，即代码任务工厂。  
   
 ### <a name="code-element"></a>Code 元素  
  最后一个出现在 `Task`元素内的子元素是 `Code` 元素。 `Code` 元素包含或定位你想要编译到任务中的代码。 放置于 `Code` 元素中的内容具体取决于你希望如何编写任务。  
@@ -87,7 +87,7 @@ ms.locfileid: "59670298"
   或者，可以使用 `Code` 元素的 `Source` 属性来指定包含任务代码的文件的位置。 源文件中的代码的类型必须为由 `Type` 属性所指定的类型。 如果存在 `Source` 属性，则 `Type` 的默认值为 `Class`。 如果 `Source` 不存在，则默认值为 `Fragment`。  
   
 > [!NOTE]
->  当在源文件中定义任务类时，类名必须符合对应的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素的 `TaskName` 属性。  
+> 当在源文件中定义任务类时，类名必须符合对应的 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素的 `TaskName` 属性。  
   
 ## <a name="hello-world"></a>Hello World  
  下面是一个更全面的内联任务。 HelloWorld 任务 在默认错误日志记录设备上显示“Hello, World!”，该设备通常为系统控制台或 Visual Studio **输出**窗口。 示例中包含了 `Reference` 元素，这仅用于阐释目的。  

@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387777"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 类图上类型的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60062225"
 在 UML 类图中，*类型*是类、 接口或枚举。  
   
 > [!NOTE]
->  本主题介绍 UML 类图中的类型的属性。 有关详细信息，请参阅下列主题：  
+> 本主题介绍 UML 类图中的类型的属性。 有关详细信息，请参阅下列主题：  
   
 - [UML 类关系图：参考](../modeling/uml-class-diagrams-reference.md)  
   

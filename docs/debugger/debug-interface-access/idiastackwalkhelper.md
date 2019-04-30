@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0143945a266b9c76fefa10e1823a7c3ce01f85e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837831"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 便于遍历堆栈使用程序调试数据库 (.pdb) 文件。
@@ -33,7 +33,7 @@ IDiaStackWalkHelper: IUnknown
 ## <a name="methods-in-vtable-order"></a>VTable Order 中的方法
  下表显示的方法`IDiaStackWalkHelper`:
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)|检索寄存器的值。|
 |[IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)|设置寄存器的值。|
@@ -52,7 +52,7 @@ IDiaStackWalkHelper: IUnknown
  客户端应用程序实现此接口以支持在程序执行期间遍历堆栈。 此接口的实例传递给[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)或[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)方法。
 
 ## <a name="requirements"></a>要求
- 标头： Dia2.h
+ 标头：dia2.h
 
  库： diaguids.lib
 

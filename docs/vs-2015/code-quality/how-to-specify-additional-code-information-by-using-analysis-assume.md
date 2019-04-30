@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426644"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何：使用 _analysis_assume 指定其他代码信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以对代码分析工具的提示，它们将帮助分析过程并降低警告 C/c + + 代码。 若要提供的其他信息，请使用以下函数：  
+您可以对代码分析工具的提示，对于 C /C++代码，可以帮助分析处理并减少警告。 若要提供的其他信息，请使用以下函数：  
   
  `__analysis_assume(`  `expr`  `)`  
   
@@ -32,7 +32,7 @@ ms.locfileid: "58933526"
  代码分析工具假设由表达式表示的条件是在其中该函数将显示，并将保持为 true，直到表达式更改，例如，通过对变量赋值的点，则返回 true。  
   
 > [!NOTE]
->  `__analysis_assume` 不会影响代码优化。 外部代码分析工具，`__analysis_assume`定义为执行任何操作。  
+> `__analysis_assume` 不会影响代码优化。 外部代码分析工具，`__analysis_assume`定义为执行任何操作。  
   
 ## <a name="example"></a>示例  
  下面的代码使用`__analysis_assume`若要更正代码分析警告[C6388](../code-quality/c6388.md):  

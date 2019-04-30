@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568592"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
@@ -58,7 +58,7 @@ ms.locfileid: "58268796"
 
 ## <a name="create-the-model"></a>创建模型
 
-1. 右键单击项目节点中**解决方案资源管理器**，然后选择**添加** > **新项**。 在左窗格中，在C#节点，选择**数据**，然后在中间窗格中，选择**ADO.NET 实体数据模型**。
+1. 右键单击项目节点中**解决方案资源管理器**，然后选择**添加** > **新项**。 在左窗格中，在 C# 节点下，选择**数据**，然后在中间窗格中，选择**ADO.NET 实体数据模型**。
 
    ![实体框架模型的新项](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "58268796"
 
     ![选择模型的数据库对象](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. 该向导将生成C#类表示实体框架模型。 类是普通的老式C#类，它们是我们数据绑定到 WPF 用户界面。 *.Edmx*文件介绍了关系和其他将类与数据库中的对象相关联的元数据。 *.Tt*文件是生成的代码，运行或保存对数据库进行更改的模型的 T4 模板。 可以看到所有这些文件中的**解决方案资源管理器**Northwind_model 节点下：
+5. 向导将生成表示实体框架模型的 C# 类。 类是普通旧的 C# 类，并且我们数据绑定到 WPF 用户界面。 *.Edmx*文件介绍了关系和其他将类与数据库中的对象相关联的元数据。 *.Tt*文件是生成的代码，运行或保存对数据库进行更改的模型的 T4 模板。 可以看到所有这些文件中的**解决方案资源管理器**Northwind_model 节点下：
 
       ![解决方案资源管理器 EF 模型文件](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -353,7 +353,7 @@ Visual Studio 生成的默认排列方式是不适合您的应用程序，因此
 
 在 Windows 窗体应用程序中的数据库中的行中导航并执行基本的 CRUD 操作获取具有按钮的 BindingNavigator 对象。 WPF 不提供 BindingNavigator，但它很容易地创建一个。 使用按钮内的水平的 StackPanel，执行该操作并将这些按钮与绑定到方法后面的代码中的命令相关联。
 
-有个 4 命令逻辑部分: （1） 命令、 （2） 绑定、 （3) 按钮和隐藏代码中 （4） 的命令处理程序。
+有个 4 命令逻辑部分：（1） 命令、 （2） 绑定、 （3) 按钮和隐藏代码中 （4） 的命令处理程序。
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>在 XAML 中添加命令、 绑定和按钮
 

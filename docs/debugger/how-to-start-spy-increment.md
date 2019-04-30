@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387539"
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
 
@@ -24,7 +24,7 @@ ms.locfileid: "60099138"
  当你启动 Spy + +，如果显示一条消息询问权更改计算机，请选中**是**。
 
 > [!NOTE]
->  可以运行 Spy + + 的一个实例。 如果尝试启动第二个实例，它只会导致当前正在运行的实例，若要获取焦点。
+> 可以运行 Spy + + 的一个实例。 如果尝试启动第二个实例，它只会导致当前正在运行的实例，若要获取焦点。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -42,7 +42,7 @@ Spy + + 需要以下组件。 可以从 Visual Studio 安装程序选择这些�
 因为 Spy + + 独立地运行在启动后，你可以关闭 Visual Studio。
 
 > [!NOTE]
->  当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。
+> 当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。
 
 ## <a name="start-spy-at-a-command-prompt"></a>命令提示符处启动 Spy + +
 

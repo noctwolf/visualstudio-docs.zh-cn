@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443861"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：创建 SDK 使用C#或 Visual Basic
 在本演练中，将了解如何使用 Visual C# 创建一个简单的数学库 SDK，然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 将完成以下过程：
@@ -50,7 +50,7 @@ ms.locfileid: "60086632"
 8. 在**配置**列中，确认**SimpleMath**行设置为**版本**，然后选择**关闭**按钮以接受更改。
 
    > [!IMPORTANT]
-   >  SDK for SimpleMath 组件包括只有一个配置。 此配置中必须是发布版本，或使用该组件的应用程序不会通过认证[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。
+   > SDK for SimpleMath 组件包括只有一个配置。 此配置中必须是发布版本，或使用该组件的应用程序不会通过认证[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。
 
 9. 在中**解决方案资源管理器**，打开快捷菜单**SimpleMath**项目节点，然后选择**生成**。
 

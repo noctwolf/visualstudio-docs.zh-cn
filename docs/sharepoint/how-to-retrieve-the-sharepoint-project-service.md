@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813424"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索 SharePoint 项目服务
   您可以访问以下类型的解决方案中的 SharePoint 项目服务：

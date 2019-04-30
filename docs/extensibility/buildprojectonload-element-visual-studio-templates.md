@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41baf6b8405e45600050e508b7fd7523e19533ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926588"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 元素 （Visual Studio 模板）
 生成新的项目如下创建并将其添加到解决方案。 不生成整个解决方案。

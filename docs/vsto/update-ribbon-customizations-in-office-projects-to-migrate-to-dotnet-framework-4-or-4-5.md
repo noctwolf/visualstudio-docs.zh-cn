@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446941"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>更新迁移到.NET Framework 4 或.NET Framework 4.5 的 Office 项目中的功能区自定义
   如果您的项目包含已通过使用功能区自定义**功能区 （可视化设计器）** 项目项，必须对你的项目代码进行以下更改，如果目标框架更改为[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。
@@ -75,7 +75,7 @@ ms.locfileid: "60096538"
 3. 在 `InitializeComponent` 方法中，修改构造功能区控件的任何代码，使代码能够改用 <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> 对象的一种帮助器方法。
 
     > [!NOTE]
-    >  在 Visual C# 项目中，必须展开名为 `Component Designer generated code` 的区域才能查看 `InitializeComponent` 方法。
+    > 在 Visual C# 项目中，必须展开名为 `Component Designer generated code` 的区域才能查看 `InitializeComponent` 方法。
 
      例如，假设文件包含以下代码行，该代码行可实例化面向 .NET Framework 3.5 的项目中名为 `button1` 的 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton>。
 

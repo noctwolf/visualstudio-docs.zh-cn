@@ -27,18 +27,18 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445051"
 ---
 # <a name="how-to-use-the-modules-window"></a>如何：使用模块窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
->  此功能不可用于 SQL 或脚本调试。  
+> 此功能不可用于 SQL 或脚本调试。  
   
  **模块**窗口列出了由您的程序并显示每个相关信息的 Dll 和 EXE。  
   

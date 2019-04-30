@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442869"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>如何：手动将扩展打包 （VSIX 部署）
 可以创建 VSIX 包来包装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展，以便进行部署。 创建包的方式有三种：  
@@ -29,7 +29,7 @@ ms.locfileid: "60040736"
  若要手动对扩展打包，请向扩展项目中添加 extension.manifest 文件和 [Content_Types].xml 文件，将其与生成输出一起放在压缩文件中，并对压缩文件重命名，使其具有 .vsix 文件扩展名。 要打包的扩展必须是 [VSIX 架构](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)支持的类型。  
   
 > [!NOTE]
->  在 VSIX 包中的文件的名称不能包含空格，也不保留在统一资源标识符 (URI)，作为字符定义下[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
+> 在 VSIX 包中的文件的名称不能包含空格，也不保留在统一资源标识符 (URI)，作为字符定义下[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
   
 #### <a name="to-manually-create-a-vsix-package"></a>手动创建 VSIX 包  
   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829610"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 枚举数据源中包含的各种源文件。
@@ -31,7 +31,7 @@ IDiaEnumSourceFiles : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaEnumSourceFiles`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索`IEnumVARIANT Interface`此枚举器的版本。|
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|检索源文件的数目。|
@@ -80,7 +80,7 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

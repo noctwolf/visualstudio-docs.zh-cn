@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417440"
 ---
 # <a name="debugger-user-interface-xslt"></a>调试程序用户界面 (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58937880"
  “任务列表”包括 XSLT 文件的脚本块中出现的任何错误。  
   
 > [!NOTE]
->  XSLT 调试程序没有任何警告，所以，“任务列表”中从不会出现警告。  
+> XSLT 调试程序没有任何警告，所以，“任务列表”中从不会出现警告。  
   
 ## <a name="breakpoints-window"></a>“断点”窗口  
  “断点”窗口显示当前项目中设置的所有断点。 如果在该窗口位于视图中时添加断点，该窗口将自动更新，以显示新的断点。  

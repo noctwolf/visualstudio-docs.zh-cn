@@ -35,11 +35,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902070"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。

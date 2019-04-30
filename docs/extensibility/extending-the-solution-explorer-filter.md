@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912121"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展**解决方案资源管理器**筛选功能，以显示或隐藏不同的文件。 例如，可以创建筛选器，显示仅 C# 类工厂中的文件**解决方案资源管理器**，如本演练中所示。

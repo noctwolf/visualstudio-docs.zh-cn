@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f14fb52294fc06340f0e179a324d21ec3ecbbb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4fc312d4120ef8d1d0f2deb5acd3ce581e878570
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447122"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何：将架构集搜索结果节点添加到工作区
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60116807"
 本主题介绍如何将 XML 架构资源管理器中作为关键字搜索结果突出显示的节点添加到工作区中。  
   
 > [!NOTE]
->  只能将全局节点可以添加到[工作区](../xml-tools/xml-schema-designer-workspace.md)。  
+> 只能将全局节点可以添加到[工作区](../xml-tools/xml-schema-designer-workspace.md)。  
   
  此示例使用示例[采购订单架构](../xml-tools/sample-xsd-file-purchase-order-schema.md)。  
   

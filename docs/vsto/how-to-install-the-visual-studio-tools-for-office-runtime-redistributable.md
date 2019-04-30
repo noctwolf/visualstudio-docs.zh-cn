@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412590"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何：安装 Visual Studio Tools for Office runtime 可再发行组件
   必须在运行使用 Microsoft Office 开发人员工具中的创建的解决方案，每台计算机上安装 Visual Studio 2010 Tools for Office 运行时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 安装 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 时会自动安装运行时。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。
@@ -32,7 +32,7 @@ ms.locfileid: "60101452"
 - 需要在已安装 Office 解决方案的所有其他先决条件的计算机上安装运行时。
 
     > [!NOTE]
-    >  若要安装 .NET Framework 和 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，你必须是开发计算机上的管理员。
+    > 若要安装 .NET Framework 和 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，你必须是开发计算机上的管理员。
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>安装 Visual Studio Tools for Office runtime
 

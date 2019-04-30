@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 69cdeb16fa0791b3ff8c0cce4a4e67fe110eefc2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935368"
 ---
 # <a name="iactivescriptauthorgetchars"></a>IActiveScriptAuthor::GetChars
 返回请求的完成上下文完成字符组。  
@@ -40,7 +40,7 @@ HRESULT GetChars(
  `fRequestedList`  
  [in]请求的完成上下文中。  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_ENUM_TRIGGER|0x0001|请求的左侧和右侧枚举。|  
 |SCRIPT_CMPL_MEMBER_TRIGGER|0x0002|请求的成员完成上下文。|  
@@ -60,7 +60,7 @@ HRESULT GetChars(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

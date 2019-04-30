@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436186"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 创建 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Blend for Visual Studio 可帮助设计基于 XAML 的 Windows 桌面、Web、[W
  如果是初次接触 Blend for Visual Studio，则要花一些时间来熟悉工作区的特有功能。 本主题将作用快速教程。
 
 > [!NOTE]
->  若要浏览共享的设计功能，例如美工板、“文档大纲”窗口和“设备”窗口，请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
+> 若要浏览共享的设计功能，例如美工板、“文档大纲”窗口和“设备”窗口，请参阅[使用 XAML 设计器创建 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。
 
  **主题内容**：
 

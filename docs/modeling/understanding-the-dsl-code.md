@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386708"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 
@@ -131,7 +131,7 @@ ms.locfileid: "60087764"
   表示域模型的类。 它派生自 <xref:Microsoft.VisualStudio.Modeling.DomainModel>。
 
 > [!NOTE]
->  这与模型的根类不同。
+> 这与模型的根类不同。
 
  “复制”和“删除”闭包定义在复制或删除一个元素时应包含哪些其他元素。 可以通过设置控制此行为**传播复制**并**传播删除**两侧上的每个关系的角色的属性。 如果想要动态确定这些值，则可编写代码来重写“闭包”类的方法。
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  若要自定义此文件，请编辑 `.tt` 文件。
 
 > [!WARNING]
->  如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器，选择文件，请确保**包含在 VSIX**属性是`True`。
+> 如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器，选择文件，请确保**包含在 VSIX**属性是`True`。
 
  此文件控制将 DSL 打包到 Visual Studio 集成扩展 (VSIX) 中的方式。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。
 

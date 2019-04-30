@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441964"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自定义生成事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60054145"
      示例：`for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
     > [!NOTE]
-    >  以上代码中的 `%I` 在批处理脚本中应是 `%%I`。
+    > 以上代码中的 `%I` 在批处理脚本中应是 `%%I`。
 
 ## <a name="see-also"></a>请参阅
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)[预生成事件/生成后事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)[演练：生成应用程序](../ide/walkthrough-building-an-application.md)

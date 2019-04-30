@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834147"
 ---
 # <a name="idiatable"></a>IDiaTable
 枚举 DIA 数据源表。
@@ -31,7 +31,7 @@ IDiaTable : IEnumUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaTable`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|检索表的名称。|
@@ -131,7 +131,7 @@ void UseTable(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

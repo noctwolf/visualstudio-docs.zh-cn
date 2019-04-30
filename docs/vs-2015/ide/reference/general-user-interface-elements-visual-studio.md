@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537597"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>常规用户界面元素 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "54756387"
 
  [选项，文本编辑器，基本 (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)允许您为 Visual Basic 文件指定选项。
 
- [选项，文本编辑器，C/c + +，格式设置](../../ide/reference/options-text-editor-c-cpp-formatting.md)允许您指定为 C 或 c + + 文件的格式设置选项。
+ [选项，文本编辑器，C /C++、 格式设置](../../ide/reference/options-text-editor-c-cpp-formatting.md)允许您指定于 c 语言的格式设置选项或C++文件。
 
- [选项，文本编辑器，C/c + +，高级](../../ide/reference/options-text-editor-c-cpp-advanced.md)，可指定 C 或 c + + 文件的高级的选项。
+ [选项，文本编辑器，C /C++的高级](../../ide/reference/options-text-editor-c-cpp-advanced.md)允许您指定用于 C 的高级的选项或C++文件。
 
- [选项、 文本编辑器中， C#、 格式设置](../../ide/reference/options-text-editor-csharp-formatting.md)允许您指定的格式设置选项C#文件。
+ [选项，文本编辑器，C#、 格式设置](../../ide/reference/options-text-editor-csharp-formatting.md)允许您指定为 C# 文件的格式设置选项。
 
- [选项、 文本编辑器中，C#的高级](../../ide/reference/options-text-editor-csharp-advanced.md)允许您指定的高级的选项C#文件。
+ [选项，文本编辑器，C#，高级](../../ide/reference/options-text-editor-csharp-advanced.md)，可指定 C# 文件的高级的选项。
 
- [选项、 文本编辑器中， C#，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)允许您指定的智能感知选项C#文件。
+ [选项，文本编辑器，C#，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) ，可指定 C# 文件的 IntelliSense 选项。
 
  [选项，文本编辑器，XAML，格式设置](../../ide/reference/options-text-editor-xaml-formatting.md)允许您指定的 XAML 文件的格式设置选项。
 

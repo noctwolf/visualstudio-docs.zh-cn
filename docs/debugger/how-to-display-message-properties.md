@@ -1,5 +1,5 @@
 ---
-title: 如何： 显示消息属性 |Microsoft Docs
+title: 如何：显示消息属性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894308"
 ---
 # <a name="how-to-display-message-properties"></a>如何：显示消息属性
 若要了解有关消息中列出的详细信息[消息视图](../debugger/messages-view.md)，使用[消息属性对话框](../debugger/message-properties-dialog-box.md)。

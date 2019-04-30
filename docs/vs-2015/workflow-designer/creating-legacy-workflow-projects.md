@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976975"
 ---
 # <a name="creating-legacy-workflow-projects"></a>创建旧版工作流项目
 本节介绍如何使用 vs2010 提供的旧 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 来创建工作流项目。 旧 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 面向 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。 它包括有关如何使用下表所列出的工作流项目模板的信息。  

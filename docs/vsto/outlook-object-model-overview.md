@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442396"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序， <xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹， <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。
@@ -65,7 +65,7 @@ ms.locfileid: "60061926"
   若要获取的实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`在项目中的类。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
 
 > [!NOTE]
->  若要帮助避免出现安全警告，当使用由 Outlook 对象模型监护阻止的属性和方法时，获取 Outlook 对象的应用程序域中`ThisAddIn`类。 有关详细信息，请参阅[Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。
+> 若要帮助避免出现安全警告，当使用由 Outlook 对象模型监护阻止的属性和方法时，获取 Outlook 对象的应用程序域中`ThisAddIn`类。 有关详细信息，请参阅[Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。
 
 ### <a name="explorer-object"></a>资源管理器对象
  <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象表示一个窗口，该窗口显示包含项（如电子邮件、任务或约会）的文件夹的内容。 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象包括方法和属性，可用于修改窗口以及窗口更改时引发的事件。

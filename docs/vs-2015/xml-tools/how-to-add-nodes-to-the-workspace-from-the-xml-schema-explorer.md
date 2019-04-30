@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fef367b36a683111369b656c8c1ba5a285fe6df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417466"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>如何：从 XML 架构资源管理器向工作区添加节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60043969"
 本主题说明如何将节点添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)从 XML 架构资源管理器。 这可以通过将节点从 XML 架构资源管理器拖放到 XSD 设计器视图，或使用 XML 架构资源管理器的上下文菜单来实现。 还可以添加由于 XML 架构资源管理器执行的搜索而突出显示的节点。 有关详细信息，请参阅[如何：将架构集搜索结果节点添加到工作区](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md)。  
   
 > [!NOTE]
->  只能将全局节点可以添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)。  
+> 只能将全局节点可以添加到[XML 架构设计器工作区](../xml-tools/xml-schema-designer-workspace.md)。  
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>通过 XML 资源管理器上下文菜单添加节点  
   

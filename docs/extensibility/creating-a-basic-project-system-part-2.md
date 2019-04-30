@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926718"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 在此系列中，在第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练中的基础上基本项目系统添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。

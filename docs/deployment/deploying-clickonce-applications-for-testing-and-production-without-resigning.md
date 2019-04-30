@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407055"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>无需重新签名部署 ClickOnce 应用程序测试和生产服务器
 本文介绍 ClickOnce 在.NET Framework 版本 3.5，而无需重新签名或更改 ClickOnce 使从多个网络位置的 ClickOnce 应用程序的部署清单中引入的一项功能。
 
 > [!NOTE]
->  重新签名仍是用于部署新版本的应用程序的首选的方法。 只要有可能，使用重新签名的方法。 有关详细信息，请参阅 [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
+> 重新签名仍是用于部署新版本的应用程序的首选的方法。 只要有可能，使用重新签名的方法。 有关详细信息，请参阅 [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
  第三方开发人员和 Isv 可以选择启用此功能，使其客户更新他们的应用程序更轻松。 在以下情况下，可以使用此功能：
 

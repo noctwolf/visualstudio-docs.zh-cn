@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfb96a50192cc1da0c23c037a33119658ef17d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b9252db6202754e534b1af8a284d768fcd70eb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434555"
 ---
 # <a name="simplified-embedding"></a>简化的嵌入
 当其文档视图对象的父级 （即，做出的子级） 简化的嵌入在编辑器中启用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>接口实现以处理其窗口命令。 简化的嵌入编辑器不能托管活动控件。 在下图显示用于创建编辑器具有简化的嵌入的对象。
@@ -23,7 +23,7 @@ ms.locfileid: "56696774"
  ![简化的嵌入式编辑器图形](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")具有简化的嵌入编辑器
 
 > [!NOTE]
->  在此图中，仅对象的`CYourEditorFactory`创建标准的基于文件的编辑器所需的对象。 如果要创建自定义编辑器，不需要实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因为你的编辑器可能具有其自己的专用持久性机制。 为非自定义编辑器，但是，则必须这样做。
+> 在此图中，仅对象的`CYourEditorFactory`创建标准的基于文件的编辑器所需的对象。 如果要创建自定义编辑器，不需要实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因为你的编辑器可能具有其自己的专用持久性机制。 为非自定义编辑器，但是，则必须这样做。
 
  中包含所有接口实现以创建具有简化的嵌入编辑器`CYourEditorDocument`对象。 但是，若要支持文档数据的多个视图，拆分到单独的数据与视图对象上的接口下表中所示。
 

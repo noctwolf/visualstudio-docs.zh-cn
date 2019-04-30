@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970209"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Excel 键盘，Microsoft Office 键盘设置选项对话框
   Microsoft Office Excel 和 Visual Studio 同时处理键盘快捷方式。 在 Excel 中，在 Visual Studio 中不同的命令可以代表相同快捷键组合。 在 Visual Studio 中的文档级项目中打开 Excel 时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷方式命令，但您可以使 Excel 文档通过选择具有焦点时接收它们**动态键盘方案**。

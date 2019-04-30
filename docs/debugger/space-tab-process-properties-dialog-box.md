@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929824"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“空间”选项卡
-使用**空间**选项卡可以检查进程的地址空间。 若要显示[进程属性对话框](../debugger/process-properties-dialog-box.md)，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 在树中，选择任何进程节点，然后选择**属性**从**视图**菜单。
+使用**空间**选项卡可以检查进程的地址空间。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”菜单中选择“属性”。
 
  以下设置位于**空间**选项卡：
 
-|条目|说明|
+|条目|描述|
 |-----------|-----------------|
 |**显示这种标记的空间**|使用此列表框中选择的空间 （图像、 映射、 保留或取消分配） 的类别。|
 |**可执行字节数**|所选的类别，此进程正在使用的地址空间之和。 可执行文件的内存是可以由程序执行，但不是能读取或写入的内存。|

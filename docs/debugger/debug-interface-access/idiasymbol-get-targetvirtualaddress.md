@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ade3d2d968a7b152c982f34fc03144f21059e007
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 793d27f31785b530815073e0cad57630c1192aa2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399982"
 ---
 # <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
 检索转换 （thunk） 目标的虚拟地址 (VA)。
@@ -39,7 +39,7 @@ HRESULT get_targetVirtualAddress ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="remarks"></a>备注
  此属性才有效才形式的符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagThunk`。

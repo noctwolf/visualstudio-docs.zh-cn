@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430487"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>向 UML 模型元素添加构造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ ms.locfileid: "60043641"
 1. 右键单击模型元素或关系图上或在关系**UML 模型资源管理器**，然后单击**属性**。  
   
     > [!NOTE]
-    >  要向多个元素添加相同构造型，可以选择多个元素，然后右键单击其中之一。  
+    > 要向多个元素添加相同构造型，可以选择多个元素，然后右键单击其中之一。  
   
 2. 单击**构造型**属性，然后选择你想要应用的构造型。  
   
      对于大多数类型的元素和关系，所选择的构造型在模型元素的 «尖括号» 内显示。  
   
     > [!NOTE]
-    >  如果无法看到**构造型**属性，或如果未显示所需的构造型，验证模型元素是内包或相应的配置文件链接到模型。  
+    > 如果无法看到**构造型**属性，或如果未显示所需的构造型，验证模型元素是内包或相应的配置文件链接到模型。  
   
 3. 某些构造型允许你设置模型元素的其他属性的值。 若要查看这些属性，请展开**构造型**属性。  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433115"
 ---
 # <a name="define-a-work-item-link-handler"></a>定义工作项链接处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  出于测试目的，在调试模式下执行链接处理程序。  
   
 > [!WARNING]
->  必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
+> 必须已连接到 TFS 源代码管理 (SCC) 才可创建或链接到工作项。 如果尝试打开到其他 TFS SCC 的连接，则 Visual Studio 会自动关闭当前解决方案。 请先确保已连接到相应的 SCC，然后再尝试创建或链接到工作项。 在更高版本的 Visual Studio 中，如果未连接到 SCC，则菜单命令不可用。  
   
 #### <a name="to-test-the-link-handler"></a>测试链接处理程序  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  若要使此示例中起作用，必须添加对 `System.Drawing.dll`的项目引用，并导入命名空间 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`。 但是，对于 `OnWorkItemLinked` 的其他实现则无需这些添加。  
+> 若要使此示例中起作用，必须添加对 `System.Drawing.dll`的项目引用，并导入命名空间 `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`。 但是，对于 `OnWorkItemLinked` 的其他实现则无需这些添加。  
   
 ### <a name="listening-for-link-removal"></a>侦听链接删除  
  恰好在删除的每个工作项之前调用 `OnWorkItemRemoved`。 如果删除了模型元素，则将删除其所有链接。  

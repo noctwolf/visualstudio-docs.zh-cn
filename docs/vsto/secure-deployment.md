@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1000504ad83706bd028af4bd668da7483e478b7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978363"
 ---
 # <a name="secure-deployment"></a>安全部署
   创建 Office 解决方案时，是自动更新你的开发计算机以允许你运行的项目中的代码。 但是，在部署你的解决方案时，必须提供要签名的证书，该解决方案或使用基于信任决定的证据[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示密钥。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。

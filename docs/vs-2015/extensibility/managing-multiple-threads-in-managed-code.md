@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e7198623283fa3ef9c82d6a39a1f7c1db6c760c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433034"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>在托管代码中管理多个线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60111046"
  一般情况下，可以从 UI 线程切换到不同的线程，反之亦然。 方法返回时，当前线程是从其它最初调用的线程。  
   
 > [!IMPORTANT]
->  以下指导原则使用中的 Api<xref:Microsoft.VisualStudio.Threading>命名空间，具体而言，<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>类。 此命名空间中的 Api 是中的新增功能[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。 可以获取的实例<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>从<xref:Microsoft.VisualStudio.Shell.ThreadHelper>属性`ThreadHelper.JoinableTaskFactory`。  
+> 以下指导原则使用中的 Api<xref:Microsoft.VisualStudio.Threading>命名空间，具体而言，<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>类。 此命名空间中的 Api 是中的新增功能[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]。 可以获取的实例<xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>从<xref:Microsoft.VisualStudio.Shell.ThreadHelper>属性`ThreadHelper.JoinableTaskFactory`。  
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>从 UI 线程切换到后台线程  
   

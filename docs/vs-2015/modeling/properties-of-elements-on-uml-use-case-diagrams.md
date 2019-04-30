@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbe2a9f3d46be72ae1e463da7c6173ef0571bc89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b52afab80bc22c03dc5ff980b937cad53869f5db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444414"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>UML 用例图上元素的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58931819"
 在 UML 用例图中，关系图上的每个元素都具有属性。 若要查看某个元素的属性，请右键单击元素关系图上或在**UML 模型资源管理器**，然后单击**属性**。 属性将显示在**属性**窗口。  
   
 > [!NOTE]
->  本主题是关于在 UML 用例图中的元素的属性。 有关如何读取 UML 活动图的详细信息，请参阅[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)。 有关如何绘制 UML 活动图的详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+> 本主题是关于在 UML 用例图中的元素的属性。 有关如何读取 UML 活动图的详细信息，请参阅[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)。 有关如何绘制 UML 活动图的详细信息，请参阅[UML 用例图：指导原则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
 ## <a name="properties-of-elements"></a>元素的属性  
   

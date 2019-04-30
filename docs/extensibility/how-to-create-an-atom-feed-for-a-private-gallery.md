@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862987"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：创建 Atom 馈送专用库
 您可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到的源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。

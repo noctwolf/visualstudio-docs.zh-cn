@@ -8,12 +8,12 @@ ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d31dcaaf450f21f2c1db6666e38ad048dfeaf12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f17b875f0637883222a633cb1082ad24788d4c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431346"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio 的通知和进度
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -421,7 +421,7 @@ private bool TryCreateInfoBarUI(IVsInfoBar infoBar, out IVsInfoBarUIElement uiEl
 - 在文档选项卡
 
 > [!IMPORTANT]
->  就可以放置一个信息栏，以提供有关全局上下文的消息。 这将显示工具栏和文档井中之间。 不建议，因为它会导致问题的"跳转和跃度"的 IDE，应当避免，除非绝对必要且适用。
+> 就可以放置一个信息栏，以提供有关全局上下文的消息。 这将显示工具栏和文档井中之间。 不建议，因为它会导致问题的"跳转和跃度"的 IDE，应当避免，除非绝对必要且适用。
 
 #### <a name="placing-an-infobar-in-a-toolwindowpane"></a>置于 ToolWindowPane 信息栏
  ToolWindowPane.AddInfoBar(IVsInfoBar) 方法可以用于将一个信息栏添加到工具窗口。 此 API 可以添加 IVsInfoBar （哪个 InfoBarModel 为默认实现），或 ivsuielement。

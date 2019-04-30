@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815626"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -50,7 +50,7 @@ ms.locfileid: "58325076"
 
 - 数据集和 TableAdapter。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)并[Tableadapter](../data-tools/create-and-configure-tableadapters.md)。
 
-- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
+- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
 
 ## <a name="create-the-project"></a>创建项目
 
@@ -256,7 +256,7 @@ ms.locfileid: "58325076"
 
 - 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅[绑定 WPF 控件添加到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅[演练： 在 WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)。
+- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参见[演练：在 WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)。
 
 ## <a name="see-also"></a>请参阅
 

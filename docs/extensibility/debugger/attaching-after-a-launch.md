@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409950"
 ---
 # <a name="attach-after-a-launch"></a>启动后附加
 程序启动后，调试会话已准备好附加到上述程序的调试引擎 (DE)。
@@ -28,7 +28,7 @@ ms.locfileid: "60065579"
 - 如果它更有意义设置 DE 与程序之间的通信，运行时环境共同创建 DE。 这种设计离开一个地址空间和 DE、 运行时环境和程序中的 SDM 中另一个合并在一起。 这种设计是典型的部署使用解释器以运行脚本化的语言实现。
 
     > [!NOTE]
-    >  如何将 DE 附加到该程序是依赖于实现的。 DE 和程序之间的通信也是依赖于实现的。
+    > 如何将 DE 附加到该程序是依赖于实现的。 DE 和程序之间的通信也是依赖于实现的。
 
 ## <a name="implementation"></a>实现
  以编程方式，当会话调试管理器 (SDM) 首次收到[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)对象，该对象表示要启动的程序，它将调用[附加](../../extensibility/debugger/reference/idebugprogram2-attach.md)方法，并向其传递[IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)对象，它是更高版本用于传递回 SDM 调试事件。 `IDebugProgram2::Attach`方法随后调用[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。 有关详细信息如何 SDM 接收`IDebugProgram2`接口，请参阅[通知端口](../../extensibility/debugger/notifying-the-port.md)。

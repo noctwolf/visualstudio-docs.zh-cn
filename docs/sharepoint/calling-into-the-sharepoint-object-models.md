@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988399"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>调入 SharePoint 对象模型
   在 Visual Studio 中创建 SharePoint 工具扩展时，可能需要调用 SharePoint Api 来执行特定任务。 例如，如果创建 SharePoint 项目自定义部署步骤时，您可能需要调用 SharePoint Api 来执行一些任务来部署解决方案。

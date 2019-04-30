@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910321"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>公开 Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 允许使用自动化源事件。 我们建议源项目和项目项的事件。
@@ -52,7 +52,7 @@ ms.locfileid: "56603152"
 
  **AutomationProjectItemEvents** = 返回`AutomationProjectItemsEvents`对象。
 
-|name|类型|范围|描述|
+|名称|类型|范围|描述|
 |----------|----------|-----------|-----------------|
 |默认值 (@)|REG_SZ|未使用|未使用。 数据字段可用于文档。|
 |*AutomationProjectsEvents*|REG_SZ|事件对象的名称。|只有密钥的名称为相关。 数据字段可用于文档。<br /><br /> 此示例来自基本项目示例。|

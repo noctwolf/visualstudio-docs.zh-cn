@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990487"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 将此应用程序节点添加到指定的项目树。  
@@ -42,7 +42,7 @@ HRESULT Attach(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

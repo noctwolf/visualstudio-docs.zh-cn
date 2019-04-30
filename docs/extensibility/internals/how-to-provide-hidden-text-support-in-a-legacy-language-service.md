@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3bec39ca044b0558dfeb9603137571a61c96548
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e710f0ca097ef1808abc661e16cdff34c82bd348
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418480"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何：提供旧版语言服务中的隐藏的文本支持
 你可以创建大纲区域除了隐藏的文本区域。 隐藏的文本区域可以是客户端控制或编辑器控制和用于完全隐藏的文本区域。 编辑器为水平线条显示隐藏的区域。 这就**仅限脚本**HTML 编辑器中的视图。
@@ -35,13 +35,13 @@ ms.locfileid: "60078845"
      一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>返回对象。
 
     > [!NOTE]
-    >  当您调用`CreateHiddenTextSession`，可以指定一个隐藏的文本，客户端 (即， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>)。 隐藏的文本或大纲显示展开或折叠的用户时，隐藏的文本，客户端将通知你。
+    > 当您调用`CreateHiddenTextSession`，可以指定一个隐藏的文本，客户端 (即， <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>)。 隐藏的文本或大纲显示展开或折叠的用户时，隐藏的文本，客户端将通知你。
 
 4. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>以添加一个或其他新大纲区域时，指定以下信息在`reHidReg`(<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) 参数：
 
     1. 指定的值`hrtConcealed`中`iType`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构，以指示要创建一个隐藏的区域，而不是大纲区域。
 
         > [!NOTE]
-        >  隐藏的区域处于隐藏状态，编辑器将自动显示要指明其状态的隐藏区域周围的线。
+        > 隐藏的区域处于隐藏状态，编辑器将自动显示要指明其状态的隐藏区域周围的线。
 
     2. 指定区域是否受客户端管理，或以编辑器控制`dwBehavior`的成员<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>结构。 智能的大纲显示实现可以包含多个编辑器和客户端控制大纲和隐藏的文本区域。

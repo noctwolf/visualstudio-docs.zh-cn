@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406726"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可移动媒体，才能供用户使用。 可以使用发布向导发布应用程序；与发布相关的其他属性位于“项目设计器”的“发布”页中。 有关详细信息，请参阅[发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)。
@@ -80,7 +80,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
 4. 在“用户如何安装应用程序?”页上，单击“从 CD-ROM 或 DVD-ROM”，然后单击“下一步”。
 
    > [!NOTE]
-   >  如果希望在将 CD-ROM 插入驱动器时自动运行安装，请打开“项目设计器”中的“发布”页，并单击“选项”按钮，然后在“发布选项”向导中，选择“对于 CD 安装，插入 CD 时自动启动安装程序”。
+   > 如果希望在将 CD-ROM 插入驱动器时自动运行安装，请打开“项目设计器”中的“发布”页，并单击“选项”按钮，然后在“发布选项”向导中，选择“对于 CD 安装，插入 CD 时自动启动安装程序”。
 
 5. 如果在 CD-ROM 上发布应用程序，可能会希望从网站提供更新。 在“应用程序将到哪里检查更新?”页中，选择更新选项：
 
@@ -95,7 +95,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
     发布状态显示在状态通知区域中。
 
    > [!NOTE]
-   >  完成发布后，必须使用 CD 刻录机或 DVD 刻录机从步骤 3 中指定的位置将文件复制到 CD-ROM 或 DVD-ROM 媒体。
+   > 完成发布后，必须使用 CD 刻录机或 DVD 刻录机从步骤 3 中指定的位置将文件复制到 CD-ROM 或 DVD-ROM 媒体。
 
 ## <a name="see-also"></a>请参阅
 

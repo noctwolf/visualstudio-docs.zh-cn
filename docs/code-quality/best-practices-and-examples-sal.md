@@ -8,18 +8,18 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560028"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 下面是一些关于充分利用源代码批注语言 (SAL)，并避免一些常见问题的方法。
 
 ## <a name="in"></a>\_In\_
 
-如果函数应写入元素，请使用 `_Inout_` 而不是 `_In_`。 这在从旧的宏自动转换为 SAL 的情况下尤为重要。 在 SAL 之前，许多程序员使用宏作为注释，这些宏命名为 `IN`、`OUT`、`IN_OUT`，或是这些宏的变体。 尽管建议你将这些宏转换为 SAL，但在转换时应谨慎，因为代码自写入原型以来可能已经发生改变，并且旧的宏可能已不再反映代码的作用。 请特别注意 `OPTIONAL` 注释宏，因为它经常错误放置；例如，在逗号错误的一边。
+如果函数应写入元素，请使用 `_Inout_` 而不是 `_In_`。 这在从旧的宏自动转换为 SAL 的情况下尤为重要。 在 SAL 之前，许多程序员使用宏作为注释，这些宏命名为 `IN`、`OUT`、`IN_OUT`，或是这些宏的变体。 尽管建议您将这些宏转换为 SAL，但在转换时应谨慎，因为代码自写入原型以来可能已经发生改变，并且旧的宏可能已不再反映代码的作用。 请特别注意 `OPTIONAL` 注释宏，因为它经常错误放置；例如，在逗号错误的一边。
 
 ```cpp
 
@@ -238,7 +238,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>请参阅
 
-[使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [了解 SAL](../code-quality/understanding-sal.md)
 [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)
 [对函数行为进行批注](../code-quality/annotating-function-behavior.md)

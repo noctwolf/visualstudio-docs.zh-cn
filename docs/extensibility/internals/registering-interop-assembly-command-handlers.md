@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: b07f018a35874e2ffc3f3be825abb227f2996aea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425459"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>注册互操作程序集命令处理程序
 VSPackage 必须使用注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，以便在集成的开发环境 (IDE) 将正确路由命令。
@@ -31,7 +31,7 @@ VSPackage 必须使用注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs
  VSPackage 充当用户界面 (UI) 的处理程序的基于的命令需要名为后 VSPackage 的注册表项`GUID`。 此注册表项指定 VSPackage 的用户界面资源文件和文件内的菜单资源的位置。 注册表项本身位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本 >* \Menus，其中*\<版本 >* 是的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。
 
 > [!NOTE]
->  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell 进行初始化。 根路径的详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
+> HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell 进行初始化。 根路径的详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 资源注册表项
  注册表项的结构为：

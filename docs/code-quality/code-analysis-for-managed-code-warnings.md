@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d6238919db971492ffd226708209b97bceceb9e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540763"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>托管代码的代码分析警告
 托管代码分析工具可以发出警告，指示托管代码库中存在违反规则的情况。 这些警告将被分类到各个规则领域，例如设计、本地化、性能和安全性。 每个警告表示一次托管代码分析规则冲突。 本部分深入讨论每个托管代码分析警告，并提供相关示例。

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 361df287c626861e82607a9e4cf7edf6cab85a5a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8fc13197f668f7e046ec8ffc40da246c04449e94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402506"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 检索地址位置的偏移量的部分。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为`LocIsStatic`。
@@ -39,7 +39,7 @@ HRESULT get_addressOffset ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="remarks"></a>备注
  对于位于外部 DLL 中的静态成员，此方法返回的偏移量可能为 0，因为此方法依赖于获取成员的虚拟地址。 虚拟地址都有效才[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)中的方法[IDiaSession](../../debugger/debug-interface-access/idiasession.md)已使用指定的 dll 加载地址的非零参数调用接口。
@@ -48,7 +48,7 @@ HRESULT get_addressOffset ( 
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v7.0|

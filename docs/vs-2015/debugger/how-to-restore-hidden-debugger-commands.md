@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442080"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>如何：还原隐藏的调试器命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60039346"
 7. 完成将命令添加到菜单后，单击“关闭”。  
   
     > [!WARNING]
-    >  某些菜单项仅在调试器处于特定模式（如运行模式或中断模式）下才显示。 因此，在完成这些步骤后，您所添加的项可能不会立即显示出来。  
+    > 某些菜单项仅在调试器处于特定模式（如运行模式或中断模式）下才显示。 因此，在完成这些步骤后，您所添加的项可能不会立即显示出来。  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>还原“自定义”对话框中不可用的命令  
  某些命令（特别是分层菜单中的命令）无法从“自定义”对话框中还原。 要还原这些命令，必须导入一组新的 IDE 设置。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 79385348aa9290f26a34b99dbd2d6f68cb92dc8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920228"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 获取触发此事件的异常的详细的说明。
@@ -46,7 +46,7 @@ int GetException( 
 
 ## <a name="remarks"></a>备注
 
- [C + +]调用方负责释放中的任何字符串[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构，以及释放[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)结构中的对象。
+ [C++仅]调用方负责释放中的任何字符串[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构，以及释放[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)结构中的对象。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

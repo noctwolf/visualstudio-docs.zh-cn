@@ -13,15 +13,15 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820332"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：分析 C/C++ 代码的缺陷
 
-本演练演示如何使用 C/c + + 代码的代码分析工具分析 C/c + + 代码以查找潜在的代码缺陷。
+本演练演示如何分析 C /C++通过代码分析工具用于 C 的潜在代码的代码缺陷 /C++代码。
 
 - 对本机代码中运行代码分析。
 - 分析代码缺陷警告。
@@ -31,7 +31,7 @@ ms.locfileid: "57736926"
 ## <a name="prerequisites"></a>系统必备
 
 - 一份[演示示例](../code-quality/demo-sample.md)。
-- C/c + + 基本了解。
+- 基本了解 C /C++。
 
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>若要对本机代码运行的代码缺陷分析
 
@@ -51,7 +51,7 @@ ms.locfileid: "57736926"
 
 5. 单击**代码分析**。
 
-6. 单击**上生成 C/c + + 时启用代码分析**复选框。
+6. 单击**于 c 语言时启用代码分析 /C++上生成**复选框。
 
 7. 重新生成 CodeDefects 项目。
 
@@ -113,7 +113,7 @@ ms.locfileid: "57736926"
 
 3. 单击**代码分析**。
 
-4. 选择**上生成 C/c + + 时启用代码分析**复选框。
+4. 选择**于 c 语言时启用代码分析 /C++上生成**复选框。
 
 5. 重新生成批注项目。
 
@@ -179,4 +179,4 @@ ms.locfileid: "57736926"
 ## <a name="see-also"></a>请参阅
 
 [演练：分析托管代码的代码缺陷](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-[C/c + + 代码分析](../code-quality/code-analysis-for-c-cpp-overview.md)
+[的 C 代码分析 /C++](../code-quality/code-analysis-for-c-cpp-overview.md)

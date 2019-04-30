@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 032ee551ff04590ccdb8744c1274b137dec0b756
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982322"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>使用 Excel 工作表上的 Windows 窗体控件
   以相同方式向 Windows 窗体添加控件，可以向 Microsoft Office Excel 工作簿添加 Windows 窗体控件。 有关使用文档上的控件的常规信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。

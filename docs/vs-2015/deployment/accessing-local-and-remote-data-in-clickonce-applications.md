@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427236"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60040064"
  数据目录预期用于应用程序管理的数据，即应用程序显式存储和维护的数据。 应用程序清单中未标记为“数据”的所有静态非依赖文件都将改为驻留在应用程序目录中。 此目录是应用程序的可执行文件 (.exe) 文件和程序集所在的位置。  
   
 > [!NOTE]
->  卸载 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，也会删除其数据目录。 切勿使用数据目录来存储最终用户管理的数据，如文档。  
+> 卸载 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，也会删除其数据目录。 切勿使用数据目录来存储最终用户管理的数据，如文档。  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>在 ClickOnce 分发中标记数据文件  
  若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关详细信息，请参阅[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
@@ -52,7 +52,7 @@ ms.locfileid: "60040064"
  读取数据目录要求你的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序请求读取权限；同样，写入目录也需要写入权限。 如果它被配置为使用完全信任的权限运行，则你的应用程序将自动拥有此权限。 有关提升权限的使用权限提升或受信任的应用程序部署的应用程序的详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
   
 > [!NOTE]
->  如果你的组织不使用信任的应用程序部署，并且已经关闭了权限提升，则断言权限将失效。  
+> 如果你的组织不使用信任的应用程序部署，并且已经关闭了权限提升，则断言权限将失效。  
   
  应用程序具有这些权限后，就可以通过对 <xref:System.IO>中的类进行方法调用访问数据目录。 你可以通过使用在 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 的 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 属性上定义的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 属性，获取 Windows 窗体 <xref:System.Deployment.Application.ApplicationDeployment>应用程序中数据目录的路径。 这是访问数据的最简便方法，并且推荐使用此方法。 下面的代码示例演示如何对名为 CSV.txt 且已作为数据文件包括到部署中的文本文件执行此操作。  
   

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e1704a33abddada9a439786b408a8bc7bceeba0d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925770"
 ---
 # <a name="evaluate-a-watch-expression"></a>计算监视表达式
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "56711223"
 
 在此实现中的`IDebugParsedExpression::EvaluateSync`，该表达式进行分析和计算在同一时间。 此实现将执行以下任务：
 
-1. 分析和计算表达式来生成用于保存的值，其类型的泛型对象。 在 C# 中，这表示为`object`在 c + +，这表示为`VARIANT`。
+1. 分析和计算表达式来生成用于保存的值，其类型的泛型对象。 在C#，这表示为`object`中时，在C++，这表示为`VARIANT`。
 
 2. 实例化一个类 (称为`CValueProperty`在此示例中)，它实现`IDebugProperty2`接口，并存储在类中要返回的值。
 

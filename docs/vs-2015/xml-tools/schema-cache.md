@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435343"
 ---
 # <a name="schema-cache"></a>架构缓存
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60115986"
  编辑器在加载“XML 编辑器”软件包时加载架构缓存目录，并在运行时监视是否发生更改。 如果架构已添加，将自动加载到已知架构的内存中索引。 如果架构已移除，它将自动从内存中索引移除。 如果架构已更新，将自动使此架构的内存中缓存失效。  
 
 > [!NOTE]
->  由于架构缓存目录适用于整个计算机，因此，只应在此处添加标准的、适用于在计算机上可能创建的所有 Visual Studio 项目的架构。  
+> 由于架构缓存目录适用于整个计算机，因此，只应在此处添加标准的、适用于在计算机上可能创建的所有 Visual Studio 项目的架构。  
 
  “XML 编辑器”还支持在架构缓存目录中包含任意数目的架构编录文件。 架构编录可以指向您始终希望编辑器了解的其他架构位置。 catalog.xsd 文件定义编录文件的格式并包含在架构缓存目录中。 catalog.xml 文件是默认的编录，包含指向 %InstallDir% 中的其他架构的链接。 以下是 catalog.xml 文件的示例：  
 
@@ -105,7 +105,7 @@ ms.locfileid: "60115986"
  你可以自定义架构缓存使用的位置**杂项**选项页。 如果有包含喜欢的架构的目录，可以将编辑器配置为转为使用这些架构。  
 
 > [!NOTE]
->  此更改只影响当前的 Visual Studio 用户。  
+> 此更改只影响当前的 Visual Studio 用户。  
 
 #### <a name="to-change-the-schema-cache-location"></a>更改架构缓存的位置  
 

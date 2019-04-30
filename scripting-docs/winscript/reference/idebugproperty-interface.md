@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979057"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty 接口
 用于描述任何层次结构正在调试的实体的属性具有名称、 类型和值。 大多数情况下，`IDebugProperty`用于描述表达式计算、 语句评估或注册评估的结果。  

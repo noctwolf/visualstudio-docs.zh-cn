@@ -1,5 +1,5 @@
 ---
-title: 错误： TRANSACT-SQL 执行结束，而不进行调试 |Microsoft Docs
+title: 错误：TRANSACT-SQL 执行未经调试便已结束 |Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71d1f14bef8eb69fa6c6fc4d9c3f669826079c99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850161"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>错误：Transact-SQL 执行未经调试便已结束
 
@@ -40,7 +40,7 @@ ms.locfileid: "56722338"
 
   若要纠正此错误，可能需要：
 
-  - 验证权限设置。 有关详细信息，请参阅[如何： 设置 SQL Server 调试权限](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。
+  - 验证权限设置。 有关详细信息，请参阅[如何：设置 SQL Server 权限以进行调试](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。
 
   - 如果设置正确，请确保 SQL 调试也正确。
 
@@ -49,6 +49,6 @@ ms.locfileid: "56722338"
 ## <a name="see-also"></a>请参阅
 
 - [设置 SQL 调试](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [如何： 设置 SQL Server 权限以进行调试](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [如何：设置 SQL Server 权限以进行调试](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)
 - [远程调试](../debugger/remote-debugging.md)

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05911005a0ad64687b4381684609c0aecb9005f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843613"
 ---
 # <a name="archive"></a>存档
 本部分包含的 Visual Studio 可扩展性技术，仍受支持但具有更新的文件的替代技术的讨论。

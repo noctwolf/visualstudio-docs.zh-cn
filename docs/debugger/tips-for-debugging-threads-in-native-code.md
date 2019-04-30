@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8ee1f1f2f2029325e3d3b87ca44d05d800a62c07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901870"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>调试本机代码中的线程时的提示
 下面是在调试本机代码中的线程时可以使用的一些提示：

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927534"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;元素 （ClickOnce 部署）
 包含有关为此部署清单签名的发布者的信息。
@@ -38,7 +38,7 @@ ms.locfileid: "56628437"
 ## <a name="elements-and-attributes"></a>元素和属性
  `publisherIdentity`元素是必需的签名的清单。 下表显示特性的`publisherIdentity`元素支持。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`name`|必需。 描述发布此应用程序的参与方的标识。|
 |`issuerKeyHash`|必需。 包含证书颁发者的公钥的 sha-1 哈希。|
@@ -47,7 +47,7 @@ ms.locfileid: "56628437"
 
 ## <a name="property-valuereturn-value"></a>属性值/返回值
 
-## <a name="exceptions"></a>异常
+## <a name="exceptions"></a>Exceptions
 
 ## <a name="remarks"></a>备注
 

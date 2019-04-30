@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415208"
 ---
 # <a name="expose-types-to-visual-designers"></a>可视化设计器向公开类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须具有访问的类和类型定义在设计时才能显示一个可视化设计器。 从一组预定义的包含完整的依赖项集的当前项目 （引用以及其依赖项） 的程序集加载的类。 可能还会对访问类和自定义工具生成的文件中定义的类型所需的可视化设计器。
@@ -27,7 +27,7 @@ ms.locfileid: "60104054"
  项目系统提供完全支持跟踪以更改到的输出文件的自定义工具，前提是这些更改是正在运行的自定义工具的结果。 每次运行自定义工具时，生成新的临时 PE，并相应通知发送到设计器。
 
 > [!NOTE]
->  因为临时程序可执行文件的生成文件在后台发生，所以在编译失败，向用户未不报告任何错误。
+> 因为临时程序可执行文件的生成文件在后台发生，所以在编译失败，向用户未不报告任何错误。
 
  自定义工具，它们利用临时 PE 支持必须遵循以下规则：
 

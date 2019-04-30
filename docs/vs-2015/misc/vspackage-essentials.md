@@ -10,11 +10,11 @@ ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: 7b9f8dc80f7985e7b9b7545dd0c8e78d748cd4d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953759"
 ---
 # <a name="vspackage-essentials"></a>VSPackage 要点
 VSPackage 是软件模块，它们通过 UI 元素、服务、项目、编辑器和设计器来组成并扩展 Visual Studio。 VSPackage 是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的中央体系结构单元。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 本身多半以 VSPackage 集合的形式进行编写。  

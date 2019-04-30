@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001933"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：XML 编辑器中执行 XSLT 转换
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：通过 XML 编辑器执行 XSLT 转换
 
 XML 编辑器，可将 XSLT 样式表与 XML 文档相关联、 执行转换，并查看输出。 由 XSLT 转换生成的输出显示在新的文档窗口中。
 

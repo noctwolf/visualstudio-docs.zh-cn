@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7d8b859efa5fac2e3643f4d3a0bd694cd2edd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04842202e8534c551212d7322ab74e9b0ace5848
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446182"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>预提取 Windows 应用商店应用的内容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58932504"
    现在可以利用预提取的 Web 资源来调试、测试或分析应用程序。  
   
 > [!NOTE]
->  当你添加或修改指定的 Web 内容时，请重复上述步骤。  
+> 当你添加或修改指定的 Web 内容时，请重复上述步骤。  
   
 ## <a name="see-also"></a>请参阅  
  [博客文章：在 Visual Studio 2013 Update 2 中的 Windows 应用商店应用程序触发预提取](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

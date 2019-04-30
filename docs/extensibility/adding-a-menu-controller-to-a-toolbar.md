@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2938da8f5f24c5c60cfe8d09423be886de1d0c86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843847"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 本演练基于[将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md)演练，并演示如何将菜单控制器添加到工具窗口工具栏。 如下所示的步骤还可应用于在中创建工具栏[将工具栏添加](../extensibility/adding-a-toolbar.md)演练。

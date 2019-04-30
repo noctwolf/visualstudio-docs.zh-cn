@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909316"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：实质上，第二部分
+# <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：揭秘，第 2 部分
 
 在[生成新项目：实质上，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新建项目**填充框的对话框。 让我们假定你已选择了**Visual C# Windows 应用程序**中，已填写**名称**并**位置**文本框中，然后单击确定。
 
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>请参阅
 
-- [生成新项目：实质上，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [生成新项目：揭秘，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

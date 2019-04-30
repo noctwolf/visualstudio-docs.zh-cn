@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892219"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>通过使用传统的 API 访问文本层
 文本层通常封装文本布局的某些方面。 例如，"函数--一次"层隐藏文本之前和之后包含脱字号 （文本插入点） 的函数。

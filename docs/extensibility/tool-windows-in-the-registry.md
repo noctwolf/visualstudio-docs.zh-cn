@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798855"
 ---
 # <a name="tool-windows-in-the-registry"></a>在注册表中的工具 Windows
 提供的工具窗口的 Vspackage 必须使用注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]为工具窗口提供程序。 通过使用 Visual Studio 包模板创建的工具窗口默认情况下执行此操作。 工具窗口提供程序具有指定可见性属性，例如默认工具窗口大小和位置，用作工具窗口窗格和停靠样式的窗口的 GUID 的系统注册表项。

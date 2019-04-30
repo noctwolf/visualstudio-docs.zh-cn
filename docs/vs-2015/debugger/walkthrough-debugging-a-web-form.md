@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ad6fa498fe9b89854f7fe3c74af9636b5b59e47f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444307"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60053814"
 本演练中的步骤向你演示如何调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序（也称为 Web 窗体）。 此外，还会演示如何启动和停止执行、设置断点以及在“监视”窗口中检查变量。  
   
 > [!NOTE]
->  若要完成本演练，您必须在服务器计算机上具有管理员特权。 默认情况下，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程（aspnet_wp.exe 或 w3wp.exe）作为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程运行。 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]，您必须在运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 的计算机上拥有管理员特权。 有关详细信息，请参阅 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
+> 若要完成本演练，您必须在服务器计算机上具有管理员特权。 默认情况下，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程（aspnet_wp.exe 或 w3wp.exe）作为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程运行。 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]，您必须在运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 的计算机上拥有管理员特权。 有关详细信息，请参阅 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   

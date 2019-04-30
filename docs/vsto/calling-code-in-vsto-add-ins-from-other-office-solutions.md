@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939243"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果您有执行从 Web 服务的财务数据计算的 Microsoft Office Excel 的 VSTO 外接程序中，其他解决方案可以通过调用 Excel VSTO 外接程序在运行时执行这些计算。

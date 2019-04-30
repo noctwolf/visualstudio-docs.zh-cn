@@ -13,12 +13,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417910"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ int Attach_V7 ( 
 ## <a name="remarks"></a>备注  
   
 > [!WARNING]
->  起始日期[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]，此方法不能再使用，否则应始终返回`E_NOTIMPL`。 请参阅[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)接口的另一种方法，如果程序节点需要指示不能将它附加到或如果程序节点只需设置程序`GUID`。 否则，实现[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。  
+> 起始日期[!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)]，此方法不能再使用，否则应始终返回`E_NOTIMPL`。 请参阅[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)接口的另一种方法，如果程序节点需要指示不能将它附加到或如果程序节点只需设置程序`GUID`。 否则，实现[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。  
   
 ## <a name="prior-to-visual-studio-2005"></a>在 Visual Studio 2005 之前  
  此方法需要仅当正在调试的程序的地址空间中运行 DE 实现。 否则，此方法应返回`S_FALSE`。  

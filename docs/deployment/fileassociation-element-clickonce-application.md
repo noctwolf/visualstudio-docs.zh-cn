@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928528"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 应用程序）
 标识要与应用程序相关联的文件扩展。
@@ -40,7 +40,7 @@ ms.locfileid: "56608300"
 ## <a name="elements-and-attributes"></a>元素和属性
  `fileAssociation` 元素是可选的。 元素具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`extension`|必需。 要与应用程序相关联的文件扩展名。|
 |`description`|必需。 使用 shell 的文件类型的说明。|

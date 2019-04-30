@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864781"
 ---
 # <a name="stepkind"></a>STEPKIND
 指定用于单步执行步骤种类。

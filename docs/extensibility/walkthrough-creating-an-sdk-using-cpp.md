@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796485"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>演练：使用 SDK 创建C++
 本演练演示如何创建一个本机C++数学库 SDK，打包 SDK 作为 Visual Studio 扩展 (VSIX)，并使用它创建的应用程序。 本演练分为以下步骤：

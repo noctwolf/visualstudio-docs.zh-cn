@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 854371293fd46893f41eef0abc36446f1c7955f0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422391"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency 命名空间（并发可视化工具）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ namespace Concurrency;
   
 ### <a name="namespaces"></a>命名空间  
   
-|name|说明|  
+|名称|描述|  
 |----------|-----------------|  
 |[diagnostic 命名空间](../profiling/diagnostic-namespace.md)|`diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。|  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444345"
 ---
 # <a name="localize-sharepoint-solutions"></a>本地化 SharePoint 解决方案
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639916"
  若要本地化解决方案，您从代码中移除硬编码的字符串，它们提取到资源文件。 资源文件是[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-基于使用的文件 *.resx*扩展。 资源文件包含你的解决方案中使用的字符串的翻译的版本。 有关详细信息，请参阅[应用程序中的资源](http://go.microsoft.com/fwlink/?LinkID=155844)。
 
 > [!NOTE]
->  将只有字符串资源添加到 SharePoint 解决方案资源文件。 尽管资源编辑器，您可以添加非字符串资源，但非字符串资源不会部署到 SharePoint。
+> 将只有字符串资源添加到 SharePoint 解决方案资源文件。 尽管资源编辑器，您可以添加非字符串资源，但非字符串资源不会部署到 SharePoint。
 
 ## <a name="resource-files"></a>资源文件
  有三种类型的资源文件： 默认、 非特定语言和特定于语言的。
@@ -76,7 +76,7 @@ $Resources:String ID
  设置**部署类型**到每个资源文件的属性**AppGlobalResource**。 这会导致要部署到 App_GlobalResources 文件夹，其中它们可供所有 ASPX 页面和控件在解决方案中的资源文件。 App_GlobalResources 文件夹位于 C:\inetpub\wwwroot\wss\VirtualDirectories\\< 端口号\>\App_GlobalResources。
 
 > [!NOTE]
->  如果使用非全局资源文件，请将它们移到项目项文件夹，若要启用的部署类型属性和其他特定于 SharePoint 的属性。
+> 如果使用非全局资源文件，请将它们移到项目项文件夹，若要启用的部署类型属性和其他特定于 SharePoint 的属性。
 
  此外可以使用 ASPX 标记资源文件来本地化代码。 如果使用的资源来本地化除 ASPX 标记之外的代码，生成操作属性将设置保留的每个文件为嵌入的资源，以便将资源编译到附属程序集。 但是，如果使用的资源文件来本地化标记，你可以选择更改生成操作以防止文件被编译到主应用程序程序集的内容。
 

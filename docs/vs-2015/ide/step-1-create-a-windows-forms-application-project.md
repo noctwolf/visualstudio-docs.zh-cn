@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441991"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步骤 1：创建 Windows 窗体应用程序项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60110019"
 4. 下图显示了此时应在 Visual Studio 界面中看到的内容。  
   
     > [!NOTE]
-    >  您的窗口布局可能与此图不完全相同。 确切的窗口布局取决于 Visual Studio 的版本、所使用的编程语言以及一些其他因素。 但是，您应验证是否显示了全部三个窗口。  
+    > 您的窗口布局可能与此图不完全相同。 确切的窗口布局取决于 Visual Studio 的版本、所使用的编程语言以及一些其他因素。 但是，您应验证是否显示了全部三个窗口。  
   
      ![IDE 窗口](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 IDE 窗口  
@@ -57,7 +57,7 @@ IDE 窗口
     - **“属性”窗口** 在此窗口中，可更改在其他窗口中选择的项的属性。 例如，如果选择 Form1，则可以通过设置“Text”属性更改其标题，还可以通过设置“Backcolor”属性更改背景色。  
   
     > [!NOTE]
-    >  **解决方案资源管理器**的顶行显示**解决方案 PictureViewer（1 个项目）**，这意味着 Visual Studio 已为你创建一个解决方案。 一个解决方案可以包含多个项目，但现在，您将使用只包含一个项目的解决方案。  
+    > **解决方案资源管理器**的顶行显示**解决方案 PictureViewer（1 个项目）**，这意味着 Visual Studio 已为你创建一个解决方案。 一个解决方案可以包含多个项目，但现在，您将使用只包含一个项目的解决方案。  
   
 6. 在菜单栏上，依次选择“文件”、“全部保存”。  
   

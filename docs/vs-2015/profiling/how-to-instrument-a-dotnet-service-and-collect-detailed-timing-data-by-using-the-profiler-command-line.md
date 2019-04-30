@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d9f2abceb7daf0d9e4be72958b2bbc1fe86204
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b438cac78aa863eab4f04e250ed768d54a2fbc4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432689"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：检测.NET 服务和收集详细的计时数据使用 Profiler 命令行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,11 +22,11 @@ ms.locfileid: "60080535"
 本主题介绍如何使用 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 分析工具命令行工具检测 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服务和收集详细计时数据。  
 
 > [!NOTE]
->  如果某服务在计算机启动之后无法重启（此类服务只能在操作系统启动时启动），则无法使用检测方法分析该服务。  
+> 如果某服务在计算机启动之后无法重启（此类服务只能在操作系统启动时启动），则无法使用检测方法分析该服务。  
 >   
->  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 >   
->  若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
+> 若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
 
  若要使用检测方法从 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服务收集详细计时数据，可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具生成该组件的受检测版本。 然后，将该服务的非检测版本替换为检测版本，确保将该服务配置为手动启动。 使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全局分析环境变量，然后重启主计算机。 然后启动探查器。  
 
@@ -63,7 +63,7 @@ ms.locfileid: "60080535"
      可以将以下任一选项与 /start:trace 选项一起使用。  
 
    > [!NOTE]
-   >  /User 和 /crosssession 选项通常为分析服务所需选项。  
+   > /User 和 /crosssession 选项通常为分析服务所需选项。  
 
    |                                 选项                                  |                                                                                                                                            描述                                                                                                                                             |
    |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

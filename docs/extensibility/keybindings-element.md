@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74cd564af66532c454d4ec340c6c8c93820cf5c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907466"
 ---
 # <a name="keybindings-element"></a>KeyBindings 元素
 键绑定元素进行分组键绑定元素和其他键绑定分组。

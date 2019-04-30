@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3cd8043648586ed3c614cbb137e51d992d7ae29b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992467"
 ---
 # <a name="iactivescriptsitedebug-interface"></a>IActiveScriptSiteDebug 接口
 智能主机实现`IActiveScriptSiteDebug`界面，用于执行文档管理和参与调试。 `IActiveScriptSite`对象通常提供的实现`IActiveScriptSiteDebug`接口。 如果此操作后，调用`IActiveScriptSite::QueryInterface`方法来获取`IActiveScriptSiteDebug`接口。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972286"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和本地化的 Excel 解决方案
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关常规信息，请参阅[Globalize 和本地化应用程序](../ide/globalizing-and-localizing-applications.md)。

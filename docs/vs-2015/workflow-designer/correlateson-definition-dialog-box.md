@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977375"
 ---
 # <a name="correlateson-definition-dialog-box"></a>“CorrelatesOn 定义”对话框
 **CorrelatesOn**中使用对话框[!INCLUDE[wfd1](../includes/wfd1-md.md)]编辑<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性<xref:System.ServiceModel.Activities.Receive>活动。 [!INCLUDE[crdefault](../includes/crdefault-md.md)] [接收](../workflow-designer/receive-activity-designer.md)主题。  

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56525cc0c0c754a7fa3a1f4c2c5b6cf2e941e9b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929057"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt;元素 （ClickOnce 部署）
 标识的主要程序集的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。
@@ -42,7 +42,7 @@ ms.locfileid: "56608339"
 ## <a name="elements-and-attributes"></a>元素和属性
  `assemblyIdentity`元素是必需的。 它不包含任何子元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`name`|必需。 标识部署的用户可读名称供您参考。<br /><br /> 如果`name`包含特殊字符，如单引号或双引号引起来，应用程序可能无法激活。|
 |`version`|必需。 采用以下格式指定该程序集的版本号： `major.minor.build.revision`。<br /><br /> 此值必须在应用更新的清单，以触发应用程序更新中会递增。|

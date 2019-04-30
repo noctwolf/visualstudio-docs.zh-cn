@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444528"
 ---
 # <a name="refactoring-c"></a>重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60046313"
  如果编译器没有全面了解您的程序，并且可以重构引擎可能不会更新所有适当的引用，将显示警告对话框。 此警告对话框中还提供了您可以预览中的代码有机会**预览更改**对话框之前提交的更改。  
   
 > [!NOTE]
->  如果方法包含语法错误 （从而以红色的波浪下划线指示 IDE），然后重构引擎不会更新对该方法中的某个元素的任何引用。 下面的示例阐释了这一点。  
+> 如果方法包含语法错误 （从而以红色的波浪下划线指示 IDE），然后重构引擎不会更新对该方法中的某个元素的任何引用。 下面的示例阐释了这一点。  
   
  默认情况下，如果您执行重构操作而不预览引用更改和编译错误检测到在应用程序中，然后开发环境将显示此警告对话框。  
   

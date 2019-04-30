@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de301a380eb93cd1f4dd27150f631be58f59b3eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442649"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步骤 11：运行程序并尝试其他功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60093899"
 3. 选择一种要设置为 PictureBox 背景色的颜色。 仔细查看 `backgroundButton_Click()` 方法以了解其工作原理。  
   
     > [!NOTE]
-    >  通过将某个图片的 URL 粘贴到“打开文件”对话框中，可以从 Internet 加载该图片。 尝试找到一个带透明背景的图像，以便显示您的背景色。  
+    > 通过将某个图片的 URL 粘贴到“打开文件”对话框中，可以从 Internet 加载该图片。 尝试找到一个带透明背景的图像，以便显示您的背景色。  
   
 4. 选择“清除图片”按钮以确保清除图片。 然后，选择“关闭”按钮退出程序。  
   

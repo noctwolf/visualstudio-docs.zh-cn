@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 125acbbca2723a9fbd9f41932782a62e966bcdd0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864309"
 ---
 # <a name="stack-frames"></a>堆栈帧
 在调试器体系结构中，*堆栈帧*:

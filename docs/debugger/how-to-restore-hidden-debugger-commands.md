@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5332b2e3b71df47fe2f39228c47bf4a1ec16de9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387530"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>如何：还原隐藏的调试器命令
 安装 Visual Studio 时，系统会要求您为主要的编程语言选择一组默认的 IDE 设置。 某些语言的默认 IDE 设置可能会隐藏某些调试器命令。
@@ -47,7 +47,7 @@ ms.locfileid: "60047016"
 7. 完成将命令添加到菜单后，单击“关闭”。
 
     > [!WARNING]
-    >  某些菜单项仅在调试器处于特定模式（如运行模式或中断模式）下才显示。 因此，在完成这些步骤后，您所添加的项可能不会立即显示出来。
+    > 某些菜单项仅在调试器处于特定模式（如运行模式或中断模式）下才显示。 因此，在完成这些步骤后，您所添加的项可能不会立即显示出来。
 
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>还原“自定义”对话框中不可用的命令
  某些命令（特别是分层菜单中的命令）无法从“自定义”对话框中还原。 要还原这些命令，必须导入一组新的 IDE 设置。

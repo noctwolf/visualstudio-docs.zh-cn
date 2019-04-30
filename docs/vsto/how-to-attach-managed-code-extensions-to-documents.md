@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441805"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管的代码扩展附加到文档
   可以将自定义程序集附加到现有 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 文档或工作簿可以是支持的 Microsoft Office 项目和 Visual Studio 中的开发工具的任何文件格式。 有关详细信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "60044259"
  若要将自定义项附加到 Word 或 Excel 文档，请使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。 因为<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类专为没有安装 Microsoft Office 的计算机上运行，则可以不直接相关 （如控制台或 Windows 窗体应用程序） 的 Microsoft Office 开发的解决方案中使用此方法。
 
 > [!NOTE]
->  自定义项将无法加载如果代码需要指定的文档中不存在的控件。
+> 自定义项将无法加载如果代码需要指定的文档中不存在的控件。
 
  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现：附加或分离的 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782).
 

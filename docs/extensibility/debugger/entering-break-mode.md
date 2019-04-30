@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8da96c1df3423665ed223fecdd43007ba5a6e671
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925750"
 ---
 # <a name="enter-break-mode"></a>进入中断模式
 以下信息介绍在单步执行函数、 运行到源代码中，包含光标的行或运行到断点后遇到断点时，会发生的过程。

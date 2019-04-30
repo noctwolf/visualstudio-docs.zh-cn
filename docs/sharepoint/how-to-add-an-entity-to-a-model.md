@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431251"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>如何：向模型添加实体
   若要创建一个实体，从 Visual Studio 添加实体控件**工具箱**拖到业务数据连接 (BDC) 设计器。
@@ -40,7 +40,7 @@ ms.locfileid: "60089453"
      在实体上将显示一个新的标识符。
 
     > [!NOTE]
-    >  你可以将实体和中的标识符的名称**属性**窗口。
+    > 你可以将实体和中的标识符的名称**属性**窗口。
 
 4. 在类中定义的实体的字段。 您可以向项目添加新类，或使用现有类使用其他工具，例如对象关系设计器 （O/R 设计器） 创建的。 下面的示例演示一个名为联系人的实体类。
 

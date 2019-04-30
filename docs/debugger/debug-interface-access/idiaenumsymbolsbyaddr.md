@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830365"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 通过地址来枚举数据源中包含的各种符号。
@@ -31,7 +31,7 @@ IDiaEnumSymbolsByAddr : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaEnumSymbolsByAddr`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|枚举数定位通过查找的部分和偏移量。|
 |[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|枚举数定位通过按相对虚拟地址 (RVA) 执行查找。|
@@ -94,7 +94,7 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

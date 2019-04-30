@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415720"
 ---
 # <a name="register-the-program"></a>注册程序
 调试引擎已获取某个端口后，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，启用要进行调试的程序的下一步是将其注册到该端口。 注册后，该程序是可用于调试通过以下方法之一：
@@ -38,7 +38,7 @@ ms.locfileid: "60070142"
      下面的示例演示调试引擎启动该程序并注册一个端口。
 
     > [!NOTE]
-    >  此代码示例不是唯一的方法来启动和恢复过程;此代码是主要与端口注册一个程序的示例。
+    > 此代码示例不是唯一的方法来启动和恢复过程;此代码是主要与端口注册一个程序的示例。
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

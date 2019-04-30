@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6cc01c6506c4a3fca85029a8dcaf08607427ea4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956200"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>在文档级解决方案中的文档保护
   可以使用 Microsoft Office Word 和 Microsoft Office Excel 文档级项目中的保护的功能。 这些功能可以阻止未经授权的用户对受保护文档各部分进行更改。

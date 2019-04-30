@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8083ca9a8d3025b1760edde96279a0cd557f722
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899735"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要部署应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 在不同的本地化版本之间共享的功能应进入产品清单。

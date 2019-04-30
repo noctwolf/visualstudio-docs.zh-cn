@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a42fe61d67eedbe6f69350c7b5ec17726f43486e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990696"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
 启动默认调试器集成的开发环境 (IDE)，并将调试会话附加到此应用程序，如果尚未附加。  
@@ -39,7 +39,7 @@ HRESULT StartDebugSession();
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

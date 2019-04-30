@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442923"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>如何：创建使用 Windows 窗体的工具箱控件
 借助 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 中内附的 Windows 窗体工具箱控件模板，你可以创建在安装扩展后自动添加到“工具箱”  的 Windows 窗体控件。 本主题演示如何使用模板来创建可分配给其他用户的“工具箱”  控件。  
   
 > [!NOTE]
->  若要了解如何下载 Visual Studio SDK，请参阅 MSDN 网站上的 [Visual Studio 扩展性开发人员中心](http://go.microsoft.com/fwlink/?linkid=121964) 。  
+> 若要了解如何下载 Visual Studio SDK，请参阅 MSDN 网站上的 [Visual Studio 扩展性开发人员中心](http://go.microsoft.com/fwlink/?linkid=121964) 。  
   
 ## <a name="creating-a-toolbox-control"></a>创建工具箱控件  
  使用 Windows 窗体工具箱控件模板创建项目，然后在设计器中生成用户界面 (UI)。  

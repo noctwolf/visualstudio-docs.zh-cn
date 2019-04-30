@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03e0f5a294dea1fda1e2d7c320fa0158de9bbb3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415402"
 ---
 # <a name="author-vsct-files"></a>创作.vsct 文件
 本文档演示如何创作 *.vsct*文件以将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE)。 请执行以下步骤将 UI 元素添加到 Visual Studio 程序包 (VSPackage)，还没有 *.vsct*文件。
@@ -86,7 +86,7 @@ ms.locfileid: "60053074"
     设置`guid`并`id`的属性`Menu`元素，并设置`type`的所需的菜单类型的属性。 此外可以设置`priority`特性来确定父组中的菜单的相对位置。
 
    > [!NOTE]
-   >  `priority`属性不适用于工具栏和上下文菜单。
+   > `priority`属性不适用于工具栏和上下文菜单。
 
 2. Visual Studio IDE 中的所有命令都必须直接子项的菜单和工具栏的命令组由都承载。 如果要向 IDE 添加新菜单或工具栏，它们必须包含新的命令组。 可能还向现有菜单和工具栏添加命令组，以便你命令可以直观地进行分组。
 
@@ -99,14 +99,14 @@ ms.locfileid: "60053074"
    1. 设置`guid`并`id`每个属性`Button`元素，并设置`type`的所需的按钮类型的属性。 此外可以设置`priority`特性来确定父组中的命令的相对位置。
 
        > [!NOTE]
-       >  使用`type="button"`标准菜单命令和工具栏上的按钮。
+       > 使用`type="button"`标准菜单命令和工具栏上的按钮。
 
    2. 在中`Button`元素中，添加[字符串](../../extensibility/strings-element.md)元素，其中包含[ButtonText](../../extensibility/buttontext-element.md)元素和一个[CommandName](../../extensibility/commandname-element.md)元素。 `ButtonText`元素提供为菜单项或工具栏按钮的工具提示的文本标签。 `CommandName`元素提供要在命令中也使用的命令的名称。
 
    3. 如果您的命令将具有一个图标，创建[图标](../../extensibility/icon-element.md)中的元素`Button`元素，并将设置其`guid`并`id`属性到`Bitmap`图标的元素。
 
        > [!NOTE]
-       >  工具栏按钮必须具有图标。
+       > 工具栏按钮必须具有图标。
 
    有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)。
 

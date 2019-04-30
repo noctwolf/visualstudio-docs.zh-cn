@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1c7bb825cdc64619ac2234c431bb306e58ec293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443066"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ ms.locfileid: "60105287"
 - [后续步骤](#next)
 
 > [!TIP]
->  可在 [GitHub 上的 mobile-samples 存储库](https://github.com/xamarin/mobile-samples/tree/master/Weather)中找到此项目的完整源代码。
+> 可在 [GitHub 上的 mobile-samples 存储库](https://github.com/xamarin/mobile-samples/tree/master/Weather)中找到此项目的完整源代码。
 >
->   如果你遇到任何困难或错误，请将问题发布在 [forums.xamarin.com](http://forums.xamarin.com)。 通过更新至 Xamarin 所需的最新 SDK，可解决大多数问题，每个平台的 [Xamarin 发行说明](https://developer.xamarin.com/releases/)中对这些 SDK 进行了描述。
+> 如果你遇到任何困难或错误，请将问题发布在 [forums.xamarin.com](http://forums.xamarin.com)。 通过更新至 Xamarin 所需的最新 SDK，可解决大多数问题，每个平台的 [Xamarin 发行说明](https://developer.xamarin.com/releases/)中对这些 SDK 进行了描述。
 >
 > [!NOTE]
->  Xamarin 的开发人员文档还通过下列“快速入门”和“深入了解”部分提供了一些演练。 在所有这些页面上，请选择页面右上角的“Visual Studio”以查看特定于 Visual Studio 的演练。
+> Xamarin 的开发人员文档还通过下列“快速入门”和“深入了解”部分提供了一些演练。 在所有这些页面上，请选择页面右上角的“Visual Studio”以查看特定于 Visual Studio 的演练。
 >
 > - 具有本机 UI 的 Xamarin 应用程序：
 >
@@ -230,7 +230,7 @@ ms.locfileid: "60105287"
 1. 在“解决方案资源管理器”中，展开“WeatherApp.Droid”>“资源”>“布局”文件夹，然后打开“Main.axml”。 此操作后将在可视化设计器中打开此文件。 （如果出现与 Java 相关的错误，请参阅此[博客文章](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9)。）
 
     > [!TIP]
-    >  项目中有许多其他文件。 对它们的探讨不在本主题范围内，但如果你要深入了解 Android 项目的结构，请参阅 xamarin.com 上“了解 Android”主题的[第 2 部分：深入了解](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/)。
+    > 项目中有许多其他文件。 对它们的探讨不在本主题范围内，但如果你要深入了解 Android 项目的结构，请参阅 xamarin.com 上“了解 Android”主题的[第 2 部分：深入了解](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/)。
 
 2. 选择并删除设计器中出现的默认按钮。
 
@@ -239,7 +239,7 @@ ms.locfileid: "60105287"
 4. 从 **“工具箱”**，将 **“RelativeLayout”** 控件拖动到设计器。 可将此控件用作其他控件的父容器。
 
     > [!TIP]
-    >  如果布局显示不正确，请保存文件，然后通过在“设计”和“源”选项卡之间进行切换来刷新。
+    > 如果布局显示不正确，请保存文件，然后通过在“设计”和“源”选项卡之间进行切换来刷新。
 
 5. 在“属性”窗口中，将“background”属性（在“样式”组中）设置为 `#545454`。
 
@@ -256,7 +256,7 @@ ms.locfileid: "60105287"
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  注意：许多属性不包含你可以选择的值的下拉列表。  可能难以猜测给定属性适用于什么样的字符串值。 有关建议，请尝试在 [R.attr](http://developer.android.com/reference/android/R.attr.html) 类页中搜索属性的名称。
+    > 注意：许多属性不包含你可以选择的值的下拉列表。  可能难以猜测给定属性适用于什么样的字符串值。 有关建议，请尝试在 [R.attr](http://developer.android.com/reference/android/R.attr.html) 类页中搜索属性的名称。
     >
     >  此外，快速 Web 搜索通常指向 [http://stackoverflow.com/](http://stackoverflow.com/) 上的页面，在这里其他人使用相同的属性。
 
@@ -523,7 +523,7 @@ ms.locfileid: "60105287"
      ![适用于 Android 和 Windows Phone 的天气应用](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
->  可在 [GitHub 上的 mobile-samples 存储库](https://github.com/xamarin/mobile-samples/tree/master/Weather)中找到此项目的完整源代码。
+> 可在 [GitHub 上的 mobile-samples 存储库](https://github.com/xamarin/mobile-samples/tree/master/Weather)中找到此项目的完整源代码。
 
 ## <a name="Windows"></a>适用于 Windows Phone 的设计 UI
  现在，我们将设计适用于 Windows Phone 的用户界面，将其连接到你的共享代码，然后运行此应用。
@@ -629,7 +629,7 @@ ms.locfileid: "60105287"
      ![正在运行的应用的 Windows 版本](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
->  可在 [GitHub 上的 mobile-samples 存储库](https://github.com/xamarin/mobile-samples/tree/master/Weather)中找到此项目的完整源代码。
+> 可在 [GitHub 上的 mobile-samples 存储库](https://github.com/xamarin/mobile-samples/tree/master/Weather)中找到此项目的完整源代码。
 
 ## <a name="next"></a>后续步骤
  **将适用于 iOS 的 UI 添加到解决方案**

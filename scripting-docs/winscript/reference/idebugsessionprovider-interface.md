@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fe73901d92cb42675ff9ec981bd9b90dcca5d546
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979043"
 ---
 # <a name="idebugsessionprovider-interface"></a>IDebugSessionProvider 接口
 由调试器 IDE 来启用主机和语言提供的主界面启动调试。 它将建立一个正在运行的应用程序的调试会话。 此接口由计算机调试管理器实现。  

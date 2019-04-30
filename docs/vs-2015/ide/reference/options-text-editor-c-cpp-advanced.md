@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441413"
 ---
 # <a name="options-text-editor-cc-advanced"></a>选项，文本编辑器，C/C++，高级
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60072631"
  若要访问此页，请在“选项”对话框的左窗格中，展开“文本编辑器”，再展开“C/C++”，然后选择“高级”。  
   
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 请参阅[在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 请参阅[在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="browsingnavigation"></a>浏览/导航  
  除在极少数情况下，比如解决方案太大以致数据库活动占用过多的系统资源，否则不应选择以下选项。  

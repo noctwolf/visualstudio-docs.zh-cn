@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ac74d0e2c666926c5b88976146878991729628
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427913"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：向应用程序添加自定义任务窗格
   你可以通过使用 VSTO 外接程序向上面列出的应用程序添加自定义任务窗格。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
@@ -26,7 +26,7 @@ ms.locfileid: "60039825"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="add-a-custom-task-pane-to-an-application"></a>向应用程序添加自定义任务窗格
 
@@ -55,7 +55,7 @@ ms.locfileid: "60039825"
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
 
     > [!NOTE]
-    >  此代码将自定义任务窗格与应用程序中的活动窗口关联。 对于某些应用程序，你可能想要修改此代码以确保任务窗格与应用程序中的其他文档或项目一起显示。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
+    > 此代码将自定义任务窗格与应用程序中的活动窗口关联。 对于某些应用程序，你可能想要修改此代码以确保任务窗格与应用程序中的其他文档或项目一起显示。 有关详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。
 
 ## <a name="see-also"></a>请参阅
 - [Office UI 自定义](../vsto/office-ui-customization.md)

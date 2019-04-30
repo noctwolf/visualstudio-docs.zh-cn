@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447091"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主互操作程序集
 
@@ -84,7 +84,7 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 如果你在全局程序集缓存中安装并注册了 PIA，则这些版本的程序集显示在 **“引用管理器”** 对话框的 **“COM”** 选项卡上。 你应当避免添加对这些版本的程序集的引用，因为使用它们时可能会出现某些开发问题。 例如，如果你在全局程序集缓存中注册了 PIA 的不同版本，则项目将自动绑定到你最后一次注册的程序集版本，即使在 **“引用管理器”** 对话框的 **“COM”** 选项卡上指定了其他程序集版本也是如此。
 
 > [!NOTE]
->  添加一个引用某些程序集的程序集时，这些被引用的程序集将自动添加到项目中。 例如，引用*Office.dll*并*Microsoft.Vbe.Interop.dll*添加到 Word、 Excel、 Outlook、 Microsoft Forms 或 Graph 引用时，将自动添加程序集程序集。
+> 添加一个引用某些程序集的程序集时，这些被引用的程序集将自动添加到项目中。 例如，引用*Office.dll*并*Microsoft.Vbe.Interop.dll*添加到 Word、 Excel、 Outlook、 Microsoft Forms 或 Graph 引用时，将自动添加程序集程序集。
 
 <a name="pialist"></a>
 

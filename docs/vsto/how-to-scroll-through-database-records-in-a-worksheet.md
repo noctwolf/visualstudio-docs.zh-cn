@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961223"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何：滚动工作表中的数据库记录
   以下过程说明如何使用设计器来显示单个字段从数据库表中的 Microsoft Office Excel 工作表，使最终用户可以滚动浏览所有记录的控件。

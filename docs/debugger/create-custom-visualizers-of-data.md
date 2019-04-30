@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564714"
 ---
 # <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
  一个*可视化工具*属于[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器用户界面中以适合其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并显示结果，就像在浏览器窗口中显示。 位图可视化工具解释位图结构并显示它所代表的图形。 某些可视化工具可让你还可以查看的数据修改。

@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ece5c23a04901eaf0c17e7dfbf59f1ce7c5ccfa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a7b3edb0262e3e2b4f0cde51b499e25b04aba51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442913"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符号类型的类层次结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58931166"
 |[维度](../../debugger/debug-interface-access/dimension.md)|数组维数的符号。|  
   
 > [!NOTE]
->  每个符号可以保存有关符号，以及对其他符号的引用信息的属性。 单个符号主题中列出了这些属性。  
+> 每个符号可以保存有关符号，以及对其他符号的引用信息的属性。 单个符号主题中列出了这些属性。  
   
 ## <a name="see-also"></a>请参阅  
  [CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)   

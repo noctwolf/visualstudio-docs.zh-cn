@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982332"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>在 Visual Studio 内使用 Office 功能
   当创建文档级项目时，文档和关联的应用程序托管在 Visual Studio 中以便您可以设计和直接使用该文档。 Microsoft Office 应用程序在 Visual Studio 中打开后，它通常按预期方式工作。 但是，某些应用程序是功能的不同的或不可访问。

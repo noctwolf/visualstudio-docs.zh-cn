@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009348"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。

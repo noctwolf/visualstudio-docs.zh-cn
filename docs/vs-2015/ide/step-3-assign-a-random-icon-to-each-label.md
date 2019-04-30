@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442596"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60085982"
      [!code-vb[VbExpressTutorial4Step2_3_4#14](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#14)]  
   
     > [!NOTE]
-    >  其中使用了名称“iconLabel”和“control”，是因为它们具有描述性。 你可以将这些名称替换为任何名称，代码的运行将完全相同（只要你更改循环内每个语句中的名称）。  
+    > 其中使用了名称“iconLabel”和“control”，是因为它们具有描述性。 你可以将这些名称替换为任何名称，代码的运行将完全相同（只要你更改循环内每个语句中的名称）。  
   
      `AssignIconsToSquares()` 方法将迭代 TableLayoutPanel 中的每个标签控件，并对每个控件执行相同的语句。 这些语句从你在[步骤 2：添加随机对象和图标列表](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。 （这就是该列表中每个图标都有两个的原因，因此将向随机标签控件分配一对图标。）  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60085982"
      你没有隐藏这些图标，所以现在可以看到。 若要向玩家隐藏图标，可以将每个标签的 `Forecolor` 属性设置为与 `BackColor` 属性相同的颜色。  
   
     > [!TIP]
-    >  隐藏标签等控件的另一种方法是，将其“可见”属性设置为 `False`。  
+    > 隐藏标签等控件的另一种方法是，将其“可见”属性设置为 `False`。  
   
 6. 若要隐藏图标，请停止程序并删除 `For Each` 循环内代码注释行上的注释标记。  
   

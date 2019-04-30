@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868403"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 由事件处理程序来检索有关符号加载过程的结果调用。
@@ -50,7 +50,7 @@ int GetSymbolSearchInfo(
  [in、 out]返回一个包含模块中的任何错误消息的字符串。 如果没有错误，此字符串只包含模块的名称，但它也不为空。
 
 > [!NOTE]
-> [C + +]`pbstrDebugMessage`不能`NULL`并且必须释放与`SysFreeString`。
+> [C++]`pbstrDebugMessage`不能`NULL`并且必须与释放`SysFreeString`。
 
  `pdwModuleInfoFlags`
 

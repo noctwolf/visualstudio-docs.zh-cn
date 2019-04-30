@@ -10,12 +10,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffdd925b1fdddb6bddfb3704e561fac8efc84b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25a52b4854dd957787100ba2bc742f199c4a9a81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416526"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ ms.locfileid: "60048978"
      现在你可以将该数据源用于测试方法中了。  
   
     > [!TIP]
-    >  请参阅问答章节中的[数据源属性示例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)，查找使用 XML、SQL Express 和 Excel 等其他数据源类型的示例。  
+    > 请参阅问答章节中的[数据源属性示例](#CreateDataDrivenCUIT_QA_DataSourceAttributes)，查找使用 XML、SQL Express 和 Excel 等其他数据源类型的示例。  
   
 2. 运行测试。  
   

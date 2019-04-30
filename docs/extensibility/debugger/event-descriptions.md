@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5a1567cc7f5d3f6072b47fda1aacd32f69cb672
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889715"
 ---
 # <a name="event-descriptions"></a>事件描述
 每种类型的事件有特定用途。
 
 ## <a name="events-and-the-reasons-for-their-use"></a>事件和供其使用的原因
 
-|事件|描述|
+|Event|描述|
 |-----------|-----------------|
 |激活文档事件|调试引擎 (DE) 想要打开或将文档置于前台 IDE 时发生。|
 |断点绑定或断点错误事件|绑定断点或当无法绑定断点，并返回一个错误时发送。|

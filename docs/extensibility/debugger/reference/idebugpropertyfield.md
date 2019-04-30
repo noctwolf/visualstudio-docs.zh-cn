@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5c3376a6b8d6d269cac1f376e3f7f3f6f8a036f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916453"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 此接口提供允许获取和设置属性的函数。
@@ -43,7 +43,7 @@ IDebugPropertyField : IDebugContainerField
 |[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)|获取设置的属性的方法。|
 
 ## <a name="remarks"></a>备注
- 属性是一个托管的代码的概念，表示视为变量的方法。 非托管 c + + 中不存在属性。
+ 属性是一个托管的代码的概念，表示视为变量的方法。 属性不存在于非托管C++。
 
 ## <a name="requirements"></a>要求
  标头： sh.h

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929134"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>编写和调试正在运行的 XAML 代码与 XAML 在 Visual Studio 中的热重新加载
 
@@ -44,16 +44,16 @@ XAML 热重新加载是在这些方案中尤其有用：
 |限制|WPF|UWP|说明|
 |-|-|-|-|
 |将事件写入应用程序运行时的控件|不支持|不支持|请参阅错误：*确保事件失败*|
-|如在应用程序页/窗口中的资源字典中创建的资源对象或*App.xaml*|不支持|支持|示例： 添加```SolidColorBrush```到资源字典中用作```StaticResource```。</br>注意： 静态资源、 样式转换器和其他元素写入到的资源字典时可以是应用使用使用 XAML 热重新加载。 不支持仅创建资源。</br> 更改资源字典```Source```属性。| 
+|如在应用程序页/窗口中的资源字典中创建的资源对象或*App.xaml*|不支持|支持|示例： 添加```SolidColorBrush```到资源字典中用作```StaticResource```。</br>注意:静态资源、 样式转换器和其他元素写入到的资源字典时可以是应用使用使用 XAML 热重新加载。 不支持仅创建资源。</br> 更改资源字典```Source```属性。| 
 |应用运行时向项目添加新控件、 类、 windows 或其他文件|不支持|不支持|None|
 |管理 NuGet 包 （添加/删除/更新包）|不支持|不支持|None|
-|更改数据的绑定，使用 {x： 绑定} 标记扩展|不可用|Visual Studio 2019 和更高版本中受支持|Visual Studio 2018 或早期版本中不支持|
+|更改数据的绑定，使用 {x： 绑定} 标记扩展|不适用|Visual Studio 2019 和更高版本中受支持|Visual Studio 2018 或早期版本中不支持|
 
 ## <a name="error-messages"></a>错误消息
 
 使用 XAML 热重新加载时可能遇到以下错误。
 
-|错误消息|说明|
+|错误消息|描述|
 |-|-|-|
 |确保事件失败|错误表示尝试绑定到一个控件，你的应用程序运行时不受支持的事件。|
 |“XAML 编辑并继续”找不到任何要更新的元素。|错误发生时正在编辑热重新加载的 XAML 不能更新应用程序中。</br> 通过使用正在运行的应用导航到一个视图，使用 XAML 的位置，有时可以修复此错误。</br> 有时，此错误意味着不能应用特定更改，直到重新启动调试会话。 |

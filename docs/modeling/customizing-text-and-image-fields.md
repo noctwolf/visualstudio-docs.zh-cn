@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445815"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 形状中定义的文本修饰器时，它表示由文本字段。 有关 TextFields 和其他 ShapeFields 的初始化的示例，在 DSL 解决方案中检查 Dsl\GeneratedCode\Shapes.cs。
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  如果不是，然后重写`InitializeShapeFields`shape 类和分配到相应的值的方法`Default...`文本字段的属性。
 
 > [!WARNING]
->  若要重写`InitializeShapeFields()`，则必须设置**生成双派生**形状类的属性`true`DSL 定义中。
+> 若要重写`InitializeShapeFields()`，则必须设置**生成双派生**形状类的属性`true`DSL 定义中。
 
  在此示例中，形状具有将用于用户注释的文本字段。 我们想要使用的标准注释字体。 因为它是一种标准字体样式集中，我们可以设置默认字体 id:
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  此示例使依赖于形状的模型元素的状态更改的图标。
 
 > [!WARNING]
->  此示例演示如何使动态图像修饰器。 但如果只想要一个或两个映像，具体取决于模型变量的状态之间切换，它会更易于创建多个图像修饰器，找到在同一位置上相应的形状，并设置要取决于模型的特定值的可见性筛选器变量。 若要设置此筛选器，在 DSL 定义中选择形状地图，打开 DSL 详细信息窗口中，然后单击修饰器选项卡。
+> 此示例演示如何使动态图像修饰器。 但如果只想要一个或两个映像，具体取决于模型变量的状态之间切换，它会更易于创建多个图像修饰器，找到在同一位置上相应的形状，并设置要取决于模型的特定值的可见性筛选器变量。 若要设置此筛选器，在 DSL 定义中选择形状地图，打开 DSL 详细信息窗口中，然后单击修饰器选项卡。
 
  若要运行此示例代码，创建新 DSL 解决方案使用最小语言模板。 添加布尔域属性`AlternateState`到 ExampleElement 域类。 将图标修饰器添加到 ExampleShape 类，并将其图像设置为位图文件。 单击**转换所有模板**。 在 DSL 项目中，添加一个新的代码文件并插入以下代码。
 

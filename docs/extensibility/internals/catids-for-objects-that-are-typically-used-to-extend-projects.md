@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910564"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>对象通常用于扩展项目的 Catid
 下表列出了用于扩展的 Catid`Project`并`ProjectItem`自动化对象[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，和[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目。 在中定义这些 Catid *VSLangProj.olb*。

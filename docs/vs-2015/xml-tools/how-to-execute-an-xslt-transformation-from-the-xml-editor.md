@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431055"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>如何：在 XML 编辑器中执行 XSLT 转换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60112593"
 3. 单击**ShowXSL 输出**按钮**XML 编辑器**工具栏。  
   
     > [!NOTE]
-    >  如果没有与 XML 文档关联的样式表，对话框会提示您提供要使用的样式表。  
+    > 如果没有与 XML 文档关联的样式表，对话框会提示您提供要使用的样式表。  
     >   
     >  由 XSLT 转换生成的输出显示在新的文档窗口中。  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60112593"
 2. 指定 XML 文档中的**输入**的文档字段**属性**窗口。  
   
     > [!NOTE]
-    >  XML 文档是用于转换的输入文档。 如果文档未指定启动 XSLT 转换时，**文件打开**对话框随即出现，并且你可以在该时间在指定文档。  
+    > XML 文档是用于转换的输入文档。 如果文档未指定启动 XSLT 转换时，**文件打开**对话框随即出现，并且你可以在该时间在指定文档。  
   
 3. 单击**ShowXSLT 输出**按钮**XML 编辑器**工具栏。  
   

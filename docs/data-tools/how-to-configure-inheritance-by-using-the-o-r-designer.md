@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402808"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：使用 O/R 设计器配置继承
 **对象关系设计器**(**O/R 设计器**) 支持通常在关系系统中实现的单表继承概念。 在单表继承中，一个数据库表同时包含父信息和子信息的字段。 使用关系数据时，一个鉴别器列包含的值确定任意记录属于哪个类。
@@ -33,12 +33,12 @@ ms.locfileid: "60063005"
 4. 在“工具箱”的“对象关系设计器”选项卡中单击“继承”，然后单击子类（重命名的表）并将其连接到基类。
 
     > [!NOTE]
-    >  单击“工具箱”中的“继承”项，释放鼠标按钮，单击在步骤 3 中创建的该类的第二个副本，然后单击在步骤 2 中创建的第一个类。 继承连线上的箭头指向第一个类。
+    > 单击“工具箱”中的“继承”项，释放鼠标按钮，单击在步骤 3 中创建的该类的第二个副本，然后单击在步骤 2 中创建的第一个类。 继承连线上的箭头指向第一个类。
 
 5. 在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果尝试删除用于关联的对象属性，收到的错误：[该属性\<属性名称 > 不能删除，因为它参与了关联\<关联名称 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。
 
     > [!NOTE]
-    >  由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。 （列实现为属性。）通过设置基类属性中的继承修饰符，可以在派生类中创建列。 有关详细信息，请参阅[继承的基础知识 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)。
+    > 由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。 （列实现为属性。）通过设置基类属性中的继承修饰符，可以在派生类中创建列。 有关详细信息，请参阅[继承的基础知识 (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)。
 
 6. 选择中的继承连线**O/R 设计器**。
 

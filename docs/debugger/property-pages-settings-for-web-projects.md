@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903936"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
 如[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中所述，可以在“属性页”对话框中更改网站调试配置的属性设置。 下表显示“属性页”对话框中与调试器有关的设置的位置。

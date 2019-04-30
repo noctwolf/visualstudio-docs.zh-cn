@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869529"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 获取扩展的属性信息。
@@ -45,7 +45,7 @@ int GetExtendedInfo ( 
 
  `pExtendedInfo`
 
- [out]返回`VARIANT`（c + +） 或对象 (C#) 可用于检索的扩展的属性信息。 例如，此参数可能会返回`IUnknown`接口，可用于查询[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口。 有关详细信息，请参阅备注。
+ [out]返回`VARIANT`(C++) 或对象 (C#) 可用于检索的扩展的属性信息。 例如，此参数可能会返回`IUnknown`接口，可用于查询[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口。 有关详细信息，请参阅备注。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。 返回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果没有要检索的扩展的信息。
@@ -55,7 +55,7 @@ int GetExtendedInfo ( 
 
  以下 Guid 通常所识别的 （GUID 值指定为 C# 因为名称不能在任何程序集中） 此方法。 供内部使用，可以创建其他 Guid。
 
-|name|GUID|描述|
+|名称|GUID|描述|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|返回`IUnknown`到文档的接口。 通常情况下， [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口可以获取从此`IUnknown`接口。|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|返回`IUnknown`文档上下文的接口。 通常情况下， [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口可以获取从此`IUnknown`接口。|

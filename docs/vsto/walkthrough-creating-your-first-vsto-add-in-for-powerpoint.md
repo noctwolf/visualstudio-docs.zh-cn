@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 48b69b90c8ede6bfba4d388f547742de6d92cd7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981237"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>演练：为 PowerPoint 中创建第一个 VSTO 外接程序
   本演练演示如何为 Microsoft Office PowerPoint 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的演示文稿无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。

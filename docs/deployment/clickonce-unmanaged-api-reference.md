@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900264"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非托管 API 参考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll 从非托管的公共 Api。
@@ -52,7 +52,7 @@ ms.locfileid: "56633793"
 
 ### <a name="parameters"></a>参数
 
-|参数|说明|类型|
+|参数|描述|类型|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|指向 `ActivationURL` 的指针。|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|指向 `PathToDeploymentManifest` 的指针。|LPCWSTR|
@@ -80,7 +80,7 @@ ms.locfileid: "56633793"
 
 ### <a name="parameters"></a>参数
 
-|参数|说明|类型|
+|参数|描述|类型|
 |---------------|-----------------|----------|
 |`deploymentUrl`|指向包含部署清单的 URL 的以 NULL 结尾的字符串的指针。|LPCWSTR|
 |`data`|留待将来使用。 必须为 NULL。|LPVOID|

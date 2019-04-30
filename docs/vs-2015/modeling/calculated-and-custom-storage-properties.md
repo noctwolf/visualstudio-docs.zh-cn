@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433456"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "60069609"
      在 Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs 将打开。 上面突出显示的方法调用中，注释会提示你提供一个实现 get*YourProperty*（)。  
   
     > [!NOTE]
-    >  从 DslDefinition.dsl 生成此文件。 如果编辑此文件时，所做的更改将会丢失您单击下一次**转换所有模板**。 相反，在单独的文件添加所需的方法。  
+    > 从 DslDefinition.dsl 生成此文件。 如果编辑此文件时，所做的更改将会丢失您单击下一次**转换所有模板**。 相反，在单独的文件添加所需的方法。  
   
 6. 创建或打开类文件在单独的文件夹，例如独特\\*YourDomainClass*。 cs。  
   

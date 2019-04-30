@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a7bf9830e71abef04348307af4d841e7029afc4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820593"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
-Microsoft 混合最少量规则重点关注支持公共语言运行时，包括潜在安全漏洞和应用程序崩溃在 c + + 项目中最关键问题。 应包括任何自定义规则集中设置为支持公共语言运行时在 c + + 项目创建此规则。
+Microsoft 混合最少量规则专注于中的最关键问题在C++支持公共语言运行时，包括潜在安全漏洞和应用程序崩溃的项目。 应包含此规则集创建的任何自定义规则集中将C++支持公共语言运行时的项目。
 
 |规则|描述|
 |----------|-----------------|

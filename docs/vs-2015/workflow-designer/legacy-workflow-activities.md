@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000153"
 ---
 # <a name="legacy-workflow-activities"></a>旧版工作流活动
 [!INCLUDE[wf](../includes/wf-md.md)] 包含一组默认活动，这组活动提供了用于控制流、条件、事件处理、状态管理以及与应用程序和服务通信的功能。 在设计工作流时，可以使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 所提供的系统提供活动，也可以创建自己的自定义活动。  

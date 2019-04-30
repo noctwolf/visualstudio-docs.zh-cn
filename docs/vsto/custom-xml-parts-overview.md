@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445522"
 ---
 # <a name="custom-xml-parts-overview"></a>自定义 XML 部件概述
   对于某些 Microsoft Office 应用程序，可在文档中嵌入 XML 数据。 时在文档中嵌入 XML 数据，数据被称为*自定义 XML 部件*。
@@ -38,7 +38,7 @@ ms.locfileid: "60052774"
  **适用于：** 本主题中的信息适用于文档级别项目和 VSTO 外接程序项目为 Excel、 PowerPoint 和 Word。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
 > [!NOTE]
->  Visual Studio 还使你能够在文档级自定义项中缓存数据对象。 尽管有一些相似之处，此功能并不同于自定义 XML 部件。 有关详细信息，请参阅[缓存的文档级自定义项中的数据](../vsto/cached-data-in-document-level-customizations.md)。
+> Visual Studio 还使你能够在文档级自定义项中缓存数据对象。 尽管有一些相似之处，此功能并不同于自定义 XML 部件。 有关详细信息，请参阅[缓存的文档级自定义项中的数据](../vsto/cached-data-in-document-level-customizations.md)。
 
 ## <a name="understand-custom-xml-parts"></a>了解自定义 XML 部件
  自定义 XML 部件和 Open XML 格式一起在 2007 Microsoft Office 系统中引入。 这些格式包括 Excel、 PowerPoint 和 Word 的新的基于 XML 的文件格式 (如 *.xlsx*， *.pptx*，并 *.docx*)。 这些格式中的文档包含的 XML 文件 (也称为*XML 部件*) 整理在 ZIP 存档中的文件夹中。 大多数 XML 部件为有助于定义文档的结构和状态的内置部件。 但文档还可包含自定义 XML 部件，可用于将任意 XML 数据存储在文档中。
@@ -56,7 +56,7 @@ ms.locfileid: "60052774"
 - [生成使用 Open XML 格式的 Word 2007 文档](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
->  Excel、Word 和 PowerPoint 还使你可以使用以二进制文件格式保存的文档中的自定义 XML 部件。 但如果文档以二进制格式保存，则无法添加或修改自定义 XML 部件，除非启动 Microsoft Office 应用程序。
+> Excel、Word 和 PowerPoint 还使你可以使用以二进制文件格式保存的文档中的自定义 XML 部件。 但如果文档以二进制格式保存，则无法添加或修改自定义 XML 部件，除非启动 Microsoft Office 应用程序。
 
 ## <a name="create-and-modify-custom-xml-parts"></a>创建和修改自定义 XML 部件
  当文档在 Office 应用程序中打开时，或当文档关闭时，可创建或修改自定义 XML 部件，即使未安装 Microsoft Office。

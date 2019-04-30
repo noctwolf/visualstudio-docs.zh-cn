@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444360"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项目
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。
 
 > [!NOTE]
->  若要导入可重用工作流，请使用“导入可重用工作流”项目模板。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [导入可重用工作流的准则](../sharepoint/guidelines-for-importing-reusable-workflows.md)。
+> 若要导入可重用工作流，请使用“导入可重用工作流”项目模板。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [导入可重用工作流的准则](../sharepoint/guidelines-for-importing-reusable-workflows.md)。
 
 ## <a name="supported-sharepoint-solutions"></a>受支持的 SharePoint 解决方案
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 完全支持导入在 [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] 和 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]中创建的解决方案。

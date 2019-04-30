@@ -10,12 +10,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443478"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到“添加新项”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59000156"
 将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示，AddItemTemplates 部分包含的路径和名称中提供的项中的目录**添加新项**放入对话框。  
   
 > [!NOTE]
->  紧跟代码段的表包含有关注册表项的其他信息。  
+> 紧跟代码段的表包含有关注册表项的其他信息。  
   
  本部分位于 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects] 下。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "59000156"
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|确定文件中显示的树节点中的排序顺序**添加新项**对话框。|  
   
 > [!NOTE]
->  对于 Visual C# 和 Visual Basic 项目类型 GUID 是按如下所示：[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> 对于 Visual C# 和 Visual Basic 项目类型 GUID 是按如下所示：[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  该目录所列的 TemplateDirs，为 %template_path%\someprojectitems，是在左侧的节点**添加新项**对话框框树。 在树中的其他元素都基于该根目录中的子目录。 可用于添加到项目文件是在右窗格中的项**添加新项**对话框。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "59000156"
  但是，没有一个.vsdir 文件中将所有内容。 您可以在目录中的每个项的一个.vsdir 文件。 有关详细信息，请参阅[向导 (。在 Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
 > [!NOTE]
->  模板目录中的.vsdir 文件是可选的。 如果只是想要将在目录中的项目元素和其显示在**添加新项**对话框中，可以将此文件放在 TemplatesDir 语句中指定的模板目录中。 然后，该文件将显示在右窗格中**添加新项**对话框中的为该项目。 但是，如果你想要显示的文件或图标的本地化的标题，则必须包含至少一个.vsdir 文件模板目录中。  
+> 模板目录中的.vsdir 文件是可选的。 如果只是想要将在目录中的项目元素和其显示在**添加新项**对话框中，可以将此文件放在 TemplatesDir 语句中指定的模板目录中。 然后，该文件将显示在右窗格中**添加新项**对话框中的为该项目。 但是，如果你想要显示的文件或图标的本地化的标题，则必须包含至少一个.vsdir 文件模板目录中。  
   
 ## <a name="grouping-project-items"></a>分组项目项  
  如果你想要包含在文件夹中的模板组**添加新项**对话框框树中，你必须使用项模板根目录下的子目录中。 当**添加新项**向用户显示对话框中，它们还可以查看子文件夹，并可以从中选择项目元素。  

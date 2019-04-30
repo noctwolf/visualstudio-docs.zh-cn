@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817984"
 ---
 # <a name="array-or-arguments-object-expected"></a>缺少 Array 或 arguments 对象
 未作为参数提供一个数组。 此错误适用于**Function.prototype.apply**仅限方法。 如果指定，此函数的第二个参数必须处于`Array`对象或**自变量**对象。  

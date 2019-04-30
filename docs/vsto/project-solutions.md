@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07586cd9b839a514ebe3a0677fb894a8d6e9c71f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447053"
 ---
 # <a name="project-solutions"></a>项目解决方案
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 提供可用于创建 Microsoft Office Project 的 VSTO 外接程序的项目模板。 VSTO 外接程序可用于自动运行项目、扩展项目功能或自定义项目用户界面 (UI)。
@@ -32,7 +32,7 @@ ms.locfileid: "56642191"
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
 > [!NOTE]
->  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。
+> 开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。
 
 ## <a name="automate-project-by-using-the-project-object-model"></a>通过使用项目对象模型自动化项目
  项目对象模型公开了许多可用于实现项目自动化的类型。 可使用这些类型编写代码来完成常规任务，例如以编程方式创建和修改项目中的任务。
@@ -47,7 +47,7 @@ ms.locfileid: "56642191"
  VBA 对象模型引用中的所有对象和成员都对应于项目主互操作程序集 (PIA) 中的类型和成员。 例如，VBA 对象模型引用中的日历对象对应于`Microsoft.Office.Interop.MSProject.Calendar`项目 PIA 中的类型。 虽然 VBA 对象模型引用提供大多数属性、 方法和事件的代码示例，但如果你想要使用视觉对象创建的项目 VSTO 外接程序项目中使用它们，则必须将转换成 Visual Basic 或 Visual C# 此引用中的 VBA 代码Studio。
 
 > [!NOTE]
->  此时，没有任何项目主互操作程序集的参考文档。
+> 此时，没有任何项目主互操作程序集的参考文档。
 
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>项目主互操作程序集中的基础结构类型
  编写使用项目 PIA 的代码时，您可能会注意到许多类型在 VBA 参考中都未涉及。 这些附加类型可以帮助将项目的基于 COM 的对象模型中的对象转换为托管代码，而不是在代码中直接使用。

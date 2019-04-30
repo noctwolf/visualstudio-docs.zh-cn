@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441847"
 ---
 # <a name="design-and-create-office-solutions"></a>设计和创建 Office 解决方案
 
@@ -54,7 +54,7 @@ Visual Studio 提供可用于创建几种不同类型的 Office 解决方案的�
   如果 Visual Studio 更改为你的项目的目标.NET Framework，并且打算使用 ClickOnce 来部署你的解决方案，请确保还选择在.NET Framework 中的相应版本**先决条件**对话框。 此选择不会在你更改项目的目标框架时自动更改。 有关详细信息，请参阅[如何：若要运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。
 
 > [!NOTE]
->  不能面向通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目中的 .NET Framework 3.5 或更早版本。 通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目需要在 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次引入的功能
+> 不能面向通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目中的 .NET Framework 3.5 或更早版本。 通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目需要在 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次引入的功能
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>了解时，需要在最终用户计算机上安装 Office Pia
  默认情况下，Office 主互操作程序集 (Pia) 无需安装在最终用户计算机上，如果**嵌入互操作类型**项目中每个 Office PIA 引用的属性设置为**True**，这是默认值。 在本方案中，你的解决方案使用的 PIA 类型的类型信息会在生成项目时嵌入到解决方案程序集中。 在运行时，嵌入的类型信息代替 Pia 来调入 Office 应用程序的基于 COM 的对象模型。 有关如何将 Pia 的类型嵌入到你的解决方案的详细信息，请参阅[类型等效性和嵌入的互操作类型](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)。

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d781358258457dc12a3657cf3ff76273315219c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 4252ad81747576366c0873f2ad65646ee7af7f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422942"
 ---
 # <a name="t4-parameter-directive"></a>T4 参数指令
 
@@ -99,4 +99,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>从 TextTemplate.exe 获取自变量
 
 > [!IMPORTANT]
->  `parameter`指令不会检索中设置的值`-a`参数的`TextTransform.exe`实用程序。 若要获取这些值，请设置`hostSpecific="true"`中`template`指令，并使用`this.Host.ResolveParameterValue("","","argName")`。
+> `parameter`指令不会检索中设置的值`-a`参数的`TextTransform.exe`实用程序。 若要获取这些值，请设置`hostSpecific="true"`中`template`指令，并使用`this.Host.ResolveParameterValue("","","argName")`。

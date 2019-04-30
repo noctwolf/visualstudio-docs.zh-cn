@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: afbde92cd666e0e67b1e70b0b4899c09d8b5b3e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411071"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演练：将功能添加到自定义编辑器
 创建自定义编辑器后，您可以向其添加更多的功能。
@@ -49,7 +49,7 @@ ms.locfileid: "60064448"
     2. 若要对外部文件的更改做出响应，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>编辑器的文档的数据对象。
 
         > [!NOTE]
-        >  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>获取一个指向`IVsFileChangeEx`。
+        > 调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>获取一个指向`IVsFileChangeEx`。
 
 7. 协调与源代码管理的文档编辑事件。 请执行以下步骤：
 
@@ -136,7 +136,7 @@ ms.locfileid: "60064448"
    <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>
 
   > [!NOTE]
-  >  `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。
+  > `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。
 
    你`IOleCommandTarget`实现处理命令，如**剪切**，**副本**，并且**粘贴**。 在实现时`IOleCommandTarget`，确定您的编辑器需要自己 *.vsct*文件以定义其自己的命令菜单结构或如果它可以实现定义的标准命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常情况下，编辑器使用和扩展 IDE 的菜单并定义其自己的工具栏。 但是，它通常是一个编辑器，用于定义其自己特定的命令，除了使用 IDE 的标准命令集所需的。 你的编辑器必须声明它使用标准命令，再定义任何新的命令、 上下文、 顶级菜单中菜单和工具栏 *.vsct*文件。 如果您创建就地激活编辑器，实现<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，并为在编辑器中定义的菜单和工具栏 *.vsct*文件而不是使用 OLE 2 菜单合并。
 

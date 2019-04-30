@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824052"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -95,7 +95,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 
 - [映射解决方案中的依赖项](../modeling/map-dependencies-across-your-solutions.md)
 
-- [如何：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [如何：向项目添加类图（类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 作为探究和讨论现有类的第一步，你可以使用类设计器来根据代码创建类图。
 
-- [如何：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [如何：向项目添加类图（类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>摘要:类图的优点
  类图可帮助你定义：

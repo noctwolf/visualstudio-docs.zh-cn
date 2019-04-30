@@ -1,5 +1,5 @@
 ---
-title: 重命名项目层次结构节点 （c + +） |Microsoft Docs
+title: 重命名项目层次结构节点 (C++) |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 7f6406936f293eea9c604b830f8eaab55a90a957
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 3d1d99bd49d7a5fd78b38262725b65c5d1b3aab9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58933406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978105"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>重命名项目层次结构节点 (C++)
-可以使用非托管 c + + HierUtil7 项目框架重命名项目文件夹层次结构节点。 有关详细信息，请参阅[HierUtil7 示例](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11)。  
+可以通过使用 HierUtil7 项目框架，对于非托管项目文件夹层次结构节点重命名C++。 有关详细信息，请参阅[HierUtil7 示例](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11)。  
   
 ## <a name="expanding-the-hierarchy-node"></a>展开层次结构节点  
   
 #### <a name="to-expand-the-hierarchy-node-and-rename-the-folder"></a>若要展开层次结构节点，然后重命名文件夹  
   
-1.  使用以下方法选择层次结构节点：  
+1. 使用以下方法选择层次结构节点：  
   
     ```  
     IfFailGo(pNode->ExtExpand(EXPF_SelectItem, GUID_MacroExplorer));  
@@ -38,7 +38,7 @@ ms.locfileid: "58933406"
   
      您可以在文件夹中，找到 Hu_node.h 文件\<安装根路径 > \Program Files\VSIP 8.0\EnvSDK\common\hierutil7:  
   
-2.  重命名命令发布使用重命名文件夹 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
+2. 重命名命令发布使用重命名文件夹 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.PostExecCommand%2A>  
   
     ```  
     IfFailGo(srpVsUIShell->PostExecCommand(&guidVSStd97, cmdidRename, 0, NULL));  

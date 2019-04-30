@@ -11,11 +11,11 @@ ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
 ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822544"
 ---
 # <a name="extending-the-toolbox"></a>扩展工具箱
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供了一系列对象，这些对象通过 IDE 拖放机制为编辑器和设计器提供各种功能。  
@@ -37,7 +37,7 @@ ms.locfileid: "60088699"
  介绍 VSPackage 管理 **工具箱**的内容和外观的方式。  
   
 ## <a name="related-sections"></a>相关章节  
- [如何：管理工具箱窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [如何：管理“工具箱”窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  介绍如何使用 **集成开发环境 (IDE) 中的** 工具箱 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
  [如何：控制工具箱](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  

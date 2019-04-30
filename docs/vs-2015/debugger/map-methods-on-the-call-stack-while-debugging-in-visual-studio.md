@@ -28,14 +28,14 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
-ms.author: mikejo
+ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b55c677f4ba241260f1ebebc024a150dcd23eb19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432172"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ ms.locfileid: "60092950"
  ![显示调用堆栈代码图上的方法中的字段](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
->  默认情况下，向图添加项还会添加父组节点（如类、命名空间和程序集）。 尽管这很有用，您可以仅仅保留图通过关闭此功能使用**包括父级**图工具栏上或通过按按钮**CTRL**添加项时。
+> 默认情况下，向图添加项还会添加父组节点（如类、命名空间和程序集）。 尽管这很有用，您可以仅仅保留图通过关闭此功能使用**包括父级**图工具栏上或通过按按钮**CTRL**添加项时。
 
  ![调用堆栈代码图上的方法相关字段](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 

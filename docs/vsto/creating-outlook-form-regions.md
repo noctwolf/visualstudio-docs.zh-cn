@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445569"
 ---
 # <a name="create-outlook-form-regions"></a>创建 Outlook 窗体区域
   窗体区域可用于自定义 Microsoft Office Outlook 窗体。 Visual Studio 提供了高级工具，可使你更轻松地设计、开发和调试窗体区域。
@@ -90,7 +90,7 @@ ms.locfileid: "60092755"
 - Outlook 窗体存储 (*.ofs*) 文件。
 
     > [!NOTE]
-    >  如果导入在 Outlook 中设计的窗体区域，那么仅将此文件添加到项目。
+    > 如果导入在 Outlook 中设计的窗体区域，那么仅将此文件添加到项目。
 
 #### <a name="form-region-factory-class"></a>窗体区域工厂类
  窗体区域代码文件包含实现 <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> 接口的分部类。 这是窗体区域工厂类。 窗体区域工厂类负责创建窗体区域的新实例。
@@ -110,7 +110,7 @@ ms.locfileid: "60092755"
  窗体区域设计器可帮助你设计窗体区域的布局和外观。 可以将托管的控件拖到设计器图面中，双击控件以打开事件处理程序，然后中设置属性**属性**窗口。
 
 > [!NOTE]
->  您可以找到影响窗体区域在下方的 Outlook 中的显示的方式的属性**清单**中的节点**属性**窗口。
+> 您可以找到影响窗体区域在下方的 Outlook 中的显示的方式的属性**清单**中的节点**属性**窗口。
 
  仅当你在 **“新建 Outlook 窗体区域”** 向导的 **“选择窗体区域的创建方式”** 页中选择 **“设计新的窗体区域”** 时，窗体区域设计器才可用。
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092755"
  可在窗体区域工厂类的 `InitializeManifest` 方法中更改窗体区域属性。
 
 > [!NOTE]
->  若要导入窗体区域，进行的项目所面向的 Outlook 版本必须与开发计算机上安装的版本相同。 例如，如果您安装了 Outlook 2010，导入窗体区域才会起在项目中的已通过使用**Outlook 2010 外接程序**项目模板。
+> 若要导入窗体区域，进行的项目所面向的 Outlook 版本必须与开发计算机上安装的版本相同。 例如，如果您安装了 Outlook 2010，导入窗体区域才会起在项目中的已通过使用**Outlook 2010 外接程序**项目模板。
 
 ### <a name="update-an-imported-form-regions-design"></a>更新导入窗体区域的设计
  可以添加、删除或更改窗体区域上的控件。 执行此操作之前，请备份添加到窗体区域代码文件的所有代码。 然后，打开 *.ofs*文件在 Outlook 中，修改窗体区域，然后保存这些更改。 使用**新建 Outlook 窗体区域**向导来导入已修改 *.ofs*文件。 然后可将代码粘贴到新的窗体区域代码文件中。

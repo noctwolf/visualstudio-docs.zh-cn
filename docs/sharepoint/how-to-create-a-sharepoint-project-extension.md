@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966869"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>如何：创建 SharePoint 项目扩展
   当你想要将功能添加到已在 Visual Studio 中打开任何 SharePoint 项目时，请创建一个项目扩展。 有关详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939559"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>将数据绑定到 Office 解决方案中的控件
   可以将 Microsoft Office Word 文档或 Microsoft Office Excel 工作表中的 Windows 窗体控件和 *宿主控件* 绑定到某个数据源，以便这些控件自动显示数据。 可以将数据绑定到应用程序级项目和文档级项目中的控件。

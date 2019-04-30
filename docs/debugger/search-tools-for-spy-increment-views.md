@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7df3b27164eab0b78cdce72a8f938cb6e9743bcf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902643"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 视图的搜索工具
 使用这些对话框可以指定 Spy + + 视图窗口将显示哪些数据：

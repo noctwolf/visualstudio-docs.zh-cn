@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406629"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 旧的 COM 组件的部署具有传统上是一个困难的任务。 组件需要全局注册，因此可能会导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题由于完全独立于应用程序或组件的并行兼容。 Visual Studio，可部署在 Windows XP 或更高版本的操作系统上的独立的 COM 组件。
@@ -62,7 +62,7 @@ ms.locfileid: "60069115"
 2. 在中**新的项目**对话框中，选择**Visual Basic**节点，然后选择**ActiveX DLL**项目。 在“名称”框中键入 `VB6Hello`。
 
     > [!NOTE]
-    >  使用免注册 COM; 支持仅 ActiveX DLL 和 ActiveX 控件的项目类型不支持 ActiveX EXE 和 ActiveX 文档项目类型。
+    > 使用免注册 COM; 支持仅 ActiveX DLL 和 ActiveX 控件的项目类型不支持 ActiveX EXE 和 ActiveX 文档项目类型。
 
 3. 在中**解决方案资源管理器**，双击**Class1.vb**打开文本编辑器。
 
@@ -77,7 +77,7 @@ ms.locfileid: "60069115"
 5. 生成的组件。 从**构建**菜单上，单击**生成解决方案**。
 
 > [!NOTE]
->  免注册 COM 支持仅 Dll 和 COM 控制项目类型。 您不能使用免注册 com Exe
+> 免注册 COM 支持仅 Dll 和 COM 控制项目类型。 您不能使用免注册 com Exe
 
  现在可以创建基于 Windows 的应用程序，并向其添加对 COM 组件的引用。
 
@@ -125,7 +125,7 @@ ms.locfileid: "60069115"
    现在，当按 F5，应用程序按预期工作，但它现在运行下免注册 com。 为了证明这一点，请尝试注销 VB6Hello.dll 组件并运行 Visual Studio IDE 外部 RegFreeComDemo1.exe。 这一次单击按钮时，它仍然适用。 如果您暂时重命名应用程序清单，它将再次失败。
 
 > [!NOTE]
->  您可以通过暂时注销模拟 COM 组件不存在。 打开命令提示符处，转到您的系统文件夹中，通过键入`cd /d %windir%\system32`，然后通过键入注销该组件`regsvr32 /u VB6Hello.dll`。 通过键入可以再次注册该`regsvr32 VB6Hello.dll`。
+> 您可以通过暂时注销模拟 COM 组件不存在。 打开命令提示符处，转到您的系统文件夹中，通过键入`cd /d %windir%\system32`，然后通过键入注销该组件`regsvr32 /u VB6Hello.dll`。 通过键入可以再次注册该`regsvr32 VB6Hello.dll`。
 
  最后一步是发布应用程序使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]:
 

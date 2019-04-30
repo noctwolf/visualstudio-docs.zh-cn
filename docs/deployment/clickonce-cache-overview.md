@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85dbe4917d37c8d39dd8348c32d88933032ede1b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900530"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 缓存概述
 所有[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，无论它们是安装在本地还是托管，存储在客户端计算机上[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序*缓存*。 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]缓存是一系列的当前用户的 Documents and Settings 文件夹的本地设置目录下隐藏的目录。 此缓存保留在应用程序的所有文件，包括程序集、 配置文件、 应用程序和用户设置和数据目录。 缓存程序还负责将应用程序的数据目录迁移到最新版本。 有关数据迁移的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。

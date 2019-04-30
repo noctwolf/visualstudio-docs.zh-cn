@@ -9,11 +9,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
 ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433729"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 可以通过从派生来创建菜单命令<xref:System.ComponentModel.Design.MenuCommand>或从<xref:Microsoft.VisualStudio.Shell.OleMenuCommand>对象，并实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。

@@ -10,12 +10,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf96d13f3791570b5f1f98e77411ed64db81fa4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d34642bd805469283ad22d6b40054596ed00a9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441563"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何：更新状态栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60099398"
 2. 当调用 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>，更新中的信息**状态栏**通过调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>。  
   
     > [!NOTE]
-    >  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。  
+    > IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>仅当文档窗口最初已激活。 文档窗口处于活动状态的时间的其余部分中，必须更新**状态栏**编辑器更改的状态信息。  
   
 ## <a name="robust-programming"></a>可靠编程  
  一个**状态栏**包含四个单独的字段：  

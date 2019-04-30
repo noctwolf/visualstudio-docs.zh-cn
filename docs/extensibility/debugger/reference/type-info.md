@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b6af233b630b001d0d9087a2e7792497c2531d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415798"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此结构指定各种类型的字段的类型有关的信息。
@@ -70,7 +70,7 @@ public struct TYPE_INFO {
  此结构传递给[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)填写其中的方法。 如何解释该结构的内容基于`dwKind`字段。
 
 > [!NOTE]
->  [C++仅]如果`dwKind`等于`TYPE_KIND_BUILT`，然后才可释放基础[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象时销毁`TYPE_INFO`结构。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。
+> [C++仅]如果`dwKind`等于`TYPE_KIND_BUILT`，然后才可释放基础[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象时销毁`TYPE_INFO`结构。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。
 
  [C#仅]下表显示了如何解释`unionmember`每种类型的成员。 以下示例显示如何这是一种类型的类型。
 

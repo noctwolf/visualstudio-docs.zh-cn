@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd04cfa1e271f94f1b37aa0fbd62e9b846d9a70d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925707"
 ---
 # <a name="execution-control-and-state-evaluation"></a>执行控件和状态评估
 调试应用程序要求实现单步执行函数，在断点处停止和继续执行此类执行控制功能。 Visual Studio 调试基事件在其执行控制调试器组件之间发送。

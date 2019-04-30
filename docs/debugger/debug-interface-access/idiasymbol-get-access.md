@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79cad67993107bd9643df628b05b30a27dc72085
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fcf510cd9c74e22e0d028552b26c85b1f3d59bd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402518"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 检索的类成员的访问修饰符。
@@ -39,11 +39,11 @@ HRESULT get_access ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v7.0|

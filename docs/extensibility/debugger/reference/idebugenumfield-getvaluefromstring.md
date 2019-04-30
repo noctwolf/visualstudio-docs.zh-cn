@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920404"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 此方法返回与枚举常量的名称相关联的值。
@@ -41,7 +41,7 @@ int GetValueFromString(
 #### <a name="parameters"></a>参数
  `pszValue`
 
- [in]指定要为其获取值的名称的字符串。 请注意，对于 c + +，这是一个宽字符字符串。
+ [in]指定要为其获取值的名称的字符串。 请注意，对于C++，这是一个宽字符字符串。
 
  `pValue`
 

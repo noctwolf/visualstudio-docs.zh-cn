@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443072"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>如何：将控件标记为安全控件
   为了安全，SharePoint 区分防止脚本注入的 Web 控件和 Web 控件不是。 受保护的控件，或*安全控件*，可以由不受信任的用户访问。 您可以将标记为安全控件项属性的 SharePoint 项目项中或在中安全控件**包设计器**时向包中添加程序集。 有关详细信息，请参见
@@ -27,7 +27,7 @@ ms.locfileid: "60082030"
 - [web.config 文件设置更改](http://go.microsoft.com/fwlink/?LinkId=178965)并[Web 部件程序集注册为安全控件](http://go.microsoft.com/fwlink/?LinkId=171013)。
 
 > [!IMPORTANT]
->  这些过程是用于说明目的。 仅当你确信它们是安全的安全控件标记。
+> 这些过程是用于说明目的。 仅当你确信它们是安全的安全控件标记。
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>将标记为安全控件条目属性中的安全控件
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082030"
     |安全应对脚本|将保留**安全应对脚本**复选框为空。|
 
     > [!NOTE]
-    >  **程序集名称**通过添加的程序集的值**高级**选项卡**包设计器**不能将一个令牌，它必须是强名称程序集。 有关详细信息，请参阅[创建和使用具有强名称的程序集](http://go.microsoft.com/fwlink/?LinkId=177513)。
+    > **程序集名称**通过添加的程序集的值**高级**选项卡**包设计器**不能将一个令牌，它必须是强名称程序集。 有关详细信息，请参阅[创建和使用具有强名称的程序集](http://go.microsoft.com/fwlink/?LinkId=177513)。
 
 13. 选择**选项卡**密钥，以创建另一个安全控件项。
 

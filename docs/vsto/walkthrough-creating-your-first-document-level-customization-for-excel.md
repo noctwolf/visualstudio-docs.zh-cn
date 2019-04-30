@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438528"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>演练：创建 excel 在第一个文档级自定义项
   本介绍性演练演示如何创建 Microsoft Office Excel 的文档级自定义项。 仅在特定工作簿处于打开状态时，才可使用你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何工作簿处于打开状态时显示新的功能区选项卡。
@@ -106,7 +106,7 @@ ms.locfileid: "60104494"
      **通过使用设计器添加此文本。**
 
 > [!WARNING]
->  如果将此行文本添加到单元格**A2**，它将覆盖在此示例中的其他代码。
+> 如果将此行文本添加到单元格**A2**，它将覆盖在此示例中的其他代码。
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>以编程方式将文本添加到工作表
  接下来，将代码添加到 Sheet1 代码文件。 新代码使用 Excel 对象模型向工作簿添加第二行文本。 默认情况下，Sheet1 代码文件包含以下生成代码：

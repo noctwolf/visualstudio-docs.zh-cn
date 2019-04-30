@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d5de41ff83f3ffd5b208445830862138511ba2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 2d346f3877574c45aaff6dcef8ca99f699a42552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446647"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 本文档的末尾追加一个 DBCS 的字符串。  
@@ -42,7 +42,7 @@ HRESULT AddDBCSText(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
 |`E_FAIL`|该方法不能添加字符。|  
@@ -51,7 +51,7 @@ HRESULT AddDBCSText(
  此方法将生成`IDebugDocumentTextEvents`通知。  
   
 > [!NOTE]
->  如果此方法之后调用`IDebugDocumentHelper::AddDeferredText`已调用`E_FAIL`返回。  
+> 如果此方法之后调用`IDebugDocumentHelper::AddDeferredText`已调用`E_FAIL`返回。  
   
 ## <a name="see-also"></a>请参阅  
  [IDebugDocumentHelper 接口](../../winscript/reference/idebugdocumenthelper-interface.md)   

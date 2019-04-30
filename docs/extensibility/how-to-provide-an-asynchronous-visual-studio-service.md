@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a9a03c4282fb7c2719f0f408759be972ead0f866
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862935"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何：提供异步 Visual Studio 服务
 如果你想要获取服务而不会阻塞 UI 线程，您应创建异步服务，并加载在后台线程上的包。 可以使用为此目的<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而非<xref:Microsoft.VisualStudio.Shell.Package>，使用异步包的特殊异步方法中添加服务。

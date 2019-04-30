@@ -1,5 +1,5 @@
 ﻿---
-title: ASP.NET 调试： 系统要求 |Microsoft Docs
+title: ASP.NET 调试：系统要求 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 455ed4c8fc4129c4e21123d359a088f6eac5cfca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402716"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 本主题描述了 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 调试方案的软件和安全性要求：
@@ -42,16 +42,16 @@ ms.locfileid: "56604959"
  > [!IMPORTANT]
  > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为为每个应用程序池标识。
 
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅[如何：查找 ASP.NET 进程名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。
 
- 可以通过编辑运行 IIS 的服务器上的 machine.config 文件来更改用于运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的用户帐户。 执行此操作的最佳方式是使用 Internet Information Services (IIS) 管理器。 有关详细信息，请参阅[如何： 运行辅助进程以用户帐户](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。
+ 可以通过编辑运行 IIS 的服务器上的 machine.config 文件来更改运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程的用户帐户。 执行此操作的最佳方式是使用 Internet Information Services (IIS) 管理器。 有关详细信息，请参阅[如何：在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。
 
  如果将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在自己的用户帐户下运行，则即使不是运行 IIS 的服务器上的管理员也可。
 
 > [!CAUTION]
->  在将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在其他帐户下运行之前，请考虑如果 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程在该帐户下运行时遭到黑客攻击可能会产生的后果。 “ASPNET”和“网络服务”用户帐户以最低的权限运行，减少了进程被黑客攻击时可能造成的损害。 如果必须将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在具有更大权限的帐户下运行，则会增加受损的可能性。
+> 在将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在其他帐户下运行之前，请考虑如果 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程在该帐户下运行时遭到黑客攻击可能会产生的后果。 “ASPNET”和“网络服务”用户帐户以最低的权限运行，减少了进程被黑客攻击时可能造成的损害。 如果必须将 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程更改为在具有更大权限的帐户下运行，则会增加受损的可能性。
 
 ## <a name="see-also"></a>请参阅
 
 - [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [如何：在用户帐户下运行辅助进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [如何：在用户帐户下运行工作进程](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

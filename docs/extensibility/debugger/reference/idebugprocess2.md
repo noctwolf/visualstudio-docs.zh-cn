@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6ef6df6419f43201555f1dcc275b44d2a0e9737
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917783"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此接口表示的端口上运行的进程。 如果端口为本地端口，则`IDebugProcess2`通常表示本地计算机上的物理进程。

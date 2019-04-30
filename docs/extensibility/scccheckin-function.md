@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802992"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
 此函数之前签出文件签入源代码管理系统，存储所做的更改和创建的新版本。 此函数调用计数、 签入的文件的名称的数组。
@@ -68,7 +68,7 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|已成功签入文件。|
 |SCC_E_FILENOTCONTROLLED|所选的文件不是源代码管理下。|

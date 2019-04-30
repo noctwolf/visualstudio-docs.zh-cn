@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908879"
 ---
 # <a name="test-area-8-plug-in-switching"></a>测试区域 8：插件切换
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 具有用户界面 (UI) 若要更改当前源代码管理插件。 此测试区域提供用于选择其要使用的解决方案源代码管理插件的过程的测试用例。

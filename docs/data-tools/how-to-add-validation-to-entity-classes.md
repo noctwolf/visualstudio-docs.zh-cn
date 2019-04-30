@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b91fc7fb356ebd0db4a0bd7960ac060e7d152ec1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402844"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何：在实体类中添加验证
 验证实体类是指确认输入到数据对象中的值是否符合对象架构内的约束，以及是否符合为应用程序所建立的规则的过程。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法，这样可以减少错误。 还可以减少应用程序和数据库之间的潜在往返行程次数。
@@ -24,7 +24,7 @@ ms.locfileid: "60070233"
  [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了使用户可以扩展运行期间的插入、 更新和删除完整实体，并还期间和之后各列的设计器生成代码的分部方法更改。
 
 > [!NOTE]
->  本主题将验证添加到实体类，通过使用提供的基本步骤**O/R 设计器**。 它可能很难参考特定实体类的情况下执行这些通用步骤，因为提供的演练，使用实际数据。
+> 本主题将验证添加到实体类，通过使用提供的基本步骤**O/R 设计器**。 它可能很难参考特定实体类的情况下执行这些通用步骤，因为提供的演练，使用实际数据。
 
 ## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>将更改的验证添加到特定列中的值
  此过程演示当列中的值更改时如何验证数据。 由于验证在类定义（而不是用户界面）中执行，因此如果值导致验证失败，则将引发异常。 请为应用程序中试图更改列值的代码实现错误处理。
@@ -75,7 +75,7 @@ ms.locfileid: "60070233"
  除了可以在更改过程中检查值之外，还可以在尝试更新完整实体类时验证数据。 在尝试进行更新操作的过程中进行的验证可以比较多个列中的值（如果业务规则要求这样做）。 下面的过程演示在尝试更新完整实体类时如何进行验证。
 
 > [!NOTE]
->  更新完整实体类的验证代码是在分部 <xref:System.Data.Linq.DataContext> 类（而不是在特定实体类的分部类）中执行的。
+> 更新完整实体类的验证代码是在分部 <xref:System.Data.Linq.DataContext> 类（而不是在特定实体类的分部类）中执行的。
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>在实体类更新过程中验证数据
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f5d6c78f7d5c931272bb66b2706d3b5e531785cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442440"
 ---
 # <a name="namedrange-control"></a>NamedRange 控件
   <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件是一个具有唯一名称的范围，可用于公开事件且可以绑定到数据。 有关详细信息，请参阅[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "60062633"
  在 VSTO 外接程序中，你可以在运行时将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表中。 有关详细信息，请参阅[如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。
 
 > [!NOTE]
->  默认情况下，工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 默认情况下，工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件可以仅包含特定的工作表上的范围。 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件不能具有适用于所有表的相对名称并且它们不能包含跨越工作簿中的两个或多个工作表的范围（3-D 范围）。
 

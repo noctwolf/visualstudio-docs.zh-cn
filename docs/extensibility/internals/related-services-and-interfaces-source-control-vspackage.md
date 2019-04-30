@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908562"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相关服务和界面（源代码管理 VSPackage）
 本部分列出了所有的源控件中的 VSPackage 相关接口[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。 源代码管理 VSPackage 实现这些接口的一些，并使用其他人来完成源代码管理任务。

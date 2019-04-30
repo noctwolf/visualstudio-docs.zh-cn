@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bbe703e54c6023a4d14a8610168438acc5c0e953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0c34ea0489801a563745047b920e38afe58aec1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445493"
 ---
 # <a name="word-solutions"></a>Word 解决方案
   Visual Studio 提供可用于创建适用于 Microsoft Office Word 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案来实现 Word 自动化、扩展 Word 功能以及自定义 Word 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -39,7 +39,7 @@ ms.locfileid: "60085137"
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 > [!NOTE]
->  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。
+> 开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。
 
  本主题提供以下信息：
 

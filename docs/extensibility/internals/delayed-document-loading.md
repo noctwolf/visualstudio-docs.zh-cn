@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a3520b2bf1d6111e945f037502a589feed0d80a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909771"
 ---
 # <a name="delayed-document-loading"></a>文档加载延迟
 
@@ -43,7 +43,7 @@ ms.locfileid: "56335319"
 
 - 如果您的扩展插件使用托管的代码，不应调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A>除非确定文档未处于挂起的初始化状态，或者想要完全初始化后的文档。 此方法始终返回文档的原因是数据对象，如有必要创建它。 相反，应在调用的方法之一`IVsRunningDocumentTable4`接口。
 
-- 如果您的扩展插件使用 c + +，则可以传递`null`不希望的参数。
+- 如果您的扩展插件使用C++，可以将传递`null`不希望的参数。
 
 - 你可以避免不必要的文档加载通过让其他属性之前让相关的属性之前调用以下方法之一：
 

@@ -11,12 +11,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 997e734f6d2ab6bcf70e3a4843ac66564683c79b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443312"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何：安装源代码管理插件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60039837"
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|c:\vss\win32\ssscc.dll|  
   
     > [!NOTE]
-    >  SCCServerPath 是 SourceSafe 插件的完整路径。 您的源代码管理插件将使用不同的公司和产品名称，但相同的注册表项路径。  
+    > SCCServerPath 是 SourceSafe 插件的完整路径。 您的源代码管理插件将使用不同的公司和产品名称，但相同的注册表项路径。  
   
 2. 可以使用以下可选的注册表项来修改您的源代码管理插件的行为。 这些项进入 SccServerPath SccServerName 以及相同的子项。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "60039837"
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  您的源代码管理插件将使用相同的子项和项的名称，但将不同的值。  
+    > 您的源代码管理插件将使用相同的子项和项的名称，但将不同的值。  
   
 4. 创建下 SourceCodeControlProvider 子项中，名为 InstalledSCCProviders 一个子项，然后进行该子项下的一个条目。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "60039837"
     |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|  
   
     > [!NOTE]
-    >  可以有多个源控制插件在这种方式中注册。 这是如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]查找所有已安装的基于源控制插件 API 的插件。  
+    > 可以有多个源控制插件在这种方式中注册。 这是如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]查找所有已安装的基于源控制插件 API 的插件。  
   
 ## <a name="how-an-ide-locates-the-dll"></a>IDE 如何定位 DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 提供两种方法可以查找源控制插件 DLL:  
@@ -100,14 +100,14 @@ ms.locfileid: "60039837"
   要在第一种方法中查找该 DLL，IDE 将查找条目 ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 子项下。 此项的值将指向另一个子项。 IDE 将然后查找名 SccServerPath 为 HKEY_LOCAL_MACHINE 下的第二个子项中的条目。 此项的值指向该 DLL 的 IDE。  
   
 > [!NOTE]
->  IDE 不会从相对路径 (例如，.\NewProvider.DLL) 加载 Dll。 必须指定 DLL 的完整路径 (例如，c:\Providers\NewProvider.DLL)。 这可通过阻止未经授权或模拟插件 Dll 加载增强安全性的 IDE。  
+> IDE 不会从相对路径 (例如，.\NewProvider.DLL) 加载 Dll。 必须指定 DLL 的完整路径 (例如，c:\Providers\NewProvider.DLL)。 这可通过阻止未经授权或模拟插件 Dll 加载增强安全性的 IDE。  
   
  要在第二种方法中查找该 DLL，IDE 将查找所有条目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子项下<em>。</em> 每个项包含一个名称和值。 IDE 将向用户显示这些名称的列表<em>。</em> 当用户选择一个名称时，IDE 将查找指向一个子项的所选名称的值。 IDE 将查找名 SccServerPath 为 HKEY_LOCAL_MACHINE 下的子项中的条目。 该条目的值指向正确的 DLL 的 IDE。  
   
  源代码管理插件需要支持查找 DLL 的两种方式，并因此，设置 ProviderRegKey，覆盖任何以前的设置。 更重要的是，它必须本身向列表添加的 InstalledSccProviders 因此，用户可以选择的源代码管理插件，以使用。  
   
 > [!NOTE]
->  由于使用 HKEY_LOCAL_MACHINE 项，因此可以将只有一个源代码管理插件注册为默认的源代码管理插件在给定计算机上 (但是，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用户能够确定哪些源代码管理插件他们想要实际使用的特定的解决方案）。 在安装过程中，检查以查看是否已设置源代码管理插件;如果是这样，，询问用户要设置新的源代码管理插件安装为默认值。 取消-在安装期间，不要删除通用的所有源代码控制插件在 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; 其他注册表子项删除仅在特定的 SCC 子项。  
+> 由于使用 HKEY_LOCAL_MACHINE 项，因此可以将只有一个源代码管理插件注册为默认的源代码管理插件在给定计算机上 (但是，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用户能够确定哪些源代码管理插件他们想要实际使用的特定的解决方案）。 在安装过程中，检查以查看是否已设置源代码管理插件;如果是这样，，询问用户要设置新的源代码管理插件安装为默认值。 取消-在安装期间，不要删除通用的所有源代码控制插件在 HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider; 其他注册表子项删除仅在特定的 SCC 子项。  
   
 ## <a name="how-the-ide-detects-version-1213-support"></a>IDE 如何检测版本 1.2/1.3 支持  
  如何 does[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]检测是否插件支持源控制插件 API 版本 1.2 和 1.3 功能？ 若要声明高级的功能，源代码管理插件必须实现相应的函数。  

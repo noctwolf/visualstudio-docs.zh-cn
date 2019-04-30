@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445940"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>对应用商店应用中的 Visual C# 代码进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60100178"
  本主题还为单元测试和要测试的 DLL 创建一个 Visual Studio 解决方案和单独的项目。 您还可在 DLL 项目中直接包含单元测试，也可以为单元测试和 DLL 创建不同的解决方案。  
   
 > [!NOTE]
->  Visual Studio Community、Enterprise. 和 Professional 提供其他适用于单元测试的功能。  
+> Visual Studio Community、Enterprise. 和 Professional 提供其他适用于单元测试的功能。  
 > 
 > - 使用已为 Microsoft 测试资源管理器创建附加设备适配器的任何第三方和开放源代码单元测试框架。 还可为测试分析并显示代码覆盖率信息。  
 >   - 在每次生成后运行测试。  
@@ -211,7 +211,7 @@ ms.locfileid: "60100178"
     ```  
   
     > [!TIP]
-    >  建议你不更改已通过的测试。 相反，请添加新测试，更新代码，使测试通过，然后添加其他测试，依此类推。  
+    > 建议你不更改已通过的测试。 相反，请添加新测试，更新代码，使测试通过，然后添加其他测试，依此类推。  
     >   
     >  当用户更改其要求时，请禁用不再正确的测试。 编写新测试，并以相同的增量方式使他们每次运行一个。  
   
@@ -222,7 +222,7 @@ ms.locfileid: "60100178"
      ![RangeTest 未通过](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  编写测试后，立即验证每个测试是否都将失败。 这有助于避免编写从不失败的测试这一易犯错误。  
+    > 编写测试后，立即验证每个测试是否都将失败。 这有助于避免编写从不失败的测试这一易犯错误。  
   
 4. 增强受测代码，以便新测试通过。 将 **Rooter.cs** 中的 `SqareRoot` 函数更改为：  
   
@@ -247,7 +247,7 @@ ms.locfileid: "60100178"
      现在所有三个测试都将通过。  
   
 > [!TIP]
->  通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。  
+> 通过一次添加一个测试来开发代码。 确保每次迭代后所有的测试都会通过。  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> 调试失败测试  
   
@@ -332,7 +332,7 @@ ms.locfileid: "60100178"
 2. 选择“全部运行”以测试已重构的方法，并确保你未引入回归。  
   
 > [!TIP]
->  一组稳定的优良单元测试可保证你在更改代码时不会引入 Bug。  
+> 一组稳定的优良单元测试可保证你在更改代码时不会引入 Bug。  
   
  **重构测试代码以消除重复代码。**  
   
@@ -365,4 +365,4 @@ ms.locfileid: "60100178"
 2. 选择“全部运行”，测试重构后的方法，并确保未引入任何错误。  
   
 > [!NOTE]
->  若要向测试类添加帮助器方法，请勿向该方法添加 `[TestMethod]` 特性。 测试资源管理器未注册要运行的方法。
+> 若要向测试类添加帮助器方法，请勿向该方法添加 `[TestMethod]` 特性。 测试资源管理器未注册要运行的方法。

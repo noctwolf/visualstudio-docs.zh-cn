@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434733"
 ---
 # <a name="restrictions-on-string-lengths"></a>字符串长度限制
 源控件插件 API 限制在各种不同的函数中使用的字符串的长度。
 
 ## <a name="string-length-values"></a>字符串长度值
 
-|返回的常量|值|
+|返回的常量|“值”|
 |--------------|-----------|
 |`SCC_NAME_LEN`|31|
 |`SCC_AUXLABEL_LEN`|31|
@@ -30,7 +30,7 @@ ms.locfileid: "56716683"
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  长度不包括终止`null`。 其他常量而不是"_LEN"的"大小) (_s"后缀与执行包含终止的空间`null`。
+> 长度不包括终止`null`。 其他常量而不是"_LEN"的"大小) (_s"后缀与执行包含终止的空间`null`。
 
 |返回的常量|“值”|
 |--------------|-----------|

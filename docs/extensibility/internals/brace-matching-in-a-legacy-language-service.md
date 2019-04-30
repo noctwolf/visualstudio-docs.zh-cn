@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415355"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>旧版语言服务中的括号匹配
 大括号匹配可帮助开发人员跟踪需要发生在一起，例如成对的圆括号和大括号的语言元素。 当开发人员输入一个右大括号时，左大括号突出显示。
@@ -26,7 +26,7 @@ ms.locfileid: "56606623"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现的大括号匹配的新方法的详细信息，请参阅[演练：显示匹配的大括号](../../extensibility/walkthrough-displaying-matching-braces.md)。
 
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。
 
  <xref:Microsoft.VisualStudio.Package.AuthoringSink>类支持这两个对，用两倍<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A>和<xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A>方法。
 

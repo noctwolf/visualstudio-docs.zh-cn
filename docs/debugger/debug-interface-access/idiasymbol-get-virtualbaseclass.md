@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7773dfdecff4e56783765ccdedfa2feacf9c7b06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c97290f878a8b3b0835c7e3ac33aa2ebecfb019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400581"
 ---
 # <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 检索指定用户定义数据类型是否为虚拟基类的标志。
@@ -39,7 +39,7 @@ HRESULT get_virtualBaseClass ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="see-also"></a>请参阅
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

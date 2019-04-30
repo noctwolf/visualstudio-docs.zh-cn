@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420678"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用打开文件命令显示文件
 以下步骤介绍如何处理 IDE**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还说明项目应如何响应来自此命令的调用。
@@ -31,7 +31,7 @@ ms.locfileid: "60112151"
     - 如果文件未打开，IDE 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>来查询每个项目，以确定哪一个项目可以打开该文件。
 
         > [!NOTE]
-        >  中的项目实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供一个优先级值，指示你的项目将打开该文件的级别。 中提供了优先级值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>枚举。
+        > 中的项目实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供一个优先级值，指示你的项目将打开该文件的级别。 中提供了优先级值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>枚举。
 
 2. 每个项目与优先级级别，用于指示重要性响应它置于所要打开该文件的项目。
 

@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba9efa9710a3dd439b1cd47e4df777a76d781aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444243"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60050565"
 本演练演示如何使用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具是一个基本示例，将演示如何创建更加适合您项目的其他数据类型的可视化工具。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请转到“工具”菜单，然后选择“导入和导出”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请转到“工具”菜单，然后选择“导入和导出”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  可视化工具代码必须放置在一个将由调试器读取的 DLL 中。 第一步是为此 DLL 创建一个类库项目。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60050565"
 2. 将名称从 Class1.vb 更改为有意义的名称，例如 DebuggerSide.vb。  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动更改 DebuggerSide.vb 中的类声明，以便与新文件名匹配。  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动更改 DebuggerSide.vb 中的类声明，以便与新文件名匹配。  
   
 3. 在“解决方案资源管理器”中，右键单击“My First Visualizer”，然后在快捷菜单上单击“添加引用”。  
   

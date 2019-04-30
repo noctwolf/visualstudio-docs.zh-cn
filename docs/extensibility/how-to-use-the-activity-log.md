@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415533"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售环境中进行调试的 Vspackage。
 
 > [!TIP]
->  活动日志始终开启。 Visual Studio 将最近 100 个项，以及具有常规配置信息的前 10 个项一个循环缓冲区。
+> 活动日志始终开启。 Visual Studio 将最近 100 个项，以及具有常规配置信息的前 10 个项一个循环缓冲区。
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>若要向活动日志写入条目
 

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 491e16454f52fb621306280351e1288f3de3a5e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437279"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
 检索下一个`IDispError`对象。  
@@ -50,7 +50,7 @@ HRESULT GetNext(
  此方法检索下一个`IDispError`对象。 如果这是最后`IDispError`对象，此方法将返回 NULL。  
   
 > [!NOTE]
->  未实现此方法。  
+> 未实现此方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDispError 接口](../../winscript/reference/idisperror-interface.md)

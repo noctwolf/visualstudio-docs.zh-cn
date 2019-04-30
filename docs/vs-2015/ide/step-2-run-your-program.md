@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434047"
 ---
 # <a name="step-2-run-your-program"></a>步骤 2：运行程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60058403"
     - 选择“Form1”窗口上角的 X 按钮。  
   
     > [!NOTE]
-    >  在从 IDE 内部运行程序时，这一操作称为“调试”，因为通常将使用此操作来查找并修复程序中的 Bug（错误）。 虽然此程序很小，并且实际上不执行任何操作，但它仍是一个真正的程序。 您可以执行相同的过程来运行和调试其他程序。 要了解有关调试的详细信息，请参阅[调试程序基础知识](../debugger/debugger-basics.md)。  
+    > 在从 IDE 内部运行程序时，这一操作称为“调试”，因为通常将使用此操作来查找并修复程序中的 Bug（错误）。 虽然此程序很小，并且实际上不执行任何操作，但它仍是一个真正的程序。 您可以执行相同的过程来运行和调试其他程序。 要了解有关调试的详细信息，请参阅[调试程序基础知识](../debugger/debugger-basics.md)。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   

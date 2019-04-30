@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900662"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt;元素 （ClickOnce 应用程序）
 标识应用程序部署在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。
@@ -42,7 +42,7 @@ ms.locfileid: "56635665"
 ## <a name="elements-and-attributes"></a>元素和属性
  `assemblyIdentity`元素是必需的。 它不包含任何子元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 标识应用程序的名称。<br /><br /> 如果`Name`包含特殊字符，如单引号或双引号引起来，应用程序可能无法激活。|
 |`Version`|必需。 采用以下格式指定该应用程序的版本号： `major.minor.build.revision`|
@@ -52,7 +52,7 @@ ms.locfileid: "56635665"
 
 ## <a name="examples"></a>示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示`assemblyIdentity`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 此代码示例摘自[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。
 
 ### <a name="code"></a>代码

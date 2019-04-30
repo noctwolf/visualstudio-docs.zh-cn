@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: defc1605d15fcc9ce616212b48faa7674abc87e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824663"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 
@@ -78,7 +78,7 @@ ms.locfileid: "55910163"
 
      控件必须具有以下属性之一。
 
-    |特性|说明​​|
+    |特性|描述|
     |---------------|-----------------|
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|此属性显示的数据，单个列 （或属性） 的简单控件上实现如<xref:System.Windows.Forms.TextBox>。|
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|此属性显示数据列表 （或表） 的控件上实现如<xref:System.Windows.Forms.DataGridView>。|

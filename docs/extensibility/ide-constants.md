@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861927"
 ---
 # <a name="ide-constants"></a>IDE 常量
 
@@ -29,7 +29,7 @@ ms.locfileid: "54929547"
 
 ## <a name="logical-and-physical-views"></a>逻辑和物理视图
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` 处理程序应将此值设置为传递<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法以获取**打开**对话框中，在这种情况下，对可能的代码视图。|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` 处理程序会传递此值设置为<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>方法以获取**打开**对话框中，在这种情况下，可能进行填充<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>调试视图映射到同一个视图作为<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>。|
@@ -92,7 +92,7 @@ ms.locfileid: "54929547"
 ## <a name="vsselelemid"></a>VSSELELEMID
  用于指示新的选择状态的常量。
 
-|返回的常量|值|
+|返回的常量|“值”|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|
@@ -105,7 +105,7 @@ ms.locfileid: "54929547"
 
 ## <a name="component-selector-dialog-constants"></a>组件选择器对话框常量
 
-|返回的常量|值|
+|返回的常量|“值”|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|

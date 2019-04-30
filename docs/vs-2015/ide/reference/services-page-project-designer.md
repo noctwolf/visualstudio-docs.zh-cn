@@ -14,12 +14,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: ed2e8ad333121a489c450a35daf81a368cd4aba8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444722"
 ---
 # <a name="services-page-project-designer"></a>“项目设计器”->“服务”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59648349"
  若要访问“服务”页，请在“解决方案资源管理器”中选择项目节点，然后在“项目”菜单上单击“属性”。 显示“项目设计器”时，单击“服务”选项卡。  
   
 > [!NOTE]
->  客户端应用程序服务要求完整版的 .NET Framework，在 .NET Framework Client Profile 中不受支持。 如果“启用客户端应用程序服务”复选框处于禁用状态，请验证“目标框架”是否设置为 .NET Framework 3.5 或更高版本。 若要查看 C# 中的“目标框架”设置，请打开项目设计器，然后单击“应用程序”页面。 若要查看 Visual Basic 中的“目标框架”设置，请打开项目设计器，单击“编译”页面，然后单击“高级编译选项”。  
+> 客户端应用程序服务要求完整版的 .NET Framework，在 .NET Framework Client Profile 中不受支持。 如果“启用客户端应用程序服务”复选框处于禁用状态，请验证“目标框架”是否设置为 .NET Framework 3.5 或更高版本。 若要查看 C# 中的“目标框架”设置，请打开项目设计器，然后单击“应用程序”页面。 若要查看 Visual Basic 中的“目标框架”设置，请打开项目设计器，单击“编译”页面，然后单击“高级编译选项”。  
   
 ## <a name="task-list"></a>任务列表  
  [如何：配置客户端应用程序服务](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  

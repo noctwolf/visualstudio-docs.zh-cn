@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926019"
 ---
 # <a name="breakpoint-related-methods"></a>断点相关的方法
 调试引擎 (DE) 必须支持的设置的断点。 Visual Studio 调试支持以下类型的断点：

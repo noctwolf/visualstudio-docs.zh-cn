@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902262"
 ---
-# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在并行堆栈窗口中查看线程和任务 (C#，Visual Basic、 c + +)
+# <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在并行堆栈窗口中查看线程和任务 (C#，Visual Basic 中， C++)
 
 **并行堆栈**窗口可用于调试多线程应用程序。 它具有多个视图：
 
@@ -46,7 +46,7 @@ ms.locfileid: "56712536"
 
 ![在并行堆栈窗口的工具栏](../debugger/media/parallel_stackstoolbar.png "并行堆栈工具栏")
 
-|图标|控件|说明|
+|图标|控件|描述|
 |-|-|-|
 |![线程/任务组合框](media/parallel_toolbar1.png "线程/任务组合框")|**线程**/**任务**组合框|在线程的调用堆栈和任务的调用堆栈之间切换视图。 有关更多信息，请参见[任务视图](#tasks-view)和[线程视图](#threads-view)。|
 |![显示仅标记图标](media/parallel_toolbar2.png "仅显示已标记项图标")|仅显示已标记项|显示仅为如标记在其他调试器窗口中的线程调用堆栈**GPU 线程**窗口和**并行监视**窗口。|
@@ -57,7 +57,7 @@ ms.locfileid: "56712536"
 ### <a name="stack-frame-icons"></a>堆栈帧的图标
 以下图标提供有关所有视图中的活动和当前堆栈帧的信息：
 
-|图标|说明|
+|图标|描述|
 |-|-|
 |![黄色箭头](media/icon_parallelyellowarrow.gif)|指示当前线程的当前位置 （活动堆栈帧）。|
 |![线程图标](media/icon_parallelthreads.gif)|指示非当前线程的当前位置 （活动堆栈帧）。|
@@ -68,7 +68,7 @@ ms.locfileid: "56712536"
 
 ![在并行堆栈窗口的快捷菜单](../debugger/media/parallel_contmenu.png "并行堆栈窗口中的快捷菜单")
 
-|Menu item|说明|
+|Menu item|描述|
 |-|-|
 |**标记**|标记选定项。|
 |**取消标记**|取消标记选定项。|
@@ -98,7 +98,7 @@ ms.locfileid: "56712536"
 
 下表介绍的主要功能**线程**视图：
 
-|标注|元素名称|说明|
+|标注|元素名称|描述|
 |-|-|-|
 |1|调用堆栈段或节点|包含一系列的一个或多个线程的方法。 如果帧没有连接到该箭头线，框架将显示线程的整个调用路径。|
 |2|蓝色突出显示|指示当前线程的调用路径。|

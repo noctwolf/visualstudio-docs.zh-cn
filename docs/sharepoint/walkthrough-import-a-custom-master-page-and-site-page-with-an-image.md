@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834382"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入自定义母版页和站点页图像
   本演练演示如何导入 SharePoint 的自定义母版页和包含到图像的网站页面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。

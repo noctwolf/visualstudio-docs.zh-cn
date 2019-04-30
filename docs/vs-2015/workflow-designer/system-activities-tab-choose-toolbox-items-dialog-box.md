@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 29eb905a4852bf521ebee72a498b44edbdcef8df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445402"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>“System.Activities”选项卡 ->“选择工具箱项”对话框
 此选项卡**选择工具箱项**对话框中显示的列表[!INCLUDE[wf](../includes/wf-md.md)]活动、 模板和项目可用。 若要显示此列表，请选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，并选择其**System.Activities**选项卡。默认情况下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供所示的活动和活动通过显示在其他程序集添加**工具箱**默认情况下选中。 最近添加的活动，会自动选中，并显示在**工具箱**当你单击**确定**对话框上。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。  
   
 > [!WARNING]
->  如果您试图添加未包含任何工作流活动的程序集，则将显示一个错误对话框，指出该程序集没有包含任何活动。  
+> 如果您试图添加未包含任何工作流活动的程序集，则将显示一个错误对话框，指出该程序集没有包含任何活动。  
   
  此对话框是项目不可知，因此**System.Activities**选项卡继续显示在独立 XAML 或非工作流项目类型。  
   

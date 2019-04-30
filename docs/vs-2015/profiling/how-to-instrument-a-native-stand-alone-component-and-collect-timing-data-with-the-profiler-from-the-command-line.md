@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39773bbf821a4b7cec416ff726bf84cbb46935f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432658"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：检测本机独立组件并收集计时数据与从命令行 Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60048822"
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具检测 C++、.exe 或 .dll 文件等本机组件和收集详细计时数据。  
 
 > [!NOTE]
->  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
  要使用检测方法从组件收集详细计时数据，可使用 [VSInstr.exe](../profiling/vsinstr.md) 工具生成该组件的受检测版本。 然后启动探查器。 在执行受检测组件时，会自动将计时数据收集到数据文件中。 在分析会话过程中可以暂停和恢复数据收集。  
 

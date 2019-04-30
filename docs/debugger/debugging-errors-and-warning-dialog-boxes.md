@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852093"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 以下是在调试应用程序时可能遇到的错误和警告对话框。
@@ -54,10 +54,10 @@ ms.locfileid: "56700193"
 
  [无法连接到计算机](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [错误：无法进行调试，因为系统上已启用内核调试程序](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>相关章节
- [调试脚本和 Web：错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [调试脚本和 Web:错误和疑难解答](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [远程调试错误](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441809"
 ---
 # <a name="excel-object-model-overview"></a>Excel 对象模型概述
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：
@@ -80,7 +80,7 @@ ms.locfileid: "60104535"
  Excel <xref:Microsoft.Office.Interop.Excel.Application> 对象表示 Excel 应用程序本身。 <xref:Microsoft.Office.Interop.Excel.Application> 对象公开了大量有关正在运行的应用程序、应用于该实例的选项以及在该实例内部开启的当前用户对象的信息。
 
 > [!NOTE]
->  不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 false 可防止 Excel 引发任何事件，包括主机控件的事件。
+> 不应将 Excel 中 <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Application> 属性设置为 **false**。 将此属性设置为 false 可防止 Excel 引发任何事件，包括主机控件的事件。
 
 ### <a name="workbook-object"></a>工作簿对象
  <xref:Microsoft.Office.Interop.Excel.Workbook> 对象表示 Excel 应用程序中的单个工作簿。

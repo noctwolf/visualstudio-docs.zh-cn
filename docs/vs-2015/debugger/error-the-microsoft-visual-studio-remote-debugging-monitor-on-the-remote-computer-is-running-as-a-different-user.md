@@ -24,12 +24,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a0f98789a7067288cdca649800218df614fdc84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7cba3de8aa07a021d61e1ebb2a2c97f568eaf9ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388426"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>错误：远程计算机上的 Microsoft Visual Studio 远程调试监视器正在以其他用户身份运行 |Microsoft Docs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58925893"
  最安全最好的解决方案是，使用运行 Visual Studio 时所用的用户帐户运行远程调试监视器 (msvsmon.exe)。 如果无法做到这一点，可以通过在远程调试监视器“选项”对话框中选择“允许任何用户进行调试”，使用其他用户帐户运行远程调试监视器。   
   
 > [!CAUTION]
->  授予其他用户进行连接的权限可能会导致意外地连接到错误的远程调试会话。 在“无身份验证”模式中调试不安全，应谨慎使用。  
+> 授予其他用户进行连接的权限可能会导致意外地连接到错误的远程调试会话。 在“无身份验证”模式中调试不安全，应谨慎使用。  
   
  有关详细信息，请参阅[启动远程调试监视器](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c)。  
   

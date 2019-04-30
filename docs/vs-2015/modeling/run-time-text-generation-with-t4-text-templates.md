@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411878"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. 键入你的模板文件的名称。  
   
     > [!NOTE]
-    >  模板文件的名称将用作生成的代码中的类名称。 因此，它不应具有空格或标点。  
+    > 模板文件的名称将用作生成的代码中的类名称。 因此，它不应具有空格或标点。  
   
 4. 选择“添加”。  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. 设置文件的**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 在解决方案资源管理器，在该文件的快捷菜单上选择**属性**。  
   
     > [!NOTE]
-    >  如果已设置该属性，请确保它是**TextTemplatingFilePreprocessor**而不**TextTemplatingFileGenerator**。 如果已具有扩展名的文件包含在发生这种情况 **.tt**。  
+    > 如果已设置该属性，请确保它是**TextTemplatingFilePreprocessor**而不**TextTemplatingFileGenerator**。 如果已具有扩展名的文件包含在发生这种情况 **.tt**。  
   
 3. 更改到的文件扩展名 **.tt**。 尽管此步骤是可选的但它可帮助您避免在不适当的编辑器中打开该文件。  
   

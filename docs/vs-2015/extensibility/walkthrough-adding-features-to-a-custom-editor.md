@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442302"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>演练：在自定义编辑器中添加功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60071429"
     2. 若要对外部文件的更改做出响应，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>编辑器的文档的数据对象。  
   
         > [!NOTE]
-        >  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要获取的指针`IVsFileChangeEx`。  
+        > 调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>若要获取的指针`IVsFileChangeEx`。  
   
 7. 协调与源代码管理的文档编辑事件。 具体方法为：  
   
@@ -138,7 +138,7 @@ ms.locfileid: "60071429"
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。  
+    > `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。  
   
      你`IOleCommandTarget`实现处理命令，如**剪切**，**副本**，并且**粘贴**。 在实现时`IOleCommandTarget`，确定编辑器是否需要其自己的.vsct 文件来定义其自己的命令菜单结构，或如果它可以实现定义的标准命令[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 通常情况下，编辑器使用和扩展 IDE 的菜单并定义其自己的工具栏。 但是，它通常有必要为一个编辑器，用于定义其自己特定的命令，除了使用 IDE 的标准命令集。 若要执行此操作，你的编辑器必须声明其使用，然后在.vsct 文件中定义任何新的命令、 上下文菜单中，顶级菜单和工具栏的标准命令。 如果您创建就地激活编辑器，然后实现<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，并为而不是使用 OLE 2 菜单合并的.vsct 文件中的编辑器中定义的菜单和工具栏。  
   
@@ -156,4 +156,4 @@ ms.locfileid: "60071429"
   
 ## <a name="see-also"></a>请参阅  
  [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   
- [如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)
+ [如何：为编辑器提供上下文](../extensibility/how-to-provide-context-for-editors.md)

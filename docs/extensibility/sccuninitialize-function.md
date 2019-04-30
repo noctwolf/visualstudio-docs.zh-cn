@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fae6cf7d86d57152446e8acc9e87a0fcbb3d12db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433027"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 函数
 此函数将清除任何分配或由以前调用创建的打开连接[SccInitialize](../extensibility/sccinitialize-function.md)以准备关闭源代码管理插件。
@@ -38,7 +38,7 @@ SCCRTN SccUninitialize (
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|值|描述|
+|“值”|描述|
 |-----------|-----------------|
 |SCC_OK|清理已成功完成。|
 

@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac4ae8357d62813abb3f4735ec6e1f8b552d324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e70b83046c41b13cb51324eb63e81b26a118a81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403507"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>符号类型的词法层次结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "58937083"
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|指定`namespace`标识符。|  
   
 > [!NOTE]
->  其他符号属性可能可用，具体取决于符号类型。 单个符号主题中列出了这些属性。  
+> 其他符号属性可能可用，具体取决于符号类型。 单个符号主题中列出了这些属性。  
   
 ## <a name="see-also"></a>请参阅  
  [符号类型的类层次结构](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   

@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970409"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 office 和 SharePoint 开发
   可以通过创建用户从 [Office 应用商店](https://store.office.com/) 或组织目录中下载的轻量级应用程序或外接程序来扩展 Microsoft Office 和 SharePoint，或者通过创建用户在计算机上安装的基于 .NET Framework 的解决方案来扩展。

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426946"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60093041"
    有关示例，请参阅[可视化和建模 SDK 网站](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
 > [!NOTE]
->  通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
+> 通过在 CommandSet.cs 中重写方法，还可以修改某些现有命令（例如剪切、粘贴、全选和打印）的行为。 有关详细信息，请参阅[如何：修改标准的菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。  
   
 ## <a name="defining-a-command-using-mef"></a>使用 MEF 定义命令  
  托管扩展框架 (MEF) 提供了一种定义关系图菜单上的菜单命令的替代方法。 它的主要用途是允许你或其他各方扩展 DSL。 用户可以选择只安装 DSL 或同时安装 DSL 和扩展。 但是，完成在 DSL 上启用 MEF 的初始工作后，MEF 还将减少定义快捷菜单命令的工作量。  
@@ -90,7 +90,7 @@ ms.locfileid: "60093041"
     ```  
   
     > [!NOTE]
-    >  每个按钮或组由一个 GUID 和一个整数 ID 标识。 可以使用同一 GUID 创建多个组和按钮。 但是，它们必须具有不同的 ID。 GUID 名称和 ID 名称将转换为实际 Guid 和数值 Id 中的`<Symbols>`节点。  
+    > 每个按钮或组由一个 GUID 和一个整数 ID 标识。 可以使用同一 GUID 创建多个组和按钮。 但是，它们必须具有不同的 ID。 GUID 名称和 ID 名称将转换为实际 Guid 和数值 Id 中的`<Symbols>`节点。  
   
 3. 为命令添加可见性约束，以便仅在域特定语言的上下文中加载该命令。 有关详细信息，请参阅[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60093041"
 5. 将 `{000...000}` 替换为标识组和菜单项的 GUID。 若要获取新的 GUID，请使用**创建 GUID**上**工具**菜单。  
   
     > [!NOTE]
-    >  如果添加更多组或菜单项，则可以使用同一 GUID。 但是，你必须将新值用于 `IDSymbols`。  
+    > 如果添加更多组或菜单项，则可以使用同一 GUID。 但是，你必须将新值用于 `IDSymbols`。  
   
 6. 在已从此过程复制的代码中，将以下字符串的每个匹配项替换为自己的字符串：  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  使用相同的 GUID 值中插入**Commands.vsct**。  
   
 > [!NOTE]
->  如果更改 VSCT 文件的“符号”部分，还必须更改这些要匹配的声明。 还应在 Package.tt 中递增版本号  
+> 如果更改 VSCT 文件的“符号”部分，还必须更改这些要匹配的声明。 还应在 Package.tt 中递增版本号  
   
  将菜单命令注册为此命令集的一部分。 当初始化关系图时，将调用一次 `GetMenuCommands()`：  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387500"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "60073522"
  出于此原因，如果你想要读取 UML 关系图或层关系图，则必须有权限访问创建它的建模项目。 可以通过从 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 来获得访问权限，也可以通过获取项目文件的副本来获得访问权限。  
   
 > [!NOTE]
->  这不适用于从代码生成的代码图和 .NET 类图。 这些关系图可以独立建模项目中查看。  
+> 这不适用于从代码生成的代码图和 .NET 类图。 这些关系图可以独立建模项目中查看。  
   
  若要读取 UML 关系图或层关系图，你所需的最小文件集如下：  
   
 - 两个关系图文件为你想要读取，例如，该关系图**MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。  
   
     > [!NOTE]
-    >  有关层关系图，还应具有名为的文件_MyDiagram_**。 layerdiagram.suppressions**。  
+    > 有关层关系图，还应具有名为的文件_MyDiagram_**。 layerdiagram.suppressions**。  
   
 - 建模项目文件 (**MyModel.modelproj**)  
   

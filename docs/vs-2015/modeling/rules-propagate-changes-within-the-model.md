@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442932"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  规则的代码应更改仅的商店; 内的元素的状态也就是说，该规则应更改仅模型元素、 关系、 形状、 连接器、 关系图或它们的属性。 如果你想要将更改传播到应用商店以外的资源，定义存储事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> 规则的代码应更改仅的商店; 内的元素的状态也就是说，该规则应更改仅模型元素、 关系、 形状、 连接器、 关系图或它们的属性。 如果你想要将更改传播到应用商店以外的资源，定义存储事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>若要定义规则  
 

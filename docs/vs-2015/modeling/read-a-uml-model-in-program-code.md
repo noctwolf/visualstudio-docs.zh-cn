@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387670"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>在程序代码中读取 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
  上一节中的示例将用于 Visual Studio 扩展。 可以在独立的应用程序中读取模型，但你必须向 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目添加一些引用。  
   
 > [!NOTE]
->  有关在独立的应用程序中读取模型的方法的详细信息可能会在该产品的将来版本中进行更改。 当前版本中可以访问的一些功能可能在未来版本不会提供。  
+> 有关在独立的应用程序中读取模型的方法的详细信息可能会在该产品的将来版本中进行更改。 当前版本中可以访问的一些功能可能在未来版本不会提供。  
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>添加引用以读取独立的应用程序中的模型。  
   

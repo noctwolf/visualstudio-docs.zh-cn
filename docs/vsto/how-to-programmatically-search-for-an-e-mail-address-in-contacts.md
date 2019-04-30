@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962288"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>如何：以编程方式在联系人中的电子邮件地址搜索
   以下示例将在联系人文件夹搜索电子邮件地址中具有域名 **example.com** 的联系人。

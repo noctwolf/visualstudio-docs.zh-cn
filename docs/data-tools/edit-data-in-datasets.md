@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402862"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 编辑任何数据库中的表中的数据一样编辑数据的表中的数据。 过程可以包括插入、 更新和删除表中的记录。 在数据绑定窗体中，可以指定哪些字段是用户可编辑。 在这些情况下，数据绑定基础结构可处理所有更改跟踪，以便所做的更改可以发送回数据库更高版本。 如果以编程方式对数据进行编辑，并且你想要将这些更改发送回数据库，必须使用的对象和为您做的更改跟踪的方法。
@@ -58,7 +58,7 @@ ms.locfileid: "60096980"
      此方法不会以物理方式删除记录。 相反，它将标记为删除的记录。
 
     > [!NOTE]
-    >  如果收到的 count 属性<xref:System.Data.DataRowCollection>，在生成的计数包括已标记为删除的记录。 若要获取不会将标记为删除的记录的精确计数，可以循环访问集合，查看<xref:System.Data.DataRow.RowState%2A>每个记录属性。 (标记为删除的记录具有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState.Deleted>。)或者，可以创建数据视图的筛选器根据行状态的数据集，并从那里获取的 count 属性。
+    > 如果收到的 count 属性<xref:System.Data.DataRowCollection>，在生成的计数包括已标记为删除的记录。 若要获取不会将标记为删除的记录的精确计数，可以循环访问集合，查看<xref:System.Data.DataRow.RowState%2A>每个记录属性。 (标记为删除的记录具有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState.Deleted>。)或者，可以创建数据视图的筛选器根据行状态的数据集，并从那里获取的 count 属性。
 
 下面的示例演示如何调用<xref:System.Data.DataRow.Delete%2A>方法将标记中的第一行`Customers`表为已删除：
 

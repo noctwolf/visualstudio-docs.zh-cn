@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939328"
 ---
 # <a name="bookmark-control"></a>Bookmark 控件
   <xref:Microsoft.Office.Tools.Word.Bookmark> 控件是一个具有唯一名称且用于公开事件的书签，可以绑定到数据。 可以将书签用作占位符以在 Microsoft Office Word 文档中标记项或位置。 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件是 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象和 <xref:Microsoft.Office.Interop.Word.Range> 对象的组合。

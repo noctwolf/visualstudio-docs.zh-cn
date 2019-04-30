@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建 ClickOnce 应用程序的文件关联 |Microsoft Docs
+title: 如何：创建 ClickOnce 应用程序的文件关联 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899455"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序创建文件关联
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何：创建 ClickOnce 应用程序的文件关联
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 这样，当用户打开这些类型的文件将自动启动该应用程序，应用程序可以与一个或多个文件扩展名相关联。 添加到的文件名称扩展支持[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序非常简单。
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>若要创建 ClickOnce 应用程序的文件关联
@@ -35,13 +35,13 @@ ms.locfileid: "56633039"
 
 4. 为的子`assembly`元素中，添加`fileAssociation`元素。 `fileAssociation`元素具有四个属性：
 
-   - `extension`： 你想要将与应用程序相关联文件扩展名。
+   - `extension`：你想要将应用程序与关联文件扩展名。
 
-   - `description`： 文件类型，不会在 Windows shell 中的说明。
+   - `description`：文件类型，不会在 Windows shell 中的说明。
 
-   - `progid`： 唯一地标识要将其标记在注册表中的文件类型一个字符串。
+   - `progid`：唯一地标识要将其标记在注册表中的文件类型的字符串。
 
-   - `defaultIcon`： 若要使用此文件类型一个图标。 必须为应用程序清单中的文件资源添加图标。 有关详细信息，请参阅 [如何：将数据文件包括到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
+   - `defaultIcon`：若要使用此文件类型图标。 必须为应用程序清单中的文件资源添加图标。 有关详细信息，请参阅[如何：将数据文件添加到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 
      有关的示例`file`并`fileAssociation`元素，请参阅[ \<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md)。
 

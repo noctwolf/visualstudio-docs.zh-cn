@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418457"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具栏
 本主题枚举包括 Visual Studio 集成的开发环境 (IDE) 中的工具栏的 GUID 和 ID 值，并包含的组。 这些值中定义 *.vsct*作为 Visual Studio SDK 的一部分安装的文件。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
 
 > [!NOTE]
->  许多发布到 Visual Studio 工具栏未定义的 Visual Studio 中，并且其 GUID 和 ID 值不是公共。 本主题列出了在 Visual Studio SDK 中定义的工具栏 *.vsct*文件。
+> 许多发布到 Visual Studio 工具栏未定义的 Visual Studio 中，并且其 GUID 和 ID 值不是公共。 本主题列出了在 Visual Studio SDK 中定义的工具栏 *.vsct*文件。
 
  有关如何使用 IDE 对象中定义的详细信息 *.vsct*文件，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。
 
@@ -41,7 +41,7 @@ ms.locfileid: "56643751"
 |Toolbar|Id|
 |-------------|--------|
 |标准|IDM_VS_TOOL_STANDARD|
-|生成|IDM_VS_TOOL_BUILD|
+|Build|IDM_VS_TOOL_BUILD|
 |文本编辑器|IDM_VS_TOOL_TEXTEDITOR|
 |调试|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|
 |调试位置|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -61,7 +61,7 @@ ms.locfileid: "56643751"
 
 ### <a name="standard-toolbar-groups"></a>标准工具栏组
 
-|name|Id|
+|名称|Id|
 |----------|--------|
 |保存/打开|IDG_VS_TOOLSB_SAVEOPEN|
 |剪切/复制|IDG_VS_TOOLSB_CUTCOPY|
@@ -75,14 +75,14 @@ ms.locfileid: "56643751"
 
 ### <a name="build-toolbar-groups"></a>生成工具栏组
 
-|name|Id|
+|名称|Id|
 |----------|--------|
 |生成栏|IDG_VS_BUILDBAR|
 |取消|IDG_VS_BUILD_CANCEL|
 
 ### <a name="text-editor-toolbar-groups"></a>文本编辑器工具栏组
 
-|name|Id|
+|名称|Id|
 |----------|--------|
 |完成|IDM_VS_TOOL_TEXTEDITOR|
 |降级|IDG_VS_EDITTOOLBAR_INDENT|
@@ -91,7 +91,7 @@ ms.locfileid: "56643751"
 
 ### <a name="debug-toolbar-groups"></a>调试工具栏组
 
-|name|Id|
+|名称|Id|
 |----------|--------|
 |执行|IDM_DEBUG_TOOLBAR|
 |单步执行|IDG_DEBUG_TOOLBAR_STEPPING|
@@ -100,7 +100,7 @@ ms.locfileid: "56643751"
 
 ### <a name="debug-location-toolbar-groups"></a>调试位置工具栏组
 
-|name|Id|
+|名称|Id|
 |----------|--------|
 |调试位置|IDG_DEBUG_CONTEXT_TOOLBAR|
 
@@ -108,18 +108,18 @@ ms.locfileid: "56643751"
  工具栏可以如出现在 IDE 中直接或工具窗口中**解决方案资源管理器**。 由于中未定义工具窗口 *.vsct*文件，工具窗口工具栏执行未定义父级。 相反，它们都放在代码中。 下表显示了在 IDE 中，工具窗口显示的工具栏和它们所包含的命令组。
 
 > [!NOTE]
->  工具栏和组使用的 GUID `guidSHLMainMenu`，除外另行指定通过使用 guid: id 语法。 其中 GUID 指定一个工具栏，则它也适用于源自该工具栏的组中。
+> 工具栏和组使用的 GUID `guidSHLMainMenu`，除外另行指定通过使用 guid: id 语法。 其中 GUID 指定一个工具栏，则它也适用于源自该工具栏的组中。
 
 |工具窗口|Toolbar|组|
 |-----------------|-------------|------------|
 |“解决方案资源管理器”|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1..5|
 |服务器资源管理器|guid_SE_MenuGroup:IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
-|Properties|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
+|属性|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |类视图|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|
 |类视图|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
 |对象浏览器|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|
 |对象浏览器|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
-|输出|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
+|Output|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |查找和替换|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
 |查找结果 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
 |查找结果 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|

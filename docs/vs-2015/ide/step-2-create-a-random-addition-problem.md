@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442615"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步骤 2：创建随机加法问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60099490"
 在本教程中的第 2 部分中，您将添加几道基于随机数的数学题，从而让测验变得有挑战性。 您还将添加一个名为 `StartTheQuiz()` 的方法，此方法可填充题目并启动倒计时计时器。 在本教程的后面部分中，您将添加减法、乘法和除法问题。  
   
 > [!NOTE]
->  本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时的数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
+> 本主题是基本编码概念教程系列中的一部分。 有关本教程的概述，请参阅[教程 2：创建计时的数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
 ### <a name="to-create-a-random-addition-problem"></a>创建随机加法问题  
   
@@ -46,7 +46,7 @@ ms.locfileid: "60099490"
 4. 将两个整型变量添加到窗体，并将它们分别命名为“addend1”和“addend2”。  
   
     > [!NOTE]
-    >  整型变量即 C# 中的 int 或 Visual Basic 中的 Integer。 这种变量可以存储从 -2147483648 到 2147483647 的正负数，并仅能存储整数而不能存储小数。  
+    > 整型变量即 C# 中的 int 或 Visual Basic 中的 Integer。 这种变量可以存储从 -2147483648 到 2147483647 的正负数，并仅能存储整数而不能存储小数。  
   
      您应使用与添加 `Random` 对象相似的语法来添加整型变量，如下面的代码所示。  
   
@@ -66,7 +66,7 @@ Next 方法
      在对象后输入点时，IntelliSense 将显示对象成员的列表，如属性、方法和事件。  
   
     > [!NOTE]
-    >  当您对 `Next()` 对象使用 `Random` 方法时（例如，当您调用 `randomizer.Next(50)` 时），您将获得一个小于 50 的随机数（0 到 49）。 在此示例中，您调用了 `randomizer.Next(51)`。 您使用了 51 而不是 50，以便两个随机数相加所得的答案介于 0 到 100 之间。 如果将 50 传递给 `Next()` 方法，则此方法会选择一个介于 0 到 49 之间的数字，因此可能得到的最大答案是 98，而不是 100。 在执行此方法中的前两个语句后，这两个整型变量（`addend1` 和 `addend2`）都将保留一个 0 到 50 之间的随机数。 此屏幕快照显示了 Visual C# 代码，但是，IntelliSense 对于 Visual Basic 将采用相同的工作方式。  
+    > 当您对 `Next()` 对象使用 `Random` 方法时（例如，当您调用 `randomizer.Next(50)` 时），您将获得一个小于 50 的随机数（0 到 49）。 在此示例中，您调用了 `randomizer.Next(51)`。 您使用了 51 而不是 50，以便两个随机数相加所得的答案介于 0 到 100 之间。 如果将 50 传递给 `Next()` 方法，则此方法会选择一个介于 0 到 49 之间的数字，因此可能得到的最大答案是 98，而不是 100。 在执行此方法中的前两个语句后，这两个整型变量（`addend1` 和 `addend2`）都将保留一个 0 到 50 之间的随机数。 此屏幕快照显示了 Visual C# 代码，但是，IntelliSense 对于 Visual Basic 将采用相同的工作方式。  
   
      详细了解这些语句。  
   

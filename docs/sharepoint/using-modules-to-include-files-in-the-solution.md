@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007836"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>使用模块包括解决方案中的文件
   可能您可能的想要将文件部署到 SharePoint 服务器，而不考虑它们的文件类型，如新的主页面。 若要执行此操作，可以使用*模块*(不要与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]代码模块)。 模块是 SharePoint 解决方案中的文件的容器。 部署解决方案时，该模块中的文件复制到 SharePoint 服务器上的指定文件夹。

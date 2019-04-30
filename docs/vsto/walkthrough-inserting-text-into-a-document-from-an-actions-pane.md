@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414285"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>演练：从操作窗格的文档中插入文本
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含两个控件收集输入，然后将文本发送到该文档。
@@ -34,7 +34,7 @@ ms.locfileid: "60088517"
 - 当应用程序打开时显示操作窗格。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -78,7 +78,7 @@ ms.locfileid: "60088517"
 2. 选择该单词**名称**，而不选择段落标记，然后单击**确定**。
 
     > [!NOTE]
-    >  段落标记应为外部书签。 如果段落标记是不可见的文档中，单击**工具**菜单，依次指向**Microsoft Office Word 工具**，然后单击**选项**。 单击**视图**选项卡，然后选择**段落标记**中的复选框**格式设置标记**一部分**选项**对话框。
+    > 段落标记应为外部书签。 如果段落标记是不可见的文档中，单击**工具**菜单，依次指向**Microsoft Office Word 工具**，然后单击**选项**。 单击**视图**选项卡，然后选择**段落标记**中的复选框**格式设置标记**一部分**选项**对话框。
 
 3. 在中**属性**窗口中，更改**名称**属性**Bookmark1**到**showName**。
 

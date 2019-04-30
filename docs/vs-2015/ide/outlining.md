@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82b0339bde0ffbfff77165f1626ec83767d45211
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: db33392deb16664e48c3b2d90df883294d5cfbaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441169"
 ---
 # <a name="outlining"></a>大纲显示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54767574"
  “编辑”菜单上的“撤消”和“重做”命令会影响这些操作。 **复制**、**剪切**、**粘贴**和拖放操作可保留大纲信息，但是不保留可折叠区域的状态。 例如，如果复制处于折叠状态的区域，那么**粘贴**操作将把复制的文本作为展开的区域进行粘贴。  
   
 > [!CAUTION]
->  如果更改大纲显示区域，那么大纲显示可能失效。 例如，删除或“查找和替换”操作可能删除区域的结尾标记。  
+> 如果更改大纲显示区域，那么大纲显示可能失效。 例如，删除或“查找和替换”操作可能删除区域的结尾标记。  
   
  “编辑”/“大纲显示”子菜单包含以下命令。  
   

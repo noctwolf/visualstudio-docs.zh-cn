@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389699"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 从 Direct3D 应用捕获图形信息，以便使用 Visual Studio 图形分析器来诊断呈现问题和性能问题。
@@ -40,7 +40,7 @@ ms.locfileid: "60065647"
 - 在键盘上按 Print Screen 键。
 
   > [!NOTE]
-  >  当应用在图形诊断下运行时，Print Screen 键只能用于捕获图形信息的帧；不执行其常规功能。 这将一直有效，直到你停止捕获图形信息（通常通过停止调试或正常退出应用程序），即使另一应用程序具有焦点时也是如此。
+  > 当应用在图形诊断下运行时，Print Screen 键只能用于捕获图形信息的帧；不执行其常规功能。 这将一直有效，直到你停止捕获图形信息（通常通过停止调试或正常退出应用程序），即使另一应用程序具有焦点时也是如此。
 
 - 在 Visual Studio 捕获接口中，选择位于诊断会话时间线下方的“捕获帧”按钮，也可选择位于每秒钟帧数泳道下方和之前捕获到的帧右边的“捕获帧”按钮。 两个按钮均突出显示在下方的图像中。
 

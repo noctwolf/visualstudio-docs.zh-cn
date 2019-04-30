@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 60fb0d68d8052990fcc1783f86d0213b714dbfc9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978479"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor 接口
 允许外部编辑器源文件发生更改时通知文档安全地编辑基于文件的调试器文档。  

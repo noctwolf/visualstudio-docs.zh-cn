@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385849"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
@@ -25,7 +25,7 @@ ms.locfileid: "60103584"
  验证是特别重要，如果你正在编写文本模板或其他工具可处理用户的模型。 验证可确保模型满足由这些工具假定的前提条件。
 
 > [!WARNING]
->  还可以允许验证约束以及扩展菜单命令和笔势处理程序一起定义在对 DSL 的单独扩展中。 除了 DSL，用户还可以选择安装这些扩展。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+> 还可以允许验证约束以及扩展菜单命令和笔势处理程序一起定义在对 DSL 的单独扩展中。 除了 DSL，用户还可以选择安装这些扩展。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
 ## <a name="running-validation"></a>运行验证
  当用户编辑模型时（即域特定语言的实例），以下操作可运行验证：
@@ -48,7 +48,7 @@ ms.locfileid: "60103584"
  每个验证方法都将报告它找到的所有错误。
 
 > [!NOTE]
->  验证方法报告错误，但不更改模型。 如果你想要调整或阻止某些更改，请参阅[验证的替代方法](#alternatives)。
+> 验证方法报告错误，但不更改模型。 如果你想要调整或阻止某些更改，请参阅[验证的替代方法](#alternatives)。
 
 #### <a name="to-define-a-validation-constraint"></a>定义验证约束
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  你可以为方法添加带有任意数目的 `[ValidationMethod()]` 特性的前缀。 可以将方法同时添加到自定义类别和标准类别。
+> 你可以为方法添加带有任意数目的 `[ValidationMethod()]` 特性的前缀。 可以将方法同时添加到自定义类别和标准类别。
 
  若要调用自定义验证，请执行以下操作：
 

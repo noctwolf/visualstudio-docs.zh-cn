@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939546"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>通过使用扩展的对象自动化 Word
   当在 Visual Studio 中开发 Word 解决方案时，可以使用解决方案中的 *宿主项* 和 *宿主控件*。 这些对象可扩展 Word 对象模型（即由 Word 主互操作程序集公开的对象模型）中的一些常用对象，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象。 扩展对象的行为类似于其所基于的 Word 对象，但它们可以将其他事件和数据绑定功能添加到对象。

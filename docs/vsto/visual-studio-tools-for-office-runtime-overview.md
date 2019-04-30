@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982340"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概述
   若要运行使用 Visual Studio 中的 Microsoft Office 开发人员工具创建的解决方案，必须在最终用户计算机上安装 Visual Studio 2010 Tools for Office 运行时。 有关详细信息，请参阅[如何：安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 运行时包含两个主要组件：

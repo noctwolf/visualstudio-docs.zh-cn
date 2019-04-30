@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445004"
 ---
 # <a name="walkthrough-highlight-text"></a>演练：突出显示文本
 通过创建 Managed Extensibility Framework (MEF) 组件部分，可以将不同的视觉效果添加到编辑器。 本演练演示如何突出显示当前单词在文本文件中的每个匹配项。 如果单词在文本文件中出现不止一次，并且将插入点定位中出现一次，每个匹配项将突出显示。
@@ -351,7 +351,7 @@ ms.locfileid: "60106028"
  若要创建应用标记器，必须实现<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 此类是 MEF 组件过程中，因此必须设置正确的属性，以便识别此扩展。
 
 > [!NOTE]
->  有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
+> 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。
 
 ### <a name="to-create-a-tagger-provider"></a>若要创建标记器提供程序
 

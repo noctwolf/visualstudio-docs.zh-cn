@@ -1,5 +1,5 @@
 ---
-title: 错误：Web 服务器找不到请求的资源 | Microsoft Docs
+title: 错误：Web 服务器找不到请求的资源 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -15,13 +15,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c0b37e96db46a43b869867b8b5e37f857e75aff9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850279"
 ---
-# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>错误：Web 服务器未能找到请求的资源
+# <a name="error-the-web-server-could-not-find-the-requested-resource"></a>错误：Web 服务器找不到所请求的资源
 为了安全起见，IIS 已返回泛型错误。
 
 一个可能的原因是服务器的安全配置。 IIS 6.0 和早期版本使用名为 URLScan 的外接程序来筛选出可疑请求和格式不正确的请求。 IIS 7.0 具有用于实现同一目的的内置请求筛选。 在这两种情况下，过度限制性请求筛选可防止 Visual Studio 调试服务器。

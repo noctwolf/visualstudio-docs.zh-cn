@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446769"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到生成的指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083213"
  在本演练中，将扩展你的自定义主机，以便它支持调用指令处理器的文本模板。 当您定义特定于域的语言时，它将生成*指令处理器*域模型。 指令处理器，使用户更轻松地编写模板访问模型，从而减少了需要编写程序集并导入的模板中的指令。  
   
 > [!WARNING]
->  本演练基于[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次执行该操作实例。  
+> 本演练基于[演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次执行该操作实例。  
   
  本演练包含以下任务：  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60083213"
 2. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
    > [!IMPORTANT]
-   >  此步骤中生成指令处理器，并将该密钥为其添加在注册表中。  
+   > 此步骤中生成指令处理器，并将该密钥为其添加在注册表中。  
   
 3. 在“调试”菜单上，单击“启动调试”。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60083213"
 5. 找到的属性代码`StandardAssemblyReferences`，并替换为以下代码：  
   
     > [!NOTE]
-    >  在此步骤中，添加对所需的生成主机将支持的指令处理器的程序集的引用。  
+    > 在此步骤中，添加对所需的生成主机将支持的指令处理器的程序集的引用。  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ ms.locfileid: "60083213"
 6. 查找函数的代码`ResolveDirectiveProcessor`，并替换为以下代码：  
   
     > [!IMPORTANT]
-    >  此代码包含硬编码引用生成的指令处理器你想要连接的名称。 可轻松地使其更多常规，在这种情况下它会查找所有指令处理器列在注册表中，尝试查找匹配项。 在这种情况下，主机将使用任何生成的指令处理器。  
+    > 此代码包含硬编码引用生成的指令处理器你想要连接的名称。 可轻松地使其更多常规，在这种情况下它会查找所有指令处理器列在注册表中，尝试查找匹配项。 在这种情况下，主机将使用任何生成的指令处理器。  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ ms.locfileid: "60083213"
 2. 向文本文件中添加以下内容：  
   
     > [!NOTE]
-    >  文本模板的编程语言不需要以匹配的自定义主机。  
+    > 文本模板的编程语言不需要以匹配的自定义主机。  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ ms.locfileid: "60083213"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  而不是键入地址，则可以浏览到文件 CustomHost.exe 中**Windows 资源管理器**，然后将文件拖入命令提示符窗口。  
+    > 而不是键入地址，则可以浏览到文件 CustomHost.exe 中**Windows 资源管理器**，然后将文件拖入命令提示符窗口。  
   
 3. 键入一个空格。  
   
@@ -336,7 +336,7 @@ ms.locfileid: "60083213"
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  而不是键入地址，您可以浏览到文件 TestTemplateWithDP.txt 中**Windows 资源管理器**，然后将文件拖入命令提示符窗口。  
+    > 而不是键入地址，您可以浏览到文件 TestTemplateWithDP.txt 中**Windows 资源管理器**，然后将文件拖入命令提示符窗口。  
   
      自定义主机应用程序运行，并启动文本模板转换过程。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441081"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60099567"
        **域特定语言设计器向导**出现。  
   
       > [!NOTE]
-      >  最好是您键入的名称应是有效的 Visual C# 标识符，因为它可能用于生成代码。  
+      > 最好是您键入的名称应是有效的 Visual C# 标识符，因为它可能用于生成代码。  
   
       ![创建 DSL 对话框](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60099567"
     该向导创建的解决方案，有两个项目，分别名为**Dsl**并**DslPackage**。  
   
    > [!NOTE]
-   >  如果你看到一条消息，提醒你不运行来自不受信任源的文本模板中，单击**确定**。 您可以设置不会再次出现此消息。  
+   > 如果你看到一条消息，提醒你不运行来自不受信任源的文本模板中，单击**确定**。 您可以设置不会再次出现此消息。  
   
 ## <a name="settings"></a> DSL 设计器向导页  
  可将多个字段从其默认值保持不变。 但是，请确保将文件扩展名字段设置。  

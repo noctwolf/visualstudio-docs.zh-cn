@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936844"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
 事务，请确保对在存储区所做的更改被视为一个组。 可以提交或回滚作为一个单元进行分组的更改。

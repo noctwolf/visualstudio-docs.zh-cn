@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442812"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用编码的 UI 测试日志分析编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60098880"
      自动测试将运行并指示它们是否通过。  
   
     > [!TIP]
-    >  若要从“测试”菜单查看测试资源管理器，请指向“Windows”，然后选择“测试资源管理器”。  
+    > 若要从“测试”菜单查看测试资源管理器，请指向“Windows”，然后选择“测试资源管理器”。  
   
 4. 在“测试资源管理器”结果中选择“输出”链接。  
   

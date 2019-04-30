@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383410"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>演练：配置和使用自定义规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "60052059"
     在文件菜单上单击**保存选定项**使用所选规则集有关的信息和其设置更新项目文件。  
   
    > [!TIP]
-   >  在实际情况下，为了优先处理你想要针对的代码分析的问题的好办法是首先**最少量建议规则**规则集和更正所需的问题，以及如何以增量方式将要查找和更正的其他问题的更多的规则集。  
+   > 在实际情况下，为了优先处理你想要针对的代码分析的问题的好办法是首先**最少量建议规则**规则集和更正所需的问题，以及如何以增量方式将要查找和更正的其他问题的更多的规则集。  
   
    接下来，会将一些代码添加到类库，用于演示 CA1704 冲突"的标识符应正确拼写"代码分析规则。 有关详细信息，请参阅[CA1704:标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
   

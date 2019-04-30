@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929194"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
 使用此对话框，您可以自定义命中断点时，会发生的操作。

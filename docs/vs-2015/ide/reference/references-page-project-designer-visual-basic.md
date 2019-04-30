@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443843"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60114361"
  单击此按钮，访问“引用路径”对话框。  
   
 > [!NOTE]
->  当项目系统查找一个程序集引用时，系统通过在以下位置查找，按以下顺序解析引用：  
+> 当项目系统查找一个程序集引用时，系统通过在以下位置查找，按以下顺序解析引用：  
 > 
 > 1. 项目文件夹。 “显示所有文件”未生效时，解决方案资源管理器中会出现项目文件夹文件。  
 >    2. 在“引用路径”对话框中指定的文件夹。  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446603"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>演练：导入 Visual Studio SharePoint Designer 可重用工作流
   本演练演示如何导入到的 SharePoint Designer 2010 中创建的可重用工作流[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流项目。
@@ -124,7 +124,7 @@ ms.locfileid: "60053931"
  因为[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]可以只导入 *.wsp*文件，您必须将保存为可重用工作流 *.wsp*文件，并在导入到之前将其部署到 SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
 > [!IMPORTANT]
->  如果收到运行时错误，执行以下过程，您必须能够访问 SharePoint 站点的系统上执行该过程。
+> 如果收到运行时错误，执行以下过程，您必须能够访问 SharePoint 站点的系统上执行该过程。
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>若要保存和部署可重用工作流
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053931"
 6. 在中**指定新项目源**页上，浏览到以前保存的位置在系统上 *.wsp*文件，打开该文件，然后选择**下一步**按钮。
 
    > [!NOTE]
-   >  选择**完成**按钮以导入中的所有可用项 *.wsp*文件。
+   > 选择**完成**按钮以导入中的所有可用项 *.wsp*文件。
 
     这将显示可用于导入可重用工作流的列表。
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053931"
 12. 在中**启动新工作流**部分中，选择的链接**SPD 工作流测试**，然后选择**启动**按钮以启动工作流。
 
     > [!NOTE]
-    >  或者，您可以自动关联工作流与列表运行工作流设置向导，并设置要自动关联的工作流。
+    > 或者，您可以自动关联工作流与列表运行工作流设置向导，并设置要自动关联的工作流。
 
      请注意，由工作流执行两项操作： 在任务中显示您的姓名**分配给**列中和公告将出现在**公告**列表。
 

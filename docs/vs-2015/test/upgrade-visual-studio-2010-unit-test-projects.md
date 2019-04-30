@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445904"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>升级 Visual Studio 2010 单元测试项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788634"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 引入了多项单元测试更改。 由于这些更改，了解 Visual Studio 早期版本和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 之间的兼容性问题变得十分重要。 在这些对单元测试的更改中，一个重要的变化为 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 包括了不止一个测试项目模板，其中包括单元测试项目模板。 新单元测试项目模板中添加了新的单元测试。 单元测试也可以包含在另一个新的测试项目模板中，名为编码的 UI 测试项目模板。 有关新测试项目模板的详细信息，请参阅[从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。 默认情况下，新单元测试项目不再包括一个测试设置文件。 通过排除测试设置文件，单元测试的性能将得到提升。 至于兼容性，您仍然可以使用通过 Visual Studio 2010 创建的现有测试项目。 但是，出于性能原因，我们建议除非特别需要测试设置文件，否则请移除与测试项目关联的测试设置文件。 例如，如果在分布式环境中运行单元测试，或需要收集特定的诊断数据，则您可以选择保留测试设置文件。 在使用新的单元测试项目模板或编码的 UI 测试项目模板时，如果您有类似需要，也可以手动向其添加测试设置文件。
 
 > [!NOTE]
->  [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 测试项目中的现有单元测试可在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 之间无缝运行。 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中打开包含单元测试的 Visual Studio 2010 测试项目时，不会对测试项目文件做任何更改，反之亦然。
+> [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 测试项目中的现有单元测试可在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 之间无缝运行。 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中打开包含单元测试的 Visual Studio 2010 测试项目时，不会对测试项目文件做任何更改，反之亦然。
 
 > [!CAUTION]
->  Visual Studio 2010 不能打开面向 11.0 工具集的 C++/CLI 项目，即使用 Visual Studio 2012 创建的项目。 此限制适用于所有 C++/CLI 项目，而不仅仅是 C++/CLI 单元测试项目。
+> Visual Studio 2010 不能打开面向 11.0 工具集的 C++/CLI 项目，即使用 Visual Studio 2012 创建的项目。 此限制适用于所有 C++/CLI 项目，而不仅仅是 C++/CLI 单元测试项目。
 
 > [!NOTE]
->  可以从命令行使用 vstest.console.exe 命令运行新的单元测试。 有关使用 vstest.console.exe 的详细信息，请参阅 [VSTest.Console.exe 命令行选项](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)，或使用帮助开关运行命令：**vstest.console.exe /?**。 使用 MStest.exe 可以继续运行现有的单元测试。 有关详细信息，请参阅[使用 MSTest 从命令行运行自动测试](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581)和 [MSTest.exe 命令行选项](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36)。
+> 可以从命令行使用 vstest.console.exe 命令运行新的单元测试。 有关使用 vstest.console.exe 的详细信息，请参阅 [VSTest.Console.exe 命令行选项](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)，或使用帮助开关运行命令：**vstest.console.exe /?**。 使用 MStest.exe 可以继续运行现有的单元测试。 有关详细信息，请参阅[使用 MSTest 从命令行运行自动测试](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581)和 [MSTest.exe 命令行选项](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36)。
 
  另一个重要的变化为新的测试资源管理器。 在 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 中，您在 Visual Studio 早期版本中可能比较熟悉的一些测试窗口已遭弃用，例如“测试视图”窗口。 测试资源管理器旨在为开发人员和团队提供更好的支持，帮助其将单元测试纳入软件开发实践中。 有关详细信息，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)。
 

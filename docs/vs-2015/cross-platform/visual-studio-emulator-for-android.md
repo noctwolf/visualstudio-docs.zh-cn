@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 211741a94623ede593c7f6ba9e5988cea094ae90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442091"
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60060522"
  你可以使用控制面板中的“添加/删除程序”功能卸载 Android 的 Visual Studio 仿真程序。  
   
 > [!NOTE]
->  卸载 Visual Studio 将不会卸载该仿真程序。 你必须单独卸载该仿真程序。  
+> 卸载 Visual Studio 将不会卸载该仿真程序。 你必须单独卸载该仿真程序。  
   
  在卸载适用于 Android 的 Visual Studio 仿真程序时，不会自动删除为仿真程序创建的 Hyper-V 虚拟以太网适配器。 通过打开 Hyper-V 管理器，选中其中一个仿真程序 VHD 映像，选择“网络”选项卡并为显示在此选项卡中的每个开关选择“删除”，可以手动删除这些虚拟适配器（如果未使用）。  
   

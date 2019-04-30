@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961636"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>如何：以编程方式使用 Word 中的内置对话框
   在使用 Microsoft Office Word，有些的时候需要显示用户输入的对话框。 尽管可以创建你自己，但可能还想要采用的使用在 Word 中，内置对话框框中公开的方法<xref:Microsoft.Office.Interop.Word.Dialogs>的集合<xref:Microsoft.Office.Interop.Word.Application>对象。 这使您能够访问 200 的内置对话框框中，以枚举表示。

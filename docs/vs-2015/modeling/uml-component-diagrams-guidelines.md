@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424448"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>UML 组件图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60056778"
  有关如何使用组件图设计过程中的详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
   
 > [!NOTE]
->  创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+> 创建任何建模图的详细的步骤所述[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
 #### <a name="to-create-a-component-diagram"></a>创建组件图  
   
@@ -157,7 +157,7 @@ ms.locfileid: "60056778"
          提供的接口随即显示在组件上。 旁边显示了一个操作标记。  
   
         > [!NOTE]
-        >  如果您使用**粘贴**而不是**粘贴引用**，将创建一个具有新名称的新接口。  
+        > 如果您使用**粘贴**而不是**粘贴引用**，将创建一个具有新名称的新接口。  
   
     3. 如果你想要创建所需的接口，单击该操作标记，然后单击**将转换为所需的接口**。  
   

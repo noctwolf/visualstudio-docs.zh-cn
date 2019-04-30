@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c79b1e59c40354e3805d034920d0d3acc396a435
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1dabf4406752d04c0beec39d7f5997b09e3a5fc1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409890"
 ---
 # <a name="expression-evaluator-implementation-strategy"></a>表达式计算器实施策略
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  快速创建的表达式计算器 (EE) 的一种方法是首先实现显示中的局部变量所需要的最小代码**局部变量**窗口。 最好要认识到，中的每一行**局部变量**窗口将显示名称、 类型和本地变量的值和所有三个由[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象。 名称、 类型和本地变量的值取自`IDebugProperty2`对象通过调用其[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)方法。 详细了解如何显示中的局部变量**局部变量**窗口中，请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27e9d1ce86064c23e3a293382ff7f83389d693f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55e7cdc06b1876fe40310f5af44152a70e4a4375
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438872"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>演练：使用 XML 编辑器功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60109033"
 此演练中的步骤说明如何新建 XML 文档。 该演练还使用“XML 编辑器”的一些功能，这些功能使其非常适合 XML 编写。  
   
 > [!NOTE]
->  在开始该演练之前，将 hireDate.xsd 文件（本主题的下文介绍）保存到本地计算机上。  
+> 在开始该演练之前，将 hireDate.xsd 文件（本主题的下文介绍）保存到本地计算机上。  
   
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>新建 XML 文件并将其与 XML 架构关联  
   

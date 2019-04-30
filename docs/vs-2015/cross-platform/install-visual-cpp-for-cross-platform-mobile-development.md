@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444578"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安装用于跨平台移动开发的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113074"
 - 有关安装要求，请参阅 [Visual Studio 2015 系统要求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
   
   > [!IMPORTANT]
-  >  如果使用的是 Windows 7 或 Windows Server 2008 R2，则可以针对经典 Windows 应用程序、Android Native Activity 应用和库以及适用于 iOS 的应用和代码库开发代码，但不能针对 Windows 应用商店应用或通用 Windows 应用开发代码。  
+  > 如果使用的是 Windows 7 或 Windows Server 2008 R2，则可以针对经典 Windows 应用程序、Android Native Activity 应用和库以及适用于 iOS 的应用和代码库开发代码，但不能针对 Windows 应用商店应用或通用 Windows 应用开发代码。  
   
   若要为特定的设备平台创建应用，还需要满足一些附加要求：  
   
@@ -75,12 +75,12 @@ ms.locfileid: "60113074"
 4. 安装完成后，关闭该安装程序，然后重启计算机。 第三方组件的某些设置操作在计算机重启后才生效。  
   
     > [!IMPORTANT]
-    >  你必须重新启动以确保所有软件都得到了正确安装。  
+    > 你必须重新启动以确保所有软件都得到了正确安装。  
   
      如果未能安装适用于 Android 组件的 Microsoft Visual Studio 模拟器，表示你的计算机可能未启用 Hyper-V。 使用“打开或关闭 Windows 功能”控制面板应用来启用 Hyper-V，然后重新运行 Visual Studio 安装程序。  
   
     > [!NOTE]
-    >  如果你的计算机或 Windows 版本不支持 Hyper-V，则不能使用适用于 Android 组件的 Microsoft Visual Studio 模拟器。 Windows 家庭版不包括 Hyper-V 支持。  
+    > 如果你的计算机或 Windows 版本不支持 Hyper-V，则不能使用适用于 Android 组件的 Microsoft Visual Studio 模拟器。 Windows 家庭版不包括 Hyper-V 支持。  
   
 5. 打开 Visual Studio。 如果这是你第一次运行 Visual Studio，则可能需要一些时间来配置和登录。 Visual Studio 准备就绪后，在“工具”  菜单上选择“扩展和更新” 、“更新” 。 如果有用于跨平台移动开发的 Visual C++ 或适用于 Android 的 Microsoft Visual Studio 仿真程序的 Visual Studio 可用更新，则安装它们。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60113074"
  如果在安装 Visual C++ 移动开发选项时，你决定不使用 Visual Studio 安装程序安装一个或多个第三方依赖项，则可以通过使用 [Install the tools](#InstallTheTools)中的步骤稍后安装它们。 你还可以独立于 Visual Studio 安装或更新它们。  
   
 > [!CAUTION]
->  你可以按照任何顺序安装依赖项（不包括 Java）。 必须先安装并配置 JDK 才能安装 Android SDK。  
+> 你可以按照任何顺序安装依赖项（不包括 Java）。 必须先安装并配置 JDK 才能安装 Android SDK。  
   
  阅读以下信息并使用这些链接来手动安装依赖项。  
   

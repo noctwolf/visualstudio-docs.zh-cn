@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388465"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>在 Visual Studio 中的并行线程中的变量上设置监视 (C#，Visual Basic 中， C++)
 在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列将显示在“并行监视”窗口中：
@@ -34,7 +34,7 @@ ms.locfileid: "60051292"
 - 可配置的列，可显示计算机、进程、平铺、任务和线程。
 
   > [!TIP]
-  >  若要显示在任务信息**并行监视**窗口中，必须首先打开**任务**窗口。
+  > 若要显示在任务信息**并行监视**窗口中，必须首先打开**任务**窗口。
 
 - 空白*添加监视*列，您可以在其中输入要监视的表达式。
 
@@ -87,4 +87,4 @@ ms.locfileid: "60051292"
 ## <a name="see-also"></a>请参阅
 - [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)
-- [演练：调试C++AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [演练：调试 C++ AMP 应用程序](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

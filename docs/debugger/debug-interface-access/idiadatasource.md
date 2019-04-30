@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838514"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 启动的调试符号的源的访问。
@@ -31,7 +31,7 @@ IDiaDataSource : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
 下表显示的方法`IDiaDataSource`。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|检索最后一个加载错误的文件名称。|
 |[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|此时将打开并准备程序数据库 (.pdb) 文件用作调试数据源。|
@@ -63,7 +63,7 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>要求
-标头： Dia2.h
+标头：dia2.h
 
 库： diaguids.lib
 

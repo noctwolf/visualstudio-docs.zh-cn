@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414858"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定义建模工具的多个级别：
@@ -28,7 +28,7 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定�
 3. 通过使用程序代码来扩展你的建模工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。  有关详细信息，请参阅[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 > [!NOTE]
->  当有更新 DSL 定义文件时，请不要忘记单击**转换所有模板**之前重新生成解决方案的解决方案资源管理器工具栏中。
+> 当有更新 DSL 定义文件时，请不要忘记单击**转换所有模板**之前重新生成解决方案的解决方案资源管理器工具栏中。
 
 ## <a name="customShapes"></a> 在本部分中
 

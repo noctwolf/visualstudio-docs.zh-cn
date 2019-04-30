@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901194"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：在 C 中编写可视化工具\#
 本演练演示如何使用 C# 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具不是特别有用，但它显示创建更有用的其他数据类型的可视化工具时必须遵循的基本步骤。

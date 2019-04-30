@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411390"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
 将根级别项的名称添加到引擎的命名空间创作的脚本。 一个*根级别项*是包含属性和方法，并且，还可以包含事件源的对象。  
@@ -44,7 +44,7 @@ HRESULT AddNamedItem(
  `dwFlags`  
  [in]与命名项关联的标志。 可以是以下值的组合：  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |SCRIPTITEM_ISVISIBLE|0x00000002|指示项的名称是脚本的命名空间中可用。 这允许访问项的属性、 方法和事件。<br /><br /> 按照约定，项的属性包括项的子成员。 因此，所有子对象属性和方法 （和自身的子成员，以递归方式） 进行访问。|  
 |SCRIPTITEM_ISSOURCE|0x00000004|指示该脚本可以具有脚本事件处理程序的项目源的事件。|  
@@ -59,7 +59,7 @@ HRESULT AddNamedItem(
 ## <a name="return-value"></a>返回值  
  一个 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   

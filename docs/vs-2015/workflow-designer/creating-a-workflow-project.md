@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58937211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976989"
 ---
 # <a name="creating-a-workflow-project"></a>创建工作流项目
 工作流、[!INCLUDE[indigo1](../includes/indigo1-md.md)] 工作流服务、自定义活动和自定义活动设计器都可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板来创建。 本节介绍如何通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中提供的项目模板来创建库和应用程序。  

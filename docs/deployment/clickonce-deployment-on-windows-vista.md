@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900497"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 上的 ClickOnce 部署
 
@@ -42,11 +42,11 @@ Visual Studio 以便生成清单中提供以下选项：
 
    这种方法是也称为*虚拟化*。 使用此选项与现有的应用程序从 Visual Studio 的早期版本的兼容性。
 
-  新的属性可用于**应用程序**的项目设计器页 (视觉对象C#仅适用于项目) 和 MSBuild 项目文件格式。
+  新的属性可用于**应用程序**（对于 Visual C# 项目只能） 在项目设计器页以 MSBuild 项目文件格式。
 
-  在 Visual Studio IDE 中配置 UAC 清单生成的方法不同，具体取决于项目类型 (VisualC#或 Visual Basic)。
+  在 Visual Studio IDE 中配置 UAC 清单生成的方法不同，具体取决于项目类型 （Visual C# 或 Visual Basic）。
 
-  * 璝惠砞 VisualC#项目类型提供的清单生成，请参阅[应用程序页，项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)。
+  * 有关配置的清单生成的 Visual C# 项目的信息，请参阅[应用程序页，项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)。
 
   * 有关配置的清单生成的 Visual Basic 项目的信息，请参阅[应用程序页，项目设计器 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。
 

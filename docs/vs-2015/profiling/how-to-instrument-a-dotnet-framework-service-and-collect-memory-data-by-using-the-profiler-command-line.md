@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d76eb9882eaf51de031d886c15954df8d5180e25
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432713"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：检测.NET Framework 服务和使用 Profiler 命令行收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,12 +22,12 @@ ms.locfileid: "60113607"
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具检测 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服务和收集内存使用情况数据。 可以收集内存分配数据，也可以同时收集内存分配数据和对象生存期数据。  
 
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 
 > [!NOTE]
->  如果某服务在计算机启动之后无法重启（此类服务在操作系统启动时启动），则无法使用检测方法分析该服务。  
+> 如果某服务在计算机启动之后无法重启（此类服务在操作系统启动时启动），则无法使用检测方法分析该服务。  
 >   
->  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
 
 ## <a name="starting-the-profiling-session"></a>启动分析会话  
  若要从 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服务收集性能数据，可使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化适当的环境变量，并使用 [VSInstr.exe](../profiling/vsinstr.md) 工具创建服务二进制文件的检测副本。  
@@ -72,7 +72,7 @@ ms.locfileid: "60113607"
      可以将以下任意选项与 **/start:sample** 选项一起使用。  
 
    > [!NOTE]
-   >  **/User** 和 **/crosssession** 选项通常为服务所需选项。  
+   > **/User** 和 **/crosssession** 选项通常为服务所需选项。  
 
    |                                 选项                                  |                                                                                                                                                   描述                                                                                                                                                    |
    |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

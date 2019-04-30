@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832646"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 执行堆栈展开并在堆栈遍历帧界面中返回结果。
@@ -38,7 +38,7 @@ HRESULT execute ( 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。
 
-|值|说明|
+|“值”|描述|
 |-----------|-----------------|
 |E_DIA_INPROLOG|无法执行序言代码中的堆栈帧。|
 |E_DIA_SYNTAX|分析帧程序中遇到错误。|

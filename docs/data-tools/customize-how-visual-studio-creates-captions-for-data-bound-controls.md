@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1745aef29da9fc8efd49789f0112c903128f6f74
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567580"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 
@@ -43,7 +43,7 @@ ms.locfileid: "57323690"
 
 下表介绍控件标题标签的注册表值。
 
-|注册表项|说明|
+|注册表项|描述|
 |-------------------|-----------------|
 |**SmartCaptionExpression**|用于与您的模式匹配正则表达式。|
 |**SmartCaptionReplacement**|要显示中匹配的任何组的格式**SmartCaptionExpression**。|

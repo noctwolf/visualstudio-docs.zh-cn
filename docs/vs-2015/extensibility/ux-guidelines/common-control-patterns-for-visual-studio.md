@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430037"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040826"
  某些按钮应始终使用图形化的图像，并且永远不会包含文本以节省空间并避免本地化问题。 这些通常用于字段选取器和其他可排序的列表中。
 
 > [!NOTE]
->  用户必须对这些按钮 （没有任何访问密钥） 选项卡上，因此将其放置在合理的顺序。 将按钮的 name 属性映射到以使屏幕读取器正确解释此按钮的操作所需的操作。
+> 用户必须对这些按钮 （没有任何访问密钥） 选项卡上，因此将其放置在合理的顺序。 将按钮的 name 属性映射到以使屏幕读取器正确解释此按钮的操作所需的操作。
 
 |||
 |-|-|

@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 124f640fd5bf049280638408b4b6101e24e8c58b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbf391f96cd21f0c473589d4992083963ff65d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440918"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014：以分页方式将活动内存移到磁盘的发生率极高
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "54784433"
  通常以批量分页操作从磁盘中读取页面或将页面写入磁盘。 例如，页面输出数/秒通常比页面写入数/秒大得多。 因为每秒页面输出还包括系统文件缓存中已更改的数据页面。 但是，确定哪个进程直接对分页负责及原因并不简单。  
   
 > [!NOTE]
->  活动内存的分页级别达到较高速率时将会触发此规则。 当分页的级别较高但并非极高时，将改为触发 [DA0017：以分页方式将活动内存移到磁盘的发生率高](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)信息规则。  
+> 活动内存的分页级别达到较高速率时将会触发此规则。 当分页的级别较高但并非极高时，将改为触发 [DA0017：以分页方式将活动内存移到磁盘的发生率高](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md)信息规则。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  双击“错误列表”窗口中的消息，导航到[标记](../profiling/marks-view.md)视图。 查找 **Memory\Pages/sec** 列。 确定程序执行中是否存在分页 IO 活动要多于其他活动的某个阶段。  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427403"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
   您可以为页在 SharePoint 站点上一致的外观通过创建和使用母版页和主题。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供模板，这些元素，但可以在 SharePoint Designer 中创建它们，然后将它们导入[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[构建基块：页面和用户界面](http://go.microsoft.com/fwlink/?LinkID=182095)Microsoft 网站上。
@@ -48,7 +48,7 @@ ms.locfileid: "60081901"
 8. 如果添加了母版页，更改其**部署冲突解决方法**将设置为**自动**中模块的属性。
 
     > [!NOTE]
-    >  如果主页面的名称与现有的主页面标记为默认母版页或自定义母版页的名称相同，则可能发生错误。 有关如何解决此问题的信息，请参阅[演练：导入自定义母版页和包含图像的站点页面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。
+    > 如果主页面的名称与现有的主页面标记为默认母版页或自定义母版页的名称相同，则可能发生错误。 有关如何解决此问题的信息，请参阅[演练：导入自定义母版页和包含图像的站点页面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。
 
 9. 在模块中，打开*Elements.xml*。
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081901"
      值为**Web**母版页仅适用于当前项目中指定的网站的方式。 值为**站点**意味着对当前站点集合，其中包括所有子站点和根 web 应用主页面。 其他值不会应用。
 
     > [!NOTE]
-    >  由于仅对网站集级别应用主题，我们建议，您不设置主题的作用域为任何内容而不**站点**。 如果在子站点中使用了主题，则可能发生错误。
+    > 由于仅对网站集级别应用主题，我们建议，您不设置主题的作用域为任何内容而不**站点**。 如果在子站点中使用了主题，则可能发生错误。
 
 12. 在菜单栏上依次选择**构建** > **部署解决方案**。
 

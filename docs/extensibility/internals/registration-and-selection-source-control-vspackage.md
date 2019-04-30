@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908906"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 源代码管理 VSPackage 必须注册才能公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如果注册了多个源代码管理 VSPackage，用户可以选择在适当的时候加载的 VSPackage。 请参阅[Vspackage](../../extensibility/internals/vspackages.md)有关 Vspackage 以及如何将它们注册的更多详细信息。

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412438"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 导致当前线程被阻塞，并将错误的通知发送到调试器 IDE。  
@@ -58,7 +58,7 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  语言引擎会导致运行时错误的线程的上下文中调用此方法。 此方法会导致阻止当前线程，并发送错误通知发送到调试器 IDE。 当调试器 IDE 继续应用程序时，此方法返回要执行的操作。  
   
 > [!NOTE]
->  在运行时错误可能由要执行此类任务，如枚举堆栈帧或对表达式求值的线程调用语言引擎。  
+> 在运行时错误可能由要执行此类任务，如枚举堆栈帧或对表达式求值的线程调用语言引擎。  
   
 ## <a name="see-also"></a>请参阅  
  [IDebugApplication 接口](../../winscript/reference/idebugapplication-interface.md)   

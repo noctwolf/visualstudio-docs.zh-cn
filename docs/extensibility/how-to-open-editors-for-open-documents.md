@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863124"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何：打开编辑器的打开的文档
 项目将打开一个文档窗口之前，项目首先必须确定文件是否已打开在另一个编辑器的文档窗口中。 该文件可以为在特定于项目的编辑器中，或者打开或其中一个标准编辑器注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。

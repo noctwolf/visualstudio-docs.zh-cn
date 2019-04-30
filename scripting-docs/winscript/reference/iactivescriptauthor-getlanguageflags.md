@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d9f1a68db05ac0d909108ce77587ae4b071c9a2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935466"
 ---
 # <a name="iactivescriptauthorgetlanguageflags"></a>IActiveScriptAuthor::GetLanguageFlags
 返回语言的信息。  
@@ -39,7 +39,7 @@ HRESULT GetLanguageFlags(
  `pgrfasa`  
  [out]包含语言信息的标志。 可以是以下值的组合：  
   
-|返回的常量|值|描述|  
+|返回的常量|“值”|描述|  
 |--------------|-----------|-----------------|  
 |fasaPreferInternalHandler|0x0001|语言更适合于创建脚本事件处理程序创建由脚本创作而不是应用程序的引擎。|  
 |fasaSupportInternalHandler|0x0002|脚本事件处理程序创建的脚本创作引擎支持的语言。|  

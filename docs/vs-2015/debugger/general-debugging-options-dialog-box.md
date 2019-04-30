@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446477"
 ---
 # <a name="general-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“常规”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ ms.locfileid: "59000113"
  指示 Visual Studio 调试器从实现 SrcSrv (`srcsrv.dll`) 协议的源服务器中获取源文件。 Team Foundation Server 和 Windows 的调试工具是实现协议的两个源服务器。 有关 SrcSrv 设置的更多信息，请参阅“Windows 的调试工具”文档。 此外，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
 > [!IMPORTANT]
->  由于读取 .pdb 文件会执行文件中的任意代码，因此请确保你信任此服务器。  
+> 由于读取 .pdb 文件会执行文件中的任意代码，因此请确保你信任此服务器。  
   
  **源服务器诊断消息打印到输出窗口**  
  如果启用源服务器支持，此设置会打开诊断显示。  

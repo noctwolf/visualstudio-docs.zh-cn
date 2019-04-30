@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446966"
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种方法，以便可以更轻松地找到整理相关的命令。 命令显示为功能区上的控件。 控件整理为*组*沿应用程序窗口上边缘处呈水平条。 在选项卡上，相关组进行了整理。
@@ -49,7 +49,7 @@ ms.locfileid: "60040141"
 - 将自定义组添加到自定义或内置选项卡。
 
   > [!NOTE]
-  >  内置选项卡或组是一个 Microsoft Office 应用程序的功能区上已存在。 例如，**数据**选项卡是在 Excel 中的内置选项卡。 **连接**上的组是内置组**数据**选项卡。
+  > 内置选项卡或组是一个 Microsoft Office 应用程序的功能区上已存在。 例如，**数据**选项卡是在 Excel 中的内置选项卡。 **连接**上的组是内置组**数据**选项卡。
 
 - 将自定义控件添加到自定义组。
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040141"
 - 为 Outlook 创建功能区*检查器*。 有关详细信息，请参阅[为 Outlook 中自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
-    >  检查器是当用户执行某些任务时（例如，创建一封电子邮件时）打开的窗口。
+    > 检查器是当用户执行某些任务时（例如，创建一封电子邮件时）打开的窗口。
 
 - 选择要在运行时显示的功能区。
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040141"
  若要选择功能区显示在运行时，重写`CreateRibbonExtensibilityObject`中的方法`ThisAddin`， `ThisWorkbook`，或`ThisDocument`的项目，并返回想要显示的功能区类。 以下示例检查名为的字段的值`myCondition`，并返回相应的功能区。
 
 > [!NOTE]
->  在此示例中所使用的语法返回已通过使用功能区**功能区 （可视化设计器）** 项。 返回通过使用创建的功能区的语法**功能区 (XML)** 项会略有不同。 返回有关详细信息**功能区 (XML)** 项，请参阅[功能区 XML](../vsto/ribbon-xml.md)。
+> 在此示例中所使用的语法返回已通过使用功能区**功能区 （可视化设计器）** 项。 返回通过使用创建的功能区的语法**功能区 (XML)** 项会略有不同。 返回有关详细信息**功能区 (XML)** 项，请参阅[功能区 XML](../vsto/ribbon-xml.md)。
 
  添加以下代码：
 

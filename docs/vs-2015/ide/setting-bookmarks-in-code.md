@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441927"
 ---
 # <a name="setting-bookmarks-in-code"></a>在代码中设置书签
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54769299"
  若要添加书签，请将光标置于要添加书签的行上。 单击“切换”按钮或按 CTRL+K。 这样便可添加书签。 再次单击“切换”按钮（或按 CTRL+K），将会删除该书签。 也可以单击书签窗口中的“删除”按钮来删除书签。  
   
 > [!IMPORTANT]
->  书签设置在行号上，而不是代码上。 如果修改代码，书签会保留在行号上，不会随代码移动。  
+> 书签设置在行号上，而不是代码上。 如果修改代码，书签会保留在行号上，不会随代码移动。  
   
  使用书签窗口中的“下一书签”和“上一书签”按钮，可以切换浏览不同书签。  
   

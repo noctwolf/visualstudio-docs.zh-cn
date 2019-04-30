@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b8f2deaa728a2bcd71bcd2264fcd110aee7982e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825248"
 ---
 # <a name="usage-warnings"></a>用法警告
 用法警告支持.NET Framework 的正确用法。
@@ -37,7 +37,7 @@ ms.locfileid: "55945763"
 |[CA2204:应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|方法体中的文本字符串包含一个或多个未被 Microsoft 拼写检查器库识别的单词。|
 |[CA2205:使用 Win32 API 的托管等效项](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|平台调用定义方法和.NET Framework 类库中存在具有等效功能的方法。|
 |[CA2207:值类型的静态字段以内联方式初始化](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|某值类型声明了显式静态构造函数。 要修复与该规则的冲突，请在声明它时初始化所有静态数据并移除静态构造函数。|
-|[CA2208:正确实例化参数异常](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|调用了异常类型 ArgumentException 或其派生类型的默认（无参数）构造函数，或者向异常类型 ArgumentException 或其派生类型的参数化构造函数传递了错误的字符串自变量。|
+|[CA2208:正确实例化参数异常](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|调用了异常类型 ArgumentException 或其派生类型的默认（无参数）构造函数，或者向异常类型 ArgumentException 或其派生类型的参数化构造函数传递了错误的字符串参数。|
 |[CA2211： 非常量非常量字段不应是可见](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|不是常数也不是只读字段的静态字段不是线程安全的。 对此类字段的访问必须严格控制，并需要高级编程技术来同步对类对象的访问。|
 |[CA2212:未标记使用 WebMethod 服务的组件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|继承自 System.EnterpriseServices.ServicedComponent 的类型中的方法将标有 System.Web.Services.WebMethodAttribute。 因为 WebMethodAttribute 和 ServicedComponent 方法在上下文和事务流方面的行为和需求有冲突，所以该方法的行为在某些情况下会不正确。|
 |[CA2213：应释放可释放的字段](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|实现 System.IDisposable 的类型声明了同样实现 IDisposable 的类型的字段。 字段的 Dispose 方法不由声明类型的 Dispose 方法调用。|
@@ -62,9 +62,9 @@ ms.locfileid: "55945763"
 |[CA2232:使用 STAThread 标记 Windows 窗体的入口点](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|STAThreadAttribute 指示应用程序的 COM 线程模型是单线程单元。 使用 Windows 窗体的任何应用程序的入口点上必须存在此特性；如果没有此特性，则 Windows 组件可能无法正常工作。|
 |[CA2233:运算不应溢出](../code-quality/ca2233-operations-should-not-overflow.md)|不应在没有首先验证操作数，以确保操作的结果不是所涉及的数据类型的可能值的范围之外执行算术运算。|
 |[CA2234:传递 System.Uri 对象，而不是字符串](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|调用了带有一个字符串参数的方法，该参数的名称中包含“uri”、“URI”、“urn”、“URN”、“url”或“URL”。  此方法的声明类型包含具有 System.Uri 参数的对应方法重载。|
-|[CA2235:标记所有不可序列化的字段](../code-quality/ca2235-mark-all-non-serializable-fields.md)|在可以序列化的类型中声明了类型不可序列化的实例字段。|
+|[CA2235：标记所有不可序列化的字段](../code-quality/ca2235-mark-all-non-serializable-fields.md)|在可以序列化的类型中声明了类型不可序列化的实例字段。|
 |[CA2236:对 ISerializable 类型调用基类方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|若要修复与该规则的冲突，请从相应的派生类型方法或构造函数调用基类型 GetObjectData 方法或序列化构造函数。|
-|[CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|若要被公共语言运行时识别为可序列化，类型必须标记用 SerializableAttribute 特性即使该类型使用通过实现 ISerializable 接口的自定义序列化例程。|
+|[CA2237：用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|若要被公共语言运行时识别为可序列化，类型必须标记用 SerializableAttribute 特性即使该类型使用通过实现 ISerializable 接口的自定义序列化例程。|
 |[CA2238:正确实现序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)|处理序列化事件的方法的签名、返回类型或可见性不正确。|
 |[CA2239:提供反序列化方法为可选字段](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|某个类型有一个使用 System.Runtime.Serialization.OptionalFieldAttribute 特性标记的字段和类型不提供反序列化事件处理方法。|
 |[CA2240:正确实现 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)|若要修复该规则的冲突，请使 GetObjectData 方法可见且可重写，并确保所有实例字段要包含在序列化过程中或使用 NonSerializedAttribute 特性显式标记。|

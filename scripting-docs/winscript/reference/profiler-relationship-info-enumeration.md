@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0aa0a94668d06f75b959de2ee933ab079feba596
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808888"
 ---
 # <a name="profilerrelationshipinfo-enumeration"></a>PROFILER_RELATIONSHIP_INFO 枚举
 表示有关对象关系中的信息。 在中使用[PROFILER_HEAP_OBJECT_RELATIONSHIP 结构](../../winscript/reference/profiler-heap-object-relationship-structure.md)。  
@@ -29,7 +29,7 @@ typedef [v1_enum] enum {    PROFILER_PROPERTY_TYPE_NUMBER = 0x01,    PROFILER_PR
   
 ## <a name="members"></a>成员  
   
-|成员|值|描述|  
+|成员|“值”|描述|  
 |------------|-----------|-----------------|  
 |PROFILER_PROPERTY_TYPE_NUMBER|0x01|该对象是一个数字。|  
 |PROFILER_PROPERTY_TYPE_STRING|0x02|该对象是一个字符串。|  

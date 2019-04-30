@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ea9f91635e7d618fb439ec8212d3e987a6d1a451
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 83000143674e7cc3bc412c0ca8a579660160514c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444554"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053:静态容器类型不应具有构造函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58933061"
  若要修复此规则的冲突，请删除默认构造函数或将其公开。
 
 > [!NOTE]
->  如果类型未定义任何构造函数，某些编译器自动创建一个公共的默认构造函数。 如果这与您的类型的情况，请添加私有默认构造函数以消除冲突。
+> 如果类型未定义任何构造函数，某些编译器自动创建一个公共的默认构造函数。 如果这与您的类型的情况，请添加私有默认构造函数以消除冲突。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。 构造函数存在建议的类型不是静态类型。

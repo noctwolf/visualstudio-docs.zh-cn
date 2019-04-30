@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949510"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流中设置断点
 
@@ -41,4 +41,4 @@ ms.locfileid: "55908434"
 ## <a name="see-also"></a>请参阅
 
 - [使用工作流设计器调试工作流](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [如何：调试与工作流设计器的 XAML](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [如何：使用工作流设计器调试 XAML](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793629"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Visual Studio 扩展程序的每个监视器感知功能支持
 Visual Studio 2019 之前的版本必须设置为系统识别，而不是按监视器 DPI 感知 (PMA) 其 DPI 感知上下文。 运行中系统识别导致降级视觉对象体验 （例如模糊字体或图标），只要 Visual Studio 必须呈现跨具有不同的缩放比例或远程监视器到具有不同的显示配置的计算机例如 （不同Windows 扩展的)。

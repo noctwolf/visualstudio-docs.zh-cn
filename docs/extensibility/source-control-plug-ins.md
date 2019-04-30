@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a717fdb885669ae4893dc4234c58233dec2957be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800141"
 ---
 # <a name="source-control-plug-ins"></a>源代码管理插件
 源代码控制插件 SDK 参考部分包含启用源代码管理系统集成的完整接口规范[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它指定的语法和各种源代码管理插件必须实现到接口使用的函数和数据类型的语义[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。

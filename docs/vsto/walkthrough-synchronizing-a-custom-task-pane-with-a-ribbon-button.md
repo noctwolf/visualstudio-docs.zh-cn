@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdbcf16139c1f0b48554b3bf14f314a73a641012
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443978"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练：将自定义任务窗格与功能区按钮同步
   本演练演示如何创建用户可以隐藏或通过单击功能区上的切换按钮显示的自定义任务窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。
@@ -46,7 +46,7 @@ ms.locfileid: "60040659"
 - 使用自定义任务窗格同步切换按钮。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：

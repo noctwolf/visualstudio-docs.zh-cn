@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412677"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 此接口表示堆栈帧属性、 程序文档属性或某些其他属性。 该属性通常是表达式计算的结果。
 
 > [!NOTE]
->  "属性"的这种用法不应混淆，这意味着类的成员变量与尽管`IDebugProperty2`可以表示这样的实体。
+> "属性"的这种用法不应混淆，这意味着类的成员变量与尽管`IDebugProperty2`可以表示这样的实体。
 
 ## <a name="syntax"></a>语法
 

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442496"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059963"
 窗体上只有一个 PictureBox。 当添加此控件时，IDE 自动将其命名为“pictureBox1” 。 只有一个名为“checkBox1” 的 CheckBox。 很快，你将编写一些代码，并且这些代码将引用到上述的 CheckBox 和 PictureBox。 因为上述每种控件都只有一个控件，所以当你在代码中看到  “pictureBox1”或  “checkBox1”时，应知道其中的含义。  
   
 > [!NOTE]
->  在 Visual Basic 中，任何控件名称的第一个字母默认是首字母大写，因此名称为 **“PictureBox1”**、 **“CheckBox1”** 等等。  
+> 在 Visual Basic 中，任何控件名称的第一个字母默认是首字母大写，因此名称为 **“PictureBox1”**、 **“CheckBox1”** 等等。  
   
  窗体上包含四个按钮，IDE 将它们分别命名为“button1” 、“button2” 、“button3” 和 “button4”。 只看这些按钮的当前名称，你并不知道哪个按钮是“关闭”  按钮，哪个按钮是“显示图片”  按钮。 这就是为按钮控件提供包含更多信息的名字会很有帮助的原因。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60059963"
 带有 closeButton 名称的“属性”窗口  
   
     > [!NOTE]
-    >  如果尝试将按钮的名称更改为 closeButton（在单词“close”和“Button”之间有一个空格），则 IDE 将显示错误消息：“属性值无效。” 控件名称中不允许使用空格和一些其他字符。  
+    > 如果尝试将按钮的名称更改为 closeButton（在单词“close”和“Button”之间有一个空格），则 IDE 将显示错误消息：“属性值无效。” 控件名称中不允许使用空格和一些其他字符。  
   
 2. 将其他三个按钮重命名为“backgroundButton” 、 “clearButton”和“showButton” 。 你可通过选择“属性”  窗口中的控件选择器下拉列表来验证这些名称。 新的按钮名称将出现。  
   
@@ -53,14 +53,14 @@ ms.locfileid: "60059963"
      你要查看名为 `showButton_Click()`的代码。 当你打开“showButton”  按钮的代码文件时，IDE 已将此代码添加到窗体的代码中。 在设计时，当你打开窗体中的某个控件的代码文件时，如果该控件没有代码，则将为该控件生成代码。 当你运行程序并选择控件（在此示例中为“显示图片” 按钮）时，该代码（称为“方法”  ）将会运行。  
   
     > [!NOTE]
-    >  在本教程中，自动生成的 Visual Basic 代码进行了简化（删除了圆括号 () 之间的所有代码）。 只要出现自动生成的代码，你都可以删除相同的代码。 程序不管怎样都将工作。 对于其余教程，任何自动生成的代码都将尽可能得到简化。  
+    > 在本教程中，自动生成的 Visual Basic 代码进行了简化（删除了圆括号 () 之间的所有代码）。 只要出现自动生成的代码，你都可以删除相同的代码。 程序不管怎样都将工作。 对于其余教程，任何自动生成的代码都将尽可能得到简化。  
   
 5. 再次选择“Windows 窗体设计器”选项卡（Visual C# 中的 “Form1.cs [设计]”，Visual Basic 中的“Form1.vb [设计]”  ），然后打开“清除图片”  按钮的代码文件以在窗体的代码中为它创建方法。 对于剩余两个按钮，重复此操作。 IDE 每次都会向窗体的代码文件添加一个新方法。  
   
 6. 若要再添加一个方法，请在 Windows 窗体设计器中打开 CheckBox 控件的代码文件，以使 IDE 添加 `checkBox1_CheckedChanged()` 方法。 每当用户选中或清除此复选框时都将调用此方法。  
   
     > [!NOTE]
-    >  当运行程序时，你经常要在代码编辑器和 Windows 窗体设计器之间进行移动。 有了 IDE，就能够轻松地在项目中导航。 使用“解决方案资源管理器”  通过双击 Visual C# 中的  “Form1.cs”或 Visual Basic 中的  “Form1.vb”打开“Windows 窗体设计器”，或者在菜单栏上选择 “视图”、“设计器” 。  
+    > 当运行程序时，你经常要在代码编辑器和 Windows 窗体设计器之间进行移动。 有了 IDE，就能够轻松地在项目中导航。 使用“解决方案资源管理器”  通过双击 Visual C# 中的  “Form1.cs”或 Visual Basic 中的  “Form1.vb”打开“Windows 窗体设计器”，或者在菜单栏上选择 “视图”、“设计器” 。  
   
      下面显示了你在代码编辑器中看到的新代码。  
   

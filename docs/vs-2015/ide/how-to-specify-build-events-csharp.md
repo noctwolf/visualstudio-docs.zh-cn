@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435229"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定生成事件 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ ms.locfileid: "60113854"
 4. 在“预先生成事件命令行”框中指定生成事件的语法。  
   
     > [!NOTE]
-    >  如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
+    > 如果项目是最新的且没有触发任何生成，则不会运行预生成事件。  
   
 5. 在“后期生成事件命令行”框中指定生成事件的语法。  
   
     > [!NOTE]
-    >  在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
+    > 在运行 .bat 文件的所有生成后命令之前添加 `call` 语句。 例如，`call C:\MyFile.bat` 或 `call C:\MyFile.bat call C:\MyFile2.bat`。  
   
 6. 在“运行后期生成事件”框中，指定运行后期生成事件的条件。  
   
     > [!NOTE]
-    >  若要添加长语法，或从[预先生成事件/后期生成事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。  
+    > 若要添加长语法，或从[预先生成事件/后期生成事件命令行对话框](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)中选择任何生成宏，请单击省略号按钮 (…) 以显示编辑框。  
   
      生成事件语法可以包含命令提示符处或 .bat 文件中有效的任何命令。 批处理文件名的前面应带有 `call`，以确保执行后面的所有命令。  
   

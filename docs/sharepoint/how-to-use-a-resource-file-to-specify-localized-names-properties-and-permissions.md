@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813044"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>如何：使用资源文件指定本地化的名称、 属性和权限
   通过使用资源文件，您可以对在业务数据连接 (BDC) 模型中定义的对象提供本地化名称、定义属性和应用权限。 若要指定此信息，请将添加**业务数据连接资源**项包含的项目**业务数据连接模型**项。 然后通过编辑资源文件的 XML 来指定名称、属性和权限。

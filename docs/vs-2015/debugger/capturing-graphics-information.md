@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437819"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60114219"
 - 在键盘上，按 Print Screen。  
   
   > [!NOTE]
-  >  当应用在图形诊断下运行时，Print Screen 键只能用于捕获图形信息的帧；不执行其常规功能。 这将一直有效，直到你停止捕获图形信息（通常通过停止调试或正常退出应用程序），即使另一应用程序具有焦点时也是如此。  
+  > 当应用在图形诊断下运行时，Print Screen 键只能用于捕获图形信息的帧；不执行其常规功能。 这将一直有效，直到你停止捕获图形信息（通常通过停止调试或正常退出应用程序），即使另一应用程序具有焦点时也是如此。  
   
 - 在 Visual Studio 捕获接口中，选择**捕获帧**按钮位于上方**诊断会话**时间线，也可选择**捕获帧**按钮位于下方**每秒帧数**泳道和右侧的任何先前捕获的帧。 两个按钮均突出显示在下方的图像中。  
   

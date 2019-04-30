@@ -27,12 +27,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93e60448ec2820758ac7f5a6a5f7b6c4b0065500
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 9d30433f5b1fa8f8fe6dc1cd10a30ae9ef1ad5bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437136"
 ---
 # <a name="general-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“常规”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59667191"
 使用此页更改集成开发环境 (IDE) 的颜色主题、状态栏设置和文件扩展名关联以及其他选项。 可以通过打开“工具”菜单，选择“选项”，打开“环境”文件夹然后选择“常规”页来访问“选项”对话框。 如果此页未出现在列表中，请在“选项”对话框中选中“显示所有设置”复选框。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="visual-experience"></a>视觉体验  
  颜色主题  

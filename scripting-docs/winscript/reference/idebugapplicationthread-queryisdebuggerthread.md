@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5594973f64446c0c6818522ad2ce2b174ab02610
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822150"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
 确定此线程是调试器线程。  
@@ -39,7 +39,7 @@ HRESULT QueryIsDebuggerThread();
 ## <a name="return-value"></a>返回值  
  该方法返回 `HRESULT`。 可能的值包括（但并不限于）下表中的项。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |`S_OK`|该方法成功，这是调试器线程。|  
 |`S_FALSE`|这不是调试器线程。|  

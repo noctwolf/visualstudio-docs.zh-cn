@@ -16,12 +16,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439333"
 ---
 # <a name="call-tree-view"></a>“调用关系树”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ ms.locfileid: "54752116"
   
  可以自定义“调用树”视图来添加或删除列。 右键单击“列名称标题栏”，然后选择“添加/删除列”。  
   
- 通过限制显示的数据量，可配置“调用树”视图进行降噪。 通过使用降噪，性能问题在视图中就变得更为显著。 当性能问题易于区分时，分析就变得较为轻松了。 有关详细信息，请参阅[如何：在报告视图中配置降噪](../profiling/how-to-configure-noise-reduction-in-report-views.md)。  
+ 通过限制显示的数据量，可配置“调用树”视图进行降噪。 通过使用降噪，性能问题在视图中就变得更为显著。 当性能问题易于区分时，分析就变得较为轻松了。 有关详细信息，请参阅[如何：在报表视图中配置降噪](../profiling/how-to-configure-noise-reduction-in-report-views.md)。  
   
 > [!NOTE]
->  如果将降噪配置为在启用时显示警告，则将在报告中显示信息栏。  
+> 如果将降噪配置为在启用时显示警告，则将在报告中显示信息栏。  
   
  有关“调用树”视图中的列定义的详细信息，请参阅以下内容：  
   

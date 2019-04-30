@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004890"
 ---
 # <a name="idebugsyncoperation-interface"></a>IDebugSyncOperation 接口
 允许脚本引擎需要时嵌套在特定受阻线程中执行的操作 （如表达式计算）。 接口还提供了一种机制的取消无响应的操作。  

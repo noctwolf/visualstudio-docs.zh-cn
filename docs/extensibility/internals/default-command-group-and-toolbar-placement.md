@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e84ca70383facc608740cd42a29c4ee769adb069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909886"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>默认命令、 组和工具栏位置
 有关产品一致性和稳定性，UI 会默认情况下，显示特定命令组和[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为命令和命令组提供了定义。 Vspackage 还可以使用标准命令和命令组。

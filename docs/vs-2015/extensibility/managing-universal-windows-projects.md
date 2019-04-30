@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412335"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ ms.locfileid: "60063681"
     ```  
   
     > [!IMPORTANT]
-    >  如果用户打开C++通用 Windows 应用项目中的实验实例中，上面的代码将引发异常。 这是一个已知问题。 若要避免此异常，将为`foreach`上面阻止以下：  
+    > 如果用户打开C++通用 Windows 应用项目中的实验实例中，上面的代码将引发异常。 这是一个已知问题。 若要避免此异常，将为`foreach`上面阻止以下：  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ ms.locfileid: "60063681"
 9. 修改共享的项。 不能修改平台项目; 中的共享的项相反，必须在这些项的实际所有者共享项目中修改它们。 可以使用共享项目中获取相应的项 ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>，向其提供共享的项的完整路径。 然后，可以修改共享的项。 更改传播到平台项目。  
   
     > [!IMPORTANT]
-    >  您应找出项目项是共享的项之前修改它。  
+    > 您应找出项目项是共享的项之前修改它。  
   
      以下方法修改项目项文件的名称。  
   

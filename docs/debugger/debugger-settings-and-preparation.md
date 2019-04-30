@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 287f906ab947f549748865899a5ced52e0c53562
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852741"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。
@@ -37,11 +37,11 @@ ms.locfileid: "56693043"
 
  [控制台项目](../debugger/debugging-preparation-console-projects.md)说明了如何配置控制台项目以进行调试。
 
- [如何： 调试可执行文件不属于的 Visual Studio 解决方案](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)说明如何调试未作为 Visual Studio 项目的一部分创建的可执行文件。
+ [如何：调试可执行文件不属于的 Visual Studio 解决方案](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)说明如何调试未作为 Visual Studio 项目的一部分创建的可执行文件。
 
  [调试 64 位应用程序](../debugger/debug-64-bit-applications.md)描述如何调试 64 位应用程序。
 
- [如何： 指定.NET Framework 版本为调试](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)介绍如何设置注册表项以指示调试器要使用的版本。
+ [如何：指定.NET Framework 版本为调试](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)介绍如何设置注册表项以指示调试器要使用的版本。
 
 ## <a name="see-also"></a>请参阅
 - [调试器安全](../debugger/debugger-security.md)

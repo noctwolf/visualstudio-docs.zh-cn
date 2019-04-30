@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892029"
 ---
 # <a name="address-dpi-issues"></a>解决 DPI 问题
 越来越多的设备随"高分辨率"屏幕。 这些屏幕通常有超过 200 个像素 / 英寸 (ppi)。 使用这些计算机上的应用程序将需要纵向扩展以满足需要查看设备的正常查看距离处的内容的内容。 截至 2014 年的高密度显示的主要目标是移动计算设备 （平板电脑、 蛤便携式计算机和手机）。

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecc36ae8ce0ccbe75cddb94ea69d953cc6307b0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6c821c63354ec1b7cc83e302a3c2682982696e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387680"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：应用编辑在中断模式下使用编辑并继续 (Visual Basic)
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。
@@ -54,7 +54,7 @@ ms.locfileid: "60050954"
      有关详细信息，请参阅[受支持的代码更改（C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。
 
     > [!NOTE]
-    >  如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。
+    > 如果尝试进行“编辑并继续”所不允许的代码更改，你的编辑将被加上紫色波浪线，并且“任务列表”中会出现一项任务。 除非撤消非法的代码更改，否则将无法继续执行代码。
 
 3. 在 “调试” 菜单上，单击 “继续” 继续执行。
 

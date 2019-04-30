@@ -12,15 +12,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: badc2159085257f25a224a29cf1163b2b702fe60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403117"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何：使用 _Analysis_assume 指定其他代码信息
-您可以对代码分析工具的提示，它们将帮助分析过程并降低警告 C/c + + 代码。 若要提供的其他信息，请使用以下函数：
+您可以对代码分析工具的提示，对于 C /C++代码，可以帮助分析处理并减少警告。 若要提供的其他信息，请使用以下函数：
 
  `_Analysis_assume(`  `expr`  `)`
 
@@ -29,7 +29,7 @@ ms.locfileid: "55913595"
  代码分析工具假设由表达式表示的条件是在其中该函数将显示，并将保持为 true，直到表达式更改，例如，通过对变量赋值的点，则返回 true。
 
 > [!NOTE]
->  `_Analysis_assume` 不会影响代码优化。 外部代码分析工具，`_Analysis_assume`定义为执行任何操作。
+> `_Analysis_assume` 不会影响代码优化。 外部代码分析工具，`_Analysis_assume`定义为执行任何操作。
 
 ## <a name="example"></a>示例
  下面的代码使用`_Analysis_assume`若要更正代码分析警告[C6388](../code-quality/c6388.md):

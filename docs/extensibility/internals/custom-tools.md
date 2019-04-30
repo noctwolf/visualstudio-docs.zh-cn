@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910146"
 ---
 # <a name="custom-tools"></a>自定义工具
 *自定义工具*可将工具与项目中的项相关联，并运行该工具，每次保存该文件。 某些自定义工具，有时称为*单个文件生成器*，通常用于实现转换器生成代码中的数据，反之亦然。 例如，单个文件生成器创建[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]并[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]源代码共 *.settings*并 *.resx*文件。 生成的源代码提供强类型化中的数据的访问权限 *.settings*并 *.resx*文件。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目类型支持自定义工具;[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目类型不这样做。 你自己的项目类型还可以支持自定义工具。

@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445762"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60102752"
 - 类或你的解决方案中的集合。  
   
 > [!NOTE]
->  如果不使用数据绑定功能，则不适用的数据集、 实体框架中，LINQ to SQL，WCF 或 SharePoint，"数据源"的概念。 只需通过直接连接到该数据库使用 SQLCommand 对象并直接与数据库通信。  
+> 如果不使用数据绑定功能，则不适用的数据集、 实体框架中，LINQ to SQL，WCF 或 SharePoint，"数据源"的概念。 只需通过直接连接到该数据库使用 SQLCommand 对象并直接与数据库通信。  
   
  创建和编辑数据源使用**数据源配置向导**Windows 窗体或 Windows Presentation Foundation 应用程序中。 有关实体框架中，首先创建实体类，并选择，然后启动向导**项目** > **添加新数据源**（本文后面的更多详细信息中所述）。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "60102752"
 - Web 服务。  
   
     > [!NOTE]
-    >  在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，会显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。  
+    > 在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，会显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。  
   
 ## <a name="data-source-for-an-object"></a>一个对象的数据源  
  可以从任何通过运行公开一个或多个公共属性的对象创建数据源**数据源配置向导**，然后选择**对象**数据源类型。 一个对象的所有公共属性显示在**数据源**窗口。   如果在使用实体框架，并且已生成一个模型，这是在哪里找到将为你的应用程序的数据源的实体类。  
@@ -94,10 +94,10 @@ ms.locfileid: "60102752"
  如果你想要将绑定到程序集或项目未显示在树视图中的对象，请单击**添加引用**并用**添加引用对话框**以添加对程序集或项目的引用。 添加引用后，程序集或项目添加到树视图。  
   
 > [!NOTE]
->  您可能需要生成项目之前在树视图中显示这些对象包含您的对象。  
+> 您可能需要生成项目之前在树视图中显示这些对象包含您的对象。  
   
 > [!NOTE]
->  若要支持拖放数据绑定对象实现<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>接口必须具有默认构造函数。 否则为 Visual Studio 无法实例化的数据源对象，并将项拖至设计图面上时，它将显示错误。  
+> 若要支持拖放数据绑定对象实现<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>接口必须具有默认构造函数。 否则为 Visual Studio 无法实例化的数据源对象，并将项拖至设计图面上时，它将显示错误。  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 列表数据源  
  可以从 SharePoint 列表创建数据源，通过运行**数据源配置向导**，然后选择**SharePoint**数据源类型。 SharePoint 公开数据通过[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，因此创建 SharePoint 数据源是从服务中创建数据源相同。 选择**SharePoint**中的项**数据源配置向导**打开**添加服务引用**对话框中，连接到 SharePoint 数据服务的位置通过指向 SharePoint 服务器。  这要求 SharePoint SDK。  

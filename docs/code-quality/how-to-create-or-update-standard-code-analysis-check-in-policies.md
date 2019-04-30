@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 768efb3e874f6427cd23f63f14671aa2db1bea71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816352"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 
@@ -29,7 +29,7 @@ ms.locfileid: "55917072"
 
 - 通过指定的签入策略设置为托管代码中，*规则集*，其中包含代码分析规则的子集。
 
-- 对于 C/c + + 代码，在 Visual Studio 2017 版本 15.6 及更早版本，签入策略需要运行所有代码分析规则。 可以添加预处理器指令，以禁用 Azure DevOps 项目中的单个代码项目的特定规则。 15.7 版中及更高版本，可以使用 **/analyze: ruleset**来指定要运行的规则。 有关详细信息，请参阅[使用规则集指定要运行的 c + + 规则](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
+- 对于 C /C++代码，在 Visual Studio 2017 版本 15.6 及更早版本，签入策略需要运行所有代码分析规则。 可以添加预处理器指令，以禁用 Azure DevOps 项目中的单个代码项目的特定规则。 15.7 版中及更高版本，可以使用 **/analyze: ruleset**来指定要运行的规则。 有关详细信息，请参阅[使用规则集指定C++运行规则](using-rule-sets-to-specify-the-cpp-rules-to-run.md)。
 
 指定托管代码的签入策略后，团队成员可以同步到 Azure DevOps 项目策略设置的代码项目及其代码分析设置。
 
@@ -52,7 +52,7 @@ ms.locfileid: "55917072"
 |选项|描述|
 |------------|-----------------|
 |**执行签入以只包含属于当前解决方案的文件。**|只能对解决方案和项目配置文件中指定的文件，可以运行代码分析。 此策略可确保所有代码都是一种解决方案的一部分进行都分析。|
-|**强制执行 C/c + + 代码分析 (/analyze)**|需要所有的 C 或 c + + 项目会生成使用 /analyze 编译器选项，它们可以在签入之前运行代码分析。|
+|**强制执行 C /C++代码分析 (/analyze)**|需要的所有 C 或C++项目在生成使用 /analyze 编译器选项，它们可以在签入之前运行代码分析。|
 |**为托管代码强制实施代码分析**|需要托管的所有项目运行代码分析和生成它们可以在签入之前。|
 
 ## <a name="to-specify-a-managed-rule-set"></a>若要指定托管的规则设置

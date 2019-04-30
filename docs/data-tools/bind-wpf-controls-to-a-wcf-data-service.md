@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824846"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
@@ -66,7 +66,7 @@ ms.locfileid: "58069770"
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>创建实体数据模型服务
 
-若要使用的 WCF 数据服务公开的应用程序的数据，必须定义服务的数据模型。 WCF 数据服务支持两种类型的数据模型： 实体数据模型和使用实现的公共语言运行时 (CLR) 对象定义的自定义数据模型<xref:System.Linq.IQueryable%601>接口。 在本演练中，你将为该数据模型创建一个实体数据模型。
+若要使用的 WCF 数据服务公开的应用程序的数据，必须定义服务的数据模型。 WCF 数据服务支持两种类型的数据模型：实体数据模型和使用实现的公共语言运行时 (CLR) 对象定义的自定义数据模型<xref:System.Linq.IQueryable%601>接口。 在本演练中，你将为该数据模型创建一个实体数据模型。
 
 1. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
@@ -217,7 +217,7 @@ ms.locfileid: "58069770"
 
 使用服务代理对象从服务加载销售数据。 然后将返回的数据分配给数据源<xref:System.Windows.Data.CollectionViewSource>WPF 窗口中。
 
-1. 在设计器创建`Window_Loaded`事件处理程序中，双击读取的文本：**MainWindow**
+1. 在设计器创建`Window_Loaded`事件处理程序中，双击读取的文本：**MainWindow**。
 
 2. 将该事件处理程序替换为以下代码。 确保将此代码中的“localhost”地址替换为你的开发计算机上的本地主机地址。
 
@@ -293,7 +293,7 @@ ms.locfileid: "58069770"
 
 - 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅[绑定 WPF 控件添加到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)。
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅[演练： 在 WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)。
+- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参见[演练：在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)
 
 ## <a name="see-also"></a>请参阅
 

@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445363"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows 窗体控件在 Office 文档概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 文档级项目中，您可以添加 Windows 窗体控件的文档或工作簿项目中在设计时，或以编程方式可以在运行时添加这些控件。 以编程方式可以向任何打开的文档或工作表在 VSTO 外接程序中的运行时添加这些控件，Excel 或 Word。
@@ -109,7 +109,7 @@ ms.locfileid: "60055348"
 - **使垂直间距相等**
 
 > [!NOTE]
->  在 Word 项目中，仅当所选控件未与文本对齐时，这些按钮才启用。 默认情况下，在设计时添加到文档中的控件与文本对齐。
+> 在 Word 项目中，仅当所选控件未与文本对齐时，这些按钮才启用。 默认情况下，在设计时添加到文档中的控件与文本对齐。
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>禁止旧数据在加载期间在 Excel 工作簿中显示
  在设计时将 Windows 窗体控件添加到文档或工作表后，在用户关闭文档时，这些控件将保留在文档中。 在设计时添加的控件也称为 *静态控件*。

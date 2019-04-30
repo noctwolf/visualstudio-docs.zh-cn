@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ba03e1a5dea0ee03b1799a3afe038c867fa7d64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442582"
 ---
 # <a name="step-3-set-your-form-properties"></a>步骤 3：设置窗体属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60067243"
 2. 选择“Form1”窗体中的任意位置以将其选定。 查看“属性”窗口，该窗口此时应显示窗体的属性。 窗体具有各种属性。 例如，可以设置前景色和背景色、窗体顶部显示的标题文本、窗体的大小和其他属性。  
   
    > [!NOTE]
-   >  如果“属性”窗口未出现，请通过选择工具栏上的正方形“停止调试”按钮来停止程序或直接关闭窗口。 如果程序已停止，且仍未显示“属性”窗口，请在菜单栏上选择“视图”和“属性窗口”。  
+   > 如果“属性”窗口未出现，请通过选择工具栏上的正方形“停止调试”按钮来停止程序或直接关闭窗口。 如果程序已停止，且仍未显示“属性”窗口，请在菜单栏上选择“视图”和“属性窗口”。  
   
 3. 选中窗体后，在“属性”窗口中找到“Text”属性。 根据列表排序的方式，您可能需要向下滚动。 选择“Text”，键入“图片查看器”，然后按 Enter。  此时，窗体的标题栏中将显示文本“图片查看器”，并且“属性”窗口的外观应与下图类似。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "60067243"
    “属性”窗口  
   
    > [!NOTE]
-   >  可以通过“按分类顺序”视图或“字母顺序”视图对属性进行排序。 可通过使用“属性”窗口上的按钮在这两类视图之间进行切换。 在本教程中，通过“字母顺序”视图查找属性会更加轻松。  
+   > 可以通过“按分类顺序”视图或“字母顺序”视图对属性进行排序。 可通过使用“属性”窗口上的按钮在这两类视图之间进行切换。 在本教程中，通过“字母顺序”视图查找属性会更加轻松。  
   
 4. 返回 Windows 窗体设计器。 选择窗体右下角的拖动手柄，此拖动手柄是位于窗体右下角的白色小正方形，如下所示。  
   

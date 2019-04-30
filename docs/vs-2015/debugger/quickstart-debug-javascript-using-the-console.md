@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446114"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60065683"
 - [切换脚本执行上下文](#Switching)  
   
 > [!TIP]
->  如果 JavaScript 控制台窗口处于关闭状态，请依次选择“调试” > >  以重新打开它。 该窗口仅在脚本调试会话期间出现。  
+> 如果 JavaScript 控制台窗口处于关闭状态，请依次选择“调试” > >  以重新打开它。 该窗口仅在脚本调试会话期间出现。  
   
  使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60065683"
  以下步骤会创建一个 `FlipView` 应用并演示如何以交互方式调试 JavaScript 编码错误。  
   
 > [!CAUTION]
->  此处的示例应用是一个 Windows 应用商店应用。 但是，此处所述的控制台功能也适用于使用 Visual Studio Tools for Apache Cordova 创建的应用。  
+> 此处的示例应用是一个 Windows 应用商店应用。 但是，此处所述的控制台功能也适用于使用 Visual Studio Tools for Apache Cordova 创建的应用。  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>调试 FlipView 应用中的 JavaScript 代码  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60065683"
      将此代码复制并粘贴到 JavaScript 控制台输入提示中。  
   
     > [!TIP]
-    >  将多行代码粘贴到 JavaScript 控制台输入提示中时，控制台输入提示会自动切换到多行模式。 可以按 Ctrl+Alt+M 来打开和关闭多行模式。 若要在多行模式下运行脚本，请按 Ctrl+Enter 或选择窗口右下角的箭头符号。 有关详细信息，请参阅 [JavaScript 控制台窗口中的单行模式和多行模式](#SinglelineMultilineMode)。  
+    > 将多行代码粘贴到 JavaScript 控制台输入提示中时，控制台输入提示会自动切换到多行模式。 可以按 Ctrl+Alt+M 来打开和关闭多行模式。 若要在多行模式下运行脚本，请按 Ctrl+Enter 或选择窗口右下角的箭头符号。 有关详细信息，请参阅 [JavaScript 控制台窗口中的单行模式和多行模式](#SinglelineMultilineMode)。  
   
 12. 在提示中更正 `push` 函数调用（将 `pages.push` 替换为 `Data.items.setAt`）。 更正后的代码应类似于：  
   
@@ -193,7 +193,7 @@ ms.locfileid: "60065683"
     ```  
   
     > [!TIP]
-    >  如果要使用 `pages` 对象而不是 `Data.items`，则需要在代码中设置断点以使 `pages` 对象处于范围中。  
+    > 如果要使用 `pages` 对象而不是 `Data.items`，则需要在代码中设置断点以使 `pages` 对象处于范围中。  
   
 13. 选择绿色箭头符号以运行脚本。  
   

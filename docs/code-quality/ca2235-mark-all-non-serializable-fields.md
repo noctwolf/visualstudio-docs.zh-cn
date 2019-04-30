@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 51bb7c0e38df92873da6c17b305334c2f6aac25b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806545"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235:标记所有不可序列化的字段
 
@@ -62,7 +62,7 @@ ms.locfileid: "55909501"
 
  [CA2238:正确实现序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2237:用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+ [CA2237：用 SerializableAttribute 标记 ISerializable 类型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
 
  [CA2239:提供反序列化方法为可选字段](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 

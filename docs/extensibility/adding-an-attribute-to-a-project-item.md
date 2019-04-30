@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b6992790be2a447c1539024d21d751041d43da2f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843909"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>将属性添加到项目项
 方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>获取和设置的项目项的属性的值。 SetItemAttribute 创建属性，如果已存在，将其添加到项目项元数据。

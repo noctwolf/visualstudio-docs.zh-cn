@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446742"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>演练：创建自定义文本模板宿主
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60100321"
  您可以编写自定义主机如果想要使用*文本模板转换*功能从外部[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或如果你想要将该功能集成到自定义工具。 若要创建自定义主机，你必须创建继承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的类。 有关各方法的文档，请参见 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  
   
 > [!WARNING]
->  如果要编写 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展或包，请考虑使用文本模板化服务而不是创建您自己的主机。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
+> 如果要编写 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展或包，请考虑使用文本模板化服务而不是创建您自己的主机。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
  本演练演示以下任务：  
   
@@ -732,7 +732,7 @@ ms.locfileid: "60100321"
 2. 将以下内容添加到文件中：  
   
     > [!NOTE]
-    >  文本模板的编程语言不必与自定义宿主的编程语言一致。  
+    > 文本模板的编程语言不必与自定义宿主的编程语言一致。  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ ms.locfileid: "60100321"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  而不是键入地址，则可以浏览到文件 CustomHost.exe 中**Windows 资源管理器**然后将文件拖入命令提示符窗口。  
+    > 而不是键入地址，则可以浏览到文件 CustomHost.exe 中**Windows 资源管理器**然后将文件拖入命令提示符窗口。  
   
 3. 键入一个空格。  
   
@@ -796,7 +796,7 @@ ms.locfileid: "60100321"
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  而不是键入地址，则可以浏览到文件 TestTemplate.tt 中**Windows 资源管理器**然后将文件拖入命令提示符窗口。  
+    > 而不是键入地址，则可以浏览到文件 TestTemplate.tt 中**Windows 资源管理器**然后将文件拖入命令提示符窗口。  
   
      自定义宿主应用程序运行并完成文本模板转换过程。  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 调试.NET Framework 源代码 |Microsoft Docs
+title: 如何：调试.NET Framework 源代码 |Microsoft Docs
 ms.date: 11/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 25f40b0528b794863aabdb13ed9785d2b0c551b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894269"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 
@@ -31,9 +31,9 @@ ms.locfileid: "56700778"
 
 1. 下**工具**(或**调试**) >**选项** > **调试** > **常规**，选择**启用.NET Framework 源代码单步执行**。
 
-   - 如果您先前启用了“仅我的代码”，则会出现一个警告对话框，提示您“仅我的代码”现在已禁用。 选择“确定”。
+   - 如果您先前启用了“仅我的代码”，则会出现一个警告对话框，提示您“仅我的代码”现在已禁用。 选择 **确定**。
 
-   - 如果您没有设置的本地符号缓存，警告对话框将提示您默认符号缓存已设置。 选择“确定”。
+   - 如果您没有设置的本地符号缓存，警告对话框将提示您默认符号缓存已设置。 选择 **确定**。
 
 1. 选择**确定**以关闭**选项**对话框。
 

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954988"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
 实现此接口的对象传递给[IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md)脚本引擎遇到未经处理的错误时的方法。 主机然后方法对此对象调用以获取有关发生的错误的信息。  

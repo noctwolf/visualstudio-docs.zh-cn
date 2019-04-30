@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437306"
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ End Namespace
   <xref:System.Windows.Controls.DockPanel> 允许子 <xref:System.Windows.Controls.TextBox> 控件，以告诉它如何排列这些控件。 为了完成此操作， <xref:System.Windows.Controls.DockPanel> 实现 <xref:System.Windows.Controls.DockPanel.Dock%2A> 属性，该属性公开给子控件，以允许每个子控件指定停靠样式。  
   
 > [!NOTE]
->  由父控件实现以便子控件使用的属性是 WPF 构造，称为 [附加属性](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)。  
+> 由父控件实现以便子控件使用的属性是 WPF 构造，称为 [附加属性](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx)。  
   
  下图显示上一个示例中的 XAML 标记的结果。  
   
@@ -309,7 +309,7 @@ End Namespace
 ## <a name="Media"></a> 媒体  
  传达丰富内容的一种方法是使用视听媒体。 WPF 为图像、视频和音频提供特殊支持。  
   
-### <a name="images"></a>图像  
+### <a name="images"></a>映像  
  图像对大多数应用程序很常见，WPF 提供多种方式来使用它们。 下图显示一个用户界面，该用户界面中的列表框中包含缩略图图像。 选中一个缩略图后，将显示该图像的原尺寸。  
   
  ![缩略图图像和完整尺寸图像](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  

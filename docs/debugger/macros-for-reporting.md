@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905550"
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
 对于调试，你可以使用 **_RPTn**并 **_RPTFn**在 CRTDBG 中定义的宏。H、 要替换的使用`printf`语句。 无需在 inclose **#ifdef**s，因为它们自动不会显示在你的发布生成时 **_DEBUG**并不定义。
 
-|宏|说明|
+|宏|描述|
 |-----------|-----------------|
 |_RPT0、_RPT1、_RPT2、_RPT3、_RPT4|向四个自变量输出一个消息字符串和零。 对于从 _RPT1 到 _RPT4，消息字符串作为参数的 printf 样式的格式化字符串。|
 |_RPTF0、_RPTF1、_RPTF2、_RPTF4|与 _RPTn 相同，但这些宏还输出其所在的文件名和行号。|

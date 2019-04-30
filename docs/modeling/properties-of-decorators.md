@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 76129141ed293281eeb3179a654f470bcf608bdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996795"
 ---
 # <a name="properties-of-decorators"></a>修饰器的属性
 修饰器是图标、 文本或展开/折叠尖括号中显示的形状或关系图上的连接器。 下表显示三种类型的修饰器的属性。 某些属性会显示仅在形状修饰器或仅连接器修饰器。
@@ -26,7 +26,7 @@ ms.locfileid: "55907576"
 |属性|描述|默认|
 |-|-|-|
 |DisplayName|修饰器将生成的设计器中显示的名称。|展开折叠修饰器|
-|name|修饰器的名称。|ExpandCollapseDecorator|
+|名称|修饰器的名称。|ExpandCollapseDecorator|
 |说明|与此修饰器相关联的非正式说明。|\<none>|
 |HorizontalOffset|水平偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|
 |VerticalOffset|垂直偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|
@@ -40,7 +40,7 @@ ms.locfileid: "55907576"
 |-|-|-|
 |DefaultIcon|要显示的图标或图像文件的路径。|\<none>|
 |DisplayName|修饰器要在生成的设计器中显示的名称。|图标修饰器|
-|name|修饰器的名称。|IconDecorator|
+|名称|修饰器的名称。|IconDecorator|
 |说明|与修饰器相关联的非正式说明。|\<none>|
 |HorizontalOffset|水平偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|
 |VerticalOffset|垂直偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|
@@ -56,7 +56,7 @@ ms.locfileid: "55907576"
 |DisplayName|修饰器要在生成的设计器中显示的名称。|Label|
 |FontSize|修饰器中显示的文本的字体大小。|8|
 |FontStyle|修饰器中显示的文本的字体样式。|规则|
-|name|修饰器的名称。|Label|
+|名称|修饰器的名称。|Label|
 |说明|与修饰器相关联的非正式说明。|\<none>|
 |HorizontalOffset|水平偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|
 |VerticalOffset|垂直偏移量，相对于修饰器，以英寸为单位的默认位置。 （在形状上仅。）|0|

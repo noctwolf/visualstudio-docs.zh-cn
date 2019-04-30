@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934894"
 ---
 # <a name="expected--"></a>预期-
 尝试创建正则表达式文本，但不是包含斜杠 （/） 之一。 就像为一对引号引起来的字符写入字符串文本，正则表达式文本表示为一对大斜杠 （/） 字符的字符。  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848450"
 ---
 # <a name="graphics-object-table"></a>图形对象表
 Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或应用程序的帧的 Direct3D 对象。
@@ -36,7 +36,7 @@ Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或
 ### <a name="graphics-object-table-format"></a>图形对象表格式
  “对象表”可显示支持与选定事件关联的帧的 Direct3D 对象和资源 - 例如，状态对象、缓冲区、着色器、纹理以及其他资源。 创建于之前的帧但不会在捕获的帧期间使用的对象将在对象表中被省略。 在捕获的帧期间中被之前的事件销毁的对象将在后续事件中被省略。 未在 D3D10Device 或 D3D11DeviceContext 上设置的对象将显示为灰色文本。 对象会以表格的形式显示。
 
-|列|说明|
+|列|描述|
 |------------|-----------------|
 |标识符|对象 ID。|
 |**名称**|通过使用 Direct3D 函数 `SetPrivateData` 在对象上设置的特定于应用程序的信息 - 通常提供有关一个对象的其他识别信息。|
@@ -78,7 +78,7 @@ Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或
 
  可以切换“显示偏移量”复选框以隐藏或显示缓冲区中每个元素的偏移量。
 
-|类型|说明|
+|类型|描述|
 |----------|-----------------|
 |**float**|32 位浮点值。|
 |**float2**|包含两个 32 位浮点值的矢量。|

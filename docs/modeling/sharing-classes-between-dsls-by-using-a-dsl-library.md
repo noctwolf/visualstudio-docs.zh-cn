@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003381"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 在 Visual Studio 可视化和建模 SDK 中，可以创建可导入到另一个 DSL 的 DSL 定义不完整。 这允许您考虑通用部分类似的模型。

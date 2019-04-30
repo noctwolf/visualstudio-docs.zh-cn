@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907922"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 使用托管的包框架 (MPF) 语言类实现中的语言服务[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]非常简单。 所需的 VSPackage，托管语言服务、 语言服务本身和你的语言分析器。

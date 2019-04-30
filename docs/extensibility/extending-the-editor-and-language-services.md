@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823d9597e61d87d15ab9e96afad7d84703be68f9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912325"
 ---
 # <a name="extend-the-editor-and-language-services"></a>将编辑器和语言服务扩展
 可以将语言服务功能 （如 IntelliSense) 添加到您自己的编辑器，并扩展 Visual Studio 代码编辑器中的大多数功能。  您可以扩展的完整列表，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。
@@ -28,7 +28,7 @@ ms.locfileid: "56716761"
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
+|Title|描述|
 |-----------|-----------------|
 |[语言服务和编辑器扩展入门](../extensibility/getting-started-with-language-service-and-editor-extensions.md)|说明如何创建编辑器的扩展。|
 |[在编辑器内](../extensibility/inside-the-editor.md)|描述在编辑器的常规结构并列出它的某些功能。|

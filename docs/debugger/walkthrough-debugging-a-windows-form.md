@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d348675ca8670aa27035d31657d06bc2c4e0a829
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407582"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成此演练使用 Visual Basic 中， C#，或C++。
@@ -112,7 +112,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
      出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参见[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583) 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。
 
     > [!NOTE]
-    >  此外可以右键单击任意行的代码中，指向**断点**，然后单击**插入断点**该行上添加断点。
+    > 此外可以右键单击任意行的代码中，指向**断点**，然后单击**插入断点**该行上添加断点。
 
 2. 在“调试”菜单上选择“启动”。
 

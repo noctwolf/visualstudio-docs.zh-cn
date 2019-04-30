@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951165"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示按钮，使用户能够对 Microsoft Office Outlook 项做出响应。 例如，若要对邮件项做出响应，用户单击**答复**，**全部答复**，或**向前**操作按钮。 每个操作创建新的邮件项，并通过使用原始项中的信息填充的项的字段。

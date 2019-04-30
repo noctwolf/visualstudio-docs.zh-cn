@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387017"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ ms.locfileid: "60052085"
      在解决方案资源管理器中，打开 CodedUITest1.vb 文件。 在 CodedUITestMethod1() 测试方法代码中，右击对断言方法（该方法为自动添加的 `Me.UIMap.AssertMethod1()` ）的调用并选择“转到定义” 。 这将在代码编辑器中打开 UIMap.Designer.vb 文件，因此可以查看你为断言方法和控件添加的代码。  
   
     > [!WARNING]
-    >  请不要直接修改 UIMap.designer.cs 或 UIMap.Designer.vb 文件。 如果执行此操作，则在每次生成测试时都将覆盖对该文件所做的更改。  
+    > 请不要直接修改 UIMap.designer.cs 或 UIMap.Designer.vb 文件。 如果执行此操作，则在每次生成测试时都将覆盖对该文件所做的更改。  
   
      **断言方法**  
   

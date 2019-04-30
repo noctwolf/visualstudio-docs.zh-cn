@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b314dc9eedbf99ba130772ac226d45239b4de455
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e8b1ff717931286c5aa3aaaa69510ce05fb39a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385973"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试文本模板访问模型
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。
 
 > [!NOTE]
->  详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练：调试文本模板](debugging-a-t4-text-template.md)。
+> 详细了解文本模板一般情况下，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅[演练：调试文本模板](debugging-a-t4-text-template.md)。
 
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案
  在此过程中，你创建域特定语言解决方案具有以下特征：
@@ -54,7 +54,7 @@ ms.locfileid: "60045052"
 1. DebugTest.tt 中的代码替换为以下代码：
 
     > [!NOTE]
-    >  该代码包含一个错误。 若要调试它引入了错误。
+    > 该代码包含一个错误。 若要调试它引入了错误。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -118,7 +118,7 @@ ms.locfileid: "60045052"
 1. DebugTest.tt 中的代码替换为以下代码：
 
     > [!NOTE]
-    >  该代码包含一个错误。 若要调试它引入了错误。
+    > 该代码包含一个错误。 若要调试它引入了错误。
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

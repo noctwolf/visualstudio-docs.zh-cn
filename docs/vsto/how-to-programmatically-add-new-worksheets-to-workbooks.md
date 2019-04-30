@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e1b45196fa70328809aa5da3a1f56ea57fce2085
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967639"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何：以编程方式将新工作表添加到工作簿
   可以通过编程方式创建一个工作表，然后将它添加到工作簿中工作表的集合。

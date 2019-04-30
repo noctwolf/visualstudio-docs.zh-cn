@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a35e1498c4f2e6a10f56f1ab7687bd8516eb6808
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416703"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“快速启动”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59658612"
 |文档|@doc<br /><br /> 例如，`@doc font`|将搜索限定为打开的文档的文件名称和路径（按搜索条件），但不搜索文件内的文本。|  
   
 > [!NOTE]
->  可以更改“选项”对话框中“键盘”页的“常规”上的快捷键。  
+> 可以更改“选项”对话框中“键盘”页的“常规”上的快捷键。  
   
 ## <a name="show-previous-results"></a>显示以前的结果  
  默认情况下，搜索会话之间不保留你输入的搜索词。 如果搜索某一个词，将光标移动到“快速启动”区域外，然后返回，则搜索字符串将被清除。 要保留搜索结果，请转到“选项”对话框，选择“快速启动”，然后选择“快速启动激活时显示上一次搜索的搜索结果” 复选框。 下一次搜索时，停留在快速启动区域内，然后返回，则快速启动将保留上次使用的搜索词并显示搜索结果。  

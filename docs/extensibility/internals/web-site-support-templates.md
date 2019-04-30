@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc5370db9c090fe5a7dcd9852d3df94e05f08e1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856851"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目和项模板提供加速开发过程无需从头开始创建新网站项目和项的可重用和可自定义网站项目和项存根。 有关详细信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]模板，请参阅[创建项目和项模板](../../ide/creating-project-and-item-templates.md)。

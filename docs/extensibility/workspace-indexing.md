@@ -8,11 +8,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952689"
 ---
 # <a name="workspace-indexing"></a>工作区索引
 
@@ -25,7 +25,7 @@ ms.locfileid: "55956982"
 |数据|文件扫描程序类型|索引查询结果类型|相关的类型|
 |--|--|--|--|
 |参考资料|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
-|符号|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> 应使用而不是`IIndexWorkspaceService`的查询|
+|Symbols|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> 应使用而不是`IIndexWorkspaceService`的查询|
 |数据值|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 
 ## <a name="querying-for-indexed-data"></a>查询索引数据

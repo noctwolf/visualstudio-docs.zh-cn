@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441827"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。
@@ -82,7 +82,7 @@ ms.locfileid: "60094848"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  请不要在文档的 **Shutdown** 事件处理程序过程中以编程方式删除控件。 发生 **Shutdown** 事件时，文档的 UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 **BeforeClose** 或 **BeforeSave**。
+> 请不要在文档的 **Shutdown** 事件处理程序过程中以编程方式删除控件。 发生 **Shutdown** 事件时，文档的 UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 **BeforeClose** 或 **BeforeSave**。
 
 ### <a name="event-handler-method-declarations"></a>事件处理程序方法声明
  每个事件处理程序方法声明都具有传递给它的相同参数： *sender* 和 *e*。 在 Excel 中， *sender* 参数引用工作表，如 `Sheet1` 或 `Sheet2`；在 Word 中， *sender* 参数引用文档。 *e* 参数引用事件的标准参数，此情况下不使用该事件。
@@ -95,7 +95,7 @@ ms.locfileid: "60094848"
  下面的代码示例演示 Excel 的文档级项目中的默认事件处理程序。
 
 > [!NOTE]
->  下面的代码示例演示 `Sheet1` 类中的事件处理程序。 其他主机项类中的事件处理程序的名称对应于类名。 例如，在 `Sheet2` 类中， **Startup** 事件处理程序命名为 `Sheet2_Startup`。 在 `ThisWorkbook` 类中， **Startup** 事件处理程序命名为 `ThisWorkbook_Startup`。
+> 下面的代码示例演示 `Sheet1` 类中的事件处理程序。 其他主机项类中的事件处理程序的名称对应于类名。 例如，在 `Sheet2` 类中， **Startup** 事件处理程序命名为 `Sheet2_Startup`。 在 `ThisWorkbook` 类中， **Startup** 事件处理程序命名为 `ThisWorkbook_Startup`。
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094848"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 对象的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。
 
 > [!NOTE]
->  当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅[Outlook 2010 的 Shutdown 更改](http://go.microsoft.com/fwlink/?LinkID=184614)。
+> 当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅[Outlook 2010 的 Shutdown 更改](http://go.microsoft.com/fwlink/?LinkID=184614)。
 
 ## <a name="see-also"></a>请参阅
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440947"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>管理版本控制下的模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60080315"
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!IMPORTANT]
->  当多个用户使用同一个建模项目时，请务必小心。 了解如何才能 [在中型或大型项目中组织模型](../modeling/structure-your-modeling-solution.md)。  
+> 当多个用户使用同一个建模项目时，请务必小心。 了解如何才能 [在中型或大型项目中组织模型](../modeling/structure-your-modeling-solution.md)。  
   
 ## <a name="ModelingProjects"></a> 建模项目中的文件  
  多个用户可能会同时处理一个建模项目，假设他们处理的是不同的文件。  
@@ -42,7 +42,7 @@ ms.locfileid: "60080315"
     - **DiagramName.classdiagram.layout** - 如果删除了此文件，则这些形状将仍会显示在关系图中，但会丢失其大小和位置。 每个布局文件都隶属于关系图文件。 若要查看它，请在解决方案资源管理器中单击关系图文件旁边的 [+]。  
   
 > [!NOTE]
->  请务必保持文件之间的一致性。 例如，如果使用源控件回滚 .uml 文件中的更改，则应该同时回滚 .*diagram 和 .layout 文件中的相应更改。 中表示的元素。\*如果它们不在.uml 文件中还表示，关系图文件将会丢失。  
+> 请务必保持文件之间的一致性。 例如，如果使用源控件回滚 .uml 文件中的更改，则应该同时回滚 .*diagram 和 .layout 文件中的相应更改。 中表示的元素。\*如果它们不在.uml 文件中还表示，关系图文件将会丢失。  
   
 ## <a name="Shared"></a> 处理共享建模项目  
  若要最大程度减少某个项目不同部分中并发工作之间的冲突：  
@@ -68,7 +68,7 @@ ms.locfileid: "60080315"
 - 执行“获取”  操作之前一定要关闭所有关系图。  
   
     > [!NOTE]
-    >  如果在执行“获取” 操作时，某个文件处于打开状态，并且该操作造成本地更改，则将提示重新加载该文件。 在这种情况下，单击“否” ，然后重新加载完整项目。 在“解决方案资源管理器” 中右击该建模项目节点，单击“卸载项目” ，然后再单击“重新加载项目” 。  
+    > 如果在执行“获取” 操作时，某个文件处于打开状态，并且该操作造成本地更改，则将提示重新加载该文件。 在这种情况下，单击“否” ，然后重新加载完整项目。 在“解决方案资源管理器” 中右击该建模项目节点，单击“卸载项目” ，然后再单击“重新加载项目” 。  
   
 ### <a name="Exclusive"></a> 需要排他访问该模型的更改  
  在进行以下类型的更改之前，请确保在整个项目上具有签出锁定。  
@@ -94,7 +94,7 @@ ms.locfileid: "60080315"
      在“解决方案资源管理器”中，右击目标文件夹或项目，指向“添加” ，然后单击“现有项” 。 在对话框中，选择关系图文件，然后单击“添加” 。 将自动添加布局文件。  
   
     > [!NOTE]
-    >  不能将该文件移到不同的项目中。  
+    > 不能将该文件移到不同的项目中。  
   
 ## <a name="Merging"></a> 合并模型文件和关系图中的更改  
  在多个用户并发使用一个模型之后， [!INCLUDE[esprscc](../includes/esprscc-md.md)] 将提示合并模型文件中的更改。 按照前面几节中所述内容来处理单独项目将避免大部分合并。 通常，可自动安全合并剩余冲突。 以下类型的更改不会导致困难：  

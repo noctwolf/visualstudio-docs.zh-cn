@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 564ac5591595c62f1e5770176a383413b2e755bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002104"
 ---
 # <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>演练：自定义的域特定语言定义
 此内容已过时。 请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。

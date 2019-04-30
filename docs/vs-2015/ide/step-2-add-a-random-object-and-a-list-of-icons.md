@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442633"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步骤 2：添加 Random 对象和图标列表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60073002"
 IntelliSense 窗口  
   
     > [!NOTE]
-    >  “IntelliSense”窗口仅在你手动输入代码时显示。 如果你复制和粘贴代码，则不显示。  
+    > “IntelliSense”窗口仅在你手动输入代码时显示。 如果你复制和粘贴代码，则不显示。  
   
      如果你分小段查看代码（和备注），理解起来会更容易。 你的程序可以使用 `List` 对象跟踪多个不同类型的项目。 列表可以包含数字、true/false 值、文本或其他对象。 你甚至可以有一个包含其他 `List` 对象的 `List` 对象。 列表中的项目称为“元素”，每个列表只包含一种元素。 所以数字列表只包含数字，你不能向该列表中添加文本。 同样，你也不能向 true/false 值列表中添加数字。  
   
@@ -51,7 +51,7 @@ IntelliSense 窗口
      当你将集合初始值设定项与 `new` 语句一同使用时，在创建新的 `List` 对象后，程序将使用你在大括号内提供的数据填充它。 在本例中，会获取名为“图标”的字符串列表，该列表会初始化以包含十六个字符串。 其中每个字符串都是单个字母，它们都对应于将在标签中出现的图标。 因此，该游戏将包含一对感叹号、一对大写的 N 字母、一对逗号等。 （这些字符设置为 Webdings 字体时，将显示为符号，例如公交车、自行车、蜘蛛等。）`List` 对象将总共包含十六个字符串，每个字符串对应于 TableLayoutPanel 面板中的一个单元格。  
   
     > [!NOTE]
-    >  在 Visual Basic 中，可以获得相同的结果，但是字符串首先放入临时数组中，该数组然后转换为 `List` 对象。 数组类似于列表，但也有不同之处，例如数组在创建时具有固定大小。 列表可以根据需要收缩或增长，这在此程序中非常重要。  
+    > 在 Visual Basic 中，可以获得相同的结果，但是字符串首先放入临时数组中，该数组然后转换为 `List` 对象。 数组类似于列表，但也有不同之处，例如数组在创建时具有固定大小。 列表可以根据需要收缩或增长，这在此程序中非常重要。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   

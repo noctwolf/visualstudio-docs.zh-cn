@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0774477ac200ca7c810cf4a7e5925c137b292c85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d36a934fe9475613e916d51290ac6f8960a6b42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399291"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 此函数可检索一个标志，指示是否可以作为堆栈缓冲区检查的一部分实现没有堆栈排序 ([/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)编译器选项)。
@@ -39,11 +39,11 @@ HRESULT get_noStackOrdering(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v8.0|

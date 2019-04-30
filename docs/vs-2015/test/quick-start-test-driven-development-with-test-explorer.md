@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446198"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ ms.locfileid: "60108979"
    **调试测试：** 请打开一个或多个测试的快捷菜单，然后选择“调试选定的测试”。  
   
 > [!IMPORTANT]
->  显示的结果是最近运行的测试结果。 彩色的结果栏仅显示曾经运行的测试的结果。 例如，你运行过多个测试，其中部分失败，然后仅运行了成功的测试，则结果栏将完全显示绿色。  
+> 显示的结果是最近运行的测试结果。 彩色的结果栏仅显示曾经运行的测试的结果。 例如，你运行过多个测试，其中部分失败，然后仅运行了成功的测试，则结果栏将完全显示绿色。  
   
 > [!NOTE]
->  如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关详细信息，请参阅[使用不同的测试框架](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
+> 如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关详细信息，请参阅[使用不同的测试框架](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
   
 ## <a name="walkthrough"></a> 演练：使用单元测试开发方法  
  本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关详细信息，请参阅[Usa 不同测试框架](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework)。  
@@ -152,7 +152,7 @@ ms.locfileid: "60108979"
 1. 若要提高代码在所有情况下均正常运行的概率，请添加扩大输入值范围的测试。  
   
     > [!TIP]
-    >  避免修改已通过的现有测试。 相反，请添加新测试。 仅当用户需求变化时更改现有测试。 此策略有助于确保在扩展代码时不丢失现有功能。  
+    > 避免修改已通过的现有测试。 相反，请添加新测试。 仅当用户需求变化时更改现有测试。 此策略有助于确保在扩展代码时不丢失现有功能。  
   
      在测试类中，添加以下测试，其中涉及到一系列输入值：  
   
@@ -257,7 +257,7 @@ ms.locfileid: "60108979"
 1. 简化代码，但不要更改测试。  
   
     > [!TIP]
-    >   重构是旨在提高代码性能或易理解性的更改。 其目的不在于更改代码的行为，因此不更改测试。  
+    >  重构是旨在提高代码性能或易理解性的更改。 其目的不在于更改代码的行为，因此不更改测试。  
     >   
     >  我们建议你分开进行功能扩展和重构步骤。 保持测试不变，就能有信心在重构时不意外引入 bug。  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258203c8f78a009e398468857cd090c916c15885
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bdd4ed102718a1c81be55c848a2d3c891c0ba99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400848"
 ---
 # <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
 检索符号类型分类器。
@@ -39,7 +39,7 @@ HRESULT get_symTag ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="example"></a>示例
 

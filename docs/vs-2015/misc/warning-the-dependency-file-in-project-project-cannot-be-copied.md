@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934435"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告： 依赖项&#39;文件&#39;项目中&#39;项目&#39;不能将复制到运行目录，因为它将覆盖引用&#39;文件。&#39;
 依赖项之间有冲突；为使应用程序运行，应将多个具有相同名称的不同程序集文件复制到 bin 目录中。 由于其中一个依赖项是主引用，因此运行目录能够解决该冲突。  

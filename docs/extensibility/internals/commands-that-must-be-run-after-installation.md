@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418715"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果您将通过你扩展部署 *.msi*文件中，您必须运行**devenv /setup**作为您的安装顺序 for Visual Studio 以发现你的扩展的一部分。
 
 > [!NOTE]
->  本主题中的信息适用于查找*devenv.exe*使用 Visual Studio 2008 及更早版本。 有关如何发现*devenv.exe*更高版本的 Visual Studio，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。
+> 本主题中的信息适用于查找*devenv.exe*使用 Visual Studio 2008 及更早版本。 有关如何发现*devenv.exe*更高版本的 Visual Studio，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。
 
 ## <a name="find-devenvexe"></a>查找 devenv.exe
  您可以找到每个版本*devenv.exe*从注册表值[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]编写安装程序，使用 RegLocator 表和 AppSearch 表作为属性存储的注册表值。 有关详细信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator 表行，以查找来自不同版本的 Visual Studio 的 devenv.exe
 
-|签名|根|键|name|类型|
+|签名|根|键|名称|类型|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -58,7 +58,7 @@ ms.locfileid: "56631388"
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>若要运行 devenv.exe 的 CustomAction 表行
 
-|操作|类型|源|目标|
+|操作|类型|Source|Target|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -68,7 +68,7 @@ ms.locfileid: "56631388"
  到 InstallExecuteSequence 表进行的安装过程的执行计划，必须编写自定义操作。 使用条件列的每一行中的相应属性以防止从正在运行，如果自定义操作的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]系统上未安装。
 
 > [!NOTE]
->  Null 值的属性的计算结果为`False`在条件中使用时。
+> Null 值的属性的计算结果为`False`在条件中使用时。
 
  每个自定义操作序列列的值取决于你的 Windows 安装程序包中的其他序列值。 序列值应该是这样*devenv.exe*自定义操作以运行尽可能接近之前 InstallFinalize 标准操作。
 

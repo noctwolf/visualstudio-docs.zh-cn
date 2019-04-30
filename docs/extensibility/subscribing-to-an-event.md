@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432338"
 ---
 # <a name="subscribing-to-an-event"></a>订阅事件
 此演练说明了如何创建一个工具窗口，运行文档表 (RDT) 中的事件做出响应。 工具窗口承载实现的用户控件<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法连接到事件接口。

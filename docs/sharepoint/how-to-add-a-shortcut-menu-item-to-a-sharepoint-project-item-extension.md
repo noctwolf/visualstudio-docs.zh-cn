@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 168e881191843d63f515d5066ec451848319d22e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967150"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>如何：将快捷菜单项添加到 SharePoint 项目项扩展
   通过使用项目项扩展，可以将快捷菜单项添加到现有 SharePoint 项目项。 用户右键单击中的项目项时出现的菜单项**解决方案资源管理器**。

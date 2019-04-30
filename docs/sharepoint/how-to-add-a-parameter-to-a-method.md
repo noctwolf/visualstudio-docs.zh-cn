@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967229"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：将参数添加到方法
   若要将信息传递到方法或从方法返回的信息，请使用参数。 所有方法必须都具有至少一个参数。 有关如何设计用于支持你想要创建的方法的类型的参数的详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。

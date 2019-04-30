@@ -1,5 +1,5 @@
 ---
-title: '&lt;说明&gt;元素 （ClickOnce 部署） |Microsoft Docs'
+title: "&lt;description&gt;要素 (ClickOnce 配置) |Microsoft Docs'"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c359b188894c40f017e3d2a0e06d52de87e9c5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928801"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;说明&gt;元素 （ClickOnce 部署）
 标识用于创建 shell 表示应用程序信息和一个**添加或删除程序**控制面板中的项。
@@ -41,7 +41,7 @@ ms.locfileid: "56618557"
 ## <a name="elements-and-attributes"></a>元素和属性
  `description` 元素是必需的，它位于 `urn:schemas-microsoft-com:asm.v1` 命名空间中。 它不包含任何子元素，并具有以下属性。
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`publisher`|必需。 标识用于在 Windows 中的图标位置的公司名称**启动**菜单并**添加或删除程序**控件面板中的部署配置进行安装时的项。|
 |`product`|必需。 标识完整的产品名称。 使用作为安装在 Windows 中的图标的头衔**启动**菜单。|

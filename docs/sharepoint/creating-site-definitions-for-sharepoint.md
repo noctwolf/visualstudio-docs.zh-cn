@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580964"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>创建 SharePoint 站点定义
   中的 SharePoint 站点定义项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，可以创建*网站定义*，它可作为新的 SharePoint 站点的基础。 这些定义不仅确定的外观和行为的 SharePoint 站点，但还自己的默认内容和功能。 在定义中，您可以放入预配置的列表、 内容类型、 事件接收器、 图像和其他项。 例如 SharePoint 包含某些网站定义（如 BLOG）。 当创建了基于博客站点定义的网站时，站点将包含列表、 Web 部件和博客网站所需的其他项。

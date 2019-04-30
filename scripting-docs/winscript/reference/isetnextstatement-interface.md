@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786303"
 ---
 # <a name="isetnextstatement-interface"></a>ISetNextStatement 接口
 此接口由解释器以允许进程调试管理器更新当前语句实现。 从堆栈帧对象中，实现并 PDM 获取此接口通过 QueryInterface。  

@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441577"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定通过 ClickOnce 发布的文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ ms.locfileid: "60046950"
 4. 在中**应用程序文件**对话框中，选择**组**字段中为你想要包括在新组中的文件。  
   
     > [!NOTE]
-    >  文件必须具有**生成操作**属性设置为**内容**文件名称将显示在之前**应用程序文件**对话框。  
+    > 文件必须具有**生成操作**属性设置为**内容**文件名称将显示在之前**应用程序文件**对话框。  
   
 5. 在中**下载组**字段中，选择**\<新建...>** 从下拉列表。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "60046950"
 5. 在中**下载组**字段中，从下拉列表中选择一个组。  
   
     > [!NOTE]
-    >  不能更改**下载组**文件所需的应用程序运行。  
+    > 不能更改**下载组**文件所需的应用程序运行。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
