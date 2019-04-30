@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436644"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在旧版语言服务中重新格式化代码
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58930756"
 在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]源代码可以重新设置格式的规范化使用缩进和空格。 这可能包括插入或删除空间或在每个行开头的选项卡、 添加新行之间的行，或用制表符或空格与制表符替换空格。  
   
 > [!NOTE]
->  **请注意**插入或删除换行字符可能会影响标记，如断点和书签，但添加或删除空格或选项卡不会影响标记。  
+> **请注意**插入或删除换行字符可能会影响标记，如断点和书签，但添加或删除空格或选项卡不会影响标记。  
   
  用户可以通过选择启动重新格式化操作**选定内容的格式**或**格式的文档**从**高级**菜单上的**编辑**菜单。 插入代码段或特定字符时，也会触发重新格式化操作。 例如，当在 C# 中键入右大括号，匹配的左大括号和右大括号之间的所有内容会自动缩进到适当的级别。  
   

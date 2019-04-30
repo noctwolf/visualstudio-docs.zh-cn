@@ -12,12 +12,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a1fb236a4ce3b88f97dd94867b8ff5b7403db328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437915"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>旧版语言服务中的成员完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ IntelliSense 成员完成是工具提示显示特定的作用域，如类、 结
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[扩展编辑器和语言服务](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="how-it-works"></a>其工作原理  
  以下是中的成员列表中均显示使用 MPF 类的两种方法：  
@@ -38,7 +38,7 @@ IntelliSense 成员完成是工具提示显示特定的作用域，如类、 结
   
 - <xref:Microsoft.VisualStudio.Package.IScanner>扫描程序检测到的成员完成字符和设置的令牌触发器<xref:Microsoft.VisualStudio.Package.TokenTriggers>，该字符。  
   
-  成员完成字符表示的类、 结构或枚举成员遵循。 例如，在 C# 或 Visual Basic 中的成员完成字符是`.`，而 c + + 中的字符是任一`.`或`->`。 触发器值的成员选择字符扫描时设置。  
+  成员完成字符表示的类、 结构或枚举成员遵循。 例如，在C#或 Visual Basic 的成员完成字符`.`，在C++字符可以是`.`或`->`。 触发器值的成员选择字符扫描时设置。  
   
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 成员 List 命令  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令启动对的调用<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法<xref:Microsoft.VisualStudio.Package.Source>类和<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，都依次调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法分析器分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。  

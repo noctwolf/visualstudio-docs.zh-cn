@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433298"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -238,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  与复制、粘贴、创建和删除对象有关的 DSL 行为的许多方面都由耦合到关系图的 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 的实例控制。 通过从 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 中派生自己的类并重写关系图类的 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 属性，可修改 DSL 的行为。  
   
 > [!TIP]
->  通过使用程序代码自定义模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
+> 通过使用程序代码自定义模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
  ![复制操作的顺序关系图](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408434"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60054542"
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
 > [!NOTE]
->  你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>生成、重新生成或清理整个解决方案
 
@@ -47,7 +47,7 @@ ms.locfileid: "60054542"
     - 选择“生成”或“生成解决方案”，仅编译自最近生成以来更改过的项目文件和组件。
 
         > [!NOTE]
-        >  当解决方案包括多个项目时，“生成”命令将变成“生成解决方案”。
+        > 当解决方案包括多个项目时，“生成”命令将变成“生成解决方案”。
 
     - 选择“重新生成解决方案”清理解决方案，然后创建所有项目文件和组件。
 

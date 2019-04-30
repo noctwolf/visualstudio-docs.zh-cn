@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429213"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>如何：自定义 SharePoint 功能
   可以创建并通过使用 Visual Studio 中的功能设计器自定义 SharePoint 功能。 例如，可以设置功能作用域，并作为依赖项添加其他功能。 默认情况下，当在解决方案资源管理器或 SharePoint 包资源管理器中添加一项新功能时打开功能设计器。
@@ -49,7 +49,7 @@ ms.locfileid: "60067256"
 2. 展开功能，展开 FeatureName、 展开 FeatureName.feature，并打开*\<功能名 >。Template.xml*文件。
 
     > [!NOTE]
-    >  当打开功能模板清单 XML 文件时，自动验证这些文件，可以忽略在错误列表窗口中显示的警告。
+    > 当打开功能模板清单 XML 文件时，自动验证这些文件，可以忽略在错误列表窗口中显示的警告。
 
 ## <a name="change-the-manifest-template"></a>更改清单模板
  你可以在 Visual Studio XML 编辑器或清单模板窗格中的功能清单文件的 XML 代码。 对 XML 代码的任何更改都将合并到打包的清单文件的功能。 例如，你可能想要更改自定义功能属性与清单模板。
@@ -70,7 +70,7 @@ ms.locfileid: "60067256"
  可以禁用功能设计器，并创建*feature.xml*手动文件。 第一次执行此过程中，功能设计器中的当前设置保存到功能模板 XML 文件。 然后，可以修改或覆盖的 XML 代码。
 
 > [!NOTE]
->  如果添加或删除 SharePoint 项目项 XML 文件中的功能设计器禁用时，不会打包到这些项目项。
+> 如果添加或删除 SharePoint 项目项 XML 文件中的功能设计器禁用时，不会打包到这些项目项。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>若要通过禁用设计器覆盖打包的清单文件
 

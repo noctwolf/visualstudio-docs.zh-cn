@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440596"
 ---
 # <a name="how-to-set-permissions"></a>如何：设置权限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60114559"
   如果管理员为用户组的成员授予对分析工具的软件驱动程序的访问权限，则他们就可以运行分析工具。 最后一个过程“授予对分析驱动程序的访问权限”描述如何授予对该驱动程序的访问权限。  
   
 > [!NOTE]
->  需要管理员权限才能执行这些过程中的步骤。  
+> 需要管理员权限才能执行这些过程中的步骤。  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>创建拥有用户权限的用户帐户  
   

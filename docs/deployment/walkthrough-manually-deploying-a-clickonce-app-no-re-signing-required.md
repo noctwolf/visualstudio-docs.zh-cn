@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405842"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>演练：手动部署 ClickOnce 应用程序不需要重新签名并且保留署名信息
 当你创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序并将它提供给客户进行发布和部署信息，通常客户必须更新部署清单并对其进行重新签名。 .NET Framework 3.5 时，仍是在大多数情况下的首选的方法，使您能够创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以由其客户部署而无需重新生成新的部署清单的部署。 有关详细信息，请参阅[无需重新签名的测试和生产服务器部署 ClickOnce 应用程序](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "60076219"
  当你创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，然后为其提供给客户进行发布和部署，请在应用程序可以使用客户的署名，也可以保留你的品牌。 例如，如果应用程序是一个单一的专有应用程序，你可能想要保留你的品牌。 如果应用程序高度自定义每个客户，可能想要使用客户的品牌。 .NET Framework 3.5，您可以保留你的品牌、 发布服务器信息和安全签名时，显示组织的应用程序部署。 有关详细信息，请参阅[创建 ClickOnce 应用程序以供他人部署](../deployment/creating-clickonce-applications-for-others-to-deploy.md)。
 
 > [!NOTE]
->  在本演练中你创建部署手动使用命令行工具*Mage.exe*或图形工具*MageUI.exe*。 有关手动部署的详细信息，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+> 在本演练中你创建部署手动使用命令行工具*Mage.exe*或图形工具*MageUI.exe*。 有关手动部署的详细信息，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
 
 ## <a name="prerequisites"></a>系统必备
  若要执行本演练中的步骤需要具备以下：
@@ -51,7 +51,7 @@ ms.locfileid: "60076219"
 2. 创建一个名为你的部署的当前版本。 如果这是首次部署应用程序，可能会选择**1.0.0.0**。
 
    > [!NOTE]
-   >  你的部署的版本可能不同于你的应用程序文件的版本。
+   > 你的部署的版本可能不同于你的应用程序文件的版本。
 
 3. 创建一个名为子目录**bin**并将所有应用程序文件，包括可执行文件、 程序集、 资源和数据文件复制。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60076219"
 3. 创建你的部署的当前版本命名的子目录。 如果这是首次部署应用程序，可能会选择**1.0.0.0**。
 
    > [!NOTE]
-   >  你的部署的版本可能不同于你的应用程序文件的版本。
+   > 你的部署的版本可能不同于你的应用程序文件的版本。
 
 4. 移动\\ **bin**目录到在步骤 2 中创建的目录。
 

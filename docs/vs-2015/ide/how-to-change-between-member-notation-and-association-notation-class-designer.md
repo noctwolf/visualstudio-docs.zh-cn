@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 864edc3666164ac05d8155fd001d83c5bf515a6d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c0e691cd162a52dc598f9d3dc4d9a04e0f8f008
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439292"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>如何：在成员表示法与关联表示法之间转换（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60093288"
 在“类设计器”中，可以更改类图表示两种类型（从成员表示法到关联表示法）之间的关联关系的方式，反之亦然。 通常，显示为关联行的成员可提供类型关联方式的有用可视化。  
   
 > [!NOTE]
->  关联关系可以表示为成员属性或字段。 若要将成员表示法更改为关联表示法，其中一种类型必须具有另一种类型的成员。 若要将关联表示法更改为成员表示法，则必须通过关联行连接这两种类型。 有关详细信息，请参阅[如何：创建类型 （类设计器） 之间的关联](../ide/how-to-create-associations-between-types-class-designer.md)。 如果项目包含多个类图，则更改某个类图显示关联关系的方式仅会影响该类图。 若要更改另一个类图显示关联关系的方式，请打开或显示该类图并执行以下步骤。  
+> 关联关系可以表示为成员属性或字段。 若要将成员表示法更改为关联表示法，其中一种类型必须具有另一种类型的成员。 若要将关联表示法更改为成员表示法，则必须通过关联行连接这两种类型。 有关详细信息，请参阅[如何：创建类型 （类设计器） 之间的关联](../ide/how-to-create-associations-between-types-class-designer.md)。 如果项目包含多个类图，则更改某个类图显示关联关系的方式仅会影响该类图。 若要更改另一个类图显示关联关系的方式，请打开或显示该类图并执行以下步骤。  
   
 ### <a name="to-change-member-notation-to-association-notation"></a>将成员表示法更改为关联表示法  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60093288"
 2. 在类图上的类型形状中，右键单击表示此关联的成员属性或字段，然后选择“显示为关联”。  
   
     > [!TIP]
-    >  如果在类型形状中没有看到属性或字段，则形状中的隔离舱处于折叠状态。 若要展开类型形状，请双击隔离舱名称或右键单击类型形状，然后选择“展开”。  
+    > 如果在类型形状中没有看到属性或字段，则形状中的隔离舱处于折叠状态。 若要展开类型形状，请双击隔离舱名称或右键单击类型形状，然后选择“展开”。  
   
      成员将从类型形状的隔离舱中消失，并将出现连接这两种类型的关联行。 关联行标有属性或字段的名称。  
   

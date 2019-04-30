@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436407"
 ---
 # <a name="getting-a-port"></a>获取端口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58936971"
  此代码片段演示了如何使用提供给的端口[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)注册中的程序节点[ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)。 为清楚起见，省略了此概念与不是直接相关的参数。  
   
 > [!NOTE]
->  此示例中使用端口来启动和恢复过程，并假定[IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)接口实现的端口上。 这不是唯一的方法来执行这些任务，并且还有可能，端口可能不甚至会涉及到以外的程序的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)提供给它。  
+> 此示例中使用端口来启动和恢复过程，并假定[IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)接口实现的端口上。 这不是唯一的方法来执行这些任务，并且还有可能，端口可能不甚至会涉及到以外的程序的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)提供给它。  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

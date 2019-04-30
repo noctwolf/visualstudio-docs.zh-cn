@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424579"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：查看现有类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60046489"
 2. 从解决方案资源管理器中的项目中，将源代码文件拖动到类图中。  
   
    > [!WARNING]
-   >  如果你的解决方案有共享跨多个应用的代码的项目，则可以仅从以下源将文件或代码拖动到类图：  
+   > 如果你的解决方案有共享跨多个应用的代码的项目，则可以仅从以下源将文件或代码拖动到类图：  
    > 
    > - 包含图的应用项目  
    >   - 应用项目导入的共享项目  
@@ -50,12 +50,12 @@ ms.locfileid: "60046489"
    你还可以将一个或多个类型从类视图中的项目节点拖动到类图中，来查看项目中的类型。  
   
 > [!TIP]
->  如果类视图尚未打开，则从“视图”菜单打开类视图。 有关类视图的详细信息，请参阅[查看类及其成员](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
+> 如果类视图尚未打开，则从“视图”菜单打开类视图。 有关类视图的详细信息，请参阅[查看类及其成员](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  
   
  若要在关系图上的默认位置显示类型，请在类视图中选择一个或多个类型，右击选择的类型，再选择“查看类图”。  
   
 > [!NOTE]
->  如果某个已关闭的类图包含项目中业已存在的类型，则类图会打开以显示该类型形状。 但是，如果没有任何类图包含项目中已存在的类型，则类设计器将在项目内创建一个新的类图，并打开该关系图以显示该类型。  
+> 如果某个已关闭的类图包含项目中业已存在的类型，则类图会打开以显示该类型形状。 但是，如果没有任何类图包含项目中已存在的类型，则类设计器将在项目内创建一个新的类图，并打开该关系图以显示该类型。  
   
  第一次在关系图上显示一个类型时，在默认情况下，其形状以折叠方式显示。 你可以展开该形状以查看其内容。  
   

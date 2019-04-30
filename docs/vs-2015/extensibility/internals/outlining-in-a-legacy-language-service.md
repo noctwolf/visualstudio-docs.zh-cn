@@ -12,12 +12,12 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408562"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58932876"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练：大纲显示](../../extensibility/walkthrough-outlining.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="enabling-support-for-outlining"></a>启用支持用于大纲显示  
  `AutoOutlining`注册表项设置为 1 以启用自动大纲显示。 自动大纲显示设置了整个源的分析，加载或更改，以确定的隐藏的区域并显示大纲显示标志符号文件时。 大纲显示也能受手动用户。  

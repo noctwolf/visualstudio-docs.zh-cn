@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406739"
 ---
 # <a name="secure-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序受 .NET Framework 中代码访问安全性约束的限制，以帮助限制代码访问受保护的资源和操作的权限。 因此，了解代码访问安全性的含义以相应地编写 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是十分重要的。 您的应用程序可以使用完全信任或使用部分区域（如 Internet 区域和 Intranet 区域）来限制访问权限。
@@ -71,7 +71,7 @@ ms.locfileid: "58866781"
  在未检查参数以确保参数安全的情况下，决不要将通过查询字符串检索的参数传递给数据库或命令行。 不安全参数是包含数据库或命令行转义符的参数，这些转义符可以让恶意用户操纵应用程序执行任意命令。
 
 > [!NOTE]
->  查询字符串参数是在启动时向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递参数的唯一途径。 不能从命令行向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递参数。
+> 查询字符串参数是在启动时向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递参数的唯一途径。 不能从命令行向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递参数。
 
 ## <a name="deploying-obfuscated-assemblies"></a>部署经过模糊处理的程序集
  Visual Studio 包括免费的 [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md)，使用它，可以通过代码混淆和主动保护措施来保护 ClickOnce 应用程序。  有关详细信息，请参阅 [Dotfuscator Community 用户指南的 ClickOnce 部分](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html)。

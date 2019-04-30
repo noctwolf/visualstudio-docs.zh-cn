@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438889"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
 本主题介绍如何使用**规则集编辑器**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -26,12 +26,12 @@ ms.locfileid: "58937082"
  **规则集编辑器**对话框用于创建和修改[PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)规则集，这些规则将序列化为.rules 文件。  
   
 > [!NOTE]
->  如果你想要打开.rules 文件**带编码的 XML 编辑器**，必须先关闭工作流或活动的关联设计器窗口。  
+> 如果你想要打开.rules 文件**带编码的 XML 编辑器**，必须先关闭工作流或活动的关联设计器窗口。  
   
  有关如何访问信息**规则集编辑器**对话框中，请参阅[如何：创建 PolicyActivity 规则集 （旧版）](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)。  
   
 > [!WARNING]
->  用于面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 的旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 的规则编辑器不支持多目标。  
+> 用于面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 的旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 的规则编辑器不支持多目标。  
   
  下表介绍的用户界面 (UI) 元素**规则集编辑器**对话框。  
   

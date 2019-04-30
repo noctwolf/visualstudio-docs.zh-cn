@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408366"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 本演练演示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具是一个基本示例，将演示如何创建更加适合您项目的其他数据类型的可视化工具。
@@ -56,7 +56,7 @@ ms.locfileid: "60050884"
 2. 将名称从 Class1.vb 更改为有意义的名称，例如 DebuggerSide.vb。
 
    > [!NOTE]
-   >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会自动更改 DebuggerSide.vb 中的类声明，以便与新文件名匹配。
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会自动更改 DebuggerSide.vb 中的类声明，以便与新文件名匹配。
 
 3. 在“解决方案资源管理器”中，右键单击“My First Visualizer”，然后在快捷菜单上单击“添加引用”。
 

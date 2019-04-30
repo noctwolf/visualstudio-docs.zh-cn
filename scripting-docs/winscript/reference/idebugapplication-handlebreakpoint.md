@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b05288a8863b2c555493d4a3f7ea8e2b7537d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412382"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 导致当前线程被阻塞，并将断点的通知发送到调试器 IDE。  
@@ -54,7 +54,7 @@ HRESULT HandleBreakPoint(
  语言引擎遇到断点的线程的上下文中调用此方法。 此方法阻止当前线程，并将断点通知发送到调试器 IDE。 当调试器继续应用程序，`pbra`参数指定要执行的操作。  
   
 > [!NOTE]
->  语言引擎不调用由线程执行任务，例如枚举堆栈帧中，或者在该断点的表达式进行计算。  
+> 语言引擎不调用由线程执行任务，例如枚举堆栈帧中，或者在该断点的表达式进行计算。  
   
  此方法将导致`IApplicationDebugger::onHandleBreakPoint`调用。  
   

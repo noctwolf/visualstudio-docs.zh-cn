@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3780558efae860ca54739a139bdffd04494a73b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411366"
 ---
 # <a name="attach-to-the-program"></a>附加到程序
 与相应的端口注册您的程序后，必须将调试器附加到你想要调试的程序。
@@ -50,12 +50,12 @@ ms.locfileid: "60045222"
      这将返回`GUID`用于标识程序。 `GUID`必须存储在该对象表示本地编程为 DE，且必须返回何时`IDebugProgram2::GetProgramId`上调用方法`IDebugProgram2`接口。
 
     > [!NOTE]
-    >  如果你实现了`IDebugProgramNodeAttach2`接口，该程序的`GUID`传递给`IDebugProgramNodeAttach2::OnAttach`方法。 这`GUID`用于控制程序`GUID`返回的`IDebugProgram2::GetProgramId`方法。
+    > 如果你实现了`IDebugProgramNodeAttach2`接口，该程序的`GUID`传递给`IDebugProgramNodeAttach2::OnAttach`方法。 这`GUID`用于控制程序`GUID`返回的`IDebugProgram2::GetProgramId`方法。
 
 3. 发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件对象，以通知 SDM 的本地`IDebugProgram2`创建对象时用于表示 DE 程序。 有关详细信息，请参阅[发送事件](../../extensibility/debugger/sending-events.md)。
 
     > [!NOTE]
-    >  这是不相同`IDebugProgram2`对象传递到`IDebugEngine2::Attach`方法。 以前已通过`IDebugProgram2`对象被端口仅识别，是一个单独的对象。
+    > 这是不相同`IDebugProgram2`对象传递到`IDebugEngine2::Attach`方法。 以前已通过`IDebugProgram2`对象被端口仅识别，是一个单独的对象。
 
 ## <a name="see-also"></a>请参阅
 - [基于启动的附件](../../extensibility/debugger/launch-based-attachment.md)

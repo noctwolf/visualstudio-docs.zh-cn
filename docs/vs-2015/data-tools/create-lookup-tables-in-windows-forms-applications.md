@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431173"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60102973"
 2. 展开中的节点**数据源**窗口，直到您所见的父表和所有列，以及相关的子表和所有它的列。  
   
     > [!NOTE]
-    >  子表节点是显示为父表中可展开子节点的节点。  
+    > 子表节点是显示为父表中可展开子节点的节点。  
   
 3. 更改到子表的拖放类型**详细信息**通过选择**详细信息**从子表节点上的控件列表。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422080"
 ---
 # <a name="debug-a-webview-control"></a>调试 WebView 控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60065462"
 4. （可选）对于非 Express 版本的 Visual Studio，禁用实时 (JIT) 调试通过选择**工具**，**选项**，**调试**，**中实时**，然后禁用 JIT 调试脚本和。  
   
     > [!NOTE]
-    >  对于某些网页上发生的无法处理的异常，你可以通过禁用 JIT 调试来隐藏对话框。 在 Visual Studio Express 中，JIT 调试始终处于禁用状态。  
+    > 对于某些网页上发生的无法处理的异常，你可以通过禁用 JIT 调试来隐藏对话框。 在 Visual Studio Express 中，JIT 调试始终处于禁用状态。  
   
 5. 按 F5 开始调试。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "60065462"
      ![面向 JavaScript 控制台窗口中的选择](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  通过使用控制台，可以与单个 `WebView`、`iFrame` 交互，每次还可以共享协定或 Web Worker。 每个元素都需要单独的 Web 平台主机 (WWAHost.exe) 的实例。 一次可与一个主机交互。  
+    > 通过使用控制台，可以与单个 `WebView`、`iFrame` 交互，每次还可以共享协定或 Web Worker。 每个元素都需要单独的 Web 平台主机 (WWAHost.exe) 的实例。 一次可与一个主机交互。  
   
 6. 查看和修改应用程序中的变量或使用控制台命令，如中所述[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[JavaScript 控制台命令](../debugger/javascript-console-commands.md)。  
   

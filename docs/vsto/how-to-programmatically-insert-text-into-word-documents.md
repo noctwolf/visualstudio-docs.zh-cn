@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412577"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式向 Word 文档中插入文本
   向 Microsoft Office Word 文档中插入文本主要有三种方式：
@@ -33,7 +33,7 @@ ms.locfileid: "60060626"
 - 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Selection> 方法在光标或所选位置处插入文本。
 
 > [!NOTE]
->  你还可以将文本插入到内容控件和书签中。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)并[Bookmark 控件](../vsto/bookmark-control.md)。
+> 你还可以将文本插入到内容控件和书签中。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)并[Bookmark 控件](../vsto/bookmark-control.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

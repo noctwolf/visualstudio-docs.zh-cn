@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9949a72abc46f2212fe448e193a06cce90b6df7c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438975"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：禁止对生成的代码显示代码分析警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60057576"
  **禁止显示生成代码的结果**项目的代码分析属性页上的复选框使您可选择是否想要查看从第三方工具生成的代码的代码分析警告。  
   
 > [!NOTE]
->  此选项不会取消代码分析错误和生成的代码时的错误和警告出现在窗体和模板。 可以查看和维护窗体或模板的源代码。  
+> 此选项不会取消代码分析错误和生成的代码时的错误和警告出现在窗体和模板。 可以查看和维护窗体或模板的源代码。  
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>若要禁止显示项目中生成代码的警告  
   

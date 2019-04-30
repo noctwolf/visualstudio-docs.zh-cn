@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406944"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>通过使用线程窗口在 Visual Studio 调试器中查看的主题 (C#，Visual Basic 中， C++)
 在中**线程**窗口中，您可以检查和使用的线程中进行调试的应用程序。 有关如何使用的分步指导**线程**窗口中，请参阅[演练：使用线程窗口调试](../debugger/how-to-use-the-threads-window.md)。
@@ -85,7 +85,7 @@ ms.locfileid: "60107757"
  在托管代码中，当冻结或解冻线程时，将更改挂起项计数。 如果在托管代码中冻结线程，其挂起项计数为 1。 当本机代码中冻结线程时，其挂起项计数为 0，除非使用`SuspendThread`调用。
 
 > [!NOTE]
->  在调试本机代码对托管代码的调用时，托管代码与调用它的本机代码在同一个物理线程中运行。 挂起或冻结本机线程也会冻结托管代码。
+> 在调试本机代码对托管代码的调用时，托管代码与调用它的本机代码在同一个物理线程中运行。 挂起或冻结本机线程也会冻结托管代码。
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>冻结或解冻线程的执行
 

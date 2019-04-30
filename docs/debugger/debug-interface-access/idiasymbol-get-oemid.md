@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc6cd3e7948b88169489cf4f4c73d1e8fcc7d73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399251"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 检索符号的原始设备制造商 (OEM) ID 值。
@@ -39,7 +39,7 @@ HRESULT get_oemId ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="remarks"></a>备注
  此属性仅适用于包含符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)类型的`SymTagCustomType`。

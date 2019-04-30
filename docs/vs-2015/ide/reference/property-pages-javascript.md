@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436877"
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "59661901"
  使用以下选项来设置项目的常规属性。  
   
 > [!NOTE]
->  某些选项仅在 Windows 应用商店应用程序中可用。  
+> 某些选项仅在 Windows 应用商店应用程序中可用。  
   
  输出路径  
  指定项目的配置的输出文件的位置。 该路径是相对；如果输入绝对路径，绝对路径会保存在项目中。 默认路径为 bin\Debug。  
@@ -62,7 +62,7 @@ ms.locfileid: "59661901"
  使用以下选项来设置项目中调试行为的属性。  
   
 > [!NOTE]
->  某些选项仅在 Windows 应用商店应用程序中可用。  
+> 某些选项仅在 Windows 应用商店应用程序中可用。  
   
  要启动的调试器  
  指定调试器的默认主机。  

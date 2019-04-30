@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428776"
 ---
 # <a name="support-for-user-settings"></a>支持用户设置
 VSPackage 可以定义一个或多个设置类别，是一组保留在用户选择时的状态变量**导入/导出设置**命令**工具**菜单。 若要启用此持久性，您使用的设置 Api 中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
@@ -34,7 +34,7 @@ VSPackage 可以定义一个或多个设置类别，是一组保留在用户选�
  在以下位置的注册表条目中创建自定义设置点：HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支持的自定义设置点的名称并*\<版本 >* 是版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。
 
 > [!NOTE]
->  根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 是初始化。 有关详细信息，请参阅[命令行开关](../../extensibility/command-line-switches-visual-studio-sdk.md)。
+> 根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 是初始化。 有关详细信息，请参阅[命令行开关](../../extensibility/command-line-switches-visual-studio-sdk.md)。
 
  注册表项的结构如下图所示：
 

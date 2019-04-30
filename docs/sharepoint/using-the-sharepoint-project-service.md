@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007934"
 ---
 # <a name="use-the-sharepoint-project-service"></a>使用 SharePoint 项目服务
   SharePoint 项目系统包括一项可以用于执行项目系统相关任务的项目服务。 该项目服务是一个 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 对象。

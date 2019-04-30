@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438908"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "60049824"
 通过 **VSPerfASPNETCmd** 命令行工具可以轻松地分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，减少了选项、不必设置任何环境变量以及无需重启计算机。 使用 **VSPerfASPNETCmd** 是使用独立探查器进行分析时的首选方法。 有关详细信息，请参阅[如何：安装独立 Profiler](../profiling/how-to-install-the-stand-alone-profiler.md)。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  在某些情况下（如收集并发数据或暂停并恢复分析），使用 **VSPerfCmd** 是首选分析方法。  
   
 > [!NOTE]
->  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机，使用位于 32 位 \Team Tools\Performance Tools 目录中的 VSPerfASPNETCmd 工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+> 分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机，使用位于 32 位 \Team Tools\Performance Tools 目录中的 VSPerfASPNETCmd 工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
 ## <a name="profiling-an-aspnet-application"></a>分析 ASP.NET 应用程序  
  若要分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序中，请输入以下各节所述的命令之一。 网站会启动且探查器会开始收集数据。 执行应用程序，然后关闭浏览器。 若要停止分析，请在命令提示符窗口中按 Enter 键。  
   
 > [!NOTE]
->  默认情况下，在执行 **vsperfaspnetcmd** 命令之后，命令提示符不会返回。 可以使用 **/nowait** 选项强制命令提示符返回。 请参阅[使用 /NoWait 选项](#UsingNoWait)。  
+> 默认情况下，在执行 **vsperfaspnetcmd** 命令之后，命令提示符不会返回。 可以使用 **/nowait** 选项强制命令提示符返回。 请参阅[使用 /NoWait 选项](#UsingNoWait)。  
   
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>使用采样方法收集应用程序统计信息  
  采样是 **VSPerfASPNETCmd** 工具的默认分析方法，不必在命令行上指定。 以下命令行从指定 Web 应用程序收集应用程序统计信息：  
@@ -66,9 +66,9 @@ ms.locfileid: "60049824"
 ## <a name="to-collect-tier-interaction-data"></a>收集层交互数据  
   
 > [!WARNING]
->  可以使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 收集层交互分析 (TIP) 数据。 但是，层交互分析数据只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]中查看。  
+> 可以使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 收集层交互分析 (TIP) 数据。 但是，层交互分析数据只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]中查看。  
 >   
->  若要收集有关 Windows 8 或 Windows Server 2012 的 TIP 数据，必须使用检测 (/trace) 选项。  
+> 若要收集有关 Windows 8 或 Windows Server 2012 的 TIP 数据，必须使用检测 (/trace) 选项。  
   
  随采样数据收集层交互数据：  
   

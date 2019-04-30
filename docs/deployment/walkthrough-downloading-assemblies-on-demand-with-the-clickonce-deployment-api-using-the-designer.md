@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406062"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：下载 ClickOnce 部署 API 使用设计器中使用按需程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -40,7 +40,7 @@ ms.locfileid: "60042505"
 1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中创建新的 Windows 窗体项目。 在“文件”  菜单上，指向“添加” ，然后单击“新建项目” 。 在对话框中选择“类库”  项目，并将它命名为 `ClickOnceLibrary`。
 
    > [!NOTE]
-   >  在 Visual Basic 中，我们建议修改项目属性以将此项目的根命名空间更改为 `Microsoft.Samples.ClickOnceOnDemand` 或更改为所选的命名空间。 为简单起见，此演练中的两个项目处于同一个命名空间中。
+   > 在 Visual Basic 中，我们建议修改项目属性以将此项目的根命名空间更改为 `Microsoft.Samples.ClickOnceOnDemand` 或更改为所选的命名空间。 为简单起见，此演练中的两个项目处于同一个命名空间中。
 
 2. 定义一个名为 `DynamicClass` 的类，它具有名为 `Message`的单个属性。
 
@@ -50,7 +50,7 @@ ms.locfileid: "60042505"
 3. 在“解决方案资源管理器” 中选择 Windows 窗体项目。 添加对 <xref:System.Deployment.Application> 程序集的引用以及对 `ClickOnceLibrary` 项目的项目引用。
 
    > [!NOTE]
-   >  在 Visual Basic 中，我们建议修改项目属性以将此项目的根命名空间更改为 `Microsoft.Samples.ClickOnceOnDemand` 或更改为所选的命名空间。 为简单起见，此演练中的两个项目处于同一个命名空间中。
+   > 在 Visual Basic 中，我们建议修改项目属性以将此项目的根命名空间更改为 `Microsoft.Samples.ClickOnceOnDemand` 或更改为所选的命名空间。 为简单起见，此演练中的两个项目处于同一个命名空间中。
 
 4. 右键单击窗体，在菜单中单击“查看代码”  ，然后将以下引用添加到窗体。
 

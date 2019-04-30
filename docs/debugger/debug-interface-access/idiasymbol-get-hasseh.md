@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf5d6f31d25d72cd6bc71f9d8b17443b3d8fc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401436"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-检索一个标志，指定该函数是否包含任何[结构化异常处理 （C/c + +）](/cpp/cpp/structured-exception-handling-c-cpp) (例如，__try /\__except 块)。
+检索一个标志，指定该函数是否包含任何[结构化异常处理 (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (例如，__try /\__except 块)。
 
 ## <a name="syntax"></a>语法
 
@@ -39,11 +39,11 @@ HRESULT get_hasSEH(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v8.0|

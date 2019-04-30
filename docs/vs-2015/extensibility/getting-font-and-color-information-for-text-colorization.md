@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440120"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>获取字体和颜色信息对文本着色
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58936162"
  显示以的文本的大多数实现需要`T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults`和关联接口，用于显示、 检索和存储文本显示设置。  
   
 > [!NOTE]
->  自定义核心编辑器时 (它也支持**文本 EditorCategory**)，强烈建议你使用的着色技术语言服务中。 有关详细信息，请参阅[字体和颜色概述](../extensibility/font-and-color-overview.md)。  
+> 自定义核心编辑器时 (它也支持**文本 EditorCategory**)，强烈建议你使用的着色技术语言服务中。 有关详细信息，请参阅[字体和颜色概述](../extensibility/font-and-color-overview.md)。  
   
 ## <a name="getting-default-font-and-color-information"></a>获取默认字体和颜色信息  
  所有**字体和颜色**应在指定的任何窗口中显示的文本设置**显示项**之一**类别**。 有关详细信息，请参阅[字体和 Colors，Environment，Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  

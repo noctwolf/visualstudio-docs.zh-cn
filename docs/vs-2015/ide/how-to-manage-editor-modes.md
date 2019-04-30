@@ -25,12 +25,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 193afeddd553dfda54de568c92b4697e3f1a2a93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7db5f2869c1118a04f1aa734e5067ece4b268833
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430535"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60095537"
 可在各种显示模式下显示 Visual Studio 代码编辑器。  
   
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="enabling-full-screen-mode"></a>启用全屏模式  
  启用“全屏”模式后，可选择隐藏所有工具窗口并仅查看文档窗口。  
@@ -63,7 +63,7 @@ ms.locfileid: "60095537"
 3. 选择“常规”选项，然后在“设置”下选择“启用虚空格”。  
   
     > [!NOTE]
-    >  “虚空格”在“列选择”模式下启用。 如果未启用“虚空格”模式，插入点将从一行的末尾直接移动到下一行的第一个字符。  
+    > “虚空格”在“列选择”模式下启用。 如果未启用“虚空格”模式，插入点将从一行的末尾直接移动到下一行的第一个字符。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义编辑器](../ide/customizing-the-editor.md)   

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437875"
 ---
 # <a name="msbuild-properties1"></a>MSBuild Properties1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60101179"
  若要从生成工具中获取环境变量的当前值，请使用[属性函数](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable。 不过，首选方法是使用任务参数 <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>。 可将此字符串数组中的环境属性集传递给生成工具，而不影响系统环境变量。  
   
 > [!TIP]
->  并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。  
+> 并非所有的环境变量都被读入并成为初始属性。 系统将忽略变量名称不是有效 MSBuild 属性名称的所有环境变量（例如“386”）。  
   
  有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   

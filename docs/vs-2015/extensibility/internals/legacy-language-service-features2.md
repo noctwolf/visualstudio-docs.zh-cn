@@ -10,12 +10,12 @@ ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db610ea7dda113b89a83c9a5b8060fa7acf804c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 885940b90d24b471d1712670f53ea72fcd4d40e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434395"
 ---
 # <a name="legacy-language-service-features"></a>旧版语言服务功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58933315"
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  
   
 > [!NOTE]
->  我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
+> 我们建议在开始尽可能快地使用新编辑器 API。 这将提高您的语言服务的性能，让您充分利用新的编辑器功能。  
   
 ## <a name="in-this-section"></a>本节内容  
  [在旧版语言服务中进行语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
@@ -43,7 +43,7 @@ ms.locfileid: "58933315"
  [旧版语言服务中的大纲显示和隐藏文本](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
  介绍如何实现的大纲显示或隐藏的文本。  
   
- [如何：提供旧版语言服务中的展开大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  介绍了某些实现调试器支持中的步骤...  
   
 ## <a name="related-sections"></a>相关章节

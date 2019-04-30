@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434715"
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  常用`fOptions`由一个数组，此处替换`pfOptions`，其中一个`LONG`选项每个文件规范。 这是因为文件类型可能会有所不同文件文件。
 
 > [!NOTE]
->  它是无效的同时指定`SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`是未指定有效的同一文件中，但它的选项。 设置既不是设置相同`SCC_FILETYPE_AUTO`，在这种情况下进行源代码管理插件自动检测文件类型。
+> 它是无效的同时指定`SCC_FILETYPE_TEXT`和`SCC_FILETYPE_BINARY`是未指定有效的同一文件中，但它的选项。 设置既不是设置相同`SCC_FILETYPE_AUTO`，在这种情况下进行源代码管理插件自动检测文件类型。
 
  下面是列表中使用标志`pfOptions`数组：
 

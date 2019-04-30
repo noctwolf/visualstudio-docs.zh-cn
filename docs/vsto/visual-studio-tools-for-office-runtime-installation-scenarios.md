@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438729"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime 安装方案
   以下三种方式，可以安装 Visual Studio 2010 Tools for Office 运行时：
@@ -46,7 +46,7 @@ ms.locfileid: "56638603"
  在 Visual Studio 中安装 Office 开发人员工具时，[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 和 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 扩展始终安装在开发计算机上。 仅当 .NET Framework 3.5 已位于开发计算机上时，才会安装 .NET Framework 3.5 的 Office 扩展。 如果在安装 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 后安装 .NET Framework 3.5，则在首次创建面向 .NET Framework 3.5 的 Office 项目时，运行时将自动安装 .NET Framework 3.5 的 Office 扩展。
 
 > [!WARNING]
->  不能使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 或更高版本创建面向 .NET Framework 3.5 的 Office 项目。
+> 不能使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 或更高版本创建面向 .NET Framework 3.5 的 Office 项目。
 
  有关如何安装 Office 开发人员工具的详细信息，请参阅[如何：配置计算机以开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)。
 

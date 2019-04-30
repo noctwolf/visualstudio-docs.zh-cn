@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 749ceb41deb90929acd3475501f973287b11d287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c971d1a7a3a35a0aa4653043c30220204282ef44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431902"
 ---
 # <a name="idiasymbolgetsymindexid"></a>IDiaSymbol::get_symIndexId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_symIndexId ( 
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  标识符是唯一的值创建的 DIA SDK，可将标记为唯一的所有符号。  

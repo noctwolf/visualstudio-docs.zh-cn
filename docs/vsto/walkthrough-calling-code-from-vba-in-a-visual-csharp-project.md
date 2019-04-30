@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4f71bbc725d6c9f9fe90f0e4421892fa34ed886
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438662"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>演练：从视觉对象中的 VBA 调用代码C#项目
   此演练演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Microsoft Office Excel 文档级自定义项中的方法。 该过程包括三个基本步骤：向 `Sheet1` 主机项类添加方法、向工作簿中的 VBA 代码公开方法，然后从工作簿的 VBA 代码中调用该方法。
@@ -48,7 +48,7 @@ ms.locfileid: "60082264"
 - 从 VBA 代码中调用方法。
 
 > [!NOTE]
->  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -71,7 +71,7 @@ ms.locfileid: "60082264"
 3. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    >  如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅[如何：功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在 **“代码”** 组中，单击 **“Visual Basic”**。
 
@@ -209,7 +209,7 @@ ms.locfileid: "60082264"
  现在可以从工作簿的 VBA 代码中调用 `CreateVstoNamedRange` 方法。
 
 > [!NOTE]
->  在本演练中，将在调试项目时向工作薄中添加 VBA 代码。 在下次生成项目时，添加到此文档中的 VBA 代码将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。 如果想要保存 VBA 代码，可以将其复制到项目文件夹中的文档。 有关详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
+> 在本演练中，将在调试项目时向工作薄中添加 VBA 代码。 在下次生成项目时，添加到此文档中的 VBA 代码将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。 如果想要保存 VBA 代码，可以将其复制到项目文件夹中的文档。 有关详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
 
 ### <a name="to-call-the-method-from-vba-code"></a>从 VBA 代码调用方法
 

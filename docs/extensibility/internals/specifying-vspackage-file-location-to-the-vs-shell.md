@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d3ea1316efb17bb64472079677c93cfd2b85dcd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428915"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>指定 VS Shell 的 VSPackage 文件位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须能够找到程序集 DLL 加载 VSPackage。 下表中所述，你可以多种方式找到它。
@@ -29,4 +29,4 @@ ms.locfileid: "59664224"
 | 将放置到 DLL **PublicAssemblies**目录。 | 最后，该程序集还可放入**PublicAssemblies**子目录。 程序集位于**PublicAssemblies**自动检测到，并且也会出现在**添加引用**中的对话框[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。<br /><br /> VSPackage 程序集只应置于**PublicAssemblies**目录包含托管组件，旨在由其他 VSPackage 开发人员重复使用。 大多数程序集不符合此条件。 |
 
 > [!NOTE]
->  使用具有强名称的所有依赖程序集签名程序集。 此外应在你自己的目录或全局程序集缓存 (GAC) 中安装这些程序集。 这样可以防止与具有相同的基本文件名称，称为弱名称绑定的程序集冲突。
+> 使用具有强名称的所有依赖程序集签名程序集。 此外应在你自己的目录或全局程序集缓存 (GAC) 中安装这些程序集。 这样可以防止与具有相同的基本文件名称，称为弱名称绑定的程序集冲突。

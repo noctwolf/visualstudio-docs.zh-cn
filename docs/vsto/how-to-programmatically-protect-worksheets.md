@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438815"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以编程方式保护工作表
   Microsoft Office Excel 中的保护功能可帮助防止用户和代码修改工作表中的对象。 默认情况下，开启保护之后，将锁定所有单元格。
@@ -30,7 +30,7 @@ ms.locfileid: "60062212"
  在文档级自定义项中，可以通过使用 Excel 设计器来保护工作表。 还可以在运行时以编程方式保护任何项目类型中的工作表。
 
 > [!NOTE]
->  无法将 Windows 窗体控件添加到受保护工作表的区域中。
+> 无法将 Windows 窗体控件添加到受保护工作表的区域中。
 
 ## <a name="use-the-designer"></a>使用设计器
 

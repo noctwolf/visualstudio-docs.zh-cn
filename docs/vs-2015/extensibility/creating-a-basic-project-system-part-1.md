@@ -12,12 +12,12 @@ ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1fcf05377545100dfffe2db2385ea80fef4106eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439402"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104936"
  项目文件中定义了项目，例如 Visual C# 项目的.csproj 文件。 可以创建自己的项目类型具有自己的项目文件扩展名。 有关项目类型的详细信息，请参阅[项目类型](../extensibility/internals/project-types.md)。  
   
 > [!NOTE]
->  如果你需要使用自定义项目类型来扩展 Visual Studio，我们强烈建议利用[Visual Studio 项目系统](https://github.com/Microsoft/VSProjectSystem)具有数超过生成从零开始的项目系统的优势：  
+> 如果你需要使用自定义项目类型来扩展 Visual Studio，我们强烈建议利用[Visual Studio 项目系统](https://github.com/Microsoft/VSProjectSystem)具有数超过生成从零开始的项目系统的优势：  
 > 
 > - 更轻松的载入。  基本项目系统需要成千上万行代码。  利用 CPS 可以载入成本减少到几次单击之前已准备好你的需求进行自定义。  
 >   - 更便于维护。  通过利用 CPS，只需维护自己的方案。  我们处理所有项目系统基础结构在其的执行。  
@@ -37,7 +37,7 @@ ms.locfileid: "60104936"
  本演练演示如何创建具有项目文件名称扩展.myproj 的项目类型。 本演练中利用的现有的 Visual C# 项目系统。  
   
 > [!NOTE]
->  有关完整的语言项目系统的端到端示例，请参阅 IronPython 示例中的深入探讨[VSSDK 示例](../misc/vssdk-samples.md)。  
+> 有关完整的语言项目系统的端到端示例，请参阅 IronPython 示例中的深入探讨[VSSDK 示例](../misc/vssdk-samples.md)。  
   
  本演练介绍了如何完成这些任务：  
   
@@ -103,7 +103,7 @@ ms.locfileid: "60104936"
    ```  
   
    > [!IMPORTANT]
-   >  这不是 Program.cs 代码; 的最终格式将在后面的步骤处理替换参数。 你可能会看到编译错误，但只要文件的**BuildAction**是**内容**，您应该能够生成并照常运行项目。  
+   > 这不是 Program.cs 代码; 的最终格式将在后面的步骤处理替换参数。 你可能会看到编译错误，但只要文件的**BuildAction**是**内容**，您应该能够生成并照常运行项目。  
   
 7. 保存该文件。  
   
@@ -112,7 +112,7 @@ ms.locfileid: "60104936"
 9. 在中**Projects\SimpleProject**文件夹中添加名为 XML 文件`SimpleProject.myproj`。  
   
    > [!NOTE]
-   >  此类型的所有项目的文件扩展名是.myproj。 如果你想要对其进行更改，必须在本演练中提到的所有位置更改。  
+   > 此类型的所有项目的文件扩展名是.myproj。 如果你想要对其进行更改，必须在本演练中提到的所有位置更改。  
   
 10. 现有内容替换为以下行。  
   
@@ -269,7 +269,7 @@ ms.locfileid: "60104936"
         ```  
   
         > [!IMPORTANT]
-        >  请不要忘记在路径末尾的反斜杠。  
+        > 请不要忘记在路径末尾的反斜杠。  
   
     3. 重新加载项目。  
   

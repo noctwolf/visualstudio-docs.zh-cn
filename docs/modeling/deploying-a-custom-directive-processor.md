@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21efca0d922087281f94facfdaf04a12606bc4db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba106bd28db63b6215abd02ea00aff0b3c0c00e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432229"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
@@ -144,7 +144,7 @@ ms.locfileid: "60044588"
 ```
 
 > [!NOTE]
->  将此特性置于包类，而不是指令处理器类。
+> 将此特性置于包类，而不是指令处理器类。
 
  生成项目时，将生成 .pkgdef 文件。 安装 VSPackage 时，.pkgdef 文件将注册指令处理器。
 
@@ -156,7 +156,7 @@ ms.locfileid: "60044588"
  这种自定义指令处理器的安装方法是最不方便的一种方法。 这种方法不能方便地启用和禁用指令处理器，也不能方便地向其他用户分发指令处理器。
 
 > [!CAUTION]
->  注册表编辑不当可能会严重损坏系统。 更改注册表之前，请务必备份计算机中的所有重要数据。
+> 注册表编辑不当可能会严重损坏系统。 更改注册表之前，请务必备份计算机中的所有重要数据。
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>通过设置注册表项注册指令处理器
 

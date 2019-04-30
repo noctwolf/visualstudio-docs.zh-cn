@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25e2f2359cabff9a4e95a7d64d2f0846df8f49f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d96766918f554e2b99dd8abc5faea9badaf69b5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423101"
 ---
 # <a name="project-configuration-object"></a>项目配置对象
 项目配置对象管理到 UI 的配置信息的显示。
@@ -26,7 +26,7 @@ ms.locfileid: "56631739"
  项目配置提供程序管理的项目配置。 在环境和其他包，才能访问和检索有关项目的配置的信息，请调用附加到项目的配置提供程序对象的接口。
 
 > [!NOTE]
->  无法创建或以编程方式编辑解决方案配置文件。 必须使用`DTE.SolutionBuilder`。 请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)有关详细信息。
+> 无法创建或以编程方式编辑解决方案配置文件。 必须使用`DTE.SolutionBuilder`。 请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)有关详细信息。
 
  若要发布的配置 UI 中使用的显示名称，你的项目应实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>，这会返回一系列`IVsCfg`可用于获取要在环境的用户界面中列出的配置和平台信息的显示名称的指针。 由存储在活动解决方案配置的项目的配置确定的活动配置和平台。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A>方法可以用于检索活动项目配置。
 
@@ -35,7 +35,7 @@ ms.locfileid: "56631739"
  另一种方法提供对项目配置访问权限的环境和其他项目的项目提供的一个实现，为`IVsCfgProvider2::GetCfgs`方法以返回一个或多个配置对象。 项目还可能会实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>，后者又继承`IVsProjectCfg`，从而从`IVsCfg`，以提供特定于配置的信息。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 添加、 删除和重命名项目配置为支持平台和功能。
 
 > [!NOTE]
->  由于 Visual Studio 不再限制为两种配置类型、 处理配置的代码编写，不应使用的假设有关多个配置，也不应它编写时会假定，只有一个项目调试或零售，一定是配置。 这样，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A>已过时。
+> 由于 Visual Studio 不再限制为两种配置类型、 处理配置的代码编写，不应使用的假设有关多个配置，也不应它编写时会假定，只有一个项目调试或零售，一定是配置。 这样，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A>已过时。
 
  调用`QueryInterface`从返回的对象上`IVsGetCfgProvider::GetCfgProvider`检索`IVsCfgProvider2`。 如果`IVsGetCfgProvider`通过调用找不到`QueryInterface`上`IVsProject3`项目对象，可以通过调用访问的配置提供程序对象`QueryInterface`为返回的对象的层次结构根浏览器对象上`IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`，或通过指向返回的配置提供程序的`IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`。
 

@@ -1,5 +1,5 @@
 ---
-title: 演练： 缺少对象因顶点着色而 |Microsoft Docs
+title: 演练：因顶点着色而缺少对象 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388603"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查因顶点着色器阶段出现的错误而缺少的对象。
 
  此演练阐释了以下任务：
 
--   使用“图形事件列表”  定位问题的潜在根源。
+- 使用“图形事件列表”  定位问题的潜在根源。
 
--   使用“图形管道阶段”  窗口检查 `DrawIndexed` Direct3D API 调用的影响。
+- 使用“图形管道阶段”  窗口检查 `DrawIndexed` Direct3D API 调用的影响。
 
--   使用“HLSL 调试器”  检查顶点着色器。
+- 使用“HLSL 调试器”  检查顶点着色器。
 
--   使用“图形事件调用堆栈”  帮助查找错误 HLSL 常量的源。
+- 使用“图形事件调用堆栈”  帮助查找错误 HLSL 常量的源。
 
 ## <a name="scenario"></a>方案
  当顶点着色器以不正确或意外的方式变换对象顶点的形状时，会出现三维应用中缺少对象的一个常见原因 — 例如，对象可能缩放到很小的尺寸或变形而导致出现在照相机后面而不是前面。
@@ -61,7 +61,7 @@ ms.locfileid: "56691743"
     在“图形管道阶段”  窗口中，“输入装配器”  阶段将显示转换前的对象的几何图形，而“顶点着色器”  阶段显示转换后的相同对象。 在此方案中，当“输入装配器”  阶段中显示缺失的对象而“顶点着色器”  阶段中不显示任何项目时，即可知已找到该对象。
 
    > [!NOTE]
-   >  如果其他几何阶段（例如外壳着色器、域着色器或几何着色器阶段）处理该对象，则这些阶段可能是问题的原因。 通常情况下，该问题与结果未显示或以意外方式显示的最早阶段相关联。
+   > 如果其他几何阶段（例如外壳着色器、域着色器或几何着色器阶段）处理该对象，则这些阶段可能是问题的原因。 通常情况下，该问题与结果未显示或以意外方式显示的最早阶段相关联。
 
 4. 当到达对应于缺失对象的绘图调用时即停止。 在此方案中，“图形管道阶段”  窗口指示几何图形发布到 GPU（由存在“输入装配器”缩略图指示），但由于在顶点着色器阶段出现问题而未显示于呈现目标中（由“顶点着色器”缩略图指示）。
 
@@ -104,7 +104,7 @@ ms.locfileid: "56691743"
     ![设置对象的常量缓冲区的代码](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  如果同时调试你的应用，则可以在此位置设置一个断点，在呈现下一帧时将命中该断点。 你随后还可以检查 `m_marbleConstantBufferData` 的成员，以确认填充常量缓冲区后是否已将 `projection` 成员的值设置为全零。
+   > 如果同时调试你的应用，则可以在此位置设置一个断点，在呈现下一帧时将命中该断点。 你随后还可以检查 `m_marbleConstantBufferData` 的成员，以确认填充常量缓冲区后是否已将 `projection` 成员的值设置为全零。
 
    找到填充常量缓冲区的位置，并发现其值来自变量 `m_marbleConstantBufferData` 之后，下一步是找出将 `m_marbleConstantBufferData.projection` 成员设置为全零的位置。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。
 

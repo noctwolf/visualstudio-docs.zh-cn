@@ -53,18 +53,18 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431129"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
->  数据集和相关的类是从年初，使应用程序的应用程序从数据库断开连接时，可以使用在内存中数据的旧.NET 技术。 它们是特别有用的应用程序使用户能够修改数据和持久保存回数据库的更改。 尽管数据集已证明是非常成功的技术，我们建议新的.NET 应用程序使用 Entity Framework。 实体框架提供更简单的方式来使用表格格式数据作为对象模型，它具有一个更简单的编程接口。
+> 数据集和相关的类是从年初，使应用程序的应用程序从数据库断开连接时，可以使用在内存中数据的旧.NET 技术。 它们是特别有用的应用程序使用户能够修改数据和持久保存回数据库的更改。 尽管数据集已证明是非常成功的技术，我们建议新的.NET 应用程序使用 Entity Framework。 实体框架提供更简单的方式来使用表格格式数据作为对象模型，它具有一个更简单的编程接口。
 
  数据集对象是一个内存中对象，它实质上是一个最小化数据库。 它包含 DataTable 和 DataColumn，DataRow 对象可以用于存储和修改一个或多个数据库中的数据，而无需维护的开放连接。 数据集维护对其数据的更改的信息，因此可以跟踪更新和应用程序变得重新连接时发送回数据库。
 

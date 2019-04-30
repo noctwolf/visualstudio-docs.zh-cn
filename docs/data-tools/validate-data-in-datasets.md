@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402727"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。
@@ -54,7 +54,7 @@ ms.locfileid: "60041586"
 默认情况下，对列的每个更改因此引发四个事件。 第一个是<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>正在更改的特定列的事件。 接下来是<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>事件。 如果对行进行了多个更改，每次更改都会引发事件。
 
 > [!NOTE]
->  数据行<xref:System.Data.DataRow.BeginEdit%2A>方法会关闭<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>后每个单独的列更改事件。 在这种情况下，不会引发事件之前<xref:System.Data.DataRow.EndEdit%2A>已调用方法，当<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>只需一次引发事件。 有关详细信息，请参阅[填充数据集时关闭约束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。
+> 数据行<xref:System.Data.DataRow.BeginEdit%2A>方法会关闭<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>后每个单独的列更改事件。 在这种情况下，不会引发事件之前<xref:System.Data.DataRow.EndEdit%2A>已调用方法，当<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>只需一次引发事件。 有关详细信息，请参阅[填充数据集时关闭约束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。
 
 您选择的事件取决于想要验证的粒度级别。 如果必须立即列发生更改时捕获错误，通过使用构建验证<xref:System.Data.DataTable.ColumnChanging>事件。 否则，请使用<xref:System.Data.DataTable.RowChanging>事件，这可能会导致同时捕获多个错误。 此外，如果你的数据结构化的因此基于另一列的内容验证某一列的值，执行期间验证<xref:System.Data.DataTable.RowChanging>事件。
 
@@ -80,7 +80,7 @@ ms.locfileid: "60041586"
 ## <a name="validate-data-during-column-changes"></a>在列更改过程中验证数据
 
 > [!NOTE]
->  **数据集设计器**创建一个分部类，可以在哪些验证逻辑添加到数据集。 设计器生成数据集不会删除或更改的分部类中的任何代码。
+> **数据集设计器**创建一个分部类，可以在哪些验证逻辑添加到数据集。 设计器生成数据集不会删除或更改的分部类中的任何代码。
 
 通过响应中的数据列的值更改时，可以验证数据<xref:System.Data.DataTable.ColumnChanging>事件。 当引发，此事件将传递的事件自变量 (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>)，其中包含个当前列的建议的值。 基于内容的`e.ProposedValue`，你可以：
 
@@ -102,7 +102,7 @@ ms.locfileid: "60041586"
 2. 双击想要验证的表的标题栏。 此操作将自动创建<xref:System.Data.DataTable.RowChanging>事件处理程序<xref:System.Data.DataTable>数据集的分部类文件中。
 
     > [!TIP]
-    >  双击要创建的行更改的事件处理程序的表名称的左侧。 如果您双击表名，可以对其进行编辑。
+    > 双击要创建的行更改的事件处理程序的表名称的左侧。 如果您双击表名，可以对其进行编辑。
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
@@ -113,7 +113,7 @@ ms.locfileid: "60041586"
 2. 双击想要验证的表的标题栏。 此操作将创建的分部类文件<xref:System.Data.DataTable>。
 
     > [!NOTE]
-    >  **数据集设计器**不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>事件。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>挂接表的初始化方法中的事件的事件，并运行的代码。
+    > **数据集设计器**不会自动创建的事件处理程序<xref:System.Data.DataTable.RowChanging>事件。 您必须创建一个方法来处理<xref:System.Data.DataTable.RowChanging>挂接表的初始化方法中的事件的事件，并运行的代码。
 
 3. 将以下代码复制到分部类：
 
@@ -141,7 +141,7 @@ ms.locfileid: "60041586"
 数据表中的每一行都具有<xref:System.Data.DataRow.RowState%2A>跟踪使用中的值的行的当前状态的属性<xref:System.Data.DataRowState>枚举。 可以从数据集或数据的表中返回已更改的行通过调用`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>。 你可以验证更改存在之前调用`GetChanges`通过调用<xref:System.Data.DataSet.HasChanges%2A>数据集的方法。
 
 > [!NOTE]
->  将更改提交到数据集或数据的表后 (通过调用<xref:System.Data.DataSet.AcceptChanges%2A>方法)，则`GetChanges`方法不返回任何数据。 如果你的应用程序需要处理已更改的行，必须处理的更改之前，调用`AcceptChanges`方法。
+> 将更改提交到数据集或数据的表后 (通过调用<xref:System.Data.DataSet.AcceptChanges%2A>方法)，则`GetChanges`方法不返回任何数据。 如果你的应用程序需要处理已更改的行，必须处理的更改之前，调用`AcceptChanges`方法。
 
 调用<xref:System.Data.DataSet.GetChanges%2A>数据集或数据的表的方法将返回包含已更改的唯一记录的新数据集或数据表。 如果你想要获取特定的记录 — 例如，只是新记录或已修改的记录 — 可以将传递的值<xref:System.Data.DataRowState>枚举作为参数`GetChanges`方法。
 
@@ -183,7 +183,7 @@ ms.locfileid: "60041586"
 数据集时对数据行进行了更改，将保留原始 (<xref:System.Data.DataRowVersion.Original>) 和新 (<xref:System.Data.DataRowVersion.Current>) 行的版本。 例如，之前调用`AcceptChanges`方法，你的应用程序可以访问一条记录的不同版本 (如中所定义<xref:System.Data.DataRowVersion>枚举) 并相应地处理所做的更改。
 
 > [!NOTE]
->  行的不同版本存在仅已经过编辑之后，并在它`AcceptChanges`调用方法。 之后`AcceptChanges`调用方法、 当前和原始版本都相同。
+> 行的不同版本存在仅已经过编辑之后，并在它`AcceptChanges`调用方法。 之后`AcceptChanges`调用方法、 当前和原始版本都相同。
 
 传递<xref:System.Data.DataRowVersion>值的列索引 （或字符串形式的列名称） 以及返回该列的特定行版本中的值。 期间标识已更改的列<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>事件。 这是检查出于验证目的的不同行版本的好时机。 但是，如果暂时挂起了约束，不会引发这些事件，并且将需要以编程方式确定哪些列发生了更改。 您可以执行此操作，可以循环访问<xref:System.Data.DataTable.Columns%2A>集合并比较不同<xref:System.Data.DataRowVersion>值。
 

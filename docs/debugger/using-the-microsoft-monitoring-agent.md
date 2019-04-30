@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407545"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (C#，Visual Basic)
 
 你可使用 **Microsoft 监视代理**本地监视 IIS 托管的 ASP.NET Web 应用和 SharePoint 2010 或 2013 应用程序，以查找错误、性能问题或其他问题。 可将代理发出的诊断事件保存为 IntelliTrace 日志（也就是 .iTrace）文件。 随后可打开 Visual Studio Enterprise （但不是 Professional 或 Community 版本）中的日志，以使用 Visual Studio 的所有诊断工具调试问题。 你也可运行 **跟踪** 模式中的代理，进而收集 IntelliTrace 诊断数据及方法数据。 Microsoft Monitoring Agent 可以与 [Application Insights](/azure/application-insights/) 和 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))集成。 安装时，Microsoft 监视代理确实会改变目标系统的环境。
 
 > [!NOTE]
->  你也可在不改变目标环境的前提下，使用 **IntelliTrace 独立收集器**来收集远程计算机上的 Web、SharePoint、WPF 和 Windows 窗体应用的 IntelliTrace 诊断数据和方法数据。 与在 **监视** 模式下运行 Microsoft 监视代理相比，独立收集器对性能的影响更大。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+> 你也可在不改变目标环境的前提下，使用 **IntelliTrace 独立收集器**来收集远程计算机上的 Web、SharePoint、WPF 和 Windows 窗体应用的 IntelliTrace 诊断数据和方法数据。 与在 **监视** 模式下运行 Microsoft 监视代理相比，独立收集器对性能的影响更大。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
  如果你使用 System Center 2012，请使用配有 Operations Manager 的 Microsoft 监视代理，以便获取问题警报并创建包含转向已保存 IntelliTrace 日志的链接的 Team Foundation Server 工作项。 随后，你可以将这些工作项分配给其他程序进一步调试。 请参阅 [集成 Operations Manager 与开发过程](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) 和 [使用 Microsoft Monitoring Agent 进行监视](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12))。
 
@@ -59,7 +59,7 @@ ms.locfileid: "60043117"
      确保在开始监视前已创建此目录。 为避免应用速度变慢，请选择本地高速磁盘上不常用的位置。
 
     > [!IMPORTANT]
-    >  IntelliTrace 日志中包含个人数据及敏感数据。 此目录中只限存放那些与文件兼容的标识。 查看你所在公司的隐私政策。
+    > IntelliTrace 日志中包含个人数据及敏感数据。 此目录中只限存放那些与文件兼容的标识。 查看你所在公司的隐私政策。
 
 5. 要运行详细的函数级监视或要监视 SharePoint 应用程序，需授予托管 Web 应用或 SharePoint 应用程序的应用程序池对 IntelliTrace 日志目录的读写权限。 [问：如何设置访问应用程序池的权限？](#FullPermissionsITLog)
 
@@ -257,7 +257,7 @@ ms.locfileid: "60043117"
 3. 将日志复制到一个安全的共享文件夹中，随后从装有 Visual Studio Enterprise （但不是 Professional 或 Community 版本）的计算机打开该日志。
 
    > [!IMPORTANT]
-   >  共享 IntelliTrace 日志时务必小心，因为这些日志中可能包含个人数据及敏感数据。 确保可访问这些日志的所有人拥有查看相应数据的权限。 查看你所在公司的隐私政策。
+   > 共享 IntelliTrace 日志时务必小心，因为这些日志中可能包含个人数据及敏感数据。 确保可访问这些日志的所有人拥有查看相应数据的权限。 查看你所在公司的隐私政策。
 
    **下一篇：**[诊断 Visual Studio Enterprise 中记录的事件](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 

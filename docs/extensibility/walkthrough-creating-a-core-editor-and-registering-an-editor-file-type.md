@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411033"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>演练：创建核心编辑器和注册编辑器文件类型
 本演练演示如何创建启动 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器使用的文件时 *.myext*加载文件扩展名。
@@ -325,7 +325,7 @@ ms.locfileid: "60048200"
 3. 打开**VSPackage.resx**文件中，添加一个新字符串，将名称设置为**101**，并将值设置为`IDS_EDITORNAME`。 此步骤提供访问你创建的字符串资源 ID 的包。
 
    > [!NOTE]
-   >  如果**VSPackage.resx**文件包含另一个字符串`name`属性设置为**101**，替换另一个唯一的数字值，在此处以及以下步骤中。
+   > 如果**VSPackage.resx**文件包含另一个字符串`name`属性设置为**101**，替换另一个唯一的数字值，在此处以及以下步骤中。
 
 4. 在中**解决方案资源管理器**，打开**MyPackagePackage.cs**文件。
 

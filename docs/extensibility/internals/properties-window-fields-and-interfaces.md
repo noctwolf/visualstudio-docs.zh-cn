@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425736"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 选择来确定在显示的信息的模型**属性**窗口基于在 IDE 中具有焦点的窗口。 每个窗口中和中所选的窗口中，对象可以具有其选择上下文对象推送到全局选定内容上下文。 当该窗口具有焦点时，环境使用窗口框架中的值更新全局选定内容上下文。 当焦点更改时，因此执行选定内容上下文。
@@ -81,7 +81,7 @@ ms.locfileid: "60060223"
 1. 将 `helpstringdll` 特性添加到类型库中的库语句（`typelib`）。
 
    > [!NOTE]
-   >  如果类型库位于对象库 (.olb) 文件中，则此步骤是可选的。
+   > 如果类型库位于对象库 (.olb) 文件中，则此步骤是可选的。
 
 2. 为字符串指定 `helpstringcontext` 特性。 你还可以指定 `helpstring` 特性。
 

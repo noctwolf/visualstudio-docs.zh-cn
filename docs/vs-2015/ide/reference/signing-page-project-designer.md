@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437992"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59650391"
  请注意，延迟签名的项目将不会运行，也不能调试。 但是，可以使用 [Sn.exe（强名称工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)及 `-Vr` 选项，在开发过程中跳过验证。  
   
 > [!NOTE]
->  对程序集签名时，可能并不总是有权访问私钥。 例如，一个组织可能具有开发人员不是每天都能访问的严密保护密钥对。 公钥可能可用，但私钥的访问权限仅限于少数几个人。 在这种情况下，你可以使用延迟或部分签名来提供公钥，将私钥的添加延迟到转交该程序集后。  
+> 对程序集签名时，可能并不总是有权访问私钥。 例如，一个组织可能具有开发人员不是每天都能访问的严密保护密钥对。 公钥可能可用，但私钥的访问权限仅限于少数几个人。 在这种情况下，你可以使用延迟或部分签名来提供公钥，将私钥的添加延迟到转交该程序集后。  
   
 ## <a name="see-also"></a>请参阅  
  [项目属性引用](../../ide/reference/project-properties-reference.md)   

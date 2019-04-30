@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fa93b2b6ddd6030f625b806a612c0fed22eb4a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2b56203f2d0bfb2e7c20720b595cdde6b92aa987
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430616"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_customCallingConvention(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。  
+> 返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

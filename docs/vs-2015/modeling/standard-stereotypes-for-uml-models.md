@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411750"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML 模型的标准构造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60116584"
 2. 在属性窗口中设置**配置文件**属性设置为空。  
   
     > [!NOTE]
-    >  仅当模型或包中的任何元素均不使用配置文件的构造型时才能取消链接配置文件。  
+    > 仅当模型或包中的任何元素均不使用配置文件的构造型时才能取消链接配置文件。  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>向模型元素应用构造型  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60116584"
      对于大多数类型的元素而言，所选构造型出现在模型元素的 «尖括号» 内。  
   
     > [!NOTE]
-    >  如果无法看到**构造型**属性，或如果未显示所需的构造型，验证模型元素是内包或相应的配置文件链接到模型。  
+    > 如果无法看到**构造型**属性，或如果未显示所需的构造型，验证模型元素是内包或相应的配置文件链接到模型。  
   
 3. 某些构造型允许你设置模型元素的其他属性的值。 若要查看这些属性，请展开**构造型**属性。  
   

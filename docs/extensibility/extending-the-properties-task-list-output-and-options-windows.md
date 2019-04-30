@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417226"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>扩展属性、 任务列表、 输出和选项 windows
 您可以访问 Visual Studio 中的任何工具窗口。 本演练演示如何将工具窗口有关的信息集成到一个新**选项**页和上的新设置**属性**页上，以及如何将写入到**任务列表**并**输出**windows。
@@ -33,7 +33,7 @@ ms.locfileid: "60078377"
 1. 创建一个名为项目**TodoList**使用 VSIX 模板，并添加一个名为的自定义工具窗口项模板**TodoWindow**。
 
     > [!NOTE]
-    >  有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。
+    > 有关使用工具窗口创建扩展的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
 ## <a name="set-up-the-tool-window"></a>设置工具窗口
  添加在其中可键入新的 ToDo 项，以将新项添加到列表中，一个按钮和列表框中显示的项在列表中的文本框。
@@ -41,7 +41,7 @@ ms.locfileid: "60078377"
 1. 在中*TodoWindow.xaml*，从 UserControl 中删除的按钮、 文本框和 StackPanel 控件。
 
     > [!NOTE]
-    >  这不会删除**button1_Click**事件处理程序，将在稍后的步骤中重复使用。
+    > 这不会删除**button1_Click**事件处理程序，将在稍后的步骤中重复使用。
 
 2. 从**所有 WPF 控件**一部分**工具箱**，拖动**画布**到网格控件。
 

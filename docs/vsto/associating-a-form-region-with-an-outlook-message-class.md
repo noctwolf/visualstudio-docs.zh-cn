@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440367"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 消息类相关联
   您可以指定哪些 Microsoft Office Outlook 项显示的窗体区域，通过将窗体区域与每个项的消息类相关联。 例如，如果你想要将窗体区域附加到邮件项的底部，则可以将窗体区域与`IPM.Note`message 类。
@@ -45,7 +45,7 @@ ms.locfileid: "60063538"
  此外可以指定自定义 message 类的名称。 自定义邮件类标识在 Outlook 中定义的自定义窗体。
 
 > [!NOTE]
->  对于替换和全部替换窗体区域，可以指定新的自定义邮件类名称。 不需要使用现有的自定义窗体的 message 类名。 自定义邮件类的名称必须是唯一的。 请确保该名称是唯一的一种方法是使用类似于下面的命名约定：\<*标准邮件类名称*>。\<*公司*>。\<*MessageClassName*> (例如： `IPM.Note.Contoso.MyMessageClass`)。
+> 对于替换和全部替换窗体区域，可以指定新的自定义邮件类名称。 不需要使用现有的自定义窗体的 message 类名。 自定义邮件类的名称必须是唯一的。 请确保该名称是唯一的一种方法是使用类似于下面的命名约定：\<*标准邮件类名称*>。\<*公司*>。\<*MessageClassName*> (例如： `IPM.Note.Contoso.MyMessageClass`)。
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 消息类相关联
  有两种方法来将窗体区域的邮件类与相关联：
@@ -76,7 +76,7 @@ ms.locfileid: "60063538"
   **新建 Outlook 窗体区域**单击时，向导将验证你输入的格式**完成**。
 
 > [!NOTE]
->  **新建 Outlook 窗体区域**向导不会验证你提供的邮件类名称是否正确或有效。
+> **新建 Outlook 窗体区域**向导不会验证你提供的邮件类名称是否正确或有效。
 
  完成向导后**新建 Outlook 窗体区域**向导将特性应用于包含指定的邮件类名称的窗体区域类。 您还可以手动应用这些属性。
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063538"
   生成项目时，visual Studio 会验证 message 类名的格式。
 
 > [!NOTE]
->  Visual Studio 不会验证你提供的邮件类名称正确或有效。
+> Visual Studio 不会验证你提供的邮件类名称正确或有效。
 
 ## <a name="see-also"></a>请参阅
 - [访问在运行时的窗体区域](../vsto/accessing-a-form-region-at-run-time.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411501"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60074211"
  编写文本模板的一般概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
   
 > [!NOTE]
->  运行时（预处理）文本模板中不需要 `assembly` 指令。 相反，将添加到必需的程序集**引用**的你[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目。  
+> 运行时（预处理）文本模板中不需要 `assembly` 指令。 相反，将添加到必需的程序集**引用**的你[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目。  
   
 ## <a name="using-the-assembly-directive"></a>使用 Assembly 指令  
  该指令的语法如下所示：  

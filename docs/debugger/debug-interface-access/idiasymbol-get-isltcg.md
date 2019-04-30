@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b674e99bcb9bd621808b080fffa6873f96cfb707
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f5fe47d8575c47756cce8fd1580ced5f3036766
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399956"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 检索一个标志，指定是否[编译单位](../../debugger/debug-interface-access/compiland.md)已链接使用链接器开关[/LTCG （链接时间代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)，这样有助于全程序优化。 此开关仅适用于托管代码。
@@ -39,11 +39,11 @@ HRESULT get_iSLTCG(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
 
 > [!NOTE]
->  返回值为`S_FALSE`表示该属性不是可用于符号。
+> 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="requirements"></a>要求
 
-|需求|说明|
+|需求|描述|
 |-----------------|-----------------|
 |标头：|dia2.h|
 |版本：|DIA SDK v8.0|

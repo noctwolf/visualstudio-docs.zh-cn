@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434304"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60046238"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ## <a name="windows-counters"></a>Windows 计数器  
  Windows 计数器是 Windows 诊断基础结构的一部分，该结构提供关于操作系统、应用程序、服务或驱动器性能的信息。 Windows 计数器取决于当前计算机的配置，并且可能无法在其他计算机上使用。 Windows 性能计数器以分析标记的形式收集在分析数据文件中，然后可将其用于筛选视图和报表。  

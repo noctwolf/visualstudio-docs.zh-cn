@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422541"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>使用 UML 序列图中的片段描述控制流
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60107081"
  组合片段包括一个或多个 *交互操作数*，并且其中每个都包含了一个或多个消息、交互使用或组合片段。  
   
 > [!NOTE]
->  本主题介绍序列图中的片段。 有关如何读取 UML 序列图的详细信息，请参阅[UML 序列图：参考](../modeling/uml-sequence-diagrams-reference.md)。 有关如何绘制 UML 序列图的详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+> 本主题介绍序列图中的片段。 有关如何读取 UML 序列图的详细信息，请参阅[UML 序列图：参考](../modeling/uml-sequence-diagrams-reference.md)。 有关如何绘制 UML 序列图的详细信息，请参阅[UML 序列图：指导原则](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  ![组合片段中的使用两个交互操作数](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60107081"
 3. 你可以通过单击其内部分别选择每个交互操作数。 此示例选择了顶部的交互操作数，因此，可以看见其边界。 通常，仅交互操作数之间的分隔线可见。  
   
     > [!NOTE]
-    >  若要选择顶部的交互操作数，则不能在太靠近组合片段的顶部位置单击。  
+    > 若要选择顶部的交互操作数，则不能在太靠近组合片段的顶部位置单击。  
   
 4. 临界。 你可以为每个交互操作数提供一个临界。 描述将在其下执行交互操作数内的消息的条件。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "60107081"
 1. 选择一条消息或消息序列，它们都是在相同生命线或执行匹配项开始的消息。  
   
    > [!NOTE]
-   >  如果选择多个消息时，它们必须形成不间断的序列。  
+   > 如果选择多个消息时，它们必须形成不间断的序列。  
   
 2. 右键单击其中一条消息，指向“外侧代码” ，然后单击想要的组合片段的种类，如“Alt 组合片段” 。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "60107081"
 - 右键单击组合片段的标题，然后单击“属性” 。  
   
     > [!NOTE]
-    >  不同种类的组合片段具有不同的属性。  
+    > 不同种类的组合片段具有不同的属性。  
   
 ## <a name="KindsOfFragment"></a> 组合片段的种类  
   

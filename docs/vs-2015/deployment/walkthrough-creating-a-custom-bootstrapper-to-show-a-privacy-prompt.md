@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427133"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>演练：创建自定义引导程序以显示隐私提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ ms.locfileid: "60116507"
     6. 在中**启动对象**下拉列表菜单中，选择**Module1**。  
   
        > [!NOTE]
-       >  禁用应用程序框架将禁用功能，例如 Windows XP 视觉样式、 应用程序事件、 初始屏幕、 单实例应用程序和的详细信息。 有关详细信息，请参阅 [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)（应用程序页、项目设计器 (Visual Basic)。  
+       > 禁用应用程序框架将禁用功能，例如 Windows XP 视觉样式、 应用程序事件、 初始屏幕、 单实例应用程序和的详细信息。 有关详细信息，请参阅 [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)（应用程序页、项目设计器 (Visual Basic)。  
   
        Visual C# 仅适用于开发人员：  
   
@@ -154,12 +154,12 @@ ms.locfileid: "60116507"
 1. 创建一个名为**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
   
     > [!NOTE]
-    >  您可能需要管理权限才能创建此文件夹。  
+    > 您可能需要管理权限才能创建此文件夹。  
   
 2. 在 UpdateConsentDialog 目录中，创建一个名为 en 子目录。  
   
     > [!NOTE]
-    >  创建每个区域设置的新目录。 例如，可以添加 fr 和 de 区域设置的子目录。 如有必要，这些目录将包含法语和德语字符串和语言包。  
+    > 创建每个区域设置的新目录。 例如，可以添加 fr 和 de 区域设置的子目录。 如有必要，这些目录将包含法语和德语字符串和语言包。  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>步骤 2：若要创建 product.xml 清单文件  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60116507"
 4. 创建一个名为软件许可条款 eula.rtf 的文档。  
   
     > [!NOTE]
-    >  软件许可条款应包括有关许可、 保证、 责任和当地法律信息。 这些文件应是特定于区域设置的因此请确保该文件的保存支持 MBCS 或 UNICODE 字符格式。 请咨询您的软件许可条款内容有关的法律部门。  
+    > 软件许可条款应包括有关许可、 保证、 责任和当地法律信息。 这些文件应是特定于区域设置的因此请确保该文件的保存支持 MBCS 或 UNICODE 字符格式。 请咨询您的软件许可条款内容有关的法律部门。  
   
 5. 将文档保存到 UpdateConsentDialog 引导程序目录中的 en 子目录。  
   
@@ -244,7 +244,7 @@ ms.locfileid: "60116507"
 4. 选择**更新同意对话框**。  
   
     > [!NOTE]
-    >  您可能需要关闭并重新打开 Visual Studio 以查看更新的同意对话框中系统必备组件对话框。  
+    > 您可能需要关闭并重新打开 Visual Studio 以查看更新的同意对话框中系统必备组件对话框。  
   
 5. 单击 **“确定”**。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387036"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60079132"
 2. 在中**地址**框中，输入该服务的 URL，然后单击**转**来搜索服务。 如果该服务实现了用户名称和密码安全性，您可能会提示输入用户名和密码。  
   
     > [!NOTE]
-    >  应仅从受信任源引用服务。 从不受信任的源添加引用可能会危及安全性。  
+    > 应仅从受信任源引用服务。 从不受信任的源添加引用可能会危及安全性。  
   
      您还可以选择从 URL**地址**列表，其中存储了在其中找到有效的服务元数据的前 15 个。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60079132"
      服务客户端将删除该解决方案，并描述该服务的元数据将从 app.config 文件中删除。  
   
     > [!NOTE]
-    >  必须手动删除引用的服务引用的任何代码。  
+    > 必须手动删除引用的服务引用的任何代码。  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

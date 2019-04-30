@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c67ff6e458f8350ef36a8a454e017b3ce6ea114
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 85704ed9e9a9493ef02e4d4d68a84a2d1623533f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446859"
 ---
 # <a name="idisperror-interface"></a>IDispError 接口
 提供详细上下文错误的信息。  
   
 > [!NOTE]
->  未实现此接口。  
+> 未实现此接口。  
   
  除了继承的方法之外`IUnknown`，则`IDispError`接口公开以下方法。  
   

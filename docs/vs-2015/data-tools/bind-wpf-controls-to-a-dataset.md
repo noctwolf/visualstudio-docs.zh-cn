@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70fe24a642ef1bb5dc872f2b4e48438a26aaea07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439509"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -175,7 +175,7 @@ ms.locfileid: "60039997"
 4. 单击“ThumbNailPhoto”节点旁边的下拉菜单，然后选择“图像”。  
   
     > [!NOTE]
-    >  默认情况下，已将“数据源”窗口中表示图片的项的默认控件设置为“无”。 这是因为，图片是作为字节数组存储在数据库中的，并且从简单的字节数组到大型应用程序的可执行文件都可以包含在字节数组中。  
+    > 默认情况下，已将“数据源”窗口中表示图片的项的默认控件设置为“无”。 这是因为，图片是作为字节数组存储在数据库中的，并且从简单的字节数组到大型应用程序的可执行文件都可以包含在字节数组中。  
   
 5. 从“数据源”窗口，将“Product”节点拖到包含按钮的行下方的网格行。  
   
@@ -226,7 +226,7 @@ ms.locfileid: "60039997"
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    >  此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅[TableAdapterManager 概述](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
+    > 此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅[TableAdapterManager 概述](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
   
 ## <a name="test-the-application"></a>测试应用程序  
  生成并运行应用程序。 验证你是否可以查看和更新产品记录。  

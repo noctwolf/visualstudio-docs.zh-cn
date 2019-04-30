@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386987"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 域特定语言 (DSL) 是由其 DSL 定义文件定义，以及你可以编写任何自定义程序代码。 DSL 解决方案中的程序代码的大多数生成的此文件。
@@ -93,7 +93,7 @@ ms.locfileid: "60045026"
  当将模型保存到文件以 XML 形式，嵌入的元素都放在其父项，除非自定义序列化。
 
 > [!NOTE]
->  嵌入与继承不同。 中的嵌入关系的子级不继承父项的属性。 嵌入是链接的一种模型元素之间。 继承类之间的关系并不会创建模型元素之间的链接。
+> 嵌入与继承不同。 中的嵌入关系的子级不继承父项的属性。 嵌入是链接的一种模型元素之间。 继承类之间的关系并不会创建模型元素之间的链接。
 
 ### <a name="embedding-rules"></a>嵌入的规则
  实例模型中的每个元素必须是一个嵌入链接，但模型根除外的目标。

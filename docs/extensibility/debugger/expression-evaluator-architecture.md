@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2f32cde96d7be482d0283510bcc3f0c127db9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d486234bd220fd1a7b2a93ca88fd89e5119b2dbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411310"
 ---
 # <a name="expression-evaluator-architecture"></a>表达式计算器体系结构
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  将专有语言集成到 Visual Studio 中调试包意味着您必须设置所需的表达式计算器 (EE) 接口并调用公共语言运行时符号提供程序 (SP) 和绑定器接口。 SP 和联编程序对象，当前执行地址，以及是在其中计算表达式的上下文。 这些接口生成和使用的信息表示 EE 的体系结构中的关键概念。
 

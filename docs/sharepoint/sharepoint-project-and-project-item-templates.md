@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438999"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   以下各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。
@@ -80,7 +80,7 @@ ms.locfileid: "60040333"
  *内容类型*项可用于创建基于现有的 （基本） 内容类型，如文档、 公告或任务的自定义内容类型。 自定义内容类型作为基内容类型以及你定义的任何站点列 （字段） 提供相同的属性和字段。 例如，可以创建基于在 SharePoint 中涉及的基本联系人内容类型的自定义联系人内容类型。 您可以通过更改现有的站点列，或将更多的站点列添加到已包含基内容类型中的自定义内容类型。
 
 > [!NOTE]
->  由于 SharePoint 限制，无法创建基于沙盒解决方案内容类型的场解决方案内容类型。
+> 由于 SharePoint 限制，无法创建基于沙盒解决方案内容类型的场解决方案内容类型。
 
  有关详细信息，请参见[演练：创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)和[构建基块：内容类型](http://go.microsoft.com/fwlink/?LinkId=179413)。
 

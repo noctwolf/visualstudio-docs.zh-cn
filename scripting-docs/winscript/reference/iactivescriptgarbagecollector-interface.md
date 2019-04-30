@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b53a53c03a7b76050c8d4264048f0549f5142183
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009432"
 ---
 # <a name="iactivescriptgarbagecollector-interface"></a>IActiveScriptGarbageCollector 接口
 提供了一个方法以启动垃圾回收。 想要清理其资源的活动脚本引擎应实现此接口。  

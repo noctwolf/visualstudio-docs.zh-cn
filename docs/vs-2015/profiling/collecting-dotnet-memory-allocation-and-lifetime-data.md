@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436772"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配数据和生存期数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60112814"
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+> Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  可通过使用采样或检测分析方法收集数据。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60112814"
 - 使用检测方法时，探测器将仅跟踪由检测模块生成的 .NET 内存分配和对象。  
   
 > [!IMPORTANT]
->  如果正在使用采样方法收集 .NET 内存数据（分配和/或对象生存期），将忽略所有用户指定的采样事件，并使用相应的内存分配事件收集数据。  
+> 如果正在使用采样方法收集 .NET 内存数据（分配和/或对象生存期），将忽略所有用户指定的采样事件，并使用相应的内存分配事件收集数据。  
   
  如果启用了对 .NET 内存分配的分析，同时也将启用“分配”视图。 如果启用了对 .NET 生存期数据的分析，同时也将启用“对象生存期”视图。 有关详细信息，请参阅[“分配”视图](../profiling/dotnet-memory-allocations-view.md)和[“对象生存期”视图](../profiling/object-lifetime-view.md)。  
   

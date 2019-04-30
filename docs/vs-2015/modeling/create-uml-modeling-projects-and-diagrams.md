@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc537e76e87e519019cfbb1c3f612eb0a4bd6181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433360"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>创建 UML 建模项目和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
  UML 建模图和层关系图只可以存在于建模项目内。 每个建模项目包含一个共享的 UML 模型和几个 UML 关系图。 每个关系图是模型的部分视图。 UML 模型包含在 UML 关系图上的所有元素，并可以使用 UML 模型资源管理器来查看。 有关模型和及其与关系的信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。 有关版本控制下的建模项目的信息，请参阅[管理模型和版本控制下的关系图](../modeling/manage-models-and-diagrams-under-version-control.md)和[安排建模解决方案](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  还有另一种关系图，即 .NET 类关系图，它用于可视化程序代码。 有关详细信息，请参阅[设计和查看类和类型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
+> 还有另一种关系图，即 .NET 类关系图，它用于可视化程序代码。 有关详细信息，请参阅[设计和查看类和类型](http://go.microsoft.com/fwlink/?LinkId=142231)。  
   
 ## <a name="CreatingModelingDiagrams"></a> 在建模项目中创建关系图  
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -76,7 +76,7 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
 1. 在中**解决方案资源管理器**，单击建模项目节点。  
   
     > [!NOTE]
-    >  建模项目包含一个名为模型定义文件夹**ModelDefinition**。  
+    > 建模项目包含一个名为模型定义文件夹**ModelDefinition**。  
   
 2. 在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
@@ -87,7 +87,7 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
      建模图将打开并显示在建模项目中。  
   
     > [!CAUTION]
-    >  请勿添加、复制或将现有的关系图文件拖动到其他建模项目或解决方案中的其他位置。 这使元素从复制的关系图中消失或在你打开关系图时发生错误。 你必须从在其中创建的建模项目中打开关系图文件。 这是因为 UML 关系图是由其建模项目拥有的模型视图。 若要复制一个关系图文件，请创建一个新的关系图，然后将源关系图中的元素复制到新关系图中。 有关详细信息，请参阅[故障排除建模项目和关系图](#TroubleshootingModelingProjects)。  
+    > 请勿添加、复制或将现有的关系图文件拖动到其他建模项目或解决方案中的其他位置。 这使元素从复制的关系图中消失或在你打开关系图时发生错误。 你必须从在其中创建的建模项目中打开关系图文件。 这是因为 UML 关系图是由其建模项目拥有的模型视图。 若要复制一个关系图文件，请创建一个新的关系图，然后将源关系图中的元素复制到新关系图中。 有关详细信息，请参阅[故障排除建模项目和关系图](#TroubleshootingModelingProjects)。  
   
 #### <a name="to-create-a-blank-modeling-project"></a>要创建空白建模项目  
   
@@ -111,7 +111,7 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
      从项目和文件系统中删除该关系图。 在关系图上显示的元素不会从**UML 模型资源管理器**。  
   
     > [!NOTE]
-    >  每个关系图有两个文件，一个附属于另一个。 例如，如果你有一个名为`CD1`的组件关系图，你应该删除名为`CD1.componentdiagram`的文件。 名为`CD1.componentdiagram.layout`的附属文件将被自动删除。  
+    > 每个关系图有两个文件，一个附属于另一个。 例如，如果你有一个名为`CD1`的组件关系图，你应该删除名为`CD1.componentdiagram`的文件。 名为`CD1.componentdiagram.layout`的附属文件将被自动删除。  
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>若要暂时从项目中排除一个关系图  
   
@@ -120,14 +120,14 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
      该关系图从项目中移除。 它不是从文件系统中删除。  
   
     > [!NOTE]
-    >  在关系图上显示的元素不会从**UML 模型资源管理器**。  
+    > 在关系图上显示的元素不会从**UML 模型资源管理器**。  
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>若要把临时排除的关系图还原到项目中  
   
 1. 在中**解决方案资源管理器**，单击建模项目节点。  
   
     > [!NOTE]
-    >  建模项目包含一个名为模型定义文件夹**ModelDefinition**。  
+    > 建模项目包含一个名为模型定义文件夹**ModelDefinition**。  
   
 2. 上**项目**菜单上，单击**添加现有项**。  
   
@@ -136,7 +136,7 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
      建模图将打开并显示在建模项目中。  
   
     > [!NOTE]
-    >  每个关系图都包含文件系统中的一对文件。 不要选择扩展名为 `.layout` 的文件。 此外，Visual Studio 不支持将现有的 UML 关系图添加到多个建模项目中。 必须在其创建的建模项目中打开每个关系图文件。 这是因为 UML 关系图将显示其建模项目拥有的模型的视图。  
+    > 每个关系图都包含文件系统中的一对文件。 不要选择扩展名为 `.layout` 的文件。 此外，Visual Studio 不支持将现有的 UML 关系图添加到多个建模项目中。 必须在其创建的建模项目中打开每个关系图文件。 这是因为 UML 关系图将显示其建模项目拥有的模型的视图。  
   
 ## <a name="NonModelDiagrams"></a> 不需要建模项目的关系图  
  以下类型的关系图不是一个建模项目的一部分：  

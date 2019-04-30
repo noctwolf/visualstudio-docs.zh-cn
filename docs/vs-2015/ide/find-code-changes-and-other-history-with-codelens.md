@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa18bed0ff4dfa24de114f0b15c109dfba777c56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383952"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60055231"
 专注于你的工作并在同时了解你的代码所发生的情况 - 无需离开编辑器。 查找代码引用、代码更改、链接的 Bug、工作项、代码评审和单元测试。  
   
 > [!NOTE]
->  CodeLens 仅在 Visual Studio Enterprise 和 Visual Studio Professional 版中可用。 在 Visual Studio Community 版中不可用。  
+> CodeLens 仅在 Visual Studio Enterprise 和 Visual Studio Professional 版中可用。 在 Visual Studio Community 版中不可用。  
   
  了解各个部分的代码在解决方案中的使用位置和使用方式：  
   
