@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434498"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60060705"
 - 访问 Northwind 示例数据库有权执行更新。
   
 > [!NOTE]
->  对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-new-project"></a>创建新项目  
  通过创建新的 Windows 应用程序开始在演练。  
@@ -86,7 +86,7 @@ ms.locfileid: "60060705"
 3. 从可用连接列表中选择与 Northwind 示例数据库的连接。如果连接不可用的连接列表中，选择**新的连接**  
   
     > [!NOTE]
-    >  如果您要连接到本地数据库文件，选择**否**当系统询问是否要将文件添加到你的项目。  
+    > 如果您要连接到本地数据库文件，选择**否**当系统询问是否要将文件添加到你的项目。  
   
 4. 上**将连接字符串保存到应用程序配置文件**屏幕上，选择**下一步**。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60060705"
  在本部分中，您将添加代码，尝试更新数据库。你还处理任何<xref:System.Data.DBConcurrencyException>可能引发的以及任何其他异常。  
   
 > [!NOTE]
->  `CreateMessage`和`ProcessDialogResults`方法将添加在本演练后面。  
+> `CreateMessage`和`ProcessDialogResults`方法将添加在本演练后面。  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>若要添加的错误处理并发错误  
   
@@ -201,7 +201,7 @@ ms.locfileid: "60060705"
 6. 在第一条记录 (`ALFKI`) 更改`ContactName`到`Maria Anders2`。  
   
     > [!NOTE]
-    >  导航到不同的行以提交更改。  
+    > 导航到不同的行以提交更改。  
   
 7. 切换到`ConcurrencyWalkthrough`的运行窗体。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421253"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 3. 在左窗格中，选择“WindowsAzure.MobileServices” ，然后在右窗格中选择“安装”  按钮。  
   
     > [!NOTE]
-    >  如果显示“预览”  对话框，检查建议的更改，然后选择“确定”  按钮。  
+    > 如果显示“预览”  对话框，检查建议的更改，然后选择“确定”  按钮。  
   
 4. 在“接受许可证”  对话框中，查看许可协议条款，然后通过选择“我接受”  按钮接受这些条款。  
   
      必需的引用将添加到“解决方案资源管理器” 。  
   
     > [!NOTE]
-    >  如果不同意许可条款，选择“我拒绝”  按钮。 你将无法完成本演练的其余部分。  
+    > 如果不同意许可条款，选择“我拒绝”  按钮。 你将无法完成本演练的其余部分。  
   
 ## <a name="create-the-user-interface"></a>创建用户界面  
  下一步是创建应用程序的用户界面。 首先创建一个可重用用户控件，用于显示两个标准的并排窗格布局。 将用户控件添加到应用程序主窗口，并添加控件以输入和显示数据，然后编写一些代码来定义与移动服务的交互。  
@@ -288,7 +288,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
      ![设计器中的主窗口](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  在操作后面的几个程序期间，如果“错误列表”  处于打开状态，你可能会看到其中的错误。 别担心；一旦完成剩余程序，这些错误就会消失。  
+    > 在操作后面的几个程序期间，如果“错误列表”  处于打开状态，你可能会看到其中的错误。 别担心；一旦完成剩余程序，这些错误就会消失。  
   
 6. 在“解决方案资源管理器” 中，展开“MainWindow.xaml”  节点并打开“MainWindow.xaml.cs”  或“MainWindow.xaml.vb”  文件。  
   
@@ -482,7 +482,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 3. 在“新建移动服务”对话框中，选择“URL”文本框并输入 `wpfquickstart01`。  
   
     > [!NOTE]
-    >  你可能需要更改该 URL 的数字部分。 Microsoft Azure 要求每个移动服务的 URL 均唯一。  
+    > 你可能需要更改该 URL 的数字部分。 Microsoft Azure 要求每个移动服务的 URL 均唯一。  
   
      这将设置到服务的 URL `https://wpfquickstart01.azure-mobile.net/`。  
   
@@ -491,7 +491,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
 5. 在“区域”  列表中，选择想要在其中部署移动服务的数据中心，然后选择“下一步”  （右箭头）按钮。  
   
     > [!NOTE]
-    >  对于此服务，你需使用默认的“后端”  设置 **JavaScript**。  
+    > 对于此服务，你需使用默认的“后端”  设置 **JavaScript**。  
   
 6. 如果要创建新数据库，在“指定数据库设置”  页上的“服务器”  列表中，选择“新建 SQL 数据库服务器” ，输入你的 **SQL 登录名** 和 **密码**，然后选择“完成”  （复选标记）按钮。  
   

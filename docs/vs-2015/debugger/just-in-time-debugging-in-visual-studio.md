@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431446"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>在 Visual Studio 进行实时调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60116162"
 5. 关闭**注册表编辑器**窗口。
 
 > [!NOTE]
->  如果想要禁用中实时调试的服务器端应用程序，这些步骤未解决该问题关闭服务器端调试在 IIS 应用程序设置，然后重试。
+> 如果想要禁用中实时调试的服务器端应用程序，这些步骤未解决该问题关闭服务器端调试在 IIS 应用程序设置，然后重试。
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>为 Windows 窗体启用实时调试
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  为了使此过程工作[发布配置](../debugger/how-to-set-debug-and-release-configurations.md)，需要关闭[仅我的代码](../debugger/just-my-code.md)。 在 Visual Studio 中，单击**工具 / 选项**。 在中**选项**对话框中，选择**调试**。 清除该复选框，从**启用 ' 仅我的代码**。
+> 为了使此过程工作[发布配置](../debugger/how-to-set-debug-and-release-configurations.md)，需要关闭[仅我的代码](../debugger/just-my-code.md)。 在 Visual Studio 中，单击**工具 / 选项**。 在中**选项**对话框中，选择**调试**。 清除该复选框，从**启用 ' 仅我的代码**。
 
  生成解决方案 (在 Visual Studio 中，选择**生成 / 重新生成解决方案**)。 您可以选择调试或发布配置。 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  不要单击**取消**！ 将在几秒钟后，会看到两个按钮**调试**并**关闭程序**。 单击**调试**。
 
 > [!CAUTION]
->  如果你的应用程序包含不受信任的代码，将显示一个带有一条安全警告对话框。 此对话框使可以决定是否继续调试。 在继续调试之前，请决定你是否信任相应代码。 代码是你自己编写的吗？ 你是否信任代码编写者？ 如果该应用程序正在远程计算机上运行，你是否认识进程的名称？ 即便该应用程序在本地运行，也不一定表示它是可信的应用程序。 请考虑在您的计算机上运行的恶意代码的可能性。 如果你决定，该代码您即将调试值得信任，请单击**调试**。 否则，请单击**不调试**。
+> 如果你的应用程序包含不受信任的代码，将显示一个带有一条安全警告对话框。 此对话框使可以决定是否继续调试。 在继续调试之前，请决定你是否信任相应代码。 代码是你自己编写的吗？ 你是否信任代码编写者？ 如果该应用程序正在远程计算机上运行，你是否认识进程的名称？ 即便该应用程序在本地运行，也不一定表示它是可信的应用程序。 请考虑在您的计算机上运行的恶意代码的可能性。 如果你决定，该代码您即将调试值得信任，请单击**调试**。 否则，请单击**不调试**。
 
  **Visual Studio 实时调试器**窗口将显示：
 
