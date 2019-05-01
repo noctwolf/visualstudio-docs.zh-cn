@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446054"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>为 Windows 应用商店控件设置唯一的自动化属性以进行测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60107029"
  **Blend for Visual Studio:** 使用以下方法之一执行此操作从 Blend for Visual Studio。  
   
 > [!NOTE]
->  只能对使用 XAML 静态创建的控件使用此类方法。  
+> 只能对使用 XAML 静态创建的控件使用此类方法。  
   
  **为现有控件指定唯一名称的具体步骤**  
   
@@ -136,7 +136,7 @@ ms.locfileid: "60107029"
  对于这两个示例，必须替代 ItemSource 的 ToString() 方法，如以下代码所示。 此代码可确保设置唯一的 AutomationProperties.Name 值，因为无法通过绑定为每个数据绑定列表项设置唯一自动化属性。 在这种情况下，设置唯一的 AutomationProperties.Name 值就足够了。  
   
 > [!NOTE]
->  使用这种方法，还可以通过绑定将列表项的内部内容设为 Employee 类中的字符串。 如示例所示，可以为每个列表项中的按钮控件分配唯一自动化 ID（即员工 ID）。  
+> 使用这种方法，还可以通过绑定将列表项的内部内容设为 Employee 类中的字符串。 如示例所示，可以为每个列表项中的按钮控件分配唯一自动化 ID（即员工 ID）。  
   
 ```  
   

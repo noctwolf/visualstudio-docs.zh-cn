@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416648"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "60059248"
 ```  
   
 > [!WARNING]
->  符号解析可能很耗时，尤其是在使用包含大量程序集的远程文件位置时。 因此，请考虑将远程 .pdb 文件复制到与二进制文件（.dll 和 .exe）相同的本地位置。  
+> 符号解析可能很耗时，尤其是在使用包含大量程序集的远程文件位置时。 因此，请考虑将远程 .pdb 文件复制到与二进制文件（.dll 和 .exe）相同的本地位置。  
   
 ### <a name="excluding-and-including"></a>排除和包括  
  你可以从代码覆盖率分析中排除指定的程序集。 例如：  
@@ -134,7 +134,7 @@ ms.locfileid: "60059248"
 ```  
   
 > [!WARNING]
->  如果正则表达式中存在错误（如未转义和不匹配的括号），则不会运行代码覆盖率分析。  
+> 如果正则表达式中存在错误（如未转义和不匹配的括号），则不会运行代码覆盖率分析。  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>包括或排除元素的其他方法  
  有关示例，请参阅[本主题结尾的示例](#sample)。  

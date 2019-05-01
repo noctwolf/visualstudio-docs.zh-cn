@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416508"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "60118001"
  在解决方案资源管理器中，打开 **“UIMap.uitest”** 的快捷菜单，然后选择 **“打开”**。 编码的 UI 测试编辑器中将显示编码的 UI 测试。 现在，你可以查看和编辑编码的 UI 测试中记录的方法、操作和和相应的控件。  
   
 > [!TIP]
->  当选择位于 **“UI 操作”** 窗格中的方法中的 UI 操作时，将突出显示相应的控件。 你还可以修改 UI 操作或控件属性。  
+> 当选择位于 **“UI 操作”** 窗格中的方法中的 UI 操作时，将突出显示相应的控件。 你还可以修改 UI 操作或控件属性。  
   
  *我看不到* 编码的 UI 测试编辑器。  
  你可能正在使用的 Visual Studio Enterprise 2012 之前的版本。 订阅 MSDN 的 Visual Studio 2010 功能包 2 中也提供编码的 UI 测试编辑器。 [!INCLUDE[crdefault](../includes/crdefault-md.md)] [Microsoft Visual Studio 2010 功能包 2](http://go.microsoft.com/fwlink/?LinkID=204119)。  
@@ -75,7 +75,7 @@ ms.locfileid: "60118001"
   
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。  
   
- 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 <http://Contoso1/default.aspx’>”的 Web 浏览器关联，则可以将 URL 更改为 `‘http://Contoso2/default.aspx’`。  
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 <http://Contoso1/default.aspx’>”的 Web 浏览器关联，则可以将 URL 更改为 `‘ http://Contoso2/default.aspx’`。  
   
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 编辑控件属性  
