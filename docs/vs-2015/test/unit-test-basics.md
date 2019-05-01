@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445987"
 ---
 # <a name="unit-test-basics"></a>单元测试基础
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60069908"
 ### <a name="BKMK_Quick_starts"></a> 快速入门  
  关于直接进入编码的单元测试的简介，请参阅以下主题之一：  
   
-- [演练：创建和运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
 - [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. 若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。  
   
    > [!WARNING]
-   >  并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。  
+   > 并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。  
   
 8. 在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> 每次生成后运行测试  
   
 > [!WARNING]
->  仅在 Visual Studio Enterprise 中支持每次生成后运行单元测试。  
+> 仅在 Visual Studio Enterprise 中支持每次生成后运行单元测试。  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. 在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
   
    > [!NOTE]
-   >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
+   > 因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
   
 2. 在测试资源管理器中，选择测试方法，然后从快捷菜单选择“调试选定的测试”  。  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **答：** 可以。 *数据驱动的测试方法* 使你可以用单个单元测试方法测试一系列值。 对指定包含你想要测试的变量值的数据源和表的测试方法使用 `DataSource` 属性。  在方法体中，你可以使用 `TestContext.DataRow[`*ColumnName*`]` 索引器将行值分配给变量。  
   
 > [!NOTE]
->  这些过程仅适用于你使用 Microsoft 单元测试框架为托管代码编写的测试方法。 如果你在使用不同的框架，请查阅框架文档，获取等效的功能。  
+> 这些过程仅适用于你使用 Microsoft 单元测试框架为托管代码编写的测试方法。 如果你在使用不同的框架，请查阅框架文档，获取等效的功能。  
   
  例如，假定我们将不必要的方法添加到名为 `CheckingAccount` 的 `AddIntegerHelper`类中。 `AddIntegerHelper` 添加两个整数。  
   

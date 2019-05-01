@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446231"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60107991"
 ### <a name="BKMK_Run_tests_after_every_build"></a>每次生成后运行测试  
   
 > [!WARNING]
->  Visual Studio Enterprise 支持在每次生成后运行单元测试。  
+> Visual Studio Enterprise 支持在每次生成后运行单元测试。  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![在测试资源管理器中筛选测试](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  搜索不区分大小，并将指定字符串与条件值的任何部分匹配。  
+> 搜索不区分大小，并将指定字符串与条件值的任何部分匹配。  
   
 |限定符|描述|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. 在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
   
    > [!NOTE]
-   >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
+   > 因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
   
 2. 在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a>分析单元测试代码覆盖率  
   
 > [!NOTE]
->  单元测试代码覆盖率仅在 Visual Studio Enterprise 中可用。  
+> 单元测试代码覆盖率仅在 Visual Studio Enterprise 中可用。  
   
  你可以使用 Visual Studio 代码覆盖率工具确定你的单元测试实际测试的产品代码量。 你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。  
   
