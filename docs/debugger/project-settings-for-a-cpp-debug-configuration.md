@@ -1,5 +1,5 @@
 ---
-title: C + + 调试配置的项目设置
+title: 项目设置为C++调试配置
 ms.custom: seodec18
 ms.date: 11/26/2018
 ms.topic: reference
@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407888"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
-可以更改 C 或 Visual c + + 调试配置中的项目设置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。
+可以更改 C 或视觉对象的项目设置C++中的调试配置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。
 
 > [!NOTE]
->  中的调试项目设置**配置属性/调试**类别和有不同于 UWP 应用的 c + + 编写的组件。 请参阅[启动调试会话 (VB、 C#，c + + 和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
+> 中的调试项目设置**配置属性/调试**类别和有不同于 UWP 应用中编写的组件的C++。 请参阅[启动调试会话 (VB、 C#，C++和 XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)。
 
  每个调试属性设置为自动写入并保存到"按用户"文件 (。 vcxproj.user) 为您的解决方案时将保存你的解决方案。
 
@@ -142,8 +142,8 @@ ms.locfileid: "56722234"
 | **远程服务器名称**（远程 Windows 调试器） | 指定您要在其上调试应用程序的计算机（不是您的计算机）的名称。<br /><br /> RemoteMachine 生成宏被设置为此属性的值；有关详细信息，请参阅[用于生成命令和属性的宏](/cpp/ide/common-macros-for-build-commands-and-properties)。 |
 | **连接**（远程 Windows 调试器） | 允许您在远程调试的标准与非身份验证连接类型之间切换。 在“远程服务器名称”框中指定远程计算机的名称。 连接类型包括：<br /><br /> -   带 Windows 身份验证的远程访问<br />-   不带身份验证的远程访问<br /><br /> 注意：不带身份验证的远程调试可能会使远程计算机容易受到安全侵犯。 Windows 身份验证模式更安全。<br /><br /> 有关详细信息，请参阅[远程调试安装](../debugger/remote-debugging.md)。 |
 | **HTTP URL**（Web 服务调试器和 Web 浏览器调试器） | 指定您要调试的项目所在的 URL。 |
-| 调试器类型 | 指定要使用的调试器类型：“仅限本机”、“仅限托管”、“仅限 GPU”、“混合”、“自动”（默认）或“脚本”。<br /><br /> -   “仅限本机”用于非托管 C++ 代码。<br />-   “仅限托管”适用于在公共语言运行时下运行的代码（托管代码）。<br />-   “混合”对托管代码和非托管代码都调用调试器。<br />-   “自动”将根据编译器和 EXE 信息确定调试器类型。<br />-   “脚本”调用脚本调试器。<br />-   “仅限 GPU”用于在 GPU 设备或 DirectX 参考光栅器上运行的 C++ AMP 代码。 请参阅[调试 GPU 代码](../debugger/debugging-gpu-code.md)。 |
-| **环境**（本地 Windows 调试器和远程 Windows 调试器） | 为要调试的程序指定环境变量。 使用标准环境变量语法 (例如， `PATH="%SystemRoot%\..."`)。 根据“合并环境”设置的不同，这些变量将重写系统环境或与系统环境合并。 当您左键单击设置列中时，"编辑..."会显示。 选择该链接可编辑环境变量。 |
+| 调试器类型 | 指定要使用的调试器类型：**仅限本机**，**仅限托管**，**仅限 GPU**，**混合**，**自动**（默认值），或**脚本**.<br /><br /> -   “仅限本机”用于非托管 C++ 代码。<br />-   “仅限托管”适用于在公共语言运行时下运行的代码（托管代码）。<br />-   “混合”对托管代码和非托管代码都调用调试器。<br />-   “自动”将根据编译器和 EXE 信息确定调试器类型。<br />-   “脚本”调用脚本调试器。<br />-   “仅限 GPU”用于在 GPU 设备或 DirectX 参考光栅器上运行的 C++ AMP 代码。 请参阅[调试 GPU 代码](../debugger/debugging-gpu-code.md)。 |
+| **环境**（本地 Windows 调试器和远程 Windows 调试器） | 为要调试的程序指定环境变量。 使用标准环境变量语法 (例如， `PATH="%SystemRoot%\..."`)。 根据“合并环境”设置的不同，这些变量将重写系统环境或与系统环境合并。 当你在设置列中，左键单击"编辑。..."将出现。 选择该链接可编辑环境变量。 |
 | **合并环境**（本地 Windows 调试器） | 确定在“环境”框中指定的变量是否与操作系统定义的环境合并。 默认设置为“是”。 |
 | **SQL 调试**（除 MPI 群集调试器外的所有调试器） | 启用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 应用程序中的 SQL 过程的调试。 默认设置为“否”。 |
 | **调试加速器类型**（仅限 GPU 调试） | 指定要用于调试的 GPU 设备。 为兼容的 GPU 设备安装设备驱动器将添加其他选项。 默认设置为“GPU - 软件仿真程序”。 |
@@ -155,19 +155,19 @@ ms.locfileid: "56722234"
 
 ## <a name="cc-folder-general-category"></a>“C/C++”文件夹（“常规”类别）
 
-|设置|说明|
+|设置|描述|
 |-------------|-----------------|
 |**调试信息格式**([/Z7、/Zd、/Zi、/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format))|指定要为项目创建的调试信息类型。<br /><br /> 默认选项 (/ZI) 以“编辑并继续”的兼容格式创建程序数据库 (PDB)。 有关详细信息，请参阅 [/Z7、/Zd、/Zi、/ZI（调试信息格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)。|
 
 ## <a name="cc-folder-optimization-category"></a>“C/C++”文件夹（“优化”类别）
 
-|设置|说明|
+|设置|描述|
 |-------------|-----------------|
 |**优化**|指定编译器是否应优化其生成的代码。 优化过程将更改执行的代码。 优化的代码不再与匹配的源代码，使调试更加困难。<br /><br /> 默认选项（“禁用(/0d)”）取消优化。 你可以在开发时取消优化，然后在创建代码的产品版本时再启用优化。|
 
 ## <a name="linker-folder-debugging-category"></a>“链接器”文件夹（“调试”类别）
 
-|设置|说明|
+|设置|描述|
 |-------------|-----------------|
 |**生成调试信息** ([/DEBUG](/cpp/build/reference/debug-generate-debug-info))|通知链接器包含调试信息，这些信息具有 [/Z7、/Zd、/Zi 或 /ZI](/cpp/build/reference/z7-zi-zi-debug-information-format) 指定的格式。|
 |**生成程序数据库文件** ([/PDB:name](/cpp/build/reference/pdb-use-program-database))|在此框中指定的程序数据库 (PDB) 文件的名称。 必须为“调试信息格式”选择 /ZI 或 /Zi。|
@@ -177,7 +177,7 @@ ms.locfileid: "56722234"
 |**映射导出** ([/MAPINFO:EXPORTS](/cpp/build/reference/mapinfo-include-information-in-mapfile))|在映射文件中包含导出函数。 默认设置为“否”。 有关详细信息，请参阅[/MAPINFO （包含映射文件中信息）](/cpp/build/reference/mapinfo-include-information-in-mapfile)。|
 |**可调试程序集** ([/ASSEMBLYDEBUG](/cpp/build/reference/mapinfo-include-information-in-mapfile))|为链接器 /ASSEMBLYDEBUG 选项指定设置。 可能的值有：<br /><br /> -   未发送可调试属性。<br />-   运行时跟踪和禁用优化 (/ASSEMBLYDEBUG)。 此设置为默认设置。<br />-   无运行时跟踪和启用优化 (/ASSEMBLYDEBUG:DISABLE)。<br />-   \<从父级或项目默认设置继承>。<br />有关详细信息，请参阅 [/ASSEMBLYDEBUG（添加 DebuggableAttribute）](/cpp/build/reference/assemblydebug-add-debuggableattribute)。|
 
- 通过使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 接口，可以在“配置属性”文件夹（“调试”类别）中以编程方式更改这些设置。 有关更多信息，请参见<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。
+ 通过使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 接口，可以在“配置属性”文件夹（“调试”类别）中以编程方式更改这些设置。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。
 
 ## <a name="other-project-settings"></a>其他项目设置
 
@@ -188,6 +188,6 @@ ms.locfileid: "56722234"
 ## <a name="see-also"></a>请参阅
 - [调试本机代码](../debugger/debugging-native-code.md)
 - [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)
-- [创建和管理 Visual c + + 项目](/cpp/ide/creating-and-managing-visual-cpp-projects)
+- [创建和管理 VisualC++项目](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG（添加 DebuggableAttribute）](/cpp/build/reference/assemblydebug-add-debuggableattribute)
 - [用于生成命令和属性的常用宏](/cpp/ide/common-macros-for-build-commands-and-properties)

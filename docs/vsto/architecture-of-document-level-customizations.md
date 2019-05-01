@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440371"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文档级自定义项的体系结构
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包括用于为 Microsoft Office Word 和 Microsoft Office Excel 创建文档级自定义项的项目。 本主题介绍文档级自定义项的以下方面：
@@ -49,7 +49,7 @@ ms.locfileid: "60051995"
  如果用户同时打开多个文档级自定义项，则会在不同的应用程序域中加载每个程序集。 这意味着，一个行为不正确的解决方案不会导致其他解决方案失败。 文档级自定义项设计为与单个应用程序域中的单个文档协同工作。 它们并不会用于跨文档通信。 有关应用程序域的详细信息，请参阅[应用程序域](/dotnet/framework/app-domains/application-domains)。
 
 > [!NOTE]
->  对于使用 Visual Studio 中的 Office 开发人员工具创建的文档级自定义项，仅当应用程序由最终用户启动时才会使用它。 例如，如果通过使用自动化以编程方式启动应用程序，则自定义项可能无法按预期方式工作。
+> 对于使用 Visual Studio 中的 Office 开发人员工具创建的文档级自定义项，仅当应用程序由最终用户启动时才会使用它。 例如，如果通过使用自动化以编程方式启动应用程序，则自定义项可能无法按预期方式工作。
 
 ### <a name="design-time-and-run-time-experiences"></a>设计时和运行时的体验
  了解文档级自定义项的体系结构有助于了解设计解决方案和运行解决方案的体验。
@@ -118,7 +118,7 @@ ms.locfileid: "60051995"
  ![2007 office 自定义体系结构](../vsto/media/office07-custom.png "2007 Office 自定义体系结构")
 
 > [!NOTE]
->  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 Office 解决方案中，解决方案通过使用嵌入解决方案程序集中的主互操作程序集 (PIA) 类型信息调入主机应用程序的对象模型，而不直接调入 PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
+> 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 Office 解决方案中，解决方案通过使用嵌入解决方案程序集中的主互操作程序集 (PIA) 类型信息调入主机应用程序的对象模型，而不直接调入 PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
 
 ### <a name="loading-process"></a>加载过程
  当用户打开属于 Microsoft Office 解决方案的文档时，将执行以下步骤。

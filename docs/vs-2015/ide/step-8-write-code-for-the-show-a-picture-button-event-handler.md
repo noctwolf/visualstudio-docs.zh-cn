@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d0eb491a2dbe0b6fc290cefb665bcb931f8a1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428613"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Visual C# 代码
     3. 键入句点 (`.`)（许多程序员称此符号为点）。由于在“openFileDialog1”的后面紧接着键入了一个句点，因此“IntelliSense”窗口将打开，其中填充有“OpenFileDialog”组件的所有属性和方法。 在 Windows 窗体设计器中选择该组件时，“属性”窗口中将显示相同的属性。 您还可选择将告知组件要执行的操作（例如打开对话框）的方法。  
   
         > [!NOTE]
-        >  “IntelliSense”窗口可以同时显示属性和方法。 若要确定所显示的内容，请查看“IntelliSense”窗口中每一项左侧的图标。 您将看到每种方法旁都有一个块型图片，每个属性旁都有一个扳手图片。 每个事件旁边还会有一个闪电形图标。 这些图片如下所示。  
+        > “IntelliSense”窗口可以同时显示属性和方法。 若要确定所显示的内容，请查看“IntelliSense”窗口中每一项左侧的图标。 您将看到每种方法旁都有一个块型图片，每个属性旁都有一个扳手图片。 每个事件旁边还会有一个闪电形图标。 这些图片如下所示。  
   
          ![“方法”图标](../ide/media/express-iconmethod.png "Express_IconMethod")  
 “方法”图标  
@@ -72,21 +72,21 @@ Visual C# 代码
     5. 对控件或组件使用方法（称为“调用方法”）时，需要添加圆括号。 因此，在 `ShowDialog` 中的“g”之后立即输入左括号和右括号：`()` 它现在应该看起来像“openFileDialog1.ShowDialog()”。  
   
         > [!NOTE]
-        >  方法是所有程序的重要组成部分，本教程演示了方法的多种使用方式。 可以调用组件的方法告诉组件要执行的操作，这与调用“OpenFileDialog”组件的 `ShowDialog()` 方法的方式类似。 您可创建自己的方法来使程序执行操作，如您现在正构建的名为 `showButton_Click()` 方法的方法，该方法将在用户选择一个按钮时打开对话框和图片。  
+        > 方法是所有程序的重要组成部分，本教程演示了方法的多种使用方式。 可以调用组件的方法告诉组件要执行的操作，这与调用“OpenFileDialog”组件的 `ShowDialog()` 方法的方式类似。 您可创建自己的方法来使程序执行操作，如您现在正构建的名为 `showButton_Click()` 方法的方法，该方法将在用户选择一个按钮时打开对话框和图片。  
   
     6. 对于 Visual C#，添加一个空格，然后添加两个等号 (`==`)。 对于 Visual Basic，添加一个空格，然后使用单个等号 (`=`)。 （Visual C# 和 Visual Basic 使用不同的相等运算符。）  
   
     7. 添加另一个空格。 一旦这样做之后，另一个“IntelliSense”窗口将打开。 开始键入 `DialogResult`，然后选择 Tab 键以进行添加。  
   
         > [!NOTE]
-        >  当编写代码来调用方法时，有时代码会返回一个值。 在这种情况下，“OpenFileDialog”组件的 `ShowDialog()` 方法会返回一个 DialogResult 值。 DialogResult 是一个特殊的值，此值告诉您对话框中所发生的改变。 “OpenFileDialog”组件可让用户选择“OK”或“Cancel”，这样它的 `ShowDialog()` 方法将返回 DialogResult.OK 或 DialogResult.Cancel。  
+        > 当编写代码来调用方法时，有时代码会返回一个值。 在这种情况下，“OpenFileDialog”组件的 `ShowDialog()` 方法会返回一个 DialogResult 值。 DialogResult 是一个特殊的值，此值告诉您对话框中所发生的改变。 “OpenFileDialog”组件可让用户选择“OK”或“Cancel”，这样它的 `ShowDialog()` 方法将返回 DialogResult.OK 或 DialogResult.Cancel。  
   
     8. 键入一个点，在“IntelliSense”窗口中打开 DialogResult 值。 输入字母 `O`，然后选择 Tab 键插入“OK”。  
   
          若要了解有关 `DialogResult` 的详细信息，请参阅 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
   
         > [!NOTE]
-        >  第一行代码应会完成。 对于 Visual C#，此代码行应如下所示。  
+        > 第一行代码应会完成。 对于 Visual C#，此代码行应如下所示。  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   
