@@ -171,7 +171,7 @@ DXCap.exe –e map
  **Publisher        ：CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
  **Version          ：2.1.2914.1734**  
  **可启动应用程序：**  
- **Id:AppexMaps**  
+ **Id   :AppexMaps**  
  **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA：No**  
  **AppSpec （将启动）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。  

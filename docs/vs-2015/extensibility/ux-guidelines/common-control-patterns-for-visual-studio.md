@@ -66,7 +66,7 @@ ms.locfileid: "63430037"
 
 - 只读字段将具有灰色 （禁用） 背景但 （活动） 的默认前景色。
 
-- 所需的字段应有**\<所需 >** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。
+- 所需的字段应有 **\<所需>** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。
 
 - 错误验证：请参阅[Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
