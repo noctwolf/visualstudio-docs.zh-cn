@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d36c5dafa37673263ab13dc46c7f02e44448fd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8759145dd4a7647cad6e9964ae1f1c97d333b626
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226157"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 复制文件的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "63441619"
 
    - 若要发布到文件共享或磁盘路径，通过使用 UNC 路径，或者输入的路径 (\\\Server\ApplicationName) 或文件路径 (C:\Deploy\ApplicationName)。
 
-   - 若要发布到 FTP 服务器，请使用格式 ftp://ftp.microsoft.com/ApplicationName 输入路径。
+   - 若要将发布到 FTP 服务器，输入在路径中使用格式 ftp:\//ftp.microsoft.com/ApplicationName。
 
      请注意，“发布位置”框中必须存在文本才能使浏览（“...”）按钮正常工作。
 

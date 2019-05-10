@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2ce15c905ee12e1c3f45db5e5044b171db3527d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d4da7513d0cbee0ee4f6c78818fc79ef029b4a2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916368"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458659"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 此接口是通过调试引擎 (DE) 后发送给会话调试管理器 (SDM) 单步执行带或过程执行函数。

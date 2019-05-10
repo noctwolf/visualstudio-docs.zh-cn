@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420825"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458334"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 指定要检索的符号信息的类型。
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>成员
- SSIF_NONE 指示任何标志
+## <a name="fields"></a>字段
+ `SSIF_NONE`\
+ 不指示任何标志
 
- SSIF_VERBOSE_SEARCH_INFO 返回所有搜索路径用于查找符号
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ 返回所有搜索路径用于查找符号
 
 ## <a name="remarks"></a>备注
  这些标志作为参数传递给[GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)方法来确定的少量信息返回。

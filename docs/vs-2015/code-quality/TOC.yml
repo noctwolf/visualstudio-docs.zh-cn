@@ -3,8 +3,9 @@
   expanded: true
   items:
     - name: 分析托管代码质量
-      href: analyzing-managed-code-quality-by-using-code-analysis.md
       items:
+        - name: 分析托管代码质量
+          href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: 托管代码的代码分析概述
           href: code-analysis-for-managed-code-overview.md
         - name: 如何：启用和禁用自动代码分析
@@ -18,37 +19,41 @@
         - name: 演练：分析托管代码的代码缺陷
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 使用 SuppressMessage 特性禁止显示警告
-          href: suppress-warnings-by-using-the-suppressmessage-attribute.md
           items:
+            - name: 使用 SuppressMessage 特性禁止显示警告
+              href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: “源代码中禁止显示”概述
               href: in-source-suppression-overview.md
             - name: 如何：使用菜单项禁止显示警告
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-        - name: 如何：禁止显示所生成代码的警告
-          href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: 如何：自定义代码分析字典
-          href: how-to-customize-the-code-analysis-dictionary.md
-        - name: 匿名方法和代码分析
-          href: anonymous-methods-and-code-analysis.md
-        - name: 如何：查看托管代码缺陷
-          href: how-to-view-managed-code-defects.md
-        - name: 如何：创建托管代码缺陷的工作项
-          href: how-to-create-a-work-item-for-a-managed-code-defect.md
-        - name: 托管代码的代码分析警告
-          href: code-analysis-for-managed-code-warnings.md
-          items:
-            - name: 按 CheckId 排列的警告
-              href: code-analysis-warnings-for-managed-code-by-checkid.md
-            - name: 加密警告
-              href: cryptography-warnings.md
+            - name: 如何：禁止显示所生成代码的警告
+              href: how-to-suppress-code-analysis-warnings-for-generated-code.md
+            - name: 如何：自定义代码分析字典
+              href: how-to-customize-the-code-analysis-dictionary.md
+            - name: 匿名方法和代码分析
+              href: anonymous-methods-and-code-analysis.md
+            - name: 如何：查看托管代码缺陷
+              href: how-to-view-managed-code-defects.md
+            - name: 如何：创建托管代码缺陷的工作项
+              href: how-to-create-a-work-item-for-a-managed-code-defect.md
+            - name: 托管代码的代码分析警告
               items:
-                - name: 'CA5350:请勿使用弱加密算法'
-                  href: ca5350-do-not-use-weak-cryptographic-algorithms.md
-                - name: CA5351 不使用损坏的加密算法
-                  href: ca5351-do-not-use-broken-cryptographic-algorithms.md
+                - name: 托管代码的代码分析警告
+                  href: code-analysis-for-managed-code-warnings.md
+                - name: 按 CheckId 排列的警告
+                  href: code-analysis-warnings-for-managed-code-by-checkid.md
+                - name: 加密警告
+                  items:
+                    - name: 加密警告
+                      href: cryptography-warnings.md
+                    - name: 'CA5350:请勿使用弱加密算法'
+                      href: ca5350-do-not-use-weak-cryptographic-algorithms.md
+                    - name: CA5351 不使用损坏的加密算法
+                      href: ca5351-do-not-use-broken-cryptographic-algorithms.md
             - name: 设计警告
-              href: design-warnings.md
               items:
+                - name: 设计警告
+                  href: design-warnings.md
                 - name: 'CA1000:不要在泛型类型中声明静态成员'
                   href: ca1000-do-not-declare-static-members-on-generic-types.md
                 - name: 'CA1001:具有可释放字段的类型应该是可释放的'
@@ -174,8 +179,9 @@
                 - name: 'CA2210:程序集应具有有效的强名称'
                   href: ca2210-assemblies-should-have-valid-strong-names.md
             - name: 全球化警告
-              href: globalization-warnings.md
               items:
+                - name: 全球化警告
+                  href: globalization-warnings.md
                 - name: 'CA1300:指定 MessageBoxOptions'
                   href: ca1300-specify-messageboxoptions.md
                 - name: 'CA1301:避免快捷键重复'
@@ -199,8 +205,9 @@
                 - name: 'CA2101:指定对 P/Invoke 字符串参数进行封送处理'
                   href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
             - name: 互操作性警告
-              href: interoperability-warnings.md
               items:
+                - name: 互操作性警告
+                  href: interoperability-warnings.md
                 - name: 'CA1400:P/Invoke 入口点应该存在'
                   href: ca1400-p-invoke-entry-points-should-exist.md
                 - name: 'CA1401:P/Invokes 应该是不可见的'
@@ -233,368 +240,380 @@
                   href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
                 - name: 'CA1415:正确声明 P/Invoke'
                   href: ca1415-declare-p-invokes-correctly.md
-            - name: 维护性警告
-              href: maintainability-warnings.md
-              items:
-                - name: 'CA1500:变量名不应与字段名相同'
-                  href: ca1500-variable-names-should-not-match-field-names.md
-                - name: 'CA1501:避免过度继承'
-                  href: ca1501-avoid-excessive-inheritance.md
-                - name: 'CA1502:避免过度复杂'
-                  href: ca1502-avoid-excessive-complexity.md
-                - name: 'CA1504:检查令人误解的字段名'
-                  href: ca1504-review-misleading-field-names.md
-                - name: 'CA1505:避免使用无法维护的代码'
-                  href: ca1505-avoid-unmaintainable-code.md
-                - name: 'CA1506:避免过度类耦合度'
-                  href: ca1506-avoid-excessive-class-coupling.md
-            - name: 移动性警告
-              href: mobility-warnings.md
-              items:
-                - name: 'CA1600:不要使用 Idle 进程优先级'
-                  href: ca1600-do-not-use-idle-process-priority.md
-                - name: 'CA1601:不要使用阻止电源状态更改的计时器'
-                  href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-            - name: 命名警告
-              href: naming-warnings.md
-              items:
-                - name: 'CA1700:不要命名“Reserved”枚举值'
-                  href: ca1700-do-not-name-enum-values-reserved.md
-                - name: 'CA1701:资源字符串组合词应采用正确的大小写'
-                  href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
-                - name: 'CA1702:组合词应采用正确的大小写'
-                  href: ca1702-compound-words-should-be-cased-correctly.md
-                - name: 'CA1703:资源字符串应正确拼写'
-                  href: ca1703-resource-strings-should-be-spelled-correctly.md
-                - name: 'CA1704:标识符应正确拼写'
-                  href: ca1704-identifiers-should-be-spelled-correctly.md
-                - name: 'CA1707:标识符不应包含下划线'
-                  href: ca1707-identifiers-should-not-contain-underscores.md
-                - name: 'CA1708:标识符应以大小写之外的差别进行区分'
-                  href: ca1708-identifiers-should-differ-by-more-than-case.md
-                - name: 'CA1709:标识符的大小写应当正确'
-                  href: ca1709-identifiers-should-be-cased-correctly.md
-                - name: 'CA1710:标识符应具有正确的后缀'
-                  href: ca1710-identifiers-should-have-correct-suffix.md
-                - name: 'CA1711:标识符应采用正确的后缀'
-                  href: ca1711-identifiers-should-not-have-incorrect-suffix.md
-                - name: 'CA1712:不要将类型名用作枚举值的前缀'
-                  href: ca1712-do-not-prefix-enum-values-with-type-name.md
-                - name: 'CA1713:事件不应具有 before 或 after 前缀'
-                  href: ca1713-events-should-not-have-before-or-after-prefix.md
-                - name: 'CA1714:Flags 枚举应采用复数形式的名称'
-                  href: ca1714-flags-enums-should-have-plural-names.md
-                - name: 'CA1715:标识符应具有正确的前缀'
-                  href: ca1715-identifiers-should-have-correct-prefix.md
-                - name: 'CA1716:标识符不应与关键字冲突'
-                  href: ca1716-identifiers-should-not-match-keywords.md
-                - name: 'CA1717:只有 FlagsAttribute 枚举应采用复数形式的名称'
-                  href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
-                - name: 'CA1719:参数名不应与成员名冲突'
-                  href: ca1719-parameter-names-should-not-match-member-names.md
-                - name: 'CA1720:标识符不应包含类型名称'
-                  href: ca1720-identifiers-should-not-contain-type-names.md
-                - name: 'CA1721:属性名不应与 get 方法冲突'
-                  href: ca1721-property-names-should-not-match-get-methods.md
-                - name: 'CA1722:标识符应采用正确的前缀'
-                  href: ca1722-identifiers-should-not-have-incorrect-prefix.md
-                - name: 'CA1725:参数名应与基方法中的声明保持一致'
-                  href: ca1725-parameter-names-should-match-base-declaration.md
-                - name: 'CA1724:类型名不应与命名空间冲突'
-                  href: ca1724-type-names-should-not-match-namespaces.md
-                - name: 'CA1726:使用首选词条'
-                  href: ca1726-use-preferred-terms.md
-            - name: 性能警告
-              href: performance-warnings.md
-              items:
-                - name: 'CA1800:避免进行不必要的强制转换'
-                  href: ca1800-do-not-cast-unnecessarily.md
-                - name: 'CA1802:在合适的位置使用文本'
-                  href: ca1802-use-literals-where-appropriate.md
-                - name: 'CA1804:移除未使用的局部变量'
-                  href: ca1804-remove-unused-locals.md
-                - name: 'CA1809:避免过多的局部变量'
-                  href: ca1809-avoid-excessive-locals.md
-                - name: 'CA1810:以内联方式初始化引用类型的静态字段'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
-                - name: 'CA1811:避免使用未调用的私有代码'
-                  href: ca1811-avoid-uncalled-private-code.md
-                - name: 'CA1812:避免未实例化的内部类'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
-                - name: 'CA1813:避免使用非密封特性'
-                  href: ca1813-avoid-unsealed-attributes.md
-                - name: 'CA1814:与多维数组相比，首选使用交错数组'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
-                - name: 'CA1815:重写值类型上的 Equals 和相等运算符'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
-                - name: 'CA1819:属性不应返回数组'
-                  href: ca1819-properties-should-not-return-arrays.md
-                - name: 'CA1820:使用字符串长度测试是否有空字符串'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
-                - name: 'CA1821:移除空终结器'
-                  href: ca1821-remove-empty-finalizers.md
-                - name: 'CA1822:将成员标记为 static'
-                  href: ca1822-mark-members-as-static.md
-                - name: 'CA1823:避免未使用的私有字段'
-                  href: ca1823-avoid-unused-private-fields.md
-                - name: 'CA1824:用 NeutralResourcesLanguageAttribute 标记程序集'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-            - name: 可移植性警告
-              href: portability-warnings.md
-              items:
-                - name: 'CA1900:值类型字段应为可移植字段'
-                  href: ca1900-value-type-fields-should-be-portable.md
-                - name: 'CA1901:P/Invoke 声明应为可移植声明'
-                  href: ca1901-p-invoke-declarations-should-be-portable.md
-                - name: 'CA1903:仅使用目标框架中的 API'
-                  href: ca1903-use-only-api-from-targeted-framework.md
-            - name: 可靠性警告
-              href: reliability-warnings.md
-              items:
-                - name: 'CA2000:丢失范围之前释放对象'
-                  href: ca2000-dispose-objects-before-losing-scope.md
-                - name: 'CA2001:避免调用有问题的方法'
-                  href: ca2001-avoid-calling-problematic-methods.md
-                - name: 'CA2002:不要锁定具有弱标识的对象'
-                  href: ca2002-do-not-lock-on-objects-with-weak-identity.md
-                - name: 'CA2003:不要将纤程视为线程'
-                  href: ca2003-do-not-treat-fibers-as-threads.md
-                - name: 'CA2004:移除对 GC.KeepAlive 的调用'
-                  href: ca2004-remove-calls-to-gc-keepalive.md
-                - name: 'CA2006:使用 SafeHandle 封装本机资源'
-                  href: ca2006-use-safehandle-to-encapsulate-native-resources.md
-            - name: 安全警告
-              href: security-warnings.md
-              items:
-                - name: 'CA2100:检查 SQL 查询是否存在安全漏洞'
-                  href: ca2100-review-sql-queries-for-security-vulnerabilities.md
-                - name: 'CA2102:在常规处理程序中捕捉非 CLSCompliant 异常'
-                  href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
-                - name: 'CA2103:检查命令性安全'
-                  href: ca2103-review-imperative-security.md
-                - name: 'CA2104:不要声明只读可变引用类型'
-                  href: ca2104-do-not-declare-read-only-mutable-reference-types.md
-                - name: 'CA2105:数组字段不应为只读'
-                  href: ca2105-array-fields-should-not-be-read-only.md
-                - name: 'CA2106:保护断言'
-                  href: ca2106-secure-asserts.md
-                - name: 'CA2107:检查 deny 权限和 permit only 权限的使用情况'
-                  href: ca2107-review-deny-and-permit-only-usage.md
-                - name: 'CA2108:检查有关值类型的声明性安全'
-                  href: ca2108-review-declarative-security-on-value-types.md
-                - name: 'CA2109:检查可见的事件处理程序'
-                  href: ca2109-review-visible-event-handlers.md
-                - name: 'CA2111:指针应为不可见'
-                  href: ca2111-pointers-should-not-be-visible.md
-                - name: 'CA2112:受保护的类型不应公开字段'
-                  href: ca2112-secured-types-should-not-expose-fields.md
-                - name: 'CA2114:方法安全性应是类型安全性的超集'
-                  href: ca2114-method-security-should-be-a-superset-of-type.md
-                - name: 'CA2115:使用本机资源时调用 GC.KeepAlive'
-                  href: ca2115-call-gc-keepalive-when-using-native-resources.md
-                - name: 'CA2116:APTCA 方法应只调用 APTCA 方法'
-                  href: ca2116-aptca-methods-should-only-call-aptca-methods.md
-                - name: 'CA2117:APTCA 类型应只扩展 APTCA 基类型'
-                  href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
-                - name: 'CA2118:检查 SuppressUnmanagedCodeSecurityAttribute 用法'
-                  href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
-                - name: 'CA2119:密封满足私有接口的方法'
-                  href: ca2119-seal-methods-that-satisfy-private-interfaces.md
-                - name: 'CA2120:保护序列化构造函数'
-                  href: ca2120-secure-serialization-constructors.md
-                - name: 'CA2121:静态构造函数应为私有'
-                  href: ca2121-static-constructors-should-be-private.md
-                - name: 'CA2122:不要使用链接请求间接公开方法'
-                  href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
-                - name: 'CA2123:重写链接请求应与基相同'
-                  href: ca2123-override-link-demands-should-be-identical-to-base.md
-                - name: 'CA2124:在外部 try 块中包装易受攻击的 finally 子句'
-                  href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
-                - name: 'CA2126:类型链接请求需要继承请求'
-                  href: ca2126-type-link-demands-require-inheritance-demands.md
-                - name: 'CA2130:安全关键常量应是透明的'
-                  href: ca2130-security-critical-constants-should-be-transparent.md
-                - name: 'CA2131:安全关键类型不能参与类型等效'
-                  href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
-                - name: 'CA2132:默认构造函数必须至少与基类型默认构造函数一样关键'
-                  href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
-                - name: 'CA2133:委托必须绑定到具有一致透明度的方法'
-                  href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
-                - name: 'CA2134:在重写基方法时，方法必须保持一致的透明度'
-                  href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
-                - name: 'CA2135:级别 2 程序集不应包含 LinkDemand'
-                  href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
-                - name: 'CA2136:成员不应具有冲突的透明度批注'
-                  href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
-                - name: 'CA2137:透明方法只能包含可验证的 IL'
-                  href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
-                - name: 'CA2138:透明方法不得调用具有 SuppressUnmanagedCodeSecurity 特性的方法'
-                  href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
-                - name: 'CA2139:透明方法不能使用 HandleProcessCorruptingExceptions 特性'
-                  href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
-                - name: 'CA2140:透明代码不得引用安全关键项'
-                  href: ca2140-transparent-code-must-not-reference-security-critical-items.md
-                - name: CA2141：透明方法不得满足 LinkDemand
-                  href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
-                - name: 'CA2142:不应使用 LinkDemand 保护透明代码'
-                  href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
-                - name: 'CA2143:透明方法不应使用安全请求'
-                  href: ca2143-transparent-methods-should-not-use-security-demands.md
-                - name: 'CA2144:透明代码不应从字节数组加载程序集'
-                  href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
-                - name: 'CA2145:不应使用 SuppressUnmanagedCodeSecurityAttribute 修饰透明方法'
-                  href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
-                - name: 'CA2146:类型必须至少与其基类型和接口一样关键'
-                  href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
-                - name: 'CA2147:透明方法不得使用安全断言'
-                  href: ca2147-transparent-methods-may-not-use-security-asserts.md
-                - name: 'CA2149:透明方法不得调入本机代码'
-                  href: ca2149-transparent-methods-must-not-call-into-native-code.md
-                - name: 'CA2151:具有关键类型的字段应为安全关键的'
-                  href: ca2151-fields-with-critical-types-should-be-security-critical.md
-                - name: CA5122 P/Invoke 声明不应是安全关键的
-                  href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
-                - name: 'CA2153:避免处理损坏状态异常'
-                  href: ca2153-avoid-handling-corrupted-state-exceptions.md
-                - name: 'CA3075:不安全的 DTD 处理'
-                  href: ca3075-insecure-dtd-processing.md
-                - name: 'CA3076:不安全的 XSLT 脚本执行'
-                  href: ca3076-insecure-xslt-script-execution.md
-                - name: 'CA3077:API 设计、XML 文档和 XML 文本读取器中的不安全处理'
-                  href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
-            - name: 用法警告
-              href: usage-warnings.md
-              items:
-                - name: 'CA1801:检查未使用的参数'
-                  href: ca1801-review-unused-parameters.md
-                - name: 'CA1806:不要忽略方法结果'
-                  href: ca1806-do-not-ignore-method-results.md
-                - name: 'CA1816:正确调用 GC.SuppressFinalize'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
-                - name: 'CA2200:再次引发以保留堆栈详细信息'
-                  href: ca2200-rethrow-to-preserve-stack-details.md
-                - name: 'CA2201:不要引发保留的异常类型'
-                  href: ca2201-do-not-raise-reserved-exception-types.md
-                - name: 'CA2202:不要多次释放对象'
-                  href: ca2202-do-not-dispose-objects-multiple-times.md
-                - name: 'CA2204:文字应正确拼写'
-                  href: ca2204-literals-should-be-spelled-correctly.md
-                - name: 'CA2205:使用 Win32 API 的托管等效项'
-                  href: ca2205-use-managed-equivalents-of-win32-api.md
-                - name: 'CA2207:以内联方式初始化值类型的静态字段'
-                  href: ca2207-initialize-value-type-static-fields-inline.md
-                - name: 'CA2208:正确实例化参数异常'
-                  href: ca2208-instantiate-argument-exceptions-correctly.md
-                - name: 'CA2211:非常量字段不应是可见的'
-                  href: ca2211-non-constant-fields-should-not-be-visible.md
-                - name: 'CA2212:不要使用 WebMethod 标记服务组件'
-                  href: ca2212-do-not-mark-serviced-components-with-webmethod.md
-                - name: 'CA2213:应释放可释放的字段'
-                  href: ca2213-disposable-fields-should-be-disposed.md
-                - name: 'CA2214:不要在构造函数中调用可重写的方法'
-                  href: ca2214-do-not-call-overridable-methods-in-constructors.md
-                - name: 'CA2215:Dispose 方法应调用基类释放'
-                  href: ca2215-dispose-methods-should-call-base-class-dispose.md
-                - name: 'CA2216:可释放类型应声明终结器'
-                  href: ca2216-disposable-types-should-declare-finalizer.md
-                - name: 'CA2217:不要使用 FlagsAttribute 标记枚举'
-                  href: ca2217-do-not-mark-enums-with-flagsattribute.md
-                - name: 'CA2218:重写 Equals 时重写 GetHashCode'
-                  href: ca2218-override-gethashcode-on-overriding-equals.md
-                - name: 'CA2219:在异常子句中不引发异常'
-                  href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
-                - name: 'CA2220:终结器应调用基类的终结器'
-                  href: ca2220-finalizers-should-call-base-class-finalizer.md
-                - name: 'CA2221:终结器应受到保护'
-                  href: ca2221-finalizers-should-be-protected.md
-                - name: 'CA2222:不要递减继承成员的可见性'
-                  href: ca2222-do-not-decrease-inherited-member-visibility.md
-                - name: 'CA2223:成员不应只是返回类型不同'
-                  href: ca2223-members-should-differ-by-more-than-return-type.md
-                - name: 'CA2224:重载相等运算符时重写 Equals 方法'
-                  href: ca2224-override-equals-on-overloading-operator-equals.md
-                - name: 'CA2225:运算符重载具有命名的备用项'
-                  href: ca2225-operator-overloads-have-named-alternates.md
-                - name: 'CA2226:运算符应有对称重载'
-                  href: ca2226-operators-should-have-symmetrical-overloads.md
-                - name: 'CA2227:集合属性应为只读'
-                  href: ca2227-collection-properties-should-be-read-only.md
-                - name: 'CA2228:不要发行未发布的资源格式'
-                  href: ca2228-do-not-ship-unreleased-resource-formats.md
-                - name: 'CA2229:实现序列化构造函数'
-                  href: ca2229-implement-serialization-constructors.md
-                - name: 'CA2230:对可变数量的参数使用 params'
-                  href: ca2230-use-params-for-variable-arguments.md
-                - name: 'CA2231:重写 ValueType.Equals 时应重载相等运算符'
-                  href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
-                - name: 'CA2232:使用 STAThread 标记 Windows 窗体的入口点'
-                  href: ca2232-mark-windows-forms-entry-points-with-stathread.md
-                - name: 'CA2233:运算不应溢出'
-                  href: ca2233-operations-should-not-overflow.md
-                - name: 'CA2234:传递 System.Uri 对象，而不传递字符串'
-                  href: ca2234-pass-system-uri-objects-instead-of-strings.md
-                - name: 'CA2235:标记所有不可序列化的字段'
-                  href: ca2235-mark-all-non-serializable-fields.md
-                - name: 'CA2236:对 ISerializable 类型调用基类方法'
-                  href: ca2236-call-base-class-methods-on-iserializable-types.md
-                - name: 'CA2237:用 SerializableAttribute 标记 ISerializable 类型'
-                  href: ca2237-mark-iserializable-types-with-serializableattribute.md
-                - name: 'CA2238:正确实现序列化方法'
-                  href: ca2238-implement-serialization-methods-correctly.md
-                - name: 'CA2239:为可选字段提供反序列化方法'
-                  href: ca2239-provide-deserialization-methods-for-optional-fields.md
-                - name: 'CA2240:正确实现 ISerializable'
-                  href: ca2240-implement-iserializable-correctly.md
-                - name: 'CA2241:为格式化方法提供正确的参数'
-                  href: ca2241-provide-correct-arguments-to-formatting-methods.md
-                - name: 'CA2242:正确测试 NaN'
-                  href: ca2242-test-for-nan-correctly.md
-                - name: 'CA2243:特性字符串文本应正确分析'
-                  href: ca2243-attribute-string-literals-should-parse-correctly.md
-            - name: 代码分析策略错误
-              href: code-analysis-policy-errors.md
+                - name: 维护性警告
+                  items:
+                    - name: 维护性警告
+                      href: maintainability-warnings.md
+                    - name: 'CA1500:变量名不应与字段名相同'
+                      href: ca1500-variable-names-should-not-match-field-names.md
+                    - name: 'CA1501:避免过度继承'
+                      href: ca1501-avoid-excessive-inheritance.md
+                    - name: 'CA1502:避免过度复杂'
+                      href: ca1502-avoid-excessive-complexity.md
+                    - name: 'CA1504:检查令人误解的字段名'
+                      href: ca1504-review-misleading-field-names.md
+                    - name: 'CA1505:避免使用无法维护的代码'
+                      href: ca1505-avoid-unmaintainable-code.md
+                    - name: 'CA1506:避免过度类耦合度'
+                      href: ca1506-avoid-excessive-class-coupling.md
+                    - name: 移动性警告
+                      items:
+                        - name: 移动性警告
+                          href: mobility-warnings.md
+                        - name: 'CA1600:不要使用 Idle 进程优先级'
+                          href: ca1600-do-not-use-idle-process-priority.md
+                        - name: 'CA1601:不要使用阻止电源状态更改的计时器'
+                          href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
+                    - name: 命名警告
+                      items:
+                        - name: 命名警告
+                          href: naming-warnings.md
+                        - name: 'CA1700:不要命名“Reserved”枚举值'
+                          href: ca1700-do-not-name-enum-values-reserved.md
+                        - name: 'CA1701:资源字符串组合词应采用正确的大小写'
+                          href: ca1701-resource-string-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1702:组合词应采用正确的大小写'
+                          href: ca1702-compound-words-should-be-cased-correctly.md
+                        - name: 'CA1703:资源字符串应正确拼写'
+                          href: ca1703-resource-strings-should-be-spelled-correctly.md
+                        - name: 'CA1704:标识符应正确拼写'
+                          href: ca1704-identifiers-should-be-spelled-correctly.md
+                        - name: 'CA1707:标识符不应包含下划线'
+                          href: ca1707-identifiers-should-not-contain-underscores.md
+                        - name: 'CA1708:标识符应以大小写之外的差别进行区分'
+                          href: ca1708-identifiers-should-differ-by-more-than-case.md
+                        - name: 'CA1709:标识符的大小写应当正确'
+                          href: ca1709-identifiers-should-be-cased-correctly.md
+                        - name: 'CA1710:标识符应具有正确的后缀'
+                          href: ca1710-identifiers-should-have-correct-suffix.md
+                        - name: 'CA1711:标识符应采用正确的后缀'
+                          href: ca1711-identifiers-should-not-have-incorrect-suffix.md
+                        - name: 'CA1712:不要将类型名用作枚举值的前缀'
+                          href: ca1712-do-not-prefix-enum-values-with-type-name.md
+                        - name: 'CA1713:事件不应具有 before 或 after 前缀'
+                          href: ca1713-events-should-not-have-before-or-after-prefix.md
+                        - name: 'CA1714:Flags 枚举应采用复数形式的名称'
+                          href: ca1714-flags-enums-should-have-plural-names.md
+                        - name: 'CA1715:标识符应具有正确的前缀'
+                          href: ca1715-identifiers-should-have-correct-prefix.md
+                        - name: 'CA1716:标识符不应与关键字冲突'
+                          href: ca1716-identifiers-should-not-match-keywords.md
+                        - name: 'CA1717:只有 FlagsAttribute 枚举应采用复数形式的名称'
+                          href: ca1717-only-flagsattribute-enums-should-have-plural-names.md
+                        - name: 'CA1719:参数名不应与成员名冲突'
+                          href: ca1719-parameter-names-should-not-match-member-names.md
+                        - name: 'CA1720:标识符不应包含类型名称'
+                          href: ca1720-identifiers-should-not-contain-type-names.md
+                        - name: 'CA1721:属性名不应与 get 方法冲突'
+                          href: ca1721-property-names-should-not-match-get-methods.md
+                        - name: 'CA1722:标识符应采用正确的前缀'
+                          href: ca1722-identifiers-should-not-have-incorrect-prefix.md
+                        - name: 'CA1725:参数名应与基方法中的声明保持一致'
+                          href: ca1725-parameter-names-should-match-base-declaration.md
+                        - name: 'CA1724:类型名不应与命名空间冲突'
+                          href: ca1724-type-names-should-not-match-namespaces.md
+                        - name: 'CA1726:使用首选词条'
+                          href: ca1726-use-preferred-terms.md
+                    - name: 性能警告
+                      items:
+                        - name: 性能警告
+                          href: performance-warnings.md
+                        - name: 'CA1800:避免进行不必要的强制转换'
+                          href: ca1800-do-not-cast-unnecessarily.md
+                        - name: 'CA1802:在合适的位置使用文本'
+                          href: ca1802-use-literals-where-appropriate.md
+                        - name: 'CA1804:移除未使用的局部变量'
+                          href: ca1804-remove-unused-locals.md
+                        - name: 'CA1809:避免过多的局部变量'
+                          href: ca1809-avoid-excessive-locals.md
+                        - name: 'CA1810:以内联方式初始化引用类型的静态字段'
+                          href: ca1810-initialize-reference-type-static-fields-inline.md
+                        - name: 'CA1811:避免使用未调用的私有代码'
+                          href: ca1811-avoid-uncalled-private-code.md
+                        - name: 'CA1812:避免未实例化的内部类'
+                          href: ca1812-avoid-uninstantiated-internal-classes.md
+                        - name: 'CA1813:避免使用非密封特性'
+                          href: ca1813-avoid-unsealed-attributes.md
+                        - name: 'CA1814:与多维数组相比，首选使用交错数组'
+                          href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                        - name: 'CA1815:重写值类型上的 Equals 和相等运算符'
+                          href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                        - name: 'CA1819:属性不应返回数组'
+                          href: ca1819-properties-should-not-return-arrays.md
+                        - name: 'CA1820:使用字符串长度测试是否有空字符串'
+                          href: ca1820-test-for-empty-strings-using-string-length.md
+                        - name: 'CA1821:移除空终结器'
+                          href: ca1821-remove-empty-finalizers.md
+                        - name: 'CA1822:将成员标记为 static'
+                          href: ca1822-mark-members-as-static.md
+                        - name: 'CA1823:避免未使用的私有字段'
+                          href: ca1823-avoid-unused-private-fields.md
+                        - name: 'CA1824:用 NeutralResourcesLanguageAttribute 标记程序集'
+                          href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                    - name: 可移植性警告
+                      items:
+                        - name: 可移植性警告
+                          href: portability-warnings.md
+                        - name: 'CA1900:值类型字段应为可移植字段'
+                          href: ca1900-value-type-fields-should-be-portable.md
+                        - name: 'CA1901:P/Invoke 声明应为可移植声明'
+                          href: ca1901-p-invoke-declarations-should-be-portable.md
+                        - name: 'CA1903:仅使用目标框架中的 API'
+                          href: ca1903-use-only-api-from-targeted-framework.md
+                    - name: 可靠性警告
+                      items:
+                        - name: 可靠性警告
+                          href: reliability-warnings.md
+                        - name: 'CA2000:丢失范围之前释放对象'
+                          href: ca2000-dispose-objects-before-losing-scope.md
+                        - name: 'CA2001:避免调用有问题的方法'
+                          href: ca2001-avoid-calling-problematic-methods.md
+                        - name: 'CA2002:不要锁定具有弱标识的对象'
+                          href: ca2002-do-not-lock-on-objects-with-weak-identity.md
+                        - name: 'CA2003:不要将纤程视为线程'
+                          href: ca2003-do-not-treat-fibers-as-threads.md
+                        - name: 'CA2004:移除对 GC.KeepAlive 的调用'
+                          href: ca2004-remove-calls-to-gc-keepalive.md
+                        - name: 'CA2006:使用 SafeHandle 封装本机资源'
+                          href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+                    - name: 安全警告
+                      items:
+                        - name: 安全警告
+                          href: security-warnings.md
+                        - name: 'CA2100:检查 SQL 查询是否存在安全漏洞'
+                          href: ca2100-review-sql-queries-for-security-vulnerabilities.md
+                        - name: 'CA2102:在常规处理程序中捕捉非 CLSCompliant 异常'
+                          href: ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md
+                        - name: 'CA2103:检查命令性安全'
+                          href: ca2103-review-imperative-security.md
+                        - name: 'CA2104:不要声明只读可变引用类型'
+                          href: ca2104-do-not-declare-read-only-mutable-reference-types.md
+                        - name: 'CA2105:数组字段不应为只读'
+                          href: ca2105-array-fields-should-not-be-read-only.md
+                        - name: 'CA2106:保护断言'
+                          href: ca2106-secure-asserts.md
+                        - name: 'CA2107:检查 deny 权限和 permit only 权限的使用情况'
+                          href: ca2107-review-deny-and-permit-only-usage.md
+                        - name: 'CA2108:检查有关值类型的声明性安全'
+                          href: ca2108-review-declarative-security-on-value-types.md
+                        - name: 'CA2109:检查可见的事件处理程序'
+                          href: ca2109-review-visible-event-handlers.md
+                        - name: 'CA2111:指针应为不可见'
+                          href: ca2111-pointers-should-not-be-visible.md
+                        - name: 'CA2112:受保护的类型不应公开字段'
+                          href: ca2112-secured-types-should-not-expose-fields.md
+                        - name: 'CA2114:方法安全性应是类型安全性的超集'
+                          href: ca2114-method-security-should-be-a-superset-of-type.md
+                        - name: 'CA2115:使用本机资源时调用 GC.KeepAlive'
+                          href: ca2115-call-gc-keepalive-when-using-native-resources.md
+                        - name: 'CA2116:APTCA 方法应只调用 APTCA 方法'
+                          href: ca2116-aptca-methods-should-only-call-aptca-methods.md
+                        - name: 'CA2117:APTCA 类型应只扩展 APTCA 基类型'
+                          href: ca2117-aptca-types-should-only-extend-aptca-base-types.md
+                        - name: 'CA2118:检查 SuppressUnmanagedCodeSecurityAttribute 用法'
+                          href: ca2118-review-suppressunmanagedcodesecurityattribute-usage.md
+                        - name: 'CA2119:密封满足私有接口的方法'
+                          href: ca2119-seal-methods-that-satisfy-private-interfaces.md
+                        - name: 'CA2120:保护序列化构造函数'
+                          href: ca2120-secure-serialization-constructors.md
+                        - name: 'CA2121:静态构造函数应为私有'
+                          href: ca2121-static-constructors-should-be-private.md
+                        - name: 'CA2122:不要使用链接请求间接公开方法'
+                          href: ca2122-do-not-indirectly-expose-methods-with-link-demands.md
+                        - name: 'CA2123:重写链接请求应与基相同'
+                          href: ca2123-override-link-demands-should-be-identical-to-base.md
+                        - name: 'CA2124:在外部 try 块中包装易受攻击的 finally 子句'
+                          href: ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md
+                        - name: 'CA2126:类型链接请求需要继承请求'
+                          href: ca2126-type-link-demands-require-inheritance-demands.md
+                        - name: 'CA2130:安全关键常量应是透明的'
+                          href: ca2130-security-critical-constants-should-be-transparent.md
+                        - name: 'CA2131:安全关键类型不能参与类型等效'
+                          href: ca2131-security-critical-types-may-not-participate-in-type-equivalence.md
+                        - name: 'CA2132:默认构造函数必须至少与基类型默认构造函数一样关键'
+                          href: ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md
+                        - name: 'CA2133:委托必须绑定到具有一致透明度的方法'
+                          href: ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md
+                        - name: 'CA2134:在重写基方法时，方法必须保持一致的透明度'
+                          href: ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md
+                        - name: 'CA2135:级别 2 程序集不应包含 LinkDemand'
+                          href: ca2135-level-2-assemblies-should-not-contain-linkdemands.md
+                        - name: 'CA2136:成员不应具有冲突的透明度批注'
+                          href: ca2136-members-should-not-have-conflicting-transparency-annotations.md
+                        - name: 'CA2137:透明方法只能包含可验证的 IL'
+                          href: ca2137-transparent-methods-must-contain-only-verifiable-il.md
+                        - name: 'CA2138:透明方法不得调用具有 SuppressUnmanagedCodeSecurity 特性的方法'
+                          href: ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md
+                        - name: 'CA2139:透明方法不能使用 HandleProcessCorruptingExceptions 特性'
+                          href: ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md
+                        - name: 'CA2140:透明代码不得引用安全关键项'
+                          href: ca2140-transparent-code-must-not-reference-security-critical-items.md
+                        - name: CA2141：透明方法不得满足 LinkDemand
+                          href: ca2141-transparent-methods-must-not-satisfy-linkdemands.md
+                        - name: 'CA2142:不应使用 LinkDemand 保护透明代码'
+                          href: ca2142-transparent-code-should-not-be-protected-with-linkdemands.md
+                        - name: 'CA2143:透明方法不应使用安全请求'
+                          href: ca2143-transparent-methods-should-not-use-security-demands.md
+                        - name: 'CA2144:透明代码不应从字节数组加载程序集'
+                          href: ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md
+                        - name: 'CA2145:不应使用 SuppressUnmanagedCodeSecurityAttribute 修饰透明方法'
+                          href: ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md
+                        - name: 'CA2146:类型必须至少与其基类型和接口一样关键'
+                          href: ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md
+                        - name: 'CA2147:透明方法不得使用安全断言'
+                          href: ca2147-transparent-methods-may-not-use-security-asserts.md
+                        - name: 'CA2149:透明方法不得调入本机代码'
+                          href: ca2149-transparent-methods-must-not-call-into-native-code.md
+                        - name: 'CA2151:具有关键类型的字段应为安全关键的'
+                          href: ca2151-fields-with-critical-types-should-be-security-critical.md
+                        - name: CA5122 P/Invoke 声明不应是安全关键的
+                          href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
+                        - name: 'CA2153:避免处理损坏状态异常'
+                          href: ca2153-avoid-handling-corrupted-state-exceptions.md
+                        - name: 'CA3075:不安全的 DTD 处理'
+                          href: ca3075-insecure-dtd-processing.md
+                        - name: 'CA3076:不安全的 XSLT 脚本执行'
+                          href: ca3076-insecure-xslt-script-execution.md
+                        - name: 'CA3077:API 设计、XML 文档和 XML 文本读取器中的不安全处理'
+                          href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+                    - name: 用法警告
+                      items:
+                        - name: 用法警告
+                          href: usage-warnings.md
+                        - name: 'CA1801:检查未使用的参数'
+                          href: ca1801-review-unused-parameters.md
+                        - name: 'CA1806:不要忽略方法结果'
+                          href: ca1806-do-not-ignore-method-results.md
+                        - name: 'CA1816:正确调用 GC.SuppressFinalize'
+                          href: ca1816-call-gc-suppressfinalize-correctly.md
+                        - name: 'CA2200:再次引发以保留堆栈详细信息'
+                          href: ca2200-rethrow-to-preserve-stack-details.md
+                        - name: 'CA2201:不要引发保留的异常类型'
+                          href: ca2201-do-not-raise-reserved-exception-types.md
+                        - name: 'CA2202:不要多次释放对象'
+                          href: ca2202-do-not-dispose-objects-multiple-times.md
+                        - name: 'CA2204:文字应正确拼写'
+                          href: ca2204-literals-should-be-spelled-correctly.md
+                        - name: 'CA2205:使用 Win32 API 的托管等效项'
+                          href: ca2205-use-managed-equivalents-of-win32-api.md
+                        - name: 'CA2207:以内联方式初始化值类型的静态字段'
+                          href: ca2207-initialize-value-type-static-fields-inline.md
+                        - name: 'CA2208:正确实例化参数异常'
+                          href: ca2208-instantiate-argument-exceptions-correctly.md
+                        - name: 'CA2211:非常量字段不应是可见的'
+                          href: ca2211-non-constant-fields-should-not-be-visible.md
+                        - name: 'CA2212:不要使用 WebMethod 标记服务组件'
+                          href: ca2212-do-not-mark-serviced-components-with-webmethod.md
+                        - name: 'CA2213:应释放可释放的字段'
+                          href: ca2213-disposable-fields-should-be-disposed.md
+                        - name: 'CA2214:不要在构造函数中调用可重写的方法'
+                          href: ca2214-do-not-call-overridable-methods-in-constructors.md
+                        - name: 'CA2215:Dispose 方法应调用基类释放'
+                          href: ca2215-dispose-methods-should-call-base-class-dispose.md
+                        - name: 'CA2216:可释放类型应声明终结器'
+                          href: ca2216-disposable-types-should-declare-finalizer.md
+                        - name: 'CA2217:不要使用 FlagsAttribute 标记枚举'
+                          href: ca2217-do-not-mark-enums-with-flagsattribute.md
+                        - name: 'CA2218:重写 Equals 时重写 GetHashCode'
+                          href: ca2218-override-gethashcode-on-overriding-equals.md
+                        - name: 'CA2219:在异常子句中不引发异常'
+                          href: ca2219-do-not-raise-exceptions-in-exception-clauses.md
+                        - name: 'CA2220:终结器应调用基类的终结器'
+                          href: ca2220-finalizers-should-call-base-class-finalizer.md
+                        - name: 'CA2221:终结器应受到保护'
+                          href: ca2221-finalizers-should-be-protected.md
+                        - name: 'CA2222:不要递减继承成员的可见性'
+                          href: ca2222-do-not-decrease-inherited-member-visibility.md
+                        - name: 'CA2223:成员不应只是返回类型不同'
+                          href: ca2223-members-should-differ-by-more-than-return-type.md
+                        - name: 'CA2224:重载相等运算符时重写 Equals 方法'
+                          href: ca2224-override-equals-on-overloading-operator-equals.md
+                        - name: 'CA2225:运算符重载具有命名的备用项'
+                          href: ca2225-operator-overloads-have-named-alternates.md
+                        - name: 'CA2226:运算符应有对称重载'
+                          href: ca2226-operators-should-have-symmetrical-overloads.md
+                        - name: 'CA2227:集合属性应为只读'
+                          href: ca2227-collection-properties-should-be-read-only.md
+                        - name: 'CA2228:不要发行未发布的资源格式'
+                          href: ca2228-do-not-ship-unreleased-resource-formats.md
+                        - name: 'CA2229:实现序列化构造函数'
+                          href: ca2229-implement-serialization-constructors.md
+                        - name: 'CA2230:对可变数量的参数使用 params'
+                          href: ca2230-use-params-for-variable-arguments.md
+                        - name: 'CA2231:重写 ValueType.Equals 时应重载相等运算符'
+                          href: ca2231-overload-operator-equals-on-overriding-valuetype-equals.md
+                        - name: 'CA2232:使用 STAThread 标记 Windows 窗体的入口点'
+                          href: ca2232-mark-windows-forms-entry-points-with-stathread.md
+                        - name: 'CA2233:运算不应溢出'
+                          href: ca2233-operations-should-not-overflow.md
+                        - name: 'CA2234:传递 System.Uri 对象，而不传递字符串'
+                          href: ca2234-pass-system-uri-objects-instead-of-strings.md
+                        - name: 'CA2235:标记所有不可序列化的字段'
+                          href: ca2235-mark-all-non-serializable-fields.md
+                        - name: 'CA2236:对 ISerializable 类型调用基类方法'
+                          href: ca2236-call-base-class-methods-on-iserializable-types.md
+                        - name: 'CA2237:用 SerializableAttribute 标记 ISerializable 类型'
+                          href: ca2237-mark-iserializable-types-with-serializableattribute.md
+                        - name: 'CA2238:正确实现序列化方法'
+                          href: ca2238-implement-serialization-methods-correctly.md
+                        - name: 'CA2239:为可选字段提供反序列化方法'
+                          href: ca2239-provide-deserialization-methods-for-optional-fields.md
+                        - name: 'CA2240:正确实现 ISerializable'
+                          href: ca2240-implement-iserializable-correctly.md
+                        - name: 'CA2241:为格式化方法提供正确的参数'
+                          href: ca2241-provide-correct-arguments-to-formatting-methods.md
+                        - name: 'CA2242:正确测试 NaN'
+                          href: ca2242-test-for-nan-correctly.md
+                        - name: 'CA2243:特性字符串文本应正确分析'
+                          href: ca2243-attribute-string-literals-should-parse-correctly.md
+                - name: 代码分析策略错误
+                  href: code-analysis-policy-errors.md
+- name: 分析 C/C++ 代码质量
+  items:
     - name: 分析 C/C++ 代码质量
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
+    - name: 快速入门：C/C++ 代码分析
+      href: quick-start-code-analysis-for-c-cpp.md
+    - name: 使用规则集指定要运行的 C++ 规则
+      href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
+    - name: 使用 C++ 核心准则检查程序
+      href: using-the-cpp-core-guidelines-checkers.md
+    - name: C/C++ 代码分析概述
+      href: code-analysis-for-c-cpp-overview.md
+    - name: 如何：设置 C/C++ 项目的代码分析属性
+      href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
+    - name: 演练：分析 C/C++ 代码的缺陷
       items:
-        - name: 快速入门：C/C++ 代码分析
-          href: quick-start-code-analysis-for-c-cpp.md
-        - name: 使用规则集指定要运行的 C++ 规则
-          href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-        - name: 使用 C++ 核心准则检查程序
-          href: using-the-cpp-core-guidelines-checkers.md
-        - name: C/C++ 代码分析概述
-          href: code-analysis-for-c-cpp-overview.md
-        - name: 如何：设置 C/C++ 项目的代码分析属性
-          href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
         - name: 演练：分析 C/C++ 代码的缺陷
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
-          items:
-            - name: 演示示例
-              href: demo-sample.md
+        - name: 演示示例
+          href: demo-sample.md
+    - name: 使用 SAL 批注以减少 C/C++ 代码缺陷
+      items:
         - name: 使用 SAL 批注以减少 C/C++ 代码缺陷
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
-          items:
-            - name: 了解 SAL
-              href: understanding-sal.md
-            - name: 对函数参数和返回值进行批注
-              href: annotating-function-parameters-and-return-values.md
-            - name: 对函数行为进行批注
-              href: annotating-function-behavior.md
-            - name: 批注结构和类
-              href: annotating-structs-and-classes.md
-            - name: 对锁定行为进行批注
-              href: annotating-locking-behavior.md
-            - name: 指定何时以及在何处应用批注
-              href: specifying-when-and-where-an-annotation-applies.md
-            - name: 内部函数
-              href: intrinsic-functions.md
-            - name: 最佳做法和示例
-              href: best-practices-and-examples-sal.md
+        - name: 了解 SAL
+          href: understanding-sal.md
+        - name: 对函数参数和返回值进行批注
+          href: annotating-function-parameters-and-return-values.md
+        - name: 对函数行为进行批注
+          href: annotating-function-behavior.md
+        - name: 批注结构和类
+          href: annotating-structs-and-classes.md
+        - name: 对锁定行为进行批注
+          href: annotating-locking-behavior.md
+        - name: 指定何时以及在何处应用批注
+          href: specifying-when-and-where-an-annotation-applies.md
+        - name: 内部函数
+          href: intrinsic-functions.md
+        - name: 最佳做法和示例
+          href: best-practices-and-examples-sal.md
         - name: 如何：使用 _analysis_assume 指定其他代码信息
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: C/C++ 代码分析警告
-          href: code-analysis-for-c-cpp-warnings.md
           items:
+            - name: C/C++ 代码分析警告
+              href: code-analysis-for-c-cpp-warnings.md
             - name: C1250
               href: c1250.md
             - name: C1251
@@ -1167,129 +1186,136 @@
               href: c28350.md
             - name: C28351
               href: c28351.md
-    - name: 使用规则集对代码分析规则进行分组
-      href: using-rule-sets-to-group-code-analysis-rules.md
-      items:
-        - name: 演练：配置和使用自定义规则集
-          href: walkthrough-configuring-and-using-a-custom-rule-set.md
-        - name: 如何：为托管代码项目配置代码分析
-          href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: 如何：为 ASP.NET Web 应用程序配置代码分析
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-        - name: 如何：将代码项目规则集与团队项目签入策略同步
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: 如何：为解决方案中的多个项目指定规则集
-          href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
-        - name: 创建自定义规则集
-          href: creating-custom-code-analysis-rule-sets.md
+        - name: 使用规则集对代码分析规则进行分组
           items:
-            - name: 如何：创建自定义规则集
-              href: how-to-create-a-custom-rule-set.md
-            - name: 使用规则集编辑器
-              href: working-in-the-code-analysis-rule-set-editor.md
-        - name: 代码分析规则集参考
-          href: code-analysis-rule-set-reference.md
+            - name: 使用规则集对代码分析规则进行分组
+              href: using-rule-sets-to-group-code-analysis-rules.md
+            - name: 演练：配置和使用自定义规则集
+              href: walkthrough-configuring-and-using-a-custom-rule-set.md
+            - name: 如何：为托管代码项目配置代码分析
+              href: how-to-configure-code-analysis-for-a-managed-code-project.md
+            - name: 如何：为 ASP.NET Web 应用程序配置代码分析
+              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+            - name: 如何：将代码项目规则集与团队项目签入策略同步
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: 如何：为解决方案中的多个项目指定规则集
+              href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
+            - name: 创建自定义规则集
+              items:
+                - name: 创建自定义规则集
+                  href: creating-custom-code-analysis-rule-sets.md
+                - name: 如何：创建自定义规则集
+                  href: how-to-create-a-custom-rule-set.md
+                - name: 使用规则集编辑器
+                  href: working-in-the-code-analysis-rule-set-editor.md
+            - name: 代码分析规则集参考
+              items:
+                - name: 代码分析规则集参考
+                  href: code-analysis-rule-set-reference.md
+                - name: “所有规则”规则集
+                  href: all-rules-rule-set.md
+                - name: 托管代码的“基本更正规则”规则集
+                  href: basic-correctness-rules-rule-set-for-managed-code.md
+                - name: 托管代码的“基本设计准则规则”规则集
+                  href: basic-design-guideline-rules-rule-set-for-managed-code.md
+                - name: 托管代码的“扩展的更正规则”规则集
+                  href: extended-correctness-rules-rule-set-for-managed-code.md
+                - name: 托管代码的“扩展的设计准则规则”规则集
+                  href: extended-design-guidelines-rules-rule-set-for-managed-code.md
+                - name: 托管代码的“全球化规则”规则集
+                  href: globalization-rules-rule-set-for-managed-code.md
+                - name: 托管代码的“托管最少量规则”规则集
+                  href: managed-minimun-rules-rule-set-for-managed-code.md
+                - name: 托管代码的“托管建议规则”规则集
+                  href: managed-recommended-rules-rule-set-for-managed-code.md
+                - name: “混合最少量规则”规则集
+                  href: mixed-minimum-rules-rule-set.md
+                - name: “混合建议规则”规则集
+                  href: mixed-recommended-rules-rule-set.md
+                - name: “本机最少量规则”规则集
+                  href: native-minimum-rules-rule-set.md
+                - name: “本机建议规则”规则集
+                  href: native-recommended-rules-rule-set.md
+                - name: 托管代码的“安全规则”规则集
+                  href: security-rules-rule-set-for-managed-code.md
+        - name: 代码分析应用程序错误
           items:
-            - name: “所有规则”规则集
-              href: all-rules-rule-set.md
-            - name: 托管代码的“基本更正规则”规则集
-              href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“基本设计准则规则”规则集
-              href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“扩展的更正规则”规则集
-              href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“扩展的设计准则规则”规则集
-              href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“全球化规则”规则集
-              href: globalization-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“托管最少量规则”规则集
-              href: managed-minimun-rules-rule-set-for-managed-code.md
-            - name: 托管代码的“托管建议规则”规则集
-              href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: “混合最少量规则”规则集
-              href: mixed-minimum-rules-rule-set.md
-            - name: “混合建议规则”规则集
-              href: mixed-recommended-rules-rule-set.md
-            - name: “本机最少量规则”规则集
-              href: native-minimum-rules-rule-set.md
-            - name: “本机建议规则”规则集
-              href: native-recommended-rules-rule-set.md
-            - name: 托管代码的“安全规则”规则集
-              href: security-rules-rule-set-for-managed-code.md
-    - name: 代码分析应用程序错误
-      href: code-analysis-application-errors.md
-      items:
-        - name: CA0001
-          href: ca0001.md
-        - name: CA0051
-          href: ca0051.md
-        - name: CA0052
-          href: ca0052.md
-        - name: CA0053
-          href: ca0053.md
-        - name: CA0054
-          href: ca0054.md
-        - name: CA0055
-          href: ca0055.md
-        - name: CA0056
-          href: ca0056.md
-        - name: CA0057
-          href: ca0057.md
-        - name: CA0058
-          href: ca0058.md
-        - name: CA0059
-          href: ca0059.md
-        - name: CA0060
-          href: ca0060.md
-        - name: CA0061
-          href: ca0061.md
-        - name: CA0062
-          href: ca0062.md
-        - name: CA0063
-          href: ca0063.md
-        - name: CA0064
-          href: ca0064.md
-        - name: CA0065
-          href: ca0065.md
-        - name: CA0066
-          href: ca0066.md
-        - name: CA0067
-          href: ca0067.md
-        - name: CA0068
-          href: ca0068.md
-        - name: CA0069
-          href: ca0069.md
-        - name: CA0070
-          href: ca0070.md
-        - name: CA0501
-          href: ca0501.md
-        - name: CA0502
-          href: ca0502.md
-        - name: CA0503
-          href: ca0503.md
-        - name: CA0504
-          href: ca0504.md
-        - name: CA0505
-          href: ca0505.md
-        - name: FxCopCmd 错误
-          href: fxcopcmd-errors.md
-    - name: 利用团队项目签入策略提高代码质量
-      href: enhancing-code-quality-with-team-project-check-in-policies.md
-      items:
-        - name: 创建和使用代码分析签入策略
-          href: creating-and-using-code-analysis-check-in-policies.md
+            - name: 代码分析应用程序错误
+              href: code-analysis-application-errors.md
+            - name: CA0001
+              href: ca0001.md
+            - name: CA0051
+              href: ca0051.md
+            - name: CA0052
+              href: ca0052.md
+            - name: CA0053
+              href: ca0053.md
+            - name: CA0054
+              href: ca0054.md
+            - name: CA0055
+              href: ca0055.md
+            - name: CA0056
+              href: ca0056.md
+            - name: CA0057
+              href: ca0057.md
+            - name: CA0058
+              href: ca0058.md
+            - name: CA0059
+              href: ca0059.md
+            - name: CA0060
+              href: ca0060.md
+            - name: CA0061
+              href: ca0061.md
+            - name: CA0062
+              href: ca0062.md
+            - name: CA0063
+              href: ca0063.md
+            - name: CA0064
+              href: ca0064.md
+            - name: CA0065
+              href: ca0065.md
+            - name: CA0066
+              href: ca0066.md
+            - name: CA0067
+              href: ca0067.md
+            - name: CA0068
+              href: ca0068.md
+            - name: CA0069
+              href: ca0069.md
+            - name: CA0070
+              href: ca0070.md
+            - name: CA0501
+              href: ca0501.md
+            - name: CA0502
+              href: ca0502.md
+            - name: CA0503
+              href: ca0503.md
+            - name: CA0504
+              href: ca0504.md
+            - name: CA0505
+              href: ca0505.md
+            - name: FxCopCmd 错误
+              href: fxcopcmd-errors.md
+        - name: 利用团队项目签入策略提高代码质量
           items:
-            - name: 如何：创建或更新标准代码分析签入策略
-              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: 对托管代码实施自定义签入策略
-              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-            - name: 如何：使用代码分析签入策略强制实现可维护的代码
-              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-            - name: 代码分析签入策略的版本兼容性
-              href: version-compatibility-for-code-analysis-check-in-policies.md
+            - name: 利用团队项目签入策略提高代码质量
+              href: enhancing-code-quality-with-team-project-check-in-policies.md
+            - name: 创建和使用代码分析签入策略
+              items:
+                - name: 创建和使用代码分析签入策略
+                  href: creating-and-using-code-analysis-check-in-policies.md
+                - name: 如何：创建或更新标准代码分析签入策略
+                  href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+                - name: 对托管代码实施自定义签入策略
+                  href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+                - name: 如何：使用代码分析签入策略强制实现可维护的代码
+                  href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+                - name: 代码分析签入策略的版本兼容性
+                  href: version-compatibility-for-code-analysis-check-in-policies.md
 - name: 测量托管代码的复杂性和可维护性
-  href: measuring-complexity-and-maintainability-of-managed-code.md
   items:
+    - name: 测量托管代码的复杂性和可维护性
+      href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: 代码度量值
       href: code-metrics-values.md
     - name: 如何：生成代码度量数据
@@ -1297,8 +1323,9 @@
     - name: 使用代码度量数据
       href: working-with-code-metrics-data.md
 - name: 质量工具疑难解答
-  href: troubleshooting-quality-tools.md
   items:
+    - name: 质量工具疑难解答
+      href: troubleshooting-quality-tools.md
     - name: 代码分析问题疑难解答
       href: troubleshooting-code-analysis-issues.md
     - name: 代码度量值问题疑难解答

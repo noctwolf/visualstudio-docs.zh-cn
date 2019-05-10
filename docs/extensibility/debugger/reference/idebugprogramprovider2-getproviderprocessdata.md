@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916713"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459012"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 检索从指定的进程正在运行的程序列表。
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `Flags`
+## <a name="parameters"></a>参数
+ `Flags`\
 
  [in]中的标志的组合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)枚举。 下列标志则典型的此调用：
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|调用方已附加到但不是启动调试器。|
 |`PFLAG_GET_PROGRAM_NODES`|调用方要求提供程序节点的列表返回。|
 
- `pPort`
+ `pPort`\
 
  [in]调用进程的端口上运行。
 
- `processId`
+ `processId`\
 
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)保存包含该程序的进程的 ID 相关的结构。
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in]Guid 的数组，用于分配要调试该进程 （它们将用于筛选根据提供的引擎的支持; 如果未不指定任何引擎，则将返回所有程序实际都返回的程序） 的调试引擎。
 
- `pProcess`
+ `pProcess`\
 
  [out]一个[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)填充所需的信息的结构。
 

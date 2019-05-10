@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a7928b203d00e0f9b43250a463a8fb272ce755
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223576"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 此方法返回此服务知道的类型可视化工具的列表。
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `celtSkip`
+## <a name="parameters"></a>参数
+ `celtSkip`\
 
  [in]可视化工具，以便跳过的数。
 
- `celRequested`
+ `celRequested`\
 
  [in]可视化工具，以便检索数 (还指定了大小的`rgViewers`数组)。
 
- `rgViewers`
+ `rgViewers`\
 
  [in、 out]数组[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)要填充的结构。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]实际检索的可视化工具数。
 

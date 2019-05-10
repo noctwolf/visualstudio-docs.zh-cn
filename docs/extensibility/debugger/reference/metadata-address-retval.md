@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913882"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460972"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 此结构表示的方法或函数返回的值。
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>术语
- tokMethod 此返回值是为该方法的 ID。
+## <a name="members"></a>成员
+ `tokMethod`\
+ 此返回值是为该方法的 ID。
 
- dwCorType 返回值的基类型。 这是一个介于`CorElementType`枚举中定义[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 中的文件。
+ `dwCorType`\
+ 返回值的基类型。 这是一个介于`CorElementType`枚举中定义[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 中的文件。
 
- dwSigSize 返回值签名的大小 (存储在`rgSig`)。
+ `dwSigSize`\
+ 返回值签名的大小 (存储在`rgSig`)。
 
- rgSig 形成的返回值的签名的字节数组。
+ `rgSig`\
+ 构成签名的返回值的字节数组。
 
 ## <a name="remarks"></a>备注
  此结构是中的联合的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构时`dwKind`字段`DEBUG_ADDRESS_UNION`结构设置为`ADDRESS_KIND_RETVAL`(从值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举）。

@@ -1,12 +1,15 @@
 - name: Visual Studio 中的 Office 和 SharePoint 开发
-  href: office-and-sharepoint-development-in-visual-studio.md
   items:
+    - name: Visual Studio 中的 Office 和 SharePoint 开发
+      href: office-and-sharepoint-development-in-visual-studio.md
     - name: 为 Office 创建 VSTO 外接程序
-      href: create-vsto-add-ins-for-office-by-using-visual-studio.md
       items:
+        - name: 为 Office 创建 VSTO 外接程序
+          href: create-vsto-add-ins-for-office-by-using-visual-studio.md
         - name: 入门
-          href: getting-started-office-development-in-visual-studio.md
           items:
+            - name: 入门
+              href: getting-started-office-development-in-visual-studio.md
             - name: Office 解决方案开发概述
               href: office-solutions-development-overview-vsto.md
             - name: 面向 .NET Framework 4 或 .NET Framework 4.5 的 Office 项目设计的更改
@@ -14,8 +17,9 @@
             - name: 按 Office 应用程序和项目类型提供的功能
               href: features-available-by-office-application-and-project-type.md
             - name: 将计算机配置为开发 Office 解决方案
-              href: configuring-a-computer-to-develop-office-solutions.md
               items:
+                - name: 将计算机配置为开发 Office 解决方案
+                  href: configuring-a-computer-to-develop-office-solutions.md
                 - name: 将计算机配置为开发 Office 解决方案
                   href: how-to-configure-a-computer-to-develop-office-solutions.md
                 - name: 安装 Visual Studio Tools for Office 运行时可再发行组件
@@ -35,11 +39,13 @@
             - name: 其他 Office 解决方案开发资源
               href: additional-resources-for-developing-office-solutions.md
         - name: 升级和迁移 Office 解决方案
-          href: upgrading-and-migrating-office-solutions.md
           items:
+            - name: 升级和迁移 Office 解决方案
+              href: upgrading-and-migrating-office-solutions.md
             - name: 将 Office 解决方案迁移到 .NET Framework 4 或更高版本
-              href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
               items:
+                - name: 将 Office 解决方案迁移到 .NET Framework 4 或更高版本
+                  href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: 运行 Office 项目所需的更改
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: 更新 Excel 和 Word 项目
@@ -49,15 +55,17 @@
                 - name: 更新 Outlook 项目中的窗体区域
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Visual Studio 中 Office 解决方案的体系结构
-          href: architecture-of-office-solutions-in-visual-studio.md
           items:
+            - name: Visual Studio 中 Office 解决方案的体系结构
+              href: architecture-of-office-solutions-in-visual-studio.md
             - name: 文档级自定义项的体系结构
               href: architecture-of-document-level-customizations.md
             - name: VSTO 外接程序的体系结构
               href: architecture-of-vsto-add-ins.md
             - name: Visual Studio Tools for Office Runtime 概述
-              href: visual-studio-tools-for-office-runtime-overview.md
               items:
+                - name: Visual Studio Tools for Office Runtime 概述
+                  href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Visual Studio Tools for Office Runtime Installation Scenarios
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: Visual Studio Tools for Office Runtime 中的程序集
@@ -67,8 +75,9 @@
             - name: Custom Document Properties Overview
               href: custom-document-properties-overview.md
         - name: Designing and Creating Office Solutions
-          href: designing-and-creating-office-solutions.md
           items:
+            - name: Designing and Creating Office Solutions
+              href: designing-and-creating-office-solutions.md
             - name: Office 项目模板概述
               href: office-project-templates-overview.md
             - name: 在 Visual Studio 中创建 Office 项目
@@ -86,8 +95,9 @@
             - name: 为 Office 解决方案设置配置信息
               href: how-to-set-up-configuration-information-for-an-office-solution.md
             - name: 在 Visual Studio 内使用 Office 功能
-              href: using-office-functionality-inside-of-visual-studio.md
               items:
+                - name: 在 Visual Studio 内使用 Office 功能
+                  href: using-office-functionality-inside-of-visual-studio.md
                 - name: 文档级解决方案中的文档保护
                   href: document-protection-in-document-level-solutions.md
                 - name: 信息权限管理与托管代码扩展概述
@@ -99,11 +109,13 @@
                 - name: 打开 Office 解决方案但不运行代码
                   href: how-to-open-office-solutions-without-running-code.md
         - name: 开发 Office 解决方案
-          href: developing-office-solutions.md
           items:
+            - name: 开发 Office 解决方案
+              href: developing-office-solutions.md
             - name: 在 Office 解决方案中编写代码
-              href: writing-code-in-office-solutions.md
               items:
+                - name: 在 Office 解决方案中编写代码
+                  href: writing-code-in-office-solutions.md
                 - name: Office 解决方案中的可选参数
                   href: optional-parameters-in-office-solutions.md
                 - name: Office 解决方案中的后期绑定
@@ -117,8 +129,9 @@
                 - name: 合作开发 Office 解决方案
                   href: collaborative-development-of-office-solutions.md
             - name: VSTO 外接程序编程
-              href: programming-vsto-add-ins.md
               items:
+                - name: VSTO 外接程序编程
+                  href: programming-vsto-add-ins.md
                 - name: 提高 VSTO 外接程序的性能
                   href: improving-the-performance-of-a-vsto-add-in.md
                 - name: 在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿
@@ -130,11 +143,13 @@
                 - name: 使用扩展性接口自定义 UI 功能
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
             - name: 对文档级自定义项进行编程
-              href: programming-document-level-customizations.md
               items:
+                - name: 对文档级自定义项进行编程
+                  href: programming-document-level-customizations.md
                 - name: 结合 VBA 和文档级自定义项
-                  href: combining-vba-and-document-level-customizations.md
                   items:
+                    - name: 结合 VBA 和文档级自定义项
+                      href: combining-vba-and-document-level-customizations.md
                     - name: 在 Visual Basic 项目中向 VBA 公开代码
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
                     - name: '在 Visual C# 项目中向 VBA 公开代码'
@@ -144,25 +159,29 @@
                     - name: '演练：在 Visual C# 项目中调用 VBA 中的代码'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Managing Documents on a Server by Using the ServerDocument Class
-                  href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                   items:
+                    - name: Managing Documents on a Server by Using the ServerDocument Class
+                      href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                     - name: 删除文档中的托管代码扩展
                       href: how-to-remove-managed-code-extensions-from-documents.md
                     - name: 将托管代码扩展附加到文档
                       href: how-to-attach-managed-code-extensions-to-documents.md
             - name: Office UI 自定义
-              href: office-ui-customization.md
               items:
+                - name: Office UI 自定义
+                  href: office-ui-customization.md
                 - name: Office 文档上的控件
-                  href: controls-on-office-documents.md
                   items:
+                    - name: Office 文档上的控件
+                      href: controls-on-office-documents.md
                     - name: 宿主项和宿主控件概述
                       href: host-items-and-host-controls-overview.md
                     - name: 宿主项和宿主控件的编程限制
                       href: programmatic-limitations-of-host-items-and-host-controls.md
                     - name: Office 文档上的 Windows 窗体控件概述
-                      href: windows-forms-controls-on-office-documents-overview.md
                       items:
+                        - name: Office 文档上的 Windows 窗体控件概述
+                          href: windows-forms-controls-on-office-documents-overview.md
                         - name: Limitations of Windows Forms Controls on Office Documents
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: 将 Windows 窗体控件添加到 Office 文档
@@ -184,13 +203,15 @@
                         - name: 在打印时隐藏工作表上的控件
                           href: how-to-hide-controls-on-worksheets-when-printing.md
                     - name: 在运行时向 Office 文档添加控件
-                      href: adding-controls-to-office-documents-at-run-time.md
                       items:
+                        - name: 在运行时向 Office 文档添加控件
+                          href: adding-controls-to-office-documents-at-run-time.md
                         - name: 在 Office 文档中保存动态控件
                           href: persisting-dynamic-controls-in-office-documents.md
                 - name: 功能区概述
-                  href: ribbon-overview.md
                   items:
+                    - name: 功能区概述
+                      href: ribbon-overview.md
                     - name: 开始自定义功能区
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: 功能区设计器
@@ -222,8 +243,9 @@
                     - name: 演练：使用功能区 XML 创建自定义选项卡
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: 操作窗格概述
-                  href: actions-pane-overview.md
                   items:
+                    - name: 操作窗格概述
+                      href: actions-pane-overview.md
                     - name: 将操作窗格添加到 Word 文档或 Excel 工作簿
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: 管理操作窗格上的控件布局
@@ -235,8 +257,9 @@
                     - name: 演练：将文本从操作窗格插入到文档
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: 自定义任务窗格
-                  href: custom-task-panes.md
                   items:
+                    - name: 自定义任务窗格
+                      href: custom-task-panes.md
                     - name: 向应用程序添加自定义任务窗格
                       href: how-to-add-a-custom-task-pane-to-an-application.md
                     - name: 演练：从自定义任务窗格自动化应用程序
@@ -256,11 +279,13 @@
                 - name: 演练：使用 Windows 窗体收集数据
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Office 解决方案中的数据
-              href: data-in-office-solutions.md
               items:
+                - name: Office 解决方案中的数据
+                  href: data-in-office-solutions.md
                 - name: 将数据绑定到 Office 解决方案中的控件
-                  href: binding-data-to-controls-in-office-solutions.md
                   items:
+                    - name: 将数据绑定到 Office 解决方案中的控件
+                      href: binding-data-to-controls-in-office-solutions.md
                     - name: 用数据库中的数据填充工作表
                       href: how-to-populate-worksheets-with-data-from-a-database.md
                     - name: 用数据库中的数据填充文档
@@ -284,18 +309,21 @@
                     - name: 演练：VSTO 外接程序项目中的复杂数据绑定
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Custom XML Parts Overview
-                  href: custom-xml-parts-overview.md
                   items:
+                    - name: Custom XML Parts Overview
+                      href: custom-xml-parts-overview.md
                     - name: 将自定义 XML 部件添加到文档级自定义项
                       href: how-to-add-custom-xml-parts-to-document-level-customizations.md
                     - name: 使用 VSTO 加载项将自定义 XML 部件添加到文档
                       href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
                 - name: 文档级自定义项中的缓存数据
-                  href: cached-data-in-document-level-customizations.md
                   items:
+                    - name: 文档级自定义项中的缓存数据
+                      href: cached-data-in-document-level-customizations.md
                     - name: 缓存数据
-                      href: caching-data.md
                       items:
+                        - name: 缓存数据
+                          href: caching-data.md
                         - name: 缓存数据以便脱机使用或在服务器上使用
                           href: how-to-cache-data-for-use-offline-or-on-a-server.md
                         - name: 以编程方式在 Office 文档中缓存数据源
@@ -305,8 +333,9 @@
                         - name: 演练：使用缓存数据集创建主从关系
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: 访问服务器上的文档数据
-                      href: accessing-data-in-documents-on-the-server.md
                       items:
+                        - name: 访问服务器上的文档数据
+                          href: accessing-data-in-documents-on-the-server.md
                         - name: 演练：将数据插入到服务器上的工作簿中
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
                         - name: 演练：从服务器上的工作簿中检索缓存的数据
@@ -314,8 +343,9 @@
                         - name: 演练：更改服务器上的工作簿中的缓存数据
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: 文档级自定义项中的 XML 架构和数据
-                  href: xml-schemas-and-data-in-document-level-customizations.md
                   items:
+                    - name: 文档级自定义项中的 XML 架构和数据
+                      href: xml-schemas-and-data-in-document-level-customizations.md
                     - name: 将架构映射到 Visual Studio 内部的 Word 文档
                       href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
                     - name: 将架构映射到 Visual Studio 内部的工作表
@@ -325,8 +355,9 @@
             - name: 自动保存如何影响 Office 解决方案
               href: how-autosave-impacts-office-solutions.md
             - name: Office 解决方案的疑难解答
-              href: troubleshooting-office-solutions.md
               items:
+                - name: Office 解决方案的疑难解答
+                  href: troubleshooting-office-solutions.md
                 - name: Office 解决方案中错误的疑难解答
                   href: troubleshooting-errors-in-office-solutions.md
                 - name: 重新启用已禁用的 VSTO 加载项
@@ -346,14 +377,17 @@
             - name: Office 项目中的辅助功能
               href: accessibility-in-office-projects.md
         - name: Excel 解决方案
-          href: excel-solutions.md
           items:
+            - name: Excel 解决方案
+              href: excel-solutions.md
             - name: Excel Object Model Overview
-              href: excel-object-model-overview.md
               items:
+                - name: Excel Object Model Overview
+                  href: excel-object-model-overview.md
                 - name: 使用工作簿
-                  href: working-with-workbooks.md
                   items:
+                    - name: 使用工作簿
+                      href: working-with-workbooks.md
                     - name: 以编程方式新建工作簿
                       href: how-to-programmatically-create-new-workbooks.md
                     - name: 以编程方式打开工作簿
@@ -369,8 +403,9 @@
                     - name: 以编程方式将文本文件作为工作簿打开
                       href: how-to-programmatically-open-text-files-as-workbooks.md
                 - name: 使用工作表
-                  href: working-with-worksheets.md
                   items:
+                    - name: 使用工作表
+                      href: working-with-worksheets.md
                     - name: 以编程方式向工作簿添加新工作表
                       href: how-to-programmatically-add-new-worksheets-to-workbooks.md
                     - name: 以编程方式复制工作表
@@ -406,8 +441,9 @@
                     - name: 以编程方式对工作表中的数据进行排序
                       href: how-to-programmatically-sort-data-in-worksheets.md
                 - name: 使用范围
-                  href: working-with-ranges.md
                   items:
+                    - name: 使用范围
+                      href: working-with-ranges.md
                     - name: 以编程方式在代码中引用工作表范围
                       href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
                     - name: 以编程方式自动用递增变化的数据填充范围
@@ -425,8 +461,9 @@
                     - name: 以编程方式在工作表单元格中显示字符串
                       href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
             - name: 使用扩展对象实现 Excel 自动化
-              href: automating-excel-by-using-extended-objects.md
               items:
+                - name: 使用扩展对象实现 Excel 自动化
+                  href: automating-excel-by-using-extended-objects.md
                 - name: 工作簿宿主项
                   href: workbook-host-item.md
                 - name: 工作表宿主项
@@ -474,14 +511,17 @@
         - name: InfoPath 解决方案
           href: infopath-solutions.md
         - name: Outlook 解决方案
-          href: outlook-solutions.md
           items:
+            - name: Outlook 解决方案
+              href: outlook-solutions.md
             - name: Outlook 对象模型概述
-              href: outlook-object-model-overview.md
               items:
+                - name: Outlook 对象模型概述
+                  href: outlook-object-model-overview.md
                 - name: 使用联系人项
-                  href: working-with-contact-items.md
                   items:
+                    - name: 使用联系人项
+                      href: working-with-contact-items.md
                     - name: 以编程方式访问 Outlook 联系人
                       href: how-to-programmatically-access-outlook-contacts.md
                     - name: 以编程方式搜索特定联系人
@@ -493,8 +533,9 @@
                     - name: 以编程方式删除 Outlook 联系人
                       href: how-to-programmatically-delete-outlook-contacts.md
                 - name: 使用邮件项
-                  href: working-with-mail-items.md
                   items:
+                    - name: 使用邮件项
+                      href: working-with-mail-items.md
                     - name: 以编程方式创建电子邮件项
                       href: how-to-programmatically-create-an-e-mail-item.md
                     - name: 以编程方式发送电子邮件
@@ -508,8 +549,9 @@
                     - name: 以编程方式检索收件箱中的未读邮件
                       href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
                 - name: 使用文件夹
-                  href: working-with-folders.md
                   items:
+                    - name: 使用文件夹
+                      href: working-with-folders.md
                     - name: 以编程方式在特定文件夹中进行搜索
                       href: how-to-programmatically-search-within-a-specific-folder.md
                     - name: 以编程方式按名称检索文件夹
@@ -521,8 +563,9 @@
                     - name: 以编程方式在 Outlook 中移动项
                       href: how-to-programmatically-move-items-in-outlook.md
                 - name: 使用日历项
-                  href: working-with-calendar-items.md
                   items:
+                    - name: 使用日历项
+                      href: working-with-calendar-items.md
                     - name: 以编程方式创建约会
                       href: how-to-programmatically-create-appointments.md
                     - name: 以编程方式删除约会
@@ -534,8 +577,9 @@
                 - name: 以编程方式确定当前的 Outlook 项
                   href: how-to-programmatically-determine-the-current-outlook-item.md
             - name: Creating Outlook Form Regions
-              href: creating-outlook-form-regions.md
               items:
+                - name: Creating Outlook Form Regions
+                  href: creating-outlook-form-regions.md
                 - name: Outlook 窗体区域创建准则
                   href: guidelines-for-creating-outlook-form-regions.md
                 - name: 将表单区域添加到 Outlook 加载项项目
@@ -555,23 +599,27 @@
             - name: 演练：创建你的第一个 Outlook VSTO 外接程序
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: PowerPoint 解决方案
-          href: powerpoint-solutions.md
           items:
+            - name: PowerPoint 解决方案
+              href: powerpoint-solutions.md
             - name: 演练：创建你的第一个 PowerPoint VSTO 外接程序
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: 项目解决方案
-          href: project-solutions.md
           items:
+            - name: 项目解决方案
+              href: project-solutions.md
             - name: 演练：创建你的第一个 Project VSTO 外接程序
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Visio 解决方案
-          href: visio-solutions.md
           items:
+            - name: Visio 解决方案
+              href: visio-solutions.md
             - name: Visio 对象模型概述
               href: visio-object-model-overview.md
             - name: 使用 Visio 文档
-              href: working-with-visio-documents.md
               items:
+                - name: 使用 Visio 文档
+                  href: working-with-visio-documents.md
                 - name: 以编程方式创建新的 Visio 文档
                   href: how-to-programmatically-create-new-visio-documents.md
                 - name: 以编程方式打开 Visio 文档
@@ -583,21 +631,25 @@
                 - name: 以编程方式打印 Visio 文档
                   href: how-to-programmatically-print-visio-documents.md
             - name: 使用 Visio 形状
-              href: working-with-visio-shapes.md
               items:
+                - name: 使用 Visio 形状
+                  href: working-with-visio-shapes.md
                 - name: 以编程方式向 Visio 文档中添加形状
                   href: how-to-programmatically-add-shapes-to-a-visio-document.md
                 - name: 以编程方式在 Visio 文档中复制和粘贴形状
                   href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
         - name: Word 解决方案
-          href: word-solutions.md
           items:
+            - name: Word 解决方案
+              href: word-solutions.md
             - name: Word 对象模型概述
-              href: word-object-model-overview.md
               items:
+                - name: Word 对象模型概述
+                  href: word-object-model-overview.md
                 - name: 处理文档
-                  href: working-with-documents.md
                   items:
+                    - name: 处理文档
+                      href: working-with-documents.md
                     - name: 以编程方式新建文档
                       href: how-to-programmatically-create-new-documents.md
                     - name: 以编程方式打开现有文档
@@ -625,8 +677,9 @@
                     - name: 以编程方式移除文档中的所有注释
                       href: how-to-programmatically-remove-all-comments-from-documents.md
                 - name: 在文档中处理文本
-                  href: working-with-text-in-documents.md
                   items:
+                    - name: 在文档中处理文本
+                      href: working-with-text-in-documents.md
                     - name: 以编程方式在文档中定义和选择范围
                       href: how-to-programmatically-define-and-select-ranges-in-documents.md
                     - name: 以编程方式检索范围中的开始字符和结束字符
@@ -660,8 +713,9 @@
                     - name: 以编程方式向文档中的文本添加注释
                       href: how-to-programmatically-add-comments-to-text-in-documents.md
                 - name: 处理表格
-                  href: working-with-tables.md
                   items:
+                    - name: 处理表格
+                      href: working-with-tables.md
                     - name: 以编程方式创建 Word 表格
                       href: how-to-programmatically-create-word-tables.md
                     - name: 以编程方式用文档属性填充 Word 表格
@@ -671,8 +725,9 @@
                     - name: 以编程方式向 Word 表格中的单元格添加文本和格式设置
                       href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
             - name: 使用扩展对象实现 Word 自动化
-              href: automating-word-by-using-extended-objects.md
               items:
+                - name: 使用扩展对象实现 Word 自动化
+                  href: automating-word-by-using-extended-objects.md
                 - name: 文档宿主项
                   href: document-host-item.md
                 - name: 内容控件
@@ -712,8 +767,9 @@
         - name: 调试 Office 项目
           href: debugging-office-projects.md
         - name: 保护 Office 解决方案的安全
-          href: securing-office-solutions.md
           items:
+            - name: 保护 Office 解决方案的安全
+              href: securing-office-solutions.md
             - name: 向 Office 解决方案授予信任
               href: granting-trust-to-office-solutions.md
             - name: Granting Trust to Documents
@@ -731,20 +787,23 @@
             - name: Office 解决方案安全性疑难解答
               href: troubleshooting-office-solution-security.md
         - name: 部署 Office 解决方案
-          href: deploying-an-office-solution.md
           items:
+            - name: 部署 Office 解决方案
+              href: deploying-an-office-solution.md
             - name: 使用 ClickOnce 部署 Office 解决方案
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: 使用 Windows Installer 部署 Office 解决方案
               href: deploying-an-office-solution-by-using-windows-installer.md
             - name: Office 解决方案部署疑难解答
-              href: troubleshooting-office-solution-deployment.md
               items:
+                - name: Office 解决方案部署疑难解答
+                  href: troubleshooting-office-solution-deployment.md
                 - name: Office 解决方案的事件日志
                   href: event-logging-for-office-solutions.md
         - name: 示例和演练
-          href: office-development-samples-and-walkthroughs.md
           items:
+            - name: 示例和演练
+              href: office-development-samples-and-walkthroughs.md
             - name: Office 开发示例
               href: office-development-samples.md
             - name: 使用 Word 的演练
@@ -758,13 +817,15 @@
             - name: 安全和部署演练
               href: security-and-deployment-walkthroughs.md
         - name: 常规参考（Visual Studio 中的 Office 开发）
-          href: general-reference-office-development-in-visual-studio.md
           items:
+            - name: 常规参考（Visual Studio 中的 Office 开发）
+              href: general-reference-office-development-in-visual-studio.md
             - name: Office 主互操作程序集
               href: office-primary-interop-assemblies.md
             - name: Office 解决方案的应用程序清单
-              href: application-manifests-for-office-solutions.md
               items:
+                - name: Office 解决方案的应用程序清单
+                  href: application-manifests-for-office-solutions.md
                 - name: <customHostSpecified> 元素
                   href: customhostspecified-element-office-development-in-visual-studio.md
                 - name: <addin> 元素
@@ -806,8 +867,9 @@
             - name: Office 解决方案的部署清单
               href: deployment-manifests-for-office-solutions.md
             - name: 用户界面参考（Visual Studio 中的 Office 开发）
-              href: user-interface-reference-office-development-in-visual-studio.md
               items:
+                - name: 用户界面参考（Visual Studio 中的 Office 开发）
+                  href: user-interface-reference-office-development-in-visual-studio.md
                 - name: “选项”对话框 ->“Microsoft Office 键盘设置”->“Microsoft Office Word 键盘”
                   href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
                 - name: “选项”对话框 ->“Microsoft Office 键盘设置”->“Microsoft Office Excel 键盘”
@@ -819,8 +881,9 @@
                 - name: 发布向导（Visual Studio 中的 Office 开发）
                   href: publish-wizard-office-development-in-visual-studio.md
             - name: 错误消息（Visual Studio 中的 Office 开发）
-              href: error-messages-office-development-in-visual-studio.md
               items:
+                - name: 错误消息（Visual Studio 中的 Office 开发）
+                  href: error-messages-office-development-in-visual-studio.md
                 - name: 此计算机上未安装 Microsoft Office
                   href: microsoft-office-is-not-installed-on-this-computer.md
                 - name: 用于创建此项目的工作簿包含设计器无法加载的 ActiveX 控件
@@ -832,8 +895,9 @@
         - name: 托管参考（Visual Studio 中的 Office 开发）
           href: managed-reference-office-development-in-visual-studio.md
         - name: 非托管 API 参考（Visual Studio 中的 Office 开发）
-          href: unmanaged-api-reference-office-development-in-visual-studio.md
           items:
+            - name: 非托管 API 参考（Visual Studio 中的 Office 开发）
+              href: unmanaged-api-reference-office-development-in-visual-studio.md
             - name: EnsureVSTOComponent 函数
               href: ensurevstocomponent-function.md
             - name: GetValidCompatibleFramework 函数
@@ -841,15 +905,17 @@
             - name: GetVstoSolutionMetadata 函数
               href: getvstosolutionmetadata-function.md
             - name: IManagedAddin 接口
-              href: imanagedaddin-interface.md
               items:
+                - name: IManagedAddin 接口
+                  href: imanagedaddin-interface.md
                 - name: Load 方法
                   href: imanagedaddin-load.md
                 - name: Unload 方法
                   href: imanagedaddin-unload.md
             - name: IWefDebuggingSupport 接口
-              href: iwefdebuggingsupport-interface.md
               items:
+                - name: IWefDebuggingSupport 接口
+                  href: iwefdebuggingsupport-interface.md
                 - name: GetAutoInsertExtensions 方法
                   href: getautoinsertextensions-method.md
                 - name: SetWefProcessId 方法

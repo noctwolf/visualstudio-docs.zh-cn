@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba9fbf986579ad43677677b8397995119211a24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ec7dc97d0cfe7940939f1c253a22b92d36f9537
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914857"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225448"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 枚举中返回下一组元素。
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `celt`
+## <a name="parameters"></a>参数
+ `celt`\
 
  [in]要检索的元素数。 此外可以指定的最大大小`rgelt`数组。
 
- `rgelt`
+ `rgelt`\
 
  [in、 out]数组[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)要填充的元素。
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out]返回中实际返回的元素数目`rgelt`。
 

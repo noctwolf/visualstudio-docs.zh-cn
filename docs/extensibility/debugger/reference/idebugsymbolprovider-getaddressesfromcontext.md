@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915855"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226439"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 此方法将文档上下文映射到调试地址的数组。
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pDocContext`
+## <a name="parameters"></a>参数
+ `pDocContext`\
 
  [in]文档上下文中。
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in]如果为 TRUE，则限制为单个语句的调试地址。
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out]返回与此语句或行关联的起始调试地址的枚举器。
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out]返回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)结束的调试地址与此语句或行关联的枚举器。
 

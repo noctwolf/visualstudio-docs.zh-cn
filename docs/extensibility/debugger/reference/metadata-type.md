@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3541181e0141e20381be7cdd24a45d7c7a0704ec
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865672"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458046"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此结构指定从元数据字段类型有关的信息。
@@ -40,16 +43,16 @@ public struct METADATA_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>参数
- ulAppDomainID
+## <a name="parameters"></a>参数
+ `ulAppDomainID`\
 
  符号所来自的应用程序 ID。 这用于唯一标识应用程序的实例。
 
- guidModule
+ `guidModule`\
 
  包含此字段的模块的 GUID。
 
- tokClass
+ `tokClass`\
 
  此类型的元数据令牌 ID。
 

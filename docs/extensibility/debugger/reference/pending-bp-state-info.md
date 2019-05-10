@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4c19bed895a04e372f930d347a7caa761d34a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d08e2ec34f153e984ea158eaca4ca282652e67e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865359"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460895"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 包含有关已准备好将绑定到代码位置断点的状态信息。
@@ -39,9 +42,11 @@ public struct PENDING_BP_STATE_INFO { 
 ```
 
 ## <a name="members"></a>成员
- 状态中的值[PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)枚举，用于指定挂起断点的状态。
+ `state`\
+ 中的值[PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)枚举，用于指定挂起断点的状态。
 
- 标记中的标志的组合[PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)枚举，用于指定断点虚拟化。
+ `flags`\
+ 中的标志的组合[PENDING_BP_STATE_FLAGS](../../../extensibility/debugger/reference/pending-bp-state-flags.md)枚举，用于指定断点虚拟化。
 
 ## <a name="remarks"></a>备注
  此结构传递给[GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)填写其中的方法。

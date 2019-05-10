@@ -24,8 +24,9 @@
     - name: 添加 Azure Active Directory (AD)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: 添加认知服务
-      href: cognitive-services-connected-services.yml
       items:
+        - name: 添加认知服务
+          href: cognitive-services-connected-services.yml
         - name: 文本分析
           href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: 必应搜索

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868498"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226380"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 此方法将映射到符号类型的符号名称。
@@ -40,16 +43,16 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszClassName`
+## <a name="parameters"></a>参数
+ `pszClassName`\
 
  [in]符号名称。
 
- `nameMatch`
+ `nameMatch`\
 
  [in]选择区分大小写的匹配项，例如，类型。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。
 
- `ppField`
+ `ppField`\
 
  [out]返回与符号类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
 

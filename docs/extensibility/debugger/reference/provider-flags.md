@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913522"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457929"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 指定要从程序提供程序获取所需的属性。
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>成员
- PFLAG_NONE 无指定的标志。
+## <a name="fields"></a>字段
+ `PFLAG_NONE`\
+ 指定任何标志。
 
- PFLAG_REMOTE_PORT 调用方想以外的其他计算机上的程序列表[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
+ `PFLAG_REMOTE_PORT`\
+ 调用方想以外的其他计算机上的程序列表[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
 
- 进程当前正在调试的此实例的 PFLAG_DEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
+ `PFLAG_DEBUGGEE`\
+ 进程当前正在调试的此实例[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。
 
- PFLAG_ATTACH_TODEBUGGEE[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]附加到正在调试的程序，但未启动。
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 附加到正在调试的程序，但未启动。
 
- PFLAG_REASON_WATCH[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]寻找事件。
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 正在监视的事件。
 
- PFLAG_GET_PROGRAM_NODES 调用方想`ProgramNodes`字段[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)结构。
+ `PFLAG_GET_PROGRAM_NODES`\
+ 调用方想`ProgramNodes`字段[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)结构。
 
- PFLAG_GET_IS_DEBUGGER_PRESENT 调用方想`fIsTheDebuggerPresent`字段的`PROVIDER_PROCESS_DATA`结构。
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ 调用方想`fIsTheDebuggerPresent`字段的`PROVIDER_PROCESS_DATA`结构。
 
 ## <a name="remarks"></a>备注
  这些标志将传递到以下方法：

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8617dd6f37d7e90d23c3ed454ef56122b36f6b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a233a37f83ff3f75b5cf0ec103e59da91f1473bd
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913944"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458463"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用给定的数据对象中更新对象的数据，并返回新的数据对象，表示对象的新数据。
@@ -38,12 +41,12 @@ int InPlaceUpdateObject(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dataIn`
+## <a name="parameters"></a>参数
+ `dataIn`\
 
  [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)对象，其中包含新数据。
 
- `dataOut`
+ `dataOut`\
 
  [out]返回一个新`IEEDataStorage`对象，其中包含被替换的数据。
 

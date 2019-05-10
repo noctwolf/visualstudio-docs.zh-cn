@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ffda1188ced40e5a174a0e033263dd2fa2e5a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 19fb88886d55e38427599a9385485eed8a1bfc07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913957"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461045"
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 用于描述一台计算机。
@@ -37,8 +40,9 @@ public enum enum_MACHINE_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成员
- MCIFLAG_TERMINAL_SERVICES_AVAILABLE 指示终端服务可用。
+## <a name="fields"></a>字段
+ `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
+ 指示终端服务可用。
 
 ## <a name="remarks"></a>备注
  用作`Flags`的成员[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)结构。

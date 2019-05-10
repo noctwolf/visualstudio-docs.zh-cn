@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415798"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460739"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 此结构指定各种类型的字段的类型有关的信息。
@@ -43,26 +46,29 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>参数
- dwKind 一个取值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举，它确定如何解释并集。
+## <a name="members"></a>成员
+ `dwKind`\
+ 中的值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举，它确定如何解释并集。
 
- type.typeMeta
+ `type.typeMeta`\
 
  [C++仅]包含[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)结构，如果`dwKind`是`TYPE_KIND_METADATA`。
 
- type.typePdb
+ `type.typePdb`\
 
  [C++仅]包含[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)结构，如果`dwKind`是`TYPE_KIND_PDB`。
 
- type.typeBuilt
+ `type.typeBuilt`\
 
  [C++仅]包含[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)结构，如果`dwKind`是`TYPE_KIND_BUILT`。
 
- type.unused 未使用空白值。
+ `type.unused`\
+ 未使用空白值。
 
- 键入的并集的名称。
+ `type`\
+ 联合的名称。
 
- unionmember
+ `unionmember`\
 
  [C#仅]封送到适当的结构类型基于`dwKind`。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c4ce1ce565ee2ca2fe4c6a26461ef283e7e76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916332"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458714"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 获取引用的选定子级的列表。 留待将来使用。
@@ -46,28 +49,28 @@ int EnumChildren ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+ `dwFields`\
 
  [in]中的标志的组合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构是必填。
 
- `dwRadix`
+ `dwRadix`\
 
  [in]用于格式化数值的任何信息的基数。
 
- `dwAttribFilter`
+ `dwAttribFilter`\
 
  [in]中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)作为筛选器结合使用的枚举`pszNameFilter`参数选择的结构是要枚举。
 
- `pszNameFilter`
+ `pszNameFilter`\
 
  [in]一个字符串，指定筛选器，例如"MyX"，与结合使用`dwAttribFilter`参数选择要枚举的结构。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]返回[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)对象，其中包含请求的子属性的列表。
 

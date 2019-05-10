@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99248291ce06aa4f07f627429bbb5cc2993a61c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad712371049151b18daf3b70abd5063e6421efba
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915993"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458566"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 获取与堆栈帧关联的线程。
@@ -36,8 +39,8 @@ int GetThread ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppThread`
+## <a name="parameters"></a>参数
+ `ppThread`\
 
  [out]返回[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)表示的线程的对象。
 

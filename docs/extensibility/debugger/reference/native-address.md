@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d7d061d7cd60444a523d5764c30b7ff538faefe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31834bff75ac95a06150d66955b8d879023dcdc6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913764"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460813"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 
@@ -37,9 +40,9 @@ public struct NATIVE_ADDRESS {
 }
 ```
 
-## <a name="terms"></a>术语
+## <a name="members"></a>成员
 
-`unknown`
+`unknown`\
 
 （这其中的含义取决于运行时和操作系统） 本机地址。
 

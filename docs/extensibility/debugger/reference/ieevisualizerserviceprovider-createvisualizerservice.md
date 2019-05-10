@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23c11e386b6c100839ae299e56e6a4d771012b38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0b45db093a451331de20b3f38bdf58f2669f0577
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915106"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223665"
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
 此方法创建可视化工具服务。
@@ -44,24 +47,24 @@ int CreateVisualizerService(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `binder`
+## <a name="parameters"></a>参数
+ `binder`\
 
  [in][IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)对象传递给[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。
 
- `pSymProv`
+ `pSymProv`\
 
  [in][IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)对象传递给`IDebugParsedExpression::EvaluateSync`。
 
- `pAddress`
+ `pAddress`\
 
  [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象传递给`IDebugParsedExression::EvaluateSync`。
 
- `dataProvider`
+ `dataProvider`\
 
  [in]一个对象，实现[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)接口 （由表达式计算器提供）。
 
- `ppService`
+ `ppService`\
 
  [out]已创建的服务。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915663"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223986"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 获取遵循一种方法中的给定的调试地址的调试地址。
@@ -40,16 +43,16 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pAddress`
+## <a name="parameters"></a>参数
+ `pAddress`\
 
  [in]给定的调试地址。
 
- `fStatementOnly`
+ `fStatementOnly`\
 
  [in]如果为 TRUE，则限制为单个语句的调试地址。
 
- `ppAddress`
+ `ppAddress`\
 
  [out]返回下一个调试地址。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76baf1330ec63d1032b69fa6cfddce4776742a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869797"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458985"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 允许接收端口事件通知的过程。
@@ -46,8 +49,8 @@ int WatchForProviderEvents(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `Flags`
+## <a name="parameters"></a>参数
+ `Flags`\
 
  [in]中的标志的组合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)枚举。 下列标志则典型的此调用：
 
@@ -58,23 +61,23 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|调用方已附加到但不是启动调试器。|
 |`PFLAG_REASON_WATCH`|调用方想要监视事件。 如果未设置此标志。 然后删除回调事件和调用方不会再收到通知。|
 
- `pPort`
+ `pPort`\
 
  [in]调用进程的端口上运行。
 
- `processId`
+ `processId`\
 
  [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)保存包含该程序的进程的 ID 相关的结构。
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in]与进程关联的调试引擎的 Guid 的数组。
 
- `guidLaunchingEngine`
+ `guidLaunchingEngine`\
 
  [in]启动此过程 （如果有） 的调试引擎的 GUID。
 
- `pEventCallback`
+ `pEventCallback`\
 
  [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的对象。
 

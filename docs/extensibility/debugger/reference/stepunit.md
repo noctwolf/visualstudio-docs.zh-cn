@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864862"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461002"
 ---
 # <a name="stepunit"></a>STEPUNIT
 单步执行指定单步执行单元。
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>成员
- 由语句 STEP_STATEMENT 步骤。
+## <a name="fields"></a>字段
+ `STEP_STATEMENT`\
+ 若要执行的语句的步骤。
 
- 通过行 STEP_LINE 步骤。
+ `STEP_LINE`\
+ 若要执行的行的步骤。
 
- 按指令 STEP_INSTRUCTION 步骤。
+ `STEP_INSTRUCTION`\
+ 若要执行的指令的步骤。
 
 ## <a name="remarks"></a>备注
  作为参数传递[步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。
