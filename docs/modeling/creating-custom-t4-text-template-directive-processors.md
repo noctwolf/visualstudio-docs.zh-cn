@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002705"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476639"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
+# <a name="create-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 
 *文本模板转换过程*采用*文本模板*文件作为输入并生成一个文本文件作为输出。 *文本模板转换引擎*控件与文本模板转换主机和一个或多个文本模板过程中和引擎进行交互*指令处理器*完成过程。 有关详细信息，请参阅[文本模板转换过程](../modeling/the-text-template-transformation-process.md)。
 

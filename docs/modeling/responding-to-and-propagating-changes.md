@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824002"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476605"
 ---
-# <a name="responding-to-and-propagating-changes"></a>响应并传播更改
+# <a name="respond-to-and-propagate-changes"></a>响应并传播更改
+
 元素是创建、 删除或更新时，您可以编写将传播到模型，其他部件或外部资源，例如文件、 数据库或其他组件的更改的代码。
 
-## <a name="in-this-section"></a>本节内容
- 作为一般准则，请考虑按以下顺序这些技术：
+## <a name="reference"></a>参考
+
+作为一般准则，请考虑按以下顺序这些技术：
 
 |技术|方案|更多相关信息|
 |-|-|-|
@@ -34,12 +36,13 @@ ms.locfileid: "62824002"
 |选择规则|选择规则专门约束用户可以选择。|[如何：访问和约束当前选定内容](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|指示使用的形状和连接线如卷影、 箭头、 颜色和线条宽度和样式功能的模型元素的状态。|[更新形状和连接线以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**比较规则和存储事件**
- 在模型中发生更改时运行更改通告程序、 规则和事件。
+## <a name="compare-rules-and-store-events"></a>将规则进行比较和存储事件
 
- 在更改已发生的最终事务通常应用规则，并提交在事务中的更改后应用的事件。
+在模型中发生更改时运行更改通告程序、 规则和事件。
 
- 使用存储事件以同步模型与应用商店和规则，以保持在存储中的一致性之外的对象。
+在更改已发生的最终事务通常应用规则，并提交在事务中的更改后应用的事件。
+
+使用存储事件以同步模型与应用商店和规则，以保持在存储中的一致性之外的对象。
 
 - **创建自定义规则**作为抽象规则从派生类中创建自定义规则。 此外必须通知的自定义规则的相关框架。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
 

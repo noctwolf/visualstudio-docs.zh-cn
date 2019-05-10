@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b955dc6f79c689ca30d8d9876d0888b14127490
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815032"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476521"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 
@@ -41,38 +41,3 @@ MSDK 允许你以域特定语言 (DSL) 的形式快速开发模型。 首先使�
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 [相关的博客文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
-
-高级的技术和故障排除指导，请访问[Visual Studio DSL 和建模工具扩展性论坛](http://go.microsoft.com/fwlink/?LinkID=186074)。
-
-## <a name="in-this-section"></a>本节内容
- [域特定语言入门](../modeling/getting-started-with-domain-specific-languages.md)
-
- [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)
-
- [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
-
- [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)
-
- [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [了解 DSL 代码](../modeling/understanding-the-dsl-code.md)
-
- [自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
-
- [创建基于 Windows 窗体的域特定语言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [创建基于 WPF 的域特定语言](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [如何：扩展域特定语言设计器](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [可视化和建模 SDK 支持的 Visual Studio 版本](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [如何：将域扩展语言迁移到新版本](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [Visual Studio 的建模 SDK 的 API 参考](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414858"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476583"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
+# <a name="customize-and-extend-a-domain-specific-language"></a>自定义和扩展域特定语言
+
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定义建模工具的多个级别：
 
-1. 定义使用 DSL 定义关系图的特定于域的语言 (DSL)。 关系图表示法、 可读的 XML 格式，与生成代码和其他项目所需的基本工具，可以快速创建 DSL。
-
-     有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。
+1. 定义使用 DSL 定义关系图的特定于域的语言 (DSL)。 关系图表示法、 可读的 XML 格式，与生成代码和其他项目所需的基本工具，可以快速创建 DSL。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。
 
 2. 使用 DSL 定义的更高级的功能来微调 DSL。 例如，可以使其他用户创建的元素时，将显示的链接。 这些技术主要实现在 DSL 定义中，并且某些需要少量的程序代码行。
 
-3. 通过使用程序代码来扩展你的建模工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。  有关详细信息，请参阅[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+3. 通过使用程序代码来扩展你的建模工具。 VMSDK 专门用于轻松将扩展和从 DSL 定义生成的代码相集成。 有关详细信息，请参阅[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 > [!NOTE]
-> 当有更新 DSL 定义文件时，请不要忘记单击**转换所有模板**之前重新生成解决方案的解决方案资源管理器工具栏中。
+> 更新 DSL 定义文件后，不要忘记单击**转换所有模板**中的工具栏**解决方案资源管理器**之前重新生成解决方案。
 
-## <a name="customShapes"></a> 在本部分中
+## <a name="article-reference"></a>项目引用
 
 |若要实现此效果|请参阅本主题|
 |-|-|
-|允许用户设置形状的颜色和样式属性。|右键单击形状或连接符类、 指向**公开添加**，单击的项目。<br /><br /> 请参阅[自定义图表的演示](../modeling/customizing-presentation-on-the-diagram.md)。|
+|允许用户设置形状的颜色和样式属性。|右键单击形状或连接符类、 指向**公开添加**，单击的项目。|
 |不同的模型元素的类在关系图中，共享属性，如初始高度和宽度、 颜色、 工具提示类似。|使用形状或连接符类之间的继承。 派生的形状和派生的域类之间的映射继承父项的映射详细的信息。<br /><br /> 或者，将不同的域类映射到相同的形状类。|
 |通过不同的形状上下文可显示的模型元素的类。|将多个形状类映射到同一个域类。 生成解决方案时，遵循错误报告，并提供请求的代码来决定要使用哪些形状。|
 |形状的颜色或字体等其他功能指示当前状态。|请参阅[更新形状和连接线以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 创建更新的公开的属性的规则。 请参阅[规则在模型内部传播更改](../modeling/rules-propagate-changes-within-the-model.md)。<br /><br /> 或者，使用 OnAssociatedPropertyChanged() 更新非公开功能，如链接箭头或字体。|
 |形状更改来指示状态的图标。|在 DSL 详细信息窗口中设置的可见性的修饰器映射。 找到多个图像修饰器上的相同位置。 请参阅[更新形状和连接线以反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)。<br /><br /> 或者，重写`ImageField.GetDisplayImage()`。 中的示例，请参阅<xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>。|
-|任何形状上设置背景图像|重写 InitializeInstanceResources() 添加锚定的 ImageField。 请参阅[自定义图表的演示](../modeling/customizing-presentation-on-the-diagram.md)。|
-|任何深度的嵌套形状|设置嵌入树的递归。 定义 BoundsRules 包含形状。 请参阅[自定义图表的演示](../modeling/customizing-presentation-on-the-diagram.md)。|
+|任何形状上设置背景图像|重写 InitializeInstanceResources() 添加锚定的 ImageField。|
+|任何深度的嵌套形状|设置嵌入树的递归。 定义 BoundsRules 包含形状。|
 |将元素的边界上的固定位置的连接器连接。|定义嵌入的终端元素，表示关系图上的小端口。 BoundsRules 用于修复中的位置的端口。 请参阅在电路图示例[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)。|
 |文本字段将显示与其他值派生的值。|将文本修饰器映射到 Calculated 或自定义存储域属性。 有关详细信息，请参阅[计算和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。|
 |更改模型元素之间的或形状之间传播|请参阅[特定于域的语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。|
