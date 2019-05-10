@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913918"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461063"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 指定调试启动标志。
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>成员
-LAUNCH_DEBUG 启动调试的过程。
+## <a name="fields"></a>字段
+`LAUNCH_DEBUG`\
+启动调试的过程。
 
-LAUNCH_NODEBUG 启动而不进行调试的进程。
+`LAUNCH_NODEBUG`\
+启动而不进行调试的进程。
 
-不推荐使用 LAUNCH_ENABLE_ENC，不要使用。
+`LAUNCH_ENABLE_ENC`\
+不推荐使用，不要使用。
 
-LAUNCH_MERGE_ENV 启动进程，并将合并与启动主机环境。
+`LAUNCH_MERGE_ENV`\
+启动进程并将合并与启动主机环境。
 
 ## <a name="remarks"></a>备注
 这些值会作为参数传递[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913605"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458383"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 指定挂起断点 （尚未绑定的断点） 的状态。
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>成员
- PBPS_NONE 零占位符。 永远不会返回此值。
+## <a name="fields"></a>字段
+ `PBPS_NONE`\
+ 零占位符。 永远不会返回此值。
 
- PBPS_DELETED 指示挂起断点已被删除。
+ `PBPS_DELETED`\
+ 指示挂起断点已被删除。
 
- PBPS_DISABLED 指示挂起断点已禁用。
+ `PBPS_DISABLED`\
+ 指示挂起断点已禁用。
 
- PBPS_ENABLED 指示挂起断点已启用。
+ `PBPS_ENABLED`\
+ 指示启用了挂起断点。
 
 ## <a name="remarks"></a>备注
  使用作为`state`的成员[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)结构。

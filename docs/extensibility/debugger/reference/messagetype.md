@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913856"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461014"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 指定消息类型和原因。
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>成员
- MT_OUTPUTSTRING 指示消息应发送到输出窗口。 这是互相排斥从`MT_MESSAGEBOX`。
+## <a name="fields"></a>字段
+ `MT_OUTPUTSTRING`\
+ 指示应将消息发送到输出窗口。 这是互相排斥从`MT_MESSAGEBOX`。
 
- MT_MESSAGEBOX 指示应在消息框中显示的消息。 这是互相排斥从`MT_OUTPUTSTRING`。
+ `MT_MESSAGEBOX`\
+ 指示应在消息框中显示的消息。 这是互相排斥从`MT_OUTPUTSTRING`。
 
- MT_TYPE_MASK 的掩码值，以隔离的消息目标。
+ `MT_TYPE_MASK`\
+ 要隔离的消息目标的掩码值。
 
- MT_REASON_EXCEPTION 指示正在因异常而显示一个消息框。 这是互相排斥从`MT_REASON_TRACEPOINT`。
+ `MT_REASON_EXCEPTION`\
+ 指示由于异常而显示一个消息框。 这是互相排斥从`MT_REASON_TRACEPOINT`。
 
- MT_REASON_TRACEPOINT 指示由于命中跟踪点所显示的消息框。 这是互斥的`MT_REASON_EXCEPTION`。
+ `MT_REASON_TRACEPOINT`\
+ 指示由于命中跟踪点显示一个消息框。 这是互斥的`MT_REASON_EXCEPTION`。
 
- MT_REASON_MASK 的掩码值，来隔离所显示的消息的原因。
+ `MT_REASON_MASK`\
+ 要隔离所显示的消息的原因的掩码值。
 
 ## <a name="remarks"></a>备注
  这些值返回从[GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md)并[GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md)方法。

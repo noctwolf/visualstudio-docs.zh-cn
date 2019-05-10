@@ -21,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540816"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226144"
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 代码分析概述
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>#pragma 支持
 
-可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅[如何：设置的 C 代码分析属性 /C++项目](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。
+可以使用`#pragma`指令以将警告视为错误; 启用或禁用警告，并禁止显示警告的代码的各个行。 有关详细信息，请参阅 [Pragma 指令和 __Pragma 关键字](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)。
 
 ## <a name="annotation-support"></a>批注的支持
 
-注释可以提高代码分析的准确性。 注释可以提供有关函数参数和返回类型的先决条件和后置条件的其他信息。 有关详细信息，请参阅[如何：使用 _analysis_assume 指定其他代码信息](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+注释可以提高代码分析的准确性。 注释可以提供有关函数参数和返回类型的先决条件和后置条件的其他信息。 有关详细信息，请参阅[使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>根据签入策略运行代码分析
 

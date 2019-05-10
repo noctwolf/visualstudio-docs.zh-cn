@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfbce26a84254158f088e8744c14154aef7f61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e7158649ee3965127b5bdeba42619eaa676cfaa0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869511"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458912"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 检索的属性的子级的列表。
@@ -48,32 +51,32 @@ int EnumChildren ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+ `dwFields`\
 
  [in]中的标志的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是必填。
 
- `dwRadix`
+ `dwRadix`\
 
  [in]指定用于格式化数值的任何信息的基数。
 
- `guidFilter`
+ `guidFilter`\
 
  [in]与使用的筛选器的 GUID`dwAttribFilter`并`pszNameFilter`选择其中的参数`DEBUG_PROPERTY_INFO`子级都要枚举。 例如，`guidFilterLocals`本地变量的筛选器。
 
- `dwAttribFilter`
+ `dwAttribFilter`\
 
  [in]中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)枚举，用于指定哪种类型的对象，若要枚举，例如`DBG_ATTRIB_METHOD`可能是此属性的子级的所有方法。 与结合`guidFilter`和`pszNameFilter`参数。
 
- `pszNameFilter`
+ `pszNameFilter`\
 
  [in]用于筛选器的名称`guidFilter`并`dwAttribFilter`选择其中的参数`DEBUG_PROPERTY_INFO`子级都要枚举。 例如，将此参数设置为"MyX"筛选器，为所有子项具有名称"MyX。"
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]返回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，其中包含的子属性的列表。
 

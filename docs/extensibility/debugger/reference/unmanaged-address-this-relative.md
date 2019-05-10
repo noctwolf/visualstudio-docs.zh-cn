@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913005"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460651"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 此结构表示的地址是相对于`this`指针 (`Me`在 Visual Basic 中)。
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>术语
- dwOffset 字节偏移量从 （例如类 vtable 开始） 的基位置。
+## <a name="members"></a>成员
+ `dwOffset`\
+ 字节偏移量从 （例如类 vtable 开始） 的基位置。
 
- dwBitOffset 偏移量中的基位置中的位 (始终为 0 除非引用的位字段)。
+ `dwBitOffset`\
+ 基位置中的位偏移量 (始终为 0 除非引用的位字段)。
 
- dwBitLength 的位数表示的地址 (始终为 0 除非引用的位字段)。
+ `dwBitLength`\
+ 表示地址的比特数 (始终为 0 除非引用的位字段)。
 
 ## <a name="remarks"></a>备注
  此结构是中的联合的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构时`dwKind`字段`DEBUG_ADDRESS_UNION`结构设置为`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`(从值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举）。

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868452"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224011"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 检索有关指定的调试地址处的方法的信息。
@@ -47,32 +50,32 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pAddress`
+## <a name="parameters"></a>参数
+ `pAddress`\
 
  [in]调试由表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- `pGuid`
+ `pGuid`\
 
  [out]该模块的唯一标识符。
 
- `pAppID`
+ `pAppID`\
 
  [out]应用程序域的标识符。
 
- `pTokenClass`
+ `pTokenClass`\
 
  [out]令牌，它表示包含类。
 
- `pTokenMethod`
+ `pTokenMethod`\
 
  [out]标记，表示该模块。
 
- `pdwOffset`
+ `pdwOffset`\
 
  [out]以字节为单位从开头的偏移量`pAddress`参数。
 
- `pdwVersion`
+ `pdwVersion`\
 
  [out]该方法的版本号。
 

@@ -9,8 +9,9 @@
     - name: 数据科学和分析应用程序工作负荷
       href: data-science-and-analytical-applications-workload.md
 - name: 安装
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: 安装
+      href: installing-python-support-in-visual-studio.md
     - name: 安装 Python 解释器
       href: installing-python-interpreters.md
 - name: 快速入门
@@ -75,8 +76,9 @@
 - name: 概念
   items:
     - name: Python 项目
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Python 项目
+          href: managing-python-projects-in-visual-studio.md
         - name: Web 项目模板
           href: python-web-application-project-templates.md
         - name: Django Web 项目模板
@@ -88,8 +90,9 @@
 - name: 操作指南
   items:
     - name: 管理 Python 环境
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: 管理 Python 环境
+          href: managing-python-environments-in-visual-studio.md
         - name: 为项目选择解释器
           href: selecting-a-python-environment-for-a-project.md
         - name: 对依赖项使用 requirements.txt
@@ -101,8 +104,9 @@
         - name: 为 IIS 配置 Web 应用
           href: configure-web-apps-for-iis-windows.md
     - name: 编辑 Python 代码
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: 编辑 Python 代码
+          href: editing-python-code-in-visual-studio.md
         - name: 格式代码
           href: formatting-python-code.md
         - name: 重构代码
@@ -112,13 +116,15 @@
     - name: 定义自定义菜单命令
       href: defining-custom-python-project-commands.md
     - name: 交互式 Python (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: 交互式 Python (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: 使用 IPython REPL
           href: interactive-repl-ipython.md
     - name: 调试
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: 调试
+          href: debugging-python-in-visual-studio.md
         - name: 在远程 Linux 计算机上调试代码
           href: debugging-python-code-on-remote-linux-machines.md
     - name: 在 Linux 上发布到 Azure 应用服务

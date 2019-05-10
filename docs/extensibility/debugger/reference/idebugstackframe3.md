@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b54e6ee8321d58046ec0beb372a14495b614db0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412568"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458511"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 此接口扩展[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)来处理已截获的异常。
@@ -45,7 +45,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="remarks"></a>备注
  已截获的异常意味着运行时在调用任何常规异常处理例程之前调试程序，可以处理异常。 实质上截获异常意味着使假设是存在，即使没有异常处理程序的运行的时间。
 
-- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)在普通的异常的所有回调事件期间调用 (唯一的例外情况是如果你正在调试混合模式代码 （托管和非托管代码），在这种情况下不能在拦截异常最后一个回调）。 如果未实现 DE `IDebugStackFrame3`，或 DE 从 IDebugStackFrame3 返回错误::`InterceptCurrentException` (如`E_NOTIMPL`)，则调试器将正常处理此异常。
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)在普通的异常的所有回调事件期间调用 (唯一的例外情况是如果在进行调试混合模式代码 （托管和非托管代码），在这种情况下不能在过程截获异常最后一个回调）。 如果未执行 DE `IDebugStackFrame3`，或 DE 从 IDebugStackFrame3 返回错误::`InterceptCurrentException` (如`E_NOTIMPL`)，则调试器将正常处理此异常。
 
  通过截获异常，调试器可以允许用户对正在调试的程序的状态进行更改，然后继续执行在引发异常的点。
 

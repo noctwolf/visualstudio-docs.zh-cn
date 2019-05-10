@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d95914ea3366578cb401c304ac52aa5db5e5a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916253"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458625"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 检索给定的指标名称的表达式计算器本地对象。
@@ -40,20 +43,20 @@ private int GetEELocalObject(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `guidLang`
+## <a name="parameters"></a>参数
+ `guidLang`\
 
  [in]编程语言的唯一标识符。
 
- `guidVendor`
+ `guidVendor`\
 
  [in]供应商的唯一标识符。
 
- `pszMetric`
+ `pszMetric`\
 
  [in]指标的名称。
 
- `ppUnk`
+ `ppUnk`\
 
  [out]返回的表达式计算器本地对象。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869715"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457865"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 此方法将可用于调试引擎 (DEs) 的程序和会话调试管理器。
@@ -40,16 +43,16 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `Engines`
+## <a name="parameters"></a>参数
+ `Engines`\
 
  [in]针对 DEs 的可启动或附加到此程序的 Guid 的数组。
 
- `szFriendlyName`
+ `szFriendlyName`\
 
  [in]（这会显示在菜单或对话框向用户显示） 的程序的友好名称。
 
- `pDebuggeeInterface`
+ `pDebuggeeInterface`\
 
  [in]`IUnknown`程序接口 （此值用作一个 cookie 以唯一标识程序; 此相同的值用于"取消发布"程序）
 

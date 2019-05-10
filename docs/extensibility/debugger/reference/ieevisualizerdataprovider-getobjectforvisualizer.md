@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08fd3c2d82e3e2bef3098770fdfbcf7cdfe95f7c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915234"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224047"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 此方法获取该对象表示此可视化工具。
@@ -36,8 +39,8 @@ int GetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppObject`
+## <a name="parameters"></a>参数
+ `ppObject`\
 
  [out]此可视化工具所表示的对象
 

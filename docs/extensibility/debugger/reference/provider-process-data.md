@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d021efe197fcc15c99a1138d75e1343fc092efde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d4013cabe43693e52498a3094aee10e4786da43a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865051"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460796"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 此结构可提供有关计算机上运行的进程的信息。
@@ -41,11 +44,14 @@ public struct PROVIDER_PROCESS_DATA {
 ```
 
 ## <a name="members"></a>成员
- 字段中的标志的组合[PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)指示填充的字段的枚举。
+ `Fields`\
+ 中的标志的组合[PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)指示填充的字段的枚举。
 
- ProgramNodes A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)结构，其中包含程序节点的数组。
+ `ProgramNodes`\
+ 一个[PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)结构，其中包含程序节点的数组。
 
- fIsDebuggerPresent Nonzero (`TRUE`) 如果[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器正在运行，零 (`FALSE`) 如果不是。
+ `fIsDebuggerPresent`\
+ 非零值 (`TRUE`) 如果[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器正在运行，零 (`FALSE`) 如果不是。
 
 ## <a name="remarks"></a>备注
  此结构传递给[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)填写其中的方法。

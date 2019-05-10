@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3ed52e8be77e5f4dce081fc6a60ae22cecbb990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915191"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223545"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 检索要显示为指定的属性或字段的值字符串数。
@@ -39,16 +42,16 @@ int GetValueDisplayStringCount (
 );
 ```
 
-#### <a name="parameters"></a>参数
- `displayKind`
+## <a name="parameters"></a>参数
+ `displayKind`\
 
  [in]值从[DisplayKind](../../../extensibility/debugger/reference/displaykind.md)枚举。
 
- `propertyOrField`
+ `propertyOrField`\
 
  [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示属性或字段的接口。
 
- `pcelt`
+ `pcelt`\
 
  [out]返回要显示的值字符串数。
 

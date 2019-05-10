@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e51944c2a7b0ad72e2c03b54a61e90bb1883177d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913698"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457980"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 指定挂起断点的状态标志。
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成员
- PBPSF_NONE 占位符。
+## <a name="fields"></a>字段
+ `PBPSF_NONE` 占位符。
 
- PBPSF_VIRTUALIZED 指定挂起断点，每次加载新代码时要绑定的其中一个虚拟化。
+ `PBPSF_VIRTUALIZED` 指定虚拟化环境挂起断点，每次加载新代码时要绑定的其中一个。
 
 ## <a name="remarks"></a>备注
  用于`flags`的成员[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)结构。

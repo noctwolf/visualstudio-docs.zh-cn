@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27e7402de5de39a6135ad083f80f0699c1663e7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 750094cef6e207ef1a77196dab53b28ebdc7838b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867815"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223655"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 此方法从该服务获取类型可视化工具可用的数。
@@ -36,8 +39,8 @@ int GetCustomViewerCount(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pcelt`
+## <a name="parameters"></a>参数
+ `pcelt`\
 
  [out]返回数的类型可视化工具可用。
 

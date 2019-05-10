@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913830"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460960"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 用于描述模块。
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>成员
- MODULE_FLAG_NONE 指定没有模块。
+## <a name="fields"></a>字段
+ `MODULE_FLAG_NONE`\
+ 指定没有模块。
 
- MODULE_FLAG_SYSTEM 指定系统模块。
+ `MODULE_FLAG_SYSTEM`\
+ 指定系统模块。
 
- MODULE_FLAG_SYMBOLS 指定符号的模块。
+ `MODULE_FLAG_SYMBOLS`\
+ 指定符号的模块。
 
- MODULE_FLAG_64BIT 指定 64 位模块。
+ `MODULE_FLAG_64BIT`\
+ 指定的 64 位模块。
 
- MODULE_FLAG_OPTIMIZED 指定该模块已进行了优化。 此状态反映在**模块**窗口。
+ `MODULE_FLAG_OPTIMIZED`\
+ 指定该模块已进行了优化。 此状态反映在**模块**窗口。
 
- MODULE_FLAG_UNOPTIMIZED 指定该模块未经过优化。 此状态反映在**模块**窗口。 这是默认状态。
+ `MODULE_FLAG_UNOPTIMIZED`\
+ 指定该模块未经过优化。 此状态反映在**模块**窗口。 这是默认状态。
 
 ## <a name="remarks"></a>备注
  用于`m_dwModuleFlags`的成员[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)结构。
