@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824052"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476597"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -116,7 +116,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 
 由于没有规定 Visual Studio 建模图的使用顺序，因此你可以根据自己的需求和方法来使用它们。 通常，团队会在整个项目中反复而频繁地重新访问其模型。 每个关系图都有自己的长处，可帮助你理解、描述和沟通正在开发的系统的各方面问题。
 
-Dinner Now 和 Lucerne 通过将关系图作为其公共语言来互相沟通以及与项目利益干系人沟通。 例如，Dinner Now 使用关系图执行以下任务：
+Dinner Now 和 Lucerne 使用关系图作为其公共语言进行通信以及与项目利益相关者。 例如，Dinner Now 使用关系图执行以下任务：
 
 - 可视化现有代码。
 
@@ -172,11 +172,11 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 
 |**关系图**|**描述**|
 |-|-|
-|*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射抽象组名为 Visual Studio 解决方案中的项目到依赖项关系图*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|
+|*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图：引用](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射抽象组名为 Visual Studio 解决方案中的项目到依赖项关系图*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 依赖项关系图可用于描述系统的预期的设计并验证对该设计的相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 若要查看现有依赖项，右键单击依赖项关系图图面，然后依次**生成依赖项**。 要指定预期的依赖关系，请绘制新的依赖关系。|
 
- 例如，以下依赖项关系图描述了层与每个层相关联的项目数之间的依赖关系：
+例如，以下依赖项关系图描述了层与每个层相关联的项目数之间的依赖关系：
 
- ![集成的支付系统的依赖项关系图](../modeling/media/layer_integrated_dnlucerne.png)
+![集成的支付系统的依赖项关系图](../modeling/media/layer_integrated_dnlucerne.png)
 
  **依赖项关系图**
 
@@ -194,7 +194,7 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 
 - 大多数关系图都是由用线连接的节点组成的。 对于每种关系图类型，工具箱提供了不同类型的节点和线。
 
-     要打开工具箱，请在“视图”  菜单上单击“工具箱” 。
+   要打开工具箱，请在“视图”  菜单上单击“工具箱” 。
 
 - 要创建节点，请将它从工具箱拖动到关系图上。 必须将某些类型的节点拖动到现有节点上。 例如，在组件图上，必须将新端口添加到现有组件。
 
@@ -206,7 +206,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 在开展工作时，团队会更新其工作项以反映他们在各自的任务上所花费的时间。 他们还会使用以下 Team Foundation Server 功能来监视和报告工作状态：
 
-- 每日 *“燃尽报表”* ，显示他们是否将在预期时间完成计划的工作。 他们会从 Team Foundation Server 生成其他类似的报表以跟踪 Bug 的进度。
+- 每日*燃尽报表*，显示他们是否将完成的预期时间计划的工作。 他们会从 Team Foundation Server 生成其他类似的报表以跟踪 Bug 的进度。
 
 - *“迭代工作表”* ，使用 Microsoft Excel 来帮助团队监视和权衡其成员的工作负荷。 此工作表链接到 Team Foundation Server，并提出团队日常进度会议上讨论的重点。
 
@@ -329,7 +329,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 |**关系图**|**描述**|
 |-|-|
-|依赖项关系图|系统的逻辑体系结构。 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 若要帮助您识别现有 dependencys 或预期的 dependencys、 创建代码映射和相关的项进行分组。 若要创建依赖项关系图，请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)|
+|依赖项关系图|系统的逻辑体系结构。 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 为了有助于标识现有依赖关系或预期的依赖项，请创建代码映射和相关的项进行分组。 若要创建依赖项关系图，请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)|
 |类图（基于代码）|针对某个特定项目的代码中的现有类。<br /><br /> 要可视化和修改代码中的现有类，请使用类设计器。<br /><br /> 请参阅[如何：将类图添加到项目 （类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)。|
 
 ### <a name="DefineClasses"></a> 定义类型的术语表：类图

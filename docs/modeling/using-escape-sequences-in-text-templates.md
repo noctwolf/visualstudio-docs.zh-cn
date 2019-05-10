@@ -9,25 +9,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c88c9c8769051724855d292bfefb56f69cb8dee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b48748c5c5d071e724be3ff35eca457f36385baa
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906918"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476614"
 ---
-# <a name="using-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
+# <a name="use-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
+
 在文本模板生成文本模板标记并 （在 C# 仅代码），可以使用转义序列转义控制字符和引号引起来。
 
- 若要打印的标准代码块的输出文件的打开和关闭标记，请按如下所示转义标记：
+若要打印的标准代码块的输出文件的打开和关闭标记，请按如下所示转义标记：
 
 ```
 \<# ... \#>
 ```
 
- 您也可以执行同样的其他文本模板指令和代码块标记。
+您也可以执行同样的其他文本模板指令和代码块标记。
 
- 如果文本块包括用于转义文本模板标记的字符串，则可能会使用以下的转义序列：
+如果文本块包括用于转义文本模板标记的字符串，则可能会使用以下的转义序列：
 
 - 如果文本模板标记前面有偶数个转义 (\\) 字符在模板分析器将包括半转义字符，包括为文本模板标记序列。 例如，如果文本模板中有四个转义符，将有两个"\\"生成文件中的字符。
 
