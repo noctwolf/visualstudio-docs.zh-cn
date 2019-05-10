@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567733"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460621"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中创建和配置数据集
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>如何：在 Visual Studio 中创建和配置数据集
 
 数据集是一组对象在内存中存储数据库中的数据和支持更改跟踪来使创建、 读取、 更新和删除 (CRUD) 操作，对该数据而无需始终连接到数据库。 数据集设计用于简单*对数据的窗体*业务应用程序。 对于新应用程序，请考虑使用实体框架在内存中的数据存储和建模。 若要使用的数据集，应具有数据库概念的基础知识。
 

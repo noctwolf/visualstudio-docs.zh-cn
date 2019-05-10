@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9af7c5a7c757546b7da8fef4320be6d6cc101738
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868377"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224179"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 确定当前指令指针是否可以设置为给定的堆栈帧。
@@ -38,10 +41,11 @@ int CanSetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pStackFrame` 保留供将来使用;设置为 null 值。 如果这是一个 null 值，则使用当前堆栈帧。
+## <a name="parameters"></a>参数
+ `pStackFrame`\
+ 保留供将来使用;设置为 null 值。 如果这是一个 null 值，则使用当前堆栈帧。
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，描述要执行的代码位置和其上下文。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c250cdfdef37a1c6eddfb266909deca1cc515f1c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9f088bcfeebb570be911fbc8e37bed5995767ac9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869503"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457737"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
 获取[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)描述的属性的结构。
@@ -46,28 +49,28 @@ int GetPropertyInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+ `dwFields`\
 
  [in]中值的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚举，用于指定哪些字段是要填写`pPropertyInfo`结构。
 
- `nRadix`
+ `nRadix`\
 
  [in]用于格式化数值的任何信息的基数。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。
 
- `rgpArgs`
+ `rgpArgs`\
 
  [in、 out]保留供将来使用;设置为 null 值。
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in]保留供将来使用;设置为零。
 
- `pPropertyInfo`
+ `pPropertyInfo`\
 
  [out]一个[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)填充属性的说明的结构。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b20222db9b007fbeee6daf0df1921e4c56744818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224052"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 此方法获取用于编译调试地址处的代码的语言。
@@ -40,16 +43,16 @@ int GetLanguage(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pAddress`
+## <a name="parameters"></a>参数
+ `pAddress`\
 
  [in]一个地址对象所表示[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out]返回`GUID`指定的语言。
 
- `pguidLanguageVendor`
+ `pguidLanguageVendor`\
 
  [out]返回`GUID`，它指定的语言供应商。
 

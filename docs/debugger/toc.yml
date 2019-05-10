@@ -39,21 +39,25 @@
     - name: 使用调试器浏览代码
       href: navigating-through-code-with-the-debugger.md
     - name: 使用断点
-      href: using-breakpoints.md
       items:
+        - name: 使用断点
+          href: using-breakpoints.md
         - name: 断点故障排除
           href: troubleshooting-breakpoints.md
     - name: 检查数据
-      href: debugger-windows.md
       items:
+        - name: 检查数据
+          href: debugger-windows.md
         - name: 检查变量
           href: autos-and-locals-windows.md
         - name: 对变量设置监视
-          href: watch-and-quickwatch-windows.md
           items:
+            - name: 对变量设置监视
+              href: watch-and-quickwatch-windows.md
             - name: 调试器中的表达式
-              href: expressions-in-the-debugger.md
               items:
+                - name: 调试器中的表达式
+                  href: expressions-in-the-debugger.md
                 - name: C++ 中的格式说明符
                   href: format-specifiers-in-cpp.md
                 - name: 上下文运算符 (C++)
@@ -67,13 +71,15 @@
         - name: 在可视化工具中查看字符串值
           href: view-strings-visualizer.md
         - name: 查看反汇编代码
-          href: how-to-use-the-disassembly-window.md
           items:
+            - name: 查看反汇编代码
+              href: how-to-use-the-disassembly-window.md
             - name: 在内存中向上或向下翻页
               href: how-to-page-up-or-down-in-memory.md
         - name: 查看寄存器值
-          href: how-to-use-the-registers-window.md
           items:
+            - name: 查看寄存器值
+              href: how-to-use-the-registers-window.md
             - name: 关于“寄存器”窗口
               href: debugging-basics-registers-window.md
             - name: 显示和隐藏寄存器组
@@ -85,34 +91,39 @@
         - name: 在调试时检查 XAML 属性
           href: inspect-xaml-properties-while-debugging.md
     - name: 查看调用堆栈
-      href: how-to-use-the-call-stack-window.md
       items:
+        - name: 查看调用堆栈
+          href: how-to-use-the-call-stack-window.md
         - name: 创建调用堆栈的可视图
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: “调用堆栈”窗口中的混合代码与丢失信息
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
     - name: 编辑代码并继续调试
-      href: edit-and-continue.md
       items:
+        - name: 编辑代码并继续调试
+          href: edit-and-continue.md
         - name: 启用和禁用“编辑并继续”
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: 停止代码更改
           href: how-to-stop-code-changes.md
         - name: Edit and Continue (Visual C++)
-          href: edit-and-continue-visual-cpp.md
           items:
+            - name: Edit and Continue (Visual C++)
+              href: edit-and-continue-visual-cpp.md
             - name: 受支持的代码更改 (C++)
               href: supported-code-changes-cpp.md
         - name: '编辑并继续 (Visual C#)'
-          href: edit-and-continue-visual-csharp.md
           items:
+            - name: '编辑并继续 (Visual C#)'
+              href: edit-and-continue-visual-csharp.md
             - name: '使用“编辑并继续”(C#)'
               href: how-to-use-edit-and-continue-csharp.md
             - name: 受支持的代码更改
               href: supported-code-changes-csharp.md
         - name: 编辑并继续 (Visual Basic)
-          href: edit-and-continue-visual-basic.md
           items:
+            - name: 编辑并继续 (Visual Basic)
+              href: edit-and-continue-visual-basic.md
             - name: 使用“编辑并继续”在中断模式下应用编辑
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
         - name: 编写和调试正在运行的 XAML 代码
@@ -122,36 +133,41 @@
     - name: 查看调试程序数据
       items:
         - name: 查看模块
-          href: how-to-use-the-modules-window.md
           items:
+            - name: 查看模块
+              href: how-to-use-the-modules-window.md
             - name: 查找导致程序崩溃的 DLL
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: 查看脚本文档
           href: how-to-view-script-documents.md
     - name: 调试器提示和技巧
-      href: debugger-tips-and-tricks.md
       items:
+        - name: 调试器提示和技巧
+          href: debugger-tips-and-tricks.md
         - name: 使用调试器附加到运行的进程
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: 在设计时调试
           href: walkthrough-debugging-at-design-time.md
         - name: 使用实时调试器进行调试
-          href: debug-using-the-just-in-time-debugger.md
           items:
+            - name: 使用实时调试器进行调试
+              href: debug-using-the-just-in-time-debugger.md
             - name: 禁用实时调试器
               href: just-in-time-debugging-in-visual-studio.md
     - name: 配置调试
       items:
         - name: 管理调试器的异常
-          href: managing-exceptions-with-the-debugger.md
           items:
+            - name: 管理调试器的异常
+              href: managing-exceptions-with-the-debugger.md
             - name: 在出现异常后继续执行
               href: continuing-execution-after-an-exception.md
             - name: 在发生异常后检查系统代码
               href: how-to-examine-system-code-after-an-exception.md
             - name: 使用本机运行时检查
-              href: how-to-use-native-run-time-checks.md
               items:
+                - name: 使用本机运行时检查
+                  href: how-to-use-native-run-time-checks.md
                 - name: 本机运行时检查自定义
                   href: native-run-time-checks-customization.md
                 - name: 编写运行时错误报告函数
@@ -163,18 +179,21 @@
         - name: 调试用户代码
           href: just-my-code.md
         - name: 调试器设置和准备
-          href: debugger-settings-and-preparation.md
           items:
+            - name: 调试器设置和准备
+              href: debugger-settings-and-preparation.md
             - name: 调试器项目设置
-              href: debugger-project-settings.md
               items:
+                - name: 调试器项目设置
+                  href: debugger-project-settings.md
                 - name: 指定调试器设置
                   href: how-to-specify-debugger-settings.md
                 - name: 设置调试和发布配置
                   href: how-to-set-debug-and-release-configurations.md
                 - name: C++ 调试配置的项目设置
-                  href: project-settings-for-a-cpp-debug-configuration.md
                   items:
+                    - name: C++ 调试配置的项目设置
+                      href: project-settings-for-a-cpp-debug-configuration.md
                     - name: 在 Visual C++ 中启用调试功能 (-D_DEBUG)
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Web 项目的属性页设置
@@ -184,8 +203,9 @@
                 - name: Visual Basic 调试配置的项目设置
                   href: project-settings-for-a-visual-basic-debug-configuration.md
             - name: 调试 DLL 项目
-              href: debugging-dll-projects.md
               items:
+                - name: 调试 DLL 项目
+                  href: debugging-dll-projects.md
                 - name: 从 DLL 项目进行调试
                   href: how-to-debug-from-a-dll-project.md
                 - name: 在混合模式下调试
@@ -199,23 +219,27 @@
             - name: 指定用于调试的 .NET Framework 版本
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
         - name: 创建数据的自定义视图
-          href: viewing-data-in-the-debugger.md
           items:
+            - name: 创建数据的自定义视图
+              href: viewing-data-in-the-debugger.md
             - name: 创建 C++ 对象的自定义视图
-              href: create-custom-views-of-native-objects.md
               items:
+                - name: 创建 C++ 对象的自定义视图
+                  href: create-custom-views-of-native-objects.md
                 - name: Visual C++ 自定义可视化工具兼容性
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: 创建托管对象的自定义视图
-              href: create-custom-views-of-dot-managed-objects.md
               items:
+                - name: 创建托管对象的自定义视图
+                  href: create-custom-views-of-dot-managed-objects.md
                 - name: 告诉调试程序要显示什么
                   href: using-the-debuggerdisplay-attribute.md
                 - name: 告诉调试程序要显示什么类型
                   href: using-debuggertypeproxy-attribute.md
             - name: 创建数据的自定义可视化工具
-              href: create-custom-visualizers-of-data.md
               items:
+                - name: 创建数据的自定义可视化工具
+                  href: create-custom-visualizers-of-data.md
                 - name: 可视化工具体系结构
                   href: visualizer-architecture.md
                 - name: '演练：用 C# 编写可视化工具'
@@ -233,8 +257,9 @@
         - name: 还原隐藏的调试器命令
           href: how-to-restore-hidden-debugger-commands.md
     - name: 远程调试
-      href: remote-debugging.md
       items:
+        - name: 远程调试
+          href: remote-debugging.md
         - name: 远程调试 IIS 计算机上的 ASP.NET Core
           href: remote-debugging-aspnet-on-a-remote-iis-computer.md
         - name: 远程调试 IIS 计算机上的 ASP.NET
@@ -252,8 +277,9 @@
         - name: 取消阻止 Windows Server 上的下载
           href: remote-debugging-unblock-file-download.md
         - name: 远程调试错误和疑难解答
-          href: remote-debugging-errors-and-troubleshooting.md
           items:
+            - name: 远程调试错误和疑难解答
+              href: remote-debugging-errors-and-troubleshooting.md
             - name: 远程计算机上的 Microsoft Visual Studio 远程调试监视器没有连接到此计算机的权限
               href: error-the-microsoft-visual-studio-remote-debugging-monitor-no-permission.md
             - name: 尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。
@@ -299,13 +325,15 @@
             - name: 远程计算机未显示在“远程连接”对话框中
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
     - name: 调试多线程应用程序
-      href: debug-multithreaded-applications-in-visual-studio.md
       items:
+        - name: 调试多线程应用程序
+          href: debug-multithreaded-applications-in-visual-studio.md
         - name: 开始调试多线程应用程序
           href: get-started-debugging-multithreaded-apps.md
         - name: 用于调试线程和进程的工具
-          href: debug-threads-and-processes.md
           items:
+            - name: 用于调试线程和进程的工具
+              href: debug-threads-and-processes.md
             - name: 使用“并行堆栈”窗口
               href: using-the-parallel-stacks-window.md
             - name: 使用“并行监视”窗口
@@ -335,8 +363,9 @@
         - name: 在托管代码中设置线程名称
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: IntelliTrace
-      href: intellitrace.md
       items:
+        - name: IntelliTrace
+          href: intellitrace.md
         - name: 使用 IntelliTrace 查看快照
           href: view-snapshots-with-intellitrace.md
         - name: 使用 IntelliTrace 查看事件
@@ -348,8 +377,9 @@
         - name: 使用历史调试检查应用
           href: historical-debugging-inspect-app.md
         - name: 诊断部署后出现的问题
-          href: diagnose-problems-after-deployment.md
           items:
+            - name: 诊断部署后出现的问题
+              href: diagnose-problems-after-deployment.md
             - name: 使用 IntelliTrace 独立收集器
               href: using-the-intellitrace-stand-alone-collector.md
             - name: 使用 Microsoft Monitoring Agent
@@ -359,8 +389,9 @@
         - name: IntelliTrace 扩展性的 API 参考
           href: api-reference-for-intellitrace-extensibility.md
     - name: 调试 Azure 服务
-      href: debug-azure-apps.md
       items:
+        - name: 调试 Azure 服务
+          href: debug-azure-apps.md
         - name: 调试实时 Azure 应用
           href: debug-live-azure-applications.md
         - name: 调试实时 Azure 虚拟机应用
@@ -374,16 +405,19 @@
         - name: “按时间顺序查看调试”实时 Azure 虚拟机应用
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
     - name: 调试特定应用程序类型
-      href: debugging-applications.md
       items:
+        - name: 调试特定应用程序类型
+          href: debugging-applications.md
         - name: 调试 64 位应用程序
           href: debug-64-bit-applications.md
         - name: 调试 UWP 应用
-          href: debugging-windows-store-and-windows-universal-apps.md
           items:
+            - name: 调试 UWP 应用
+              href: debugging-windows-store-and-windows-universal-apps.md
             - name: 启动 UWP 应用的调试会话
-              href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
               items:
+                - name: 启动 UWP 应用的调试会话
+                  href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
                 - name: 在远程计算机上调试 UWP 应用
                   href: run-windows-store-apps-on-a-remote-machine.md
                 - name: 在模拟器中运行 UWP 应用
@@ -395,8 +429,9 @@
             - name: 在 Blend 中调试 XAML
               href: debug-xaml-in-blend.md
             - name: 调试 HTML 和 CSS
-              href: quickstart-debug-html-and-css.md
               items:
+                - name: 调试 HTML 和 CSS
+                  href: quickstart-debug-html-and-css.md
                 - name: 刷新应用程序 (JavaScript)
                   href: refresh-an-app-javascript.md
                 - name: 调试 WebView 控件
@@ -410,11 +445,13 @@
             - name: 预提取 Microsoft Store 应用的内容
               href: prefetch-content-for-windows-store-apps.md
         - name: 调试托管代码
-          href: debugging-managed-code.md
           items:
+            - name: 调试托管代码
+              href: debugging-managed-code.md
             - name: '调试准备：C#、F# 和 Visual Basic 项目类型'
-              href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
               items:
+                - name: '调试准备：C#、F# 和 Visual Basic 项目类型'
+                  href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
                 - name: 托管调试：建议的属性设置
                   href: managed-debugging-recommended-property-settings.md
                 - name: 调试准备：Windows 窗体应用程序
@@ -442,8 +479,9 @@
             - name: 调试 .NET Framework 源代码
               href: how-to-debug-dotnet-framework-source.md
             - name: 调试 WPF
-              href: debugging-wpf.md
               items:
+                - name: 调试 WPF
+                  href: debugging-wpf.md
                 - name: 使用 WPF 树可视化工具
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: 显示 WPF 跟踪信息
@@ -451,8 +489,9 @@
             - name: '调试 F#'
               href: debugging-f-hash.md
         - name: 调试本机代码
-          href: debugging-native-code.md
           items:
+            - name: 调试本机代码
+              href: debugging-native-code.md
             - name: 调试准备：Visual C++ 项目类型
               href: debugging-preparation-visual-cpp-project-types.md
             - name: 调试优化的代码
@@ -466,8 +505,9 @@
             - name: MFC 调试技术
               href: mfc-debugging-techniques.md
             - name: CRT 调试技术
-              href: crt-debugging-techniques.md
               items:
+                - name: CRT 调试技术
+                  href: crt-debugging-techniques.md
                 - name: CRT 调试库使用
                   href: crt-debug-library-use.md
                 - name: 用于报告的宏
@@ -477,13 +517,15 @@
                 - name: CRT 调试堆详细信息
                   href: crt-debug-heap-details.md
                 - name: 编写调试挂钩函数
-                  href: debug-hook-function-writing.md
                   items:
+                    - name: 编写调试挂钩函数
+                      href: debug-hook-function-writing.md
                     - name: 客户端块挂钩函数
                       href: client-block-hook-functions.md
                     - name: 分配挂钩函数
-                      href: allocation-hook-functions.md
                       items:
+                        - name: 分配挂钩函数
+                          href: allocation-hook-functions.md
                         - name: 分配挂钩和 C 运行时内存分配
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
                     - name: 报表挂钩函数
@@ -491,8 +533,9 @@
                 - name: 使用 CRT 库查找内存泄漏
                   href: finding-memory-leaks-using-the-crt-library.md
             - name: 调试本机代码常见问题解答
-              href: debugging-native-code-faqs.md
               items:
+                - name: 调试本机代码常见问题解答
+                  href: debugging-native-code-faqs.md
                 - name: 如何调试访问冲突？
                   href: how-can-i-debug-an-access-violation-q.md
                 - name: 在调试器外部运行程序时如何调试访问冲突？
@@ -514,16 +557,19 @@
                 - name: 返回到在中断时调用了 MFC 的函数
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
             - name: 调试 COM 和 ActiveX
-              href: com-and-activex-debugging.md
               items:
+                - name: 调试 COM 和 ActiveX
+                  href: com-and-activex-debugging.md
                 - name: 调试 COM 服务器和容器
-                  href: com-server-and-container-debugging.md
                   items:
+                    - name: 调试 COM 服务器和容器
+                      href: com-server-and-container-debugging.md
                     - name: 使用 RPC 调试来调试 COM 客户端和服务器
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
                 - name: 调试 ActiveX 控件
-                  href: how-to-debug-an-activex-control.md
                   items:
+                    - name: 调试 ActiveX 控件
+                      href: how-to-debug-an-activex-control.md
                     - name: 调试数据绑定 ActiveX 控件
                       href: debugging-a-data-bound-activex-control.md
                 - name: COM 调试工具
@@ -535,8 +581,9 @@
         - name: 图形诊断
           href: graphics/toc.yml
         - name: 调试 ASP.NET 应用程序
-          href: how-to-enable-debugging-for-aspnet-applications.md
           items:
+            - name: 调试 ASP.NET 应用程序
+              href: how-to-enable-debugging-for-aspnet-applications.md
             - name: ASP.NET 调试：系统要求
               href: aspnet-debugging-system-requirements.md
             - name: 在用户帐户下运行工作进程
@@ -550,11 +597,13 @@
             - name: 调试 ASP.NET 异常
               href: how-to-debug-aspnet-exceptions.md
             - name: 调试 Web 应用程序：错误和疑难解答
-              href: debugging-web-applications-errors-and-troubleshooting.md
               items:
+                - name: 调试 Web 应用程序：错误和疑难解答
+                  href: debugging-web-applications-errors-and-troubleshooting.md
                 - name: 调试 Web 应用程序：疑难解答
-                  href: debugging-web-applications-troubleshooting.md
                   items:
+                    - name: 调试 Web 应用程序：疑难解答
+                      href: debugging-web-applications-troubleshooting.md
                     - name: 验证 IIS 属性设置
                       href: how-to-verify-iis-property-settings.md
                 - name: 站点使用 IP 地址
@@ -570,32 +619,37 @@
                 - name: 调试 Web 服务时超时
                   href: error-timeout-while-debugging-web-services.md
                 - name: 无法在 Web 服务器上启动调试
-                  href: error-unable-to-start-debugging-on-the-web-server.md
                   items:
+                    - name: 无法在 Web 服务器上启动调试
+                      href: error-unable-to-start-debugging-on-the-web-server.md
                     - name: Web 服务器找不到请求的资源
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: Web 服务器配置不正确
                       href: error-the-web-server-is-not-configured-correctly.md
         - name: 调试 Web 应用程序
-          href: debugging-web-applications.md
           items:
+            - name: 调试 Web 应用程序
+              href: debugging-web-applications.md
             - name: JavaScript Console commands
               href: javascript-console-commands.md
             - name: 键盘快捷键（HTML 和 JavaScript）
               href: keyboard-shortcuts-html-and-javascript.md
             - name: 客户端脚本调试
-              href: client-side-script-debugging.md
               items:
+                - name: 客户端脚本调试
+                  href: client-side-script-debugging.md
                 - name: 脚本调试的限制
                   href: limitations-on-script-debugging.md
                 - name: 附加到脚本
-                  href: how-to-attach-to-script.md
                   items:
+                    - name: 附加到脚本
+                      href: how-to-attach-to-script.md
                     - name: 警告：脚本调试被禁用
                       href: warning-script-debugging-disabled.md
         - name: 调试 WCF 服务
-          href: debugging-wcf-services.md
           items:
+            - name: 调试 WCF 服务
+              href: debugging-wcf-services.md
             - name: WCF 调试的限制
               href: limitations-on-wcf-debugging.md
             - name: 单步执行 WCF 服务
@@ -603,8 +657,9 @@
             - name: 调试自托管 WCF 服务
               href: how-to-debug-a-self-hosted-wcf-service.md
     - name: 使用转储文件
-      href: using-dump-files.md
       items:
+        - name: 使用转储文件
+          href: using-dump-files.md
         - name: 转储文件摘要扩展性 API
           href: dump-file-summary-extensibility-api.md
     - name: 调试器安全
@@ -612,15 +667,17 @@
 - name: 参考
   items:
     - name: 调试用户界面参考
-      href: debugging-user-interface-reference.md
       items:
+        - name: 调试用户界面参考
+          href: debugging-user-interface-reference.md
         - name: “选择断点”对话框
           href: choose-breakpoints-dialog-box.md
         - name: “为远程调试配置防火墙”对话框
           href: configure-firewall-for-remote-debugging-dialog-box.md
         - name: “选项”对话框 ->“调试”
-          href: debugging-options-dialog-box.md
           items:
+            - name: “选项”对话框 ->“调试”
+              href: debugging-options-dialog-box.md
             - name: “选项”对话框 ->“调试”->“常规”
               href: general-debugging-options-dialog-box.md
             - name: “选项”对话框 ->“调试”->“实时”
@@ -644,8 +701,9 @@
         - name: “命中断点时”对话框
           href: when-breakpoint-is-hit-dialog-box.md
         - name: “调试错误和警告”对话框
-          href: debugging-errors-and-warning-dialog-boxes.md
           items:
+            - name: “调试错误和警告”对话框
+              href: debugging-errors-and-warning-dialog-boxes.md
             - name: “断言失败”对话框
               href: assertion-failed-dialog-box.md
             - name: “无法更改值”对话框
@@ -699,11 +757,13 @@
     - name: 调试接口访问 SDK
       href: debug-interface-access/debug-interface-access-sdk.md
     - name: Spy++ 帮助
-      href: spy-increment-help.md
       items:
+        - name: Spy++ 帮助
+          href: spy-increment-help.md
         - name: 使用 Spy++
-          href: using-spy-increment.md
           items:
+            - name: 使用 Spy++
+              href: using-spy-increment.md
             - name: Spy++ 简介
               href: introducing-spy-increment.md
             - name: 启动 Spy++
@@ -719,11 +779,13 @@
             - name: 展开和折叠 Spy++ 树
               href: how-to-expand-and-collapse-spy-increment-trees.md
         - name: Spy++ 视图
-          href: spy-increment-views.md
           items:
+            - name: Spy++ 视图
+              href: spy-increment-views.md
             - name: 窗口视图
-              href: windows-view.md
               items:
+                - name: 窗口视图
+                  href: windows-view.md
                 - name: 使用查找程序工具
                   href: how-to-use-the-finder-tool.md
                 - name: 在窗口视图中搜索窗口
@@ -731,8 +793,9 @@
                 - name: 显示窗口属性
                   href: how-to-display-window-properties.md
             - name: 消息视图
-              href: messages-view.md
               items:
+                - name: 消息视图
+                  href: messages-view.md
                 - name: 控制消息视图
                   href: how-to-control-messages-view.md
                 - name: 从“查找”窗口打开消息视图
@@ -746,25 +809,29 @@
                 - name: 显示消息属性
                   href: how-to-display-message-properties.md
             - name: 进程视图
-              href: processes-view.md
               items:
+                - name: 进程视图
+                  href: processes-view.md
                 - name: 在进程视图中搜索进程
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: 显示进程属性
                   href: how-to-display-process-properties.md
             - name: 线程视图
-              href: threads-view.md
               items:
+                - name: 线程视图
+                  href: threads-view.md
                 - name: 在线程视图中搜索线程
                   href: how-to-search-for-a-thread-in-threads-view.md
                 - name: 显示线程属性
                   href: how-to-display-thread-properties.md
         - name: Spy++ 参考
-          href: spy-increment-reference.md
           items:
+            - name: Spy++ 参考
+              href: spy-increment-reference.md
             - name: 菜单命令
-              href: menu-commands.md
               items:
+                - name: 菜单命令
+                  href: menu-commands.md
                 - name: “监视”菜单命令
                   href: spy-menu-commands.md
                 - name: “树”菜单命令
@@ -782,8 +849,9 @@
             - name: “字体”对话框（Microsoft Spy++ 帮助）
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Spy++ 视图的搜索工具
-              href: search-tools-for-spy-increment-views.md
               items:
+                - name: Spy++ 视图的搜索工具
+                  href: search-tools-for-spy-increment-views.md
                 - name: “查找窗口”对话框
                   href: find-window-dialog-box.md
                 - name: “窗口搜索”对话框
@@ -795,8 +863,9 @@
                 - name: “线程搜索”对话框
                   href: thread-search-dialog-box.md
             - name: “窗口属性”对话框
-              href: window-properties-dialog-box.md
               items:
+                - name: “窗口属性”对话框
+                  href: window-properties-dialog-box.md
                 - name: “窗口属性”对话框 ->“常规”选项卡
                   href: general-tab-window-properties-dialog-box.md
                 - name: “窗口属性”对话框 ->“样式”选项卡
@@ -808,8 +877,9 @@
                 - name: “窗口属性”对话框 ->“进程”选项卡
                   href: process-tab-window-properties-dialog-box.md
             - name: “消息选项”对话框
-              href: message-options-dialog-box.md
               items:
+                - name: “消息选项”对话框
+                  href: message-options-dialog-box.md
                 - name: “消息选项”对话框 ->“窗口”选项卡
                   href: windows-tab-message-options-dialog-box.md
                 - name: “消息选项”对话框 ->“消息”选项卡
@@ -819,8 +889,9 @@
             - name: “消息属性”对话框
               href: message-properties-dialog-box.md
             - name: “进程属性”对话框
-              href: process-properties-dialog-box.md
               items:
+                - name: “进程属性”对话框
+                  href: process-properties-dialog-box.md
                 - name: “进程属性”对话框 ->“常规”选项卡
                   href: general-tab-process-properties-dialog-box.md
                 - name: “进程属性”对话框 ->“内存”选项卡
@@ -830,13 +901,15 @@
                 - name: “进程属性”对话框 ->“空间”选项卡
                   href: space-tab-process-properties-dialog-box.md
             - name: “线程属性”对话框
-              href: thread-properties-dialog-box.md
               items:
+                - name: “线程属性”对话框
+                  href: thread-properties-dialog-box.md
                 - name: “线程属性”对话框 ->“常规”选项卡
                   href: general-tab-thread-properties-dialog-box.md
             - name: 其他对话框
-              href: other-dialog-boxes.md
               items:
+                - name: 其他对话框
+                  href: other-dialog-boxes.md
                 - name: 关于 Microsoft Spy++
                   href: about-microsoft-spy-increment.md
                 - name: Spy++ 帮助的版权声明

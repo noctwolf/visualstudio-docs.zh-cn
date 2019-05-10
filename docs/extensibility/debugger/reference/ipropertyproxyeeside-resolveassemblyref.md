@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865792"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458105"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 确定指定的托管程序集引用的位置。
@@ -44,24 +47,24 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `assemName`
+## <a name="parameters"></a>参数
+ `assemName`\
 
  [in]要解析的程序集的名称。
 
- `assemBytes`
+ `assemBytes`\
 
  [out]返回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)对象，其中包含与引用关联的程序集字节。
 
- `assemPdb`
+ `assemPdb`\
 
  [out]返回`IEEDataStorage`对象包含的符号存储与此引用关联的数据。
 
- `assemLocation`
+ `assemLocation`\
 
  [out]返回此引用的路径位置。
 
- `alr`
+ `alr`\
 
  [out]返回一个值从[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)枚举，指示此引用的程序集的位置。
 

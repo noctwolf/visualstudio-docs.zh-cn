@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865779"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458052"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 指定要检索特定计算机的信息种类。
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>成员
- MCIF_NAME 初始化/使用`bstrName`结构中的字段。
+## <a name="fields"></a>字段
+ `MCIF_NAME`\
+ 初始化/使用`bstrName`结构中的字段。
 
- MCIF_FLAGS 初始化/使用`Flags`结构中的字段。
+ `MCIF_FLAGS`\
+ 初始化/使用`Flags`结构中的字段。
 
- MIF_ALL 初始化/使用所有结构中的字段。
+ `MIF_ALL`\
+ 初始化/使用所有结构中的字段。
 
 ## <a name="remarks"></a>备注
  这些值传递给[GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)方法，以指示的哪些成员[MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md)结构是进行初始化。

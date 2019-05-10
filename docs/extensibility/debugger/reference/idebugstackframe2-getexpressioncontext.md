@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c453de210e503722dbf9da518a813f62090c495
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee4f7ec068b3daa77692d4ab64d327ebb8f61766
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916029"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457401"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 获取在当前上下文中的堆栈帧和线程的表达式计算评估上下文。
@@ -36,8 +39,8 @@ int GetExpressionContext ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppExprCxt`
+## <a name="parameters"></a>参数
+ `ppExprCxt`\
 
  [out]返回[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)对象，表示为表达式计算上下文。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913348"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460728"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 介绍在线程的属性。
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>成员
- dwFields A 中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)描述此结构中的哪些字段有效的枚举。
+ `dwFields`\
+ 中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)描述此结构中的哪些字段有效的枚举。
 
- dwThreadId 线程 id。
+ `dwThreadId`\
+ 线程 id。
 
- dwSuspendCount 线程挂起计数。
+ `dwSuspendCount`\
+ 在线程挂起计数。
 
- dwThreadState 一个取值[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)枚举，指示操作系统线程的状态。
+ `dwThreadState`\
+ 中的值[THREADSTATE](../../../extensibility/debugger/reference/threadstate.md)枚举，指示操作系统线程的状态。
 
- 一个字符串，指定的线程优先级别; bstrPriority例如，"高于正常"、"Normal"或者"时间关键"。
+ `bstrPriority`\
+ 一个字符串，指定线程的优先级。例如，"高于正常"、"Normal"或者"时间关键"。
 
- bstName 线程名称。
+ `bstName`\
+ 线程名称。
 
- bstrLocation 的线程位置 （通常最顶层的堆栈帧），通常表示为当前暂停执行方法的名称。
+ `bstrLocation`\
+ 线程位置 （通常最顶层的堆栈帧），通常都表示为当前暂停执行方法的名称。
 
 ## <a name="remarks"></a>备注
  此结构通过调用来填充[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法。 因此返回的信息通常用于填充**线程**窗口。

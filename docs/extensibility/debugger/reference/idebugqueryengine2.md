@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbe3444d5bcdb31a4ef7619b123041f459a09852
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0254322ecccd3fb8a79ee30a10434ff130c068c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916404"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458738"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 此接口允许的会话调试管理器 (SDM) 检索表示调试引擎 (DE) 的接口。

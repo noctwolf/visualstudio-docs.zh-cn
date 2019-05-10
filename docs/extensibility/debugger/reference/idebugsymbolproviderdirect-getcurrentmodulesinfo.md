@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95dc42b0e65ad0f849dd95e0ffead122e4cd1ebf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915694"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457446"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 检索有关符号组中的模块的信息。
@@ -43,24 +46,24 @@ int GetCurrentModulesInfo(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pCount`
+## <a name="parameters"></a>参数
+ `pCount`\
 
  [in]中的模块数`ppGuids`数组。
 
- `ppGuids`
+ `ppGuids`\
 
  [in]数组，其中包含的模块的唯一标识符。
 
- `pADIds`
+ `pADIds`\
 
  [in]应用程序域标识符。
 
- `pCurrentState`
+ `pCurrentState`\
 
  [in]符号组当前状态。
 
- `ppCDModItfs`
+ `ppCDModItfs`\
 
  [out]返回一个对象，包含符号组中的模块。
 

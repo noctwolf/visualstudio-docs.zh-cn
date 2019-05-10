@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33fe66319cda75ebdfc6fb47c9da6789cabc8e60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9324c33e383029fa6f98a9b890309cc0a11eb95d
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907025"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226272"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 
@@ -35,7 +35,7 @@ ms.locfileid: "62907025"
 
 1. 如果目标 DSL 解决方案不具有**ModelBusAdapter**项目中，创建一个使用 Modelbus 扩展向导：
 
-    1. 下载并安装 Visual Studio ModelBus 扩展，如果尚未这样做。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
+    1. 下载并安装 Visual Studio ModelBus 扩展，如果尚未这样做。 有关详细信息，请参阅[可视化和建模 SDK](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
     2. 打开 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。
 

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85451229b9b34f63150b315521621368c60cb1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916270"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457338"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 检索在给定名称的指标的值。
@@ -40,20 +43,20 @@ private int GetMetricDword(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszType`
+## <a name="parameters"></a>参数
+ `pszType`\
 
  [in]该度量值的类型。
 
- `guidSection`
+ `guidSection`\
 
  [in]部分中的唯一标识符。
 
- `pszMetric`
+ `pszMetric`\
 
  [in]指标的名称。
 
- `pdwValue`
+ `pdwValue`\
 
  [out]返回的指标值。
 

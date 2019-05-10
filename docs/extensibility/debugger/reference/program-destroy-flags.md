@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e232570edd4fcca95089324e30f3cbd725bdb9f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4958a1ee7b53fc975e126174fa6bd3f02daaa9ab
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865068"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460879"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
 枚举有效的程序值销毁标志。
@@ -37,7 +40,7 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
 };
 ```
 
-## <a name="terms"></a>术语
+## <a name="fields"></a>字段
  PROGRAM_DESTROY_CONTINUE_DEBUGGING 销毁编程，但继续进行调试。
 
 ## <a name="remarks"></a>备注
