@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415903"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460909"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 这些函数和声明是全局的 helper 函数，用于实现的调试引擎中，表达式计算器和符号中的提供程序C++。

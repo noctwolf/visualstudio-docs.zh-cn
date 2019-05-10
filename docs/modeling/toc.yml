@@ -1,13 +1,15 @@
 - name: 对体系结构进行分析和建模
-  href: analyze-and-model-your-architecture.md
   items:
+    - name: 对体系结构进行分析和建模
+      href: analyze-and-model-your-architecture.md
     - name: Visual Studio 2017 中用于设计的新增功能
       href: what-s-new-for-design-in-visual-studio.md
     - name: 使用可视化和建模更改设计
       href: scenario-change-your-design-using-visualization-and-modeling.md
     - name: 可视化代码
-      href: visualize-code.md
       items:
+        - name: 可视化代码
+          href: visualize-code.md
         - name: 使用代码图映射依赖关系
           href: map-dependencies-across-your-solutions.md
         - name: 共享代码图
@@ -31,22 +33,25 @@
         - name: 从代码创建依赖项关系图
           href: create-layer-diagrams-from-your-code.md
     - name: 为你的应用程序创建模型
-      href: create-models-for-your-app.md
       items:
+        - name: 为你的应用程序创建模型
+          href: create-models-for-your-app.md
         - name: 依赖项关系图：参考
           href: layer-diagrams-reference.md
         - name: 依赖项关系图：准则
           href: layer-diagrams-guidelines.md
         - name: 共享模型和导出关系图
-          href: share-models-and-exporting-diagrams.md
           items:
+            - name: 共享模型和导出关系图
+              href: share-models-and-exporting-diagrams.md
             - name: 在其他 Visual Studio 版本中读取模型和关系图
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: 将关系图导出为图像
               href: export-diagrams-as-images.md
     - name: 在你的开发过程中使用模型
-      href: use-models-in-your-development-process.md
       items:
+        - name: 在你的开发过程中使用模型
+          href: use-models-in-your-development-process.md
         - name: 建立用户需求模型
           href: model-user-requirements.md
         - name: 应用体系结构建模
@@ -58,15 +63,17 @@
         - name: Visual Studio 体系结构工具指南
           href: visual-studio-architecture-tooling-guidance.md
     - name: 在开发过程中验证系统
-      href: validate-your-system-during-development.md
       items:
+        - name: 在开发过程中验证系统
+          href: validate-your-system-during-development.md
         - name: 基于模型开发测试
           href: develop-tests-from-a-model.md
         - name: 使用依赖项关系图验证代码
           href: validate-code-with-layer-diagrams.md
     - name: 扩展依赖项关系图
-      href: extend-layer-diagrams.md
       items:
+        - name: 扩展依赖项关系图
+          href: extend-layer-diagrams.md
         - name: 向依赖项关系图添加命令和手势
           href: add-commands-and-gestures-to-layer-diagrams.md
         - name: 向依赖项关系图添加自定义体系结构验证
@@ -74,8 +81,9 @@
         - name: 向依赖项关系图添加自定义属性
           href: add-custom-properties-to-layer-diagrams.md
     - name: Visual Studio 的建模 SDK - 特定于域的语言
-      href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
+        - name: Visual Studio 的建模 SDK - 特定于域的语言
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: 域特定语言入门
           href: getting-started-with-domain-specific-languages.md
         - name: 了解模型、类和关系
@@ -83,11 +91,13 @@
         - name: 如何定义域特定语言
           href: how-to-define-a-domain-specific-language.md
         - name: 自定义和扩展域特定语言
-          href: customizing-and-extending-a-domain-specific-language.md
           items:
+            - name: 自定义和扩展域特定语言
+              href: customizing-and-extending-a-domain-specific-language.md
             - name: 自定义图表的演示
-              href: customizing-presentation-on-the-diagram.md
               items:
+                - name: 自定义图表的演示
+                  href: customizing-presentation-on-the-diagram.md
                 - name: 定义形状和连接线
                   href: defining-shapes-and-connectors.md
                 - name: 控制颜色、线型和其他形状属性
@@ -113,8 +123,9 @@
             - name: 域路径语法
               href: domain-path-syntax.md
             - name: 模型元素的属性
-              href: properties-of-model-elements.md
               items:
+                - name: 模型元素的属性
+                  href: properties-of-model-elements.md
                 - name: DSL 定义的属性
                   href: properties-of-a-dsl-definition.md
                 - name: 域类的属性
@@ -144,8 +155,9 @@
             - name: 使用 DSL 库在 DSL 之间共享类
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
         - name: 编写代码以自定义域特定语言
-          href: writing-code-to-customise-a-domain-specific-language.md
           items:
+            - name: 编写代码以自定义域特定语言
+              href: writing-code-to-customise-a-domain-specific-language.md
             - name: 替代和扩展生成的类
               href: overriding-and-extending-the-generated-classes.md
             - name: 在程序代码中导航和更新模型
@@ -173,8 +185,9 @@
         - name: 域特定语言中的验证
           href: validation-in-a-domain-specific-language.md
         - name: 编写用户命令和操作
-          href: writing-user-commands-and-actions.md
           items:
+            - name: 编写用户命令和操作
+              href: writing-user-commands-and-actions.md
             - name: 使用域特定语言修改标准的菜单命令
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: 向快捷菜单中添加命令
@@ -186,8 +199,9 @@
             - name: 访问和约束当前所选内容
               href: how-to-access-and-constrain-the-current-selection.md
         - name: 响应并传播更改
-          href: responding-to-and-propagating-changes.md
           items:
+            - name: 响应并传播更改
+              href: responding-to-and-propagating-changes.md
             - name: 计算的和自定义的存储属性
               href: calculated-and-custom-storage-properties.md
             - name: 域属性值更改处理程序
@@ -199,8 +213,9 @@
             - name: 更新形状和连接线以反映模型
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: 从域特定语言生成代码
-          href: generating-code-from-a-domain-specific-language.md
           items:
+            - name: 从域特定语言生成代码
+              href: generating-code-from-a-domain-specific-language.md
             - name: 从文本模板访问模型
               href: accessing-models-from-text-templates.md
             - name: 在文本模板中使用 Visual Studio ModelBus
@@ -214,8 +229,9 @@
         - name: 自定义文件存储和 XML 序列化
           href: customizing-file-storage-and-xml-serialization.md
         - name: 部署域特定语言解决方案
-          href: deploying-domain-specific-language-solutions.md
           items:
+            - name: 部署域特定语言解决方案
+              href: deploying-domain-specific-language-solutions.md
             - name: DSL 的 MSI 和 VSIX 部署
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: 一个解决方案中的多个 DSL
@@ -227,8 +243,9 @@
         - name: 创建基于 WPF 的域特定语言
           href: creating-a-wpf-based-domain-specific-language.md
         - name: 使用域特定语言解决方案
-          href: working-with-domain-specific-language-solutions.md
           items:
+            - name: 使用域特定语言解决方案
+              href: working-with-domain-specific-language-solutions.md
             - name: 关于域特定语言
               href: about-domain-specific-languages.md
             - name: 域特定语言工具的概述
@@ -254,11 +271,13 @@
         - name: Visual Studio 的建模 SDK 的 API 参考
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: 代码生成和 T4 文本模板
-      href: code-generation-and-t4-text-templates.md
       items:
+        - name: 代码生成和 T4 文本模板
+          href: code-generation-and-t4-text-templates.md
         - name: 使用 T4 文本模板生成设计时代码
-          href: design-time-code-generation-by-using-t4-text-templates.md
           items:
+            - name: 使用 T4 文本模板生成设计时代码
+              href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 演练：使用文本模板生成代码
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: 生成过程中的代码生成
@@ -270,11 +289,13 @@
         - name: 使用 T4 文本模板的运行时文本生成
           href: run-time-text-generation-with-t4-text-templates.md
         - name: 编写 T4 文本模板
-          href: writing-a-t4-text-template.md
           items:
+            - name: 编写 T4 文本模板
+              href: writing-a-t4-text-template.md
             - name: T4 文本模板指令
-              href: t4-text-template-directives.md
               items:
+                - name: T4 文本模板指令
+                  href: t4-text-template-directives.md
                 - name: T4 模板指令
                   href: t4-template-directive.md
                 - name: T4 参数指令
@@ -296,8 +317,9 @@
             - name: 从文本模板访问 Visual Studio 或其他主机
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
             - name: 在文本模板中使用转义序列
-              href: using-escape-sequences-in-text-templates.md
               items:
+                - name: 在文本模板中使用转义序列
+                  href: using-escape-sequences-in-text-templates.md
                 - name: 使用转义序列基于模板生成模板
                   href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
         - name: 调试 T4 文本模板
@@ -307,13 +329,15 @@
         - name: '如何：使用文本模板 ... '
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: 自定义 T4 文本转换
-          href: customizing-t4-text-transformation.md
           items:
+            - name: 自定义 T4 文本转换
+              href: customizing-t4-text-transformation.md
             - name: 文本模板转换过程
               href: the-text-template-transformation-process.md
             - name: 创建自定义 T4 文本模板指令处理器
-              href: creating-custom-t4-text-template-directive-processors.md
               items:
+                - name: 创建自定义 T4 文本模板指令处理器
+                  href: creating-custom-t4-text-template-directive-processors.md
                 - name: 部署自定义指令处理器
                   href: deploying-a-custom-directive-processor.md
                 - name: 演练：创建自定义指令处理器
@@ -321,8 +345,9 @@
             - name: 在 VS 扩展中调用文本转换
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: 使用自定义主机处理文本模板
-              href: processing-text-templates-by-using-a-custom-host.md
               items:
+                - name: 使用自定义主机处理文本模板
+                  href: processing-text-templates-by-using-a-custom-host.md
                 - name: 演练：创建自定义文本模板主机
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: T4 文本模板的 API 参考

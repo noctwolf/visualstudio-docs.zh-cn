@@ -1,26 +1,27 @@
 ---
-title: 向 n 层应用程序中的数据集添加代码
+title: N 层应用程序中将代码添加到数据集
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- n-tier applications, extending datasets
+- n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b776e75df2830b89fd1ffe9aed197e9cd1019851
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402865"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458479"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>N 层应用程序中将代码添加到数据集
+
 可以通过创建数据集的分部类文件并将代码添加到该扩展数据集的功能 (而不是将代码添加到*DatasetName*。Dataset.Designer 文件）。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 每次对 （在类型化数据集） 的数据集定义进行更改，则生成的代码定义数据集。 任何修改的数据集配置的向导运行期间进行更改时，还会生成此代码。 若要防止在数据集重新生成过程中删除你的代码，请将代码添加到数据集的分部类文件。
@@ -33,7 +34,7 @@ ms.locfileid: "63402865"
 > [!NOTE]
 > 当需要添加验证代码时，类型化数据集提供了用于生成功能<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件处理程序。 有关详细信息，请参阅[向 n 层数据集添加验证](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要将代码添加到 n 层应用程序中的数据集
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要将代码添加到数据集，在 n 层应用程序
 
 1. 找到包含项目 *.xsd*文件。
 
@@ -68,4 +69,4 @@ ms.locfileid: "63402865"
 - [向 N 层应用程序中的 TableAdapter 添加代码](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [创建和配置 Tableadapter](create-and-configure-tableadapters.md)
 - [分层更新概述](hierarchical-update.md)
-- [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
+- [在 Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)

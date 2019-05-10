@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a50a9f28f7e430d37bb08139a6483218698b2eed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3b086a6f0c4d343aaa7b0d58dd93db74a043fa65
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916440"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458769"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 获取获取的属性的方法。
@@ -36,8 +39,8 @@ int GetPropertyGetter(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppField`
+## <a name="parameters"></a>参数
+ `ppField`\
 
  [out]返回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)对象，表示获取的属性的方法。
 

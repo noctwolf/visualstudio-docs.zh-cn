@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651bc4945f8acc65d5f12da5fecef7a4926ef416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868815"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457514"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 创建与该堆栈帧，如本地变量关联的属性的枚举器。
@@ -46,28 +49,28 @@ int EnumProperties ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFieldSpec`
+## <a name="parameters"></a>参数
+ `dwFieldSpec`\
 
  [in]中的标志的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是必填。
 
- `nRadix`
+ `nRadix`\
 
  [in]用于格式化数值的任何信息的基数。
 
- `refiid`
+ `refiid`\
 
  [in]筛选器用于选择其中一个 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是否进行枚举，如`guidFilterLocals`。
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
- `pcelt`
+ `pcelt`\
 
  [out]返回枚举的属性的数目。 这是调用相同[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]返回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，其中包含所需属性的列表。
 

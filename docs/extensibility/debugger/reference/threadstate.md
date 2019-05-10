@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eb95d39c60952c48e62c0e2e61edefeaa59783
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3019671b98d3eb17c92d97c368f2f7338ee55a1d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913335"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460715"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定线程的状态。
@@ -45,16 +48,21 @@ public enum enum_THREADSTATE { 
 };
 ```
 
-## <a name="members"></a>成员
- THREADSTATE_RUNNING 指示线程正在运行的。
+## <a name="fields"></a>字段
+ `THREADSTATE_RUNNING`\
+ 指示该线程正在运行。
 
- THREADSTATE_STOPPED 指示线程已因断点而停止。
+ `THREADSTATE_STOPPED`\
+ 指示该线程已因断点而停止。
 
- THREADSTATE_FRESH 指示线程已创建但尚未运行代码。
+ `THREADSTATE_FRESH`\
+ 指示线程已创建但尚未运行代码。
 
- THREADSTATE_DEAD 指示线程出现故障。
+ `THREADSTATE_DEAD`\
+ 指示线程出现故障。
 
- THREADSTATE_FROZEN 指示该线程已冻结 （可以执行任何执行）。
+ `THREADSTATE_FROZEN`\
+ 指示该线程已冻结 （可以执行任何执行）。
 
 ## <a name="remarks"></a>备注
  用于`dwThreadState`字段[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)结构。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8609452919b5f2c2c3f94a7ef3853e1559b33e77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915737"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226678"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 此方法获取表示完全限定的方法名称的字段。
@@ -40,16 +43,16 @@ int GetMethodFieldsByName(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszFullName`
+## <a name="parameters"></a>参数
+ `pszFullName`\
 
  [in]方法名称。
 
- `nameMatch`
+ `nameMatch`\
 
  [in]选择区分大小写的匹配项，例如，类型。
 
- `ppEnum`
+ `ppEnum`\
 
  [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)与此方法关联的字段的枚举器。
 

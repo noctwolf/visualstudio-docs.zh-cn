@@ -1,6 +1,7 @@
 - name: Visual Basic 教程
-  href: index.yml
   items:
+    - name: Visual Basic 教程
+      href: index.yml
     - name: 概述
       items:
         - name: 关于 Visual Studio

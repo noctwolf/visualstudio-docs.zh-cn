@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9f08422ae106e7d97341d3909ed5470a83d815e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913869"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460940"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 指定用于模块的符号的状态。
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>成员
- MIF_SYMBOLS_LOADED 在模块加载符号的最少的一组 （否则加载任何符号）。
+## <a name="fields"></a>字段
+ `MIF_SYMBOLS_LOADED`\
+ 至少一个组的符号已加载的模块 （否则加载任何符号）。
 
 ## <a name="remarks"></a>备注
  此值返回的[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)方法。

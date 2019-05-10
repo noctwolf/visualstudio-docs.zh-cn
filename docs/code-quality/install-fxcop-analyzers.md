@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 920e74b547bba97a742b68ceb057a0719d6ef700
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823648"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459158"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安装 FxCop 分析器
 
@@ -53,9 +53,9 @@ Microsoft 创建了一组调用的分析器[Microsoft.CodeAnalysis.FxCopAnalyzer
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>若要为 VSIX 安装 FxCop 分析器
 
-在 Visual Studio 2017 版本 15.5 及更高版本中，可以安装[Microsoft 代码分析 2017年](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)包含所有托管项目的 FxCop 分析器的扩展。
-
 ::: moniker range="vs-2017"
+
+在 Visual Studio 2017 版本 15.5 及更高版本中，可以安装[Microsoft 代码分析 2017年](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)包含所有托管项目的 FxCop 分析器的扩展。
 
 1. 在 Visual Studio 中，选择**工具** > **扩展和更新**。
 
@@ -64,40 +64,52 @@ Microsoft 创建了一组调用的分析器[Microsoft.CodeAnalysis.FxCopAnalyzer
    > [!NOTE]
    > 或者，下载适用的扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)。
 
+2. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
+
+3. 在搜索框中，键入"代码分析"，并查找**Microsoft 代码分析 2017年**扩展。
+
+   ![Microsoft 代码分析 2017年扩展](media/extensions-and-updates-code-analysis.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+[Microsoft 代码分析 2019年](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)扩展包含所有托管项目的 FxCop 分析器。 若要安装此扩展：
 
 1. 在 Visual Studio 中，选择**扩展** > **管理扩展**。
 
    **管理扩展**对话框随即打开。
 
    > [!NOTE]
-   > 或者，下载适用的扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017)。
+   > 或者，下载适用的扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019)。
+
+2. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
+
+3. 在搜索框中，键入"代码分析"，并查找**Microsoft 代码分析 2019年**扩展。
+
+   ![Microsoft 代码分析 2019年扩展](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-1. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
-
-1. 在搜索框中，键入"代码分析"，并查找**Microsoft 代码分析 2017年**扩展。
-
-   ![Microsoft 代码分析扩展](media/extensions-and-updates-code-analysis.png)
-
-1. 选择**下载**。
+4. 选择**下载**。
 
    下载此扩展。
 
-1. 选择**确定**以关闭对话框，然后关闭 Visual Studio 启动的所有实例**VSIX 安装程序**。
+5. 选择**确定**以关闭对话框，然后关闭 Visual Studio 启动的所有实例**VSIX 安装程序**。
 
    **VSIX 安装程序**对话框随即打开。
 
+   ::: moniker range="vs-2017"
+
    ![VSIX 安装程序以进行 Microsoft 代码分析](media/vsix-installer-code-analysis.png)
 
-1. 选择**修改**以开始安装。
+   ::: moniker-end
 
-1. 后一分钟或两个，安装完成。 选择“关闭”。
+6. 选择**修改**以开始安装。
 
-1. Visual Studio 中再次打开。
+   后一分钟或两个，安装完成。
+
+7. 选择**关闭**，然后重新打开 Visual Studio。
 
 ::: moniker range="vs-2017"
 
