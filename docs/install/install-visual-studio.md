@@ -116,7 +116,7 @@ ms.locfileid: "62974850"
 
 ::: moniker-end
 
-## <a name="step-3---install-the-visual-studio-installer"></a>第 3 步 - 卸载 Visual Studio 安装程序
+## <a name="step-3---install-the-visual-studio-installer"></a>第 3 步 - `打开` Visual Studio 安装程序
 
 运行引导程序文件以安装 Visual Studio 安装程序。 这个新的轻型安装程序包括安装和自定义 Visual Studio 所需的一切。
 
