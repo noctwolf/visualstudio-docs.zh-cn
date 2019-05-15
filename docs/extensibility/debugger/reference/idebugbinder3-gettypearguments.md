@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923651"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614667"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 此方法检索与此对象关联的参数类型的列表。
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `skip`
+## <a name="parameters"></a>参数
+`skip`\
+[in]若要获取参数类型之前跳过的字段数。
 
- [in]若要获取参数类型之前跳过的字段数。
+`count`\
+[in]要返回的参数字段数 (还指定的大小`ppFields`数组)。
 
- `count`
+`ppFields`\
+[in、 out]会在此方法返回填充的字段的数组。
 
- [in]要返回的参数字段数 (还指定的大小`ppFields`数组)。
-
- `ppFields`
-
- [in、 out]会在此方法返回填充的字段的数组。
-
- `pFetched`
-
- [out]\(可选)实际返回的字段类型的参数的数量。
+`pFetched`\
+[out]\(可选)实际返回的字段类型的参数的数量。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。
