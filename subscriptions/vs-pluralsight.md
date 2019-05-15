@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947461"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225497"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -41,7 +41,7 @@ ms.locfileid: "62947461"
    - 单击复选框接受使用和隐私策略条款
    - 单击“我同意，激活权益”。
      > [!div class="mx-imgBorder"]
-     > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)
+     > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
      > ![Pluralsight 权益条款](_img/vs-pluralsight/vs-pluralsight-terms.png)
 

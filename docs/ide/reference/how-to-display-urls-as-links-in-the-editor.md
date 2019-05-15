@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789600"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531658"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：在编辑器中将 URL 显示为链接
 
@@ -45,6 +45,5 @@ ms.locfileid: "62789600"
 
 ## <a name="see-also"></a>请参阅
 
-- [自定义编辑器](../../ide/customizing-the-editor.md)
 - [“选项”对话框 ->“文本编辑器”](../../ide/reference/text-editor-options-dialog-box.md)
 - [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)
