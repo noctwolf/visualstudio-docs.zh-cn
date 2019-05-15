@@ -35,6 +35,8 @@
       href: install/install-visual-studio-versions-side-by-side.md
     - name: 选择安装位置
       href: install/change-installation-locations.md
+    - name: 导入或导出安装配置
+      href: install/import-export-installation-configurations.md
     - name: 安装问题疑难解答
       href: install/troubleshooting-installation-issues.md
     - name: 更新 Visual Studio
@@ -63,8 +65,6 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: 更新基于网络的 Visual Studio 安装
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: 导入或导出安装配置
-              href: install/import-export-installation-configurations.md
             - name: 网络注意事项
               items:
                 - name: 在防火墙或代理服务器后面安装和使用 Visual Studio
