@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968457"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531852"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>将 foreach 循环转换为 LINQ
 
@@ -44,9 +44,9 @@ ms.locfileid: "62968457"
 3. 选择“转换为 LINQ”或“转换为 Linq (调用窗体)”。
 
    ![LINQ 查询结果示例](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![LINQ 调用窗体结果示例](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>示例代码
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [重构](../refactoring-in-visual-studio.md)
 - [预览更改窗口](../../ide/preview-changes.md)
-- [针对 .NET 开发人员的提示](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [针对 .NET 开发人员的提示](../csharp-developer-productivity.md)

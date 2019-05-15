@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790023"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531628"
 ---
 # <a name="generate-usings-in-visual-studio"></a>在 Visual Studio 中生成 using
 
@@ -32,7 +32,7 @@ ms.locfileid: "62790023"
 
 1. 复制来自文件的代码并将其粘贴到新代码中，无需包括必要的 `using` 语句。 生成的错误会伴随一个代码修补程序出现，该修补程序可添加缺少的 `using` 语句。
 
-    > [!NOTE] 
+    > [!NOTE]
     > 需要在“工具”>“选项”>“文本编辑器”>“C#”>“高级”>“使用指令”中启用此建议。
 
 2. 选择 Ctrl+。 打开“快速操作和重构”菜单。
@@ -47,4 +47,4 @@ ms.locfileid: "62790023"
 
 - [代码生成](../code-generation-in-visual-studio.md)
 - [预览更改](../../ide/preview-changes.md)
-- [针对 .NET 开发人员的提示](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [针对 .NET 开发人员的提示](../csharp-developer-productivity.md)
