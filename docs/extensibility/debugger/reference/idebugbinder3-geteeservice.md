@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877554"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614901"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 此方法返回请求的服务。
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `vendor`
+## <a name="parameters"></a>参数
+`vendor`\
+[in]`GUID` （空值是可接受） 的供应商。
 
- [in]`GUID` （空值是可接受） 的供应商。
+`language`\
+[in]`GUID` （空值是可接受） 的语言。
 
- `language`
+`iid`\
+[in]`IID`要获取的服务。
 
- [in]`GUID` （空值是可接受） 的语言。
-
- `iid`
-
- [in]`IID`要获取的服务。
-
- `ppService`
-
- [out]一个指向请求的服务接口。
+`ppService`\
+[out]一个指向请求的服务接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

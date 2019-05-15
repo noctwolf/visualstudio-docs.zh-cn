@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9b445f8ec471774eaceb0d6dd06c44b7d167f79
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923762"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615202"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 检索给定数组中的维度数的每个索引 （下限） 的基索引。
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwRank`
+## <a name="parameters"></a>参数
+`dwRank`\
+[in]数组的维数 （秩） 数。
 
- [in]数组的维数 （秩） 数。
-
- `dwIndices`
-
- [out]数组基索引 （下限）。
+`dwIndices`\
+[out]数组基索引 （下限）。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

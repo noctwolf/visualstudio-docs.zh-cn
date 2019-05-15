@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c32061ee330d4e8054e20971890d7d0d93a799
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8da32ee8a4b6965e1e731c676703b5d1180d21e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923964"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615222"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 获取此别名所针对的对象。
@@ -36,10 +39,9 @@ int GetObject(
 )
 ```
 
-#### <a name="parameters"></a>参数
- `ppObject`
-
- [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)此别名表示。
+## <a name="parameters"></a>参数
+`ppObject`\
+[out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)此别名表示。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

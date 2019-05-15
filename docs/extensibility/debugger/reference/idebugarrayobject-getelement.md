@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924043"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615159"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 获取数组的元素。
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwIndex`
+## <a name="parameters"></a>参数
+`dwIndex`\
+[in]元素的索引。
 
- [in]元素的索引。
-
- `ppElement`
-
- [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口表示的元素。
+`ppElement`\
+[out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口表示的元素。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。
