@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2fce11c4ddd5a2ca882749ff4ae4a9b3ee0434
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a12be8b3999639c69d479412e673b0e049629172
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723313"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615148"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 检索由此对象所属的进程 ID [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)接口。
@@ -36,10 +39,9 @@ int GetProcessID (
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pProcID`
-
- [out]进程 id。
+## <a name="parameters"></a>参数
+`pProcID`\
+[out]进程 id。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

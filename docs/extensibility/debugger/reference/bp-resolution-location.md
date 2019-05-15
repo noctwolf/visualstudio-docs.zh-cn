@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662902"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615371"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 指定断点解析位置的结构。
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>成员
-`bpType` 中的值[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚举，用于指定如何解释`bpResLocation`union 或`unionmemberX`成员。
+`bpType`\
+中的值[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚举，用于指定如何解释`bpResLocation`union 或`unionmemberX`成员。
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++仅]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)结构，如果`bpType`  =  `BPT_CODE`。
 
- [C++仅]包含[BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md)结构，如果`bpType`  =  `BPT_CODE`。
+`bpResLocation.bpresData`\
+[C++仅]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)结构，如果`bpType`  =  `BPT_DATA`。
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++仅]一个占位符。
 
- [C++仅]包含[BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md)结构，如果`bpType`  =  `BPT_DATA`。
+`unionmember1`\
+[C#仅]请参阅关于如何解释的备注。
 
-`bpResLocation.unused`
+`unionmember2`\
+[C#仅]请参阅关于如何解释的备注。
 
- [C++仅]一个占位符。
+`unionmember3`\
+[C#仅]请参阅关于如何解释的备注。
 
-`unionmember1`
-
- [C#仅]请参阅关于如何解释的备注。
-
-`unionmember2`
-
- [C#仅]请参阅关于如何解释的备注。
-
-`unionmember3`
-
- [C#仅]请参阅关于如何解释的备注。
-
-`unionmember4`
-
- [C#仅]请参阅关于如何解释的备注。
+`unionmember4`\
+[C#仅]请参阅关于如何解释的备注。
 
 ## <a name="remarks"></a>备注
 此结构是的成员[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)并[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构。

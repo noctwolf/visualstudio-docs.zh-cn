@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cff380759163a38129b92f07752e72904f6bbaf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3b2829e598a9dff08218d5fc19c34089d07b2601
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684450"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615316"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 返回描述对象并将其作用域或容器内的其位置的结构。
@@ -36,10 +39,9 @@ int GetAddress(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pAddress`
-
- [in、 out]一个[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)通过此方法来填充的结构。
+## <a name="parameters"></a>参数
+`pAddress`\
+[in、 out]一个[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)通过此方法来填充的结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

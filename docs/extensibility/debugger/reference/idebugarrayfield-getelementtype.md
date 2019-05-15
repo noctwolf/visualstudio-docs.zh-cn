@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd80c54d436698e14db69bb356bd0cca61aa6ea3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d090767cd50f465ea35033875cb84597fa8c6a47
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923977"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615142"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 获取数组中元素的类型。
@@ -36,10 +39,9 @@ int GetElementType(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppType`
-
- [out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的元素的类型的对象。
+## <a name="parameters"></a>参数
+`ppType`\
+[out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的元素的类型的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

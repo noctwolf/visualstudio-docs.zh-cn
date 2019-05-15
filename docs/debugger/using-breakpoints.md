@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902070"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614525"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
@@ -267,7 +267,7 @@ ms.locfileid: "62902070"
 
 2. 开始调试，并在断点处暂停执行，选择**调试** > **Windows** > **局部变量**或**Alt**+ **4**以打开**局部变量**窗口。
 
-   查找中的断点**局部变量**窗口中，右键单击它，然后选择**创建对象 ID**。
+   查找中的特定对象实例**局部变量**窗口中，右键单击它，然后选择**创建对象 ID**。
 
    应该会在“局部变量” **$** 窗口中看到 **$** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 这就是对象 ID。
 

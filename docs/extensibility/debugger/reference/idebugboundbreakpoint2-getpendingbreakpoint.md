@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4f0930537612d7292ddc23509ddf6cadd5cdd6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a466adc76eefca139f521e689502e44c1c29ddc
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923553"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614640"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 获取从其创建指定的绑定的断点的挂起断点。
@@ -37,10 +40,9 @@ int GetPendingBreakpoint( 
 );
 ```
 
-#### <a name="parameters"></a>参数
-`ppPendingBreakpoint`
-
- [out]返回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)对象，表示用于创建此挂起断点绑定断点。
+## <a name="parameters"></a>参数
+`ppPendingBreakpoint`\
+[out]返回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)对象，表示用于创建此挂起断点绑定断点。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

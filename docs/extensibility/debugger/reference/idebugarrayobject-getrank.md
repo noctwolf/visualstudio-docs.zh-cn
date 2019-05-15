@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0391030e77e5959fdc28c94f63e099e5c505d77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: aabaaed13de191e4e0ee8d8d0e8422d3df144210
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923723"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615219"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 获取数组，也就是说，维度数的排名。
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pdwRank`
-
- [out]返回排名。
+## <a name="parameters"></a>参数
+`pdwRank`\
+[out]返回排名。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。
