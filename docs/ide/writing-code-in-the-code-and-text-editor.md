@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581976"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531669"
 ---
 # <a name="features-of-the-code-editor"></a>代码编辑器功能
 
@@ -52,7 +52,7 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 
 |||
 |-|-|
-|[设置文档格式](code-styles-and-quick-actions.md#format-document-command)|设置适当的代码行缩进，并移动大括号以分隔文档中的行。|
+|设置文档的格式|设置适当的代码行缩进，并移动大括号以分隔文档中的行。|
 |设置选定内容的格式|设置适当的代码行缩进，并移动大括号以分隔选定内容中的行。|
 |将选定行中的空格替换为制表符|在适当的位置将前导空格更改为选项卡。|
 |将选定行中的制表符替换为空格|将前导制表符更改为空格。 如果要将文件中的所有空格都转换为制表符（或将所有制表符转换为空格），可以使用 `Edit.ConvertSpacesToTabs` 和 `Edit.ConvertTabsToSpaces` 命令。 这些命令不会出现在 Visual Studio 菜单中，但可以从快速访问窗口或命令窗口中进行调用。|
@@ -84,7 +84,7 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 
 若要定义新热键或重新定义现有热键，请依次转到“工具” > “选项” > “环境” > 和“键盘”。 有关热键的详细信息，请参阅[默认键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-若要详细了解如何自定义编辑器，请参阅[自定义编辑器](../ide/customizing-the-editor.md)。 有关特定于 JavaScript 的编辑器选项，请参阅 [JavaScript 编辑器选项](../ide/reference/options-text-editor-javascript-formatting.md)。
+有关特定于 JavaScript 的编辑器选项，请参阅 [JavaScript 编辑器选项](../ide/reference/options-text-editor-javascript-formatting.md)。
 
 ## <a name="see-also"></a>请参阅
 

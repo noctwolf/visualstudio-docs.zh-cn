@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976206"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461464"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 
@@ -62,16 +62,16 @@ ms.locfileid: "62976206"
 
 2. 在 configSections 元素中创建一个 section 元素。
 
-3. 在 section 元素中，添加一个名为 `name` 的特性，并为其分配一个 `microsoft.visualstudio.testtools` 的值。 再添加一个名为 `type` 的特性，并为其分配一个 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 的值。
+3. 在 section 元素中，添加一个名为 `name` 的特性，并为其分配一个 `microsoft.visualstudio.testtools` 的值。 再添加一个名为 `type` 的特性，并为其分配一个 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions` 的值。
 
 section 元素应类似于：
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> 程序集名称必须与你正在使用的 Microsoft Visual Studio .NET Framework 版本相匹配。 如果你正在使用 Visual Studio .NET Framework 3.5，请将版本设置为 9.0.0.0。 如果你正在使用的 Visual Studio .NET Framework 2.0，请将版本设置为 8.0.0.0。
+> 程序集名称必须与你正在使用的 Microsoft Visual Studio .NET Framework 版本相匹配。
 
 ## <a name="define-connection-strings"></a>定义连接字符串
 

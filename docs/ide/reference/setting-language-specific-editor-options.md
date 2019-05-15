@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d99d6ccfb7b5a310726fdb1cf2dbfebd6591bef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9ee5bb8d69cf3482105150f4ec62cb6ad167d7a
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989858"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531547"
 ---
 # <a name="setting-language-specific-editor-options"></a>设置语言特定的编辑器选项
 
@@ -54,6 +54,6 @@ Visual Studio 提供了各种可应用于特定编程语言的文本编辑器选
 
 ## <a name="see-also"></a>请参阅
 
-- [自定义编辑器](../../ide/customizing-the-editor.md)
+- [自定义编辑器](../how-to-change-text-case-in-the-editor.md)
 - [使用 EditorConfig 创建可移植的自定义编辑器设置](../../ide/create-portable-custom-editor-options.md)
 - [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789587"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531532"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>如何：在 Visual Studio 中更改编辑器中的字体和颜色
 
@@ -50,7 +50,6 @@ ms.locfileid: "62789587"
 
 ## <a name="see-also"></a>请参阅
 
-- [自定义编辑器](../../ide/customizing-the-editor.md)
 - [文本编辑器的“选项”对话框](../../ide/reference/text-editor-options-dialog-box.md)
 - [代码编辑器功能](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [如何：在 Visual Studio 中更改字体和颜色](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
