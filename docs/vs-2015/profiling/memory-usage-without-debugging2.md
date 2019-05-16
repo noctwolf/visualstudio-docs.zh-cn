@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674431"
 ---
 # <a name="memory-usage-without-debugging"></a>不调试的内存使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60050161"
   
 - 通过比较快照，找出内存问题的根本原因。  
   
-  本主题介绍如何使用“内存使用率”工具分析 Windows Universal XAML 应用。 如果想要在使用 JavaScript 和 HTML 的 Windows 通用应用中分析内存使用情况，请参阅[分析内存使用率 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
+  本主题介绍如何使用“内存使用率”工具分析 Windows Universal XAML 应用。 如果想要在使用 JavaScript 和 HTML 的 Windows 通用应用中分析内存使用情况，请参阅[分析内存使用率 (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>启动内存使用率诊断会话  
   
@@ -204,7 +204,7 @@ ms.locfileid: "60050161"
   
 ## <a name="see-also"></a>请参阅  
  [JavaScript 内存](../profiling/javascript-memory.md)   
- [分析应用性能](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [运行性能和诊断工具](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [使用 C++、C# 和 Visual Basic 的 Windows 应用商店应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [分析应用性能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [运行性能和诊断工具](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [使用 C++、C# 和 Visual Basic 的 Windows 应用商店应用的性能最佳做法](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)（在 Visual Studio 中使用新的内存使用情况工具诊断内存问题）

@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408568"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691870"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 **属性**窗口中的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 可以显示的项目和配置属性。 可以项目类型提供属性页，以便用户可以设置为应用程序的属性。  
   
- 通过选择中的项目节点**解决方案资源管理器**，然后单击**属性**上**项目**菜单中，可以打开一个对话框，其中包括项目和配置属性。 在中[!INCLUDE[csprcs](../../includes/csprcs-md.md)]并[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和项目类型派生自这些语言，为选项卡式页面中会显示此对话框[General，Environment，Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)。 有关详细信息，请参阅[不在生成中：演练：公开项目和配置属性 (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
+ 通过选择中的项目节点**解决方案资源管理器**，然后单击**属性**上**项目**菜单中，可以打开一个对话框，其中包括项目和配置属性。 在中[!INCLUDE[csprcs](../../includes/csprcs-md.md)]并[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，和项目类型派生自这些语言，为选项卡式页面中会显示此对话框[General，Environment，Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)。 有关详细信息，请参阅[不在生成中：演练：公开项目和配置属性 (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
   
  托管包框架中的项目 (MPFProj) 提供了用于创建和管理新的项目系统的帮助程序类。 可找到的源的代码和编译说明[项目的 Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>暂留的项目和配置属性  
- 具有文件扩展名与项目类型，例如关联、.csproj、.vbproj 和.myproj 的项目文件中保留项目和配置属性。 语言项目通常使用的模板文件生成项目文件。 但是，有几种实际的方法以将项目类型和模板相关联。 有关详细信息，请参阅 [NIB：Visual Studio 模板](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
+ 具有文件扩展名与项目类型，例如关联、.csproj、.vbproj 和.myproj 的项目文件中保留项目和配置属性。 语言项目通常使用的模板文件生成项目文件。 但是，有几种实际的方法以将项目类型和模板相关联。 有关详细信息，请参阅 [NIB：Visual Studio 模板](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- 通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目和都使用的 MPFProj[不在生成中：MSBuild 概述](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有 PropertyGroup 部分为每个配置。 项目的属性通常将保留在配置参数设置为 null 字符串的第一个 PropertyGroup 部分。  
+ 通过将项添加到模板文件创建项目和配置属性。 然后，这些属性是可用于通过使用此模板的项目类型创建任何项目。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)] 项目和都使用的 MPFProj[不在生成中：MSBuild 概述](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde)模板文件的架构。 这些文件具有 PropertyGroup 部分为每个配置。 项目的属性通常将保留在配置参数设置为 null 字符串的第一个 PropertyGroup 部分。  
   
  下面的代码演示了基本的 MSBuild 项目文件的开始。  
   
@@ -93,9 +93,9 @@ ms.locfileid: "63408568"
  `MyConfigProp`配置属性将显示在配置属性页中作为**我的配置属性**类别中**My Category**。 如果选择了说明，**我说明**，将显示在说明面板中。  
   
 ## <a name="see-also"></a>请参阅  
- [不在生成中：演练：公开项目和配置属性 (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [不在生成中：演练：公开项目和配置属性 (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [添加和删除属性页](../../extensibility/adding-and-removing-property-pages.md)   
  [VSPackage 状态](../../misc/vspackage-state.md)   
  [项目](../../extensibility/internals/projects.md)   
- [NIB：Visual Studio 模板](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB：Visual Studio 模板](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [模板目录说明 (.Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

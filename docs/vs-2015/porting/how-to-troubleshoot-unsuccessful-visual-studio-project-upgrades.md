@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096330"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696381"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>如何：升级不成功的 Visual Studio 项目进行故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Visual Studio 不能完全从早期版本的转换项目的有时[!INCLUDE[vsprv
    如果你希望项目在升级后运行[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]版本，必须更新项目的引用，并还更新任何`Imports`或`Using`调用所引用的语句。 如果你的项目加载在 IDE 中，您可以使用更新的引用**解决方案资源管理器**或**引用管理器**对话框。
 
 ## <a name="see-also"></a>请参阅
- [/ 升级 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [将转换为 ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ 升级 (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [将转换为 ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

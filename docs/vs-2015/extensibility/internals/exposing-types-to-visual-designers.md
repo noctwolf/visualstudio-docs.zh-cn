@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436317"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691208"
 ---
 # <a name="exposing-types-to-visual-designers"></a>向可视化设计器公开类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63436317"
      编译的临时 PE 后，仅提供给编译器的源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。  
   
 ## <a name="see-also"></a>请参阅  
- [BuildManager 对象介绍](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [BuildManager 对象介绍](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [确定项目的默认 Namespace](../../misc/determining-the-default-namespace-of-a-project.md)   
  [注册单个文件生成器](../../extensibility/internals/registering-single-file-generators.md)

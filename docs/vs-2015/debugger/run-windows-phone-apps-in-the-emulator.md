@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683529"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>在仿真程序中运行 Windows Phone 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试并测试计算机上的 Windows Phone 应用，而无需使用物理设备。 你可以模拟常用的触摸和旋转事件，还可以选择要模拟的物理屏幕大小和分辨率。 还可以测试许多常用的功能，例如定位、网络、通知、传感器、加速计以及可选的 SD 卡。  
   
- 可以在模拟器中测试的功能的详细信息，请参阅[Windows Phone 仿真程序中测试应用功能](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
+ 可以在模拟器中测试的功能的详细信息，请参阅[Windows Phone 仿真程序中测试应用功能](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1)。  
   
  该仿真程序与 Visual Studio 相结合形成一个完整的环境，从中可设计、开发、调试和测试 Windows Phone 应用。  
   
@@ -103,7 +103,7 @@ Windows Phone 仿真程序提供了一个虚拟环境，你可以在其中调试
 ### <a name="BKMK_depltool"></a> 使用应用程序部署工具运行应用  
  此外可以使用 Windows Phone 应用程序部署工具 (**AppDeploy.exe**) 若要在模拟器中运行您的应用程序。 该工具为安装 Windows Phone 开发工具时安装的一个独立应用。  
   
- 有关详细信息，请参阅[使用应用程序部署工具部署 Windows Phone 8.1 应用](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)。  
+ 有关详细信息，请参阅[使用应用程序部署工具部署 Windows Phone 8.1 应用](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6)。  
   
 ## <a name="BKMK_toolbar"></a> 通过仿真程序工具栏配置 Windows Phone 仿真程序  
  此表显示了仿真程序工具栏上可用的配置按钮。  

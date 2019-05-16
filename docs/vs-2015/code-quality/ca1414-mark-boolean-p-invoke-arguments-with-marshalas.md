@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e444519c5a6d6d1547b782006d063e90d4a3b976
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691917"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414:用 MarshalAs 标记布尔型 P/Invoke 参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58936571"
 ## <a name="rule-description"></a>规则说明
  将平台调用方法访问非托管的代码与使用定义`Declare`中的关键字[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用于托管和非托管代码之间转换数据类型的封送处理行为。 很多简单数据类型，如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 在非托管代码中有一种表示形式和不需要其封送处理行为的规范; 公共语言运行时自动提供正确的行为。
 
- <xref:System.Boolean>数据类型在非托管代码中有多种表示形式。 当<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，默认封送处理行为<xref:System.Boolean>数据类型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 这是一个 32 位整数，不是适用于所有情况。 所需的非托管方法的布尔值表示应进行确定和匹配到适当<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 类型，它始终为 4 个字节。 UnmanagedType.U1 应该用于 c + +`bool`或其他 1 字节类型。 有关详细信息，请参阅[默认为布尔值类型封送处理](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)。
+ <xref:System.Boolean>数据类型在非托管代码中有多种表示形式。 当<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，默认封送处理行为<xref:System.Boolean>数据类型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 这是一个 32 位整数，不是适用于所有情况。 所需的非托管方法的布尔值表示应进行确定和匹配到适当<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 类型，它始终为 4 个字节。 应该用于 UnmanagedType.U1 C++ `bool`或其他 1 字节类型。 有关详细信息，请参阅[默认为布尔值类型封送处理](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请应用<xref:System.Runtime.InteropServices.MarshalAsAttribute>到<xref:System.Boolean>参数或返回值。 将属性的值设置为相应<xref:System.Runtime.InteropServices.UnmanagedType>。
@@ -59,4 +59,4 @@ ms.locfileid: "58936571"
  [CA2101:指定对 P/Invoke 字符串自变量封送处理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [默认封送处理的布尔值类型](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[与进行互操作非托管代码](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [默认封送处理的布尔值类型](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[与进行互操作非托管代码](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

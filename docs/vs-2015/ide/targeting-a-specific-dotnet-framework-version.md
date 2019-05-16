@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679154"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>面向特定的 .NET Framework 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62429231"
  详细介绍了如何为你的 Visual Basic、Visual C# 或 Visual F# 项目指定特定的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  
   
 ## <a name="related-sections"></a>相关章节  
- [用于 ASP.NET Web 项目的 .NET Framework 多目标](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [用于 ASP.NET Web 项目的 .NET Framework 多目标](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  说明如何使用此版本的 Visual Studio 开发在早期版本的 .NET Framework 下运行的 Web 应用程序。  
   
  [“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ ms.locfileid: "62429231"
  [“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  介绍 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目的项目设计器中的“目标框架”控件。  
   
- [如何：修改目标框架和平台工具集](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [如何：修改目标框架和平台工具集](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  介绍如何更改 Visual C++ 项目的设置以面向不同版本的 .NET Framework 并使用不同的平台工具集。

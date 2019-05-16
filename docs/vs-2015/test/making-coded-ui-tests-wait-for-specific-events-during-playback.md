@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416299"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686318"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码的 UI 测试等待特定事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63416299"
  Visual Studio Enterprise  
   
 > [!TIP]
-> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。  
+> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)。  
   
  **UITestControl.WaitForControlXXX() 方法**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [演练：创建、 编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)   
  [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

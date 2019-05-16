@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000704"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682539"
 ---
 # <a name="authoring-a-windows-installer-package"></a>创作 Windows Installer 程序包
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "59000704"
   
 - 将集成在 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过调用**devenv.exe /setup** （使用 CustomAction 表）。  
   
-  有关详细信息，请参阅[Windows 安装程序](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
+  有关详细信息，请参阅[Windows 安装程序](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
   
 ## <a name="setup-tools"></a>安装程序工具  
  各种第三方安装程序工具提供了 Windows Installer 程序包的开发环境。 两个免费工具如下所示：  

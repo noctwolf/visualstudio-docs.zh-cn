@@ -12,12 +12,12 @@ ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9858b205f3bf581f2595ea645dcea700a382a6b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d3abc956d736f5c9273134b41c0fc9c2dc7db62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936197"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688942"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugProgramEx2 : IUnknown
  自定义端口提供程序在与相同的对象上实现此接口[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口，以便让 SDM 附加到的程序，同时允许端口供应商联系，以跟踪所有会话附加到时程序。 如果还选择能自定义端口供应商可以实现此接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- SDM 调用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProgram2`接口，以获得此接口可跟踪已附加到程序的会话。  
+ SDM 调用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugProgram2`接口，以获得此接口可跟踪已附加到程序的会话。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugProgramEx2`。  

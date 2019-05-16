@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080860"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695576"
 ---
 # <a name="display-data-in-blend"></a>显示 Blend 中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60080860"
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建 XML 数据源](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata)。  
   
 ## <a name="LiveStore"></a> 在应用商店或 Phone 应用中显示实时数据  
- 请参阅 [使用数据和文件 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。  
+ 请参阅 [使用数据和文件 (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Blend for Visual Studio 创建 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

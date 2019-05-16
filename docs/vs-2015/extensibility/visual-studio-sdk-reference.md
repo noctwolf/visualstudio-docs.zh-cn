@@ -11,12 +11,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85eed4abd07e63c2d997a6068744e91e6f1ac047
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690910"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ ms.locfileid: "62537428"
   
 ## <a name="in-this-section"></a>本节内容
 
- [安装程序配置](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [安装程序配置](https://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  用于发现的 Visual Studio 2017 实例设置配置 API。
 
- [打开文件夹可扩展性](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [打开文件夹可扩展性](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  工作区 API 在 Visual Studio 2017 中打开文件夹。
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  

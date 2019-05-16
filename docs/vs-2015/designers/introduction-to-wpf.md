@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674743"
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> 控件  
  应用程序模型带来的用户体验是构造的控件。 在 WPF 中，“控件”是适用于 WPF 类这一类别的总括术语，这些类托管在窗口或页中、具有用户界面并实现一些行为。  
   
- 有关详细信息，请参阅 [控件](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)。  
+ 有关详细信息，请参阅 [控件](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599)。  
   
 ### <a name="wpf-controls-by-function"></a>按功能分类的 WPF 控件  
  下面列出了内置的 WPF 控件。  

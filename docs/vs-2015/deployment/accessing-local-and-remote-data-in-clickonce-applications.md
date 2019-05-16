@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688120"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "63427236"
   
  独立存储适用于 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]的所有版本。 独立存储也适用于部分信任的应用程序，而无需授予其他权限。 如果你的应用程序必须在部分信任环境中运行，但必须维护应用程序特定的数据，则应使用独立存储。  
   
- 有关详细信息，请参阅 [独立存储](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
+ 有关详细信息，请参阅 [独立存储](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
   
 ### <a name="other-local-files"></a>其他本地文件  
  如果你的应用程序必须处理或保存最终用户数据（例如报表、图像、音乐等），你的应用程序将需要 <xref:System.Security.Permissions.FileIOPermission> 来读取本地文件系统中的数据以及将数据写入本地文件系统。  
@@ -86,7 +86,7 @@ ms.locfileid: "63427236"
  在某些时候，你的应用程序可能需要从远程网站检索信息（如客户数据或市场信息）。 本部分讨论用于检索远程数据的最常用技术。  
   
 ### <a name="accessing-files-by-using-http"></a>通过使用 HTTP 访问文件  
- 你可以通过使用 <xref:System.Net.WebClient> 命名空间中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 类从 Web 服务器访问数据。 数据可以是静态文件，也可以是运行原始文本或 XML 数据的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序。 如果你的数据为 XML 格式，则检索数据最快的方法是使用 <xref:System.Xml.XmlDocument> 类，该类的 <xref:System.Xml.XmlDocument.Load%2A> 方法采用 URL 作为参数。 有关示例，请参见 [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
+ 你可以通过使用 <xref:System.Net.WebClient> 命名空间中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 类从 Web 服务器访问数据。 数据可以是静态文件，也可以是运行原始文本或 XML 数据的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序。 如果你的数据为 XML 格式，则检索数据最快的方法是使用 <xref:System.Xml.XmlDocument> 类，该类的 <xref:System.Xml.XmlDocument.Load%2A> 方法采用 URL 作为参数。 有关示例，请参见 [Reading an XML Document into the DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
   
  当应用程序通过 HTTP 访问远程数据时，你需要考虑安全性。 默认情况下， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序对网络资源的访问可能受限，具体取决于应用程序的部署方式。 应用这些限制的目的是防止恶意程序获得对特权远程数据的访问或利用用户的计算机攻击网络上的其他计算机。  
   

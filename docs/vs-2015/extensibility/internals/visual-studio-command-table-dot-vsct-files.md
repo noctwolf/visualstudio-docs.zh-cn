@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931334"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675250"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表格 (.Vsct) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "58931334"
  [设计 XML 命令表格 (.Vsct) 文件](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  介绍如何设计.vsct 文件。  
   
- [如何：创建。Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [如何：创建 .Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  比较用于创建.vsct 文件的方法。 介绍手动创建一个新的.vsct 文件的过程。  
   
 ## <a name="related-sections"></a>相关章节  
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)  
  提供有关每个部分的命令表 XML 配置文件的详细信息。  
   
- [命令表配置 (。Ctc) 文件](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [命令表配置 (。Ctc) 文件](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  概述了不推荐使用的.ctc 文件格式。  
   
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

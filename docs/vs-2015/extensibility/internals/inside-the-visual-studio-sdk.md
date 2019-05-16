@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443901"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687536"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Visual Studio 体系结构的通用的视图
  模板包含的项目结构和所需构建特定类型的应用程序、 控件、 库或类的基本文件。 当你想要开发软件，类似于一个模板时，创建基于模板的项目，然后修改该项目中的文件。  
   
 > [!NOTE]
-> 此模板体系结构不支持为[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目。 有关如何创建[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目模板，请参阅[设计向导](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
+> 此模板体系结构不支持为[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目。 有关如何创建[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目模板，请参阅[设计向导](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b)。  
   
  有关详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   

@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6afcd708ac50a46ceb3359f0d2c0821e3b788f47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696107"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ ms.locfileid: "63436596"
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [确定项目的默认 Namespace](../../misc/determining-the-default-namespace-of-a-project.md)   
  [公开到可视化设计器的类型](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [BuildManager 对象介绍](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+ [BuildManager 对象介绍](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

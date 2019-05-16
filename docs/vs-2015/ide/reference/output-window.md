@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438066"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696063"
 ---
 # <a name="output-window"></a>输出窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ ms.locfileid: "63438066"
   
  也可以编写自己的应用程序，使其在运行时向“输出”窗格写入诊断消息。 要执行此操作，请使用 .NET Framework 类库的 <xref:System.Diagnostics> 命名空间中的 <xref:System.Diagnostics.Debug> 类或 <xref:System.Diagnostics.Trace> 类的成员。 生成解决方案或项目的“调试”配置时，<xref:System.Diagnostics.Debug> 类的成员显示输出；生成“调试”或“发布”配置时，<xref:System.Diagnostics.Trace> 类的成员显示输出。 有关详细信息，请参阅[“输出”窗口中的诊断消息](../../debugger/diagnostic-messages-in-the-output-window.md)。  
   
- 在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 中，可创建自定义生成步骤和生成事件，“输出”窗格中对其警告和错误在进行显示和计数。 在输出行按 F1，可以显示相应的帮助主题。 有关详细信息，请参阅[设置自定义生成步骤或生成事件输出的格式](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da)。  
+ 在 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 中，可创建自定义生成步骤和生成事件，“输出”窗格中对其警告和错误在进行显示和计数。 在输出行按 F1，可以显示相应的帮助主题。 有关详细信息，请参阅[设置自定义生成步骤或生成事件输出的格式](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da)。  
   
 ## <a name="scrolling-behavior"></a>滚动行为  
  如果在“输出”窗口中使用自动滚动，随后使用鼠标或箭头键进行导航，则自动滚动停止。 若要恢复自动滚动，请按 Ctrl+End。  
   
 ## <a name="see-also"></a>请参阅  
  [“输出”窗口中的诊断消息](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [如何：控制输出窗口](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [如何：控制输出窗口](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [编译和生成](../../ide/compiling-and-building-in-visual-studio.md)   
  [了解生成配置](../../ide/understanding-build-configurations.md)   
- [类库概述](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [类库概述](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

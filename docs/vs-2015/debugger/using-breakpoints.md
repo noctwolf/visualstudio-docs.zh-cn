@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064565"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684472"
 ---
 # <a name="using-breakpoints"></a>使用断点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60064565"
    条件可以是调试器能够识别的任何有效表达式。 有关有效表达式的详细信息，请参见 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)。  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在断点条件（C# 和 F#）中使用对象 ID  
- 有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次插入到一个集合中。 在 C# 和 F# 中，你可以创建 [引用类型](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
+ 有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次插入到一个集合中。 在 C# 和 F# 中，你可以创建 [引用类型](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
   
 1. 在对象已被创建后的某个时间在代码中设置断点。  
   

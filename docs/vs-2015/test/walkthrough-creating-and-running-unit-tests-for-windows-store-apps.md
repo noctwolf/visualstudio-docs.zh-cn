@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428199"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695107"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>演练：为创建和运行单元测试 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
     > [!NOTE]
     > 所选功能只应包括 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 单元测试正常运行所需的功能。 这些功能完全不必包含不属于所测试 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的功能，一般应是为所测试 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用指定的功能的子集。  
   
-     有关详细信息，请参阅 [Configure a Windows 8.1 app package by using the manifest designer](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)（使用清单设计器配置 Windows 8.1 应用包）。  
+     有关详细信息，请参阅 [Configure a Windows 8.1 app package by using the manifest designer](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d)（使用清单设计器配置 Windows 8.1 应用包）。  
   
      ![单元测试清单](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-a
   
 ## <a name="see-also"></a>请参阅  
  [使用 Visual Studio 测试应用商店应用](../test/testing-store-apps-with-visual-studio.md)   
- [使用 Team Foundation Build 生成并测试 Windows 应用商店应用](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [使用 Team Foundation Build 生成并测试 Windows 应用商店应用](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

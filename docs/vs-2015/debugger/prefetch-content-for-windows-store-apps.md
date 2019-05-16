@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04842202e8534c551212d7322ab74e9b0ace5848
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e0d9c73277a913a7539ab5eeed4cca738d9bd5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446182"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700762"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>预提取 Windows 应用商店应用的内容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 仅适用于 Windows] (../Image/windows_only_content.png"windows_only_content")  
   
- 若要使 Windows 应用商店应用的响应速度更快，可以请求 Windows 将预一些 web 内容，如网页或图像加载到应用程序的[WinINet](http://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)缓存。 此功能称为“预提取”。 它对于启动时使用的内容特别有效，但你也可以预提取其他常用内容。 利用 [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) 类的方法，可以指定要预加载的内容的 URI。 有关如何将 ContentPrefetcher 功能添加到应用程序的示例，请参阅 [Windows SDK 内容预提取示例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)。  
+ 若要使 Windows 应用商店应用的响应速度更快，可以请求 Windows 将预一些 web 内容，如网页或图像加载到应用程序的[WinINet](https://msdn.microsoft.com/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](https://msdn.microsoft.com/library/aa383630.aspx)缓存。 此功能称为“预提取”。 它对于启动时使用的内容特别有效，但你也可以预提取其他常用内容。 利用 [Windows.Networking.BackgroundTransfer.ContentPrefetcher](https://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) 类的方法，可以指定要预加载的内容的 URI。 有关如何将 ContentPrefetcher 功能添加到应用程序的示例，请参阅 [Windows SDK 内容预提取示例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)。  
   
  Windows 使用试探法来确定何时及是否应进行预提取，以及将下载哪些资源。 试探法将考虑系统网络和电源情况、用户应用使用情况历史记录和之前预提取尝试的结果。 在 Visual Studio 中，可以使用“触发 Microsoft Store 应用预提取”命令来强制 Windows 忽略 ContentPrefetcher 试探法并预加载所有指定的 Web 内容。 若要在已知状态（已加载或未加载）下使用要预提取的内容测试应用程序的行为或性能，这会很有用。  
   

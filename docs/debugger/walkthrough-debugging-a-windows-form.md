@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678921"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成此演练使用 Visual Basic 中， C#，或C++。
@@ -165,23 +165,24 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. 上**调试**菜单中，选择**启动但不调试**。
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Windows 窗体会开始运行 Windows，就像你双击其可执行文件。 未附加调试器。
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. 上**调试**菜单中，选择**附加到进程**。 (此命令，还可以在**工具**菜单。)
 
-     The **Attach to Process** dialog box appears.
+     出现 **“附加到进程”** 对话框。
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. 在中**可用进程**窗格中，查找过程中的名称 (Walkthrough_SimpleDebug.exe)**进程**列并单击它。
 
-5. Click the **Attach** button.
+5. 单击**附加**按钮。
 
-6. In your Windows Form, click the one and only button.
+6. 在 Windows 窗体中，单击一个，只有按钮。
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     调试器在断点处中断执行的 Windows 窗体。
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>请参阅
+- [调试托管代码](../debugger/debugging-managed-code.md)
+- [调试器安全](../debugger/debugger-security.md)

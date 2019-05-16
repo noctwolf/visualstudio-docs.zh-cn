@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445955"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695120"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以生成泛型方法的单元测试完全像您一样的其他方法，如中所述[如何：创建和运行单元测试](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 以下各节提供有关为泛型方法创建单元测试的信息和示例。  
+您可以生成泛型方法的单元测试完全像您一样的其他方法，如中所述[如何：创建和运行单元测试](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)。 以下各节提供有关为泛型方法创建单元测试的信息和示例。  
   
 ## <a name="type-arguments-and-type-constraints"></a>类型参数和类型约束  
  当 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 为泛型类生成单元测试（例如 `MyList<T>`）时，它会生成两个方法：通用帮助器方法和测试方法。 如果 `MyList<T>` 具有一个或多个类型约束，则类型参数必须满足所有类型约束。 为确保待测试的泛型代码按预期对允许的所有输入均有效，该测试方法将调用具有你希望测试的所有约束的通用帮助器方法。  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> 每次运行 SizeOfLinkedListTest 测试时，都将调用两次其 TestHelper 方法。 断言语句的计算结果必须每次都为 true，测试才能通过。 如果测试失败，也许分不清是指定了 `<int>` 的调用还是指定了 `<char>` 的调用导致了失败。 要找出答案，可以检查调用堆栈，或在测试方法中设置断点并在运行测试时进行调试。 有关详细信息，请参阅[如何：在 ASP.NET 解决方案中运行测试时调试](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
+> 每次运行 SizeOfLinkedListTest 测试时，都将调用两次其 TestHelper 方法。 断言语句的计算结果必须每次都为 true，测试才能通过。 如果测试失败，也许分不清是指定了 `<int>` 的调用还是指定了 `<char>` 的调用导致了失败。 要找出答案，可以检查调用堆栈，或在测试方法中设置断点并在运行测试时进行调试。 有关详细信息，请参阅[如何：在 ASP.NET 解决方案中运行测试时调试](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b)。  
   
 ### <a name="TypeConstraintNotSatisfied"></a> 示例 2：使用类型约束  
  此示例演示使用未得到满足的类型约束的泛型方法的单元测试。 第一节显示待测试代码项目中的代码。 突出显示了类型约束。  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [单元测试的剖析](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [单元测试的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [单元测试代码](../test/unit-test-your-code.md)

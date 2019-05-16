@@ -11,12 +11,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 664363740737eb72213b4818b104aa14c3667a14
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445724"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690932"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell （集成）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ Visual Studio 集成 shell 包括集成的开发环境 (IDE)、 调试器和源�
 - 没有 Visual Studio 语言或其关联的项目模板或项目项模板包含在集成 shell 中。 用于示例的 Visual Basic 代码段中包含的其他功能没有特定于语言的实现。  
   
 ## <a name="see-also"></a>请参阅  
- [扩展 Visual Studio 概述](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [扩展 Visual Studio 概述](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092417"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691464"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>调试准备：ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "60092417"
   
 1. 在您的函数和事件处理程序中设置一个或多个断点。  
   
-     有关详细信息，请参阅 [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+     有关详细信息，请参阅 [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
 2. 命中断点时，逐句通过函数内的代码。 同时观察代码的执行，直到将问题隔离出来。  
   
-     有关详细信息，请参阅[单步执行](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)并[调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)。  
+     有关详细信息，请参阅[单步执行](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)并[调试 Web 应用程序和脚本](../debugger/debugging-web-applications-and-script.md)。  
   
 ## <a name="changing-default-configurations"></a>更改默认配置  
  如果需要更改 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 创建的默认的调试和发布配置，则可以这样做。 有关详细信息，请参阅[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。  

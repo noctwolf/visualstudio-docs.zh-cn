@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685934"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>如何在 Visual Studio 中触发 Windows 应用商店应用的挂起、继续和后台事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63442727"
 
  本主题还介绍如何调试 **后台任务**。 通过后台任务，即使应用程序不运行，也可在后台进程中执行某些操作。 可使用调试器使应用程序进入调试模式，然后不启动 UI 即启动和调试后台任务。
 
- 有关进程生命期管理和后台任务的更多信息，请参见 [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)。
+ 有关进程生命期管理和后台任务的更多信息，请参见 [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)。
 
 ## <a name="BKMK_In_this_topic"></a> 在本主题中
  [触发进程生命期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ ms.locfileid: "63442727"
      注意， **“挂起并关闭”** 将关闭应用程序并结束调试会话。
 
 ## <a name="BKMK_Trigger_background_tasks"></a> 触发后台任务
- 任何应用程序均可注册后台任务以响应某些系统事件，即使应用程序未运行也是如此。 后台任务不能运行直接更新 UI 的代码，但可通过磁贴更新、徽章更新和 toast 通知向用户显示信息。 有关详细信息，请参阅 [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
+ 任何应用程序均可注册后台任务以响应某些系统事件，即使应用程序未运行也是如此。 后台任务不能运行直接更新 UI 的代码，但可通过磁贴更新、徽章更新和 toast 通知向用户显示信息。 有关详细信息，请参阅 [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)。
 
  可从调试器触发对应用程序启动后台任务的事件。
 
@@ -125,4 +125,4 @@ ms.locfileid: "63442727"
 4. 选择 **“诊断”** 日志。
 
 ## <a name="see-also"></a>请参阅
- [测试应用商店应用程序使用 Visual Studio](../test/testing-store-apps-with-visual-studio.md) [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)[应用程序生命周期](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching，resuming，和多任务处理](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [测试应用商店应用程序使用 Visual Studio](../test/testing-store-apps-with-visual-studio.md) [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)[应用程序生命周期](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching，resuming，和多任务处理](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

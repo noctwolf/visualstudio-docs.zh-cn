@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684279"
 ---
 # <a name="using-dump-files"></a>使用转储文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ ms.locfileid: "60071767"
   
 - Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 Visual Studio 还可以调试 ARM 设备中的托管应用的应用转储文件，但仅限于本机调试器中。  
   
-- 若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件在 Visual Studio 2013，请下载[Windows 8.1 版本的调试工具的 Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 请参阅[Visual Studio 中的内核调试](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
+- 若要调试[内核模式](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件在 Visual Studio 2013，请下载[Windows 8.1 版本的调试工具的 Windows](https://msdn.microsoft.com/windows/hardware/gg463009)。 请参阅[Visual Studio 中的内核调试](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
   
 - Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](/windows-hardware/drivers/debugger/user-mode-dump-files#full)。 请注意，完全用户模式转储与带有堆的转储不同。  
   
-- 若要使用调试[SOS.dll （SOS 调试扩展）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必须安装调试工具的 Windows 的 Windows 驱动程序工具包 (WDK) 的一部分。 请参阅[Windows 8.1 预览版：下载工具包、 组件和工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+- 若要使用调试[SOS.dll （SOS 调试扩展）](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必须安装调试工具的 Windows 的 Windows 驱动程序工具包 (WDK) 的一部分。 请参阅[Windows 8.1 预览版：下载工具包、 组件和工具](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ ms.locfileid: "60071767"
   
 - 与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将调试器附加到在调试器外部运行的故障进程，然后保存转储文件。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。  
+  你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。  
   
   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   

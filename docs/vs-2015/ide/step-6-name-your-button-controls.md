@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26ba081e893867fcd80c7fc969301f417400d37a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679291"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ ms.locfileid: "63442496"
   
      在为控件添加事件处理程序后，通过双击控件或在菜单栏上选择 “视图”、 “代码”，你可以随时从 Windows 窗体设计器返回到控件。  
   
-     生成程序时名称很重要，并且方法（包括事件处理程序）可以具有任何所需的名称。 使用 IDE 添加事件处理程序时，IDE 将基于控件的名称和正在处理的事件创建一个名称。 例如，名为  “showButton”的按钮的 Click 事件称为 `showButton_Click()` 事件处理程序方法。 此外，通常会在方法名称后面添加一对括号 ()，以表明正在讨论的对象是方法。 如果你决定要更改代码的变量名，请右键单击代码中的变量，然后选择 “重构”、 “重命名”。 将重命名代码中变量的所有实例。 请参阅[重命名重构 (C#)](../csharp-ide/rename-refactoring-csharp.md)或[的重构和重命名对话框的](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)有关详细信息。  
+     生成程序时名称很重要，并且方法（包括事件处理程序）可以具有任何所需的名称。 使用 IDE 添加事件处理程序时，IDE 将基于控件的名称和正在处理的事件创建一个名称。 例如，名为  “showButton”的按钮的 Click 事件称为 `showButton_Click()` 事件处理程序方法。 此外，通常会在方法名称后面添加一对括号 ()，以表明正在讨论的对象是方法。 如果你决定要更改代码的变量名，请右键单击代码中的变量，然后选择 “重构”、 “重命名”。 将重命名代码中变量的所有实例。 请参阅[重命名重构 (C#)](../csharp-ide/rename-refactoring-csharp.md)或[的重构和重命名对话框的](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)有关详细信息。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   

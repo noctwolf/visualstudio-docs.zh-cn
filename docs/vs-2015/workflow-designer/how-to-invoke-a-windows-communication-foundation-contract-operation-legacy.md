@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d42c9698c6d3a247601909909c49fa92d2d29978
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1398d7fb62943c04ca026175a3f46b282bf6da69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855992"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696323"
 ---
 # <a name="how-to-invoke-a-windows-communication-foundation-contract-operation-legacy"></a>如何：调用 Windows Communication Foundation 协定操作（旧版）
 本主题介绍如何使用面向 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 或 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的旧 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 来调用 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 协定操作。  
@@ -45,7 +45,7 @@ ms.locfileid: "62855992"
   
 3. 展开通道令牌节点，并为要在 <xref:System.Workflow.Activities.ChannelToken.EndpointName%2A> 字段中使用的客户端终结点指定名称。 配置文件中名称相同的终结点配置将用于配置通道。  
   
-4. 如果配置文件中不存在终结点配置，请创建终结点配置。 有关配置客户端的详细信息，请参阅[WCF 客户端概述](http://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)。  
+4. 如果配置文件中不存在终结点配置，请创建终结点配置。 有关配置客户端的详细信息，请参阅[WCF 客户端概述](https://msdn.microsoft.com/library/f60d9bc5-8ade-4471-8ecf-5a07a936c82d)。  
   
 ## <a name="see-also"></a>请参阅  
  [选择操作对话框 （旧版）](../workflow-designer/choose-operation-dialog-box-legacy.md)   

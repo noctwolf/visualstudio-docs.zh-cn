@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691188"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58932491"
   
  [“没有可用于当前位置的源代码”对话框](../debugger/no-source-available.md)  
   
- [“无符号化信息”对话框](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [“无符号化信息”对话框](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [“解析多义性”对话框](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ ms.locfileid: "58932491"
   
  [远程调试错误](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [附加错误](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [附加错误](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [SQL 调试安装程序疑难解答](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [SQL 调试安装程序疑难解答](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [调试 Visual C++ 常见问题](../debugger/debugging-native-code-faqs.md)  
   

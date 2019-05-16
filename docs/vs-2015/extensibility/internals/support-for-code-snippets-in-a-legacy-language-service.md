@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408453"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691787"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "63408453"
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>通过使用菜单命令插入代码片段  
  若要使用菜单命令显示代码段浏览器，添加一个菜单命令，然后调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A>中的方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>响应该菜单命令的接口。  
   
-1. 将命令和一个按钮添加到.vsct 文件。 您可以找到在操作的说明[演练：使用 Visual Studio 包模板创建菜单命令](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)。  
+1. 将命令和一个按钮添加到.vsct 文件。 您可以找到在操作的说明[演练：使用 Visual Studio 包模板创建菜单命令](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)。  
   
 2. 从派生类<xref:Microsoft.VisualStudio.Package.ViewFilter>类并重写<xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A>方法，以指示对新的菜单命令的支持。 此示例将始终启用菜单命令。  
   

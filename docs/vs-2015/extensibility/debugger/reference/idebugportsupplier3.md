@@ -12,12 +12,12 @@ ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46375c0b30ca563afc600d810dd27dc22882a71f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4ece720cf6880bba528dee99cdbdeb25c10087a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674130"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  自定义端口提供程序实现此接口以支持持久保存或保存到磁盘的端口信息。 必须在与相同的对象上实现此接口[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugPortSupplier2`接口，以获得此接口。  
+ 调用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上`IDebugPortSupplier2`接口，以获得此接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了继承的方法之外[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)接口，此接口支持以下各项：  

@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433485"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705789"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript 是 Visual Studio 中的一级语言。 当你在 Visual Studio IDE 中编写 JavaScript 代码时，你可以使用该标准编辑帮助（代码片段，IntelliSense 等等）的大部分或全部。 对于许多应用程序类型和服务，可以编写 JavaScript 代码。
 
- 有关 JavaScript 语言参考文档，请参阅 [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx)。
+ 有关 JavaScript 语言参考文档，请参阅 [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx)。
 
  可能需要特定版本的 Visual Studio 或特定 Visual Studio 扩展来使用 HTML 和 JavaScript 开发特定应用程序类型和服务。 下面的列表包含指向详细信息的链接。
 
@@ -29,7 +29,7 @@ JavaScript 是 Visual Studio 中的一级语言。 当你在 Visual Studio IDE �
 
 - 若要创建 [Windows 应用商店](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 和通用应用（支持这两种平台的应用），请[获取这些工具](https://developer.microsoft.com/windows/downloads)。
 
-- 若要创建基于云的服务，请参阅 [Microsoft Azure 站点](http://azure.microsoft.com/documentation/)。
+- 若要创建基于云的服务，请参阅 [Microsoft Azure 站点](https://azure.microsoft.com/documentation/)。
 
 - 若要创建网站和 Web 应用，请[参阅 ASP.NET 站点](http://www.asp.net/get-started/websites)。
 

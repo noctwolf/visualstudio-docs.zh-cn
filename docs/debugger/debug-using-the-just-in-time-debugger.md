@@ -79,7 +79,7 @@ ms.locfileid: "62853150"
 
 若要启用实时调试而不是标准 Windows 窗体错误处理，请添加以下设置：
 
-- 在 machine.config 或 \<应用名称>.exe.config 文件的 `system.windows.forms` 部分中，将 `jitDebugging` 值设置为 `true`****:
+- 在 machine.config 或 \<应用名称>.exe.config 文件的 `system.windows.forms` 部分中，将 `jitDebugging` 值设置为 `true`: 
 
     ```xml
     <configuration>
