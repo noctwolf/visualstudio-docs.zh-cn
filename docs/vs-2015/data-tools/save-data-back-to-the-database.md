@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425338"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692540"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ ms.locfileid: "63425338"
   
  `GetChanges` 本身返回的所有已更改的记录。 与此相反，通过传递所需<xref:System.Data.DataRowState>作为参数`GetChanges`方法，可以指定何种所需的更改记录子集： 新添加的记录，记录标记为删除，分离记录，或修改记录。  
   
- 获取已更改的记录的子集时，你想要将记录发送到另一个组件进行处理。 而不是发送整个数据集，您可以减少通过获取该组件需要的记录与其他组件进行通信的开销。 有关详细信息，请参阅[如何：检索已更改的行](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+ 获取已更改的记录的子集时，你想要将记录发送到另一个组件进行处理。 而不是发送整个数据集，您可以减少通过获取该组件需要的记录与其他组件进行通信的开销。 有关详细信息，请参阅[如何：检索已更改的行](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 ## <a name="committing-changes-in-the-dataset"></a>提交数据集中的更改  
  在数据集中，做出更改后<xref:System.Data.DataRow.RowState%2A>属性已更改行的设置。 建立、 维护和供你的原始版本和当前版本记录<xref:System.Data.DataRowView.RowVersion%2A>属性。 存储在这些已更改行的属性的元数据，才将正确的更新发送到数据源。  
@@ -219,12 +219,12 @@ ms.locfileid: "63425338"
   
 - 在业务层，通过将代码添加到应用程序以验证数据。 数据集是一个可以执行此操作的位置。 数据集设计器提供了一些后端验证的优点，例如验证更改，如列和行的值变化的能力。 有关详细信息，请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md)。  
   
-- 中的表示层，通过将验证添加到窗体。 有关详细信息，请参阅[Windows 窗体中的用户输入验证](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
+- 中的表示层，通过将验证添加到窗体。 有关详细信息，请参阅[Windows 窗体中的用户输入验证](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
   
 - 数据在后端，通过将数据发送到数据源 — 例如，数据库，并使其能够接受或拒绝数据。 如果您正在使用的数据库，具有复杂的功能来验证数据并提供错误的信息，这可以是一个实用的方法，因为可以验证无论它是从哪里的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致大量的往返到数据源，具体取决于你的应用程序如何由后端引发的验证错误的解决方法。  
   
   > [!IMPORTANT]
-  > 使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+  > 使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
   在数据集中进行了更改后，可以传输到数据源的更改。 大多数情况下，执行此操作通过调用`Update`TableAdapter （或数据适配器） 的方法。 该方法将遍历每个表中记录数据，确定所需的更新的类型 （更新、 插入或删除） (如果有） 并运行相应命令。  
   
@@ -272,6 +272,6 @@ ms.locfileid: "63425338"
   
 ## <a name="see-also"></a>请参阅  
  [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)   
- [准备应用程序以接收数据](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [准备应用程序以接收数据](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [验证数据](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [验证数据](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061705"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687697"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "60061705"
 |任务|描述|  
 |----------|-----------------|  
 |处理命令|任何 VSPackage 可以处理命令。|  
-|生成编辑器|可以注册自定义编辑器。 有关详细信息，请参阅[文档 Windows 和编辑器](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
+|生成编辑器|可以注册自定义编辑器。 有关详细信息，请参阅[文档 Windows 和编辑器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)。|  
 |拥有 windows|可以创建工具和文档窗口，而不添加新的项目类型。|  
 |在属性窗口中公开属性|所有对象可以都公开属性。|  
   
@@ -60,6 +60,6 @@ ms.locfileid: "60061705"
  项目子类型可用于扩展托管的项目类型，而无需创建新的项目类型。 项目子类型使用 COM 聚合来扩展托管的项目中编写的 Microsoft[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]。 使用 COM 聚合，可以重复使用的托管的项目系统实现大部分并仍然通过聚合和使用支持接口为特定方案自定义。 有关项目子类型的详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [文档 Windows 和编辑器](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [文档 Windows 和编辑器](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

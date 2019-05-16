@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443183"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696406"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > C++ 代码不支持“显示派生类”命令。 可以转到类视图，依次展开类型节点和“Derived Types”子文件夹，然后将这些类型拖到类图上，即可显示派生类。  
   
- 有关多类继承的详细信息，请参阅 [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多个基类](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
+ 有关多类继承的详细信息，请参阅 [(NOTINBUILD) 多重继承](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)和[多个基类](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)。  
   
 ## <a name="abstract-classes"></a>抽象类  
  类设计器支持抽象类（亦称为“抽象基类”）。 这些是永不实例化，但可从中派生其他类的类。 以本文前面“多重继承”部分中的示例为例，可以将 `Bird` 类实例化成各个单独的对象，如下所示：  
@@ -121,7 +121,7 @@ typedef struct
   
  结构也可以是匿名的。 类设计器显示匿名类和结构的方式与显示各自类型的方式相同。 虽然可以声明并显示匿名类和结构，但类设计器不会使用你指定的标记名称， 而是使用类视图生成的名称。 类或结构作为 **__unnamed** 元素显示在类视图和类设计器中。  
   
- 有关匿名类的详细信息，请参阅[匿名类类型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)。  
+ 有关匿名类的详细信息，请参阅[匿名类类型](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)。  
   
 ## <a name="template-classes"></a>模板类  
  类设计器支持直观呈现模板类。 支持嵌套声明。 下表列出了一些典型声明。  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>请参阅  
  [使用 Visual C++ 代码（类设计器）](../ide/working-with-visual-cpp-code-class-designer.md)   
- [类和结构](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [匿名类类型](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) 多重继承](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [多个基类](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [模板](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [类和结构](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [匿名类类型](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) 多重继承](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [多个基类](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [模板](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

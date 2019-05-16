@@ -13,12 +13,12 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cbd9426b7a9190872a2b04246d7f051b480a188d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 997c0df133b72d69dfb4e69de53a1b77e1a0965c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066872"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697506"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：将依赖项添加到 VSIX 包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,6 +34,6 @@ ms.locfileid: "60066872"
 3. 若要添加另一个未安装的 VSIX:: 中**添加新依赖关系**对话框中，选择**在文件系统上的文件**，然后使用**浏览**按钮以选择 VSIX。  
   
 ## <a name="see-also"></a>请参阅  
- [VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
  [准备 Windows Installer 部署的扩展](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

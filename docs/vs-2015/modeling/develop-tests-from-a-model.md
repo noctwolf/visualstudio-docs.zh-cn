@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692256"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60042049"
   
  子系统测试对系统的主要组件应用相同的原则。 每个组件都与其他组件分开进行测试。 子系统测试的重点是在组件的用户界面或 API 中可见的行为。  
   
- 有关如何运行测试的详细信息，请参阅[测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+ 有关如何运行测试的详细信息，请参阅[测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>从需求模型派生系统测试  
  你可以创建并维护系统测试和需求模型之间的关系。 若要建立这种关系，你可以编写对应需求模型主要元素的测试。 Visual Studio 通过允许你在测试和模型的各个部件之间创建链接，帮助你维护这一关系。 有关需求模型的详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
@@ -63,9 +63,9 @@ ms.locfileid: "60042049"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>将测试链接到用例  
   
-1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，创建一个要 求并使测试套件基于该需求。 若要了解如何执行此操作，请参阅[测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，创建一个要 求并使测试套件基于该需求。 若要了解如何执行此操作，请参阅[测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-    所创建的要求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中使用的过程模板。 有关详细信息，请参阅[使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+    所创建的要求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中使用的过程模板。 有关详细信息，请参阅[使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2. 将要求工作项链接到模型中的一个或多个用例。  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  可以通过应用程序的正常 API 使用多个取值函数和 updater。 但是可能需要编写一些附加函数才能启用测试。 这些附加取值函数和 updater 有时称为“测试检测”。 由于这些函数依赖于系统的内部设计，因此，系统开发人员的职责就是提供这些函数，而测试人员则根据求模型编写测试代码。  
   
- 编写自动测试时，可以使用一般测试来包装取值函数和 updater。 有关详细信息，请参阅[创建自动测试，运行可执行文件使用一般测试](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)。  
+ 编写自动测试时，可以使用一般测试来包装取值函数和 updater。 有关详细信息，请参阅[创建自动测试，运行可执行文件使用一般测试](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52)。  
   
 ### <a name="tests-for-business-rules"></a>业务规则的测试  
  某些需求不与任何一个用例直接相关。 例如，DinnerNow 业务允许顾客从多个菜单中选择，但要求每个订单中所有选择的项都应来自一个菜单。 可以将此业务规则表示为有关在求类模型中的订单、菜单和项之间的关联的固定规则。  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>将测试链接到模型元素或关系  
   
-1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，创建一个要 求并使测试套件基于该需求。 若要了解如何执行此操作，请参阅[测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，创建一个要 求并使测试套件基于该需求。 若要了解如何执行此操作，请参阅[测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-     所创建的要求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中使用的过程模板。 有关详细信息，请参阅[使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+     所创建的要求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中使用的过程模板。 有关详细信息，请参阅[使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2. 将要求工作项链接到模型中的一个或多个元素。  
   

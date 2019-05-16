@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403575"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686880"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ ms.locfileid: "63403575"
   
  请参阅：  
   
-- [定义生成过程](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [定义生成过程](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [使用封闭签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [使用封闭签入生成过程以验证更改](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [自定义生成过程模板](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
@@ -336,13 +336,13 @@ ms.locfileid: "63403575"
   
   请参阅：  
   
-- [使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [链接模型元素和工作项](../modeling/link-model-elements-and-work-items.md)  
   
-- [适用于 Visual Studio ALM 的图表、仪表板和报表](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [适用于 Visual Studio ALM 的图表、仪表板和报表](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [使用 Project 创建积压工作 (backlog) 和任务](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [使用 Project 创建积压工作 (backlog) 和任务](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> 测试、验证和签入代码  
  当团队完成每个任务时，他们会将其代码签入 Team Foundation 版本控制，如果他们忘记这样做，则会收到来自 Team Foundation Server 的提醒。 在 Team Foundation Server 接受团队的签入前，团队会运行单元测试和层验证以根据测试用例和设计来验证代码。 他们使用 Team Foundation Server 来定期运行生成、自动单元测试和层验证。 这有助于确保代码满足以下条件：  
@@ -359,13 +359,13 @@ ms.locfileid: "63403575"
   
   请参阅：  
   
-- [测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)  
   
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [生成应用程序](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了可帮助团队执行此任务的 Visual Studio 建模图:  
@@ -888,6 +888,6 @@ ms.locfileid: "63403575"
  [可视化代码](../modeling/visualize-code.md)   
  [为您的应用程序创建模型](../modeling/create-models-for-your-app.md)   
  [在您的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)   
- [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [在敏捷开发中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [在开发过程中验证您的系统](../modeling/validate-your-system-during-development.md)   
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)

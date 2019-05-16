@@ -46,7 +46,7 @@ ms.locfileid: "63406571"
 
 1. 打开.NET Framework 命令提示符。
 
-2. 设置使用以下命令更新位置。 在此示例中， *HelloWorld.exe.application*是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和*<http://adatum.com/Update/Path>* 是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。
+2. 设置使用以下命令更新位置。 在此示例中， *HelloWorld.exe.application*是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和 *<http://adatum.com/Update/Path>* 是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。
 
     Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path
 

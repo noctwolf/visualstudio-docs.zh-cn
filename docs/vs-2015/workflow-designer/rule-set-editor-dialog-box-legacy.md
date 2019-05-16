@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438889"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703199"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
 本主题介绍如何使用**规则集编辑器**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -76,7 +76,7 @@ ms.locfileid: "63438889"
   
   表达式运算符优先级遵循 C# 运算符优先级规则。  
   
-  有关条件的详细信息，请参阅[在工作流中使用条件](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)。  
+  有关条件的详细信息，请参阅[在工作流中使用条件](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77)。  
   
 ### <a name="halt-and-update-functions"></a>Halt 和 Update 函数  
  **Then 操作：** 并**Else 操作：** 表达式支持**暂停**并**更新**函数。 若要使用**暂停**函数中，键入**暂停**到**Then 操作：** 或**Else 操作：** 文本框。 **暂停**操作会导致规则集执行立即停止，并将控制权返回到调用代码。 您使用**更新**与正向链接的函数。  

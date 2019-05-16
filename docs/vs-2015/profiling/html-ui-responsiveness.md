@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438386"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697627"
 ---
 # <a name="html-ui-responsiveness"></a>HTML UI 响应能力
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **图像解码。** 指示对图像进行解压缩和解码所用的时间。  
   
-  对于脚本和样式类别，UI 响应能力探查器可能提供你在“时间线详细信息”图中可操作的数据。 如果识别出脚本问题，你可以运行 CPU 采样探查器与 UI 响应能力探查器。 或者，可以使用 Visual Studio 函数探查器以获取更详细的数据。 有关详细信息，请参阅[分析 JavaScript 函数的计时数据](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)。  
+  对于脚本和样式类别，UI 响应能力探查器可能提供你在“时间线详细信息”图中可操作的数据。 如果识别出脚本问题，你可以运行 CPU 采样探查器与 UI 响应能力探查器。 或者，可以使用 Visual Studio 函数探查器以获取更详细的数据。 有关详细信息，请参阅[分析 JavaScript 函数的计时数据](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)。  
   
   对于其他事件类别，你也许能够识别出由于向应用程序中添加功能而导致的平台副效应，但在这些情况下，可能无法使用 UI 响应能力探查器解决特定的性能问题。  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - 观看 [此视频](http://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
   
-- 阅读关于使用 JavaScript 为 Windows 生成的 Windows 应用商店应用程序的性能提示。 有关更多信息，请参阅 [采用 JavaScript 的 Windows 应用商店应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+- 阅读关于使用 JavaScript 为 Windows 生成的 Windows 应用商店应用程序的性能提示。 有关更多信息，请参阅 [采用 JavaScript 的 Windows 应用商店应用的性能最佳做法](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
   
-- 若要了解单线程代码执行模型和性能，请参见 [执行代码](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
+- 若要了解单线程代码执行模型和性能，请参见 [执行代码](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   
 ## <a name="see-also"></a>请参阅  
- [分析应用性能](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [分析应用性能](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

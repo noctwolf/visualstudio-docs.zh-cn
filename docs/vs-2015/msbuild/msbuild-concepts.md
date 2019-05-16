@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703254"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59663305"
 |[任务](../msbuild/msbuild-tasks.md)|演示如何创建 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可用于执行原子生成操作的可执行代码单元。|  
 |[比较属性和项](../msbuild/comparing-properties-and-items.md)|比较 MSBuild 属性和项。 二者都用于将信息传递给任务、计算条件，以及存储可在整个项目文件中引用的值。|  
 |[MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)|说明如何转义 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 为在特定上下文中作特殊用途而保留的某些字符。|  
-|[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|  
+|[演练：从头创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|  
 |[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio 集成开发环境 (IDE) 的情况下编写、操作和调试 MSBuild 项目。|  
 |[MSBuild 参考](../msbuild/msbuild-reference.md)|链接到包含参考信息的文档。|  
-|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|概述了项目文件的 XML 架构，并演示其如何控制生成软件的过程。|
+|[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|概述了项目文件的 XML 架构，并演示其如何控制生成软件的过程。|

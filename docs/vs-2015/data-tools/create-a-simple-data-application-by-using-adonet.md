@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436978"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705173"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436978"
 5. 在中**值**列中，输入连接字符串 （而无需任何外部引号），然后保存所做的更改。  
   
 > [!NOTE]
-> 在实际的应用程序，您应在连接字符串，安全地存储中所述[连接字符串和配置文件](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
+> 在实际的应用程序，您应在连接字符串，安全地存储中所述[连接字符串和配置文件](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8)。  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> 检索连接字符串  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|使用`ExecuteNonQuery`方法`cmdNewCustomer`运行`Sales.uspNewCustomer`存储过程。 此存储过程运行`INSERT`语句中，不是查询。|  
 |NC-13|`@CustomerID` 值以 IDENTITY 值的形式从数据库返回。 由于它是一个整数，您必须将其转换为一个字符串，使其显示在**客户 ID**文本框。<br /><br /> -你声明`parsedCustomerID`在 nc-2。<br />-存储`@CustomerID`中的值`parsedCustomerID`以供将来使用。<br />-将返回的客户 ID 转换为字符串，并将其插入到`txtCustomerID.Text`。|  
 |NC-14|此示例中，将添加一个简单的 （不是生产质量） catch 子句。|  
-|NC-15|请始终在使用完连接后将其关闭，以便可以将其释放到连接池。 请参阅[SQL Server 连接池 (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)。|  
+|NC-15|请始终在使用完连接后将其关闭，以便可以将其释放到连接池。 请参阅[SQL Server 连接池 (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx)。|  
 |NC-16|定义用于验证客户名称是否存在的方法。<br /><br /> -如果文本框为空，则显示一条消息，并返回`false`，这是因为创建该帐户所需的名称。<br />-如果文本框不为空，返回`true`。|  
 |NC-17|将代码添加到 `btnPlaceOrder` 按钮的 Click 事件处理程序。|  
 |NC-18|将对 `isPlaceOrderReady` 的调用包装在 `btnPlaceOrder_Click` 事件代码周围，这样一来，如果不存在所需的输入，`uspPlaceNewOrder` 就不会运行。|  

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802624"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696600"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ ms.locfileid: "54802624"
 - 第 12 行的标识符 BYE 上具有紫色波形曲线；当前处于非活动状态的 Android.NativeActivity 项目中未定义此标识符。  
   
 ## <a name="single-file-intellisense"></a>单个文件 IntelliSense  
- 当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 转到“文本编辑器、C/C++、高级”打开或关闭 IntelliSense 功能，即可启用或禁用特定功能。 若要为不属于项目的单个文件配置 IntelliSense，请在“高级”部分中查找“IntelliSense 和浏览非项目文件”。 请参阅 [Visual C++ 指导教程](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
+ 当你在任何项目外部打开单个文件时，你仍然会得到 IntelliSense。 转到“文本编辑器、C/C++、高级”打开或关闭 IntelliSense 功能，即可启用或禁用特定功能。 若要为不属于项目的单个文件配置 IntelliSense，请在“高级”部分中查找“IntelliSense 和浏览非项目文件”。 请参阅 [Visual C++ 指导教程](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c)。  
   
  ![Visual C++ 单个文件 intellisense](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

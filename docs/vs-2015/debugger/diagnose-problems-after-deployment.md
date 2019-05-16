@@ -9,12 +9,12 @@ caps.latest.revision: 66
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40af4a29d35e4bd060251d0db8b6cb13dbb44caf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b8c9cbc856559e349851dd4c08b65883793a640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081003"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675905"
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "60081003"
 #### <a name="TFS2013"></a> Team Foundation Server 2013  
  设置生成定义以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。  
   
-1. [编辑生成定义或创建新的生成定义。](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [编辑生成定义或创建新的生成定义。](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![查看生成定义 TFS 2013 中的](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
@@ -56,7 +56,7 @@ ms.locfileid: "60081003"
   
     ![设置生成定义 TFS 2013 中的符号路径](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-    有关符号的详细信息，请参阅 [发布符号数据](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+    有关符号的详细信息，请参阅 [发布符号数据](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   
 4. 添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60081003"
  **/p:BuildSymbolStorePath=**\<*path to symbols*>  
   
 ## <a name="DeployRelease"></a> 步骤 2：发布你的应用  
- 如果使用生成过程创建的 [Web.Deploy 包](http://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
+ 如果使用生成过程创建的 [Web.Deploy 包](https://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
   
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
   
@@ -304,7 +304,7 @@ ms.locfileid: "60081003"
   
    有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：  
   
-  - **BuildLabel** （对于 TeamBuild):生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+  - **BuildLabel** （对于 TeamBuild):生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](https://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
   
   - **SymbolPath** （推荐）：你用分号分隔的符号 （PDB 文件） 位置的 Uri 列表。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。  
   
@@ -364,7 +364,7 @@ ms.locfileid: "60081003"
      ![从源代码管理打开 &#45; 已迁移](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 #### <a name="WhatWorkspace"></a> 问：什么是工作区？  
- **答：**[工作区存储源的副本](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，因此在签入工作之前，可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
+ **答：**[工作区存储源的副本](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)，因此在签入工作之前，可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
   
 #### <a name="UntrustedSymbols"></a> 问：为什么我收到了有关不受信任的符号的消息？  
  ![使用不受信任的符号路径进行调试？](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

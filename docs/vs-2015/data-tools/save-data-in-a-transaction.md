@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692458"
 ---
 # <a name="save-data-in-a-transaction"></a>在事务中保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ ms.locfileid: "62559193"
   
 2. 将项目命名**SavingDataInATransactionWalkthrough**。  
   
-3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      创建“SavingDataInATransactionWalkthrough”项目并将其添加到“解决方案资源管理器”中。  
   
 ## <a name="create-a-database-data-source"></a>创建数据库数据源  
- 此步骤中使用[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)创建基于数据源`Customers`和`Orders`Northwind 示例数据库中的表。  
+ 此步骤中使用[数据源配置向导](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)创建基于数据源`Customers`和`Orders`Northwind 示例数据库中的表。  
   
 #### <a name="to-create-the-data-source"></a>创建数据源  
   

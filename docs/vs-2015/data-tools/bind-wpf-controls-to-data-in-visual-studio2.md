@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437045"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697957"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 WPF 控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63437045"
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>创建绑定到单个数据字段的控件
 
-1. 在中**数据源**窗口中，展开一个表示表或对象的项。 查找表示要绑定到的列或属性的子项。 有关示例，请参阅[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
+1. 在中**数据源**窗口中，展开一个表示表或对象的项。 查找表示要绑定到的列或属性的子项。 有关示例，请参阅[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
 
 2. （可选）选择要创建的控件。 中的每项**数据源**窗口具有时将项拖动到设计器中创建一个默认控件。 默认控件将取决于项的基础数据类型。
 
@@ -73,7 +73,7 @@ ms.locfileid: "63437045"
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>创建绑定到多个数据字段的控件
 
-1. 在中**数据源**窗口中，选择一个表示表或对象的项目。 有关示例，请参阅[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
+1. 在中**数据源**窗口中，选择一个表示表或对象的项目。 有关示例，请参阅[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
 
 2. （可选）选择要创建的控件。 默认情况下，每个项目中**数据源**表示数据表或对象的窗口已设置为创建<xref:System.Windows.Controls.DataGrid>（如果项目面向.NET Framework 4） 或<xref:System.Windows.Controls.ListView>（适用于.NET framework 的早期版本）。
 
@@ -91,7 +91,7 @@ ms.locfileid: "63437045"
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>创建一组绑定到多个数据字段的控件
 
-1. 在中**数据源**窗口中，选择一个表示表或对象的项目。 有关示例，请参阅[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
+1. 在中**数据源**窗口中，选择一个表示表或对象的项目。 有关示例，请参阅[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。
 
 2. 单击项目并选择旁边的下拉箭头**详细信息**。
 

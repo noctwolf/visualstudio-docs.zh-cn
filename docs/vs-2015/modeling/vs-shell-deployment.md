@@ -9,17 +9,17 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6503efd0fa606042089e26b4cac23adcabdcb6e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5bfe88d7e7d742eb67273d307c3a8e72e9a85833
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704038"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-独立的 shell，可以确定哪些 Visual Studio 需要与域特定语言以及如何显示该解决方案应进行交互的功能。 有关 Visual Studio 独立 shell 的详细信息，请参阅[自定义独立 Shell](../extensibility/customizing-the-isolated-shell.md)。 你可以找到有关如何自定义中的独立的 shell 的详细信息[自定义独立 Shell](http://msdn.microsoft.com/d75463cd-1155-42e4-8b7a-046ed6becbbf)。  
+独立的 shell，可以确定哪些 Visual Studio 需要与域特定语言以及如何显示该解决方案应进行交互的功能。 有关 Visual Studio 独立 shell 的详细信息，请参阅[自定义独立 Shell](../extensibility/customizing-the-isolated-shell.md)。 你可以找到有关如何自定义中的独立的 shell 的详细信息[自定义独立 Shell](https://msdn.microsoft.com/d75463cd-1155-42e4-8b7a-046ed6becbbf)。  
   
 ### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>若要将 Visual Studio Shell 设置为部署目标  
   

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437606"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701215"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>创建和配置类型成员（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "63437606"
 |模块（仅限 VB）|方法、属性、字段、事件、构造函数和常量|  
   
 > [!NOTE]
-> 通过使用自动实现的属性（仅限 C#），属性的 get 和 set 访问器不需要其他逻辑，因而属性声明更加简洁。 若要显示完全签名，请从“类图”菜单中选择“更改成员格式”->“显示完全签名”。 有关自动实现的属性的详细信息，请参阅[自动实现的属性](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
+> 通过使用自动实现的属性（仅限 C#），属性的 get 和 set 访问器不需要其他逻辑，因而属性声明更加简洁。 若要显示完全签名，请从“类图”菜单中选择“更改成员格式”->“显示完全签名”。 有关自动实现的属性的详细信息，请参阅[自动实现的属性](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7)。  
   
 ## <a name="common-tasks"></a>常规任务  
   
@@ -131,7 +131,7 @@ ms.locfileid: "63437606"
      **注意：** 还可使用键盘快捷方式创建成员。 有关详细信息，请参阅[类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式（类设计器）](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md)。  
   
 ## <a name="ModifyTypeMembers"></a>修改类型成员  
- 类设计器使你能够修改关系图上显示的类型的成员。 你可以修改类图上显示的任何非只读类型的成员。 （请参阅[显示只读信息（类设计器）](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）通过在设计图面、“属性”窗口和“类详细信息”窗口上使用就地编辑来修改类型成员。  
+ 类设计器使你能够修改关系图上显示的类型的成员。 你可以修改类图上显示的任何非只读类型的成员。 （请参阅[显示只读信息（类设计器）](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）通过在设计图面、“属性”窗口和“类详细信息”窗口上使用就地编辑来修改类型成员。  
   
  “类详细信息”窗口中显示的所有成员均表示类图中类型的成员。 有四种成员：方法、属性、字段和事件。  
   
@@ -263,7 +263,7 @@ ms.locfileid: "63437606"
   
  除了下面几个特例外，“类详细信息”窗口中的所有单元格都是可编辑的：  
   
-- 整个类型是只读的，比如它位于引用的程序集中时（请参阅[显示只读信息（类设计器）](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）当你在类设计器中选择形状时，“类详细信息”窗口将以只读方式显示形状的详细信息。  
+- 整个类型是只读的，比如它位于引用的程序集中时（请参阅[显示只读信息（类设计器）](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。）当你在类设计器中选择形状时，“类详细信息”窗口将以只读方式显示形状的详细信息。  
   
 - 对于索引器，名称是只读的，其余内容（类型、修饰符、摘要）都是可编辑的。  
   

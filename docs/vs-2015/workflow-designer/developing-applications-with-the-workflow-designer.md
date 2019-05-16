@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977015"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704788"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流设计器开发应用程序
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] 是可视化设计器和调试器，用于以图形化的方式构造和调试 [!INCLUDE[wf](../includes/wf-md.md)] 开发环境中承载的 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 应用程序。 它可用于通过使用模板和活动设计器来撰写复合工作流应用程序、活动库或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服务。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流，请参阅[Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] 是可视化设计器和调试器，用于以图形化的方式构造和调试 [!INCLUDE[wf](../includes/wf-md.md)] 开发环境中承载的 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 应用程序。 它可用于通过使用模板和活动设计器来撰写复合工作流应用程序、活动库或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服务。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流，请参阅[Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。  
   
  下面是一些 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的旧版本中没有，而在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的新版本中增加的新设计功能：  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977015"
  [开发面向 .NET 3.0 或 .NET 3.5 Framework 的工作流应用程序](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  包含有关使用面向 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 的旧设计器的指南。  
   
- [设计器重新承载&#91;WF 示例&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [设计器重新承载&#91;WF 示例&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  本示例演示如何创建包含设计器的 WPF 布局。  
   
- [自定义活动设计器](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [自定义活动设计器](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  本节包含使用自定义设计器在工作流设计器中进行显示的活动示例。

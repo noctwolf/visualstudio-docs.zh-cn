@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3f0d674984d916cb59f5938903d1bf1ba7d687bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680333"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>选择工具箱项，WPF 组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433690"
 - 选中组件旁边的复选框后，该组件的图标将显示在“工具箱”中。  
   
   > [!TIP]
-  > 若要将 WPF 控件的实例添加到打开进行编辑的项目文档，请将其“工具箱”图标拖动到“设计”视图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[如何：管理“工具箱”窗口](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱选项卡](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
+  > 若要将 WPF 控件的实例添加到打开进行编辑的项目文档，请将其“工具箱”图标拖动到“设计”视图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[如何：管理“工具箱”窗口](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)和[如何：操作工具箱选项卡](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)。  
   
 - 清除组件旁边的复选框后，将从中“工具箱”中删除相应的图标。  
   
@@ -42,13 +42,13 @@ ms.locfileid: "63433690"
   列出计算机注册表中条目的 WPF 控件的名称。  
   
   命名空间  
-  显示定义组件结构的 [NIB：.NET Framework 类库](http://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29)命名空间的层次结构。 对此列排序可列出计算机上安装的每个 .NET Framework 命名空间中的可用组件。  
+  显示定义组件结构的 [NIB：.NET Framework 类库](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29)命名空间的层次结构。 对此列排序可列出计算机上安装的每个 .NET Framework 命名空间中的可用组件。  
   
   程序集名称  
   显示包含每个组件的命名空间的 .NET Framework 程序集的名称。 对此列排序可列出计算机上安装的每个 .NET Framework 程序集中包含的命名空间。  
   
   目录  
-  显示 .NET Framework 程序集的位置。 所有程序集的默认位置是全局程序集缓存。 有关全局程序集缓存的详细信息，请参阅[使用程序集和全局程序集缓存](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)。  
+  显示 .NET Framework 程序集的位置。 所有程序集的默认位置是全局程序集缓存。 有关全局程序集缓存的详细信息，请参阅[使用程序集和全局程序集缓存](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  **筛选器**  
@@ -72,10 +72,10 @@ ms.locfileid: "63433690"
   
   此外，如果将设计时元数据应用到自定义控件，而且此元数据指定将 <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> 设置为 `false`，则该控件不会出现在“工具箱”中。  
   
-  可以通过映射控件的命名空间和程序集，直接在 XAML 视图中引用控件。 有关详细信息，请参阅[如何：将命名空间导入 XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。  
+  可以通过映射控件的命名空间和程序集，直接在 XAML 视图中引用控件。 有关详细信息，请参阅[如何：将命名空间导入 XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c)。  
   
 ## <a name="see-also"></a>请参阅  
- [“选择工具箱项”对话框 (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
+ [“选择工具箱项”对话框 (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [工具箱](../../ide/reference/toolbox.md)   
- [如何：在 WPF 应用程序中使用第三方 WPF 控件](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [WPF 设计器](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+ [如何：在 WPF 应用程序中使用第三方 WPF 控件](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [WPF 设计器](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

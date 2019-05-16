@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441059"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697261"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ ms.locfileid: "63441059"
   
 ##### <a name="to-test-the-new-domain-classes"></a>测试新的域类  
   
-1. **单击转换所有模板**的工具栏中的解决方案资源管理器，以生成 DSL 设计器代码。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+1. **单击转换所有模板**的工具栏中的解决方案资源管理器，以生成 DSL 设计器代码。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. **生成并运行 DSL。** 按 F5 或 CTRL + F5 来运行的新实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]在实验模式下。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。  
   
