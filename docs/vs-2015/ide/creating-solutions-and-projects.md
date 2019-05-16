@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437578"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701149"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437578"
 项目是生成应用程序所需的所有内容的逻辑容器。 从主菜单上选择“文件”|“新建”|“项目”创建项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将创建一个解决方案来包含它。 如有必要，可以继续向解决方案添加更多新项目或现有项目。 可以从现有代码文件创建项目，也可创建在使用完毕后删除的临时项目（仅 .NET）。  
   
 > [!NOTE]
-> 本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>从已安装项目模板创建项目  
  从主菜单上依次选择“文件”|“新建”|“项目”，打开“新建项目”对话框。 在“已安装”|“模板”下的左侧窗格中，选择编程语言和平台或技术，然后在中间窗格中选择可用的模板。  
@@ -95,4 +95,4 @@ ms.locfileid: "63437578"
   
 ## <a name="see-also"></a>请参阅  
  [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)   
- [NIB 如何：创建多项目解决方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [NIB 如何：创建多项目解决方案](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
