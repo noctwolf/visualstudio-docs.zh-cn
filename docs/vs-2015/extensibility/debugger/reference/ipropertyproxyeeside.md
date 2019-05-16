@@ -12,12 +12,12 @@ ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 564715df3890adb46f8fd56d71ad94deaf8651a5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 660c792d9e13fabbd433aee46c57474fb824453f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933851"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684675"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IPropertyProxyEESide : IUnknown
  表达式计算器实现此接口以支持类型可视化工具。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要获取此接口。 调用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口，以获得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)接口。  
+ 调用[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)若要获取此接口。 调用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口，以获得[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  以下方法实现此接口：  

@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434869"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691556"
 ---
 # <a name="debugging-gpu-code"></a>调试 GPU 代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63434869"
 ## <a name="troubleshooting"></a>疑难解答  
   
 ### <a name="specifying-an-accelerator"></a>指定加速器  
- 如果代码在 [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) 加速器上运行，则仅命中 GPU 代码中的断点。 如果代码中未指定加速器，REF 加速器将自动被选作项目属性中的“调试加速器类型”。 如果代码显式选择加速器，则在调试期间将不会使用 REF 加速器，并且将不会命中断点，GPU 硬件具有调试支持时除外。 可以通过编写代码来对此情况进行补救，以便在调试期间使用 REF 加速器。 有关详细信息，请参阅项目属性和[使用加速器和 accelerator_view 对象](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)以及[C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+ 如果代码在 [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF) 加速器上运行，则仅命中 GPU 代码中的断点。 如果代码中未指定加速器，REF 加速器将自动被选作项目属性中的“调试加速器类型”。 如果代码显式选择加速器，则在调试期间将不会使用 REF 加速器，并且将不会命中断点，GPU 硬件具有调试支持时除外。 可以通过编写代码来对此情况进行补救，以便在调试期间使用 REF 加速器。 有关详细信息，请参阅项目属性和[使用加速器和 accelerator_view 对象](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1)以及[C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
 ### <a name="conditional-breakpoints"></a>条件断点  
  GPU 代码中的条件断点是受支持的，但并不能在设备上计算所有表达式。 当无法在设备上计算某个表达式时，将在调试器中计算该表达式。 调试器的运行速度比设备的运行速度慢得多。  
@@ -83,6 +83,6 @@ ms.locfileid: "63434869"
  C++ AMP 计算可能会超过由 Windows 超时检测和恢复进程 (TDR) 设置的默认时间间隔。 在这种情况下，计算将被取消，并且数据将丢失。 有关详细信息，请参阅[在 C++ AMP 中处理 TDR](http://go.microsoft.com/fwlink/p/?LinkId=249154)。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：调试C++AMP 应用程序](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [演练：调试C++AMP 应用程序](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [在 Visual Studio 中开始 GPU 调试](http://go.microsoft.com/fwlink/p/?LinkId=255381)

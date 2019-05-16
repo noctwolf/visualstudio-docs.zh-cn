@@ -13,12 +13,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 48d77b77367faa1ea1f59c1de7fdbad96d574e1b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117637"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693565"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>并行安装 Visual Studio 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60117637"
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>.NET Framework 版本和并行安装
 
-- Visual Basic、Visual C# 和 Visual F# 项目使用 **“项目设计器”** 中的 **“目标框架”** 选项来指定项目使用的 .NET Framework 版本。 对于 C++ 项目，您可以通过修改 .vcxproj 文件手动更改目标框架。 有关详细信息，请参阅[版本兼容性](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
+- Visual Basic、Visual C# 和 Visual F# 项目使用 **“项目设计器”** 中的 **“目标框架”** 选项来指定项目使用的 .NET Framework 版本。 对于 C++ 项目，您可以通过修改 .vcxproj 文件手动更改目标框架。 有关详细信息，请参阅[版本兼容性](https://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f)。
 
      创建项目时，可以在 **“新建项目”** 对话框中的 **“.NET Framework”** 列表中指定项目针对的 .NET Framework 版本。
 
@@ -50,13 +50,13 @@ ms.locfileid: "60117637"
     |--------------|-----------|
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)|
-    |Visual F#|[配置项目](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[如何：修改目标框架和平台工具集](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
-    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[在公共语言运行时的上一版本上运行 JScript 应用程序](http://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
+    |Visual F#|[配置项目](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
+    |C++|[如何：修改目标框架和平台工具集](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[在公共语言运行时的上一版本上运行 JScript 应用程序](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>请参阅
 
 - [安装 Visual Studio](../install/install-visual-studio-2015.md)
 - [移植、迁移和升级 Visual Studio 项目](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [生成 C/C++ 独立应用程序和并行程序集](http://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
-- [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+- [生成 C/C++ 独立应用程序和并行程序集](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

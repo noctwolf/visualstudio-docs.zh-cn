@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680009"
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "63443767"
  此方法的好处在于它可创建单个部署，并简化已本地化的部署。 在运行时，将根据用户 Windows 操作系统的默认区域性使用适当的附属程序集。 此方法的缺点为只要客户端计算机上安装或更新了应用程序，此方法就会下载所有附属程序集。 如果你的应用程序具有大量字符串，或客户的网络连接速度慢，则此过程在应用程序更新期间会影响性能。  
   
 > [!NOTE]
-> 此方法假定你的应用程序将自动调整控件的高度、宽度和位置以适应不同区域性中不同的文本字符串大小。 Windows 窗体包含各种控件和技术，这些控件和技术使你可以设计更易于本地化的窗体，其中包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控件以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 属性。  另请参阅[如何：支持对使用 AutoSize 和 TableLayoutPanel 控件的 Windows 窗体的本地化](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))。  
+> 此方法假定你的应用程序将自动调整控件的高度、宽度和位置以适应不同区域性中不同的文本字符串大小。 Windows 窗体包含各种控件和技术，这些控件和技术使你可以设计更易于本地化的窗体，其中包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控件以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 属性。  另请参阅[如何：支持对使用 AutoSize 和 TableLayoutPanel 控件的 Windows 窗体的本地化](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\))。  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>为每种区域性生成一个部署  
  在此部署策略中，可以生成多个部署。 在每个部署中，仅包括特定区域性所需的附属程序集，并将该部署标记为特定于该区域性。  
@@ -70,7 +70,7 @@ ms.locfileid: "63443767"
   
  按需下载附属程序集与按需下载其他类型的程序集略有不同。 有关如何启用此方案中使用的详细信息和代码示例[!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]工具[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]，请参阅[演练：下载附属程序集使用 ClickOnce 部署 API 按需](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。  
   
- 还可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中启用此方案。  另请参阅[演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[演练：下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 还可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中启用此方案。  另请参阅[演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集](https://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[演练：下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需](https://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>在部署前测试已本地化的 ClickOnce 应用程序  
  仅当应用程序主线程的 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性设置为附属程序集的区域性时，才将附属程序集用于 Windows 窗体应用程序。 本地市场中的客户可能已经在运行 Windows 的本地化版本，并且已将区域性设置为相应默认值。  
@@ -84,4 +84,4 @@ ms.locfileid: "63443767"
 ## <a name="see-also"></a>请参阅  
  [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
- [全球化 Windows 窗体](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [全球化 Windows 窗体](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

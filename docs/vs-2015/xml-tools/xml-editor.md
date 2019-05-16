@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadd0bded176a44d3eb977382778dd20b68a95a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703159"
 ---
 # <a name="xml-editor"></a>XML 编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,10 +74,10 @@ ms.locfileid: "60112170"
  介绍“XML 编辑器”的用户界面组件。  
   
 ## <a name="related-sections"></a>相关章节  
- [编辑文本、 代码和标记](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [编辑文本、 代码和标记](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  提供有关“文本编辑器”的信息。  
   
- [XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [XML 标准参考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  提供有关 XML 技术的信息，其中包括 XML、文档类型定义 (DTD)、XML 架构定义语言 (XSD) 和 XSLT。  
   
 ## <a name="see-also"></a>请参阅  

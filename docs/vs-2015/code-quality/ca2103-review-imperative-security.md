@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9d6fb1b40a63608aaa4ae92029c3a60a56157650
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b8b3067d5c8ab8204d6ad723315c400e7b27552
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934553"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694930"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103:检查命令性安全
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ ms.locfileid: "58934553"
  它可以安全地禁止显示此规则的警告，如果权限不依赖于变化的数据。 但是，它是更好的做法将强制性要求更改为其等效声明。
 
 ## <a name="see-also"></a>请参阅
- [安全编码准则](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[数据和建模](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [安全编码准则](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)[数据和建模](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7938940cc1a9e672ee831165ecc55e2897c3a9fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697368"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60089076"
   
  相反，从 CA（如证书供应商或企业内部部门）收到的证书可以为你的用户提供更高的安全性。 该证书不仅会标识已签名软件的发行者，还会通过与签发该证书的 CA 进行核实来验证发行者的身份。 如果 CA 不是根证书颁发机构，验证码还会沿证书链回溯到根颁发机构来验证该 CA 是否有权颁发证书。 为了提高安全性，应尽量使用 CA 颁发的证书。  
   
- 有关生成自发的详细信息，请参阅[Makecert.exe （证书创建工具）](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
+ 有关生成自发的详细信息，请参阅[Makecert.exe （证书创建工具）](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
   
 ### <a name="timestamps"></a>时间戳  
  用于对 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序签名的证书在特定时间长度（通常为 12 个月）后会过期。 为了避免不断使用新证书对应用程序重新签名， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 支持时间戳。 使用时间戳对应用程序签名，只要时间戳有效，即使过期之后证书仍将被接受。 这将允许下载和运行证书已过期，但时间戳有效的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 还允许使用过期证书的已安装应用程序继续下载和安装更新。  
@@ -75,4 +75,4 @@ ms.locfileid: "60089076"
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
- [Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe（清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

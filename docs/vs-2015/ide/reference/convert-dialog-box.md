@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441437"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705857"
 ---
 # <a name="convert-dialog-box"></a>“转换”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,5 +40,5 @@ ms.locfileid: "63441437"
 2. 选择适合你应用程序的工具。  
   
 ## <a name="see-also"></a>请参阅  
- [NOTINBUILD - 如何：从 Visual Basic 6.0 升级项目](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD - 如何：从 Visual Basic 6.0 升级项目](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [移植、迁移和升级 Visual Studio 项目](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

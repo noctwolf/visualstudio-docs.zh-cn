@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425384"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699772"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63425384"
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>若要将新行插入到数据集  
- 通常使用数据绑定控件的应用程序添加新记录通过**新添**按钮[BindingNavigator 控件](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。  
+ 通常使用数据绑定控件的应用程序添加新记录通过**新添**按钮[BindingNavigator 控件](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e)。  
   
  若要手动将新记录添加到数据集，通过调用 DataTable 方法创建新的数据行。 然后向其中添加行<xref:System.Data.DataRow>集合 (<xref:System.Data.DataTable.Rows%2A>) 的<xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63425384"
   
 - 每个已更改的数据行包含该行的多个版本 (<xref:System.Data.DataRowVersion>)，（更改） 之前, 的原始版本和 （之后的更改） 的当前版本。 期间挂起的更改时 (可以作出响应的时间<xref:System.Data.DataTable.RowChanging>事件)、 第三个版本 — 提议的版本，也可以。
   
-  <xref:System.Data.DataSet.HasChanges%2A>数据集的方法将返回`true`如果在数据集中进行了更改。 确定已更改的行存在之后, 可以调用`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>返回一组已更改的行。 有关详细信息，请参阅[如何：检索已更改的行](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+  <xref:System.Data.DataSet.HasChanges%2A>数据集的方法将返回`true`如果在数据集中进行了更改。 确定已更改的行存在之后, 可以调用`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>返回一组已更改的行。 有关详细信息，请参阅[如何：检索已更改的行](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要确定是否已对任何行进行了更改  
   

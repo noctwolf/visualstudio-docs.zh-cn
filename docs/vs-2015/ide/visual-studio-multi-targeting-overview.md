@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 12018ef5e4c20e436cc250ca9630ccc4bd942a0f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698152"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,16 +69,16 @@ ms.locfileid: "63443154"
  若要以 .NET Framework 版本为目标，必须先安装相应的程序集引用。 .NET Framework 2.0 版、3.0 版和 3.5 版的程序集引用包含在 .NET Framework 3.5 SP1 中，可从 [Microsoft 下载中心、Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150) 网站进行下载。 也可在 [Visual Studio 下载](http://go.microsoft.com/fwlink/?LinkId=179687)网站下载 .NET Framework 3.5 Client Profile、.NET Framework 4、.NET Framework 4 Client Profile 和 Silverlight 的程序集引用。
 
 > [!NOTE]
-> .NET Framework 客户端配置文件是 .NET Framework 的子集，可提供一组有限的库和功能。 有关客户端配置文件的详细信息，请参阅 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。
+> .NET Framework 客户端配置文件是 .NET Framework 的子集，可提供一组有限的库和功能。 有关客户端配置文件的详细信息，请参阅 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。
 
- “添加引用”对话框禁用不适合目标 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本的系统程序集，以便不会无意中将它们添加到项目中。 （系统程序集是包括在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本内的 .dll 文件。）若引用所属的框架版本低于目标版本，则无法解析引用，并且无法添加基于此类引用的控件。 若要启用此类引用，请将项目的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目标重新设置为包括此引用。  有关详细信息，请参阅[项目设计器简介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。
+ “添加引用”对话框禁用不适合目标 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本的系统程序集，以便不会无意中将它们添加到项目中。 （系统程序集是包括在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本内的 .dll 文件。）若引用所属的框架版本低于目标版本，则无法解析引用，并且无法添加基于此类引用的控件。 若要启用此类引用，请将项目的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目标重新设置为包括此引用。  有关详细信息，请参阅[项目设计器简介](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。
 
  有关程序集引用的详细信息，请参阅[在设计时解析程序集](../msbuild/resolving-assemblies-at-design-time.md)。
 
 ## <a name="enabling-linq"></a>启用 LINQ
- 当面向 .NET Framework 3.5 或更高版本时，会自动添加对 System.Core 的引用和 System.Linq 的项目级导入（仅 Visual Basic 中）。 若要使用 LINQ 功能，还必须打开 Option Infer（仅 Visual Basic 中）。 如果将目标更改为早期的 .NET Framework 版本，将自动删除相关引用和导入。 有关详细信息，请参阅[如何：创建 LINQ 项目](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)。
+ 当面向 .NET Framework 3.5 或更高版本时，会自动添加对 System.Core 的引用和 System.Linq 的项目级导入（仅 Visual Basic 中）。 若要使用 LINQ 功能，还必须打开 Option Infer（仅 Visual Basic 中）。 如果将目标更改为早期的 .NET Framework 版本，将自动删除相关引用和导入。 有关详细信息，请参阅[如何：创建 LINQ 项目](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2)。
 
 ## <a name="see-also"></a>请参阅
 [多定向](../msbuild/msbuild-multitargeting-overview.md)
-[ASP.NET Web 项目的 .NET Framework 多定向](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[ASP.NET Web 项目的 .NET Framework 多定向](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
 [平台兼容性和系统要求](/visualstudio/productinfo/vs2015-compatibility-vs)

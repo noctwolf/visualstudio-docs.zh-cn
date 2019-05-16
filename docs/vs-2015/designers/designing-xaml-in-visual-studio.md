@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114777"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695545"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于针对基于 XAML 的 Windows 桌面、Web、 [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)和 [Windows 应用商店](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 应用构建具有吸引力的用户界面和丰富的媒体体验。 两者共享一组通用的设计和工具窗口以及一个 XAML 编辑器，但是 Blend for Visual Studio 为更高级的任务（如动画和行为）提供了额外的设计工具。
+Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于针对基于 XAML 的 Windows 桌面、Web、 [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)和 [Windows 应用商店](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 应用构建具有吸引力的用户界面和丰富的媒体体验。 两者共享一组通用的设计和工具窗口以及一个 XAML 编辑器，但是 Blend for Visual Studio 为更高级的任务（如动画和行为）提供了额外的设计工具。
 
 ## <a name="choosing-the-right-tool"></a>选择合适的工具
  你选择的设计工具在很大程度上取决于你的技能集。 如果你更加面向代码，则可以在 Visual Studio 中编写的 XAML 代码来完成高级设计任务。 如果你更加面向设计，则可以使用 Blend for Visual Studio 执行高级任务，而无需编写代码。
@@ -41,11 +41,11 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
      ![文件重载体验](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **已同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+- **已同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 - **通用的解决方案资源管理器：** 解决方案资源管理器可提供项目及其文件的组织有序的视图，并且可用于访问与它们关联的命令。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
 
-- **团队资源管理器：** 通过团队资源管理器可以使用 GIT 或 TFS 存储库管理项目以促进团队协作。 请参阅 [在团队资源管理器中工作](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
+- **团队资源管理器：** 通过团队资源管理器可以使用 GIT 或 TFS 存储库管理项目以促进团队协作。 请参阅 [在团队资源管理器中工作](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02)。
 
 - **NuGet：** 可以在 Visual Studio 和 Blend for Visual Studio 中管理 NuGet 包。 NuGet 是用于 .NET Framework 的程序包管理器，它简化了从解决方案安装和删除程序包的过程。
 

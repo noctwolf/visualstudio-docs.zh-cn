@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436527"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686927"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 互操作程序集参数封送处理
-在托管代码中编写 Vspackage 可能需要调用或是由非托管 COM 代码进行调用。 通常情况下，转换，或自动封送，互操作封送处理程序方法自变量。 但是，有时参数无法转换直接的方式。 在这些情况下，互操作程序集方法原型参数用于尽可能接近地匹配 COM 函数参数。 有关详细信息，请参阅[互操作封送处理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
+在托管代码中编写 Vspackage 可能需要调用或是由非托管 COM 代码进行调用。 通常情况下，转换，或自动封送，互操作封送处理程序方法自变量。 但是，有时参数无法转换直接的方式。 在这些情况下，互操作程序集方法原型参数用于尽可能接近地匹配 COM 函数参数。 有关详细信息，请参阅[互操作封送处理](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  
   
 ## <a name="general-suggestions"></a>常规建议  
   
@@ -123,7 +123,7 @@ else
  调用此类型的接口的托管的方法应请求从 [out] 数组的第一个元素。 可以将此元素处理，就好像`retval`从相应的 COM 接口返回值。  
   
 ## <a name="see-also"></a>请参阅  
- [互操作封送处理](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [互操作封送处理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [互操作性疑难解答](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [互操作封送处理](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [互操作封送处理](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [互操作性疑难解答](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [托管的 VSPackage](../misc/managed-vspackages.md)

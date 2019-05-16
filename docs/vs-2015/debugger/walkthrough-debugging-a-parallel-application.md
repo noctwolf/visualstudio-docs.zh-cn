@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705307"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>演练：调试并行应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本演练演示如何使用“并行任务”和“并行堆栈”窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)或[并发运行时](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。 本演练提供了具有内置断点的代码示例。 本演练演示如何在代码中断后使用“并行任务”和“并行堆栈”窗口检查代码。  
+本演练演示如何使用“并行任务”和“并行堆栈”窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)或[并发运行时](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。 本演练提供了具有内置断点的代码示例。 本演练演示如何在代码中断后使用“并行任务”和“并行堆栈”窗口检查代码。  
   
  本演练介绍了以下任务：  
   
@@ -308,7 +308,7 @@ ms.locfileid: "60092966"
  [调试多线程应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [调试托管代码](../debugger/debugging-managed-code.md)   
- [并行编程](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [并发运行时](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [并行编程](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [并发运行时](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [使用并行堆栈窗口](../debugger/using-the-parallel-stacks-window.md)   
  [使用“任务”窗口](../debugger/using-the-tasks-window.md)

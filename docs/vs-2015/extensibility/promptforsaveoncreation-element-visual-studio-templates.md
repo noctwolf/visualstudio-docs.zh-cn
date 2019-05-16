@@ -12,12 +12,12 @@ ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934584"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675361"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58934584"
 ## <a name="remarks"></a>备注  
  `PromptForSaveOnCreation` 是可选元素。 默认值为 `false`。  
   
- 临时项目是指那些可以创建和修改而不在磁盘上保存该项目的内容。 有关详细信息，请参阅[NIB 临时项目](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
+ 临时项目是指那些可以创建和修改而不在磁盘上保存该项目的内容。 有关详细信息，请参阅[NIB 临时项目](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
   
 ## <a name="example"></a>示例  
  下面的示例设置的值`PromptForSaveOnCreation`等于`false`，它指定允许为创建为临时项目的项目。  

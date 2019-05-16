@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07cb1a790640d01448b6331986519bf1bef619e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695322"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "59651716"
 ## <a name="reference"></a>参考
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699)公开[XML 编辑器](http://go.microsoft.com/fwlink/?LinkId=228249)分析通过树[System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250)为任意 XML 文档。
 
- [XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供有关 XML 技术，包括 XML、 文档类型定义 (DTD)、 XML 架构定义语言 (XSD) 和 XSLT 的信息。
+ [XML 标准参考](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供有关 XML 技术，包括 XML、 文档类型定义 (DTD)、 XML 架构定义语言 (XSD) 和 XSLT 的信息。
 
  <xref:System.Xml?displayProperty=fullName> 介绍类和其他元素构成<xref:System.Xml>命名空间，并对每个项提供更多详细信息的链接。
 
  <xref:System.Xml.Serialization?displayProperty=fullName> 介绍类和其他元素构成<xref:System.Xml.Serialization>命名空间并提供指向有关每个项的更多详细信息。
 
 ## <a name="related-sections"></a>相关章节
- [XML 文档对象模型 (DOM)](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)描述如何<xref:System.Xml.XmlDocument>和及其关联的类符合 W3C 文档对象模型 (Core) 等级 1 和 2 级命名空间支持规范。
+ [XML 文档对象模型 (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54)描述如何<xref:System.Xml.XmlDocument>和及其关联的类符合 W3C 文档对象模型 (Core) 等级 1 和 2 级命名空间支持规范。
 
- [用 XmlReader 读取 XML](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)描述如何<xref:System.Xml.XmlReader>通过 XML 流提供对 XML 数据的非缓存、 正向唯一的只读访问。
+ [用 XmlReader 读取 XML](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182)描述如何<xref:System.Xml.XmlReader>通过 XML 流提供对 XML 数据的非缓存、 正向唯一的只读访问。
 
- [编写 XML 使用 XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)描述如何<xref:System.Xml.XmlWriter>提供非缓存、 只进的生成的 XML 流并帮助你生成符合 W3C 标准的 XML 文档的方法。
+ [编写 XML 使用 XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86)描述如何<xref:System.Xml.XmlWriter>提供非缓存、 只进的生成的 XML 流并帮助你生成符合 W3C 标准的 XML 文档的方法。
 
- [XSLT 转换](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)描述如何<xref:System.Xml.Xsl.XslCompiledTransform>类实现 XSLT 1.0 建议。
+ [XSLT 转换](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03)描述如何<xref:System.Xml.Xsl.XslCompiledTransform>类实现 XSLT 1.0 建议。
 
- [处理 XML 数据使用 XPath 数据模型](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)描述如何<xref:System.Xml.XPath.XPathNavigator>类可以处理 XML 数据存储在<xref:System.Xml.XPath.XPathDocument>或<xref:System.Xml.XmlDocument>对象。 <xref:System.Xml.XPath.XPathNavigator> 类以 XQuery 1.0 和 XPath 2.0 数据模型为基础，可用于导航和编辑 XML 数据。
+ [处理 XML 数据使用 XPath 数据模型](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081)描述如何<xref:System.Xml.XPath.XPathNavigator>类可以处理 XML 数据存储在<xref:System.Xml.XPath.XPathDocument>或<xref:System.Xml.XmlDocument>对象。 <xref:System.Xml.XPath.XPathNavigator> 类以 XQuery 1.0 和 XPath 2.0 数据模型为基础，可用于导航和编辑 XML 数据。
 
- [XML 架构对象模型 (SOM)](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)说明了用来创建和操作 XML 架构，通过提供的类<xref:System.Xml.Schema.XmlSchema>类来加载和编辑架构。
+ [XML 架构对象模型 (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd)说明了用来创建和操作 XML 架构，通过提供的类<xref:System.Xml.Schema.XmlSchema>类来加载和编辑架构。

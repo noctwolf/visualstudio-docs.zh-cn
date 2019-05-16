@@ -13,19 +13,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64878173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676290"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：为托管代码项目配置代码分析
+# <a name="how-to-configure-static-code-analysis-for-managed-code"></a>如何：配置托管代码的静态代码分析
 
 在 Visual Studio 中，您可以从列表中选择的代码分析[规则集](../code-quality/rule-set-reference.md)要应用于托管的代码项目。 默认情况下**Microsoft 最少量建议规则**选择规则集，但可以应用不同的规则，如果所需的设置。 可以将规则集应用到解决方案中的一个或多个项目。
 
-> [!TIP]
-> 有关如何配置 ASP.NET web 应用程序设置的规则的信息，请参阅[如何：为 ASP.NET web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
+有关如何配置 ASP.NET web 应用程序设置的规则的信息，请参阅[如何：为 ASP.NET web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
+
+> [!NOTE]
+> 本文适用于静态代码分析，而非[Roslyn 分析器](use-roslyn-analyzers.md)，这不在生成后运行代码分析。
 
 ## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要配置的规则设置为.NET Framework 项目
 

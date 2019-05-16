@@ -10,12 +10,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4100c045181f32e51abcc59116a69cad6cc33b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697249"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>为 VSPackage 选择安装目录
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ VSPackage 和及其支持文件必须位于用户的文件系统上。 位置取
 ## <a name="see-also"></a>请参阅  
  [共享和版本控制的 Vspackage 之间进行选择](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [管理 VSPackages](../../extensibility/managing-vspackages.md)   
- [托管的包注册](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [托管的包注册](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

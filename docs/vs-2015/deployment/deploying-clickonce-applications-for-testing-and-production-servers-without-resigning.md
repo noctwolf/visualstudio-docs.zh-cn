@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a65f2e39eac5889b287b082b4cad6842f44aa2e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675550"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>在不重新签名的情况下为测试服务器和生产服务器部署 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63422783"
 本主题讨论 ClickOnce 在.NET Framework 版本 3.5，而无需重新签名或更改 ClickOnce 使从多个网络位置的 ClickOnce 应用程序的部署清单中引入的新功能。  
   
 > [!NOTE]
-> 重新签名仍是用于部署新版本的应用程序的首选的方法。 只要有可能，使用重新签名的方法。 有关详细信息，请参阅 [Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
+> 重新签名仍是用于部署新版本的应用程序的首选的方法。 只要有可能，使用重新签名的方法。 有关详细信息，请参阅 [Mage.exe（清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
   
  第三方开发人员和 Isv 可以参加此功能，使其客户更新他们的应用程序更轻松。 在以下情况下，可以使用此功能：  
   
@@ -65,5 +65,5 @@ ms.locfileid: "63422783"
  有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练：手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)。  
   
 ## <a name="see-also"></a>请参阅  
- [Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)
+ [Mage.exe（清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe（图形化客户端中的清单生成和编辑工具）](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)

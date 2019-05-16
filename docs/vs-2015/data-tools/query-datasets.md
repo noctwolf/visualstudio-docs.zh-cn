@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425376"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692581"
 ---
 # <a name="query-datasets"></a>查询数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-若要搜索在数据集中的特定记录，请使用 DataTable FindBy 方法，编写您自己的 foreach 循环遍历表的行集合，或使用[LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。 LINQ to DataSet。  
+若要搜索在数据集中的特定记录，请使用 DataTable FindBy 方法，编写您自己的 foreach 循环遍历表的行集合，或使用[LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。 LINQ to DataSet。  
   
 ## <a name="dataset-case-sensitivity"></a>数据集的区分大小写  
  在一个数据集、 表和列的名称是默认情况下不区分大小写，即，表中一个称为"客户"数据集可以也称为"customers。 这与在多个数据库，包括 SQL 服务器的 SQL Server 中的命名约定相匹配，则默认行为是，不能只是大小写区分的数据元素的名称。  
@@ -65,7 +65,7 @@ ms.locfileid: "63425376"
   
  可以使用<xref:System.Data.DataRelation>要通过调用来查找相关的记录对象<xref:System.Data.DataRow.GetChildRows%2A>方法的<xref:System.Data.DataRow>父表中。此方法返回的相关的子记录的数组。 也可以调用<xref:System.Data.DataRow.GetParentRow%2A>方法的<xref:System.Data.DataRow>子表中。此方法返回单个<xref:System.Data.DataRow>从父表。  
   
- 此页提供了示例使用类型化数据集。 有关在非类型化数据集中的关系中导航的信息，请参阅[导航 Datarelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)。  
+ 此页提供了示例使用类型化数据集。 有关在非类型化数据集中的关系中导航的信息，请参阅[导航 Datarelation](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e)。  
   
 > [!NOTE]
 > 如果您正在使用 Windows 窗体应用程序和使用数据绑定功能显示数据，设计器生成的表单可能会提供足够的功能为应用程序。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。  

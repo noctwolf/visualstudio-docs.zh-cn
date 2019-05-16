@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ab2b6981094ffbdfcd6544198179924b4e1c53a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac2ce4f823d82d8a0d8569e15c4ba8920d91d36c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686830"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：验证 IIS 属性设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63444779"
 使用 IIS 管理工具，可以设置 Web 应用程序的属性。 这些属性必须正确设置，应用程序才能运行，所以，验证这些设置通常是疑难解答的必需步骤。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>检查 Web 应用程序的 IIS 设置  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63444779"
   
     3. 单击“确定”以关闭“身份验证方法”对话框。  
   
-5. 对于 ATL Server 应用程序，请验证 DEBUG 谓词是否与您的 ISAPI 扩展相关联。 有关详细信息，请参阅[如何：将 DEBUG 谓词与扩展相关联](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e)。  
+5. 对于 ATL Server 应用程序，请验证 DEBUG 谓词是否与您的 ISAPI 扩展相关联。 有关详细信息，请参阅[如何：将 DEBUG 谓词与扩展相关联](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e)。  
   
 6. 对于 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序，请确保应用程序的虚拟文件夹中具有在“Internet Information Services (IIS) 管理器”、“Internet 服务管理器”或“Internet Information Services”中设置的应用程序名称。  
   

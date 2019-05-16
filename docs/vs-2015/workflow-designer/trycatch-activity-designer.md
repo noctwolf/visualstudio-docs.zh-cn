@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697078"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
 **TryCatch**活动设计器用于创建和配置<xref:System.Activities.Statements.TryCatch>活动。  
   
 ## <a name="the-trycatch-activity"></a>TryCatch 活动  
- <xref:System.Activities.Statements.TryCatch>活动包含<xref:System.Activities.Statements.TryCatch.Try%2A>活动、 一系列**捕获\<TException >** 和<xref:System.Activities.Statements.TryCatch.Finally%2A>活动。 一个<xref:System.Activities.Statements.Catch%601>类型的**TException**包含<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>和<xref:System.Activities.Statements.Catch%601.Action%2A>。 将它们结合使用可实现典型的基于异常的错误处理机制。 <xref:System.Activities.Statements.TryCatch> 活动尝试执行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动。 如果<xref:System.Activities.Statements.TryCatch.Try%2A>活动会引发任何异常<xref:System.Activities.Statements.TryCatch>活动使用其**捕获 < TException\>** 集合来匹配该异常。 如果没有匹配项，则<xref:System.Activities.Statements.Catch%601.Action%2A>的相应**捕获\<TException >** 作为错误处理异常的逻辑的执行。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 节中的活动已成功完成或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活动已成功完成，则 <xref:System.Activities.Statements.TryCatch> 活动执行其 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][异常](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136)。  
+ <xref:System.Activities.Statements.TryCatch>活动包含<xref:System.Activities.Statements.TryCatch.Try%2A>活动、 一系列**捕获\<TException >** 和<xref:System.Activities.Statements.TryCatch.Finally%2A>活动。 一个<xref:System.Activities.Statements.Catch%601>类型的**TException**包含<xref:System.Activities.Statements.Catch%601.ExceptionType%2A>和<xref:System.Activities.Statements.Catch%601.Action%2A>。 将它们结合使用可实现典型的基于异常的错误处理机制。 <xref:System.Activities.Statements.TryCatch> 活动尝试执行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动。 如果<xref:System.Activities.Statements.TryCatch.Try%2A>活动会引发任何异常<xref:System.Activities.Statements.TryCatch>活动使用其**捕获 < TException\>** 集合来匹配该异常。 如果没有匹配项，则<xref:System.Activities.Statements.Catch%601.Action%2A>的相应**捕获\<TException >** 作为错误处理异常的逻辑的执行。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 节中的活动已成功完成或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活动已成功完成，则 <xref:System.Activities.Statements.TryCatch> 活动执行其 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][异常](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136)。  
   
 ### <a name="using-the-trycatch-activity-designer"></a>使用 TryCatch 活动设计器  
  **TryCatch**活动设计器可在**错误处理**类别**工具箱**，这通过单击来访问**工具箱**选项卡的左侧[!INCLUDE[wfd2](../includes/wfd2-md.md)](或者，选择**工具栏**从**视图**菜单中或 CTLR + ALT + X。)  

@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695509"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ ms.locfileid: "63430131"
   
    2. 选择**引用**选项卡**属性页**对话框，并确保所有路径都是否正确。 或者，可以使用**对象浏览器**来查找被引用对象。  
   
-        对于托管代码中，你可以使用[Fuslogvw.exe （程序集绑定日志查看器）](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)显示失败的程序集加载的详细信息。  
+        对于托管代码中，你可以使用[Fuslogvw.exe （程序集绑定日志查看器）](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)显示失败的程序集加载的详细信息。  
   
 2. 对于非托管代码中，找到的 VSPackage 中 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 注册表节点：  
   

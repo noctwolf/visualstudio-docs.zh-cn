@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 068475e24e77969886afbfc806cb2e85c1f368dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 461af4c3c8e811c989bc296b6f8f55f398bc5bd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667928"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674514"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>选项，文本编辑器，基本 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59667928"
 在“选项”（“工具”菜单）对话框的“文本编辑器”文件夹下的“Basic”文件夹中，“VB 专用”属性页包含以下属性：  
   
  **自动插入最终构造**  
- 键入一个过程声明的第一行（如 `Sub Main—`）并按 Enter 时，文本编辑器会添加一个匹配的 `End Sub` 行。 同样，如果添加一个 [For](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) 循环，文本编辑器会添加一个匹配的 `Next` 语句。 选定此选项后，代码编辑器会自动添加最终构造。  
+ 键入一个过程声明的第一行（如 `Sub Main—`）并按 Enter 时，文本编辑器会添加一个匹配的 `End Sub` 行。 同样，如果添加一个 [For](https://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9) 循环，文本编辑器会添加一个匹配的 `Next` 语句。 选定此选项后，代码编辑器会自动添加最终构造。  
   
  **整齐排列代码（重新设置格式）**  
  文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：  

@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088140"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685333"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>选择共享的 VSPackage 和带有版本的 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60088140"
   
     - 程序 VSPackage 以适应的版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]正在其中运行。 然后，如果较新的服务的查询失败，你的 VSPackage 可以提供的较旧版本中支持的其他服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-- 适当地注册你的 VSPackage。 有关详细信息，请参阅[VSPackage 注册](../extensibility/internals/vspackage-registration.md)并[托管 VSPackage 注册](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
+- 适当地注册你的 VSPackage。 有关详细信息，请参阅[VSPackage 注册](../extensibility/internals/vspackage-registration.md)并[托管 VSPackage 注册](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
   
 - 适当地注册文件扩展名。 有关详细信息，请参阅[注册的文件扩展名的并行部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。  
   

@@ -12,12 +12,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700125"
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58930715"
   
 - 每个项目必须有一个模板文件或向导来初始化新的项目文件，当用户创建新的项目通过[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]UI。 例如，[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]模板初始化什么最终成为.vcproj 文件。  
   
-  下图显示了主要接口、 服务和对象组成的典型项目中实现。 应用程序帮助器，HierUtil7，可用于创建基础对象和其他编程的样本。 HierUtil7 应用程序帮助程序的详细信息，请参阅[不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+  下图显示了主要接口、 服务和对象组成的典型项目中实现。 应用程序帮助器，HierUtil7，可用于创建基础对象和其他编程的样本。 HierUtil7 应用程序帮助程序的详细信息，请参阅[不在生成中：使用 HierUtil7 项目类来实现一种项目类型 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
   ![Visual Studio 项目模型图](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   项目模型  
@@ -45,7 +45,7 @@ ms.locfileid: "58930715"
   
 ## <a name="see-also"></a>请参阅  
  [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [不在生成中：使用 HierUtil7 项目类来实现一种项目类型 (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [项目模型核心组件](../../extensibility/internals/project-model-core-components.md)   
  [使用项目工厂创建的项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [如何：获取服务](../../extensibility/how-to-get-a-service.md)   

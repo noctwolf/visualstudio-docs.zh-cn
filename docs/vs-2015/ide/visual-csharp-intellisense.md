@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698210"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ ms.locfileid: "63443165"
   C# 中的完成列表也足够智能，可筛选出不相关的标记，并可基于上下文预先选择标记。 有关详细信息，请参阅 [C# 中经过筛选的完成列表](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中预选择的完成列表项](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
 ### <a name="CodeSnippets"></a> 完成列表中的代码片段  
- 在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的 [Shortcut 元素（Intellisense 代码片段）](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)出现在完成列表中。  若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。  
+ 在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的 [Shortcut 元素（Intellisense 代码片段）](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa)出现在完成列表中。  若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。  
   
 ### <a name="Keywords"></a> 完成列表中的语言关键字  
- 在 Visual C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
+ 在 Visual C# 中，完成列表还包括语言关键字。 若要了解 C# 语言关键字，请参阅 [C# 关键字](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad)。  
   
 ### <a name="ExtensionMethods"></a> 完成列表中的扩展方法  
  在 Visual C# 中，完成列表包含位于作用域的扩展方法。  
@@ -81,7 +81,7 @@ ms.locfileid: "63443165"
  IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/using-intellisense.md)弹出框中选择的成员。 下次使用成员列表时，将在顶部显示最近使用过的成员。 在 IDE 中的每个会话之间，最近使用过的成员的历史记录将被清除。  
   
 ## <a name="override"></a>override  
- 键入 [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)，然后按空格键后，IntelliSense 将在弹出的列表框中显示可以重写的全部有效基类成员。 在 `override` 之后键入方法的返回类型将提示 IntelliSense 仅显示返回相同类型的方法。 如果 IntelliSense 找不到任何匹配项，它将显示全部基类成员。  
+ 键入 [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8)，然后按空格键后，IntelliSense 将在弹出的列表框中显示可以重写的全部有效基类成员。 在 `override` 之后键入方法的返回类型将提示 IntelliSense 仅显示返回相同类型的方法。 如果 IntelliSense 找不到任何匹配项，它将显示全部基类成员。  
   
 ## <a name="automatic-code-generation"></a>自动代码生成  
   
@@ -102,7 +102,7 @@ ms.locfileid: "63443165"
  若要查看 Visual Studio IDE 中的可用选项，请在“编辑”菜单上，指向“IntelliSense”，然后指向“组织 Using”。 IDE 提供了以下选项来组织和删除`usings`指令：  
   
 ### <a name="implement-interface"></a>实现接口  
- IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时实现[接口](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)。 通常情况下，若要正确实现接口，必须为类中接口的每个成员创建一个方法声明。 通过使用 IntelliSense，在类声明中键入接口名称后，将显示一个智能标记。 智能标记为你提供通过使用显式或隐式命名自动实现接口的选项。 在显式命名下，方法声明具有接口名称；在隐式命名下，方法声明不表示其所属的接口。 只有通过接口实例（而不是类实例）才能访问显式命名的接口方法。 有关详细信息，请参阅[显式接口实现](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)。  
+ IntelliSense 提供了一个选项，可帮助你在使用代码编辑器时实现[接口](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba)。 通常情况下，若要正确实现接口，必须为类中接口的每个成员创建一个方法声明。 通过使用 IntelliSense，在类声明中键入接口名称后，将显示一个智能标记。 智能标记为你提供通过使用显式或隐式命名自动实现接口的选项。 在显式命名下，方法声明具有接口名称；在隐式命名下，方法声明不表示其所属的接口。 只有通过接口实例（而不是类实例）才能访问显式命名的接口方法。 有关详细信息，请参阅[显式接口实现](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2)。  
   
  实现接口将生成满足接口所需的最小数量的方法存根。 如果基类实现部分接口，则不会重新生成这些存根。  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701709"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>对 UML 扩展运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ namespace UnitTests
       // Find the ModelingProject and IModelStore:  
       foreach (Project project in ModelSolution.Projects)  
       {  
-        // http://msdn.microsoft.com/library/ee791691.aspx  
+        // https://msdn.microsoft.com/library/ee791691.aspx  
         ModelingProject = project as IModelingProject;  
         if (ModelingProject != null)  
         {  
@@ -382,6 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  我们很少会建议采用此方法。 旧版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供了一个实用工具，可用于自动为每个私有方法创建一个访问器方法。 虽然此方法很方便，但我们的经验表明，此方法会生成与正在测试的应用程序的内部结构紧密耦合的单元测试。 当需求或体系结构发生更改时，这会产生额外的工作量，因为测试必须与实现一起更改。 此外，实现设计中的任何错误假设也会带入到测试中，使得测试无法发现错误。  
   
 ## <a name="see-also"></a>请参阅  
- [单元测试的剖析](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [单元测试的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [UML – 使用文本快速输入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

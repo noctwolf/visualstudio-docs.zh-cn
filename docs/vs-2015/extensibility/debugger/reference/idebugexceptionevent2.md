@@ -12,12 +12,12 @@ ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b11a6a9f3474b2cc7b6331b56fa8fd7dd2d7301
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f364b6aa622bf9c7481d61e7646e955cebe00933
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930659"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695405"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugExceptionEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>实施者的说明  
- DE 实现此接口向报表中正在调试的程序出现异常。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)访问`IDebugEvent2`接口。  
+ DE 实现此接口向报表中正在调试的程序出现异常。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)访问`IDebugEvent2`接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  DE 创建并发送此事件对象报告异常。 使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 它附加到正在调试的程序时提供的回调函数。  

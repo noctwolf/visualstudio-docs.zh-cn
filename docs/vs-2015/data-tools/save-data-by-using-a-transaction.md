@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93c512bafd8b15682ed081c7778660ef52fd1f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692505"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用事务保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63425085"
 > [!NOTE]
 > <xref:System.Transactions>在 Windows 2000 或更高版本支持命名空间。  
   
- 若要实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象中`using`语句。 (有关详细信息，请参阅[Using 语句](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)，并[using 语句](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3)。)在中运行的代码`using`语句参与事务。  
+ 若要实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象中`using`语句。 (有关详细信息，请参阅[Using 语句](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1)，并[using 语句](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3)。)在中运行的代码`using`语句参与事务。  
   
  若要提交事务，调用<xref:System.Transactions.TransactionScope.Complete%2A>方法中使用的最后一个语句块。  
   

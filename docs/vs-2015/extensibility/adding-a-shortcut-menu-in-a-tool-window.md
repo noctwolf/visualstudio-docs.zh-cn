@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093730"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689855"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>将快捷菜单添加到工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60093730"
   
  本演练演示如何创建快捷菜单为 Visual Studio 菜单中，通过声明.vsct 文件中的菜单项，然后使用托管包框架中定义的工具窗口的类中实现它们。 此方法方便了对 Visual Studio 命令、 UI 元素和自动化对象模型的访问。  
   
- 或者，如果快捷菜单将不访问 Visual Studio 功能，则可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>中的用户控件的 XAML 元素的属性。 有关详细信息，请参阅[ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)。  
+ 或者，如果快捷菜单将不访问 Visual Studio 功能，则可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>中的用户控件的 XAML 元素的属性。 有关详细信息，请参阅[ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

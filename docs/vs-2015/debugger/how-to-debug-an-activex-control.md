@@ -25,18 +25,18 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3db776586a74fc1063a0553bb1dcf9ac62537965
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444804"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704455"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：调试 ActiveX 控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  若要调试 ActiveX 控件，必须指定一个容器（可执行文件）用于运行控件。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "63444804"
      如果在“项目属性页”对话框中没有指定容器，则可在开始调试时指定容器。 选择执行命令开始调试时，将出现[调试会话的可执行文件](../debugger/executable-for-debugging-session-dialog-box.md)对话框。 在对话框中指定容器的路径名。  
   
 ## <a name="see-also"></a>请参阅  
- [ActiveX 控件](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [使用测试容器测试属性和事件](http://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [ActiveX 控件](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
+ [使用测试容器测试属性和事件](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [调试 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)   
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)

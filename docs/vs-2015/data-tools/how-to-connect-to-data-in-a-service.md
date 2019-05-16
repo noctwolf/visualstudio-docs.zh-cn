@@ -22,19 +22,19 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22a1a991a950ba8e1a7c4c39299616641797630c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684741"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过运行从服务返回的数据将应用程序连接[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然后选择**服务**上**选择数据源类型**页。  
+通过运行从服务返回的数据将应用程序连接[数据源配置向导](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然后选择**服务**上**选择数据源类型**页。  
   
- 在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。  
+ 在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。  
   
 > [!NOTE]
 > “数据源”窗口中显示的项取决于该服务返回的信息。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，则显示任何项中**数据源窗口**完成该向导时。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。  

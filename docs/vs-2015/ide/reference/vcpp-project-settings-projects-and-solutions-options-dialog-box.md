@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 65115be12d00f335272c65083be4a323a604b646
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689351"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -78,5 +78,5 @@ ms.locfileid: "60082429"
  将“解决方案资源管理器”配置为显示项目中的文件和磁盘上项目文件夹中的文件。  
   
 ## <a name="see-also"></a>请参阅  
- [生成 C/C++ 程序](http://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
- [C/C++ 生成参考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+ [生成 C/C++ 程序](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)   
+ [C/C++ 生成参考](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)

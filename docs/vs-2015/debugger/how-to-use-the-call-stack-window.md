@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65dafa09035e937e9ee48005c4f29c441d983c37
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84c0bfead1633da13b4284cad04ace674045b057
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430301"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697473"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>如何：使用调用堆栈窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63430301"
  可以使用快捷菜单选择查看线程之间的调用。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>以中断模式或运行模式显示“调用堆栈”窗口  
   
@@ -139,7 +139,7 @@ ms.locfileid: "63430301"
   
 ## <a name="see-also"></a>请参阅  
  [混合的代码与调用堆栈窗口中缺少的信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [如何：更改调试器 Windows 的数字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
+ [如何：更改调试器 Windows 的数字格式](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)   
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
  [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [使用断点](../debugger/using-breakpoints.md)

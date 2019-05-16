@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442455"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681441"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ ms.locfileid: "63442455"
  **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [创建样式](https://www.youtube.com/watch?v=W8YdXDPeKdc)。  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>将样式或模板应用于控件  
- 在[对象和时间线](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中右键单击某个对象，选择“编辑模板”，然后选择“应用资源”。  
+ 在[对象和时间线](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)面板中右键单击某个对象，选择“编辑模板”，然后选择“应用资源”。  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>还原控件的默认样式或模板  
- 选择控件，在[属性面板](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)中，找到“样式”或“模板”属性。 然后，单击“高级选项”![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，再在快捷菜单上单击“重置”。  
+ 选择控件，在[属性面板](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57)中，找到“样式”或“模板”属性。 然后，单击“高级选项”![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb")，再在快捷菜单上单击“重置”。  
   
 ## <a name="Visual"></a> 可视状态：根据控件状态更改其外观  
  控件可以基于用户交互而具有不同的视觉外观。 例如，可以在用户单击时使按钮变为绿色，也可以运行动画。 可使用过渡缩短或延长可视状态之间的时间。  

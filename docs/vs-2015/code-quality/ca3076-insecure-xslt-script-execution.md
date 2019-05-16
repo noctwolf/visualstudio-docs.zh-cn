@@ -8,12 +8,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 903074787169a8889db89a85d65129c1b97c13e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680723"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076:不安全的 XSLT 脚本执行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ ms.locfileid: "60096954"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 如果在 .NET 应用程序中不安全地执行 [可扩展样式表语言转换 (XSLT)](https://support.microsoft.com/kb/313997) ，处理器可能会 [解析不受信任的 URI 引用](http://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) ，这种引用会把敏感信息泄露给攻击者，从而导致拒绝服务和跨站点攻击。
+ 如果在 .NET 应用程序中不安全地执行 [可扩展样式表语言转换 (XSLT)](https://support.microsoft.com/kb/313997) ，处理器可能会 [解析不受信任的 URI 引用](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) ，这种引用会把敏感信息泄露给攻击者，从而导致拒绝服务和跨站点攻击。
 
 ## <a name="rule-description"></a>规则说明
- [XSLT](http://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) 是万维网联合会 (W3C) 标准，用于转换 XML 数据。 XSLT 通常用于编写样式表，以将 XML 数据转换为其他格式，如 HTML、固定长度的文本、以逗号分隔的文本或其他 XML 格式。 尽管默认情况下禁止，你仍可以选择为项目启用该功能。
+ [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) 是万维网联合会 (W3C) 标准，用于转换 XML 数据。 XSLT 通常用于编写样式表，以将 XML 数据转换为其他格式，如 HTML、固定长度的文本、以逗号分隔的文本或其他 XML 格式。 尽管默认情况下禁止，你仍可以选择为项目启用该功能。
 
  若要确保不会公开攻击面，此规则将触发每当 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全组合实例<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，它允许处理恶意脚本。
 

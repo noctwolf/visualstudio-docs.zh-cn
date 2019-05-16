@@ -12,12 +12,12 @@ ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9c94b109ae29e40ead784cea565ad16c2a2b89d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac993e3a4676f1c84a193ddbf6e9a3b5bc8fa235
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936728"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676506"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugEnumField : IDebugContainerField
  符号提供程序实现此接口来表示一个枚举。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要获取此接口从[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)返回`FIELD_TYPE_ENUM`。  
+ 使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)若要获取此接口从[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)返回`FIELD_TYPE_ENUM`。  
   
 ## <a name="methods-in-vtable-order"></a>VTable 顺序中的方法  
  除了上的方法`IDebugField`和`IDebugContainerField`接口，此接口实现以下方法：  

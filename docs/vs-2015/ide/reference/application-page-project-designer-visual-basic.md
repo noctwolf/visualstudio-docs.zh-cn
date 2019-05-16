@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688098"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "63433751"
  以下选项用于配置应用程序的常规设置。  
   
  **程序集名称**  
- 指定将包含程序集清单的输出文件的名称。 如果更改此属性，“输出名称”属性也将更改。 也可以使用 [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) 在命令提示符下进行此更改。 有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。  
+ 指定将包含程序集清单的输出文件的名称。 如果更改此属性，“输出名称”属性也将更改。 也可以使用 [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae) 在命令提示符下进行此更改。 有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。  
   
  **根命名空间**  
  指定项目中所有文件的基命名空间。 例如，如果将“根命名空间”设置为 `Project1`，并且在代码中的任何命名空间外有 `Class1`，则其命名空间为 `Project1.Class1`。 如果代码中的命名空间 `Class2` 内有 `Order`，则其命名空间为 `Project1.Order.Class2`。  
@@ -43,11 +43,11 @@ ms.locfileid: "63433751"
  如果清除“根命名空间”，则可以在代码中指定项目的命名空间结构。  
   
 > [!NOTE]
-> 如果在 [Namespace 语句](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)中使用 Global 关键字，则可以在项目的根命名空间外定义命名空间。 如果清除“根命名空间”，无需在 `Namespace` 语句中使用 `Global` 关键字，`Global` 便可成为顶级命名空间。 有关详细信息，请参阅 [Visual Basic 中的命名空间](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)中的“Namespace 语句中的 Global 关键字”。  
+> 如果在 [Namespace 语句](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)中使用 Global 关键字，则可以在项目的根命名空间外定义命名空间。 如果清除“根命名空间”，无需在 `Namespace` 语句中使用 `Global` 关键字，`Global` 便可成为顶级命名空间。 有关详细信息，请参阅 [Visual Basic 中的命名空间](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88)中的“Namespace 语句中的 Global 关键字”。  
   
- 有关如何在代码中创建命名空间的信息，请参阅 [Namespace 语句](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)。  
+ 有关如何在代码中创建命名空间的信息，请参阅 [Namespace 语句](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2)。  
   
- 有关根命名空间属性的详细信息，请参阅 [/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783)。  
+ 有关根命名空间属性的详细信息，请参阅 [/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783)。  
   
  有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.RootNamespace%2A>。  
   
@@ -71,10 +71,10 @@ ms.locfileid: "63433751"
 > [!NOTE]
 > Windows 运行时可以投影类型，使其在任何一种使用它们的语言中看起来都像本机对象一样。 例如，与 Windows 运行时交互的 JavaScript 应用程序将其用作一组 JavaScript 对象，而 C# 应用程序则将库用作一个 .NET 对象集合。 通过将项目输出打包为 WinMD 文件，可以充分利用 Windows 运行时所用的技术。  
   
- 有关“应用程序类型”属性的详细信息，请参阅 [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)。 有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.OutputType%2A>。  
+ 有关“应用程序类型”属性的详细信息，请参阅 [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c)。 有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.OutputType%2A>。  
   
  **图标**  
- 设置要用作程序图标的 .ico 文件。 选择“\<浏览...>”以浏览现有图形。 有关详细信息，请参阅 [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92)（或 [/win32icon（C# 编译器选项）](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)）。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。  
+ 设置要用作程序图标的 .ico 文件。 选择“\<浏览...>”以浏览现有图形。 有关详细信息，请参阅 [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92)（或 [/win32icon（C# 编译器选项）](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138)）。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。  
   
  **启动窗体/启动对象/启动 URI**  
  指定应用程序的启动窗体或入口点。  
@@ -85,7 +85,7 @@ ms.locfileid: "63433751"
   
  如果“启用应用程序框架”处于清除状态，则此列表将变为“启动对象”，并且同时显示窗体和带有 `Sub Main` 的类或模块。  
   
- “启动对象”定义应用程序加载时要调用的入口点。 此选项通常设置为应用程序中的主窗体或当应用程序启动时应运行的 `Sub Main` 过程。 类库没有入口点，因此它们为此属性提供的唯一选项是“(无)”。 有关详细信息，请参阅 [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。  
+ “启动对象”定义应用程序加载时要调用的入口点。 此选项通常设置为应用程序中的主窗体或当应用程序启动时应运行的 `Sub Main` 过程。 类库没有入口点，因此它们为此属性提供的唯一选项是“(无)”。 有关详细信息，请参阅 [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0)。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。  
   
  **程序集信息**  
  单击此按钮以显示[“程序集信息”对话框](../../ide/reference/assembly-information-dialog-box.md)。  
@@ -110,7 +110,7 @@ ms.locfileid: "63433751"
  “Windows 应用程序框架属性”节提供以下设置。 仅当“启用应用程序框架”复选框处于选中状态时，这些选项才可用。 本节后面的一节介绍了 Windows Presentation Foundation (WPF) 应用程序的“Windows 应用程序框架属性”设置。  
   
  **启用 XP 视觉样式**  
- 启用或禁用 Windows XP 视觉样式，也称为 *Windows XP 主题*。 Windows XP 视觉样式可启用一些控件，例如带有圆角和动态颜色的控件。 默认为已启用。 有关 Windows XP 视觉样式的详细信息，请参阅 [Windows XP 功能和 Windows 窗体控件](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)。  
+ 启用或禁用 Windows XP 视觉样式，也称为 *Windows XP 主题*。 Windows XP 视觉样式可启用一些控件，例如带有圆角和动态颜色的控件。 默认为已启用。 有关 Windows XP 视觉样式的详细信息，请参阅 [Windows XP 功能和 Windows 窗体控件](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)。  
   
  **生成单个实例应用程序**  
  选中此复选框可防止用户运行应用程序的多个实例。 此复选框的默认设置为清除状态。 此设置允许运行应用程序的多个实例。  
@@ -159,4 +159,4 @@ ms.locfileid: "63433751"
  <xref:System.Windows.Application> 对象在应用程序状态出现某些变化时（例如，在应用程序启动或关闭时）引发事件。 有关此类公开的事件的完整列表，请参阅 <xref:System.Windows.Application>。 这些事件在 `Application` 分部类的用户代码节中进行处理。  
   
 ## <a name="see-also"></a>请参阅  
-[管理应用程序属性](../../ide/application-properties.md) [在 Office 解决方案中编写代码](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[管理应用程序属性](../../ide/application-properties.md) [在 Office 解决方案中编写代码](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

@@ -13,12 +13,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a33e1d4f2ddecdb467929edaae9ba184bfae920
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fb723097a3b61508d9f9023d3a2ea1dcdb5f8f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763228"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701422"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "54763228"
 ## <a name="examples"></a>示例  
  下表包含命令行参数示例，并对每个参数的作用进行了说明。  
   
-|参数|说明​​|  
+|参数|描述|  
 |--------------|-----------------|  
 |`vbc /warnaserror`|指定应将所有警告都视为错误。|  
 |`vbc /warnaserror:42024`|指定应将 42024 警告视为错误。|  
@@ -67,63 +67,63 @@ ms.locfileid: "54763228"
 ### <a name="implicit-conversion-warning"></a>隐式转换警告  
  针对隐式转换的实例生成。 使用 `&` 运算符时，这些实例不包含从内部数值类型到字符串的隐式转换。 新项目的默认值为 Off。  
   
- ID：42016  
+ ID:42016  
   
 ### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>后期绑定方法调用和重载决策警告  
  针对后期绑定的实例生成。 新项目的默认值为 Off。  
   
- ID：42017  
+ ID:42017  
   
 ### <a name="operands-of-type-object-warnings"></a>Object 类型的操作数警告  
  当出现针对 `Object` 的错误的 `Option Strict On` 类型的操作数时生成。 新项目的默认值为 On。  
   
- ID：42018 和 42019  
+ ID:42018 和 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>声明需要“As”子句警告  
  当变量、函数或属性声明缺少 `As` 子句会产生针对 `Option Strict On` 的错误时生成。 假定未指定类型的变量属于类型 `Object`。 新项目的默认值为 On。  
   
- ID：42020（变量声明）、42021（函数声明）和 42022（属性声明）。  
+ ID:42020（变量声明）、42021（函数声明）和 42022（属性声明）。  
   
 ### <a name="possible-null-reference-exception-warnings"></a>可能的 Null 引用异常警告  
  当尚未向变量赋值就使用该变量时生成。 新项目的默认值为 On。  
   
- ID：42104, 42030  
+ ID:42104、42030  
   
 ### <a name="unused-local-variable-warning"></a>未使用的局部变量警告  
  当声明了局部变量但从未引用该变量时生成。 默认值为 On。  
   
- ID：42024  
+ ID:42024  
   
 ### <a name="access-of-shared-member-through-instance-variable-warning"></a>通过实例变量访问共享成员警告  
  通过可能有副作用的实例访问共享成员时，或者通过不是表达式右侧或正作为参数传入的实例变量访问共享成员时生成。 新项目的默认值为 On。  
   
- ID：42025  
+ ID:42025  
   
 ### <a name="recursive-operator-or-property-access-warnings"></a>递归运算符或属性访问警告  
  当例程主体使用定义它的同一运算符或属性时生成。 新项目的默认值为 On。  
   
- ID：42004（运算符）、42026（属性）  
+ ID:42004（运算符）、42026（属性）  
   
 ### <a name="function-or-operator-without-return-value-warning"></a>没有返回值的函数或运算符警告  
  当函数或运算符未指定返回值时生成。 这包括忽略与函数同名的隐式局部变量的 `Set`。 新项目的默认值为 On。  
   
- ID：42105（函数）、42016（运算符）  
+ ID:42105（函数）、42016（运算符）  
   
 ### <a name="overloads-modifier-used-in-a-module-warning"></a>在模块中使用重载修饰符警告  
  在 `Module` 中使用 `Overloads` 时生成。 新项目的默认值为 On。  
   
- ID：42028  
+ ID:42028  
   
 ### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>重复或重叠的 Catch 块警告  
  当因某个 `Catch` 块与其他已定义的 `Catch` 块相关联而从未到达该块时生成。 新项目的默认值为 On。  
   
- ID：42029、42031  
+ ID:42029、42031  
   
 ## <a name="see-also"></a>请参阅  
  [“异常情况助手”对话框](../debugger/exception-assistant-dialog-box.md)   
- [错误类型](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
- [Try...Catch...Finally 语句](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
- [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
- [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
+ [错误类型](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Try...Catch...Finally 语句](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
+ [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [“项目设计器”->“编译”页 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [默认情况下处于关闭状态的编译器警告](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
+ [默认情况下处于关闭状态的编译器警告](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

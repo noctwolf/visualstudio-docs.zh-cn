@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435145"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695368"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>如何：定目标到 .NET Framework 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63435145"
 本文档说明如何在创建项目时以 .NET Framework 版本为目标，以及如何更改现有 Visual Basic、Visual C# 或 Visual F# 项目中的目标版本。  
   
 > [!IMPORTANT]
-> 有关如何更改 C++ 项目的目标版本的信息，请参阅[如何：修改目标框架和平台工具集](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
+> 有关如何更改 C++ 项目的目标版本的信息，请参阅[如何：修改目标框架和平台工具集](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
   
  **在本主题中**  
   
@@ -62,7 +62,7 @@ ms.locfileid: "63435145"
      ![Visual Studio 解决方案资源管理器属性](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > 有关如何更改 C++ 项目的目标版本的信息，请参阅[如何：修改目标框架和平台工具集](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
+    > 有关如何更改 C++ 项目的目标版本的信息，请参阅[如何：修改目标框架和平台工具集](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)。  
   
 2. 在“属性”窗口的左列中，选择“应用程序”选项卡。  
   
@@ -82,9 +82,9 @@ ms.locfileid: "63435145"
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 多目标概述](../ide/visual-studio-multi-targeting-overview.md)   
- [面向 ASP.NET Web 项目的 .NET Framework 多目标](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [面向 ASP.NET Web 项目的 .NET Framework 多目标](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [应用程序页、项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [配置项目](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [如何：修改目标框架和平台工具集](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [配置项目](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [如何：修改目标框架和平台工具集](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

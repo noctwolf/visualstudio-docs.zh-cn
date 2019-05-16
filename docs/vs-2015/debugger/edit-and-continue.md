@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698732"
 ---
 # <a name="edit-and-continue"></a>编辑并继续
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "58931496"
   
  本节包括下列主题：  
   
- [如何：显式应用代码更改](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [如何：显式应用代码更改](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [如何：启用和禁用“编辑并继续”](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [如何：停止代码更改](../debugger/how-to-stop-code-changes.md)  
   
- [执行点](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [执行点](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ ms.locfileid: "58931496"
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   
- [“选项”对话框 ->“调试”->“编辑并继续”](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [调试器基础知识](../debugger/debugger-basics.md)

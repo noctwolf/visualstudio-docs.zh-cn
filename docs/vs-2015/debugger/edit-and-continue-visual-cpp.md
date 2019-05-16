@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697385"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "62428457"
   
  Update 1 其他的改进功能包括一个新型可取消的等待对话框，以及文件不支持“编辑并继续”时发出的通知。 有关 Update 1 改进功能的详细信息，请参阅[改进C++编辑并继续在 Visual Studio 2015 Update 1 中](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx)。  
   
- Visual Studio 2013 Update 3 中引入的编译器选项 [/Zo（增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 向 .pdb （符号） 文件中添加了其他信息，用于未使用 [/Od（禁用（调试））](http://msdn.microsoft.com/library/aafb762y.aspx)选项编译的二进制文件。  
+ Visual Studio 2013 Update 3 中引入的编译器选项 [/Zo（增强优化调试）](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) 向 .pdb （符号） 文件中添加了其他信息，用于未使用 [/Od（禁用（调试））](https://msdn.microsoft.com/library/aafb762y.aspx)选项编译的二进制文件。  
   
  **/Zo** 禁用 Edit and Continue。 请参阅[如何：调试优化的代码](../debugger/how-to-debug-optimized-code.md)。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "62428457"
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重置执行点  
  在“编辑并继续”应用更改时，一些代码更改会使执行点移动到新的位置。 “编辑并继续”尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  
   
- 在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来提示此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用**设置下一语句**命令。 有关详细信息，请参阅[设置下一个要执行的语句](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
+ 在 Visual C++ 中，当执行点发生更改时，会显示一个对话框来提示此情况。 在继续调试之前，应验证位置是否正确。 如果位置不正确，则使用**设置下一语句**命令。 有关详细信息，请参阅[设置下一个要执行的语句](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute)。  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> 如何使用陈旧代码  
  在某些情况下，“编辑并继续”无法将代码更改立即应用于可执行文件，但如果您继续调试，则可能会在稍后应用代码更改。 当编辑某个调用当前函数的函数，或将多于 64 个字节的新变量添加到调用堆栈上的函数时，就会发生这种情况。  

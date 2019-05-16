@@ -177,7 +177,7 @@ ms.locfileid: "63438553"
 
 5. 禁用数据库的连接。 如果数据库位于服务器上，拔出网络电缆从计算机或停止 SQL Server 服务，如果数据库是在开发计算机上。
 
-6. 打开 Excel，然后打开**我的 Master Detail.xlsx**从*\bin*目录 (*\My Master-Detail\bin*在 Visual Basic 中或*\My Master-Detail\bin\调试*C# 中)。
+6. 打开 Excel，然后打开 **我的 Master Detail.xlsx** 从 *\bin* 目录 (*\My Master-Detail\bin*在 Visual Basic 中或*\My Master-Detail\bin\调试*C# 中)。
 
 7. 滚动浏览的某些记录，若要查看断开连接时，工作表进行正常操作。
 

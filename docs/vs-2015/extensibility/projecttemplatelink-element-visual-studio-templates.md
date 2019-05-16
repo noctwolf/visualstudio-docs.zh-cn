@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937053"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681319"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58937053"
 |特性|描述|  
 |---------------|-----------------|  
 |`ProjectName`|可选特性。<br /><br /> 指定多项目模板中每一个项目的名称。 **新的项目**对话框不能分配到单个项目的名称。|  
-|`CopyParameters`|使主要组模板中的所有变量可复制到每个链接模板。<br /><br /> 链接模板中的参数具有前缀 `"$ext_*$"`。 例如，如果在父组模板参数`$projectname$`具有值**ExampleProject1**，当链接的模板获取其启用可执行，它将获取参数`$ext_projectname$`，这是一份`$projectname$`从父组模板的参数。<br /><br /> 这使链接模板能够共享一些只能在父组模板中方便地创建的公用参数。<br /><br /> 此特性为可选特性，未包含此特性时，它将自动默认为 `false`。<br /><br /> 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的产品版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。|  
+|`CopyParameters`|使主要组模板中的所有变量可复制到每个链接模板。<br /><br /> 链接模板中的参数具有前缀 `"$ext_*$"`。 例如，如果在父组模板参数`$projectname$`具有值**ExampleProject1**，当链接的模板获取其启用可执行，它将获取参数`$ext_projectname$`，这是一份`$projectname$`从父组模板的参数。<br /><br /> 这使链接模板能够共享一些只能在父组模板中方便地创建的公用参数。<br /><br /> 此特性为可选特性，未包含此特性时，它将自动默认为 `false`。<br /><br /> 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的产品版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  

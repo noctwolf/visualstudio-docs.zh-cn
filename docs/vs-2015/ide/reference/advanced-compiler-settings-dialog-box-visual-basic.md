@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699915"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63441127"
   
 2. 在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。  
   
-3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 4. 单击“高级编译选项”。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63441127"
  从列表中选择“无”、“完整”或“仅 pdb”。 “无”指定不生成调试信息。 “完整”指定生成完整调试信息，“仅 pdb”指定仅生成 PDB 调试信息。 默认情况下，此选项设置为“完整”。  
   
 ## <a name="compilation-constants"></a>编译常量  
- 条件编译常量具有与在源文件中使用 [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) 预处理器指令类似的效果，只是定义的常数为公共的且应用于项目中的所有文件。 可以将条件编译常量与 [#If...Then...#Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) 指令一起使用，从而有条件地编译源文件。 请参阅[条件编译](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)。  
+ 条件编译常量具有与在源文件中使用 [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) 预处理器指令类似的效果，只是定义的常数为公共的且应用于项目中的所有文件。 可以将条件编译常量与 [#If...Then...#Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) 指令一起使用，从而有条件地编译源文件。 请参阅[条件编译](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848)。  
   
  “定义 DEBUG 常量”  
  默认为选中此复选框，指定设置 DEBUG 常量。  

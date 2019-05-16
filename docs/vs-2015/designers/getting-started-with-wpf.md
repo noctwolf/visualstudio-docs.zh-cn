@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0137fd1eda8613d332cb07df0d87df97ff9a51a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3e2d314455b8b392c4e2f830101dae76c40e2865
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776372"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704439"
 ---
 # <a name="getting-started-with-wpf"></a>WPF 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Windows Presentation Foundation (WPF) 是一个可创建桌面客户端应用程
   
 |||  
 |-|-|  
-|我希望直接开始使用…|[演练：我的第一个 WPF 桌面应用程序](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
+|我希望直接开始使用…|[演练：我的第一个 WPF 桌面应用程序](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
 |如何设计应用程序 UI？|[在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)|  
-|是否是初次使用 .NET？|[.NET Framework 概述](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [应用程序要点](http://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Visual C# 和 Visual Basic 入门](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
+|是否是初次使用 .NET？|[.NET Framework 概述](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [应用程序要点](https://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Visual C# 和 Visual Basic 入门](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
 |有关 WPF 的详细信息...|[WPF 介绍](../designers/introduction-to-wpf.md)<br /><br /> [XAML 概述 (WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [控件](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [数据绑定概述](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [使用 LINQ to XML 进行 WPF 数据绑定](../designers/wpf-data-binding-with-linq-to-xml.md)|  
 |是否是 Windows 窗体开发人员？|[Windows 窗体控件和等效的 WPF 控件](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [WPF 和 Windows 窗体互操作中受支持的方案](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|  
   

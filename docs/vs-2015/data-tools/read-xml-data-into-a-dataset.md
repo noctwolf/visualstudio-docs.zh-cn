@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425391"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692558"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 5. 添加代码以显示 XML 架构中的 XML 文件基于<xref:System.Windows.Forms.TextBox>控件  
   
 > [!NOTE]
-> 对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 对话框和菜单命令，请参阅这些帮助中描述具体取决于您现用的设置或版本可能不同于你正在使用。 若要更改您的设置，在**工具**菜单中，选择**导入和导出设置**。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-new-project"></a>创建新项目  
  在此步骤中，您可以创建包含本演练中的 Visual Basic 或 Visual C# 项目。  
@@ -59,7 +59,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
   
 2. 将项目命名为 `ReadingXML`。  
   
-3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      **ReadingXML**创建项目并将其添加到**解决方案资源管理器**。  
   
@@ -246,7 +246,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 - 编辑数据集中的数据并将其写出到数据库。
   
 ## <a name="see-also"></a>请参阅  
- [数据演练](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [数据演练](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)   
- [准备应用程序以接收数据](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [准备应用程序以接收数据](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

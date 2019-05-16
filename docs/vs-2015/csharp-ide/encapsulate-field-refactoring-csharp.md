@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116597"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681390"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>封装字段重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **封装字段**重构操作，可从现有字段，快速创建一个属性，然后对新属性的引用无缝地更新你的代码。  
   
- 当[字段](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7)是[公共](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e)，其他对象可以直接访问该字段，并可以修改它未检测到拥有该字段的对象。 通过使用[属性](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)要封装这个字段，可以禁止对字段的直接访问。  
+ 当[字段](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7)是[公共](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e)，其他对象可以直接访问该字段，并可以修改它未检测到拥有该字段的对象。 通过使用[属性](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8)要封装这个字段，可以禁止对字段的直接访问。  
   
- 若要创建新的属性，**封装字段**操作将会更改想要封装到的字段的访问修饰符[专用](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)，然后生成[获取](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)并[设置](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619)该字段的访问器。 在某些情况下，仅生成 `get` 访问器（如当字段声明为只读时）。  
+ 若要创建新的属性，**封装字段**操作将会更改想要封装到的字段的访问修饰符[专用](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)，然后生成[获取](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)并[设置](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619)该字段的访问器。 在某些情况下，仅生成 `get` 访问器（如当字段声明为只读时）。  
   
  重构引擎对中指定的区域中的新属性的引用更新你的代码**更新引用**一部分**封装字段**对话框。  
   

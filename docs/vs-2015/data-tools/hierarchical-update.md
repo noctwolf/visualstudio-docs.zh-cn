@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386006"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699815"
 ---
 # <a name="hierarchical-update"></a>分层更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 分层更新 * 是指同时保持引用完整性规则保存更新后 （从具有两个或多个相关表的数据集） 返回到数据库的数据的过程。 *引用完整性*指提供的控制行为的插入、 更新和删除相关的记录在数据库中的约束的一致性规则。 例如，它是强制执行之前允许该客户的订单来创建客户记录的创建的引用完整性。  有关数据集中的关系的详细信息，请参阅[数据集中的关系](../data-tools/relationships-in-datasets.md)  
   
- 分层更新功能使用`TableAdapterManager`来管理`TableAdapter`中类型化数据集。 `TableAdapterManager`组件是[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-生成类，因此它不属于[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 将表从数据源窗口拖到 Windows 窗体或 WPF 页后，Visual Studio 将类型 TableAdapterManager 的变量添加到窗体或页面，和你在组件栏中的设计器中看到它。 有关详细信息`TableAdapterManager`类，请参阅的 TableAdapterManager 参考部分[TableAdapterManager 概述](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
+ 分层更新功能使用`TableAdapterManager`来管理`TableAdapter`中类型化数据集。 `TableAdapterManager`组件是[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-生成类，因此它不属于[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 将表从数据源窗口拖到 Windows 窗体或 WPF 页后，Visual Studio 将类型 TableAdapterManager 的变量添加到窗体或页面，和你在组件栏中的设计器中看到它。 有关详细信息`TableAdapterManager`类，请参阅的 TableAdapterManager 参考部分[TableAdapterManager 概述](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)。  
   
  默认情况下，数据集视为相关的表"，关系"这意味着它不会强制外键约束。 可以通过使用数据集设计器来修改在设计时进行该设置。 选择要显示的两个表之间的关系线**关系**对话框。 您在此处进行的更改将确定 TableAdapterManager 的行为方式时它将所做的更改在相关表中发送回数据库。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63386006"
   
  默认情况下，在数据集中数据表生成关系 (<xref:System.Data.DataRelation>) 匹配的关系数据库中。 但是，在数据集中的关系不会生成作为外键约束。 <xref:System.Data.DataRelation>配置为**关系仅**而无需<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A>或<xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>生效。  
   
- 默认情况下，级联更新和级联删除操作会关闭即使数据库关系设置级联更新和/或级联删除开启。 例如，创建新客户和新的订单，并尝试将数据保存可以导致冲突的数据库中定义 foreign key 约束。 有关详细信息，请参阅[如何：在数据集中配置外键约束](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)。  
+ 默认情况下，级联更新和级联删除操作会关闭即使数据库关系设置级联更新和/或级联删除开启。 例如，创建新客户和新的订单，并尝试将数据保存可以导致冲突的数据库中定义 foreign key 约束。 有关详细信息，请参阅[如何：在数据集中配置外键约束](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e)。  
   
 ## <a name="set-the-order-to-perform-updates"></a>设置以执行更新的顺序  
  设置的顺序来执行更新集个人的顺序插入、 更新和删除，需要将所有修改后的数据保存在数据集的所有表。 启用分层更新后，插入第一次，执行，然后更新，，然后删除。 `TableAdapterManager`提供了`UpdateOrder`可以是组以执行更新第一次，然后插入和删除操作的属性。  
@@ -63,7 +63,7 @@ ms.locfileid: "63386006"
 > [!NOTE]
 > 请务必了解，更新顺序是全包含所有权限。 也就是说时不会进行更新，, 插入和删除执行在数据集中的所有表。  
   
- 若要设置`UpdateOrder`属性，则请将某些项从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖到窗体中，选择`TableAdapterManager`在组件栏，然后将设置`UpdateOrder`中的属性**属性**窗口。 有关详细信息，请参阅[如何：执行分层更新时设置的顺序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
+ 若要设置`UpdateOrder`属性，则请将某些项从[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)拖到窗体中，选择`TableAdapterManager`在组件栏，然后将设置`UpdateOrder`中的属性**属性**窗口。 有关详细信息，请参阅[如何：执行分层更新时设置的顺序](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>执行分层更新前创建一个数据集的备份副本  
  在您保存数据 (通过调用`TableAdapterManager.UpdateAll()`方法)，则`TableAdapterManager`尝试更新每个表在单个事务中的数据。 如果任何表的更新的任何部分失败，将回滚整个事务。 在大多数情况下，回滚返回到其原始状态的应用程序。  
@@ -120,7 +120,7 @@ ms.locfileid: "63386006"
 |`UpdateAll` 方法|将保存数据的所有表中的所有数据。|  
 |`BackUpDataSetBeforeUpdate` 属性|确定是否在执行前创建数据集的备份副本`TableAdapterManager.UpdateAll`方法。一个布尔值。|  
 |*tableName* `TableAdapter`属性|表示`TableAdapter`。 生成`TableAdapterManager`包含每个属性`TableAdapter`它所管理。 例如，Customers 和 Orders 表具有的数据集生成具有`TableAdapterManager`，其中包含`CustomersTableAdapter`和`OrdersTableAdapter`属性。|  
-|`UpdateOrder` 属性|控制各个 insert、 update 和 delete 命令的顺序。 将此项设置中的值之一`TableAdapterManager.UpdateOrderOption`枚举。<br /><br /> 默认情况下`UpdateOrder`设置为**InsertUpdateDelete**。 这意味着，它将插入，然后更新，然后删除会对在数据集中的所有表执行。 有关详细信息，请参阅[如何：执行分层更新时设置的顺序](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。|  
+|`UpdateOrder` 属性|控制各个 insert、 update 和 delete 命令的顺序。 将此项设置中的值之一`TableAdapterManager.UpdateOrderOption`枚举。<br /><br /> 默认情况下`UpdateOrder`设置为**InsertUpdateDelete**。 这意味着，它将插入，然后更新，然后删除会对在数据集中的所有表执行。 有关详细信息，请参阅[如何：执行分层更新时设置的顺序](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83)。|  
   
 ## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

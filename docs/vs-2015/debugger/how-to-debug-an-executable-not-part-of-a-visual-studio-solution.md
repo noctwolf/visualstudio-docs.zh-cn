@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e33233fd313cd6a73013ce55333a860663ddb601
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704524"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>如何：调试可执行文件不属于 Visual Studio 解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,4 +68,4 @@ ms.locfileid: "63434482"
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [调试器安全](../debugger/debugger-security.md)   
- [DBG 文件](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)
+ [DBG 文件](https://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

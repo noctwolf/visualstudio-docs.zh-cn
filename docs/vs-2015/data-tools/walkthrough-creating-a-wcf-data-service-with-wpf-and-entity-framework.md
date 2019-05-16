@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 12d7e9c25cdf4e0431a7e4b5e3639dc59b76790c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424855"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703166"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "63424855"
   
 - Northwind 示例数据库。  
   
-     如果你的开发计算机上没有此数据库，可以从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkID=98088)进行下载。 有关说明，请参阅[下载示例数据库](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)。  
+     如果你的开发计算机上没有此数据库，可以从 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkID=98088)进行下载。 有关说明，请参阅[下载示例数据库](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5)。  
   
 ## <a name="creating-the-service"></a>创建服务  
  若要创建 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]，你将添加一个 Web 项目，创建一个[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]，然后通过此模型创建服务。  

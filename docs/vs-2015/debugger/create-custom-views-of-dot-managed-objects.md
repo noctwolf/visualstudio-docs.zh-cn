@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440453"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702421"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,10 +50,10 @@ ms.locfileid: "63440453"
 > [!CAUTION]
 > 在 Visual Studio 的不同版本中，此文件的结构和 autoexp 规则的语法可能不同。  
   
- 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例：调试表达式计算器外接程序](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+ 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例：调试表达式计算器外接程序](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 DebuggerTypeProxy 属性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 属性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [监视窗口和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)   
- [使用调试器显示特性增强调试](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [使用调试器显示特性增强调试](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

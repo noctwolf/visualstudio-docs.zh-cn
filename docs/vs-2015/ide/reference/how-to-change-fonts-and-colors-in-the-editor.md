@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fc5e511ad2f687ebc709f7c7074e5dd4375c7591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682413"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在编辑器中更改字体和颜色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63441714"
 - 可以为每种文本元素类型设置“项前景”、“项背景”和“粗体”选项。 例如，如果更改“注释”和“书签”的颜色，并为它们选择“粗体”，其他类型的文本元素不会受影响。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>更改默认字体、字体大小和颜色  
   

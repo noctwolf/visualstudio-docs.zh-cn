@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696407"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio 使用 .NET Framework 正则表达式来查找和替换文本。 有关 .NET 正则表达式的详细信息，请参阅 [.NET Framework 正则表达式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
+Visual Studio 使用 .NET Framework 正则表达式来查找和替换文本。 有关 .NET 正则表达式的详细信息，请参阅 [.NET Framework 正则表达式](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
 
 在 Visual Studio 2012 之前，Visual Studio 在查找和替换窗口中使用自定义的正则表达式语法。 请参阅 [Visual Studio 正则表达式转换](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx)，了解如何将一些比较常用的自定义正则表达式符号转换为 .NET 版本。
 
@@ -36,7 +36,7 @@ Visual Studio 使用 .NET Framework 正则表达式来查找和替换文本。 �
 > 在 Windows 操作系统中，大多数行以“\r\n”（回车符后跟新行）结束。 这些字符不可见，但在编辑器中存在并传递给 .NET 正则表达式服务。
 
 > [!TIP]
-> 有关在替换模式中使用的正则表达式的信息，请参阅[替换](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已编号的捕获组，语法是 `$1`用于指定编号组）和 `(x)`（指定相关组）。 例如，已分组的正则表达式`(\d)([a-z])`以下字符串中查找四个匹配项：1a 2b 3c 4d。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
+> 有关在替换模式中使用的正则表达式的信息，请参阅[替换](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e)。 若要使用已编号的捕获组，语法是 `$1`用于指定编号组）和 `(x)`（指定相关组）。 例如，已分组的正则表达式`(\d)([a-z])`以下字符串中查找四个匹配项：1a 2b 3c 4d。 替换字符串 `z$1` 将该字符串转换为 **z1 z2 z3 z4**。
 
 ## <a name="regular-expression-examples"></a>正则表达式示例
 

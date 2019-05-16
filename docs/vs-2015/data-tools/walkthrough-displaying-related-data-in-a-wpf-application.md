@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424780"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688426"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>演练：在 WPF 应用程序中显示相关的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "63424780"
   
   事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
-- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
+- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
   
-- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
-- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="creating-the-project"></a>创建项目  
  创建新的 WPF 项目以显示订单记录。  

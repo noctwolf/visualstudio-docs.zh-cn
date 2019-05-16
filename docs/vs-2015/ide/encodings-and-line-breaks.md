@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ceec5e44ade219f069e72f712129a137d70875f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0ae85397e0d9b5859ab39a8a580dd50d1ea7324c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437525"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701061"
 ---
 # <a name="encodings-and-line-breaks"></a>编码和换行符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437525"
 在 Visual Studio 中，可使用“文件”/“高级保存选项”设置来确定所需的换行符类型。 还可使用相同的设置更改文件的编码。  
   
 > [!NOTE]
-> 如果已具有特定类型的开发设置（Visual Basic、F#、Web 开发），则菜单上可能不会出现“高级保存选项”。 若要更改设置（例如更改为“常规”），请打开“工具”/“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 如果已具有特定类型的开发设置（Visual Basic、F#、Web 开发），则菜单上可能不会出现“高级保存选项”。 若要更改设置（例如更改为“常规”），请打开“工具”/“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  在 Visual Studio 中，以下字符将解释为换行符：  
   

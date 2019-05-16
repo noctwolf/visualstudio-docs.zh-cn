@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442869"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681682"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>如何：手动将扩展打包 （VSIX 部署）
 可以创建 VSIX 包来包装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展，以便进行部署。 创建包的方式有三种：  
@@ -26,7 +26,7 @@ ms.locfileid: "63442869"
   本文档介绍第三个选项。  
   
 ## <a name="creating-a-vsix-package"></a>创建 VSIX 包  
- 若要手动对扩展打包，请向扩展项目中添加 extension.manifest 文件和 [Content_Types].xml 文件，将其与生成输出一起放在压缩文件中，并对压缩文件重命名，使其具有 .vsix 文件扩展名。 要打包的扩展必须是 [VSIX 架构](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)支持的类型。  
+ 若要手动对扩展打包，请向扩展项目中添加 extension.manifest 文件和 [Content_Types].xml 文件，将其与生成输出一起放在压缩文件中，并对压缩文件重命名，使其具有 .vsix 文件扩展名。 要打包的扩展必须是 [VSIX 架构](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)支持的类型。  
   
 > [!NOTE]
 > 在 VSIX 包中的文件的名称不能包含空格，也不保留在统一资源标识符 (URI)，作为字符定义下[ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339)。  
@@ -37,7 +37,7 @@ ms.locfileid: "63442869"
   
 2. 创建一个 XML 文件，将其命名为 `extension.vsixmanifest`。  
   
-3. 根据 VSIX 架构填写 extension.vsixmanifest 文件。 有关示例清单，请参阅 [PackageManifest 元素（根元素，VSX 架构）](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
+3. 根据 VSIX 架构填写 extension.vsixmanifest 文件。 有关示例清单，请参阅 [PackageManifest 元素（根元素，VSX 架构）](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)。  
   
 4. 再创建一个 XML 文件，将其命名为 `[Content_Types].xml`。  
   
@@ -56,4 +56,4 @@ ms.locfileid: "63442869"
 ## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)   
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
- [PackageManifest 元素 （根元素，VSX 架构）](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [PackageManifest 元素 （根元素，VSX 架构）](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

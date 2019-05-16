@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436562"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689101"
 ---
 # <a name="support-for-settings-categories"></a>支持设置类别
-设置类别包含一组可自定义集成开发环境 (IDE) 的选项。 例如，设置可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口的布局和菜单的内容。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+设置类别包含一组可自定义集成开发环境 (IDE) 的选项。 例如，设置可以控制 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口的布局和菜单的内容。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  在“工具”  菜单上，单击“导入和导出设置”  以启动“导入和导出设置向导” 。 向导提供三个选项：导出、导入或重置设置。 例如，选择导出会打开向导的“选择要导出的设置”  页面。  
   
@@ -64,4 +64,4 @@ ms.locfileid: "63436562"
  [创建选项页](../extensibility/creating-an-options-page.md)   
  [VSSDK 示例](../misc/vssdk-samples.md)   
  [VSPackage 状态](../misc/vspackage-state.md)   
- [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

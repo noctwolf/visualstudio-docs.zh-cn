@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116194"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691340"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ ms.locfileid: "60116194"
    [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a>Windows 窗体应用程序 (.NET)  
- “Windows 窗体应用程序 (.NET)”模板可创建 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Windows 窗体应用程序。 有关详细信息，请参阅[如何：创建一个 Windows 应用程序项目](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
+ “Windows 窗体应用程序 (.NET)”模板可创建 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Windows 窗体应用程序。 有关详细信息，请参阅[如何：创建一个 Windows 应用程序项目](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序类似于在托管的 Windows 窗体应用程序中进行调试。  
   
@@ -117,4 +117,4 @@ ms.locfileid: "60116194"
  [C++ 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [附加到正在运行的程序或多个程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)   
- [如何：创建一个 Windows 应用程序项目](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [如何：创建一个 Windows 应用程序项目](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

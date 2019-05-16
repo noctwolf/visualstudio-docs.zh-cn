@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695482"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63430114"
 |[如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)|介绍如何创建和自定义文本标记类型添加到文本视图。|  
 |[如何：使用文本标记](../extensibility/how-to-use-text-markers.md)|介绍如何添加文本标记。|  
 |[核心编辑器内](../extensibility/inside-the-core-editor.md)|介绍核心编辑器的功能，并提供有关如何自定义核心编辑器的详细信息。|  
-|[编辑器功能](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述中提供的功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心编辑器。|  
+|[编辑器功能](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述中提供的功能[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心编辑器。|  
   
 ## <a name="reference"></a>参考  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

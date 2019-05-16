@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af9777667bef466dc97ea3a3d239f83f766816da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431173"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693957"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 术语*查找表*描述了绑定到两个相关的数据表的控件。 这些查找的控件显示基于所选第二个表中的值的第一个表中的数据。  
   
- 可以通过拖动对主节点的父表中创建查找表 (从[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) 拖到窗体已绑定到相关的子表中的列上的控件。  
+ 可以通过拖动对主节点的父表中创建查找表 (从[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) 拖到窗体已绑定到相关的子表中的列上的控件。  
   
  例如，考虑一个表的`Orders`销售数据库中。 中的每条`Orders`表包含`CustomerID`，指示哪个客户下达订单。 `CustomerID`是指向客户记录中的外键`Customers`表。 在此方案中，展开`Orders`表中**数据源**窗口并将主节点设置为**详细信息**。 然后设置`CustomerID`要使用的列<xref:System.Windows.Forms.ComboBox>（或任何其他支持查找绑定的控件），并将其拖`Orders`节点拖到窗体上的。 最后，将`Customers`拖动到控件绑定到的相关列上的节点，在这种情况下，<xref:System.Windows.Forms.ComboBox>绑定到`CustomerID`列。  
   

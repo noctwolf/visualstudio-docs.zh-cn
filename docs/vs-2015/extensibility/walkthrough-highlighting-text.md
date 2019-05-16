@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d398164e910f7700645c01d26afbc631b1d434bc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693327"
 ---
 # <a name="walkthrough-highlighting-text"></a>演练：突出显示文本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ ms.locfileid: "63408779"
  若要创建应用标记器，必须实现<xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>。 此类是 MEF 组件过程中，因此必须设置正确的属性，以便识别此扩展。  
   
 > [!NOTE]
-> 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+> 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 #### <a name="to-create-a-tagger-provider"></a>若要创建标记器提供程序  
   

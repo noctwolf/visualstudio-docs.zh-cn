@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558393"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694797"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>使用概念模型（WCF 数据服务）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ ms.locfileid: "62558393"
   
 |主题|描述|  
 |-----------|-----------------|  
-|[如何：执行数据服务查询](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|演示如何查询数据服务从[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]应用程序。|  
-|[如何：项目查询结果](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|演示如何减少通过数据服务查询返回的数据量。|  
+|[如何：执行数据服务查询](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|演示如何查询数据服务从[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]应用程序。|  
+|[如何：项目查询结果](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|演示如何减少通过数据服务查询返回的数据量。|  
   
  使用概念模型时，可以定义的数据类型是有效的语言来匹配你的域。 可以在模型中，定义有效的数据或添加对实体或数据服务执行的操作的验证。  
   
@@ -43,15 +43,15 @@ ms.locfileid: "62558393"
   
 |主题|描述|  
 |-----------|-----------------|  
-|[如何：截获数据服务消息](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|演示如何将验证添加到数据服务操作。|  
+|[如何：截获数据服务消息](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|演示如何将验证添加到数据服务操作。|  
   
  以下主题说明如何创建、 更新和删除数据，通过对实体执行操作。  
   
 |主题|描述|  
 |-----------|-----------------|  
-|[如何：添加、 修改和删除实体](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|演示如何创建、 更新和删除数据服务中的实体数据。|  
-|[如何：定义实体关系](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|演示如何创建或更改数据服务中的关系。|  
+|[如何：添加、 修改和删除实体](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|演示如何创建、 更新和删除数据服务中的实体数据。|  
+|[如何：定义实体关系](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|演示如何创建或更改数据服务中的关系。|  
   
 ## <a name="see-also"></a>请参阅  
  [Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [查询数据服务](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+ [查询数据服务](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

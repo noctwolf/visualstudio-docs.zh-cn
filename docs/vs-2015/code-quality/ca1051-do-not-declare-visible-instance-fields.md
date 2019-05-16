@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 874541972df030d55721b78f115b730e625a7b02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96e518977e12f2ae061d5ab73803d51dad733149
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932411"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686825"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要声明可见实例字段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58932411"
  若要解决此规则的冲突，使字段`private`或`internal`并将其公开使用的外部可见的属性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。 外部可见字段不提供对属性不可用的任何权益。 此外，不能由保护公共字段[链接要求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)。 请参阅[CA2112:受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
+ 不禁止显示此规则发出的警告。 外部可见字段不提供对属性不可用的任何权益。 此外，不能由保护公共字段[链接要求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)。 请参阅[CA2112:受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。
 
 ## <a name="example"></a>示例
  下面的示例演示一种类型 (`BadPublicInstanceFields`) 这违反了此规则。 `GoodPublicInstanceFields` 显示了更正后的代码。
@@ -55,4 +55,4 @@ ms.locfileid: "58932411"
  [CA2112:受保护的类型不应公开字段](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>请参阅
- [链接需求](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ [链接需求](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

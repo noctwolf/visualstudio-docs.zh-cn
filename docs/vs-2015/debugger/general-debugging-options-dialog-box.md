@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446477"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704681"
 ---
 # <a name="general-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“常规”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "63446477"
  **当异常跨越 AppDomain 或托管/本机边界时中断**  
  在托管或混合模式调试中，如果满足以下条件，公共语言运行时可能会捕获跨越应用程序域边界或托管/本机边界的异常：  
   
- 1\)时本机代码使用 COM 互操作调用托管的代码和托管的代码引发异常。 请参阅 [COM 互操作介绍](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67)。  
+ 1\)时本机代码使用 COM 互操作调用托管的代码和托管的代码引发异常。 请参阅 [COM 互操作介绍](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67)。  
   
- 2\)时应用程序域 1 中运行的托管的代码调用托管的代码中应用程序域 2 中，并在应用程序域 2 中的代码引发异常。 请参阅[应用程序域进行编程](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131)。  
+ 2\)时应用程序域 1 中运行的托管的代码调用托管的代码中应用程序域 2 中，并在应用程序域 2 中的代码引发异常。 请参阅[应用程序域进行编程](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131)。  
   
- 3\)当代码调用函数使用反射，而该函数将引发异常。 请参阅[反射](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)。  
+ 3\)当代码调用函数使用反射，而该函数将引发异常。 请参阅[反射](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)。  
   
  在第 2) 和 3) 条中，异常有时由 `mscorlib` 中的托管代码而不是公共语言运行时捕获。 此选项不影响在 `mscorlib` 捕获到异常时中断。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "63446477"
  允许你在断点上设置筛选器，使其仅影响特定的进程、线程或计算机。  
   
  **启用异常助手**  
- 仅用于托管代码。 托管异常打开“异常助手”对话框。  请参阅[异常助手](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)。  
+ 仅用于托管代码。 托管异常打开“异常助手”对话框。  请参阅[异常助手](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)。  
   
  **展开调用堆栈上未经处理的异常**  
  导致“调用堆栈”窗口将调用堆栈回滚到未经处理的异常发生之前的时间点。  
@@ -123,7 +123,7 @@ ms.locfileid: "63446477"
  **加载 dll 导出**  
  加载 DLL 导出表。 处理 Windows 消息、Windows 过程 (WindowProc)、COM 对象、封送或不具有其符号的任何 DLL 时，DLL 导出表中的符号信息将很有用。 读取 DLL 导出信息会占用一些系统开销。 因此，默认情况下此功能被禁用。  
   
- 若要查看 DLL 导出表中的可用符号，请使用 `dumpbin /exports`。 符号可用于任何 32 位系统 DLL。 从 `dumpbin /exports` 输出中，可以查看到精确的函数名，包括非字母数字字符。 这对于在函数上设置断点很有用。 DLL 导出表中的函数名在调试器的其他位置似乎被截断了。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 有关详细信息，请参阅 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
+ 若要查看 DLL 导出表中的可用符号，请使用 `dumpbin /exports`。 符号可用于任何 32 位系统 DLL。 从 `dumpbin /exports` 输出中，可以查看到精确的函数名，包括非字母数字字符。 这对于在函数上设置断点很有用。 DLL 导出表中的函数名在调试器的其他位置似乎被截断了。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 有关详细信息，请参阅 [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
   
  **显示并行堆栈关系图自下而上的**  
  控制堆栈在“并行堆栈”窗口中的显示方向。  
@@ -164,7 +164,7 @@ ms.locfileid: "63446477"
   如果选中一个 XAML 元素的上下文，同时会在“实时可视化树”窗口中选中该元素。 Visual Studio 2015 Update 2 中引入了此选项。  
   
   **调试时启用诊断工具**  
-  调试时显示“诊断工具”窗口。 有关详细信息，请参阅[集成了调试器的分析](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)。  
+  调试时显示“诊断工具”窗口。 有关详细信息，请参阅[集成了调试器的分析](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)。  
   
   **调试时显示运行时间 PerfTip**  
   在进行调试时，代码窗口会显示给定方法调用的运行时间。  

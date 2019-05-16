@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697762"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具在 Visual Studio 中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ LINQ to SQL 是由 Microsoft 发布的第一个对象关系映射技术。 它�
 
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]有其设计图面上两个不同的区域： 左侧的实体窗格和右侧的方法窗格。 实体窗格是主设计图面，其中显示实体类、关联和继承层次结构。 方法窗格是显示映射到存储过程和函数的 <xref:System.Data.Linq.DataContext> 方法的设计图面。
 
- [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) 提供用于创建可视化设计图面[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类并基于数据库中的对象的关联 （关系）。 换句话说，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]用于在应用程序中创建映射到数据库中的对象的对象模型。 它还生成一个强类型 <xref:System.Data.Linq.DataContext>，用于在实体类与数据库之间发送和接收数据。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]还提供了相关功能，用于将存储过程和函数映射到 <xref:System.Data.Linq.DataContext> 方法以便返回数据和填充实体类。 最后，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供了对实体类之间的继承关系进行设计的能力。
+ [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) 提供用于创建可视化设计图面[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类并基于数据库中的对象的关联 （关系）。 换句话说，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]用于在应用程序中创建映射到数据库中的对象的对象模型。 它还生成一个强类型 <xref:System.Data.Linq.DataContext>，用于在实体类与数据库之间发送和接收数据。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]还提供了相关功能，用于将存储过程和函数映射到 <xref:System.Data.Linq.DataContext> 方法以便返回数据和填充实体类。 最后，[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供了对实体类之间的继承关系进行设计的能力。
 
 ## <a name="opening-the-or-designer"></a>打开 O/R 设计器
  若要添加 LINQ to SQL 实体模型到你的项目，选择**项目&#124;添加新项**，然后选择**LINQ to SQL 类**从项目项的列表：
@@ -62,7 +62,7 @@ LINQ to SQL 是由 Microsoft 发布的第一个对象关系映射技术。 它�
  像其他对象一样，[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 类可以使用继承，并可从其他类派生。 在数据库中，可通过多种方式创建继承关系。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]支持通常在关系系统中实现的单表继承概念。 有关详细信息，请参阅[如何：使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)。
 
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL 查询
- 创建的实体类[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]设计用于[LINQ （语言集成查询）](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)。 有关详细信息，请参阅[如何：有关信息的查询](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0)。
+ 创建的实体类[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]设计用于[LINQ （语言集成查询）](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)。 有关详细信息，请参阅[如何：有关信息的查询](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0)。
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>将生成的 DataContext 和实体类代码分离到不同的命名空间
  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供了**上下文 Namespace**并**实体 Namespace**上的属性<xref:System.Data.Linq.DataContext>。 这些属性决定 <xref:System.Data.Linq.DataContext> 和实体类代码生成到哪个命名空间。 默认情况下，这些属性为空并且 <xref:System.Data.Linq.DataContext> 和实体类生成到应用程序的命名空间。 若要在除应用程序的命名空间以外的命名空间中生成代码，请在“上下文命名空间”和/或“实体命名空间”属性中输入一个值。
@@ -100,4 +100,4 @@ LINQ to SQL 是由 Microsoft 发布的第一个对象关系映射技术。 它�
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>请参阅
- [适用于.NET 的 visual Studio data tools](../data-tools/visual-studio-data-tools-for-dotnet.md) [Frequently Asked Questions](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [访问 Visual Studio 中的数据](../data-tools/accessing-data-in-visual-studio.md)
+ [适用于.NET 的 visual Studio data tools](../data-tools/visual-studio-data-tools-for-dotnet.md) [Frequently Asked Questions](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [访问 Visual Studio 中的数据](../data-tools/accessing-data-in-visual-studio.md)

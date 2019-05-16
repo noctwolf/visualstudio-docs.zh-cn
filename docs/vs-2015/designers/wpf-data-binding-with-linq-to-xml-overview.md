@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f6a0490b13c4061194390fedbefebfba60860a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689888"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>使用 LINQ to XML 进行 WPF 数据绑定概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "63403420"
 |绑定源|提供给 UI 元素以便进行显示的一个或多个值的源对象。 WPF 自动支持以下类型作为绑定源：CLR 对象、ADO.NET 数据对象、XML 数据（来自 XPath 或 LINQ to XML 查询）或其他 <xref:System.Windows.DependencyObject>。|  
 |源路径|绑定源的属性，可解析为要绑定的一个或一组值。|  
   
- 依赖项属性是特定于 WPF 的概念，它表示 UI 元素的动态计算的属性。 例如，依赖项属性通常具有默认值或具有由父元素提供的值。 <xref:System.Windows.DependencyProperty> 类的实例（而不是支持标准属性的字段）支持这些特殊属性。 有关详细信息，请参阅[依赖项属性概述](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
+ 依赖项属性是特定于 WPF 的概念，它表示 UI 元素的动态计算的属性。 例如，依赖项属性通常具有默认值或具有由父元素提供的值。 <xref:System.Windows.DependencyProperty> 类的实例（而不是支持标准属性的字段）支持这些特殊属性。 有关详细信息，请参阅[依赖项属性概述](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
   
 ### <a name="dynamic-data-binding-in-wpf"></a>WPF 中的动态数据绑定  
  默认情况下，仅在初始化目标 UI 元素时，才会发生数据绑定。 这称为“一次性”绑定。 这不能满足多数用途的需要；通常，数据绑定解决方案要求使用以下方式之一在运行时动态传播更改：  
@@ -53,7 +53,7 @@ ms.locfileid: "63403420"
   
   为了进行单向或双向绑定，源必须实现一种更改通知机制，例如通过实现 <xref:System.ComponentModel.INotifyPropertyChanged> 接口或通过对支持的每个属性使用 PropertyNameChanged 模式。  
   
-  有关 WPF 中数据绑定的详细信息，请参阅[数据绑定 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
+  有关 WPF 中数据绑定的详细信息，请参阅[数据绑定 (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML 类中的动态属性  
  大多数 LINQ to XML 类都不适合作为适当的 WPF 动态数据源：一些最有用的信息只能通过方法（而不是属性）提供，并且这些类中的属性不实现更改通知。 为了支持 WPF 数据绑定，LINQ to XML 公开了一组动态属性。  
@@ -91,6 +91,6 @@ ms.locfileid: "63403420"
 ## <a name="see-also"></a>请参阅  
  [使用 LINQ to XML 进行 WPF 数据绑定](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML 动态属性](../designers/linq-to-xml-dynamic-properties.md)   
- [WPF 中的 XAML](http://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
- [数据绑定 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
+ [WPF 中的 XAML](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)   
+ [数据绑定 (WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)   
  [使用工作流标记](http://go.microsoft.com/fwlink/?LinkId=98685)

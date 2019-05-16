@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697458"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>测量托管代码的复杂性和可维护性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ ms.locfileid: "58932114"
   
  [使用代码度量数据](../code-quality/working-with-code-metrics-data.md)  
   
- [如何：代码度量结果复制到剪贴板](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [如何：代码度量结果复制到剪贴板](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [如何：代码度量结果导出到 Excel](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [如何：代码度量结果导出到 Excel](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [如何：创建基于某一结果的工作项](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [如何：创建基于某一结果的工作项](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>请参阅  
  [代码度量问题疑难解答](../code-quality/troubleshooting-code-metrics-issues.md)   
- [执行常见开发任务](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [执行常见开发任务](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

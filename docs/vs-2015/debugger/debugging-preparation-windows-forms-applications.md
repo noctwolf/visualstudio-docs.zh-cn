@@ -23,19 +23,19 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4574c5ec455f37813e4831cbf098ca4ba6c3c1ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b11855fbd19dc464f92b4339684ef8346556c21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691152"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
+Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
- 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在”\<项目名称> 属性页”对话框（在 Visual Basic “我的项目” 中）中更改这些设置**\<**。  
+ 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在”\<项目名称> 属性页”对话框（在 Visual Basic “我的项目” 中）中更改这些设置。   
   
  有关详细信息，请参阅[建议的属性设置](../debugger/managed-debugging-recommended-property-settings.md)。  
   
@@ -63,7 +63,7 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
    3. 焦点和验证事件。  
   
-      有关详细信息，请参阅[在 Windows 窗体中创建事件处理程序](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
+      有关详细信息，请参阅[在 Windows 窗体中创建事件处理程序](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
   
 3. 在“调试”菜单上，单击“启动”。  
   
@@ -76,4 +76,4 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
  [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Windows 窗体](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+ [Windows 窗体](https://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
