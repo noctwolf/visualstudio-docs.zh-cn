@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444319"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683086"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>演练：调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444319"
   
      新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选的语言，源文件的名称可能是 Module1.vb、Program.cs 或 MyThreadWalkthroughApp.cpp  
   
-6. 删除出现在源代码文件中的代码并替换该主题的"创建线程"的部分中显示的示例代码[创建线程并传递数据的开始时间](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
+6. 删除出现在源代码文件中的代码并替换该主题的"创建线程"的部分中显示的示例代码[创建线程并传递数据的开始时间](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
   
 7. 在“文件”菜单上，单击“全部保存”。  
   

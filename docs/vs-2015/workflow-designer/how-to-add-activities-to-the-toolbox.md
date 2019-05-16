@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0aa6a76555a18c142acb8759b1bc71d56e9d7dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433538"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690941"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 可以将活动添加到**工具箱**几种不同方式在解决方案中。 您可以从当前项目中添加活动，也可以从另一个项目或从另一个程序集引用活动。  
@@ -34,7 +34,7 @@ ms.locfileid: "63433538"
     > 工具箱只能显示具有给定名称的一个活动。 如果来自不同程序集的两个活动具有相同的类名称，将显示一个活动。  
   
     > [!NOTE]
-    > 在编辑器实例间共享应用程序域；如果使用静态变量，也将在编辑器实例间共享它们。 如果这不是所需的行为，应使用一个服务跟踪变量实例。 请参阅[使用 ModelItem 编辑上下文](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1)有关使用在设计器中的服务的信息。  
+    > 在编辑器实例间共享应用程序域；如果使用静态变量，也将在编辑器实例间共享它们。 如果这不是所需的行为，应使用一个服务跟踪变量实例。 请参阅[使用 ModelItem 编辑上下文](https://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1)有关使用在设计器中的服务的信息。  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>从另一个项目中添加活动  
   

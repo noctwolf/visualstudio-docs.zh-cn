@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df2fb0c6505bc5fa756443bd50fdb31ff151e7d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052319"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673680"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>如何：在 XSLT 中使用断点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 您可以在 XSLT 样式表中或 XML 源文档中设置断点。 如果在标记上设置了断点，则在开始执行时，断点将转到包含源代码行信息的下一条语句。  
   
- 有关详细信息，请参阅[调试基础知识：断点](http://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)。  
+ 有关详细信息，请参阅[调试基础知识：断点](https://msdn.microsoft.com/752a02c2-0ac7-4c8b-aa1b-4b2b3b21152e)。  
   
 ## <a name="set-a-breakpoint-in-a-style-sheet"></a>在样式表中设置断点  
  在 XSLT 样式表的开始标记、结束标记和文本节点上都可以设置断点。 也可以在脚本块中的代码上设置断点。  

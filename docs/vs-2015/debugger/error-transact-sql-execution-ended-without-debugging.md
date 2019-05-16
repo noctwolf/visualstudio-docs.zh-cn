@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681078"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>错误：Transact-SQL 执行未经调试便已结束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ ms.locfileid: "62431883"
   
   若要纠正此错误，可能需要：  
   
-- 验证权限设置。 有关详细信息，请参阅[如何：设置 SQL Server 权限以进行调试](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+- 验证权限设置。 有关详细信息，请参阅[如何：设置 SQL Server 权限以进行调试](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
 - 如果设置正确，请确保 SQL 调试也正确。  
   
 - 请咨询网络或数据库管理员。  
   
 ## <a name="see-also"></a>请参阅  
- [设置 SQL 调试](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [如何：设置 SQL Server 权限以进行调试](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [设置 SQL 调试](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [如何：设置 SQL Server 权限以进行调试](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [远程调试](../debugger/remote-debugging.md)

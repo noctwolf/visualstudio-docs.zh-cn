@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697558"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单重新签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60045770"
  你的客户想要为应用程序签名和部署清单具有自己的证书时可能会重新对清单签名的另一种情况。  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>重新对应用程序和部署清单进行签名  
- 此过程假定您已对你的应用程序清单文件 (.manifest) 中做出了更改。 有关详细信息，请参阅[如何：更改部署属性](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)。  
+ 此过程假定您已对你的应用程序清单文件 (.manifest) 中做出了更改。 有关详细信息，请参阅[如何：更改部署属性](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472)。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 重新签名的应用程序和部署清单  
   

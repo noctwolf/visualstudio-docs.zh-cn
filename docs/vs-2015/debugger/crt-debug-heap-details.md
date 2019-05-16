@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697873"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ ms.locfileid: "60057451"
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> 利用调试堆查找缓冲区溢出  
  程序员遇到的两种最常见而又难处理的问题是，覆盖已分配缓冲区的末尾以及内存泄漏（未能在不再需要某些分配后将其释放）。 调试堆提供功能强大的工具来解决这类内存分配问题。  
   
- 堆函数的“调试”版本调用“发布”版本中使用的标准版本或基版本。 请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于你的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中，[malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 将调用基堆分配例程以请求分配 10 个字节。 但在调试版本中，`malloc`将调用 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)，它随后将调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
+ 堆函数的“调试”版本调用“发布”版本中使用的标准版本或基版本。 请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于你的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中，[malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 将调用基堆分配例程以请求分配 10 个字节。 但在调试版本中，`malloc`将调用 [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)，它随后将调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
   
  调试堆例程分配的附加内存的用途为：存储簿记信息，存储将调试内存块链接在一起的指针，以及形成数据两侧的小缓冲区（用于捕捉已分配区域的覆盖）。  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型  
- 调试堆中的每个内存块都被分配给五种分配类型之一。 出于泄漏检测和状态报告的目的，对这些类型进行了不同的跟踪和报告。 可以通过使用对调试堆分配函数之一（如 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)的直接调用来分配块，从而指定块的类型。 调试堆中五种类型的内存块（在 _ CrtMemBlockHeader 结构的 nBlockUse 成员中设置）如下：  
+ 调试堆中的每个内存块都被分配给五种分配类型之一。 出于泄漏检测和状态报告的目的，对这些类型进行了不同的跟踪和报告。 可以通过使用对调试堆分配函数之一（如 [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)的直接调用来分配块，从而指定块的类型。 调试堆中五种类型的内存块（在 _ CrtMemBlockHeader 结构的 nBlockUse 成员中设置）如下：  
   
  **_NORMAL_BLOCK**  
- 调用 [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 或 [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) 可创建普通块。 如果只打算使用普通块，而不需要客户端块，则可能需要定义 [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)，这将导致所有堆分配调用映射到其调试版本中的调试等效项。 此操作允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
+ 调用 [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) 或 [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) 可创建普通块。 如果只打算使用普通块，而不需要客户端块，则可能需要定义 [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b)，这将导致所有堆分配调用映射到其调试版本中的调试等效项。 此操作允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
   
  `_CRT_BLOCK`  
  许多运行时库函数在内部分配的内存块被标记为 CRT 块，以便它们可以单独进行处理。 因此，泄漏检测和其他操作无需受它们的影响。 分配操作决不能分配、重新分配或释放任何 CRT 类型的块。  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- 客户端提供的挂钩函数（用于转储在“客户端”块中存储的对象）可以使用 [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) 进行安装，然后，每当调试函数转储“客户端”块时均会调用该挂钩函数。 同样，对于调试堆中的每个“客户端”块，可以使用 [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) 来调用应用程序提供的给定函数。  
+ 客户端提供的挂钩函数（用于转储在“客户端”块中存储的对象）可以使用 [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) 进行安装，然后，每当调试函数转储“客户端”块时均会调用该挂钩函数。 同样，对于调试堆中的每个“客户端”块，可以使用 [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) 来调用应用程序提供的给定函数。  
   
  **_FREE_BLOCK**  
  通常，释放的块会从列表中删除。 若要检查释放的内存是否仍在被写入数据或要模拟内存不足的情况，可以选择将释放的块保留在链接列表中，将它们标记为“可用”，并使用已知字节值（当前为 0xDD）进行填充。  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  有可能在一段时间内关闭调试堆操作。 在该时间段内，内存块保留在列表上，但被标记为“忽略”块。  
   
- 若要确定给定块的类型和子类型，请使用 [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) 函数以及 _BLOCK_TYPE 和 _BLOCK_SUBTYPE 宏。 宏的定义（在 crtdbg.h 中）如下所示：  
+ 若要确定给定块的类型和子类型，请使用 [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) 函数以及 _BLOCK_TYPE 和 _BLOCK_SUBTYPE 宏。 宏的定义（在 crtdbg.h 中）如下所示：  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  许多调试堆功能必须从代码内访问。 下一节描述其中一些功能以及如何使用这些功能。  
   
  `_CrtCheckMemory`  
- 例如，可以使用对 [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) 的调用来检查堆在任意点的完整性。 该函数检查堆中的每个内存块，验证内存块头信息有效，并确认尚未修改缓冲区。  
+ 例如，可以使用对 [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) 的调用来检查堆在任意点的完整性。 该函数检查堆中的每个内存块，验证内存块头信息有效，并确认尚未修改缓冲区。  
   
  `_CrtSetDbgFlag`  
- 你可以控制调试堆如何使用内部标志 [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973) 跟踪分配，该标志可以使用 [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) 函数进行读取和设置。 通过更改此标志，可指示调试堆在程序退出时检查是否存在内存泄漏，并报告检测到的任何泄漏情况。 同样，可以指定释放的内存块不从链接列表中删除，从而模拟内存不足的情况。 检查堆时，会对这些释放的块进行整体检查，确保它们未受到干扰。  
+ 你可以控制调试堆如何使用内部标志 [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973) 跟踪分配，该标志可以使用 [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c) 函数进行读取和设置。 通过更改此标志，可指示调试堆在程序退出时检查是否存在内存泄漏，并报告检测到的任何泄漏情况。 同样，可以指定释放的内存块不从链接列表中删除，从而模拟内存不足的情况。 检查堆时，会对这些释放的块进行整体检查，确保它们未受到干扰。  
   
  _crtDbgFlag 标志包含下列位域：  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |函数|描述|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|在应用程序提供的 _CrtMemState 结构中保存堆的快照。|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|比较两个内存状态结构，在第三个状态结构中保存二者之间的差异，如果两个状态不同，则返回 TRUE。|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|转储给定的 _CrtMemState 结构。 该结构可能包含给定时刻调试堆状态的快照或两个快照之间的差异。|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|转储有关在堆的给定快照之后，或是从执行开始时起，分配的所有对象的信息。 如果已使用 _CrtSetDumpClient 安装挂钩函数，则每次它转储 _CLIENT_BLOCK 块时，都会调用应用程序所提供的挂钩函数。|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|确定自程序开始执行以来是否发生过内存泄漏，如果发生过，则转储所有已分配对象。 如果已使用 _CrtSetDumpClient 安装挂钩函数，则每次 _CrtDumpMemoryLeaks 转储 _CLIENT_BLOCK 块时，都会调用应用程序所提供的挂钩函数。|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|在应用程序提供的 _CrtMemState 结构中保存堆的快照。|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|比较两个内存状态结构，在第三个状态结构中保存二者之间的差异，如果两个状态不同，则返回 TRUE。|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|转储给定的 _CrtMemState 结构。 该结构可能包含给定时刻调试堆状态的快照或两个快照之间的差异。|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|转储有关在堆的给定快照之后，或是从执行开始时起，分配的所有对象的信息。 如果已使用 _CrtSetDumpClient 安装挂钩函数，则每次它转储 _CLIENT_BLOCK 块时，都会调用应用程序所提供的挂钩函数。|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|确定自程序开始执行以来是否发生过内存泄漏，如果发生过，则转储所有已分配对象。 如果已使用 _CrtSetDumpClient 安装挂钩函数，则每次 _CrtDumpMemoryLeaks 转储 _CLIENT_BLOCK 块时，都会调用应用程序所提供的挂钩函数。|  
   
  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  识别出错的特定堆分配调用的最简单方法是利用与调试堆中的每个块相关联的唯一分配请求编号。 当某个转储函数报告了有关某个块的信息时，此分配请求编号将括在大括号中（例如，“{36}”）。  
   
- 知道了分配不当的块的分配请求编号后，就可以将该编号传递给 [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) 以创建断点。 执行将在分配块之前中断，你可以回溯，确定哪个例程导致了错误调用。 若要避免重新编译，可在调试器中通过将 _crtBreakAlloc 设置为所得知的分配请求编号来完成同样的操作。  
+ 知道了分配不当的块的分配请求编号后，就可以将该编号传递给 [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) 以创建断点。 执行将在分配块之前中断，你可以回溯，确定哪个例程导致了错误调用。 若要避免重新编译，可在调试器中通过将 _crtBreakAlloc 设置为所得知的分配请求编号来完成同样的操作。  
   
  **创建分配例程的“Debug”版本**  
   

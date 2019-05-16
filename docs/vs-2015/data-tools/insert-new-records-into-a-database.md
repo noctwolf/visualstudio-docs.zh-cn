@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688717"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63384081"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>若要使用 TableAdapter.Update 方法将新记录插入数据库  
   
-1. 将新记录添加到所需<xref:System.Data.DataTable>通过创建一个新<xref:System.Data.DataRow>并将其添加到<xref:System.Data.DataTable.Rows%2A>集合。 有关详细信息，请参阅[如何：将行添加到 DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)。  
+1. 将新记录添加到所需<xref:System.Data.DataTable>通过创建一个新<xref:System.Data.DataRow>并将其添加到<xref:System.Data.DataTable.Rows%2A>集合。 有关详细信息，请参阅[如何：将行添加到 DataTable](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)。  
   
 2. 新行添加到后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过传入一个完整的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。  
   

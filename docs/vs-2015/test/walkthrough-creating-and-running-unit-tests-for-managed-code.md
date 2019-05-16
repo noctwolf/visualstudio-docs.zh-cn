@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e120499893a5b2a85d9a40a57e078f3d8f6586d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695053"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>演练：创建和运行托管代码的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63408486"
 > 此演练使用用于托管代码的 Microsoft 单元测试框架。 测试资源管理器还可以在具有测试资源管理器适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
-> 有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
+> 有关如何从命令行运行测试的信息，请参阅[演练：使用命令行测试实用工具](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。  
   
 ## <a name="prerequisites"></a>系统必备  
   

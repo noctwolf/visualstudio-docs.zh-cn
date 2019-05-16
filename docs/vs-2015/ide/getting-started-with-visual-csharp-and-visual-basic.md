@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674770"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 无论你是否刚开始使用 Visual C# 或 Microsoft Visual Basic，都可以从本教程入手。 入门帮助是一系列向你介绍 Visual C# 和 Visual Basic 的连续课程。 您可以体验其中的乐趣，并编写一些很棒的软件。  
   
- 若要了解 Visual C++，请参阅 [Visual C++ 资源](http://msdn.microsoft.com/vstudio/hh386302.aspx)。  
+ 若要了解 Visual C++，请参阅 [Visual C++ 资源](https://msdn.microsoft.com/vstudio/hh386302.aspx)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [演练：创建简单的应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

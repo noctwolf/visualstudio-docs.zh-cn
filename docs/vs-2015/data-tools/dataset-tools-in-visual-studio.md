@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431129"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697909"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63431129"
 
  数据集对象是一个内存中对象，它实质上是一个最小化数据库。 它包含 DataTable 和 DataColumn，DataRow 对象可以用于存储和修改一个或多个数据库中的数据，而无需维护的开放连接。 数据集维护对其数据的更改的信息，因此可以跟踪更新和应用程序变得重新连接时发送回数据库。
 
- System.Data 命名空间中的.NET Framework 类库中定义数据集和相关的类。 可以创建和修改动态地在代码中的数据集。 有关如何执行此操作的详细信息，请参阅 ADO.NET。 在本部分中的文档演示如何通过使用 Visual Studio 设计器处理数据集。 若要了解的一点： 通过设计器进行的数据集使用 TableAdapter 对象与数据库进行交互而以编程方式进行的数据集使用 DataAdapter 对象。 有关以编程方式创建数据集的信息，请参阅[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。
+ System.Data 命名空间中的.NET Framework 类库中定义数据集和相关的类。 可以创建和修改动态地在代码中的数据集。 有关如何执行此操作的详细信息，请参阅 ADO.NET。 在本部分中的文档演示如何通过使用 Visual Studio 设计器处理数据集。 若要了解的一点： 通过设计器进行的数据集使用 TableAdapter 对象与数据库进行交互而以编程方式进行的数据集使用 DataAdapter 对象。 有关以编程方式创建数据集的信息，请参阅[Dataadapter 和 Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。
 
  如果你的应用程序需要仅从数据库读取数据并不执行更新、 添加，或删除，可以使用 DataReader 对象将数据检索到的泛型列表对象或另一个集合对象通常获取更好的性能。 如果要显示数据，您可以对数据绑定的用户界面集合。
 
@@ -89,7 +89,7 @@ ms.locfileid: "63431129"
 
     - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 
-- 查询并在数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 使[LINQ （语言集成查询）](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的数据通过<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
+- 查询并在数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] 使[LINQ （语言集成查询）](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的数据通过<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)。
 
 - 使用**数据源**窗口来将用户界面控件绑定到的数据集或其单独的列，并指定哪些列是用户可编辑。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 

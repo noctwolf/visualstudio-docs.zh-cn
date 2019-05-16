@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 239fdcea9b8b9613bcdaa2419aba211c2a2a98f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686328"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -206,8 +206,8 @@ ms.locfileid: "63429127"
  当你需要进行部署的应用程序的新版本时，创建新版本命名的新目录 — 1.0.0.1—and 例如，将新的应用程序文件复制到新目录。 接下来，您需要按照前面的步骤来创建和注册一个新的应用程序清单，并更新和部署清单进行签名。 请注意，在这两个在 Mage.exe 中指定相同的更高版本`-New`并`–Update`调用，作为[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]仅更新更高版本中，最重要的最左侧的整数。 如果你使用 MageUI.exe，则可以更新部署清单通过打开它，选择**应用程序引用**选项卡上，单击**选择清单**按钮，并选择已更新应用程序清单。  
   
 ## <a name="see-also"></a>请参阅  
- [Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
- [MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
+ [Mage.exe（清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [MageUI.exe（图形化客户端中的清单生成和编辑工具）](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
  [ndptecclick](../deployment/clickonce-application-manifest.md)

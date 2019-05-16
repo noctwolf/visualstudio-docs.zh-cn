@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684197"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用“并行堆栈”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-**并行堆栈**时你正在调试多线程应用程序窗口非常有用。 其**线程视图**显示应用程序中的所有线程的都调用堆栈信息。 使用该视图可以在线程和这些线程上的堆栈帧之间进行导航。 在托管代码中，**任务视图**显示调用堆栈的<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象。 在本机代码中，**任务视图**所示的调用堆栈[任务组](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)，[并行算法](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)，[异步代理](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)，和[轻量级任务](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)。  
+**并行堆栈**时你正在调试多线程应用程序窗口非常有用。 其**线程视图**显示应用程序中的所有线程的都调用堆栈信息。 使用该视图可以在线程和这些线程上的堆栈帧之间进行导航。 在托管代码中，**任务视图**显示调用堆栈的<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象。 在本机代码中，**任务视图**所示的调用堆栈[任务组](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)，[并行算法](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)，[异步代理](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)，和[轻量级任务](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)。  
   
 ## <a name="threads-view"></a>线程视图  
  下图演示的一个线程从 Main 执行到 A 再执行到 B，然后执行到某个外部代码。 其余两个线程从某个外部代码开始，执行到 A，但其中一个线程继续执行到 B，然后执行到某个外部代码，而另一个线程继续执行到 C，然后执行到某个 AnonymousMethod。  
@@ -121,7 +121,7 @@ ms.locfileid: "58936865"
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Debugger Basics](../debugger/debugger-basics.md) （调试器基础知识）  
  [调试托管代码](../debugger/debugging-managed-code.md)   
- [并行编程](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [并行编程](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
  [使用任务窗口](../debugger/using-the-tasks-window.md)   
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Task 类](../extensibility/debugger/task-class-internal-members.md)

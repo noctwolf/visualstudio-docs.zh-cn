@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a2610c1fef92bb77d150dad7972bb991b6ef4a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445020"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686014"
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "63445020"
   
 1. 使用 Dotfuscator 执行模糊处理。  
   
-2. 使用 Mage.exe 或 MageUI.exe 生成 ClickOnce 清单并签名。 有关详细信息，请参阅[Mage.exe （清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)并[MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+2. 使用 Mage.exe 或 MageUI.exe 生成 ClickOnce 清单并签名。 有关详细信息，请参阅[Mage.exe （清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)并[MageUI.exe（图形化客户端中的清单生成和编辑工具）](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 3. 将文件手动发布（复制）到部署源位置（Web 服务器、UNC 共享或 CD-ROM）。  
   

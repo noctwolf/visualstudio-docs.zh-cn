@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d7df6e4a4bddc2d3e9bf7ab84375a65a6d2c98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700655"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>用层关系图验证代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,7 @@ ms.locfileid: "63437492"
 |隐藏所有禁止显示的错误**错误列表**窗口|中的任意位置右击**错误列表**窗口中，依次指向**管理验证错误**，然后单击**隐藏所有禁止显示的错误**。|  
   
 ## <a name="ValidateAuto"></a> 自动验证代码  
- 每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Team Foundation Build，则可使用能够通过创建自定义 MSBuild 任务指定的封闭签入来执行层验证，并使用生成报告来收集验证错误。 若要创建封闭的签入生成，请参阅[使用封闭的签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。  
+ 每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Team Foundation Build，则可使用能够通过创建自定义 MSBuild 任务指定的封闭签入来执行层验证，并使用生成报告来收集验证错误。 若要创建封闭的签入生成，请参阅[使用封闭的签入生成过程以验证更改](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>在本地生成期间自动验证代码  
   
@@ -197,15 +197,15 @@ ms.locfileid: "63437492"
   
    有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。 有关 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的详细信息，请参阅：  
   
-- [生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [生成应用程序](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
-- [在生成过程中使用默认模板](http://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
+- [在生成过程中使用默认模板](https://msdn.microsoft.com/library/43930b12-c21b-4599-a980-2995e3d16e31)  
   
-- [修改基于 UpgradeTemplate.xaml 的旧式生成](http://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
+- [修改基于 UpgradeTemplate.xaml 的旧式生成](https://msdn.microsoft.com/library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)  
   
-- [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [自定义生成过程模板](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
-- [监视运行的生成的进度](http://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
+- [监视运行的生成的进度](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
 ## <a name="TroubleshootingValidation"></a> 层验证问题疑难解答  
  下表描述了层验证问题及其解决方法。 这些问题不同于代码与设计发生冲突而导致出现的错误。 有关这些错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。  

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680502"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>如何：创建可以为 null 的类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63422819"
   
   类设计器显示可以为 null 的类型，就像显示其基础类型一样。  
   
-  若要深入了解 Visual C# 中可以为 null 的类型，请参阅[可以为 null 的类型](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
+  若要深入了解 Visual C# 中可以为 null 的类型，请参阅[可以为 null 的类型](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ ms.locfileid: "63422819"
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Nullable%601>   
- [可以为 null 的类型](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [使用可以为 null 的类型](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [如何：标识可以为 Null 的类型](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [可以为 null 的值类型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [可以为 null 的类型](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [使用可以为 null 的类型](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [如何：标识可以为 Null 的类型](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [可以为 null 的值类型](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

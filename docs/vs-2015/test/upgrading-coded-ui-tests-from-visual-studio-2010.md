@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695102"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63445892"
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。 有关详细信息，请参见 [从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
+> Visual Studio 包括多个测试项目类型。 如果创建新的编码 UI 测试，将在编码 UI 测试项目类型中创建。 有关详细信息，请参见 [从 Visual Studio 的早期版本升级测试](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。
 
 > [!WARNING]
 > 在[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 或与 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 并行安装的 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] 中打开包含编码 UI 测试的 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]测试项目时，必须重新生成该测试项目。
@@ -64,4 +64,4 @@ ms.locfileid: "63445892"
 - **负载测试：** 如果您的计算机上运行负载测试的局域网 (LAN) 配置文件以外的网络类型运行 Windows 8，网络模拟器驱动程序将导致操作系统崩溃。 有关详细信息，请参见 [知识库文章 2736182](http://support.microsoft.com/kb/2736182)。
 
 ## <a name="see-also"></a>请参阅
- [移植、 迁移和升级 Visual Studio 项目](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[从 Visual Studio 的早期版本升级测试](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[使用 UI 自动化来测试你的代码](../test/use-ui-automation-to-test-your-code.md)[生成编码的 UI 测试从现有操作录制](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[支持的配置和平台的编码的 UI 测试和操作录制](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [移植、 迁移和升级 Visual Studio 项目](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)[从 Visual Studio 的早期版本升级测试](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)[使用 UI 自动化来测试你的代码](../test/use-ui-automation-to-test-your-code.md)[生成编码的 UI 测试从现有操作录制](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)[支持的配置和平台的编码的 UI 测试和操作录制](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

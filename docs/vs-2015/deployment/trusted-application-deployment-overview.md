@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427117"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686368"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "63427117"
   
 - <xref:System.Security.Cryptography?displayProperty=fullName> 命名空间。  
   
-- CertMgr.exe，这是 Internet Explorer 的一个组件，因此存在于 Windows 98 及所有更高版本中。 有关详细信息，请参阅[Certmgr.exe （证书管理器工具）](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
+- CertMgr.exe，这是 Internet Explorer 的一个组件，因此存在于 Windows 98 及所有更高版本中。 有关详细信息，请参阅[Certmgr.exe （证书管理器工具）](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb)。  
   
 ### <a name="create-a-clickonce-application"></a>创建 ClickOnce 应用程序  
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序是一个结合有可描述应用程序并提供安装参数的清单文件的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 客户端应用程序。 可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 中的“发布”  命令将你的程序转换成 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应用程序。 或者，可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 附带的工具生成 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]部署所需的所有文件。 有关详细步骤[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，请参阅[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
@@ -88,12 +88,12 @@ ms.locfileid: "63427117"
  受信任的应用程序部署特定于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]且只能与 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序一起使用。  
   
 ### <a name="sign-the-deployment"></a>对部署进行签名  
- 获取证书后，必须用它对部署进行签名。 如果正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 发布者向导部署应用程序，此向导将在你自身尚未指定证书时自动为你生成一个测试证书。 但是，还可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目设计器窗口提供由 CA 提供的证书。  另请参阅[如何：发布 ClickOnce 应用程序使用发布向导](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))或[如何：使用发布向导发布 ClickOnce 应用程序](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
+ 获取证书后，必须用它对部署进行签名。 如果正在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 发布者向导部署应用程序，此向导将在你自身尚未指定证书时自动为你生成一个测试证书。 但是，还可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目设计器窗口提供由 CA 提供的证书。  另请参阅[如何：发布 ClickOnce 应用程序使用发布向导](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\))或[如何：使用发布向导发布 ClickOnce 应用程序](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\))。  
   
 > [!CAUTION]
 > 我们不建议使用测试证书来部署应用程序。  
   
- 还可以使用 Mage.exe 或 MageUI.exe SDK 工具来签名应用程序。 有关详细信息，请参见[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 与部署签名相关的命令行选项的完整列表，请参阅[Mage.exe （清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
+ 还可以使用 Mage.exe 或 MageUI.exe SDK 工具来签名应用程序。 有关详细信息，请参见[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。 与部署签名相关的命令行选项的完整列表，请参阅[Mage.exe （清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)。  
   
 ### <a name="publish-the-application"></a>发布应用程序  
  一旦签名了 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 清单，应用程序即准备好发布到安装位置。 安装位置可以是 Web 服务器、文件共享或本地磁盘。 当客户端首次访问部署清单时，信任关系管理器必须选择安装的受信任发布者是否已授予 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序在更高级别的信任运行的权限。 信任关系管理器通过将用于对签名部署的证书和客户端受信任的发布者存储区中存储的证书进行比较来做出选择。 如果信任关系管理器找到匹配项，则应用程序以高信任级别运行。  
@@ -105,5 +105,5 @@ ms.locfileid: "63427117"
  可以使用受信任的应用程序部署通过 Web 或企业文件共享将提升的信任授予 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序。 无需对 CD 上分布的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序使用受信任的应用程序部署，因为默认情况下，以向这些应用程序授予完全信任。  
   
 ## <a name="see-also"></a>请参阅  
- [Mage.exe（清单生成和编辑工具）](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe（清单生成和编辑工具）](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

@@ -12,12 +12,12 @@ ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4e85732221e2d4d5024ba295cac551ab45f1ee12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7274d621e47c9c705cc0ce6bc4ad49f24e144f59
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937586"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683282"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugQueryEngine2 : IUnknown
  DE 实现此接口上实现最常见的 DE 接口的对象 (如[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)， [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)，并[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) 中若要允许访问的顺序[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) DE 本身的接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)典型的 DE 接口来获取此接口上。  
+ 调用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)典型的 DE 接口来获取此接口上。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugQueryEngine2`。  

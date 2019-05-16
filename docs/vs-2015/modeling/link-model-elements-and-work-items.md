@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440960"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674216"
 ---
 # <a name="link-model-elements-and-work-items"></a>链接模型元素和工作项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ ms.locfileid: "63440960"
 1. 在“团队资源管理器” 中，确保你已连接团队项目，该团队项目中的模型元素已链接到工作项。  
   
     > [!NOTE]
-    > 你只能使用团队资源管理器（而不是 Team Web Access）查看链接的模型元素。 确保你的工作区已映射到包含建模图或元素的建模项目。 如果你没有工作区，则必须创建它。 请参阅 [疑难解答](#Troubleshooting) 和 [创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
+    > 你只能使用团队资源管理器（而不是 Team Web Access）查看链接的模型元素。 确保你的工作区已映射到包含建模图或元素的建模项目。 如果你没有工作区，则必须创建它。 请参阅 [疑难解答](#Troubleshooting) 和 [创建和使用工作区](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
   
 2. 打开工作项，选择 **“链接”**。 在 **“模型链接”** 下，打开链接的模型元素的快捷菜单。 选择 **“打开链接项”**。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "63440960"
   
 |**问题**|**可能的原因**|**解决方法**|  
 |---------------|------------------------|--------------------|  
-|无法找到要链接的模型元素。|此元素可能位于 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中某建模项目的某个关系图上。 您可能没有映射到该关系图的工作区。|将您的工作区映射到该建模项目和关系图。 如果您没有工作区，则必须创建它。<br /><br /> 针对此问题显示的错误消息包含的路径可用来映射您的工作区。<br /><br /> 请参阅 [创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。|  
+|无法找到要链接的模型元素。|此元素可能位于 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中某建模项目的某个关系图上。 您可能没有映射到该关系图的工作区。|将您的工作区映射到该建模项目和关系图。 如果您没有工作区，则必须创建它。<br /><br /> 针对此问题显示的错误消息包含的路径可用来映射您的工作区。<br /><br /> 请参阅 [创建和使用工作区](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。|  
 |无法找到链接的模型元素。|链接元素可能位于已移动、重命名或删除的关系图上。|1.在工作项中，删除指向模型元素的链接。<br />2.创建从工作项到模型元素的新链接。|  
 |工作项没有你需要的链接模型元素。|仅在链接是从工作项创建的情况下，工作项才显示链接的层元素。 如果您的团队不使用 [!INCLUDE[esprscc](../includes/esprscc-md.md)]，则使用关系图的本地路径创建链接。 如果建模项目及其关系图位于 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中，则能够访问项目的所有团队成员都可以查看工作项中链接的元素。|尝试刷新工作项。|  
 |删除从工作项到模型元素的链接并不会删除从模型元素到工作项的链接。||从模型元素开始删除与工作项的链接。|  

@@ -12,12 +12,12 @@ ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dca9d3c8de956faf2dab5c9090c9963a7c9fbea0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b574ae45dafed11ed28047859676524054951512
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678973"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE 实现此接口以支持对源代码进行更改。 此接口通常实现上实现的相同对象[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 获取通过调用此接口<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口获取通过调用<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口通过调用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口。  
+ [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] 获取通过调用此接口<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口获取通过调用<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口通过调用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  下表显示的方法`IDebugDocumentTextEvents2`。  

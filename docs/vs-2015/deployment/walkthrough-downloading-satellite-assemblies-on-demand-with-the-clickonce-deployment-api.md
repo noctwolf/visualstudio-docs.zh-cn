@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84de037661992d1ee185bea2a70db74dac5e618
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686355"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载附属程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63417058"
   
  如中所述[本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)，可以包括适用于多个区域性相同的多个附属程序集[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。  
   
- 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中执行此任务。  另请参阅[演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[演练：下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中执行此任务。  另请参阅[演练：下载按需使用 ClickOnce 部署 API 使用设计器的附属程序集](https://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[演练：下载附属程序集使用 ClickOnce 部署使用设计器的 API 按需](https://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
   
 > [!NOTE]
 > 出于测试目的，下面的代码示例以编程方式将区域性设置为 `ja-JP`。 有关如何为生产环境调整此代码的信息，请参阅本主题中后面的“后续步骤”部分。  
@@ -51,9 +51,9 @@ ms.locfileid: "63417058"
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2. 使用生成你的应用程序的附属程序集[Resgen.exe （资源文件生成器）](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+2. 使用生成你的应用程序的附属程序集[Resgen.exe （资源文件生成器）](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)或[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-3. 使用 MageUI.exe 生成应用程序清单，或打开现有的应用程序清单。 有关此工具的详细信息，请参阅[MageUI.exe（图形化客户端中的清单生成和编辑工具）](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
+3. 使用 MageUI.exe 生成应用程序清单，或打开现有的应用程序清单。 有关此工具的详细信息，请参阅[MageUI.exe（图形化客户端中的清单生成和编辑工具）](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)。  
   
 4. 单击“文件”  选项卡。  
   

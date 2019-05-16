@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 164fe64f360e41c06ef3f7bfd2d8091a6ebefecd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432927"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679936"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,4 +110,4 @@ ms.locfileid: "63432927"
  [\<compatibleFrameworks > 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md)   
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
- [配置文件架构](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
+ [配置文件架构](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)

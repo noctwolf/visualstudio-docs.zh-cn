@@ -9,17 +9,17 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756486"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691697"
 ---
 # <a name="performance-rules-by-id"></a>按 ID 列出的性能规则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-警告|说明​​|  
+警告|描述|  
 |-------------|-----------------|  
 |[DA0001：将 StringBuilder 用于串联](../profiling/da0001-use-stringbuilder-for-concatenations.md)|对 System.String.Concat 的调用是分析数据的重要组成部分。 请考虑使用 <xref:System.Text.StringBuilder> 类从多个段构造字符串。|  
 |[DA0002：缺少 VSPerfCorProf.dll](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|探查器在分析运行期间找不到 VSPerfCorProf.dll。 当使用命令行工具收集探查器数据，但未使用 VSPerfCLREnv.cmd 工具初始化必要的环境变量时，将出现此警告。|  
@@ -29,7 +29,7 @@ ms.locfileid: "54756486"
 |[DA0006：为值类型重写 Equals()](../profiling/da0006-override-equals-parens-for-value-types.md)|对 Equals 方法或公共值类型的相等运算符的调用在分析数据中占很大比例。 请考虑实施更有效的方法。|  
 |[DA0007：避免对控制流使用异常](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|分析数据中调用了速率较高的 .NET Framework 异常处理程序。 请考虑使用其他控制流逻辑，以便减少引发的异常数。|  
 |[DA0008：已收集的样本极少](../profiling/da0008-few-samples-collected.md)|分析运行期间仅收集了少量样本。 请考虑运行更长的时间或使用更快的采样率，以获取更有意义的结果。|  
-|[DA0009：JIT 所占时间百分比很高](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|实时 (JIT) 编译器所用的时间占应用程序执行时间的百分比很大。|  
+|[DA0009：JIT 所占时间百分比很高](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|实时 (JIT) 编译器所用的时间占应用程序执行时间的百分比很大。|  
 |[DA0010：高开销 GetHashCode](../profiling/da0010-expensive-gethashcode.md)|对该类型的 GetHashCode 方法的调用在分析数据中占很大比例或此方法分配内存。|  
 |[DA0011：高开销 CompareTo](../profiling/da0011-expensive-compareto.md)|类型的 CompareTo 方法开销巨大或分配内存。|  
 |[DA0012：大量反射](../profiling/da0012-significant-amount-of-reflection.md)|对 System.Reflection 方法（如 InvokeMember 和 GetMember）或 Type 方法（如 MemberInvoke）的调用是分析数据的重要组成部分。 如果可以，请考虑用对依赖程序集的方法的早期绑定替代这些方法。|  

@@ -8,12 +8,12 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e626e532c462199d38ddb3f1044bab25d389995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 281f3823d22ee0e290e4b6bb32a8280f4773a592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679899"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription 元素 （VSIX 语言包架构）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,4 +62,4 @@ ms.locfileid: "62568946"
 ## <a name="see-also"></a>请参阅  
  [VSX 语言包架构参考](../extensibility/vsx-language-pack-schema-reference.md)   
  [本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)   
- [VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

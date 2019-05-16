@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686042"
 ---
 # <a name="rename-refactoring-c"></a>重命名重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439961"
 |-----------------|----------------------|  
 |字段|声明和此字段的用法更改为新的名称。|  
 |本地变量|声明和变量的用法更改为新的名称。|  
-|方法|该方法并对该方法的所有引用的名称更改为新名称。 **注意：** 当您重命名的扩展方法时，重命名操作将传播到方法的作用域，而不考虑扩展方法是否正在使用作为静态方法或实例方法中的所有实例。 有关详细信息，请参阅[扩展方法](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
+|方法|该方法并对该方法的所有引用的名称更改为新名称。 **注意：** 当您重命名的扩展方法时，重命名操作将传播到方法的作用域，而不考虑扩展方法是否正在使用作为静态方法或实例方法中的所有实例。 有关详细信息，请参阅[扩展方法](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51)。|  
 |命名空间|命名空间的名称更改为新的名称在声明中，所有`using`语句和完全限定的名称。 **注意：** 重命名命名空间时[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]还会更新**Default Namespace**上的属性**应用程序**页**项目设计器**。 此属性不能通过选择重置**撤消**从**编辑**菜单。 若要重置**默认 Namespace**属性值，必须修改中的属性**项目设计器**。 有关详细信息，请参阅[应用程序页](../ide/reference/application-page-project-designer-csharp.md)。|  
 |属性|声明和用法的属性更改为新的名称。|  
 |类型|所有声明和类型的所有用法更改为新名称，包括构造函数和析构函数。 为分部类型重命名操作将会传播到所有部分。|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>请参阅  
  [重构 (C#)](../csharp-ide/refactoring-csharp.md)   
- [匿名类型](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [匿名类型](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

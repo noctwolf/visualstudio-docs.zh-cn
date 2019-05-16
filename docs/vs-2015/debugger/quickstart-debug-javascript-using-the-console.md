@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446114"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687585"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,4 +283,4 @@ ms.locfileid: "63446114"
  [调试 HTML、CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [快速入门：调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   
- [产品支持和辅助功能](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [产品支持和辅助功能](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

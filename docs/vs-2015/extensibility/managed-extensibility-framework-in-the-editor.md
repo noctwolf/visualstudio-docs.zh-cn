@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f19b71c86d972b59a9d46f379bf7ec93f63aeb9a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084023"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679957"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>编辑器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60084023"
   
  MEF 被包含在.NET Framework 版本 4 System.ComponentModel.Composition.dll 程序集。  
   
- 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+ 有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
   
 ### <a name="component-parts-and-composition-containers"></a>组件的各部分和撰写容器  
  某一组件部分是类还是可以执行一个 （或两者） 的以下类的成员：  

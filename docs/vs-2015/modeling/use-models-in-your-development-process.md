@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 92e8e236be1c6aa07709d03274a4c964b17b1bad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700717"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ ms.locfileid: "60038403"
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>请参阅  
- [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [在敏捷开发中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [为您的应用程序创建模型](../modeling/create-models-for-your-app.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)   

@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e1096e137d3b8e634d404dd5e7158d37478d6fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de270abfede0b128e63999ae8654a2ea72e073f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410419"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703802"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-检索一个标志，指定是否已编译的编译单位或函数与缓冲区溢出安全检查 (例如， [/GS （缓冲区安全检查）](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)编译器开关)。  
+检索一个标志，指定是否已编译的编译单位或函数与缓冲区溢出安全检查 (例如， [/GS （缓冲区安全检查）](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)编译器开关)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -52,4 +52,4 @@ HRESULT get_hasSecurityChecks(
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS（缓冲区安全检查）](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)
+ [/GS（缓冲区安全检查）](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)

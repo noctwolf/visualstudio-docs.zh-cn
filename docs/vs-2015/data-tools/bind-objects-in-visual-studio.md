@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439490"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683155"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio 中的绑定对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 - 将数据从对象保存到数据库。
 
 > [!NOTE]
-> 为了更好地了解，并为此页上的示例提供的上下文，我们建议你完成以下：[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 该演练创建此处所述的对象。
+> 为了更好地了解，并为此页上的示例提供的上下文，我们建议你完成以下：[演练：连接到对象 （Windows 窗体） 中的数据](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。 该演练创建此处所述的对象。
 
 ### <a name="loaddata-into-objects"></a>为对象的 Loaddata
  对于此示例中，您将数据加载到您的对象使用 Tableadapter。 默认情况下，使用两种类型的方法，从数据库提取数据并填充数据的表创建 Tableadapter。
@@ -75,7 +75,7 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>创建类型化的对象的集合
- 可以为您的对象，创建集合类，也可以使用自动提供的类型化的集合[BindingSource 组件](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)。
+ 可以为您的对象，创建集合类，也可以使用自动提供的类型化的集合[BindingSource 组件](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)。
 
  当创建对象的自定义集合类时，我们建议从继承<xref:System.ComponentModel.BindingList%601>。 此泛型类提供功能来管理你的集合，以及能够引发事件通知发送到 Windows 窗体中的数据绑定基础结构。
 
@@ -92,9 +92,9 @@ Visual Studio 提供用于为你的应用程序中的数据源使用自定义对
 ### <a name="addobjects-to-a-collection"></a>Addobjects 到集合
  通过调用的对象添加到集合`Add`方法的自定义集合类或的<xref:System.Windows.Forms.BindingSource>。
 
- 有关将添加到集合使用的示例<xref:System.Windows.Forms.BindingSource>，请参阅`LoadCustomers`中的方法[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
+ 有关将添加到集合使用的示例<xref:System.Windows.Forms.BindingSource>，请参阅`LoadCustomers`中的方法[演练：连接到对象 （Windows 窗体） 中的数据](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
 
- 将对象添加到自定义集合的示例，请参阅`LoadOrders`中的方法[演练：连接到对象 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
+ 将对象添加到自定义集合的示例，请参阅`LoadOrders`中的方法[演练：连接到对象 （Windows 窗体） 中的数据](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05)。
 
 > [!NOTE]
 > `Add`方法会自动提供为自定义集合时从继承<xref:System.ComponentModel.BindingList%601>。

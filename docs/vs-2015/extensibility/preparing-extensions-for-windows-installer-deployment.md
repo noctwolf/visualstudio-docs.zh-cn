@@ -10,12 +10,12 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 45355ff34b2a088c63f6d303e771d7a5008cb80c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 76d7f879fade99914bf3f56ade0ec1270e14f4c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694597"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>准备 Windows Installer 部署的扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,5 +57,5 @@ Windows Installer 程序包 (MSI) 不能用于部署 VSIX 包。 但是，您可
 5. 将剩余的文件添加到你的安装程序项目。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio 安装程序部署](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
- [演练：创建自定义操作](http://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)
+ [Visual Studio 安装程序部署](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)   
+ [演练：创建自定义操作](https://msdn.microsoft.com/4bd4b63a-2b91-431e-839c-5752443f0eaf)

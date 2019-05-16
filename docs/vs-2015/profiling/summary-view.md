@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674171"
 ---
 # <a name="summary-view"></a>“摘要”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ ms.locfileid: "60110891"
 |**显示已修整的调用树**|在“调用树”视图中，显示性能开销最大的的执行路径。 有关详细信息，请参阅[“调用关系树”视图](../profiling/call-tree-view.md)。|  
 |**显示热行**|不可用于使用检测方法收集的分析数据。 在“行”视图中，显示性能开销最大的源代码行。 有关详细信息，请参阅[“行”视图](../profiling/lines-view.md)。|  
 |**比较报告**|显示“选择要比较的分析文件”对话框，可在其中指定要与当前文件进行比较的另一个分析数据文件。 有关详细信息，请参阅[比较性能数据文件](../profiling/comparing-performance-data-files.md)。|  
-|**导出报告数据**|显示“导出报告”对话框，可在其中指定一个或多个要保存为逗号分隔值 (.csv) 文件或 .xml 文件的报告视图。 有关详细信息，请参阅[如何：分析工具报告导出](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451)。|  
-|**保存已分析的报告**|将当前分析数据文件保存为 .vsps 文件，该文件可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 界面中更快速地打开。 有关详细信息，请参阅[如何：保存已分析的分析数据文件](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)。|  
+|**导出报告数据**|显示“导出报告”对话框，可在其中指定一个或多个要保存为逗号分隔值 (.csv) 文件或 .xml 文件的报告视图。 有关详细信息，请参阅[如何：分析工具报告导出](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451)。|  
+|**保存已分析的报告**|将当前分析数据文件保存为 .vsps 文件，该文件可在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 界面中更快速地打开。 有关详细信息，请参阅[如何：保存已分析的分析数据文件](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)。|  
 |**筛选报告数据**|显示分析报告筛选器窗格，可在其中指定条件来限制报告视图中显示的数据。 有关详细信息，请参阅[性能报告视图筛选器](../profiling/performance-report-view-filter.md)|  
 |**切换全屏显示**|切换报告视图的全屏模式。|  
   

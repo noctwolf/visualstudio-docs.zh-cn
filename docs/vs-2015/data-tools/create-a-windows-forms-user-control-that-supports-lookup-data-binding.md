@@ -18,19 +18,19 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df037f4ee9bb6a89b6d74ffd454abc5bdb13dd8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a54558c2aa760ea9bb318b527a49d01efcfbef04
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065332"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694076"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>创建支持查找数据绑定的 Windows 窗体用户控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Windows 窗体上显示数据时，你可以从“工具箱”中选择现有的控件，或者，如果应用程序需要标准控件中无法实现的功能时，你还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute> 的控件可以包含三个属性，这些属性可以绑定到数据。 此类控件类似于 <xref:System.Windows.Forms.ComboBox>。  
   
- 控件创作的详细信息，请参阅[在设计时开发 Windows 窗体控件](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
+ 控件创作的详细信息，请参阅[在设计时开发 Windows 窗体控件](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
   
  创作用于数据绑定方案中的控件时，需要实现以下数据绑定属性之一：  
   

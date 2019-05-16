@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421130"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703761"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "63421130"
  我们建议你了解以下概念和技术编写您自己的编辑器扩展插件之前。  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>Windows Presentation Foundation (WPF) 和编辑器扩展  
- Visual Studio 编辑器用户界面 (UI) 通过使用 Windows Presentation Foundation (WPF) 实现。 WPF 提供了丰富的视觉体验和业务逻辑分离开来代码的可视方面的一致的编程模型。 创建编辑器扩展时，可以使用多个 WPF 元素和功能。 有关详细信息，请参阅[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)。  
+ Visual Studio 编辑器用户界面 (UI) 通过使用 Windows Presentation Foundation (WPF) 实现。 WPF 提供了丰富的视觉体验和业务逻辑分离开来代码的可视方面的一致的编程模型。 创建编辑器扩展时，可以使用多个 WPF 元素和功能。 有关详细信息，请参阅[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)。  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed 的 Extensibility Framework (MEF) 和编辑器扩展  
  在 Visual Studio 编辑器使用 Managed Extensibility Framework (MEF) 来管理其组件和扩展。 MEF 还允许开发人员轻松地创建主机应用程序类似于 Visual Studio 的扩展。 在此框架中，定义根据 MEF 协定的扩展，并将其导出为 MEF 组件部分。 主机应用程序通过查找、 注册它们，并确保其应用到的正确的上下文来管理组件的各部分。  

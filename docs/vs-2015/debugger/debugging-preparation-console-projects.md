@@ -18,17 +18,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ac87f6c5ef5fcf9fc7ca5532fe7436dedb8ba97
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936521"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691221"
 ---
 # <a name="debugging-preparation-console-projects"></a>调试准备：控制台项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项。 有关详细信息，请参阅[Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)，和[调试准备：Windows 窗体应用程序 (.NET)](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：  
+准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项。 有关详细信息，请参阅[Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)，和[调试准备：Windows 窗体应用程序 (.NET)](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：  
   
 - C# 控制台应用程序  
   
@@ -38,7 +38,7 @@ ms.locfileid: "58936521"
   
 - C++ 控制台应用程序 (Win32)  
   
-  可能必须为控制台应用程序指定命令行自变量。 有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[的 C# 调试配置项目设置](../debugger/project-settings-for-csharp-debug-configurations.md).  
+  可能必须为控制台应用程序指定命令行自变量。 有关详细信息，请参阅[的项目设置C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)， [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，或[项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)。  
   
   同所有项目属性一样，这些参数将在调试会话之间和 Visual Studio 会话之间保留。 因此，如果控制台应用程序是以前调试过的，请记得在“\<项目”>“属性页”对话框中可能输入了先前会话中的参数。  
   

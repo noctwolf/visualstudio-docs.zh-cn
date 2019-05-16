@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 814327befe538bfaa102b198988e76dbd52090bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432389"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705688"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63432389"
   
  例如，在域特定语言工具 （DSL 工具），域类的属性具有默认值通过使用域类中，而是用户的名称的显示名称可以在设计时更改值或其重置为计算的值。  
   
- 在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
+ 在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
   
 - 跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。  
   

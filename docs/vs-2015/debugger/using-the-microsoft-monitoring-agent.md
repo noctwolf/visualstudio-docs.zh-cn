@@ -9,24 +9,24 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48c020c978b593a94ecd4d60109245f6acb718b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684095"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent)。
 
-你可使用 **Microsoft 监视代理**本地监视 IIS 托管的 ASP.NET Web 应用和 SharePoint 2010 或 2013 应用程序，以查找错误、性能问题或其他问题。 可将代理发出的诊断事件保存为 IntelliTrace 日志（也就是 .iTrace）文件。 您可以打开日志文件中 Visual Studio Enterprise （但不是 Professional 或 Community 版本） 的所有 Visual Studio 诊断工具调试问题。 你也可运行 **跟踪** 模式中的代理，进而收集 IntelliTrace 诊断数据及方法数据。 Microsoft Monitoring Agent 可以与 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 和 [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx)集成。 安装时，Microsoft 监视代理确实会改变目标系统的环境。  
+你可使用 **Microsoft 监视代理**本地监视 IIS 托管的 ASP.NET Web 应用和 SharePoint 2010 或 2013 应用程序，以查找错误、性能问题或其他问题。 可将代理发出的诊断事件保存为 IntelliTrace 日志（也就是 .iTrace）文件。 您可以打开日志文件中 Visual Studio Enterprise （但不是 Professional 或 Community 版本） 的所有 Visual Studio 诊断工具调试问题。 你也可运行 **跟踪** 模式中的代理，进而收集 IntelliTrace 诊断数据及方法数据。 Microsoft Monitoring Agent 可以与 [Application Insights](/azure/azure-monitor/app/app-insights-overview) 和 [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx)集成。 安装时，Microsoft 监视代理确实会改变目标系统的环境。  
   
 > [!NOTE]
 > 你也可在不改变目标环境的前提下，使用 **IntelliTrace 独立收集器**来收集远程计算机上的 Web、SharePoint、WPF 和 Windows 窗体应用的 IntelliTrace 诊断数据和方法数据。 与在 **监视** 模式下运行 Microsoft 监视代理相比，独立收集器对性能的影响更大。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
- 如果你使用 System Center 2012，请使用配有 Operations Manager 的 Microsoft 监视代理，以便获取问题警报并创建包含转向已保存 IntelliTrace 日志的链接的 Team Foundation Server 工作项。 随后，你可以将这些工作项分配给其他程序进一步调试。 请参阅 [集成 Operations Manager 与开发过程](http://technet.microsoft.com/library/jj614609.aspx) 和 [使用 Microsoft Monitoring Agent 进行监视](http://technet.microsoft.com/library/dn465153.aspx)。  
+ 如果你使用 System Center 2012，请使用配有 Operations Manager 的 Microsoft 监视代理，以便获取问题警报并创建包含转向已保存 IntelliTrace 日志的链接的 Team Foundation Server 工作项。 随后，你可以将这些工作项分配给其他程序进一步调试。 请参阅 [集成 Operations Manager 与开发过程](https://technet.microsoft.com/library/jj614609.aspx) 和 [使用 Microsoft Monitoring Agent 进行监视](https://technet.microsoft.com/library/dn465153.aspx)。  
   
  开始前，请检查版本及已部署代码的源和符号是否相匹配。 开始调试并浏览 IntelliTrace 日志中的诊断事件时，这可助你直接转向相应的应用程序代码。 [设置版本](../debugger/diagnose-problems-after-deployment.md) 以便 Visual Studio 可自动查找并打开匹配已部署代码的源。  
   
@@ -37,13 +37,13 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
 3. [步骤 3：保存已记录的事件](#SaveEvents)  
   
 ## <a name="SetUpMonitoring"></a> 步骤 1：设置 Microsoft 监视代理  
- 设置 Web 服务器上的独立代理，以便在不更改应用程序的前提下实施本地监视。 如果你使用 System Center 2012，请参阅 [安装 Microsoft 监视代理](http://technet.microsoft.com/library/dn465156.aspx)。  
+ 设置 Web 服务器上的独立代理，以便在不更改应用程序的前提下实施本地监视。 如果你使用 System Center 2012，请参阅 [安装 Microsoft 监视代理](https://technet.microsoft.com/library/dn465156.aspx)。  
   
 ### <a name="SetUpStandaloneMMA"></a> 设置独立代理  
   
 1. 确保：  
   
-    - Web 服务器正在运行 [Internet Information Services (IIS) 的支持版本](http://technet.microsoft.com/library/dn465154.aspx)。  
+    - Web 服务器正在运行 [Internet Information Services (IIS) 的支持版本](https://technet.microsoft.com/library/dn465154.aspx)。  
   
     - 你的 Web 服务器包含 .NET Framework 3.5、4 或 4.5。  
   
@@ -77,7 +77,7 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
   
      **PS C:>Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
-3. [请访问 TechNet](http://technet.microsoft.com/systemcenter/default) 以获取最新的帮助内容。  
+3. [请访问 TechNet](https://technet.microsoft.com/systemcenter/default) 以获取最新的帮助内容。  
   
 #### <a name="FullPermissionsITLog"></a> 问：如何设置访问应用程序池的权限？  
  **答：** 使用 Windows icacls 命令或使用 Windows 资源管理器（或文件资源管理器）。 例如：  
@@ -111,7 +111,7 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
   7. 确保应用程序池拥有“读取和执行”权限。  
   
 ## <a name="MonitorEvents"></a> 步骤 2：开始监视应用  
- 使用 Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) 命令开始监视应用。 如果你使用 System Center 2012，请参阅 [使用 Microsoft 监视代理监视 Web 应用程序](http://technet.microsoft.com/library/dn465157.aspx)。  
+ 使用 Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) 命令开始监视应用。 如果你使用 System Center 2012，请参阅 [使用 Microsoft 监视代理监视 Web 应用程序](https://technet.microsoft.com/library/dn465157.aspx)。  
   
 1. 在 Web 服务器上，以管理员身份打开“Windows PowerShell”  或“Windows PowerShell ISE”  命令提示符窗口。  
   
@@ -137,7 +137,7 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
   
     |||  
     |-|-|  
-    |*"\<appName>"*|指定 IIS 中的网站路径及 Web 应用名。 如果愿意，你也可以加入 IIS 路径。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 或<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> 你可在 IIS 管理器中找到此路径。 例如：<br /><br /> ![IIS 网站和 web 应用的路径](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> 你还可以使用 [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) 命令。|  
+    |*"\<appName>"*|指定 IIS 中的网站路径及 Web 应用名。 如果愿意，你也可以加入 IIS 路径。<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> 或<br /><br /> **"IIS:\sites** *\\<IISWebsiteName\>\\<IISWebAppName\>"*<br /><br /> 你可在 IIS 管理器中找到此路径。 例如：<br /><br /> ![IIS 网站和 web 应用的路径](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> 你还可以使用 [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) 和 [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) 命令。|  
     |*\<monitoringMode>*|指定监视模式：<br /><br /> <ul><li>**监视**：记录异常事件及性能事件相关的全部细节（包含最小的细节）。 该模式使用默认的收集计划。</li><li>**跟踪**：通过使用指定的收集计划来记录函数级细节或监视 SharePoint 2010 和 SharePoint 2013 应用程序。 该模式可能导致应用的运行速度更慢。<br /><br /> <ul><li>[问：如何设置访问应用程序池的权限？](#FullPermissionsITLog)</li><li>[问：如何在应用速度不减的前提下获取最多数据？](#Minimizing)</li></ul><br />     该示例记录一个托管在 SharePoint 站点上的 SharePoint 应用的事件：<br /><br />     **Start-webapplicationmonitoring"FabrikamSharePointSite\FabrikamSharePointApp"跟踪"C:\Program Files\Microsoft 监视 Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""C:\IntelliTraceLogs"**</li><li>**自定义**：通过使用指定的自定义收集计划来记录自定义细节。 如果在开始监视后修改收集计划，则必须重启监视。</li></ul>|  
     |*"\<outputPath>"*|指定存储 IntelliTrace 日志的目录完整路径。 确保在开始监视前已创建此目录。|  
     |*\<UInt32>*|指定 IntelliTrace 日志的上限大小。 IntelliTrace 日志的默认上限大小为 250 MB。<br /><br /> 日志达到此上限时，代理会覆盖最早的项以便为更多的项让出空间。 要更改此上限，可在收集计划中使用 **-MaximumFileSizeInMegabytes** 选项或修改 `MaximumLogFileSize` 属性。|  
@@ -231,7 +231,7 @@ Visual Studio 的最新文档，请参阅[使用 Microsoft Monitoring Agent](htt
   代理只记录 `id`方法返回的 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 对象的值。 然而，除记录 `Address` 对象是否为空以外，代理不会收集有关该对象的其他信息。 代理也不会记录 `AlterEmployee` 方法中局部变量相关的数据，除非其他方法将这些局部变量用作参数，记录为方法参数。  
   
 ## <a name="SaveEvents"></a> 步骤 3：保存已记录的事件  
- 发现错误或性能问题时，将已记录的事件保存为 IntelliTrace 日志。 代理只在记录事件的情况下会创建日志。 如果你使用 System Center 2012，请参阅 [使用 Microsoft 监视代理监视 Web 应用程序](http://technet.microsoft.com/library/dn465157.aspx)。  
+ 发现错误或性能问题时，将已记录的事件保存为 IntelliTrace 日志。 代理只在记录事件的情况下会创建日志。 如果你使用 System Center 2012，请参阅 [使用 Microsoft 监视代理监视 Web 应用程序](https://technet.microsoft.com/library/dn465157.aspx)。  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>保存已记录的事件，但继续监视  
  当你希望创建 IntelliTrace 日志但又不希望重启应用或停止监视时，可执行这些步骤。 即使服务器或应用程序重启，代理也会继续监视。  

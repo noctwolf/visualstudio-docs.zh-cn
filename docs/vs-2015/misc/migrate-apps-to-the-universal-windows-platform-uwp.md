@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001289"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686666"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>将应用迁移到通用 Windows 平台 (UWP)
 对使用 Visual Studio 2015 RC 创建的 Windows Store 8.1 应用、Windows Phone 8.1 应用或通用 Windows 应用的现有项目文件进行必要的手动更改，以便它们能与 Visual Studio 2015 RTM 一起使用。 （如果你的 Windows 8.1 通用应用同时具有 Windows 应用项目和 Windows Phone 项目，则需要按照以下步骤迁移每个项目。）  
@@ -29,7 +29,7 @@ ms.locfileid: "63001289"
   
 - [使用 Visual Studio 2015 RC 创建的通用 Windows 应用的现有单元测试项目所需的更改](#MigrateUnitTest)。  
   
-  如果你不想进行所有这些更改，请了解如何 [移植现有应用](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 项目。  
+  如果你不想进行所有这些更改，请了解如何 [移植现有应用](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 到新的通用 Windows 项目。  
   
 ## <a name="MigrateCSharp"></a> 迁移 C# /VB Windows 应用商店 8.1 或 Windows Phone 8.1 应用以使用通用 Windows 平台  
   
@@ -110,7 +110,7 @@ ms.locfileid: "63001289"
   
     6. 添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： **true**。  
   
-    7. 通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
+    7. 通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](https://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
   
          现在你\<PropertyGroup > 元素应类似于以下示例：  
   
@@ -272,7 +272,7 @@ ms.locfileid: "63001289"
   
     4. 添加\<EnableDotNetNativeCompatibleProfile > 元素并将其值设置为： true。  
   
-    5. 通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
+    5. 通用 Windows 应用的默认资产规模为 200。 如果你的项目包括未达到 200 的资产，则需要添加\<UapDefaultAssetScale > 具有的你向此 PropertyGroup 的资产规模值的元素。 了解有关 [资产和规模](https://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
   
     6. 对于 Windows Phone 项目，更改的值\<ApplicationType > 从 Windows Phone 到 Windows 应用商店。  
   
@@ -651,7 +651,7 @@ ms.locfileid: "63001289"
   
 4. 查找\<PropertyGroup > 元素，其中包含\<TargetPlatformVersion > 和\<TargetPlatformMinVersion > 元素。 更改的现有值\<TargetPlatformVersion > 和\<TargetPlatformMinVersion > 元素是相同版本的已安装通用 Windows 平台。  
   
-    通用 Windows 应用的默认资产规模为 200。 使用 Visual Studio 2015 RC 包含资产规模为 100 创建的项目，你将需要添加\<UapDefaultAssetScale > 值为 100 到此 PropertyGroup 元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
+    通用 Windows 应用的默认资产规模为 200。 使用 Visual Studio 2015 RC 包含资产规模为 100 创建的项目，你将需要添加\<UapDefaultAssetScale > 值为 100 到此 PropertyGroup 元素。 了解有关 [资产和规模](https://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
   
 5. 如果添加了对 UWP 扩展 SDK 的任意引用（例如 Windows Mobile SDK），你将需要更新该 SDK 版本。 例如这\<SDKReference > 元素：  
   
@@ -761,7 +761,7 @@ ms.locfileid: "63001289"
   
      添加\<EnableDotNetNativeCompatibleProfile > 元素并设置其值为 true，如果该元素尚不存在。  
   
-     通用 Windows 应用的默认资产规模为 200。 使用 Visual Studio 2015 RC 包含资产规模为 100 创建的项目，你将需要添加\<UapDefaultAssetScale > 值为 100 到此 PropertyGroup 元素。 了解有关 [资产和规模](http://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
+     通用 Windows 应用的默认资产规模为 200。 使用 Visual Studio 2015 RC 包含资产规模为 100 创建的项目，你将需要添加\<UapDefaultAssetScale > 值为 100 到此 PropertyGroup 元素。 了解有关 [资产和规模](https://msdn.microsoft.com/library/jj679352.aspx)的详细信息。  
   
      因此该\<PropertyGroup > 元素现在将类似于此：  
   

@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679843"
 ---
 # <a name="signing-in-to-visual-studio"></a>登录 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083954"
 
 - **授予访问 Visual Studio Dev Essentials 程序中大量优点的权限** ，包括免费软件、培训、支持等。 请参阅 [Visual Studio Dev Essential](https://aka.ms/vsdevhelp) 了解详细信息。
 
-- **同步你的 Visual Studio 设置** – 当你登录到任何设备上的 Visual Studio 时，将立即应用你自定义的设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
+- **同步你的 Visual Studio 设置** – 当你登录到任何设备上的 Visual Studio 时，将立即应用你自定义的设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx)。
 
 - **永久解锁 Visual Studio Express Edition** – 你可以根据自己的需要长时间使用任何版本的 Visual Studio Express，而不会限定为 30 天试用期。
 

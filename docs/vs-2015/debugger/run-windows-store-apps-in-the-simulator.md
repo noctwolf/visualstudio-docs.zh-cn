@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683537"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模拟器中运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
      ![屏幕快照设置上下文菜单](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> 模拟网络连接属性  
- 你可以通过维护感知网络连接成本或数据计划状态更改的能力并允许你的应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助你的应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 能够对签名的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件作出响应。 请参阅[快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 你可以通过维护感知网络连接成本或数据计划状态更改的能力并允许你的应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助你的应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 能够对签名的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件作出响应。 请参阅[快速入门：管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
  若要调试或测试网络成本感知代码，可使用模拟器模拟通过 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 返回的 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)对象公开的网络的属性。  
   
@@ -136,7 +136,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
    **有关管理网络连接的详细信息**  
   
-   [快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [快速入门：管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [网络信息示例](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -144,9 +144,9 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [如何通过后台任务响应系统事件](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [如何通过后台任务响应系统事件](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
-   [如何在 Windows 应用商店应用中触发挂起、继续和后台事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [如何在 Windows 应用商店应用中触发挂起、继续和后台事件](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 用键盘在模拟器中导航  
  通过按 **CTRL+ALT+向上箭头** 将焦点从模拟器窗口切换到模拟器工具栏上，导航模拟器工具栏。 使用 **向上键头** 和 **向下键头** 在工具栏按钮之间移动。  

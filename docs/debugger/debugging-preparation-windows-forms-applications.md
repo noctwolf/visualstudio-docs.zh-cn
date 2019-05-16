@@ -30,7 +30,7 @@ ms.locfileid: "62851780"
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。
 
- 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在”\<项目名称> 属性页”对话框（在 Visual Basic “我的项目” 中）中更改这些设置**\<**。
+ 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在”\<项目名称> 属性页”对话框（在 Visual Basic “我的项目” 中）中更改这些设置。 
 
  有关详细信息，请参阅[建议的属性设置](../debugger/managed-debugging-recommended-property-settings.md)。
 

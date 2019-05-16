@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5a40d6aa7dca8b14210ea85b8428f4d315cd70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442649"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679543"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步骤 11：运行程序并尝试其他功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "63442649"
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   
-- 若要了解有关 Visual Studio 编程的详细信息，请参阅 [Programming Concepts](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)（编程概念）。  
+- 若要了解有关 Visual Studio 编程的详细信息，请参阅 [Programming Concepts](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6)（编程概念）。  
   
-- 若要了解有关 Visual Basic 的详细信息，请参阅[使用 Visual Basic 开发应用程序](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f)。  
+- 若要了解有关 Visual Basic 的详细信息，请参阅[使用 Visual Basic 开发应用程序](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f)。  
   
-- 若要了解有关 Visual C# 的详细信息，请参阅 [C# 语言和 .NET Framework 介绍](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081)。  
+- 若要了解有关 Visual C# 的详细信息，请参阅 [C# 语言和 .NET Framework 介绍](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081)。  
   
 - 要转到下一个教程，请参阅[教程 2：创建计时的数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   

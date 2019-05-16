@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701817"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ ms.locfileid: "63441313"
  对于 WPF Web 浏览器应用程序，“该应用程序也可以脱机使用”  选项处于禁用状态，因为此类应用程序只能联机使用。  
   
  **应用程序文件**  
- 打开 [Application Files Dialog Box](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，它用于指定如何以及在何处安装各个文件。  
+ 打开 [Application Files Dialog Box](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)，它用于指定如何以及在何处安装各个文件。  
   
  **系统必备**  
  打开 [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md)，它用于指定要与应用程序一起安装的必备组件，如 .NET Framework。  
   
  **更新**  
- 打开 [Application Updates Dialog Box](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，它用于指定应用程序的更新行为。 选择了“该应用程序只能联机使用”  时不可用。  
+ 打开 [Application Updates Dialog Box](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)，它用于指定应用程序的更新行为。 选择了“该应用程序只能联机使用”  时不可用。  
   
  **选项**  
- 打开 [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，它用于指定其他高级发布选项。  
+ 打开 [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，它用于指定其他高级发布选项。  
   
  **发布版本**  
  设置应用程序的发布版本号；版本号更改时，会将应用程序作为更新发布。 发布版本的每个部分（“主版本”、“次版本” 、“生成号” 、“修订号” ）的最大值可以是 65355 (<xref:System.UInt16.MaxValue>)，这是 <xref:System.Version>允许的最大值。  
@@ -70,7 +70,7 @@ ms.locfileid: "63441313"
  可选。 选择此选项（默认）时，发布版本号的“修订号”  部分会在每次发布应用程序时递增 1。 这将导致应用程序作为更新发布。  
   
  **发布向导**  
- 打开 [Publish Wizard](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成“发布向导”的效果与运行“生成”  菜单上的“发布”  命令相同。  
+ 打开 [Publish Wizard](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成“发布向导”的效果与运行“生成”  菜单上的“发布”  命令相同。  
   
  **立即发布**  
  使用当前设置发布应用程序。 等效于“发布向导”中的“完成”按钮。  

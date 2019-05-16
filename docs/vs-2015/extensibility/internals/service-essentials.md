@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111593"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696070"
 ---
 # <a name="service-essentials"></a>服务基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60111593"
   
 - 若要支持按需加载，服务提供程序注册其全球服务和[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 有关详细信息，请参阅[注册服务](../../misc/registering-services.md)。  
   
-- 获取服务后，使用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) （非托管代码） 或强制转换 （托管代码） 来获取所需的接口，例如：  
+- 获取服务后，使用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) （非托管代码） 或强制转换 （托管代码） 来获取所需的接口，例如：  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ ms.locfileid: "60111593"
 ## <a name="see-also"></a>请参阅  
  [可用服务列表](../../extensibility/internals/list-of-available-services.md)   
  [使用并提供服务](../../extensibility/using-and-providing-services.md)   
- [强制转换和类型转换](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
- [强制转换](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [强制转换和类型转换](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [强制转换](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

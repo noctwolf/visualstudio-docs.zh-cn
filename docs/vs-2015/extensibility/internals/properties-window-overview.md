@@ -10,12 +10,12 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd4be229338d1a09c22b4d81384dc90f0544fa39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113841"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700746"
 ---
 # <a name="properties-window-overview"></a>属性窗口概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60113841"
 |接口名称|描述|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|提供了一系列为类别**属性**窗口，并将每个属性映射到某个类别。|  
-|[IDispatch 接口](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|公开对象的方法和属性到编程的工具和其他应用程序支持自动化。|  
+|[IDispatch 接口](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|公开对象的方法和属性到编程的工具和其他应用程序支持自动化。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|提供了名为的省略号 （...） 按钮*生成器*的打开模式对话框窗口本身的对象实现。 在文本字段中用户无法轻松地键入一个值时使用。 例如，它可能会用于打开颜色选取器，用于确定为你的 RGB 值。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|提供对用于更新中显示信息的对象的访问**属性**窗口。 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 是为每个窗口，其中包含要显示相关属性与可选择对象实现的 Vspackage。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|提供有关如方法的对象类型的接口和结构的字段的信息。|  

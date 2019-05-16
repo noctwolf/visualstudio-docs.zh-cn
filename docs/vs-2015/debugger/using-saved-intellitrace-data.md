@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 549c4f5225773a7d9ac40c16a9db6ca9309c7d6f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684393"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ ms.locfileid: "63437766"
     |**源**|**请参阅**|  
     |----------------|-------------|  
     |Visual Studio Enterprise（但不是 Professional 或 Community 版）中的 IntelliTrace 会话|[IntelliTrace 功能](../debugger/intellitrace-features.md)|  
-    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
-    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)|  
+    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](https://technet.microsoft.com/library/dn249700.aspx)|  
   
 ## <a name="GetStarted"></a> 你希望做什么？  
   
@@ -207,7 +207,7 @@ ms.locfileid: "63437766"
   
     ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   有关演练，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+   有关演练，请参阅[演练：使用 IntelliTrace 调试 SharePoint 应用程序](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ### <a name="ThreadsList"></a> 线程列表  
  检查目标进程中运行的记录线程。 你可以从选定线程的第一个有效 IntelliTrace 事件开始调试。  
@@ -258,14 +258,14 @@ ms.locfileid: "63437766"
 |----------------|-------------------|  
 |**模块名**|模块文件名|  
 |**模块路径**|加载模块的磁盘位置|  
-|**模块 ID**|模块的唯一标识符特定于版本，并分配给匹配的符号 (PDB) 文件。 请参阅 [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470)。|  
+|**模块 ID**|模块的唯一标识符特定于版本，并分配给匹配的符号 (PDB) 文件。 请参阅 [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470)。|  
   
 ### <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？  
  [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
   
- [在手动测试中收集更多诊断数据](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
+ [在手动测试中收集更多诊断数据](https://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 30fa3449acc209fdc89c0be8e85f82fa3795a365
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934148"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685130"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221:终结器应受到保护
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58934148"
  公共类型实现终结器没有指定系列 （受保护） 的访问。
 
 ## <a name="rule-description"></a>规则说明
- 终结器必须使用族访问修饰符。 此规则由 C#、 Visual Basic 和 Visual c + + 编译器强制执行。
+ 终结器必须使用族访问修饰符。 此规则强制执行由C#，Visual Basic 和 VisualC++编译器。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请更改为系列可访问的终结器。
@@ -81,4 +81,4 @@ ms.locfileid: "58934148"
 ```
 
 ## <a name="see-also"></a>请参阅
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

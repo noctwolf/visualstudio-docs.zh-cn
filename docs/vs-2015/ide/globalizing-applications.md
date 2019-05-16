@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584639"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704332"
 ---
 # <a name="globalizing-applications"></a>全球化应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ ms.locfileid: "62584639"
  介绍根据区域性设置，为日期、时间、数字、货币和其他信息设置格式的类。  
   
 ## <a name="related-sections"></a>相关章节  
- [全球化 Windows 窗体](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [全球化 Windows 窗体](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  提供 Windows 窗体全球化帮助页的链接。  
   
- [全球化和本地化](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [全球化和本地化](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  提供 Web 窗体全球化帮助页的链接。  
   
  [基于 .NET Framework 的国际应用程序简介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  介绍有关使用 Visual Basic 或 Visual C# 为国际市场开发软件的基本概念。  
   
- [开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [开发全球通用应用程序的最佳做法](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  为国际受众提供关于编程的信息（例如设计问题和术语）。

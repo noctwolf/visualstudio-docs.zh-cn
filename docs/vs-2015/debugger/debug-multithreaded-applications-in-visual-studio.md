@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691283"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60054295"
 
  此外，多线程处理会引入某些新类型的潜在 bug。 例如，通常会有两个或更多线程必须访问同一资源，但是一次只能有一个线程可以安全地访问该资源。 必须使用某种形式的互斥以确保一次仅有一个线程访问资源。 如果互斥执行不正确，它可以创建*死锁*任何线程可以执行的条件。 对于调试而言，死锁是特别难解决的问题。
 
- Visual Studio 提供了**线程**窗口、 GPU 线程窗口、 并行监视窗口和其他功能，使多线程调试。 了解线程界面功能的最佳方法是执行演练。 请参阅[演练：调试多线程应用程序](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[演练：调试C++AMP 应用程序](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)。
+ Visual Studio 提供了**线程**窗口、 GPU 线程窗口、 并行监视窗口和其他功能，使多线程调试。 了解线程界面功能的最佳方法是执行演练。 请参阅[演练：调试多线程应用程序](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[演练：调试C++AMP 应用程序](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)。
 
  Visual Studio 还提供了功能强大的断点和跟踪点，在调试多线程应用程序时，它们十分有用。 可以使用断点筛选器将断点置于单个线程上。 请参阅[使用断点](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ ms.locfileid: "60054295"
 
 - 使用跟踪点可以在不中断的情况下跟踪程序的执行。 对于研究死锁之类的问题，这一点十分有用。
 
-  [线程处理](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)线程处理中的概念[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]编程，包括示例代码。
+  [线程处理](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)线程处理中的概念[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]编程，包括示例代码。
 
-  [在组件中的多线程处理](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)如何使用多线程处理中[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]组件。
+  [在组件中的多线程处理](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)如何使用多线程处理中[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]组件。
 
-  [针对旧代码的多线程支持 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)线程处理概念和示例代码C++使用 MFC 的程序员。
+  [针对旧代码的多线程支持 (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)线程处理概念和示例代码C++使用 MFC 的程序员。
 
 ## <a name="see-also"></a>请参阅
  [调试线程和进程](../debugger/debug-threads-and-processes.md)[远程调试](../debugger/remote-debugging.md)

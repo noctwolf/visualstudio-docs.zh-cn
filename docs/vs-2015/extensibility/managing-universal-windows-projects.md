@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679930"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通用 Windows 应用是面向 Windows 8.1 和 Windows Phone 8.1，从而允许开发人员在这两个平台上使用的代码和其他资产。 共享的代码和资源都保存在共享项目，而特定于平台的代码和资源保留在单独的项目，一个用于 Windows，另一个用于 Windows Phone。 有关通用 Windows 应用程序的详细信息，请参阅[通用 Windows 应用](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理项目的 visual Studio 扩展应了解通用 Windows 应用项目具有不同于单平台的应用程序的结构。 本演练演示如何导航共享的项目和管理共享的项。  
+通用 Windows 应用是面向 Windows 8.1 和 Windows Phone 8.1，从而允许开发人员在这两个平台上使用的代码和其他资产。 共享的代码和资源都保存在共享项目，而特定于平台的代码和资源保留在单独的项目，一个用于 Windows，另一个用于 Windows Phone。 有关通用 Windows 应用程序的详细信息，请参阅[通用 Windows 应用](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx)。 管理项目的 visual Studio 扩展应了解通用 Windows 应用项目具有不同于单平台的应用程序的结构。 本演练演示如何导航共享的项目和管理共享的项。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

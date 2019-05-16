@@ -12,12 +12,12 @@ ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c2b76d0972768bf4d77e7f6d9bd153920799970
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931290"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685972"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugMessageEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>实施者的说明  
- DE 实现此接口以将消息发送到需要用户响应的 Visual Studio。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)访问`IDebugEvent2`接口。  
+ DE 实现此接口以将消息发送到需要用户响应的 Visual Studio。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)访问`IDebugEvent2`接口。  
   
  此接口的实现必须进行通信的 Visual Studio 调用[SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md)到德国。 例如，这可以通过一条消息发送到设备的消息处理线程，或实现此接口的对象无法保存对 DE 的引用并调用回 DE 与传递到响应`IDebugMessageEvent2::SetResponse`。  
   
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>备注  
  如果某个特定消息需要来自用户的特定响应，DE 将使用此接口。 例如，如果 DE 后尝试远程附加到程序中获取的"拒绝访问"消息，DE 此特定将消息发送到 Visual Studio 中的`IDebugMessageEvent2`事件和消息框样式`MB_RETRYCANCEL`。 这允许用户重试或取消附加操作。  
   
- DE 指定由以下 Win32 函数的约定来处理此消息的方式`MessageBox`(请参阅[AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)有关详细信息)。  
+ DE 指定由以下 Win32 函数的约定来处理此消息的方式`MessageBox`(请参阅[AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8)有关详细信息)。  
   
  使用[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)接口以便将消息发送到不需要来自用户的响应的 Visual Studio。  
   

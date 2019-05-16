@@ -10,12 +10,12 @@ ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4bfdc448025e03e385da80733a46359d1ad0eae9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7fa3e4be6ee44011eb1286e3ebf22ee69f8e3397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936879"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683118"
 ---
 # <a name="editor-and-language-service-extensions"></a>编辑器和语言服务扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,5 +33,5 @@ ms.locfileid: "58936879"
 |[编辑器中的旧接口](../extensibility/legacy-interfaces-in-the-editor.md)|说明如何从现有代码访问核心编辑器文档的链接。|  
 |[创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md)|说明如何创建自定义编辑器的文档的链接。|  
 |[旧版语言服务扩展性](../extensibility/internals/legacy-language-service-extensibility.md)|介绍如何集成到 Visual Studio 编程语言的文档的链接。|  
-|[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|引入了 Managed 的 Extensibility Framework (MEF)。|  
-|[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|引入了 Windows Presentation Foundation (WPF)。|
+|[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|引入了 Managed 的 Extensibility Framework (MEF)。|  
+|[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|引入了 Windows Presentation Foundation (WPF)。|

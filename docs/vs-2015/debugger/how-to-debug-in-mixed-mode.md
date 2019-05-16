@@ -19,12 +19,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb1bcaf6eac3d8ad671a8b610c9b45821a93e7b4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c5e2dd4ea0000eefdbd9f74c8fa97c4c63e06fab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681135"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>如何：在混合模式下调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63438450"
 - 调用 DLL 的调用应用程序是用托管代码编写的，而 DLL 是用本机代码编写的。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-enable-mixed-mode-debugging"></a>启用混合模式调试  
   

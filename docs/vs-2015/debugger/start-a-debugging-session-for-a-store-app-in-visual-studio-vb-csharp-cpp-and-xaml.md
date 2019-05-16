@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f12d6cde30dec9062dd67a18558bd0571e6fe6b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440439"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685222"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>为 Visual Studio 中的应用商店应用启动调试会话（VB、C#、C++ 和 XAML）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -285,7 +285,7 @@ ms.locfileid: "63440439"
 
 #### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> 将应用程序设置为以调试模式运行
 
-1. 在装有该应用程序的设备上安装 Visual Studio 远程工具。 请参阅 [安装远程工具](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)。
+1. 在装有该应用程序的设备上安装 Visual Studio 远程工具。 请参阅 [安装远程工具](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)。
 
 2. 在“开始”屏幕上，搜索 `Debuggable Package Manager` ，然后启动它。
 

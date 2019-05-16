@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f98441afbe8056fa01a11d7265447a293cd10fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f1ec1c18fe92409a72994e4544215da01325d209
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687520"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ ms.locfileid: "63446154"
 |**设置**|**说明**|  
 |-----------------|---------------------|  
 |**配置**|设置编译应用程序的模式。 在“活动(调试)”、“调试”、“发布”和“所有配置”之间进行选择。|  
-|**启动操作**|这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   “启动项目”是默认值，用于启动启动项目以供调试。 有关详细信息，请参阅[选择启动项目](http://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd)。<br />-   “启动外部程序”用于启动和附加到不属于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的程序。 有关详细信息，请参阅[附加到正在运行的程序](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。<br />-   “使用 URL 启动浏览器”可用于调试 Web 应用程序。|  
+|**启动操作**|这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   “启动项目”是默认值，用于启动启动项目以供调试。 有关详细信息，请参阅[选择启动项目](https://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd)。<br />-   “启动外部程序”用于启动和附加到不属于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的程序。 有关详细信息，请参阅[附加到正在运行的程序](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。<br />-   “使用 URL 启动浏览器”可用于调试 Web 应用程序。|  
 |**命令行参数**|指定要调试的程序的命令行参数。 该命令名是在“启动外部程序”中指定的程序名。 如果“启动操作”设置为“启动 URL”，则不能指定命令行自变量。|  
 |**工作目录**|指定被调试的程序的工作目录。 在 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 中，工作目录是启动应用程序的目录，默认情况下为 \bin\debug。|  
-|**使用远程计算机**|出于调试目的的远程计算机运行该应用程序的名称或[Msvsmon 服务器名称](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c)。 该 EXE 文件在远程计算机上的位置是由“配置属性”文件夹“生成”类别中的“输出路径”属性指定的。 此位置必须是远程计算机上的共享目录。|  
+|**使用远程计算机**|出于调试目的的远程计算机运行该应用程序的名称或[Msvsmon 服务器名称](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c)。 该 EXE 文件在远程计算机上的位置是由“配置属性”文件夹“生成”类别中的“输出路径”属性指定的。 此位置必须是远程计算机上的共享目录。|  
 |**启用非托管代码调试**|使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。|  
 |**启用 SQL Server 调试**|允许对 SQL Server 数据库对象进行调试。|  
   

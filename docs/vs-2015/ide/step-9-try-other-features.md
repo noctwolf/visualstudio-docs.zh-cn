@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 495d98f4061c258c78b2b74929428aec4eb3ec0c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428289"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678944"
 ---
 # <a name="step-9-try-other-features"></a>步骤 9：尝试其他功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63428289"
 - 将图标和颜色替换为您选择的图标和颜色。  
   
     > [!TIP]
-    > 尝试查看标签的 [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) 属性。  
+    > 尝试查看标签的 [Forecolor](https://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) 属性。  
   
 - 添加一个游戏计时器，记录玩家赢得游戏所用的时间。  
   

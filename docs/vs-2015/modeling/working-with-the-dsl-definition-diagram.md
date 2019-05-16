@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd4b15fb7c0f1cbc0630779ecef0373977bb2056
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694210"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定义图表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ ms.locfileid: "58936387"
  如果域关系有派生关系，或如果它具有与其他域关系的嵌入或引用关系，您可以显示此关系为一个类，通过右键单击该关系，然后单击**显示为类**. 将会显示此关系**域属性**隔离舱，将显示继承和关系树。  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具术语表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

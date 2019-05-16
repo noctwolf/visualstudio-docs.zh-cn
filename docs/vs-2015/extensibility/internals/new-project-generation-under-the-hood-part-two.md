@@ -11,12 +11,12 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687484"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：揭秘，第 2 部分
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58932089"
 ## <a name="generating-the-solution-files"></a>生成解决方案文件  
  选择应用程序模板会将定向[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]解压缩，然后打开相应的.vstemplate 文件，并启动一个模板来解释此文件中的 XML 命令。 这些命令创建新的或现有解决方案中项目和项目项。  
   
- 该模板解压缩源文件，保存.vstemplate 文件的同一个.zip 文件夹从调用项模板。 该模板将这些文件复制到新项目中，相应地自定义它们。 项目和项模板的概述，请参阅[NIB:Visual Studio 模板](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)。  
+ 该模板解压缩源文件，保存.vstemplate 文件的同一个.zip 文件夹从调用项模板。 该模板将这些文件复制到新项目中，相应地自定义它们。 项目和项模板的概述，请参阅[NIB:Visual Studio 模板](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)。  
   
 ### <a name="template-parameter-replacement"></a>模板参数替换  
  模板复制到新的项目项模板，它也将与字符串以自定义文件中替换任何模板参数。 模板参数是一个特殊的标记，是前面和后面一个美元符号，例如、 $date$。  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [生成新项目：实质上，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [生成新项目：揭秘，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

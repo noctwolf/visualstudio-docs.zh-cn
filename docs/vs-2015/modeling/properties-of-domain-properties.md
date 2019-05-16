@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bd974da022a8407c1249b4a84eac3ef6f61aec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701907"
 ---
 # <a name="properties-of-domain-properties"></a>域属性的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,4 +53,4 @@ ms.locfileid: "63412131"
 |**Type**|属性的类型。 若要添加到可用类型列表，请右键单击 DSL 资源管理器，在 DSL 的根，然后单击**添加外部类型**。|`String`|  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具术语表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

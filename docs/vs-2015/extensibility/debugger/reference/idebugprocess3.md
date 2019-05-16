@@ -12,12 +12,12 @@ ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 706feb470dc32992d9c0802f62182ca4eb1cabbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 490d1e5f8048188e442f0113f8cf91bafe2344ed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444839"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675392"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugProcess3 : IDebugProcess2
 ## <a name="notes-for-callers"></a>调用方的说明  
  此接口称为主要由会话调试管理器 (SDM) 以便与一组在此过程中标识的程序进行交互。  
   
- 调用[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)接口，以获得此接口。  
+ 调用[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)上[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)接口，以获得此接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了继承的方法之外[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)，`IDebugProcess3`实现以下方法。  

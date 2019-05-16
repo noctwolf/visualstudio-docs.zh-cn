@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446100"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687549"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -192,7 +192,7 @@ ms.locfileid: "63446100"
   
 5. 对属性进行以下更改：  
   
-   |设置|“值”|
+   |设置|值|
    |-|-|  
    |远程命令|C:\remotetemp\mymfc.exe|  
    |工作目录|C:\remotetemp|  
@@ -283,7 +283,7 @@ ms.locfileid: "63446100"
  有关详细信息，请参阅远程调试帮助 (按**F1**中的远程调试器窗口中或单击**帮助 / 用法**)。 有关详细信息，可以参阅 [Visual Studio 2012 和 2013 中的 .NET 远程符号加载更改](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
 ## <a name="bkmk_winstoreAzure"></a> 在 Windows 应用商店和 Azure 应用上进行远程调试  
- 有关使用 Windows 应用商店应用程序进行远程调试的信息，请参阅[调试和测试 Windows 应用商店应用程序从 Visual Studio 在远程设备上的](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
+ 有关使用 Windows 应用商店应用程序进行远程调试的信息，请参阅[调试和测试 Windows 应用商店应用程序从 Visual Studio 在远程设备上的](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx)。  
   
  有关在 Azure 上进行调试的信息，请参阅以下主题之一：  
   
@@ -291,7 +291,7 @@ ms.locfileid: "63446100"
   
 - [调试 Visual Studio 中的.NET 后端](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Azure 网站上的远程调试简介 ([第 1 部分](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
+- Azure 网站上的远程调试简介 ([第 1 部分](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/)，[第 2 部分](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/)，[第 3 部分](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/))。  
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)   
