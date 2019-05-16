@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437962"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695276"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>用 Microsoft 适用于 C++ 的单元测试框架编写 C/C++ 单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63437962"
   
     - `#include` 包含 DLL 外部访问函数声明的 `.h` 文件。  
   
-         `.h` 文件应包含用 `_declspec(dllimport)` 标记的函数声明。 或者，可以使用 DEF 文件导出方法。 有关详细信息，请参阅[导入和导出](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)。  
+         `.h` 文件应包含用 `_declspec(dllimport)` 标记的函数声明。 或者，可以使用 DEF 文件导出方法。 有关详细信息，请参阅[导入和导出](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)。  
   
          单元测试仅可以访问从所测试 DLL 导出的函数。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "63437962"
   
      ![使用 API 宏新建 DLL 代码项目和 .h 文件](../test/media/utecpp07.png "UteCpp07")  
   
-     声明符 `__declspec(dllexport)` 会导致类的公共和受保护成员在 DLL 外可见。 有关详细信息，请参阅 [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9)。  
+     声明符 `__declspec(dllexport)` 会导致类的公共和受保护成员在 DLL 外可见。 有关详细信息，请参阅 [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9)。  
   
 4. 在主体 .cpp 文件中，添加最小的函数体：  
   
@@ -395,7 +395,7 @@ ms.locfileid: "63437962"
 ## <a name="see-also"></a>请参阅  
  [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [托管/非托管代码互操作性概述](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [托管/非托管代码互操作性概述](https://msdn.microsoft.com/library/ms973872.aspx)   
  [调试本机代码](../debugger/debugging-native-code.md)   
- [演练：创建和使用动态链接库 (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [导入和导出](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [演练：创建和使用动态链接库 (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [导入和导出](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

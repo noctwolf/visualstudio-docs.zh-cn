@@ -12,12 +12,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db58e5d4b747c71e4b1394e5fc38a48391bee71e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687662"
 ---
 # <a name="wizard-vsz-file"></a>向导 (.Vsz) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |向导|此字段包含 OLE ProgID 的向导中，或者由 IDE 共同创建向导的 CLSID 的 GUID 字符串表示形式。|  
 |参数|这些部分是可选的。 您可以添加多达所需。|  
   
- 参数，要将附加的自定义参数传递到向导的.vsz 文件。 每个值作为数组中的变体的字符串元素传递给该向导。 有关详细信息，请参阅[自定义参数](../../extensibility/internals/custom-parameters.md)。 有关如何使用.vsz 文件中开发的自定义向导的信息，请参阅[。在 Vsz 文件 （项目控制）](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ 参数，要将附加的自定义参数传递到向导的.vsz 文件。 每个值作为数组中的变体的字符串元素传递给该向导。 有关详细信息，请参阅[自定义参数](../../extensibility/internals/custom-parameters.md)。 有关如何使用.vsz 文件中开发的自定义向导的信息，请参阅[。在 Vsz 文件 （项目控制）](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  若要将默认区域设置 ID 添加到你的.vsz 文件中，指定`FALLBACK_LCID`= 的 xxxx，其中 xxxx 是区域设置 ID，例如，1033 为英语。 当`FALLBACK_LCID`定义参数，该向导使用提供的回退区域设置 ID，如果找不到当前的 ID。  
   

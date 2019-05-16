@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440947"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680288"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>管理版本控制下的模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-管理包括代码图（.dgml 文件）在内的建模项目和关系图的不同版本，方法是 [使用 Team Foundation 版本控制或 Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)；利用本地 Team Foundation Server 或利用 Visual Studio Team Services 在云中实施。  
+管理包括代码图（.dgml 文件）在内的建模项目和关系图的不同版本，方法是 [使用 Team Foundation 版本控制或 Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)；利用本地 Team Foundation Server 或利用 Visual Studio Team Services 在云中实施。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -77,7 +77,7 @@ ms.locfileid: "63440947"
   
 - 更改跨越包边界的关系的属性。  
   
-- 若要了解有关签出锁定的信息，请参阅 [签出和编辑文件](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
+- 若要了解有关签出锁定的信息，请参阅 [签出和编辑文件](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>将关系图文件移入或移出项目文件夹  
   

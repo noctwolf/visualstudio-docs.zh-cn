@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47fba490edd07c61490760114ca8df91b3e35eb1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 71ef27b61e162fedbf0b8fcaac38d93bedbc77c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682395"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-读取指定程序集中的元数据，并将所需项添加到注册表中，从而使 COM 客户端可以透明方式创建 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 类。 此任务的行为与 [Regasm.exe（程序集注册工具）](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)的行为类似，但不完全相同。  
+读取指定程序集中的元数据，并将所需项添加到注册表中，从而使 COM 客户端可以透明方式创建 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 类。 此任务的行为与 [Regasm.exe（程序集注册工具）](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)的行为类似，但不完全相同。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `RegisterAssembly` 任务的参数。  

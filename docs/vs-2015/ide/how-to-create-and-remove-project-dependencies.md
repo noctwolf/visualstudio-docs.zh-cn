@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e4b039f514c7d43e768becca8532a05fb14785b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422890"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680367"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和移除项目依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ ms.locfileid: "63422890"
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [编译和生成](../ide/compiling-and-building-in-visual-studio.md)   
  [了解生成配置](../ide/understanding-build-configurations.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB 如何：修改项目属性和配置设置](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

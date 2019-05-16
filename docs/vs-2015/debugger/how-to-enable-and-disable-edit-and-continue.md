@@ -25,12 +25,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d564162a92976037729c4ad638136d7c1e827c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70914da9be4046589a0ca3b8e5fd4ae13210ca51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689262"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>如何：启用和禁用编辑并继续
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63438292"
 3. 若要启用，请选择**启用编辑并继续**复选框。 若要禁用它，请清除该复选框。  
   
    > [!NOTE]
-   > 如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[配置 IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+   > 如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[配置 IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
 4. 单击 **“确定”**。  
   

@@ -19,17 +19,17 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2741dc6e3e08f8c7f7ee2e28bcf2d8df1613f10e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3be3aa5426c2d1283b8b4cded51cc9c2772642ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682086"
 ---
 # <a name="sgen-task"></a>SGen 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-创建指定程序集中的类型的 XML 序列化程序集。 此任务将包装 XML 序列化程序生成器工具 (Sgen.exe)。 有关详细信息，请参阅 [XML 序列化程序生成器工具 (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)。  
+创建指定程序集中的类型的 XML 序列化程序集。 此任务将包装 XML 序列化程序生成器工具 (Sgen.exe)。 有关详细信息，请参阅 [XML 序列化程序生成器工具 (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6)。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `SGen` 任务的参数。  

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ca90a90d476acc0bdbc1df426b981d98207bbd28
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687251"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "63427055"
 1. 单击**转换所有模板**解决方案资源管理器工具栏中。 此时将重新生成大部分 DslDefinition.dsl 中的源代码。  
   
    > [!NOTE]
-   > 只要您更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
+   > 只要您更改 DslDefinition.dsl，必须单击**转换所有模板**重新生成解决方案之前。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。  
   
 2. 按 F5，或在**调试**菜单上，单击**开始调试**。  
   

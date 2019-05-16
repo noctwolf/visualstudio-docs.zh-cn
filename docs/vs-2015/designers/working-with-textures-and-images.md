@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 89c8fd489c29fc9b352c34011349ff447e48adb4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690083"
 ---
 # <a name="working-with-textures-and-images"></a>使用纹理和图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403466"
 可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用图像编辑器来创建和修改纹理和图像。 如同用 DirectX 应用程序开发的应用程序一样，图像编辑器支持丰富的纹理和图像格式。  
   
 > [!NOTE]
-> 图像编辑器不支持低色彩图像，例如图标或光标。 若要创建或修改这种图像，请使用[适用于图标的图像编辑器](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)。  
+> 图像编辑器不支持低色彩图像，例如图标或光标。 若要创建或修改这种图像，请使用[适用于图标的图像编辑器](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd)。  
   
 ## <a name="textures-and-images"></a>纹理和图像  
  简单地说，纹理和图像只是用于在图形应用中提供可视细节的数据表。 纹理或图像提供的细节取决于其用法，颜色样本、Alpha（透明度）值、法线与高度值是常见的示例。 纹理与图像之间的主要差别在于，前者连同形状的表示形式（通常是 3D 模型）来呈现整个对象或场景，而图像通常是对象或场景的独立表示形式。  

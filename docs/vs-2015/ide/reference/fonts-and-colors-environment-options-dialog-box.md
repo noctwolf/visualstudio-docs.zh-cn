@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84d7ee0a3e25db7c32e0f016e92dafb539757a61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437155"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688646"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "63437155"
 通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具”/“选项”，然后选择“环境”/“字体和颜色”即可访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  配色方案的更改在进行此更改的会话期间不生效。 要计算颜色更改，可打开 Visual Studio 的另一实例并产生希望应用更改所基于的条件。  
   

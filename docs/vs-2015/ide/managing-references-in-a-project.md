@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a54df63d71eeb641aa16c5bf7d4a2cb0c8a8a292
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424541"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675095"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "63424541"
 > Visual Studio 中的所有项目都包含对 `System.Core`的隐式引用，即使 `System.Core` 已从引用列表中删除也是如此。  
   
 ## <a name="references-to-shared-components-at-run-time"></a>在运行时对共享组件的引用  
- 在运行时，组件必须位于项目的输出路径或 [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果项目中包含对某个对象的引用，但该对象不是上述的其中一个位置，则必须在生成项目时将该引用复制到项目的输出路径。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 属性指示是否必须进行复制。 如果值为 **True**，则生成项目时，引用将复制到项目目录。 如果值为 **False**，则不复制引用。  
+ 在运行时，组件必须位于项目的输出路径或 [Global Assembly Cache](https://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果项目中包含对某个对象的引用，但该对象不是上述的其中一个位置，则必须在生成项目时将该引用复制到项目的输出路径。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 属性指示是否必须进行复制。 如果值为 **True**，则生成项目时，引用将复制到项目目录。 如果值为 **False**，则不复制引用。  
   
  如果你部署的应用程序中包含对 GAC 中注册的自定义组件的引用，则无论采用何种 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 设置，组件都不会随应用程序一起部署。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的早期版本中，可以在引用上设置 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 的属性，以确保程序集已部署。 现在，必须手动将程序集添加到 \Bin 文件夹。 这会对所有自定义代码进行详细审查，以降低你发布不熟悉的自定义代码的风险。  
   
@@ -118,5 +118,5 @@ ms.locfileid: "63424541"
   
 ## <a name="see-also"></a>请参阅  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
- [使用程序集编程](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [使用程序集编程](https://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
  [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

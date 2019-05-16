@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445611"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682360"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 面向 .NET Framework 的编程语言将使用 MSBuild 项目文件来介绍并控制应用程序生成过程。 使用 Visual Studio 创建 MSBuild 项目文件时，会自动将适当的 XML 添加到该文件。 但是，你可能会发现，了解 XML 的组织方式以及如何能够更改 XML 来控制生成将非常有用。  
   
- 有关为 C++ 项目创建项目文件的信息，请参阅 [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560)。  
+ 有关为 C++ 项目创建项目文件的信息，请参阅 [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560)。  
   
  此演练演示如何只使用文本编辑器以增量方式创建基本项目文件。 演练采用以下步骤：  
   

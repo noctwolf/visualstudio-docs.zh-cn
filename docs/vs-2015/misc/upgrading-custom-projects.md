@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: f9d930765a427d32836f464a424b5cd898090ac5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5046a35cbc681ede4aff85023feeccd71a61b5b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693829"
 ---
 # <a name="upgrading-custom-projects"></a>升级自定义项目
 如果你更改保留在产品的不同 Visual Studio 版本之间的项目文件中的信息，则你需要支持将项目文件从旧版本升级到新版本。 若要支持升级，您可以参与**Visual Studio 转换向导**，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>接口。 此接口包含可用于复制升级的唯一机制。 项目的升级作为解决方案打开的一部分而发生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 接口由项目工厂实现或至少应从项目工厂获得。  
@@ -109,7 +109,7 @@ ms.locfileid: "63436536"
   4. 环境第二次调用 `IVsProjectUpgrade::UpgradeProject` 以确定是否应升级项目对象。 但是，此调用在项目的第二个新实例 Project2 上进行。 这就是在解决方案中打开的项目。  
   
       > [!NOTE]
-      > 如果第一个项目实例 Project1 处于非活动状态，则你必须从对 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 实现的首次调用中返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。 请参阅[基本项目](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)的实现`IVsProjectUpgrade::UpgradeProject`。  
+      > 如果第一个项目实例 Project1 处于非活动状态，则你必须从对 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 实现的首次调用中返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK>。 请参阅[基本项目](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)的实现`IVsProjectUpgrade::UpgradeProject`。  
   
   5. 调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> 并为 `rgfQueryEdit` 参数传入 <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> 值。  
   
@@ -118,6 +118,6 @@ ms.locfileid: "63436536"
   如果不能升级，请从 `IVsProjectUpgrade::UpgradeProject` 返回 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>。 如果不需要升级或你选择不升级，请将 `IVsProjectUpgrade::UpgradeProject` 调用视作不执行任何操作。 如果返回 <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>，则向项目的解决方案添加占位符节点。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio 转换向导](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio 转换向导](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [升级项目项](../misc/upgrading-project-items.md)   
  [项目](../extensibility/internals/projects.md)

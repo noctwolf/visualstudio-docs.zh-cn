@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8a0b51a9fbfb009087e0cd5600d9c480c8d433b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 21ab62155cea58e196815aadb3dbb538a6c0f6c3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386789"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684768"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：使用 O/R 设计器配置继承
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63386789"
 5. 在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果您尝试删除用于关联的对象属性，将会收到错误：[该属性\<属性名称 > 不能删除，因为它参与了关联\<关联名称 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。  
   
     > [!NOTE]
-    > 由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。 （列实现为属性。）通过设置基类属性中的继承修饰符，可以在派生类中创建列。 有关详细信息，请参阅[不在生成中：重写属性和方法](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)。  
+    > 由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。 （列实现为属性。）通过设置基类属性中的继承修饰符，可以在派生类中创建列。 有关详细信息，请参阅[不在生成中：重写属性和方法](https://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213)。  
   
 6. 在 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]中选择继承连线。  
   
@@ -55,10 +55,10 @@ ms.locfileid: "63386789"
   
 ## <a name="see-also"></a>请参阅  
  [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [演练：创建 LINQ to SQL 类 （O-R 设计器）](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [PAVE What's New for Visual Studio 2012 中的数据应用程序开发](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [演练：创建 LINQ to SQL 类 （O-R 设计器）](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [PAVE What's New for Visual Studio 2012 中的数据应用程序开发](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
  [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [演练：通过使用单表继承 （O/R 设计器） 中创建 LINQ to SQL 类](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [不在生成中：在 Visual Basic 中继承](http://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [继承](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
+ [不在生成中：在 Visual Basic 中继承](https://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [继承](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)

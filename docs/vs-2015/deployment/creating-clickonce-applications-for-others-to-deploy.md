@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675606"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58934237"
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>通过用于信任的应用程序清单中创建客户部署  
  ClickOnce 的.NET Framework 3.5 中包含一项新功能，让开发人员和客户的新解决方案对方案进行签名的清单的方式。 ClickOnce 应用程序清单支持名为的新元素`<useManifestForTrust>`，使开发人员来表示的数字签名的应用程序清单是应使用来做出信任决定。 开发人员可以使用 ClickOnce 打包工具-如 Mage.exe 和 MageUI.exe 中，Visual Studio-若要在应用程序清单中包含此元素，以及将其发布者名称和应用程序的名称嵌入在清单中。  
   
- 当使用`<useManifestForTrust>`，部署清单不需要使用由证书颁发机构颁发的验证码证书进行签名。 相反，它可以使用所谓的自签名证书进行签名。 自签名的证书是由客户或开发人员通过使用标准的.NET Framework SDK 工具生成，然后使用标准的 ClickOnce 部署工具部署清单中应用。 有关详细信息，请参阅[Makecert.exe （证书创建工具）](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
+ 当使用`<useManifestForTrust>`，部署清单不需要使用由证书颁发机构颁发的验证码证书进行签名。 相反，它可以使用所谓的自签名证书进行签名。 自签名的证书是由客户或开发人员通过使用标准的.NET Framework SDK 工具生成，然后使用标准的 ClickOnce 部署工具部署清单中应用。 有关详细信息，请参阅[Makecert.exe （证书创建工具）](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d)。  
   
  使用自签名的证书进行部署清单提供了几个优势。 通过消除对客户可获取或创建自己的验证码证书，需要`<useManifestForTrust>`简化了部署，客户，同时还允许开发人员维护他们自己的应用程序上的品牌标识。 结果是更安全，并且具有唯一的应用程序标识的已签名部署一组。 这消除了从相同应用程序部署到多个客户可能会发生潜在冲突。  
   

@@ -37,7 +37,7 @@ ms.locfileid: "63447070"
 
  为磁盘路径、 文件共享、 FTP 站点或网站 URL 键入位置或单击**浏览**按钮以浏览的位置。 路径可以是以下格式：
 
-- 标准中的相对或绝对路径 Windows 格式，例如*C:\Deploy\MyApplication*或*\MyApplication*。
+- 标准中的相对或绝对路径 Windows 格式，例如 *C:\Deploy\MyApplication* 或 *\MyApplication* 。
 
 - 通用命名约定 (UNC) 路径，如 *\\\ServerName\MyApplication\\*。
 
@@ -46,7 +46,7 @@ ms.locfileid: "63447070"
   默认情况下，发布位置是*http://localhost/projectname/* 如果您安装了 IIS，或如果这样做的 publish\ 目录不具有安装 IIS。
 
 > [!NOTE]
-> 如果目标计算机正在运行 Windows Vista，有更多注意事项。 必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置始终是*发布\\*目录下，无论是否安装了 IIS。
+> 如果目标计算机正在运行 Windows Vista，有更多注意事项。 必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置始终是 *发布\\* 目录下，无论是否安装了 IIS。
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>最终用户计算机上的默认安装路径是什么？
  安装路径是可选的。 如果您愿意，可以稍后再设置安装路径。 有关详细信息，请参阅[如何：更改 Office 解决方案的安装路径](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。

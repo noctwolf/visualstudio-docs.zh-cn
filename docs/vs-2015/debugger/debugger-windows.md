@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686767"
 ---
 # <a name="debugger-windows"></a>调试器窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "58936799"
 |并行监视|CTR:+SHIFT+D、（1、2、3、4）|[使用“并行堆栈”窗口](../debugger/using-the-parallel-stacks-window.md)|  
 |监视|CTRL+ALT+W、（1、2、3、4）|[监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)|  
 |快速监视|SHIFT+F9|[监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)|  
-|自动|CTRL+ALT+V、A|[变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|局部变量|CTRL+ALT+V、L|[变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|自动|CTRL+ALT+V、A|[变量窗口](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|局部变量|CTRL+ALT+V、L|[变量窗口](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |即时|CTRL+ALT+I|[即时窗口](../ide/reference/immediate-window.md)|  
-|Python 交互式调试|SHIFT+ALT+I|[PTVS 入门：Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Python 交互式调试|SHIFT+ALT+I|[PTVS 入门：交互式 Python](../python/getting-started-with-ptvs-interactive-python.md)|  
 |JavaScript 控制台|CTRL+ALT+V、C|[快速入门：调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |DOM 资源管理器|CTRL+ALT+V、D|[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)|  
 |实时可视化树|-|[在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)|  

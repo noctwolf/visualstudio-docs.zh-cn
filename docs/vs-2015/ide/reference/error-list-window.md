@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d481bbc71019639588c793fee64acd34d5739e8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437232"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680148"
 ---
 # <a name="error-list-window"></a>“错误列表”窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "63437232"
   若要对列表进行排序，请单击任一列标头。 若要按其他列对列表进行进一步排序，请按住 Shift 键并单击其他列标头。 若要选择显示哪些列和隐藏哪些列，请从快捷菜单中选择“显示列”。 若要更改列的显示顺序，请将任意列标头向左或向右拖动。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请单击“工具”/“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请单击“工具”/“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="error-list-filters"></a>错误列表筛选器  
  两个下拉列表框中有两种类型的筛选器，分别位于工具栏右侧和左侧。 工具栏左侧的下拉列表用于指定要使用的代码文件集（“整体解决方案”、“打开的文档”、“当前项目”、“当前文档”）。  

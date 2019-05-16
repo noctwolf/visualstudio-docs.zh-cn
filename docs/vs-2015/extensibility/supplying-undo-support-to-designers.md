@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675344"
 ---
 # <a name="supplying-undo-support-to-designers"></a>向设计器提供撤消支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60049303"
   
 - 通过实现来支持提供持久性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>类。  
   
-  有关编写使用设计器的详细信息[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，请参阅[扩展设计时支持](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)。  
+  有关编写使用设计器的详细信息[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，请参阅[扩展设计时支持](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)。  
   
   [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供的默认撤消基础结构：  
   
@@ -45,7 +45,7 @@ ms.locfileid: "60049303"
   
 - 为代码生成和持久性采用标准基于 CodeDOM 的代码生成和分析系统。  
   
-     有关如何使用 Visual Studio CodeDOM 支持的详细信息，请参阅[动态源代码生成和编译](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     有关如何使用 Visual Studio CodeDOM 支持的详细信息，请参阅[动态源代码生成和编译](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>何时使用显式设计器的撤消支持  
  如果他们使用称为视图适配器，不是由提供的图形用户界面设计器必须提供其自己撤消管理<xref:System.Windows.Forms.Control>。  
@@ -105,4 +105,4 @@ ms.locfileid: "60049303"
 ## <a name="see-also"></a>请参阅  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [扩展设计时支持](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [扩展设计时支持](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

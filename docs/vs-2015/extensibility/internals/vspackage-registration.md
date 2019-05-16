@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685286"
 ---
 # <a name="vspackage-registration"></a>VSPackage 注册
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Vspackage 必须告知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]他们安�
 > [!NOTE]
 > 已接受的做法是在使用自助注册 VSPackage 开发过程。 但是，[!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)]合作伙伴，无法提供其产品作为安装的一部分使用自助注册。  
   
- 在 Windows 安装程序包的注册表项通常由注册表表中。 您还可以在注册表表注册文件扩展名。 但是，Windows Installer 提供了内置支持通过编程标识符 (ProgId)、 类、 扩展和谓词表。 有关详细信息，请参阅[数据库表](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx)。  
+ 在 Windows 安装程序包的注册表项通常由注册表表中。 您还可以在注册表表注册文件扩展名。 但是，Windows Installer 提供了内置支持通过编程标识符 (ProgId)、 类、 扩展和谓词表。 有关详细信息，请参阅[数据库表](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx)。  
   
  请确保你的注册表条目是与适用于你所选的并行策略的组件相关联。 例如，共享文件的注册表项应与该文件的 Windows 安装程序组件相关联。 同样，特定于版本的文件的注册表项应与该文件的组件相关联。 否则为安装或卸载你的 VSPackage 的某个版本的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可能会在其他版本中中断你的 VSPackage。 有关详细信息，请参阅[支持多个 Visual Studio 版本](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ Vspackage 必须告知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]他们安�
 - 自注册代码可以对其拒绝访问网络资源，例如类型库中，如果一个组件是同时指定为运行从源和 SelfReg 表中列出。 这会导致要在管理安装过程中失败的组件安装。  
   
 ## <a name="see-also"></a>请参阅  
- [Windows 安装程序](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [托管的包注册](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows 安装程序](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [托管的包注册](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

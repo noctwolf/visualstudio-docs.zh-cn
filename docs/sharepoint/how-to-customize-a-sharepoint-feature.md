@@ -46,7 +46,7 @@ ms.locfileid: "63429213"
 
 1. 在中**解决方案资源管理器**，选择**显示所有文件**图标。
 
-2. 展开功能，展开 FeatureName、 展开 FeatureName.feature，并打开*\<功能名 >。Template.xml*文件。
+2. 展开功能，展开 FeatureName、 展开 FeatureName.feature，并打开 *\<功能名>。Template.xml* 文件。
 
     > [!NOTE]
     > 当打开功能模板清单 XML 文件时，自动验证这些文件，可以忽略在错误列表窗口中显示的警告。

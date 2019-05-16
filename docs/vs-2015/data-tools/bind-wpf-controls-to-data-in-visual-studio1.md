@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437061"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675917"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 WPF 控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 通过将数据绑定到 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 控件，可以向应用程序的用户显示数据。 若要创建这些数据绑定控件，可以将项从**数据源**窗口拖到[!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)]中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 本主题将介绍一些您可用于创建数据绑定 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 应用程序的最常见的任务、工具和类。
 
- 有关如何创建数据绑定控件中的常规信息[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 有关 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 数据绑定的详细信息，请参阅[数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。
+ 有关如何创建数据绑定控件中的常规信息[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 有关 [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] 数据绑定的详细信息，请参阅[数据绑定概述](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>将 WPF 控件绑定到数据所涉及的任务
  下表列出了可以通过将项从“数据源”窗口拖到 [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] 来完成的任务。
@@ -98,7 +98,7 @@ ms.locfileid: "63437061"
  当将对象或属性从**数据源**到设计器窗口[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]创建数据绑定控件 （或将现有控件绑定到对象或属性）。 但是，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不会生成用数据填充对象的代码。 你必须自己编写此代码。
 
 > [!NOTE]
-> 自定义类都必须是公共的并在默认情况下，具有无参数构造函数。 它们不能为其语法中具有"dot"的嵌套的类。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)。
+> 自定义类都必须是公共的并在默认情况下，具有无参数构造函数。 它们不能为其语法中具有"dot"的嵌套的类。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a)。
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，执行以下操作：
 

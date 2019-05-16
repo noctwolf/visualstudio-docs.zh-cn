@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686968"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "63445438"
   
 1. 创建 GUID：生成 GUID。  
   
-2. 错误查找：从输入的值中获取错误消息。 有关详细信息，请参阅 [ERRLOOK 参考](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)。  
+2. 错误查找：从输入的值中获取错误消息。 有关详细信息，请参阅 [ERRLOOK 参考](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91)。  
   
 3. ATL/MFC 跟踪工具：显示 ATL 和 MFC 源中的调试跟踪消息。  
   
@@ -85,7 +85,7 @@ ms.locfileid: "63445438"
 6. WCF 服务配置编辑器：可以创建和修改 WCF 服务的配置设置。  
   
 > [!WARNING]
-> 您可能会看到其他外部工具列表，具体取决于已安装的 Visual Studio 的版本以及已应用的设置配置文件。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 您可能会看到其他外部工具列表，具体取决于已安装的 Visual Studio 的版本以及已应用的设置配置文件。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="adding-new-tools"></a>添加新工具  
  可将外部工具添加到“工具”菜单。 打开“外部工具”对话框并单击“添加”，然后填写信息。 例如，以下条目会导致 Windows 资源管理器在当前已在 Visual Studio 中打开的文件目录中打开：  
@@ -122,4 +122,4 @@ ms.locfileid: "63445438"
 |解决方案文件名|$(SolutionFileName)|当前解决方案的文件名（驱动器 + 路径 + 文件名）。|  
   
 ## <a name="see-also"></a>请参阅  
- [C/C++ 生成工具](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [C/C++ 生成工具](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

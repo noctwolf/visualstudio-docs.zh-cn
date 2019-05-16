@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434516"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681729"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：添加到应用程序配置文件C#项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过将应用程序配置文件（app.config 文件）添加到 C# 项目中，你可以自定义公共语言运行时定位和加载程序集文件的方式。 有关应用程序配置文件的详细信息，请参阅[运行时如何定位程序集](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)。  
+通过将应用程序配置文件（app.config 文件）添加到 C# 项目中，你可以自定义公共语言运行时定位和加载程序集文件的方式。 有关应用程序配置文件的详细信息，请参阅[运行时如何定位程序集](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34)。  
   
 > [!NOTE]
 > 不支持 Windows 应用商店<xref:System.Configuration>。 因此，应用商店应用程序不包含 app.config 模板。  
@@ -44,7 +44,7 @@ ms.locfileid: "63434516"
   
 ## <a name="see-also"></a>请参阅  
  [管理应用程序设置 (.NET)](../ide/managing-application-settings-dotnet.md)   
- [配置文件架构](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [配置应用](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [如何：配置应用以面向.NET Framework 版本](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [配置文件架构](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [配置应用](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [如何：配置应用以面向.NET Framework 版本](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [使用 Visual Studio C# 开发环境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

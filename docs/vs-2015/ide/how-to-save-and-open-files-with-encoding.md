@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c06c67daef727db91fa42c7ee8ce97ff183f38
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685458"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：保存和打开带有编码的文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,5 +59,5 @@ ms.locfileid: "60039222"
 3. 按照上述步骤中的步骤 2 和步骤 3 操作。  
   
 ## <a name="see-also"></a>请参阅  
- [编码和 Windows 窗体全球化](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+ [编码和 Windows 窗体全球化](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685715"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408434"
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
 > [!NOTE]
-> 你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
+> 你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，请打开“工具”菜单并选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>生成、重新生成或清理整个解决方案
 
@@ -110,4 +110,4 @@ ms.locfileid: "63408434"
     - 选择 Ctrl + Break 键。
 
 ## <a name="see-also"></a>请参阅
- [如何：查看、 保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)[编译和生成](../ide/compiling-and-building-in-visual-studio.md)[了解生成配置](../ide/understanding-build-configurations.md) [调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++生成参考](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+ [如何：查看、 保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)[编译和生成](../ide/compiling-and-building-in-visual-studio.md)[了解生成配置](../ide/understanding-build-configurations.md) [调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++生成参考](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)

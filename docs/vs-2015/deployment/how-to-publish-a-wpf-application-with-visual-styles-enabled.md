@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697573"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布启用了视觉样式的 WPF 应用程序
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-视觉样式可启用常用控件以基于用户选择的主题更改的外观。 默认情况下，视觉样式未启用的 Windows Presentation Foundation (WPF) 应用程序中，因此你必须手动启用它们。 但是，启用视觉样式的 WPF 应用程序，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误，发布启用了视觉样式的 WPF 应用程序的过程。 视觉样式的详细信息，请参阅[视觉样式概览](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 有关错误消息的详细信息，请参阅[ClickOnce 部署中的故障排除特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
+视觉样式可启用常用控件以基于用户选择的主题更改的外观。 默认情况下，视觉样式未启用的 Windows Presentation Foundation (WPF) 应用程序中，因此你必须手动启用它们。 但是，启用视觉样式的 WPF 应用程序，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误，发布启用了视觉样式的 WPF 应用程序的过程。 视觉样式的详细信息，请参阅[视觉样式概览](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)。 有关错误消息的详细信息，请参阅[ClickOnce 部署中的故障排除特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。
 
  若要解决此错误并发布解决方案，必须执行以下任务：
 
@@ -125,7 +125,7 @@ ms.locfileid: "59000241"
 
 1. 打开**Visual Studio 命令提示符**。
 
-    有关如何打开详细信息**Visual Studio 命令提示符**，请参阅[命令提示](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。
+    有关如何打开详细信息**Visual Studio 命令提示符**，请参阅[命令提示](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。
 
    > [!NOTE]
    > 剩余的步骤使你的解决方案有关的以下假设：
@@ -193,5 +193,5 @@ ms.locfileid: "59000241"
 ## <a name="see-also"></a>请参阅
 
 [ClickOnce 部署中的特定错误的疑难解答](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[视觉样式概述](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[命令提示](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[视觉样式概述](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[命令提示](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

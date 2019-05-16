@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651612"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674876"
 ---
 # <a name="options-page-text-editor-node-properties"></a>“选项”页 ->“文本编辑器”节点属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 本文档描述了与“选项”对话框的“文本编辑器”类别 `DTE.Properties("TextEditor", <Property Page>)` 关联的一些页面（或属性集合）。 每个小节的标题都是用于访问 `Properties` 集合的调用，而每个小节中的表都列出了集合中的属性。  
   
- [控制选项设置](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 宏演示了如何为“选项”对话框的每个页面显示当前选项和值。  
+ [控制选项设置](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)中的 Visual Basic 宏演示了如何为“选项”对话框的每个页面显示当前选项和值。  
   
 ## <a name="general"></a>常规  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ ms.locfileid: "59651612"
 |CutCopyBlankLines|Get/Set (Boolean)|在选中空行时剪切或复制它们。|  
   
 ## <a name="see-also"></a>请参阅  
- [控制选项设置](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [确定“选项”页中属性项的名称](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [控制选项设置](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [确定“选项”页中属性项的名称](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [“选项”页 ->“环境”节点属性](../../ide/reference/options-page-environment-node-properties.md)   
  [“选项”页 ->“字体和颜色”节点属性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

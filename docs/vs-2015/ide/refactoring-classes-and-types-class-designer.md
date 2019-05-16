@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef3f4c52955f5958ab24d56c5741418648de48d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696223"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>重构类和类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441154"
 重构代码时，通过更改它的内部结构和它的对象的设计方式，而不是更改它的外部行为，你可以让它变得更易理解、维护以及更加高效。 在 Visual Studio 项目中重构 Visual C#.NET、Visual Basic.NET 或 C++ 代码时可以通过使用类设计器和类的详细信息窗口减少必要的工作量并降低引入 bug 的几率。  
   
 > [!NOTE]
-> 项目文件可能为只读类型，原因是这个项目受源代码管理且还未签出；它是一个引用项目；或它的文件在磁盘上被标记为只读。 所工作的项目处于这些状态中的某一种之下时，将有多种不同的方式可以用来保存工作，具体取决于项目的状态。 这种情况适用于重构代码，也适用于通过其他方法（如直接编辑代码）更改的代码。 有关详细信息，请参阅 [显示只读信息（类设计器）](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。  
+> 项目文件可能为只读类型，原因是这个项目受源代码管理且还未签出；它是一个引用项目；或它的文件在磁盘上被标记为只读。 所工作的项目处于这些状态中的某一种之下时，将有多种不同的方式可以用来保存工作，具体取决于项目的状态。 这种情况适用于重构代码，也适用于通过其他方法（如直接编辑代码）更改的代码。 有关详细信息，请参阅 [显示只读信息（类设计器）](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)。  
   
 ## <a name="common-tasks"></a>常规任务  
   

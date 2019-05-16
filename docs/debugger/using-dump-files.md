@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f0b7edf8ef2670b70dbee25b70cac7b0597490b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901747"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676361"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中的转储文件
 
@@ -74,7 +74,7 @@ Visual Studio 调试器可为托管或本机代码保存转储文件。 它可�
 1. 浏览到的路径并选择转储文件的名称，然后选择**保存**。
 
 >[!NOTE]
->可以使用支持 Windows 小型转储格式的任何程序创建转储文件。 例如，[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) 中的“Procdump”命令行实用工具可以基于触发器或按需创建进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)有关使用其他工具创建转储文件的信息。
+>可以使用支持 Windows 小型转储格式的任何程序创建转储文件。 例如，[Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) 中的“Procdump”命令行实用工具可以基于触发器或按需创建进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)有关使用其他工具创建转储文件的信息。
 
 ## <a name="BKMK_Open_a_dump_file"></a>打开转储文件
 

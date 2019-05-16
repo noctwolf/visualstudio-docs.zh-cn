@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821280"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676693"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -56,7 +56,7 @@ ms.locfileid: "62821280"
 若要更改活动规则集的项目，请导航到**代码分析**项目的属性选项卡。 选择规则集从下的列表**运行此规则集**。 若要打开规则集，请选择**打开**。
 
 > [!NOTE]
-> .NET core 和.NET Standard 项目的规则设置中不支持的菜单命令**解决方案资源管理器**，例如**打开活动规则集**。 若要指定非默认规则设置对于.NET Core 或.NET Standard 项目中，手动[添加**CodeAnalysisRuleSet**属性设置为项目文件](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)。 可以配置规则在 Visual Studio 中设置规则集编辑器 UI 中的规则。
+> .NET core 和.NET Standard 项目的规则设置中不支持的菜单命令**解决方案资源管理器**，例如**打开活动规则集**。 若要指定非默认规则设置对于.NET Core 或.NET Standard 项目中，手动[添加**CodeAnalysisRuleSet**属性](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)的项目文件。 您仍可以配置规则在 Visual Studio 中设置规则集编辑器 UI 中的规则。
 
 ## <a name="rule-severity"></a>规则严重性
 

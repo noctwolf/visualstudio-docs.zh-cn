@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441111"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674813"
 ---
 # <a name="accessibility-tips-and-tricks"></a>辅助功能提示和技巧
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "63441111"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 包含一些内置的辅助功能，可帮助用户轻松地操作键盘和使用屏幕阅读器或其他辅助技术设备。 本主题包括关于优化 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 辅助功能的一些建议，以及一些有用的快捷组合键。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="save-your-ide-settings"></a>保存 IDE 设置  
- 可以通过保存窗口布局、键盘映射方案和其他首选项来自定义 IDE 体验。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+ 可以通过保存窗口布局、键盘映射方案和其他首选项来自定义 IDE 体验。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>常用 Windows 快捷组合键  
  在 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 中，可以使用许多标准 Windows 快捷组合键来执行任务。 下面列举了其中一些快捷组合键：  

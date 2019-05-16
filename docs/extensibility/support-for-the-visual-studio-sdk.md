@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680791"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支持 Visual Studio SDK
 有关如何扩展 Visual Studio 集成的开发环境 (IDE) 的疑问的客户有多个支持选项。
@@ -45,7 +45,7 @@ ms.locfileid: "62432429"
 ## <a name="included-support"></a>含的支持
 
 ### <a name="visual-studio-product-support"></a>Visual Studio 产品支持
- 通过购买包含了一些支持[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]产品。 有关详细信息，请参阅[Visual Studio 支持](http://msdn.microsoft.com/vstudio/cc136615.aspx)。 Microsoft 将维护一个专门的支持团队来回答问题有关[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可扩展性。
+ 通过购买包含了一些支持[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]产品。 有关详细信息，请参阅[Visual Studio 支持](https://msdn.microsoft.com/vstudio/cc136615.aspx)。 Microsoft 将维护一个专门的支持团队来回答问题有关[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可扩展性。
 
 ### <a name="msdn-subscription-support"></a>MSDN 订阅支持
  MSDN 订阅包可能还包括一些支持。 有关详细信息，请参阅[MSDN 订阅者支持](https://msdn.microsoft.com/subscriptions/aa718661.aspx)。
@@ -67,4 +67,4 @@ VSIP 计划与结合使用的高级支持产品/服务有关的问题可以发�
 
 ## <a name="see-also"></a>请参阅
 
-- [与我们交流](../ide/talk-to-us.md)
+- [与我们交流](../ide/feedback-options.md)
