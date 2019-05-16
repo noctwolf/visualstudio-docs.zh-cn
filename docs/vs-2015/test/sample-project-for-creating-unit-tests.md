@@ -11,12 +11,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 67ebbde52facf50eff534322d85a926968acdf0d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705948"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用于创建单元测试的示例项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ ms.locfileid: "60048770"
   
 - [演练：创建并运行单元测试的托管代码](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 本演练将引导你完成创建和自定义单元测试、运行它们以及检查测试结果的步骤。  
   
-- [演练：运行测试并查看代码覆盖率](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 本演练演示了如何查看代码覆盖率数据，这显示了所测试的项目代码的比例。  
+- [演练：运行测试并查看代码覆盖率](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)。 本演练演示了如何查看代码覆盖率数据，这显示了所测试的项目代码的比例。  
   
-- [演练：使用命令行测试实用工具](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在本演练中，你可以使用 MSTest.exe 命令行实用工具运行测试和查看结果。  
+- [演练：使用命令行测试实用工具](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在本演练中，你可以使用 MSTest.exe 命令行实用工具运行测试和查看结果。  
   
 ## <a name="sample-code"></a>代码示例  
  在此示例中唯一的有意错误是，Debit 方法“m_balance += amount”的等号之前应有减号而不是加号。  
@@ -133,5 +133,5 @@ namespace BankAccountNS
   
 ## <a name="see-also"></a>请参阅  
  [演练：创建和运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [演练：运行测试并查看代码覆盖率](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [演练：使用命令行测试实用工具](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
+ [演练：运行测试并查看代码覆盖率](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [演练：使用命令行测试实用工具](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

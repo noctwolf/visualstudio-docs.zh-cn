@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685310"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何：访问内置的字体和配色方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
   
 2. 该类别的名称必须添加到 VSPackage 的资源 (.rc) 文件内的字符串表中，以便可以根据需要在 IDE 中显示时进行本地化。  
   
-    有关详细信息，请参阅[添加或删除字符串](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)。  
+    有关详细信息，请参阅[添加或删除字符串](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab)。  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>若要注册使用内置的字体和颜色的类别  
   

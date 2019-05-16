@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687012"
 ---
 # <a name="how-to-serialize-symbol-information"></a>如何：序列化符号信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ ms.locfileid: "60103792"
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   
  [如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)   
- [如何：保存已分析的报告文件](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [如何：保存已分析的报告文件](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

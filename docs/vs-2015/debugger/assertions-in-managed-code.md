@@ -26,12 +26,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: effeac6eb35eab5da53dc8e58cd44a72297a23d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ce0a416ef39165d38530c11aad0689811805b353
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702447"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,7 +211,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
   
  若要通过此方式自定义输出，您的程序必须包含侦听器，并且必须从 <xref:System.Diagnostics.TraceListener> 继承并重写其 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法。  
   
- 有关详细信息，请参阅[跟踪侦听器](http://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025)。  
+ 有关详细信息，请参阅[跟踪侦听器](https://msdn.microsoft.com/library/444b0d33-67ea-4c36-9e94-79c50f839025)。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
@@ -222,7 +222,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [调试器安全](../debugger/debugger-security.md)   
- [跟踪应用程序和在应用程序中插入检测点](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [如何：使用跟踪和调试执行有条件编译](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
+ [跟踪应用程序和在应用程序中插入检测点](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
+ [如何：使用跟踪和调试执行有条件编译](https://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#、F#、和 Visual Basic 项目类型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [调试托管代码](../debugger/debugging-managed-code.md)

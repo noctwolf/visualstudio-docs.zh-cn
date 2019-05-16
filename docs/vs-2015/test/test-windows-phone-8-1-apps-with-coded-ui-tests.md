@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a862b01eb4fdbb654ce31419742c07ba22194ffa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387017"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705986"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -374,7 +374,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |功能|Windows 应用商店应用程序|Windows Phone 应用|  
 |-------------|------------------------|------------------------|  
-|运行测试的目标|本地或远程计算机。 当你使用自动测试用例运行测试时，可以指定远程计算机。 请参阅 [在 Microsoft 测试管理器中实现测试用例自动化](http://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模拟器或设备。 请参阅，[问：只能，在模拟器上执行测试，或者我还可以使用物理设备？](#TestingPhoneAppsCodedUI_EmulatorDevice)本主题中。|  
+|运行测试的目标|本地或远程计算机。 当你使用自动测试用例运行测试时，可以指定远程计算机。 请参阅 [在 Microsoft 测试管理器中实现测试用例自动化](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42)。|模拟器或设备。 请参阅，[问：只能，在模拟器上执行测试，或者我还可以使用物理设备？](#TestingPhoneAppsCodedUI_EmulatorDevice)本主题中。|  
 |从命令行执行|指定目标无需设置文件。|指定目标需要 Runsettings 文件。|  
 |针对 Shell 控件的专用类|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |在 XAML 应用中的 WebView 控件|如果你使用 Html* 专用类与 HTML 元素进行交互则受支持。 请参阅 <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>。|不支持。|  

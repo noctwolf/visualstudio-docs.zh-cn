@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693757"
 ---
 # <a name="pseudovariables"></a>伪变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|以时钟形式显示时间。|  
 |`$user`|显示一个结构，在该结构中含有应用程序运行于的帐户的帐户信息。 出于安全原因，将不显示密码信息。|  
 |`$exceptionstack`|显示当前 Windows 运行时异常的堆栈跟踪。 `$ exceptionstack` 仅在 Windows 8.1 或更高版本上运行的应用商店应用中可用。 C++ 异常和 SHE 异常不支持 `$ exceptionstack`|  
-|`$ReturnValue`|显示 .NET Framework 方法的返回值。 请参阅[检查方法调用的返回值](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|显示 .NET Framework 方法的返回值。 请参阅[检查方法调用的返回值](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  在 C# 和 Visual Basic 中，可使用的伪变量如下表所示：  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` 或 `$$delete`|删除已在“即时”窗口中创建的隐式变量。 语法是`$delete,`*变量*或`$delete,`*变量*`.`|  
 |`$objectids` 或 `$listobjectids`|将所有活动对象 ID 显示为指定的表达式的子级。 语法是`$objectid,`*表达式*或`$listobjectids,`*表达式*`.`|  
 |`$` *N* `#`|显示对象 ID 等于 N 的对象。|  
-|`$dynamic`|显示这两个特殊“动态视图”实现 `IDynamicMetaObjectProvider` 的对象的节点。 接口。 语法为 `$dynamic,` 对象。 此功能仅应用于使用 .NET Framework 版本 4 的代码。 请参阅[动态视图](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563)。|  
+|`$dynamic`|显示这两个特殊“动态视图”实现 `IDynamicMetaObjectProvider` 的对象的节点。 接口。 语法为 `$dynamic,` 对象。 此功能仅应用于使用 .NET Framework 版本 4 的代码。 请参阅[动态视图](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563)。|  
   
 ## <a name="see-also"></a>请参阅  
  [监视窗口和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)   
- [变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [变量窗口](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

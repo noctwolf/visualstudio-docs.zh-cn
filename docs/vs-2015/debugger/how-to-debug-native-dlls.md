@@ -23,18 +23,18 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ea2f40119425cc558b5486a9085b92b05ba81c97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426525"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702684"
 ---
 # <a name="how-to-debug-native-dlls"></a>如何：调试本机 Dll
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  当调试 DLL 时，可以从以下开始调试：  
   
@@ -44,7 +44,7 @@ ms.locfileid: "63426525"
   
 - 用于创建 DLL 本身的项目。  
   
-  如果有用于创建可执行文件的项目，则从该项目开始调试。 然后可以打开 DLL 的源文件，并在该文件中设置断点，即使它不是用于创建可执行文件的项目的一部分。 有关详细信息，请参见[断点](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)  
+  如果有用于创建可执行文件的项目，则从该项目开始调试。 然后可以打开 DLL 的源文件，并在该文件中设置断点，即使它不是用于创建可执行文件的项目的一部分。 有关详细信息，请参见[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)  
   
   如果从创建 DLL 的项目开始调试，则必须指定在调试 DLL 时要使用的可执行文件。  
   

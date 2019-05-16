@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700234"
 ---
 # <a name="troubleshooting-service-references"></a>服务引用疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60056714"
 
 3. 请确保**显示高级生成配置**复选框已选中，然后依次**确定**。
 
-4. 加载该 WCF 服务项目。 有关详细信息，请参阅[NIB 如何：创建多项目解决方案](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
+4. 加载该 WCF 服务项目。 有关详细信息，请参阅[NIB 如何：创建多项目解决方案](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。
 
 5. 在中**Configuration Manager**对话框中，将**活动解决方案配置**到**调试**。 有关详细信息，请参阅[如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)。
 

@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666762"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698654"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59666762"
   
  **究竟什么是通用 Windows 平台？**  
   
- 它只是一个协定和版本的集合。 使你能够定位应用运行的环境。 不用再定位到操作系统。 现在你可以将应用定位到一个或多个设备系列。 通过此 [平台指南](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)了解更多详细信息。  
+ 它只是一个协定和版本的集合。 使你能够定位应用运行的环境。 不用再定位到操作系统。 现在你可以将应用定位到一个或多个设备系列。 通过此 [平台指南](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx)了解更多详细信息。  
   
 ## <a name="requirements"></a>要求  
  通用 Windows 应用开发工具附带了仿真程序，可用于查看应用在不同设备上的显示效果。 如果想要使用这些仿真程序，需要在物理计算机上安装此软件。 物理计算机必须运行 Windows 8.1 (x64) Professional 版本或更高版本，并具有支持客户端 Hyper-V 和二级地址转换 (SLAT) 的处理器。 当 Visual Studio 安装在虚拟机上时，则无法使用仿真程序。  
@@ -55,8 +55,8 @@ ms.locfileid: "59666762"
   如果开发平台是 Windows 10，只能使用 XAML 设计器。  
   
 ## <a name="universal-windows-apps"></a>通用 Windows 应用  
- 从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言以 [为 Windows 10 设备创建通用 Windows 应用](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或者，监视 [此入门视频](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  
+ 从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言以 [为 Windows 10 设备创建通用 Windows 应用](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或者，监视 [此入门视频](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  
   
- 如果你有现有的 Windows 应用商店 8.1 应用、Windows Phone 8.1 应用或使用 Visual Studio 2015 RC 创建的通用 Windows 应用，则 [移植这些现有的应用](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 以使用最新的通用 Windows 平台。  
+ 如果你有现有的 Windows 应用商店 8.1 应用、Windows Phone 8.1 应用或使用 Visual Studio 2015 RC 创建的通用 Windows 应用，则 [移植这些现有的应用](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) 以使用最新的通用 Windows 平台。  
   
  创建通用 Windows 应用后，必须 [将应用打包](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) 以将其安装在 Windows 10 设备或提交到 Windows 应用商店。

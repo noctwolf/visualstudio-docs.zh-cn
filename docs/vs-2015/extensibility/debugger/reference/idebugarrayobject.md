@@ -12,12 +12,12 @@ ms.assetid: a1c8e77e-dee1-4748-a516-6ab032a8f54f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ed58467351c3e23ea22736dec64314aa1594a2f2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f8ec4c883078663d0e252d6a04ae7441f12f31d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686992"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugArrayObject : IDebugObject
  表达式计算器实现此接口来表示一个数组。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以获取此接口通过[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)如果该对象表示一个数组。  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以获取此接口通过[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)如果该对象表示一个数组。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了上的方法`IDebugObject`接口，以下方法的实现基于`IDebugArrayObject`接口。  

@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b1cef49425540980938b4d84a1825c171b271b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dd1402a476ce2dceaaaf78580b36db20c3eed24f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045689"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682560"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>错误：无法连接到计算机&lt;名称&gt;。 网络上找不到该计算机。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,5 +49,5 @@ ms.locfileid: "60045689"
 - 确保您用来连接远程计算机的密码是有效的并且尚未过期。  
   
 ## <a name="see-also"></a>请参阅  
- [设置在设备上的远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
+ [设置在设备上的远程工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)   
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)

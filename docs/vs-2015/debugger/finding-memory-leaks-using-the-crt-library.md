@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682427"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58937571"
   
  为了 CRT 函数能够正常工作， `#include` 语句必须遵循此处所示的顺序。  
   
- 包含 crtdbg.h，将 `malloc` 和 [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 函数映射到它们的调试版本，即 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 和 `free`，它们将跟踪内存分配和释放。 此映射只在包含 `_DEBUG`的调试版本中发生。 发布版本使用普通的 `malloc` 和 `free` 函数。  
+ 包含 crtdbg.h，将 `malloc` 和 [free](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 函数映射到它们的调试版本，即 [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 和 `free`，它们将跟踪内存分配和释放。 此映射只在包含 `_DEBUG`的调试版本中发生。 发布版本使用普通的 `malloc` 和 `free` 函数。  
   
  `#define` 语句将 CRT 堆函数的基础版本映射到对应的调试版本。 如果省略 `#define` 语句，内存泄漏转储将有所简化。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "58937571"
 _CrtDumpMemoryLeaks();  
 ```  
   
- 如果应用程序有多个退出点，并不需要在每个退出点都手动设置一个对 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 的调用。 应用程序开头部分对 `_CrtSetDbgFlag` 的调用会导致在每个退出点自动调用 `_CrtDumpMemoryLeaks` 。 你必须设置两个位域，如下所示：  
+ 如果应用程序有多个退出点，并不需要在每个退出点都手动设置一个对 [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 的调用。 应用程序开头部分对 `_CrtSetDbgFlag` 的调用会导致在每个退出点自动调用 `_CrtDumpMemoryLeaks` 。 你必须设置两个位域，如下所示：  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>解释内存泄漏报告  
- 如果应用程序未定义 `_CRTDBG_MAP_ALLOC`，则 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 显示的内存泄漏报告如下所示：  
+ 如果应用程序未定义 `_CRTDBG_MAP_ALLOC`，则 [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 显示的内存泄漏报告如下所示：  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - 内存分配编号，在本例中为 `18`  
   
-- [块类型](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)，在本例中为 `normal` 。  
+- [块类型](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)，在本例中为 `normal` 。  
   
 - 十六进制内存位置，在本例中为 `0x00780E80` 。  
   
@@ -121,7 +121,7 @@ Object dump complete.
   
   内存泄漏报告中绝对不会出现另外两个内存块类型。  “可用块”是已释放的内存。 也就是说，根据定义，这种块不会泄漏。  “忽略块”是已明确标记、不出现在内存泄漏报告中的块。  
   
-  这些方法适用于使用标准 CRT `malloc` 函数分配的内存。 如果您的程序分配内存使用 c + +`new`运算符，但是，你可能只能看到的文件和行号，实现全局`operator new`调用`_malloc_dbg`内存泄漏报告中。 该行为不是很有用，因为您可以将其更改为报表使用的宏，如下所示进行分配的行： 
+  这些方法适用于使用标准 CRT `malloc` 函数分配的内存。 如果您的程序分配内存使用C++`new`运算符，但是，你可能只能看到的文件和行号，实现全局`operator new`调用`_malloc_dbg`内存泄漏报告中。 该行为不是很有用，因为您可以将其更改为报表使用的宏，如下所示进行分配的行： 
  
 ```cpp  
 #ifdef _DEBUG

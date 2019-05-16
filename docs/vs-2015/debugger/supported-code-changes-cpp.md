@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684915"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 ## <a name="BKMK_Unsupported_scenarios"></a> 不支持的方案  
  在以下调试方案中，C/C++ 的“编辑并继续”不可用：  
   
-- 调试使用 [/Zo（增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译的本机应用  
+- 调试使用 [/Zo（增强优化调试）](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译的本机应用  
   
 - 在 Visual Studio 2015 Update 1 之前的 Visual Studio 版本中，调试 Windows 应用商店应用或组件。 从 Visual Studio 2015 Update 1 开始，便可在 Windows 应用商店 C++ 应用和 DirectX 应用中使用“编辑并继续”，因为它现在支持 `/ZI` 编译器开关与  `/bigobj` 开关。 你还可以使用具有二进制文件（使用 `/FASTLINK` 开关。  
   
@@ -141,7 +141,7 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 3. 清除 **“允许预编译”** 复选框。  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 特性限制  
- “编辑并继续”不重新生成接口定义 (IDL) 文件。 因此，调试时不反映对 IDL 特性的更改。 若要查看对 IDL 特性更改的结果，必须停止调试并重新生成应用程序。 如果 IDL 特性已更改，“编辑并继续”不生成错误或警告。 有关更多信息，请参见 [IDL 特性](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
+ “编辑并继续”不重新生成接口定义 (IDL) 文件。 因此，调试时不反映对 IDL 特性的更改。 若要查看对 IDL 特性更改的结果，必须停止调试并重新生成应用程序。 如果 IDL 特性已更改，“编辑并继续”不生成错误或警告。 有关更多信息，请参见 [IDL 特性](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
   
 ## <a name="see-also"></a>请参阅  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

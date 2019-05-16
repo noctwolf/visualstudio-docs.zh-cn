@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431939"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705044"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>在 Visual Studio 中的实体数据模型工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 
 |标题|描述|
 |-----------|-----------------|
-|[ADO.NET 实体框架](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|介绍如何使用[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具，其中[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]提供创建应用程序。|
-|[实体数据模型](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|提供用于处理数据的基础上构建的应用程序使用链接和信息[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]。|
+|[ADO.NET 实体框架](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|介绍如何使用[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具，其中[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]提供创建应用程序。|
+|[实体数据模型](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|提供用于处理数据的基础上构建的应用程序使用链接和信息[!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)]。|
 |[完整的.NET （控制台、 WinForms、 WPF 等） 上开始使用](/ef/ef6/get-started)|有关如何创建使用 Entity Framework 7 的.NET 桌面应用程序提供的教程。|
 |[ASP.NET 5 应用程序指向新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|介绍如何使用 Entity Framework 7 创建一个新的 ASP.NET 5 应用程序。|
 

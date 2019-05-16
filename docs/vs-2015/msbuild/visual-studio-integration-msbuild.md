@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445634"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683860"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  为了达到这个目的，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将针对 `PropertyGroup`、`ItemGroup`、`Import`、属性和项元素检查条件。  
   
 ## <a name="additional-build-actions"></a>其他生成操作  
- 借助 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，可以使用[文件属性](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)窗口的**生成操作**属性来更改项目中文件的项类型名称。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 项类型名称始终会在此菜单中列出，此菜单中同时还会列出项目中已有的任何其他项类型名称。 若要确保任何自定义的项类型名称在此菜单中始终可用，可以将这些名称添加到名为 `AvailableItemName`的项类型。 例如，如果在项目文件中添加下面的内容，就会为导入它的所有项目在此菜单中添加自定义类型 `JScript` ：  
+ 借助 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，可以使用[文件属性](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959)窗口的**生成操作**属性来更改项目中文件的项类型名称。 `Compile`、 `EmbeddedResource`、 `Content`和 `None` 项类型名称始终会在此菜单中列出，此菜单中同时还会列出项目中已有的任何其他项类型名称。 若要确保任何自定义的项类型名称在此菜单中始终可用，可以将这些名称添加到名为 `AvailableItemName`的项类型。 例如，如果在项目文件中添加下面的内容，就会为导入它的所有项目在此菜单中添加自定义类型 `JScript` ：  
   
 ```  
 <ItemGroup>  

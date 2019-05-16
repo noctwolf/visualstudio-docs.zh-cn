@@ -34,8 +34,8 @@ ms.locfileid: "62996548"
 
 3. 保存并运行程序。 玩游戏并匹配所有图标。 当你获胜时，该程序将显示一个祝贺性的 MessageBox（如下图所示），然后关闭该框。
 
-     ********![具有消息框的匹配游戏](../ide/media/express_tut4step8.png)
-具有消息框的匹配游戏
+     ![具有消息框的匹配游戏](../ide/media/express_tut4step8.png)
+具有消息框的匹配游戏 ********
 
 ## <a name="to-continue-or-review"></a>继续或查看
 

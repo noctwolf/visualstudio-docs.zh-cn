@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437992"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689471"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ ms.locfileid: "63437992"
   
 ## <a name="assembly-signing"></a>程序集签名  
  “为程序集签名”复选框  
- 选择此复选框可为程序集签名并创建强名称密钥文件。 有关使用“项目设计器”为程序集签名的详细信息，请参阅[如何：为程序集签名 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)。  
+ 选择此复选框可为程序集签名并创建强名称密钥文件。 有关使用“项目设计器”为程序集签名的详细信息，请参阅[如何：为程序集签名 (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)。  
   
- 此选项使用 [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] 提供的 Al.exe 工具对程序集签名。 有关 Al.exe 的详细信息，请参阅[如何：使用强名称为程序集签名](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)。  
+ 此选项使用 [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] 提供的 Al.exe 工具对程序集签名。 有关 Al.exe 的详细信息，请参阅[如何：使用强名称为程序集签名](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)。  
   
  “选择强名称密钥文件”列表  
  使你可以指定一个新的或现有强名称密钥文件，用来对程序集签名。 选择“\<浏览...>”以选择现有的密钥文件。  
@@ -83,7 +83,7 @@ ms.locfileid: "63437992"
  “仅延迟签名”复选框  
  选中此复选框以启用延迟签名。  
   
- 请注意，延迟签名的项目将不会运行，也不能调试。 但是，可以使用 [Sn.exe（强名称工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)及 `-Vr` 选项，在开发过程中跳过验证。  
+ 请注意，延迟签名的项目将不会运行，也不能调试。 但是，可以使用 [Sn.exe（强名称工具）](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)及 `-Vr` 选项，在开发过程中跳过验证。  
   
 > [!NOTE]
 > 对程序集签名时，可能并不总是有权访问私钥。 例如，一个组织可能具有开发人员不是每天都能访问的严密保护密钥对。 公钥可能可用，但私钥的访问权限仅限于少数几个人。 在这种情况下，你可以使用延迟或部分签名来提供公钥，将私钥的添加延迟到转交该程序集后。  
@@ -91,8 +91,8 @@ ms.locfileid: "63437992"
 ## <a name="see-also"></a>请参阅  
  [项目属性引用](../../ide/reference/project-properties-reference.md)   
  [管理程序集签名和清单签名](../../ide/managing-assembly-and-manifest-signing.md)   
- [托管应用程序的强名称签名](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [托管应用程序的强名称签名](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [如何：对应用程序和部署清单进行签名](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [如何：签名程序集 (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [如何：使用强名称为程序集签名](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [具有强名称的程序集](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [如何：签名程序集 (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [如何：使用强名称为程序集签名](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [具有强名称的程序集](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

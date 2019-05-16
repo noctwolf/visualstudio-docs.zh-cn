@@ -11,12 +11,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933449"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697205"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用项目工厂创建项目实例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58933449"
   
  您可以实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>中你的项目中的类接口。 通常情况下，它驻留在其自己的模块。  
   
- 有关实现的示例`IVsProjectFactory`接口，请参阅中包含的 PrjFac.cpp[基本项目](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)示例目录。  
+ 有关实现的示例`IVsProjectFactory`接口，请参阅中包含的 PrjFac.cpp[基本项目](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36)示例目录。  
   
  支持由所有者所聚合的项目必须保留其项目文件中的所有者密钥。 当<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>具有所有者键项目上调用方法、 所拥有的项目将其所有者密钥转换为 GUID 然后调用一个项目工厂`CreateProject`上执行的实际创建此项目工厂方法。  
   

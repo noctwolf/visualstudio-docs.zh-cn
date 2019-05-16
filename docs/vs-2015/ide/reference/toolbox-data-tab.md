@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3c9a067c8388a398834f5fb1862072544bb0e53c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689381"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63419792"
 显示可添加到窗体和组件的数据对象。 创建具有关联设计器的项目时，将会显示“工具箱”的“数据”选项卡。 默认情况下，“工具箱”将出现在 Visual Studio 集成开发环境中；如果需要显示“工具箱”，请从“视图”菜单中选择“工具箱”。  
   
 > [!TIP]
-> 运行“数据源配置向导”将自动创建和配置大部分数据项。 有关详细信息，请参阅[使用 Visual Studio 创建数据应用程序](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293)。  
+> 运行“数据源配置向导”将自动创建和配置大部分数据项。 有关详细信息，请参阅[使用 Visual Studio 创建数据应用程序](https://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293)。  
   
 ## <a name="ui-element-list"></a>UI 元素列表  
  若要直接转到某个组件的 .NET Framework 参考页，请针对“工具箱”中的项或设计器栏中的组件项按“F1”。  
@@ -39,8 +39,8 @@ ms.locfileid: "63419792"
 |<xref:System.Windows.Forms.BindingNavigator>|表示窗体上绑定到数据的控件的导航和操作用户界面 (UI)。|  
   
 ## <a name="see-also"></a>请参阅  
- [数据演练](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [数据演练](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [准备应用程序以接收数据](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [准备应用程序以接收数据](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [在 Visual Studio 中将控件绑定到数据](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [验证数据](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [验证数据](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112206"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705941"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>用于编码的 UI 测试的示例 Excel 外接程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 此 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 示例外接程序经过特别设计，用于支持对 Visual Studio Enterprise 中记录和运行的 Excel 工作表进行编码的 UI 测试。 此外接程序是使用 Visual Studio Tools for Office 创建的。  
   
- 有关如何创建 Excel 外接程序的详细信息，请参阅[演练：为 Excel 创建你的第一个 VSTO 外接程序](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)或 MSDN 中搜索的"Excel 外接程序"。  
+ 有关如何创建 Excel 外接程序的详细信息，请参阅[演练：为 Excel 创建你的第一个 VSTO 外接程序](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)或 MSDN 中搜索的"Excel 外接程序"。  
   
  虽然 Excel 外接程序不是此用于 Excel 的编码的 UI 测试扩展文档的主要主题，不过有几个注释可能会有所帮助。  
   
@@ -47,5 +47,5 @@ ms.locfileid: "60112206"
   
 ## <a name="see-also"></a>请参阅  
  [扩展编码的 UI 测试和操作录制以支持 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [演练：创建第一个 VSTO 外接程序 excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Office 和 SharePoint 开发](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
+ [演练：创建第一个 VSTO 外接程序 excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Office 和 SharePoint 开发](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

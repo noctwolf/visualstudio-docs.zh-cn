@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041830"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691012"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Visual Studio 2015 中的新增功能
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60041830"
  ![Visual Studio 2015 安装对话框](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>使用多个帐户登录
- 借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的 **“添加连接的服务”**  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。
+ 借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的“添加连接的服务”  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。
 
  你可以随时添加多个用户帐户或通过新的帐户管理器进行添加，从而在 Visual Studio 中使用这些帐户。 然后，你可以在连接到服务或访问联机资源时在这些帐户之间即时切换。 Visual Studio 会记住你添加的帐户，因此你可从 Visual Studio 或 Blend 的任何实例使用这些帐户。 Visual Studio 还将随你的个性化帐户一起漫游帐户列表（但我们不会漫游你的重要凭据），因此你可以在另一台设备上快速地开始使用其中的一个帐户。 当然，你可以随时从“帐户设置”对话框中移除帐户。 若要开始操作，请参见 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "60041830"
  Xamarin 是移动框架，通过此框架，你可以使用 C# 编写代码，代码会在本机绑定到 iOS 和 Android API。 Microsoft 与 Xamarin 在发行 Xamarin for Visual Studio 时密切合作，这款扩展使你可以在具有共享代码的单个解决方案中针对 Android、iOS 和 Windows Phone 进行开发。 借助 Xamarin，你将使用一种语言和一个代码库，且平台间的增量可以保持最低。  Xamarin for Visual Studio 在 Visual Studio 2010 及更高版本上受到支持。 Visual Studio 2015 中包括 Xamarin 入门版。 若要开始，请参阅[应用程序生成具有 Visual Studio 中使用 Xamarin 的本机 UI](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>带 Apache Cordova 的 HTML/JavaScript 中的跨平台移动应用
- 适用于 Apache Cordova 的 Visual Studio 工具是 Microsoft 和开放源 Apache Cordova 社区紧密合作的成果。 通过这些工具，可使用 HTML、CSS 和 JavaScript（或 Typescript）进行跨平台移动开发。 你可将单一基本代码面向 Android、iOS 和 Windows，并且享受 Visual Studio IDE 的丰富功能，包括 JavaScript IntelliSense、DOM 资源管理器、JavaScript 控制台、断点、监视、局部变量、仅我的代码等等。  凭借适用于 Apache Cordova 的 Visual Studio 工具，你的应用可通过提供通用 JavaScript API 的插件使用所有平台上的原生设备功能。 若要开始，请参阅[开始使用 Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
+ 适用于 Apache Cordova 的 Visual Studio 工具是 Microsoft 和开放源 Apache Cordova 社区紧密合作的成果。 通过这些工具，可使用 HTML、CSS 和 JavaScript（或 Typescript）进行跨平台移动开发。 你可将单一基本代码面向 Android、iOS 和 Windows，并且享受 Visual Studio IDE 的丰富功能，包括 JavaScript IntelliSense、DOM 资源管理器、JavaScript 控制台、断点、监视、局部变量、仅我的代码等等。  凭借适用于 Apache Cordova 的 Visual Studio 工具，你的应用可通过提供通用 JavaScript API 的插件使用所有平台上的原生设备功能。 若要开始，请参阅[开始使用 Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>通过 Unity 在 C# 中编写的跨平台移动游戏
  Unity 是用于开发多平台 2D 和 3D 游戏的使用广泛的平台。 可以使用 C# 编写你的游戏，并在 Android、iOS、Windows Phone 和许多其他平台上本机运行该游戏。 适用于 Unity 的 Visual Studio 工具是集成了 Unity 和 Visual Studio IDE 的扩展。 通过此扩展，你除了获得为 Unity 开发人员所设计的工作效率功能外，还可获得 Visual Studio IDE 和调试器的所有功能。 Visual Studio Tools for Unity 2.0 Preview 2 添加了对 Visual Studio 2015 的支持以及一些新功能，例如为“局部变量”和“监视”窗口中的对象提供更好的可视化效果。 Microsoft 最近收购了 SyntaxTree，这家公司是适用于 Unity 的 Visual Studio 工具的创建者。 要下载 Visual Studio Tools for Unity 2.0 Preview 2，以及获取有关 Visual Studio Tools for Unity 的详细信息，请参阅 [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu)。
@@ -70,7 +70,7 @@ ms.locfileid: "60041830"
 
  在 Windows 10 手机、Windows 10 台式机或 Xbox 上运行应用。 它是相同的应用程序包！ 通过引入 Windows 10 的单个统一核心，一个应用程序包可以跨所有平台运行。 多个平台都具有可添加到应用以利用平台特定行为的扩展 SDK。 例如，用于移动功能的扩展 SDK 控制 Windows phone 上按下的后退按钮。 如果在项目中引用扩展 SDK，只需添加运行时检查来测试该 SDK 是否可在该平台上可用。 这就是对每个平台使用相同应用程序包的方法了！
 
- 使用 C#、Visual Basic、C++ 或 JavaScript 创建这些 [通用 Windows 应用](http://msdn.microsoft.com/library/dn975273.aspx)。
+ 使用 C#、Visual Basic、C++ 或 JavaScript 创建这些 [通用 Windows 应用](https://msdn.microsoft.com/library/dn975273.aspx)。
 
 ### <a name="web"></a>Web
  ASP.NET 5 是 MVC、WebAPI 和 SignalR 的一个重大更新，在 Windows、Mac 和 Linux 上运行。  ASP.NET 5 旨在完全为你提供可组合的精益 .NET 堆栈以便生成基于云的现代应用程序。 Visual Studio 2015 工具与常用 Web 开发工具（例如 Bower 和 Grunt）更紧密地集成。 若要开始操作，请参阅  [NET Web 开发和工具博客](http://blogs.msdn.com/b/webdev/)上的多篇博客文章。
@@ -87,12 +87,12 @@ ms.locfileid: "60041830"
 
  C# 和 Visual Basic 语言都在核心语言和 IDE 支持方面进行了很多小的改进。 这些改进一起作用，让你的 .NET 编码体验更直观、更方便、更有效。
 
- 有关详细信息，请参阅[What's New](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)并[.NET 博客](http://blogs.msdn.com/b/dotnet/)。
+ 有关详细信息，请参阅[What's New](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)并[.NET 博客](http://blogs.msdn.com/b/dotnet/)。
 
 #### <a name="c"></a>C++
  Visual C++ 在以下方面有大幅提升：C++11/14 语言一致性、对跨平台移动设备开发的支持、对可恢复函数和 await 的支持（目前计划在 C++17 中进行标准化）、C 运行时库 (CRT) 和 C++ 标准库 (STL) 实现中的改进和 Bug 修复、MFC 中可调整大小的对话框、新的编译器优化、更好的生成性能、代码编辑器中的新诊断功能和新效率工具。
 
- 有关详细信息，请参阅[What's New for Visual C++ ](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)并[VisualC++博客](http://blogs.msdn.com/b/vcblog/)。
+ 有关详细信息，请参阅[What's New for Visual C++ ](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)并[VisualC++博客](http://blogs.msdn.com/b/vcblog/)。
 
 ## <a name="device-preview-menu-bar"></a>设备预览菜单栏
  在通用 Windows 平台项目中，设备预览菜单栏使你可以查看基于 XAML 的 UI 在各种屏幕尺寸上的呈现方式。
@@ -123,11 +123,11 @@ ms.locfileid: "60041830"
 ## <a name="cross-platform-debugging-support"></a>跨平台调试支持
  可以使用 Visual Studio 创建和调试在 Windows、iOS 和 Android 设备运行的本机移动应用。 使用 [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)，或连接设备并在 Visual Studio 中直接调试代码。
 
-- **JavaScript/Cordova**。 使用 [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) ，通过 JavaScript 生成适用于 Windows、iOS 和 Android 的本机应用。
+- **JavaScript/Cordova**。 使用 [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) ，通过 JavaScript 生成适用于 Windows、iOS 和 Android 的本机应用。
 
-     [调试您的应用程序](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)在 MSDN 库中是调试支持 Cordova 的 Visual Studio 的详细的信息。
+     [调试您的应用程序](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1)在 MSDN 库中是调试支持 Cordova 的 Visual Studio 的详细的信息。
 
-- **C#/Xamarin**。 通过 [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) ，在 Visual Studio 中使用 C# 生成适用于 Windows、iOS 和 Android 的本机应用。
+- **C#/Xamarin**。 通过 [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) ，在 Visual Studio 中使用 C# 生成适用于 Windows、iOS 和 Android 的本机应用。
 
      [Xamarin 开发人员指南](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) 中的 [调试](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) (iOS) 和 [在设备上进行调试](http://developer.xamarin.com/guides) 介绍了调试体验。
 
@@ -262,11 +262,11 @@ ms.locfileid: "60041830"
 ### <a name="report-crashes-hangs-and-performance-issues"></a>报告崩溃、挂起和性能问题
  有时，快速标记哭脸不足以传达你不喜欢的内容造成的完全影响。 当你遭遇挂起、崩溃或性能问题时，你可以通过使用发送哭脸后显示的对话框方便地共享重现步骤、故障转储和跟踪文件。
 
- 首先，如上所述发送哭脸。 在弹出的对话框上，你可以使用任何一个默认标记对你的反馈进行标记或者创建你自己的标记。 标记可帮助我们将你的反馈路由到适当的功能团队。 在“选择类别”  下拉列表中，选择表示你报告的问题的选项，然后按照步骤重现此问题。 同时提供有关如何使用 Visual Studio 报告反馈的详细步骤。 有关详细信息，请参阅[Visual Studio 发送笑脸说明](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
+ 首先，如上所述发送哭脸。 在弹出的对话框上，你可以使用任何一个默认标记对你的反馈进行标记或者创建你自己的标记。 标记可帮助我们将你的反馈路由到适当的功能团队。 在“选择类别”  下拉列表中，选择表示你报告的问题的选项，然后按照步骤重现此问题。 同时提供有关如何使用 Visual Studio 报告反馈的详细步骤。 有关详细信息，请参阅[Visual Studio 发送笑脸说明](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。
 
 ## <a name="see-also"></a>请参阅
 
-* [使用 Apache Cordova 生成跨平台应用](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+* [使用 Apache Cordova 生成跨平台应用](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [使用 Visual C++ 生成跨平台移动应用](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [使用 IntelliTest 为代码生成单元测试](./test/generate-unit-tests-for-your-code-with-intellitest.md)

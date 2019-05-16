@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675617"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 备注
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 > [!NOTE]
-> [/Zo（增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译器选项（在 Visual Studio Update 3 中引入）为优化代码生成更丰富的调试信息（未使用“/Od”编译器选项生成的项目。 请参阅 [/O 选项（优化代码）](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)）。 这包括对调试本地变量和内联函数的改进的支持。  
+> [/Zo（增强优化调试）](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译器选项（在 Visual Studio Update 3 中引入）为优化代码生成更丰富的调试信息（未使用“/Od”编译器选项生成的项目。 请参阅 [/O 选项（优化代码）](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)）。 这包括对调试本地变量和内联函数的改进的支持。  
 >   
 > “/Zo”编译器选项时，禁用[编辑并继续](../debugger/edit-and-continue-visual-csharp.md)。  
   
@@ -73,11 +73,11 @@ ms.locfileid: "63435713"
   
 6. 在“C++”文件夹下，选择 `Optimization`。  
   
-7. 在右边的属性列表中找到“`Optimization`”。 它旁边的设置可能显示为 `Disabled (` [/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5) `)`。 选择其他选项（`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Maximum Speed``(`[/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Full Optimization``(`[/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` 或 `Custom`）之一。  
+7. 在右边的属性列表中找到“`Optimization`”。 它旁边的设置可能显示为 `Disabled (` [/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5) `)`。 选择其他选项（`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`、`Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` 或 `Custom`）之一。  
   
 8. 如果为“`Custom`”选择了“`Optimization`”选项，现在便可为属性列表中显示的其他任何属性设置选项。  
   
-9. 选择配置属性 C /C++，命令行节点的项目属性页中，并添加`(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`到**其他选项**文本框。  
+9. 选择配置属性 C /C++，命令行节点的项目属性页中，并添加`(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)`到**其他选项**文本框。  
   
     > [!WARNING]
     > `/Zo` 需要 Visual Studio 2013 Update 3 或更高版本。  
@@ -90,7 +90,7 @@ ms.locfileid: "63435713"
 for (x=0; x<10; x++)  
 ```  
   
- 假定在该行设置了一个断点。 可能希望该断点被命中 10 次，但如果代码进行了优化，则只会命中该断点一次。 因为第一个指令将 `x` 的值设置为 0。 编译器认定该指令只需执行一次，将其移出循环。 断点随之移动。 而比较和递增 `x` 的指令仍留在循环内。 查看“反汇编”窗口时，[单步执行单元](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)自动设置为“指令”以允许更大控制，这在逐句通过优化的代码时很有用。  
+ 假定在该行设置了一个断点。 可能希望该断点被命中 10 次，但如果代码进行了优化，则只会命中该断点一次。 因为第一个指令将 `x` 的值设置为 0。 编译器认定该指令只需执行一次，将其移出循环。 断点随之移动。 而比较和递增 `x` 的指令仍留在循环内。 查看“反汇编”窗口时，[单步执行单元](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)自动设置为“指令”以允许更大控制，这在逐句通过优化的代码时很有用。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f4502bcc439d55e36dad43add4c5b9852be21bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435201"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685382"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>如何：指定应用程序图标 (Visual Basic 中， C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ ms.locfileid: "63435201"
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [应用程序页、项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [管理应用程序属性](../ide/application-properties.md)  
- [如何：添加或删除资源](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [如何：添加或删除资源](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

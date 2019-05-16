@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045324"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679882"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "60045324"
  还可以创建自定义项目和项模板。 有关详细信息，请参阅[创建项目和项模板](../ide/creating-project-and-item-templates.md)。
 
 ## <a name="creating-new-projects"></a>创建新项目
- 创建新项目的最简单方法是从预定义的项目模板开始，该模板包含一组基本的预生成代码文件、配置文件、资产和设置，这些内容使你可以开始采用特定编程语言创建特定类型的应用程序或网站。 这些模板是从主菜单选择“文件”&#124;“新建”&#124;“项目”或“文件”&#124;“新建”&#124;“网站”，然后进行导航时在“新建项目对话框”中看到的内容。 有关详细信息，请参阅[创建解决方案和项目](../ide/creating-solutions-and-projects.md)和 [NIB Creating Projects from Templates](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)（NIB 从模板创建项目）。
+ 创建新项目的最简单方法是从预定义的项目模板开始，该模板包含一组基本的预生成代码文件、配置文件、资产和设置，这些内容使你可以开始采用特定编程语言创建特定类型的应用程序或网站。 这些模板是从主菜单选择“文件”&#124;“新建”&#124;“项目”或“文件”&#124;“新建”&#124;“网站”，然后进行导航时在“新建项目对话框”中看到的内容。 有关详细信息，请参阅[创建解决方案和项目](../ide/creating-solutions-and-projects.md)和 [NIB Creating Projects from Templates](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2)（NIB 从模板创建项目）。
 
 ## <a name="managing-projects-in-solution-explorer"></a>在解决方案资源管理器中管理项目
  创建新项目之后，可使用 **“解决方案资源管理器”** 查看和管理项目和解决方案及其关联项。 下图显示具有一个包含两个项目的 C# 解决方案的服务器资源管理器。

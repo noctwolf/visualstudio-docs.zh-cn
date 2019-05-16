@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559809"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693775"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为
   
 - [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了单独的命名空间中生成的 DataContext 和数据类的设置。 这样，数据访问和数据实体层的逻辑分隔。  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供了<xref:System.Data.Linq.Table%601.Attach%2A>方法，可用于从应用程序中的不同层将组合在一起的 DataContext。 有关详细信息，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)提供了<xref:System.Data.Linq.Table%601.Attach%2A>方法，可用于从应用程序中的不同层将组合在一起的 DataContext。 有关详细信息，请参阅[N 层和远程应用程序使用 LINQ 到 SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
   
 ## <a name="presentation-tier"></a>表示层  
  *表示层*是用户与应用程序交互的层。 它通常还包含其他应用程序逻辑。 典型的表示层组件包括：  
   
 - 数据绑定组件，如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
   
-- 对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)表示层中使用的实体类。  
+- 对象表示的数据，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)表示层中使用的实体类。  
   
   表示层通常通过使用服务引用来访问中间层 (例如， [Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)应用程序)。 表示层不直接访问数据层。 表示层与数据层通过中间层中的数据访问组件进行通信。  
   
@@ -57,9 +57,9 @@ N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为
   
 - 数据访问组件和逻辑，如下所示：  
   
-  - [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)并[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
+  - [Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)并[Dataadapter 和 Datareader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
   
-  - 对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类。  
+  - 对象表示的数据，例如[LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类。  
   
   - 常见的应用程序服务，例如身份验证、 授权和个性化设置。  
   
@@ -87,9 +87,9 @@ N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为
   
  [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [演练：向 N 层数据应用程序中添加验证](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [演练：向 N 层数据应用程序中添加验证](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [使用 LINQ to SQL 的 N 层和远程应用程序](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [使用 LINQ to SQL 的 N 层和远程应用程序](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Data.Linq.ITable.Attach%2A>   

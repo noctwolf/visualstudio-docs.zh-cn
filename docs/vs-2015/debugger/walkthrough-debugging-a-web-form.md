@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56a11c24ad8a38cc837659ac063987573c0ba492
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444307"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704923"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "63444307"
 > [!NOTE]
 > 若要完成本演练，您必须在服务器计算机上具有管理员特权。 默认情况下，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程（aspnet_wp.exe 或 w3wp.exe）作为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程运行。 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]，您必须在运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 的计算机上拥有管理员特权。 有关详细信息，请参阅 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
- 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+ 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ### <a name="to-create-the-web-form"></a>创建 Web 窗体  
   
@@ -100,7 +100,7 @@ ms.locfileid: "63444307"
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。 有关详细信息，请参见[断点](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)  
+     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。 有关详细信息，请参见[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)  
   
 2. 在“调试”菜单上，单击“启动调试”。  
   

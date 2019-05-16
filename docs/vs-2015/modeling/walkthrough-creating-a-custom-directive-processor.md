@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 325a0c594c142ab62aba47e5c721da5ade6f179f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446761"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704054"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>测试指令处理器  
  若要测试指令处理器，需要编写一个调用它的文本模板。  
 
- 在本示例中，文本模板调用指令并传入包含类文件文档的 XML 文件的名称。 有关详细信息，请参阅[XML 文档注释](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
+ 在本示例中，文本模板调用指令并传入包含类文件文档的 XML 文件的名称。 有关详细信息，请参阅[XML 文档注释](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)。  
 
  然后，文本模板使用该指令创建的 <xref:System.Xml.XmlDocument> 属性导航到 XML 并输出文档注释。  
 

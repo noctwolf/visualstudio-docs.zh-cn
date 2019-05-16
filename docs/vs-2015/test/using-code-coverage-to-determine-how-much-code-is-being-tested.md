@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0aa4646bd9d3295aaa2a9da49cc4ed6f057d91a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445922"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695169"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  你可以通过编写 .runsettings 文件来加强控制为代码覆盖率分析选择哪些程序集和元素。 例如，你可以排除特定类型的程序集，而不必向它们的类添加特性。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。  
   
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>分析生成服务中的代码覆盖率  
- 签入代码时，你的测试以及其他团队成员的所有其他测试将在生成服务器中运行。 （如果还没有对此进行设置，请参阅 [Run tests in your build process](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)（在生成过程中运行测试）。）对生成服务分析代码覆盖率很有用，因为这样能提供整个项目中的覆盖率的最新、最全面的情报。 它还包含你不常在开发计算机上运行的自动系统测试和其他编码的测试。  
+ 签入代码时，你的测试以及其他团队成员的所有其他测试将在生成服务器中运行。 （如果还没有对此进行设置，请参阅 [Run tests in your build process](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)（在生成过程中运行测试）。）对生成服务分析代码覆盖率很有用，因为这样能提供整个项目中的覆盖率的最新、最全面的情报。 它还包含你不常在开发计算机上运行的自动系统测试和其他编码的测试。  
   
 1. 在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。  
   
@@ -265,7 +265,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
    生成运行后，代码覆盖率结果将附加到测试运行并显示在生成摘要中。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>分析命令行上的代码覆盖率  
- 若要从命令行运行测试，请使用 vstest.console.exe。 代码覆盖率是此实用工具的一个选项。 有关详细信息，请参阅 [VSTest.Console.exe 命令行选项](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  
+ 若要从命令行运行测试，请使用 vstest.console.exe。 代码覆盖率是此实用工具的一个选项。 有关详细信息，请参阅 [VSTest.Console.exe 命令行选项](https://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  
   
 1. 启动 Visual Studio 开发人员命令提示符：  
   

@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688196"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>在 n 层应用程序中使用数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ N 层数据应用程序 * 是以数据为中心且分为多个逻辑层的应用
  [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  提供有关创建类型化数据集并将 TableAdapter 和数据集代码分离到多个项目中的分步说明。  
   
- [演练：向 N 层数据应用程序中添加验证](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [演练：向 N 层数据应用程序中添加验证](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  提供将验证添加到在 n 层数据应用程序演练中创建的应用程序的分步说明。  
   
 ## <a name="reference"></a>参考  
@@ -71,4 +71,4 @@ N 层数据应用程序 * 是以数据为中心且分为多个逻辑层的应用
 - [分层更新](../data-tools/hierarchical-update.md)   
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)   
 - [在 Visual Studio 中访问数据](../data-tools/accessing-data-in-visual-studio.md)   
-- [使用 LINQ to SQL 的 N 层和远程应用程序](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [使用 LINQ to SQL 的 N 层和远程应用程序](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

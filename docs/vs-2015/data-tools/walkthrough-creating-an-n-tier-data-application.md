@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675629"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序”视频
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
   
 - 使用“数据源配置”向导创建类型化数据集。  
   
-- 将生成[Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和数据集代码分离到相互独立的项目。  
+- 将生成[Tableadapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和数据集代码分离到相互独立的项目。  
   
 - 创建 Windows Communication Foundation (WCF) 服务以调入数据访问层。  
   
@@ -381,7 +381,7 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
 ## <a name="next-steps"></a>后续步骤  
  根据应用程序的需求，在基于 Windows 的应用程序中保存相关数据后，可能还要执行一些步骤。 例如，你可以对此应用程序进行以下增强：  
   
-- 将验证添加到数据集。 有关信息，请参阅[演练：向 N 层数据应用程序中添加验证](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)。  
+- 将验证添加到数据集。 有关信息，请参阅[演练：向 N 层数据应用程序中添加验证](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)。  
   
 - 将其他方法添加到服务，以将数据更新回数据库。  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3b7f4de72984bb5b009a890bba9678a59df6c7c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4570b8ed1afdfff2efd36dbc2f80e97cfbceecac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59000206"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698058"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>请参阅  
- [测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [测试应用程序](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)

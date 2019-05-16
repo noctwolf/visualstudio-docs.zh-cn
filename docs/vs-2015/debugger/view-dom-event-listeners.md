@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437684"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693578"
 ---
 # <a name="view-dom-event-listeners"></a>查看 DOM 事件侦听器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ ms.locfileid: "63437684"
      **事件**选项卡显示在层次结构列表中选择任何元素的事件侦听器。
 
 ### <a name="Tips"></a> 解决问题的事件侦听器的提示
- 在某些应用方案，事件侦听器必须显式删除使用[removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)。 使用**事件**在 DOM 资源管理器来测试是否运行代码时从 DOM 元素删除事件侦听器的选项卡。 下面是一些提示，用来帮助解决以下类型的问题：
+ 在某些应用方案，事件侦听器必须显式删除使用[removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx)。 使用**事件**在 DOM 资源管理器来测试是否运行代码时从 DOM 元素删除事件侦听器的选项卡。 下面是一些提示，用来帮助解决以下类型的问题：
 
-- 使用单页导航模型的应用程序在 Visual Studio 中实现[项目模板](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，它不是通常需要删除对对象，例如，属于页面的 DOM 元素注册的事件侦听器。 在此方案中，DOM 元素及其关联事件侦听器具有相同的生存期并且它们可以作为垃圾回收。
+- 使用单页导航模型的应用程序在 Visual Studio 中实现[项目模板](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx)，它不是通常需要删除对对象，例如，属于页面的 DOM 元素注册的事件侦听器。 在此方案中，DOM 元素及其关联事件侦听器具有相同的生存期并且它们可以作为垃圾回收。
 
 - 如果 DOM 元素的生存期与关联的事件侦听器不同，你可能必须调用 `removeEventListener` 方法。 例如，如果你使用 `window.onresize` 事件，当你从处理事件的页面离开时，你可能必须移除事件侦听器。
 

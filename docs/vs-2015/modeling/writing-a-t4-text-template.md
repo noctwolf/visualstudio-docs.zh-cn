@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446714"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684705"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- 有关宏的列表，请参阅[用于生成命令和属性的常用宏](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。  
+ 有关宏的列表，请参阅[用于生成命令和属性的常用宏](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)。  
   
  程序集指令中不起[预处理的文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
@@ -264,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- 还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或从模板的其他主机](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
+ 还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或从模板的其他主机](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>设计时文本模板在单独的 AppDomain 中运行  
  请注意，[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)独立于主应用程序的 AppDomain 中运行。 在大多数情况下这并不重要，但在某些复杂的情况下你可能会发现一些限制。 例如，如果要从单独的服务将数据传入模板或从中传出数据，则该服务必须提供可序列化的 API。  

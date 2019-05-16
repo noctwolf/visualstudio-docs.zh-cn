@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442615"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693973"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步骤 2：创建随机加法问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63442615"
   
      `Random` 称为对象。 您之前可能听过“对象”一词，您将在下一个教程中详细了解它在编程中的含义。 当前，只需记住您可以使用 `new` 语句创建按钮、标签、面板、OpenFileDialog、ColorDialog、SoundPlayer、Random 甚至窗体，而这些项称为对象。 运行程序时，启动窗体，同时窗体背后的代码创建一个 `Random` 对象并将其命名为“randomizer”。  
   
-     随后，您将构建一个检查答案的方法，因此，您的测验必须使用变量来存储为每个问题生成的随机数。 请参阅[变量](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)或[类型](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)。 为正确使用变量，您必须声明这些变量，这意味着列出它们的名称和数据类型。  
+     随后，您将构建一个检查答案的方法，因此，您的测验必须使用变量来存储为每个问题生成的随机数。 请参阅[变量](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa)或[类型](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad)。 为正确使用变量，您必须声明这些变量，这意味着列出它们的名称和数据类型。  
   
 4. 将两个整型变量添加到窗体，并将它们分别命名为“addend1”和“addend2”。  
   

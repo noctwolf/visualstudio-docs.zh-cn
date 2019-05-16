@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703725"
 ---
 # <a name="signfile-task"></a>SignFile 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "63444394"
 ```  
   
 > [!NOTE]
-> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅 [Obtain the SHA-1 Hash of a Trusted Root CA Certificate](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)（获取受信任的根 CA 证书的 SHA-1 哈希）。  
+> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅 [Obtain the SHA-1 Hash of a Trusted Root CA Certificate](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87)（获取受信任的根 CA 证书的 SHA-1 哈希）。  
   
 ## <a name="example"></a>示例  
  以下示例使用 `Exec` 任务来签署 `FilesToSign` 项集合中指定的文件，使用的证书由 `Certificate` 属性定义。 你可用此在生成过程中对 Windows 安装程序文件进行签名。  

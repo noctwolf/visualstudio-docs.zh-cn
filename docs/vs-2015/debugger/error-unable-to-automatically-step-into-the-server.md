@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8dcb8fa757f1cccf2f3aef6c2520e0c61da0b9f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538444"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682679"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>错误：无法自动单步执行服务器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "62538444"
   
  无法自动单步执行服务器。 在远程过程执行前调试器未得到通知  
   
- 当你尝试单步执行 Web 服务时，可能发生此错误（请参阅 [单步执行 XML Web services](http://msdn.microsoft.com/8e67de38-bf5f-41cc-a457-1b88ce63d764)）。 只要 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 未正确设置，就会发生此错误。  
+ 当你尝试单步执行 Web 服务时，可能发生此错误（请参阅 [单步执行 XML Web services](https://msdn.microsoft.com/8e67de38-bf5f-41cc-a457-1b88ce63d764)）。 只要 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 未正确设置，就会发生此错误。  
   
  可能的原因有：  
   

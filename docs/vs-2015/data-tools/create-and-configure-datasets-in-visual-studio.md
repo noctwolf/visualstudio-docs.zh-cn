@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093470"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705151"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中创建和配置数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 一个*数据集*是一组在内存中存储数据库中的数据和支持更改跟踪，若要启用的对象的创建、 读取、 更新和删除 (CRUD) 操作，对该数据而无需始终连接到数据库。 数据集设计用于简单*对数据的窗体*业务应用程序。 对于新应用程序，请考虑使用实体框架在内存中的数据存储和建模。 若要使用的数据集，应具有数据库概念的基础知识。
 
- 创建类型化<xref:System.Data.DataSet>在设计时通过使用 Visual Studio 中的类**数据源配置向导**。 有关以编程方式创建数据集的信息，请参阅[创建数据集](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)。
+ 创建类型化<xref:System.Data.DataSet>在设计时通过使用 Visual Studio 中的类**数据源配置向导**。 有关以编程方式创建数据集的信息，请参阅[创建数据集](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc)。
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>使用数据源配置向导创建新的数据集
 
@@ -90,6 +90,6 @@ ms.locfileid: "60093470"
 
 2. 拖动<xref:System.Data.DataTable>类派生**数据集**选项卡**工具箱**拖动到**数据集设计器**。
 
-3. 添加列来定义您的数据的表。 有关详细信息，请参阅[如何：向数据表添加列](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)。
+3. 添加列来定义您的数据的表。 有关详细信息，请参阅[如何：向数据表添加列](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)。
 
-4. 独立的表需要实现`Fill`独立的表中的逻辑，以便可以填充数据。 有关填充独立的数据的表的信息，请参阅[填充数据集从 DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)。
+4. 独立的表需要实现`Fill`独立的表中的逻辑，以便可以填充数据。 有关填充独立的数据的表的信息，请参阅[填充数据集从 DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153)。

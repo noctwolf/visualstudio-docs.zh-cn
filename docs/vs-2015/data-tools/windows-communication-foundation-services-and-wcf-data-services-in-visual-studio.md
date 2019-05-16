@@ -33,17 +33,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68f2b400cc92673131dea2fc281b830df86019f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443872"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704382"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的工具和[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，Microsoft 技术，用于创建分布式应用程序。 本主题提供介绍了从服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]角度来看。 有关完整文档，请参阅[WCF 数据服务 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
+Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的工具和[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]，Microsoft 技术，用于创建分布式应用程序。 本主题提供介绍了从服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]角度来看。 有关完整文档，请参阅[WCF 数据服务 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a)。
 
 ## <a name="what-is-wcf"></a>WCF 是什么？
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] 是用于创建安全、 可靠、 事务处理，且可互操作分布式应用程序的统一的框架。 它取代了较旧的进程间通信技术，如 ASMX Web 服务、.NET 远程处理、 企业服务 (DCOM) 和 MSMQ。 WCF 汇集了所有这些技术的统一编程模型的功能。 这简化了开发分布式应用程序的体验。
@@ -92,21 +92,21 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
 
  时选择模板时，文件将添加为服务协定、 服务实现和服务配置。 已添加所有必要的属性，创建简单的"Hello World"类型的服务，并且没有编写任何代码。 你将当然，想要添加代码以提供函数和方法对于现实世界服务，但模板提供基本的基础。
 
- 若要了解有关 WCF 模板的详细信息，请参阅[WCF Visual Studio 模板](http://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)。
+ 若要了解有关 WCF 模板的详细信息，请参阅[WCF Visual Studio 模板](https://msdn.microsoft.com/library/6a608575-3535-4190-89da-911e24c8374f)。
 
 #### <a name="wcf-service-host"></a>WCF 服务主机
  当您启动[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]（通过按 F5） 调试器针对 WCF 服务项目，工具会自动启动，以承载服务本地 WCF 服务主机。 WCF 服务主机枚举中的 WCF 服务项目的服务、 加载项目的配置和实例化它找到的每个服务的主机。
 
  通过使用 WCF 服务主机，可以测试 WCF 服务，而无需额外编写代码或在开发过程中提交到特定的主机。
 
- 若要了解有关 WCF 服务主机的详细信息，请参阅[WCF 服务主机 (WcfSvcHost.exe)](http://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)。
+ 若要了解有关 WCF 服务主机的详细信息，请参阅[WCF 服务主机 (WcfSvcHost.exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e)。
 
 #### <a name="wcf-test-client"></a>WCF 测试客户端
  WCF 测试客户端工具，您可以输入测试参数、 将该输入到 WCF 服务，并提交并查看服务发回的响应。 它提供了方便的服务测试体验，当您将其与 WCF 服务主机。 该工具可用于 Visual Studio 2015 安装在驱动器 c： 此处的 \Common7\IDE 文件夹中找到：**C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\\**.
 
  按 F5 调试 WCF 服务项目时，WCF 测试客户端打开并显示在配置文件中定义的服务终结点的列表。 可以测试参数和启动服务，并重复此过程以继续测试和验证你的服务。
 
- 若要了解有关 WCF 测试客户端的详细信息，请参阅[WCF 测试客户端 (WcfTestClient.exe)](http://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)。
+ 若要了解有关 WCF 测试客户端的详细信息，请参阅[WCF 测试客户端 (WcfTestClient.exe)](https://msdn.microsoft.com/library/d4302855-677f-4640-aa90-c5d785d72fb7)。
 
 ### <a name="accessing-wcf-services-in-visual-studio"></a>访问 Visual Studio 中的 WCF 服务
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 简化了创建自动生成代理和使用添加的服务的终结点的 WCF 客户端的任务**添加服务引用**对话框。 所有必要的配置信息添加到 app.config 文件中。 大多数情况下，您需要做的所有实例化服务才能使用它。
@@ -236,12 +236,12 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
 |-----------|-----------------|
 |[演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|提供创建和使用中的 WCF 服务的分步演示[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
 |[演练：通过 WPF 和实体框架创建 WCF 数据服务](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供了分步演示如何创建和使用[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|[使用 WCF 开发工具](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|讨论如何创建和测试中的 WCF 服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
-|[如何：添加、 更新或删除服务引用](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|介绍如何添加、 更新或从项目中删除 WCF 服务。|
+|[使用 WCF 开发工具](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|讨论如何创建和测试中的 WCF 服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
+|[如何：添加、 更新或删除服务引用](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|介绍如何添加、 更新或从项目中删除 WCF 服务。|
 |[如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|讨论如何引用和使用[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|
 |[服务引用疑难解答](../data-tools/troubleshooting-service-references.md)|提供服务的引用以及如何阻止它们可以发生的一些常见错误。|
 |[调试 WCF 服务](../debugger/debugging-wcf-services.md)|描述常见调试问题和调试 WCF 服务时可能会遇到的技术。|
-|[Windows Communication Foundation 身份验证服务概述](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|介绍如何使用 WCF 来提供 Web 站点的角色服务。|
+|[Windows Communication Foundation 身份验证服务概述](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|介绍如何使用 WCF 来提供 Web 站点的角色服务。|
 |[演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供有关创建类型化数据集并将 TableAdapter 和数据集代码分离到多个项目中的分步说明。|
 |[“配置服务引用”对话框](../data-tools/configure-service-reference-dialog-box.md)|描述用户界面元素的**配置服务引用**对话框。|
 

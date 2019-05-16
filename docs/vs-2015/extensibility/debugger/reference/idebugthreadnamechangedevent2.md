@@ -12,12 +12,12 @@ ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c65a3aeb4f4973bd4fbe9310af8b1f9b4fd21a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: de16e07589c9c6276445d70ad4f2b7f9812a288e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936700"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704824"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugThreadNameChangedEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>实施者的说明  
- DE 实现此接口到线程的名称已更改的报表。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)访问`IDebugEvent2`接口。  
+ DE 实现此接口到线程的名称已更改的报表。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须实现此接口作为对同一个对象。 使用 SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)访问`IDebugEvent2`接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  DE 创建，并将此事件对象发送到线程的名称已更改的报表。 通过使用发送该事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) SDM 附加到正在调试的程序时提供的回调函数。  

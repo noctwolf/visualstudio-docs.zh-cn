@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7ea0ea688ae9702c7107b33ff87437ebd3656e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937752"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704162"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>“编辑并继续”对话框 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,4 +35,4 @@ ms.locfileid: "58937752"
  可以在进行调试时编辑代码以修复错误、停止调试并修复代码或是忽略错误并继续调试。 如果继续操作而不进行修复，则不会立即应用代码更改。  
   
 ## <a name="see-also"></a>请参阅  
- [“选项”对话框 ->“调试”->“编辑并继续”](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [“选项”对话框 ->“调试”->“编辑并继续”](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

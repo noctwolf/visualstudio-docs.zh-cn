@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780839"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686271"
 ---
 # <a name="profiling-tools"></a>分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "54780839"
 ## <a name="memory-usage"></a>内存使用率  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- 使用“内存使用率”  工具进行调试时可查找内存泄漏和低效内存。 该工具可以拍摄托管和本机内存堆的快照。 此工具可用于桌面应用、Windows 通用应用和 ASP.NET 应用。 “内存使用率”  工具可以在调试时从“诊断工具”  窗口运行（“调试”/“Windows”/“显示诊断工具”），也可以在调试器外部运行（“调试”/“性能探查器...”）。有关详细信息，请参阅[内存使用情况](../profiling/memory-usage.md)和[不调试情况下的内存使用情况](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
+ 使用“内存使用率”  工具进行调试时可查找内存泄漏和低效内存。 该工具可以拍摄托管和本机内存堆的快照。 此工具可用于桌面应用、Windows 通用应用和 ASP.NET 应用。 “内存使用率”  工具可以在调试时从“诊断工具”  窗口运行（“调试”/“Windows”/“显示诊断工具”），也可以在调试器外部运行（“调试”/“性能探查器...”）。有关详细信息，请参阅[内存使用情况](../profiling/memory-usage.md)和[不调试情况下的内存使用情况](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
   
 ## <a name="cpu-usage"></a>CPU 使用率  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

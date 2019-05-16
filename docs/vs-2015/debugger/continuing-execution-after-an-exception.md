@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105455"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702256"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-当调试器因出现异常而中断执行时，会显示一个对话框。 对于 Visual Basic 或 C# 中，您将看到[异常助手](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)对话框中的，默认情况下。 有关C++，你将看到较早**异常**对话框。 如果您使用的 Visual Basic 或 C#，但已禁用**异常助手**中**选项**对话框中，您将看到**异常**对话框。  
+当调试器因出现异常而中断执行时，会显示一个对话框。 对于 Visual Basic 或 C# 中，您将看到[异常助手](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)对话框中的，默认情况下。 有关C++，你将看到较早**异常**对话框。 如果您使用的 Visual Basic 或 C#，但已禁用**异常助手**中**选项**对话框中，您将看到**异常**对话框。  
   
  当**异常助手**或**异常**对话框随即出现，你可以尝试修复导致异常的问题。  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704537"
 ---
 # <a name="javascript-memory"></a>“JavaScript 内存”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - 在用户导航到新页后，查找无意间保留在内存中的对象，这是导致出现内存问题的一个常见原因。 例如:  
   
-    - [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函数的使用不当可能导致此问题。  
+    - [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函数的使用不当可能导致此问题。  
   
-    - 某些对象可能会提供 `dispose` 方法和建议以供使用。 例如，若调用列表的 `dispose` 方法，则应在 [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) 上调用 `createFiltered` ，然后离开页面。  
+    - 某些对象可能会提供 `dispose` 方法和建议以供使用。 例如，若调用列表的 `dispose` 方法，则应在 [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) 上调用 `createFiltered` ，然后离开页面。  
   
     - 可能需要移除一个或多个事件侦听器。 有关更多信息，请参见 [View DOM event listeners](../debugger/view-dom-event-listeners.md)。  
   
 - 观看 [此视频](http://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，与 JavaScript 内存分析器相关）的后半部分。  
   
-- 阅读 [管理 Windows 应用商店应用程序中的内存](http://msdn.microsoft.com/magazine/jj651575.aspx)。  
+- 阅读 [管理 Windows 应用商店应用程序中的内存](https://msdn.microsoft.com/magazine/jj651575.aspx)。  
   
 - 考虑临时修改代码来隔离问题。 例如，你可能希望：  
   

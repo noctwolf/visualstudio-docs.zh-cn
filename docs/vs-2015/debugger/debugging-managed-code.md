@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691449"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ ms.locfileid: "59000792"
  [IntelliTrace](../debugger/intellitrace.md)  
  通过使用 IntelliTrace 记录应用的执行历史记录来更快更轻松地发现 Bug。 通过记录的事件和调用向后移动和向前移动以在关键时间点检查您应用的状态。 调试代码，而无需设置很多断点或频繁重新启动应用。 需要 Visual Studio Ultimate。  
   
- [跟踪应用程序和在应用程序中插入检测点](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [跟踪应用程序和在应用程序中插入检测点](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  描述跟踪（一种用于监视运行中应用程序的执行情况的方法）和检测（将跟踪语句放在代码中的重要位置）。 此主题还提供了指向介绍以下内容的主题的链接：检测和跟踪、跟踪开关、跟踪侦听器、跟踪应用程序中的代码、将跟踪语句添加到应用程序代码，以及使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 进行有条件地编译。  
   
- [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  描述将 <xref:System.Diagnostics.DebuggableAttribute> 添加到用 C++ 编写的代码的链接器选项。 在使用调试功能（如使用 C++ 附加）时需要此特性。  
   
- [调试 Windows 服务应用程序](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [调试 Windows 服务应用程序](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  提供调试 Windows 服务应用程序的注意事项，其中包括：设置、附加到进程、调试服务的 `OnStart` 方法中的代码和 Main 方法中的代码、设置断点以及使用服务控制管理器启动、停止、暂停和继续服务。  
   
- [调试和分析](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [调试和分析](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  探讨如何调试 .NET Framework 应用程序和配置要求。  
   
  [调试脚本和 Web 应用程序](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ ms.locfileid: "59000792"
  提供指向调试文档的较大章节的链接。 涉及的信息包括：调试器的新增功能，设置和准备，断点，处理异常，编辑和继续，调试托管代码，调试 Visual C++ 项目，调试 COM 和 ActiveX，调试 DLL，调试 SQL，以及用户界面参考。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：在设计时调试自定义 Windows 窗体的控件](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [演练：在设计时调试自定义 Windows 窗体的控件](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [调试器安全](../debugger/debugger-security.md)   
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)

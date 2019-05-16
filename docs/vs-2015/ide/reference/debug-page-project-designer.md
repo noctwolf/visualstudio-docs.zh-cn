@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441419"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703919"
 ---
 # <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441419"
  通过以下选项，可选择要显示或修改的配置和平台。  
   
  **配置**  
- 指定要显示或修改的配置设置。 设置可以为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的配置设置。 设置可以为“调试”（默认）、“发布”或“所有配置”。 有关详细信息，请参阅[调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **平台**  
- 指定要显示或修改的平台设置。 这些选择包括“任何 CPU”（默认）、“x64”和“x86”。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的平台设置。 这些选择包括“任何 CPU”（默认）、“x64”和“x86”。 有关详细信息，请参阅[调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="start-action"></a>启动操作  
  “启动操作”指示应用程序调试时要启动的项：项目、自定义程序、URL 或不启动任何项。 默认情况下，此选项设置为“启动项目”。 “调试”页上的“启动操作”设置确定 `StartAction` 属性的值。  
@@ -78,6 +78,6 @@ ms.locfileid: "63441419"
  [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)   
  [C# 调试配置的项目设置](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [管理调试属性](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [管理调试属性](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [如何：调试具有受限权限的 ClickOnce 应用程序](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何：创建和编辑配置](../../ide/how-to-create-and-edit-configurations.md)

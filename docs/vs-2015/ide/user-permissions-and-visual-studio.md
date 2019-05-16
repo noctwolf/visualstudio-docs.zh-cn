@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d8ba826e332141a3ee53a70185f0e8e18e465f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8bc4920c32d781d31a6aed88699efccf8be6b774
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443222"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703995"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "63443222"
 |安装|安装 Visual Studio。|[安装 Visual Studio 2015](../install/install-visual-studio-2015.md)|
 ||从 Visual Studio 的试用版升级。|[如何：从 Visual Studio 的试用版升级](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||安装、更新或移除本地 Help 内容。|[安装和管理本地内容](../ide/install-and-manage-local-content.md)|
-|应用程序类型|部署 SharePoint 2010 的解决方案。|[开发 SharePoint 解决方案的需求](http://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
+|应用程序类型|部署 SharePoint 2010 的解决方案。|[开发 SharePoint 解决方案的需求](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
 ||获取 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]的开发人员许可证。|[获取开发人员许可证（Windows 应用商店应用）](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |工具箱|将经典 COM 控件添加到“工具箱”。|[使用工具箱](../ide/using-the-toolbox.md)|
-|外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建外接程序和向导](http://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|生成|使用注册组件的后期生成事件。|[了解自定义生成步骤和生成事件](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
-||在生成 C++ 项目时包括一个注册步骤。|[了解自定义生成步骤和生成事件](http://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+|外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建外接程序和向导](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
+|生成|使用注册组件的后期生成事件。|[了解自定义生成步骤和生成事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
+||在生成 C++ 项目时包括一个注册步骤。|[了解自定义生成步骤和生成事件](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
 |调试|调试使用提升的权限运行的应用程序。|[调试器设置和准备](../debugger/debugger-settings-and-preparation.md)|
 ||调试在其他用户帐户下运行的应用程序，例如 ASP.NET 网站。|[调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||在区域中调试 XAML 浏览器应用程序 (XBAP)。|[WPF 主机 (PresentationHost.exe)](http://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
+||在区域中调试 XAML 浏览器应用程序 (XBAP)。|[WPF 主机 (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
 ||使用模拟器可以调试 Microsoft Azure 的云服务项目。|[在 Visual Studio 中调试云服务](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||配置远程调试的防火墙。|[在设备上安装远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
+||配置远程调试的防火墙。|[在设备上安装远程工具](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |性能工具|分析应用程序。|[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)|
 |部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序部署到承载提供程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
 |向 Microsoft 提供反馈|更改参与 Visual Studio 客户体验计划的方式。|[如何：发送反馈](../misc/how-to-send-feedback-about-visual-studio.md)|

@@ -17,17 +17,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa406ab366c9bfb51f506c2dbba0a8408d7ba377
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444502"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688544"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-您可以扩展的功能`TableAdapter`通过创建为分部类文件`TableAdapter`并向其中添加代码 (而不是将代码添加到*DatasetName*。DataSet.Designer 文件）。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或[分部 （类型）](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
+您可以扩展的功能`TableAdapter`通过创建为分部类文件`TableAdapter`并向其中添加代码 (而不是将代码添加到*DatasetName*。DataSet.Designer 文件）。 分部类启用划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)或[分部 （类型）](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)。  
   
  定义的代码`TableAdapter`每次更改生成`TableAdapter`。 此代码也会生成任何修改的配置的向导运行期间发生更改时`TableAdapter`。 若要防止你的代码在的重新生成过程中删除`TableAdapter`，将代码添加到分部类文件的`TableAdapter`。  
   
@@ -73,6 +73,6 @@ ms.locfileid: "63444502"
 ## <a name="see-also"></a>请参阅  
  [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)   
  [将代码添加到 n 层应用程序中的数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
- [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
- [TableAdapterManager 概述](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
- [分层更新概述](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+ [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
+ [TableAdapterManager 概述](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
+ [分层更新概述](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)

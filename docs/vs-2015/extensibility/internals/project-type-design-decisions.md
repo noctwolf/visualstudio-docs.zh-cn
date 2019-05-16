@@ -13,12 +13,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 323fbbc48953537dbcad4a13d2774fefec65dd52
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd26e08ab153e96fc601e89788008cb0e9ca38c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704081"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "58936378"
   
  在项目中的项可以是文件，或它们可以在 Internet 上是更加抽象对象，例如数据库存储库或数据连接中的对象。 如果项是文件，项目可以是基于引用的或基于目录的项目。  
   
- 在基于引用的项目中，项可以出现在多个项目。 但是，一个项代表的实际文件位于仅限一个目录中。 在基于目录的项目中，所有项目项的目录结构中都存在。 有关详细信息，请参阅[NIB： 项目管理在项目中](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)。  
+ 在基于引用的项目中，项可以出现在多个项目。 但是，一个项代表的实际文件位于仅限一个目录中。 在基于目录的项目中，所有项目项的目录结构中都存在。 有关详细信息，请参阅[NIB： 项目管理在项目中](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)。  
   
  本地项存储在安装应用程序的同一计算机上。 远程项目可以存储在本地网络中，单独的服务器上或在 Internet 上的其他位置。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "58936378"
   
 ## <a name="see-also"></a>请参阅  
  [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [NIB： 项目管理在项目中](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
+ [NIB： 项目管理在项目中](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
  [项目持久性](../../extensibility/internals/project-persistence.md)   
  [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)   

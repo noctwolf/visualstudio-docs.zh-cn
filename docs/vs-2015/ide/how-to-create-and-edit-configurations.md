@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 35cda86854bede07c8f1d4830f05607b7fab3643
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422903"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680416"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "63422903"
   
      “属性页”窗口随即打开。  
   
-     可以针对配置设置属性。 例如，针对“发布”配置，可以指定生成解决方案时优化代码，对于“调试”配置，可以指定包含 `DEBUG` 条件编译符号。 有关属性页设置的详细信息，请参阅[项目设计器简介](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
+     可以针对配置设置属性。 例如，针对“发布”配置，可以指定生成解决方案时优化代码，对于“调试”配置，可以指定包含 `DEBUG` 条件编译符号。 有关属性页设置的详细信息，请参阅[项目设计器简介](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)。  
   
 ## <a name="creating-and-modifying-project-configurations"></a>创建和修改项目配置  
   
@@ -126,4 +126,4 @@ ms.locfileid: "63422903"
 ## <a name="see-also"></a>请参阅  
  [了解生成配置](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB 如何：修改项目属性和配置设置](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB 如何：修改项目属性和配置设置](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)

@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442883"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686559"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用中的 Visual Basic 和 C# 代码质量
 
@@ -27,7 +27,7 @@ ms.locfileid: "63442883"
  Visual Studio Express 中的代码分析工具可检查代码中是否存在一组常见缺陷以及违反良好编程习惯的情况。 代码分析警告与编译器错误和警告不同，因为代码分析工具搜索的是虽然有效但仍会为你或使用你代码的其他人员带来问题的特定代码模式。 代码分析还可在代码中找到通过测试难以发现的缺陷。 在开发过程中定期运行代码分析工具可提高所编写的应用程序的质量。
 
 > [!NOTE]
-> 在 Visual Studio 旗舰版、Visual Studio 高级专业版和 Visual Studio 专业版中，可使用完整的代码分析功能。 请参阅 MSDN 库中的 [Analyzing Application Quality by Using Code Analysis Tools](http://msdn.microsoft.com/library/dd264897.aspx)（使用代码分析工具分析应用程序质量）。
+> 在 Visual Studio 旗舰版、Visual Studio 高级专业版和 Visual Studio 专业版中，可使用完整的代码分析功能。 请参阅 MSDN 库中的 [Analyzing Application Quality by Using Code Analysis Tools](https://msdn.microsoft.com/library/dd264897.aspx)（使用代码分析工具分析应用程序质量）。
 
 ## <a name="in-this-topic"></a>在本主题中
  可了解：
@@ -98,12 +98,12 @@ ms.locfileid: "63442883"
 ## <a name="BKMK_Warnings"></a> Visual Basic 和 C# 代码分析警告
  代码分析可引发以下警告：
 
- [CA1001：具有可释放字段的类型应该是可释放的](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001：具有可释放字段的类型应该是可释放的](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821：移除空终结器](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821：移除空终结器](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213：应释放可释放的字段](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213：应释放可释放的字段](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229：实现序列化构造函数](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229：实现序列化构造函数](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231：重写 ValueType.Equals 时应重载相等运算符](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231：重写 ValueType.Equals 时应重载相等运算符](https://msdn.microsoft.com/library/ms182359.aspx)

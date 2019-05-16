@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116740"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680906"
 ---
 # <a name="extract-interface-refactoring-c"></a>提取接口重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 提取接口是重构操作，提供了与来自现有类、 结构或接口的成员创建一个新接口的简单方法。  
   
- 当多个客户端使用的类、 结构或接口中的成员的同一子集或多个类、 结构或接口的共同点成员的子集时，它可用于体现在接口中的成员的子集。 有关使用接口的详细信息，请参阅[接口](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)。  
+ 当多个客户端使用的类、 结构或接口中的成员的同一子集或多个类、 结构或接口的共同点成员的子集时，它可用于体现在接口中的成员的子集。 有关使用接口的详细信息，请参阅[接口](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)。  
   
  提取接口的新文件中生成一个接口，并将光标置于新文件的开头。 可以指定要提取到新的界面、 新接口的名称和生成的文件使用的名称的成员**提取接口**对话框。  
   

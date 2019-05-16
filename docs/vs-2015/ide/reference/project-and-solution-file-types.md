@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee25e9ab9145265119321053b5b8031f1b1ead80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696029"
 ---
 # <a name="project-and-solution-file-types"></a>项目和解决方案文件类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "59658093"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使用多种文件格式存储特定于项目的信息。 有关详细信息，请参阅以下帮助主题：  
   
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  
- [为 Visual C++ 项目创建的文件类型](http://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
+ [为 Visual C++ 项目创建的文件类型](https://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
   
- [创建和管理 Visual C++ 项目](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
+ [创建和管理 Visual C++ 项目](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
   
- [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
+ [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
 ## <a name="see-also"></a>请参阅  
  [解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)

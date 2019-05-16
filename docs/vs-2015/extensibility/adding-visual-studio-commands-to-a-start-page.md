@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429011"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699157"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 当创建自定义起始页时，可以将 Visual Studio 命令添加到它。 本文档讨论了将 Visual Studio 命令绑定到 XAML 对象起始页上的不同方式。  
   
- 有关在 XAML 中的命令的详细信息，请参阅[命令概述](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ 有关在 XAML 中的命令的详细信息，请参阅[命令概述](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>还将命令添加命令  
  开始页中创建[创建自定义起始页](../extensibility/creating-a-custom-start-page.md)添加<xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName>和<xref:Microsoft.VisualStudio.Shell?displayProperty=fullName>命名空间，按如下所示。  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>将命令添加与 DTE 对象  
  您可以从起始页，在标记和代码中访问 DTE 对象。  
   
- 在标记中，你可以通过访问它使用[绑定标记扩展](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63)语法调用<xref:EnvDTE.DTE>对象。 可以使用此方法将绑定到简单属性，如返回集合，但不能绑定到方法或服务。 下面的示例演示<xref:System.Windows.Controls.TextBlock>绑定到控件<xref:EnvDTE._DTE.Name%2A>属性，和一个<xref:System.Windows.Controls.ListBox>枚举的控件<xref:EnvDTE.Window.Caption%2A>返回的集合的属性<xref:EnvDTE._DTE.Windows%2A>属性。  
+ 在标记中，你可以通过访问它使用[绑定标记扩展](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63)语法调用<xref:EnvDTE.DTE>对象。 可以使用此方法将绑定到简单属性，如返回集合，但不能绑定到方法或服务。 下面的示例演示<xref:System.Windows.Controls.TextBlock>绑定到控件<xref:EnvDTE._DTE.Name%2A>属性，和一个<xref:System.Windows.Controls.ListBox>枚举的控件<xref:EnvDTE.Window.Caption%2A>返回的集合的属性<xref:EnvDTE._DTE.Windows%2A>属性。  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

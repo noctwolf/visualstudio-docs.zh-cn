@@ -10,12 +10,12 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7afb8956ab3c5f4fb202adadbeea32d90e159074
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e58ebd736f7bb9f35df6e41d5235f36f7037259
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687620"
 ---
 # <a name="wizards"></a>向导
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "58931906"
  [项目类型](../../extensibility/internals/project-types.md)  
  提供指向其他主题提供有关如何设计新的项目类型的信息。  
   
- [演练：创建向导](http://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
+ [演练：创建向导](https://msdn.microsoft.com/library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
  演示如何创建向导。  
   
  [扩展项目](../../extensibility/extending-projects.md)  

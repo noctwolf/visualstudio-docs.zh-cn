@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444735"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690983"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 并将所有活动记录到日志文件中。|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) 或 `/r`|编译并运行指定的解决方案。|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|编译并运行指定的解决方案，在运行该解决方案时最小化 IDE，并在解决方案完成运行后关闭 IDE。|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|使 IDE 使用 PATH、INCLUDE 和 LIB 环境变量进行 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 编译，而不是使用“选项”对话框中“项目”选项的“VC++ 目录”节中指定的设置。 有关详细信息，请参阅[为命令行生成设置路径和环境变量](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|使 IDE 使用 PATH、INCLUDE 和 LIB 环境变量进行 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 编译，而不是使用“选项”对话框中“项目”选项的“VC++ 目录”节中指定的设置。 有关详细信息，请参阅[为命令行生成设置路径和环境变量](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|在此应用程序的运行实例中打开指定的文件。 如果没有正在运行的实例，它将启动具有简化的窗口布局的新实例。|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|启动 Visual Studio IDE 的实例而不加载指定的外接程序。|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|以安全模式启动 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，并仅加载默认的环境和服务以及第三方包的发布版。|  

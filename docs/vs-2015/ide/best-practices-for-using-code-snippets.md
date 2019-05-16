@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099619"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685659"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码段的最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099619"
 代码片段中的代码仅显示执行某些操作的最基本方法。 对于大多数应用程序，必须修改代码，使其适合应用程序。  
   
 ## <a name="handling-exceptions"></a>处理异常  
- 通常情况下，代码片段 Try…Catch 块可捕获和重新引发所有异常。 这可能并不适合你的项目。 对于每个异常，可通过几种方法进行响应。 有关示例，请参阅[如何：使用 try/catch 处理异常（C# 编程指南）](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)和 [Try...Catch...Finally 语句](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)。  
+ 通常情况下，代码片段 Try…Catch 块可捕获和重新引发所有异常。 这可能并不适合你的项目。 对于每个异常，可通过几种方法进行响应。 有关示例，请参阅[如何：使用 try/catch 处理异常（C# 编程指南）](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818)和 [Try...Catch...Finally 语句](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)。  
   
 ## <a name="file-locations"></a>文件位置  
  改写文件位置以使其适合应用程序时，应考虑以下事项：  
@@ -67,6 +67,6 @@ ms.locfileid: "60099619"
     - 代码片段可能包含以无提示方式添加到项目的引用，并且这些引用可从系统的任何位置加载。 这些引用可能已从下载代码片段的位置下载到了计算机。 随后，代码片段可能会调用执行恶意代码的引用中的方法。 若要避免此类攻击，请检查代码片段文件的 Imports 和 References 块。  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Basic IntelliSense 代码片段](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Visual Basic IntelliSense 代码片段](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [保证应用程序的安全](../ide/securing-applications.md)   
  [代码片段](../ide/code-snippets.md)

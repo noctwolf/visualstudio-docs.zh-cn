@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57ec75ec116b3b107b01a139621d3c59ca8ecac9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e86fa8f220cdd31beae12e050a1cbaa592624a74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094900"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690569"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：更改域特定语言的命名空间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,11 +49,11 @@ ms.locfileid: "60094900"
   
 10. 重置 Visual Studio 实验实例。  
   
-    1. 删除**\Users\\**_{名称}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. 删除 **\Users\\**_{名称}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2. 在 Windows 上**启动**菜单中，选择**所有程序**， **Microsoft Visual Studio 2010 SDK**，**工具**，**重置实验实例**。  
   
 11. 上**构建**菜单中，选择**重新生成解决方案**。  
   
 ## <a name="see-also"></a>请参阅  
- [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具术语表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

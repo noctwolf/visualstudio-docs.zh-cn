@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425410"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692531"
 ---
 # <a name="relationships-in-datasets"></a>数据集中的关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "63425410"
  当你创建<xref:System.Data.DataRelation>对象，你必须指定，关系仅用于强制执行约束的选项，即，它将不也用于访问相关的记录。 此选项可用于生成数据集略有更有效且包含较少的方法比具有相关记录功能。 但是，您将不能访问相关的记录。 例如，约束关系阻止你删除父记录仍包含子记录，并且不能通过父访问子记录。  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>手动创建数据集设计器中的数据关系  
- 当在 Visual Studio 中使用数据设计工具创建数据的表时，会自动创建关系如果可以从你的数据源收集的信息。 如果你手动添加从数据表**数据集**选项卡**工具箱**，可能需要手动创建关系。 有关创建信息<xref:System.Data.DataRelation>对象以编程方式，请参阅[添加 Datarelation](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)。  
+ 当在 Visual Studio 中使用数据设计工具创建数据的表时，会自动创建关系如果可以从你的数据源收集的信息。 如果你手动添加从数据表**数据集**选项卡**工具箱**，可能需要手动创建关系。 有关创建信息<xref:System.Data.DataRelation>对象以编程方式，请参阅[添加 Datarelation](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4)。  
   
  数据的表之间的关系显示为行中**数据集设计器**，用来描述一个多方面的关系的键和无穷大标志符号。 默认情况下，relationshipCommentEnd Id 名称 ="1c8c78e19b7fa441"未显示在设计图面上。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "63425410"
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>若要创建的两个数据表之间的关系  
   
-1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2. 拖动**关系**对象从**数据集**工具箱拖到关系中子数据的表。  
   
@@ -98,9 +98,9 @@ ms.locfileid: "63425410"
   
 6. 选择联接中的表的列**键列**并**外键列**列出。  
   
-7. 选择是否创建一个关系、 约束，或这两者。 有关信息，请参阅[DataRelation 对象介绍](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)。  
+7. 选择是否创建一个关系、 约束，或这两者。 有关信息，请参阅[DataRelation 对象介绍](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192)。  
   
-8. 选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
+8. 选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
   
 9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅 <xref:System.Data.Rule>。  
   
@@ -108,6 +108,6 @@ ms.locfileid: "63425410"
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>若要在数据集设计器中显示的关系名称  
   
-1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
+1. 在“数据集设计器”中打开数据集。 有关详细信息，请参阅[如何：在数据集设计器中打开数据集](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
 2. 从**数据**菜单中，选择**显示关系标签**命令以显示该关系名称。 清除该命令，以隐藏关系名称。

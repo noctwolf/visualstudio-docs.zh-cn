@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412309"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675173"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 </asp:ScriptManager>
 ```
 
- IntelliSense 还支持以资源形式嵌入在 ASP.NET AJAX Web 应用程序中的程序集内的脚本文件。 有关嵌入的脚本资源的详细信息，请参阅[演练：将 JavaScript 文件作为资源嵌入到程序集中](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
+ IntelliSense 还支持以资源形式嵌入在 ASP.NET AJAX Web 应用程序中的程序集内的脚本文件。 有关嵌入的脚本资源的详细信息，请参阅[演练：将 JavaScript 文件作为资源嵌入到程序集中](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89)。
 
 #### <a name="ReferenceDirectives"></a> 引用指令
  通过使用 `reference` 指令，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 能够在当前正编辑的脚本与其他脚本之间建立关系。 通过使用 `reference` 指令，可以在当前脚本文件的脚本上下文中包括一个脚本文件。 这使 IntelliSense 能够在你进行编码时引用在外部定义的函数、类型和字段。
@@ -284,5 +284,5 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 - [适用于标识符的语句结束](../ide/statement-completion-for-identifiers.md)
 - [XML 文档注释](../ide/xml-documentation-comments-javascript.md)
 - [关于 DHTML 对象模型](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [列表成员](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [列表成员](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [SRC 特性|src 属性](http://go.microsoft.com/fwlink/?LinkId=92345)

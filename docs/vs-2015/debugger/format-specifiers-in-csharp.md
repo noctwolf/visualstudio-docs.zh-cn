@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118235"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682492"
 ---
 # <a name="format-specifiers-in-c"></a>C 中的格式说明符\#
 
@@ -64,7 +64,7 @@ ms.locfileid: "60118235"
 
 |说明符|格式|原始监视值|显示|
 |---------------|------------|--------------------------|--------------|
-|ac|表达式的强制计算。 当关闭属性的隐式计算和隐式函数调用时，这是很有用的。 请参阅 [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|消息“用户已关闭隐式函数计算”|\<value>|
+|ac|表达式的强制计算。 当关闭属性的隐式计算和隐式函数调用时，这是很有用的。 请参阅 [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|消息“用户已关闭隐式函数计算”|\<value>|
 |d|十进制整数|0x0065|101|
 |dynamic|使用“动态”视图显示指定对象|显示对象的所有成员，包括动态视图|仅显示动态视图|
 |h|十六进制整数|61541|0x0000F065|
@@ -76,4 +76,4 @@ ms.locfileid: "60118235"
 ## <a name="see-also"></a>请参阅
 
 - [监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)
-- [变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [变量窗口](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

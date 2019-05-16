@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685324"
 ---
 # <a name="how-to-use-the-threads-window"></a>如何：使用线程窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ ms.locfileid: "63434862"
 ## <a name="freezing-and-thawing-threads"></a>冻结和解冻线程  
  当冻结线程时，即便资源可用，系统也不会开始执行该线程。  
   
- 在本机代码中，您可以挂起或继续线程通过调用 Windows 函数`SuspendThread`并`ResumeThread`或者 MFC 函数[CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28)和[cwinthread:: Resumethread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). 如果您调用`SuspendThread`或`ResumeThread`，则更改*挂起项计数*，显示在**线程**窗口。 但是，如果冻结或解冻本机线程，则不会更改挂起项计数。 在本机代码中线程将无法执行，除非该线程解冻并且其挂起项计数为零。  
+ 在本机代码中，您可以挂起或继续线程通过调用 Windows 函数`SuspendThread`并`ResumeThread`或者 MFC 函数[CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28)和[cwinthread:: Resumethread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). 如果您调用`SuspendThread`或`ResumeThread`，则更改*挂起项计数*，显示在**线程**窗口。 但是，如果冻结或解冻本机线程，则不会更改挂起项计数。 在本机代码中线程将无法执行，除非该线程解冻并且其挂起项计数为零。  
   
  在托管代码中，冻结或解冻线程不会更改挂起项计数。 在托管代码中，冻结线程的挂起项计数为 1。 在本机代码中，冻结线程的挂起项计数为 0，除非该线程由 `SuspendThread` 调用挂起。  
   

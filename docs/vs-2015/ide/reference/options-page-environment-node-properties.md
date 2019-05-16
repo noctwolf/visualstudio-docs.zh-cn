@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 64deddd3ae8323298ad04e5a1a3a78e93c21a87a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666814"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674718"
 ---
 # <a name="options-page-environment-node-properties"></a>“选项”页 ->“环境”节点属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -161,8 +161,8 @@ ms.locfileid: "59666814"
 |ViewSourceExternalProgram|Get/Set (String)|外部源查看器的路径。|  
   
 ## <a name="see-also"></a>请参阅  
- [控制选项设置](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [确定“选项”页中属性项的名称](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [控制选项设置](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [确定“选项”页中属性项的名称](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [“选项”页 ->“字体和颜色”节点属性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [“选项”页 ->“文本编辑器”节点属性](../../ide/reference/options-page-text-editor-node-properties.md)   
  [“选项”对话框 ->“环境”](../../ide/reference/environment-options-dialog-box.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 719654916087e7c7f4249ff52abbed628a2c56a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437333"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704496"
 ---
 # <a name="how-to-attach-to-script"></a>如何：附加到脚本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63437333"
   
 2. 在“附加到进程”对话框中，查看“可用进程”列表，找到要附加到的脚本进程。 可查看“类型”列以识别脚本进程。  
   
-   1. 如果要调试的进程运行在另一台计算器上，必须首先选择该远程计算机。 有关详细信息，请参阅[如何：选择远程计算机](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
+   1. 如果要调试的进程运行在另一台计算器上，必须首先选择该远程计算机。 有关详细信息，请参阅[如何：选择远程计算机](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba)。  
   
    2. 如果进程在不同的用户帐户下运行，请选中“显示所有用户的进程”复选框。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "63437333"
   
    打开“进程”对话框时，“可用进程”列表自动显示。 该对话框处于打开状态时，进程可以在后台启动和停止。 因此，其中内容可能并非总是最新的。 可按“刷新”按钮随时刷新列表以查看当前进程列表。  
   
-   调试时可以附加到多个程序，但在任何时间，调试器中都只有一个程序处于活动状态。 可以在“调试位置”工具栏中设置活动程序。 有关详细信息，请参阅[如何：设置当前进程](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
+   调试时可以附加到多个程序，但在任何时间，调试器中都只有一个程序处于活动状态。 可以在“调试位置”工具栏中设置活动程序。 有关详细信息，请参阅[如何：设置当前进程](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
   
    所有“调试”菜单执行命令都会影响活动程序。 可从“进程”对话框中断任何已调试的程序。请参阅[使用断点](../debugger/using-breakpoints.md)。  
   

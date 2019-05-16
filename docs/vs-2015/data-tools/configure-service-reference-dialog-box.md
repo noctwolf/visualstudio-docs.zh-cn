@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437013"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705192"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437013"
 **配置服务引用**对话框中，您可以配置的行为[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]服务。  
   
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  要访问“配置服务引用”对话框，请右键单击“解决方案资源管理器”中的服务引用，然后选择“配置服务引用”。 还可以通过单击“添加服务引用对话框”中的“高级”按钮来访问该对话框。  
   
@@ -63,10 +63,10 @@ ms.locfileid: "63437013"
  确定 WCF 服务的方法是同步调用（默认）还是异步调用。  
   
  **生成基于任务的操作**  
- 编写异步代码时，此选项允许你使用随 .Net 4 一起推出的任务并行库 (TPL)。 请参阅[任务并行库 (TPL)](http://msdn.microsoft.com/library/dd460717.aspx)。  
+ 编写异步代码时，此选项允许你使用随 .Net 4 一起推出的任务并行库 (TPL)。 请参阅[任务并行库 (TPL)](https://msdn.microsoft.com/library/dd460717.aspx)。  
   
  **始终生成消息约定**  
- 确定是否将为 WCF 客户端生成消息约定类型。 有关消息约定的详细信息，请参阅[Using Message Contracts](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249)。  
+ 确定是否将为 WCF 客户端生成消息约定类型。 有关消息约定的详细信息，请参阅[Using Message Contracts](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249)。  
   
  **集合类型**  
  为 WCF 客户端指定列表集合类型。 默认类型为 <xref:System.Array>。  
@@ -87,7 +87,7 @@ ms.locfileid: "63437013"
  包含一个列表，此列表针对项目或网站列出了引用的程序集。 当**重新使用的指定被引用程序集中的类型**选择后，可以选择或清除各个程序集。  
   
  **添加 Web 引用**  
- 显示[NIB:添加 Web 引用对话框](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)。  
+ 显示[NIB:添加 Web 引用对话框](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)。  
   
 > [!NOTE]
 > 此选项只应该用于针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 2.0 版的项目。  
@@ -96,6 +96,6 @@ ms.locfileid: "63437013"
 > **添加 Web 引用**按钮是否时才可用**配置服务引用**对话框中显示从**添加服务引用对话框**。  
   
 ## <a name="see-also"></a>请参阅  
- [如何：添加、 更新或删除服务引用](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [如何：添加对 Web 服务的引用](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [如何：添加、 更新或删除服务引用](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [如何：添加对 Web 服务的引用](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/configure-service-reference-dialog-box.md)

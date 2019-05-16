@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 975e1eee68911f8d9d0942e73275fcf521979772
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085033"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681506"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000:丢失范围之前释放对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,4 +99,4 @@ ms.locfileid: "60085033"
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.IDisposable>   
- [Dispose 模式](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Dispose 模式](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

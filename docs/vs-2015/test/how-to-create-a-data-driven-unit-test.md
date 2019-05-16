@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 9d82d2c283ac0266880d92139cb9003b3c401b81
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686299"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
   
  具有一个参数的构造函数使用解决方案的 app.config 文件中存储的连接信息。 *DataSourceSettingsName* 是配置文件中的 Xml 元素的名称，它指定连接信息。  
   
- 使用 app.config 文件可更改数据源的位置，而无需对单元测试本身进行更改。 有关如何创建和使用 app.config 文件的信息，请参阅[演练：使用配置文件定义数据源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
+ 使用 app.config 文件可更改数据源的位置，而无需对单元测试本身进行更改。 有关如何创建和使用 app.config 文件的信息，请参阅[演练：使用配置文件定义数据源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)  
   
 ```  
 [DataSource(connectionString, tableName)]  
@@ -187,7 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [如何：创建和运行单元测试](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [如何：创建和运行单元测试](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [单元测试代码](../test/unit-test-your-code.md)   
  [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)   
  [使用适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

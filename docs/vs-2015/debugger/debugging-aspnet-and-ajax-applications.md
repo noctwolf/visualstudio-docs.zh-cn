@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116779"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686746"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>调试 ASP.NET 和 AJAX 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "60116779"
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)  
  说明调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 异常时必须启用“仅我的代码”的原因。  
   
- [调试和跟踪 Ajax 应用程序概述](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [调试和跟踪 Ajax 应用程序概述](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  讨论可帮助您调试 AJAX 代码的一些方法和工具。  
   
  [IntelliTrace](../debugger/intellitrace.md)  

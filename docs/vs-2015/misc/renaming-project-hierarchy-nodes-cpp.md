@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 3d1d99bd49d7a5fd78b38262725b65c5d1b3aab9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c7ad43fe1fd0e22cd94194d3079761de812b6ced
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686587"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>重命名项目层次结构节点 (C++)
-可以通过使用 HierUtil7 项目框架，对于非托管项目文件夹层次结构节点重命名C++。 有关详细信息，请参阅[HierUtil7 示例](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11)。  
+可以通过使用 HierUtil7 项目框架，对于非托管项目文件夹层次结构节点重命名C++。 有关详细信息，请参阅[HierUtil7 示例](https://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11)。  
   
 ## <a name="expanding-the-hierarchy-node"></a>展开层次结构节点  
   

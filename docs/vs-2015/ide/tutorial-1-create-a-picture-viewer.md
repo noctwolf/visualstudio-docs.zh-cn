@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c382ff2a16e47f52a33e5c6728f0c57d57e4315b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443239"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703056"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "63443239"
 >   
 > 若要查看适用于 Visual Basic 的代码，请在代码块顶部选择“VB”选项卡；若要查看适用于 Visual C# 的代码，请选择“C#”选项卡。如果有兴趣了解 Visual C++，请参阅[入门](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md)和 [C++ 语言教程](http://www.cplusplus.com/doc/tutorial/)。  
 >   
-> 如果有兴趣了解如何为 Windows 应用商店编写 Visual C# 或 Visual Basic 应用，请参阅[使用 C# 或 Visual Basic 创建你的第一个 Windows 应用商店应用](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 有关针对 Windows 应用商店创建 JavaScript 应用的信息，请参阅[使用 JavaScript 创建你的第一个 Windows 应用商店应用](http://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
+> 如果有兴趣了解如何为 Windows 应用商店编写 Visual C# 或 Visual Basic 应用，请参阅[使用 C# 或 Visual Basic 创建你的第一个 Windows 应用商店应用](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx)。 有关针对 Windows 应用商店创建 JavaScript 应用的信息，请参阅[使用 JavaScript 创建你的第一个 Windows 应用商店应用](https://msdn.microsoft.com/library/windows/apps/br211385.aspx)。  
   
 ## <a name="related-topics"></a>相关主题  
   

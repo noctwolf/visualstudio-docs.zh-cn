@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6cd353610cc3d9122c14f608f0278d4afc501e0f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108174"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686841"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>如何：使用 WPF 树可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可以使用 WPF 树可视化工具浏览 WPF 对象的可视化树，并查看该树中所含对象的 WPF 依赖项属性。 有关可视化树的详细信息，请参阅[WPF 中的树](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)。 有关依赖项属性的详细信息，请参阅[依赖属性概述](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
+可以使用 WPF 树可视化工具浏览 WPF 对象的可视化树，并查看该树中所含对象的 WPF 依赖项属性。 有关可视化树的详细信息，请参阅[WPF 中的树](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)。 有关依赖项属性的详细信息，请参阅[依赖属性概述](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)。  
   
  当您打开 WPF 树可视化工具时，您将看到两个窗格：**可视化树**左侧并**的属性**_名称_**:** _类型_右侧窗格中的。 选择中的任何对象**可视化树**窗格中，并**的属性**_名称_**:**_类型_窗格自动更新为显示该对象的属性。  
   
@@ -66,5 +66,5 @@ ms.locfileid: "60108174"
 ## <a name="see-also"></a>请参阅  
  [如何：使用可视化工具](../misc/how-to-use-a-visualizer.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
- [WPF 中的树](http://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
- [依赖项属性概述](http://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)
+ [WPF 中的树](https://msdn.microsoft.com/library/e83f25e5-d66b-4fc7-92d2-50130c9a6649)   
+ [依赖项属性概述](https://msdn.microsoft.com/library/d119d00c-3afb-48d6-87a0-c4da4f83dee5)

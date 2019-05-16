@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674996"
 ---
 # <a name="managing-application-settings-net"></a>管理应用程序设置 (.NET)
 
@@ -59,7 +59,7 @@ ms.locfileid: "60114803"
 >
 > 如果从外部源获取连接字符串信息（如用户提供用户 ID 和密码），则必须小心以确保用于构造连接字符串的值不会包含可以更改连接行为的附加连接字符串参数。
 >
-> 可考虑使用“受保护的配置”功能以加密配置文件中的敏感信息。 有关详细信息，请参阅 [Protecting Connection Information](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)（保护连接信息）。
+> 可考虑使用“受保护的配置”功能以加密配置文件中的敏感信息。 有关详细信息，请参阅 [Protecting Connection Information](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4)（保护连接信息）。
 
 > [!NOTE]
 > 由于没有类库的配置文件模型，应用程序设置不适用于类库项目。 Visual Studio Tools for Office DLL 项目是一个例外，它可以有一个配置文件。
@@ -74,7 +74,7 @@ ms.locfileid: "60114803"
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>在运行时访问或更改 Visual Basic 应用程序的设置
 
-在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目中，你可以使用 `My.Settings` 对象在运行时访问应用程序设置。 在 **“设置”** 页上，单击 **“查看代码”** 按钮以查看 Settings.vb 文件。 Settings.vb 定义 `Settings` 类，此类使你能够处理设置类上的以下事件： <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>。 请注意，Settings.vb 中的 `Settings` 类是分部类，其中仅显示用户所有的代码，而不显示整个生成的类。 有关使用 `My.Settings` 对象访问应用程序设置的更多信息，请参阅 [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)的任何数据类型。
+在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目中，你可以使用 `My.Settings` 对象在运行时访问应用程序设置。 在 **“设置”** 页上，单击 **“查看代码”** 按钮以查看 Settings.vb 文件。 Settings.vb 定义 `Settings` 类，此类使你能够处理设置类上的以下事件： <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、 <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、 <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>。 请注意，Settings.vb 中的 `Settings` 类是分部类，其中仅显示用户所有的代码，而不显示整个生成的类。 有关使用 `My.Settings` 对象访问应用程序设置的更多信息，请参阅 [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)的任何数据类型。
 
 在运行时用户更改的任何用户范围的设置的值（例如窗体的位置）都存储在 user.config 文件中。 请注意，默认值仍保存在 app.config 中。
 
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-有关通过 `Settings` 类访问应用程序设置的常规信息，请参阅 [Application Settings Overview](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)（应用程序设置概述）。 有关循环访问设置的信息，请参阅此 [论坛帖子](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
+有关通过 `Settings` 类访问应用程序设置的常规信息，请参阅 [Application Settings Overview](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)（应用程序设置概述）。 有关循环访问设置的信息，请参阅此 [论坛帖子](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。
 
 ## <a name="see-also"></a>请参阅
 
-- [访问应用程序设置](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [访问应用程序设置](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

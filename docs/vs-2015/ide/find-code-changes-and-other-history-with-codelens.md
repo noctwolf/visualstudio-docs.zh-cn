@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383952"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704842"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63383952"
   
 - Team Foundation Server 2013 或更高版本、Visual Studio Team Services 或 Git  
   
-- [Lync 2010 或更高版本、或 Skype for Business](http://technet.microsoft.com/lync)，可从代码编辑器联系你的团队  
+- [Lync 2010 或更高版本、或 Skype for Business](https://technet.microsoft.com/lync)，可从代码编辑器联系你的团队  
   
   对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 Visual C#.NET 或 Visual Basic.NET 代码，你可以获取类和方法级别的 CodeLens 详细信息（*代码元素级别* 指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "63383952"
   
  ![CodeLens:获取更改 TFVC 中代码的历史记录](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- 默认时间段为最近 12 个月。 如果你的代码存储在 Team Foundation Server 中，则可以通过运行具有 [CodeIndex 命令](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) 和 [/indexHistoryPeriod](../ide/codeindex-command.md) 标志的 **TFSConfig 命令** 来对此进行更改。  
+ 默认时间段为最近 12 个月。 如果你的代码存储在 Team Foundation Server 中，则可以通过运行具有 [CodeIndex 命令](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) 和 [/indexHistoryPeriod](../ide/codeindex-command.md) 标志的 **TFSConfig 命令** 来对此进行更改。  
   
  若要查看所有更改（包括一年前的更改）的详细历史记录，选择 **“显示所有文件更改”**。  
   
@@ -222,7 +222,7 @@ ms.locfileid: "63383952"
   
 - 确保 CodeLens 开启。 请依次转到“工具”、“选项”、“文本编辑器”、“所有语言”和“CodeLens”。  
   
-- 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)打开代码索引。  
+- 如果代码存储在 TFS 中，请确保使用 [CodeIndex 命令](../ide/codeindex-command.md) 和 [TFS Config 命令](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)打开代码索引。  
   
 - 仅当工作项已链接到代码并且你有权打开链接的工作项时，才显示与 TFS 相关的指示器。 [确认你具有团队成员权限。](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ ms.locfileid: "63383952"
  **答：****本地版本**箭头指向本地版本的此文件中的最新变更集。 当服务器具有最新的变更集时，它们显示在 **“本地版本”** 箭头的上方或下方，具体取决于排列变更集的顺序。  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>问：是否可以管理 CodeLens 如何处理代码以显示历史记录和链接的项？  
- **答：** 是的如果你的代码位于 TFS 中，使用[CodeIndex 命令](../ide/codeindex-command.md)与[TFS Config 命令](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)。
+ **答：** 是的如果你的代码位于 TFS 中，使用[CodeIndex 命令](../ide/codeindex-command.md)与[TFS Config 命令](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62)。

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 45bd0720bfd16be2266bbdb56e962d1744ebbf84
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443736"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674858"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理程序集签名和清单签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "63443736"
   
  强名称是由程序集的标识加上公钥令牌和数字签名组成的。其中，程序集的标识包括简单文本名称、版本号和区域性信息。  
   
- 有关 Visual Basic 和 C# 项目中签名程序集的信息，请参阅[创建和使用具有强名称的程序集](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)。  
+ 有关 Visual Basic 和 C# 项目中签名程序集的信息，请参阅[创建和使用具有强名称的程序集](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)。  
   
- 有关 Visual C++ 项目中签名程序集的信息，请参阅[强名称程序集（程序集签名）(C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)。  
+ 有关 Visual C++ 项目中签名程序集的信息，请参阅[强名称程序集（程序集签名）(C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)。  
   
 ## <a name="asset-types-and-signing"></a>资产类型和签名  
  可对 .NET 程序集和应用程序清单进行签名。 其中包括：  
@@ -61,12 +61,12 @@ ms.locfileid: "63443736"
 > [!WARNING]
 > 应始终使用密码保护密钥文件，以防他人使用。 还可以使用提供程序或证书存储来保护密钥。  
   
- 也可以指向已创建的密钥。 有关创建密钥的详细信息，请参阅[如何：创建公钥/私钥对](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
+ 也可以指向已创建的密钥。 有关创建密钥的详细信息，请参阅[如何：创建公钥/私钥对](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
   
- 如果仅对公钥具有访问权限，可以使用延迟签名来推迟分配密钥。 可通过选择“仅延迟签名”复选框来启用延迟签名。 延迟签名的项目不会运行也不能进行调试。 但是，可以使用 [Sn.exe（强名称工具）](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)及 `-Vr` 选项，在开发过程中跳过验证。  
+ 如果仅对公钥具有访问权限，可以使用延迟签名来推迟分配密钥。 可通过选择“仅延迟签名”复选框来启用延迟签名。 延迟签名的项目不会运行也不能进行调试。 但是，可以使用 [Sn.exe（强名称工具）](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6)及 `-Vr` 选项，在开发过程中跳过验证。  
   
  有关对清单进行签名的详细信息，请参阅[如何：对应用程序和部署清单进行签名](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [具有强名称的程序集](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [强名称程序集（程序集签名）(C++/CLI)](http://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)
+ [具有强名称的程序集](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [强名称程序集（程序集签名）(C++/CLI)](https://msdn.microsoft.com/library/c337cd3f-e5dd-4c6f-a1ad-437e85dba1cc)

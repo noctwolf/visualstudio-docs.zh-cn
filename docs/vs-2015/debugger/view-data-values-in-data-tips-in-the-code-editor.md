@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437689"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700111"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在代码编辑器中查看数据提示中的数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,6 +143,6 @@ ms.locfileid: "63437689"
   
 ## <a name="see-also"></a>请参阅  
  [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
- [如何：使用快速监视对话框](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [如何：使用快速监视对话框](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   
- [如何：更改调试器 Windows 的数字格式](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [如何：更改调试器 Windows 的数字格式](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

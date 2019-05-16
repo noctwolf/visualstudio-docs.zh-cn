@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433033"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696208"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>如何：从 Visual Studio 的试用版升级
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ ms.locfileid: "63433033"
     > 若要注册和取消锁定 Visual Studio 的任意版本，需要接入 Internet。 但是，在注册 Visual Studio 之后，Internet 连接是可选的。
 
 ## <a name="see-also"></a>请参阅
- [安装 Visual Studio](../install/install-visual-studio-2015.md) [登录 Visual Studio](../ide/signing-in-to-visual-studio.md) [如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md) [查找或更改 Team Foundation Server 的产品密钥](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [安装 Visual Studio](../install/install-visual-studio-2015.md) [登录 Visual Studio](../ide/signing-in-to-visual-studio.md) [如何：查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md) [查找或更改 Team Foundation Server 的产品密钥](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

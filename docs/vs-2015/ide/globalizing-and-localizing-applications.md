@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794365"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704372"
 ---
 # <a name="globalizing-and-localizing-applications"></a>对应用程序进行全球化和本地化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ ms.locfileid: "54794365"
  [全球化你的应用（使用 C#/VB/C++ 和 XAML 的 Windows 应用商店应用）](http://go.microsoft.com/fwlink/?LinkId=258267)  
  包含一些操作方法主题和指南，可帮助你使用 XAML 和 Visual C#、Visual Basic 或 Visual C++ 对 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用构建进行全球化和本地化。  
   
- [开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [开发全球通用应用程序的最佳做法](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  提供有关针对国际用户进行编程的背景信息。  
   
- [类库概述](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [类库概述](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  介绍可加快和优化开发过程并提供对系统功能的访问的类、接口和值类型。  
   
  <xref:System.Globalization>  

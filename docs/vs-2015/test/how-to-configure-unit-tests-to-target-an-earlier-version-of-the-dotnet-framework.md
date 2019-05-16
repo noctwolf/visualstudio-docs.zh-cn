@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416348"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686421"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63416348"
   
   **测试 SharePoint 应用程序**  
   
-  上面列出的功能还支持使用 Visual Studio 为 SharePoint 应用程序编写单元测试和集成测试。 [!INCLUDE[crabout](../includes/crabout-md.md)]如何使用 Visual Studio 开发 SharePoint 应用程序，请参阅[创建 SharePoint 解决方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)、[生成和调试 SharePoint 解决方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)和[验证和调试 SharePoint 代码](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)。  
+  上面列出的功能还支持使用 Visual Studio 为 SharePoint 应用程序编写单元测试和集成测试。 [!INCLUDE[crabout](../includes/crabout-md.md)]如何使用 Visual Studio 开发 SharePoint 应用程序，请参阅[创建 SharePoint 解决方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)、[生成和调试 SharePoint 解决方案](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)和[验证和调试 SharePoint 代码](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c)。  
   
   **限制**  
   
@@ -126,7 +126,7 @@ ms.locfileid: "63416348"
 8. 在解决方案资源管理器中，从新的 Visual C++ 测试项目的快捷菜单中选择“重载项目”。  
   
 ## <a name="see-also"></a>请参阅  
- [为现有代码创建和运行单元测试](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [创建 SharePoint 解决方案](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [生成和调试 SharePoint 解决方案](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [为现有代码创建和运行单元测试](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [创建 SharePoint 解决方案](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [生成和调试 SharePoint 解决方案](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [“高级编译器设置”对话框 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

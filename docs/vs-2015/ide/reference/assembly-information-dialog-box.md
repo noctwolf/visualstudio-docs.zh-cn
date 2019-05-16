@@ -13,17 +13,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 616a46b4d8349bd2c385fda0dd36e6dc69fa60af
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dbcc8f31d00c270cf0eb9af8d3283a8674a639e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663867"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703710"
 ---
 # <a name="assembly-information-dialog-box"></a>“程序集信息”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-“程序集信息”对话框用于指定 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 全局程序集特性的值，这些特性存储为你的项目自动创建的 AssemblyInfo 文件中。 在“解决方案资源管理器”中，对于 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，此文件位于“我的项目”节点中（单击“显示所有文件”可以查看它）；对于 **，此文件位于“属性”**[!INCLUDE[csprcs](../../includes/csprcs-md.md)]下。 有关程序集特性的详细信息，请参阅[特性](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。  
+“程序集信息”对话框用于指定 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 全局程序集特性的值，这些特性存储为你的项目自动创建的 AssemblyInfo 文件中。 在“解决方案资源管理器”中，对于 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，此文件位于“我的项目”节点中（单击“显示所有文件”可以查看它）；对于 **，此文件位于“属性”**[!INCLUDE[csprcs](../../includes/csprcs-md.md)]下。 有关程序集特性的详细信息，请参阅[特性](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。  
   
  若要访问此对话框，请在“解决方案资源管理器”中选择项目节点，然后在“项目”菜单上单击“属性”。 当“项目设计器”出现时，单击“应用程序”选项卡。在“应用程序”页上，单击“程序集信息”按钮。  
   
@@ -63,4 +63,4 @@ ms.locfileid: "59663867"
   
 ## <a name="see-also"></a>请参阅  
  [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
- [特性](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [特性](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

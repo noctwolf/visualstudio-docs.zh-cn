@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695253"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>对应用商店应用中的 Visual C# 代码进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "63445940"
 >   - 在每次生成后运行测试。  
 >   - VS Enterprise 还包含 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码帮助你将测试集中于自己的代码之上。  
 > 
->   有关详细信息，请参阅 MSDN 库中的[使用单元测试验证代码](http://msdn.microsoft.com/library/dd264975.aspx)。  
+>   有关详细信息，请参阅 MSDN 库中的[使用单元测试验证代码](https://msdn.microsoft.com/library/dd264975.aspx)。  
   
 ## <a name="BKMK_In_this_topic"></a> 在本主题中  
  [创建解决方案和单元测试项目](#BKMK_Create_the_solution_and_the_unit_test_project)  

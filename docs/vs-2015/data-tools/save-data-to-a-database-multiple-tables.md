@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132aa0f37cc63e6afe2eff61a6d0f6dec5b200b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425023"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692451"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "63425023"
  通过调用 TableAdapter 的 `Update` 方法，可以将应用程序中的数据保存回数据库。 当您将从表**数据源**自动添加到窗体，将数据保存所需的代码窗口。添加到窗体的任何其他表需要手动添加此代码。 本演练显示了如何添加从多个表保存更新的代码。  
   
 > [!NOTE]
-> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  本演练涉及以下任务：  
   
 - 创建一个新**Windows 应用程序**项目。  
   
-- 创建和使用应用程序中配置数据源[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
+- 创建和使用应用程序中配置数据源[数据源配置向导](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
-- 设置控件中的项[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
+- 设置控件中的项[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)。 有关详细信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 - 通过将某些项从“数据源”窗口拖动到窗体上来创建数据绑定控件。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "63425023"
   
 2. 将项目命名为 `UpdateMultipleTablesWalkthrough`。  
   
-3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 选择**Windows 应用程序**，然后选择**确定**。 有关详细信息，请参阅[客户端应用程序](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      创建“UpdateMultipleTablesWalkthrough”项目并将其添加到“解决方案资源管理器”中。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "63425023"
  通过调用“Customers”和“Orders”TableAdapter 的 `Update` 方法，可更新数据库。 默认情况下，事件处理程序**保存**按钮的<xref:System.Windows.Forms.BindingNavigator>添加到窗体的代码以将更新发送到数据库。 此过程修改代码以将更新发送正确的顺序。这将消除产生引用完整性错误的可能性。 该代码还将通过在 try-catch 块中包装更新调用来实现错误处理。 可以根据应用程序的需要修改代码。  
   
 > [!NOTE]
-> 为清楚起见，本演练不使用事务。但是，如果要更新两个或多个相关表，包含在一个事务内的所有更新逻辑。 事务是一个过程，可确保提交任何更改之前，对数据库的所有相关的更改成功。 有关详细信息，请参阅[事务和并发性](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
+> 为清楚起见，本演练不使用事务。但是，如果要更新两个或多个相关表，包含在一个事务内的所有更新逻辑。 事务是一个过程，可确保提交任何更改之前，对数据库的所有相关的更改成功。 有关详细信息，请参阅[事务和并发性](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
   
 #### <a name="to-add-update-logic-to-the-application"></a>将更新逻辑添加到应用程序  
   
@@ -152,9 +152,9 @@ ms.locfileid: "63425023"
 ## <a name="next-steps"></a>后续步骤  
  具体取决于应用程序的要求，有可能想要在 Windows 应用程序中创建了数据绑定窗体后执行的几个步骤。 你可以通过以下操作来增强此演练的效果：  
   
-- 将搜索功能添加到该窗体。 有关详细信息，请参阅[如何：参数化的查询到 Windows 窗体应用程序添加](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)。  
+- 将搜索功能添加到该窗体。 有关详细信息，请参阅[如何：参数化的查询到 Windows 窗体应用程序添加](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416)。  
   
-- 编辑数据源以添加或移除数据库对象。 有关详细信息，请参阅[如何：编辑数据集](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)。  
+- 编辑数据源以添加或移除数据库对象。 有关详细信息，请参阅[如何：编辑数据集](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3)。  
   
 ## <a name="see-also"></a>请参阅  
  [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
