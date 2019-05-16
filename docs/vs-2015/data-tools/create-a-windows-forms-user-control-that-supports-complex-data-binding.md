@@ -18,19 +18,19 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b263dd4e00fcb7a519ab89ecc693bd6216e0eeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c27ec5be48b37f95068a2be6c8605a97d122d21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705006"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Windows 应用程序的窗体上显示数据时，可以从“工具箱”中选择现有的控件，而当标准控件无法提供应用程序所要求的功能时，还可以创作自定义控件。 本演练显示了如何创建实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件。 实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控件包含可以绑定到数据的 `DataSource` 和 `DataMember` 属性。 此类控件类似于 <xref:System.Windows.Forms.DataGridView> 或 <xref:System.Windows.Forms.ListBox>。  
   
- 控件创作的详细信息，请参阅[在设计时开发 Windows 窗体控件](http://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
+ 控件创作的详细信息，请参阅[在设计时开发 Windows 窗体控件](https://msdn.microsoft.com/library/e5a8e088-7ec8-4fd9-bcb3-9078fd134829)。  
   
  创作用于数据绑定方案中的控件时，需要实现以下数据绑定属性之一：  
   
@@ -52,9 +52,9 @@ ms.locfileid: "60097149"
   
 - 实现 `ComplexBindingProperty` 特性。  
   
-- 创建具有的数据集[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
+- 创建具有的数据集[数据源配置向导](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
-- 设置**客户**表中[数据源窗口](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)以使用新的复杂控件。  
+- 设置**客户**表中[数据源窗口](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)以使用新的复杂控件。  
   
 - 通过将其从添加新控件**数据源窗口**拖动到**Form1**。  
   
@@ -72,7 +72,7 @@ ms.locfileid: "60097149"
   
 2. 将项目命名为 **ComplexControlWalkthrough**。  
   
-3. 选择**Windows 应用程序**，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
+3. 选择**Windows 应用程序**，然后单击**确定**。 有关详细信息，请参阅[客户端应用程序](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68)。  
   
      “ComplexControlWalkthrough”项目即被创建并添加到“解决方案资源管理器”中。  
   
@@ -173,4 +173,4 @@ ms.locfileid: "60097149"
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Windows 窗体控件](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)
+ [Windows 窗体控件](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)

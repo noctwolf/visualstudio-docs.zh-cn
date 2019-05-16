@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445852"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705888"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63445852"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>用于建立调用顺序的属性
- 使用以下属性之一进行修饰的代码元素在指定时间进行调用。 有关详细信息，请参阅[单元测试的剖析](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
+ 使用以下属性之一进行修饰的代码元素在指定时间进行调用。 有关详细信息，请参阅[单元测试的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
 
 ### <a name="for-assemblies"></a>对于程序集
  AssemblyInitialize 和 AssemblyCleanup 恰好在加载程序集之后以及恰好在卸载程序集之前进行调用。
@@ -64,7 +64,7 @@ ms.locfileid: "63445852"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>用于标识测试类和方法的属性
- 每个测试类都必须具有 TestClass 属性，每个测试方法都必须具有 TestMethod 属性。 有关详细信息，请参阅[单元测试的剖析](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
+ 每个测试类都必须具有 TestClass 属性，每个测试方法都必须具有 TestMethod 属性。 有关详细信息，请参阅[单元测试的剖析](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -118,7 +118,7 @@ ms.locfileid: "63445852"
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>与专用访问器一起使用的类
- 如[使用 Publicize 创建专用访问器](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb)中所述，可以为私有方法生成单元测试。 这生成会创建专用访问器类，它会实例化 PrivateObject 类的对象。 PrivateObject 类是包装类，它在专用访问器进程中使用反射。 PrivateType 类非常相似，但是用于调用私有静态方法而不是调用私有实例方法。
+ 如[使用 Publicize 创建专用访问器](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb)中所述，可以为私有方法生成单元测试。 这生成会创建专用访问器类，它会实例化 PrivateObject 类的对象。 PrivateObject 类是包装类，它在专用访问器进程中使用反射。 PrivateType 类非常相似，但是用于调用私有静态方法而不是调用私有实例方法。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

@@ -10,19 +10,19 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051877"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704122"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>保留 MSBuild 项目文件中的数据
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 项目子类型可能需要将特定于子类型的数据保存到项目文件以供将来使用。 项目子类型使用项目文件持久性来满足以下要求：  
   
-1. 保存生成项目的过程中使用的数据。 (有关 Microsoft 生成引擎的详细信息，请参阅[MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)可以与生成相关的信息：  
+1. 保存生成项目的过程中使用的数据。 (有关 Microsoft 生成引擎的详细信息，请参阅[MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)可以与生成相关的信息：  
   
     1. 独立于配置的数据。 也就是说，空白或 missing 条件与 MSBuild 元素中存储的数据。  
   

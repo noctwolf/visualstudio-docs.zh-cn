@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445674"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701156"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：添加或删除引用通过使用引用管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "63445674"
   
 - 使用 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 的组件与以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 为目标的项目不兼容。  
   
-     当创建新的应用程序时，一些项目默认情况下以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 为目标。 有关详细信息，请参阅 [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。  
+     当创建新的应用程序时，一些项目默认情况下以 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 为目标。 有关详细信息，请参阅 [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)。  
   
 - 应当避免添加对同一解决方案中另一个项目的输出的文件引用，因为这样做可能导致编译错误。 而应使用“添加引用”对话框的“项目”选项卡来创建项目到项目的引用。 这样就可以更好地管理在项目中创建的类库，从而更易于进行团队开发。 有关详细信息，请参阅[有关损坏的引用的疑难解答](../ide/troubleshooting-broken-references.md)。  
   
@@ -173,7 +173,7 @@ ms.locfileid: "63445674"
 </PropertyGroup>  
 ```  
   
- 请确保选中此子组上的“Windows”复选框。 随后应能使用 Windows 运行时元素。 但是，你还需要添加 System.Runtime，Windows 运行时从中定义在整个 Windows 运行库中使用的一些标准类和接口（例如 IEnumerable）。 若要了解如何添加 System.Runtime，请参阅[托管的桌面应用和 Windows 运行时](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)。  
+ 请确保选中此子组上的“Windows”复选框。 随后应能使用 Windows 运行时元素。 但是，你还需要添加 System.Runtime，Windows 运行时从中定义在整个 Windows 运行库中使用的一些标准类和接口（例如 IEnumerable）。 若要了解如何添加 System.Runtime，请参阅[托管的桌面应用和 Windows 运行时](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types)。  
   
 ### <a name="extensions-subgroup"></a>“扩展”子组  
  “扩展”列出用于扩展目标 Windows 平台的用户 SDK。 此选项卡仅针对 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用项目显示。 桌面项目不显示此选项卡，因为这些项目仅使用第一方 .winmd 文件。  
@@ -216,5 +216,5 @@ ms.locfileid: "63445674"
  “引用管理器”对话框中的搜索栏在处于焦点的选项卡上运行。 例如，在“解决方案”选项卡处于焦点时，如果用户在搜索栏中键入“System”，则除非解决方案具有包含“System”的项目名称，否则搜索不会返回任何结果。  
   
 ## <a name="see-also"></a>请参阅  
- [NIB 如何：添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB 如何：添加或删除引用通过使用添加引用对话框](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [管理项目中的引用](../ide/managing-references-in-a-project.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403448"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690033"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403448"
 可以在 XAML 中、在代码中或使用 XAML 设计器向应用程序中添加元素（控件、布局和形状）。 本主题介绍如何在 Visual Studio 或 Blend for Visual Studio 中使用 XAML 设计器中的元素。  
   
 ## <a name="adding-an-element-to-a-layout"></a>将元素添加到布局  
- 布局是调整元素在 UI 中的大小和位置的过程。 若要放置可视元素，必须将这些元素置于布局[面板](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx) 类型的集合。 可使用各种 `Panel` 子元素（如 [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx)[StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) 和 [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)）来充当布局容器以及在页面上放置和排列元素。  
+ 布局是调整元素在 UI 中的大小和位置的过程。 若要放置可视元素，必须将这些元素置于布局[面板](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx) 类型的集合。 可使用各种 `Panel` 子元素（如 [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx)[StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) 和 [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)）来充当布局容器以及在页面上放置和排列元素。  
   
  默认情况下，`Grid` 面板用作页面或窗体中的顶级布局容器。 可在顶级页面布局内添加布局面板、控件或其他元素。  
   
@@ -34,7 +34,7 @@ ms.locfileid: "63403448"
   
     - 将元素从“工具箱”拖到美工板 。  
   
-    - 在“工具箱”中，选择一种绘制工具（例如，[椭圆形](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx)或[矩形](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)），然后在活动面板上绘制元素。  
+    - 在“工具箱”中，选择一种绘制工具（例如，[椭圆形](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx)或[矩形](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)），然后在活动面板上绘制元素。  
   
 ## <a name="changing-the-layering-order-of-elements"></a>更改元素的分层顺序  
  当 XAML 设计器中美工板上有两个元素时，一个元素在分层顺序中将显示在另一个元素之前。 文档大纲窗口中的元素列表的底部是最靠前的元素（除了在设置了元素的“ZIndex”属性时）。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。  

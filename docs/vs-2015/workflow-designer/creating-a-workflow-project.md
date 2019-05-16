@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976989"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704713"
 ---
 # <a name="creating-a-workflow-project"></a>创建工作流项目
 工作流、[!INCLUDE[indigo1](../includes/indigo1-md.md)] 工作流服务、自定义活动和自定义活动设计器都可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板来创建。 本节介绍如何通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中提供的项目模板来创建库和应用程序。  
@@ -44,7 +44,7 @@ ms.locfileid: "62976989"
  介绍如何向现有项目添加其他工作流活动或设计器以及其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项（如代码活动）。  
   
 ## <a name="related-sections"></a>相关章节  
- [设计工作流](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [设计工作流](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)

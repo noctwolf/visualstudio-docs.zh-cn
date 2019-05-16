@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686519"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：生成具有资源的项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ ms.locfileid: "59660263"
   
 #### <a name="to-compile-resources-with-msbuild"></a>使用 MSBuild 编译资源  
   
-1.  确定项目的资源文件，并将它们作为项列表或文件名传递给 `GenerateResource` 任务。  
+1. 确定项目的资源文件，并将它们作为项列表或文件名传递给 `GenerateResource` 任务。  
   
-2.  指定 `GenerateResource` 任务的 `OutputResources` 参数，这允许你设置输出资源文件的名称。  
+2. 指定 `GenerateResource` 任务的 `OutputResources` 参数，这允许你设置输出资源文件的名称。  
   
-3.  使用该任务的 `Output` 元素来在一个项中存储 `OutputResources` 参数的值。  
+3. 使用该任务的 `Output` 元素来在一个项中存储 `OutputResources` 参数的值。  
   
-4.  将 `Output` 元素创建的项用作另一项任务的输入。  
+4. 将 `Output` 元素创建的项用作另一项任务的输入。  
   
 ## <a name="example"></a>示例  
  以下代码示例演示 `Output` 元素如何指定 `GenerateResource` 任务的 `OutputResources` 属性将包含已编译的资源文件 `alpha.resources` 和 `beta.resources`，且这两个文件将放在 `Resources` 项列表内。 通过将这些 .resources 文件识别为具有相同名称的项的集合，你可以轻松地将它们用作另一个任务（如 [Csc](../msbuild/csc-task.md) 任务）的输入。  
   
- 此任务相当于使用适用于 [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) 的 **/compile** 开关：  
+ 此任务相当于使用适用于 [Resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) 的 **/compile** 开关：  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -83,4 +83,4 @@ ms.locfileid: "59660263"
 [MSBuild](msbuild.md)  
  [GenerateResource 任务](../msbuild/generateresource-task.md)   
  [Csc 任务](../msbuild/csc-task.md)   
- [Resgen.exe（资源文件生成器）](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe（资源文件生成器）](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

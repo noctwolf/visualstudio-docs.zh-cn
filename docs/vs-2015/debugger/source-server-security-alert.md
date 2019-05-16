@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc7c68fe767d2add0842e30f66c51a3dcc84905f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f8b122deab5dbdc30b129bce221a804f8c53aa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447286"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699327"
 ---
 # <a name="source-server-security-alert"></a>源服务器安全警报
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,4 +36,4 @@ ms.locfileid: "63447286"
 ## <a name="see-also"></a>请参阅  
  [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [调试器安全](../debugger/debugger-security.md)   
- [源服务器](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
+ [源服务器](https://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)

@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429153"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704090"
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +55,8 @@ ms.locfileid: "62429153"
   
   因为项目子类型的聚合<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>对象，它会重写的定义这些属性，以控制哪些**属性页**显示的对话框。 项目子类型可以检索这些属性的内部基础项目，然后添加或删除根据需要的 Clsid。  
   
-  新添加的项目子类型的属性页都从基础项目实现传递的项目配置浏览对象。 此项目配置浏览对象支持自动化扩展程序。 AutomationExtenders 的详细信息，请参阅[实现并使用自动化扩展程序](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356)。 项目子类型调用由实现的属性页<xref:EnvDTE.Project.Extender%2A>来检索扩展基项目的配置浏览对象自己项目子类型配置浏览对象。  
+  新添加的项目子类型的属性页都从基础项目实现传递的项目配置浏览对象。 此项目配置浏览对象支持自动化扩展程序。 AutomationExtenders 的详细信息，请参阅[实现并使用自动化扩展程序](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356)。 项目子类型调用由实现的属性页<xref:EnvDTE.Project.Extender%2A>来检索扩展基项目的配置浏览对象自己项目子类型配置浏览对象。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:EnvDTE.IFilterProperties>   
- [属性页对话框](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
+ [属性页对话框](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

@@ -15,12 +15,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a0aa54cd3fa6456d2a41e5418c497b284d01547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 129fa00681fcd3a9f3b19370bb553fcd5146e46e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095446"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701097"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -1160,4 +1160,4 @@ ms.locfileid: "60095446"
 |Xsd 设计器.显示起始视图|Ctrl+1|
 
 ## <a name="see-also"></a>请参阅
- [图标的图像编辑器](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [使用 IntelliSense](../ide/using-intellisense.md)
+ [图标的图像编辑器](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [使用 IntelliSense](../ide/using-intellisense.md)

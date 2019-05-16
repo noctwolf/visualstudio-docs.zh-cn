@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048187"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703641"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>如何：设置调试和发布配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +71,4 @@ Visual Studio 项目具有针对你的程序的单独发布和调试配置。 �
  [C# 调试配置的项目设置](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   
- [调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)
+ [调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

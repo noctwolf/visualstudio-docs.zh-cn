@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42fc6e45e0e32e9b165251c7ec61d3d67b924e1c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442690"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697610"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：发布具有特定区域设置的项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,6 +166,6 @@ ms.locfileid: "63442690"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [宏开发环境](http://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [宏资源管理器窗口](http://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [如何：编辑和以编程方式创建宏](http://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [宏开发环境](https://msdn.microsoft.com/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [宏资源管理器窗口](https://msdn.microsoft.com/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [如何：编辑和以编程方式创建宏](https://msdn.microsoft.com/6716f820-1feb-48ad-a718-27eb6b473c5a)

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704446"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "62584965"
 
      错误消息也将出现在“错误列表”  窗口中。 你可以通过在菜单栏中选择“视图” 、 “错误列表”显示窗口。
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) 包含在 \<iostream\> 头文件中。
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) 包含在 \<iostream\> 头文件中。
 
 2. 若要包括 iostream 标头，请在 `#include "stdafx.h"`后面输入以下代码：
 

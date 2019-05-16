@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650295"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683010"
 ---
 # <a name="msbuild-reference"></a>MSBuild 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650295"
  列出可能需要被“转义”才能正确解释的字符。 转义序列是一系列字符，表示其后的内容是替代解释。  
   
 ## <a name="related-sections"></a>相关章节  
- [MSBuild 概述](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)介绍 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 并提供指向介绍如何使用它来生成项目的链接。  
+ [MSBuild 概述](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)介绍 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 并提供指向介绍如何使用它来生成项目的链接。  
   
  <xref:Microsoft.Build.Conversion>  
  包含 Conversion 命名空间引用  

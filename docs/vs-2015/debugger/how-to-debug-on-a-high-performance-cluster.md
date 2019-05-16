@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117537"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702695"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：在高性能群集上调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60117537"
   
  当在高性能群集上进行调试时，可以使用所有可用于远程调试的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试窗口和技术。 但是由于你正在进行远程调试，所以外部控制台窗口不可用。  
   
- “线程”窗口和“进程”窗口对于调试并行应用程序特别有用。 有关如何使用这些窗口的提示，请参阅[如何：使用进程窗口](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)和[如何：使用线程窗口](../debugger/how-to-use-the-threads-window.md)。  
+ “线程”窗口和“进程”窗口对于调试并行应用程序特别有用。 有关如何使用这些窗口的提示，请参阅[如何：使用进程窗口](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)和[如何：使用线程窗口](../debugger/how-to-use-the-threads-window.md)。  
   
  下面的过程演示在高性能群集上调试时特别有用的一些技术。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "60117537"
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)   
- [如何：使用进程窗口](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [如何：使用进程窗口](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [如何：使用线程窗口](../debugger/how-to-use-the-threads-window.md)   
- [线程和进程](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [线程和进程](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [使用断点](../debugger/using-breakpoints.md)

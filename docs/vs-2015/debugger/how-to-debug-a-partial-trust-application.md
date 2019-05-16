@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437321"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704486"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>如何：调试部分信任应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 适用于 Windows 应用程序和控制台应用程序。  
   
- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)轻松地部署部分信任应用程序，充分利用[代码访问安全性](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)来限制对计算机上的资源的访问。  
+ [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)轻松地部署部分信任应用程序，充分利用[代码访问安全性](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127)来限制对计算机上的资源的访问。  
   
  部分信任的应用程序有可能难以调试，因为这些应用程序的安全权限随安装地点的不同而不同，因此其行为也各不相同。 如果从 Internet 进行安装，则部分信任的应用程序只会有极少的权限； 如果从本地 Intranet 进行安装，则会有更多的权限；如果从本地计算机安装，则会有完全权限。 您还可以有自定义区域和自定义权限。 您可能需要在以上任何一个条件或所有条件下对部分信任的应用程序进行调试。 Visual Studio 幸好也能使这些工作变得容易。  
   

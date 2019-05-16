@@ -12,12 +12,12 @@ ms.assetid: ef640967-8adb-4793-994d-ae1736510891
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8855d27448501abec506e3b363b41e64133c07fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 979ede5601f1f31ca972bb9067b626954b1296f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695201"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugObject2 : IDebugObject
  表达式计算器实现此接口以提供支持的别名和访问对象有关的信息。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以获取此接口通过[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外， [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)返回此接口。  
+ [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口可以获取此接口通过[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。 此外， [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)返回此接口。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了上的方法[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口，`IDebugObject2`接口实现了以下：  

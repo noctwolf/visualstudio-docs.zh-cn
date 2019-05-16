@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045468"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698414"
 ---
 # <a name="walkthrough-building-an-application"></a>演练：生成应用程序
 
@@ -78,7 +78,7 @@ ms.locfileid: "60045468"
 
 ## <a name="BKMK_CreateBuildConfig"></a> 创建自定义生成配置
 
-创建解决方案时，调试和发布生成配置，并为解决方案自动定义它们的默认平台目标。 然后，可以自定义这些配置，或创建自己的配置。 生成配置指定生成类型。 生成平台指定应用程序为该配置定向的操作系统。 有关详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)、[了解生成平台](../ide/understanding-build-platforms.md)以及[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
+创建解决方案时，调试和发布生成配置，并为解决方案自动定义它们的默认平台目标。 然后，可以自定义这些配置，或创建自己的配置。 生成配置指定生成类型。 生成平台指定应用程序为该配置定向的操作系统。 有关详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)、[了解生成平台](../ide/understanding-build-platforms.md)以及[调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。
 
 可以使用“配置管理器”对话框更改或创建配置和平台设置。 在此过程中，将创建用于测试的生成配置。
 
@@ -197,9 +197,9 @@ ms.locfileid: "60045468"
 
     生成信息包括生成开始的时间（位于开头）、处理文件的顺序，以及完成该进程所用的时间量（位于结尾）。 此信息还包括生成期间 Visual Studio 运行的实际的编译器语法。
 
-    例如，在 Visual C# 生成中，[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 选项列出了本主题前面部分随其他三个警告一起指定的警告代码 1762。
+    例如，在 Visual C# 生成中，[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 选项列出了本主题前面部分随其他三个警告一起指定的警告代码 1762。
 
-    在 Visual Basic 生成中，[/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 不包括要排除的特定警告，因此不会出现任何警告。
+    在 Visual Basic 生成中，[/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) 不包括要排除的特定警告，因此不会出现任何警告。
 
    > [!TIP]
    > 通过选择 Ctrl + F 键，显示“查找”窗口，可以搜索“输出”窗口的内容。
@@ -264,6 +264,6 @@ ms.locfileid: "60045468"
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：生成项目 (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [ASP.NET Web 应用程序项目预编译概述](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [演练：生成项目 (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [ASP.NET Web 应用程序项目预编译概述](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

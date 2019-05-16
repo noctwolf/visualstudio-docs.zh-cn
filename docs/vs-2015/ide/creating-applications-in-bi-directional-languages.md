@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437595"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701186"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "63437595"
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>支持双向语言的应用程序类型  
   
-1. Windows 应用程序。 你可以创建完全双向的应用程序，包括支持双向文本、从右向左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)。  
+1. Windows 应用程序。 你可以创建完全双向的应用程序，包括支持双向文本、从右向左的读取顺序以及镜像（用于翻转窗口、菜单、对话框等的布局）。 除镜像外，这些功能都作为默认功能或属性设置提供。 某些功能（例如消息框）本身就支持镜像。 但在其他情况下，必须通过代码实现镜像。 有关详细信息，请参阅 [Windows 窗体应用程序的双向支持](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)。  
   
-2. Web 应用程序。 Web 服务支持和收发 UTF-8 及 Unicode 文本，从而使它们适用于涉及双向语言的应用程序。 Web 客户端应用程序需借助浏览器的用户界面，因此，Web 应用程序中的双向支持程度取决于用户的浏览器对这些双向功能的支持程度。 在 Visual Studio 中，创建的应用程序可以支持阿拉伯语或希伯来语文本、从右向左读取顺序、文件编码和本地区域性设置。 有关详细信息，请参阅 [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)。  
+2. Web 应用程序。 Web 服务支持和收发 UTF-8 及 Unicode 文本，从而使它们适用于涉及双向语言的应用程序。 Web 客户端应用程序需借助浏览器的用户界面，因此，Web 应用程序中的双向支持程度取决于用户的浏览器对这些双向功能的支持程度。 在 Visual Studio 中，创建的应用程序可以支持阿拉伯语或希伯来语文本、从右向左读取顺序、文件编码和本地区域性设置。 有关详细信息，请参阅 [ASP.NET Web 应用程序的双向支持](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)。  
   
 3. 控制台应用程序。 控制台应用程序不包括对双向语言的文本支持。 这是 Windows 与控制台应用程序搭配使用方式的结果。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63437595"
 - 代码和文本。 在代码编辑器（也是文本编辑器）中，可使用阿拉伯语或希伯来语命名类、函数、变量、属性、字符串文本、特性，等等。 但是，编辑器不支持从右向左的读取顺序；文本总是从左边开始。  
   
     > [!TIP]
-    > 建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参见[演练：本地化 Windows 窗体](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
+    > 建议将字符串文本放在资源文件中，而不是将其硬编码到程序中。 有关详细信息，请参见[演练：本地化 Windows 窗体](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5)。  
   
     > [!NOTE]
     > 用这些语言命名的对象的引用方式必须保持一致。 例如，如果使用 Kashida 命名阿拉伯语变量，则引用该变量时必须总是使用 Kashida，否则会产生错误。  
@@ -87,7 +87,7 @@ ms.locfileid: "63437595"
 - 代码注释。 可使用阿拉伯语或希伯来语创建注释。 还可在注释生成器工具中使用这些语言。  
   
 ## <a name="see-also"></a>请参阅  
- [Windows 窗体应用程序的双向支持](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [ASP.NET Web 应用程序的双向支持](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Windows 窗体应用程序的双向支持](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
+ [ASP.NET Web 应用程序的双向支持](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [全球化应用程序](../ide/globalizing-applications.md)   
  [本地化应用程序](../ide/localizing-applications.md)

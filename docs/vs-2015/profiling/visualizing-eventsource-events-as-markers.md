@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431088"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690207"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "63431088"
   
 ### <a name="marker-type"></a>标记类型  
   
-1. 具有[操作码](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件将分别被视为范围的开始或结束。  无法显示嵌套或重叠的范围。 无法显示以一个线程开始并以另一个线程结束的事件对。  
+1. 具有[操作码](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件将分别被视为范围的开始或结束。  无法显示嵌套或重叠的范围。 无法显示以一个线程开始并以另一个线程结束的事件对。  
   
-2. 其操作码既不是 win:Start 也不是 win:Stop 的事件将被视为标记标志，除非其[级别](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726)（EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的字段）为 win:Verbose 或更高版本。  
+2. 其操作码既不是 win:Start 也不是 win:Stop 的事件将被视为标记标志，除非其[级别](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726)（EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的字段）为 win:Verbose 或更高版本。  
   
 3. 在所有其他情况下，事件均被视为消息。  
   

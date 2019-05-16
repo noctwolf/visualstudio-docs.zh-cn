@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702382"
 ---
 # <a name="client-side-script-debugging"></a>客户端脚本调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ Visual Studio 调试器提供了一个全面的调试环境，以便查找和更
 ## <a name="debugging-ajax-script-applications"></a>调试 AJAX 脚本应用程序  
  支持 AJAX 的 Web 应用程序大量使用脚本代码，从而给调试带来特别大的难度。 有关 AJAX 调试技术的信息，请参见  
   
- [调试和跟踪 Ajax 应用程序概述](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。  
+ [调试和跟踪 Ajax 应用程序概述](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [脚本调试的限制](../debugger/limitations-on-script-debugging.md)   
- [变量窗口](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [变量窗口](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [即时窗口](../ide/reference/immediate-window.md)   
- [调试和跟踪 Ajax 应用程序概述](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [调试和跟踪 Ajax 应用程序概述](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa0735f25b7e6b0007172c8c42eb06222a0425fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fb08a016261ac0836ba6dd2dde5d8b0812aab806
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704919"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,15 +53,15 @@ ms.locfileid: "63439463"
   
   事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
-- WCF 数据服务。 有关详细信息，请参阅[概述](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
+- WCF 数据服务。 有关详细信息，请参阅[概述](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
   
 - [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 中的数据模型。  
   
-- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
+- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
   
-- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
-- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-service-project"></a>创建服务项目  
  从为 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 创建项目开始本演练。  
@@ -326,7 +326,7 @@ ms.locfileid: "63439463"
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [将 WPF 控件绑定到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)   
- [概述](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
- [实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
- [WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [概述](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)   
+ [实体框架概述](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)   
+ [WPF 和 Silverlight 设计器概述](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [数据绑定概述](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

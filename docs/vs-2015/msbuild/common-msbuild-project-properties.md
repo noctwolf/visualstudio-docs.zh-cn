@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698708"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ ms.locfileid: "59650230"
 |Satellite_Version|指定附属程序集的版本信息。|  
 |Satellite_Win32Icon|在附属程序集中插入一个 .ico 图标文件。|  
 |Satellite_Win32Resource|在附属程序集中插入一个 Win32 资源（.res 文件）。|  
-|SubsystemVersion|指定生成的可执行文件可以使用的子系统的最低版本。 此属性等效于 `/subsystemversion` 编译器开关。 有关此属性的默认值的信息，请参阅 [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 或 [/subsystemversion（C# 编译器选项）](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)。|  
+|SubsystemVersion|指定生成的可执行文件可以使用的子系统的最低版本。 此属性等效于 `/subsystemversion` 编译器开关。 有关此属性的默认值的信息，请参阅 [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) 或 [/subsystemversion（C# 编译器选项）](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445)。|  
 |TargetCompactFramework|运行你所生成的应用程序所需要的 .NET Compact Framework 的版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。|  
 |TargetFrameworkVersion|运行生成的应用程序所需的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 通过指定此属性，你可以引用否则将无法引用的某些 Framework 程序集。|  
 |TreatWarningsAsErrors|一个布尔型参数，如果设置为 `true`，则会导致将所有警告都视为错误。 此参数等效于 `/nowarn` 编译器开关。|  

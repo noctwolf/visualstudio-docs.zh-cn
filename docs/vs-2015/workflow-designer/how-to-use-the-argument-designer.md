@@ -12,15 +12,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a244379bfebcf58d76ba726d4f6a84bcdfa7d1df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432369"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696266"
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用参数设计器
-与以前版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 相比，该参数设计器使数据流入和流出某个活动更容易。 通过单击来访问在设计器**自变量**设计画布左下角的按钮。 在设计器包含一系列参数显示在表格窗体，可以按每一列标题排序除外**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 [!INCLUDE[crabout](../includes/crabout-md.md)] 自变量，请参阅[变量和自变量](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
+与以前版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 相比，该参数设计器使数据流入和流出某个活动更容易。 通过单击来访问在设计器**自变量**设计画布左下角的按钮。 在设计器包含一系列参数显示在表格窗体，可以按每一列标题排序除外**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 [!INCLUDE[crabout](../includes/crabout-md.md)] 自变量，请参阅[变量和自变量](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
   
 ### <a name="to-create-a-new-argument"></a>创建新自变量  
   
@@ -35,4 +35,4 @@ ms.locfileid: "63432369"
   
 ## <a name="see-also"></a>请参阅  
  [使用工作流设计器](../workflow-designer/using-the-workflow-designer.md)   
- [变量和参数](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)
+ [变量和参数](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)

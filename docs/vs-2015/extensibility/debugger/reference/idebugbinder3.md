@@ -12,12 +12,12 @@ ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d6284b31752d21ddaddb5586a342fc8cda6f21c5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f23c2ad4aeaf911e45b28686584d741e5c4d22f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439915"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704140"
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugBinder3 : IDebugBinder
  调试引擎实现此接口以支持别名、 自定义可视化工具服务和对象类型信息的访问。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口获取此接口通过[QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。  
+ [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口获取此接口通过[QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3)。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  除了提供的方法[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)接口，此接口实现了以下：  

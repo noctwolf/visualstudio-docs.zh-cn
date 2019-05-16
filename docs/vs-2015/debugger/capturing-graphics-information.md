@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702544"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "63437819"
 ## <a name="capturing-graphics-information-remotely"></a>远程捕获图形信息  
  可以从本地计算机或者远程计算机或设备上运行的应用程序捕获图形信息。 [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] 计算机和 [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)] 设备支持远程捕获。 若要从远程运行的应用程序捕获图形信息，请配置你的项目以进行远程调试，然后如之前所述，在图形诊断下运行应用程序。 应用程序在远程计算机上运行，捕获的图形信息将记录在你的开发计算机上。  
   
- 配置项目以进行远程调试的方式取决于你开发的应用程序类型以及你使用的编程语言。 有关如何配置远程调试 Windows 应用商店应用程序的信息，请参阅[在远程计算机上的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。 有关如何配置远程调试 Windows 桌面应用程序的信息，请参阅[设置远程调试的 Visual Studio 项目](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)。  
+ 配置项目以进行远程调试的方式取决于你开发的应用程序类型以及你使用的编程语言。 有关如何配置远程调试 Windows 应用商店应用程序的信息，请参阅[在远程计算机上的运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。 有关如何配置远程调试 Windows 桌面应用程序的信息，请参阅[设置远程调试的 Visual Studio 项目](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a)。  
   
  之后，可以使用远程计算机或设备播放图形信息，而无论信息从何处捕获。 有关详细信息，请参阅[如何：更改图形诊断播放计算机](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md)。  
   

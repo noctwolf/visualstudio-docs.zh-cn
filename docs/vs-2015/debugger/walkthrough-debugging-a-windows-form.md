@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e75ab095284ec4021d3555de27b43205e17b1128
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a553f77e352b16ba1a0709e13e8893cf0f57a43d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704901"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 5. 单击 **“确定”**。  
   
-     Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示新窗体。 有关详细信息，请参阅[Windows 窗体设计器](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
+     Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示新窗体。 有关详细信息，请参阅[Windows 窗体设计器](https://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
 6. 上**视图**菜单中，选择**工具箱**。  
   
@@ -114,7 +114,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参见[断点](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583) 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。  
+     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 有关详细信息，请参见[断点](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583) 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。  
   
     > [!NOTE]
     > 此外可以右键单击任意行的代码中，指向**断点**，然后单击**插入断点**该行上添加断点。  

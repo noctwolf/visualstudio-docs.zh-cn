@@ -49,8 +49,8 @@ ms.locfileid: "62996629"
 
      可以用多种方法调用 Random 类的 `Next()` 方法，在本教程的前面部分中，已将此类命名为“randomizer”。 可使用多种方式调用的方法称为重载，您可以使用 IntelliSense 来探索这些方法。 请再次查看 IntelliSense 窗口中关于 `Next()` 方法的工具提示。
 
-     ****![IntelliSense 窗口工具提示](../ide/media/express_overloads.png)
-IntelliSense 窗口工具提示
+     ![IntelliSense 窗口工具提示](../ide/media/express_overloads.png)
+IntelliSense 窗口工具提示 ****
 
      此工具提示显示“(+ 2 重载)”，这意味着可以用另外两种方法来调用 `Next()` 方法。 重载包含不同数量或类型的自变量，因此，它们的工作方式彼此略有不同。 例如，某个方法可能只采用一个整型参数，而其重载之一则可能采用一个整数和一个字符串。 您应选择正确的重载，使之执行您所需操作。 将代码添加到 `StartTheQuiz()` 方法时，只要输入 `randomizer.Next(`，IntelliSense 窗口中将显示详细信息。 若要循环显示重载，请选择向上键和向下键，如下图所示：
 
@@ -74,8 +74,8 @@ IntelliSense 窗口工具提示
 
      如下图所示，你的程序包括一道减法题：
 
-     ****![含减法题的数学测验](../ide/media/express_addsubtract.png)
-含减法题的数学测验
+     ![含减法题的数学测验](../ide/media/express_addsubtract.png)
+含减法题的数学测验 ****
 
 ## <a name="to-continue-or-review"></a>继续或查看
 

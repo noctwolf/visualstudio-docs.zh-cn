@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436877"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701788"
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ ms.locfileid: "63436877"
  使用以下选项选择要显示或修改的配置和平台。  
   
  **配置**  
- 指定要显示或修改的配置设置。 这些设置包括“调试”（默认）、“版本”、“所有配置”或用户定义的配置。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的配置设置。 这些设置包括“调试”（默认）、“版本”、“所有配置”或用户定义的配置。 有关详细信息，请参阅[调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
  **平台**  
- 指定要显示或修改的平台设置。 这些设置包括“任何 CPU”（[!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 应用的默认值）、“x64”、“ARM”、“x86”或用户定义的平台。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
+ 指定要显示或修改的平台设置。 这些设置包括“任何 CPU”（[!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 应用的默认值）、“x64”、“ARM”、“x86”或用户定义的平台。 有关详细信息，请参阅[调试和发布项目配置](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)。  
   
 ## <a name="general-page"></a>常规页  
  使用以下选项来设置项目的常规属性。  
@@ -53,7 +53,7 @@ ms.locfileid: "63436877"
  输出路径  
  指定项目的配置的输出文件的位置。 该路径是相对；如果输入绝对路径，绝对路径会保存在项目中。 默认路径为 bin\Debug。  
   
- 当使用简化的生成配置时，项目系统将确定是生成调试版本还是发行版本。 单击“调试”、“启动调试”（或按 F5）时，会将生成放在调试位置，而不考虑你指定的“输出路径”。 但是，“生成”菜单上的“生成解决方案”命令会将其放在指定的位置。 若要启用高级生成配置，请在菜单栏上，依次选择“工具”、“选项”。 在“选项”对话框中，展开“项目和解决方案”，选择“常规”，然后清除“显示高级生成配置”复选框。 这样，你便可以手动控制所有配置值，并控制是生成调试版本还是发行版本。 有关详细信息，请参阅 [NIB：选项对话框的常规项目和解决方案，](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
+ 当使用简化的生成配置时，项目系统将确定是生成调试版本还是发行版本。 单击“调试”、“启动调试”（或按 F5）时，会将生成放在调试位置，而不考虑你指定的“输出路径”。 但是，“生成”菜单上的“生成解决方案”命令会将其放在指定的位置。 若要启用高级生成配置，请在菜单栏上，依次选择“工具”、“选项”。 在“选项”对话框中，展开“项目和解决方案”，选择“常规”，然后清除“显示高级生成配置”复选框。 这样，你便可以手动控制所有配置值，并控制是生成调试版本还是发行版本。 有关详细信息，请参阅 [NIB：选项对话框的常规项目和解决方案，](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。  
   
  默认语言  
  指定项目的默认语言。 在控制面板中的“时钟、语言和区域”中选中的语言选项可指定用户的首选语言。 如果用户的首选语言与应用程序中提供的语言资源不匹配，可通过指定项目的默认语言，确保使用指定的默认语言资源。  

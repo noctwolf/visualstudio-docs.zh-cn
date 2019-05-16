@@ -9,19 +9,19 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 612ef2485b0ef8b666833470e980667da16c2a97
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bebaeba2cc6f74a3ddbf059ca802252ad0bab6cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696159"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>如何：生成并运行 LinqToXmlDataBinding 示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题演示如何创建和生成 LinqToXmlDataBinding Visual Studio 项目以及如何运行生成的 LinqToXmlDataBinding Windows Presentation Foundation (WPF) 示例程序。  
   
- 有关使用 Visual Studio 创建项目的详细信息，请参阅 [Visual Studio 中的应用程序开发](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)。  
+ 有关使用 Visual Studio 创建项目的详细信息，请参阅 [Visual Studio 中的应用程序开发](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)。  
   
 ## <a name="creating-and-populating-the-project"></a>创建和填充项目  
   
@@ -79,4 +79,4 @@ ms.locfileid: "60099112"
 ## <a name="see-also"></a>请参阅  
  [使用 LINQ to XML 的 WPF 数据绑定示例](../designers/wpf-data-binding-using-linq-to-xml-example.md)   
  [演练：LinqToXmlDataBinding 示例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [Visual Studio 中的应用程序开发](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)
+ [Visual Studio 中的应用程序开发](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)

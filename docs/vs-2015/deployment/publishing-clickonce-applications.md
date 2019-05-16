@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58937204"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697534"
 ---
 # <a name="publishing-clickonce-applications"></a>发布 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +98,8 @@ ms.locfileid: "58937204"
 |[演练：使用 ClickOnce 部署 API 按需下载附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|介绍如何将附属程序集标记为可选，以及如何下载客户端计算机针对其当前区域性设置而需要的程序集。|  
 |[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|说明如何使用 .NET Framework 实用程序部署 ClickOnce 应用程序。|  
 |[演练：手动部署不需要重新签名且保留品牌信息的 ClickOnce 应用程序](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|说明如何使用 .NET Framework 实用程序在不对清单进行重新签名的情况下部署 ClickOnce 应用程序。|  
-|[NIB：如何：针对特定 CPU 类型优化应用程序](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|说明如何通过更改项目中的“目标 CPU”或“平台目标”属性发布 64 位处理器。|  
-|[演练：启用要在多个.NET Framework 版本上运行的 ClickOnce 应用程序](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|说明如何启用 ClickOnce 应用程序以在多个版本的 NET Framework 上安装并运行。|  
+|[NIB：如何：针对特定 CPU 类型优化应用程序](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|说明如何通过更改项目中的“目标 CPU”或“平台目标”属性发布 64 位处理器。|  
+|[演练：启用要在多个.NET Framework 版本上运行的 ClickOnce 应用程序](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|说明如何启用 ClickOnce 应用程序以在多个版本的 NET Framework 上安装并运行。|  
 |[演练：创建 ClickOnce 应用程序的自定义安装程序](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|说明如何创建自定义安装程序以安装 ClickOnce 应用程序。|  
 |[如何：发布已启用视觉样式的 WPF 应用程序](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|提供分步说明以解决在尝试发布已启用视觉样式的 WPF 应用程序时出现的错误。|  
   

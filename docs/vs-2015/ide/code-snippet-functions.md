@@ -13,22 +13,22 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790002"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701525"
 ---
 # <a name="code-snippet-functions"></a>代码段函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-有三个函数可与 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 代码片段一起使用。 函数在代码片段的 [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
+有三个函数可与 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 代码片段一起使用。 函数在代码片段的 [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
   
 ## <a name="functions"></a>函数  
  下表介绍可与代码片段中的 `Function` 元素一起使用的函数。  
   
-|函数|说明​​|语言|  
+|函数|说明|语言|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
 |`ClassName()`|返回包含插入的代码片段的类的名称。|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
@@ -154,5 +154,5 @@ ms.locfileid: "54790002"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [Function 元素 （IntelliSense 代码片段）](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Function 元素 （IntelliSense 代码片段）](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [代码片段架构参考](../ide/code-snippets-schema-reference.md)
