@@ -47,7 +47,7 @@ ms.locfileid: "62996327"
      如下图所示，测验对象必须回答四个问题才能完成测验。
 
      ![包含四个问题的数学测验](../ide/media/express_finishedquiz.png)
-包含四个问题的数学测验****
+包含四个问题的数学测验 ****
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
