@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693534"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 - 活动的 Microsoft Azure 帐户。  
   
-    - 你可以在 [此处](http://azure.microsoft.com/pricing/free-trial/)注册一个免费试用帐户。  
+    - 你可以在 [此处](https://azure.microsoft.com/pricing/free-trial/)注册一个免费试用帐户。  
   
     - 你可以激活 [MSDN 订阅者权益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 MSDN 订阅每月会为你提供信用额度，你可以使用信用额度支付 Azure 服务。  
   
@@ -566,7 +566,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
  你可以通过添加颜色、形状、图形和甚至动画来使用户界面更有吸引力。 请参阅[在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](../designers/designing-xaml-in-visual-studio.md)。  
   
- 你可以连接到现有的 SQL 数据库或其他使用 Azure 移动服务的数据源。 请参阅 [移动服务文档](http://azure.microsoft.com/services/app-service/mobile/)。  
+ 你可以连接到现有的 SQL 数据库或其他使用 Azure 移动服务的数据源。 请参阅 [移动服务文档](https://azure.microsoft.com/services/app-service/mobile/)。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：我第一个 WPF 桌面应用程序](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
