@@ -1,10 +1,9 @@
-- name: Visual Studio 测试工具
+- name: Visual Studio 中的测试工具
   href: improve-code-quality.md
-- name: 测试方案
-  href: developer-testing-scenarios.md
 - name: 单元测试
-  href: unit-test-your-code.md
   items:
+    - name: 单元测试工具概述
+      href: unit-test-your-code.md
     - name: 入门
       href: getting-started-with-unit-testing.md
     - name: 单元测试基础知识
@@ -14,8 +13,9 @@
     - name: 创建单元测试命令
       href: create-unit-tests-menu.md
     - name: IntelliTest
-      href: generate-unit-tests-for-your-code-with-intellitest.md
       items:
+        - name: 如何：使用 IntelliTest 生成单元测试
+          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: 概述
           href: intellitest-manual/introduction.md
         - name: 入门
@@ -38,9 +38,10 @@
           href: intellitest-manual/warnings-and-errors.md
     - name: 安装第三方单元测试框架
       href: install-third-party-unit-test-frameworks.md
-    - name: 使用测试资源管理器运行单元测试
-      href: run-unit-tests-with-test-explorer.md
+    - name: 测试资源管理器
       items:
+        - name: 使用测试资源管理器运行单元测试
+          href: run-unit-tests-with-test-explorer.md
         - name: 测试资源管理器常见问题解答
           href: test-explorer-faq.md
     - name: 从命令行运行测试
@@ -59,18 +60,20 @@
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: 使用 assert 类
           href: using-the-assert-classes.md
-        - name: 用 Microsoft Fakes 隔离测试代码
-          href: isolating-code-under-test-with-microsoft-fakes.md
+        - name: Microsoft Fakes
           items:
+            - name: 用 Microsoft Fakes 隔离测试代码
+              href: isolating-code-under-test-with-microsoft-fakes.md
             - name: 使用存根隔离应用程序的各个部分以进行单元测试
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
             - name: 使用填充码针对单元测试将应用程序与程序集隔离
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
             - name: Microsoft Fakes 中的代码生成、编译和命名约定
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: 创建数据驱动的单元测试
-          href: how-to-create-a-data-driven-unit-test.md
+        - name: 数据驱动的单元测试
           items:
+            - name: 创建数据驱动的单元测试
+              href: how-to-create-a-data-driven-unit-test.md
             - name: 演练：使用配置文件定义数据源
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: 泛型方法的单元测试
@@ -79,9 +82,10 @@
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
         - name: 用于创建单元测试的示例项目
           href: sample-project-for-creating-unit-tests.md
-    - name: 编写 C/C++ 代码的单元测试
-      href: writing-unit-tests-for-c-cpp.md
+    - name: C/C++ 代码的单元测试
       items:
+        - name: 编写 C/C++ 代码的单元测试
+          href: writing-unit-tests-for-c-cpp.md
         - name: 使用适用于 C++ 的 Microsoft 单元测试框架
           href: how-to-use-microsoft-test-framework-for-cpp.md
         - name: 使用 Google C++ 测试框架
@@ -104,16 +108,18 @@
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 演练：创建并运行 UWP 应用的单元测试
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: 使用代码覆盖率确定所测试的代码量
-      href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - name: 代码覆盖率
       items:
+        - name: 使用代码覆盖率确定所测试的代码量
+          href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
         - name: 自定义代码覆盖率分析
           href: customizing-code-coverage-analysis.md
         - name: 代码覆盖率疑难解答
           href: troubleshooting-code-coverage.md
 - name: Live Unit Testing
-  href: live-unit-testing-intro.md
   items:
+    - name: 介绍
+      href: live-unit-testing-intro.md
     - name: Live Unit Testing 中的新增功能
       href: live-unit-testing-whats-new.md
     - name: Live Unit Testing 入门
@@ -126,19 +132,22 @@
   items:
     - name: 快速入门：创建负载测试项目
       href: quickstart-create-a-load-test-project.md
-    - name: 配置负载测试
-      href: edit-load-tests.md
+    - name: 负载测试配置
       items:
-        - name: 编辑方案
-          href: edit-load-test-scenarios.md
+        - name: 配置负载测试
+          href: edit-load-tests.md
+        - name: 方案和测试组合
           items:
+            - name: 编辑方案
+              href: edit-load-test-scenarios.md
             - name: 方案属性
               href: load-test-scenario-properties.md
             - name: 测试组合
               href: edit-the-test-mix-in-a-load-test-scenario.md
             - name: 测试组合模型
-              href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
               items:
+                - name: 概述
+                  href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: 编辑测试组合模型
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
             - name: 浏览器组合
@@ -148,8 +157,9 @@
             - name: 思考时间配置文件
               href: edit-think-times-in-load-test-scenarios.md
             - name: 负载模式
-              href: edit-load-patterns-to-model-virtual-user-activities.md
               items:
+                - name: 负载模式
+                  href: edit-load-patterns-to-model-virtual-user-activities.md
                 - name: 单步负载增加时间属性
                   href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
             - name: 启动延迟
@@ -160,9 +170,10 @@
               href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
             - name: 节奏延迟分布
               href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
-        - name: 编辑计数器集
-          href: specify-counter-sets-and-threshold-rules-for-load-testing.md
+        - name: 计数器集
           items:
+            - name: 编辑计数器集
+              href: specify-counter-sets-and-threshold-rules-for-load-testing.md
             - name: 添加计数器
               href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
             - name: 自定义计数器集
@@ -171,9 +182,10 @@
               href: how-to-manage-counter-sets-using-the-load-test-editor.md
             - name: 添加阈值规则
               href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
-        - name: 配置运行设置
-          href: configure-load-test-run-settings.md
+        - name: 运行设置
           items:
+            - name: 配置运行设置
+              href: configure-load-test-run-settings.md
             - name: 运行设置属性
               href: load-test-run-settings-properties.md
             - name: 添加额外的运行设置
@@ -181,8 +193,9 @@
             - name: 上下文参数
               href: how-to-add-context-parameters-to-a-load-test-run-setting.md
             - name: 日志记录设置
-              href: modify-load-test-logging-settings.md
               items:
+                - name: 修改日志记录设置
+                  href: modify-load-test-logging-settings.md
                 - name: 最大日志大小
                   href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: 失败的测试
@@ -194,8 +207,9 @@
             - name: 采样率
               href: how-to-specify-the-sample-rate-for-a-load-test.md
             - name: 选择运行设置
-              href: how-to-select-the-active-run-setting-for-a-load-test.md
               items:
+                - name: 选择运行设置
+                  href: how-to-select-the-active-run-setting-for-a-load-test.md
                 - name: 命令行
                   href: how-to-select-a-load-test-run-setting-from-the-command-line.md
     - name: 演练：创建和运行负载测试
@@ -211,8 +225,9 @@
         - name: 动态参数
           href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
     - name: 测试控制器和测试代理
-      href: configure-test-agents-and-controllers-for-load-tests.md
       items:
+        - name: 概述
+          href: configure-test-agents-and-controllers-for-load-tests.md
         - name: 要求
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: 管理测试控制器和测试代理
@@ -241,9 +256,10 @@
           href: code-a-custom-extraction-rule-for-a-web-performance-test.md
         - name: 创建自定义验证规则
           href: code-a-custom-validation-rule-for-a-web-performance-test.md
-        - name: 创建自定义代码和插件
-          href: create-custom-code-and-plug-ins-for-load-tests.md
+        - name: 自定义代码和插件
           items:
+            - name: 创建自定义代码和插件
+              href: create-custom-code-and-plug-ins-for-load-tests.md
             - name: 创建 Web 性能测试插件
               href: how-to-create-a-web-performance-test-plug-in.md
             - name: 创建请求级插件
@@ -256,14 +272,16 @@
               href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
     - name: 负载测试诊断
       items:
-        - name: 创建诊断数据适配器
-          href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
+        - name: 诊断数据适配器
           items:
+            - name: 创建诊断数据适配器
+              href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
             - name: 创建方法
               href: how-to-create-a-diagnostic-data-adapter.md
-        - name: 使用测试设置收集诊断
-          href: collect-diagnostic-information-using-test-settings.md
+        - name: 收集诊断
           items:
+            - name: 使用测试设置收集诊断
+              href: collect-diagnostic-information-using-test-settings.md
             - name: 创建测试设置
               href: how-to-create-a-test-setting-for-a-distributed-load-test.md
             - name: 配置 ASP.NET 探查器
@@ -274,21 +292,24 @@
           href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
         - name: 屏幕和语音录制
           href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-    - name: 分析结果
-      href: analyze-load-test-results-using-the-load-test-analyzer.md
+    - name: 测试结果
       items:
+        - name: 分析结果
+          href: analyze-load-test-results-using-the-load-test-analyzer.md
         - name: 访问结果
           href: how-to-access-load-test-results-for-analysis.md
         - name: 摘要概述
           href: load-test-results-summary-overview.md
         - name: 表视图
-          href: analyze-load-test-results-and-errors-in-the-tables-view.md
           items:
+            - name: 表视图
+              href: analyze-load-test-results-and-errors-in-the-tables-view.md
             - name: 网页响应时间
               href: how-to-view-web-page-response-time-in-a-load-test.md
         - name: 图形视图
-          href: analyze-load-test-results-in-the-graphs-view.md
           items:
+            - name: 图形视图
+              href: analyze-load-test-results-in-the-graphs-view.md
             - name: 添加和删除计数器
               href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
             - name: 创建自定义图形
@@ -298,8 +319,9 @@
             - name: 如何放大
               href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
         - name: 详细信息视图
-          href: analyze-load-test-virtual-user-activity-in-the-details-view.md
           items:
+            - name: 详细信息视图
+              href: analyze-load-test-virtual-user-activity-in-the-details-view.md
             - name: 分析虚拟用户活动
               href: how-to-analyze-virtual-user-activity-during-a-load-test.md
             - name: 演练：使用活动图表
@@ -313,8 +335,9 @@
         - name: 在 Word 中创建报告
           href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
         - name: 结果存储库
-          href: manage-load-test-results-in-the-load-test-results-repository.md
           items:
+            - name: 结果存储库
+              href: manage-load-test-results-in-the-load-test-results-repository.md
             - name: 选择存储库
               href: how-to-select-a-load-test-results-repository.md
             - name: 导入结果
@@ -326,8 +349,9 @@
         - name: 为结果查看器创建加载项
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
 - name: UI 测试自动化
-  href: use-ui-automation-to-test-your-code.md
   items:
+    - name: 概述
+      href: use-ui-automation-to-test-your-code.md
     - name: 演练：创建、编辑和维护编码的 UI 测试
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: 使用编码的 UI 测试来测试 UWP 应用
@@ -359,8 +383,9 @@
     - name: 扩展编码的 UI 测试框架
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
 - name: 测试实验室管理
-  href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
+    - name: 使用实验室环境
+      href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
     - name: 通过生成或发布管理过程进行自动测试
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: 安装测试代理和测试控制器

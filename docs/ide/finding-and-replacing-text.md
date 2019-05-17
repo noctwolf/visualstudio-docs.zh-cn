@@ -42,7 +42,7 @@ ms.locfileid: "62548277"
 可以使用[查找和替换](#find-and-replace-control)（Ctrl+F 或 Ctrl+H）或[在文件中查找/替换](#find-in-files-and-replace-in-files)（Ctrl+Shift+F 或 Ctrl+Shift+H），在 Visual Studio 编辑器中查找和替换文本。 也可通过使用[多个插入点选择](#multi-caret-selection)来仅查找并替换模式的一些实例。
 
 > [!TIP]
-> 如果要重命名代码符号（例如变量和方法），最好*[重构](../ide/reference/rename.md)* 它们，而不是使用查找和替换。 重构不仅智能而且知道应用范围，而查找和替换会盲目替换所有实例。
+> 如果要重命名代码符号（例如变量和方法），最好 *[重构](../ide/reference/rename.md)* 它们，而不是使用查找和替换。 重构不仅智能而且知道应用范围，而查找和替换会盲目替换所有实例。
 
 查找和替换功能在此编辑器中、其他某些基于文本的窗口（例如“查找结果”窗口）中、设计器窗口（如 XAML 设计器和 Windows 窗体设计器）中以及工具窗口中均提供。
 

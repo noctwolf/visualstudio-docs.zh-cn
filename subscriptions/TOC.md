@@ -12,10 +12,11 @@
 ### [下载软件](subscriber-downloads.md)
 #### [可用软件下载列表](software-download-list.md)
 ### [获取和管理产品密钥](product-keys.md)
+### [Visual Studio 与 GitHub Enterprise](access-github.md)
+### [订阅者权益](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [加入 Visual Studio Dev Essentials](join-dev-essentials.md)
 #### [选择退出 Visual Studio Dev Essentials](leave-vsde.md)
-### [订阅者权益](subscriber-benefits.md)
 ## 使用订阅者权益
 ### 工具
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [最大用量](maximum-usage.md)
 #### [过期订阅](handle-expired-license.md)
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
+### [使用 GitHub Enterprise 管理 Visual Studio](assign-github.md)
 ## 获取 Visual Studio 订阅
 ### [比较订阅选项](https://visualstudio.microsoft.com/vs/pricing)
 ### 购买云订阅

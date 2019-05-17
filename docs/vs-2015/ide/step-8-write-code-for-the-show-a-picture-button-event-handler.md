@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428613"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679332"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual C# 代码
   
     2. “IntelliSense”窗口打开并显示“openFileDialog1”。 选择 Tab 键以将其选定。 （在 Visual Basic 中，因为首字母大写，所以会看到“OpenFileDialog1”。 确保“OpenFileDialog1”已选中。）  
   
-         若要了解有关 `OpenFileDialog` 的详细信息，请参阅 [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。  
+         若要了解有关 `OpenFileDialog` 的详细信息，请参阅 [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。  
   
     3. 键入句点 (`.`)（许多程序员称此符号为点）。由于在“openFileDialog1”的后面紧接着键入了一个句点，因此“IntelliSense”窗口将打开，其中填充有“OpenFileDialog”组件的所有属性和方法。 在 Windows 窗体设计器中选择该组件时，“属性”窗口中将显示相同的属性。 您还可选择将告知组件要执行的操作（例如打开对话框）的方法。  
   
@@ -67,7 +67,7 @@ Visual C# 代码
   
     4. 开始键入 `ShowDialog`（是否大写对 IntelliSense 来说不重要）。 `ShowDialog()` 方法将显示“打开文件”对话框。 在窗口突出显示“ShowDialog”之后，请选择 Tab 键。 也可突出显示“ShowDialog”并选择 F1 键来获取有关它的帮助。  
   
-         若要了解有关 `ShowDialog()` 方法的详细信息，请参阅 [ShowDialog 方法](http://msdn.microsoft.com/library/c7ykbedk.aspx)。  
+         若要了解有关 `ShowDialog()` 方法的详细信息，请参阅 [ShowDialog 方法](https://msdn.microsoft.com/library/c7ykbedk.aspx)。  
   
     5. 对控件或组件使用方法（称为“调用方法”）时，需要添加圆括号。 因此，在 `ShowDialog` 中的“g”之后立即输入左括号和右括号：`()` 它现在应该看起来像“openFileDialog1.ShowDialog()”。  
   
@@ -83,7 +83,7 @@ Visual C# 代码
   
     8. 键入一个点，在“IntelliSense”窗口中打开 DialogResult 值。 输入字母 `O`，然后选择 Tab 键插入“OK”。  
   
-         若要了解有关 `DialogResult` 的详细信息，请参阅 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
+         若要了解有关 `DialogResult` 的详细信息，请参阅 [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
   
         > [!NOTE]
         > 第一行代码应会完成。 对于 Visual C#，此代码行应如下所示。  

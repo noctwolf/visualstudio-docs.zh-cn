@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434498"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699748"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63434498"
   
 4. 使用中的数据填充数据集`Customers`Northwind 数据库中的表。  
   
-5. 使用[Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接访问`Customers`数据表和更改的记录。  
+5. 使用[Visual Database Tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1)在 Visual Studio 中直接访问`Customers`数据表和更改的记录。  
   
 6. 为不同的值更改同一记录、 更新数据集，并尝试将所做的更改写入到数据库，这会导致引发并发错误。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "63434498"
 - 访问 Northwind 示例数据库有权执行更新。
   
 > [!NOTE]
-> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+> 对话框和菜单命令可能不同于所述的帮助，具体取决于您现用的设置或正在使用的版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ## <a name="create-a-new-project"></a>创建新项目  
  通过创建新的 Windows 应用程序开始在演练。  
@@ -79,7 +79,7 @@ ms.locfileid: "63434498"
   
 1. 上**数据**菜单中，选择**添加新数据源**。  
   
-     “数据源配置”向导随即打开[](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
+     “数据源配置”向导随即打开[](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)。  
   
 2. 上**选择数据源类型**屏幕上，选择**数据库**。  
   

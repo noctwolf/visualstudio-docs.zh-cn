@@ -1,16 +1,21 @@
 - name: Visual Studio 中的 XML 工具
-  href: xml-tools-in-visual-studio.md
   items:
+    - name: 概述
+      href: xml-tools-in-visual-studio.md
     - name: XML 编辑器
-      href: xml-editor.md
       items:
+        - name: 概述
+          displayName: XML editor
+          href: xml-editor.md
         - name: XML 文档验证
           href: xml-document-validation.md
         - name: XML 编辑器 IntelliSense 功能
           href: xml-editor-intellisense-features.md
         - name: XML 代码片断
-          href: xml-snippets.md
           items:
+            - name: 概述
+              displayName: XML snippets overview
+              href: xml-snippets.md
             - name: 使用 XML 片段
               href: how-to-use-xml-snippets.md
             - name: 基于 XML 架构生成片段
@@ -44,11 +49,14 @@
         - name: XML 架构对话框
           href: xml-schemas-dialog-box.md
     - name: XML 架构设计器
-      href: xml-schema-designer.md
       items:
+        - name: 概述
+          displayName: XML Schema Designer overview
+          href: xml-schema-designer.md
         - name: XML 架构资源管理器
-          href: xml-schema-explorer.md
           items:
+            - name: XML 架构资源管理器
+              href: xml-schema-explorer.md
             - name: 搜索架构集
               href: searching-the-schema-set.md
             - name: 排序、筛选和分组
@@ -57,9 +65,10 @@
               href: context-menus-xml-schema-explorer.md
             - name: XML 文本的集成
               href: integration-of-xml-literals-with-xml-schema-explorer.md
-        - name: XML 架构设计器工作区
-          href: xml-schema-designer-workspace.md
+        - name: 工作区
           items:
+            - name: 视图概述
+              href: xml-schema-designer-workspace.md
             - name: 起始视图
               href: start-view.md
             - name: 内容模型视图
@@ -91,17 +100,19 @@
             - name: 打印关系图
               href: how-to-print-diagrams-from-the-graph-view-and-the-content-model-view.md
             - name: 示例 XSD 文件
-              href: sample-xsd-files.md
               items:
                 - name: 简单架构
+                  displayName: Sample XSD files
                   href: sample-xsd-file-simple-schema.md
                 - name: 采购订单架构
                   href: sample-xsd-file-purchase-order-schema.md
                 - name: 关系
                   href: sample-xsd-file-relationships.md
     - name: XSLT 调试
-      href: debugging-xslt.md
       items:
+        - name: 概述
+          displayName: XSLT debugging
+          href: debugging-xslt.md
         - name: 演练：调试 XSLT 样式表
           href: walkthrough-debug-an-xslt-style-sheet.md
         - name: 评估 XPath 表达式
