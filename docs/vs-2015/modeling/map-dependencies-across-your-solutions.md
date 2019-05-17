@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb62c82722cbfc76264e760e117c828a6dc3bef0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687162"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>映射解决方案中的依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,7 +284,7 @@ ms.locfileid: "63440951"
      ![使用筛选器窗格以简化显示](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ## <a name="SeeSourceHeader"></a> 了解 C 和 C++ 源文件和头文件之间的依赖关系  
- 如果要创建更多 C++ 项目的完整代码图，请在这些项目上设置浏览信息编译器选项 (**/FR**)。 请参阅 [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否则，将出现一条消息并提示你设置此选项。 如果选择“确定” ，就只会为当前代码图设置选项。 可以选择隐藏所有之后的代码图的信息。 如果你隐藏了该信息，则可以让它再显示。 将以下注册表项设置为 `0` 或删除该项：  
+ 如果要创建更多 C++ 项目的完整代码图，请在这些项目上设置浏览信息编译器选项 (**/FR**)。 请参阅 [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896)。 否则，将出现一条消息并提示你设置此选项。 如果选择“确定” ，就只会为当前代码图设置选项。 可以选择隐藏所有之后的代码图的信息。 如果你隐藏了该信息，则可以让它再显示。 将以下注册表项设置为 `0` 或删除该项：  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider:AutoEnableSbr**  
   
@@ -312,11 +312,11 @@ ms.locfileid: "63440951"
 |未能生成代码图。|解决方案中没有项目成功生成过。|修复出现的生成错误，然后重新生成代码图。|  
 |尝试从“体系结构”[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **菜单生成代码图时，** 无响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|  
 |禁用 IntelliSense 浏览器数据库的某些设置。| [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] “选项”对话框中可能已禁用某些 IntelliSense 设置。|打开设置以启用它们。<br /><br /> 请参阅[选项，文本编辑器，C /C++的高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
-|消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。<br /><br /> 请参阅 [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
-||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。<br /><br /> 请参阅 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
+|消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。<br /><br /> 请参阅 [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
+||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。<br /><br /> 请参阅 [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
 ||无法在预期位置打开或找到 .pdb 文件。|确保 .pdb 文件位于预期位置。|  
-||已从 .pdb 文件中去除调试信息。|如果链接器中已使用 **/PDBSTRIPPED** 选项，则改为包含完整的 .pdb 文件。<br /><br /> 请参阅 [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
-||调用方不是函数，它是二进制文件中的形式转换 (thunk) 或数据节中的指针。|当调用方是形式转换 (thunk) 时，尝试使用 `_declspec(dllimport)` 以避免形式转换 (thunk)。<br /><br /> 请参阅：<br /><br /> -   [一般规则和限制](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [导入函数调用使用 __declspec （dllimport）](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、 dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
+||已从 .pdb 文件中去除调试信息。|如果链接器中已使用 **/PDBSTRIPPED** 选项，则改为包含完整的 .pdb 文件。<br /><br /> 请参阅 [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55)。|  
+||调用方不是函数，它是二进制文件中的形式转换 (thunk) 或数据节中的指针。|当调用方是形式转换 (thunk) 时，尝试使用 `_declspec(dllimport)` 以避免形式转换 (thunk)。<br /><br /> 请参阅：<br /><br /> -   [一般规则和限制](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [导入函数调用使用 __declspec （dllimport）](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport、 dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ## <a name="RenderMoreQuickly"></a> 使代码图更快呈现  
  在首次生成代码图时，Visual Studio 会将其找到的所有依赖关系都编入索引中。 这个过程可能需要一些时间，尤其是针对大型解决方案，但会提高之后的性能。 如果更改了代码，Visual Studio 只会将已更新的代码重新编入索引。 为了尽量减少代码图完成呈现所需的时间，请考虑以下内容：  

@@ -56,7 +56,7 @@ interface IManagedAddin : IUnknown
 
 1. 应用程序通过在以下注册表项下查找项来发现 VSTO 外接程序：
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<应用程序名称 >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<应用程序名称>* \Addins\\**
 
     此注册表项下的每一项都是 VSTO 外接程序的唯一 ID。 通常情况下，这是 VSTO 外接程序程序集的名称。
 
