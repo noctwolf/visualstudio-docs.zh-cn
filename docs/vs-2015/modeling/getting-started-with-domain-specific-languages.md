@@ -141,7 +141,7 @@ ms.locfileid: "65687251"
   
  可以查看模型中的树形**资源管理器**查看编辑模型时。 形状添加到关系图时，在资源管理器还显示模型元素。 可以使用资源管理器中，即使没有关系图。  
   
- 如果您不能看到的调试实例中的资源管理器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**视图**菜单中的指向**其他 Windows**，然后单击 *\<Your 语言 >***资源管理器**。  
+ 如果您不能看到的调试实例中的资源管理器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**视图**菜单中的指向**其他 Windows**，然后单击 *\<Your 语言>* **资源管理器**。  
   
 ### <a name="the-api-of-your-dsl"></a>你的 DSL 的 API  
  你的 DSL 生成的 API，可用于读取和更新 DSL 实例模型。 一个应用程序的 api 是从模型生成的文本文件。 有关详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。  
