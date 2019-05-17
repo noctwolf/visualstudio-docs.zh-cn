@@ -478,7 +478,7 @@ public interface IVsInfoBarUIEvents
 
  ![字段验证&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905年 01_FieldValidation")
 
- 如果该字段是必需的则应有水印文本指出**\<必需 >** 字段背景颜色应光和黄色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前台应为灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
+ 如果该字段是必需的则应有水印文本指出 **\<必需>** 字段背景颜色应光和黄色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前台应为灰色 (VSColor: `Environment.ControlEditRequiredHintText`):
 
  ![字段"Required"标签的验证](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905年 02_FieldValidationRequired")
 

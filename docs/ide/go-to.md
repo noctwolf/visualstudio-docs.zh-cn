@@ -56,7 +56,7 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 :-: | - | - | -
 :| ![行图标](media/gotoall-line-icon.png) | Ctrl+G | 转到指定行号
 f| ![文件图标](media/gotoall-files-icon.png) | Ctrl+1、Ctrl+F | 转到指定文件
-r| ![“最近使用的文件”图标](media/gotoall-recent-files-icon.png) | **Ctrl**+**1****Ctrl**+**R** | 转到最近访问的指定文件
+r| ![“最近使用的文件”图标](media/gotoall-recent-files-icon.png) | **Ctrl**+**1** **Ctrl**+**R** | 转到最近访问的指定文件
 T| ![类型图标](media/gotoall-types-icon.png) | Ctrl+1、Ctrl+T | 转到指定类型
 m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指定成员
 \#| ![符号图标](media/gotoall-symbols-icon.png) | Ctrl+1、Ctrl+S | 转到指定符号

@@ -4,52 +4,30 @@
   href: installing-the-visual-studio-sdk.md
 - name: 开始开发 Visual Studio 扩展
   href: starting-to-develop-visual-studio-extensions.md
-- name: 编写自己的首个扩展：Hello World
-  href: extensibility-hello-world.md
-- name: Visual Studio 2019 SDK 的新增功能
-  items:
-    - name: Visual Studio 2019 SDK 的新增功能
-      href: whats-new-visual-studio-2019-sdk.md
-    - name: 以同步方式加载了扩展
-      href: synchronously-autoloaded-extensions.md
-- name: Visual Studio 2017 SDK 的新增功能
-  items:
-    - name: Visual Studio 2017 SDK 的新增功能
-      href: what-s-new-in-the-visual-studio-2017-sdk.md
-    - name: 扩展性中的重大更改
-      href: breaking-changes-2017.md
-    - name: VSIX v3 中的 Ngen 支持
-      href: ngen-support.md
-    - name: 在扩展文件夹外进行安装
-      href: set-install-root.md
-    - name: 迁移调试器 COM 注册
-      href: migrate-debugger-com-registration.md
-    - name: 常见问题
-      href: faq-2017.md
-- name: 将扩展性项目迁移到 Visual Studio 2017
-  href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
-- name: Visual Studio 的往返扩展
-  href: how-to-roundtrip-VSIXs.md
-- name: 语言服务器协议
-  items:
-    - name: 语言服务器协议
-      href: language-server-protocol.md
-    - name: 添加语言服务器协议扩展
-      href: adding-an-lsp-extension.md
-- name: 打开文件夹
-  items:
-    - name: 打开文件夹
-      href: open-folder.md
-    - name: 工作区
-      href: workspaces.md
-    - name: 文件上下文
-      href: workspace-file-contexts.md
-    - name: 索引
-      href: workspace-indexing.md
-    - name: 语言服务
-      href: workspace-language-services.md
-    - name: 生成
-      href: workspace-build.md
+- name: Visual Studio 2015 SDK 的新增功能
+  href: what-s-new-in-the-visual-studio-2015-sdk.md
+- name: 将扩展性项目迁移到 Visual Studio 2015
+  href: how-to-migrate-extensibility-projects-to-visual-studio-2015.md
+- name: 常见问题 - 将加载项转换为 VSPackage 扩展
+  href: faq-converting-add-ins-to-vspackage-extensions.md
+- name: Visual Studio 用户体验指南
+  href: ux-guidelines/visual-studio-user-experience-guidelines.md
+- name: 解决 DPI 问题
+  href: addressing-dpi-issues2.md
+- name: 映像服务和目录
+  href: image-service-and-catalog.md
+- name: 在托管代码中管理多个线程
+  href: managing-multiple-threads-in-managed-code.md
+- name: 扩展连接的服务
+  href: extending-connected-services.md
+- name: 深入探究 Visual Studio SDK
+  href: internals/inside-the-visual-studio-sdk.md
+- name: 支持 Visual Studio SDK
+  href: support-for-the-visual-studio-sdk.md
+- name: Visual Studio 的扩展性
+  href: extensibility-in-visual-studio.md
+- name: 启用 Azure SDK
+  href: enabling-the-azure-sdk.md
 - name: 扩展菜单和命令
   items:
     - name: 扩展菜单和命令
@@ -136,45 +114,43 @@
           href: language-service-and-editor-extension-points.md
         - name: 编辑器导入
           href: editor-imports.md
-        - name: 支持 EditorConfig
-          href: supporting-editorconfig.md
-        - name: 演练：将内容类型链接到文件扩展名
+        - name: 将内容类型链接到文件扩展名
           href: walkthrough-linking-a-content-type-to-a-file-name-extension.md
-        - name: 演练：创建边缘字形
+        - name: 创建边缘字形
           href: walkthrough-creating-a-margin-glyph.md
-        - name: 演练：自定义文本视图
+        - name: 自定义文本视图
           href: walkthrough-customizing-the-text-view.md
-        - name: 演练：创建视图修饰、命令和设置（列参考线）
+        - name: 创建视图修饰、命令和设置（列参考线）
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
-        - name: 演练：突出显示文本
+        - name: 突出显示文本
           href: walkthrough-highlighting-text.md
-        - name: 演练：大纲显示
+        - name: 大纲显示
           href: walkthrough-outlining.md
-        - name: 演练：显示匹配的括号
+        - name: 显示匹配的括号
           href: walkthrough-displaying-matching-braces.md
-        - name: 演练：显示 QuickInfo 工具提示
+        - name: 显示 QuickInfo 工具提示
           href: walkthrough-displaying-quickinfo-tooltips.md
-        - name: 演练：显示签名帮助
+        - name: 显示签名帮助
           href: walkthrough-displaying-signature-help.md
-        - name: 演练：显示语句完成
+        - name: 显示语句完成
           href: walkthrough-displaying-statement-completion.md
-        - name: 演练：实现代码片段
+        - name: 实现代码片段
           href: walkthrough-implementing-code-snippets.md
-        - name: 演练：显示灯泡建议
+        - name: 显示灯泡建议
           href: walkthrough-displaying-light-bulb-suggestions.md
-        - name: 演练：在编辑器扩展中使用 Shell 命令
+        - name: 在编辑器扩展中使用 Shell 命令
           href: walkthrough-using-a-shell-command-with-an-editor-extension.md
-        - name: 演练：将快捷键与编辑器扩展结合使用
+        - name: 将快捷键与编辑器扩展结合使用
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
-        - name: 演练：通过编辑器扩展访问 DTE 对象
+        - name: 通过编辑器扩展访问 DTE 对象
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
     - name: 创建自定义编辑器和设计器
       items:
         - name: 创建自定义编辑器和设计器
           href: creating-custom-editors-and-designers.md
-        - name: 演练：创建自定义编辑器
+        - name: 创建自定义编辑器
           href: walkthrough-creating-a-custom-editor.md
-        - name: 演练：在自定义编辑器中添加功能
+        - name: 在自定义编辑器中添加功能
           href: walkthrough-adding-features-to-a-custom-editor.md
         - name: 设计器初始化和元数据配置
           href: designer-initialization-and-metadata-configuration.md
@@ -202,8 +178,6 @@
               href: how-to-open-standard-editors.md
             - name: 打开开放文档的编辑器
               href: how-to-open-editors-for-open-documents.md
-        - name: XAML 设计器扩展性迁移指南
-          href: xaml-designer-extensibility-migration.md
 - name: 扩展项目
   items:
     - name: 扩展项目
@@ -236,10 +210,6 @@
   items:
     - name: 创建自定义项目和项模板
       href: creating-custom-project-and-item-templates.md
-    - name: 升级 Visual Studio 2017 的自定义项目和项模板
-      href: upgrading-custom-project-and-item-templates-for-visual-studio-2017.md
-    - name: 模板发现疑难解答
-      href: troubleshooting-template-discovery.md
     - name: 使用向导来处理项目模板
       href: how-to-use-wizards-with-project-templates.md
     - name: Visual Studio 模板架构参考
@@ -252,10 +222,8 @@
           href: assembly-element-visual-studio-templates.md
         - name: Assembly 元素（Visual Studio 模板向导扩展）
           href: assembly-element-visual-studio-template-wizard-extension.md
-        - name: BuildOnLoad 特性和元素（Visual Studio 模板）
-          href: buildonload-visual-studio-templates.md
-        - name: BuildProjectOnload 元素（Visual Studio 模板）
-          href: buildprojectonload-element-visual-studio-templates.md
+        - name: BuildProjectOnLoad（Visual Studio 模板）
+          href: buildprojectonload-visual-studio-templates.md
         - name: CreateInPlace（Visual Studio 模板）
           href: createinplace-visual-studio-templates.md
         - name: CreateNewFolder 元素（Visual Studio 模板）
@@ -318,10 +286,6 @@
           href: references-element-visual-studio-templates.md
         - name: RequiredFrameworkVersion 元素（Visual Studio 模板）
           href: requiredframeworkversion-element-visual-studio-templates.md
-        - name: RequiredPlatformVersion 元素（Visual Studio 模板）
-          href: requiredplatformversion-element-visual-studio-templates.md
-        - name: SDKReference 元素（Visual Studio 模板）
-          href: sdkreference-element-visual-studio-templates.md
         - name: ShowByDefault（Visual Studio 模板）
           href: showbydefault-visual-studio-templates.md
         - name: SolutionFolder 元素（Visual Studio 模板）
@@ -334,8 +298,6 @@
           href: supportslanguagedropdown-element-visual-studio-templates.md
         - name: SupportsMasterPage 元素（Visual Studio 模板）
           href: supportsmasterpage-element-visual-studio-templates.md
-        - name: TargetPlatformName 元素（Visual Studio 模板）
-          href: targetplatformname-element-visual-studio-templates.md
         - name: TemplateContent 元素（Visual Studio 模板）
           href: templatecontent-element-visual-studio-templates.md
         - name: TemplateData 元素（Visual Studio 模板）
@@ -350,8 +312,14 @@
           href: wizarddata-element-visual-studio-templates.md
         - name: WizardExtension 元素（Visual Studio 模板）
           href: wizardextension-element-visual-studio-templates.md
-    - name: Visual Studio 模板清单架构参考
-      href: visual-studio-template-manifest-schema-reference.md
+        - name: BuildProjectOnload 元素（Visual Studio 模板）
+          href: buildprojectonload-element-visual-studio-templates.md
+        - name: RequiredPlatformVersion 元素（Visual Studio 模板）
+          href: requiredplatformversion-element-visual-studio-templates.md
+        - name: SDKReference 元素（Visual Studio 模板）
+          href: sdkreference-element-visual-studio-templates.md
+        - name: TargetPlatformName 元素（Visual Studio 模板）
+          href: targetplatformname-element-visual-studio-templates.md
 - name: 扩展用户设置和选项
   items:
     - name: 扩展用户设置和选项
@@ -390,73 +358,21 @@
       items:
         - name: 创建自定义起始页
           href: creating-a-custom-start-page.md
-        - name: 演练：将自定义 XAML 添加到起始页
+        - name: 将自定义 XAML 添加到起始页
           href: walkthrough-adding-custom-xaml-to-the-start-page.md
         - name: 将用户控件添加到起始页
           href: adding-user-control-to-the-start-page.md
         - name: 将 Visual Studio 命令添加到起始页
           href: adding-visual-studio-commands-to-a-start-page.md
-        - name: 演练：将用户设置保存在起始页上
+        - name: 将用户设置保存在起始页上
           href: walkthrough-saving-user-settings-on-a-start-page.md
         - name: 部署自定义起始页
           href: deploying-custom-start-pages.md
     - name: 使用活动日志
       href: how-to-use-the-activity-log.md
-- name: Visual Studio C++ 项目扩展性
-  href: visual-cpp-project-extensibility.md
-- name: Visual Studio 用户体验指南
+- name: 使用并提供服务
   items:
-    - name: Visual Studio 用户体验指南
-      href: ux-guidelines/visual-studio-user-experience-guidelines.md
-    - name: UX 基础知识
-      href: ux-guidelines/ux-essentials-for-visual-studio.md
-    - name: 字体和格式设置
-      href: ux-guidelines/fonts-and-formatting-for-visual-studio.md
-    - name: 颜色和样式
-      items:
-        - name: 颜色和样式
-          href: ux-guidelines/colors-and-styling-for-visual-studio.md
-        - name: 共享颜色
-          href: ux-guidelines/shared-colors-for-visual-studio.md
-        - name: 颜色值参考
-          href: ux-guidelines/color-value-reference-for-visual-studio.md
-    - name: 图像和图标
-      items:
-        - name: 图像和图标
-          href: ux-guidelines/images-and-icons-for-visual-studio.md
-        - name: 可视语言字典
-          href: ux-guidelines/visual-language-dictionary-for-visual-studio.md
-    - name: 菜单和命令
-      href: ux-guidelines/menus-and-commands-for-visual-studio.md
-    - name: 交互模式
-      items:
-        - name: 交互模式
-          href: ux-guidelines/interaction-patterns-for-visual-studio.md
-        - name: 应用程序模式
-          href: ux-guidelines/application-patterns-for-visual-studio.md
-        - name: 常见控件模式
-          href: ux-guidelines/common-control-patterns-for-visual-studio.md
-        - name: 复合模式
-          href: ux-guidelines/composite-patterns-for-visual-studio.md
-    - name: UI 文本和帮助
-      href: ux-guidelines/ui-text-and-help-for-visual-studio.md
-    - name: 对话框布局
-      href: ux-guidelines/layout-for-visual-studio.md
-    - name: 通知和进度
-      href: ux-guidelines/notifications-and-progress-for-visual-studio.md
-    - name: 动画
-      href: ux-guidelines/animations-for-visual-studio.md
-    - name: 评估工具
-      href: ux-guidelines/evaluation-tools-for-visual-studio.md
-    - name: 按监视器感知支持
-      href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: 解决 DPI 问题
-  href: addressing-dpi-issues2.md
-- name: 映像服务和目录
-  href: image-service-and-catalog.md
-- name: 使用和提供服务
-  items:
-    - name: 使用和提供服务
+    - name: 使用并提供服务
       href: using-and-providing-services.md
     - name: 获取服务
       href: how-to-get-a-service.md
@@ -466,9 +382,9 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: 服务疑难解答
       href: how-to-troubleshoot-services.md
-- name: 管理 VSPackage
+- name: 管理 VSPackages
   items:
-    - name: 管理 VSPackage
+    - name: 管理 VSPackages
       href: managing-vspackages.md
     - name: 实验实例
       href: the-experimental-instance.md
@@ -476,34 +392,62 @@
       href: registering-and-unregistering-vspackages.md
     - name: 加载 VSPackages
       href: loading-vspackages.md
-    - name: 在托管代码中管理多个线程
-      href: managing-multiple-threads-in-managed-code.md
     - name: 在后台使用 AsyncPackage 加载 VSPackage
       href: how-to-use-asyncpackage-to-load-vspackages-in-the-background.md
     - name: 使用 Visual Studio 扩展的基于规则的 UI 上下文
       href: how-to-use-rule-based-ui-context-for-visual-studio-extensions.md
-    - name: 诊断扩展性能
-      href: how-to-diagnose-extension-performance.md
-    - name: 诊断由扩展引起的 UI 延迟
-      href: how-to-diagnose-ui-delays-caused-by-extensions.md
     - name: VSPackages 故障排除
       href: troubleshooting-vspackages.md
-- name: Shell（集成或独立）
-  href: 'https://vspartner.com/pages/vsshells'
-- name: 提供 Visual Studio 扩展
+- name: Shell（独立或集成）
   items:
-    - name: 提供 Visual Studio 扩展
+    - name: Shell（独立或集成）
+      href: shell-isolated-or-integrated.md
+    - name: Visual Studio 独立 Shell
+      items:
+        - name: Visual Studio 独立 Shell
+          href: visual-studio-isolated-shell.md
+        - name: 创建基本的独立 Shell 应用程序
+          href: walkthrough-creating-a-basic-isolated-shell-application.md
+        - name: 自定义独立 Shell
+          href: customizing-the-isolated-shell.md
+        - name: 扩展独立 Shell
+          href: extending-the-isolated-shell.md
+        - name: 独立 Shell 的元素
+          items:
+            - name: 独立 Shell 的元素
+              href: elements-of-the-isolated-shell.md
+            - name: .Vsct 文件
+              href: modifying-the-isolated-shell-by-using-the-dot-vsct-file.md
+            - name: .Pkgundef 文件
+              href: modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md
+            - name: .Pkgdef 文件
+              href: modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md
+            - name: .Pkgdef 和 .Pkgundef 文件中使用的替换字符串
+              href: substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files.md
+            - name: 独立 Shell 入口点参数 (C++)
+              href: isolated-shell-entry-point-parameters-cpp.md
+            - name: Visual Studio 功能的包 GUID
+              href: package-guids-of-visual-studio-features.md
+    - name: Visual Studio Shell（集成）
+      href: visual-studio-shell-integrated.md
+    - name: 分发独立 Shell 应用程序
+      items:
+        - name: 分发独立 Shell 应用程序
+          href: distributing-isolated-shell-applications.md
+        - name: 安装独立 Shell 应用程序
+          href: installing-an-isolated-shell-application.md
+        - name: 独立 Shell 应用程序的服务指南
+          href: servicing-guidelines-for-isolated-shell-applications.md
+- name: 传送 Visual Studio 扩展
+  items:
+    - name: 传送 Visual Studio 扩展
       href: shipping-visual-studio-extensions.md
     - name: VSIX 项目模板
       href: vsix-project-template.md
     - name: VSIX 项目模板入门
       href: getting-started-with-the-vsix-project-template.md
-    - name: 演练：发布 Visual Studio 扩展
+    - name: 发布 Visual Studio 扩展
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 演练：通过命令行发布 Visual Studio 扩展
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
-    - name: 演练：创建扩展包
-      href: walkthough-create-extension-pack.md
     - name: 将依赖项添加到 VSIX 包
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: VSIX 包的剖析
@@ -520,9 +464,23 @@
       items:
         - name: 本地化 VSIX 包
           href: localizing-vsix-packages.md
-        - name: VSIX 语言包架构 2.0 参考
-          href: vsix-language-pack-schema-2-0-reference.md
-    - name: 更新 Visual Studio 扩展
+        - name: VSX 语言包架构参考
+          items:
+            - name: VSX 语言包架构参考
+              href: vsx-language-pack-schema-reference.md
+            - name: VSIX LanguagePack 元素
+              items:
+                - name: VSIX LanguagePack 元素
+                  href: vsixlanguagepack-element-vsix-language-pack-schema.md
+                - name: LocalizedName 元素
+                  href: localizedname-element-vsix-language-pack-schema.md
+                - name: LocalizedDescription 元素
+                  href: localizeddescription-element-vsix-language-pack-schema.md
+                - name: MoreInfoURL 元素
+                  href: moreinfourl-element-vsix-language-pack-schema.md
+                - name: License 元素
+                  href: license-element-vsix-language-pack-schema.md
+    - name: 更新扩展
       href: how-to-update-a-visual-studio-extension.md
     - name: 准备 Windows Installer 部署的扩展
       href: preparing-extensions-for-windows-installer-deployment.md
@@ -554,14 +512,124 @@
               href: registering-verbs-for-file-name-extensions.md
             - name: 管理并行文件关联
               href: managing-side-by-side-file-associations.md
-    - name: 找到 Visual Studio
-      href: locating-visual-studio.md
-    - name: 使用 DTE 启动 Visual Studio
-      href: launch-visual-studio-dte.md
-- name: 深入探究 Visual Studio SDK
-  href: internals/toc.yml
-- name: 支持 Visual Studio SDK
-  href: support-for-the-visual-studio-sdk.md
+- name: 存档
+  items:
+    - name: 存档
+      href: archive.md
+    - name: 编辑器中的旧接口
+      items:
+        - name: 编辑器中的旧接口
+          href: legacy-interfaces-in-the-editor.md
+        - name: 根据编辑器调整旧代码
+          href: adapting-legacy-code-to-the-editor.md
+        - name: 编辑器适配器的新增或更改行为
+          href: new-or-changed-behavior-with-editor-adapters.md
+        - name: 核心编辑器内
+          href: inside-the-core-editor.md
+        - name: 使用旧 API 实例化核心编辑器
+          href: instantiating-the-core-editor-by-using-the-legacy-api.md
+        - name: 编辑器工厂
+          href: editor-factories.md
+        - name: 注册编辑器文件类型
+          href: how-to-register-editor-file-types.md
+        - name: 创建核心编辑器并注册编辑器文件类型
+          href: walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md
+        - name: 为编辑器提供上下文
+          href: how-to-provide-context-for-editors.md
+        - name: 语言服务和核心编辑器
+          items:
+            - name: 语言服务和核心编辑器
+              href: language-services-and-the-core-editor.md
+            - name: 使用旧版 API 提供语言服务上下文
+              href: providing-a-language-service-context-by-using-the-legacy-api.md
+            - name: IntelliSense 托管
+              href: intellisense-hosting.md
+            - name: 包含的语言
+              href: contained-languages.md
+        - name: 使用旧版 API 访问文本缓冲区
+          items:
+            - name: 使用旧版 API 访问文本缓冲区
+              href: accessing-the-text-buffer-by-using-the-legacy-api.md
+            - name: 旧版 API 中的文本缓冲区事件
+              href: text-buffer-events-in-the-legacy-api.md
+            - name: 使用旧 API 注册文本缓冲区事件
+              href: how-to-register-for-text-buffer-events-with-the-legacy-api.md
+        - name: 使用旧版 API 访问文本视图
+          items:
+            - name: 使用旧版 API 访问文本视图
+              href: accessing-thetext-view-by-using-the-legacy-api.md
+            - name: 使用旧版 API 更改视图设置
+              href: changing-view-settings-by-using-the-legacy-api.md
+            - name: 使用文本管理器监视全局设置
+              href: using-the-text-manager-to-monitor-global-settings.md
+        - name: 使用旧版 API 自定义代码窗口
+          items:
+            - name: 使用旧版 API 自定义代码窗口
+              href: customizing-code-windows-by-using-the-legacy-api.md
+            - name: 在编辑器中托管另一个编辑器
+              href: how-to-host-an-editor-in-another-editor.md
+            - name: 在编辑器失去焦点时触发事件
+              href: how-to-fire-events-when-the-editor-loses-focus.md
+        - name: 使用旧版 API 访问文本层
+          href: accessing-text-layers-by-using-the-legacy-api.md
+        - name: 对旧版 API 使用文本标记
+          items:
+            - name: 对旧版 API 使用文本标记
+              href: using-text-markers-with-the-legacy-api.md
+            - name: 添加标准文本标记
+              href: how-to-add-standard-text-markers.md
+            - name: 实现错误标记
+              href: how-to-implement-error-markers.md
+            - name: 创建自定义文本标记
+              href: how-to-create-custom-text-markers.md
+            - name: 使用文本标记
+              href: how-to-use-text-markers.md
+        - name: 使用旧版 API 自定义编辑器控件和菜单
+          items:
+            - name: 使用旧版 API 自定义编辑器控件和菜单
+              href: customizing-editor-controls-and-menus-by-using-the-legacy-api.md
+            - name: 下拉栏
+              href: drop-down-bar.md
+            - name: 命令处理
+              href: command-handling.md
+            - name: 上下文菜单
+              href: context-menus.md
+            - name: 更新状态栏
+              href: how-to-update-the-status-bar.md
+        - name: 使用旧版 API 管理撤消和恢复
+          items:
+            - name: 使用旧版 API 管理撤消和恢复
+              href: managing-undo-and-redo-by-using-the-legacy-api.md
+            - name: 实现撤消管理
+              href: how-to-implement-undo-management.md
+            - name: 清除撤消堆栈
+              href: how-to-clear-the-undo-stack.md
+            - name: 使用链接的撤消管理
+              href: how-to-use-linked-undo-management.md
+        - name: 实现查找和替换机制
+          href: how-to-implement-the-find-and-replace-mechanism.md
+        - name: 禁止显示文件更改通知
+          href: how-to-suppress-file-change-notifications.md
+        - name: 使用字体和颜色
+          items:
+            - name: 使用字体和颜色
+              href: using-fonts-and-colors.md
+            - name: 字体和颜色概述
+              href: font-and-color-overview.md
+            - name: 获取文本着色的字体和颜色信息
+              href: getting-font-and-color-information-for-text-colorization.md
+            - name: 访问存储的字体和颜色设置
+              href: accessing-stored-font-and-color-settings.md
+            - name: 实现自定义类别和显示项
+              href: implementing-custom-categories-and-display-items.md
+            - name: 访问内置字体和配色方案
+              href: how-to-access-the-built-in-fonts-and-color-scheme.md
+    - name: 注册表中的工具窗口
+      items:
+        - name: 注册表中的工具窗口
+          href: tool-windows-in-the-registry.md
+        - name: 工具窗口显示配置
+          href: tool-window-display-configuration.md
 - name: Visual Studio SDK 引用
   items:
     - name: Visual Studio SDK 引用
@@ -662,11 +730,11 @@
                   href: guidsymbol-element.md
                 - name: IDSymbol 元素
                   href: idsymbol-element.md
-        - name: VSCT XML 架构条件属性
+        - name: 条件属性
           href: vsct-xml-schema-conditional-attributes.md
-    - name: Visual Studio SDK 中的 GUID 和常量
+    - name: GUID 和常量
       items:
-        - name: Visual Studio SDK 中的 GUID 和常量
+        - name: GUID 和常量
           href: guids-and-constants-in-the-visual-studio-sdk.md
         - name: IDE GUID
           href: ide-guids.md
@@ -682,81 +750,81 @@
           items:
             - name: 源代码管理插件 API 函数
               href: source-control-plug-in-api-functions.md
-            - name: SccAdd 函数
+            - name: SccAdd
               href: sccadd-function.md
-            - name: SccAddFilesFromSCC 函数
+            - name: SccAddFilesFromSCC
               href: sccaddfilesfromscc-function.md
-            - name: SccAddFromScc 函数
+            - name: SccAddFromScc
               href: sccaddfromscc-function.md
-            - name: SccBackgroundGet 函数
+            - name: SccBackgroundGet
               href: sccbackgroundget-function.md
-            - name: SccBeginBatch 函数
+            - name: SccBeginBatch
               href: sccbeginbatch-function.md
-            - name: SccCheckin 函数
+            - name: SccCheckin
               href: scccheckin-function.md
-            - name: SccCheckout 函数
+            - name: SccCheckout
               href: scccheckout-function.md
-            - name: SccCloseProject 函数
+            - name: SccCloseProject
               href: scccloseproject-function.md
-            - name: SccCreateSubProject 函数
+            - name: SccCreateSubProject
               href: scccreatesubproject-function.md
-            - name: SccDiff 函数
+            - name: SccDiff
               href: sccdiff-function.md
-            - name: SccDirDiff 函数
+            - name: SccDirDiff
               href: sccdirdiff-function.md
-            - name: SccDirQueryInfo 函数
+            - name: SccDirQueryInfo
               href: sccdirqueryinfo-function.md
-            - name: SccEndBatch 函数
+            - name: SccEndBatch
               href: sccendbatch-function.md
-            - name: SccEnumChangedFiles 函数
+            - name: SccEnumChangedFiles
               href: sccenumchangedfiles-function.md
-            - name: SccGet 函数
+            - name: SccGet
               href: sccget-function.md
-            - name: SccGetCommandOptions 函数
+            - name: SccGetCommandOptions
               href: sccgetcommandoptions-function.md
-            - name: SccGetEvents 函数
+            - name: SccGetEvents
               href: sccgetevents-function.md
-            - name: SccGetExtendedCapabilities 函数
+            - name: SccGetExtendedCapabilities
               href: sccgetextendedcapabilities-function.md
-            - name: SccGetParentProjectPath 函数
+            - name: SccGetParentProjectPath
               href: sccgetparentprojectpath-function.md
-            - name: SccGetProjPath 函数
+            - name: SccGetProjPath
               href: sccgetprojpath-function.md
-            - name: SccGetUserOption 函数
+            - name: SccGetUserOption
               href: sccgetuseroption-function.md
-            - name: SccGetVersion 函数
+            - name: SccGetVersion
               href: sccgetversion-function.md
-            - name: SccHistory 函数
+            - name: SccHistory
               href: scchistory-function.md
-            - name: SccInitialize 函数
+            - name: SccInitialize
               href: sccinitialize-function.md
-            - name: SccIsMultiCheckoutEnabled 函数
+            - name: SccIsMultiCheckoutEnabled
               href: sccismulticheckoutenabled-function.md
-            - name: SccOpenProject 函数
+            - name: SccOpenProject
               href: sccopenproject-function.md
-            - name: SccPopulateDirList 函数
+            - name: SccPopulateDirList
               href: sccpopulatedirlist-function.md
-            - name: SccPopulateList 函数
+            - name: SccPopulateList
               href: sccpopulatelist-function.md
-            - name: SccProperties 函数
+            - name: SccProperties
               href: sccproperties-function.md
-            - name: SccQueryChanges 函数
+            - name: SccQueryChanges
               href: sccquerychanges-function.md
-            - name: SccQueryInfo 函数
+            - name: SccQueryInfo
               href: sccqueryinfo-function.md
-            - name: SccRemove 函数
+            - name: SccRemove
               href: sccremove-function.md
-            - name: SccRename 函数
+            - name: SccRename
               href: sccrename-function.md
-            - name: SccRunScc 函数
+            - name: SccRunScc
               href: sccrunscc-function.md
-            - name: SccSetOption 函数
+            - name: SccSetOption
               href: sccsetoption-function.md
-            - name: SccUncheckout 函数
+            - name: SccUncheckout
               href: sccuncheckout-function.md
-            - name: SccUninitialize 函数
+            - name: SccUninitialize
               href: sccuninitialize-function.md
-            - name: SccWillCreateSccFile 函数
+            - name: SccWillCreateSccFile
               href: sccwillcreatesccfile-function.md
         - name: 通过 IDE 实现的回叫函数
           items:
@@ -776,13 +844,13 @@
           items:
             - name: 枚举数
               href: enumerators.md
-            - name: 命令代码枚举器
+            - name: 命令代码
               href: command-code-enumerator.md
-            - name: 消息枚举器
+            - name: 消息
               href: message-enumerator.md
-            - name: 文件状态代码枚举器
+            - name: 文件状态代码
               href: file-status-code-enumerator.md
-            - name: 目录状态代码枚举器
+            - name: 目录状态代码
               href: directory-status-code-enumerator.md
         - name: 功能标志
           href: capability-flags.md
@@ -798,13 +866,13 @@
           href: best-practices-for-implementing-a-source-control-plug-in.md
         - name: 字符串长度限制
           href: restrictions-on-string-lengths.md
-        - name: 源代码管理插件词汇表
+        - name: 词汇表
           href: source-control-plug-in-glossary.md
         - name: 关闭源代码管理插件的兼容性警告
           href: how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md
-    - name: 命令行开关 (Visual Studio SDK)
+    - name: 命令行开关
       items:
-        - name: 命令行开关 (Visual Studio SDK)
+        - name: 命令行开关
           href: command-line-switches-visual-studio-sdk.md
         - name: VSPackage 开发的 Devenv 命令行开关
           href: devenv-command-line-switches-for-vspackage-development.md
@@ -824,17 +892,17 @@
           href: vstextbuffer-object.md
         - name: VSTextView 对象
           href: vstextview-object.md
-    - name: Visual Studio SDK 词汇表
+    - name: 词汇表
       href: visual-studio-sdk-glossary.md
 - name: 创建软件开发工具包
   items:
     - name: 创建软件开发工具包
       href: creating-a-software-development-kit.md
-    - name: '演练：使用 C# 或 Visual Basic 创建 SDK'
+    - name: '使用 C# 或 Visual Basic 创建 SDK'
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
-    - name: 演练：使用 C++ 创建 SDK
+    - name: 使用 C++ 创建 SDK
       href: walkthrough-creating-an-sdk-using-cpp.md
-    - name: 演练：使用 JavaScript 创建 SDK
+    - name: 使用 JavaScript 创建 SDK
       href: walkthrough-creating-an-sdk-using-javascript.md
 - name: .NET 编译器平台（“Roslyn”）扩展性
   items:
@@ -842,7 +910,5 @@
       href: dotnet-compiler-platform-roslyn-extensibility.md
     - name: Roslyn 分析器入门
       href: getting-started-with-roslyn-analyzers.md
-    - name: Roslyn 分析器和 ImmutableArrays 的代码识别库
+    - name: 现实世界 Roslyn 分析器
       href: roslyn-analyzers-and-code-aware-library-for-immutablearrays.md
-    - name: Roslyn 包版本参考
-      href: roslyn-version-support.md

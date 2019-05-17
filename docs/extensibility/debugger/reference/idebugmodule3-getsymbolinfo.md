@@ -83,9 +83,9 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 }
 ```
 
-**c:\symbols\user32.pdb...找不到文件。** 
- **c:\winnt\symbols\user32.pdb...版本不匹配。** 
- ** \\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...加载符号。**
+**c:\symbols\user32.pdb...找不到文件。**
+**c:\winnt\symbols\user32.pdb...版本不匹配。**
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb...加载符号。**
 
 ## <a name="see-also"></a>请参阅
 
