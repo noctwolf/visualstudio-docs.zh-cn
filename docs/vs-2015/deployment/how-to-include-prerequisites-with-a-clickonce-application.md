@@ -34,10 +34,10 @@ ms.locfileid: "65697659"
   
 3. 在记事本中，打开“Package.xml”文件。  
   
-4. 找到**名称**元素，其中包含**http://go.microsoft.com/fwlink**，并复制 URL。 包括“LinkID”部分。  
+4. 找到**名称**元素，其中包含 **http://go.microsoft.com/fwlink** ，并复制 URL。 包括“LinkID”部分。  
   
     > [!NOTE]
-    > 如果没有**名称**元素包含**http://go.microsoft.com/fwlink**，打开**Product.xml**文件的系统必备组件的根文件夹中，找到**fwlink**字符串。  
+    > 如果没有**名称**元素包含 **http://go.microsoft.com/fwlink** ，打开 **Product.xml** 文件的系统必备组件的根文件夹中，找到 **fwlink** 字符串。  
   
     > [!IMPORTANT]
     > 某些系统必备组件具有多个安装程序包（例如，用于 32 位或 64 位系统）。 如果多个“名称”元素包含“fwlink”，则必须对每个元素重复剩余步骤。  
