@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5391c940cc6d9eef7a6541a855541bb05f60d1b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4517fc0d0dbfedc59a5a621f894d7e1d77b35c38
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793696"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842171"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055:URI 返回值不应是字符串
 
@@ -56,7 +56,7 @@ ms.locfileid: "62793696"
 
 如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
 
-```
+```ini
 dotnet_code_quality.ca1055.api_surface = private, internal
 ```
 

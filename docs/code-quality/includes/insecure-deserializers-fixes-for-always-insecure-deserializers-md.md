@@ -4,11 +4,11 @@ ms.author: paulming
 ms.date: 05/01/2019
 ms.topic: include
 ms.openlocfilehash: bc423f10cfbae0b7a0cdaedb72f6891a0e12d228
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135415"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65840812"
 ---
 - 如果可能，而是使用安全的序列化程序和**不允许攻击者能够指定任意类型进行反序列化**。 一些更安全的序列化程序包括：
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dbafb6c05a3dba72d1614d6a955e20030a50c6ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541163"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841335"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007：查看公开重定向漏洞的代码
 
@@ -40,7 +40,7 @@ ms.locfileid: "62541163"
 > 此规则不能跨程序集跟踪数据。 例如，如果一个程序集读取 HTTP 请求输入，然后将其传递给另一个程序集使用的 HTTP 重定向响应，此规则不会生成一条警告。
 
 > [!NOTE]
-> 没有可配置限制深度此规则将分析数据流，在方法调用之间。 请参阅[分析器的配置](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)了解用于配置中的限制`.editorconfig`文件。
+> 没有可配置限制深度此规则将分析数据流，在方法调用之间。 请参阅[分析器的配置](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)了解用于某个 EditorConfig 文件中配置限制。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 

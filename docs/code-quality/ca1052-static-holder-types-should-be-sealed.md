@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778588"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842089"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:应密封静态容器类型
 
@@ -56,7 +56,7 @@ ms.locfileid: "62778588"
 
 如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
 
-```
+```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7a2165b9b921865ce1fd45017c996e48917d12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c77678b1f09b1cf51a63f260252ddeaf9321fd5
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779047"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842071"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051:不要声明可见实例字段
 
@@ -54,7 +54,7 @@ ms.locfileid: "62779047"
 
 如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
 
-```
+```ini
 dotnet_code_quality.ca1051.api_surface = private, internal
 ```
 

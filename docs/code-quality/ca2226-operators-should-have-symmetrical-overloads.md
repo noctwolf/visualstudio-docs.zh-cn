@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a903fbd3b01523a86302b58f8e9a74917312566c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73f11638d8ba5ca373c8fb1479be8d862e62b247
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541726"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841416"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226:运算符应有对称重载
 
@@ -54,7 +54,7 @@ C# 编译器会发出有关此规则冲突错误。
 
 如果您运行此规则与[FxCop 分析器](install-fxcop-analyzers.md)（而不是通过静态代码分析），你可以配置的哪些部分在基本代码，以运行此规则，基于其可访问性。 例如，若要指定该规则应运行仅对非公共 API 外围应用，请到您的项目中的.editorconfig 文件添加以下键-值对：
 
-```
+```ini
 dotnet_code_quality.ca2226.api_surface = private, internal
 ```
 
