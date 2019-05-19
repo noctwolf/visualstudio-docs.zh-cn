@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 69f4f4c2b55670d510652b44a203b9f0eafcc53a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62904332"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846424"
 ---
 
 1. 关闭并重新打开 IIS 管理控制台以在 UI 中显示更新的配置选项。

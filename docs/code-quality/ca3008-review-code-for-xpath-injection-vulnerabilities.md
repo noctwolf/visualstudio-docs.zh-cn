@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806443"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841541"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008：查看 XPath 注入漏洞的代码
 
@@ -32,7 +32,7 @@ ms.locfileid: "62806443"
 
 ## <a name="rule-description"></a>规则说明
 
-在使用时不受信任的输入，留意 XPath 注入式攻击。 构造使用不受信任的输入的 XPath 查询可能会允许攻击者恶意操作的查询返回意外的结果，并可能是公开的查询的 XML 内容。 
+在使用时不受信任的输入，留意 XPath 注入式攻击。 构造使用不受信任的输入的 XPath 查询可能会允许攻击者恶意操作的查询返回意外的结果，并可能是公开的查询的 XML 内容。
 
 此规则会尝试查找来自 HTTP 请求到达的 XPath 表达式的输入。
 
@@ -40,7 +40,7 @@ ms.locfileid: "62806443"
 > 此规则不能跨程序集跟踪数据。 例如，如果一个程序集读取 HTTP 请求输入，然后将其传递给另一个程序集执行 XPath 查询，此规则不会生成一条警告。
 
 > [!NOTE]
-> 没有可配置限制深度此规则将分析数据流，在方法调用之间。 请参阅[分析器的配置](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)了解用于配置中的限制`.editorconfig`文件。
+> 没有可配置限制深度此规则将分析数据流，在方法调用之间。 请参阅[分析器的配置](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis)了解用于某个 EditorConfig 文件中配置限制。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

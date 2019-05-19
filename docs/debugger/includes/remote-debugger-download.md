@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 22db75783734a695ded937d8e6b93431568acd5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902850"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839724"
 ---
 在远程设备或服务器，你想要调试，而非 Visual Studio 计算机，下载并安装远程工具的正确版本从下表中的链接。
 
@@ -24,7 +24,7 @@ ms.locfileid: "62902850"
 
 |Version|链接|说明|
 |-|-|-|
-|Visual Studio 2019|[远程工具](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2019)|与所有 Visual Studio 2019 版本兼容。 下载匹配您设备的操作系统 (x 86、 x64、 或 ARM64） 的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)下载远程工具的帮助。|
+|Visual Studio 2019|[远程工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|与所有 Visual Studio 2019 版本兼容。 下载匹配您设备的操作系统 (x 86、 x64、 或 ARM64） 的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)下载远程工具的帮助。|
 |Visual Studio 2017|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|与所有 Visual Studio 2017 版本兼容。 下载匹配您设备的操作系统 (x 86、 x64、 或 ARM64） 的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)下载远程工具的帮助。|
 |Visual Studio 2015|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 远程工具可从 My.VisualStudio.com。 如果系统提示，请加入免费[Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/)程序或使用 Visual Studio 订阅 id。 登录 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)下载远程工具的帮助。|
 |Visual Studio 2013|[远程工具](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|下载 Visual Studio 2013 文档中的页|

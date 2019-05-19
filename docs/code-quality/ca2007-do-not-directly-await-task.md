@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545223"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841395"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007：不直接等待任务
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 你可以配置你想要排除不与该规则返回值的异步方法。 若要排除这些类型的方法，请将以下键-值对添加到你的项目中的.editorconfig 文件：
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 此外可以配置哪个输出程序集类型应用此规则。 例如，若要仅将此规则应用于生成控制台应用程序或动态链接的库 （即，不 UI 应用） 的代码，到你的项目中的.editorconfig 文件添加以下键-值对：
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 
