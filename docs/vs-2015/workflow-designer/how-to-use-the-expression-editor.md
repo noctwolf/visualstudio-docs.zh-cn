@@ -45,7 +45,7 @@ ms.locfileid: "63408385"
   
 3. 在 <xref:System.Activities.Statements.Assign> 活动的活动设计器中单击左侧表达式编辑器。  
   
-     灰色水印字符串**\<到 >** 并**\<输入 VB 表达式 >** 是默认文本字符串中的表达式编辑器<xref:System.Activities.Statements.Assign>活动。  
+     灰色水印字符串**\<到>** 并 **\<输入 VB 表达式>** 是默认文本字符串中的表达式编辑器<xref:System.Activities.Statements.Assign>活动。  
   
 4. 输入表达式。 如果您输入一个字符串，请确保在该字符串两端加上引号。 如果你选择将表达式自变量绑定到一个变量，请不要使用引号。  
   

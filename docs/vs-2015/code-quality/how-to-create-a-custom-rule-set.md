@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045650"
@@ -49,7 +49,7 @@ ms.locfileid: "60045650"
   
      \- 或 -  
   
-   - 选择**\<浏览...>** 指定的现有规则集不在列表中。  
+   - 选择 **\<浏览...>** 指定的现有规则集不在列表中。  
   
 4. 单击**打开**若要在规则集编辑器中显示的规则。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60045650"
   
 2. 上**属性**选项卡上，单击**代码分析**。  
   
-3. 选择**\<选择多个规则集...>** 从**运行此规则集**。  
+3. 选择 **\<选择多个规则集...>** 从 **运行此规则集** 。  
   
 4. 在中**添加或删除规则集**对话框中，选择规则集想要基于新的规则集，然后单击**确定**。  
   

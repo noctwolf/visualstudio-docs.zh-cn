@@ -46,7 +46,7 @@ ms.locfileid: "62993493"
 
 10. 重置 Visual Studio 实验实例。
 
-    1. 删除**\Users\\**_{名称}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**。
+    1. 删除 **\Users\\**_{名称}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp** 。
 
     2. 在 Windows 上**启动**菜单中，选择**所有程序** > **Microsoft Visual Studio 2010 SDK** > **工具**  > **重置实验实例**。
 

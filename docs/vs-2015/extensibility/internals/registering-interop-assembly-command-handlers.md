@@ -30,7 +30,7 @@ VSPackage 必须使用注册[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，�
  [命令表格式参考](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f)资源位于非托管附属 UI dll 中。  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>命令的 VSPackage 的处理程序注册  
- VSPackage 充当用户界面 (UI) 的处理程序的基于的命令需要名为后 VSPackage 的注册表项`GUID`。 此注册表项指定 VSPackage 的用户界面资源文件和文件内的菜单资源的位置。 注册表项本身位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本 >* \Menus，其中*\<版本 >* 是的版本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 9.0。  
+ VSPackage 充当用户界面 (UI) 的处理程序的基于的命令需要名为后 VSPackage 的注册表项`GUID`。 此注册表项指定 VSPackage 的用户界面资源文件和文件内的菜单资源的位置。 注册表项本身位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本>* \Menus，其中*\<版本>* 是的版本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，例如 9.0。  
   
 > [!NOTE]
 > HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]shell 进行初始化。 根路径的详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
