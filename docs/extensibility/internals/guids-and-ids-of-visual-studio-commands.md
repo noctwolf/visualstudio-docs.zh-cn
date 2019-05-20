@@ -56,7 +56,7 @@ Visual Studio SDK 的一部分安装的.vsct 文件中定义的 Visual Studio �
 
      与符号前面的字符 (&) 菜单项名称中的字符将显示为带下划线。 但是， *.vsct*文件写入在 XML 中，它使用与号 (&) 字符以指示特殊字符，并要求必须在作为拼写与号以显示 *&amp;a m p;*。 因此，在 *.vsct*文件中，**打印**命令将显示为 *&amp;a m p;打印*。
 
-- 命令，具有动态文本，如**保存**\<当前文件名\>，动态生成菜单项，例如各项**最近使用的文件**列表。
+- 命令，具有动态文本，如 **保存** \<当前文件名\>，动态生成菜单项，例如各项 **最近使用的文件** 列表。
 
      没有可靠的方法来搜索动态文本。 相反，查找所需的命令在承载的咨询的组[Guid 和 Id 的 Visual Studio 菜单](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)，并搜索该组的 ID。 如果命令定义不具备组作为其[父元素](../../extensibility/parent-element.md)，搜索*SharedCmdPlace.vsct*并*ShellCmdPlace.vsct* (或*VsDbgCmdPlace.vsct*调试器命令) 为`<CommandPlacement>`设置命令的父级的元素。 *SharedCmdPlace.vsct*， *ShellCmdPlace.vsct*，和*VsDbgCmdPlace.vsct*位于*\<Visual Studio SDK 安装路径\>\VisualStudioIntegration\Common\Inc\\*文件夹。
 

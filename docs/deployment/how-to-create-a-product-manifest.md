@@ -112,7 +112,7 @@ ms.locfileid: "62928361"
     </Commands>
     ```
 
-12. 移动*C:\package*到 Visual Studio 引导程序目录的文件夹。 对于 Visual Studio 2010 中，这是*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目录。
+12. 移动*C:\package*到 Visual Studio 引导程序目录的文件夹。 对于 Visual Studio 2010 中，这是 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 目录。
 
 ## <a name="example"></a>示例
  产品清单包含自定义系统必备组件的安装说明。

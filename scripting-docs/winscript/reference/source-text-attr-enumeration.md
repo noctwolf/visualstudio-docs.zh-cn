@@ -36,7 +36,7 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 |SOURCETEXT_ATTR_KEYWORD|0x0001|字符是一个语言关键字，例如，VBScript 关键字的一部分`While`。|  
 |SOURCETEXT_ATTR_COMMENT|0x0002|字符是注释块的一部分。|  
 |SOURCETEXT_ATTR_NONSOURCE|0x0004|字符不是已编译的语言源文本的一部分。 例如，HTML 周围的脚本块。|  
-|SOURCETEXT_ATTR_OPERATOR|0x0008|字符是一个语言运算符的一部分。 例如:，算术运算符**+**。|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|字符是一个语言运算符的一部分。 例如:，算术运算符 **+** 。|  
 |SOURCETEXT_ATTR_NUMBER|0x0010|字符是一个数字常数，语言的一部分。  例如，常量 3.14159。|  
 |SOURCETEXT_ATTR_STRING|0x0020|字符是一个语言字符串常量的一部分。 例如，字符串"Hello World"。|  
 |SOURCETEXT_ATTR_FUNCTION_START|0x0040|字符指示函数块的开头|  

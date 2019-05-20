@@ -71,7 +71,7 @@ ms.locfileid: "62899735"
     </Strings>
     ```
 
-7. 复制*C:\package*到 Visual Studio 引导程序目录的文件夹。 对于 Visual Studio 2010 中，这是*\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*目录。
+7. 复制*C:\package*到 Visual Studio 引导程序目录的文件夹。 对于 Visual Studio 2010 中，这是 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 目录。
 
 ## <a name="example"></a>示例
  包清单包含特定于区域设置的信息，如错误消息、 软件许可条款和语言包。
