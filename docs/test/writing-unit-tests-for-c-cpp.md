@@ -1,18 +1,19 @@
 ---
 title: 编写适用于 C/C++ 的单元测试
-ms.date: 10/09/2018
+description: 使用各种测试框架（包括 CTest、Boost.Test 和 Google Test）在 Visual Studio 中编写 C++ 单元测试。
+ms.date: 05/06/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e78d5b983031a3589c46bbceeaeee87d125eace3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 308478bc47d62731494616a30ce320b3662de735
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945256"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461598"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -30,11 +31,11 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 除了已安装的框架，可以为要在 Visual Studio 中使用的任何框架编写自己的测试适配器。 测试适配器可以将单元测试与“测试资源管理器”窗口集成。 在 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 上提供了几个第三方适配器。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
-**Visual Studio 2017 版本 15.7 及更高版本（Professional 和 Enterprise）**
+**Visual Studio 2017 及更高版本（Professional 和 Enterprise）**
 
 C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
-**Visual Studio 2017 版本 15.5 及更高版本**
+**Visual Studio 2017 及更高版本（所有版本）**
 
 - **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它包含可通过“解决方案资源管理器”中解决方案节点上的“添加新项目”右键单击菜单添加到解决方案的项目模板，以及可通过“工具” > “选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
@@ -50,17 +51,35 @@ C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-histo
 
 以下各部分演示开始使用 C++ 单元测试的基本步骤。 基本配置对于 Microsoft 和 Google Test 框架非常相似。 Boost.Test 要求手动创建测试项目。
 
-### <a name="create-a-test-project"></a>创建测试项目
+::: moniker range="vs-2019"
+
+### <a name="create-a-test-project-in-visual-studio-2019"></a>在 Visual Studio 2019 中创建测试项目
+
+在与要测试的代码处于相同解决方案中的一个或多个测试项目中定义和运行测试。 若要向现有解决方案添加新测试项目，请右键单击解决方案资源管理器中的“解决方案”节点，然后选择“添加” > “新建项目”。 将“语言”设置为 C++ 并在搜索框中键入“测试”。 下图显示安装“使用 C++ 的桌面开发”和“UWP 开发”工作负载后可用的测试项目：
+
+![Visual Studio 2019 中的 C++ 项目](media/vs-2019/cpp-new-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+### <a name="create-a-test-project-in-visual-studio-2017"></a>在 Visual Studio 2017 中创建测试项目
 
 在与要测试的代码处于相同解决方案中的一个或多个测试项目中定义和运行测试。 若要向现有解决方案添加新测试项目，请右键单击解决方案资源管理器中的“解决方案”节点，然后选择“添加” > “新建项目”。 然后在左窗格中选择“Visual C++ 测试”，并在中心窗格中选择一种项目类型。 下图显示在安装了“使用 C++ 的桌面开发”工作负荷时可用的测试项目：
 
 ![C++ 测试项目](media/cpp-new-test-project.png)
+
+::: moniker-end
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>创建对解决方案中的其他项目的引用
 
 若要使测试代码可以访问要测试的项目中的函数，请在测试项目中添加对该项目的引用。 右键单击解决方案资源管理器中的测试项目节点，并选择“添加” > “引用”。 随后在对话框中选择要测试的项目。
 
 ![添加引用](media/cpp-add-ref-test-project.png)
+
+### <a name="link-to-object-or-library-files"></a>将测试与对象或库文件相关联
+
+如果测试代码没有导出要测试的函数，可以将输出的 .obj 或 .lib 文件添加到测试项目的依赖项中。 请参阅[将测试与对象或库文件相关联](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef)。
 
 ### <a name="add-include-directives-for-header-files"></a>为头文件添加 #include 指令
 
@@ -117,7 +136,7 @@ TEST_METHOD(TestClassInit)
 
 ## <a name="use-codelens"></a>使用 CodeLens
 
-**Visual Studio 2017 版本 15.7 及更高版本（仅 Professional 和 Enterprise 版本）**
+**Visual Studio 2017 及更高版本（Professional 和 Enterprise 版）**
 
 通过 [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)，无需离开代码编辑器即可快速查看单元测试的状态。 若要为 C++ 单元测试项目初始化 CodeLens，可使用下面的方法之一：
 

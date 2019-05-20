@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983007"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615459"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安装 Visual Studio 2019 for Mac
 
@@ -55,7 +55,7 @@ ms.locfileid: "62983007"
 了解有关[发行说明](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)中的更改详细信息。
 
 > [!NOTE]
-> 如果在原始安装期间选择不安装平台或工具（方法为在第 #6 步中取消选择相关项），必须在稍后要添加组件时再次运行安装程序。
+> 如果在原始安装期间选择不安装平台或工具（方法为在第 #6 步中取消选择相关项），必须要在稍后添加组件时再次运行安装程序。
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后安装 Visual Studio for Mac
 
@@ -82,7 +82,7 @@ ms.locfileid: "62983007"
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>.NET Core 应用、ASP.NET Core Web 应用、Unity 游戏开发
 
-有关其他工作负载，请参阅[工作负载](/visualstudio/mac/workloads)页。
+有关其他工作负载，请参阅[工作负载](workloads.md)页。
 
 ## <a name="related-video"></a>相关视频
 

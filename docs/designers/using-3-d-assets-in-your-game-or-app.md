@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892900"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459117"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>在游戏或应用中使用三维资产
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>如何：在游戏或应用中使用三维资产
 
 本文介绍如何使用 Visual Studio 处理三维资产并将其包含在生成中。
 
@@ -34,7 +34,9 @@ ms.locfileid: "62892900"
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>将生成自定义添加到你的项目
 
-1. 在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“生成依赖项” > “生成自定义”。 随即显示“Visual C++ 生成自定义文件”对话框。
+1. 在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“生成依赖项” > “生成自定义”。
+
+   随即显示“Visual C++ 生成自定义文件”对话框。
 
 2. 在“可用的生成自定义文件”下，选中希望在项目中使用的资产类型对应的复选框，如下表中所述：
 
@@ -47,11 +49,14 @@ ms.locfileid: "62892900"
 3. 选择“确定”  按钮。
 
 ## <a name="include-assets-in-your-build"></a>将资产包含在生成中
- 现在你的项目已了解你希望使用的不同种类的三维资产，下一步是告知它哪些文件是三维资产，以及它们的资产种类。
+
+现在你的项目已了解你希望使用的不同种类的三维资产，下一步是告知它哪些文件是三维资产及其所属的资产种类。
 
 ### <a name="to-add-an-asset-to-your-build"></a>将资产添加到生成
 
-1. 在“解决方案资源管理器”中，在项目中打开资产的快捷菜单，然后选择“属性”。 随即显示资产的“属性页”对话框。
+1. 在“解决方案资源管理器”中，在项目中打开资产的快捷菜单，然后选择“属性”。
+
+   随即显示资产的“属性页”对话框。
 
 2. 请确保将“配置”和“平台”属性设置为你希望更改应用的值。
 
@@ -76,7 +81,9 @@ ms.locfileid: "62892900"
 
 ### <a name="to-configure-content-pipeline-properties"></a>配置内容管道属性
 
-1. 在“解决方案资源管理器”中，在你的项目中打开资产文件的快捷菜单，然后选择“属性”。 随即显示资产的“属性页”对话框。
+1. 在“解决方案资源管理器”中，在你的项目中打开资产文件的快捷菜单，然后选择“属性”。
+
+   随即显示资产的“属性页”对话框。
 
 2. 请确保将“配置”和“平台”属性设置为你希望更改应用到的值。
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[如何：导出包含 mipmap 的纹理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用“图像内容管道”导出包含预计算 mipmap 的纹理。|
 |[如何：导出包含预乘 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用“图像内容管道”导出包含预乘 alpha 值的纹理。|
-|[如何：导出纹理以用于 Direct2D 或 Javascipt 应用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用“图像内容管道”导出可在 Direct2D 或 JavaScript 应用中使用的纹理。|
+|[如何：使用 Direct2D 或 JavaScript 应用导出纹理以供使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用“图像内容管道”导出可在 Direct2D 或 JavaScript 应用中使用的纹理。|
 |[处理游戏和应用的三维资产](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供的用于创建和操作三维资产（包括纹理和图像、三维模型和着色器）的编辑工具。|
 |[如何：导出着色器](../designers/how-to-export-a-shader.md)|描述如何从着色器设计器中导出着色器。|

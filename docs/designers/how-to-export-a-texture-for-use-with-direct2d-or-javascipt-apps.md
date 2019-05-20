@@ -1,5 +1,5 @@
 ---
-title: 如何：导出纹理以用于 Direct2D 或 Javascipt 应用
+title: 导出 Direct2D 和 JavaScript 应用程序的纹理
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844379"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459207"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>如何：使用 Direct2D 或 JavaScript 应用导出纹理以供使用
 
 图像内容管道可以生成与 Direct2D 的内部呈现约定兼容的纹理。 这种类型的纹理适合在使用 Direct2D 的应用和使用 JavaScript 创建的 UWP 应用中使用。
 
@@ -39,11 +39,11 @@ Direct2D 的上下文中使用的纹理必须符合这些 Direct2D 内部呈现�
 
 - 必须通过使用以下块压缩格式之一以 .dds 格式应用纹理：
 
-    - BC1_UNORM 压缩
+   - BC1_UNORM 压缩
 
-    - BC2_UNORM 压缩
+   - BC2_UNORM 压缩
 
-    - BC3_UNORM 压缩
+   - BC3_UNORM 压缩
 
 - 不支持 mipmap。
 

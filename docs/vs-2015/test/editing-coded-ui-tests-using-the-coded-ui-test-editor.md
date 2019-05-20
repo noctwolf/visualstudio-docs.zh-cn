@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416508"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686577"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "63416508"
   
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。  
   
- 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 <http://Contoso1/default.aspx’>”的 Web 浏览器关联，则可以将 URL 更改为 `‘ http://Contoso2/default.aspx’`。  
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 <http://Contoso1/default.aspx’>”的 Web 浏览器关联，则可以将 URL 更改为 `‘http://Contoso2/default.aspx’`。  
   
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 编辑控件属性  
@@ -219,5 +219,5 @@ ms.locfileid: "63416508"
  [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)   
  [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)   
- [通过现有操作录制生成编码的 UI 测试](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [通过现有操作录制生成编码的 UI 测试](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [演练：创建、编辑和维护已编码 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

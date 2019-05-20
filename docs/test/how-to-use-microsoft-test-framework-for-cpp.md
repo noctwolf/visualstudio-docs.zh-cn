@@ -1,18 +1,18 @@
 ---
 title: 使用适用于 C++ 的 Microsoft 单元测试框架
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970341"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461482"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
@@ -22,7 +22,7 @@ ms.locfileid: "62970341"
 
 通常，你在测试代码自己的项目（与要测试的代码处于相同解决方案中）中运行测试代码。 若要设置和配置新测试项目，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
 
-## <a name="same_project"></a> 在同一项目中编写单元测试的具体步骤
+## <a name="same_project"></a>在同一项目中编写单元测试
 
 在某些情况下，例如测试 DLL 中的非导出函数时，可能需要在所测试程序所处的同一项目中创建测试。 在同一项目中编写单元测试：
 
@@ -45,17 +45,19 @@ ms.locfileid: "62970341"
 
 包含测试类的任何 .cpp 文件都必须包含“CppUnitTest.h”，并具有用于 `using namespace Microsoft::VisualStudio::CppUnitTestFramework` 的 using 语句。 测试项目已为你进行了配置。 它还包含命名空间定义以及带有 TEST_METHOD 的 TEST_CLASS 来使你可以开始使用。 可以修改命名空间名称以及类和方法宏中带圆括号的名称。
 
-为初始化测试模块、类和方法，以及为在测试完成时清理资源定义了特殊宏。 这些宏生成在首次访问类或方法之前，以及在最后一个测试运行之后执行的代码。 有关详细信息，请参阅[初始化和清理](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)。
+已定义了特殊宏，用于初始化测试模块、类和方法，以及在测试完成时清理资源。 这些宏生成的代码会在首次访问类或方法之前，以及在最后一个测试运行之后执行。 有关详细信息，请参阅[初始化和清理](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)。
 
 在 [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) 类中使用静态方法定义测试条件。 使用 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) 类将消息写入到**输出窗口**。 将属性添加到测试方法
 
 ## <a name="run-the-tests"></a>运行测试
 
 1. 在“测试”菜单中，依次选择“窗口” > “测试资源管理器”。
-2. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
 
-3. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
-4. 在输出窗口中，在下拉菜单中选择“测试”以查看 `Logger` 类写出的消息：
+1. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
+
+1. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
+
+1. 在输出窗口中，在下拉菜单中选择“测试”以查看 `Logger` 类写出的消息：
 
    ![显示测试消息的 C++ 输出窗口](media/cpp-test-output-window.png)
 

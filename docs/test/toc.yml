@@ -80,8 +80,6 @@
           href: unit-tests-for-generic-methods.md
         - name: 配置单元测试以面向 .NET Framework 的早期版本
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: 用于创建单元测试的示例项目
-          href: sample-project-for-creating-unit-tests.md
     - name: C/C++ 代码的单元测试
       items:
         - name: 编写 C/C++ 代码的单元测试
@@ -119,6 +117,7 @@
 - name: Live Unit Testing
   items:
     - name: 介绍
+      displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
     - name: Live Unit Testing 中的新增功能
       href: live-unit-testing-whats-new.md
@@ -147,6 +146,7 @@
             - name: 测试组合模型
               items:
                 - name: 概述
+                  displayName: Test mix models
                   href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: 编辑测试组合模型
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
@@ -196,8 +196,6 @@
               items:
                 - name: 修改日志记录设置
                   href: modify-load-test-logging-settings.md
-                - name: 最大日志大小
-                  href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: 失败的测试
                   href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
             - name: 计时详细信息存储
@@ -227,6 +225,7 @@
     - name: 测试控制器和测试代理
       items:
         - name: 概述
+          displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
         - name: 要求
           href: test-controller-and-test-agent-requirements-for-load-testing.md
@@ -348,16 +347,18 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: 为结果查看器创建加载项
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: UI 测试自动化
+- name: 使用编码的 UI 测试的 UI 自动化
   items:
     - name: 概述
+      displayName: Coded UI test
       href: use-ui-automation-to-test-your-code.md
     - name: 演练：创建、编辑和维护编码的 UI 测试
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: 使用编码的 UI 测试来测试 UWP 应用
       href: test-uwp-app-with-coded-ui-test.md
-    - name: 为 UWP 控件设置唯一的自动化属性
-      href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+      items:
+        - name: 为 UWP 控件设置唯一的自动化属性
+          href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: 在编码 UI 测试中使用 HTML5 控件
       href: using-html5-controls-in-coded-ui-tests.md
     - name: 创建数据驱动的编码 UI 测试

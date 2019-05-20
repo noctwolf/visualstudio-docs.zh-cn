@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786356"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850756"
 ---
 # <a name="import-or-export-installation-configurations"></a>导入或导出安装配置
 
@@ -48,7 +48,7 @@ ms.locfileid: "62786356"
 
    ![从 Visual Studio 安装程序的产品卡中导出配置](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. 浏览到或键入要保存 .vconfig 文件的位置，然后选择“查看详细信息”。
+1. 浏览到或键入要保存 .vsconfig 文件的位置，然后选择“查看详细信息”。
 
    ![从 Visual Studio 安装程序中导出配置](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "62786356"
 
 1. 在产品卡中，选择“更多”按钮，然后选择“导入配置”。
 
-1. 找到要导入的 .vconfig 文件，然后选择“查看详细信息”。
+1. 找到要导入的 .vsconfig 文件，然后选择“查看详细信息”。
 
 1. 确保已有所需的工作负载和组件，然后选择“关闭”。
 

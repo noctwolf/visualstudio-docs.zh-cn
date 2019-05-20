@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999757"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461493"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概述
 
@@ -78,7 +78,7 @@ public partial class HelloWorldTest {
 7. "Hello\0World!"
 8. "Hello World!"
 
-阅读[使用 IntelliTest 生成单元测试](../../test/generate-unit-tests-for-your-code-with-intellitest.md)，获取生成的测试的保存位置。 生成的测试代码应包含如下所示的测试：
+阅读[使用 IntelliTest 生成单元测试](../../test/generate-unit-tests-for-your-code-with-intellitest.md)，了解生成的测试的保存位置。 生成的测试代码应包含如下所示的测试：
 
 ```csharp
 [TestMethod]
@@ -115,8 +115,7 @@ IntelliTest 控制提供给[参数化单元测试](test-generation.md#parameteri
 
 此外，如果来自外部源的值在重新运行程序时更改，该程序将被视为非确定。 在这种情况下，IntelliTest 会失去对程序执行的控制，且其搜索效率会变得低下。
 
-出现这种情况时，有时并不明显。
-请开考虑以下示例：
+出现这种情况时，有时并不明显。 请开考虑以下示例：
 
 * GetHashCode() 方法的结果由非托管代码提供，不可预测。
 * System.Random 类使用当前系统时间提供真正随机的值。

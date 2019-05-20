@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783916"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461621"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>用于运行负载测试的测试代理和测试控制器的概述
 
 Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载。 这些机器必须由一个测试控制器和一个或多个测试代理组成。 可以使用测试控制器和测试代理生成超出一台计算机单机生成能力的负载。
 

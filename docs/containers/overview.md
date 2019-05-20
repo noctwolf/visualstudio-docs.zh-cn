@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824939"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084038"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio 中的容器工具
 
@@ -25,7 +25,7 @@ Visual Studio 中用于使用容器进行开发的工具易于使用，并大大
 
 ## <a name="docker-support-in-visual-studio"></a>Visual Studio 中的 Docker 支持
 
-Docker 支持适用于某些 .NET 项目类型。  它适用于 ASP.NET 项目、ASP.NET Core 项目，以及 .NET Core 和 .NET Framework 控制台项目。
+Docker 支持适用于 ASP.NET 项目、ASP.NET Core 项目，以及 .NET Core 和 .NET Framework 控制台项目。
 
 Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可以向项目添加两个级别的 Docker 支持，并且受支持的选项因项目类型和 Visual Studio 版本而异。 借助某些受支持的项目类型，如果只想将容器用于单个项目，而不使用业务流程，则可以通过添加 Docker 支持来完成。  下一级别是容器业务流程支持，该支持可为所选的特定业务流程协调程序添加相应的支持文件。  
 
@@ -46,13 +46,9 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 > 如果使用的是完整的 .NET Framework 控制台项目模板，则在添加 Docker 支持时，会自动添加使用 Docker Compose 的业务流程支持。
 ::: moniker-end
 
-Add > Docker Support 和 Add > Container Orchestrator Support 命令位于“解决方案资源管理器”中 ASP.NET Core 项目的项目节点的右键单击菜单（或上下文菜单）上，如以下屏幕截图所示：
+### <a name="adding-docker-support"></a>添加 Docker 支持
 
-![Visual Studio 中的“添加 Docker 支持”菜单选项](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>添加 Docker 支持（而不使用业务流程）
-
-可以通过在“解决方案资源管理器”中选择“添加” > “Docker 支持”来向现有项目添加 Docker 支持。 也可以通过在创建新项目时选择“启用 Docker 支持”来在项目创建期间启用 Docker 支持，如以下屏幕截图所示：
+可以通过在创建新项目时选择“启用 Docker 支持”来在项目创建期间启用 Docker 支持，如以下屏幕截图所示：
 
 ::: moniker range="vs-2017"
 ![在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Add > Docker Support 和 Add > Container Orchestrator Support 命令位于“解
 ::: moniker range=">=vs-2019"
 ![在 Visual Studio 中为新的 ASP.NET Core Web 应用启用 Docker 支持](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> 对于 .NET Framework 项目（而不是 .NET Core），只有 Windows 容器可用。
+
+可以通过在“解决方案资源管理器”中选择“添加” > “Docker 支持”来向现有项目添加 Docker 支持。 Add > Docker Support 和 Add > Container Orchestrator Support 命令位于“解决方案资源管理器”中 ASP.NET Core 项目的项目节点的右键单击菜单（或上下文菜单）上，如以下屏幕截图所示：
+
+![Visual Studio 中的“添加 Docker 支持”菜单选项](./media/overview/add-docker-support-menu.png)
 
 当添加或启用 Docker 支持时，Visual Studio 会向项目添加以下各项：
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840524"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226504"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
@@ -59,12 +59,12 @@ ms.locfileid: "62840524"
 1. 创建新项目。
 
     ::: moniker range=">=vs-2019"
-    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“基本 Vue.js”，然后选择“基本 Vue.js Web 应用程序”（JavaScript 或 TypeScript）。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“基本 Vue.js”，然后选择“基本 Vue.js Web 应用程序”（JavaScript 或 TypeScript）。 在出现的对话框中，键入名称“basic-vuejs”，然后选择“创建”。
 
     ![Vue.js 模板](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“JavaScript”或“TypeScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Vue.js Web 应用程序”，然后选择“确定”。
+    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，展开“JavaScript”或“TypeScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Vue.js Web 应用程序”，键入名称“basic-vuejs”，然后选择“确定”。
 
     ![Vue.js 模板](../javascript/media/vuejs-template.png)
     ::: moniker-end

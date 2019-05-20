@@ -1,18 +1,18 @@
 ---
 title: 如何：编写 C++ DLL 单元测试
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819669"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226348"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C++ DLL 单元测试
 
@@ -38,13 +38,12 @@ ms.locfileid: "62819669"
 
 1. 在“文件”菜单上，选择“新建” > “项目”。
 
-     在对话框中，展开“已安装” > “模板” > “Visual C++” > “测试”。
+     **Visual Studio 2017 及更早版本**：依次展开“已安装” > “模板” > “Visual C++” > “测试”。
+     **Visual Studio 2019** ：将“语言”设置为 C++ 并在搜索框中键入“测试”。
 
      选择“本机单元测试项目”模板，或任何所需的已安装框架。 如果选择其他模板（如 Google Test 或 Boost.Test），则基本原则是相同的，不过某些细节将有所不同。
 
      在本演练中，该测试项目的名称为 `NativeRooterTest`。
-
-     ![创建 C++ 单元测试项目](../test/media/utecpp01.png)
 
 2. 在新项目中，检查 **unittest1.cpp**
 
@@ -85,11 +84,45 @@ ms.locfileid: "62819669"
 
 ## <a name="create_dll_project"></a>创建 DLL 项目
 
-1. 使用“Win32 项目”  模板，创建“Visual C++”  项目。
+::: moniker range="vs-2019"
+
+以下步骤说明如何在 Visual Studio 2019 中创建 DLL 项目。
+
+1. 使用“Windows 桌面向导”创建 C++ 项目：右键单击“解决方案资源管理器”中的解决方案名称，然后依次选择“添加” > “新建项目”。 将“语言”设置为 C++，然后在搜索框中键入“windows”。 从结果列表中选择“Windows 桌面向导”。 
 
      在本演练中，该项目的名称为 `RootFinder`。
 
-     ![创建 C++ Win32 项目](../test/media/utecpp05.png)
+2. 按“创建”。 在下一个对话框中，在“应用程序类型”下选择“动态链接库 (dll)”，同时选中“导出符号”。
+
+     “导出符号”  选项生成可用来声明导出方法的便利宏。
+
+     ![为 DLL 设置的 C++ 项目向导和导出符号](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. 在主体 .h 文件中声明导出的函数：
+
+     ![使用 API 宏新建 DLL 代码项目和 .h 文件](../test/media/utecpp07.png)
+
+     声明符 `__declspec(dllexport)` 会导致类的公共和受保护成员在 DLL 外可见。 有关详细信息，请参阅 [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes)。
+
+4. 在主体 .cpp 文件中，添加最小的函数体：
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+以下步骤说明如何在 Visual Studio 2017 中创建 DLL 项目。
+
+1. 使用“Win32 项目”模板创建 C++ 项目。
+
+     在本演练中，该项目的名称为 `RootFinder`。
 
 2. 在 Win32 应用程序向导中，选择“DLL”  和“导出符号”  。
 
@@ -112,6 +145,8 @@ ms.locfileid: "62819669"
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> 将测试项目耦合到 DLL 项目
 
