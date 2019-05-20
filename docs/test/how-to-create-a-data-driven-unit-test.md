@@ -1,6 +1,6 @@
 ---
 title: 创建数据驱动的单元测试
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979235"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615433"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 
-将 Microsoft 单元测试框架用于托管代码，可以设置单元测试方法从数据源中检索测试方法中使用的值。 针对数据源中的每一行连续运行此方法，这样就可以使用一种方法轻松地测试各种输入。
+可以使用 Microsoft 单元测试框架来托管代码，以设置单元测试方法，以便从数据源检索值。 针对数据源中的每一行连续运行此方法，这样就可以使用一种方法轻松地测试各种输入。
 
 创建数据驱动的单元测试包括以下步骤：
 
@@ -43,13 +43,13 @@ ms.locfileid: "62979235"
 
 2. `MyBank` 中名为 `BankDb` 的项目，此项目管理帐户的事务。
 
-3. `DbBank` 项目中名为 `Maths` 的类，此类执行数学函数，以确保任何事务对银行有利。
+3. `BankDb` 项目中名为 `Maths` 的类，此类执行数学函数，以确保任何事务对银行有利。
 
 4. 名为 `BankDbTests` 的单元测试项目，用于测试 `BankDb` 组件的行为。
 
 5. 名为 `MathsTests` 的单元测试类，用于验证 `Maths` 类的行为。
 
-我们将在 `Maths` 中测试一个方法，此方法使用循环添加两个整数：
+我们将在 `Maths` 中测试一个使用循环添加两个整数的方法：
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 在测试方法中，通过 `TestContext` 的 `DataRow` 索引器属性来访问数据。
 
+> [!NOTE]
+> .NET Core 不支持 [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性。 如果尝试在 .NET Core 或 UWP 单元测试项目中以这种方式访问测试数据，你将看到如下错误：“‘TestContext’不包含‘DataRow’的定义，并且找不到接受类型为‘TestContext’的第一个参数的可访问扩展方法‘DataRow’(是否缺少 using 指令或程序集引用?)”。
+
 ## <a name="write-the-test-method"></a>编写测试方法
 
 `AddIntegers` 的测试方法很简单。 针对数据源中的每一行，将 FirstNumber 和 SecondNumber 列值作为参数来调用 `AddIntegers`，并根据 Sum 列的值来验证返回值：
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-`Assert` 方法包括一条消息，此消息显示失败的迭代的值 `x` 和 `y`。 默认情况下，失败测试的详细信息中已包含声明的值 `expected` 和 `actual`。
+`Assert` 方法包括一条消息，此消息显示失败的迭代的值 `x` 和 `y`。 默认情况下，声明的值 `expected` 和 `actual` 已包含在失败测试的详细信息中。
 
 ### <a name="specify-the-datasourceattribute"></a>指定 DataSourceAttribute
 

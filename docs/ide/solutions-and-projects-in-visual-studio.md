@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979637"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461523"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 
@@ -67,6 +67,8 @@ Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案�
 创建新项目最简单的方法是从特定类型的应用程序或网站的项目模板开始。 项目模板包含一组基本的预生成代码文件、配置文件、资产和设置。 可以在创建新项目的对话框中（“文件” > “新建” > “项目”）使用这些模板。 有关详细信息，请参阅[创建解决方案和项目](../ide/creating-solutions-and-projects.md)。
 
 还可以创建自定义项目和项模板。 有关详细信息，请参阅[创建项目和项模板](../ide/creating-project-and-item-templates.md)。
+
+创建新项目时，默认情况下会将其保存在 %USERPROFILE%\source\repos 中。 可以在“工具” > “选项” > “项目和解决方案” > “位置”下的“项目位置”设置中自定义此位置。 有关详细信息，请参阅[项目和解决方案页的“选项”对话框](../ide/reference/projects-and-solutions-options-dialog-box.md)。
 
 ## <a name="manage-projects-in-solution-explorer"></a>在解决方案资源管理器中管理项目
 

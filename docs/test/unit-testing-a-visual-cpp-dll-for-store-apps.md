@@ -1,18 +1,18 @@
 ---
 title: 如何测试 UWP 应用的 Visual C++ DLL
-ms.date: 02/15/2018
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562559"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226362"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何测试 Visual C++ DLL
 
@@ -24,15 +24,27 @@ ms.locfileid: "62562559"
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> 创建解决方案和单元测试项目
 
-1. 在“文件”菜单上，选择“新建” > “新建项目”。
+::: moniker range="vs-2019"
 
-2. 在“新建项目”对话框中，依次展开“已安装” > “Visual C#”，然后选择“Windows 通用”。 然后从项目模板列表中选择“单元测试应用(通用 Windows)”。
+首先创建新的测试项目。 在“文件”菜单上，选择“新建” > “项目”。 在“新建项目”对话框中，在搜索框中键入“测试”，然后将“语言”设置为 C++。 然后从项目模板列表中选择“单元测试应用(通用 Windows)”。
 
-3. 将项目命名为 `RooterLibTests`；指定位置；将解决方案命名为 `RooterLib`；确保选中了“创建解决方案的目录”。
+   ![创建新的 UWP 测试项目](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+首先创建新的测试项目。 在“文件”菜单上，选择“新建” > “项目”。 在“新建项目”对话框中，依次展开“已安装” > “Visual C++”，然后选择“Windows 通用”。 然后从项目模板列表中选择“单元测试应用(通用 Windows)”。
+
+::: moniker-end
+
+1. 在“新建项目”对话框中，依次展开“已安装” > “Visual C#”，然后选择“Windows 通用”。 然后从项目模板列表中选择“单元测试应用(通用 Windows)”。
+
+2. 将项目命名为 `RooterLibTests`；指定位置；将解决方案命名为 `RooterLib`；确保选中了“创建解决方案的目录”。
 
      ![指定解决方案和项目名称以及位置](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. 在新项目中，打开 **unittest1.cpp**。
+3. 在新项目中，打开 **unittest1.cpp**。
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ ms.locfileid: "62562559"
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> 向解决方案添加 DLL 项目
 
-1. 在解决方案资源管理器中，选择解决方案名称。 从快捷菜单中选择“添加”，然后选择“添加新项目”。
+::: moniker range="vs-2019"
 
-     ![创建 RooterLib 项目](../test/media/ute_cpp_windows_rooterlib_create.png)
+在解决方案资源管理器中，选择解决方案名称。 从快捷菜单中选择“添加”，然后选择“新建项目”。 在“添加新项目”对话框中，将“语言”设置为 C++ 并在搜索框中键入“DLL”。 从结果列表中，选择“单元测试应用（通用 Windows - C++/CX）”。
 
-2. 在“添加新项目”对话框中，选择“DLL (UWP 应用)”。
+![创建 RooterLib 项目](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. 将以下代码添加到 *RooterLib.h* 文件中：
+::: moniker-end
+
+::: moniker range="vs-2017"
+在解决方案资源管理器中，选择解决方案名称。 从快捷菜单中选择“添加”，然后选择“新建项目”。
+
+![创建 RooterLib 项目](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. 在“添加新项目”对话框中，选择“DLL (UWP 应用)”。
+
+2. 将以下代码添加到 *RooterLib.h* 文件中：
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ ms.locfileid: "62562559"
 
      `CRooterLib` 类声明一个构造函数和 `SqareRoot` estimator 方法。
 
-4. 将 ROOTERLIB_EXPORTS 符号添加到命令行。
+3. 将 ROOTERLIB_EXPORTS 符号添加到命令行。
 
     1. 在解决方案资源管理器中，选择“RooterLib”项目，然后从快捷菜单选择“属性”。
 
@@ -109,7 +132,7 @@ ms.locfileid: "62562559"
 
     3. 从“预处理器定义”列表选择“\<编辑...>”，然后在“预处理器定义”对话框中添加 `ROOTERLIB_EXPORTS`。
 
-5. 添加已声明函数的最小实现。 打开 *RooterLib.cpp* 并添加以下代码：
+4. 添加已声明函数的最小实现。 打开 *RooterLib.cpp* 并添加以下代码：
 
     ```cpp
     // constructor

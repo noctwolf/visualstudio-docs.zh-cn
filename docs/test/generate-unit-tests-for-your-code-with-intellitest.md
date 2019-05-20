@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ec9d40d889964c3b0f369b87d8cd2c2312aaea18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950781"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461222"
 ---
-# <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 为你的代码生成单元测试
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>如何：通过使用 IntelliTest 来生成单元测试
 
 IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。 例如，分析 `if` 语句、断言和可能引发异常的所有操作。 此分析用于为你的每个方法生成参数化单元测试的测试数据，从而创建具有较高代码覆盖率的单元测试。
 
@@ -26,7 +26,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 “创建 IntelliTest”和“运行 IntelliTest”菜单命令：
 
-* 仅适用于 Visual Studio 2015 或更高版本的企业版。
+* 仅适用于 Visual Studio Enterprise 版。
 
 * 仅支持面向 .NET Framework 的 C# 代码。
 
@@ -36,23 +36,23 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 ## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>浏览：使用 IntelliTest 浏览代码并生成单元测试
 
-若要生成单元测试，你的类型必须是公共类。 否则，先 [创建单元测试](#NoRun) ，然后再生成它们。
+若要生成单元测试，你的类型必须是公共类。
 
-1. 在 Visual Studio 中打开解决方案。 然后打开包含你要测试的方法的类文件。
+1. 在 Visual Studio 中打开解决方案，然后打开包含要测试的方法的类文件。
 
-2. 在代码中右键单击一种方法并选择“运行 IntelliTest”  ，为方法中的代码生成单元测试。
+2. 右键单击一种方法并选择“运行 IntelliTest”，为方法中的代码生成单元测试。
 
-     ![在方法中右键单击以生成单元测试](../test/media/runpex.png)
+   ![在方法中右键单击以生成单元测试](../test/media/runpex.png)
 
-     IntelliTest 使用不同的输入多次运行你的代码。 每次运行都会在表中表示出来，显示输入测试数据以及产生的输出或异常。
+   IntelliTest 使用不同的输入多次运行你的代码。 每次运行都会在表中表示出来，显示输入测试数据以及产生的输出或异常。
 
-     ![将显示浏览结果窗口，其中列出测试](../test/media/pexexplorationresults.png)
+   ![将显示浏览结果窗口，其中列出测试](../test/media/pexexplorationresults.png)
 
-     要为一个类中的所有公共方法生成单元测试，只需右键单击类而不是特定的方法。 然后选择“运行 IntelliTest” 。 使用“浏览结果”窗口中的下拉列表，显示类中每个方法的单元测试和输入数据。
+要为一个类中的所有公共方法生成单元测试，只需右键单击类而不是特定的方法，然后选择“运行 IntelliTest”。 使用“浏览结果”窗口中的下拉列表，显示类中每个方法的单元测试和输入数据。
 
-     ![选择测试结果以从列表中查看](../test/media/selectpextest.png)
+![选择测试结果以从列表中查看](../test/media/selectpextest.png)
 
-     对于通过的测试，检查结果列中报告的结果是否与你对代码的预期要求匹配。 对于失败的测试，根据需要修复你的代码。 然后重新运行 IntelliTest 来验证修复。
+对于通过的测试，检查结果列中报告的结果是否与你对代码的预期要求匹配。 对于失败的测试，根据需要修复你的代码。 然后重新运行 IntelliTest 来验证修复。
 
 ## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>保留：将单元测试保存为回归套件
 
@@ -102,7 +102,7 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 **答：** 与其他单元测试相同，如果没有异常产生即通过。 如果有任何断言失败，或者测试的代码引发未处理的异常，则失败。
 
- 如果你的一个测试可在引发特定异常的情况下通过，则可根据你在测试方法、测试类或程序集级别的要求设置以下属性之一：
+如果你的一个测试可在引发特定异常的情况下通过，则可根据你在测试方法、测试类或程序集级别的要求设置以下属性之一：
 
 - **PexAllowedExceptionAttribute**
 
@@ -114,29 +114,29 @@ IntelliTest 浏览你的 .NET 代码，以生成测试数据和单元测试套�
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>问：我能否将假设添加到参数化单元测试？
 
-**答：** 可以，使用假设指定特定方法的单元测试不需要的测试数据。 使用 <xref:Microsoft.Pex.Framework.PexAssume> 类添加假设。 例如，你可以添加类似于以下形式的长度变量不为 null 的假设。
+**答：** 可以，使用假设指定特定方法的单元测试不需要的测试数据。 使用 <xref:Microsoft.Pex.Framework.PexAssume> 类添加假设。 例如，你可以添加类似于以下形式的`lengths`变量不为 null 的假设：
 
- `PexAssume.IsNotNull(lengths);`
+`PexAssume.IsNotNull(lengths);`
 
- 如果添加了假设并重新运行 IntelliTest，则将删除不再相关的测试数据。
+如果添加了假设并重新运行 IntelliTest，则将删除不再相关的测试数据。
 
 ### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>问：我能否将断言添加到参数化单元测试？
 
 **答：** 可以，IntelliTest 将在运行单元测试时检查你在语句中的断言内容是否正确。 使用 <xref:Microsoft.Pex.Framework.PexAssert> 类或测试框架附带的断言 API 来添加断言。 例如，可添加两个变量相等的断言。
 
- `PexAssert.AreEqual(a, b);`
+`PexAssert.AreEqual(a, b);`
 
- 如果添加了断言并重新运行 IntelliTest，它将检查断言的有效性，如果断言无效，则测试失败。
+如果添加了断言并重新运行 IntelliTest，将检查断言的有效性；如果断言无效，则测试失败。
 
 ### <a name="NoRun"></a> 问：是否可以无需首先运行 IntelliTest 便生成参数化单元测试？
 
 **答：** 可以，在类或方法中单击右键，然后选择“创建 IntelliTest”。
 
- ![右键单击编辑器，选择“创建 IntelliTest”](../test/media/pexcreateintellitest.png)
+![右键单击编辑器，选择“创建 IntelliTest”](../test/media/pexcreateintellitest.png)
 
- 接受默认格式以生成测试，或更改项目和测试的命名方式。 你可以创建新的测试项目或将你的测试保存到现有项目。
+接受默认格式以生成测试，或更改项目和测试的命名方式。 你可以创建新的测试项目或将你的测试保存到现有项目。
 
- ![使用默认的 MSTest 创建 IntelliTest](../test/media/pexcreateintellitestmstest.png)
+![使用默认的 MSTest 创建 IntelliTest](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>问：是否可以将其他单元测试框架用于 IntelliTest？

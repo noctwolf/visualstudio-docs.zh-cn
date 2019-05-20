@@ -1,18 +1,18 @@
 ---
 title: 编写 C++ DLL 单元测试
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226076"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ DLL 单元测试
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821038"
 
   1. 创建本机单元测试项目。
 
-      1. 在“文件”菜单中，选择“新建” > “项目” > “Visual C++” > “测试” > “C++ 单元测试项目”。
+      ::: moniker range="vs-2019"
+
+      1. 在“文件”菜单上，选择“新建” > “项目”。 在“添加新项目”对话框中，将“语言”设置为 C++ 并在搜索框中键入“测试”。 然后，选择“本机测试项目”。
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. 在“文件”菜单中，选择“新建”>“项目”>“Visual C++”>“测试”>“C++ 单元测试项目”。
+
+      ::: moniker-end
 
   2. 在“解决方案资源管理器”中，从测试项目的快捷菜单中选择“引用”。 此时将打开项目“属性”窗口。
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821038"
 
   1. 创建本机单元测试项目。
 
-      1. 在“文件”菜单中，选择“新建” > “项目” > “Visual C++” > “测试” > “本机单元测试项目”。
+      ::: moniker range="vs-2019"
+
+      1. 在“文件”菜单上，选择“新建” > “项目”。 在“添加新项目”对话框中，将“语言”设置为 C++ 并在搜索框中键入“测试”。 然后，选择“本机测试项目”。
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. 在“文件”菜单中，选择“新建”>“项目”>“Visual C++”>“测试”>“C++ 单元测试项目”。
+
+      ::: moniker-end
 
   2. 在“解决方案资源管理器”中，从测试项目的快捷菜单中选择“属性”。
 
