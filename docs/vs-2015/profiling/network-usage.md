@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441888"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673823"
 ---
 # <a name="network-usage"></a>网络使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,6 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 3. 响应整齐打印按钮（位于“正文”选项卡内）可通过提高内容的可读性帮助你分析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 响应负载。  
   
 ## <a name="see-also"></a>请参阅  
- [运行分析工具而不进行调试](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [运行分析工具而不进行调试](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Visual Studio 博客：引入了 Visual Studio 的网络检查器](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [第 9 频道视频：VS 诊断工具 – 新网络 Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

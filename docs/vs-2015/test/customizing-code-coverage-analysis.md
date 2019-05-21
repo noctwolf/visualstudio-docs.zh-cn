@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416648"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686439"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ ms.locfileid: "63416648"
  依次选择“测试”、“测试设置”、“选择测试设置文件”和 .runsettings 文件。 该文件将显示在“测试设置”菜单上，你可以选择或取消它。 选择后，每当你使用“分析代码覆盖率”时，都会应用 .runsettings 文件。  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>在命令行测试中自定义运行设置  
- 若要从命令行运行测试，请使用 vstest.console.exe。 此设置文件是此实用工具的一个参数。 有关详细信息，请参阅[通过命令行使用 VSTest.console](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
+ 若要从命令行运行测试，请使用 vstest.console.exe。 此设置文件是此实用工具的一个参数。 有关详细信息，请参阅[通过命令行使用 VSTest.console](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a)。  
   
 1. 启动 Visual Studio 开发人员命令提示符：  
   
@@ -202,7 +202,7 @@ ms.locfileid: "63416648"
   
 3. 在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 选择 **.runsettings** 文件。  
   
-   - 不过，显示的是“测试程序集”，而不是“测试源”<em>。尝试设置“运行设置”** 字段时，我只能选择 .testsettings 文件。*  
+   - 不过，显示的是“测试程序集”，而不是“测试源”<em>。尝试设置“运行设置”字段时，我只能选择 .testsettings 文件。*  
   
       在“自动测试”下，依次选择“测试程序集”和行尾的“[...]”。 在“添加/编辑测试运行”对话框中，将“测试运行程序”设为“Visual Studio 测试运行程序”。  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  
