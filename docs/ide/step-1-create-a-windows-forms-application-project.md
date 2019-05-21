@@ -31,7 +31,7 @@ ms.locfileid: "62979847"
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。 对话框应如下所示。
 
      ![“新建项目”对话框](../ide/media/newprojectdialogcallouts.png)<br/>
-“新建项目”对话框**
+“新建项目”对话框 **
 
 2. 在“新建项目”对话框的左侧，选择 Visual C# 或 Visual Basic。
 
@@ -103,7 +103,7 @@ Visual Studio 将为您的程序创建解决方案。 解决方案充当程序�
      或者，在工具栏上选择“全部保存”按钮，如下图所示。
 
      ![“全部保存”工具栏按钮](../ide/media/express_iconsaveall.png)<br/>
-     “全部保存”工具栏按钮**
+     “全部保存”工具栏按钮 **
 
      Visual Studio 将自动填充文件夹名称和项目名称，并将项目保存在项目文件夹中。
 
