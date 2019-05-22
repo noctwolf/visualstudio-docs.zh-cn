@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794045"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845994"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -20,7 +20,13 @@ ms.locfileid: "62794045"
 
 许多代码编辑器和 IDE（包括 Visual Studio）都支持 EditorConfig 设置。 它是一种随代码移动的可移植组件，甚至可以在 Visual Studio 外强制实施编码样式。
 
-在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（在默认配置文件中单击“编辑” > “高级” > “设置文档格式”或按 Ctrl+K、Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。 可定义希望“设置文档格式”在[“设置格式”选项](reference/options-text-editor-csharp-formatting.md#format-document-settings)页面上应用的 EditorConfig 设置。
+在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（在默认配置文件中单击“编辑” > “高级” > “设置文档格式”或按 Ctrl+K、Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。
+
+::: moniker range="vs-2017"
+
+可定义希望“设置文档格式”在[“设置格式”选项](reference/options-text-editor-csharp-formatting.md#format-document-settings)页面上应用的 EditorConfig 设置。
+
+::: moniker-end
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[Visual Studio for Mac 中的 EditorConfig](/visualstudio/mac/editorconfig)。
@@ -73,7 +79,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 1. 根据需要编辑文件，例如：
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 如果想替代一部分而非所有设置，请在 .editorconfig 文件中仅指定这些设置。 仅替代较低级别文件中显式列出的属性。 更高级别 .editorconfig 文件中的其他设置会继续应用。 如果要确保_任何_更高级别的 .editorconfig 文件中_没有_设置应用于此部分代码库，请将 ```root=true``` 属性添加到较低级别的 .editorconfig 文件中：
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Visual Studio 提供 IntelliSense 完成列表，帮助你编辑 .editorconfig �
 
 将具有以下内容的名为 .editorconfig 的新文件添加到项目。 `[*.cs]` 设置意味着此更改仅应用于项目中的 C# 代码文件。
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 

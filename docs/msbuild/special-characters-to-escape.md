@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ed6be5b3beb394f4e9486ecdca973aa28c97f92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993172"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846228"
 ---
 # <a name="special-characters-to-escape"></a>要转义的特殊字符
 仅当特殊字符在使用它们的上下文中具有特殊意义时，才必须对特殊字符进行转义。 例如，星号 (*) 仅在项定义的“Include”和“Exclude”属性对 <xref:Microsoft.Build.Tasks.CreateItem> 的调用中是特殊字符。 在所有其他情况下，星号都将被视为原义星号。 虽然不需要转义项目文件中无处不在的星号，但做也没有坏处。
@@ -37,7 +37,6 @@ ms.locfileid: "62993172"
 |@|At 符号，用于引用项列表。|
 |(|左圆括号，用在列表中。|
 |)|右圆括号，用在列表中。|
-|\`|撇号（或刻度线），用在条件和其他表达式中。|
 |;|分号，列表分隔符。|
 |?|问号，描述项的“Include/Exclude”节中的文件规范时使用的通配符。|
 |*|星号，描述项的“Include/Exclude”节中的文件规范时使用的通配符。|
