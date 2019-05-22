@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何查找和下载 Visual Studio 订阅中包含的 Microsoft 产品。
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697772"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。
@@ -31,7 +31,7 @@ ms.locfileid: "62953691"
 - **冗余软件。** 在包含 Office 的订阅中，将不再提供选定 Office 套件和独立 Office 的下载和产品密钥。 但会对同一版本对应的最高 Office 套件提供下载和产品密钥。  例如，搜索 Powerpoint 2010 不会出现任何结果。  但可以搜索 Office 2010（包含 Powerpoint 2010 的 Office 套件）并下载该套件。
 
 ## <a name="what-do-i-get"></a>我能获得哪些内容？
-下载内容的数量和类型取决于订阅级别和计划成员身份。  例如，相较于通过 Microsoft 合作伙伴网络 或 BizSpark 计划订阅获得订阅的订阅者，具有 Visual Studio Enterprise 标准订阅的订阅者可以获得的下载内容可能有所不同。  要了解有关各订阅级别可获取的下载内容的详细信息，请下载[按权益级别分类的产品](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx)列表。
+下载内容的数量和类型取决于订阅级别和计划成员身份。  例如，相较于通过 Microsoft 合作伙伴网络 或 BizSpark 计划订阅获得订阅的订阅者，具有 Visual Studio Enterprise 标准订阅的订阅者可以获得的下载内容可能有所不同。  要了解有关各订阅级别可获取的下载内容的详细信息，请下载[按权益级别分类的产品](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)列表。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 

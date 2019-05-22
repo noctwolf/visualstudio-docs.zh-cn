@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948439"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685923"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -102,7 +102,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 如果订阅有支出限制并且在过期前尚未采取措施，则会禁用 Azure 订阅。 要将其转换为即用即付产品/服务并继续使用，请添加付款方式并[删除支出限制](/azure/billing/billing-spending-limit/)。
 
-如果你不想继续使用此 Visual Studio Azure 订阅，则需要将资源（例如虚拟机和数据库）传输到其他 Azure 订阅，并随时[取消](http://azure.microsoft.com/support/cancel-account/)此订阅。
+如果你不想继续使用此 Visual Studio Azure 订阅，则需要将资源（例如虚拟机和数据库）传输到其他 Azure 订阅，并随时[取消](https://azure.microsoft.com/support/cancel-account/)此订阅。
 
 如果你认为不该收到此电子邮件，请联系 [Azure 客户支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)。
 

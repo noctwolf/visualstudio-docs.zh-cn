@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557293"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847365"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -179,7 +179,7 @@ error | 如未遵循此样式，“错误列表”中会显示编译器错误。
 
 以下 .editorconfig 文件包含命名约定，该约定指定公共属性、方法、字段、事件和委托必须采用大写形式。 请注意，此命名约定指定了多种应用规则的符号，以逗号分隔。
 
-```EditorConfig
+```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -199,7 +199,7 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 
 现在，将冲突严重性更改为 `warning`：
 
-```EditorConfig
+```ini
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 

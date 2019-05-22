@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692329"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -51,7 +51,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 * “引用”节点包含属于 NuGet 包的所有程序集列表。
 * “包”节点显示每个已下载的 NuGet 包。 可以更新该列表中的包，或从列表中删除包。
-* “packages.config”文件将添加到此项目。 IDE 使用此 XML 文件跟踪该项目中引用的包版本。 不应手动编辑此文件，而是应将其保存在版本控制中。 请注意，可以使用 project.json 文件，而不是 packages.config 文件。 project.json 文件是通过 NuGet 3 引入的新的包文件格式，支持可传递还原。 有关 project.json 的详细信息，请参阅 [NuGet 文档](http://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手动添加 project.json 文件，关闭项目并重新打开后才能在 Visual Studio for Mac 中使用 project.json 文件。
+* “packages.config”文件将添加到此项目。 IDE 使用此 XML 文件跟踪该项目中引用的包版本。 不应手动编辑此文件，而是应将其保存在版本控制中。 请注意，可以使用 project.json 文件，而不是 packages.config 文件。 project.json 文件是通过 NuGet 3 引入的新的包文件格式，支持可传递还原。 有关 project.json 的详细信息，请参阅 [NuGet 文档](https://docs.microsoft.com/NuGet/Schema/Project-Json)。 需要手动添加 project.json 文件，关闭项目并重新打开后才能在 Visual Studio for Mac 中使用 project.json 文件。
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 包
 

@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2957cb0a45b0cec6f50ef6228b798ce8279f456c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568351"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685394"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,4 +80,4 @@ ms.locfileid: "62568351"
   
 ## <a name="see-also"></a>请参阅  
  [实验实例](../extensibility/the-experimental-instance.md)   
- [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [域特定语言工具术语表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
