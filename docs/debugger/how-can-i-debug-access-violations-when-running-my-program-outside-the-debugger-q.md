@@ -1,5 +1,5 @@
 ---
-title: 运行在调试器外部应用程序时调试访问冲突 |Microsoft Docs
+title: 运行调试器外部的应用程序时调试访问冲突
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d42dd206117885a23a6c1c15c712be4dc4cd8fe2
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895086"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177672"
 ---
-# <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在调试器外部运行程序时，如何调试访问冲突？
+# <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>在调试器外部运行程序时如何调试访问冲突？
 
 ## <a name="problem-description"></a>问题描述
  我的程序在 Visual Studio 环境中运行良好，但在 Windows 操作系统中独立运行时发生访问冲突。  如何调试该问题？

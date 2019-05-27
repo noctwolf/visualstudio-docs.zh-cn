@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 961388298dffa936d00b948424ae7312293e72ea
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458714"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212961"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 获取引用的选定子级的列表。 留待将来使用。
@@ -50,29 +50,23 @@ int EnumChildren ( 
 ```
 
 ## <a name="parameters"></a>参数
- `dwFields`\
+`dwFields`\
+[in]中的标志的组合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构是必填。
 
- [in]中的标志的组合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构是必填。
+`dwRadix`\
+[in]用于格式化数值的任何信息的基数。
 
- `dwRadix`\
+`dwAttribFilter`\
+[in]中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)作为筛选器结合使用的枚举`pszNameFilter`参数选择的结构是要枚举。
 
- [in]用于格式化数值的任何信息的基数。
+`pszNameFilter`\
+[in]一个字符串，指定筛选器，例如"MyX"，与结合使用`dwAttribFilter`参数选择要枚举的结构。
 
- `dwAttribFilter`\
+`dwTimeout`\
+[in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
- [in]中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)作为筛选器结合使用的枚举`pszNameFilter`参数选择的结构是要枚举。
-
- `pszNameFilter`\
-
- [in]一个字符串，指定筛选器，例如"MyX"，与结合使用`dwAttribFilter`参数选择要枚举的结构。
-
- `dwTimeout`\
-
- [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
-
- `ppEnum`\
-
- [out]返回[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)对象，其中包含请求的子属性的列表。
+`ppEnum`\
+[out]返回[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)对象，其中包含请求的子属性的列表。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。

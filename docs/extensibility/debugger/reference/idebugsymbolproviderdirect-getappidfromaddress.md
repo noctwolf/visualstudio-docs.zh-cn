@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb90dbb44b274e84c7cc22d09249b26b6ee491f1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 86f4aaa20fb034af15895c79a372bc4f2c47fc87
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458279"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207064"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
 检索给定的调试地址的应用程序域标识符。
@@ -41,13 +41,11 @@ int GetAppIDFromAddress(
 ```
 
 ## <a name="parameters"></a>参数
- `pAddress`\
+`pAddress`\
+[in]调试由表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- [in]调试由表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
-
- `pAppID`\
-
- [out]应用程序域的标识符。
+`pAppID`\
+[out]应用程序域的标识符。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

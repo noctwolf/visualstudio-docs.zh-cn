@@ -1,7 +1,7 @@
 ---
 title: FxCop 代码分析和 FxCop 分析器
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613552"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037262"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>有关 FxCop 和 FxCop 分析器的常见问题解答
 
@@ -48,6 +48,10 @@ FxCop 分析器基于 .NET Compiler Platform（“Roslyn”）。 [将它们安�
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>哪些规则已经移植到 FxCop 分析器？
+
+有关信息的静态代码分析规则都已进行迁移到[FxCop 分析器](install-fxcop-analyzers.md)，请参阅[Fxcop 规则端口状态](fxcop-rule-port-status.md)。
 
 ## <a name="see-also"></a>请参阅
 

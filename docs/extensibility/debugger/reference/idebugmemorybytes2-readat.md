@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873306"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210558"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 读取给定位置处开始的字节序列。
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pStartContext`
+## <a name="parameters"></a>参数
+`pStartContext`\
+[in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象，它指定位置开始读取字节数。
 
- [in][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)对象，它指定位置开始读取字节数。
+`dwCount`\
+[in]要读取的字节数。 此外可以指定的长度`rgbMemory`数组。
 
- `dwCount`
+`rgbMemory`\
+[in、 out]实际读取字节填充的数组。
 
- [in]要读取的字节数。 此外可以指定的长度`rgbMemory`数组。
+`pdwRead`\
+[out]返回实际读取的连续字节数。
 
- `rgbMemory`
-
- [in、 out]实际读取字节填充的数组。
-
- `pdwRead`
-
- [out]返回实际读取的连续字节数。
-
- `pdwUnreadable`
-
- [in、 out]返回不可读字节数。 如果客户端不愿意在不可读字节数可能为 null 值。
+`pdwUnreadable`\
+[in、 out]返回不可读字节数。 如果客户端不愿意在不可读字节数可能为 null 值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

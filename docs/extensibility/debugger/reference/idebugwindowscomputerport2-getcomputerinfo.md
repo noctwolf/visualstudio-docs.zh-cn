@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1894c5488c6d9405f8b1d84ae2cb2d497fb0542b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4404e714156a058db18f5284cc7adc8f4a23d1c5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226156"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199292"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 检索有关计算机上的信息的调试器中运行。
@@ -39,9 +39,8 @@ public int GetComputerInfo(
 ```
 
 ## <a name="parameters"></a>参数
- `pInfo`\
-
- [out]对包含计算机信息的结构的引用。
+`pInfo`\
+[out]对包含计算机信息的结构的引用。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

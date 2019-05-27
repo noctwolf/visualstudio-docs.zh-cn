@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6738c70b75ff1e2f393b59e330ce57f2232de61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0721e8f8a30a8736f6d52ea61e02b9a93821a98
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918523"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203015"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 调试引擎的地址空间中创建托管对象的副本。
@@ -36,10 +39,9 @@ int GetManagedDebugObject(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppObject`
-
- [out]返回[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)对象，表示新创建的托管的对象。
+## <a name="parameters"></a>参数
+`ppObject`\
+[out]返回[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)对象，表示新创建的托管的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。 如果此返回 E_FAIL [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)不表示托管的值类实例。

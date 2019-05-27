@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64d165fedf791e26cf291ed4b6255de81873953a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0e9ac6654748e05781db6967b93e3d3b4068d61
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871811"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209121"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 获取指定的端口上运行的进程。
@@ -38,14 +41,12 @@ int GetProcess( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ProcessId`
+## <a name="parameters"></a>参数
+`ProcessId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构，它指定的进程标识符。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构，它指定的进程标识符。
-
- `ppProcess`
-
- [out]返回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)表示进程的对象。
+`ppProcess`\
+[out]返回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)表示进程的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

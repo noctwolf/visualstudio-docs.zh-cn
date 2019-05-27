@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817808"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847435"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>“选项”->“文本编辑器”->“C#”>“代码样式”->“格式设置”
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>“选项”对话框：文本编辑器 \> C# \> 代码样式 \> 格式设置
 
-通过“格式设置”选项页面，可在代码编辑器中设定代码格式设置选项。 要访问此选项页，请选择“工具” > 选项”。 在“选项”对话框中，选择“文本编辑器” > “C#” > “代码样式” > “格式设置”。
+在代码编辑器中使用“格式设置”选项页及其子页（[“缩进”](#indentation-page)、“新行”、“间距”和“换行”）为格式设置代码设置选项。
 
-## <a name="general-page"></a>常规页
+要访问此选项页，请从菜单栏选择“工具” > 选项”。 在“选项”对话框中，选择“文本编辑器” > “C#” > “代码样式” > “格式设置”。
+
+> [!TIP]
+> “缩进”、“新行”、“间距”和“换行”子页均在底部显示一个预览窗口，其中显示每个选项的效果。 若要使用预览窗口，请选择一个格式设置选项。 预览窗口显示选定选项的示例。 通过选择单选按钮或复选框更改设置时，会更新预览窗口，使其显示出新设置的效果。
+
+## <a name="formatting-general-page"></a>“格式设置(常规)”页
 
 ### <a name="general-settings"></a>常规设置
 
@@ -43,9 +48,17 @@ ms.locfileid: "62817808"
 |返回时自动格式化|如果选中此项，将在按 Enter 时设置文本的格式，使其与为编辑器选择的格式设置选项一致。|
 |粘贴时自动设置格式|如果选中此项，设置粘贴到编辑器中的文本的格式，使其与为编辑器选择的格式设置选项一致。|
 
+::: moniker range="vs-2019"
+
+如果之前在 Visual Studio 2017 中使用“设置文档格式”命令为 C# 文件应用代码样式设置，则该功能现作为[“代码清理”](../code-styles-and-code-cleanup.md#apply-code-styles)提供。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>“设置文档格式”设置
 
-这些设置配置“设置文档格式”命令以对文件执行其他代码清理。 有关如何应用这些设置的详细信息，请参阅[“设置文档格式”命令](../code-styles-and-quick-actions.md#format-document-command)。
+这些设置配置“设置文档格式”命令以对文件执行其他代码清理。 有关如何应用这些设置的详细信息，请参阅[“设置文档格式”命令](../code-styles-and-code-cleanup.md#apply-code-styles)。
 
 |Label|说明|相应的 EditorConfig 和工具 > 选项规则|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ ms.locfileid: "62817808"
 
 ![Visual Studio 中 C# 的代码清理设置](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>预览窗口
+::: moniker-end
 
-“缩进”、“新行”、“间距”和“换行”子页均在底部显示一个预览窗口。 预览窗口显示每个选项的效果。 若要使用预览窗口，请选择一个格式设置选项。 预览窗口显示选定选项的示例。 通过选择单选按钮或复选框更改设置时，会更新预览窗口，使其显示出新设置的效果。
+## <a name="indentation-page"></a>“缩进”页
 
-## <a name="indentation-remarks"></a>缩进备注
+自动设置代码的格式时，将应用此页上的“缩进”选项。 自动设置代码格式的一个示例情形是，在选中“粘贴时自动设置格式”的情况下将代码粘贴到文件中时。 （“粘贴时自动设置格式”选项位于“格式设置” > “常规”下。）
 
-每种语言下，“选项卡”页的缩进选项仅确定你在行尾按 Enter 时，代码编辑器将光标置于何处。 自动设置代码的格式时应用“格式设置”下的缩进选项，例如在选中“粘贴时自动设置格式”的情况下将代码粘贴到文件中，以及在手动键入要设置格式的代码块时。
+![Visual Studio 中的 C# 文本编辑器缩进选项](media/csharp-indentation-options.png)
+
+> [!TIP]
+> 此外，在“文本编辑器” > “C#” > “选项卡”选项页上还有缩进选项。 这些选项仅确定你在行尾按 Enter 时，代码编辑器将光标置于何处。
+>
+> ![Visual Studio 中的 C# 文本编辑器选项卡选项](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>请参阅
 

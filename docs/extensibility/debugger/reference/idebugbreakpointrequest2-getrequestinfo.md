@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90e813bd12a5dbdbe98f2cd0032e6c79ada37159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8583afe300fa441cf086163dae97ba1b8b958a96
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876824"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199809"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 获取描述此断点请求的断点请求信息。
@@ -38,14 +41,12 @@ int GetRequestInfo( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+`dwFields`\
+[in]中的标志的组合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)枚举，它确定中的哪些字段`pBPRequestInfo`参数是要填写。
 
- [in]中的标志的组合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)枚举，它确定中的哪些字段`pBPRequestInfo`参数是要填写。
-
- `pBPRequestInfo`
-
- [out]指定[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构，以填充断点请求的说明。
+`pBPRequestInfo`\
+[out]指定[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构，以填充断点请求的说明。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

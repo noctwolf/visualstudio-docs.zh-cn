@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27acdda0dad152bcb18c4bef304b97190444c63d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc51b89061dca3c0d3026b391b8d6b0106421542
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413142"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202351"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 此方法获取进程的当前编辑并继续状态。 自定义端口提供程序应始终返回`E_NOTIMPL`。
@@ -36,10 +39,9 @@ int GetENCAvailableState(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pReason`
-
- [out]中的值[EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)枚举。
+## <a name="parameters"></a>参数
+`pReason`\
+[out]中的值[EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)枚举。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为将返回错误代码。

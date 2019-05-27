@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 071dac72e39a3cce5b0b17dc9e401b9072efda6a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 86429e4ffe46fc182ea923f249bd5492dd433812
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224052"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207193"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 此方法获取用于编译调试地址处的代码的语言。
@@ -44,17 +44,14 @@ int GetLanguage(
 ```
 
 ## <a name="parameters"></a>参数
- `pAddress`\
+`pAddress`\
+[in]一个地址对象所表示[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- [in]一个地址对象所表示[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
+`pguidLanguage`\
+[out]返回`GUID`指定的语言。
 
- `pguidLanguage`\
-
- [out]返回`GUID`指定的语言。
-
- `pguidLanguageVendor`\
-
- [out]返回`GUID`，它指定的语言供应商。
+`pguidLanguageVendor`\
+[out]返回`GUID`，它指定的语言供应商。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

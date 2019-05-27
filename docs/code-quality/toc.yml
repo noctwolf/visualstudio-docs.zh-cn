@@ -383,6 +383,8 @@
               href: ca1505-avoid-unmaintainable-code.md
             - name: 'CA1506:避免过度类耦合度'
               href: ca1506-avoid-excessive-class-coupling.md
+            - name: CA1507：使用 nameof 代替字符串
+              href: ca1507.md
         - name: 移动性警告
           items:
             - name: 移动性警告

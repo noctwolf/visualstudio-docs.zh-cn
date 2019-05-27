@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ec34fc2bc8d7dea08580903788ef271f7167cf8a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226200"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199566"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 获取描述此线程的属性。
@@ -43,12 +43,10 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>参数
 `dwFields`\
-
- [in]中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚举，它确定的哪些字段`ptp`要填充的。
+[in]中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚举，它确定的哪些字段`ptp`要填充的。
 
 `ptp`\
-
- [in、 out]一个[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)填充线程的属性的结构。
+[in、 out]一个[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)填充线程的属性的结构。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

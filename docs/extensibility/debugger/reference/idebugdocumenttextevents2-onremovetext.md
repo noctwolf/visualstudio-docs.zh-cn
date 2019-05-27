@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df0504515d8ddacb4e21918cefffe76f8e96d6a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8fc140330330a278e29c84b8e146fda20eeed399
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875283"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203310"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 通知调试程序包已从文档中删除文本。
@@ -38,14 +41,12 @@ int onRemoveText( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pos`
+## <a name="parameters"></a>参数
+`pos`\
+[in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)指示移除文本的结构。
 
- [in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)指示移除文本的结构。
-
- `dwNumToRemove`
-
- [in]指定已删除的文本的字符的数。
+`dwNumToRemove`\
+[in]指定已删除的文本的字符的数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

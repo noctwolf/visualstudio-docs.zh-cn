@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9deaf32a88d476895feab006cbe3b818d11b97ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d56d80a10967f2ed0da82ad79905914874e73df1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873947"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200765"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
 调用函数，并返回结果值作为对象。
@@ -42,22 +45,18 @@ int Evaluate(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppParams`
+## <a name="parameters"></a>参数
+`ppParams`\
+[in]一个数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示输入的参数的对象。 其中每个参数之一创建`Create`中的方法[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)接口。
 
- [in]一个数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示输入的参数的对象。 其中每个参数之一创建`Create`中的方法[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)接口。
+`dwParams`\
+[in]中的参数数量`ppParams`数组。
 
- `dwParams`
+`dwTimeout`\
+[in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。
 
- [in]中的参数数量`ppParams`数组。
-
- `dwTimeout`
-
- [in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。
-
- `ppResult`
-
- [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示函数作为对象的值。
+`ppResult`\
+[out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示函数作为对象的值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

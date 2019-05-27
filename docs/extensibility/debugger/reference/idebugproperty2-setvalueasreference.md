@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec4ee2e7ca497a6bd3429447a1d66d6b216259cf
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5821518a40cb474f17bf1c7fc1ef41326f2bffcb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457772"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200228"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 将此属性的值设置为给定引用的值。
@@ -46,21 +46,17 @@ int SetValueAsReference(
 ```
 
 ## <a name="parameters"></a>参数
- `rgpArgs`\
+`rgpArgs`\
+[in]要传递给托管的代码属性 setter 参数的数组。 如果属性 setter 不采用自变量，或如果此[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象不是此类属性 setter，指`rgpArgs`应为 null 值。 此参数通常是一个 null 值。
 
- [in]要传递给托管的代码属性 setter 参数的数组。 如果属性 setter 不采用自变量，或如果此[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象不是此类属性 setter，指`rgpArgs`应为 null 值。 此参数通常是一个 null 值。
+`dwArgCount`\
+[in]中的参数数目`rgpArgs`数组。
 
- `dwArgCount`\
+`pValue`\
+[in]中的窗体的引用[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象，用于设置此属性的值。
 
- [in]中的参数数目`rgpArgs`数组。
-
- `pValue`\
-
- [in]中的窗体的引用[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象，用于设置此属性的值。
-
- `dwTimeout`\
-
- [in]需要设置值，以毫秒为单位的时间。 典型值为`INFINITE`。 这会影响任何可能的评估需要花费的时间的长度。
+`dwTimeout`\
+[in]需要设置值，以毫秒为单位的时间。 典型值为`INFINITE`。 这会影响任何可能的评估需要花费的时间的长度。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码，通常下列项之一：

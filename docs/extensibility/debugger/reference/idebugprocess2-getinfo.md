@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d2a3b8b1ef028562502454994da18e799b8f28b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2970a4d2c65c56ab2e16ca51dbca6556bee1d040
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871091"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202613"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 获取过程的说明。
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `Fields`
+## <a name="parameters"></a>参数
+`Fields`\
+[in]中值的组合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)枚举，用于指定的哪些字段`pProcessInfo`参数是要填充。
 
- [in]中值的组合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)枚举，用于指定的哪些字段`pProcessInfo`参数是要填充。
-
- `pProcessInfo`
-
- [out]一个[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)填充过程的描述的结构。
+`pProcessInfo`\
+[out]一个[PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)填充过程的描述的结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

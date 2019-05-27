@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d4e8e919f69736025eb211dfd46ee72f461839d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 52d2d628f9fcbc2279096a12117951f4c02f8bf4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921009"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207570"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 以便不再由调试引擎中移除指定的异常。
@@ -36,10 +39,9 @@ int RemoveSetException( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pException`
-
- [in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构描述要删除的异常。
+## <a name="parameters"></a>参数
+`pException`\
+[in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构描述要删除的异常。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

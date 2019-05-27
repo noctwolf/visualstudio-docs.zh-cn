@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188cc4e8b1c58a7fd8f9f1c99b8d5f544710ef8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02bc1245026480f97bcc21f1af086f87284022df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875842"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205413"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 获取作为字节的 blob 的属性信息。
@@ -38,14 +41,12 @@ int GetAttributeBytes(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppBlob`
+## <a name="parameters"></a>参数
+`ppBlob`\
+[in、 out]填充属性字节数组。
 
- [in、 out]填充属性字节数组。
-
- `pdwLen`
-
- [in、 out]指定要在中返回的字节的最大数`ppBlob`数组并返回实际写入到的数组的字节数。
+`pdwLen`\
+[in、 out]指定要在中返回的字节的最大数`ppBlob`数组并返回实际写入到的数组的字节数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

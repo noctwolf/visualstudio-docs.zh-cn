@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0763a4191f011748c6c5145a250459c4b9b4cf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e27d69f89ad29121dbafaca1787bdd870fa75634
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921713"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204882"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 将读取的指针移动反汇编流给定数量的相对于指定位置的说明中。
@@ -42,22 +45,18 @@ int Seek( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwSeekStart`
+## <a name="parameters"></a>参数
+`dwSeekStart`\
+[in]中的值[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)枚举，用于指定开始查找过程的相对位置。
 
- [in]中的值[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)枚举，用于指定开始查找过程的相对位置。
+`pCodeContext`\
+[in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，表示查找操作是相对于代码上下文。 仅当使用此参数`dwSeekStart`  =  `SEEK_START_CODECONTEXT`; 否则为此参数将被忽略并且可以为 null 值。
 
- `pCodeContext`
+`uCodeLocationId`\
+[in]查找操作是相对于代码位置标识符。 如果使用此参数`dwSeekStart`  =  `SEEK_START_CODELOCID`; 否则为此参数将被忽略，可以设置为 0。 请参阅备注部分[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法有关的代码位置标识符的说明。
 
- [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，表示查找操作是相对于代码上下文。 仅当使用此参数`dwSeekStart`  =  `SEEK_START_CODECONTEXT`; 否则为此参数将被忽略并且可以为 null 值。
-
- `uCodeLocationId`
-
- [in]查找操作是相对于代码位置标识符。 如果使用此参数`dwSeekStart`  =  `SEEK_START_CODELOCID`; 否则为此参数将被忽略，可以设置为 0。 请参阅备注部分[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法有关的代码位置标识符的说明。
-
- `iInstructions`
-
- [in]要移动相对于指定的位置的指令数`dwSeekStart`。 此值可以是负数，以向后移动。
+`iInstructions`\
+[in]要移动相对于指定的位置的指令数`dwSeekStart`。 此值可以是负数，以向后移动。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 返回`S_FALSE`如果搜寻位置到可用的指令的一个点，该列表。 否则，返回错误代码。

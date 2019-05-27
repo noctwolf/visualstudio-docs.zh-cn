@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d770922203b92a533650a7eadf754effa3f24c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 368b076f592cff44e95e7156265c049a143fe1a3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922327"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205815"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 创建容器的字段的枚举器。
@@ -44,26 +47,21 @@ int EnumFields(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwKindFilter`
+## <a name="parameters"></a>参数
+`dwKindFilter`\
+[in]组合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)选择要枚举的字段的常量。 字段类型可以描述存储类型，如类或基元，或特定的信息，如本地、 参数或"this"指针。
 
- [in]组合[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)选择要枚举的字段的常量。 字段类型可以描述存储类型，如类或基元，或特定的信息，如本地、 参数或"this"指针。
+`dwModifiersFilter`\
+[in]组合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)选择要枚举的字段的常量。 字段修饰符可以是访问权限，如公共或私有或存储信息，如虚拟、 静态的或最后一个。
 
- `dwModifiersFilter`
+`pszNameFilter`\
+[in]要枚举的字段的名称。 如果要返回所有字段，这可以是 null 值。
 
- [in]组合[FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)选择要枚举的字段的常量。 字段修饰符可以是访问权限，如公共或私有或存储信息，如虚拟、 静态的或最后一个。
+`nameMatch`\
+[in]中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举，用于控制是否搜索是否区分大小写。
 
- `pszNameFilter`
-
- [in]要枚举的字段的名称。 如果要返回所有字段，这可以是 null 值。
-
- `nameMatch`
-
- [in]中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举，用于控制是否搜索是否区分大小写。
-
- `ppEnum`
-
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示的字段的列表。 如果没有字段，则返回 null 值。
+`ppEnum`\
+[out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示的字段的列表。 如果没有字段，则返回 null 值。
 
 ## <a name="return-value"></a>返回值
  如果成功，返回 S_OK 或 S_FALSE 如果没有字段。 否则，返回错误代码。

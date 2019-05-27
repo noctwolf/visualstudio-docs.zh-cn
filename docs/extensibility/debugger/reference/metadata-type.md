@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3541181e0141e20381be7cdd24a45d7c7a0704ec
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 72434834af748ae9c11b9ac8a43d1f71848aca81
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458046"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212791"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此结构指定从元数据字段类型有关的信息。
@@ -45,15 +45,12 @@ public struct METADATA_TYPE {
 
 ## <a name="parameters"></a>参数
  `ulAppDomainID`\
-
  符号所来自的应用程序 ID。 这用于唯一标识应用程序的实例。
 
  `guidModule`\
-
  包含此字段的模块的 GUID。
 
  `tokClass`\
-
  此类型的元数据令牌 ID。
 
  [C++]`_mdToken`是`typedef`适用于 32 位`int`。

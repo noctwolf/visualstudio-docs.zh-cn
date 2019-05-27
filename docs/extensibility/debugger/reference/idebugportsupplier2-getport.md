@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65b2d8264ef75c46de32ee65d994794d526c7ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ed00f3e4e6dbdb61e7a9ca39974e73f25246724
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871416"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204436"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 获取一个端口从端口提供程序。
@@ -38,14 +41,12 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `guidPort`
+## <a name="parameters"></a>参数
+`guidPort`\
+[in]该端口的全局唯一标识符 (GUID)。
 
- [in]该端口的全局唯一标识符 (GUID)。
-
- `ppPort`
-
- [out]返回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象表示的端口。
+`ppPort`\
+[out]返回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象表示的端口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_PORTSUPPLIER_NO_PORT`如果任何端口不存在具有给定的标识符。

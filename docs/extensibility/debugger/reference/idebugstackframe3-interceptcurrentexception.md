@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c38d8c1c2f06701d1e0a34560b674aa62292a803
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4341542c48465af026280d5b7b13a8e10bafe40a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457389"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203250"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 当它想要截获的当前异常时由当前堆栈帧上的调试器调用。
@@ -42,13 +42,11 @@ int InterceptCurrentException(
 ```
 
 ## <a name="parameters"></a>参数
- `dwFlags`\
+`dwFlags`\
+[in]指定不同的操作。 目前，仅[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支持，并且必须指定。
 
- [in]指定不同的操作。 目前，仅[INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md)值`IEA_INTERCEPT`支持，并且必须指定。
-
- `pqwCookie`\
-
- [out]标识特定异常的唯一值。
+`pqwCookie`\
+[out]标识特定异常的唯一值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

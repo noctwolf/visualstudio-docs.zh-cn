@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d819f198c0eb3c298726ffb1c910b0a985406827
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461026"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212807"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 此结构表示类的方法的地址。
@@ -45,17 +45,14 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>成员
  `tokMethod`\
-
  该方法的 ID。
 
  [C++]`_mdToken`是`typedef`适用于 32 位`int`。
 
  `dwOffset`\
-
  从类开始到此方法 （可以代表偏移量到 vtable） 的偏移量。
 
  `dwVersion`\
-
  （此值是唯一的符号提供程序） 的方法的版本。
 
 ## <a name="remarks"></a>备注

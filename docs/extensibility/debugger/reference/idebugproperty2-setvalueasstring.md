@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 310d2e3cd8c7f1caea4e245c7c591cd402afdaf4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ba8a7ab97c9b2fc405e10eb70246a049b4083993
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458871"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200209"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 从给定字符串中设置属性的值。
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>参数
- `pszValue`\
+`pszValue`\
+[in]包含要设置的值的字符串。
 
- [in]包含要设置的值的字符串。
+`nRadix`\
+[in]用于解释任何数字信息的基数。 这可以是 0，以尝试自动确定基数。
 
- `nRadix`\
-
- [in]用于解释任何数字信息的基数。 这可以是 0，以尝试自动确定基数。
-
- `dwTimeout`\
-
- [in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。
+`dwTimeout`\
+[in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。 下表显示了其他可能的值。

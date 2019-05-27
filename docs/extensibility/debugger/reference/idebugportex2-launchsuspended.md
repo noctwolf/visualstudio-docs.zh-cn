@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d554c4906867ca28cfab295ebea80cca15dcc879
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918307"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209021"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 启动可执行文件。
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszExe`
+## <a name="parameters"></a>参数
+`pszExe`\
+[in]若要启动的可执行文件的名称。 这可以是完整路径或相对于工作目录中指定`pszDir`参数。
 
- [in]若要启动的可执行文件的名称。 这可以是完整路径或相对于工作目录中指定`pszDir`参数。
+`pszArgs`\
+[in]要传递给可执行文件的参数。 如果没有任何自变量可能为 null 值。
 
- `pszArgs`
+`pszDir`\
+[in]使用的可执行文件的工作目录的名称。 如果没有工作目录是必需的可能为 null 值。
 
- [in]要传递给可执行文件的参数。 如果没有任何自变量可能为 null 值。
+`bstrEnv`\
+[in]以 null 结尾的字符串后, 跟其他的 NULL 结束符的环境块。
 
- `pszDir`
+`hStdInput`\
+[in]其他输入流的句柄。 如果不需要重定向，则可能为 0。
 
- [in]使用的可执行文件的工作目录的名称。 如果没有工作目录是必需的可能为 null 值。
+`hStdOutput`\
+[in]备用输出流的句柄。 如果不需要重定向，则可能为 0。
 
- `bstrEnv`
+`hStdError`\
+[in]备用错误输出流的句柄。 如果不需要重定向，则可能为 0。
 
- [in]以 null 结尾的字符串后, 跟其他的 NULL 结束符的环境块。
-
- `hStdInput`
-
- [in]其他输入流的句柄。 如果不需要重定向，则可能为 0。
-
- `hStdOutput`
-
- [in]备用输出流的句柄。 如果不需要重定向，则可能为 0。
-
- `hStdError`
-
- [in]备用错误输出流的句柄。 如果不需要重定向，则可能为 0。
-
- `ppPortProcess`
-
- [out]返回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)对象，表示启动的进程。
+`ppPortProcess`\
+[out]返回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)对象，表示启动的进程。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e57d3deac01b00f1f332b34075d74f6402235f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d4273d1c8bff6f07fdcf12b5b324d8d42eb08799
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224027"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199727"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 调试引擎不会实现此方法。
@@ -42,13 +42,11 @@ int GetLogicalThread( 
 ```
 
 ## <a name="parameters"></a>参数
- `pStackFrame`\
+`pStackFrame`\
+[in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)对象，表示堆栈帧。
 
- [in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)对象，表示堆栈帧。
-
- `ppLogicalThread`\
-
- [out]返回`IDebugLogicalThread2`接口，表示关联的逻辑线程。 调试引擎实现应设置为 null 值。
+`ppLogicalThread`\
+[out]返回`IDebugLogicalThread2`接口，表示关联的逻辑线程。 调试引擎实现应设置为 null 值。
 
 ## <a name="return-value"></a>返回值
  调试引擎实现始终返回`E_NOTIMPL`。

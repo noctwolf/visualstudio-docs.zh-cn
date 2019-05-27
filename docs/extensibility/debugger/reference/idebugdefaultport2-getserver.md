@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cbfc81495c1f2319117a236246f1e7c47f3e582
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9210a8ee984d5725d16d646471be0f469aee92f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875979"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205094"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 此方法获取此端口的服务器的接口。
@@ -36,10 +39,9 @@ int GetServer(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppServer`
-
- [out]返回一个对象，实现[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)接口。
+## <a name="parameters"></a>参数
+`ppServer`\
+[out]返回一个对象，实现[IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

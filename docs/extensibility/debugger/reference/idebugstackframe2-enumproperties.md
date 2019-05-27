@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 427e76036329eef95398787a87d795538c480ba7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457514"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208720"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 创建与该堆栈帧，如本地变量关联的属性的枚举器。
@@ -50,29 +50,23 @@ int EnumProperties ( 
 ```
 
 ## <a name="parameters"></a>参数
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in]中的标志的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是必填。
 
- [in]中的标志的组合[DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)枚举，用于指定哪些字段中枚举[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是必填。
+`nRadix`\
+[in]用于格式化数值的任何信息的基数。
 
- `nRadix`\
+`refiid`\
+[in]筛选器用于选择其中一个 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是否进行枚举，如`guidFilterLocals`。
 
- [in]用于格式化数值的任何信息的基数。
+`dwTimeout`\
+[in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
- `refiid`\
+`pcelt`\
+[out]返回枚举的属性的数目。 这是调用相同[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
 
- [in]筛选器用于选择其中一个 GUID [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构是否进行枚举，如`guidFilterLocals`。
-
- `dwTimeout`\
-
- [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
-
- `pcelt`\
-
- [out]返回枚举的属性的数目。 这是调用相同[GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md)方法。
-
- `ppEnum`\
-
- [out]返回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，其中包含所需属性的列表。
+`ppEnum`\
+[out]返回[IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，其中包含所需属性的列表。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

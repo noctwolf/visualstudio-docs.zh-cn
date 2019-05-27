@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 080af74ee83c5a2816cc5e7a89f29c59d2b75c7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ac19bd3ed139b15744e408b7114c6879a17e2c61
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842990"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199868"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 获取字段或变量 （如果有），可能会支持此对象表示的属性。
@@ -36,10 +39,9 @@ int GetBackingFieldForProperty(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppObject`
-
- [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)描述支持字段的对象。
+## <a name="parameters"></a>参数
+`ppObject`\
+[out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)描述支持字段的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

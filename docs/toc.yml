@@ -16,10 +16,10 @@
   items:
     - name: 安装 Visual Studio
       href: install/install-visual-studio.md
-    - name: 帐户
+    - name: 个性化帐户
       items:
         - name: 登录 Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: 使用多个用户帐户
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: 修改 Visual Studio
       href: install/modify-visual-studio.md
-    - name: 安装 Help Viewer
-      href: help-viewer/installation.md
     - name: 修复 Visual Studio
       href: install/repair-visual-studio.md
     - name: 卸载 Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Visual Studio 管理员指南
       items:
-        - name: 管理员指南
+        - name: 概述
           href: install/visual-studio-administrator-guide.md
         - name: 使用命令行
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: 容器的已知问题
           href: install/build-tools-container-issues.md
+    - name: 安装 Help Viewer
+      href: help-viewer/installation.md
 - name: 快速入门
   items:
     - name: Visual Studio 入门
@@ -231,6 +231,8 @@
               items:
                 - name: 创建项目和项模板
                   href: ide/creating-project-and-item-templates.md
+                - name: 将标记添加到模板
+                  href: ide/template-tags.md
                 - name: 创建项目模板
                   href: ide/how-to-create-project-templates.md
                 - name: 创建多项目模板

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458891"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211602"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 获取扩展的属性信息。
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>参数
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in]确定要检索的扩展信息的类型的 GUID。 有关详细信息，请参阅备注。
 
- [in]确定要检索的扩展信息的类型的 GUID。 有关详细信息，请参阅备注。
-
- `pExtendedInfo`\
-
- [out]返回`VARIANT`(C++) 或对象 (C#) 可用于检索的扩展的属性信息。 例如，此参数可能会返回`IUnknown`接口，可用于查询[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口。 有关详细信息，请参阅备注。
+`pExtendedInfo`\
+[out]返回`VARIANT`(C++) 或对象 (C#) 可用于检索的扩展的属性信息。 例如，此参数可能会返回`IUnknown`接口，可用于查询[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口。 有关详细信息，请参阅备注。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。 返回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果没有要检索的扩展的信息。

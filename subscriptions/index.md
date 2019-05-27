@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 欢迎使用 Visual Studio 订阅
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579937"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976109"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 订阅
 
@@ -169,7 +169,7 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                 <div class="card">
                     <div class="cardText">
                         <h3>云服务</h3>
-                        <p>通过 Visual Studio 订阅，可以获取月度 Azure 抵用额度和免费访问 Azure 服务的权限、开发和测试费用折扣，以及专门为订户提供的图片库和预配置虚拟机的访问权限。 具体取决于你的订阅，云服务可能包括：</p>
+                        <p>通过 Visual Studio 订阅，可以获取月度 Azure 额度，以访问 Azure 服务、开发和测试费用折扣，以及专门为订户提供的图片库和预配置的虚拟机。 具体取决于你的订阅，云服务可能包括：</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 203e9741afa832ba0515a06b21ba1899e1355e1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458648"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211874"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 设置引用的另一个引用值。 留待将来使用。
@@ -46,21 +46,17 @@ int SetValueAsReference ( 
 ```
 
 ## <a name="parameters"></a>参数
- `rgpArgs`\
+`rgpArgs`\
+[in]一个数组[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象用于确定如何设置引用值。
 
- [in]一个数组[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象用于确定如何设置引用值。
+`dwArgCount`\
+[in]数组中引用的数目。
 
- `dwArgCount`\
+`pValue`\
+[in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象从其设置属性值。
 
- [in]数组中引用的数目。
-
- `pValue`\
-
- [in][IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象从其设置属性值。
-
- `dwTimeout`\
-
- [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
+`dwTimeout`\
+[in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。

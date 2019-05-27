@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c9e660e27397c530d4ef06c8ddfa3312ee4888cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458985"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203726"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 允许接收端口事件通知的过程。
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>参数
- `Flags`\
-
- [in]中的标志的组合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)枚举。 下列标志则典型的此调用：
+`Flags`\
+[in]中的标志的组合[PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)枚举。 下列标志则典型的此调用：
 
 |Flag|描述|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|调用方已附加到但不是启动调试器。|
 |`PFLAG_REASON_WATCH`|调用方想要监视事件。 如果未设置此标志。 然后删除回调事件和调用方不会再收到通知。|
 
- `pPort`\
+`pPort`\
+[in]调用进程的端口上运行。
 
- [in]调用进程的端口上运行。
+`processId`\
+[in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)保存包含该程序的进程的 ID 相关的结构。
 
- `processId`\
+`EngineFilter`\
+[in]与进程关联的调试引擎的 Guid 的数组。
 
- [in][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)保存包含该程序的进程的 ID 相关的结构。
+`guidLaunchingEngine`\
+[in]启动此过程 （如果有） 的调试引擎的 GUID。
 
- `EngineFilter`\
-
- [in]与进程关联的调试引擎的 Guid 的数组。
-
- `guidLaunchingEngine`\
-
- [in]启动此过程 （如果有） 的调试引擎的 GUID。
-
- `pEventCallback`\
-
- [in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的对象。
+`pEventCallback`\
+[in][IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)接收事件通知的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

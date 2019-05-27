@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13939a4c469c41d1d0726bb60aa443ab8fb9e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3fd0adf7d990c133b29dac724b863bc5608ac433
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919912"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200892"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 此方法获取包含局部变量、 参数以及方法的其他属性的属性对象。
@@ -44,26 +47,21 @@ int GetMethodProperty(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pSymbolProvider`
+## <a name="parameters"></a>参数
+`pSymbolProvider`\
+[in]符号提供程序使用，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)对象。
 
- [in]符号提供程序使用，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)对象。
+`pAddress`\
+[in]在代码中，表示为地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象应被解析为最接近的包含函数。
 
- `pAddress`
+`pBinder`\
+[in]要使用的联编程序表示为[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)对象。
 
- [in]在代码中，表示为地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象应被解析为最接近的包含函数。
+`fIncludeHiddenLocals`\
+[in]非零值 (`TRUE`) 表示包含隐藏局部变量; 零 (`FALSE`) 意味着若要忽略隐藏局部变量
 
- `pBinder`
-
- [in]要使用的联编程序表示为[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)对象。
-
- `fIncludeHiddenLocals`
-
- [in]非零值 (`TRUE`) 表示包含隐藏局部变量; 零 (`FALSE`) 意味着若要忽略隐藏局部变量
-
- `ppProperty`
-
- [out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的方法的对象。
+`ppProperty`\
+[out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的方法的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 06d2c04cdfacc2723e716eff88d3d5acf6c229b6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874621"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199992"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 获取断点错误解决方法信息。
@@ -38,13 +41,11 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>参数
-`dwFields`
-
+## <a name="parameters"></a>参数
+`dwFields`\
 [in]中的标志的组合[BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)枚举，用于确定哪些字段的`pErrorResolutionInfo`要填写。
 
-`pErrorResolutionInfo`
-
+`pErrorResolutionInfo`\
 [in、 out][BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)填充的断点解决方法说明的结构。
 
 ## <a name="return-value"></a>返回值

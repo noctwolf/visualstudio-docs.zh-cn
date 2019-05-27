@@ -1,5 +1,5 @@
 ---
-title: 信息权限管理和托管的代码扩展概述
+title: 信息权限管理和托管的代码扩展
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 109f6b85653a842f7c6fc9ce2d2c09b74113bbc7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca8f9d77681e3f11312e5e908a58ac2e292f581b
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583915"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177757"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>信息权限管理和托管的代码扩展概述
   Microsoft Office Word 和 Microsoft Office Excel 提供了信息权限管理 (IRM) 功能，可以帮助您防止未经授权的人员查看或更改的敏感信息。 有关信息权限管理的工作原理的详细信息，请参阅特定 Office 应用程序中的帮助。

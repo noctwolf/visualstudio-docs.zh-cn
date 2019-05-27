@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acaa43d4a9afe1084502c44f5221bc8518a9bd3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 371766c1aaffbbd82cd4a5da8876a65eccc96363
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917926"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202609"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 获取标题、 友好名称或进程的文件名称。
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `gnType`
+## <a name="parameters"></a>参数
+`gnType`\
+[in]中的值[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)枚举，用于指定哪种类型的名称返回。
 
- [in]中的值[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)枚举，用于指定哪种类型的名称返回。
-
- `pbstrName`
-
- [out]返回进程的名称。
+`pbstrName`\
+[out]返回进程的名称。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c570c7afe8721c757bae9352f70361d5b6cf392a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c884d9ac404aecfa2edaadb2949ce0556da01bfe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921983"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205585"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 在服务器上创建调试引擎的实例。
@@ -44,26 +47,21 @@ int CreateInstanceInServer(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `szDll`
+## <a name="parameters"></a>参数
+`szDll`\
+[in]实现中指定的 CLSID 的 dll 路径`clsidObject`参数。 如果这是`NULL`，然后 COM 的`CoCreateInstance`调用函数。
 
- [in]实现中指定的 CLSID 的 dll 路径`clsidObject`参数。 如果这是`NULL`，然后 COM 的`CoCreateInstance`调用函数。
+`wLangId`\
+[in]调试引擎的区域设置。 这可以是 0，如果[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)不应调用方法。
 
- `wLangId`
+`clsidObject`\
+[in]若要创建的调试引擎的 CLSID。
 
- [in]调试引擎的区域设置。 这可以是 0，如果[SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md)不应调用方法。
+`riid`\
+[in]接口 ID 的特定接口来检索此类对象中。
 
- `clsidObject`
-
- [in]若要创建的调试引擎的 CLSID。
-
- `riid`
-
- [in]接口 ID 的特定接口来检索此类对象中。
-
- `ppvObject`
-
- [out]`IUnknown`中实例化的对象的接口。 强制转换或封送到所需的接口的此对象。
+`ppvObject`\
+[out]`IUnknown`中实例化的对象的接口。 强制转换或封送到所需的接口的此对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

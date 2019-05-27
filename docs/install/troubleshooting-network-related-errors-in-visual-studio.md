@@ -1,7 +1,7 @@
 ---
 title: 网络或代理错误的疑难解答
 description: 为在防火墙或代理服务器后安装或使用 Visual Studio 时可能会遇到的网络或代理相关错误查找解决方案。
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968127"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976221"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -36,13 +36,13 @@ ms.locfileid: "62968127"
 
 - 重新启动 Visual Studio。 这时会出现一个代理身份验证对话框。 出现提示时，在对话框中输入你的凭据。
 
-- 如果重启 Visual Studio 未能解决问题，这可能是由于你的代理服务器不提示需要提供 http:&#47;&#47;go.microsoft.com 地址的凭据，而是提示需要 &#42;.visualStudio.com 地址的凭据。 对于这些服务器，请考虑将以下 URL 列入到白名单，以取消对 Visual Studio 中所有登录场景的阻止：
+- 如果重启 Visual Studio 未能解决问题，这可能是由于你的代理服务器不提示需要提供 http:&#47;&#47;go.microsoft.com 地址的凭据，而是提示需要 &#42;.visualStudio.microsoft.com 地址的凭据。 对于这些服务器，请考虑将以下 URL 添加到允许列表，以取消对 Visual Studio 中所有登录场景的阻止：
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
@@ -120,7 +120,7 @@ Visual Studio 使用传输层安全性 (TLS) 1.2 协议连接到网络资源。 
 
 - &#42;.azurewebsites.net（用于 Azure 连接）
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io（主机内容分发网络或 CDN、内容）
 

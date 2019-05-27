@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aade3935a49af176220e800647e6e821054bbb48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eb64fe4e2d5857bba65a1220b2d0a77163993123
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875947"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205214"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 获取附加到此字段的所有自定义属性的枚举器。
@@ -36,10 +39,9 @@ int EnumCustomAttributes(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppEnum`
-
- [out]返回[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)对象，表示自定义特性列表; 否则，返回 null 值，如果没有自定义属性。
+## <a name="parameters"></a>参数
+`ppEnum`\
+[out]返回[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)对象，表示自定义特性列表; 否则，返回 null 值，如果没有自定义属性。
 
 ## <a name="return-value"></a>返回值
  如果成功，返回 S_OK 或 S_FALSE 如果在此字段上没有任何自定义属性。 否则，返回错误代码;

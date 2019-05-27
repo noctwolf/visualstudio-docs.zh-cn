@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a9c10449d324b33d601840ed24d5f8db9a4b1ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875298"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199149"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 通知调试包到文档中插入文本。
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pos`
+## <a name="parameters"></a>参数
+`pos`\
+[in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，它指示在插入文本的位置。
 
- [in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，它指示在插入文本的位置。
-
- `dwNumToInsert`
-
- [in]指定已插入文本的字符的数。
+`dwNumToInsert`\
+[in]指定已插入文本的字符的数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

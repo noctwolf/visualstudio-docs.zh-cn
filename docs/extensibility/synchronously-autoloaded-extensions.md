@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799047"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037105"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>以同步方式加载了扩展
 
@@ -29,7 +29,7 @@ ms.locfileid: "62799047"
 
 - 单击**不再显示此消息**以取消通知。 选择此选项还会阻止从以同步方式加载扩展所有将来的通知。 用户将继续获取有关其他 Visual Studio 功能的通知。
 
-### <a name="performance-manager-dialog"></a>性能管理器对话框
+## <a name="performance-manager-dialog"></a>性能管理器对话框
 
 ![性能管理器对话框](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ ms.locfileid: "62799047"
 * 用户可以联系其扩展供应商获取迁移进度。
 
 扩展创建者可以找到有关迁移说明包部署到在异步 autoload[迁移到 AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration)。
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>指定同步自动加载设置，请使用组策略
+
+启动 Visual Studio 2019 Update 1 中，默认情况下，Visual Studio 安装块同步自动加载。 启用组策略时，可以配置为允许同步自动加载单个计算机上的 Visual Studio。 为此，请在以下键上设置基于注册表的策略：
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+条目 =**允许**
+
+Value = (DWORD)
+* **0**同步自动加载不允许
+* **1**允许同步自动加载
+
+有关 Visual Studio 2019 Update 1 中的同步自动加载设置的详细信息，请参阅[同步自动加载行为](https://aka.ms/AA52xzw)页。
