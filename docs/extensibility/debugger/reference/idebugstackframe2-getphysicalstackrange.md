@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457280"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212868"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 获取依赖于计算机的形式，与堆栈帧关联的物理地址的范围。
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>参数
- `paddrMin`\
+`paddrMin`\
+[out]返回与此堆栈帧关联的最小物理地址。
 
- [out]返回与此堆栈帧关联的最小物理地址。
-
- `paddrMax`\
-
- [out]返回与此堆栈帧关联的最高的物理地址。
+`paddrMax`\
+[out]返回与此堆栈帧关联的最高的物理地址。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。
