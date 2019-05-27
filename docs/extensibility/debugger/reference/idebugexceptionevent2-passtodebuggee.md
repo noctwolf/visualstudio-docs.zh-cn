@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cae097b5ce02993fc125aafaffded32a35dde0a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bba8147c79ef00ede0a0aac0f0841053c7f2ef43
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874577"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201100"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定异常应传递到时恢复执行，正在调试的程序还是应放弃该异常。
@@ -36,10 +39,9 @@ int PassToDebuggee(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `fPass`
-
- [in]非零值 (`TRUE`) 如果异常应传递到时恢复执行，正在调试的程序或零 (`FALSE`) 如果应放弃该异常。
+## <a name="parameters"></a>参数
+`fPass`\
+[in]非零值 (`TRUE`) 如果异常应传递到时恢复执行，正在调试的程序或零 (`FALSE`) 如果应放弃该异常。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679316"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
@@ -113,10 +113,10 @@ ms.locfileid: "62978819"
 答：现有客户将不会受到影响。 新客户需要决定是购买 Visual Studio 月度订阅，还是通过其他渠道（如批量许可）购买 Visual Studio 订阅。
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户增加订阅数量，该怎么办？
-答：管理员仍然可以通过访问 [https://manage.visualstudio.com](https://manage.visualstudio.com) 并按照本文中的说明来增加订阅数量。
+答：在特定月份购买的年度订阅会立即收取全年费用，并且有效期为一整年。 因此，管理员只能修改当前购买月份的许可证数量，其有效期为 1 年，计费时间为 1 年。 在购买月份之外，不再增加订阅数量。
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户减少订阅数量，该怎么办？
-答：管理员仍然可以通过访问 [https://manage.visualstudio.com](https://manage.visualstudio.com) 并遵循本文中减少订阅数的说明来减少订阅数量。
+答：管理员仍然可以通过访问 [https://manage.visualstudio.com](https://manage.visualstudio.com) 并遵循本文中减少订阅数的说明来减少订阅数量。 系统将不会生成按比例计费的额度。 有关退款，需要联系 Azure 账单团队。
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>问：如果我的客户取消订阅，他们以后还能购买更多的年度云订阅吗？
 答：虽然他们无法再买一份云年度订阅，但是可以选择购买 Visual Studio 订阅。  更多信息请访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。

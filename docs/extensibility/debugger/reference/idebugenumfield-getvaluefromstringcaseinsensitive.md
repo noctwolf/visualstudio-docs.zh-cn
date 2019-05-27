@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db1efb094694863f4deda8a7c2f380077f952a1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 163e675d0ef4b47e0a0bf82d730adcc081eddec3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874778"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200098"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 此方法使用不区分大小写的搜索返回与枚举常量的名称相关联的值。
@@ -38,14 +41,12 @@ int GetValueFromStringCaseInsensitive(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszValue`
+## <a name="parameters"></a>参数
+`pszValue`\
+[in]指定要为其获取值的名称的字符串。 请注意，对于C++，这是一个宽字符字符串。
 
- [in]指定要为其获取值的名称的字符串。 请注意，对于C++，这是一个宽字符字符串。
-
- `pValue`
-
- [out]返回关联的数字值。
+`pValue`\
+[out]返回关联的数字值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`，如果名称不是枚举或错误代码的一部分。

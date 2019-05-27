@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29f9b8ce9e235fc25a1c52930bbf31ec8d8cf557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875308"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207778"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到一个程序或程序。 会话调试管理器 (SDM) 由进程到 SDM DE 时调用。
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pProgram`
+## <a name="parameters"></a>参数
+`pProgram`\
+[in]一个数组[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表程序附加到的对象。 这些是端口程序。
 
- [in]一个数组[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表程序附加到的对象。 这些是端口程序。
+`rgpProgramNodes`\
+[in]一个数组[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示程序节点，一个用于每个程序。 此数组中的程序节点表示作为中的相同程序`pProgram`。 提供程序节点，以便 DE 可以标识要附加到的程序。
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in]程序和/或程序中的节点数`pProgram`和`rgpProgramNodes`数组。
 
- [in]一个数组[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示程序节点，一个用于每个程序。 此数组中的程序节点表示作为中的相同程序`pProgram`。 提供程序节点，以便 DE 可以标识要附加到的程序。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)对象要用来将调试事件发送到 SDM。
 
- `celtPrograms`
-
- [in]程序和/或程序中的节点数`pProgram`和`rgpProgramNodes`数组。
-
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)对象要用来将调试事件发送到 SDM。
-
- `dwReason`
-
- [in]中的值[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)枚举，用于指定用于附加这些程序的原因。 有关详细信息，请参阅“备注”部分。
+`dwReason`\
+[in]中的值[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)枚举，用于指定用于附加这些程序的原因。 有关详细信息，请参阅“备注”部分。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -1,18 +1,18 @@
 ---
 title: 使用适用于 C++ 的 Microsoft 单元测试框架
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461482"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934487"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
@@ -30,16 +30,16 @@ ms.locfileid: "65461482"
 
    1. 在解决方案资源管理器中，右键单击所测试的计划的项目节点，然后选择“属性” > “配置属性” > “VC++ 目录”。
 
-   2. 单击以下行中的向下箭头，然后选择 \<Edit>：
+   2. 单击以下行中的向下箭头，然后选择 \<Edit>。 添加这些路径：
 
       | 目录 | Property |
       |-| - |
-      | **包含目录** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **库目录** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **包含目录** | $(VCInstallDir)Auxiliary\VS\UnitTest\include |
+      | **库目录** | $(VCInstallDir)Auxiliary\VS\UnitTest\lib |
 
 2. 添加 C++ 单元测试文件：
 
-   - 右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 单元测试”。
+   - 右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 文件(.cpp)”。
 
 ## <a name="write-the-tests"></a>编写测试
 

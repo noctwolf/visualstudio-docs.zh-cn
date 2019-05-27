@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac97d97c17bd09882bc347116c2aec44db3f28a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: efd05ffb3d8b6d14f7e1e7732426b1ae453d2f49
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413373"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202464"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 将继续运行此过程从已停止状态。 保留任何以前的执行状态 （如步骤），并再次执行该过程开始。
@@ -39,10 +42,9 @@ int Continue(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示要继续执行的线程。
+## <a name="parameters"></a>参数
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示要继续执行的线程。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为将返回错误代码。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224023"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207352"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 此方法将映射到一个数组的调试地址的文档位置。
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>参数
- `pDocPos`\
+`pDocPos`\
+[in]文档位置中。
 
- [in]文档位置中。
+`fStatmentOnly`\
+[in]如果为 TRUE，则限制为单个语句的调试地址。
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out]返回与此语句或行关联的起始调试地址的枚举器。
 
- [in]如果为 TRUE，则限制为单个语句的调试地址。
-
- `ppEnumBegAddresses`\
-
- [out]返回与此语句或行关联的起始调试地址的枚举器。
-
- `ppEnumEndAddresses`\
-
- [out]返回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)结束的调试地址与此语句或行关联的枚举器。
+`ppEnumEndAddresses`\
+[out]返回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)结束的调试地址与此语句或行关联的枚举器。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

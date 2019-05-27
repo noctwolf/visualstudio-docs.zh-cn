@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570285"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934522"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。
@@ -68,6 +68,7 @@ ms.locfileid: "62570285"
 | FileAlignment | 指定输出文件各部分的对齐位置，以字节为单位。 有效值为 512、1024、2048、4096、8192。 此属性等效于 `/filealignment` 编译器开关。 |
 | FrameworkPathOverride | 指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 此参数等效于 vbc.exe 编译器的 `/sdkpath` 开关。 |
 | GenerateDocumentation | （仅限 Visual Basic）一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。 |
+| GenerateSerializationAssemblies | 指示是否应通过 SGen.exe 生成 XML 序列化程序集，它可以设置为开、自动或关。 此属性用于仅面向 .NET Framework 的程序集。 要生成 .NET Standard 或 .NET Core 程序集的 XML 序列化程序集，请参考 Microsoft.XmlSerializer.Generator NuGet 包。 |
 | IntermediateOutputPath | 如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 \obj\debug\\。 |
 | KeyContainerName | 强名称密钥容器的名称。 |
 | KeyOriginatorFile | 强名称密钥文件的名称。 |
@@ -91,8 +92,8 @@ ms.locfileid: "62570285"
 | ProduceReferenceAssembly | 一个布尔值，设置为 `true` 时，可为当前程序集生成[引用程序集](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用此功能时，`Deterministic` 应为 `true`。 此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refout` 开关。 |
 | ProduceOnlyReferenceAssembly | 布尔值，指示编译器仅发出引用程序集，而不是已编译代码。 无法与 `ProduceReferenceAssembly` 一起使用。  此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refonly` 开关。 |
 | RemoveIntegerChecks | 一个布尔值，指示是否禁用整数溢出错误检查。 默认值为 `false`。 此属性等效于 vbc.exe 编译器的 `/removeintchecks` 开关。 |
-| SGenUseProxyTypes | 一个布尔值，指示是否应由 SGen.exe 生成代理类型。<br /><br /> SGen 目标使用此属性来设置 UseProxyTypes 标志。 此属性默认为 true，并且没有更高属性的 UI。 若要生成非 webservice 类型的序列化程序集，请在导入 Microsoft.Common.Targets 或 C#/VB.targets 之前将此属性添加到项目文件并将其设为 false。 |
-| SGenToolPath | 一个可选的工具路径，指示在当前版本的 SGen.exe 被重写时可以获得 SGen.exe 的位置。 |
+| SGenUseProxyTypes | 一个布尔值，指示是否应由 SGen.exe 生成代理类型。 这仅适用于 GenerateSerializationAssemblies 设置为开的情况，且仅适用于 .NET Framework。<br /><br /> SGen 目标使用此属性来设置 UseProxyTypes 标志。 此属性默认为 true，并且没有更高属性的 UI。 若要生成非 webservice 类型的序列化程序集，请在导入 Microsoft.Common.Targets 或 C#/VB.targets 之前将此属性添加到项目文件并将其设为 false。 |
+| SGenToolPath | 一个可选的工具路径，指示在当前版本的 SGen.exe 被重写时可以获得 SGen.exe 的位置。 此属性仅用于 .NET Framework。|
 | StartupObject | 指定包含 Main 方法或 Sub Main 过程的类或模块。 此属性等效于 `/main` 编译器开关。 |
 | ProcessorArchitecture | 解析程序集引用时使用的处理器架构。 有效值为“msil”、“x86”、“amd64”或“ia64”。 |
 | RootNamespace | 在命名嵌入资源时要使用的根命名空间。 此命名空间属于嵌入资源清单名称的一部分。 |

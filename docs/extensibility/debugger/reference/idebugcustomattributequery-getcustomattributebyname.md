@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60341aa39a61f7179d0b913ec78aca10fae5b84c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f255d509d69741dd99c9f6dac3ce298d7e5fa0bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921667"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205294"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
 检索在给定其名称的自定义属性。
@@ -39,18 +42,15 @@ int GetCustomAttributeByName(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pszCustomAttributeName`
+## <a name="parameters"></a>参数
+`pszCustomAttributeName`\
+[in]自定义特性的名称。
 
- [in]自定义特性的名称。
-
-`ppBlob`
-
+`ppBlob`\
 [in、 out]包含自定义特性数据的字节数组。
 
-`pdwLen`
-
- [out]以字节为单位的长度`ppBlob`参数。
+`pdwLen`\
+[out]以字节为单位的长度`ppBlob`参数。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回 `S_OK`。 如果自定义特性不存在，将返回`S_FALSE`。 否则，返回错误代码。

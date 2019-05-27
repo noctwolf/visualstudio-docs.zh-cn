@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 461c2487c18cb6edc5601868c0f9644d7b8eeac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a947f473fe7dc1fcf3e7b5b2b96d13edc3098218
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874603"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201148"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 发送通知的调试事件。
@@ -48,34 +51,27 @@ int Event( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pEngine`
+## <a name="parameters"></a>参数
+`pEngine`\
+[in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)对象，表示发送此事件的调试引擎 (DE)。 DE 需要填写此参数。
 
- [in][IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)对象，表示发送此事件的调试引擎 (DE)。 DE 需要填写此参数。
+`pProcess`\
+[in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)表示的过程时发生该事件的对象。 此参数由会话调试管理器 (SDM) 填充。 DE 始终将传递此参数的 null 值。
 
- `pProcess`
+`pProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示的程序发生此事件的对象。 对于大多数事件，此参数不是 null 值。
 
- [in][IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)表示的过程时发生该事件的对象。 此参数由会话调试管理器 (SDM) 填充。 DE 始终将传递此参数的 null 值。
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示发生此事件的线程。 停止事件，此参数不能为 null 值，从此参数获取的堆栈帧。
 
- `pProgram`
+`pEvent`\
+[in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)表示调试事件的对象。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示的程序发生此事件的对象。 对于大多数事件，此参数不是 null 值。
+`riidEvent`\
+[in]GUID，用于标识哪个事件接口，以获取从`pEvent`参数。
 
- `pThread`
-
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示发生此事件的线程。 停止事件，此参数不能为 null 值，从此参数获取的堆栈帧。
-
- `pEvent`
-
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)表示调试事件的对象。
-
- `riidEvent`
-
- [in]GUID，用于标识哪个事件接口，以获取从`pEvent`参数。
-
- `dwAttrib`
-
- [in]中的标志的组合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)枚举。
+`dwAttrib`\
+[in]中的标志的组合[EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)枚举。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

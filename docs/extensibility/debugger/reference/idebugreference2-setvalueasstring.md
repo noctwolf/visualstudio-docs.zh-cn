@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ca994aaf03103e6d668d78a7d3a683ddbc988eb7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457420"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210099"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 设置引用的字符串值。 留待将来使用。
@@ -44,17 +44,14 @@ int SetValueAsString ( 
 ```
 
 ## <a name="parameters"></a>参数
- `pszValue`\
+`pszValue`\
+[in]字符串形式的值。
 
- [in]字符串形式的值。
+`dwRadix`\
+[in]用于格式化数值的任何信息的基数。
 
- `dwRadix`\
-
- [in]用于格式化数值的任何信息的基数。
-
- `dwTimeout`\
-
- [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
+`dwTimeout`\
+[in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。

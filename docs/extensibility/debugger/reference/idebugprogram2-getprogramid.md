@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfec12193efda49a520a40418b93f2d4cef6b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca86175d34cc1bfd54882adda7e1f7cb464fb22f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870183"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212636"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 获取此程序的 GUID。
@@ -36,10 +39,9 @@ int GetProgramId( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pguidProgramId`
-
- [out]返回`GUID`此程序。
+## <a name="parameters"></a>参数
+`pguidProgramId`\
+[out]返回`GUID`此程序。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

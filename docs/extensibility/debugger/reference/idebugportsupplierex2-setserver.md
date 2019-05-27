@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b2941fc0c607af93772c21ca874b3d6b9031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0e92ee346a5d503c004279df84bdd8aacc429337
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871383"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204239"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 设置端口提供程序的核心服务器。
@@ -34,8 +37,9 @@ int SetServer(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pServer` 若要设置的端口提供程序的核心服务器。
+## <a name="parameters"></a>参数
+`pServer`\
+若要设置的端口提供程序的核心服务器。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

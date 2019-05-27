@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1416092661ee26bff773ea1a439c241a0f5c5fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 037dc4232753bbae8e15a0a2cf4bd42781910cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921509"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204725"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 比较此文档上下文到给定数组的文档上下文。
@@ -42,22 +45,18 @@ int Compare( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `compare`
+## <a name="parameters"></a>参数
+`compare`\
+[in]中的值[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)枚举，用于指定的比较类型。
 
- [in]中的值[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)枚举，用于指定的比较类型。
+`rgpDocContextSet`\
+[in]一个数组[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)对象表示要进行比较的文档上下文。
 
- `rgpDocContextSet`
+`dwDocContextSetLen`\
+[in]文档上下文进行比较的数组的长度。
 
- [in]一个数组[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)对象表示要进行比较的文档上下文。
-
- `dwDocContextSetLen`
-
- [in]文档上下文进行比较的数组的长度。
-
- `pdwDocContext`
-
- [out]返回到索引`rgpDocContextSet`满足的比较的第一个文档上下文的数组。
+`pdwDocContext`\
+[out]返回到索引`rgpDocContextSet`满足的比较的第一个文档上下文的数组。
 
 ## <a name="return-value"></a>返回值
  返回`S_OK`如果找到匹配项。 返回`S_FALSE`如果没有找到匹配。 否则，返回错误代码。

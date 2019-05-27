@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a5ecd42b0ddf0138e98e2159fae1236ca02b473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9e6225099b3b88cbbbb73884cbd93be4f7976e50
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919456"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200844"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 使用没有构造函数创建的对象。
@@ -38,14 +41,12 @@ int CreateObjectNoConstructor(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pClassObject`
+## <a name="parameters"></a>参数
+`pClassObject`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象，表示要创建的对象的类型。
 
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象，表示要创建的对象的类型。
-
- `ppObject`
-
- [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示新创建的对象。
+`ppObject`\
+[out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示新创建的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

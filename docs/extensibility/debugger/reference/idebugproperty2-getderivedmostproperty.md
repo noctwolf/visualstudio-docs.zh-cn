@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4c109906ca586d58753c6471f20ed05adc08de4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2cbb9d993b5149400fbb974373193c59041cf969
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457748"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211609"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 获取一个属性的派生程度最大属性。
@@ -40,9 +40,8 @@ int GetDerivedMostProperty ( 
 ```
 
 ## <a name="parameters"></a>参数
- `ppDerivedMost`\
-
- [out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示派生程度最大属性的对象。
+`ppDerivedMost`\
+[out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示派生程度最大属性的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。 返回`S_GETDERIVEDMOST_NO_DERIVED_MOST`如果不存在派生程度最大属性来检索。

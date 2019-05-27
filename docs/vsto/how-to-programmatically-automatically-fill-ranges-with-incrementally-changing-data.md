@@ -1,5 +1,5 @@
 ---
-title: 如何：以编程方式自动用递增变化的数据填充范围
+title: 以增量方式以编程方式更改数据范围的自动填充
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428173"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177696"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法的<xref:Microsoft.Office.Interop.Excel.Range>对象，您可以自动使用值填充工作表中的范围。 大多数情况下，<xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>方法用于存储以增量方式增加或减少的范围内的值。 可以通过提供从一个可选常量指定行为<xref:Microsoft.Office.Interop.Excel.XlAutoFillType>枚举。

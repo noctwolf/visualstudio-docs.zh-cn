@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945993"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934505"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -58,7 +58,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 |![生成后运行](../test/media/ute_runafterbuild_btn.png)|要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在测试资源管理器的工具栏上选择“生成后运行测试”。|
 
 > [!NOTE]
-> 在每次生成后运行单元测试需要 Visual Studio Enterprise 版本。
+> 在每次生成后运行单元测试需要 Visual Studio 2017 Enterprise 或 Visual Studio 2019。 对于 Visual Studio 2019，它包含在 Community、Professional 和 Enterprise 中。
 
 ## <a name="view-test-results"></a>查看测试结果
 
@@ -86,7 +86,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="view-the-source-code-of-a-test-method"></a>查看测试方法的源代码
 
-若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（键盘快捷键：F12）。
+若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（键盘快捷键：**F12**）。
 
 ## <a name="group-and-filter-the-test-list"></a>分组和筛选测试列表
 
@@ -200,7 +200,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 在解决方案中为测试方法运行代码覆盖率：
 
-1. 在 Visual Studio 菜单上选择 **“测试”** ，然后选择 **“分析代码覆盖率”**。
+1. 在顶部菜单栏上选择“测试”，然后选择“分析代码覆盖率”。
 
 2. 从子菜单中选择下列命令之一：
 

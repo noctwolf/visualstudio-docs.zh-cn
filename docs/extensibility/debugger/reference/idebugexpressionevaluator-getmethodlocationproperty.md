@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15baa5475e912559b8cc0a23264b0c19ef8a464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6770bfdd534069e70bb803334f87b382d57a6894
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874189"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200917"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 此方法转换为方法位置和偏移量的内存地址。
@@ -44,26 +47,21 @@ int GetMethodLocationProperty(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `upstrFullyQualifiedMethodPlusOffset`
+## <a name="parameters"></a>参数
+`upstrFullyQualifiedMethodPlusOffset`\
+[in]方法的位置和偏移量，表示为字符串。
 
- [in]方法的位置和偏移量，表示为字符串。
+`pSymbolProvider`\
+[in]符号提供程序以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)对象。
 
- `pSymbolProvider`
+`pAddress`\
+[in]在方法中，表示为一个地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象。
 
- [in]符号提供程序以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)对象。
+`pBinder`\
+[in]此联编程序表示为[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)对象。
 
- `pAddress`
-
- [in]在方法中，表示为一个地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象。
-
- `pBinder`
-
- [in]此联编程序表示为[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)对象。
-
- `ppProperty`
-
- [out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的内存地址的接口。
+`ppProperty`\
+[out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)表示的内存地址的接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

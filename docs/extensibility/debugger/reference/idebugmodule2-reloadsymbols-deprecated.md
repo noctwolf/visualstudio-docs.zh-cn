@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c2e12ecc097c2839bba43da04c88dec3fe3d7298
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918832"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203104"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 已过时。 不要使用。 重新加载此模块的符号。
@@ -38,14 +41,12 @@ int ReloadSymbols( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszUrlToSymbols`
+## <a name="parameters"></a>参数
+`pszUrlToSymbols`\
+[in]指向符号存储区的路径。
 
- [in]指向符号存储区的路径。
-
- `pbstrDebugMessage`
-
- [out]返回信息性消息，例如状态或错误消息，显示模块窗口中的模块名称的右侧。
+`pbstrDebugMessage`\
+[out]返回信息性消息，例如状态或错误消息，显示模块窗口中的模块名称的右侧。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。 调试引擎应始终返回`E_FAIL`。

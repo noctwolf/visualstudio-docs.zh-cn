@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843129"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200873"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 此方法将一个表达式字符串转换为已分析的表达式。
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `upstrExpression`
+## <a name="parameters"></a>参数
+`upstrExpression`\
+[in]要分析的表达式字符串。
 
- [in]要分析的表达式字符串。
+`dwFlags`\
+[in]一系列[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)确定表达式的分析方式的常量。
 
- `dwFlags`
+`nRadix`\
+[in]要用来解释任何数字信息的基数。
 
- [in]一系列[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)确定表达式的分析方式的常量。
+`pbstrError`\
+[out]以用户可读文本形式将返回错误。
 
- `nRadix`
+`pichError`\
+[out]返回错误的起始字符的位置中的表达式字符串。
 
- [in]要用来解释任何数字信息的基数。
-
- `pbstrError`
-
- [out]以用户可读文本形式将返回错误。
-
- `pichError`
-
- [out]返回错误的起始字符的位置中的表达式字符串。
-
- `ppParsedExpression`
-
- [out]返回中的已分析的表达式[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)对象。
+`ppParsedExpression`\
+[out]返回中的已分析的表达式[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224187"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199280"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 从对象检索指定的字节数。
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>参数
- `dataSize`\
+`dataSize`\
+[in]要检索的字节数 (`data`数组必须至少容纳此数目的字节数)。
 
- [in]要检索的字节数 (`data`数组必须至少容纳此数目的字节数)。
+`sizeGotten`\
+[out]返回实际检索的字节的数。
 
- `sizeGotten`\
-
- [out]返回实际检索的字节的数。
-
- `data`\
-
- [in、 out]若要使用请求的数据填充的数组。
+`data`\
+[in、 out]若要使用请求的数据填充的数组。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

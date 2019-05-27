@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0964c94334ca0815b4410f6858dca5502b2f8a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d44c0ad0cef8777623f3393172e372ea4c33782a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918151"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204502"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 设置服务提供程序。
@@ -34,10 +37,9 @@ public int SetSite(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pSP`
-
- [in]对服务提供程序的接口的引用。
+## <a name="parameters"></a>参数
+`pSP`\
+[in]对服务提供程序的接口的引用。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

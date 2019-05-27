@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33735e047f0ac0266648afd2ffb4de0cbc908a25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7815b5515a89d6a040208b7062286e5818f2ba91
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920914"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207440"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 此方法设置的所有未处理异常的状态。
@@ -36,10 +39,9 @@ int SetAllExceptions(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwState`
-
- [in]之一[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)值。
+## <a name="parameters"></a>参数
+`dwState`\
+[in]之一[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为将返回错误代码。

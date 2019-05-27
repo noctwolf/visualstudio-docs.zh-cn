@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d11a8a5bf3a0fc66487b8a0e58cd98aefdbd255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12dc3ff9dadc1ea09e14045377096fa149a6c51d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922969"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203164"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 获取用于描述此事件的位置的代码上下文。
@@ -36,10 +39,9 @@ int GetCodeContext( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppCodeContext`
-
- [out]返回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，表示当前的代码位置。
+## <a name="parameters"></a>参数
+`ppCodeContext`\
+[out]返回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)对象，表示当前的代码位置。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

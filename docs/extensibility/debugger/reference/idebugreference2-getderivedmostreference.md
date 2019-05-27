@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba770dec92054f68c3cb95433d2a2c83bdb37bce
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4b9534c144ae08a6fa5791518fea7d463819140b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457510"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212957"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 获取引用的派生程度最大引用。 留待将来使用。
@@ -40,9 +40,8 @@ int GetDerivedMostReference( 
 ```
 
 ## <a name="parameters"></a>参数
- `ppDerivedMost`\
-
- [out]返回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)表示派生程度最大属性的对象。
+`ppDerivedMost`\
+[out]返回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)表示派生程度最大属性的对象。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
