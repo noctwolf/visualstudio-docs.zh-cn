@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f72bae8a5635435168987af0829d5658c2758f38
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31da63b2ee95e92ffbf2106a1695d9ba00243e0b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223401"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208363"
 ---
 # <a name="ienumdebugcodecontexts2skip"></a>IEnumDebugCodeContexts2::Skip
 跳过指定数量的元素。
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>参数
- `celt`\
-
- [in]要跳过的元素数。
+`celt`\
+[in]要跳过的元素数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 返回`S_FALSE`如果`celt`大于剩余的元素数; 否则，返回错误代码。

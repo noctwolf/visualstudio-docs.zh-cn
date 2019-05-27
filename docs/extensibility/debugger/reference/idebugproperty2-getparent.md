@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5805beed58b01c0a2a31b92008f7acdf10e4f960
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 751fb9cea09826c78067c9d44e81b556355e94d1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458127"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211511"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 获取一个属性的父属性。
@@ -40,9 +40,8 @@ int GetParent ( 
 ```
 
 ## <a name="parameters"></a>参数
- `ppParent`\
-
- [out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象，表示属性的父级。
+`ppParent`\
+[out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象，表示属性的父级。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。 返回`S_GETPARENT_NO_PARENT`如果没有父级。

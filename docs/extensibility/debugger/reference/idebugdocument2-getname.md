@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e653f7f735be43f2edeb4bd3c7935d3c89a9e58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875720"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204750"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 获取文档的名称中有几种形式之一。
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `gnType`
+## <a name="parameters"></a>参数
+`gnType`\
+[in]中的值[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)枚举，用于确定要返回名称的类型。
 
- [in]中的值[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)枚举，用于确定要返回名称的类型。
-
- `pbstrFileName`
-
- [out]返回包含文档名称的字符串。
+`pbstrFileName`\
+[out]返回包含文档名称的字符串。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

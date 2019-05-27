@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CAST Highlight 权益
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947884"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805342"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CAST Highlight 权益
 
@@ -50,22 +50,22 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
 
    > 感谢你激活 30 天访问 CAST Highlight 的请求 - 这是 Microsoft Visual Studio Enterprise 客户的独家优惠！
    >
-   > 我们目前正在审核你的激活和访问 CAST Highlight 的请求。你将在 48 小时内收到我的回复。*
+   > 我们目前正在审核你的激活和访问 CAST Highlight 的请求。你将在 48 小时内收到我的回复。
    >
    > 诚挚问候
    > Greg
 
 在请求获得批准后，将收到第二封确认成功创建帐户的电子邮件，并要求你单击激活链接以完成激活过程。
 
-   > 我们已成功验证并验证了你访问 CAST Highlight 的请求。欢迎使用体验！*
+   > 我们已成功验证并验证了你访问 CAST Highlight 的请求。欢迎使用体验！
    >
-   > 需要进行最后的步骤以完成激活。你将收到来自 noreply@casthighlight.com 的电子邮件，其中包含激活链接。如果看不到电子邮件，请检查垃圾邮件箱。*
+   > 需要进行最后的步骤以完成激活。你将收到来自 noreply@casthighlight.com 的电子邮件，其中包含激活链接。如果看不到电子邮件，请检查垃圾邮件箱。
    >
    > 请单击电子邮件中提供的激活链接并完成激活过程。
    >
-   > 激活后，你将有 30 天的时间访问 CAST Highlight 平台，并且最多可以载入 5 个应用程序。请注意，这是仅适用于 Microsoft Visual Studio Enterprise 客户的独家优惠。*
+   > 激活后，你将有 30 天的时间访问 CAST Highlight 平台，并且最多可以载入 5 个应用程序。请注意，这是仅适用于 Microsoft Visual Studio Enterprise 客户的独家优惠。
    >
-   > 我将与你保持联系，以确保一切顺利。与此同时，这里有一些内容有助于入门：*
+   > 我将与你保持联系，以确保一切顺利。与此同时，这里有一些内容有助于入门：
    >
    > - [CAST Highlight - CloudReadiness 演示](https://www.youtube.com/watch?v=wFUpAzn1Iu8&feature=youtu.be)
    > - [入门指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
@@ -90,7 +90,7 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
 | Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
-<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine*
+<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
@@ -107,6 +107,6 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
 
 ## <a name="next-steps"></a>后续步骤
 
-如果尚未激活订阅附带的 Azure 权益，请访问 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 并单击“工具”类别中的 Azure 磁贴以设置 Azure 订阅并兑换免费的 Azure 额度。
+如果尚未激活订阅附带的 Azure 权益，请访问 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 并单击“工具”类别中的 Azure 磁贴以设置 Azure 订阅并兑换 Azure 额度。
 
 不要忘记查看 Greg 电子邮件中提到的演示、用户指南和视频教程。

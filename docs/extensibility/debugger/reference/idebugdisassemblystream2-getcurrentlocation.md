@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa89650ea1497afcb5ac1143264103ee7fc69b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 64e65d6c8d828685bbf5b07fe46260189db3b806
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875770"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204989"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 返回表示当前的代码位置的代码位置标识符。
@@ -36,10 +39,9 @@ int GetCurrentLocation( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `puCodeLocationId`
-
- [out]返回的代码位置标识符。 请参阅备注部分[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法有关的代码位置标识符的说明。
+## <a name="parameters"></a>参数
+`puCodeLocationId`\
+[out]返回的代码位置标识符。 请参阅备注部分[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法有关的代码位置标识符的说明。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

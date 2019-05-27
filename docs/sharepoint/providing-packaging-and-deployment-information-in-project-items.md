@@ -1,5 +1,5 @@
 ---
-title: 提供打包和部署项目项中的信息 |Microsoft Docs
+title: 在项目项中的打包和部署信息
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550474"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177708"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供在项目项中的打包和部署信息
   中的所有 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有可用于项目部署到 SharePoint 时提供额外的数据的属性。 这些属性如下所示：
@@ -57,7 +57,7 @@ ms.locfileid: "62550474"
 
  从所有项目项的完全相同的功能属性值时，将合并功能清单中。 但是，如果两个不同的项目项不匹配的值与指定的相同的功能属性键，则发生验证错误。
 
- 若要将功能属性添加直接到功能文件 (*.feature*)，调用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 对象模型方法<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>。 如果使用此方法，请注意，在功能属性中添加相同的功能属性值相同的规则也适用于直接添加到功能文件的属性。
+ 若要将功能属性添加直接到功能文件 ( *.feature*)，调用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 对象模型方法<xref:Microsoft.VisualStudio.SharePoint.Features.IPropertyCollection.Add%2A>。 如果使用此方法，请注意，在功能属性中添加相同的功能属性值相同的规则也适用于直接添加到功能文件的属性。
 
 ## <a name="feature-receiver"></a>功能接收器
  功能接收器是对项目项发生某些事件时执行的代码包含的功能。 例如，可以定义该功能是安装、 激活，或升级时执行的功能接收器。 添加功能接收器是将其添加直接向一项功能，如中所述的一种方法[演练：添加功能事件接收器](../sharepoint/walkthrough-add-feature-event-receivers.md)。 另一种方法是一个功能接收器类名称和中的程序集引用**功能接收器**属性。
@@ -68,7 +68,7 @@ ms.locfileid: "62550474"
 ### <a name="reference-method"></a>Reference 方法
  功能接收器添加另一种方法是使用**功能接收器**引用功能接收器程序集的项目项的属性。 功能接收器属性值具有两个子属性：**程序集**并**类名**。 程序集必须使用其完全限定，"强"名称和类名必须是完整类型名称。 有关详细信息，请参阅[具有强名称的程序集](http://go.microsoft.com/fwlink/?LinkID=169573)。 将解决方案部署到 SharePoint 之后, 该功能使用引用的功能接收器来处理功能的事件。
 
- 在解决方案生成时间，该功能的功能中的接收方属性值和其项目合并在一起以 SharePoint 解决方案的功能清单中设置的功能元素的 ReceiverAssembly 和 receiverclass 的属性特性 (*.wsp*) 文件。 因此，如果同时指定了项目项和功能的程序集和类名属性值，则项目项和功能属性值必须匹配。 如果值不匹配，将收到验证错误。 如果您希望项目项引用的功能接收器程序集不是其功能使用，将其移到另一项功能。
+ 在解决方案生成时间，该功能的功能中的接收方属性值和其项目合并在一起以 SharePoint 解决方案的功能清单中设置的功能元素的 ReceiverAssembly 和 receiverclass 的属性特性 ( *.wsp*) 文件。 因此，如果同时指定了项目项和功能的程序集和类名属性值，则项目项和功能属性值必须匹配。 如果值不匹配，将收到验证错误。 如果您希望项目项引用的功能接收器程序集不是其功能使用，将其移到另一项功能。
 
  如果引用已不在服务器的功能接收器程序集，还必须在包中包括的程序集文件本身[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不会为您添加它。 在部署此功能时，程序集文件复制到系统的[!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)]或 SharePoint 物理目录的 Bin 文件夹。 有关详细信息，请参阅如何：[如何：添加和删除其他程序集](../sharepoint/how-to-add-and-remove-additional-assemblies.md)。
 

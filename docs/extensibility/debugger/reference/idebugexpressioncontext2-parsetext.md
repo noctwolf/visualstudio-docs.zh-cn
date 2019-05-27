@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f0f11c3b1770ca32b34f7a5480d5d56acc2b2478
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919988"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201049"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 分析中以供以后计算的文本形式的表达式。
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pszCode`
+## <a name="parameters"></a>参数
+`pszCode`\
+[in]要分析的表达式。
 
- [in]要分析的表达式。
+`dwFlags`\
+[in]中的标志的组合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制分析的枚举。
 
-`dwFlags`
+`nRadix`\
+[in]若要在分析中的任何数字信息中使用的基数`pszCode`。
 
- [in]中的标志的组合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制分析的枚举。
+`ppExpr`\
+[out]返回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)对象，表示已分析的表达式，即准备好进行绑定和评估。
 
-`nRadix`
+`pbstrError`\
+[out]如果表达式包含错误，则返回错误消息。
 
- [in]若要在分析中的任何数字信息中使用的基数`pszCode`。
-
-`ppExpr`
-
- [out]返回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)对象，表示已分析的表达式，即准备好进行绑定和评估。
-
-`pbstrError`
-
- [out]如果表达式包含错误，则返回错误消息。
-
-`pichError`
-
- [out]返回中的错误的字符索引`pszCode`如果表达式包含错误。
+`pichError`\
+[out]返回中的错误的字符索引`pszCode`如果表达式包含错误。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

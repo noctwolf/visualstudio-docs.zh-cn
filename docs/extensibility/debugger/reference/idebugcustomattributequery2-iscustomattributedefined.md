@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6695753fa1b071f8623b079dbe4e56e68e9dfad4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ab36c26ea3a8ecbb55aaf9f55c1856ea8280494
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876019"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205178"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 确定名称是否存在自定义属性。
@@ -36,10 +39,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszCustomAttributeName`
-
- [in]包含要查找的自定义属性的名称的字符串。
+## <a name="parameters"></a>参数
+`pszCustomAttributeName`\
+[in]包含要查找的自定义属性的名称的字符串。
 
 ## <a name="return-value"></a>返回值
  返回 S_OK 如果自定义属性定义此字段，否则，返回 S_FALSE。

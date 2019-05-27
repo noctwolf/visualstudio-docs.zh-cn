@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的 Office 365 开发者权益
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947162"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934588"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 开发者订阅权益
 
-拥有所选 Visual Studio Enterprise 订阅的订阅者将享有 Office 365 开发者订阅权益。  Office 365 开发者订阅允许你开发、测试以及部署 Microsoft Office 和 Microsoft SharePoint 的外接程序。  此权益允许一个租户和最多 25 个用户。
+拥有所选 Visual Studio 订阅的订阅者将享有 Office 365 开发者订阅权益。  Office 365 开发者订阅允许你开发、测试以及部署 Microsoft Office 和 Microsoft SharePoint 的外接程序。  此权益允许一个租户和最多 25 个用户。
 
 ## <a name="activation-steps"></a>激活步骤
 
@@ -34,7 +34,7 @@ ms.locfileid: "62947162"
 6. 选择你所在国家/地区。
 7. 输入公司名称。
 8. 单击第一个复选框，接受条款和条件。
-9. 单击 **“下一步”**。
+9. 单击 **“下一步”** 。
    > [!div class="mx-imgBorder"]
    > ![Office 365 开发人员注册](_img/vs-office-dev/vs-office-dev-signup.png)
 
@@ -67,13 +67,13 @@ ms.locfileid: "62947162"
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、所选 NFR<sup>1</sup> | Included      |  是          |
-| Visual Studio Professional（标准） | VL、Azure、零售                                       | 不可用                                                            |NA         |
+| Visual Studio Professional（标准） | VL、Azure、零售                                       | Included                                                            |是         |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  NA         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              | NA         |
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、最有价值专家 (MVP)、区域总监 (RD)。*
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、最有价值专家 (MVP)、区域总监 (RD)。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。

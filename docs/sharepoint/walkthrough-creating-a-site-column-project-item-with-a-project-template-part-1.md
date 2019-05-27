@@ -1,5 +1,5 @@
 ---
-title: 演练：使用项目模板创建站点栏项目项，第 1 部分 |Microsoft Docs
+title: 使用项目模板，第 1 部分创建站点栏项目项
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 60e4f4e035b381b8bfda8e14ee705471b0fad2b8
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430390"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177565"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板，第 1 部分创建站点栏项目项
   SharePoint 项目是针对一个或多个 SharePoint 项目项的容器。 可以通过创建自己的 SharePoint 项目项类型，然后将其关联到的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏中，定义项目项类型，然后将创建可用于创建包含网站栏项目项的新项目的项目模板。
@@ -170,7 +170,7 @@ ms.locfileid: "63430390"
 
 5. 实例中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SiteColumnProjectItem 解决方案打开，在具有**解决方案资源管理器**，打开快捷菜单**SiteColumnProjectTemplate**项目节点，选择**添加**，然后选择**现有项**。
 
-6. 在中**添加现有项**对话框中，打开的文件扩展名的列表，然后选择**的所有文件 (\*。\*)**.
+6. 在中**添加现有项**对话框中，打开的文件扩展名的列表，然后选择**的所有文件 (\*。\*)** .
 
 7. 在目录中包含 BaseSharePointProject 项目，选择 key.snk 文件，然后选择**添加**按钮。
 

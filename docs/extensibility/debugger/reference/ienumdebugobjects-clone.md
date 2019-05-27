@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76ae819deecaa76d37054235b6bed295278ca37d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d965c4eb4c6caff361a32ef39c58f8770ec498a0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223441"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203517"
 ---
 # <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
 此方法返回当前枚举作为一个单独的对象的副本。
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>参数
- `ppEnum`\
-
- [out]返回此枚举作为一个单独的对象的副本。
+`ppEnum`\
+[out]返回此枚举作为一个单独的对象的副本。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

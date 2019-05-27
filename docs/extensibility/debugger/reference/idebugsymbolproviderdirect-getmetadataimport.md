@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17ba4ac3deb72185094c0f943adf5a2ae235fa95
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c2b6a97dd00edc66699fbf815ed56031ed74ac3b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224070"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207037"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 检索元数据导入信息。
@@ -43,17 +43,14 @@ int GetMetaDataImport (
 ```
 
 ## <a name="parameters"></a>参数
- `guid`\
+`guid`\
+[in]该模块的唯一标识符。
 
- [in]该模块的唯一标识符。
+`appID`\
+[in]应用程序域标识符。
 
- `appID`\
-
- [in]应用程序域标识符。
-
- `ppImport`\
-
- [out]返回一个对象，它包含的元数据导入信息。
+`ppImport`\
+[out]返回一个对象，它包含的元数据导入信息。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

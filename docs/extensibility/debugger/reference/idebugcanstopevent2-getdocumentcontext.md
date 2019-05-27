@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2066d712824ec40c822a813eb20a6afffd7981ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a1c323a20d38738976cd868f5b392214f9000fb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877178"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203146"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
 获取用于描述此事件的位置的文档上下文。
@@ -36,10 +39,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppDocCxt`
-
- [out]返回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)到当前代码位置表示对应一个源文件文档中的位置的接口。
+## <a name="parameters"></a>参数
+`ppDocCxt`\
+[out]返回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)到当前代码位置表示对应一个源文件文档中的位置的接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

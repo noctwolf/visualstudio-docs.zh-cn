@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7000e72ee69b90d873dd85689b97157e83dc6856
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876949"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212870"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 获取此断点请求的断点位置类型。
@@ -36,10 +39,9 @@ int GetLocationType(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pBPLocationType`
-
- [out]返回一个值从[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚举，用于描述此断点请求的位置。
+## <a name="parameters"></a>参数
+`pBPLocationType`\
+[out]返回一个值从[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)枚举，用于描述此断点请求的位置。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_FAIL`如果`bpLocation`字段中关联[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构无效。

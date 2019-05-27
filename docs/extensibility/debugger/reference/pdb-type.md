@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f14537a7543528be7ab026e7d24b9a1e9d964d0b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b122231099641b38fc6106698dba5fbff433b4de
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460857"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212748"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -47,15 +47,12 @@ public struct PDB_TYPE {
 ## <a name="members"></a>成员
 
 `ulAppDomainID`\
-
 符号所来自的应用程序 ID。 这用于唯一标识应用程序的实例。
 
 `guidModule`\
-
 包含此字段的模块的 GUID。
 
 `symid`\
-
 对应于此字段的符号 ID。
 
 ## <a name="remarks"></a>备注

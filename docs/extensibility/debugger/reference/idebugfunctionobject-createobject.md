@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d1e6c21cdf4e16db69cbad0947e864e7c1847e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5877f43402d2bac8284be8d24d0c94cd2052a313
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919412"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200845"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 创建使用构造函数的对象。
@@ -42,22 +45,18 @@ int CreateObject(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pConstructor`
+## <a name="parameters"></a>参数
+`pConstructor`\
+[in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)对象表示要创建的对象的构造函数。
 
- [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)对象表示要创建的对象的构造函数。
+`dwArgs`\
+[in]中的参数数量`pArg`数组。 表示传递给构造函数的参数数目。
 
- `dwArgs`
+`pArg`\
+[in]一个数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象表示的参数传递给构造函数。
 
- [in]中的参数数量`pArg`数组。 表示传递给构造函数的参数数目。
-
- `pArg`
-
- [in]一个数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象表示的参数传递给构造函数。
-
- `ppObject`
-
- [out]返回`IDebugObject`表示新创建的对象。
+`ppObject`\
+[out]返回`IDebugObject`表示新创建的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

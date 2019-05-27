@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dffee73c9412bd9732ca3dd80aef8b9cb6fdabfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 71c3fda7da3b676a3a878e17192eca7ae19a5f66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921487"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204707"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 检索与此文档上下文关联的所有代码上下文的列表。
@@ -36,10 +39,8 @@ int EnumCodeContexts(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`ppEnumCodeCxts`
-
- [out]返回[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)对象，其中包含一系列代码上下文。
+## <a name="parameters"></a>参数
+`ppEnumCodeCxts`\
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

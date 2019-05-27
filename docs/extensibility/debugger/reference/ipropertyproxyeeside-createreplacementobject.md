@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8a5c9a05525c55d35bb6e0033c5c2abcacbbc97
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6250c06315c7b4e9437ecd577f961fb3f0ee7953
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458140"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210109"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 创建数据对象的副本特定于表达式计算器 (EE)。
@@ -42,13 +42,11 @@ int CreateReplacementObject(
 ```
 
 ## <a name="parameters"></a>参数
- `dataIn`\
+`dataIn`\
+[in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)包含要复制的数据对象。
 
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)包含要复制的数据对象。
-
- `dataOut`\
-
- [out]返回一个新`IEEDataStorage`对象。
+`dataOut`\
+[out]返回一个新`IEEDataStorage`对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

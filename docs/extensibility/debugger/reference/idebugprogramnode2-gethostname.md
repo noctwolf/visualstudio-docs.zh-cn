@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fcf99f290938a6f51ce1e59ac1e14966206ee5b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8eb68be0164b7fd558c5f5a02c476db9e641d574
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459063"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199008"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 获取托管程序的进程的名称。
@@ -43,12 +43,10 @@ int GetHostName (
 
 ## <a name="parameters"></a>参数
 `dwHostNameType`\
-
- [in]中的值[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)枚举，用于指定要返回名称的类型。
+[in]中的值[GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md)枚举，用于指定要返回名称的类型。
 
 `pbstrHostName`\
-
- [out]返回宿主进程的名称。
+[out]返回宿主进程的名称。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

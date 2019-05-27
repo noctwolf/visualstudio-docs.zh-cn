@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aae81d575585c9a960b3405a35047853e5fe1f4e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1e93cfc4c8a1ddb618286f79513874f8f89a9481
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226011"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199439"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 创建为指定类型的指针。
@@ -41,13 +41,11 @@ int CreatePointerToType(
 ```
 
 ## <a name="parameters"></a>参数
- `pTypeField`\
+`pTypeField`\
+[in]若要指向的类型。 表示由[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口。
 
- [in]若要指向的类型。 表示由[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口。
-
- `pPtrToTypeField`\
-
- [out]返回表示由一个新的指针**IDebugField**对象。
+`pPtrToTypeField`\
+[out]返回表示由一个新的指针**IDebugField**对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

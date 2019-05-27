@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee55c7637272da536830f00607719fae9f234b4d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 73b5dd57a9e4c4de917e0fca744388b02345f0bb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457553"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208752"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 检索源服务器信息的数组。
@@ -41,12 +41,10 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>参数
 `pDataByteCount`\
-
- [out]数据数组中的字节数。
+[out]数据数组中的字节数。
 
 `ppData`\
-
- [out]对数据数组的引用。
+[out]对数据数组的引用。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

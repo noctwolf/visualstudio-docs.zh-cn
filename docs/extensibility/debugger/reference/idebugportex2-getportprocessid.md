@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f55915297daa877b2a7e73ab0cccda1a2d70b991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bdc0dc1155c3ceffa5e784279f113a8c7d30a168
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918261"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209073"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 获取自身的端口的进程 ID。
@@ -36,10 +39,9 @@ int GetPortProcessId ( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pdwProcessId`
-
- [out]返回自身的端口的物理进程 ID。
+## <a name="parameters"></a>参数
+`pdwProcessId`\
+[out]返回自身的端口的物理进程 ID。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

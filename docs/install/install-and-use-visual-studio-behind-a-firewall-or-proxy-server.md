@@ -1,7 +1,7 @@
 ---
 title: 在防火墙或代理服务器背后安装和使用
-description: 如果组织使用防火墙或代理服务器，请检查希望列入允许列表或打开的域 URL、端口和协议
-ms.date: 03/30/2019
+description: 如果组织使用防火墙或代理服务器，请检查希望添加到允许列表或打开的域 URL、端口和协议
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974704"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976214"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
-如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其列入“允许列表”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。
+如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其添加到“允许列表”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。
 
-* **[安装 Visual Studio](#install-visual-studio)**：这些表包括要加入允许列表的域 URL，以便你可访问所需的所有组件和工作负载。
+* **[安装 Visual Studio](#install-visual-studio)**：这些表包括要添加到允许列表的域 URL，以便你可访问所需的所有组件和工作负载。
 
-* **[使用 Visual Studio 和 Azure 服务](#use-visual-studio-and-azure-services)**：此表包括要加入允许列表的域 URL 以及要打开的端口和协议，以便你可访问所需的所有功能和服务。
+* **[使用 Visual Studio 和 Azure 服务](#use-visual-studio-and-azure-services)**：此表包括要添加到允许列表的域 URL 以及要打开的端口和协议，以便你可访问所需的所有功能和服务。
 
 > [!NOTE]
 > 本文针对 Windows 上的 Visual Studio 编写，但部分信息也适用于在防火墙或代理服务器后[安装 Visual Studio for Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)。
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
 
-### <a name="urls-to-whitelist"></a>加入允许列表的 URL
+### <a name="urls-to-add-to-an-allow-list"></a>要添加到允许列表的 URL
 
-因为 Visual Studio 安装程序从各个域及其下载服务器下载文件，以下是你可能需要在 UI 或部署脚本中以可信方式列入允许列表的域 URL。
+因为 Visual Studio 安装程序从各个域及其下载服务器下载文件，以下是你可能需要在 UI 或部署脚本中以可信方式添加到允许列表的域 URL。
 
 #### <a name="microsoft-domains"></a>Microsoft 域
 
@@ -79,9 +79,9 @@ ms.locfileid: "62974704"
 
 ## <a name="use-visual-studio-and-azure-services"></a>使用 Visual Studio 和 Azure 服务
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>加入到白名单的 URL 和要打开的端口和协议
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>添加到允许列表的 URL 和要打开的端口和协议
 
-若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应列入白名单的URL 和你可能需要打开的端口及协议。
+若要确保在防火墙或代理服务器后面使用 Visual Studio 或 Azure 服务时可访问一切所需的内容，以下是应添加到允许列表的 URL 和你可能需要打开的端口及协议。
 
 | 服务或方案 | DNS 终结点 | 协议 | 端口 | 说明 |
 | - | - | - | - | - |
@@ -121,7 +121,7 @@ ms.locfileid: "62974704"
 | 快照 <br>调试器 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022（Visual Studio 从属版本） | 1.查询 .json 文件的应用服务 SKU 大小 <br>2.各种 Azure RM 调用 <br>3.站点预热调用渠道  <br>4.客户的目标应用服务 Kudu 终结点 <br>5.查询 nuget.org 中发布的站点扩展版本 <br>6.远程调试通道 |
 | Azure 流分析 <br><br>HDInsight | Management.azure.com | https | 443 | 用于查看、提交、运行和管理 ASA 作业 <br><br> 用于浏览 HDI 群集，以及提交、诊断和调试 HDI 作业 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用于编译、提交、查看、诊断和调试作业；用于浏览 ADLS 文件；用于上传和下载文件 |
-| 打包服务 | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 仅特定生成任务方案（例如：NuGet 工具安装程序、节点工具安装程序）或者打算将公共上游与源结合使用时才需使用 .npmjs.org、.nuget.org 和 .nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
+| 打包服务 | [account].visualstudio.com <br/> [account].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 仅特定生成任务方案（例如：NuGet 工具安装程序、节点工具安装程序）或者打算将公共上游与源结合使用时才需使用 \*.npmjs.org、\*.nuget.org 和 \*.nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
 | Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | 用于连接 Azure DevOps Services |
 | | | | | |
 

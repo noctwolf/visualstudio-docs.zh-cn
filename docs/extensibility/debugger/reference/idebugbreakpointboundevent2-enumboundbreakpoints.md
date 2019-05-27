@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b062e17767fdbcfe1bf9efe6c0be197eb2638a1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1478a89bbc311b9f9ebc9892c6be08f1ad7169e6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877165"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202339"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
 创建已绑定到此事件的断点的枚举器。
@@ -36,10 +39,9 @@ int EnumBoundBreakpoints( 
 );
 ```
 
-#### <a name="parameters"></a>参数
-`ppEnum`
-
- [out]返回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)此事件从绑定枚举所有断点的对象。
+## <a name="parameters"></a>参数
+`ppEnum`\
+[out]返回[IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)此事件从绑定枚举所有断点的对象。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回 `S_OK`。 返回`S_FALSE`是否存在任何绑定的断点; 否则，返回错误代码。

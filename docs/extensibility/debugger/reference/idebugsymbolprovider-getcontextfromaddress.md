@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62c24adcc94b6dff82d3529658b563f811745c28
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a7697f22dc6c40b9b4e3de08bf6f27f0ed459482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226541"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207214"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 此方法将调试地址映射到文档上下文。
@@ -42,13 +42,11 @@ int GetContextFromAddress(
 ```
 
 ## <a name="parameters"></a>参数
- `pAddress`\
+`pAddress`\
+[in]调试地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- [in]调试地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
-
- `ppDocContext`\
-
- [out]由返回文档上下文[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。
+`ppDocContext`\
+[out]由返回文档上下文[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0ec98b9c206975b122511648017f920a28905b09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226380"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207100"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 此方法将映射到符号类型的符号名称。
@@ -44,17 +44,14 @@ int GetTypeByName(
 ```
 
 ## <a name="parameters"></a>参数
- `pszClassName`\
+`pszClassName`\
+[in]符号名称。
 
- [in]符号名称。
+`nameMatch`\
+[in]选择区分大小写的匹配项，例如，类型。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。
 
- `nameMatch`\
-
- [in]选择区分大小写的匹配项，例如，类型。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。
-
- `ppField`\
-
- [out]返回与符号类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
+`ppField`\
+[out]返回与符号类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b17636d5f346475018e27c72562807b44b39460c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d6f6672349d6a37d0f7b5e43c9a68d765d3abc7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872893"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203002"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 获取正在的模块加载或卸载。
@@ -40,18 +43,15 @@ int GetModule( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pModule`
+## <a name="parameters"></a>参数
+`pModule`\
+[out]返回[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)对象，表示加载或卸载的模块。
 
- [out]返回[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)对象，表示加载或卸载的模块。
+`pbstrDebugMessage`\
+[in、 out]返回描述此事件的可选消息。 如果此参数为 null 值，被不请求的任何消息。
 
- `pbstrDebugMessage`
-
- [in、 out]返回描述此事件的可选消息。 如果此参数为 null 值，被不请求的任何消息。
-
- `pbLoad`
-
- [in、 out]非零值 (`TRUE`) 如果模块加载和零 (`FALSE`) 如果正在卸载模块。 如果此参数为 null 值，无状态请求。
+`pbLoad`\
+[in、 out]非零值 (`TRUE`) 如果模块加载和零 (`FALSE`) 如果正在卸载模块。 如果此参数为 null 值，无状态请求。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

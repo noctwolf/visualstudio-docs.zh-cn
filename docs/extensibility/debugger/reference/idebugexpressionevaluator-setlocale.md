@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582dd3b7aa024bcbf4913f6807ea9b2153a46719
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d92eb956105c310d251d6a8e85e61c70a66636a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919894"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200869"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 此方法设置要用于创建可打印结果的语言。
@@ -36,10 +39,9 @@ int SetLocale(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `wLangID`
-
- [in]语言标识符。
+## <a name="parameters"></a>参数
+`wLangID`\
+[in]语言标识符。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

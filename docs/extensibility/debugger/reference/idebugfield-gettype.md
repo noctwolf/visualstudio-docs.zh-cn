@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8887be18d59d331913a1978d915b91f9c996b8f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7eb0b6e17ccc7b95ec64449468469a85adfa8849
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919510"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212672"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 此方法获取字段的类型。
@@ -36,10 +39,9 @@ int GetType(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppType`
-
- [out]返回的字段类型与另一个[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
+## <a name="parameters"></a>参数
+`ppType`\
+[out]返回的字段类型与另一个[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

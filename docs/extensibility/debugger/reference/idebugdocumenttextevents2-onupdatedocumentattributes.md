@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13085a14a8ef7684056897dd2bb8d049e82fe94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8b48051c6126c5ca185ef10fdfa3b5022d97ef2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875195"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203296"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 通知事件的接收方已更新的文档属性。
@@ -36,10 +39,9 @@ int onUpdateDocumentAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `textdocattr`
-
- [in]中的标志的组合[TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)枚举，用于指定文档的已更新的属性。
+## <a name="parameters"></a>参数
+`textdocattr`\
+[in]中的标志的组合[TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)枚举，用于指定文档的已更新的属性。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

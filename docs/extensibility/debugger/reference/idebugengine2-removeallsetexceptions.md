@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5eb2542fa16d86dd342ae0e2783ac03ca69ee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ecb0935d0589a8473a256650dde39c297d87c0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920945"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207638"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 删除的异常 IDE 已设置为特定的运行时体系结构或语言的列表。
@@ -36,10 +39,9 @@ int RemoveAllSetExceptions( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `guidType`
-
- [in]语言 GUID 或特定于运行时体系结构的调试引擎的 GUID。
+## <a name="parameters"></a>参数
+`guidType`\
+[in]语言 GUID 或特定于运行时体系结构的调试引擎的 GUID。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

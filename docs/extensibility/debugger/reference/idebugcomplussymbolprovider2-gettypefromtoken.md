@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c96d8b94142f9751412df90d3e46240631aa96f9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876482"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205943"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 检索在给定其标记的类型。
@@ -41,22 +44,18 @@ int GetTypeFromToken(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`appDomain`
+## <a name="parameters"></a>参数
+`appDomain`\
+[in]应用程序域的标识符。
 
- [in]应用程序域的标识符。
+`guidModule`\
+[in]该模块的唯一标识符。
 
-`guidModule`
+`tdToken`\
+[in]要检索的类型的标记。
 
- [in]该模块的唯一标识符。
-
-`tdToken`
-
- [in]要检索的类型的标记。
-
-`ppField`
-
- [out]返回表示的类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
+`ppField`\
+[out]返回表示的类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
