@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223943"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203682"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 此方法将更改该对象表示在可视化工具。
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>参数
- `pNewObject`\
+`pNewObject`\
+[in]要设置的对象。
 
- [in]要设置的对象。
+`error`\
+[out]如果将对象设置时出错，此字符串将包含错误消息。
 
- `error`\
-
- [out]如果将对象设置时出错，此字符串将包含错误消息。
-
- `pException`\
-
- [out]如果出现错误，此对象将保存异常信息。
+`pException`\
+[out]如果出现错误，此对象将保存异常信息。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

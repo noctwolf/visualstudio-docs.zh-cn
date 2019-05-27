@@ -1,6 +1,6 @@
 ---
 title: 写入用户设置存储 |Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -8,36 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe8187fe11f4818433aed847a7bc67d4a889ad3a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444909"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206887"
 ---
 # <a name="writing-to-the-user-settings-store"></a>写入用户设置存储
 用户设置是可写设置中的一样**工具 / 选项**对话框、 属性窗口和某些其他对话框。 Visual Studio 扩展可能会使用这些存储少量数据。 本演练演示如何将记事本到 Visual Studio 添加为外部工具，通过读取和写入用户设置存储。
-
-### <a name="backing-up-your-user-settings"></a>备份您的用户设置
-
-1. 您必须能够重置外部工具设置，以便您可以调试并重复此过程。 若要执行此操作，必须保存原始设置，以便根据需要还原。
-
-2. 打开 Regedit.exe。
-
-3. 导航到 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External 工具\\。
-
-    > [!NOTE]
-    > 请确保您查看时包含 \14.0Exp\ 且不 \14.0 密钥\\。 运行 Visual Studio 的实验实例，您的用户设置时，在注册表配置单元"14.0Exp"。
-
-4. 右键单击 \External Tools\ 子项，然后依次**导出**。 请确保**所选分支**处于选中状态。
-
-5. 保存生成的外部 Tools.reg 文件。
-
-6. 更高版本，当你想要重置外部工具设置，选择 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ 注册表项，然后单击**删除**上下文菜单上。
-
-7. 当**确认删除密钥**出现对话框，请单击**是**。
-
-8. 右键单击前面保存的外部 Tools.reg 文件中，单击**打开方式**，然后单击**注册表编辑器**。
 
 ## <a name="writing-to-the-user-settings-store"></a>写入用户设置存储
 

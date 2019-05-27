@@ -1,8 +1,8 @@
 ---
 title: 导入或导出安装配置
 titleSuffix: ''
-description: 了解如何使用 Visual Studio 中的导入/导出配置功能
-ms.date: 04/19/2019
+description: 了解如何将安装配置导出到 .vsconfig 文件用于与他人共享，以及如何将其导入进行克隆。
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64850756"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849038"
 ---
 # <a name="import-or-export-installation-configurations"></a>导入或导出安装配置
 
-可以使用安装配置文件在组织中配置 Visual Studio。 若要执行此操作，只需使用 Visual Studio 安装程序将工作负载和组件信息导出到 .vsconfig 文件。 然后便可将配置导入到新安装或现有安装中。
+可以使用安装配置文件在组织中配置 Visual Studio。 若要执行此操作，只需使用 Visual Studio 安装程序将工作负载和组件信息导出到 .vsconfig 文件。 然后便可将配置导入到新安装或现有安装中，并与他人共享。
 
 操作方法如下。
 

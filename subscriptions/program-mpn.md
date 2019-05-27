@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 有关在 MPN 中提供的订阅、应用的规则以及提供的订阅数的详细信息。
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945396"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805295"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
@@ -52,7 +52,7 @@ ms.locfileid: "62945396"
 - Windows 企业版 - 仅最新版本且仅用于开发和测试
 - Windows Server - 仅最新版本且仅用于开发和测试
 
-Visual Studio Professional (MPN) 订阅者还可下载和使用 SQL Server Developer Edition 等免费软件进行开发。
+Visual Studio Professional (MPN) 订阅者还可下载和使用 SQL Server Developer Edition 等软件进行开发。
 
 Visual Studio Professional (MPN) 订阅不包括 Azure DevOps Services 权益、每月 Azure 额度、技术支持、培训或商用 Visual Studio 订阅中提供的其他订阅者权益。
 

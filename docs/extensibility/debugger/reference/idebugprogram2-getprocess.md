@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e92dd0c3bf56710b387535f8b5e3984bff930186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a443d7f17397526ae0f990627314d8feedad48d4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870148"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212582"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 获取此程序在运行时的进程。
@@ -36,10 +39,9 @@ int GetProcess(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppProcess`
-
- [out]返回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)表示进程的接口。
+## <a name="parameters"></a>参数
+`ppProcess`\
+[out]返回[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)表示进程的接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

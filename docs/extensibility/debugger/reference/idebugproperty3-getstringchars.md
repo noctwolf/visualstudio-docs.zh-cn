@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b087997fab72e71abf4380df6d5c03910d1a57eb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457672"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212257"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 检索与此属性关联的字符串并将其存储在用户提供的缓冲区。
@@ -45,18 +45,15 @@ int GetStringChars(
 
 ## <a name="parameters"></a>参数
 `buflen`\
-
- [in]用户提供缓冲区可容纳最大字符数。
+[in]用户提供缓冲区可容纳最大字符数。
 
 `rgString`\
-
- [out]返回的字符串。
+[out]返回的字符串。
 
  [C++仅]，`rgString`指向该缓冲区用于接收字符串的 Unicode 字符的指针。 此缓冲区必须至少为`buflen`中大小的字符 （而非字节）。
 
 `pceltFetched`\
-
- [out]其中返回的实际存储在缓冲区中的字符数。 (可以是`NULL`在C++。)
+[out]其中返回的实际存储在缓冲区中的字符数。 (可以是`NULL`在C++。)
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则返回错误代码。

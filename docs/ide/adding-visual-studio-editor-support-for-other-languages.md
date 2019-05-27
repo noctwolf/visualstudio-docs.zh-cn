@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975661"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805330"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 
@@ -46,21 +46,21 @@ Visual Studio 编辑器中的功能（如语法着色、语句完成（也称作
 
 除语法着色和基本语句完成外，Visual Studio 还具有一种称为[导航到](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)的功能。 可使用此功能快速搜索代码文件、文件路径和代码符号。 Visual Studio 为以下语言提供“导航到”支持。
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - 前往
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 所有这些文件类型均有上述功能，即使尚未安装对某种语言的支持也是如此。 安装某种语言的专门支持可能会提供其他语言支持，例如 IntelliSense 或其他高级语言功能（如灯泡）。
 
@@ -76,7 +76,7 @@ Visual Studio 通过 [TextMate 语法](https://manual.macromates.com/en/language
 
 |文件夹名|说明|
 |-----------------|-----------------|
-|\\*\<language name>*|语言文件夹。 用语言的名称替换 *\<language name>*。 例如，*\Matlab*。|
+|\\ *\<language name>*|语言文件夹。 用语言的名称替换 *\<language name>* 。 例如， *\Matlab*。|
 |*\Syntaxes*|语法文件夹。 包含语言的 .json 语法文件，如 Matlab.json。|
 |*\Snippets*|代码段文件夹。 包含语言的代码段。|
 
@@ -89,5 +89,6 @@ Visual Studio 通过 [TextMate 语法](https://manual.macromates.com/en/language
 
 ## <a name="see-also"></a>请参阅
 
+- [添加语言服务器协议扩展](../extensibility/adding-an-lsp-extension.md)
 - [演练：创建代码片段](../ide/walkthrough-creating-a-code-snippet.md)
 - [演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)

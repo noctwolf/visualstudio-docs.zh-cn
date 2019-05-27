@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bfee65537512398cad2f4b86d51ebefac230fb1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919457"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212228"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 此方法将此字段与指定字段相等进行比较。
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pField`
-
- [in]要与此比较的字段。
+## <a name="parameters"></a>参数
+`pField`\
+[in]要与此比较的字段。
 
 ## <a name="return-value"></a>返回值
  如果字段是相同的则返回`S_OK`。 如果字段不同，返回`S_FALSE.`否则，返回错误代码。

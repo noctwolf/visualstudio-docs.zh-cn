@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8a822932479cab7b62be52951c83c6d016fcc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d0faef6eb5e327f0f41b6e9091e8a4e0eed265c6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870886"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208853"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 获取系统进程标识符。
@@ -36,10 +39,9 @@ int GetPhysicalProcessId(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pdwProcessId`
-
- [out][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)填充系统进程标识符信息的结构。
+## <a name="parameters"></a>参数
+`pdwProcessId`\
+[out][AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)填充系统进程标识符信息的结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

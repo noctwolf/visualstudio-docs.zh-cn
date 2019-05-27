@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962051"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934348"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 
@@ -61,7 +61,7 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 
 ::: moniker range="vs-2017"
 
-在“扩展和更新”中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。 按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
+在“工具” > “扩展和更新”中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。 按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
 
 如果尝试安装具有依赖项的扩展，安装程序将验证它们是否已安装。 如果未安装，则 **“扩展和更新”** 对话框将列出安装该扩展之前必须先安装的依赖项。
 
@@ -69,13 +69,13 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 
 ::: moniker range=">=vs-2019"
 
-在“管理扩展”中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。 按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
+在“扩展” > “管理扩展”中，找到要安装的扩展。 （如果知道扩展的名称或部分名称，则可以在“搜索”窗口中进行搜索。）单击“下载”。 按计划安装扩展。 等所有 Visual Studio 实例都关闭后便会安装扩展。
 
 如果尝试安装具有依赖项的扩展，安装程序将验证它们是否已安装。 如果未安装，则“管理扩展”对话框将列出安装该扩展之前必须先安装的依赖项。
 
 ::: moniker-end
 
-如果要停止使用一个扩展，你可以将其禁用或卸载。 禁用扩展是使扩展保持安装状态，但不加载。 只能禁用 VSIX 扩展；使用 MSI 安装的扩展只能进行卸载。 找到扩展，然后单击 **“卸载”** 或 **“禁用”**。 重新启动 Visual Studio 以卸载禁用的扩展。
+如果要停止使用一个扩展，你可以将其禁用或卸载。 禁用扩展是使扩展保持安装状态，但不加载。 只能禁用 VSIX 扩展；使用 MSI 安装的扩展只能进行卸载。 找到扩展，然后单击 **“卸载”** 或 **“禁用”** 。 重新启动 Visual Studio 以卸载禁用的扩展。
 
 ## <a name="per-user-and-administrative-extensions"></a>每用户扩展和管理扩展
 
@@ -91,7 +91,7 @@ Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。
 
 ::: moniker range="vs-2017"
 
-- 若要为所有扩展禁用自动更新，请选择“扩展和更新”对话框中的“更改扩展和更新设置”链接。 在“选项”对话框中，取消选中“自动更新扩展”。
+- 若要为所有扩展禁用自动更新，请选择“工具” > “扩展和更新”对话框中的“更改扩展和更新设置”链接。 在“选项”对话框中，取消选中“自动更新扩展”。
 
 - 若要为特定扩展禁用自动更新，请取消选中“扩展和更新”对话框右侧的扩展细节窗格中的“自动更新此扩展”选项。
 
@@ -99,7 +99,7 @@ Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。
 
 ::: moniker range=">=vs-2019"
 
-- 若要为所有扩展禁用自动更新，请选择“管理扩展”对话框中的“更改扩展的设置”链接。 在“选项”对话框中，取消选中“自动更新扩展”。
+- 若要为所有扩展禁用自动更新，请选择“扩展” > “管理扩展”对话框中的“更改扩展的设置”链接。 在“选项”对话框中，取消选中“自动更新扩展”。
 
 - 若要为特定扩展禁用自动更新，请取消选中“管理扩展”对话框右侧的扩展详细信息窗格中的“自动更新此扩展”选项。
 
@@ -115,13 +115,13 @@ Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。
 
 ::: moniker range="vs-2017"
 
-- 选择“禁用此扩展”。 Visual Studio 会禁用扩展，并告知是否需要重启系统才能使禁用生效。 如果需要，可以重新启用“扩展和更新”对话框中的扩展。
+- 选择“禁用此扩展”。 Visual Studio 会禁用扩展，并告知是否需要重启系统才能使禁用生效。 如果需要，可以在“工具” > “扩展和更新”对话框中重新启用扩展。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- 选择“禁用此扩展”。 Visual Studio 会禁用扩展，并告知是否需要重启系统才能使禁用生效。 如果需要，可以在“管理扩展”对话框中重新启用扩展。
+- 选择“禁用此扩展”。 Visual Studio 会禁用扩展，并告知是否需要重启系统才能使禁用生效。 如果需要，可以在“扩展” > “管理扩展”对话框中重新启用扩展。
 
 ::: moniker-end
 
@@ -147,13 +147,13 @@ Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。
 
 ::: moniker range="vs-2017"
 
-可以使用“扩展和更新”窗口来执行这些与示例相关的任务：
+你可以使用“工具”>“扩展和更新”对话框来执行这些与示例相关的任务：
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-可以使用“管理扩展”窗口来执行这些与示例相关的任务：
+你可以使用“扩展”>“管理扩展”对话框来执行这些与示例相关的任务：
 
 ::: moniker-end
 
@@ -171,13 +171,13 @@ Visual Studio Marketplace 中有可用的新版本时，将自动更新扩展。
 
 ::: moniker range="vs-2017"
 
-## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>不使用“扩展和更新”对话框进行安装
+## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>不使用“扩展和更新”对话框进行安装
 
-可在 Visual Studio Marketplace 以外的位置获取已打包在 .vsix 文件中的扩展。 “扩展和更新”对话框无法检测到这些文件，但可通过双击该文件，或者选择文件并按下 Enter 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用 **“扩展和更新”** 对话框启用、禁用或卸载此扩展。
+可在 Visual Studio Marketplace 以外的位置获取已打包在 .vsix 文件中的扩展。 “工具” > “扩展和更新”对话框无法检测到这些文件，但可通过双击该文件，或者选择文件并按下 Enter 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用 **“扩展和更新”** 对话框启用、禁用或卸载此扩展。
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>“扩展和更新”对话框不支持的扩展类型
 
-Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装程序 (MSI) 安装、而不是通过 **“扩展和更新”** 对话框安装的扩展。
+Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装程序 (MSI) 安装、而不是通过“工具”>“扩展和更新”对话框安装的扩展。
 
 > [!TIP]
 > 如果基于 MSI 的扩展包含 extension.vsixmanifest 文件，则该扩展会出现在“扩展和更新”对话框中。
@@ -186,13 +186,13 @@ Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装�
 
 ::: moniker range=">=vs-2019"
 
-## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>不使用“管理扩展”对话框进行安装
+## <a name="install-without-using-the-manage-extensions-dialog-box"></a>不使用“管理扩展”对话框进行安装
 
-可在 Visual Studio Marketplace 以外的位置获取已打包在 .vsix 文件中的扩展。 “管理扩展”对话框无法检测到这些文件，但可通过双击该文件，或者选择文件并按下 Enter 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用“管理扩展”对话框启用、禁用或卸载此扩展。
+可在 Visual Studio Marketplace 以外的位置获取已打包在 .vsix 文件中的扩展。 “扩展” > “管理扩展”对话框无法检测到这些文件，但可通过双击该文件，或者选择文件并按下 Enter 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用“管理扩展”对话框启用、禁用或卸载此扩展。
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>“管理扩展”对话框不支持的扩展类型
 
-Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装程序 (MSI) 安装、而不是通过“管理扩展”对话框安装的扩展。
+Visual Studio 会继续在无需修改的情况下，支持由 Microsoft 安装程序 (MSI) 安装、而不是通过“扩展”>“管理扩展”对话框安装的扩展。
 
 > [!TIP]
 > 如果基于 MSI 的扩展包含 extension.vsixmanifest 文件，则该扩展会出现在“管理扩展”对话框中。

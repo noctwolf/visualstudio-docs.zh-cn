@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 39214e2e0b1f025bddd052737d9914dd3a164fd2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226678"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207184"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 此方法获取表示完全限定的方法名称的字段。
@@ -44,17 +44,14 @@ int GetMethodFieldsByName(
 ```
 
 ## <a name="parameters"></a>参数
- `pszFullName`\
+`pszFullName`\
+[in]方法名称。
 
- [in]方法名称。
+`nameMatch`\
+[in]选择区分大小写的匹配项，例如，类型。
 
- `nameMatch`\
-
- [in]选择区分大小写的匹配项，例如，类型。
-
- `ppEnum`\
-
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)与此方法关联的字段的枚举器。
+`ppEnum`\
+[out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)与此方法关联的字段的枚举器。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

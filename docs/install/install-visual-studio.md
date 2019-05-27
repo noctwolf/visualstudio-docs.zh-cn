@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692318"
 ---
 # <a name="install-visual-studio"></a>安装 Visual Studio
 
@@ -203,7 +203,7 @@ ms.locfileid: "62974850"
 
 更改默认语言的另一种方法是从命令行运行安装程序。 例如，可以通过运行以下命令来强制安装程序用英语运行：`vs_installer.exe --locale en-US`。 安装程序下一次运行时会记住此设置。 安装程序支持以下语言标记：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
 
-## <a name="step-7---change-the-installation-location-optional"></a>第 7 步 - 更改安装位置（可选）
+## <a name="step-7---select-the-installation-location-optional"></a>第 7 步 - 选择安装位置（可选）
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ ms.locfileid: "62974850"
 
 可减少系统驱动器上 Visual Studio 的安装占用。 可以选择将下载缓存、共享组件、SDK 和工具移动到不同驱动器，并将 Visual Studio 安装在其运行速度最快的驱动器上。
 
-  ![Visual Studio 2019 - 更改安装位置](media/vs-2019/vs-installer-installation-locations.png "更改安装位置")
+  ![Visual Studio 2019 - 选择安装位置](media/vs-2019/vs-installer-installation-locations.png "选择安装位置")
 
 ::: moniker-end
 

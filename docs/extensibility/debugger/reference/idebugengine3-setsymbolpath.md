@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3799043b82a4e0d0993e7de255f69592c6b89534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1f04fedb2fe5215e7ce2c80d12e2a3e2e58bb7e9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875280"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212493"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 设置搜索的调试符号的路径。
@@ -40,13 +43,16 @@ int SetSymbolPath(
 );
 ```
 
-#### <a name="parameters"></a>参数
+## <a name="parameters"></a>参数
 
-|参数|描述|
-|---------------|-----------------|
-|`szSymbolSearchPath`|[in]包含符号搜索路径的字符串。 有关详细信息，请参阅"备注"。 不能为 null。|
-|`szSymbolCachePath`|[in]包含可以在其中缓存符号的本地路径的字符串。 不能为 null。|
-|`Flags`|[in]未使用;始终设置为 0。|
+`szSymbolSearchPath`\
+[in]包含符号搜索路径的字符串。 有关详细信息，请参阅"备注"。 不能为 null。
+
+`szSymbolCachePath`\
+[in]包含可以在其中缓存符号的本地路径的字符串。 不能为 null。
+
+`Flags`\
+[in]未使用;始终设置为 0。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则将返回错误代码。

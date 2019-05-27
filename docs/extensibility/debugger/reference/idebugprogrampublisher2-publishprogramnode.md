@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d6dd1d1b28ac4419604635b68767237eb6ce7d4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 40c0cd23c8f89707bf1ef166b9059819448048e2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458959"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211686"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 使程序节点可供使用的调试引擎 (DEs) 和会话调试管理器 (SDM)。
@@ -40,9 +40,8 @@ int PublishProgramNode(
 ```
 
 ## <a name="parameters"></a>参数
- `pProgramNode`\
-
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示要提供的程序节点。
+`pProgramNode`\
+[in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示要提供的程序节点。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a990c0843d34a0458e8646bea18e9bcc056e40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d8cb666478b870242a9fd9a7a5b0c8bd9ba60a1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915034"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203593"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 此方法返回枚举中的下一组元素。
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `celt`
+## <a name="parameters"></a>参数
+`celt`\
+[in]要检索的元素数。 此外可以指定的最大大小`rgelt`数组。
 
- [in]要检索的元素数。 此外可以指定的最大大小`rgelt`数组。
+`rgelt`\
+[in、 out]数组[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)要填充的元素。
 
- `rgelt`
-
- [in、 out]数组[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)要填充的元素。
-
- `pceltFetched`
-
- [out]返回中实际返回的元素数目`rgelt`。
+`pceltFetched`\
+[out]返回中实际返回的元素数目`rgelt`。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 返回`S_FALSE`如果无法返回请求的元素数少于; 否则，返回错误代码。

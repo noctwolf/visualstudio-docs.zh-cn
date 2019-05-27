@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f974874eb18f5893bf736a4f15922e3a86c13c67
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 390d3b2c5d468552c3def5c7e2b1cd73ece5e0ab
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457640"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211412"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 获取设置的属性的方法。
@@ -40,9 +40,8 @@ int GetPropertySetter(
 ```
 
 ## <a name="parameters"></a>参数
- `ppField`\
-
- [out]返回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)表示的方法用于设置属性的对象。
+`ppField`\
+[out]返回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)表示的方法用于设置属性的对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则将返回错误代码。

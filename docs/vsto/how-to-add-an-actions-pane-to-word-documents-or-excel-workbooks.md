@@ -1,5 +1,5 @@
 ---
-title: 如何：将操作窗格添加到 Word 文档或 Excel 工作簿
+title: 将操作窗格添加到 Word 文档或 Excel 工作簿
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aed3ace3765bb9f160117503deb7373e12e510ad
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427911"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177769"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：将操作窗格添加到 Word 文档或 Excel 工作簿
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，首先创建 Windows 窗体用户控件。 然后，将用户控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>的属性`ThisDocument.ActionsPane`字段 (Word) 或`ThisWorkbook.ActionsPane`在项目中的字段 (Excel)。
@@ -37,7 +37,7 @@ ms.locfileid: "63427911"
 
 1. 在 Visual Studio 中打开 Word 或 Excel 文档级项目。
 
-2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
+2. 在 **“项目”** 菜单上，单击 **“添加新项”** 。
 
 3. 在中**添加新项**对话框中，选择**操作窗格控件**，其命名为**HelloControl**，然后单击**添加**。
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875873"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205523"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 使指定的调试引擎自动附加。
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `rgguidSpecificEngines`
+## <a name="parameters"></a>参数
+`rgguidSpecificEngines`\
+[in]Guid 的数组，每种调试引擎将标记为自动附加。
 
- [in]Guid 的数组，每种调试引擎将标记为自动附加。
+`celtSpecificEngines`\
+[in]中指定的引擎数`rgguidSpecificEngines`。
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in]要使用自动附加时的起始 URL。
 
- [in]中指定的引擎数`rgguidSpecificEngines`。
-
- `pszStartPageUrl`
-
- [in]要使用自动附加时的起始 URL。
-
- `pbstrSessionID`
-
- [out]已自动附加的会话 ID。
+`pbstrSessionID`\
+[out]已自动附加的会话 ID。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。 一个错误代码是`E_AUTO_ATTACH_NOT_REGISTERED`，指示尚未注册 auto-attach 类工厂。

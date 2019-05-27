@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbc610dad6ab5915efe07718ad9a80592af4034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92467655a8f3baaf347a28a30fbeb40fc0b3731c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872985"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210340"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 创建方法，包括那些由编译器在内部生成的所有局部变量的枚举器。
@@ -38,14 +41,12 @@ int EnumAllLocals(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pAddress`
+## <a name="parameters"></a>参数
+`pAddress`\
+[in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示指向特定作用域或上下文的方法中的调试地址。
 
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示指向特定作用域或上下文的方法中的调试地址。
-
- `ppLocals`
-
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示指定范围内的所有局部变量的列表; 否则，返回 null 值，该值指示没有局部变量。
+`ppLocals`\
+[out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示指定范围内的所有局部变量的列表; 否则，返回 null 值，该值指示没有局部变量。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK 或如果没有局部变量，则返回 S_FALSE。 否则，返回错误代码。

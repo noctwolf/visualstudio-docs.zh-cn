@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c0572bfa8ebe1b70548483b17c58d08c8a0f9ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 41a644c2e0fb36cd39d55bf853f8362033eec8a0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920375"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212427"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 允许 （或不允许） 表达式计算，即使程序已停止，在给定的线程上发生。
@@ -44,26 +47,21 @@ int WatchForExpressionEvaluationOnThread( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pOriginatingProgram`
+## <a name="parameters"></a>参数
+`pOriginatingProgram`\
+[in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示计算表达式的程序。
 
- [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示计算表达式的程序。
+`dwTid`\
+[in]指定线程的标识符。
 
- `dwTid`
+`dwEvalFlags`\
+[in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定计算的执行方式的枚举。
 
- [in]指定线程的标识符。
+`pExprCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)要用来发送在表达式计算期间发生的调试事件的对象。
 
- `dwEvalFlags`
-
- [in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定计算的执行方式的枚举。
-
- `pExprCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)要用来发送在表达式计算期间发生的调试事件的对象。
-
- `fWatch`
-
- [in]如果非零值 (`TRUE`)，由标识的线程上允许表达式评估`dwTid`; 否则为零 (`FALSE`) 不允许该线程上的表达式计算。
+`fWatch`\
+[in]如果非零值 (`TRUE`)，由标识的线程上允许表达式评估`dwTid`; 否则为零 (`FALSE`) 不允许该线程上的表达式计算。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

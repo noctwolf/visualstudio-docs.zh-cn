@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db48cc82e16f071ec55493e98570c6969324bfda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ced86b93bb1fe9fcff791cbb3c4bbc040b30764c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918023"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204371"
 ---
 # <a name="idebugportsupplier2removeport"></a>IDebugPortSupplier2::RemovePort
 删除端口。
@@ -36,10 +39,9 @@ int RemovePort( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pPort`
-
- [in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象，表示要删除的端口。
+## <a name="parameters"></a>参数
+`pPort`\
+[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象，表示要删除的端口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

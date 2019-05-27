@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b26646df5958bd6070ee0c30dbe574070cd1127a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458625"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212146"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 检索给定的指标名称的表达式计算器本地对象。
@@ -44,21 +44,17 @@ private int GetEELocalObject(
 ```
 
 ## <a name="parameters"></a>参数
- `guidLang`\
+`guidLang`\
+[in]编程语言的唯一标识符。
 
- [in]编程语言的唯一标识符。
+`guidVendor`\
+[in]供应商的唯一标识符。
 
- `guidVendor`\
+`pszMetric`\
+[in]指标的名称。
 
- [in]供应商的唯一标识符。
-
- `pszMetric`\
-
- [in]指标的名称。
-
- `ppUnk`\
-
- [out]返回的表达式计算器本地对象。
+`ppUnk`\
+[out]返回的表达式计算器本地对象。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

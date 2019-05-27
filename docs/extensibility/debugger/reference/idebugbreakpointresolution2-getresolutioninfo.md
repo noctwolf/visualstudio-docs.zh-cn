@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c4a6c18f2203a1e03751423ce9bc972be9e4801
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923110"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204002"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 获取描述此断点的断点解决方法信息。
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+`dwFields`\
+[in]中的标志的组合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)枚举，用于确定哪些字段的`pBPResolutionInfo`参数是要填写。
 
- [in]中的标志的组合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)枚举，用于确定哪些字段的`pBPResolutionInfo`参数是要填写。
-
- `pBPResolutionInfo`
-
- [out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构，以使用有关此断点的信息填充。
+`pBPResolutionInfo`\
+[out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构，以使用有关此断点的信息填充。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。

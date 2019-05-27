@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399384"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037389"
 ---
 # <a name="general-debugging-options"></a>常规调试选项
 
@@ -136,7 +136,7 @@ ms.locfileid: "63399384"
 
 - **在应用程序中显示运行时工具**：如果选中一个 XAML 元素的上下文，同时会在“实时可视化树”窗口中选中该元素。 Visual Studio 2015 Update 2 中引入了此选项。
 
-- **启用“XAML 编辑并继续”**： 允许将“编辑并继续”功能与 XAML 代码结合使用。
+- **启用 XAML 热重新加载**:可以在您的应用程序运行时 XAML 代码中使用 XAML 热重新加载功能。 （此功能是以前称为"XAML 编辑并继续"）
 
 **调试时启用诊断工具**：调试时显示“诊断工具”窗口。
 

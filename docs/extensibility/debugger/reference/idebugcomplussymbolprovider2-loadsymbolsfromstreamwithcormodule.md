@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 487f98f992a1b6caf2d4359c9840fd568b023805
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876342"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205889"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 从给定的数据流加载调试符号**icor 调试模块**对象。
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`ulAppDomainID`
+## <a name="parameters"></a>参数
+`ulAppDomainID`\
+[in]应用程序域的标识符。
 
- [in]应用程序域的标识符。
+`guidModule`\
+[in]该模块的唯一标识符。
 
-`guidModule`
+`baseAddress`\
+[in]基本的内存地址。
 
- [in]该模块的唯一标识符。
+`pUnkMetadataImport`\
+[in]包含符号元数据的对象。
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
- [in]基本的内存地址。
-
-`pUnkMetadataImport`
-
- [in]包含符号元数据的对象。
-
-`pUnkCorDebugModule`
-
- [in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
-
-`pStream`
-
- [in]包含要加载的调试符号的数据流。
+`pStream`\
+[in]包含要加载的调试符号的数据流。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

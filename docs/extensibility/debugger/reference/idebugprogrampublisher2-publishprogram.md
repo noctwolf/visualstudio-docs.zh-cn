@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457865"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203711"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 此方法将可用于调试引擎 (DEs) 的程序和会话调试管理器。
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>参数
- `Engines`\
+`Engines`\
+[in]针对 DEs 的可启动或附加到此程序的 Guid 的数组。
 
- [in]针对 DEs 的可启动或附加到此程序的 Guid 的数组。
+`szFriendlyName`\
+[in]（这会显示在菜单或对话框向用户显示） 的程序的友好名称。
 
- `szFriendlyName`\
-
- [in]（这会显示在菜单或对话框向用户显示） 的程序的友好名称。
-
- `pDebuggeeInterface`\
-
- [in]`IUnknown`程序接口 （此值用作一个 cookie 以唯一标识程序; 此相同的值用于"取消发布"程序）
+`pDebuggeeInterface`\
+[in]`IUnknown`程序接口 （此值用作一个 cookie 以唯一标识程序; 此相同的值用于"取消发布"程序）
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

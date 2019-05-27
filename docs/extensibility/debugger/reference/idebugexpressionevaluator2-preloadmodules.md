@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9c2af93b814f7762488a185476d395237a276a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 154089f95c3a1aa14198923e45a2d44b532d1ac3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873992"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211744"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 预加载指定的符号提供程序指定的模块。
@@ -35,10 +38,9 @@ int PreloadModules (
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pSym`
-
- [in]将为其预加载模块符号提供程序。
+## <a name="parameters"></a>参数
+`pSym`\
+[in]将为其预加载模块符号提供程序。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d50ce2b695fa332057abd91ab54c5966c277ba45
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b73b021201a3fc11509c429eda3877c24d6be6e3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461271"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210117"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 指定当截获异常时要执行的操作。
@@ -45,7 +45,6 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>参数
 
 `IEA_INTERCEPT`\
-
 启用截获当前异常。 这是目前支持的唯一值，必须指定。
 
 ## <a name="remarks"></a>备注

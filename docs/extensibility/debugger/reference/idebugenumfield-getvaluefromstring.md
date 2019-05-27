@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55bd03f114e56bacde5b035527a2da55d7258872
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920404"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200111"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 此方法返回与枚举常量的名称相关联的值。
@@ -38,14 +41,12 @@ int GetValueFromString(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszValue`
+## <a name="parameters"></a>参数
+`pszValue`\
+[in]指定要为其获取值的名称的字符串。 请注意，对于C++，这是一个宽字符字符串。
 
- [in]指定要为其获取值的名称的字符串。 请注意，对于C++，这是一个宽字符字符串。
-
- `pValue`
-
- [out]返回关联的数字值。
+`pValue`\
+[out]返回关联的数字值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`，如果名称不是枚举或错误代码的一部分。

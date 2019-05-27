@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 524598a4fdac3e9b06a91623d6ff2d37a1919ffa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457338"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212083"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 检索在给定名称的指标的值。
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>参数
- `pszType`\
+`pszType`\
+[in]该度量值的类型。
 
- [in]该度量值的类型。
+`guidSection`\
+[in]部分中的唯一标识符。
 
- `guidSection`\
+`pszMetric`\
+[in]指标的名称。
 
- [in]部分中的唯一标识符。
-
- `pszMetric`\
-
- [in]指标的名称。
-
- `pdwValue`\
-
- [out]返回的指标值。
+`pdwValue`\
+[out]返回的指标值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

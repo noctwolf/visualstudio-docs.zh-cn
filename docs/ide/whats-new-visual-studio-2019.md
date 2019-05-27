@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 04/23/2019
+ms.date: 05/22/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432022"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976240"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-**已针对[版本 16.0](/visualstudio/releases/2019/release-notes/) 进行更新**
+已针对[版本 16.1](/visualstudio/releases/2019/release-notes/) 进行更新
 
 >[!div class="button"]
 >[下载 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -63,7 +63,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 ### <a name="intellicode"></a>IntelliCode
 
-[Visual Studio IntelliCode](/visualstudio/intellicode/) 是一个扩展，通过使用人工智能 (AI) 来提高软件开发工作的效率。 IntelliCode 将在 GitHub 上训练 2,000 个开源项目（每个项目包含 100 个星级）以生成这些建议。
+[Visual Studio IntelliCode](/visualstudio/intellicode/) 通过使用人工智能 (AI) 来提高软件开发工作的效率。 IntelliCode 将在 GitHub 上训练 2,000 个开源项目（每个项目包含 100 个星级）以生成这些建议。
 
  ![Visual Studio 2019 中的 IntelliCode 动画](media/vs-2019/IntelliCode.gif)
 
@@ -74,23 +74,33 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 * 发现难以察觉的代码问题
 * 将关注点集中到重要领域，从而专注代码评审
 
-我们在适用于 Visual Studio 的 IntelliCode 扩展预览版中最初仅支持 C#。 现在，我们添加了对 Visual Studio 中 C++ 和 XAML 的支持。
+在首次预览作为 Visual Studio 扩展的 IntelliCode 时，我们最初仅支持 C#。 现在，在 16.1 的新增功能中，我们添加了对 C# 和 XAML“in-the-box”的支持。 （但是，对 C++ 和 TypeScript/JavaScript 的支持仍处于预览状态。）
 
 如果你使用的是 C#，我们还添加了在你自己的代码上训练自定义模型的功能。
 
-有关 IntelliCode 的详细信息，请参阅博客文章[使用 Visual Studio IntelliCode 编写更多代码并减少滚动](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)。
+有关 IntelliCode 的详细信息，请参阅 [Announcing the general availability of IntelliCode plus a sneak peek](https://devblogs.microsoft.com/visualstudio/announcing-the-general-availability-of-intellicode-plus-a-sneak-peek/)（宣布 IntelliCode 的正式发布以及快速浏览）和 [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/)（使用 Visual Studio IntelliCode 编写更多代码，更少滚动）博客文章。
 
 ### <a name="code-cleanup"></a>代码清理
 
 与新文档运行状况指示符配对是一种新的代码清理命令。 可以使用此新命令通过单击按钮来识别并修复警告和建议。
 
-清理将格式化代码并应用[当前设置](code-styles-and-quick-actions.md)和 [.editorconfig 文件](create-portable-custom-editor-options.md)建议的任何代码修复程序。
+清理将格式化代码并应用[当前设置](code-styles-and-code-cleanup.md)和 [.editorconfig 文件](create-portable-custom-editor-options.md)建议的任何代码修复程序。
 
    ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile.png)
 
 此外可以将修复程序集合另存为配置文件。 例如，如果你有一小组在编写代码时经常应用的目标修复程序，然后在进行代码评审之前应用另一组全面的修复程序，则可以配置配置文件来处理这些不同的任务。
 
    ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile-configure.png)
+
+### <a name="per-monitor-aware-pma-rendering"></a>按监视器感知 (PMA) 呈现
+
+如果使用配置了不同显示比例因子的监视器，或远程连接到显示比例因子与主设备不同的计算机，你可能会发现 Visual Studio 看起来比较模糊或以错误的比例呈现。
+
+随着 Visual Studio 2019 的发布，我们正在使 Visual Studio 成为按监视器感知 (PMA) 应用程序。 现在，无论使用何种显示比例因子，Visual Studio 都会正确呈现。
+
+   ![Visual Studio 2019 中的按监视器感知 (PMA) 呈现](media/vs-2019/pma-dpi-scaling.png)
+
+有关详细信息，请参阅[通过 Visual Studio 2019 创建更出色的多监视器体验](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)博客文章。
 
 ## <a name="collaborate"></a>协作
 
@@ -104,7 +114,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
    ![Visual Studio 2019 中新启动窗口的屏幕截图](media/vs-2019/start-window-dark.png)
 
-启动窗口提供了几个选项，帮助你快速编写代码。 首先，我们布置了从存储库克隆或签出代码的选项。  
+启动窗口提供了几个选项，帮助你快速编写代码。 首先，我们布置了从存储库克隆或签出代码的选项。
 
    ![Visual Studio 2019 中的“Git 优先”体验动画](media/vs-2019/git-first.gif)
 
@@ -128,7 +138,7 @@ Visual Studio 2019 中会默认安装此服务。
 
    ![Visual Studio 2019 中新启动窗口的屏幕截图](media/vs-2019/pr-experience.png)
 
-要立即开始使用，可从 Visual Studio Marketplace 下载 [Visual Studio 的拉取请求](https://aka.ms/pr4vs)扩展。
+有关详细信息，请参阅 [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/)（使用 Visual Studio 拉取请求扩展的代码评审）博客文章。
 
 ## <a name="debug"></a>调试
 
@@ -178,9 +188,9 @@ Visual Studio 2019 中会默认安装此服务。
 
 为什么将反馈发送至 Visual Studio 团队？ 因为我们严肃对待客户反馈。 这会给予我们巨大的行事动力。
 
-* 如果想对如何改进 Visual Studio 提出建议，可以使用[提供建议](talk-to-us.md#i-want-to-make-a-suggestion-about-visual-studio-features)工具。
+* 如果想对如何改进 Visual Studio 提出建议，可以使用[功能建议](suggest-a-feature.md)工具。
 
-* 如果遇到挂起、崩溃或其他性能问题，可利用[报告问题](talk-to-us.md#i-want-to-report-a-problem-with-visual-studio)工具与我们轻松共享重现步骤和支持文件。
+* 如果遇到挂起、崩溃或其他性能问题，可利用[报告问题](how-to-report-a-problem-with-visual-studio.md)工具与我们轻松共享重现步骤和支持文件。
 
 ## <a name="see-also"></a>请参阅
 
@@ -188,4 +198,5 @@ Visual Studio 2019 中会默认安装此服务。
 * [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 SDK 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 2019 for Mac 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Microsoft Build 2019 会议](https://www.microsoft.com/build)
 * [Microsoft Connect()；2018 会议](https://www.microsoft.com/connectevent)

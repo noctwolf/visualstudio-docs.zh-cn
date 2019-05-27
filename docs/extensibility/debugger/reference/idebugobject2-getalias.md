@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d08d9108ed4a433bcbcb17d6d4587532542b303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e9a40db04342bcf75f6099c9143c38bf8b83482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872458"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210036"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 如果有，获取与此对象相关联的别名。
@@ -36,10 +39,9 @@ int GetAlias(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppAlias`
-
- [out]返回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)对象，表示此对象的别名; 否则，返回 null 值。
+## <a name="parameters"></a>参数
+`ppAlias`\
+[out]返回[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)对象，表示此对象的别名; 否则，返回 null 值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

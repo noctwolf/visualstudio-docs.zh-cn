@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e1e90c69688cf1ef5388e74060e38087d50920
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9670dd1c6c56e2e6b983dffc054aa23fddae6e09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922656"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206277"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 检索到给出其调试地址符号类型。
@@ -37,14 +40,12 @@ int GetTypeFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pAddress`
+## <a name="parameters"></a>参数
+`pAddress`\
+[in]由表示的调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- [in]由表示的调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
-
-`ppField`
-
- [out]返回数组类型，它是由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
+`ppField`\
+[out]返回数组类型，它是由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

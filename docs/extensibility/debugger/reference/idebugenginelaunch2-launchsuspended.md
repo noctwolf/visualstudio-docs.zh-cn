@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ad964c4f9759368d6d687386274e221bb7cf73a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920707"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212472"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 此方法通过调试引擎 (DE) 启动进程。
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pszMachine`
+## <a name="parameters"></a>参数
+`pszMachine`\
+[in]在要启动的过程中的计算机的名称。 使用 null 值指定本地计算机。
 
- [in]在要启动的过程中的计算机的名称。 使用 null 值指定本地计算机。
+`pPort`\
+[in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)接口表示该程序将运行中的端口。
 
- `pPort`
+`pszExe`\
+[in]若要启动的可执行文件的名称。
 
- [in][IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)接口表示该程序将运行中的端口。
+`pszArgs`\
+[in]要传递给可执行文件的参数。 如果没有任何自变量可能为 null 值。
 
- `pszExe`
+`pszDir`\
+[in]使用的可执行文件的工作目录的名称。 如果没有工作目录是必需的可能为 null 值。
 
- [in]若要启动的可执行文件的名称。
+`bstrEnv`\
+[in]以 NULL 结尾的字符串后, 跟其他的 NULL 结束符的环境块。
 
- `pszArgs`
+`pszOptions`\
+[in]有关可执行文件的选项。
 
- [in]要传递给可执行文件的参数。 如果没有任何自变量可能为 null 值。
+`dwLaunchFlags`\
+[in]指定[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)会话。
 
- `pszDir`
+`hStdInput`\
+[in]其他输入流的句柄。 如果不需要重定向，则可能为 0。
 
- [in]使用的可执行文件的工作目录的名称。 如果没有工作目录是必需的可能为 null 值。
+`hStdOutput`\
+[in]备用输出流的句柄。 如果不需要重定向，则可能为 0。
 
- `bstrEnv`
+`hStdError`\
+[in]备用错误输出流的句柄。 如果不需要重定向，则可能为 0。
 
- [in]以 NULL 结尾的字符串后, 跟其他的 NULL 结束符的环境块。
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)接收调试器事件的对象。
 
- `pszOptions`
-
- [in]有关可执行文件的选项。
-
- `dwLaunchFlags`
-
- [in]指定[LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md)会话。
-
- `hStdInput`
-
- [in]其他输入流的句柄。 如果不需要重定向，则可能为 0。
-
- `hStdOutput`
-
- [in]备用输出流的句柄。 如果不需要重定向，则可能为 0。
-
- `hStdError`
-
- [in]备用错误输出流的句柄。 如果不需要重定向，则可能为 0。
-
- `pCallback`
-
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)接收调试器事件的对象。
-
- `ppDebugProcess`
-
- [out]返回合并[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)对象，表示启动的进程。
+`ppDebugProcess`\
+[out]返回合并[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)对象，表示启动的进程。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

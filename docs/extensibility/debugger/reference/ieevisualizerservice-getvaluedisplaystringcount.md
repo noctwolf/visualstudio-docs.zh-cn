@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cbd7bd7655769668ce2a279150f444fd196235fb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223545"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212602"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 检索要显示为指定的属性或字段的值字符串数。
@@ -43,17 +43,14 @@ int GetValueDisplayStringCount (
 ```
 
 ## <a name="parameters"></a>参数
- `displayKind`\
+`displayKind`\
+[in]值从[DisplayKind](../../../extensibility/debugger/reference/displaykind.md)枚举。
 
- [in]值从[DisplayKind](../../../extensibility/debugger/reference/displaykind.md)枚举。
+`propertyOrField`\
+[in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示属性或字段的接口。
 
- `propertyOrField`\
-
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示属性或字段的接口。
-
- `pcelt`\
-
- [out]返回要显示的值字符串数。
+`pcelt`\
+[out]返回要显示的值字符串数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

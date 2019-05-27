@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8663e9e7d8c0428b362bbdbb099141ac86d01ee1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 63cda29c6f21cda89742ba218808bc76ffae627a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918076"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204494"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 获取该端口的名称。
@@ -36,10 +39,9 @@ int GetPortName( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pbstrPortName`
-
- [out]返回的端口的名称。
+## <a name="parameters"></a>参数
+`pbstrPortName`\
+[out]返回的端口的名称。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

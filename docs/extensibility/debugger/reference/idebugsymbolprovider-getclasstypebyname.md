@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a4672d0cb7548417ed2d1de923e52d43e6242ba
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226424"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207317"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 此方法获取表示完全限定的类名的类字段类型。
@@ -44,17 +44,14 @@ int GetClassTypeByName(
 ```
 
 ## <a name="parameters"></a>参数
- `pszClassName`\
+`pszClassName`\
+[in]类名称。
 
- [in]类名称。
+`nameMatch`\
+[in]选择区分大小写的匹配项，例如，类型。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。
 
- `nameMatch`\
-
- [in]选择区分大小写的匹配项，例如，类型。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。
-
- `ppField`\
-
- [out]返回类类型，由表示[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
+`ppField`\
+[out]返回类类型，由表示[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

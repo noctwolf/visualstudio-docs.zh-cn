@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31152aecb62a1491b58c33b73539426bc4e0464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a31525ca7dbd89f4a6d1421eab0db11a38224cb9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919025"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212161"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 检索此泛型参数的类型或方法的所有者。
@@ -34,10 +37,9 @@ int GetOwner(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`ppOwner`
-
- [out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)拥有此泛型参数的对象。
+## <a name="parameters"></a>参数
+`ppOwner`\
+[out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)拥有此泛型参数的对象。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。
