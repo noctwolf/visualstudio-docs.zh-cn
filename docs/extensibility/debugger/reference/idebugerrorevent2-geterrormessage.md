@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920161"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199944"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 返回允许的用户可读的错误消息构造的信息。
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pMessageType`
+## <a name="parameters"></a>参数
+`pMessageType`\
+[out]返回一个值从[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述消息的类型的枚举。
 
- [out]返回一个值从[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)描述消息的类型的枚举。
+`pbstrErrorFormat`\
+[out]向用户最后一条消息的格式 （有关详细信息，请参阅"备注"）。
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out]有关消息的错误代码。
 
- [out]向用户最后一条消息的格式 （有关详细信息，请参阅"备注"）。
+`pdwType`\
+[out]错误的严重性 (使用的 MB_XXX 常量`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out]帮助文件 （设置为 null 的值，如果没有帮助文件） 的路径。
 
- [out]有关消息的错误代码。
-
- `pdwType`
-
- [out]错误的严重性 (使用的 MB_XXX 常量`MessageBox`; 例如，`MB_EXCLAMATION`或`MB_WARNING`)。
-
- `pbstrHelpFileName`
-
- [out]帮助文件 （设置为 null 的值，如果没有帮助文件） 的路径。
-
- `pdwHelpId`
-
- [out]若要显示 （设置为 0，如果没有任何帮助主题） 的帮助主题的 ID。
+`pdwHelpId`\
+[out]若要显示 （设置为 0，如果没有任何帮助主题） 的帮助主题的 ID。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

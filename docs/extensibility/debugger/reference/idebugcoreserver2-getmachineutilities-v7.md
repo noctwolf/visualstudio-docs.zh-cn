@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2929ed704d8b9642d30b9a7951a707db0635b319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0aff4ccea937536530d74dde13a5ba8a7b14bca7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414041"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205674"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 此方法获取服务器的计算机实用程序。
@@ -39,10 +42,9 @@ int GetMachineUtilities_V7(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppUtil`
-
- [out]返回`IDebugMDMUtil2_V7`表示机实用程序信息的接口。
+## <a name="parameters"></a>参数
+`ppUtil`\
+[out]返回`IDebugMDMUtil2_V7`表示机实用程序信息的接口。
 
 ## <a name="return-value"></a>返回值
  始终返回`E_NOTIMPL`，指示未实现方法。

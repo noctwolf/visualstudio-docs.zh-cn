@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77c5a2ccb8ff81cade0a110f8226f54a04ef65ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 53b671ad653ee9a4806f9090d4c192cb460f77d2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919094"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211842"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 检索此泛型参数的索引。
@@ -34,10 +37,9 @@ int GetIndex(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pIndex`
-
- [out]此泛型参数的索引值。
+## <a name="parameters"></a>参数
+`pIndex`\
+[out]此泛型参数的索引值。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

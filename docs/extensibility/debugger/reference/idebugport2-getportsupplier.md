@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbbbf620d9a5b78c098ec593dd20c57a18d79ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0f3bca55ac7306b4b67e9456cf24e9a497fda422
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918368"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209146"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 获取此端口的端口提供程序。
@@ -36,10 +39,9 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppSupplier`
-
- [out]返回[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)对象都表示一个端口的端口供应商。
+## <a name="parameters"></a>参数
+`ppSupplier`\
+[out]返回[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)对象都表示一个端口的端口供应商。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

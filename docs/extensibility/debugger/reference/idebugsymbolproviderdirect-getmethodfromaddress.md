@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 65bc4e95fbf73517e4f247a60404eff9e6747ef7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224011"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206952"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 检索有关指定的调试地址处的方法的信息。
@@ -51,33 +51,26 @@ int GetMethodFromAddress(
 ```
 
 ## <a name="parameters"></a>参数
- `pAddress`\
+`pAddress`\
+[in]调试由表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- [in]调试由表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
+`pGuid`\
+[out]该模块的唯一标识符。
 
- `pGuid`\
+`pAppID`\
+[out]应用程序域的标识符。
 
- [out]该模块的唯一标识符。
+`pTokenClass`\
+[out]令牌，它表示包含类。
 
- `pAppID`\
+`pTokenMethod`\
+[out]标记，表示该模块。
 
- [out]应用程序域的标识符。
+`pdwOffset`\
+[out]以字节为单位从开头的偏移量`pAddress`参数。
 
- `pTokenClass`\
-
- [out]令牌，它表示包含类。
-
- `pTokenMethod`\
-
- [out]标记，表示该模块。
-
- `pdwOffset`\
-
- [out]以字节为单位从开头的偏移量`pAddress`参数。
-
- `pdwVersion`\
-
- [out]该方法的版本号。
+`pdwVersion`\
+[out]该方法的版本号。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

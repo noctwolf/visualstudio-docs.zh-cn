@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a0d128666d3836495dd3169720bc6e58f6ef11e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224147"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207260"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 此方法获取包含调试地址的字段。
@@ -42,13 +42,11 @@ int GetContainerField(
 ```
 
 ## <a name="parameters"></a>参数
- `pAddress`\
+`pAddress`\
+[in]地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
 
- [in]地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。
-
- `ppContainerField`\
-
- [out]返回表示容器字段[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)接口。
+`ppContainerField`\
+[out]返回表示容器字段[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

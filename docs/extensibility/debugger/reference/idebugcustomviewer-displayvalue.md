@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921615"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205163"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 调用此方法以显示指定的值。
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `hwnd`
+## <a name="parameters"></a>参数
+`hwnd`\
+[in]父窗口
 
- [in]父窗口
+`dwID`\
+[in]支持多个类型的自定义查看器的 ID。
 
- `dwID`
+`pHostServices`\
+[in] 保留。 始终设置为 null。
 
- [in]支持多个类型的自定义查看器的 ID。
-
- `pHostServices`
-
- [in] 保留。 始终设置为 null。
-
- `pDebugProperty`
-
- [in]可用于检索要显示的值的接口。
+`pDebugProperty`\
+[in]可用于检索要显示的值的接口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则返回错误代码。

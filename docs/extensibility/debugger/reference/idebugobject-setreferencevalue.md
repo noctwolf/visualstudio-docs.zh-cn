@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cf00fc85a2b3f3dc09704227f84fa5b2e90ee6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7e861a67ada36bd25b30e08bf8a62163bceea979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918474"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211304"
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
 设置此对象的引用值。
@@ -36,10 +39,9 @@ int SetReferenceValue(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pObject`
-
- [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象，表示新的引用值。
+## <a name="parameters"></a>参数
+`pObject`\
+[in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象，表示新的引用值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

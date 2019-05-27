@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: de41c3f611383afabfd6fe051edb8dbe83d266b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871284"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202763"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 将会话调试管理器 (SDM) 附加到进程。
@@ -42,27 +45,23 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pCallback`
+## <a name="parameters"></a>参数
+`pCallback`\
+[in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用于调试事件通知的对象。
 
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用于调试事件通知的对象。
+`rgguidSpecificEngines`\
+[in]Guid 的数组的调试引擎以用于调试的进程中运行的程序。 此参数可以为 null 值。 有关详细信息，请参阅备注。
 
- `rgguidSpecificEngines`
+`celtSpecificEngines`\
+[in]引擎中，调试数`rgguidSpecificEngines`数组和大小`rghrEngineAttach`数组。
 
- [in]Guid 的数组的调试引擎以用于调试的进程中运行的程序。 此参数可以为 null 值。 有关详细信息，请参阅备注。
-
- `celtSpecificEngines`
-
- [in]引擎中，调试数`rgguidSpecificEngines`数组和大小`rghrEngineAttach`数组。
-
- `rghrEngineAttach`
-
- [in、 out]HRESULT 代码的调试引擎返回的数组。 此数组的大小指定为`celtSpecificEngines`参数。 每个代码通常是`S_OK`或`S_ATTACH_DEFERRED`。 后者表示 DE 当前附加到任何程序。
+`rghrEngineAttach`\
+[in、 out]HRESULT 代码的调试引擎返回的数组。 此数组的大小指定为`celtSpecificEngines`参数。 每个代码通常是`S_OK`或`S_ATTACH_DEFERRED`。 后者表示 DE 当前附加到任何程序。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了其他可能的值。
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的进程已附加到调试器。|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|在附加过程中发生了安全冲突。|

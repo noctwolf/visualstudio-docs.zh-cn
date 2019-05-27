@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b54c84c5f5c13424354c65201d290fbef83e055
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea35bcdef843756124fe7102167e35694d9fa1b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873158"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210354"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
 设置响应中，如果有，该消息框中。
@@ -37,10 +40,9 @@ int SetResponse( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwResponse`
-
- [in]指定的响应，使用 Win32 的约定`MessageBox`函数。 请参阅[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函数的详细信息。
+## <a name="parameters"></a>参数
+`dwResponse`\
+[in]指定的响应，使用 Win32 的约定`MessageBox`函数。 请参阅[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函数的详细信息。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

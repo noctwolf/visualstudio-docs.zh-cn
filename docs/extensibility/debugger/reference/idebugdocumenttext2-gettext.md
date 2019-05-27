@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875180"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203325"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 从文档中的指定位置检索的文本。
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pos`
+## <a name="parameters"></a>参数
+`pos`\
+[in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，指示要检索的文本的位置。
 
- [in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，指示要检索的文本的位置。
+`cMaxChars`\
+[in]最大文本要检索的字符数。
 
-`cMaxChars`
+`pText`\
+[in、 out]指向要填充所需的文本的缓冲区的指针。 此缓冲区必须至少包含`cMaxChars`宽字符数。
 
- [in]最大文本要检索的字符数。
-
-`pText`
-
- [in、 out]指向要填充所需的文本的缓冲区的指针。 此缓冲区必须至少包含`cMaxChars`宽字符数。
-
-`pcNumChars`
-
- [out]返回实际检索的字符的数。
+`pcNumChars`\
+[out]返回实际检索的字符的数。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f0a1524a6c24b21dc9a167a7df286f60f48873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918735"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210371"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 获取要显示的消息。
@@ -45,26 +48,21 @@ int GetMessage( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pMessageType`
+## <a name="parameters"></a>参数
+`pMessageType`\
+[out]返回一个值从[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)枚举，用于描述消息的类型。
 
- [out]返回一个值从[MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)枚举，用于描述消息的类型。
+`pbstrMessage`\
+[out]返回的消息。
 
- `pbstrMessage`
+`pdwType`\
+[out]返回使用 Win32 的约定的消息的类型`MessageBox`函数。 请参阅[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函数的详细信息。
 
- [out]返回的消息。
+`pbstrHelpFileName`\
+[in、 out]返回的帮助文件名称。 可能为 null (C++) 或为空 (C#) 如果没有帮助文件，则值。
 
- `pdwType`
-
- [out]返回使用 Win32 的约定的消息的类型`MessageBox`函数。 请参阅[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函数的详细信息。
-
- `pbstrHelpFileName`
-
- [in、 out]返回的帮助文件名称。 可能为 null (C++) 或为空 (C#) 如果没有帮助文件，则值。
-
- `pdwHelpId`
-
- [in、 out]返回的帮助标识符。 可能是 0，如果没有帮助与此消息关联。
+`pdwHelpId`\
+[in、 out]返回的帮助标识符。 可能是 0，如果没有帮助与此消息关联。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

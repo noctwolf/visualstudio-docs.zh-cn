@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926830"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212242"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -106,8 +105,8 @@ Visual Studio 2017 引入了 VSIX v3 （版本 3） 格式，以支持轻量的�
 
 * 以前，Visual Studio 都安装到系统的多个注册表项**HKEY_LOCAL_MACHINE**并**HKEY_CURRENT_USER** -特定于 Visual Studio 项下的配置单元：
 
-  * **HKLM\Software\Microsoft\VisualStudio\{版本}**:创建 MSI 安装程序和每个计算机上的扩展的注册表项。
-  * **HKCU\Software\Microsoft\VisualStudio\{版本}**:创建 Visual Studio 来存储特定于用户的设置的注册表项。
+  * **HKLM\Software\Microsoft\VisualStudio\{版本}** :创建 MSI 安装程序和每个计算机上的扩展的注册表项。
+  * **HKCU\Software\Microsoft\VisualStudio\{版本}** :创建 Visual Studio 来存储特定于用户的设置的注册表项。
   * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**:Visual Studio HKLM 密钥更高版本，加上的注册表项的副本从合并 *.pkgdef*扩展插件的文件。
 
 * 若要减少对注册表的影响，Visual Studio 现在将使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)函数来将注册表项存储在专用二进制文件下 *[VSAPPDATA]\privateregistry.bin*。 只有极少数的 Visual Studio 特定的密钥保留在系统注册表中。

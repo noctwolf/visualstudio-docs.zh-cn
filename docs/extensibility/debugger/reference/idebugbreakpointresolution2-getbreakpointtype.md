@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab8bc16da26b1c47ecdda79db361e24b68e2e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 11492bf05ae7264263c9347304cc01ae3cf3d89b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876883"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204029"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 获取此解析由表示该断点的类型。
@@ -36,10 +39,9 @@ int GetBreakpointType( 
 );
 ```
 
-#### <a name="parameters"></a>参数
-`pBPType`
-
- [out]返回一个值从[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚举，用于指定此断点的类型。
+## <a name="parameters"></a>参数
+`pBPType`\
+[out]返回一个值从[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚举，用于指定此断点的类型。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则返回错误代码。 如果返回 E_FAIL`bpResLocation`字段中关联[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构无效。

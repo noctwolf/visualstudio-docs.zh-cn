@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24adde5d1c1a89949861481a3d370219875c2eb1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412953"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210958"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 将导致过程步骤一个指令或语句。
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pThread`
+## <a name="parameters"></a>参数
+`pThread`\
+[in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示正在单步执行的线程。
 
- [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示正在单步执行的线程。
+`sk`\
+[in]之一[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)值。
 
- `sk`
-
- [in]之一[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)值。
-
- `step`
-
- [in]之一[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)值。
+`step`\
+[in]之一[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)值。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则将返回错误代码。

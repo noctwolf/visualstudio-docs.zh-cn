@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b881c3b5946428bf829ca4d971bb73f814b6d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 781c9a0e4365a454d45af957207099d6d5ae7d92
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919519"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212658"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 此方法获取的符号的类型的独立于类型的信息。
@@ -36,10 +39,9 @@ int GetTypeInfo(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pTypeInfo`
-
- [out]返回类型信息中提供[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构。
+## <a name="parameters"></a>参数
+`pTypeInfo`\
+[out]返回类型信息中提供[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

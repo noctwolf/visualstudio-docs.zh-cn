@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0a5ad3d7651e89c2ef864a184155e8b0a430d79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ffc9dc5e7383c17dbcf55e514da9dfb2c452f81d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872726"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203111"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 获取有关此模块的信息。
@@ -39,14 +42,12 @@ int GetInfo( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+`dwFields`\
+[in]中的标志的组合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)枚举，用于指定的哪些字段`pInfo`要填写。
 
- [in]中的标志的组合[MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)枚举，用于指定的哪些字段`pInfo`要填写。
-
- `pInfo`
-
- [in、 out]一个[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)使用模块的说明填充的结构。
+`pInfo`\
+[in、 out]一个[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)使用模块的说明填充的结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

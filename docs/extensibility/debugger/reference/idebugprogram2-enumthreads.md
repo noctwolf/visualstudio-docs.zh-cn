@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b261ca6973d938f8530ea75788d6ba6779ea9f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7b77a8409a038de137d3852d6dd26bf84d17b991
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870484"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200294"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 检索在程序中运行的线程的列表。
@@ -36,10 +39,9 @@ int EnumThreads( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppEnum`
-
- [out]返回[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)对象，其中包含主题的列表。
+## <a name="parameters"></a>参数
+`ppEnum`\
+[out]返回[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)对象，其中包含主题的列表。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

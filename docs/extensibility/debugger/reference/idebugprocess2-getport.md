@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753a384d4873aa6b78b06853213c57a1d540a5e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7885f43d10f2644071e993697b04024fea2bc40
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917826"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202599"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 获取进程正在运行的端口。
@@ -36,10 +39,9 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `ppPort`
-
- [out]返回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象，表示在其启动进程的端口。
+## <a name="parameters"></a>参数
+`ppPort`\
+[out]返回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象，表示在其启动进程的端口。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

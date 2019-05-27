@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ce3c428785bd6b817cb8ce0f97f14a87180d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d28db6824afe6230cc8e00fae8e144dc541af59
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873891"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212194"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 此方法获取有关字段的可显示信息。
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwFields`
+## <a name="parameters"></a>参数
+`dwFields`\
+[in]组合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)选择要显示的信息的常量。 如果该字段表示一个符号，这通常是符号名称和类型。
 
- [in]组合[FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)选择要显示的信息的常量。 如果该字段表示一个符号，这通常是符号名称和类型。
-
- `pFieldInfo`
-
- [out]返回的信息中提供[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)结构。
+`pFieldInfo`\
+[out]返回的信息中提供[FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

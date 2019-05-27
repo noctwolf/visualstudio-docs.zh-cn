@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457611"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212167"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 枚举给定语言和供应商标识符可用表达式计算器。
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>参数
- `celtBuffer`\
+`celtBuffer`\
+[in]中的元素数`pceltEEs`缓冲区。
 
- [in]中的元素数`pceltEEs`缓冲区。
+`rgguidLang`\
+[in、 out]编程语言的唯一标识符。
 
- `rgguidLang`\
+`rgguidVendor`\
+[in、 out]供应商的唯一标识符。
 
- [in、 out]编程语言的唯一标识符。
-
- `rgguidVendor`\
-
- [in、 out]供应商的唯一标识符。
-
- `pceltEEs`\
-
- [in、 out]表达式计算器的数组。
+`pceltEEs`\
+[in、 out]表达式计算器的数组。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

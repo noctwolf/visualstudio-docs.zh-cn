@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe8b6768bf67cab4a4d69e82c509db0bd6f93543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1b03fe660cd6b909c1d86871556e4f0e6ecb945
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917256"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212296"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 获取名称和运行此程序的调试引擎 (DE) 的 GUID。
@@ -38,14 +41,12 @@ int GetEngineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pbstrEngine`
+## <a name="parameters"></a>参数
+`pbstrEngine`\
+[out]返回 DE 运行此程序的名称。
 
- [out]返回 DE 运行此程序的名称。
-
- `pguidEngine`
-
- [out]返回运行此程序 DE 的 GUID。
+`pguidEngine`\
+[out]返回运行此程序 DE 的 GUID。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b395f49a8f222edb97e43610ae625fd154d8f320
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922450"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206117"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 与指定的数据流中的替换当前的调试符号。
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`ulAppDomainID`
+## <a name="parameters"></a>参数
+`ulAppDomainID`\
+[in]应用程序域的标识符。
 
- [in]应用程序域的标识符。
+`guidModule`\
+[in]该模块的唯一标识符。
 
-`guidModule`
-
- [in]该模块的唯一标识符。
-
-`pStream`
-
- [in]包含新的符号的数据流。
+`pStream`\
+[in]包含新的符号的数据流。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则为返回错误代码。

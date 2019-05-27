@@ -1,6 +1,6 @@
 ---
 title: 如何：更改生成输出目录
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824225"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805054"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 
-可以按项目生成的配置（调试、发布或两者）指定输出的位置。
-
-> [!NOTE]
-> 如果具有“安装”项目，请参阅本文末尾处的注释。
+可以在预配置的基础上指定项目生成的输出的位置（用于调试、发布或两者）。
 
 ## <a name="change-the-build-output-directory"></a>更改生成输出目录
 
-1. 在菜单栏上，选择“项目” > **\<**“Appname > 属性”。 还可以在解决方案资源管理器中右键单击项目节点并选择“属性”。
+1. 要打开项目的属性页面，右键单击“解决方案资源管理器”中的项目节点，然后选择“属性”。
 
-2. 如果你有 Visual Basic 项目，请选择 **“编译”** 选项卡。如果你有 C# 项目，请选择“生成”选项卡。如果你具有 C++ 项目或 JavaScript 项目，请选择 **“常规”** 选项卡。
+2. 根据项目类型选择相应的选项卡：
 
-3. 在顶部的配置下拉列表中，选择你想要更改其输出文件位置的配置（调试、发布或全部）。
+   - 对于 C#，选择“生成”选项卡。
+   - 对于 Visual Basic，选择“编译”选项卡。
+   - 对于 C++ 或 JavaScript，选择“常规”选项卡。
 
-     查找输出路径条目（Visual Basic 中的“生成输出路径”、Visual C++中的“输出目录”、JavaScript 和 C# 中的“输出路径”）。 指定一个相对于项目目录的新的生成输出目录。
+3. 在顶部的配置下拉列表中，选择你想要更改其输出文件位置的配置（“调试”、“发布”或“所有配置”）。
 
-> [!NOTE]
-> 在“安装”项目中，“输出文件名称”框仅更改 Setup.exe 文件的位置，而不更改项目文件的位置。 有关详细信息，请参阅“生成”、“配置属性”、“部署项目属性”对话框。
+4. 在页面上找到输出路径条目，路径条目根据项目类型而有所不同：
+
+   - C# 和 JavaScript 项目的输出路径
+   - Visual Basic 项目的生成输出路径
+   - Visual C++ 项目的输出目录
+
+   键入要生成输出的路径（绝对或相对于根项目目录），或选择“浏览”，浏览到该文件夹。
+
+   ![Visual Studio C# 项目的输出路径属性](media/output-path.png)
+
+> [!TIP]
+> 如果系统未将输出生成到指定位置，请在 Visual Studio 的菜单栏上选择该位置，确保构建相应的配置（例如“调试”或“发布”）。
+>
+> ![在 Visual Studio 2019 中生成配置选取器](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>请参阅
 

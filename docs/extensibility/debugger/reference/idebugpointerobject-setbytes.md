@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b574e28ac0b42f065bfbf056188c655797e542b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842712"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209341"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 设置指向一系列连续字节中的值。
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwStart`
+## <a name="parameters"></a>参数
+`dwStart`\
+[in]偏移量，以字节为单位，从一开始指向的对象。
 
- [in]偏移量，以字节为单位，从一开始指向的对象。
+`dwCount`\
+[in]要设置的字节数。
 
- `dwCount`
+`pBytes`\
+[in]一个表示新值的字节数组。 此值存储到的对象，从给定的偏移量处开始。
 
- [in]要设置的字节数。
-
- `pBytes`
-
- [in]一个表示新值的字节数组。 此值存储到的对象，从给定的偏移量处开始。
-
- `pdwBytes`
-
- [out]返回实际设置的字节数。
+`pdwBytes`\
+[out]返回实际设置的字节数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

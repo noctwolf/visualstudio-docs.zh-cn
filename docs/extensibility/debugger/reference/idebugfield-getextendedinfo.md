@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc37cd9cff4956d000441a632f84a6155f9b9586
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873847"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212218"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 此方法获取扩展字段的信息。
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `guidExtendedInfo`
+## <a name="parameters"></a>参数
+`guidExtendedInfo`\
+[in]选择要返回的信息。 有效值为：
 
- [in]选择要返回的信息。 有效值为：
-
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |`guidConstantValue`|作为一个字节序列的值。|
 |`guidConstantType`|类型签名形式的类型。|
 
- `prgBuffer`
+`prgBuffer`\
+[out]返回扩展的信息。
 
- [out]返回扩展的信息。
-
- `pdwLen`
-
- [in、 out]以字节为单位返回大小的扩展信息。
+`pdwLen`\
+[in、 out]以字节为单位返回大小的扩展信息。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

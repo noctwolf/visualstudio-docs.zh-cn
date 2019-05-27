@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68c1097e622da25717a4bd3b2893dfe118b4c588
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d5f1be7751712f1da2d47de3d7a02e3cc5a56f6b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875418"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204207"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 通知已替换文本为文档中调试包。
@@ -38,14 +41,12 @@ int onReplaceText( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pos`
+## <a name="parameters"></a>参数
+`pos`\
+[in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)指示已替换文本。
 
- [in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)指示已替换文本。
-
- `dwNumToReplace`
-
- [in]指定已替换为文本的字符的数。
+`dwNumToReplace`\
+[in]指定已替换为文本的字符的数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

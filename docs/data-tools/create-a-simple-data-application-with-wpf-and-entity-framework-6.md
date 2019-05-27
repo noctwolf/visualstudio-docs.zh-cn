@@ -1,5 +1,5 @@
 ---
-title: 使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
+title: 通过 WPF 和 Entity Framework 6 的简单数据应用程序
 ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d67ca69856f48ec916f27498798cbb58efb3e5ac
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568592"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177364"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
@@ -102,7 +102,7 @@ ms.locfileid: "62568592"
 
      ![将实体类添加为数据源](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. 单击 **“完成”**。
+3. 单击 **“完成”** 。
 
 4. 导航到*MainWindow.xaml*在代码视图中。 我们将为此示例的目的来保持 XAML 简单。 主窗口的标题更改为更具描述性和现在为 600 x 800 增加其高度和宽度。 稍后可以随时更改它。 现在将这些包含三行定义添加到主网格中，导航按钮，以多客户的详细信息，一个用于显示其订单的网格的一行：
 

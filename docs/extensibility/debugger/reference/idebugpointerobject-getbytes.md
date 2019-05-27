@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842699"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209391"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 获取指向作为一系列连续字节的值。
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>参数
- `dwStart`
+## <a name="parameters"></a>参数
+`dwStart`\
+[in]偏移量，以字节为单位，从一开始指向的对象。
 
- [in]偏移量，以字节为单位，从一开始指向的对象。
+`dwCount`\
+[in]要检索的字节数。
 
- `dwCount`
+`pBytes`\
+[in、 out]指向填充为值为一系列连续字节的数组，该对象从给定的偏移量开始。
 
- [in]要检索的字节数。
-
- `pBytes`
-
- [in、 out]指向填充为值为一系列连续字节的数组，该对象从给定的偏移量开始。
-
- `pdwBytes`
-
- [out]返回实际检索的字节的数。
+`pdwBytes`\
+[out]返回实际检索的字节的数。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 S_OK;否则，返回错误代码。

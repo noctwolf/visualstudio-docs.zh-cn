@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5146b730e6e58e99c22f73bd95cd500e5450ac06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920932"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207562"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定调试引擎 (DE) 应如何处理给定的异常。
@@ -36,10 +39,9 @@ int SetException( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `pException`
-
- [in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)介绍异常以及如何对其进行调试的结构。
+## <a name="parameters"></a>参数
+`pException`\
+[in][EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)介绍异常以及如何对其进行调试的结构。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。

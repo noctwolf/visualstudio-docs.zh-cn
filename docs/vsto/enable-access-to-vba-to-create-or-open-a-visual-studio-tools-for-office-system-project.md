@@ -1,7 +1,7 @@
 ---
-title: 启用对 VBA 创建或打开 Visual Studio Tools for the Microsoft Office system 项目的访问
+title: VBA 的访问权限创建/打开 VSTO system 项目
 decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
-titleSuffix: ''
+titleSuffix: Visual Studio Tools for Microsoft Office
 ms.custom: seodec18
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85a907b057118c28ea35b8a920337ecdad5ad01
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797675"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177652"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 创建或打开 Visual Studio Tools for the Microsoft Office system 项目的访问
 
@@ -57,7 +57,7 @@ ms.locfileid: "62797675"
 
 5. 选中或取消选中**信任对 VBA 工程对象模型访问**启用或禁用对 Visual Basic 项目的访问。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>若要启用或禁用对 2007 Microsoft Office system 的 Visual Basic 项目的访问
 
@@ -67,7 +67,7 @@ ms.locfileid: "62797675"
 
 3. 若要启用，或清除要禁用，请选择**信任 Visual Basic 项目的访问**。
 
-4. 单击 **“确定”**。
+4. 单击 **“确定”** 。
 
 ## <a name="to-set-your-office-macro-security-level"></a>设置 Office 宏安全级别
 
@@ -81,7 +81,7 @@ ms.locfileid: "62797675"
 
 5. 在中**宏设置**部分中，选择所需的设置。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>若要设置 Office 宏安全级别与 2007 Microsoft Office system
 
@@ -107,9 +107,9 @@ ms.locfileid: "62797675"
 
 7. 打开下拉列表菜单旁边**应用程序的 Visual Basic**，然后单击**从我的电脑上运行**。
 
-8. 单击 **“继续”**。
+8. 单击 **“继续”** 。
 
-9. 单击 **“关闭”**。
+9. 单击 **“关闭”** 。
 
 ## <a name="to-repair-your-installation-of-office"></a>修复 Office 安装
 

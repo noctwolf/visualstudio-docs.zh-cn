@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158e24a57838d7f7a1c7221fc243455b5a4bd2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9294649cae2944ad085a43ac422470995a77b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874229"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201081"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 此方法以同步方式计算的表达式。
@@ -42,22 +45,18 @@ int EvaluateSync(
 );
 ```
 
-#### <a name="parameters"></a>参数
-`dwFlags`
+## <a name="parameters"></a>参数
+`dwFlags`\
+[in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制表达式求值的枚举。
 
- [in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)控制表达式求值的枚举。
+`dwTimeout`\
+[in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
 
-`dwTimeout`
+`pExprCallback`\
+[in]此参数始终是一个 null 值。
 
- [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。
-
-`pExprCallback`
-
- [in]此参数始终是一个 null 值。
-
-`ppResult`
-
- [out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象，其中包含的表达式计算结果。
+`ppResult`\
+[out]返回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象，其中包含的表达式计算结果。
 
 ## <a name="return-value"></a>返回值
 如果成功，则返回`S_OK`; 否则返回错误代码。 一些典型的错误代码为：

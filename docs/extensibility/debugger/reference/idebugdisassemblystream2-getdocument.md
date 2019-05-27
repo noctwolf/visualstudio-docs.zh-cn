@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc50f104c5fc942794c2e421f5aee508662ea3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3e708c75649f28654095e6906c4d86408d3f166e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921700"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204961"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 获取与此输入流关联的源文档。
@@ -38,14 +41,12 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>参数
- `bstrDocumentUrl`
+## <a name="parameters"></a>参数
+`bstrDocumentUrl`\
+[in]文档 URL。
 
- [in]文档 URL。
-
- `ppDocument`
-
- [out]返回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)对象，表示文档。
+`ppDocument`\
+[out]返回[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)对象，表示文档。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回错误代码。
