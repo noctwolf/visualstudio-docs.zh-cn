@@ -81,6 +81,8 @@
               href: install/disable-or-move-the-package-cache.md
             - name: 控制 Visual Studio 部署的更新
               href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: 在维修基线上更新 Visual Studio
+              href: install/update-servicing-baseline.md
         - name: 管理安装
           items:
             - name: 用于检测和管理 Visual Studio 实例的工具
