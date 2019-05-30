@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4503639e65650b70871c9bf23a26eac1d4892a5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2255a972dd7a889713e77fa686b348500c03ea7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328982"
 ---
 # <a name="feedback-to-the-user"></a>向用户反馈
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)，有关可用的功能基于用户的当前所选内容和全局选定内容上下文的可视反馈。 下表列出了在不同的选定内容上下文中可用的功能。

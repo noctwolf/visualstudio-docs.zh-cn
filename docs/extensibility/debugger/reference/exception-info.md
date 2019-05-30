@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EXCEPTION_INFO structure
 ms.assetid: d046957a-b97d-420b-b46b-c67cbaef709e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c5863c9ebb790ebcbc267f62cc2a0a1fd14603c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c4fc29aee8d14e9c73dcf5665eff3ea611985d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686257"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337798"
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
 描述异常或引发由正在调试的程序的运行时错误。
@@ -47,17 +50,23 @@ public struct EXCEPTION_INFO {
 ```
 
 ## <a name="members"></a>成员
-pProgram [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示发生了异常的程序。
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示发生了异常的程序。
 
-bstrProgramName 的程序的名称中出现异常。
+`bstrProgramName`\
+发生了异常的程序的名称。
 
-bstrExceptionName 异常的名称。
+`bstrExceptionName`\
+异常的名称。
 
-dwCode 异常或运行时错误的标识代码。
+`dwCode`\
+异常或运行时错误标识代码。
 
-dwState 一个取值[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)枚举，用于定义异常的状态。
+`dwState`\
+中的值[EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)枚举，用于定义异常的状态。
 
-guidType GUID 语言标识符，即`guidLang`或`guidEng`。
+`guidType`\
+GUID 的语言标识符，即`guidLang`或`guidEng`。
 
 ## <a name="remarks"></a>备注
 此结构作为参数传递给[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)并[RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md)方法。 此结构还传递给[GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md)要填充的方法。

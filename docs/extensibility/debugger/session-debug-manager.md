@@ -10,17 +10,17 @@ helpviewer_keywords:
 - session debug manager, debug engine multiplexing
 - session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edbb1510265307e1c9fe6c8a01cffc0115d879ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c7dd40796fbf0141cc60bf86204bce462594f8f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864260"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348563"
 ---
 # <a name="session-debug-manager"></a>会话调试管理器
 会话调试管理器 (SDM) 管理任意数量的任意数量的多个进程中的程序调试跨任意数量的计算机的调试引擎 (DE)。 除了多路复用器的调试引擎外，SDM 提供到 IDE 的调试会话的统一的视图。

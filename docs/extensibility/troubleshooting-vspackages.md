@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434252"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338028"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 以下是常见的问题可能与你的 VSPackage 并解决问题的提示。
@@ -66,7 +66,7 @@ ms.locfileid: "63434252"
 
    1. 在注册表的程序包部分中找到的 vspackage 的 CLSID:
 
-        HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \Packages
 
    2. 验证给定 SatelliteDll 子项的路径正确。
 
@@ -76,7 +76,7 @@ ms.locfileid: "63434252"
 
      用于调试的良好起点是构造函数和初始化方法。 此外可以在您想要评估，如菜单命令的区域中设置断点。 若要启用断点，必须在调试器下运行。
 
-    1. 在“项目”菜单上，单击“属性”。
+    1. 在“项目”菜单上，单击“属性”   。
 
     2. 上**属性页**对话框中，选择**调试**选项卡。
 
@@ -111,7 +111,7 @@ ms.locfileid: "63434252"
 
 1. 对于托管代码中，请确保引用路径正确。
 
-   1. 在“项目”菜单上，单击“属性”。
+   1. 在“项目”菜单上，单击“属性”   。
 
    2. 选择**引用**选项卡**属性页**对话框，并确保所有路径都是否正确。 或者，可以使用**对象浏览器**来查找被引用对象。
 
@@ -119,7 +119,7 @@ ms.locfileid: "63434252"
 
 2. 对于非托管代码中，找到的 VSPackage 中 CLSID [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID 注册表节点：
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \CLSID
 
    请确保 InprocServer32 项具有 VSPackage dll 的正确路径。
 

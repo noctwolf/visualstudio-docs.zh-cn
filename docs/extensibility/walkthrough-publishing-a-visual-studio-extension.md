@@ -6,17 +6,17 @@ helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ed2455b19a3f7e56c92a37a9402b7d65bf70a3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965070"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337928"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
@@ -68,7 +68,7 @@ ms.locfileid: "62965070"
 
 6. 选择你想要用于上传你的扩展发布的服务器。 可以通过单击左侧列出的发布服务器名称更改发布服务器。 单击**新的扩展插件**，然后选择**Visual Studio**。
 
-7. 在**1:上传扩展**，您可以选择将 VSIX 文件上传到 Visual Studio Marketplace 直接或只是将链接添加到你自己的网站。 在此示例中，该扩展*TestPublish.vsix*上传。 拖放在扩展或使用**单击**链接以浏览方式查找文件。 在项目的 \bin\Release 文件夹中查找您的扩展插件。  单击 **“继续”**。
+7. 在**1:上传扩展**，您可以选择将 VSIX 文件上传到 Visual Studio Marketplace 直接或只是将链接添加到你自己的网站。 在此示例中，该扩展*TestPublish.vsix*上传。 拖放在扩展或使用**单击**链接以浏览方式查找文件。 在项目的 \bin\Release 文件夹中查找您的扩展插件。  单击 **“继续”** 。
 
 8. 在**2:提供扩展详细信息**，某些字段会自动填充从*source.extension.vsixmanifest*文件从您的扩展插件。 查找有关每个以下的更多详细信息：
 
@@ -136,7 +136,7 @@ Marketplace 支持授予其他用户权限来访问和管理发布者帐户。
 
 2. 单击**联机**，然后搜索**TestPublish**。
 
-3. 单击 **“下载”**。 然后计划安装的扩展。
+3. 单击 **“下载”** 。 然后计划安装的扩展。
 
 4. 若要完成安装，请关闭 Visual Studio 的所有实例。
 
@@ -150,7 +150,7 @@ Marketplace 支持授予其他用户权限来访问和管理发布者帐户。
 
 2. 在右上角中，单击**发布**扩展。 选择发布服务器，用来发布**TestPublish**。 列表**TestPublish**出现。
 
-3. 右键单击扩展条目，然后单击**删除**。 需要确认你想要删除该扩展。 单击 **“确定”**。
+3. 右键单击扩展条目，然后单击**删除**。 需要确认你想要删除该扩展。 单击 **“确定”** 。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>若要从您的计算机中删除扩展
 

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e9fe393f7b0ad52a8d713c0f41f25f03bb056ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e8f37ce82630b72d5a01c66c8848431e8f6c2891
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434768"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334036"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函数
 此函数允许用户浏览源代码管理系统中已有的文件，并随后使这些文件属于当前项目。 例如，此函数可以获取公共头文件到当前项目而不复制该文件。 返回数组的文件， `lplpFileNames`，包含的用户想要将添加到 IDE 项目的文件列表。
@@ -53,7 +53,7 @@ SCCRTN SccAddFromScc (
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功，文件已位于和添加到项目中。|
 |SCC_I_OPERATIONCANCELED|操作已取消使用任何影响。|

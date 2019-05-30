@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19fda87f0e2692d30b9a99777ca11edd7b3906f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420678"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324338"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用打开文件命令显示文件
 以下步骤介绍如何处理 IDE**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还说明项目应如何响应来自此命令的调用。

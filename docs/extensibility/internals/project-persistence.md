@@ -6,17 +6,17 @@ helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
 ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c0f81d3cb4cc1e3404087f6ad4b8ecac34b9ec0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859708"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328328"
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是你的项目的关键设计注意事项。 大多数项目使用项目项代表文件;[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存本身或项目项的项目。

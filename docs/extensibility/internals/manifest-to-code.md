@@ -3,17 +3,17 @@ title: 代码清单 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9d7662579ae00538c211fa3cb92cc181b6a97a8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909150"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328590"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 代码工具清单是一个控制台应用程序的 Visual Studio 映像服务获取.imagemanifest 文件，并生成包装文件或引用图像清单中的值的文件C++， C#，Visual Studio VB 或.vsct 文件扩展插件。 此工具生成可用于从 Visual Studio 映像服务直接请求映像或传递通过 Api 清单的值，如果代码不会处理任何其自己的 UI 和呈现的包装器文件。

@@ -3,18 +3,18 @@ title: 创建自定义起始页 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336670"
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 
@@ -24,7 +24,7 @@ ms.locfileid: "62926375"
 
 首先，请通过创建一个空白起始页 *.xaml*具有 Visual Studio 将识别的标记结构文件。 然后，添加标记和代码隐藏来生成的外观和所需的功能。
 
-1. 创建新的项目类型的**WPF 应用程序**(**Visual C#** > **Windows 桌面**)。
+1. 创建新的项目类型的**WPF 应用程序**(**Visual C#**  > **Windows 桌面**)。
 
 2. 添加对 `Microsoft.VisualStudio.Shell.14.0` 的引用。
 
@@ -77,7 +77,7 @@ ms.locfileid: "62926375"
 
 4. 在实验实例中，转到**工具** > **选项** > **环境** > **启动**页上，并选择从 XAML 文件**自定义起始页**下拉列表。
 
-5. 在“视图”  菜单上，单击“起始页” 。
+5. 在“视图”  菜单上，单击“起始页”  。
 
      应显示你的自定义起始页。 如果你想要更改的任何文件，必须关闭实验实例，进行更改、 复制和粘贴已更改的文件，以及然后重新打开实验实例，以查看所做的更改。
 

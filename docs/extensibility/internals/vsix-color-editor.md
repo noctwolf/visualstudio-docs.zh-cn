@@ -3,17 +3,17 @@ title: VSIX 颜色编辑器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858030"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332921"
 ---
 # <a name="vsix-color-editor"></a>VSIX 颜色编辑器
 Visual Studio 扩展颜色编辑器工具可以创建和编辑 Visual Studio 的自定义颜色。 该工具还可以生成主题的资源键，以便可以在代码中使用的颜色。 此工具可用于使支持主题的 Visual Studio 扩展插件的颜色。 此工具可以打开.pkgdef 和.xml 文件。 通过更改文件扩展名为.xml，visual Studio 主题 （.vstheme 文件） 可以使用与 Visual Studio 扩展颜色编辑器。 此外，可以将.vstheme 文件导入当前的.xml 文件。
@@ -55,7 +55,7 @@ Visual Studio 扩展颜色编辑器工具可以创建和编辑 Visual Studio 的
 
    **步骤 1：确定新的颜色标记的类别和标记名称。**
 
-   首选命名方案为 VSColor **[类别] [UI 类型] [State]**。 不要 VSColor 名称中使用单词"color"，因为它是冗余。
+   首选命名方案为 VSColor **[类别] [UI 类型] [State]** 。 不要 VSColor 名称中使用单词"color"，因为它是冗余。
 
    类别名称提供逻辑分组，而应定义为窄越好。 例如，单个工具窗口的名称可能是一个类别名称，但不是整个业务单元或项目组的名称。 分组为类别的项可帮助防止产生混乱之间具有相同名称的颜色。
 

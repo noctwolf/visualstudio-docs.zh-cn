@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9304f0bdcb414da37e70df66eca470999a685735
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5160a2600a8eb3250702dd0836d812b668a3d1b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433300"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333875"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 有了完全限定的文件名的列表，此函数将它们签出到本地驱动器。 注释应用于签出的所有文件。注释参数可以是`null`字符串。
@@ -68,7 +68,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|签出成功。|
 |SCC_E_FILENOTCONTROLLED|所选的文件不是源代码管理下。|

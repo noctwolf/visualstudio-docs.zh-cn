@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EVENTATTRIBUTES enumeration
 ms.assetid: 04db10f7-df31-4464-98e8-b3777428179e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58417471e37dd335c2fa751492f2db357274417a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a3361d27a9e0a4a1f56035c0d2af20d9fa9a9303
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686894"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337767"
 ---
 # <a name="eventattributes"></a>EVENTATTRIBUTES
 指定的事件属性。
@@ -49,20 +52,27 @@ public enum enum_EVENTATTRIBUTES {
 };
 ```
 
-## <a name="members"></a>成员
-EVENT_ASYNCHRONOUS 指示事件是异步的需要该事件没有收到回复。
+## <a name="fields"></a>字段
+`EVENT_ASYNCHRONOUS`\
+指示事件是异步的需要该事件没有收到回复。
 
-EVENT_SYNCHRONOUS 指示事件是同步的通过答复[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)。
+`EVENT_SYNCHRONOUS`\
+指示事件是同步的通过答复[ContinueFromSynchronousEvent](../../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)。
 
-EVENT_STOPPING 指示这是一个停止事件。 必须使用组合`EVENT_ASYNCHRONOUS`或`EVENT_SYNCHRONOUS`。
+`EVENT_STOPPING`\
+指示这是一个停止事件。 必须使用组合`EVENT_ASYNCHRONOUS`或`EVENT_SYNCHRONOUS`。
 
-EVENT_ASYNC_STOP 表示异步停止事件。 当前没有此类事件。 此标志只是一个占位符。
+`EVENT_ASYNC_STOP`\
+表示异步停止事件。 当前没有此类事件。 此标志只是一个占位符。
 
-EVENT_SYNC_STOP 指示同步停止事件 (的组合`EVENT_SYNCHRONOUS`和`EVENT_STOPPING`)。 发送 stopping 事件时，调试引擎 (DE) 使用此值。 通过调用进行答复[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，[步骤](../../../extensibility/debugger/reference/idebugprogram2-step.md)，或[继续](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
+`EVENT_SYNC_STOP`\
+指示同步停止事件 (的组合`EVENT_SYNCHRONOUS`和`EVENT_STOPPING`)。 发送 stopping 事件时，调试引擎 (DE) 使用此值。 通过调用进行答复[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)，[步骤](../../../extensibility/debugger/reference/idebugprogram2-step.md)，或[继续](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
 
-EVENT_IMMEDIATE 指示将立即并以同步方式发送到 IDE 的事件。 此标志结合了等其他标志`EVENT_ASYNCHRONOUS`， `EVENT_SYNCHRONOUS`，或`EVENT_SYNC_STOP`来指示类型的事件，并在已知 （如果有） 的回复机制。
+`EVENT_IMMEDIATE`\
+指示将立即并以同步方式发送到 IDE 的事件。 此标志结合了等其他标志`EVENT_ASYNCHRONOUS`， `EVENT_SYNCHRONOUS`，或`EVENT_SYNC_STOP`来指示类型的事件，并在已知 （如果有） 的回复机制。
 
-EVENT_EXPRESSION_EVALUATION 事件是表达式计算的结果。
+`EVENT_EXPRESSION_EVALUATION`\
+该事件为表达式计算的结果。
 
 ## <a name="remarks"></a>备注
 这些值将按传递`dwAttrib`的参数[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)方法。

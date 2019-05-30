@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4953c8478e25a1534691e99c41dce03930ac46ef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e19b65ea4b3c4cd87b1f9d6a3db9e6f8ae64d16d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434666"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332247"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函数
 此函数将检查以了解其当前状态的完全限定目录的列表。
@@ -53,7 +53,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询已成功。|
 |SCC_E_OPNOTSUPPORTED|源代码控制系统不支持此操作。|

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b8c33ddcc712011556df76dbea71ddab432d9a31
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417345"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334598"
 ---
 # <a name="editor-imports"></a>编辑器导入
 您可以导入编辑器服务、 工厂，以及为您的扩展插件提供对核心编辑器的不同类型的访问权限的代理的数。 例如，您可以导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>以提供<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>为给定的内容类型。 （此导航器允许文本缓冲区上执行不同类型的搜索。）

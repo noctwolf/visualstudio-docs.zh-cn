@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b04977a15dfa082674b7661588b496d1a3c494d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b8108470d5f9f14c76e422591a536648b5485e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891014"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350993"
 ---
 # <a name="create-an-options-page"></a>创建选项页
 
@@ -247,7 +247,7 @@ ms.locfileid: "62891014"
 
      此代码将调用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>若要创建或检索`OptionPageGrid`实例。 `OptionPageGrid` 调用<xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A>加载其选项，这些都是公共属性。
 
-2. 现在，添加名为的自定义命令项模板**MyToolsOptionsCommand**显示的值。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*MyToolsOptionsCommand.cs*。
+2. 现在，添加名为的自定义命令项模板**MyToolsOptionsCommand**显示的值。 在中**添加新项**对话框中，转到**Visual C#**  > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*MyToolsOptionsCommand.cs*。
 
 3. 在中*MyToolsOptionsCommand*文件中，该命令的主体替换为`ShowMessageBox`使用以下方法：
 
