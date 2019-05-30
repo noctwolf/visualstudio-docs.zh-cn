@@ -6,22 +6,22 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910372"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310019"
 ---
 # <a name="component-management"></a>组件管理
 Windows 安装程序中的任务的单位称为 （有时称为 WICs 或只是组件） 的 Windows 安装程序组件。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。
 
- 虽然可以使用多个产品创建 VSPackage 安装程序，我们假定使用 Windows 安装程序 (*.msi*) 文件。 在创建您的安装程序时，必须正确地管理文件部署，以便正确引用计数在任何时候进行。 因此，您产品的不同版本将不会干扰或中断彼此中混合使用安装和卸载方案。
+ 虽然可以使用多个产品创建 VSPackage 安装程序，我们假定使用 Windows 安装程序 ( *.msi*) 文件。 在创建您的安装程序时，必须正确地管理文件部署，以便正确引用计数在任何时候进行。 因此，您产品的不同版本将不会干扰或中断彼此中混合使用安装和卸载方案。
 
  在 Windows 安装程序中，引用计数在组件级别进行。 必须小心地组织资源-文件、 注册表项等 — 为组件。 有其他级别的组织，如模块、 功能和产品 — 在不同情况下，可以帮助。 有关详细信息，请参阅[Windows Installer 基本知识](../../extensibility/internals/windows-installer-basics.md)。
 

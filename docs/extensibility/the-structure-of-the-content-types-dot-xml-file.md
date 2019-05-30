@@ -8,17 +8,17 @@ helpviewer_keywords:
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c211faf577df33bc6e7404eaa9631e734c9c36
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ef77c610bd310347c7ba60048bda342e997da33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435321"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316414"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 文件的结构
 包含有关的 VSIX 包中的内容类型的信息。 Visual Studio 使用 [Content_Types].xml 文件来安装包，但它不会安装文件本身。
@@ -43,7 +43,7 @@ ms.locfileid: "63435321"
 
 ### <a name="attribute-name-attribute"></a>{属性名称}属性
 
-| “值” | 描述 |
+| 值 | 描述 |
 | - | - |
 | http://schemas.openformats.org/package/2006/content-types | 内容类型架构的位置。 |
 

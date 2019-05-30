@@ -7,20 +7,20 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353386"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
-您可以通过指定在运行时添加菜单项`DynamicItemStart`命令在 Visual Studio 命令表中的占位符按钮定义的标志 (*.vsct*) 文件，然后 （在代码中） 定义要显示的菜单项的数量和处理命令。 加载 VSPackage 时，包含动态菜单项会替换占位符。
+您可以通过指定在运行时添加菜单项`DynamicItemStart`命令在 Visual Studio 命令表中的占位符按钮定义的标志 ( *.vsct*) 文件，然后 （在代码中） 定义要显示的菜单项的数量和处理命令。 加载 VSPackage 时，包含动态菜单项会替换占位符。
 
  Visual Studio 将使用中的动态列表**最近使用过**(MRU) 列表中，后者将显示最近打开的文档的名称，并**Windows**列表，显示的 windows 名称当前打开的。   `DynamicItemStart`标志上的命令定义指定的命令是一个占位符，直到打开 VSPackage。 当打开 VSPackage 时，占位符将被替换 0 或更多命令在运行时创建并添加到动态列表。 您不能以查看其中动态列表之前打开 VSPackage 时，会显示在菜单上的位置。  若要填充的动态列表，Visual Studio 会询问要查找其第一个字符是占位符的 ID 相同的 ID 与命令的 VSPackage。 当 Visual Studio 找到匹配的命令时，它将命令的名称添加到动态列表。 然后它递增 ID，并查找另一个匹配的命令，直到没有更多动态命令将添加到动态列表。
 

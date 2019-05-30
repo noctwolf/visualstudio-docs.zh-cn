@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services [managed package framework], outlining
 - outlining, supporting in language services [managed package framework]
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422884"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314885"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示
 大纲显示使可能复杂程序折叠为概述或大纲。 例如，在 C# 中的所有方法可以都折叠为单个行，其中显示仅方法签名。 此外，结构和类可以折叠以显示仅的结构和类的名称。 在单一方法中，可以折叠复杂逻辑以通过如显示的语句中的，仅第一行中显示的总体流程`foreach`， `if`，和`while`。

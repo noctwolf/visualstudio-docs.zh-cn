@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891886"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352364"
 ---
 # <a name="add-icons-to-menu-commands"></a>将图标添加到菜单命令
 命令可出现在菜单和工具栏。 在工具栏上很常见的命令将使用只是一个图标 （为节省空间） 时菜单上显示命令通常显示带图标和文本。
@@ -57,7 +57,7 @@ ms.locfileid: "62891886"
 
     - 设置`guid`值的名称与`<GuidSymbol>`在上一步中创建的元素。
 
-    - 设置`href`位图文件的相对路径的值 (在这种情况下**资源\\< 图标文件名\>**。
+    - 设置`href`位图文件的相对路径的值 (在这种情况下**资源\\< 图标文件名\>** 。
 
     - 设置`usedList`IDSymbol 前面创建的值。 此属性指定要在 VSPackage 中使用的图标的以逗号分隔列表。 不在列表的图标是排除窗体编译。
 

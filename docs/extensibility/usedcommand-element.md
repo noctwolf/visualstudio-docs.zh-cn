@@ -6,17 +6,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50cac2607a27443ef5a24ce00f34425ca418c513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36dbfa484b69832c67c7a1dd28f217706e1a91a6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798413"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316308"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
 允许 VSPackage 访问在另一个.vsct 文件中定义的命令。 例如，如果你的 VSPackage 使用标准**副本**命令，通过定义[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]shell 中，您可以将命令添加到菜单或工具栏无需重新执行它。
