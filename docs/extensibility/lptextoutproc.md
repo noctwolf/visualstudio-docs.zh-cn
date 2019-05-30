@@ -11,17 +11,17 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a990fc28ffcba4cffc199c1435fddb41bd896521
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907262"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309027"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -49,7 +49,7 @@ mesg_type
 
 消息的类型。 下表列出了支持此参数的值。
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息将被视为信息、 警告或错误。|
 |`SCC_MSG_STATUS`|显示状态消息，并可以在状态栏中显示。|
@@ -63,7 +63,7 @@ mesg_type
 
 ## <a name="return-value"></a>返回值
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|显示的字符串或操作已成功完成。|
 |SCC_MSG_RTN_CANCEL|用户想要取消该操作。|

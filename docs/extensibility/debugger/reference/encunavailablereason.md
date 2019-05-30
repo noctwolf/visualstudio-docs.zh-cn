@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717034"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318159"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 表示原因，**编辑并继续**不可用。
@@ -49,20 +52,27 @@ public enum EncUnavailableReason {
 };
 ```
 
-#### <a name="parameters"></a>参数
-ENCUN_NONE 否编辑并继续不可用的原因的特定原因。
+## <a name="fields"></a>字段
+`ENCUN_NONE`\
+编辑并继续不可用的原因没有特定原因。
 
-ENCUN_INTEROP 编辑并继续的互操作调用期间不可用。
+`ENCUN_INTEROP`\
+编辑并继续的互操作调用期间不可用。
 
-ENCUN_SQLCLR 编辑并继续在使用公共语言运行时 (CLR) 的 SQL 过程调用期间不可用。
+`ENCUN_SQLCLR`\
+编辑并继续在使用公共语言运行时 (CLR) 的 SQL 过程调用期间不可用。
 
-ENCUN_MINIDUMP 编辑并继续处理小型转储时不可用。
+`ENCUN_MINIDUMP`\
+编辑并继续处理小型转储时不可用。
 
-处理嵌入的代码时，ENCUN_EMBEDDED 编辑并继续不可用。
+`ENCUN_EMBEDDED`\
+处理嵌入的代码时，编辑并继续不可用。
 
-ENCUN_ATTACH 编辑并继续不可用会话已附加到，由于未启动的调试器。
+`ENCUN_ATTACH`\
+编辑并继续就不可用会话已附加到，因为不会启动的调试器。
 
-ENCUN_WIN64 编辑并继续处理 64 位 Windows 代码时不可用。
+`ENCUN_WIN64`\
+编辑并继续处理 64 位 Windows 代码时不可用。
 
 ## <a name="remarks"></a>备注
 此枚举仅适用于内部使用通过[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md)并[DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)由自定义端口提供程序实现的方法应始终返回`E_NOTIMPL`。

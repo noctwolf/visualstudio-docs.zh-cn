@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420705"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351631"
 ---
 # <a name="detect-system-requirements"></a>检测系统要求
 VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft Windows 安装程序来管理你的 VSPackage 的安装时，您可以配置要检测是否安装了 Visual Studio 的安装程序。 此外可以配置它检查到系统的其他要求，例如，Windows 的特定版本或特定 RAM 量。
@@ -33,7 +33,7 @@ VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft
 安装较新的版本时，该版本的注册表项还将添加与早期版本。 也就是说，如果安装的 Enterprise edition，则**安装**键设置为*1*企业，以及专业版和社区版本。 因此，您需要检查仅为所需的最新版本。
 
 > [!NOTE]
-> 在 64 位版本的注册表编辑器中，32 位密钥下显示**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**。 Visual Studio 密钥正在**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**。
+> 在 64 位版本的注册表编辑器中，32 位密钥下显示**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** 。 Visual Studio 密钥正在**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** 。
 
 |产品|键|
 |-------------|---------|

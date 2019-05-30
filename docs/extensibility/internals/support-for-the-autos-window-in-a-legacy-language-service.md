@@ -6,17 +6,17 @@ helpviewer_keywords:
 - language services [managed package framework], Autos window
 - Autos window, supporting in language services [managed package framework]
 ms.assetid: 47d40aae-7a3c-41e1-a949-34989924aefb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2842cb7a11765f0d460681dee0187c62ff31061c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908418"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309826"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>旧版语言服务中的自动窗口支持
 **自动**窗口将显示如变量和参数 （无论是由于一个断点或异常） 暂停正在调试的程序时作用域中的表达式。 表达式可以包含变量，本地或全局和局部范围内已更改的参数。 **自动**窗口还可以包括类、 结构或某些其他类型的实例化。 表达式计算器可以计算的任何内容可能会显示在**自动**窗口。

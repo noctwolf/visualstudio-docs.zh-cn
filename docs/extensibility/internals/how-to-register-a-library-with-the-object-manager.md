@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62af216c2c748aafd5128a861fec5033f0ba5d37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7481b9710237bcd1e624b07f8985b5708f271bef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909785"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312055"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：与对象管理器注册库
 符号浏览工具，如**类视图**，**对象浏览器**，**调用浏览器**并**查找符号结果**，可以查看在项目中或在外部组件的符号。 符号包括命名空间、 类、 接口、 方法和其他语言元素。 库跟踪这些符号和公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器填充的数据的工具。

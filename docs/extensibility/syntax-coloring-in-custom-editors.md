@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - syntax coloring
 ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff717c8586e22d82a79344dd3c134c604f868d10
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799058"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316650"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自定义编辑器中的语法着色
 Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务来标识特定的语法项并将其与给定的文档视图的指定颜色显示。

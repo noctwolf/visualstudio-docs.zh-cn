@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bbea179eb2140706ee868a8a48215e7f490f57d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795990"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312524"
 ---
 # <a name="walkthrough-display-matching-braces"></a>演练：显示匹配大括号
 实现基于语言的功能，例如，大括号匹配通过定义您希望匹配，括在括号的内，并将文本标记标记添加到匹配大括号，当脱字号上一个大括号。 可以定义一种语言的上下文中的大括号、 定义您自己的文件扩展名和内容类型和应用标签来只是该类型或将标记应用到现有内容类型 （例如"text")。 下面的演练演示如何将应用标记为"text"内容类型匹配的大括号。

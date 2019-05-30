@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 799b7e67248759987a3e3f9595978fb1a7bbf87d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689231"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317598"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 指定主机名的类型。
@@ -39,10 +42,12 @@ public enum enum_GETHOSTNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>成员
-GHN_FRIENDLY_NAME 指定主机的友好名称。
+## <a name="fields"></a>字段
+`GHN_FRIENDLY_NAME`\
+指定的主机的友好名称。
 
-GHN_FILE_NAME 指定主机的文件名称。
+`GHN_FILE_NAME`\
+指定主机的文件名称。
 
 ## <a name="remarks"></a>备注
 这些值会作为参数传递[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法来检索主机名以不同的格式。

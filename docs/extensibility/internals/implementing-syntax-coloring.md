@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f577f4cf21110a1b40680059b385d413c9c6902
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420431"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324237"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 时语言服务都会提供语法着色，分析器将一行文本转换为可着色项的数组，并返回与这些可着色项相对应的令牌类型。 分析器应返回属于可着色项列表的令牌类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据分配给相应的标记类型的着色器对象的属性在代码窗口中显示每个可着色项。

@@ -3,17 +3,17 @@ title: Visual Studio 的用户体验基础知识 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951764"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310812"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的用户体验基础知识
 
@@ -134,10 +134,10 @@ ms.locfileid: "62951764"
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>下划线作为组标签，而不是超链接
  下划线文本应仅用于超链接。
 
- **错误：**\
+ **错误：** \
  ![不是一个超链接的带下划线的文本是 Visual Studio 反模式。](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />不是一个超链接的带下划线的文本是 Visual Studio 反模式。
 
- **很好：**\
+ **很好：** \
  ![正确设置的样式，非超链接文本显示未修饰环境字体中。](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />正确设置的样式，非超链接文本显示未修饰环境字体中。
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>单击弹出对话框中的复选框结果
@@ -163,6 +163,6 @@ ms.locfileid: "62951764"
 #### <a name="using-click-here-for-links"></a>使用"单击此处"链接
  超链接应该是自我描述。 它是一种反模式使用"单击此处"或任何类似的变体。
 
- **错误：**"单击此处了解有关如何创建一个新的项目。"
+ **错误：** "单击此处了解有关如何创建一个新的项目。"
 
- **很好：**"如何创建一个新的项目？"
+ **很好：** "如何创建一个新的项目？"

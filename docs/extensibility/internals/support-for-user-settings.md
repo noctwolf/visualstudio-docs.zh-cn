@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90f04d5657fb6f680139ee6de5a47625304b5dbd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309761"
 ---
 # <a name="support-for-user-settings"></a>支持用户设置
 VSPackage 可以定义一个或多个设置类别，是一组保留在用户选择时的状态变量**导入/导出设置**命令**工具**菜单。 若要启用此持久性，您使用的设置 Api 中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。
@@ -31,14 +31,14 @@ VSPackage 可以定义一个或多个设置类别，是一组保留在用户选�
      如果单个 VSPackage 支持多个自定义设置点，由一个单独的类，实现每个自定义设置点并且每个注册的唯一实例<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>类。 因此，实现类设置可以支持多个设置类别。
 
 ## <a name="custom-settings-point-registry-entry-details"></a>自定义设置点注册表项的详细信息
- 在以下位置的注册表条目中创建自定义设置点：HKLM\Software\Microsoft\VisualStudio\\*\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支持的自定义设置点的名称并*\<版本 >* 是版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。
+ 在以下位置的注册表条目中创建自定义设置点：HKLM\Software\Microsoft\VisualStudio\\ *\<版本 >* \UserSettings\\`<CSPName>`，其中`<CSPName>`是 VSPackage 支持的自定义设置点的名称并 *\<版本 >* 是版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 8.0。
 
 > [!NOTE]
-> 根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 是初始化。 有关详细信息，请参阅[命令行开关](../../extensibility/command-line-switches-visual-studio-sdk.md)。
+> 根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 是初始化。 有关详细信息，请参阅[命令行开关](../../extensibility/command-line-switches-visual-studio-sdk.md)。
 
  注册表项的结构如下图所示：
 
- HKLM\Software\Microsoft\VisualStudio\\*\<Version>* \UserSettings\
+ HKLM\Software\Microsoft\VisualStudio\\ *\<Version>* \UserSettings\
 
  `<CSPName`>= s '#12345'
 

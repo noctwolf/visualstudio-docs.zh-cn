@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af0a11e2e75b8a9be44dacb58eeac2505613e86d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950946"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323041"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 模板架构参考
 本部分包含有关中的 XML 元素的信息 *.vstemplate*文件，这些文件用于存储项目模板、 项模板和初学者工具包的元数据文件。
@@ -34,7 +34,7 @@ ms.locfileid: "62950946"
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
 |[CustomDataSignature](../extensibility/customdatasignature-element-visual-studio-templates.md)|--|--|
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名称<br /><br /> “值”|
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|--|名称<br /><br /> 值|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|CustomParameter|--|
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|--|--|
 |[说明](../extensibility/description-element-visual-studio-templates.md)|--|package<br /><br /> Id|

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093c2e33b8fe3918c280bb68dabda54808cc5e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd66b245da88b26c75c612ab7e45ccc01b4ab607
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859184"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318718"
 ---
 # <a name="running-document-table"></a>运行文档表
 IDE 维护名为运行文档表 (RDT) 的内部结构中的所有当前打开的文档的列表。 此列表包括所有打开的文档在内存中，而不考虑是否当前正在编辑这些文档。 文档是包括一个项目或主项目文件 （例如，.vcxproj 文件） 中的文件的保存的任何项。

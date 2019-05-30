@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4e9aa77848c3784b1df7a2c1f32651b8d00e5998
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417086"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263389"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,7 +143,7 @@ ms.locfileid: "63417086"
 
 - 确保满足最低硬件要求以及 BIOS 设置正确。
 
-   仿真程序和 Windows 8 HYPER-V 需要支持二级地址转换 (SLAT) 的 64 位处理器。 对 Intel 而言，实际上需要 Core i3、i5 或 i7 处理器（或众多 Xeons 中的一种）。 [此处](http://support.amd.com/en-us)可查看 AMD 芯片列表。
+   仿真程序和 Windows 8 HYPER-V 需要支持二级地址转换 (SLAT) 的 64 位处理器。 对 Intel 而言，实际上需要 Core i3、i5 或 i7 处理器（或众多 Xeons 中的一种）。 [此处](https://www.amd.com/en/support)可查看 AMD 芯片列表。
 
   1. 确保计算机满足 [系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。
 
@@ -179,7 +179,7 @@ ms.locfileid: "63417086"
 
   6. 确保正在运行 Windows 8 专业版或更好版本（不支持 Windows Server 2008）。 支持 Windows Server 2012，但必须启用“桌面体验”。
 
-     可以检查事件查看器，查看是否存在任何虚拟机监控程序错误。 若要执行此操作，打开事件查看器（开始键 + R，然后键入 `eventvwr`），然后选择 **“Windows 日志”**、 **“系统”**。 然后按事件源筛选日志，同时将源设置为 **“Hyper-V-虚拟机监控程序”**。 检查错误以帮助确定根源。
+     可以检查事件查看器，查看是否存在任何虚拟机监控程序错误。 若要执行此操作，打开事件查看器（开始键 + R，然后键入 `eventvwr`），然后选择 **“Windows 日志”** 、 **“系统”** 。 然后按事件源筛选日志，同时将源设置为 **“Hyper-V-虚拟机监控程序”** 。 检查错误以帮助确定根源。
 
      如果处理器满足最低要求而虚拟机监控程序仍失败，建议找出是否存在计算机可进行的 BIOS 升级。 如果存在升级并且选择要升级，务必在升级 BIOS 时采取制造商提出的所有预防措施（例如，确保 BIOS 固件升级不因断电中断，因为这样可能会永久损坏 BIOS）。
 
@@ -239,7 +239,7 @@ ms.locfileid: "63417086"
 
      卸载第三方产品后，可能需要还原 Windows Phone 仿真程序内部交换机。 若要完成该操作：
 
-  - 打开 Hyper V 并转入虚拟交换机管理器。 创建名为“Windows Phone 仿真程序内部交换机”的虚拟交换机，并将其连接类型设置为 **“内部网络”**。
+  - 打开 Hyper V 并转入虚拟交换机管理器。 创建名为“Windows Phone 仿真程序内部交换机”的虚拟交换机，并将其连接类型设置为 **“内部网络”** 。
 
      ![虚拟交换机管理器](../cross-platform/media/android-emu-virtual-switch-manager.png "Android_Emu_Virtual_Switch_Manager")
 
@@ -259,7 +259,7 @@ ms.locfileid: "63417086"
 ## <a name="ADB"></a> Visual Studio 尝试将应用部署到仿真程序时遇到困难，或者仿真程序未在其他 IDE 中显示为调试目标。
  如果仿真程序正在运行，但它似乎没有连接到 ADB（Android 调试桥）或未显示在使用 ADB 的 Android 工具中（如 Android Studio 或 Eclipse），则可能需要调整仿真程序查找 ADB 的位置。 仿真程序使用注册表项来标识 Android SDK 的基位置，并查找该目录下的 \platform-tools\adb.exe 文件。 若要修改仿真程序使用的 Android SDK 路径：
 
-- 从“开始”按钮上下文菜单中选择 **“运行”** ，在对话框中键入 `regedit` ，并选择 **“确定”**，由此打开注册表编辑器。
+- 从“开始”按钮上下文菜单中选择 **“运行”** ，在对话框中键入 `regedit` ，并选择 **“确定”** ，由此打开注册表编辑器。
 
 - 在左侧的文件夹树中，导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK 工具。
 
@@ -283,15 +283,15 @@ ms.locfileid: "63417086"
 
 1. 打开 Hyper-V 管理器，选择当前使用的模拟器配置文件的 VM。
 
-2. 选择“删除已保存状态”（右下方）。
+2. 选择“删除已保存状态”  （右下方）。
 
-3. 选择“设置...”
+3. 选择“设置...” 
 
-4. 展开处理器节点并选择“兼容性”。
+4. 展开处理器节点并选择“兼容性”  。
 
-5. 启用“迁移到具有不同处理器版本的物理计算机”。
+5. 启用“迁移到具有不同处理器版本的物理计算机”  。
 
-6. 在“操作”下重启该服务，然后重试。
+6. 在“操作”  下重启该服务，然后重试。
 
 ## <a name="GooglePlay"></a>模拟器未能运行使用 Google Play 服务的应用
  仿真程序未随 Google Play 服务的库一同提供。 但是，仿真程序不支持可闪存 zip 文件的拖放安装。

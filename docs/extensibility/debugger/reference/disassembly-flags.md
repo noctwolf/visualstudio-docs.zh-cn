@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_FLAGS enumeration
 ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c4602fa1b8d30e9119bb39e925cf7768ae1cbcf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0160a14a4ad20e7144e48f767fad88951ca1e473
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682422"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318392"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 指定反汇编的标志。
@@ -47,18 +50,24 @@ public enum enum_DISASSEMBLY_FLAGS {
 };
 ```
 
-## <a name="members"></a>成员
-DF_DOCUMENTCHANGE 指示比前一个不同文档中的此指令。
+## <a name="fields"></a>字段
+`DF_DOCUMENTCHANGE`\
+指示此指令比前一个不同的文档。
 
-DF_DISABLED 指示此指令将不会执行。
+`DF_DISABLED`\
+指示此指令将不会执行。
 
-DF_INSTRUCTION_ACTIVE 指示此指令的其中一个要执行的下一步说明 （可能有多个）。
+`DF_INSTRUCTION_ACTIVE`\
+指示此指令是一个要执行的下一步说明 （可能有多个）。
 
-DF_DATA 指示此指令实际上是数据 （而不是代码）。
+`DF_DATA`\
+指示此指令实际上是数据 （而不是代码）。
 
-DF_HASSOURCE 指示此指令具有源。 一些说明，如分析或进行垃圾收集代码中，有没有相应的源。
+`DF_HASSOURCE`\
+指示此指令具有源。 一些说明，如分析或进行垃圾收集代码中，有没有相应的源。
 
-DF_DOCUMENT_CHECKSUM 指示`bstrDocumentUrl`字段后的文档 URL 包含校验和数据。 请参阅备注部分[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)校验和数据的存储方式的结构。
+`DF_DOCUMENT_CHECKSUM`\
+指示`bstrDocumentUrl`字段后的文档 URL 包含校验和数据。 请参阅备注部分[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)校验和数据的存储方式的结构。
 
 ## <a name="remarks"></a>备注
 用作`dwFlags`的成员[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)结构。

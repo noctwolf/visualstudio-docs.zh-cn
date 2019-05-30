@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3c996b8b97217deb130d8e11a68b7efae01ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: e1d424b7af82a423b4d227b77cd77a63eba2559c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843756"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261303"
 ---
 # <a name="add-search-to-a-tool-window"></a>将搜索添加到工具窗口
 当创建或更新您的扩展插件中的工具窗口时，可以在 Visual Studio 中添加相同的搜索功能的其他位置出现。 此功能包括以下功能：
@@ -106,7 +106,7 @@ ms.locfileid: "62843756"
      在工具窗口的顶部，将显示使用的搜索控件**搜索**水印和放大玻璃图标。 但是，搜索不起作用还因为尚未实现对搜索过程。
 
 ## <a name="to-add-the-search-implementation"></a>若要添加搜索实现
- 如果在启用搜索<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>，如工具窗口在上一过程中，创建搜索主机。 此主机将设置和管理搜索过程，始终在后台线程发生。 因为<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>类管理搜索主机和设置创建了搜索的仅需要创建搜索任务，并提供搜索方法。 在后台线程上发生搜索过程和工具窗口控件对的调用发生在 UI 线程上。 因此，必须使用<xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A>方法来管理与该控件的处理中所做的任何调用。
+ 如果在启用搜索<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>，如工具窗口在上一过程中，创建搜索主机。 此主机将设置和管理搜索过程，始终在后台线程发生。 因为<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>类管理搜索主机和设置创建了搜索的仅需要创建搜索任务，并提供搜索方法。 在后台线程上发生搜索过程和工具窗口控件对的调用发生在 UI 线程上。 因此，必须使用[ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85))方法来管理与该控件的处理中所做的任何调用。
 
 1. 在中*TestSearch.cs*文件中，添加以下`using`语句：
 
@@ -127,7 +127,7 @@ ms.locfileid: "62843756"
 
     - 重写<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>方法创建搜索任务。
 
-    - 重写<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>方法要还原的文本框中的状态。 当用户取消搜索任务和用户设置或取消设置选项或筛选器时，调用此方法。 这两<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>UI 线程上调用。 因此，无需访问通过文本框<xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A>方法。
+    - 重写<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>方法要还原的文本框中的状态。 当用户取消搜索任务和用户设置或取消设置选项或筛选器时，调用此方法。 这两<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A>UI 线程上调用。 因此，无需访问通过文本框[ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85))方法。
 
     - 创建名为的类`TestSearchTask`，它继承自<xref:Microsoft.VisualStudio.Shell.VsSearchTask>，它提供的默认实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>。
 
@@ -471,7 +471,7 @@ ms.locfileid: "62843756"
 
 6. 选择的筛选器。
 
-     搜索框中包含**行:"甚至"**，并且显示以下结果：
+     搜索框中包含**行:"甚至"** ，并且显示以下结果：
 
      很好的 2
 

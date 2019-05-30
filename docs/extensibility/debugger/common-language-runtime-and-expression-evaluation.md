@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411317"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351300"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>公共语言运行时和表达式计算
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "63411317"
 
  一旦已分析表达式，被调用符号提供程序 (SP) 来计算每个数据对象。 例如，如果"A"定义同时在多个方法中，问题"的 A？" 可以确定一个的值之前必须回答。 返回由 SP 的答案是类似于"第五个堆栈帧上的第三个项"或者"A 的 50 个字节，超出的静态内存开始分配给此方法。"
 
- 除了为程序本身生成 MSIL，CLR 编译器还可以生成说明性很强的调试信息写入到程序数据库 (*.pdb*) 文件。 只要专有语言编译器生成调试信息放在与 CLR 编译器相同的格式，CLR 的 SP 是无法识别语言的名为数据对象。 一旦已确定的已命名的数据对象，EE 使用联编程序对象相关联 （或绑定） 的数据对象到的内存区域中保留该对象的值。 然后，DE 可以获取或设置数据对象的新值。
+ 除了为程序本身生成 MSIL，CLR 编译器还可以生成说明性很强的调试信息写入到程序数据库 ( *.pdb*) 文件。 只要专有语言编译器生成调试信息放在与 CLR 编译器相同的格式，CLR 的 SP 是无法识别语言的名为数据对象。 一旦已确定的已命名的数据对象，EE 使用联编程序对象相关联 （或绑定） 的数据对象到的内存区域中保留该对象的值。 然后，DE 可以获取或设置数据对象的新值。
 
  专有编译器可以提供 CLR 调试信息通过调用`ISymbolWriter`接口 (在.NET Framework 中的命名空间中定义`System.Diagnostics.SymbolStore`)。 专有编译器可以编译为 MSIL 和写入调试信息，通过这些接口，通过使用 CLR DE 和 sp。 这极大地简化了将专有语言集成到 Visual Studio IDE。
 

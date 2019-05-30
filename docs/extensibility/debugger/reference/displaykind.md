@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692757"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318269"
 ---
 # <a name="displaykind"></a>DisplayKind
 枚举表示类型的信息，以便让从有效值[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象，并向用户显示。
@@ -41,12 +44,15 @@ public enum enum_DisplayKind
 };
 ```
 
-#### <a name="parameters"></a>参数
-DisplayKind_Value 字段的值。
+## <a name="fields"></a>字段
+`DisplayKind_Value`\
+字段的值。
 
-DisplayKind_Name 字段的名称。
+`DisplayKind_Name`\
+字段的名称。
 
-DisplayKind_Type 字段的类型。
+`DisplayKind_Type`\
+字段的类型。
 
 ## <a name="requirements"></a>要求
 标头：Ee.h

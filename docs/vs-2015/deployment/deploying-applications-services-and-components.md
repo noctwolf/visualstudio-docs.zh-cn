@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675583"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260687"
 ---
 # <a name="deploying-applications-services-and-components"></a>部署应用程序、服务和组件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ ms.locfileid: "65675583"
 |**部署桌面应用程序：** 通过使用 ClickOnce 部署，你可以发布到 web 服务器或网络文件共享的桌面应用程序。 用户随后只需一次单击即可安装应用程序。|[ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)|  
 |**创建安装程序：** 可以使用免费的 InstallShield Limited Edition 创建安装程序。|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**维护现有的安装程序：** 继续使用早期版本的 Visual Studio 中创建的安装 Visual Studio 安装程序项目扩展的安装程序。|[Visual Studio 安装程序项目扩展](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> 此处提供了安装程序项目的文档：[Visual Studio 安装程序部署](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**部署一个视觉对象C++应用程序：** 你可以部署视觉对象C++通过使用集中部署、 本地部署或静态链接的应用程序的运行时。|[部署本机桌面应用程序 (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**部署一个视觉对象C++应用程序：** 你可以部署视觉对象C++通过使用集中部署、 本地部署或静态链接的应用程序的运行时。|[部署本机桌面应用程序 (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**部署用于测试的应用程序：** 可以通过将应用程序部署到虚拟环境中来实现更复杂的开发和测试。|[测试实验室环境](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**安装必备组件：** 可以通过配置通用安装程序（称为引导程序）来为桌面应用程序安装必备组件。|[应用程序部署必备](../deployment/application-deployment-prerequisites.md)|

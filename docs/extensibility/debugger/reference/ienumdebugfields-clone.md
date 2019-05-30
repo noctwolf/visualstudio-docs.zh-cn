@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Clone method
 ms.assetid: 7ec265a8-696f-45ce-a2a2-0a83e96fee1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d78427fd3f5e949560be4abb4e1a55616cea859
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 2d614a1d98a1374ed0b04aef5b23ebf91c21610c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66208106"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350442"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 此方法返回当前枚举作为一个单独的对象的副本。

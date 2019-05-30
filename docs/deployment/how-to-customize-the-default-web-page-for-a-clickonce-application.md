@@ -1,5 +1,5 @@
 ---
-title: 如何：自定义 ClickOnce 应用程序的默认 Web 页 |Microsoft Docs
+title: 自定义 ClickOnce 应用程序的默认网页
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406978"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263334"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>如何：自定义 ClickOnce 应用程序的默认网页
 在发布 ClickOnce 应用程序到 Web，Web 页自动生成并随应用程序一起发布。 默认页包含的应用程序和用于安装应用程序、 安装必备组件，或访问 MSDN 上的帮助链接的名称。
