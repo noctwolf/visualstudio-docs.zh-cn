@@ -1,5 +1,5 @@
 ---
-title: URL 选取器对话框 （Visual Studio 中的 SharePoint 开发） |Microsoft Docs
+title: URL 选取器对话框 （SharePoint 开发）
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d8f193e50053b5cdf0b89cf41b09471c513ee9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 991693c3379e008a2a907efd3127290c7e804c22
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007947"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261946"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 选取器对话框 （Visual Studio 中的 SharePoint 开发）
   在“URL 选取器”对话框中，您可以选择文件，如位于项目中或运行 SharePoint 的本地服务器上的母版页文件或图像文件。

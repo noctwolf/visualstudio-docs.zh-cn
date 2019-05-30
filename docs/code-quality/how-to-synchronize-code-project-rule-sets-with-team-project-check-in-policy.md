@@ -1,5 +1,5 @@
 ---
-title: 如何：将代码项目规则集与团队项目签入策略同步
+title: 同步项目规则集与签入策略
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815813"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260853"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>如何：使用 Azure DevOps 项目签入策略同步代码项目规则集
 
@@ -45,7 +45,7 @@ ms.locfileid: "62815813"
 
 3. 单击**代码分析**。
 
-4. 在中**运行此规则集**列表中，单击**\<浏览...>**。
+4. 在中**运行此规则集**列表中，单击 **\<浏览...>** 。
 
 5. 在中**打开**对话框框中，指定签入策略规则集文件。
 
@@ -53,7 +53,7 @@ ms.locfileid: "62815813"
 
 1. 请单击以选择项目设置对话框的代码分析页上的 Azure DevOps 项目的签入策略本主题前面的过程之一。
 
-2. 单击“打开”。
+2. 单击“打开”  。
 
 3. 添加或删除规则通过使用[规则集编辑器](../code-quality/working-in-the-code-analysis-rule-set-editor.md)。
 
@@ -61,6 +61,6 @@ ms.locfileid: "62815813"
 
 5. 打开代码项目中，属性对话框并显示**代码分析**页。
 
-6. 在中**运行此规则集**列表中，单击**\<浏览...>**。
+6. 在中**运行此规则集**列表中，单击 **\<浏览...>** 。
 
 7. 在中**打开**对话框框中，指定的规则集文件。

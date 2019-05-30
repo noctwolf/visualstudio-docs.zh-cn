@@ -3,17 +3,17 @@ title: Visual Studio 的常见控件模式 |Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312303"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 ## <a name="BKMK_CommonControls"></a> 公共控件
@@ -64,7 +64,7 @@ ms.locfileid: "62799480"
 
 - 只读字段将具有灰色 （禁用） 背景但 （活动） 的默认前景色。
 
-- 所需的字段应有**\<所需 >** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。
+- 所需的字段应有 **\<所需>** 一样中其水印。 不应更改除中极少数情况下的背景的颜色。
 
 - 错误验证：请参阅[Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)
 
@@ -274,7 +274,7 @@ ms.locfileid: "62799480"
 
 何时使用仅限省略号的短按钮：
 
-- 如果有多个长 **[浏览...]** 在对话框中，如当多个字段允许的浏览按钮。 使用短 **[...]** 为每个要避免这种情况下创建的令人困惑访问项的按钮 (**& 浏览**并**B (&)** 相同对话框中)。
+- 如果有多个长 **[浏览...]** 在对话框中，如当多个字段允许的浏览按钮。 使用短 **[...]** 为每个要避免这种情况下创建的令人困惑访问项的按钮 ( **& 浏览**并**B (&)** 相同对话框中)。
 
 - 在紧密的对话框中，或没有合理的位置将很长的按钮。
 
@@ -317,7 +317,7 @@ ms.locfileid: "62799480"
 超链接是非常适用于基于导航功能的操作，例如打开帮助主题、 模式对话框或向导。 如果命令使用超链接，则它应始终显示 ui 的可见和明显更改。 一般情况下，提交到操作 （例如，保存，取消，并删除） 的操作更好地传达使用一个按钮。
 
 #### <a name="writing-style"></a>编写样式
-请按照[用户界面文本的 Windows 桌面指南](/windows/desktop/uxguide/text-ui)。 不要使用"了解更多关于，""告诉我详细 about，"或"get-help 与此"表述。 相反，短语在回答的帮助内容的主要问题方面的帮助链接文本。 例如，"**如何将服务器添加到服务器资源管理器？**"
+请按照[用户界面文本的 Windows 桌面指南](/windows/desktop/uxguide/text-ui)。 不要使用"了解更多关于，""告诉我详细 about，"或"get-help 与此"表述。 相反，短语在回答的帮助内容的主要问题方面的帮助链接文本。 例如，"**如何将服务器添加到服务器资源管理器？** "
 
 #### <a name="visual-style"></a>视觉样式
 

@@ -6,20 +6,20 @@ helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09ab1bb7e44ee2772023a73632ca194796bbb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d27fe21fb577f2e3610bf30109aa8c0b7f17a12
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312199"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面 （源代码管理 VSPackage）
-VSPackage 声明其菜单项和通过 Visual Studio 命令表及其默认状态 (*.vsct*) 文件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。
+VSPackage 声明其菜单项和通过 Visual Studio 命令表及其默认状态 ( *.vsct*) 文件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。
 
  VSPackage 可以设置注册表项，因此可以根据命令用户界面 (UI) 上下文自动加载 VSPackage，尽管通常在进行源代码管理按需而不是只需切换到特定的 UI 上下文应该加载 VSPackage。 有关详细信息**AutoLoadPackages**注册表密钥，请参阅[管理 Vspackage](../../extensibility/managing-vspackages.md)。
 

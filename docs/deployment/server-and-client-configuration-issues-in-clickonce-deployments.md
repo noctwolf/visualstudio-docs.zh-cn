@@ -1,5 +1,5 @@
 ---
-title: 服务器和 ClickOnce 部署中的客户端配置问题 |Microsoft Docs
+title: ClickOnce 部署中的服务器/客户端配置问题
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406787"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263478"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果在 Windows Server 上使用 Internet 信息服务 (IIS) 和你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。
@@ -128,7 +128,7 @@ ms.locfileid: "63406787"
 ## <a name="http-compression-issues"></a>HTTP 压缩问题
  使用[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，可以执行使用 HTTP 压缩的下载、 使用 GZIP 算法压缩数据流前将流发送到客户端的 Web 服务器技术。 客户端 — 在这种情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，然后才能读取这些文件解压缩流。
 
- 如果使用 IIS，您可以轻松地启用 HTTP 压缩。 但是，当你启用 HTTP 压缩，仅启用某些文件类型，也就是说，HTML 和文本的文件。 若要为程序集启用压缩 (*.dll*)，XML (*.xml*)，部署清单 (*.application*)，和应用程序清单 (*.manifest*)，则必须将添加这些文件的类型的 IIS 压缩到列表的类型。 将文件类型添加到你的部署之前, 仅文本和 HTML 文件将被压缩。
+ 如果使用 IIS，您可以轻松地启用 HTTP 压缩。 但是，当你启用 HTTP 压缩，仅启用某些文件类型，也就是说，HTML 和文本的文件。 若要为程序集启用压缩 ( *.dll*)，XML ( *.xml*)，部署清单 ( *.application*)，和应用程序清单 ( *.manifest*)，则必须将添加这些文件的类型的 IIS 压缩到列表的类型。 将文件类型添加到你的部署之前, 仅文本和 HTML 文件将被压缩。
 
  有关 IIS 的详细说明，请参阅[如何指定 HTTP 压缩的其他文档类型](http://go.microsoft.com/fwlink/?LinkId=178459)。
 

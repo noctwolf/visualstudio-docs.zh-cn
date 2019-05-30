@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - error markers
 ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 96c6e1cc5c26819854099a0b7a493472fca8155e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415496"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351920"
 ---
 # <a name="how-to-implement-error-markers"></a>如何：实现错误标记
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义实现。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记略有标记语言分析器认为不正确并波浪或波浪红线的文本。 此指标帮助程序员通过直观地显示不正确的代码。

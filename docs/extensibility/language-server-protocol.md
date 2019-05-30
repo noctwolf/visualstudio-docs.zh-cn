@@ -3,17 +3,17 @@ title: 语言服务器协议概述 |Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309623"
 ---
 # <a name="language-server-protocol"></a>语言服务器协议
 
@@ -49,13 +49,13 @@ LSP 不断发展变化，并且立即在 3.0 版。 它启动时的语言服务�
 
 ![lsp 数据流关系图](media/lsp-flow-diagram.png)
 
-* **用户在该工具中打开文件 （也称为文档）**:该工具将通知语言服务器文档打开时 (textDocument/didOpen)。 从现在起，文档的内容方面的真相不再位于文件系统上，但保留在内存中的工具。
+* **用户在该工具中打开文件 （也称为文档）** :该工具将通知语言服务器文档打开时 (textDocument/didOpen)。 从现在起，文档的内容方面的真相不再位于文件系统上，但保留在内存中的工具。
 
 * **用户所做的编辑**:该工具将通知有关文档更改 (textDocument/didChange) 的服务器，该程序的语义信息更新语言服务器。 发生这种情况，如语言服务器分析该信息并通知包含检测到的错误和警告 (textDocument/publishDiagnostics) 的工具。
 
 * **用户执行"转到定义"在编辑器中的符号**:该工具会发送包含两个参数的 textDocument/定义请求：（1） 的文档 URI，请转到定义请求初始化到服务器之前的位置 （2） 的文本位置。 服务器使用的文档 URI 和文档内部的符号的定义的位置做出响应。
 
-* **在用户关闭文档 （文件）**:从工具，通知文档现在不再在内存中的当前内容是现在最新的文件系统上的语言服务器发送 textDocument/didClose 通知。
+* **在用户关闭文档 （文件）** :从工具，通知文档现在不再在内存中的当前内容是现在最新的文件系统上的语言服务器发送 textDocument/didClose 通知。
 
 此示例说明了与编辑器功能，如"转到定义"，"查找所有引用"级别语言服务器协议的通信方式。 协议使用的数据类型是编辑器或 IDE 数据类型，如当前打开的文本文档和光标的位置。 在编程语言域模型通常提供抽象语法树和编译器符号 （例如，解析类型、 命名空间，...） 的级别不是数据类型。这大大简化了该协议。
 

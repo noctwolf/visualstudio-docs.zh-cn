@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateList function
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64bcf6d443d1f96d650bde7fb92f69bbb12c5327
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434591"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353531"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 此函数可更新特定的源控制命令的文件的列表，并提供所有给定文件的源代码管理状态。
@@ -73,7 +73,7 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_E_NONSPECIFICERROR|非特定故障。|

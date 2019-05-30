@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e42f80485aab478e3739aedb42130699a963ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8b256e25bc9a63093d14eab50d7628c76558b9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909687"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349844"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>项目子类型的初始化序列
 在环境构造一个项目，通过调用基础项目工厂实现的<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 项目子类型的构造启动时环境确定项目文件的扩展名的项目类型 GUID 列表不为空。 项目文件扩展名和项目 GUID 指定项目是否是[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]或[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目类型。 例如，.vbproj 扩展名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 识别[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目。

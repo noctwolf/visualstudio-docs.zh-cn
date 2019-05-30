@@ -6,22 +6,22 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856617"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309631"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 键绑定元素指定的命令的键盘快捷方式。
 
- 命令可以具有与之关联的单个和双键绑定。 单个键绑定的一个示例是**Ctrl**+**S**有关**保存**命令。 双键绑定需要两个连续的键组合来触发命令。 双键绑定的一个示例是<strong>Ctrl*+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要设置书签。
+ 命令可以具有与之关联的单个和双键绑定。 单个键绑定的一个示例是**Ctrl**+**S**有关**保存**命令。 双键绑定需要两个连续的键组合来触发命令。 双键绑定的一个示例是<strong>Ctrl *+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要设置书签。
 
 ## <a name="syntax"></a>语法
 

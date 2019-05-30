@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901270"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262136"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>调试技术和工具可帮助你编写更好的代码
 
@@ -45,7 +45,7 @@ ms.locfileid: "62901270"
 1. 打开 Visual Studio，然后选择**文件** > **新建** > **项目**。 下**可视化C#** ，选择**Windows Desktop**或 **.NET Core**，然后在中间窗格中选择**控制台应用**。
 
     > [!NOTE]
-    > 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
+    > 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接    。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”或“.NET Core 跨平台开发”工作负载，然后选择“修改”    。
 
 2. 在中**名称**字段中，键入**Console_Parse_JSON**然后单击**确定**。 Visual Studio 随即创建项目。
 
@@ -241,7 +241,7 @@ item.totalpoints += users[i].points;
 
 当你已经修复所有红色波形曲线和解析-或至少调查-所有绿色波形曲线，已准备好启动调试器并运行应用。
 
-按 F5（“调试”>“开始调试”）或调试工具栏中的“开始调试”按钮（![开始调试](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")）。
+按 F5（“调试”>“开始调试”）或调试工具栏中的“开始调试”按钮（![开始调试](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")）    。
 
 在此情况下，示例应用程序将引发`SerializationException`异常 （运行时错误）。 也就是说，应用程序采用浅压深正在尝试进行序列化的数据。 在调试模式下 （附加调试器） 启动应用，因为调试器的异常帮助器将转到引发异常，并提供有用的错误消息的代码权限。
 
@@ -294,13 +294,13 @@ catch (SerializationException)
     }
     ```
 
-* 对于不熟悉函数包含在应用中，专用那些与外部数据 （例如 web 请求） 进行交互，检查文档以查看该函数是可能会引发哪些异常。 这可能是正确的错误处理和调试您的应用程序的关键信息。
+* 对于不熟悉函数包含在应用中，尤其是那些与外部数据 （例如 web 请求） 进行交互，检查文档以查看该函数是可能会引发哪些异常。 这可能是正确的错误处理和调试您的应用程序的关键信息。
 
 有关示例应用中，修复`SerializationException`中`GetJsonData`方法通过更改`4o`到`40`。
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>通过使用断言，明确你代码的意图
 
-单击调试工具栏中的“重启”![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")按钮 (Ctrl + Shift + F5)。 这更少的步骤中重新启动该应用程序。 请参阅控制台窗口中的以下输出。
+单击调试工具栏中的“重启”![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")按钮 (Ctrl + Shift + F5)     。 这更少的步骤中重新启动该应用程序。 请参阅控制台窗口中的以下输出。
 
 ![在输出中的 null 值](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +336,7 @@ if (existingUser == false)
 
 通过以这种方式指定意图，您强制执行你的要求。 这是简单方便的方法，您可以使用图面上的 bug 在开发过程。 (`assert`语句也可用作单元测试中的主要元素。)
 
-单击调试工具栏中的“重启”![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")按钮 (Ctrl + Shift + F5)。
+单击调试工具栏中的“重启”![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")按钮 (Ctrl + Shift + F5)     。
 
 > [!NOTE]
 > `assert`代码处于活动状态仅在调试版本中。

@@ -1,5 +1,5 @@
 ---
-title: 如何：更改 ClickOnce 应用程序发布语言 |Microsoft Docs
+title: 发布 ClickOnce 应用程序的语言更改
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88114080b8de02b3aaba52b0a48fd09d58ec5818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e80a65b65d75d925decdf60b633a7d51ea9bafce
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406651"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263178"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>如何：更改 ClickOnce 应用程序的发布语言
 
@@ -34,9 +34,9 @@ ms.locfileid: "63406651"
 
 ## <a name="to-change-the-publish-language"></a>若要更改发布语言
 
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。
 
-2. 单击“发布”选项卡。
+2. 单击“发布”选项卡  。
 
 3. 单击**选项**按钮以打开**发布选项**对话框。
 

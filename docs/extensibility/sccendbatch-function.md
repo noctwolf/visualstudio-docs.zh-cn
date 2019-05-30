@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0662e4c4d1d71e2c9ae0e8f40ff21868d6b9a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e915a2e0c508e62a8d34d8d8a5b4fdcd734bbf8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433261"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353696"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函数
 此函数最后一批的源代码管理操作。 这些批不能嵌套。
@@ -34,7 +34,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|一批操作已成功结束。|
 |SCC_E_UNKNOWNERROR|非特定故障。|

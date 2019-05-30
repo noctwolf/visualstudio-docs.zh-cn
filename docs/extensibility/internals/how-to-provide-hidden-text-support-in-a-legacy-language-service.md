@@ -1,5 +1,5 @@
 ---
-title: 如何：提供旧版语言服务中的隐藏的文本支持 |Microsoft Docs
+title: 提供旧版语言服务中的隐藏的文本支持
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e710f0ca097ef1808abc661e16cdff34c82bd348
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c228f74ea98286f7a4692eafdde67ecc15ecdea9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418480"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263600"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何：提供旧版语言服务中的隐藏的文本支持
 你可以创建大纲区域除了隐藏的文本区域。 隐藏的文本区域可以是客户端控制或编辑器控制和用于完全隐藏的文本区域。 编辑器为水平线条显示隐藏的区域。 这就**仅限脚本**HTML 编辑器中的视图。

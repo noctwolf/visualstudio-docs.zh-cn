@@ -8,17 +8,17 @@ helpviewer_keywords:
 - architecture, persistence
 - running document table (RDT), architecture
 ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb5472776bc9c4a4d6bb0ccd8830cba5eea3d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d80932ab926b7ef26eaef10991e4f5782e81c4b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859883"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328522"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持久性和正在运行的文档表
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 中，项目是完全负责管理其项目项，它们为使用该服务，持久性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文档是在 Visual Studio 环境中的暂留的基本单位。 项目协调在打开、 保存和重命名的文档运行文档表 (RDT) 跟踪所有打开的文档的状态的资源。

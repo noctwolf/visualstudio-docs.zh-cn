@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329211"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 这些函数和声明是全局的 helper 函数，用于实现的调试引擎中，表达式计算器和符号中的提供程序C++。
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > 大多数情况下，度量值将写入到 HKEY_LOCAL_MACHINE 项。 但是，有时 HKEY_CURRENT_USER 将是目标项。 Dbgmetric.lib 处理这两个密钥。 度量值时，它将搜索 HKEY_CURRENT_USER 中，然后 HKEY_LOCAL_MACHINE。 它会将设置度量值，当参数指定要使用哪个顶级密钥。
 
- *[registry key]*\
+ *[registry key]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[版本根]*\
+ *[版本根]* \
 
- *[指标根]*\
+ *[指标根]* \
 
- *[metric type]*\
+ *[metric type]* \
 
  *[metric] = [metric value]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[引擎 guid]*\
+ *[引擎 guid]* \
 
- `CLSID` = *[类 guid]*
+ `CLSID` =  *[类 guid]*
 
  *[metric] = [metric value]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[端口供应商 guid]*
+ `0` =  *[端口供应商 guid]*
 
- `1` = *[端口供应商 guid]*
+ `1` =  *[端口供应商 guid]*
 
 |占位符|描述|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[端口供应商 guid]*|端口提供程序，如果有的 GUID。 许多的调试引擎使用默认端口提供程序，并因此不指定其自己的供应商。 在此情况下，该子项`PortSupplier`将不会出现。|
 
 ### <a name="port-suppliers"></a>端口提供程序
- 以下是在注册表中的端口供应商指标的组织。 `PortSupplier` 是端口提供程序的指标类型名称，对应于 *[指标类型]*。
+ 以下是在注册表中的端口供应商指标的组织。 `PortSupplier` 是端口提供程序的指标类型名称，对应于 *[指标类型]* 。
 
  `PortSupplier`\
 
- *[端口供应商 guid]*\
+ *[端口供应商 guid]* \
 
- `CLSID` = *[类 guid]*
+ `CLSID` =  *[类 guid]*
 
  *[metric] = [metric value]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[class guid]*|实现此端口提供程序的类的 GUID|
 
 ### <a name="symbol-providers"></a>符号提供程序
- 以下是在注册表中的符号供应商指标的组织。 `SymbolProvider` 是符号提供程序的指标类型名称，对应于 *[指标类型]*。
+ 以下是在注册表中的符号供应商指标的组织。 `SymbolProvider` 是符号提供程序的指标类型名称，对应于 *[指标类型]* 。
 
  `SymbolProvider`\
 
- *[符号提供程序 guid]*\
+ *[符号提供程序 guid]* \
 
  `file`\
 
- `CLSID` = *[类 guid]*
+ `CLSID` =  *[类 guid]*
 
  *[metric] = [metric value]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[类 guid]*
+ `CLSID` =  *[类 guid]*
 
  *[metric] = [metric value]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[class guid]*|实现此符号提供程序的类的 GUID|
 
 ### <a name="expression-evaluators"></a>表达式计算器
- 以下是在注册表中的表达式计算器指标的组织。 `ExpressionEvaluator` 表达式计算器的指标类型名称和对应于 *[指标类型]*。
+ 以下是在注册表中的表达式计算器指标的组织。 `ExpressionEvaluator` 表达式计算器的指标类型名称和对应于 *[指标类型]* 。
 
 > [!NOTE]
 > 指标类型`ExpressionEvaluator`未定义在 dbgmetric.h，因为它假定所有度量值更改为表达式计算器将经过适当的表达式计算器指标函数 (的布局`ExpressionEvaluator`子项是某种程度上很复杂，因此详细信息隐藏在 dbgmetric.lib）。
 
  `ExpressionEvaluator`\
 
- *[语言 guid]*\
+ *[语言 guid]* \
 
- *[vendor guid]*\
+ *[vendor guid]* \
 
- `CLSID` = *[类 guid]*
+ `CLSID` =  *[类 guid]*
 
  *[metric] = [metric value]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[调试引擎 guid]*
+ `0` =  *[调试引擎 guid]*
 
- `1` = *[调试引擎 guid]*
+ `1` =  *[调试引擎 guid]*
 
 |占位符|描述|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[调试引擎 guid]*|此表达式计算器适用于调试引擎的 GUID|
 
 ### <a name="expression-evaluator-extensions"></a>表达式计算器扩展
- 以下是在注册表中的表达式计算器扩展指标的组织。 `EEExtensions` 是计算器扩展的表达式的度量值的类型名称，对应于 *[指标类型]*。
+ 以下是在注册表中的表达式计算器扩展指标的组织。 `EEExtensions` 是计算器扩展的表达式的度量值的类型名称，对应于 *[指标类型]* 。
 
  `EEExtensions`\
 
- *[扩展 guid]*\
+ *[扩展 guid]* \
 
  *[metric] = [metric value]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[扩展 guid]*|表达式计算器扩展的 GUID|
 
 ### <a name="exceptions"></a>Exceptions
- 以下是在注册表中的异常度量值的组织。 `Exception` 是异常的指标类型名称，对应于 *[指标类型]*。
+ 以下是在注册表中的异常度量值的组织。 `Exception` 是异常的指标类型名称，对应于 *[指标类型]* 。
 
  `Exception`\
 
- *[调试引擎 guid]*\
+ *[调试引擎 guid]* \
 
- *[异常类型]*\
+ *[异常类型]* \
 
- *[exception]*\
-
- *[metric] = [metric value]*
+ *[exception]* \
 
  *[metric] = [metric value]*
 
- *[exception]*\
+ *[metric] = [metric value]*
+
+ *[exception]* \
 
  *[metric] = [metric value]*
 

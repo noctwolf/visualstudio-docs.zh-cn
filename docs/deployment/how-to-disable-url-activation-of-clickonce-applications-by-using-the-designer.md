@@ -1,5 +1,5 @@
 ---
-title: 如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活 |Microsoft Docs
+title: 禁用 ClickOnce 应用程序使用设计器的 URL 激活
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4da1ba726253891ef7df2ccfde8a667ac11ad8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8296f08c29b3259c19393a860ee34f6c3f05a42
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928588"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263280"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>如何：使用设计器禁用 ClickOnce 应用程序的 URL 激活
 通常情况下，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从 Web 服务器安装后立即应用程序会自动启动。 出于安全原因，您可以决定禁用此行为，并告知用户启动应用程序从**启动**菜单相反。 以下过程描述了如何禁用 URL 激活。
@@ -38,7 +38,7 @@ ms.locfileid: "62928588"
 
 2. 上**属性**页上，单击**发布**选项卡。
 
-3. 单击“选项” 。
+3. 单击“选项”  。
 
 4. 单击**清单**。
 

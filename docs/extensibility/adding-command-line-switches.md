@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891832"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352339"
 ---
 # <a name="add-command-line-switches"></a>添加命令行开关
 可以添加适用于你的 VSPackage 的命令行开关时*devenv.exe*执行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明的开关和其属性的名称。 在此示例中，MySwitch 的交换机添加为子类名为 VSPackage **AddCommandSwitchPackage**不带任何参数且会自动加载 VSPackage。
@@ -34,7 +34,7 @@ ms.locfileid: "62891832"
 | 参数 | 描述|
 | 自变量 | 开关的参数数目。 可以是"*"，或自变量的列表。 |
 | DemandLoad | 如果此值设置为 1，否则设置为 0，则会自动加载 VSPackage。 |
-| HelpString | 帮助字符串或资源 ID 的字符串以显示与**devenv /？**。 |
+| HelpString | 帮助字符串或资源 ID 的字符串以显示与**devenv /？** 。 |
 | 名称 | 开关。 |
 | PackageGuid | 包的 GUID。 |
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9bad62d071fd7c2ef6e0a7c1f5500a5fccb18e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312264"
 ---
 # <a name="custom-tools"></a>自定义工具
 *自定义工具*可将工具与项目中的项相关联，并运行该工具，每次保存该文件。 某些自定义工具，有时称为*单个文件生成器*，通常用于实现转换器生成代码中的数据，反之亦然。 例如，单个文件生成器创建[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]并[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]源代码共 *.settings*并 *.resx*文件。 生成的源代码提供强类型化中的数据的访问权限 *.settings*并 *.resx*文件。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]项目类型支持自定义工具;[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目类型不这样做。 你自己的项目类型还可以支持自定义工具。

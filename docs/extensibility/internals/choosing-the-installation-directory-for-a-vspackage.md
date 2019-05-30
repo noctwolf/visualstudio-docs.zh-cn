@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862041"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309112"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>为 VSPackage 选择安装目录
 VSPackage 和及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是否托管或非托管，通过并行版本控制方案和用户的选择。
@@ -55,7 +55,7 @@ VSPackage 和及其支持文件必须位于用户的文件系统上。 位置取
 
 4. 使用默认子语言的系统默认 LCID。
 
-5. 美国英语 (*。 \1033*或 *。 \0x409*)。
+5. 美国英语 ( *。 \1033*或 *。 \0x409*)。
 
 如果 VSPackage DLL 包含资源和**SatelliteDll\DllName**注册表项指向了它，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]尝试按上述顺序加载它们。
 

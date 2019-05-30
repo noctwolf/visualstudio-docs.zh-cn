@@ -1,5 +1,5 @@
 ---
-title: 演练：通过 WPF 和实体框架创建 WCF 数据服务
+title: 使用 WPF 和实体框架创建 WCF 数据服务
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 368d92010da062f2883d63161824e528d5d22c84
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566043"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261074"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：通过 WPF 和实体框架创建 WCF 数据服务
 本演练演示如何创建一个承载于 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序中的简单 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，然后从 Windows 窗体应用程序中访问它。
@@ -66,27 +66,27 @@ ms.locfileid: "62566043"
 
 ### <a name="to-create-the-web-project"></a>创建 Web 项目
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
-2. 在“新建项目”对话框中，展开“Visual Basic”或展开“Visual C#”和“Web”节点，然后选择“ASP.NET Web 应用程序”模板。
+2. 在“新建项目”对话框中，展开“Visual Basic”或展开“Visual C#”和“Web”节点，然后选择“ASP.NET Web 应用程序”模板      。
 
-3. 在“名称”文本框中，输入“NorthwindWeb”，然后选择“确定”按钮。
+3. 在“名称”文本框中，输入“NorthwindWeb”，然后选择“确定”按钮    。
 
-4. 在“新建 ASP.NET 项目”对话框的“选择模板”列表中，选择“空”，然后选择“确定”按钮。
+4. 在“新建 ASP.NET 项目”对话框的“选择模板”列表中，选择“空”，然后选择“确定”按钮     。
 
 在下一步，您将创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
 
 ### <a name="to-create-the-entity-data-model"></a>创建实体数据模型
 
-1. 在菜单栏上，依次选择“项目” > “添加新项”。
+1. 在菜单栏上，依次选择“项目”   > “添加新项”  。
 
-2. 在“添加新项”对话框中，选择“数据”节点，然后选择“ADO.NET 实体数据模型”项。
+2. 在“添加新项”对话框中，选择“数据”节点，然后选择“ADO.NET 实体数据模型”项    。
 
 3. 在中**名称**文字框中，输入`NorthwindModel`，然后选择**添加**按钮。
 
      此时将显示实体数据模型向导。
 
-4. 在实体数据模型向导的“选择模型内容”页上，选择“数据库的 EF 设计器”项，然后选择“下一步”按钮。
+4. 在实体数据模型向导的“选择模型内容”页上，选择“数据库的 EF 设计器”项，然后选择“下一步”按钮    。
 
 5. 在 **“选择你的数据连接”** 页上执行下列步骤之一：
 
@@ -94,19 +94,19 @@ ms.locfileid: "62566043"
 
          或
 
-    - 选择“新建连接”按钮来配置新数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+    - 选择“新建连接”按钮来配置新数据连接  。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
-6. 如果数据库需要密码，请选择“是，在连接字符串中包含敏感数据”选项按钮，然后选择“下一步”按钮。
+6. 如果数据库需要密码，请选择“是，在连接字符串中包含敏感数据”选项按钮，然后选择“下一步”按钮   。
 
     > [!NOTE]
-    > 如果显示一个对话框，请选择“是”，将该文件保存到项目中。
+    > 如果显示一个对话框，请选择“是”，将该文件保存到项目中  。
 
-7. 在“选择版本”页上，选择“Entity Framework 5.0”选项按钮，然后选择“下一步”按钮。
+7. 在“选择版本”页上，选择“Entity Framework 5.0”选项按钮，然后选择“下一步”按钮    。
 
     > [!NOTE]
     > 为了使用具有 WCF 服务的 Entity Framework 6 的最新版本，需要安装 WCF Data Services Entity Framework Provider NuGet 包。 请参阅[使用 WCF Data Services 5.6.0 与 Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
 
-8. 在“选择数据库对象”页上，展开“表”节点、选中“客户”复选框，然后选择“完成”按钮。
+8. 在“选择数据库对象”页上，展开“表”节点、选中“客户”复选框，然后选择“完成”按钮     。
 
      实体模型关系图显示，和一个*NorthwindModel.edmx*文件添加到你的项目。
 
@@ -114,15 +114,15 @@ ms.locfileid: "62566043"
 
 ### <a name="to-create-the-data-service"></a>创建数据服务
 
-1. 在菜单栏上，依次选择“项目” > “添加新项”。
+1. 在菜单栏上，依次选择“项目”   > “添加新项”  。
 
-2. 在“添加新项”对话框中，选择“Web”节点，然后选择“WCF Data Service 5.6”项。
+2. 在“添加新项”对话框中，选择“Web”节点，然后选择“WCF Data Service 5.6”项    。
 
 3. 在中**名称**文字框中，输入`NorthwindCustomers`，然后选择**添加**按钮。
 
-     NorthwindCustomers.svc 文件将显示在代码编辑器中。
+     NorthwindCustomers.svc 文件将显示在代码编辑器中   。
 
-4. 在“代码编辑器”中，定位到第一个 `TODO:` 注释并使用以下内容替换该代码：
+4. 在“代码编辑器”中，定位到第一个 `TODO:` 注释并使用以下内容替换该代码  ：
 
      [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
@@ -156,11 +156,11 @@ ms.locfileid: "62566043"
 
 2. 在中**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，选择**Windows**节点，然后选择**Windows 窗体应用程序**。
 
-3. 在“名称”文本框中，输入 `NorthwindClient`，然后选择“确定”按钮。
+3. 在“名称”  文本框中，输入 `NorthwindClient`，然后选择“确定”  按钮。
 
-4. 在“解决方案资源管理器”中，选择“NorthwindClient”项目节点。
+4. 在“解决方案资源管理器”中，选择“NorthwindClient”项目节点   。
 
-5. 在菜单栏上，选择“项目”和“设为启动项目”。
+5. 在菜单栏上，选择“项目”和“设为启动项目”   。
 
 在下一步，添加服务引用到[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]web 项目中。
 
@@ -168,11 +168,11 @@ ms.locfileid: "62566043"
 
 1. 在菜单栏上依次选择**项目** > **添加服务引用**。
 
-2. 在“添加服务引用”对话框中，选择“发现”按钮。
+2. 在“添加服务引用”对话框中，选择“发现”按钮   。
 
-     NorthwindCustomers 服务的 URL 将显示在“地址”字段中。
+     NorthwindCustomers 服务的 URL 将显示在“地址”字段中  。
 
-3. 选择“确定”按钮以添加服务引用。
+3. 选择“确定”按钮以添加服务引用  。
 
 在下一步，配置要启用数据绑定到的服务的数据源。
 
@@ -180,27 +180,27 @@ ms.locfileid: "62566043"
 
 1. 在菜单栏上依次选择**视图** > **其他 Windows** > **数据源**。
 
-   “数据源”窗口随即打开。
+   “数据源”窗口随即打开  。
 
-2. 在“数据源”窗口中，选择“添加新数据源”按钮。
+2. 在“数据源”窗口中，选择“添加新数据源”按钮   。
 
-3. 在“数据源配置”向导的“选择数据源类型”页上，选择“对象”，然后选择“下一步”按钮。
+3. 在“数据源配置”向导的“选择数据源类型”页上，选择“对象”，然后选择“下一步”按钮     。
 
-4. 在“选择数据对象”页上，展开“NorthwindClient”节点，然后展开“NorthwindClient.ServiceReference1”节点。
+4. 在“选择数据对象”页上，展开“NorthwindClient”节点，然后展开“NorthwindClient.ServiceReference1”节点    。
 
-5. 选中“Customer”复选框，然后选择“完成”按钮。
+5. 选中“Customer”复选框，然后选择“完成”按钮   。
 
 在下一步中，您创建在用户界面中显示来自服务的数据。
 
 ### <a name="to-create-the-user-interface"></a>创建用户界面
 
-1. 在“数据源”窗口中，打开“Customers”节点的快捷菜单，然后选择“复制”。
+1. 在“数据源”窗口中，打开“Customers”节点的快捷菜单，然后选择“复制”    。
 
-2. 在“Form1.vb”或“Form1.cs”窗体设计器中，打开快捷菜单并选择“粘贴”。
+2. 在“Form1.vb”或“Form1.cs”窗体设计器中，打开快捷菜单并选择“粘贴”    。
 
     一个 <xref:System.Windows.Forms.DataGridView> 控件、一个 <xref:System.Windows.Forms.BindingSource> 组件以及一个 <xref:System.Windows.Forms.BindingNavigator> 组件将添加到窗体中。
 
-3. 选择“CustomersDataGridView”控件，然后在“属性”窗口将“Dock”属性设为“填充”。
+3. 选择“CustomersDataGridView”控件，然后在“属性”窗口将“Dock”属性设为“填充”     。
 
 4. 在中**解决方案资源管理器**，打开快捷菜单**Form1**节点，然后选择**查看代码**以打开代码编辑器中，并添加以下`Imports`或`Using`文件顶部的语句：
 
@@ -230,7 +230,7 @@ ms.locfileid: "62566043"
    }
    ```
 
-6. 在“解决方案资源管理器”中，打开“NorthwindCustomers.svc”文件的快捷菜单，然后选择“在浏览器中查看”。 此时将打开 Internet Explorer 并显示服务的 XML 架构。
+6. 在“解决方案资源管理器”中，打开“NorthwindCustomers.svc”文件的快捷菜单，然后选择“在浏览器中查看”    。 此时将打开 Internet Explorer 并显示服务的 XML 架构。
 
 7. 从 Internet Explorer 地址栏中复制 URL。
 
@@ -247,9 +247,9 @@ ms.locfileid: "62566043"
 
 ### <a name="to-add-filtering-by-city"></a>添加根据城市进行筛选的功能
 
-1. 在“解决方案资源管理器”中，打开“Form1.vb”或“Form1.cs”节点的快捷菜单，然后选择“打开”。
+1. 在“解决方案资源管理器”中，打开“Form1.vb”或“Form1.cs”节点的快捷菜单，然后选择“打开”     。
 
-2. 将“工具箱”中的 <xref:System.Windows.Forms.TextBox> 控件和 <xref:System.Windows.Forms.Button> 控件添加到窗体。
+2. 将“工具箱”中的 <xref:System.Windows.Forms.TextBox> 控件和 <xref:System.Windows.Forms.Button> 控件添加到窗体  。
 
 3. 打开快捷菜单<xref:System.Windows.Forms.Button>控件中，选择**查看代码**，然后添加以下代码中的`Button1_Click`事件处理程序：
 
@@ -284,7 +284,7 @@ ms.locfileid: "62566043"
 
 5. 在菜单栏上依次选择**调试** > **开始调试**运行该应用程序。
 
-6. 在文本框中，输入“London”，然后选择该按钮。 将仅显示来自 London 的客户。
+6. 在文本框中，输入“London”，然后选择该按钮  。 将仅显示来自 London 的客户。
 
 ## <a name="see-also"></a>请参阅
 

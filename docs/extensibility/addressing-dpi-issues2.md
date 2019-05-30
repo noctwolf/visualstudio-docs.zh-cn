@@ -3,17 +3,17 @@ title: 解决 DPI 问题 2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2b440ff34a5c1f2c60b8874ba56266b636afde3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892029"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352263"
 ---
 # <a name="address-dpi-issues"></a>解决 DPI 问题
 越来越多的设备随"高分辨率"屏幕。 这些屏幕通常有超过 200 个像素 / 英寸 (ppi)。 使用这些计算机上的应用程序将需要纵向扩展以满足需要查看设备的正常查看距离处的内容的内容。 截至 2014 年的高密度显示的主要目标是移动计算设备 （平板电脑、 蛤便携式计算机和手机）。

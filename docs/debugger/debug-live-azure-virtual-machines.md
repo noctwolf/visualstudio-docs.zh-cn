@@ -1,5 +1,5 @@
 ---
-title: 调试实时 ASP.NET Azure 虚拟机和 Azure 虚拟机规模集
+title: 调试实时 ASP.NET Azure 虚拟机和规模集
 description: 了解如何使用 Snapshot Debugger 设置快照点并查看快照。
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399425"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263363"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 在 Azure 虚拟机和 Azure 虚拟机规模集上调试实时 ASP.NET 应用
 
@@ -35,7 +35,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="prerequisites"></a>系统必备
 
-* 快照调试程序的 Azure 虚拟机 (VM) 和 Azure 虚拟机规模集是仅适用于 Visual Studio 2019 Enterprise 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
+* 快照调试程序的 Azure 虚拟机 (VM) 和 Azure 虚拟机规模集是仅适用于 Visual Studio 2019 Enterprise 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它    。）
 
     如果尚未安装，安装[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
@@ -50,17 +50,17 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
     > [!IMPORTANT]
     > 您需要打开到快照调试*相同版本的源代码*，它发布到 Azure 虚拟 Machine\Virtual 机规模集服务。
 
-1. 选择“调试”>“附加 Snapshot Debugger...”。选择 Azure 虚拟 Machine\Virtual 机规模集部署到你的 web 应用和 Azure 存储帐户，然后依次**附加**。
+1. 选择“调试”>“附加 Snapshot Debugger...”  。选择 Azure 虚拟 Machine\Virtual 机规模集部署到你的 web 应用和 Azure 存储帐户，然后依次**附加**。
 
       ![从“调试”菜单启动 Snapshot Debugger](../debugger/media/snapshot-debug-menu-attach.png)
 
       ![选择 Azure 资源](../debugger/media/snapshot-select-azure-resource-vm.png) 
 
     > [!IMPORTANT]
-    > 第一次为 VM 选择“附加 Snapshot Debugger”时，IIS 将自动重启。
+    > 第一次为 VM 选择“附加 Snapshot Debugger”  时，IIS 将自动重启。
     > 选择第一次**附加 Snapshot Debugger**虚拟机规模集，需要手动升级每个虚拟机规模集实例。
 
-    “模块”的元数据最初不会被激活，导航到 Web 应用，“开始收集”按钮将会激活。 Visual Studio 现在处于快照调试模式下。
+    “模块”  的元数据最初不会被激活，导航到 Web 应用，“开始收集”  按钮将会激活。 Visual Studio 现在处于快照调试模式下。
 
    ![快照调试模式](../debugger/media/snapshot-message.png)
 
@@ -78,7 +78,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![设置快照点](../debugger/media/snapshot-set-snappoint.png)
 
-1. 单击“开始收集”以打开快照点。
+1. 单击“开始收集”以打开快照点  。
 
    ![开启快照点](../debugger/media/snapshot-start-collection.png)
 
@@ -91,7 +91,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="inspect-snapshot-data"></a>检查快照数据
 
-1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”。
+1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”  。
 
    ![打开快照点](../debugger/media/snapshot-diagsession-window.png)
 
@@ -99,11 +99,11 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![检查快照数据](../debugger/media/snapshot-inspect-data.png)
 
-   在此视图中，可通过将鼠标悬停在变量上来查看数据提示；使用“局部变量”、“监视”和“调用堆栈”窗口；以及计算表达式。
+   在此视图中，可通过将鼠标悬停在变量上来查看数据提示；使用“局部变量”、“监视”和“调用堆栈”窗口；以及计算表达式    。
 
-    网站本身仍然是实时的，最终用户不会受到影响。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点。
+    网站本身仍然是实时的，最终用户不会受到影响。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点  。
 
-还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动。
+还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动  。
 
 **需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
 
@@ -113,7 +113,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 #### <a name="to-create-a-conditional-snappoint"></a>创建条件性快照点
 
-1. 右键单击快照点图标（空心球）并选择“设置”。
+1. 右键单击快照点图标（空心球）并选择“设置”  。
 
    ![选择“设置”](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -129,19 +129,19 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 #### <a name="to-create-a-logpoint"></a>创建记录点
 
-1. 右键单击快照点图标（蓝色六边形），然后选择“设置”。
+1. 右键单击快照点图标（蓝色六边形），然后选择“设置”  。
 
-1. 在“快照点设置”窗口中，选择“操作”。
+1. 在“快照点设置”窗口中，选择“操作”  。
 
     ![创建记录点](../debugger/media/snapshot-logpoint.png)
 
-1. 在“消息”字段中，可以输入想要记录的新日志消息。 还可以将日志消息中的变量放在大括号中，从而计算它们的值。
+1. 在“消息”  字段中，可以输入想要记录的新日志消息。 还可以将日志消息中的变量放在大括号中，从而计算它们的值。
 
-    如果选择“发送到输出窗口”，则在点击记录点时，消息将出现在“诊断工具”窗口中。
+    如果选择“发送到输出窗口”  ，则在点击记录点时，消息将出现在“诊断工具”窗口中。
 
     ![“诊断工具”窗口中的记录点数据](../debugger/media/snapshot-logpoint-output.png)
 
-    如果选择“发送到应用程序日志”，则在点击记录点时，消息会出现在可以看到来自 `System.Diagnostics.Trace`（或 .NET Core 中的 `ILogger`）的消息的任何位置，例如 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果选择“发送到应用程序日志”  ，则在点击记录点时，消息会出现在可以看到来自 `System.Diagnostics.Trace`（或 .NET Core 中的 `ILogger`）的消息的任何位置，例如 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5b35e52effe9a261eeb159ca9460e4351ae5f658
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417162"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342503"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>获取对文本着色的字体和颜色信息
 呈现或以的文本显示在用户界面 (UI) 元素中的过程取决于项目、 其技术和开发人员首选项的类型。 **字体和颜色**属性页存储的设置。

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - ProvideDefaultName element [Visual Studio project templates]
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056403fd0f1c90f53105c84f30fc2be2383900bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2a19d6a93b709128e8750b6cea82d067b77db98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433430"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335811"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 元素 （Visual Studio 模板）
 指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统将生成的模板中的默认名称**添加新项**或**新项目**对话框。

@@ -1,5 +1,5 @@
 ---
-title: 您添加到设计器的对象使用与当前使用的设计器不同的数据连接
+title: 添加到设计器的对象使用不同的数据连接
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 332ed2f3-3377-4d51-8e3b-fdb98231978e
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 22307115893407fa4703475e727b1e77355cad57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c85e0c17eeb4cfbd786faac338c8b908c5a7f363
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460558"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260929"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>要添加到设计器中的对象使用不同的数据连接与设计器
 
@@ -32,7 +32,7 @@ ms.locfileid: "65460558"
 
 - 若要继续使用现有连接并添加所选的对象的取消，单击**否**。
 
-   操作被取消。 DataContext.Connection 仍然设置为现有连接。
+   操作被取消。 DataContext.Connection 仍然设置为现有连接  。
 
 ## <a name="see-also"></a>请参阅
 

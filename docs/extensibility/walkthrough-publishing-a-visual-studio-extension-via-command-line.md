@@ -1,5 +1,5 @@
 ---
-title: 演练：发布 Visual Studio 扩展通过命令行 |Microsoft Docs
+title: 发布扩展使用命令行
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: be9585158235dadb6e415e88e42e2d324ba8fcbe
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966261"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261671"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练：发布 Visual Studio 扩展中的通过命令行
 
@@ -218,7 +218,7 @@ This is test extension.
 
 1. 在 Visual Studio 中，开始调试。 若要打开的 Visual Studio 实验实例。
 
-2. 在实验实例中，转到**工具**菜单，然后单击**扩展和更新...**.TestPublish 扩展应显示在中心窗格中，启用。
+2. 在实验实例中，转到**工具**菜单，然后单击**扩展和更新...** .TestPublish 扩展应显示在中心窗格中，启用。
 
 3. 上**工具**菜单中，请确保您看到测试命令。
 
@@ -262,11 +262,11 @@ This is test extension.
 
 现在，发布扩展时，在 Visual Studio 中安装它，然后对其进行测试。
 
-1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新...**.
+1. 在 Visual Studio 中，在**工具**菜单上，单击**扩展和更新...** .
 
 2. 单击**Online** TestPublish 然后搜索。
 
-3. 单击 **“下载”**。 然后将安装计划扩展。
+3. 单击 **“下载”** 。 然后将安装计划扩展。
 
 4. 若要完成安装，请关闭 Visual Studio 的所有实例。
 

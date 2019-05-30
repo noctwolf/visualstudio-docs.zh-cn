@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406745"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263234"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全性和部署
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual 信息C++应用程序，请参阅[视觉对象的 ClickOnce 部署C++应用程序](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual 信息C++应用程序，请参阅[视觉对象的 ClickOnce 部署C++应用程序](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署克服了部署中的三个主要问题：
 
@@ -38,7 +38,7 @@ ms.locfileid: "63406745"
   在过去，这些问题有时会导致开发人员可以决定创建 Web 应用程序而不是基于 Windows 的应用程序，会牺牲的安装便利的丰富用户界面。 通过使用应用程序使用部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，您可以充分利用这两种技术。
 
 ## <a name="what-is-a-clickonce-application"></a>什么是 ClickOnce 应用程序？
- 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序是任何 Windows Presentation Foundation (*.xbap*)，Windows 窗体 (*.exe*)，控制台应用程序 (*.exe*)，或 Office 解决方案 (*.dll*) 使用发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]技术。 您可以将发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]三种不同方式应用程序： 在网页上，从网络文件共享，或从 cd-rom 介质。 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以安装在最终用户的计算机上和本地运行，即使计算机处于脱机状态，或者它可以在仅限联机使用的模式下运行，而无需最终用户计算机上永久安装任何内容。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
+ 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序是任何 Windows Presentation Foundation ( *.xbap*)，Windows 窗体 ( *.exe*)，控制台应用程序 ( *.exe*)，或 Office 解决方案 ( *.dll*) 使用发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]技术。 您可以将发布[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]三种不同方式应用程序： 在网页上，从网络文件共享，或从 cd-rom 介质。 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以安装在最终用户的计算机上和本地运行，即使计算机处于脱机状态，或者它可以在仅限联机使用的模式下运行，而无需最终用户计算机上永久安装任何内容。 有关详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以自更新应用程序;它们可以检查较新版本可用，并且自动替换所有更新的文件。 开发人员可以指定更新行为；网络管理员也可以控制更新策略，如将更新标记为强制性更新。 更新可以也将回滚到较早版本的最终用户或管理员。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
@@ -83,7 +83,7 @@ ms.locfileid: "63406745"
 > [!NOTE]
 > **发布向导**在 Visual Studio 中可用于执行这些步骤。
 
- 除了部署位置，部署清单还包含应用程序在其中检查更新版本的更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 可以在部署清单中，指定更新行为或其形式可以是通过应用程序的用户界面中的用户选择[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，Publish 属性还可用于将更新设置为强制执行，或用于将应用程序回滚到较早版本。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+ 除了部署位置，部署清单还包含应用程序在其中检查更新版本的更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 可以在部署清单中，指定更新行为或其形式可以是通过应用程序的用户界面中的用户选择[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Api。 此外，Publish 属性还可用于将更新设置为强制执行，或用于将应用程序回滚到较早版本  。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ### <a name="third-party-installers"></a>第三方安装程序
  您可以自定义 ClickOnce 安装程序，以安装第三方组件以及您的应用程序。 必须具有可再发行组件包 （.exe 或.msi 文件），并描述具有一个非特定于语言的产品清单和特定于语言的包清单包。 有关详细信息，请参阅[创建引导程序包](../deployment/creating-bootstrapper-packages.md)。

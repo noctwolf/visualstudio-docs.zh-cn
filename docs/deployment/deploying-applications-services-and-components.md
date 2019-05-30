@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845912"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261976"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>先查看 Visual Studio 中的部署
 
@@ -44,7 +44,7 @@ ms.locfileid: "65845912"
 
     ![选择发布](../deployment/media/quickstart-publish.png)
 
-- Windows 桌面 可以使用 ClickOnce 部署将 Windows 桌面应用程序发布到文件夹。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[使用 ClickOnce 部署桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)（C# 和 Visual Basic）。 对于 C++/CLR，请参阅[使用 ClickOnce 部署本机应用](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，或者对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- Windows 桌面 可以使用 ClickOnce 部署将 Windows 桌面应用程序发布到文件夹。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[使用 ClickOnce 部署桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)（C# 和 Visual Basic）。 对于 C++/CLR，请参阅[使用 ClickOnce 部署本机应用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
@@ -83,7 +83,7 @@ ms.locfileid: "65845912"
 
     也可以采用多种不同的方式部署 ASP.NET 应用程序和服务。 有关详细信息，请参阅[部署 ASP.NET Web 应用程序和服务](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Windows 桌面** 可以使用 ClickOnce 部署将 Windows 桌面应用程序发布到 Web 服务器或网络文件共享。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[使用 ClickOnce 部署桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)（C# 和 Visual Basic）。 对于 C++/CLR，请参阅[使用 ClickOnce 部署本机应用](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)，或者对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+- **Windows 桌面** 可以使用 ClickOnce 部署将 Windows 桌面应用程序发布到 Web 服务器或网络文件共享。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[使用 ClickOnce 部署桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)（C# 和 Visual Basic）。 对于 C++/CLR，请参阅[使用 ClickOnce 部署本机应用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ## <a name="publish-to-microsoft-store"></a>发布到 Microsoft Store
 

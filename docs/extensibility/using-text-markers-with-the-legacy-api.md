@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434192"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353489"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
+# <a name="using-text-markers-with-the-legacy-api"></a>对旧版 API 使用文本标记
 文本标记是区域的文本的浮动的范围内的缓冲区中，可能会影响显示和文本的行为。 标记包括断点、 书签、 波浪形下划线和只读区域。 文本标记为基本上不同于语法颜色设置。 语法颜色设置是通信与文本的区域关联的语言语法的快速方法。 Windows 重新绘制屏幕时速度很重要时通常所请求语法颜色设置。 语法颜色设置更改文本的颜色。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"并将应用特殊行为和颜色设置。
 
  由于与文本标记相关的性能开销，而不要创建多个标记的文本缓冲区。 每个标记是用户编辑缓冲区内容每次更新。

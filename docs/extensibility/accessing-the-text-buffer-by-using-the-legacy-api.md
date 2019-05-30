@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dc331e06d1e82928f5c608d5b009258beb48dcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 661bf39e82fef5c040861bc9386dcb7f897d25cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844009"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313631"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>通过使用传统的 API 访问的文本缓冲区
 文本是负责管理文本流和文件暂留。 尽管缓冲区可以读取或写入其他格式与缓冲区的所有普通通信执行通过使用 Unicode。 在传统的 Api 中的文本缓冲区可以使用一个-或二维坐标系统以确定在缓冲区中的字符位置。

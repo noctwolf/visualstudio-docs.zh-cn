@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686285"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318358"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 指定要检索有关调试引用对象的信息。
@@ -53,24 +56,33 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>成员
-DEBUGREF_INFO_NAME 初始化/使用`bstrName`结构中的字段。
+## <a name="fields"></a>字段
+`DEBUGREF_INFO_NAME`\
+初始化/使用`bstrName`结构中的字段。
 
-DEBUGREF_INFO_TYPE 初始化/使用`bstrType`结构中的字段。
+`DEBUGREF_INFO_TYPE`\
+初始化/使用`bstrType`结构中的字段。
 
-DEBUGREF_INFO_VALUE 初始化/使用`bstrValue`结构中的字段。
+`DEBUGREF_INFO_VALUE`\
+初始化/使用`bstrValue`结构中的字段。
 
-DEBUGREF_INFO_ATTRIB 初始化/使用`dwAttrib`结构中的字段。
+`DEBUGREF_INFO_ATTRIB`\
+初始化/使用`dwAttrib`结构中的字段。
 
-DEBUGREF_INFO_REFTYPE 初始化/使用`dwRefType`结构中的字段。
+`DEBUGREF_INFO_REFTYPE`\
+初始化/使用`dwRefType`结构中的字段。
 
-DEBUGREF_INFO_REF 初始化/使用`pReference`结构中的字段。
+`DEBUGREF_INFO_REF`\
+初始化/使用`pReference`结构中的字段。
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND 值字段应包含自动扩展值中，如果可用，此类型的对象。
+`DEBUGREF_INFO_VALUE_AUTOEXPAND`\
+值字段应包含自动扩展值中，如果可用，此类型的对象。
 
-DEBUGREF_INFO_NONE 指示未设置任何标志。
+`DEBUGREF_INFO_NONE`\
+指示未设置任何标志。
 
-DEBUGREF_INFO_ALL 指示标志的掩码。
+`DEBUGREF_INFO_ALL`\
+表示的标志的掩码。
 
 ## <a name="remarks"></a>备注
 这些标志传递给[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)并[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法，以指示的哪些字段[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构是进行初始化。

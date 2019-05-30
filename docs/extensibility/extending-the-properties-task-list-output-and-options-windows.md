@@ -1,5 +1,5 @@
 ---
-title: 扩展属性、 任务列表、 输出和选项 Windows |Microsoft Docs
+title: 扩展属性，任务列表中，输出中，选项窗口
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5186d7c16f89201b43ebabc49215c0afff4bbfd4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417226"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337119"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>扩展属性、 任务列表、 输出和选项 windows
 您可以访问 Visual Studio 中的任何工具窗口。 本演练演示如何将工具窗口有关的信息集成到一个新**选项**页和上的新设置**属性**页上，以及如何将写入到**任务列表**并**输出**windows。

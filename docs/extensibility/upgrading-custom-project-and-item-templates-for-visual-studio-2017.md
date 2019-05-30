@@ -1,5 +1,6 @@
 ---
-title: 升级自定义项目和项模板的 Visual Studio 2017 |Microsoft Docs
+title: 升级 Visual Studio 2017 的自定义项目和项模板
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434204"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261803"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
 
@@ -26,15 +27,15 @@ ms.locfileid: "63434204"
 
 ## <a name="template-scanning"></a>扫描的模板
 
-在以前版本的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**扫描以查找项目和项模板的本地磁盘。 从 Visual Studio 2017 中，扫描仅对于用户级别位置的执行。 默认用户级位置是 **%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\**。 此位置用于生成的模板**项目** > **导出模板...** 命令时，如果**会自动将模板导入 Visual Studio**在向导中选择选项。
+在以前版本的 Visual Studio 中， **devenv /setup**或**devenv /installvstemplates**扫描以查找项目和项模板的本地磁盘。 从 Visual Studio 2017 中，扫描仅对于用户级别位置的执行。 默认用户级位置是 **%USERPROFILE%\Documents\\< Visual Studio 版本\>\Templates\\** 。 此位置用于生成的模板**项目** > **导出模板...** 命令时，如果**会自动将模板导入 Visual Studio**在向导中选择选项。
 
 对于其他 （非用户） 的位置，您必须包含指定的位置和模板的其他特征的 manifest(.vstman) 文件。 适用于模板的.vstemplate 文件以及生成.vstman 文件。 如果您安装使用.vsix 扩展，可以通过重新编译 Visual Studio 2017 中的扩展来实现此目的。 但如果您使用一个.msi，则需要手动进行的更改。 您需要执行的操作进行这些更改的列表，请参阅**对扩展安装与升级。MSI**稍后在此页。
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用项目或项模板更新 VSIX 扩展
 
-1. 在 Visual Studio 2017 中打开的解决方案。 你将需要升级的代码。 单击 **“确定”**。
+1. 在 Visual Studio 2017 中打开的解决方案。 你将需要升级的代码。 单击 **“确定”** 。
 
-2. 在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件，然后选择**安装目标**选项卡。如果**版本范围**字段是 **[14.0]**，单击**编辑**并将其更改为包括 Visual Studio 2017。 例如，您可以将其设置为 **[14.0,15.0]** 到 Visual Studio 2015 或 Visual Studio 2017，或安装扩展 **[15.0]** 以将其安装到只需使用 Visual Studio 2017。
+2. 在升级完成后，你可能需要更改安装目标版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件，然后选择**安装目标**选项卡。如果**版本范围**字段是 **[14.0]** ，单击**编辑**并将其更改为包括 Visual Studio 2017。 例如，您可以将其设置为 **[14.0,15.0]** 到 Visual Studio 2015 或 Visual Studio 2017，或安装扩展 **[15.0]** 以将其安装到只需使用 Visual Studio 2017。
 
 3. 重新编译代码。
 

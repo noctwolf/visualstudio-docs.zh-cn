@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序 |Microsoft Docs
+title: 使用 ClickOnce 部署 multitarget 应用
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406711"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263200"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可以在多个版本 .NET Framework 上运行的应用程序
 可以部署应用程序面向.NET Framework 的多个版本的使用 ClickOnce 部署技术。 这将要求您生成并更新应用程序和部署清单。

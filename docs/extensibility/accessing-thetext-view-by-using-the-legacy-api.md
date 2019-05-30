@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text view
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a52ba7fa7e57e63f13cfe502a46d54071ee82591
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892146"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313665"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>通过使用传统的 API 访问文本视图
 文本视图是文本的一个演示文稿的文本缓冲区中存储。 通过使用传统的 API，如以下部分中所示，可以访问在文本视图。

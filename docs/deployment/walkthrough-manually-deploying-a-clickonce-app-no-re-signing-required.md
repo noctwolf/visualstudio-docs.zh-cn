@@ -1,5 +1,5 @@
 ---
-title: 演练：手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息 |Microsoft Docs
+title: 手动部署 ClickOnce 应用程序保留的品牌
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405842"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263428"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>演练：手动部署 ClickOnce 应用程序不需要重新签名并且保留署名信息
 当你创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序并将它提供给客户进行发布和部署信息，通常客户必须更新部署清单并对其进行重新签名。 .NET Framework 3.5 时，仍是在大多数情况下的首选的方法，使您能够创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以由其客户部署而无需重新生成新的部署清单的部署。 有关详细信息，请参阅[无需重新签名的测试和生产服务器部署 ClickOnce 应用程序](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
@@ -127,7 +127,7 @@ ms.locfileid: "63405842"
 
 13. 选择**文件**，**保存**从菜单中，并保存应用程序清单。 系统将提示您为应用程序清单签名时将其保存。
 
-14. 如果必须将证书作为文件系统上的文件存储，使用**作为证书文件签名**选项，然后选择该证书从文件系统使用的省略号 (**...**) 按钮。
+14. 如果必须将证书作为文件系统上的文件存储，使用**作为证书文件签名**选项，然后选择该证书从文件系统使用的省略号 ( **...** ) 按钮。
 
      或
 

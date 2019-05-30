@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19ca32a35f8ade3d3e444dd312a5ac71bfcd0a8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 259273eee51c74eb7cb5ca4534db9bc575fd1758
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861320"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345489"
 ---
 # <a name="create-a-source-control-vspackage"></a>创建源代码管理 VSPackage
 本文档包括指向与集成的源代码管理包的体系结构概述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，定义要实现的接口和服务将使用的 API 和示例演示一个简单的源控制包实现。

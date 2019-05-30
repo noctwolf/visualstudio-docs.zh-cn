@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - monitor global settings
 - editors [Visual Studio SDK], legacy - text manager
 ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f57ffcd4cb6a9765b61d288220cae69410c5f83f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 494e61c7239eb2caacd3facdddbe2cd26b3d0a73
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432028"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336983"
 ---
 # <a name="use-the-text-manager-to-monitor-global-settings"></a>使用文本管理器来监视全局设置
 如果你实现核心编辑器，您必须监视到全局设置，所做的更改，因为这些更改可能会影响你的编辑器实例。 可以通过侦听由文本管理器引发的事件跟踪所做的更改。 例如，核心编辑器，如其文档数据对象中指定的外观或行为的一个组件的全局首选项时文本管理器存储此信息，并将其传递给所有受影响的客户端。

@@ -1,5 +1,5 @@
 ---
-title: 如何：使用代码分析签入策略强制实现可维护的代码
+title: 使用代码分析签入策略
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0924d3c7b6f39e4ec026a77ee8e0418361e311ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815811"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260925"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：强制执行可维护的代码使用代码分析签入策略
 
@@ -55,7 +55,7 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 
      此外，如果你想违反规则时阻止成功生成，则选择**将警告视为错误**规则说明旁边的复选框。
 
-3. 单击 **“确定”**。 新签入策略现在适用于未来的签入。
+3. 单击 **“确定”** 。 新签入策略现在适用于未来的签入。
 
 ## <a name="see-also"></a>请参阅
 

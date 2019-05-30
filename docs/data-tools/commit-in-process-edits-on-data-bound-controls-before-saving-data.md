@@ -1,5 +1,5 @@
 ---
-title: 在保存数据前提交数据绑定控件中正在进行的编辑
+title: 提交在保存前的数据绑定控件上的进程内编辑
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +18,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f771fec52024fb7d1e4c000d374f08929d453917
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 129ab5be6264f566de284b2736664c8c0d8c07d7
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567954"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261840"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>在保存数据前提交数据绑定控件中正在进行的编辑
 
 在编辑数据绑定控件中的值时，用户必须导航过当前记录，若要提交到该控件绑定到基础数据源的更新后的值。 当将项从[数据源窗口](add-new-data-sources.md)拖到窗体，则删除的第一项生成的代码插入**保存**按钮单击事件的<xref:System.Windows.Forms.BindingNavigator>。 此代码将调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的<xref:System.Windows.Forms.BindingSource>。 因此，调用<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法生成仅对第一个<xref:System.Windows.Forms.BindingSource>，添加到窗体。
 
-<xref:System.Windows.Forms.BindingSource.EndEdit%2A> 调用将提交当前正在编辑的任何数据绑定控件中的所有更改。 因此，如果数据绑定控件仍具有焦点，则单击“保存”按钮后，会先提交该控件中所有挂起的编辑，然后再执行真正的保存（`TableAdapterManager.UpdateAll` 方法）。
+<xref:System.Windows.Forms.BindingSource.EndEdit%2A> 调用将提交当前正在编辑的任何数据绑定控件中的所有更改。 因此，如果数据绑定控件仍具有焦点，则单击“保存”按钮后，会先提交该控件中所有挂起的编辑，然后再执行真正的保存（`TableAdapterManager.UpdateAll` 方法）  。
 
 即使在用户尝试保存数据，而提交所做的更改，保存的一部分，可以配置为自动提交更改，应用程序进程。
 

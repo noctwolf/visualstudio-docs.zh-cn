@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eccfc06cd48513e7a72eb23bbde11188f2e50dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9062b1f3811b0b2b596cfb7fa016bca00143f332
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696886"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261070"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>“Microsoft Visual Studio 调试器（引发异常）”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "65696886"
  允许执行中断调试器。 在中断之前不调用异常处理程序。 如果您从中断继续执行，则将调用异常处理程序。  
   
  **Continue**  
- 允许执行继续，并使异常处理程序有机会处理异常。 此选项对某些类型的异常不可用。 “继续”将允许应用程序继续。 在本机应用程序中，它将导致再次引发异常。 在托管应用程序中，它使程序终止或由主机应用程序处理异常。  
+ 允许执行继续，并使异常处理程序有机会处理异常。 此选项对某些类型的异常不可用。 “继续”将允许应用程序继续  。 在本机应用程序中，它将导致再次引发异常。 在托管应用程序中，它使程序终止或由主机应用程序处理异常。  
   
 > [!NOTE]
-> 在托管代码中出现未经处理的异常后将无法继续。 在托管代码中出现未经处理的异常后选择“继续”将导致调试停止。  
+> 在托管代码中出现未经处理的异常后将无法继续。 在托管代码中出现未经处理的异常后选择“继续”将导致调试停止  。  
   
  **忽略**  
  允许执行继续，但不调用异常处理程序。 由于未调用异常处理程序，这会导致更严重的后果，包括更多的异常和错误。 此选项对某些类型的异常不可用。  
@@ -48,4 +48,4 @@ ms.locfileid: "65696886"
 ## <a name="see-also"></a>请参阅  
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)   
  [异常的最佳做法](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
- [异常处理](https://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)
+ [异常处理](/cpp/extensions/exception-handling-cpp-component-extensions)

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccAddFilesFromSCC function
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94d42e75af69de7e28e27979493d3178ca7d0a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfe58c3eef4b09fccb5cd21b714e5987ae1e08aa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805670"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333964"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函数
 此函数将从源代码管理的文件的列表添加到当前打开的项目。
@@ -78,7 +78,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|项目未打开。|
 |SCC_E_OPNOTPERFORMED|连接到与指定的相同的项目不是 `lpAuxProjPath.`|

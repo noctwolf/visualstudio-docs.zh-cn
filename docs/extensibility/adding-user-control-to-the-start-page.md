@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c662374b8ed0abc7e1c178fb4ff07d5033de8a54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891810"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352294"
 ---
 # <a name="add-user-control-to-the-start-page"></a>将用户控件添加到启动页
 
@@ -143,7 +143,7 @@ ms.locfileid: "62891810"
 
 2. 上**项目**选项卡上，选择**WebUserControl** ，然后单击**确定**。
 
-3. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+3. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
     生成解决方案时向用户控件提供 IntelliSense 的解决方案中其他文件。
 
@@ -179,13 +179,13 @@ ms.locfileid: "62891810"
 
 1. 将你的 XAML 文件，和任何支持的文本文件或标记文件，为复制 *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\* 文件夹。
 
-2. 如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后将其粘贴_Visual Studio 安装文件夹_**\Common7\IDE\PrivateAssemblies\\**。
+2. 如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后将其粘贴_Visual Studio 安装文件夹_ **\Common7\IDE\PrivateAssemblies\\** 。
 
 3. 在 Visual Studio 命令提示符下键入**devenv /rootsuffix Exp**打开 Visual Studio 的实验实例。
 
 4. 在实验实例中，转到**工具** > **选项** > **环境** > **启动**页上，并选择从 XAML 文件**自定义起始页**下拉列表。
 
-5. 在“视图”  菜单上，单击“起始页” 。
+5. 在“视图”  菜单上，单击“起始页”  。
 
     应显示你的自定义起始页。 如果你想要更改的任何文件，必须关闭实验实例，进行更改、 复制和粘贴已更改的文件，以及然后重新打开实验实例，以查看所做的更改。
 
