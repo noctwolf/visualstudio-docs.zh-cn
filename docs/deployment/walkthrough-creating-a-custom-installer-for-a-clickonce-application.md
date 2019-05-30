@@ -1,5 +1,5 @@
 ---
-title: 演练：应用程序创建自定义 ClickOnce 应用程序安装 |Microsoft Docs
+title: 创建自定义安装程序的 ClickOnce 应用程序
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6969490789b4f5747c28f33e91c7d61e97de52e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405744"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263460"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>演练：创建 ClickOnce 应用程序的自定义安装程序
 任何 ClickOnce 应用程序基于 *.exe*可以以无提示方式安装和自定义安装程序更新文件。 自定义安装程序可以在安装期间，包括用于安全性和维护操作的自定义对话框实现自定义用户体验。 若要执行安装操作，自定义安装程序使用<xref:System.Deployment.Application.InPlaceHostingManager>类。 本演练演示如何创建一个自定义安装程序，以无提示方式安装 ClickOnce 应用程序。
