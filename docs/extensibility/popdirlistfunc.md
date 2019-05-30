@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 259ada240d81b87d2d36e12cddcc28efe8d893f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fef3ab783c736fd2573e8d9df1a513e25d37020
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806091"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326137"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 这是一个回调函数提供给[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)函数更新目录和 （可选） 要找出哪些是受源代码管理的文件名称的集合。
@@ -50,7 +50,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>返回值
  IDE 将返回相应的错误代码：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|继续进行处理。|
 |SCC_I_OPERATIONCANCELED|停止处理。|

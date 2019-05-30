@@ -1,5 +1,5 @@
 ---
-title: 演练：下载使用 ClickOnce 部署 API 按需的附属程序集 |Microsoft Docs
+title: 下载使用 ClickOnce 部署 API 按需的附属程序集
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405928"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262973"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：下载使用 ClickOnce 部署 API 按需的附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。
@@ -50,11 +50,11 @@ ms.locfileid: "63405928"
 
 2. 使用生成你的应用程序的附属程序集[Resgen.exe （资源文件生成器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
-3. 使用 MageUI.exe 生成应用程序清单，或打开现有的应用程序清单。 有关此工具的详细信息，请参阅[MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。
+3. 使用 MageUI.exe 生成应用程序清单，或打开现有的应用程序清单  。 有关此工具的详细信息，请参阅[MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。
 
 4. 单击“文件”  选项卡。
 
-5. 单击“省略号”按钮 (...)，然后选择包含所有应用程序的程序集和文件（包括使用 Resgen.exe 生成的附属程序集）的目录。 （附属程序集将包含一个名称，形式为 \<isoCode>\ApplicationName.resources.dll，其中 \<isoCode> 是 RFC 1766 格式的语言标识符。）
+5. 单击“省略号”按钮 (...)，然后选择包含所有应用程序的程序集和文件（包括使用 Resgen.exe 生成的附属程序集）的目录    。 （附属程序集将包含一个名称，形式为 \<isoCode>\ApplicationName.resources.dll，其中 \<isoCode> 是 RFC 1766 格式的语言标识符。  ）
 
 6. 单击“填充”  将文件添加到部署。
 

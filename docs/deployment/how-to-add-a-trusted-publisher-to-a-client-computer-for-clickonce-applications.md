@@ -1,5 +1,5 @@
 ---
-title: 如何：为 ClickOnce 应用程序添加到客户端计算机的受信任的发行者 |Microsoft Docs
+title: 将受信任的发布服务器添加到 ClickOnce 应用程序的客户端计算机
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407616"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263162"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者
 借助受信任的应用程序部署，可以配置客户端计算机，以便 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序在不提示用户的情况下以更高信任级别运行。 下面的过程演示如何使用命令行工具 CertMgr.exe 将发布者的证书添加到客户端计算机上的“受信任的发布者”存储。
@@ -38,7 +38,7 @@ ms.locfileid: "63407616"
 
 1. 从 CA 获取数字证书。
 
-2. 将证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅[导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。
+2. 将证书导出为 Base64 X.509 (.cer) 格式  。 有关证书格式的详细信息，请参阅[导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。
 
 3. 从客户端计算机上的命令提示符处，运行以下命令：
 
@@ -48,7 +48,7 @@ ms.locfileid: "63407616"
 
 1. 从 CA 获取数字证书。
 
-2. 将证书导出为 Base64 X.509 (.cer) 格式。 有关证书格式的详细信息，请参阅 [导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。
+2. 将证书导出为 Base64 X.509 (.cer) 格式  。 有关证书格式的详细信息，请参阅 [导出证书](http://go.microsoft.com/fwlink/?LinkId=164793)。
 
 3. 从客户端计算机上的命令提示符处，运行以下命令：
 

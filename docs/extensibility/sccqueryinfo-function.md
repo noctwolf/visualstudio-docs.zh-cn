@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25a4b9b7d07b74047890c4ba56583cc09a394368
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433170"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353516"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 此函数可获取所选文件受源代码管理的一组的状态信息。
@@ -53,7 +53,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询已成功完成。|
 |SCC_E_ACCESSFAILURE|出现与访问源代码管理系统、 网络或争用问题可能导致问题。 建议重试。|

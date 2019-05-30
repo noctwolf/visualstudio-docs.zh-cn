@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 67dd005eee2f186e92743fa11957ab5fb4db8fb7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 226762ef355a83a2539fa1402a4369398f9f52a4
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687040"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263155"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -694,7 +694,7 @@ some F# code
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 
-2. [Visual Studio 2013 独立 Shell Redist](http://www.microsoft.com/visualstudio/11/downloads#vs-shell)
+2. [Visual Studio 2013 独立 Shell Redist](https://aka.ms/VS2013/IsoShell-LP/all)
 
    **概述**
 
@@ -814,7 +814,7 @@ some F# code
 
 17. 启动 Contoso 应用程序 （从 Contoso 应用根目录开始）。 在 ISO Shell 中，选择**帮助**菜单项，并更改**设置帮助首选项**到**使用本地帮助**。
 
-18. 在外壳中，选择**帮助**菜单项，然后**查看帮助**。 本地帮助查看器应会启动。 选择“管理内容”选项卡。下**安装源**，选择**磁盘**选项按钮。 选择 **...** 按钮，并浏览到包含 Contoso 内容 （复制到上述步骤中的本地文件夹） 的本地文件夹。 选择 HelpContentSetup.msha。 Contoso 现在应显示为一本书中的通讯簿选择。 选择**外**，然后选择**更新**按钮 （底部右下角）。
+18. 在外壳中，选择**帮助**菜单项，然后**查看帮助**。 本地帮助查看器应会启动。 选择“管理内容”  选项卡。下**安装源**，选择**磁盘**选项按钮。 选择 **...** 按钮，并浏览到包含 Contoso 内容 （复制到上述步骤中的本地文件夹） 的本地文件夹。 选择 HelpContentSetup.msha。 Contoso 现在应显示为一本书中的通讯簿选择。 选择**外**，然后选择**更新**按钮 （底部右下角）。
 
 19. Contoso IDE 中，选择 F1 键来测试 F1 功能。
 

@@ -6,23 +6,23 @@ helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 027a7f70240695e64051ef6c16fd3e5469d75900
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340889"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：创建 Atom 馈送专用库
 您可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到的源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。
 
 ## <a name="create-an-atom-feed"></a>创建 Atom 馈送
- 若要创建 Atom 馈送作为专用库，则先收集你的扩展 (*.vsix*文件) 的文件夹。 您可以将它们组织到子文件夹的前提。 您将需要以下资源：
+ 若要创建 Atom 馈送作为专用库，则先收集你的扩展 ( *.vsix*文件) 的文件夹。 您可以将它们组织到子文件夹的前提。 您将需要以下资源：
 
 - *Atom.xml*提供扩展作为专用库的文件。 有关如何连接信息*atom.xml*的文件**扩展和更新**，请参阅[专用库](../extensibility/private-galleries.md)。
 

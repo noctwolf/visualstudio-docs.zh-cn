@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715656"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353037"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 指定断点请求断点的位置类型。
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>成员
-BPLT_NONE 指定任何断点位置。
+## <a name="fields"></a>字段
+`BPLT_NONE`\
+指定没有断点位置。
 
-BPLT_FILE_LINE 指定为文件行断点的位置类型。
+`BPLT_FILE_LINE`\
+指定为文件行断点的位置类型。
 
-BPLT_FUNC_OFFSET 函数偏移量指定断点的位置类型。
+`BPLT_FUNC_OFFSET`\
+指定断点的位置类型作为函数偏移量。
 
-BPLT_CONTEXT 作为上下文指定断点的位置类型。
+`BPLT_CONTEXT`\
+作为上下文中指定断点位置的类型。
 
-BPLT_STRING 以字符串形式指定断点的位置类型。
+`BPLT_STRING`\
+以字符串形式指定断点的位置类型。
 
-BPLT_ADDRESS 指定为一个地址断点的位置类型。
+`BPLT_ADDRESS`\
+指定为一个地址断点的位置类型。
 
-BPLT_RESOLUTION 指定断点的位置类型来解决此问题。
+`BPLT_RESOLUTION`\
+指定断点的位置类型来解决此问题。
 
-BPLT_CODE_FILE_LINE 作为源代码的行中指定断点位置的类型。
+`BPLT_CODE_FILE_LINE`\
+作为源代码的行中指定断点位置的类型。
 
-BPLT_CODE_FUNC_OFFSET 代码函数偏移量为指定断点位置的类型。
+`BPLT_CODE_FUNC_OFFSET`\
+为代码函数偏移量为指定断点位置的类型。
 
-BPLT_CODE_CONTEXT 作为代码上下文指定断点的位置类型。
+`BPLT_CODE_CONTEXT`\
+指定断点的位置类型作为代码上下文。
 
-BPLT_CODE_STRING 代码字符串形式指定断点的位置类型。
+`BPLT_CODE_STRING`\
+为代码字符串中指定断点位置的类型。
 
-BPLT_CODE_ADDRESS 作为代码地址指定断点的位置类型。
+`BPLT_CODE_ADDRESS`\
+为代码地址指定断点的位置类型。
 
-BPLT_DATA_STRING 数据字符串形式指定断点的位置类型。
+`BPLT_DATA_STRING`\
+数据字符串形式指定断点的位置类型。
 
-BPLT_TYPE_MASK 指定的位掩码，以便可以从值中提取断点类型。
+`BPLT_TYPE_MASK`\
+指定的位掩码，以便可以从值中提取断点类型。
 
-BPLT_LOCATION_TYPE_MASK 指定的位掩码，以便可以从值中提取断点位置类型。
+`BPLT_LOCATION_TYPE_MASK`\
+指定的位掩码，以便可以从值中提取断点位置类型。
 
 ## <a name="remarks"></a>备注
 作为参数传递给[GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md)方法。

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39b2af1cdf299b3e3f2c714fa569fa295a4e1d4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925786"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315430"
 ---
 # <a name="evaluate-expressions"></a>对表达式求值
 从字符串向下传递来自创建表达式**自动**，**监视**，**快速监视**，或者**即时**windows。 当计算表达式时，它生成一个包含名称和类型的变量或参数，并且其值的可打印字符串。 此字符串显示在相应的 IDE 窗口。

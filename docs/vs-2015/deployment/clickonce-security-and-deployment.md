@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 592bf358c24bee146290e8b3a00e28a0870f452d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675444"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263804"
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce 安全和部署
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual 信息C++应用程序，请参阅[视觉对象的 ClickOnce 部署C++应用程序](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157)。  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 是一种部署技术，可用于创建自我更新的基于 Windows 的应用程序可以安装和运行时最少的用户交互。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用于发布和更新部署使用 ClickOnce 技术，如果您已开发您的项目与 Visual Basic 和 Visual C# 应用程序提供全面支持。 有关部署 Visual 信息C++应用程序，请参阅[视觉对象的 ClickOnce 部署C++应用程序](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署克服了部署中的三个主要问题：  
   
@@ -86,7 +86,7 @@ ms.locfileid: "65675444"
 > [!NOTE]
 > **发布向导**在 Visual Studio 中可用于执行这些步骤。  
   
- 除了部署位置，部署清单还包含应用程序在其中检查更新版本的更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 可以在部署清单中，指定更新行为或其形式可以是通过应用程序的用户界面中的用户选择[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Api。 此外，Publish 属性还可用于将更新设置为强制执行，或用于将应用程序回滚到较早版本。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
+ 除了部署位置，部署清单还包含应用程序在其中检查更新版本的更新位置 （网页或网络文件共享）。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **发布**属性用于指定应用程序时间和频率应检查更新。 可以在部署清单中，指定更新行为或其形式可以是通过应用程序的用户界面中的用户选择[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]Api。 此外，Publish 属性还可用于将更新设置为强制执行，或用于将应用程序回滚到较早版本  。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。  
   
 ### <a name="third-party-installers"></a>第三方安装程序  
  您可以自定义 ClickOnce 安装程序，以安装第三方组件以及您的应用程序。 必须具有可再发行组件包 （.exe 或.msi 文件），并描述具有一个非特定于语言的产品清单和特定于语言的包清单包。 有关详细信息，请参阅[创建引导程序包](../deployment/creating-bootstrapper-packages.md)。  

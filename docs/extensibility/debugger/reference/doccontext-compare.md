@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318143"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 指定用于比较两个文档上下文的条件。
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>成员
-DOCCONTEXT_EQUAL 等于目标文档上下文在列表中找到的第一个文档上下文。
+## <a name="fields"></a>字段
+`DOCCONTEXT_EQUAL`\
+在列表中，它等于目标文档上下文中找到的第一个文档上下文。
 
-DOCCONTEXT_LESS_THAN 小于目标文档上下文在列表中找到的第一个文档上下文。
+`DOCCONTEXT_LESS_THAN`\
+小于目标文档上下文在列表中找到的第一个文档上下文。
 
-DOCCONTEXT_GREATER_THAN 大于目标文档上下文在列表中找到的第一个文档上下文。
+`DOCCONTEXT_GREATER_THAN`\
+大于目标文档上下文在列表中找到的第一个文档上下文。
 
-DOCCONTEXT_SAME_DOCUMENT 目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。
+`DOCCONTEXT_SAME_DOCUMENT`\
+在目标文档上下文与在同一文档中的列表中找到的第一个文档上下文。
 
 ## <a name="remarks"></a>备注
 作为参数传递[比较](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)方法。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f48d9eb61a3f017f61ef717a27e89cb7426bad26
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: edc91cf8599a8591b70d14c49611ff64d5e957e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712471"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318219"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述一个反汇编指令的集成的开发环境 (IDE) 来显示。
@@ -61,33 +64,45 @@ public struct DisassemblyData { 
 ```
 
 ## <a name="members"></a>成员
-`dwFields` [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)常量，它指定哪些字段填写。
+`dwFields`\
+[DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)常量，它指定哪些字段填写。
 
-`bstrAddress` 为从某个起点 （通常关联函数的开头） 的偏移量地址。
+`bstrAddress`\
+为从某个起点 （通常关联函数的开头） 的偏移量地址。
 
-`bstrCodeBytes` 此指令代码字节。
+`bstrCodeBytes`\
+此指令代码字节。
 
-`bstrOpcode` 此指令的操作码。
+`bstrOpcode`\
+此指令的操作码。
 
-`bstrOperands` 此指令的操作数。
+`bstrOperands`\
+此指令的操作数。
 
-`bstrSymbol` 与地址 （公共符号、 标签等） 关联的符号名称，如果有的话。
+`bstrSymbol`\
+与地址 （公共符号、 标签等） 关联的符号名称，如果有的话。
 
-`uCodeLocationId` 反汇编此行代码位置标识符。 如果同一行的代码上下文地址大于另一个代码上下文地址，然后反汇编的代码位置标识符的第一个也将大于第二个的代码位置标识符。
+`uCodeLocationId`\
+反汇编此行代码位置标识符。 如果同一行的代码上下文地址大于另一个代码上下文地址，然后反汇编的代码位置标识符的第一个也将大于第二个的代码位置标识符。
 
-`posBeg` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，它对应于文档中反汇编数据开始处的位置。
+`posBeg`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，它对应于文档中反汇编数据开始处的位置。
 
-`posEnd` [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，它对应于文档中的反汇编数据的结束位置的位置。
+`posEnd`\
+[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，它对应于文档中的反汇编数据的结束位置的位置。
 
-`bstrDocumentUrl` 文本文档，可以表示为文件的名称，`bstrDocumentUrl`字段中填写的文件名，其中可以找到源，使用格式`file://file name`。
+`bstrDocumentUrl`\
+文本文档，可以表示为文件的名称，`bstrDocumentUrl`字段中填写的文件名，其中可以找到源，使用格式`file://file name`。
 
 不能作为文件的名称，表示文本文档`bstrDocumentUrl`是该文档的唯一标识符和调试引擎必须实现[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)方法。
 
 此字段还可以包含有关校验和的其他信息。 有关详细信息，请参阅备注。
 
-`dwByteOffset` 指令是从代码行的开头的字节数。
+`dwByteOffset`\
+指令是从代码行的开头的字节数。
 
-`dwFlags` [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)常量，它指定的标志处于活动状态。
+`dwFlags`\
+[DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)常量，它指定的标志处于活动状态。
 
 ## <a name="remarks"></a>备注
 每个`DisassemblyData`结构描述的反汇编的一条指令。 从返回这些结构的数组[读取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。

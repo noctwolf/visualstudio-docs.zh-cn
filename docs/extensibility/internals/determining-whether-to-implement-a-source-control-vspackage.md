@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba0ac240c8b8a93b6afbf1ec7dd580090ee54fd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910015"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351614"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>确定是否实现源代码管理 VSPackage
 本部分将详细介绍所选的源控制插件和源代码管理 Vspackage 扩展源代码管理解决方案，并提供全面的指南有关选择合适的集成路径。

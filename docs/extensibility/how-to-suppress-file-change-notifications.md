@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - suppress file change notification
 ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47647910b53b5f86b828ec87c62019b76204f124
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d7acfb4a5a680aa4be6e93187560cd66b68fa3b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911556"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324926"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何：禁止显示文件更改通知
 表示文本缓冲区的物理文件更改后，对话框将显示与消息**是否要保存对以下各项的更改？** 这称为文件更改通知。 如果很多更改将为到该文件，但是，反复地显示此对话框中可以快速变得令人讨厌。

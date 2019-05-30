@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 454e42ba0b99d47048fa54527e8771f8294dcbc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411359"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351992"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>创建可重用的按钮的组
 命令组是始终一起出现的菜单或工具栏的命令的集合。 可通过将其分配到不同的父菜单的 CommandPlacements 部分中重复使用任何命令组 *.vsct*文件。
@@ -28,7 +28,7 @@ ms.locfileid: "63411359"
 
 1. 创建一个名为的 VSIX 项目`ReusableButtons`。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2. 项目打开后，添加名为的自定义命令项模板**ReusableCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*ReusableCommand.cs*。
+2. 项目打开后，添加名为的自定义命令项模板**ReusableCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#**  > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*ReusableCommand.cs*。
 
 3. 在中 *.vsct*文件中，转到符号部分，找到包含组和项目的命令的 GuidSymbol 元素。 它应命名 guidReusableCommandPackageCmdSet。
 

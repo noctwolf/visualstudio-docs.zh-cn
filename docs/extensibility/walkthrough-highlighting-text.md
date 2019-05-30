@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - highlight text
 ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e7ae97c500ced1da67013fd6f12307edc0828dbf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312470"
 ---
 # <a name="walkthrough-highlight-text"></a>演练：突出显示文本
 通过创建 Managed Extensibility Framework (MEF) 组件部分，可以将不同的视觉效果添加到编辑器。 本演练演示如何突出显示当前单词在文本文件中的每个匹配项。 如果单词在文本文件中出现不止一次，并且将插入点定位中出现一次，每个匹配项将突出显示。

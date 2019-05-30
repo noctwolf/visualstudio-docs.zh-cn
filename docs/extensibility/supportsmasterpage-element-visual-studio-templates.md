@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <SupportsMasterPage> element [Visual Studio Templates]
 - SupportsMasterPage element [Visual Studio Templates]
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa55ed4344ab071d49b9f0e4030acb2a0762b2a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba409c831dd508dae796bca1ea2837674459690d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799499"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316685"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 元素（Visual Studio 模板）
 指定是否**选择母版页**上启用复选框**添加新项**对话框。

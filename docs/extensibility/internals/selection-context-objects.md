@@ -6,17 +6,17 @@ helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdc3dd946f6ab19f916f4ac536ba05a45fe9226
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef76f417fe2b4371c73d78bbb90b0bd48470746a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859083"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318630"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 使用的全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以有其自己选择上下文对象推送到全局选定内容上下文。 当该窗口具有焦点时，IDE 使用一个窗口中的值更新全局选定内容上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9685d96c14f3519653025ab1554f1e9e7587e0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 13e8bbae6ee16eb81fdb29f526a1f41e905fa504
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351888"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函数
 此函数会提示用户提供有关给定命令的高级选项。
@@ -53,7 +53,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_I_ADV_SUPPORT|源代码管理插件支持命令的高级的选项。|

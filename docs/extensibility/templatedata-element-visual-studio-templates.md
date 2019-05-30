@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateData element [Visual Studio project templates]
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94a6f4b69648c94e6530cb28180193e5a74c1265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9647330aaca2c2ae91aa7e461da17cf4dc3f8c3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432637"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316674"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。

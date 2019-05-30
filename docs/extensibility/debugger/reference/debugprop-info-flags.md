@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_INFO_FLAGS enumeration
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 131e014e3714df708c5ef1526ecb911531c5a5c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ae512bec8f88be81a0c45ddf541c94d78b483284
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689104"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318376"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 指定要检索有关调试属性对象的信息。
@@ -67,32 +70,45 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>成员
-DEBUGPROP_INFO_FULLNAME 初始化/使用`bstrFullName`字段。
+## <a name="fields"></a>字段
+`DEBUGPROP_INFO_FULLNAME`\
+初始化/使用`bstrFullName`字段。
 
-DEBUGPROP_INFO_NAME 初始化/使用`bstrName`字段。
+`DEBUGPROP_INFO_NAME`\
+初始化/使用`bstrName`字段。
 
-DEBUGPROP_INFO_TYPE 初始化/使用`bstrType`字段。
+`DEBUGPROP_INFO_TYPE`\
+初始化/使用`bstrType`字段。
 
-DEBUGPROP_INFO_VALUE 初始化/使用`bstrValue`字段。
+`DEBUGPROP_INFO_VALUE`\
+初始化/使用`bstrValue`字段。
 
-DEBUGPROP_INFO_ATTRIB 初始化/使用`dwAttrib`字段。
+`DEBUGPROP_INFO_ATTRIB`\
+初始化/使用`dwAttrib`字段。
 
-DEBUGPROP_INFO_PROP 初始化/用`pProperty`包含的字段[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)接口。
+`DEBUGPROP_INFO_PROP`\
+初始化/用`pProperty`包含的字段[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)接口。
 
-DEBUGPROP_INFO_VALUE_AUTOEXPAND 指定的值字段应包含自动扩展值中，如果可用，此类型的对象。
+`DEBUGPROP_INFO_VALUE_AUTOEXPAND`\
+指定的值字段应包含自动扩展值中，是否可用，此类型的对象。
 
-不推荐使用的 DEBUGPROP_INFO_VALUE_NOFUNCEVAL。
+`DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
+已否决。
 
-DEBUGPROP_INFO_VALUE_RAW 不返回任何非常值或成员 （即，不应格式化值）。
+`DEBUGPROP_INFO_VALUE_RAW`\
+不返回任何非常值或成员 （即，不应格式化值）。
 
-DEBUGPROP_INFO_VALUE_NO_TOSTRING 不返回任何特殊合成的值 (例如，不要调用`ToString()`某个对象以生成值)。
+`DEBUGPROP_INFO_VALUE_NO_TOSTRING`\
+不返回任何特殊的合成的值 (例如，不要调用`ToString()`某个对象以生成值)。
 
-DEBUGPROP_INFO_NONE 指定未设置任何标志。
+`DEBUGPROP_INFO_NONE`\
+指定未设置任何标志。
 
-DEBUGPROP_INFO_STANDARD 初始化/用`dwAttrib`， `bstrName`， `bstrType`，和`bstrValue`字段。
+`DEBUGPROP_INFO_STANDARD`\
+初始化/用`dwAttrib`， `bstrName`， `bstrType`，和`bstrValue`字段。
 
-DEBUGPROP_INFO_All 指示所有标志的掩码。
+`DEBUGPROP_INFO_All`\
+指示所有标志的掩码。
 
 ## <a name="remarks"></a>备注
 这些值传递给[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)， [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)，并[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法，以指示哪些字段是要初始化[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构。

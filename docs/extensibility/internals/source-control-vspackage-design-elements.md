@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, design elements
 ms.assetid: edd3f2ff-ca32-4465-8ace-4330493b67bb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e10825bb9bc9659728fbaaeb023a595745b7bcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e9b22ea32698d6e996bfee618b0b5ca4da5943d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858705"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322480"
 ---
 # <a name="source-control-vspackage-design-elements"></a>源代码管理 VSPackage 设计元素
 在本部分中的主题概述了结构源代码管理 VSPackage 必须实现的深度集成。 它还列出了这些接口和源代码管理 VSPackage 的服务可以实现，和源代码管理 VSPackage 的接口和服务可以使用从其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]组件来支持其源控制模型和功能。

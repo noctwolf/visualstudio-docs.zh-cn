@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685854"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351817"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 指定断点条件的样式的挂起和绑定断点。
@@ -41,12 +44,15 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="members"></a>成员
-BP_COND_NONE 触发断点时达到断点的位置。 没有指定断点条件。
+## <a name="fields"></a>字段
+`BP_COND_NONE`\
+到达断点的位置时，会触发断点。 没有指定断点条件。
 
-BP_COND_WHEN_TRUE 触发断点仅在条件表达式时与断点关联的计算结果为`true`。
+`BP_COND_WHEN_TRUE`\
+仅在条件表达式时与断点关联的计算结果为触发断点`true`。
 
-BP_COND_WHEN_CHANGED 触发断点仅在与断点关联的条件表达式的值时已从其以前的评估。
+`BP_COND_WHEN_CHANGED`\
+触发断点仅在与断点关联的条件表达式的值时已从其以前的评估。
 
 ## <a name="remarks"></a>备注
 用于`styleCondition`的成员[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)结构。

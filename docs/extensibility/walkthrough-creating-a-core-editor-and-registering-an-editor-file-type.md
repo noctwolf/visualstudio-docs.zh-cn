@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411033"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312782"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>演练：创建核心编辑器和注册编辑器文件类型
 本演练演示如何创建启动 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器使用的文件时 *.myext*加载文件扩展名。
@@ -26,11 +26,11 @@ ms.locfileid: "63411033"
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 包项目模板位置
  可在“新建项目”  对话框中的三个不同位置找到 Visual Studio 包项目模板：
 
-1. 在“Visual Basic 扩展性” 之下。 项目的默认语言为 Visual Basic。
+1. 在“Visual Basic 扩展性”  之下。 项目的默认语言为 Visual Basic。
 
-2. 在“C# 扩展性” 之下。 项目的默认语言为 C#。
+2. 在“C# 扩展性”  之下。 项目的默认语言为 C#。
 
-3. 在“其他项目类型扩展性” 之下。 项目的默认语言为 C++。
+3. 在“其他项目类型扩展性”  之下。 项目的默认语言为 C++。
 
 ### <a name="to-create-the-vspackage"></a>若要创建 VSPackage
 
