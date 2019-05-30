@@ -1,5 +1,5 @@
 ---
-title: 如何：检索在联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft Docs
+title: 检索在联机 ClickOnce 应用程序中的查询字符串信息
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a3ad3a3ef4d93c8fb5567b385aa430e651a3f9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 671bbe6e0541e0ef9c9ebc43ff1f5a2a4919c10e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406811"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263250"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值*的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：
@@ -61,14 +61,14 @@ ms.locfileid: "63406811"
    MageUI
    ```
 
-2. 在“文件”  菜单中，选择“打开” ，然后打开 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的部署清单（这是以 `.application` 扩展名结尾的文件）。
+2. 在“文件”  菜单中，选择“打开”  ，然后打开 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的部署清单（这是以 `.application` 扩展名结尾的文件）。
 
 3. 在左侧导航窗口中选择“部署选项”  面板，然后选中“允许向应用程序传递 URL 参数”  复选框。
 
-4. 在“文件”  菜单中选择“保存” 。
+4. 在“文件”  菜单中选择“保存”  。
 
 > [!NOTE]
-> 或者，可以在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]中启用查询字符串传递。 选中“允许向应用程序传递 URL 参数”  复选框（可以通过打开“项目属性” ，选择“发布”  选项卡，单击“选项”  按钮，然后选择“清单” 来找到该复选框）。
+> 或者，可以在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]中启用查询字符串传递。 选中“允许向应用程序传递 URL 参数”  复选框（可以通过打开“项目属性”  ，选择“发布”  选项卡，单击“选项”  按钮，然后选择“清单”  来找到该复选框）。
 
 ## <a name="robust-programming"></a>可靠编程
  使用查询字符串参数时，必须仔细考虑如何安装和激活应用程序。 如果应用程序配置为从 Web 或网络共享安装在用户计算机上，则用户可能只会通过 URL 激活应用程序一次。 之后，用户通常会使用“开始”  菜单中的快捷方式激活应用程序。 因此，应用程序确保只会在其生存期中接收查询字符串参数一次。 如果你选择将这些参数存储在用户计算机上以供将来使用，则由你负责以安全稳妥的方式存储它们。

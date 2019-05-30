@@ -1,5 +1,5 @@
 ---
-title: 向域特定语言定义中添加跟踪属性
+title: 将跟踪属性添加到 DSL 定义
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46926113393542f590b78f3bfa2c4cc5f25e10a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59fd8b72dec3405c29b352e20197f88cda9a5074
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960536"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263675"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 
@@ -716,9 +716,9 @@ HelperClasses.cs 文件中，添加`TrackingHelper`和`CriticalException`类，�
 
 下一步是生成并运行 DSL 设计器中的新实例[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，以便您可以验证跟踪属性工作正常。
 
-1. 在“生成”菜单上，单击“重新生成解决方案”。
+1. 在“生成”菜单上，单击“重新生成解决方案”   。
 
-2. 在“调试”菜单上，单击“启动调试”。
+2. 在“调试”  菜单上，单击“启动调试”  。
 
     实验性生成[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]将打开**调试**解决方案，其中包含一个空测试文件。
 

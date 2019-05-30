@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b31a17e89003967aef6a423dda87572b4a07c387
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434596"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353683"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 此函数会提示用户输入项目路径，这是一个字符串，它仅对源代码管理插件有意义。 当用户是，将调用：
@@ -89,7 +89,7 @@ SCCRTN SccGetProjPath (
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功创建或检索项目。|
 |SCC_I_OPERATIONCANCELED|该操作已取消。|

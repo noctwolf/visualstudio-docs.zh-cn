@@ -1,5 +1,5 @@
 ---
-title: 如何：调试具有受限权限的 ClickOnce 应用程序 |Microsoft Docs
+title: 调试具有受限权限的 ClickOnce 应用程序
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4072cef2a47db1177a8ee7b630bd8febccc5e0b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78577f197f952b46d474fb3fd61c72008857c4be
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898732"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263316"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限调试 ClickOnce 应用程序
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。
@@ -32,29 +32,29 @@ ms.locfileid: "62898732"
 
 ### <a name="to-enable-debugging-with-restricted-permissions"></a>使用受限权限启用调试
 
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。
 
-2. 在“项目设计器” 中，单击“安全”  选项卡。
+2. 在“项目设计器”  中，单击“安全”  选项卡。
 
 3. 选中“启用 ClickOnce 安全设置”  复选框，然后单击“这是部分可信的应用程序”  选项按钮。
 
-4. 单击“高级”按钮。
+4. 单击“高级”  按钮。
 
-5. 选中“使用选定权限集调试此应用程序”  复选框，然后单击“确定” 。
+5. 选中“使用选定权限集调试此应用程序”  复选框，然后单击“确定”  。
 
      调试应用程序时，任何访问不属于权限集一部分的权限的尝试都会引发安全异常。
 
 ### <a name="to-specify-a-url-for-debugging"></a>指定用于调试的 URL
 
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。
 
-2. 在“项目设计器” 中，单击“安全”  选项卡。
+2. 在“项目设计器”  中，单击“安全”  选项卡。
 
 3. 选中“启用 ClickOnce 安全设置”  复选框，然后单击“这是部分可信的应用程序”  选项按钮。
 
-4. 单击“高级”按钮。
+4. 单击“高级”  按钮。
 
-5. 选中“使用选定权限集调试此应用程序”  复选框，然后单击“确定” 。
+5. 选中“使用选定权限集调试此应用程序”  复选框，然后单击“确定”  。
 
 6. 在“调试此应用程序，就如同它是从以下 URL 位置下载的一样”  文本框中，输入 URL 或网络路径。
 

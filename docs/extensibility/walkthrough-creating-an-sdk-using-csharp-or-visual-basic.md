@@ -3,20 +3,20 @@ title: 演练：创建 SDK 使用C#或 Visual Basic |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 6bb9ae53dfb2e849c35c05fe5187cddcf301622c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226109"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312639"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：创建 SDK 使用C#或 Visual Basic
 在本演练中，将了解如何使用 Visual C# 创建一个简单的数学库 SDK，然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 将完成以下过程：
@@ -31,7 +31,7 @@ ms.locfileid: "65226109"
 
 ## <a name="createClassLibrary"></a> 若要创建 SimpleMath Windows 运行时组件
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 2. 在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**Windows 应用商店**节点，然后选择**Windows 运行时组件**模板。
 
@@ -67,7 +67,7 @@ ms.locfileid: "65226109"
 
 4. 在中**解决方案资源管理器**，选择**source.extension.vsixmanifest**项。
 
-5. 在菜单栏上，选择“视图” > “代码”。
+5. 在菜单栏上，选择“视图”   > “代码”  。
 
 6. 现有的 XML 替换为以下 XML:
 
@@ -75,7 +75,7 @@ ms.locfileid: "65226109"
 
 7. 在中**解决方案资源管理器**，选择**SimpleMathVSIX**项目。
 
-8. 在菜单栏上，依次选择“项目” > “添加新项”。
+8. 在菜单栏上，依次选择“项目”   > “添加新项”  。
 
 9. 在列表中**常见项**，展开**数据**，然后选择**XML 文件**。
 
@@ -150,13 +150,13 @@ ms.locfileid: "65226109"
 
 28. 在中**解决方案资源管理器**，打开快捷菜单**SimpleMathVSIX**项目，，然后选择**在文件资源管理器中打开文件夹**。
 
-29. 在中**文件资源管理器**，导航到*\bin\Release*文件夹，然后运行*SimpleMathVSIX.vsix*进行安装。
+29. 在中**文件资源管理器**，导航到 *\bin\Release*文件夹，然后运行*SimpleMathVSIX.vsix*进行安装。
 
 30. 选择**安装**按钮，等待安装完成，然后再重新启动 Visual Studio。
 
 ## <a name="createSample"></a> 创建示例应用程序使用类库
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 2. 在模板列表中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows 应用商店**节点。
 
@@ -239,7 +239,7 @@ ms.locfileid: "65226109"
 
 12. 选择**F5**键运行应用程序。
 
-13. 在应用中，输入任何两个数字，选择一个操作，然后选择**=** 按钮。
+13. 在应用中，输入任何两个数字，选择一个操作，然后选择 **=** 按钮。
 
      将显示正确的结果。
 

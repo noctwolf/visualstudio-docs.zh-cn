@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef70f9a776163419819e2283a031261c6e84a159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7cb51edb41109d9664e5aeda0a5393d2cd34f38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312437"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>演练：显示快速信息工具提示
 快速信息 IntelliSense 功能，用于显示方法签名，说明当用户将指针移到方法名称。 您可以通过定义的标识符来提供快速信息的说明，并创建要在其中显示内容的工具提示实现基于语言的功能，例如快速信息。 可以在语言服务的上下文中定义 QuickInfo 或可以定义自己的文件名称扩展和内容类型并显示快速信息只是该类型或可以为现有内容类型 （例如"text") 显示快速信息。 本演练演示如何显示快速信息的"text"内容类型。

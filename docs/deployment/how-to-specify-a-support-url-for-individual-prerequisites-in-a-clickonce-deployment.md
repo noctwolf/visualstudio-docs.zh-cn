@@ -1,5 +1,5 @@
 ---
-title: 如何：有关 ClickOnce 部署中的各个系统必备项指定一个支持 URL |Microsoft Docs
+title: 有关 ClickOnce 部署中的先决条件的支持 URL
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79aec7a8882f87bc98f822d4fb4f0c1961bd69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928602"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263210"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备指定支持 URL
 一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以用于多个先决条件，必须在客户端计算机上可用的测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 这些依赖项包括所需的最低版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，操作系统，并且必须预先安装在全局程序集缓存 (GAC) 中的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装这些必备组件的任何重试。如果找不到一项必备条件，它只是停止安装，并显示一个对话框，说明安装失败的原因。

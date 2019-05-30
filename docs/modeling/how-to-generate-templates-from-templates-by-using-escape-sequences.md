@@ -1,5 +1,5 @@
 ---
-title: 如何：使用转义序列基于模板生成模板
+title: 使用转义序列基于模板生成模板
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35047c6c0887d02f3adcba763de05b8d4a1cd00b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7872b9bf55ad5d712ac01edf10c4b9df2a82feea
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993176"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263682"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用转义序列基于模板生成模板
 可以创建用于创建另一个文本模板，为其生成的文本输出的文本模板。 若要执行此操作，必须使用转义序列来描述文本模板标记。 如果不使用转义序列，生成的文本模板将具有预定义的含义。 有关在文本模板中使用转义序列的详细信息，请参阅[在文本模板中使用转义序列](../modeling/using-escape-sequences-in-text-templates.md)。

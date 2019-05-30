@@ -6,17 +6,17 @@ helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
 - specialized deployment
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25e19aff472547f2d151d5d252bc98a1c4fb3c71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81bc5459f9f4b721d0ce0741b22b04a07bfcc771
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420594"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329050"
 ---
 # <a name="handle-specialized-deployment"></a>处理专用的部署
 部署是项目的可选操作。 Web 项目中，例如，支持的部署，以便更新 Web 服务器的项目。 同样，**智能设备**项目支持将复制到目标设备生成的应用程序的部署。 项目子类型可以通过实现来提供专门的部署行为<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口。 此接口定义一组完整的部署操作：

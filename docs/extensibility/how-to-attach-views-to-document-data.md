@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - attach views to document data
 ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b53748546633f8944ef0bd47ebc01326b322165e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c42ccdb817ab4a7594922e90e9df3e345c693c11
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417115"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340996"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何：将视图附加到文档数据
 如果您有一个新的文档视图，您可能能够将其附加到现有的文档数据对象。

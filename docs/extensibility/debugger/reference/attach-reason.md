@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688259"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351844"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 指定调试引擎 (DE) 的原因，若要将附加到程序节点。
@@ -41,12 +44,15 @@ public enum enum_ATTACH_REASON {
 };
 ```
 
-## <a name="members"></a>成员
-ATTACH_REASON_AUTO 附加，因为进程当前处于调试模式。
+## <a name="fields"></a>字段
+`ATTACH_REASON_AUTO`\
+将附加，因为进程当前处于调试模式。
 
-ATTACH_REASON_LAUNCH 附加，因为启动进程。
+`ATTACH_REASON_LAUNCH`\
+将附加，因为启动进程。
 
-由于用户请求而附加 ATTACH_REASON_USER。
+`ATTACH_REASON_USER`\
+由于用户请求而将附加。
 
 ## <a name="remarks"></a>备注
 这些值用作参数[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)并[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。

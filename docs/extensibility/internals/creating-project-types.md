@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910002"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314565"
 ---
 # <a name="create-project-types"></a>创建项目类型
 您可以扩展[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过创建新的项目类型。 若要创建新的项目类型，必须了解的几个概念，并完成一系列步骤。 以下主题提供如何创建项目类型的概述。
@@ -57,7 +57,7 @@ ms.locfileid: "62910002"
 
 - [使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- 演示如何为你的 VSPackage 提供其自己唯一的标识以及如何将你的 VSPackage Dll 和其他信息包装在一个 Windows Installer 程序包 (*。MSI*文件) 以部署到你的客户。
+ 演示如何为你的 VSPackage 提供其自己唯一的标识以及如何将你的 VSPackage Dll 和其他信息包装在一个 Windows Installer 程序包 ( *。MSI*文件) 以部署到你的客户。
 
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

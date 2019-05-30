@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Define
 - Define element (VSCT XML schema)
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccb14705b4d799e1f7fa6de4728ee8f7fc7b3fb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d82bd5050955f69e23c71569a13ac1a5d428aef2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912657"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348134"
 ---
 # <a name="define-element"></a>定义元素
 定义的符号名称和值对。 此符号可以评估的条件属性。 有关详细信息，请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另请参阅[Symbols 元素](../extensibility/symbols-element.md)。

@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553342"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263034"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -247,7 +247,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 ### <a name="vsdoc"></a>VSDoc
 
 XML 文档注释（有时称为 VSDoc）以前可用于修饰包含额外可强化 IntelliSense 结果的数据的源代码。
-为支持更易于编写并且是 JavaScript 公认标准的 [JSDoc](http://usejsdoc.org/about-getting-started.html)，不再支持 VSDoc。
+为支持更易于编写并且是 JavaScript 公认标准的 [JSDoc](https://jsdoc.app/about-getting-started.html)，不再支持 VSDoc。
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 扩展
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, providing support
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84fef8d0f63f76c7810c94ade2e1eb58e55b94cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee70a4d88dfc6eb1dae5c0d8fba0fb1deb7a7621
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861295"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332189"
 ---
 # <a name="extend-properties"></a>扩展属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性**时段 COM 和 COM + 组件的通用属性浏览器，并且支持所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]产品。 **属性**窗口适用于`ITypeInfo`类型信息和 COM + 元数据以列出在集成的开发环境 (IDE) 中的任何其他窗口中的当前所选对象的设计时属性。

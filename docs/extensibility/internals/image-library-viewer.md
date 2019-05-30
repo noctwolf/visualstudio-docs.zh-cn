@@ -3,17 +3,17 @@ title: 图像库查看器 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860486"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315696"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从而允许用户在相同的方式将 Visual Studio 中处理它们。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具也会显示正在加载信息为每个映像清单和映像清单中显示的每个映像的源信息。 此工具可用于：
@@ -138,7 +138,7 @@ Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从
 ||||
 |-|-|-|
 |**元素**|**属性 （全部所需）**|**定义**|
-|\<Size>|“值”|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|
+|\<Size>|值|源将用于指定大小 （以设备为单位） 的映像。 图将方形。|
 |\<SizeRange>|MinSize, MaxSize|将映像从 MinSize 到最大大小 （以设备为单位） （含限值） 使用源。 图将方形。|
 |\<维度 >|宽度、 高度|源将用于给定的宽度和高度 （以设备为单位） 的映像。|
 |\<DimensionRange>|MinWidth，MinHeight，<br /><br /> MaxWidth MaxHeight|源将用于从最小宽度/高度 （以设备为单位） 的最大宽度/高度的图像 （含）。|

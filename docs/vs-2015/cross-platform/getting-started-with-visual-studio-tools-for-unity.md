@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4532b7e566bbd315d9acbdef43198e0f91f5f195
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443044"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263557"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ ms.locfileid: "63443044"
   
  但如果你对 Unity 不熟悉，可从简单的基本教程开始。 访问“Unity 学习”页，找到可用以入门的相关示例项目教程和可以学习的课程，进而用 Unity 创建你自己的游戏。 “Unity 学习”页提供了针对好几种不同游戏的教程，内容通俗易懂。  
   
- [教程 –“Unity 学习”页](http://unity3d.com/learn/tutorials/modules)  
+ [教程 -“Unity 学习”页](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 配置 Unity 编辑器以使用 Visual Studio Tools for Unity  
- 若要启用你的项目以使用 Visual Studio Tools for Unity，只需将 Visual Studio 设置为其外部脚本编辑器。 在 Unity 编辑器中的主菜单上，选择“编辑，首选项” ；然后，在“Unity 首选项”  对话框中，选择“外部工具” 。 接下来，将“外部脚本编辑器”  属性设置为你想要使用的 Visual Studio 的版本（必须为此版本的 Visual Studio 安装 Visual Studio Tools for Unity），并确保已设置“编辑器连接”  属性。  
+ 若要启用你的项目以使用 Visual Studio Tools for Unity，只需将 Visual Studio 设置为其外部脚本编辑器。 在 Unity 编辑器中的主菜单上，选择“编辑，首选项”  ；然后，在“Unity 首选项”  对话框中，选择“外部工具”  。 接下来，将“外部脚本编辑器”  属性设置为你想要使用的 Visual Studio 的版本（必须为此版本的 Visual Studio 安装 Visual Studio Tools for Unity），并确保已设置“编辑器连接”  属性。  
   
  若要确保现在已启用对 Visual Studio Tools for Unity 的内置支持，请参阅“关于 Unity”  对话框。 In the Unity editor, on the main menu, choose  。如果已安装并正确配置 Visual Studio Tools for Unity，你将看到“关于 Unity”  对话框。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "63443044"
   
  但如果你对 Unity 不熟悉，可从简单的基本教程开始。 访问“Unity 学习”页，找到可用以入门的相关示例项目教程和可以学习的课程，进而用 Unity 创建你自己的游戏。 “Unity 学习”页提供了针对好几种不同游戏的教程，内容通俗易懂。  
   
- [教程 –“Unity 学习”页](http://unity3d.com/learn/tutorials/modules)  
+ [教程 -“Unity 学习”页](https://learn.unity.com/tutorials)  
   
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 配置 Unity 编辑器以使用 Visual Studio Tools for Unity  
  如果你是从现有的 Unity 项目开始或未在创建项目时导入 Visual Studio Tools Unity unitypackage，则需立即导入 unitypackage。 在 Unity 编辑器中的主菜单上，选择“资产、导入包、Visual Studio 2015 Tools”  （应能看到适用于已安装的 Visual Studio 版本的一个选项）。  
@@ -104,7 +104,7 @@ ms.locfileid: "63443044"
 #### <a name="3---launch-visual-studio-from-unity-editor"></a>3 - 从 Unity 编辑器启动 Visual Studio  
  最后一步是从 Unity 启动 Visual Studio。 这将为你的项目创建一个 Visual Studio 解决方案，然后将在 Visual Studio 中打开。  
   
- 在 Unity 编辑器的主菜单上，选择“Visual Studio 工具，在 Visual Studio 中打开” 。  
+ 在 Unity 编辑器的主菜单上，选择“Visual Studio 工具，在 Visual Studio 中打开”  。  
   
  ![在 Visual Studio 中打开 Unity 项目。](../cross-platform/media/vstu-configure-open-in-visual-studio.png "vstu_configure_open_in_visual_studio")  
   

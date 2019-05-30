@@ -6,17 +6,17 @@ helpviewer_keywords:
 - CommandFlag element (VSCT XML schema)
 - VSCT XML schema elements, CommandFlag
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea9ba8d42bbc008ecb4664ec167ba60ba4018fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a38708d6256556693b7ab1dfc8c04b79f484ee8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891360"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334842"
 ---
 # <a name="command-flag-eelement"></a>命令标志 Eelement
 修改其父元素。
@@ -35,7 +35,7 @@ ms.locfileid: "62891360"
 
 ### <a name="child-elements"></a>子元素
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |AllowParams|指示用户可以输入中的命令参数**命令**窗口中键入该命令的规范名称时。<br /><br /> 适用于： `Button`|
 |AlwaysCreate|即使它具有任何组或按钮创建菜单。<br /><br /> 适用于： `Menu`|

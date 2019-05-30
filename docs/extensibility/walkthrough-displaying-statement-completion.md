@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - statement completion
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f117209c8e1d57c64ab53df608fe55ae27f0cff0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965188"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312406"
 ---
 # <a name="walkthrough-display-statement-completion"></a>演练：显示语句完成
 可以通过定义您想要提供完成的标识符，然后触发完成会话实现的基于语言的语句结束。 可以在语言服务的上下文中定义的语句结束、 定义您自己的文件扩展名和内容类型，然后显示完成只是该类型。 或者，可以触发的现有内容类型完成 — 例如，"纯文本"。 本演练演示如何触发"纯文本"内容类型，这是文本文件的内容类型的语句完成。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。

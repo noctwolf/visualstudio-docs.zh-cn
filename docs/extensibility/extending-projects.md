@@ -6,17 +6,17 @@ helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
 ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d31da41e3be73f4e2e036841bfc1d96f4476e856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0333e09aee207e10657999dda4b5b1d59e181cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912800"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341111"
 ---
 # <a name="extend-projects"></a>扩展项目
 项目和解决方案是 Visual Studio 将代码和资源文件组织到编译和部署单元的方法。 您可以找到有关中的项目的详细信息[项目 (Visual Studio SDK)](../extensibility/extending-projects.md)。

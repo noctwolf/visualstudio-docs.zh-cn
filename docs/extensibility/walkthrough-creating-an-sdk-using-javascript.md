@@ -3,17 +3,17 @@ title: 演练：使用 JavaScript 创建 SDK |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796337"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312555"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>演练：创建使用 JavaScript SDK
 本演练介绍了如何使用 JavaScript 创建简单的数学运算 SDK 作为 Visual Studio 扩展 (VSIX)。  本演练分为以下部分：
@@ -29,9 +29,9 @@ ms.locfileid: "62796337"
 
 ## <a name="createSimpleMathVSIX"></a> 若要创建 SimpleMathVSIX 扩展 SDK 项目
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
-2. 在模板类别列表中下**Visual C#**，选择**扩展性**，然后选择**VSIX 项目**模板。
+2. 在模板类别列表中下**Visual C#** ，选择**扩展性**，然后选择**VSIX 项目**模板。
 
 3. 在中**名称**文字框中，指定`SimpleMathVSIX`，然后选择**确定**按钮。
 
@@ -94,7 +94,7 @@ ms.locfileid: "62796337"
 
      *\Redist\CommonConfiguration\Neutral\SimpleMath\js\\*
 
-14. 上的快捷菜单**\js\\** 文件夹中，选择**添加** > **新项**。
+14. 上的快捷菜单 **\js\\** 文件夹中，选择**添加** > **新项**。
 
 15. 下**Visual C# 项**，选择**Web**类别中，并选择**JavaScript 文件**项。 将文件命名`arithmetic.js`，然后选择**添加**按钮。
 
@@ -132,7 +132,7 @@ ms.locfileid: "62796337"
 
 18. 在中**解决方案资源管理器**，在快捷菜单上**SimpleMathVSIX**项目中，选择**生成**。
 
-19. 生成项目的快捷菜单上成功完成后，选择**在文件资源管理器中打开文件夹**。 导航到**\bin\debug\\**，并运行`SimpleMathVSIX.vsix`进行安装。
+19. 生成项目的快捷菜单上成功完成后，选择**在文件资源管理器中打开文件夹**。 导航到 **\bin\debug\\** ，并运行`SimpleMathVSIX.vsix`进行安装。
 
 20. 选择**安装**按钮并让安装完成。
 
@@ -140,7 +140,7 @@ ms.locfileid: "62796337"
 
 ## <a name="createSampleApp"></a> 若要创建使用 SDK 的示例应用
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 2. 在模板类别列表中下**JavaScript**，选择**Windows 应用商店**，然后选择**空白应用**模板。
 
@@ -152,7 +152,7 @@ ms.locfileid: "62796337"
 
 6. 选择**简单的数学运算**复选框，然后选择**确定**按钮。
 
-7. 在中**解决方案资源管理器**下**引用**，请注意，**简单的数学运算**显示引用。 将其展开，请注意，没有**\js\\** 包括的文件夹**arithmetic.js**。 您可以打开**arithmetic.js**以确认是否已安装你的源代码。
+7. 在中**解决方案资源管理器**下**引用**，请注意，**简单的数学运算**显示引用。 将其展开，请注意，没有 **\js\\** 包括的文件夹**arithmetic.js**。 您可以打开**arithmetic.js**以确认是否已安装你的源代码。
 
 8. 使用以下代码替换内容*default.htm*。
 
@@ -192,7 +192,7 @@ ms.locfileid: "62796337"
    </html>
    ```
 
-9. 使用以下代码替换内容*\js\default.js*。
+9. 使用以下代码替换内容 *\js\default.js*。
 
     ```csharp
     (function () {
@@ -250,7 +250,7 @@ ms.locfileid: "62796337"
     })();
     ```
 
-10. 内容替换为*\css\default.css*使用以下代码：
+10. 内容替换为 *\css\default.css*使用以下代码：
 
     ```xml
     form {
@@ -311,7 +311,7 @@ ms.locfileid: "62796337"
 
 11. 选择**F5**键生成并运行应用程序。
 
-12. 在应用 UI 中，输入任何两个数字，选择一个操作，然后选择**=** 按钮。 将显示正确的结果。
+12. 在应用 UI 中，输入任何两个数字，选择一个操作，然后选择 **=** 按钮。 将显示正确的结果。
 
 ## <a name="see-also"></a>请参阅
 - [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

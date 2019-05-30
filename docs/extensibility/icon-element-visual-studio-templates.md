@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 623015698ca9855010bf5a4bf5519a780842ffdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4068c192d7e01f4c9162e8006152a90b38aed05b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862057"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350140"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 元素 （Visual Studio 模板）
 指定的路径和用作中显示该图标的图像文件的文件名**新的项目**或**添加新项**对话框中的，为模板。

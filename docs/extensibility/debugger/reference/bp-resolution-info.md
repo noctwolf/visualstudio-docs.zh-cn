@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RESOLUTION_INFO structure
 ms.assetid: ba0c162a-61e8-4a0b-811f-4c1d8a5d82f0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79104bf245221c14a27593665c1a4b2cd8cedaa0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5e07110a4ab4aae014f6134130a92dfcb8a31289
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707219"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350596"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 介绍代码断点或数据断点的绑定的断点信息。
@@ -43,13 +46,17 @@ public struct BP_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>成员
-`dwFields` 中的标志的集合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)填充指定的字段的枚举。
+`dwFields`\
+中的标志的集合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)填充指定的字段的枚举。
 
-`bpResLocation` [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)结构，它在代码或数据中指定的断点的位置。
+`bpResLocation`\
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)结构，它在代码或数据中指定的断点的位置。
 
-`pProgram` [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示应用程序发生断点错误的对象。
+`pProgram`\
+[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示应用程序发生断点错误的对象。
 
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点错误的应用程序正在其中运行的线程。
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点错误的应用程序正在其中运行的线程。
 
 ## <a name="remarks"></a>备注
 返回此结构[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)。

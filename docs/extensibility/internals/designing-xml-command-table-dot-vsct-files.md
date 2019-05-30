@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc088ac5c534e77de2aae919019396ccf2c344e2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910658"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312103"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表格 (.vsct) 文件
-XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
+XML 命令表 ( *.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
 
 ## <a name="commands-menus-groups-and-the-vsct-file"></a>命令、 菜单、 组和.vsct 文件
  *.Vsct*围绕命令、 菜单和命令组组织文件。 中的 XML 标记 *.vsct*文件的表示每个项，以及其他相关联的项，如命令按钮、 命令放置和位图。
@@ -32,11 +32,11 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 
 - 新 **\<extern >** 标记是其中引用其他 *.h*文件以进行编译，这些文件以查找如[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]工具栏。
 
-- 虽然 *.vsct*文件支持 **/include**语句，为 *.ctc*文件，它还具有一个新**\<导入 >** 元素。 其差异是， **/include**引入了*所有*的信息，而**\<导入 >** 将仅在名称中。
+- 虽然 *.vsct*文件支持 **/include**语句，为 *.ctc*文件，它还具有一个新 **\<导入 >** 元素。 其差异是， **/include**引入了*所有*的信息，而 **\<导入 >** 将仅在名称中。
 
-- 虽然 *.ctc*文件需要在其中定义预处理器指令的标头文件，不需要 *.vsct*文件。 相反，将在指令放置在符号表中，位于**\<符号 >** 元素，位于底部 *.vsct*文件。
+- 虽然 *.ctc*文件需要在其中定义预处理器指令的标头文件，不需要 *.vsct*文件。 相反，将在指令放置在符号表中，位于 **\<符号 >** 元素，位于底部 *.vsct*文件。
 
-- *.vsct*文件功能**\<批注 >** 标记，它使您可以嵌入您喜欢，如说明或甚至图片的任何信息。
+- *.vsct*文件功能 **\<批注 >** 标记，它使您可以嵌入您喜欢，如说明或甚至图片的任何信息。
 
 - 值存储为项的特性。
 

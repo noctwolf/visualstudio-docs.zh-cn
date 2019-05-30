@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581634"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262941"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 
@@ -169,7 +169,7 @@ ms.locfileid: "62581634"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 只将下列文件从 Debug_NonRedist\x86 或 Debug_NonRedist\x64 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)中所述。 无其他文件可复制。
+5. 只将下列文件从 Debug_NonRedist\x86 或 Debug_NonRedist\x64 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 无其他文件可复制。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
 ## <a name="see-also"></a>请参阅
 
-- [准备用于运行调试可执行文件的测试计算机](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [准备用于运行调试可执行文件的测试计算机](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [命令行参考](../msbuild/msbuild-command-line-reference.md)

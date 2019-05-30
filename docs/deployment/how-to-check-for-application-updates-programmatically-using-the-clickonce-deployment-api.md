@@ -1,5 +1,5 @@
 ---
-title: 如何：检查应用程序更新使用 ClickOnce 部署 API 以编程方式 |Microsoft Docs
+title: 使用 ClickOnce 部署 API 的自动应用更新
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9f47c82311f26c5ca469f03783b785545bda2182
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406606"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260824"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以编程方式检查是否有应用程序更新
 ClickOnce 提供两种方法在部署之后更新的应用程序。 在第一种方法，可以配置 ClickOnce 部署自动检查更新在一定时间间隔。 在第二个方法中，可以编写使用的代码<xref:System.Deployment.Application.ApplicationDeployment>类，以检查更新的基于事件，如用户请求。

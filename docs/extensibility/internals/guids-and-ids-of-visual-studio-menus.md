@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9f858bec8ff025061603c72eda4ff6fc6d36549c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420630"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263629"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 菜单
 这篇文章枚举菜单和 Visual Studio 菜单栏上的组的 GUID 和 ID 的值。 这些值中定义 *.vsct*作为 Visual Studio SDK 的一部分安装的文件。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -56,6 +56,7 @@ ms.locfileid: "63420630"
 |Build|IDM_VS_MENU_BUILD|
 |格式|IDM_VS_MENU_FORMAT|
 |工具|IDM_VS_MENU_TOOLS|
+|Extensions|IDM_VS_MENU_EXTENSIONS|
 |窗口|IDM_VS_MENU_WINDOW|
 |外接程序|IDM_VS_MENU_ADDINS|
 |社区|IDM_VS_MENU_COMMUNITY|
@@ -178,7 +179,7 @@ ms.locfileid: "63420630"
  以下层次结构显示了与 Visual Studio 菜单栏上的菜单相关联的子菜单。 由于仅允许一组可作为其父菜单，因此每个子菜单必须降从组在菜单上，而不是直接从菜单。 有关菜单、 组和子菜单之间的关系的详细信息，请参阅[添加到菜单的子菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。
 
 > [!NOTE]
-> 在 Visual Studio 菜单栏上的菜单名称单独不显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示：*IDG_VS_\<菜单名称\>_\<组名\>*。
+> 在 Visual Studio 菜单栏上的菜单名称单独不显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示：*IDG_VS_\<菜单名称\>_\<组名\>* 。
 
 |父组|子菜单|子组|
 |------------------|-------------|------------------|

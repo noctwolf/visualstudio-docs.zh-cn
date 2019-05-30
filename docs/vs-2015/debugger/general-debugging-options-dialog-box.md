@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704681"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261655"
 ---
 # <a name="general-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“常规”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "65704681"
 **工具 / 选项 / 调试 / 常规**页允许你设置以下选项：  
   
  **删除所有断点之前询问**  
- 在完成“删除所有断点”命令前需要进行确认。  
+ 在完成“删除所有断点”  命令前需要进行确认。  
   
  **一个进程中断时则中断所有进程**  
  发生一个中断时，同时中断调试器连接到的所有进程。  
@@ -52,7 +52,7 @@ ms.locfileid: "65704681"
  在第 2) 和 3) 条中，异常有时由 `mscorlib` 中的托管代码而不是公共语言运行时捕获。 此选项不影响在 `mscorlib` 捕获到异常时中断。  
   
  **启用地址级调试**  
- 启用高级功能在地址级上进行调试（“反汇编”窗口、“注册”窗口和地址断点)。  
+ 启用高级功能在地址级上进行调试（“反汇编”窗口、“注册”窗口和地址断点)   。  
   
  **如果源不可用时显示反汇编**  
  会自动显示**反汇编**窗口在尝试调试代码的源不可用。  
@@ -64,7 +64,7 @@ ms.locfileid: "65704681"
  仅用于托管代码。 托管异常打开“异常助手”对话框。  请参阅[异常助手](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)。  
   
  **展开调用堆栈上未经处理的异常**  
- 导致“调用堆栈”窗口将调用堆栈回滚到未经处理的异常发生之前的时间点。  
+ 导致“调用堆栈”  窗口将调用堆栈回滚到未经处理的异常发生之前的时间点。  
   
  **启用“仅我的代码”**  
  调试器仅显示和单步执行用户代码（“我的代码”），而忽略系统代码和其他经过优化或没有调试符号的代码。  
@@ -82,7 +82,7 @@ ms.locfileid: "65704681"
  使调试器无法单步执行托管代码中的属性和运算符。  
   
  **启用属性求值和其他隐式函数调用**  
- 在变量窗口和“快速监视”对话框中打开属性的自动求值和隐式函数调用。  
+ 在变量窗口和“快速监视”  对话框中打开属性的自动求值和隐式函数调用。  
   
  **对变量窗口 （C# 和仅限 JavaScript） 中的对象调用字符串转换函数**  
  在变量窗口中计算对象时，执行隐式字符串转换调用。 因此，结果将显示为字符串而不是类型名。 仅在 C# 代码中进行调试时适用。 此设置可能由 DebuggerDisplay 特性重写 (请参阅[使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md))。  
@@ -106,7 +106,7 @@ ms.locfileid: "65704681"
  指示调试器验证源文件是否与用于生成正在调试的可执行文件的源代码版本匹配。 如果版本不匹配，则会提示你查找匹配源。 如果未找到匹配源，则在调试过程中不会显示源代码。  
   
  **将所有输出窗口文本重都定向到即时窗口**  
- 将通常显示在“输出”窗口中的所有调试器消息发送到“即时”窗口。  
+ 将通常显示在“输出”  窗口中的所有调试器消息发送到“即时”  窗口。  
   
  **变量窗口中显示对象的原始结构**  
  关闭所有对象结构视图自定义。 有关视图自定义的详细信息，请参阅[创建的托管对象的自定义视图](../debugger/create-custom-views-of-dot-managed-objects.md)。  
@@ -126,7 +126,7 @@ ms.locfileid: "65704681"
  若要查看 DLL 导出表中的可用符号，请使用 `dumpbin /exports`。 符号可用于任何 32 位系统 DLL。 从 `dumpbin /exports` 输出中，可以查看到精确的函数名，包括非字母数字字符。 这对于在函数上设置断点很有用。 DLL 导出表中的函数名在调试器的其他位置似乎被截断了。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 有关详细信息，请参阅 [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
   
  **显示并行堆栈关系图自下而上的**  
- 控制堆栈在“并行堆栈”窗口中的显示方向。  
+ 控制堆栈在“并行堆栈”窗口中的显示方向  。  
   
  **如果写入的数据未更改值，则忽略 GPU 内存访问异常**  
  如果数据未改变，则忽略在调试期间检测的争用条件。 有关详细信息，请参阅[调试 GPU 代码](../debugger/debugging-gpu-code.md)。  
@@ -158,13 +158,13 @@ ms.locfileid: "65704681"
   在开始调试 (F5) 支持的项目类型时，将显示“实时可视化树”和“实时属性资源管理器”窗口。 有关详细信息，请参阅[调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)。  
   
   **预览实时可视化树中的所选的元素**  
-  选定了其上下文的 XAML 元素在“实时可视化树”窗口中也会被选中。  
+  选定了其上下文的 XAML 元素在“实时可视化树”  窗口中也会被选中。  
   
   **在应用程序中显示运行时工具**  
-  如果选中一个 XAML 元素的上下文，同时会在“实时可视化树”窗口中选中该元素。 Visual Studio 2015 Update 2 中引入了此选项。  
+  如果选中一个 XAML 元素的上下文，同时会在“实时可视化树”窗口中选中该元素  。 Visual Studio 2015 Update 2 中引入了此选项。  
   
   **调试时启用诊断工具**  
-  调试时显示“诊断工具”窗口。 有关详细信息，请参阅[集成了调试器的分析](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859)。  
+  调试时显示“诊断工具”窗口  。 有关详细信息，请参阅[集成了调试器的分析](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger)。  
   
   **调试时显示运行时间 PerfTip**  
   在进行调试时，代码窗口会显示给定方法调用的运行时间。  

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, debugging
 - VSPackages, troubleshooting
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 53888f85a41fdd5bef3985c4da986609a032e377
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415533"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309354"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售环境中进行调试的 Vspackage。
@@ -48,7 +48,7 @@ Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售
 
 2. 关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据：
 
-   <em>*%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
+   <em> *%AppData%</em>\Microsoft\VisualStudio\\\<version>\ActivityLog.xml*.
 
 3. 使用任何文本编辑器打开活动日志。 以下是典型条目：
 

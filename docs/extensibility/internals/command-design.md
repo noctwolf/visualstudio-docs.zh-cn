@@ -6,23 +6,23 @@ helpviewer_keywords:
 - commands
 - commands, implementation
 ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c176a558d7d5956c1d41593f5d0cc71184a9a820
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1644cfa71296c4233cf17b6b225933aeeb3d477
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342173"
 ---
 # <a name="command-design"></a>命令设计
 当将命令添加到 VSPackage 时，必须指定它的位置显示、 时可用，和它的方式进行处理。
 
 ## <a name="define-commands"></a>定义命令
- 若要定义新的命令，包括 Visual Studio 命令表 (*.vsct*) VSPackage 项目文件中的。 如果你已使用 Visual Studio 包模板创建 VSPackage，该项目包括这些文件之一。 有关详细信息，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+ 若要定义新的命令，包括 Visual Studio 命令表 ( *.vsct*) VSPackage 项目文件中的。 如果你已使用 Visual Studio 包模板创建 VSPackage，该项目包括这些文件之一。 有关详细信息，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
  Visual Studio 合并所有 *.vsct*文件它查找，以便它可以显示命令。 因为这些文件是不同于二进制 VSPackage，则不需要为了查找的命令将包加载 Visual Studio。 有关详细信息，请参阅[Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。
 
@@ -36,7 +36,7 @@ ms.locfileid: "62861688"
 ## <a name="visual-studio-command-environment"></a>Visual Studio 命令环境
  Visual Studio 可以承载任意数量的 Vspackage，以及每个可以参与其自身的命令集。 环境显示仅适用于当前任务的命令。 有关详细信息，请参阅[命令可用性](../../extensibility/internals/command-availability.md)并[选择上下文对象](../../extensibility/internals/selection-context-objects.md)。
 
- 定义新的命令、 菜单、 工具栏或快捷菜单的 VSPackage 提供其命令信息到 Visual Studio 在安装时，通过引用本机或托管程序集中的资源的注册表项。 每个资源然后引用的二进制数据资源 (*.cto*) 文件，Visual Studio 命令表进行编译时生成 (*.vsct*) 文件。 这使 Visual Studio，而无需加载每个已安装的 VSPackage 提供合并的命令集、 菜单和工具栏。
+ 定义新的命令、 菜单、 工具栏或快捷菜单的 VSPackage 提供其命令信息到 Visual Studio 在安装时，通过引用本机或托管程序集中的资源的注册表项。 每个资源然后引用的二进制数据资源 ( *.cto*) 文件，Visual Studio 命令表进行编译时生成 ( *.vsct*) 文件。 这使 Visual Studio，而无需加载每个已安装的 VSPackage 提供合并的命令集、 菜单和工具栏。
 
 ### <a name="command-organization"></a>命令组织
  在环境定位按组、 优先级别和菜单命令。
@@ -51,7 +51,7 @@ ms.locfileid: "62861688"
 
   命令可以分配给主组。 主要组控制的命令在主菜单结构和位置**自定义**对话框。 命令可以出现在多个组;例如，命令可以是主菜单、 快捷菜单和工具栏。 有关详细信息，请参阅[Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。
 
-### <a name="command-routing"></a>命令传送
+### <a name="command-routing"></a>命令路由
  调用和 Vspackage 的路由命令的过程不同于对象实例上调用方法的过程。
 
  环境将路由到最外面的 （全局） 上下文命令按顺序从最内部的 （本地） 命令上下文，它基于当前所选内容。 无法执行该命令的第一个上下文是对其进行处理。 有关详细信息，请参阅[命令传送算法](../../extensibility/internals/command-routing-algorithm.md)。

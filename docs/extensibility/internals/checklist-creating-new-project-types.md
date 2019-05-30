@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64e00c452f01c95046b4dc669dbd3bdd1517d287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861747"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309193"
 ---
 # <a name="checklist-create-new-project-types"></a>清单：创建新的项目类型
 必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南：
@@ -49,13 +49,13 @@ ms.locfileid: "62861747"
 
     - 对象或从派生的类`IDispatch`，可用于自动化。
 
-    - XML 命令表 (*.vsct*) 文件。 有关详细信息，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+    - XML 命令表 ( *.vsct*) 文件。 有关详细信息，请参阅[Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 6. 测试、 调试和启动您的项目类型。
 
 7. 显示的项目中**项目**选项卡**添加引用**对话框中，通过设置`VARIANT_TRUE`的值作为`VSHPROPID_ShowProjInSolutionPage`。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
 
-8. 创建 Microsoft 安装程序 (*.msi*) 安装你的 Vspackage 的文件。 有关详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)，[注册项目类型](../../extensibility/internals/registering-a-project-type.md)，并[Vspackage](../../extensibility/internals/vspackages.md)。
+8. 创建 Microsoft 安装程序 ( *.msi*) 安装你的 Vspackage 的文件。 有关详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)，[注册项目类型](../../extensibility/internals/registering-a-project-type.md)，并[Vspackage](../../extensibility/internals/vspackages.md)。
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

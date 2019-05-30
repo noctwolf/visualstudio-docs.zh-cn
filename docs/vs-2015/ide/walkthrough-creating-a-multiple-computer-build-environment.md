@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674155"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263020"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ ms.locfileid: "65674155"
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. 只将下列文件从 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)中所述。 无其他文件可复制。  
+5. 只将下列文件从 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 无其他文件可复制。  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ ms.locfileid: "65674155"
          对于本机 64 位生成，请指向 64 位 MSBuild。  
   
 ## <a name="see-also"></a>请参阅  
- [准备用于运行调试可执行文件的测试计算机](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [准备用于运行调试可执行文件的测试计算机](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [命令行参考](../msbuild/msbuild-command-line-reference.md)

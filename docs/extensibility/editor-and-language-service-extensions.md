@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK]
 ms.assetid: 5653bac9-724f-4948-a820-68ce6aa96365
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c75eaca7ee97bf6ea33f3d0cce245599df5ca5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1df6f65db70425650fc2860bf5ddf6e2d2e203c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912502"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353374"
 ---
 # <a name="editor-and-language-service-extensions"></a>编辑器和语言服务扩展
 您可以扩展 Visual Studio 代码编辑器中的大多数功能。 编辑器基于 Windows Presentation Foundation (WPF) 上，并以托管代码编写。 尽管这种设计不同于早期版本的 Visual Studio 中设计，它提供的大多数相同功能。 若要扩展编辑器，使用 Managed Extensibility Framework (MEF)。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b27df2b9b93276ade06f97c9e80fd0c0483ef963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415152"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309989"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 中的项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支持多个可以生成、 调试、 运行，和/或已部署的配置。 配置是使用属性、 通常编译器开关和文件位置的命名集所述的生成类型。 默认情况下，新的解决方案包含两个配置*调试*并*发行*。 可以使用其默认设置，或修改以满足您特定的解决方案和/或项目要求应用这些配置。 某些包可以生成两种方式： 作为一个 ActiveX 编辑器，或作为就地组件。 项目不需要支持多个配置，但是。 如果没有可用的只有一个配置，则该配置映射到的所有解决方案配置。

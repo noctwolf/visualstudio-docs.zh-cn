@@ -1,5 +1,5 @@
 ---
-title: 演练：将主机连接到生成的指令处理器
+title: 连接到生成的指令处理器的主机
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 255c82b09e87180149756ce684f001652f4b962a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cc45f3b2c83b9f54d1912ae7dbfa90a6b552bb3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577669"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261870"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到所生成的指令处理器
 
@@ -67,12 +67,12 @@ ms.locfileid: "62577669"
 
    有关创建域特定语言解决方案的详细信息，请参阅[如何：创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
-2. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+2. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
    > [!IMPORTANT]
    > 此步骤中生成指令处理器，并将该密钥为其添加在注册表中。
 
-3. 在“调试”菜单上，单击“启动调试”。
+3. 在“调试”  菜单上，单击“启动调试”  。
 
     此时将打开 Visual Studio 的第二个实例。
 
@@ -90,7 +90,7 @@ ms.locfileid: "62577669"
 
 1. 打开 CustomHost 解决方案。
 
-2. 在“项目”菜单上，单击“添加引用”。
+2. 在“项目”菜单上，单击“添加引用”   。
 
      **添加引用**对话框将打开带有 **.NET**显示的选项卡。
 
@@ -228,9 +228,9 @@ ms.locfileid: "62577669"
             }
     ```
 
-7. 在“文件”菜单上，单击“全部保存”。
+7. 在“文件”菜单上，单击“全部保存”   。
 
-8. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+8. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>测试指令处理器的自定义主机
 

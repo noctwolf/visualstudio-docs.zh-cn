@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd976c4710754d446c6b63e628427c42bf7da17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93d4e2a307a6bdd8f06b928103c38337497b7a95
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432394"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353470"
 ---
 # <a name="supporting-multiple-document-views"></a>支持多个文档视图
 通过为您的编辑器创建单独的文档数据和文档视图对象，可以提供多个文档的视图。 一些额外的文档视图会非常有用的情况是：

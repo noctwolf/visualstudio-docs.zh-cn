@@ -1,5 +1,5 @@
 ---
-title: 触发器挂起、 继续和后台事件调试 UWP 时 |Microsoft Docs
+title: 触发器挂起/恢复/背景事件调试 UWP 时
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aefa6bad31b15445ab4b294f8c2e8a80e320e88c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388498"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263342"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。
@@ -70,7 +70,7 @@ ms.locfileid: "63388498"
 
 1. 在要调试的后台任务代码中设置断点。
 
-2. 打开启动项目的调试属性页。 在“解决方案资源管理器”中，选择项目。 在 **“调试”** 菜单中，选择 **“属性”**。
+2. 打开启动项目的调试属性页。 在“解决方案资源管理器”中，选择项目。 在 **“调试”** 菜单中，选择 **“属性”** 。
 
      有关C++项目中，展开**配置属性**，然后选择**调试**。
 
@@ -104,7 +104,7 @@ ms.locfileid: "63388498"
 
 2. 在 **“操作”** 窗格中，选择 **“查看”** ，然后确保选中 **“显示分析和调试日志”** 。
 
-3. 在 **“事件查看器(本地)”** 树中，依次展开 **“应用程序和服务日志”** > **“Microsoft”** > **“Windows”** > **“BackgroundTasksInfrastructure”**。
+3. 在 **“事件查看器(本地)”** 树中，依次展开 **“应用程序和服务日志”**  >  **“Microsoft”**  >  **“Windows”**  >  **“BackgroundTasksInfrastructure”** 。
 
 4. 选择 **“诊断”** 日志。
 

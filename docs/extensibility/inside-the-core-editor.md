@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d400e8b122ae43424bea55c7a1d6f4bc21708707
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861966"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344332"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器是一组让你修改和查询文本信息的多个组件。 如果已使用传统的 API 自定义核心编辑器，可以继续使用这些自定义，这将通过编辑器适配器路由。 建议，但是，调整到新的编辑器 API 自定义设置。

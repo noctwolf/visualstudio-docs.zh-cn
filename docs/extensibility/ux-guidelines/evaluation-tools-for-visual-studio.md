@@ -3,17 +3,17 @@ title: 用于 Visual Studio 的评估工具 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11856141a6c3f5ca186428d67edf10fdbd35787b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798383"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335386"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>用于 Visual Studio 的评估工具
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>针对 Visual Studio 的耕耘核对清单
@@ -47,7 +47,7 @@ ms.locfileid: "62798383"
 
 - 验证所有标签，除非组头和按钮，以冒号结尾，并且前加上与它们配对的控件。
 
-- 验证按钮、 命令和启动 UI 来捕获用户输入的命令链接结束省略号中 **[...]**.
+- 验证按钮、 命令和启动 UI 来捕获用户输入的命令链接结束省略号中 **[...]** .
 
      示例：
 
@@ -157,11 +157,11 @@ ms.locfileid: "62798383"
 
 - 它是可接受使用仅省略号中使用的小方形按钮 **[...]** 而不是它 **[浏览...]** 按钮 （或类似的功能）。 如果使用，请验证按钮为 23 x 23 的大小。
 
-- 如果有多个 **[浏览...]** 按钮在对话框中，然后验证缩写的版本 (仅限省略号 **[...]**) 用于所有。
+- 如果有多个 **[浏览...]** 按钮在对话框中，然后验证缩写的版本 (仅限省略号 **[...]** ) 用于所有。
 
 - 验证该省略号 **[...]** 按钮没有助记键。 当焦点在其旁边的输入控件上时，一个选项卡应将焦点移到的省略号按钮。
 
-- 验证按钮、 命令和启动捕获更多用户输入的辅助用户界面的命令链接必须以省略号结尾 **[...]**.
+- 验证按钮、 命令和启动捕获更多用户输入的辅助用户界面的命令链接必须以省略号结尾 **[...]** .
 
 #### <a name="hyperlinks"></a>超链接
 

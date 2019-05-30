@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2572f66acf20efb322323fa3be28f0cfe790594d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7c322b960360231c2e8a1d2aa1a9920bbcf5521
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928901"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263304"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>Visual Studio 中的部署概述
 
@@ -118,7 +118,7 @@ ms.locfileid: "62928901"
 
 - [使用发布工具部署 .NET Core 应用程序](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [将 ASP.NET Core 应用发布到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Visual C++ 中的部署](/cpp/ide/deployment-in-visual-cpp)
+- [Visual C++ 中的部署](/cpp/windows/deployment-in-visual-cpp)
 - [部署 UWP 应用](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [使用 Web 部署将 Node.js 应用发布到 Azure](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 - [将 Python 应用发布到 Azure 应用服务](../python/publishing-python-web-applications-to-azure-from-visual-studio.md?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1194dba5069913d01a6e4858801ea2890db94224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da68fa0a6c115a09ba2050f8c84ea6700ee4fc76
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910561"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315793"
 ---
 # <a name="author-a-windows-installer-package"></a>创作 Windows Installer 包
 数据驱动器的 Windows 安装程序模型。 而不是编写过程的脚本，以将文件复制和写入注册表项，例如，您创建行和列中包含的文件和注册表数据的数据库表。

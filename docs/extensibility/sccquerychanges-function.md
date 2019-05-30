@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccQueryChanges function
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21dfe4418d033776431f4864f46412a798be204
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e2b1e504bef3ec9507afcddf4f75bc5f697e843
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800319"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353507"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函数
 此函数枚举给定的列表的文件，对于每个文件通过回调函数提供有关名称更改的信息。
@@ -58,7 +58,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询过程已成功完成。|
 |SCC_E_PROJNOTOPEN|尚未在源代码管理中打开该项目。|

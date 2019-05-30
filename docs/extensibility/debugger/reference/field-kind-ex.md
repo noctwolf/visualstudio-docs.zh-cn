@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - FIELD_KIND_EX enumeration
 ms.assetid: 922c3208-1e94-485f-b70a-3bc96affeff8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97a2d4e76ebe1ed206ebbc2eea09b15865b86a2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fd481883c826ff21a82b52bdd82de087b6219b58
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700005"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309017"
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
 枚举其他类型的字段的[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象可包含。 此枚举扩展[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)枚举。
@@ -41,12 +44,15 @@ public enum enum_FIELD_KIND_EX
 };
 ```
 
-## <a name="members"></a>成员
-FIELD_KIND_EX_NONE 字段不包含扩展的类型。
+## <a name="fields"></a>字段
+`FIELD_KIND_EX_NONE`\
+字段不包含扩展的类型。
 
-FIELD_TYPE_EX_METHODVAR 字段包含一个方法的变量。
+`FIELD_TYPE_EX_METHODVAR`\
+字段包含一个方法的变量。
 
-FIELD_TYPE_EX_CLASSVAR 字段包含一个类变量。
+`FIELD_TYPE_EX_CLASSVAR`\
+字段包含一个类变量。
 
 ## <a name="requirements"></a>要求
 标头：Sh.h

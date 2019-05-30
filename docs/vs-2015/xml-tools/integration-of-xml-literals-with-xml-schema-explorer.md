@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c0c7cac1a5cedc154fdc771ef4615a79c7ead1cd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654420"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263837"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 文本与 XML 架构资源管理器的集成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Visual Basic 支持 XML 文本，这意味着，您可以直接在 Visual Basic 
   
  ![Visual Basic XML 文本;XML 架构资源管理器](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif "VBXMLLiteralsWithXMLSchemaExplorer2")  
   
- Visual Studio 2008 SP1 中已经引入了此功能。 若要观看详细介绍此功能是在其中的访谈，请参阅[第 9 频道访谈：XML 架构资源管理器在 Visual Studio 2008 SP1](http://go.microsoft.com/fwlink/?LinkId=140183)。  
+ Visual Studio 2008 SP1 中已经引入了此功能。 若要观看详细介绍此功能是在其中的访谈，请参阅[第 9 频道访谈：XML 架构资源管理器在 Visual Studio 2008 SP1](https://channel9.msdn.com/Blogs/funkyonex/XML-Schema-Explorer-in-Visual-Studio-2008-SP1)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：将 XML 架构设计器与 XML 文本结合使用](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)
