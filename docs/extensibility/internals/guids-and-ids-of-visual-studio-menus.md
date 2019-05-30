@@ -10,17 +10,17 @@ helpviewer_keywords:
 - guid
 - menus
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f858bec8ff025061603c72eda4ff6fc6d36549c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 26171ae9f4464c3b8b63762d92e9a91d5a4b8420
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263629"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329107"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 菜单
 这篇文章枚举菜单和 Visual Studio 菜单栏上的组的 GUID 和 ID 的值。 这些值中定义 *.vsct*作为 Visual Studio SDK 的一部分安装的文件。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。

@@ -3,18 +3,18 @@ title: 演练：在起始页上保存用户设置 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79a54867044961d972e2ded452958d2463038e7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318518"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>演练：起始页上保存用户设置
 
@@ -160,7 +160,7 @@ ms.locfileid: "62964776"
 
 ## <a name="test-the-control"></a>测试控件
 
-1. 按 F5 。
+1. 按 F5  。
 
      此时将打开 Visual Studio 的实验实例。
 
@@ -168,7 +168,7 @@ ms.locfileid: "62964776"
 
 3. 在中**环境**节点中，单击**启动**，然后在**自定义起始页**列表中，选择 **[已安装的扩展] 保存我设置起始页**.
 
-     单击 **“确定”**。
+     单击 **“确定”** 。
 
 4. 关闭已打开，，然后在启动页**视图**菜单上，单击**起始页**。
 

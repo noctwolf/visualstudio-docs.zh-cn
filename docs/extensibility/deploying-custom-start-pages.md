@@ -6,18 +6,18 @@ helpviewer_keywords:
 - package start page
 - deploy start page
 ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3f09f03a3404bbde346370149f210bf45e6e2306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a84ba2ff92463ebea177fc5c3b04810de7ae817
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864041"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348218"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自定义起始页
 
@@ -91,7 +91,7 @@ Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX �
 
 1. 复制 *.xaml*文件，包含起始页标记，以及任何支持文件以外的程序集，并将其粘贴在用户的 * \StartPages\*文件夹。
 
-2. 如果启动页要求程序集，将它们复制并将其粘贴 *...\\{Visual Studio 安装文件夹} \Common7\IDE\PrivateAssemblies\\*。
+2. 如果启动页要求程序集，将它们复制并将其粘贴 *...\\{Visual Studio 安装文件夹} \Common7\IDE\PrivateAssemblies\\* 。
 
 3. 在中**自定义起始页**上列出**启动**选项页上，选择新的起始页。 有关详细信息，请参阅[自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)。
 

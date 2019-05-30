@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], viewing data
 - debugging [Debugging SDK], visualizing data
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852616ac77096a5b31078d64051f67f6cbb3ecb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b29d1135df370232324edec9d1bd4a23397b17e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912824"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348344"
 ---
 # <a name="visualizing-and-viewing-data"></a>可视化和查看数据
 类型可视化工具和自定义查看器中快速对开发人员有意义的方式呈现数据。 表达式计算器 (EE) 可以支持第三方类型可视化工具，以及提供其自己的自定义查看器。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - glyphs, source control packages
 - source control packages, glyphs
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f66613c5f5b8b6e48efda17330f66cdb87a06cf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d30682a85551aab062824688b635260c30df63f9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909891"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321348"
 ---
 # <a name="glyph-control-source-control-vspackage"></a>字形控件 （源代码管理 VSPackage）
 可用于源代码管理 Vspackage 的深度集成的一部分是能够显示其自己的标志符号，以指示源代码管理下的项的状态。

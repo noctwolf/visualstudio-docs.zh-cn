@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418690"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328055"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>将项目添加到添加新项对话框
 将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示**AddItemTemplates**部分包含的路径和名称的目录中提供哪些项**添加新项**放入对话框。
@@ -46,7 +46,7 @@ ms.locfileid: "63418690"
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- 为列出的目录**TemplatesDir**，即 *%template_path%\\&lt;SomeProjectItems&gt;*，是在左侧的节点**添加新项**对话框框树。 在树中的其他元素都基于该根目录中的子目录。 可用于添加到项目文件是在右窗格中的项**添加新项**对话框。
+ 为列出的目录**TemplatesDir**，即 *%template_path%\\&lt;SomeProjectItems&gt;* ，是在左侧的节点**添加新项**对话框框树。 在树中的其他元素都基于该根目录中的子目录。 可用于添加到项目文件是在右窗格中的项**添加新项**对话框。
 
  通常情况下，此文件夹将包含模板文件，例如模板 HTML 项目或 *.cpp*文件，以及任何 *.vsz*文件用于启动向导。 若要控制项的显示方式，还可以包括 *.vsdir*用于本地化的目录名称和图标的文件。 已本地化的字符串是在对话框中，表示此节点中的显示的标题**添加新项**对话框框树。
 

@@ -3,18 +3,18 @@ title: 如何：将扩展性项目迁移到 Visual Studio 2017 |Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863562"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319313"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
@@ -31,7 +31,7 @@ ms.locfileid: "62863562"
 
 所有的 VSIX 项目将需要主版本单向升级到 Visual Studio 2017。
 
-项目文件 (例如 **.csproj*) 将更新：
+项目文件 (例如 * *.csproj*) 将更新：
 
 * MinimumVisualStudioVersion-现在将设置为 15.0
 * OldToolsVersion (如果以前存在)-现在将设置为 14.0
@@ -47,7 +47,7 @@ ms.locfileid: "62863562"
 
 * 右键单击解决方案并选择**为解决方案管理 NuGet 包**。
 * 导航到**更新**选项卡。
-* 选择**Microsoft.VSSDK.BuildTools （最新版本）**。
+* 选择**Microsoft.VSSDK.BuildTools （最新版本）** 。
 * 按**更新**。
 
 ![VSSDK 生成工具](media/vssdk-build-tools.png)
@@ -103,7 +103,7 @@ ms.locfileid: "62863562"
 
    ![添加 roslyn 必备组件](media/add-roslyn-prerequisite.png)
 
-* 按“确定”。
+* 按“确定”  。
 
 ## <a name="update-debug-settings-for-the-project"></a>更新项目的调试设置
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701714"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317585"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要从中检索文件的名称类型。
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>成员
-GN_NAME 指定上下文的文档的友好名称。
+## <a name="fields"></a>字段
+`GN_NAME`\
+指定文档或上下文的友好的名称。
 
-GN_FILENAME 指定文档或上下文的完整路径。
+`GN_FILENAME`\
+指定文档或上下文的完整的路径。
 
-GN_BASENAME 指定基文件名而不是文档或上下文的完整路径。
+`GN_BASENAME`\
+指定的基文件名而不是文档或上下文的完整路径。
 
-GN_MONIKERNAME 名字对象的形式指定文档或上下文的唯一的名称。
+`GN_MONIKERNAME`\
+名字对象的形式指定文档或上下文的唯一的名称。
 
-GN_URL 指定上下文的文档的 URL 名称。
+`GN_URL`\
+指定文档或上下文 URL 的名称。
 
-如果存在，则 GN_TITLE 指定文档的标题。
+`GN_TITLE`\
+如果存在，请指定文档的标题。
 
-GN_STARTPAGEURL 获取起始页 URL 处理。
+`GN_STARTPAGEURL`\
+获取进程的起始页 URL。
 
 ## <a name="remarks"></a>备注
 这些值作为参数传递[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，并[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，以指定名称返回的类型。

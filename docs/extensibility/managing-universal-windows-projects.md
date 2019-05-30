@@ -3,17 +3,17 @@ title: 管理通用 Windows 项目 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907038"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340549"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 项目
 
@@ -293,7 +293,7 @@ ms.locfileid: "62907038"
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. 现在试一试。按 F5 启动实验实例。 在实验实例中创建一个 C# 通用中心应用程序项目 (在**新的项目**对话框中， **Visual C#** > **Windows**  >  **Windows 8** > **通用** > **中心应用**)。 加载解决方案后，请转到**工具**菜单，然后单击**调用 TestUniversalProject**，然后再签入文本**输出**窗格。 显示的内容应与以下类似：
+16. 现在试一试。按 F5 启动实验实例。 在实验实例中创建一个 C# 通用中心应用程序项目 (在**新的项目**对话框中， **Visual C#**  > **Windows**  >  **Windows 8** > **通用** > **中心应用**)。 加载解决方案后，请转到**工具**菜单，然后单击**调用 TestUniversalProject**，然后再签入文本**输出**窗格。 显示的内容应与以下类似：
 
     ```
     Found shared project: HubApp.Shared

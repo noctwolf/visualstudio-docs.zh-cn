@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_ADDRESS structure
 ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45fa0be28fcad891366581e13425d3940a0a967
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc25fb53db918486029e931a06a9e2de37f81c5a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684606"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346312"
 ---
 # <a name="debugaddress"></a>DEBUG_ADDRESS
 此结构表示地址。
@@ -42,22 +45,26 @@ public struct DEBUG_ADDRESS {
 }
 ```
 
-## <a name="terms"></a>术语
-ulAppDomainID 进程 id。
+## <a name="members"></a>成员
+`ulAppDomainID`\
+进程 id。
 
-guidModule 包含此地址的模块的 GUID。
+`guidModule`\
+包含此地址的模块的 GUID。
 
-tokClass 确定类或此地址的类型的令牌。
+`tokClass`\
+确定类或类型的地址，此标记。
 
 > [!NOTE]
 > 此值是特定于符号提供程序，因此具有以外的其他任何常规含义为类类型的标识符。
 
-一个 addr [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构，其中包含描述单个地址类型的结构的并集。 值`addr`。`dwKind` 来自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举，其中介绍了如何解释并集。
+`addr`\
+一个[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构，其中包含描述单个地址类型的结构的并集。 值`addr`。`dwKind` 来自[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举，其中介绍了如何解释并集。
 
 ## <a name="remarks"></a>备注
 此结构传递给[GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md)要填充的方法。
 
-**警告 [c + +]**
+**警告 [C++仅]**
 
 如果`addr.dwKind`是`ADDRESS_KIND_METADATA_LOCAL`; 如果`addr.addr.addrLocal.pLocal`不为空值，则必须调用`Release`上标记的指针：
 

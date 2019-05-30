@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 5388EEBA-211D-4114-8CD9-70C899919F7E
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7899a096bb2a56e93ea55a4ba0a17cde272bd615
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66a1c42340a88f0756d4fcc1f323433ab2640127
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950955"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322797"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>演练：创建扩展包
 
@@ -31,7 +31,7 @@ ms.locfileid: "62950955"
 
 扩展包，项模板创建具有可以一起安装的扩展插件的设置的扩展包。
 
-1. 在中**新的项目**对话框中，搜索"vsix"，然后选择**VSIX 项目**。 有关**项目名称**，键入"测试扩展包"。 选择“创建”。
+1. 在中**新的项目**对话框中，搜索"vsix"，然后选择**VSIX 项目**。 有关**项目名称**，键入"测试扩展包"。 选择“创建”  。
 
 2. 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 转到 Visual C#**扩展性**节点，然后选择**扩展包**。 保留默认的文件名称 (ExtensionPack1.cs)。
 
@@ -83,7 +83,7 @@ ms.locfileid: "62950955"
 
 2. 单击**Online** ，然后搜索"测试扩展包"。
 
-3. 单击 **“下载”**。 然后将安装计划扩展和扩展包中包括的扩展其列表。
+3. 单击 **“下载”** 。 然后将安装计划扩展和扩展包中包括的扩展其列表。
 
 4. 下面是示例的扩展包，下载视图**管理扩展**对话框。 如果想要安装扩展包中只有某些包含扩展插件，则可以修改的扩展列表中**计划安装**。
 

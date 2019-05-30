@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 02ef202436e12ae075c41f507577bacaa968c60b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411339"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341585"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 
@@ -37,7 +37,7 @@ ms.locfileid: "63411339"
 
 2. 打开*VSPackage.resx*文件，并添加以下三个字符串资源：
 
-    |名称|“值”|
+    |名称|值|
     |----------|-----------|
     |106|我的类别|
     |107|我的设置|
@@ -96,9 +96,9 @@ ms.locfileid: "63411339"
 
 3. 在树视图中的左窗格中，展开**My Category** ，然后单击**我的网格页**。
 
-4. 更改的值**OptionFloat**为 3.1416 和**OptionInteger**到 12。 单击 **“确定”**。
+4. 更改的值**OptionFloat**为 3.1416 和**OptionInteger**到 12。 单击 **“确定”** 。
 
-5. 在“工具”菜单上，单击“导入和导出设置”。
+5. 在“工具”  菜单上，单击“导入和导出设置”  。
 
      **导入和导出设置**向导显示。
 
@@ -114,7 +114,7 @@ ms.locfileid: "63411339"
 
      **名称设置文件**页将出现。
 
-9. 将新的设置文件命名*MySettings.vssettings*并将其保存在相应的目录中。 单击 **“完成”**。
+9. 将新的设置文件命名*MySettings.vssettings*并将其保存在相应的目录中。 单击 **“完成”** 。
 
      **导出完成**页将报告已成功导出你的设置。
 
@@ -137,7 +137,7 @@ ms.locfileid: "63411339"
 
 11. 关闭而不更改其设置文件。
 
-12. 上**工具**菜单上，单击**选项**，展开**My Category**，单击**我的网格页**然后更改的值**OptionFloat**为 1.0 并**OptionInteger**为 1。 单击 **“确定”**。
+12. 上**工具**菜单上，单击**选项**，展开**My Category**，单击**我的网格页**然后更改的值**OptionFloat**为 1.0 并**OptionInteger**为 1。 单击 **“确定”** 。
 
 13. 上**工具**菜单上，单击**导入和导出设置**，选择**导入选定的环境设置**，然后单击**下一步**。
 
@@ -147,7 +147,7 @@ ms.locfileid: "63411339"
 
      **选择要导入的设置集合**页将出现。
 
-15. 选择*MySettings.vssettings*中的文件**我的设置**节点的树视图。 如果文件未出现在树视图中，单击**浏览**并找到它。 单击 **“下一步”**。
+15. 选择*MySettings.vssettings*中的文件**我的设置**节点的树视图。 如果文件未出现在树视图中，单击**浏览**并找到它。 单击 **“下一步”** 。
 
      **选择要导入的设置**对话框随即出现。
 

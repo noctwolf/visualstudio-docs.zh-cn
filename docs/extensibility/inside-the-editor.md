@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861760"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340793"
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 
@@ -108,7 +108,7 @@ ms.locfileid: "62861760"
 
 #### <a name="spans-and-normalizedspancollections"></a>范围和 NormalizedSpanCollections
 
-一个<xref:Microsoft.VisualStudio.Text.Span>表示可应用于文本快照中的文本范围的间隔。 快照位置是从零开始，因此范围可以在包括零个任何位置处开始。 `End`跨度的属性是否等于之和其`Start`属性并将其`Length`属性。 一个`Span`不包括按索引的字符`End`属性。 例如，具有的起始范围 = 5 且长度 = 3 具有最终 = 8，它包括在位置 5、 6 和 7 个字符。 此跨度的表示法是 5..8）。
+一个<xref:Microsoft.VisualStudio.Text.Span>表示可应用于文本快照中的文本范围的间隔。 快照位置是从零开始，因此范围可以在包括零个任何位置处开始。 `End`跨度的属性是否等于之和其`Start`属性并将其`Length`属性。 一个`Span`不包括按索引的字符`End`属性。 例如，具有的起始范围 = 5 且长度 = 3 具有最终 = 8，它包括在位置 5、 6 和 7 个字符。 此跨度的表示法是 [5..8)。
 
 这两个范围相交如果它们具有任何共同的位置，其中包括的结束位置。 因此的交集 [3, 5) 和 [2, 7) 是 [3, 5) 和的交集 [3, 5) 和 [5, 7) 是 [5，5）。 (请注意，[5，5) 是空范围。)
 

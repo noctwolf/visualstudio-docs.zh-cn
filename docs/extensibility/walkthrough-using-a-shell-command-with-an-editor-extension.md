@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444927"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328151"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>演练：使用编辑器扩展中使用 shell 命令
 从 VSPackage，你可以向编辑器中添加功能，如菜单命令。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。
@@ -38,7 +38,7 @@ ms.locfileid: "63444927"
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>将 MEF 扩展添加到命令扩展
 
-1. 在中**解决方案资源管理器**，右键单击解决方案节点，单击**添加**，然后单击**新项目**。 在中**添加新项目**对话框中，单击**扩展性**下**Visual C#**，然后**VSIX 项目**。 将项目命名为 `CommentAdornmentTest`。
+1. 在中**解决方案资源管理器**，右键单击解决方案节点，单击**添加**，然后单击**新项目**。 在中**添加新项目**对话框中，单击**扩展性**下**Visual C#** ，然后**VSIX 项目**。 将项目命名为 `CommentAdornmentTest`。
 
 2. 因为此项目将与强名称的 VSPackage 程序集进行交互，必须为程序集进行签名。 可以重复使用已创建 VSPackage 程序集密钥文件。
 

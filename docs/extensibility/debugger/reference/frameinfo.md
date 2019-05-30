@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FRAMEINFO structure
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e7329acb3cdbff5c2f84fbd035867791012b2e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680498"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344464"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述一个堆栈帧。
@@ -61,31 +64,44 @@ public struct FRAMEINFO {
 ```
 
 ## <a name="members"></a>成员
-m_dwValidFields A 中的标志的组合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚举，用于指定哪些字段填充。
+`m_dwValidFields`\
+中的标志的组合[FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)枚举，用于指定哪些字段填充。
 
-m_bstrFuncName 与堆栈帧关联的函数名称。
+`m_bstrFuncName`\
+与此堆栈帧关联的函数名称。
 
-m_bstrReturnType 与堆栈帧关联的返回类型。
+`m_bstrReturnType`\
+与此堆栈帧关联的返回类型。
 
-m_bstrArgs 与堆栈帧关联的函数的参数。
+`m_bstrArgs`\
+与此堆栈帧关联的函数的参数。
 
-m_bstrLanguage 语言中实现函数。
+`m_bstrLanguage`\
+在其中实现该函数使用的语言。
 
-m_bstrModule 与堆栈帧关联的模块名称。
+`m_bstrModule`\
+与此堆栈帧关联的模块名称。
 
-m_addrMin 最小物理堆栈地址。
+`m_addrMin`\
+最小物理堆栈地址中。
 
-m_addrMAX 的最大物理堆栈地址。
+`m_addrMAX`\
+最大物理堆栈地址中。
 
-m_pFrame [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)对象，表示此堆栈帧。
+`m_pFrame`\
+[IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)对象，表示此堆栈帧。
 
-m_pFrame [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)对象，表示包含此堆栈帧的模块。
+`m_pFrame`\
+[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)对象，表示包含此堆栈帧的模块。
 
-m_fHasDebugInfo 非零 (`TRUE`) 如果给定范围中存在的调试信息。
+`m_fHasDebugInfo`\
+非零 (`TRUE`) 如果给定范围中存在的调试信息。
 
-m_fHasDebugInfo 非零 (`TRUE`) 将不再有效的代码与关联的堆栈帧时。
+`m_fHasDebugInfo`\
+非零 (`TRUE`) 将不再有效的代码与关联的堆栈帧时。
 
-m_fHasDebugInfo 非零 (`TRUE`) 如果会话调试管理器 (SDM) 进行批注的堆栈帧。
+`m_fHasDebugInfo`\
+非零 (`TRUE`) 如果会话调试管理器 (SDM) 进行批注的堆栈帧。
 
 ## <a name="remarks"></a>备注
 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)要填充的方法。 此结构也包含在一个列表，其中包含在[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)接口，反过来，通过调用将返回该值[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。

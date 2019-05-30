@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f37550dbea8b3633c79358822fa8f2bdf1ecb6d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc482050422a9481bddc2902832376fa9dc0c29a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417151"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325380"
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何：为编辑器提供的上下文
 编辑器上下文处于活动状态，仅当编辑器具有焦点或立即之前焦点已移动到工具窗口具有焦点时。 可为编辑器提供上下文，通过执行以下任务：

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409988"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341655"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和其他资产的容器。 项目显示为解决方案中的子级**解决方案资源管理器**。 项目可组织、 生成、 调试和部署的源代码和创建对 Web 服务、 数据库和其他资源的引用。
@@ -224,7 +224,7 @@ Templates
 
     重新生成注册项目模板。
 
-   参数`defaultProjectExtension`并`possibleProjectExtensions`设置为项目文件扩展名 (*.myproj*)。 `projectTemplatesDirectory`参数设置为的相对路径*模板*文件夹。 在生成过程将转换为完整生成并添加到注册表注册项目系统中此路径。
+   参数`defaultProjectExtension`并`possibleProjectExtensions`设置为项目文件扩展名 ( *.myproj*)。 `projectTemplatesDirectory`参数设置为的相对路径*模板*文件夹。 在生成过程将转换为完整生成并添加到注册表注册项目系统中此路径。
 
 ## <a name="test-the-template-registration"></a>测试模板注册
  模板注册会告知 Visual Studio 项目模板文件夹的位置，以使 Visual Studio 可以显示的模板名称和图标**新的项目**对话框。
@@ -601,7 +601,7 @@ Templates
 
 3. 检查有关值`nameSpace`和`className`参数。
 
-   - `nameSpace` 给定的值\<根命名空间 > 元素中的*\Templates\Projects\SimpleProject\SimpleProject.myproj*项目模板文件。 在本例中，该值为 `MyRootNamespace`。
+   - `nameSpace` 给定的值\<根命名空间 > 元素中的 *\Templates\Projects\SimpleProject\SimpleProject.myproj*项目模板文件。 在本例中，该值为 `MyRootNamespace`。
 
    - `className` 都提供了此类源的文件名称，不带文件扩展名值。 在这种情况下，要复制到目标文件夹中的第一个文件是*AssemblyInfo.cs*; 因此，类名的值是`AssemblyInfo`。
 

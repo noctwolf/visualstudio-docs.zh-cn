@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411095"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322838"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，这会设置 Visual Studio 扩展的安装行为。
@@ -60,15 +60,15 @@ ms.locfileid: "63411095"
 
   **许可证**指定文本文件，其中包含用户许可协议，如果不存在。
 
-  **图标**指定的图形文件 (*.png*， *.bmp*， *.jpeg*， *.ico*)，其中包含要在中显示的图标**扩展管理器**，如果存在一个图标。 图标图像必须是 32 x 32 像素或大小调整为那些尺寸。 如果指定无图标，则**扩展管理器**使用默认图标。
+  **图标**指定的图形文件 ( *.png*， *.bmp*， *.jpeg*， *.ico*)，其中包含要在中显示的图标**扩展管理器**，如果存在一个图标。 图标图像必须是 32 x 32 像素或大小调整为那些尺寸。 如果指定无图标，则**扩展管理器**使用默认图标。
 
-  **预览图像**指定的图形文件 (*.png*， *.bmp*， *.jpeg*， *.ico*) 包含到的预览图像显示在**扩展管理器**、 预览图像是否存在。 预览图像必须是 200 x 200 像素。 如果指定没有预览图像，则**扩展管理器**使用默认映像。
+  **预览图像**指定的图形文件 ( *.png*， *.bmp*， *.jpeg*， *.ico*) 包含到的预览图像显示在**扩展管理器**、 预览图像是否存在。 预览图像必须是 200 x 200 像素。 如果指定没有预览图像，则**扩展管理器**使用默认映像。
 
   **标记**添加要用于搜索提示的文本标记。
 
-  **发行说明**指定的文件 (*.txt*， *.rtf*)，其中包含发行说明。 此外会显示发行说明的网站的 URL。
+  **发行说明**指定的文件 ( *.txt*， *.rtf*)，其中包含发行说明。 此外会显示发行说明的网站的 URL。
 
-  **入门指南**指定的文件 (*.txt*， *.rtf*) 包含有关如何使用 VSIX 包中的扩展插件或内容的信息。 扩展安装完成后，会显示此参考。 此外会显示该指南的网站的 URL。
+  **入门指南**指定的文件 ( *.txt*， *.rtf*) 包含有关如何使用 VSIX 包中的扩展插件或内容的信息。 扩展安装完成后，会显示此参考。 此外会显示该指南的网站的 URL。
 
   **更多信息 URL**指定包含有关该产品的其他信息的网站的 URL。
 
@@ -94,7 +94,7 @@ ms.locfileid: "63411095"
 
   **此 VSIX 针对所有用户安装 （需要在安装的特权提升）** 如果选中此复选框，为所有用户安装了扩展; 否则，仅为当前用户安装。
 
-  **由 Windows 安装程序安装此 VSIX**如果选中此复选框，Windows 安装程序安装了扩展 (*.msi*文件); 否则为将其作为典型的 VSIX 包安装 (*.vsix*文件)。
+  **由 Windows 安装程序安装此 VSIX**如果选中此复选框，Windows 安装程序安装了扩展 ( *.msi*文件); 否则为将其作为典型的 VSIX 包安装 ( *.vsix*文件)。
 
   **资产**选项卡包含以下控件。
 

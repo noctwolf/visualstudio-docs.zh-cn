@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831d1326d88e70ffaba2cc0c242c55d7325be705
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fde7ac384a6b2de293fc9baf0075438c9c609236
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689325"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346300"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 描述各种特性[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)或[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)接口。 成员[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构。
@@ -163,98 +166,142 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ```
 
 ## <a name="members"></a>成员
- DBG_ATTRIB_NONE 指示没有属性。
+ `DBG_ATTRIB_NONE`\
+ 表示没有特性。
 
- DBG_ATTRIB_ALL 指示所有属性。
+ `DBG_ATTRIB_ALL`\
+ 指示所有属性。
 
- DBG_ATTRIB_OBJ_IS_EXPANDABLE 指示引用或属性具有子级。
+ `DBG_ATTRIB_OBJ_IS_EXPANDABLE`\
+ 表示引用或属性具有子级。
 
- DBG_ATTRIB_OBJ_HAS_ID 指示已创建此对象的 ID。
+ `DBG_ATTRIB_OBJ_HAS_ID`\
+ 指示已创建此对象的 ID。
 
- DBG_ATTRIB_OBJ_CAN_HAVE_ID 指示可以创建此对象的 ID。
+ `DBG_ATTRIB_OBJ_CAN_HAVE_ID`\
+ 指示可以创建此对象的 ID。
 
- DBG_ATTRIB_VALUE_READONLY 指示的值是只读的。
+ `DBG_ATTRIB_VALUE_READONLY`\
+ 表示值是只读的。
 
- DBG_ATTRIB_VALUE_ERROR 指示的值是错误。
+ `DBG_ATTRIB_VALUE_ERROR`\
+ 指示值错误。
 
- DBG_ATTRIB_VALUE_SIDE_EFFECT 指示计算具有副作用。
+ `DBG_ATTRIB_VALUE_SIDE_EFFECT`\
+ 指示计算具有副作用。
 
- DBG_ATTRIB_OVERLOADED_CONTAINER 指示此属性实际上是重载的容器。
+ `DBG_ATTRIB_OVERLOADED_CONTAINER`\
+ 指示此属性实际上是重载的容器。
 
- DBG_ATTRIB_VALUE_BOOLEAN 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`是布尔值。
+ `DBG_ATTRIB_VALUE_BOOLEAN`\
+ 指示在值`DEBUG_PROPERTY_INFO::bstrValue`是布尔值。
 
- DBG_ATTRIB_VALUE_BOOLEAN_TRUE 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`是一个布尔值和`TRUE`。
+ `DBG_ATTRIB_VALUE_BOOLEAN_TRUE`\
+ 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`是一个布尔值和`TRUE`。
 
- DBG_ATTRIB_VALUE_INVALID 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`无效。
+ `DBG_ATTRIB_VALUE_INVALID`\
+ 表示 `DEBUG_PROPERTY_INFO::bstrValue` 中的值无效。
 
- DBG_ATTRIB_VALUE_NAT 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`是"*不是一件事情*"(NAT)。 NAT 介绍 Intel 64 位处理器指示延迟推理异常的寄存器标志。
+ `DBG_ATTRIB_VALUE_NAT`\
+ 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`是"*不是一件事情*"(NAT)。 NAT 介绍 Intel 64 位处理器指示延迟推理异常的寄存器标志。
 
- DBG_ATTRIB_VALUE_AUTOEXPANDED 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`可能已自动扩展。
+ `DBG_ATTRIB_VALUE_AUTOEXPANDED`\
+ 指示在值`DEBUG_PROPERTY_INFO::bstrValue`可能已自动扩展。
 
- DBG_ATTRIB_VALUE_TIMEOUT 指示的评估已超时。
+ `DBG_ATTRIB_VALUE_TIMEOUT`\
+ 指示，评估已超时。
 
- DBG_ATTRIB_VALUE_RAW_STRING 指示中的值`DEBUG_PROPERTY_INFO::bstrValue`可以由原始字符串。
+ `DBG_ATTRIB_VALUE_RAW_STRING`\
+ 指示在值`DEBUG_PROPERTY_INFO::bstrValue`可以由原始字符串。
 
- DBG_ATTRIB_VALUE_CUSTOM_VIEWER 指示此属性具有与之关联的至少一个自定义查看器。
+ `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`\
+ 指示此属性具有与之关联的至少一个自定义查看器。
 
- DBG_ATTRIB_ACCESS_NONE 指示一个对象，既没有`public`， `private`，也不`protected`类型访问。
+ `DBG_ATTRIB_ACCESS_NONE`\
+ 指示一个对象，既没有`public`， `private`，也不`protected`类型访问。
 
- DBG_ATTRIB_ACCESS_PUBLIC 指示具有公共访问权限的对象。
+ `DBG_ATTRIB_ACCESS_PUBLIC`\
+ 表示对象具有公共访问。
 
- DBG_ATTRIB_ACCESS_PRIVATE 指示具有私有访问权限的对象。
+ `DBG_ATTRIB_ACCESS_PRIVATE`\
+ 表示对象具有私有访问。
 
- DBG_ATTRIB_ACCESS_PROTECTED 指示访问受保护的对象。
+ `DBG_ATTRIB_ACCESS_PROTECTED`\
+ 表示对象具有受保护的访问。
 
- DBG_ATTRIB_ACCESS_FINAL 指示具有最终访问的对象。
+ `DBG_ATTRIB_ACCESS_FINAL`\
+ 表示对象具有最终访问。
 
- DBG_ATTRIB_ACCESS_ALL 掩码中提取访问属性从`DBG_ATTRIB_FLAGS`。
+ `DBG_ATTRIB_ACCESS_ALL`\
+ 掩码中提取的访问特性从`DBG_ATTRIB_FLAGS`。
 
- DBG_ATTRIB_STORAGE_NONE 指示不存在指定的存储类型。
+ `DBG_ATTRIB_STORAGE_NONE`\
+ 指示不存在指定的存储类型。
 
- DBG_ATTRIB_STORAGE_GLOBAL 指示全局存储。
+ `DBG_ATTRIB_STORAGE_GLOBAL`\
+ 表示全局存储。
 
- DBG_ATTRIB_STORAGE_STATIC 指示静态存储。
+ `DBG_ATTRIB_STORAGE_STATIC`\
+ 表示静态存储。
 
- DBG_ATTRIB_STORAGE_REGISTER 指示存储在寄存器中。
+ `DBG_ATTRIB_STORAGE_REGISTER`\
+ 表示存储在寄存器中。
 
- DBG_ATTRIB_STORAGE_ALL 掩码中提取存储属性从`DBG_ATTRIB_FLAGS`。
+ `DBG_ATTRIB_STORAGE_ALL`\
+ 掩码中提取的存储属性`DBG_ATTRIB_FLAGS`。
 
- DBG_ATTRIB_TYPE_NONE 指示没有类型修饰符。
+ `DBG_ATTRIB_TYPE_NONE`\
+ 指示没有类型修饰符。
 
- DBG_ATTRIB_TYPE_VIRTUAL 指示对象的类型为虚拟。
+ `DBG_ATTRIB_TYPE_VIRTUAL`\
+ 指示对象的类型为虚拟。
 
- DBG_ATTRIB_TYPE_CONSTANT 指示对象的类型为常量。
+ `DBG_ATTRIB_TYPE_CONSTANT`\
+ 表示对象的类型是常量。
 
- DBG_ATTRIB_TYPE_SYNCHRONIZED 指示同步的对象的类型。
+ `DBG_ATTRIB_TYPE_SYNCHRONIZED`\
+ 指示同步的对象的类型。
 
- DBG_ATTRIB_TYPE_VOLATILE 指示对象的类型是易失性。
+ `DBG_ATTRIB_TYPE_VOLATILE`\
+ 指示对象的类型是易失性。
 
- DBG_ATTRIB_TYPE_ALL 掩码中提取类型属性从`DBG_ATTRIB_FLAGS`。
+ `DBG_ATTRIB_TYPE_ALL`\
+ 掩码中提取的类型属性`DBG_ATTRIB_FLAGS`。
 
- DBG_ATTRIB_DATA 指示此对象为数据字段。
+ `DBG_ATTRIB_DATA`\
+ 指示此对象为数据字段。
 
- DBG_ATTRIB_METHOD 指示此对象是一种方法。
+ `DBG_ATTRIB_METHOD`\
+ 指示此对象是一种方法。
 
- DBG_ATTRIB_PROPERTY 指示此对象是一个属性。
+ `DBG_ATTRIB_PROPERTY`\
+ 指示此对象是一个属性。
 
- DBG_ATTRIB_CLASS 指示此对象是一个类。
+ `DBG_ATTRIB_CLASS`\
+ 指示此对象是一个类。
 
- DBG_ATTRIB_BASECLASS 指示此对象的基类。
+ `DBG_ATTRIB_BASECLASS`\
+ 指示此对象的基类。
 
- DBG_ATTRIB_INTERFACE 指示此对象是一个接口。
+ `DBG_ATTRIB_INTERFACE`\
+ 指示此对象是一个接口。
 
- DBG_ATTRIB_INNERCLASS 指示此对象是一个内部类。
+ `DBG_ATTRIB_INNERCLASS`\
+ 指示此对象是一个内部类。
 
- DBG_ATTRIB_MOSTDERIVED 指示该对象是*派生程度最高*。 术语"*派生程度最高*"意味着该对象的实际类型而非其引用的类型。
+ `DBG_ATTRIB_MOSTDERIVED`\
+ 指示此对象为*派生程度最高*。 术语"*派生程度最高*"意味着该对象的实际类型而非其引用的类型。
 
- DBG_ATTRIB_CHILD_ALL 指示掩码`DBG_ATTRIB_DATA`通过`DBG_ATTRIB_MOSTDERIVED`。
+ `DBG_ATTRIB_CHILD_ALL`\
+ 指示的掩码`DBG_ATTRIB_DATA`通过`DBG_ATTRIB_MOSTDERIVED`。
 
- DBG_ATTRIB_MULTI_CUSTOM_VIEWERS 指示该对象具有与之关联的多个自定义查看器。
+ `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
+ 指示该对象具有与之关联的多个自定义查看器。
 
 ## <a name="remarks"></a>备注
 
 > [!NOTE]
->  实际的程序集的 C# 中未定义此枚举中的值。 相反，您必须将定义复制到您的源文件。
+> 实际的程序集的 C# 中未定义此枚举中的值。 相反，您必须将定义复制到您的源文件。
 
  这些标志也用于筛选对象，例如的子级时作为参数传递[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)。 可能的按位组合值`OR`。
 

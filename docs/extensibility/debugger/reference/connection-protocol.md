@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705828"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346522"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 指示正在使用调试服务器和调试包 (DE) 之间进行通信的协议。
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>参数
-对服务器进行了 CONNECTION_NONE 无连接。
+## <a name="fields"></a>字段
+`CONNECTION_NONE`\
+没有连接到服务器。
 
-已建立 CONNECTION_UNKNOWN 一个连接，但它属于未知类型。
+`CONNECTION_UNKNOWN`\
+已建立连接，但它属于未知类型。
 
-CONNECTION_LOCAL 连接是连接到本地服务器。
+`CONNECTION_LOCAL`\
+连接是连接到本地服务器。
 
-CONNECTION_PIPE 连接是通过命名管道。
+`CONNECTION_PIPE`\
+通过命名管道连接。
 
-CONNECTION_TCPIP 连接使用 TCP/IP。
+`CONNECTION_TCPIP`\
+连接使用 TCP/IP。
 
-CONNECTION_HTTP 连接使用 HTTP （通过 Web 服务器上）。
+`CONNECTION_HTTP`\
+将使用 HTTP 连接 （通过 Web 服务器上）。
 
-某些其他类型的连接已建立的 CONNECTION_OTHER （此值当前未使用）。
+`CONNECTION_OTHER`\
+已建立某种其他类型的连接 （此值当前未使用）。
 
 ## <a name="remarks"></a>备注
 这些值返回从[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)方法。

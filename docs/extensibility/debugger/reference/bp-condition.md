@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c37699e965698b4f5700bc1994ba25c8c0bbbd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722312"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337427"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 描述触发断点的条件。
@@ -45,15 +48,20 @@ public struct BP_CONDITION {
 ```
 
 ## <a name="members"></a>成员
-`pThread` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点的应用程序在活动线程。
+`pThread`\
+[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点的应用程序在活动线程。
 
-`styleCondition` 中的值[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)描述此断点条件的样式的枚举。
+`styleCondition`\
+中的值[BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md)描述此断点条件的样式的枚举。
 
-`bstrContext` 断点的位置。
+`bstrContext`\
+断点的位置。
 
-`bstrCondition` 触发断点的条件。
+`bstrCondition`\
+触发断点的条件。
 
-`nRadix` 用于评估任何数字信息的基数。
+`nRadix`\
+用于评估任何数字信息的基数。
 
 ## <a name="remarks"></a>备注
 此结构是的成员[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)并[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。

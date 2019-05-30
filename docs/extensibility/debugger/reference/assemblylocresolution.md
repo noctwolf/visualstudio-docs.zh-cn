@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710248"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327383"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 指定程序集所在的位置。
@@ -43,14 +46,18 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };
 ```
 
-## <a name="members"></a>成员
-ALR_NAME 程序集位于当前命名空间中。
+## <a name="fields"></a>字段
+`ALR_NAME`\
+程序集位于当前命名空间中。
 
-ALR_USERDIR 程序集位于用户目录中。
+`ALR_USERDIR`\
+程序集位于用户目录中。
 
-ALR_SHAREDDIR 程序集位于共享目录中。
+`ALR_SHAREDDIR`\
+程序集位于共享目录中。
 
-ALR_REMOTEDIR 程序集位于远程目录中。
+`ALR_REMOTEDIR`\
+程序集位于远程目录中。
 
 ## <a name="remarks"></a>备注
 这些值返回的[ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md)并[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)方法。

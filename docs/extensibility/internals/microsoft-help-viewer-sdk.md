@@ -3,17 +3,17 @@ title: Microsoft 帮助查看器 SDK |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0e50c54aa702fb05732a37b3b363b378fe9c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3e7cc2064e1ce74e2256d2246e46d2960c1cacc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860017"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349299"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -825,7 +825,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 
 10. 启动 Contoso 应用程序 （从 Contoso 应用根目录开始）。 在 ISO Shell 中，选择**帮助**菜单项，并更改**设置帮助首选项**到**使用本地帮助**。
 
-11. 在外壳中，选择**帮助**菜单项，然后**查看帮助**。 本地帮助查看器应会启动。 选择“管理内容”选项卡。下**安装源**，选择**磁盘**选项按钮。 选择 **...** 按钮，并浏览到包含 Contoso 内容 （复制到上述步骤中的本地文件夹） 的本地文件夹。 选择 HelpContentSetup.msha。 Contoso 现在应显示为一本书中的通讯簿选择。 选择**外**，然后选择**更新**按钮 （底部右下角）。
+11. 在外壳中，选择**帮助**菜单项，然后**查看帮助**。 本地帮助查看器应会启动。 选择“管理内容”  选项卡。下**安装源**，选择**磁盘**选项按钮。 选择 **...** 按钮，并浏览到包含 Contoso 内容 （复制到上述步骤中的本地文件夹） 的本地文件夹。 选择 HelpContentSetup.msha。 Contoso 现在应显示为一本书中的通讯簿选择。 选择**外**，然后选择**更新**按钮 （底部右下角）。
 
 12. Contoso IDE 中，选择 F1 键来测试 F1 功能。
 

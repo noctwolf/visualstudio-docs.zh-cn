@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project factories
 - projects [Visual Studio SDK], project factories
 ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b6f6dee7850610b222cf26964dd4811fcf79b5a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909977"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329396"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用项目工厂创建的项目实例
 中的项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目工厂*若要创建的项目对象的实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable;它们只能通过使用项目工厂创建。

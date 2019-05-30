@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838901"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322410"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 词汇表
 此术语表中使用的术语提供定义[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]文档。
@@ -73,7 +73,7 @@ ms.locfileid: "62838901"
 
   使用无模式的顶级窗口和作为独立应用程序窗口中，可以有效地运行，但实现为进程内对象的独立顶级组件的组件。 因此，独立的顶级组件必须协调模式和消息循环与 IDE 的服务。 进程内对象不具有其自己的消息循环。
 
-  信息提供程序的信息提供程序是一个模块，可以查找关键字，并返回的窗体中的主题，列表`IVsUserContextItem`对象。 若要提供**F1**并查找关键字的项有关的信息提供程序、 要注册已编译的帮助文件 (*。HxS*) 与系统。 这些文件中的帮助主题提供的动态帮助窗口中显示，并显示是否在用户按下的主题列表**F1**。
+  信息提供程序的信息提供程序是一个模块，可以查找关键字，并返回的窗体中的主题，列表`IVsUserContextItem`对象。 若要提供**F1**并查找关键字的项有关的信息提供程序、 要注册已编译的帮助文件 ( *。HxS*) 与系统。 这些文件中的帮助主题提供的动态帮助窗口中显示，并显示是否在用户按下的主题列表**F1**。
 
   就地组件实现的 VSPackage 对象`IOleInPlaceComponent`接口来管理以可视方式包含在归 IDE 的文档窗口的窗口。 就地组件不参与标准 OLE 菜单合并;而是他们将其用户界面元素集成到 IDE。
 

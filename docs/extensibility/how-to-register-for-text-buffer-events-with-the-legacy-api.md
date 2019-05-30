@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - register for text buffer events
 ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ec5c271c023483ea64ddbabb83129ea9a44e4c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10f1dbbc50535c1b0fd297f99c359ea8b0511c68
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911609"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321449"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何：注册文本缓冲区事件与传统的 API
 如果使用传统的 API 来访问文本缓冲区，则应注册文本缓冲区事件，如下面的过程中所示。
