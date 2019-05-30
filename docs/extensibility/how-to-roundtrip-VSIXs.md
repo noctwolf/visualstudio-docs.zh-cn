@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862782"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324902"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何：使扩展与 Visual Studio 2017 和 Visual Studio 2015 兼容
 
@@ -51,7 +51,7 @@ ms.locfileid: "62862782"
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>确保没有对 project.json 引用
 
-我们将在本文档后面插入条件导入语句中的为你 **.csproj*文件。 如果 NuGet 引用存储在中，这不起作用*project.json*。 在这种情况下，因此建议将移动到的所有 NuGet 引用*packages.config*文件。
+我们将在本文档后面插入条件导入语句中的为你 * *.csproj*文件。 如果 NuGet 引用存储在中，这不起作用*project.json*。 在这种情况下，因此建议将移动到的所有 NuGet 引用*packages.config*文件。
 如果您的项目包含*project.json*文件：
 
 * 记下中的引用*project.json*。

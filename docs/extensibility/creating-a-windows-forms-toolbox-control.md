@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3c423361b860c5769d9555409b44973fdc25896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3887a2d54f2744504f587b848bc1395090c3904c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891088"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345413"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 
@@ -35,7 +35,7 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
 
 1. 创建一个名为的 VSIX 项目`MyWinFormsControl`。 您可以发现中的 VSIX 项目模板**新的项目**对话框中的，通过搜索"vsix"。
 
-2. 项目打开后，添加**Windows 窗体工具箱控件**项模板名为`Counter`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**Windows 窗体工具箱控件**
+2. 项目打开后，添加**Windows 窗体工具箱控件**项模板名为`Counter`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#**  > **扩展性**，然后选择**Windows 窗体工具箱控件**
 
 3. 这将添加一个用户控件， `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>放置在控件**工具箱**，和一个**Microsoft.VisualStudio.ToolboxControl**资产部署的 VSIX 清单中的项。
 
@@ -63,7 +63,7 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
 
 ### <a name="code-the-user-control"></a>代码的用户控件
 
-`Counter`控件将公开一个方法，用于递增计数器，每当增加计数器的数值，将引发一个事件**重置**按钮和用于存储当前计数、 显示文本，以及是否要显示的三个属性或隐藏**重置**按钮。 `ProvideToolboxControl` 特性确定 **控件会出现在“工具箱”**`Counter` 的什么位置。
+`Counter`控件将公开一个方法，用于递增计数器，每当增加计数器的数值，将引发一个事件**重置**按钮和用于存储当前计数、 显示文本，以及是否要显示的三个属性或隐藏**重置**按钮。 `ProvideToolboxControl` 特性确定 **控件会出现在“工具箱”** `Counter` 的什么位置。
 
 #### <a name="to-code-the-user-control"></a>编写用户控件的代码
 
@@ -141,7 +141,7 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
 
     ```
 
-8. 在类定义正上方的 `ProvideToolboxControl` 特性声明中，将第一个参数的值从 `"MyWinFormsControl.Counter"` 改为 `"General"`。 这会设置将在“工具箱” 中托管控件的项组名称。
+8. 在类定义正上方的 `ProvideToolboxControl` 特性声明中，将第一个参数的值从 `"MyWinFormsControl.Counter"` 改为 `"General"`。 这会设置将在“工具箱”  中托管控件的项组名称。
 
     以下示例演示了 `ProvideToolboxControl` 特性和调整后的类定义。
 
@@ -189,13 +189,13 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
     else counter1.ShowReset = true;
     ```
 
-13. 按 F5 。
+13. 按 F5  。
 
     此时将打开窗体。 `Counter`控件将显示以下文本。
 
     **计数：0**
 
-14. 单击“测试” 。
+14. 单击“测试”  。
 
     计数器递增和 Visual Studio 将显示一个消息框。
 
@@ -207,7 +207,7 @@ Windows 窗体工具箱控件模板创建未定义的用户控件，并提供了
 
     **重置**按钮随即再次显示。
 
-17. 单击“重置” 。
+17. 单击“重置”  。
 
     该计数器将重置为**0**。
 

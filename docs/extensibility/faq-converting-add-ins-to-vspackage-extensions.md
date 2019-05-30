@@ -3,17 +3,17 @@ title: 常见问题解答：将外接程序转换为 VSPackage 扩展 |Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e40d9b7ca3d942a78ef9045bc7aaa5d0f7ea74d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417180"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342658"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题解答：将外接程序转换为 VSPackage 扩展
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，您需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。
@@ -52,7 +52,7 @@ ms.locfileid: "63417180"
 
    将出现 Visual Studio 的第二个实例。 此第二个实例称为实验实例，它具有的设置可能与你要用来编写代码的 Visual Studio 实例的设置不相同。 第一次运行实验实例时，系统将要求你登录到 VS Online 并指定你的主题和配置文件。
 
-   上**工具**看到名为的按钮 （在实验实例中） 的菜单**我的命令名**。 当选择此按钮时，应显示一条消息：**Inside TestVSPackagePackage.MenuItemCallback()**.
+   上**工具**看到名为的按钮 （在实验实例中） 的菜单**我的命令名**。 当选择此按钮时，应显示一条消息：**Inside TestVSPackagePackage.MenuItemCallback()** .
 
 ## <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？
 
@@ -68,7 +68,7 @@ ms.locfileid: "63417180"
 
 1. 创建具有菜单命令的 VSPackage。 (有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。)
 
-2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
+2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有 *\<你的项目名称 > Package.cs*。)
 
 3. 将以下 `using` 语句添加到文件中：
 
@@ -130,7 +130,7 @@ ms.locfileid: "63417180"
 
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>从 VSPackage 中获取 DTE 对象
 
-1. 在 VSIX 项目与 Visual Studio 包项目模板中，寻找*\<项目名称 > Package.cs*文件。 这是派生自 <xref:Microsoft.VisualStudio.Shell.Package> 的类；它可以帮助你与 Visual Studio 进行交互。 在这种情况下，请使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 来获取 <xref:EnvDTE80.DTE2> 对象。
+1. 在 VSIX 项目与 Visual Studio 包项目模板中，寻找 *\<项目名称 > Package.cs*文件。 这是派生自 <xref:Microsoft.VisualStudio.Shell.Package> 的类；它可以帮助你与 Visual Studio 进行交互。 在这种情况下，请使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 来获取 <xref:EnvDTE80.DTE2> 对象。
 
 2. 添加以下 `using` 语句：
 
@@ -162,7 +162,7 @@ ms.locfileid: "63417180"
 
 1. 创建具有菜单命令，作为 VSPackage[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。
 
-2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
+2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有 *\<你的项目名称 > Package.cs*。)
 
 3. 添加以下 `using` 语句：
 
@@ -210,7 +210,7 @@ ms.locfileid: "63417180"
 
 1. 创建具有菜单命令，作为 VSPackage[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)部分。
 
-2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)
+2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有 *\<你的项目名称 > Package.cs*。)
 
 3. 添加以下 `using` 语句：
 

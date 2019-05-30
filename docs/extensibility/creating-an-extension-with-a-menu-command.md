@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891059"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345372"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 
@@ -32,7 +32,7 @@ ms.locfileid: "62891059"
 
 1. 创建一个名为的 VSIX 项目**FirstMenuCommand**。 您可以发现中的 VSIX 项目模板**新的项目**通过搜索"vsix"对话框。
 
-2. 项目打开后，添加名为的自定义命令项模板**FirstCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*FirstCommand.cs*。
+2. 项目打开后，添加名为的自定义命令项模板**FirstCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#**  > **扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*FirstCommand.cs*。
 
 3. 生成项目并启动调试。
 
@@ -50,7 +50,7 @@ ms.locfileid: "62891059"
 
 ::: moniker-end
 
-现在，转到**工具**的实验实例中的菜单。 应会看到**调用 FirstCommand**命令。 此时，该命令将显示消息框，指示**FirstCommandPackage 内 FirstMenuCommand.FirstCommand.MenuItemCallback()**。 我们将了解如何实际从下一节中的此命令启动记事本。
+现在，转到**工具**的实验实例中的菜单。 应会看到**调用 FirstCommand**命令。 此时，该命令将显示消息框，指示**FirstCommandPackage 内 FirstMenuCommand.FirstCommand.MenuItemCallback()** 。 我们将了解如何实际从下一节中的此命令启动记事本。
 
 ## <a name="change-the-menu-command-handler"></a>更改菜单命令处理程序
 

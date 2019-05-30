@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be7d265db26c31bbec3527ad2bb60e127b1dc9c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322638"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级别的属性。 它们指示的行为**启动**(f5) 和**生成**命令。 默认情况下，这些命令生成并启动调试配置。 在解决方案配置的上下文中执行这两个命令。 这意味着用户可以启动和任何活动解决方案配置通过设置生成预期 F5。 在环境旨在构建和运行时优化解决方案而不是项目。
@@ -39,7 +39,7 @@ ms.locfileid: "63429055"
 
    如果项目不支持的配置，配置列显示无且被禁用。
 
-- Platform
+- 平台
 
    显示选定的项目配置生成，并单击箭头按钮时列出所有可用的平台的项目的平台。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A>方法来填充此列表。 如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A>方法指示项目支持编辑平台，新建或编辑的选择也会显示在平台标题下。 这些选择的每个启动调用的对话框`IVsCfgProvider2`方法来编辑项目的可用平台。
 

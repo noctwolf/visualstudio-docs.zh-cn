@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964477"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318503"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练：使用快捷键与编辑器扩展
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。
@@ -108,7 +108,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
     }
     ```
 
-7. 实现`Exec()`方法，使其向视图添加紫色框中，如果一个加号 (**+**) 键入字符。
+7. 实现`Exec()`方法，使其向视图添加紫色框中，如果一个加号 ( **+** ) 键入字符。
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    }
    ```
 
-6. 实现`ExecuteCommand()`方法，使其向视图添加紫色框中，如果一个加号 (**+**) 键入字符。
+6. 实现`ExecuteCommand()`方法，使其向视图添加紫色框中，如果一个加号 ( **+** ) 键入字符。
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
@@ -272,7 +272,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>使显示在每个行上修饰
 
-原始修饰出现在每个字符 'a' 在文本文件中。 现在，我们已更改的代码添加到响应中的修饰**+** 字符，它仅在行上添加修饰其中**+** 键入字符。 我们可以更改修饰代码，使修饰一次出现在每个 a。
+原始修饰出现在每个字符 'a' 在文本文件中。 现在，我们已更改的代码添加到响应中的修饰 **+** 字符，它仅在行上添加修饰其中 **+** 键入字符。 我们可以更改修饰代码，使修饰一次出现在每个 a。
 
 在中*KeyBindingTest.cs*文件中，将`CreateVisuals()`方法来遍历来修饰 a 字符在视图中的所有行。
 
@@ -322,6 +322,6 @@ private void CreateVisuals(ITextViewLine line)
 
 1. 生成 KeyBindingTest 解决方案并在实验实例中运行它。
 
-2. 创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入**+** 文本视图中的任意位置。
+2. 创建或打开一个文本文件。 键入包含字符某些字词 a，然后键入 **+** 文本视图中的任意位置。
 
      紫色正方形应当出现在文件中的每个 a 字符。

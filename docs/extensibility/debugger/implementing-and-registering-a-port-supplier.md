@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c662b9b813be33ca57c8c31dff69eb86968ab3eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 26767193c4489405432054ee94beb195ce8448d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344260"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>实现和注册端口提供程序
 端口提供程序的作用是跟踪并提供又管理流程的端口。 当需要创建一个端口时，端口提供程序实例化时使用可以共同创建使用端口供应商的 GUID （会话调试管理器 [SDM] 将使用选定的用户或端口提供程序指定的项目系统端口提供程序）。 然后调用 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以添加任何端口。 如果可以添加一个端口，通过调用请求一个新的端口[端口](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)并将其传递[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述该端口。 `AddPort` 返回表示新端口[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。

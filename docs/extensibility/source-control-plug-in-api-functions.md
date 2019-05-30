@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, functions
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7d22e191eecb3c650744c6ddbaa815de479752a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426d4f1f673d0d82c6ce3fd84c76a1c42d8ec4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800150"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331932"
 ---
 # <a name="source-control-plug-in-api-functions"></a>源代码管理插件 API 函数
 源控件插件 API 提供了以下函数，必须由源代码管理插件根据此 API 实现。 每个函数和语义的签名与位标志，此参考中详细介绍其他参数。

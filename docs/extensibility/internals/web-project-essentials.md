@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323316"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网页的 Web 应用程序。 智能 Web 页面已呈现按需 Web 页面的服务器端代码。
@@ -32,7 +32,7 @@ Web 项目创建 Web 应用程序。 Web 项目可用于创建具有智能的网
 
   - Web 应用程序项目 (WAP) 生成结合代码，以所有智能 Web 页面，以及 /App_Code 文件夹中的所有源文件的单个可执行文件。
 
-- Web 项目的解决方案文件位于独立于该网站本身。 默认情况下，解决方案文件位于 \Documents 和设置\\*YourAccount*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。
+- Web 项目的解决方案文件位于独立于该网站本身。 默认情况下，解决方案文件位于 \Documents 和设置\\*YourAccount*\My Documents\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*。
 
   > [!NOTE]
   > 如果你想要保留与网站的解决方案文件，只需将其移动到并重新打开它。

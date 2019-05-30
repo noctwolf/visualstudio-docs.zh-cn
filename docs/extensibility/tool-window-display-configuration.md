@@ -6,19 +6,19 @@ helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4498cc0bf7a1a9eab69ecc16b4fb31c3c5e4048c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432156"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316405"
 ---
-# <a name="tool-window-display-configuration"></a>工具窗口中显示配置
+# <a name="tool-window-display-configuration"></a>工具窗口显示配置
 可选值中指定了当 VSPackage 注册为工具窗口中，默认位置、 大小、 停靠样式和其他可见性信息。 工具窗口注册的详细信息，请参阅[工具 Windows 注册表中](../extensibility/tool-windows-in-the-registry.md)
 
 ## <a name="window-display-information"></a>窗口显示信息

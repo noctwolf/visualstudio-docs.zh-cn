@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965049"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320621"
 ---
 # <a name="walkthrough-outlining"></a>演练：大纲显示
 设置基于语言的功能，例如通过定义类型的文本区域，你想要展开或折叠大纲显示。 可以在语言服务的上下文中定义的区域或定义自己的文件名称扩展和内容类型和将区域定义应用于只为该类型，或适用于现有内容类型 （例如"text") 的区域定义。 本演练演示如何定义和显示大纲区域。
@@ -34,9 +34,9 @@ ms.locfileid: "62965049"
 3. 删除现有的类文件。
 
 ## <a name="implement-an-outlining-tagger"></a>实现大纲显示标记器
- 大纲区域被标记为的类型的标记 (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 此标记提供了标准大纲显示行为。 可以展开或折叠大纲方式显示的区域。 空心的区域标记的正号 (**+**) 如果它处于折叠状态或负号 (**-**) 如果已展开，并展开的区域一条竖直线方式来划分。
+ 大纲区域被标记为的类型的标记 (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>)。 此标记提供了标准大纲显示行为。 可以展开或折叠大纲方式显示的区域。 空心的区域标记的正号 ( **+** ) 如果它处于折叠状态或负号 ( **-** ) 如果已展开，并展开的区域一条竖直线方式来划分。
 
- 以下步骤演示如何定义创建由方括号分隔的所有区域的大纲显示区域的标记器 (**[**，**]**)。
+ 以下步骤演示如何定义创建由方括号分隔的所有区域的大纲显示区域的标记器 ( **[** ， **]** )。
 
 ### <a name="to-implement-an-outlining-tagger"></a>若要实现大纲显示标记器
 
@@ -129,7 +129,7 @@ ms.locfileid: "62965049"
     ]
     ```
 
-4. 应包括这两个方括号的大纲区域。 您应可以通过单击左侧的左大括号负号，若要折叠大纲区域。 当区域处于折叠状态，省略号符号 (*...*) 应显示在折叠的区域和一个弹出窗口，其中包含文本的左侧**将鼠标悬停在文本**应显示的省略号上移动指针时。
+4. 应包括这两个方括号的大纲区域。 您应可以通过单击左侧的左大括号负号，若要折叠大纲区域。 当区域处于折叠状态，省略号符号 ( *...* ) 应显示在折叠的区域和一个弹出窗口，其中包含文本的左侧**将鼠标悬停在文本**应显示的省略号上移动指针时。
 
 ## <a name="see-also"></a>请参阅
 - [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

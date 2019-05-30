@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689169"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346404"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定用于比较两个内存上下文的条件。
@@ -53,24 +56,33 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>成员
-CONTEXT_EQUAL 等于目标内存上下文在列表中找到的第一个内存上下文。
+## <a name="fields"></a>字段
+`CONTEXT_EQUAL`\
+在列表中，它等于目标内存上下文中找到的第一个内存上下文。
 
-CONTEXT_LESS_THAN 小于目标内存上下文在列表中找到的第一个内存上下文。
+`CONTEXT_LESS_THAN`\
+小于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_GREATER_THAN 列表的最大目标内存上下文中找到的第一个内存上下文。
+`CONTEXT_GREATER_THAN`\
+在列表的最大目标内存上下文中找到的第一个内存上下文。
 
-CONTEXT_LESS_THAN_OR_EQUAL 小于或等于目标内存上下文在列表中找到的第一个内存上下文。
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+小于或等于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_GREATER_THAN_OR_EQUAL 大于或等于目标内存上下文在列表中找到的第一个内存上下文。
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+大于或等于目标内存上下文在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_SCOPE 的目标内存上下文是在同一作用域中在列表中找到的第一个内存上下文。
+`CONTEXT_SAME_SCOPE`\
+目标内存上下文与同一作用域中在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_FUNCTION 中与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。
+`CONTEXT_SAME_FUNCTION`\
+在与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_MODULE 处于相同的模块的目标内存上下文是在列表中找到的第一个内存上下文。
+`CONTEXT_SAME_MODULE`\
+中的目标内存上下文是相同的模块列表中找到的第一个内存上下文。
 
-CONTEXT_SAME_PROCESS 中与目标内存上下文相同的进程是在列表中找到的第一个内存上下文。
+`CONTEXT_SAME_PROCESS`\
+在与目标内存上下文相同的进程列表中找到的第一个内存上下文。
 
 ## <a name="remarks"></a>备注
 作为参数传递[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。

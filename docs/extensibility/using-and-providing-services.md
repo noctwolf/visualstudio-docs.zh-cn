@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Visual Studio, services
 - services
 ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36f49d4e1ebaa6d8e15e43b821af56204739cb07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c9b0dbf2122b5a76d557cdd70da27660b886041
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798973"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337044"
 ---
 # <a name="using-and-providing-services"></a>使用并提供服务
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供了一组特定的另一个 VSPackage 来使用的接口。 例如，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]提供了<xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog>服务到任何 VSPackage 它加载。 此服务提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>接口，可用于写入活动日志。 有关详细信息，请参阅[如何：使用活动日志](../extensibility/how-to-use-the-activity-log.md)。

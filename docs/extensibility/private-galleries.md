@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSIX galleries, private
 - private galleries, VSIX
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027181d16024964d5487be2b3eb0b4ca261f98e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 115fa08bea2716d4d16ba1bc04ac2fafa82154ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336097"
 ---
 # <a name="private-galleries"></a>专用库
 你可以共享控件、 模板和发布到开发的工具*专用库*为你的组织，按如下所示在 intranet 上：
@@ -32,7 +32,7 @@ ms.locfileid: "62433571"
 
 ### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>若要将专用库添加到扩展和更新
 
-1. 在菜单栏上，依次选择“工具” > “选项”。
+1. 在菜单栏上，依次选择“工具” > “选项”   。
 
 2. 在中**环境**节点中，选择**扩展和更新**。
 

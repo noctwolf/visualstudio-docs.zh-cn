@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35fb66927272435e773dbaee44019103892b028d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b4f12790de00cc835f7268830bf6d9a4734b839
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858080"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331244"
 ---
 # <a name="supporting-source-control"></a>支持源代码管理
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持文件签出、 签入和你的项目或编辑器的其他源代码管理操作。 作为源控制客户端[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]旨在与源代码管理包，如交互[!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]，后者提供存档、 版本控制和一组动态定义的文件的控件功能。

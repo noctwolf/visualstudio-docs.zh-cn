@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860247"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326630"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 有关如何创建您自己的项目类型有没有想过吗？ 想知道实际情况时创建新的项目？ 让我们了解一下实质上，了解实际情况。
@@ -78,7 +78,7 @@ devenv /installvstemplates
 
  \<Visual Studio installation path>\VC#\VCSPackages\1033\csprojui.dll
 
- 若要验证这一点，打开文件资源管理器，并将 csprojui.dll 拖入 Visual Studio 目录... 字符串表显示了资源 # 2345年具有标题**Visual C#**。
+ 若要验证这一点，打开文件资源管理器，并将 csprojui.dll 拖入 Visual Studio 目录... 字符串表显示了资源 # 2345年具有标题**Visual C#** 。
 
 ##### <a name="sortpriority"></a>SortPriority
  这将确定中的根节点的位置**项目类型**树。

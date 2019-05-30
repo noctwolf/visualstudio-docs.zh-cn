@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415519"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340977"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>如何：访问内置的字体和颜色 ccheme
 Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关联的字体和颜色的方案。 您可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。
@@ -41,7 +41,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
     > [!NOTE]
     > 检索使用字体和颜色数据时<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他接口的 Vspackage 使用此 GUID 来引用内置的信息。
 
-2. 必须将该类别的名称添加到 VSPackage 的资源内部的字符串表 (*.rc*) 文件，以便可以根据需要在 IDE 中显示时进行本地化。
+2. 必须将该类别的名称添加到 VSPackage 的资源内部的字符串表 ( *.rc*) 文件，以便可以根据需要在 IDE 中显示时进行本地化。
 
      有关详细信息，请参阅[添加或删除字符串](/cpp/windows/adding-or-deleting-a-string)。
 
@@ -49,7 +49,7 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
 
 1. 构造一个特殊类型的类别中的以下位置的注册表条目：
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>* ]
 
      *\<类别 >* 类别的非本地化名称。
 

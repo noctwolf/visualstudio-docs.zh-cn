@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709975"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346465"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 此结构描述内存上下文或代码上下文。
@@ -49,19 +52,26 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>成员
-dwFields 从他的标志的组合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)枚举，用于指定哪些字段填完<strong>。</strong>
+`dwFields`\
+从他的标志的组合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)枚举，用于指定哪些字段填完<strong>。</strong>
 
-bstrModuleUrl 上下文所在的模块的名称。
+`bstrModuleUrl`\
+上下文的位置的模块的名称。
 
-bstrFunction 上下文所在的位置的函数名称。
+`bstrFunction`\
+函数名称上下文所在的位置。
 
-一个 posFunctionOffset [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，它标识与代码上下文关联的函数的行和列偏移量。
+`posFunctionOffset`\
+一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)结构，它标识与代码上下文关联的函数的行和列偏移量。
 
-bstrAddress 给定的上下文的位置的代码中的地址。
+`bstrAddress`\
+给定的上下文的位置的代码中的地址。
 
-bstrAddressOffset 给定的上下文的位置的代码中的地址的偏移量。
+`bstrAddressOffset`\
+在代码中给定的上下文的位置的地址的偏移量。
 
-bstrAddressAbsolute 给定的上下文的位置的内存中的绝对地址。
+`bstrAddressAbsolute`\
+给定的上下文的位置的内存中的绝对地址。
 
 ## <a name="remarks"></a>备注
 此结构从调用返回[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法。

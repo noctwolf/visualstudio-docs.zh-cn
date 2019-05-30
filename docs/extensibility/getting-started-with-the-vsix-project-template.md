@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6176fda41b16a092b52e83e0ce894e1d1898e0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8bb85e507e62bf7dd13288cbd08d7bf9d06973e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911877"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342464"
 ---
 # <a name="get-started-with-the-vsix-project-template"></a>开始使用 VSIX 项目模板
 
@@ -33,13 +33,13 @@ ms.locfileid: "62911877"
 
     1. 打开从其创建模板的项目。 此项目可以是任何项目类型。
 
-    2. 在“项目”菜单上，单击“导出模板”。 完成该向导的步骤。
+    2. 在“项目”菜单上，单击“导出模板”   。 完成该向导的步骤。
 
-         一个 *.zip*中创建文件 *%USERPROFILE%\My Documents\Visual Studio {version} \My 导出模板\\*。
+         一个 *.zip*中创建文件 *%USERPROFILE%\My Documents\Visual Studio {version} \My 导出模板\\* 。
 
 2. 创建一个空的 VSIX 项目。
 
-     选择“文件” > “新建” > “项目”。 在搜索框中，键入"vsix"并选择**C#** 或**Visual Basic**版本**VSIX 项目**。
+     选择“文件”   > “新建”   > “项目”  。 在搜索框中，键入"vsix"并选择**C#** 或**Visual Basic**版本**VSIX 项目**。
 
 3. 添加 *.zip*到项目文件。 设置其**复制到输出目录**属性设置为`Copy Always`。
 
@@ -95,4 +95,4 @@ ms.locfileid: "62911877"
 
 6. 打开 VSIX 清单。
 
-7. 在 VSIX 清单中，更新**资产**模板使其指向包含该模板文件的目录树的根的路径。 例如，如果模板处于*\CSharp\Windows*，该引用应指向*\CSharp*。
+7. 在 VSIX 清单中，更新**资产**模板使其指向包含该模板文件的目录树的根的路径。 例如，如果模板处于 *\CSharp\Windows*，该引用应指向 *\CSharp*。

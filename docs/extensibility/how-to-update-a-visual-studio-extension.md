@@ -7,17 +7,17 @@ helpviewer_keywords:
 - update extension
 - new package version
 ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 237a1139a7a314cf99b5edbd8993abefe04592c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415445"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324874"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何：更新 Visual Studio 扩展
 可以通过使用你的系统上更新 Visual Studio 扩展**扩展和更新**若要安装的更新的版本。 如果您创建扩展的更新的版本，您可以将其表示为更新的 VSIX 清单中的版本号递增。
@@ -28,7 +28,7 @@ ms.locfileid: "63415445"
 
 ## <a name="to-update-an-extension-on-your-system"></a>若要更新你的系统上的扩展
 
-1. 在  “工具”菜单上，单击 “扩展和更新”。
+1. 在  “工具”菜单上，单击  “扩展和更新”。
 
 2. 在左窗格中，单击**更新**。
 

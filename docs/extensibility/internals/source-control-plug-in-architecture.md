@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ff9c73ebbe976df7c3d25304280e743cad0423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75b283a2013b67b28d90ba8a47dbee41cae1f848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908512"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322548"
 ---
 # <a name="source-control-plug-in-architecture"></a>源代码管理插件体系结构
 您可以添加到源控件支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]实现并附加了源代码管理插件集成的开发环境 (IDE)。 IDE 连接到源代码管理插件通过定义完善的源控制插件 API。 IDE 公开源控制系统版本控制的功能通过提供工具栏和菜单命令组成的用户界面 (UI)。 源代码管理插件实现的源代码管理功能。

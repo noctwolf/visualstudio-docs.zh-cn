@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45d6cadbc74ddcc7b46ee53d2d8cdc8cce63a47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfb00665caae499c0088f4ba5163c85ffacdbd85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434222"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336263"
 ---
 # <a name="open-a-dynamic-tool-window"></a>打开动态工具窗口
 从菜单中或等效的键盘快捷方式上的命令通常打开工具窗口。 有时，但是，您可能需要打开每当特定 UI 上下文应用，并关闭 UI 上下文不再适用时的工具窗口。 工具窗口的这些类型称为*动态*或*自动可见*。

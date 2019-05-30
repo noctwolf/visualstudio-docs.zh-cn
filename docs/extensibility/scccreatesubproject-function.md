@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f27226e768d639706e5db777b52a0e4957f70e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8aa70f6b42a6722ac66340807503ee4494795b0d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433287"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327520"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数具有给定名称指定现有父项目下创建子项目`lpParentProjPath`参数。
@@ -68,7 +68,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值
  此函数的源控制插件实现应返回以下值之一：
 
-|“值”|描述|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功创建子项目。|
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|

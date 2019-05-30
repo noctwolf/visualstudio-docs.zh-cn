@@ -13,17 +13,17 @@ helpviewer_keywords:
 - symbols
 - libraries, symbol-browsing tools
 ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87612ebc9bbcaf14bdf25d91a4e5dbe018c22143
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428758"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331206"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支持符号浏览工具
 **对象浏览器**，**类视图**，**调用浏览器**并**查找符号结果**工具提供浏览功能在 Visual Studio 中的符号。 这些工具显示的符号的层次结构树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和不同组件中包含其他语言元素。 这些组件包括 Visual Studio 项目中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da93d4f98bf3795c2dd60b02f9cf5b332b022ad2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790a9f8bbed02a5135897f33db7fac1af3ad89d9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863523"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342568"
 ---
 # <a name="font-and-color-overview"></a>字体和颜色的概述
 本主题讨论中的文本字体和颜色设置[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。 它还引入了类别和显示项的概念并介绍 Vspackage 和核心编辑器如何使用文本特性。

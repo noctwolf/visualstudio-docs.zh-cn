@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420515"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334915"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何：安装源代码管理插件
 创建源代码管理插件过程包括三个步骤：
@@ -64,7 +64,7 @@ ms.locfileid: "63420515"
 
 3. 添加子项**SourceCodeControlProvider**下**HKEY_LOCAL_MACHINE**中的键**软件**子项。
 
-    此子项的注册表项下**ProviderRegKey**设置为一个字符串，表示放在步骤 1 中在注册表中的子项。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *软件\\< 公司名称\>\\< 产品名称\>*.
+    此子项的注册表项下**ProviderRegKey**设置为一个字符串，表示放在步骤 1 中在注册表中的子项。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *软件\\< 公司名称\>\\< 产品名称\>* .
 
     下面是此子项的示例内容。
 
@@ -77,7 +77,7 @@ ms.locfileid: "63420515"
 
 4. 创建名为子项**InstalledSCCProviders**下**SourceCodeControlProvider**子项，并且然后放入该子项下的一个条目。
 
-    此项的名称为提供程序 （与相同 SCCServerName 条目为指定的值），用户可读名称，值为再次重申，步骤 1 中创建的子项。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 显示名称\>** = *软件\\< 公司名称\>\\< 产品名称\>*。
+    此项的名称为提供程序 （与相同 SCCServerName 条目为指定的值），用户可读名称，值为再次重申，步骤 1 中创建的子项。 模式是**HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< 显示名称\>**  = *软件\\< 公司名称\>\\< 产品名称\>* 。
 
     例如：
 

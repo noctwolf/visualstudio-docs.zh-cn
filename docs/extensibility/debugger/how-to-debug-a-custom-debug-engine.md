@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411240"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334833"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：调试自定义调试引擎
 项目类型启动的调试引擎 (DE) 从<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着，受控制的实例的启动 DE[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]控制项目类型。 但是，该实例的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]不能调试 DE。 接下来是使你能够调试自定义设备的步骤。
@@ -43,7 +43,7 @@ ms.locfileid: "63411240"
 
 7. 中的第一个实例[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]（与 DE 项目），选择**附加到进程**从**调试**菜单。
 
-8. 在中**附加到进程**对话框中，更改**传输**到**远程 （无身份验证时仅限本机）**。
+8. 在中**附加到进程**对话框中，更改**传输**到**远程 （无身份验证时仅限本机）** 。
 
 9. 更改**限定符**为你的计算机的名称 (注意： 没有历史记录条目，因此需要一次键入此名称)。
 

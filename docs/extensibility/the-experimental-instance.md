@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493ab672322db2826f8f7e7675decdda0a531538
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 773581e7cf9e0f12f507dcd3c768d88724da9f80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435074"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316421"
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了保证从未经测试的应用程序可能会更改其在 Visual Studio 开发环境，请 VSSDK 提供了可用于试验的实验性空间。 像往常一样，使用 Visual Studio 开发新应用程序，但通过使用此实验实例中运行它们。
@@ -26,7 +26,7 @@ ms.locfileid: "63435074"
 
  如果你想要启动特定的解决方案之外的 Visual Studio 实验实例，请在命令窗口运行以下命令：
 
- "*\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
+ " *\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
 
 > [!NOTE]
 > 实验实例写入到注册表`<version number>Exp`和`<version number>Exp_Config`节点。 有关示例的 Visual Studio 2015 的实验性注册表区域是

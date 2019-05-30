@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d58234dbe503f8d086e081464c2e38f759a75e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d5fdffa76f273bc8ff7b7bdf18ce9db99a9052e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907922"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323417"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 使用托管的包框架 (MPF) 语言类实现中的语言服务[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]非常简单。 所需的 VSPackage，托管语言服务、 语言服务本身和你的语言分析器。
@@ -42,15 +42,15 @@ ms.locfileid: "62907922"
 
     可以使用所需的任何名称。 此处详细介绍这些过程假设 MyLanguagePackage 作为名称。
 
-3. 选择[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]作为语言和用于生成新的密钥文件的选项。 单击 **“下一步”**。
+3. 选择[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]作为语言和用于生成新的密钥文件的选项。 单击 **“下一步”** 。
 
-4. 输入相应的公司和包信息。 单击 **“下一步”**。
+4. 输入相应的公司和包信息。 单击 **“下一步”** 。
 
-5. 选择**菜单命令**。 单击 **“下一步”**。
+5. 选择**菜单命令**。 单击 **“下一步”** 。
 
     如果不想支持代码段，您可以只需单击完成并忽略下一步。
 
-6. 输入**插入代码片段**作为**命令名**并`cmdidInsertSnippet`有关**命令 ID**。 单击 **“完成”**。
+6. 输入**插入代码片段**作为**命令名**并`cmdidInsertSnippet`有关**命令 ID**。 单击 **“完成”** 。
 
     **命令名称**并**命令 ID**可以是任何所需内容，这些是只是示例。
 

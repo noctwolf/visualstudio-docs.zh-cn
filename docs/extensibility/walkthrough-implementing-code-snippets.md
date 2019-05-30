@@ -3,17 +3,17 @@ title: 演练：实现代码片段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e4b6d0346ce10c780254b26a4f2c710ed171ef5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965149"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320741"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>演练：实现代码片段
 可以创建的代码段，并将其包含在编辑器扩展，以便扩展的用户可以将它们添加到其自己的代码。

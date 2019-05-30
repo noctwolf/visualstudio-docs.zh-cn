@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], saving custom documents
 - editors [Visual Studio SDK], saving custom documents
 ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b90938e44b4227f8aad43542fc99136745a8af4e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427457"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318742"
 ---
 # <a name="saving-a-custom-document"></a>保存自定义文档
 环境句柄**保存**，**另存为**，并**全部保存**命令。 当用户单击**保存**，**另存为**，**或全部保存**上**文件**菜单或关闭解决方案，从而导致全部保存，以下执行过程。

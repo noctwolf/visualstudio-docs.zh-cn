@@ -3,32 +3,32 @@ title: Visual Studio 模板清单架构参考 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323028"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
-此架构描述了 Visual Studio 模板清单的格式 (*.vstman*) 生成的 Visual Studio 项目或项模板的文件。 位置和有关模板的其他相关信息，还介绍了架构。
+此架构描述了 Visual Studio 模板清单的格式 ( *.vstman*) 生成的 Visual Studio 项目或项模板的文件。 位置和有关模板的其他相关信息，还介绍了架构。
 
  :由于没有单独的项目和项目模板目录，清单应该永远不会同时有的项和项目模板。
 
 > [!IMPORTANT]
->  此清单是从 Visual Studio 2017 开始，提供。
+> 此清单是从 Visual Studio 2017 开始，提供。
 
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest 元素
  清单的根元素。
 
 ### <a name="attributes"></a>特性
 
-- **版本**:一个表示模板清单的版本字符串。 必需。
+- **版本**：一个表示模板清单的版本字符串。 必需。
 
 - **区域设置**:表示区域设置或区域设置的模板清单的字符串。 区域设置值适用于所有模板。 必须将每个区域使用单独的清单。 可选。
 
@@ -122,7 +122,7 @@ ms.locfileid: "60108849"
  下面的代码是项模板的示例 *.vstman*文件。
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

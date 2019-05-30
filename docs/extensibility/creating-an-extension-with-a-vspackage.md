@@ -3,17 +3,17 @@ title: 使用 VSPackage 创建扩展 |Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891027"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345358"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 创建扩展
 
@@ -27,7 +27,7 @@ ms.locfileid: "62891027"
 
 1. 创建一个名为的 VSIX 项目**FirstPackage**。 您可以发现中的 VSIX 项目模板**新的项目**通过搜索"vsix"对话框。
 
-2. 项目打开后，添加一个名为的 Visual Studio 包项目模板**FirstPackage**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#** > **扩展性**，然后选择**Visual Studio 包**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*FirstPackage.cs*。
+2. 项目打开后，添加一个名为的 Visual Studio 包项目模板**FirstPackage**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项**对话框中，转到**Visual C#**  > **扩展性**，然后选择**Visual Studio 包**。 在中**名称**在窗口底部字段中，将命令文件名称更改为*FirstPackage.cs*。
 
 3. 生成项目并启动调试。
 
@@ -76,4 +76,4 @@ ms.locfileid: "62891027"
 
 3. 生成项目并启动调试。 将显示在实验实例。
 
-4. 在实验实例中打开的解决方案。 你应看到一个消息框，显示**第一个包内 initialize （)**。
+4. 在实验实例中打开的解决方案。 你应看到一个消息框，显示**第一个包内 initialize （)** 。

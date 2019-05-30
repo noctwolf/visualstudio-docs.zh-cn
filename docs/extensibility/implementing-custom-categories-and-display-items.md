@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418838"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321404"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>实现自定义类别和显示项
 VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]通过自定义类别和显示项的集成的开发环境 (IDE)。
@@ -45,7 +45,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
 
 ## <a name="to-create-or-identify-categories"></a>若要创建或标识类别
 
-- 构造一个特殊类型的类别下的注册表项 *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\ `<Category>`]*
+- 构造一个特殊类型的类别下的注册表项 *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<Visual Studio 版本 > *\FontAndColors\\ `<Category>`]*
 
    *\<类别 >* 类别的非本地化名称。
 
@@ -60,7 +60,7 @@ VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](.
 
 ## <a name="to-create-or-identify-groups"></a>若要创建或标识组
 
-- 构造一个特殊类型的类别下的注册表项 *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio 版本 >*\FontAndColors\\* \<组 >*]*
+- 构造一个特殊类型的类别下的注册表项 *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<Visual Studio 版本 > *\FontAndColors\\* \<组 > *]*
 
    *\<组 >* 是组的非本地化名称。
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410154"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313531"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 本演练演示如何将添加到按钮**解决方案资源管理器**工具栏。
@@ -27,7 +27,7 @@ ms.locfileid: "63410154"
  有关菜单、 工具栏命令的详细信息和 *.vsct*文件，请参阅[命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)。
 
 > [!NOTE]
-> 使用 XML 命令表 (*.vsct*) 而不是命令表配置文件 (*.ctc*) 文件以定义菜单和命令在你的 Vspackage 中的显示方式。 有关详细信息，请参阅[Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+> 使用 XML 命令表 ( *.vsct*) 而不是命令表配置文件 ( *.ctc*) 文件以定义菜单和命令在你的 Vspackage 中的显示方式。 有关详细信息，请参阅[Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ## <a name="prerequisites"></a>系统必备
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca2d50cc678efe3373aace28343ac3732dd00c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696059"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346520"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 一个包含一系列结构`GUID`s。
@@ -39,9 +42,11 @@ public struct CONST_GUID_ARRAY {
 ```
 
 ## <a name="members"></a>成员
-dwCount 数的`GUID`中的 s`Members`数组。
+`dwCount`\
+数`GUID`中的 s`Members`数组。
 
-成员数组`GUID`s。
+`Members`\
+数组`GUID`s。
 
 ## <a name="remarks"></a>备注
 此结构传递给[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)方法，并返回从[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)并[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)方法。

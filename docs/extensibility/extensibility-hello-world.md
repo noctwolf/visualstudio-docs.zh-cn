@@ -3,17 +3,17 @@ title: Hello World 扩展教程 |Microsoft Docs
 ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c3bbafcf138c60b65940bcee73c74f56cf6e2fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912225"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342863"
 ---
 # <a name="create-your-first-extension-hello-world"></a>创建第一个扩展：Hello World
 
@@ -44,7 +44,7 @@ ms.locfileid: "62912225"
 
 ::: moniker range="vs-2017"
 
-步骤 1。 从“文件”菜单中选择“新建” > “项目”。
+步骤 1。 从“文件”菜单中选择“新建” > “项目”。   
 
 步骤 2。 在右上角的搜索框中，键入"vsix"并选择视觉对象C# **VSIX 项目**。 输入"HelloWorld"**名称**对话框并选择底部**确定**。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62912225"
 
 ::: moniker range=">=vs-2019"
 
-步骤 1。 从“文件”菜单中选择“新建” > “项目”。 搜索"vsix"并选择视觉对象C# **VSIX 项目**，然后**下一步**。
+步骤 1。 从“文件”菜单中选择“新建” > “项目”。    搜索"vsix"并选择视觉对象C# **VSIX 项目**，然后**下一步**。
 
 步骤 2。 输入"HelloWorld"**项目名称**，然后选择**创建**。
 
@@ -156,7 +156,7 @@ ms.locfileid: "62912225"
 
 ::: moniker-end
 
-步骤 2。 上**工具**菜单**实验实例**，单击**Say Hello World ！**。
+步骤 2。 上**工具**菜单**实验实例**，单击**Say Hello World ！** 。
 
 ![最终结果](media/hello-world-final-result.png)
 

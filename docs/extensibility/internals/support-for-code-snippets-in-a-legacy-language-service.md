@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428820"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322425"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码片段是一段代码将插入到源文件。 在代码段是使用一组字段的基于 XML 的模板。 插入代码段，并可以具有不同的值，具体取决于在其中插入片段的上下文后，将突出显示这些字段。 立即插入代码段后，可以设置的语言服务的格式代码段。
@@ -50,7 +50,7 @@ ms.locfileid: "63428820"
 
  通常有两个代码段模板文件的存储位置的位置：1） 你的语言已安装和 2） 中用户的文件夹。 这些位置将添加到注册表因此，Visual Studio**代码片段管理器**可以找到的代码段。 用户的文件夹是由用户创建的代码段的存储位置。
 
- 已安装的代码段模板文件的典型的文件夹布局如下所示： *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\*LCID*\Snippets。
+ 已安装的代码段模板文件的典型的文件夹布局如下所示： *[InstallRoot]* \\ *[TestLanguage]* \Snippets\\*LCID*\Snippets。
 
  *[InstallRoot]* 是您的语言安装中的文件夹。
 
@@ -58,7 +58,7 @@ ms.locfileid: "63428820"
 
  *[LCID]* 是区域设置 id。 这是您的代码段的方式本地化的版本存储。 例如，英语的区域设置 ID 为 1033，因此 *[LCID]* ，会替换为 1033年。
 
- 必须提供另一个文件，这就是通常称为 SnippetsIndex.xml 或 ExpansionsIndex.xml （您可以使用任何有效的文件名以.xml 结尾） 的索引文件。 此文件通常存储在 *[InstallRoot]*\\ *[TestLanguage]* 文件夹，并指定代码段文件夹，以及语言 ID 的确切位置和语言的 GUID使用这些代码片段的服务。 索引文件的确切路径置于注册表更高版本在"安装注册表项"中所述。 下面是 SnippetsIndex.xml 文件的示例：
+ 必须提供另一个文件，这就是通常称为 SnippetsIndex.xml 或 ExpansionsIndex.xml （您可以使用任何有效的文件名以.xml 结尾） 的索引文件。 此文件通常存储在 *[InstallRoot]* \\ *[TestLanguage]* 文件夹，并指定代码段文件夹，以及语言 ID 的确切位置和语言的 GUID使用这些代码片段的服务。 索引文件的确切路径置于注册表更高版本在"安装注册表项"中所述。 下面是 SnippetsIndex.xml 文件的示例：
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

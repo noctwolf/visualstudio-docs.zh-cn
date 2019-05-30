@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b74081f474e85b97f46db5250daf042dbd6b917
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316383"
 ---
-# <a name="tool-windows-in-the-registry"></a>在注册表中的工具 Windows
+# <a name="tool-windows-in-the-registry"></a>注册表中的工具窗口
 提供的工具窗口的 Vspackage 必须使用注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]为工具窗口提供程序。 通过使用 Visual Studio 包模板创建的工具窗口默认情况下执行此操作。 工具窗口提供程序具有指定可见性属性，例如默认工具窗口大小和位置，用作工具窗口窗格和停靠样式的窗口的 GUID 的系统注册表项。
 
  在开发期间，托管的工具窗口提供程序注册工具窗口，方法是： 将属性添加到源代码，然后在生成的程序集上运行 RegPkg.exe 实用程序。 有关详细信息，请参阅[注册工具窗口](../extensibility/registering-a-tool-window.md)。
