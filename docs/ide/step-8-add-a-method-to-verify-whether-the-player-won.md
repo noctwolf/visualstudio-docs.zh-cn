@@ -32,10 +32,10 @@ ms.locfileid: "62996548"
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3. 保存并运行程序。 玩游戏并匹配所有图标。 当你获胜时，该程序将显示一个祝贺性的 MessageBox（如下图所示），然后关闭该框。
+3. 保存并运行程序。 玩游戏并匹配所有图标。 当你获胜时，该程序将显示一个祝贺性的 MessageBox  （如下图所示），然后关闭该框。
 
      ![具有消息框的匹配游戏](../ide/media/express_tut4step8.png)
-具有消息框的匹配游戏 ********
+具有消息框的匹配游戏 **** ****
 
 ## <a name="to-continue-or-review"></a>继续或查看
 

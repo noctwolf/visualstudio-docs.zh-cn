@@ -57,7 +57,7 @@ ms.locfileid: "65690596"
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>启用或禁用实时调试
 
-1. 打开 Visual Studio。 在 **“工具”** 菜单上，单击 **“选项”**。
+1. 打开 Visual Studio。 在 **“工具”** 菜单上，单击 **“选项”** 。
 
 2. 在中**选项**对话框中，选择**调试**文件夹。
 
@@ -67,7 +67,7 @@ ms.locfileid: "65690596"
 
     要在启用实时调试后禁用它，必须使用管理员特权运行。 启用实时调试会设置一个注册表项，需要管理员特权才可以更改该项。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
    即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 未安装 Visual Studio 时，不能禁用中实时从 Visual Studio 调试**选项**对话框。 对于这种情况，你可以通过编辑 Windows 注册表来禁用实时调试。
 
@@ -102,7 +102,7 @@ ms.locfileid: "65690596"
 
      启用在实时调试的 Windows 窗体应用程序，必须执行以下附加步骤：
 
-2. 设置`jitDebugging`值设为`true`中`system.windows.form`部分中的 machine.config 或*\<应用程序名称 >*.exe.config 文件：
+2. 设置`jitDebugging`值设为`true`中`system.windows.form`部分中的 machine.config 或 *\<应用程序名称 >* .exe.config 文件：
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  下**可能的调试器**，您应该会看到**Microsoft Visual Studio 2015 的新实例**选择行。 如果已选择，请立即选择它。
 
- 在窗口底部下**你想要使用所选的调试器进行调试？**，单击**是**。
+ 在窗口底部下**你想要使用所选的调试器进行调试？** ，单击**是**。
 
  ThrowsNullException 项目可打开 Visual Studio 的新实例中与引发的异常的代码行处停止执行：
 

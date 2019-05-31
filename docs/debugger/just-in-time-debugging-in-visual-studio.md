@@ -32,7 +32,7 @@ ms.locfileid: "62905707"
 
 - 如果您正在尝试运行 web 应用，禁用脚本调试：
 
-  在 Windows 中**Control Panel** > **网络和 Internet** > **Internet 选项**，选择**禁用脚本调试 （Internet 资源管理器）** 并**禁用脚本调试 （其他）**。 确切的步骤和设置取决于您的 Windows 和你的浏览器版本。
+  在 Windows 中**Control Panel** > **网络和 Internet** > **Internet 选项**，选择**禁用脚本调试 （Internet 资源管理器）** 并**禁用脚本调试 （其他）** 。 确切的步骤和设置取决于您的 Windows 和你的浏览器版本。
 
   ![JIT Internet 选项](../debugger/media/jitinternetoptions.png "JIT internet 选项")
 

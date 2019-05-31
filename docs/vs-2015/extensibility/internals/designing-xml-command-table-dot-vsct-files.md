@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60085892"
@@ -36,9 +36,9 @@ XML 命令表格 (.vsct) 文件描述的布局和外观的命令项对为 VSPack
   
 - 而.vsct 文件的支持 **/include**语句，.ctc 文件执行操作，它还具有一个新\<**导入 >** 元素。 其差异是， **/include**引入了**所有**的信息，但\<**导入 >** 将仅在名称中。  
   
-- 虽然.ctc 文件需要在其中定义预处理器指令的标头文件，其中一个不需要的.vsct 文件。 相反，将在指令放置在符号表中，位于**\<符号 >** 元素，位于.vsct 文件的底部。  
+- 虽然.ctc 文件需要在其中定义预处理器指令的标头文件，其中一个不需要的.vsct 文件。 相反，将在指令放置在符号表中，位于 **\<符号 >** 元素，位于.vsct 文件的底部。  
   
-- .vsct 文件功能**\<批注 >** 标记，它使您可以嵌入您喜欢，如说明或甚至图片的任何信息。  
+- .vsct 文件功能 **\<批注 >** 标记，它使您可以嵌入您喜欢，如说明或甚至图片的任何信息。  
   
 - 值存储为项的特性。  
   

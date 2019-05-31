@@ -43,7 +43,7 @@ ms.locfileid: "66262941"
 
 ## <a name="prerequisites"></a>系统必备
 
-已安装 .NET 桌面开发工作负载的 Visual Studio。
+已安装 .NET 桌面开发工作负载的 Visual Studio。 
 
 ## <a name="install-software-on-the-computers"></a>在计算机上安装软件
 
@@ -53,16 +53,16 @@ ms.locfileid: "66262941"
 
 1. 在主计算机上安装 Visual Studio。
 
-2. 在生成计算机上，安装 .NET Framework 4.5 或更高版本。 若要验证是否已安装，请检查注册表子项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full 中的 Version 条目值是否以 4.5 或更大值开头。
+2. 在生成计算机上，安装 .NET Framework 4.5 或更高版本。 若要验证是否已安装，请检查注册表子项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full  中的 Version  条目值是否以 4.5  或更大值开头。
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>将文件从主机计算机复制到生成计算机
 
 本节包括将特定文件、编译器、生成工具、MSBuild 资产和注册表设置从主计算机复制到生成计算机。 这些说明假定，您已在主计算机的默认位置安装了 Visual Studio；如果安装在其他位置，请相应地调整步骤。
 
-- 在 x86 计算机上，默认位置为 C:\Program Files\Microsoft Visual Studio
-- 在 x64 计算机上，默认位置为 C:\Program Files (x86)\Microsoft Visual Studio
+- 在 x86 计算机上，默认位置为 C:\Program Files\Microsoft Visual Studio 
+- 在 x64 计算机上，默认位置为 C:\Program Files (x86)\Microsoft Visual Studio 
 
-请注意，Program Files 文件夹的名称取决于所安装的操作系统。 在 x86 计算机上，名称为 Program Files；在 x64 计算机上，名称为 Program Files (x86)。 不考虑系统体系结构，此演练中的 Program Files 文件夹指的是 %ProgramFiles%。
+请注意，Program Files 文件夹的名称取决于所安装的操作系统  。 在 x86 计算机上，名称为 Program Files；在 x64 计算机上，名称为 Program Files (x86)   。 不考虑系统体系结构，此演练中的 Program Files 文件夹指的是 %ProgramFiles%   。
 
 > [!NOTE]
 > 在生成计算机上，所有相关文件必须位于同一驱动器上。 但是，该驱动器的驱动器号可能与主计算机上安装 Visual Studio 的驱动器的驱动器号不同。 在任何情况下，您在创建注册表项时，必须考虑文件位置，如本文档下文所述。
@@ -93,7 +93,7 @@ ms.locfileid: "66262941"
 
    - Microsoft Windows 硬件认证工具包
 
-   ...它们可能已将文件安装到上一步列出的 %ProgramFiles%\Windows Kits\8.0 文件夹中，并且其许可条款可能不允许这些文件的生成服务器权利。 查看安装的每个 Windows 工具包的许可条款以验证文件是否可复制到生成计算机。 如果许可条款不允许生成服务器权利，则将从生成计算机删除这些文件。
+   ...它们可能已将文件安装到上一步列出的 %ProgramFiles%\Windows Kits\8.0 文件夹中，并且其许可条款可能不允许这些文件的生成服务器权利  。 查看安装的每个 Windows 工具包的许可条款以验证文件是否可复制到生成计算机。 如果许可条款不允许生成服务器权利，则将从生成计算机删除这些文件。
 
 2. 将下列文件夹以递归方式从主计算机复制到生成计算机：
 
@@ -129,7 +129,7 @@ ms.locfileid: "66262941"
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\Tools\vsvars32.bat
 
-4. 仅当您在生成计算机上运行生成输出时才需要下列 Visual C++ 运行库 - 例如，作为自动测试的一部分。 这些文件一般位于 %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86 或 %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64 文件夹下的子文件夹中，具体取决于系统体系结构。 在 x86 系统中，将 x86 二进制文件复制到 Windows\System32 文件夹。 在 x64 系统中，将 x86 二进制文件复制到 Windows\SysWOW64 文件夹，并将 x64 二进制文件复制到 Windows\System32 文件夹。
+4. 仅当您在生成计算机上运行生成输出时才需要下列 Visual C++ 运行库 - 例如，作为自动测试的一部分。 这些文件一般位于 %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x86 或 %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\redist\x64 文件夹下的子文件夹中，具体取决于系统体系结构   。 在 x86 系统中，将 x86 二进制文件复制到 Windows\System32 文件夹  。 在 x64 系统中，将 x86 二进制文件复制到 Windows\SysWOW64 文件夹，并将 x64 二进制文件复制到 Windows\System32 文件夹   。
 
     - \Microsoft.VC110.ATL\atl110.dll
 
@@ -169,7 +169,7 @@ ms.locfileid: "66262941"
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. 只将下列文件从 Debug_NonRedist\x86 或 Debug_NonRedist\x64 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述。 无其他文件可复制。
+5. 只将下列文件从 Debug_NonRedist\x86 或 Debug_NonRedist\x64 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)中所述   。 无其他文件可复制。
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -191,7 +191,7 @@ ms.locfileid: "66262941"
 
 您必须创建注册表项才能配置 MSBuild 的设置。
 
-1. 标识注册表项的父文件夹。 所有注册表项均是在同一父项下创建的。 在 x86 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft。 在 x64 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft。 不考虑系统体系结构，此演练中的父项指的是 %RegistryRoot%。
+1. 标识注册表项的父文件夹。 所有注册表项均是在同一父项下创建的。 在 x86 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft  。 在 x64 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft  。 不考虑系统体系结构，此演练中的父项指的是 %RegistryRoot%。
 
     > [!NOTE]
     > 如果您的主计算机体系结构与您的生成计算机的不同，则请确保在每台计算机上使用适当的父项。 这在您实现导出过程的自动化时尤其重要。
@@ -250,13 +250,13 @@ ms.locfileid: "66262941"
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>在生成计算机上设置环境变量
 
-若要在生成计算机上使用 MSBuild，则必须设置 PATH 环境变量。 可以使用 vcvarsall.bat 设置变量，也可以手动配置它们。
+若要在生成计算机上使用 MSBuild，则必须设置 PATH 环境变量。 可以使用 vcvarsall.bat 设置变量，也可以手动配置它们  。
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>使用 vcvarsall.bat 设置环境变量
 
-在生成计算机上打开“命令提示符”窗口，并运行 %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat。 您可以使用命令行参数指定要使用的工具集 - x86、本机 x64 或 x64 交叉编译器。 如果未指定命令行参数，则使用 x86 工具集。
+在生成计算机上打开“命令提示符”窗口，并运行 %Program Files%\Microsoft Visual Studio\\\<version>\\\<edition>\VC\vcvarsall.bat   。 您可以使用命令行参数指定要使用的工具集 - x86、本机 x64 或 x64 交叉编译器。 如果未指定命令行参数，则使用 x86 工具集。
 
-下表描述了 vcvarsall.bat 支持的参数：
+下表描述了 vcvarsall.bat 支持的参数  ：
 
 |Vcvarsall.bat 参数|编译器|生成计算机体系结构|生成输出体系结构|
 | - |--------------| - | - |
@@ -264,7 +264,7 @@ ms.locfileid: "66262941"
 |x86_amd64|x64 兼容|x86、x64|X64|
 |amd64|x64 本机|X64|X64|
 
-如果 vcvarsall.bat 运行成功（即，不显示任何错误消息），可以跳过下一步，继续执行本文的[将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)](#install-msbuild-to-gac) 部分中的步骤。
+如果 vcvarsall.bat 运行成功（即，不显示任何错误消息），可以跳过下一步，继续执行本文的[将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)](#install-msbuild-to-gac) 部分中的步骤  。
 
 ### <a name="manually-set-environment-variables"></a>手动设置环境变量
 
@@ -298,9 +298,9 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
     - %ProgramFiles%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll
 
-2. 若要将程序集安装到 GAC 中，请在生成计算机上查找 gacutil.exe（一般位于 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中）。 如果找不到此文件夹，请重复执行本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)部分中的步骤。
+2. 若要将程序集安装到 GAC 中，请在生成计算机上查找 gacutil.exe（一般位于 %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\ 中）  。 如果找不到此文件夹，请重复执行本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)部分中的步骤。
 
-     打开具有管理权限的“命令提示符”窗口，针对每个文件运行以下命令：
+     打开具有管理权限的“命令提示符”窗口，针对每个文件运行以下命令  ：
 
      **gacutil -i \<file>**
 
@@ -311,7 +311,7 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
 你可以使用 Azure Pipelines 生成 Visual Studio 项目和解决方案，也可以在命令行上生成它们。 当使用 Azure Pipelines 生成项目时，将调用对应于系统体系结构的 MSBuild 可执行文件。 在命令行上，您可以使用 32 位 MSBuild 或 64 位 MSBuild，并且您可以通过设置 PATH 环境变量或通过直接调用特定于体系结构的 MSBuild 可执行文件来选择 MSBuild 的体系结构。
 
-若要在命令提示符处使用 msbuild.exe，请运行以下命令，其中 solution.sln 是解决方案名称的占位符。
+若要在命令提示符处使用 msbuild.exe，请运行以下命令，其中 solution.sln 是解决方案名称的占位符   。
 
 **msbuild** *solution.sln*
 
@@ -322,19 +322,19 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 可创建可部署到不同计算机的生成环境，它不需要“GAC”文件，也不需要修改注册表设置。 下列步骤只是实现此目的的一种途径。 使这些步骤适应您的生成环境的独特特征。
 
 > [!NOTE]
-> 必须禁用增量生成，以便 tracker.exe 不会在生成期间引发错误。 若要禁用增量生成，请设置此生成参数：
+> 必须禁用增量生成，以便 tracker.exe 不会在生成期间引发错误  。 若要禁用增量生成，请设置此生成参数：
 >
 > **msbuild** *solution.sln* **/p:TrackFileAccess=false**
 
-1. 在主计算机上创建“Depot”目录。
+1. 在主计算机上创建“Depot”目录  。
 
      此目录在这些步骤中指的是 %Depot%。
 
-2. 复制目录和文件，大致就像本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)部分所述，不同之处在于要将它们粘贴到刚刚创建的 %Depot% 目录下。 例如，从 %ProgramFiles%\Windows Kits\8.0\bin 复制到 %Depot%\Windows Kits\8.0\bin。
+2. 复制目录和文件，大致就像本演练的[将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer)部分所述，不同之处在于要将它们粘贴到刚刚创建的 %Depot% 目录下  。 例如，从 %ProgramFiles%\Windows Kits\8.0\bin 复制到 %Depot%\Windows Kits\8.0\bin   。
 
-3. 如果在 %Depot% 中粘贴文件，则请进行下列更改：
+3. 如果在 %Depot% 中粘贴文件，则请进行下列更改  ：
 
-    - 在 %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets、\Microsoft.Cpp.InvalidPlatforms.targets\\、\Microsoft.cppbuild.targets\\ 和 \Microsoft.CppCommon.targets\\ 中，将 
+    - 在 %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets、\Microsoft.Cpp.InvalidPlatforms.targets\\、\Microsoft.cppbuild.targets\\ 和 \Microsoft.CppCommon.targets\\ 中，将
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 的每个实例
 
@@ -352,7 +352,7 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll"。
 
-4. 创建 .props 文件（例如，Partner.AutoImports.props），将其放入包含项目的根文件夹中。 此文件将用于设置 MSBuild 用于查找各种资源的变量。 如果变量不是此文件设置的，则它们是其他依赖注册表值的 .props 文件和 .targets 文件设置的。 由于我们不会设置任何注册表值，因此这些变量将为空，并且生成将失败。 请将此添加到 Partner.AutoImports.props：
+4. 创建 .props 文件（例如，Partner.AutoImports.props），将其放入包含项目的根文件夹中   。 此文件将用于设置 MSBuild 用于查找各种资源的变量。 如果变量不是此文件设置的，则它们是其他依赖注册表值的 .props 文件和 .targets 文件设置的   。 由于我们不会设置任何注册表值，因此这些变量将为空，并且生成将失败。 请将此添加到 Partner.AutoImports.props  ：
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

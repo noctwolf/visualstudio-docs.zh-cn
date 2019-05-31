@@ -48,7 +48,7 @@ ms.locfileid: "63422713"
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>若要在其自身 VSIX 中创建验证扩展  
   
-1. 在“新建项目”  对话框中，在“建模项目” 下，选择“验证扩展” 。  
+1. 在“新建项目”  对话框中，在“建模项目”  下，选择“验证扩展”  。  
   
 2. 在新项目中打开 **.cs** 文件并修改类，以实现验证约束。  
   
@@ -83,33 +83,33 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1. 创建一个类库项目，将该项目添加到现有 VSIX 解决方案或创建一个新的解决方案。  
   
-    1. 在“文件”  菜单上，选择“新建” 、“项目” 。  
+    1. 在“文件”  菜单上，选择“新建”  、“项目”  。  
   
-    2. 在“已安装的模板” 下，展开“Visual C#”  或“Visual Basic” ，然后在中间栏中选择“类库” 。  
+    2. 在“已安装的模板”  下，展开“Visual C#”  或“Visual Basic”  ，然后在中间栏中选择“类库”  。  
   
 2. 除非你的解决方案已经包含一个项目，否则请创建一个 VSIX 项目：  
   
-    1. 在“解决方案资源管理器” 中，在该解决方案的快捷菜单上依次选择“添加”  、“新建项目” 。  
+    1. 在“解决方案资源管理器”  中，在该解决方案的快捷菜单上依次选择“添加”   、“新建项目”  。  
   
-    2. 在 “已安装的模板”下，展开  “Visual C#”或 “Visual Basic”，然后选择 “扩展性”。 在中间栏中，单击“VSIX 项目” 。  
+    2. 在  “已安装的模板”下，展开  “Visual C#”或  “Visual Basic”，然后选择  “扩展性”。 在中间栏中，单击“VSIX 项目”  。  
   
 3. 将 VSIX 项目设置为解决方案的启动项目。  
   
-    - 在“解决方案资源管理器”中，VSIX 项目的快捷菜单上选择“设为启动项目” 。  
+    - 在“解决方案资源管理器”中，VSIX 项目的快捷菜单上选择“设为启动项目”  。  
   
-4. 在 **source.extension.vsixmanifest**中，在“内容” 下，将类库项目添加为 MEF 组件：  
+4. 在 **source.extension.vsixmanifest**中，在“内容”  下，将类库项目添加为 MEF 组件：  
   
     1. 在“元数据”  选项卡上，设置 VSIX 的名称。  
   
     2. 在“安装目标”  选项卡上，将 Visual Studio 版本设置为目标。  
   
-    3. 在“资产”  选项卡上，选择 “新建”，并在对话框中进行如下设置：  
+    3. 在“资产”  选项卡上，选择  “新建”，并在对话框中进行如下设置：  
   
          **类型** = **MEF 组件**  
   
-          = **当前解决方案中的项目**  
+          = **当前解决方案中的项目**   
   
-          = *你的类库项目*  
+           = *你的类库项目*  
   
 #### <a name="to-define-the-validation-class"></a>定义验证类  
   
@@ -183,7 +183,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-test-the-validation-constraint"></a>若要测试验证约束  
   
-1. 按“F5” ，或在“调试”  菜单上，选择“开始调试” 。  
+1. 按“F5”  ，或在“调试”  菜单上，选择“开始调试”  。  
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
     - 如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
-    - 在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序”  字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
+    - 在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性”  。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序”  字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -203,7 +203,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
     2. 创建一个类，并添加具有相同名称的两个特性。  
   
-4. 在图上任意位置处的快捷菜单上，选择“验证” 。  
+4. 在图上任意位置处的快捷菜单上，选择“验证”  。  
   
 5. 错误窗口中将报告模型中的所有错误。  
   
@@ -370,9 +370,9 @@ context.LogError(... , usecase);
   
 1. 在你的计算机上，找到由 VSIX 项目生成的 **.vsix** 文件。  
   
-    1. 在“解决方案资源管理器” 中，在 VSIX 项目的快捷菜单上，选择“在 Windows 资源管理器中打开文件夹” 。  
+    1. 在“解决方案资源管理器”  中，在 VSIX 项目的快捷菜单上，选择“在 Windows 资源管理器中打开文件夹”  。  
   
-    2. 找到的文件**bin\\\*\\**_YourProject_**.vsix**  
+    2. 找到的文件**bin\\\*\\** _YourProject_ **.vsix**  
   
 2. 将 **.vsix** 文件复制到要安装该扩展的目标计算机。 该计算机可以是自己的计算机或其他计算机。  
   
@@ -380,17 +380,17 @@ context.LogError(... , usecase);
   
 3. 在目标计算机上，打开 **.vsix** 文件。  
   
-     “” 将会打开并安装扩展。  
+     “”  将会打开并安装扩展。  
   
 4. 启动或重启 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
   
 #### <a name="to-uninstall-an-extension"></a>若要卸载扩展  
   
-1. 在“工具”  菜单上，选择“扩展和更新” 。  
+1. 在“工具”  菜单上，选择“扩展和更新”  。  
   
-2. 展开“已安装的扩展” 。  
+2. 展开“已安装的扩展”  。  
   
-3. 选择扩展，然后选择“卸载” 。  
+3. 选择扩展，然后选择“卸载”  。  
   
    在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
   

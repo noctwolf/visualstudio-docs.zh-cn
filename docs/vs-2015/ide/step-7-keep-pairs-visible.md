@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60112047"
@@ -52,7 +52,7 @@ ms.locfileid: "60112047"
     firstClicked = null;  
     ```  
   
-     这两个语句中的第一句检查两个图标是否相同。 因为要比较两个值，所以 Visual C# 程序使用 `==` 相等运算符。 第二个语句实际上更改值（称为“赋值”），将 `firstClicked` 引用变量设置为等于 `null` 以重置它。 这就是使用 `=` 赋值运算符的原因。 Visual C# 使用 `=` 设置值，使用 `==` 比较值。 Visual Basic 使用 `=` 进行变量赋值和比较。  
+     这两个语句中的第一句检查两个图标是否相同。 因为要比较两个值，所以 Visual C# 程序使用 `==` 相等运算符。 第二个语句实际上更改值（称为“赋值”  ），将 `firstClicked` 引用变量设置为等于 `null` 以重置它。 这就是使用 `=` 赋值运算符的原因。 Visual C# 使用 `=` 设置值，使用 `==` 比较值。 Visual Basic 使用 `=` 进行变量赋值和比较。  
   
 2. 保存并运行程序，然后开始选择窗体上的图标。 如果选择的是不匹配的对，则将触发计时器的 Tick 事件，两个图标都会消失。 如果选择的是匹配的对，则将执行新的 `if` 语句，而 return 语句会使方法跳过启动计时器的代码，因此图标保持可见，如下图所示。  
   

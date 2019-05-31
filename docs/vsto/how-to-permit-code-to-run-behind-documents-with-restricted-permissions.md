@@ -1,5 +1,5 @@
 ---
-title: 如何：允许代码以使用受限权限的文档的后台运行
+title: 允许代码文档的后面使用受限权限运行
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445341"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402250"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允许代码以使用受限权限的文档的后台运行
   Microsoft Office 信息权限管理 (IRM) 功能可用于限制对文档或工作簿的权限。 默认情况下，受限制的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿后的代码不被允许运行。 可以更改默认值，使托管的代码扩展可以访问的对象模型，该解决方案将适用。

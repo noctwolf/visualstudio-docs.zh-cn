@@ -36,7 +36,7 @@ ms.locfileid: "63406571"
 
 2. 上**文件**菜单中，选择**打开**以打开应用程序的部署清单。
 
-3. 选择“部署选项”选项卡。
+3. 选择“部署选项”选项卡  。
 
 4. 在文本框中名为**启动位置**，输入将包含应用程序更新的部署清单的目录的 URL。
 
@@ -48,7 +48,7 @@ ms.locfileid: "63406571"
 
 2. 设置使用以下命令更新位置。 在此示例中， *HelloWorld.exe.application*是路径你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]始终具有.application 扩展名，应用程序清单和 *<http://adatum.com/Update/Path>* 是该的URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]将检查应用程序更新。
 
-    Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path
+    Mage -Update HelloWorld.exe.application -ProviderUrl http://adatum.com/Update/Path 
 
 3. 保存该文件。
 

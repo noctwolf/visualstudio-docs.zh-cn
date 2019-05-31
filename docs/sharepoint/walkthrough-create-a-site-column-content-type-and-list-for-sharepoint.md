@@ -1,5 +1,5 @@
 ---
-title: 演练：创建网站栏、 内容类型和用于 SharePoint 列表 |Microsoft Docs
+title: 创建 SharePoint 网站栏、 内容类型和列表
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430703"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401272"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 网站栏、 内容类型和列表
   以下过程演示如何创建自定义 SharePoint 站点列，或*字段*— 以及使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。
@@ -97,7 +97,7 @@ ms.locfileid: "63430703"
 
 1. 向项目添加内容类型。 若要执行此操作，在**解决方案资源管理器**，选择项目节点
 
-2. 在菜单栏上，依次选择“项目” > “添加新项”。
+2. 在菜单栏上，依次选择“项目”   > “添加新项”  。
 
 3. 下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。
 
@@ -131,13 +131,13 @@ ms.locfileid: "63430703"
 
 1. 添加到项目的列表。 若要执行此操作，在**解决方案资源管理器**，选择项目节点。
 
-2. 在菜单栏上，依次选择“项目” > “添加新项”。
+2. 在菜单栏上，依次选择“项目”   > “添加新项”  。
 
 3. 下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。
 
 4. 在中**模板**窗格中，选择**列表**模板中，将名称更改为**患者**，然后选择**添加**按钮。
 
-5. 将保留**自定义列表依据**设置为**默认 （空）**，然后选择**完成**按钮。
+5. 将保留**自定义列表依据**设置为**默认 （空）** ，然后选择**完成**按钮。
 
 6. 在列表设计器中，选择**内容类型**按钮以显示**内容类型设置**对话框。
 
@@ -203,7 +203,7 @@ ms.locfileid: "63430703"
 
 #### <a name="to-test-the-application"></a>测试应用程序
 
-1. 在菜单栏上，依次选择“文件” > “全部保存”。
+1. 在菜单栏上，依次选择“文件”   > “全部保存”  。
 
 2. 选择**F5**键以运行该应用程序。
 

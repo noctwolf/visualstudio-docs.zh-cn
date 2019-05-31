@@ -75,33 +75,33 @@ ms.locfileid: "65476673"
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证
 
-1. 创建新的“类库”项目。 此项目将包含层验证类。
+1. 创建新的“类库”项目  。 此项目将包含层验证类。
 
 2. 查找或创建**VSIX 项目**解决方案中。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。
 
 3. 在中**解决方案资源管理器**，在 VSIX 项目的右键单击菜单，选择**设为启动项目**。
 
-4. 在 **source.extension.vsixmanifest**中的“资产” 下，将层验证项目添加为 MEF 组件：
+4. 在 **source.extension.vsixmanifest**中的“资产”  下，将层验证项目添加为 MEF 组件：
 
-    1. 选择 **“新建”**。
+    1. 选择 **“新建”** 。
 
     2. 在“添加新资产”  对话框中，进行如下设置：
 
          **类型** = **Microsoft.VisualStudio.MefComponent**
 
-          = **当前解决方案中的项目**
+          = **当前解决方案中的项目** 
 
          **项目** = *你的验证程序项目*
 
 5. 还必须将其添加为层验证：
 
-    1. 选择 **“新建”**。
+    1. 选择 **“新建”** 。
 
     2. 在“添加新资产”  对话框中，进行如下设置：
 
          **类型** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**。 这并不是下拉列表中的选项。 必须从键盘输入。
 
-          = **当前解决方案中的项目**
+          = **当前解决方案中的项目** 
 
          **项目** = *你的验证程序项目*
 
@@ -220,7 +220,7 @@ ms.locfileid: "65476673"
 
 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到主实例的 Visual Studio 并在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。
 
-始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
+始终通过按 Ctrl + F5（“开始执行(不调试)”  ）启动实验实例。
 
 ### <a name="deploying-a-validation-extension"></a>部署验证扩展
 

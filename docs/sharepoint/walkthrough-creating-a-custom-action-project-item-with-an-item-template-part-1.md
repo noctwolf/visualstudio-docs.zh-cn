@@ -1,5 +1,5 @@
 ---
-title: 演练：使用项模板创建自定义操作项目项，第 1 部分 |Microsoft Docs
+title: 使用项模板，第 1 部分创建自定义操作项目项
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430479"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401119"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>演练：使用项模板，第 1 部分创建自定义操作项目项
   可以通过创建你自己的项目项类型来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，将创建可以添加到 SharePoint 项目，以便在 SharePoint 站点上创建自定义操作项目项。 自定义操作添加的菜单项**站点操作**菜单中的 SharePoint 站点。
@@ -74,7 +74,7 @@ ms.locfileid: "63430479"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+2. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 3. 在顶部的列表**新的项目**对话框框中，请确保 **.NET Framework 4.5**处于选中状态。
 
@@ -159,7 +159,7 @@ ms.locfileid: "63430479"
 
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>若要创建的项目项的自定义图标
 
-1. 在中**解决方案资源管理器**，打开快捷菜单**ProjectItemDefinition**项目中，选择**添加**，然后选择**新项...**.
+1. 在中**解决方案资源管理器**，打开快捷菜单**ProjectItemDefinition**项目中，选择**添加**，然后选择**新项...** .
 
 2. 在项目项的列表中，选择**图标文件**项。
 
@@ -420,7 +420,7 @@ ms.locfileid: "63430479"
         Url="https://docs.microsoft.com/sharepoint/dev/"
         ```
 
-3. 选择 F5。
+3. 选择 F5  。
 
      打包和部署到 SharePoint 站点中指定的自定义操作**站点 URL**项目的属性。 Web 浏览器打开到此站点的默认页。
 
@@ -436,7 +436,7 @@ ms.locfileid: "63430479"
 
 1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
 
-     此时，“扩展和更新”对话框打开。
+     此时，“扩展和更新”  对话框打开。
 
 2. 在扩展的列表，选择**自定义操作项目项**，然后选择**卸载**按钮。
 
