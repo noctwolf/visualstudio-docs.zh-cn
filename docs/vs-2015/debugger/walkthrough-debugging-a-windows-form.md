@@ -51,7 +51,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 1. 上**文件**菜单中，选择**新建**然后单击**项目**。  
   
-     此时将出现“新建项目”对话框。  
+     此时将出现“新建项目”  对话框。  
   
 2. 在项目类型窗格中，打开**Visual Basic**， **Visual C#** ，或**Visual C++** 节点，然后  
   
@@ -63,7 +63,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 4. 在中**名称**框中，为项目指定唯一名称 (例如，Walkthrough_SimpleDebug)。  
   
-5. 单击 **“确定”**。  
+5. 单击 **“确定”** 。  
   
      Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示新窗体。 有关详细信息，请参阅[Windows 窗体设计器](https://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
@@ -92,7 +92,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     textBox1->Text = "Button was clicked!";  
     ```  
   
-11. 在“生成”菜单上，选择“生成解决方案”。  
+11. 在“生成”菜单上，选择“生成解决方案”   。  
   
      该项目应顺利生成，没有错误。  
   
@@ -119,7 +119,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     > [!NOTE]
     > 此外可以右键单击任意行的代码中，指向**断点**，然后单击**插入断点**该行上添加断点。  
   
-2. 在“调试”菜单上选择“启动”。  
+2. 在“调试”菜单上选择“启动”   。  
   
      Windows 窗体开始运行。  
   
@@ -137,7 +137,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
     ""  
     ```  
   
-6. 在“调试”菜单上选择“逐语句”。  
+6. 在“调试”菜单上选择“逐语句”   。  
   
      TextBox1.Text 的更改的值**监视 1**窗口：  
   
@@ -155,7 +155,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
      这将在代码中移除该断点。  
   
-10. 在“调试”菜单上，选择“停止调试”。  
+10. 在“调试”菜单上，选择“停止调试”   。  
   
 ## <a name="attach-to-your-windows-form-application-for-debugging"></a>附加到 Windows 窗体应用程序进行调试  
  在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中，可以将调试器附加到正在运行的进程上。 如果使用 Express Edition，不支持此功能。  

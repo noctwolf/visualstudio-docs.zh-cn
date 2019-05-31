@@ -86,7 +86,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
    - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3. 除了前面的部分中列出的参考资料，添加以下项目引用从**\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**:  
+3. 除了前面的部分中列出的参考资料，添加以下项目引用从 **\Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies**:  
   
    - Microsoft.VisualStudio.Uml.dll  
   

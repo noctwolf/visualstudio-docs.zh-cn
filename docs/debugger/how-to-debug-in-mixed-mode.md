@@ -43,9 +43,9 @@ ms.locfileid: "62894373"
 
 1. 选择C++中的项目**解决方案资源管理器**然后单击**属性**图标，按**Alt**+**Enter**，或右键单击并选择**属性**。
 
-1. 在中**\<项目 > 属性页**对话框中，展开**配置属性**，然后选择**调试**。
+1. 在中 **\<项目 > 属性页**对话框中，展开**配置属性**，然后选择**调试**。
 
-1. 将“调试器类型”设置为“混合”或“自动”。
+1. 将“调试器类型”设置为“混合”或“自动”    。
 
 1. 选择 **确定**。
 
@@ -62,7 +62,7 @@ ms.locfileid: "62894373"
    ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
 
 > [!NOTE]
-> 从 Visual Studio 2017 开始，在 Visual Studio 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试。 有关详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
+> 从 Visual Studio 2017 开始，在 Visual Studio 的大多数版本中，必须使用 launchSettings.json 文件（而非项目属性）在 .NET Core 应用中为本机代码启用混合模式调试  。 有关详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
 
 ## <a name="see-also"></a>请参阅
 

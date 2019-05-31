@@ -1,5 +1,5 @@
 ---
-title: 如何：部署和发布到本地 SharePoint 站点的 SharePoint 解决方案 |Microsoft Docs
+title: 部署和发布到本地 SharePoint 站点的 SharePoint 解决方案
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813967"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401452"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：部署和发布到本地 SharePoint 站点的 SharePoint 解决方案
   可以部署或在开发计算机上将 SharePoint 解决方案发布到本地 SharePoint 服务器。 部署进程副本 *.wsp*文件到 SharePoint 服务器，安装该解决方案，然后激活功能。 发布处理仅副本 *.wsp*到 SharePoint 服务器的文件并将其安装。 您必须手动激活它，以使它在 SharePoint 中。
@@ -39,7 +39,7 @@ ms.locfileid: "62813967"
 
 3. 在中**目标位置**文本框中，输入本地路径，然后选择**发布**按钮。
 
-     在 Visual Studio 中会显示发布进度**输出**窗口。 当完成该过程，该解决方案 (*.wsp*) 文件安装在本地 SharePoint 服务器上。 但是，它仍必须激活要在 SharePoint 中使用。 如果解决方案文件已存在，错误出现，询问您是否要覆盖现有文件。 升级包的信息，请参阅部分在升级中的远程包[如何：部署、 发布和升级 SharePoint 解决方案的远程服务器上](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
+     在 Visual Studio 中会显示发布进度**输出**窗口。 当完成该过程，该解决方案 ( *.wsp*) 文件安装在本地 SharePoint 服务器上。 但是，它仍必须激活要在 SharePoint 中使用。 如果解决方案文件已存在，错误出现，询问您是否要覆盖现有文件。 升级包的信息，请参阅部分在升级中的远程包[如何：部署、 发布和升级 SharePoint 解决方案的远程服务器上](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
 
 ## <a name="see-also"></a>请参阅
 - [如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)

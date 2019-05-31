@@ -154,11 +154,11 @@ ms.locfileid: "65685415"
 ## <a name="examining-the-visual-studio-template-build-steps"></a>检查 Visual Studio 模板生成步骤  
  VSPackage 项目生成系统.vstemplate 文件发生更改或重新生成包含.vstemplate 文件的项目时，通常将 Visual Studio 运行模式下安装程序中。 通过将 MSBuild 的详细级别设置为 Normal 或更高版本，您可以照着操作。  
   
-1. 在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”** 。  
   
 2. 展开**项目和解决方案**节点，并选择**生成并运行**。  
   
-3. 设置**MSBuild 项目生成输出详细信息**到**正常**。 单击 **“确定”**。  
+3. 设置**MSBuild 项目生成输出详细信息**到**正常**。 单击 **“确定”** 。  
   
 4. 重新生成 SimpleProject 项目。  
   
@@ -471,7 +471,7 @@ ZipProjects:
   
 7. Visual Studio 会调用您的项目工厂通过使用 Visual Studio 模板创建项目。 在代码编辑器中打开新的 Program.cs 文件。  
   
-8. 右键单击项目节点中的**解决方案资源管理器**，然后单击**属性**。 随即显示“属性页”对话框。  
+8. 右键单击项目节点中的**解决方案资源管理器**，然后单击**属性**。 随即显示“属性页”对话框  。  
   
    ![](../extensibility/media/simpproj2-proppage.png "SimpProj2_PropPage")  
   

@@ -1,5 +1,5 @@
 ---
-title: 演练：创建 Silverlight Web 部件显示 SharePoint OData |Microsoft Docs
+title: 创建显示 SharePoint OData 的 Silverlight web 部件
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f248ce4403e771d9ab8b6d13fe55fd5ca1c960d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430389"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401132"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练：创建显示 SharePoint OData 的 Silverlight web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，由 RESTful 服务 ListData.svc 实现 OData 服务。 本演练演示如何创建承载 Silverlight 应用程序的 SharePoint web 部件。 Silverlight 应用程序使用 ListData.svc 显示 SharePoint 公告列表信息。 有关详细信息，请参阅[SharePoint Foundation REST 接口](http://go.microsoft.com/fwlink/?LinkId=225999)并[开放数据协议](http://go.microsoft.com/fwlink/?LinkId=226000)。
@@ -57,7 +57,7 @@ ms.locfileid: "63430389"
 
 7. 在中**要如何关联 Silverlight Web 部件**一部分**指定 Silverlight 配置信息**页上，选择**创建新的 Silverlight 项目和将其与 web 部件关联**选项按钮。
 
-8. 更改**名称**到**SLApplication**，将**语言**为**Visual Basic**或**Visual C#**，然后设置**Silverlight 版本**到**Silverlight 4.0**。
+8. 更改**名称**到**SLApplication**，将**语言**为**Visual Basic**或**Visual C#** ，然后设置**Silverlight 版本**到**Silverlight 4.0**。
 
 9. 选择**完成**按钮。 项目出现在**解决方案资源管理器**。
 
@@ -75,13 +75,13 @@ ms.locfileid: "63430389"
     > [!NOTE]
     > 如果您正在使用 Visual Basic，则必须选择**显示所有文件**顶部的图标**解决方案资源管理器**以显示**引用**节点。
 
-3. 中的地址框**添加服务引用**对话框框中，输入您的 SharePoint 站点的 URL，例如**http://MySPSite**，然后选择**转**按钮。
+3. 中的地址框**添加服务引用**对话框框中，输入您的 SharePoint 站点的 URL，例如 **http://MySPSite** ，然后选择**转**按钮。
 
      时 Silverlight 定位 SharePoint OData 服务 ListData.svc，将使用完整的服务的 URL 替换该地址。 对于本例，请 http://myserver 变得 http://myserver/_vti_bin/ListData.svc 。
 
 4. 选择**确定**按钮添加到项目中，服务引用，然后使用默认服务名称 ServiceReference1。
 
-5. 在菜单栏上，依次选择“生成” > “生成解决方案”。
+5. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
 
 6. 将新的数据源添加到项目根据 SharePoint 服务。 若要执行此操作，请在菜单栏上，选择**视图** > **其他 Windows** > **数据源**。
 

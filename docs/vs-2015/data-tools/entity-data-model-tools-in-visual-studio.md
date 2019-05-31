@@ -36,7 +36,7 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 
 - 可以使用[!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]设计器**(**实体设计器**) 直观地创建和修改实体、 关联、 映射和继承关系。 **实体设计器**还会生成[!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]对象层代码。
 
-- 可以使用**[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]向导**从现有数据库生成概念模型并将数据库连接信息添加到你的应用程序。
+- 可以使用 **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]向导**从现有数据库生成概念模型并将数据库连接信息添加到你的应用程序。
 
 - 可以使用**创建数据库向导**首先创建概念模型，然后创建支持该模型的数据库。
 

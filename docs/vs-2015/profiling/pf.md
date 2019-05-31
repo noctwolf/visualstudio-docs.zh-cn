@@ -43,7 +43,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>必需选项  
  只能在包含以下选项之一的命令行中指定 **PF**。  
   
- **Launch：**`AppName`  
+ **Launch：** `AppName`  
  启动探查器以及由 AppName 指定的应用程序。  
   
  **Attach:** `PID`  
@@ -52,17 +52,17 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>无效选项  
  不能在 **PF** 所在的命令行中指定以下选项。  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  将采样事件设置为处理器时钟周期，还可以选择将采样间隔设置为 `Cycles`。 默认 Timer 间隔为 10,000,000。  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  将采样事件设置为被分析的应用程序对操作系统内核的调用 (syscall)，还可以选择将采样间隔设置为 `Events`。 默认 Sys 间隔为 10。  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  将采样事件设置为 `Name` 指定的 CPU 性能计数器，并将采样间隔设置为 `Reload`。  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
- 收集 .NET 内存数据。 默认情况 (Allocation) 下，每次发生内存分配事件时都收集数据。 如果指定 Lifetime 参数，则每次发生垃圾回收事件时也收集数据。  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
+ 收集 .NET 内存数据。 默认情况 (Allocation) 下，每次发生内存分配事件时都收集数据  。 如果指定 Lifetime 参数，则每次发生垃圾回收事件时也收集数据  。  
   
 ## <a name="example"></a>示例  
  本示例演示如何将分析样本事件设置为页面错误，以及如何将采样间隔设置为 20 个页面错误。  

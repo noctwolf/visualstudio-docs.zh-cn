@@ -1,5 +1,5 @@
 ---
-title: 如何：在服务器资源管理器中的内置 SharePoint 节点获取数据 |Microsoft Docs
+title: 在服务器资源管理器中的内置 SharePoint 节点获取数据
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b90582c9b8d352f95d3d5abb3bbb7fb69283b06b
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813731"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401427"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：在服务器资源管理器中的内置 SharePoint 节点获取数据
   在每个内置 SharePoint 节点**服务器资源管理器**，可以为该节点表示的基础 SharePoint 组件获取数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。

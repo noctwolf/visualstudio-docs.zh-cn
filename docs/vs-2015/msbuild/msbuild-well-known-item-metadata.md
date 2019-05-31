@@ -19,7 +19,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bb2e53102221194dc829df162c44bbf04378b28
 ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/17/2019
 ms.locfileid: "59648934"
@@ -43,7 +43,7 @@ ms.locfileid: "59648934"
 |%(Extension)|包含项的文件扩展名。 例如：<br /><br /> `.cs`|  
 |%(RelativeDir)|包含 `Include` 属性中指定的路径，直到最后的反斜杠 (\\)。 例如：<br /><br /> `Source\`|  
 |%(Directory)|包含项的目录，但不包含根目录。 例如：<br /><br /> `MyProject\Source\`|  
-|%(RecursiveDir)|如果 `Include` 属性包含通配符 \*\*，则此元数据将指定代替通配符的路径的一部分。 有关通配符的详细信息，请参阅[如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)。<br /><br /> 如果文件夹 C:\MySolution\MyProject\Source\\ 包含文件 Program.cs，并且该项目文件包含此项：<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` 的值为 MySolution\MyProject\Source\\。|  
+|%(RecursiveDir)|如果 `Include` 属性包含通配符 \*\*，则此元数据将指定代替通配符的路径的一部分。 有关通配符的详细信息，请参阅[如何：选择生成的文件](../msbuild/how-to-select-the-files-to-build.md)。<br /><br /> 如果文件夹 C:\MySolution\MyProject\Source\\ 包含文件 Program.cs，并且该项目文件包含此项： <br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` 的值为 MySolution\MyProject\Source\\  。|  
 |%(Identity)|`Include` 属性中指定的项。 例如：<br /><br /> `Source\Program.cs`|  
 |%(ModifiedTime)|包含上一次修改项的时间戳。 例如：<br /><br /> `2004-07-01 00:21:31.5073316`|  
 |%(CreatedTime)|包含创建项的时间戳。 例如：<br /><br /> `2004-06-25 09:26:45.8237425`|  

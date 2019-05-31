@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  上面的命令枚举匹配"映射"; 的 UWP 应用下面是输出：
 
- 包“Microsoft.BingMaps”：**InstallDirectory：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名称：Microsoft.BingMaps** **发布服务器：CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本：2.1.2914.1734** **可启动应用程序：****id:AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:否** **AppSpec （将启动）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。
+ 包“Microsoft.BingMaps”  ：**InstallDirectory：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         :Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID:S-1-5-21-2127521184-1604012920-1887927527-5603533** **名称：Microsoft.BingMaps** **发布服务器：CN = Microsoft Corporation，O = Microsoft Corporation，L = Redmond，S = Washington，C = US** **版本：2.1.2914.1734** **可启动应用程序：** **id:AppexMaps** **Exe:C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA:否** **AppSpec （将启动）：DXCap.exe-c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps**枚举的每个应用的输出的最后一行显示可用于从其捕获图形信息的命令。
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>捕获特定帧或特定时段内的帧。
  使用`-frame`指定你想要使用逗号和范围捕获的帧：

@@ -32,10 +32,10 @@ HRESULT WINAPI EndTrackingContext();
 ```
 
 ## <a name="return-value"></a>返回值
-如果跟踪上下文结束，返回带 SUCCEEDED 位组的 HRESULT。
+如果跟踪上下文结束，返回带 SUCCEEDED  位组的 HRESULT  。
 
 ## <a name="requirements"></a>要求
-**标头：** FileTracker.h
+**标头：** FileTracker.h 
 
 ## <a name="see-also"></a>请参阅
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

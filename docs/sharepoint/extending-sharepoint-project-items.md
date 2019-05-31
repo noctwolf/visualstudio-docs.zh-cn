@@ -43,7 +43,7 @@ ms.locfileid: "62967391"
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 项目项的标识符
  每个 SharePoint 项目项都有相应的字符串标识符。 如果你想要执行以下任务，您必须知道项目项的标识符：
 
-- 创建项目项的扩展。 在这种情况下，必须将想要扩展的构造函数的项目项的标识符传递<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要为所有项目项类型，请创建一个扩展，将传递 **\\*** 的字符串值。
+- 创建项目项的扩展。 在这种情况下，必须将想要扩展的构造函数的项目项的标识符传递<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要为所有项目项类型，请创建一个扩展，将传递 **\\** * 的字符串值。
 
 - 以编程方式向项目添加项目项。 在这种情况下，必须将传递到的项目项的标识符<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>方法。
 

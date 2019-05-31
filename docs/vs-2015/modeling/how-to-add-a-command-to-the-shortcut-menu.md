@@ -148,7 +148,7 @@ ms.locfileid: "63426946"
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
 ## <a name="CommandSet"></a> 定义命令的行为  
- DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部类中实现的命令。 若要添加新命令，你必须通过创建包含同一个类的分部声明的新文件来扩展此类。 类的名称通常是 *\<YourDslName >*`CommandSet`。 这将有助于通过验证该类的名称以及检查其内容来开始操作。  
+ DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部类中实现的命令。 若要添加新命令，你必须通过创建包含同一个类的分部声明的新文件来扩展此类。 类的名称通常是 *\<YourDslName >* `CommandSet`。 这将有助于通过验证该类的名称以及检查其内容来开始操作。  
   
  命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
   

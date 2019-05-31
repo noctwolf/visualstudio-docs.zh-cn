@@ -40,7 +40,7 @@ ms.locfileid: "62580964"
 |*onet.xml*|指定新站点的配置、 站点定义模板，默认行为的组件。 这些设置可以包含的内容类型启用的默认列表视图，文档模板文件，如属性和 Web 部件包含与该站点。 默认情况下，`Modules`部分列出了要添加到 SharePoint 站点，如何配置这些设置的文件。|
 |*webtemp_\<SiteDefinitionName>.xml*|指定将出现在站点定义配置**模板选择**一部分**新的 SharePoint 站点**页。|
 
- 默认情况下，所有站点定义都存储在*\<驱动器： > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*文件夹。 每个站点定义具有自己的子文件夹。
+ 默认情况下，所有站点定义都存储在 *\<驱动器： > \Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\SiteTemplates*文件夹。 每个站点定义具有自己的子文件夹。
 
 ## <a name="related-topics"></a>相关主题
 

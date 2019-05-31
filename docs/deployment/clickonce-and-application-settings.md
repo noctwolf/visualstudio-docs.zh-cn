@@ -29,9 +29,9 @@ Windows 窗体的应用程序设置，可以轻松地创建、 存储和维护�
 ## <a name="application-settings-files"></a>应用程序设置文件
  应用程序设置使用两个文件： *\<应用程序 >。 exe.config*并*user.config*，其中*应用*是 Windows 窗体应用程序的名称。 *user.config*创建你的应用程序存储用户范围设置的客户端第一个时间。 *\<应用程序 >。 exe.config*，与此相反，将在部署之前如果存在定义设置的默认值。 Visual Studio 将在使用时自动包括此文件及其**发布**命令。 如果在 ClickOnce 应用程序使用创建*Mage.exe*或*MageUI.exe*，您必须确保此文件是包含在你的应用程序的其他文件时填充应用程序清单。
 
- 在 Windows 窗体应用程序中不使用 ClickOnce，应用程序部署*\<应用程序 >。 exe.config*文件存储在应用程序目录中，而*user.config*文件存储在用户的**文档和设置**文件夹。 在 ClickOnce 应用程序中， *\<应用程序 >。 exe.config*驻留在 ClickOnce 应用程序缓存中，在应用程序目录中并*user.config*居住在 ClickOnce 数据目录为该应用程序。
+ 在 Windows 窗体应用程序中不使用 ClickOnce，应用程序部署 *\<应用程序 >。 exe.config*文件存储在应用程序目录中，而*user.config*文件存储在用户的**文档和设置**文件夹。 在 ClickOnce 应用程序中， *\<应用程序 >。 exe.config*驻留在 ClickOnce 应用程序缓存中，在应用程序目录中并*user.config*居住在 ClickOnce 数据目录为该应用程序。
 
- 无论你部署应用程序的方式，应用程序设置可确保安全的读取访问权限*\<应用程序 >。 exe.config*，和安全的读/写访问权限*user.config*。
+ 无论你部署应用程序的方式，应用程序设置可确保安全的读取访问权限 *\<应用程序 >。 exe.config*，和安全的读/写访问权限*user.config*。
 
  在 ClickOnce 应用程序，使用应用程序设置的配置文件的大小受 ClickOnce 缓存的大小。 有关详细信息，请参阅[ClickOnce 缓存概述](../deployment/clickonce-cache-overview.md)。
 
@@ -42,8 +42,8 @@ Windows 窗体的应用程序设置，可以轻松地创建、 存储和维护�
 
 |更改类型|升级操作|
 |--------------------|--------------------|
-|设置添加到*\<应用程序 >。 exe.config*|新的设置合并到当前版本*\<应用程序 >。 exe.config*|
-|删除从设置*\<应用程序 >。 exe.config*|从当前版本中删除旧的设置*\<应用程序 >。 exe.config*|
+|设置添加到 *\<应用程序 >。 exe.config*|新的设置合并到当前版本 *\<应用程序 >。 exe.config*|
+|删除从设置 *\<应用程序 >。 exe.config*|从当前版本中删除旧的设置 *\<应用程序 >。 exe.config*|
 |设置的默认更改;本地设置仍设置为原始默认值在*user.config*|设置合并到当前版本*user.config*与作为值的新默认值|
 |设置的默认更改;将组设置为在非默认*user.config*|设置合并到当前版本*user.config*与保留的非默认值|
 

@@ -1,5 +1,5 @@
 ---
-title: 如何：添加和删除功能和包项使用包设计器 |Microsoft Docs
+title: 包设计器：添加和删除功能和包项
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbd44bbf3b337815c8c72cea66dd4d56fc645ade
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966973"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401611"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>如何：添加和删除使用包设计器的功能和包项
   创建 SharePoint 解决方案时，Visual Studio 会将默认的 SharePoint 功能添加到解决方案中的包。 然后才能最终部署，可以添加和删除 SharePoint 项目项和修改 SharePoint 包的功能。

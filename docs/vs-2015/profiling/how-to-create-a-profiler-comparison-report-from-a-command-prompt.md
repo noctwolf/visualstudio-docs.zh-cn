@@ -11,7 +11,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756734"
@@ -27,12 +27,12 @@ ms.locfileid: "54756734"
   
  使用以下语法创建比较报告：  
   
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]  
   
- 可以向 VSPerfReport /diff 命令行添加下表中的选项。  
+ 可以向 VSPerfReport /diff  命令行添加下表中的选项。  
   
 |选项|说明​​|  
 |------------|-----------------|  
-|DiffThreshold:[Value]|如果差异低于此百分比阀值，则忽略该差异。 此外，不会显示值低于此阈值的新数据。|  
-|DiffTable: TableName|使用此表比较文件。 默认使用函数表。 指定 VSPerfReport /querydifftables 中列出的标识符。|  
-|DiffColumn: ColumnName|使用此列对值进行比较。 默认情况下，使用独占样本百分比列。 指定 VSPerfReport /querydifftables 中列出的标识符。|
+|DiffThreshold:  [Value  ]|如果差异低于此百分比阀值，则忽略该差异。 此外，不会显示值低于此阈值的新数据。|  
+|DiffTable:  TableName |使用此表比较文件。 默认使用函数表。 指定 VSPerfReport /querydifftables  中列出的标识符。|  
+|DiffColumn:  ColumnName |使用此列对值进行比较。 默认情况下，使用独占样本百分比列。 指定 VSPerfReport /querydifftables  中列出的标识符。|

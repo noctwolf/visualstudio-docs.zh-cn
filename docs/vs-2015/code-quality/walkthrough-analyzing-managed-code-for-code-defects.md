@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116285"
@@ -41,7 +41,7 @@ ms.locfileid: "60116285"
   
 1. 上**文件**菜单[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，单击**新建**，然后单击**项目**。  
   
-2. 在中**新的项目**对话框中的**项目类型**，单击**Visual C#**。  
+2. 在中**新的项目**对话框中的**项目类型**，单击**Visual C#** 。  
   
 3. 下**模板**，选择**类库**。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60116285"
   
 1. 选择在 CodeAnalysisManagedDemo 项目**解决方案资源管理器**。  
   
-2. 在“项目”菜单上，单击“属性”。  
+2. 在“项目”菜单上，单击“属性”   。  
   
      CodeAnalysisManagedDemo 属性页随即显示。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60116285"
   
        选择**为程序集签名**复选框。  
   
-       在中**选择强名称密钥文件**列表中，选择**\<新建...>**。  
+       在中**选择强名称密钥文件**列表中，选择 **\<新建...>** 。  
   
        **创建强名称密钥**对话框随即出现。  
   
