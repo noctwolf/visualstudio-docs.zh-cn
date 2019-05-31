@@ -53,13 +53,13 @@ ms.locfileid: "63434379"
   
 4. 打开 RegExLangServ.sln 解决方案。  
   
-5. **单向升级**窗口会显示。 单击 **“确定”**。  
+5. **单向升级**窗口会显示。 单击 **“确定”** 。  
   
 6. 更新项目属性。 打开**项目属性**窗口，通过选择中的项目节点**解决方案资源管理器**，右键单击，然后选择**属性**。  
   
     - 上**应用程序**选项卡上，更改**目标框架**到**4.6.1**。  
   
-    - 上**调试**选项卡上，在**启动外部程序**框中，键入 **\<Visual Studio 安装路径 > \Common7\IDE\devenv.exe。**。  
+    - 上**调试**选项卡上，在**启动外部程序**框中，键入 **\<Visual Studio 安装路径 > \Common7\IDE\devenv.exe。** 。  
   
          在中**命令行参数**框中，键入 /**rootsuffix Exp**。  
   
@@ -99,13 +99,13 @@ ms.locfileid: "63434379"
   
     - **产品名称**:RegExLangServ  
   
-    - 说明：正则表达式语言服务。  
+    - 说明  ：正则表达式语言服务。  
   
     - 下**资产**，单击**新建**，选择**类型**到**Microsoft.VisualStudio.VsPackage**，将**源**到**当前解决方案中的项目**，然后设置**项目**到**RegExLangServ**。  
   
     - 保存并关闭文件。  
   
-11. 生成解决方案。 将生成的文件部署到 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**。  
+11. 生成解决方案。 将生成的文件部署到 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** 。  
   
 12. 开始调试。 打开 Visual Studio 的第二个实例。  
   

@@ -22,7 +22,7 @@ ms.locfileid: "65704661"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
-本文将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，更改项目代码并重新运行测试。
+本文将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义  。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，更改项目代码并重新运行测试。
 
 ## <a name="create-a-project-to-test"></a>创建一个项目进行测试
 
@@ -30,18 +30,18 @@ ms.locfileid: "65704661"
 
 1. 打开 Visual Studio。
 
-2. 在“文件”菜单上，依次选择“新建”>“项目”。
+2. 在“文件”  菜单上，依次选择“新建”  >“项目”  。
 
-   此时将出现“新建项目”对话框。
+   此时将出现“新建项目”  对话框。
 
-3. 在“Visual C#”>“.NET Core”类别下，选择“控制台应用(.NET Core)”项目模板。
+3. 在“Visual C#”>“.NET Core”类别下，选择“控制台应用(.NET Core)”项目模板    。
 
-4. 将项目命名为“Bank”，然后单击“确定”。
+4. 将项目命名为“Bank”，然后单击“确定”   。
 
-   将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Program.cs 文件。
+   将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Program.cs 文件   。
 
    > [!NOTE]
-   > 如果编辑器中未打开 Program.cs，请在“解决方案资源管理器”中双击文件 Program.cs 将其打开。
+   > 如果编辑器中未打开 Program.cs，请在“解决方案资源管理器”中双击文件 Program.cs 将其打开    。
 
 ::: moniker-end
 
@@ -49,20 +49,20 @@ ms.locfileid: "65704661"
 
 1. 打开 Visual Studio。
 
-2. 在“开始”窗口上，选择“创建新项目”。
+2. 在“开始”窗口上，选择“创建新项目”  。
 
-3. 搜索并选择 C#“控制台应用(.NET Core)”项目模板，然后单击“下一步”。
+3. 搜索并选择 C#“控制台应用(.NET Core)”项目模板，然后单击“下一步”   。
 
-4. 将项目命名为“Bank”，然后单击“创建”。
+4. 将项目命名为“Bank”，然后单击“创建”   。
 
-   将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Program.cs 文件。
+   将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Program.cs 文件   。
 
    > [!NOTE]
-   > 如果编辑器中未打开 Program.cs，请在“解决方案资源管理器”中双击文件 Program.cs 将其打开。
+   > 如果编辑器中未打开 Program.cs，请在“解决方案资源管理器”中双击文件 Program.cs 将其打开    。
 
 ::: moniker-end
 
-5. 将 Program.cs 的内容替换为以下定义 BankAccount 类的 C# 代码：
+5. 将 Program.cs 的内容替换为以下定义 BankAccount 类的 C# 代码   ：
 
    ```csharp
    using System;
@@ -132,7 +132,7 @@ ms.locfileid: "65704661"
    }
    ```
 
-6. 通过在“解决方案资源管理器”中右键单击并选择“重命名”，将该文件重命名为 BankAccount.cs。
+6. 通过在“解决方案资源管理器”中右键单击并选择“重命名”，将该文件重命名为 BankAccount.cs    。
 
 7. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
@@ -140,60 +140,60 @@ ms.locfileid: "65704661"
 
 ## <a name="create-a-unit-test-project"></a>创建单元测试项目
 
-1. 在“文件”菜单上，选择“添加” > “新建项目”。
+1. 在“文件”  菜单上，选择“添加”   > “新建项目”  。
 
    > [!TIP]
-   > 也可以右键单击“解决方案资源管理器”中的解决方案，然后依次选择“添加” > “新建项目”。
+   > 也可以右键单击“解决方案资源管理器”中的解决方案，然后依次选择“添加” > “新建项目”    。
 
 ::: moniker range="vs-2017"
 
-2. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”。
+2. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”     。
 
-3. 从模板列表中选择“MSTest 测试项目(.NET Core)”。
+3. 从模板列表中选择“MSTest 测试项目(.NET Core)”  。
 
-4. 在“名称”框中，输入 `BankTests`，然后选择“确定”。
+4. 在“名称”  框中，输入 `BankTests`，然后选择“确定”  。
 
-   将“BankTests”项目添加到“Bank”解决方案。
+   将“BankTests”  项目添加到“Bank”  解决方案。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 搜索并选择 C#“MSTest 测试项目(.NET Core)”项目模板，然后单击“下一步”。
+2. 搜索并选择 C#“MSTest 测试项目(.NET Core)”项目模板，然后单击“下一步”   。
 
-3. 将项目命名为 BankTests。
+3. 将项目命名为 BankTests  。
 
 4. 单击 **“创建”** 。
 
-   将“BankTests”项目添加到“Bank”解决方案。
+   将“BankTests”  项目添加到“Bank”  解决方案。
 
 ::: moniker-end
 
-5. 在“BankTests”项目中，添加对“Bank”项目的引用。
+5. 在“BankTests”  项目中，添加对“Bank”  项目的引用。
 
-   在“解决方案资源管理器”中，依次选择“BankTests”项目下的“依赖项”，以及右键单击菜单中的“添加引用”。
+   在“解决方案资源管理器”中，依次选择“BankTests”项目下的“依赖项”，以及右键单击菜单中的“添加引用”     。
 
-6. 在“引用管理器”对话框中，展开“项目”，选择“解决方案”，然后选中“Bank”项。
+6. 在“引用管理器”对话框中，展开“项目”，选择“解决方案”，然后选中“Bank”项     。
 
 7. 选择 **“确定”** 。
 
 ## <a name="create-the-test-class"></a>创建测试类
 
-创建一个测试类来验证 `BankAccount` 类。 可以使用项目模板生成的 UnitTest1.cs 文件，但需为文件和类提供更具描述性的名称。 通过重命名“解决方案资源管理器”中的文件，一步即可完成该操作。
+创建一个测试类来验证 `BankAccount` 类。 可以使用项目模板生成的 UnitTest1.cs  文件，但需为文件和类提供更具描述性的名称。 通过重命名“解决方案资源管理器”  中的文件，一步即可完成该操作。
 
 ### <a name="rename-a-file-and-class"></a>重命名文件和类
 
-1. 要重命名文件，在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件。 在右键单击菜单中，选择“重命名”，再将文件重命名为 BankAccountTests.cs。
+1. 要重命名文件，在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件   。 在右键单击菜单中，选择“重命名”  ，再将文件重命名为 BankAccountTests.cs  。
 
    ::: moniker range="vs-2017"
 
-   在弹出对话框中，选择“否”。
+   在弹出对话框中，选择“否”  。
 
    ::: moniker-end
 
-2. 要重命名类，请将光标放置在代码编辑器的 `UnitTest1` 上，然后按 F2（或右键单击，然后选择“重命名”）。 键入 BankAccountTests，然后按 Enter。
+2. 要重命名类，请将光标放置在代码编辑器的 `UnitTest1` 上，然后按 F2（或右键单击，然后选择“重命名”）   。 键入 BankAccountTests，然后按 Enter   。
 
-BankAccountTests.cs 文件现包含下列代码：
+BankAccountTests.cs  文件现包含下列代码：
 
 ```csharp
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -283,25 +283,25 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 1. 在 **“生成”** 菜单上，选择 **“生成解决方案”** 。
 
-2. 如果未打开“测试资源管理器”，通过在顶部菜单栏中选择“测试” > “Windows” > “测试资源管理器”将其打开。
+2. 如果未打开“测试资源管理器”，通过在顶部菜单栏中选择“测试” > “Windows” > “测试资源管理器”将其打开     。
 
 3. 选择 **“全部运行”** 以运行测试。
 
-   测试运行时，“测试资源管理器”窗口顶部的状态栏呈动态。 测试运行结束时，如果测试方法全部通过，状态栏将变为绿色；如果有任何测试失败，状态栏将变为红色。
+   测试运行时，“测试资源管理器”窗口顶部的状态栏呈动态  。 测试运行结束时，如果测试方法全部通过，状态栏将变为绿色；如果有任何测试失败，状态栏将变为红色。
 
    在这种情况下，测试失败。
 
-4. 在“测试资源管理器”中选择该方法，可在窗口底部查看详细信息。
+4. 在“测试资源管理器”  中选择该方法，可在窗口底部查看详细信息。
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>修复代码并重新运行测试
 
 测试结果包含一条描述失败的消息。 对于 `AreEqual` 方法，该消息显示预计余额和实际余额。 虽然预计余额会减少，但余额中反而增加了取款金额。
 
-单元测试已发现一个 bug：取款金额本应从帐户余额中减去，结果却添加到帐户余额中。
+单元测试已发现一个 bug：取款金额本应从帐户余额中减去  ，结果却添加  到帐户余额中。
 
 ### <a name="correct-the-bug"></a>更正 bug
 
-若要更正该错误，请在 BankAccount.cs 文件中替换以下行：
+若要更正该错误，请在 BankAccount.cs 文件中替换以下行  ：
 
 ```csharp
 m_balance += amount;
@@ -315,7 +315,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新运行测试
 
-在测试资源管理器中，选择“全部运行”以重新运行测试。 红色/绿色栏变为绿色，指示已通过测试。
+在测试资源管理器中，选择“全部运行”以重新运行测试   。 红色/绿色栏变为绿色，指示已通过测试。
 
 ![Visual Studio 2019 中显示已通过的测试的文本资源管理器](media/test-explorer-banktests-passed.png)
 
@@ -432,7 +432,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 这是测试方法中的一个 bug。 要解决该问题，在测试方法末尾添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 断言，处理未引发异常的情况。
 
-重新运行测试表明，如果捕获到正确的异常，测试现将失败。 `catch` 块捕获到该异常，但该方法继续执行，并在新的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 断言处失败。 要解决此问题，在 `catch` 块中的 `StringAssert` 后添加 `return` 语句。 重新运行测试可确认已解决此问题。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 的最终版本如下：
+重新运行测试表明，如果捕获到正确的异常，测试现将失败  。 `catch` 块捕获到该异常，但该方法继续执行，并在新的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 断言处失败。 要解决此问题，在 `catch` 块中的 `StringAssert` 后添加 `return` 语句。 重新运行测试可确认已解决此问题。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 的最终版本如下：
 
 ```csharp
 [TestMethod]
@@ -464,7 +464,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 通过改进测试代码，可使测试方法更可靠并提供更多信息。 但更重要的是，被测代码也得到改进。
 
 > [!TIP]
-> 此演练使用用于托管代码的 Microsoft 单元测试框架。 “测试资源管理器”还可以在具有“测试资源管理器”适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
+> 此演练使用用于托管代码的 Microsoft 单元测试框架。 “测试资源管理器”还可以在具有“测试资源管理器”适配器的第三方单元测试框架中运行测试   。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
 
 ## <a name="see-also"></a>请参阅
 

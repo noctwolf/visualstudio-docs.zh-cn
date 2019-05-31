@@ -163,7 +163,7 @@ DXCap.exe –e map
   
  上面的命令枚举了与 "map" 匹配的 Windows 应用商店应用；以下是输出：  
   
- 包“Microsoft.BingMaps”：  
+ 包“Microsoft.BingMaps”  ：  
  **InstallDirectory：C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **FullName         ：Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **UserSID          ：S-1-5-21-2127521184-1604012920-1887927527-5603533**  

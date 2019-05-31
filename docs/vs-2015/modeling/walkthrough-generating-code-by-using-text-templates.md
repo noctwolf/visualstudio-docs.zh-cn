@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>要创建项目  
   
-1. 在“文件”  菜单上，单击“新建”  ，然后单击“项目” 。  
+1. 在“文件”  菜单上，单击“新建”  ，然后单击“项目”  。  
   
 2. 单击“”  节点，然后在“模板”  窗格中，单击“控制台应用程序”   
   
@@ -97,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>添加 XML 文件  
   
-1. 在“解决方案资源管理器” 中，右键单击项目，单击“添加”  ，然后单击“新项” 。  
+1. 在“解决方案资源管理器”  中，右键单击项目，单击“添加”  ，然后单击“新项”  。  
   
 2. 在“添加新项”  对话框，从“模板”  窗格选择“XML 文件”  。  
   
@@ -137,7 +137,7 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>将文本模板文件添加到项目  
   
-1. 在“解决方案资源管理器” 中，右键单击项目，单击“添加” ，然后单击“新项” 。  
+1. 在“解决方案资源管理器”  中，右键单击项目，单击“添加”  ，然后单击“新项”  。  
   
 2. 在“添加新项”  对话框中，从“模板”  窗格选择“文本模板”  。  
   
@@ -418,7 +418,7 @@ namespace MyProject
   在本演练中，程序代码实际上是从模型实例中生成的，该实例是应用程序会处理的一个典型 XML 文件示例。 在更正规的方法中，XML 架构将以 .xsd 文件或域特定语言定义的形式成为模板的输入。 这种方法将使模板在确定特征（如关系的多重性）方面更轻松。  
   
 ## <a name="troubleshooting-the-text-template"></a>解决文本模板故障  
- 若在“错误列表”中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。  
+ 若在“错误列表”  中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   

@@ -79,7 +79,7 @@ ms.locfileid: "65691401"
  为了使调试器附加到用 C++ 编写的代码，该代码必须发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) 链接器选项将它自动添加到代码中。  
   
 ## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode Debugging  
- 调用 DLL 的调用应用程序可以用托管代码编写，也可以用本机代码编写。 如果托管 DLL 由本机代码调用，并且您需要调试两者，则必须同时启用托管调试器和本机调试器。 可以选择在此**\<项目 > 属性页**对话框或窗口。 具体如何检查取决于是从 DLL 项目中启动调试，还是从调用应用程序项目中启动调试。 有关详细信息，请参阅[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。  
+ 调用 DLL 的调用应用程序可以用托管代码编写，也可以用本机代码编写。 如果托管 DLL 由本机代码调用，并且您需要调试两者，则必须同时启用托管调试器和本机调试器。 可以选择在此 **\<项目 > 属性页**对话框或窗口。 具体如何检查取决于是从 DLL 项目中启动调试，还是从调用应用程序项目中启动调试。 有关详细信息，请参阅[如何：在混合模式下调试](../debugger/how-to-debug-in-mixed-mode.md)。  
   
 ## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Changing Default Configurations  
  用项目模板创建控制台应用程序项目时， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 有关详细信息，请参阅[的项目设置C++调试配置](../debugger/project-settings-for-a-cpp-debug-configuration.md)，[项目设置为C#调试配置](../debugger/project-settings-for-csharp-debug-configurations.md)，[的 Visual Basic 调试项目设置配置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)，和[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。  

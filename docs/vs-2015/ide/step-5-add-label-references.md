@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60041868"
@@ -19,7 +19,7 @@ ms.locfileid: "60041868"
 # <a name="step-5-add-label-references"></a>步骤 5：添加标签引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-该程序需要跟踪玩家选择了哪些标签控件。 现在，该程序将显示玩家选择的所有标签。 但是，我们要更改这一行为。 在选择第一个标签后，该程序应显示该标签的图标。 在选择第二个标签后，该程序应短暂显示两个图标，然后再隐藏这两个图标。 程序现将通过引用变量跟踪第一次和第二次分别选择的标签控件。  
+该程序需要跟踪玩家选择了哪些标签控件。 现在，该程序将显示玩家选择的所有标签。 但是，我们要更改这一行为。 在选择第一个标签后，该程序应显示该标签的图标。 在选择第二个标签后，该程序应短暂显示两个图标，然后再隐藏这两个图标。 程序现将通过引用变量  跟踪第一次和第二次分别选择的标签控件。  
   
 ### <a name="to-add-label-references"></a>添加标签引用  
   
@@ -44,7 +44,7 @@ ms.locfileid: "60041868"
      ![显示一个图标的匹配游戏](../ide/media/express-tut4step5.png "Express_Tut4Step5")  
 显示一个图标的匹配游戏  
   
-     在教程的下一步中，将添加“计时器”控件修复此情况。  
+     在教程的下一步中，将添加“计时器”  控件修复此情况。  
   
 ### <a name="to-continue-or-review"></a>继续或查看  
   

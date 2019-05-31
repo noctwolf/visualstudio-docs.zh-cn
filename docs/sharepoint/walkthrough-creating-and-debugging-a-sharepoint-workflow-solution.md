@@ -1,5 +1,5 @@
 ---
-title: 演练：创建和调试 SharePoint 工作流解决方案 |Microsoft Docs
+title: 创建和调试 SharePoint 工作流解决方案
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430368"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401048"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>演练：创建和调试 SharePoint 工作流解决方案
   本演练演示如何创建一个基本顺序工作流模板。 工作流检查以确定文档是否已评审的共享的文档库的属性。 如果已查看过该文档，则工作流完成。
@@ -57,7 +57,7 @@ ms.locfileid: "63430368"
 
 3. 选择**库**上**库工具**功能区，然后选择**创建列**在功能区中创建一个新列的按钮。
 
-4. 命名的列**Document Status**，将其类型设置为**选择 （菜单可供选择）**，指定以下三个选项，然后选择**确定**按钮：
+4. 命名的列**Document Status**，将其类型设置为**选择 （菜单可供选择）** ，指定以下三个选项，然后选择**确定**按钮：
 
     - **需要评审**
 
@@ -162,7 +162,7 @@ ms.locfileid: "63430368"
 
 12. 在中**属性**窗口中，设置属性下, 表中所示。
 
-    |属性|“值”|
+    |属性|值|
     |--------------|-----------|
     |**CorrelationToken**|**workflowToken**|
     |**调用**|**onWorkflowItemChanged**|

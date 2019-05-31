@@ -37,7 +37,7 @@ HRESULT WINAPI SetThreadCount(int threadCount);
  要使用的线程数。
 
 ## <a name="return-value"></a>返回值
- 线程数更新后，则返回带 SUCCEEDED 位集的 HRESULT。
+ 线程数更新后，则返回带 SUCCEEDED 位集的 HRESULT   。
 
 ## <a name="requirements"></a>要求
- **标头：** FileTracker.h
+ **标头：** FileTracker.h 

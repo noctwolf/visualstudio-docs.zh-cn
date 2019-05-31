@@ -39,7 +39,7 @@ ms.locfileid: "63386708"
 
  建议你检查生成的代码以帮助你了解 DSL。 若要查看生成的文件，请在“解决方案资源管理器”中展开 *.tt 文件。
 
- \*.Tt 文件包含极少数生成代码。 相反，它们使用 `<#include>` 指令来包括共享的模板文件。 共享的文件可在**\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**
+ \*.Tt 文件包含极少数生成代码。 相反，它们使用 `<#include>` 指令来包括共享的模板文件。 共享的文件可在 **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  在将你自己的程序代码添加到 DSL 解决方案时，请将它添加在“生成的代码”文件夹之外的单独文件中。 你可能想要创建**自定义代码**文件夹。 （在向自定义文件夹添加新代码文件时，请记住在初始代码主干中更正命名空间。）
 
@@ -60,7 +60,7 @@ ms.locfileid: "63386708"
 
  *YourDsl* `Schema.xsd`
 
- 包含 DSL 实例的文件的架构。 此文件复制到编译 (**bin**) 目录。 在安装 DSL 时，可以将复制到此文件**\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** ，以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。
+ 包含 DSL 实例的文件的架构。 此文件复制到编译 (**bin**) 目录。 在安装 DSL 时，可以将复制到此文件 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** ，以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。
 
  如果通过在 DSL 资源管理器中设置选项来自定义序列化，则该架构将进行相应的更改。 但是，如果编写自己的序列化代码，则此文件可能不再表示实际架构。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 

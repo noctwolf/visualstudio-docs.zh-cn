@@ -11,7 +11,7 @@ ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60068634"
@@ -37,7 +37,7 @@ ms.locfileid: "60068634"
   
      \- 或 -  
   
-   - 选择**\<浏览...>** 指定的现有规则集不在列表中。  
+   - 选择 **\<浏览...>** 指定的现有规则集不在列表中。  
   
 4. 选择**打开**若要在规则集编辑器中显示的规则。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "60068634"
   
 - 若要折叠所有组中的规则，请选择**折叠所有**。  
   
-- 若要更改规则分组所依据的字段，选择从字段**Group By**列表。 若要显示未分组的规则，请选择 **\<None >**。  
+- 若要更改规则分组所依据的字段，选择从字段**Group By**列表。 若要显示未分组的规则，请选择 **\<None >** 。  
   
 - 若要添加或删除字段，在规则列中，选择**列选项**。  
   

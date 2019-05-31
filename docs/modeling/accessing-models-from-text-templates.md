@@ -137,7 +137,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>动态加载模型
  如果你想要在运行时确定要加载的模型，可以在程序代码中，而不是使用特定于 DSL 的指令动态加载模型文件。
 
- 但是，特定于 DSL 的函数之一是指令的导入 DSL 的命名空间，以便在将模板代码可以使用该 DSL 中定义的域类。 由于不使用该指令，因此必须添加**\<程序集 >** 并**\<导入 >** 指令可能会加载的所有模型。 这非常简单，如果可能会加载不同的模型是相同的 DSL 的所有实例。
+ 但是，特定于 DSL 的函数之一是指令的导入 DSL 的命名空间，以便在将模板代码可以使用该 DSL 中定义的域类。 由于不使用该指令，因此必须添加 **\<程序集 >** 并 **\<导入 >** 指令可能会加载的所有模型。 这非常简单，如果可能会加载不同的模型是相同的 DSL 的所有实例。
 
  若要加载该文件，最有效方法是使用 Visual Studio ModelBus。 在典型方案中，文本模板将使用特定于 DSL 的指令以常规方式加载的第一个模型。 该模型将包含到另一个模型的 ModelBus 引用。 可以使用 ModelBus 打开被引用的模型和访问特定元素。 有关详细信息，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 

@@ -32,10 +32,10 @@ HRESULT WINAPI ResumeTracking();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果跟踪恢复，则返回带 SUCCEEDED 位集的 HRESULT。 如果因为上下文不可用而无法恢复跟踪，将返回“E_FAIL”。
+ 如果跟踪恢复，则返回带 SUCCEEDED 位集的 HRESULT   。 如果因为上下文不可用而无法恢复跟踪，将返回“E_FAIL”  。
 
 ## <a name="requirements"></a>要求
- **标头：** FileTracker.h
+ **标头：** FileTracker.h 
 
 ## <a name="see-also"></a>请参阅
 - [SuspendTracking](../msbuild/suspendtracking.md)

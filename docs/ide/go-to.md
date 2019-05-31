@@ -21,14 +21,14 @@ ms.locfileid: "62549919"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 
-Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快速找到指定项。 可以从简单统一的页面中转到特定的行、类型、符号、文件和成员。
+Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快速找到指定项  。 可以从简单统一的页面中转到特定的行、类型、符号、文件和成员。
 
 ## <a name="how-to-use-it"></a>使用方法
 
 输入 | 函数
 ------------ | ---
-**键盘** | 按 Ctrl+T 或 Ctrl+,
-**鼠标** | 选择“编辑” > “转到” > “转到全部”
+**键盘** | 按 Ctrl  +T  或 Ctrl  +, 
+**鼠标** | 选择“编辑” > “转到” > “转到全部”   
 
 代码编辑器的右上方会显示一个小窗口。
 
@@ -38,13 +38,13 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 ![“定位到”窗口](../ide/media/vside_navigatetowindow.png)
 
-还可以输入一个问号 (?) 来获取更多帮助。
+还可以输入一个问号 (?) 来获取更多帮助  。
 
 ![转到全部帮助](media/go-to-all-help.png)
 
 ## <a name="filtered-searches"></a>经过筛选的搜索
 
-默认会在所有解决方案项中搜索指定项。 不过，可以在搜索词前面加上特定字符，将代码搜索范围缩小至具体元素类型。 还可以选择“转到”对话框工具栏上的按钮，快速更改搜索筛选器。 更改类型筛选器的按钮位于左侧，而更改搜索范围的按钮则位于右侧。
+默认会在所有解决方案项中搜索指定项。 不过，可以在搜索词前面加上特定字符，将代码搜索范围缩小至具体元素类型。 还可以选择“转到”对话框工具栏上的按钮，快速更改搜索筛选器  。 更改类型筛选器的按钮位于左侧，而更改搜索范围的按钮则位于右侧。
 
 ![转到成员](../ide/media/vside_navigation_toolbar.png)
 
@@ -54,12 +54,12 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 前缀 | 图标 | 快捷键 | 说明
 :-: | - | - | -
-:| ![行图标](media/gotoall-line-icon.png) | Ctrl+G | 转到指定行号
-f| ![文件图标](media/gotoall-files-icon.png) | Ctrl+1、Ctrl+F | 转到指定文件
+:| ![行图标](media/gotoall-line-icon.png) | Ctrl  +G  | 转到指定行号
+f| ![文件图标](media/gotoall-files-icon.png) | Ctrl  +1  、Ctrl  +F  | 转到指定文件
 r| ![“最近使用的文件”图标](media/gotoall-recent-files-icon.png) | **Ctrl**+**1** **Ctrl**+**R** | 转到最近访问的指定文件
-T| ![类型图标](media/gotoall-types-icon.png) | Ctrl+1、Ctrl+T | 转到指定类型
-m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指定成员
-\#| ![符号图标](media/gotoall-symbols-icon.png) | Ctrl+1、Ctrl+S | 转到指定符号
+T| ![类型图标](media/gotoall-types-icon.png) | Ctrl  +1  、Ctrl  +T  | 转到指定类型
+m| ![成员图标](media/gotoall-members-icon.png) | Ctrl  +1  、Ctrl  +M  | 转到指定成员
+\#| ![符号图标](media/gotoall-symbols-icon.png) | Ctrl  +1  、Ctrl  +S  | 转到指定符号
 
 ### <a name="filter-to-a-specific-location"></a>筛选到特定位置
 
@@ -72,7 +72,7 @@ m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指
 
 ## <a name="camel-casing"></a>驼峰式大小写
 
-如果在代码中使用[驼峰式大小写](https://en.wikipedia.org/wiki/Camel_case)，可以仅输入码位元素名称的大写字母，以更快地查找码位元素。 例如，如果代码中有 `CredentialViewModel` 类型，可以选择“类型”筛选器 (t)，然后在“转到”对话框中仅输入名称的大写字母 (`CVM`) 来缩小搜索范围。 如果代码名称很长，此功能就非常有用。
+如果在代码中使用[驼峰式大小写](https://en.wikipedia.org/wiki/Camel_case)，可以仅输入码位元素名称的大写字母，以更快地查找码位元素。 例如，如果代码中有 `CredentialViewModel` 类型，可以选择“类型”筛选器 (t)，然后在“转到”对话框中仅输入名称的大写字母 (`CVM`) 来缩小搜索范围   。 如果代码名称很长，此功能就非常有用。
 
 ![转到窗口 - 使用大写字母进行搜索](../ide/media/vside_capitalsearch.png)
 

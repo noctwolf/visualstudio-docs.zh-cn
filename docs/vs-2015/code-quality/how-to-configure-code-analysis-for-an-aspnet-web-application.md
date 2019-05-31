@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60113400"
@@ -43,6 +43,6 @@ ms.locfileid: "60113400"
   
     - 选择你想要使用的规则集。  
   
-    - 选择**\<浏览 >** 可以指定现有的自定义规则集不在列表中。  
+    - 选择 **\<浏览 >** 可以指定现有的自定义规则集不在列表中。  
   
     - 定义自定义规则集。 有关详细信息，请参阅[创建自定义规则集](../code-quality/creating-custom-code-analysis-rule-sets.md)。

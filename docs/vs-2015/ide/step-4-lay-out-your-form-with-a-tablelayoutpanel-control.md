@@ -25,9 +25,9 @@ ms.locfileid: "63442533"
   
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>使用 TableLayoutPanel 控件设置窗体布局  
   
-1. 在 Visual Studio IDE 左侧，找到“工具箱”选项卡。选择“工具箱”选项卡，随即将显示工具箱。 （或者，在菜单栏上，依次选择“视图”、“工具箱”。）  
+1. 在 Visual Studio IDE 左侧，找到“工具箱”选项卡  。选择“工具箱”选项卡，随即将显示工具箱  。 （或者，在菜单栏上，依次选择“视图”、“工具箱”   。）  
   
-2. 选择“容器”组旁边的小三角形符号打开该组，如下图所示。  
+2. 选择“容器”组旁边的小三角形符号打开该组，如下图所示  。  
   
      ![容器组](../ide/media/express-toolbox.png "Express_Toolbox")  
 容器组  
@@ -38,28 +38,28 @@ ms.locfileid: "63442533"
 TableLayoutPanel 控件  
   
     > [!NOTE]
-    > 添加 TableLayoutPanel 后，如果窗体中出现标题为“TableLayoutPanel 任务”的窗口，请选择窗体内的任何位置来关闭此窗口。 在本教程后面部分，您将学习到有关此窗口的更多内容。  
+    > 添加 TableLayoutPanel 后，如果窗体中出现标题为“TableLayoutPanel 任务”的窗口，请选择窗体内的任何位置来关闭此窗口  。 在本教程后面部分，您将学习到有关此窗口的更多内容。  
   
      请注意当选择“工具箱”选项卡时工具箱是如何展开以覆盖窗体的，以及当选择工具箱外部的任何位置后它是如何关闭的。 这就是 IDE 自动隐藏功能。 通过选择窗口右上角的图钉图标在自动隐藏和就地锁定之间切换，您可为任何窗口打开或关闭工具箱。 图钉图标如下所示。  
   
      ![“图钉”图标](../ide/media/express-pushpintoolbox.png "Express_PushpinToolbox")  
 “图钉”图标  
   
-4. 通过选择“TableLayoutPanel”来确保将它选中。 可以通过查看“属性”窗口顶部的下拉列表来验证选定哪个控件，如下图所示。  
+4. 通过选择“TableLayoutPanel”来确保将它选中  。 可以通过查看“属性”窗口顶部的下拉列表来验证选定哪个控件，如下图所示  。  
   
      ![显示 TableLayoutPanel 控件的“属性”窗口](../ide/media/express-controlspropwin.png "Express_ControlsPropWin")  
 显示 TableLayoutPanel 控件的“属性”窗口  
   
-5. 在“属性”窗口的工具栏上选择“按字母顺序”按钮。 这会使“属性”窗口中的属性列表按字母顺序显示，这样更易于查找本教程中的属性。  
+5. 在“属性”窗口的工具栏上选择“按字母顺序”按钮   。 这会使“属性”窗口中的属性列表按字母顺序显示，这样更易于查找本教程中的属性  。  
   
-6. 控件选择器是“属性”窗口顶部的下拉列表。 在此示例中，它显示选定了名为 `tableLayoutPanel1` 的控件。 您可以通过在 Windows 窗体设计器中选择一个区域或者从控件选择器中进行选择来选择控件。 选择 `TableLayoutPanel` 后，请查找“Dock”属性并选择“Dock”，此属性应设置为“无”。 请注意，一个下拉箭头将出现在值旁边。 选择该箭头，然后选择“填充”按钮（中间的大按钮），如下图所示。  
+6. 控件选择器是“属性”窗口顶部的下拉列表  。 在此示例中，它显示选定了名为 `tableLayoutPanel1` 的控件。 您可以通过在 Windows 窗体设计器中选择一个区域或者从控件选择器中进行选择来选择控件。 选择 `TableLayoutPanel` 后，请查找“Dock”属性并选择“Dock”，此属性应设置为“无”    。 请注意，一个下拉箭头将出现在值旁边。 选择该箭头，然后选择“填充”按钮（中间的大按钮），如下图所示  。  
   
      ![选定“填充”的“属性”窗口](../ide/media/express-docktable.png "Express_DockTable")  
 选定“填充”的“属性”窗口  
   
-     Visual Studio 中的停靠是指 IDE 中的一个窗口附加到另一个窗口或区域的情况。 例如，“属性”窗口可以取消停靠，即在 Visual Studio 中独立地自由浮动，也可以靠近“解决方案资源管理器”停靠。  
+     Visual Studio 中的停靠是指 IDE 中的一个窗口附加到另一个窗口或区域的情况  。 例如，“属性”窗口可以取消停靠，即在 Visual Studio 中独立地自由浮动，也可以靠近“解决方案资源管理器”停靠  。  
   
-7. 将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。  
+7. 将 TableLayoutPanel 的“停靠”属性设置为“填充”后，此面板将填充整个窗体   。 如果再次调整窗体的大小，则 TableLayoutPanel 将保持停靠状态，并自行调整大小以适合窗体。  
   
     > [!NOTE]
     > TableLayoutPanel 的工作方式类似于 Microsoft Office Word 中的表：它有行和列，并且单个单元格可以跨多个行和列。 每个单元格都可以存放一个控件（例如按钮、复选框或标签）。 TableLayoutPanel 将具有一个跨其整个顶部行的 `PictureBox` 控件、一个位于其左下方单元格中的 `CheckBox` 控件和四个位于其右下方单元格中的 `Button` 控件。  
@@ -76,12 +76,12 @@ TableLayoutPanel 控件
      ![TableLayoutPanel 任务](../ide/media/express-tablepanel.png "Express_TablePanel")  
 TableLayoutPanel 任务  
   
-10. 选择“编辑行和列”任务，显示“列和行样式”窗口。 选择“Column1”，确保选中“百分比”按钮并在“百分比”框中输入 `15`，以将此控件的大小设置为 15%。 （这是将在后面的教程中使用的 `NumericUpDown` 控件。）选择“Column2”并将其设置为 85%。 先不要选择“确定”按钮，因为这将关闭此窗口。 （但如果这样做，你可以使用任务列表重新打开它。）  
+10. 选择“编辑行和列”任务，显示“列和行样式”窗口   。 选择“Column1”，确保选中“百分比”按钮并在“百分比”框中输入 `15`，以将此控件的大小设置为 15%    。 （这是将在后面的教程中使用的 `NumericUpDown` 控件。）选择“Column2”并将其设置为 85%  。 先不要选择“确定”按钮，因为这将关闭此窗口  。 （但如果这样做，你可以使用任务列表重新打开它。）  
   
      ![TableLayoutPanel 列和行样式](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup")  
 TableLayoutPanel 列和行样式  
   
-11. 从窗口顶部的“显示”下拉列表中选择“行”。 将“Row1”设置为 90% 并将“Row2”设置为 10%。  
+11. 从窗口顶部的“显示”下拉列表中选择“行”   。 将“Row1”设置为 90% 并将“Row2”设置为 10%   。  
   
 12. 选择“确定”  按钮。 现在，TableLayoutPanel 应具有一个大的顶部行、一个小的底部行、一个小的左侧列和一个大的右侧列。 您可在 TableLayoutPanel 中调整行和列的大小，方法是在窗体中选择 tableLayoutPanel1，然后拖动其行和列边框。  
   

@@ -1,5 +1,5 @@
 ---
-title: 编程概念和功能的 SharePoint 工具扩展 |Microsoft Docs
+title: 编程概念和功能的 SharePoint 工具扩展
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 215beaf21d704927792ae316df9b4c0ef3f98c44
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562476"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401743"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具扩展的编程概念和功能
   有几个重要的编程概念和与 Visual Studio 中的 SharePoint 工具相关的功能。 这些概念和功能在大多数 SharePoint 工具扩展中发挥重要作用。

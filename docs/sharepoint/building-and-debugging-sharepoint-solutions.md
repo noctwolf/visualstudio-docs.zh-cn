@@ -24,14 +24,14 @@ ms.locfileid: "62988141"
   一般情况下，生成和调试 SharePoint 解决方案是生成和调试其他类型中的项目的相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本部分的主题介绍存在的差异。
 
 ## <a name="project-output-for-sharepoint-solutions"></a>SharePoint 解决方案的的项目输出
- 构建 SharePoint 解决方案创建程序集和解决方案包 (*.wsp*) 文件。 下表显示在生成期间这些文件的位置。
+ 构建 SharePoint 解决方案创建程序集和解决方案包 ( *.wsp*) 文件。 下表显示在生成期间这些文件的位置。
 
 |生成项|输出文件夹|
 |----------------|-------------------|
-|程序集、 程序数据库 (*.pdb*)，并 *.wsp*文件。|*\<项目名称 > \bin\debug*或*\<项目名称 > \bin\release*|
-|SharePoint 项目项文件。|*\<项目名称 > \pkg\debug*或*\<项目名称 > \pkg\release*|
-|生成中间文件。|*\<项目名称 > \obj\debug*或*\<项目名称 > \obj\release*|
-|包中间文件。|*\<项目名称 > \pkgobj\debug*或*\<项目名称 > \pkgobj\release*|
+|程序集、 程序数据库 ( *.pdb*)，并 *.wsp*文件。|*\<项目名称 > \bin\debug*或 *\<项目名称 > \bin\release*|
+|SharePoint 项目项文件。|*\<项目名称 > \pkg\debug*或 *\<项目名称 > \pkg\release*|
+|生成中间文件。|*\<项目名称 > \obj\debug*或 *\<项目名称 > \obj\release*|
+|包中间文件。|*\<项目名称 > \pkgobj\debug*或 *\<项目名称 > \pkgobj\release*|
 
 ## <a name="build-sharepoint-solutions"></a>构建 SharePoint 解决方案
  若要生成 SharePoint 解决方案，在开发计算机必须安装 SharePoint 服务器的正确版本。 否则，构建 SharePoint 解决方案是与生成其他类型中的项目的相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[如何：构建 SharePoint 解决方案](../sharepoint/how-to-build-sharepoint-solutions.md)。

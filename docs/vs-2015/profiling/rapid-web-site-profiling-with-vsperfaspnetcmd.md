@@ -61,14 +61,14 @@ ms.locfileid: "63438908"
   
  还可以使用 **/Trace** 选项包含详细计时信息及 .NET 内存数据：  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>收集层交互数据  
   
 > [!WARNING]
 > 可以使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 收集层交互分析 (TIP) 数据。 但是，层交互分析数据只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]中查看。  
 >   
-> 若要收集有关 Windows 8 或 Windows Server 2012 的 TIP 数据，必须使用检测 (/trace) 选项。  
+> 若要收集有关 Windows 8 或 Windows Server 2012 的 TIP 数据，必须使用检测 (/trace  ) 选项。  
   
  随采样数据收集层交互数据：  
   
@@ -80,14 +80,14 @@ ms.locfileid: "63438908"
   
  随 .NET 内存数据收集层交互数据：  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> 使用 /NoWait 选项  
  默认情况下，在执行 **vsperfaspnetcmd** 命令之后，命令提示符不会返回。 可以使用以下语法选项强制命令提示符返回。 随后可以在命令提示符窗口中执行其他操作。 若要结束分析，请在单独的 **vsperfaspnetcmd** 命令中使用 **/shutdown** 选项。  
   
  开始分析：  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  结束分析：  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何：以编程方式执行操作时收到一封电子邮件
+title: 以编程方式执行操作，如果收到电子邮件消息
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 31f195d6b83a93363c3b2ef3bfa7d829f5fc822d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0787db2f7055bc65871227b9fcf8cbbb60ec1d8
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955935"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402200"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>如何：以编程方式执行操作时收到一封电子邮件
   此示例执行自定义操作时用户会收到一封电子邮件。

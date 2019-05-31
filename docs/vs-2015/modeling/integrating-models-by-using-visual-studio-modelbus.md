@@ -43,7 +43,7 @@ ms.locfileid: "63441009"
 
 3. 在对话框中，选择**我想要向 ModelBus 公开此 DSL**。 如果希望此 DSL 同时公开其模型并使用对其他 DSL 的引用，则可选择这两个选项。
 
-4. 单击 **“确定”**。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
+4. 单击 **“确定”** 。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
 
 5. 如果要从文本模板访问 DSL，则必须修改新项目中的 AdapterManager.tt。 如果要从其他代码（例如命令和事件处理程序）访问 DSL，则忽略此步骤。 有关详细信息，请参阅[文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 

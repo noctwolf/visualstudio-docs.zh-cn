@@ -26,23 +26,23 @@ ms.locfileid: "65697659"
   
 ## <a name="Package"></a> 使用 Package.xml 添加安装程序包  
   
-1. 在文件资源管理器中，打开“包”文件夹。  
+1. 在文件资源管理器中，打开“包”文件夹  。  
   
      默认情况下，路径为 C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages（32 位系统）和 C:\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages（64 位系统）。  
   
-2. 为要添加的系统必备组件打开文件夹，然后为已安装的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本打开语言文件夹（例如，“en”用于英语）。  
+2. 为要添加的系统必备组件打开文件夹，然后为已安装的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 版本打开语言文件夹（例如，“en”用于英语）  。  
   
-3. 在记事本中，打开“Package.xml”文件。  
+3. 在记事本中，打开“Package.xml”文件  。  
   
-4. 找到**名称**元素，其中包含 **http://go.microsoft.com/fwlink** ，并复制 URL。 包括“LinkID”部分。  
+4. 找到**名称**元素，其中包含 **http://go.microsoft.com/fwlink** ，并复制 URL。 包括“LinkID”部分  。  
   
     > [!NOTE]
     > 如果没有**名称**元素包含 **http://go.microsoft.com/fwlink** ，打开 **Product.xml** 文件的系统必备组件的根文件夹中，找到 **fwlink** 字符串。  
   
     > [!IMPORTANT]
-    > 某些系统必备组件具有多个安装程序包（例如，用于 32 位或 64 位系统）。 如果多个“名称”元素包含“fwlink”，则必须对每个元素重复剩余步骤。  
+    > 某些系统必备组件具有多个安装程序包（例如，用于 32 位或 64 位系统）。 如果多个“名称”元素包含“fwlink”，则必须对每个元素重复剩余步骤   。  
   
-5. 将该 URL 粘贴到浏览器的地址栏中，然后在系统提示运行或保存时，选择“保存”。  
+5. 将该 URL 粘贴到浏览器的地址栏中，然后在系统提示运行或保存时，选择“保存”  。  
   
      此步骤将安装程序文件下载到你的计算机中。  
   

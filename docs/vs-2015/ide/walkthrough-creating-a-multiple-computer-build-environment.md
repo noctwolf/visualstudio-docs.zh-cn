@@ -368,7 +368,7 @@ ms.locfileid: "66263020"
   
 3. 如果在 %Depot% 中粘贴文件，则请进行下列更改：  
   
-    - 在 %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets、\Microsoft.Cpp.InvalidPlatforms.targets\\、\Microsoft.cppbuild.targets\\ 和 \Microsoft.CppCommon.targets\\ 中，将   
+    - 在 %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets、\Microsoft.Cpp.InvalidPlatforms.targets\\、\Microsoft.cppbuild.targets\\ 和 \Microsoft.CppCommon.targets\\ 中，将  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" 的每个实例  
   

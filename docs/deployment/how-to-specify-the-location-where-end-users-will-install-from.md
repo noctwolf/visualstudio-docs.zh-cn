@@ -35,9 +35,9 @@ ms.locfileid: "62898579"
 
 ### <a name="to-specify-an-installation-url"></a>若要指定安装 URL
 
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。
 
-2. 单击“发布”选项卡。
+2. 单击“发布”选项卡  。
 
 3. 在安装 URL 字段中，输入使用完全限定的 URL 使用以下格式的安装位置 *http://www.microsoft.com/ApplicationName* ，或使用以下格式的 UNC 路径 *\\\Server\ApplicationName*.
 

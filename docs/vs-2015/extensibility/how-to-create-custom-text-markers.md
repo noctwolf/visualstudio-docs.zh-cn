@@ -34,7 +34,7 @@ ms.locfileid: "63435972"
   
 1. 创建一个注册表项，如下所示：  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>是`GUID`用于标识要添加的标记  
   
@@ -43,9 +43,9 @@ ms.locfileid: "63435972"
     *\<PackageGUID >* 是实现自动化对象的 vspackage 的 GUID。  
   
    > [!NOTE]
-   > 根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* 初始化 Visual Studio shell 时，有关详细信息，请参阅时，可以使用备用根覆盖[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。  
+   > 根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<版本 >* 初始化 Visual Studio shell 时，有关详细信息，请参阅时，可以使用备用根覆盖[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
-2. 创建四个值下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID>*  
+2. 创建四个值下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<版本 >* \Text Editor\External 标记\\ *\<MarkerGUID>*  
   
    - (默认)  
   

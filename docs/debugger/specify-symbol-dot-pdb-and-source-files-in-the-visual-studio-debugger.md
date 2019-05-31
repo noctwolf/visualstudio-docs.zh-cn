@@ -30,14 +30,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045337"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#， C++，Visual Basic 中， F#)
 
-程序数据库 (*.pdb*) 文件，也称为符号文件将标识符映射和编译应用到相应的标识符的项目的源代码中的语句和中的说明。
+程序数据库 ( *.pdb*) 文件，也称为符号文件将标识符映射和编译应用到相应的标识符的项目的源代码中的语句和中的说明。
 
 从标准调试生成配置与 Visual Studio IDE 生成项目时，编译器会创建相应的符号文件。 此外可以[在代码中设置符号选项](#compiler-symbol-options)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "60045337"
 
 调试器还搜索符号文件位于以下位置：
 
-1. 在 DLL 或可执行文件中指定的位置 (*.exe*) 文件。
+1. 在 DLL 或可执行文件中指定的位置 ( *.exe*) 文件。
 
    默认情况下，如果已生成 DLL 或 *.exe*文件在计算机上，链接器将放的完整路径和文件名关联 *.pdb* DLL 中的文件或 *.exe*文件。 调试器将检查以查看在该位置中是否存在符号文件。
 
@@ -104,7 +104,7 @@ ms.locfileid: "60045337"
    - 若要使用**Microsoft 符号服务器**，选中该复选框。
 
    - 若要添加新的符号服务器位置，
-     1. 选择**+** 工具栏中的符号。
+     1. 选择 **+** 工具栏中的符号。
      1. 在文本字段中键入符号服务器或符号位置的 URL 或文件夹路径。 语句结束有助于找到正确的格式。
 
      >[!NOTE]
@@ -116,7 +116,7 @@ ms.locfileid: "60045337"
 
    - 若要更改符号位置的加载顺序，请使用**Ctrl**+**向上**并**Ctrl**+**向下**，或**向上**并**向下**箭头图标。
    - 若要编辑 URL 或路径，请双击该注册表项，或选择它并按**F2**。
-   - 要移除的项，选择它，并选择**-** 图标。
+   - 要移除的项，选择它，并选择 **-** 图标。
 
 3. （可选）若要改进符号加载性能下**在此目录下缓存符号**，可以复制符号服务器的本地文件夹路径到符号的类型。
 
@@ -128,9 +128,9 @@ ms.locfileid: "60045337"
 
 4. 指定希望调试器将从加载的模块**符号文件 (.pdb) 位置**启动时。
 
-   - 选择**加载所有模块，除非排除**（默认） 加载所有符号的符号文件位置，除非专门排除的模块中的所有模块。 若要排除某些模块，请选择**指定排除的模块**，选择**+** 图标，键入要排除，并选择的模块的名称**确定**。
+   - 选择**加载所有模块，除非排除**（默认） 加载所有符号的符号文件位置，除非专门排除的模块中的所有模块。 若要排除某些模块，请选择**指定排除的模块**，选择 **+** 图标，键入要排除，并选择的模块的名称**确定**。
 
-   - 若要加载符号文件位置从指定的模块，请选择**负载仅指定的模块**。 选择**指定包含的模块**，选择**+** 图标，键入要包括，，然后选择的模块的名称**确定**。 未加载其他模块的符号文件。
+   - 若要加载符号文件位置从指定的模块，请选择**负载仅指定的模块**。 选择**指定包含的模块**，选择 **+** 图标，键入要包括，，然后选择的模块的名称**确定**。 未加载其他模块的符号文件。
 
 5. 选择 **确定**。
 
@@ -155,7 +155,7 @@ ms.locfileid: "60045337"
   可以限制命令的*srcsrv.dll*可从应用程序的执行 *.pdb*通过列出的允许的命令在名为的文件中的文件*srcsrv.ini*。 位置*srcsrv.ini*所在的同一文件夹中的文件*srcsrv.dll*并*devenv.exe*。
 
   >[!IMPORTANT]
-  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关详细信息，请参阅[安全警告：调试器必须执行不受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
+  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框  。 有关详细信息，请参阅[安全警告：调试器必须执行不受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。
   >
   >未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果列表中，你*cmd.exe*在你*srcsrv.ini*，恶意用户可能会在上指定参数*cmd.exe*那样会使危险。
 
@@ -169,21 +169,21 @@ ms.locfileid: "60045337"
 
 ### <a name="cc-options"></a>C/C++ 选项
 
-- *VC\<x >.pdb*并*\<项目 >.pdb*文件
+- *VC\<x >.pdb*并 *\<项目 >.pdb*文件
 
-  一个 *.pdb*于 c 语言的文件 /C++时使用生成创建[/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format)。 在中[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，则[/Fd](/cpp/build/reference/fd-program-database-file-name)选项名称 *.pdb*编译器创建的文件。 当你创建的项目中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用 IDE **/Fd**选项设置为创建 *.pdb*名为文件*\<项目 >.pdb*。
+  一个 *.pdb*于 c 语言的文件 /C++时使用生成创建[/ZI](/cpp/build/reference/z7-zi-zi-debug-information-format)。 在中[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，则[/Fd](/cpp/build/reference/fd-program-database-file-name)选项名称 *.pdb*编译器创建的文件。 当你创建的项目中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]使用 IDE **/Fd**选项设置为创建 *.pdb*名为文件 *\<项目 >.pdb*。
 
   如果生成你的 C /C++应用程序使用的生成文件，并指定 **/ZI**或 **/Zi**而无需使用 **/Fd**，则编译器会创建两个 *.pdb*文件：
 
-  - VC\<x >.pdb，其中 \<x >表示 Visual C++ 版本，例如 VC11.pdb
+  - VC\<x >.pdb  ，其中 \<x >  表示 Visual C++ 版本，例如 VC11.pdb 
 
-    *VC\<x >.pdb*文件存储为单独的对象文件中，所有调试信息并驻留在项目生成文件所在的同一目录中。 每次创建对象文件，C /C++编译器都会将合并到的调试信息*VC\<x >.pdb*。 因此，即使每个源文件包含公共头文件，如 *\<windows.h >*，一次，而不是每个对象文件中存储这些标头中的 typedef。 插入的信息包括类型信息，但不包括函数定义等符号信息。
+    *VC\<x >.pdb*文件存储为单独的对象文件中，所有调试信息并驻留在项目生成文件所在的同一目录中。 每次创建对象文件，C /C++编译器都会将合并到的调试信息*VC\<x >.pdb*。 因此，即使每个源文件包含公共头文件，如 *\<windows.h >* ，一次，而不是每个对象文件中存储这些标头中的 typedef。 插入的信息包括类型信息，但不包括函数定义等符号信息。
 
   - *\<project>.pdb*
 
-    *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在*\debug*子目录。 \<project.pdb文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC\<x>.pdb中找到的类型信息。
+    *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在 *\debug*子目录。 \<project.pdb  文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC\<x>.pdb  中找到的类型信息。
 
-  这两个*VC\<x >.pdb*并*\<项目 >.pdb*文件允许增量更新。 链接器还将嵌入到的路径 *.pdb*中的文件 *.exe*或 *.dll*它创建的文件。
+  这两个*VC\<x >.pdb*并 *\<项目 >.pdb*文件允许增量更新。 链接器还将嵌入到的路径 *.pdb*中的文件 *.exe*或 *.dll*它创建的文件。
 
 - <a name="use-dumpbin-exports"></a>DLL 导出表
 
@@ -193,7 +193,7 @@ ms.locfileid: "60045337"
 
 ### <a name="net-framework-options"></a>.NET Framework 选项
 
-使用生成 **/debug**来创建 *.pdb*文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 /debug:pdbonly 进行生成可以生成 .pdb 文件，但不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute`。 如果想为不希望其成为可调试的发布版本生成 .pdb文件，请使用 /debug:pdbonly。 有关详细信息，请参阅 [/debug（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。
+使用生成 **/debug**来创建 *.pdb*文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 /debug:pdbonly  进行生成可以生成 .pdb  文件，但不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute`。 如果想为不希望其成为可调试的发布版本生成 .pdb  文件，请使用 /debug:pdbonly  。 有关详细信息，请参阅 [/debug（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。
 
 ### <a name="web-applications"></a>Web 应用程序
 
@@ -236,7 +236,7 @@ ms.locfileid: "60045337"
 **若要使用的符号未加载任何文档页来帮助查找并加载缺少符号：**
 
 - 若要更改搜索路径，请选择未选定的路径，或选择**新的路径**或**新建 VSTS 路径**并输入或选择一个新的路径。 选择**加载**以再次搜索路径并加载符号文件，如果找到，则为。
-- 若要重写任何符号选项并重试搜索路径，请选择**浏览并查找\<可执行文件名称 >**。 如果找到，则将加载符号文件或**文件资源管理器**打开，以便您可以手动选择符号文件。
+- 若要重写任何符号选项并重试搜索路径，请选择**浏览并查找\<可执行文件名称 >** 。 如果找到，则将加载符号文件或**文件资源管理器**打开，以便您可以手动选择符号文件。
 - 若要打开**选项** > **调试** > **符号**页上，选择**更改符号设置**。
 - 若要在新窗口中一次显示反汇编，请选择**查看反汇编**，或选择**选项对话框**设置选项以找不到源文件或符号文件时始终显示反汇编。
 - 若要搜索的位置和结果显示，请展开**符号加载信息**。

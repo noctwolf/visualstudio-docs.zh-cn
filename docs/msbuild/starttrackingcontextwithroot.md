@@ -45,10 +45,10 @@ HRESULT WINAPI StartTrackingContextWithRoot(LPCTSTR intermediateDirectory, LPCTS
  包含根标记的响应文件的路径名称。 根名称用于将上下文的所有跟踪聚集在一起。
 
 ## <a name="return-value"></a>返回值
- 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。
+ 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT   。
 
 ## <a name="requirements"></a>要求
- **标头：** FileTracker.h
+ **标头：** FileTracker.h 
 
 ## <a name="see-also"></a>请参阅
 - [StartTrackingContext](../msbuild/starttrackingcontext.md)

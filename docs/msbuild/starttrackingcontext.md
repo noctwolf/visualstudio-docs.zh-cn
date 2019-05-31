@@ -41,7 +41,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  标识跟踪上下文。 此名称用于创建日志文件名。
 
 ## <a name="return-value"></a>返回值
- 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。
+ 如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT   。
 
 ## <a name="requirements"></a>要求
- **标头：** FileTracker.h
+ **标头：** FileTracker.h 
