@@ -23,7 +23,7 @@ ms.locfileid: "62565155"
 ---
 # <a name="upgrade-mdf-files"></a>升级 .mdf 文件
 
-本主题介绍了用于升级数据库文件 (*.mdf*) 安装较新版本的 Visual Studio 之后。 它包括以下任务的说明：
+本主题介绍了用于升级数据库文件 ( *.mdf*) 安装较新版本的 Visual Studio 之后。 它包括以下任务的说明：
 
 - 升级数据库文件使用较新版本的 SQL Server Express LocalDB
 
@@ -33,7 +33,7 @@ ms.locfileid: "62565155"
 
 - 使 SQL Server Express 的默认数据库引擎
 
-可以使用 Visual Studio 中打开项目的包含数据库文件 (*.mdf*)，已通过使用的较旧版本的 SQL Server Express 或 LocalDB。 但是，若要继续开发你的项目在 Visual Studio 中，您必须具有该版本的 SQL Server Express 或 LocalDB 安装在 Visual Studio 中，作为在同一台计算机上或您必须升级数据库文件。 如果升级数据库文件，您将无法访问通过使用较旧版本的 SQL Server Express 或 LocalDB。
+可以使用 Visual Studio 中打开项目的包含数据库文件 ( *.mdf*)，已通过使用的较旧版本的 SQL Server Express 或 LocalDB。 但是，若要继续开发你的项目在 Visual Studio 中，您必须具有该版本的 SQL Server Express 或 LocalDB 安装在 Visual Studio 中，作为在同一台计算机上或您必须升级数据库文件。 如果升级数据库文件，您将无法访问通过使用较旧版本的 SQL Server Express 或 LocalDB。
 
 您可能还会提示您升级如果文件的版本与不兼容的 SQL Server Express 或当前已安装的 LocalDB 实例通过早期版本的 SQL Server Express 或 LocalDB 创建一个数据库文件。 若要解决此问题，Visual Studio 将提示你升级该文件。
 
@@ -73,7 +73,7 @@ ms.locfileid: "62565155"
 
     - **逻辑名称**:你想要使用该文件的名称。
 
-3. 选择“确定”按钮。
+3. 选择“确定”  按钮。
 
 4. 系统提示时选择**是**按钮以升级该文件。
 
@@ -107,7 +107,7 @@ ms.locfileid: "62565155"
 
 3. 在中**SQL Server 实例名称**文字框中，指定的 SQL Server Express 或你想要使用的 LocalDB 实例的名称。 如果不命名的实例，指定`.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB`。
 
-4. 选择“确定”按钮。
+4. 选择“确定”  按钮。
 
     SQL Server Express 将为您的应用程序的默认数据库引擎。
 

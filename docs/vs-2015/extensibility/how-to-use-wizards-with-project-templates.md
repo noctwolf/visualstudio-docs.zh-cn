@@ -46,7 +46,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
   
 5. 在清单编辑器中，选择**资产**窗口左侧的选项卡。  
   
-6. 在中**资产**选项卡上，选择**新建**。 在中**添加新资产**窗口中的，为类型字段中，选择**Microsoft.VisualStudio.ProjectTemplate**。 在中**源**字段中，选择**当前解决方案中的项目**。 在中**项目**字段中，选择**MyProjectTemplate**。 然后单击“确定” 。  
+6. 在中**资产**选项卡上，选择**新建**。 在中**添加新资产**窗口中的，为类型字段中，选择**Microsoft.VisualStudio.ProjectTemplate**。 在中**源**字段中，选择**当前解决方案中的项目**。 在中**项目**字段中，选择**MyProjectTemplate**。 然后单击“确定”  。  
   
 7. 生成解决方案并启动调试。 将出现 Visual Studio 的第二个实例。 （这可能需要几分钟时间）。  
   
@@ -67,7 +67,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
   
 3. 将程序集作为资产添加到 VSIX 项目。 打开 source.extension.vsixmanifest 文件，并选择**资产**选项卡。在**添加新资产**窗口中，对于**类型**选择**Microsoft.VisualStudio.Assembly**，为**源**选择**A当前解决方案中的项目**，并为**项目**选择**MyTemplateWizard**。  
   
-4. 添加对 VSIX 项目的以下引用。 (在**解决方案资源管理器**，在 VSIX 项目节点，请选择**引用**，右键单击，然后选择**添加引用**。)在中**添加引用**对话框中**Framework**选项卡上，找到**System.Windows 窗体**程序集并将其选中。 现在，选择**扩展**选项卡。 查找**EnvDTE**程序集并将其选中。 其中还有**Microsoft.VisualStudio.TemplateWizardInterface**程序集并将其选中。 单击 **“确定”**。  
+4. 添加对 VSIX 项目的以下引用。 (在**解决方案资源管理器**，在 VSIX 项目节点，请选择**引用**，右键单击，然后选择**添加引用**。)在中**添加引用**对话框中**Framework**选项卡上，找到**System.Windows 窗体**程序集并将其选中。 现在，选择**扩展**选项卡。 查找**EnvDTE**程序集并将其选中。 其中还有**Microsoft.VisualStudio.TemplateWizardInterface**程序集并将其选中。 单击 **“确定”** 。  
   
 5. 将向导实现的类添加到 VSIX 项目。 (在解决方案资源管理器，右键单击 VSIX 项目节点并选择**外**，然后**新项**，然后**类**。)将类命名**WizardImplementation**。  
   
@@ -207,7 +207,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
   
 1. 程序集签名。 在中**解决方案资源管理器**，选择 VSIX 项目，右键单击，并选择**项目属性**。  
   
-2. 在中**项目属性**窗口中，选择**签名**选项卡。 在**签名**选项卡上，选中**为程序集签名**。 在中**选择强名称密钥文件**字段中，选择**\<新建 >**。 在中**创建强名称密钥**窗口，请在**密钥文件名称**字段中，键入**key.snk**。 取消选中**保护密钥文件使用密码**字段。  
+2. 在中**项目属性**窗口中，选择**签名**选项卡。 在**签名**选项卡上，选中**为程序集签名**。 在中**选择强名称密钥文件**字段中，选择 **\<新建 >** 。 在中**创建强名称密钥**窗口，请在**密钥文件名称**字段中，键入**key.snk**。 取消选中**保护密钥文件使用密码**字段。  
   
 3. 在中**解决方案资源管理器**、 选择 VSIX 项目，然后查找**属性**窗口。  
   
@@ -215,9 +215,9 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
   
 5. 重新生成解决方案。  
   
-6. 现在可以 MyProjectWizard 项目目录中找到的 key.snk 文件 (**\<磁盘位置 > \MyProjectTemplate\MyProjectWizard\key.snk**)。 将复制的 key.snk 文件。  
+6. 现在可以 MyProjectWizard 项目目录中找到的 key.snk 文件 ( **\<磁盘位置 > \MyProjectTemplate\MyProjectWizard\key.snk**)。 将复制的 key.snk 文件。  
   
-7. 转到输出目录，找到该程序集 (**\<磁盘位置 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**)。 粘贴此处的 key.snk 文件。 （这不是绝对必要，但它将使以下步骤更容易。）  
+7. 转到输出目录，找到该程序集 ( **\<磁盘位置 > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**)。 粘贴此处的 key.snk 文件。 （这不是绝对必要，但它将使以下步骤更容易。）  
   
 8. 打开命令窗口中，并将更改为在其中创建该程序集的目录。  
   

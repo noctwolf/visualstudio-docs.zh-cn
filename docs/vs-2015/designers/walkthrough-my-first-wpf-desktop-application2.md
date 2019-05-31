@@ -26,7 +26,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 #### <a name="to-create-the-project"></a>要创建项目  
   
-1. 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 在菜单栏上，依次选择“文件”  、“新建”  、“项目”  。  
   
 2. 在“新建项目”  对话框框中，展开“Visual C#”  或“Visual Basic”  节点，再选择“Windows”  节点，然后展开“Windows”  节点并选择“经典桌面”  节点。  
   
@@ -34,7 +34,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 4. 在“新建项目”  文本框中，键入 `ExpenseIt`，然后选择“确定”  按钮。  
   
-     创建项目并且已将项目文件添加到“解决方案资源管理器” 后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。  
+     创建项目并且已将项目文件添加到“解决方案资源管理器”  后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。  
   
 #### <a name="to-modify-the-main-window"></a>若要修改主窗口  
   
@@ -51,15 +51,15 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 3. 选择 `<Grid>` 和 `</Grid>` 标记，并将其删除。  
   
-     **NavigationWindow** 无法包含其他 UI 元素，如“网格” 。  
+     **NavigationWindow** 无法包含其他 UI 元素，如“网格”  。  
   
-4. 在“属性”窗口中，展开“常用”类别节点，然后选择“标题”属性，再输入 `ExpenseIt` 并按“Enter”键。  
+4. 在“属性”  窗口中，展开“常用”  类别节点，然后选择“标题”  属性，再输入 `ExpenseIt` 并按“Enter”  键。  
   
      请注意，XAML 窗口中的“标题”  元素会更改以匹配新值。 可以修改 XAML 窗口或“属性”  窗口中的 XAML 属性且更改会同步。  
   
-5. 在 XAML 窗口中，将“高度”元素的值设置为 `375`，并将“宽度”属性的值设置为 `500`。  
+5. 在 XAML 窗口中，将“高度”  元素的值设置为 `375`，并将“宽度”  属性的值设置为 `500`。  
   
-     这些元素对应于“高度”和“宽度”属性，它们可在“属性”窗口的“布局”类别中找到。  
+     这些元素对应于“高度”  和“宽度”  属性，它们可在“属性”  窗口的“布局”  类别中找到。  
   
      你的 **MainWindow.xaml** 文件在 C# 中现应如下所示：  
   
@@ -93,7 +93,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 #### <a name="to-modify-the-code-behind-file-c"></a>若要修改代码隐藏文件 (C#)  
   
-1. 在“解决方案资源管理器” 中，展开“MainWindow.xaml”  节点并打开“MainWindow.xaml.cs”  文件。  
+1. 在“解决方案资源管理器”  中，展开“MainWindow.xaml”  节点并打开“MainWindow.xaml.cs”  文件。  
   
 2. 找到行 `public partial class MainWindow : Window` 并将其替换为 `public partial class MainWindow : NavigationWindow`。  
   
@@ -104,7 +104,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 #### <a name="to-add-a-home-screen"></a>若要添加主屏幕  
   
-1. 在“解决方案资源管理器”中，打开“ExpenseIt”节点的快捷菜单，选择“添加”、“页”。  
+1. 在“解决方案资源管理器”  中，打开“ExpenseIt”  节点的快捷菜单，选择“添加”  、“页”  。  
   
 2. 在“新建项目”  “添加新项”对话框中，选择  “名称”文本框并输入 `ExpenseItHome`，然后选择“确定”  按钮。  
   
@@ -112,7 +112,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 3. 在设计器中，选择“ExpenseItHome.xaml”  选项卡（如果它还不是活动的设计器选项卡）。  
   
-4. 选择 `<Title>` 元素并将标题更改为“ExpenseIt – Home” 。  
+4. 选择 `<Title>` 元素并将标题更改为“ExpenseIt – Home”  。  
   
      你的 **ExpenseItHome.xaml** 文件在 C# 中现应如下所示：  
   
@@ -185,11 +185,11 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
     </NavigationWindow>  
     ```  
   
-     正如你先前设置的属性一样，你也可以设置“属性”窗口的“杂项”类别中的 `Source` 属性。  
+     正如你先前设置的属性一样，你也可以设置“属性”  窗口的“杂项”  类别中的 `Source` 属性。  
   
 #### <a name="to-add-a-details-window"></a>若要添加详细信息窗口  
   
-1. 在“解决方案资源管理器”中，打开“ExpenseIt”节点的快捷菜单，选择“添加”、“页”。  
+1. 在“解决方案资源管理器”  中，打开“ExpenseIt”  节点的快捷菜单，选择“添加”  、“页”  。  
   
 2. 在“新建项目”  “添加新项”对话框中，选择  “名称”文本框并输入 `ExpenseReportPage`，然后选择“确定”  按钮。  
   
@@ -197,7 +197,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 3. 在设计器中，选择“ExpenseReportPage.xaml”  选项卡（如果还不是活动的设计器选项卡）。  
   
-4. 选择 `<Title>` 元素并将标题更改为“ExpenseIt – View Expense” 。  
+4. 选择 `<Title>` 元素并将标题更改为“ExpenseIt – View Expense”  。  
   
      你的 ExpenseReportPage.xaml 文件在 C# 中现应如下所示：  
   
@@ -236,7 +236,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
     </Page>  
     ```  
   
-5. 在菜单栏上，依次选择 “调试”和“启动调试”  （或按 F5）以运行应用程序。  
+5. 在菜单栏上，依次选择  “调试”和“启动调试”  （或按 F5）以运行应用程序。  
   
      下面的插图显示带导航窗口按钮的应用程序。  
   
@@ -251,7 +251,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 1. 打开“ExpenseItHome.xaml”  ，并选择 `<Grid>` 元素。  
   
-2. 在“属性”窗口中，展开“布局”类别节点并将“边距”值设置为 `10`（左边距）、`10`（右边距）、`0`（上边距）和 `10`（下边距）。  
+2. 在“属性”  窗口中，展开“布局”  类别节点并将“边距”  值设置为 `10`（左边距）、`10`（右边距）、`0`（上边距）和 `10`（下边距）。  
   
      元素 `Margin="10,0,10,10"` 添加到 XAML 中的 `<Grid>` 元素。 再强调一下，你可以直接在 XAML 代码中输入这些值，而不用在“属性”窗口中输入  ，效果都相同。  
   
@@ -309,12 +309,12 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
     > [!NOTE]
     > 或者可以创建自己的图像并将其保存为 `watermark.png`。  
   
-2. 在“解决方案资源管理器”中，打开“ExpenseIt”节点的快捷菜单，选择“添加”、“现有项”。  
+2. 在“解决方案资源管理器”  中，打开“ExpenseIt”  节点的快捷菜单，选择“添加”  、“现有项”  。  
   
 3. 在“添加现有项”  对话框中，找到刚添加的“watermark.png”  图像，并选中它，然后选择“添加”  按钮。  
   
     > [!NOTE]
-    > 你可能需要展开“文件类型”  列表并选择“图像文件” 。  
+    > 你可能需要展开“文件类型”  列表并选择“图像文件”  。  
   
 4. 打开“ExpenseItHome.xaml”  文件并将以下 XAML 代码刚好添加到 `</Grid>` 标记上方以创建背景图像：  
   
@@ -471,7 +471,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 2. 选择 `<Button` 元素并将以下 XAML 代码紧跟在 **HorizontalAlignment="Right"** 元素的后面：`Click="Button_Click"`。  
   
-     这将为按钮的 `Click` 事件添加一个事件处理程序。 “<按钮”元素代码现应如下所示：  
+     这将为按钮的 `Click` 事件添加一个事件处理程序。 “<按钮”  元素代码现应如下所示：  
   
     ```  
     <!-- View report button -->  
@@ -800,7 +800,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
     </DataTemplate>  
     ```  
   
-     这将添加一个在“ListBox”中定义如何显示数据的 `Data Template`。  
+     这将添加一个在“ListBox”  中定义如何显示数据的 `Data Template`。  
   
 4. 将现有 `<ListBox>` 元素替换为以下 XAML。  
   
@@ -875,7 +875,7 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
 1. 打开 **ExpenseReportPage.xaml**。  
   
-2. 使用以下内容替换“姓名”和“部门”`<StackPanel` 元素的 XAML 代码：  
+2. 使用以下内容替换“姓名”  和“部门”  `<StackPanel` 元素的 XAML 代码：  
   
     ```xaml  
     <!-- Name -->  

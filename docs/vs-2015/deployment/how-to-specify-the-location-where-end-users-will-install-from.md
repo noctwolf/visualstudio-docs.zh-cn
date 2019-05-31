@@ -20,7 +20,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60108498"
@@ -38,9 +38,9 @@ ms.locfileid: "60108498"
   
 ### <a name="to-specify-an-installation-url"></a>若要指定安装 URL  
   
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。  
   
-2. 单击“发布”选项卡。  
+2. 单击“发布”选项卡  。  
   
 3. 在安装 URL 字段中，输入使用完全限定的 URL 使用以下格式的安装位置 http://www.microsoft.com/ApplicationName，或使用以下格式的 UNC 路径\\\Server\ApplicationName。  
   

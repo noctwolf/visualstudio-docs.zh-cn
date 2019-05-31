@@ -1,5 +1,5 @@
 ---
-title: 演练：导入自定义母版页和网站页的映像 |Microsoft Docs
+title: 导入自定义母版页和包含图像的站点页面
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834382"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400896"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入自定义母版页和站点页图像
   本演练演示如何导入 SharePoint 的自定义母版页和包含到图像的网站页面[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 项目。
@@ -27,7 +27,7 @@ ms.locfileid: "62834382"
 
 - 在 SharePoint Designer 中使用的映像创建自定义母版页和站点页。
 
-- 导出到 SharePoint 解决方案的自定义母版页、 图像和站点页 (*.wsp*) 文件。
+- 导出到 SharePoint 解决方案的自定义母版页、 图像和站点页 ( *.wsp*) 文件。
 
 - 导入和部署 *.wsp*文件到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用导入 SharePoint 解决方案包项目的 SharePoint 项目。
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834382"
 6. 保存更新的网站页面。
 
 ## <a name="export-the-items-from-sharepoint"></a>从 SharePoint 导出项目
- 将项目从 SharePoint 导出到 SharePoint 解决方案 (*.wsp*) 文件。
+ 将项目从 SharePoint 导出到 SharePoint 解决方案 ( *.wsp*) 文件。
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>若要从 SharePoint Designer 导出项目
 

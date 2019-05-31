@@ -39,14 +39,14 @@ ms.locfileid: "63446075"
   
 ## <a name="create-the-application-on-the-visual-studio-computer"></a>在 Visual Studio 计算机上创建该应用程序  
   
-1. 创建新的 MVC ASP.NET 应用程序。 （“文件”/“新建”/“项目”，然后选择“Visual C#”/“Web”/“ASP.NET Web 应用程序”  。 在 **ASP.NET 4.5.2** 模板部分中，选择“MVC” 。 请确保**在云中托管**未选择 Azure 部分下。 将项目命名**MyMVC**。)
+1. 创建新的 MVC ASP.NET 应用程序。 （“文件”/“新建”/“项目”  ，然后选择“Visual C#”/“Web”/“ASP.NET Web 应用程序”  。 在 **ASP.NET 4.5.2** 模板部分中，选择“MVC”  。 请确保**在云中托管**未选择 Azure 部分下。 将项目命名**MyMVC**。)
 1. 打开 HomeController.cs 文件，并在 `About()` 方法中设置断点。
-1. 在“解决方案资源管理器” 中，右键单击项目节点并选择“发布” 。
-1. 对于“选择发布目标” ，选择“自定义”  并将该配置文件的命名 **MyMVC**。 单击 **“下一步”**。
-1. 在“连接”  选项卡上，将“发布方法”  字段设置为“文件系统”  ，并将  “目标位置”字段设置为一个本地目录。 单击 **“下一步”**。
+1. 在“解决方案资源管理器”  中，右键单击项目节点并选择“发布”  。
+1. 对于“选择发布目标”  ，选择“自定义”  并将该配置文件的命名 **MyMVC**。 单击 **“下一步”** 。
+1. 在“连接”  选项卡上，将“发布方法”  字段设置为“文件系统”  ，并将  “目标位置”字段设置为一个本地目录。 单击 **“下一步”** 。
 
     ![RemoteDBG_Publish_Local](../debugger/media/remotedbg-publish-local.png "RemoteDBG_Publish_Local")
-1. 设置配置为“调试” 。 单击“发布” 。
+1. 设置配置为“调试”  。 单击“发布”  。
 
     ![RemoteDBG_Publish_Debug_Config](../debugger/media/remotedbg-publish-debug-config.png "RemoteDBG_Publish_Debug_Config")
     
@@ -75,8 +75,8 @@ ms.locfileid: "63446075"
   
     ```
 
-1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点” 。
-1. 右键单击“默认网站”  节点，然后选择“添加应用程序” 。
+1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点”  。
+1. 右键单击“默认网站”  节点，然后选择“添加应用程序”  。
 1. 设置**别名**字段**MyMVC**和应用程序池域**ASP.NET v4.0** （ASP.NET 4.5 不是应用程序池的选项）。 将“物理路径”  设置为 **C:\Publish** （复制 ASP.NET 项目目录的位置）。
 
     >[!NOTE] 
@@ -88,13 +88,13 @@ ms.locfileid: "63446075"
 
 1. 在 Visual Studio 计算机上打开 **MyMVC** 解决方案。
 1. 在 Visual Studio 中，单击**调试 / 附加到进程**(**Ctrl + Alt + P**)。
-1. 将限定符字段设置为**\<远程计算机名称 >: 4020**。
-1. 单击“刷新”。
+1. 将限定符字段设置为 **\<远程计算机名称 >: 4020**。
+1. 单击“刷新”  。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 使用`ipconfig`获取 IPv4 地址的命令行中。
-1. 勾选“显示所有用户的进程”  。
-1. 查找 **w3wp.exe** 并单击“附加” 。
+1. 勾选“显示所有用户的进程”   。
+1. 查找 **w3wp.exe** 并单击“附加”  。
 
      若要快速找到进程名称，键入在过程的第一个字母。
      
@@ -103,7 +103,7 @@ ms.locfileid: "63446075"
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
+1. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>  。
     
     将显示 ASP.NET 网页。
 1. 在 ASP.NET web 页中，单击指向**有关**页。

@@ -83,7 +83,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 可以将此技术应用于任何代码项目。 本演练使用 C# 项目，出于测试目的，我们使用控制台应用程序。
 
-1. 在“文件”  菜单上，单击“新建”  ，然后单击“项目” 。
+1. 在“文件”  菜单上，单击“新建”  ，然后单击“项目”  。
 
 2. 单击“”  节点，然后在“模板”  窗格中，单击“控制台应用程序” 
 
@@ -93,7 +93,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 该文件应为项目的一部分，以便模板进行读取，但不会将其内置于已编译的应用程序中。
 
-1. 在“解决方案资源管理器” 中，右键单击项目，单击“添加”  ，然后单击“新项” 。
+1. 在“解决方案资源管理器”  中，右键单击项目，单击“添加”  ，然后单击“新项”  。
 
 2. 在“添加新项”  对话框，从“模板”  窗格选择“XML 文件”  。
 
@@ -131,7 +131,7 @@ namespace MyProject
 
 添加文本模板文件，并将输出扩展名设置为 *.cs*。
 
-1. 在“解决方案资源管理器” 中，右键单击项目，单击“添加” ，然后单击“新项” 。
+1. 在“解决方案资源管理器”  中，右键单击项目，单击“添加”  ，然后单击“新项”  。
 
 2. 在“添加新项”  对话框中，从“模板”  窗格选择“文本模板”  。
 
@@ -426,7 +426,7 @@ namespace MyProject
 
 ## <a name="troubleshoot-the-text-template"></a>解决文本模板
 
-若在“错误列表”中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。
+若在“错误列表”  中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。
 
 ## <a name="see-also"></a>请参阅
 

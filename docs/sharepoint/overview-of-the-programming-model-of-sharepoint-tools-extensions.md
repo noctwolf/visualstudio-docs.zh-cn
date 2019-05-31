@@ -1,5 +1,5 @@
 ---
-title: 工具扩展的 SharePoint 的编程模型概述 |Microsoft Docs
+title: 工具扩展的 SharePoint 的编程模型概述
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421288"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401785"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>工具扩展的 SharePoint 的编程模型概述
   在 Visual Studio 中创建 SharePoint 工具扩展时，首先将实现由 SharePoint 工具公开的一个或多个扩展性接口。 在大多数情况下，你还将使用 SharePoint 工具提供的其他类型来实现扩展中的功能。 在某些方案中，你还可以使用 Visual Studio 和 SharePoint 提供的其他对象模型中的类型。 必须了解每个这些对象模型的用途，并知道如何使用它们彼此创建 SharePoint 工具扩展。
@@ -55,7 +55,7 @@ ms.locfileid: "63421288"
 - *SharePoint 服务器和客户端对象模型*。 使用这些对象模型可从 SharePoint 工具扩展的上下文中修改 SharePoint 站点或检索 SharePoint 站点中的数据。
 
 ### <a name="sharepoint-tools-object-model"></a>SharePoint 工具对象模型
- 每个 SharePoint 工具扩展都使用 SharePoint 工具对象模型中的类型来定义扩展的核心行为和功能。 下表描述了在此对象模型中，包含由程序集包含它们的命名空间。
+ 每个 SharePoint 工具扩展都使用 SharePoint 工具对象模型中的类型来定义扩展的核心行为和功能。 下表描述了包含在此对象模型中，通过包含它们的程序集的命名空间。
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 

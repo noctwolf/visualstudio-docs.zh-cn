@@ -51,7 +51,7 @@ ms.locfileid: "63443072"
 
      文本框控件现在标记为可安全应对脚本注入的控件。
 
-7. 选择“确定”按钮关闭对话框。
+7. 选择“确定”  按钮关闭对话框。
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>标记在包设计器中的安全控件
 

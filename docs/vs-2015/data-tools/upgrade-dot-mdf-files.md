@@ -82,7 +82,7 @@ ms.locfileid: "63424910"
   
    - **逻辑名称**:你想要使用该文件的名称。  
   
-3. 选择“确定”按钮。  
+3. 选择“确定”  按钮。  
   
 4. 系统提示时选择**是**按钮以升级该文件。  
   
@@ -116,6 +116,6 @@ ms.locfileid: "63424910"
   
 3. 在中**SQL Server 实例名称**文字框中，指定的 SQL Server Express 或你想要使用的 LocalDB 实例的名称。 如果不命名的实例，指定`.\SQLEXPRESS or (localdb)\MSSQLLocalDB`。  
   
-4. 选择“确定”按钮。  
+4. 选择“确定”  按钮。  
   
    SQL Server Express 将为您的应用程序的默认数据库引擎。  

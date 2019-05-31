@@ -1,5 +1,5 @@
 ---
-title: 如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案 |Microsoft Docs
+title: 部署、 发布和远程升级 SharePoint 解决方案
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813938"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401449"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>如何：部署、 发布和升级远程服务器上的 SharePoint 解决方案
   除了对本地系统中部署 SharePoint 解决方案，可以将沙盒 SharePoint 解决方案发布到远程站点或本地 SharePoint 站点中。 远程发布进程副本 *.wsp*文件到 SharePoint 服务器，安装解决方案，然后再启用您激活解决方案。 对其进行更改之后，你还可以升级远程 SharePoint 解决方案安装。
@@ -37,7 +37,7 @@ ms.locfileid: "62813938"
 
 5. 如果需要进行用户身份验证，登录到远程服务器。
 
-     在 Visual Studio 中会显示发布进度**输出**窗口。 当完成该过程，该解决方案 (*.wsp*) 文件安装在远程 SharePoint 服务器上。 但是，它仍必须激活才能在 SharePoint 中使用。
+     在 Visual Studio 中会显示发布进度**输出**窗口。 当完成该过程，该解决方案 ( *.wsp*) 文件安装在远程 SharePoint 服务器上。 但是，它仍必须激活才能在 SharePoint 中使用。
 
 6. 上**解决方案库**页上，选择 SharePoint 应用程序，然后在功能区中选择**激活**按钮。
 

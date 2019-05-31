@@ -34,7 +34,7 @@ ms.locfileid: "63440655"
 3. 创建名为 package.xml 的包清单，更新字符串和区域性，并将该文件放入新的文件夹中。 如果你已经用目标语言创建 Visual Studio 的引导程序，则可以复制 Visual Studio package.xml 文件并在此步骤中修改它。  
   
 > [!NOTE]
-> 如果使用安装项目来部署应用程序，则可以通过更改“本地化”属性来本地化应用程序。  
+> 如果使用安装项目来部署应用程序，则可以通过更改“本地化”属性来本地化应用程序  。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

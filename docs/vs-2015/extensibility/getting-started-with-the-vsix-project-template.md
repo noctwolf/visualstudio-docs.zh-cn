@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038661"
@@ -33,13 +33,13 @@ ms.locfileid: "60038661"
   
     1. 打开从其创建模板的项目。 此项目可以是任何项目类型。  
   
-    2. 在“文件”菜单上，单击“导出模板”。 完成该向导的步骤。  
+    2. 在“文件”  菜单上，单击“导出模板”  。 完成该向导的步骤。  
   
-         %USERPROFILE%\My Documents\Visual Studio 中创建一个.zip 文件*\<版本 >* \My Exported Templates\\。  
+         %USERPROFILE%\My Documents\Visual Studio 中创建一个.zip 文件 *\<版本 >* \My Exported Templates\\。  
   
 2. 创建一个空的 VSIX 项目。  
   
-     在 **文件** 菜单上，单击 **新建** ，然后单击 **项目**。 选择任一**Visual Basic**或**Visual C#**。 在所选节点下，选择**扩展性**，然后选择**VSIX 项目**。  
+     在 **文件** 菜单上，单击 **新建** ，然后单击 **项目**。 选择任一**Visual Basic**或**Visual C#** 。 在所选节点下，选择**扩展性**，然后选择**VSIX 项目**。  
   
 3. 将.zip 文件添加到项目。 设置其**复制到输出目录**属性设置为`Copy Always`。  
   

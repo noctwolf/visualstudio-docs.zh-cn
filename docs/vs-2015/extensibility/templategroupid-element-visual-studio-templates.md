@@ -15,7 +15,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53d1f6628ff9df48879a34417b7d89223d848dd8
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58934202"
@@ -58,7 +58,7 @@ ms.locfileid: "58934202"
 ## <a name="remarks"></a>备注  
  `TemplateGroupID` 是一个元素。  
   
- 值`TemplateGroupID`元素使用与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本号 >* \Projects\\)对显示在筛选器模板**添加新项**对话框。  
+ 值`TemplateGroupID`元素使用与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<版本号 >* \Projects\\)对显示在筛选器模板**添加新项**对话框。  
   
 |Visual C++ 值|含义|  
 |------------------------|-------------|  

@@ -60,10 +60,10 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 1. 创建新的 MVC ASP.NET 应用程序。
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019，键入**Ctrl + Q**若要打开搜索框中，键入**asp.net**，选择**模板**，然后选择**创建新 ASP.NET Web 应用程序 (.NET框架）**。 在显示对话框中，该项目命名**MyASPApp**，然后选择**创建**。 选择**MVC** ，然后选择**创建**。
+    在 Visual Studio 2019，键入**Ctrl + Q**若要打开搜索框中，键入**asp.net**，选择**模板**，然后选择**创建新 ASP.NET Web 应用程序 (.NET框架）** 。 在显示对话框中，该项目命名**MyASPApp**，然后选择**创建**。 选择**MVC** ，然后选择**创建**。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    若要执行此操作在 Visual Studio 2017 中，选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Web 应用程序**。 在 **ASP.NET 4.5.2** 模板部分中，选择“MVC” 。 请确保**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。)
+    若要执行此操作在 Visual Studio 2017 中，选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Web 应用程序**。 在 **ASP.NET 4.5.2** 模板部分中，选择“MVC”  。 请确保**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。)
     ::: moniker-end
 
 2. 打开 HomeController.cs 文件，并在 `About()` 方法中设置断点。
@@ -87,7 +87,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 如果你想要在 IIS 上安装 ASP.NET 的更多详细的信息，请参阅[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
 
-1. 在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择“Internet Information Services (IIS)管理器”。
+1. 在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择“Internet Information Services (IIS)管理器”  。
 
 1. 使用 Web 平台安装程序 (WebPI) 安装 ASP.NET 4.5 (从 Windows Server 2012 R2 中的服务器节点，选择**获取新的 Web 平台组件**，然后搜索 ASP.NET)
 
@@ -98,7 +98,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
      **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
-2. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改）。
+2. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改）   。
 
 ## <a name="choose-a-deployment-option"></a>选择部署选项
 
@@ -144,13 +144,13 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 1. 打开 Windows 资源管理器，并创建一个新文件夹**C:\Publish**、 更高版本将部署的 ASP.NET 项目。
 
-2. 如果尚未打开，打开**Internet 信息服务 (IIS) 管理器**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择“Internet Information Services (IIS)管理器”。）
+2. 如果尚未打开，打开**Internet 信息服务 (IIS) 管理器**。 (在服务器管理器的左窗格中，选择**IIS**。 右键单击服务器并选择“Internet Information Services (IIS)管理器”  。）
 
 3. 下**连接**在左窗格中，转到**站点**。
 
 4. 选择**Default Web Site**，选择**基本设置**，并设置**物理路径**到**C:\Publish**。
 
-5. 右键单击“默认网站”  节点，然后选择“添加应用程序” 。
+5. 右键单击“默认网站”  节点，然后选择“添加应用程序”  。
 
 6. 设置**别名**字段**MyASPApp**，接受默认应用程序池 (**DefaultAppPool**)，并设置**物理路径**到**C:\Publish**。
 
@@ -200,26 +200,26 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更高版本中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**(Shift + Alt + P)。
+    > 在 Visual Studio 2017 和更高版本中，您可以重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** (Shift + Alt + P)。
 
-3. 将限定符字段设置为**\<远程计算机名称>** 然后按**Enter**。
+3. 将限定符字段设置为 **\<远程计算机名称>** 然后按**Enter**。
 
     验证 Visual Studio 将所需的端口添加到计算机名称，将出现在格式： **\<远程计算机名称>：端口**
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019，你会看到**\<远程计算机名称>:4024**
+    在 Visual Studio 2019，你会看到 **\<远程计算机名称>:4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 中，你会看到**\<远程计算机名称>:4022**
+    在 Visual Studio 2017 中，你会看到 **\<远程计算机名称>:4022**
     ::: moniker-end
     端口是必需的。 如果看不到的端口号，请手动添加它。
 
-4. 单击“刷新”。
+4. 单击“刷新”  。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 可以使用`ipconfig`获取 IPv4 地址的命令行中。
 
-5. 勾选“显示所有用户的进程”  。
+5. 勾选“显示所有用户的进程”   。
 
 6. 键入进程名称，可以快速找到的第一个字母**w3wp.exe**为 ASP.NET 4.5。
 
@@ -232,9 +232,9 @@ Visual Studio 2017 需要按照本文中所示的步骤。
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. 单击“附加”
+7. 单击“附加” 
 
-8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
+8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>  。
 
     将显示 ASP.NET 网页。
 9. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。

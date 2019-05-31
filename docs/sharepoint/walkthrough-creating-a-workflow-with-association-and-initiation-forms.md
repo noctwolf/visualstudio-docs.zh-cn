@@ -1,5 +1,5 @@
 ---
-title: 演练：使用关联和启动窗体创建工作流 |Microsoft Docs
+title: 使用关联和初始化表单创建工作流
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430376"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401155"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练：使用关联和初始化表单创建工作流
   本演练演示如何创建一个基本顺序工作流，其中包含使用关联和初始化窗体。 这些是启用 SharePoint 管理员 （关联窗体），首次关联以及由用户 （启动窗体） 启动工作流时要添加到工作流参数的 ASPX 窗体。
@@ -82,7 +82,7 @@ ms.locfileid: "63430376"
 
 6. 在 **“解决方案资源管理器”** 中，选择项目节点。
 
-7. 在菜单栏上，依次选择“项目” > “添加新项”。
+7. 在菜单栏上，依次选择“项目”   > “添加新项”  。
 
 8. 下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。
 
@@ -90,7 +90,7 @@ ms.locfileid: "63430376"
 
      **SharePoint 自定义向导**出现。
 
-10. 在中**指定工作流名称来进行调试**页上，接受默认名称 (**ExpenseReport-Workflow1**)。 保留默认工作流模板类型值 (**列表工作流)**。 选择“下一步”按钮。
+10. 在中**指定工作流名称来进行调试**页上，接受默认名称 (**ExpenseReport-Workflow1**)。 保留默认工作流模板类型值 (**列表工作流)** 。 选择“下一步”按钮  。
 
 11. 在中**是否希望 Visual Studio 在调试会话中自动关联工作流？** 页上，清除自动关联工作流模板，如果选中此框。
 

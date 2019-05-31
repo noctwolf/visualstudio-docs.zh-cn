@@ -103,7 +103,7 @@ ms.locfileid: "62978440"
  如果在 Visual Studio 设计器中打开 Word 模板，则该模板中未嵌入文本中的控件可能不可见。 这是因为 Visual Studio 会打开 Word 模板中的**正常**视图。 若要查看控件，请单击**视图**菜单，依次指向**Microsoft Office Word 视图**，然后单击**打印布局**。
 
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>插入剪贴画命令没有在 Visual Studio 设计器中为 nothing
- 在 Visual Studio 设计器中打开 Excel 或 Word 时，单击**剪贴画**按钮**插图**功能区中的选项卡不会打开**剪贴画**任务窗格。 若要添加剪贴画，必须打开工作簿或主项目文件夹中的文档的副本 (不是中的副本*\bin*文件夹) Visual Studio 外部添加剪贴画，然后保存工作簿或文档。
+ 在 Visual Studio 设计器中打开 Excel 或 Word 时，单击**剪贴画**按钮**插图**功能区中的选项卡不会打开**剪贴画**任务窗格。 若要添加剪贴画，必须打开工作簿或主项目文件夹中的文档的副本 (不是中的副本 *\bin*文件夹) Visual Studio 外部添加剪贴画，然后保存工作簿或文档。
 
 ## <a name="code"></a> 编写代码
  在 Office 项目中编写代码时，可能会遇到以下错误。

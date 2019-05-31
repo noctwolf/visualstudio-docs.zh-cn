@@ -1,5 +1,5 @@
 ---
-title: 如何：以编程方式复制数据和格式设置在工作表之间
+title: 复制数据和以编程方式在工作表之间格式设置
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77feefe7a2d274403e483dbaa3167f53f72ae168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b90704d6d9fe555920fb042939079bd53884cfbe
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575294"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402210"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以编程方式复制数据和格式设置在工作表之间
   您可以将数据复制从上一个工作表范围到工作簿中的所有其他表使用<xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A>方法。 指定的范围，以及是否要将复制数据、 格式设置，或两者。

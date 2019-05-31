@@ -147,7 +147,7 @@ ms.locfileid: "63442366"
 
 ## <a name="CommandSet"></a> 定义命令的行为
 
-DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部类中实现的命令。 若要添加新命令，你必须通过创建包含同一个类的分部声明的新文件来扩展此类。 类的名称通常是 *\<YourDslName >*`CommandSet`。 它可用于通过验证的类的名称，并检查其内容来开始。
+DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部类中实现的命令。 若要添加新命令，你必须通过创建包含同一个类的分部声明的新文件来扩展此类。 类的名称通常是 *\<YourDslName >* `CommandSet`。 它可用于通过验证的类的名称，并检查其内容来开始。
 
 命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 

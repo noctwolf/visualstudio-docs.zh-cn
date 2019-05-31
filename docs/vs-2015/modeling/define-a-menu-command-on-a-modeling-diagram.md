@@ -37,7 +37,7 @@ ms.locfileid: "65687604"
 
 #### <a name="to-create-a-menu-command-in-its-own-vsix"></a>若要在自己的 VSIX 中创建菜单命令  
 
-1. 在  “新建项目”对话框中的 “建模项目”下，选择 “命令扩展”。  
+1. 在  “新建项目”对话框中的  “建模项目”下，选择  “命令扩展”。  
 
 2. 在新项目中打开 **.cs** 文件并修改 `CommandExtension` 类，以实现命令。  
 
@@ -55,9 +55,9 @@ ms.locfileid: "65687604"
 
 1. 在新的 Visual Studio 解决方案或现有解决方案中创建类库项目。  
 
-   1. 在“文件”  菜单上，选择“新建” 、“项目” 。  
+   1. 在“文件”  菜单上，选择“新建”  、“项目”  。  
 
-   2. 在 “已安装的模板”下，选择  “Visual C#”或 “Visual Basic”。 在中间栏中，选择 “类库”。  
+   2. 在  “已安装的模板”下，选择  “Visual C#”或  “Visual Basic”。 在中间栏中，选择  “类库”。  
 
    3. 设置 **“解决方案”** 以指示你是希望创建新的解决方案，还是希望向已打开的 VSIX 解决方案添加组件。  
 
@@ -146,11 +146,11 @@ ms.locfileid: "65687604"
 
 2. 创建一个 VSIX 项目（如果解决方案中已有一个 VSIX 项目，则无需执行此步骤）。  
 
-    1. 在“解决方案资源管理器” 中，在该解决方案的快捷菜单上依次选择“添加” 、“新建项目” 。  
+    1. 在“解决方案资源管理器”  中，在该解决方案的快捷菜单上依次选择“添加”  、“新建项目”  。  
 
-    2. 在 “已安装的模板”下，展开  “Visual C#”或 “Visual Basic”，然后选择 “扩展性”。 在中间栏中，选择“VSIX 项目” 。  
+    2. 在  “已安装的模板”下，展开  “Visual C#”或  “Visual Basic”，然后选择  “扩展性”。 在中间栏中，选择“VSIX 项目”  。  
 
-3. 在“解决方案资源管理器”中，在该 VSIX 项目的快捷菜单上选择 “设为启动项目”。  
+3. 在“解决方案资源管理器”中，在该 VSIX 项目的快捷菜单上选择  “设为启动项目”。  
 
 4. 打开 **source.extension.vsixmanifest**。  
 
@@ -158,13 +158,13 @@ ms.locfileid: "65687604"
 
     2. 在“安装目标”  选项卡上，将 Visual Studio 版本设置为目标。  
 
-    3. 在“资产”  选项卡上，选择 “新建”，并在对话框中进行如下设置：  
+    3. 在“资产”  选项卡上，选择  “新建”，并在对话框中进行如下设置：  
 
          **类型** = **MEF 组件**  
 
-          = **当前解决方案中的项目**  
+          = **当前解决方案中的项目**   
 
-          = *你的类库项目*  
+           = *你的类库项目*  
 
 ## <a name="Implementing"></a> 实现菜单命令  
  该菜单命令类为 <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> 实现所需的方法。  
@@ -214,7 +214,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 #### <a name="to-test-the-menu-command"></a>测试菜单命令  
 
-1. 按“F5” ，或在“调试”  菜单上，选择“开始调试” 。  
+1. 按“F5”  ，或在“调试”  菜单上，选择“开始调试”  。  
 
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
 
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - 如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
 
-    - 在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序”  字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
+    - 在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性”  。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序”  字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 
@@ -247,9 +247,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 1. 在你的计算机中，找到由 VSIX 项目生成的 **.vsix** 文件。  
 
-    1. 在“解决方案资源管理器” 中，在 VSIX 项目的快捷菜单上，选择“在 Windows 资源管理器中打开文件夹” 。  
+    1. 在“解决方案资源管理器”  中，在 VSIX 项目的快捷菜单上，选择“在 Windows 资源管理器中打开文件夹”  。  
 
-    2. 找到的文件**bin\\\*\\**_YourProject_**.vsix**  
+    2. 找到的文件**bin\\\*\\** _YourProject_ **.vsix**  
 
 2. 将 **.vsix** 文件复制到要安装该扩展的目标计算机。 该计算机可以是自己的计算机或其他计算机。  
 
@@ -257,17 +257,17 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3. 在目标计算机上，打开 **.vsix** 文件，例如双击打开。  
 
-     “” 将会打开并安装扩展。  
+     “”  将会打开并安装扩展。  
 
 4. 启动或重启 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]。  
 
 #### <a name="to-uninstall-an-extension"></a>若要卸载扩展  
 
-1. 在“工具”  菜单上，选择“扩展和更新” 。  
+1. 在“工具”  菜单上，选择“扩展和更新”  。  
 
-2. 展开“已安装的扩展” 。  
+2. 展开“已安装的扩展”  。  
 
-3. 选择扩展，然后选择“卸载” 。  
+3. 选择扩展，然后选择“卸载”  。  
 
    在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：  
 

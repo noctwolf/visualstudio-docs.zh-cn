@@ -49,7 +49,7 @@ ms.locfileid: "63441883"
 ### <a name="debug-office-2013-vsto-add-ins-by-using-either-office-2013-or-office-2016"></a>使用 Office 2013 或 Office 2016 调试 Office 2013 VSTO 外接程序
  如果使用的 Visual Studio 2015，并且必须安装 Office 并行的两个版本，Visual Studio 将启动 Office 2016。 如果使用 Visual Studio 2013，Visual Studio 将启动 Office 2013。
 
- 如果想要使用不同的 Office 版本（2013 或 2016）调试 VSTO 外接程序，打开 **“项目设计器”**，然后在 **“调试”** 选项卡上选择 **“启动外部程序”** 选项按钮。 然后，浏览到相应的 Office 应用程序可执行文件的位置。
+ 如果想要使用不同的 Office 版本（2013 或 2016）调试 VSTO 外接程序，打开 **“项目设计器”** ，然后在 **“调试”** 选项卡上选择 **“启动外部程序”** 选项按钮。 然后，浏览到相应的 Office 应用程序可执行文件的位置。
 
 ## <a name="f10-and-f11-behavior"></a>F10 和 F11 行为
  在开始调试 Office 项目时**F10**并**F11**不具有与在开始调试其他 Visual Basic 或 C# 项目中时相同的行为。 在 Visual Basic 或 C# 项目中，调试器将在主函数中停止；在 Office 项目中，Visual Studio 无法控制 Office 应用程序的主函数。 但是，在调试期间， **F10**并**F11**是否有相同的功能，如 Visual Basic 和 C# 项目中所示。
@@ -73,7 +73,7 @@ ms.locfileid: "63441883"
  每次生成项目时，会清空并重新创建数据集。 如果想要调试缓存的数据集，则必须在 Visual Studio 外部打开文档，然后附加调试器。
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>调试 Word 文档项目基于 Word 97-2003 文档 (*.doc) 格式
- 若要调试基于 Word 97-2003 文档的 Word 文档项目 (*/*.doc *) 格式，必须将项目文件夹添加到受信任的文件夹列表。 有关如何执行此操作的详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。
+ 若要调试基于 Word 97-2003 文档的 Word 文档项目 ( */* .doc *) 格式，必须将项目文件夹添加到受信任的文件夹列表。 有关如何执行此操作的详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。
 
 ## <a name="debug-disabled-add-ins"></a>禁用调试外接程序
  Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 Microsoft Office 应用程序禁用 VSTO 外接程序以防止每次启动应用程序时加载有问题的代码。 但是，这也容易在典型的调试过程中导致意外行为。 有关如何重新启用 VSTO 外接程序的信息，请参阅[如何：重新启用 VSTO 外接程序中已禁用的](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)。
