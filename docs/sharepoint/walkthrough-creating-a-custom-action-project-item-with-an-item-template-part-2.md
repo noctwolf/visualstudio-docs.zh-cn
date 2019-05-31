@@ -1,5 +1,5 @@
 ---
-title: 演练：使用项模板创建自定义操作项目项，第 2 部分 |Microsoft Docs
+title: 使用项模板，第 2 部分中创建自定义操作项目项
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430470"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401165"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板，第 2 部分中创建自定义操作项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板向项目添加项目项的新实例。 可以使用你收集的信息来初始化项目项。

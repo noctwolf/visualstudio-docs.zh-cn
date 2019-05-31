@@ -1,5 +1,5 @@
 ---
-title: 如何：使用 MSBuild 目标自定义 SharePoint 解决方案包 |Microsoft Docs
+title: 自定义 SharePoint 解决方案包使用 MSBuild 目标
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814012"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401511"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用 MSBuild 目标自定义 SharePoint 解决方案包
-  通过在命令提示符处使用 MSBuild 目标，您可以自定义 Visual Studio 创建 SharePoint 包文件的方式 (*.wsp*)。 例如，可以自定义 MSBuild 属性以更改打包中间目录，以及自定义 MSBuild 项组以指定枚举的文件。
+  通过在命令提示符处使用 MSBuild 目标，您可以自定义 Visual Studio 创建 SharePoint 包文件的方式 ( *.wsp*)。 例如，可以自定义 MSBuild 属性以更改打包中间目录，以及自定义 MSBuild 项组以指定枚举的文件。
 
 ## <a name="customize-and-run-msbuild-targets"></a>自定义和运行 MSBuild 目标
  如果自定义 BeforeLayout 和 AfterLayout 目标，您可以在布局包之前执行任务，例如，添加、移除或修改要打包的文件。
@@ -43,7 +43,7 @@ ms.locfileid: "62814012"
 
 3. 打开该项目，打开其快捷菜单，并选择**卸载项目**。
 
-4. 在中**解决方案资源管理器**，打开项目的快捷菜单，然后选择**编辑** *\<项目名称>.vbproj*或**编辑***\<项目名称>.csproj*。
+4. 在中**解决方案资源管理器**，打开项目的快捷菜单，然后选择**编辑** *\<项目名称>.vbproj*或**编辑** *\<项目名称>.csproj*。
 
 5. 在临近项目文件末尾的 `Import` 行后面，添加以下行。
 
