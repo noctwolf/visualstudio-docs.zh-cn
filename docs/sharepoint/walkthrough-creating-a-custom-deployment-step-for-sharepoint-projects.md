@@ -1,5 +1,5 @@
 ---
-title: 演练：为 SharePoint 项目创建自定义部署步骤 |Microsoft Docs
+title: 创建 SharePoint 项目的自定义部署步骤
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430422"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401098"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练：创建 SharePoint 项目的自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。

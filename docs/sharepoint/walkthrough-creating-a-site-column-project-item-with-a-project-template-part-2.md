@@ -1,5 +1,5 @@
 ---
-title: 演练：使用项目模板创建站点栏项目项，第 2 部分 |Microsoft Docs
+title: 使用项目模板，第 2 部分中创建站点栏项目项
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436718"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401103"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板，第 2 部分中创建站点栏项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板关联后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板创建新的项目包含项目项。 可以使用你收集的信息来初始化项目项。
