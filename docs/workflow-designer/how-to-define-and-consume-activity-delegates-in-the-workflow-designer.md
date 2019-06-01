@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器-如何：定义和使用活动委托
+title: 工作流设计器：定义和使用活动委托
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949509"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431795"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>如何：在工作流设计器中定义和使用活动委托
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949509"
 
 14. 在中**变量类型**列中，选择**Int32**。 将保留**作用域**作为**虽然**，并**默认**列保留为空白。
 
-15. 设置**条件**的属性<xref:System.Activities.Statements.While>活动**索引 < Items.Length;**。
+15. 设置**条件**的属性<xref:System.Activities.Statements.While>活动**索引 < Items.Length;** 。
 
 16. 拖动<xref:System.Activities.Statements.InvokeDelegate>活动从**基元**部分中的工具箱拖到**正文**的<xref:System.Activities.Statements.While>活动。
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949509"
 
 18. 在中**属性**网格<xref:System.Activities.Statements.InvokeDelegate>活动中，单击 **...** 按钮**委托参数**属性。
 
-19. 在中**值**自变量名为的列**自变量**，输入**Items [Index]**。 单击**确定**以关闭**DelegateArguments**对话框。
+19. 在中**值**自变量名为的列**自变量**，输入**Items [Index]** 。 单击**确定**以关闭**DelegateArguments**对话框。
 
 20. 将 <xref:System.Activities.Statements.Assign> 活动拖到 <xref:System.Activities.Statements.InvokeDelegate> 活动的水平线下。 <xref:System.Activities.Statements.Assign>创建活动时，和一个<xref:System.Activities.Statements.Sequence>自动创建活动以包含中的两个活动**正文**一部分**myforeach**活动。 需要序列，因为**正文**部分只能包含单个活动。 自动创建新<xref:System.Activities.Statements.Sequence>活动是.NET Framework 4.5 的新功能。
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949509"
 
 3. 拖动**myforeach**活动从工具箱拖到设计器图面。 此活动是在与项目同名的工具箱的部分。
 
-4. 设置**项**的属性**myforeach**活动**new Object [] {1，"abc"}**。
+4. 设置**项**的属性**myforeach**活动**new Object [] {1，"abc"}** 。
 
 5. 拖动<xref:System.Activities.Statements.WriteLine>活动从**基元**部分中的工具箱拖到**Delegate: Body**一部分**myforeach**活动。
 
-6. 设置**文本**的属性<xref:System.Activities.Statements.WriteLine>活动**argument.tostring （)**。
+6. 设置**文本**的属性<xref:System.Activities.Statements.WriteLine>活动**argument.tostring （)** 。
 
 当执行工作流时，控制台将显示以下输出：
 
