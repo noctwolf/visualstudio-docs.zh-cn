@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854126"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432214"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>记录和重播使用快照调试程序的 Azure 虚拟机上的实时 ASP.NET 应用
 
@@ -37,26 +37,26 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 ## <a name="prerequisites"></a>系统必备
 
-* 时间旅行调试的 Azure 虚拟机 (VM) 是仅适用于 Visual Studio 2019 Enterprise 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
+* 时间旅行调试的 Azure 虚拟机 (VM) 是仅适用于 Visual Studio 2019 Enterprise 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它    。）
 
     如果尚未安装，安装[Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/)。
 
 * 时间旅行调试是适用于以下的 Azure VM web 应用：
   * 运行 ASP.NET 应用程序 (AMD64) 上.NET Framework 4.8 或更高版本。
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>打开项目并启动时间旅行启用了调试快照调试器
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>启用时间旅行调试启动 Snapshot Debugger
 
 1. 打开该项目为你想要收集一次的旅行录制。
 
     > [!IMPORTANT]
     > 若要启动 TTD，您需要打开*相同版本的源代码*，它发布到 Azure VM 服务。
 
-1. 选择“调试”>“附加 Snapshot Debugger...”。选择你的 web 应用部署到 Azure VM 和 Azure 存储帐户。 选择**启用时间旅行调试**预览选项，然后单击**附加**。
+1. 选择“调试”>“附加 Snapshot Debugger...”  。选择你的 web 应用部署到 Azure VM 和 Azure 存储帐户。 选择**启用时间旅行调试**预览选项，然后单击**附加**。
 
       ![选择 Azure 资源](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
     > [!IMPORTANT]
-    > 第一次为 VM 选择“附加 Snapshot Debugger”时，IIS 将自动重启。
+    > 第一次为 VM 选择“附加 Snapshot Debugger”  时，IIS 将自动重启。
 
     元数据**模块**最初未激活。 导航到 web 应用和**开始收集**然后按钮将变为活动状态。 Visual Studio 现在处于快照调试模式下。
 
@@ -79,7 +79,7 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
    ![收集一次传输到在方法结束跟踪](../debugger/media/time-travel-debugging-set-snappoint-action.png)
 
-1. 单击“开始收集”以打开快照点。
+1. 单击“开始收集”以打开快照点  。
 
    ![开启快照点](../debugger/media/snapshot-start-collection.png)
 
@@ -89,7 +89,7 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
 ## <a name="start-debugging-a-time-travel-recording"></a>开始调试时间旅行录制
 
-1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”。
+1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”  。
 
    ![打开快照点](../debugger/media/snapshot-diagsession-window.png)
 
@@ -103,7 +103,7 @@ Visual Studio Enterprise 中的时间旅行调试 (TTD) 预览版提供的功能
 
    ![检查快照数据](../debugger/media/time-travel-debugging-start-debugging.png)
 
-    网站本身仍然为实时事件和最终用户不受影响的任何后续 TTD 活动。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点。
+    网站本身仍然为实时事件和最终用户不受影响的任何后续 TTD 活动。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点  。
 
 **需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
 
