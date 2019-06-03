@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a476ea94506800679c51b4d9081aeecdfb92f273
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 32aa82654d55496c3d407f59712a8b7adba56b9a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439617"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261552"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 .NET 服务，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。

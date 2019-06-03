@@ -1,5 +1,5 @@
 ---
-title: 使用探查器命令行收集服务的并发数据 | Microsoft Docs
+title: 使用探查器命令行获取服务的并发数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df8fa1b0e0d9c76595c29958641de628e5e8b78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4fba5c02846fa13cb0929a63e4007acb7db58535
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440210"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262975"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>使用探查器命令行收集服务的并发数据
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的并发方法可用于收集资源争用数据和线程活动数据，后者可显示 CPU 使用率、线程争用、线程迁移、同步延迟、重叠 IO 的区域和其他系统事件。

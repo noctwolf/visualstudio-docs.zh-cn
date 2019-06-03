@@ -1,5 +1,5 @@
 ---
-title: 使用探查器命令行从 ASP.NET Web 应用程序收集内存数据 | Microsoft Docs
+title: 使用探查器命令行获取 ASP.NET Web 应用程序内存数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a9e6bfce4b9137283a9413168fe320e292195c12
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405870"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263545"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集 ASP.NET Web 应用程序的内存数据
 本部分介绍使用 VSPerfCmd 命令行工具收集 ASP.NET Web 应用程序的内存分配数据和对象生存期数据的过程和选项。

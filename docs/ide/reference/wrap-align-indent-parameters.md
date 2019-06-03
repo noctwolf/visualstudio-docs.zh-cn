@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789042"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037586"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>自动换行、缩进和对齐参数
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>换行、缩进和对齐参数
 
 此重构适用于：
 
@@ -25,7 +25,7 @@ ms.locfileid: "62789042"
 
 - Visual Basic
 
-**功能：** 可以自动换行、缩进和对齐参数。
+**功能：** 允许你换行、缩进或对齐参数。
 
 **使用时机：** 有具有多个参数的方法声明或调用。
 

@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6622285d985d75c547428163b0b6cdaa8f699fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897580"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263394"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
+
 XAML 设计器中元素的样式和模板存储在称作资源的可重用实体中。 样式可设置元素属性并重用这些设置以便多个元素实现一致的外观。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) 定义控件的外观，并且可作为资源应用。 有关详细信息，请参阅[快速入门：控件样式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入门：控件模板](http://go.microsoft.com/fwlink/?LinkID=247982)。
 
- 每当从现有属性、[样式](/uwp/api/Windows.UI.Xaml.Style)或 `ControlTemplate` 创建新资源时，可在“创建资源”对话框中将资源定义为应用程序级别、文档级别或元素级别。 这些级别决定了可使用资源的位置。 例如，如果定义元素级别的资源，则该资源只能应用于在其上创建资源的元素。 还可以选择将资源存储在资源字典中，资源字典是可在另一个项目中再次使用的单独文件。
+每当从现有属性、[样式](/uwp/api/Windows.UI.Xaml.Style)或 `ControlTemplate` 创建新资源时，可在“创建资源”对话框中将资源定义为应用程序级别、文档级别或元素级别。 这些级别决定了可使用资源的位置。 例如，如果定义元素级别的资源，则该资源只能应用于在其上创建资源的元素。 还可以选择将资源存储在资源字典中，[资源字典](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)是可在另一个项目中再次使用的单独文件。
 
-### <a name="to-create-a-new-resource"></a>创建新资源的步骤
+## <a name="create-a-new-resource"></a>新建资源
 
 1. 在 XAML 设计器中打开一个 XAML 文件后，创建一个元素，或在“文档大纲”窗口中选择一个元素。
 
@@ -43,11 +44,11 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
     - 若要使该资源仅对从中创建了该资源的元素或其子元素可用，则选择“此文档”，然后在下拉列表中，选择 **element**: **name**。
 
-    - 若要在可在其他项目中重用的资源字典文件中定义该资源，则单击“资源字典”，然后在下拉列表中选择一个现有的资源字典文件，如“StandardStyles.xaml”。
+    - 若要在[资源字典](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)文件中定义资源，以便可以将它重复用于其他项目，请单击“资源字典”。 然后从下拉列表中选择一个现有的资源字典文件，如“StandardStyles.xaml”。
 
 5. 选择“确定”按钮以创建资源并将其应用于从其中创建了该资源的元素。
 
-### <a name="to-apply-a-resource-to-an-element-or-property"></a>将资源应用于某个元素或属性的步骤
+## <a name="apply-a-resource-to-an-element-or-property"></a>将资源应用于某个元素或属性
 
 1. 在“文档大纲”窗口中，选择想要向其应用资源的元素。
 
@@ -64,7 +65,7 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
      可在任何兼容的位置应用资源。 例如，画笔资源可应用于 <xref:Windows.UI.Xaml.Controls.TextBox> 控件的“前景色”属性。
 
-### <a name="to-edit-a-resource"></a>编辑资源的步骤
+## <a name="edit-a-resource"></a>编辑资源
 
 1. 选择美工板上或“文档大纲”窗口中的某个元素。
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b89f8415d34a4facaca694db8507c911d279bf8f
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976116"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037496"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -165,3 +165,4 @@ ms.locfileid: "65976116"
 * [导入或导出安装配置](import-export-installation-configurations.md)
 * [Visual Studio 安装存档](https://devblogs.microsoft.com/setup/tag/vs2017/)
 * [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)
+* [同步自动加载设置](../extensibility/synchronously-autoloaded-extensions.md)

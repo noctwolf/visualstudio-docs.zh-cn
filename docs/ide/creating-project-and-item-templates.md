@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793447"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037014"
 ---
 # <a name="project-and-item-templates"></a>项目和项模板
 
@@ -47,7 +47,7 @@ ms.locfileid: "62793447"
 
 ::: moniker-end
 
-   有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。
+   有关 .vstemplate 文件的详细信息，请参阅[模板标签](template-tags.md)和[模板参数](../ide/template-parameters.md)。
 
 当这些文件压缩成 .zip 文件并放在正确的文件夹时，Visual Studio 将自动在以下位置显示这些文件：
 
@@ -71,6 +71,7 @@ ms.locfileid: "62793447"
 
 - [如何：创建项目模板](../ide/how-to-create-project-templates.md)
 - [如何：创建项模板](../ide/how-to-create-item-templates.md)
+- [模板标签](template-tags.md)
 - [模板参数](../ide/template-parameters.md)
 - [自定义模板](../ide/customizing-project-and-item-templates.md)
 - [Visual Studio 模板中的 NuGet 包](/nuget/visual-studio-extensibility/visual-studio-templates)

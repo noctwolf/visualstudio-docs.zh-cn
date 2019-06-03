@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962036"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261320"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -125,7 +125,8 @@ ms.locfileid: "62962036"
 |调试.单步执行特定函数|**Shift+Alt+F11**|
 |调试.跳出|**Shift+F11**|
 |调试.跳出当前进程|**Ctrl+Shift+Alt+F11**|
-|调试.逐过程|**F10**|
+|调试.逐过程|F10（执行调试时：执行单步跳过操作）|
+|调试.逐过程|F10（未在执行调试时：启动调试，并在第一行用户代码上停止）|
 |调试.逐过程执行当前进程|**Ctrl+Alt+F10**|
 |调试.停止调试|**Shift+F5**|
 |调试.停止性能分析|**Shift+Alt+F2**|
@@ -803,7 +804,7 @@ ms.locfileid: "62962036"
 | 编辑.扩展转到大括号 | **Ctrl+Shift+]** |
 | 编辑.转到当前 | **Ctrl+T、R** |
 | 编辑.转到文件中的下一个问题 | **Alt+PgDn** |
-| 编辑.转到文件中的上述问题 **Alt+PgUp** |
+| Edit.GotoPreviousIssueinFile | **Alt+PgUp** |
 | 编辑.隐藏选定内容 | **Ctrl+M、Ctrl+H** |
 | 编辑.增加筛选器级别 | **Alt+.** |
 | 编辑.渐进式搜索 | **Ctrl+I** |

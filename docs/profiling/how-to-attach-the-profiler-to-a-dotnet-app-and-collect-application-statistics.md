@@ -1,5 +1,5 @@
 ---
-title: 将探查器附加到 .NET Framework 独立应用中并收集应用统计信息
+title: 将探查器附加到 .NET Framework 独立应用程序；获取应用程序统计信息
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a667c259c6cd924c0ff698a47858c08d0f7cf42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431562"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261609"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 .NET Framework 独立应用程序，并使用命令行收集应用程序统计信息
 本文介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到正在运行的 .NET Framework 独立（客户端）应用程序，并使用采样方法收集性能统计信息。

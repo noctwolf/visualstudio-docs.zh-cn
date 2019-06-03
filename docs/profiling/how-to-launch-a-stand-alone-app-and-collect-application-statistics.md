@@ -1,5 +1,5 @@
 ---
-title: 如何：使用命令行通过探查器启动独立应用程序并收集应用程序统计信息 | Microsoft Docs
+title: 探查器命令行：启动独立应用程序，获取应用程序统计信息
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5938adc51b2d89b0402e28bb5112158b07e378
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c2544e2a9951fe6738b85b3bf9b9c31e69f2eb9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386966"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261357"
 ---
 # <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用探查器启动独立应用程序，并通过命令行收集应用程序统计信息
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动独立（客户端）应用程序，以及如何使用采样方法收集性能统计信息。

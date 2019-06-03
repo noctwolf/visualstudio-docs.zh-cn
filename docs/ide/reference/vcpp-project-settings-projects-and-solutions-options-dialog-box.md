@@ -1,5 +1,5 @@
 ---
-title: “选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
+title: C++ 项目设置选项
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789313"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263078"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 使用此对话框，可以定义与记录、性能和支持文件类型相关的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 生成和项目设置。

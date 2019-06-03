@@ -1,5 +1,5 @@
 ---
-title: 疑难解答和已知问题 (Visual Studio Tools for Unity) | Microsoft Docs
+title: 疑难解答和已知问题 (VS Tools for Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815581"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261117"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "62815581"
 
 Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等几个 Unity 插件使用本机线程。 插件在最后将本机线程附加到运行时，阻止了对操作系统的调用，这时就会出现问题。 这意味着 Unity 不能对调试程序（或域重载）和挂起中断该线程。
 
-有一种解决方法适合 FMOD：通过传递 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[标记](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)来禁用异步处理，并对主线程执行所有处理。
+有一种解决方法适合 FMOD：通过传递 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[标记](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags)来禁用异步处理，并对主线程执行所有处理。
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不兼容项目
 
