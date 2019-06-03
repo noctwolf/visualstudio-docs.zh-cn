@@ -37,7 +37,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 #### <a name="to-create-the-project"></a>要创建项目  
   
-1. 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 在菜单栏上，依次选择“文件”  、“新建”  、“项目”  。  
   
 2. 在“新建项目”  对话框框中，展开“Visual C#”  或“Visual Basic”  节点，再选择“Windows”  节点，然后展开“Windows”  节点并选择“经典桌面”  节点。  
   
@@ -45,22 +45,22 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 4. 在“新建项目”  文本框中，键入 `WPFQuickStart`，然后选择“确定”  按钮。  
   
-     创建项目并且已将项目文件添加到“解决方案资源管理器” 后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。  
+     创建项目并且已将项目文件添加到“解决方案资源管理器”  后，将显示名为 **MainWindow.xaml** 的默认应用程序窗口的设计器。  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>若要添加对 Windows Azure Mobile Services SDK 的引用  
   
-1. 在“解决方案资源管理器” 中，打开“引用”  节点的快捷菜单，然后选择“管理 NuGet 包” 。  
+1. 在“解决方案资源管理器”  中，打开“引用”  节点的快捷菜单，然后选择“管理 NuGet 包”  。  
   
-2. 在“NuGet 程序包管理器”中，选择“搜索”字段并输入 `mobileservices`。  
+2. 在“NuGet 程序包管理器”  中，选择“搜索”  字段并输入 `mobileservices`。  
   
-3. 在左窗格中，选择“WindowsAzure.MobileServices” ，然后在右窗格中选择“安装”  按钮。  
+3. 在左窗格中，选择“WindowsAzure.MobileServices”  ，然后在右窗格中选择“安装”  按钮。  
   
     > [!NOTE]
     > 如果显示“预览”  对话框，检查建议的更改，然后选择“确定”  按钮。  
   
 4. 在“接受许可证”  对话框中，查看许可协议条款，然后通过选择“我接受”  按钮接受这些条款。  
   
-     必需的引用将添加到“解决方案资源管理器” 。  
+     必需的引用将添加到“解决方案资源管理器”  。  
   
     > [!NOTE]
     > 如果不同意许可条款，选择“我拒绝”  按钮。 你将无法完成本演练的其余部分。  
@@ -70,11 +70,11 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 #### <a name="to-add-a-user-control"></a>要添加用户控件  
   
-1. 在“解决方案资源管理器” 中，打开“WPFQuickStart”  节点的快捷菜单，然后选择“添加” 、“新建文件夹” 。  
+1. 在“解决方案资源管理器”  中，打开“WPFQuickStart”  节点的快捷菜单，然后选择“添加”  、“新建文件夹”  。  
   
 2. 将该文件夹命名为 `Common`注册一个免费试用帐户。  
   
-3. 打开“Common”  文件夹的快捷菜单，并选择“添加” 、“用户控件” 。  
+3. 打开“Common”  文件夹的快捷菜单，并选择“添加”  、“用户控件”  。  
   
 4. 在“新建项目”  对话框中，选择“名称”字段并输入 `QuickStartTask`，然后选择“确定”  按钮。  
   
@@ -100,7 +100,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
      ![QuickStartTask 用户控件](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6. 在“解决方案资源管理器” 中，展开“QuickStartTask.xaml”  节点，然后打开“QuickStartTask.xaml.cs”  或“QuickStartTask.xaml.vb”  文件。  
+6. 在“解决方案资源管理器”  中，展开“QuickStartTask.xaml”  节点，然后打开“QuickStartTask.xaml.cs”  或“QuickStartTask.xaml.vb”  文件。  
   
 7. 在代码编辑器中，将 `namespace WPFQuickStart.Common` (C#) 命名空间或 `Public Class QuickStartTask` (VB) 方法替换为以下代码：  
   
@@ -200,11 +200,11 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
      此代码使用依赖关系属性设置运行时数字、标题和说明字段的值。  
   
-8. 在菜单栏上，依次选择“生成” ，“生成 WPFQuickStart”  以生成用户控件。  
+8. 在菜单栏上，依次选择“生成”  ，“生成 WPFQuickStart”  以生成用户控件。  
   
 #### <a name="to-create-and-modify-the-main-window"></a>要创建和修改主窗口  
   
-1. 在“解决方案资源管理器” 中，打开  “MainWindow.xaml”文件。  
+1. 在“解决方案资源管理器”  中，打开  “MainWindow.xaml”文件。  
   
 2. **重要**。 此步骤仅适用于 C#。 如果使用的是 Visual Basic，请跳到下一步。 在设计器下方窗格中，找到行 `xmlns:local=”clr-namespace:WPFQuickStart”` ，并用它替换下面的 XAML 代码：  
   
@@ -216,9 +216,9 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
      请注意，XAML 窗口中的“标题”  元素会更改以匹配新值。 可以修改 XAML 窗口或“属性”  窗口中的 XAML 属性且更改会同步。  
   
-4. 在 XAML 窗口中，将“高度”元素的值设置为 `768`，并将“宽度”属性的值设置为 `1280`。  
+4. 在 XAML 窗口中，将“高度”  元素的值设置为 `768`，并将“宽度”  属性的值设置为 `1280`。  
   
-     这些元素对应于“高度”和“宽度”属性，它们可在“属性”窗口的“布局”类别中找到。  
+     这些元素对应于“高度”  和“宽度”  属性，它们可在“属性”  窗口的“布局”  类别中找到。  
   
 5. 选择 `<Grid>` 和 `</Grid>` 标记，并用它们替换下面的 XAML 代码：  
   
@@ -290,7 +290,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
     > [!NOTE]
     > 在操作后面的几个程序期间，如果“错误列表”  处于打开状态，你可能会看到其中的错误。 别担心；一旦完成剩余程序，这些错误就会消失。  
   
-6. 在“解决方案资源管理器” 中，展开“MainWindow.xaml”  节点并打开“MainWindow.xaml.cs”  或“MainWindow.xaml.vb”  文件。  
+6. 在“解决方案资源管理器”  中，展开“MainWindow.xaml”  节点并打开“MainWindow.xaml.cs”  或“MainWindow.xaml.vb”  文件。  
   
 7. 在代码编辑器中，将以下 `using` 或 `Imports` 指令添加到文件顶部：  
   
@@ -477,9 +477,9 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 1. 打开 Web 浏览器并登录到你的 Microsoft Azure 门户，然后选择“移动服务”  选项卡。  
   
-2. 选择“新建”按钮，然后在弹出对话框中依次选择“计算”、“移动服务”和“创建”。  
+2. 选择“新建”  按钮，然后在弹出对话框中依次选择“计算”  、“移动服务”和“创建”  。  
   
-3. 在“新建移动服务”对话框中，选择“URL”文本框并输入 `wpfquickstart01`。  
+3. 在“新建移动服务”  对话框中，选择“URL”  文本框并输入 `wpfquickstart01`。  
   
     > [!NOTE]
     > 你可能需要更改该 URL 的数字部分。 Microsoft Azure 要求每个移动服务的 URL 均唯一。  
@@ -493,7 +493,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
     > [!NOTE]
     > 对于此服务，你需使用默认的“后端”  设置 **JavaScript**。  
   
-6. 如果要创建新数据库，在“指定数据库设置”  页上的“服务器”  列表中，选择“新建 SQL 数据库服务器” ，输入你的 **SQL 登录名** 和 **密码**，然后选择“完成”  （复选标记）按钮。  
+6. 如果要创建新数据库，在“指定数据库设置”  页上的“服务器”  列表中，选择“新建 SQL 数据库服务器”  ，输入你的 **SQL 登录名** 和 **密码**，然后选择“完成”  （复选标记）按钮。  
   
 7. 如果你选择了一个现有数据库，在“数据库设置”  页上，输入你的 **登录密码** ，然后选择“完成”  （复选标记）按钮。  
   
@@ -507,7 +507,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 #### <a name="to-create-a-table"></a>要创建表  
   
-1. 在 Microsoft Azure 门户中，选择你的移动服务名称旁边的向右箭头，再在菜单栏上选择“数据” ，然后选择“添加表”  链接。  
+1. 在 Microsoft Azure 门户中，选择你的移动服务名称旁边的向右箭头，再在菜单栏上选择“数据”  ，然后选择“添加表”  链接。  
   
 2. 在“新建项目”  对话框中，在“表名”  文本框中输入 `TodoItem`，然后选择“确定”  （复选标记）按钮。  
   
@@ -515,7 +515,7 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>要添加移动服务的声明  
   
-1. 返回到 Visual Studio。 在“解决方案资源管理器” ，展开“App.xaml”  (C#) 或“Application.xaml”  (Visual Basic) 节点，然后打开“App.xaml.cs”  或“App.xaml.vb”  文件。  
+1. 返回到 Visual Studio。 在“解决方案资源管理器”  ，展开“App.xaml”  (C#) 或“Application.xaml”  (Visual Basic) 节点，然后打开“App.xaml.cs”  或“App.xaml.vb”  文件。  
   
 2. 在代码编辑器中，将以下 `using` 或 **Imports** 指令添加到文件顶部：  
   
@@ -547,11 +547,11 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 #### <a name="to-run-the-application"></a>要运行应用程序  
   
-1. 在菜单栏上，依次选择“调试” 、“启动调试”  （或按 F5）。  
+1. 在菜单栏上，依次选择“调试”  、“启动调试”  （或按 F5）。  
   
 2. 在“新建项目”  文本框中，输入 `Do something`，然后选择“确定”  按钮。  
   
-3.  `Do something else`，然后选择“确定”  按钮。  
+3. `Do something else`，然后选择“确定”  按钮。  
   
      请注意，已将这两个条目添加到“查询和更新数据”  列表，如下图所示。  
   

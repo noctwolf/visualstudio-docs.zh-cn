@@ -120,7 +120,7 @@ ms.locfileid: "66316341"
 
 ```
 
- 提供的信息[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素保持不变。  **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件。
+ 提供的信息[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)元素保持不变。 **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件。
 
  下面是由 Visual Studio 2015 创建的默认项.vstemplate 文件：
 
@@ -172,7 +172,7 @@ ms.locfileid: "66316341"
 </VSTemplateManifest>
 ```
 
- 提供的信息 **\<TemplateData >** 元素保持不变。  **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件
+ 提供的信息 **\<TemplateData >** 元素保持不变。 **\<VSTemplateContainer >** 元素指向关联的模板的.vstemplate 文件
 
  有关.vstman 文件的不同元素的详细信息，请参阅[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
