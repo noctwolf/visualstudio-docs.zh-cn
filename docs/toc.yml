@@ -126,8 +126,8 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-                - name: 包有效负载更改
-                  href: install/changed-payloads.md
+            - name: 包有效负载更改
+              href: install/changed-payloads.md
             - name: Visual Studio 内部版本号和发布日期
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: 在 Azure 虚拟机中使用 Visual Studio
