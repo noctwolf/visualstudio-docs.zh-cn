@@ -84,18 +84,18 @@ ms.locfileid: "63440371"
 
 |Excel|字|
 |-----------|----------|
-|Excel 工作簿 (*.xlsx*)<br /><br /> 启用宏的 Excel 的工作簿 (*.xlsm*)<br /><br /> Excel 二进制工作簿 (*.xlsb*)<br /><br /> Excel 97-2003 工作簿 (*.xls*)<br /><br /> Excel 模板 (*.xltx*)<br /><br /> Excel 的启用宏的模板 (*.xltm*)<br /><br /> Excel 97-2003 模板 (*.xlt*)|Word 文档 (*.docx*)<br /><br /> Word 的启用宏的文档 (*.docm*)<br /><br /> Word 97-2003 文档 (*.doc*)<br /><br /> Word 模板 (*.dotx*)<br /><br /> Word 的启用宏的模板 (*.dotm*)<br /><br /> Word 97-2003 模板 (*.dot*)|
+|Excel 工作簿 ( *.xlsx*)<br /><br /> 启用宏的 Excel 的工作簿 ( *.xlsm*)<br /><br /> Excel 二进制工作簿 ( *.xlsb*)<br /><br /> Excel 97-2003 工作簿 ( *.xls*)<br /><br /> Excel 模板 ( *.xltx*)<br /><br /> Excel 的启用宏的模板 ( *.xltm*)<br /><br /> Excel 97-2003 模板 ( *.xlt*)|Word 文档 ( *.docx*)<br /><br /> Word 的启用宏的文档 ( *.docm*)<br /><br /> Word 97-2003 文档 ( *.doc*)<br /><br /> Word 模板 ( *.dotx*)<br /><br /> Word 的启用宏的模板 ( *.dotm*)<br /><br /> Word 97-2003 模板 ( *.dot*)|
 
- 只应为格式受支持的文档设计托管代码扩展。 否则，在应用程序中打开文档时，可能无法引发某些事件。 例如，<xref:Microsoft.Office.Tools.Excel.Workbook.Open>工作簿保存为 Excel XML 电子表格格式或网页中使用托管的代码扩展时不会引发事件 (*.htm*;*.html*) 格式。
+ 只应为格式受支持的文档设计托管代码扩展。 否则，在应用程序中打开文档时，可能无法引发某些事件。 例如，<xref:Microsoft.Office.Tools.Excel.Workbook.Open>工作簿保存为 Excel XML 电子表格格式或网页中使用托管的代码扩展时不会引发事件 ( *.htm*; *.html*) 格式。
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>对具有.xml 文件扩展名的 Word 文档的支持
  文档级项目模板不允许基于下列文件格式创建项目：
 
-- Word XML 文档 (*\*xml*)。
+- Word XML 文档 ( *\*xml*)。
 
-- Word 2003 XML 文档 (*\*xml*)。
+- Word 2003 XML 文档 ( *\*xml*)。
 
-  如果希望最终用户在这些文件格式中使用自定义项，请生成并部署使用上表中指定的某个受支持文件格式的自定义项。 在安装后自定义项，最终用户可以保存该文档在 Word XML 文档 (*\*xml*) 格式或 Word 2003 XML 文档 (*\*xml*) 格式，并自定义项将继续按预期方式工作。
+  如果希望最终用户在这些文件格式中使用自定义项，请生成并部署使用上表中指定的某个受支持文件格式的自定义项。 在安装后自定义项，最终用户可以保存该文档在 Word XML 文档 ( *\*xml*) 格式或 Word 2003 XML 文档 ( *\*xml*) 格式，并自定义项将继续按预期方式工作。
 
 ## <a name="Components"></a> 自定义项的组件
  自定义项的主要组成部分是文档和程序集。 除了这些组成部分外，还有一些其他部件在 Microsoft Office 应用程序发现并加载自定义项的过程中扮演着重要角色。
@@ -139,7 +139,7 @@ ms.locfileid: "63440371"
 
 8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将自定义项程序集加载到应用程序域中。
 
-9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将在自定义项程序集中调用 **Startup** 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将在自定义项程序集中调用 **Startup** 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)

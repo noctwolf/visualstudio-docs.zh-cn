@@ -18,7 +18,7 @@ ms.lasthandoff: 05/15/2019
 ms.locfileid: "65686935"
 ---
 # <a name="extending-the-toolbox"></a>扩展工具箱
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供了一系列对象，这些对象通过 IDE 拖放机制为编辑器和设计器提供各种功能。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供了一系列对象，这些对象通过 IDE 拖放机制为编辑器和设计器提供各种功能。  
   
  VSPackage 与 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱**联合使用有两种基本方式：  
   
