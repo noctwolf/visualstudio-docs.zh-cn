@@ -1,5 +1,5 @@
 ---
-title: 使用多种服务配置来配置 Azure 项目 | Microsoft Docs
+title: 使用多种服务配置来配置 Azure 项目
 description: 了解如何通过更改 ServiceDefinition.csdef、ServiceConfiguration.Local.cscfg 和 ServiceConfiguration.Cloud.cscfg 文件来配置 Azure 云服务项目。
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555293"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260654"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>使用多种服务配置来配置 Visual Studio 中的 Azure 项目
 

@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735874abd1f62ecf121713a18ab05b58d20d908e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686085"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263740"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>将现有的应用程序更新到 MSBuild 15
 
@@ -71,15 +71,17 @@ MSBuild 包的主要版本和次要版本须低于或等于希望支持的 Visua
 
 生成项目并检查输出目录，以确保它不包含任何 Microsoft.Build.\*.dll 程序集（除 Microsoft.Build.Locator.dll 以外，它在下一步中添加）。
 
-### <a name="add-package-reference"></a>添加包引用
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>为 Microsoft.Build.Locator 添加包引用
 
-向 [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/) 添加 NuGet 包引用。
+为 [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/) 添加 NuGet 包引用。
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+请勿为 Microsoft.Build.Locator 包指定 `ExcludeAssets=runtime`。
 
 ### <a name="register-instance-before-calling-msbuild"></a>在调用 MSBuild 之前注册实例
 

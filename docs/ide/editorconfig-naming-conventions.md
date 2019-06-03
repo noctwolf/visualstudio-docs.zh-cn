@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847365"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261967"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -209,6 +209,6 @@ dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 
 ## <a name="see-also"></a>请参阅
 
+- [Roslyn 命名约定](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [.NET 语言和格式设置约定](../ide/editorconfig-code-style-settings-reference.md)
 - [创建可移植的自定义编辑器选项](../ide/create-portable-custom-editor-options.md)
-- [.NET 编译器平台的 .editorconfig 文件](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

@@ -1,5 +1,5 @@
 ---
-title: 将探查器附加到 ASP.NET Web 应用以收集应用统计信息
+title: 将探查器附加到 ASP.NET Web 应用程序，以获取应用程序统计信息
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 15c8fad4971e81ae91aebc8ad56be13ff0e33754
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4ff01635e754f2f615247e998aad765c1b366e69
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439554"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261425"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 ASP.NET Web 应用程序，以及如何使用采样方法收集性能统计信息。

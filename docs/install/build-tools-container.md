@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974223"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177630"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -64,12 +64,12 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 1. [将“基本”](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)按钮切换为“高级”。
 
-1. 添加以下 JSON 数组属性以将磁盘空间增大到 120 GB（足以在占用空间增多的情况下用于生成工具）。
+1. 添加以下 JSON 数组属性以将磁盘空间增大到 127 GB（足以在占用空间增多的情况下用于生成工具）。
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
@@ -83,10 +83,12 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
      "debug": true,
      "experimental": true,
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
+
+   若要查看更多配置选项和提示，请参阅 [Windows 上的 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)。
 
 1. 单击“应用”。
 
@@ -100,17 +102,17 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 1. 在提升的命令提示符处，编辑“%ProgramData%\Docker\config\daemon.json”（或是指定为 `dockerd --config-file` 的任何内容）。
 
-1. 添加以下 JSON 数组属性以将磁盘空间增大到 120 GB（足以在占用空间增多的情况下用于生成工具）。
+1. 添加以下 JSON 数组属性以将磁盘空间增大到 127 GB（足以在占用空间增多的情况下用于生成工具）。
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=120G"
      ]
    }
    ```
 
-   此属性会添加到你已拥有的任何内容。
+   此属性会添加到你已拥有的任何内容。 若要查看更多配置选项和提示，请参阅 [Windows 上的 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)。
  
 1. 保存并关闭文件。
 
@@ -148,8 +150,8 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.7.2.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -175,11 +177,11 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    ```
 
    > [!WARNING]
-   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.7.1 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
+   > 如果映像直接基于 microsoft/windowsservercore 或 mcr.microsoft.com/windows/servercore（请参阅 [Microsoft 将联合容器目录](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)），可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.7.1 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
    >
    > 无法在 mcr\.microsoft\.com\/windows\/servercore:1809 或更高版本上正常安装 Visual Studio 2017 版本 15.8 或更低版本（任何产品）。 不显示任何错误信息。
    >
-   > 有关详细信息，请参阅[容器的已知问题](build-tools-container-issues.md)。
+   > 请参阅 [Windows 容器版本兼容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)，以了解哪些主机操作系统版本支持哪些容器操作系统版本，并请参阅[容器的已知问题](build-tools-container-issues.md)了解已知问题。
 
    ::: moniker-end
 
@@ -188,8 +190,8 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -217,7 +219,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    > [!WARNING]
    > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.7.1 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
    >
-   > 有关详细信息，请参阅[容器的已知问题](build-tools-container-issues.md)。
+   > 请参阅 [Windows 容器版本兼容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)，以了解哪些主机操作系统版本支持哪些容器操作系统版本，并请参阅[容器的已知问题](build-tools-container-issues.md)了解已知问题。
 
    ::: moniker-end
 

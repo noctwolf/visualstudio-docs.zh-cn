@@ -1,5 +1,5 @@
 ---
-title: 从命令行使用分析方法收集性能数据 | Microsoft Docs
+title: 使用命令行分析方法获取性能数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831435"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263829"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>使用分析方法通过命令行收集性能数据
 选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如进行分析的应用程序的类型、要使用的分析方法以及是以本机还是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 代码编码目标应用程序。

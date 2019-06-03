@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
 searchscope: VS Subscription
-ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679316"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177547"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
@@ -96,11 +96,14 @@ ms.locfileid: "65679316"
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>问：我需要为这些变化做些什么？
 答：不是。  你可以原样不变地保有和管理订阅。
 
-#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-my-company-owns"></a>问：如果我想增加公司拥有的订阅数量，该怎么办？
-答：管理员仍然可以通过访问 [https://manage.visualstudio.com](https://manage.visualstudio.com) 并按照本文中的说明来增加订阅数量。
+#### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户增加订阅数量，该怎么办？
 
-#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-my-company-owns"></a>问：如果我想减少公司拥有的订阅数量，该怎么办?
-答：管理员仍然可以通过访问 [https://manage.visualstudio.com](https://manage.visualstudio.com) 并遵循本文中减少订阅数的说明来减少订阅数量。
+答：在特定月份购买的年度订阅会立即收取全年费用，并且有效期为一整年。 因此，管理员只能修改当前购买月份的许可证数量，其有效期为 1 年，计费时间为 1 年。 在购买月份之外，不再增加订阅数量。
+
+#### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户减少订阅数量，该怎么办？
+
+答：管理员仍然可以通过访问 https://manage.visualstudio.com 并遵循本文中减少订阅数的说明来减少订阅数量。 系统将不会生成按比例计费的额度。 有关退款，需要联系 Azure 账单团队。
+
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>问：如果我取消订阅，以后还能再买一份年度云订阅吗？
 答：虽然无法再买一份云年度订阅，但是可以选择购买 Visual Studio 订阅。  更多信息请访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。

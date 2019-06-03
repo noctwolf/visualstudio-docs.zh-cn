@@ -1,5 +1,5 @@
 ---
-title: 将探查器附加到 ASP.NET 应用以收集并发数据
+title: 将探查器附加到 .ASP.NET 应用以收集并发数据
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4911b41058c2546ea373302d326535be775877ba
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974263"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261572"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集并发数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 ASP.NET Web 应用程序并收集进程和线程并发数据。

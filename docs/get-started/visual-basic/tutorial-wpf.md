@@ -1,8 +1,8 @@
 ---
-title: 教程：在 Visual Basic 中通过 Windows Presentation Foundation (WPF) 创建 Hello World 应用
+title: 使用 Visual Basic 和 WPF 生成 Hello World 应用
 description: 使用 Visual Basic 在 Visual Studio 中通过 Windows Presentation Foundation (WPF) UI 框架创建简单的 Windows Desktop .NET 应用。
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f56482dbbe76722e8b8d55fad01d283de2dc113e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965714"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263618"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
@@ -131,7 +131,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 XAML 标记应如下面的示例所示：
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>自定义文本块中的文本
@@ -302,5 +302,16 @@ IsChecked="True"
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 2017 中的新增功能](../../ide/whats-new-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Visual Studio 2017 中的新增功能](../../ide/whats-new-visual-studio-2017.md)
 - [工作效率提示](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 2019 中的新增功能](../../ide/whats-new-visual-studio-2019.md)
+- [工作效率提示](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end
