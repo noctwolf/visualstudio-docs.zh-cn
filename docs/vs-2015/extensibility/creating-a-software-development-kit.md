@@ -106,7 +106,7 @@ ms.locfileid: "65689990"
   
 2. 引用文件夹： 包含 Api 的二进制文件。 这些可能是 Windows 元数据 (WinMD) 文件或程序集。  
   
-3. Redist 文件夹： 所需的运行时/调试，应获取打包为用户的应用程序的一部分的文件。 所有二进制文件应放置在 \redist 下\\< 配置\>\\< a c h\>，和二进制名称应采用以下格式，以确保唯一性： **\<公司 >。\<产品 >。\<用途 >。\<扩展 >**。 例如，Microsoft.Cpp.Build.dll。 与其他 sdk （例如，javascript、 css、 pri、 xaml、 png 和 jpg 文件） 的文件名可能发生冲突的名称的所有文件应都置于 \redist 下方\\< 配置\>\\< a c h\> \\< sdkname\>\ 除了与 XAML 相关联的文件控制。 这些文件应置于 \redist 下方\\< 配置\>\\< a c h\>\\< componentname\>\\。  
+3. Redist 文件夹： 所需的运行时/调试，应获取打包为用户的应用程序的一部分的文件。 所有二进制文件应放置在 \redist 下\\< 配置\>\\< a c h\>，和二进制名称应采用以下格式，以确保唯一性： **\<公司 >。\<产品 >。\<用途 >。\<扩展 >** 。 例如，Microsoft.Cpp.Build.dll。 与其他 sdk （例如，javascript、 css、 pri、 xaml、 png 和 jpg 文件） 的文件名可能发生冲突的名称的所有文件应都置于 \redist 下方\\< 配置\>\\< a c h\> \\< sdkname\>\ 除了与 XAML 相关联的文件控制。 这些文件应置于 \redist 下方\\< 配置\>\\< a c h\>\\< componentname\>\\。  
   
 4. DesignTime 文件夹： 文件在仅前的运行/调试所需的时间，不应打包为用户的应用程序的一部分。 这些可能是 XML 文档、 库、 标头中，工具箱设计时二进制文件、 MSBuild 项目等。 适用于消耗的本机项目必须进行的任何 SDK *SDKName*.props 文件。 下面显示了此类型的文件的示例。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "65689990"
   
     ```  
   
-     引用文件旁边放置 XML 参考文档。 例如，XML 参考文档**\References\\< config\>\\< a c h\>\sample.dll**程序集是**\References\\< config\>\\< a c h\>\sample.xml**，并且该文档的本地化的版本**\References\\< 配置\>\\<arch\>\\< 区域设置\>\sample.xml**。  
+     引用文件旁边放置 XML 参考文档。 例如，XML 参考文档 **\References\\< config\>\\< a c h\>\sample.dll**程序集是 **\References\\< config\>\\< a c h\>\sample.xml**，并且该文档的本地化的版本 **\References\\< 配置\>\\<arch\>\\< 区域设置\>\sample.xml**。  
   
 5. 配置文件夹： 三个子文件夹：调试、 零售版和 CommonConfiguration。 SDK 作者可以放置其下 CommonConfiguration 文件时应使用相同的 SDK 文件集，而不考虑针对 SDK 使用者的配置。  
   
@@ -181,7 +181,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
   
 10. SupportsMultipleVersions： 如果此属性设置为**错误**或**警告**，MSBuild 指示在同一个项目不能引用相同的 SDK 系列的多个版本。 如果此属性不存在或设置为**允许**，MSBuild 不会显示此类型的错误或警告。  
   
-11. AppX： 指定在磁盘上的 Windows 组件库的应用程序包的路径。 本地调试期间，此值被传递给 Windows 组件库的注册组件。 文件名称的命名约定**\<公司 >。\<产品 >。\<体系结构 >。\<配置 >。\<版本 >.appx**。 如果它们不应用于 Windows 组件库，配置和体系结构是可选的属性名称和属性值中。 此值是仅适用于 Windows 组件库。  
+11. AppX： 指定在磁盘上的 Windows 组件库的应用程序包的路径。 本地调试期间，此值被传递给 Windows 组件库的注册组件。 文件名称的命名约定 **\<公司 >。\<产品 >。\<体系结构 >。\<配置 >。\<版本 >.appx**。 如果它们不应用于 Windows 组件库，配置和体系结构是可选的属性名称和属性值中。 此值是仅适用于 Windows 组件库。  
   
 12. CopyRedistToSubDirectory： 指定应将 \redist 文件夹下的文件复制相对于应用程序包的根目录 (即**包位置**在创建应用程序包向导中选择) 和运行时布局的根元素。 默认位置为应用程序包和 F5 布局的根。  
   
