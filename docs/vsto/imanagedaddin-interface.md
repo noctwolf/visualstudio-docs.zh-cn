@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. 应用程序通过在以下注册表项下查找项来发现 VSTO 外接程序：
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<应用程序名称>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<应用程序名称>* \Addins\\**
 
     此注册表项下的每一项都是 VSTO 外接程序的唯一 ID。 通常情况下，这是 VSTO 外接程序程序集的名称。
 
 2. 应用程序在每个 VSTO 外接程序的注册表项下查找 `Manifest` 项。
 
-    托管的 VSTO 加载项可存储在清单中的完整路径`Manifest`下的项**HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<应用程序名称 >_ \Addins\\_\<外接程序 ID >_**。 清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。
+    托管的 VSTO 加载项可存储在清单中的完整路径`Manifest`下的项**HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<应用程序名称 >_ \Addins\\ _\<外接程序 ID>_ **。 清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。
 
 3. 如果应用程序找到 `Manifest` 项，便会尝试加载托管 VSTO 外接程序加载程序组件。 应用程序会尝试创建实现 IManagedAddin 接口的 COM 对象。
 
@@ -70,7 +70,7 @@ interface IManagedAddin : IUnknown
 
 4. 应用程序调用 [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法，并传入 `Manifest` 项的值。
 
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法执行加载 VSTO 外接程序所需的任务，例如为正在加载的 VSTO 外接程序配置应用程序域和安全策略。
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) 方法执行加载 VSTO 外接程序所需的任务，例如为正在加载的 VSTO 外接程序配置应用程序域和安全策略。
 
    有关注册表的详细信息的密钥，Microsoft Office 应用程序用于发现和加载托管 VSTO 外接程序，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。
 
