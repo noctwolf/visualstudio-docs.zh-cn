@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929134"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462139"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>编写和调试正在运行的 XAML 代码与 XAML 在 Visual Studio 中的热重新加载
 
@@ -47,7 +47,7 @@ XAML 热重新加载是在这些方案中尤其有用：
 |如在应用程序页/窗口中的资源字典中创建的资源对象或*App.xaml*|不支持|支持|示例： 添加```SolidColorBrush```到资源字典中用作```StaticResource```。</br>注意:静态资源、 样式转换器和其他元素写入到的资源字典时可以是应用使用使用 XAML 热重新加载。 不支持仅创建资源。</br> 更改资源字典```Source```属性。| 
 |应用运行时向项目添加新控件、 类、 windows 或其他文件|不支持|不支持|None|
 |管理 NuGet 包 （添加/删除/更新包）|不支持|不支持|None|
-|更改数据的绑定，使用 {x： 绑定} 标记扩展|不适用|Visual Studio 2019 和更高版本中受支持|Visual Studio 2018 或早期版本中不支持|
+|更改数据的绑定，使用 {x： 绑定} 标记扩展|不适用|Visual Studio 2019 和更高版本中受支持|Visual Studio 2017 或早期版本中不支持|
 
 ## <a name="error-messages"></a>错误消息
 
