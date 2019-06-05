@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998059"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500975"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安装 Visual Studio 2017 for Mac
 
@@ -37,11 +37,11 @@ ms.locfileid: "62998059"
 
 1. 从 [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) 下载 Visual Studio for Mac
 
-2. 下载安装包后，单击“VisualStudioForMacInstaller.dmg”文件装载安装程序，然后通过双击徽标运行它，如下图所示：
+2. 下载安装包后，单击“VisualStudioForMacInstaller.dmg”文件装载安装程序，然后通过双击徽标运行它，如下图所示： 
 
    ![安装程序对话框](media/installer-image1.png)
 
-3. 系统可能会通过警报对话框发出提示，如下图所示。 在此情况下，请单击“打开”：
+3. 系统可能会通过警报对话框发出提示，如下图所示。 在此情况下，请单击“打开”： 
 
    ![警报对话框](media/installer-image2.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "62998059"
 
    ![评估系统](media/installer-image3.png)
 
-5. 之后，会出现一个警报对话框，要求确认隐私和许可条款。 按“继续”按钮接受条款：
+5. 之后，会出现一个警报对话框，要求确认隐私和许可条款。 按“继续”按钮接受条款： 
 
    ![许可对话框](media/installer-image4.png)
 
@@ -60,20 +60,20 @@ ms.locfileid: "62998059"
    如果不希望安装所有平台，请参阅以下指南，它们有助于确定要安装的平台：
 
    * **使用 Xamarin 的应用**：
-      - Xamarin.Forms - 选择“Android”和“iOS”平台。
-      - 仅限 iOS - 选择“iOS”平台（请注意，需要安装 [Xcode](https://developer.apple.com/xcode/)）。
-      - 仅限 Android - 选择“Android”平台（请注意，还应选择相关依赖项）。
-      - 仅限 Mac - 选择“macOS”平台（请注意，需要安装 [Xcode](https://developer.apple.com/xcode/)）。
-      - 完全跨平台的 Xamarin 应用 - 选择“Android”、“iOS”和“macOS”平台。
-   * **.NET Core 应用程序** - 选择“.NET Core”平台。
-   * **ASP.NET Core Web 应用程序** - 选择“.NET Core”平台。
-   * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](/visualstudio/macm/setup-vsmac-tools-unity)。
+      - Xamarin.Forms - 选择“Android”  和“iOS”  平台。
+      - 仅限 iOS - 选择“iOS”  平台（请注意，需要安装 [Xcode](https://developer.apple.com/xcode/)  ）。
+      - 仅限 Android - 选择“Android”  平台（请注意，还应选择相关依赖项）。
+      - 仅限 Mac - 选择“macOS”  平台（请注意，需要安装 [Xcode](https://developer.apple.com/xcode/)  ）。
+      - 完全跨平台的 Xamarin 应用 - 选择“Android”  、“iOS”  和“macOS”  平台。
+   * **.NET Core 应用程序** - 选择“.NET Core”  平台。
+   * **ASP.NET Core Web 应用程序** - 选择“.NET Core”  平台。
+   * **跨平台 Unity 游戏开发** - 除 Visual Studio for Mac 之外，无需安装其他任何平台。 若要详细了解如何安装 Unity 扩展，请参阅 [Unity 安装指南](/visualstudio/mac/setup-vsmac-tools-unity)。
 
    此安装屏幕显示每个组件的版本和大小。 可单击每个组件查看该组件的依赖项列表（对于 Android），该组件下载的其他包（对于 .NET Core），或任何其他所需应用程序（对于 iOS 和 macOS）：
 
    ![Android 附加依赖项](media/installer-image6.png)
 
-7. 确认选择后，选择“安装和更新”按钮开始安装过程。
+7. 确认选择后，选择“安装和更新”按钮开始安装过程  。
 
 8. 安装程序会启动所选项的下载和安装过程：
 
@@ -87,7 +87,7 @@ ms.locfileid: "62998059"
 
    ![输入权限以继续执行安装程序](media/installer-image10.png)
 
-10. 安装成功后，可通过按“开始”，开始在 Visual Studio 中开发应用：
+10. 安装成功后，可通过按“开始”，开始在 Visual Studio 中开发应用： 
 
     ![打开 Visual Studio](media/installer-image11.png)
 

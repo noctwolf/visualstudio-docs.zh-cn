@@ -10,16 +10,16 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971300"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431737"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
-Microsoft Fakes 将应用的其余部分替换为存根或垫片，有助于隔离受测代码。 这些是受你的测试控制的小段代码。 通过隔离接受测试的代码，你将会知道，如果测试失败，原因就在这里而不是其他地方。 即使应用程序的其他部分不起作用，存根和填充码也能让你测试代码。
+Microsoft Fakes 将应用的其余部分替换为存根  或垫片  ，有助于隔离受测代码。 这些是受你的测试控制的小段代码。 通过隔离接受测试的代码，你将会知道，如果测试失败，原因就在这里而不是其他地方。 即使应用程序的其他部分不起作用，存根和填充码也能让你测试代码。
 
 Fakes 有两种风格：
 
@@ -41,7 +41,7 @@ Fakes 有两种风格：
 ## <a name="choose-between-stub-and-shim-types"></a>在存根和填充码类型之间进行选择
 通常，你将 Visual Studio 项目视为一个组件，这是因为你同时开发和更新这些类。 对于该项目对你的解决方案中的其他项目所作的调用或对该项目引用的其他程序集所作的调用，应考虑使用存根和填充码。
 
-一般原则是，为在 Visual Studio 解决方案中进行的调用使用存根，并为对其他引用的程序集的调用使用填充码。 这是因为在你自己的解决方案中，通过按照存根要求的方式定义接口来分离组件是一个很好的做法。 但是，外部程序集（如 System.dll）通常没有单独的接口定义，因此必须改用填充码。
+一般原则是，为在 Visual Studio 解决方案中进行的调用使用存根，并为对其他引用的程序集的调用使用填充码。 这是因为在你自己的解决方案中，通过按照存根要求的方式定义接口来分离组件是一个很好的做法。 但是，外部程序集（如 System.dll）通常没有单独的接口定义，因此必须改用填充码  。
 
 其他需要注意的事项还有：
 
@@ -69,9 +69,7 @@ Fakes 有两种风格：
      相反，应该定义可由另一个组件实现的接口以及可由存根出于测试目实现的接口：
 
     ```csharp
-    public int GetContosoPrice(IStockFeed feed)
-    { return feed.GetSharePrice("COOO"); }
-
+    public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
     ```
 
     ```vb
@@ -83,9 +81,9 @@ Fakes 有两种风格：
 
 2. **添加 Fakes 程序集**
 
-    1. 在解决方案资源管理器中，展开测试项目的引用列表。 如果使用的是 Visual Basic，必须选择“显示所有文件”才能看到引用列表。
+    1. 在解决方案资源管理器中，展开测试项目的引用列表  。 如果使用的是 Visual Basic，必须选择“显示所有文件”  才能看到引用列表。
 
-    2. 选择对其中定义了接口（例如 IStockFeed）的程序集的引用。 在此引用的快捷菜单上，选择“添加 Fakes 程序集”。
+    2. 选择对其中定义了接口（例如 IStockFeed）的程序集的引用。 在此引用的快捷菜单上，选择“添加 Fakes 程序集”  。
 
     3. 重新生成解决方案。
 
@@ -170,9 +168,9 @@ Fakes 有两种风格：
 
 1. **添加 Fakes 程序集**
 
-     在解决方案资源管理器中，打开单元测试项目的引用，然后选择对包含要虚设的方法的程序集的引用。 在此示例中，`DateTime` 类位于 *System.dll* 中。  若要查看 Visual Basic 项目中的引用，请选择“显示所有文件”。
+     在解决方案资源管理器中，打开单元测试项目的引用，然后选择对包含要虚设的方法的程序集的引用  。 在此示例中，`DateTime` 类位于 *System.dll* 中。  若要查看 Visual Basic 项目中的引用，请选择“显示所有文件”  。
 
-     选择“添加 Fakes 程序集”。
+     选择“添加 Fakes 程序集”  。
 
 2. **在 ShimsContext 中插入垫片**
 

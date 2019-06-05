@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944012"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402074"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 
@@ -43,19 +43,19 @@ ms.locfileid: "62944012"
 
 1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏上，选择“文件”>“打开”>“在源代码管理中打开”。
+1. 在顶部菜单栏上，选择“文件”>“打开”>“在源代码管理中打开”    。
 
-   随即打开“团队资源管理器 - 连接”窗格。
+   随即打开“团队资源管理器 - 连接”  窗格。
 
     ![Visual Studio IDE 内的“团队资源管理器”窗口](./media/open-proj-repo-team-explorer.png)
 
-1. 在“本地 Git 存储库”部分中，选择“克隆”。
+1. 在“本地 Git 存储库”  部分中，选择“克隆”  。
 
     ![从“本地 Git 存储库”部分中选择“克隆”](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. 在“输入要克隆的 Git 存储库的 URL”框中，键入或粘贴存储库的 URL，然后按 Enter。 （可能会收到登录到 GitHub 的提示；如果是这样，请按照提示操作。）
+1. 在“输入要克隆的 Git 存储库的 URL”框中，键入或粘贴存储库的 URL，然后按 Enter  。 （可能会收到登录到 GitHub 的提示；如果是这样，请按照提示操作。）
 
-   Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 随即显示一条消息：“单击上面的‘解决方案和文件夹’以查看解决方案列表”。 选择“解决方案和文件夹”。
+   Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 随即显示一条消息：“单击上面的‘解决方案和文件夹’以查看解决方案列表”。  选择“解决方案和文件夹”  。
 
    ![从解决方案资源管理器中选择“解决方案和文件夹”](./media/open-proj-repo-github-solutions-folders.png)
 
@@ -77,11 +77,11 @@ ms.locfileid: "62944012"
 
 1. 打开 Visual Studio 2019。
 
-1. 在“开始”窗口上，选择“克隆或签出代码”。
+1. 在“开始”窗口上，选择“克隆或签出代码”  。
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. 输入或键入存储库位置，然后选择“克隆”。
+1. 输入或键入存储库位置，然后选择“克隆”  。
 
    ![查看“克隆或签出代码”窗口](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
@@ -101,30 +101,30 @@ ms.locfileid: "62944012"
 
 1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏上，选择“文件”>“打开”>“在源代码管理中打开”。
+1. 在顶部菜单栏上，选择“文件”>“打开”>“在源代码管理中打开”    。
 
-   随即打开“团队资源管理器 - 连接”窗格。
+   随即打开“团队资源管理器 - 连接”  窗格。
 
     ![Visual Studio IDE 内的“团队资源管理器”窗口](./media/open-proj-repo-team-explorer.png)
 
 1. 可通过两种方式连接到 Azure DevOps 存储库：
 
-      - 在“托管服务提供程序”部分中，选择“连接...”。
+      - 在“托管服务提供程序”  部分中，选择“连接...”  。
 
         ![Visual Studio IDE 内的“团队资源管理器”窗口的“托管服务提供程序”部分](./media/open-proj-repo-azure-devops.png)
 
-      - 在“管理连接”下拉列表中，选择“连接到项目...”。
+      - 在“管理连接”  下拉列表中，选择“连接到项目...”  。
 
         ![Visual Studio IDE 内的“团队资源管理器”窗口的“管理连接”部分](./media/open-proj-repo-azuredevops-manage-connections.png)
 
-1. 在“连接到项目”对话框中，选择要连接的存储库，然后选择“克隆”。
+1. 在“连接到项目”  对话框中，选择要连接的存储库，然后选择“克隆”  。
 
       ![从 Visual Studio 生成的“连接到项目”对话框](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > 列表框中显示的内容取决于你有权访问的 Azure DevOps 存储库。
 
-1. Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 随即显示一条消息：“单击上面的‘解决方案和文件夹’以查看解决方案列表”。 选择“解决方案和文件夹”。
+1. Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 随即显示一条消息：“单击上面的‘解决方案和文件夹’以查看解决方案列表”。  选择“解决方案和文件夹”  。
 
       ![Visual Studio 中团队资源管理器中的“解决方案和文件夹”通知](./media/open-proj-repo-solutions-folders.png)
 
@@ -138,34 +138,34 @@ ms.locfileid: "62944012"
 
 1. 打开 Visual Studio 2019。
 
-1. 在“开始”窗口上，选择“克隆或签出代码”。
+1. 在“开始”窗口上，选择“克隆或签出代码”  。
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/clone-checkout-code-dark.png)
 
-1. 在“浏览存储库”部分中，选择“Azure DevOps”。
+1. 在“浏览存储库”部分中，选择“Azure DevOps”   。
 
    ![查看“克隆或签出代码”窗口](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
 
    如果看到登录窗口，请登录帐户。
 
-1. 在“连接到项目”对话框中，选择要连接的存储库，然后选择“克隆”。
+1. 在“连接到项目”  对话框中，选择要连接的存储库，然后选择“克隆”  。
 
       ![从 Visual Studio 生成的“连接到项目”对话框](./media/open-proj-azure-devops-connect-cloud-clone.png)
 
     > [!NOTE]
     > 列表框中显示的内容取决于你有权访问的 Azure DevOps 存储库。
 
-   克隆完成后，Visual Studio 会打开“团队资源管理器”并显示通知。
+   克隆完成后，Visual Studio 会打开“团队资源管理器”并显示通知  。
 
      ![克隆完成后 Visual Studio 中的“团队资源管理器”窗口](./media/vs-2019/clone-complete-azure-devops.png)
 
-1. 若要查看文件夹和文件，请选择“显示文件夹视图”链接。
+1. 若要查看文件夹和文件，请选择“显示文件夹视图”链接  。
 
      ![克隆完成后 Visual Studio 中“团队资源管理器”窗口的“解决方案”部分](./media/vs-2019/show-folder-view-azure-devops.png)
 
-     Visual Studio 随即打开“解决方案资源管理器”。
+     Visual Studio 随即打开“解决方案资源管理器”  。
 
-1. 选择“解决方案和文件夹”链接，搜索要打开的解决方案文件（具体而言，.sln 文件）。
+1. 选择“解决方案和文件夹”链接，搜索要打开的解决方案文件（具体而言，.sln 文件）  。
 
       ![Visual Studio 中团队资源管理器中的“解决方案和文件夹”通知](./media/open-proj-repo-solutions-folders.png)
 
@@ -177,11 +177,11 @@ ms.locfileid: "62944012"
 
 如果你已准备好使用 Visual Studio 进行编码，请深入了解以下特定于语言的任何教程：
 
-- Visual Studio 教程 | [C#](./csharp/index.yml)
-- Visual Studio 教程 | [Visual Basic](./visual-basic/index.yml)
-- Visual Studio 教程 | C++[](/cpp/get-started/)
-- [Visual Studio 教程 | Python](/visualstudio/python/)
-- Visual Studio 教程 | [JavaScript、TypeScript 和 Node.js](/visualstudio/javascript/)
+- Visual Studio 教程 | [C#  ](./csharp/index.yml)
+- Visual Studio 教程 | [Visual Basic  ](./visual-basic/index.yml)
+- Visual Studio 教程 | C++[  ](/cpp/get-started/tutorial-console-cpp)
+- [Visual Studio 教程 | Python  ](/visualstudio/python/)
+- Visual Studio 教程 | [JavaScript、TypeScript 和 Node.js    ](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>请参阅
 

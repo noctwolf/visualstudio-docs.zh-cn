@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213778"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501123"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>在维修基线上更新 Visual Studio
 
-Visual Studio 2019 将在其[产品生命周期](/visualstudio/productinfo/release-rhythm.md#release-channel-updates)内频繁提供更新。 其中包括可能包含新功能和组件的次要版本更新（如：从 16.0 更新到 16.1），以及仅包含关键问题的目标修补程序的维护更新（如：从 16.0.4 更新到 16.0.5）。 
+Visual Studio 2019 将在其[产品生命周期](/visualstudio/productinfo/release-rhythm#release-channel-updates)内频繁提供更新。 其中包括可能包含新功能和组件的次要版本更新（如：从 16.0 更新到 16.1），以及仅包含关键问题的目标修补程序的维护更新（如：从 16.0.4 更新到 16.0.5）。 
 
-企业管理员可以选择将其客户端保管在维护基线上，在发布下一个维护基线后的一年内将使用维护更新支持该维护基线。 这样开发人员和管理员即可以灵活地采用新功能、bug 修补程序或新次要更新包含的组件。 首个维护基线为 16.0.x。 有关详细信息，请参阅[企业版和专业版客户的支持选项](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers)。
+企业管理员可以选择将其客户端保管在维护基线上，在发布下一个维护基线后的一年内将使用维护更新支持该维护基线。 这样开发人员和管理员即可以灵活地采用新功能、bug 修补程序或新次要更新包含的组件。 首个维护基线为 16.0.x。 有关详细信息，请参阅[企业版和专业版客户的支持选项](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)。
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>如何访问维护基线
 

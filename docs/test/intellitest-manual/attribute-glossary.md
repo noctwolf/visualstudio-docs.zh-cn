@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c5f1883a5d8c09713d520aa934f91b32cbaf388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cb5fcac8f9cc509718648fa9bd6db0f18d01b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978978"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349231"
 ---
 # <a name="attribute-glossary"></a>属性术语表
 
@@ -46,9 +46,9 @@ ms.locfileid: "62978978"
 <a name="pexassumenotnull"></a>
 ## <a name="pexassumenotnull"></a>PexAssumeNotNull
 
-此属性表示控制的值不能为“null”。 可以将其附加到：
+此属性表示控制的值不能为“null”  。 可以将其附加到：
 
-* 参数化测试方法的参数
+* 参数化测试方法的参数 
 
   ```csharp
   // assume foo is not null
@@ -56,7 +56,7 @@ ms.locfileid: "62978978"
   public void SomeTest([PexAssumeNotNull]IFoo foo, ...) {}
   ```
 
-* 字段
+* 字段 
 
   ```csharp
   public class Foo {
@@ -66,7 +66,7 @@ ms.locfileid: "62978978"
   }
   ```
 
-* 类型
+* 类型 
 
   ```csharp
   // never consider null for Foo types
@@ -79,9 +79,9 @@ ms.locfileid: "62978978"
 <a name="pexclass"></a>
 ## <a name="pexclass"></a>PexClass
 
-此属性标记包含“explorations”的类。 它等同于 MSTest TestClassAttribute（或 NUnit TestFixtureAttribute）。 此属性是可选的。
+此属性标记包含“explorations”的类  。 它等同于 MSTest TestClassAttribute（或 NUnit TestFixtureAttribute）   。 此属性是可选的。
 
-标记为 [PexClass](#pexclass) 的类必须采用默认构造类型：
+标记为 [PexClass](#pexclass) 的类必须采用默认构造类型  ：
 
 * 公开导出的类型
 * 默认构造函数
@@ -89,7 +89,7 @@ ms.locfileid: "62978978"
 
 如果类不满足这些要求，系统会报错，浏览失败。
 
-此外，强烈建议使这些类成为“部分”，便于 IntelliTest 生成属于该类但位于单独文件的新类。 此方法可解决因[可见性](input-generation.md#visibility)引起的许多问题，是 C# 中的典型技术。
+此外，强烈建议使这些类成为“部分”，便于 IntelliTest 生成属于该类但位于单独文件的新类  。 此方法可解决因[可见性](input-generation.md#visibility)引起的许多问题，是 C# 中的典型技术。
 
 **其他套件和类别**：
 
@@ -152,7 +152,7 @@ public partial class MyTests {
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>
@@ -205,7 +205,7 @@ public void MyTest(object testParameter)
 
 **示例**
 
-以下测试指定堆栈的构造函数可能会引发 ArgumentOutOfRangeException：
+以下测试指定堆栈的构造函数可能会引发 ArgumentOutOfRangeException   ：
 
 ```csharp
 class Stack {
