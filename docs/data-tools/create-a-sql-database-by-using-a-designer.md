@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569954"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501078"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>创建数据库并在 Visual Studio 中添加表
 
@@ -26,7 +26,19 @@ ms.locfileid: "62569954"
 
 ## <a name="prerequisites"></a>系统必备
 
-若要完成本演练，您必须具有可选**数据存储和处理**在 Visual Studio 中安装的工作负荷。 若要安装它，打开**Visual Studio 安装程序**，然后选择**详细** > **修改**旁边的 Visual Studio 你想要修改的版本 (如果有多个已安装版本）。 上**工作负荷**选项卡上，在**Web 和云**，选择**数据存储和处理**，然后单击**修改**若要添加到工作负荷Visual Studio。
+若要完成本演练，您必须具有可选**数据存储和处理**在 Visual Studio 中安装的工作负荷。 若要安装它，打开**Visual Studio 安装程序**，然后选择**修改**或**详细** > **修改**旁边的版本你想要修改的 visual Studio。
+
+::: moniker range=">=vs-2019"
+
+上**工作负荷**选项卡上，在**其他工具集**，选择**数据存储和处理**，然后单击**修改**若要添加到工作负荷Visual Studio。
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+上**工作负荷**选项卡上，在**Web 和云**，选择**数据存储和处理**，然后单击**修改**若要添加到工作负荷Visual Studio。
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>创建一个项目及本地数据库文件
 
@@ -46,7 +58,7 @@ ms.locfileid: "62569954"
 
 1. 在中**数据源**窗口中，选择**添加新数据源**链接。
 
-   “数据源配置”向导随即打开。
+   “数据源配置”向导随即打开  。
 
 1. 上**选择数据源类型**页上，选择**数据库**，然后选择**下一步**。
 
@@ -56,7 +68,7 @@ ms.locfileid: "62569954"
 
 1. 上**将连接字符串保存到应用程序配置文件**页上，选择**下一步**。
 
-1. 一个**选择数据库对象**页上，你会看到一条消息，指出数据库不包含任何对象。 选择“完成”。
+1. 一个**选择数据库对象**页上，你会看到一条消息，指出数据库不包含任何对象。 选择“完成”  。
 
 ### <a name="view-properties-of-the-data-connection"></a>查看的数据连接属性
 
@@ -76,7 +88,7 @@ ms.locfileid: "62569954"
 
 2. 打开快捷菜单**表**，然后选择**添加新表**。
 
-     “表设计器”打开并显示一个网格，其中有一个默认行，表示所创建表中的一列。 通过向网格中添加行，即可在表中添加列。
+     “表设计器”打开并显示一个网格，其中有一个默认行，表示所创建表中的一列  。 通过向网格中添加行，即可在表中添加列。
 
 3. 在网格中，为下列各个条目添加行：
 
@@ -138,7 +150,7 @@ ms.locfileid: "62569954"
 
      ![在表设计器中添加外键](../data-tools/media/foreignkey.png)
 
-2. 在显示的文本框中，将“ToTable”替换为“Customers”。
+2. 在显示的文本框中，将“ToTable”替换为“Customers”   。
 
 3. 在 T-SQL 的窗格中，更新与以下示例相匹配的最后一行：
 
@@ -169,7 +181,7 @@ ms.locfileid: "62569954"
 6. 添加一些订单数据。
 
     > [!IMPORTANT]
-    > 请确保所有订单 ID 和订单数量是整数，并且每个客户 ID 与 Customers 表中的“CustomerID”列中指定的值匹配。
+    > 请确保所有订单 ID 和订单数量是整数，并且每个客户 ID 与 Customers 表中的“CustomerID”列中指定的值匹配  。
 
 7. 在菜单栏上，选择**文件** > **全部保存**。
 
