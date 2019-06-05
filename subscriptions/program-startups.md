@@ -7,17 +7,17 @@ ms.date: 03/20/2018
 ms.topic: conceptual
 description: 有关通过 Microsoft for Startups 计划提供的订阅的详细信息。
 searchscope: VS Subscription
-ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a3acb216b58ce9a81b8edefed61d779955c0a1d
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007779"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402088"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初创企业提供的 Visual Studio 订阅
 加入 Microsoft for Startups 计划的合格初创企业可以获得 5 个 [Visual Studio Enterprise 月度云订阅](https://visualstudio.microsoft.com/vs/pricing/)。 这些订阅与商用订阅相同，没有特殊限制。 必须先将每个订阅分配给最终用户（许可用户），用户才能运行 Visual Studio 并在 Azure DevOps Services 中被识别为 Visual Studio Enterprise 订阅者。
 
-[了解有关 Microsoft for Startups 的详细信息](https://startups.microsoft.com/program-details/)
+[了解有关 Microsoft for Startups 的详细信息](https://startups.microsoft.com)
 
 **需登录 Visual Studio** 对于所有 Visual Studio 订阅，许可用户都必须使用激活 Visual Studio 订阅时所用的相同标识/登录名登录到 Visual Studio。
 

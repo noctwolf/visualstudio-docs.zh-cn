@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的 Office 365 开发者权益
 searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934588"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501188"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 开发者订阅权益
 
@@ -22,11 +22,11 @@ ms.locfileid: "65934588"
 
 1. 请访问 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) 登录到订阅服务器门户。
 
-2. 将重定向到组织的登录页或 Microsoft 帐户登录页，具体视帐户而定。   无论在哪个页面，请输入用户名和密码，然后单击“下一步”。
+2. 将重定向到组织的登录页或 Microsoft 帐户登录页，具体视帐户而定。   无论在哪个页面，请输入用户名和密码，然后单击“下一步”  。
 
 3. 完成登录过程后，即可看到“订阅权益”页。  如果有多个订阅，则可以单击右上角黑色功能区下的下拉箭头，在订阅之间进行切换。  Office 365 开发者订阅权益磁贴位于“工具”类别中。  使用磁贴行右侧的箭头进行滚动，直到显示 Office 磁贴。
 
-4. 单击权益磁贴底部的“激活”链接。
+4. 单击权益磁贴底部的“激活”链接。 
    > [!div class="mx-imgBorder"]
    > ![Office 365 开发者权益 磁贴](_img/vs-office-dev/vs-office-dev-tile.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "65934588"
    > [!div class="mx-imgBorder"]
    > ![Office 365 开发人员注册](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. 指明首选项和感兴趣的领域，然后单击“激活订阅”。
+10. 指明首选项和感兴趣的领域，然后单击“激活订阅”  。
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员首选项](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -46,11 +46,11 @@ ms.locfileid: "65934588"
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员用户名和域](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. 输入电话号码，然后单击“发送代码”。  这有助于我们确保正在创建帐户的是真实的人。
+12. 输入电话号码，然后单击“发送代码”  。  这有助于我们确保正在创建帐户的是真实的人。
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员电话验证](_img/vs-office-dev/vs-office-dev-send-code.png)
 
-13. 输入收到的代码，单击“设置”。
+13. 输入收到的代码，单击“设置”  。
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员代码验证](_img/vs-office-dev/vs-office-dev-setup.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "65934588"
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、最有价值专家 (MVP)、区域总监 (RD)。
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、最有价值专家 (MVP)、区域总监 (RD)。*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
@@ -82,6 +82,6 @@ ms.locfileid: "65934588"
 
 ## <a name="support-resources"></a>支持资源
 
-- 需要关于 Office 开发者订阅的帮助？ 请查看 [Office 开发人员中心](https://developer.microsoft.com/office)上的[支持](https://developer.microsoft.com/office/support)资源。
+- 需要关于 Office 开发者订阅的帮助？ 请查看 [Office 开发人员中心](https://developer.microsoft.com/office)上的[支持](https://developer.microsoft.com/office/docs#officecommunity)资源。
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
