@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567097"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715208"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567097"
 
 一个`DataSet`对象是一个内存中对象，它实质上是一个最小化数据库。 它包含`DataTable`， `DataColumn`，和`DataRow`对象可以用于存储和修改一个或多个数据库中的数据，而无需维护的开放连接。 数据集维护对其数据的更改的信息，因此可以跟踪更新和应用程序变得重新连接时发送回数据库。
 
-数据集和相关的类定义中<xref:System.Data?displayProperty=fullName>.NET Framework 类库中的命名空间。 可以创建和修改动态地在代码中使用 ADO.NET 数据集。 在本部分中的文档演示如何通过使用 Visual Studio 设计器处理数据集。 创建通过设计器使用的数据集**TableAdapter**对象与数据库进行交互。 以编程方式创建的数据集使用**DataAdapter**对象。 有关以编程方式创建数据集的信息，请参阅[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+数据集和相关的类定义中<xref:System.Data?displayProperty=fullName>.NET API 中的命名空间。 可以创建和修改动态地在代码中使用 ADO.NET 数据集。 在本部分中的文档演示如何通过使用 Visual Studio 设计器处理数据集。 创建通过设计器使用的数据集**TableAdapter**对象与数据库进行交互。 以编程方式创建的数据集使用**DataAdapter**对象。 有关以编程方式创建数据集的信息，请参阅[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
 如果你的应用程序需要仅从数据库读取数据并不执行更新、 添加，或删除，通常可以通过获取更好的性能`DataReader`对象将数据检索到一个泛型`List`对象或另一个集合对象。 如果要显示数据，您可以对数据绑定的用户界面集合。
 

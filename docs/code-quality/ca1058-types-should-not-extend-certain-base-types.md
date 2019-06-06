@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44aaead9e00a1fb279666dfc55d4e9496e21139e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842102"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714794"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058:类型不应扩展某些基类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "65842102"
 
 ## <a name="rule-description"></a>规则说明
 
-对于.NET Framework 版本 1，它建议派生新异常从<xref:System.ApplicationException>。 已更改的建议和新的异常应派生自<xref:System.Exception?displayProperty=fullName>或在其子类之一<xref:System>命名空间。
+异常应派生自<xref:System.Exception?displayProperty=fullName>或在其子类之一<xref:System>命名空间。
 
 不创建一个子类<xref:System.Xml.XmlDocument>如果你想要创建的基础对象模型或数据源的 XML 视图。
 

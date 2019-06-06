@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7236b77a7dd0a81f8a7846c0eba28e3b520cdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545584"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714745"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813:避免使用非密封特性
 
@@ -39,7 +39,7 @@ ms.locfileid: "62545584"
 
 ## <a name="rule-description"></a>规则说明
 
-.NET Framework 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构。 例如，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜索指定的特性类型或任何扩展指定的特性类型的属性类型。 密封特性无需通过继承层次结构中，搜索并提高性能。
+.NET 提供了用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构。 例如，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜索指定的特性类型或任何扩展指定的特性类型的属性类型。 密封特性无需通过继承层次结构中，搜索并提高性能。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 

@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564818"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714472"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 
@@ -56,7 +56,7 @@ WCF 数据服务是标准的开放数据 (OData) 协议的实现。  WCF 数据�
 
 ### <a name="wcf-programming-model"></a>WCF 编程模型
 
-WCF 编程模型基于两个实体之间的通信： WCF 服务和 WCF 客户端。 编程模型封装在<xref:System.ServiceModel>.NET Framework 中的命名空间。
+WCF 编程模型基于两个实体之间的通信： WCF 服务和 WCF 客户端。 编程模型封装在<xref:System.ServiceModel>在.NET 中的命名空间。
 
 ### <a name="wcf-service"></a>WCF 服务
 
@@ -198,9 +198,9 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>若要将控件绑定到 WCF 服务返回的单个数据字段
 
-1. 在 **“数据”** 菜单上，单击 **“显示数据源”**。
+1. 在 **“数据”** 菜单上，单击 **“显示数据源”** 。
 
-   随即出现“数据源”窗口。
+   随即出现“数据源”窗口  。
 
 2. 在中**数据源**窗口中，展开服务引用节点。 返回服务显示的任何复合类型。
 
@@ -216,7 +216,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>若要将控件绑定到返回的 WCF 服务的复合类型
 
-1. 上**数据**菜单中，选择**显示数据源**。 随即出现“数据源”窗口。
+1. 上**数据**菜单中，选择**显示数据源**。 随即出现“数据源”窗口  。
 
 2. 在中**数据源**窗口中，展开服务引用节点。 返回服务显示的任何复合类型。
 
@@ -228,7 +228,7 @@ Visual Studio 简化了创建自动生成代理和使用添加的服务的终结
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>如何：配置服务以重新使用现有的类型
 
-服务引用添加到项目中，本地项目中生成服务中定义的任何类型。 在许多情况下，这将创建重复的类型，服务使用常见的.NET Framework 类型或共享库中定义类型。
+服务引用添加到项目中，本地项目中生成服务中定义的任何类型。 在许多情况下，这将创建重复的类型，或如果服务使用常见的.NET 类型时共享库中定义类型。
 
 若要避免此问题，默认情况下共享中引用的程序集的类型。 如果你想要禁用类型共享的一个或多个程序集，则可以在执行**配置服务引用**对话框。
 

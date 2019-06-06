@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566894"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715191"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
 TableAdapter 组件填充数据库，基于一个或多个查询或您指定的存储的过程中的数据的数据集。 Tableadapter 还可以执行添加、 更新和删除数据库来保存对数据集所做的更改。 此外可以颁发任何特定表，该表不相关的全局命令。
 
 > [!NOTE]
-> Tableadapter 是由 Visual Studio 设计器生成的。 如果要以编程方式创建数据集，然后使用 DataAdapter，这是.NET Framework 类。
+> Tableadapter 是由 Visual Studio 设计器生成的。 如果要以编程方式创建数据集，然后使用 DataAdapter，是一个.NET 类。
 
 TableAdapter 操作有关的详细信息，您可以直接跳到以下主题之一：
 

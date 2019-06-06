@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fabb7a7d0e13218532da40ce15d0f2661875b15e
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976176"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714508"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>按 checkid 排列的托管代码的代码分析警告
 
@@ -288,7 +288,7 @@ ms.locfileid: "65976176"
 | CA1012 | [CA1012:抽象类型不应具有构造函数](../code-quality/ca1012-abstract-types-should-not-have-constructors.md) | 抽象类型的构造函数只能由派生类型调用。 由于公共构造函数用于创建类型的实例，但无法为抽象类型创建实例，因此具有公共构造函数的抽象类在设计上是错误的。 |
 | CA1013 | [CA1013:重载相等运算符，加法和减法](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md) | 公共或受保护类型实现加或减运算符时没有实现相等运算符。 |
 | CA1014 | [CA1014:用 CLSCompliantAttribute 标记程序集](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md) | 公共语言规范 (CLS) 定义了程序集在跨编程语言使用时必须符合的命名限制、数据类型和规则。 好的设计要求所有程序集用 <xref:System.CLSCompliantAttribute> 显式指示 CLS 合规性。 如果程序集没有此特性，则该程序集即不合规。 |
-| CA1016 | [CA1016:用 AssemblyVersionAttribute 标记程序集](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET Framework 使用版本号唯一地标识程序集，以及如何绑定到强名称程序集中的类型。 版本号与版本和发行者策略一起使用。 默认情况下，仅使用用于生成应用程序的程序集版本运行应用程序。 |
+| CA1016 | [CA1016:用 AssemblyVersionAttribute 标记程序集](../code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md) | .NET 使用版本号唯一地标识程序集以及如何绑定到强名称程序集中的类型。 版本号与版本和发行者策略一起使用。 默认情况下，仅使用用于生成应用程序的程序集版本运行应用程序。 |
 | CA1017 | [CA1017:用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md) |ComVisibleAttribute 决定 COM 客户端如何访问托管代码。 合理的设计指出程序集将显式指示 COM 可见性。 可以设置整个程序集的 COM 可见性，然后重写各个类型和类型成员的 COM 可见性。 如果此特性不存在，则程序集的内容对 COM 客户端可见。 |
 | CA1018 | [CA1018:用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md) | 当定义自定义特性时，用 AttributeUsageAttribute 标记该特性，以指示源代码中可以应用自定义特性的位置。 特性的含义和预定用法将决定它在代码中的有效位置。 |
 | CA1019 | [CA1019:定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) | 特性可以定义强制自变量，在对目标应用该特性时必须指定这些自变量。 这些自变量也称为位置自变量，因为它们将作为位置参数提供给特性构造函数。 对于每一个强制自变量，特性还必须提供一个相应的只读属性，以便可以在执行时检索该自变量的值。 特性还可以定义可选自变量，可选自变量也称为命名自变量。 这些变量按名称提供给特性构造函数，并且必须具有相应的读/写属性。 |
@@ -337,7 +337,7 @@ ms.locfileid: "65976176"
 | CA1300 | [CA1300:指定 MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md) | 为了让使用从右到左阅读顺序的文化区域正确显示消息框，必须将 MessageBoxOptions 枚举的 RightAlign 和 RtlReading 成员传递给 Show 方法。 |
 | CA1301 | [CA1301:避免快捷键重复](../code-quality/ca1301-avoid-duplicate-accelerators.md) | 访问键也称为快捷键，它通过使用 Alt 键来实现对控件的键盘访问。 如果多个控件具有重复的访问键，则访问密钥的行为不明确。 |
 | CA1302 | [CA1302:请不要对区域设置特定字符串](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md) | System.Environment.SpecialFolder 枚举包含表示特殊系统文件夹的成员。 对于不同的操作系统，这些文件夹的位置可能具有不同的值；用户也可能会更改某些位置；或者这些位置已经进行了本地化。 Environment.GetFolderPath 方法返回与 Environment.SpecialFolder 枚举关联、经过本地化且与当前正在运行的计算机相应的位置。 |
-| CA1303 | [CA1303:不要将文本作为本地化参数传递](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md) | 外部可见方法将字符串作为参数传递给构造函数或.NET Framework 类库中的方法，该字符串应该是可本地化。 |
+| CA1303 | [CA1303:不要将文本作为本地化参数传递](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md) | 外部可见方法将字符串作为参数传递给.NET 构造函数或方法，并且该字符串应该是可本地化。 |
 | CA1304 | [CA1304:指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md) | 某方法或构造函数调用的成员有一个接受 System.Globalization.CultureInfo 参数的重载，但该方法或构造函数没有调用接受 CultureInfo 参数的重载。 如果未提供 CultureInfo 或 System.IFormatProvider 对象，则重载成员提供的默认值可能不会在所有区域设置中产生您想要的效果。 |
 | CA1305 | [CA1305:指定 IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md) | 某方法或构造函数调用的一个或多个成员有接受 System.IFormatProvider 参数的重载，但该方法或构造函数没有调用接受 IFormatProvider 参数的重载。 如果未提供 System.Globalization.CultureInfo 或 IFormatProvider 对象，则重载成员提供的默认值可能不会在所有区域设置中产生您想要的效果。 |
 | CA1306 | [CA1306:设置区域设置的数据类型](../code-quality/ca1306-set-locale-for-data-types.md) | 区域设置决定数据的区域性特定显示元素，例如，数值、货币符号和排序顺序所用的格式。 在创建 DataTable 或 DataSet 时，应显式设置区域设置。 |
@@ -347,7 +347,7 @@ ms.locfileid: "65976176"
 | CA1400 | [CA1400:P/Invoke 入口点应该存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) |公共或受保护方法标有 System.Runtime.InteropServices.DllImportAttribute 特性。 未能找到非托管库，或者未能将方法与库中的函数匹配。 |
 | CA1401 | [CA1401:P/Invokes 应该是不可见](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | 公共类型中的公共或受保护方法具有 System.Runtime.InteropServices.DllImportAttribute 特性（还在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中由 Declare 关键字实现）。 这些方法不能公开。 |
 | CA1402 |[CA1402:避免在 COM 可见接口中的重载](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | 在向 COM 客户端公开重载的方法时，只有第一个方法重载保留其名称。 对于后续重载，将为其指定唯一名称，方法是在其名称后面追加一个下划线字符 (_) 和一个与该重载的声明顺序对应的整数。 |
-| CA1403 | [CA1403:自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | 某个 COM 可见的值类型用设置为 LayoutKind.Auto 的 System.Runtime.InteropServices.StructLayoutAttribute 特性标记。这些类型的布局可以更改.NET Framework 中，将中断要求特定布局的 COM 客户端的不同版本之间。 |
+| CA1403 | [CA1403:自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | 某个 COM 可见的值类型用设置为 LayoutKind.Auto 的 System.Runtime.InteropServices.StructLayoutAttribute 特性标记。这些类型的布局可以更改.NET，这将中断要求特定布局的 COM 客户端的不同版本之间。 |
 | CA1404 | [CA1404:紧接在 P/Invoke 之后调用 GetLastError](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | 调用了 Marshal.GetLastWin32Error 方法或等效[!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]GetLastError 函数，并紧位于前面的调用不为操作系统调用方法。 |
 | CA1405 | [CA1405:COM 可见类型的基类型应对 COM 可见](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | 某个 COM 可见的类型是从非 COM 可见的类型派生而来。 |
 | CA1406 |[CA1406:避免对 Visual Basic 6 客户端的 Int64 参数](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM 客户端不能访问 64 位整数。 |
@@ -388,7 +388,7 @@ ms.locfileid: "65976176"
 | CA1720 |[CA1720:标识符不应包含类型名称](../code-quality/ca1720-identifiers-should-not-contain-type-names.md) | 外部可见成员中的某个参数的名称包含一个数据类型名称，或者外部可见成员的名称包含一个语言特定的数据类型名称。 |
 | CA1721 | [CA1721:属性名不应与 get 方法](../code-quality/ca1721-property-names-should-not-match-get-methods.md) |公共或受保护成员的名称以“Get”开头，且其余部分与公共或受保护属性的名称匹配。 “Get”方法和属性的名称应能够明确区分其功能上的差异。 |
 | CA1722 | [CA1722:标识符应采用正确的前缀](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md) | 按照约定，只有某些编程元素具有以特定前缀开头的名称。 |
-| CA1724 | [CA1724:类型名不应与命名空间](../code-quality/ca1724-type-names-should-not-match-namespaces.md) | 类型名不应与在.NET Framework 类库中定义的命名空间的名称。 与该规则冲突将使库的可用性下降。 |
+| CA1724 | [CA1724:类型名不应与命名空间](../code-quality/ca1724-type-names-should-not-match-namespaces.md) | 类型名不应与.NET 命名空间的名称。 与该规则冲突将使库的可用性下降。 |
 | CA1725 | [CA1725:参数名应与基声明](../code-quality/ca1725-parameter-names-should-match-base-declaration.md) | 以一致的方式命名重写层次结构中的参数可以提高方法重写的可用性。 如果派生方法中的参数名与基声明中的名称不同，可能会导致无法区分出该方法是基方法的重写还是该方法的新重载。 |
 | CA1726 | [CA1726:使用首选的词条](../code-quality/ca1726-use-preferred-terms.md) | 在外部可见的标识符的名称中，包括一个存在首选备用词条的词条。 或者，名称中包含“Flag”或“Flags”一词。 |
 | CA1800 | [CA1800： 避免进行不必要的强制转换](../code-quality/ca1800-do-not-cast-unnecessarily.md) | 重复强制转换会降低性能，特别是在精简的迭代语句中执行强制转换时。 |
@@ -400,7 +400,7 @@ ms.locfileid: "65976176"
 | CA1810 | [CA1810:引用类型的静态字段以内联方式初始化](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | 当一个类型声明显式静态构造函数时，实时 (JIT) 编译器会向该类型的每个静态方法和实例构造函数中添加一项检查，以确保之前已调用该静态构造函数。 静态构造函数检查会降低性能。 |
 | CA1811 | [CA1811:避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md) | 某个私有或内部（程序集级别）成员在程序集中没有调用方，既不是由公共语言运行时调用的，也不是由委托调用的。 |
 | CA1812 | [CA1812:避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | 程序集级别类型的实例不是由程序集中的代码创建的。 |
-| CA1813 | [CA1813:避免使用未密封的特性](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET Framework 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构。 通过密封特性，将无需搜索继承层次结构，且能够提高性能。 |
+| CA1813 | [CA1813:避免使用未密封的特性](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET 提供了用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构。 通过密封特性，将无需搜索继承层次结构，且能够提高性能。 |
 | CA1814 | [CA1814： 与通过多维首选使用交错的数组](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | 交错数组是元素为数组的数组。 构成元素的数组可以是不同的大小，以减少某些数据集的浪费空间。 |
 | CA1815 | [CA1815:替代值类型上的 Equals 和相等运算符](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | 对于值类型，Equals 的继承的实现使用反射库，并比较所有字段的内容。 反射需要消耗大量计算资源，可能没有必要比较每一个字段是否相等。 如果希望用户对实例进行比较或排序，或者希望用户将实例用作哈希表键，则值类型应实现 Equals。 |
 | CA1816 | [CA1816:调用 GC。SuppressFinalize 正确](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | 实现 Dispose 方法不会调用 GC。SuppressFinalize;或不是实现 Dispose 方法调用 GC。SuppressFinalize;或使用方法调用 GC。SuppressFinalize 和传递内容以外此 （我在 Visual Basic 中）。 |
@@ -427,7 +427,7 @@ ms.locfileid: "65976176"
 | CA2104 |[CA2104:不要声明只读可变引用类型](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md) | 外部可见类型包含外部可见的只读字段，该字段为可变的引用类型。 可变类型是实例数据可被修改的类型。 |
 | CA2105 | [CA2105:不应仅读取数组字段](../code-quality/ca2105-array-fields-should-not-be-read-only.md) |向包含数组的字段应用 readonly（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中为 ReadOnly）修饰符时，无法将该字段更改为引用其他数组。 但是，可以更改在只读字段中存储的数组的元素。 |
 | CA2106 | [CA2106:安全断言](../code-quality/ca2106-secure-asserts.md) | 某个方法断言权限，但不对调用方执行任何安全检查。 如果在不执行任何安全检查的情况下断言安全权限，则会在代码中留下可利用的安全漏洞。 |
-| CA2107 | [CA2107:检查 deny 权限和允许仅使用情况](../code-quality/ca2107-review-deny-and-permit-only-usage.md) |PermitOnly 方法和 CodeAccessPermission.Deny 安全操作应仅由具有.NET Framework 安全性的高级的知识的用户使用。 应当对使用这些安全操作的代码进行安全检查。 |
+| CA2107 | [CA2107:检查 deny 权限和允许仅使用情况](../code-quality/ca2107-review-deny-and-permit-only-usage.md) |PermitOnly 方法和 CodeAccessPermission.Deny 安全操作应仅由具有.NET 安全性的高级的知识的用户使用。 应当对使用这些安全操作的代码进行安全检查。 |
 | CA2108 | [CA2108:检查有关值类型的声明性安全](../code-quality/ca2108-review-declarative-security-on-value-types.md) | 公共或受保护值类型受数据访问或链接要求保护。 |
 | CA2109 | [CA2109:检查可见的事件处理程序](../code-quality/ca2109-review-visible-event-handlers.md) | 检测到公共事件处理方法或受保护事件处理方法。 除非绝对必要，否则不应公开事件处理方法。 |
 | CA2111 |[CA2111:指针不应是可见](../code-quality/ca2111-pointers-should-not-be-visible.md) | 指针不是私有、内部或只读指针。 恶意代码可以更改指针的值，这样就有可能访问内存中的任意位置或导致应用程序或系统故障。 |
@@ -471,7 +471,7 @@ ms.locfileid: "65976176"
 | CA2201 | [CA2201:不要引发保留的异常类型](../code-quality/ca2201-do-not-raise-reserved-exception-types.md) | 这使得很难检测和调试原始错误。 |
 | CA2202 | [CA2202:多次未释放对象](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md) |某个方法实现所包含的代码路径可能导致对同一对象多次调用 System.IDisposable.Dispose 或与 Dispose 等效的方法（例如，用于某些类型的 Close() 方法）。 |
 | CA2204 | [CA2204:应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md) | 方法体中的文本字符串包含一个或多个未被 Microsoft 拼写检查器库识别的单词。 |
-| CA2205 | [CA2205:使用 Win32 API 的托管等效项](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md) | 操作系统调用方法的定义，并且具有等效功能的方法位于.NET Framework 类库。 |
+| CA2205 | [CA2205:使用 Win32 API 的托管等效项](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md) | 操作系统调用方法的定义，可具有等效功能的.NET 方法。 |
 | CA2207 | [CA2207:值类型的静态字段以内联方式初始化](../code-quality/ca2207-initialize-value-type-static-fields-inline.md) | 某值类型声明了显式静态构造函数。 要修复与该规则的冲突，请在声明它时初始化所有静态数据并移除静态构造函数。 |
 | CA2208 |[CA2208:正确实例化参数异常](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md) | 调用了异常类型 ArgumentException 或其派生类型的默认（无参数）构造函数，或者向异常类型 ArgumentException 或其派生类型的参数化构造函数传递了错误的字符串参数。 |
 | CA2210 |[CA2210:程序集应具有有效的强名称](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md) | 强名称可避免客户端在不知情的情况下加载已被篡改的程序集。 除非极为有限的几种情况，否则不应部署没有强名称的程序集。 如果共享或发布未正确签名的程序集，则该程序集可能被篡改，公共语言运行时可能不会加载该程序集；而用户可能必须在他/她的计算机上禁用验证。 |

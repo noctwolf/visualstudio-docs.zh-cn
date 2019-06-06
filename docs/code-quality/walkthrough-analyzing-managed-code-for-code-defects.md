@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825038"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715277"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：分析托管的代码进行代码缺陷
 
 在本演练中，将通过使用代码分析工具分析托管的项目进行代码缺陷。
 
-本演练将指导你完成使用代码分析来分析符合 Microsoft.NET Framework 设计准则的.NET 托管代码程序集的过程。
+本演练将指导你完成使用代码分析来分析.NET 托管代码程序集为使用.NET 设计准则的一致性的过程。
 
 ## <a name="create-a-class-library"></a>创建一个类库
 

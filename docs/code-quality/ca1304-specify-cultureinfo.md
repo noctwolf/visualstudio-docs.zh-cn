@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797499"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714356"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304:指定 CultureInfo
 
@@ -40,7 +40,7 @@ ms.locfileid: "62797499"
 
 ## <a name="rule-description"></a>规则说明
 
-当<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=nameWithType>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，.NET Framework 成员选择默认区域性，并设置格式基于可能不为你的代码正确的假设。 若要确保代码按预期运行您的环境，应提供特定于区域性的信息，根据以下指导原则：
+当<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider?displayProperty=nameWithType>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，.NET 成员选择默认区域性，并设置格式基于可能不为你的代码正确的假设。 若要确保代码按预期运行您的环境，应提供特定于区域性的信息，根据以下指导原则：
 
 - 如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
 

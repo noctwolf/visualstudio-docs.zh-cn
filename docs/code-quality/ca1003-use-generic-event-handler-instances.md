@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842519"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714386"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003:使用泛型事件处理程序实例
 
@@ -41,7 +41,7 @@ ms.locfileid: "65842519"
 
 ## <a name="rule-description"></a>规则说明
 
-在之前.NET，以便将自定义信息传递给事件处理程序，一个新委托，必须指定派生自的类声明<xref:System.EventArgs?displayProperty=fullName>类。 这是不能再在.NET 中，则返回 true。 引入的.NET Framework<xref:System.EventHandler%601?displayProperty=fullName>委托、 允许的任何类都派生自的泛型委托<xref:System.EventArgs>来与事件处理程序一起使用。
+在之前.NET，以便将自定义信息传递给事件处理程序，一个新委托，必须指定派生自的类声明<xref:System.EventArgs?displayProperty=fullName>类。 在.NET 中，泛型<xref:System.EventHandler%601?displayProperty=fullName>委托允许的任何类都派生自<xref:System.EventArgs>来与事件处理程序一起使用。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 

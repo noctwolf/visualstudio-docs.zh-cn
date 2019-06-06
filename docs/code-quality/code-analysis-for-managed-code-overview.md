@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81c4d6ba7cc4ae870c74733a4e78733c023e3f58
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540689"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713961"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的托管代码的静态代码分析的概述
 
 Visual Studio 可以通过两种方式执行托管代码的代码分析： 使用*FxCop*静态分析托管程序集，并提供详细的新式*Roslyn 分析器*。 本主题介绍 FxCop 静态代码分析。 若要了解有关使用代码分析器来分析代码的详细信息，请参阅[概述的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
-针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如违反 Microsoft .NET Framework 设计指南中规定的编程和设计准则。
+托管代码的代码分析将分析托管程序集和报告有关程序集，例如中规定的编程和设计规则的冲突[.NET 设计准则](/dotnet/standard/design-guidelines/)。
 
 分析工具将它在分析期间执行的检查表示为警告消息。 警告消息标识任何相关的编程和设计问题，如有可能，还提供有关如何修复问题的信息。
 
 > [!NOTE]
-> Visual Studio 中的 .NET Core 和 .NET Standard 项目不支持静态代码分析。 如果 msbuild 的一部分，可以对.NET Core 或.NET Standard 项目运行代码分析，您将看到类似的错误**错误：CA0055:无法识别的平台\<your.dll >**。 若要分析 .NET Core 或 .NET Standard 项目中的代码，请改用 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
+> Visual Studio 中的 .NET Core 和 .NET Standard 项目不支持静态代码分析。 如果 msbuild 的一部分，可以对.NET Core 或.NET Standard 项目运行代码分析，您将看到类似的错误**错误：CA0055:无法识别的平台\<your.dll >** 。 若要分析 .NET Core 或 .NET Standard 项目中的代码，请改用 [Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （集成的开发环境） 集成
 
 可以手动或自动在项目上运行代码分析。
 
-若要在每次生成项目时运行代码分析，请在项目的“属性”页上选择“在生成时启用代码分析”。 有关详细信息，请参阅[如何：启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要在每次生成项目时运行代码分析，请在项目的“属性”页上选择“在生成时启用代码分析”  。 有关详细信息，请参阅[如何：启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
 若要在项目上手动运行代码分析，请从菜单栏中选择**分析** > **运行代码分析** > **在 \<项目> 上运行代码分析**。
 

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8ec10f226ad139ffbeb46badc6ef3dd6c384af91
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852488"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714936"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>调试 Visual Studio 中的 Dll (C#， C++，Visual Basic 中， F#)
 
@@ -84,7 +84,7 @@ DLL （动态链接库） 是包含可被多个程序使用的代码和数据的
 
 1. 选择 **确定**。
 
-有关C++项目设置的详细信息，请参阅[属性页 （Visual C++）](/cpp/ide/property-pages-visual-cpp)。
+有关C++项目设置的详细信息，请参阅[属性页 （Visual C++）](/cpp/build/reference/property-pages-visual-cpp)。
 
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> 生成调试版本
 

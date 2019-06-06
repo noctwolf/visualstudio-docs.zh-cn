@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825437"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715300"
 ---
 # <a name="naming-warnings"></a>命名警告
-命名警告支持对.NET Framework 设计准则的命名约定的遵从性。
+
+命名警告支持对.NET 设计准则的命名约定的遵从性。
 
 ## <a name="in-this-section"></a>本节内容
 
@@ -42,7 +43,7 @@ ms.locfileid: "62825437"
 |[CA1719:参数名不应与成员名称](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|参数名称应传达参数的含义和成员名称应传达成员的含义。 两者相同的设计非常少见。 使参数与其成员同名会导致不直观的效果，会使库难以使用。|
 |[CA1701:资源字符串复合词应采用正确的大小写](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|每个单词中的资源字符串拆分为根据大小写的令牌。 Microsoft 拼写检查器库会对由两个连续的标记构成的每个组合进行检查。 如果被识别，该单词将生成规则冲突。|
 |[CA1703:资源字符串应正确拼写](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|资源字符串包含一个或多个未被 Microsoft 拼写检查器库识别的单词。|
-|[CA1724:类型名不应与命名空间](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|类型名不应与在.NET Framework 类库中定义的命名空间的名称。 此规则的冲突会降低库的可用性。|
+|[CA1724:类型名不应与命名空间](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|类型名不应与.NET 命名空间的名称。 此规则的冲突会降低库的可用性。|
 |[CA1707:标识符不应包含下划线](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|按照约定，标识符名称不包含下划线 (_) 字符。 该规则将检查命名空间、类型、成员和参数。|
 |[CA1721:属性名不应与 get 方法](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|公共或受保护成员的名称以“Get”开头，且其余部分与公共或受保护属性的名称匹配。 “Get”方法和属性的名称应能够明确区分其功能上的差异。|
 |[CA1716:标识符不应与关键字](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|某个命名空间名称或类型名称与编程语言中的保留关键字相同。 命名空间和类型的标识符不应与针对公共语言运行时的语言所定义的关键字冲突。|

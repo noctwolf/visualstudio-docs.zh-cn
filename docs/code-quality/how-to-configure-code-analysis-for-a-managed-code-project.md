@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676290"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715057"
 ---
 # <a name="how-to-configure-static-code-analysis-for-managed-code"></a>如何：配置托管代码的静态代码分析
 
@@ -29,7 +29,7 @@ ms.locfileid: "65676290"
 > [!NOTE]
 > 本文适用于静态代码分析，而非[Roslyn 分析器](use-roslyn-analyzers.md)，这不在生成后运行代码分析。
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>若要配置的规则设置为.NET Framework 项目
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>配置规则集为.NET Framework 项目
 
 1. 打开**代码分析**项目的属性页上的选项卡。 可以在以下两种方式来执行此操作：
 
