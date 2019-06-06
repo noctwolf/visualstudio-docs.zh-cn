@@ -1,5 +1,5 @@
 ---
-title: 在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员
+title: 在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting
 ms.date: 03/02/2018
 ms.topic: reference
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 12c1b35288ac5857ac2971ffc6cbdddd40aa5c40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f488d021be59538eac36a19a66970b9fc01463
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776673"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432226"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在单元测试中使用 MSTest 框架
 
@@ -95,7 +95,7 @@ ClassInitialize 和 ClassCleanup 恰好在加载类之后以及恰好在卸载�
 
 ## <a name="the-testcontext-class"></a>TestContext 类
 
-以下特性和分配给它们的值会出现在特定测试方法的 Visual Studio 属性窗口中。 这些属性不旨在通过单元测试的代码进行访问。 相反，它们会影响使用或运行单元测试的方法（由你通过 Visual Studio IDE 使用或运行，或由 Visual Studio 测试引擎测试或运行）。 例如，其中一些属性在“测试管理器”窗口和“测试结果”窗口中显示为列，这意味着可以使用它们对测试和测试结果进行分组和排序。 这样一个属性是 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>，可用于将任意元数据添加到单元测试。 例如，可以通过使用 `[TestProperty("TestPass", "Accessibility")]` 标记单元测试，来使用该属性存储此测试所涵盖的测试轮次的名称。 还可以使用它存储它所属的测试类型的指示器：`[TestProperty("TestKind", "Localization")]`。 使用此特性创建的属性以及分配的属性值都会显示在 Visual Studio“属性”窗口中的标题“测试特定的”下。
+以下特性和分配给它们的值会出现在特定测试方法的 Visual Studio 属性窗口中。 这些属性不旨在通过单元测试的代码进行访问。 相反，它们会影响使用或运行单元测试的方法（由你通过 Visual Studio IDE 使用或运行，或由 Visual Studio 测试引擎测试或运行）。 例如，其中一些属性在“测试管理器”  窗口和“测试结果”  窗口中显示为列，这意味着可以使用它们对测试和测试结果进行分组和排序。 这样一个属性是 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>，可用于将任意元数据添加到单元测试。 例如，可以通过使用 `[TestProperty("TestPass", "Accessibility")]` 标记单元测试，来使用该属性存储此测试所涵盖的测试轮次的名称。 还可以使用它存储它所属的测试类型的指示器：`[TestProperty("TestKind", "Localization")]`。 使用此特性创建的属性以及分配的属性值都会显示在 Visual Studio“属性”  窗口中的标题“测试特定的”  下。
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>
 

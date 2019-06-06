@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
 searchscope: VS Subscription
-ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac051650c26dc2dbb7c6ee6d9405963536dd98c9
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002320"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402166"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
 
@@ -41,10 +41,10 @@ ms.locfileid: "63002320"
 
 满足上述 5 个步骤中的标准后，可按以下步骤继续将购买帐户关联到租户。
 1. 登录[业务中心](https://businessaccount.microsoft.com/)。
-2. 单击“帐户”选项卡并选择“关联域”。
-3. 选择“购买帐户”（如有多个购买帐户）。
-4. 选择“租户”（即 contoso.onmicrosoft.com）。
-5. 单击“关联域”。
+2. 单击“帐户”选项卡并选择“关联域”   。
+3. 选择“购买帐户”（如有多个购买帐户）  。
+4. 选择“租户”（即 contoso.onmicrosoft.com）  。
+5. 单击“关联域”  。
 
 通常情况下，关联后，系统会在几分钟内将满足所需标准的所有用户都设置为 Visual Studio 订阅管理员。 但是有时可能需要长达 24 小时。 被设置为管理员后就能访问 Visual Studio 订阅管理门户。 如果花费的时间超过 24 小时，请联系 MPSA 支持部门。
 
@@ -55,13 +55,13 @@ ms.locfileid: "63002320"
 
 如上文第五段中所述，如果用于注册业务中心的电子邮件不是工作帐户（未在 Azure Active Directory“Azure AD”中注册），则帐户关联略有不同。 需执行所谓的“域接管”。 在此过程中，你将成为全局管理员并将租户从非托管变为托管。
 
-有关此过程的更详细说明，请参阅[快速入门指南](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx)。 请下载名为“设置和使用联机服务”的指南，该指南将指导你完成域接管。 完成此操作后，购买帐户也会关联到租户。
+有关此过程的更详细说明，请参阅[快速入门指南](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx)。 请下载名为“设置和使用联机服务”的指南，该指南将指导你完成域接管  。 完成此操作后，购买帐户也会关联到租户。
 
 > [!NOTE]
 > 完成域接管过程后，必须遵守“预租户关联（托管）”部分中 5 个步骤的标准。 满足这些标准后，只需联系 MPSA 支持部门设置其他 Visual Studio 订阅管理员即可。
 
 如果需要帮助或有任何问题，可通过电话或电子邮件联系支持部门。
 
-MPSA 支持部门：1-866-200-9611，工作时间：周一至周五，上午 5:30 至下午 5:30（太平洋时间）
+MPSA 支持部门：1-866-200-9611，工作时间：周一至周五，上午 5:30 至下午 5:30（太平洋时间） 
 
-电子邮件：ngvlsup@microsoft.com
+联机： https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f?sl=enampsc=US

@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403199"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327358"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="4110"></a>4.1.1.0
+ 发布日期：2019 年 5 月 24 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+    - 已将 MonoBehaviour API 更新到 2019.1。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+    - 启用轻型生成时，修复了要输出的报告警告和错误。
+    
+    - 修复了轻型生成性能。
+
+## <a name="4100"></a>4.1.0.0
+ 发布日期：2019 年 5 月 21 日
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+    - 添加了对新的批处理 API 的支持以更快地重新加载项目。
+    
+    - 禁用了 Unity 项目的完整生成，取而代之的是使用 IntelliSense 错误和警告。 事实上，Unity 使用表示 Unity 内部所执行操作的类库项目创建 Visual Studio 解决方案。 尽管如此，Visual Studio 中的生成结果从未由 Unity 使用或选取，因为其编译管道已关闭。 在 Visual Studio 中生成只是使用资源。 如果由于你具有工具或依赖于完整生成的安装程序而需要完整生成，则可以禁用此优化（工具/选项/Tools for Unity/禁用项目的完整生成）。 
+
+    - 加载 Unity 项目时自动显示 Unity 项目资源管理器 (UPE)。 UPE 将停靠在解决方案资源管理器旁边。
+    
+    - 使用 2019.x 更新了项目名称提取机制。
+
+    - 添加了对 UPE 中的 Unity 包的支持。 只有引用包（使用 ```Packages``` 文件夹中的 manifest.json）和本地包（嵌入在 ```Packages``` 文件夹中）是可见的。
+    
+- **项目生成：**
+
+    - 处理解决方案文件时，请保留外部属性。
+
+- **评估版：**
+
+    - 添加了对别名限定名称的支持（目前仅支持全局命名空间）。 因此，表达式计算器现在正在使用 global::namespace.type 窗体接受类型。
+    
+    - 添加了对 ```pointer[index]``` 窗体的支持，在语义上等同于指针取消引用 ```*(pointer+index)``` 窗体。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+    - 修复了 Microsoft.VisualStudio.MPF 的依赖项问题。
+    
+    - 修复了 UWP 播放器附加，而无需加载任何项目。
+    
+    - 尚未附加 Visual Studio 时修复了自动资产数据库刷新。
+    
+    - 修复了标签和复选框的主题问题。
+    
+- **调试器：**
+
+    - 使用静态构造函数修复了单步执行。
 
 ## <a name="4005"></a>4.0.0.5
  发布时间：2019 年 2 月 27 日
@@ -880,7 +940,7 @@ Visual Studio Tools for Unity 更改日志。
 
 - **Unity：** 在项目文件生成过程中查找 .rsp 文件中的不安全标志和自定义定义。
 
-- **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”对话框。
+- **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”对话框  。
 
 ### <a name="bug-fixes"></a>Bug 修复
 

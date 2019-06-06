@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704661"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401730"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -365,9 +365,9 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 ### <a name="continue-the-analysis"></a>继续分析
 
-但是，最后两个测试方法也很麻烦。 在任一测试运行时，无法确定测试方法在哪些情况下会引发异常。 用于区分这两种情况（即负借方金额或大于余额的金额）的某种方式将增加你对测试的信心。
+可以进一步改进所测试的方法。 对于当前实现，我们没有办法知道哪个条件（`amount > m_balance` 或 `amount < 0`）导致在测试期间引发异常。 我们只知道在方法中引发了一个 `ArgumentOutOfRangeException`。 更理想的情况是，如果我们知道是 `BankAccount.Debit` 中的哪个条件导致引发异常（`amount > m_balance` 或 `amount < 0`），这样就可以确信我们的方法可以正确合理地检查其自变量。
 
-让我们再看看测试方法，请注意两个条件语句都使用 `ArgumentOutOfRangeException` 构造函数，该函数将自变量名称作为参数：
+让我们再看看测试方法 (`BankAccount.Debit`)，请注意两个条件语句都使用 `ArgumentOutOfRangeException` 构造函数，该函数将自变量名称作为参数：
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
