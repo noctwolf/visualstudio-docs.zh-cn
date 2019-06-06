@@ -1,6 +1,6 @@
 ---
 title: 步骤 1：创建 Windows 窗体应用程序项目
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979847"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501059"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步骤 1：创建 Windows 窗体应用程序项目
 
@@ -28,12 +28,11 @@ ms.locfileid: "62979847"
 
 ## <a name="open-visual-studio-2017"></a>打开 Visual Studio 2017
 
-1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。 对话框应如下所示。
+1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。 对话框应如以下屏幕快照所示。
 
-     ![“新建项目”对话框](../ide/media/newprojectdialogcallouts.png)<br/>
-“新建项目”对话框  
+     ![“新建项目”对话框](../ide/media/newprojectdialogcallouts.png)<br/>“新建项目”对话框 
 
-2. 在“新建项目”对话框的左侧，选择 Visual C# 或 Visual Basic    。
+2. 在“新建项目”  对话框的左侧，选择 Visual C#  或 Visual Basic  ，然后选择“Windows 桌面”  。
 
 3. 在模板列表中，选择“Windows 窗体应用(.NET Framework)”  。 将新窗体命名为“PictureViewer”，然后选择“确定”按钮。  
 
@@ -50,7 +49,7 @@ ms.locfileid: "62979847"
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在“创建新项目”  窗口的搜索框中输入或键入“Windows 窗体”  。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”   。 
+1. 在“创建新项目”  窗口的搜索框中输入或键入“Windows 窗体”  。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”   。
 
    应用语言和平台筛选器之后，选择“Windows 窗体应用(.NET Framework)”  模板，然后选择“下一步”  。
 
@@ -59,13 +58,13 @@ ms.locfileid: "62979847"
    > [!NOTE]
    > 如果未看到“Windows 窗体应用(.NET Framework)”  模板，则可以通过“创建新项目”  窗口安装该模板。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
-   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”  工作负载。
-   > 
+   >
    > ![Visual Studio 安装程序中的 .NET Core 开发工作负载](../ide/media/install-dot-net-desktop-env.png)
    >
-   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。
 
 1. 在“配置新项目”  窗口中，在“项目名称”  框中键入或输入“PictureViewer”  。 然后，选择“创建”  。
 

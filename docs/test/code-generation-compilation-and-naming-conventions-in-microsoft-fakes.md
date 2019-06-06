@@ -1,5 +1,5 @@
 ---
-title: Microsoft Fakes 中的代码生成、编译和命名约定
+title: Microsoft Fakes：生成和编译代码；命名约定
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822756"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432299"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
@@ -30,9 +30,9 @@ ms.locfileid: "62822756"
 
 ### <a name="configure-code-generation-of-stubs"></a>配置存根的代码生成
 
-存根类型的生成在具有 .fakes 文件扩展名的 XML 文件中配置。 Fakes 框架通过自定义 MSBuild 任务在生成进程中集成并在生成时检测这些文件。 Fakes 代码生成器将存根类型编译为程序集并添加对项目的引用。
+存根类型的生成在具有 .fakes 文件扩展名的 XML 文件中配置  。 Fakes 框架通过自定义 MSBuild 任务在生成进程中集成并在生成时检测这些文件。 Fakes 代码生成器将存根类型编译为程序集并添加对项目的引用。
 
-下面的示例说明了 FileSystem.dll 中定义的存根类型：
+下面的示例说明了 FileSystem.dll 中定义的存根类型  ：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -42,9 +42,9 @@ ms.locfileid: "62822756"
 
 ### <a name="type-filtering"></a>类型筛选
 
-可在 .fakes 文件中设置筛选器以限制应用作存根的类型。 你可以在 StubGeneration 元素下添加数量不限的清除、添加、删除元素以生成所选类型的列表。
+可在 .fakes 文件中设置筛选器以限制应用作存根的类型  。 你可以在 StubGeneration 元素下添加数量不限的清除、添加、删除元素以生成所选类型的列表。
 
-例如，以下 .fakes 文件会在 System 和 System.IO 命名空间下生成类型的存根，但是排除系统中包含“Handle”的任何类型：
+例如，以下 .fakes 文件会在 System 和 System.IO 命名空间下生成类型的存根，但是排除系统中包含“Handle”的任何类型  ：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -84,7 +84,7 @@ ms.locfileid: "62822756"
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>将具体类和虚拟方法用作存根
 
-默认情况下，为所有非密封类生成存根类型。 可通过 .fakes 配置文件将存根类型限制为抽象类：
+默认情况下，为所有非密封类生成存根类型。 可通过 .fakes 配置文件将存根类型限制为抽象类  ：
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -116,7 +116,7 @@ Fakes 代码生成器为对生成的 Fakes 程序集可见的类型生成填充�
 
 - 测试程序集和 Fakes 程序集都必须具有强名称。
 
-- 将测试的公钥和 Fakes 程序集添加到已填充的程序集的“InternalsVisibleToAttribute”属性中。 这是当已填充的程序集具有强名称时，在已填充的程序集代码中的示例属性所呈现的效果：
+- 将测试的公钥和 Fakes 程序集添加到已填充的程序集的“InternalsVisibleToAttribute”  属性中。 这是当已填充的程序集具有强名称时，在已填充的程序集代码中的示例属性所呈现的效果：
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -128,7 +128,7 @@ Fakes 代码生成器为对生成的 Fakes 程序集可见的类型生成填充�
 
 如果已填充的程序集具有强名称，则 Fakes 框架自动对生成的 Fakes 程序集进行强签名。 你需要对测试程序集进行强签名。 请参阅[具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)。
 
-Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，你可以将此代码片段用作起点以将 Fakes 程序集的“InternalsVisibleTo”属性添加到已填充的程序集代码中。
+Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，你可以将此代码片段用作起点以将 Fakes 程序集的“InternalsVisibleTo”  属性添加到已填充的程序集代码中。
 
 ```csharp
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
@@ -161,11 +161,11 @@ Fakes 程序集的编译可极大地加快生成时间。 通过为独立集中�
 
 从单元测试项目中，将引用添加到放置在项目文件夹 FakesAssemblies 下的已编译的 Fakes 程序集。
 
-1. 使用与你的测试项目匹配的 .NET 运行时版本创建新的类库。 我们称之为 Fakes.Prebuild。 从项目中删除不需要的 class1.cs 文件。
+1. 使用与你的测试项目匹配的 .NET 运行时版本创建新的类库。 我们称之为 Fakes.Prebuild。 从项目中删除不需要的 class1.cs 文件  。
 
 2. 添加对需要 Fakes 的所有系统和第三方程序集的引用。
 
-3. 为每个程序集和生成添加一个 .fakes 文件。
+3. 为每个程序集和生成添加一个 .fakes 文件  。
 
 4. 从测试项目
 
@@ -173,17 +173,17 @@ Fakes 程序集的编译可极大地加快生成时间。 通过为独立集中�
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    - 对于每个已为其创建 Fakes 的程序集，请添加对相应 DLL 文件的引用，该文件位于项目文件夹的 Fakes.Prebuild\FakesAssemblies 中。
+    - 对于每个已为其创建 Fakes 的程序集，请添加对相应 DLL 文件的引用，该文件位于项目文件夹的 Fakes.Prebuild\FakesAssemblies 中  。
 
 ### <a name="avoid-assembly-name-clashing"></a>避免程序集名称冲突
 
-在团队生成环境中，所有生成输出合并到一个目录中。 如果有多个项目使用 Fakes，可能发生不同版本的 Fakes 程序集相互覆盖的情况。 例如，来自 .NET Framework 2.0 的 TestProject1 fakes mscorlib.dll 和 .NET Framework 4 的 TestProject2 fakes mscorlib.dll 都会产生一个 mscorlib.Fakes.dll Fakes 程序集。
+在团队生成环境中，所有生成输出合并到一个目录中。 如果有多个项目使用 Fakes，可能发生不同版本的 Fakes 程序集相互覆盖的情况。 例如，来自 .NET Framework 2.0 的 TestProject1 fakes mscorlib.dll 和 .NET Framework 4 的 TestProject2 fakes mscorlib.dll 都会产生一个 mscorlib.Fakes.dll Fakes 程序集    。
 
- 要避免出现此问题，在添加 .fakes 文件时，Fakes 应自动为非项目引用创建版本限定的 Fakes 程序集名称。 在创建 Fakes 程序集名称时，版本限定的 Fakes 程序集名称将嵌入版本号：
+ 要避免出现此问题，在添加 .fakes 文件时，Fakes 应自动为非项目引用创建版本限定的 Fakes 程序集名称  。 在创建 Fakes 程序集名称时，版本限定的 Fakes 程序集名称将嵌入版本号：
 
  假定程序集为 MyAssembly，版本为 1.2.3.4，则 Fakes 程序集名称为 MyAssembly.1.2.3.4.Fakes。
 
- 你可以通过在 .fakes 中编辑程序集元素的版本属性来更改或删除此版本：
+ 你可以通过在 .fakes 中编辑程序集元素的版本属性来更改或删除此版本  ：
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -231,7 +231,7 @@ attribute of the Assembly element in the .fakes:
 
 - 如果是泛型方法，则追加 `Of`*n*，其中 *n* 是泛型方法自变量的数量。
 
-  特殊方法名称（比如属性 getter 或 setter）将按下表所述方式处理：
+  特殊方法名称（比如属性 getter 或 setter）将按下表所述方式处理： 
 
 |如果方法是…|示例|追加的方法名称|
 |-|-|-|
@@ -249,7 +249,7 @@ attribute of the Assembly element in the .fakes:
 > [!NOTE]
 > - **索引器的 getter 和 setter** 的处理方式类似于属性。 索引器的默认名称为 `Item`。
 > - **参数类型**名称已转换并串联。
-> - 除非具有重载多义性，否则将忽略返回类型。 如果存在重载多义性，将在名称末尾追加返回类型。
+> - 除非具有重载多义性，否则将忽略返回类型  。 如果存在重载多义性，将在名称末尾追加返回类型。
 
 ### <a name="parameter-type-naming-conventions"></a>参数类型命名约定
 
