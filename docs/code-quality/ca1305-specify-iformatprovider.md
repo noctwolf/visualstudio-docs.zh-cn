@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797536"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714685"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305:指定 IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797536"
 
 某方法或构造函数调用的重载接受一个或多个成员<xref:System.IFormatProvider?displayProperty=fullName>参数，该方法或构造函数不调用的重载的<xref:System.IFormatProvider>参数。
 
-此规则将忽略对被记录为忽略的.NET Framework 方法的调用<xref:System.IFormatProvider>参数。 该规则还会忽略以下方法：
+此规则将忽略对被记录为忽略的.NET 方法的调用<xref:System.IFormatProvider>参数。 该规则还会忽略以下方法：
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ ms.locfileid: "62797536"
 
 ## <a name="rule-description"></a>规则说明
 
-当<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>或<xref:System.IFormatProvider>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，.NET Framework 成员选择默认区域性，并设置格式基于可能不为你的代码正确的假设。 若要确保代码按预期为方案运行，应提供特定于区域性的信息，按照以下原则：
+当<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>或<xref:System.IFormatProvider>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，.NET 成员选择默认区域性，并设置格式基于可能不为你的代码正确的假设。 若要确保代码按预期为方案运行，应提供特定于区域性的信息，按照以下原则：
 
 - 如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
 

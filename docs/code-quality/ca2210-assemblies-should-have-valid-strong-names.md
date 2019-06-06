@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796674"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714762"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210:程序集应具有有效的强名称
 
@@ -64,11 +64,11 @@ ms.locfileid: "62796674"
 
 使用以下过程之一：
 
-- 使用.NET Framework SDK 提供的程序集链接器工具 (Al.exe)。
+- 使用[程序集链接器工具 (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker)。
+
+- 对于.NET Framework 2.0 中，使用`/keyfile`或`/keycontainer`编译器选项[/KEYFILE （指定密钥或密钥对以便为程序集签名）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定密钥容器以便为程序集签名）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)中的链接器选项C++)。
 
 - 对于.NET Framework v1.0 或 v1.1 中，使用两种<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>属性。
-
-- 有关[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，可以使用两种`/keyfile`或`/keycontainer`编译器选项[/KEYFILE （指定密钥或密钥对以便为程序集签名）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定密钥容器以便为程序集签名）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly)中的链接器选项C++)。
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>使用 Visual Studio 中的强名称对程序集签名
 
@@ -90,7 +90,7 @@ ms.locfileid: "62796674"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>使用 Visual Studio 外部强名称对程序集签名
 
-使用强名称工具 (Sn.exe) 提供的.NET Framework SDK。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。
+使用[强名称工具 (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 

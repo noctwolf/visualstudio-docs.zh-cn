@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7e96009d689fec48d242f4db1790e6e0eacafa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f9a3d2ef30018c7fe57f1e7d728ba1dd152f56f5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842369"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714290"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030:在适用处使用事件
 
@@ -45,11 +45,11 @@ ms.locfileid: "65842369"
 
 该规则检测名称通常用于事件的方法。 事件遵循观察者或发布-订阅设计模式;一个对象的状态更改必须传递给其他对象时使用它们。 如果调用的方法获取响应明确定义的状态更改，应通过事件处理程序调用该方法。 调用该方法的对象应引发事件而不是直接调用该方法。
 
-在用户界面应用程序的用户操作，例如单击按钮会导致要执行的代码段中找到事件的一些常见示例。 .NET Framework 事件模型并不局限于用户界面;它应使用任何位置您必须进行通信的状态更改为一个或多个对象。
+在用户界面应用程序的用户操作，例如单击按钮会导致要执行的代码段中找到事件的一些常见示例。 .NET 事件模型不局限于用户界面。 它应使用任何位置您必须进行通信的状态更改为一个或多个对象。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-如果对象的状态发生更改时调用该方法，则应考虑更改设计为使用.NET 事件模式。
+如果对象的状态发生更改时调用该方法，请考虑更改设计为使用.NET 事件模式。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 

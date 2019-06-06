@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825274"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715228"
 ---
 # <a name="security-warnings"></a>安全警告
 
@@ -36,7 +36,7 @@ ms.locfileid: "62825274"
 |[CA2104:不要声明只读可变引用类型](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|外部可见类型包含外部可见的只读字段，该字段为可变的引用类型。 可变类型是实例数据可被修改的类型。|
 |[CA2105:不应仅读取数组字段](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|向包含数组的字段应用 readonly（在 Visual Basic 中为 ReadOnly）修饰符时，无法将该字段更改为引用其他数组。 但是，可以更改在只读字段中存储的数组的元素。|
 |[CA2106:安全断言](../code-quality/ca2106-secure-asserts.md)|某个方法断言权限，但不对调用方执行任何安全检查。 如果在不执行任何安全检查的情况下断言安全权限，则会在代码中留下可利用的安全漏洞。|
-|[CA2107:检查 deny 权限和允许仅使用情况](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|PermitOnly 方法和 CodeAccessPermission.Deny 安全操作只应由掌握 .NET Framework 高级安全知识的人员使用。 应当对使用这些安全操作的代码进行安全检查。|
+|[CA2107:检查 deny 权限和允许仅使用情况](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|使用 PermitOnly 方法和 CodeAccessPermission.Deny 安全操作应使用只由那些与.NET 安全性的高级知识。 应当对使用这些安全操作的代码进行安全检查。|
 |[CA2108:检查有关值类型的声明性安全](../code-quality/ca2108-review-declarative-security-on-value-types.md)|公共或受保护值类型受数据访问或链接要求保护。|
 |[CA2109:检查可见的事件处理程序](../code-quality/ca2109-review-visible-event-handlers.md)|检测到公共事件处理方法或受保护事件处理方法。 除非绝对必要，否则不应公开事件处理方法。|
 |[CA2111:指针不应是可见](../code-quality/ca2111-pointers-should-not-be-visible.md)|指针不是私有、内部或只读指针。 恶意代码可以更改指针的值，这样就有可能访问内存中的任意位置或导致应用程序或系统故障。|

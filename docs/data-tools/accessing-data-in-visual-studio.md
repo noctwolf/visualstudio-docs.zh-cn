@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5403803a4da0821978a8c6bbfc31e45c31104640
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818223"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715274"
 ---
 # <a name="access-data-in-visual-studio"></a>在 Visual Studio 中访问数据
 
@@ -152,6 +152,6 @@ C++使用 Microsoft Azure 存储空间的程序可以使用[Microsoft Azure 存�
 
 [LINQ （语言集成查询）](/dotnet/csharp/linq/)&mdash;介绍内置 C# 和 Visual Basic 中，以及常见模型用于查询关系数据库、 XML 文档、 数据集和内存中集合的查询功能。
 
-[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;讨论使用 XML 数据，调试 XSLT，.NET Framework XML 功能，以及 XML 查询的体系结构。
+[Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)&mdash;讨论使用 XML 数据，调试 XSLT.NET XML 功能，以及 XML 查询的体系结构。
 
-[XML 文档和数据](/dotnet/standard/data/xml/index)&mdash;提供简要介绍了如何全面、 集成的一组类，使用 XML 文档和.NET Framework 中的数据。
+[XML 文档和数据](/dotnet/standard/data/xml/index)&mdash;提供简要介绍了如何全面、 集成的一组类，使用 XML 文档和.NET 中的数据。

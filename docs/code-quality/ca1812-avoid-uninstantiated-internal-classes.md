@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841435"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714266"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812:避免未实例化的内部类
 
@@ -58,9 +58,9 @@ ms.locfileid: "65841435"
 
 若要修复此规则的冲突，请删除类型或添加使用它的代码。 如果该类型仅包含`static`向要阻止编译器发出的默认公共实例构造函数的类型的方法，添加以下项之一：
 
-- 私有构造函数的类型的目标.NET Framework 1.0 和 1.1 版。
-
 - `static`修饰符C#类型的目标[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]或更高版本。
+
+- 私有构造函数的类型的目标.NET Framework 1.0 和 1.1 版。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
