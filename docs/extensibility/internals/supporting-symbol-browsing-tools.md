@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331206"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746011"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支持符号浏览工具
-**对象浏览器**，**类视图**，**调用浏览器**并**查找符号结果**工具提供浏览功能在 Visual Studio 中的符号。 这些工具显示的符号的层次结构树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和不同组件中包含其他语言元素。 这些组件包括 Visual Studio 项目中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。
+**对象浏览器**，**类视图**，**调用浏览器**并**查找符号结果**工具提供浏览功能在 Visual Studio 中的符号。 这些工具显示的符号的层次结构树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和不同组件中包含其他语言元素。 这些组件包括 Visual Studio 项目、.NET Framework 的外部组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。
 
 ## <a name="symbol-browsing-libraries"></a>符号浏览库
  为语言实施者，可以通过创建跟踪您的组件中的符号，并向 Visual Studio 对象管理器通过一组接口提供的符号列表的库来扩展 Visual Studio 符号浏览功能。 描述一个库<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2>接口。 Visual Studio 对象管理器响应针对新数据的请求来自的符号浏览工具通过从库中获取数据并将其组织。 随后将填充，或使用所请求的数据更新工具。 若要获取对 Visual Studio 对象管理器中，引用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>，传递<xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager>服务 ID 到`GetService`方法。

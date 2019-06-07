@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678808"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746676"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>Visual Studio enterprise 的 IntelliTrace (C#，Visual Basic 中， C++)
 
@@ -33,7 +31,7 @@ ms.locfileid: "65678808"
 
 - 记录特定事件
 
-- 检查相关代码、调试程序事件期间“局部变量”窗口中显示的数据以及函数调用信息
+- 检查相关代码、调试程序事件期间“局部变量”  窗口中显示的数据以及函数调用信息
 
 - 调试难以重现或在部署中出现的错误
 
@@ -44,7 +42,6 @@ ms.locfileid: "65678808"
 |||
 |-|-|
 |**使用 IntelliTrace 调试应用程序：**<br /><br /> - 我想查看以前的事件。<br />- 我想查看以前事件的调用信息。<br />- 保存我的 IntelliTrace 会话。<br />- 控制 IntelliTrace 收集的数据。|- [检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)<br />- [演练：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [历史调试](../debugger/historical-debugging.md)|
-|**在测试管理器中，在测试会话期间收集 IntelliTrace 数据**|- [在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**从已部署的应用程序中收集 IntelliTrace 数据**|- [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**从 IntelliTrace 日志文件（.iTrace 文件）中开始调试。**|- [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)|
 
@@ -61,7 +58,7 @@ ms.locfileid: "65678808"
 
 ## <a name="IntelliTraceVSTraditional"></a>为何使用 IntelliTrace 进行调试？
 
-传统或实时调试仅显示应用程序的当前状态以及有关过去事件的有限数据。 要么必须根据应用程序的当前状态推断这些事件，要么必须通过重新运行应用程序以重新生成这些事件。
+传统或实时  调试仅显示应用程序的当前状态以及有关过去事件的有限数据。 要么必须根据应用程序的当前状态推断这些事件，要么必须通过重新运行应用程序以重新生成这些事件。
 
 IntelliTrace 通过记录特定事件和这些时间点的数据，扩展此传统调试体验。 这让你能够不重启应用程序即可查看应用程序中发生了什么，特别是在单步执行到 Bug 处时。 IntelliTrace 在传统调试期间会默认启用，并以不可见的方式自动收集数据。 这样，你即可轻松地在传统调试和 IntelliTrace 调试之间进行切换来查看该记录信息。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)和[IntelliTrace 收集哪些数据？](#WhatData)
 
@@ -70,8 +67,6 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 你可以从这些源中保存 IntelliTrace 数据：
 
 - Visual Studio 2015 Enterprise 或更高版本或以前版本的 Visual Studio Ultimate 中的 IntelliTrace 会话。
-
-- Microsoft 测试管理器中的测试会话
 
 - IIS 上托管的 ASP.NET Web 应用程序，或使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用）时在部署中运行的 SharePoint 2010 和 SharePoint 2013 应用程序。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)并[监视使用 Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx)。
 
@@ -84,10 +79,6 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 - 发生异常。
 
      如果不使用 IntelliTrace，你会获得有关异常的消息，但不会获得有关导致异常的事件的大量信息。 可以检查调用堆栈，以查看导致异常的调用链，但不能查看这些调用过程中发生的事件序列。 如果使用 IntelliTrace，你可以检查在异常之前发生的事件。
-
-- 你的应用程序在测试计算机上崩溃，但在开发计算机上成功运行。
-
-     可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[手动测试中的更多诊断数据收集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)并[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。
 
 - 在已部署的应用程序中发生 Bug 或崩溃。
 
@@ -105,13 +96,13 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - **调试器事件**
 
-     IntelliTrace 始终记录 Visual Studio 调试器中发生的事件。 例如，启动应用程序是一个调试程序事件。 其他调试程序事件包括会导致应用程序中断执行的停止事件。 例如，你的程序命中断点、命中跟踪点或执行“步骤”命令。
+     IntelliTrace 始终记录 Visual Studio 调试器中发生的事件。 例如，启动应用程序是一个调试程序事件。 其他调试程序事件包括会导致应用程序中断执行的停止事件。 例如，你的程序命中断点、命中跟踪点或执行“步骤”  命令。
 
      默认情况下，有助于提高性能，IntelliTrace 不记录调试器事件每个可能值。 而是记录以下值：
 
-  - “局部变量”窗口中的值。 请将“局部变量”窗口保持打开状态以查看这些值。
+  - “局部变量”  窗口中的值。 请将“局部变量”  窗口保持打开状态以查看这些值。
 
-  - “自动”窗口中的值（仅当“自动”窗口处于打开状态时）
+  - “自动”  窗口中的值（仅当“自动”  窗口处于打开状态时）
 
   - 在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。
 
@@ -174,7 +165,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 默认情况下，IntelliTrace 仅收集所选 IntelliTrace 事件的数据。 这可能会让应用程序的速度变慢，也可能不会，具体取决于代码的结构和组织。 例如，如果 IntelliTrace 经常记录某个事件，则这可能会让应用程序的速度变慢。 它还可能会让你考虑重构应用程序。
 
-收集调用信息可能会让应用程序的速度显著变慢。 它还可能增加您保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要尽可能减少这些影响，请仅收集你关注的模块的调用信息。  若要更改 .iTrace 文件的最大大小，请转到“工具”、“选项”、IntelliTrace、“高级”。
+收集调用信息可能会让应用程序的速度显著变慢。 它还可能增加您保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要尽可能减少这些影响，请仅收集你关注的模块的调用信息。  若要更改 .iTrace 文件的最大大小，请转到“工具”  、“选项”  、IntelliTrace  、“高级”  。
 
 ### <a name="blogs"></a>博客
 

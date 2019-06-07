@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408625"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746154"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据 (C#，Visual Basic 中， C++)
 
@@ -37,7 +37,6 @@ ms.locfileid: "63408625"
     |**源**|**请参阅**|
     |----------------|-------------|
     |Visual Studio Enterprise（但不是 Professional 或 Community 版）中的 IntelliTrace 会话|[IntelliTrace 功能](../debugger/intellitrace-features.md)|
-    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> 你希望做什么？
@@ -57,17 +56,17 @@ ms.locfileid: "63408625"
 
 - 如果 .iTrace 文件附加到 Team Foundation Server 工作项，请执行该工作项中的以下步骤：
 
-    - 在“所有链接” 下，找到 .iTrace 文件。 打开此文件。
+    - 在“所有链接”  下，找到 .iTrace 文件。 打开此文件。
 
          \- 或 -
 
-    - 在“重现步骤” 下，选择“IntelliTrace”  链接。
+    - 在“重现步骤”  下，选择“IntelliTrace”  链接。
 
 > [!TIP]
-> 如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace” 、“显示日志摘要” 。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。
+> 如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace”  、“显示日志摘要”  。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。
 
 ## <a name="Understand"></a> 理解 IntelliTrace 日志
- .iTrace 文件的以下各节中的某些内容只有当你从特定源（如从测试管理器或 SharePoint 应用程序）收集数据时才会显示。
+ 某些.iTrace 文件中的以下部分会显示仅当您收集的数据从特定的源，例如，从 SharePoint 应用程序。
 
 |**节**|**包含**|**集合源**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ ms.locfileid: "63408625"
 |[分析](#Analysis)|仅限于 SharePoint 2010 和 SharePoint 2013 应用程序。 诊断 IntelliTrace 和 SharePoint 事件，如调试器事件、ULS 事件、未经处理的异常以及 Microsoft Monitoring Agent 记录的其他数据。|Microsoft Monitoring Agent，或者独立收集器或与 System Center 2012 R2 Operations Manager|
 |[系统信息](#SystemInfo)|主机系统的设置和规范|所有源|
 |[线程列表](#ThreadsList)|在集合期间运行的线程|所有源|
-|[测试数据](#TestData)|从测试会话测试步骤及其结果|测试管理器|
 |[模块](#Modules)|目标进程按其加载顺序加载的模块。|所有源|
 |[Web 请求](#Modules)|Web 请求数据进行 IIS 生产 web 应用程序和 SharePoint 2010 和 SharePoint 2013|Microsoft Monitoring Agent 和独立收集器|
 
@@ -84,7 +82,7 @@ ms.locfileid: "63408625"
 
 - 选择列标题对数据进行排序。
 
-- 使用搜索框筛选数据。 纯文本搜索可搜索除时间列以外的所有列。 还可以通过每列一个筛选器来筛选到特定列的搜索。 键入没有空格、冒号 (**:**) 和搜索值的列名。 在列名后加分号 (**;**) 可添加另一列和搜索值。
+- 使用搜索框筛选数据。 纯文本搜索可搜索除时间列以外的所有列。 还可以通过每列一个筛选器来筛选到特定列的搜索。 键入没有空格、冒号 ( **:** ) 和搜索值的列名。 在列名后加分号 ( **;** ) 可添加另一列和搜索值。
 
      例如，若要查找“Description”  列中具有“slow”一词的性能事件，应键入：
 
@@ -97,7 +95,7 @@ ms.locfileid: "63408625"
 
 ##### <a name="to-start-debugging-from-a-performance-event"></a>从性能事件开始调试
 
-1. 在“性能冲突” 下，查看记录的性能事件、其总执行时间以及其他事件信息。 然后，深入查看在特定性能事件期间调用的方法。
+1. 在“性能冲突”  下，查看记录的性能事件、其总执行时间以及其他事件信息。 然后，深入查看在特定性能事件期间调用的方法。
 
      ![查看性能事件详细信息](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
@@ -128,11 +126,11 @@ ms.locfileid: "63408625"
 
 ##### <a name="to-start-debugging-from-an-exception"></a>从异常开始调试
 
-1. 在“异常数据” 下，查看记录的异常事件，它们的类型、消息以及异常发生的时间。 若要深入查看代码，请从异常组中的最近事件开始调试。
+1. 在“异常数据”  下，查看记录的异常事件，它们的类型、消息以及异常发生的时间。 若要深入查看代码，请从异常组中的最近事件开始调试。
 
      ![从异常事件开始调试](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
-     也可以直接双击事件。 如果未分组事件，请选择“调试此事件” 。
+     也可以直接双击事件。 如果未分组事件，请选择“调试此事件”  。
 
      如果应用程序代码发生异常，Visual Studio 将转到发生异常的位置。
 
@@ -143,9 +141,9 @@ ms.locfileid: "63408625"
     |**列**|**显示**|
     |----------------|-------------------|
     |**类型**|异常的 .NET 类型|
-    |“最新消息” （对于分组异常）或“消息”  （对于未分组异常）|异常提供的消息|
-    |“计数” （对于分组异常）|引发异常的次数|
-    |“线程 ID” （对于未分组异常）|引发异常的线程的 ID|
+    |“最新消息”  （对于分组异常）或“消息”  （对于未分组异常）|异常提供的消息|
+    |“计数”  （对于分组异常）|引发异常的次数|
+    |“线程 ID”  （对于未分组异常）|引发异常的线程的 ID|
     | 或“向左键” |引发异常时记录的时间戳|
     |**调用堆栈**|异常的调用堆栈。<br /><br /> 若要查看调用堆栈，请在该列表中选择异常。 调用堆栈显示在异常列表下面。|
 
@@ -168,7 +166,7 @@ ms.locfileid: "63408625"
 
     ![IntelliTrace 日志&#45;输入 SharePoint 相关 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3. 在“请求事件” 下，检查事件。 从顶部开始，事件按发生顺序显示。
+3. 在“请求事件”  下，检查事件。 从顶部开始，事件按发生顺序显示。
 
    1. 选择事件，查看其详细信息。
 
@@ -213,11 +211,11 @@ ms.locfileid: "63408625"
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>从特定线程开始调试
 
-1. 在“线程列表” 下选择线程。
+1. 在“线程列表”  下选择线程。
 
-2. 在“线程列表” 的底部，选择“启动调试” 。 也可以双击线程。
+2. 在“线程列表”  的底部，选择“启动调试”  。 也可以双击线程。
 
-    从应用开始处开始调试，双击“主线程” 。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+    从应用开始处开始调试，双击“主线程”  。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
    用户创建的线程数据可能比服务器创建的线程更加有用，并且能管理 IIS 托管的 Web 应用。
 
@@ -228,14 +226,11 @@ ms.locfileid: "63408625"
 |**开始时间**|线程创建时间|
 |**结束时间**|线程完成时间|
 
-### <a name="TestData"></a> 测试数据
- 测试应用的同时检查测试管理器记录的 IntelliTrace 数据。
-
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>从特定测试步骤开始调试
 
-1. 展开“测试步骤网格” 。 选择测试步骤。
+1. 展开“测试步骤网格”  。 选择测试步骤。
 
-2. 在“测试步骤网格” 的底部，选择“启动调试” 。 也可以双击测试步骤。
+2. 在“测试步骤网格”  的底部，选择“启动调试”  。 也可以双击测试步骤。
 
      这将从选定测试步骤后的第一个有效 IntelliTrace 事件开始调试。
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927452"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745664"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中特定错误的疑难解答
 本文列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供了步骤来解决每个问题。
@@ -36,7 +36,7 @@ ms.locfileid: "62927452"
 
  首先，请确保将服务器配置为将相关联 *.application*内容类型"应用程序/x 的 ms-应用程序。"
 
- 如果将服务器配置正确，请检查[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]在计算机上安装。 如果[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]已安装，并且你仍看到此问题，请尝试卸载并重新安装[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]重新注册客户端上的内容类型。
+ 如果将服务器配置正确，检查您的计算机上安装了.NET Framework 2.0。 如果安装.NET Framework 2.0，并且你仍遇到此问题，请尝试卸载并重新安装.NET Framework 2.0 重新注册内容类型在客户端上。
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>错误消息指出，"无法检索应用程序。 在部署中缺少的文件"或"应用程序下载已中断、 检查网络错误中并稍后重试"
  此消息表示所引用的一个或多个文件[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]无法下载的清单。 若要调试此错误的最简单方法是尝试下载该 URL 的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]说不能下载。 下面是一些可能的原因：

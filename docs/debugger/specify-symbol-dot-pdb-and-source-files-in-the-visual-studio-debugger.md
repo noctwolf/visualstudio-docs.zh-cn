@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045337"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746257"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#， C++，Visual Basic 中， F#)
 
@@ -76,7 +76,7 @@ ms.locfileid: "60045337"
 
      可以使用符号服务器包括：
 
-     **公共 Microsoft 符号服务器**:若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以获取符号的 Windows 操作系统、 MDAC、 IIS、 ISA 和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]从公共 Microsoft 符号服务器。
+     **公共 Microsoft 符号服务器**:若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以从公共 Microsoft 符号服务器获取的 Windows 操作系统、 MDAC、 IIS、 ISA、 和.NET Framework 的符号。
 
      **内部网络或本地计算机上的符号服务器**：你的团队或公司可为你自己的产品创建符号服务器，并作为外部源符号的缓存。 你自己的计算机上可能具有符号服务器。
 

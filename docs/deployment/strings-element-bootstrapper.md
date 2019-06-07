@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5766beb87626efd11ba50422d5f811d1ae1d91e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898693"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747413"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;字符串&gt;元素 （引导程序）
 定义产品名称、 包名称和安装错误消息的本地化的字符串。
@@ -52,7 +52,7 @@ ms.locfileid: "62898693"
 |`Name`|必需。 字符串的名称。|
 
 ## <a name="example"></a>示例
- 下面的代码示例指定了所有的英文字符串[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装程序。
+ 下面的代码示例指定英语字符串的所有.NET Framework 安装程序。
 
 ```xml
 <Strings>

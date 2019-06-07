@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42756b21e631ec14e9c590833f6f0e95a317cc22
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898719"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747459"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt;元素 （引导程序）
 `RelatedProducts`元素定义取决于或当前产品中包含其他产品。
@@ -74,7 +74,7 @@ ms.locfileid: "62898719"
 |`Code`|所含的产品，由指定的代号`ProductCode`属性的`Product`元素。 有关详细信息，请参阅[\<产品 > 元素](../deployment/product-element-bootstrapper.md)。|
 
 ## <a name="example"></a>示例
- 下面的代码示例指定使用是否安装了 Microsoft Installer [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，因此不需要单独安装。
+ 下面的代码示例指定 Microsoft 安装程序随.NET Framework 中，安装，因此不需要单独安装。
 
 ```xml
 <RelatedProducts>

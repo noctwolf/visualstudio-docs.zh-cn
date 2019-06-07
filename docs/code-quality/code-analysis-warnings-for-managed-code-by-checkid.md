@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a36eb66e0308fddbc17e5ea9627562c2939f4bd7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714508"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745475"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>按 checkid 排列的托管代码的代码分析警告
 
@@ -492,7 +492,7 @@ ms.locfileid: "66714508"
 | CA2225 | [CA2225:运算符重载具有命名的备用项](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |检测到运算符重载，但未找到预期的指定备用方法。 命名的备用成员提供了对与运算符相同的功能的访问，它提供给开发人员，在用不支持重载运算符的语言进行编程时使用。 |
 | CA2226 | [CA2226:运算符应有对称重载](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | 某个类型实现了相等运算符或不等运算符，却未实现相反运算符。 |
 | CA2227 |[CA2227:集合属性应为只读](../code-quality/ca2227-collection-properties-should-be-read-only.md) |使用可写的集合属性，用户可以将该集合替换为不同的集合。 只读属性禁止替换该集合，但仍允许设置单个成员。 |
-| CA2228 | [CA2228:不要发行未发布的资源格式](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | 通过使用预发布版本的.NET Framework 生成的资源文件可能不是可由支持的.NET Framework 版本。 |
+| CA2228 | [CA2228:不要发行未发布的资源格式](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | 通过使用.NET 的预发布版本生成的资源文件可能不是可由支持的.NET 版本。 |
 | CA2229 | [CA2229：实现序列化构造函数](../code-quality/ca2229-implement-serialization-constructors.md) | 要修复与该规则的冲突，请实现序列化构造函数。 对于密封类，请使构造函数成为私有；否则，请使构造函数成为受保护。 |
 | CA2230 | [CA2230:自变量使用 params](../code-quality/ca2230-use-params-for-variable-arguments.md) | 公共或受保护类型包含一个使用 VarArgs 调用约定（而不是 params 关键字）的公共或受保护方法。 |
 | CA2231 | [CA2231：重写 ValueType.Equals 时应重载相等运算符](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | 值类型重写 Object.Equals，但未实现相等运算符。 |

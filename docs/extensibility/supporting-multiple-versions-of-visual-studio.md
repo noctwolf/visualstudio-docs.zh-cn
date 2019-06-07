@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8469f89e2dd013be9760dc80c6f96ea655b80699
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316864"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745994"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支持多个版本的 Visual Studio
 术语 *-并行*意味着您可以安装和维护多个版本的同一台计算机上的产品。 对 Vspackage，这意味着用户可以有多个 Visual Studio 版本安装在同一台计算机上。 但是，不能具有你的 Vspackage 加载到单个版本的 Visual Studio 的并行的版本。
@@ -36,7 +36,7 @@ ms.locfileid: "66316864"
    有关详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)以及[组件管理](../extensibility/internals/component-management.md)。
 
   > [!NOTE]
-  > 安装版本的 Visual Studio 还会安装相应版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 例如，在同一台计算机上安装 Visual Studio 2010 和 Visual Studio 2012 还会安装版本 4.0 和 4.5 的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]分别。
+  > 安装版本的 Visual Studio 还会安装.NET Framework 的相应版本。 例如，在同一台计算机上安装 Visual Studio 2010 和 Visual Studio 2012 还会安装版本 4.0 和 4.5 的.NET Framework 中，分别。
 
 ## <a name="in-this-section"></a>本节内容
 - [选择之间共享和版本控制的 Vspackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)说明了如何解决你的 VSPackage 中的并行问题。

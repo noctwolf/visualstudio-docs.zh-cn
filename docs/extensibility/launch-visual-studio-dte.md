@@ -1,20 +1,21 @@
 ---
-title: 启动 Visual Studio 中使用 DTE
+title: 使用 DTE 启动 Visual Studio
+titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
 author: gewarren
-ms.author: ''
+ms.author: gewarren
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f597c1a8312edde94539285d68750f0cf127790e
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64879354"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747007"
 ---
-# <a name="launch-visual-studio-using-dte"></a>启动 Visual Studio 中使用 DTE
+# <a name="launch-visual-studio-using-dte"></a>使用 DTE 启动 Visual Studio
 
 从 Visual Studio 2017 开始，若要启动 Visual Studio 中使用 DTE 的机制是用于启动 Visual Studio 的早期版本不同。 此更改是必需的因为 Visual Studio 2017 和更高版本支持通过并行安装的主要版本 （例如，您可以使用预览和并行安装的发行版）。
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263478"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747429"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果在 Windows Server 上使用 Internet 信息服务 (IIS) 和你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。
@@ -41,7 +41,7 @@ ms.locfileid: "66263478"
 
   但是，可以禁用此选项通过清除**使用".deploy"文件扩展名**选项卡上[Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))，在这种情况下必须配置 Web 服务器以允许所有文件扩展名在应用程序中使用。
 
-  必须配置 *.manifest*， *.application*，并 *.deploy*，例如，如果您将不具有安装的 IIS [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，或如果您是使用另一台 Web 服务器 (例如 Apache)。
+  您必须配置 *.manifest*， *.application*，并 *.deploy*，例如，如果使用的的 IIS 未安装.NET Framework 中，或如果您是使用另一台 Web 服务器 (例如 Apache)。
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 和安全套接字层 (SSL)
  一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序可以正常工作通过 SSL，除 Internet Explorer 时引发的 SSL 证书相关提示。 错误的证书，如当站点名称不匹配或证书已过期时，可以引发提示。 若要使[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]工作通过 SSL 连接，请确保该证书是最新的并且证书数据与匹配的站点数据。
@@ -121,7 +121,7 @@ ms.locfileid: "66263478"
   有关 Windows Server 上配置 MIME 类型的具体说明，请参阅 Microsoft 知识库文章 KB326965，"IIS 6.0 不会处理未知的 MIME 类型"处[ http://support.microsoft.com/default.aspx?scid=kb; en-我们; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。
 
 ## <a name="content-type-mappings"></a>内容类型映射
- 通过 HTTP，内容类型 （也称为 MIME 类型） 的发布时 *.application*文件应为"应用程序/x 的 ms-应用程序。" 如果您有[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]安装在服务器上，这会为你自动设置。 如果未安装，则您需要创建 MIME 类型关联的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序虚拟根 （或整个服务器）。
+ 通过 HTTP，内容类型 （也称为 MIME 类型） 的发布时 *.application*文件应为"应用程序/x 的 ms-应用程序。" 如果必须在服务器上安装.NET Framework 2.0，这将会自动设置为你。 如果未安装，则您需要创建 MIME 类型关联的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序虚拟根 （或整个服务器）。
 
  如果部署使用 IIS 服务器，运行<em>inetmgr。</em>exe，并添加一个新的内容类型的"应用程序/x 的 ms-应用程序" *.application*扩展。
 

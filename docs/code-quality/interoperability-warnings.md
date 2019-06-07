@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823590"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745133"
 ---
 # <a name="interoperability-warnings"></a>互操作性警告
 
@@ -32,7 +32,7 @@ ms.locfileid: "62823590"
 | [CA1400:P/Invoke 入口点应该存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | 公共或受保护方法标有 System.Runtime.InteropServices.DllImportAttribute 特性。 未能找到非托管库，或者未能将方法与库中的函数匹配。 |
 | [CA1401:P/Invokes 应该是不可见](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | 中的公共类型的公共或受保护方法具有 System.Runtime.InteropServices.DllImportAttribute 特性 （还通过在 Visual Basic 中的 Declare 关键字实现）。 这些方法不能公开。 |
 | [CA1402:避免在 COM 可见接口中的重载](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | 在向 COM 客户端公开重载的方法时，只有第一个方法重载保留其名称。 对于后续重载，将为其指定唯一名称，方法是在其名称后面追加一个下划线字符 (_) 和一个与该重载的声明顺序对应的整数。 |
-| [CA1403:自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | 某个 COM 可见的值类型用设置为 LayoutKind.Auto 的 System.Runtime.InteropServices.StructLayoutAttribute 特性标记。这些类型的布局可以更改.NET Framework 中，将中断要求特定布局的 COM 客户端的不同版本之间。 |
+| [CA1403:自动布局类型不应对 COM 可见](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | 某个 COM 可见的值类型用设置为 LayoutKind.Auto 的 System.Runtime.InteropServices.StructLayoutAttribute 特性标记。这些类型的布局可以将中断要求特定布局的 COM 客户端的.NET 版本之间进行更改。 |
 | [CA1404:紧接在 P/Invoke 之后调用 GetLastError](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | 调用了 Marshal.GetLastWin32Error 方法或等效[!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)]GetLastError 函数，并紧位于前面的调用不到的平台调用方法。 |
 | [CA1405:COM 可见类型的基类型应对 COM 可见](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | 某个 COM 可见的类型是从非 COM 可见的类型派生而来。 |
 | [CA1406:避免对 Visual Basic 6 客户端的 Int64 参数](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Visual Basic 6 COM 客户端不能访问 64 位整数。 |

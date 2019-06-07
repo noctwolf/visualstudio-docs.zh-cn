@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab3478f701cade458ffdb97caf4541a88f52230e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898745"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745763"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;包&gt;元素 （引导程序）
 `Package`元素是包文件内的顶级 XML 元素。
@@ -147,10 +147,10 @@ ms.locfileid: "62898745"
 |--------------------| - |
 | `Culture` | 必需。 定义用于此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。 |
 | `Name` | 必需。 如向开发人员工具中显示的包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`并`Culture`的属性`Package`。 |
-| `LicenseAgreement` | 可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 (*.txt*) 或丰富文本格式。 (.rtf) |
+| `LicenseAgreement` | 可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 ( *.txt*) 或丰富文本格式。 (.rtf  ) |
 
 ## <a name="example"></a>示例
- 下面的代码示例显示了用于重新分发的完整包文件[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
+ 下面的代码示例显示了用于重新分发.NET Framework 2.0 的完整包文件。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

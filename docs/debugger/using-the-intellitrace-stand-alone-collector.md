@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407632"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746111"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>使用 IntelliTrace 独立收集器 (C#，Visual Basic)
 
@@ -84,7 +84,7 @@ ms.locfileid: "63407632"
 
    - **Microsoft 下载中心**：
 
-     1. 选择 **IntelliTraceCollector.exe**旁的“下载” 。
+     1. 选择 **IntelliTraceCollector.exe**旁的“下载”  。
 
      2. 将 IntelliTraceCollector.exe 保存到收集器目录，如：**C:\IntelliTraceCollector**
 
@@ -106,12 +106,12 @@ ms.locfileid: "63407632"
 
    2. 浏览到收集器目录，如：**C:\IntelliTraceCollector**
 
-   3. 使用 **expand** 命令来扩展 IntelliTraceCollection.cab，加上最后的句点（“.”）：
+   3. 使用 **expand** 命令来扩展 IntelliTraceCollection.cab，加上最后的句点（“.”）  ：
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > 该句点（“.”）保留包含本地化收集计划的子文件夹。
+       > 该句点（“.”）  保留包含本地化收集计划的子文件夹。
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> 设置回收器目录的权限
 
@@ -151,13 +151,13 @@ ms.locfileid: "63407632"
 
     1. 以管理员身份打开 PowerShell 命令窗口。
 
-        1. 依次选择“开始” 、“所有程序” 、“附件” 、“Windows PowerShell” 。
+        1. 依次选择“开始”  、“所有程序”  、“附件”  、“Windows PowerShell”  。
 
         2. 选择下列步骤之一：
 
-            - 在 64 位操作系统上，打开“Windows PowerShell” 快捷菜单。 选择 **“以管理员身份运行”**。
+            - 在 64 位操作系统上，打开“Windows PowerShell”  快捷菜单。 选择 **“以管理员身份运行”** 。
 
-            - 在 32 位操作系统上，打开“Windows PowerShell (x86)” 快捷菜单。 选择 **“以管理员身份运行”**。
+            - 在 32 位操作系统上，打开“Windows PowerShell (x86)”  快捷菜单。 选择 **“以管理员身份运行”** 。
 
     2. 在 PowerShell 命令窗口，使用 **导入模块** 命令导入 **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**。
 
@@ -197,17 +197,17 @@ ms.locfileid: "63407632"
 
      1. 打开 .iTrace 文件目录的“属性”  。
 
-     2. 在“安全”  选项卡上，选择“编辑” ，然后单击“添加” 。
+     2. 在“安全”  选项卡上，选择“编辑”  ，然后单击“添加”  。
 
-     3. 确保“内置安全主体”  出现在“选择此对象类型”  框中。 如果“内置安全主体”未在那里出现，请选择“对象类型”进行添加。
+     3. 确保“内置安全主体”  出现在“选择此对象类型”  框中。 如果“内置安全主体”未在那里出现，请选择“对象类型”  进行添加。
 
-     4. 确保本地计算机出现在“从此处”  框中。 如果本地计算机未在那里出现，请选择“位置”进行更改。
+     4. 确保本地计算机出现在“从此处”  框中。 如果本地计算机未在那里出现，请选择“位置”  进行更改。
 
      5. 在“输入要选择的对象名称”  框中，添加 Web 应用或 SharePoint 应用程序的应用程序池。
 
-     6. 选择“检查名称”  来解析名称。 选择 **“确定”**。
+     6. 选择“检查名称”  来解析名称。 选择 **“确定”** 。
 
-     7. 确保该应用程序池拥有“完全控制” 。
+     7. 确保该应用程序池拥有“完全控制”  。
 
 ## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 从 Web 应用程序或 SharePoint 应用程序中收集数据
 
@@ -377,9 +377,7 @@ ms.locfileid: "63407632"
 
 ## <a name="WhereElse"></a> 可从哪些其他渠道获取 IntelliTrace 数据？
 
-- 从 IntelliTrace 调试 Visual Studio Enterprise 中的会话，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
-
-- Microsoft 测试管理器中的测试会话，请参阅[如何：收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。
+你可以获取 IntelliTrace 数据的 intellitrace 调试 Visual Studio Enterprise 中的会话。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
 ## <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？
  [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)

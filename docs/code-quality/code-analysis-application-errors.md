@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540867"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745201"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 
@@ -47,7 +47,7 @@ ms.locfileid: "62540867"
 |[CA0066](ca0066.md)|值*VersionID*提供给 **/targetframeworkversion**不是可识别的版本。|
 |[CA0067](ca0067.md)|找不到的目录。|
 |[CA0068](ca0068.md)|调试信息未找到目标程序集*AssemblyName*。|
-|[CA0069](ca0069.md)|使用另一种平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*相反。 为获得最佳的分析结果，请确保安装正确的.NET Framework。|
+|[CA0069](ca0069.md)|使用另一种平台。 *FrameworkVersion1*找不到。 使用*FrameworkVersion2*相反。 为获得最佳的分析结果，请确保安装正确的 framework 版本。|
 |[CA0070](ca0070.md)|无法加载程序集或类型，因为安全权限。|
 |[CA0501](ca0501.md)|无法读取输出报告。|
 |[CA0502](ca0502.md)|不支持的语言。|

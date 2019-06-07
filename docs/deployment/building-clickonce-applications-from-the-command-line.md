@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929159"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746088"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
-在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，可以生成命令行中的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，您可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]仅有的另一台计算机上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装。 这允许你在重现生成使用自动化的过程，例如，在中心生成实验室或使用高级脚本编写技术生成项目本身的范围之外。
+在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，可以生成命令行中的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，您可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]上已安装的.NET Framework 的另一台计算机。 这允许你在重现生成使用自动化的过程，例如，在中心生成实验室或使用高级脚本编写技术生成项目本身的范围之外。
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 来重现 ClickOnce 应用程序部署
  当您调用 msbuild /target:publish 在命令行时，它指示 MSBuild 系统生成项目，并创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序 publish 文件夹中。 这相当于选择**发布**命令在 IDE 中。
@@ -73,7 +73,7 @@ ms.locfileid: "62929159"
 
 5. 键入 `msbuild /target:publish`。
 
-   上述步骤将生成完整[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]的子文件夹中的名为的项目的应用程序部署**发布**。 *CmdLineDemo.application*是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 文件夹*CmdLineDemo_1.0.0.0*包含的文件*CmdLineDemo.exe*并*CmdLineDemo.exe.manifest*，则[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 *Setup.exe*是引导程序、 其默认配置安装[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 DotNetFX 文件夹中包含的可再发行组件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 这是在 Web 上或者通过 UNC 或 CD/DVD 部署你的应用程序所需的文件的整个集。
+   上述步骤将生成完整[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]的子文件夹中的名为的项目的应用程序部署**发布**。 *CmdLineDemo.application*是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 文件夹*CmdLineDemo_1.0.0.0*包含的文件*CmdLineDemo.exe*并*CmdLineDemo.exe.manifest*，则[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序清单。 *Setup.exe*是引导程序，后者默认情况下配置为安装.NET Framework。 DotNetFX 文件夹包含.NET Framework 可再发行组件。 这是在 Web 上或者通过 UNC 或 CD/DVD 部署你的应用程序所需的文件的整个集。
 
 ## <a name="publish-properties"></a>发布属性
  在上面的过程中发布应用程序，以下属性是通过发布向导插入到项目文件。 这些属性直接影响如何[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]生成应用程序。

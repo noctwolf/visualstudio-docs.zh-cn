@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898128"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745618"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
-一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。
+一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括.NET Framework 和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。
 
  产品和包文件包含的顶级`Product`或`Package`元素，其中每个包含下列元素。
 
@@ -53,7 +53,7 @@ ms.locfileid: "62898128"
  `InstallChecks` 测试存在给定的包应执行该 setup.exe。 `PackageFiles` 列出所有安装过程可能需要安装，应指定的测试失败的包。 每个命令输入下命令执行所描述的测试之一`InstallChecks`，并指定了`PackageFile`运行应在测试失败。 可以使用`Strings`元素，以便可以使用一个安装二进制文件安装应用程序以任意数量的语言进行本地化的产品名称和错误消息。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示了用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下面的代码示例演示了用于安装.NET Framework 的完整的产品文件。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

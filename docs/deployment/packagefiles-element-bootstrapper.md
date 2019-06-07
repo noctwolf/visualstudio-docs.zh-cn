@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898706"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747516"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt;元素 （引导程序）
 `PackageFiles`元素包含`PackageFile`元素，后者定义为执行的安装包`Command`元素。
@@ -62,7 +62,7 @@ ms.locfileid: "62898706"
 | `Hash` | 可选。 包文件的 SHA1 哈希。 这用于在安装时验证文件的完整性。 如果无法从包文件计算相同的哈希，将不安装包。 |
 
 ## <a name="example"></a>示例
- 下面的代码示例定义为包[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可再发行组件包和依赖项，如 Windows 安装程序。
+ 下面的代码示例定义了用于.NET Framework 可再发行组件包和依赖项，如 Windows 安装程序的包。
 
 ```xml
 <PackageFiles>

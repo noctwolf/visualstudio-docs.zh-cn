@@ -1,5 +1,5 @@
 ---
-title: '如何：使用文本模板 ... '
+title: 如何：使用文本模板 ...
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993542"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747540"
 ---
-# <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
+# <a name="how-to--with-text-templates"></a>如何：使用文本模板 ...
 在 Visual Studio 中的文本模板提供任何类型的生成文本的有用的方法。 可以使用文本模板生成文本，在你的应用程序的一部分运行时和在设计时生成的某些项目代码。 本主题总结了最常要求"如何实现...？" 问题。
 
  本主题中的前面使用项目符号的多个答案是替代建议。
@@ -45,13 +45,14 @@ ms.locfileid: "62993542"
      在代码中，使用`this.Host.ResolvePath(filename)`来获取该文件的完整路径。
 
 ### <a name="invoke-methods-from-a-template"></a>调用模板中的方法
- 如果方法中已存在，例如，标准[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]类：
+
+如果方法中已存在，例如，.NET 类：
 
 - 使用\<#@assembly#> 指令来加载该程序集，并使用\<#@import#> 若要设置的命名空间上下文。 有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。
 
    如果您经常使用一组相同的程序集并导入指令，应考虑编写指令处理器。 在每个模板，可以调用指令处理器，它可以加载这些程序集和模型文件和设置的命名空间上下文。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
 
-  如果你要自行编写方法：
+如果你要自行编写方法：
 
 - 如果你正在编写运行时文本模板，编写一个具有与运行时文本模板相同的名称的分部类定义。 添加到此类的其他方法。
 
