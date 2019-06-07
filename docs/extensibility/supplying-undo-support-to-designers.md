@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331624"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747720"
 ---
 # <a name="supply-undo-support-to-designers"></a>向设计器提供撤消支持
 
@@ -29,7 +29,7 @@ ms.locfileid: "66331624"
 
 - 通过实现来支持提供持久性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>类。
 
-有关编写使用设计器的详细信息[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，请参阅[扩展设计时支持](/previous-versions/37899azc(v=vs.140))。
+有关编写使用.NET Framework 的设计器的详细信息，请参阅[扩展设计时支持](/previous-versions/37899azc(v=vs.140))。
 
 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供的默认撤消基础结构：
 
@@ -50,7 +50,7 @@ ms.locfileid: "66331624"
 ## <a name="when-to-use-explicit-designer-undo-support"></a>何时使用显式设计器的撤消支持
  如果他们使用称为视图适配器，不是由提供的图形用户界面设计器必须提供其自己撤消管理<xref:System.Windows.Forms.Control>。
 
- 出现这种可能会创建一个产品具有基于 web 的图形设计界面而不是一个[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-基于图形界面。
+ 出现这种可能使用的基于 web 的图形设计界面而不是基于.NET Framework 的图形界面创建产品。
 
  在这种情况下，则你需要使用 Visual Studio 通过注册此视图适配器<xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>，并提供一个显式撤消管理。
 
@@ -59,7 +59,7 @@ ms.locfileid: "66331624"
 ## <a name="undo-support-features-of-the-designer"></a>撤消支持功能的设计器
  环境 SDK 提供的接口提供所需的默认实现撤消支持，可由设计器不使用<xref:System.Windows.Forms.Control>基于其用户界面或标准的 CodeDOM 和持久性模型的类。
 
- <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>类派生自[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]<xref:System.ComponentModel.Design.UndoEngine>类使用的实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>类来管理撤消操作。
+ <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>类派生自.NET Framework<xref:System.ComponentModel.Design.UndoEngine>类使用的实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>类来管理撤消操作。
 
  Visual Studio 提供了以下功能，到设计器撤消：
 

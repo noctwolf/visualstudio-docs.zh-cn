@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79bbb413c31c77e59ec39b706d4937421096168f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927902"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747530"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;元素 （引导程序）
 `InstallChecks`元素支持启动各种对本地计算机以确保所有适当的应用程序的必备组件都已安装的测试。
@@ -144,7 +144,7 @@ ms.locfileid: "62927902"
  而下的元素`InstallChecks`定义要运行的测试，它们不执行它们。 若要执行的测试，必须创建`Command`元素下的`Commands`元素。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示`InstallChecks`元素，因为它使用的产品文件中[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下面的代码示例演示了`InstallChecks`元素，因为它产品文件中使用适用于.NET Framework。
 
 ```xml
 <InstallChecks>

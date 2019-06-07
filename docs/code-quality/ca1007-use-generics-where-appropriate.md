@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779705"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744769"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007:在适用处使用泛型
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779705"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 外部可见方法包含类型的引用参数<xref:System.Object?displayProperty=fullName>，并包含程序集针对[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
+ 外部可见方法包含类型的引用参数<xref:System.Object?displayProperty=fullName>，和包含程序集面向.NET Framework 2.0。
 
 ## <a name="rule-description"></a>规则说明
  引用参数是一个参数，通过修改`ref`(`ByRef`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 关键字。 为引用参数提供的自变量类型必须与引用参数类型完全匹配。 若要使用派生自引用参数类型的类型，该类型必须首先进行强制转换和分配给引用参数类型的变量。 使用泛型方法，所有类型，受约束，以传递给该方法，而无需第一个强制转换为引用参数类型的类型。

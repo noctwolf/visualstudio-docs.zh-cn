@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263490"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745608"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>ClickOnce 部署中的安全、版本控制和清单问题
 
@@ -59,7 +59,7 @@ ms.locfileid: "66263490"
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>在清单中指定单独的.NET Framework 程序集
 
-你的应用程序将无法加载如果您已手动编辑[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，以引用较旧版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]程序集。 例如，如果添加了对版本的 System.Net 程序集引用[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]之前在清单中指定的版本，则会出现错误。 一般情况下，不应尝试指定单个引用[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]程序集，作为版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]对运行应用程序被指定为应用程序清单中的依赖项。
+你的应用程序将无法加载如果您已手动编辑[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，以引用较旧版本的.NET Framework 程序集。 例如，如果添加到清单中指定的版本之前的.NET Framework 的版本的 System.Net 程序集的引用时，会发生错误。 一般情况下，您不应尝试指定单独的.NET Framework 程序集的引用如对其运行应用程序的.NET framework 的版本指定为应用程序清单中的依赖项。
 
 ## <a name="manifest-parsing-issues"></a>清单分析问题
 

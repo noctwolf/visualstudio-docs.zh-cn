@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc32ed6c4e696b18e89822baff461da0873a7ed5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dca2c7838ce40f8d24e3afbd898206d0cb9191
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898102"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747455"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;产品&gt;元素 （引导程序）
 `Product`元素是产品文件内的顶级 XML 元素。
@@ -145,7 +145,7 @@ ProductCode
 |`ProductCode`|该产品的唯一标识符。|
 
 ## <a name="example"></a>示例
- 下面的代码示例显示了用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 下面的代码示例显示了用于安装.NET Framework 的完整的产品文件。
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715191"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745543"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -85,7 +85,7 @@ Tableadapter 扩展标准数据适配器的功能通过封装一个已配置<xre
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和属性
 
-TableAdapter 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 这意味着你不能查找其文档中或**对象浏览器**。 在设计时，当你使用前面所述的向导之一创建。 在创建时分配到 TableAdapter 的名称基于你正在使用的表的名称。 例如，当创建基于一个名为数据库中的表的 TableAdapter `Orders`，名为 TableAdapter `OrdersTableAdapter`。 可以使用更改类名称的 TableAdapter**名称**属性中的**数据集设计器**。
+TableAdapter 类不是.NET 类型。 这意味着你不能查找其文档中或**对象浏览器**。 在设计时，当你使用前面所述的向导之一创建。 在创建时分配到 TableAdapter 的名称基于你正在使用的表的名称。 例如，当创建基于一个名为数据库中的表的 TableAdapter `Orders`，名为 TableAdapter `OrdersTableAdapter`。 可以使用更改类名称的 TableAdapter**名称**属性中的**数据集设计器**。
 
 以下是常用的方法和 Tableadapter 的属性：
 
@@ -122,7 +122,7 @@ Tableadapter 支持可以为 null 的类型`Nullable(Of T)`和`T?`。 若要深�
 
 默认情况下，创建包含相关的表的数据集时，将生成一个 TableAdapterManager 类。 若要防止此类生成的值更改`Hierarchical Update`为 false 将数据集属性。 当拖放到设计图面上的 Windows 窗体或 WPF 页的关系的表时，Visual Studio 声明类的成员变量。 如果不使用数据绑定，您必须手动将该变量的声明。
 
-TableAdapterManager 类不是属于[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 因此，你不能查找其文档中。 在设计时数据集创建过程的一部分创建。
+TableAdapterManager 类不是.NET 类型。 因此，你不能查找其文档中。 在设计时数据集创建过程的一部分创建。
 
 以下是常用的方法和属性`TableAdapterManager`类：
 

@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263200"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747483"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可以在多个版本 .NET Framework 上运行的应用程序
 可以部署应用程序面向.NET Framework 的多个版本的使用 ClickOnce 部署技术。 这将要求您生成并更新应用程序和部署清单。
 
 > [!NOTE]
-> 更改要面向的.NET framework 的多个版本的应用程序之前，应确保应用程序在运行.NET Framework 的多个版本。 版本的公共语言运行时之间的差异[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]与.NET Framework 2.0、.NET Framework 3.0 和.NET Framework 3.5。
+> 更改要面向的.NET framework 的多个版本的应用程序之前，应确保应用程序在运行.NET Framework 的多个版本。 版本公共语言运行时是与.NET Framework 2.0、.NET Framework 3.0 和.NET Framework 3.5 的.NET Framework 4 之间的差异。
 
  此过程需要执行以下步骤：
 
@@ -88,7 +88,7 @@ ms.locfileid: "66263200"
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. 更新的版本号`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 元素到是最低通用标准.NET Framework 的版本号。 例如，如果应用程序面向.NET Framework 3.5 和[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]，使用 2.0.50727.0 版本号和 XML 应如下所示：
+3. 更新的版本号`<assemblyIdentity>`Microsoft.Windows.CommonLanguageRuntime 元素到是最低通用标准.NET Framework 的版本号。 例如，如果应用程序面向.NET Framework 3.5 和.NET Framework 4，使用 2.0.50727.0 版本号和 XML 应如下所示：
 
    ```xml
    <dependency>

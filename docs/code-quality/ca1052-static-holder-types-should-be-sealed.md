@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842089"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744603"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052:应密封静态容器类型
 
@@ -46,7 +46,7 @@ ms.locfileid: "65842089"
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复此规则的冲突，请将标记为类型`sealed`或`NotInheritable`。 如果您的目标.NET Framework 2.0 或更高版本，更好的方法是将类型标记为`static`或`Shared`。 以这种方式，您无需专用的构造函数，以防止此类创建声明。
+若要修复此规则的冲突，请将标记为类型`sealed`或`NotInheritable`。 如果项目面向.NET Framework 2.0 或更高版本，更好的方法是将类型标记为`static`或`Shared`。 以这种方式，您无需专用的构造函数，以防止此类创建声明。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 

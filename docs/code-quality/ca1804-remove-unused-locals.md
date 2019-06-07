@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545743"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744598"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804:移除未使用的局部变量
 
@@ -40,7 +40,11 @@ ms.locfileid: "62545743"
  未使用的局部变量和不必要的赋值会增加程序集的大小并降低性能。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复此规则的冲突，请删除或使用本地变量。 请注意，C# 编译器的是附带[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]删除未使用的本地变量时`optimize`选项处于启用状态。
+
+若要修复此规则的冲突，请删除或使用本地变量。
+
+> [!NOTE]
+> C#编译器删除未使用的本地变量时`optimize`选项处于启用状态。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  如果变量是编译器发出，禁止显示此规则的警告。 如果性能和代码维护不关注的主要问题，则也可以禁止显示此规则的警告或禁用规则，安全。

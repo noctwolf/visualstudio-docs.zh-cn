@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406595"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746071"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。
@@ -37,7 +37,7 @@ ms.locfileid: "63406595"
 ### <a name="clickonce-data-directory"></a>ClickOnce 数据目录
  本地计算机上安装的每个 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序都有一个数据目录，该数据目录存储在用户的 Documents and Settings 文件夹中。 安装应用程序时，会将 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的且标记为“数据”文件的所有文件复制到此目录。 数据文件可以是任何类型的文件，最常用的是文本文件、XML 文件和数据库文件（如 Microsoft Access.mdb 文件）。
 
- 数据目录预期用于应用程序管理的数据，即应用程序显式存储和维护的数据。 应用程序清单中未标记为“数据”的所有静态非依赖文件都将改为驻留在应用程序目录中。 此目录是应用程序的可执行文件 (.exe) 文件和程序集所在的位置。
+ 数据目录预期用于应用程序管理的数据，即应用程序显式存储和维护的数据。 应用程序清单中未标记为“数据”的所有静态非依赖文件都将改为驻留在应用程序目录中。 此目录是应用程序的可执行文件 (.exe) 文件和程序集所在的位置  。
 
 > [!NOTE]
 > 卸载 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，也会删除其数据目录。 切勿使用数据目录来存储最终用户管理的数据，如文档。
@@ -51,7 +51,7 @@ ms.locfileid: "63406595"
 > [!NOTE]
 > 如果你的组织不使用信任的应用程序部署，并且已经关闭了权限提升，则断言权限将失效。
 
- 应用程序具有这些权限后，就可以通过对 <xref:System.IO>中的类进行方法调用访问数据目录。 你可以通过使用在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 属性上定义的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 属性，获取 Windows 窗体 <xref:System.Deployment.Application.ApplicationDeployment>应用程序中数据目录的路径。 这是访问数据的最简便方法，并且推荐使用此方法。 下面的代码示例演示如何对名为 CSV.txt 且已作为数据文件包括到部署中的文本文件执行此操作。
+ 应用程序具有这些权限后，就可以通过对 <xref:System.IO>中的类进行方法调用访问数据目录。 你可以通过使用在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 属性上定义的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 属性，获取 Windows 窗体 <xref:System.Deployment.Application.ApplicationDeployment>应用程序中数据目录的路径。 这是访问数据的最简便方法，并且推荐使用此方法。 下面的代码示例演示如何对名为 CSV.txt 且已作为数据文件包括到部署中的文本文件执行此操作  。
 
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
@@ -60,7 +60,7 @@ ms.locfileid: "63406595"
 
  你还可以使用 <xref:System.Windows.Forms.Application> 类上的相关变量（如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>）来获取数据目录路径。
 
- 处理其他类型的文件可能需要其他权限。 例如，如果你想要使用 Access 数据库 (*.mdb*) 文件中，你的应用程序必须声明完全信任，才能使用相关\<xref:System.Data > 类。
+ 处理其他类型的文件可能需要其他权限。 例如，如果你想要使用 Access 数据库 ( *.mdb*) 文件中，你的应用程序必须声明完全信任，才能使用相关\<xref:System.Data > 类。
 
 #### <a name="data-directory-and-application-versions"></a>数据目录和应用程序版本
  应用程序的每个版本都具有其自己的数据目录，每个版本的数据目录相互独立。 无论数据文件是否包括到部署中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都将创建此目录，以便该应用程序在运行时有一个位置可以创建新的数据文件。 安装新的应用程序版本时， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 会将现有全部数据文件从以前版本的数据目录复制到新版本的数据目录，而无论这些数据文件是原始部署中包括的还是应用程序创建的数据文件。
@@ -72,7 +72,7 @@ ms.locfileid: "63406595"
 ### <a name="isolated-storage"></a>独立存储
  独立存储提供一个 API，用于通过一个简单的 API 创建和访问文件。 存储文件的实际位置对开发人员和用户来说都是隐藏的。
 
- 独立存储适用于 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]的所有版本。 独立存储也适用于部分信任的应用程序，而无需授予其他权限。 如果你的应用程序必须在部分信任环境中运行，但必须维护应用程序特定的数据，则应使用独立存储。
+ 独立的存储适用于所有版本的.NET Framework。 独立存储也适用于部分信任的应用程序，而无需授予其他权限。 如果你的应用程序必须在部分信任环境中运行，但必须维护应用程序特定的数据，则应使用独立存储。
 
  有关详细信息，请参阅 [独立存储](/dotnet/standard/io/isolated-storage)。
 
@@ -98,7 +98,7 @@ ms.locfileid: "63406595"
  如果你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序因安全限制而不能访问 Web 服务器，则应用程序必须为该网站断言 <xref:System.Net.WebPermission> 。 有关增加的安全权限的详细信息[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。
 
 ### <a name="access-data-through-an-xml-web-service"></a>通过 XML Web 服务访问数据
- 如果以 XML Web 服务形式公开你的数据，则可以通过使用 XML Web 服务代理来访问数据。 代理是你使用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 创建的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]类。 XML Web 服务的操作（如检索客户、下订单等）在代理中作为方法公开。 这使得 Web 服务相比原始文本和 XML 文件更易于使用。
+ 如果以 XML Web 服务形式公开你的数据，则可以通过使用 XML Web 服务代理来访问数据。 代理是通过使用创建的.NET Framework 类[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 XML Web 服务的操作（如检索客户、下订单等）在代理中作为方法公开。 这使得 Web 服务相比原始文本和 XML 文件更易于使用。
 
  如果你的 XML Web 服务通过 HTTP 操作，该服务将与 <xref:System.Net.WebClient> 和 <xref:System.Net.HttpWebRequest> 类受到相同的安全限制约束。
 

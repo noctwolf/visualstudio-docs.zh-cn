@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5aa21d4bfccd50e31c2fd7e76bb8808bba19bc58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333752"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746699"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 此结构指定从元数据字段类型有关的信息。
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>备注
  此结构显示为中的联合的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构时`dwKind`字段`TYPE_INFO`结构设置为`TYPE_KIND_METADATA`(从值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举）。
 
- `tokClass`值是唯一标识某个类型的元数据标记。 有关如何解释高位的元数据令牌 ID 的详细信息，请参阅`CorTokenType`corhdr.h 文件中的枚举[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK。
+ `tokClass`值是唯一标识某个类型的元数据标记。 有关如何解释高位的元数据令牌 ID 的详细信息，请参阅`CorTokenType`corhdr.h 中的文件在.NET Framework SDK 中的枚举。
 
 ## <a name="requirements"></a>要求
  标头： sh.h

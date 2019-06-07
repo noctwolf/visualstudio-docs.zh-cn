@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796752"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744644"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820:使用字符串长度测试是否有空字符串
 
@@ -38,11 +38,11 @@ ms.locfileid: "62796752"
 
 比较字符串使用<xref:System.String.Length%2A?displayProperty=nameWithType>属性或<xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType>方法的速度快于使用<xref:System.Object.Equals%2A>。 这是因为<xref:System.Object.Equals%2A>执行以外的更多 MSIL 指令<xref:System.String.IsNullOrEmpty%2A>或执行要检索的指令数<xref:System.String.Length%2A>属性值和比较为零。
 
-对于空字符串<xref:System.Object.Equals%2A>和<xref:System.String.Length%2A>= = 0 的行为有所不同。 如果尝试获取的值<xref:System.String.Length%2A>null 字符串的属性，公共语言运行时将引发<xref:System.NullReferenceException?displayProperty=fullName>。 如果执行 null 字符串和空字符串之间的比较，公共语言运行时不会引发异常，并返回`false`。 测试 null 不显著影响这两种方法的相对性能。 如果面向.NET Framework 2.0 或更高版本，使用<xref:System.String.IsNullOrEmpty%2A>方法。 否则，请使用<xref:System.String.Length%2A>= = 0 比较只要有可能。
+对于空字符串<xref:System.Object.Equals%2A>和`<string>.Length == 0`行为不同。 如果尝试获取的值<xref:System.String.Length%2A>null 字符串的属性，公共语言运行时将引发<xref:System.NullReferenceException?displayProperty=fullName>。 如果执行 null 字符串和空字符串之间的比较，公共语言运行时不会引发异常，并返回`false`。 测试 null 不显著影响这两种方法的相对性能。 如果面向.NET Framework 2.0 或更高版本，使用<xref:System.String.IsNullOrEmpty%2A>方法。 否则，请使用<xref:System.String.Length%2A>= = 0 比较只要有可能。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复此规则的冲突，请更改要使用的比较<xref:System.String.Length%2A>属性和 null 字符串的测试。 如果面向.NET Framework 2.0 或更高版本，使用<xref:System.String.IsNullOrEmpty%2A>方法。
+若要修复此规则的冲突，请更改要使用的比较<xref:System.String.IsNullOrEmpty%2A>方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 

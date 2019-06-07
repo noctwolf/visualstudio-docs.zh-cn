@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900353"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745954"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;依赖项&gt;元素 （ClickOnce 应用程序）
 标识应用程序所需的平台或程序集依赖项。
@@ -126,7 +126,7 @@ ms.locfileid: "62900353"
 |-----------------------| - |
 | `dependencyType` | 必需。 指定的依赖关系类型。 有效值为 `preprequisite` 和 `install`。 `install`的一部分安装的程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 一个`prerequisite`程序集必须位于全局程序集缓存 (GAC) 之前[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]可以安装应用程序。 |
 | `allowDelayedBinding` | 必需。 指定是否可以在运行时以编程方式加载程序集。 |
-| `group` | 可选。 如果`dependencyType`属性设置为`install`，指定该仅按需安装的程序集的命名的组。 有关详细信息，请参见[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果设置为`framework`并`dependencyType`属性设置为`prerequisite`，将该程序集指定为.NET Framework 的一部分。 全局程序集缓存 (GAC) 时不会检查此程序集安装在[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]及更高版本。 |
+| `group` | 可选。 如果`dependencyType`属性设置为`install`，指定该仅按需安装的程序集的命名的组。 有关详细信息，请参见[演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)。<br /><br /> 如果设置为`framework`并`dependencyType`属性设置为`prerequisite`，将该程序集指定为.NET Framework 的一部分。 在.NET Framework 4 和更高版本上安装时，全局程序集缓存 (GAC) 不会检查此程序集。 |
 | `codeBase` | 时需要`dependencyType`属性设置为`install`。 依赖程序集的路径。 可以是绝对路径或相对路径的清单代码基。 此路径必须是为了使程序集清单是有效的 URI 有效。 |
 | `size` | 时需要`dependencyType`属性设置为`install`。 依赖程序集，以字节为单位的大小。 |
 

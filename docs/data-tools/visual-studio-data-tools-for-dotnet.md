@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565072"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745310"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于 NET 的 Visual Studio Data Tools
 
-Visual Studio 和.NET Framework 一起提供广泛的 API 和工具连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET Framework 类被称为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中的，以及数据工具在 Visual Studio 中，主要设计用于支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。
+Visual Studio 和.NET 一起提供广泛的 API 和工具连接到数据库、 在内存中，数据建模和用户界面中显示数据的支持。 提供数据访问功能的.NET 类名为[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中的，以及数据工具在 Visual Studio 中，主要设计用于支持关系数据库和 XML。 如今，许多 NoSQL 数据库供应商或第三方提供 ADO.NET 提供程序。
 
-[.NET Core](/dotnet/core/)支持 ADO.NET 中，数据集和相关的类型除外。 如果你要以.NET Core 为目标，并且需要对象关系映射 (ORM) 层，使用[实体框架核心](/ef/core/)。
+[.NET core](/dotnet/core/)支持 ADO.NET，数据集和其相关的类型除外。 如果要面向.NET Core，并且需要一个对象关系映射 (ORM) 层，使用[Entity Framework Core](/ef/core/)。
 
 下图显示了基本的体系结构的简化的视图：
 

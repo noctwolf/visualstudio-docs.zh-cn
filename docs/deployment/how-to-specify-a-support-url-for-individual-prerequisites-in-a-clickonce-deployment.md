@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263210"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745559"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备指定支持 URL
-一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以用于多个先决条件，必须在客户端计算机上可用的测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 这些依赖项包括所需的最低版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，操作系统，并且必须预先安装在全局程序集缓存 (GAC) 中的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装这些必备组件的任何重试。如果找不到一项必备条件，它只是停止安装，并显示一个对话框，说明安装失败的原因。
+一个[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以用于多个先决条件，必须在客户端计算机上可用的测试[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]要运行应用程序。 这些依赖项包括所需的最低版本的.NET Framework 中，操作系统，并且必须预先安装在全局程序集缓存 (GAC) 中的任何程序集的版本。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法安装这些必备组件的任何重试。如果找不到一项必备条件，它只是停止安装，并显示一个对话框，说明安装失败的原因。
 
  有两种方法来安装系统必备组件。 可以使用引导程序应用程序进行安装。 或者，可以指定各个系统必备项，如果找不到系统必备组件对话框的上向用户显示的支持 URL。 该 URL 引用的页面可以包含用于安装必备组件的说明的链接。 如果应用程序未指定一个单独的必备组件，一个支持 URL[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]显示作为一个整体应用程序的部署清单中指定的支持 URL，如果已定义。
 
@@ -31,7 +31,7 @@ ms.locfileid: "66263210"
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>指定一个单独的必备组件的支持 URL
 
-1. 打开应用程序清单 ( *.manifest*文件) 的你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。
+1. 打开应用程序清单 ( *.manifest*文件) 的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。
 
 2. 对于一个操作系统必备组件中，添加`supportUrl`属性为`dependentOS`元素：
 
@@ -65,7 +65,7 @@ ms.locfileid: "66263210"
      </dependency>
    ```
 
-5. 可选。 对于面向.NET Framework 4 的应用程序打开部署清单 ( *.application*文件) 的你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。
+5. 可选。 对于面向.NET Framework 4 的应用程序打开部署清单 ( *.application*文件) 的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]在文本编辑器中应用程序。
 
 6. 是.NET Framework 4 的先决条件，将添加`supportUrl`属性为`compatibleFrameworks`元素：
 

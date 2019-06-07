@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779271"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744686"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031:不要捕捉一般异常类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779271"
  不禁止显示此规则发出的警告。 捕捉一般异常类型可以隐藏运行时库用户问题，并且可能使调试更加困难。
 
 > [!NOTE]
-> 从 [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] 开始，公共语言运行时 (CLR) 不再提供操作系统和托管代码中发生的损坏状态异常（例如，[!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 中的访问冲突），然后由托管代码来处理。 如果你想要编译中的应用程序[!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]或更高版本和维护对损坏的状态异常的处理，您可以应用<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>属性为负责处理损坏的状态异常的方法。
+> 从.NET Framework 4 开始，公共语言运行时 (CLR) 不再提供操作系统和托管的代码中，例如，在访问冲突中发生的损坏的状态异常[!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)]、 要由托管代码。 如果您想进行编译的应用程序中的.NET Framework 4 或更高版本和维护的损坏的状态异常的处理，则可以应用<xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>属性为负责处理损坏的状态异常的方法。
 
 ## <a name="example"></a>示例
  下面的示例显示了违反此规则的类型，并正确实现的类型`catch`块。

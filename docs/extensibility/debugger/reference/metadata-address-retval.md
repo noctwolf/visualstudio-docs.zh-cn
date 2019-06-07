@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4453030f01e99dcb82c344f003e217e7b1c55b6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333715"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746347"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 此结构表示的方法或函数返回的值。
@@ -50,7 +50,7 @@ public struct METADATA_ADDRESS_RETVAL {
  此返回值是为该方法的 ID。
 
  `dwCorType`\
- 返回值的基类型。 这是一个介于`CorElementType`枚举中定义[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 中的文件。
+ 返回值的基类型。 这是一个介于`CorElementType`.NET Framework SDK corhdr.h 文件中定义的枚举。
 
  `dwSigSize`\
  返回值签名的大小 (存储在`rgSig`)。

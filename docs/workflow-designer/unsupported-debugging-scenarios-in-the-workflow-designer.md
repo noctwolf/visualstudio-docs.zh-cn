@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433872"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747273"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流设计器中不受支持的调试方案
 
-在.NET Framework 4 工作流设计器添加许多新功能，但仍有不支持某些调试方案。
-
-以下是不受支持工作流设计器调试方案：
+工作流设计器不支持以下调试方案：
 
 - 在编辑代码之后不能继续执行。
 
@@ -29,7 +27,7 @@ ms.locfileid: "62433872"
 
 - 不能使用工作流设计器来调试通过代码创建（未使用工作流设计器）的工作流。
 
-- 在早期版本的 Windows Workflow Foundation (WF) 中创建的工作流不能在.NET Framework 4 设计器中进行调试。
+- 无法调试在早期版本的 Windows Workflow Foundation (WF) 中创建的工作流，在.NET Framework 4 或更高版本。
 
 - 不能在两个活动或 <xref:System.Activities.Statements.Flowchart> 节点之间的链接上定义断点。
 
