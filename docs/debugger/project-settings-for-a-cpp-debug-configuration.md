@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407888"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715443"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
 可以更改 C 或视觉对象的项目设置C++中的调试配置**属性页**对话框中，如中所述[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置  。
@@ -139,11 +139,11 @@ ms.locfileid: "63407888"
 | **命令参数**（本地 Windows 调试器）<br /><br /> **远程命令参数**（远程 Windows 调试器） | -   为前面指定的命令指定自变量。<br /><br /> 可以在此框中使用下列重定向运算符：<br /><br /> < `file`<br /> 从文件中读取 stdin。<br /><br /> > `file`<br /> 将 stdout 写入文件。<br /><br /> >> `file`<br /> 将 stdout 追加到文件中。<br /><br /> 2> `file`<br /> 将 stderr 写入文件。<br /><br /> 2>> `file`<br /> 将 stderr 追加到文件中。<br /><br /> 2> &1<br /> 将 stderr (2) 输出发送到与 stdout (1) 相同的位置。<br /><br /> 1> &2<br /> 将 stdout (1) 输出发送到与 stderr (2) 相同的位置。<br /><br /> 在大多数情况下，这些运算符仅适用于控制台应用程序。 |
 | **工作目录** | 指定要调试的程序的工作目录（相对于 EXE 所在的项目目录）。 如果将此设置保留为空，则工作目录将为项目目录。 对于远程调试，项目目录位于远程服务器上。 |
 | **附加**（本地 Windows 调试器和远程 Windows 调试器） | 指定是启动应用程序还是附加到应用程序。 默认设置为“否”。 |
-| **远程服务器名称**（远程 Windows 调试器） | 指定您要在其上调试应用程序的计算机（不是您的计算机）的名称。<br /><br /> RemoteMachine 生成宏被设置为此属性的值；有关详细信息，请参阅[用于生成命令和属性的宏](/cpp/ide/common-macros-for-build-commands-and-properties)。 |
+| **远程服务器名称**（远程 Windows 调试器） | 指定您要在其上调试应用程序的计算机（不是您的计算机）的名称。<br /><br /> RemoteMachine 生成宏被设置为此属性的值；有关详细信息，请参阅[用于生成命令和属性的宏](/cpp/build/reference/common-macros-for-build-commands-and-properties)。 |
 | **连接**（远程 Windows 调试器） | 允许您在远程调试的标准与非身份验证连接类型之间切换。 在“远程服务器名称”框中指定远程计算机的名称  。 连接类型包括：<br /><br /> -   带 Windows 身份验证的远程访问 <br />-   不带身份验证的远程访问 <br /><br /> 注意：不带身份验证的远程调试可能会使远程计算机容易受到安全侵犯  。 Windows 身份验证模式更安全。<br /><br /> 有关详细信息，请参阅[远程调试安装](../debugger/remote-debugging.md)。 |
 | **HTTP URL**（Web 服务调试器和 Web 浏览器调试器） | 指定您要调试的项目所在的 URL。 |
 | 调试器类型  | 指定要使用的调试器类型：**仅限本机**，**仅限托管**，**仅限 GPU**，**混合**，**自动**（默认值），或**脚本**.<br /><br /> -   “仅限本机”用于非托管 C++ 代码  。<br />-   “仅限托管”适用于在公共语言运行时下运行的代码（托管代码）  。<br />-   “混合”对托管代码和非托管代码都调用调试器  。<br />-   “自动”将根据编译器和 EXE 信息确定调试器类型  。<br />-   “脚本”调用脚本调试器  。<br />-   “仅限 GPU”用于在 GPU 设备或 DirectX 参考光栅器上运行的 C++ AMP 代码  。 请参阅[调试 GPU 代码](../debugger/debugging-gpu-code.md)。 |
-| **环境**（本地 Windows 调试器和远程 Windows 调试器） | 为要调试的程序指定环境变量。 使用标准环境变量语法 (例如， `PATH="%SystemRoot%\..."`)。 根据“合并环境”设置的不同，这些变量将重写系统环境或与系统环境合并  。 当你在设置列中，左键单击"编辑..."将出现。 选择该链接可编辑环境变量。 |
+| **环境**（本地 Windows 调试器和远程 Windows 调试器） | 为要调试的程序指定环境变量。 使用标准环境变量语法 (例如， `PATH="%SystemRoot%\..."`)。 根据“合并环境”设置的不同，这些变量将重写系统环境或与系统环境合并  。 当你在设置列中，左键单击"编辑。..."将出现。 选择该链接可编辑环境变量。 |
 | **合并环境**（本地 Windows 调试器） | 确定在“环境”框中指定的变量是否与操作系统定义的环境合并  。 默认设置为“是”。 |
 | **SQL 调试**（除 MPI 群集调试器外的所有调试器） | 启用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 应用程序中的 SQL 过程的调试。 默认设置为“否”。 |
 | **调试加速器类型**（仅限 GPU 调试） | 指定要用于调试的 GPU 设备。 为兼容的 GPU 设备安装设备驱动器将添加其他选项。 默认设置为“GPU - 软件仿真程序”  。 |
