@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260477"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835963"
 ---
 # <a name="code-metrics-values"></a>代码度量值
 
@@ -32,7 +32,7 @@ ms.locfileid: "66260477"
 
 - **圈复杂度**-衡量代码的结构化的复杂程度。 通过计算该程序的流中的不同代码路径数则创建它。 具有复杂的控制流的程序需要更多测试来实现良好的代码覆盖率，且不太易于维护。 有关详细信息，请参阅[圈复杂度的 Wikipedia 条目](https://wikipedia.org/wiki/Cyclomatic_complexity)。
 
-- **继承深度**-指示从另一个，按原路返回到基类继承的不同类的数目。 继承深度是类似于类耦合度，因为在基类中的更改可能会影响任何其继承的类。 更高级此数字，更深入地继承和基类的修改，导致重大的更高版本可能更改。 继承深度，最好使用较低的值和较高的值无效。 
+- **继承深度**-指示从另一个，按原路返回到基类继承的不同类的数目。 继承深度是类似于类耦合度，因为在基类中的更改可能会影响任何其继承的类。 更高级此数字，更深入地继承和基类的修改，导致重大的更高版本可能更改。 继承深度，最好使用较低的值和较高的值无效。
 
 - **类耦合**-衡量与通过参数、 局部变量、 返回类型、 方法调用、 泛型或模板实例化、 基类，这些类、 接口实现、 外部类型上定义的字段的唯一类耦合程度和特性修饰。 类型和方法应具有高度内聚和较低的耦合，决定了优秀的软件设计。 高的耦合度表示设计，很难进行重复使用和维护由于其许多其他类型相互依赖关系。 有关详细信息，请参阅[类耦合度](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/)博客文章。
 
@@ -43,9 +43,7 @@ ms.locfileid: "66260477"
 
 ## <a name="anonymous-methods"></a>匿名方法
 
-*匿名方法*就是没有名称的方法。 匿名方法最常用于将代码块作为委托参数传递。 度量值的匿名方法的声明在成员，如方法或访问器，结果与相关联的成员的声明的方法。 它们不会调用方法的成员与相关联。
-
-代码度量值如何处理匿名方法的详细信息，请参阅[匿名方法和代码分析](../code-quality/anonymous-methods-and-code-analysis.md)。
+*匿名方法*就是没有名称的方法。 匿名方法最常用于将代码块作为委托参数传递。 代码度量结果成员中声明的匿名方法，如方法或访问器，声明了方法的成员与相关联。 它们不会调用方法的成员与相关联。
 
 ## <a name="generated-code"></a>生成的代码
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974977"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836117"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -108,7 +108,7 @@ $selected$ is a great color. I love $selected$.
 
 以下三种属性可用于 Code 元素：
 
-- **语言**  -  该必选属性用于指定代码片段的语言。 值可以是下列任一值：
+- **语言**  -  该必选属性用于指定代码片段的语言  。 值可以是下列任一值：
 
    |值|说明|
    |-----|-----------|
@@ -121,7 +121,7 @@ $selected$ is a great color. I love $selected$.
    |`SQL`|标识 SQL 代码段。|
    |`HTML`|标识 HTML 代码段。|
 
-- **类型**  -  该可选属性用于指定代码片段包含的代码的类型，以及编译代码片段时代码片段必须插入的位置。 值可以是下列任一值：
+- **类型**  -  该可选属性用于指定代码片段包含的代码的类型，以及编译代码片段时代码片段必须插入的位置  。 值可以是下列任一值：
 
    |值|说明|
    |-----|-----------|
@@ -131,7 +131,7 @@ $selected$ is a great color. I love $selected$.
    |`file`|指定代码段为完整的代码文件。 这些代码段可单独插入到代码文件或命名空间中。|
    |`any`|指定代码段可插入到任何位置。 此标记可用于上下文独立的代码段（例如注释）。|
 
-- **分隔符**  -  该可选属性用于指定用于描述代码中的文本和对象的分隔符。 默认情况下，分隔符为 `$`。
+- **分隔符**  -  该可选属性用于指定用于描述代码中的文本和对象的分隔符  。 默认情况下，分隔符为 `$`。
 
 ### <a name="parent-element"></a>父元素
 
@@ -632,7 +632,11 @@ $selected$ is a great color. I love $selected$.
 | - |-----------------|
 |[Object 元素](../ide/code-snippets-schema-reference.md#object-element)|定义代码段的可编辑对象字段。|
 
- 需要一个文本值。 此文本指定对象的类型。
+需要一个文本值。 此文本指定对象的类型。 例如:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Url 元素
 

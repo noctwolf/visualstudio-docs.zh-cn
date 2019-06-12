@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebe4922c79e546ad4ee5ae50179424bff9746a15
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342403"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835911"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>开始使用 Roslyn 分析器
 
@@ -21,22 +21,19 @@ ms.locfileid: "66342403"
 
 ## <a name="get-started"></a>入门
 
-[Roslyn 实时代码分析器说明和演练](https://msdn.microsoft.com/magazine/dn879356.aspx)
+[Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)
+
+[教程：编写第一个分析器和代码修补程序](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 
 [添加代码修补程序演练：分析器问题提供用户的修补程序](https://msdn.microsoft.com/magazine/dn904670.aspx)
-
-[说明和演练的现实世界分析器通信](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [现实世界 Roslyn 分析器](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)，还可查看作为[通信](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [GitHub 上的几个示例分为三种类型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
-[简介和教程的几个分析器通信](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>请参阅
 
-- [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)
-- [教程：编写第一个分析器和代码修补程序](/dotnet/csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix)
 - [.NET 编译器平台包版本参考](roslyn-version-support.md)
 - [GitHub OSS 站点上的多个文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [FxCop 规则实现通过 Roslyn 分析器](http://roslynanalyzersstatus.azurewebsites.net/)

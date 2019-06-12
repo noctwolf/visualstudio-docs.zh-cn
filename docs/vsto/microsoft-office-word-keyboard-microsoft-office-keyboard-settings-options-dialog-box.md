@@ -1,5 +1,5 @@
 ---
-title: Microsoft Office Word 键盘，Microsoft Office 键盘设置选项对话框
+title: Office Word 键盘，键盘设置选项对话框
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970299"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835983"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office Word 键盘，Microsoft Office 键盘设置选项对话框
   Microsoft Office Word 和 Visual Studio 同时处理键盘快捷方式。 同一个快捷键组合可以代表不同的命令在 Word 中和 Visual Studio 中。 在 Visual Studio 中的文档级项目中打开 Word 时，一次只有一个应用程序接收的快捷键命令。 默认情况下，Visual Studio 接收所有快捷方式命令，但您可以使 Word 文档通过选择具有焦点时接收它们**动态键盘方案**。

@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842011"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820632"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:正确实现 IDisposable
 
@@ -52,7 +52,7 @@ ms.locfileid: "65842011"
 
 冲突的任何一种模式触发警告 CA1063。
 
-每个非密封的类型声明并实现<xref:System.IDisposable>接口必须提供其自己`protected virtual void Dispose(bool)`方法。 `Dispose()` 应调用`Dipose(true)`，并调用终结器应`Dispose(false)`。 如果您创建未密封的类型的声明并实现<xref:System.IDisposable>接口，必须定义`Dispose(bool)`，调用它。 有关详细信息，请参阅[清理非托管资源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)并[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
+每个非密封的类型声明并实现<xref:System.IDisposable>接口必须提供其自己`protected virtual void Dispose(bool)`方法。 `Dispose()` 应调用`Dispose(true)`，并调用终结器应`Dispose(false)`。 如果您创建未密封的类型的声明并实现<xref:System.IDisposable>接口，必须定义`Dispose(bool)`，调用它。 有关详细信息，请参阅[清理非托管资源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)并[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
 
 默认情况下，此规则只看起来在外部可见的类型，但这是[可配置](#configurability)。
 

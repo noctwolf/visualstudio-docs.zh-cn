@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 908f79b40b17eba5c0e3f518e6d7f2f3ae58e9c7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792213"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745015"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 
-使用“项目设计器”的“高级生成设置”对话框可指定项目的高级生成配置属性。 此对话框仅适用于 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目。
+使用“项目设计器”的“高级生成设置”对话框可指定项目的高级生成配置属性   。 此对话框仅适用于 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目。
 
 ## <a name="general"></a>常规
 
@@ -45,7 +45,7 @@ ms.locfileid: "62792213"
 
 **内部编译器错误报告**
 
-指定是否向 Microsoft 报告编译器错误。 如果设置为“提示”（默认），则在发生内部编译器错误时将收到提示，可以选择向 Microsoft 发送电子版错误报告。 如果设置为“发送”，则将自动发送错误报告。 如果设置为“队列”，则错误报告将排入队列。 如果设置为“无”，将仅在编译器的文本输出中报告错误。 有关详细信息，请参阅 [/errorreport（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
+指定是否向 Microsoft 报告编译器错误。 如果设置为“提示”  （默认），则在发生内部编译器错误时将收到提示，可以选择向 Microsoft 发送电子版错误报告。 如果设置为“发送”  ，则将自动发送错误报告。 如果设置为“队列”  ，则错误报告将排入队列。 如果设置为“无”  ，将仅在编译器的文本输出中报告错误。 有关详细信息，请参阅 [/errorreport（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。
 
 **检查运算上溢/下溢**
 
@@ -91,7 +91,7 @@ ms.locfileid: "62792213"
 
 **库基址**
 
-指定要加载 DLL 的首选基址。 DLL 的默认基址由 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 公共语言运行时设置。 有关详细信息，请参阅 [/baseaddress（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
+指定要加载 DLL 的首选基址。 DLL 的默认基址由 .NET Framework 公共语言运行时设置。 有关详细信息，请参阅 [/baseaddress（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
 ## <a name="see-also"></a>请参阅
 

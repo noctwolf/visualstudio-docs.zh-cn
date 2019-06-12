@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442377"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820907"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
@@ -21,7 +21,7 @@ ms.locfileid: "63442377"
 > [!NOTE]
 > 文本模板转换 SDK 和 Visual Studio 建模 SDK 会自动安装时安装 Visual Studio 的特定功能。 有关更多详细信息，请参阅[这篇博客文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
-如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可以在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可以在此站点中找到：[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>使用域特定语言，您可以做什么？
 
@@ -137,7 +137,7 @@ Dsl 的主体应用程序之一是生成程序代码、 配置文件和其他项
 
 实验性 Visual Studio 将类似于下面的示例：
 
-![](../modeling/media/dsl_min.png)
+![在 Visual Studio 中的域特定语言示例树](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>模型的内容
 
@@ -180,7 +180,7 @@ DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使
 > [!NOTE]
 > 当您更改 DSL 定义中时，示例文本模板代码才会生效，更新它。
 
-有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)并[编写代码以自定义域特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)并[编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 ## <a name="customizing-the-dsl"></a>自定义 DSL
 
@@ -392,7 +392,7 @@ DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使
 
  可以使用相同的过程可以在你自己的计算机上安装 DSL，这样，无需使用 Visual Studio 的实验实例。
 
- 有关详细信息，请参阅[部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)。
+ 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
 ## <a name="Reset"></a> 删除旧的实验性 Dsl
  如果你已创建但不再希望的实验性 Dsl，可以从您的计算机重置 Visual Studio 实验实例来删除它们。

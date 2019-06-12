@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d012c0902aa82eb057f9d69c0b85b13262e847a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821638"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66747622"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -32,8 +32,8 @@ ms.locfileid: "62821638"
 |----------|----------| - |
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|
 ||安装、更新或删除本地帮助内容。|[安装和管理本地帮助内容](../help-viewer/install-manage-local-content.md)|
-|工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|
-|生成|使用注册组件的生成后事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|工具箱|将经典 COM 控件添加到“工具箱”  。|[工具箱](../ide/reference/toolbox.md)|
+|生成|使用注册组件的生成后事件。|[了解自定义生成步骤和生成事件](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||在生成 C++ 项目时包括一个注册步骤。||
 |调试|调试使用提升的权限运行的应用程序。|[调试器设置和准备](../debugger/debugger-settings-and-preparation.md)|
 ||调试在其他用户帐户下运行的应用程序，例如 ASP.NET 网站。|[调试 ASP.NET 和 AJAX 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
@@ -52,21 +52,21 @@ ms.locfileid: "62821638"
 
 ::: moniker range="vs-2017"
 
-1. 打开“开始”菜单，并滚动到 Visual Studio 2017。
+1. 打开“开始”  菜单，并滚动到 Visual Studio 2017。
 
-1. 从右键单击或 Visual Studio 2017 的上下文菜单中，依次选择“更多”>“以管理员身份运行”。
+1. 从右键单击或 Visual Studio 2017 的上下文菜单中，依次选择“更多”>“以管理员身份运行”    。
 
-   Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。
+   Visual Studio 启动时，标题栏的产品名后显示“(管理员)”  。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 打开“开始”菜单，并滚动到 Visual Studio 2019。
+1. 打开“开始”菜单，并滚动到 Visual Studio 2019  。
 
-1. 从右键单击或 Visual Studio 2019 的上下文菜单中，依次选择“更多”>“以管理员身份运行”。
+1. 从右键单击或 Visual Studio 2019 的上下文菜单中，依次选择“更多”>“以管理员身份运行”    。
 
-   Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。
+   Visual Studio 启动时，标题栏的产品名后显示“(管理员)”  。
 
 ::: moniker-end
 

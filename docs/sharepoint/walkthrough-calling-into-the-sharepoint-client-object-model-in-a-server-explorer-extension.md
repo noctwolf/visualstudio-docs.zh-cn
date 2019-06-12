@@ -1,5 +1,5 @@
 ---
-title: 演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展插件 |Microsoft Docs
+title: 服务器资源管理器：扩展 SharePoint 连接节点
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430448"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835943"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展
   本演练演示如何从适用于扩展调用 SharePoint 客户端对象模型**SharePoint 连接**中的节点**服务器资源管理器**。 有关如何使用 SharePoint 客户端对象模型的详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -64,7 +64,7 @@ ms.locfileid: "63430448"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+2. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**。
 
@@ -118,9 +118,9 @@ ms.locfileid: "63430448"
 
 5. 打开快捷菜单**WebPartNodeExtension**项目，，然后选择**属性**。
 
-     将打开“项目设计器”。
+     将打开“项目设计器”  。
 
-6. 选择“应用程序”选项卡。
+6. 选择“应用程序”  选项卡。
 
 7. 在中**默认命名空间**框 (C#) 或**根命名空间**框 (Visual Basic 中) 中，输入**ServerExplorer.SharePointConnections.WebPartNode**。
 
@@ -131,7 +131,7 @@ ms.locfileid: "63430448"
 
 1. 在中**项目设计器**WebPartNodeExtension 项目中，选择**资源**选项卡。
 
-2. 选择链接**此项目不包含默认资源文件。单击此处创建一个资源文件。”**。
+2. 选择链接**此项目不包含默认资源文件。单击此处创建一个资源文件。”** 。
 
      Visual Studio 创建的资源文件，并在设计器中打开它。
 
@@ -240,7 +240,7 @@ ms.locfileid: "63430448"
 
     2. 在中**添加 SharePoint 连接**对话框框中，输入你想要连接，，然后选择 SharePoint 站点的 URL**确定**按钮。
 
-         若要在开发计算机上指定 SharePoint 站点，请键入**http://localhost**。
+         若要在开发计算机上指定 SharePoint 站点，请键入 **http://localhost** 。
 
 3. 站点连接节点 （这将显示你的站点的 URL），依次展开和一个子节点 (例如，**团队网站**)。
 
@@ -267,7 +267,7 @@ ms.locfileid: "63430448"
 
 1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
 
-     此时，“扩展和更新”对话框打开。
+     此时，“扩展和更新”  对话框打开。
 
 2. 在扩展的列表，选择**服务器资源管理器 Web 部件库节点**，然后选择**卸载**按钮。
 
