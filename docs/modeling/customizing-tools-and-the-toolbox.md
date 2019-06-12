@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da472f443f52a6478ac5e1e34fd4d4a5beb0721b
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445796"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820814"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 
@@ -77,7 +77,7 @@ Editor
 
 5. 若要测试 DSL，请按 F5 或 CTRL + F5，并在 Visual Studio 的实验实例中，打开示例模型文件。 新工具应显示在工具箱上。 将它拖动到关系图上以验证它是否将创建新元素。
 
-     如果未显示该工具，停止实验性 Visual Studio。 在 Windows 中**启动**菜单中，运行**重置 Microsoft Visual Studio 2010 实验实例**。 在“生成”菜单上，单击“重新生成解决方案”。 然后，再次测试 DSL。
+     如果未显示该工具，停止实验性 Visual Studio。 在 Windows 中**启动**菜单中，运行**重置 Microsoft Visual Studio 2010 实验实例**。 在“生成”菜单上，单击“重新生成解决方案”   。 然后，再次测试 DSL。
 
 ## <a name="customizing"></a> 自定义元素工具
  默认情况下，该工具将创建指定类的单个实例，但是可通过两种方式改变这种情况：
@@ -196,7 +196,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **链接连接指令 DSL 详细信息窗口中**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![链接连接指令在 DSL 详细信息窗口](../modeling/media/connectionbuilder_4b.png)
 
  然后，必须在 ConnectionBuilder 类中提供方法：
 

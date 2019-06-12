@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686901"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820883"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063:正确实现 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "65686901"
 
   这些模式的任何一个冲突将触发此警告。
 
-  每个未密封的根 IDisposable 类型都必须提供其自己受保护的虚拟 void dispose （bool） 方法。 Dispose （） 应调用 Dipose(true) 和 Finalize 应调用 dispose （false）。 如果要创建未密封的根 IDisposable 类型，必须定义 dispose （bool），调用它。 有关详细信息，请参阅[清理了非托管资源](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 设计准则](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文档的部分。
+  每个未密封的根 IDisposable 类型都必须提供其自己受保护的虚拟 void dispose （bool） 方法。 Dispose （） 应调用 dispose （true） 和 Finalize 应调用 dispose （false）。 如果要创建未密封的根 IDisposable 类型，必须定义 dispose （bool），调用它。 有关详细信息，请参阅[清理了非托管资源](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 设计准则](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文档的部分。
 
 ## <a name="rule-description"></a>规则说明
  所有的 IDisposable 类型都应当正确实现 Dispose 模式。

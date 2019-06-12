@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445201"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820981"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义特定于域的语言 (DSL)，请从模板创建 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
@@ -99,7 +99,7 @@ ms.locfileid: "63445201"
 
  如果运行一个解决方案创建从**最小语言**模板，在实验性 Visual Studio 将类似于下面的示例：
 
- ![](../modeling/media/dsl_min.png)
+ ![在 Visual Studio 中的域特定语言示例树](../modeling/media/dsl_min.png)
 
  试验这些工具。 创建元素并连接它们。
 

@@ -1,5 +1,5 @@
 ---
-title: 检查 XML 架构设计器中使用内容模型视图节点的内容模型
+title: 检查节点在 XML 架构设计器中使用内容模型视图
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001907"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820465"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何：检查节点上使用内容模型视图的内容模型
 
@@ -39,6 +39,6 @@ ms.locfileid: "63001907"
 
 7. 单击 `purchaseOrder` 元素下的任何节点并查看痕迹栏，以了解所选节点在架构集中的位置。
 
-8. 单击**显示文档**XSD 工具栏切换文档中的按钮。 还可以右击设计图面来切换文档。
+8. 单击**显示文档**XSD 工具栏来切换文档中的按钮。 还可以右击设计图面来切换文档。
 
-9. 右击`purchaseOrder`节点，然后选择**生成示例 XML**若要查看 XML 实例文档。
+9. 右键单击`purchaseOrder`节点，然后选择**生成示例 XML**若要查看 XML 实例文档。

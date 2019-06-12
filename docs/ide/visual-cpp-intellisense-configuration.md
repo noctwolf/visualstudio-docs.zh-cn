@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fef5f63d8c3fd843ed6f92a313102a9c9879003f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582533"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715375"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>配置用于 IntelliSense 的 C++ 项目
 
@@ -20,11 +20,11 @@ ms.locfileid: "62582533"
 
 ## <a name="single-file-intellisense"></a>单个文件 IntelliSense
 
-如果你打开项目中没有的文件，Visual Studio 会提供一些 IntelliSense 支持，但默认不会显示任何错误波形曲线。 如果导航栏显示“杂项文件”，这可能就解释了为什么不正确代码下没有显示错误波形曲线，或为什么未定义预处理器宏。
+如果你打开项目中没有的文件，Visual Studio 会提供一些 IntelliSense 支持，但默认不会显示任何错误波形曲线。 如果导航栏  显示“杂项文件”  ，这可能就解释了为什么不正确代码下没有显示错误波形曲线，或为什么未定义预处理器宏。
 
 ## <a name="check-the-error-list"></a>查看错误列表
 
-如果文件没有以单一文件模式打开，且 IntelliSense 未正常运行，首先要检查的是“错误列表”窗口。 若要查看当前源文件及其包含的所有头文件的全部 IntelliSense 错误，请选择下拉列表中的“生成 + IntelliSense”：
+如果文件没有以单一文件模式打开，且 IntelliSense 未正常运行，首先要检查的是“错误列表”窗口。 若要查看当前源文件及其包含的所有头文件的全部 IntelliSense 错误，请选择下拉列表中的“生成 + IntelliSense”  ：
 
 ![“错误列表”中的 VC++ IntelliSense](media/vcpp-intellisense-error-list.png)
 
@@ -34,19 +34,17 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
 ### <a name="msbuild-projects"></a>MSBuild 项目
 
-如果在 Visual Studio IDE 外部运行生成，但在生成即将成功时 IntelliSense 不正确，可能是因为命令行与一个或多个配置的项目设置不同步。 右键单击“解决方案资源管理器”中的项目节点，并确保所有 #include 路径对当前配置和平台都正确无误。 如果路径在所有配置和平台中都完全相同，可选择“所有配置”和“所有平台”，再验证路径是否正确。
+如果在 Visual Studio IDE 外部运行生成，但在生成即将成功时 IntelliSense 不正确，可能是因为命令行与一个或多个配置的项目设置不同步。 右键单击“解决方案资源管理器”  中的项目节点，并确保所有 #include  路径对当前配置和平台都正确无误。 如果路径在所有配置和平台中都完全相同，可选择“所有配置”  和“所有平台”  ，再验证路径是否正确。
 
 ![VC++ Include 目录](media/vcpp-intellisense-include-paths.png)
 
- 若要查看生成宏（如 VC_IncludePath）的当前值，请选择“Include 目录”行，再单击右侧的下拉列表。 然后，选择“\<编辑>”，并单击“宏”按钮。
+ 若要查看生成宏（如 VC_IncludePath  ）的当前值，请选择“Include 目录”行，再单击右侧的下拉列表。 然后，选择“\<编辑>”  ，并单击“宏”  按钮。
 
 ### <a name="makefile-projects"></a>生成文件项目
 
-对于基于 NMake 项目模板的生成文件项目，依次选择左侧窗格中的“NMake”和“IntelliSense”类别下的“Include 搜索路径”：
+对于基于 NMake 项目模板的生成文件项目，依次选择左侧窗格中的“NMake”  和“IntelliSense”  类别下的“Include 搜索路径”  ：
 
 ![生成文件项目 Include 路径](media/vcpp-intellisense-makefile-include-paths.png)
-
-有关详细信息，请参阅[如何：为生成文件项目启用 IntelliSense](/cpp/ide/how-to-enable-intellisense-for-makefile-projects)。
 
 ### <a name="open-folder-projects"></a>打开文件夹项目
 
@@ -70,13 +68,13 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
 
    ![标记分析器提议定义现有函数](media/vcpp-intellisense-tag-parser-function.png)
 
-若要解决上述这几种问题，请将“cpp.hint”文件添加到解决方案根目录中。 有关详细信息，请参阅[提示文件](/cpp/build/reference/hint-files)。
+若要解决上述这几种问题，请将“cpp.hint”  文件添加到解决方案根目录中。 有关详细信息，请参阅[提示文件](/cpp/build/reference/hint-files)。
 
-标记分析器错误显示在“错误列表”窗口中。
+标记分析器错误显示在“错误列表”窗口中  。
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>使用诊断日志记录验证项目设置
 
-若要检查 IntelliSense 编译器使用的编译器选项（包括“Include 路径”和“预处理器宏”）是否正确，请依次转到“工具”>“选项”>“文本编辑器”>“C/C++”>“高级”>“诊断日志记录”，以启用 IntelliSense 命令行诊断日志记录。 将“启用日志记录”设置为“True”，将“日志记录级别”设置为“5”（即最详细），并将“日志记录筛选器”设置为“8”（即 IntelliSense 日志记录）。
+若要检查 IntelliSense 编译器使用的编译器选项（包括“Include 路径”和“预处理器宏”）是否正确，请依次转到“工具”>“选项”>“文本编辑器”>“C/C++”>“高级”>“诊断日志记录”  ，以启用 IntelliSense 命令行诊断日志记录。 将“启用日志记录”  设置为“True”，将“日志记录级别”  设置为“5”（即最详细），并将“日志记录筛选器”  设置为“8”（即 IntelliSense 日志记录）。
 
 此时，输出窗口会显示传递到 IntelliSense 编译器的命令行。 下面展示了示例输出：
 
@@ -95,17 +93,17 @@ IntelliSense 最多生成 1000 个错误。 如果源文件包含的头文件中
  /Yustdafx.h
 ```
 
-此信息可有助于了解为什么 IntelliSense 会提供不准确的信息。 例如，如果项目的 Include 目录包含 $(MyVariable)\Include，而诊断日志却显示 /I\Include 作为 Include 路径，表明 $(MyVariable) 未经评估，已从最终 include 路径中删除。
+此信息可有助于了解为什么 IntelliSense 会提供不准确的信息。 例如，如果项目的 Include 目录包含 $(MyVariable)\Include  ，而诊断日志却显示 /I\Include  作为 Include 路径，表明 $(MyVariable)  未经评估，已从最终 include 路径中删除。
 
 ## <a name="about-the-intellisense-build"></a>关于 IntelliSense 生成
 
 Visual Studio 使用专用 C++ 编译器，创建和维护为所有 IntelliSense 功能提供技术支持的数据库。 为了让 IntelliSense 数据库与代码同步，Visual Studio 会自动启动仅 IntelliSense 生成作为后台任务，以响应项目设置或源文件中的特定更改。
 
-不过，在某些情况下，Visual Studio 可能不会及时更新 IntelliSense 数据库。 例如，当你运行 git pull 或 git checkout 命令时，Visual Studio 可能最多需要一小时，才能检测文件更改。 可强制重新扫描解决方案中的所有文件，具体方法为右键单击“解决方案资源管理器”中的项目节点，再选择“重新扫描解决方案”。
+不过，在某些情况下，Visual Studio 可能不会及时更新 IntelliSense 数据库。 例如，当你运行 git pull  或 git checkout  命令时，Visual Studio 可能最多需要一小时，才能检测文件更改。 可强制重新扫描解决方案中的所有文件，具体方法为右键单击“解决方案资源管理器”  中的项目节点，再选择“重新扫描解决方案”  。
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>IntelliSense 生成故障疑难解答
 
-IntelliSense 生成即使不生成二进制文件，也仍可能会发生故障。 导致故障发生的一个可能原因是，自定义 .props 或 .targets 文件不正确。 在 Visual Studio 2017 版本 15.6 及更高版本中，仅 IntelliSense 生成错误记录到输出窗口中。 若要查看这些错误，请将“显示的输出来自”设置为“解决方案”：
+IntelliSense 生成即使不生成二进制文件，也仍可能会发生故障。 导致故障发生的一个可能原因是，自定义 .props 或 .targets 文件不正确。 在 Visual Studio 2017 版本 15.6 及更高版本中，仅 IntelliSense 生成错误记录到输出窗口中。 若要查看这些错误，请将“显示的输出来自”  设置为“解决方案”  ：
 
 ![解决方案错误输出窗口](media/vcpp-intellisense-output-window.png)
 
