@@ -97,3 +97,6 @@
 ## [报告问题](report-a-problem.md)
 ## [排除故障：为什么看不到所有模板？](troubleshooting-no-templates.md)
 ## [排除故障：更新程序在检索信息时发生错误](updater-troubleshooting.md)
+
+# [发行说明](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [预览发行说明](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
