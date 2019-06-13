@@ -60,10 +60,10 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 1. 创建新的 ASP.NET Core 应用程序。
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019，键入**Ctrl + Q**若要打开搜索框中，键入**asp.net**，选择**模板**，然后选择**创建新的 ASP.NET Core Web 应用程序**. 在显示对话框中，该项目命名**MyASPApp**，然后选择**创建**。 接下来，选择**Web 应用程序 （模型-视图-控制器）**，然后选择**创建**。
+    在 Visual Studio 2019，键入**Ctrl + Q**若要打开搜索框中，键入**asp.net**，选择**模板**，然后选择**创建新的 ASP.NET Core Web 应用程序**. 在显示对话框中，该项目命名**MyASPApp**，然后选择**创建**。 接下来，选择**Web 应用程序 （模型-视图-控制器）** ，然后选择**创建**。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 中，选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**。 在 ASP.NET Core 模板部分中，选择**Web 应用程序 （模型-视图-控制器）**。 请确保选择了 ASP.NET Core 2.1，该**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。
+    在 Visual Studio 2017 中，选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**。 在 ASP.NET Core 模板部分中，选择**Web 应用程序 （模型-视图-控制器）** 。 请确保选择了 ASP.NET Core 2.1，该**启用 Docker 支持**未选中并且**身份验证**设置为**无身份验证**。 将项目命名**MyASPApp**。
     ::: moniker-end
 
 1. 打开 About.cshtml.cs 文件，并在中设置断点`OnGet`方法 (在较旧模板中，打开 HomeController.cs 而是和中设置断点`About()`方法)。
@@ -76,7 +76,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 1. 在 Visual Studio 中，右键单击项目节点并选择**发布**。
 
-    如果先前配置了任何发布配置文件，则“发布”窗格会显示。 单击**新的配置文件**。
+    如果先前配置了任何发布配置文件，则“发布”窗格会显示  。 单击**新的配置文件**。
 
 1. 选择**Azure 应用服务**从**发布**对话框中，选择**新建**，并按照提示来发布。
 
@@ -128,9 +128,9 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 1. 在托管系统上安装 [.NET Core Windows Server 托管捆绑包](https://aka.ms/dotnetcore-2-windowshosting)。 捆绑包将安装.NET Core 运行时，.NET Core 库和 ASP.NET Core 模块。 有关更多深入说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
-    > 如果系统没有 Internet 连接，请先获取并安装 [Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)，再安装 .NET Core Windows Server 托管捆绑包。
+    > 如果系统没有 Internet 连接，请先获取并安装 [Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)，再安装 .NET Core Windows Server 托管捆绑包  。
 
-3. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改）。
+3. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改）   。
 
 ## <a name="choose-a-deployment-option"></a>选择部署选项
 
@@ -159,7 +159,7 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 [!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-应用成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET Core，需要确保将 DefaultAppPool 的应用程序池字段设置为“无托管代码”。
+应用成功部署后，它应自动启动。 如果从 Visual Studio 不启动应用程序，请在 IIS 中启动应用程序。 对于 ASP.NET Core，需要确保将 DefaultAppPool 的应用程序池字段设置为“无托管代码”   。
 
 1. 在中**设置**对话框中，通过单击调试启用**下一步**，选择**调试**配置，然后选择**删除其他文件目标**下**文件发布**选项。
 
@@ -176,9 +176,9 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 如果要导入发布设置，则可以跳过此部分。
 
-1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点” 。
+1. 打开“Internet 信息服务(IIS)管理器”  并转到“站点”  。
 
-2. 右键单击“默认网站”  节点，然后选择“添加应用程序” 。
+2. 右键单击“默认网站”  节点，然后选择“添加应用程序”  。
 
 3. 设置**别名**字段**MyASPApp**和应用程序池域**无托管代码**。 设置**物理路径**到**C:\Publish** （其中更高版本部署的 ASP.NET 项目）。
 
@@ -211,28 +211,28 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 2. 在 Visual Studio 中，单击**调试 > 附加到进程**（Ctrl + Alt + P）。
 
     > [!TIP]
-    > 在 Visual Studio 2017 和更高版本中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...**(Shift + Alt + P)。
+    > 在 Visual Studio 2017 和更高版本中，您可以将重新附加到您以前使用附加到的同一个进程**调试 > 重新附加到进程...** (Shift + Alt + P)。
 
-3. 将限定符字段设置为**\<远程计算机名称>** 然后按**Enter**。
+3. 将限定符字段设置为 **\<远程计算机名称>** 然后按**Enter**。
 
     验证 Visual Studio 将所需的端口添加到计算机名称，将出现在格式： **\<远程计算机名称>：端口**
 
     ::: moniker range=">=vs-2019"
-    在 Visual Studio 2019，你会看到**\<远程计算机名称>:4024**
+    在 Visual Studio 2019，你会看到 **\<远程计算机名称>:4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在 Visual Studio 2017 中，你会看到**\<远程计算机名称>:4022**
+    在 Visual Studio 2017 中，你会看到 **\<远程计算机名称>:4022**
     ::: moniker-end
     端口是必需的。 如果看不到的端口号，请手动添加它。
 
-4. 单击“刷新”。
+4. 单击“刷新”  。
     “可用进程”  窗口中将显示某些进程。
 
     如果看不到任何进程，请尝试使用的 IP 地址而不远程计算机名称 （端口是必需的）。 可以使用`ipconfig`获取 IPv4 地址的命令行中。
 
     如果你想要使用**查找**按钮，可能需要向[打开 UDP 端口 3702](#bkmk_openports)在服务器上。
 
-5. 勾选“显示所有用户的进程”  。
+5. 勾选“显示所有用户的进程”   。
 
 6. 键入您的进程名称以快速查找您的应用程序的第一个字母。
 
@@ -249,9 +249,9 @@ Visual Studio 2017 需要按照本文中所示的步骤。
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
     ::: moniker-end
 
-7. 单击 **“附加”**。
+7. 单击 **“附加”** 。
 
-8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>。
+8. 打开远程计算机的网站。 在浏览器中，转到 http://\<remote computer name>  。
 
     将显示 ASP.NET 网页。
 9. 在运行的 ASP.NET 应用程序，单击链接到**有关**页。
