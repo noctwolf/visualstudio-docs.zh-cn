@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407759"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043307"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -93,7 +93,7 @@ ms.locfileid: "63407759"
      > [!IMPORTANT]
      > 您可以从 Visual Studio 计算机所使用的用户帐户运行远程调试器在不同的用户帐户下，但必须将其他用户帐户添加到远程调试器的权限。
 
-     或者，可以从命令行启动远程调试器 **/allow\<用户名 >** 参数： **msvsmon /allow \< username@computer>**。
+     或者，可以从命令行启动远程调试器 **/allow\<用户名 >** 参数： **msvsmon /allow \< username@computer>** 。
 
 - 如果你需要更改身份验证模式或端口号，或指定的远程工具的超时值： 选择**工具 > 选项**。
 
@@ -109,25 +109,25 @@ ms.locfileid: "63407759"
 
 1. 找到  “远程调试器配置向导”(rdbgwiz.exe)。 （这是独立于远程调试器的应用程序。）仅在你安装远程工具后，它才可用。 它不与 Visual Studio 一起安装。
 
-2. 开始运行配置向导。 当第一页出现时，单击“下一步” 。
+2. 开始运行配置向导。 当第一页出现时，单击“下一步”  。
 
 3. 勾选“将 Visual Studio 2015 远程调试器作为服务运行”  复选框。
 
 4. 添加用户帐户的名称和密码。
 
-    可能需要添加**作为服务登录**右到此帐户的用户 (查找**本地安全策略**(secpol.msc) 中**启动**页或窗口 (或类型**secpol**在命令提示符下)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到“属性”窗口，然后点击“确定”）。 单击 **“下一步”**。
+    可能需要添加**作为服务登录**右到此帐户的用户 (查找**本地安全策略**(secpol.msc) 中**启动**页或窗口 (或类型**secpol**在命令提示符下)。 当显示窗口时，双击“用户权限分配”  ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到“属性”窗口，然后点击“确定”）   。 单击 **“下一步”** 。
 
-5. 选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击 **“下一步”**。
+5. 选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击 **“下一步”** 。
 
-6. 如果可以启动服务，则会显示 “你已成功完成 Visual Studio 远程调试器配置向导”。 如果无法启动服务，则会显示“未能完成 Visual Studio 远程调试器配置向导” 。 此页还提供了为使服务正常启动要遵循的一些提示。
+6. 如果可以启动服务，则会显示  “你已成功完成 Visual Studio 远程调试器配置向导”。 如果无法启动服务，则会显示“未能完成 Visual Studio 远程调试器配置向导”  。 此页还提供了为使服务正常启动要遵循的一些提示。
 
-7. 单击 **“完成”**。
+7. 单击 **“完成”** 。
 
-   此时，远程调试器正作为服务运行。 可以通过转到“控制面板”>“服务”并找到 “Visual Studio 2015 远程调试器”来对此进行验证。
+   此时，远程调试器正作为服务运行。 可以通过转到“控制面板”>“服务”并找到 “Visual Studio 2015 远程调试器”来对此进行验证   。
 
-   可以从“控制面板”>“服务”停止和启动远程调试器服务。
+   可以从“控制面板”>“服务”停止和启动远程调试器服务  。
 
-## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试
+## <a name="set-up-debugging-with-remote-symbols"></a>设置使用远程符号进行调试
 
 [!INCLUDE [remote-debugger-symbols](../debugger/includes/remote-debugger-symbols.md)]
 

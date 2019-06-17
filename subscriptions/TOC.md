@@ -14,9 +14,7 @@
 ### [获取和管理产品密钥](product-keys.md)
 ### [Visual Studio 与 GitHub Enterprise](access-github.md)
 ### [订阅者权益](subscriber-benefits.md)
-### Visual Studio Dev Essentials
-#### [加入 Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [选择退出 Visual Studio Dev Essentials](leave-vsde.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## 使用订阅者权益
 ### 工具
 #### [Visual Studio IDE](vs-ide-benefit.md)
@@ -33,7 +31,6 @@
 #### [Windows 开发人员帐户](vs-windows-dev.md)
 #### [Office 365 订阅](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure 即用即付](vs-azure-payg.md)
 ### [专业开发](professional-development.md)
 #### [LinkedIn 学习](vs-linkedin-learning.md)

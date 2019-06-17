@@ -35,7 +35,7 @@ ms.locfileid: "65691152"
 
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
- 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在”\<项目名称> 属性页”对话框（在 Visual Basic “我的项目” 中）中更改这些设置。   
+ 用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在”\<项目名称> 属性页”对话框（在 Visual Basic “我的项目” 中）中更改这些设置。    
   
  有关详细信息，请参阅[建议的属性设置](../debugger/managed-debugging-recommended-property-settings.md)。  
   
@@ -45,7 +45,7 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
 |**属性名称**|**设置**|  
 |-----------------------|-----------------|  
-|**启动操作**|-大多数时候设置为”启动项目”。 如果你要在开始调试时启动另一个可执行文件，设置为”启动外部程序”（通常用于调试 Dll）。|  
+|**启动操作**|-大多数时候设置为”启动项目”  。 如果你要在开始调试时启动另一个可执行文件，设置为”启动外部程序”（通常用于调试 Dll）  。|  
   
  可以从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内部或者通过附加到已经运行的应用程序来调试 Windows 窗体应用程序。 有关附加的详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
@@ -65,7 +65,7 @@ Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsp
   
       有关详细信息，请参阅[在 Windows 窗体中创建事件处理程序](https://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701)。  
   
-3. 在“调试”菜单上，单击“启动”。  
+3. 在“调试”菜单上，单击“启动”   。  
   
 4. 使用中讨论的技术进行调试[调试器基础知识](../debugger/debugger-basics.md)。  
   

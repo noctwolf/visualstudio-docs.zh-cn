@@ -31,11 +31,11 @@ ms.locfileid: "62853150"
 >[!NOTE]
 >若要启用或禁用实时调试，必须以管理员身份运行 Visual Studio。 启用或禁用实时调试会设置一个注册表项，可能需要管理员权限来更改此注册表项。 若要以管理员身份打开 Visual Studio，右键单击 Visual Studio 应用程序，然后选择**以管理员身份运行**。
 
-可从 Visual Studio 的“工具” > “选项”（或“调试” > “选项”）对话框中配置实时调试。
+可从 Visual Studio 的“工具”   > “选项”  （或“调试”   > “选项”  ）对话框中配置实时调试。
 
 **启用或禁用实时调试：**
 
-1. 在“工具”或“调试”菜单上，选择“选项” > “调试” > “实时”。
+1. 在“工具”  或“调试”  菜单上，选择“选项”   > “调试”   > “实时”  。
 
    ![启用或禁用 JIT 调试](../debugger/media/dbg-jit-enable-or-disable.png "启用或禁用 JIT 调试")
 
@@ -51,7 +51,7 @@ ms.locfileid: "62853150"
 
 **若要通过编辑注册表禁用实时调试，请执行以下操作：**
 
-1. 从 Windows“开始”菜单，运行“注册表编辑器”(regedit.exe)。
+1. 从 Windows“开始”菜单，运行“注册表编辑器”(regedit.exe)    。
 
 2. 在中**注册表编辑器**窗口中，找到并删除以下注册表项：
 
@@ -79,7 +79,7 @@ ms.locfileid: "62853150"
 
 若要启用实时调试而不是标准 Windows 窗体错误处理，请添加以下设置：
 
-- 在 machine.config 或 \<应用名称>.exe.config 文件的 `system.windows.forms` 部分中，将 `jitDebugging` 值设置为 `true`: 
+- 在 machine.config 或 \<应用名称>.exe.config 文件的 `system.windows.forms` 部分中，将 `jitDebugging` 值设置为 `true`:  
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ ms.locfileid: "62853150"
     </configuration>
     ```
 
-- 在 C++ 窗体应用程序中，还要在 *.config* 文件或代码中将 `DebuggableAttribute` 设置为 `true`。 如果使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而不使用 [/Og](/cpp/build/reference/og-global-optimizations) 进行编译，则编译器会替你设置此属性。 但是，如果要调试非优化发布版本，则必须通过在应用的 AssemblyInfo.cpp 文件中添加以下行来设置 `DebuggableAttribute` ：
+- 在 C++ 窗体应用程序中，还要在 *.config* 文件或代码中将 `DebuggableAttribute` 设置为 `true`。 如果使用 [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) 而不使用 [/Og](/cpp/build/reference/og-global-optimizations) 进行编译，则编译器会替你设置此属性。 但是，如果要调试非优化发布版本，则必须通过在应用的 AssemblyInfo.cpp 文件中添加以下行来设置 `DebuggableAttribute`  ：
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -100,7 +100,7 @@ ms.locfileid: "62853150"
 
 - 必须安装 Visual Studio，才能按照以下步骤操作。 如果未安装 Visual Studio，则可以免费下载 [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。
 
-- 请务必依次选择“工具” > “选项” > “调试” > “实时”，[启用](#BKMK_Enabling)实时调试。
+- 请务必依次选择“工具” > “选项” > “调试” > “实时”，[启用](#BKMK_Enabling)实时调试     。
 
 本示例会在 Visual Studio 中创建 C# 控制台应用，该应用可引发 [NullReferenceException](/dotnet/api/system.nullreferenceexception)。
 
@@ -116,15 +116,15 @@ ms.locfileid: "62853150"
    }
    ```
 
-1. 若要生成解决方案，请选择“调试”（默认值） 或“发布”配置，然后选择“生成” > “重新生成解决方案”.
+1. 若要生成解决方案，请选择“调试”（默认值） 或“发布”配置，然后选择“生成” > “重新生成解决方案”     .
 
    > [!NOTE]
    > - 选择**调试**配置完整的调试体验。
-   > - 如果选择[发布](../debugger/how-to-set-debug-and-release-configurations.md)配置，必须先关闭[仅我的代码](../debugger/just-my-code.md)才能运行此过程。 可在“工具” > “选项” > “调试”下，取消选择“启用仅我的代码”。
+   > - 如果选择[发布](../debugger/how-to-set-debug-and-release-configurations.md)配置，必须先关闭[仅我的代码](../debugger/just-my-code.md)才能运行此过程。 可在“工具” > “选项” > “调试”下，取消选择“启用仅我的代码”     。
 
    有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。
 
-1. 在 C# 项目文件夹 (*...\ThrowsNullException\ThrowsNullException\bin\Debug*或 *...\ThrowsNullException\ThrowsNullException\bin\Release*) 中打开生成的应用 *ThrowsNullException.exe*。
+1. 在 C# 项目文件夹 ( *...\ThrowsNullException\ThrowsNullException\bin\Debug*或 *...\ThrowsNullException\ThrowsNullException\bin\Release*) 中打开生成的应用 *ThrowsNullException.exe*。
 
    应会看到下面的命令窗口：
 
@@ -134,7 +134,7 @@ ms.locfileid: "62853150"
 
    ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
 
-   在“可用调试器”下，选择“\<首选 Visual Studio 版本>的新实例”（如果尚未选择）。
+   在“可用调试器”下，选择“\<首选 Visual Studio 版本>的新实例”（如果尚未选择）   。
 
 1. 选择 **确定**。
 
@@ -145,7 +145,7 @@ ms.locfileid: "62853150"
 可以从此时开始调试。 如果调试的是真实应用，则需要找出代码引发异常的原因。
 
 > [!CAUTION]
-> 如果应用包含不受信任的代码，则会出现安全警告对话框，让你可决定是否继续进行调试。 继续调试前，请确定是否信任该代码。 代码是否为自己编写的？ 如果应用程序在远程计算机上运行，你能否识别进程的名称？ 如果应用在本地运行，请考虑计算机上运行恶意代码的可能性。 如果决定信任该代码，请选择“确定”。 否则，请选择“取消”。
+> 如果应用包含不受信任的代码，则会出现安全警告对话框，让你可决定是否继续进行调试。 继续调试前，请确定是否信任该代码。 代码是否为自己编写的？ 如果应用程序在远程计算机上运行，你能否识别进程的名称？ 如果应用在本地运行，请考虑计算机上运行恶意代码的可能性。 如果决定信任该代码，请选择“确定”  。 否则，请选择“取消”  。
 
 ## <a name="jit_errors"></a> 排查在实时调试
 
@@ -175,7 +175,7 @@ ms.locfileid: "62853150"
 
     调试器尝试附加到另一个用户下运行的进程。
 
-    若要解决此问题，请在 Visual Studio 中依次打开“调试” > “附加到进程”，然后在“可用进程”列表中查找要调试的进程。 如果不清楚进程名称，请在“Visual Studio 实时调试器”对话框中查找进程 ID。 在“可用进程”列表中选择该进程，然后选择“附加”。 选择“否”可关闭“实时调试器”对话框。
+    若要解决此问题，请在 Visual Studio 中依次打开“调试” > “附加到进程”，然后在“可用进程”列表中查找要调试的进程    。 如果不清楚进程名称，请在“Visual Studio 实时调试器”对话框中查找进程 ID  。 在“可用进程”列表中选择该进程，然后选择“附加”   。 选择“否”可关闭“实时调试器”对话框  。
 
 - **未能启动调试器，因为没有用户登录。**
 

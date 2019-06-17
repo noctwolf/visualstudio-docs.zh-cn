@@ -41,7 +41,7 @@ ms.locfileid: "63447070"
 
 - 通用命名约定 (UNC) 路径，如 *\\\ServerName\MyApplication\\* 。
 
-- URL 的 web 站点，如 http://www.microsoft.com/MyApplication。
+- URL 的 web 站点，如 http://www.microsoft.com/MyApplication 。
 
   默认情况下，发布位置是 *http://localhost/projectname/* 如果您安装了 IIS，或如果这样做的 publish\ 目录不具有安装 IIS。
 

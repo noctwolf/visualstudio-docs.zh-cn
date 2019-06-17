@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83156630aee0727502894b286f8c6823e25a5fe9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399267"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032723"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 检索目标 CPU 的类型。
@@ -33,7 +33,7 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>参数
  `pRetVal`
 
-[out]返回一个值从[CV_CPU_TYPE_e 枚举](../../debugger/debug-interface-access/cv-cpu-type-e.md)枚举，用于指定目标 CPU 类型。
+[out]返回一个值从[IMAGE_FILE_MACHINE_ 常量](/windows/desktop/SysInfo/image-file-machine-constants)，它指定目标 CPU 类型。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。
@@ -42,5 +42,5 @@ HRESULT get_machineType ( 
 > 返回值为`S_FALSE`表示该属性不是可用于符号。
 
 ## <a name="see-also"></a>请参阅
-- [CV_CPU_TYPE_e 枚举](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+- [IMAGE_FILE_MACHINE_ 常量](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
