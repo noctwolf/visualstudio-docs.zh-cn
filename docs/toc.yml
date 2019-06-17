@@ -399,6 +399,8 @@
                       href: ide/reference/move-type-to-matching-file.md
                     - name: 拉取成员
                       href: ide/reference/pull-members-up.md
+                    - name: 通过 IntelliSense 完成正则表达式
+                      href: ide/reference/regex-completion-through-intellisense.md
                     - name: 删除无法访问的代码
                       href: ide/reference/remove-unreachable-code.md
                     - name: 重命名

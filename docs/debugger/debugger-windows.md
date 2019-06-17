@@ -1,5 +1,5 @@
 ---
-title: 调试器窗口 |Microsoft Docs
+title: 检查数据使用调试器窗口 |Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -9,16 +9,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de19d073a3002c777c0458a99381ee943d297944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e14f1864452edd00237164e14af74330e3c209f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852506"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033003"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>了解有关 Visual Studio 中的调试器 Windows
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>检查数据使用 Visual Studio 中的调试器窗口
 
-调试程序时可以打开大多数调试器窗口。 若要查看调试器窗口列表，请设置断点并开始调试。 命中断点并且执行停止时，请单击“调试”>“窗口”。
+调试程序时可以打开大多数调试器窗口。 若要查看调试器窗口列表，请设置断点并开始调试。 命中断点并且执行停止时，请单击“调试”>“窗口”  。
 
 ||||
 |-|-|-|
