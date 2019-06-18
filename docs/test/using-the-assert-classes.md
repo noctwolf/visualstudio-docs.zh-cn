@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961999"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820322"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>使用 Assert 类进行单元测试
 
@@ -36,16 +36,16 @@ ms.locfileid: "62961999"
 
 ### <a name="exceptions"></a>异常
 
-测试失败时，将引发 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> 异常。 如果测试超时，引发意外的异常，或者包含生成失败结果的 Assert 语句，则测试将失败。
+测试失败时，将引发 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedException> 异常。 如果测试超时，引发意外的异常，或者包含生成失败结果的 Assert 语句，则测试将失败  。
 
-测试生成无结论的结果时，将引发 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>。 通常，将 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 语句添加到仍在处理的测试中，以指示它是否尚未准备好运行。
+测试生成无结论的结果时，将引发 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>  。 通常，将 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Inconclusive%2A?displayProperty=nameWithType> 语句添加到仍在处理的测试中，以指示它是否尚未准备好运行。
 
 > [!NOTE]
 > 备用策略使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.IgnoreAttribute> 属性标记尚未准备好运行的测试。 但是，这样做的弊端是你无法轻松地对未执行的测试数量生成报表。
 
 如果编写新的 Assert 异常类，让该类从基类 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> 继承使其可更轻松地将异常识别为断言失败，而不是从测试或生产代码引发的意外异常。
 
-如果想要让测试方法验证期望由应用程序代码中的方法引发的异常确实已引发，请使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 属性修饰测试方法。
+要验证期望由应用程序代码中的方法引发的异常确实已引发，请使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 方法。
 
 ## <a name="see-also"></a>请参阅
 

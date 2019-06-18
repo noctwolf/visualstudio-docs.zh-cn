@@ -1,5 +1,5 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考
+title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784077"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820762"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考
 
 本主题列出了 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空间的公共成员。 使用这些 API 可编写基于 Microsoft 本机单元测试框架的 C++ 单元测试。 本主题末尾有一个[用法示例](#example)。
 
- 头文件位于 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include** 文件夹中。
+ 头文件位于 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include** 文件夹中。
 
- lib 文件位于 _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib** 文件夹。
+ lib 文件位于 _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib** 文件夹。
 
 头文件和 lib 路径会在本机测试项目中自动配置。
 
@@ -103,7 +103,7 @@ ms.locfileid: "62784077"
 TEST_CLASS(className)
 ```
 
- 对于包含测试方法的每个类是必需的。 将 className 标识为测试类。 `TEST_CLASS` 必须在名称范围的范围内声明。
+ 对于包含测试方法的每个类是必需的。 将 className  标识为测试类。 `TEST_CLASS` 必须在名称范围的范围内声明。
 
 ```cpp
 TEST_METHOD(methodName)
@@ -112,7 +112,7 @@ TEST_METHOD(methodName)
 }
 ```
 
- 将 methodName 定义为测试方法。 `TEST_METHOD` 必须在该方法的类的范围内声明。
+ 将 methodName  定义为测试方法。 `TEST_METHOD` 必须在该方法的类的范围内声明。
 
 ### <a name="Initialize_and_cleanup"></a> 初始化和清理
 
@@ -125,7 +125,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
- 将 methodName 定义为在运行每个测试方法运行之前的方法。 `TEST_METHOD_INITIALIZE` 只能在测试类中定义一次，且必须在测试类中定义。
+ 将 methodName  定义为在运行每个测试方法运行之前的方法。 `TEST_METHOD_INITIALIZE` 只能在测试类中定义一次，且必须在测试类中定义。
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)
@@ -134,7 +134,7 @@ TEST_METHOD_CLEANUP(methodName)
 }
 ```
 
- 将 methodName 定义为在运行每个测试方法之后运行的方法。 `TEST_METHOD_CLEANUP` 只能在测试类中定义一次，且必须在测试类的范围内定义。
+ 将 methodName  定义为在运行每个测试方法之后运行的方法。 `TEST_METHOD_CLEANUP` 只能在测试类中定义一次，且必须在测试类的范围内定义。
 
 #### <a name="test_classes"></a> 测试类
 
@@ -145,7 +145,7 @@ TEST_CLASS_INITIALIZE(methodName)
 }
 ```
 
- 将 methodName 定义为在创建每个测试类之前运行的方法。 `TEST_CLASS_INITIALIZE` 只能在测试类中定义一次，且必须在测试类的范围内定义。
+ 将 methodName 定义为在创建每个测试类之前运行的方法  。 `TEST_CLASS_INITIALIZE` 只能在测试类中定义一次，且必须在测试类的范围内定义。
 
 ```cpp
 TEST_CLASS_CLEANUP(methodName)
@@ -154,7 +154,7 @@ TEST_CLASS_CLEANUP(methodName)
 }
 ```
 
- 将 methodName 定义为在创建每个测试方法之后运行的方法。 `TEST_CLASS_CLEANUP` 只能在测试类中定义一次，且必须在测试类的范围内定义。
+ 将 methodName  定义为在创建每个测试方法之后运行的方法。 `TEST_CLASS_CLEANUP` 只能在测试类中定义一次，且必须在测试类的范围内定义。
 
 #### <a name="test_modules"></a> 测试模块
 
@@ -165,13 +165,13 @@ TEST_MODULE_INITIALIZE(methodName)
 }
 ```
 
- 定义在加载模块时运行的方法 methodName。 `TEST_MODULE_INITIALIZE` 只能在测试模块中定义一次，且必须在命名空间范围内声明。
+ 定义在加载模块时运行的方法 methodName  。 `TEST_MODULE_INITIALIZE` 只能在测试模块中定义一次，且必须在命名空间范围内声明。
 
 ```cpp
 TEST_MODULE_CLEANUP(methodName)
 ```
 
- 定义在卸载模块时运行的方法 methodName。 `TEST_MODULE_CLEANUP` 只能在测试模块中定义一次，且必须在命名空间范围内声明。
+ 定义在卸载模块时运行的方法 methodName  。 `TEST_MODULE_CLEANUP` 只能在测试模块中定义一次，且必须在命名空间范围内声明。
 
 ### <a name="create_test_attributes"></a> 创建测试属性
 
@@ -184,9 +184,9 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- 将使用一个或多个 `TEST_METHOD_ATTRIBUTE` 宏定义的属性添加到测试方法 testClassName。
+ 将使用一个或多个 `TEST_METHOD_ATTRIBUTE` 宏定义的属性添加到测试方法 testClassName  。
 
- `TEST_METHOD_ATTRIBUTE` 宏定义一个具有名称 attributeName和值 attributeValue 的属性。
+ `TEST_METHOD_ATTRIBUTE` 宏定义一个具有名称 attributeName  和值 attributeValue  的属性。
 
 #### <a name="test_class_attributes"></a> 测试类属性
 
@@ -197,9 +197,9 @@ BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)
 END_TEST_CLASS_ATTRIBUTE()
 ```
 
- 将使用一个或多个 `TEST_CLASS_ATTRIBUTE` 宏定义的属性添加到测试类 testClassName。
+ 将使用一个或多个 `TEST_CLASS_ATTRIBUTE` 宏定义的属性添加到测试类 testClassName  。
 
- `TEST_CLASS_ATTRIBUTE` 宏定义一个具有名称 attributeName和值 attributeValue 的属性。
+ `TEST_CLASS_ATTRIBUTE` 宏定义一个具有名称 attributeName  和值 attributeValue  的属性。
 
 #### <a name="test_module_attributes"></a> 测试模块属性
 
@@ -210,9 +210,9 @@ BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)
 END_TEST_MODULE_ATTRIBUTE()
 ```
 
- 将使用一个或多个 `TEST_MODULE_ATTRIBUTE` 宏定义的属性添加到测试模块 testModuleName。
+ 将使用一个或多个 `TEST_MODULE_ATTRIBUTE` 宏定义的属性添加到测试模块 testModuleName  。
 
- `TEST_MODULE_ATTRIBUTE` 宏定义一个具有名称 attributeName和值 attributeValue 的属性。
+ `TEST_MODULE_ATTRIBUTE` 宏定义一个具有名称 attributeName  和值 attributeValue  的属性。
 
 #### <a name="pre_defined_attributes"></a> 预定义属性
  可以为上面介绍的宏 `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE` 或 `TEST_MODULE_ATTRIBUTE` 替换这些预定义属性。
@@ -221,25 +221,25 @@ END_TEST_MODULE_ATTRIBUTE()
 TEST_OWNER(ownerAlias)
 ```
 
- 定义一个具有名称 `Owner` 和属性值 ownerAlias 的属性。
+ 定义一个具有名称 `Owner` 和属性值 ownerAlias  的属性。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- 定义一个具有名称 `Description` 和属性值 description 的属性。
+ 定义一个具有名称 `Description` 和属性值 description  的属性。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- 定义一个具有名称 `Priority` 和属性值 priority 的属性。
+ 定义一个具有名称 `Priority` 和属性值 priority  的属性。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- 定义一个具有名称 `WorkItem` 和属性值 workItem 的属性。
+ 定义一个具有名称 `WorkItem` 和属性值 workItem  的属性。
 
 ```cpp
 TEST_IGNORE()
@@ -558,10 +558,10 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
 ## <a name="cppunittestlogger_h"></a> CppUnitTestLogger.h
 
 ### <a name="logger"></a> 记录器
- Logger 类包含要写入到输出窗口的静态方法。
+ Logger 类包含要写入到输出窗口  的静态方法。
 
 ### <a name="write_message"></a> 编写消息
-将字符串写入到输出窗口
+将字符串写入到输出窗口 
 
 ```cpp
 static void Logger::WriteMessage(const wchar_t* message)

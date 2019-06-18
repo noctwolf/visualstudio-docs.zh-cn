@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975547"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746930"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 
@@ -308,7 +308,7 @@ ms.locfileid: "62975547"
 
 如果代码文件包含语法错误，则显示该文件中的代码的形状将临时处于只读状态，直至修复该语法错误。 处于此状态的形状以红色文本和红色图标的形式显示工具提示“源代码文件包含一个分析错误”。
 
-存在于其他项目节点或被引用程序集节点下的被引用类型（例如 .NET Framework 类型）在类设计器设计图面上指示为只读。 存在于已打开的项目中的本地类型是读写的，其在类设计器设计图面上的形状作出的指示也是如此。
+存在于其他项目节点或被引用程序集节点下的被引用类型（例如 .NET 类型）在类设计器设计图面上指示为只读。 存在于已打开的项目中的本地类型是读写的，其在类设计器设计图面上的形状作出的指示也是如此。
 
 索引器在代码中和“类详细信息”窗口中是读写的，但索引器名称是只读的  。
 

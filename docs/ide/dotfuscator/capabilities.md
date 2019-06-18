@@ -17,18 +17,18 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557250"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744786"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
 本页重点介绍 Dotfuscator Community 的功能，并提供了可通过[升级][upgrades]获取的对高级选项的引用。
 
-Dotfuscator Community 是 .NET 应用程序的后期生成系统。
+Dotfuscator Community 是 .NET 应用程序的后期生成  系统。
 使用它，Visual Studio 用户可[模糊处理程序集][obfuscation]，还可将[主动防御措施][checks]注入应用程序 - 全部都无需 Dotfuscator 访问原始源代码。
 Dotfuscator 以多种方式保护应用程序，并创建了分层保护策略。
 
@@ -37,7 +37,7 @@ Dotfuscator Community 支持各种 .NET 程序集和应用程序类型，包括[
 ## <a name="intellectual-property-protection"></a>知识产权保护
 
 应用程序的设计、行为和实现是各种形式的知识产权 (IP)。
-但是，为 .NET Framework 创建的应用程序实质上是公开透明的；[因其包含高级元数据和中间代码][assemblies]，可以非常轻松地对 .NET 程序集进行反向工程处理。
+但是，为 .NET 创建的应用程序实质上是公开透明的；[因其包含高级元数据和中间代码][assemblies]，可以轻松地对 .NET 程序集进行反向工程处理。
 
 Dotfuscator Community 中包括以[重命名][renaming]形式进行的基本 [.NET 模糊处理][obfuscation]。
 使用 Dotfuscator 对代码进行模糊处理可降低通过反向工程对源代码进行未经授权访问的风险，因为重要的命名信息将不再公开。

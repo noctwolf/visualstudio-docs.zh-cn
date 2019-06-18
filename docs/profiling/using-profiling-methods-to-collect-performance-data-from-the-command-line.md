@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263829"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746768"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>使用分析方法通过命令行收集性能数据
-选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如进行分析的应用程序的类型、要使用的分析方法以及是以本机还是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 代码编码目标应用程序。
+选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如要分析的应用程序的类型、要使用的分析方法以及是以本机还是 .NET Framework 代码编写目标应用程序。
 
  本主题根据选择的分析方法组织命令行过程主题。
 
@@ -50,9 +50,9 @@ ms.locfileid: "66263829"
 - [本机服务](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>使用 .NET 内存方法收集内存分配数据和对象生存期数据
- 分析工具 .NET 内存方法使你可以收集有关 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中的对象生存期的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内存分配数据和信息。
+ 分析工具 .NET 内存方法使你可以收集有关 .NET Framework 中的对象生存期的 .NET Framework 内存分配数据和信息。
 
- 可以使用探查器启动目标应用程序；可以将探查器附加到正在运行的应用程序实例；并且可以创建应用程序的受检测版本以收集详细计时信息以及 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内存数据。
+ 可以使用探查器启动目标应用程序；可以将探查器附加到正在运行的应用程序实例；并且可以创建应用程序的受检测版本以收集详细计时信息以及 .NET Framework 内存数据。
 
 |任务|目标应用程序类型|
 |----------|-----------------------------|
