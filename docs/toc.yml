@@ -226,11 +226,7 @@
             - name: '指定应用程序图标（Visual Basic、C#）'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: 确定目标框架
-              items:
-                - name: 多目标概述
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: 面向 .NET Framework 的某个版本
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: 创建模板
               items:
                 - name: 创建项目和项模板
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: 重命名
                       href: ide/reference/rename.md
+                    - name: Split 或 merge if 语句
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: 同步命名空间和文件夹名称
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: 同步类型和文件名
                       href: ide/reference/sync-type-and-file.md
                     - name: 使用显式类型

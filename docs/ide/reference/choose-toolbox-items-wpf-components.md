@@ -12,28 +12,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790923"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744983"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>“选择工具箱项”->“WPF 组件”
 
-“选择工具箱项”对话框中的此选项卡显示了在本地计算机上可用的 Windows Presentation Foundation (WPF) 控件列表。 若要显示此列表，请从“工具”菜单中选择“选择工具箱项”，从而显示“选择工具箱项”对话框，然后选择其中的“WPF 组件”选项卡。若要对所列组件排序，请选择任意列标题。
+“选择工具箱项”  对话框中的此选项卡显示了在本地计算机上可用的 Windows Presentation Foundation (WPF) 控件列表。 若要显示此列表，请从“工具”  菜单中选择“选择工具箱项”  ，从而显示“选择工具箱项”  对话框，然后选择其中的“WPF 组件”  选项卡。若要对所列组件排序，请选择任意列标题。
 
-- 选中组件旁边的复选框后，该组件的图标将显示在“工具箱”中。
+- 选中组件旁边的复选框后，该组件的图标将显示在“工具箱”  中。
 
     > [!TIP]
-    > 若要将 WPF 控件添加到打开以供编辑的项目文档，请将它的“工具箱”图标拖到“设计”视图图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[工具箱](../../ide/reference/toolbox.md)。
+    > 若要将 WPF 控件添加到打开以供编辑的项目文档，请将它的“工具箱”  图标拖到“设计”视图图面。 组件的默认标记和代码将插入到项目中，以便进行修改。 有关详细信息，请参阅[工具箱](../../ide/reference/toolbox.md)。
 
-- 清除组件旁边的复选框后，将从“工具箱”中删除相应的图标。
+- 清除组件旁边的复选框后，将从“工具箱”  中删除相应的图标。
 
     > [!NOTE]
-    > 计算机上安装的 .NET Framework 组件仍然可用，无论其图标是否显示在“工具箱”中。
+    > 计算机上安装的 .NET 组件仍然可用，无论其图标是否显示在“工具箱”中  。
 
-“WPF 组件”选项卡上的列包含下列信息：
+“WPF 组件”  选项卡上的列包含下列信息：
 
 **名称**
 
@@ -41,15 +41,15 @@ ms.locfileid: "62790923"
 
 **命名空间**
 
-显示定义组件结构的 [.NET Framework 类 API](/dotnet/api/?view=netframework-4.7) 命名空间的层次结构。 对此列排序可列出计算机上安装的每个 .NET Framework 命名空间中的可用组件。
+显示定义组件结构的 [.NET API](/dotnet/api/?view=netframework-4.7) 命名空间的层次结构。 对此列排序可列出计算机上安装的每个 .NET 命名空间中的可用组件。
 
 **程序集名称**
 
-显示包含每个组件的命名空间的 .NET Framework 程序集的名称。 对此列排序可列出计算机上安装的每个 .NET Framework 程序集中包含的命名空间。
+显示包含每个组件的命名空间的 .NET 程序集的名称。 对此列排序可列出计算机上安装的每个 .NET 程序集中包含的命名空间。
 
 **目录**
 
-显示 .NET Framework 程序集的位置。 所有程序集的默认位置是全局程序集缓存。 有关全局程序集缓存的详细信息，请参阅[使用程序集和全局程序集缓存](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
+显示 .NET 程序集的位置。 所有程序集的默认位置是全局程序集缓存。 有关全局程序集缓存的详细信息，请参阅[使用程序集和全局程序集缓存](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)。
 
 ## <a name="uielement-list"></a>UIElement 列表
 
@@ -63,7 +63,7 @@ ms.locfileid: "62790923"
 
 **浏览**
 
-开启“打开”对话框，这可导航到包含 WPF 控件的程序集。 将其用于加载不在全局程序集缓存中的程序集。
+开启“打开”  对话框，这可导航到包含 WPF 控件的程序集。 将其用于加载不在全局程序集缓存中的程序集。
 
 **语言**
 

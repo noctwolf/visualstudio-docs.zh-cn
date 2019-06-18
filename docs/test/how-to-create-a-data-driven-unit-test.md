@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615433"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745860"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 
@@ -89,11 +89,11 @@ public TestContext TestContext
 在测试方法中，通过 `TestContext` 的 `DataRow` 索引器属性来访问数据。
 
 > [!NOTE]
-> .NET Core 不支持 [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性。 如果尝试在 .NET Core 或 UWP 单元测试项目中以这种方式访问测试数据，你将看到如下错误：“‘TestContext’不包含‘DataRow’的定义，并且找不到接受类型为‘TestContext’的第一个参数的可访问扩展方法‘DataRow’(是否缺少 using 指令或程序集引用?)”。
+> .NET Core 不支持 [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute) 属性。 如果尝试在 .NET Core 或 UWP 单元测试项目中以这种方式访问测试数据，你将看到如下错误：“‘TestContext’不包含‘DataRow’的定义，并且找不到接受类型为‘TestContext’的第一个参数的可访问扩展方法‘DataRow’(是否缺少 using 指令或程序集引用?)”  。
 
 ## <a name="write-the-test-method"></a>编写测试方法
 
-`AddIntegers` 的测试方法很简单。 针对数据源中的每一行，将 FirstNumber 和 SecondNumber 列值作为参数来调用 `AddIntegers`，并根据 Sum 列的值来验证返回值：
+`AddIntegers` 的测试方法很简单。 针对数据源中的每一行，将 FirstNumber 和 SecondNumber 列值作为参数来调用 `AddIntegers`，并根据 Sum 列的值来验证返回值：   
 
 ```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0; Data Source=C:\Data\MathsData.sdf;", "Numbers")]
@@ -129,9 +129,9 @@ DataSource 属性具有三个构造函数。
 [DataSource(dataSourceSettingName)]
 ```
 
-具有一个参数的构造函数使用解决方案的 app.config 文件中存储的连接信息。 *DataSourceSettingsName* 是配置文件中的 Xml 元素的名称，它指定连接信息。
+具有一个参数的构造函数使用解决方案的 app.config 文件中存储的连接信息  。 *DataSourceSettingsName* 是配置文件中的 Xml 元素的名称，它指定连接信息。
 
-使用 app.config 文件可更改数据源的位置，而无需对单元测试本身进行更改。 有关如何创建和使用“app.config”文件的信息，请参阅[演练：使用配置文件定义数据源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+使用 app.config 文件可更改数据源的位置，而无需对单元测试本身进行更改  。 有关如何创建和使用“app.config”文件的信息，请参阅[演练：使用配置文件定义数据源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md) 
 
 ```csharp
 [DataSource(connectionString, tableName)]
@@ -160,16 +160,16 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ## <a name="run-the-test-and-view-results"></a>运行测试并查看结果
 
-完成测试方法的编写后，生成测试项目。 测试方法显示在“测试资源管理器”的“未运行的测试”组中。 当运行、编写以及重新运行测试时，测试资源管理器在“失败的测试”、“通过的测试”和“未运行的测试”组中显示结果。 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。
+完成测试方法的编写后，生成测试项目。 测试方法显示在“测试资源管理器”的“未运行的测试”组中   。 当运行、编写以及重新运行测试时，测试资源管理器在“失败的测试”、“通过的测试”和“未运行的测试”组中显示结果     。 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。
 
-当运行测试时，位于“测试资源管理器”顶部的测试结果栏是动态显示的。 在测试运行结束时，如果所有测试均通过，则结果栏为绿色；如果有任何测试失败，结果栏为红色。 测试运行的摘要显示在测试资源管理器窗口底部的细节窗格中。 选择一个测试以在底部窗格中查看该测试的详细信息。
+当运行测试时，位于“测试资源管理器”顶部的测试结果栏是动态显示的  。 在测试运行结束时，如果所有测试均通过，则结果栏为绿色；如果有任何测试失败，结果栏为红色。 测试运行的摘要显示在测试资源管理器窗口底部的细节窗格中  。 选择一个测试以在底部窗格中查看该测试的详细信息。
 
 > [!NOTE]
-> 每行数据都有一个结果，还有一个摘要结果。 如果每行数据测试通过，则摘要运行显示为“已通过”。 如果任何数据行测试失败，则摘要运行显示为“失败”。
+> 每行数据都有一个结果，还有一个摘要结果。 如果每行数据测试通过，则摘要运行显示为“已通过”  。 如果任何数据行测试失败，则摘要运行显示为“失败”  。
 
-如果在我们的示例中运行 `AddIntegers_FromDataSourceTest` 方法，则结果栏变为红色，且测试方法移动到“失败的测试”。 如果数据源中任一循环访问的方法失败，则数据驱动测试失败。 在测试资源管理器窗口中选择失败的数据驱动测试时，细节窗格将显示由数据行索引标识的每个迭代的结果。 在本示例中 `AddIntegers` 算法好像没有正确处理负值。
+如果在我们的示例中运行 `AddIntegers_FromDataSourceTest` 方法，则结果栏变为红色，且测试方法移动到“失败的测试”  。 如果数据源中任一循环访问的方法失败，则数据驱动测试失败。 在测试资源管理器窗口中选择失败的数据驱动测试时，细节窗格将显示由数据行索引标识的每个迭代的结果  。 在本示例中 `AddIntegers` 算法好像没有正确处理负值。
 
-当更正了要测试的方法，并重新运行测试，则结果栏变为绿色，并且测试方法移动到“通过的测试”组中。
+当更正了要测试的方法，并重新运行测试，则结果栏变为绿色，并且测试方法移动到“通过的测试”  组中。
 
 ## <a name="see-also"></a>请参阅
 
@@ -179,4 +179,4 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [单元测试代码](../test/unit-test-your-code.md)
 - [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
-- [通过适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试](../test/unit-test-your-code.md)
+- [使用 Microsoft 单元测试框架编写 .NET 的单元测试](../test/unit-test-your-code.md)

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a558ce97e642c38b5c54c1a2e3d01cce2e2e280
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897888"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715460"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 
@@ -28,7 +28,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 你选择的设计工具在很大程度上取决于你的技能集。 如果你更加面向代码，则可以在 Visual Studio 中编写的 XAML 代码来完成高级设计任务。 如果你更加面向设计，则可以使用 Blend for Visual Studio 执行高级任务，而无需编写代码。
 
-可以 Visual Studio 与 Blend for Visual Studio 之间来回切换，甚至可以同时在两者中打开同一个项目。 在一个 IDE 中对 XAML 文件进行的更改可以在你切换到另一个 IDE 时，通过自动重载进行应用。 可以通过任一 IDE 中的“工具” > “选项”对话框中的选项控制重载行为。
+可以 Visual Studio 与 Blend for Visual Studio 之间来回切换，甚至可以同时在两者中打开同一个项目。 在一个 IDE 中对 XAML 文件进行的更改可以在你切换到另一个 IDE 时，通过自动重载进行应用。 可以通过任一 IDE 中的“工具” > “选项”对话框中的选项控制重载行为   。
 
 ### <a name="shared-capabilities"></a>共享功能
 
@@ -48,11 +48,11 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - **已同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参见[跨多台计算机同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 
-- **通用的解决方案资源管理器：** 解决方案资源管理器可提供项目及其文件的组织有序的视图，并且可用于访问与它们关联的命令。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
+- **通用的解决方案资源管理器：** 解决方案资源管理器可提供项目及其文件的组织有序的视图，并且可用于访问与它们关联的命令  。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
 
 - **团队资源管理器：** 通过团队资源管理器可以使用 GIT 或 TFS 存储库管理项目以促进团队协作。 请参阅 [在团队资源管理器中工作](/azure/devops/user-guide/work-team-explorer)。
 
-- **NuGet：** 可以在 Visual Studio 和 Blend for Visual Studio 中管理 NuGet 包。 NuGet 是用于 .NET Framework 的程序包管理器，它简化了从解决方案安装和删除程序包的过程。
+- **NuGet：** 可以在 Visual Studio 和 Blend for Visual Studio 中管理 NuGet 包。 NuGet 是用于 .NET 的包管理器，它简化了从解决方案安装和删除包的过程。
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的高级功能
 

@@ -16,20 +16,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fc2e1afa95c56dda79296a24f027fb93d62c585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821073"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747731"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
-Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-types/regular-expressions)来查找和替代文本。
+Visual Studio 使用 [.NET 正则表达式](/dotnet/standard/base-types/regular-expressions)来查找和替换文本。
 
 ## <a name="replacement-patterns"></a>替换模式
 
-要使用带编号的捕获组，请在正则表达式模式中用圆括号将该组括起来。 使用 `$number`（其中 `number` 是从 1 开始的整数）来指定替换模式中的特定编号组。 例如，已分组的正则表达式 `(\d)([a-z])` 定义了两个组：第一个组包含一个十进制数字，第二个组包含一个 a 到 z 之间的字符。 该表达式在以下字符串中查找四个匹配项：1a 2b 3c 4d。 替换字符串 `z$1` 仅引用第一个组，并将该字符串转换为 z1 z2 z3 z4。
+要使用带编号的捕获组，请在正则表达式模式中用圆括号将该组括起来。 使用 `$number`（其中 `number` 是从 1 开始的整数）来指定替换模式中的特定编号组。 例如，已分组的正则表达式 `(\d)([a-z])` 定义了两个组：第一个组包含一个十进制数字，第二个组包含一个 a 到 z 之间的字符   。 该表达式在以下字符串中查找四个匹配项：1a 2b 3c 4d  。 替换字符串 `z$1` 仅引用第一个组，并将该字符串转换为 z1 z2 z3 z4  。
 
 要了解可在替换模式中使用的正则表达式，请参阅[正则表达式中的替代（.NET 指南）](/dotnet/standard/base-types/substitutions-in-regular-expressions)。
 
@@ -57,7 +57,7 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |匹配符号前或符号后的表达式。|&#124;|`(sponge\|mud) bath` 匹配“sponge bath”和“mud bath”。|
 |对反斜杠后面的字符进行转义| \\ |`\^` 匹配字符 ^。|
 |指定前面的字符或组的出现次数|{x}，其中 x 是出现次数|`x(ab){2}x` 匹配“xababx”，`x(ab){2,3}x` 匹配“xababx”和“xabababx”，但不匹配“xababababx”。|
-|匹配 Unicode 字符类中的文本。 有关 Unicode 字符类的详细信息，请参阅 <br /><br /> [Unicode Standard 5.2 字符属性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中“X”是 Unicode 数字。|`\p{Lu}` 匹配“Thomas Doe”中的“T”和“D”。|
+|匹配 Unicode 字符类中的文本。 有关 Unicode 字符类的详细信息，请参阅<br /><br /> [Unicode Standard 5.2 字符属性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中“X”是 Unicode 数字。|`\p{Lu}` 匹配“Thomas Doe”中的“T”和“D”。|
 |与字边界匹配|\b（在字符类外部，`\b` 指定字边界，而在字符类内部，`\b` 指定退格符。）|`\bin` 匹配“inside”中的“in”，不匹配“pinto”。|
 |与换行符（即新行后跟回车）相匹配。|\r?\n|仅当“End”是一行的最后一个字符串，且“Begin”是下一行的第一个字符串时，`End\r?\nBegin` 才匹配“End”和“Begin”。|
 |匹配任意字母数字字符|\w|`a\wd` 匹配“add”和“a1d”，不匹配“a d”。|

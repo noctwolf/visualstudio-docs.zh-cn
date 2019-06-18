@@ -3,19 +3,19 @@ title: 在项目中包括 NuGet 包
 description: 本文档介绍如何在 Xamarin 项目中包括 NuGet 包。 文档将介绍如何查找和下载包，同时介绍 IDE 集成功能。
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692329"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820620"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
-NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Studio for Mac 和 Visual Studio on Windows 中。 可以使用任一 IDE 搜索包并将包添加到 Xamarin.iOS 和 Xamarin.Android 项目。
+NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Studio for Mac 和 Visual Studio on Windows 中。 可以使用任一 IDE 搜索包并将包添加到 Xamarin、.NET Core 和 ASP.NET 项目。
 
 本文介绍如何在项目中包括 NuGet 包并演示实现此流程无缝的工具链。
 
@@ -31,7 +31,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ## <a name="adding-a-package"></a>添加包
 
-对于 Visual Studio for Mac 中打开的项目，右键单击“Solution Pad”中的“包”文件夹并选择“添加包”    ：
+在 Visual Studio for Mac 中打开项目后，右键单击 Solution Pad 中的“包”文件夹并选择“添加 NuGet 包”    ：
 
 ![添加新的 NuGet 包上下文操作](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ![列出 NuGet 包](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的搜索框查找特定的包，如  `azure`。 找到希望使用的包时，请选择它并单击“添加包”按钮以开始安装 ****  。
+使用右上角的搜索框查找特定的包，如  `azure mobile`。 找到要使用的包后，请选择它并单击“添加包”按钮开始安装 ****  。
 
-[添加 Azure NuGet 包](media/nuget-walkthrough-AddPackages2.png)
+![添加 Azure NuGet 包](media/nuget-walkthrough-AddPackages2.png)
 
 包下载完毕后会添加到项目中。 解决方案会发生以下更改：
 
@@ -77,9 +77,9 @@ using Newtonsoft.Json;
 
 ![包菜单](media/nuget-walkthrough-PackagesMenu.png)
 
-* 添加包  - 打开窗口，将更多包添加到项目。
-* 更新  - 检查每个包的源服务器并下载任何更新版本。
-* 还原  - 下载任何缺少的包（无需将现有包升级到更新版本）。
+*   添加 NuGet 包 - 打开窗口，将更多包添加到项目  。
+*   更新  - 检查每个包的源服务器并下载任何更新版本。
+*   还原  - 下载任何缺少的包（无需将现有包升级到更新版本）。
 
 现在也提供解决方案级别的“更新”和“还原”选项，这些选项可影响该解决方案中的所有项目。
 

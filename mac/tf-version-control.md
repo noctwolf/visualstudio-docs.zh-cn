@@ -3,16 +3,16 @@ title: Team Foundation 版本控制 (TFVC)
 description: 使用 Team Foundation 版本控制 (TFVC) 从 Visual Studio for Mac 连接到 Team Foundation Server/Azure DevOps。
 author: conceptdev
 ms.author: crdun
-ms.date: 04/04/2019
+ms.date: 04/28/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500999"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745556"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制
 
@@ -21,7 +21,7 @@ ms.locfileid: "66500999"
 
 Azure Repos 提供了两种版本控制模型：[Git](/azure/devops/repos/git/?view=azure-devops)，它是分布式版本控制系统，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC)，它是集中式版本控制系统。
 
-Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一些解决方法才能使用 TFVC。 如果目前使用 TFVC 进行版本控制，下面介绍的一些解决方案可以用于访问托管在 TFVC 中的源代码。
+Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一些解决方法才能使用 TFVC。 如果目前使用 TFVC 进行版本控制，可使用以下解决方案访问托管在 TFVC 中的源代码：
 
 * [对于图形化 UI，请使用 Visual Studio Code 和 Azure Repos 扩展](#use-visual-studio-code-and-the-azure-repos-extension)
 * [使用 Team Explorer Everywhere 命令行客户端 (TEE-CLC) 连接到存储库](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -31,7 +31,7 @@ Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一�
 
 ## <a name="requirements"></a>要求
 
-* Visual Studio Community、Professional 或 Enterprise for Mac 版本 7.8 或更高版本。
+* Visual Studio Community、Professional 或 Enterprise for Mac 7.8 和更高版本。
 * Azure DevOps Services、Team Foundation Server 2013 及更高版本，或 Azure DevOps Server 2018 及更高版本。
 * Azure DevOps Services 或 Team Foundation Server/Azure DevOps Server 中的项目，配置为使用 Team Foundation 版本控制。
 
@@ -44,8 +44,6 @@ Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一�
 如果习惯使用 macOS 终端，Team Explorer Everywhere 命令行客户端 (TEE-CLC) 将提供一种受支持的方法，以连接到 TFVC 中的源。
 
 可以按照以下步骤设置到 TFVC 的连接并提交更改。
-
-特别感谢我们社区的开发人员 Chris Pilcher，他对 [TEE-CLC 的原始说明](https://gist.github.com/chris-pilcher/a3f14eb081d7ab983e5c)构成了本节的基础。
 
 ### <a name="setting-up-the-tee-clc"></a>设置 TEE-CLC
 
@@ -82,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 `TF_AUTO_SAVE_CREDENTIALS` 环境设置用于保存凭据，因此不会提示你多次输入凭据。 当系统提示输入用户名称时，使用在上一节中创建的个人访问令牌，并使用空白密码。
 
-现在，若要创建到本地文件夹的源文件的映射，请使用 `tf workfold` 命令。 下面的示例将从“MyRepository”TFVC 项目映射一个名为“WebApp.Services”的文件夹，并将其设置为复制到本地 ~/Projects/ 文件夹中（即当前用户的主文件夹中的“Projects”文件夹）。
+要创建到本地文件夹的源文件的映射，请使用 `tf workfold` 命令。 下面的示例将从“MyRepository”TFVC 项目映射一个名为“WebApp.Services”的文件夹，并将其设置为复制到本地 ~/Projects/ 文件夹中（即当前用户的主文件夹中的“Projects”文件夹）。
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

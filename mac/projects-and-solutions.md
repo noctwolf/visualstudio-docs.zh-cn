@@ -3,26 +3,43 @@ title: 项目和解决方案
 description: 本文档概述了 Visual Studio for Mac 中的项目和解决方案。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 6ae37b7256b1cefe2bfbd2174135b013b1aa37cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec62e9c0b449f5f2aed568735c2a10d1f6634eed
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936999"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820946"
 ---
-# <a name="projects-and-solutions"></a>项目和解决方案
+# <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的项目和解决方案
 
-Visual Studio for Mac 提供 Solution Pad 以显示整个打开的解决方案的树视图 __ 。 Solution Pad 允许轻松访问各个项目中包含的源代码、资源、用户界面和程序集引用。 默认情况下，Solution Pad 一次打开一个解决方案。 每个解决方案可以包括多个项目，每个项目可以包含多个项。
+本文概述 Visual Studio for Mac 中的项目和解决方案概念   。
 
-## <a name="using-projects-and-solutions"></a>使用项目和解决方案
+> [!NOTE] 
+> 本主题适用于 Visual Studio for Mac。 对于 Windows 上的 Visual Studio，请参阅 [Visual Studio 中的项目和解决方案](/visualstudio/ide/solutions-and-projects-in-visual-studio)。
 
-若要创建新的项目或解决方案，请参阅[创建新的项目和解决方案](create-new-projects.md)一文。
+## <a name="projects"></a>项目
 
-## <a name="project-and-solution-options"></a>“项目和解决方案”选项
+在 Visual Studio for Mac 中创建新的应用程序、网站等内容时，要从项目开始。 项目包含编译可执行文件、库或网站中所需的全部文件（源代码、图像、数据文件等）。
 
-通过双击项目或解决方案名称或右键单击并浏览到“选项”可以同时管理项目和解决方案的属性。 有关这些选项的详细信息，请参阅[管理解决方案和项目属性](managing-solutions-and-project-properties.md)一文。
+项目由包含 xml 的文件（如 C# 项目的 `.csproj`）定义，其中 xml 定义文件和文件夹层次结构、文件路径以及项目特定设置（如生成设置）。
+
+当 Visual Studio for Mac 加载项目时，Solution Pad 使用项目文件显示项目中的文件和文件夹。 编译期间，MSBuild 读取项目文件中的设置以创建可执行文件。
+
+## <a name="solutions"></a>解决方案
+
+（  解决方案是将一个或多个相关项目分组到一起的容器。） 解决方案由格式唯一的文本文件（扩展名 `.sln`）描述；不应对其进行手动编辑。
+
+## <a name="managing-projects-in-the-solution-pad"></a>在 Solution Pad 中管理项目
+
+创建或加载项目之后，可以使用 Solution Pad 查看和管理项目或解决方案以及其中包含的文件。 下图显示具有包含两个项目的 .NET Core 解决方案的 Solution Pad：
+
+![包含多个项目的示例解决方案](media/solution-example.png)
+
+通过双击项目或解决方案名称或右键单击并选择“选项”，可以同时管理项目和解决方案的属性  。
+
+有关这些选项的详细信息，请参阅[管理解决方案和项目属性](managing-solutions-and-project-properties.md)一文。
 
 ## <a name="see-also"></a>请参阅
 

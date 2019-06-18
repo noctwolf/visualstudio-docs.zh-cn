@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501172"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820953"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -59,6 +59,7 @@ ms.locfileid: "66501172"
 
 |命令|键盘快捷键|
 |--------------| - |
+|Build.BuildSelection|**Ctrl+B** (Visual Studio 2019)|
 |生成.生成解决方案|**Ctrl+Shift+B**|
 |生成.取消|**Ctrl+Break**|
 |生成.编译|**Ctrl+F7**|
@@ -77,7 +78,6 @@ ms.locfileid: "66501172"
 |调试.应用代码更改|**Alt+F10**|
 |调试.自动窗口|**Ctrl+Alt+V、A**|
 |调试.全部中断|**Ctrl+Alt+Break**|
-|调试.在函数处中断|**Ctrl+B**|
 |调试.断点|**Ctrl+Alt+B**|
 |调试.调用堆栈|**Ctrl+Alt+C**|
 |调试.删除所有断点|**Ctrl+Shift+F9**|
@@ -86,6 +86,7 @@ ms.locfileid: "66501172"
 |调试.DOM 资源管理器|**Ctrl+Alt+V、D**|
 |调试.启用断点|**Ctrl+F9**|
 |调试.异常|**Ctrl+Alt+E**|
+|Debug.FunctionBreakpoint|**Ctrl+K、B** (Visual Studio 2019)<br />**Ctrl**+**B** (Visual Studio 2017)|
 |调试.转到上一个调用或 IntelliTrace 事件|**Ctrl+Shift+F11**|
 |调试.图形.启动诊断|**Alt+F5**|
 |调试.即时|**Ctrl+Alt+I**|
@@ -109,7 +110,7 @@ ms.locfileid: "66501172"
 |调试.并行监视 3|**Ctrl+Shift+D、3**|
 |调试.并行监视 4|**Ctrl+Shift+D、4**|
 |调试.进程|**Ctrl+Alt+Z**|
-|调试.快速监视|**Shift+F9**<br /><br /> or<br /><br /> **Ctrl+Alt+Q**|
+|调试.快速监视|**Shift+F9** 或 **Ctrl+Alt+Q**|
 |Debug.RefreshWindowsapp|**Ctrl+Shift+R**|
 |调试.寄存器|**Ctrl+Alt+G**|
 |调试.重新启动|**Ctrl+Shift+F5**|

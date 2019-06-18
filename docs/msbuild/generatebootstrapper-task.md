@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003660"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746587"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。
@@ -84,7 +84,7 @@ ms.locfileid: "63003660"
 
    可选 `String` 输出参数。
 
-   指定 setup.exe 的生成位置
+   指定 setup.exe 的生成位置 
 
 - `ComponentsLocation`
 
@@ -128,7 +128,7 @@ ms.locfileid: "63003660"
 
    可选 `String` 参数。
 
-   指定用于复制 setup.exe 和所有包文件的位置。
+   指定用于复制 setup.exe 和所有包文件的位置  。
 
 - `Path`
 
@@ -152,7 +152,7 @@ ms.locfileid: "63003660"
 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
 ## <a name="example"></a>示例
-以下示例使用 `GenerateBootstrapper` 任务来安装将 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 作为必备组件安装的应用程序。
+以下示例使用 `GenerateBootstrapper` 任务来安装将 .NET Framework 2.0 作为必备组件安装的应用程序。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

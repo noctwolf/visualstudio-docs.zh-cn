@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401730"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820950"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -179,19 +179,23 @@ ms.locfileid: "66401730"
 
 ## <a name="create-the-test-class"></a>创建测试类
 
-创建一个测试类来验证 `BankAccount` 类。 可以使用项目模板生成的 UnitTest1.cs  文件，但需为文件和类提供更具描述性的名称。 通过重命名“解决方案资源管理器”  中的文件，一步即可完成该操作。
+创建一个测试类来验证 `BankAccount` 类。 可以使用项目模板生成的 UnitTest1.cs  文件，但需为文件和类提供更具描述性的名称。
 
 ### <a name="rename-a-file-and-class"></a>重命名文件和类
 
 1. 要重命名文件，在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件   。 在右键单击菜单中，选择“重命名”  ，再将文件重命名为 BankAccountTests.cs  。
 
-   ::: moniker range="vs-2017"
+::: moniker range="vs-2017"
 
-   在弹出对话框中，选择“否”  。
+2. 要重命名类，请在弹出并询问是否也希望重命名代码元素的引用的对话框中选择“是”  。
 
-   ::: moniker-end
+::: moniker-end
 
-2. 要重命名类，请将光标放置在代码编辑器的 `UnitTest1` 上，然后按 F2（或右键单击，然后选择“重命名”）   。 键入 BankAccountTests，然后按 Enter   。
+::: moniker range=">=vs-2019"
+
+2. 要重命名类，请将光标放置在代码编辑器的 `UnitTest1` 上，右键单击，然后选择“重命名”  。 键入 BankAccountTests，然后按 Enter   。
+
+::: moniker-end
 
 BankAccountTests.cs  文件现包含下列代码：
 
@@ -336,7 +340,6 @@ m_balance -= amount;
 
 ```csharp
 [TestMethod]
-[ExpectedException(typeof(ArgumentOutOfRangeException))]
 public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 {
     // Arrange
@@ -344,14 +347,12 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
     double debitAmount = -100.00;
     BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
 
-    // Act
-    account.Debit(debitAmount);
-
-    // Assert is handled by the ExpectedException attribute on the test method.
+    // Act and assert
+    Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => account.Debit(debitAmount));
 }
 ```
 
-使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 特性断言已引发正确的异常。 除非 <xref:System.ArgumentOutOfRangeException> 已抛出，否则该特性将导致测试失败。 如果在借方金额小于零时临时修改测试方法以引发更通用的 <xref:System.ApplicationException>，则测试将正确运行 &mdash; 即测试将失败。
+使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> 方法断言已引发正确的异常。 除非 <xref:System.ArgumentOutOfRangeException> 已引发，否则该方法将导致测试失败。 如果在借方金额小于零时临时修改测试方法以引发更通用的 <xref:System.ApplicationException>，则测试将正确运行 &mdash; 即测试将失败。
 
 若要测试提取金额大于余额的情况，执行以下操作：
 
@@ -361,7 +362,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. 将 `debitAmount` 设置为比余额大的一个数字。
 
-运行这两个测试方法证明了测试工作正常。
+运行两个测试，并验证是否已通过这两个测试。
 
 ### <a name="continue-the-analysis"></a>继续分析
 
@@ -387,20 +388,20 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
 然后，修改 `Debit` 方法中的两个条件语句：
 
 ```csharp
-    if (amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
-    }
+if (amount > m_balance)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountExceedsBalanceMessage);
+}
 
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
-    }
+if (amount < 0)
+{
+    throw new System.ArgumentOutOfRangeException("amount", amount, DebitAmountLessThanZeroMessage);
+}
 ```
 
 ### <a name="refactor-the-test-methods"></a>重构测试方法
 
-删除 `ExpectedException` 测试方法特性，改为捕获引发的异常并验证其关联的消息。 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 方法提供比较两个字符串的功能。
+通过删除对 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> 的调用重构测试方法。 将对 `Debit()` 的调用包装到 `try/catch` 块中、捕获预期的特定异常并验证其关联的消息。 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 方法提供比较两个字符串的功能。
 
 现在，`Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 可能如下所示：
 
@@ -418,7 +419,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
@@ -448,7 +449,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
     {
         account.Debit(debitAmount);
     }
-    catch (ArgumentOutOfRangeException e)
+    catch (System.ArgumentOutOfRangeException e)
     {
         // Assert
         StringAssert.Contains(e.Message, BankAccount.DebitAmountExceedsBalanceMessage);
