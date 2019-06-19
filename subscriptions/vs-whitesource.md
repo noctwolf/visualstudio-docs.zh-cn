@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bolt 订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 773284a163004958dbf89aea871414105792b338
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810906"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031930"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -22,40 +22,40 @@ ms.locfileid: "62810906"
 
 1. 若要激活 WhiteSource Bolt 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。
+2. 在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”  链接。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 权益磁贴](_img/vs-whitesource/vs-whitesource-tile.png)
 
-3. 你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”。
+3. 你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”   。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 权益代码](_img/vs-whitesource/vs-whitesource-code.png)
 
-4. 在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分。
+4. 在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分   。
    > [!div class="mx-imgBorder"]
    > ![激活 WhiteSource 权益](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-5. 该页面的“激活帐户”部分将引导你完成以下四个步骤：
+5. 该页面的“激活帐户”部分将引导你完成以下四个步骤  ：
 
    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 Azure DevOps Services 的免费扩展](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
 
-如果使用的是 Azure DevOps Services，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此示例中，我们将使用 Azure DevOps Services。
+如果使用的是 Azure DevOps Services，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮   。  此示例中，我们将使用 Azure DevOps Services。
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 权益安装扩展](_img/vs-whitesource/vs-whitesource-download-install.png)
 
-- 接下来，选择要使用的 Azure DevOps 组织，然后单击“确认”。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
+- 接下来，选择要使用的 Azure DevOps 组织，然后单击“确认”  。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
 
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 权益确认帐户](_img/vs-whitesource/vs-whitesource-confirm-account.png)
 
-- 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”返回 WhiteSource Bolt 页面，然后继续。
+- 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”  返回 WhiteSource Bolt 页面，然后继续。
 > [!div class="mx-imgBorder"]
 > ![WhiteSource 权益安装完毕](_img/vs-whitesource/vs-whitesource-install-complete.png)
 
-5. 打开 Azure DevOps 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
+5. 打开 Azure DevOps 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”   。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 权益添加扩展](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
-6. 粘贴 WhiteSource Bolt 权益磁贴中的激活代码，然后单击“激活”。 一个激活代码只能激活一个项目。
+6. 粘贴 WhiteSource Bolt 权益磁贴中的激活代码，然后单击“激活”  。 一个激活代码只能激活一个项目。
    > [!div class="mx-imgBorder"]
    > ![WhiteSource 权益激活代码](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
@@ -78,8 +78,8 @@ ms.locfileid: "62810906"
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 不可用                                                           |NA         |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  NA         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              | NA         |
-| Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
+||
 
 <sup>1</sup>  *包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。*
 

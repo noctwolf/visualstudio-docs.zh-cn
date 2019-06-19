@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 032bc54d5e904cf23d3e886c7dfeb38aa3ecfd93
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744940"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160077"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -64,7 +64,7 @@ ms.locfileid: "66744940"
 > [!NOTE]
 > 第一次打开对话框时将自动设置[“系统必备”对话框](../../ide/reference/prerequisites-dialog-box.md)中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动指定必备组件，以便与新目标框架相匹配。
 
-有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和[框架定位概述](../../ide/visual-studio-multi-targeting-overview.md)。
+有关详细信息，请参阅[框架定位概述](../../ide/visual-studio-multi-targeting-overview.md)。
 
 ### <a name="application-type"></a>应用程序类型
 
@@ -86,7 +86,7 @@ ms.locfileid: "66744940"
 
 如果“启用应用程序框架”  处于选中状态（默认设置），则此列表的标题为“启动窗体”  ，并且仅显示窗体，因为应用程序框架仅支持启动窗体，不支持对象。
 
-如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”  ，默认值为“Page1.xaml”  。 “启动 URI”  列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关更多信息，请参见<xref:System.Windows.Application.StartupUri%2A>。
+如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”  ，默认值为“Page1.xaml”  。 “启动 URI”  列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关详细信息，请参阅 <xref:System.Windows.Application.StartupUri%2A>。
 
 如果“启用应用程序框架”  处于清除状态，则此列表将变为“启动对象”  ，并且同时显示窗体和带有 `Sub Main` 的类或模块。
 

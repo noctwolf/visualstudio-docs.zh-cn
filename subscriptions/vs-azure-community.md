@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区权益。
 searchscope: VS Subscription
-ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948295"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032259"
 ---
 # <a name="azure-community"></a>Azure 社区
 
@@ -32,7 +32,7 @@ ms.locfileid: "62948295"
 Azure 社区入门很简单。
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在支持部分中，找到“Azure 社区”磁贴，然后单击“获取帮助”链接。
+2. 在支持部分中，找到“Azure 社区”磁贴，然后单击“获取帮助”  链接。
     > [!div class="mx-imgBorder"]
     >![“Azure 社区”磁贴](_img/vs-azure-community/vs-azure-community-tile.png)
 
@@ -54,8 +54,7 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 |                              Visual Studio Test Professional（标准）                               |    VL、零售     |   一年    |    是     |
 |                                       MSDN 平台（标准）                                       |    VL、零售     |   一年    |    是     |
 | Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）、NFR<sup>1</sup> |        全部        | 不可用 |     No     |
-|                                     Visual Studio Dev Essentials                                      |        不可用        | 不可用 |     No     |
-|                                                                                                       |                   |               |            |
+
 
 <sup>1</sup>  *包括：不得转售 (NFR)、Microsoft FTE、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)*
 

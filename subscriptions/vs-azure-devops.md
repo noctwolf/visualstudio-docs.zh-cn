@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 订阅者身份使用 Azure DevOps。
 searchscope: VS Subscription
-ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177716"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032215"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 订阅者的 Azure DevOps 权益
 
@@ -30,8 +30,9 @@ ms.locfileid: "66177716"
 | Visual Studio Professional（标准、月度云） | VL、Azure、零售、                                        | Azure Boards 和 Azure Repos（基础版）、Azure Artifacts<sup>2</sup>                                                            |  是          |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | Azure Boards 和 Azure Repos（基础版）、Azure Test Plans                                              |  是          |
 | MSDN 平台（标准）                                          | VL、零售                                              | Azure Boards 和 Azure Repos（基础版）、Azure Test Plans                                              |  是          |
+||
 
-<sup>1</sup>  包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (Enterprise)、BizSpark、MCT 软件和服务开发人员。不包括：MCT 软件和服务、Imagine。
+<sup>1</sup>  *包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (Enterprise)、BizSpark、MCT 软件和服务开发人员。不包括：MCT 软件和服务、Imagine*。
 
 <sup>2</sup>  *免费包含 2GB*
 

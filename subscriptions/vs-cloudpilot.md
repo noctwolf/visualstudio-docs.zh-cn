@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CloudPilot 权益
 searchscope: VS Subscription
-ms.openlocfilehash: 78c72f68c8553e7e80b6f26846c19ffcb5f91184
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805370"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032578"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CloudPilot 权益
 
@@ -24,19 +24,19 @@ ms.locfileid: "65805370"
 
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在“工具”类别中找到 CloudPilot 权益磁贴，并单击“获取代码”。
+2. 在“工具”类别中找到 CloudPilot 权益磁贴，并单击“获取代码”  。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 权益磁贴](_img/vs-cloudpilot/vs-cloudpilot-tile-ent.png)
 
-0. 你将看到一条消息，告知你已成功检索到你的代码。  单击“激活”，此时你将被重定向到 CloudPilot 页，可在此页面继续激活过程。  （如果不选择立即激活，则可以随时返回订阅门户中的 CloudPilot 磁贴。  “获取代码”链接将更改为“激活”，单击它即可进入下一步激活过程。）
+0. 你将看到一条消息，告知你已成功检索到你的代码。  单击“激活”，此时你将被重定向到 CloudPilot 页，可在此页面继续激活过程  。  （如果不选择立即激活，则可以随时返回订阅门户中的 CloudPilot 磁贴。  “获取代码”链接将更改为“激活”，单击它即可进入下一步激活过程。）
 
-0. 了解 CloudPilot 为开发工作带来的优势。  准备好后，单击“激活”按钮。
+0. 了解 CloudPilot 为开发工作带来的优势。  准备好后，单击“激活”按钮  。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 登录页](_img/vs-cloudpilot/vs-cloudpilot-landing.png)
 
-0. 要创建帐户并激活 CloudPilot 订阅，请在 Web 窗体中填写联系信息，然后单击“注册”。
+0. 要创建帐户并激活 CloudPilot 订阅，请在 Web 窗体中填写联系信息，然后单击“注册”  。
 
    > [!div class="mx-imgBorder"]
    > ![CloudPilot 注册页](_img/vs-cloudpilot/vs-cloudpilot-register.png)
@@ -44,7 +44,7 @@ ms.locfileid: "65805370"
    > [!NOTE]
    > CloudPilot 权益的激活限制为每个组织 10 次，可从 Visual Studio Enterprise 或 Visual Studio Professional 订阅的任意组合中兑换。  如果组织已使用了 10 次激活，你将无法激活 CloudPilot 权益，且你将收到来自 UnifyCloud 包含更多信息的电子邮件。
 
-0. 接下来，你将看到旨在让你熟悉 CloudPilot 的产品页。  单击右上角的“导航到 CloudPilot”，转到 CloudPilot 门户。
+0. 接下来，你将看到旨在让你熟悉 CloudPilot 的产品页。  单击右上角的“导航到 CloudPilot”，转到 CloudPilot 门户  。
 
     > [!div class="mx-imgBorder"]
     > ![CloudPilot 产品页](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
@@ -64,11 +64,10 @@ ms.locfileid: "65805370"
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 1 个许可证、30 天、一次扫描                                                            |  不是。  仅对新订阅者可用           |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不可用           |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
-| Visual Studio Dev Essentials | 不可用  | 不可用 | 不可用 |
 | Visual Studio Enterprise（标准）  | NFR<sup>1</sup> |不可用  | 不可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 
-<sup>1</sup>  包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark、Imagine*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。
