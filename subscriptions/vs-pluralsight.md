@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 0b4211fbba6a5f1602906a281869b40068f3d6f1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cc96d9c088a270342be792a2e7514e172a72ea45
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225497"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032778"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -23,7 +23,7 @@ ms.locfileid: "65225497"
  并非所有之前使用过通过 Visual Studio 订阅提供的 Pluralsight 订阅的订阅者都无法兑换新的 Pluralsight 权益套餐，具体取决于其具有的订阅类型。 如果你没有资格兑换额外的 Pluralsight 培训权益，则在尝试激活 Pluralsight 网站上的权益时，你会收到一条通知。
 
 ## <a name="activation-steps"></a>激活步骤
-1. 要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后在“专业开发”部分中的 Pluralsight 权益磁贴上单击“获取代码”链接。
+1. 要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后在“专业开发”部分中的 Pluralsight 权益磁贴上单击“获取代码”链接  。
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益磁贴](_img/vs-pluralsight/vs-pluralsight-3month-tile.png)
    >
@@ -32,14 +32,14 @@ ms.locfileid: "65225497"
    >
    > **“请注意： 如果此前已通过 Visual Studio 订阅激活其他 Pluralsight 套餐，使用此代码可能无法创建新的 Pluralsight 帐户。”**
 
-2. 你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”。
+2. 你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”  。
    > [!div class="mx-imgBorder"]
    > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
 3. 将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。
    - 在窗体上提供所需的联系人信息
    - 单击复选框接受使用和隐私策略条款
-   - 单击“我同意，激活权益”。
+   - 单击“我同意，激活权益”  。
      > [!div class="mx-imgBorder"]
      > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-create-account-no-code.png)  
      > [!div class="mx-imgBorder"]
@@ -52,11 +52,11 @@ ms.locfileid: "65225497"
    > [!NOTE]
    > 如果帐户不符合兑换新产品/服务的条件，则会在收到的电子邮件中说明因不符合条件以致创建帐户时出现问题。  其中还包含用于联系 Pluralsight 支持团队的信息，他们可解答有关帐户的任何问题。
 
-6. 成功创建帐户后，收到的电子邮件将包含用户名，并请求创建密码。  提供密码，再次输入以确认，然后单击“登录到 Pluralsight”。
+6. 成功创建帐户后，收到的电子邮件将包含用户名，并请求创建密码。  提供密码，再次输入以确认，然后单击“登录到 Pluralsight”。 
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益欢迎电子邮件](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
 
-7. 输入欢迎电子邮件提供的用户名和刚刚创建的密码，然后单击“登录”。
+7. 输入欢迎电子邮件提供的用户名和刚刚创建的密码，然后单击“登录”。 
    > [!div class="mx-imgBorder"]
    > ![Pluralsight 权益登录](_img/vs-pluralsight/vs-pluralsight-login.png)
 
@@ -72,11 +72,11 @@ ms.locfileid: "65225497"
 |         Visual Studio Professional（标准）          | VL、Azure、零售 |   3 个月    | Yes<sup>2</sup> |
 |              Visual Studio Test Professional（标准）              |    VL、零售     |   3 个月    | No |
 |                      MSDN 平台（标准）                       |    VL、零售     |   3 个月    | No |
-|                     Visual Studio Dev Essentials                     |        NA         |   1 个月    |       No       |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） |       Azure       | 不可用 |       NA       |
 |             Visual Studio Enterprise (NFR<sup>1</sup> )              |      计划      | 不可用 |       NA       |
+||
 
-<sup>1</sup>  包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。*
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。*
 
 <sup>2</sup>  所选 Visual Studio 订阅中的 Pluralsight 权益随订阅一同续订。例如，如果你的年度订阅是每年续订一次，当你续订时也会获得每一年的权益。如果是多年订阅，你在订阅期间可获得 Pluralsight 权益。如果续订多年订阅，在续订后将再次获得该权益。*
 
@@ -108,4 +108,4 @@ ms.locfileid: "65225497"
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="next-steps"></a>后续步骤
-创建帐户后，就可以开始培训了。  请访问 [https://www.pluralsight.com](http://www.pluralsight.com) 并点击页面右上角的“登录”以开始新课程，或返回正在进行的课程。
+创建帐户后，就可以开始培训了。  请访问 [https://www.pluralsight.com](http://www.pluralsight.com) 并点击页面右上角的“登录”以开始新课程，或返回正在进行的课程  。

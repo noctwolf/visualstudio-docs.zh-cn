@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解选定 Visual Studio 订阅随附的 Skill Me Up 培训权益（由 Opsgility 提供技术支持）。
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946985"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032817"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Skill Me Up 培训权益（由 Opsgility 提供技术支持）
 
@@ -21,11 +21,11 @@ ms.locfileid: "62946985"
 ## <a name="activation-steps"></a>激活步骤
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 要使用 Skill Me Up 权益，请单击权益磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”，然后继续。
+2. 要使用 Skill Me Up 权益，请单击权益磁贴底部的“获取代码”链接  。   你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”，然后继续  。
    > [!div class="mx-imgBorder"]
    > ![Opsgility 权益磁贴](_img/vs-opsgility/vs-opsgility-tile.png)
 
-3. 你将重定向到订阅对应的 Skill Me UP 登陆页面。  （你可能会获得与支持专家开始聊天会话的机会。  如果不希望开始聊天，可以将该窗口最小化。）填写所需的联系信息，选中用于接受条款和条件的框，再单击“注册”。
+3. 你将重定向到订阅对应的 Skill Me UP 登陆页面。  （你可能会获得与支持专家开始聊天会话的机会。  如果不希望开始聊天，可以将该窗口最小化。）填写所需的联系信息，选中用于接受条款和条件的框，再单击“注册”  。
    > [!div class="mx-imgBorder"]
    > ![Opsgility 权益登录页](_img/vs-opsgility/vs-vse-landing-page.png)
 
@@ -39,8 +39,8 @@ ms.locfileid: "62946985"
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 3 个月                                                            |不是。  仅对新订阅者可用         |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不是。  仅对新订阅者可用         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              | 不是。  仅对新订阅者可用         |
-| Visual Studio Dev Essentials | NA  | 不可用 | NA  |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
+||
 
 不包括：Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 认证培训师、BizSpark、Imagine、NFR、FTE*
 
