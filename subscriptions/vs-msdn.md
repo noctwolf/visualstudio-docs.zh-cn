@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 注册后，可以接收包含在 Visual Studio 订阅中的 MSDN 杂志订阅。
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947338"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032846"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 MSDN 杂志权益
 
@@ -25,11 +25,11 @@ ms.locfileid: "62947338"
 数字版可用于 Visual Studio Dev Essentials 成员。
 
 1. 若要访问 MSDN 杂志的数字版，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
-2. 在“专业开发”部分，找到“MSDN 杂志”磁贴，然后单击“访问”。
+2. 在“专业开发”部分，找到“MSDN 杂志”磁贴，然后单击“访问”  。
 
 ### <a name="printed-edition"></a>印刷版
 1. 若要开始接收 MSDN 杂志订阅，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2. 在“专业开发”部分，找到“MSDN 杂志”磁贴，然后单击“MSDN 杂志订阅”磁贴上的“订阅”。 （单击磁贴右下角的“!”以访问数字版。）
+2. 在“专业开发”部分，找到“MSDN 杂志”磁贴，然后单击“MSDN 杂志订阅”磁贴上的“订阅”  。 （单击磁贴右下角的“!”以访问数字版。）
    > [!div class="mx-imgBorder"]
    > ![MSDN 杂志权益：磁贴](_img/vs-msdn/vs-msdn-tile.png)
 
@@ -37,7 +37,7 @@ ms.locfileid: "62947338"
    > [!div class="mx-imgBorder"]
    > ![MSDN 杂志权益：订阅](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4. 提供所需联系信息，然后单击“提交”。  （所选的杂志版本将显示在“杂志订阅”部分。  如果选择印刷版本，第一个选项将显示“是！我想免费接收 1 年（12 期）的 MSDN 杂志”。）
+4. 提供所需联系信息，然后单击“提交”  。  （所选的杂志版本将显示在“杂志订阅”部分。  如果选择印刷版本，第一个选项将显示“是！  我想免费接收 1 年（12 期）的 MSDN 杂志”。）
    > [!div class="mx-imgBorder"]
    > ![MSDN 杂志权益：配置文件](_img/vs-msdn/vs-msdn-profile.png)
 
@@ -52,9 +52,9 @@ ms.locfileid: "62947338"
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 印刷版                                             |  不是。  仅对新订阅者可用         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 印刷版                                              | 不是。  仅对新订阅者可用         |
 |Visual Studio Enterprise、Visual Studio Professional（月度云）   | Azure |不可用      |  NA         |
-|Visual Studio Dev Essentials| NA |数字版       |  是|
+||
 
-<sup>1</sup> 印刷版：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、Microsoft 合作伙伴网络 (Enterprise)、Imagine (Premium)*。
+<sup>1</sup> 印刷版：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、Microsoft 合作伙伴网络 (Enterprise)、Imagine (Premium)* 。
 
 数字版：MCT 软件和服务、最有价值专家 (MVP)、区域总监 (RD)。*
 
