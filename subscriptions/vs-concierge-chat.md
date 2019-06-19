@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的接待聊天室权益。
 searchscope: VS Subscription
-ms.openlocfilehash: fd190dbd22f25dd14e18d11f73ee17327fc8c27d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51fb2242c87ba3d091f62bc2271aea60b56f1283
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947843"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032191"
 ---
 # <a name="concierge-chat"></a>接待聊天室
 
@@ -24,11 +24,11 @@ ms.locfileid: "62947843"
 通过接待聊天室服务获取帮助十分简单。
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在“权益”页上的“支持”部分中找到“接待聊天室”磁贴，然后单击“立即聊天”。
+2. 在“权益”页上的“支持”部分中找到“接待聊天室”磁贴，然后单击“立即聊天”  。
     > [!div class="mx-imgBorder"]
     > ![接待聊天室磁贴](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
-3. 单击 **“继续”**。
+3. 单击 **“继续”** 。
 
 4. 聊天窗口随即打开，你将看到一个计数器显示你在队列中的位置。
 
@@ -45,9 +45,9 @@ ms.locfileid: "62947843"
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  是          |
 | MSDN 平台（标准）                                          | VL、零售                                              | 可用                                              |  是          |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
-| Visual Studio Dev Essentials | NA  | 不可用 |不可用 |
 
-<sup>1</sup>包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark。不包括：FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Imagine。*
+
+<sup>1</sup>  *包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark。不包括：FTE、最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Imagine。*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 我们鼓励新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 以浏览购买 Visual Studio 的不同选项。

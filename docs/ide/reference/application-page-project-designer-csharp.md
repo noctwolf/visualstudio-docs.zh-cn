@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744994"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160065"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 
@@ -61,7 +61,7 @@ ms.locfileid: "66744994"
 > [!NOTE]
 > 第一次打开对话框时将自动设置[“系统必备”对话框](../../ide/reference/prerequisites-dialog-box.md)中所列的必备组件包。 如果随后更改项目的目标框架，则必须手动选择必备组件，以便与新目标框架相匹配。
 
-有关详细信息，请参阅[如何：面向 .NET Framework 的某个版本](../../ide/how-to-target-a-version-of-the-dotnet-framework.md)和[框架定位概述](../../ide/visual-studio-multi-targeting-overview.md)。
+有关详细信息，请参阅[框架定位概述](../../ide/visual-studio-multi-targeting-overview.md)。
 
 **输出类型**
 

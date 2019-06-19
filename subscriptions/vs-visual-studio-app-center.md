@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
 searchscope: VS Subscription
-ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53b140bf425c184d62e4b4ff0af81b8ab8415021
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810830"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032758"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -26,15 +26,15 @@ App Center 是针对应用的任务控制。
 Visual Studio App Center 入门十分简单。
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 找到“Visual Studio App Center”磁贴，并单击“开始”。
+2. 找到“Visual Studio App Center”磁贴，并单击“开始”  。
     > [!div class="mx-imgBorder"]
     > ![VS App Center 磁贴](_img/vs-app-center/vs-app-center-tile.png)
 
-3. 下一步，创建帐户。  通过提供你的用户名、电子邮件和密码，你可以使用现有的 Microsoft、Google、GitHub 或 Facebook 帐户进行登录。  单击“创建帐户”，然后继续。
+3. 下一步，创建帐户。  通过提供你的用户名、电子邮件和密码，你可以使用现有的 Microsoft、Google、GitHub 或 Facebook 帐户进行登录。  单击“创建帐户”  ，然后继续。
     > [!div class="mx-imgBorder"]
     > ![VS App Center 创建帐户](_img/vs-app-center/vs-app-center-create-account.png)
 
-4. 就这么简单。  只需单击“添加新组织”或“添加新应用”即可开始使用！
+4. 就这么简单。  只需单击“添加新组织”  或“添加新应用”  即可开始使用！
     > [!div class="mx-imgBorder"]
     > ![VS App Center 门户](_img/vs-app-center/vs-app-center-portal.png)
 
@@ -46,7 +46,7 @@ Visual Studio App Center 入门十分简单。
 | Visual Studio Professional（标准、月度云） | VL、Azure、零售                                       | Included                                                            |是 |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | Included                                                            |是 |
 | MSDN 平台（标准）                                          | VL、零售                                              | Included                                                            |是 |
-| Visual Studio Dev Essentials | NA  | Included                                                            |是 |
+||
 
 <sup>1</sup>  *包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。*
 

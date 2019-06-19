@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746531"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159943"
 ---
 # <a name="output-window"></a>“输出”窗口
 
@@ -67,7 +67,7 @@ ms.locfileid: "66746531"
 
 也可以编写自己的应用程序，使其在运行时向“输出”  窗格写入诊断消息。 要执行此操作，请在 .NET API 的 <xref:System.Diagnostics> 命名空间中使用 <xref:System.Diagnostics.Debug> 类或 <xref:System.Diagnostics.Trace> 类的成员。 生成解决方案或项目的“调试”配置时，<xref:System.Diagnostics.Debug> 类的成员显示输出；生成“调试”或“发布”配置时，<xref:System.Diagnostics.Trace> 类的成员显示输出。 有关详细信息，请参阅[“输出”窗口中的诊断消息](../../debugger/diagnostic-messages-in-the-output-window.md)。
 
-在 C++ 中，可创建自定义生成步骤和生成事件，“输出”窗格中对其警告和错误在进行显示和计数  。 在输出行按 F1，可以显示相应的帮助主题  。 有关详细信息，请参阅[设置自定义生成步骤输出的格式](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event)。
+在 C++ 中，可创建自定义生成步骤和生成事件，“输出”窗格中对其警告和错误在进行显示和计数  。 在输出行按 F1，可以显示相应的帮助主题  。 有关详细信息，请参阅[设置自定义生成步骤输出的格式](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event)。
 
 ## <a name="scroll-behavior"></a>滚动行为
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685923"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032204"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -30,7 +30,6 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 |              Visual Studio Professional 月度              |        不可用        |                                                             |
 |                    Visual Studio Test Pro                    |     50 美元月信用额度      |                             是                             |
 |                        MSDN 平台                        |     100 美元月信用额度     |                             是                             |
-|                 Visual Studio Dev Essentials                 | 免费服务 + 200 美元信用额度 | 免费服务是永久性的。  一次性 200 美元信用额度。 |
 |               Visual Studio Enterprise - NFR\*               |     150 美元月信用额度     |                             是                             |
 |                Visual Studio Enterprise - FTE                |     150 美元月信用额度     |                             是                             |
 |     Visual Studio Enterprise - Microsoft 合作伙伴网络     |     150 美元月信用额度     |                             是                             |
@@ -52,11 +51,11 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2. 在“权益”页上的“工具”部分中找到“Azure”磁贴，然后单击“权益”磁贴底部的“激活”链接。
+2. 在“权益”页上的“工具”部分中找到“Azure”磁贴，然后单击“权益”磁贴底部的“激活”  链接。
    > [!div class="mx-imgBorder"]
    > ![Azure 磁贴](_img/vs-azure/vs-azure-tile.png)
 
-3. 填写所需信息以创建 Azure 订阅，单击复选框以接受条款和条件，然后单击“注册”：
+3. 填写所需信息以创建 Azure 订阅，单击复选框以接受条款和条件，然后单击“注册”  ：
    > [!div class="mx-imgBorder"]
    > ![Azure 注册](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
@@ -96,9 +95,9 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 比较所有的[订阅及其权益](https://visualstudio.microsoft.com/vs/pricing/)。
 
-如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，则可以通过在 Visual Studio 订阅门户中添加[备用帐户](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions)，将该订阅与此 Azure 权益关联。 如果该操作不起作用，还可以尝试[将 Azure 权益传输](/azure/billing/billing-subscription-transfer/)到活动 Visual Studio 订阅。
+如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，则可以通过在 Visual Studio 订阅门户中添加[备用帐户](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions)，将该订阅与此 Azure 权益关联  。 如果该操作不起作用，还可以尝试[将 Azure 权益传输](/azure/billing/billing-subscription-transfer/)到活动 Visual Studio 订阅。
 
-如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，请联系 [Azure 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)以获取帮助。
+如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，请联系 [Azure 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)以获取帮助  。
 
 如果订阅有支出限制并且在过期前尚未采取措施，则会禁用 Azure 订阅。 要将其转换为即用即付产品/服务并继续使用，请添加付款方式并[删除支出限制](/azure/billing/billing-spending-limit/)。
 

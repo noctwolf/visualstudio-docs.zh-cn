@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 06/06/2019
+ms.date: 06/12/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d801dab9acb2148503392de12dfcf028de692eb8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: cd5bc77481be374aa1b3f2368f925210380893d7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746281"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032024"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Visual Studio 内部版本号和发布日期
 
@@ -31,6 +31,9 @@ ms.locfileid: "66746281"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.3 | Release | 2019 年 6 月 11 日 | 16.1.29009.5 |
+| 16.2.0 | 预览版 2 | 2019 年 6 月 11 日 | 16.2.29006.145 |
+| 16.0.5 | Release | 2019 年 6 月 11 日 | 16.0.28803.514 |
 | 16.1.2 | Release | 2019 年 6 月 5日 | 16.1.29001.49 |
 | 16.1.1 | Release | 2019 年 5 月 24 日 | 16.1.28922.388 |
 | 16.1.0 | Release | 2019 年 5 月 21 日 | 16.1.28917.181 |
@@ -77,6 +80,8 @@ ms.locfileid: "66746281"
 
 | **Version**| **频道** | **发布日期** | **内部版本** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.13 | Release | 2019 年 6 月 11 日 | 15.9.28307.718 |
+| 15.0.24 | Release | 2019 年 6 月 11 日 | 15.0.26228.88 |
 | 15.9.12 | Release | 2019 年 5 月 14 日 | 15.9.28307.665 |
 | 15.0.23 | Release | 2019 年 5 月 14 日 | 15.0.26228.85 |
 | 15.9.11 | Release | 2019 年 4 月 2 日 | 15.9.28307.586 |
