@@ -9,15 +9,15 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839754"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256271"
 ---
 1. 在中**解决方案资源管理器**，右键单击项目节点并选择**发布**(Web 窗体**发布 Web 应用**)。
 
-    如果先前配置了任何发布配置文件，则“发布”窗格会显示。 单击**新的配置文件**。
+    如果先前配置了任何发布配置文件，则“发布”窗格会显示  。 单击**新的配置文件**。
 
 1. 在中**发布**对话框中，选择**文件夹**，单击**浏览**，并创建一个新文件夹**C:\Publish**。
 
@@ -34,7 +34,7 @@ ms.locfileid: "65839754"
     > [!NOTE]
     > 如果使用发布版本，则禁用调试的 web.config 文件中，当你发布时。
 
-1. 单击“发布” 。
+1. 单击“发布”  。
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
 

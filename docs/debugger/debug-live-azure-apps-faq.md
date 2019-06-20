@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431852"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255990"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>在 Visual Studio 中进行快照调试的常见问答解答
 
@@ -169,7 +169,7 @@ Snapshot Debugger 必须打开一组端口才能调试在 Azure 中获取的快�
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > 对应用程序设置的任何更改将应用程序重新启动。 有关应用程序设置的详细信息，请[此处](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings)。 
+    > 对应用程序设置的任何更改将应用程序重新启动。 有关应用程序设置的详细信息，请参阅[Azure 门户中配置应用服务应用](/azure/app-service/web-sites-configure)。
 
 适用于 AKS:
 1. 更新 Dockerfile 来删除相应部分[Docker 映像上的 Visual Studio 快照调试器](https://github.com/Microsoft/vssnapshotdebugger-docker)。

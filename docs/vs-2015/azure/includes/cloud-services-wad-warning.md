@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65844803"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258457"
 ---
 > [!WARNING]
 > 为现有角色启用诊断时，将禁用部署包时已设置的所有扩展。 这些方法包括：
