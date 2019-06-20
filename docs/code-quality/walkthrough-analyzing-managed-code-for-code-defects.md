@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715277"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195292"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：分析托管的代码进行代码缺陷
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>演练：使用静态代码分析来查找代码缺陷
 
 在本演练中，将通过使用代码分析工具分析托管的项目进行代码缺陷。
 
-本演练将指导你完成使用代码分析来分析.NET 托管代码程序集为使用.NET 设计准则的一致性的过程。
+本演练将指导你完成使用静态代码分析来分析.NET 托管代码程序集为使用.NET 设计准则的一致性的过程。
 
 ## <a name="create-a-class-library"></a>创建一个类库
 

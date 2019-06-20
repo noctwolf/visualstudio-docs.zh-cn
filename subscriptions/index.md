@@ -8,18 +8,18 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 欢迎使用 Visual Studio 订阅
 Searchscope: VS Subscription
-ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976109"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259476"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 订阅
 
 Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  订阅的权益包括可以获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
 
-## <a name="get-started"></a>开始操作
+## <a name="get-started"></a>入门
 
 管理员登录到 [https://manage.visualstudio.com](https://manage.visualstudio.com)，将订阅分配给团队。<br>
 订阅者登录到 [https://my.visualstudio.com](https://my.visualstudio.com)，访问订阅权益。
@@ -127,7 +127,7 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio 应用中心</h3>
+                        <h3>Visual Studio App Center</h3>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,6 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">领英高级版</a>（业务、技术和创意）</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a>（云、设计、移动和数据）</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a>（数据科学和 AI）</li>
-                            <li><a href="/visualstudio/subscriptions/vs-xamarin">Xamarin University</a>（移动开发）</li>
                             <li><a href="/visualstudio/subscriptions/vs-opsgility">Opsgility 培训</a>（以云为中心）</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Microsoft 专业技术支持事件</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure 顾问聊天</a></li>
