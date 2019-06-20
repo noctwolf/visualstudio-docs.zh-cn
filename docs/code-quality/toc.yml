@@ -21,6 +21,8 @@
       items:
         - name: 概述
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: 静态代码分析演练
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: 迁移
           href: fxcop-analyzers.yml
@@ -36,9 +38,7 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: 禁止
           items:
-            - name: 禁止显示警告
-              href: in-source-suppression-overview.md
-            - name: 禁止对生成的代码显示代码分析警告
+            - name: 禁止对生成的代码显示静态代码分析警告
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: 代码分析应用程序错误
           items:
@@ -100,6 +100,18 @@
               href: ca0505.md
             - name: FxCopCmd 错误
               href: fxcopcmd-errors.md
+        - name: 签入策略
+          items:
+            - name: 如何创建或更新签入策略
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: 实现代码分析签入策略
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: 强制执行可维护的代码
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: 将项目规则集与签入策略同步
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: 版本兼容性
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: FxCop 分析器
       items:
         - name: 概述
@@ -135,18 +147,6 @@
           href: how-to-create-a-custom-rule-set.md
         - name: 使用规则集编辑器
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: 签入策略
-      items:
-        - name: 如何创建或更新签入策略
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: 实现代码分析签入策略
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: 强制执行可维护的代码
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: 将项目规则集与签入策略同步
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: 版本兼容性
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: 代码度量
       items:
         - name: 概述
@@ -188,6 +188,8 @@
               href: native-recommended-rules-rule-set.md
             - name: 托管代码的“安全规则”规则集
               href: security-rules-rule-set-for-managed-code.md
+        - name: 禁止显示警告
+          href: in-source-suppression-overview.md
         - name: 托管代码警告
           items:
             - name: 概述
