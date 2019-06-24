@@ -1,5 +1,5 @@
 ---
-title: 演练：更改工作表格式设置使用 CheckBox 控件
+title: 更改工作表格式设置使用 CheckBox 控件
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438614"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328700"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练：更改工作表格式设置使用 CheckBox 控件
   本演练显示了使用 Microsoft Office Excel 工作表上的复选框来更改格式设置基础的知识。 将使用 Visual Studio 中的 Office 开发工具创建并将代码添加到你的项目。 若要查看已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。
@@ -102,7 +102,7 @@ ms.locfileid: "63438614"
 
 2. 确认 **$B$ 9**将出现在可编辑的文本框，然后该单元格**B9**处于选中状态。 如果不存在，请单击单元格**B9**以将其选中。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
 4. 单元格**B9**变得名为一个范围`NamedRange1`。
 

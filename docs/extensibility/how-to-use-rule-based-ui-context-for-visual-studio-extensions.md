@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324701"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309681"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何：用于 Visual Studio 扩展的基于规则的 UI 上下文
 
@@ -140,6 +140,10 @@ Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio
 |ActiveProjectCapability:\<Expression>|当活动项目功能与所提供的表达式匹配时，术语是，则返回 true。 表达式可以是类似于 VB 的内容&#124;CSharp。|
 |SolutionHasProjectCapability:\<Expression>|解决方案中包含与表达式匹配任何加载的项目时，与上述相似，但一词是如此。|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|每当解决方案风格 （聚合） 的项目，并具有匹配给定的项目类型 GUID 的风格，术语将为 true。|
+|ProjectAddedItem:\<pattern>| 术语"模式"匹配的文件添加到项目中打开 soluion 时，则返回 true。|
+|ActiveProjectOutputType:\<outputType>|术语为 true 时输出类型完全匹配的活动项目。  OutputType 可能是一个整数或<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE>类型。|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|当活动项目具有指定的生成属性和属性值与提供的正则表达式筛选器匹配时，术语是，则返回 true。 请参阅[MSBuild 项目文件中保存数据](internals/persisting-data-in-the-msbuild-project-file.md)适用于更多详细信息生成属性。|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|解决方案已加载的项目与指定的生成属性和属性值与提供的正则表达式筛选器匹配时，术语是，则返回 true。|
 
 ## <a name="compatibility-with-cross-version-extension"></a>使用跨版本扩展的兼容性
 

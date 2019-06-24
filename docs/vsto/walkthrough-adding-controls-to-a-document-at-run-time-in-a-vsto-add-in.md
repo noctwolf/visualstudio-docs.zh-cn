@@ -1,5 +1,5 @@
 ---
-title: 演练：在 VSTO 外接程序中的运行时向文档添加控件
+title: 添加控件以记录在运行时在 VSTO 外接程序
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982423"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328402"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>演练：在 VSTO 外接程序中的运行时向文档添加控件
   通过使用 VSTO 外接程序中，可以向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区使用户能够添加<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>到文档。
@@ -60,19 +60,19 @@ ms.locfileid: "62982423"
 
 ### <a name="to-provide-a-ui-to-add-controls-to-a-document"></a>若要提供用于向文档添加控件的 UI
 
-1. 在 **“项目”** 菜单上，单击 **“添加新项”**。
+1. 在 **“项目”** 菜单上，单击 **“添加新项”** 。
 
-2. 在 **“添加新项”** 对话框中，选择 **“功能区(可视化设计器)”**。
+2. 在 **“添加新项”** 对话框中，选择 **“功能区(可视化设计器)”** 。
 
-3. 将新功能区更名为 **“MyRibbon”**，然后单击 **“添加”**。
+3. 将新功能区更名为 **“MyRibbon”** ，然后单击 **“添加”** 。
 
     **MyRibbon.cs** 或 **MyRibbon.vb** 文件将在功能区设计器中打开，并显示一个默认选项卡和组。
 
 4. 在功能区设计器中，单击“group1”  组。
 
-5. 在“属性”  窗口中，将“group1”  的“Label”  属性更改为“添加控件” 。
+5. 在“属性”  窗口中，将“group1”  的“Label”  属性更改为“添加控件”  。
 
-6. 从“工具箱”  的“Office 功能区控件” 选项卡中将“CheckBox”  控件拖到“group1” 上。
+6. 从“工具箱”  的“Office 功能区控件”  选项卡中将“CheckBox”  控件拖到“group1”  上。
 
 7. 单击 **CheckBox1** 以将其选中。
 
@@ -90,11 +90,11 @@ ms.locfileid: "62982423"
    | **名称** | **addRichTextCheckBox** |
    | **标签** | **添加 RTF 控件** |
 
-10. 在功能区设计器中，双击“添加按钮” 。
+10. 在功能区设计器中，双击“添加按钮”  。
 
      “添加按钮” <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>**复选框的** 事件处理程序将在代码编辑器中打开。
 
-11. 返回到功能区设计器，并双击“添加 RTF 控件” 。
+11. 返回到功能区设计器，并双击“添加 RTF 控件”  。
 
      “添加 RTF 控件” <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>**复选框的** 事件处理程序将在代码编辑器中打开。
 
@@ -161,13 +161,13 @@ ms.locfileid: "62982423"
 
 4. 单击 **“外接程序”** 选项卡。
 
-5. 在“添加控件”  组中，单击“添加按钮” 。
+5. 在“添加控件”  组中，单击“添加按钮”  。
 
      一个按钮随即显示在第一个段落中。
 
 6. 选择最后一个段落。
 
-7. 在“添加控件”  组中，单击“添加 RTF 控件” 。
+7. 在“添加控件”  组中，单击“添加 RTF 控件”  。
 
      一个 RTF 内容控件随即添加到最后一个段落中。
 

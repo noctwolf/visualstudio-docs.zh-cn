@@ -1,5 +1,5 @@
 ---
-title: 演练：在文本框中使用按钮在文档中显示文本
+title: 在使用按钮在文档中的文本框中显示文本
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443825"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328754"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>演练：在文本框中使用按钮在文档中显示文本
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用按钮和文本框。
@@ -62,7 +62,7 @@ ms.locfileid: "63443825"
    > [!NOTE]
    > 在 Word 中，默认情况下控件将按照文本进行删除。 您可以修改的方式控件和形状对象插入上更改默认值**编辑**选项卡**选项**在 Word 中的对话框。
 
-3. 在 **“视图”** 菜单上，单击 **“属性窗口”**。
+3. 在 **“视图”** 菜单上，单击 **“属性窗口”** 。
 
 4. 查找**TextBox1**中**属性**窗口下拉列表框，然后**名称**属性的文本设置为**displayText**。
 

@@ -1,5 +1,5 @@
 ---
-title: 如何：设置 Office 解决方案的配置信息
+title: 设置 Office 解决方案的配置信息
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 159708bfad49e6a4a303363c6a0e9dd83b23d8e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c477068b3aee3325acae0887e11da908d6c33a85
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961255"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328889"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>如何：设置 Office 解决方案的配置信息
   配置文件可用于配置特定于在 Office 解决方案的设置。 可以指定程序集绑定策略、 远程处理对象、 调试和跟踪设置等设置。
@@ -29,7 +29,7 @@ ms.locfileid: "62961255"
 
 ### <a name="to-add-a-configuration-file-to-your-office-project"></a>若要将配置文件添加到你的 Office 项目
 
-1. 在 **“项目”** 菜单上，单击 **“添加新项”**。
+1. 在 **“项目”** 菜单上，单击 **“添加新项”** 。
 
 2. 在中**类别**窗格中，单击**常规**。
 

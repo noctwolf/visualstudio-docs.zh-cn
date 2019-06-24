@@ -1,5 +1,5 @@
 ---
-title: 如何：通过主互操作程序集的目标 Office 应用程序
+title: 面向 Office 应用程序通过主互操作程序集
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6e92b3b4dd46885de7f30f5364d30f39b5c2bd7
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421047"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328881"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何：通过主互操作程序集的目标 Office 应用程序
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：
@@ -38,7 +38,7 @@ ms.locfileid: "63421047"
 
 1. 打开 Office 项目并选择中的项目名称**解决方案资源管理器**。
 
-2. 在“项目”菜单上，单击“添加引用”。
+2. 在“项目”菜单上，单击“添加引用”   。
 
 3. 上**Framework**选项卡上，选择在所需的 PIA**组件名称**列表。 有关可用的 Microsoft Office 主互操作程序集的详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "63421047"
     > [!NOTE]
     > 在 Office 项目中，始终对 Office Pia 的引用通过添加 **.NET**选项卡**添加引用**对话框而不是**COM**选项卡。有关详细信息，请参阅[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
 
-4. 单击 **“确定”**。
+4. 单击 **“确定”** 。
 
      程序集名称将显示在**引用**的文件夹**解决方案资源管理器**。
 

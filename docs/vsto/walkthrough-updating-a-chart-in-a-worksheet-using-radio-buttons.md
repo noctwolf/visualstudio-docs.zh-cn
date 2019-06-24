@@ -1,5 +1,5 @@
 ---
-title: 演练：使用单选按钮更新工作表中的图表
+title: 使用单选按钮的工作表中更新图表
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a827e688e260adcb93e81b55520c747dd99ed0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86e289ad8a316f7026d6fda46bb3e424164437fb
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421750"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67329014"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练显示了使用 Microsoft Office Excel 工作表上的单选按钮为用户提供选项之间快速切换的方法的基础知识。 在这种情况下，选项更改图表的样式。
@@ -97,7 +97,7 @@ ms.locfileid: "63421750"
 
 2. 单击**浏览**按钮，然后浏览到在本演练前面创建的工作簿。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
      Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的 Excel 图表**投影到**解决方案资源管理器**。
 
@@ -122,7 +122,7 @@ ms.locfileid: "63421750"
 
 1. 选择**我的 Excel 图表**项目中**解决方案资源管理器**。
 
-2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
+2. 在 **“项目”** 菜单上，单击 **“添加新项”** 。
 
 3. 在**添加新项**对话框中，单击**用户控件**，将控件**ChartOptions，** 然后单击**添加**。
 
@@ -203,7 +203,7 @@ ms.locfileid: "63421750"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>若要添加工作表中的用户控件
 
-1. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+1. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
      **ChartOptions**用户控件添加到**工具箱**。
 
