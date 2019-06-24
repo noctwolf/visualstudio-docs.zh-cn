@@ -1,5 +1,5 @@
 ---
-title: 演练：将绑定到数据服务中的 VSTO 外接程序项目
+title: 从 VSTO 外接程序项目中的服务将绑定到数据
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ba36b62aa9f4330cc88eaa198d0488d7e43b341
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6278e4e849d698097fe3760411a3121d977df07
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982074"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328859"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>演练：将绑定到数据服务中的 VSTO 外接程序项目
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件。 本演练演示如何在运行时将控件添加到 Microsoft Office Word 文档中、将控件绑定到从 MSDN Content Service 检索到的数据以及响应事件。
@@ -52,26 +52,26 @@ ms.locfileid: "62982074"
 
      有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件并将项目添加到“解决方案资源管理器” 中。
+     Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件并将项目添加到“解决方案资源管理器”  中。
 
 ## <a name="add-a-web-service"></a>添加 web 服务
  对于本演练中，使用名为 MTPS Content Service 的 web 服务。 此 web 服务从指定的 MSDN 文章中的 XML 字符串或纯文本形式返回信息。 下一步演示如何在内容控件中显示返回的信息。
 
 ### <a name="to-add-the-mtps-content-service-to-the-project"></a>将 MTPS content service 添加到项目
 
-1. 在 **“数据”** 菜单上，单击 **“添加新数据源”**。
+1. 在 **“数据”** 菜单上，单击 **“添加新数据源”** 。
 
-2. 在“数据源配置向导” 中单击“服务” ，再单击“下一步” 。
+2. 在“数据源配置向导”  中单击“服务”  ，再单击“下一步”  。
 
 3. 在“地址”  字段中键入下面的 URL：
 
      **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**
 
-4. 单击 **“转到”**。
+4. 单击 **“转到”** 。
 
-5. 在“命名空间”  字段中键入“ContentService” ，再单击“确定” 。
+5. 在“命名空间”  字段中键入“ContentService”  ，再单击“确定”  。
 
-6. 在“添加引用向导”  对话框中单击“完成” 。
+6. 在“添加引用向导”  对话框中单击“完成”  。
 
 ## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>添加内容控件并绑定到数据在运行时
  在 VSTO 外接程序项目中，添加并将控件绑定在运行时。 在本演练中，配置要从 web 服务检索数据，当用户单击该控件中的内容控件。
@@ -108,7 +108,7 @@ ms.locfileid: "62982074"
 
 ### <a name="to-test-the-vsto-add-in"></a>若要测试 VSTO 外接程序
 
-1. 按 F5 。
+1. 按 F5  。
 
 2. 在内容控件内单击。
 

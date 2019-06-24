@@ -1,5 +1,5 @@
 ---
-title: 演练：创建 excel 在第一个文档级自定义项
+title: 创建 excel 在第一个文档级自定义项
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438528"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328391"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>演练：创建 excel 在第一个文档级自定义项
   本介绍性演练演示如何创建 Microsoft Office Excel 的文档级自定义项。 仅在特定工作簿处于打开状态时，才可使用你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何工作簿处于打开状态时显示新的功能区选项卡。
@@ -53,9 +53,9 @@ ms.locfileid: "63438528"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
-3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
+3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”** ，然后展开 **“Office/SharePoint”** 。
 
 4. 在展开的 **“Office/SharePoint”** 节点下方，选择 **“Office 外接程序”** 节点。
 
@@ -63,7 +63,7 @@ ms.locfileid: "63438528"
 
 6. 在中**名称**框中，键入**FirstWorkbookCustomization**。
 
-7. 单击 **“确定”**。
+7. 单击 **“确定”** 。
 
     将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -73,13 +73,13 @@ ms.locfileid: "63438528"
 
    - *FirstWorkbookCustomization*.xlsx-表示项目中的 Excel 工作簿。 包含所有工作表和图表。
 
-   - Sheet1 (*.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#) 的工作簿中的第一张工作表提供在设计图面和代码的工作表。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。
+   - Sheet1 ( *.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#) 的工作簿中的第一张工作表提供在设计图面和代码的工作表。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。
 
-   - Sheet2 (*.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#) 的工作簿中的第二张工作表提供在设计图面和代码的工作表。
+   - Sheet2 ( *.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#) 的工作簿中的第二张工作表提供在设计图面和代码的工作表。
 
-   - Sheet3 (*.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#) 的工作簿中的第三个工作表提供在设计图面和代码的工作表。
+   - Sheet3 ( *.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#) 的工作簿中的第三个工作表提供在设计图面和代码的工作表。
 
-   - ThisWorkbook (*.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#)-包含设计图面和工作簿级自定义项的代码。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。
+   - ThisWorkbook ( *.vb*适用于 Visual Basic 文件或 *.cs*文件对于 Visual C#)-包含设计图面和工作簿级自定义项的代码。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。
 
      将在设计器中自动打开 Sheet1 代码文件。
 
@@ -147,7 +147,7 @@ ms.locfileid: "63438528"
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>在开发计算机上清理已完成的项目
 
-1. 在 Visual Studio 中，在 **“生成”** 菜单上，单击 **“清理解决方案”**。
+1. 在 Visual Studio 中，在 **“生成”** 菜单上，单击 **“清理解决方案”** 。
 
 ## <a name="next-steps"></a>后续步骤
  既然你已经创建了一个基本的 Excel 文档级自定义项，就可以从下面这些主题中了解有关如何开发自定义项的详细信息：

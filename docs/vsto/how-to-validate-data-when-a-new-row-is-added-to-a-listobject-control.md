@@ -1,5 +1,5 @@
 ---
-title: 如何：一个新行添加到 ListObject 控件时验证数据
+title: 在新行添加到 ListObject 控件时验证数据
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8cf302388b71174767d41cc8b1a7594f4223db2a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420955"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328863"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>如何：一个新行添加到 ListObject 控件时验证数据
   用户可以向绑定到数据的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加新行。 可以在将更改提交到数据源之前验证用户数据。

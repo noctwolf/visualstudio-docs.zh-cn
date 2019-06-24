@@ -1,5 +1,5 @@
 ---
-title: 如何：以编程方式从收件箱中检索未读的邮件
+title: 以编程方式获取收件箱中的未读的消息
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b618d09fb8b11f98077ab3bb49e32a28869e5b04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9a718d6a8ee4eb633b34e1e12f85d578dc99fa6
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955649"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328929"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以编程方式从收件箱中检索未读的邮件
   此示例从 Outlook 检索未读的电子邮件**收件箱**和显示项的数目。

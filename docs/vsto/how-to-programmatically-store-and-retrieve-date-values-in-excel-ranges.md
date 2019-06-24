@@ -1,5 +1,5 @@
 ---
-title: 如何：以编程方式存储和检索日期值在 Excel 范围内
+title: 存储和以编程方式检索在 Excel 范围内的日期值
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419284"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328925"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以编程方式存储和检索日期值在 Excel 范围内
   可以存储和检索中的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。
