@@ -4,9 +4,7 @@ description: 了解如何使用 Visual Studio 设置和配置 Azure 云服务的
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -50,8 +48,6 @@ ms.locfileid: "62552251"
 
     > [!IMPORTANT]
     > 如果要选择特定的服务配置，需禁用一些属性，因为其只能设置为所有配置。 若要编辑这些属性，必须选择“所有配置”。
-    >
-    >
 
     ![Azure 云服务的服务配置列表](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
