@@ -4,9 +4,7 @@ description: 了解如何根据你对该项目的要求在 Visual Studio 中配�
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
