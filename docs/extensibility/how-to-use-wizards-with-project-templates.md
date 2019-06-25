@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352046"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342417"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：使用向导来处理项目模板
 
@@ -68,7 +68,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 3. 将程序集作为资产添加到 VSIX 项目。 打开*source.extension.vsixmanifest*文件，然后选择**资产**选项卡。在**添加新资产**窗口中，对于**类型**选择**Microsoft.VisualStudio.Assembly**，为**源**选择**A当前解决方案中的项目**，并为**项目**选择**MyProjectWizard**。
 
-4. 添加对 VSIX 项目的以下引用。 (在**解决方案资源管理器**，在 VSIX 项目节点下，选择**引用**，右键单击，然后选择**添加引用**。)在中**添加引用**对话框中**Framework**选项卡上，找到**System.Windows 窗体**程序集并将其选中。 现在，选择**扩展**选项卡。查找**EnvDTE**程序集并将其选中。 其中还有**Microsoft.VisualStudio.TemplateWizardInterface**程序集并将其选中。 单击 **“确定”** 。
+4. 添加对 VSIX 项目的以下引用。 (在**解决方案资源管理器**，在 VSIX 项目节点下，选择**引用**，右键单击，然后选择**添加引用**。)在中**添加引用**对话框中**Framework**选项卡上，找到**System.Windows 窗体**程序集并将其选中。 查找和选择**系统**并**System.Drawing**程序集。 现在，选择**扩展**选项卡。查找**EnvDTE**程序集并将其选中。 其中还有**Microsoft.VisualStudio.TemplateWizardInterface**程序集并将其选中。 单击 **“确定”** 。
 
 5. 将向导实现的类添加到 VSIX 项目。 (在**解决方案资源管理器**，右键单击 VSIX 项目节点并选择**添加**，然后**新项**，然后**类**。)将类命名**WizardImplementation**。
 
@@ -157,7 +157,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
    - <xref:System.Object>数组，其中包含一组参数传递给向导由 Visual Studio。
 
-     此示例将参数值添加到窗体用户输入从<xref:System.Collections.Generic.Dictionary%602>参数。 每个实例`$custommessage$`项目中的参数将替换为用户输入的文本。 将以下程序集添加到你的项目：**系统**并**System.Drawing**。
+     此示例将参数值添加到窗体用户输入从<xref:System.Collections.Generic.Dictionary%602>参数。 每个实例`$custommessage$`项目中的参数将替换为用户输入的文本。
 
 7. 现在，创建**UserInputForm**。 在中*WizardImplementation.cs*文件中，添加以下代码的结尾后`WizardImplementation`类。
 
