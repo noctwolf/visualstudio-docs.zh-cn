@@ -1,18 +1,16 @@
 ---
 title: 为 Azure 构建的命令行 | Microsoft Docs
 description: 为 Azure 构建的命令行
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 03/05/2017
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 03/05/2017
+ms.author: ghogen
 ms.openlocfilehash: 8c96713a06c66fe34e34417e9e8595ba07e50485
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -28,8 +26,8 @@ ms.locfileid: "62989817"
 ## <a name="msbuild-parameters"></a>MSBuild 参数
 创建包的最简单方法是运行 MSBuild 并使用 `/t:Publish` 选项。 默认情况下，此命令将创建与项目的根文件夹相关的目录，例如 `<ProjectDirectory>\bin\Configuration\app.publish\`。 生成 Azure 项目时，将生成两个文件，即包文件本身和附带的配置文件：
 
-- 包文件 (`project.cspkg`)
-- 配置文件 (`ServiceConfiguration.TargetProfile.cscfg`)
+* 包文件 (`project.cspkg`)
+* 配置文件 (`ServiceConfiguration.TargetProfile.cscfg`)
 
 默认情况下，每个 Azure 项目均包含两个服务配置文件，这两个文件分别针对本地（调试）生成和云（过渡或生产）生成。 但是，可以根据需要添加或删除服务配置文件。 在 Visual Studio 中生成包时，系统会询问你要将哪个服务配置文件与包一起包含。 使用 MSBuild 生成包时，默认情况下将包含本地服务配置文件。 要包含其他配置文件，请设置 MSBuild 命令 (`MSBuild /t:Publish /p:TargetProfile=ProfileName`) 的 `TargetProfile` 属性。
 
@@ -37,5 +35,3 @@ ms.locfileid: "62989817"
 
 ## <a name="next-steps"></a>后续步骤
 生成包后，即可将其部署到 Azure。
-
-<!-- Update_Description: update metedata properties -->
