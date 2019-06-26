@@ -6,17 +6,17 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: c8f916c1c1ca96ee04c38ee4f3a4d723582960d0
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849024"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259785"
 ---
 ## <a name="get-support"></a>获取支持
 
 有时，你难免遇到一些问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 安装和升级问题疑难解答](../troubleshooting-installation-issues.md)获取分步指南。
 
-对于安装相关问题，我们还提供[实时聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
+对于安装相关问题，我们还提供[实时聊天  ](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
 
 下面是另外几个支持选项：
 
