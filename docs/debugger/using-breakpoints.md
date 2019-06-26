@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614525"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365401"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
@@ -144,9 +144,9 @@ ms.locfileid: "65614525"
 
 4. 以下内容添加至**函数名**，然后选择**C++** 语言。
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ ms.locfileid: "65614525"
 - 不是可扩展的工具提示中，局部变量，自动或监视窗口属性
 - 静态变量
 - 使用 DebuggerTypeProxy 特性类
-- 在结构内的字段 
+- 在结构内的字段
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ ms.locfileid: "65614525"
 - 将未经调试的进程写入内存位置。
 - 在两个或多个进程间共享内存位置。
 - 内存位置在内核内更新。 例如，如果内存传递给 32 位 Windows`ReadFile`函数，将从内核模式下，更新内存，因此调试器不会中断该更新。
+- 其中，监视表达式是大于 32 位硬件上和 64 位硬件上的 8 个字节的 4 个字节。 这是一个限制 x86 体系结构。
 
->[!NOTE]
->- 数据断点依赖于特定的内存地址。 变量的地址更改从一个调试会话为下一步，因此数据断点将被自动禁用每个调试会话结束时。
+> [!NOTE]
+> - 数据断点依赖于特定的内存地址。 变量的地址更改从一个调试会话为下一步，因此数据断点将被自动禁用每个调试会话结束时。
 >
->- 如果在局部变量上设置数据断点，则断点在函数结束时仍处于启用状态，但内存地址不再适用，因此断点的行为不可预测。 如果在本地变量上设置数据断点，应删除或禁用在函数结束前的断点。
+> - 如果在局部变量上设置数据断点，则断点在函数结束时仍处于启用状态，但内存地址不再适用，因此断点的行为不可预测。 如果在本地变量上设置数据断点，应删除或禁用在函数结束前的断点。
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>在“断点”窗口中管理断点
 
