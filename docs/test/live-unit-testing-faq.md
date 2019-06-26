@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714492"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258134"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -197,15 +197,6 @@ Visual Studio 2017 版本 15.3 或更高版本已修复此问题，再也不会�
 如果解决方案的生成过程生成的源代码属于解决方案本身，并且生成目标文件没有指定相应的输入和输出，即使没有进行编辑，也可生成解决方案。 应给定目标一个输入和输出列表，使 MSBuild 可执行适当的最新检查，并确定是否需要新的生成。
 
 Live Unit Testing 只要检测到源文件已更改，就会启动一个生成。 由于解决方案的生成过程生成源文件，Live Unit Testing 将进入一个无限的生成循环。 但如果 Live Unit Testing 启动第二次生成时（从上一生成中检测到新生成的源代码文件后）检查了目标的输入和输出，它将中断该生成循环，因为输入和输出检查将表明所有内容都为最新。  
-
-## <a name="lightweight-solution-load"></a>轻量级解决方案加载
-
-Live Unit Testing 如何与轻型解决方案加载功能配合使用？ 
-
-Live Unit Testing 暂不能很好地支持轻型解决方案加载功能。 仅当加载至少一个测试项目后，它才能正常工作。 在此之前它将不起作用，因为 Live Unit Testing 依赖于至少一个引用已加载测试适配器（MSTest、xUnit 或 NUnit）的测试项目。
-
-> [!NOTE]
-> Visual Studio 2017 版本 15.5 及更高版本中不再提供轻型解决方案加载。 在 Visual Studio 2017 版本 15.5 及更高版本中，包含托管代码的大型解决方案的加载速度比以前快许多，即使在不具备轻型解决方案加载功能的情况下亦如此。
 
 ## <a name="new-process-coverage"></a>新进程覆盖率
 
