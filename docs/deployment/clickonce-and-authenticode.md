@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900543"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399021"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *验证码* 是使用行业标准加密，通过验证应用程序发行者真实性的数字证书对应用程序代码进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。
@@ -33,7 +33,7 @@ ms.locfileid: "62900543"
 ## <a name="authenticode-and-code-signing"></a>验证码和代码签名
  *数字证书* 是一个包含一个加密公钥/私钥对和元数据的文件，元数据描述了向其颁发证书的发行者以及颁发证书的机构。
 
- 有各种类型的验证码证书。 每种验证码证书为不同类型的签名而配置。 对于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序，必须具有对代码签名有效的验证码证书。 如果尝试使用其他类型证书（如数字电子邮件证书）对 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序进行签名，将不起作用。 有关详细信息，请参阅[代码签名简介](http://go.microsoft.com/fwlink/?LinkId=179452)。
+ 有各种类型的验证码证书。 每种验证码证书为不同类型的签名而配置。 对于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序，必须具有对代码签名有效的验证码证书。 如果尝试使用其他类型证书（如数字电子邮件证书）对 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序进行签名，将不起作用。 有关详细信息，请参阅[代码签名简介](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools)。
 
  可以通过以下三种方法之一获取代码签名证书：
 
@@ -66,7 +66,7 @@ ms.locfileid: "62900543"
 
 ### <a name="store-certificates"></a>将证书存储
 
-- 可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx。 用于创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 工具 Mage.exe 和 MageUI.exe，借助这些工具可以使用上述任一方式中存储的证书。
+- 可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中  。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx   。 用于创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 工具 Mage.exe 和 MageUI.exe，借助这些工具可以使用上述任一方式中存储的证书   。
 
 ## <a name="see-also"></a>请参阅
 - [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
