@@ -37,7 +37,7 @@ ms.locfileid: "65847031"
 
     - *.live.com
 
-- 您可以删除 http://go.microsoft.com地址的允许列表中，以便同时显示代理身份验证对话框 http://go.microsoft.com地址和服务器终结点时重新启动 Visual Studio。
+- 您可以删除 [http://go.microsoft.com](http://go.microsoft.com ) 地址的允许列表中，以便同时显示代理身份验证对话框 [http://go.microsoft.com](http://go.microsoft.com ) 地址和服务器终结点时重新启动 Visual Studio。
 
 - 如果你想要通过代理使用默认凭据，请执行以下操作：
 
