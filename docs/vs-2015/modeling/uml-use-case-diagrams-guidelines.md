@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424302"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493655"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 用例图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ ms.locfileid: "63424302"
   
  ![用例显示多对多个多重性](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- 以状态中，同一个类的多个参与者可以参与用例的单一匹配项时，重数设置到的关联中参与者端 * * 1...\\***.  
+- 以状态中，同一个类的多个参与者可以参与用例的单一匹配项时，将重数设置到关联的执行组件的末尾**1...\*** .  
   
    在图示中，一个或多个餐馆可参与实现同一订餐。  
   
-- 若要显示每个执行组件可以参与多次用例的同时，重数设置为关联的用例端 * *\\* * *。  
+- 若要显示每个执行组件可以参与多次用例的同时，在用例端的关联设置多重性 **\*** 。  
   
    在图示中，每个餐馆可同时实现多个订餐。  
   
@@ -190,11 +190,11 @@ ms.locfileid: "63424302"
   
    - **1**来表明此角色的有且只有一个实例参与每个链接。  
   
-   - **1..\\** * 到此角色的一个或多个实例参与每个链接的状态。  
+   - **1..\*** 到此角色的一个或多个实例参与每个链接的状态。  
   
    - **0..1** ，表明参与是可选的。  
   
-   - **\\** * 为此角色的零个或多个实例参与该链接的状态。  
+   - **\*** 为此角色的零个或多个实例参与该链接的状态。  
   
 > [!NOTE]
 > 很多团队不在用例图中提供重数信息，保留重数的默认值 1， 而是在用例的其他描述中提供该信息。 在这种情况下，用例图中的所有重数都将隐藏。  

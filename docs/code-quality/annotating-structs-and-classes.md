@@ -1,6 +1,6 @@
 ---
 title: 批注结构和类
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571415"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493632"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
+
 你可以通过使用类似于固定条件注释批注结构和类成员，它们都假定为满足的任何函数调用或进入/退出函数涉及封闭结构作为参数或结果值。
 
 ## <a name="struct-and-class-annotations"></a>结构和类批注
@@ -75,6 +76,39 @@ ms.locfileid: "62571415"
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>示例
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+此示例中的说明：
+
+- `_Field_z_` 与 `_Null_terminated_` 相等。  `_Field_z_` 名称字段指定名称字段，是一个以 null 结尾的字符串。
+- `_Field_range_` 有关`bufferSize`指定的值`bufferSize`应在 1 和`MaxBufferSize`（均含）。
+- 最终结果`_Struct_size_bytes_`和`_Field_size_`是等效的批注。 结构或类具有相似的布局`_Field_size_`更容易阅读和维护，因为它具有较少的引用和比等效的计算`_Struct_size_bytes_`批注。 `_Field_size_` 不需要转换为字节大小。 如果字节大小是唯一的选项，例如，对于 void 指针字段，`_Field_size_bytes_`可用。 如果这两个`_Struct_size_bytes_`和`_Field_size_`存在，同时将可供工具。 负责该工具要执行的操作如果不同意这两个批注。
 
 ## <a name="see-also"></a>请参阅
 
