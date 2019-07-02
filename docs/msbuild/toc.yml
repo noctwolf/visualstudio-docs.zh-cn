@@ -8,9 +8,9 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: MSBuild 概念
       items:
-        - name: MSBuild 概念
+        - name: MSBuild 概念 - 概述
           href: msbuild-concepts.md
-        - name: MSBuild 属性
+        - name: 属性
           items:
             - name: MSBuild 属性
               href: msbuild-properties.md
@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: 属性函数
               href: property-functions.md
-        - name: MSBuild 项
+        - name: Items
           items:
             - name: MSBuild 项
               href: msbuild-items.md
@@ -36,7 +36,7 @@
               href: item-definitions.md
             - name: 项函数
               href: item-functions.md
-        - name: MSBuild 目标
+        - name: 目标
           items:
             - name: MSBuild 目标
               href: msbuild-targets.md
@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: 引用 MSBuild 项目 SDK
               href: how-to-use-project-sdk.md
-        - name: MSBuild 任务
+        - name: 任务
           items:
             - name: MSBuild 任务
               href: msbuild-tasks.md
@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: 生成具有资源的项目
               href: how-to-build-a-project-that-has-resources.md
-            - name: MSBuild 内联任务
+            - name: 内联任务
               items:
                 - name: MSBuild 内联任务
                   href: msbuild-inline-tasks.md
@@ -76,7 +76,7 @@
               href: msbuild-roslyncodetaskfactory.md
         - name: 比较属性和项
           href: comparing-properties-and-items.md
-        - name: MSBuild 特殊字符
+        - name: 特殊字符
           items:
             - name: MSBuild 特殊字符
               href: msbuild-special-characters.md
@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: 在项目文件中使用保留的 XML 字符
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: MSBuild 高级概念
+    - name: 高级概念
       items:
         - name: MSBuild 高级概念
           href: msbuild-advanced-concepts.md
-        - name: MSBuild 批处理
+        - name: 批处理
           items:
             - name: MSBuild 批处理
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: MSBuild 转换
           href: msbuild-transforms.md
-        - name: Visual Studio 集成 (MSBuild)
+        - name: Visual Studio 集成
           items:
             - name: Visual Studio 集成 (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: 注册 .NET Framework 的扩展
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: 用 MSBuild 并行生成多个项目
+        - name: 并行生成多个项目
           items:
             - name: 用 MSBuild 并行生成多个项目
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -116,11 +116,11 @@
               href: using-multiple-processors-to-build-projects.md
             - name: 在生成大型项目时有效使用内存
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: MSBuild 多定向概述
+        - name: 多目标
           items:
             - name: MSBuild 多定向概述
               href: msbuild-multitargeting-overview.md
-            - name: MSBuild 工具集 (ToolsVersion)
+            - name: 工具集 (ToolsVersion)
               items:
                 - name: MSBuild 工具集 (ToolsVersion)
                   href: msbuild-toolset-toolsversion.md
@@ -132,7 +132,7 @@
               href: msbuild-target-framework-and-target-platform.md
             - name: 在设计时解析程序集
               href: resolving-assemblies-at-design-time.md
-            - name: 配置目标和任务
+            - name: 任务和任务配置
               items:
                 - name: 配置目标和任务
                   href: configuring-targets-and-tasks.md
@@ -142,7 +142,7 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: 文件跟踪
           items:
-            - name: 文件跟踪
+            - name: 文件跟踪 - 概述
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +166,9 @@
           href: customize-your-build.md
         - name: MSBuild 最佳做法
           href: msbuild-best-practices.md
-    - name: MSBuild 中的日志记录
+    - name: 日志记录
       items:
-        - name: MSBuild 中的日志记录
+        - name: MSBuild 中的日志记录 - 概述
           href: logging-in-msbuild.md
         - name: 用 MSBuild 获取生成日志
           href: obtaining-build-logs-with-msbuild.md
@@ -186,11 +186,11 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: MSBuild 参考
       items:
-        - name: MSBuild 参考
+        - name: MSBuild 参考 - 概述
           href: msbuild-reference.md
         - name: MSBuild 项目文件架构引用
           items:
-            - name: MSBuild 项目文件架构引用
+            - name: MSBuild 项目文件架构引用 - 概述
               href: msbuild-project-file-schema-reference.md
             - name: Choose 元素 (MSBuild)
               href: choose-element-msbuild.md
@@ -236,13 +236,13 @@
               href: usingtask-element-msbuild.md
             - name: When 元素 (MSBuild)
               href: when-element-msbuild.md
-        - name: MSBuild 任务参考
+        - name: 任务参考
           items:
-            - name: MSBuild 任务参考
+            - name: MSBuild 任务参考 - 概述
               href: msbuild-task-reference.md
-            - name: 特定于 Visual C++ 的 MSBuild 任务
+            - name: 特定于 Visual C++ 的任务
               items:
-                - name: 特定于 Visual C++ 的 MSBuild 任务
+                - name: 特定于 Visual C++ 的 MSBuild 任务 - 概述
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: BscMake 任务
                   href: bscmake-task.md
@@ -438,15 +438,15 @@
           href: msbuild-well-known-item-metadata.md
         - name: MSBuild 响应文件
           href: msbuild-response-files.md
-        - name: WPF MSBuild 参考
+        - name: WPF 参考
           items:
-            - name: WPF MSBuild 参考
+            - name: WPF MSBuild 参考 - 概述
               href: wpf-msbuild-reference.md
             - name: WPF .Targets 文件
               href: wpf-dot-targets-files.md
-            - name: WPF MSBuild 任务引用
+            - name: WPF 任务参考
               items:
-                - name: WPF MSBuild 任务引用
+                - name: WPF MSBuild 任务参考 - 概述
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier 任务
                   href: fileclassifier-task.md

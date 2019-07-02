@@ -62,9 +62,9 @@
           href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: 操作指南
   items:
-    - name: ClickOnce 安全和部署
+    - name: ClickOnce 安全性和部署
       items:
-        - name: ClickOnce 安全和部署
+        - name: ClickOnce 安全和部署概述
           href: clickonce-security-and-deployment.md
         - name: 选择 ClickOnce 部署策略
           href: choosing-a-clickonce-deployment-strategy.md
@@ -74,13 +74,13 @@
           href: clickonce-and-application-settings.md
         - name: Windows Vista 上的 ClickOnce 部署
           href: clickonce-deployment-on-windows-vista.md
-        - name: 本地化 ClickOnce 应用程序
+        - name: 本地化
           items:
             - name: 本地化 ClickOnce 应用程序
               href: localizing-clickonce-applications.md
             - name: 发布具有特定区域设置的项目
               href: how-to-publish-a-project-that-has-a-specific-locale.md
-        - name: 保护 ClickOnce 应用程序
+        - name: 安全
           items:
             - name: 保护 ClickOnce 应用程序
               href: securing-clickonce-applications.md
@@ -90,23 +90,23 @@
               href: trusted-application-deployment-overview.md
             - name: ClickOnce 应用程序的代码访问安全性
               href: code-access-security-for-clickonce-applications.md
-            - name: “启用 ClickOnce 安全设置”
+            - name: 启用 ClickOnce 安全设置
               href: how-to-enable-clickonce-security-settings.md
-            - name: 为 ClickOnce 应用程序设置安全区域
+            - name: 设置 ClickOnce 应用程序的安全区域
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
-            - name: 为 ClickOnce 应用程序设置自定义权限
+            - name: 设置 ClickOnce 应用程序的自定义权限
               href: how-to-set-custom-permissions-for-a-clickonce-application.md
-            - name: 使用受限权限对 ClickOnce 应用程序进行调试
+            - name: 使用受限权限调试 ClickOnce 应用程序
               href: how-to-debug-a-clickonce-application-with-restricted-permissions.md
             - name: 向客户端计算机添加受信任的发布者
               href: how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md
-            - name: 对应用程序和部署清单重新签名
+            - name: 对应用程序清单和部署清单重新签名
               href: how-to-re-sign-application-and-deployment-manifests.md
             - name: 配置 ClickOnce 信任提示行为
               href: how-to-configure-the-clickonce-trust-prompt-behavior.md
-            - name: 用 SignTool.exe (ClickOnce) 对安装文件进行签名
+            - name: 使用 SignTool.exe (ClickOnce) 对安装文件进行签名
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
-        - name: 发布 ClickOnce 应用程序
+        - name: 发布
           items:
             - name: 发布 ClickOnce 应用程序
               href: publishing-clickonce-applications.md
@@ -132,15 +132,15 @@
               href: how-to-set-the-clickonce-publish-version.md
             - name: 自动递增 ClickOnce 发布版本
               href: how-to-automatically-increment-the-clickonce-publish-version.md
-            - name: 指定通过 ClickOnce 发布的文件
+            - name: 指定文件
               items:
                 - name: 指定通过 ClickOnce 发布的文件
                   href: how-to-specify-which-files-are-published-by-clickonce.md
-                - name: 将数据文件包括到 ClickOnce 应用程序中
+                - name: 将数据文件添加到 ClickOnce 应用程序中
                   href: how-to-include-a-data-file-in-a-clickonce-application.md
-            - name: 与 ClickOnce 应用程序一起安装必备组件
+            - name: 将必备组件与 ClickOnce 应用程序一起安装
               href: how-to-install-prerequisites-with-a-clickonce-application.md
-            - name: 将必备组件与 ClickOnce 应用程序包括在一起
+            - name: 将系统必备与 ClickOnce 应用程序一起添加
               href: how-to-include-prerequisites-with-a-clickonce-application.md
             - name: 管理 ClickOnce 应用程序的更新
               href: how-to-manage-updates-for-a-clickonce-application.md
@@ -148,13 +148,13 @@
               href: how-to-change-the-publish-language-for-a-clickonce-application.md
             - name: 指定 ClickOnce 应用程序的“开始”菜单名称
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
-            - name: 指定技术支持链接
+            - name: 指定技术支持
               items:
                 - name: 指定技术支持链接
                   href: how-to-specify-a-link-for-technical-support.md
                 - name: 为各个必备组件指定一个支持 URL
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
-            - name: 指定 ClickOnce 应用程序的发布页
+            - name: “发布”页面
               items:
                 - name: 指定 ClickOnce 应用程序的发布页
                   href: how-to-specify-a-publish-page-for-a-clickonce-application.md
@@ -162,11 +162,11 @@
                   href: how-to-customize-the-default-web-page-for-a-clickonce-application.md
             - name: 为 CD 安装启用自动启动
               href: how-to-enable-autostart-for-cd-installations.md
-            - name: 为 ClickOnce 应用程序创建文件关联
+            - name: 创建 ClickOnce 应用程序的文件关联
               href: how-to-create-file-associations-for-a-clickonce-application.md
             - name: 在联机 ClickOnce 应用程序中检索查询字符串信息
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
-            - name: 使用设计器禁用 ClickOnce 应用程序的 URL 激活
+            - name: 禁用 URL 激活
               items:
                 - name: 使用设计器禁用 ClickOnce 应用程序的 URL 激活
                   href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
@@ -174,9 +174,9 @@
                   href: how-to-disable-url-activation-of-clickonce-applications.md
             - name: 部署可在多个版本的 .NET Framework 上运行的应用
               href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
-            - name: 发布启用了视觉样式的 WPF 应用程序
+            - name: 发布已启用视觉样式的 WPF 应用程序
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-            - name: 演练：使用设计器按需下载程序集
+            - name: 按需下载程序集
               items:
                 - name: 演练：使用设计器按需下载程序集
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
@@ -184,7 +184,7 @@
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 演练：使用设计器按需下载附属程序集
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-            - name: 演练：手动部署 ClickOnce 应用程序
+            - name: 手动部署
               items:
                 - name: 演练：手动部署 ClickOnce 应用程序
                   href: walkthrough-manually-deploying-a-clickonce-application.md
@@ -194,7 +194,7 @@
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 演练：创建自定义安装程序
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
-        - name: 选择 ClickOnce 更新策略
+        - name: 更新策略
           items:
             - name: 选择 ClickOnce 更新策略
               href: choosing-a-clickonce-update-strategy.md
@@ -202,15 +202,15 @@
               href: how-clickonce-performs-application-updates.md
             - name: 以编程方式检查应用程序更新
               href: how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md
-            - name: 指定部署更新的其他位置
+            - name: 指定部署更新的替换位置
               href: how-to-specify-an-alternate-location-for-deployment-updates.md
         - name: ClickOnce 部署示例和演练
           href: clickonce-deployment-samples-and-walkthroughs.md
-        - name: ClickOnce 部署疑难解答
+        - name: 疑难解答
           items:
             - name: ClickOnce 部署疑难解答
               href: troubleshooting-clickonce-deployments.md
-            - name: 为 ClickOnce 部署错误设置自定义日志文件位置
+            - name: 设置 ClickOnce 部署错误的自定义日志文件位置
               href: how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md
             - name: 指定 ClickOnce 部署的详细日志文件
               href: how-to-specify-verbose-log-files-for-clickonce-deployments.md
@@ -220,13 +220,13 @@
               href: security-versioning-and-manifest-issues-in-clickonce-deployments.md
             - name: ClickOnce 部署中特定错误的疑难解答
               href: troubleshooting-specific-errors-in-clickonce-deployments.md
-            - name: 调试使用 System.Deployment.Application 的 ClickOnce 应用程序
+            - name: 调试使用 System.Deployment.application 的 ClickOnce 应用程序
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: 应用程序部署必备
       items:
-        - name: 应用程序部署必备
+        - name: 应用程序部署必备组件概述
           href: application-deployment-prerequisites.md
-        - name: 部署 64 位应用程序的必备组件
+        - name: 部署 64 位应用程序的系统必备
           href: deploying-prerequisites-for-64-bit-applications.md
         - name: 创建引导程序包
           href: creating-bootstrapper-packages.md
@@ -240,7 +240,7 @@
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: 产品和包架构引用
           items:
-            - name: 产品和包架构引用
+            - name: 产品和包架构引用概述
               href: product-and-package-schema-reference.md
             - name: <Product> 元素（引导程序）
               href: product-element-bootstrapper.md
@@ -262,11 +262,11 @@
   items:
     - name: ClickOnce 参考
       items:
-        - name: ClickOnce 参考
+        - name: ClickOnce 参考概述
           href: clickonce-reference.md
-        - name: ndptecclick
+        - name: ClickOnce 应用程序清单
           items:
-            - name: ndptecclick
+            - name: ClickOnce 应用程序清单概述
               href: clickonce-application-manifest.md
             - name: <assembly> 元素（ClickOnce 应用程序）
               href: assembly-element-clickonce-application.md
@@ -284,7 +284,7 @@
               href: fileassociation-element-clickonce-application.md
         - name: ClickOnce 部署清单
           items:
-            - name: ClickOnce 部署清单
+            - name: ClickOnce 部署清单概述
               href: clickonce-deployment-manifest.md
             - name: <assembly> 元素（ClickOnce 部署）
               href: assembly-element-clickonce-deployment.md

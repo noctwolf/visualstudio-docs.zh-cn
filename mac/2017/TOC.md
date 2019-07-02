@@ -5,6 +5,7 @@
 ## [在防火墙或代理背后安装和使用](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [安装预览版](/visualstudio/mac/install-preview)
 ## [更新](/visualstudio/mac/update)
+## [更新到 Visual Studio 2019 for Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [卸载](/visualstudio/mac/uninstall)
 
 # [用户帐户](/visualstudio/mac/user-accounts)
