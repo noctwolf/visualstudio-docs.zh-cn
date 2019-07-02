@@ -377,14 +377,20 @@
                       href: ide/reference/convert-foreach-linq.md
                     - name: 将 LINQ 查询转换为 foreach 语句
                       href: ide/reference/convert-linq-to-foreach.md
+                    - name: 将 Switch 语句转换为 Switch 表达式
+                      href: ide/reference/convert-switch-statement-to-switch-expression.md
                     - name: 封装字段
                       href: ide/reference/encapsulate-field.md
                     - name: 提取接口
                       href: ide/reference/extract-interface.md
                     - name: 提取方法
                       href: ide/reference/extract-method.md
+                    - name: 生成参数
+                      href: ide/reference/generate-parameter.md
                     - name: 内联临时变量
                       href: ide/reference/inline-temporary-variable.md
+                    - name: IntelliSense 完成未导入类型
+                      href: ide/reference/intellisense-completion-unimported-types.md
                     - name: 反转条件表达式和逻辑运算
                       href: ide/reference/invert-conditional-logical.md
                     - name: 反转 if 语句
@@ -393,6 +399,8 @@
                       href: ide/reference/move-declaration-near-reference.md
                     - name: 将类型移到匹配的文件
                       href: ide/reference/move-type-to-matching-file.md
+                    - name: 将类型移到命名空间
+                      href: ide/reference/move-type-to-namespace.md
                     - name: 拉取成员
                       href: ide/reference/pull-members-up.md
                     - name: 通过 IntelliSense 完成正则表达式
@@ -401,6 +409,8 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: 重命名
                       href: ide/reference/rename.md
+                    - name: 对 Using 排序
+                      href: ide/reference/sort-usings.md
                     - name: Split 或 merge if 语句
                       href: ide/reference/split-or-merge-if-statement.md
                     - name: 同步命名空间和文件夹名称
@@ -470,10 +480,16 @@
                 - name: 使用 EditorConfig 文件构造代码样式
                   displayName: Configure code style analyzers
                   href: ide/create-portable-custom-editor-options.md
-                - name: .NET 语言和格式设置约定
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: .NET 命名约定
-                  href: ide/editorconfig-naming-conventions.md
+                - name: .NET 编码约定
+                  items:
+                    - name: 概述
+                      href: ide/editorconfig-code-style-settings-reference.md
+                    - name: 语言约定
+                      href: ide/editorconfig-language-conventions.md
+                    - name: 格式设置约定
+                      href: ide/editorconfig-formatting-conventions.md
+                    - name: 命名约定
+                      href: ide/editorconfig-naming-conventions.md
             - name: 自定义滚动条
               href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
             - name: 在代码中设置书签
