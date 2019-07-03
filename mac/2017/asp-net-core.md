@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933122"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493726"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 
@@ -23,7 +23,7 @@ ms.locfileid: "62933122"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中创建 ASP.NET Core 应用
 
-打开 Visual Studio for Mac。 在欢迎页面上，选择“新建项目...”
+打开 Visual Studio for Mac。 在欢迎页面上，选择“新建项目...” 
 
 ![“新建项目”对话框](media/asp-net-core-image1.png)
 
@@ -31,24 +31,24 @@ ms.locfileid: "62933122"
 
 许多项目都提供有预建模板，方便快速开始创建 ASP.NET Core 应用程序。 这些是：
 
-- “.NET Core”>“ASP.NET Core 空 Web 应用程序”
-- “.NET Core”>“ASP.NET Core Web 应用”
-- “.NET Core”>“ASP.NET Core Web API”
-- “多平台”>“应用”>“已连接的应用”
+- “.NET Core”>“ASP.NET Core 空 Web 应用程序” 
+- “.NET Core”>“ASP.NET Core Web 应用” 
+- “.NET Core”>“ASP.NET Core Web API” 
+- “多平台”>“应用”>“已连接的应用” 
 
 ![ASP.NET 项目选项](media/asp-net-core-image11.png)
 
-选择“ASP.NET Core 空 Web 应用”，然后按“下一步”。 为项目指定名称，并按“创建”。 这将创建新的 ASP.NET Core 应用，类似于下图：
+选择“ASP.NET Core 空 Web 应用”，然后按“下一步”   。 为项目指定名称，并按“创建”  。 这将创建新的 ASP.NET Core 应用，类似于下图：
 
 ![新 ASP.NET Core 空项目视图](media/asp-net-core-image4.png)
 
-ASP.NET Core 空 Web 应用程序将通过以下两个默认文件创建一个 Web 应用程序：Program.cs 和 Startup.cs，后面将对这两个文件进行说明。 它还将创建一个依赖项文件夹，该文件夹包含项目的 NuGet 包依赖项，如 ASP.NET Core、.NET Core 框架和生成该项目的 MSBuild 目标：
+ASP.NET Core 空 Web 应用程序将通过以下两个默认文件创建一个 Web 应用程序：Program.cs  和 Startup.cs  ，后面将对这两个文件进行说明。 它还将创建一个依赖项文件夹，该文件夹包含项目的 NuGet 包依赖项，如 ASP.NET Core、.NET Core 框架和生成该项目的 MSBuild 目标：
 
 ![显示依赖项的 Solution Pad](media/asp-net-core-image12.png)
 
 ### <a name="programcs"></a>Program.cs
 
-在项目中打开并检查“Program.cs”文件。 请注意，在 `Main` 方法中会发生两件事 – 应用中的项：
+在项目中打开并检查“Program.cs”文件  。 请注意，在 `Main` 方法中会发生两件事 – 应用中的项：
 
 ```csharp
 public static void Main(string[] args)
@@ -77,7 +77,7 @@ ASP.NET Core 应用将通过 [`WebHostBuilder`](/aspnet/core/fundamentals/hostin
 
 可在 `WebHostBuilder` 上的 `UseStartup()` 方法中指定应用的 Startup 类。 在此类中，可指定请求处理管道和配置任何服务。
 
-在项目中打开并检查“Startup.cs”文件：
+在项目中打开并检查“Startup.cs”文件  ：
 
 ```csharp
 public class Startup
@@ -120,7 +120,7 @@ Startup 类必须始终遵守以下规则：
 
 ![运行应用](media/asp-net-core-image5.png)
 
-Visual Studio for Mac 使用随机端口启动 Web 项目。 要找到该端口，请打开“视图”>“面板”下列出的“应用程序输出”。 之后应找到类似下图内容的输出：
+Visual Studio for Mac 使用随机端口启动 Web 项目。 要找到该端口，请打开“视图”>“面板”下列出的“应用程序输出”  。 之后应找到类似下图内容的输出：
 
 ![显示侦听端口的应用程序输出](media/asp-net-core-image6.png)
 
@@ -140,7 +140,7 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 
 要添加控制器，请执行下列操作：
 
-1. 右键单击项目名称，然后选择“添加”>“新文件”。 选择“常规”>“空类”，然后输入控制器名称：
+1. 右键单击项目名称，然后选择“添加”>“新文件”  。 选择“常规”>“空类”，然后输入控制器名称  ：
 
     ![“新文件”对话框](media/asp-net-core-image8.png)
 
@@ -167,9 +167,9 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
     }
     ```
 
-3. 通过右键单击“依赖项”文件夹并选择“添加包...”来添加 `Microsoft.AspNetCore.Mvc` 依赖项。
+3. 通过右键单击“依赖项”文件夹并选择“添加包...”来添加 `Microsoft.AspNetCore.Mvc` 依赖项   。
 
-4. 使用搜索框浏览 NuGet 库，查找其中的 `Microsoft.AspNetCore.Mvc`，然后选择“添加包”。 安装可能需要几分钟时间，系统将提示你为必需的依赖项接受各种许可证：
+4. 使用搜索框浏览 NuGet 库，查找其中的 `Microsoft.AspNetCore.Mvc`，然后选择“添加包”  。 安装可能需要几分钟时间，系统将提示你为必需的依赖项接受各种许可证：
 
     ![添加 NuGet](media/asp-net-core-image9.png)
 
@@ -234,7 +234,7 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 
 本指南介绍了 ASP.NET Core。 介绍了它是什么，何时使用，并提供了在 Visual Studio for Mac 中使用它的信息。
 有关后续步骤的详细信息，请参阅以下指南：
-- [ASP.NET Core ](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) 文档。
+- [ASP.NET Core ](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc) 文档。
 - [Creating Backend Services for Native Mobile Applications（为本地移动应用程序创建后端服务）](/aspnet/core/mobile/native-mobile-backend)，介绍了如何使用 ASP.NET Core 为 Xamarin.Forms 应用生成 REST 服务。
 - [ASP.NET Core 动手实验](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 
