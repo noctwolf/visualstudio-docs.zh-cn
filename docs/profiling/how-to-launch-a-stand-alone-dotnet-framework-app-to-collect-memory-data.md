@@ -1,5 +1,5 @@
 ---
-title: 如何：使用命令行通过探查器启动独立 .NET Framework 应用程序以收集内存数据 | Microsoft Docs
+title: 探查器命令行：打开客户端 .NET Framework 应用，获取内存数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386052"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032951"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，以使用命令行收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序以及收集内存数据。
@@ -42,9 +42,9 @@ ms.locfileid: "63386052"
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - [/start](../profiling/start.md)**:sample** 选项初始化探查器。
+   - [/start](../profiling/start.md) **:sample** 选项初始化探查器。
 
-   - [/output](../profiling/output.md)**:**`OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
+   - [/output](../profiling/output.md) **:** `OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
 
      可以将以下任意选项与 **/start:sample** 选项一起使用。
 
@@ -55,9 +55,9 @@ ms.locfileid: "63386052"
 
 3. 启动目标应用程序。 类型：
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - 需要 [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword` 选项才能收集 .NET Framework 内存数据。 keyword 参数指定是收集内存分配数据，还是同时收集内存分配数据和对象生存期数据。
+   - 需要 [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` 选项才能收集 .NET Framework 内存数据。 keyword 参数指定是收集内存分配数据，还是同时收集内存分配数据和对象生存期数据。
 
      |关键字|说明|
      |-------------|-----------------|
@@ -82,8 +82,8 @@ ms.locfileid: "63386052"
 
     |选项|说明|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 ( **/globalon**) 或停止 ( **/globaloff**) 所有进程的数据收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 ( **/processon**) 或停止 ( **/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** 将启动由 `PID`（进程 ID）指定的进程的数据收集。 **/detach** 将停止所有进程的数据收集。|
 
 - 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选数据。
@@ -97,7 +97,7 @@ ms.locfileid: "63386052"
 
     - 关闭目标应用程序。
 
-         或
+         -或-
 
     - 键入 **VSPerfCmd /detach**
 

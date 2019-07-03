@@ -1,25 +1,26 @@
 ---
 title: 在防火墙或代理服务器后面安装和使用 Visual Studio for Mac
-description: 本文档列出了必须在防火墙中列入允许列表的主机，以便 Visual Studio for Mac（及其工作负载，包括 Xamarin）能够在企业环境中正常运行。
+description: 本文档列出了必须在防火墙中允许的主机，以便 Visual Studio for Mac（及其工作负载，包括 Xamarin）能够在企业环境中正常运行。
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f3afd51cf4109f07107e60d61565c9126fc5ee7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982873"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032789"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio for Mac
 
-如果你或贵组织使用防火墙或代理服务器等安全措施，可能需要将域 URL 列入“允许列表”，并打开端口和协议，以便在安装和使用 Visual Studio for Mac 和 Azure 服务时获得最佳体验。
+如果你或贵组织使用防火墙或代理服务器等安全措施，则会有可能需要将其添加到“允许列表”的域，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio for Mac 以及 Azure 服务时获得最佳体验。
 
-- [安装 Visual Studio for Mac](#install-visual-studio-for-mac)：这些表包括允许列表的 URL，以便你有权访问 Visual Studio for Mac 的所有功能和工作负载。
 
-- [使用 Visual Studio for Mac](#use-visual-studio-for-mac)：这些表包括允许列表的 URL，以便你有权访问所需的全部服务和功能。
+- [安装 Visual Studio for Mac](#install-visual-studio-for-mac)  ：这些表包括必须允许连接的域，以便你有权访问 Visual Studio for Mac 的所有功能和工作负载。
+
+- [使用 Visual Studio for Mac](#use-visual-studio-for-mac)  ：这些包包括必须允许连接的域，以便你有权访问相关功能。
 
 ## <a name="install-visual-studio-for-mac"></a>安装 Visual Studio for Mac
 
@@ -38,6 +39,8 @@ ms.locfileid: "62982873"
 | download.visualstudio.microsoft.com | 安装程序包|
 | xamarin.azureedge.net | 安装程序包|
 | developer.xamarin.com | 安装程序包|
+| static.xamarin.com | 安装程序包|
+| dl.xamarin.com | 安装程序包|
 | dc.services.visualstudio.com| 故障报告 |
 
 ### <a name="third-party-domains"></a>第三方域
@@ -50,7 +53,7 @@ ms.locfileid: "62982873"
 
 ## <a name="use-visual-studio-for-mac"></a>使用 Visual Studio for Mac
 
-为了确保你有权在代理或防火墙后面访问所需的全部 Visual Studio for Mac 功能，建议将以下域和端口列入允许列表。
+为了确保你有权在代理或防火墙后面访问 Visual Studio for Mac 中所需每个功能，建议将以下域和端口添加到允许的访问列表。
 
 ### <a name="general"></a>常规
 

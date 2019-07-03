@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820953"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160050"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
-有关键盘辅助功能的详细信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)和[如何：仅使用键盘进行操作](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+通过选择相应的键盘快捷方式，可访问 Visual Studio 中的各种[命令](reference/visual-studio-commands.md)和窗口。 本页列出了常规  配置文件的默认命令快捷方式，安装 Visual Studio 时可能已选择该配置文件。 无论选择哪个配置文件，都可以通过打开“选项”  对话框，展开“环境”  节点，然后选择“键盘”  ，[认识命令的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 你还可以为任意给定命令分配不同的快捷键，以自定义你的快捷键。
 
-通过选择相应的键盘快捷方式，可访问 Visual Studio 中的各种命令和窗口。 本页列出了常规  配置文件的默认快捷键，安装 Visual Studio 时可能已选择该配置文件。 无论选择哪个配置文件，都可以通过打开“选项”  对话框，展开“环境”  节点，然后选择“键盘”  ，认识命令的快捷键。 你还可以为任意给定命令分配不同的快捷键，以自定义你的快捷键。
+有关常见键盘快捷方式列表和其他工作效率信息，请参阅：
 
-有关常见键盘快捷方式列表和其他高效工作信息，请参阅 [Visual Studio 中常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[键盘提示](../ide/tips-and-tricks-for-visual-studio.md)和[高效工作提示](../ide/productivity-tips-for-visual-studio.md)。
+- [常用命令的键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [键盘提示](../ide/productivity-shortcuts.md)
+- [工作效率提示](../ide/productivity-features.md)。
+
+有关 Visual Studio 中辅助功能的详细信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)以及[如何：仅使用键盘进行操作](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 |||||
 |-|-|-|-|
@@ -527,7 +531,7 @@ ms.locfileid: "66820953"
 
 |命令|键盘快捷键|
 |--------------| - |
-|调试.图形.捕获帧|None|
+|调试.图形.捕获帧|无|
 |Graphics.MovePixelSelectionDown|**Shift+Alt+向下键**|
 |Graphics.MovePixelSelectionLeft|**Shift+Alt+向左键**|
 |Graphics.MovePixelSelectionRight|**Shift+Alt+向右键**|
@@ -785,6 +789,7 @@ ms.locfileid: "66820953"
 | 编辑.折叠当前区域 | **Ctrl+M、Ctrl+S** |
 | 编辑.折叠标记 | **Ctrl+M、Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M、Ctrl+O**（字母“O”） |
+| Edit.ContractSelection | **Shift+Alt+-** （仅非 C++） |
 | 编辑.注释选定内容 | **Ctrl+K、Ctrl+C** |
 | 编辑.完成单词 | **Ctrl+空格键**<br /><br /> or<br /><br /> **Alt+向右键** |
 | 编辑.复制参数提示 | **Ctrl+Shift+Alt+C** |
@@ -797,6 +802,8 @@ ms.locfileid: "66820953"
 | 编辑.文档开始扩展 | **Ctrl+Shift+Home** |
 | 编辑.展开所有大纲显示 | **Ctrl+M、Ctrl+X** |
 | 编辑.展开当前区域 | **Ctrl+M、Ctrl+E** |
+| Edit.ExpandSelection | **Shift+Alt+=** （仅非 C++） |
+| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | 编辑.编排文档格式 | **Ctrl+K、Ctrl+D** |
 | 编辑.格式化选定内容 | **Ctrl+K、Ctrl+F** |
 | 编辑.转到全部 | **Ctrl+T**<br /><br /> or<br /><br /> **Ctrl+,** |
@@ -1150,5 +1157,4 @@ ms.locfileid: "66820953"
 
 ## <a name="see-also"></a>请参阅
 
-- [图标的图像编辑器](/cpp/windows/image-editor-for-icons)
-- [使用 IntelliSense](../ide/using-intellisense.md)
+- [Visual Studio 命令](reference/visual-studio-commands.md)

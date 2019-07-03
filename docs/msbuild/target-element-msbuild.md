@@ -1,6 +1,6 @@
 ---
 title: Target 元素 (MSBuild) | Microsoft Docs
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939295"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141180"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一组要连续执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。
@@ -85,6 +85,8 @@ ms.locfileid: "62939295"
 
 ## <a name="remarks"></a>备注
  在运行时指定第一个要执行的目标。 目标可依赖于其他目标。 例如，部署的目标依赖于编译的目标。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎按依赖关系在 `DependsOnTargets` 属性中出现的顺序从左到右依次执行依赖关系。 有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)。
+
+ MSBuild 依赖于导入顺序，带有特定 `Name` 属性的目标的最后一个定义是使用的定义。
 
  即使一个目标与多个目标存在依赖关系，在生成过程中该目标也只执行一次。
 

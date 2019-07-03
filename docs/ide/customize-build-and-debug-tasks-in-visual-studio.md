@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820307"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291040"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -33,7 +32,6 @@ Visual Studio 清楚如何运行多种语言和代码库，但它并不清楚如
 |-|-|
 |tasks.vs.json |指定自定义生成命令和编译器开关，以及任意（与非生成相关）任务。<br>通过“解决方案资源管理器”  右键单击菜单项“配置任务”  进行访问。|
 |*launch.vs.json*|指定用于调试的命令行参数。<br>通过“解决方案资源管理器”  右键单击菜单项“调试和启动设置”  进行访问。|
-|*VSWorkspaceSettings.json*|泛型设置可能会影响任务和启动。 例如，定义 VSWorkspaceSettings.json  中的 `envVars` 会将指定的环境变量添加到外部运行命令。<br>手动创建此文件。|
 
 这些 .json  文件位于代码库根文件夹中一个名为 .vs  的隐藏文件夹中。 当你在“解决方案资源管理器”  中的文件或文件夹上选择“配置任务”  或“调试和启动设置”  时，Visual Studio 会根据需要创建 tasks.vs.json  和 launch.vs.json  文件。 这些 json  文件通常处于隐藏状态，因为一般情况下用户不希望在源控件中打开这些文件。 但是如果要在源控件中打开这些文件，请将其拖入代码库的根目录，将在此处显示这些文件。
 
@@ -193,7 +191,7 @@ bin:
 - 当前目录的父目录，一直到根目录。
 - 根目录中的设置文件。
 
-这些聚合规则适用于 tasks.vs.json  和 VSWorkspaceSettings.json  文件. 有关如何聚合其他文件中的设置的信息，请参阅本文中该文件的相应部分。
+这些聚合规则适用于 tasks.vs.json。  有关如何聚合其他文件中的设置的信息，请参阅本文中该文件的相应部分。
 
 ### <a name="properties-for-tasksvsjson"></a>tasks.vs.json 属性
 
@@ -289,10 +287,6 @@ bin:
 
 > [!NOTE]
 > 可从以下两个文件位置读取 launch.vs.json  中的 `configurations` 数组属性&mdash;：代码库的根目录和 .vs  目录。 如果存在冲突，则优先考虑 .vs\launch.vs.json  中的值。
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>定义 VSWorkspaceSettings.json 中的工作区设置
-
-可以指定可能影响任务的通用设置，并在 VSWorkspaceSettings.json  文件中启动。 例如，如果在 VSWorkspaceSettings.json  中定义 `envVars`，Visual Studio 会向在外部运行的命令添加指定的环境变量。 要使用该文件，必须手动创建。
 
 ## <a name="additional-settings-files"></a>其他设置文件
 

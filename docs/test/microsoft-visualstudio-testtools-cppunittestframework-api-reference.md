@@ -1,18 +1,18 @@
 ---
 title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820762"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132148"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考
 
@@ -25,7 +25,8 @@ ms.locfileid: "66820762"
 头文件和 lib 路径会在本机测试项目中自动配置。
 
 ## <a name="In_this_topic"></a> 在本主题中
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [创建测试类和方法](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- 将使用一个或多个 `TEST_METHOD_ATTRIBUTE` 宏定义的属性添加到测试方法 testClassName  。
+ 将使用一个或多个 `TEST_METHOD_ATTRIBUTE` 宏定义的属性添加到测试方法 testMethodName  。
 
  `TEST_METHOD_ATTRIBUTE` 宏定义一个具有名称 attributeName  和值 attributeValue  的属性。
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  `TEST_MODULE_ATTRIBUTE` 宏定义一个具有名称 attributeName  和值 attributeValue  的属性。
 
 #### <a name="pre_defined_attributes"></a> 预定义属性
- 可以为上面介绍的宏 `TEST_METHOD_ATTRIBUTE`、`TEST_CLASS_ATTRIBUTE` 或 `TEST_MODULE_ATTRIBUTE` 替换这些预定义属性。
+
+ 提供这些预定义的属性宏，以便为常见情况提供便利。 它们可以代替上述宏 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- 定义一个具有名称 `Owner` 和属性值 ownerAlias  的属性。
+ 定义一个具有名称 `Owner` 和属性值 ownerAlias  的 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- 定义一个具有名称 `Description` 和属性值 description  的属性。
+ 定义一个具有名称 `Description` 和属性值 description  的 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- 定义一个具有名称 `Priority` 和属性值 priority  的属性。
+ 定义一个具有名称 `Priority` 和属性值 priority  的 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- 定义一个具有名称 `WorkItem` 和属性值 workItem  的属性。
+ 定义一个具有名称 `WorkItem` 和属性值 workItem  的 `TEST_METHOD_ATTRIBUTE`。
 
 ```cpp
 TEST_IGNORE()
 ```
 
- 定义一个具有名称 `Ignore` 和属性值 `true` 的属性。
+ 定义一个具有名称 `Ignore` 和属性值 `true` 的 `TEST_METHOD_ATTRIBUTE`。
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

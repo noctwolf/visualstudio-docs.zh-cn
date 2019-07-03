@@ -1,5 +1,5 @@
 ---
-title: 如何：使用命令行通过探查器启动独立本机应用程序以收集并发数据 | Microsoft Docs
+title: 探查器命令行：打开本机客户端应用，获取并发数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 899943e463f16d79a01bbd9b72f860797a92c72c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6b20d239ee1be6cba9484e31efc95b1f38572b59
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385924"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032926"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立本机应用程序，并通过命令行收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动本机独立（客户端）应用程序以及收集进程和线程并发数据。
@@ -30,7 +30,7 @@ ms.locfileid: "63385924"
 > 若要获取分析工具的路径，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。
 
 ## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序
- 若要使用探查器来启动目标应用程序，请使用 [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** 和 **/launch** 选项来初始化探查器并启动应用程序。 可以指定 **/start** 和 **/launch** 及其各自的选项。 还可以添加 **/globaloff** 选项，以在目标应用程序启动时暂停数据收集。 然后可使用 **/globalon** 开始收集数据。
+ 若要使用探查器来启动目标应用程序，请使用 [VSPerfCmd.exe](../profiling/vsperfcmd.md) **/start** 和 **/launch** 选项来初始化探查器并启动应用程序。 可以指定 **/start** 和 **/launch** 及其各自的选项。 还可以添加 **/globaloff** 选项，以在目标应用程序启动时暂停数据收集。 然后可使用 **/globalon** 开始收集数据。
 
 #### <a name="to-start-an-application-with-the-profiler"></a>用探查器启动应用程序
 
@@ -38,7 +38,7 @@ ms.locfileid: "63385924"
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency  /output:** `OutputFile` [`Options`]
 
-     [/output](../profiling/output.md)**:**`OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
+     [/output](../profiling/output.md) **:** `OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
 
      可以将下表中的任意选项与 **/start:concurrency** 选项一起使用。
 
@@ -61,7 +61,7 @@ ms.locfileid: "63385924"
     |[/targetclr](../profiling/targetclr.md) **:** `CLRVersion`|指定应用程序加载公共语言运行时 (CLR) 的多个版本时要分析的 CLR 的版本。|
 
 ## <a name="control-data-collection"></a>控制数据收集
- 目标应用程序运行时，可通过使用 VSPerfCmd.exe 选项开始和停止向文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
+ 目标应用程序运行时，可通过使用 VSPerfCmd.exe 选项开始和停止向文件写入数据，从而控制数据收集  。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
@@ -69,9 +69,9 @@ ms.locfileid: "63385924"
 
     |选项|说明|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID (`PID`) 或进程名称 (*ProcName*) 指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 ( **/globalon**) 或停止 ( **/globaloff**) 所有进程的数据收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 ( **/processon**) 或停止 ( **/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID (`PID`) 或进程名称 (*ProcName*) 指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|
 
 - 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选探查器报告和数据视图中的数据。
 

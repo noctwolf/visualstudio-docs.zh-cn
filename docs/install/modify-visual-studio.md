@@ -3,7 +3,7 @@ title: 修改 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 03/30/2018
+ms.date: 06/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951535"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365407"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>通过添加或删除工作负载和组件修改 Visual Studio
 
@@ -48,32 +48,35 @@ ms.locfileid: "62951535"
 >[!IMPORTANT]
 >若要安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
 
+>[!TIP]
+> 以下过程假定你具有 Internet 连接。 有关如何修改先前创建的 Visual Studio [脱机安装](create-an-offline-installation-of-visual-studio.md)的详细信息，请参阅[控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)页。
+
 ::: moniker range="vs-2017"
 
 1. 在计算机上找到 Visual Studio 安装程序。
 
-     例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出。
+     例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出    。
 
      ![Visual Studio 安装程序](media/vs2017-locate-the-visual-studio-installer.PNG "查找 Microsoft Visual Studio 安装程序")
 
      >[!NOTE]
      >对于某些计算机，Visual Studio 安装程序可能列在字母 **“M”** 下，即 **Microsoft Visual Studio 安装程序**。<br/><br/> 或者，可以在以下位置找到 Visual Studio 安装程序：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. 单击或点击以启动安装程序，然后选择“修改”。
+1. 单击或点击以启动安装程序，然后选择“修改”  。
 
      ![启动或修改 Visual Studio](media/modify-visual-studio.png "修改 Visual Studio 2017")
 
-     如果还有更新挂起，则“修改”按钮会出现在其他位置。 这样一来，如果选择执行此操作，可以在不更新的情况下修改 Visual Studio。 单击“更多”，然后选择“修改”。
+     如果还有更新挂起，则“修改”按钮会出现在其他位置。 这样一来，如果选择执行此操作，可以在不更新的情况下修改 Visual Studio。 单击“更多”，然后选择“修改”   。
 
      ![更新或修改 Visual Studio](media/modify-or-update-visual-studio.png "更新或修改 Visual Studio 2017")
 
-1. 从“工作负载”屏幕中，选择或取消选择要安装或卸载的工作负载。
+1. 从“工作负载”  屏幕中，选择或取消选择要安装或卸载的工作负载。
 
     ![Visual Studio 2017 设置对话框](media/vs2017-modify-workloads.PNG "选择 Visual Studio 2017 中的工作负载")
 
-1. 再一次选择“修改”。
+1. 再一次选择“修改”  。
 
-1. 安装完新的工作负载和组件后，选择“启动”。
+1. 安装完新的工作负载和组件后，选择“启动”  。
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ ms.locfileid: "62951535"
 
 1. 在计算机上找到 Visual Studio 安装程序。
 
-     例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出。
+     例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出    。
 
      ![打开 Visual Studio 安装程序](media/vs2019-visual-studio-installer.png "Open the Visual Studio Installer")
 
@@ -92,29 +95,29 @@ ms.locfileid: "62951535"
 
     可能需要先更新安装程序，然后才能继续操作。 如果是这样，请按照提示操作。
 
-1. 在安装程序中，查找已安装的 Visual Studio 版本，然后选择“修改”。
+1. 在安装程序中，查找已安装的 Visual Studio 版本，然后选择“修改”  。
 
      ![更新或修改 Visual Studio](media/vs-2019/vs-installer-modify.png "更新或修改 Visual Studio 2017")
 
-1. 在“工作负载”选项卡中，选择或取消选择要安装或卸载的工作负载。
+1. 在“工作负载”选项卡中，选择或取消选择要安装或卸载的工作负载  。
 
     ![Visual Studio 2019 设置对话框](media/vs-2019/vs-installer-modify-workloads.png "选择 Visual Studio 2019 中的工作负载")
 
-1. 选择是要接受默认的“下载时安装”选项还是“全部下载后再安装”选项。
+1. 选择是要接受默认的“下载时安装”选项还是“全部下载后再安装”选项   。
 
     ![Visual Studio 2019 安装选项](media/vs-2019/vs-installer-choose-install-or-download.png "选择下载时安装或先下载稍后再安装")
 
     如果想要先下载稍后再安装，则“全部下载后再安装”选项很有用。
 
-1. 选择“修改”。
+1. 选择“修改”  。
 
-1. 安装完新的工作负载和组件后，从 Visual Studio 安装程序中选择“启动”。
+1. 安装完新的工作负载和组件后，从 Visual Studio 安装程序中选择“启动”  。
 
 ::: moniker-end
 
 ## <a name="modify-individual-components"></a>修改各个组件
 
-如果不想通过安装工作负载来自定义 Visual Studio 安装，请从 Visual Studio 安装程序中选择“各个组件”选项卡，选择所需组件，然后按提示操作。
+如果不想通过安装工作负载来自定义 Visual Studio 安装，请从 Visual Studio 安装程序中选择“各个组件”选项卡，选择所需组件，然后按提示操作  。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -122,4 +125,6 @@ ms.locfileid: "62951535"
 
 * [更新 Visual Studio](update-visual-studio.md)
 * [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
+* [在维修基线上更新 Visual Studio](update-servicing-baseline.md)
+* [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [卸载 Visual Studio](uninstall-visual-studio.md)

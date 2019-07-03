@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836106"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259809"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>演练：创建代码片段
 
@@ -76,6 +76,9 @@ ms.locfileid: "66836106"
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
+   
+   > [!NOTE]
+   > 无法指定如何对代码片段 CDATA 部分中的代码行执行缩进或格式设置。  插入后，语言服务将自动设置所插入代码的格式。 
 
 5. 将代码片段保存为 SquareRoot.snippet（可将其保存在任何位置）  。
 

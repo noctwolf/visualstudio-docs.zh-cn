@@ -1,5 +1,5 @@
 ---
-title: 如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序并收集内存数据 | Microsoft Docs
+title: 探查器命令行：检测静态 ASP.NET 应用，获取内存数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac3b886fec1ab2135dd74b24b7d2fe3284249f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d57dad9c23bf56f30155bc7cd4d848a368780f51
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386719"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032995"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 组件或网站，以及如何收集 .NET 内存分配、对象生存期和详细的计时数据。
@@ -37,15 +37,15 @@ ms.locfileid: "63386719"
 
 3. 初始化 .NET 分析环境变量。 在命令提示符窗口中，键入：
 
-    VSPerfClrEnv /globaltraceon
+    VSPerfClrEnv /globaltraceon 
 
-    或
+    -或-
 
-    VSPerfClrEnv /globaltracegclife
+    VSPerfClrEnv /globaltracegclife 
 
-   - /globaltracegc 收集 .NET 内存分配和计时数据。
+   - /globaltracegc 收集 .NET 内存分配和计时数据  。
 
-   - /globaltracegclife 收集 .NET 内存分配、对象生存期和详细的计时数据。
+   - /globaltracegclife 收集 .NET 内存分配、对象生存期和详细的计时数据  。
 
 4. 重新启动计算机。
 
@@ -55,9 +55,9 @@ ms.locfileid: "63386719"
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
-   - [/start](../profiling/start.md)**:trace** 选项初始化探查器。
+   - [/start](../profiling/start.md) **:trace** 选项初始化探查器。
 
-   - [/output](../profiling/output.md)**:**`OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
+   - [/output](../profiling/output.md) **:** `OutputFile` 选项需要与 **/start** 一起使用。 `OutputFile` 指定分析数据 (.vsp) 文件的名称和位置。
 
      可以将以下任意选项与 **/start:trace** 选项一起使用。
 
@@ -66,8 +66,8 @@ ms.locfileid: "63386719"
 
    | 选项 | 说明 |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | 指定拥有 ASP.NET 工作进程的帐户的可选域和用户名。 如果以登录用户之外的其他用户身份运行进程，则需要选择此选项。名称位于 Windows 任务管理器的“进程”选项卡上的“用户名”列中。 |
-   | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话 ID 位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定拥有 ASP.NET 工作进程的帐户的可选域和用户名。 如果以登录用户之外的其他用户身份运行进程，则需要选择此选项。名称位于 Windows 任务管理器的“进程”选项卡上的“用户名”列中   。 |
+   | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话 ID 位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中  。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
@@ -84,12 +84,12 @@ ms.locfileid: "63386719"
 
     |选项|说明|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 (**/globalon**) 或停止 (**/globaloff**) 所有进程的数据收集。|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|启动 (**/threadon**) 或停止 (**/threadoff**) 由线程 ID (`TID`) 指定的线程的数据收集。|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|启动 ( **/globalon**) 或停止 ( **/globaloff**) 所有进程的数据收集。|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 ( **/processon**) 或停止 ( **/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|启动 ( **/threadon**) 或停止 ( **/threadoff**) 由线程 ID (`TID`) 指定的线程的数据收集。|
 
 ## <a name="end-the-profiling-session"></a>结束分析会话
- 要结束分析会话，请关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，然后使用 Internet Information Services (IIS) IISReset 命令来关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程。 调用 VSPerfCmd [/shutdown](../profiling/shutdown.md) 选项关闭探查器和分析数据文件。 VSPerfClrEnv /globaloff 命令会清除分析环境变量。 必须重启计算机才能应用新的环境设置。
+ 要结束分析会话，请关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，然后使用 Internet Information Services (IIS) IISReset 命令来关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程  。 调用 VSPerfCmd [/shutdown](../profiling/shutdown.md) 选项关闭探查器和分析数据文件  。 VSPerfClrEnv /globaloff 命令会清除分析环境变量  。 必须重启计算机才能应用新的环境设置。
 
 #### <a name="to-end-a-profiling-session"></a>结束分析会话
 

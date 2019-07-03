@@ -1,7 +1,7 @@
 ---
 title: 创建基于网络的安装
 description: 了解如何创建用于在企业中部署 Visual Studio 的网络安装点。
-ms.date: 03/30/2019
+ms.date: 04/26/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0ac63fda69290bef28604cda7524a318c01edc8
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974090"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365331"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>创建 Visual Studio 的网络安装
 
-通常情况下，企业管理员会创建网络安装点，以便部署到客户端工作站。 我们精心设计了 Visual Studio，可将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 （此过程也称为_创建布局_。） 
+通常情况下，企业管理员会创建网络安装点，以便部署到客户端工作站。 我们精心设计了 Visual Studio，可将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 （此过程也称为_创建布局_。）
 
 这样即使尚未更新到最新的服务更新，客户端工作站也可以使用同一网络位置来管理其安装。
 
@@ -33,7 +33,7 @@ ms.locfileid: "62974090"
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下载 Visual Studio 引导程序
 
-下载所需的 Visual Studio 版本。 请确保单击“保存”，然后单击“打开文件夹”。
+下载所需的 Visual Studio 版本。 请确保单击“保存”  ，然后单击“打开文件夹”  。
 
 安装程序可执行文件&mdash;具体而言是引导程序文件&mdash;应与下面其中一项匹配。
 
@@ -145,13 +145,13 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 * 下载两个工作负载及其所有推荐组件：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * 若要下载两个工作负载及其所有推荐和可选组件，请运行：
 
     ```cmd
-    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
 ::: moniker range="vs-2017"
@@ -225,11 +225,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 如果使用 `--wait` 参数，`%ERRORLEVEL%` 环境变量会设置为下列值之一，具体视操作结果而定：
 
-  | **值** | **结果** |
-  | --------- | ---------- |
-  | 0 | 操作成功完成 |
-  | 3010 | 操作成功完成，但安装需要重启才能使用 |
-  | 其他 | 发生了故障，请查看日志，了解详细信息 |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 ## <a name="update-a-network-install-layout"></a>更新网络安装布局
 
@@ -241,10 +237,10 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!NOTE]
 > 每次运行 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) 上提供的 Visual Studio 引导程序时，都会下载并安装可用的最新版 Visual Studio。
-> 
-> 因此，如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么会安装运行引导程序时的最新 Visual Studio 版本。
-> 
-> 但是，如果创建布局并通过布局安装，则布局将安装布局中存在的特定 Visual Studio 版本。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
+>
+> 因此，如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么会安装运行引导程序时的最新 Visual Studio 版本  。
+>
+> 但是，如果创建布局并通过布局安装，则布局将安装布局中存在的特定 Visual Studio 版本  。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -252,10 +248,10 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 > [!NOTE]
 > 每次运行 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) 上提供的 Visual Studio 引导程序时，都会下载并安装可用的最新版 Visual Studio。
-> 
-> 因此，如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么会安装运行引导程序时的最新 Visual Studio 版本。
-> 
-> 但是，如果创建布局并通过布局安装，则布局将安装布局中存在的特定 Visual Studio 版本。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
+>
+> 因此，如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么会安装运行引导程序时的最新 Visual Studio 版本  。
+>
+> 但是，如果创建布局并通过布局安装，则布局将安装布局中存在的特定 Visual Studio 版本  。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
 
 ::: moniker-end
 
@@ -265,15 +261,16 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 如果脱机安装遇到问题，请告知我们。 告知我们的最好方式是使用[报告问题](../ide/how-to-report-a-problem-with-visual-studio.md)工具。 使用此工具时，可发送我们诊断和修复问题所需的遥测数据和日志。
 
-对于安装相关问题，我们还提供[实时聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
+对于安装相关问题，我们还提供[实时聊天  ](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
 
-我们还提供其他支持选项。 有关列表，请参阅[与我们交流](../ide/talk-to-us.md)页。
+我们还提供其他支持选项。 若要查看列表，请参阅[反馈](../ide/feedback-options.md)页面。
 
 ## <a name="see-also"></a>请参阅
 
-* [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
-* [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
-* [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)
-* [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
-* [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)
+- [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
+- [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
+- [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
+- [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing/)
+- [在维修基线上更新 Visual Studio](update-servicing-baseline.md)
+- [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)

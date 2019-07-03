@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432269"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309801"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>解决方案资源管理器中的文件嵌套
 
@@ -86,19 +86,42 @@ ms.locfileid: "66432269"
 
 ### <a name="the-addedextension-provider"></a>addedExtension 提供程序
 
-此提供程序将有其他扩展名的文件嵌套在没有其他扩展名的文件下。 其他扩展名仅出现在完整文件名的末尾。 请看下面的示例：
+此提供程序将有其他扩展名的文件嵌套在没有其他扩展名的文件下。 其他扩展名仅出现在完整文件名的末尾。
+
+请看下面的示例：
 
 ![addedExtension 示例规则](media/filenesting_addedextension.png) ![addedExtension 示例效果](media/filenesting_addedextension_effect.png)
 
 * 由于 addedExtension 规则，file.html.css 嵌套在 file.html 下   
 
+> [!NOTE]
+> 不要为 `addedExtension` 规则指定任何文件扩展名；它将自动应用到所有文件扩展名。 即，当任意文件包含的名称和扩展名与其他文件的名称和扩展名相同，并在末尾附加有额外的扩展名时，此文件将嵌套在另一个文件下。 无法将此提供程序的作用仅限制在特定文件扩展名。
+
 ### <a name="the-pathsegment-provider"></a>pathSegment 提供程序
 
-此提供程序将有其他扩展名的文件嵌套在没有其他扩展名的文件下。 其他扩展名仅出现在完整文件名的中间。 请看下面的示例：
+此提供程序将有其他扩展名的文件嵌套在没有其他扩展名的文件下。 其他扩展名仅出现在完整文件名的中间。
+
+请看下面的示例：
 
 ![pathSegment 示例规则](media/filenesting_pathsegment.png) ![pathSegment 示例效果](media/filenesting_pathsegment_effect.png)
 
 * 由于 pathSegment 规则，jquery.min.js 嵌套在 jquery.js 下   
+
+> [!NOTE]
+> - 若未为 `pathSegment` 规则指定任何特定文件扩展名，它将应用到所有文件扩展名。 即，当任意文件包含的名称和扩展名与其他文件的名称和扩展名相同，并在中间部分附加有额外的扩展名时，此文件将嵌套在另一个文件下。
+> - 可以通过下面的方式指定特定文件扩展名，来将 `pathSegment` 规则的作用限制在这些扩展名：
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>allExtensions 提供程序
 

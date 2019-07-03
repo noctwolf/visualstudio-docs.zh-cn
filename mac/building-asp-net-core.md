@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836176"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253799"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中生成 ASP.NET Core 应用程序 
 
@@ -59,7 +59,7 @@ ASP.NET Core 是开放源跨平台框架，用于生成基于新式云的 Intern
 
     ![](media/netcore-image4.png)
 
-3. HomeController 以按类约定的方式处理以 /Home 开头的所有传入请求   。 Index 方法处理针对目录根（如 http://site.com/Home) ）的请求，其他方法根据约定处理针对其命名路径的请求，例如 About() 处理对 http://site.com/Home/About 的请求    。 当然，这些均可配置。 值得注意的是，HomeController 是新项目中的默认控制器，因此针对网站 (http://site.com ) 的根的请求将贯穿 HomeController 的 Index()，就像针对 http://site.com/Home 或 http://site.com/Home/Index 的请求一样       。
+3. HomeController 以按类约定的方式处理以 /Home 开头的所有传入请求   。 Index 方法处理针对目录根（如 `http://site.com/Home`）的请求，其他方法根据约定处理针对其命名路径的请求，例如 About() 处理对 `http://site.com/Home/About` 的请求。   当然，这些均可配置。 值得注意的是，HomeController 是新项目中的默认控制器，因此针对网站 (`http://site.com`) 的根的请求将贯穿 HomeController 的 Index()，就像针对 `http://site.com/Home` 或 `http://site.com/Home/Index` 的请求一样。   
 
     ![](media/netcore-image5.png)
 

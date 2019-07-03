@@ -1,5 +1,5 @@
 ---
-title: 如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序 | Microsoft Docs
+title: Web.Config 文件：检测并设置动态编译的 ASP.NET Web 应用
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -8,22 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e1e0f6377da52a0f1b26a6f50db44efc9a847f30
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422926"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032946"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法，可以从动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细计时数据、.NET 内存分配数据和 .NET 对象生存期数据。
 
- 本主题介绍如何修改 web.config 配置文件才能检测和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。
+ 本主题介绍如何修改 web.config  配置文件才能检测和分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。
 
 > [!NOTE]
 > 使用采样分析方法时或要检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 模块时，不必修改 *web.config* 文件。
 
- web.config 文件的根元素为 configuration 元素。 若要检测和分析动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，必须添加或修改以下元素：
+ web.config   文件的根元素为 configuration 元素。 若要检测和分析动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序，必须添加或修改以下元素：
 
 - **configuration/runtime/assemblyBinding/dependentAssembly** 元素，它标识控制分析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 程序集。 **dependentAssembly** 元素包含两个子元素：**assemblyIdentity** 和 **codeBase**。
 
@@ -31,7 +31,7 @@ ms.locfileid: "63422926"
 
 - 标识分析工具位置的两个 **add** 元素将被添加到 **configuration/appSettings** 节。
 
-  建议创建原始 web.config 文件的副本，该副本可用于还原应用程序的配置。
+  建议创建原始 web.config 文件的副本，该副本可用于还原应用程序的配置  。
 
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>添加 ASPNetHelper 程序集作为 configuration/runtime/assemblyBinding/dependentAssembly 元素
 
@@ -174,7 +174,7 @@ ms.locfileid: "63422926"
 ```
 
 ## <a name="example"></a>示例
- 下面是一个完整的 web.config 文件，该文件允许检测和分析动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。 此示例假定修改前文件中没有其他设置。
+ 下面是一个完整的 web.config 文件，该文件允许检测和分析动态编译的  [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序。 此示例假定修改前文件中没有其他设置。
 
 ```xml
 <?xml version="1.0"?>

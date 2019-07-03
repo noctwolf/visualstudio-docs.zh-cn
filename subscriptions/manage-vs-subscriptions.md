@@ -1,18 +1,18 @@
 ---
 title: 管理 Visual Studio 订阅
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 订阅
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833923"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365425"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 
@@ -28,13 +28,13 @@ ms.locfileid: "62833923"
 
 #### <a name="microsoft-store"></a>Microsoft Store
 
-如果已通过 Microsoft Store 购买 Visual Studio 订阅，可从付款“确认页”或“确认电子邮件”启动激活步骤。
+如果已通过 Microsoft Store 购买 Visual Studio 订阅，可从付款“确认页”或“确认电子邮件”启动激活步骤   。
 
-1. 在“确认页”或“确认电子邮件”上，单击“单击此处登录”。 你将重定向到 https://my.visualstudio.com/subscriptions/activate。
-2. 输入用于登录订阅者门户的电子邮件地址，然后单击“继续”。
+1. 在“确认页”或“确认电子邮件”上，单击“单击此处登录”  。 你将重定向到 https://my.visualstudio.com/subscriptions/activate 。
+2. 输入用于登录订阅者门户的电子邮件地址，然后单击“继续”  。
 3. 根据电子邮件地址的不同，可能会重定向到“Microsoft 帐户”登录页，或者公司或学校的登录页。
 4. 输入密码或完成登录要求。
-5. 输入确认页或欢迎电子邮件中提供的产品密钥，然后单击“激活”。
+5. 输入确认页或欢迎电子邮件中提供的产品密钥，然后单击“激活”  。
 
 #### <a name="workschool-accounts"></a>工作或学校帐户
 
@@ -42,10 +42,10 @@ ms.locfileid: "62833923"
 
 1. 访问[订阅者门户](https://my.visualstudio.com/)
 2. 输入向新 Visual Studio 订阅分配的电子邮件地址。 订阅者欢迎电子邮件中也标识了该地址。 如果未收到欢迎电子邮件，请检查垃圾邮件文件夹。
-3. 单击“继续”
+3. 单击“继续” 
 4. 将重定向到公司的登录页。
 5. 输入密码。
-6. 单击“登录”。
+6. 单击“登录”  。
 
 #### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
 
@@ -53,14 +53,14 @@ ms.locfileid: "62833923"
 
 #### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>借助 Microsoft 帐户 (MSA) 使用工作或学校帐户
 
-如果组织已有 Azure Active Directory，但你没有 Azure Active Directory 帐户，则可能需要利用登录过程中提供的“个人”选项。
+如果组织已有 Azure Active Directory，但你没有 Azure Active Directory 帐户，则可能需要利用登录过程中提供的“个人”选项。 
 
 1. 请转到[订阅者门户](https://my.visualstudio.com)
-2. 输入向新 Visual Studio 订阅分配的电子邮件地址。 订阅者“欢迎信”中也标识了该地址。 （如果未收到欢迎电子邮件，请检查垃圾邮件文件夹。）
-3. 单击“继续”
-4. 将重定向到“决策页”。  如果订阅被分配到与 Azure Active Directory (AAD) 租户关联的工作或学校帐户，请选择“工作或学校帐户”。 如果订阅与公司电子邮件地址相关联，但也已转换为个人 Microsoft 帐户 (MSA)，请选择“个人”
+2. 输入向新 Visual Studio 订阅分配的电子邮件地址。 订阅者“欢迎信”中也标识了该地址  。 （如果未收到欢迎电子邮件，请检查垃圾邮件文件夹。）
+3. 单击“继续” 
+4. 将重定向到“决策页”  。  如果订阅被分配到与 Azure Active Directory (AAD) 租户关联的工作或学校  帐户，请选择“工作或学校帐户”  。 如果订阅与公司  电子邮件地址相关联，但也已转换为个人  Microsoft 帐户 (MSA)，请选择“个人” 
 5. 输入密码
-6. 单击“登录”
+6. 单击“登录” 
 
 ## <a name="managing-multiple-subscriptions"></a>管理多个订阅
 
@@ -117,14 +117,20 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 个人资料中的联系人信息和首选项可以轻松更改。
 
 1. 在订阅者门户的右上角单击你的名字。
-2. 单击“编辑个人资料”按钮。
-3. 在“关于”选项卡上，可以更改姓名、电子邮件、国家/地区、个人资料图片和联系人首选项。 在“首选项”选项卡上，可以选择首选语言、日期和时间模式、时区，以及用户界面主题。
-4. 完成更改后，单击“保存”。
-5. 单击浏览器的“返回”按钮以返回到“权益”页。
+2. 单击“编辑个人资料”按钮  。
+3. 在“关于”选项卡上，可以更改姓名、电子邮件、国家/地区、个人资料图片和联系人首选项  。 在“首选项”选项卡上，可以选择首选语言、日期和时间模式、时区，以及用户界面主题。 
+4. 完成更改后，单击“保存”  。
+5. 单击浏览器的“返回”按钮以返回到“权益”页  。
 
    > [!div class="mx-imgBorder"]
    > ![编辑个人资料信息](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>设置通信首选项
+若想要收到关于你的订阅和权益的定期更新，其中包括每月 Visual Studio 订阅新闻稿，请选中 Visual Studio 个人资料中的“Visual Studio 订阅”框，来[更新首选项](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit)。 可以随时更改这些首选项，或取消订阅。 
+
+   > [!div class="mx-imgBorder"]
+   > ![设置首选项](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>将订阅链接到现有的 Azure DevOps Services 或 Azure 订阅
 
 如果使用个人 Microsoft 帐户 (MSA) 登录到订阅，并且拥有使用由 Azure 管理的工作或学校帐户的订阅（该订阅包含 Azure DevOps Services 或 Microsoft Azure），则可以链接这两个订阅。 这被称为“备用帐户”，借助此帐户，用户可以继续使用 MSA 登录到订阅，同时访问与学校或工作帐户相关联的现有 Azure、Azure DevOps Services 或 IDE 资源。
@@ -134,14 +140,14 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 添加备用帐户：
 
 1. 使用 Microsoft 帐户 (MSA) 登录到[订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)
-2. 单击“订阅”选项卡。
-3. 在“相关链接”下，选择“添加备用帐户”。
-4. 输入工作或学校帐户的电子邮件地址，然后单击“添加”。
+2. 单击“订阅”选项卡  。
+3. 在“相关链接”下，选择“添加备用帐户”   。
+4. 输入工作或学校帐户的电子邮件地址，然后单击“添加”  。
 
    > [!div class="mx-imgBorder"]
    > ![备用帐户](_img/manage-vs-subscriptions/alternate-account-resized.png)
 
-添加备用帐户后，就可随时通过单击“订阅”标签并在“相关链接”部分选择相应的选项来更新或删除该帐户。
+添加备用帐户后，就可随时通过单击“订阅”标签并在“相关链接”部分选择相应的选项来更新或删除该帐户   。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
