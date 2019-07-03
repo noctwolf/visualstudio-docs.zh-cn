@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745814"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160167"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -92,7 +92,7 @@ ms.locfileid: "66745814"
 
 - 使用最新框架版本的组件与面向早期版本的项目不兼容。
 
-   有关如何更改项目的目标框架版本的信息，请参阅[如何：面向某个框架版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。
+   有关如何更改项目的目标框架版本的信息，请参阅[框架目标概述](visual-studio-multi-targeting-overview.md)。
 
 - 使用 .NET Framework 4 的组件与面向 .NET Framework 4.5 的项目不兼容。
 

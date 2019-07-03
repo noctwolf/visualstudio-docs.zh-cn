@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976240"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328831"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-已针对[版本 16.1](/visualstudio/releases/2019/release-notes/) 进行更新
+已针对[版本 16.1](/visualstudio/releases/2019/release-notes/) 进行更新 
 
 >[!div class="button"]
 >[下载 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -33,9 +33,9 @@ ms.locfileid: "65976240"
 
 以下是对新增功能的简要概括：
 
-* **[开发](#develop)**：通过改进的性能、即时代码清理和更好的搜索结果来保持专注和高效。
-* **[协作](#collaborate)**：在 Visual Studio 中，通过 Git 优先工作流、实时编辑和调试，以及代码评审，即可尽情享受自然协作。
-* **[调试](#debug)**：突出显示并导航到特定值、优化内存使用，并对应用程序的执行进行自动快照。
+* **[开发](#develop)** ：通过改进的性能、即时代码清理和更好的搜索结果来保持专注和高效。
+* **[协作](#collaborate)** ：在 Visual Studio 中，通过 Git 优先工作流、实时编辑和调试，以及代码评审，即可尽情享受自然协作。
+* **[调试](#debug)** ：突出显示并导航到特定值、优化内存使用，并对应用程序的执行进行自动快照。
 
 有关此版本中所有新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。
 
@@ -59,7 +59,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
    ![Visual Studio 2019 中的重构体验动画](media/vs-2019/refactorings.gif)
 
-只需通过按 Ctrl+. 并选择要采取的操作调用重构。
+只需通过按 Ctrl+.  并选择要采取的操作调用重构。
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -74,7 +74,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 * 发现难以察觉的代码问题
 * 将关注点集中到重要领域，从而专注代码评审
 
-在首次预览作为 Visual Studio 扩展的 IntelliCode 时，我们最初仅支持 C#。 现在，在 16.1 的新增功能中，我们添加了对 C# 和 XAML“in-the-box”的支持。 （但是，对 C++ 和 TypeScript/JavaScript 的支持仍处于预览状态。）
+在首次预览作为 Visual Studio 扩展的 IntelliCode 时，我们最初仅支持 C#。 现在，在 16.1 的新增功能中，我们添加了对 C# 和 XAML“in-the-box”的支持  。 （但是，对 C++ 和 TypeScript/JavaScript 的支持仍处于预览状态。）
 
 如果你使用的是 C#，我们还添加了在你自己的代码上训练自定义模型的功能。
 
@@ -90,7 +90,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 此外可以将修复程序集合另存为配置文件。 例如，如果你有一小组在编写代码时经常应用的目标修复程序，然后在进行代码评审之前应用另一组全面的修复程序，则可以配置配置文件来处理这些不同的任务。
 
-   ![Visual Studio 2019 中新代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile-configure.png)
+   ![在 Visual Studio 2019 中配置代码清理控件的屏幕截图](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>按监视器感知 (PMA) 呈现
 

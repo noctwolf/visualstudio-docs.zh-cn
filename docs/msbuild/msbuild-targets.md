@@ -1,6 +1,6 @@
 ---
 title: MSBuild 目标 | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -10,17 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c927e30475223a00548ea6344ca7a41fbac3c1e2
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004580"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141157"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
+
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。
 
 ## <a name="declare-targets-in-the-project-file"></a>在项目文件中声明目标
+
  目标是通过 [Target](../msbuild/target-element-msbuild.md) 元素在项目文件中声明的。 例如，以下 XML 创建一个名为 Construct 的目标，然后，该目标通过 Compile 项类型调用 Csc 任务。
 
 ```xml
@@ -42,8 +44,13 @@ ms.locfileid: "63004580"
 
  如果 AfterBuild 执行，则仅显示“第二个匹配项”。
 
+ MSBuild 依赖于导入顺序，目标的最后一个定义是使用的定义。
+
 ## <a name="target-build-order"></a>目标生成顺序
- 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可以通过多种方法指定目标的运行顺序。
+
+ 如果目标的输入取决于另一目标的输出，那么必须将目标排序。
+ 
+ 可以通过多种方法指定目标的运行顺序。
 
 - 初始目标
 
@@ -60,6 +67,7 @@ ms.locfileid: "63004580"
 有关目标生成顺序的详细信息，请参阅[目标生成顺序](../msbuild/target-build-order.md)。
 
 ## <a name="target-batching"></a>目标批处理
+
 目标元素可能具有 `Outputs` 特性，该特性指定 %(\<Metadata>) 形式的元数据。 如果是这样，MSBuild 将针对每个唯一元数据值运行一次目标，对具有该元数据值的项进行分组或“批处理”。 例如，应用于对象的
 
 ```xml
@@ -91,10 +99,12 @@ Reference: 4.0
  实际生成中很少使用目标批处理。 任务批处理更为常见。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。
 
 ## <a name="incremental-builds"></a>增量生成
+
  增量生成是经过优化的生成。优化后，如果目标所含输出文件相对于其相应的输入文件保持为最新，则系统不会执行该目标。 目标元素既可以具有 `Inputs` 特性（指示目标预计作为输入的项），也可以具有 `Outputs` 特性（指示目标作为输出所生成的项）。
 
  如果所有输出项都是最新的，则 MSBuild 将跳过目标，这可以显著加快生成速度。 这称为目标的增量生成。 如果只有部分文件为最新，则 MSBuild 将执行不包含最新项的目标。 这称为目标的部分增量生成。 有关详细信息，请参阅[增量生成](../msbuild/incremental-builds.md)。
 
 ## <a name="see-also"></a>请参阅
+
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [如何：在多个项目文件中使用同一目标](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

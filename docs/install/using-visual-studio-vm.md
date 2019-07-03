@@ -2,7 +2,7 @@
 title: 在 Azure 虚拟机上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
-ms.date: 05/23/2019
+ms.date: 06/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c5be3874271ad62fcbf79437c2efd9cec56f28b5
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: bc73c2d280f22c82f0efe76d9e5b1d343e386409
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66210796"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365264"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
@@ -36,10 +36,10 @@ ms.locfileid: "66210796"
 
 | 发行版本                                                                                                                                          | 版本              |    产品版本    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019：最新（版本 16.1）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise，Community | 版本 16.1.0    |
-| [Visual Studio 2019：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise，Community | 版本 16.0.4    |
-| [Visual Studio 2017：最新（版本 15.9）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise，Community | 版本 15.9.12   |
-| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise，Community | 版本 15.0.23   |
+| [Visual Studio 2019：最新（版本 16.1）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise，Community | 版本 16.1.3    |
+| [Visual Studio 2019：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise，Community | 版本 16.0.5    |
+| [Visual Studio 2017：最新（版本 15.9）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise，Community | 版本 15.9.13   |
+| [Visual Studio 2017：RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise，Community | 版本 15.0.24   |
 | [Visual Studio 2015：最新（更新 3）](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise，Community | 版本 14.0.25431.01 |
 
 > [!NOTE]
@@ -101,11 +101,11 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 
 开发环境的范围非常大，构建更为复杂的环境将产生高昂的成本。 无论环境配置如何，都可以将配置的 VM 保存或捕获为“基础映像”，以供将来使用或由团队其他成员使用。 然后，在启动新的 VM 时，从基础映像而不是从 Azure 市场映像对其进行预配。
 
-概要：使用系统准备工具 (Sysprep) 并关闭正在运行的 VM，然后通过 Azure 门户的 UI 来捕获（图 1）VM 作为映像。 Azure 将在你所选的存储帐户中保存包含映像的 `.vhd` 文件。 然后，新映像将在资源订阅列表中显示为映像资源。
+概要：使用系统准备工具 (Sysprep) 并关闭正在运行的 VM，然后通过 Azure 门户的 UI 来捕获（图 1）VM 作为映像  。 Azure 将在你所选的存储帐户中保存包含映像的 `.vhd` 文件。 然后，新映像将在资源订阅列表中显示为映像资源。
 
 ![通过 Azure 门户 UI 捕获映像](media/capture-vm.png)
 
-（图 1）通过 Azure 门户 UI 捕获映像。
+ （图 1）通过 Azure 门户 UI 捕获映像。
 
 有关详细信息，请参阅[在 Azure 中创建通用化 VM 的托管映像](/azure/virtual-machines/windows/capture-image-resource)。
 
@@ -115,7 +115,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 > [!NOTE]
 > 存储映像仍会产生一定的费用，但与从头开始为需要 VM 的每个团队成员重新构建 VM 所产生的开销成本相比，增加的这点成本就无关紧要了。 例如，每月创建和存储 127 GB 的映像供整个团队重复使用需要几美元。 但是，与每个员工投入数小时构建和验证正确配置的开发框供其个人使用相比，这些成本微不足道。
 
-此外，开发任务或技术可能需要更大的规模，例如各种开发配置和多个计算机配置。 可以使用 Azure 开发测试实验室来创建可自动构建“黄金映像”的方案。 还可以使用开发测试实验室针对团队运行的 VM 管理策略。 [使用适用于开发人员的 Azure DevTest 实验室](/azure/devtest-lab/devtest-lab-developer-lab)是详细了解 Azure DevTest 实验室的最佳来源。
+此外，开发任务或技术可能需要更大的规模，例如各种开发配置和多个计算机配置。 可以使用 Azure 开发测试实验室来创建可自动构建“黄金映像”的方案  。 还可以使用开发测试实验室针对团队运行的 VM 管理策略。 [使用适用于开发人员的 Azure DevTest 实验室](/azure/devtest-lab/devtest-lab-developer-lab)是详细了解 Azure DevTest 实验室的最佳来源。
 
 ## <a name="next-steps"></a>后续步骤
 

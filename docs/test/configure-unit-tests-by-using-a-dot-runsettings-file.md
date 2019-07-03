@@ -1,36 +1,38 @@
 ---
 title: 使用 .runsettings 文件配置单元测试
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746559"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160198"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试 
 
 通过使用 .runsettings 文件，可配置 Visual Studio 中的单元测试  。 例如，可更改正在运行测试的 .NET 版本、测试结果的目录，或者在测试运行期间收集的数据。
 
-运行设置文件是可选的。 如果不需要执行任何特殊配置，则无需 .runsettings 文件  。 .runsettings 文件最常见的用途是自定义[代码覆盖率分析](../test/customizing-code-coverage-analysis.md)  。
+运行设置文件是可选的。 如果不需要执行任何特殊配置，则无需 .runsettings 文件  。 .runsettings 文件常见的用途是自定义[代码覆盖率分析](../test/customizing-code-coverage-analysis.md)  。
 
 ## <a name="specify-a-run-settings-file"></a>指定运行设置文件
 
 运行设置文件可以用来在 IDE 中或者在使用 Azure Test Plans 或 Team Foundation Server (TFS) 的[生成工作流](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)中，配置从[命令行](vstest-console-options.md)运行的测试。
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>在 IDE 中指定运行设置文件
+### <a name="ide"></a>IDE
 
-选择“测试” > “测试设置” > “选择测试设置文件”，并选择 .runsettings 文件     。 该文件将显示在“测试设置”菜单上，你可以选择或取消选择它  。 选择后，每当选择“分析代码覆盖率”时，都会应用运行设置文件  。
+若要在 IDE 中指定一个运行设置文件，选择“测试” > “测试设置” > “选择测试设置文件”，然后选择 .runsettings 文件     。
 
 ![在 Visual Studio 中选择测试设置文件菜单](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>在命令行指定运行设置文件
+该文件将显示在“测试设置”菜单上，你可以选择或取消选择它  。 选择后，每当选择“分析代码覆盖率”时，都会应用运行设置文件  。
+
+### <a name="command-line"></a>命令行
 
 若要从命令行运行测试，请使用 vstest.console.exe 并使用 /Settings 参数指定设置文件   。
 
@@ -52,6 +54,12 @@ ms.locfileid: "66746559"
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   or
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 有关详细信息，请参阅 [VSTest.Console.exe 命令行选项](vstest-console-options.md)。
@@ -174,7 +182,7 @@ RunConfiguration 元素可以包含下列元素  ：
 |节点|默认|值|
 |-|-|-|
 |**ResultsDirectory**||在其中放置测试结果的目录。|
-|**TargetFrameworkVersion**|Framework40|Framework35、Framework40、Framework45<br /><br />此设置指定使用哪一版本的单元测试框架来查找并执行测试。 它可能与你在单元测试项目的生成属性中指定的 .NET 平台的版本不同。|
+|**TargetFrameworkVersion**|Framework40|适用于 .NET Core 源的 `FrameworkCore10`、适用于基于 UWP 源的 `FrameworkUap10`、适用于 .NET Framework 4.5 及更高版本的 `Framework45`、适用于 .NET Framework 4.0 的 `Framework40` 以及适用于 .NET Framework 3.5 的 `Framework35`。<br /><br />此设置指定使用哪一版本的单元测试框架来查找并执行测试。 它可能与你在单元测试项目的生成属性中指定的 .NET 平台的版本不同。<br /><br />如果省略 .runsettings  文件中的 `TargetFrameworkVersion` 元素，平台会基于生成的二进制文件自动确定框架版本。|
 |**TargetPlatform**|x86|x86、x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false、true|
 |**TestAdaptersPaths**||TestAdapters 所在目录的一个或多个路径|
@@ -263,5 +271,6 @@ public void HomePageTest()
 
 ## <a name="see-also"></a>请参阅
 
+- [配置测试运行](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)
 - [Visual Studio 测试任务 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

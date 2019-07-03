@@ -7,12 +7,12 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 description: 了解有关 Visual Studio 订阅中包含的技术支持权益
 searchscope: VS Subscription
-ms.openlocfilehash: 50b6245be908bffc0d2abb9db7f74ed14f878224
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94c8ac818fbdee17c75c508f509e93b50c3871ec
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427476"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033111"
 ---
 # <a name="technical-support-benefits-included-with-visual-studio-subscriptions"></a>Visual Studio 订阅中的技术支持权益
 
@@ -29,6 +29,6 @@ ms.locfileid: "62427476"
 
 - [技术支持](vs-tech-support.md)：通过专家协助解决非生产环境中的中断修复问题。
 
-- [优先支持](vs-priority-support.md)：在选定的论坛列表中提问。 如果开发人员社区在两天内没有回复，Microsoft 将做出响应。 （仅支持使用 Microsoft 帐户。）
+- [开发人员社区论坛](vs-priority-support.md)：访问整个开发人员网络论坛。 
 
 - [接待聊天室](vs-concierge-chat.md)：与我们聊天交流，获取有关查看技术文档和产品信息，或有关使用订阅权益的帮助。

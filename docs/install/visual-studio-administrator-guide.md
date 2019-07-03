@@ -2,7 +2,7 @@
 title: Visual Studio 管理员指南
 titleSuffix: ''
 description: 详细了解如何在企业环境中部署 Visual Studio。
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037496"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328784"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -40,7 +40,7 @@ ms.locfileid: "66037496"
 
 * 确定服务需求。
 
-  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)页面的“Enterprise 和 Professional 客户的支持选项”部分。
+  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)页面的“Enterprise 和 Professional 客户的支持选项”部分以及[如何：在维修基线上更新 Visual Studio](update-servicing-baseline.md) 页面。
 
   如果打算应用维护更新及累积功能更新，可选择最新的位数。
 
@@ -62,7 +62,7 @@ ms.locfileid: "66037496"
 
 * 确定服务需求。
 
-  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)页面的“对较旧版本的 Visual Studio 的支持”部分。
+  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)页面的“对较旧版本的 Visual Studio 的支持”部分以及[如何：在维修基线上更新 Visual Studio](update-servicing-baseline.md) 页面。
 
   如果打算应用维护更新及累积功能更新，可选择最新的位数。
 

@@ -7,40 +7,42 @@ ms.date: 02/21/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: a4a4f2f4fd4ce6cd88d11979a21e4e9184adfca8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c692cf8907fcd232b7ba442cea351664bc8dd407
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988470"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043595"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>如何：设置多个启动项目
+# <a name="set-multiple-startup-projects"></a>设置多个启动项目
 
-通过 Visual Studio for Mac 可指定在调试或运行解决方案时启动多个项目。
+通过 Visual Studio for Mac 可指定在调试或运行解决方案时应启动多个项目。
 
 ## <a name="to-set-multiple-startup-projects"></a>设置多个启动项目
 
 1. 在“Solution Pad”中，选择解决方案（最高层节点）。
 
-2. 选择解决方案节点的上下文（右键单击）菜单，然后选择“设置启动项目...”。
+2. 右键单击解决方案节点，然后选择“设置启动项目”  ：
 
-   ![设置启动项目上下文菜单](media/startup-proj-ctx-menu.png)
+   ![选择设置启动项目](media/startup-proj-ctx-menu.png)
 
-3. “创建解决方案运行配置”对话框随即显示。 此对话框中，将为解决方案创建新的命名解决方案运行配置。 可以根据喜好命名，默认名称为 `Multiple Projects`。
+3. 随即打开“创建解决方案运行配置”对话框  。 通过此对话框，可为解决方案创建新的命名解决方案运行配置。 可以使用任何喜欢的名称。 默认名称为 `Multiple Projects`。
 
    ![“创建解决方案运行配置”对话框](media/create-sln-run-config.png)
 
-4. 单击“创建运行配置”。 “解决方案选项”对话框将与所选的新解决方案运行配置一起打开。
+4. 选择“创建运行配置”  。 “解决方案选项”对话框将与所选的新“解决方案运行配置”一起打开  ：
 
    ![“解决方案选项”对话框](media/sln-options-run-config-multi-projects.png)
 
-5. 选择从 Visual Studio for Mac 调试或运行应用程序时要启动的项目。
+5. 选择从 Visual Studio for Mac 调试或运行应用时要启动的项目：
 
-   ![带有已配置的运行配置的解决方案选项对话框](media/sln-options-run-config-multi-projects-configured.png)
+   ![包含所选项目的“解决方案选项”对话框](media/sln-options-run-config-multi-projects-configured.png)
 
-6. 单击 **“确定”**。 将关闭该对话框，并且新的解决方案运行配置将设置为可用的运行配置。
+6. 选择“确定”  。 新的“解决方案运行配置”将设置为可用的运行配置：
 
-   ![配置为在调试或运行时启动多个项目的解决方案](media/startup-project-configured.png)两个项目都配置为启动，因为它们在 Solution Pad 中都以粗体显示。 在工具栏中，将新的运行配置配置为当前的解决方案运行配置。
+   ![将带有多个项目的解决方案配置为在调试或运行时启动](media/startup-project-configured.png)
+
+   可以看到两个项目配置为启动，因为两个项目在 Solution Pad 中都是粗体  。 在工具栏中，将新的运行配置设置为当前的“解决方案运行配置”。
 
 ## <a name="next-steps"></a>后续步骤
 
