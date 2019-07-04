@@ -3,21 +3,23 @@ title: Team Foundation 版本控制 (TFVC)
 description: 使用 Team Foundation 版本控制 (TFVC) 从 Visual Studio for Mac 连接到 Team Foundation Server/Azure DevOps。
 author: conceptdev
 ms.author: crdun
-ms.date: 04/28/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746337"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398989"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制
 
 > [!NOTE]
 > 为了在 macOS 上获得最佳版本控制体验，建议使用 Git 而不是 Team Foundation 版本控制 (TFVC)。 Git 在 Visual Studio for Mac 中受支持，并且是托管在 Team Foundation Server (TFS)/Azure DevOps 中的存储库的默认选项。 要了解有关在 TFS/Azure DevOps 中使用 Git 的详细信息，请参阅[设置 Git 存储库](/visualstudio/mac/set-up-git-repository)一文。
+>
+> 如果您以前使用过 Visual Studio for Mac 的 TFVC 扩展的预览版本，则在升级到 Visual Studio 2019 for Mac 时，它不再受支持。
 
 Azure Repos 提供了两种版本控制模型：[Git](/azure/devops/repos/git/?view=azure-devops)，它是分布式版本控制系统，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC)，它是集中式版本控制系统。
 
@@ -110,6 +112,8 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 > [!NOTE]
 > 为了在 macOS 上获得最佳版本控制体验，建议使用 Git 而不是 Team Foundation 版本控制 (TFVC)。 Git 在 Visual Studio for Mac 中受支持，并且是托管在 Team Foundation Server (TFS)/Azure DevOps 中的存储库的默认选项。 要了解有关在 TFS/Azure DevOps 中使用 Git 的详细信息，请参阅[设置 Git 存储库](/visualstudio/mac/set-up-git-repository)一文。
+>
+> 如果您以前使用过 Visual Studio for Mac 的 TFVC 扩展的预览版本，则在升级到 Visual Studio 2019 for Mac 时，它不再受支持。
 
 在 Visual Studio for Mac 扩展库中，有一个 Team Foundation 版本控制扩展，它提供对连接到 TFVC 的有限支持。 该扩展不受支持，并且存在几个已知问题，因此在使用它时，体验可能会有所不同。
 

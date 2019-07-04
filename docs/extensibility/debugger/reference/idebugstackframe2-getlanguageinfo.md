@@ -15,14 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d220e3c1d9e7b5879d12ed31f6a3374e6c481fe3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0318f99d234309093717c9603ec1153e71d6d7f3
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352147"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559701"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
+
 获取与此堆栈帧关联的语言。
 
 ## <a name="syntax"></a>语法
@@ -42,26 +43,29 @@ int GetLanguageInfo ( 
 ```
 
 ## <a name="parameters"></a>参数
+
 `pbstrLanguage`\
 [out]返回的语言的实现与此堆栈帧关联的方法的名称。
 
 `pguidLanguage`\
 [out]返回`GUID`的语言。 有关[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]语言，例如，以下可返回：
 
--   `guidVBScriptLang`\
+- `guidVBScriptLang`\
 
--   `guidJScriptLang`\
+- `guidJScriptLang`\
 
--   `guidCPPLang`\
+- `guidCPPLang`\
 
--   `guidVBLang`\
+- `guidVBLang`\
 
--   `guidSQLLang`\
+- `guidSQLLang`\
 
--   `guidScriptLang`\
+- `guidScriptLang`\
 
 ## <a name="return-value"></a>返回值
+
  如果成功，则返回`S_OK`; 否则为返回错误代码。
 
 ## <a name="see-also"></a>请参阅
+
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
