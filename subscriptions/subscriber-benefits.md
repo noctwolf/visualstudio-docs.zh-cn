@@ -2,23 +2,24 @@
 title: Visual Studio 订阅 - 订阅者权益
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅中包含的权益
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427788"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493734"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
-Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  具体权益将取决于你所拥有的订阅类型。  为了给订阅者提供最大价值，所提供的权益会随着我们做出的调整定期变更，以专注于最新、最有用的技术、培训材料和可用的合作伙伴权益。
+Visual Studio 订阅（之前被称为 MSDN 订阅）提供最全面的一套资源，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署以及管理功能强大的应用程序。  具体权益将取决于你所拥有的订阅类型。  为了给订阅者提供最大价值，所提供的权益会随着我们做出的调整定期变更，以专注于最新、最有用的技术、培训材料和可用的合作伙伴权益。
 
-权益分为以下三类：
+
+在[订阅者门户](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:)中，权益分为以下三类：
 
 ## <a name="tools"></a>工具
 工具类别提供了一组种类丰富的权益，包括 [Visual Studio IDE](vs-ide-benefit.md)、[Azure DevOps Services](vs-azure-devops.md) 和 [Azure](vs-azure.md) 等核心权益。  根据订阅级别，你还会看到 Windows 和 Office 365 开发人员帐户、Visual Studio App Center，以及 WhiteSource Bolt 和 ModernRequirements 等合作伙伴提供的权益。
@@ -42,4 +43,4 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 > [!NOTE]
 > 你的订阅可能还附带软件下载权限。  有关下载的详细信息，包括订阅包含哪些下载，请访问 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
 
-有关在订阅中所包含权益的详细信息，请查看 [Visual Studio 定价页](https://visualstudio.microsoft.com/vs/pricing/)。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”主题。
+有关在订阅中所包含权益的详细信息，请查看 [Visual Studio 定价页](https://visualstudio.microsoft.com/vs/pricing/)。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”  主题。

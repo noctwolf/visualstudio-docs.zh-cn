@@ -2,64 +2,45 @@
 title: Visual Studio 订阅中的新增功能
 description: 了解可用于管理 Visual Studio 订阅的新功能和更新功能。
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259488"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465111"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 
-我们会经常更新订阅权益包以使其更加有用。 继续阅读，了解按季度排序的最新功能。
+我们会经常更新订阅权益包以使其更加有用。 我们还将对订阅者门户和订阅管理门户进行改进，竭尽所能为你提供最佳体验。  继续阅读，了解按季度排序的最新功能和更新。
 
-## <a name="2018-q2-april-june"></a>2018 年第 2 季度（4 月 - 6 月）
+## <a name="2019-q1-january-march"></a>2019 年第 1 季度（1 月 - 3 月）
 
-以下是对第 2 季度新增功能的快速回顾。
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>已将最大使用率添加到[订阅管理门户](https://manage.visualstuido.com)
+Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配的订阅数量，并确定在过去一年和整个协议期间分配的每个级别的峰值订阅数。 这可以帮助你了解当前的订阅使用情况和未来的购买计划。 
 
-### <a name="cloud-administrators"></a>云管理员
+  > [!div class="mx-imgBorder"]
+  > ![最大用量菜单](_img/maximum-usage/maximum-usage-menu.png)
 
-我们添加了面向云管理员的新功能，可简化云订阅管理：
+你还可以查看分配的运行历史记录，包括购买和分配。   
 
-* [**批量分配**](/visualstudio/subscriptions/assign-license#bulk-assignments)：批量添加和上传多个订阅者。
+有关详细信息，请阅读[最大使用率](maximum-usage.md)一文。 
 
-  ![使用“批量添加”按钮添加多个用户](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>2019 年第 2 季度（4 月 - 6 月）
 
-* [**导出**](/visualstudio/subscriptions/exporting-subscriptions)：导出用户列表和分配详情。 希望跟踪分配和到期日期时，此类列表非常有用。
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>包含 GitHub Enterprise 订阅的 Visual Studio
+在五月的 //build 大会上，Microsoft 宣布了企业协议客户现可购买包括 GitHub Enterprise 在内的 Visual Studio 订阅。  这是一种以较低价格同时获得 Visual Studio 订阅和 GitHub Enterprise 的简单方法。  
 
-   ![使用“导出”按钮将订阅者列表导出到 Excel 中](media/export-subscriber-list-to-csv.png)
+GitHub Enterprise 随 Visual Studio Enterprise 订阅和 Visual Studio Professional 订阅（通过企业协议获得）一起提供。 还有一个“升级”优惠，即使你的企业协议未到续订日期，你也可以添加 GitHub Enterprise。
 
-* [**批量编辑**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit)：批量编辑多个订阅者的订阅信息。
+要详细了解相关权益、选项和定价，请访问 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 。 
 
-  ![使用“批量编辑”按钮编辑多个用户](media/bulk-edit-multiple-subscribers.png)
-
-* 了解[**添加订阅**体验](assign-license.md)中提供的新字段：
-
-  * **通知电子邮件**：如果所在组织不使用 Azure AD，且你希望使用登录电子邮件以外的其他电子邮件发送通知，则可以添加该电子邮件。
-
-    ![添加新通知电子邮件地址](media/add-new-subscriber-notification-email.png)
-
-  * **通信偏好**：选择要在发送分配电子邮件时使用的语言。
-
-    ![更改要在发送通知电子邮件时使用的语言](media/change-subscriber-communication-preference.png)
-
-  * **添加参考**：向你管理的订阅添加参考说明。
-
-    ![向每个订阅添加自己的引用说明](media/add-subscriber-reference-notes.png)
-
-* [**重新发送分配电子邮件**](resend-assignment-email.md)：向订阅者列表中的任何用户重新发送通知邮件，发送次数不限。
-
-  ![随时向任何用户或多个用户重新发送激活电子邮件](media/resend-subscriber-activation-emails.png)
-
-* [**筛选器**](search-license.md)：组织和筛选订阅者数据，以最大程度地满足需求。
-
-  ![基于可用字段筛选订阅者数据](media/filter-subscriber-data.png)
+如果你的组织已有包含 GitHub Enterprise 订阅的 Visual Studio，则你可以在我们的文档中了解有关[管理包含 GitHub Enterprise 的 Visual Studio ](assign-github.md)的更多信息。  
 
 以上就是目前的更新！
 

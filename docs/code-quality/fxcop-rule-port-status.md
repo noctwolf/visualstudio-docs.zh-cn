@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038643"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559672"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 规则端口状态
 
@@ -67,8 +67,8 @@ ms.locfileid: "66038643"
 [CA1063](ca1063-implement-idisposable-correctly.md) | 正确实现 IDisposable
 [CA1064](ca1064-exceptions-should-be-public.md) | 异常应该是公共的
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | 不要在意外的位置引发异常
-CA1066 | 类型{0}应实现 IEquatable<T>因为它会覆盖 Equals
-CA1067 | 实现 IEquatable 时重写 Object.Equals(object)<T>
+CA1066 | 类型{0}应实现 IEquatable\<T > 因为它会覆盖 Equals
+CA1067 | 实现 IEquatable 时重写 Object.Equals(object)\<T >
 CA1068 | CancellationToken 参数必须放在最后
 CA1200 | 避免使用带前缀的 cref 标记
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | 请不要将文本作为本地化参数传递
