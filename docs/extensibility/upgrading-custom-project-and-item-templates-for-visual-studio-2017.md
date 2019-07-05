@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316341"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559757"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义项目和项模板的 Visual Studio 2017
 
@@ -180,9 +180,9 @@ ms.locfileid: "66316341"
 
 某些基于 MSI 的扩展插件将模板部署到常见的模板位置，例如在以下目录：
 
-- **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/项模板 >**
+- **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/项模板\>**
 
-- **\<Visual Studio 安装目录 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 项目/项模板 >**
+- **\<Visual Studio 安装目录 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 项目/项模板\>**
 
 如果你的扩展执行的基于 MSI 的部署，需要手动生成模板清单，并确保它包含在扩展安装程序中。 比较上面列出的.vstman 示例和[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
