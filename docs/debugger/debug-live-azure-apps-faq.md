@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255990"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586844"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>在 Visual Studio 中进行快照调试的常见问答解答
 
@@ -70,92 +70,91 @@ Snapshot Debugger 必须打开一组端口才能调试在 Azure 中获取的快�
 
 对于虚拟机/虚拟机规模集，如下所示删除远程调试器扩展，证书，key Vault 和入站 NAT 池：
 
-1. 删除远程调试器扩展  
+1. 删除远程调试器扩展
 
-   有几种方法，若要禁用远程调试器的虚拟机和虚拟机规模集：  
+   有几种方法，若要禁用远程调试器的虚拟机和虚拟机规模集：
 
-      - 禁用通过云资源管理器的远程调试器  
+      - 禁用通过云资源管理器的远程调试器
 
-         - 云资源管理器 > 虚拟机资源 > 禁用调试 （禁用调试不存在的虚拟机规模集上云资源管理器）。  
+         - 云资源管理器 > 虚拟机资源 > 禁用调试 （禁用调试不存在的虚拟机规模集上云资源管理器）。
 
+      - 禁用远程调试器使用 PowerShell 脚本/Cmdlet
 
-      - 禁用远程调试器使用 PowerShell 脚本/Cmdlet  
+         为虚拟机：
 
-         为虚拟机：  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         虚拟机规模集：  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         虚拟机规模集：
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - 禁用远程调试器通过 Azure 门户
-         - Azure 门户 > 你的虚拟机/虚拟机规模集资源边栏选项卡 > 扩展  
-         - 卸载 Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger 扩展  
-
+         - Azure 门户 > 你的虚拟机/虚拟机规模集资源边栏选项卡 > 扩展
+         - 卸载 Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger 扩展
 
          > [!NOTE]
          > 虚拟机规模集-在门户不允许删除 DebuggerListener 端口。 你将需要使用 Azure PowerShell。 有关详细信息，请参见以下内容。
-  
+
 2. 删除证书和 Azure 密钥保管库
 
-   在安装适用于虚拟机或虚拟机规模集的远程调试器扩展时，会创建客户端和服务器证书以与客户端身份验证与 Azure 虚拟机/虚拟机规模集资源。  
+   在安装适用于虚拟机或虚拟机规模集的远程调试器扩展时，会创建客户端和服务器证书以与客户端身份验证与 Azure 虚拟机/虚拟机规模集资源。
 
-   - 客户端证书  
+   - 客户端证书
 
-      此证书是自签名的证书位于 Cert: / CurrentUser/My /  
+      此证书是自签名的证书位于 Cert: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       若要从计算机中删除此证书的一种方法是通过 PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - 服务器证书
-      - 为到 Azure 密钥保管库机密部署相应的服务器证书指纹。 VS 将尝试查找或前缀 MSVSAZ * 中对应于虚拟机的区域来创建密钥保管库或虚拟机规模集资源。 所有虚拟机或虚拟机都规模集部署到该区域的资源因此将共享同一密钥保管库。  
-      - 若要删除的服务器证书指纹机密，请转到 Azure 门户和承载所需的资源的同一区域中查找 MSVSAZ * 密钥保管库。 删除机密应标为 `remotedebugcert<<ResourceName>>`  
-      - 此外需要从通过 PowerShell 所需的资源中删除服务器机密。  
+      - 为到 Azure 密钥保管库机密部署相应的服务器证书指纹。 VS 将尝试查找或前缀 MSVSAZ * 中对应于虚拟机的区域来创建密钥保管库或虚拟机规模集资源。 所有虚拟机或虚拟机都规模集部署到该区域的资源因此将共享同一密钥保管库。
+      - 若要删除的服务器证书指纹机密，请转到 Azure 门户和承载所需的资源的同一区域中查找 MSVSAZ * 密钥保管库。 删除机密应标为 `remotedebugcert<<ResourceName>>`
+      - 此外需要从通过 PowerShell 所需的资源中删除服务器机密。
 
-      对于虚拟机：  
+      对于虚拟机：
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      虚拟机规模集：  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. 请删除所有 DebuggerListener 入站 NAT 池 （虚拟机规模集仅）  
+      虚拟机规模集：
 
-   远程调试器引入了 DebuggerListener 应用于规模集的负载均衡器入站 NAT 池。  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. 请删除所有 DebuggerListener 入站 NAT 池 （虚拟机规模集仅）
+
+   远程调试器引入了 DebuggerListener 应用于规模集的负载均衡器入站 NAT 池。
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ Snapshot Debugger 必须打开一组端口才能调试在 Azure 中获取的快�
 为应用服务：
 1. 为应用服务通过 Azure 门户中禁用快照调试程序。
 2. Azure 门户 > 应用程序服务资源边栏选项卡 >*应用程序设置*
-3. 删除在 Azure 门户中的以下应用设置并保存所做的更改。 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. 删除在 Azure 门户中的以下应用设置并保存所做的更改。
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > 对应用程序设置的任何更改将应用程序重新启动。 有关应用程序设置的详细信息，请参阅[Azure 门户中配置应用服务应用](/azure/app-service/web-sites-configure)。
+   > [!WARNING]
+   > 对应用程序设置的任何更改将应用程序重新启动。 有关应用程序设置的详细信息，请参阅[Azure 门户中配置应用服务应用](/azure/app-service/web-sites-configure)。
 
 适用于 AKS:
 1. 更新 Dockerfile 来删除相应部分[Docker 映像上的 Visual Studio 快照调试器](https://github.com/Microsoft/vssnapshotdebugger-docker)。
@@ -184,16 +183,18 @@ Snapshot Debugger 必须打开一组端口才能调试在 Azure 中获取的快�
 
 - 中的 PowerShell Cmdlet [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    虚拟机：
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    虚拟机规模集：
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   虚拟机：
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   虚拟机规模集：
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>请参阅
 
