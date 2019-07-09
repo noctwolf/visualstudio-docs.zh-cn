@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50e9093ded8aafaed93f6a5063631108cb2a9a89
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961919"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624163"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>为表设计器构造筛选字符串
 ## <a name="overview"></a>概述
 要筛选 Visual Studio **表设计器**中显示在 Azure 表中的数据，可以构造一个筛选器字符串并将其输入到筛选器字段中。 筛选器字符串语法由 WCF 数据服务进行定义，与 SQL WHERE 子句类似，但通过 HTTP 请求发送给表服务。 **表设计器**会处理正确的编码，因此，要筛选所需的属性值，只需要在筛选器字段中输入属性名、比较运算符、条件值以及可选的布尔运算符。 不需要像构造 URL 以通过[存储服务 REST API 参考](http://go.microsoft.com/fwlink/p/?LinkId=400447)来查询表时那样包括 $filter 查询选项。
 
-WCF 数据服务基于[开放数据协议](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData)。 有关筛选器系统查询选项 (**$filter**) 的详细信息，请参阅 [OData URI Conventions specification](http://go.microsoft.com/fwlink/p/?LinkId=214806)（OData URI 约定规范）。
+WCF 数据服务基于[开放数据协议](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData)。 有关筛选器系统查询选项 ( **$filter**) 的详细信息，请参阅 [OData URI Conventions specification](http://go.microsoft.com/fwlink/p/?LinkId=214806)（OData URI 约定规范）。
 
 ## <a name="comparison-operators"></a>比较运算符
 所有属性类型都支持以下逻辑运算符：
@@ -50,45 +50,63 @@ WCF 数据服务基于[开放数据协议](http://go.microsoft.com/fwlink/p/?Lin
 
 以下示例对 **PartitionKey** 和 **RowKey** 属性进行筛选；也可以将其他非键属性添加到筛选器字符串中：
 
-    PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
+PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
 
 可以用圆括号将每个筛选器表达式括起来，但这不是必需的：
 
-    (PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
+(PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
 
 请注意，表服务不支持通配符查询，并且表设计器中也不支持这些查询。 但是，可以通过对所需前缀使用比较运算符来执行前缀匹配。 下面的示例返回 LastName 属性以字母“A”开头的实体：
 
-    LastName ge 'A' and LastName lt 'B'
+```
+LastName ge 'A' and LastName lt 'B'
+```
 
 ## <a name="filtering-on-numeric-properties"></a>针对数值属性进行筛选
 若要对整数或浮点数进行筛选，请指定不带引号的数字。
 
 此示例将返回 Age 属性值大于 30 的所有实体：
 
-    Age gt 30
+```
+Age gt 30
+```
 
 此示例将返回 AmountDue 属性值小于或等于 100.25 的所有实体：
 
-    AmountDue le 100.25
+```
+AmountDue le 100.25
+```
 
 ## <a name="filtering-on-boolean-properties"></a>针对布尔值属性进行筛选
 若要对布尔值进行筛选，请指定 **true** 或 **false**（不带引号）。
 
 以下示例将返回 IsActive 属性设置为 **true** 的所有实体：
 
-    IsActive eq true
+```
+IsActive eq true
+```
 
 也可以在不使用逻辑运算符的情况下编写此筛选器表达式。 在以下示例中，表服务还将返回 IsActive 为 **true** 的所有实体：
 
-    IsActive
+```
+IsActive
+```
 
 若要返回 IsActive 为 false 的所有实体，可以使用 not 运算符：
 
-    not IsActive
+```
+not IsActive
+```
 
 ## <a name="filtering-on-datetime-properties"></a>针对日期时间属性进行筛选
 若要对日期时间值进行筛选，请指定 **datetime** 关键字，后接单引号括起来的日期/时间常量。 日期/时间常量必须采用组合的 UTC 格式，如 [Formatting DateTime Property Values](http://go.microsoft.com/fwlink/p/?LinkId=400449)（设置 DateTime 属性值格式）中所述。
 
 以下示例将返回 CustomerSince 属性等于 2008-07-10 的实体：
 
-    CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
+CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```

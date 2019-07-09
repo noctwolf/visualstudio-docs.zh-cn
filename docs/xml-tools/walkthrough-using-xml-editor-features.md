@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808487"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624199"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>演练：使用 XML 编辑器功能
 
@@ -30,7 +30,7 @@ ms.locfileid: "62808487"
 
      新文件将在编辑器中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8">`。
 
-3. 在文档属性窗口中，单击浏览按钮 (**...**) 上**架构**字段。
+3. 在文档属性窗口中，单击浏览按钮 ( **...** ) 上**架构**字段。
 
      **XSD 架构**显示对话框。
 
@@ -40,7 +40,7 @@ ms.locfileid: "62808487"
 
 5. 选择*hireDate.xsd*文件，并单击**打开**。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
      现在，XML 架构已与 XML 文档关联。 XML 架构用于验证文档。 智能感知还使用该架构来填充有效元素的成员列表。
 
@@ -58,7 +58,7 @@ ms.locfileid: "62808487"
 
     - **员工**添加根元素。
 
-2. 选择 **< ！-** 若要添加注释节点，然后按**Enter**。
+2. 选择 **&lt;！-** 若要添加注释节点，然后按**Enter**。
 
      编辑器将插入注释结束标记，并将光标置于开始注释标记和结束注释标记之间。
 
@@ -70,7 +70,7 @@ ms.locfileid: "62808487"
 
 5. 键入 `>` 以结束该标记。
 
-6. 编辑器将添加结束标记。 添加的结束标记使用波浪形下划线指示验证错误。 **工具提示**显示消息：**元素 employee 具有不完整的内容。预期 'ID'**。
+6. 编辑器将添加结束标记。 添加的结束标记使用波浪形下划线指示验证错误。 **工具提示**显示消息：**元素 employee 具有不完整的内容。预期 'ID'** 。
 
 7. 类型`<`，然后选择**ID**从成员列表。 然后键入 `>`。
 
