@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 62ff05de5cfd6dfa01f8e93f22f9ac09b8e61575
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353386"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624472"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
 您可以通过指定在运行时添加菜单项`DynamicItemStart`命令在 Visual Studio 命令表中的占位符按钮定义的标志 ( *.vsct*) 文件，然后 （在代码中） 定义要显示的菜单项的数量和处理命令。 加载 VSPackage 时，包含动态菜单项会替换占位符。
@@ -320,15 +320,15 @@ ms.locfileid: "66353386"
 
 现在，实现匹配谓词。 我们需要确定两件事： 首先，命令 ID 是否有效 （它是大于或等于声明的命令 ID），和第二个，它是否指定可能的项目 （它是解决方案中的项目数小于）。
 
-    ```csharp
-    private bool IsValidDynamicItem(int commandId)
-    {
-        // The match is valid if the command ID is >= the id of our root dynamic start item
-        // and the command ID minus the ID of our root dynamic start item
-        // is less than or equal to the number of projects in the solution.
-        return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
-    }
-    ```
+```csharp
+private bool IsValidDynamicItem(int commandId)
+{
+    // The match is valid if the command ID is >= the id of our root dynamic start item
+    // and the command ID minus the ID of our root dynamic start item
+    // is less than or equal to the number of projects in the solution.
+    return (commandId >= (int)DynamicMenuPackageGuids.cmdidMyCommand) && ((commandId - (int)DynamicMenuPackageGuids.cmdidMyCommand) < dte2.Solution.Projects.Count);
+}
+```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>设置仅当解决方案包含多个项目时加载 VSPackage
  因为**设置启动项目**命令没有任何意义，除非活动解决方案具有多个项目，您可以设置你的 VSPackage，若要仅在这种情况下自动加载。 您使用<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>UI 上下文以及<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>。 在中*DynamicMenuPackage.cs*文件将以下属性添加到 DynamicMenuPackage 类：

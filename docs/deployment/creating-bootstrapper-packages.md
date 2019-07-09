@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900226"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624528"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
-安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或必备组件，显示在**先决条件**ClickOnce 的对话框是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。
+安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序  。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或必备组件，显示在**先决条件**ClickOnce 的对话框是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。
 
 引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 接着，在最终用户接受许可协议后，将开始安装相应的系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。
 
@@ -43,40 +43,48 @@ ms.locfileid: "62900226"
 
 在创建这两个文件之后，请将产品清单文件放置在一个依据自定义引导程序命名的文件夹中。 程序包清单文件将放置到一个依据区域设置命名的文件夹中。 例如，如果程序包清单文件针对的是英语版的再发行程序，请将该文件放置在一个名为 en 的文件夹中。 对于每个区域设置（如 ja 代表日语，de 代表德语）重复此过程。 最终的自定义引导程序包的文件夹结构将如下所示。
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 接下来，将可再发行文件复制到引导程序文件夹位置。 有关详细信息，请参阅[如何：创建已本地化的引导程序包](../deployment/how-to-create-a-localized-bootstrapper-package.md)。
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 或
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 也可以根据以下注册表项中的 **“Path”** 值确定引导程序文件夹位置：
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 在 64 位系统上，请使用以下注册表项：
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 每个可再发行组件均位于程序包目录下它们自己的子文件夹中。 产品清单和可再发行文件必须放入此子文件夹。 必须根据区域性名称命名的子文件夹中放置的组件和包清单的本地化的版本。
 
-在将这些文件复制到引导程序文件夹中之后，相应的引导程序包将自动出现在 Visual Studio 的“系统必备”对话框中。 如果自定义引导程序包未显示，请关闭并重新打开“系统必备”对话框。 有关详细信息，请参阅 [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)。
+在将这些文件复制到引导程序文件夹中之后，相应的引导程序包将自动出现在 Visual Studio 的“系统必备”对话框中  。 如果自定义引导程序包未显示，请关闭并重新打开“系统必备”对话框  。 有关详细信息，请参阅 [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)。
 
 下表显示由引导程序自动填充的属性。
 
@@ -95,7 +103,7 @@ ms.locfileid: "62900226"
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-可再发行组件列表是一个 XML 文件，您应使用以下格式命名：*\<公司名称 >。\<组件名称 >。RedistList.xml*。 举例来说，如果组件名为 DataWidgets 且由 Acme 开发，则使用 Acme.DataWidgets.RedistList.xml。 可再发行文件列表的内容的示例可能像下面这样：
+可再发行组件列表是一个 XML 文件，您应使用以下格式命名： *\<公司名称 >。\<组件名称 >。RedistList.xml*。 举例来说，如果组件名为 DataWidgets 且由 Acme 开发，则使用 Acme.DataWidgets.RedistList.xml  。 可再发行文件列表的内容的示例可能像下面这样：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
