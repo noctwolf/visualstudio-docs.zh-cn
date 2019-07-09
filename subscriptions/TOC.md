@@ -34,7 +34,6 @@
 ### [专业开发](professional-development.md)
 #### [LinkedIn 学习](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [提升技能](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [MSDN Magazine 订阅](vs-msdn.md)
 ### [支持权益](technical-support.md)
