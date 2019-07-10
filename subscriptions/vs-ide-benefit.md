@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE。
 searchscope: VS Subscription
-ms.openlocfilehash: 5e836eac14cbf50abe79230444a4c8ee8c01643d
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032865"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586936"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 权益
 
@@ -69,7 +69,6 @@ ms.locfileid: "67032865"
 | Visual Studio Professional（标准、月度云） | VL、Azure、零售                                       | 可用                                                            |  是          |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  是         |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
-
 
 <sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务*。
 

@@ -1,15 +1,15 @@
 ---
 title: 教程 - 使用 Docker Compose 创建多容器应用
 description: 了解如何在 Visual Studio for Mac 中管理多个容器并在它们之间通信
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196102"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691702"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>使用 Docker Compose 创建多容器应用
 
@@ -82,14 +82,14 @@ services:
    ```
 
 1. 在 Index.cshtml  文件中，添加一行以显示 `ViewData["Message"]`，以便该文件看起来如以下代码：
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ services:
       ```
 
 1. 现在在 Web API 项目中，将代码添加到“值”控制器以自定义 API 针对从 webfrontend  添加的调用返回的消息：
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ services:
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. 将 `docker-compose` 项目设置为启动项目并转到“运行”>“开始调试”  。 如果所有内容配置正确，你将看到消息“Hello from webfrontend and webapi (with value 1)”：
 
 ![Docker 多容器解决方案正在运行](media/docker-multicontainer-debug.png)

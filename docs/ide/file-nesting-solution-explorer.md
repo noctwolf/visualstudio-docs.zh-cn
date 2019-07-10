@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309801"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587028"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>解决方案资源管理器中的文件嵌套
 
@@ -110,7 +110,8 @@ ms.locfileid: "67309801"
 > [!NOTE]
 > - 若未为 `pathSegment` 规则指定任何特定文件扩展名，它将应用到所有文件扩展名。 即，当任意文件包含的名称和扩展名与其他文件的名称和扩展名相同，并在中间部分附加有额外的扩展名时，此文件将嵌套在另一个文件下。
 > - 可以通过下面的方式指定特定文件扩展名，来将 `pathSegment` 规则的作用限制在这些扩展名：
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [

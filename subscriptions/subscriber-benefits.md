@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅中包含的权益
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493734"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586990"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
 Visual Studio 订阅（之前被称为 MSDN 订阅）提供最全面的一套资源，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署以及管理功能强大的应用程序。  具体权益将取决于你所拥有的订阅类型。  为了给订阅者提供最大价值，所提供的权益会随着我们做出的调整定期变更，以专注于最新、最有用的技术、培训材料和可用的合作伙伴权益。
-
 
 在[订阅者门户](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:)中，权益分为以下三类：
 

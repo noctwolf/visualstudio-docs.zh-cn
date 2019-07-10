@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986628"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692968"
 ---
 # <a name="working-with-git"></a>使用 Git
 
@@ -59,7 +59,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 ## <a name="switching-branches"></a>切换分支
 
-默认情况下，存储库中创建的第一个分支称为主分支 **** 。 主分支和其他分支之间没有任何技术上的不同，但是主分支通常被认为是开发团队的“实时”或“生产”分支。
+默认情况下，存储库中创建的第一个分支称为“主”  分支。 主分支和其他分支之间没有任何技术上的不同，但是主分支通常被认为是开发团队的“实时”或“生产”分支。
 
 对主分支（或任何其他分支）再进行分支，可形成独立的开发思路。 这为某个时间点的主分支提供了新版本，允许独立于“实时”开发。 使用这种方式的分支通常用于软件开发功能
 

@@ -7,12 +7,12 @@ ms.date: 04/15/2019
 ms.topic: conceptual
 description: 了解新的 Visual Studio + GitHub 捆绑包
 searchscope: VS Subscription
-ms.openlocfilehash: 086314029561c7b0c14ac1d6ef09d7cb3a4d85ee
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 7871496cf427d3e610693391d80693852d71c64e
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945216"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586571"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅简介  
 
@@ -33,7 +33,7 @@ ms.locfileid: "64945216"
 
 适合 Visual Studio Enterprise、Visual Studio Professional 和 GitHub Enterprise 的现有 SKU 仍将继续单独提供。 
 
-要详细了解相关权益、选项和定价，请访问 https://visualstudio.microsoft.com/subscriptions/visual-studio-github。 
+要详细了解相关权益、选项和定价，请访问 https://visualstudio.microsoft.com/subscriptions/visual-studio-github 。 
 
 ## <a name="getting-your-subscriptions"></a>获取你的订阅
 
@@ -74,14 +74,13 @@ ms.locfileid: "64945216"
 
 答：除了 GitHub Enterprise 订阅，你还将获得完整的 Visual Studio 订阅。  如同单独购买订阅时一样，你将获得这些订阅随附的软件下载、云服务、技术支持和合作伙伴权益等各项权益。
 
-
 ## <a name="support-resources"></a>支持资源
--  有关各种 GitHub 主题的问题解答，可查看 [GitHub 帮助](https://help.github.com/en)。
--  在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
--  获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
-
+- 有关各种 GitHub 主题的问题解答，可查看 [GitHub 帮助](https://help.github.com/en)。
+- 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="next-steps"></a>后续步骤
+
 如果你刚接触 GitHub，请查看 [GitHub 学习实验室](https://lab.github.com/)，它将带你了解一系列有趣又实用的项目，在整个过程中还会分享有用的反馈。
