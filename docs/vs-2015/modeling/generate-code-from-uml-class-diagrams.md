@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa073c794e790974f7f749b9d6f2302e9ff0a230
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442428"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692520"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>从 UML 类关系图生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ ms.locfileid: "63442428"
    **描述**的类型、 属性、 操作和关联的属性写入到`<summary>`中生成的代码的注释。 将链接到类型的注释元素写入 `<remarks>` 注释。  
 
 ## <a name="varying-the-generated-code"></a>改变生成的代码  
- 生成的代码随每个类型、特性或操作的属性的不同而不同。 例如，如果您设置**Is Abstract**属性的类为 true，则`abstract`关键字将出现在生成的类。 如果您设置**多重性**属性的 * * 0..\\则生成的属性将具有`IEnumerable<>`类型。  
+ 生成的代码随每个类型、特性或操作的属性的不同而不同。 例如，如果您设置**Is Abstract**属性的类为 true，则`abstract`关键字将出现在生成的类。 如果您设置**多重性**属性的**0.\*** ，则生成的属性将具有`IEnumerable<>`类型。  
 
  另外，每个构造型提供了多个可设置的附加属性。 这些值将转换为 C# 代码中的相应关键字。 例如，如果你在类上设置属性 `Is Static`，则 C# 类将为 `static`。  
 
@@ -168,7 +168,7 @@ ms.locfileid: "63442428"
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        名称        |                                                                                                                                                                                                                                                  此绑定的名称。 若要替代继承自包含包或模型的某个绑定，请使用与要替代的绑定相同的名称。                                                                                                                                                                                                                                                  |
    |     Overwrite      |                                                                                                                                                                                                                                                                                                      如果为 True，则替代任何现有代码。                                                                                                                                                                                                                                                                                                       |
-   |    Target Name     | 生成的文件的名称。<br /><br /> 您可以将表达式插入此字符串等`{Name}`或`{Owner.Name}`。 例如，可以编写： `{Owner.Name}_{Name}`。 在模型元素上计算表达式。 它可使用元素而非方法的属性。 若要查找可以使用哪些属性，请查看中类型的属性 **Microsoft.VisualStudio.Uml。\\***.\*\*重要说明：* \* `{Name}`或`{Owner.Name}`可以仅在使用**目标名称**属性。 若要更改生成的类的名称，你必须修改模板。 有关详细信息，请参阅[编写文本模板](#writing)。 |
+   |    Target Name     | 生成的文件的名称。<br /><br /> 您可以将表达式插入此字符串等`{Name}`或`{Owner.Name}`。 例如，可以编写： `{Owner.Name}_{Name}`。 在模型元素上计算表达式。 它可使用元素而非方法的属性。 若要查找可以使用哪些属性，请查看中类型的属性**Microsoft.VisualStudio.Uml。\*** . \*\*重要说明：\* \* `{Name}`或`{Owner.Name}`可以仅在使用**目标名称**属性。 若要更改生成的类的名称，你必须修改模板。 有关详细信息，请参阅[编写文本模板](#writing)。 |
    |    项目路径    |                                                                      指定将包含转换的输出文件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的路径。 使用类型值创建新项目。 选择省略号按钮 ( **[...]** ) 若要选择一个现有项目。<br /><br /> 如果新项目不存在，则将创建它。 它将是一个 C# 类库项目。<br /><br /> 为此，你必须直接键入该项目。 可以包含环境变量宏，例如 %ProgramFiles% 或 %LocalAppData%。                                                                       |
    |  目标目录  |                                                                                          在其中生成目标文件的文件夹。 该路径是项目文件夹的相对路径。<br /><br /> 可以使用 `{PackageStructure}` 表达式插入与包含程序包的名称相对应的路径。 默认值为 `\GeneratedCode\{PackageStructure}`。 还可以包含环境变量，例如 %TEMP% 或 %HomePath%。 **重要说明：** `{PackageStructure}`可以仅在使用**目标目录**属性。                                                                                          |
    | 模板文件路径 |                                                                                                                                                           将执行转换的模板。<br /><br /> 可以使用提供的模板或创建你自己的模板。 可在以下位置找到提供的模板：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
