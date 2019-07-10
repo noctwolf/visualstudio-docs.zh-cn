@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: 了解管理员如何解决透支的订阅
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945141"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587005"
 ---
 # <a name="overallocated-subscriptions"></a>过度分配的订阅
 
@@ -39,12 +39,12 @@ ms.locfileid: "64945141"
 如果你的组织具有企业协议 (EA)，则管理员无需购买订阅即可分配它们，稍后再通过被称作“校正”的对帐过程支付相关费用。  如果过度分配，则在“校正”期间，将按分配给用户的最大订阅数向你的组织计费。  即使在校正发生期间你分配的订阅数不再达到上限，也是如此。  要详细了解如何监视你的最大用量，请访问[最大用量](maximum-usage.md)主题。
 
 > [!Important]
-> 如果 Visual Studio 订阅管理员分配了带有 GitHub Enterprise 的 Visual Studio 订阅，且从未购买过这些订阅，则它们将对组织中的 GitHub Enterprise 管理员不可见。 要确保 GitHub Enterprise 订阅可见，应在首次分配订阅时至少购买一个带 GitHub Enterprise 的 Visual Studio Professional 订阅或带 GitHub Enterprise 的 Visual Studio Enterprise 订阅。  
+> 如果 Visual Studio 订阅管理员分配了带有 GitHub Enterprise 的 Visual Studio 订阅，且从未购买过这些订阅，则它们将对组织中的 GitHub Enterprise 管理员不可见。 要确保 GitHub Enterprise 订阅可见，应在首次分配订阅时至少购买一个带 GitHub Enterprise 的 Visual Studio Professional 订阅或带 GitHub Enterprise 的 Visual Studio Enterprise 订阅  。  
 >
 > 由客户负责确保在管理门户中针对所分配的每个 GitHub 订阅都分配了一个对应的带 GitHub 的 Visual Studio 订阅，从而保证符合此订阅的许可要求。
-
 
 详细了解如何管理[带有 GitHub Enterprise 的 Visual Studio 订阅](assign-github.md)。
 
 ## <a name="support-resources"></a>支持资源
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。

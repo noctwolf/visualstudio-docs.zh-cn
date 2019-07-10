@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697594"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692803"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -43,7 +43,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ![列出 NuGet 包](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的搜索框查找特定的包，如  `azure`。 找到希望使用的包时，请选择它并单击“添加包”按钮以开始安装 ****  。
+使用右上角的搜索框查找特定的包，如 `azure`。 找到希望使用的包时，请选择它并单击“添加包”按钮以开始安装  。
 
 [添加 Azure NuGet 包](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 添加 NuGet 包并更新项目引用后，可以如针对任何项目引用一样根据 API 对其进行编程。
 
-请确保将任何所需的  `using` 指令添加到文件顶部：
+请确保将任何所需的 `using` 指令添加到文件顶部：
 
 ```csharp
 using Newtonsoft.Json;

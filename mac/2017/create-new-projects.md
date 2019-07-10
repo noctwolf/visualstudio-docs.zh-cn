@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00814f006c265a3c16cd3d4bd6bc004754016a27
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932393"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692428"
 ---
 # <a name="creating-new-projects-and-solutions"></a>创建新项目和解决方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>使用模板创建新项目和解决方案
 
-可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”，然后依次选择所需平台和所需模板 **** ：
+可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”  ，然后依次选择所需平台和所需模板：
 
 ![创建新解决方案](media/projects-and-solutions-image0.png)
 

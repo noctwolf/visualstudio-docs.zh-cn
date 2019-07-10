@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区权益。
 searchscope: VS Subscription
-ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032259"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586943"
 ---
 # <a name="azure-community"></a>Azure 社区
 
@@ -54,7 +54,6 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 |                              Visual Studio Test Professional（标准）                               |    VL、零售     |   一年    |    是     |
 |                                       MSDN 平台（标准）                                       |    VL、零售     |   一年    |    是     |
 | Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）、NFR<sup>1</sup> |        全部        | 不可用 |     No     |
-
 
 <sup>1</sup>  *包括：不得转售 (NFR)、Microsoft FTE、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)*
 

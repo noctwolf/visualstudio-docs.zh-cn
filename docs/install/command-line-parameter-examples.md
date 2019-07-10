@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 0f35348e6704ffa822ba5dee93ad930f209004e1
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614500"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586867"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 安装的命令行参数示例
 
@@ -70,17 +70,20 @@ ms.locfileid: "65614500"
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
    echo %errorlevel%
    ```
-   ```PS
+
+   ```powershell
    $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
    ```
+
    or
-   ```PS
+
+   ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
     $startInfo.FileName = "vs_enterprise.exe"
-    $startInfo.Arguments = "--all --quiet --wait" 
+    $startInfo.Arguments = "--all --quiet --wait"
     $process = New-Object System.Diagnostics.Process
     $process.StartInfo = $startInfo
-    $process.Start() 
+    $process.Start()
     $process.WaitForExit()
    ```
 
@@ -156,7 +159,7 @@ ms.locfileid: "65614500"
 
 ::: moniker range="vs-2017"
 
-这些命令行参数是 15.7 版中的新内容。 有关这些参数的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+这些命令行参数是 15.7 版中的新内容  。 有关这些参数的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
 
 ::: moniker-end
 
@@ -180,7 +183,7 @@ ms.locfileid: "65614500"
 
 ::: moniker range="vs-2017"
 
-此命令行命令是 15.9 版中的新内容。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+此命令行命令是 15.9 版中的新内容  。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
 
 ::: moniker-end
 
@@ -200,7 +203,7 @@ ms.locfileid: "65614500"
 
 ::: moniker range="vs-2017"
 
-此命令行参数是 15.9 版中的新内容。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+此命令行参数是 15.9 版中的新内容  。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
 
 ::: moniker-end
 

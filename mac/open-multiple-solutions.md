@@ -1,27 +1,27 @@
 ---
 title: 如何：打开 Visual Studio for Mac 中的多个解决方案
 description: 了解如何打开 Visual Studio for Mac 的多个解决方案，以及如何打开应用程序的多个实例。
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/02/2019
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: 031ce885faa29e587fe5d48210d8e13b48fcdc4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 479ef72d2f14d0d1f9de5d193ca76ae2c6128daa
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937939"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691388"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的多个解决方案或实例
 
-默认情况下，Mac 上的所有应用程序（包括 Visual Studio for Mac）都是单实例应用。 也就是说，如果要使用的应用程序已经打开（由停靠栏中图标下方的点指明），再次选择此图标会打开正在运行的实例，而不是新实例。 如果需要应用程序的其他实例，可提示系统打开，如[下一部分](#open-a-second-instance-of-visual-studio-for-mac)中所述。
+默认情况下，Mac 上的所有应用程序（包括 Visual Studio for Mac）都是单实例应用  。 也就是说，如果要使用的应用程序已经打开（由停靠栏中图标下方的点指明），再次选择此图标会打开正在运行的实例，而不是新实例。 如果需要应用程序的其他实例，可提示系统打开，如[下一部分](#open-a-second-instance-of-visual-studio-for-mac)中所述。
 
 此外，打开解决方案时，默认行为是在新工作区中打开解决方案并关闭当前工作区（如有必要）。 可通过保持当前工作区打开来替代此默认行为，如[打开第二个解决方案](#open-a-second-solution-inside-a-single-instance)部分中所述。
 
 ## <a name="open-a-second-instance-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的第二个实例
 
-要打开集成开发环境 (IDE) 的第二个实例，请右键单击 dock 或 Applications 文件夹中的 Visual Studio 图标，然后选择“新建实例”。
+要打开集成开发环境 (IDE) 的第二个实例，请右键单击 dock 或 Applications 文件夹中的 Visual Studio 图标，然后选择“新建实例”   。
 
 ![右键单击 Visual Studio 图标时出现的“新建实例”菜单选项的屏幕截图](media/open-new-instance.png)
 
@@ -29,25 +29,25 @@ ms.locfileid: "62937939"
 
 要在第一个解决方案旁边打开第二个解决方案，请使用以下步骤：
 
-1. 在第一个解决方案已打开后，依次选择“文件” > “打开”。
+1. 在第一个解决方案已打开后，依次选择“文件”   > “打开”  。
 2. 浏览文件系统，查找现有解决方案。
-3. 依次选择 .sln 文件和“选项”：
+3. 依次选择 .sln  文件和“选项”  ：
 
     ![突出显示 .sln 文件和“选项”的 Visual Studio for Mac 屏幕截图](media/open-multiple-solutions-image3.png)
 
-4. 取消选中“关闭当前工作区”框：
+4. 取消选中“关闭当前工作区”  框：
 
     ![已清除“关闭当前工作区”框的“选项”对话框屏幕截图](media/open-multiple-solutions-image1.png)
 
-5. 选择“打开”，在 Solution Pad 中打开第二个解决方案。
+5. 选择“打开”  ，在 Solution Pad 中打开第二个解决方案。
 
 或者，如果最近打开过解决方案，可按照以下步骤操作：
 
-1. 依次转到“文件” > “最近打开的解决方案”。
+1. 依次转到“文件” >   “最近打开的解决方案”  。
 
     ![“最近打开的解决方案”菜单屏幕截图](media/open-multiple-solutions-image2.png)
 
-1. 按住 Ctrl 键并选择解决方案。 此组合操作会在 Solution Pad 中打开第二个解决方案。
+1. 按住 Ctrl 键并选择解决方案  。 此组合操作会在 Solution Pad 中打开第二个解决方案。
 
 ## <a name="related-video"></a>相关视频
 

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614434"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586822"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>安装并配置使用 iOS 进行构建的工具
 
@@ -52,7 +52,7 @@ ms.locfileid: "65614434"
 
 - 在 Xcode 中配置的 Apple ID 帐户作为用于对应用进行签名的签名标识
 
-   若要查看或设置 Xcode 中的签名标识，打开 **Xcode** 菜单并选择 “首选项”。 选择“帐户”  并选择你的 Apple ID，然后选择“查看详细信息”  按钮。 有关详细说明，请参阅 [Add your Apple ID account](https://help.apple.com/xcode/mac/current/#/devaf282080a)（添加 Apple ID 帐户）。
+   若要查看或设置 Xcode 中的签名标识，打开 **Xcode** 菜单并选择  “首选项”。 选择“帐户”  并选择你的 Apple ID，然后选择“查看详细信息”  按钮。 有关详细说明，请参阅 [Add your Apple ID account](https://help.apple.com/xcode/mac/current/#/devaf282080a)（添加 Apple ID 帐户）。
    
    有关签名要求的详细信息，请参阅 [What is app signing](https://help.apple.com/xcode/mac/current/#/dev3a05256b8)（什么是应用签名）。 
 
@@ -66,7 +66,6 @@ ms.locfileid: "65614434"
 
    在 Mac 上安装 Node.js 8.11.3 版。 如果安装 Node.js 包，该包应随附 npm 5.6.0 版。 请注意，其他版本的 Node.js 和 npm 可能不支持远程代理 vcremote 中使用的一些模块，这可能导致 vcremote 安装失败。
 
-
 ## <a name="Install"></a> 安装适用于 iOS 的远程代理
 
 当安装用于跨平台移动开发的 Visual C++ 时，Visual Studio 可以与 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)进行通信，这是一个在 Mac 上运行的远程代理，用于传输文件、生成和运行 iOS 应用，以及发送调试命令。
@@ -79,7 +78,7 @@ ms.locfileid: "65614434"
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   全局安装 (**-g**) 开关是推荐使用而不是必须使用的。
+   全局安装 ( **-g**) 开关是推荐使用而不是必须使用的。
 
    在安装期间，vcremote 将被安装在你的 Mac 上，同时将激活开发人员模式。 同时还会安装[Homebrew](https://brew.sh/) 以及 vcremote lib 和 vcremote-utils 这两个 npm 包。 安装完成后，可以忽略有关跳过可选依赖项的警告。
 
@@ -126,7 +125,7 @@ ms.locfileid: "65614434"
 
 #### <a name="to-stop-the-remote-agent"></a>停用远程代理
 
-- 在正在运行 vcremote 的终端窗口中，输入 Control+C。
+- 在正在运行 vcremote 的终端窗口中，输入 Control+C   。
 
 ## <a name="ConfigureVS"></a> 在 Visual Studio 中配置远程代理
 
@@ -140,9 +139,9 @@ ms.locfileid: "65614434"
 
    可以通过在终端窗口中使用 **ifconfig** 命令来获取 IP 地址。 请使用活动网络接口下列出的 inet 地址。
 
-1. 在 Visual Studio 菜单栏上，依次选择“工具”和“选项”。
+1. 在 Visual Studio 菜单栏上，依次选择“工具”  和“选项”  。
 
-1. 在“选项”对话框中，展开“跨平台”、“C++”和“iOS”。
+1. 在“选项”  对话框中，展开“跨平台”  、“C++”  和“iOS”  。
 
 1. 在“主机名”  和“端口”  字段，输入远程代理在启动时指定的值。 主机名可以是 DNS 名或 Mac 的 IP 地址。 默认端口为 3030。
 
@@ -151,7 +150,7 @@ ms.locfileid: "65614434"
 
 1. 如果以默认安全连接模式使用远程代理，请勾选“安全”  复选框，然后在 **Pin** 字段输入由远程代理指定的 PIN 值。 如果以非安全连接模式使用远程代理，请清除“安全”  复选框并将 **Pin** 字段留空。
 
-1. 选择“配对”以启用配对。
+1. 选择“配对”  以启用配对。
 
    ![为 iOS 版本配置 vcremote 连接](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 
@@ -159,7 +158,7 @@ ms.locfileid: "65614434"
 
    如果配对失败，请按照 [Start the remote agent](#Start)中的步骤验证远程代理是否正在运行。 如果生成远程代理 PIN 后已经过了很久，请在 Mac 上执行 [Generate a new security PIN](#GeneratePIN) 中的步骤，然后重试。 如果你使用的是 Mac 的主机名，请转而尝试在“主机名”  字段中使用 IP 地址。
 
-1. 更新“远程根目录”字段中的文件夹名称，以在 Mac 上的主 (~) 目录中指定远程代理所用的文件夹。 默认情况下，远程代理会使用 /Users/`username`/vcremote 作为远程根目录。
+1. 更新“远程根目录”字段中的文件夹名称，以在 Mac 上的主 (~) 目录中指定远程代理所用的文件夹   。 默认情况下，远程代理会使用 /Users/`username`/vcremote 作为远程根目录。
 
 1. 选择“确定”  以保存远程配对连接设置。
 
@@ -215,13 +214,13 @@ ms.locfileid: "65614434"
 
    `vcremote --secure false`
 
-   如果使用此选项，请在 Visual Studio 中配置代理时清除“安全”复选框，并将“Pin”字段留空。
+   如果使用此选项，请在 Visual Studio 中配置代理时清除“安全”  复选框，并将“Pin”  字段留空。
 
 - 要为远程代理文件指定位置，请输入：
 
    `vcremote --serverDir directory_path`
 
-   其中， *directory_path* 是 Mac 上放置日志文件、生成项和服务器证书的位置。 默认情况下，此位置为 /Users/\<username>/vcremote。 生成项会在此位置按照生成号进行整理。
+   其中， *directory_path* 是 Mac 上放置日志文件、生成项和服务器证书的位置。 默认情况下，此位置为 /Users/\<username>/vcremote  。 生成项会在此位置按照生成号进行整理。
 
 - 若要使用后台进程以将 `stdout` 和 `stderr` 捕获至名为 server.log 的文件，请输入：
 

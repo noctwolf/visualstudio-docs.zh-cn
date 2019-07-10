@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
 searchscope: VS Subscription
-ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465130"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586898"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
@@ -103,7 +103,6 @@ ms.locfileid: "67465130"
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>问：如果我想为客户减少订阅数量，该怎么办？
 
 答：管理员仍然可以通过访问 https://manage.visualstudio.com 并遵循本文中减少订阅数的说明来减少订阅数量。 系统将不会生成按比例计费的额度  。 有关退款，需要联系 Azure 账单团队。
-
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>问：如果我取消订阅，以后还能再买一份年度云订阅吗？
 答：虽然无法再买一份云年度订阅，但是可以选择购买 Visual Studio 订阅。  更多信息请访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)。

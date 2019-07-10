@@ -1,16 +1,16 @@
 ---
 title: 登录 Visual Studio for Mac
 description: 如何登录 Visual Studio for Mac
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3ef047d018d5069cd362af1becfe7c6d778bde7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963588"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692009"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登录 Visual Studio for Mac
 
@@ -24,7 +24,7 @@ ms.locfileid: "62963588"
 
 要登录 Visual Studio for Mac，请执行以下步骤：
 
-1. 单击登录窗口中的“使用 Microsoft 登录”按钮：
+1. 单击登录窗口中的“使用 Microsoft 登录”按钮  ：
 
     ![Visual Studio for Mac 中的“帐户”对话框](media/signing-in-image12.png)
 
@@ -42,7 +42,7 @@ ms.locfileid: "62963588"
 
 Visual Studio for Mac 支持向个性化帐户添加多个帐户。 可从任何添加的帐户访问 Azure 等资源。
 
-要添加其他用户帐户，请在 Visual Studio for Mac 中选择“Visual Studio”>“帐户...”菜单。 单击“添加...”按钮，输入其他帐户凭据。
+要添加其他用户帐户，请在 Visual Studio for Mac 中选择“Visual Studio”>“帐户...”菜单  。 单击“添加...”按钮，输入其他帐户凭据  。
 
 ![管理帐户](media/signing-in-image15.png)
 

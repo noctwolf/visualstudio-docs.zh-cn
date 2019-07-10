@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 订阅中包含的 Azure 顾问聊天权益。
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033171"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586967"
 ---
 # <a name="azure-advisory-chat"></a>Azure 顾问聊天
 
@@ -42,7 +42,6 @@ ms.locfileid: "67033171"
 | Visual Studio Professional（标准、月度云）Visual Studio Enterprise（月度云、NFR<sup>1</sup>） |        全部        | 不可用 |     No     |
 |                                          Visual Studio Test Professional（标准）                                          |        全部        | 不可用 |     No     |
 |                                                  MSDN 平台（标准）                                                   |        全部        | 不可用 |     No     |
-
 
 <sup>1</sup>  *包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、MCT*
 

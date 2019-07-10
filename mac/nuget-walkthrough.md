@@ -1,17 +1,17 @@
 ---
 title: 在项目中包括 NuGet 包
 description: 本文档介绍如何在 Xamarin 项目中包括 NuGet 包。 文档将介绍如何查找和下载包，同时介绍 IDE 集成功能。
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820620"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691400"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -77,9 +77,9 @@ using Newtonsoft.Json;
 
 ![包菜单](media/nuget-walkthrough-PackagesMenu.png)
 
-*   添加 NuGet 包 - 打开窗口，将更多包添加到项目  。
-*   更新  - 检查每个包的源服务器并下载任何更新版本。
-*   还原  - 下载任何缺少的包（无需将现有包升级到更新版本）。
+* 添加 NuGet 包 - 打开窗口，将更多包添加到项目  。
+* 更新  - 检查每个包的源服务器并下载任何更新版本。
+* 还原  - 下载任何缺少的包（无需将现有包升级到更新版本）。
 
 现在也提供解决方案级别的“更新”和“还原”选项，这些选项可影响该解决方案中的所有项目。
 
