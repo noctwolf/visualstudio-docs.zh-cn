@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436913"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692845"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：指定符号文件位置，从命令行
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：通过命令行指定符号文件位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 为了显示函数名称和行号等符号信息，VSPerfReport 命令行工具要求访问被分析组件的符号 (.pdb) 文件以及 Windows 系统文件。 编译组件时会创建符号文件。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 自动搜索以下位置的符号文件：  
@@ -48,7 +48,7 @@ ms.locfileid: "63436913"
   
 2. 使用以下语法设置 **_NT_SYMBOL_PATH** 环境变量或 VSPerfReport /SymbolPath 选项：  
   
-    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     其中，*LocalStore* 是用户创建的本地目录的路径。  
   

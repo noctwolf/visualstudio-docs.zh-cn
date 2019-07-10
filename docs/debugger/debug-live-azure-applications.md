@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860382"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692115"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure 应用
 
@@ -34,13 +34,13 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="prerequisites"></a>系统必备
 
-* 快照调试程序才可以开始于 Visual Studio 2017 Enterprise 版本 15.5 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它。）
+* 快照调试程序才可以开始于 Visual Studio 2017 Enterprise 版本 15.5 或更高版本与**Azure 开发工作负荷**。 （可在“各个组件”选项卡的“调试和测试” > “Snapshot Debugger”下找到它    。）
 
     ::: moniker range=">=vs-2019"
     如果尚未安装，安装[Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)。 如果要更新从以前的 Visual Studio 安装，运行 Visual Studio 安装程序并签入的快照调试器组件**ASP.NET 和 web 开发工作负荷**。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果尚未安装，请安装 [Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或更高版本。 如果从旧版 Visual Studio 2017 安装更新，请运行 Visual Studio 安装程序，并选中 ASP.NET 和 Web 开发工作负载中的 Snapshot Debugger 组件。
+    如果尚未安装，请安装 [Visual Studio 2017 Enterprise 版本 15.5](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 或更高版本。 如果从旧版 Visual Studio 2017 安装更新，请运行 Visual Studio 安装程序，并选中 ASP.NET 和 Web 开发工作负载  中的 Snapshot Debugger 组件。
     ::: moniker-end
 
 * 基本或更高版本的 Azure 应用服务计划。
@@ -54,33 +54,33 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 1. 打开要进行快照调试的项目。
 
     > [!IMPORTANT]
-    > 对于快照调试，需要打开与已发布到 Azure 应用服务的“相同版本的源代码”。
+    > 对于快照调试，需要打开与已发布到 Azure 应用服务的“相同版本的源代码”  。
 ::: moniker range="<=vs-2017"
 
-2. 在云资源管理器（“视图”>“云资源管理器”）中，右键单击项目部署到的 Azure 应用服务，然后选择“附加快照调试器”。
+2. 在云资源管理器（“视图”>“云资源管理器”）中，右键单击项目部署到的 Azure 应用服务，然后选择“附加快照调试器”   。
 
    ![启动 Snapshot Debugger](../debugger/media/snapshot-launch.png)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-2. 选择“调试”>“附加 Snapshot Debugger...”。选择部署项目的 Azure 应用服务和一个 Azure 存储帐户，然后单击“附加”。
+2. 选择“调试”>“附加 Snapshot Debugger...”  。选择部署项目的 Azure 应用服务和一个 Azure 存储帐户，然后单击“附加”  。
 
-      ![从“调试”菜单启动 Snapshot Debugger](../debugger/media/snapshot-debug-menu-attach.png)
+   ![从“调试”菜单启动 Snapshot Debugger](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![选择 Azure 资源](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![选择 Azure 资源](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > 第一次选择“附加快照调试器”时，系统会提示在 Azure 应用服务上安装快照调试器站点扩展。 此安装需要重启 Azure 应用服务。
+   > [!IMPORTANT]
+   > 第一次选择“附加快照调试器”时，系统会提示在 Azure 应用服务上安装快照调试器站点扩展  。 此安装需要重启 Azure 应用服务。
 
-  > [!NOTE]
-  > Application Insights 站点扩展还支持快照调试。 如果遇到“站点扩展过期”错误消息，请参阅[快照调试的疑难解答提示和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)以获取升级详细信息。
+   > [!NOTE]
+   > Application Insights 站点扩展还支持快照调试。 如果遇到“站点扩展过期”错误消息，请参阅[快照调试的疑难解答提示和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)以获取升级详细信息。
 
    Visual Studio 现在处于快照调试模式下。
    ![快照调试模式](../debugger/media/snapshot-message.png)
 
-   “模块”窗口显示何时 Azure 应用服务的所有模块都已加载（依次选择“调试”>“窗口”>“模块”可打开此窗口）。
+   “模块”  窗口显示何时 Azure 应用服务的所有模块都已加载（依次选择“调试”>“窗口”>“模块”  可打开此窗口）。
 
    ![选中“模块”窗口](../debugger/media/snapshot-modules.png)
 
@@ -90,7 +90,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![设置快照点](../debugger/media/snapshot-set-snappoint.png)
 
-2. 单击“开始收集”以打开快照点。
+2. 单击“开始收集”以打开快照点  。
 
    ![开启快照点](../debugger/media/snapshot-start-collection.png)
 
@@ -103,7 +103,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 ## <a name="inspect-snapshot-data"></a>检查快照数据
 
-1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”。
+1. 命中快照点时，快照将出现在诊断工具窗口。 若要打开此窗口，请依次选择“调试”>“窗口”>“显示诊断工具”  。
 
    ![打开快照点](../debugger/media/snapshot-diagsession-window.png)
 
@@ -111,11 +111,11 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
    ![检查快照数据](../debugger/media/snapshot-inspect-data.png)
 
-   在此视图中，可通过将鼠标悬停在变量上来查看数据提示；使用“局部变量”、“监视”和“调用堆栈”窗口；以及计算表达式。
+   在此视图中，可通过将鼠标悬停在变量上来查看数据提示；使用“局部变量”、“监视”和“调用堆栈”窗口；以及计算表达式    。
 
-    网站本身仍然是实时的，最终用户不会受到影响。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点。
+    网站本身仍然是实时的，最终用户不会受到影响。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点  。
 
-还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动。
+还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动  。
 
 **需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
 
@@ -125,7 +125,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 #### <a name="to-create-a-conditional-snappoint"></a>创建条件性快照点
 
-1. 右键单击快照点图标（空心球）并选择“设置”。
+1. 右键单击快照点图标（空心球）并选择“设置”  。
 
    ![选择“设置”](../debugger/media/snapshot-snappoint-settings.png)
 
@@ -141,19 +141,19 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 #### <a name="to-create-a-logpoint"></a>创建记录点
 
-1. 右键单击快照点图标（蓝色六边形），然后选择“设置”。
+1. 右键单击快照点图标（蓝色六边形），然后选择“设置”  。
 
-1. 在“快照点设置”窗口中，选择“操作”。
+1. 在“快照点设置”窗口中，选择“操作”  。
 
     ![创建记录点](../debugger/media/snapshot-logpoint.png)
 
-1. 在“消息”字段中，可以输入想要记录的新日志消息。 还可以将日志消息中的变量放在大括号中，从而计算它们的值。
+1. 在“消息”  字段中，可以输入想要记录的新日志消息。 还可以将日志消息中的变量放在大括号中，从而计算它们的值。
 
-    如果选择“发送到输出窗口”，则在点击记录点时，消息将出现在“诊断工具”窗口中。
+    如果选择“发送到输出窗口”  ，则在点击记录点时，消息将出现在“诊断工具”窗口中。
 
     ![“诊断工具”窗口中的记录点数据](../debugger/media/snapshot-logpoint-output.png)
 
-    如果选择“发送到应用程序日志”，则在点击记录点时，消息会出现在可以看到来自 `System.Diagnostics.Trace`（或 .NET Core 中的 `ILogger`）的消息的任何位置，例如 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
+    如果选择“发送到应用程序日志”  ，则在点击记录点时，消息会出现在可以看到来自 `System.Diagnostics.Trace`（或 .NET Core 中的 `ILogger`）的消息的任何位置，例如 [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs)。
 
 ## <a name="next-steps"></a>后续步骤
 

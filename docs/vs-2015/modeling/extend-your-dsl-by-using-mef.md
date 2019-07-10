@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1b90f37dcdadc53b6f2a81b9b4e9a860dd6a529
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696189"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692522"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +131,7 @@ ms.locfileid: "65696189"
   
    - 此程序集通常具有文件名结尾"。Dsl.dll"。  
   
-   - 如果你有权访问 DSL 项目，可以找到程序集文件的目录下**Dsl\bin\\\\** *  
+   - 如果你有权访问 DSL 项目，可以找到程序集文件的目录下**Dsl\\bin\\\***  
   
    - 如果你有权访问的 DSL 的 VSIX 文件，您可以通过 VSIX 文件的文件扩展名更改为".zip"找到程序集。 解压缩.zip 文件。  
   
@@ -159,7 +159,7 @@ ms.locfileid: "65696189"
   
    1. 在中**source.extension.vsixmanifest**，单击**添加引用**  
   
-   2. 在对话框中，单击**添加负载**，然后查找的 DSL 的 VSIX 文件。 在 DSL 解决方案中生成的 VSIX 文件 * * DslPackage\bin\\\\* * *。  
+   2. 在对话框中，单击**添加负载**，然后查找的 DSL 的 VSIX 文件。 在 DSL 解决方案中生成的 VSIX 文件**DslPackage\\bin\\\*** 。  
   
        这允许用户在同时安装 DSL 和扩展。 如果用户已安装 DSL，则将安装你的扩展。  
   
