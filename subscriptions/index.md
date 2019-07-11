@@ -7,19 +7,18 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: 欢迎使用 Visual Studio 订阅
-Searchscope: VS Subscription
-ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259476"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784386"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 订阅
 
 Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  订阅的权益包括可以获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
 
-## <a name="get-started"></a>入门
+## <a name="get-started"></a>开始操作
 
 管理员登录到 [https://manage.visualstudio.com](https://manage.visualstudio.com)，将订阅分配给团队。<br>
 订阅者登录到 [https://my.visualstudio.com](https://my.visualstudio.com)，访问订阅权益。
@@ -127,7 +126,7 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio App Center</h3>
+                        <h3>Visual Studio 应用中心</h3>
                     </div>
                 </div>
             </div>
