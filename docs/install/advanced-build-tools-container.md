@@ -11,16 +11,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d54ac2d7f58f7b5be768e1f431a53d83f5f8fe94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d14a02c70c0e4496c482940237054027e152a70
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943525"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552852"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
-[将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像和最新 Visual Studio 生成工具安装程序的 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 映像。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
+::: moniker range="vs-2017"
+
+[将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像和最新 Visual Studio 生成工具安装程序的 [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 映像。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+[将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像和最新 Visual Studio 生成工具安装程序的 [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 映像。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
+
+::: moniker-end
 
 下面的示例 Dockerfile 使用 microsoft/dotnet-framework 映像的特定版本标记。 对基础映像使用特定标记十分普遍，这样可轻松记住生成或重新生成映像始终具有相同基础。
 
@@ -60,8 +70,8 @@ if "%ERRORLEVEL%"=="3010" (
 # escape=`
 
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
-ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+# You could also use the immutable tag @sha256:3eaa3ba18f45e6561f32d8dd927045413f1dd043d7d29fb581f5cb3c6f7d7481
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 FROM ${FROM_IMAGE}
 
 # Copy our Install script.
@@ -106,8 +116,8 @@ CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 # escape=`
 
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
-ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+# You could also use the immutable tag @sha256:324e9ab7262331ebb16a4100d0fb1cfb804395a766e3bb1806c62989d1fc1326
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 FROM ${FROM_IMAGE}
 
 # Copy our Install script.
@@ -193,15 +203,16 @@ Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --n
 The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
 
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
 
 ::: moniker-end
 
-After the last line finishes executing, open "%TEMP%\vslogs.zip" on your machine, or submit an issue on the [Developer Community](https://developercommunity.visualstudio.com) website.
+最后一行完成执行之后，在计算机上打开“%TEMP%\vslogs.zip”，或在[开发者社区](https://developercommunity.visualstudio.com)网站上提交问题。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## See also
+## <a name="see-also"></a>请参阅
 
-* [Install Build Tools into a Container](build-tools-container.md)
-* [Known Issues for Containers](build-tools-container-issues.md)
-* [Visual Studio Build Tools workload and component IDs](workload-component-id-vs-build-tools.md)
+* [将生成工具安装到容器](build-tools-container.md)
+* [容器的已知问题](build-tools-container-issues.md)
+* [Visual Studio 生成工具工作负载和组件 ID](workload-component-id-vs-build-tools.md)

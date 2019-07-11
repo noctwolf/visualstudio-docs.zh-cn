@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177630"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624117"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -28,101 +28,13 @@ ms.locfileid: "66177630"
 
 如果 Visual Studio 生成工具没有生成源代码所需的内容，则可以将这些相同步骤用于其他 Visual Studio 产品。 但是请注意，Windows 容器不支持交互用户界面，因此所有命令都必须自动执行。
 
-## <a name="overview"></a>概述
+## <a name="before-you-begin"></a>在开始之前
 
-使用 [Docker](https://www.docker.com/what-docker) 可创建映像，而通过映像可以创建生成源代码的容器。 示例 Dockerfile 安装最新 Visual Studio 生成工具以及通常用于生成源代码的一些其他有用程序。 可以进一步修改自己的 Dockerfile 以包括其他工具和脚本，来运行测试、发布生成输出等。
+下面假定你对 [Docker](https://www.docker.com/what-docker) 比较熟悉。 如果你尚不熟悉在 Windows 上运行 Docker，请了解如何[在 Windows 上安装和配置 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)。
 
-如果已安装用于 Windows 的 Docker，则可以跳到步骤 3。
+下面的基础映像是一个示例，可能不适用于你的系统。 请阅读 [Windows 容器版本兼容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)，以确定应将哪个基础映像用于你的环境。
 
-## <a name="step-1-enable-hyper-v"></a>步骤 1。 启用 Hyper-V
-
-默认情况下不会启用 Hyper-V。 必须启用它才能启动用于 Windows 的 Docker，因为当前只对 Windows 10 支持 Hyper-V 隔离。
-
-* [在 Windows 10 上启用 Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-* [在 Windows Server 2016 上启用 Hyper-V](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
-
-> [!NOTE]
-> 必须在计算机上启用虚拟化。 默认情况下通常会启用它；但是，如果 Hyper-V 安装失败，请参阅系统文档以了解如何启用虚拟化。
-
-## <a name="step-2-install-docker-for-windows"></a>步骤 2。 安装用于 Windows 的 Docker
-
-如果使用 Windows 10，则可以[下载并安装 Docker Community Edition](https://docs.docker.com/docker-for-windows/install)。 如果使用 Windows Server 2016，请按照[安装 Docker Enterprise Edition 的说明](https://docs.docker.com/install/windows/docker-ee)进行操作。
-
-## <a name="step-3-switch-to-windows-containers"></a>步骤 3。 切换到 Windows 容器
-
-只能在 Windows 上安装生成工具，此操作要求[切换到 Windows 容器](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers)。 Windows 10 上的 Windows 容器仅支持 [Hyper-V 隔离](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container)，而 Windows Server 2016 上的 Windows 容器同时支持 Hyper-V 和进程隔离。
-
-## <a name="step-4-expand-maximum-container-disk-size"></a>步骤 4。 扩展最大容器磁盘大小
-
-Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量磁盘空间以用于安装的所有工具。 即使示例 Dockerfile 禁用包缓存，仍必须增加容器映像的磁盘大小以容纳所需空间。 当前在 Windows 上，只能通过更改 Docker 配置来增加磁盘大小。
-
-**在 Windows 10 上**：
-
-1. [右键单击系统托盘中的“用于 Windows 的 Docker”图标](https://docs.docker.com/docker-for-windows/#docker-settings)，再单击“设置”。
-
-1. [单击守护程序](https://docs.docker.com/docker-for-windows/#docker-daemon)部分。
-
-1. [将“基本”](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)按钮切换为“高级”。
-
-1. 添加以下 JSON 数组属性以将磁盘空间增大到 127 GB（足以在占用空间增多的情况下用于生成工具）。
-
-   ```json
-   {
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   此属性会添加到你已拥有的任何内容。 例如，将这些更改应用于默认守护程序配置文件之后，你现在应看到：
-
-   ```json
-   {
-     "registry-mirrors": [],
-     "insecure-registries": [],
-     "debug": true,
-     "experimental": true,
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   若要查看更多配置选项和提示，请参阅 [Windows 上的 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)。
-
-1. 单击“应用”。
-
-**在 Windows Server 2016 上**：
-
-1. 停止“docker”服务：
-
-   ```shell
-   sc.exe stop docker
-   ```
-
-1. 在提升的命令提示符处，编辑“%ProgramData%\Docker\config\daemon.json”（或是指定为 `dockerd --config-file` 的任何内容）。
-
-1. 添加以下 JSON 数组属性以将磁盘空间增大到 127 GB（足以在占用空间增多的情况下用于生成工具）。
-
-   ```json
-   {
-     "storage-opts": [
-       "size=120G"
-     ]
-   }
-   ```
-
-   此属性会添加到你已拥有的任何内容。 若要查看更多配置选项和提示，请参阅 [Windows 上的 Docker 引擎](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon)。
- 
-1. 保存并关闭文件。
-
-1. 启动“docker”服务：
-
-   ```shell
-   sc.exe start docker
-   ```
-
-## <a name="step-5-create-and-build-the-dockerfile"></a>步骤 5。 创建和生成 Dockerfile
+## <a name="create-and-build-the-dockerfile"></a>创建和生成 Dockerfile
 
 将下面的示例 Dockerfile 保存为磁盘上的新文件。 如果该文件仅仅命名为“Dockerfile”，则默认情况下会识别它。
 
@@ -177,9 +89,9 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    ```
 
    > [!WARNING]
-   > 如果映像直接基于 microsoft/windowsservercore 或 mcr.microsoft.com/windows/servercore（请参阅 [Microsoft 将联合容器目录](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)），可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.7.1 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
+   > 如果映像直接基于 microsoft/windowsservercore 或 mcr.microsoft.com/windows/servercore（请参阅 [Microsoft 将联合容器目录](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)），可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.7.2 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
    >
-   > 无法在 mcr\.microsoft\.com\/windows\/servercore:1809 或更高版本上正常安装 Visual Studio 2017 版本 15.8 或更低版本（任何产品）。 不显示任何错误信息。
+   > Visual Studio 2017 版本 15.8 或更高版本（任何产品）无法在 mcr.microsoft.com/windows/servercore:1809 或更高版本上正常安装。 不显示任何错误信息。
    >
    > 请参阅 [Windows 容器版本兼容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)，以了解哪些主机操作系统版本支持哪些容器操作系统版本，并请参阅[容器的已知问题](build-tools-container-issues.md)了解已知问题。
 
@@ -217,7 +129,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
    ```
 
    > [!WARNING]
-   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.7.1 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
+   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.8 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
    >
    > 请参阅 [Windows 容器版本兼容性](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility)，以了解哪些主机操作系统版本支持哪些容器操作系统版本，并请参阅[容器的已知问题](build-tools-container-issues.md)了解已知问题。
 
@@ -249,7 +161,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
    ::: moniker-end
 
-## <a name="step-6-using-the-built-image"></a>步骤 6。 使用生成的映像
+## <a name="using-the-built-image"></a>使用生成的映像
 
 现在已创建了映像，可以在容器中运行它以进行交互式自动生成。 该示例使用开发人员命令提示，因此已配置了 PATH 和其他环境变量。
 

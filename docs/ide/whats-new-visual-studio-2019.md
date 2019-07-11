@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328831"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552864"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -41,8 +41,8 @@ ms.locfileid: "67328831"
 
 ## <a name="develop"></a>开发
 
-使用新功能来节省时间。
-<br><br>
+查看以下视频，以了解如何使用新功能来节省时间。 <br><br>*视频长度：3.00 分钟*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>改进的搜索
@@ -104,8 +104,8 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 ## <a name="collaborate"></a>协作
 
-建立团队来解决问题。
-<br><br>
+查看以下视频，以了解如何建立团队来解决问题。 <br><br>*视频长度：4.22 分钟*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>云优先工作流
@@ -142,8 +142,8 @@ Visual Studio 2019 中会默认安装此服务。
 
 ## <a name="debug"></a>调试
 
-通过精准定位瞄准。
-<br><br>
+查看以下视频，以了解如何在调试时通过精准定位瞄准。 <br><br>*视频长度：3.54 分钟*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>性能提升
