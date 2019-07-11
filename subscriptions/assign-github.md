@@ -7,12 +7,12 @@ ms.date: 04/23/2019
 ms.topic: conceptual
 description: 管理 Visual Studio + GitHub 捆绑包中的订阅
 searchscope: VS Subscription
-ms.openlocfilehash: a775317029db1a2be3b01411955ae197c7df6873
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: adc06dd13579697d6aa74158f980cd873ea661fe
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945236"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586862"
 ---
 # <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>管理带有 GitHub Enterprise 的 Visual Studio 订阅
 
@@ -32,7 +32,7 @@ ms.locfileid: "64945236"
 - [过度分配](handle-overclaimed-license.md)
 
 > [!Important]
-> 如果 Visual Studio 订阅管理员分配了带有 GitHub Enterprise 的 Visual Studio 订阅，且从未购买过这些订阅，则它们将对组织中的 GitHub Enterprise 管理员不可见。 要确保 GitHub Enterprise 订阅可见，应在首次分配订阅时至少购买一个带 GitHub Enterprise 的 Visual Studio Professional 订阅或带 GitHub Enterprise 的 Visual Studio Enterprise 订阅。  
+> 如果 Visual Studio 订阅管理员分配了带有 GitHub Enterprise 的 Visual Studio 订阅，且从未购买过这些订阅，则它们将对组织中的 GitHub Enterprise 管理员不可见。 要确保 GitHub Enterprise 订阅可见，应在首次分配订阅时至少购买一个带 GitHub Enterprise 的 Visual Studio Professional 订阅或带 GitHub Enterprise 的 Visual Studio Enterprise 订阅  。  
 >
 > 由客户负责确保在管理门户中针对所分配的每个 GitHub 订阅都分配了一个对应的带 GitHub 的 Visual Studio 订阅，从而保证符合此订阅的许可要求。
 
@@ -44,9 +44,9 @@ ms.locfileid: "64945236"
 
 GitHub 可作为基于云的 GitHub.com 提供，也可提供为本地 GitHub Enterprise Server。  这两种版本的管理过程有所不同。  GitHub 提供了各种帮助主题和管理员指南来帮助你管理 GitHub Enterprise 订阅。  我们提供了下述精选主题的链接。  
 
-### <a name="githubspanspancom"></a>GitHub<span></span>.com 
+### <a name="githubcom"></a>GitHub.com 
 
-要详细了解如何管理 GitHub<span></span>.com，请查看下述有关 [GitHub 帮助](https://help.github.com/en)的主题。
+要详细了解如何管理 GitHub.com，请查看下述有关 [GitHub 帮助](https://help.github.com/en)的主题。
 - [帮助主题的完整列表](https://help.github.com/en)
 - [Managing membership in your organization](https://help.github.com/en/articles/managing-membership-in-your-organization)（管理组织中的成员身份）
 > - [Inviting users to join your organization](https://help.github.com/en/articles/inviting-users-to-join-your-organization)（邀请用户加入你的组织）
@@ -70,13 +70,14 @@ GitHub 帮助中提供了大量管理员指南来解答相关问题，还提供�
 > - [User security](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)（用户安全性）
 - [Installing and configuring GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)（安装和配置 GitHub Enterprise Server）
 
-
 ## <a name="support-resources"></a>支持资源
--  有关各种 GitHub 主题的问题解答，可查看 [GitHub 帮助](https://help.github.com/en)。
--  在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
--  获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
+
+- 有关各种 GitHub 主题的问题解答，可查看 [GitHub 帮助](https://help.github.com/en)。
+- 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+- 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="next-steps"></a>后续步骤
+
 要详细了解如何管理带 GitHub Enterprise 的 Visual Studio 订阅，请查看 Visual Studio [订阅管理门户](https://visualstudio.microsoft.com/subscriptions-administration/)。
