@@ -1,17 +1,20 @@
 ---
 title: XAML 设计器扩展性迁移
-ms.date: 04/17/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
 ms.author: lutzr
 manager: jillfra
+dev_langs:
+- csharp
+- vb
 monikerRange: vs-2019
-ms.openlocfilehash: f83c40a67dc36301816b2384242d790a9f776044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447355"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784474"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML 设计器扩展性迁移
 
@@ -44,7 +47,7 @@ ms.locfileid: "63447355"
 
 图面上隔离可扩展性模型不允许扩展依赖于实际控件库，因此，扩展不能从控件库引用类型。 例如， *MyLibrary.designtools.dll*不应依赖于*MyLibrary.dll*。
 
-注册通过属性表的类型的元数据时，此类依赖项是最常见。 通过直接引用控件库的扩展插件代码类型[typeof](/dotnet/csharp/language-reference/keywords/typeof)中新的 Api 使用基于字符串的类型名称将替换：
+注册通过属性表的类型的元数据时，此类依赖项是最常见。 通过直接引用控件库的扩展插件代码类型[typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator)在 Visual Basic 中) 中新的 Api 使用基于字符串的类型名称将替换：
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -68,6 +71,27 @@ public class AttributeTableProvider : IProvideAttributeTable
 }
 ```
 
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Metadata
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+<Assembly: ProvideMetadata(GetType(AttributeTableProvider))>
+
+Public Class AttributeTableProvider
+    Implements IProvideAttributeTable
+
+    Public ReadOnly Property AttributeTable As AttributeTable Implements IProvideAttributeTable.AttributeTable
+        Get
+            Dim builder As New AttributeTableBuilder
+            builder.AddCustomAttributes("MyLibrary.MyControl", New DescriptionAttribute(Strings.MyControlDescription))
+            builder.AddCustomAttributes("MyLibrary.MyControl", New FeatureAttribute(GetType(MyControlDefaultInitializer)))
+            Return builder.CreateTable()
+        End Get
+    End Property
+End Class
+```
+
 ## <a name="feature-providers-and-model-api"></a>功能提供程序和模型 API
 
 功能提供程序将在扩展程序集中实现，并在 Visual Studio 进程中加载。 `FeatureAttribute` 将继续引用直接使用的功能提供程序类型[typeof](/dotnet/csharp/language-reference/keywords/typeof)。
@@ -84,6 +108,16 @@ TypeDefinition buttonType = ModelFactory.ResolveType(
 if (type != null && buttonType != type.IsSubclassOf(buttonType))
 {
 }
+```
+
+```vb
+Dim type As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("MyLibrary.MyControl"))
+Dim buttonType As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("System.Windows.Controls.Button"))
+If type?.IsSubclassOf(buttonType) Then
+
+End If
 ```
 
 从该图面上隔离可扩展性 API 集中移除 Api:
@@ -123,7 +157,7 @@ if (type != null && buttonType != type.IsSubclassOf(buttonType))
 * `ModelService.Find(ModelItem startingItem, Predicate<Type> match)`
 * `ModelItem.ItemType`
 * `ModelProperty.AttachedOwnerType`
-* `ModelProperty.PropertyType
+* `ModelProperty.PropertyType`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type)`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type, Predicate<Type> match)`
 * `FeatureManager.InitializeFeatures(Type type)`
@@ -140,7 +174,7 @@ if (type != null && buttonType != type.IsSubclassOf(buttonType))
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-等基元类型的已知`int`， `string`，或`Thickness`可以作为.NET Framework 实例传递给模型 API，并将转换为目标运行时进程中的相应对象。 例如：
+等基元类型的已知`Int32`， `String`，或`Thickness`可以作为.NET Framework 实例传递给模型 API，并将转换为目标运行时进程中的相应对象。 例如:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -154,6 +188,20 @@ public class MyControlDefaultInitializer : DefaultInitializer
     base.InitializeDefaults(item);
   }
 }
+```
+
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+Public Class MyControlDefaultInitializer
+    Inherits DefaultInitializer
+
+    Public Overrides Sub InitializeDefaults(item As ModelItem)
+        item.Properties!Width.SetValue(800.0)
+        MyBase.InitializeDefaults(item)
+    End Sub
+End Class
 ```
 
 ## <a name="limited-support-for-designdll-extensions"></a>对有限的支持。 design.dll 扩展
