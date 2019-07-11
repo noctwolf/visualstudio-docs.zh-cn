@@ -59,12 +59,12 @@ ms.locfileid: "62950349"
 |rootnamespace|当前项目的根命名空间。 此参数仅适用于项模板。|
 |safeitemname|与 `itemname` 相同，但删除了所有不安全字符和空格。|
 |safeprojectname|用户在创建项目时提供的名称，但名称中删除了所有不安全字符和空格。|
-|时间|以 DD/MM/YYYY 00:00:00 格式表示的当前时间。|
+|time|以 DD/MM/YYYY 00:00:00 格式表示的当前时间。|
 |SpecificSolutionName|解决方案的名称。 在选中“创建解决方案目录”时，`SpecificSolutionName` 具有解决方案名称。 在未选中“创建解决方案目录”时，`SpecificSolutionName` 为空。|
 |userdomain|当前的用户域。|
 |username|当前的用户名称。|
 |webnamespace|当前网站的名称。 此参数在 Web 窗体模板中用于保证类名是唯一的。 如果网站在 Web 服务器的根目录下，则此模板参数解析为 Web 服务器的根目录。|
-|年|以 YYYY 格式表示的当前年份。|
+|year|以 YYYY 格式表示的当前年份。|
 
 > [!NOTE]
 > 模板参数区分大小写。
