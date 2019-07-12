@@ -19,11 +19,11 @@ ms.locfileid: "62950349"
 ---
 # <a name="template-parameters"></a>模板参数
 
-实例化模板时，可替换模板中的值。 若要设置此功能，请使用模板参数。 模板参数可用于替换值，例如模板中的类名和命名空间。 当用户添加新项或项目时，后台运行的模板向导会替换这些参数。
+实例化模板时，可替换模板中的值。 若要设置此功能，请使用模板参数  。 模板参数可用于替换值，例如模板中的类名和命名空间。 当用户添加新项或项目时，后台运行的模板向导会替换这些参数。
 
 ## <a name="declare-and-enable-template-parameters"></a>声明和启用模板参数
 
-模板参数以 $参数$ 的格式进行声明。 例如:
+模板参数以 $参数$ 的格式进行声明  。 例如:
 
 - $safeprojectname$
 
@@ -33,7 +33,7 @@ ms.locfileid: "62950349"
 
 ### <a name="enable-parameter-substitution-in-templates"></a>在模板中启用参数替换
 
-1. 在模板的 .vstemplate 文件中，找到与要为之启用参数替换的项对应的 `ProjectItem` 元素。
+1. 在模板的 .vstemplate  文件中，找到与要为之启用参数替换的项对应的 `ProjectItem` 元素。
 
 1. 将 `ReplaceParameters` 元素的 `ProjectItem` 属性设置为 `true`。
 
@@ -59,12 +59,12 @@ ms.locfileid: "62950349"
 |rootnamespace|当前项目的根命名空间。 此参数仅适用于项模板。|
 |safeitemname|与 `itemname` 相同，但删除了所有不安全字符和空格。|
 |safeprojectname|用户在创建项目时提供的名称，但名称中删除了所有不安全字符和空格。|
-|时间|以 DD/MM/YYYY 00:00:00 格式表示的当前时间。|
+|time|以 DD/MM/YYYY 00:00:00 格式表示的当前时间。|
 |SpecificSolutionName|解决方案的名称。 在选中“创建解决方案目录”时，`SpecificSolutionName` 具有解决方案名称。 在未选中“创建解决方案目录”时，`SpecificSolutionName` 为空。|
 |userdomain|当前的用户域。|
 |username|当前的用户名称。|
 |webnamespace|当前网站的名称。 此参数在 Web 窗体模板中用于保证类名是唯一的。 如果网站在 Web 服务器的根目录下，则此模板参数解析为 Web 服务器的根目录。|
-|年|以 YYYY 格式表示的当前年份。|
+|year|以 YYYY 格式表示的当前年份。|
 
 > [!NOTE]
 > 模板参数区分大小写。
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-引用文件时，在项目模板的 .vstemplate 文件中添加 `ReplaceParameters="true"` 属性：
+引用文件时，在项目模板的 .vstemplate  文件中添加 `ReplaceParameters="true"` 属性：
 
 ```xml
 <TemplateContent>
