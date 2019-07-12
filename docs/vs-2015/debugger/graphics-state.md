@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420061"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825580"
 ---
 # <a name="graphics-state"></a>图形状态
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
 ##### <a name="to-change-the-state-view"></a>若要更改状态视图  
   
 - 在“状态”窗口中标题栏下面的左上方，选择对应于你想要使用的状态视图样式的按钮。  
-  
-    - **显示 API 输入状态视图**  
-  
-    - **显示逻辑状态视图**  
-  
-    - **显示固定状态视图**  
+
+  - **显示 API 输入状态视图**  
+
+  - **显示逻辑状态视图**  
+
+  - **显示固定状态视图**  
   
 > [!IMPORTANT]
 > 必须固定“显示 API 输入状态”或“显示逻辑状态”视图中的状态，以便它在“显示固定状态视图”中显示    。  
@@ -54,7 +54,7 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
 |列|描述|  
 |------------|-----------------|  
 |名称|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在“API 输入状态视图”和“逻辑状态视图”状态中，缩进名称以显示状态之间的层次结构关系   。<br /><br /> 在“固定状态视图”状态中，完全限定名显示在简单列表中  。|  
-|“值”|状态项的值。|  
+|值|状态项的值。|  
 |类型|状态项的类型。|  
   
 ### <a name="changed-state"></a>已更改的状态  

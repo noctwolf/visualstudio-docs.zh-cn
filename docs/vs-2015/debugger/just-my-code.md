@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421817"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823955"
 ---
 # <a name="just-my-code"></a>仅我的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "63421817"
 ### <a name="BKMK_NET_Exception_behavior"></a> 异常行为  
  如果在非用户代码中出现未经处理的异常，则调试器会在用户代码中生成异常的行上中断。  
   
- 如果针对异常启用了第一机会异常，则以绿色突出显示用户代码行。 调用堆栈会显示标记的带批注的帧 **[外部代码]**。  
+ 如果针对异常启用了第一机会异常，则以绿色突出显示用户代码行。 调用堆栈会显示标记的带批注的帧 **[外部代码]** 。  
   
 ## <a name="BKMK_C___Just_My_Code"></a>C++“仅我的代码”  
   
@@ -123,7 +123,7 @@ ms.locfileid: "63421817"
 |元素|描述|  
 |-------------|-----------------|  
 |函数|必需。 将一个或多个函数指定为非用户函数。|  
-|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如：<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
+|`Name`|必需。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
 |`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|  
 |`Action`|必需。 以下区分大小写的值之一：<br /><br /> -   `NoStepInto`  – 告知调试器逐过程执行匹配的函数。<br />-   `StepInto`  – 告知调试器单步执行匹配的函数中，重写任何其他`NoStepInto`匹配的函数。|  
   
@@ -204,7 +204,7 @@ ms.locfileid: "63421817"
   
   可以通过将一个名为 `mycode.json` 的 .json 文件添加到项目的根文件夹，来修改默认分类以及对特定文件和 url 进行分类。  
   
-  其他所有代码都分类为“MyCode”。  
+  其他所有代码都分类为“MyCode”  。  
   
 ### <a name="BKMK_JS_Stepping_behavior"></a> 单步执行行为  
   
@@ -222,9 +222,9 @@ ms.locfileid: "63421817"
   
 - 如果在以下内容中遇到 `debugger` 关键字：  
   
-    - **LibraryCode**代码，调试器始终中断。  
-  
-    - **UnrelatedCode**代码，调试器不会停止。  
+  - **LibraryCode**代码，调试器始终中断。  
+
+  - **UnrelatedCode**代码，调试器不会停止。  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> 异常行为  
  如果在以下内容中出现未经处理的异常：  
@@ -284,17 +284,17 @@ ms.locfileid: "63421817"
   
 |||  
 |-|-|  
-|**Eval**|通过将字符串传递给主机提供的 `eval` 函数来执行的脚本。 默认情况下，Eval 脚本分类为“MyCode”。|  
-|**Function**|通过将字符串传递给 `Function` 构造函数来执行的脚本。 默认情况下，Function 脚本分类为“LibraryCode”。|  
-|**ScriptBlock**|通过将字符串传递给 `setTimeout`、`setImmediate` 或 `setInterval` 函数来执行的脚本。 默认情况下，ScriptBlock 脚本分类为“UnrelatedCode”。|  
+|**Eval**|通过将字符串传递给主机提供的 `eval` 函数来执行的脚本。 默认情况下，Eval 脚本分类为“MyCode”  。|  
+|**Function**|通过将字符串传递给 `Function` 构造函数来执行的脚本。 默认情况下，Function 脚本分类为“LibraryCode”  。|  
+|**ScriptBlock**|通过将字符串传递给 `setTimeout`、`setImmediate` 或 `setInterval` 函数来执行的脚本。 默认情况下，ScriptBlock 脚本分类为“UnrelatedCode”  。|  
   
  可以将值更改为以下关键字之一：  
   
-- `MyCode` 将脚本分类为“MyCode”。  
+- `MyCode` 将脚本分类为“MyCode”  。  
   
-- `Library` 将脚本分类为“LibraryCode”。  
+- `Library` 将脚本分类为“LibraryCode”  。  
   
-- `Unrelated` 将脚本分类为“UnrelatedCode”。  
+- `Unrelated` 将脚本分类为“UnrelatedCode”  。  
   
   **MyCode、Libraries 和 Unrelated**  
   

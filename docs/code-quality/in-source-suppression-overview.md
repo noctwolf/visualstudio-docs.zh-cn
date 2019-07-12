@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825811"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821568"
 ---
 # <a name="suppress-code-analysis-warnings"></a>禁止显示代码分析警告
 
@@ -67,17 +67,17 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 - **作用域**-取消该警告的目标。 如果未指定目标，则将它设置为属性的目标。 支持[作用域](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope)包括以下：
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -此作用域禁止显示警告对自身的命名空间。 它不会取消对类型的命名空间中的警告。
+  - `namespace` -此作用域禁止显示警告对自身的命名空间。 它不会取消对类型的命名空间中的警告。
 
-   - `namespaceanddescendants` -（新的 Visual Studio 2019) 此作用域禁止显示警告中的命名空间和所有后代的符号。 `namespaceanddescendants`值仅适用于 Roslyn 分析器，并且二进制的、 基于 FxCop 的静态分析被忽略。
+  - `namespaceanddescendants` -（新的 Visual Studio 2019) 此作用域禁止显示警告中的命名空间和所有后代的符号。 `namespaceanddescendants`值仅适用于 Roslyn 分析器，并且二进制的、 基于 FxCop 的静态分析被忽略。
 
 - **目标**-用于取消该警告将目标指定的标识符。 它必须包含完全限定的项的名称。
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001918"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825754"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 
@@ -25,11 +25,11 @@ XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段�
 
 - 编辑器中的当前元素必须是空的，不包含任何属性。 例如，下列元素均有效
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - 光标必须紧邻元素名右侧。
 
@@ -56,7 +56,7 @@ XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段�
 
      新文件将在编辑器中打开。 该文件包含默认的 XML 声明 `<?xml version="1.0" encoding="utf-8">`。
 
-3. 在文档属性窗口中，单击浏览按钮 (**...**) 上**架构**字段。
+3. 在文档属性窗口中，单击浏览按钮 ( **...** ) 上**架构**字段。
 
      **XSD 架构**显示对话框。
 
@@ -66,7 +66,7 @@ XML 编辑器具有从 XML 架构定义语言 (XSD) 架构生成 XML 代码段�
 
 5. 选择架构文件，然后单击**打开**。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
      现在是 XML 架构与 XML 文档关联。
 

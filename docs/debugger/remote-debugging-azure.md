@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407768"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824436"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Visual Studio 中的 Azure 中的 IIS 上的远程调试 ASP.NET Core
 
@@ -108,9 +108,9 @@ Visual Studio 2017 需要按照本文中所示的步骤。
 
 * 如果需要帮助，确保您的应用程序设置已完成，部署，并正确运行在 IIS 中，以便可以调试，请按照本主题中的所有步骤。
 
-    * 在开始之前，请按照中所述的所有步骤[安装和运行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
+  * 在开始之前，请按照中所述的所有步骤[安装和运行的 IIS](/azure/virtual-machines/windows/quick-create-portal)。
 
-    * 当网络安全组中打开端口 80 时，打开[更正端口](#bkmk_openports)远程调试器 （4024 或 4022）。 这样一来，无需以后将其打开。
+  * 当网络安全组中打开端口 80 时，打开[更正端口](#bkmk_openports)远程调试器 （4024 或 4022）。 这样一来，无需以后将其打开。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的浏览器安全设置
 

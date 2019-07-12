@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441467"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824928"
 ---
 # <a name="extending-javascript-intellisense"></a>扩展 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ JavaScript IntelliSense 扩展性功能，可自定义在第三方库的 JavaScr
   
  自动发现机制，以自动查找遵循文件命名约定的扩展语言服务*libraryname*。 intellisense.js，和的中到库所在的目录的位置该应用扩展。 例如，jQuery 库的有效扩展名将 jQuery.intellisense.js。 对于限制性更强的 jQuery 扩展，可以使用文件的名称，例如 jQuery 1.7.1.intellisense.js （特定于版本的扩展） 或 jQuery.ui.intellisense.js （作用域内的 jQuery 库的扩展）。 如果给定库中找到多个扩展，则使用限制性最高版本的扩展。  
   
- 如果你想要使用适用于所有 JavaScript 项目文件扩展，则可能会选择将扩展添加到引用组。 有几种类型的引用组，包含隐式引用的是那些和那些包含专用辅助角色的引用。 若要添加扩展，通常需要将文件添加为隐式引用组，或者**隐式 (Windows)**，**隐式 (Web)**。 在代码编辑器中打开每个.js 文件的作用域中是隐式引用。 当使用此方法时，您需要添加扩展插件和补充该扩展的文件。  
+ 如果你想要使用适用于所有 JavaScript 项目文件扩展，则可能会选择将扩展添加到引用组。 有几种类型的引用组，包含隐式引用的是那些和那些包含专用辅助角色的引用。 若要添加扩展，通常需要将文件添加为隐式引用组，或者**隐式 (Windows)** ，**隐式 (Web)** 。 在代码编辑器中打开每个.js 文件的作用域中是隐式引用。 当使用此方法时，您需要添加扩展插件和补充该扩展的文件。  
   
  使用**智能感知**页**选项**对话框可以将扩展添加为引用组。 您可以访问**智能感知**页上通过选择**工具**，**选项**菜单栏上，然后选择**文本编辑器**， **JavaScript**， **IntelliSense**，**引用**。 有关引用组的详细信息，请参阅[JavaScript IntelliSense](../ide/javascript-intellisense.md)并[选项，文本编辑器、 JavaScript、 IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`。 返回一个数组，表示函数中的每个参数的注释。 数组的成员包括：  
   
-    - `name`。 返回一个表示参数名称的字符串。  
-  
-    - `comment`。 返回一个字符串，包含注释的参数。  
+  - `name`。 返回一个表示参数名称的字符串。  
+
+  - `comment`。 返回一个字符串，包含注释的参数。  
   
 ### <a name="FunctionHelp"></a> functionHelp 属性  
  返回有关函数的帮助。 此属性是可用于`signaturehelp`事件对象。  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`。 读/写。 获取或设置数组的函数签名。 数组中的每个元素均`signature`对象。 某些`signature`属性，如`locid`，对应于常见[XML 文档注释](../ide/xml-documentation-comments-javascript.md)属性。  
   
-     成员`signature`对象包括：  
-  
-    - `description`。 读/写。 返回一个字符串，描述该函数。  
-  
+  成员`signature`对象包括：  
+
+  - `description`。 读/写。 返回一个字符串，描述该函数。  
+
+  - `locid`。 读/写。 返回包含有关该函数的本地化信息的字符串标识符。  
+
+  - `helpKeyword`。 读/写。 返回一个字符串，包含帮助关键字。  
+
+  - `externalFile`。 读/写。 返回一个字符串，表示文件，其中包含成员 id。  
+
+  - `externalid`。 读/写。 返回一个字符串，表示该函数的成员 ID。  
+
+  - `params`。 读/写。 获取或设置函数的参数数组。 参数数组中的每个元素均`parameter`具有对应的以下特性的属性的对象[ \<param >](../ide/param-javascript.md)元素：  
+
+    - `name`。 读/写。 返回一个字符串，表示参数名称。  
+
+    - `type`。 读/写。 返回一个字符串，表示参数类型。  
+
+    - `elementType`。 读/写。 如果类型为`Array`，返回一个字符串，表示数组中元素的类型。  
+
+    - `description`。 读/写。 返回一个字符串，描述的参数。  
+
     - `locid`。 读/写。 返回包含有关该函数的本地化信息的字符串标识符。  
-  
+
+    - `optional`。 读/写。 返回一个字符串，指示参数是否可选。 `true` 指示参数是可选的;`false`指示它不是。  
+
+  - `returnValue`。 读/写。 获取或设置一个具有相对应的属性的返回值对象的以下特性[\<返回 >](../ide/returns-javascript.md)元素：  
+
+    - `type`。 读/写。 返回一个字符串，表示返回类型。  
+
+    - `elementType`。 读/写。 如果类型为`Array`，返回一个字符串，表示数组中元素的类型。  
+
+    - `description`。 读/写。 返回一个字符串，描述返回值。  
+
+    - `locid`。 读/写。 返回包含有关该函数的本地化信息的字符串标识符。  
+
     - `helpKeyword`。 读/写。 返回一个字符串，包含帮助关键字。  
-  
+
     - `externalFile`。 读/写。 返回一个字符串，表示文件，其中包含成员 id。  
-  
+
     - `externalid`。 读/写。 返回一个字符串，表示该函数的成员 ID。  
-  
-    - `params`。 读/写。 获取或设置函数的参数数组。 参数数组中的每个元素均`parameter`具有对应的以下特性的属性的对象[ \<param >](../ide/param-javascript.md)元素：  
-  
-        - `name`。 读/写。 返回一个字符串，表示参数名称。  
-  
-        - `type`。 读/写。 返回一个字符串，表示参数类型。  
-  
-        - `elementType`。 读/写。 如果类型为`Array`，返回一个字符串，表示数组中元素的类型。  
-  
-        - `description`。 读/写。 返回一个字符串，描述的参数。  
-  
-        - `locid`。 读/写。 返回包含有关该函数的本地化信息的字符串标识符。  
-  
-        - `optional`。 读/写。 返回一个字符串，指示参数是否可选。 `true` 指示参数是可选的;`false`指示它不是。  
-  
-    - `returnValue`。 读/写。 获取或设置一个具有相对应的属性的返回值对象的以下特性[\<返回 >](../ide/returns-javascript.md)元素：  
-  
-        - `type`。 读/写。 返回一个字符串，表示返回类型。  
-  
-        - `elementType`。 读/写。 如果类型为`Array`，返回一个字符串，表示数组中元素的类型。  
-  
-        - `description`。 读/写。 返回一个字符串，描述返回值。  
-  
-        - `locid`。 读/写。 返回包含有关该函数的本地化信息的字符串标识符。  
-  
-        - `helpKeyword`。 读/写。 返回一个字符串，包含帮助关键字。  
-  
-        - `externalFile`。 读/写。 返回一个字符串，表示文件，其中包含成员 id。  
-  
-        - `externalid`。 读/写。 返回一个字符串，表示该函数的成员 ID。  
   
 ### <a name="ParentObject"></a> parentObject 属性  
  返回父对象的成员函数。 例如，对于`document.getElementByID`，`parentObject`返回`document`对象。 此属性是可用于`signaturehelp`事件对象。  
@@ -268,7 +268,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ### <a name="Annotations"></a> 添加 IntelliSense 批注  
  以下过程说明如何为第三方库提供 IntelliSense 文档支持，而无需直接修改库。 若要执行此操作，可以使用`intellisense.annotate`扩展中。  
   
- 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:   
+ 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:  
   
 - demoLib.js 是表示第三方库的项目文件。  
   
@@ -320,7 +320,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ### <a name="Logging"></a> 将消息发送到输出窗口  
  以下过程说明如何将消息发送到输出窗口。 您可以发送消息来帮助调试 IntelliSense 扩展。  
   
- 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:   
+ 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:  
   
 - exampleLib.js 是表示第三方库的项目文件。  
   
@@ -407,7 +407,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  有关可用图标值，请参阅<xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup>。  
   
- 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:   
+ 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:  
   
 - exampleLib.js，这是一个项目文件的 represens 第三方库。  
   
@@ -497,7 +497,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ### <a name="Overriding"></a> 避免对 IntelliSense 结果的运行时影响  
  JavaScript 语言服务在运行代码来动态提供 IntelliSense 信息。 因此，想要的结果可能偶尔会影响运行时行为。 以下过程演示如何重写 IntelliSense 结果时的运行时行为会导致不正确的 IntelliSense。  
   
- 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:   
+ 为使此示例正常工作，您需要项目中有以下 JavaScript 文件:  
   
 - exampleLib.js 是表示第三方库的项目文件。  
   

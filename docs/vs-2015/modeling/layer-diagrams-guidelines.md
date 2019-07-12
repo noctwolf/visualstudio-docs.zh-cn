@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440998"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823709"
 ---
 # <a name="layer-diagrams-guidelines"></a>层关系图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,9 +101,9 @@ ms.locfileid: "63440998"
 |删除不应存在的依赖项|单击依赖项，并按**删除**。|  
 |更改或限制依赖项的方向|设置其**方向**属性。|  
 |创建新的依赖项|使用**依赖项**并**双向依赖项**工具。<br /><br /> 若要绘制多个依赖关系，请双击该工具。 完成后，单击**指针**工具或按**ESC**密钥。|  
-|指定与层关联的项目不能依赖于指定的命名空间|键入命名空间中的层**禁止 Namespace 依赖项**属性。 使用分号 (**;**) 来分隔命名空间。|  
-|指定与层关联的项目必须不属于指定的命名空间|键入命名空间中的层**Forbidden Namespaces**属性。 使用分号 (**;**) 来分隔命名空间。|  
-|指定与层关联的项目必须属于某个指定的命名空间|键入命名空间中的层**Required Namespaces**属性。 使用分号 (**;**) 来分隔命名空间。|  
+|指定与层关联的项目不能依赖于指定的命名空间|键入命名空间中的层**禁止 Namespace 依赖项**属性。 使用分号 ( **;** ) 来分隔命名空间。|  
+|指定与层关联的项目必须不属于指定的命名空间|键入命名空间中的层**Forbidden Namespaces**属性。 使用分号 ( **;** ) 来分隔命名空间。|  
+|指定与层关联的项目必须属于某个指定的命名空间|键入命名空间中的层**Required Namespaces**属性。 使用分号 ( **;** ) 来分隔命名空间。|  
   
 ### <a name="Improving"></a> 提高代码的结构  
  重构更改的改进不会影响应用程序的行为，但有助于使代码在将来更易于更改和扩展。 结构良好的代码的设计容易抽象化为层关系图。  
@@ -134,7 +134,7 @@ ms.locfileid: "63440998"
   
 - 更改层的颜色和依赖项。  
   
-    - 选择一个或多个层或依赖项，右键单击，然后单击**属性**。 在中**属性**窗口中，编辑**颜色**属性。  
+  - 选择一个或多个层或依赖项，右键单击，然后单击**属性**。 在中**属性**窗口中，编辑**颜色**属性。  
   
 ## <a name="Validate"></a> 对照关系图验证代码  
  编辑关系图之后，你可以对照代码随时手动验证关系图，也可以在每次运行本地生成或[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]时进行自动验证。  

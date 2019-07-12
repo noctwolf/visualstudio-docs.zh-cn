@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400568"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64783862"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 检索部分或全部的未修饰名称C++修饰 （链接） 名称。
@@ -52,7 +52,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 > 标记名称未定义在 DIA SDK 中，因此您需要将声明添加到你的代码，或使用原始值。
 
-|Flag|“值”|描述|
+|Flag|值|描述|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|启用完全 undecoration。|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|从删除前导下划线 Microsoft 扩展关键字。|

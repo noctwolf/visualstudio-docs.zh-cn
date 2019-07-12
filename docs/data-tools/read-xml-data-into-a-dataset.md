@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566210"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821931"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 
@@ -39,7 +39,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 由于本演练重点介绍 XML 数据读入数据集，提供的 XML 文件的内容。
 
-1. 在“项目”菜单上，选择“添加新项”。
+1. 在“项目”菜单上，选择“添加新项”   。
 
 2. 选择**XML 文件**，将文件命名**authors.xml**，然后选择**添加**。
 
@@ -119,9 +119,9 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 - 两个<xref:System.Windows.Forms.Button>控件。
 
-    - 一个按钮将 XML 文件读取到数据集并将其显示<xref:System.Windows.Forms.DataGridView>控件。
+  - 一个按钮将 XML 文件读取到数据集并将其显示<xref:System.Windows.Forms.DataGridView>控件。
 
-    - 第二个按钮提取架构集中的数据，并通过<xref:System.IO.StringWriter>将其显示在<xref:System.Windows.Forms.TextBox>控件。
+  - 第二个按钮提取架构集中的数据，并通过<xref:System.IO.StringWriter>将其显示在<xref:System.Windows.Forms.TextBox>控件。
 
 ### <a name="to-add-controls-to-the-form"></a>向窗体添加控件
 

@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683860"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825424"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]
  例如，[!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目系统可加载 .csproj 文件，但是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不能加载 .xxproj 文件。 任意语言的源文件对应的项目文件都必须使用与 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 或 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目文件相同的扩展名，才能加载到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。  
   
 ## <a name="well-known-target-names"></a>已知的目标名称  
- 单击 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“生成”命令会执行项目中的默认目标。 通常，此目标也命名为 `Build`。 如果选择 **“重新生成”** 或 **“清理”** 命令，将尝试执行项目中的同名目标。 单击 **“发布”** 将执行项目中的名为 `PublishOnly` 的目标。  
+ 单击 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的“生成”  命令会执行项目中的默认目标。 通常，此目标也命名为 `Build`。 如果选择 **“重新生成”** 或 **“清理”** 命令，将尝试执行项目中的同名目标。 单击 **“发布”** 将执行项目中的名为 `PublishOnly` 的目标。  
   
 ## <a name="configurations-and-platforms"></a>配置和平台  
  在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目中，配置由在包含 `PropertyGroup` 特性的 `Condition` 元素中进行分组的属性来表示。 为了创建要显示的项目配置和平台的列表，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将检查这些条件。 若要成功提取此列表，条件必须具有如下格式：  
@@ -132,17 +132,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>在 Visual Studio 中卸载和编辑项目文件  
   
-1. 在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”**。  
+1. 在 **“解决方案资源管理器”** 中，打开项目的快捷菜单，然后选择 **“卸载项目”** 。  
   
-     该项目即被标记为 **“(不可用)”**。  
+     该项目即被标记为 **“(不可用)”** 。  
   
-2. 在“解决方案资源管理器”中，打开不可用项目的快捷菜单，然后选择“编辑 \<项目文件>”。  
+2. 在“解决方案资源管理器”  中，打开不可用项目的快捷菜单，然后选择“编辑 \<项目文件>”  。  
   
      该项目文件即在 Visual Studio XML 编辑器中打开。  
   
 3. 编辑、保存，然后关闭项目文件。  
   
-4. 在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”**。  
+4. 在 **“解决方案资源管理器”** 中，打开不可用项目的快捷菜单，然后选择 **“重新加载项目”** 。  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense 和验证  
  使用 XML 编辑器编辑项目文件时，IntelliSense 和验证由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 架构文件驱动。 这些安装在架构缓存中，安装目录为 *\<Visual Studio 安装目录>* \Xml\Schemas\1033\MSBuild。  
@@ -156,17 +156,17 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Microsoft.Common.targets 中定义的一些目标的名称以 `OutputGroups` 或 `OutputGroupDependencies`结尾。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调用这些目标以获取项目输出的特定列表。 例如，`SatelliteDllsProjectOutputGroup` 目标创建将由一次生成过程创建的所有附属程序集的列表。 诸如发布、部署和项目到项目引用这样的功能将使用这些输出组。 没有定义它们的项目仍然可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中加载和生成，但是某些功能可能无法正常工作。  
   
 ## <a name="reference-resolution"></a>引用解析  
- 引用解析是使用项目文件中存储的引用项来查找实际程序集的过程。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必须触发引用解析，才能在“属性”窗口中显示每个引用的详细属性。 下面的列表描述了三种类型引用和如何解析它们。  
+ 引用解析是使用项目文件中存储的引用项来查找实际程序集的过程。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 必须触发引用解析，才能在“属性”  窗口中显示每个引用的详细属性。 下面的列表描述了三种类型引用和如何解析它们。  
   
 - 程序集引用：  
   
-     项目系统调用具有已知名称 `ResolveAssemblyReferences`的目标。 此目标应当产生具有项类型名称 `ReferencePath`的项。 这些项中的每一个都应当有包含引用的完整路径的项规范（项的 `Include` 特性的值）。 除了下面的新元数据以外，项应当让来自输入项的所有元数据通过：  
-  
-    - `CopyLocal`，指示程序集是否应当复制到输出文件夹中、设置为 True 还是 False。  
-  
-    - `OriginalItemSpec`，包含引用的原始项规范。  
-  
-    - `ResolvedFrom`，如果从 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目录解析它，则设置为“{TargetFrameworkDirectory}”。  
+  项目系统调用具有已知名称 `ResolveAssemblyReferences`的目标。 此目标应当产生具有项类型名称 `ReferencePath`的项。 这些项中的每一个都应当有包含引用的完整路径的项规范（项的 `Include` 特性的值）。 除了下面的新元数据以外，项应当让来自输入项的所有元数据通过：  
+
+  - `CopyLocal`，指示程序集是否应当复制到输出文件夹中、设置为 True 还是 False。  
+
+  - `OriginalItemSpec`，包含引用的原始项规范。  
+
+  - `ResolvedFrom`，如果从 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 目录解析它，则设置为“{TargetFrameworkDirectory}”。  
   
 - COM 引用：  
   
@@ -177,7 +177,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
      项目系统调用具有已知名称 `ResolveNativeReferences`的目标。 此目标应当产生具有项类型名称 `NativeReferenceFile`的项。 除了名为 `OriginalItemSpec`（包含引用的原始项规范）的新元数据片段以外，项应当让来自输入项的所有元数据通过。  
   
 ## <a name="performance-shortcuts"></a>性能快捷方式  
- 如果在 Visual Studio UI 中启动调试（通过选择 F5 键或选择菜单栏中的 **“调试”**、 **“启动调试”** ），则生成过程将使用快速更新检查来提高性能。 在有些情况下，当自定义的生成创建轮流生成的文件时，快速更新检查无法正确标识更改的文件。 通过设置环境变量 `DISABLEFASTUPTODATECHECK=1`，需要更彻底更新检查的项目可以关闭快速检查。 或者，项目可在项目或项目导入的文件中将此变量设置为 MSBuild 属性。  
+ 如果在 Visual Studio UI 中启动调试（通过选择 F5 键或选择菜单栏中的 **“调试”** 、 **“启动调试”** ），则生成过程将使用快速更新检查来提高性能。 在有些情况下，当自定义的生成创建轮流生成的文件时，快速更新检查无法正确标识更改的文件。 通过设置环境变量 `DISABLEFASTUPTODATECHECK=1`，需要更彻底更新检查的项目可以关闭快速检查。 或者，项目可在项目或项目导入的文件中将此变量设置为 MSBuild 属性。  
   
  对于 Visual Studio 中的常规生成，将不适用快速更新检查，项目的生成就像在命令提示符处调用生成一样。  
   

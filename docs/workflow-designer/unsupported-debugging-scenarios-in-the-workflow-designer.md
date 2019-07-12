@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747273"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825733"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流设计器中不受支持的调试方案
 
@@ -41,16 +41,16 @@ ms.locfileid: "66747273"
 
 - “断点”窗口或快捷菜单不支持以下用于工作流调试的列或选项：
 
-    - 条件
+  - 条件
 
-    - 命中次数
+  - 命中次数
 
-    - 命中条件
+  - 命中条件
 
-    - 函数
+  - 函数
 
-    - 数据
+  - 数据
 
-    - 进程
+  - 进程
 
-    - 转到反汇编
+  - 转到反汇编

@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431729"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64799498"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,6 +41,6 @@ ms.locfileid: "63431729"
   
 5. 选择**向上**或**向下**搜索的初始方向。  
   
-6. 单击 **“确定”**。  
+6. 单击 **“确定”** 。  
   
    如果找到匹配的进程，则它以突出显示**进程视图**窗口。

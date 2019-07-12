@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d560cbff64a5134fa58ade4d562cb9fb073af48f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401538"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64785873"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 检索一个标志，指定该函数是否包含的一种用法[setjmp](/cpp/c-runtime-library/reference/setjmp)命令 (已与配对[longjmp](/cpp/c-runtime-library/reference/longjmp)命令时，它们构成异常处理的 C 样式方法)。

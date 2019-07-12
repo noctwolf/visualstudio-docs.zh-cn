@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433151"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825932"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在建模图上定义笔势处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -226,7 +226,7 @@ ms.locfileid: "63433151"
   
          **类型** = **MEF 组件**  
   
-          = **当前解决方案中的项目**   
+           = **当前解决方案中的项目**  
   
            = *你的类库项目*  
   
@@ -282,34 +282,34 @@ ms.locfileid: "63433151"
   
 - `ShapeElement target`。 用户已将某项拖动到其上的形状或关系图。  
   
-     `ShapeElement` 是作为 UML 建模工具的基础的实现中的一个类。 为降低使 UML 模型和关系图处于不一致状态的风险，建议你不要直接使用此类的方法。 相反，包装中的元素`IShape`，然后使用中所述的方法[关系图上显示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
-  
-    - 要获取 `IShape`：  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - 要获取拖动或双击操作的目标模型元素：  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         可将此元素强制转换为一个更明确的元素类型。  
-  
-    - 要获取包含 UML 模型的 UML 模型存储区：  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - 要获取对主机和服务提供程序的访问权限：  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` 是作为 UML 建模工具的基础的实现中的一个类。 为降低使 UML 模型和关系图处于不一致状态的风险，建议你不要直接使用此类的方法。 相反，包装中的元素`IShape`，然后使用中所述的方法[关系图上显示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
+
+  - 要获取 `IShape`：  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - 要获取拖动或双击操作的目标模型元素：  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - 要获取包含 UML 模型的 UML 模型存储区：  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - 要获取对主机和服务提供程序的访问权限：  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`。 此参数传送拖动操作的源对象的序列化格式：  
   

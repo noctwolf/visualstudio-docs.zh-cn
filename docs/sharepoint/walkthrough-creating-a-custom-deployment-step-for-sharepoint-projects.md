@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401098"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825624"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练：创建 SharePoint 项目的自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。
@@ -29,9 +29,9 @@ ms.locfileid: "66401098"
 
 - 创建 Visual Studio 扩展将执行两项主要任务：
 
-    - 扩展插件定义自定义部署步骤，若要升级 SharePoint 解决方案。
+  - 扩展插件定义自定义部署步骤，若要升级 SharePoint 解决方案。
 
-    - 该扩展会定义新的部署配置，这是针对给定项目执行部署步骤的一组项目扩展。 新的部署配置包括自定义部署步骤和几个内置部署步骤。
+  - 该扩展会定义新的部署配置，这是针对给定项目执行部署步骤的一组项目扩展。 新的部署配置包括自定义部署步骤和几个内置部署步骤。
 
 - 创建两个扩展插件程序集调用的自定义 SharePoint 命令。 SharePoint 命令都可由扩展插件程序集的 SharePoint 服务器对象模型中使用 Api 调用的方法。 有关详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 

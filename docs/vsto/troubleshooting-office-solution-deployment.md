@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694983"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821302"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 解决方案部署故障排除
   本主题包含有关如何解决在部署 Office 解决方案时可能遇到的常见问题的信息。
@@ -71,11 +71,14 @@ ms.locfileid: "65694983"
 
 1. 在菜单栏上依次选择**项目**， _ProjectName_**属性**。
 
-2. 在“应用程序”  页上，选择“程序集信息” 。
+2. 在“应用程序”  页上，选择“程序集信息”  。
 
-3. 在第一个**程序集版本**框中，输入一个星号 (\*)，然后选择**确定**按钮。
+3. 设置的修订号、 第三个字段**程序集版本**，为通配符 (\*)。 例如，"1.0。 *"。  然后选择**确定**按钮。
 
    更改程序集版本之后，可以继续使用强名称对程序集进行签名，Fusion 会加载自定义项的最新版本。
+
+ [!NOTE]
+> 从 Visual Studio 2017 中，如果你尝试在程序集版本生成错误中使用通配符将发生。  这是因为程序集版本中的通配符将中断 MSBuild 确定性的功能。 系统会指示以从程序集版本中删除通配符或禁用确定性。  若要了解有关确定性的功能的详细信息查看：[常用的 MSBuild 项目属性](../msbuild/common-msbuild-project-properties.md)和[自定义生成](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI 具有不 US ASCII 字符时，安装失败
  将 Office 解决方案发布到 HTTP/HTTPS/FTP 位置时，路径不能包含不属于 US-ASCII 的任何 Unicode 字符。 这类字符会导致安装程序中出现不一致的行为。 请对安装路径使用 US-ASCII 字符。

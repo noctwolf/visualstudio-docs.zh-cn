@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439085"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64827357"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在线程视图中搜索线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,6 +40,6 @@ ms.locfileid: "63439085"
   
 5. 选择**向上**或**向下**搜索的初始方向。  
   
-6. 单击 **“确定”**。  
+6. 单击 **“确定”** 。  
   
    如果找到匹配的线程，则它将突出显示在线程视图窗口中。

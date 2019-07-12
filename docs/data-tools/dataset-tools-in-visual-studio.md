@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715208"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821371"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 
@@ -75,13 +75,13 @@ Visual Studio 提供了工具，简化数据集的处理。 基本的端到端�
 
 - 使用**TableAdapter 配置向导**指定的查询或存储的过程填充数据集，并实现哪些数据库操作 （update、 delete 等）。 有关详细信息，请参阅以下主题：
 
-    - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [编辑数据集中的数据](../data-tools/edit-data-in-datasets.md)
+  - [编辑数据集中的数据](../data-tools/edit-data-in-datasets.md)
 
-    - [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)
+  - [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)
 
-    - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
+  - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 
 - 查询并在数据集中搜索的数据。 有关详细信息，请参阅[查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 使[LINQ （语言集成查询）](/dotnet/csharp/linq/)中的数据通过<xref:System.Data.DataSet>对象。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440857"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826136"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练：将数据插入到的服务器上的工作簿
   本演练演示如何将数据插入到一个数据集，而不启动 Excel，通过使用 Microsoft Office Excel 工作簿中缓存<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。
@@ -54,9 +54,9 @@ ms.locfileid: "63440857"
 
 - 对 Microsoft SQL Server 或 Microsoft SQL Server Express 的 AdventureWorksLT 示例数据库附加到它的运行中实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?linkid=87843)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    - 若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+  - 若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    - 若要使用命令行中附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
+  - 若要使用命令行中附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>创建一个类库项目定义数据集
  若要使用的 Excel 工作簿项目和控制台应用程序中的相同数据集，必须在单独的程序集引用的这两个这些项目中定义数据集。 在本演练中，在一个类库项目中定义数据集。
@@ -65,7 +65,7 @@ ms.locfileid: "63440857"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 3. 在模板窗格中，展开**Visual C#** 或**Visual Basic**，然后单击**Windows**。
 
@@ -77,7 +77,7 @@ ms.locfileid: "63440857"
 
 7. 在中**新的项目**对话框框中，确保**创建解决方案目录**未选中复选框。
 
-8. 单击 **“确定”**。
+8. 单击 **“确定”** 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**AdventureWorksDataSet**投影到**解决方案资源管理器**，并打开**Class1.cs**或者**Class1.vb**代码文件。
 
@@ -94,19 +94,19 @@ ms.locfileid: "63440857"
 
 2. 如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。
 
-3. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。
+3. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”** 。
 
-4. 单击“数据库” ，然后单击“下一步” 。
+4. 单击“数据库”  ，然后单击“下一步”  。
 
 5. 如果具有现有连接到 AdventureWorksLT 数据库，选择此连接，然后单击**下一步**。
 
-    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[如何：连接到数据库中的数据](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
+    否则，单击“新建连接”  ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[如何：连接到数据库中的数据](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)。
 
-6. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步” 。
+6. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步”  。
 
-7. 在中**选择数据库对象**页上，展开**表**，然后选择**Product (SalesLT)**。
+7. 在中**选择数据库对象**页上，展开**表**，然后选择**Product (SalesLT)** 。
 
-8. 单击 **“完成”**。
+8. 单击 **“完成”** 。
 
     *AdventureWorksLTDataSet.xsd*文件添加到**AdventureWorksDataSet**项目。 此文件定义以下各项：
 
@@ -127,7 +127,7 @@ ms.locfileid: "63440857"
 
 1. 在中**解决方案资源管理器**，右键单击**AdventureWorksDataSet**解决方案，指向**添加**，然后单击**新项目**。
 
-2. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
+2. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”** ，然后展开 **“Office/SharePoint”** 。
 
 3. 在展开的 **“Office/SharePoint”** 节点下方，选择 **“Office 外接程序”** 节点。
 
@@ -135,7 +135,7 @@ ms.locfileid: "63440857"
 
 5. 在中**名称**框中，键入**AdventureWorksReport**。 未修改的位置。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -152,9 +152,9 @@ ms.locfileid: "63440857"
 
      在设计器中打开工作簿。
 
-2. 在 **“数据”** 菜单上，单击 **“添加新数据源”**。
+2. 在 **“数据”** 菜单上，单击 **“添加新数据源”** 。
 
-     “数据源配置”向导随即打开。
+     “数据源配置”向导随即打开  。
 
 3. 单击**对象**，然后单击**下一步**。
 
@@ -216,7 +216,7 @@ ms.locfileid: "63440857"
 
 4. 在中**名称**框中，键入**DataWriter**。 未修改的位置。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将添加**DataWriter**投影到**解决方案资源管理器**，并打开**Program.cs**或者**Module1.vb**代码文件。
 
@@ -229,7 +229,7 @@ ms.locfileid: "63440857"
 
 2. 上 **.NET**选项卡上，选择**microsoft.visualstudio.tools.applications.serverdocument 的引用**。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
 4. 在中**解决方案资源管理器**，右键单击**DataWriter**项目，然后单击**添加引用**。
 

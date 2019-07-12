@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075813"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824057"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (替换`Microsoft.VisualStudio.Shell.11.0`MPF dll 的当前版本。)
 
- 若要显示对话框中，调用"**ShowModal()**"上对类**ShowDialog()**。 **ShowModal()** 在外壳程序中设置正确的模式状态，请确保将对话框中居中在父窗口中，依次类推。
+ 若要显示对话框中，调用"**ShowModal()** "上对类**ShowDialog()** 。 **ShowModal()** 在外壳程序中设置正确的模式状态，请确保将对话框中居中在父窗口中，依次类推。
 
  代码如下所示:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 可以针对这些目的着色更大的标题 （环境字体 x 155%或更高版本）：
 
-    - 若要提供与 Visual Studio UI 的签名的视觉效果
+  - 若要提供与 Visual Studio UI 的签名的视觉效果
 
-    - 呼吁人们关注的特定区域
+  - 呼吁人们关注的特定区域
 
-    - 提供基于标准的暗灰色/黑环境的文本颜色的缓解办法
+  - 提供基于标准的暗灰色/黑环境的文本颜色的缓解办法
 
 - 在标题中的颜色应利用现有 Visual Studio 品牌颜色的颜色，主要是主要的紫色，#FF68217A。
 
