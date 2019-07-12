@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431878"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825514"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 
@@ -79,11 +79,11 @@ ms.locfileid: "66431878"
 
 - 重新映射以下命令的键盘快捷键无效。 编辑表达式时，只能使用默认的键盘快捷键访问这些命令。
 
-   - 剪切
-   - 复制
-   - 粘贴
-   - 全选
-   - 撤消
-   - 重做
+  - 剪切
+  - 复制
+  - 粘贴
+  - 全选
+  - 撤消
+  - 重做
 
 - 若要重新映射在 Visual Studio 中的工作流设计器内的表达式编辑命令的键盘快捷键，编辑工作流设计器作用域中的快捷方式。 工作流设计器自动不适用于在文本编辑器作用域中所做的更改。 如果您希望在这两个位置都重新映射快捷键，则必须应用两次更改（每个作用域应用一次）。

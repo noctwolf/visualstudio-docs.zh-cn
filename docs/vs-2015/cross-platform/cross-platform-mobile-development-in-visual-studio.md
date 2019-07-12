@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698828"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824188"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65698828"
 
 - [构建面向 Android、iOS 和 Windows 的应用 (.NET Framework)](#NET)
 
-    - [通过单个基本代码面向 Android、iOS 和 Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [通过单个基本代码面向 Android、iOS 和 Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [面向 Windows 10 设备](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [面向 Windows 10 设备](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)](#HTML)
 
@@ -54,11 +54,11 @@ ms.locfileid: "65698828"
 |[了解适用于 Android 的 Visual Studio 仿真程序](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a>通过单个基本代码面向 Android、iOS 和 Windows
- 可使用 C# 或 F# 构建面向 Android、iOS 和 Windows 的本机应用（目前不支持 Visual Basic）。  若要开始，请安装 Visual Studio 2015，再在安装程序中选择“自定义”选项，然后勾选“跨平台移动开发”>“C#/.NET (Xamarin)”下的框。 还可从 [Xamarin 安装程序](https://www.xamarin.com/download)开始，安装 Xamarin for Visual Studio 2013 时必须使用该程序。
+ 可使用 C# 或 F# 构建面向 Android、iOS 和 Windows 的本机应用（目前不支持 Visual Basic）。  若要开始，请安装 Visual Studio 2015，再在安装程序中选择“自定义”  选项，然后勾选“跨平台移动开发”>“C#/.NET (Xamarin)”  下的框。 还可从 [Xamarin 安装程序](https://www.xamarin.com/download)开始，安装 Xamarin for Visual Studio 2013 时必须使用该程序。
 
- 如果已安装 Visual Studio 2015，请通过“控制面板”>“程序和功能”运行安装程序，然后为 Xamarin 选择“自定义”选项（同上）。
+ 如果已安装 Visual Studio 2015，请通过“控制面板”>“程序和功能”  运行安装程序，然后为 Xamarin 选择“自定义”  选项（同上）。
 
- 完成后，“新建项目”对话框中将显示项目模板。 最简单的 Xamarin 模板查找方法是针对“Xamarin”进行搜索。
+ 完成后，“新建项目”  对话框中将显示项目模板。 最简单的 Xamarin 模板查找方法是针对“Xamarin”进行搜索。
 
  Xamarin 将 Android、iOS 和 Windows 的本机功能公开为 .NET 对象。 因此，你的应用可不受限制地访问本机 API 和本机用户控件，它们的响应速度可媲美按本机平台语言编写的应用。
 

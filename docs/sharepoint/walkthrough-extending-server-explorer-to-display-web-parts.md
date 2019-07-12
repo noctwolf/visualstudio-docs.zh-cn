@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430341"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821989"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**的节点**服务器资源管理器**来查看 SharePoint 站点上的组件。 但是，**服务器资源管理器**默认情况下不会显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它显示在 Web 部件库在每个连接 SharePoint 站点。
@@ -29,9 +29,9 @@ ms.locfileid: "63430341"
 
 - 创建 Visual Studio 扩展来扩展**服务器资源管理器**以下方面：
 
-    - 通过扩展添加**Web 部件库**节点下的每个 SharePoint 站点节点**服务器资源管理器**。 此新节点包含表示每个 Web 部件在站点上的 Web 部件库中的子节点。
+  - 通过扩展添加**Web 部件库**节点下的每个 SharePoint 站点节点**服务器资源管理器**。 此新节点包含表示每个 Web 部件在站点上的 Web 部件库中的子节点。
 
-    - 扩展插件定义新类型的表示 Web 部件实例的节点。 此新的节点类型是在新的子节点的基础**Web 部件库**节点。 新的 Web 部件节点类型中显示信息**属性**有关 Web 部件，它表示的窗口。 节点类型还可以用作起始点执行与 Web 部件相关的其他任务的自定义的快捷菜单项。
+  - 扩展插件定义新类型的表示 Web 部件实例的节点。 此新的节点类型是在新的子节点的基础**Web 部件库**节点。 新的 Web 部件节点类型中显示信息**属性**有关 Web 部件，它表示的窗口。 节点类型还可以用作起始点执行与 Web 部件相关的其他任务的自定义的快捷菜单项。
 
 - 创建两个扩展插件程序集调用的自定义 SharePoint 命令。 SharePoint 命令都可由扩展插件程序集的 SharePoint 服务器对象模型中使用 Api 调用的方法。 在本演练中，创建从开发计算机上的本地 SharePoint 站点检索 Web 部件的信息的命令。 有关详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "63430341"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+2. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
@@ -138,9 +138,9 @@ ms.locfileid: "63430341"
 
 5. 在中**解决方案资源管理器**，打开快捷菜单**WebPartNodeExtension**项目节点，然后选择**属性**。
 
-     将打开“项目设计器”。
+     将打开“项目设计器”  。
 
-6. 选择“应用程序”选项卡。
+6. 选择“应用程序”  选项卡。
 
 7. 在中**默认命名空间**框 (C#) 或**根命名空间**框 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])，输入**ServerExplorer.SharePointConnections.WebPartNode**。
 
@@ -166,9 +166,9 @@ ms.locfileid: "63430341"
 
 7. 在中**解决方案资源管理器**，打开快捷菜单**WebPartCommands**同样，项目，然后选择**属性**。
 
-     将打开“项目设计器”。
+     将打开“项目设计器”  。
 
-8. 选择“应用程序”选项卡。
+8. 选择“应用程序”  选项卡。
 
 9. 在中**默认命名空间**框 (C#) 或**根命名空间**框 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])，输入**ServerExplorer.SharePointConnections.WebPartNode**。
 
@@ -179,7 +179,7 @@ ms.locfileid: "63430341"
 
 1. 在中**解决方案资源管理器**，打开快捷菜单**WebPartNodeExtension**项目，，然后选择**属性**。
 
-2. 将打开“项目设计器”。
+2. 将打开“项目设计器”  。
 
 3. 选择**资源**选项卡，然后选择**此项目不包含默认资源文件。单击此处可创建一个**链接。
 
@@ -263,7 +263,7 @@ ms.locfileid: "63430341"
 
 #### <a name="to-build-the-solution"></a>生成解决方案
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
 
     > [!WARNING]
     > 此时，WebPartNode 项目可能会生成错误，因为 VSIX 清单文件不具有的作者的值。 当在后续步骤中添加值时，此错误将消失。
@@ -338,7 +338,7 @@ ms.locfileid: "63430341"
 
     2. 在中**添加 SharePoint 连接**对话框框中，输入你想要连接，，然后选择 SharePoint 站点的 URL**确定**按钮。
 
-         若要在开发计算机上指定 SharePoint 站点，请输入**http://localhost**。
+         若要在开发计算机上指定 SharePoint 站点，请输入 **http://localhost** 。
 
 3. 站点连接节点 （这将显示你的站点的 URL），依次展开和一个子节点 (例如，**团队网站**)。
 
@@ -361,7 +361,7 @@ ms.locfileid: "63430341"
 
 1. 在实验实例中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在菜单栏上依次选择**工具** > **扩展和更新**。
 
-     此时，“扩展和更新”对话框打开。
+     此时，“扩展和更新”  对话框打开。
 
 2. 在扩展的列表，选择**Web 部件库节点扩展服务器资源管理器**，然后选择**卸载**按钮。
 

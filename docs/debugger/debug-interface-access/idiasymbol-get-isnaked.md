@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400484"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64790147"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 检索一个标志，指定该函数是否具有[裸](/cpp/cpp/naked-cpp)属性 （也就是说，该函数具有由编译器添加任何 prolog 或 epilog 代码）。

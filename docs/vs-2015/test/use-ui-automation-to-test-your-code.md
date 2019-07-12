@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695306"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825541"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "65695306"
 
     编码的 UI 测试必须包含在编码的 UI 测试项目中。 如果你还没有编码的 UI 测试项目，则创建一个。 在“解决方案资源管理器”  中，在该解决方案的快捷菜单上，依次选择“添加”  、“新建项目”  ，然后选择“Visual Basic”  或“Visual C#”  。 接下来，依次选择“测试”  、“编码的 UI 测试”  。
 
-   - <em>我没有看到 “编码的 UI 测试”</em>项目模板。 *** *
+   - <em>我没有看到 * *“编码的 UI 测试”</em>* 项目模板。*
 
       你使用的 Visual Studio 版本可能不支持编码的 UI 测试。 若要创建编码的 UI 测试，你必须使用 Visual Studio Enterprise。
 
@@ -297,23 +297,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **代码编辑器：**
 
-    - 按照本主题中的[编码 UI 控件操作和属性](#actions)部分的描述，为测试中的控件手动添加代码。
+  - 按照本主题中的[编码 UI 控件操作和属性](#actions)部分的描述，为测试中的控件手动添加代码。
 
-    - 在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
+  - 在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
 
-    - 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请添加相应的 UITestControl.WaitForControlXXX() 方法。 有关可用方法的完整列表，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 有关使用 WaitForControlEnabled 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护已编码 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+  - 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请添加相应的 UITestControl.WaitForControlXXX() 方法。 有关可用方法的完整列表，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 有关使用 WaitForControlEnabled 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护已编码 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
-    - 编码的 UI 测试包括对某些包含在 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 控件的支持。 有关详细信息，请参阅[在编码的 UI 测试中使用 HTML5 控件](../test/using-html5-controls-in-coded-ui-tests.md)。
+  - 编码的 UI 测试包括对某些包含在 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 控件的支持。 有关详细信息，请参阅[在编码的 UI 测试中使用 HTML5 控件](../test/using-html5-controls-in-coded-ui-tests.md)。
 
-    - **编码的 UI 测试编码指导：**
+  - **编码的 UI 测试编码指导：**
 
-        - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
+    - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
 
-        - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+    - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 
-        - [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> 生成的代码
  当你选择“生成代码”  时，将创建多段代码：

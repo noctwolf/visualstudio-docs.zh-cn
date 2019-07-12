@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430348"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825975"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>演练：扩展 SharePoint 项目项类型
   可以使用**业务数据连接模型**项目项以在 SharePoint 中创建业务数据连接 (BDC) 服务的模型。 默认情况下，通过使用此项目项，创建模型时模型中的数据是不向用户显示。 此外必须在 SharePoint 以使用户能够查看的数据创建外部列表。
@@ -28,9 +28,9 @@ ms.locfileid: "63430348"
 
 - 创建 Visual Studio 扩展将执行两项主要任务：
 
-    - 它将生成 BDC 模型中显示的数据的外部列表。 扩展使用的 SharePoint 项目系统的对象模型来生成*Elements.xml*定义列表的文件。 它还将文件添加到项目，以便与 BDC 模型一起部署。
+  - 它将生成 BDC 模型中显示的数据的外部列表。 扩展使用的 SharePoint 项目系统的对象模型来生成*Elements.xml*定义列表的文件。 它还将文件添加到项目，以便与 BDC 模型一起部署。
 
-    - 它将添加到快捷菜单项**业务数据连接模型**项目中的项**解决方案资源管理器**。 开发人员可以单击此菜单项可生成 BDC 模型的外部列表。
+  - 它将添加到快捷菜单项**业务数据连接模型**项目中的项**解决方案资源管理器**。 开发人员可以单击此菜单项可生成 BDC 模型的外部列表。
 
 - 生成 Visual Studio 扩展 (VSIX) 包将部署扩展插件程序集。
 
@@ -62,7 +62,7 @@ ms.locfileid: "63430348"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+2. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
@@ -122,7 +122,7 @@ ms.locfileid: "63430348"
 
     - Microsoft.VisualStudio.SharePoint
 
-5. 选择“确定”  按钮。
+5. 选择**确定**按钮。
 
 ## <a name="define-the-project-item-extension"></a>定义项目项扩展
  创建一个定义的扩展类**业务数据连接模型**项目项。 若要定义扩展，此类应实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>接口。 实现此接口，只要您想要扩展现有的项目项类型。
@@ -152,7 +152,7 @@ ms.locfileid: "63430348"
 
 #### <a name="to-build-the-solution"></a>生成解决方案
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>创建 VSIX 包来部署项目项扩展
  若要将扩展部署，使用 VSIX 项目在解决方案中创建 VSIX 包。 首先，通过修改包含在 VSIX 项目的 source.extension.vsixmanifest 文件中配置 VSIX 包。 然后，通过生成解决方案中创建 VSIX 包。
@@ -182,7 +182,7 @@ ms.locfileid: "63430348"
 
 8. 在中**项目**列表中，选择**BdcProjectItemExtension**，然后选择**确定**按钮。
 
-9. 在菜单栏上，依次选择“生成” > “生成解决方案”。
+9. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
 
 10. 请确保项目编译和生成未出现错误。
 
@@ -282,7 +282,7 @@ ms.locfileid: "63430348"
 
 1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**工具** > **扩展和更新**。
 
-     此时，“扩展和更新”对话框打开。
+     此时，“扩展和更新”  对话框打开。
 
 2. 在扩展的列表，选择**外部的数据列表生成器**，然后选择**卸载**按钮。
 

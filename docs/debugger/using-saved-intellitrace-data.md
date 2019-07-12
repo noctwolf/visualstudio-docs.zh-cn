@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746154"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825604"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据 (C#，Visual Basic 中， C++)
 
@@ -56,11 +56,11 @@ ms.locfileid: "66746154"
 
 - 如果 .iTrace 文件附加到 Team Foundation Server 工作项，请执行该工作项中的以下步骤：
 
-    - 在“所有链接”  下，找到 .iTrace 文件。 打开此文件。
+  - 在“所有链接”  下，找到 .iTrace 文件。 打开此文件。
 
-         \- 或 -
+    \- 或 -
 
-    - 在“重现步骤”  下，选择“IntelliTrace”  链接。
+  - 在“重现步骤”  下，选择“IntelliTrace”  链接。
 
 > [!TIP]
 > 如果在调试期间已关闭 IntelliTrace 文件，可轻松将其重新打开。 转至“调试”  菜单，选择“IntelliTrace”  、“显示日志摘要”  。 还可以在“IntelliTrace”  窗口中选择“显示日志摘要”  。 只有在使用 IntelliTrace 进行调试时才能使用。
@@ -158,7 +158,7 @@ ms.locfileid: "66746154"
 
 1. 从源复制 SharePoint 相关 ID。
 
-    例如：
+    例如:
 
     ![IntelliTrace &#45; SharePoint 错误&#45;相关 ID](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 

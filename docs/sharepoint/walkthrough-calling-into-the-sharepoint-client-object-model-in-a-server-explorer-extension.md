@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835943"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824165"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>演练：调入 SharePoint 客户端对象模型中的服务器资源管理器扩展
   本演练演示如何从适用于扩展调用 SharePoint 客户端对象模型**SharePoint 连接**中的节点**服务器资源管理器**。 有关如何使用 SharePoint 客户端对象模型的详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -27,9 +27,9 @@ ms.locfileid: "66835943"
 
 - 创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展**SharePoint 连接**的节点**服务器资源管理器**以下方面：
 
-    - 通过扩展添加**Web 部件库**节点下的每个 SharePoint 站点节点**服务器资源管理器**。 此新节点包含表示每个 Web 部件在站点上的 Web 部件库中的子节点。
+  - 通过扩展添加**Web 部件库**节点下的每个 SharePoint 站点节点**服务器资源管理器**。 此新节点包含表示每个 Web 部件在站点上的 Web 部件库中的子节点。
 
-    - 扩展插件定义新类型的表示 Web 部件实例的节点。 此新的节点类型是在新的子节点的基础**Web 部件库**节点。 新的 Web 部件节点类型中显示信息**属性**有关该节点表示的 Web 部件的窗口。
+  - 扩展插件定义新类型的表示 Web 部件实例的节点。 此新的节点类型是在新的子节点的基础**Web 部件库**节点。 新的 Web 部件节点类型中显示信息**属性**有关该节点表示的 Web 部件的窗口。
 
 - 生成 Visual Studio 扩展 (VSIX) 包将扩展部署。
 

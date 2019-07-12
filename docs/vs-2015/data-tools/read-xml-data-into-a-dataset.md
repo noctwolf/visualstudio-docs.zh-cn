@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692558"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825885"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
   
 - 两个<xref:System.Windows.Forms.Button>控件。  
   
-    - 一个按钮将 XML 文件读取到数据集并将其显示<xref:System.Windows.Forms.DataGridView>控件。  
-  
-    - 第二个按钮提取架构集中的数据，并通过<xref:System.IO.StringWriter>将其显示在<xref:System.Windows.Forms.TextBox>控件。  
+  - 一个按钮将 XML 文件读取到数据集并将其显示<xref:System.Windows.Forms.DataGridView>控件。  
+
+  - 第二个按钮提取架构集中的数据，并通过<xref:System.IO.StringWriter>将其显示在<xref:System.Windows.Forms.TextBox>控件。  
   
 #### <a name="to-add-controls-to-the-form"></a>向窗体添加控件  
   
@@ -165,7 +165,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
   
 3. 设置以下属性：  
   
-    |控件|属性|设置|  
+    |控件|Property|设置|  
     |-------------|--------------|-------------|  
     |`TextBox1`|**多行**|`true`|  
     ||**ScrollBars**|**垂直**|  
@@ -241,7 +241,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 本演练介绍了 XML 文件读取到数据集，以及创建基于 XML 文件的内容架构的基础知识。 下面是一些你可能会在接下来执行的任务：  
   
-- 编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅 <xref:System.Data.DataSet.WriteXml%2A>。  
+- 编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅 <xref:System.Data.DataSet.WriteXml%2A> 。  
   
 - 编辑数据集中的数据并将其写出到数据库。
   

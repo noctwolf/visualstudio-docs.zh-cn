@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422728"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825685"
 ---
 # <a name="making-custom-projects-version-aware"></a>使自定义项目版本可区别
 在自定义项目系统中，你可以允许在多个版本的 Visual Studio 中加载该类型的项目。 也可以阻止在早期版本的 Visual Studio 中加载该类型的项目。 还可以使该项目将其自身标识为较新版本，以防该项目需要修复、转换或弃用。  
@@ -58,7 +58,7 @@ ms.locfileid: "63422728"
   
 1. 在该组件中，从全局服务 SVsSolution 获取 `IVsAppCompat` 接口。  
   
-     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>。  
+     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 。  
   
 2. 在该组件中，调用 `IVsAppCompat.AskForUserConsentToBreakAssetCompat`，并向其传递一个表示相关项目的 `IVsHierarchy` 接口的数组。  
   
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - LogMessage 函数具有以下 Errorlevel：  
   
-    - 0 代表想要跟踪的任何信息。  
-  
-    - 1 代表警告。  
-  
-    - 2 代表错误  
-  
-    - 3 代表报告格式化程序。 项目升级后，记录一次“Converted”，请勿对此单词进行本地化。  
+  - 0 代表想要跟踪的任何信息。  
+
+  - 1 代表警告。  
+
+  - 2 代表错误  
+
+  - 3 代表报告格式化程序。 项目升级后，记录一次“Converted”，请勿对此单词进行本地化。  
   
 - 如果项目不需要任何修复或升级，则只有当项目系统在 UpgradeProject_CheckOnly 或 UpgradeProjectFlavor_CheckOnly 方法调用期间记录到警告或错误时，Visual Studio 才会生成日志文件。

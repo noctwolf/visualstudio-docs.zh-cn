@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045598"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821673"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,13 +55,13 @@ ms.locfileid: "60045598"
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性  
   
-- 使用 **/property** 开关以及属性和属性值。 例如：  
+- 使用 **/property** 开关以及属性和属性值。 例如:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - 或 -  
+     \- 或 -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,7 +75,7 @@ ms.locfileid: "60045598"
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - 或 -  
+   \- 或-  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

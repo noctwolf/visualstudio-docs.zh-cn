@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079002"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823613"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079002"
 
 - 要问问自己构造一条错误消息时的一些问题：
 
-    - 用户可以了解如何解决此错误仅出现的问题？
+  - 用户可以了解如何解决此错误仅出现的问题？
 
-    - 用户是否使用与此错误相同词汇？
+  - 用户是否使用与此错误相同词汇？
 
-    - 是此错误不明确的或在多个的情况下共享？ 如果是这样，如何执行操作，引导用户到所需的解决方案？
+  - 是此错误不明确的或在多个的情况下共享？ 如果是这样，如何执行操作，引导用户到所需的解决方案？
 
 #### <a name="build-errors"></a>生成错误
  由于 Visual Studio 是一种软件开发工具，有许多及其组件的编译时，转换，或编码步骤将开发人员的工作转换为二进制格式。 当编译器无法处理未正确编写的文件时或未正确设置编译器选项时，这些转换可能导致错误。
