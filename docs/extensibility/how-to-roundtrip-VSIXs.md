@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324902"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826033"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何：使扩展与 Visual Studio 2017 和 Visual Studio 2015 兼容
 
@@ -57,8 +57,8 @@ ms.locfileid: "66324902"
 * 记下中的引用*project.json*。
 * 从**解决方案资源管理器**，删除*project.json*从项目文件。 这会删除*project.json*文件，并将其从项目删除。
 * 添加 NuGet 引用中返回到项目：
-    * 右键单击**解决方案**，然后选择**为解决方案管理 NuGet 包**。
-    * Visual Studio 自动创建*packages.config*为你的文件。
+  * 右键单击**解决方案**，然后选择**为解决方案管理 NuGet 包**。
+  * Visual Studio 自动创建*packages.config*为你的文件。
 
 > [!NOTE]
 > 如果你的项目包含 EnvDTE 包，它们可能需要通过右键单击要添加**引用**选择**添加引用**并添加适当的引用。 使用 NuGet 包可能会尝试生成项目时创建的错误。
@@ -165,7 +165,7 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 添加到其他条件语句`<import>`Microsoft.VSSDK.BuildTools 引用的标记。 插入`'$(VisualStudioVersion)' != '14.0' And`前面的条件语句。 这些语句将出现在页眉和页脚的 csproj 文件。
 
-例如：
+例如:
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />

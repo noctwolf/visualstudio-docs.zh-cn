@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 546713cd77ca1477984120f9ef9a245c1c780eaf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981628"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824132"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练：VSTO 外接程序项目中的复杂数据绑定
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件和 Windows 窗体控件。 本演练演示如何在运行时向 Microsoft Office Excel 工作表中添加控件并将控件绑定到数据。
@@ -43,20 +43,20 @@ ms.locfileid: "62981628"
 
 - 对附加了 `AdventureWorksLT` 示例数据库且正在运行的 SQL Server 2005 或 SQL Server 2005 Express 实例的访问权限。 您可以下载`AdventureWorksLT`数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?LinkId=115611)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    - 若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
+  - 若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    - 若要使用命令行中附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
+  - 若要使用命令行中附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>创建新项目
  第一步是创建 Excel VSTO 外接程序项目。
 
 ### <a name="to-create-a-new-project"></a>创建新项目
 
-1. 使用 Visual Basic 或 C# 创建一个名为“从数据库填充工作表” 的 Excel VSTO 外接程序项目。
+1. 使用 Visual Basic 或 C# 创建一个名为“从数据库填充工作表”  的 Excel VSTO 外接程序项目。
 
      有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件，并将“从数据库填充工作表”  项目附加到“解决方案资源管理器” 中。
+     Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件，并将“从数据库填充工作表”  项目附加到“解决方案资源管理器”  中。
 
 ## <a name="create-a-data-source"></a>创建数据源
  使用 **“数据源”** 窗口将类型化数据集添加到项目中。
@@ -65,19 +65,19 @@ ms.locfileid: "62981628"
 
 1. 如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。
 
-2. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。
+2. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”** 。
 
-3. 单击“数据库” ，然后单击“下一步” 。
+3. 单击“数据库”  ，然后单击“下一步”  。
 
-4. 如果已与 `AdventureWorksLT` 数据库建立连接，请选择此连接，然后单击“下一步” 。
+4. 如果已与 `AdventureWorksLT` 数据库建立连接，请选择此连接，然后单击“下一步”  。
 
-    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+    否则，单击“新建连接”  ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
-5. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步” 。
+5. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步”  。
 
-6. 在“选择数据库对象”  页中展开“表”  ，再选择“Address (SalesLT)” 。
+6. 在“选择数据库对象”  页中展开“表”  ，再选择“Address (SalesLT)”  。
 
-7. 单击 **“完成”**。
+7. 单击 **“完成”** 。
 
     *AdventureWorksLTDataSet.xsd*文件添加到**解决方案资源管理器**。 此文件定义以下各项：
 
@@ -124,7 +124,7 @@ ms.locfileid: "62981628"
 
 ### <a name="to-test-the-vsto-add-in"></a>若要测试 VSTO 外接程序
 
-- 按 F5 。
+- 按 F5  。
 
      已在工作表中创建了一个名为 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控件。 同时，向项目添加了一个名为 `adventureWorksLTDataSet` 的数据集对象和一个名为 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 。 已将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到 <xref:System.Windows.Forms.BindingSource>，而后者又绑定到该数据集对象。
 

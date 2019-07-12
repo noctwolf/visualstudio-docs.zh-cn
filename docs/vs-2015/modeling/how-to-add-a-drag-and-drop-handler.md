@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690553"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825400"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "65690553"
   
 - 前两个部分介绍了定义笔势处理程序的替代方法：  
   
-    - [通过重写 ShapeElement 方法定义笔势处理程序](#overrideShapeElement)。 `OnDragDrop`、`OnDoubleClick`、`OnDragOver` 以及其他可以进行重写的方法。  
-  
-    - [通过使用 MEF 定义笔势处理程序](#MEF)。 如果希望第三方开发人员能够对你的 DSL 定义他们自己的处理程序，则使用此方法。 用户可以在安装了你的 DSL 后选择安装第三方扩展。  
+  - [通过重写 ShapeElement 方法定义笔势处理程序](#overrideShapeElement)。 `OnDragDrop`、`OnDoubleClick`、`OnDragOver` 以及其他可以进行重写的方法。  
+
+  - [通过使用 MEF 定义笔势处理程序](#MEF)。 如果希望第三方开发人员能够对你的 DSL 定义他们自己的处理程序，则使用此方法。 用户可以在安装了你的 DSL 后选择安装第三方扩展。  
   
 - [如何解码拖动的项](#extracting)。 可以从任何窗口或桌面以及从 DSL 中拖动元素。  
   
@@ -140,7 +140,7 @@ using System.Linq;
   
   - diagramEventArgs.Data.GetDataFormats() – 列出解码拖动对象时可采用的格式。 例如，如果用户从桌面拖动文件，则可用的格式包括文件名（“`FileNameW`”）。  
   
-  - `diagramEventArgs.Data.GetData(format)` – 采用指定格式解码拖动对象。 将该对象转换为相应的类型。 例如：  
+  - `diagramEventArgs.Data.GetData(format)` – 采用指定格式解码拖动对象。 将该对象转换为相应的类型。 例如:  
   
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
@@ -172,7 +172,7 @@ using System.Linq;
   
     1. 如果未安装 Visual Studio 模型总线扩展，请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
   
-    2. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”**。 新项目“ModelBus”随即添加到 DSL 解决方案中。  
+    2. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”** 。 新项目“ModelBus”随即添加到 DSL 解决方案中。  
   
     3. 单击**转换所有模板**重新生成解决方案。  
   

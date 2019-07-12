@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321359"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823809"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -63,35 +63,35 @@ Visual Studio 2017 引入了 VSIX v3 （版本 3） 格式，以支持轻量的�
 
 * 仅安装到 GAC 的程序集：
 
-   现在，这些程序集都安装了下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 这些文件夹是 Visual Studio 进程的探测路径的一部分。
+  现在，这些程序集都安装了下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 这些文件夹是 Visual Studio 进程的探测路径的一部分。
 
 * 已安装到非探测路径和 GAC 的程序集：
 
-   * 在 GAC 中的副本已从安装程序删除。
-   * 一个 *.pkgdef*添加了文件，以指定程序集的代码基础项。
+  * 在 GAC 中的副本已从安装程序删除。
+  * 一个 *.pkgdef*添加了文件，以指定程序集的代码基础项。
 
-      例如：
+    例如:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      在运行时，Visual Studio pkgdef 子系统将合并到 Visual Studio 进程的运行时配置文件的这些项 (下 *[VSAPPDATA]\devenv.exe.config*) 作为[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)元素。 这是让 Visual Studio 进程查找您的程序集，因为它可以避免通过探测路径搜索的建议的方法。
+    在运行时，Visual Studio pkgdef 子系统将合并到 Visual Studio 进程的运行时配置文件的这些项 (下 *[VSAPPDATA]\devenv.exe.config*) 作为[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)元素。 这是让 Visual Studio 进程查找您的程序集，因为它可以避免通过探测路径搜索的建议的方法。
 
 ### <a name="reacting-to-this-breaking-change"></a>对此项重大更改做出反应
 
 * 如果您的扩展插件在 Visual Studio 进程中运行：
 
-   * 你的代码将能够找到 Visual Studio 核心程序集。
-   * 请考虑使用 *.pkgdef*文件可以根据需要指定您的程序集的路径。
+  * 你的代码将能够找到 Visual Studio 核心程序集。
+  * 请考虑使用 *.pkgdef*文件可以根据需要指定您的程序集的路径。
 
 * 如果在 Visual Studio 进程之外运行您的扩展插件：
 
-   查找 Visual Studio 核心程序集下，请考虑<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用配置文件或程序集冲突解决程序。
+  查找 Visual Studio 核心程序集下，请考虑<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用配置文件或程序集冲突解决程序。
 
 ## <a name="change-reduce-registry-impact"></a>更改：降低注册表的影响
 

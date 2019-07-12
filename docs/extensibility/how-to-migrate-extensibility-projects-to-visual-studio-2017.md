@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319313"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823900"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
@@ -62,8 +62,8 @@ ms.locfileid: "66319313"
 * 编辑扩展清单文件 (通常称为*source.extension.vsixmanifest*)。
 * 确保`InstallationTarget`包括 15.0。
 * 添加所需的安装必备组件 （如下面的示例中所示）。
-   * 我们建议您指定仅组件的安装必备组件的 Id。
-   * 请参阅本文档末尾[标识组件 Id 的说明](#find-component-ids)。
+  * 我们建议您指定仅组件的安装必备组件的 Id。
+  * 请参阅本文档末尾[标识组件 Id 的说明](#find-component-ids)。
 
 示例:
 
@@ -120,12 +120,12 @@ ms.locfileid: "66319313"
 
 * 生成 VSIX 项目。
 * 将解压缩生成的 VSIX 中。
-   * 默认情况下，VSIX 文件位于*bin/Debug*或*bin/Release*作为 *[YourCustomExtension].vsix*。
-   * 重命名 *.vsix*到 *.zip*轻松查看内容。
+  * 默认情况下，VSIX 文件位于*bin/Debug*或*bin/Release*作为 *[YourCustomExtension].vsix*。
+  * 重命名 *.vsix*到 *.zip*轻松查看内容。
 * 检查存在的三个文件：
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>时所有所需的必备项检查
 
@@ -141,11 +141,11 @@ VSIX 将会成功安装在计算机安装所需的所有必备组件使用的测
 ![在 Visual Studio 2017 的 VSIX 安装程序](media/vsixinstaller-vs-2017.png)
 
 * 可选：检查 Visual Studio 的早期版本。
-   * 事实证明，向后兼容性。
-   * 应适用于 Visual Studio 2012，Visual Studio 2013，Visual Studio 2015。
+  * 事实证明，向后兼容性。
+  * 应适用于 Visual Studio 2012，Visual Studio 2013，Visual Studio 2015。
 * 可选：检查，VSIX 安装程序版本检查器提供了多种版本。
-   * 包括 Visual Studio 的早期版本 （如果已安装）。
-   * 包含 Visual Studio 2017。
+  * 包括 Visual Studio 的早期版本 （如果已安装）。
+  * 包含 Visual Studio 2017。
 
 如果最近打开 Visual Studio，你可能会看到如下对话框：
 

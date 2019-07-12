@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858177"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825221"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流设计器中不受支持的调试方案
 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 中的工作流设计器添加了许多新功能，但仍存在一些它不支持的调试方案。 本文档详细介绍了不受支持的工作流设计器调试方案。  
@@ -41,16 +41,16 @@ ms.locfileid: "62858177"
   
 - “断点”窗口或快捷菜单不支持以下用于工作流调试的列或选项：  
   
-    - 条件  
-  
-    - 命中次数  
-  
-    - 命中条件  
-  
-    - 函数  
-  
-    - 数据  
-  
-    - 进程  
-  
-    - 转到反汇编
+  - 条件  
+
+  - 命中次数  
+
+  - 命中条件  
+
+  - 函数  
+
+  - 数据  
+
+  - 进程  
+
+  - 转到反汇编

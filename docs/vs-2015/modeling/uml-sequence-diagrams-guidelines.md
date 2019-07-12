@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445669"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823566"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML 序列图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ ms.locfileid: "63445669"
   
 - 注明可能作为所示典型序列的替代项执行的异常或替代项。 例如，“客户可以选择跳过此序列的其余部分”。  
   
-    - 请考虑使用片段作为此类注释更为正式的替代项。 请参阅[使用片段描述控制结构](#Fragments)  
+  - 请考虑使用片段作为此类注释更为正式的替代项。 请参阅[使用片段描述控制结构](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>确定关系图的范围  
  明确了解关系图要显示哪些内容非常重要。  
@@ -372,13 +372,13 @@ ms.locfileid: "63445669"
   
 - 右键单击你想要移动，然后单击该消息**移动到关系图**。  
   
-     Visual Studio：  
-  
-    - 用交互使用替换选定消息及任何附属消息。  
-  
-    - 将替换的消息移动到新序列图。  
-  
-    - 在交互使用和新序列图之间创建一个链接。  
+  Visual Studio：  
+
+  - 用交互使用替换选定消息及任何附属消息。  
+
+  - 将替换的消息移动到新序列图。  
+
+  - 在交互使用和新序列图之间创建一个链接。  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>导航到交互使用引用的序列  
   

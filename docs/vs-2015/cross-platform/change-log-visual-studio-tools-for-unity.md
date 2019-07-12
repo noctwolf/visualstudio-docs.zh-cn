@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443019"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825969"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,89 +22,92 @@ ms.locfileid: "63443019"
 Visual Studio Tools for Unity 更改日志。
 
 ## <a name="23"></a>2.3
- 发布时间 2016-07-14
+
+发布时间 2016-07-14
 
 ### <a name="new-features"></a>新增功能
 
 - **常规：**
 
-    - 添加了在 Visual Studio 错误列表中禁用 Unity 控制台日志的选项。
+  - 添加了在 Visual Studio 错误列表中禁用 Unity 控制台日志的选项。
 
-    - 添加了允许修改生成的项目属性的选项。
+  - 添加了允许修改生成的项目属性的选项。
 
 - **调试器：**
 
-    - 添加了文本、XML、HTML 和 JSON 字符串可视化工具。
+  - 添加了文本、XML、HTML 和 JSON 字符串可视化工具。
 
 - **向导：**
 
-    - 添加了缺少的 MonoBehavior。
+  - 添加了缺少的 MonoBehavior。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **常规：**
 
-    - 修复了与 ReSharper 间的冲突，该工具阻止 Visual Studio 设置中的控件显示。
+  - 修复了与 ReSharper 间的冲突，该工具阻止 Visual Studio 设置中的控件显示。
 
-    - 修复了与 Xamarin 间的冲突，该工具在某些情况下阻止调试。
+  - 修复了与 Xamarin 间的冲突，该工具在某些情况下阻止调试。
 
 - **调试器：**
 
-    - 修复了导致 Visual Studio 在调试时冻结的问题。
+  - 修复了导致 Visual Studio 在调试时冻结的问题。
 
-    - 修复了 Visual Studio 2015 中函数断点的问题。
+  - 修复了 Visual Studio 2015 中函数断点的问题。
 
-    - 修复了多个表达式计算问题。
+  - 修复了多个表达式计算问题。
 
 ## <a name="22"></a>2.2
- 发布时间 2016-02-04
+
+发布时间 2016-02-04
 
 ### <a name="new-features"></a>新增功能
 
 - **向导：**
 
-    - 在“实现 MonoBehavior”  向导中添加智能搜索。
+  - 在“实现 MonoBehavior”  向导中添加智能搜索。
 
-    - 使向导区分上下文；例如，仅当使用 NetworkBehavior 时，NetworkBehavior 消息才可用。
+  - 使向导区分上下文；例如，仅当使用 NetworkBehavior 时，NetworkBehavior 消息才可用。
 
-    - 在向导中添加了对 NetworkBehavior 消息的支持。
+  - 在向导中添加了对 NetworkBehavior 消息的支持。
 
 - **UI：**
 
-    - 添加了用于配置 MonoBehavior 消息可见性的选项。
+  - 添加了用于配置 MonoBehavior 消息可见性的选项。
 
-    - 删除了与 Unity 项目不相关的 Visual Studio 属性页。
+  - 删除了与 Unity 项目不相关的 Visual Studio 属性页。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **项目生成：**
 
-    - 修复了在 Unity 4.6 上对 UnityEngine 和 UnityEditor 的引用。
+  - 修复了在 Unity 4.6 上对 UnityEngine 和 UnityEditor 的引用。
 
-    - 修复了 Unity 在 OSX 上运行时项目文件的生成。
+  - 修复了 Unity 在 OSX 上运行时项目文件的生成。
 
-    - 修复了对包含井号 (#) 字符的项目名称的处理。
+  - 修复了对包含井号 (#) 字符的项目名称的处理。
 
-    - 将生成的项目限制到了 C# 4。
+  - 将生成的项目限制到了 C# 4。
 
 - **调试器：**
 
-    - 修复了在 Unity 协同程序内进行调试时表达式计算的问题。
+  - 修复了在 Unity 协同程序内进行调试时表达式计算的问题。
 
-    - 修复了导致 Visual Studio 在调试时冻结的问题。
+  - 修复了导致 Visual Studio 在调试时冻结的问题。
 
 - **UI：**
 
-    - 修复了与 [Tabs Studio](https://tabsstudio.com/) Visual Studio 扩展的不兼容问题。
+  - 修复了与 [Tabs Studio](https://tabsstudio.com/) Visual Studio 扩展的不兼容问题。
 
 - **安装程序：**
 
-    - 支持通过创建 HKLM 注册表项对 VSTU 进行计算机范围的安装（为所有用户安装）。
+  - 支持通过创建 HKLM 注册表项对 VSTU 进行计算机范围的安装（为所有用户安装）。
 
-    - 修复了针对多个不同版本的 Visual Studio 安装相同版本的 VSTU 时卸载 VSTU 的问题。 例如，同时安装了 VSTU **2015** 2.1.0.0 和 VSTU **2013** 2.1.0.0 的情况。
+  - 修复了针对多个不同版本的 Visual Studio 安装相同版本的 VSTU 时卸载 VSTU 的问题。 例如，同时安装了 VSTU **2015** 2.1.0.0 和 VSTU **2013** 2.1.0.0 的情况。
 
 ## <a name="21"></a>2.1
- 发布时间 2015-09-08
+
+发布时间 2015-09-08
 
 ### <a name="new-features"></a>新增功能
 
@@ -125,80 +128,81 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了 Visual Studio 2015 中的命中次数断点。
 
 ## <a name="20"></a>2.0
- 发布时间 2015-07-20
+
+发布时间 2015-07-20
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **Unity 集成：**
 
-    - 修复了导入一个 DLL 和其调试符号 (PDB) 时使用 Visual Studio 2015 创建的调试符号的转换。
+  - 修复了导入一个 DLL 和其调试符号 (PDB) 时使用 Visual Studio 2015 创建的调试符号的转换。
 
-    - 当导入一个 DLL 和其调试符号 (PDB) 时，始终生成 MDB 文件，同时提供了 MDB 文件的情况除外。
+  - 当导入一个 DLL 和其调试符号 (PDB) 时，始终生成 MDB 文件，同时提供了 MDB 文件的情况除外。
 
-    - 修复了带有 obj 目录的 Unity 项目目录的污染。
+  - 修复了带有 obj 目录的 Unity 项目目录的污染。
 
-    - 修复了对 System.Xml.Link 和 System.Runtime.Serialization 的引用的代。
+  - 修复了对 System.Xml.Link 和 System.Runtime.Serialization 的引用的代。
 
-    - 添加了对项目文件生成 API 挂钩的多个订户的支持。
+  - 添加了对项目文件生成 API 挂钩的多个订户的支持。
 
-    - 即使锁定了一个要生成的文件，也应始终完成项目文件生成。
+  - 即使锁定了一个要生成的文件，也应始终完成项目文件生成。
 
-    - 当指定要包含在 C# 项目中的文件时，在扩展筛选器中添加了对 * 通配符的支持。
+  - 当指定要包含在 C# 项目中的文件时，在扩展筛选器中添加了对 * 通配符的支持。
 
 - **Visual Studio 集成：**
 
-    - 修复了 Productivity Power Tools 的兼容性问题。
+  - 修复了 Productivity Power Tools 的兼容性问题。
 
-    - 修复了围绕事件和委托声明生成 MonoBehaviors。
+  - 修复了围绕事件和委托声明生成 MonoBehaviors。
 
 - **调试器：**
 
-    - 修复了调试时可能发生的冻结。
+  - 修复了调试时可能发生的冻结。
 
-    - 修复了关于在特定堆栈帧中不显示局部变量的问题。
+  - 修复了关于在特定堆栈帧中不显示局部变量的问题。
 
-    - 修复了检查空数组。
+  - 修复了检查空数组。
 
 ## <a name="20-preview-2"></a>2.0 预览版 2
- 发布日期 2015-04-02
+发布日期 2015-04-02
 
 ### <a name="new-features"></a>新增功能
 
 - **Unity 项目资源管理器：**
 
-    - 重命名 Unity 项目资源管理器中的文件时将自动重命名类（请参阅“选项”  对话框）。
+  - 重命名 Unity 项目资源管理器中的文件时将自动重命名类（请参阅“选项”  对话框）。
 
-    - 在 Unity 项目资源管理器中自动选择新创建的脚本。
+  - 在 Unity 项目资源管理器中自动选择新创建的脚本。
 
-    - 跟踪 Unity 项目资源管理器中的活动脚本（请参阅“选项”  对话框）。
+  - 跟踪 Unity 项目资源管理器中的活动脚本（请参阅“选项”  对话框）。
 
-    - 双同步 Visual Studio 解决方案资源管理器（请参阅“选项”  对话框）。
+  - 双同步 Visual Studio 解决方案资源管理器（请参阅“选项”  对话框）。
 
-    - 在 Unity 项目资源管理器中采用 Visual Studio 图标。
+  - 在 Unity 项目资源管理器中采用 Visual Studio 图标。
 
 - **调试器：**
 
-    - 从已保存或最近使用过的调试目标的列表中选择活动调试目标（请参阅“选项”  对话框）。
+  - 从已保存或最近使用过的调试目标的列表中选择活动调试目标（请参阅“选项”  对话框）。
 
-    - 在 MonoBehavior 方法上创建函数断点，并将它们应用于多个 MonoBehavior 类。
+  - 在 MonoBehavior 方法上创建函数断点，并将它们应用于多个 MonoBehavior 类。
 
-    - 在调试器中支持创建对象 ID。
+  - 在调试器中支持创建对象 ID。
 
-    - 在调试器中支持断点命中次数。
+  - 在调试器中支持断点命中次数。
 
-    - 在调试器中支持异常时中断（实验。 请参阅“选项”  对话框）。
+  - 在调试器中支持异常时中断（实验。 请参阅“选项”  对话框）。
 
-    - 在调试器中计算表达式时，支持对象和数组的创建。
+  - 在调试器中计算表达式时，支持对象和数组的创建。
 
-    - 在调试器中计算表达式时，支持 Null 比较。
+  - 在调试器中计算表达式时，支持 Null 比较。
 
-    - 筛选出调试器监视窗口中的过时成员。
+  - 筛选出调试器监视窗口中的过时成员。
 
 - **安装程序：**
 
-    - 优化 Visual Studio Tools for Unity 扩展注册。
+  - 优化 Visual Studio Tools for Unity 扩展注册。
 
-    - 为 Unity 5 安装 Visual Studio Tools for Unity 包。
+  - 为 Unity 5 安装 Visual Studio Tools for Unity 包。
 
 - **文档：** 改善文档生成的性能。
 
@@ -206,39 +210,39 @@ Visual Studio Tools for Unity 更改日志。
 
 - **Unity：** 在项目文件生成过程中查找 .rsp 文件中的不安全标志和自定义定义。
 
-- **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”对话框。
+- **UI：** Visual Studio 中已添加的 Visual Studio Tools for Unity“选项”对话框  。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **Unity 项目资源管理器：**
 
-    - 从 Visual Studio 解决方案资源管理器移动或重命名文件后，刷新 Unity 项目资源管理器。
+  - 从 Visual Studio 解决方案资源管理器移动或重命名文件后，刷新 Unity 项目资源管理器。
 
-    - 重命名 Unity 项目资源管理器中的文件时，保留选择。
+  - 重命名 Unity 项目资源管理器中的文件时，保留选择。
 
-    - 防止在 Unity 项目资源管理器中双击时文件自动展开和折叠。
+  - 防止在 Unity 项目资源管理器中双击时文件自动展开和折叠。
 
-    - 确保新选择的文件在 Unity 项目资源管理器中可见。
+  - 确保新选择的文件在 Unity 项目资源管理器中可见。
 
 - **调试器：**
 
-    - 在调试器中计算表达式时，防止可能发生的 Visual Studio 冻结。
+  - 在调试器中计算表达式时，防止可能发生的 Visual Studio 冻结。
 
-    - 确保方法调用发生在调试器中正确的域上。
+  - 确保方法调用发生在调试器中正确的域上。
 
 - **Unity：**
 
-    - 使用 Unity 5 更正 UnityVS.OpenFile 的位置。
+  - 使用 Unity 5 更正 UnityVS.OpenFile 的位置。
 
-    - 使用 Unity 5 更正 pdb2mdb 的位置。
+  - 使用 Unity 5 更正 pdb2mdb 的位置。
 
-    - 防止在项目文件生成过程中可能发生的异常。
+  - 防止在项目文件生成过程中可能发生的异常。
 
-    - 防止在 OSX 上运行 Unity 时可能发生的冻结。
+  - 防止在 OSX 上运行 Unity 时可能发生的冻结。
 
-    - 处理内部异常。
+  - 处理内部异常。
 
-    - 将 Unity 控制台日志发送到 VS 错误列表。
+  - 将 Unity 控制台日志发送到 VS 错误列表。
 
 - **文档：** 更正新 unity 文档的文档生成。
 
@@ -249,7 +253,7 @@ Visual Studio Tools for Unity 更改日志。
 - **UI：** 支持 Visual Studio 主题的上下文菜单和图标。
 
 ## <a name="20-preview"></a>2.0 预览版
- 发布日期 2014-11-12
+发布日期 2014-11-12
 
 ### <a name="new-features"></a>新增功能
 
@@ -259,15 +263,15 @@ Visual Studio Tools for Unity 更改日志。
 
 - 调试时改进的值的可视化效果：
 
-    - ArrayList、列表、哈希表和词典更好的可视化。
+  - ArrayList、列表、哈希表和词典更好的可视化。
 
-    - 将非公共成员和静态成员显示为监视视图和局部视图中的类别。
+  - 将非公共成员和静态成员显示为监视视图和局部视图中的类别。
 
-    - 改进了 Unity 的 SerializedProperty 的显示，以仅评估对该属性有效的值字段。
+  - 改进了 Unity 的 SerializedProperty 的显示，以仅评估对该属性有效的值字段。
 
-    - DebuggerDisplayAttribute 支持类和结构。
+  - DebuggerDisplayAttribute 支持类和结构。
 
-    - DebuggerTypeProxyAttribute 支持。
+  - DebuggerTypeProxyAttribute 支持。
 
 - 请使用向导插入 MonoBehaviour 方法，以遵守用户编码约定。
 
@@ -288,7 +292,8 @@ Visual Studio Tools for Unity 更改日志。
 - 如果没有必要，则无需注册日志回调。
 
 ## <a name="192"></a>1.9.2
- 发布日期 2014-10-09
+
+发布日期 2014-10-09
 
 ### <a name="new-features"></a>新增功能
 
@@ -311,7 +316,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复如果扩展名筛选器为空，则在项目文件中包含所有资产这一 bug。
 
 ## <a name="191"></a>1.9.1
- 发布时间 2014-09-22
+
+发布时间 2014-09-22
 
 ### <a name="new-features"></a>新增功能
 
@@ -356,7 +362,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复在 64 位版本 Unity 中使用 VSTU 打开脚本的问题。
 
 ## <a name="19"></a>1.9
- 发布时间 2014-07-29
+
+发布时间 2014-07-29
 
 ### <a name="new-features"></a>新增功能
 
@@ -404,7 +411,8 @@ Visual Studio Tools for Unity 更改日志。
 > C# 是 Unity 生态系统中的主要语言（即新的示例资产均以 C# 表示，Unity 文档将默认采用 C#），我们删除了对 UnityScript 和 Boo 的基本支持，以便更好地关注 C# 体验。 因此，VSTU 解决方案现在仅使用 C#，加载速度更快。
 
 ## <a name="182"></a>1.8.2
- 发布时间 2014-01-07
+
+发布时间 2014-01-07
 
 ### <a name="new-features"></a>新增功能
 
@@ -431,7 +439,8 @@ Visual Studio Tools for Unity 更改日志。
 - 当版本特定生成的程序集不同步时，防止 Unity 中发生崩溃。
 
 ## <a name="181"></a>1.8.1
- 发布时间 2013-11-21
+
+发布时间 2013-11-21
 
 ### <a name="new-features"></a>新增功能
 
@@ -464,7 +473,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了从 Unity 打开脚本的问题，以便不混淆 Unity 4.2 及更高版本的 ALT+TAB 顺序。
 
 ## <a name="180"></a>1.8.0
- 发布时间 2013-09-24
+
+发布时间 2013-09-24
 
 ### <a name="new-features"></a>新增功能
 
@@ -505,7 +515,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了局部视图中不断变化的布尔值。
 
 ## <a name="122"></a>1.2.2
- 发布时间 2013-07-09
+
+发布时间 2013-07-09
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -528,7 +539,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了 Unity 4.2 Beta 版程序集的处理问题。
 
 ## <a name="121"></a>1.2.1
- 发布时间 2013-04-09
+
+发布时间 2013-04-09
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -541,7 +553,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了某些外部 DLL 中断点绑定问题。
 
 ## <a name="12"></a>1.2
- 发布时间 2013-03-25
+
+发布时间 2013-03-25
 
 ### <a name="new-features"></a>新增功能
 
@@ -608,10 +621,10 @@ Visual Studio Tools for Unity 更改日志。
 - 已修复 bug UVS-11：协同例程中的局部变量。
 
 ## <a name="11--beta-release"></a>1.1 – Beta 版本
- 发布日期 2014-10-09
+发布日期 2014-10-09
 
 ## <a name="1013"></a>1.0.13
- 发布日期 2013-01-21
+发布日期 2013-01-21
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -634,7 +647,7 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了从 Unity 向 UnityVS 发送的长消息的处理。 在此之前，长消息可能会使 UnityVS 的消息传递部分崩溃。 因此，有时 UnityVS 不会从 Unity 打开文件。
 
 ## <a name="1012"></a>1.0.12
- 发布时间 2013-01-03
+发布时间 2013-01-03
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -653,7 +666,7 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了用户代码无法参与日志回调处理程序的 API 故障。
 
 ## <a name="1011"></a>1.0.11
- 发布时间 2012-11-28
+发布时间 2012-11-28
 
 ### <a name="new-features"></a>新增功能
 
@@ -684,7 +697,7 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了不能在 Visual Studio 状态栏中注入图标的崩溃。
 
 ## <a name="1010"></a>1.0.10
- 发布时间 2012-10-09
+发布时间 2012-10-09
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -697,7 +710,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了从 Unity 检索程序集的方式，以避免锁定文件和干扰 Unity 生成进程。
 
 ## <a name="109"></a>1.0.9
- 发布时间 2012-10-03
+
+发布时间 2012-10-03
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -716,7 +730,8 @@ Visual Studio Tools for Unity 更改日志。
 - 已修复 bug UV-21：评估对 Unity Math API 的方法调用时的指针无效。
 
 ## <a name="108"></a>1.0.8
- 发布时间 2012-09-26
+
+发布时间 2012-09-26
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -727,7 +742,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了在 Visual Studio 2010 中注册 UnityVS 的方式。
 
 ## <a name="107"></a>1.0.7
- 发布时间 2012-09-14
+
+发布时间 2012-09-14
 
 ### <a name="new-features"></a>新增功能
 
@@ -743,10 +759,11 @@ Visual Studio Tools for Unity 更改日志。
 > 由于 Visual Studio 2012 支持，我们不得不重命名几个文件并移动某些其他文件。 要导入 Unity 的 UnityVS 包现在分别为 Visual Studio 2010 和 Visual Studio 2012 命名为 UnityVS 2010 或 UnityVS 2012。 此版本还需要重新生成 UnityVS 项目文件。
 
 ## <a name="106---internal-build"></a>1.0.6 - 内部版本
- 发布时间 2012-09-12
+发布时间 2012-09-12
 
 ## <a name="105"></a>1.0.5
- 发布时间 2012-09-10
+
+发布时间 2012-09-10
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -755,20 +772,22 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了 Unity 连接到资产服务器时 Unity 实例的检测。 这会触发从 Unity 打开文件和自动连接 Visual Studio 调试器的失败。
 
 ## <a name="104"></a>1.0.4
- 发布时间 2012-09-05
+
+发布时间 2012-09-05
 
 ### <a name="new-features"></a>新增功能
 
 - Unity 中调试符号的自动转换。
 
-     如果资产文件夹中有 .NET .dll 程序集及其关联的 .pdb，只需重新导入程序集，UnityVS 就会将该 .pdb 转换为 Unity 的脚本引擎能够理解的调试符号文件，并且你能够从 UnityVS 单步执行自己的 .NET 程序集。
+    如果资产文件夹中有 .NET .dll 程序集及其关联的 .pdb，只需重新导入程序集，UnityVS 就会将该 .pdb 转换为 Unity 的脚本引擎能够理解的调试符号文件，并且你能够从 UnityVS 单步执行自己的 .NET 程序集。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - 修复了由方法或 Unity 内部属性引发的异常导致调试时的 UnityVS 崩溃。
 
 ## <a name="103"></a>1.0.3
- 发布时间 2012-09-04
+
+发布时间 2012-09-04
 
 ### <a name="new-features"></a>新增功能
 
@@ -783,7 +802,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了由自定义状态栏导致的随机 VS 崩溃。
 
 ## <a name="102"></a>1.0.2
- 发布时间 2012-08-30
+
+发布时间 2012-08-30
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -794,7 +814,8 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了使用 Unity 4 b7 从 Unity 检索脚本程序集的方式中的 bug。
 
 ## <a name="101"></a>1.0.1
- 发布时间 2012-08-28
+
+发布时间 2012-08-28
 
 ### <a name="new-features"></a>新增功能
 
@@ -811,4 +832,4 @@ Visual Studio Tools for Unity 更改日志。
 - 修复了 UnityScript 和 Boo 的资产文件夹内 dll 的完成。
 
 ## <a name="10--initial-release"></a>1.0 – 初始版本
- 发布时间 2012-08-22
+发布时间 2012-08-22

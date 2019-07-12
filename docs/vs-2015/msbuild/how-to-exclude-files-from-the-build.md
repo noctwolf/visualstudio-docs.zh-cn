@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440064"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821617"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：从生成中排除文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63440064"
 在项目文件中，可以使用通配符将所有文件包括在一个目录或一组嵌套目录中，以作为生成的输入。 但是，对于目录中的某个文件或嵌套目录中的某个目录，你可能并不希望将其作为生成的输入包括在内。 你可以从输入列表中显示排除该文件或目录。 有些时候，你只希望在特定情况下才包括项目中的某个文件。 那么你可以显式声明将文件包括在生成中的条件。  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>从生成的输入中排除文件或目录  
- 项列表是生成的输入文件。 要包括的项是使用 `Include` 属性单独或作为组声明的。 例如：  
+ 项列表是生成的输入文件。 要包括的项是使用 `Include` 属性单独或作为组声明的。 例如:  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -45,7 +45,7 @@ ms.locfileid: "63440064"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - 或 -  
+     \- 或 -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -59,7 +59,7 @@ ms.locfileid: "63440064"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - 或 -  
+     \- 或 -  
   
     ```  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  

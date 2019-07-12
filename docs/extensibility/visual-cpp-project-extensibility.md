@@ -1,6 +1,6 @@
 ---
 title: VisualC++项目扩展性
-ms.date: 01/25/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 10869ad290b0b8df614d25d792d0b3ed1e88eb17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660734"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825564"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual StudioC++项目系统可扩展性和工具集集成
 
@@ -55,11 +55,24 @@ ms.locfileid: "59660734"
 
 这些属性值指定下的文件夹名称`$(VCTargetsPath)`根文件夹：
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*应用程序类型*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *平台*\\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;平台\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（对于Windows桌面项目，当 `$(ApplicationType)` 为空时使用） &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+> `$(VCTargetsPath)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;*应用程序类型*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationType)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*平台*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` \
+&nbsp;&nbsp;&nbsp;&nbsp;*平台*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+
+`$(VCTargetsPath)` \\*平台*\\使用文件夹时`$(ApplicationType)`为空，Windows 桌面项目。
 
 ### <a name="add-a-new-platform-toolset"></a>添加一个新的平台工具集
 
-若要添加新的工具集，例如，"MyToolset"适用于现有的 Win32 平台，创建*MyToolset*下的文件夹`$(VCTargetsPath)` *\\平台\\Win32\\PlatformToolsets\\*，并创建*Toolset.props*并*Toolset.targets*中它的文件。
+若要添加新的工具集，例如，"MyToolset"适用于现有的 Win32 平台，创建*MyToolset*下的文件夹`$(VCTargetsPath)` *\\平台\\Win32\\PlatformToolsets\\* ，并创建*Toolset.props*并*Toolset.targets*中它的文件。
 
 在每个文件夹名称*PlatformToolsets*将出现在**项目属性**为可用的对话框**平台工具集**为指定的平台，如下所示：
 
@@ -69,7 +82,7 @@ ms.locfileid: "59660734"
 
 ### <a name="add-a-new-platform"></a>添加新的平台
 
-若要添加新的平台，例如，"MyPlatform"，创建*MyPlatform*下的文件夹`$(VCTargetsPath)` *\\平台\\*，并创建*Platform.default.props*， *Platform.props*，和*Platform.targets*中它的文件。 此外创建`$(VCTargetsPath)` *\\平台\\*<strong><em>MyPlatform</em></strong>*\\PlatformToolsets\\*文件夹，并在其中创建至少一个工具集。
+若要添加新的平台，例如，"MyPlatform"，创建*MyPlatform*下的文件夹`$(VCTargetsPath)` *\\平台\\* ，并创建*Platform.default.props*， *Platform.props*，和*Platform.targets*中它的文件。 此外创建`$(VCTargetsPath)` *\\平台\\* <strong><em>MyPlatform</em></strong> *\\PlatformToolsets\\* 文件夹，并在其中创建至少一个工具集。
 
 下的所有文件夹名称*平台*每个文件夹`$(ApplicationType)`并`$(ApplicationTypeRevision)`为可在 IDE 中显示**平台**项目的选项。
 
@@ -77,7 +90,7 @@ ms.locfileid: "59660734"
 
 ### <a name="add-a-new-application-type"></a>添加新的应用程序类型
 
-若要添加新的应用程序类型，创建*MyApplicationType*下的文件夹`$(VCTargetsPath)` *\\应用程序类型\\*并创建*Defaults.props*文件中的。 至少一个修订版本是必需的应用程序类型，因此创建`$(VCTargetsPath)` *\\应用程序类型\\MyApplicationType\\1.0*文件夹，并创建*Defaults.props*中该文件。 您还应创建`$(VCTargetsPath)`  *\\ApplicationType\\MyApplicationType\\1.0\\平台*文件夹并在其中创建至少一个平台。
+若要添加新的应用程序类型，创建*MyApplicationType*下的文件夹`$(VCTargetsPath)` *\\应用程序类型\\* 并创建*Defaults.props*文件中的。 至少一个修订版本是必需的应用程序类型，因此创建`$(VCTargetsPath)` *\\应用程序类型\\MyApplicationType\\1.0*文件夹，并创建*Defaults.props*中该文件。 您还应创建`$(VCTargetsPath)`  *\\ApplicationType\\MyApplicationType\\1.0\\平台*文件夹并在其中创建至少一个平台。
 
 `$(ApplicationType)` 和`$(ApplicationTypeRevision)`属性用户界面中不可见。 它们在项目模板中定义和创建项目后，不能更改。
 
@@ -85,29 +98,50 @@ ms.locfileid: "59660734"
 
 Microsoft 的导入的简化的树C++属性和目标文件如下所示：
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*默认*\\\*.*属性* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*应用程序类型*\\ `$(ApplicationType)`\\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*应用程序类型*\\`$(ApplicationType)` \\ `$(ApplicationTypeRevision)` \\ *Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\ `$(Platform)` \\ *Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*ImportAfter*\\*默认*\\\*。*属性*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*默认*\\\*。*属性* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\ `$(Platform)` \\ *Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*默认*\\\*。*属性*
 
 Windows 桌面项目不定义`$(ApplicationType)`，因此它们只能导入
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(MSBuildExtensionsPath)` \\ `$(MSBuildToolsVersion)` \\ *Microsoft.Common.props*&nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportBefore*\\*默认*\\\*.*属性* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\*平台*\\ `$(Platform)` \\*Platform.default.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *ImportAfter* \\ *默认值*\\\*。*属性*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.Default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(MSBuildExtensionsPath)`\\`$(MSBuildToolsVersion)`\\*Microsoft.Common.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportBefore*\\*默认*\\\*。*属性* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Platforms*\\`$(Platform)`\\*Platform.default.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*ImportAfter*\\*默认*\\\*。*属性*
 
 我们将使用`$(_PlatformFolder)`属性，包含`$(Platform)`平台文件夹位置。 此属性是
 
-`$(VCTargetsPath)`\\*平台*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*平台*\\`$(Platform)`
 
 对于 Windows 桌面应用，并
 
-`$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\`$(Platform)`
+> `$(VCTargetsPath)`\\*应用程序类型*\\`$(ApplicationType)`\\`$(ApplicationTypeRevision)`\\*平台*\\`$(Platform)`
 
 对于其他所有情况。
 
 按以下顺序导入属性文件：
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.props* &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.props* &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.props* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportBefore*\\\*.*属性* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\ *</c1521>ImportAfter<spanclass="notranslate">*\\\*。*属性</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*.*props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.props* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*。*属性*
 
 按以下顺序导入目标文件：
 
-`$(VCTargetsPath)`\\*Microsoft.Cpp.targets* &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Current.targets* &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *Platform.targets* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(VCTargetsPath)` \\ *Microsoft.Cpp.Platform.targets* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c1021><spanclass="notranslate">&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*。*目标* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *PlatformToolsets* \\ `$(PlatformToolset)` \\ *Toolset.target* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(_PlatformFolder)` \\ *ImportAfter*\\\*.*目标</span>*
+> `$(VCTargetsPath)`\\*Microsoft.Cpp.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Current.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(VCTargetsPath)`\\*Microsoft.Cpp.Platform.targets* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportBefore*\\\*。*目标* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*PlatformToolsets*\\`$(PlatformToolset)`\\*Toolset.target* \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(_PlatformFolder)`\\*ImportAfter*\\\*。*目标*
 
 如果您需要定义您的工具集的某些默认属性，您可以将文件添加到相应 ImportBefore 和 ImportAfter 文件夹中。
 
@@ -119,13 +153,13 @@ Windows 桌面项目不定义`$(ApplicationType)`，因此它们只能导入
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
-   此文件定义的本机生成过程中的主要部分，并还会导入：
+  此文件定义的本机生成过程中的主要部分，并还会导入：
 
-   - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.CppBuild.targets*
 
-   - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
+  - `$(VCTargetsPath)`\\*Microsoft.BuildSteps.targets*
 
-   - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
+  - `$(MSBuildToolsPath)`\\*Microsoft.Common.Targets*
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.Common.props*
 
@@ -290,7 +324,7 @@ MSBuild 提供了这些帮助器类读取和写入.tlog 文件：
 
 *读取*.tlog 文件 (\*.read。\*。tlog) 包含有关源文件及其依赖项的信息。
 
-插入符号 (**^**) 在行开头指示一个或多个源。 共享同一个依赖项的源由竖线分隔 (**\|**)。
+插入符号 ( **^** ) 在行开头指示一个或多个源。 共享同一个依赖项的源由竖线分隔 ( **\|** )。
 
 之后的源，每个在其对应行中列出了依赖项文件。 所有文件的名称都是完整路径。
 
@@ -315,7 +349,7 @@ F:\TEST\CONSOLEAPPLICATION1\CONSOLEAPPLICATION1\CLASS1.H
 
 *编写*.tlog (\*.write。\*。tlog) 文件连接源和输出。
 
-插入符号 (**^**) 在行开头指示一个或多个源。 由竖线分隔多个源 (**\|**)。
+插入符号 ( **^** ) 在行开头指示一个或多个源。 由竖线分隔多个源 ( **\|** )。
 
 将源中生成的输出文件应该列出后的源，每个在其对应行。 所有文件名称必须都是完整路径。
 
@@ -436,7 +470,7 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 
 CPS 上下文类型支持其他值，但它们未在视觉对象中使用C++项目。
 
-如果该规则应在多个上下文中可见，则使用分号 (**;**) 来分隔的上下文值，如下所示：
+如果该规则应在多个上下文中可见，则使用分号 ( **;** ) 来分隔的上下文值，如下所示：
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -554,7 +588,7 @@ CPS 上下文类型支持其他值，但它们未在视觉对象中使用C++项�
 
 1. 该属性`_UpgradePlatformToolsetFor_<safe_toolset_name>`定义当前工具集，并且其值不等于当前的工具集。
 
-   在这些属性名称，  *\<safe_toolset_name >* 表示工具集名称，其中包含所有非字母数字字符替换为下划线 (**\_**)。
+   在这些属性名称，  *\<safe_toolset_name >* 表示工具集名称，其中包含所有非字母数字字符替换为下划线 ( **\_** )。
 
 当一个项目可以进行升级时，它参与了*解决方案重定目标*。 有关详细信息，请参阅[IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)。
 

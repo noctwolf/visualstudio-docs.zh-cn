@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0cb96291f7a867bcdd0248cc68c2fbccb6ac9f87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399858"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64828801"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
 检索一个标志，指示模块是否一个.netmodule （只包含元数据，并且没有本机符号是 Microsoft 中间语言 (MSIL) 模块）。

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565155"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821665"
 ---
 # <a name="upgrade-mdf-files"></a>升级 .mdf 文件
 
@@ -95,9 +95,9 @@ ms.locfileid: "62565155"
 
 - 在 Visual Studio 中，而无需对其进行升级打开的项目。
 
-    - 若要运行项目，请选择**F5**密钥。
+  - 若要运行项目，请选择**F5**密钥。
 
-    - 若要编辑数据库，请打开 *.mdf*中的文件**解决方案资源管理器**，并展开节点中的**服务器资源管理器**以使用你的数据库。
+  - 若要编辑数据库，请打开 *.mdf*中的文件**解决方案资源管理器**，并展开节点中的**服务器资源管理器**以使用你的数据库。
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>若要使 SQL Server Express 的默认数据库引擎
 

@@ -8,12 +8,12 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 07d650e127b5f15abbfac8aef179bb9e01a36297
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 24ea04e59178248c7a9795a2f928c311ba83db2e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096486"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824072"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>用于 Visual Studio 的评估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ ms.locfileid: "60096486"
 
 - 验证所有标签，除非组头和按钮，以冒号结尾，并且前加上与它们配对的控件。
 
-- 验证按钮、 命令和启动 UI 来捕获用户输入的命令链接结束省略号中 **[...]**.
+- 验证按钮、 命令和启动 UI 来捕获用户输入的命令链接结束省略号中 **[...]** .
 
-     示例：
+  示例：
 
-    - **高级...** 对话框上的按钮。
+  - **高级...** 对话框上的按钮。
 
-    - 工具菜单下的命令选项 (**工具 > 选项**) 应获取省略号，因为启动对话框本身为命令的意图。
+  - 工具菜单下的命令选项 (**工具 > 选项**) 应获取省略号，因为启动对话框本身为命令的意图。
 
 - 验证 UI 包含没有缩写，除了行业标准条款。 例如，HTML 和 TCP/IP 都不需要拼写出来，但应在 OOM （内存） 不足和 PII （个人身份信息）。
 
@@ -147,9 +147,9 @@ ms.locfileid: "60096486"
 
 - 如果此字段为必填的字段，必须标识为此，请验证：
 
-    - 背景设置为`Environment.ControlEditRequiredBackground`和前景色设置为 `Environment.ControlEditRequiredHintText`
+  - 背景设置为`Environment.ControlEditRequiredBackground`和前景色设置为 `Environment.ControlEditRequiredHintText`
 
-    - 没有为显示在控件内的提示文本 **"\<所需 >"**
+  - 没有为显示在控件内的提示文本 **"\<所需 >"**
 
 #### <a name="button-controls"></a>按钮控件
 
@@ -159,11 +159,11 @@ ms.locfileid: "60096486"
 
 - 它是可接受使用仅省略号中使用的小方形按钮 **[...]** 而不是它 **[浏览...]** 按钮 （或类似的功能）。 如果使用，请验证按钮为 23 x 23 的大小。
 
-- 如果有多个 **[浏览...]** 按钮在对话框中，然后验证缩写的版本 (仅限省略号 **[...]**) 用于所有。
+- 如果有多个 **[浏览...]** 按钮在对话框中，然后验证缩写的版本 (仅限省略号 **[...]** ) 用于所有。
 
 - 验证该省略号 **[...]** 按钮没有助记键。 当焦点在其旁边的输入控件上时，一个选项卡应将焦点移到的省略号按钮。
 
-- 验证按钮、 命令和启动捕获更多用户输入的辅助用户界面的命令链接必须以省略号结尾 **[...]**.
+- 验证按钮、 命令和启动捕获更多用户输入的辅助用户界面的命令链接必须以省略号结尾 **[...]** .
 
 #### <a name="hyperlinks"></a>超链接
 
@@ -171,11 +171,11 @@ ms.locfileid: "60096486"
 
 - 验证使用 VS 颜色：
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - 验证超链接显示蓝色使用没有下划线除非嵌入在一个段落。
 

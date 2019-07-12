@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: f89c62863aadf4e1f8902799b502c07b9dea528d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747505"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821916"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如何：在程序代码中从文件打开模型
 
@@ -39,7 +39,7 @@ ms.locfileid: "66747505"
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
-    - 如果没有看到这下 **.NET**选项卡**添加引用**对话框中，单击**浏览**选项卡上，并导航到`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
+  - 如果没有看到这下 **.NET**选项卡**添加引用**对话框中，单击**浏览**选项卡上，并导航到`%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`。
 
 - DSL 集，它将为您在 bin 文件夹下你的 DSL 项目。 其名称通常为窗体：*YourCompany*。*您的项目*`.Dsl.dll`。
 

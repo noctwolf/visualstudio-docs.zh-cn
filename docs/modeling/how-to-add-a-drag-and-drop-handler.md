@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993479"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821943"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 
@@ -126,13 +126,13 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -此属性包含序列化的版本的源对象，通常在多个格式。 其最有用的函数是：
 
-    - diagramEventArgs.Data.GetDataFormats()-列出了可以在其中解码拖动的对象的格式。 例如，如果用户从桌面拖动文件，则可用的格式包括文件名（“`FileNameW`”）。
+  - diagramEventArgs.Data.GetDataFormats()-列出了可以在其中解码拖动的对象的格式。 例如，如果用户从桌面拖动文件，则可用的格式包括文件名（“`FileNameW`”）。
 
-    - `diagramEventArgs.Data.GetData(format)` -解码拖动的对象中指定的格式。 将该对象转换为相应的类型。 例如：
+  - `diagramEventArgs.Data.GetData(format)` -解码拖动的对象中指定的格式。 将该对象转换为相应的类型。 例如:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         还可以采用自己的自定义格式从源中传输对象（例如模型总线引用）。 有关详细信息，请参阅[如何在拖放发送模型总线引用](#to-send-an-object-from-a-source-dsl)。
+    还可以采用自己的自定义格式从源中传输对象（例如模型总线引用）。 有关详细信息，请参阅[如何在拖放发送模型总线引用](#to-send-an-object-from-a-source-dsl)。
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -如果你希望用户从 DSL 或 UML 模型拖动项，则使用此属性。 元素组原型包含一个或多个对象、链接及其属性值。 在粘贴操作中以及要从工具箱添加元素时，也会使用它。 在原型中，对象及其类型由 Guid 标识。 例如，此代码允许用户从 UML 关系图或 UML 模型资源管理器拖动类元素：
 
@@ -162,7 +162,7 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
 1. 如果未安装 Visual Studio 模型总线扩展，请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 
-2. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”**。 新项目“ModelBus”随即添加到 DSL 解决方案中。
+2. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击**启用 Modelbus**。 在该对话框中，选择一个或两个选项。  单击 **“确定”** 。 新项目“ModelBus”随即添加到 DSL 解决方案中。
 
 3. 单击**转换所有模板**重新生成解决方案。
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>请参阅
 
 - [自定义复制行为](../modeling/customizing-copy-behavior.md)
-- [部署域特定语言解决方案](../modeling/deploying-domain-specific-language-solutions.md)
+- [部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

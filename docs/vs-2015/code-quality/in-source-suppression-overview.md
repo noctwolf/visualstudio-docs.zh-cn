@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426606"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825990"
 ---
 # <a name="in-source-suppression-overview"></a>“源代码中禁止显示”概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **作用域**-取消该警告的目标。 如果未指定目标，则将它设置为属性的目标。 受支持的作用域包括：  
   
-    - 模块  
-  
-    - 命名空间  
-  
-    - 资源  
-  
-    - 类型  
-  
-    - 成员  
+  - 模块  
+
+  - 命名空间  
+
+  - 资源  
+
+  - 类型  
+
+  - 成员  
   
 - **目标**-用于取消该警告将目标指定的标识符。 它必须包含完全限定的项名称。  
   

@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527cb029374ae8246c827b057800b751c377d12
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 098aa9499dd4c1073377ed6aa5e8fa2a6fb37ca8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327835"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823876"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>源代码管理插件的测试指南
 本部分提供用于测试你的源代码管理插件与指导[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 提供的最常见的测试区域，以及一些可能会出现问题的更多复杂区域的广泛概述。 本概述不应为测试用例的详尽列表。
@@ -53,43 +53,43 @@ ms.locfileid: "66327835"
 
 - [测试区域 1：添加到源代码管理/从源代码管理打开](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    - Case 1a:将解决方案添加到源代码管理
+  - Case 1a:将解决方案添加到源代码管理
 
-    - Case 1b:从源代码管理打开解决方案
+  - Case 1b:从源代码管理打开解决方案
 
-    - 案例 1 c:从源代码管理添加解决方案
+  - 案例 1 c:从源代码管理添加解决方案
 
 - [测试区域 2：从源代码管理获取](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [测试区域 3：签出/撤消签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    - 案例 3:签出/撤销签出
+  - 案例 3:签出/撤销签出
 
-    - Case 3a:签出
+  - Case 3a:签出
 
-    - Case 3b:断开连接签出
+  - Case 3b:断开连接签出
 
-    - 案例 3 c:查询编辑/查询保存 (QEQS)
+  - 案例 3 c:查询编辑/查询保存 (QEQS)
 
-    - 本例中 3d:无提示签出
+  - 本例中 3d:无提示签出
 
-    - Case 3e:撤消签出
+  - Case 3e:撤消签出
 
 - [测试区域 4：签入](../../extensibility/internals/test-area-4-check-in.md)
 
-    - Case 4a:修改的项目
+  - Case 4a:修改的项目
 
-    - Case 4b:添加文件
+  - Case 4b:添加文件
 
-    - 用例 4 c:添加项目
+  - 用例 4 c:添加项目
 
 - [测试区域 5：更改源代码管理](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    - Case 5a:将绑定
+  - Case 5a:将绑定
 
-    - Case 5b:取消绑定
+  - Case 5b:取消绑定
 
-    - 用例 5 c:重新绑定
+  - 用例 5 c:重新绑定
 
 - [测试区域 6：删除](../../extensibility/internals/test-area-6-delete.md)
 
@@ -97,9 +97,9 @@ ms.locfileid: "66327835"
 
 - [测试区域 8：插件切换](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    - Case 8a:自动更改
+  - Case 8a:自动更改
 
-    - Case 8b:基于解决方案的更改
+  - Case 8b:基于解决方案的更改
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件](../../extensibility/source-control-plug-ins.md)

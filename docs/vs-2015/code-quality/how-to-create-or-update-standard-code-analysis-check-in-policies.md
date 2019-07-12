@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436849"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825814"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ ms.locfileid: "63436849"
   
 - 从**运行此规则集**列出，请使用以下方法之一：  
   
-    - 选择 Microsoft 标准规则集。  
-  
-    - 若要选择自定义规则集，请单击 **\<选择规则集从源代码管理...>** ，然后键入源代码管理浏览器中的规则集的版本控制路径。 版本控制路径的语法是：  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - 详细了解如何创建和实现自定义签入策略规则集，请参阅[为托管代码实施自定义签入策略](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。  
+  - 选择 Microsoft 标准规则集。  
+
+  - 若要选择自定义规则集，请单击 **\<选择规则集从源代码管理...>** ，然后键入源代码管理浏览器中的规则集的版本控制路径。 版本控制路径的语法是：  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - 详细了解如何创建和实现自定义签入策略规则集，请参阅[为托管代码实施自定义签入策略](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

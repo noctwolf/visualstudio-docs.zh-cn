@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17d989f3d417866a0bf5dd31099b2f93c9b6e957
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322853"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826274"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。
@@ -45,13 +45,13 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 
 - `<Identity>` -定义此包的标识信息，包括以下属性：
 
-    - `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称：Company.Product.Feature.Name. `Id`特性被限制为 100 个字符。
+  - `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称：Company.Product.Feature.Name. `Id`特性被限制为 100 个字符。
 
-    - `Version` -定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。
+  - `Version` -定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式：Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。
 
-    - `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循 CLR 的区域设置代码约定对于资源程序集，例如： en-我们，en，fr-fr 的。 您可以指定`neutral`声明将在 Visual Studio 的任何版本运行的非特定于语言的扩展。 默认值为 `neutral`。
+  - `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循 CLR 的区域设置代码约定对于资源程序集，例如： en-我们，en，fr-fr 的。 您可以指定`neutral`声明将在 Visual Studio 的任何版本运行的非特定于语言的扩展。 默认值为 `neutral`。
 
-    - `Publisher` -此属性标识此包，公司或单独的名称的发布者。 `Publisher`特性被限制为 100 个字符。
+  - `Publisher` -此属性标识此包，公司或单独的名称的发布者。 `Publisher`特性被限制为 100 个字符。
 
 - `<DisplayName>` -此元素指定扩展管理器 UI 中显示的用户友好的包名称。 `DisplayName`内容被限制为 50 个字符。
 
@@ -80,9 +80,9 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 
 - `Scope` -此特性可以采用"Global"或"ProductExtension"的值：
 
-    - "全局"，则指定安装不局限于特定的 SKU。 例如，安装扩展 SDK 时，将使用此值。
+  - "全局"，则指定安装不局限于特定的 SKU。 例如，安装扩展 SDK 时，将使用此值。
 
-    - "ProductExtension"指定作用域为单个 Visual Studio Sku 传统 VSIX 扩展 （版本 1.0） 已安装。 这是默认值。
+  - "ProductExtension"指定作用域为单个 Visual Studio Sku 传统 VSIX 扩展 （版本 1.0） 已安装。 这是默认值。
 
 - `AllUsers` -此可选属性指定是否将为所有用户安装此包。 默认情况下，此属性为 false，它指定的包是每个用户。 （当此值设置为 true 时，执行安装的用户必须提升为要安装生成的 VSIX 的管理权限级别。
 
@@ -94,71 +94,71 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 
 - `<InstallationTarget>` -此元素控制 VSIX 安装程序安装包的位置的位置。 如果的值`Scope`属性是"ProductExtension"包必须为目标的 SKU，已将播发其可用性扩展到其内容的一部分安装的清单文件。 `<InstallationTarget>`元素具有以下属性`Scope`属性具有显式或默认值"ProductExtension":
 
-    - `Id` -此属性标识的包。  该属性如下所示的命名空间约定：Company.Product.Feature.Name. `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：
+  - `Id` -此属性标识的包。  该属性如下所示的命名空间约定：Company.Product.Feature.Name. `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：
 
-        - Microsoft.VisualStudio.IntegratedShell
+    - Microsoft.VisualStudio.IntegratedShell
 
-        - Microsoft.VisualStudio.Pro
+    - Microsoft.VisualStudio.Pro
 
-        - Microsoft.VisualStudio.Premium
+    - Microsoft.VisualStudio.Premium
 
-        - Microsoft.VisualStudio.Ultimate
+    - Microsoft.VisualStudio.Ultimate
 
-        - Microsoft.VisualStudio.VWDExpress
+    - Microsoft.VisualStudio.VWDExpress
 
-        - Microsoft.VisualStudio.VPDExpress
+    - Microsoft.VisualStudio.VPDExpress
 
-        - Microsoft.VisualStudio.VSWinExpress
+    - Microsoft.VisualStudio.VSWinExpress
 
-        - Microsoft.VisualStudio.VSLS
+    - Microsoft.VisualStudio.VSLS
 
-        - My.Shell.App
+    - My.Shell.App
 
-    - `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [10.0-11.0] 其中
+  - `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [10.0-11.0] 其中
 
-        - [-非独占的最低版本。
+    - [-非独占的最低版本。
 
-        - ] 的非独占的最高版本。
+    - ] 的非独占的最高版本。
 
-        - (-独占的最低版本。
+    - (-独占的最低版本。
 
-        - ) 的排他的最高版本。
+    - ) 的排他的最高版本。
 
-        - 单个版本 #-指定的版本。
+    - 单个版本 #-指定的版本。
 
-        > [!IMPORTANT]
-        > 在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。
+    > [!IMPORTANT]
+    > 在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。
 
-        请参阅 visual Studio 2017 版本号[Visual Studio 生成号和发布日期](../install/visual-studio-build-numbers-and-release-dates.md)。
+    请参阅 visual Studio 2017 版本号[Visual Studio 生成号和发布日期](../install/visual-studio-build-numbers-and-release-dates.md)。
 
-        当表示 Visual Studio 2017 版本的版本，应始终为次要版本**0**。 例如，Visual Studio 2017 版本 15.3.26730.0 应表示为 [15.0.26730.0,16.0)。 这只是所需的 Visual Studio 2017 和更高版本的版本号。
+    当表示 Visual Studio 2017 版本的版本，应始终为次要版本**0**。 例如，Visual Studio 2017 版本 15.3.26730.0 应表示为 [15.0.26730.0,16.0)。 这只是所需的 Visual Studio 2017 和更高版本的版本号。
 
-    - `AnyAttribute*` -`<InstallationTarget>`元素允许开放式集的属性公开在运行时作为名称 / 值对字典。
+  - `AnyAttribute*` -`<InstallationTarget>`元素允许开放式集的属性公开在运行时作为名称 / 值对字典。
 
 ### <a name="dependencies-element"></a>依赖关系元素
  此元素包含此包声明的依赖项的列表。 如果指定了任何依赖项，这些包 (由标识其`Id`) 必须之前已安装。
 
 - `<Dependency>` 元素的此子元素具有以下属性：
 
-    - `Id` -此属性必须为依赖的包的唯一 ID。 此标识值必须匹配`<Metadata><Identity>Id`此包所依赖的包的属性。 `Id`属性遵循命名空间约定：Company.Product.Feature.Name. 属性只能包含字母数字字符，并且限制为 100 个字符。
+  - `Id` -此属性必须为依赖的包的唯一 ID。 此标识值必须匹配`<Metadata><Identity>Id`此包所依赖的包的属性。 `Id`属性遵循命名空间约定：Company.Product.Feature.Name. 属性只能包含字母数字字符，并且限制为 100 个字符。
 
-    - `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [12.0，13.0]，其中：
+  - `Version` -此属性指定与此 SKU 的最小值和最大受支持版本的版本范围。 包可以详细介绍它支持的 Sku 的版本。 版本范围表示法是 [12.0，13.0]，其中：
 
-        - [-非独占的最低版本。
+    - [-非独占的最低版本。
 
-        - ] 的非独占的最高版本。
+    - ] 的非独占的最高版本。
 
-        - (-独占的最低版本。
+    - (-独占的最低版本。
 
-        - ) 的排他的最高版本。
+    - ) 的排他的最高版本。
 
-        - 单个版本 #-指定的版本。
+    - 单个版本 #-指定的版本。
 
-    - `DisplayName` -此属性是包的依赖，如对话框和错误消息的 UI 元素中使用的显示名称。 该属性是可选的除非通过 MSI 安装从属包。
+  - `DisplayName` -此属性是包的依赖，如对话框和错误消息的 UI 元素中使用的显示名称。 该属性是可选的除非通过 MSI 安装从属包。
 
-    - `Location` -此可选属性指定是嵌套的 VSIX 包到此 VSIX 中的相对路径或指向的依赖项的下载位置的 URL。 此属性用于帮助用户找到必备组件包。
+  - `Location` -此可选属性指定是嵌套的 VSIX 包到此 VSIX 中的相对路径或指向的依赖项的下载位置的 URL。 此属性用于帮助用户找到必备组件包。
 
-    - `AnyAttribute*` -`Dependency`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。
+  - `AnyAttribute*` -`Dependency`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。
 
 ### <a name="assets-element"></a>资产元素
  此元素包含一系列`<Asset>`扩展或内容的每个元素的标记显示此包。
@@ -189,11 +189,11 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 
   - `AnyAttribute*` 的在运行时作为名称 / 值对字典的路由公开的属性开放式集。
 
-     `<AnyElement>*` 的之间允许任何结构化的内容`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。
+    `<AnyElement>*` 的之间允许任何结构化的内容`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。
 
 ### <a name="sample-manifest"></a>示例清单
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
