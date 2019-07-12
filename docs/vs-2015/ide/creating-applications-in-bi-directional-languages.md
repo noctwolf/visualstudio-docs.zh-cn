@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701186"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826193"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>以双向语言创建应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "65701186"
   
 - **从右向左的读取顺序** 默认情况下，Visual Studio 中使用的文本输入控件使用的是从左向右的读取顺序。 大多数情况可以使用标准 Window 手势来切换读取顺序。 例如，可以按 Ctrl + 右 Shift 组合键，将“属性”窗口切换为支持按从右向左的顺序读取属性值。  
   
-     但是，Visual Studio 中并非所有情况都支持从右向左的读取顺序。 不支持的情况如下：  
-  
-    - Visual Studio 对话框中的复选框、下拉列表和其他控件始终使用从左向右的读取顺序。  
-  
-    - 代码编辑器（和文本编辑器）不支持从右到左的读取顺序。 可以用双向语言输入文本，但读取顺序总是从左向右。  
+  但是，Visual Studio 中并非所有情况都支持从右向左的读取顺序。 不支持的情况如下：  
+
+  - Visual Studio 对话框中的复选框、下拉列表和其他控件始终使用从左向右的读取顺序。  
+
+  - 代码编辑器（和文本编辑器）不支持从右到左的读取顺序。 可以用双向语言输入文本，但读取顺序总是从左向右。  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>使用阿拉伯语或希伯来语命名内容  
  可以使用阿拉伯语或希伯来语文本给文件夹、变量或其他对象指定名称。 使用阿拉伯语时，可使用包括 Kashida 和音调符号在内的任何阿拉伯语字符。  
@@ -68,7 +68,7 @@ ms.locfileid: "65701186"
     > [!NOTE]
     > 代码编辑器的情况比较特殊。 有关详细信息，请参见以下内容。  
   
-- 数据元素。 “服务器资源管理器”将正确显示这些元素，并允许对其进行编辑。  
+- 数据元素。 “服务器资源管理器”  将正确显示这些元素，并允许对其进行编辑。  
   
 - 复制到 Windows 剪贴板上的元素。  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982643"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821954"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。
@@ -46,9 +46,9 @@ ms.locfileid: "62982643"
 
 - 使单独测试基于后置条件的单独子句。 例如，创建单独测试以在有订单时通知餐馆并向顾客收取款项。 此分离具有这些好处：
 
-    - 需求的不同方面通常独立发生更改。 按这种方法将测试分成不同方面，可以在需求发生更改时更方便地更新测试。
+  - 需求的不同方面通常独立发生更改。 按这种方法将测试分成不同方面，可以在需求发生更改时更方便地更新测试。
 
-    - 如果开发计划逐个实现用例的方面，则你可以随着开发的进展单独启用测试。
+  - 如果开发计划逐个实现用例的方面，则你可以随着开发的进展单独启用测试。
 
 - 设计测试时，请将测试数据的选择与确定是否已实现后置条件的代码或脚本分离。 例如，可能是一个简单的算术函数的测试：输入 4;验证输出为 2。 相反，将脚本设计为：选择一个输入;本身乘以输出，并验证结果为原始输入。 此样式允许你在不更改测试主体的情况下改变测试输入。
 

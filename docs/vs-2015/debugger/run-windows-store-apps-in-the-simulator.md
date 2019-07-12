@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683537"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823845"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模拟器中运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,30 +55,31 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
  将交互模式设置为双指的捏合与缩放手势。  
   
 - ![模拟器两个手指目标](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - 双目标图标指示双指在设备屏幕上的位置。  
-  
-    - 移动鼠标以将图标放置在设备屏幕上的对象上。  
-  
-    - 在捏合或缩放之前，向前或向后滚动鼠标滚轮以更改双指的模拟距离。  
-  
+
+  - 双目标图标指示双指在设备屏幕上的位置。  
+
+  - 移动鼠标以将图标放置在设备屏幕上的对象上。  
+
+  - 在捏合或缩放之前，向前或向后滚动鼠标滚轮以更改双指的模拟距离。  
+
 - ![捏放、 缩放和旋转目标](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - 按左键并向后旋转滚轮（朝向你）以缩小（捏合）。  
-  
-    - 按左键并向前旋转鼠标滚轮（远离你）以放大（缩放）。  
+
+  - 按左键并向后旋转滚轮（朝向你）以缩小（捏合）。  
+
+  - 按左键并向前旋转鼠标滚轮（远离你）以放大（缩放）。  
   
 ## <a name="object-rotation"></a>对象旋转  
-  “触摸仿真旋转”按钮将交互模式设置为使用双指的旋转手势。  
+           **
+          ** “触摸仿真旋转”按钮将交互模式设置为使用双指的旋转手势。  
   
 - 移动鼠标以将图标放置在设备屏幕上的对象上。  
   
-    - 在旋转对象之前，向前或向后滚动鼠标滚轮以更改双指的模拟方向。  
-  
+  - 在旋转对象之前，向前或向后滚动鼠标滚轮以更改双指的模拟方向。  
+
 - 按左键并向后旋转滚轮（朝向你）以逆时针旋转对象。 在旋转鼠标滚轮时，两个目标图标中的一个围绕另一个旋转以指示旋转的相对大小。  
-  
-    - 按左键并向前旋转鼠标滚轮（远离你）以顺时针旋转对象。  
-  
+
+  - 按左键并向前旋转鼠标滚轮（远离你）以顺时针旋转对象。  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> 启用或禁用“总在最前面”模式  
  可将模拟器窗口设置为始终位于其他窗口之上。  “切换最顶端窗口”按钮启用或禁用模拟器窗口的“总在最前面”  模式。  
   
@@ -120,7 +121,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
 1. 在模拟器工具栏上，选择  “更改网络属性”按钮。  
   
-2. 在  “设置网络属性”对话框中，选择“使用模拟网络属性” 。  
+2. 在  “设置网络属性”对话框中，选择“使用模拟网络属性”  。  
   
     清除复选框以移除模拟并返回到当前连接的接口的网络属性。  
   

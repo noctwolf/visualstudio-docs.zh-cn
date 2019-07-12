@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847031"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822071"
 ---
 # <a name="proxy-authorization-required"></a>所需的代理身份验证
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "65847031"
 
 - 如果上述步骤未能解决问题，这可能是由于你的代理服务器不提示需要提供 http://go.microsoft.com 地址的凭据，而是提示需要 *.visualStudio.com 地址的凭据。 对于这些服务器，需要以下 Url 添加到允许列表以取消阻止在 Visual Studio 中的所有登录方案：
 
-    - *.windows.net
+  - *.windows.net
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.visualstudio.com
+  - *.visualstudio.com
 
-    - *.microsoft.com
+  - *.microsoft.com
 
-    - *.live.com
+  - *.live.com
 
 - 您可以删除 [http://go.microsoft.com](http://go.microsoft.com ) 地址的允许列表中，以便同时显示代理身份验证对话框 [http://go.microsoft.com](http://go.microsoft.com ) 地址和服务器终结点时重新启动 Visual Studio。
 

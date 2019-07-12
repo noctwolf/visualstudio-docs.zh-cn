@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406944"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821591"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>通过使用线程窗口在 Visual Studio 调试器中查看的主题 (C#，Visual Basic 中， C++)
 在中**线程**窗口中，您可以检查和使用的线程中进行调试的应用程序。 有关如何使用的分步指导**线程**窗口中，请参阅[演练：使用线程窗口调试](../debugger/how-to-use-the-threads-window.md)。
@@ -71,7 +71,7 @@ ms.locfileid: "63406944"
 - 在顶部的工具栏**线程**窗口中，选择**列**。 然后，选中或清除要显示或隐藏的列的名称。
 
 ## <a name="display-flagged-threads"></a>显示标记的线程
- 在“线程”窗口中，可以用图标标记来标记要格外关注的线程。 有关详细信息，请参阅[如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。 在“线程”窗口中，可以选择显示所有线程或仅显示标记的线程。
+ 在“线程”窗口中，可以用图标标记来标记要格外关注的线程  。 有关详细信息，请参阅[如何：标记线程和取消标记线程](../debugger/how-to-flag-and-unflag-threads.md)。 在“线程”窗口中，可以选择显示所有线程或仅显示标记的线程  。
 
 ### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程
 
@@ -91,7 +91,7 @@ ms.locfileid: "63406944"
 
 - 在顶部的工具栏**线程**窗口中，选择**冻结线程**或**解冻线程**。
 
-     此操作仅影响在“线程”窗口中选中的线程。
+     此操作仅影响在“线程”窗口中选中的线程  。
 
 ### <a name="switch-to-another-thread"></a>切换到另一个线程
 
@@ -101,12 +101,12 @@ ms.locfileid: "63406944"
 
 - 请按照以下步骤之一操作：
 
-    - 双击任一线程。
+  - 双击任一线程。
 
-    - 右击一个线程，然后选择**切换到线程**。
+  - 右击一个线程，然后选择**切换到线程**。
 
 ## <a name="group-and-sort-threads"></a>分组和排序线程
- 分组线程时，表中将显示每组的标题。 标题包含组说明（如“辅助线程”或“未标记的线程”）和树控件。 每组的成员线程显示在组标题下。 如果你想要隐藏组的成员线程，使用树控件折叠组。
+ 分组线程时，表中将显示每组的标题。 标题包含组说明（如“辅助线程”或“未标记的线程”）和树控件   。 每组的成员线程显示在组标题下。 如果你想要隐藏组的成员线程，使用树控件折叠组。
 
  因为分组优先于排序，所以您可以先按类别（以此为例）分组线程，再按每个类别中的 ID 对其进行排序。
 
@@ -137,11 +137,11 @@ ms.locfileid: "63406944"
 - 在顶部的工具栏**线程**窗口中，选择**展开组**或**折叠组**。
 
 ## <a name="search-for-specific-threads"></a>搜索特定的线程
- 您可以搜索匹配的指定的字符串中的线程**线程**窗口。 在搜索线程时，窗口将显示匹配的任何列中的搜索字符串的所有线程。 信息包括在“位置”列中调用堆栈顶部显示的线程位置。 默认情况下，不搜索整个调用堆栈。
+ 您可以搜索匹配的指定的字符串中的线程**线程**窗口。 在搜索线程时，窗口将显示匹配的任何列中的搜索字符串的所有线程。 信息包括在“位置”列中调用堆栈顶部显示的线程位置  。 默认情况下，不搜索整个调用堆栈。
 
 ### <a name="to-search-for-specific-threads"></a>搜索特定线程
 
-1. 在“线程”窗口顶部的工具栏中，转到“搜索”框，执行下列操作之一：
+1. 在“线程”窗口顶部的工具栏中，转到“搜索”框，执行下列操作之一   ：
 
      - 输入搜索字符串，然后按**Enter**。
 
@@ -149,10 +149,10 @@ ms.locfileid: "63406944"
 
      - 选择下拉列表旁边**搜索**框并选择上一次搜索的搜索字符串。
 
-2. （可选）若要在搜索中包括整个调用堆栈，请选择“搜索调用堆栈”。
+2. （可选）若要在搜索中包括整个调用堆栈，请选择“搜索调用堆栈”  。
 
 ## <a name="display-thread-call-stacks-and-switch-between-frames"></a>显示线程调用堆栈和帧之间切换
-在多线程程序中，每个线程都有自己的调用堆栈。 “线程”窗口提供了一种查看这些堆栈的简便方法。
+在多线程程序中，每个线程都有自己的调用堆栈。 “线程”窗口提供了一种查看这些堆栈的简便方法  。
 
 > [!TIP]
 > 对于每个线程的调用堆栈的可视表示形式，使用[并行堆栈](../debugger/get-started-debugging-multithreaded-apps.md)窗口。
