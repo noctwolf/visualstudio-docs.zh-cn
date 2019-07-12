@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442970"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823188"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>编辑 UML 模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ ms.locfileid: "63442970"
   
      \- 或 -  
   
-- 上**体系结构设计器**工具栏上，单击加号 (**+**) 或减号 (**-**)，或选择缩放级别。  
+- 上**体系结构设计器**工具栏上，单击加号 ( **+** ) 或减号 ( **-** )，或选择缩放级别。  
   
 ## <a name="Searching"></a> 在关系图中搜索  
  “快速查找”功能将查找关系图上的项。 必须设置**查找：** 到**当前文档**。  
@@ -294,9 +294,9 @@ ms.locfileid: "63442970"
   
 - 或者右键单击该元素中**UML 模型资源管理器**或关系图中，，然后单击**从模型中删除**。  
   
-    - 该元素将从显示它的每个关系图中删除。  
-  
-    - 终止于此元素的每个关系也将从模型中删除。  
+  - 该元素将从显示它的每个关系图中删除。  
+
+  - 终止于此元素的每个关系也将从模型中删除。  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>若要从模型中删除关系  
   
@@ -312,7 +312,7 @@ ms.locfileid: "63442970"
   
 - 可以将关系图的任何部分复制到 Word、PowerPoint 或其他文档中。 选择形状和连接线想，右键单击，然后单击**复制**。  
   
-- 可以更改任何形状或连接线的颜色。 选择一个或多个形状并将更改**颜色**属性。 如果看不到“属性”窗口，请按“F4”。  
+- 可以更改任何形状或连接线的颜色。 选择一个或多个形状并将更改**颜色**属性。 如果看不到“属性”  窗口，请按“F4”  。  
   
 - 可以在某些种类的关系图上绘制线条、 矩形和从省略号**简单形状**工具箱的部分。 这些形状并不构成 UML 模型的一部分。  
   

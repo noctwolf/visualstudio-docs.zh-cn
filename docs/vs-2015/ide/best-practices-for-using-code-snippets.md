@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 75c1e08125e67dc5a76d2e62d22f010abd22f418
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685659"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823436"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码段的最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ ms.locfileid: "65685659"
   
 - 在 Visual Studio 的记事本或 XML 编辑器中打开所有已下载的代码片段文件，并在安装前仔细检查。 查找以下问题：  
   
-    - 如果执行该代码片段，可能会对系统造成损坏。 在运行前请仔细阅读源代码。  
+  - 如果执行该代码片段，可能会对系统造成损坏。 在运行前请仔细阅读源代码。  
+
+  - 代码片段文件的 Help URL 块可以包含执行恶意脚本文件或显示攻击性网站的 URL。  
+
+  - 代码片段可能包含以无提示方式添加到项目的引用，并且这些引用可从系统的任何位置加载。 这些引用可能已从下载代码片段的位置下载到了计算机。 随后，代码片段可能会调用执行恶意代码的引用中的方法。 若要避免此类攻击，请检查代码片段文件的 Imports 和 References 块。  
   
-    - 代码片段文件的 Help URL 块可以包含执行恶意脚本文件或显示攻击性网站的 URL。  
-  
-    - 代码片段可能包含以无提示方式添加到项目的引用，并且这些引用可从系统的任何位置加载。 这些引用可能已从下载代码片段的位置下载到了计算机。 随后，代码片段可能会调用执行恶意代码的引用中的方法。 若要避免此类攻击，请检查代码片段文件的 Imports 和 References 块。  
-  
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [Visual Basic IntelliSense 代码片段](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [保证应用程序的安全](../ide/securing-applications.md)   
  [代码片段](../ide/code-snippets.md)

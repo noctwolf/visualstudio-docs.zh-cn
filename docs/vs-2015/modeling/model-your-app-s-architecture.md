@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417785"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823266"
 ---
 # <a name="model-your-app39s-architecture"></a>建模应用程序&#39;s 体系结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ ms.locfileid: "63417785"
   
   本节的其余部分将详述这些内容。  
   
-### <a name="components"></a>组件数  
+### <a name="components"></a>组件  
  体系结构模型的中心视图是显示系统的主要部件和它们彼此之间如何依赖的组件图。 有关组件图的详细信息，请参阅[UML 组件图：参考](../modeling/uml-component-diagrams-reference.md)。  
   
  ![显示部件的 UML 组件图](../modeling/media/uml-barecomponent.png "UML_BareComponent")  
@@ -244,9 +244,9 @@ ms.locfileid: "63417785"
   
 - 主要部件的模型及其关系。 这些可能是类或组件和接口，它们之间存在关联和依赖项。 元素通常分为两个类别：  
   
-    - 开发人员必须在使用该模式的代码的每个部分中复制的元素。 可使用模板类型来说明这些内容。 有关详细信息，请参阅[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)。  
-  
-    - 说明开发人员应使用的框架类的元素。  
+  - 开发人员必须在使用该模式的代码的每个部分中复制的元素。 可使用模板类型来说明这些内容。 有关详细信息，请参阅[UML 用例图：参考](../modeling/uml-use-case-diagrams-reference.md)。  
+
+  - 说明开发人员应使用的框架类的元素。  
   
 - 部件之间的交互模型，使用序列图或活动图。  
   
