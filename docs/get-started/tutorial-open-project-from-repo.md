@@ -177,11 +177,11 @@ ms.locfileid: "66402074"
 
 如果你已准备好使用 Visual Studio 进行编码，请深入了解以下特定于语言的任何教程：
 
-- Visual Studio 教程 | [C#  ](./csharp/index.yml)
-- Visual Studio 教程 | [Visual Basic  ](./visual-basic/index.yml)
-- Visual Studio 教程 | C++[  ](/cpp/get-started/tutorial-console-cpp)
+- [Visual Studio 教程 | C#  ](./csharp/index.yml)
+- [Visual Studio 教程 | Visual Basic  ](./visual-basic/index.yml)
+- [Visual Studio 教程 | C++  ](/cpp/get-started/tutorial-console-cpp)
 - [Visual Studio 教程 | Python  ](/visualstudio/python/)
-- Visual Studio 教程 | [JavaScript、TypeScript 和 Node.js    ](/visualstudio/javascript/)
+- [Visual Studio 教程 | JavaScript、TypeScript 和 Node.js    ](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>请参阅
 
