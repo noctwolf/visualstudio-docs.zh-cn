@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114959"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826249"
 ---
 # <a name="xsd-task"></a>XSD 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "60114959"
   
      可选 **String** 参数。  
   
-     在命令行上指定的选项列表。 例如，“*/option1 /option2 /option#*”。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。  
+     在命令行上指定的选项列表。 例如，“ */option1 /option2 /option#* ”。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。  
   
 - **GenerateFromSchema**  
   
-     可选 **String** 参数。  
-  
-     指定从指定架构生成的类型。  
-  
-     指定以下一个值，其中每个值对应于一个 XSD 选项。  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
+  可选 **String** 参数。  
+
+  指定从指定架构生成的类型。  
+
+  指定以下一个值，其中每个值对应于一个 XSD 选项。  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
 - **语言**  
   
@@ -86,5 +86,5 @@ ms.locfileid: "60114959"
   
      指定跟踪器日志目录。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

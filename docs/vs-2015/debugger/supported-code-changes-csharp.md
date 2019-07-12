@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117650"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823541"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117650"
   
      活动语句包括为转至当前语句而调用过的任何语句（位于调用堆栈的函数中）。  
   
-     当前语句在源窗口中以黄色背景标记。 其他活动语句以阴影背景标记，并且是只读的。 可在“选项”对话框中更改这些默认颜色。  
+     当前语句在源窗口中以黄色背景标记。 其他活动语句以阴影背景标记，并且是只读的。 可在“选项”对话框中更改这些默认颜色  。  
   
 - 更改类型的签名。  
   
@@ -57,17 +57,17 @@ ms.locfileid: "60117650"
   
 - 在某些情况下调试 LINQ 代码。 有关详细信息，请参阅 [Debugging LINQ](../debugger/debugging-linq.md)（调试 LINQ）。  
   
-    - 捕获之前尚未捕获的变量。  
-  
-    - 更改查询表达式的类型 (例如，select a = > 选择新建 {A =};)  
-  
-    - 删除包含活动语句的 `where`。  
-  
-    - 删除包含活动语句的 `let`。  
-  
-    - 删除包含活动语句的 `join`。  
-  
-    - 删除包含活动语句的 `orderby`。  
+  - 捕获之前尚未捕获的变量。  
+
+  - 更改查询表达式的类型 (例如，select a = > 选择新建 {A =};)  
+
+  - 删除包含活动语句的 `where`。  
+
+  - 删除包含活动语句的 `let`。  
+
+  - 删除包含活动语句的 `join`。  
+
+  - 删除包含活动语句的 `orderby`。  
   
 - 混合模式（本机/托管）调试。  
   

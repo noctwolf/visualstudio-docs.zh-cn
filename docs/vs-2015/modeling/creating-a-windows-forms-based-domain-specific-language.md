@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433340"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825591"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 
 - `UI`项目包含窗体控件绑定到 DSL 的工作示例。 但是，它不会有更改 DSL 定义时。 `UI`项目包含：  
 
-    - 一个名为 Windows 窗体类`ModelViewControl`。  
+  - 一个名为 Windows 窗体类`ModelViewControl`。  
 
-    - 名为的文件`DataBinding.cs`，其中包含的其他分部定义`ModelViewControl`。 若要查看其内容，在**解决方案资源管理器**，打开该文件的快捷菜单，然后选择**查看代码**。  
+  - 名为的文件`DataBinding.cs`，其中包含的其他分部定义`ModelViewControl`。 若要查看其内容，在**解决方案资源管理器**，打开该文件的快捷菜单，然后选择**查看代码**。  
 
 ### <a name="about-the-ui-project"></a>有关 UI 项目  
  更新要定义你自己的 DSL 的 DSL 定义文件时，你将需要更新中的控件`UI`项目以显示你的 DSL。 与不同`Dsl`并`DslPackage`项目，该示例`UI`从不生成项目`DslDefinitionl.dsl`。 可以添加.tt 文件生成代码，如果你想，尽管本演练未介绍的。  
@@ -119,13 +119,13 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 
 1. 上**数据**菜单中，选择**显示数据源**。  
 
-     “数据源”窗口随即打开。  
+     “数据源”窗口随即打开  。  
 
-     选择**添加新数据源**。 “数据源配置”向导随即打开。  
+     选择**添加新数据源**。 “数据源配置”向导随即打开  。  
 
 2. 选择**对象**，**下一步**。  
 
-     展开**Dsl**， **Company.FarmApp**，然后选择**场**，这是您的模型的根类。 选择“完成”。  
+     展开**Dsl**， **Company.FarmApp**，然后选择**场**，这是您的模型的根类。 选择“完成”  。  
 
      在解决方案资源管理器**UI**项目现在包含**Properties\DataSources\Farm.datasource**  
 
@@ -241,7 +241,7 @@ DSL 实例中，显示 Windows 窗体 UI 和模型资源管理器。
 
 1. 在 FarmControl.cs 设计视图中，选择简单字段如名称、 大小或 IsOrganic。  
 
-2. 在属性窗口中，展开**DataBindings** ，然后打开 **（高级）**。  
+2. 在属性窗口中，展开**DataBindings** ，然后打开 **（高级）** 。  
 
      在中**格式设置和高级绑定**对话框下**数据源更新模式**，选择**OnPropertyChanged**。  
 

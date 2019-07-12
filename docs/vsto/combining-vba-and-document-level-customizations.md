@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447162"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826020"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - 文档必须具有以下文件扩展名之一：
 
-    - 对于 Word: *.docm*或 *.doc*
+  - 对于 Word: *.docm*或 *.doc*
 
-    - 对于 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
+  - 对于 Excel: *.xlsm*， *.xltm*， *.xls*，或 *.xlt*
 
 - 文档必须已经包含其中有 VBA 代码的 VBA 项目。
 

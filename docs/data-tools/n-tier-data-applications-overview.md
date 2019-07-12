@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566445"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821903"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 *N 层*数据应用程序是数据应用程序，分为多个*层*。 也称为"分布式应用程序"和"多层应用程序"，n 层应用程序分离到相互独立的层的客户端和服务器之间分布处理。 当开发访问数据的应用程序时，应清楚地区分组成应用程序的各个层。
@@ -49,11 +49,11 @@ Visual Studio 包含多种功能，可帮助开发人员创建 n 层应用程序
 
 - 数据访问组件和逻辑，如下所示：
 
-    - [Tableadapter](create-and-configure-tableadapters.md)并[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+  - [Tableadapter](create-and-configure-tableadapters.md)并[Dataadapter 和 Datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
-    - 对象表示的数据，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)实体类。
+  - 对象表示的数据，例如[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)实体类。
 
-    - 常见的应用程序服务，例如身份验证、 授权和个性化设置。
+  - 常见的应用程序服务，例如身份验证、 授权和个性化设置。
 
 下图显示了功能和技术，可在 Visual Studio 中以及其中它们可能适合为 n 层应用程序的中间层。
 

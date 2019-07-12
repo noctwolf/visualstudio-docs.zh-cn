@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676693"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821518"
 ---
 # <a name="use-roslyn-analyzers"></a>使用 Roslyn 分析器
 
@@ -62,13 +62,13 @@ ms.locfileid: "65676693"
 
 你可以配置在分析程序规则的严重性或*诊断*，如果您[安装分析器](../code-quality/install-roslyn-analyzers.md)作为 NuGet 包。 下表显示了用于诊断的严重性选项：
 
-|严重性|生成时的行为|编辑器行为|
+|Severity|生成时的行为|编辑器行为|
 |-|-|-|
 |Error|会显示冲突了作为*错误*中**错误列表**和在命令行生成输出，并会导致生成失败。|有问题的代码带有红色波浪线，并通过在滚动条小红色框标记为带有下划线。|
 |警告|会显示冲突了作为*警告*中**错误列表**和在命令行生成输出，但不是会导致生成失败。|有问题的代码与绿色波浪线，并通过滚动条中的小绿色框标记为带有下划线。|
 |T:System.Diagnostics.Switch|会显示冲突了作为*消息*中**错误列表**，根本不在命令行生成输出。|有问题的代码带有下划线用波浪线，并通过滚动条中的小灰色框标记为灰色。|
 |Hidden|非-对用户可见。|非-对用户可见。 诊断报告到 IDE 诊断引擎，但是。|
-|None|完全禁止显示。|完全禁止显示。|
+|无|完全禁止显示。|完全禁止显示。|
 
 此外，你可以"重置"规则的严重性设置为**默认**。 每个诊断具有所示的默认严重性**属性**窗口。
 
@@ -86,7 +86,7 @@ ms.locfileid: "65676693"
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>从解决方案资源管理器中设置规则严重性
 
-1. 在**解决方案资源管理器**，展开**引用** > **分析器**(**依赖关系** >  **分析器**有关.NET Core 项目)。
+1. 在**解决方案资源管理器**，展开**引用** > **分析器**(**依赖关系** > **分析器**有关.NET Core 项目)。
 
 1. 展开包含你想要设置的严重程度的规则的程序集。
 
@@ -110,40 +110,40 @@ ms.locfileid: "65676693"
 
 - 从**分析**菜单
 
-   选择**分析** > **运行代码分析并取消未解决的问题**要禁止显示所有当前的冲突的菜单栏上。 这有时称为"基线"。
+  选择**分析** > **运行代码分析并取消未解决的问题**要禁止显示所有当前的冲突的菜单栏上。 这有时称为"基线"。
 
 - 从**解决方案资源管理器**
 
-   若要禁止显示中的违反**解决方案资源管理器**，将该规则的严重性设置为**None**。
+  若要禁止显示中的违反**解决方案资源管理器**，将该规则的严重性设置为**None**。
 
 - 从**规则集编辑器**
 
-   若要禁止显示从规则集编辑器的冲突，请取消选中其名称旁边的框，或设置**操作**到**None**。
+  若要禁止显示从规则集编辑器的冲突，请取消选中其名称旁边的框，或设置**操作**到**None**。
 
 - 从**代码编辑器**
 
-   若要禁止显示代码编辑器中的冲突，请将光标放置在一行代码冲突并按**Ctrl**+ **。** 若要打开**快速操作**菜单。 选择**禁止显示 CAXXXX** > **源/禁止显示文件**。
+  若要禁止显示代码编辑器中的冲突，请将光标放置在一行代码冲突并按**Ctrl**+ **。** 若要打开**快速操作**菜单。 选择**禁止显示 CAXXXX** > **源/禁止显示文件**。
 
-   ![禁止显示诊断从快速操作菜单](media/suppress-diagnostic-from-editor.png)
+  ![禁止显示诊断从快速操作菜单](media/suppress-diagnostic-from-editor.png)
 
 - 从**错误列表**
 
-   您可以禁止显示来自一个或多个诊断**错误列表**的选择的想要禁止显示，并单击右键并选择**禁止** > **中 Source/In禁止显示文件**。
+  您可以禁止显示来自一个或多个诊断**错误列表**的选择的想要禁止显示，并单击右键并选择**禁止** > **中 Source/In禁止显示文件**。
 
-   - 如果您禁止显示**在源**，则**预览更改**对话框将打开并显示的预览C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指令添加到源代码。
+  - 如果您禁止显示**在源**，则**预览更改**对话框将打开并显示的预览C# [#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable警告](/dotnet/visual-basic/language-reference/directives/directives)指令添加到源代码。
 
-      ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
+    ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
 
-   - 如果选择**在禁止显示文件**，则**预览更改**对话框将打开并显示的预览<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>添加到全局禁止显示文件的属性。
+  - 如果选择**在禁止显示文件**，则**预览更改**对话框将打开并显示的预览<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>添加到全局禁止显示文件的属性。
 
-      ![SuppressMessage 特性添加到禁止显示文件的预览](media/preview-changes-in-suppression-file.png)
+    ![SuppressMessage 特性添加到禁止显示文件的预览](media/preview-changes-in-suppression-file.png)
 
-   在中**预览更改**对话框中，选择**应用**。
+  在中**预览更改**对话框中，选择**应用**。
 
-   > [!NOTE]
-   > 如果没有看到**禁止**中的菜单选项**解决方案资源管理器**，冲突可能来自生成和不实时分析。 **错误列表**显示诊断或从这两个冲突实时代码分析和生成的规则。 由于生成诊断可能是陈旧，例如，如果你已编辑代码来解决冲突，但尚未重新生成，无法禁止显示来自这些诊断**错误列表**。 来自实时分析或智能感知，诊断始终是当前源代码的最新，并可从抑制**错误列表**。 若要排除*构建*从你的选择，诊断切换**错误列表**源筛选器从**生成 + IntelliSense**到**仅 Intellisense**. 然后，选择你想要取消，并在继续操作，因为前面所述的诊断。
-   >
-   > ![在 Visual Studio 中的错误列表源筛选器](media/error-list-filter.png)
+  > [!NOTE]
+  > 如果没有看到**禁止**中的菜单选项**解决方案资源管理器**，冲突可能来自生成和不实时分析。 **错误列表**显示诊断或从这两个冲突实时代码分析和生成的规则。 由于生成诊断可能是陈旧，例如，如果你已编辑代码来解决冲突，但尚未重新生成，无法禁止显示来自这些诊断**错误列表**。 来自实时分析或智能感知，诊断始终是当前源代码的最新，并可从抑制**错误列表**。 若要排除*构建*从你的选择，诊断切换**错误列表**源筛选器从**生成 + IntelliSense**到**仅 Intellisense**. 然后，选择你想要取消，并在继续操作，因为前面所述的诊断。
+  >
+  > ![在 Visual Studio 中的错误列表源筛选器](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>命令行使用情况
 

@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971350"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824542"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -66,8 +66,8 @@ ms.locfileid: "62971350"
 
 * 若要使用实时依赖项验证时，请启用完整解决方案分析，可从黄色条框中显示打开的选项设置**错误列表**。
 
-   - 如果您不想要查看你的解决方案中的所有体系结构问题，您可以永久消除黄色条框。
-   - 如果未启用完整解决方案分析，仅对正在编辑的文件进行分析。
+  - 如果您不想要查看你的解决方案中的所有体系结构问题，您可以永久消除黄色条框。
+  - 如果未启用完整解决方案分析，仅对正在编辑的文件进行分析。
 
 * 升级项目以启用实时验证时, 显示转换的进度的对话框。
 

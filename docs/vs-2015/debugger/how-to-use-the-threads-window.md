@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685324"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824238"
 ---
-# <a name="how-to-use-the-threads-window"></a>如何：使用线程窗口
+# <a name="how-to-use-the-threads-window"></a>如何：使用“线程”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在中**线程**窗口中，您可以检查和使用的线程正在调试的应用程序中。  
@@ -72,11 +72,11 @@ ms.locfileid: "65685324"
   
 - 任意执行以下步骤之一：  
   
-    - 双击任一线程。  
-  
-    - 右键单击某个线程，然后单击**切换到线程**。  
-  
-         黄色箭头会出现在新活动线程的旁边。 箭头的灰色轮廓标识执行在调试器中分解的线程。  
+  - 双击任一线程。  
+
+  - 右键单击某个线程，然后单击**切换到线程**。  
+
+    黄色箭头会出现在新活动线程的旁边。 箭头的灰色轮廓标识执行在调试器中分解的线程。  
   
 ## <a name="grouping-and-sorting-threads"></a>分组和排序线程  
  分组线程时，表中将显示每组的标题。 标题包含组的说明（如“辅助线程”或“未标记的线程”）和树控件。 每组的成员线程显示在组标题下。 如果要隐藏组的成员线程，可以使用树控件折叠组。  
@@ -116,11 +116,11 @@ ms.locfileid: "65685324"
   
 - 在“线程”窗口顶部的工具栏中，转到“搜索”框，执行下列操作之一   ：  
   
-    - 键入搜索字符串然后按 Enter。  
-  
-         \- 或 -  
-  
-    - 单击下拉列表旁边**搜索**框并选择上一次搜索的搜索字符串。  
+  - 键入搜索字符串然后按 Enter。  
+
+    \- 或 -  
+
+  - 单击下拉列表旁边**搜索**框并选择上一次搜索的搜索字符串。  
   
 - （可选）若要在搜索中包括整个调用堆栈，请选择“搜索调用堆栈”  。  
   

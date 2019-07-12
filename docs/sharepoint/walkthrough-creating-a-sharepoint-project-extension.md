@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430416"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825800"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
@@ -30,11 +30,11 @@ ms.locfileid: "63430416"
 
 - 创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 SharePoint 项目，执行以下操作：
 
-    - 将自定义项目属性添加到属性窗口。 属性适用于任何 SharePoint 项目。
+  - 将自定义项目属性添加到属性窗口。 属性适用于任何 SharePoint 项目。
 
-    - 使用 SharePoint 项目对象模型的映射的文件夹添加到项目。
+  - 使用 SharePoint 项目对象模型的映射的文件夹添加到项目。
 
-    - 使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]自动化对象模型 (DTE) 若要从项目中删除的映射的文件夹。
+  - 使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]自动化对象模型 (DTE) 若要从项目中删除的映射的文件夹。
 
 - 构建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包来部署项目属性的扩展插件程序集。
 
@@ -60,7 +60,7 @@ ms.locfileid: "63430416"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+2. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
 3. 在中**新的项目**对话框框中，展开**Visual C#** 或**Visual Basic**节点，然后选择**扩展性**节点。
 
@@ -119,7 +119,7 @@ ms.locfileid: "63430416"
 
 #### <a name="to-build-the-solution"></a>生成解决方案
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>创建 VSIX 包，以将项目属性扩展部署
  若要部署项目扩展，使用 VSIX 项目在解决方案中创建 VSIX 包。 首先，通过修改包含在 VSIX 项目的 source.extension.vsixmanifest 文件中配置 VSIX 包。 然后，通过生成解决方案中创建 VSIX 包。
@@ -176,7 +176,7 @@ ms.locfileid: "63430416"
 
 3. 在实验实例中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]、 创建场解决方案、 一个 SharePoint 项目和在向导中的其他值使用默认值。
 
-    1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
+    1. 在菜单栏上，依次选择“文件”   > “新建”   > “项目”  。
 
     2. 在顶部**新的项目**对话框框中，选择 **.NET Framework 3.5** .NET Framework 版本的列表中。
 

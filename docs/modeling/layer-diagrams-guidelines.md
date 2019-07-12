@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936899"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824201"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 
@@ -107,9 +107,9 @@ ms.locfileid: "62936899"
 |删除不应存在的依赖项|单击依赖项，并按**删除**。|
 |更改或限制依赖项的方向|设置其**方向**属性。|
 |创建新的依赖项|使用**依赖项**并**双向依赖项**工具。<br /><br /> 若要绘制多个依赖关系，请双击该工具。 完成后，单击**指针**工具或按**ESC**密钥。|
-|指定与层关联的项目不能依赖于指定的命名空间|键入命名空间中的层**禁止 Namespace 依赖项**属性。 使用分号 (**;**) 来分隔命名空间。|
-|指定与层关联的项目必须不属于指定的命名空间|键入命名空间中的层**Forbidden Namespaces**属性。 使用分号 (**;**) 来分隔命名空间。|
-|指定与层关联的项目必须属于某个指定的命名空间|键入命名空间中的层**Required Namespaces**属性。 使用分号 (**;**) 来分隔命名空间。|
+|指定与层关联的项目不能依赖于指定的命名空间|键入命名空间中的层**禁止 Namespace 依赖项**属性。 使用分号 ( **;** ) 来分隔命名空间。|
+|指定与层关联的项目必须不属于指定的命名空间|键入命名空间中的层**Forbidden Namespaces**属性。 使用分号 ( **;** ) 来分隔命名空间。|
+|指定与层关联的项目必须属于某个指定的命名空间|键入命名空间中的层**Required Namespaces**属性。 使用分号 ( **;** ) 来分隔命名空间。|
 
 ### <a name="Improving"></a> 提高代码的结构
 
@@ -141,7 +141,7 @@ ms.locfileid: "62936899"
 
 - 更改层的颜色和依赖项。
 
-    - 选择一个或多个层或依赖项，右键单击，然后单击**属性**。 在中**属性**窗口中，编辑**颜色**属性。
+  - 选择一个或多个层或依赖项，右键单击，然后单击**属性**。 在中**属性**窗口中，编辑**颜色**属性。
 
 ## <a name="Validate"></a> 对照关系图验证代码
 

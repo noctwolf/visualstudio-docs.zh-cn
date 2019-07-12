@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038168"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821633"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名�
   
 - [项元数据](#BKMK_ItemMetadata)  
   
-    - [在项目文件中引用项元数据](#BKMK_ReferencingItemMetadata)  
-  
-    - [常见项元数据](#BKMK_WellKnownItemMetadata)  
-  
-    - [使用元数据转换项类型](#BKMK_Transforming)  
+  - [在项目文件中引用项元数据](#BKMK_ReferencingItemMetadata)  
+
+  - [常见项元数据](#BKMK_WellKnownItemMetadata)  
+
+  - [使用元数据转换项类型](#BKMK_Transforming)  
   
 - [项定义](#BKMK_ItemDefinitions)  
   
 - [目标的 ItemGroup 中项的属性](#BKMK_AttributesWithinTargets)  
   
-    - [删除属性](#BKMK_RemoveAttribute)  
-  
-    - [KeepMetadata 属性](#BKMK_KeepMetadata)  
-  
-    - [RemoveMetadata 属性](#BKMK_RemoveMetadata)  
-  
-    - [KeepDuplicates 属性](#BKMK_KeepDuplicates)  
+  - [删除属性](#BKMK_RemoveAttribute)  
+
+  - [KeepMetadata 属性](#BKMK_KeepMetadata)  
+
+  - [RemoveMetadata 属性](#BKMK_RemoveMetadata)  
+
+  - [KeepDuplicates 属性](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a>在项目文件中创建项  
  声明项目文件中的项为 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素的子元素。 子元素的名称是项的类型。 该元素的 `Include` 属性指定该项类型要包含的项（文件）。 例如，下面的 XML 会创建一个名为 `Compile` 的项类型，其中包括两个文件。  
@@ -92,9 +92,9 @@ MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名�
  默认情况下，项类型的项展开时由分号 (;) 分隔。 可使用语法 @(*ItemType*, '*separator*') 指定非默认分隔符。 有关详细信息，请参阅[如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
   
 ## <a name="BKMK_Wildcards"></a>使用通配符指定项  
- 可使用 **、\* 和 ?  通配符将一组文件指定为生成的输入，而非单独列出每个文件。  
+ 可使用 **、\* 和 ? 通配符将一组文件指定为生成的输入，而非单独列出每个文件。  
   
-- ?  通配符可匹配单个字符。  
+- ? 通配符可匹配单个字符。  
   
 - \* 通配符可匹配零个或多个字符。  
   

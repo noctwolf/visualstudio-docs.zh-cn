@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493655"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823839"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 用例图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "67493655"
   
     - 用例表示参与者借助你的系统所执行的活动。  
   
-    - 使用参与者自身能够理解的名称重命名这些用例。 不要使用与代码有关的名称。 例如：**顺序餐费、 支付餐费，提供食物**。  
+    - 使用参与者自身能够理解的名称重命名这些用例。 不要使用与代码有关的名称。 例如:**顺序餐费、 支付餐费，提供食物**。  
   
     - 如开始从主要的事务**订餐**，直到更高版本较小的交互，例如放任**选择菜单项**。  
   
@@ -115,13 +115,13 @@ ms.locfileid: "67493655"
   
 - 创建**Actors**来表示人员、 组织、 其他系统、 软件或与您的系统或子系统进行交互的设备的类。  
   
-    - 若要了解如何绘制参与者和其他元素，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
-  
-    - 对于每一组不同的目标，按其类型或角色标识参与者，即使具体的个人或实体可能是相同的。 例如，“餐馆”和“顾客”是不同的参与者，即使餐馆的雇员可能有时候也是顾客。  
+  - 若要了解如何绘制参与者和其他元素，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+
+  - 对于每一组不同的目标，按其类型或角色标识参与者，即使具体的个人或实体可能是相同的。 例如，“餐馆”和“顾客”是不同的参与者，即使餐馆的雇员可能有时候也是顾客。  
   
 - 创建**用例**为每个每个参与者希望借助系统实现的目标。  
   
-    - 以参与者能够理解的词语命名并描述用例，而不应使用实现术语。  
+  - 以参与者能够理解的词语命名并描述用例，而不应使用实现术语。  
   
 - 使用**关联**链接参与者与用例。  
   
@@ -166,7 +166,7 @@ ms.locfileid: "67493655"
   
  你可以更改这些重数。  
   
- 例如：  
+ 例如:  
   
  ![用例显示多对多个多重性](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
@@ -200,7 +200,7 @@ ms.locfileid: "67493655"
 > 很多团队不在用例图中提供重数信息，保留重数的默认值 1， 而是在用例的其他描述中提供该信息。 在这种情况下，用例图中的所有重数都将隐藏。  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>在多个关系图中使用一个参与者或用例  
- 可以在多个关系图中显示相同的参与者和用例。 例如：  
+ 可以在多个关系图中显示相同的参与者和用例。 例如:  
   
 - 可以在不同关系图中描述同一参与者涉及的不同用例。  
   

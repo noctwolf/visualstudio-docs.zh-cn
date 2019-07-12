@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439736"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823582"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>UML 活动图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ ms.locfileid: "63439736"
  通过设置对象节点的属性，可以指定各个项在缓冲区中的存储方式：  
   
 - 设置**订购**属性：  
-  
-    - **无序**指定随机或未指定顺序。 （默认。）  
-  
-    - **按序**可指定基于某个特定键的顺序。  
-  
-    - **Fifo**可指定的顺序的先入先出。  
-  
-    - **后进先出**可指定的后进先出的顺序。  
-  
+
+  - **无序**指定随机或未指定顺序。 （默认。）  
+
+  - **按序**可指定基于某个特定键的顺序。  
+
+  - **Fifo**可指定的顺序的先入先出。  
+
+  - **后进先出**可指定的后进先出的顺序。  
+
 - 设置**上限**属性可指定缓冲区中可包含的对象的最大数目。 默认值为 *。 这表示不存在任何限制。  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>使用输入和输出插针描述数据流  
@@ -299,7 +299,7 @@ ms.locfileid: "63439736"
   
  利息与以前相比翻倍。  
   
- 可以通过引用操作中已处理的数据的特定特性，采用更为正式的方式来编写后置条件。 例如：  
+ 可以通过引用操作中已处理的数据的特定特性，采用更为正式的方式来编写后置条件。 例如:  
   
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`  
   
@@ -317,7 +317,7 @@ ms.locfileid: "63439736"
   
 - 可以设置**Is Synchronous**属性以指示活动是否等待操作完成的操作。  
   
-    - 如果您设置**Is Synchronous**都为 false，指示被调用的操作完成之前，控制流可以继续下一步操作。 不应在操作中定义输出插针或传出数据流。  
+  - 如果您设置**Is Synchronous**都为 false，指示被调用的操作完成之前，控制流可以继续下一步操作。 不应在操作中定义输出插针或传出数据流。  
   
 ## <a name="Concurrent"></a> 并发流  
  可以使用**分叉节点**并**联接节点**来描述可以在同一时间执行的活动的两个或多个线程。  

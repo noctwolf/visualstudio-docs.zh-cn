@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97705dab6f11ca0d9d51c27bfc56d315b454bc52
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439214"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64837698"
 ---
 # <a name="markers-report"></a>标记报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "63439214"
   
 - 有关标记所代表的内容的简略说明。  
   
-  选择“导出”按钮，将标记报告保存为 CSV 文件。 可以将 CSV 文件中的数据与其他应用或工具一起使用。  
+  选择“导出”按钮，将标记报告保存为 CSV 文件  。 可以将 CSV 文件中的数据与其他应用或工具一起使用。  
   
 > [!NOTE]
 > 标记报告可显示 1,000 个标记。 若要查看全部标记，请将整个报告导出到 CSV 文件。

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692256"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823327"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "65692256"
   
 - 使单独测试基于后置条件的单独子句。 例如，创建单独测试以在有订单时通知餐馆并向顾客收取款项。 此分离具有这些好处：  
   
-    - 需求的不同方面通常独立发生更改。 按这种方法将测试分成不同方面，可以在需求发生更改时更方便地更新测试。  
-  
-    - 如果开发计划逐个实现用例的方面，则你可以随着开发的进展单独启用测试。  
+  - 需求的不同方面通常独立发生更改。 按这种方法将测试分成不同方面，可以在需求发生更改时更方便地更新测试。  
+
+  - 如果开发计划逐个实现用例的方面，则你可以随着开发的进展单独启用测试。  
   
 - 设计测试时，请将测试数据的选择与确定是否已实现后置条件的代码或脚本分离。 例如，可能是一个简单的算术函数的测试：输入 4;验证输出为 2。 相反，将脚本设计为：选择一个输入;本身乘以输出，并验证结果为原始输入。 此样式允许你在不更改测试主体的情况下改变测试输入。  
   

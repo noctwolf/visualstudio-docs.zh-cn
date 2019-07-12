@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342202"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824945"
 ---
 # <a name="command-implementation"></a>命令实现
 若要在 VSPackage 中实现命令，必须执行以下任务：
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - 如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 通过使用以下<xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF>标志：
 
-    - `OLECMDF_SUPPORTED`：支持该命令。
+  - `OLECMDF_SUPPORTED`：支持该命令。
 
-    - `OLECMDF_INVISIBLE`：该命令不应是可见的。
+  - `OLECMDF_INVISIBLE`：该命令不应是可见的。
 
-    - `OLECMDF_LATCHED`：此命令上切换，似乎已签入。
+  - `OLECMDF_LATCHED`：此命令上切换，似乎已签入。
 
-    - `OLECMDF_ENABLED`：启用命令。
+  - `OLECMDF_ENABLED`：启用命令。
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`：如果它显示快捷菜单上，应隐藏该命令。
+  - `OLECMDF_DEFHIDEONCTXTMENU`：如果它显示快捷菜单上，应隐藏该命令。
 
-    - `OLECMDF_NINCHED`：该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）
+  - `OLECMDF_NINCHED`：该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）
 
 - 如果该命令中定义，则 *.vsct*文件具有`TextChanges`标志，请将以下参数：
 
-    - 设置`rgwz`元素的`pCmdText`的新文本的命令的参数。
+  - 设置`rgwz`元素的`pCmdText`的新文本的命令的参数。
 
-    - 设置`cwActual`元素的`pCmdText`命令字符串的大小参数。
+  - 设置`cwActual`元素的`pCmdText`命令字符串的大小参数。
 
 此外，请确保当前上下文不是自动化函数，除非您的命令专门用于处理自动化功能。
 

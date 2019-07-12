@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746797"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821395"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>创建 Windows 窗体基于特定于域的语言
 
@@ -59,9 +59,9 @@ ms.locfileid: "66746797"
 
 - `UI`项目包含窗体控件绑定到 DSL 的工作示例。 但是，它不会有更改 DSL 定义时。 `UI`项目包含：
 
-    - 一个名为 Windows 窗体类`ModelViewControl`。
+  - 一个名为 Windows 窗体类`ModelViewControl`。
 
-    - 名为的文件`DataBinding.cs`，其中包含的其他分部定义`ModelViewControl`。 若要查看其内容，在**解决方案资源管理器**，打开该文件的快捷菜单，然后选择**查看代码**。
+  - 名为的文件`DataBinding.cs`，其中包含的其他分部定义`ModelViewControl`。 若要查看其内容，在**解决方案资源管理器**，打开该文件的快捷菜单，然后选择**查看代码**。
 
 ### <a name="about-the-ui-project"></a>有关 UI 项目
 

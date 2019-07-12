@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335493"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824333"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 ## <a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - 可以针对这些目的着色更大的标题 （环境字体 x 155%或更高版本）：
 
-    - 若要提供与 Visual Studio UI 的签名的视觉效果
+  - 若要提供与 Visual Studio UI 的签名的视觉效果
 
-    - 呼吁人们关注的特定区域
+  - 呼吁人们关注的特定区域
 
-    - 提供基于标准的暗灰色/黑环境的文本颜色的缓解办法
+  - 提供基于标准的暗灰色/黑环境的文本颜色的缓解办法
 
 - 在标题中的颜色应利用现有 Visual Studio 品牌颜色的颜色，主要是主要的紫色，#FF68217A。
 
