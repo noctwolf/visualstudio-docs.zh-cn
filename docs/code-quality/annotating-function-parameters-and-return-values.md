@@ -1,6 +1,6 @@
 ---
 title: 对函数参数和返回值进行批注
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388545"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852170"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 本指南介绍了简单的函数参数的批注的典型用途 — 标量和指向结构和类的指针，及大多数种类的缓冲区。  本文还介绍对批注的常见使用模式。 与函数相关的其他批注，请参阅[批注函数行为](../code-quality/annotating-function-behavior.md)
@@ -216,7 +219,7 @@ ms.locfileid: "63388545"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     换而言之，最多存在缓冲区中每个元素`s`状态前的状态处于有效后的状态。  例如：
+     换而言之，最多存在缓冲区中每个元素`s`状态前的状态处于有效后的状态。  例如:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -244,7 +247,7 @@ ms.locfileid: "63388545"
 
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
 
-     换而言之，最多存在缓冲区中每个元素`s`状态前的状态处于有效后的状态。  例如：
+     换而言之，最多存在缓冲区中每个元素`s`状态前的状态处于有效后的状态。  例如:
 
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
 
@@ -285,6 +288,7 @@ ms.locfileid: "63388545"
      指向以 null 结尾的数组的指针表达式`p`  -  `_Curr_` (即`p`减去`_Curr_`) 定义的相应语言标准。  之前的元素`p`后状态必须是有效并不一定是有效状态前的状态。
 
 ## <a name="optional-pointer-parameters"></a>可选指针参数
+
  当指针参数批注包括`_opt_`，它指示该参数可能为 null。 否则，该批注执行不包括的版本相同`_opt_`。 下面是一系列`_opt_`指针参数批注的变体：
 
 ||||
@@ -384,6 +388,7 @@ ms.locfileid: "63388545"
    如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注是为引用参数。
 
 ## <a name="output-reference-parameters"></a>输出引用参数
+
  引用参数的一个常见用途是用于输出参数。  对于简单的输出引用参数 — 例如， `int&`—`_Out_`提供正确的语义。  但是，当输出值为指针 — 例如`int *&`— 等效指针批注等`_Outptr_ int **`不提供正确的语义。  若要简洁地表示为指针类型的输出引用参数的语义，使用这些复合批注：
 
  **批注和说明**
@@ -445,13 +450,62 @@ ms.locfileid: "63388545"
      结果在后状态下，必须是有效，但在开机自检状态可能为 null。 指向有效的缓冲区的`s`字节的有效元素。
 
 ## <a name="return-values"></a>返回值
+
  一个函数的返回值类似于`_Out_`参数但以不同的级别 de-reference，且无需考虑到的结果的指针的概念。  对于以下注释的返回值是带批注的对象 — 标量、 指向一个结构的指针或指向的缓冲区。 这些批注具有相同的语义与相应`_Out_`批注。
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>格式字符串参数
+
+- `_Printf_format_string_` 指示参数是在中使用的格式字符串`printf`表达式。
+
+     **示例**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` 指示参数是在中使用的格式字符串`scanf`表达式。
+
+     **示例**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` 指示参数是在中使用的格式字符串`scanf_s`表达式。
+
+     **示例**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>其他常见批注
+
  **批注和说明**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ ms.locfileid: "63388545"
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>相关资源
+
  [代码分析团队博客](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>请参阅

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62419931"
 ---
 # <a name="code-analysis-project-designer"></a>“项目设计器”->“代码分析”
@@ -63,7 +63,7 @@ ms.locfileid: "62419931"
  用法规则  
  启用或禁用用法规则。 还可以通过展开此项来启用或禁用单个规则。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [托管代码的代码分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [托管代码的代码分析概述](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [演练：对托管代码进行代码缺陷分析](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

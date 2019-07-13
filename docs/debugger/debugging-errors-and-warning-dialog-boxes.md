@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852093"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852226"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 以下是在调试应用程序时可能遇到的错误和警告对话框。
@@ -37,6 +37,8 @@ ms.locfileid: "62852093"
  [“无法更改值”对话框](../debugger/cannot-change-value-dialog-box.md)
 
  [调试器不能显示源代码或反汇编](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [调试器运行内存不足的服务](../debugger/error-debugger-services-no-memory.md)
 
  [“调试会话的可执行文件”对话框](../debugger/executable-for-debugging-session-dialog-box.md)
 

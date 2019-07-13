@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: 从 FxCop 代码分析迁移到.NET 编译器平台分析器
+title: 从二进制分析 (FxCop) 迁移到源分析 （FxCop 分析器）
 metadata:
   title: FxCop 迁移文档
-  description: 了解如何将从旧的 FxCop 迁移到代码分析的分析器。
-  ms.date: 07/18/2018
+  description: 了解如何将从旧二进制分析 (FxCop) 移到时源代码分析 （FxCop 分析器） 分析的代码。
+  ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: 了解如何分析代码的第一次或如何将 FxCop 迁移到新的分析使用分析器的托管的代码的方式。
+  description: 了解如何首次分析的代码或如何将二进制分析 (FxCop) 从迁移到新的分析使用源分析 （FxCop 分析器） 的托管的代码的方式。
   aside:
     image:
       alt: 常见管理任务徽标
@@ -25,7 +25,7 @@ abstract:
 sections:
   - title: 常见问题
     items:
-      - html: 获取解答<a href="fxcop-analyzers-faq.md">方面的常见问题</a>FxCop 和分析器之间的差异。
+      - html: 获取解答<a href="fxcop-analyzers-faq.md">方面的常见问题</a>二进制 FxCop 分析和使用 FxCop 分析器的源分析之间的差异。
   - title: 如果您是初次接触代码分析...
     items:
       - type: list
@@ -53,7 +53,7 @@ sections:
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
             title: 命令行使用情况
-  - title: 如果你是 FxCop 用户...
+  - title: 如果你当前正在使用二进制分析 (FxCop)...
     items:
       - type: list
         style: cards
@@ -61,7 +61,7 @@ sections:
         columns: 2
         items:
           - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>了解静态 (FxCop) 和分析器代码分析之间的差异。</p>
+            html: <p>了解二进制分析 (FxCop) 和源分析 （FxCop 分析器） 之间的差异。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
             title: 差别是什么？
@@ -71,7 +71,7 @@ sections:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: 安装 FxCop 分析器
           - href: fxcop-rule-port-status.md
-            html: <p>列出已经移植到 FxCop 分析器的静态代码分析 FxCop 规则。</p>
+            html: <p>列出已经移植到源分析 （FxCop 分析器） 的二进制分析 (FxCop) 规则。</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
             title: 移植和 unported 规则
