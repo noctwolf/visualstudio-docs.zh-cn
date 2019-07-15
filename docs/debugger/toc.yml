@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: 调试器不能显示源代码或反汇编
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: 调试器服务内存不足
+              href: error-debugger-services-no-memory.md
             - name: “调试会话的可执行文件”对话框
               href: executable-for-debugging-session-dialog-box.md
             - name: “编辑并继续”对话框 (C++)
