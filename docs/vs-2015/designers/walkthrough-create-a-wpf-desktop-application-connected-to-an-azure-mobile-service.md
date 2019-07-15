@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693534"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824551"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建一个 WPF 桌面应用程序连接到 Azure 移动服务
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程序，该程序使用 Azure 移动服务来存储和提供数据。  
@@ -28,9 +28,9 @@ Windows Presentation Foundation (WPF) 可用于快速创建现代桌面应用程
   
 - 活动的 Microsoft Azure 帐户。  
   
-    - 你可以在 [此处](https://azure.microsoft.com/pricing/free-trial/)注册一个免费试用帐户。  
-  
-    - 你可以激活 [MSDN 订阅者权益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 MSDN 订阅每月会为你提供信用额度，你可以使用信用额度支付 Azure 服务。  
+  - 你可以在 [此处](https://azure.microsoft.com/pricing/free-trial/)注册一个免费试用帐户。  
+
+  - 你可以激活 [MSDN 订阅者权益](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 MSDN 订阅每月会为你提供信用额度，你可以使用信用额度支付 Azure 服务。  
   
 ## <a name="create-a-project-and-add-references"></a>创建项目并添加引用  
  第一步是创建 WPF 项目并添加 NuGet 包，以便你可以连接到 Azure 移动服务。  
