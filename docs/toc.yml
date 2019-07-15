@@ -16,15 +16,6 @@
   items:
     - name: 安装 Visual Studio
       href: install/install-visual-studio.md
-    - name: 个性化帐户
-      items:
-        - name: 登录 Visual Studio
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: 使用多个用户帐户
-          href: ide/work-with-multiple-user-accounts.md
-        - name: 扩展试用版或更新许可证
-          href: ide/how-to-unlock-visual-studio.md
     - name: 脱机安装
       items:
         - name: 创建 Visual Studio 的脱机安装
@@ -61,8 +52,6 @@
           items:
             - name: 创建基于网络的 Visual Studio 安装
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: 更新基于网络的 Visual Studio 安装
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: 网络注意事项
               items:
                 - name: 在防火墙或代理服务器后面安装和使用 Visual Studio
@@ -77,28 +66,32 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: 为 Visual Studio 企业部署设置默认值
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: 禁用或移动包缓存
-              href: install/disable-or-move-the-package-cache.md
-            - name: 控制 Visual Studio 部署的更新
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: 在维修基线上更新 Visual Studio
-              href: install/update-servicing-baseline.md
-        - name: 管理安装
+            - name: 部署帮助查看器
+              items:
+                - name: 帮助查看器管理员指南
+                  href: help-viewer/administrator-guide.md
+                - name: Help Content Manager 的命令行自变量
+                  href: help-viewer/command-line-arguments.md
+                - name: Help Content Manager 重写
+                  href: help-viewer/behavior-overrides.md
+        - name: 管理和更新安装
           items:
             - name: 用于检测和管理 Visual Studio 实例的工具
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: 更新基于网络的 Visual Studio 安装
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: 在维修基线上更新 Visual Studio
+              href: install/update-servicing-baseline.md
+            - name: 控制 Visual Studio 部署的更新
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: 管理报包有效负载更改
+              href: install/changed-payloads.md
+            - name: 禁用或移动包缓存
+              href: install/disable-or-move-the-package-cache.md
         - name: 管理订阅
           items:
             - name: Visual Studio 订阅：管理员概述
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: 部署帮助查看器
-          items:
-            - name: 帮助查看器管理员指南
-              href: help-viewer/administrator-guide.md
-            - name: Help Content Manager 的命令行自变量
-              href: help-viewer/command-line-arguments.md
-            - name: Help Content Manager 重写
-              href: help-viewer/behavior-overrides.md
         - name: 参考
           items:
             - name: Visual Studio 工作负荷和组件 ID
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: 包有效负载更改
-              href: install/changed-payloads.md
             - name: Visual Studio 内部版本号和发布日期
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: 在 Azure 虚拟机中使用 Visual Studio
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: 管理外部工具
           href: ide/managing-external-tools.md
+        - name: 个性化帐户
+          items:
+            - name: 登录 Visual Studio
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: 使用多个用户帐户
+              href: ide/work-with-multiple-user-accounts.md
+            - name: 扩展试用版或更新许可证
+              href: ide/how-to-unlock-visual-studio.md
     - name: Visual Studio 的性能
       items:
         - name: 优化性能
