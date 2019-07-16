@@ -13,16 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183350"
 ---
 # <a name="customizing-the-editor"></a>自定义编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过更改选项，可在普通编辑器或特定语言编辑器中自定义格式、选项卡、字体和颜色、IntelliSense 及更多其他功能。 有关这些选项的详细信息，请参阅[“选项”对话框 ->“文本编辑器”](../ide/reference/text-editor-options-dialog-box.md)，或在“快速启动”中键入 `Editor`。 还可以更改编辑器窗口的显示方式。  
+通过更改选项，可在普通编辑器或特定语言编辑器中自定义格式、选项卡、字体和颜色、IntelliSense 及更多其他功能。 有关这些选项的详细信息，请参阅[“选项”对话框 ->“文本编辑器”](../ide/reference/text-editor-options-dialog-box.md)，或在“快速启动”中键入 `Editor`  。 还可以更改编辑器窗口的显示方式。  
   
 ## <a name="in-this-section"></a>本节内容  
  这些主题说明了如何调整文本和代码编辑器的外观和行为。  

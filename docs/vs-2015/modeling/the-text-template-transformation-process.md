@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199954"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60113984"
   
  文本模板转换过程中两个步骤执行。 首先，引擎就会创建一个临时的类，这被称为生成的转换类。 此类包含生成的指令和控制块的代码。 在此之后，该引擎编译并执行生成的转换类生成输出文件。  
   
-## <a name="components"></a>组件数  
+## <a name="components"></a>组件  
   
 |组件|描述|可自定义 （是/否）|  
 |---------------|-----------------|------------------------------|  

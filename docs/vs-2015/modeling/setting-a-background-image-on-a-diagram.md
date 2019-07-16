@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189394"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60062914"
   
 6. 右键单击 Dsl，然后单击**属性**以打开 Dsl 项目的属性。  
   
-7. 上**资源**选项卡上，单击**此项目不包含默认资源文件。单击此处创建一个资源文件。”**。  
+7. 上**资源**选项卡上，单击**此项目不包含默认资源文件。单击此处创建一个资源文件。”** 。  
   
 8. 将图像文件添加到资源文件，通过将图片从**解决方案资源管理器**到资源窗口。  
   

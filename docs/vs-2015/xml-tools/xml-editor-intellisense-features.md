@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158570"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
 #### <a name="to-change-the-auto-completion-behavior"></a>更改自动完成行为  
   
-1. 从“工具”菜单中选择“选项”。  
+1. 从“工具”菜单中选择“选项”   。  
   
 2. 展开**文本编辑器**，展开**XML**，然后选择**杂项**。  
   

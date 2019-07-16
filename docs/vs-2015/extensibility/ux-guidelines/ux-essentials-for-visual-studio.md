@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181390"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的用户体验基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -180,6 +180,6 @@ ms.locfileid: "60096525"
 #### <a name="using-click-here-for-links"></a>使用"单击此处"链接
  超链接应该是自我描述。 它是一种反模式使用"单击此处"或任何类似的变体。
 
- **错误：**"单击此处了解有关如何创建一个新的项目。"
+ **错误：** "单击此处了解有关如何创建一个新的项目。"
 
- **很好：**"如何创建一个新的项目？"
+ **很好：** "如何创建一个新的项目？"

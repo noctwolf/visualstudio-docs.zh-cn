@@ -1,5 +1,5 @@
 ---
-title: 测试区域 7：Share | Microsoft Docs
+title: 测试区域 7：共享 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203134"
 ---
 # <a name="test-area-7-share"></a>测试区域 7：共享
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

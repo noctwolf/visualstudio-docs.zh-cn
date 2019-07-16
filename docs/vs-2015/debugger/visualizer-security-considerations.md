@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 51c79c34520c36e51599d4d6135784f493673b62
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146464"
 ---
 # <a name="visualizer-security-considerations"></a>可视化工具安全注意事项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

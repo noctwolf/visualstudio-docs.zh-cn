@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c474a85499b221a3ee1d5dfd6befb872f6710f63
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58937966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159684"
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“窗口”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用**Windows**与所选窗口相关的选项卡以显示在 windows 上的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”。   
+使用**Windows**与所选窗口相关的选项卡以显示在 windows 上的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”   。  
   
  以下设置位于**Windows**选项卡：  
   

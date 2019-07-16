@@ -15,11 +15,11 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162038"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：使用对象管理器注册库
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -169,4 +169,4 @@ ms.locfileid: "60042458"
 ## <a name="see-also"></a>请参阅  
  [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何：公开库提供对对象管理器的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [如何：向对象管理器公开库提供的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

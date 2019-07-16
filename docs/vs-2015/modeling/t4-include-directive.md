@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163643"
 ---
 # <a name="t4-include-directive"></a>T4 包含指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60057694"
   
    这些附加包含文件夹可能取决于包含文件的文件扩展名。 例如，DSL 工具包含仅具有文件扩展名 `.tt` 的包含文件可访问的文件夹。  
   
-- `filePath` 可以包括用“%”分隔的环境变量。 例如：  
+- `filePath` 可以包括用“%”分隔的环境变量。 例如:  
   
   ```  
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  

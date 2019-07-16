@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d722aebef0cbcf589185c36cb481a676280d59ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184248"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定是否要创建项目和在指定位置中，执行参数替换或在一个临时位置执行参数替换，然后将项目保存到指定的位置。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<CreateInPlace>  
   
 ## <a name="syntax"></a>语法  

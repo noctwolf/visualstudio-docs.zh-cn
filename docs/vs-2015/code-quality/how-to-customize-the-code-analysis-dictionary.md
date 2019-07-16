@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26a9d65ed21eed00820a7968617c610e4b11c153
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201355"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "60055673"
   
 - [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
-- [Dictionary/Words/Compound/Term[@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [字典/单词/复合/术语 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
 - [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60055673"
   
 - [CA2204:应正确拼写文本](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionary/Words/Deprecated/Term[@PreferredAlternate]  
+### <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> 字典/单词/已弃用/术语 [@PreferredAlternate]  
  若要在代码分析可确定为不推荐使用的术语列表中包含一个术语，将添加为字典/单词/已弃用/术语元素的内部文本的一词。 不推荐使用的术语是一个单词的拼写正确，但不应使用。  
   
  若要包含在警告中建议的替代字词，字词元素 PreferredAlternate 属性中指定备用服务器。 如果不希望建议一个替代，可以将属性值留空。  
@@ -181,7 +181,7 @@ ms.locfileid: "60055673"
   
 - [CA1726:使用首选的词条](../code-quality/ca1726-use-preferred-terms.md)  
   
-### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionary/Words/Compound/Term[@CompoundAlternate]  
+### <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/单词/复合/术语 [@CompoundAlternate]  
  内置词典标识作为单一的离散的术语，而不是一个复合术语的一些术语。 若要与搜索条件的代码分析标识为一个组合词列表中包括一个术语，并指定正确的大小写的字词，添加一词作为字典/单词/复合/术语元素的内部文本。 术语元素 CompoundAlternate 属性中指定的单个单词利用不同的单词 （Pascal 大小写） 的第一个字母组成的复合术语。 请注意，内部文本中指定的术语自动添加到字典/单词/DiscreteExceptions 列表。  
   
 - 字典/单词中的不推荐使用的词条/已弃用/术语元素不是区分大小写。  
@@ -239,7 +239,7 @@ ms.locfileid: "60055673"
   
 - [CA1702:复合词应采用正确的大小写](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionary/Acronyms/CasingExceptions/Acronym  
+### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> 字典/首字母缩写词/CasingExceptions/首字母缩略词  
  中的代码分析将标识为拼写正确的字词列表包括首字母缩略词并指示如何的首字母缩写词大小写被选中时规则的组合词，将字词添加为字典/首字母缩写词/CasingExceptions 的内部文本 /首字母缩略词元素。 字典/首字母缩写词/CasingExceptions/首字母缩略词元素中的首字母缩写是区分大小写。  
   
  **示例**  

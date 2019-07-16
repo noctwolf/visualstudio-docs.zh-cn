@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa2706f2013c348524b64900418fa02f47b4d26c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152851"
 ---
 # <a name="debugging-wpf"></a>调试 WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58937411"
 |Title|说明|  
 |-----------|-----------------|  
 |[如何：使用 WPF 树可视化工具](../debugger/how-to-use-the-wpf-tree-visualizer.md)|可以使用 WPF 树可视化工具浏览 WPF 对象的可视化树，并查看该树中所含对象的 WPF 依赖项属性。 本主题介绍 WPF 树可视化工具的用户界面。|  
-|[如何：显示 WPF 跟踪信息](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可接收来自 WPF 应用程序的调试跟踪信息，并将该信息显示在“输出”窗口中。 本主题介绍如何启用和自定义 WPF 跟踪信息的显示。|  
+|[如何：显示 WPF 跟踪信息](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可接收来自 WPF 应用程序的调试跟踪信息，并将该信息显示在“输出”窗口中  。 本主题介绍如何启用和自定义 WPF 跟踪信息的显示。|  
   
 ## <a name="see-also"></a>请参阅  
  [调试托管代码](../debugger/debugging-managed-code.md)

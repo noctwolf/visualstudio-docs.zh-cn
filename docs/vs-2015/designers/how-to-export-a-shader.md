@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176486"
 ---
 # <a name="how-to-export-a-shader"></a>如何：导出着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "60098957"
   
 #### <a name="to-export-a-shader"></a>导出着色器  
   
-1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，打开“视觉着色器图 (.dgsl)”文件。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，打开“视觉着色器图 (.dgsl)”  文件。  
   
-     如果没有要打开的“视觉着色器图 (.dgsl)”文件，请按照[如何：创建基本颜色着色器](../designers/how-to-create-a-basic-color-shader.md)。  
+     如果没有要打开的“视觉着色器图 (.dgsl)”文件，请按照[如何  ：创建基本颜色着色器](../designers/how-to-create-a-basic-color-shader.md)。  
   
-2. 在“着色器设计器”工具栏上，依次选择“高级”、“导出”和“导出为”。 将显示“导出着色器”对话框。  
+2. 在“着色器设计器”  工具栏上，依次选择“高级”  、“导出”  和“导出为”  。 将显示“导出着色器”  对话框。  
   
-3. 在“另存为类型”下拉列表中，选择要导出的格式。  
+3. 在“另存为类型”  下拉列表中，选择要导出的格式。  
   
      以下是可以选择的格式：  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60098957"
      **C++ 标头 (\*.h)**  
      将着色器导出为 C 样式标头，其定义包含 HLSL 字节码的字节数组。 此选项可能会使根据最终用户问题对代码进行调试和修补更加耗时，因为必须重新编译应用才能测试修补程序。 然而，因为此选项让用户难以（存在可能性）在着色器部署到应用后对其进行修改，因此也让用户难以以你不希望的方式修改着色器。  
   
-4. 在“文件名”组合框中，为导出的着色器指定名称，然后选择“保存”按钮。  
+4. 在“文件名”  组合框中，为导出的着色器指定名称，然后选择“保存”  按钮。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建基本颜色着色器](../designers/how-to-create-a-basic-color-shader.md)   

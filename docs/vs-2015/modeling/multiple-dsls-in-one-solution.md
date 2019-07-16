@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159016"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一个解决方案中的多个 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60050135"
   
 2. 合并 DSL 的 VSIX 清单：  
   
-   1. 打开_YourVsixProject_**\source.extension.manifest**。  
+   1. 打开_YourVsixProject_ **\source.extension.manifest**。  
   
    2. 对于每个 DSL，选择**添加内容**和添加：  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60050135"
   
 3. 生成解决方案。  
   
-   生成的 VSIX 将安装这两个 DSL。 可使用 F5，对其进行测试或部署_YourVsixProject_**\bin\Debug\\\*.vsix**。  
+   生成的 VSIX 将安装这两个 DSL。 可使用 F5，对其进行测试或部署_YourVsixProject_ **\bin\Debug\\\*.vsix**。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

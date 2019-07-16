@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8ed63e532bd8ba3977757a51ee494d671e7683a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198229"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>如何：从起始视图向工作区添加节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -9,11 +9,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 681df08c02813e209738e629495190ad889caf31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202102"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Visual Studio 的菜单和命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -283,7 +283,7 @@ ms.locfileid: "60095797"
 
 - **请遵循 Windows 准则来确定哪些修饰符键使用。** 使用 Ctrl 键组合用于大型效果，如将应用到整个文档的命令的命令。 用于扩展或补充标准快捷键的操作的命令使用 Shift 键组合。 请勿使用 Ctrl + Alt 组合。
 
-- **删除多余的快捷方式。** 如果您有一项旧功能，请考虑删除快捷方式，如果访问密钥提供了快速访问相同的命令与极少 （少于 10 次从 CEIP 数据） 被或中等均值 （少于 100 次从 CEIP 数据） 一起使用。 例如：Alt，H，C 会打开帮助/内容。
+- **删除多余的快捷方式。** 如果您有一项旧功能，请考虑删除快捷方式，如果访问密钥提供了快速访问相同的命令与极少 （少于 10 次从 CEIP 数据） 被或中等均值 （少于 100 次从 CEIP 数据） 一起使用。 例如:Alt，H，C 会打开帮助/内容。
 
   不是简单的方法来检查快捷方式的可用性。 如果你想要添加快捷方式，执行以下步骤：
 

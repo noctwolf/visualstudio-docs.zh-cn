@@ -11,19 +11,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6823b462f884e06e1729c9bb4777cc166b34ea7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204623"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定用户可以编辑位置字段。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<EnableEditOfLocationField>  
   
 ## <a name="syntax"></a>语法  
@@ -36,10 +36,10 @@ ms.locfileid: "58932948"
  下列各节描述了特性、子元素和父元素。  
   
 ### <a name="attributes"></a>特性  
- None  
+ 无  
   
 ### <a name="child-elements"></a>子元素  
- None  
+ 无  
   
 ### <a name="parent-elements"></a>父元素  
   

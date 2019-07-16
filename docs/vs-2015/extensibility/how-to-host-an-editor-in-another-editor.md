@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4b4ff425feb22b5057a8d1a76b7f73b8932d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204171"
 ---
-# <a name="how-to-host-an-editor-in-another-editor"></a>如何：主机的编辑器中另一个编辑器
+# <a name="how-to-host-an-editor-in-another-editor"></a>如何：在编辑器中托管另一个编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 中可以通过指定为父窗口的承载窗口托管在另一个编辑器。 若要执行此操作，设置参数<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>和<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2>上子窗口框架。  

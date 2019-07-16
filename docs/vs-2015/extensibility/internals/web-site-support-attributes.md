@@ -11,11 +11,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75401eb0d5acd5d363d05aec57909eef5b9855e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144301"
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "58934473"
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute  
  此特性置于语言项目包。 它将选择的语言的 Intellisense 提供程序。  
   
- 例如：  
+ 例如:  
   
 ```  
 [ProvideIntellisenseProvider(typeof(PythonIntellisenseProvider), "IronPythonCodeProvider", "Iron Python", ".py", "IronPython;Python", "IronPython")]public class PythonPackage : Package, IOleComponent  

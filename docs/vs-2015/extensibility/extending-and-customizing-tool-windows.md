@@ -12,11 +12,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b232fa1275bce453e3b32cea6a5ff37fdd501c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204547"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>扩展和自定义工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58937153"
 Visual Studio 提供多种不同类型的 windows，如工具窗口、 文档窗口和对话框窗口。 例如属性窗口、 输出窗口和任务列表窗口中，其他窗口是工具窗口的类型。  
   
 ## <a name="tool-windows"></a>工具窗口  
- Visual Studio 工具窗口是不基于文件的通常是只读的窗口。 在这方面，它们不同于文档窗口，文档窗口在读写模式下显示文件。 工具窗口的示例包括“工具箱” 、“解决方案资源管理器” 、“属性”  窗口和“Web 浏览器”  。  
+ Visual Studio 工具窗口是不基于文件的通常是只读的窗口。 在这方面，它们不同于文档窗口，文档窗口在读写模式下显示文件。 工具窗口的示例包括“工具箱”  、“解决方案资源管理器”  、“属性”  窗口和“Web 浏览器”  。  
   
  若要了解如何创建简单的工具窗口，请参阅[添加工具窗口](../extensibility/adding-a-tool-window.md)。  
   
