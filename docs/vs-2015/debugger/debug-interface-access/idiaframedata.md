@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9619d4f3d5670d3692c21d850201a2f39d96b922
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202590"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ IDiaFrameData : IUnknown
 |[IDiaFrameData::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiaframedata-get-lengthsavedregisters.md)|检索已保存的寄存器推送到堆栈上的字节数。|  
 |[IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)|检索用于计算的寄存器集之前调用当前函数的程序字符串。|  
 |[IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md)|检索一个标志，指示该系统异常处理将生效。|  
-|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|检索一个标志，指示该 c + + 异常处理将生效。|  
+|[IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)|检索一个标志，指示C++实际上是异常处理。|  
 |[IDiaFrameData::get_functionStart](../../debugger/debug-interface-access/idiaframedata-get-functionstart.md)|检索一个标志，指示块包含一个函数的入口点。|  
 |[IDiaFrameData::get_allocatesBasePointer](../../debugger/debug-interface-access/idiaframedata-get-allocatesbasepointer.md)|检索一个标志，指示此地址范围中的代码，会分配给基的指针。 已弃用此方法。|  
 |[IDiaFrameData::get_type](../../debugger/debug-interface-access/idiaframedata-get-type.md)|检索特定于编译器的帧类型。|  

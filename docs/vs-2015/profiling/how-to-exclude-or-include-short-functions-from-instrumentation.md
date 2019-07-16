@@ -14,32 +14,32 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146111"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>如何：排除或包括短函数从检测
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>如何：在检测中排除或包括短函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 默认情况下，分析工具会从检测中排除*小型函数*。 小型函数是不执行任何函数调用的短函数。 排除这些小型函数会减少检测开销，从而提高检测速度。 排除小型函数还能减少性能分析数据文件 (.vsp) 的大小和分析所需的时间。 如果排除小型函数，花费在小型函数上的时间会减少，从而减少其父函数的独占和非独占时间。 可以在检测中排除或包括小型函数，具体在以下过程中说明。  
   
 ### <a name="to-exclude-or-include-short-functions-from-instrumentation"></a>在检测中排除或包括短函数  
   
-1. 在“性能资源管理器”中，选择“性能会话”，然后右键单击并选择“属性”。  
+1. 在“性能资源管理器”中，选择“性能会话”，然后右键单击并选择“属性”    。  
   
-     随即显示“属性页”对话框。  
+     随即显示“属性页”对话框  。  
   
-2. 在“属性页”中，单击“检测”属性。  
+2. 在“属性页”中，单击“检测”属性   。  
   
-3. 若要从检测中排除短函数，请选择“从检测中排除短函数”。 此为默认设置。  
+3. 若要从检测中排除短函数，请选择“从检测中排除短函数”  。 此为默认设置。  
   
      或  
   
-     若要在检测中包括短函数，请清除“从检测中排除短函数”。  
+     若要在检测中包括短函数，请清除“从检测中排除短函数”  。  
   
-4. 单击 **“确定”**。  
+4. 单击 **“确定”** 。  
   
 ## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   

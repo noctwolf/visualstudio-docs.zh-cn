@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: becbd47ca49f44a84a2f58be9f2185e3d61b099b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0ba4a5c52bf972236914c06ec9672653fbde9cea
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335338"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891045"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的图像和图标
 ## <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用
@@ -23,7 +23,8 @@ ms.locfileid: "66335338"
 
 - **图标**。 显示在命令、 层次结构、 模板和等等的小图像。 在 Visual Studio 中使用的默认图标大小为 16 x 16 PNG。 图标会自动生成的映像服务生成的 XAML 格式的 HDPI 支持。
 
-     **注意：** 菜单系统中都使用映像，而不应创建的每个命令的图标。 请查阅[Visual Studio 的菜单和命令](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)若要查看您的命令是否应获得一个图标。
+    > [!NOTE]
+    > 菜单系统中都使用映像，而不应创建的每个命令的图标。 请查阅[Visual Studio 的菜单和命令](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)若要查看您的命令是否应获得一个图标。
 
 - **缩略图。** 在对话框中，例如新项目对话框的预览区域中使用的图像。
 
@@ -62,7 +63,7 @@ ms.locfileid: "66335338"
 |||
 |-|-|
 |**符号图像的正确使用**|**符号图像的不正确使用**|
-|![正确的智能标记图标](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404年 01_SmartTagCorrect")|![Incorrect Smart Tag icon](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404-02_SmartTagIncorrect")|
+|![正确的智能标记图标](../../extensibility/ux-guidelines/media/0404-01_smarttagcorrect.png "0404年 01_SmartTagCorrect")|![不正确的智能标记图标](../../extensibility/ux-guidelines/media/0404-02_smarttagincorrect.png "0404年 02_SmartTagIncorrect")|
 
  有在其中标准的、 易于识别 UI 元素适用于图标的实例。 添加窗口是这样一个示例：
 
@@ -281,12 +282,12 @@ ms.locfileid: "66335338"
 #### <a name="action-modifiers"></a>操作修改程序
  以下四种颜色指示操作修改程序所需的操作类型：
 
-|用法|名称|值 （所有主题）|样本|
+|用法|name|值 （所有主题）|样本|
 |-----------|----------|--------------------------|------------|
 |正|VS 操作绿色|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |负数|VS 操作红色|A1260D / 161,38,13|![样本 A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
 |非特定语言|VS 操作蓝色|00539C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
-|创建/新|VS 操作橙色|C27D1A / 194,156,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
+|创建/新|VS 操作橙色|C27D1A / 194,156,26|![样本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>示例
  绿色用于"添加"，如正操作修改程序"运行，""Play"和"验证"。
@@ -326,7 +327,7 @@ ms.locfileid: "66335338"
 
 |用法|名称|值 （所有主题）|样本|示例|
 |-----------|----------|--------------------------|------------|-------------|
-|文件夹|文件夹|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![文件夹颜色图标](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|
+|文件夹|文件夹|DCB67A / 220,182,122|![样本 DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![文件夹颜色图标](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405年 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Visual Studio 语言
  每个常见的语言或平台 Visual Studio 中提供有关联的颜色。 这些颜色的使用基本图标，或出现在复合图标的右上角的语言修饰符。
@@ -353,10 +354,10 @@ ms.locfileid: "66335338"
 #### <a name="intellisense"></a>IntelliSense
  IntelliSense 图标使用排他的调色板。 这些颜色用于帮助用户快速将 IntelliSense 弹出列表中的不同项之间区分开来。
 
-|用法|名称|值 （所有主题）|样本|
+|用法|name|值 （所有主题）|样本|
 |-----------|----------|--------------------------|------------|
-|类事件|VS 操作橙色|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
-|扩展方法，方法中，模块中委托|VS 操作紫色|652D90 / 101,45,144|![样本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
+|类事件|VS 操作橙色|C27D1A / 194,125,26|![样本 C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
+|扩展方法，方法中，模块中委托|VS 操作紫色|652 D 90 / 101,45,144|![样本 652d90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
 |字段中，枚举项、 宏、 结构、 联合值类型，运算符，接口|VS 操作蓝色|00539C / 0,83,156|![样本 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |对象|VS 操作绿色|388A34 / 56,138,52|![样本 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |常量、 异常、 枚举项、 地图、 地图项、 Namespace，模板中，类型定义|背景 (VS BG)|424242 / 66,66,66|![样本 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|
@@ -376,7 +377,7 @@ ms.locfileid: "66335338"
 |状态： 非特定语言|通知蓝色 （VS 蓝色表示）|1BA1E2 / 27,161,226|![样本 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
 |状态： 正|通知绿色 （VS 绿色）|339933 / 51,153,51|![样本 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
 |状态： 负|通知 Red （VS 红色）|E51400 / 229,20,0|![样本 E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|
-|状态： 警告|通知黄色 （VS 橙色）|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|
+|状态： 警告|通知黄色 （VS 橙色）|FFCC00 / 255,204,0|![样本 FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|
 |前景色填充|通知黑色 (Black)|000000 / 0,0,0|![样本&#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|
 |前景色填充|通知白色 (White)|FFFFFF / 255,255,255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 
@@ -398,7 +399,7 @@ ms.locfileid: "66335338"
 |F12|背景|白色|FFFFFF / 255，255，255|![样本 FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 |F12|普通|F12 Grey_Primary|555555 / 85, 85, 85|![样本 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|
 |F12|悬停|F12 Blue_Hover|2279BF / 34,121,191|![样本 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|
-|F12|已禁用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|
+|F12|已禁用|F12 LtGrey_Disabled|ABABAC / 171,171,172|![样本 ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|
 |F12|将鼠标悬停在背景|将鼠标悬停在 bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|
 |F12|按下的背景|按下的 bg|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|
 |F12|轮廓|VS 扩展|F6F6F6 / 246,246,246|![样本 F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|
@@ -407,7 +408,7 @@ ms.locfileid: "66335338"
 |F12|错误 / 负|Error_Negative|E81123 / 232,17,35|![样本 E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|
 |F12|启动 / 正|Start_Positive|009E49 / 0,158,73|![样本 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|
 |F12|中断类型|中断类型|9B4F96 / 155,79,150|![样本 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
-|F12|事件标记|事件标记|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|
+|F12|事件标记|事件标记|A51F00 / 165,31,0|![样本 A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|
 |F12|用户标记|用户标记|F16220 / 241,98,32|![样本 F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|
 
 #### <a name="examples-of-visual-studio-online-icons"></a>Visual Studio Online 的图标的示例
@@ -418,7 +419,7 @@ ms.locfileid: "66335338"
 
 |Napa||||
 |----------|-|-|-|
-|![Napa 内容图标](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />内容|![Napa 办公邮件图标](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office Mail|![Napa SharePoint 图标](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405年 55_NapaSharePoint")<br />SharePoint|![Napa 任务窗格图标](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />任务窗格|
+|![Napa 内容图标](../../extensibility/ux-guidelines/media/0405-53_napacontent.png "0405年 53_NapaContent")<br />内容|![Napa 办公邮件图标](../../extensibility/ux-guidelines/media/0405-54_napaofficemail.png "0405年 54_NapaOfficeMail")<br />Office 邮件|![Napa SharePoint 图标](../../extensibility/ux-guidelines/media/0405-55_napasharepoint.png "0405年 55_NapaSharePoint")<br />SharePoint|![Napa 任务窗格图标](../../extensibility/ux-guidelines/media/0405-56_napataskpane.png "0405年 56_NapaTaskPane")<br />任务窗格|
 
 |摩纳哥||||
 |------------|-|-|-|

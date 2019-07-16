@@ -12,11 +12,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204343"
 ---
 # <a name="font-and-color-overview"></a>字体和颜色概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58930751"
   
    只有一个**类别**即支持此机制，则**文本编辑器**。  
   
-- 更多常规的替代方法支持所有其他**类别**和显示文本时在源编辑器之外的用户界面组件。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
+- 更多常规的替代方法支持所有其他**类别**和显示文本时在源编辑器之外的用户界面组件。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 。  
   
 ## <a name="core-editor-text-settings"></a>核心编辑器文本设置  
  核心编辑器的语言服务对象的字体和颜色设置受**文本 EditorCategory**中找到**显示其设置**的下拉列表框**字体和颜色**属性页。  

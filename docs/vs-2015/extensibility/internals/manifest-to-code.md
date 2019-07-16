@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192649"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,8 +28,8 @@ ms.locfileid: "60076701"
 ||||  
 |-|-|-|  
 |**交换机名称**|**备注**|**必需或可选**|  
-|/ 清单|图像清单用于创建或更新代码包装程序的路径。|必需|  
-|/language|要在其中生成代码包装程序语言。<br /><br /> 有效值：CPP， C++，CS、 CSharp、 C#，VB 或 VSCT 值不区分大小写。<br /><br /> VSCT 语言选项、 /monikerClass、 /classAccess 和 /namespace 选项被忽略。|必需|  
+|/ 清单|图像清单用于创建或更新代码包装程序的路径。|必填|  
+|/language|要在其中生成代码包装程序语言。<br /><br /> 有效值：CPP， C++，CS、 CSharp、 C#，VB 或 VSCT 值不区分大小写。<br /><br /> VSCT 语言选项、 /monikerClass、 /classAccess 和 /namespace 选项被忽略。|必填|  
 |/imageIdClass|ImageIdClass 和工具创建的关联的文件的名称。 有关C++语言选项，仅.h 文件生成。<br /><br /> 默认：\<清单路径 > \MyImageIds。\<Lang Ext >|Optional|  
 |/monikerClass|MonikerClass 和工具创建的关联的文件的名称。 有关C++语言选项，仅.h 文件生成。 这被忽略 VSCT 语言。<br /><br /> 默认：\<清单路径 > \MyMonikers。\<Lang Ext >|Optional|  
 |/classAccess|ImageIdClass 和 monikerClass 的访问修饰符。 请确保访问修饰符为给定语言有效。 这是已忽略 VSCT 语言选项。<br /><br /> 默认：Public|Optional|  

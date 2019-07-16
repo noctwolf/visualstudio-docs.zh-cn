@@ -9,11 +9,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148822"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>演练：使用 JavaScript 创建 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ ms.locfileid: "60066944"
   
 2. 在模板类别列表中下**JavaScript**，选择**Windows 应用商店**，然后选择**空白应用**模板。  
   
-3. 在中**名称**框中，指定`ArithmeticUI`。 选择“确定”  按钮。  
+3. 在中**名称**框中，指定`ArithmeticUI`。 选择**确定**按钮。  
   
 4. 在中**解决方案资源管理器**，打开 ArithmeticUI 项目的快捷菜单，然后选择**添加**，**引用**。  
   

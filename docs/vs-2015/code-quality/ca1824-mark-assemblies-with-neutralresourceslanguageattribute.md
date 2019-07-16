@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203076"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824:用 NeutralResourcesLanguageAttribute 标记程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60052163"
 
 3. 在中**程序集信息**对话框框中，选择从语言**中性语言**下拉列表。
 
-4. 单击 **“确定”**。
+4. 单击 **“确定”** 。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它是允许要禁止显示此规则的警告。 但是，启动性能可能会降低。

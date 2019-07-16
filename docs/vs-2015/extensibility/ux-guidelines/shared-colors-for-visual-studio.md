@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154583"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 
@@ -78,7 +78,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（文本）
 
@@ -96,7 +96,7 @@ ms.locfileid: "60086424"
 
   None
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -166,7 +166,7 @@ ms.locfileid: "60086424"
 
   仅限左侧、顶端和右侧。
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -180,7 +180,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（文本）
 
@@ -192,7 +192,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
 #### <a name="menu"></a>菜单
 
@@ -274,7 +274,7 @@ ms.locfileid: "60086424"
 
   `Environment.CommandBarSelectedBorder`
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -282,7 +282,7 @@ ms.locfileid: "60086424"
 
   令牌名称：Category.color
 
-  ![Menu hover](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")
+  ![菜单悬停](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303年 013_MenuHover")
 
   **菜单项**
 
@@ -322,7 +322,7 @@ ms.locfileid: "60086424"
 
   `Environment.CommandBarHoverOverSelectedIconBorder`
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -448,7 +448,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
   ![命令图标默认选定](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")
 
@@ -534,7 +534,7 @@ ms.locfileid: "60086424"
 
   `Environment.CommandBarBorder`
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -556,14 +556,14 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
 #### <a name="BKMK_CommandComboBox"></a> 组合框
 
 > [!IMPORTANT]
 > 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下的颜色标记。
 
-![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![组合框红线](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303年 029_ComboBoxRedline")
 
 使用...
 - 当构建自定义组合框时。
@@ -633,7 +633,7 @@ ms.locfileid: "60086424"
 
   `Environment.ComboBoxPopupBorder`
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -771,7 +771,7 @@ ms.locfileid: "60086424"
 
   `Environment.ComboBoxMouseDownGlyph`
 
-  已禁用
+  已禁用 
 
   ![组合框输入的字段已禁用](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303年 041_ComboBoxInputFieldDisabled")
 
@@ -799,7 +799,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（标志符号）
 
@@ -854,7 +854,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（标志符号）
 
@@ -882,7 +882,7 @@ ms.locfileid: "60086424"
 
   `Environment.DropShadowBackground`
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -980,7 +980,7 @@ ms.locfileid: "60086424"
 
   `Environment.DropDownMouseDownGlyph`
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -1010,7 +1010,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  不适用
+  不可用
 
   前景（标志符号）
 
@@ -1056,13 +1056,13 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
   Separator
 
-  不适用
+  不可用
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -1128,9 +1128,9 @@ ms.locfileid: "60086424"
 
   Separator
 
-  不适用
+  不可用
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -1144,7 +1144,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  不适用
+  不可用
 
   前景（文本）
 
@@ -1156,11 +1156,11 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
   Separator
 
-  不适用
+  不可用
 
 #### <a name="more-options-and-overflow-buttons"></a>“更多选项”和“溢出”按钮
  通过添加或删除相关命令栏按钮来自定义命令栏组时，可使用“更多选项”按钮。 命令栏由于水平空间不足而被截断，以及在单击操作中显示包含无法显示的命令栏按钮的菜单时，会出现“溢出”按钮。 这两个按钮的颜色通过一组相同的标记名称进行控制。
@@ -1187,7 +1187,7 @@ ms.locfileid: "60086424"
 
  ![溢出按钮](../../extensibility/ux-guidelines/media/0303-060-overflow.png "0303年 060_Overflow")
 
- **Overflow**
+ **溢出**
 
  背景
 
@@ -1197,7 +1197,7 @@ ms.locfileid: "60086424"
 
  `Environment.CommandBarOptionsGlyph`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -1211,7 +1211,7 @@ ms.locfileid: "60086424"
 
  ![悬停时的溢出](../../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303年 062_OverflowOptions")
 
- **Overflow**
+ **溢出**
 
  背景
 
@@ -1237,7 +1237,7 @@ ms.locfileid: "60086424"
 
  ![按下的溢出](../../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303年 064_OverflowPressed")
 
- **Overflow**
+ **溢出**
 
  背景
 
@@ -1345,7 +1345,7 @@ ms.locfileid: "60086424"
 
  设置为透明
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -1523,7 +1523,7 @@ ms.locfileid: "60086424"
 
  设置为与背景相同的颜色。
 
- **Hover**
+ **将鼠标悬停在**
 
  ![悬停背景选项卡](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303年 077_BackgroundTabHover")
 
@@ -1643,7 +1643,7 @@ ms.locfileid: "60086424"
 
   设置为与背景相同的颜色。
 
-  **背景预览选项卡：Hover**
+  **背景预览选项卡：将鼠标悬停在**
 
   组件
 
@@ -1705,9 +1705,9 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -1777,7 +1777,7 @@ ms.locfileid: "60086424"
  请勿使用...
 对于不希望在 shell 具有主题更新时自动更改的任何 UI。
 
- **Docked**
+ **停靠**
 
  组件
 
@@ -1898,7 +1898,7 @@ ms.locfileid: "60086424"
 
  Border
 
- 不适用
+ 不可用
 
  拖动句柄
 
@@ -1930,7 +1930,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  不适用
+  不可用
 
   前景（标志符号）
 
@@ -1938,7 +1938,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
   ![标题栏失去焦点的按钮](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")
 
@@ -1946,7 +1946,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  不适用
+  不可用
 
   前景（标志符号）
 
@@ -1954,9 +1954,9 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -2190,7 +2190,7 @@ ms.locfileid: "60086424"
 
  `Environment.AutoHideTabBorder`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -2276,7 +2276,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（搜索标志符号）
 
@@ -2292,7 +2292,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
   ![搜索下拉&#45;下已设定焦点的按钮](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")
 
@@ -2364,7 +2364,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  不适用
+  不可用
 
   前景（搜索标志符号）
 
@@ -2380,7 +2380,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  不适用
+  不可用
 
   ![搜索下拉&#45;向下按钮失去焦点](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")
 
@@ -2460,13 +2460,13 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
   Separator
 
   `SearchControl.FocusedDropDownSeparator`
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -2500,7 +2500,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（标志符号）
 
@@ -2508,7 +2508,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
   ![搜索下拉&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303年 123_SearchDropdownButtonDisabled")
 
@@ -2516,7 +2516,7 @@ ms.locfileid: "60086424"
 
   背景
 
-  None
+  无
 
   前景（标志符号）
 
@@ -2524,7 +2524,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
 #### <a name="search-drop-down-lists"></a>搜索下拉列表
 
@@ -2614,7 +2614,7 @@ ms.locfileid: "60086424"
 
   `SearchControl.PopupSectionHeaderText`
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -2731,7 +2731,7 @@ ms.locfileid: "60086424"
 
  `Environment.PanelHyperlink`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -2759,7 +2759,7 @@ ms.locfileid: "60086424"
 
  `Environment.PanelHyperlinkPressed`
 
- 已禁用
+ 已禁用 
 
  组件
 
@@ -2792,7 +2792,7 @@ ms.locfileid: "60086424"
 
  ![Infobar](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
 
- **Infobar**
+ **信息栏**
 
  背景
 
@@ -2826,7 +2826,7 @@ ms.locfileid: "60086424"
 
  ![滚动条](../../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303年 141_Scrollbar")
 
- **Scrollbar**
+ **滚动条**
 
  Scrollbar
 
@@ -2850,7 +2850,7 @@ ms.locfileid: "60086424"
 
  `Environment.ScrollBarArrowGlyph`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -2860,7 +2860,7 @@ ms.locfileid: "60086424"
 
  ![悬停时的滚动条](../../extensibility/ux-guidelines/media/0303-143-scrollbarhover.png "0303年 143_ScrollbarHover")
 
- **Scrollbar**
+ **滚动条**
 
  Scrollbar
 
@@ -2894,7 +2894,7 @@ ms.locfileid: "60086424"
 
  ![按下的滚动条](../../extensibility/ux-guidelines/media/0303-145-scrollbarpressed.png "0303年 145_ScrollbarPressed")
 
- **Scrollbar**
+ **滚动条**
 
  Scrollbar
 
@@ -2956,9 +2956,9 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -2982,7 +2982,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
   **拖动**
 
@@ -3008,7 +3008,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
   **选择**
 
@@ -3056,7 +3056,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
   **悬停在选定内容**
 
@@ -3104,7 +3104,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
 ### <a name="button-controls"></a>按钮控件
  ![按钮控件红线](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303年 155_ButtonControlRedline")
@@ -3133,7 +3133,7 @@ ms.locfileid: "60086424"
 
  `CommonControls.ButtonBorder`
 
- 已禁用
+ 已禁用 
 
  组件
 
@@ -3151,7 +3151,7 @@ ms.locfileid: "60086424"
 
  `CommonControls.ButtonBorderDisabled`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -3222,7 +3222,7 @@ ms.locfileid: "60086424"
 
  令牌名称：Category.color
 
- ![Check box](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303-162_Checkbox")
+ ![复选框](../../extensibility/ux-guidelines/media/0303-162-checkbox.png "0303年 162_Checkbox")
 
  背景
 
@@ -3240,7 +3240,7 @@ ms.locfileid: "60086424"
 
  `CommonControls.CheckBoxGlyph`
 
- 已禁用
+ 已禁用 
 
  组件
 
@@ -3266,7 +3266,7 @@ ms.locfileid: "60086424"
 
  `CommonControls.CheckBoxGlyphDisabled`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -3364,7 +3364,7 @@ ms.locfileid: "60086424"
 
   令牌名称：Category.color
 
-  ![Drop&#45;down&#47;combo box](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303-168_DropDownComboBox")
+  ![删除&#45;关闭&#47;组合框](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303年 168_DropDownComboBox")
 
   背景
 
@@ -3390,7 +3390,7 @@ ms.locfileid: "60086424"
 
   `CommonControls.ComboBoxGlyphBackground`
 
-  已禁用
+  已禁用 
 
   组件
 
@@ -3424,7 +3424,7 @@ ms.locfileid: "60086424"
 
   `CommonControls.ComboBoxGlyphBackgroundDisabled`
 
-  **Hover**
+  **将鼠标悬停在**
 
   组件
 
@@ -3687,7 +3687,7 @@ ms.locfileid: "60086424"
 
  Border
 
- None
+ 无
 
  已选定（非活动）
 
@@ -3701,7 +3701,7 @@ ms.locfileid: "60086424"
 
  Border
 
- None
+ 无
 
 ## <a name="manifest-designer"></a>清单设计器
 
@@ -3737,7 +3737,7 @@ ms.locfileid: "60086424"
 
   Border
 
-  None
+  无
 
   说明窗格
 
@@ -3805,7 +3805,7 @@ ms.locfileid: "60086424"
 
  ![悬停时的标记](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303年 178_TagHover")
 
- **Hover**
+ **将鼠标悬停在**
 
  背景
 
@@ -3848,19 +3848,19 @@ ms.locfileid: "60086424"
 
  令牌名称：Category.color
 
- ![Tag &#40;glyph&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")
+ ![标记&#40;标志符号&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303年 181_TagGlyph")
 
  **默认值 （标记默认值）**
 
  背景
 
- 不适用
+ 不可用
 
  前景（标志符号）
 
  `Tag.TagHoverGlyph`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -3922,7 +3922,7 @@ ms.locfileid: "60086424"
 
  背景
 
- 不适用
+ 不可用
 
  前景（标志符号）
 
@@ -4107,7 +4107,7 @@ ms.locfileid: "60086424"
 
  Border
 
- None
+ 无
 
  前景（标志符号）
 
@@ -4117,7 +4117,7 @@ ms.locfileid: "60086424"
 
  `Environment.ToolboxContent`
 
- **Hover**
+ **将鼠标悬停在**
 
  组件
 
@@ -4137,7 +4137,7 @@ ms.locfileid: "60086424"
 
  Border
 
- None
+ 无
 
  前景（文本）
 
@@ -4201,7 +4201,7 @@ ms.locfileid: "60086424"
 
  Border
 
- None
+ 无
 
  前景（标志符号）
 

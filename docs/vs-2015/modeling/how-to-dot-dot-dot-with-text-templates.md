@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181577"
 ---
-# <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
+# <a name="how-to--with-text-templates"></a>如何：使用文本模板 ...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 中的文本模板[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]有用的方式生成任何类型的文本。 可以使用文本模板生成文本，在你的应用程序的一部分运行时和在设计时生成的某些项目代码。 本主题总结了最常要求"如何实现...？" 问题。  
@@ -37,7 +37,7 @@ ms.locfileid: "60093015"
   
 - 将运行时文本模板添加到你的项目。 此模板创建在代码中，可以实例化和用于生成文本的类。 在构造函数参数，可以将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
-- 如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
+- 如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 。  
   
      使用\<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅[T4 参数指令](../modeling/t4-parameter-directive.md)。  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60093015"
      有关详细信息，请参阅[为您的应用程序创建模型](../modeling/create-models-for-your-app.md)并[从 UML 模型生成文件](../modeling/generate-files-from-a-uml-model.md)。  
   
 ### <a name="get-data-from-includevsprvsincludesvsprvs-mdmd"></a>从中获取数据 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
- 若要使用中提供的服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，由组`hostSpecific`特性并加载`EnvDTE`程序集。 例如：  
+ 若要使用中提供的服务[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，由组`hostSpecific`特性并加载`EnvDTE`程序集。 例如:  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  

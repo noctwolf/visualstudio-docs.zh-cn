@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784474"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890318"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>XAML 设计器扩展性迁移
 
-从 Visual Studio 2019 版本 16.1 以公共预览版的形式，XAML 设计器支持两个不同的体系结构： 设计器隔离体系结构和较新的图面上隔离体系结构。 在.NET Framework 进程中支持不能在托管的目标运行时需要此体系结构转换。 第三方可扩展性模型迁移到图面上隔离体系结构引入重大更改。 本文概述了所做的更改。
+在 Visual Studio 2019，XAML 设计器支持两个不同的体系结构： 设计器隔离体系结构和较新的图面上隔离体系结构。 在.NET Framework 进程中支持不能在托管的目标运行时需要此体系结构转换。 第三方可扩展性模型迁移到图面上隔离体系结构引入重大更改。 本文概述了这些更改可在 Visual Studio 2019 16.2 预览通道中。
 
 **设计器隔离**由.NET Framework 为目标的项目的 WPF 设计器，并支持 *。 design.dll*扩展。 在外部进程中加载用户代码、 控件库和第三方扩展 (*XDesProc.exe*) 以及实际的设计器代码和设计器面板。
 
@@ -47,7 +47,7 @@ ms.locfileid: "67784474"
 
 图面上隔离可扩展性模型不允许扩展依赖于实际控件库，因此，扩展不能从控件库引用类型。 例如， *MyLibrary.designtools.dll*不应依赖于*MyLibrary.dll*。
 
-注册通过属性表的类型的元数据时，此类依赖项是最常见。 通过直接引用控件库的扩展插件代码类型[typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator)在 Visual Basic 中) 中新的 Api 使用基于字符串的类型名称将替换：
+注册通过属性表的类型的元数据时，此类依赖项是最常见。 通过直接引用控件库的扩展插件代码类型[typeof](/dotnet/csharp/language-reference/keywords/typeof)或[GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator)中新的 Api 使用基于字符串的类型名称将替换：
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 功能提供程序将在扩展程序集中实现，并在 Visual Studio 进程中加载。 `FeatureAttribute` 将继续引用直接使用的功能提供程序类型[typeof](/dotnet/csharp/language-reference/keywords/typeof)。
 
+目前，支持以下功能提供程序：
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 功能提供程序现在已在实际运行时代码和控件库不同的进程中加载的因为它们将不再能够直接访问运行时对象。 相反，必须将所有此类交互转换为使用相应的基于模型的 Api。 模型 API 进行了更新，以及访问<xref:System.Type>或<xref:System.Object>是不再可用或已替换`TypeIdentifier`和`TypeDefinition`。
 
 `TypeIdentifier` 表示没有标识一种类型的程序集名称的字符串。 一个`TypeIdenfifier`可被解析为`TypeDefinition`来查询有关类型的其他信息。 `TypeDefinition` 不能在扩展代码中缓存实例。
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+更多代码示例位于[xaml 设计器扩展性示例](https://github.com/microsoft/xaml-designer-extensibility-samples)存储库。
 
 ## <a name="limited-support-for-designdll-extensions"></a>对有限的支持。 design.dll 扩展
 
