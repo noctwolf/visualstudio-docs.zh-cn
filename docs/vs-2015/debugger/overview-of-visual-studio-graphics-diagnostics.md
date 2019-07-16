@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186540"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Direct3D 应用中的呈现问题和性能问题。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。
+Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Direct3D 应用中的呈现问题和性能问题  。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。
 
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>使用图形诊断调试呈现问题
  对于图形丰富的应用程序，调试其中的呈现问题并不如启动调试器并逐句通过某些代码的方式直接。 在每个帧中，将生成数十万个唯一像素，每个像素都是根据一组复杂的状态、数据、参数和代码生成的，其中，可能只有少量像素会展示出你尝试诊断的问题。 生成每个像素的代码在并行处理数百个像素的专用硬件上执行，这使问题更加复杂。 传统调试工具和技术难以在包含少量线程的代码中使用，在处理大量数据时较为低效。
@@ -46,7 +46,7 @@ Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Dir
 ### <a name="the-graphics-toolbar-visual-studio"></a>图形工具栏 (Visual Studio)
  通过“图形”工具栏，可以快速访问图形诊断命令。
 
- 选择“启动诊断”按钮可在图形诊断下运行应用。 在图形诊断下运行应用时，“捕获下一个呈现的帧”按钮处于启用状态。
+ 选择“启动诊断”按钮可在图形诊断下运行应用  。 在图形诊断下运行应用时，“捕获下一个呈现的帧”按钮处于启用状态  。
 
 ### <a name="diagnostics-capture-interface"></a>诊断捕获接口
  当你在图形诊断下运行应用时，Visual Studio 将显示一个诊断会话接口，可用于捕获帧，并且它还会显示当前的 CPU 和 GPU 负载。 显示 CPU 和 GPU 负载能帮助你识别可能因其性能特征（而不是呈现错误）而想要捕获的帧。
@@ -65,7 +65,7 @@ Visual Studio“图形诊断”是一套工具，用于记录、然后分析 Dir
 
 ##### <a name="to-open-the-directx-control-panel"></a>打开 DirectX 控制面板
 
-- 在菜单栏上，依次选择“调试”、“图形”、“DirectX 控制面板”。
+- 在菜单栏上，依次选择“调试”、“图形”、“DirectX 控制面板”    。
 
 ## <a name="graphics-analyzer"></a>图形分析器
  Visual Studio 图形分析器是一个专用接口，用于检查你已捕获的帧中的呈现和性能问题。 在图形分析器中，你将发现多种工具，可帮助你浏览和理解应用的呈现行为。 每个工具会公开一种不同的有关正在检查的帧的信息，这些工具旨在协同使用以直观缩小呈现问题的源范畴，从其在帧缓冲区中的外观开始。

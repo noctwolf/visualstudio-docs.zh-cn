@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153789"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>如何：为 CD 安装启用自动启动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "60061094"
   
 ### <a name="to-enable-autostart"></a>若要启用自动启动  
   
-1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择一个项目，然后在“项目”  菜单上单击“属性”  。  
   
-2. 单击“发布”选项卡。  
+2. 单击“发布”选项卡  。  
   
-3. 单击“选项”按钮。  
+3. 单击“选项”按钮  。  
   
      **发布选项**对话框随即出现。  
   
