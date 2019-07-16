@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188953"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ ms.locfileid: "58933898"
   
 |元素|描述|特性|  
 |-------------|-----------------|----------------|  
-|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|所需的产品文件的顶级元素。|None|  
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|所需的产品文件的顶级元素。|无|  
 |[\<Package> 元素](../deployment/package-element-bootstrapper.md)|必需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 中的其他产品的此产品安装或依赖于。|None|  
-|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出的依赖项检查过程中要执行本地计算机上安装。|None|  
-|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查，如中所述`InstallChecks`，表示要安装的包应检查失败。|None|  
-|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出可能情况下此安装过程中安装的包。|None|  
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 中的其他产品的此产品安装或依赖于。|无|  
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出的依赖项检查过程中要执行本地计算机上安装。|无|  
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查，如中所述`InstallChecks`，表示要安装的包应检查失败。|无|  
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出可能情况下此安装过程中安装的包。|无|  
 |[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必需的元素。 存储的本地化版本的产品名称和错误字符串。|None|  
   
 ## <a name="remarks"></a>备注  

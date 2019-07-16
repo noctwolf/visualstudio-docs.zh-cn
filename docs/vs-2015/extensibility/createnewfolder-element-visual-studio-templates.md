@@ -13,19 +13,19 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7401ed7ed097c6e20bf4cd0bbf30820bcb33b514
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184260"
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 确定是否检查要创建项目的目标目录不存在。 如果该目录存在，则为项目创建新目录。 该设置通常由所有通用项目类型用来确定是否在新目录中创建新项目的 `NewProjectRequiresNewFolder(VsTemplate)` 注册表标志 (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) 重写。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<CreateNewFolder>  
   
 ## <a name="syntax"></a>语法  

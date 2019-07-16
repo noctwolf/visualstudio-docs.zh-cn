@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 490ee064903a0e2d119da891681da719e237acec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178782"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>如何：直观显示集合关联（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60049396"
   
 2. 在类图中扩展类，以便显示属性和字段。  
   
-3. 在类中，右键单击该字段或属性，然后选择“显示为集合关联”。  
+3. 在类中，右键单击该字段或属性，然后选择“显示为集合关联”  。  
   
      此属性或字段将显示为链接到已收集类型的关联行。  
   

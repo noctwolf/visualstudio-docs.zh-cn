@@ -6,11 +6,11 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
 ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204022"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何：在后台使用 AsyncPackage 加载 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60091663"
   
 4. 如果异步初始化可执行的操作，应重写<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 删除**initialize （)** VSIX 模板提供的方法。 ( **Initialize （)** 中的方法**AsyncPackage**都密封的)。 可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法将异步服务添加到您的包。  
   
-    注意：若要调用**基。InitializeAsync()**，可以更改为你的源代码：  
+    注意：若要调用**基。InitializeAsync()** ，可以更改为你的源代码：  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  

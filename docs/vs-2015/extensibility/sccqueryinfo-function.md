@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199987"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_OK|查询已成功完成。|  
 |SCC_E_ACCESSFAILURE|出现与访问源代码管理系统、 网络或争用问题可能导致问题。 建议重试。|  

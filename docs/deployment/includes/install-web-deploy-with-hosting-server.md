@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: MT
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256610"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68143531"
 ---
 用于托管服务器的 Web 部署 3.6 提供额外的配置功能，可实现从 UI 创建发布设置文件。
 

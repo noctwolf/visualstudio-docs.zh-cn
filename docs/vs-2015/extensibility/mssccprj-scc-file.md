@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194213"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,9 +58,9 @@ ms.locfileid: "60117715"
   
  [第 7 行] `[TestApp.csproj]`  
   
- [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [第 8 行] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Line 9] `SCC_Project_Name = "$/TestApp"`  
+ [第 9 行] `SCC_Project_Name = "$/TestApp"`  
   
  第一行状态文件的用途，并可作为此类型的所有文件的签名。 此行应显示与所有 MSSCCPRJ 考虑到这完全相同。SCC 文件：  
   

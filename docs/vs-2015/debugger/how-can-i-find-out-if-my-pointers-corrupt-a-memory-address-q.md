@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 80947590215258521c3de5042bd981de7582fbda
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205477"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何查明指针是否损坏了内存地址？
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60102609"
   
 1. 在 0x00408000 处设置一个数据断点。 请参阅[设置数据更改断点（仅限本机 C++）](../debugger/using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus_only)。  
   
-2. 当命中断点时，使用“内存”窗口，以查看从 0x00408000 开始的内存内容。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。  
+2. 当命中断点时，使用“内存”窗口，以查看从 0x00408000 开始的内存内容  。 有关详细信息，请参阅[内存窗口](../debugger/memory-windows.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   

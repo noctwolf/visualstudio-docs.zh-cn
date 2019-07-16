@@ -11,13 +11,13 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203955"
 ---
-# <a name="inside-the-core-editor"></a>在核心编辑器
+# <a name="inside-the-core-editor"></a>核心编辑器内
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心编辑器是一组让你修改和查询文本信息的多个组件。 如果已使用传统的 API 自定义核心编辑器，可以继续使用这些自定义，这将通过编辑器适配器路由。 建议，但是，调整到新的编辑器 API 自定义设置。  
@@ -46,7 +46,7 @@ ms.locfileid: "60083356"
  [旧版 API 中的文本缓冲区事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  提供了一系列使用的文本缓冲区事件通知的接口。  
   
- [如何：文本缓冲区的事件的原有 API 注册](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [如何：使用旧 API 注册文本缓冲区事件](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  介绍如何向建议文本缓冲区的事件。  
   
  [使用文本管理器监视全局设置](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -65,7 +65,7 @@ ms.locfileid: "60083356"
  介绍了某种语言服务的控制代码修饰的实例化。  
   
 ## <a name="related-sections"></a>相关章节  
- [演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [演练：创建核心编辑器并注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  提供有关如何从托管代码启动核心编辑器的分步说明。  
   
  [下拉栏](../extensibility/drop-down-bar.md)  

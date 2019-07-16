@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 94a151a7adab5c8246cec38c2e62d76788beb6e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155438"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic“编辑并继续”中不支持的编辑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,11 +106,11 @@ ms.locfileid: "60076936"
 ### <a name="BKMK_CompilerOptionEdits"></a> 编译器选项编辑  
  当在中断模式下使用“编辑并继续”时，不能更改、添加或移除以下编译器选项：  
   
-- **Option Strict**  
+- Option Strict   
   
-- **Option Explicit**  
+- Option Explicit   
   
-- **Option Compare**  
+- Option Compare   
   
 ### <a name="BKMK_ConstantsEdits"></a> 常量编辑  
  当在“编辑并继续”模式下时，对常量的更改非常受限制。 具体而言，“编辑并继续”不支持以下更改：  

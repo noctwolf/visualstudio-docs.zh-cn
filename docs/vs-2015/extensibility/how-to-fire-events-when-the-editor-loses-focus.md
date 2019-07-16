@@ -11,13 +11,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204196"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何：触发事件; 当编辑器失去焦点
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何：在编辑器失去焦点时触发事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有时有必要知道当编辑器失去焦点的窗口框架上。 例如，可能需要在代码窗口中提取代码后对其焦点不再位于编辑器中。 以下过程提供了为接收通知的编辑器失去焦点要遵循的步骤。  

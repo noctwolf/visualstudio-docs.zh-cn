@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2b82bd903fe594ca2f2b650833cd29bfb54efa85
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59000239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155643"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 
@@ -104,7 +104,7 @@ ms.locfileid: "59000239"
 
 2. 创建你想要用作将来项目的起始点的解决方案结构。
 
-3. 在“文件”  菜单上，单击“将模板导出为 VSIX” 。 **将模板导出为 VSIX 向导**随即打开。
+3. 在“文件”  菜单上，单击“将模板导出为 VSIX”  。 **将模板导出为 VSIX 向导**随即打开。
 
 4. 按照该向导中的说明，选择你想要包括在模板中的项目，提供模板的名称和说明，并指定输出位置。
 

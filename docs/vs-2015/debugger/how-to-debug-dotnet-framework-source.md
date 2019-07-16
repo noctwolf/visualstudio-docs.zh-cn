@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205445"
 ---
-# <a name="how-to-debug-net-framework-source"></a>如何：调试.NET Framework 源代码
+# <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 最新版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供的新功能[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]调试。 若要调试[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]源，您必须有权调试符号的代码。 此外需要启用单步执行[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]源。  
@@ -32,15 +32,15 @@ ms.locfileid: "60092105"
   
 ### <a name="to-enable-net-framework-source-debugging"></a>启用 .NET Framework 源代码调试  
   
-1. 在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 在 **“工具”** 菜单上，单击 **“选项”** 。  
   
 2. 在中**选项**对话框中，单击**调试**类别。  
   
 3. 在中**常规**框中，设置**启用.NET Framework**源代码单步执行。  
   
-    1. 如果您先前启用了“仅我的代码”，则会出现一个警告对话框，提示您“仅我的代码”现在已禁用。 单击 **“确定”**。  
+    1. 如果您先前启用了“仅我的代码”，则会出现一个警告对话框，提示您“仅我的代码”现在已禁用。 单击 **“确定”** 。  
   
-    2. 如果您没有设置符号缓存位置，则会出现另一个警告对话框，提示您默认符号缓存位置现在已设置。 单击 **“确定”**。  
+    2. 如果您没有设置符号缓存位置，则会出现另一个警告对话框，提示您默认符号缓存位置现在已设置。 单击 **“确定”** 。  
   
 4. 下**调试**类别中，单击**符号**。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "60092105"
   
      如果选择不立即下载符号，则这些符号将在您下次开始调试程序时自动下载。  
   
-7. 单击“确定”关闭“选项”对话框 。  
+7. 单击“确定”关闭“选项”对话框   。  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>使用“模块”窗口加载 Framework 符号  
   

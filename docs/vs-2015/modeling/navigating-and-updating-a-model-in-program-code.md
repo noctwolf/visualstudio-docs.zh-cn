@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 260d726ef9f6478292fe80c7fd90ffc4a807265d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158946"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>在程序代码中导航和更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ ms.locfileid: "60110799"
  `store.ElementDirectory.GetElement(elementId);`  
   
 ## <a name="metadata"></a> 访问类信息  
- 可以获取有关类、 关系和 DSL 定义的其他方面的信息。 例如：  
+ 可以获取有关类、 关系和 DSL 定义的其他方面的信息。 例如:  
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -165,7 +165,7 @@ ms.locfileid: "60110799"
 - ElementLink-所有关系都是 ElementLinks  
   
 ## <a name="transaction"></a> 执行在事务内的更改  
- 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction>。  
+ 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction> 。  
   
  管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：  
   
@@ -235,13 +235,13 @@ using (Transaction t =
   
  有三种方法可以在其中创建关系的实例。 这三种方法的每个具有相同的效果：  
   
-- 设置源角色扮演者的属性。 例如：  
+- 设置源角色扮演者的属性。 例如:  
   
   - `familyTree.People.Add(edward);`  
   
   - `edward.Parents.Add(henry);`  
   
-- 设置目标角色扮演者的属性。 例如：  
+- 设置目标角色扮演者的属性。 例如:  
   
   - `edward.familyTreeModel = familyTree;`  
   
@@ -251,7 +251,7 @@ using (Transaction t =
   
        此角色的重数为`0..*`，因此我们将添加到集合。  
   
-- 显式构造关系的实例。 例如：  
+- 显式构造关系的实例。 例如:  
   
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156828"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中导航调试会话（Xaml 和 C#）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,9 +48,9 @@ ms.locfileid: "60059872"
 ## <a name="BKMK_CreateTheApplication"></a> 创建示例应用
  调试与代码有关，因此示例应用仅使用 Windows 应用商店应用程序框架创建一个源文件，在该文件中可以查看调试会话导航的工作原理以及如何检查和更改程序状态。 将调用的所有代码都从主页的构造函数进行调用；不添加任何控件，并且不处理任何事件。
 
- **创建默认 C# Windows 应用商店应用。** 打开 Visual Studio。 在主页上，选择 **“新建项目”** 链接。 在“新建项目”对话框中，在 **“已安装”** 列表中选择 **“Visual C#”** ，然后选择 **“Windows 应用商店”**。 在项目模板列表中，选择 **“应用程序”**。 Visual Studio 随即创建一个新解决方案和项目，并显示 MainPage.xaml 设计器和 XAML 代码编辑器。
+ **创建默认 C# Windows 应用商店应用。** 打开 Visual Studio。 在主页上，选择 **“新建项目”** 链接。 在“新建项目”对话框中，在 **“已安装”** 列表中选择 **“Visual C#”** ，然后选择 **“Windows 应用商店”** 。 在项目模板列表中，选择 **“应用程序”** 。 Visual Studio 随即创建一个新解决方案和项目，并显示 MainPage.xaml 设计器和 XAML 代码编辑器。
 
- **打开 MainPage.xaml.cs 源文件。** 右键单击 XML 编辑器中的任何位置，然后选择 **“查看代码”**。 MainPage.xaml.cs 代码隐藏文件随即显示。 请注意，该文件中仅列出一个方法（即 `MainPage()` 构造函数）。
+ **打开 MainPage.xaml.cs 源文件。** 右键单击 XML 编辑器中的任何位置，然后选择 **“查看代码”** 。 MainPage.xaml.cs 代码隐藏文件随即显示。 请注意，该文件中仅列出一个方法（即 `MainPage()` 构造函数）。
 
  **将 MainPage 构造函数替换为示例代码。** 删除 MainPage() 方法。 单击以下链接：[调试器导航示例代码 (Xaml 和C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)，然后将复制中列出的代码C#部分到剪贴板。 (选择**回**在浏览器或帮助查看器以返回到本快速入门页。)在 Visual Studio 编辑器中，在 `partial class MainPage` 块中粘贴代码。 选择 Ctrl + s 以保存文件。
 
@@ -100,17 +100,17 @@ ms.locfileid: "60059872"
 
   将鼠标悬停在变量 `a`上方。 记下名称、值和数据类型。 将鼠标悬停在变量 `methodTrack`上方。 记下名称、值和数据类型。
 
-  **在“局部变量”窗口中检查变量值。** 在“新建项目” **“启动调试”** 菜单上指向 **“窗口”**，然后选择 **“局部变量”**。 （键盘：Alt+ 4)。
+  **在“局部变量”窗口中检查变量值。** 在“新建项目” **“启动调试”** 菜单上指向 **“窗口”** ，然后选择 **“局部变量”** 。 （键盘：Alt+ 4)。
 
   ![局部变量窗口](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 
   “局部变量”窗口是函数的参数和变量的树视图。 对象变量的属性是对象本身的子节点。 `this` 变量是每个对象方法中用于表示对象本身的隐藏参数。 在此例中，它表示 MainPage 类。 因为 `methodTrack` 是 MainPage 类的成员，所以其值和数据类型会在 `this`下方的行中列出。 展开 `this` 节点以查看 `methodTrack` 信息。
 
-  **添加为 methodTrack 变量监视。** `methodWatch` 变量在本快速入门全篇中用于显示示例中调用的方法。 要更加方便地查看变量的值，请将它添加到监视窗口中。 在“局部变量”窗口中右键单击变量名，然后选择 **“添加监视”**。
+  **添加为 methodTrack 变量监视。** `methodWatch` 变量在本快速入门全篇中用于显示示例中调用的方法。 要更加方便地查看变量的值，请将它添加到监视窗口中。 在“局部变量”窗口中右键单击变量名，然后选择 **“添加监视”** 。
 
   ![监视窗口](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")
 
-  可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如“局部变量”窗口和数据提示窗口中的值）。 还可以从代码编辑器将变量添加到监视窗口中。 选择要监视的变量，右键单击，然后选择 **“添加监视”**。
+  可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如“局部变量”窗口和数据提示窗口中的值）。 还可以从代码编辑器将变量添加到监视窗口中。 选择要监视的变量，右键单击，然后选择 **“添加监视”** 。
 
 ## <a name="BKMK_StepIntoOverOut"></a> 单步执行、逐过程执行和跳出执行方法
  与单步执行父方法调用的方法相反，逐过程执行方法会执行子方法，然后在父方法继续时在调用方法中挂起执行。 当你熟悉方法的工作方式，并且确定其执行不会影响正在调查的问题时，可以逐过程执行方法。
@@ -162,7 +162,7 @@ ms.locfileid: "60059872"
 
  **单步执行 Example3 方法。** 选择**单步执行**上**调试**菜单 (键盘：F11) 若要将移动到 Example3 方法的入口点。 继续单步执行该方法，直到迭代了 `for` 块的一次或多次循环。 请注意，单步执行所有 1000 次迭代需要较长时间。
 
- **设置条件断点。** 在代码窗口的左滚动条槽中，右键单击行 `x += i;` ，然后选择 **“条件”**。 选中 **“条件”** 复选框，然后在文本框中输入 `i == 500;` 。 选择 **“为 true”** 选项，然后选择 **“确定”**。 通过断点可以检查 `for` 循环的第 500 次迭代处的值。
+ **设置条件断点。** 在代码窗口的左滚动条槽中，右键单击行 `x += i;` ，然后选择 **“条件”** 。 选中 **“条件”** 复选框，然后在文本框中输入 `i == 500;` 。 选择 **“为 true”** 选项，然后选择 **“确定”** 。 通过断点可以检查 `for` 循环的第 500 次迭代处的值。
 
  ![断点条件对话框](../debugger/media/dbg-basics-breakpointcondition.png "DBG_Basics_BreakpointCondition")
 

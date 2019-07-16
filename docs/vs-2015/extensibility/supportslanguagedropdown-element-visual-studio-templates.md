@@ -14,19 +14,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53703d6178c81758650fdd00aada0a5952734caa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160489"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定 Web 项目模板是完全相同的多个语言，以及是否**语言**上启用选项**添加新项**对话框。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<SupportsLanguageDropDown>  
   
 ## <a name="syntax"></a>语法  
