@@ -1,5 +1,5 @@
 ---
-title: DEBUG_ADDRESS_UNION | Microsoft Docs
+title: DEBUG_ADDRESS_UNION |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b500bcb49e9072c3d31ea5ac3f77bda606c23b78
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179174"
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,37 +56,37 @@ public struct DEBUG_ADDRESS_UNION {
  中的值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举，指定如何解释并集。  
   
  addr.addrNative  
- [C + +]包含[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)结构，如果`dwKind`= ADDRESS_KIND_NATIVE。  
+ [C++仅]包含[NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md)结构，如果`dwKind`= ADDRESS_KIND_NATIVE。  
   
  addr.addrThisRel  
- [C + +]包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)结构，如果`dwKind`= ADDRESS_KIND_UNMANAGED_THIS_RELATIVE。  
+ [C++仅]包含[UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)结构，如果`dwKind`= ADDRESS_KIND_UNMANAGED_THIS_RELATIVE。  
   
  addr.addUPhysical  
- [C + +]包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)结构，如果`dwKind`= ADDRESS_KIND_UNMANAGED_PHYSICAL。  
+ [C++仅]包含[UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md)结构，如果`dwKind`= ADDRESS_KIND_UNMANAGED_PHYSICAL。  
   
  addr.addrMethod  
- [C + +]包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)结构，如果`dwKind`= ADDRESS_KIND_METHOD。  
+ [C++仅]包含[METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md)结构，如果`dwKind`= ADDRESS_KIND_METHOD。  
   
  addr.addrField  
- [C + +]包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)结构，如果`dwKind`= ADDRESS_KIND_FIELD。  
+ [C++仅]包含[METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md)结构，如果`dwKind`= ADDRESS_KIND_FIELD。  
   
  addr.addrLocal  
- [C + +]包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)结构，如果`dwKind`= ADDRESS_KIND_LOCAL。  
+ [C++仅]包含[METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md)结构，如果`dwKind`= ADDRESS_KIND_LOCAL。  
   
  addr.addrParam  
- [C + +]包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)结构，如果`dwKind`= ADDRESS_KIND_PARAM。  
+ [C++仅]包含[METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md)结构，如果`dwKind`= ADDRESS_KIND_PARAM。  
   
  addr.addrArrayElem  
- [C + +]包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)结构，如果`dwKind`= ADDRESS_KIND_ARRAYELEM。  
+ [C++仅]包含[METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md)结构，如果`dwKind`= ADDRESS_KIND_ARRAYELEM。  
   
  addr.addrRetVal  
- [C + +]包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)结构，如果`dwKind`= ADDRESS_KIND_RETVAL。  
+ [C++仅]包含[METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md)结构，如果`dwKind`= ADDRESS_KIND_RETVAL。  
   
  addr.unused  
- [C + +] 填充。  
+ [C++仅] 填充。  
   
- addr  
- [C + +]联合的名称。  
+ Addr  
+ [C++仅]联合的名称。  
   
  unionmember  
  [C#仅]此值需要封送到适当的结构类型基于`dwKind`。 有关之间的关联，请参见备注`dwKind`和解释的并集。  

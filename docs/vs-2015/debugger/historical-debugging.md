@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192182"
 ---
 # <a name="historical-debugging"></a>历史调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ private static int AddInt(int add)
   
 2. 在 `Console.WriteLine(resultInt);` 行上设置断点。  
   
-3. 开始调试。 代码执行到断点处。 在“局部变量”窗口中，可以看到 `resultInt` 的值是 44。   
+3. 开始调试。 代码执行到断点处。 在“局部变量”窗口中，可以看到 `resultInt` 的值是 44  。  
   
 4. 打开**诊断工具**窗口 (**调试 / 显示诊断工具**)。 代码窗口应如下所示：  
   
@@ -82,7 +82,7 @@ private static int AddInt(int add)
   
     ![历史调试模式中的代码窗口](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6. 现在，可以单步执行 `AddAll()` 方法（按 **F11** 或导航条中的“单步执行”按钮）。 单步前进（按 **F10** 或导航条中的“转到下一个调用”）。 粉红线现在位于 `j = AddInt(j);` 行。 在这种情况下，按 **F10** 不会单步执行到下一行代码， 而是会单步执行到下一个函数调用。 历史调试在调用之间移动，并跳过不包含函数调用的代码行。   
+6. 现在，可以单步执行 `AddAll()` 方法（按 **F11** 或导航条中的“单步执行”按钮）  。 单步前进（按 **F10** 或导航条中的“转到下一个调用”）  。 粉红线现在位于 `j = AddInt(j);` 行。 在这种情况下，按 **F10** 不会单步执行到下一行代码， 而是会单步执行到下一个函数调用。 历史调试在调用之间移动，并跳过不包含函数调用的代码行。  
   
 7. 现在单步执行到 `AddInt()` 方法。 应该立即看到此代码中的 Bug。  
   

@@ -14,19 +14,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 825ec785a83cae0aaa8a31ae1375e956228b634e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205514"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定一个值，用于排列在同一类别中的其他模板之间的模板中显示该值**新的项目**或**添加新项**对话框。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<SortOrder>  
   
 ## <a name="syntax"></a>语法  

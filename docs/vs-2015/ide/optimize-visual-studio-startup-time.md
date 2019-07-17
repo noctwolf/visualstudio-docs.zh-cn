@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203777"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>优化 Visual Studio 启动时间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ ms.locfileid: "58355365"
 
 ![管理 Visual Studio 性能 - 弹出窗口](../ide/media/vside-perfdialog-popup.PNG "管理 Visual Studio 性能 - 弹出窗口")
 
-**管理 Visual Studio 性能**对话框有两个类别：**扩展**和**工具窗口**。
+**管理 Visual Studio 性能**对话框具有两个类别：**扩展**并**工具 Windows**。
 
 ### <a name="control-extensions"></a>控制扩展
-如果某个扩展使 Visual Studio 的启动变慢，那么选择它的一个扩展类型时，此扩展将显示在**管理 Visual Studio 性能**对话框中。 如果对启动时间的影响（在“影响”部分下面列出）很高，令人无法接受，则可以选择“禁用”按钮，以便在启动时始终禁用此扩展。 可以使用扩展管理器或“管理 Visual Studio 性能”对话框重新启用扩展，以用于以后的会话。
+如果某个扩展使 Visual Studio 的启动变慢，那么选择它的一个扩展类型时，此扩展将显示在**管理 Visual Studio 性能**对话框中。 如果对启动时间的影响（在“影响”  部分下面列出）很高，令人无法接受，则可以选择“禁用”按钮，以便在启动时始终禁用此扩展。  可以使用扩展管理器或“管理 Visual Studio 性能”对话框重新启用扩展，以用于以后的会话。
 
 ![管理 Visual Studio 性能 - 扩展](../ide/media/vside-perfdialog-extensions.PNG "管理 Visual Studio 性能 - 扩展")
 
@@ -43,9 +43,9 @@ ms.locfileid: "58355365"
 ### <a name="control-tool-windows"></a>控制工具窗口
 如果工具窗口使 Visual Studio 启动变慢，可以选择保留其默认行为（对启动速度没有任何帮助），或者选择以下两种行为之一来替代其默认行为：
 
-- **启动时不显示窗口：** 如果选择此选项，则打开 Visual Studio 时指定的工具窗口将始终关闭，即使它在上一个会话中为打开状态。 可以从菜单打开工具窗口。
-- **启动时自动隐藏窗口：** 如果工具窗口在上一个会话中保留打开状态，那么选择此选项将在启动时折叠工具窗口组，以避免初始化工具窗口。 如果你经常使用工具窗口，那么这是一个不错的选择。因为工具窗口仍然可用，但不会再对 Visual Studio 启动时间产生负面影响。
+- **启动时不显示窗口：** 如果选择此选项，指定的工具窗口将始终关闭时打开 Visual Studio 中，即使在上一个会话中保留打开。 可以从菜单打开工具窗口。
+- **启动时自动隐藏窗口：** 如果工具窗口保留在上一个会话中打开，则选择此选项将折叠在启动时的工具窗口组，以避免初始化工具窗口。 如果你经常使用工具窗口，那么这是一个不错的选择。因为工具窗口仍然可用，但不会再对 Visual Studio 启动时间产生负面影响。
 
 ![管理 Visual Studio 性能 - 工具窗口](../ide/media/vside-perfdialog-toolwindows.PNG "管理 Visual Studio 性能 - 工具窗口")
 
-如果你以后改变主意，可以在**管理 Visual Studio 性能**对话框中还原任何选项。 若要打开“管理 Visual Studio 性能”对话框，请在菜单栏上选择“帮助”->“管理 Visual Studio 性能”。
+如果你以后改变主意，可以在**管理 Visual Studio 性能**对话框中还原任何选项。 若要打开“管理 Visual Studio 性能”  对话框，请在菜单栏上选择“帮助”  ->“管理 Visual Studio 性能”  。

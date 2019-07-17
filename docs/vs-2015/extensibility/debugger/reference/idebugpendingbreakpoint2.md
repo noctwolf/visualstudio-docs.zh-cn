@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1238fcbce22db3f3bc3e32019aac886c79d0c114
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201026"
 ---
 # <a name="idebugpendingbreakpoint2"></a>IDebugPendingBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ IDebugPendingBreakpoint2 : IUnknown
 ## <a name="remarks"></a>备注  
  `IDebugPendingBreakpoint2` 可以认为的将断点绑定到可以应用于一个或多个程序的代码所需的所有必要信息的提供程序。  
   
- 挂起断点可能会生成多个绑定的断点。 例如，c + + 样式模板中的断点可能会生成有关该模板的每个唯一实例绑定的断点。  
+ 挂起断点可能会生成多个绑定的断点。 例如中的断点C++的样式模板可能会生成有关该模板的每个唯一实例绑定的断点。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  

@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fe2930e0947bf0fa69408dc81c19d058d6cdd870
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164265"
 ---
 # <a name="exe"></a>Exe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Exe 是唯一的符号不带词法或类父级，因为它表示全局范围的.
 ## <a name="properties"></a>属性  
  下表显示适用于此符号类型的属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|此可执行文件的年龄。|  
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` 此可执行文件。|  

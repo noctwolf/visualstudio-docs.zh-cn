@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 25462a99bd3e773f03af3918a9e25d11ed006c1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185219"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>错误：SQL 可以&#39;t 不到 Ssdebugps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ SSDEBUGPS.dll 为 SQL Server Debugging Host 组件。
   
 1. 将该文件复制到 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 计算机上具有相同名称和路径的目录中。  
   
-2. 通过打开“命令提示符”并运行下面的命令来注册该文件：  
+2. 通过打开“命令提示符”并运行下面的命令来注册该文件  ：  
   
     ```  
     regsvr32 ssdebugps.dll  

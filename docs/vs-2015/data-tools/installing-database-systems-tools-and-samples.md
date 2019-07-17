@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196071"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>安装数据库系统、 工具和示例
+# <a name="installing-database-systems-tools-and-samples"></a>安装数据库系统、工具和示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 本身不包括任何数据库系统之外，它在内部使用。 若要开发 Visual Studio 中的数据连接应用程序，您通常在本地开发计算机上安装数据库系统，然后部署应用程序和数据库到生产环境时，他们就可以。 对于数据库系统可从.NET 应用程序，可以在 Visual Studio 数据工具窗口中可见，它必须具有 ADO.NET 数据提供程序。 如果你打算在.NET 应用程序中使用实体数据模型提供程序必须支持实体框架。     通过 NuGet 包管理器或通过 Visual Studio 库提供多个提供程序。  

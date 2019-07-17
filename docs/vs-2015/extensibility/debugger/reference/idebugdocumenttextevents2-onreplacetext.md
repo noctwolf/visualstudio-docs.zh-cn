@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onReplaceText | Microsoft Docs
+title: IDebugDocumentTextEvents2::onReplaceText |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a24b5198528b11c688043b9ddc353eb14c1f3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149315"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ int onReplaceText( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pos`  
  [in]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)指示已替换文本。  
   

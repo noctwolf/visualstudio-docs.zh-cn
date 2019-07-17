@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203212"
 ---
 # <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>错误：Web 服务器已被锁定，并阻止 DEBUG 谓词
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60047197"
   
      C:\WINNT\System32\Inetsrv\urlscan  
   
-2. 创建此文件的副本并将它命名为 Urlscan.old。  
+2. 创建此文件的副本并将它命名为 Urlscan.old  。  
   
 3. 使用“记事本”或选定的文本编辑器打开 Urlscan.ini 文件的原始副本。  
   

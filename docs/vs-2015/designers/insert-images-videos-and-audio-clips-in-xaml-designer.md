@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: db6225f8bf8055edb0fb5b6f3cdea98de79b4bcc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159404"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>在 XAML 设计器中插入图像、视频和音频剪辑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "54774135"
   
  ![大小合适的图像](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")  
   
- 若要使用图像、视频或音频剪辑，请将其添加到项目，然后将其从“资产”  面板拖到“美工板” 。  
+ 若要使用图像、视频或音频剪辑，请将其添加到项目，然后将其从“资产”  面板拖到“美工板”  。  
   
  这些视频可帮助你将图像、视频和音频剪辑插入应用。  
   

@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: acb7922658a5dd7db0839051a42a119733c8b1d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184208"
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ ms.locfileid: "60118053"
   
 1. 将你的 XAML 文件，和任何支持的文本文件或标记文件，为复制 **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** 文件夹。  
   
-2. 如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后将其粘贴_Visual Studio 安装文件夹_**\Common7\IDE\PrivateAssemblies\\**。  
+2. 如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后将其粘贴_Visual Studio 安装文件夹_ **\Common7\IDE\PrivateAssemblies\\** 。  
   
 3. 在 Visual Studio 命令提示符下键入**devenv /rootsuffix Exp**打开 Visual Studio 的实验实例。  
   
 4. 在实验实例中，转到**工具 / 选项 / 环境 / 启动**页上，并选择从 XAML 文件**自定义起始页**下拉列表。  
   
-5. 在“视图”  菜单上，单击“起始页” 。  
+5. 在“视图”  菜单上，单击“起始页”  。  
   
      应显示你的自定义起始页。 如果你想要更改的任何文件，必须关闭实验实例，进行更改、 复制和粘贴已更改的文件，以及然后重新打开实验实例，以查看所做的更改。  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823461"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891095"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "67823461"
   
   - 在“所有链接”  下，找到 .iTrace 文件。 打开此文件。  
 
-        \- or -  
+    \- 或 -  
 
   - 在“重现步骤”  下，选择“IntelliTrace”  链接。  
   
@@ -161,7 +161,7 @@ ms.locfileid: "67823461"
   
 1. 从源复制 SharePoint 相关 ID。  
   
-    例如:  
+    例如：  
   
     ![IntelliTrace &#45; SharePoint 错误&#45;相关 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   

@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256271"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149218"
 ---
 1. 在中**解决方案资源管理器**，右键单击项目节点并选择**发布**(Web 窗体**发布 Web 应用**)。
 

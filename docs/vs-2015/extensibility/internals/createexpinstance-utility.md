@@ -15,11 +15,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7d778f0f31a7651412915a898bff9e4bdfe6c55f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196977"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "58935080"
 CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix  
 ```  
   
-#### <a name="parameters"></a>参数  
- /Create  
+#### <a name="parameters"></a>Parameters  
+ / 创建  
  创建实验实例。  
   
- /Reset  
+ / 重置  
  删除实验实例，然后创建一个新。  
   
  /Clean  

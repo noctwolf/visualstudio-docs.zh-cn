@@ -13,19 +13,19 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209d8066d232c63364a045aee6b8dd2153033666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186441"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
   
 ## <a name="syntax"></a>语法  
   
@@ -62,7 +62,7 @@ ms.locfileid: "58931173"
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定是否在创建时，Visual Studio 项目系统将生成项目或项的默认名称。|  
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定是否可以为临时项目创建项目。|  
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定是否**浏览**按钮现已推出**新项目**对话框，以便用户可以轻松地修改保存新项目的默认目录。|  
-|[Hidden](../extensibility/hidden-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定模板是否出现在**新的项目**或**添加新项**对话框。|  
+|[隐藏](../extensibility/hidden-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定模板是否出现在**新的项目**或**添加新项**对话框。|  
 |[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|可选元素。<br /><br /> 指定将显示在此模板的父类别数**新的项目**对话框。|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|可选元素。|  
 |[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定是否**位置**文本框中**新项目**对话框的已启用、 禁用或隐藏项目模板。|  

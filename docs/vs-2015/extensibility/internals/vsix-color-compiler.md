@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147946"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |名称|[必需]类别的名称|  
 |GUID|[必需]该类别的 GUID （必须匹配 GUID 格式）|  
   
- **Color**  
+ **颜色**  
   
  \<颜色 > 元素定义的组件或 UI 的状态的颜色。 一种颜色的首选命名方案是 [UI 类型] [State]。 不要使用"颜色"一词，因为它是冗余。 一种颜色应清楚地指示元素类型和的情况下，或"状态，"将为其应用颜色。 一种颜色不能为空，并且必须包含一个或两个\<背景 > 和\<前台 > 元素。 颜色元素的定义如下：  
   
@@ -96,7 +96,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|名称|[必需]颜色的名称|  
+|name|[必需]颜色的名称|  
   
  **背景和/或前台**  
   
@@ -110,7 +110,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|类型|[必需]颜色的类型。 它可以是以下值之一：<br /><br /> *CT_INVALID:* 颜色是无效或未设置。<br /><br /> *CT_RAW:* 原始的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 不要使用。<br /><br /> *CT_SYSCOLOR:* 一种从 SysColor Windows 系统颜色。<br /><br /> *CT_VSCOLOR:*__VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:* 自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:* 不要使用。<br /><br /> *CT_TRACK_BACKGROUND:* 不要使用。|  
+|类型|[必需]颜色的类型。 它可以是以下值之一：<br /><br /> *CT_INVALID:* 颜色是无效或未设置。<br /><br /> *CT_RAW:* 原始的 ARGB 值。<br /><br /> *CT_COLORINDEX:* 不要使用。<br /><br /> *CT_SYSCOLOR:* 一种从 SysColor Windows 系统颜色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:* 自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:* 不要使用。<br /><br /> *CT_TRACK_BACKGROUND:* 不要使用。|  
 |Source|[必需]以十六进制表示颜色的值|  
   
  类型属性中的架构支持由 __VSCOLORTYPE 枚举支持的所有值。 但是，我们建议使用仅限 CT_RAW 和 CT_SYSCOLOR。  
@@ -141,7 +141,7 @@ Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Vi
 ||||  
 |-|-|-|  
 |**交换机名称**|**备注**|**必需或可选**|  
-|未命名 （.xml 文件）|这是第一个未命名的参数，是要转换的 XML 文件的路径。|必需|  
+|未命名 （.xml 文件）|这是第一个未命名的参数，是要转换的 XML 文件的路径。|必填|  
 |未命名 （.pkgdef 文件）|这是第二个未命名的参数，生成的.pkgdef 文件的输出路径。<br /><br /> 默认：\<XML 文件名 >.pkgdef|Optional|  
 |/noLogo|设置此标志会停止打印的产品和版权信息。|Optional|  
 |/?|打印帮助信息。|Optional|  

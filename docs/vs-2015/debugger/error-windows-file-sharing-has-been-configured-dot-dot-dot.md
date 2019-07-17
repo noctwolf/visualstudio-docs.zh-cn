@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157498"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>错误：已配置 Windows 文件共享...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60040852"
   
 1. 使用其他帐户名登录到本地计算机（要从其进行调试的计算机）上。  
   
-     - 或 -  
+     — 或 —  
   
      . 中断与远程计算机的连接，然后重新配置文件共享，以便使用您的帐户名称连接至其他计算机：  
   

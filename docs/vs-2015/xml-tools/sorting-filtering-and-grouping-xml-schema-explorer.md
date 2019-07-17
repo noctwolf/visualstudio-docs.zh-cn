@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150679"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、筛选和分组（XML 架构资源管理器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60099437"
   
 - **显示架构文件**。  
   
-- **显示排序器 （序列/选项/全部）**。  
+- **显示排序器 （序列/选项/全部）** 。  
   
 ## <a name="sorting-options"></a>排序选项  
  下列排序选项可用。 默认值是**按类型排序**。 “排序方式”选项不适用于文件和命名空间。  

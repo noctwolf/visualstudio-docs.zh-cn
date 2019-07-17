@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d5a992751e31f21a7875091b4c8b1be9bd0bd0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197062"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>错误：对函数求值&#39;函数&#39;超时，需要以不安全的方式中止
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ ms.locfileid: "58936134"
  
 ### <a name="solution-3-disable-all-implicit-evaluation"></a>解决方案 3:禁用所有隐式计算
  
-如果先前的解决方案未解决此问题，请转到*工具* / *选项*，并取消选中调试 / 常规 / 启用属性求值和其他隐式函数调用设置。 这将会禁用大多数隐式函数求值，应该会解决此问题。
+如果先前的解决方案未解决此问题，请转到*工具* / *选项*，并取消选中调试   / 常规   / 启用属性求值和其他隐式函数调用设置  。 这将会禁用大多数隐式函数求值，应该会解决此问题。

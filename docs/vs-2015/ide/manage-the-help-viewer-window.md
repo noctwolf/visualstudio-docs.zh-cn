@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8931b37805e1f24dfaf7fad35a70434da3ed9ebf
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186081"
 ---
 # <a name="manage-the-help-viewer-window"></a>管理帮助查看器窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54833907"
 ## <a name="docking-tabs"></a>停靠选项卡  
  Help Viewer 支持标准停靠功能。 默认情况下，Help Viewer 中的所有选项卡都处于停靠状态，不过你可以移动它们、调整其大小、将它们停靠在其他位置以及使它们“浮动”以便它们显示为独立的子窗口。  
   
- 若要将 Help Viewer 窗口还原为默认布局，请打开“查看器选项”对话框，然后选择“重置”按钮。  
+ 若要将 Help Viewer 窗口还原为默认布局，请打开“查看器选项”  对话框，然后选择“重置”  按钮。  
   
 ## <a name="opening-a-topic-in-a-new-tab"></a>在新选项卡中打开主题  
  选择本主题中任何导航选项卡上，然后选择 Ctrl + Enter 键。  

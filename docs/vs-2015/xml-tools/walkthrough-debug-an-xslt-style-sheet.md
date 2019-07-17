@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158635"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>演练：调试 XSLT 样式表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60085098"
   
     该样式表将在“XML 编辑器”中打开。  
   
-3. 单击浏览按钮 (**...**) 上**输入**字段的文档属性窗口。  
+3. 单击浏览按钮 ( **...** ) 上**输入**字段的文档属性窗口。  
   
 4. 找到 books.xml 文件并单击**打开**。  
   
@@ -80,19 +80,19 @@ ms.locfileid: "60085098"
   
 #### <a name="to-step-through-the-code"></a>要逐行执行代码，请执行下列操作：  
   
-1. 按 F5 继续。  
+1. 按 F5  继续。  
   
      因为第一个 book 节点满足 `xsl:if` 条件，所以，该 book 节点将添加到“XSL 输出”窗口。 调试器继续执行，直到它再次位于样式表中的 `xsl:if` 元素上。 调试器此时位于 books.xml 文件中的第二个 book 节点上。  
   
      在 Watch1 窗口中，`self::node()` 值变为第二个 book 节点。 通过检查 price 元素的值，可以确定价格高于平均值，所以，`xsl:if` 条件应失败。  
   
-2. 按 F5 继续。  
+2. 按 F5  继续。  
   
      因为第二个 book 节点未满足 `xsl:if` 条件，所以不会将此 book 节点添加到“XSL 输出”窗口。 调试器继续执行，直到它再次位于样式表中的 `xsl:if` 元素上。 调试器此时位于 books.xml 文件中的第三个 `book` 节点上。  
   
      在 Watch1 窗口中，`self::node()` 值变为第三个 book 节点。 通过检查 `price` 元素的值，您可以确定此价格低于平均价格，因此 `xsl:if` 条件应成立。  
   
-3. 按 F5 继续。  
+3. 按 F5  继续。  
   
      因为满足 `xsl:if` 条件，所以，第三个 book 节点将添加到“XSL 输出”窗口。 XML 文档中的所有 book 节点均已处理，调试程序停止。  
   

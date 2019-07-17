@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f4b2b78f7187b7a49b78312a1105a2af884fda3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186639"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>从命令行分析独立应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "54752183"
 |**添加层交互数据：** 可以添加有关应用程序对 Microsoft [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 数据库进行的同步 ADO.NET 调用的性能数据。 若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
 |**尝试一下：** 使用分布过程以通过采样或检测方法分析示例客户端应用程序。|-   [演练：使用采样进行命令行分析](../profiling/walkthrough-command-line-profiling-using-sampling.md)<br />-   [演练：使用检测进行命令行分析](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)|  
   
-## <a name="related-tasks"></a>相关任务  
+## <a name="related-tasks"></a>Related Tasks  
   
 |任务|相关内容|  
 |----------|---------------------|  

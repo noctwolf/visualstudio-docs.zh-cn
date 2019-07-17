@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 41028caa5ef792941f82251cac1d6e5203464240
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159585"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>“字体”对话框（Microsoft Spy++ 帮助）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用此对话框配置 [Spy++ 视图](../debugger/spy-increment-views.md)窗口中使用的字符字体。 若要显示此对话框，请展开“视图”菜单并选择“字体”。  
+使用此对话框配置 [Spy++ 视图](../debugger/spy-increment-views.md)窗口中使用的字符字体。 若要显示此对话框，请展开“视图”  菜单并选择“字体”  。  
   
  以下设置将可用：  
   

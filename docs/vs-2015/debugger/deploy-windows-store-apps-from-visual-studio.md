@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177487"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>从 Visual Studio 部署 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "60116389"
 
 - 如果目标是远程设备，Visual Studio 会将所需的文件复制到远程计算机并在该设备上注册应用。
 
-  当使用调试您的应用程序从 Visual Studio 时，部署是自动**启动调试**选项 (键盘：F5) 或**启动但不调试**选项 (键盘：CTRL + F5）。 你也可以手动部署应用。 手动部署在以下情况中非常有用： 
+  当使用调试您的应用程序从 Visual Studio 时，部署是自动**启动调试**选项 (键盘：F5) 或**启动但不调试**选项 (键盘：CTRL + F5）。 你也可以手动部署应用。 手动部署在以下情况中非常有用：
 
-- 在本地或远程计算机上进行特别测试。 
+- 在本地或远程计算机上进行特别测试。
 
-- 要部署的应用将启动另一个要调试的应用。 
+- 要部署的应用将启动另一个要调试的应用。
 
 - 部署由另一个应用或方法启动时才进行调试的应用。
 
@@ -54,7 +54,7 @@ ms.locfileid: "60116389"
 
 1. 如果你要部署到远程设备，请在应用的启动项目的属性项目页中指定设备的名称或 IP 地址。 （执行此操作的步骤在本主题靠后的位置列出)。
 
-2. 在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。 
+2. 在调试器的 Visual Studio 工具栏上，从**开始调试**按钮旁的下拉列表中选择部署目标。
 
      ![本地计算机上运行](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
@@ -110,13 +110,13 @@ ms.locfileid: "60116389"
 
 - 在 C# 和 VB 调试属性页上，清除 **“允许网络环回”** 复选框。
 
-- 在 JavaScript 和调试属性页上，将 **“允许网络环回”** 值设置为 **“否”**。
+- 在 JavaScript 和调试属性页上，将 **“允许网络环回”** 值设置为 **“否”** 。
 
   **不启动，但在启动时调试我的代码 (C#和 VB) / 启动应用程序 (JavaScript 和C++)** 配置为自动启动调试会话时启动应用程序的部署：
 
 - 在 C# 和 VB 调试属性页上，选中 **“不启动，但在启动时调试代码”** 复选框。
 
-- 在 JavaScript 和调试属性页上，将 **“启动应用程序”** 值设置为 **“是”**。
+- 在 JavaScript 和调试属性页上，将 **“启动应用程序”** 值设置为 **“是”** 。
 
 ## <a name="see-also"></a>请参阅
  [从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)

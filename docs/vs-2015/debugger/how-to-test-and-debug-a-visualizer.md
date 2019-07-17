@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176494"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：测试和调试可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60044091"
   
  测试可视化工具的一种方法是将它安装在 Visual Studio 中并从调试器窗口进行调用。 （请参阅[如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)。）如果采用这种方法，则需要使用另一个 Visual Studio 实例附加和调试正在第一个调试器实例中运行的可视化工具。  
   
- 一种更简单的调试可视化工具的方法，是从测试驱动程序运行可视化工具。 可视化工具 API 使这类驱动程序（称为“可视化工具开发宿主”）的创建更为容易。  
+ 一种更简单的调试可视化工具的方法，是从测试驱动程序运行可视化工具。 可视化工具 API 使这类驱动程序（称为“可视化工具开发宿主”）的创建更为容易  。  
   
 ### <a name="to-create-a-visualizer-development-host"></a>创建可视化工具开发宿主  
   

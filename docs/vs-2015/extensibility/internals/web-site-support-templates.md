@@ -11,11 +11,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200963"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "60044367"
   
      新的 Web 服务的 HTML 页。 Language 特性指定源代码语言和 CodeBehind 属性指定包含与此服务关联的代码隐藏代码的依赖文件。  
   
-- 服务。 *extension*  
+- 服务。 *扩展*  
   
      实现服务类的依赖文件。 代码隐藏语言决定*扩展*此文件。  
   
@@ -115,7 +115,7 @@ ms.locfileid: "60044367"
 ### <a name="new-class"></a>新的类  
  此模板创建新的源文件的空类定义以响应**添加新的类**命令。  
   
-- 类。 *extension*  
+- 类。 *扩展*  
   
      实现了空的类的源文件。 代码隐藏语言决定*扩展*此文件。  
   
@@ -149,7 +149,7 @@ ms.locfileid: "60044367"
   
      Web 页面的起始内容。 此 Web 页面有一个关联的代码隐藏依赖文件。  
   
-- 代码隐藏文件。 *extension*  
+- 代码隐藏文件。 *扩展*  
   
      实现 web 窗体类的依赖文件。 代码隐藏语言决定*扩展*此文件。  
   

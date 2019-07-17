@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177226"
 ---
 # <a name="using-fonts-and-colors"></a>使用字体和颜色
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58931823"
   
  这种方法需要实现的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>接口及相关的接口。  
   
- [如何：访问内置的字体和配色方案](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [如何：访问内置字体和配色方案](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  讨论如何定义和使用内置的字体和颜色，注册某个类别并启动系统提供的字体和颜色的使用。  
   
 ## <a name="reference"></a>参考  

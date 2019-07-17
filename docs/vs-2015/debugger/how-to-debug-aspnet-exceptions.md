@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205429"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：调试 ASP.NET 异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "60083707"
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>启用 ASP.NET 异常调试和“仅我的代码”  
   
-1. 在“调试”菜单上，单击“异常”。  
+1. 在“调试”菜单上，单击“异常”   。  
   
-     随即会出现“异常”对话框。  
+     随即会出现“异常”对话框  。  
   
-2. 在“公共语言运行时异常”行上，选择“引发”或“用户未处理的异常”。  
+2. 在“公共语言运行时异常”行上，选择“引发”或“用户未处理的异常”    。  
   
-     若要使用“用户未处理的异常”设置，必须启用“仅我的代码”。  
+     若要使用“用户未处理的异常”设置，必须启用“仅我的代码”   。  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>采用 ASP.NET 异常处理的最佳做法  
   

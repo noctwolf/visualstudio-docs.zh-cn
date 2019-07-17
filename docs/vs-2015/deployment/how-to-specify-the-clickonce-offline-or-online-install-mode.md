@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d4111ca5aee4a405a4a797dbfee14a3d4b50435f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149747"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>如何：指定 ClickOnce 脱机或联机安装模式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "60054246"
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>若要使 ClickOnce 应用程序可联机仅  
   
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。  
   
-2. 单击“发布”选项卡。  
+2. 单击“发布”选项卡  。  
   
 3. 在中**安装模式和设置**区域中，单击**应用程序仅可在线**选项按钮。  
   
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>若要使 ClickOnce 应用程序可在联机或脱机  
   
-1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择了项目的情况下，在“项目”  菜单上单击“属性”  。  
   
-2. 单击“发布”选项卡。  
+2. 单击“发布”选项卡  。  
   
 3. 在中**安装模式和设置**区域中，单击**应用程序也可以脱机使用**选项按钮。  
   

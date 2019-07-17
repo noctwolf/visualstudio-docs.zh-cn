@@ -12,18 +12,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427a84b3dcda0471f5ec9d71883a5a8e859bb92d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176704"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 类 - 内部成员
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 本主题介绍的内部成员的<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>类，可帮助您实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.TaskScheduler>参考主题。  
   
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   
@@ -40,7 +40,7 @@ ms.locfileid: "58933850"
   
 ### <a name="methods"></a>方法  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|检索所有计划任务的数组。|  
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|检索的所有数组<xref:System.Threading.Tasks.TaskScheduler>当前处于活动状态的对象。|  

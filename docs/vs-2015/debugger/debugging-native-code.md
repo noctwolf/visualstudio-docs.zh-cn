@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ee852f75737d85604fda106b15e61dc3634899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196424"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "58933607"
  提供有关如何调试使用特性的代码的指导。 指导信息包括如何打开“源批注”、如何查看插入的代码以及如何在当前执行点查看反汇编代码。  
   
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 描述如何使用“并行任务” 和“并行堆栈”工具窗口调试并行应用程序。  
+ 描述如何使用“并行任务”  和“并行堆栈”  工具窗口调试并行应用程序。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual C++ 项目类型](../debugger/debugging-preparation-visual-cpp-project-types.md)  

@@ -10,16 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4c9c027487fcefd29b486d6c58fa45f9e347f60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195265"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的“路径选择”工具修改键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-下表列出了在使用“路径选择”工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") 修改现有路径形状时可使用的快捷方式。 要在现有路径上添加或删除点，或联接两个现有路径，请使用“钢笔”工具。  
+下表列出了在使用“路径选择”  工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") 修改现有路径形状时可使用的快捷方式。 要在现有路径上添加或删除点，或联接两个现有路径，请使用“钢笔”  工具。  
   
 |任务|操作步骤|指针|  
 |-----------------------|-------------|-------------|  

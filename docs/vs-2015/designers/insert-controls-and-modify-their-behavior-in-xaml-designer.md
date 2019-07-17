@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159479"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 设计器中插入控件并修改其行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60082940"
 - [使控件执行操作](#Modify)  
   
 ## <a name="Insert"></a> 向美工板添加控件  
- 可以将控件从“资产”  面板拖到“美工板” ，然后在“属性”  窗口中进行修改。  
+ 可以将控件从“资产”  面板拖到“美工板”  ，然后在“属性”  窗口中进行修改。  
   
  ![Blend - 资产 - FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
   
@@ -51,7 +51,7 @@ ms.locfileid: "60082940"
   
  可以这样做的原因是因为这些按钮现在是控件。 借助控件，可以响应用户交互；在此例中是当用户单击按钮时。  
   
- 若要创建控件，请选择对象。 然后在“工具”  菜单上，单击“创建控件” 。  
+ 若要创建控件，请选择对象。 然后在“工具”  菜单上，单击“创建控件”  。  
   
 ## <a name="Modify"></a> 使控件执行操作  
  控件可以在用户与之交互时执行操作。 例如，这些操作可以启动动画、更新数据源或播放视频。  
@@ -63,16 +63,16 @@ ms.locfileid: "60082940"
   
  ![“触发器”面板](../designers/media/custom-button-blend-propertytriggerinfo.png "custom_button_blend_PropertyTriggerInfo")  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加属性触发器](http://www.popscreen.com/v/6A4gO/Microsoft-Expression-Blend-Adding-a-Property-Trigger)。  
+ **观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加属性触发器](http://www.popscreen.com/v/6A4gO/Microsoft-Expression-Blend-Adding-a-Property-Trigger)。  
   
 ### <a name="behaviors"></a>Behaviors  
  *行为* 是可重复重用的代码包。 它发挥的作用比更改属性稍微多一点。 它可以执行操作，例如查询数据服务。 Blend 附带了连A小型集合，但可以添加更多。 将行为拖动到到你美工板中的任何对象，然后通过设置属性来自定义行为。  
   
  ![“属性”面板中的 FluidMoveBehavior](../designers/media/b4-fluidmovebehaviorproperties-sample.png "b4_FluidMoveBehaviorProperties_Sample")  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [混合提示：使用行为简介第 1 部分](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904)。  
+ **观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [混合提示：使用行为简介第 1 部分](http://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904)。  
   
 ### <a name="events"></a>事件  
  最获得最佳灵活性，请处理 *事件*。 必须编写一些代码。  
   
- **观看短片：**![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加鼠标事件](https://www.youtube.com/watch?v=2PMxAlb-x_E)。
+ **观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [添加鼠标事件](https://www.youtube.com/watch?v=2PMxAlb-x_E)。

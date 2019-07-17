@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: de5df4c55feba8c9aaba0def7585029cc71426b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189430"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“空间”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用**空间**选项卡可以检查进程的地址空间。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”菜单中选择“属性”。  
+使用**空间**选项卡可以检查进程的地址空间。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”  菜单中选择“属性”  。  
   
  以下设置位于**空间**选项卡：  
   

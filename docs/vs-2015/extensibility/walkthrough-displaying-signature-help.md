@@ -11,11 +11,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202050"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>演练：显示签名帮助
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60108149"
   
  本演练演示如何实现的硬编码的一组标识符的签名帮助。 在完全实现中，语言是负责提供该内容。  
   
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>先决条件  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
@@ -247,4 +247,4 @@ ms.locfileid: "60108149"
 4. 键入左括号之后，将看到显示一系列的两个签名的工具提示`add()`方法。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

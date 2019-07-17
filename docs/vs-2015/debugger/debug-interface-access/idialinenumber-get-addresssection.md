@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a1d3b981002ebefb1644baa580b7f9ecc181cc16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198528"
 ---
 # <a name="idialinenumbergetaddresssection"></a>IDiaLineNumber::get_addressSection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ HRESULT get_addressSection ( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  pRetVal  
  [out]返回的部分一部分的内存地址块的开始位置。  
   

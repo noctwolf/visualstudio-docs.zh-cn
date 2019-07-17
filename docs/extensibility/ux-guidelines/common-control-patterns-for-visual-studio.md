@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312303"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890975"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 ## <a name="BKMK_CommonControls"></a> 公共控件
@@ -296,17 +296,18 @@ ms.locfileid: "66312303"
 #### <a name="graphical-buttons"></a>图形按钮
 某些按钮应始终使用图形化的图像，并且永远不会包含文本以节省空间并避免本地化问题。 这些通常用于字段选取器和其他可排序的列表中。
 
-> **注意：** 用户必须对这些按钮 （没有任何访问密钥） 选项卡上，因此将其放置在合理的顺序。 映射`name`属性，以便屏幕读取器正确解释此按钮的操作所需的操作的按钮。
+> [!NOTE]
+> 用户必须对这些按钮 （没有任何访问密钥） 选项卡上，因此将其放置在合理的顺序。 映射`name`属性，以便屏幕读取器正确解释此按钮的操作所需的操作的按钮。
 
 | 函数 | Button |
 | --- | --- |
-| 添加 | ![Graphical "Add" button](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
-| 删除 | ![Graphical "Remove" button](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |
+| 添加 | ![图形"添加"按钮](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
+| 删除 | ![图形"删除"按钮](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
 | 全部添加 | ![图形"全部添加"按钮](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
-| 删除所有 | ![Graphical "Remove All" button](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703-11_ButtonRemoveAll") |
+| 删除所有 | ![图形"全部删除"按钮](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
 | 上移 | ![图形"上移"按钮](../../extensibility/ux-guidelines/media/070703-12_buttonmoveup.png "070703 12_ButtonMoveUp") |
 | 下移 | ![图形"下移"按钮](../../extensibility/ux-guidelines/media/070703-13_buttonmovedown.png "070703 13_ButtonMoveDown") |
-| 删除 | ![Graphical "Delete" button](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703-14_ButtonDelete") |
+| 删除 | ![图形"删除"按钮](../../extensibility/ux-guidelines/media/070703-14_buttondelete.png "070703 14_ButtonDelete") |
 
 ##### <a name="sizing-and-spacing"></a>调整大小和间距
 大小调整图形按钮简短版本的相同 **[浏览...]** 按钮 （26 x 23 像素为单位）：

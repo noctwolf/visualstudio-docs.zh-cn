@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688159"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890471"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：在 C 中编写可视化工具\#
 
@@ -39,13 +39,13 @@ ms.locfileid: "65688159"
 
 1. 上**文件**菜单中，选择**新建**，然后单击**新项目**。
 
-2. 在中**新的项目**对话框中的**项目类型**s，选择**Visual C#**。
+2. 在中**新的项目**对话框中的**项目类型**s，选择**Visual C#** 。
 
 3. 在中**模板**框中，选择**类库**。
 
-4. 在“名称”框中，为类库键入一个适当的名称，例如 MyFirstVisualizer。
+4. 在“名称”框中，为类库键入一个适当的名称，例如 MyFirstVisualizer  。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
    创建类库后，必须添加对 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的引用，以便使用其中定义的类。 添加引用之前，但是，您必须重命名的一些类，使其具有有意义的名称。
 
@@ -62,7 +62,7 @@ ms.locfileid: "65688159"
 
 4. 在中**添加引用**对话框中，在 **.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
 6. 在 DebuggerSide.cs 中，将下面的语句添加到 `using` 语句中：
 
@@ -90,7 +90,7 @@ ms.locfileid: "65688159"
 
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>重写 DialogDebuggerVisualizer.Show 方法
 
-- 在 `public class DebuggerSide` 中添加下面的方法：
+- 在 `public class DebuggerSide` 中添加下面的方法  ：
 
   ```csharp
   override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
@@ -106,7 +106,7 @@ ms.locfileid: "65688159"
 
 2. 在中**添加引用**对话框中，在 **.NET**选项卡上，选择 system.windows.forms.dll 的引用。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
 4. 在 DebuggerSide.cs 中，将下面的语句添加到 `using` 语句中：
 
@@ -170,7 +170,7 @@ ms.locfileid: "65688159"
 
 3. 在中**名称**框中，键入有意义的名称的控制台应用程序，例如`MyTestConsole`。
 
-4. 单击 **“确定”**。
+4. 单击 **“确定”** 。
 
    现在，必须添加必要的引用，以便 MyTestConsole 能够调用 MyFirstVisualizer。
 
@@ -180,13 +180,13 @@ ms.locfileid: "65688159"
 
 2. 在中**添加引用**对话框中， **.NET**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
 4. 右键单击**MyTestConsole** ，然后选择**添加引用**试。
 
 5. 在中**添加引用**对话框中，单击**项目**选项卡，然后单击 MyFirstVisualizer。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
    现在，你将添加代码以完成测试套。
 
@@ -196,7 +196,8 @@ ms.locfileid: "65688159"
 
 2. 编辑而言更有意义，例如 TestConsole.cs 中 Program.cs 的名称。
 
-    **请注意** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] TestConsole.cs 以匹配新的文件名称中的类声明将自动更改。
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动更改 TestConsole.cs 以匹配新的文件名称中的类声明。
 
 3. 在 TestConsole.cs，将以下代码添加到`using`语句：
 
@@ -217,7 +218,7 @@ ms.locfileid: "65688159"
 
 1. 在中**解决方案资源管理器**，右键单击**MyTestConsole** ，然后选择**设为启动项目**快捷菜单上。
 
-2. 在“调试”菜单上选择“启动”。
+2. 在“调试”菜单上选择“启动”   。
 
     控制台应用程序启动和可视化工具显示并显示字符串"Hello，World"。
 
@@ -234,13 +235,13 @@ ms.locfileid: "65688159"
 
 1. 上**文件**菜单中，选择**添加**，然后单击**新项目**。
 
-2. 在中**添加新项目**对话框中的**项目类型**s，选择**Visual C#**。
+2. 在中**添加新项目**对话框中的**项目类型**s，选择**Visual C#** 。
 
 3. 在中**模板**框中，选择**类库**。
 
 4. 在中**名称**框中，键入为类库，如 MySecondVisualizer 的合适名称。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
    现在，可以将可视化工具项添加到它：
 

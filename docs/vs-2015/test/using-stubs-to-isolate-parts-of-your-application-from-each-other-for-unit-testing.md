@@ -9,11 +9,11 @@ caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5ed075cbc5bdc49159024a81cfcf1c3afb04cc6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185707"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根针对单元测试隔离应用程序的各个部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,13 +153,13 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ##### <a name="adding-a-fakes-assembly"></a>添加 Fakes 程序集  
   
-1. 在“解决方案资源管理器”中，展开单元测试项目的“引用”。  
+1. 在“解决方案资源管理器”中，展开单元测试项目的“引用”  。  
   
-    - 如果使用的是 Visual Basic，必须选择解决方案资源管理器工具栏中的“显示所有文件”才能看到引用列表。  
+    - 如果使用的是 Visual Basic，必须选择解决方案资源管理器工具栏中的“显示所有文件”  才能看到引用列表。  
   
 2. 选择包含要为其创建存根的接口定义的程序集。  
   
-3. 选择快捷菜单中的“添加 Fakes 程序集”。  
+3. 选择快捷菜单中的“添加 Fakes 程序集”  。  
   
 ### <a name="WriteTest"></a>编写包含存根的测试  
   

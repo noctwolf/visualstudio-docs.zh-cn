@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetExtendedInfo | Microsoft Docs
+title: IDebugProperty2::GetExtendedInfo |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 74810aab2f47a36c716891fd45b7424eb737b142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164978"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ int GetExtendedInfo ( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `guidExtendedInfo`  
  [in]确定要检索的扩展信息的类型的 GUID。 有关详细信息，请参阅备注。  
   
  `pExtendedInfo`  
- [out]返回`VARIANT`（c + +） 或对象 (C#) 可用于检索的扩展的属性信息。 例如，此参数可能会返回`IUnknown`接口，可用于查询[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口。 有关详细信息，请参阅备注。  
+ [out]返回`VARIANT`(C++) 或对象 (C#) 可用于检索的扩展的属性信息。 例如，此参数可能会返回`IUnknown`接口，可用于查询[IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)接口。 有关详细信息，请参阅备注。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则返回错误代码。 返回`S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果没有要检索的扩展的信息。  

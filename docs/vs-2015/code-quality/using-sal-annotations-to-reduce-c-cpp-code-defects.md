@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201206"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 批注以减少 C/C++ 代码缺陷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

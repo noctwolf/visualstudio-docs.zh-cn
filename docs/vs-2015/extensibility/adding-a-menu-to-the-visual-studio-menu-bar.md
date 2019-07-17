@@ -12,11 +12,11 @@ caps.latest.revision: 52
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ab627d785e8b00b5159969a01dc1102df30359
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184931"
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>将菜单添加到 Visual Studio 菜单栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117572"
 
 ## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>创建具有自定义命令项模板的 VSIX 项目
 
-1. 创建一个名为的 VSIX 项目`TopLevelMenu`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** / **扩展性**。  有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 创建一个名为的 VSIX 项目`TopLevelMenu`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#**  / **扩展性**。  有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
 2. 项目打开后，添加名为的自定义命令项模板**TestCommand**。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 在中**添加新项**对话框中，转到**Visual C# / 可扩展性**，然后选择**自定义命令**。 在中**名称**在窗口底部字段中，将命令文件名称更改为**TestCommand.cs**。
 

@@ -18,22 +18,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68171416"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序设置安全区域
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-为 ClickOnce 应用程序设置代码访问安全权限时，需要在“项目设计器”  的“安全” 页上从基本权限集开始。  
+为 ClickOnce 应用程序设置代码访问安全权限时，需要在“项目设计器”  的“安全”  页上从基本权限集开始。  
   
  在大多数情况下，还可以选择包含受限权限集的“Internet”  区域，或选择包含较大权限集的“本地 Intranet”  区域。 如果应用程序需要自定义权限，则可以通过选择“自定义”  安全区域实现该操作。 有关设置自定义权限的详细信息，请参阅[如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
 ### <a name="to-set-a-security-zone"></a>设置安全区域  
   
-1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择一个项目，然后在“项目”  菜单上单击“属性”  。  
   
 2. 单击 **“安全”** 选项卡。  
   

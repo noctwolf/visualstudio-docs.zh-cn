@@ -260,11 +260,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 91dcea4d9d16a6e846a66e4a5590dedfdc62b90f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201471"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>托管代码的代码分析警告（按 CheckId 排列）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 26bd68764b94aadccb796f33d127ba159e9c3727
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202759"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ int EnumCodeContexts( 
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法允许会话调试管理器 (SDM) 或 IDE 将映射到代码位置的源代码文件位置。 如果源生成的代码 （例如，c + + 模板） 的多个块，则返回多个代码上下文。  
+ 此方法允许会话调试管理器 (SDM) 或 IDE 将映射到代码位置的源代码文件位置。 如果源生成多个代码块，则返回多个代码上下文 (例如，C++模板)。  
   
 ## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc004de59b6ae219f47dc0874913c8e6e6ceb0f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195996"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ int EnumPrograms( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
  [out]返回[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)对象，其中包含的所有部署正在调试的程序列表。  
   

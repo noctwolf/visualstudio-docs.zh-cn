@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176507"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>如何：调试时切换到另一个线程
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>如何：在调试时切换到另一个线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在调试多线程应用程序时，您可以使用若干方法中的任何一种，将上下文从正在处理的线程切换到另一个线程。  

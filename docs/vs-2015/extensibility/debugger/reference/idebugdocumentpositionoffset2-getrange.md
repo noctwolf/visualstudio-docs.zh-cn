@@ -11,11 +11,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a028a2c88fe44aa6a117ddb81cff5788eec1732e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200229"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ public int GetRange(
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pdwBegOffset`  
  [in、 out]为范围的起始位置的偏移量。 如果不需要此信息，请将此参数设置为 null 值。  
   

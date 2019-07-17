@@ -13,18 +13,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204330"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 元素（Visual Studio 模板向导扩展）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 实现的类的完全限定的名称`IWizard`接口。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<WizardExtension>  
  ...  
  \<FullClassName>  

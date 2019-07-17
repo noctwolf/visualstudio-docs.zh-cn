@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d7cd59266a69140ba2ea5a7fd1d1b0b0c72f14c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201934"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定自定义 XML  
   
- \<VSTemplate>  
- \<WizardData>  
+ \<VSTemplate >  
+ \<WizardData >  
   
 ## <a name="syntax"></a>语法  
   

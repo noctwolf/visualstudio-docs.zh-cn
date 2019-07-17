@@ -22,16 +22,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163229"
 ---
 # <a name="text-editor-options-dialog-box"></a>“选项”对话框 ->“文本编辑器”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-“选项”对话框中的编辑器选项提供不同的方法来自定义编辑器的外观和行为。  
+“选项”  对话框中的编辑器选项提供不同的方法来自定义编辑器的外观和行为。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：在编辑器中更改字体和颜色](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  

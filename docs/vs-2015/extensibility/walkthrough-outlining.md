@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201960"
 ---
 # <a name="walkthrough-outlining"></a>演练：大纲显示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ ms.locfileid: "60054699"
 4. 应包含这两个大括号的大纲区域。 您应可以通过单击左侧的左大括号负号，若要折叠大纲区域。 当区域处于折叠状态，省略号 （...） 应显示在折叠的区域和一个弹出窗口，其中包含文本的左侧**将鼠标悬停在文本**应显示的省略号上移动指针时。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

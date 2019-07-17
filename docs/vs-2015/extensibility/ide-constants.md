@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204043"
 ---
 # <a name="ide-constants"></a>IDE 常量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58936040"
   
 ## <a name="editor-factory-flags"></a>编辑器工厂标志  
   
-|值|描述|  
+|ReplTest1|描述|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|已过时的标志的第一个参数的按位组合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法。|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|第一个参数的按位组合<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>，方法中，这表示编辑器工厂应执行必需的修补程序。|  
@@ -81,7 +81,7 @@ ms.locfileid: "58936040"
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents  
  描述在 IDE 的哪个组件只是已选择，在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>调用，例如。  
   
-|返回的常量|值|
+|返回的常量|ReplTest1|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
@@ -93,7 +93,7 @@ ms.locfileid: "58936040"
 ## <a name="vsselelemid"></a>VSSELELEMID  
  用于指示新的选择状态的常量。  
   
-|返回的常量|值|  
+|返回的常量|ReplTest1|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -106,7 +106,7 @@ ms.locfileid: "58936040"
   
 ## <a name="component-selector-dialog-constants"></a>组件选择器对话框常量  
   
-|返回的常量|值|  
+|返回的常量|ReplTest1|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  

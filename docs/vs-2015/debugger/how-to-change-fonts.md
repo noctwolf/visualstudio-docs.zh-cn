@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5aafed36dd9e011cef34391aa3b87027257b91d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185192"
 ---
 # <a name="how-to-change-fonts"></a>如何：更改字体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ ms.locfileid: "58935466"
   
 ### <a name="to-change-font-options"></a>若要更改字体选项  
   
-1. 从“视图”菜单中，选择“字体”。   
+1. 从“视图”  菜单中，选择“字体”  。  
   
 2. 选择字体、 字体样式和字体大小。  
   
-3. 单击 **“确定”**。  
+3. 单击 **“确定”** 。  
   
-   选择“保存为默认字”将导致之后所有的 Spy++ 窗口均使用此字体。  
+   选择“保存为默认字”将导致之后所有的 Spy++ 窗口均使用此字体  。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Spy++](../debugger/using-spy-increment.md)   

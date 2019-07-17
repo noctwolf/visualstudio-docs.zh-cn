@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0fbdf2bf6df2e61e1328a71f180264d582bfdf9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935040"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149817"
 ---
 # <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ HRESULT get_baseDataSlot(
    DWORD* pRetVal);  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pRetVal`  
  [out]一个指向`DWORD`，它持有的基本数据槽。  
   

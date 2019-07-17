@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184378"
 ---
 # <a name="command-handling"></a>命令处理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58936531"
 ## <a name="adding-commands-to-the-editor-context-menu"></a>将命令添加到编辑器上下文菜单  
  若要添加到上下文菜单命令，必须首先定义一组属于特定组的菜单命令。 下面的示例摘自.vsct 文件作为本演练的一部分生成[演练：将功能添加到自定义编辑器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md):  
   
- \<Menu guid="guidCustomEditorCmdSet" id="IDMX_RTF" priority="0x0000" type="Context">  
+ \<菜单 guid ="guidCustomEditorCmdSet"id ="IDMX_RTF"优先级 ="0x0000"type ="上下文">  
   
- \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
+ \<父 guid ="guidCustomEditorCmdSet"id ="0"/ >  
   
- \<Strings>  
+ \<字符串 >  
   
  \<ButtonText > CustomEditor 上下文菜单\</ButtonText >  
   
  \<CommandName>CustomEditorContextMenu\</CommandName>  
   
- \</Strings>  
+ \</ 字符串 >  
   
- \</Menu>  
+ \</ 菜单 >  
   
- \</Menus>  
+ \</ 菜单 >  
   
  上面的文本将添加具有文本的上下文菜单命令**CustomEditor 上下文菜单**。 菜单 GUID 是创建使用此编辑器的命令集，且类型为"上下文"。  
   

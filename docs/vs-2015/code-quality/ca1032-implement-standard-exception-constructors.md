@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205839"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032:实现标准异常构造函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58932946"
 ## <a name="rule-description"></a>规则说明
  异常类型必须实现以下构造函数：
 
-- public NewException()
+- 公共 NewException()
 
-- public NewException(string)
+- 公共 NewException(string)
 
-- public NewException(string, Exception)
+- 公共 NewException (string，异常)
 
 - 受保护或私有 NewException （SerializationInfo，StreamingContext）
 

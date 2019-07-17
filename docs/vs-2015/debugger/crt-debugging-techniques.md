@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a69defe75b80ef1f395931017dfc942398ca2710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161477"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58935385"
  描述由 C 运行库提供的调试支持并提供有关访问这些工具的说明。  
   
  [用于报告的宏](../debugger/macros-for-reporting.md)  
- 提供有关 _RPTn 和 _RPTFn 宏（在 CRTDBG.H 中定义）的信息，它们取代了用于调试的 `printf` 语句。  
+ 提供有关 _RPTn 和 _RPTFn 宏（在 CRTDBG.H 中定义）的信息，它们取代了用于调试的 `printf` 语句   。  
   
  [堆分配函数的调试版本](../debugger/debug-versions-of-heap-allocation-functions.md)  
  讨论堆分配函数的特殊“Debug”版本，包括：CRT 如何映射调用、显式调用它们的好处、如何避免转换、跟踪客户端块中单独的分配类型和不调用 _DEBUG 的结果。  

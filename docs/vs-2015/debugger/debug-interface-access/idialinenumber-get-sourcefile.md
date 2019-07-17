@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 32cbf0fb37eedb29c1498224aff28140d2e09d0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150628"
 ---
 # <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ HRESULT get_sourceFile ( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pRetVal`  
  [out]返回[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)表示源文件的对象。  
   

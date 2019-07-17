@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2b83e4a208553b0ad732cfe927aec02b47e389dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187512"
 ---
 # <a name="value-xattribute-dynamic-property"></a>值（XAttribute 动态属性）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ attrib.Value
 ## <a name="property-valuereturn-value"></a>属性值/返回值  
  包含此属性的值的 <xref:System.String>。  
   
-## <a name="exceptions"></a>异常  
+## <a name="exceptions"></a>Exceptions  
   
 |异常类型|条件|  
 |--------------------|---------------|  

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e00f85d4b3a111f3a68b934006a32197245d4d6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189880"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ HRESULT Next ( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  celt  
  [in]要检索的枚举器中的段的数目。  
   

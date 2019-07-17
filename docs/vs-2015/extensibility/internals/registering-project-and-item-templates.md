@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185841"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58933197"
 "SortPriority"=dword:00000064  
 ```  
   
-|名称|类型|描述|  
+|name|类型|描述|  
 |----------|----------|-----------------|  
 |@|REG_SZ|添加项模板的资源 ID。|  
 |TemplatesDir|REG_SZ|在对话框中显示的项目项的路径**添加新项**向导。|  
@@ -112,7 +112,7 @@ ms.locfileid: "58933197"
   
  \Form  
   
- \Web Page  
+ \Web 页  
   
  \HelperFiles （包含多文件项目项中使用的文件）  
   

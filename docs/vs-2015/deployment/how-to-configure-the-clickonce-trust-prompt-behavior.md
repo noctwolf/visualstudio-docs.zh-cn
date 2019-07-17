@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150833"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "60047042"
   
 1. 打开注册表编辑器：  
   
-    1. 单击“开始”，然后单击“运行”。  
+    1. 单击“开始”，然后单击“运行”   。  
   
     2. 在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60047042"
   
 3. 添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`Internet`|`Enabled`|  
     |`UntrustedSites`|`Disabled`|  
@@ -117,7 +117,7 @@ ms.locfileid: "60047042"
   
 1. 打开注册表编辑器：  
   
-    1. 单击“开始”，然后单击“运行”。  
+    1. 单击“开始”，然后单击“运行”   。  
   
     2. 在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
@@ -129,7 +129,7 @@ ms.locfileid: "60047042"
   
 3. 添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`AuthenticodeRequired`|  
@@ -174,7 +174,7 @@ ms.locfileid: "60047042"
   
 1. 打开注册表编辑器：  
   
-    1. 单击“开始”，然后单击“运行”。  
+    1. 单击“开始”，然后单击“运行”   。  
   
     2. 在中**开放**框中，键入`regedit`(或`regedit32`32 位 Windows 上)，然后单击**确定**。  
   
@@ -186,7 +186,7 @@ ms.locfileid: "60047042"
   
 3. 添加以下作为子项**字符串值**，如果它们尚不存在，使用下表中显示的关联值。  
   
-    |字符串值子项|“值”|  
+    |字符串值子项|值|  
     |-------------------------|-----------|  
     |`UntrustedSites`|`Disabled`|  
     |`Internet`|`Disabled`|  

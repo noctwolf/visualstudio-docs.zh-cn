@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188839"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58934715"
 ## <a name="registry-entries-for-language-service-options"></a>语言服务选项的注册表项  
  *VS Reg 根*\Languages\Language 服务\\*语言名称*键可以包含以下值。  
   
-|名称|类型|范围|描述|  
+|name|type|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|*\<GUID>*|语言服务的 GUID。|  
 |LangResID|REG_DWORD|0x0 0xffff|资源的字符串标识符 (ResID) 的语言的本地化的文本名称。|  
@@ -66,9 +66,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>调试器语言选项的注册表项  
  *VS Reg 根*\Languages\Language 服务\\*语言名称*\Debugger 语言\\*GUID*\ 密钥可以包括以下值。  
   
-|名称|类型|范围|描述|  
+|名称|type|范围|描述|  
 |----------|----------|-----------|-----------------|  
-|(默认)|REG_SZ|文本|默认值可以用于文档的语言名称。 此密钥的名称是具有一个对应的条目中的表达式计算器的 GUID  *\<VS Reg 根 >* \AD7Metrics\Expression 计算器。|  
+|(默认)|REG_SZ|text|默认值可以用于文档的语言名称。 此密钥的名称是具有一个对应的条目中的表达式计算器的 GUID  *\<VS Reg 根 >* \AD7Metrics\Expression 计算器。|  
   
 ### <a name="example"></a>示例  
   
@@ -87,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |名称|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
-|(默认)|REG_SZ|ResID|此选项页的本地化的显示名称。 名称可以是文字文本或 #`nnn`，其中`nnn`是附属 DLL 指定 VSPackage 中的字符串资源 ID。|  
+|(默认)|REG_SZ|resID|此选项页的本地化的显示名称。 名称可以是文字文本或 #`nnn`，其中`nnn`是附属 DLL 指定 VSPackage 中的字符串资源 ID。|  
 |package|REG_SZ|*GUID*|实现此选项页的 VSPackage 的 GUID。|  
 |页面|REG_SZ|*GUID*|要通过调用从 VSPackage 请求的属性页 GUID<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>方法。 如果此注册表项不存在，注册表项将描述的节点，不是页面。|  
   
@@ -119,7 +119,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>文件名称扩展选项的注册表项  
  文件扩展名的条目应包括前导句点，例如".myext"。  
   
-|名称|类型|范围|描述|  
+|名称|type|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|*GUID*|此文件名称扩展类型的默认语言服务的服务 GUID。|  
   
@@ -136,11 +136,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>编辑器选项的注册表项  
  *VS Reg 根*\Editors 键可以包含以下值：  
   
-|名称|类型|范围|描述|  
+|name|类型|范围|描述|  
 |----------|----------|-----------|-----------------|  
 |(默认)|REG_SZ|""|未使用;可以将您的姓名的文档。|  
 |DefaultToolboxTab|REG_SZ|""|要在编辑器处于活动状态时将默认的工具箱选项卡的名称。|  
-|DisplayName|REG_SZ|ResID|中显示姓名**打开**对话框。 名称的标准格式字符串资源 ID 或名称。|  
+|DisplayName|REG_SZ|resID|中显示姓名**打开**对话框。 名称的标准格式字符串资源 ID 或名称。|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|用于**打开**菜单命令。 如果您不想要列出特定文件类型的可用编辑器的列表中的默认文本编辑器，将此值设置为 1。|  
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|用于任何语言服务，可以使用代码页支持打开文件。 例如，当您打开.txt 文件通过使用**打开**命令时，使用在源代码编辑器，无需编码提供选项。<br /><br /> 子项的名称指定的 GUID 是代码页编辑器工厂;在此特定的注册表项中指定的链接的 GUID 是正则编辑器工厂。 此项的目的是，如果 IDE 不会使用默认编辑器中打开一个文件，IDE 将尝试使用列表中的下一步的编辑器。 此下一步编辑器不应为代码页编辑器工厂，因为此编辑器工厂基本上是相同的编辑器工厂的失败。|  
 |package|REG_SZ|*\<GUID>*|显示名称 ResID 的 VSPackage GUID。|  

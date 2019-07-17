@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5a53faf8c9395867b570909ac4d34cf329da12c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930909"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149445"
 ---
 # <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-检索一个标志，指示符号是否对应于*定义范围符号*指针变量的 c + + AMP 快捷键编译的代码中的标记组件。 定义范围符号是地址的范围变量的位置。  
+检索一个标志，指示符号是否对应于*定义范围符号*标记组件的指针的变量中的代码编译为C++AMP 快捷键。 定义范围符号是地址的范围变量的位置。  
   
 ## <a name="syntax"></a>语法  
   
@@ -30,7 +30,7 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
    BOOL* pFlag);  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pFlag`  
  [out]一个指向`BOOL`，该值指示符号是否对应于定义范围符号。  
   

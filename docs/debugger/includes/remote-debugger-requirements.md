@@ -14,13 +14,13 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67256379"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149203"
 ---
-### <a name="supported-operating-systems"></a>Supported Operating Systems  
+### <a name="supported-operating-systems"></a>支持的操作系统  
 
 远程计算机运行的是下列操作系统之一：  
   
@@ -30,7 +30,7 @@ ms.locfileid: "67256379"
   
 - Windows 7 Service Pack 1  
 
-- Windows 2016 Server
+- Windows Server 2016
   
 - Windows Server 2012 或 Windows Server 2012 R2  
   

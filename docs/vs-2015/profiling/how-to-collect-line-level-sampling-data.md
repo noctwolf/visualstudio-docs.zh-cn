@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185958"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级采样数据
+# <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级别采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。  
@@ -47,7 +47,7 @@ ms.locfileid: "60068091"
   
 - IP - 获取聚合样本的地址（仅限 IP 视图）。  
   
-  在“模块”视图中，如果函数具有行级统计信息，这些统计信息将嵌套在每个函数下。 此外，还将显示嵌套在每行下的 IP 级统计信息。  
+  在“模块”  视图中，如果函数具有行级统计信息，这些统计信息将嵌套在每个函数下。 此外，还将显示嵌套在每行下的 IP 级统计信息。  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>关闭托管代码的行级采样  
  默认情况下，行级采样处于开启状态。 可以通过执行以下任一操作来关闭托管代码的行级数据收集：  
@@ -56,7 +56,7 @@ ms.locfileid: "60068091"
   
      — 或 —  
   
-- 启动应用程序时，键入 **VSPerfCmd /lineoff \<其他参数>**。  
+- 启动应用程序时，键入 **VSPerfCmd /lineoff \<其他参数>** 。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   

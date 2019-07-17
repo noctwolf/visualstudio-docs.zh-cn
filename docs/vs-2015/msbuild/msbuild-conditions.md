@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b29138ef9ab5bffa263a8392396091a38ea91a2e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181103"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 条件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ ms.locfileid: "59666970"
 ## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [条件构造](../msbuild/msbuild-conditional-constructs.md)   
- [演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
+ [演练：从头创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)

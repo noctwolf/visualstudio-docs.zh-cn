@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202326"
 ---
 # <a name="getting-started-with-the-debugger"></a>调试程序入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ static void Main(string[] args)
   
  有关这些窗口的详细信息，请参阅[自动和局部变量 Windows](../debugger/autos-and-locals-windows.md)。  
   
- 我们来看看在逐步完成程序时，变量值如何更改。 上设置断点`testInt += 1;`行，然后重新启动调试。 您应该会看到**testInt**中**局部变量**并**自动**windows 是**0**，和**我**是**1**。 继续调试时 (**调试 / 继续**，或**继续**的工具栏上，或**F5**)，你可以看到的值**testInt**将更改为**1**，然后**2**，依次类推。 当你厌倦了查看这些更改时，删除的断点 (**调试 / 切换断点**，或者在边距中单击)，并继续调试。 如果你想要删除所有断点，请单击**调试 / 删除所有断点**，或**CTRL + SHIFT + F9**，然后单击**是**对话框，询问在**是否要删除所有断点？**.  
+ 我们来看看在逐步完成程序时，变量值如何更改。 上设置断点`testInt += 1;`行，然后重新启动调试。 您应该会看到**testInt**中**局部变量**并**自动**windows 是**0**，和**我**是**1**。 继续调试时 (**调试 / 继续**，或**继续**的工具栏上，或**F5**)，你可以看到的值**testInt**将更改为**1**，然后**2**，依次类推。 当你厌倦了查看这些更改时，删除的断点 (**调试 / 切换断点**，或者在边距中单击)，并继续调试。 如果你想要删除所有断点，请单击**调试 / 删除所有断点**，或**CTRL + SHIFT + F9**，然后单击**是**对话框，询问在**是否要删除所有断点？** .  
   
 ## <a name="stepping-into-and-over-function-calls"></a>单步执行和逐过程执行函数调用  
  您可以在调试器语句通过-语句中执行代码 (**单步执行**) 或可执行代码，调试器会跳过函数时 (**单步跳过**) 使快速获得您并更感兴趣 （代码函数代码仍被执行）。 您可以在同一个调试会话中这两种方法之间进行切换。  

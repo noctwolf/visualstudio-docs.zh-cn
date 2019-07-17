@@ -11,18 +11,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149087"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags 字段
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 存储的当前状态有关的信息<xref:System.Threading.Tasks.Task>对象。  
   
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   

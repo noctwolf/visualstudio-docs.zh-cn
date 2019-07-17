@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196859"
 ---
 # <a name="delayed-document-loading"></a>文档加载延迟
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ ms.locfileid: "60116922"
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>测试以查看是否它们强制进行初始化的扩展  
  没有任何可见提示，以指示是否已初始化文档，因此它可能很难找到您的扩展插件强制初始化。 可以设置注册表项，简化验证，因为它会导致未完全初始化文本的每个文档的标题`[Stub]`标题中。  
   
- 在中**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**，请设置**StubTabTitleFormatString**到 **{0} [存根]**。
+ 在中**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** ，请设置**StubTabTitleFormatString**到 **{0} [存根]** 。

@@ -14,18 +14,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d947c0f2996bcaaeff6c6dbf084151237f1fdb3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184730"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Assembly 元素（Visual Studio 模板向导扩展）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定的名称或实现的程序集的强名称`IWizard`接口。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
 \<WizardExtension>  
 \<程序集 >  
   
@@ -53,7 +53,7 @@ ms.locfileid: "58930735"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 此文本指定实现的程序集`IWizard`接口。 此程序集名称必须指定为完整的程序集名称。 例如 `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
+ 此文本指定实现的程序集`IWizard`接口。 此程序集名称必须指定为完整的程序集名称。 例如， `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null` 。  
   
 ## <a name="remarks"></a>备注  
  `Assembly` 是 `WizardExtension` 的必需子元素。  

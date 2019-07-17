@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue | Microsoft Docs
+title: IDebugAlias::GetICorDebugValue |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 67ab8a7343cd320470515b757dfca905a0a4690e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156282"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ int GetICorDebugValue(
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `ppUnk`  
  [out]`IUnknown`接口，表示与此别名关联的值。 此接口可以查询有关`ICorDebugValue`接口。  
   

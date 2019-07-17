@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1f8f816ef374c827e35b7c208e237b2dbd9384bb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189849"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ HRESULT Skip ( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  celt  
  [in]若要跳过枚举序列中的段的数目。  
   

@@ -9,11 +9,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb720589bc9bc31b7cf2a04b05559cb9c9d46961
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201984"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>演练：实现代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60117910"
   
    此演练基于[演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)。  
   
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>先决条件  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ## <a name="creating-and-registering-code-snippets"></a>创建和注册的代码片段  

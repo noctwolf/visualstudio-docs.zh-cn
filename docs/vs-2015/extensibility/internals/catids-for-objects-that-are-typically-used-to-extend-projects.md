@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162088"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用于扩展项目的对象的 CATID
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,10 +53,10 @@ ms.locfileid: "58935917"
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFolderBrowseObject>|{914FE278-054A-45DB-BF9E-5F22484CC84C}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpReferenceBrowseObject>|{2F0FA3B8-C855-4a4e-95A5-CB45C67D6C27}|  
   
-## <a name="c-catids"></a>C + + Catid  
+## <a name="c-catids"></a>C++Catid  
  以下[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目的系统中的类型库中未公开 Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003年和一定要包括在代码中，只要您想要扩展这些项目对象。 在更高版本的中的类型库中将包含这些 Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -72,7 +72,7 @@ const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683
   
  以下[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目的系统中的类型库中还未公开 Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003年和一定要包括在代码中，只要您想要扩展这些项目对象。 是仅适用于这些 Catid [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003年和将不能在更高版本的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
-|名称|GUID|  
+|name|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  

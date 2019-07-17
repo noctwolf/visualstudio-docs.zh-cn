@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 79987c77da7959c4ba37a4ae8e5b689a052cbbbc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193644"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59666671"
 HRESULT WINAPI SetThreadCount(int threadCount);  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  [in] `threadCount`  
  要使用的线程数。  
   

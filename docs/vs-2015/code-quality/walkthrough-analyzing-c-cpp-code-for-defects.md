@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: dcd862b6ff9c94b8de3fc8b5a56164549fefe8ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142039"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>演练：分析 C/C++ 代码的缺陷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60099491"
   
 - 批注源代码，以改进代码缺陷分析。  
   
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>先决条件  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]。  
   
@@ -52,13 +52,13 @@ ms.locfileid: "60099491"
   
      演示解决方案现在将出现**解决方案资源管理器**。  
   
-2. 在“生成”菜单上，单击“重新生成解决方案”。  
+2. 在“生成”菜单上，单击“重新生成解决方案”   。  
   
      该解决方案版本，无任何错误或警告。  
   
 3. 在中**解决方案资源管理器**，选择 CodeDefects 项目。  
   
-4. 在“项目”菜单上，单击“属性”。  
+4. 在“项目”菜单上，单击“属性”   。  
   
      **CodeDefects 属性页**显示对话框。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60099491"
   
 1. 在解决方案资源管理器，选择注释项目。  
   
-2. 在“项目”菜单上，单击“属性”。  
+2. 在“项目”菜单上，单击“属性”   。  
   
      **批注属性页**显示对话框。  
   

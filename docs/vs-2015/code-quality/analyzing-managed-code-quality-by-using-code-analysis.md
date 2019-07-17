@@ -13,16 +13,16 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 5d8740b79b026ade7f3da19aa4a89cacd94df17d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157122"
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>使用代码分析来分析托管代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-你可以在 Visual Studio 中使用代码分析工具发现代码中的潜在问题，如不安全的数据访问、使用冲突和设计问题。 代码分析适用于.NET Framework、 本机 （C 和 c + +） 和数据库应用程序。 托管代码的代码分析将组织中的规则*规则集*面向特定编码问题。  
+你可以在 Visual Studio 中使用代码分析工具发现代码中的潜在问题，如不安全的数据访问、使用冲突和设计问题。 代码分析适用于.NET Framework 中，本机 (C 和C++)，和数据库应用程序。 托管代码的代码分析将组织中的规则*规则集*面向特定编码问题。  
   
 ## <a name="common-tasks"></a>常规任务  
   

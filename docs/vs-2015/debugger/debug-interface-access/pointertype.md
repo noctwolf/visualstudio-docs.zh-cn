@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b178883db5da6d069b1606b0058b6773962140e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149112"
 ---
 # <a name="pointertype"></a>PointerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58930743"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` 如果该指针被标记为常量。|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|以字节为单位，指针的大小。|  

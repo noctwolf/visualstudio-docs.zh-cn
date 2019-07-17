@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 37609a2ee4b52931c8df1a95af9d494e64bb473e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158230"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的 .NET Framework 内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54834123"
 |**将探查器附加到 .NET 应用程序**|-   [如何：将探查器附加到 .NET Framework 应用程序以收集内存数据](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
 |**检测应用程序以收集 .NET 内存数据**|-   [如何：使用探查器检测独立 .NET Framework 组件并收集内存数据](/visualstudio/profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data?view=vs-2015)|  
   
-## <a name="related-tasks"></a>相关任务  
+## <a name="related-tasks"></a>Related Tasks  
   
 ### <a name="profiling-stand-alone-applications"></a>分析独立应用程序  
   

@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5d1fe2191dadd0972dcde6f38b9697e29f05ab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190462"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58936239"
 |-------------|-----------------|----------------|  
 |[\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md)|必需。 顶级元素。|`manifestVersion`|  
 |[\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)|必需。 标识 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的应用程序清单。|`name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture`|  
-|[\<description> 元素](../deployment/description-element-clickonce-deployment.md)|必需。 标识用于在控制面板中创建 shell 表示和“添加/删除程序”项的应用程序信息。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
+|[\<description> 元素](../deployment/description-element-clickonce-deployment.md)|必需。 标识用于在控制面板中创建 shell 表示和“添加/删除程序”项的应用程序信息  。|`publisher`<br /><br /> `product`<br /><br /> `supportUrl`|  
 |[\<deployment> 元素](../deployment/deployment-element-clickonce-deployment.md)|可选。 标识用于部署更新并向系统公开的特性。|`install`<br /><br /> `minimumRequiredVersion`<br /><br /> `mapFileExtensions`<br /><br /> `disallowUrlActivation`<br /><br /> `trustUrlParameters`|  
 |[\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)|必需。 标识此应用程序可在其上安装和运行的 .NET Framework 版本。|`SupportUrl`|  
 |[\<dependency> 元素](../deployment/dependency-element-clickonce-deployment.md)|必需。 标识要为部署而安装的应用程序版本以及应用程序清单的位置。|`preRequisite`<br /><br /> `visible`<br /><br /> `dependencyType`<br /><br /> `codebase`<br /><br /> `size`|  

@@ -11,13 +11,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29306a16390039c8ee6e424b81a5ff617e533ab4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203914"
 ---
-# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>实例化使用旧 API 的核心编辑器
+# <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>使用旧 API 实例化核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在编辑器负责进行文本编辑功能，如插入、 删除、 复制和粘贴。 它将与所提供的语言服务，如文本颜色设置、 缩进和 IntelliSense 语句完成功能结合这些函数。  
@@ -69,4 +69,4 @@ ms.locfileid: "58932897"
 ## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)   
  [打开和保存项目项](../extensibility/internals/opening-and-saving-project-items.md)   
- [演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)
+ [演练：创建核心编辑器并注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)

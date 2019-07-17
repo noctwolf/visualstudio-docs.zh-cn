@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182834"
 ---
 # <a name="generate-files-from-a-uml-model"></a>从 UML 模型生成文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -314,7 +314,7 @@ namespace Test{
   
 - **配置文件**。 即使是在同一个业务领域内，元素类型的解释也会有所不同。 例如，在网站关系图上，有些类可能表示网页，而其他类则表示内容块。 为了方便用户记录这些区别，可定义构造型。 利用构造型还可以附加应用于此类元素的其他属性。 构造型打包在配置文件中。 有关详细信息，请参阅[定义用于扩展 UML 的配置文件](../modeling/define-a-profile-to-extend-uml.md)。  
   
-     在模板代码中，可以轻松地访问在对象上定义的构造型。 例如：  
+     在模板代码中，可以轻松地访问在对象上定义的构造型。 例如:  
   
     ```  
     public bool HasStereotype(IClass c, string profile, string stereo)  

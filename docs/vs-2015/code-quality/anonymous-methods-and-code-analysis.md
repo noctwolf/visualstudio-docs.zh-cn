@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157065"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  类可以包含的内联匿名方法的值赋给具有多个构造函数的字段。 在这种情况下，警告和度量值与相关联的所有构造函数除非该构造函数链接到同一个类中的另一个构造函数。  
   
- 例如，在下面的类的声明中找到的任何警告**anonymousMethod**应针对引发**Class(int)** 并**Class(string)** 但不是针对**Class()**。  
+ 例如，在下面的类的声明中找到的任何警告**anonymousMethod**应针对引发**Class(int)** 并**Class(string)** 但不是针对**Class()** 。  
   
 ```vb  
   

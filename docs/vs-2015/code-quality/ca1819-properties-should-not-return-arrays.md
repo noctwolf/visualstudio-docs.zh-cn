@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 48f1b0c0860f8dfc38a83856570cdcdfa6f6ffc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201736"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819:属性不应返回数组
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "58935660"
  若要解决此规则的冲突，使方法的属性或更改要返回集合的属性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 属性可以包含返回数组的属性，但不能包含返回集合的属性。 您可以禁止显示一条警告，将引发派生自 [System.Attribute] 的属性的属性 (<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) 类。 否则，不要禁止显示此规则的警告。
+ 属性可以包含返回数组的属性，但不能包含返回集合的属性。 可以禁止显示一条警告，将引发派生自 [System.Attribute] （特性的属性<!-- TODO: review code entity reference <xref:assetId:///System.Attribute?qualifyHint=False&amp;autoUpgrade=True>  -->) 类。 否则，不要禁止显示此规则的警告。
 
 ## <a name="example-violation"></a>冲突的示例
 

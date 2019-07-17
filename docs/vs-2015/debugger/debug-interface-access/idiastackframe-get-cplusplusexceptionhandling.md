@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f400135fab95925384947488b5582b2f3d996928
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190594"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-检索一个标志，指示 c + + 异常处理有效。  
+检索一个标志，指示如果C++实际上是异常处理。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,13 +35,13 @@ HRESULT get_cplusplusExceptionHandling ( 
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回`TRUE`如果 c + + 异常处理有效此帧中; 否则，返回`FALSE`。  
+ [out]返回`TRUE`如果C++异常处理适用于此帧; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回 `S_OK`。 返回`S_FALSE`如果不支持的属性。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- C + + 异常处理不是结构化相同或系统异常处理。  
+ C++异常处理不是结构化相同或系统异常处理。  
   
  若要确定如果结构化异常处理的有效方法是，调用[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)方法。  
   

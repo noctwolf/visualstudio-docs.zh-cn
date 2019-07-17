@@ -11,13 +11,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180282"
 ---
-# <a name="legacy-interfaces-in-the-editor"></a>在编辑器中的旧接口
+# <a name="legacy-interfaces-in-the-editor"></a>编辑器中的旧接口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以从旧式界面访问 Visual Studio 编辑器。 Visual Studio SDK 包括适配器称为*填充程序*，它实现了这些接口，以便与新编辑器。 不过，我们建议你更新旧代码，以使用新编辑器 API。 你的代码将更好地执行，可以使用 Windows Presentation Foundation (WPF) 和 Managed Extensibility Framework (MEF) 等新技术。  
@@ -32,8 +32,8 @@ ms.locfileid: "58933432"
 |[使用旧 API 实例化核心编辑器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|介绍如何使用传统的 API 来实例化核心编辑器。|  
 |[编辑器工厂](../extensibility/editor-factories.md)|介绍如何使用编辑器工厂与传统的 API。|  
 |[如何：注册编辑器文件类型](../extensibility/how-to-register-editor-file-types.md)|介绍如何将文件扩展名为链接到你的编辑器。|  
-|[演练：创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|介绍如何创建编辑器的一个核心并链接到该文件扩展名。|  
-|[如何：为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)|介绍如何为你的编辑器提供的上下文。|  
+|[演练：创建核心编辑器并注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|介绍如何创建编辑器的一个核心并链接到该文件扩展名。|  
+|[如何：为编辑器提供上下文](../extensibility/how-to-provide-context-for-editors.md)|介绍如何为你的编辑器提供的上下文。|  
 |[语言服务和核心编辑器](../extensibility/language-services-and-the-core-editor.md)|介绍了语言服务和编辑器之间的交互。|  
 |[使用旧版 API 访问文本缓冲区](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|介绍如何使用传统的 API 访问的文本缓冲区。|  
 |[使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|介绍如何使用传统的 API 访问文本视图。|  

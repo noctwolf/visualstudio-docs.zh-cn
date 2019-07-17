@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192833"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "60068881"
   
 ### <a name="to-manually-create-a-performance-session"></a>手动创建性能会话  
   
-1. 在“分析”菜单上指向“探查器”，然后单击“新建性能会话”。  
+1. 在“分析”菜单上指向“探查器”，然后单击“新建性能会话”    。  
   
-     随即将向“性能资源管理器”中添加一个空性能会话。  
+     随即将向“性能资源管理器”中添加一个空性能会话  。  
   
-2. 右键单击“目标”，然后单击“添加目标二进制文件”。  
+2. 右键单击“目标”，然后单击“添加目标二进制文件”   。  
   
-3. 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”。  
+3. 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”   。  
   
      将添加一个新的二进制文件。  
   

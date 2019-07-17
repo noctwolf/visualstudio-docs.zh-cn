@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153836"
 ---
-# <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
+# <a name="how-to-create-a-package-manifest"></a>如何：创建包清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要部署应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 在不同的本地化版本之间共享的功能应进入产品清单。  

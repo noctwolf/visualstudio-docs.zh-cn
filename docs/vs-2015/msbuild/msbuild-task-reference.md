@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154109"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59662577"
 |参数|描述|  
 |---------------|-----------------|  
 |`Condition`|可选 `String` 参数。<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 引擎使用 `Boolean` 表达式来确定是否执行此任务。 有关 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 支持的条件的信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
-|`ContinueOnError`|可选参数。 可以包含下列值之一：<br /><br /> -   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。<br />-   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。<br />-   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。<br /><br /> 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。<br /><br /> 有关详细信息，请参阅[如何：忽略任务中的错误](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
+|`ContinueOnError`|可选参数。 可以包含下列值之一：<br /><br /> -   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。<br />-   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。<br />-   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。<br /><br /> 4\.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。<br /><br /> 有关详细信息，请参阅[如何：忽略任务中的错误](../msbuild/how-to-ignore-errors-in-tasks.md)。|  
   
 ## <a name="in-this-section"></a>本节内容  
  [任务基类](../msbuild/task-base-class.md)  
@@ -223,7 +223,7 @@ ms.locfileid: "59662577"
  将 XPath 查询指定的值设置为 XML 文件。  
   
  [XslTransformation 任务](../msbuild/xsltransformation-task.md)  
- 使用可扩展样式表语言转换 (XSLT) 或编译的 XSLT 转换 XML 输入，并将其输出到一台输出设备或一个文件。  
+ 使用可扩展样式表语言转换 (XSLT)  或编译的 XSLT 转换 XML 输入，并将其输出到一台输出设备或一个文件。  
   
 ## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

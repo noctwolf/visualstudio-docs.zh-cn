@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165777"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>演练：显示匹配的括号
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ ms.locfileid: "60084929"
 4. 当将左大括号之前插入符号时，该大括号和关闭的匹配大括号应突出显示。 时恰好在关闭的大括号后放置光标，该大括号和匹配的左大括号应突出显示。  
   
 ## <a name="see-also"></a>请参阅  
- [演练：将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -13,20 +13,20 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194461"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素（Visual Studio 项目模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定是否**位置**文本框中**新项目**启用、 禁用或隐藏项目模板对话框的。  
   
- \<VSTemplate>  
- \<TemplateData>  
- \<LocationField>  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<LocationField >  
   
 ## <a name="syntax"></a>语法  
   

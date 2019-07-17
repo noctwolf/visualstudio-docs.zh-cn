@@ -13,16 +13,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 56e446f217f752b45b2d8d98bf1f147c04dab748
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193267"
 ---
 # <a name="process-properties-dialog-box"></a>“进程属性”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用此对话框中，若要了解有关特定的进程的详细信息。 若要显示此对话框中，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”菜单中选择“属性”。  
+使用此对话框中，若要了解有关特定的进程的详细信息。 若要显示此对话框中，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”  菜单中选择“属性”  。  
   
  Windows 98 和 Windows 95 在操作系统上，修改版本的**常规**显示选项卡。  
   

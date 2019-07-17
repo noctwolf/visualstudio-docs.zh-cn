@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4f2f963ad2fbdad9453f6c6b853bc720034f613c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197079"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误：调试并不&#39;t 可能由于系统上启用了内核调试器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +49,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 - 将应用程序升级为使用 CLR 版本 4.0 或 4.5  
   
-     - 或 -  
+     — 或 —  
   
 - 禁用内核调试，并在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中进行调试。  
   
-     - 或 -  
+     — 或 —  
   
 - 使用内核调试器而不是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 进行调试。  
   
-     - 或 -  
+     — 或 —  
   
 - 在内核调试器中，禁用用户模式异常。  
   

@@ -17,11 +17,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194449"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ typedef LONG (*LPTEXTOUTPROC) (
  mesg_type  
  消息的类型。 下表列出了支持此参数的值。  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息将被视为信息、 警告或错误。|  
 |`SCC_MSG_STATUS`|显示状态消息，并可以在状态栏中显示。|  
@@ -61,7 +61,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="return-value"></a>返回值  
   
-|“值”|描述|  
+|值|描述|  
 |-----------|-----------------|  
 |SCC_MSG_RTN_OK|显示的字符串或操作已成功完成。|  
 |SCC_MSG_RTN_CANCEL|用户想要取消该操作。|  

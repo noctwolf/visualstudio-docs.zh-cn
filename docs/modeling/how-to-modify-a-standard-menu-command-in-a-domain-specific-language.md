@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263689"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890599"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 
@@ -55,7 +55,7 @@ ms.locfileid: "66263689"
 
 2. 在中**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中创建名为的新类文件`CommandSet.cs`。
 
-3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
+3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如:
 
     ```csharp
     using System;
@@ -65,7 +65,8 @@ ms.locfileid: "66263689"
     { internal partial class Language1CommandSet { ...
     ```
 
-     **请注意**如果类文件模板用于创建新文件，则必须更正的命名空间和类名。
+    > [!NOTE]
+    > 如果使用的类文件模板创建新文件，必须更正的命名空间和类名。
 
 ## <a name="override-the-command-methods"></a>重写命令方法
 

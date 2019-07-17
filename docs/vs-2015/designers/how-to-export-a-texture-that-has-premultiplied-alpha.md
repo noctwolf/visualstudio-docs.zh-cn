@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 61a53d8fca979fce04113aeb963e8cae94a49137
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159434"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含预乘 Alpha 的纹理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ ms.locfileid: "60108290"
   
 1. 从基本纹理开始。 加载现有图像文件，或根据[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)。  
   
-2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开纹理文件的快捷菜单，然后选择“属性”。 在“配置属性”，常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。  
+2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”  中，打开纹理文件的快捷菜单，然后选择“属性”  。 在“配置属性”  ，常规”  页上，将“项目类型”  属性设置为“图像内容管道”  。 请确保将“内容”  属性设置为“是”  ，并且将“从生成中排除”  设置为“否”  ，然后选择“应用”  按钮。 将出现“图像内容管道”  配置属性页。  
   
-3. 配置图像内容管道，生成预乘 Alpha。 在“配置属性”、“图像内容管道”、“常规”页上，将“转换为预乘 alpha 格式”属性设置为“是(/generatepremultipliedalpha)”。  
+3. 配置图像内容管道，生成预乘 Alpha。 在“配置属性”  、“图像内容管道”  、“常规”  页上，将“转换为预乘 alpha 格式”  属性设置为“是(/generatepremultipliedalpha)”  。  
   
-4. 选择“确定”  按钮。  
+4. 选择**确定**按钮。  
   
    生成项目后，图像内容管道将源图像从工作格式转换为指定的输出格式，其中包括将图像转换为预乘 Alpha 格式，该结果将复制到项目的输出目录中。

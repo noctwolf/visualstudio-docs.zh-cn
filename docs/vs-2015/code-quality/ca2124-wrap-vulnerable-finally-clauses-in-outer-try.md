@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385998"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890942"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124:在外部 try 块中包装易受攻击的 finally 子句
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63385998"
  此规则查找`try` / `finally`面向的 1.0 和 1.1 版的代码中的块，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]可能容易受到恶意的异常筛选器存在于调用堆栈中。 如果模拟等敏感操作发生在 try 块中，且会引发异常，该筛选器可以执行之前`finally`块。 对于模拟的示例中，这意味着该筛选器将执行作为被模拟用户。 筛选器是目前仅在 Visual Basic 中实施。
 
 > [!WARNING]
-> **请注意**2.0 及更高版本的版本中[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，在运行时自动保护`try` / `catch` /  `finally`重置发生的情况下阻止从恶意的异常筛选器在方法内直接包含在异常块。
+> 在版本 2.0 及更高版本的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，运行时自动保护`try` / `catch` /  `finally`重置该方法内直接发生的情况下阻止从恶意的异常筛选器，包含异常块。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  放置未包装`try` / `finally`在外部 try 块中。 请参阅后面的第二个示例。 这会强制`finally`之前筛选器代码执行。

@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8b7ff3d848a7a94245a7b30f29347f59e8a2369c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164184"
 ---
 # <a name="functiontype"></a>FunctionType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58936267"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|`DWORD`|值之一[CV_call_e 枚举](../../debugger/debug-interface-access/cv-call-e.md)。|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|此函数 （或方法） 是的成员的类。|  

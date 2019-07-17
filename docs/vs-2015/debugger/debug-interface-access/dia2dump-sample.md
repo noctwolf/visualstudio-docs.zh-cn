@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197598"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump 示例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Dia2dump 示例随 Visual Studio 安装，并包含 Dia2dump.cpp 源文件。 �
   
 2. 在项目属性页中**C /C++**  &#124; **常规** &#124; **附加包含目录**属性，指定`..\DIA SDK\include`目录。 这可确保编译器可以找到 dia2.h 文件。  
   
-3. 在“生成”菜单上，单击“重新生成解决方案”。  
+3. 在“生成”菜单上，单击“重新生成解决方案”   。  
   
 4. 关闭 Visual Studio。  
   
@@ -52,4 +52,4 @@ Dia2dump 示例随 Visual Studio 安装，并包含 Dia2dump.cpp 源文件。 �
   
 ## <a name="see-also"></a>请参阅  
  [Dia2dump.cpp 源文件](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [如何：升级不成功的 Visual Studio 项目进行故障排除](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
+ [如何：升级 Visual Studio 项目失败疑难解答](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)

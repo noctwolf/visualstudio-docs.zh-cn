@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2::GetEngineInterface | Microsoft Docs
+title: IDebugQueryEngine2::GetEngineInterface |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12bdcf9de9731095a224f394cab13f3833f126de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158115"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ int GetEngineInterface( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `ppUnk`  
  [out]返回`IUnknown`对象表示调试引擎 (DE)，这可以与部署相关联的任何其他有效的接口的查询 (例如[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)或[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。  
   

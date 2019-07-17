@@ -24,16 +24,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157861"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>如何：在内存中向上或向下翻页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-在“内存”窗口或“反汇编”窗口中查看内存内容时，可以使用垂直滚动条在内存空间中上下移动。  
+在“内存”窗口或“反汇编”窗口中查看内存内容时，可以使用垂直滚动条在内存空间中上下移动   。  
   
 ### <a name="to-page-up-or-down-in-memory"></a>在内存中向上或向下翻页  
   

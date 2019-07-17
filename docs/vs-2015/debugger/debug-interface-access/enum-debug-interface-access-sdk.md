@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eeafdbb36cd1bba22b1f00eca3ae66b704316df3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164368"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>枚举（调试接口访问 SDK）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58935814"
 ## <a name="properties"></a>属性  
  下表显示此符号类型的其他有效属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|之一[BasicType 枚举](../../debugger/debug-interface-access/basictype.md)值。|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|类的此枚举中，如果有父对象。|  

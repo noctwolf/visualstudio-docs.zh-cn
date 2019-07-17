@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901194"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890923"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：在 C 中编写可视化工具\#
 本演练演示如何使用 C# 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具不是特别有用，但它显示创建更有用的其他数据类型的可视化工具时必须遵循的基本步骤。
@@ -38,10 +38,10 @@ ms.locfileid: "62901194"
 1. 创建一个新类库项目。
 
     ::: moniker range=">=vs-2019"
-    按 Esc 关闭启动窗口。 类型**Ctrl + Q**若要打开搜索框中，键入**类库**，选择**模板**，然后选择**创建新的类库 (.NET Standard)**. 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口  。 类型**Ctrl + Q**若要打开搜索框中，键入**类库**，选择**模板**，然后选择**创建新的类库 (.NET Standard)** . 在出现的对话框中，选择“创建”  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在左窗格中**新的项目**对话框中的**Visual C#** ，选择 **.NET Standard**，然后在中间窗格中选择**Class Library (。NET Standard)**。
+    在顶部菜单栏，依次选择“文件”   > “新建”   > “项目”  。 在左窗格中**新的项目**对话框中的**Visual C#** ，选择 **.NET Standard**，然后在中间窗格中选择**Class Library (。NET Standard)** 。
     ::: moniker-end
 
 2. 键入正确的类库，名称类似于`MyFirstVisualizer`，然后单击**创建**或**确定**。
@@ -63,7 +63,7 @@ ms.locfileid: "62901194"
 
     您可以找到在 DLL  *\<Visual Studio 安装目录 > \Common7\IDE\PublicAssemblies* Visual Studio 的安装目录的子目录。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
 6. 在 DebuggerSide.cs 中，将下面的语句添加到 `using` 语句中：
 
@@ -91,7 +91,7 @@ ms.locfileid: "62901194"
 
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>重写 DialogDebuggerVisualizer.Show 方法
 
-- 在 `public class DebuggerSide` 中添加下面的方法：
+- 在 `public class DebuggerSide` 中添加下面的方法  ：
 
   ```csharp
   protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
@@ -109,7 +109,7 @@ ms.locfileid: "62901194"
 
     您可以找到在 DLL *C:\Windows\Microsoft.NET\Framework\v4.0.30319*。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
 4. 在 DebuggerSide.cs 中，将下面的语句添加到 `using` 语句中：
 
@@ -170,10 +170,10 @@ ms.locfileid: "62901194"
 1. 在解决方案资源管理器，右键单击该解决方案中，选择**外**，然后单击**新项目**。
 
     ::: moniker range=">=vs-2019"
-    在搜索框中，键入**控制台应用程序**，选择**模板**，然后选择**创建一个新的控制台应用 (.NET Framework)**。 在出现的对话框中，选择“创建”。
+    在搜索框中，键入**控制台应用程序**，选择**模板**，然后选择**创建一个新的控制台应用 (.NET Framework)** 。 在出现的对话框中，选择“创建”  。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    在顶部菜单栏，依次选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”。
+    在顶部菜单栏，依次选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”     。
     ::: moniker-end
 
 2. 键入正确的类库，名称类似于`MyTestConsole`，然后单击**创建**或**确定**。
@@ -186,13 +186,13 @@ ms.locfileid: "62901194"
 
 2. 在中**添加引用**对话框中，**浏览**选项卡上，选择 Microsoft.VisualStudio.DebuggerVisualizers.DLL。
 
-3. 单击 **“确定”**。
+3. 单击 **“确定”** 。
 
 4. 右键单击**MyTestConsole** ，然后选择**添加引用**试。
 
 5. 在中**添加引用**对话框中，单击**项目**选项卡，然后单击 MyFirstVisualizer。
 
-6. 单击 **“确定”**。
+6. 单击 **“确定”** 。
 
    现在，你将添加代码以完成测试套。
 
@@ -202,7 +202,8 @@ ms.locfileid: "62901194"
 
 2. 编辑而言更有意义，例如 TestConsole.cs 中 Program.cs 的名称。
 
-    **请注意** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] TestConsole.cs 以匹配新的文件名称中的类声明将自动更改。
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动更改 TestConsole.cs 以匹配新的文件名称中的类声明。
 
 3. 在 TestConsole.cs，将以下代码添加到`using`语句：
 
@@ -223,7 +224,7 @@ ms.locfileid: "62901194"
 
 1. 在中**解决方案资源管理器**，右键单击**MyTestConsole** ，然后选择**设为启动项目**快捷菜单上。
 
-2. 在“调试”菜单上选择“启动”。
+2. 在“调试”菜单上选择“启动”   。
 
     控制台应用程序启动和可视化工具显示并显示字符串"Hello，World"。
 
@@ -239,15 +240,15 @@ ms.locfileid: "62901194"
 
 ### <a name="to-create-a-new-class-library"></a>若要创建新的类库
 
-1. 在“文件”菜单上，选择“新建”>“项目”。
+1. 在“文件”菜单上，选择“新建”>“项目”   。
 
-2. 在中**新的项目**对话框中的**Visual C#**，选择 **.NET Standard**。
+2. 在中**新的项目**对话框中的**Visual C#** ，选择 **.NET Standard**。
 
 3. 在中间窗格中，选择**类库**。
 
 4. 在中**名称**框中，键入为类库，如 MySecondVisualizer 的合适名称。
 
-5. 单击 **“确定”**。
+5. 单击 **“确定”** 。
 
    现在，可以将可视化工具项添加到它：
 
