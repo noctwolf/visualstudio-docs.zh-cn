@@ -9,11 +9,11 @@ caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147167"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
 ### <a name="installing-from-visual-studio"></a>从 Visual Studio 安装  
   
-1. 在标准菜单上，依次选择“工具”和“扩展和更新”。  
+1. 在标准菜单上，依次选择“工具”  和“扩展和更新”  。  
   
-2. 依次展开“联机”、“Visual Studio 库”和“工具”。 选择“测试”。  
+2. 依次展开“联机”  、“Visual Studio 库”  和“工具”  。 选择“测试”  。  
   
 3. 浏览列表以查找框架。  
   
-4. 依次选择框架和“下载”。  
+4. 依次选择框架和“下载”  。  
   
    有关详细信息，请参阅[查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)。  
   
@@ -44,7 +44,7 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
 1. 打开 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。  
   
-2. 在“查找”框中键入框架名称。  
+2. 在“查找”  框中键入框架名称。  
   
 3. 在结果列表中选择框架以导航到用于该工具的 Visual Studio 库页面。  
   
@@ -52,9 +52,9 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
 4. 打开 [Visual Studio Marketplace](https://marketplace.visualstudio.com)。  
   
-5. 选择“浏览”。  
+5. 选择“浏览”  。  
   
-6. 在“分类”列表中，展开“工具”节点，然后选择“测试”。  
+6. 在“分类”  列表中，展开“工具”  节点，然后选择“测试”  。  
   
 7. 在结果列表中选择框架以导航到用于该工具的 Visual Studio 库页面。  
   

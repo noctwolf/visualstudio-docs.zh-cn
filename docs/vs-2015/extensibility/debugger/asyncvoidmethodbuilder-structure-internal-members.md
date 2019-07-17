@@ -12,18 +12,18 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 770e66c4136379a24cee349b04fcc06f5278a379
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201098"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 结构 - 内部成员
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 本主题介绍的内部成员的<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>类。 有关此类的常规信息，请参阅<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>参考主题。  
   
- **Namespace**：<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   

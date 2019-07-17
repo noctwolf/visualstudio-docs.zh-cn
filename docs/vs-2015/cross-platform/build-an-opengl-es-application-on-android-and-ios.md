@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b9f5db4ccd70136b711f5bd221244418cf843485
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151152"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "60061653"
   
 #### <a name="to-create-a-new-project"></a>创建新项目  
   
-1. 打开 Visual Studio。 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 打开 Visual Studio。 在菜单栏上，依次选择“文件”  、“新建”  、“项目”  。  
   
-2. 在  “新建项目”对话框中，在 “模板”下，选择“Visual C++” 、 “跨平台”，然后选择  “OpenGLES 应用程序（Android、iOS）”模板。  
+2. 在  “新建项目”对话框中，在  “模板”下，选择“Visual C++”  、  “跨平台”，然后选择  “OpenGLES 应用程序（Android、iOS）”模板。  
   
 3. 为应用命名（例如 `MyOpenGLESApp`），然后选择 **确认**。  
   
@@ -68,13 +68,13 @@ ms.locfileid: "60061653"
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>若要生成并运行 Android 本机活动应用  
   
-1. 如果尚未选中，则从“解决方案平台”下拉列表中选择“x86”。  
+1. 如果尚未选中，则从“解决方案平台”  下拉列表中选择“x86”  。  
   
     ![将解决方案平台设置为 x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
     使用 x86 以面向适用于 Windows 的 Android 仿真程序。 如果你正面向一种设备，则基于设备处理器选择解决方案平台。 如果未显示  “解决方案平台”列表，则从  “添加/删除按钮”列表中选择  “解决方案平台”，然后选择你的平台。  
   
-2. 在 “解决方案资源管理器”中，打开 MyOpenGLESApp.Android.Packaging 项目的快捷菜单，然后选择“生成” 。  
+2. 在  “解决方案资源管理器”中，打开 MyOpenGLESApp.Android.Packaging 项目的快捷菜单，然后选择“生成”  。  
   
     ![生成 Android 打包项目](../cross-platform/media/cppmdd-opengles-andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
@@ -113,13 +113,13 @@ ms.locfileid: "60061653"
   
     ![运行 vcremote 的 Mac 终端窗口](../cross-platform/media/cppmdd-common-vcremote.png "CPPMDD_common_vcremote")  
   
-2. 如果尚未选中，则从“解决方案平台”下拉列表中选择“x86”。  
+2. 如果尚未选中，则从“解决方案平台”  下拉列表中选择“x86”  。  
   
     ![将解决方案平台设置为 x86](../cross-platform/media/cppmdd-opengles-solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")  
   
     使用 x86 面向 iOS 模拟器。 如果你正面向一种 iOS 设备，则基于设备处理器（通过是 ARM 处理器）选择解决方案平台。 如果未显示  “解决方案平台”列表，则从  “添加/删除按钮”列表中选择  “解决方案平台”，然后选择你的平台。  
   
-3. 在 “解决方案资源管理器”中，打开 MyOpenGLESApp.iOS.Application 项目的快捷菜单，然后选择“生成”。  
+3. 在  “解决方案资源管理器”中，打开 MyOpenGLESApp.iOS.Application 项目的快捷菜单，然后选择“生成”。  
   
     ![生成 iOS 应用程序项目](../cross-platform/media/cppmdd-opengles-iosbuild.png "CPPMDD_OpenGLES_iOSBuild")  
   

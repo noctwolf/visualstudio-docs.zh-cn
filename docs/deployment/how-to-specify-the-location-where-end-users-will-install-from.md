@@ -17,21 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd447f0d68eb729c0bd25a65e99e871d7927c49b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee3ce7e405a69dccd759e4c52bac84c28e431a4a
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898579"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890565"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定最终用户从中进行安装的位置
 发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，用户可以下载和安装应用程序的位置不一定是最初在其中发布应用程序的位置。 例如，在某些组织中开发人员可能会发布到暂存服务器，应用程序，然后管理员将移动应用程序到 Web 服务器。
 
- 在这种情况下，可以使用`Installation URL`属性来指定用户将可以下载应用程序的 Web 服务器。 这是必需的以便应用程序清单知道在何处查找更新。
+在这种情况下，可以使用`Installation URL`属性来指定用户将可以下载应用程序的 Web 服务器。 这是必需的以便应用程序清单知道在何处查找更新。
 
- `Installation URL`属性可以设置上**发布**页**项目设计器**。
+`Installation URL`属性可以设置上**发布**页**项目设计器**。
 
- **请注意**`Installation URL`也可以使用设置属性**发布向导**。 有关详细信息，请参阅[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+> [!NOTE]
+> `Installation URL`也可以使用设置属性**发布向导**。 有关更多信息，请参见[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
 
 ### <a name="to-specify-an-installation-url"></a>若要指定安装 URL
 

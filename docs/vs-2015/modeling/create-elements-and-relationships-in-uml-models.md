@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159636"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>在 UML 模型中创建元素和关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>对所有者调用 Create 方法  
- 方法名称的形式：`Create`*OwnedType*`()`。 例如：  
+ 方法名称的形式：`Create`*OwnedType*`()`。 例如:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4. 设置关系各端的属性。 始终有两个 `MemberEnds`。 例如：  
+4. 设置关系各端的属性。 始终有两个 `MemberEnds`。 例如:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  

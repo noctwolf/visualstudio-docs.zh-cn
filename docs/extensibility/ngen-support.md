@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02fe3ec6787eec0846f709ac65555260a3c03165
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343974"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891116"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>VSIX v3 中的 Ngen 支持
 
@@ -37,7 +37,7 @@ ms.locfileid: "66343974"
 
 1. **Ngen** （布尔值）-如果为 true，在 Visual Studio 安装程序将"ngen"程序集。
 2. **Ngen 应用程序**（字符串）-Ngen 提供使用应用程序的机会*app.config*为了解析程序集依赖项的文件。 此值应设置为应用程序的*app.config*你想要使用 （相对于 Visual Studio 安装目录）。
-3. **Ngen 体系结构**(enum)-本机编译您的程序集的体系结构。 选项为：。 NotSpecified b。 X86 c. X64 d。 全部
+3. **Ngen 体系结构**(enum)-本机编译您的程序集的体系结构。 选项为：。 NotSpecified b。 X86 c。 X64 d。 全部
 4. **Ngen 优先级**（1 到 3 之间的整数）-Ngen 优先级别所述[Ngen.exe 优先级别](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels)。
 
 下面我们来看**属性**中操作的窗口：
@@ -55,9 +55,10 @@ ms.locfileid: "66343974"
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**注意：** 如果您愿意，可以直接编辑.csproj 文件。
+> [!NOTE]
+> 如果您愿意，可以直接编辑.csproj 文件。
 
 ## <a name="extra-information"></a>额外信息
 

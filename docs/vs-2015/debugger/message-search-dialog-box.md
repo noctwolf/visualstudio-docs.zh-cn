@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6a2950ead23d2f1c6a5d1b4cb4d348a2937db4d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181190"
 ---
 # <a name="message-search-dialog-box"></a>“消息搜索”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58935959"
  **Type**  
  要搜索的消息类型。  
   
- **消息**  
+ **Message**  
  要搜索的消息 ID。  
   
  **搜索方向向上或向下**  

@@ -11,18 +11,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149064"
 ---
 # <a name="mchildren-field"></a>m_children 字段
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 使用此任务中注册的子任务的列表。  
   
- **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   

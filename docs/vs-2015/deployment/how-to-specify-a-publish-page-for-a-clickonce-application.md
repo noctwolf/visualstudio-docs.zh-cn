@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202160"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60098462"
   
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>若要指定一个 ClickOnce 应用程序的自定义 Web 页  
   
-1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择一个项目，然后在“项目”  菜单上单击“属性”  。  
   
 2. 选择**发布**窗格。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60098462"
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>若要防止每次发布的时启动发布页  
   
-1. 在“解决方案资源管理器” 中选择一个项目，然后在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器”  中选择一个项目，然后在“项目”  菜单上单击“属性”  。  
   
 2. 选择**发布**窗格。  
   

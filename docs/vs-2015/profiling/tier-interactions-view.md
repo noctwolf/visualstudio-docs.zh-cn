@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145522"
 ---
 # <a name="tier-interactions-view"></a>“层交互”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54791929"
   
 - 在主窗格中单击某个数据库调用节点时，该数据库调用的实例的数据会显示在详细信息窗格中。  
   
-  时间显示为毫秒数或 CPU 时钟计时周期数。 若要更改显示的时间单位，请单击“工具”菜单，单击“选项”，然后选择“将时间值显示为”选项中的一个。  
+  时间显示为毫秒数或 CPU 时钟计时周期数。 若要更改显示的时间单位，请单击“工具”  菜单，单击“选项”  ，然后选择“将时间值显示为”  选项中的一个。  
   
 ## <a name="master-pane"></a>主窗格  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**名称**|-   对于顶层行，是分析的进程或网页的名称。<br />-   对于数据库连接行，是承载数据库的服务器的名称。|  
 |**数据库**|数据库的名称（仅限数据库连接行）。|  
@@ -51,7 +51,7 @@ ms.locfileid: "54791929"
   
 ## <a name="database-connection-details-pane"></a>“数据库连接详细信息”窗格  
   
-|列|说明|  
+|列|描述|  
 |------------|-----------------|  
 |**命令文本**|请求的 SQL 查询。|  
 |**查询计数**|运行查询的次数。|  

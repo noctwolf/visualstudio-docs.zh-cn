@@ -13,18 +13,18 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12f865e7d4c44cfa4002b330ed85ec95f95a8ef9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200664"
 ---
 # <a name="debugger-components"></a>调试器组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器作为 VSPackage 实现和管理整个调试会话。 调试会话包括以下元素：  
   
-- **调试包：**[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器提供了相同的用户界面，不论正在调试。  
+- **调试包：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器提供了相同的用户界面，不论正在调试。  
   
 - **会话调试管理器 (SDM):** 提供了一致的编程接口到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器的各种的调试引擎管理。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   

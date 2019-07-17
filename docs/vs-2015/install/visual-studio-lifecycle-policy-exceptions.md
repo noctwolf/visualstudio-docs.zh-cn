@@ -10,11 +10,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180235"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Visual Studio 生命周期策略异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,4 +49,4 @@ Visual Studio 包含能够在多个 Microsoft 平台进行开发的编译器、�
 |[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|Windows 7 SDK|  
 |[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|Windows 8 SDK|  
 |[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|Windows 8.1 SDK<br /><br /> Windows JavaScript 库 (WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />请参阅[在线生命周期策略](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azu re 移动服务 SDK<br /><br /> Microsoft Azure 移动服务工具|
+|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> 另请参阅：[在线生命周期策略](http://support.microsoft.com/gp/OSSLpolicy)|Microsoft Azu re 移动服务 SDK<br /><br /> Microsoft Azure 移动服务工具|

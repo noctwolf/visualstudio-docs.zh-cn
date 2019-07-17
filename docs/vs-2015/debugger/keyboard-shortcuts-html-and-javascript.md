@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199681"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>键盘快捷键（HTML 和 JavaScript）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ ms.locfileid: "58936720"
 |操作|快捷键|  
 |------------|--------------|  
 |选择元素|Ctrl+B|  
-|使用“选择元素”时在显示和隐藏网页高亮框之间进行切换|Ctrl+Shift+I|  
-|使用“以 HTML 的形式编辑”提交更改|Ctrl+Enter|  
-|使用“以 HTML 的形式编辑”放弃更改|Esc|  
+|使用“选择元素”时在显示和隐藏网页高亮框之间进行切换 |Ctrl+Shift+I|  
+|使用“以 HTML 的形式编辑”提交更改 |Ctrl+Enter|  
+|使用“以 HTML 的形式编辑”放弃更改 |Esc|  
 |使选定的 CSS 值增加 1|向上键|  
 |使选定的 CSS 值减少 1|向下键|  
   

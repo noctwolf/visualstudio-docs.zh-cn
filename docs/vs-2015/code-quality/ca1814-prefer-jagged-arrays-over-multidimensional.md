@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201705"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814:与多维数组相比，首选使用交错数组
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

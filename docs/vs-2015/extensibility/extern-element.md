@@ -14,16 +14,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17477b7eb60aa332f6910019e28f4c53aa31ebf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204400"
 ---
 # <a name="extern-element"></a>Extern 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Extern 元素引用任何要在编译时合并使用.vsct 文件的外部标头 (.h) 文件。 要合并的文件必须位于包含路径提供给 VSCT 编译器或引用的[包括元素](../extensibility/include-element.md)。 这些文件可能是其他.vsct 文件或 c + + 标头文件。  
+Extern 元素引用任何要在编译时合并使用.vsct 文件的外部标头 (.h) 文件。 要合并的文件必须位于包含路径提供给 VSCT 编译器或引用的[包括元素](../extensibility/include-element.md)。 这些文件可能是其他.vsct 文件或C++标头文件。  
   
  标头文件中的定义必须是窗体的"#define [符号] [值]"的值可能是另一个符号，如果以前已定义。 定义可用于条件语句的命令项。 实际上未使用任何符号将被放弃。  
   

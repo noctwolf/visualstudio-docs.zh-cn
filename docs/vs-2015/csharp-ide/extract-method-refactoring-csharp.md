@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155252"
 ---
 # <a name="extract-method-refactoring-c"></a>提取方法重构 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "60041393"
   
      新的方法签名的预览显示在下**预览方法签名**。  
   
-5. 单击 **“确定”**。  
+5. 单击 **“确定”** 。  
   
 ## <a name="remarks"></a>备注  
  当你使用**提取方法**命令时，同一个类中的源成员之后插入新方法。  

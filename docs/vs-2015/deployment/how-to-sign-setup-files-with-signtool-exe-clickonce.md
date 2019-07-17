@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202176"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：用 SignTool.exe (ClickOnce) 对安装文件进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ ms.locfileid: "60053203"
   
 1. 在开发计算机上，安装想要用于对清单进行签名的证书。  
   
-2. 在解决方案资源管理器中，选择项目。  
+2. 在解决方案资源管理器中，选择项目  。  
   
-3. 在“项目”菜单上，单击“ProjectName”属性。  
+3. 在“项目”菜单上，单击“ProjectName”属性    。  
   
-4. 在“签名”页中，清除“为 ClickOnce 清单签名”。  
+4. 在“签名”页中，清除“为 ClickOnce 清单签名”   。  
   
-5. 在“发布”页中，单击“系统必备”。  
+5. 在“发布”页中，单击“系统必备”   。  
   
-6. 验证是否选中了所有系统必备，然后单击“确定”。  
+6. 验证是否选中了所有系统必备，然后单击“确定”  。  
   
-7. 在“发布”页中，验证发布设置，然后单击“立即发布”。  
+7. 在“发布”页中，验证发布设置，然后单击“立即发布”   。  
   
      该解决方案会将未签名的应用程序清单、未签名的部署清单、特定于版本的文件以及未签名的安装程序发布到发布文件夹位置。  
   
-8. 在“发布”页中，单击“系统必备”。  
+8. 在“发布”页中，单击“系统必备”   。  
   
-9. 在“系统必备”对话框中，清除“创建用于安装系统必备组件的安装程序”。  
+9. 在“系统必备”对话框中，清除“创建用于安装系统必备组件的安装程序”   。  
   
-10. 在“发布”页中，验证发布设置，然后单击“立即发布”。  
+10. 在“发布”页中，验证发布设置，然后单击“立即发布”   。  
   
      该解决方案会将签名的应用程序清单、签名的部署清单和特定于版本的文件发布到发布文件夹位置。 发布过程不会覆盖未签名的安装程序。  
   

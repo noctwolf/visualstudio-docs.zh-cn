@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179069"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60082381"
 ## <a name="highlighting-the-execution-hot-path"></a>突出显示执行热路径  
  可以找到调用树中创建了最多父类型对象的执行路径。  
   
-- 若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。  
+- 若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”  。  
   
 |列|描述|  
 |------------|-----------------|  

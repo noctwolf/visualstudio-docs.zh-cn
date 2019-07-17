@@ -9,11 +9,11 @@ caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ddbcac3073dec1e7f21d381d30978589f1cdd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185736"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充码针对单元测试将应用程序与程序集隔离
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ using (ShimsContext.Create()
   
 ### <a name="AddFakes"></a>添加 Fakes 程序集  
   
-1. 在“解决方案资源管理器”中，展开单元测试项目的“引用”。  
+1. 在“解决方案资源管理器”中，展开单元测试项目的“引用”  。  
   
-    - 如果使用的是 Visual Basic，必须选择解决方案资源管理器工具栏中的“显示所有文件”才能看到引用列表。  
+    - 如果使用的是 Visual Basic，必须选择解决方案资源管理器工具栏中的“显示所有文件”  才能看到引用列表。  
   
 2. 选择包含要为其创建填充码的类定义的程序集。 例如，如果要填充 DateTime，请选择 System.dll  
   
-3. 选择快捷菜单中的“添加 Fakes 程序集”。  
+3. 选择快捷菜单中的“添加 Fakes 程序集”  。  
   
 ### <a name="ShimsContext"></a>使用 ShimsContext  
  当在单元测试框架中使用填充码类型时，必须将测试代码包装在 `ShimsContext` 中，以便控制填充码的生存期。 如果未做此要求，您的填充码将一直持续到 AppDomain 关闭。 最简单的方法是使用静态 `ShimsContext` 方法创建一个 `Create()`，如下面的代码中所示：  

@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203969"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58933321"
 |特性|描述|  
 |---------------|-----------------|  
 |name|必需。 ID 符号名称。|  
-|值|必需。 ID 符号的数字 ID 值。|  
+|value|必需。 ID 符号的数字 ID 值。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue | Microsoft Docs
+title: IDebugObject::GetValue |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de6e6888cfce338ebcee90e722f07e900ce25d0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180536"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ int GetValue(
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pValue`  
  [in、 out]使用一系列连续的字节数表示的对象的值填充数组。  
   

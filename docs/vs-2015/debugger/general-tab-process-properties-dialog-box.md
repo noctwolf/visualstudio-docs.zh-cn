@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9256ca4141e9e4ec9e5ae218f1e5a11bf2fa5362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182281"
 ---
 # <a name="general-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“常规”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用“常规”选项卡了解更多有关特定进程的信息。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”菜单中选择“属性”。  
+使用“常规”  选项卡了解更多有关特定进程的信息。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”  菜单中选择“属性”  。  
   
- 在“常规”选项卡上可访问以下设置：  
+ 在“常规”  选项卡上可访问以下设置：  
   
 |条目|描述|  
 |-----------|-----------------|  

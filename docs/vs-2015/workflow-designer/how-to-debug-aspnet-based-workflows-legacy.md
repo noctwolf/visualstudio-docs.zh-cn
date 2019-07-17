@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144658"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>如何：调试基于 ASP.NET 的工作流（旧版）
 本主题介绍如何在旧 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 中，调试基于 [!INCLUDE[wf](../includes/wf-md.md)] 并面向 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] 的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序。  
@@ -46,9 +46,9 @@ ms.locfileid: "60069592"
   
 7. 选择**调试这些代码类型**，然后选择**工作流**。  
   
-8. 单击 **“确定”**。  
+8. 单击 **“确定”** 。  
   
-9. 单击 **“附加”**。  
+9. 单击 **“附加”** 。  
   
 10. 打开浏览器中的默认网页并启动工作流。  
   

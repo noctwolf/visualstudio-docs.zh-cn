@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146592"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 C++ 的 Visual Studio Data Tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59653055"
   
     ![SSMS 将附加的数据库](../data-tools/media/raddata-ssms-attach-database.png "raddata SSMS 附加数据库")  
   
-4. 下载 ODBC Windows SDK 示例中，并将其解压缩到新位置。 此示例演示用于连接到数据库并发出查询和命令的基本 ODBC 命令。 您可以了解有关在这些函数的详细信息[Microsoft 开放式数据库连接 (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx)。 首次加载解决方案 (在C++文件夹)，Visual Studio 将提供的用于升级到当前版本的 Visual Studio 的解决方案。 单击 **“是”**。  
+4. 下载 ODBC Windows SDK 示例中，并将其解压缩到新位置。 此示例演示用于连接到数据库并发出查询和命令的基本 ODBC 命令。 您可以了解有关在这些函数的详细信息[Microsoft 开放式数据库连接 (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx)。 首次加载解决方案 (在C++文件夹)，Visual Studio 将提供的用于升级到当前版本的 Visual Studio 的解决方案。 单击 **“是”** 。  
   
 5. 若要使用的本机客户端，您需要其标头文件和 lib 文件。 这些文件包含函数和特定于 SQL Server，超出 sql.h 中定义的 ODBC 函数定义。 在中**项目** > **属性** > **VC + + 目录**，添加以下包含目录：  
   
@@ -63,7 +63,7 @@ ms.locfileid: "59653055"
    DRIVER="SQL Server Native Client 11.0"  
    ```  
   
-8. 按 F5 生成并运行该应用程序。 应看到一个对话框会提示你输入的数据库驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 按“确定”。 应会看到具有消息，以表明成功的连接的控制台。 此外应该看到命令提示符下可以在其中键入 SQL 语句中。 以下屏幕显示的示例查询和结果：  
+8. 按 F5 生成并运行该应用程序。 应看到一个对话框会提示你输入的数据库驱动程序中。 输入`(localdb)\MSSQLLocalDB`，并检查**使用信任连接**。 按“确定”  。 应会看到具有消息，以表明成功的连接的控制台。 此外应该看到命令提示符下可以在其中键入 SQL 语句中。 以下屏幕显示的示例查询和结果：  
   
     ![ODBC 示例查询输出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 示例查询输出")  
   

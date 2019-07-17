@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2e975f75d25e64925c2566c1c311d942e9c3766
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934016"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68180988"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-检索一个标志，指示符号是否与组共享本地变量在编译 c + + AMP 快捷键代码相对应。  
+检索一个标志，指示符号是否与组共享本地变量在编译的代码相对应C++AMP 快捷键。  
   
 ## <a name="syntax"></a>语法  
   
@@ -32,7 +32,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]一个指向`BOOL`，该值指示符号是否与组共享本地变量在编译 c + + AMP 快捷键代码相对应。 如果`TRUE`，则`get_baseDataSlot`和`get_baseDataOffset`方法可用于获取变量的存储位置信息。  
+ [out]一个指向`BOOL`，该值指示符号是否与组共享本地变量在编译的代码相对应C++AMP 快捷键。 如果`TRUE`，则`get_baseDataSlot`和`get_baseDataOffset`方法可用于获取变量的存储位置信息。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
