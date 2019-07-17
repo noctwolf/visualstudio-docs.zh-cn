@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf274bb0f572da11a9aa43248da7eaa72a2e73c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150423"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ HRESULT findChildren ( 
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `parent`  
  [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示父对象。 如果此父符号是函数、 模块或块，则返回其子词法`ppResult`。 如果父符号是一种类型，则返回其子类。 如果此参数为`NULL`，然后`symtag`必须设置为`SymTagExe`或`SymTagNull`，这会返回全局作用域 （.exe 文件）。  
   

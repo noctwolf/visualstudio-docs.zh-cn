@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 580a021a85d1211932c248ddc925a49e95e1cf13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142562"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201:不要引发保留的异常类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

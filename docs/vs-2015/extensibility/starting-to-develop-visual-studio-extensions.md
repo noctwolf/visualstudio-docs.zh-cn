@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d8050ea7447a67f50f42157d57c17d3f1f8a329
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160584"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "60038627"
 
 - VSIX 项目模板：[VSIX 项目模板入门](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-- Visual Studio 独立 shell:[演练：创建基本的独立的 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+- Visual Studio 独立 shell:[演练：创建基本的独立 Shell 应用程序](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>如何获取我的扩展以类似于 Visual Studio？
  设计为在扩展插件的 UI 获取不错的提示[Visual Studio 用户体验指南](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。

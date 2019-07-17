@@ -11,13 +11,13 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160538"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>替换字符串中使用。Pkgdef 和。Pkgundef 文件
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>.Pkgdef 和 .Pkgundef 文件中使用的替换字符串
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以使用在.pkgdef 下面列出的替换字符串和.pkgundef 文件定义为您的 Visual Studio 独立 shell 应用程序。  
@@ -35,7 +35,7 @@ ms.locfileid: "58930985"
 |$PackageFolder$|包含应用程序的包程序集文件的目录的完整路径。|  
 |$ProgramFiles$|%Programfiles%环境变量的值。|  
 |$RootFolder$|应用程序的根目录的完整路径。|  
-|$RootKey$|应用程序的的根注册表项。 默认情况下是 HKEY_CURRENT_USER\Software\\*CompanyName*\\*ProjectName*\\*VersionNumber* （当应用程序正在运行，_Config 追加到此密钥）。 设置中的 RegistryRoot 值*SolutionName*.pkgdef 文件。<br /><br /> $RootKey$ 字符串可用于检索应用程序子项下的注册表值。 例如，字符串"$= $RootKey$ \AppIcon$"将返回应用程序根子项下的 AppIcon 条目的值。<br /><br /> 分析器按顺序处理.pkgdef 文件，并可以访问应用程序子项下的注册表项，仅当该条目之前已定义|  
+|$RootKey $|应用程序的的根注册表项。 默认情况下是 HKEY_CURRENT_USER\Software\\*CompanyName*\\*ProjectName*\\*VersionNumber* （当应用程序正在运行，_Config 追加到此密钥）。 设置中的 RegistryRoot 值*SolutionName*.pkgdef 文件。<br /><br /> $RootKey$ 字符串可用于检索应用程序子项下的注册表值。 例如，字符串"$= $RootKey$ \AppIcon$"将返回应用程序根子项下的 AppIcon 条目的值。<br /><br /> 分析器按顺序处理.pkgdef 文件，并可以访问应用程序子项下的注册表项，仅当该条目之前已定义|  
 |$ShellFolder$|Visual Studio 的安装位置的位置的完整路径。|  
 |$System$|Windows\system32 文件夹中。|  
 |$WINDIR $|Windows 文件夹中。|  

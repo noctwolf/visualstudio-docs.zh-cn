@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176957"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>帮助器类和托管代码的方法
  对于托管代码，shell 的托管包框架库 (Microsoft.VisualStudio.Shell.12.0.dll) 包含几个帮助程序类促进使用主题颜色。
 
- 中的帮助器方法**Microsoft.VisualStudio.Shell.VsColors** MPF 中的类包括**GetThemedGDIColor()** 并**GetThemedWPFColor()**。 这些帮助器方法返回为 System.Drawing.Color 或 System.Windows.Media.Color，若要在 WinForms 或 WPF UI 中使用的主题项的颜色值。
+ 中的帮助器方法**Microsoft.VisualStudio.Shell.VsColors** MPF 中的类包括**GetThemedGDIColor()** 并**GetThemedWPFColor()** 。 这些帮助器方法返回为 System.Drawing.Color 或 System.Windows.Media.Color，若要在 WinForms 或 WPF UI 中使用的主题项的颜色值。
 
 ```
 IVsUIShell5 shell5;
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  填充注册表具有两个值：
 
-|名称|类型|数据|描述|
+|name|类型|数据|描述|
 |----------|----------|----------|-----------------|
 |类别|REG_SZ|GUID|创建标识类别的 GUID|
 |package|REG_SZ|GUID|支持类别的 VSPackage 服务的 GUID|

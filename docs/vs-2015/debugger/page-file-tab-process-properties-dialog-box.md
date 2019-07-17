@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24fdba37be2373623d94f03e45dc5e8a41a74b84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192719"
 ---
 # <a name="page-file-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“页文件”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用**页面文件**选项卡以查看进程的分页文件。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”菜单中选择“属性”。  
+使用**页面文件**选项卡以查看进程的分页文件。 若要显示[“进程属性”对话框](../debugger/process-properties-dialog-box.md)，请将焦点移至[进程视图](../debugger/processes-view.md)窗口。 选择树中的任何进程节点，然后从“视图”  菜单中选择“属性”  。  
   
  以下设置位于**页面文件**选项卡：  
   

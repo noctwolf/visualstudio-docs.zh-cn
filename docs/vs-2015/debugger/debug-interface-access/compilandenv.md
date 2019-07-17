@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dfa9f1efa266a95e0580717b06cee4b9d2a7725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164446"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58933500"
 ## <a name="properties"></a>属性  
  下表显示适用于此符号类型的属性。  
   
-|属性|数据类型|描述|  
+|Property|数据类型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|父编译单位符号。|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|词法父符号的 ID。|  

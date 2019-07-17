@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 362e50e20519c358564d13ba169f706fe384ca5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152763"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中断模式中的表达式计算
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60116220"
   
 3. 如果 ParseText 不会返回 S_OK，则返回错误的原因。  
   
-     -otherwise-  
+     -否则为-  
   
      如果 ParseText 不返回 S_OK，SDM 可以然后调用[IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)以获取从分析得出的表达式的最终值。  
   

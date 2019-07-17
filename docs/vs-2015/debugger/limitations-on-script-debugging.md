@@ -19,11 +19,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ea088eadc09d45d576dd3c9cd33e5d9e2d79fc8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160632"
 ---
 # <a name="limitations-on-script-debugging"></a>脚本调试的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60048549"
 - 对于 `<script id="">` 块中设置的断点，断点映射将忽略 `id` 特性。  
   
 ## <a name="breakpoint-mapping-and-duplicate-lines"></a>断点映射和重复行  
- 为了查找服务器端脚本和客户端脚本中的对应位置，断点映射算法将逐行检查代码。 该算法假定每一行都是唯一的。 如果有两行或更多行包含相同的代码，而断点设置在其中一个重复行上，则断点映射算法可能会在客户端文件中选择错误的重复行。 若要避免这种情况，请向设置了断点的行中添加一条注释。 例如：  
+ 为了查找服务器端脚本和客户端脚本中的对应位置，断点映射算法将逐行检查代码。 该算法假定每一行都是唯一的。 如果有两行或更多行包含相同的代码，而断点设置在其中一个重复行上，则断点映射算法可能会在客户端文件中选择错误的重复行。 若要避免这种情况，请向设置了断点的行中添加一条注释。 例如:  
   
 ```  
 i++ ;  

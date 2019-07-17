@@ -11,11 +11,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58930982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180300"
 ---
 # <a name="language-services-and-the-core-editor"></a>语言服务和核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58930982"
  有关详细信息，请参阅[在项目中确定哪个编辑器打开文件](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)。  
   
 ## <a name="language-services-and-the-core-editor"></a>语言服务和核心编辑器  
- 通过实现语言服务时，可以控制数据在文档视图中的显示方式。 语言服务提供的信息和特定于给定语言，例如 Visual c + + 的行为。 文本缓冲区时创建文本缓冲区，并确定要打开的文档的文件名扩展名，确定与从注册表项，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors 此文件扩展名关联的语言服务\\{YourLanguageService GUID} \Extensions。 然后加载过程的标准 VSPackage 加载你的 VSPackage，并创建语言服务的实例。  
+ 通过实现语言服务时，可以控制数据在文档视图中的显示方式。 语言服务都会提供信息和特定于给定语言，如视觉对象的行为C++。 文本缓冲区时创建文本缓冲区，并确定要打开的文档的文件名扩展名，确定与从注册表项，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors 此文件扩展名关联的语言服务\\{YourLanguageService GUID} \Extensions。 然后加载过程的标准 VSPackage 加载你的 VSPackage，并创建语言服务的实例。  
   
  基本语言服务是在下图中所示。  
   

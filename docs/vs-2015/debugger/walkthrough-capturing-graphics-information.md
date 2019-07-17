@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151461"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>演练：捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ ms.locfileid: "60053879"
   
 1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，为你希望从中捕获图形信息的应用加载项目或解决方案文件。  
   
-2. 在“图形诊断”工具栏上，选择“启动诊断” 。  
+2. 在“图形诊断”工具栏上，选择“启动诊断”  。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>不加载项目或解决方案而启用图形信息捕获  
   
-1. 在菜单栏上，依次选择 **“文件”**、 **“打开”** 和 **“项目/解决方案”**。 此时将出现“打开项目”  对话框。  
+1. 在菜单栏上，依次选择 **“文件”** 、 **“打开”** 和 **“项目/解决方案”** 。 此时将出现“打开项目”  对话框。  
   
-2. 不为应用指定项目或解决方案文件，而是为其指定你希望从中捕获图形信息的可执行文件，然后选择“打开” 。  
+2. 不为应用指定项目或解决方案文件，而是为其指定你希望从中捕获图形信息的可执行文件，然后选择“打开”  。  
   
-3. 在菜单栏上，依次选择 **“调试”**、 **“图形”**、 **“启动诊断”**。  
+3. 在菜单栏上，依次选择 **“调试”** 、 **“图形”** 、 **“启动诊断”** 。  
   
    在启动应用并且它呈现帧之后，您可捕获图形信息。  
   

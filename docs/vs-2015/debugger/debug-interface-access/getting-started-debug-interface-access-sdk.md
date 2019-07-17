@@ -15,20 +15,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54f83f00ed2e99d1541e15092cb3ee0ce9e08952
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164176"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-调试接口访问 (DIA) SDK 将向您提供指导文档和示例，说明了如何使用 DIA API。 在 DIA SDK 中使用接口和方法，可以开发自定义应用程序打开的文件.pdb 和.dbg 文件并搜索其内容的符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了与 c + + 应用程序中的符号关联的属性引用表。  
+调试接口访问 (DIA) SDK 将向您提供指导文档和示例，说明了如何使用 DIA API。 在 DIA SDK 中使用接口和方法，可以开发自定义应用程序打开的文件.pdb 和.dbg 文件并搜索其内容的符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了引用表中找到与符号关联的属性C++应用程序。  
   
  若要充分利用 DIA SDK，应熟悉以下：  
   
-- C + + 编程语言  
+- C++编程语言  
   
 - COM 编程  
   

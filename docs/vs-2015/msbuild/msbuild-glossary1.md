@@ -10,11 +10,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154842"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 词汇表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "54768982"
 
  批处理
 
- 批处理是指根据项元数据，将项划分为不同类别（称为批次），然后使用每个批次运行目标或任务。 批处理相当于 MSBuild for 循环构造。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。
+ 批处理是指根据项元数据，将项划分为不同类别（称为批次  ），然后使用每个批次运行目标或任务。 批处理相当于 MSBuild for 循环构造。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。
 
  生成范围
 

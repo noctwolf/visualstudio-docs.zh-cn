@@ -11,11 +11,11 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b14b59465b94ddd0a09748f0e309166bf3d4114
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148879"
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练：通过编辑器扩展访问 DTE 对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

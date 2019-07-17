@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159628"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,13 +62,13 @@ ms.locfileid: "60107159"
   
 1. 将计算的域属性添加到域类。 在中**属性**窗口中，设置以下值：  
   
-     **IsBrowsable =**`False`**-这将隐藏来自用户的属性**  
+     **IsBrowsable =** `False` **-这将隐藏来自用户的属性**  
   
-     **类型 =**`Calculated`**-这意味着您将在提供计算其值的代码**  
+     **类型 =** `Calculated` **-这意味着您将在提供计算其值的代码**  
   
      **名称**例如**DecoratorControl**  
   
-     **Type** = `Boolean`  
+     **类型** = `Boolean`  
   
      有关详细信息，请参阅[计算和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。  
   
@@ -92,7 +92,7 @@ ms.locfileid: "60107159"
   
 6. 请注意缺少的命名空间、 类和方法。  例如，Company.FamilyTree.Person.GetDecoratorControlValue()。  
   
-7. 在单独的代码文件中编写分部类定义包含缺少的方法。 例如：  
+7. 在单独的代码文件中编写分部类定义包含缺少的方法。 例如:  
   
     ```  
     namespace Company.FamilyTree  

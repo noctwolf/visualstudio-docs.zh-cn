@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192764"
 ---
 # <a name="graphics-event-call-stack"></a>图形事件调用堆栈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Visual Studio 图形分析器中的图形事件调用堆栈可帮助你映射有
 |**位置**|调用站点行号。|  
   
 ### <a name="links-to-graphics-objects"></a>指向图形对象的链接  
- 若要了解选定的图形事件，你可能需要了解与它关联的 Direct3D 对象的有关信息。 “图形事件调用堆栈”窗口提供了指向这一信息的链接。  
+ 若要了解选定的图形事件，你可能需要了解与它关联的 Direct3D 对象的有关信息。 “图形事件调用堆栈”窗口提供了指向这一信息的链接  。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：因顶点着色而缺少对象](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)

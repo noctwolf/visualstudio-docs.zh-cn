@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155711"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58934304"
   
 #### <a name="to-create-and-publish-a-clickonce-project"></a>若要创建和发布一个 ClickOnce 项目  
   
-1. 单击**新的项目**从**文件**菜单。 此时将出现“新建项目”对话框。  
+1. 单击**新的项目**从**文件**菜单。 此时将出现“新建项目”  对话框。  
   
 2. 选择**Windows 应用程序**并将其命名`CmdLineDemo`。  
   

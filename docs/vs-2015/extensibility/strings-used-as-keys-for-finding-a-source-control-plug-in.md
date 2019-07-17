@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160575"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>作为用于查找源代码管理插件的密钥的字符串
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58937151"
   
 ## <a name="string-keys-and-values"></a>字符串键和值  
   
-|键|值|  
+|Key|值|  
 |---------|-----------|  
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|  
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  

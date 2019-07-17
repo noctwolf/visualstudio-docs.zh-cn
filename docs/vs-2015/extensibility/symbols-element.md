@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c8d28d225bd3a8d5c105bf54b9c63574002aed15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160464"
 ---
 # <a name="symbols-element"></a>Symbols 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ ms.locfileid: "58935231"
   
 |特性|描述|  
 |---------------|-----------------|  
-|None||  
+|无||  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|GuidSymbol|定义在 GUID 符号。 GuidSymbol 有两个必需的属性： 名称和值。 名称为符号的名称，值为 GUID 字符串形式的值。<br /><br /> For example:\<GuidSymbol name="guidVsPackage1Pkg"   value="{c5f54698-101a-4846-84d3-dc748f9cd848}" />|  
+|GuidSymbol|定义在 GUID 符号。 GuidSymbol 有两个必需的属性： 名称和值。 名称为符号的名称，值为 GUID 字符串形式的值。<br /><br /> 例如：\<GuidSymbol 名称 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
 |IDSymbol|定义的符号。 IDSymbol 有两个必需的属性： 名称和值。 名称为符号的名称，值为字符串形式的符号的值。<br /><br /> 例如：\<IDSymbol 名称 ="MyMenuGroup"value ="0x1020"/ >|  
   
 ### <a name="parent-elements"></a>父元素  

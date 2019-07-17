@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150341"
 ---
 # <a name="concurrency-visualizer-sdk"></a>并发可视化工具 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-可通过使用并发可视化工具 SDK 检测源代码，以在并发可视化工具中显示附加信息。 可以在代码中将其他数据与阶段和事件关联。 这些其他的可视化被称为标记。  有关介绍性演练，请参阅 [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405)（并发可视化工具 SDK 简介）。  
+可通过使用并发可视化工具 SDK 检测源代码，以在并发可视化工具中显示附加信息。 可以在代码中将其他数据与阶段和事件关联。 这些其他的可视化被称为标记  。  有关介绍性演练，请参阅 [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405)（并发可视化工具 SDK 简介）。  
   
 ## <a name="properties"></a>属性  
  标志、范围和消息都具有两个属性：类别和重要性。 在[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中，可以使用以下属性来筛选显示的标记集。 此外，这些属性还会影响标记的视觉表示形式。 例如，标志的大小用于表示重要性。 此外，颜色用于指示类别。  
@@ -34,9 +34,9 @@ ms.locfileid: "60063785"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>向 C# 或 Visual Basic 项目添加 SDK 支持  
   
-1. 在菜单栏上，选择“分析”、“并发可视化工具”和“将 SDK 添加到项目中”。  
+1. 在菜单栏上，选择“分析”  、“并发可视化工具”  和“将 SDK 添加到项目中”  。  
   
-2. 选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”按钮。  
+2. 选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”  按钮。  
   
 3. 向代码添加 Imports 或 Using 语句。  
   
@@ -53,9 +53,9 @@ ms.locfileid: "60063785"
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>向 C++ 或 C 项目添加 SDK 支持  
   
-1. 在菜单栏上，选择“分析”、“并发可视化工具”和“将 SDK 添加到项目中”。  
+1. 在菜单栏上，选择“分析”  、“并发可视化工具”  和“将 SDK 添加到项目中”  。  
   
-2. 选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”按钮。  
+2. 选择想要在其中访问 SDK 的项目，然后选择“将 SDK 添加到所选项目中”  按钮。  
   
 3. 对于 C++，请包括 `cvmarkersobj.h`。 对于 C，请包括 `cvmarkers.h`。  
   
@@ -81,13 +81,13 @@ ms.locfileid: "60063785"
   
 1. 创建 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> 对象。  构造函数采用一个 GUID。  
   
-2. 若要注册该提供程序，请打开并发可视化工具的[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”选项卡，然后选择“添加新提供程序”按钮。 在[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。  
+2. 若要注册该提供程序，请打开并发可视化工具的[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”  选项卡，然后选择“添加新提供程序”  按钮。 在[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>在 C++ 或 C 项目中使用新的标记提供程序  
   
 1. 使用 `CvInitProvider` 函数初始化 PCV_PROVIDER。  构造函数采用 GUID* 和 PCV_PROVIDER\*。  
   
-2. 若要注册该提供程序，请打开[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”选项卡，然后选择“添加新提供程序”按钮。 在此对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。  
+2. 若要注册该提供程序，请打开[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框。  选择“标记”  选项卡，然后选择“添加新提供程序”  按钮。 在此对话框中，输入用于创建该提供程序和该提供程序说明的 GUID。  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>在 C# 或 Visual Basic 项目中使用标记系列  
   

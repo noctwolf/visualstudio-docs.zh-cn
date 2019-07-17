@@ -12,13 +12,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159269"
 ---
-# <a name="servicing-guidelines-for-isolated-shell-applications"></a>独立的 Shell 应用程序的服务指南
+# <a name="servicing-guidelines-for-isolated-shell-applications"></a>独立 Shell 应用程序的服务指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 当您发布了 Visual Studio 独立 shell 应用程序时，您必须能够为应用程序提供的软件更新安装之后。 若要执行此操作，必须通过使用 Microsoft Installer (MSI) 文件安装应用程序。 此类安装允许由 Microsoft 进行重新分配通过 Web 提供的软件更新下载并使用你的客户无需自定义交互的。  

@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158468"
 ---
 # <a name="memory-windows"></a>“内存”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60059586"
 2. 键入或粘贴你想要看到的然后按的地址**ENTER**。  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>更改“内存”窗口显示信息的方式  
- 可以自定义“内存”窗口显示内存内容的方式。 默认情况下，内存内容以十六进制格式显示为一个字节的整数，列数由当前的窗口宽度自动确定。  
+ 可以自定义“内存”窗口显示内存内容的方式  。 默认情况下，内存内容以十六进制格式显示为一个字节的整数，列数由当前的窗口宽度自动确定。  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>更改内存内容的格式  
   
@@ -100,7 +100,7 @@ ms.locfileid: "60059586"
   
     如果打开活动计算，则该选项处于选中状态，单击该选项将关闭活动计算。 如果关闭活动计算，则该选项未处于选中状态，单击该选项将打开活动计算。  
   
-   可以隐藏或显示“内存”窗口顶部的工具栏。 当工具栏隐藏时，无法访问“地址”框或其他工具。  
+   可以隐藏或显示“内存”窗口顶部的工具栏  。 当工具栏隐藏时，无法访问“地址”框或其他工具。  
   
 #### <a name="to-toggle-the-toolbar"></a>切换工具栏  
   
@@ -117,7 +117,7 @@ ms.locfileid: "60059586"
   
 1. 在中**内存**窗口**地址**框中，键入一个指针表达式。 指针变量必须在当前范围内。 根据所使用的语言，可能必须取消引用指针。  
   
-2. 按 Enter。  
+2. 按 Enter  。  
   
      现在，当你使用执行命令如**步骤**，会自动将随指针变化更改显示的内存地址。  
   

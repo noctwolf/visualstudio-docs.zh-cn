@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 951d5f39fbf3929d094cc18de5fe108b46753b09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176522"
 ---
 # <a name="how-to-step-into-wcf-services"></a>如何：单步执行 WCF 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60056440"
   
 1. 创建一个同时包含 WCF 客户端和 WCF 服务项目的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案。  
   
-2. 在解决方案资源管理器中，右键单击“WCF 客户端”项目，再单击“设为启动项目”。  
+2. 在解决方案资源管理器中，右键单击“WCF 客户端”项目，再单击“设为启动项目”  。  
   
 3. 在 app.config 或 web.config 文件中启用调试。 有关详细信息，请参阅[WCF 调试的限制](../debugger/limitations-on-wcf-debugging.md)。  
   
