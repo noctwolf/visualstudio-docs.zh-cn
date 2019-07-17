@@ -11,12 +11,12 @@ ms.author: ronpet
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: 96ac53900806cc37e215342573f998be995289f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ed90e6a4fe211d162f12785b0f3f555802ad17
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785879"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823753"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing 的新增功能
 
@@ -28,9 +28,9 @@ ms.locfileid: "62785879"
 
 - **改进的可发现性**。 对于不知道 Live Unit Testing 功能存在的用户，只要用户打开包含单元测试但未启用 Live Unit Testing 的解决方案，Visual Studio IDE 就显示一个提及 Live Unit Testing 的黄色条框。 用户可借助黄色条框中提供的信息详细了解 Live Unit Testing 并启用该功能。 如果未满足 Live Unit Testing 的先决条件，也会显示金色条框。 这些方法包括：
 
-   - 缺少测试适配器。
-   - 存在较旧版本的测试适配器。
-   - 需要提供解决方案引用的 NuGet 包的还原文件。
+  - 缺少测试适配器。
+  - 存在较旧版本的测试适配器。
+  - 需要提供解决方案引用的 NuGet 包的还原文件。
 
 - **与任务中心通知集成**。 Visual Studio IDE 现在在任务中心显示 Live Unit Testing 后台处理通知，以便用户可以轻松地了解启用 Live Unit Testing 后发生的情况。 这解决了在大型解决方案中启动 Live Unit Testing 的关键问题。 之前，在覆盖率图标显示前的数分钟，用户无法确定 Live Unit Testing 是否实际已被启用以及它是否在正常运行。 现在不会这样了！
 
@@ -38,7 +38,7 @@ ms.locfileid: "62785879"
 
 - **可靠性和性能**：Live Unit Testing 现可确保系统能够更好地检测出项目尚未完全完成加载的情况，并可避免 Live Unit Testing 出现崩溃。 生成性能改进还可在系统知道项目文件未进行任何更改时避免重新计算 MSBuild 项目。
 
-- **其他用户界面改进**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”。 “测试” > “Live Unit Testing”菜单的“重置清理”选项已被删除。 现可通过依次选择“工具” > “选项” > “Live Unit Testing”，然后选择“删除持久化数据”访问该选项。
+- **其他用户界面改进**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”   。 “测试” > “Live Unit Testing”菜单的“重置清理”选项已被删除    。 现可通过依次选择“工具” > “选项” > “Live Unit Testing”，然后选择“删除持久化数据”访问该选项     。
 
 ## <a name="version-153"></a>版本 15.3
 
@@ -56,13 +56,13 @@ ms.locfileid: "62785879"
 
 - “工具/选项/Live Unit Testing/常规”中额外添加了一些可配置的选项。 可设置用于 Live Unit Testing 的内存上限。 还可以为未结解决方案指定 Live Unit Testing 永久性数据的文件路径。
 
-- “测试/Live Unit Testing”的菜单栏下额外添加了一些菜单项。 “重置清理”可以删除永久性数据，并能重新生成这些数据。 “选项”跳转到“工具/选项/Live Unit Testing/常规”。
+- “测试/Live Unit Testing”的菜单栏下额外添加了一些菜单项。 “重置清理”  可以删除永久性数据，并能重新生成这些数据。 “选项”  跳转到“工具/选项/Live Unit Testing/常规”。
 
 - 现在可以使用以下属性，在源代码中指定要从 Live Unit Testing 中排除的目标测试方法：
 
-   - 对于 xUnit：`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-   - 对于 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
-   - 对于 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
+  - 对于 xUnit：`[Trait("Category", "SkipWhenLiveUnitTesting")]`
+  - 对于 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
+  - 对于 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>请参阅
 

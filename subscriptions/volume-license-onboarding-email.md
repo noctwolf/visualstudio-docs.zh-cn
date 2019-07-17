@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 3/14/2018
 ms.topic: conceptual
 description: 提供给 VLSC 管理员的加入通信示例
-searchscope: VS Subscription
-ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8fc0ae640655b3d2911a53f7e36af7022f853db7
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427877"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250855"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>加入适用于管理员的电子邮件通信
 

@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746930"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250641"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 
@@ -122,7 +122,8 @@ ms.locfileid: "66746930"
 
 4. 或者，也可指定有关成员的其他详细信息，例如成员类型。
 
-     **注意：** 还可使用键盘快捷方式创建成员。 有关详细信息，请参阅[类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
+    > [!NOTE]
+    > 还可使用键盘快捷方式创建成员。 有关详细信息，请参阅[类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)。
 
 ## <a name="modify-type-members"></a>修改类型成员
 
@@ -150,7 +151,7 @@ ms.locfileid: "66746930"
 
 - **成员修饰符**
 
-     将成员的可见性修饰符更改为 `Public` (`public`)、`Private` (`private`)、`Friend` (`internal`) `Protected` (`protected`)、`Protected``Friend` (`protected``internal`) 或 `Default`。
+     将成员的可见性修饰符更改为 `Public` (`public`)、`Private` (`private`)、`Friend` (`internal`) `Protected` (`protected`)、`Protected Friend` (`protected internal`) 或 `Default`。
 
 - **\<添加成员>**
 

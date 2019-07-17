@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/02/2018
 ms.topic: conceptual
 description: 如果别名或友好名称已被使用，登录可能会失败
-searchscope: VS Subscription
-ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7285c1ede495a1aa2603216f2a9e9fe9f89331ea
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946159"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783690"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
@@ -46,21 +45,21 @@ ms.locfileid: "62946159"
 请按照以下步骤通过目录帐户添加新订阅者。
 
 1. 访问[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 并登录。
-2. 从 VLSC 管理页中，单击“订阅”，然后单击“Visual Studio 订阅”。
+2. 从 VLSC 管理页中，单击“订阅”  ，然后单击“Visual Studio 订阅”  。
 
     > [!div class="mx-imgBorder"]
     > ![“订阅”菜单](_img//vlsc/vlsc-subscriptions.png)
 
-3. 单击与 Visual Studio 订阅相关联的“协议编号”。
+3. 单击与 Visual Studio 订阅相关联的“协议编号”  。
 
     > [!div class="mx-imgBorder"]
     > ![选择协议](_img/vlsc/vlsc-agreement.png)
 
-4. 单击“分配订阅”。
-5. 选择所需的订阅级别。
-6. 验证你是否有可用于分配的订阅，然后单击“下一步”。
-7. 在“电子邮件地址”字段中，输入订阅者详细信息和目录地址，然后单击“下一步”。
-8. 验证订阅者信息，然后单击“完成”。
+4. 单击“分配订阅”  。
+5. 选择所需的订阅级别  。
+6. 验证你是否有可用于分配的订阅，然后单击“下一步”  。
+7. 在“电子邮件地址”字段中，输入订阅者详细信息和目录地址，然后单击“下一步”  。
+8. 验证订阅者信息，然后单击“完成”  。
 9. 通知订阅者，订阅已通过使用下面的[模板](#notifying-your-subscribers-with-directory-addresses)进行预配。
 
 ### <a name="updating-an-existing-subscriber"></a>更新现有订阅者
@@ -68,13 +67,13 @@ ms.locfileid: "62946159"
 请按照以下步骤更新现有订阅者的目录帐户。
 
 1. 访问[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 并登录。
-2. 从 VLSC 管理页中，单击“订阅”，然后单击“Visual Studio 订阅”。
-3. 单击与 Visual Studio 订阅相关联的“协议编号”。
-4. 单击“搜索”栏上的向下箭头。
+2. 从 VLSC 管理页中，单击“订阅”  ，然后单击“Visual Studio 订阅”  。
+3. 单击与 Visual Studio 订阅相关联的“协议编号”  。
+4. 单击“搜索”栏上的向下箭头  。
 5. 使用“电子邮件地址”字段搜索订阅者。
-6. 从结果列表中，单击订阅者的“姓氏”。
-7. 单击“编辑” 。
-8. 将“电子邮件地址”字段更改为所需的目录地址，然后单击“保存”。
+6. 从结果列表中，单击订阅者的“姓氏”  。
+7. 单击“编辑”  。
+8. 将“电子邮件地址”字段更改为所需的目录地址，然后单击“保存”  。
 9. 通知订阅者，其订阅已通过使用下面的电子邮件模板进行预配。
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>通知订阅者目录地址
@@ -110,7 +109,7 @@ At the bottom of the page, select the following:
 
 在向订阅者分配订阅后，他们将收到一封电子邮件，要求他们访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 以利用其订阅权益。  当尝试登录时，Visual Studio 订阅登录将失败，并显示一条错误，指出帐户无法识别。  在登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 之前，请要求订阅者遵循这些指示。  如有必要，可在分配订阅后使用此[模板](#notifying-your-subscribers-using-personal-accounts)来通知订阅者。
 
-1. 导航到 https://my.visualstudio.com ，然后单击“创建新的 Microsoft 帐户”。
+1. 导航到 https://my.visualstudio.com ，然后单击“创建新的 Microsoft 帐户”  。
 
 2. 填写字段：
    - 在 Someone@example.com 框中输入接收欢迎电子邮件的电子邮件地址
@@ -118,7 +117,7 @@ At the bottom of the page, select the following:
    - 选择促销设置
    - 单击“下一步” 
 
-3. 完成验证步骤，然后单击“下一步”。
+3. 完成验证步骤，然后单击“下一步”  。
 
 4. 新用户可能需要完成 Visual Studio 个人资料。
 

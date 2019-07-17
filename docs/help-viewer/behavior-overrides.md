@@ -3,17 +3,17 @@ title: Help Content Manager 重写
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557572"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825092"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 
@@ -21,11 +21,11 @@ ms.locfileid: "62557572"
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>如何使用 .pkgdef 文件控制 Help Viewer 行为
 
-1. 创建 .pkgdef 文件，且文件第一行为 `[$RootKey$\Help]`。
+1. 创建 .pkgdef 文件，且文件第一行为 `[$RootKey$\Help]`  。
 
 2. 添加下表所述的任一或所有注册表项值，每个值占一行，例如 `"UseOnlineHelp"=dword:00000001`。
 
-3. 将文件复制到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition\>\Common7\IDE\CommonExtensions。
+3. 将文件复制到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition\>\Common7\IDE\CommonExtensions  。
 
 4. 在开发人员命令提示符中运行 `devenv /updateconfiguration`。
 
@@ -37,7 +37,7 @@ ms.locfileid: "62557572"
 |UseOnlineHelp|dword|`0` 指定本地帮助，`1` 指定联机帮助|定义联机或脱机帮助（默认）|
 |OnlineBaseUrl|string|\<服务终结点的 http URL\>|定义唯一的 F1 终结点|
 |OnlineHelpPreferenceDisabled|dword|`0` 启用或 `1` 禁用联机帮助首选项|禁用联机帮助首选项|
-|DisableManageContent|dword|`0` 启用或 `1` 禁用 Help Viewer 中的“管理内容”选项卡|禁用“管理内容”选项卡|
+|DisableManageContent|dword|`0` 启用或 `1` 禁用 Help Viewer 中的“管理内容”  选项卡|禁用“管理内容”选项卡 |
 |DisableFirstRunHelpSelection|dword|`0` 启用或 `1` 禁用在 Visual Studio 首次启动时配置的帮助功能|禁用首次启动 Visual Studio 时的内容安装|
 
 ### <a name="example-pkgdef-file-contents"></a>示例 .pkgdef 文件内容

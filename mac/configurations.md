@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693102"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826075"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 
@@ -51,21 +51,21 @@ Android 项目的运行配置可以在运行或调试项目时指定活动、服
 以下列表提供可能包含在运行配置中的数据的一些示例：
 
 * 常规 .NET 项目
-    * 可选的启动应用
-    * 启动参数
-    * 工作目录
-    * 环境变量
-    * Mono 运行时选项（仅在 Mono 上运行时使用）
+  * 可选的启动应用
+  * 启动参数
+  * 工作目录
+  * 环境变量
+  * Mono 运行时选项（仅在 Mono 上运行时使用）
 * Android 项目
-    * 入口点（活动、服务、接收器）
-    * 意向参数和数据
+  * 入口点（活动、服务、接收器）
+  * 意向参数和数据
 * iOS 项目
-    * 模式（常规、后台获取）
+  * 模式（常规、后台获取）
 * iOS 扩展项目
-    * 启动应用：默认或自定义
+  * 启动应用：默认或自定义
 * WatchKit 项目
-    * 模式（速览、通知）
-    * 通知有效负载
+  * 模式（速览、通知）
+  * 通知有效负载
 
 ## <a name="see-also"></a>请参阅
 

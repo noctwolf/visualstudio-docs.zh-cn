@@ -6,13 +6,12 @@ manager: lank
 ms.date: 04/03/2019
 ms.topic: conceptual
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE。
-searchscope: VS Subscription
-ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 6b3e53604eb275b6fec867ef2470c57d47aaa510
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586936"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824661"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>使用 Visual Studio 2019 权益
 
@@ -79,6 +78,6 @@ ms.locfileid: "67586936"
 
 ## <a name="support-resources"></a>支持资源
 - 需要与 Visual Studio IDE 相关的帮助，请查看下列资源：
-    - 技术支持：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [文档](/visualstudio/)
+  - 技术支持：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [文档](/visualstudio/)
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。

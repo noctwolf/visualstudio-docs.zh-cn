@@ -6,20 +6,19 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何使用管理员门户管理组织的 Visual Studio 订阅。
-searchscope: VS Subscription
-ms.openlocfilehash: 4c8d3aa20138e7ebe56d5b51472ecc54abcf32f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6da1f0ce52e810a7652dd306ff5a6e44404b76f7
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427830"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784795"
 ---
 # <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
 
 使用 Visual Studio 订阅管理门户时，需要记住：
 
 - **Visual Studio 订阅根据用户授权。** 每个订阅者可以根据开发和测试需要在多台计算机上使用软件。
-- 为每个订阅者只分配一个订阅级别，分别对应于组织购买的 Visual Studio 订阅。 如果订阅者分配有多个订阅级别，请编辑订阅者的设置，使他们只有一个订阅级别。
+- 为每个订阅者只分配一个订阅级别，分别对应于组织购买的 Visual Studio 订阅。  如果订阅者分配有多个订阅级别，请编辑订阅者的设置，使他们只有一个订阅级别。
 - **更新订阅者的订阅级别**，当订阅升级（购买“升级”许可证之后）或续签到更低级别时更新。
 - **不要在订阅者之间共享订阅。** 必须将订阅分配给任何使用全部或部分订阅权益（开发和测试软件、Microsoft Azure、E-Learning 等）的用户。
 

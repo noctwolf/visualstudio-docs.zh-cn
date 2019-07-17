@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160167"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825490"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -105,33 +105,33 @@ ms.locfileid: "67160167"
 
 - 将程序集移动或复制到下列位置之一：
 
-   - 当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）
+  - 当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）
 
-   - 同一解决方案中的其他项目目录。 （可以使用“项目”  选项卡查找这些程序集。）
+  - 同一解决方案中的其他项目目录。 （可以使用“项目”  选项卡查找这些程序集。）
 
-    \- 或 -
+  \- 或 -
 
 - 设置指定要显示的程序集位置的注册表项：
 
-   对于 32 位操作系统，添加以下注册表项之一。
+  对于 32 位操作系统，添加以下注册表项之一。
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   对于 64 位操作系统，在 32 位注册表配置单元中添加以下注册表项之一。
+  对于 64 位操作系统，在 32 位注册表配置单元中添加以下注册表项之一。
 
-   - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
+  - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   \<VersionMinimum\> 是所应用的最低框架版本  。 如果 \<VersionMinimum\> 为 v3.0，则 AssemblyFoldersEx 中指定的文件夹应用于以 3.0 版本及更高版本的 .NET Framework 为目标的项目   。
+  \<VersionMinimum\> 是所应用的最低框架版本  。 如果 \<VersionMinimum\> 为 v3.0，则 AssemblyFoldersEx 中指定的文件夹应用于以 3.0 版本及更高版本的 .NET Framework 为目标的项目   。
 
-   \<AssemblyLocation\> 是要在“添加引用”对话框中显示的程序集目录，例如 C:\MyAssemblies    。
+  \<AssemblyLocation\> 是要在“添加引用”对话框中显示的程序集目录，例如 C:\MyAssemblies    。
 
-   通过在 `HKEY_LOCAL_MACHINE` 节点下创建注册表项，所有用户都可以在“添加引用”对话框中的指定位置看到这些程序集  。 在 `HKEY_CURRENT_USER` 节点下创建注册表项只会影响当前用户的设置。
+  通过在 `HKEY_LOCAL_MACHINE` 节点下创建注册表项，所有用户都可以在“添加引用”对话框中的指定位置看到这些程序集  。 在 `HKEY_CURRENT_USER` 节点下创建注册表项只会影响当前用户的设置。
 
-   再次打开“添加引用”  对话框。 程序集应出现在“.NET”  选项卡中。如果未显示，请确保这些程序集位于指定的 AssemblyLocation  目录中，然后重启 Visual Studio 并重试。
+  再次打开“添加引用”  对话框。 程序集应出现在“.NET”  选项卡中。如果未显示，请确保这些程序集位于指定的 AssemblyLocation  目录中，然后重启 Visual Studio 并重试。
 
 ## <a name="projects-tab"></a>“项目”选项卡
 

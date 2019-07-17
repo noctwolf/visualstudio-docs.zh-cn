@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: 了解如何查找和下载 Visual Studio 订阅中包含的 Microsoft 产品。
-searchscope: VS Subscription
-ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5124217334418ea68b5dee6cb222e92e509ee5f5
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697772"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784825"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。
@@ -36,29 +35,29 @@ ms.locfileid: "65697772"
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>如何在订阅者门户中找到下载内容？
-[下载](https://my.visualstudio.com/downloads/featured)页仅显示订阅中包含的下载内容。  如果具有多个订阅或计划成员身份，即使目前正在查看其它订阅，也会显示你所具有的最高订阅的下载内容。  例如，如果你的 Visual Studio Professional 订阅和 Visual Studio Dev Essentials 成员身份都关联了同一个登录 ID，即使你目前正在查看 Dev Essentials 权益，也会显示 Professional 级别订阅中包含的下载内容。
+[下载](https://my.visualstudio.com/downloads/featured)页仅显示订阅中包含的下载内容。  如果具有多个订阅或计划成员身份，即使目前正在查看其它订阅，也会显示你所具有的最高订阅的下载内容  。  例如，如果你的 Visual Studio Professional 订阅和 Visual Studio Dev Essentials 成员身份都关联了同一个登录 ID，即使你目前正在查看 Dev Essentials 权益，也会显示 Professional 级别订阅中包含的下载内容。
 
 访问[下载](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)页时，可以看到按产品类型分组的热门下载。  可以在所示的热门下载中选择一项产品，也可以使用页面顶部的搜索栏搜索任何产品。
 > [!div class="mx-imgBorder"]
 > ![订阅者下载页](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
-例如，如果从“开发人员工具”列表中选择“Visual Studio 2017”，则可以看到可用的 Visual Studio 2017 下载列表。
+例如，如果从“开发人员工具”列表中选择“Visual Studio 2017”，则可以看到可用的 Visual Studio 2017 下载列表  。
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 下载](_img/subscriber-downloads/vs2017-new-UI.png)
 
-使用可用的下拉菜单，可轻松选择体系结构、语言和文件类型。 选择首选选项，然后单击“下载”开始下载产品。
+使用可用的下拉菜单，可轻松选择体系结构、语言和文件类型。 选择首选选项，然后单击“下载”开始下载产品。 
 
 ### <a name="displaying-download-details"></a>显示下载详细信息
 
-单击产品名称或“信息”链接后会显示有关下载的详细信息，并提供产品发行说明的访问权限。
+单击产品名称或“信息”链接后会显示有关下载的详细信息，并提供产品发行说明的访问权限。 
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 Pro 下载详细信息](_img/subscriber-downloads/vs2017-pro-details.png)
 
-在“详细信息”窗格中，也可以单击“密钥”选项卡查看产品密钥的状态。
+在“详细信息”窗格中，也可以单击“密钥”选项卡查看产品密钥的状态。 
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 Pro 产品密钥](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>获取产品密钥
-若要获取下载内容的产品密钥，可单击带有“获取密钥”标记的蓝色密钥，或者如果已在查看“详细信息”窗格，单击“密钥”选项卡上的“索取密钥”。
+若要获取下载内容的产品密钥，可单击带有“获取密钥”标记的蓝色密钥，或者如果已在查看“详细信息”窗格，单击“密钥”选项卡上的“索取密钥”。   
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2017 Pro 索取产品密钥](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

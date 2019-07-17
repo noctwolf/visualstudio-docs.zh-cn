@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 有关在 MPN 中提供的订阅、应用的规则以及提供的订阅数的详细信息。
-searchscope: VS Subscription
-ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805295"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250672"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
@@ -28,7 +27,7 @@ ms.locfileid: "65805295"
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>选定资格的其他 Visual Studio 权益
 
-| 资格                                  | 白银资格可获得的额外订阅数 | 黄金资格可获得的额外订阅数 |
+| 资格                                  | 白银资格可获得的额外订阅数  | 黄金资格可获得的额外订阅数  |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | 应用程序开发                     | 5 个 Visual Studio Enterprise 订阅                  | 25 个 Visual Studio Enterprise 订阅               |
 | 云客户关系管理      | 5 个 Visual Studio Enterprise 订阅                  | 25 个 Visual Studio Enterprise 订阅               |
@@ -47,7 +46,7 @@ ms.locfileid: "65805295"
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>购买 Action Pack 的合作伙伴可获得的订阅数
 具备资格的合作伙伴不能购买 Action Pack。 每个合作伙伴只能购买一个 Action Pack。
 
-通过 Action Pack，合作伙伴可获得 3 个 Visual Studio Professional (MPN) 订阅。 Visual Studio Professional (MPN) 是一种自定义产品，市场上没有相应的同类型产品。 它包括以下内容：
+通过 Action Pack，合作伙伴可获得 3 个 Visual Studio Professional (MPN) 订阅  。 Visual Studio Professional (MPN) 是一种自定义产品，市场上没有相应的同类型产品。 它包括以下内容：
 - Visual Studio Professional - 仅最新版本
 - Windows 企业版 - 仅最新版本且仅用于开发和测试
 - Windows Server - 仅最新版本且仅用于开发和测试

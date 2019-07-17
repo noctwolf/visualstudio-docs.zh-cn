@@ -3,23 +3,23 @@ title: 搜索主题（帮助查看器）
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824275"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824996"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 
 可以使用全文搜索功能找到包含特定单词的所有主题。 还可以通过使用通配符表达式、逻辑运算符和高级搜索运算符优化与自定义搜索。
 
-若要打开“搜索”选项卡，请选择“帮助查看器”窗口中的“搜索”选项卡；如果是键盘用户，则选择 Ctrl+E。
+若要打开“搜索”选项卡，请选择“帮助查看器”窗口中的“搜索”选项卡；如果是键盘用户，则选择 Ctrl+E      。
 
 ## <a name="to-perform-a-full-text-search"></a>执行全文搜索
 
@@ -28,7 +28,7 @@ ms.locfileid: "62824275"
 2. 在搜索查询中，指定要应用于搜索的逻辑或高级搜索运算符（如果有）。 若要搜索所有可用帮助，请勿使用运算符。
 
     > [!NOTE]
-    > 在“Viewer 选项”对话框中，可以指定附加首选项，比如一次显示的搜索结果最大数量，以及主要区域设置不是英语时是否包含英语内容。
+    > 在“Viewer 选项”  对话框中，可以指定附加首选项，比如一次显示的搜索结果最大数量，以及主要区域设置不是英语时是否包含英语内容。
 
 3. 选择 **Enter** 键。
 

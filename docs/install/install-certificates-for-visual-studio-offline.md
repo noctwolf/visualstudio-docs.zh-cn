@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974730"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826283"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -135,20 +135,20 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 此文件夹有三个 .P12 文件，每个文件都包含中间证书和根证书。 采用 Windows 更新的大多数系统都已安装这些证书。
 
 * **ManifestSignCertificates.p12** 包含：
-    * 中间证书：**Microsoft 代码签名 PCA 2011**
-        * 不要求。 如果存在，可以在某些情况下提高性能。
-    * 根证书：**Microsoft 根证书颁发机构 2011**
-        * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
+  * 中间证书：**Microsoft 代码签名 PCA 2011**
+    * 不要求。 如果存在，可以在某些情况下提高性能。
+  * 根证书：**Microsoft 根证书颁发机构 2011**
+    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
 * **ManifestCounterSignCertificates.p12** 包含：
-    * 中间证书：**Microsoft 时间戳 PCA 2010**
-        * 不要求。 如果存在，可以在某些情况下提高性能。
-    * 根证书：**Microsoft 根证书颁发机构 2010**
-        * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
+  * 中间证书：**Microsoft 时间戳 PCA 2010**
+    * 不要求。 如果存在，可以在某些情况下提高性能。
+  * 根证书：**Microsoft 根证书颁发机构 2010**
+    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
 * **Vs_installer_opc.SignCertificates.p12** 包含：
-    * 中间证书：**Microsoft 代码签名 PCA**
-        * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
-    * 根证书：**Microsoft 根证书颁发机构**
-        * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
+  * 中间证书：**Microsoft 代码签名 PCA**
+    * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
+  * 根证书：**Microsoft 根证书颁发机构**
+    * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
 
 **更新**：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，Visual Studio 安装程序只需要在系统上安装根证书。
 
@@ -157,20 +157,20 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** 包含：
-    * 中间证书：**Microsoft 代码签名 PCA 2011**
-        * 不要求。 如果存在，可以在某些情况下提高性能。
-    * 根证书：**Microsoft 根证书颁发机构 2011**
-        * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
+  * 中间证书：**Microsoft 代码签名 PCA 2011**
+    * 不要求。 如果存在，可以在某些情况下提高性能。
+  * 根证书：**Microsoft 根证书颁发机构 2011**
+    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
 * **ManifestCounterSignCertificates.p12** 包含：
-    * 中间证书：**Microsoft 时间戳 PCA 2010**
-        * 不要求。 如果存在，可以在某些情况下提高性能。
-    * 根证书：**Microsoft 根证书颁发机构 2010**
-        * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
+  * 中间证书：**Microsoft 时间戳 PCA 2010**
+    * 不要求。 如果存在，可以在某些情况下提高性能。
+  * 根证书：**Microsoft 根证书颁发机构 2010**
+    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
 * **Vs_installer_opc.SignCertificates.p12** 包含：
-    * 中间证书：**Microsoft 代码签名 PCA**
-        * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
-    * 根证书：**Microsoft 根证书颁发机构**
-        * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
+  * 中间证书：**Microsoft 代码签名 PCA**
+    * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
+  * 根证书：**Microsoft 根证书颁发机构**
+    * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
 
 Visual Studio 安装程序只需要在系统上安装根证书。
 
@@ -185,23 +185,23 @@ Visual Studio 安装程序只需要在系统上安装根证书。
 检查安装系统的一种方法是按以下步骤操作：
 
 1. 运行 **mmc.exe**。<br/>
-  a. 单击“文件”，然后选择“添加/删除管理单元”。<br/>
-  b. 双击“证书”，选择“计算机帐户”，然后单击“下一步”。<br/>
-  c. 选择“本地计算机”，依次单击“完成”和“确定”。<br/>
-  d. 展开“证书(本地计算机)”。<br/>
-  e. 展开“受信任的根证书颁发机构”，选择“证书”。<br/>
+  a. 单击“文件”，然后选择“添加/删除管理单元”   。<br/>
+  b. 双击“证书”，选择“计算机帐户”，然后单击“下一步”    。<br/>
+  c. 选择“本地计算机”，依次单击“完成”和“确定”    。<br/>
+  d. 展开“证书(本地计算机)”  。<br/>
+  e. 展开“受信任的根证书颁发机构”，选择“证书”   。<br/>
     * 检查此列表中是否有必需的根证书。<br/>
 
-   f. 展开“中间证书颁发机构”，选择“证书”。<br/>
+   f. 展开“中间证书颁发机构”，选择“证书”   。<br/>
     * 检查此列表中是否有需要的中间证书。<br/>
 
-2. 单击“文件”，然后选择“添加/删除管理单元”。<br/>
-  a. 双击“证书”，选择“我的用户帐户”，单击“完成”和“确定”。<br/>
-  b. 展开“证书 - 当前用户”。<br/>
-  c. 展开“中间证书颁发机构”，选择“证书”。<br/>
+2. 单击“文件”，然后选择“添加/删除管理单元”   。<br/>
+  a. 双击“证书”，选择“我的用户帐户”，单击“完成”和“确定”     。<br/>
+  b. 展开“证书 - 当前用户”  。<br/>
+  c. 展开“中间证书颁发机构”，选择“证书”   。<br/>
     * 检查此列表中是否有需要的中间证书。<br/>
 
-如果证书名称不在“颁发对象”列中，请安装这些证书。  如果中间证书仅在“当前用户”中间证书存储中，则仅供已登录的用户使用。 可能需要为其他用户安装它。
+如果证书名称不在“颁发对象”列中，请安装这些证书  。  如果中间证书仅在“当前用户”  中间证书存储中，则仅供已登录的用户使用。 可能需要为其他用户安装它。
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
 

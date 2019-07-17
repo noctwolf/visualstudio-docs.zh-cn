@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/28/2017
 ms.topic: conceptual
 description: 查找 Visual Studio 订阅随附的软件下载列表。
-searchscope: VS Subscription
-ms.openlocfilehash: fea44e77267a7f2e2d0964ee614807875198cd92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa25dea9e724c2a13f64134b4c0d2fa7891f8bfe
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62561034"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250307"
 ---
 # <a name="how-do-i-know-what-software-is-available-for-download"></a>我如何知道哪些软件可供下载？
 
@@ -26,6 +25,6 @@ ms.locfileid: "62561034"
 要快速查找产品，请使用页面顶部的“搜索”功能或单击左侧的其他产品类型。
 
 > [!TIP]
-> 如果正在查找产品密钥，请在页面顶部单击“产品密钥”选项卡。
+> 如果正在查找产品密钥，请在页面顶部单击“产品密钥”选项卡  。
 
 同时你还可以针对每个订阅类型下载 Excel 电子表格，其中包含[可用软件标题](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)的大量列表。

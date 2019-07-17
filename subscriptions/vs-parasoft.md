@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Parasoft Virtualize/SOA Test Professional 订阅。
-searchscope: VS Subscription
-ms.openlocfilehash: ce0c1e3d00e73bfdfee5e2fbe2bea8adddc2d305
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: bd867a47b4b42c3327d60ccab05735f0554409ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032748"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824645"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Parasoft Virtualize/SOAtest Professional 桌面
 
@@ -86,7 +85,7 @@ ms.locfileid: "67032748"
 
 ## <a name="support-resources"></a>支持资源
 - 需要 Parasoft 产品帮助？  请参阅下列资源：
-    - 技术支持： https://www.parasoft.com/support/
-    - Parasoft 资源中心： https://www.parasoft.com/resources/
+  - 技术支持： https://www.parasoft.com/support/
+  - Parasoft 资源中心： https://www.parasoft.com/resources/
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

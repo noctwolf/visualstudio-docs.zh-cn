@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CloudPilot 权益
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032578"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825921"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CloudPilot 权益
 
@@ -76,9 +75,9 @@ ms.locfileid: "67032578"
 
 ## <a name="support-resources"></a>支持资源
 - 需要有关使用 CloudPilot 的帮助？  请参阅下列资源：
-    - 有关 UnifyCloud 产品的咨询，[请联系 UnifyCloud](https://www.unifycloud.com/contacts/)。
-    - [CloudPilot 用户手册](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [提交支持请求](https://support.datacamp.com/hc/requests/new)
+  - 有关 UnifyCloud 产品的咨询，[请联系 UnifyCloud](https://www.unifycloud.com/contacts/)。
+  - [CloudPilot 用户手册](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [提交支持请求](https://support.datacamp.com/hc/requests/new)
 
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

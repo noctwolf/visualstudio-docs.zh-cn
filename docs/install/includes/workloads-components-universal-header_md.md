@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 048edb85742e71e6236d1491565a007bf7da84b3
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259545"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68176865"
 ---
 本页的表中列出了可用于从命令行安装 Visual Studio 或可指定为 VSIX 清单中的依赖项的 ID。 我们将在发布 Visual Studio 更新时添加其他组件。
 

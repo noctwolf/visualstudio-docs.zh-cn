@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797771"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825856"
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 “资源详细信息”视图显示针对所选资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。
 
- 此视图将每个线程的执行时间线表示为水平条，而将每个阻塞事件表示为线程时间线上的垂直条。 如有必要，可以放大时间线的每个部分以查看单个事件。 若要查看导致事件的函数的执行路径（调用堆栈），请单击事件条。 函数会出现在“调用堆栈”窗口中。 当函数的源代码可用时，可以单击函数名，以便在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的界面中编辑源文件。
+ 此视图将每个线程的执行时间线表示为水平条，而将每个阻塞事件表示为线程时间线上的垂直条。 如有必要，可以放大时间线的每个部分以查看单个事件。 若要查看导致事件的函数的执行路径（调用堆栈），请单击事件条。 函数会出现在“调用堆栈”  窗口中。 当函数的源代码可用时，可以单击函数名，以便在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的界面中编辑源文件。
 
 ## <a name="procedures"></a>过程
 
@@ -36,9 +36,9 @@ ms.locfileid: "62797771"
 
 - 执行以下步骤之一：
 
-    - 单击“缩小”以返回到以前的缩放级别。
+  - 单击“缩小”  以返回到以前的缩放级别。
 
-    - 单击“缩放重置”以在视图中显示所有时间线。
+  - 单击“缩放重置”  以在视图中显示所有时间线。
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>查看事件的调用堆栈
 
@@ -46,13 +46,13 @@ ms.locfileid: "62797771"
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>查看或编辑调用堆栈中的函数的源代码
 
-- 在“调用堆栈”窗口中，单击函数名。
+- 在“调用堆栈”  窗口中，单击函数名。
 
   函数源代码必须是当前项目的一部分。
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>查看资源的争用事件的调用树
 
-- 在时间线关系图中，单击“总计”。
+- 在时间线关系图中，单击“总计”  。
 
      资源的“争用”视图会出现。 有关详细信息，请参阅[“资源争用”视图](../profiling/resource-contentions-view-contention-data.md)
 

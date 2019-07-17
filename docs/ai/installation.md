@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548415"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821409"
 ---
 # <a name="installation"></a>安装
 
@@ -26,14 +26,14 @@ ms.locfileid: "62548415"
 
 可以从 [Visual Studio Marketplace](https://aka.ms/vstoolsforai) 或 Visual Studio 中下载工具：
 
-1. 依次选择“工具” > “扩展和更新”。
+1. 依次选择“工具”   > “扩展和更新”  。
 
    ![Visual Studio 中的“扩展和更新”菜单](media/installation/extensions.png)
 
-2. 在“扩展和更新”对话框的左侧，选择“联机”。
+2. 在“扩展和更新”  对话框的左侧，选择“联机”  。
 3. 在右上角的搜索框中，键入或输入“tools for ai”。
-4. 从结果中选择“Visual Studio Tools for AI”。
-5. 单击 **“下载”**。
+4. 从结果中选择“Visual Studio Tools for AI”  。
+5. 单击 **“下载”** 。
 
 ## <a name="prepare-your-local-machine"></a>准备本地计算机
 
@@ -88,27 +88,27 @@ Python 已成为用于深入学习应用程序的主要编程语言。 需要 **
 
 - **Windows**
 
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
 
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Visual Studio 中的 Python
 
@@ -162,15 +162,15 @@ pip3.5 install -U numpy scipy
 
 - 具有 GPU
 
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
 
 - 没有 GPU
 
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
@@ -203,33 +203,33 @@ pip3.5 install Theano==0.9.0
 
 - **Windows**
 
-   尚没有官方滚轮程序包。 从 [Anaconda](https://anaconda.org/pytorch/repo?type=all) 或[加利福尼亚大学](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)可以下载第三方程序包。
+  尚没有官方滚轮程序包。 从 [Anaconda](https://anaconda.org/pytorch/repo?type=all) 或[加利福尼亚大学](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch)可以下载第三方程序包。
 
-   - 将它解压缩到主目录，例如 C:\Users\test\pytorch。
-   - 将 C:\Users\test\pytorch\Lib\site-packages 添加到 %PYTHONPATH% 环境变量。
+  - 将它解压缩到主目录，例如 C:\Users\test\pytorch  。
+  - 将 C:\Users\test\pytorch\Lib\site-packages 添加到 %PYTHONPATH% 环境变量  。
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > macOS 二进制文件不支持 CUDA，如果需要 CUDA，请从源提供程序进行安装
+  > [!NOTE]
+  > macOS 二进制文件不支持 CUDA，如果需要 CUDA，请从源提供程序进行安装
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > 此单个程序包支持 GPU 和 CPU。
+  > [!NOTE]
+  > 此单个程序包支持 GPU 和 CPU。
 
 最后，在非 Windows 上安装 torchvision：
 
