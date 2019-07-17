@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176642"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用检测收集详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ ms.locfileid: "60087971"
   
  你可以使用以下步骤之一来指定检测方法：  
   
-- 在分析向导的第一页，选择“检测” 。  
+- 在分析向导的第一页，选择“检测”  。  
   
-- 在“性能资源管理器”  工具栏的“方法”  列表中，单击“检测” 。  
+- 在“性能资源管理器”  工具栏的“方法”  列表中，单击“检测”  。  
   
-- 在性能会话的属性对话框的“常规”  页上，选择“检测” 。  
+- 在性能会话的属性对话框的“常规”  页上，选择“检测”  。  
   
 ## <a name="common-tasks"></a>常规任务  
- 可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  
+ 可以指定 _性能会话_  对话框中的附加选项。 若要打开此对话框：  
   
-- 在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
+- 在“性能资源管理器”  中，右键单击性能会话名称，然后单击“属性”  。  
   
-  下表中的任务描述了在使用检测方法进行分析时，你可以在 _性能会话_ 对话框中指定的选项。  
+  下表中的任务描述了在使用检测方法进行分析时，你可以在 _性能会话_  对话框中指定的选项。  
   
 |任务|相关内容|  
 |----------|---------------------|  

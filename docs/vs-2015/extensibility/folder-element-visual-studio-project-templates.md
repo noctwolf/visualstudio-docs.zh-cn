@@ -13,18 +13,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35448f4324213739cb2dc14a95598ac9a3d4432f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204358"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素（Visual Studio 项目模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定将添加到项目的文件夹。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
  \<Project>  
  \<文件夹 >  
@@ -66,7 +66,7 @@ ms.locfileid: "60055608"
   
  可以使用任何以下方法以将项目项组织到模板中的文件夹：  
   
-- 在模板的.zip 文件，包括文件夹并将其添加到项目的.vstemplate 文件中通过指定的路径中的文件`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如：  
+- 在模板的.zip 文件，包括文件夹并将其添加到项目的.vstemplate 文件中通过指定的路径中的文件`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如:  
   
      `...`  
   

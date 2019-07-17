@@ -9,11 +9,11 @@ caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147195"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,9 +77,9 @@ Microsoft Fakes 将应用的其余部分替换为*存根*或*垫片*，有助于
   
 2. **添加 Fakes 程序集**  
   
-    1. 在“解决方案资源管理器”中，展开测试项目的引用列表。 如果使用的是 Visual Basic，必须选择“显示所有文件”才能看到引用列表。  
+    1. 在“解决方案资源管理器”中，展开测试项目的引用列表。 如果使用的是 Visual Basic，必须选择“显示所有文件”  才能看到引用列表。  
   
-    2. 选择对其中定义了接口（例如 IStockFeed）的程序集的引用。 在此引用的快捷菜单上，选择“添加 Fakes 程序集”。  
+    2. 选择对其中定义了接口（例如 IStockFeed）的程序集的引用。 在此引用的快捷菜单上，选择“添加 Fakes 程序集”  。  
   
     3. 重新生成解决方案。  
   
@@ -165,9 +165,9 @@ Microsoft Fakes 将应用的其余部分替换为*存根*或*垫片*，有助于
   
 1. **添加 Fakes 程序集**  
   
-    在“解决方案资源管理器”中，打开单元测试项目的引用，然后选择对包含要虚设的方法的程序集的引用。 在此示例中，`DateTime` 类位于 **System.dll** 中。  若要查看 Visual Basic 项目中的引用，请选择“显示所有文件”。  
+    在“解决方案资源管理器”中，打开单元测试项目的引用，然后选择对包含要虚设的方法的程序集的引用。 在此示例中，`DateTime` 类位于 **System.dll** 中。  若要查看 Visual Basic 项目中的引用，请选择“显示所有文件”  。  
   
-    选择“添加 Fakes 程序集”。  
+    选择“添加 Fakes 程序集”  。  
   
 2. **在 ShimsContext 中插入垫片**  
   

@@ -23,11 +23,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155906"
 ---
 # <a name="debugging-web-applications-and-script"></a>调试 Web 应用程序和脚本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58931586"
  列出在调试 Web 应用程序时可能遇到的错误，并提出修复建议。  
   
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 描述如何使用“并行任务” 和“并行堆栈”工具窗口调试并行应用程序。  
+ 描述如何使用“并行任务”  和“并行堆栈”  工具窗口调试并行应用程序。  
   
 ## <a name="related-sections"></a>相关章节  
  [ASP.NET Web 应用程序](../debugger/debugging-preparation-aspnet-web-applications.md)  

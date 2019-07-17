@@ -22,18 +22,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156535"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在以下情况下，远程调试使用 DCOM 在本地和远程计算机之间进行通信：  
   
-- 调试器设置为了“本机兼容性模式”  ，或在“工具/选项/调试”  页内选中了“托管兼容模式”    
+- 调试器设置为了“本机兼容性模式”  ，或在“工具/选项/调试”  页内选中了“托管兼容模式”   
   
 - 调试的是托管 C++ (C++/CLI) 代码。  
   
@@ -43,9 +43,9 @@ ms.locfileid: "58936940"
   
   当 Visual Studio 进程无法通过 DCOM 针对远程调试器进程验证自己的身份（或提供的凭据被视为不足）时，将出现此错误。 以下一个或多个解决方法可解决此问题：  
   
-- 关闭“本机兼容模式”   和“托管兼容模式” 。  
+- 关闭“本机兼容模式”   和“托管兼容模式”  。  
   
-- 在 Visual Studio 2013 中，关闭“启用本机编辑并继续” 。  
+- 在 Visual Studio 2013 中，关闭“启用本机编辑并继续”  。  
   
 - 重新启动这两台计算机。  
   

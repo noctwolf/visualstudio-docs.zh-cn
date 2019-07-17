@@ -12,18 +12,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58936342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194332"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定模板所需的.NET framework 的最大版本。 它确定是否在显示该模板**模板**一部分**添加新项目**对话框中，基于在选择的值**目标框架版本**的框**添加新项目**对话框。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<MaxFrameworkVersion>  
   
 ## <a name="syntax"></a>语法  

@@ -1,5 +1,5 @@
 ---
-title: 如何：设置 C + + 项目的代码分析属性 |Microsoft Docs
+title: 如何：设置的 C-代码分析属性C++项目 |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,11 +20,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201320"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：设置 C/C++ 项目的代码分析属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58932394"
  **配置**列表和**平台**列表，可以将不同的代码分析设置应用于不同的项目配置和平台组合。 例如，可以直接将代码分析，以将一组规则应用到用于调试的项目生成并生成一组不同的版本。  
   
 ## <a name="enabling-code-analysis"></a>启用代码分析  
- 您可以决定是否通过选择启用你的项目的代码分析**启用代码分析的 C/c + + 生成**。 结合**配置**列表中，您可以例如，决定禁用调试版本并启用为发布版本的代码分析。  
+ 您可以决定是否通过选择启用你的项目的代码分析**启用代码分析的 C /C++上生成**。 结合**配置**列表中，您可以例如，决定禁用调试版本并启用为发布版本的代码分析。  
   
  如果你的项目包含托管的代码，您可以决定是否启用或禁用通过选择代码分析**生成时启用代码分析**。  
   

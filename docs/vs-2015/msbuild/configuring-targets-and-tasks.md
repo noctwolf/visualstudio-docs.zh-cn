@@ -10,16 +10,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196598"
 ---
 # <a name="configuring-targets-and-tasks"></a>配置目标和任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-通过 MSBuild 可以配置要在进程外运行的 MSBuild 目标和任务，以便面向当前运行所在的上下文之外的上下文。 例如，当开发计算机运行 64 位的 .NET Framework 4.5 操作系统时，可面向 32 位 NET Framework 2.0 应用程序。 还可以面向运行 .NET Framework 4 或更早版本的计算机。 32 或 64 位与特定 .NET Framework 版本的组合称为“目标上下文”。  
+通过 MSBuild 可以配置要在进程外运行的 MSBuild 目标和任务，以便面向当前运行所在的上下文之外的上下文。 例如，当开发计算机运行 64 位的 .NET Framework 4.5 操作系统时，可面向 32 位 NET Framework 2.0 应用程序。 还可以面向运行 .NET Framework 4 或更早版本的计算机。 32 或 64 位与特定 .NET Framework 版本的组合称为“目标上下文”  。  
   
 ## <a name="installation"></a>安装  
  .NET Framework 4.5 和 4.5.1 替换了 .NET Framework 4 的公共语言运行时 (CLR)、目标、任务和工具，而没有进行重命名。 .NET Framework 4.5.1 作为 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 的一部分安装。  

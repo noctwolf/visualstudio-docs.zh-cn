@@ -1,5 +1,5 @@
 ---
-title: DA0030：收集数据库项目的层交互测量值 | Microsoft Docs
+title: DA0030：收集数据库项目的层交互度量值 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152631"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集数据库项目的层交互测量值
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集数据库项目的层交互度量值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 规则 Id |DA0030 |  

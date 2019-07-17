@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59bd1cd56ee36c5e4164549df987f789aafe32e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58931392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203610"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ IDiaInjectedSource : IUnknown
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|检索源代码字节。|  
   
 ## <a name="remarks"></a>备注  
- 插入的源是在编译过程中注入的文本。 这并不意味着预处理器`#include`在 c + + 中使用。  
+ 插入的源是在编译过程中注入的文本。 这并不意味着预处理器`#include`中使用C++。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  通过调用来获取此接口[idiaenuminjectedsources:: Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)或[idiaenuminjectedsources:: Next](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)方法。 请参阅[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)接口以举例说明获取`IDiaInjectedSource`接口。  

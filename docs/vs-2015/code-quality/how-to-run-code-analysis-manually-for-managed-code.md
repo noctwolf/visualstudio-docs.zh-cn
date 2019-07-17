@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201346"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>如何：手动运行托管代码的代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,4 +27,4 @@ ms.locfileid: "60053854"
   
 1. 在中**解决方案资源管理器**，单击该项目。  
   
-2. 上**分析**菜单上，单击**上运行代码分析***项目名称*。
+2. 上**分析**菜单上，单击**上运行代码分析** *项目名称*。

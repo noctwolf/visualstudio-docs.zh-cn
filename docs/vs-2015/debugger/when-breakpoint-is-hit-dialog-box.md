@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a7cd140a22c435df0875c089a69476d3e1e61cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149407"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58935345"
  此文本框还支持可用于单独或 DebuggerDisplay 表达式的大括号内的特殊关键字 （如 $ADDRESS)。 在对话框中列出了可用的关键字。  
   
  **继续执行**  
- 仅在选择“打印消息”时启用此控件。 选择此控件，可以使用断点与跟踪点跟踪程序执行，而不是重大时命中位置。  
+ 仅在选择“打印消息”时启用此控件  。 选择此控件，可以使用断点与跟踪点跟踪程序执行，而不是重大时命中位置。  
   
 ## <a name="see-also"></a>请参阅  
  [使用断点](../debugger/using-breakpoints.md)   
