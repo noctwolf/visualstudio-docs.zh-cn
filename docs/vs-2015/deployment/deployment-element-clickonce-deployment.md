@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a55b5519d5abb7b40aeca23fed1bc2f8ea2cc33d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194647"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;元素 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "58926150"
 |`minimumRequiredVersion`|可选。 指定可在客户端运行此应用程序的最低版本。 如果应用程序的版本编号小于提供的部署清单中的版本号，不会运行该应用程序。 必须以格式指定版本号`N.N.N.N`，其中`N`是一个无符号的整数。 如果`install`属性是`false`，`minimumRequiredVersion`不能设置。|  
 |`mapFileExtensions`|可选。 默认为 `false`。 如果`true`，部署中的所有文件必须都具有.deploy 扩展名。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 将关闭这些文件中剥离此扩展，只要它从 Web 服务器下载它们。 如果使用发布你的应用程序，则[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，它会自动将此扩展添加到的所有文件。 此参数允许内的所有文件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署，以从筛选器阻止传输的"不安全"扩展，如.exe 结尾的文件的 Web 服务器下载。|  
 |`disallowUrlActivation`|可选。 默认为 `false`。 如果`true`，可以防止通过单击的 URL 或 Internet 资源管理器中输入 URL 来启动已安装应用程序。 如果`install`属性不存在，则忽略此属性。|  
-|`trustURLParameters`|可选。 默认为 `false`。 如果`true`，可以包含查询字符串参数传递到应用程序的 URL，太多类似的命令行自变量传递给命令行应用程序。 有关详细信息，请参阅[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果`disallowUrlActivation`属性是`true`，`trustUrlParameters`必须是从在清单中排除或显式设置为`false`。|  
+|`trustURLParameters`|可选。 默认为 `false`。 如果`true`，可以包含查询字符串参数传递到应用程序的 URL，太多类似的命令行自变量传递给命令行应用程序。 有关更多信息，请参见[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。<br /><br /> 如果`disallowUrlActivation`属性是`true`，`trustUrlParameters`必须是从在清单中排除或显式设置为`false`。|  
   
  `deployment`元素还包含以下子元素。  
   

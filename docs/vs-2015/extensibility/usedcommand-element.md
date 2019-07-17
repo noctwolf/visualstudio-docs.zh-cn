@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 91929038d77bcf14c6997f9b60551ed8c9c3b820
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186369"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "58934452"
   
 |元素|描述|  
 |-------------|-----------------|  
-|None||  
+|无||  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -53,7 +53,7 @@ ms.locfileid: "58934452"
 |[UsedCommands 元素](../extensibility/usedcommands-element.md)|UsedCommand 元素进行分组和其他 UsedCommands 分组。|  
   
 ## <a name="remarks"></a>备注  
- 通过添加到命令`<UsedCommands>`元素中，VSPackage 通知[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSPackage，需要该命令的环境。 应添加`<UsedCommand>`为包所需的任何命令的元素可能不包括在所有版本和配置 Visual Studio。 例如，如果您的包调用特定于 Visual c + + 的命令，命令将不可用的 Visual Web Developer 用户除非您包括`<UsedCommand>`命令的元素。  
+ 通过添加到命令`<UsedCommands>`元素中，VSPackage 通知[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]VSPackage，需要该命令的环境。 应添加`<UsedCommand>`为包所需的任何命令的元素可能不包括在所有版本和配置 Visual Studio。 例如，如果您的包调用特定于视觉对象的命令C++，该命令可供 Visual Web Developer 中的用户才会包括`<UsedCommand>`命令的元素。  
   
 ## <a name="example"></a>示例  
   

@@ -14,18 +14,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58937220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193962"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 指定的文件或目录将添加到项目。  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
  \<Project>  
   

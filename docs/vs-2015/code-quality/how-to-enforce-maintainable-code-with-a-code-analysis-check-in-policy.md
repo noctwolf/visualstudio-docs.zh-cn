@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142262"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制实现可维护的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ ms.locfileid: "60091871"
   
     - 复杂性：**CA1502 AvoidExcessiveComplexity** -阈值：在超过 25 种的警告  
   
-    - 可维护性索引：**CA1505 AvoidUnmaintainableCode** - Threshold:少于 20 发出警告  
+    - 可维护性索引：**CA1505 AvoidUnmaintainableCode** -阈值：少于 20 发出警告  
   
     - 类耦合度：**CA1506 AvoidExcessiveClassCoupling** -阈值：在多个类的 80 和多个方法，为 30 的警告  
   
     - 此外，如果你想禁止生成规则冲突，则选择**将警告视为错误**规则说明旁边的复选框。  
   
-3. 单击 **“确定”**。 新签入策略现在适用于未来的签入。  
+3. 单击 **“确定”** 。 新签入策略现在适用于未来的签入。  
   
 ## <a name="see-also"></a>请参阅  
  [代码度量值](../code-quality/code-metrics-values.md)   

@@ -18,11 +18,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185283"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>VSPackage 开发的 Devenv 命令行开关
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

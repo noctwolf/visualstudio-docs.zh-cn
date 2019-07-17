@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: ba14fdbc23968fcaf10355f73517ab6cd54f8797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142185"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定何时以及在何处应用批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58932149"
 |`_When_(expr, anno-list)`|`expr` 一个表达式，可以转换为`bool`。 非零值时 (`true`) 中, 指定的批注`anno-list`被视为适用。<br /><br /> 默认情况下，在每个批注`anno-list`，`expr`被解释为使用输入的值，如果批注是前置条件，并且如果使用的输出值的批注是后置条件。 若要重写默认值，可以使用`_Old_`内部函数，当你的计算结果以指示应使用输入的值后置条件。 **注意：** 可能是因为使用启用不同的注释`_When_`如果可变值-例如， `*pLength`— 因为涉及的计算的结果`expr`中不满足前提条件可能不同于其计算结果后置条件中。|  
   
 ## <a name="see-also"></a>请参阅  
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [对函数行为进行批注](../code-quality/annotating-function-behavior.md)   

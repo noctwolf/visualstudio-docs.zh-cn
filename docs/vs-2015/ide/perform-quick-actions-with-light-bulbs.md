@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74237b42ebafb82e82705d42174efb6f6a4d3661
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203728"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>使用电灯泡执行快速操作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54758631"
   
 1. 在许多情况下，灯泡会在你将鼠标指针悬停在错误点上方时，或是在你将插入点移动到存在错误的行中时在编辑器左边距处自然而然地出现。 看到红色波形曲线时，可悬停在其上方，以显示电灯泡。 使用鼠标或键盘转到问题发生的行时，也会显示电灯泡。  
   
-2. 在行上的任意位置按“Ctrl + .” 可调用电灯泡并直接转到潜在修复列表。  
+2. 在行上的任意位置按“Ctrl + .”  可调用电灯泡并直接转到潜在修复列表。  
   
    ![带鼠标悬停的灯泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")  
   
@@ -39,6 +39,6 @@ ms.locfileid: "54758631"
  ![灯泡已展开](../ide/media/vs2015-lightbulb-hover-expanded.png "VS2015_LightBulb_hover_expanded")  
   
 ## <a name="to-do-a-refactoring"></a>进行重构  
- 执行重构可通过右键单击打开上下文菜单，还可按 Ctrl + .  以显示重构选项。 在下图中， 在包含 `Math.Abs` 调用的行的某个位置按 Ctrl + . 后可提供提取方法重构：  
+ 执行重构可通过右键单击打开上下文菜单，还可按 Ctrl + . 以显示重构选项。 在下图中， 在包含 `Math.Abs` 调用的行的某个位置按 Ctrl + . 后可提供提取方法重构：  
   
  ![显示重构选项的灯泡](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

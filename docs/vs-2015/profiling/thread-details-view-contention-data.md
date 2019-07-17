@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16ee86e69cb3a150a98de5077aa0c545545833e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145596"
 ---
 # <a name="thread-details-view---contention-data"></a>“线程详细信息”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ ms.locfileid: "60069102"
   
 #### <a name="to-zoom-out-on-a-timeline"></a>缩小时间线  
   
-- 单击“缩小”以返回到以前的缩放级别。  
+- 单击“缩小”  以返回到以前的缩放级别。  
   
-- 单击“缩放重置”以在视图中显示整个时间线。  
+- 单击“缩放重置”  以在视图中显示整个时间线。  
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>查看事件的调用堆栈  
   
@@ -59,6 +59,6 @@ ms.locfileid: "60069102"
   
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>在“进程”窗口中查看线程争用数据  
   
-- 在时间线关系图中，单击“总计”。  
+- 在时间线关系图中，单击“总计”  。  
   
      [“进程视图”](../profiling/process-view-contention-data.md)会出现，其中包含所选线程。

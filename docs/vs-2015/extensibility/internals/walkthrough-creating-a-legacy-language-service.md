@@ -11,18 +11,18 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 56323447d1d4134939c8fd7550778d2c946bfe19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144414"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 使用托管的包框架 (MPF) 语言类实现中的语言服务[!INCLUDE[csprcs](../../includes/csprcs-md.md)]非常简单。 所需的 VSPackage，托管语言服务、 语言服务本身和你的语言分析器。  
   
-## <a name="prerequisites"></a>系统必备  
+## <a name="prerequisites"></a>先决条件  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 包项目模板的位置  
@@ -44,15 +44,15 @@ ms.locfileid: "60061367"
   
      可以使用所需的任何名称。 此处详细介绍这些过程假设 MyLanguagePackage 作为名称。  
   
-3. 选择[!INCLUDE[csprcs](../../includes/csprcs-md.md)]作为语言和用于生成新的密钥文件的选项。 单击 **“下一步”**。  
+3. 选择[!INCLUDE[csprcs](../../includes/csprcs-md.md)]作为语言和用于生成新的密钥文件的选项。 单击 **“下一步”** 。  
   
-4. 输入相应的公司和包信息。 单击 **“下一步”**。  
+4. 输入相应的公司和包信息。 单击 **“下一步”** 。  
   
-5. 选择**菜单命令**。 单击 **“下一步”**。  
+5. 选择**菜单命令**。 单击 **“下一步”** 。  
   
      如果不想支持代码段，您可以只需单击完成并忽略下一步。  
   
-6. 输入**插入代码片段**作为**命令名**并`cmdidInsertSnippet`有关**命令 ID**。 单击 **“完成”**。  
+6. 输入**插入代码片段**作为**命令名**并`cmdidInsertSnippet`有关**命令 ID**。 单击 **“完成”** 。  
   
      **命令名称**并**命令 ID**可以是任何所需内容，这些是只是示例。  
   

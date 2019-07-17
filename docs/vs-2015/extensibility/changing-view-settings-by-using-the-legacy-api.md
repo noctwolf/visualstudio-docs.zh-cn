@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d58d1477b9d7f58242f8cb4db7c3c360c248b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184465"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>如果使用旧版 API 更改视图设置
+# <a name="changing-view-settings-by-using-the-legacy-api"></a>使用旧版 API 更改视图设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以通过用户更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。  

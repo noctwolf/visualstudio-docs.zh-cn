@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8769cbb23b2c192fd3db07eca9519661b3e214c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190361"
 ---
 # <a name="performance-session-properties"></a>性能会话属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "54762841"
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-  可通过运行**性能向导**或通过手动创建会话来创建**性能会话**。 **性能会话**创建之后，**性能会话**会显示在“性能资源管理器”中。  
+  可通过运行**性能向导**或通过手动创建会话来创建**性能会话**。 **性能会话**创建之后，**性能会话**会显示在“性能资源管理器”  中。  
   
-  若要查看**性能会话**属性，请在“性能资源管理器”中选择会话名，右键单击它，然后选择“属性”。  
+  若要查看**性能会话**属性，请在“性能资源管理器”  中选择会话名，右键单击它，然后选择“属性”  。  
   
   性能会话具有以下属性页：  
   
@@ -98,7 +98,7 @@ ms.locfileid: "54762841"
  [VSPerfReport](../profiling/vsperfreport.md)。  
   
 ## <a name="windows-counters"></a>Windows 计数器  
- 通过此选项可以从 Windows 性能监视器计数器收集数据。 若要收集此数据，请选中标记为“收集 Windows 性能计数器”的复选框。 收集间隔可以在“收集间隔”框中设置。 还可以使用“计数器类别”和“实例”。 提供了一些默认 Windows 性能监视器计数器。  
+ 通过此选项可以从 Windows 性能监视器计数器收集数据。 若要收集此数据，请选中标记为“收集 Windows 性能计数器”  的复选框。 收集间隔可以在“收集间隔”  框中设置。 还可以使用“计数器类别”  和“实例”  。 提供了一些默认 Windows 性能监视器计数器。  
   
  有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
   

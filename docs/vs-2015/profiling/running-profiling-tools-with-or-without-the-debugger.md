@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191711"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>运行带或不带调试器的分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  
+Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”  和“内存使用率”  ）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>应在带还是不带调试器的情况下运行该工具？  
  集成了调试器的性能工具让你能够进行很多未集成调试器的工具不能执行的操作，例如设置断点和检查变量值。 而未集成调试器的工具提供的体验则更接近于用户将在发布的应用程序中获得的体验。  
@@ -43,7 +43,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
 1. 打开想要调试的项目，然后单击“调试”/“启动调试”  （或工具栏上的“启动”  或按 **F5**）。  
   
-2. 将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试”、“Windows”、“显示诊断工具”。  
+2. 将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试”、“Windows”、“显示诊断工具”  。  
   
 3. 运行要为其收集数据的方案。  
   
@@ -53,11 +53,11 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4. 可以使用工具栏上的“选择工具”设置选择是否查看“内存使用率”和/或“CPU 使用率”。 如果运行的是 Visual Studio Enterprise，则可以在“工具”/“选项”/“IntelliTrace”中启用或禁用 IntelliTrace。  
+4. 可以使用工具栏上的“选择工具”  设置选择是否查看“内存使用率”  和/或“CPU 使用率”  。 如果运行的是 Visual Studio Enterprise，则可以在“工具”/“选项”/“IntelliTrace”  中启用或禁用 IntelliTrace。  
   
 5. 当停止调试时，诊断会话结束。  
   
-   在 Visual Studio 2015 Update 1 中，“诊断工具”  窗口可让你更容易地关注感兴趣的事件。   事件名现在显示时会带有类别前缀（“手势”、“程序输出”、“断点”、“文件”等），因此，你可以快速扫描给定类别的列表或跳过你不关心的类别。  
+   在 Visual Studio 2015 Update 1 中，“诊断工具”  窗口可让你更容易地关注感兴趣的事件。   事件名现在显示时会带有类别前缀（“手势”  、“程序输出”  、“断点”  、“文件”  等），因此，你可以快速扫描给定类别的列表或跳过你不关心的类别。  
   
    窗口中现在有搜索框，因此你可以在事件列表中任何位置查找指定的字符串。 例如，下图显示搜索字符串“install”的结果，其匹配四个事件：  
   
@@ -74,13 +74,13 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
 1. 在 Visual Studio 中打开项目。  
   
-2. 在“调试”菜单上，选择“性能探查器...”(快捷键：Alt + F2）。  
+2. 在“调试”  菜单上，选择“性能探查器...”  (快捷键：Alt + F2）。  
   
 3. 在诊断启动页上，选择要在会话中运行的一个或多个工具。 将仅显示适用于项目类型、操作系统和编程语言的工具。 选择诊断工具时，将禁用对不能在同一诊断会话中运行的工具的选择。 对于 C# Windows 通用应用，你的选择可能如下所示：  
   
     ![选择诊断工具](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
-4. 若要启动诊断会话，请单击“开始”。  
+4. 若要启动诊断会话，请单击“开始”  。  
   
 5. 运行要为其收集数据的方案。  
   
@@ -88,7 +88,7 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
     ![在“性能和诊断”页上收集数据](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
-6. 若要结束诊断会话，请单击“停止收集”。  
+6. 若要结束诊断会话，请单击“停止收集”  。  
   
    停止在诊断会话中收集数据后，将分析数据，并在“诊断”页中显示报告。  
   
@@ -113,11 +113,11 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
   
  ![选择诊断工具分析目标](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
- 可以启动已安装在设备上的应用，也可以将诊断工具附加到已在运行的一些应用上。 选择“运行应用”或“安装应用”后，从发现指定部署目标上的应用的列表选择应用。  
+ 可以启动已安装在设备上的应用，也可以将诊断工具附加到已在运行的一些应用上。 选择“运行应用”  或“安装应用”  后，从发现指定部署目标上的应用的列表选择应用。  
   
  ![选择要诊断的正在运行或已安装的应用](../profiling/media/pdhub-selectrunningapp.png "PDHUB_SelectRunningApp")  
   
- 如果你选择“Internet Explorer”，请指定 URL，并且你可以更改电话部署目标。  
+ 如果你选择“Internet Explorer”  ，请指定 URL，并且你可以更改电话部署目标。  
   
  ![指定要在 Internet Explorer 中显示的 URL](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   

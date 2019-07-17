@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151023"
 ---
 # <a name="create-an-android-native-activity-app"></a>创建 Android 本机活动应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "60115635"
   
 #### <a name="to-create-a-new-project"></a>创建新项目  
   
-1. 打开 Visual Studio。 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 打开 Visual Studio。 在菜单栏上，依次选择“文件”  、“新建”  、“项目”  。  
   
-2. 在 **新项目** 对话框中，在 **模板**下，选择 **Visual C++**、 **跨平台**，然后选择 **本机活动应用程序 (Android)** 模板。  
+2. 在 **新项目** 对话框中，在 **模板**下，选择 **Visual C++** 、 **跨平台**，然后选择 **本机活动应用程序 (Android)** 模板。  
   
-3. 为应用提供一个名称（如 `MyAndroidApp`），然后选择“确定”。  
+3. 为应用提供一个名称（如 `MyAndroidApp`），然后选择“确定”  。  
   
     ![创建本机活动项目](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
@@ -58,13 +58,13 @@ ms.locfileid: "60115635"
   
 #### <a name="to-build-and-run-the-default-native-activity-app"></a>生成并运行默认本机活动应用  
   
-1. 如果尚未选中，则从“解决方案平台”下拉列表中选择“x86”。  
+1. 如果尚未选中，则从“解决方案平台”  下拉列表中选择“x86”  。  
   
      ![解决方案平台下拉列表 x86 选择](../cross-platform/media/cppmdd-rc-na-solution-x86.png "CPPMDD_RC_NA_Solution_x86")  
   
-     如果未显示“解决方案平台”列表，则从“添加/删除按钮”  列表中选择“解决方案平台”  ，然后选择你的平台。    
+     如果未显示“解决方案平台”列表，则从“添加/删除按钮”  列表中选择“解决方案平台”  ，然后选择你的平台。   
   
-2. 在菜单栏上，依次选择 **“生成”**、 **“生成解决方案”**。  
+2. 在菜单栏上，依次选择 **“生成”** 、 **“生成解决方案”** 。  
   
      “输出”窗口显示针对解决方案中两个项目的生成过程的输出。  
   

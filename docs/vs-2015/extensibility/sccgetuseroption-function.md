@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd00a2b669b806b09a6ae221b2ba2e03f8d45ceb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200072"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ SCCRTN SccGetUserOption(
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  pContext  
  [in]源控件插件上下文指针。  
   
@@ -47,7 +47,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>返回值  
  此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|ReplTest1|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功检索选项。|  
 |SCC_E_OPNOTSUPPORTED|不支持选项。|  

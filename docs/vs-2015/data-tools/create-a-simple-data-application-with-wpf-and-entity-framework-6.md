@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: decb17be7caa4ea0a300ddb4378ac0ad11520109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145812"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ ms.locfileid: "60098800"
         }  
     ```  
   
-8. 按 F5 。 你应看到已检索到 CollectionViewSource，及其在数据网格中的订单的第一个客户的详细信息。 格式设置不是太好了，因此让我们来修复的。 创建一种方法，若要查看其他记录，并执行基本的 CRUD 操作。  
+8. 按 F5  。 你应看到已检索到 CollectionViewSource，及其在数据网格中的订单的第一个客户的详细信息。 格式设置不是太好了，因此让我们来修复的。 创建一种方法，若要查看其他记录，并执行基本的 CRUD 操作。  
   
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>调整页面设计并添加新客户和订单的网格  
  Visual Studio 生成的默认排列方式是不适合我们的应用程序，因此我们将在 XAML 中手动进行一些更改。 我们还将需要一些"forms"（这是实际网格），使用户能够添加新客户或新订单。    为了能够添加新客户和订单，我们需要一组单独的不是数据绑定到的文本框`CollectionViewSource`。 我们将控制哪些用户会看到在任何给定时间通过将 Visible 属性设置的处理程序方法中的网格。  
@@ -701,7 +701,7 @@ ms.locfileid: "60098800"
     }  
     ```  
   
-3. 按 F5 。 您应该看到你的数据，并导航按钮应正常运行。 单击"提交"以向模型添加新客户或订单后输入的数据。  单击"取消"以退出新客户或新的订单窗体而不保存。 可以对现有客户和订单的文本框中直接进行编辑，这些更改将写入到该模型自动。  
+3. 按 F5  。 您应该看到你的数据，并导航按钮应正常运行。 单击"提交"以向模型添加新客户或订单后输入的数据。  单击"取消"以退出新客户或新的订单窗体而不保存。 可以对现有客户和订单的文本框中直接进行编辑，这些更改将写入到该模型自动。  
   
 ## <a name="see-also"></a>请参阅  
  [适用于.NET 的 visual Studio data tools](../data-tools/visual-studio-data-tools-for-dotnet.md) [Entity Framework 文档](https://msdn.microsoft.com/data/ee712907.aspx)

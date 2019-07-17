@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197265"
 ---
 # <a name="vsix-color-editor"></a>VSIX 颜色编辑器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio 扩展颜色编辑器工具可以创建和编辑 Visual Studio 的
   
    **步骤 1：确定新的颜色标记的类别和标记名称。**  
   
-   首选命名方案为 VSColor **[类别] [UI 类型] [State]**。 不要 VSColor 名称中使用单词"color"，因为它是冗余。  
+   首选命名方案为 VSColor **[类别] [UI 类型] [State]** 。 不要 VSColor 名称中使用单词"color"，因为它是冗余。  
   
    类别名称提供逻辑分组，而应定义为窄越好。 例如，单个工具窗口的名称可能是一个类别名称，但不是整个业务单元或项目组的名称。 分组为类别的项可帮助防止产生混乱之间具有相同名称的颜色。  
   

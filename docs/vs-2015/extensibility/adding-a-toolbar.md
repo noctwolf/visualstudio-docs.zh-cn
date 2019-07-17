@@ -12,11 +12,11 @@ caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: de74961715a82dde4e184509094d05145ad0f79c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184860"
 ---
 # <a name="adding-a-toolbar"></a>添加工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "60077714"
   
 6. 右键单击 Visual Studio 菜单栏，以获取工具栏的列表。 选择**测试工具栏**。  
   
-7. 现在应为一个图标文件图标中查找右侧看到您的工具栏。 当单击图标时，应看到一个消息框，显示**ToolbarTestCommandPackage。Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.  
+7. 现在应为一个图标文件图标中查找右侧看到您的工具栏。 当单击图标时，应看到一个消息框，显示**ToolbarTestCommandPackage。内部 IDEToolbar.ToolbarTestCommand.MenuItemCallback()** 。  
   
 ## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

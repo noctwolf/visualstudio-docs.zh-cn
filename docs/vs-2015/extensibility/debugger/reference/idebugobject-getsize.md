@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetSize | Microsoft Docs
+title: IDebugObject::GetSize |Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ffafe6b62047a577b2bfce74c8462d9051c4dcfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58935627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192271"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ int GetSize(
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+#### <a name="parameters"></a>Parameters  
  `pnSize`  
  [out]以字节为单位返回大小。  
   

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f2fd696e5d1ac30fda19a53490bd494305d4fd82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186154"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用外侧代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "60098449"
   
 2. 在代码编辑器中，选择要环绕的文本。  
   
-3. 在“编辑”菜单中选择“IntelliSense”，然后选择“环绕”命令。  
+3. 在“编辑”  菜单中选择“IntelliSense”  ，然后选择“环绕”  命令。  
   
 4. 从代码片段插入器中选择代码片段，然后按 Tab 或 Enter。  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60098449"
   
 2. 在代码编辑器中，选择要环绕的文本。  
   
-3. 右键单击所选文本，然后在上下文菜单中选择“环绕”命令。  
+3. 右键单击所选文本，然后在上下文菜单中选择“环绕”  命令。  
   
 4. 从代码片段插入器中选择代码片段，然后按 Tab 或 Enter。  
   

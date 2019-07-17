@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58934685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184695"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令使用的位标志
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,14 +25,14 @@ ms.locfileid: "58934685"
 ## <a name="checked-out-flag"></a>签出标志  
  可以为设置此标志[SccAdd](../extensibility/sccadd-function.md)或[SccCheckin](../extensibility/scccheckin-function.md)。  
   
-|Flag|值|描述|  
+|Flag|ReplTest1|描述|  
 |----------|-----------|-----------------|  
 |`SCC_KEEP_CHECKEDOUT`|0x1000|保持签出该文件。|  
   
 ## <a name="add-flags"></a>添加标志  
  通过使用这些标志[SccAdd](../extensibility/sccadd-function.md)。  
   
-|Flag|值|描述|  
+|Flag|ReplTest1|描述|  
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|源代码管理插件会自动检测文件是否是文本或二进制文件。|  
 |`SCC_FILETYPE_TEXT`|0x01|文件类型为文本。|  
@@ -54,7 +54,7 @@ ms.locfileid: "58934685"
 ## <a name="populatelist-flag"></a>PopulateList 标志  
  通过使用此标志[SccPopulateList](../extensibility/sccpopulatelist-function.md)中`fOptions`参数。  
   
-|Flag|值|描述|  
+|Flag|ReplTest1|描述|  
 |----------|-----------|-----------------|  
 |`SCC_PL_DIR`|0x00000001L|IDE 传递不是文件的目录。|  
   
@@ -78,7 +78,7 @@ ms.locfileid: "58934685"
 ## <a name="get-flags"></a>获取标志  
  通过使用这些标志[SccGet](../extensibility/sccget-function.md)并[SccCheckout](../extensibility/scccheckout-function.md)。  
   
-|Flag|值|描述|  
+|Flag|ReplTest1|描述|  
 |----------|-----------|-----------------|  
 |`SCC_GET_ALL`|0x00000001L|IDE 传递不是文件的目录：获取这些目录中的所有文件。|  
 |`SCC_GET_RECURSIVE`|0x00000002L|IDE 传递目录：获取这些目录和所有子目录。|  
@@ -103,9 +103,9 @@ ms.locfileid: "58934685"
 |`SCC_OPT_EQ_DISABLE`|0x00L|事件队列活动挂起。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|启用事件队列日志记录。|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_HCM_NO`|0L|（默认值）有没有取消模式;如果需要，必须提供插件。|`SCC_OPT_HASCANCELMODE`|  
-|`SCC_OPT_HCM_YES`|1L|IDE 处理取消。|`SCC_OPT_HASCANCELMODE`|  
+|`SCC_OPT_HCM_YES`|1 L|IDE 处理取消。|`SCC_OPT_HASCANCELMODE`|  
 |`SCC_OPT_SCO_NO`|0L|（默认值）确定以从插件 UI，则签出设置工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
-|`SCC_OPT_SCO_YES`|1L|无插件的 UI 签出，没有工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
+|`SCC_OPT_SCO_YES`|1 L|无插件的 UI 签出，没有工作目录。|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>请参阅  
  [源代码管理插件](../extensibility/source-control-plug-ins.md)

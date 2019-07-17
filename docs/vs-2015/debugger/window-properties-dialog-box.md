@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eb07b20c08945b6a9f253d0ab634dca1c767d59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58933146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187243"
 ---
 # <a name="window-properties-dialog-box"></a>“窗口属性”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-使用此对话框中，若要了解有关特定窗口的详细信息。 若要显示此对话框中，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”。   
+使用此对话框中，若要了解有关特定窗口的详细信息。 若要显示此对话框中，将焦点移至[Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性”   。  
   
 ## <a name="in-this-section"></a>本节内容  
  [“常规”选项卡。“窗口属性”对话框](../debugger/general-tab-window-properties-dialog-box.md)  

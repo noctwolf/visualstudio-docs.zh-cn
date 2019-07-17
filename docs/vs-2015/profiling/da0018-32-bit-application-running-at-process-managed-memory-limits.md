@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194948"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：运行的 32 位应用程序达到了进程托管内存的限制
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：运行的 32 位应用程序达到了进程托管内存限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 规则 Id |DA0018 |  
@@ -46,7 +46,7 @@ ms.locfileid: "54773282"
  托管堆总大小接近默认限制时，内存管理开销常会增加到一定程度，此时应用程序的响应情况和可伸缩性会开始受到影响。  
   
 ## <a name="how-to-investigate-a-warning"></a>如何调查警告  
- 双击“错误列表”窗口中的消息，导航到[标记](../profiling/marks-view.md)视图。 查找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 列。 确定是否存在特定阶段的程序执行，其中托管内存分配高于其他阶段。 比较 **# Bytes in all Heaps** 列的值与 **.NET CLR Memory\\# of Gen 0 Collections**、**.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 列中报告的垃圾回收率，确定托管内存分配模式是否会影响垃圾回收率。  
+ 双击“错误列表”窗口中的消息，导航到[标记](../profiling/marks-view.md)视图。 查找 **.NET CLR Memory\\# Bytes in all Heaps** 和 **# Total committed bytes** 列。 确定是否存在特定阶段的程序执行，其中托管内存分配高于其他阶段。 比较 **# Bytes in all Heaps** 列的值与 **.NET CLR Memory\\# of Gen 0 Collections**、 **.NET CLR Memory\\# of Gen 1 Collections** 和 **.NET CLR Memory\\# of Gen 2 Collections** 列中报告的垃圾回收率，确定托管内存分配模式是否会影响垃圾回收率。  
   
  在 .NET Framework 应用程序中，公共语言运行时会限制托管堆的总大小，使其略低于进程地址空间专用区域部分总大小的一半。 对于在 32 位计算机上运行的 32 位进程，进程地址空间专用部分的上限为 2 GB。 托管堆总大小开始接近其默认限制时，管理内存的开销可能会增加，应用程序的性能会降低。  
   

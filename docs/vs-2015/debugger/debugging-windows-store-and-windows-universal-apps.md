@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 979808584c788d8b4b30f327a535ae2dfb7479e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205666"
 ---
 # <a name="debugging-windows-store-and-windows-universal-apps"></a>调试 Windows 应用商店和 Windows 通用应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

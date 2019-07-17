@@ -11,13 +11,13 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185004"
 ---
-# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用旧版 API 访问的文本缓冲区
+# <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用旧版 API 访问文本缓冲区
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 文本是负责管理文本流和文件暂留。 尽管缓冲区可以读取或写入其他格式与缓冲区的所有普通通信执行通过使用 Unicode。 在传统的 Api 中的文本缓冲区可以使用一个-或二维坐标系统以确定在缓冲区中的字符位置。  

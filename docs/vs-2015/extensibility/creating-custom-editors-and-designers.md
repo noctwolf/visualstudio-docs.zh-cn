@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197406"
 ---
 # <a name="creating-custom-editors-and-designers"></a>创建自定义编辑器和设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Visual Studio 集成的开发环境 (IDE) 可以托管不同类型的编辑器�
  [演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)  
  说明如何创建自定义编辑器。  
   
- [演练：将功能添加到自定义编辑器](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [演练：在自定义编辑器中添加功能](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  介绍如何将功能添加到自定义编辑器。  
   
  [设计器初始化和元数据配置](../extensibility/designer-initialization-and-metadata-configuration.md)  

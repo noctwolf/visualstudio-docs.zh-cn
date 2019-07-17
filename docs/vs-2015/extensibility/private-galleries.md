@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 097d666a839f67e657610b34641ed29da91797be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194010"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60085852"
   
 #### <a name="to-add-a-private-gallery-to-extensions-and-updates"></a>若要将专用库添加到扩展和更新  
   
-1. 在菜单栏上，依次选择“工具” 、“选项” 。  
+1. 在菜单栏上，依次选择“工具”  、“选项”  。  
   
 2. 在中**环境**节点中，选择**扩展和更新**。  
   
@@ -44,9 +44,9 @@ ms.locfileid: "60085852"
   
 5. 在中**URL**字段中，输入的 Atom 馈送或托管专用库的 SharePoint 站点的 URL。  
   
-    1. 如果主机是 Atom 馈送的连接至专用库时，URL 将类似于此： http://www.mywebsite/mygallery/atom.xml。  此 URL 可以指向文件或网络路径。  
+    1. 如果主机是 Atom 馈送的连接至专用库时，URL 将类似于此： http://www.mywebsite/mygallery/atom.xml 。  此 URL 可以指向文件或网络路径。  
   
-    2. 如果主机是 SharePoint 站点，该 URL 类似于此： http://mysharepoint/sites/mygallery/forms/AllItems.aspx。  
+    2. 如果主机是 SharePoint 站点，该 URL 类似于此： http://mysharepoint/sites/mygallery/forms/AllItems.aspx 。  
   
 ### <a name="managing-private-galleries"></a>管理专用库  
  管理员可以向专用库提供多台计算机在同一时间通过修改每个计算机上的系统注册表。 若要实现此目的，创建描述新的注册表项和其值的.pkgdef 文件。  此文件的格式如下所示。  
@@ -72,7 +72,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-search-for-and-install-extensions-from-a-private-gallery"></a>若要搜索并安装扩展从专用库  
   
-1. 在菜单栏上，选择“工具”，再选择“扩展和更新”。  
+1. 在菜单栏上，选择“工具”  ，再选择“扩展和更新”  。  
   
 2. 在左窗格中，选择**联机扩展**，然后选择**我的库**。  
   
@@ -85,7 +85,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
 #### <a name="to-update-an-installed-extension-from-a-private-gallery"></a>若要更新已安装的扩展从专用库  
   
-1. 在菜单栏上，选择“工具”，再选择“扩展和更新”。  
+1. 在菜单栏上，选择“工具”  ，再选择“扩展和更新”  。  
   
 2. 在左窗格中，选择**更新**，然后选择**我的存储库**。  
   

@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e58acc6323f396f9b0755e84b369ce0fdf413c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185170"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自托管 WCF 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-“自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 开发服务器内部运行的 WCF 服务。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
+“自承载服务”是指不在 IIS、WCF 服务主机或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 开发服务器内部运行的 WCF 服务  。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
   
  如果内部，或者不能以这种方式，如 NT 服务启动进程自承载 WCF 服务不能使用此方法。 相反，可以执行以下操作：  
   
@@ -48,13 +48,13 @@ ms.locfileid: "60080509"
   
     2. 单击**设置启动项目**。  
   
-    3. 在“解决方案 \<名称> 属性”对话框中选择“多启动项目”。  
+    3. 在“解决方案 \<名称> 属性”对话框中选择“多启动项目”   。  
   
     4. 在中**多个启动项目**网格中的，对应于服务器项目中，在行上单击**操作**，然后选择**启动**。  
   
     5. 在与客户端项目相对应的行中，单击**操作**，然后选择**启动**。  
   
-    6. 单击 **“确定”**。  
+    6. 单击 **“确定”** 。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 WCF 服务](../debugger/debugging-wcf-services.md)   
