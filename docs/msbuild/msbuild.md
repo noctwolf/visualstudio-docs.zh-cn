@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437863"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823501"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe，可以在未安装 Visual Studio 的环境中安排和生成产品。
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe  ，可以在未安装 Visual Studio 的环境中安排和生成产品。
 
- Visual Studio 使用 MSBuild 来加载和生成托管项目。 Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含 MSBuild XML 代码，当你使用 IDE 来生成项目时，此代码就会运行。 Visual Studio 项目会导入所有必要的设置和生成过程来执行典型的开发工作，但你可以从 Visual Studio 内或通过使用 XML 编辑器对其进行扩展或修改。
+ Visual Studio 使用 MSBuild 来加载和生成托管项目。 Visual Studio 中的项目文件（.csproj  、.vbproj  、vcxproj  等）包含 MSBuild XML 代码，当你使用 IDE 来生成项目时，此代码就会运行。 Visual Studio 项目会导入所有必要的设置和生成过程来执行典型的开发工作，但你可以从 Visual Studio 内或通过使用 XML 编辑器对其进行扩展或修改。
 
  有关适用于 C++ 的 MSBuild 的信息，请参阅 [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp)。
 
@@ -35,13 +35,13 @@ ms.locfileid: "63437863"
 
 - 你想要修改生成系统。 例如，你可能想要实现以下操作：
 
-    - 在文件到达编译器之前先进行预处理。
+  - 在文件到达编译器之前先进行预处理。
 
-    - 将生成输出复制到其他位置。
+  - 将生成输出复制到其他位置。
 
-    - 从生成输出创建压缩文件。
+  - 从生成输出创建压缩文件。
 
-    - 执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。
+  - 执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。
 
 你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。
 
@@ -51,7 +51,7 @@ ms.locfileid: "63437863"
  本主题概述了 MSBuild。 有关介绍性教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 
 ## <a name="use-msbuild-at-a-command-prompt"></a>在命令提示符处使用 MSBuild
- 若要在命令提示符处运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，请将项目文件随相应的命令行选项一起传递到 MSBuild.exe。 命令行选项允许你设置属性、执行特定的目标，以及设置可控制生成过程的其他选项。 例如，使用以下命令行语法生成文件 MyProj.proj，并将 `Configuration` 属性设置为 `Debug`。
+ 若要在命令提示符处运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，请将项目文件随相应的命令行选项一起传递到 MSBuild.exe  。 命令行选项允许你设置属性、执行特定的目标，以及设置可控制生成过程的其他选项。 例如，使用以下命令行语法生成文件 MyProj.proj  ，并将 `Configuration` 属性设置为 `Debug`。
 
 ```cmd
 MSBuild.exe MyProj.proj -property:Configuration=Debug
@@ -145,7 +145,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
  你可以将生成错误、警告和消息记录到控制台或其他输出设备。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)和 [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md)。
 
 ## <a name="use-msbuild-in-visual-studio"></a>在 Visual Studio 中使用 MSBuild
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式来存储有关托管项目的生成信息。 通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口添加或更改的项目设置将反映在为每个项目生成的 .\*proj 文件中。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用一个已承载的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 实例来生成托管项目。 这意味着可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中或在命令提示符处生成托管项目（即使未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]），并且结果将完全相同。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式来存储有关托管项目的生成信息。 通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口添加或更改的项目设置将反映在为每个项目生成的 .\*proj  文件中。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用一个已承载的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 实例来生成托管项目。 这意味着可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中或在命令提示符处生成托管项目（即使未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]），并且结果将完全相同。
 
  有关如何在 Visual Studio 中使用 MSBuild 的教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。
 

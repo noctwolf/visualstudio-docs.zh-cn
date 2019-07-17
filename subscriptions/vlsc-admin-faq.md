@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/13/2018
 ms.topic: conceptual
 description: 批量许可服务中心管理迁移常见问题解答
-searchscope: VS Subscription
-ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34c5d2d287507699ebc47bdd7e4716838c408d07
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427970"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784751"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio 订阅管理迁移
 
@@ -75,10 +74,10 @@ ms.locfileid: "62427970"
 你可以继续通过 VLSC 管理订阅，直到收到 Visual Studio 订阅的电子邮件，其中说明你的组织已迁移并且可以在新门户中进行管理。
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>我可以在哪里找到组织的公共客户编号 (PCN) 或授权编号？
-登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“订阅” > “Visual Studio 订阅”。 PCN 位于“协议/公共客户编号结果”之下。 请参阅这篇[帮助文章](find-pcn.md)，了解查找 PCN 的相关分步指导。
+登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“订阅” > “Visual Studio 订阅”   。 PCN 位于“协议/公共客户编号结果”之下  。 请参阅这篇[帮助文章](find-pcn.md)，了解查找 PCN 的相关分步指导。
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>如何找出主要联系人或通知联系人是谁？
-登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“许可证 > 关系摘要”，选择你的“许可 ID > 联系人”。 请参阅这篇[帮助文章](find-primary-contact.md)，了解查找主要联系人或通知联系人的相关分步指导。
+登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 并按以下路径导航：“许可证 > 关系摘要”，选择你的“许可 ID > 联系人”   。 请参阅这篇[帮助文章](find-primary-contact.md)，了解查找主要联系人或通知联系人的相关分步指导。
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>如果我的主要联系人或通知联系人已离职、不再就职于这家公司或无法完成加入，该怎么办？
 你需要[联系支持人员](https://visualstudio.microsoft.com/subscriptions/support/#talktous)并提供在 VLSC 中用于管理订阅的电子邮件。 验证后，支持人员将帮助你执行加入过程。

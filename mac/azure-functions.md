@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692830"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825555"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 
@@ -138,14 +138,14 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
 ## <a name="available-function-templates"></a>可用的函数模板
 
 - **GitHub 触发器** - 对 GitHub 存储库中发生的事件作出响应。 有关详细信息，请参阅[关于 GitHub 的 Azure Functions 文章](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - GitHub 快速注释 - 此函数在其收到一个问题或拉取请求的 GitHub Webhook 时运行并添加注释。
-    - GitHub WebHook - 此函数在其收到 GitHub Webhook 请求时运行。
+  - GitHub 快速注释 - 此函数在其收到一个问题或拉取请求的 GitHub Webhook 时运行并添加注释。
+  - GitHub WebHook - 此函数在其收到 GitHub Webhook 请求时运行。
 
 - **HTTP** - 使用 HTTP 请求触发代码的执行。 可用于以下 HTTP 触发器的显式模板：
-    - Http 触发器
-    - Http GET CRUD
-    - Http POST CRUD
-    - 带有参数的 Http 触发器
+  - Http 触发器
+  - Http GET CRUD
+  - Http POST CRUD
+  - 带有参数的 Http 触发器
 
 - **计时器** - 按照预定义计划执行清除或其他批处理任务。 此模板采用两个字段：Name 和 schedule（一个具有 6 个字段的 CRON 表达式）。 有关详细信息，请参阅[关于时间的 Azure functions 文章](/azure/azure-functions/functions-create-scheduled-function)
 

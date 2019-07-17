@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 27364bd028d9fb493da354d3bff7f11efe5f459d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976221"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825710"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -38,25 +38,25 @@ ms.locfileid: "65976221"
 
 - 如果重启 Visual Studio 未能解决问题，这可能是由于你的代理服务器不提示需要提供 http:&#47;&#47;go.microsoft.com 地址的凭据，而是提示需要 &#42;.visualStudio.microsoft.com 地址的凭据。 对于这些服务器，请考虑将以下 URL 添加到允许列表，以取消对 Visual Studio 中所有登录场景的阻止：
 
-    - &#42;.windows.net
+  - &#42;.windows.net
 
-    - &#42;.microsoftonline.com
+  - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.microsoft.com
+  - &#42;.visualstudio.microsoft.com
 
-    - &#42;.microsoft.com
+  - &#42;.microsoft.com
 
-    - &#42;.live.com
+  - &#42;.live.com
 
 - 否则，可以从允许列表中删除 http:&#47;&#47;go.microsoft.com 地址，以便在重启 Visual Studio 时出现代理身份验证对话框，以提供 http:&#47;&#47;go.microsoft.com 地址和服务器终结点。
 
-  - 或 -
+  \- 或 -
 
 - 如果你想通过代理使用默认凭据，则可以执行以下操作：
 
 ::: moniker range="vs-2017"
 
-  1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
+  1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE    。
 
   2. 在配置文件中查找 `<system.net>` 块，然后添加这个代码：
 
@@ -75,7 +75,7 @@ ms.locfileid: "65976221"
 
 ::: moniker range="vs-2019"
 
-  1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE。
+  1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE    。
 
   2. 在配置文件中查找 `<system.net>` 块，然后添加这个代码：
 

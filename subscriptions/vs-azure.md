@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
-searchscope: VS Subscription
-ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 542f460e6c228564e05affd9467f6deaaf2b0506
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032204"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823748"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -108,7 +107,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 ## <a name="support-resources"></a>支持资源
 
 - 需要与 Azure 有关的帮助？  请参阅下列资源：
-    - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
-    - [Azure 文档](/azure/)
+  - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+  - [Azure 文档](/azure/)
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

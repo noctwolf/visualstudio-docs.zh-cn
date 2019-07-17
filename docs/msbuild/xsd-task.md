@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777634"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825820"
 ---
 # <a name="xsd-task"></a>XSD 任务
-包装从源生成架构或类文件的 XML 架构定义工具 (xsd.exe)。
+包装从源生成架构或类文件的 XML 架构定义工具 (xsd.exe)。 
 
 > [!NOTE]
-> 自 Visual Studio 2017 开始，已弃用对 xsd.exe 的 C++ 项目支持。 仍可通过向 GAC 手动添加 CppCodeProvider.dll 来使用 Microsoft.VisualC.CppCodeProvider。
+> 自 Visual Studio 2017 开始，已弃用对 xsd.exe 的 C++ 项目支持  。 仍可通过向 GAC 手动添加 CppCodeProvider.dll 来使用 Microsoft.VisualC.CppCodeProvider   。
 
 ## <a name="parameters"></a>参数
  下表介绍了 **XSD** 任务的参数。
@@ -44,15 +44,15 @@ ms.locfileid: "62777634"
 
 - **GenerateFromSchema**
 
-     可选 **String** 参数。
+  可选 **String** 参数。
 
-     指定从指定架构生成的类型。
+  指定从指定架构生成的类型。
 
-     指定以下一个值，其中每个值对应于一个 XSD 选项。
+  指定以下一个值，其中每个值对应于一个 XSD 选项。
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **语言**
 

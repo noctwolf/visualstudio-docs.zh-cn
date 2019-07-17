@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: f7674a925a2fb70820c216557ef012484ffebbdf
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691688"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823177"
 ---
 # <a name="editor-behavior"></a>编辑器行为
 
@@ -22,9 +22,9 @@ ms.locfileid: "67691688"
 * 按下分号或大括号等字符会触发即时生成的代码格式，模拟已设置的格式首选项。
 * 也可以选择在保存文件时设置其格式，该方法允许按需写入代码，让 IDE 负责按现有的首选项设置代码格式。
 * 可将缩进设置为“无”、“自动”或“智能”。 这些设置会执行以下操作：
-   * 无 - 将脱字号设置到下一行的起始位置
-   * 自动 - 将脱字号设置到下一行的同一列
-   * 智能 - 基于代码在下一行缩进
+  * 无 - 将脱字号设置到下一行的起始位置
+  * 自动 - 将脱字号设置到下一行的同一列
+  * 智能 - 基于代码在下一行缩进
 * 不同 OS 有不同的断字行为，出于导航目的，文本编辑器需要知道字开始或结束的位置。 可以将格式设置为 Unix 或 Windows。
 
 也可以为 XML、CSS、HTML 和 JSON 设置格式规则。

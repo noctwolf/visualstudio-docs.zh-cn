@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: 对于 MPN 合作伙伴而言，如何将 Visual Studio 订阅分配到最终用户。
-searchscope: VS Subscription
-ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412390"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823194"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅
 
@@ -26,14 +25,14 @@ ms.locfileid: "63412390"
 Microsoft Action Pack 订阅者和 Visual Studio 订阅
 
 1. 计划管理员将登录到 Partner Membership Center
-2. 通过“需求和资产”关联人员
-3. 找到个人和“分配角色”
-4. 选择第一个、第二个或第三个“技术联系人”并保存
-5. 选择“需求和资产”
-6. 选择“特权”
-7. 选择“Visual Studio 订阅”（注意：Visual Studio 订阅更新挂起）
-8. 选择所需的“个人”
-9. 单击“提交”
+2. 通过“需求和资产”  关联人员
+3. 找到个人和“分配角色” 
+4. 选择第一个、第二个或第三个“技术联系人”  并保存 
+5. 选择“需求和资产” 
+6. 选择“特权” 
+7. 选择“Visual Studio 订阅”  （注意：Visual Studio 订阅更新挂起）
+8. 选择所需的“个人” 
+9. 单击“提交” 
 10. 个人将收到一封电子邮件
 11. 指定个人可访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
 12. 可能会显示 Visual Studio 个人资料页，包括以下内容：
@@ -43,11 +42,11 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 13. 登录现已完成，订阅者应可以访问权益
 
 ### <a name="competency-partners"></a>能力合作伙伴
-1. 选择“需求和资产”
-2. 选择“特权”
-3. 选择“MSDN 订阅”（注意：这即将重新标记为“Visual Studio 订阅”）
-4. 找到所需的“个人”
-5. 单击“提交”
+1. 选择“需求和资产” 
+2. 选择“特权” 
+3. 选择“MSDN 订阅”（注意：这即将重新标记为“Visual Studio 订阅”） 
+4. 找到所需的“个人” 
+5. 单击“提交” 
 6. 个人将收到一封电子邮件
 7. 指定个人可访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 进行登录
 8. 可能会显示 Visual Studio 个人资料页
@@ -61,7 +60,7 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 - 与 Microsoft 合作伙伴网络 [Visual Studio 订阅](https://partner.microsoft.com/membership/msdn-subscriptions)有关的详细信息
 
 - Microsoft 合作伙伴网络[计划管理员软件与联机服务权益指南](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf)
-    - 第 6 页 - 为 Action Pack 分配联系人角色和 Visual Studio 订阅
+  - 第 6 页 - 为 Action Pack 分配联系人角色和 Visual Studio 订阅
 
 > [!NOTE]
 > Visual Studio 订阅需要技术联系人角色

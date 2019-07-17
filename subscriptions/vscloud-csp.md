@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/15/2018
 ms.topic: conceptual
 description: 有关云解决方案提供商如何为客户购买和管理 Visual Studio 云订阅的信息。
-searchscope: VS Subscription
-ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4db9211041aca4a49bcd3feb182cfd80423d6960
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978505"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250652"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 
@@ -38,34 +37,34 @@ ms.locfileid: "62978505"
 > [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. 登录 [Microsoft 合作伙伴中心](https://partnercenter.microsoft.com)。
-0. 选择“客户”，并选择要为其购买的客户。
-0. 选择“服务管理”。
-0. 选择“Visual Studio Marketplace”。
+0. 选择“客户”，并选择要为其购买的客户  。
+0. 选择“服务管理”  。
+0. 选择“Visual Studio Marketplace”  。
 0. 确保客户名位于右上角。
-0. 选择“订阅”。
+0. 选择“订阅”  。
 0. 选择“Visual Studio Enterprise”或“Visual Studio Professional”。
-0. 选择“购买”。
+0. 选择“购买”  。
 0. 选择用于为购买计费 Azure 订阅。
 0. 输入客户所需的用户数量。
-0. 查看订单并“确认”。
+0. 查看订单并“确认”  。
 
 >[!NOTE]
 > 每次作为 CSP 购买 Visual Studio 订阅时，都需要执行这些步骤。 目前尚无自动完成采购的 API。
 
-确认购买后，可以选择“管理”，将订阅分配给客户的最终用户。  还可以通过选择“服务管理”，从合作伙伴中心访问订阅管理门户。  在其中可看到以下步骤或视频。
+确认购买后，可以选择“管理”，将订阅分配给客户的最终用户  。  还可以通过选择“服务管理”，从合作伙伴中心访问订阅管理门户  。  在其中可看到以下步骤或视频。
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>如何为客户管理 Visual Studio 云订阅
 
 > [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. 登录 [Microsoft 合作伙伴中心](https://partnercenter.microsoft.com)。
-0. 选择“客户”和客户名。
-0. 选择“服务管理”。
-0. 选择“管理 Visual Studio 订阅”。
+0. 选择“客户”和客户名  。
+0. 选择“服务管理”  。
+0. 选择“管理 Visual Studio 订阅”  。
 
-如果此客户拥有多个 Azure 订阅，请使用下拉菜单选择从你这里购买的 Azure 订阅。  “许可证摘要”显示已分配的订阅数量以及每个 Visual Studio 云订阅选项可用的订阅数量。  摘要还允许你购买更多订阅或减少订阅数量。
+如果此客户拥有多个 Azure 订阅，请使用下拉菜单选择从你这里购买的 Azure 订阅。  “许可证摘要”显示已分配的订阅数量以及每个 Visual Studio 云订阅选项可用的订阅数量  。  摘要还允许你购买更多订阅或减少订阅数量。
 
-选择“添加”，向新用户分配订阅。  显示的计数会更新，同时最终用户会收到电子邮件通知。
+选择“添加”，向新用户分配订阅  。  显示的计数会更新，同时最终用户会收到电子邮件通知。
 最终用户可以使用你提供的电子邮件地址登录，并在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中激活其 Visual Studio 订阅。
 
 若要将 Visual Studio 订阅重新分配给其他用户，可以删除当前订阅者并添加新的订阅者。
@@ -74,7 +73,7 @@ ms.locfileid: "62978505"
 
 ## <a name="view-visual-studio-pricing-for-csp-partners"></a>查看适用于 CSP 合作伙伴的 Visual Studio 定价
 
-若要查看适用于 CSP 合作伙伴的 Visual Studio 定价，请登录[合作伙伴中心](https://partnercenter.microsoft.com)。  从左侧导航栏中选择“定价和优惠”。  选择右上方“基于使用情况的服务”下的当前月份定价文件。 下载 Excel 电子表格后，转到“Azure 价目表”工作表，并在“计量类别”列筛选出“Visual Studio”。
+若要查看适用于 CSP 合作伙伴的 Visual Studio 定价，请登录[合作伙伴中心](https://partnercenter.microsoft.com)。  从左侧导航栏中选择“定价和优惠”  。  选择右上方“基于使用情况的服务”下的当前月份定价文件  。 下载 Excel 电子表格后，转到“Azure 价目表”工作表，并在“计量类别”列筛选出“Visual Studio”    。
 
 下面解释了在此电子表格中看到的内容：
 
@@ -87,7 +86,7 @@ ms.locfileid: "62978505"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>问：“月度”云订阅是如何收费的？
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>问：“月度”云订阅是如何收费的  ？
 
 答：在第一次购买时，我们会根据当月的剩余天数按比例收费。 例如，如果在 4 月 15 日购买了 10 个 Visual Studio Professional 月度云订阅，则只收取 5 个单位的费用，因为 30 天月份还剩 15 天（或者说 50%），我们会按照 50% 的比例收费。
 在 5 月的第一天以及此后的每个月，对全部 10 个单位收费，直到取消。
@@ -105,7 +104,7 @@ ms.locfileid: "62978505"
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>问：Visual Studio 订阅支持哪些类型的批量折扣？
 
-答：“每种“订阅的第 6 个订阅及所有后续订阅可享受 5% 的折扣：
+答：“每种“订阅的第 6 个订阅及所有后续订阅可享受 5% 的折扣  ：
 
 * Visual Studio Professional 月度
 * Visual Studio Enterprise 月度

@@ -6,13 +6,12 @@ manager: lank
 ms.date: 05/14/2019
 ms.topic: conceptual
 description: 如何登录 Visual Studio 订阅
-searchscope: VS Subscription
-ms.openlocfilehash: d010a908d28fd6f7be86cee27fa86f0ac24471d6
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: acfd04dfdbbca78d9f139a507ddb9f34ae8f9475
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805282"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784932"
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>登录 Visual Studio 订阅
 
@@ -32,11 +31,11 @@ ms.locfileid: "65805282"
    > 购买订阅或注册 Visual Studio Dev Essentials 时，收到的订阅者欢迎电子邮件中也会标识该地址。 如果在查找欢迎电子邮件时遇到问题，请检查垃圾邮件文件夹。
 
 3. 输入密码。
-4. 单击“登录”。
+4. 单击“登录”  。
 5. 此时，应显示“权益”页。
 
 ### <a name="for-visual-studio-dev-essentials-users"></a>对于 Visual Studio Dev Essentials 用户：
-第一次访问 Visual Studio Dev Essentials 订阅时，你将看到一个欢迎对话框。  单击“确认”接受程序条款和条件。
+第一次访问 Visual Studio Dev Essentials 订阅时，你将看到一个欢迎对话框。  单击“确认”  接受程序条款和条件。
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>使用你的工作或学校帐户登录
 
@@ -49,7 +48,7 @@ ms.locfileid: "65805282"
 3. 单击 **“继续”** 。
 4. 将重定向到公司的登录页。
 5. 输入密码。
-6. 单击“登录”
+6. 单击“登录” 
 7. 此时，应显示“权益”页
 
 现在可以看到正在使用的订阅类型显示在门户顶部的蓝色栏中。
@@ -66,8 +65,8 @@ ms.locfileid: "65805282"
 
 3. 单击 **“继续”** 。
 4. 你将重定向到“决策页”。
-    - 如果订阅是和与 Azure Active Directory (AAD) 租户关联的“工作或学校”帐户关联，请选择“工作或学校帐户”。
-    - 如果订阅与“公司”电子邮件地址相关联，但也已转换为”个人”Microsoft 帐户 (MSA)，请选择“个人”。
+    - 如果订阅是和与 Azure Active Directory (AAD) 租户关联的“工作或学校”帐户关联，请选择“工作或学校帐户”  。
+    - 如果订阅与“公司”电子邮件地址相关联，但也已转换为”个人”Microsoft 帐户 (MSA)，请选择“个人”  。
 
         > [!NOTE]
         > 许多过去曾经使用过 Visual Studio 订阅（以前称为 MSDN）的订阅者就是这种情况。
@@ -75,7 +74,7 @@ ms.locfileid: "65805282"
     - 如果一个通道失败，请尝试其他通道。  订阅管理员可能已经修改了你的订阅。
 
 5. 输入密码。
-6. 单击“登录”。
+6. 单击“登录”  。
 7. 此时，应显示“权益”页。
 
 ## <a name="signing-in-with-your-github-account"></a>使用 GitHub 帐户登录
@@ -99,7 +98,7 @@ ms.locfileid: "65805282"
 答：如果没有 MSA 的任何其他凭据（如密码、Authenticator 应用或安全密钥），则可以使用附加到 Microsoft 帐户上的电子邮件地址来恢复该帐户。 要开始使用，请转到[恢复你的帐户](https://account.live.com/password/reset)。 必须为帐户添加密码，这样我们就能知道以后如何让你登录。 
 
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>问：登录页面上没有“使用 GitHub 登录”选项。  如何使用我的 GitHub 凭据进行登录？
-答：键入在创建 GitHub 链接的 Microsoft 帐户时选择的 GitHub 帐户电子邮件地址。 我们将向你发送信息，让你前往 GitHub 进行登录。 或者，如果登录页面上有登录选项链接，请使用单击该链接后显示的“使用 GitHub 登录”按钮。 
+答：键入在创建 GitHub 链接的 Microsoft 帐户时选择的 GitHub 帐户电子邮件地址。 我们将向你发送信息，让你前往 GitHub 进行登录。 或者，如果登录页面上有登录选项链接，请使用单击该链接后显示的“使用 GitHub 登录”按钮  。 
 
 #### <a name="q-i-cant-sign-in-to-some-of-my-apps-and-products-with-github--why"></a>问：我无法使用 GitHub 登录我的某些应用和产品。  为什么？
 答：并非所有 Microsoft 产品都可以通过其登录页面访问 GitHub.com，例如 Xbox 控制台。 相反，在从链接的 GitHub 帐户键入电子邮件地址时，我们会向该地址发送代码，以便确认是否是你本人。 你只需使用其他登录方法登录同一帐户。 
@@ -117,7 +116,7 @@ ms.locfileid: "65805282"
 答：每当你使用帐户别名（电子邮件地址、电话号码、Skype 名称）进行签名时，我们都会向你显示帐户的所有登录方法。 如果未在此看到 GitHub，那么你还未进行设置。
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>问：如何取消 Microsoft 和 GitHub 帐户的链接？ 
-答：转到 account.microsoft.com 的[“安全”选项卡](https://account.microsoft.com/security)，然后单击“更多安全选项”，以取消链接 GitHub 帐户。 取消链接 GitHub 帐户会将其从登录方法中删除，并且会删除对 Visual Studio 中任何 GitHub 存储库的访问权限。 其他 Microsoft 产品可能已请求单独访问你的 GitHub 帐户，因此删除此处的访问权限不会删除在所有产品中的访问权限。 转到 GitHub 配置文件的[应用程序权限](https://github.com/settings/applications)页，从其中所列的应用中撤销许可。
+答：转到 account.microsoft.com 的[“安全”选项卡](https://account.microsoft.com/security)，然后单击“更多安全选项”，以取消链接 GitHub 帐户  。 取消链接 GitHub 帐户会将其从登录方法中删除，并且会删除对 Visual Studio 中任何 GitHub 存储库的访问权限。 其他 Microsoft 产品可能已请求单独访问你的 GitHub 帐户，因此删除此处的访问权限不会删除在所有产品中的访问权限。 转到 GitHub 配置文件的[应用程序权限](https://github.com/settings/applications)页，从其中所列的应用中撤销许可。
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>问：我尝试使用我的 GitHub 帐户登录，但系统提示我已经拥有一个 Microsoft 标识，我应该改用该标识。  发生了什么情况？
-答：如果你的 GitHub 帐户具有 Azure Active Directory 电子邮件地址，则表示你已拥有可以使用 GitHub 代码访问 Azure 并运行 CI 管道的 Microsoft 标识。 使用该帐户可确保你的 Azure 资源和生成管道保留在组织边界内。 但如果你正在从事个人工作，我们建议在 GitHub 帐户中添加个人电子邮件地址，这样你始终可以访问该帐户。 执行此操作后，请尝试再次登录，并在系统提示你登录工作或学校帐户时选择“使用其他电子邮件地址”。 这将让你使用该个人电子邮件地址创建新的 Microsoft 帐户。
+答：如果你的 GitHub 帐户具有 Azure Active Directory 电子邮件地址，则表示你已拥有可以使用 GitHub 代码访问 Azure 并运行 CI 管道的 Microsoft 标识。 使用该帐户可确保你的 Azure 资源和生成管道保留在组织边界内。 但如果你正在从事个人工作，我们建议在 GitHub 帐户中添加个人电子邮件地址，这样你始终可以访问该帐户。 执行此操作后，请尝试再次登录，并在系统提示你登录工作或学校帐户时选择“使用其他电子邮件地址”  。 这将让你使用该个人电子邮件地址创建新的 Microsoft 帐户。

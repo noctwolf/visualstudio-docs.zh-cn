@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1491caef3b13f6d5345d7d09f0abf4d680dd8e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704745"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824695"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用编码的 UI 测试来测试代码
 
@@ -285,23 +285,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **代码编辑器：**
 
-    - 按照本主题中的[编码的 UI 控件操作和属性](#coded-ui-control-actions-and-properties)部分的描述，为测试中的控件手动添加代码。
+  - 按照本主题中的[编码的 UI 控件操作和属性](#coded-ui-control-actions-and-properties)部分的描述，为测试中的控件手动添加代码。
 
-    - 在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
+  - 在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
 
-    - 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请添加相应的 UITestControl.WaitForControlXXX() 方法。 有关可用方法的完整列表，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 有关使用 WaitForControlEnabled 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
+  - 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请添加相应的 UITestControl.WaitForControlXXX() 方法。 有关可用方法的完整列表，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。 有关使用 WaitForControlEnabled 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
-    - 编码的 UI 测试包括对某些包含在 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 控件的支持。 有关详细信息，请参阅[在编码的 UI 测试中使用 HTML5 控件](../test/using-html5-controls-in-coded-ui-tests.md)。
+  - 编码的 UI 测试包括对某些包含在 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 控件的支持。 有关详细信息，请参阅[在编码的 UI 测试中使用 HTML5 控件](../test/using-html5-controls-in-coded-ui-tests.md)。
 
-    - 编码的 UI 测试编码指导：
+  - 编码的 UI 测试编码指导：
 
-       - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
+    - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
+    - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 
-       - [通过多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [通过多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-       - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="the-generated-code"></a>生成的代码
 

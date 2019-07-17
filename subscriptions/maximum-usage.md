@@ -6,13 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: 了解如何在管理门户中查看分配的最大订阅数
-searchscope: VS Subscription
-ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0442671a6cdb24e394e6c2a47c935ae894cca354
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965389"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250751"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用最大用量功能跟踪分配的订阅数
 
@@ -24,7 +23,7 @@ Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配
 
 1. 在门户左上角的下拉列表中选择要查看的协议。 （若只有一个协议，则已经选择了该协议。）
 
-2. 单击“最大用量”选项卡。  
+2. 单击“最大用量”选项卡  。  
     > [!div class="mx-imgBorder"]
     > ![最大用量菜单](_img/maximum-usage/maximum-usage-menu.png)
 
@@ -32,11 +31,11 @@ Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配
     > [!div class="mx-imgBorder"]
     > ![最大用量摘要](_img/maximum-usage/maximum-usage-summary.png)
 
-4. 要查看在协议有效期内分配的最大订阅数，请单击“完整期限”选项卡。
+4. 要查看在协议有效期内分配的最大订阅数，请单击“完整期限”选项卡  。
 
 ## <a name="viewing-assignment-history"></a>查看分配历史记录
 
-除了查看各个订阅级别的峰值分配外，还可以单击“导出完整报表”按钮，查看协议上活动的运行帐户，包括购买和分配。  
+除了查看各个订阅级别的峰值分配外，还可以单击“导出完整报表”按钮，查看协议上活动的运行帐户，包括购买和分配  。  
 
 > [!div class="mx-imgBorder"]
 > ![最大用量完整报表](_img/maximum-usage/maximum-usage-full-report.png)

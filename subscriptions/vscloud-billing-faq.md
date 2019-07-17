@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: 云订阅的计费问题。
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810526"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250740"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 云订阅计费常见问题解答
 
@@ -39,11 +38,11 @@ ms.locfileid: "62810526"
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>问：如何通过组织的企业协议判断是否具有在 Visual Studio Marketplace 中购买服务所需的权限？
 
-答：确定是否拥有正确权限的最简单方法是单击“购买”按钮，查看 Visual Studio Marketplace 中提供的服务。
+答：确定是否拥有正确权限的最简单方法是单击“购买”按钮，查看 Visual Studio Marketplace 中提供的服务  。
 需要从出现的当前链接到登录名的 Azure 订阅列表中选择一个 Azure 订阅（即计费帐户）。
 由于 Azure 订阅的名称默认为计费帐户的类型（“即用即付”、“企业协议”等），因此通常很容易判断 Azure 订阅是否为企业协议的一部分。
 
-另一种方法是尝试访问 [Azure 企业门户](http://ea.azure.com)。  如果可以成功访问，说明已经具有企业管理员或帐户所有者角色。 只有帐户所有者才能在企业协议中设置新的 Azure 计费帐户。 如果无法访问 Azure 企业门户，请咨询你的组织并联系企业管理员将你添加为 Azure 企业门户中的帐户所有者。  如果联系不到管理员，可以[提交支持票证](https://aka.ms/AzureEntSupport)并请求联系信息。  需要提供组织名称以及支持票证的企业协议注册号。
+另一种方法是尝试访问 [Azure 企业门户](https://ea.azure.com)。  如果可以成功访问，说明已经具有企业管理员或帐户所有者角色。 只有帐户所有者才能在企业协议中设置新的 Azure 计费帐户。 如果无法访问 Azure 企业门户，请咨询你的组织并联系企业管理员将你添加为 Azure 企业门户中的帐户所有者。  如果联系不到管理员，可以[提交支持票证](https://aka.ms/AzureEntSupport)并请求联系信息。  需要提供组织名称以及支持票证的企业协议注册号。
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>问：我可以使用来自企业协议的 Azure 货币承诺资金购买 Visual Studio 云订阅吗？
 
@@ -51,13 +50,13 @@ ms.locfileid: "62810526"
 
 ## <a name="how-charges-are-processed"></a>如何收费
 
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>问：“月度”云订阅是如何收费的？
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>问：“月度”云订阅是如何收费的  ？
 答：在第一次购买时，我们会根据当月的剩余天数按比例收费。 例如，如果在 4 月 15 日购买了 10 个 Visual Studio Professional 月度云订阅，则只收取 5 个单位的费用，因为该月剩余 50% 的天数（30 天月份中的 15 天）。
 在 5 月的第一天以及此后的每个月，对全部 10 个单位收费，直到取消。
 
 当在之后增加付款订阅数量时，我们同样会根据当月的剩余天数按比例对新增单位计费。 因此，如果在 5 月 10 日再购买 1 个 Visual Studio Professional 月度云订阅，则收取大约 0.677 个单位（距离 5 月 31 日还剩余 21 天）的费用。
 
-### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>问：“年度”云订阅是如何收费的？
+### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>问：“年度”云订阅是如何收费的  ？
 答：在每次购买时，都会即时对已购买的全部数量计费。 费用不会按该年的剩余天数收取，也不会按比例分配。 如果在一年中的不同时间购买年度云订阅，则订阅的续订月份也不同。 与 Microsoft 批量许可协议采购一样，我们并未将所有客户的年度云订阅都视为有共同的时间边界。
 
 ### <a name="q-how-do-cancelations-work"></a>问：取消如何工作？
@@ -70,7 +69,7 @@ ms.locfileid: "62810526"
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>问：Visual Studio 订阅支持哪些类型的批量折扣？
 
-答：“每种“订阅的第 6 个订阅及所有后续订阅可享受 5% 的折扣：
+答：“每种“订阅的第 6 个订阅及所有后续订阅可享受 5% 的折扣  ：
 
 * Visual Studio Professional 月度
 * Visual Studio Professional 年度
