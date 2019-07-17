@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290658"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250582"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -257,6 +259,27 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 1. 在“已下载更新并准备安装”对话框中，选择“更新”   。
 
    Visual Studio 将更新、关闭然后重新打开。
+
+## <a name="customize-update-settings"></a>自定义更新设置
+
+可以通过几种不同的方式在 Visual Studio 中自定义更新设置，比如更改安装模式和选择自动下载。
+
+有两种安装模式可供选择：
+
+* **在下载时安装**
+* **全部下载后再安装**
+
+还可以选择“自动下载更新”  设置，该设置允许在计算机处于空闲状态时下载更新。
+
+操作方法如下：
+
+1. 在菜单栏上，依次选择“工具”>“选项”   。
+
+2. 展开“环境”  ，然后选择“生产更新”  。
+
+    ![Visual Studio 中的更新设置](media/vs-2019/update-settings-options.png)
+
+3. 选择安装模式和 Visual Studio 更新所需的自动下载选项。
 
 ::: moniker-end
 

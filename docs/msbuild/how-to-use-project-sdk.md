@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977322"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852242"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 项目 SDK
 
@@ -56,7 +56,15 @@ ms.locfileid: "62977322"
     </Project>
     ```
 
-    将隐式导入添加到项目的顶部和底部，如上文所述。  `Sdk` 属性的格式为 `Name[/Version]`，其中版本可选。  例如，你可以指定 `My.Custom.Sdk/1.2.3`。
+    将隐式导入添加到项目的顶部和底部，如上文所述。
+    
+    若要指定特定版本的 SDK，可以将其追加到 `Sdk` 属性：
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > 这是目前在 Visual Studio for Mac 中引用项目 SDK 的唯一受支持的方式。
@@ -110,7 +118,7 @@ ms.locfileid: "62977322"
 }
 ```
 
-在生成期间，只能使用每个项目 SDK 的一个版本。  如果你正在引用同一项目 SDK 的两个不同版本，MSBuild 将发出警告。  如果在 global.json 中指定了版本，则不建议在项目中指定版本。
+在生成期间，只能使用每个项目 SDK 的一个版本。  如果你正在引用同一项目 SDK 的两个不同版本，MSBuild 将发出警告。  如果在 global.json 中指定了版本，则不建议在项目中指定版本   。
 
 ## <a name="see-also"></a>请参阅
 

@@ -1,5 +1,6 @@
 ---
 title: 在项目模板上添加或编辑标签
+description: 了解如何在 Visual Studio 的项目模板上添加或编辑标签。
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -12,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 4a5113fa7f420d58892e2737ec9196422486490e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038623"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891140"
 ---
 # <a name="add-tags-to-project-templates"></a>向项目模板添加标签
 
-自 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 版本 16.1 预览版 2 起，可以向项目模板添加语言、平台和项目类型标签。 新建项目对话框中的两个位置使用了标签：
+自 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) 版本 16.1 预览版 2 起，可以向项目模板添加语言、平台和项目类型标签。 
 
-- 模板描述的下方将显示标签
+“新建项目”  对话框中的两个位置使用了标签：
 
-   ![新建项目对话框中带标签的项目模板](media/npd-item-with-template-tags.png)
+- 模板描述的下方将显示标签。
 
-- 可以借助标签搜索和筛选模板
+   ![“新建项目”对话框中带标签的项目模板](media/npd-item-with-template-tags.png)
 
-   ![在新建项目对话框中搜索和筛选](media/npd-search-and-filter.png)
+- 可以借助标签搜索和筛选模板。
 
-可以通过使用 Visual Studio 内置模板标签更新 .vstemplate XML 文件，或通过创建自定义模板标签，来添加标签。 仅 Visual Studio 2019 新建项目对话框显示模板标签。 它们不会影响 Visual Studio 早期版本的模板呈现。
+   ![在“新建项目”对话框中搜索和筛选](media/npd-search-and-filter.png)
+
+可以通过更新 .vstemplate  XML 文件来添加标签。 可以使用内置到 Visual Studio 中的模板标签，也可以创建自定义模板标签。 仅在 Visual Studio 2019“新建项目”  对话框中显示模板标签。 模板标签不会影响模板在 Visual Studio 早期版本中的呈现效果。
 
 ## <a name="add-or-edit-tags"></a>添加或编辑标签
 
-在以下情况下，需要在项目模板的 .vstemplate XML 中添加或编辑标签：
+执行以下任意操作时，可能需要在项目模板的 .vstemplate  XML 中添加或编辑标签：
 
-* 使用“导出模板”向导[新建项目模板](/visualstudio/ide/how-to-create-project-templates)
-
-* [更新现有项目模板](/visualstudio/ide/how-to-update-existing-templates)
-
-* [新建 VSIX 项目模板](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* 使用“导出模板”向导[创建新的项目模板](/visualstudio/ide/how-to-create-project-templates)。
+* [更新现有项目模板](/visualstudio/ide/how-to-update-existing-templates)。
+* [创建新的 VSIX 项目模板](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)。
 
 ## <a name="syntax"></a>语法
 
@@ -53,7 +54,7 @@ ms.locfileid: "66038623"
 
 ## <a name="attributes"></a>特性
 
-下面的属性为可选属性，它们适用于高级用户场景。
+可以在高级用户场景中使用下面的可选属性：
 
 |特性|说明|
 |---------------|-----------------|
@@ -78,7 +79,7 @@ ms.locfileid: "66038623"
 
 |元素|说明|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|（必需）将此模板分类并定义此模板在“新建项目”或“添加新项”对话框中的显示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|（必需）将此模板分类并定义此模板在  “新建项目”或“添加新项”  对话框中的显示方式。|
 
 ## <a name="text-value"></a>文本值
 
@@ -88,7 +89,9 @@ ms.locfileid: "66038623"
 
 ## <a name="built-in-tags"></a>内置标签
 
-Visual Studio 提供了内置标签列表，添加这些标签时它们将呈现已本地化的资源。 下面是内置标签列表及其对应的值（位于括号中）。
+Visual Studio 提供了一系列内置标签。 添加内置标签时，标签将呈现本地化资源。 
+
+以下列表显示在 Visual Studio 中可用的内置标签。 对应的值将显示在括号中。
 
 | 语言 | Platform | 项目类型 |
 | -- | -- | -- |
@@ -110,7 +113,7 @@ Visual Studio 提供了内置标签列表，添加这些标签时它们将呈现
 
 ## <a name="example"></a>示例
 
-下面的示例说明了 Visual C# 应用程序的项目模板的元数据。
+下面的示例说明了 Visual C# 应用程序的项目模板的元数据：
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

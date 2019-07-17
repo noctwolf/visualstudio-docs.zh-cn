@@ -690,6 +690,14 @@
                   href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
                 - name: 'CA3147:使用 ValidateAntiForgeryToken 标记谓词处理程序'
                   href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
+                - name: CA5361：不禁用 SChannel 使用强加密
+                  href: ca5361.md
+                - name: CA5364：不使用已弃用的安全协议
+                  href: ca5364.md
+                - name: CA5378：不禁用 ServicePointManagerSecurityProtocols
+                  href: ca5378.md
+                - name: CA5386：避免对 SecurityProtocolType 值进行硬编码
+                  href: ca5386.md
             - name: 用法警告
               items:
                 - name: 概述
