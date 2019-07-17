@@ -582,12 +582,14 @@
             - name: 设计国际应用
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
-    - name: 访问数据...
+    - name: 访问数据 >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: 设计用户界面...
+    - name: 设计用户界面 >>
       displayName: XAML designer
       href: designers/designing-user-interfaces.md
+    - name: 使用工作流设计器开发应用 >>
+      href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: 编译和生成
       items:
         - name: 概述
@@ -636,9 +638,9 @@
               href: ide/how-to-configure-projects-to-target-platforms.md
             - name: 将项目配置为定目标到多个平台
               href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild...
+        - name: MSBuild >>
           href: msbuild/msbuild.md
-        - name: Azure Pipelines 和 TFS...
+        - name: Azure Pipelines 和 TFS >>
           displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
           href: /azure/devops/pipelines/index?view=vsts
         - name: 指定生成事件 (Visual Basic)
@@ -649,23 +651,23 @@
           href: ide/configuring-warnings-in-visual-basic.md
         - name: 演练：创建多计算机生成环境
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: 调试...
+    - name: 调试 >>
       href: debugger/index.md
-    - name: 测试...
+    - name: 测试 >>
       displayName: Unit testing
       href: test/improve-code-quality.md
-    - name: 测量性能...
+    - name: 测量性能 >>
       displayName: Profiling
       href: profiling/index.md
-    - name: 分析代码质量...
+    - name: 分析代码质量 >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
-    - name: 部署...
+    - name: 部署 >>
       href: deployment/index.md
-    - name: 扩展 Visual Studio...
+    - name: 扩展 Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
-    - name: 对体系结构进行分析和建模...
+    - name: 对体系结构进行分析和建模 >>
       href: modeling/analyze-and-model-your-architecture.md
     - name: 提示和技巧
       items:
