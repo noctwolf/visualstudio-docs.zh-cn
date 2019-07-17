@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181917"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定义和安装建模扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,9 +75,9 @@ ms.locfileid: "60049732"
         |||  
         |-|-|  
         |**类型** =|**Microsoft.VisualStudio.MefComponent**|  
-        |**源** =|**当前解决方案中的项目**|  
+        |Source   =|**当前解决方案中的项目**|  
         |**Project** =|*你的类库项目*|  
-        |**在此文件夹中嵌入** =|*(empty)*|  
+        |**在此文件夹中嵌入** =|*（空）*|  
   
          有关其他组件类型，请参阅下一部分中的链接。  
   

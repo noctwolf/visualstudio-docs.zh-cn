@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184921"
 ---
-# <a name="adapting-legacy-code-to-the-editor"></a>调整到编辑器的旧代码
+# <a name="adapting-legacy-code-to-the-editor"></a>根据编辑器调整旧代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual Studio 编辑器具有许多功能，可以从现有代码组件访问。 以下说明介绍如何改编非 MEF 组件，例如，VSPackage，使用编辑器的功能。 此外说明了如何使用适配器来托管和非托管代码中获取的编辑器中的服务。  

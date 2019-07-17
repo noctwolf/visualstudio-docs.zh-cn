@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CAST Highlight 权益
-searchscope: VS Subscription
-ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032893"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823681"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CAST Highlight 权益
 
@@ -98,8 +97,8 @@ Visual Studio Enterprise 订阅者可获得一个月免费的具有完整功能�
 
 ## <a name="support-resources"></a>支持资源
 - 需要有关使用 CAST Highlight 的帮助？  请参阅下列资源：
-    - [提交支持请求](https://casthighlight.com/support/)
-    - [入门指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [提交支持请求](https://casthighlight.com/support/)
+  - [入门指南 (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

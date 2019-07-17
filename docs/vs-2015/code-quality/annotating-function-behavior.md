@@ -22,11 +22,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 39edea3bfb299a49fde9cad14321caa6b4bf674a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58932838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157092"
 ---
 # <a name="annotating-function-behavior"></a>对函数行为进行批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "58932838"
 |`_Success_(expr)`|`expr` 是生成右值的表达式。 当 `_Success_` 批注位于函数声明或定义上时，函数上以及后置条件中的每个批注 (`anno`) 的行为就像它已编码为 `_When_(expr, anno)`。 `_Success_` 批注只能用于函数，而不能用于函数的参数或返回类型。 一个函数上最多可以有一个 `_Success_` 批注，并且不能位于任何 `_When_`、`_At_` 或 `_Group_` 中。 有关详细信息，请参阅[指定时，并在其中批注应用](../code-quality/specifying-when-and-where-an-annotation-applies.md)。|  
   
 ## <a name="see-also"></a>请参阅  
- [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [使用 SAL 注释减少 C /C++代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)   
  [批注结构和类](../code-quality/annotating-structs-and-classes.md)   
